@@ -59,8 +59,8 @@ $$
 The point of the arrangement is that the left action is the full $SU(2)_L$ and the right action is an $SU(2)_R$ whose $T_3^R$ is the hypercharge. With this normalisation the kinetic term is the framework's biquaternion norm of the derivative,
 
 $$
--\,\frac12\,\mathrm{Tr}\!\left(\partial/\partial Q_\mu H^\dagger\,\partial/\partial Q_\mu H\right)
-= -\,\partial/\partial Q_\mu\xi^{0*}\partial/\partial Q_\mu{\xi^{\mathrm{scl}}}^0 - \partial/\partial Q_\mu\xi^{+*}\partial/\partial Q_\mu\xi^{+*} ,
+-\,\frac12\,\mathrm{Tr}\!\left(\partial/\partial R_\mu H^\dagger\,\partial/\partial R_\mu H\right)
+= -\,\partial/\partial R_\mu\xi^{0*}\partial/\partial R_\mu{\xi^{\mathrm{scl}}}^0 - \partial/\partial R_\mu\xi^{+*}\partial/\partial R_\mu\xi^{+*} ,
 $$
 
 canonical for the two complex components, and if the hypercharge coupling is ignored it is invariant under the full $SU(2)_L\times SU(2)_R$, acting as $H\mapsto g_LHg_R^{*}$. This is the **custodial group**. The hypercharge interaction gauges the $T_3^R$ direction and therefore breaks $SU(2)_R$ explicitly, but only as a subgroup: $\mathrm{U}(1)_Y\subset SU(2)_R$, and the breaking is proportional to the hypercharge coupling $g_{\mathrm Y}$.
@@ -294,7 +294,7 @@ with the diagonal $g_L = g_R$ the unbroken $SU(2)_V$ and the central vacuum $\la
 | $SU(2)_V = \{g_L = g_R\}$ | Custodial (diagonal) subgroup |
 | $\langle\tilde Q\rangle = \frac{v}{\sqrt2}e_t$ | Central vacuum; custodial invariant |
 | $\tilde{Ξ} = \xi^{\mathrm{scl}}\,e_t\in\mathbb{C}_{\mathbb{B}}$ | Framework's actual scalar; a singlet |
-| $-\frac12\mathrm{Tr}(\partial/\partial Q_\mu H^\dagger\partial/\partial Q_\mu H)$ | Custodial-invariant kinetic term of the doublet matrix $H$ (biquaternion norm of the derivative) |
+| $-\frac12\mathrm{Tr}(\partial/\partial R_\mu H^\dagger\partial/\partial R_\mu H)$ | Custodial-invariant kinetic term of the doublet matrix $H$ (biquaternion norm of the derivative) |
 | $M_W^2 = g^2v^2/4$ | Charged weak-boson mass (standard) |
 | $M_Z^2 = (g^2+g_{\mathrm Y}^2)v^2/4$ | Neutral weak-boson mass (standard) |
 | $\cos^2\theta_W = g^2/(g^2+g_{\mathrm Y}^2)$ | Weak mixing angle (standard) |

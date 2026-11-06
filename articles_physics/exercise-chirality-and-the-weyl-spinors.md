@@ -79,7 +79,7 @@ i.e. $E^2 = \vec p^2c^2 + m^2c^4$.
 **The second Dirac equation.** Two equations carry the name, and they must not be read as one. The pair above is the **one-sided** form of the equation: both gradients act by left multiplication, the field is one element, and the mass is the coupling between the two values. The **two-sided** form of the equation is a single field equation on $F\in\mathbb{B}$, Kravchenko's form,
 
 $$
-\left(i\frac{\partial}{\partial t'}+D_3\right)F - mi\,\bar F\,\vec u = 0, \qquad D_3=\sum_k\vec e_k\frac{\partial}{\partial Q_k},
+\left(i\frac{\partial}{\partial r'_t}+D_3\right)F - mi\,\bar F\,\vec u = 0, \qquad D_3=\sum_k\vec e_k\frac{\partial}{\partial R_k},
 $$
 
 in which the derivative acts from the left, the coefficient conjugation $\bar{\cdot}$ acts with no side, and the mass term ends in a right multiplication by the declared unit $\vec u$. At $\vec u=\vec e_z$ this is the form the parent article prints. The two equations are related by the dictionary and are not the same operator: the mass of the pair is the coupling of one value to the other; the mass of the two-sided equation is a conjugation together with a direction. Chirality is why the second side is needed at all: left multiplication preserves each value, so no left multiplication, and no sum of left multiplications, carries one value into the other. The pair is the definition; the two-sided equation is its single-field compression, and the conjugation is the price of that compression.
@@ -358,9 +358,9 @@ Seven problems were solved. (1) The subscript takes two values and there are exa
 | $\vec u$ | The declared unit vector of the frame, $\vec u^2=-e_t$ |
 | $-iR_{\vec u}$ | The chirality cell of the declared frame |
 | $\tilde{Ξ}^{\mathrm{sp}}_L$, $\tilde{Ξ}^{\mathrm{sp}}_R$ | The two parts of the field, of values $-1$ and $+1$ |
-| $\tilde\nabla=\sum_\mu e_\mu\,\partial/\partial Q_\mu$ | Biquaternionic gradient |
+| $\tilde\nabla=\sum_\mu e_\mu\,\partial/\partial R_\mu$ | Biquaternionic gradient |
 | $\Box=\tilde\nabla\tilde\nabla^{\natural}$ | The d'Alembertian, the quaternionic norm of the gradient |
-| $D_3=\sum_k\vec e_k\,\partial/\partial Q_k$ | Three-dimensional Cauchy–Riemann operator of the two-sided equation |
+| $D_3=\sum_k\vec e_k\,\partial/\partial R_k$ | Three-dimensional Cauchy–Riemann operator of the two-sided equation |
 | $\tilde U_{\mathrm b} = \cosh\frac{\theta^{\mathrm{rpd}}}{2}\,e_t+i\sinh\frac{\theta^{\mathrm{rpd}}}{2}\,\vec u_{\mathrm b}$ | Boost rotor ($\mathbb{M}_+$) |
 | $\tilde u_{\mathrm r} = \cos\frac{\theta}{2}\,e_t+\sin\frac{\theta}{2}\,\vec u_{\mathrm r}$ | Rotation rotor ($\mathbb{H}_{\mathbb{B}}$) |
 | $\bar{\tilde U}=(\tilde U^{*})^{-1}$ | The conjugate action for a unit element |

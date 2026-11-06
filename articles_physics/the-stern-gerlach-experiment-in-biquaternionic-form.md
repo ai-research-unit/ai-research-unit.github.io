@@ -36,22 +36,22 @@ $$
 where $\gamma$ is the gyromagnetic ratio and $\vec S$ the spin operator. If the field is directed along $z$ with a gradient along the same direction,
 
 $$
-\vec B = B(z)\,\vec u_z, \qquad \frac{dB}{dz}(z) = \frac{\partial B}{\partial z},
+\vec B = B(r_z)\,\vec u_z, \qquad \frac{dB}{dz}(r_z) = \frac{\partial B}{\partial r_z},
 $$
 
 then the force on the atom along $z$ is the negative gradient of the potential,
 
 $$
-F_z = -\frac{\partial V^{\mathrm{pot}}}{\partial z} = \gamma\,\frac{\partial B}{\partial z}\,S_z = \gamma (dB/dz)\,S_z .
+F_z = -\frac{\partial V^{\mathrm{pot}}}{\partial r_z} = \gamma\,\frac{\partial B}{\partial r_z}\,S_z = \gamma (dB/dz)\,S_z .
 $$
 
-Strictly, a field of the form $\vec B = B(z)\vec u_z$ alone is not a static magnetic field: $\nabla\cdot\vec B = 0$ requires $\partial B_z/\partial z = -\partial B_x/\partial x - \partial B_y/\partial y$, so a longitudinal gradient must be accompanied by transverse components, which make the direction of the local field depend on position. Across the width of the beam in the Stern–Gerlach geometry those components are small, and the standard treatment retains $F_z = \gamma (dB/dz) S_z$ for the deflection; the same idealisation is made here.
+Strictly, a field of the form $\vec B = B(z)\vec u_z$ alone is not a static magnetic field: $\nabla\cdot\vec B = 0$ requires $\partial B_z/\partial r_z = -\partial B_x/\partial r_x - \partial B_y/\partial r_y$, so a longitudinal gradient must be accompanied by transverse components, which make the direction of the local field depend on position. Across the width of the beam in the Stern–Gerlach geometry those components are small, and the standard treatment retains $F_z = \gamma (dB/dz) S_z$ for the deflection; the same idealisation is made here.
 
 This is the standard result, and it is standard in a second sense: $S_z$ is an operator, so the force is an operator. Its eigenvalues are $\pm\tfrac{\hbar}{2}\gamma (dB/dz)$, and a beam with its spin in an eigenstate of $S_z$ is deflected by an amount proportional to that eigenvalue.
 
 ### Deflection and the Two Beams
 
-For a beam of speed $v$ crossing a field region of length $L$, the atom spends a time $t' = L/v$ in the field, and the transverse displacement is
+For a beam of speed $v$ crossing a field region of length $L$, the atom spends a time $r'_t = L/v$ in the field, and the transverse displacement is
 
 $$
 \Delta z = \frac{1}{2}\,a\,{r'_{t}}^2 = \frac{F_z}{2m}\left(\frac{L}{v}\right)^2 = \frac{\gamma (dB/dz) S_z L^2}{2 m v^2}.
@@ -92,7 +92,7 @@ That the Hamiltonian is an element of $\mathbb{M}_+$ is the first structural fac
 The force operator along $z$ is the negative gradient of the Hamiltonian with respect to the material coordinate,
 
 $$
-\tilde{F}_3 = -\frac{\partial \tilde R_\psi}{\partial z} = \gamma\,\frac{\partial B}{\partial z}\,\tilde{S}_3 = \frac{\hbar\gamma (dB/dz)}{2}\,i \vec e_z .
+\tilde{F}_3 = -\frac{\partial \tilde R_\psi}{\partial r_z} = \gamma\,\frac{\partial B}{\partial r_z}\,\tilde{S}_3 = \frac{\hbar\gamma (dB/dz)}{2}\,i \vec e_z .
 $$
 
 So the force is $\gamma (dB/dz)$ times the spin observable, exactly as in the standard account, and it is again a Hermitian element of $\mathbb{M}_+$. Its spectral decomposition is inherited from that of $\tilde{S}_3$:

@@ -281,7 +281,7 @@ $$
 \tilde R_\varphi(\tau) = ic\,\tau\cosh\xi(\tau)\,e_t + c\,\tau\sinh\xi(\tau)\,\vec u_y,
 \qquad \xi = \xi(\tau),
 $$
-so that $t' = \tau\cosh\xi$ and the displacement along $\vec u_y$ is $x_1 = c\tau\sinh\xi$. Define the coordinate velocity by $\beta = (1/c)\,dx_1/dt'$.
+so that $r'_t = \tau\cosh\xi$ and the displacement along $\vec u_y$ is $x_1 = c\tau\sinh\xi$. Define the coordinate velocity by $\beta = (1/c)\,dx_1/dr'_t$.
 
 **(a)** Show that
 $$
@@ -302,7 +302,7 @@ and read off when the worldline is timelike.
 $$
 \frac{dx_1}{d\tau} = c\left(\sinh\xi + \tau\frac{d\xi}{d\tau}\cosh\xi\right),
 \qquad
-\frac{dt'}{d\tau} = \cosh\xi + \tau\frac{d\xi}{d\tau}\sinh\xi .
+\frac{dr'_t}{d\tau} = \cosh\xi + \tau\frac{d\xi}{d\tau}\sinh\xi .
 $$
 Both carry the same factor $\tau\frac{d\xi}{d\tau}$ that a fixed rapidity would not have; their ratio is the stated expression. This is not the composition law (4), because the rotor here is a *different* rotor at every $\tau$: the second term is the rate at which the frame turns, not the rapidity of a second frame.
 

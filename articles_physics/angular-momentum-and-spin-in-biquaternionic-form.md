@@ -110,7 +110,7 @@ $$
 \vec r = r_x\,\vec e_x + r_y\,\vec e_y + r_z\,\vec e_z \in \mathbb{H}_{\mathbb{B}},
 $$
 
-and the momentum operator is $\tilde{p} = -i\hbar\nabla$ with the vector gradient $\nabla = \vec e_x\partial/\partial Q_x + \vec e_y\partial/\partial Q_y + \vec e_z\partial/\partial Q_z$. For pure quaternions the product rule is $\vec q\,\vec v = -\vec q\cdot\vec v + \vec q\times\vec v$, so
+and the momentum operator is $\tilde{p} = -i\hbar\nabla$ with the vector gradient $\nabla = \vec e_x\partial/\partial R_x + \vec e_y\partial/\partial R_y + \vec e_z\partial/\partial R_z$. For pure quaternions the product rule is $\vec q\,\vec v = -\vec q\cdot\vec v + \vec q\times\vec v$, so
 
 $$
 \vec r\,\tilde{p} = -i\hbar\,\vec r\circ\nabla = i\hbar\,\vec r\cdot\nabla \;-\; i\hbar\,\vec r\times\nabla .

@@ -155,9 +155,9 @@ $$
 
 $$
 \begin{aligned}
-D(x,\theta) &= e_t\cos\frac{\theta}{2}-\vec e_z\sin\frac{\theta}{2},\\
-D(y,\theta) &= e_t\cos\frac{\theta}{2}-\vec e_y\sin\frac{\theta}{2},\\
-D(z,\theta) &= e_t\cos\frac{\theta}{2}-\vec e_x\sin\frac{\theta}{2}.
+D(r_x,\theta) &= e_t\cos\frac{\theta}{2}-\vec e_z\sin\frac{\theta}{2},\\
+D(r_y,\theta) &= e_t\cos\frac{\theta}{2}-\vec e_y\sin\frac{\theta}{2},\\
+D(r_z,\theta) &= e_t\cos\frac{\theta}{2}-\vec e_x\sin\frac{\theta}{2}.
 \end{aligned}
 $$
 
@@ -209,7 +209,7 @@ which were recomputed. **The raising and lowering behaviour is correct**: $S_+q_
 **The source's equation (20) encodes the angular factor as one element.** Its two coefficients are defined beside that equation as the radicals $C_{l1}=\sqrt{l\pm m_j+\tfrac12}$ and $C_{l2}=\sqrt{l\mp m_j+\tfrac12}$, and its equation (25) calls the $C_n$ the Clebsch–Gordan coefficients of the case; the prefactor is $1/\sqrt2$ where the standard harmonic carries $1/\sqrt{2l+1}$, so on normalised harmonics the source's angular element has squared norm $(2l+1)/2$ rather than $1$. With $C_1$ and $C_2$ left as the source's two numbers, the encoding is the single element
 
 $$
-\frac{1}{\sqrt2}\left(C_1Y_l^{s_{\mathrm{tot},z}-\frac12}e_t - iC_1Y_l^{s_{\mathrm{tot},z}-\frac12}\vec e_x - C_2Y_l^{s_{\mathrm{tot},z}+\frac12}\vec e_y - iC_2Y_l^{s_{\mathrm{tot},z}+\frac12}\vec e_z\right),
+\frac{1}{\sqrt2}\left(C_1Y_l^{s_{\mathrm{tot},r_z}-\frac12}e_t - iC_1Y_l^{s_{\mathrm{tot},r_z}-\frac12}\vec e_x - C_2Y_l^{s_{\mathrm{tot},r_z}+\frac12}\vec e_y - iC_2Y_l^{s_{\mathrm{tot},r_z}+\frac12}\vec e_z\right),
 $$
 
 **that is, on any values of the two harmonics,**
@@ -347,7 +347,7 @@ $$
 
 A single product is a pure tensor; the products form the seven-dimensional cone $\operatorname{rank}c(M)\le1$, and a general element is a sum of at most four, with $\ell(M)=\operatorname{rank}c(M)$.
 
-**The two Dirac equations.** The corpus carries two forms of one dynamics, and the difference between them is where the second chirality slot sits. In units $\hbar=c=1$, with the biquaternionic gradient $\tilde\nabla=e_t\partial/\partial Q_t+\sum_k\vec e_k\partial/\partial Q_k$ and its conjugate $\tilde\nabla^{\natural}$, the **one-sided** form is the chiral pair
+**The two Dirac equations.** The corpus carries two forms of one dynamics, and the difference between them is where the second chirality slot sits. In units $\hbar=c=1$, with the biquaternionic gradient $\tilde\nabla=e_t\partial/\partial R_t+\sum_k\vec e_k\partial/\partial R_k$ and its conjugate $\tilde\nabla^{\natural}$, the **one-sided** form is the chiral pair
 
 $$
 \tilde\nabla\tilde{Ξ}^{\mathrm{sp}}_R=m\tilde{Ξ}^{\mathrm{sp}}_L,\qquad
@@ -357,12 +357,12 @@ $$
 two fields, both equations acting from the left, the chirality carried by the two fields and exchanged by $\natural$. The **two-sided** form writes a single field and puts the second slot on the right of the algebra element,
 
 $$
-\left(i\frac{\partial}{\partial t'}+D_3\right)F-mi\,\overline{F}\,\vec e_z=0,
+\left(i\frac{\partial}{\partial r'_t}+D_3\right)F-mi\,\overline{F}\,\vec e_z=0,
 \qquad
-D_3=\sum_k\vec e_k\frac{\partial}{\partial Q_k},
+D_3=\sum_k\vec e_k\frac{\partial}{\partial R_k},
 $$
 
-with the derivative acting from the left, the bar the antilinear entry, and $\vec e_z$ multiplying from the right after the conjugation. The two are one operator read from two sides: since $i\partial/\partial t'=-\partial/\partial Q_t$ in these units, the free part is $-\tilde\nabla^{\natural}$, and the equation reads
+with the derivative acting from the left, the bar the antilinear entry, and $\vec e_z$ multiplying from the right after the conjugation. The two are one operator read from two sides: since $i\partial/\partial r'_t=-\partial/\partial R_t$ in these units, the free part is $-\tilde\nabla^{\natural}$, and the equation reads
 
 $$
 \tilde\nabla^{\natural}F=m\left(-i\overline{F}\vec e_z\right),

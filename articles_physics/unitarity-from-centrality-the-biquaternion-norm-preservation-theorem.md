@@ -197,9 +197,9 @@ SU(2)=\mathrm{U}(2)\cap SL(2,\mathbb{C})\ \subset\ \mathrm{U}(2)\ \subset\ G_N=\
 $$
 with $SU(2)$ the elements that are simultaneously $*$-unitary and of unit norm — the quaternionic unit sphere. The chain records the whole norm-preservation structure: the smallest group is the one that preserves both norms **and** the algebra's multiplication; enlarging to $\mathrm{U}(2)$ keeps the Hermitian norm and the multiplication but gives up the unit-norm condition; enlarging to $G_N$ keeps only the biquaternion norm.
 
-**The $*$-unitary group is not the unit sphere.** The unit group of a form is the set of elements on which the form takes the value $1$; the $*$-unitary group is the isometry group of the form under the conjugation action. For the general plain sesquilinear form the second is the smaller, and the difference is a difference of equations. The defect $\tilde Q\tilde Q^{*}$ is Hermitian, so writing it as $z_te_t+i\vec z$ with $z_t\in\mathbb{R}$ and $\vec z\in\mathbb{R}^3$,
+**The $*$-unitary group is not the unit sphere.** The unit group of a form is the set of elements on which the form takes the value $1$; the $*$-unitary group is the isometry group of the form under the conjugation action. For the general plain sesquilinear form the second is the smaller, and the difference is a difference of equations. The defect $\tilde Q\tilde Q^{*}$ is Hermitian, so writing it as $z_te_t+i\vec r_z$ with $z_t\in\mathbb{R}$ and $\vec z\in\mathbb{R}^3$,
 $$
-\tilde Q\tilde Q^{*}=e_t\iff z_t=1\ \text{and}\ \vec z=0,
+\tilde Q\tilde Q^{*}=e_t\iff z_t=1\ \text{and}\ \vec r_z=0,
 \qquad
 \langle\tilde Q,\tilde Q\rangle_{*}=1\iff z_t=1 ,
 $$
@@ -221,7 +221,7 @@ both resting on the identity $\tilde Q^{*}\bar{\tilde Q}=\overline{\langle\tilde
 $$
 \mathrm{Sc}\bigl(\tilde Q\tilde Q_1\tilde Q^{*}(\tilde Q\tilde Q_2\tilde Q^{*})^{*}\bigr)=\mathrm{Sc}\bigl(\tilde Q_1\,(\tilde Q^{*}\tilde Q)\,\tilde Q_2^{*}\,(\tilde Q^{*}\tilde Q)\bigr),
 $$
-which returns $\mathrm{Sc}(\tilde Q_1\tilde Q_2^{*})$ for all $\tilde Q_1$ and $\tilde Q_2$ only when $\tilde Q^{*}\tilde Q=e_t$ — setting $\tilde Q_2=e_t$ already forces $(\tilde Q^{*}\tilde Q)^{2}=e_t$, and a Hermitian positive $\tilde Q^{*}\tilde Q$ with that square is $e_t$. The common part of the two groups is $\mathrm{U}(2)$, so the four forms are preserved together only by the smaller group, and the larger group is not a larger symmetry of them. The boosts of $G_N$ separate the two pairs and are the witness: $\tilde U^{\mathrm{lor}}=\cosh t\,e_t+i\sinh t\,\vec e_z$ has $\langle\tilde U^{\mathrm{lor}}\rangle_{\natural}=e_t$, preserves the general quaternionic bilinear and the Krein form, and fails the other two with no constant of proportionality at all — the failure is not a scalar multiple but a genuine change of the form.
+which returns $\mathrm{Sc}(\tilde Q_1\tilde Q_2^{*})$ for all $\tilde Q_1$ and $\tilde Q_2$ only when $\tilde Q^{*}\tilde Q=e_t$ — setting $\tilde Q_2=e_t$ already forces $(\tilde Q^{*}\tilde Q)^{2}=e_t$, and a Hermitian positive $\tilde Q^{*}\tilde Q$ with that square is $e_t$. The common part of the two groups is $\mathrm{U}(2)$, so the four forms are preserved together only by the smaller group, and the larger group is not a larger symmetry of them. The boosts of $G_N$ separate the two pairs and are the witness: $\tilde U^{\mathrm{lor}}=\cosh r_t\,e_t+i\sinh r_t\,\vec e_z$ has $\langle\tilde U^{\mathrm{lor}}\rangle_{\natural}=e_t$, preserves the general quaternionic bilinear and the Krein form, and fails the other two with no constant of proportionality at all — the failure is not a scalar multiple but a genuine change of the form.
 
 **A caution on the word isometry.** The isometry group of a form, read in the standard linear sense as the full group of linear maps that preserve it, is far larger than the $*$-unitary group, and it is not one group but three: $O_4(\mathbb{C})$ of real dimension twelve for the two bilinear forms, $\mathrm{U}(4)$ of real dimension sixteen and compact for the general plain sesquilinear form, and $\mathrm{U}(1,3)$ of real dimension sixteen and non-compact for the Krein form. What the unitaries supply is not one of those groups but the **inner isometries**, the conjugations by an element of the algebra, and because the central phase acts trivially the acting group is $PU(2)\cong SO(3)$, of real dimension three. The two statements do not compete, and a reader should hold both: every conjugation by a $*$-unitary is an isometry of each of the four forms, and the isometry group of each form is very much larger than the image of the $*$-unitary group. The sharper form of the first statement is that these inner isometries are exactly the isometries that also preserve the algebra's multiplication — the $\mathbb{C}$-linear isometries preserving the product are the inner ones and no others. That is why the four forms survive a $*$-unitary conjugation together: the reason is not an accident of the coefficients, it is that the conjugation is an automorphism of the algebra as well as an isometry of the forms, and the four forms are four dressings of the one product that the automorphism preserves.
 
@@ -231,7 +231,7 @@ which returns $\mathrm{Sc}(\tilde Q_1\tilde Q_2^{*})$ for all $\tilde Q_1$ and $
 
 The following computations exhibit each hypothesis failing when it is dropped.
 
-**Example 1: a non-$*$-unitary element of unit norm.** Take $\tilde U^{\mathrm{lor}}=\mathrm{diag}(\lambda,\lambda^{-1})$ in the matrix model with $\lambda>0$, $\lambda\neq1$; equivalently $\tilde U^{\mathrm{lor}}=\cosh t\,e_t+i\sinh t\,\vec e_z$ in the algebra, with $\lambda=\exp(t)$, which the matrix model sends to $\mathrm{diag}(\exp(t),\exp(-t))$. Its determinant is $1$, so $\langle\tilde U^{\mathrm{lor}}\rangle_{\natural}=e_t$ and Theorem 2's hypothesis holds: the biquaternion norm is preserved. But
+**Example 1: a non-$*$-unitary element of unit norm.** Take $\tilde U^{\mathrm{lor}}=\mathrm{diag}(\lambda,\lambda^{-1})$ in the matrix model with $\lambda>0$, $\lambda\neq1$; equivalently $\tilde U^{\mathrm{lor}}=\cosh r_t\,e_t+i\sinh r_t\,\vec e_z$ in the algebra, with $\lambda=\exp(t)$, which the matrix model sends to $\mathrm{diag}(\exp(t),\exp(-t))$. Its determinant is $1$, so $\langle\tilde U^{\mathrm{lor}}\rangle_{\natural}=e_t$ and Theorem 2's hypothesis holds: the biquaternion norm is preserved. But
 $$
 \tilde U^{\mathrm{lor}}{}^{*}\tilde U^{\mathrm{lor}}=\mathrm{diag}(\lambda^2,\lambda^{-2}),
 $$
@@ -251,15 +251,15 @@ G=-\hbar^{-1}\vec e_z\,i\vec e_x=-\hbar^{-1}i\,\vec e_z \vec e_x=-\hbar^{-1}i\,\
 $$
 Now $i\vec e_y$ is Hermitian, since $(i\vec e_y)^{*}=i\vec e_y$, so $G$ is Hermitian rather than anti-Hermitian, and the one-parameter group it generates is the hyperbolic element
 $$
-\exp(Gt')=\cosh(\hbar^{-1}t')\,e_t-\sinh(\hbar^{-1}t')\,i\vec e_y ,
+\exp(Gr'_t)=\cosh(\hbar^{-1}r'_t)\,e_t-\sinh(\hbar^{-1}r'_t)\,i\vec e_y ,
 $$
 which is not $*$-unitary: because $G^2=\hbar^{-2}e_t$, the hyperbolic functions replace the trigonometric ones, and
 $$
-\exp(Gt')^\dagger\exp(Gt')=\cosh(2\hbar^{-1}t')\,e_t-\sinh(2\hbar^{-1}t')\,i\vec e_y ,
+\exp(Gr'_t)^\dagger\exp(Gr'_t)=\cosh(2\hbar^{-1}r'_t)\,e_t-\sinh(2\hbar^{-1}r'_t)\,i\vec e_y ,
 \qquad
-\mathrm{Tr}\bigl(\exp(Gt')^\dagger\exp(Gt')\bigr)=2\cosh(2\hbar^{-1}t'),
+\mathrm{Tr}\bigl(\exp(Gr'_t)^\dagger\exp(Gr'_t)\bigr)=2\cosh(2\hbar^{-1}r'_t),
 $$
-which grows without bound, so the Hermitian norm of a state is not preserved. Its biquaternion norm, by contrast, is $\langle \exp Gt'\rangle_{\natural}=\bigl(\cosh^2\hbar^{-1}t'-\sinh^2\hbar^{-1}t'\bigr)e_t=e_t$, so this non-$*$-unitary element has $|\langle\exp Gt'\rangle_{\natural}|=1$ and is exactly the kind of element Theorem 2 allows. The failure is exactly the non-commutation of $\vec{Ζ}=\vec e_z$ with the Hermitian element $i\vec e_x$; it is the non-centrality of the unit that breaks the norm. The computation is the flow version, developed next.
+which grows without bound, so the Hermitian norm of a state is not preserved. Its biquaternion norm, by contrast, is $\langle \exp Gr'_t\rangle_{\natural}=\bigl(\cosh^2\hbar^{-1}r'_t-\sinh^2\hbar^{-1}r'_t\bigr)e_t=e_t$, so this non-$*$-unitary element has $|\langle\exp Gr'_t\rangle_{\natural}|=1$ and is exactly the kind of element Theorem 2 allows. The failure is exactly the non-commutation of $\vec{Ζ}=\vec e_z$ with the Hermitian element $i\vec e_x$; it is the non-centrality of the unit that breaks the norm. The computation is the flow version, developed next.
 
 **Example 4: an accidental invariance.** If one tests norm preservation only on a single fixed element, non-$*$-unitary elements can appear to preserve it. With $\tilde Q_1=\tilde\Pi(\vec u)$ and $\tilde Q$ a rotation element of $G_N$ that happens to fix $\vec u$, the Hermitian norm of that particular $\tilde Q_1$ can be unchanged even though $\Gamma_{\tilde Q}$ is not $*$-unitary. The quantifier "for all $\tilde Q_1$" in Theorem 1 is therefore essential, and the numerical checks of this article were run on random superpositions precisely to avoid this accident.
 
@@ -269,19 +269,19 @@ The norm-preservation theorem of the preceding sections is algebraic: it is abou
 
 **The state-vector equation.** In the state module $\mathbb{B}\tilde\Pi_1$, the equation is
 $$
-i\hbar\,\partial/\partial t'\tilde{Ξ}^{\mathrm{sp}}=\tilde{Ζ}\tilde R_\psi\tilde{Ξ}^{\mathrm{sp}} ,
+i\hbar\,\partial/\partial r'_t\tilde{Ξ}^{\mathrm{sp}}=\tilde{Ζ}\tilde R_\psi\tilde{Ξ}^{\mathrm{sp}} ,
 \qquad
 \tilde{Ζ}^2=-e_t,\quad \tilde R_\psi\in\mathbb{M}_+,
 $$
 with $\tilde{Ζ}$ a root of $-e_t$ and $\tilde R_\psi$ Hermitian. The solution, for constant $\tilde R_\psi$, is
 $$
-\tilde{Ξ}^{\mathrm{sp}}(t')=\exp\bigl(Gt'\bigr)\tilde{Ξ}^{\mathrm{sp}}(0),
+\tilde{Ξ}^{\mathrm{sp}}(r'_t)=\exp\bigl(Gr'_t\bigr)\tilde{Ξ}^{\mathrm{sp}}(0),
 \qquad
 G=-\hbar^{-1}\tilde{Ζ}\tilde R_\psi.
 $$
-The norm $\mathrm{Tr}(\tilde{Ξ}^{\mathrm{sp}\dagger}\tilde{Ξ}^{\mathrm{sp}})$ is preserved for all $t'$ and all $\tilde{Ξ}^{\mathrm{sp}}(0)$ exactly when $G$ is anti-Hermitian,
+The norm $\mathrm{Tr}(\tilde{Ξ}^{\mathrm{sp}\dagger}\tilde{Ξ}^{\mathrm{sp}})$ is preserved for all $r'_t$ and all $\tilde{Ξ}^{\mathrm{sp}}(0)$ exactly when $G$ is anti-Hermitian,
 $$
-\frac{d}{dt'}\mathrm{Tr}\bigl(\tilde{Ξ}^{\mathrm{sp}\dagger}\tilde{Ξ}^{\mathrm{sp}}\bigr)
+\frac{d}{dr'_t}\mathrm{Tr}\bigl(\tilde{Ξ}^{\mathrm{sp}\dagger}\tilde{Ξ}^{\mathrm{sp}}\bigr)
 =\mathrm{Tr}\bigl(\tilde{Ξ}^{\mathrm{sp}\dagger}(G^{*}+G)\tilde{Ξ}^{\mathrm{sp}}\bigr)
 =0\ \ \text{for all }\tilde{Ξ}^{\mathrm{sp}}
 \iff G^{*}=-G .
@@ -295,7 +295,7 @@ G^{*}=-\hbar^{-1}\tilde R_\psi\tilde{Ζ}^\dagger,
 \qquad
 -G=+\hbar^{-1}\tilde{Ζ}\tilde R_\psi,
 $$
-so the hypothesis reads $-\tilde R_\psi\tilde{Ζ}^\dagger=\tilde{Ζ}\tilde R_\psi$ for every Hermitian $\tilde R_\psi$. Evaluating it at $\tilde R_\psi=e_t$ gives $\tilde{Ζ}^\dagger=-\tilde{Ζ}$, so a root of $-e_t$ that generates a norm-preserving flow is necessarily anti-Hermitian; with that, and only with that, the condition becomes $\tilde R_\psi\tilde{Ζ}=\tilde{Ζ}\tilde R_\psi$. This must hold for every Hermitian $\tilde R_\psi$. The Hermitian elements span $\mathbb{M}_+=\mathrm{span}_\mathbb{R}\{e_t,i\vec e_x,i\vec e_y,i\vec e_z\}$, whose real span together with $i$ spans all of $\mathbb{B}$; since $\tilde{Ζ}$ commutes with $e_t$ and with every $i\vec e_k$, it commutes with every element of $\mathbb{B}$, i.e. $\tilde{Ζ}$ is central. The centre is $\mathbb{C}_{\mathbb{B}}=Z(\mathbb{B})=\mathrm{span}_\mathbb{R}\{e_t,ie_t\}$, and its elements are $\lambda e_t$ with $\lambda\in\mathbb{C}$; the condition $\tilde{Ζ}^2=-e_t$ gives $\lambda^2=-1$, hence $\lambda=\pm i$. Conversely, for $\tilde{Ζ}=\pm i$ the generator $G=\mp\hbar^{-1}i\tilde R_\psi$ is anti-Hermitian because $\tilde R_\psi$ Hermitian implies $i\tilde R_\psi$ anti-Hermitian, and the exponential $\exp(Gt')$ is $*$-unitary.
+so the hypothesis reads $-\tilde R_\psi\tilde{Ζ}^\dagger=\tilde{Ζ}\tilde R_\psi$ for every Hermitian $\tilde R_\psi$. Evaluating it at $\tilde R_\psi=e_t$ gives $\tilde{Ζ}^\dagger=-\tilde{Ζ}$, so a root of $-e_t$ that generates a norm-preserving flow is necessarily anti-Hermitian; with that, and only with that, the condition becomes $\tilde R_\psi\tilde{Ζ}=\tilde{Ζ}\tilde R_\psi$. This must hold for every Hermitian $\tilde R_\psi$. The Hermitian elements span $\mathbb{M}_+=\mathrm{span}_\mathbb{R}\{e_t,i\vec e_x,i\vec e_y,i\vec e_z\}$, whose real span together with $i$ spans all of $\mathbb{B}$; since $\tilde{Ζ}$ commutes with $e_t$ and with every $i\vec e_k$, it commutes with every element of $\mathbb{B}$, i.e. $\tilde{Ζ}$ is central. The centre is $\mathbb{C}_{\mathbb{B}}=Z(\mathbb{B})=\mathrm{span}_\mathbb{R}\{e_t,ie_t\}$, and its elements are $\lambda e_t$ with $\lambda\in\mathbb{C}$; the condition $\tilde{Ζ}^2=-e_t$ gives $\lambda^2=-1$, hence $\lambda=\pm i$. Conversely, for $\tilde{Ζ}=\pm i$ the generator $G=\mp\hbar^{-1}i\tilde R_\psi$ is anti-Hermitian because $\tilde R_\psi$ Hermitian implies $i\tilde R_\psi$ anti-Hermitian, and the exponential $\exp(Gr'_t)$ is $*$-unitary.
 
 **Where the centrality is used.** The hypothesis "for every Hermitian $\tilde R_\psi$" is what forces $\tilde{Ζ}$ into the centre, and it is not a technical convenience. Physically, a dynamics must be norm-preserving for the whole class of Hamiltonians the theory admits, not merely for one particular $\tilde R_\psi$; the theory admits every Hermitian element as a possible generator. Mathematically, one non-central root is enough to violate the norm, and Example 3 exhibits the violation: with $\vec{Ζ}=\vec e_z$ and $\tilde R_\psi=i\vec e_x$, the generator is Hermitian rather than anti-Hermitian, so the exponential is not $*$-unitary.
 

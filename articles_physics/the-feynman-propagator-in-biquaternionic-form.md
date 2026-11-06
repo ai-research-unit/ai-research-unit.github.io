@@ -17,10 +17,10 @@ The framework carries two equations called the Dirac equation, and they must not
 The second is the **two-sided** form of *The Dirac Equation in Biquaternionic Form*, a single equation on $\mathbb{B}$,
 
 $$
-\mathcal{N}F=\Big(i\frac{\partial}{\partial t'}+D_3\Big)F-mi\,\overline{F}\,\vec e_z=0,
+\mathcal{N}F=\Big(i\frac{\partial}{\partial r'_t}+D_3\Big)F-mi\,\overline{F}\,\vec e_z=0,
 $$
 
-in which $D_3$ is the spatial Dirac operator of that article, the mass acts by right multiplication through $\vec e_z$, and the conjugation supplies the antilinear part. Because $i\partial/\partial t'+D_3=-\tilde\nabla^{\natural}$, the two-sided operator is
+in which $D_3$ is the spatial Dirac operator of that article, the mass acts by right multiplication through $\vec e_z$, and the conjugation supplies the antilinear part. Because $i\partial/\partial r'_t+D_3=-\tilde\nabla^{\natural}$, the two-sided operator is
 
 $$
 \mathcal{N}=-\tilde\nabla^{\natural}-mi\,\overline{\,\cdot\,}\,\vec e_z .
@@ -147,7 +147,7 @@ $$
 
 The action is written by what it does, so the display carries the test element and no second symbol. The overall $i$ and the $i\epsilon$ are fixed by requiring that the $p_0$ integral reproduce the two branches, with the normalization of the time-ordered product and the fermionic relative sign. It is worth performing that check explicitly, because it is where a sign can silently go wrong.
 
-Write the $p_0$ integral at fixed $\vec p$, and put $\Delta t=x_0-y_0$ and $\Delta\vec x=\vec x-\vec y$. Since
+Write the $p_0$ integral at fixed $\vec p$, and put $\Delta t=x_0-y_0$ and $\Delta\vec r=\vec r-\vec r_y$. Since
 
 $$
 p^2-m^2=p_0^2-\vec p^2-m^2=p_0^2-E_{\vec p}^2,
@@ -196,7 +196,7 @@ in both lines the product of the two imaginary units being $i^2=-1$.
 Both carry the same **positive** weight: the sign of the half-plane and the sign inside the residue cancel, and the $2\pi$ cancels against the $1/(2\pi)$ of the $p_0$ measure, leaving $1/(2E_{\vec p})$, which is the normalisation of $W_\pm$. The fermionic minus is therefore not in the contour, and it must come from the numerator. For $\Delta t>0$ the $p_0$ integral is already the positive-frequency integrand of $W_+$. For $\Delta t<0$ it is
 
 $$
-\frac{\mathcal{A}_{p_-}(\tilde Q)+m\tilde Q}{2E_{\vec p}}\,\exp(+iE_{\vec p}\Delta t+i\vec p\cdot\Delta\vec x).
+\frac{\mathcal{A}_{p_-}(\tilde Q)+m\tilde Q}{2E_{\vec p}}\,\exp(+iE_{\vec p}\Delta r_t+i\vec p\cdot\Delta\vec r).
 $$
 
 Now flip the integration variable, $\vec p\to-\vec p$: the measure and $E_{\vec p}$ are unchanged, and the spatial phase reverses. The action is linear in the four-momentum, so flipping all four components flips its sign,
@@ -304,10 +304,10 @@ What it does not do is choose the orientation. Replacing $\epsilon$ by $-\epsilo
 The closest the complex structure comes to doing real work is the Wick rotation. On the material sector the d'Alembertian reads
 
 $$
-\Box=-\frac{\partial^2}{\partial t'^2}+\Delta ,
+\Box=-\frac{\partial^2}{\partial r'_t^2}+\Delta ,
 $$
 
-a hyperbolic operator: one sign against three. The substitution $t'=-i\tau$ turns $\partial^2/\partial t'^2$ into $-\partial^2/\partial\tau^2$, so the same operator becomes
+a hyperbolic operator: one sign against three. The substitution $r'_t=-i\tau$ turns $\partial^2/\partial r'_t^2$ into $-\partial^2/\partial\tau^2$, so the same operator becomes
 
 $$
 \Box \;\longmapsto\; \frac{\partial^2}{\partial\tau^2}+\Delta ,
@@ -337,7 +337,7 @@ This is the sharpest way to see why the question "does the algebra supply the $i
 
 ## Relation to the Thermal Two-Point Function
 
-One further structure is worth recording, because it is the place where the framework's complex time does carry a genuinely analytic condition. The companion article *The KMS Condition and the Biquaternion Framework* characterizes thermal equilibrium by the analyticity of the correlation function $F_{AB}(t')=\omega_\beta(A\,\alpha_{r'_{t}}(B))$ in the strip $0<\mathrm{Im}(t')<\beta$, with boundary relation $F_{AB}(t'+i\beta)=F_{BA}(-t')$; the imaginary-time direction is intrinsic to the material sector $\mathbb{M}_-$, and the companion quantization article shows that the anticommutator turns the boundary relation into the Fermi–Dirac distribution and the antiperiodic Matsubara frequencies $\omega_n=(2n+1)\pi/\beta$.
+One further structure is worth recording, because it is the place where the framework's complex time does carry a genuinely analytic condition. The companion article *The KMS Condition and the Biquaternion Framework* characterizes thermal equilibrium by the analyticity of the correlation function $F_{AB}(r'_t)=\omega_\beta(A\,\alpha_{r'_{t}}(B))$ in the strip $0<\mathrm{Im}(r'_t)<\beta$, with boundary relation $F_{AB}(r'_t+i\beta)=F_{BA}(-r'_t)$; the imaginary-time direction is intrinsic to the material sector $\mathbb{M}_-$, and the companion quantization article shows that the anticommutator turns the boundary relation into the Fermi–Dirac distribution and the antiperiodic Matsubara frequencies $\omega_n=(2n+1)\pi/\beta$.
 
 At finite temperature the time-ordered two-point function is not given by a vacuum contour integral but by the discrete Matsubara sum over the compact imaginary-time circle; the real-time retarded and advanced propagators still carry their own $\epsilon$ prescriptions, and they are obtained from the Matsubara sum by analytic continuation, not by an algebraic operation. The imaginary-time complexification that the algebra carries is a real feature of the thermal state — it is where the KMS analyticity lives — but it does not select the vacuum contour either. It is a consistency: the imaginary direction the framework already uses for the material time is the direction in which the thermal correlation functions are analytic, and the vacuum contour is recovered as the $\beta\to\infty$ limit rather than derived from the algebra.
 
@@ -451,7 +451,7 @@ and the prescription is a deformation of the mass-shell scalar. The added term $
 | $\tilde P\tilde P^{\natural}=-m^2$ | Biquaternion mass-shell condition |
 | $\mathcal{M}(\tilde P)=\tilde P\tilde P^{\natural}+m^2$ | Mass-shell operator; Feynman shift $\mathcal{M}(\tilde P)-i\epsilon\,e_t$ |
 | $\beta=1/(k_BT)$, $\omega_\beta$, $\alpha_{r'_{t}}$ | Inverse temperature, thermal state, Heisenberg evolution |
-| $F_{AB}(t'+i\beta)=F_{BA}(-t')$ | KMS condition |
+| $F_{AB}(r'_t+i\beta)=F_{BA}(-r'_t)$ | KMS condition |
 | $\omega_n=(2n+1)\pi/\beta$ | Fermionic Matsubara frequencies |
 
 ## Further Reading

@@ -11,14 +11,14 @@ The reformulation is a diagonalisation. Two complex quaternionic combinations of
 **A word on the word.** In this series *chiral* usually names a property of a fermion: the inequivalence of the left- and right-handed components of a spinor, the subject of *Chiral Fermions in the Biquaternion Framework*. Here it names a property of a material medium — an electric–magnetic cross-response. The two senses are unrelated, and the word is disambiguated here once and not again.
 
 $$
-D_3=\vec e_x\partial/\partial Q_x+\vec e_y\partial/\partial Q_y+\vec e_z\partial/\partial Q_z,
+D_3=\vec e_x\partial/\partial R_x+\vec e_y\partial/\partial R_y+\vec e_z\partial/\partial R_z,
 \qquad
 D_3^2=-\Delta,
 \qquad
-\Delta=\partial^2/\partial Q_x^2+\partial^2/\partial Q_y^2+\partial^2/\partial Q_z^2,
+\Delta=\partial^2/\partial R_x^2+\partial^2/\partial R_y^2+\partial^2/\partial R_z^2,
 $$
 
-with complex coefficients; it is the operator written $D_3$ in *Quaternion Regular Functions* and it is the spatial part of the four-dimensional biquaternionic gradient $\tilde\nabla=e_t\partial/\partial Q_t+D_3$. The source writes the quaternion units $i_1,i_2,i_3$ and the operator $D$; the translation to $\vec e_\mu$ and $D_3$ is used throughout. The speed of light in the medium is $c=1/\sqrt{\epsilon\mu}$ and the medium wavenumber is $k=\omega\sqrt{\epsilon\mu}=\omega/c$, as in *Electromagnetism in Media*. Bold letters are three-vectors and the scalar product is $\langle\cdot,\cdot\rangle$.
+with complex coefficients; it is the operator written $D_3$ in *Quaternion Regular Functions* and it is the spatial part of the four-dimensional biquaternionic gradient $\tilde\nabla=e_t\partial/\partial R_t+D_3$. The source writes the quaternion units $i_1,i_2,i_3$ and the operator $D$; the translation to $\vec e_\mu$ and $D_3$ is used throughout. The speed of light in the medium is $c=1/\sqrt{\epsilon\mu}$ and the medium wavenumber is $k=\omega\sqrt{\epsilon\mu}=\omega/c$, as in *Electromagnetism in Media*. Bold letters are three-vectors and the scalar product is $\langle\cdot,\cdot\rangle$.
 
 ## Chiral Media and the Drude–Born–Fedorov Relations
 
@@ -84,7 +84,7 @@ $$
 \tag{14}
 $$
 
-inverse to $\vec{\mathcal E}=\tfrac12(Ξ+\tilde{Ξ}^{\mathrm{sp}})$, $\vec{\mathcal H}=\tfrac12(Ξ-\tilde{Ξ}^{\mathrm{sp}})/i$. For real fields the two are complex conjugates, $\tilde{Ξ}^{\mathrm{sp}}=Ξ^{*}$; they are the *left-* and *right-handed* halves of the field in the sense of circular polarisation, not the chiral halves of a spinor of the companion article on chiral fermions. Applying $D_3=\sum_\mu\vec e_\mu\partial/\partial Q_\mu$ and using $D_3f=-\mathrm{div}\,\vec f+\mathrm{rot}\,\vec f$ on a pure vector, the cross terms close and the equations $(12)$ become
+inverse to $\vec{\mathcal E}=\tfrac12(Ξ+\tilde{Ξ}^{\mathrm{sp}})$, $\vec{\mathcal H}=\tfrac12(Ξ-\tilde{Ξ}^{\mathrm{sp}})/i$. For real fields the two are complex conjugates, $\tilde{Ξ}^{\mathrm{sp}}=Ξ^{*}$; they are the *left-* and *right-handed* halves of the field in the sense of circular polarisation, not the chiral halves of a spinor of the companion article on chiral fermions. Applying $D_3=\sum_\mu\vec e_\mu\partial/\partial R_\mu$ and using $D_3f=-\mathrm{div}\,\vec f+\mathrm{rot}\,\vec f$ on a pure vector, the cross terms close and the equations $(12)$ become
 
 $$
 \Bigl(D_3-\frac{k}{1-k\beta}\Bigr)Ξ=\frac{i}{k}\bigl(\alpha_2\,\vec j_{\mathrm n}+\mathrm{div}\,\vec j_{\mathrm n}\bigr),
@@ -403,7 +403,7 @@ u_y(x)=\exp(-i\Theta(x_1))\Bigl[G_1(x_2,x_3)(1+i\vec e_x)B_1+G_2(x_2,x_3)\vec e_
 \tag{44}
 $$
 
-where $H_1,H_2,G_1,G_2$ are analytic functions of the complex variable $z=x_3+\vec e_xx_2$ — that is, for a representative $h=h_0\,e_t+h_1\,\vec e_x$, the parts satisfy the Cauchy–Riemann conditions $\partial/\partial Q_yh_0+\partial/\partial Q_zh_1=0$, $\partial/\partial Q_zh_0-\partial/\partial Q_yh_1=0$ — and $A_i,B_i$ are arbitrary constant biquaternions. The exponential $\exp(i\Theta)$ carries the phase accumulated along the stratification, and the analytic functions carry the transverse structure. Feeding them into the reconstruction $(14)$ gives explicit solutions of the chiral system for a stratified chiral medium; the case of general slowly changing $\epsilon,\mu,\beta$ is approximated by this one. The shift carried by each exponential is fixed below.
+where $H_1,H_2,G_1,G_2$ are analytic functions of the complex variable $z=x_3+\vec e_xx_2$ — that is, for a representative $h=h_0\,e_t+h_1\,\vec e_x$, the parts satisfy the Cauchy–Riemann conditions $\partial/\partial R_yh_0+\partial/\partial R_zh_1=0$, $\partial/\partial R_zh_0-\partial/\partial R_yh_1=0$ — and $A_i,B_i$ are arbitrary constant biquaternions. The exponential $\exp(i\Theta)$ carries the phase accumulated along the stratification, and the analytic functions carry the transverse structure. Feeding them into the reconstruction $(14)$ gives explicit solutions of the chiral system for a stratified chiral medium; the case of general slowly changing $\epsilon,\mu,\beta$ is approximated by this one. The shift carried by each exponential is fixed below.
 
 **A sign bookkeeping point.** Proposition 14 records that $(43,44)$ solve $(D_3+\alpha(x_1))u=0$ with $\Theta$ an antiderivative of $\alpha$. The source then states the reduced system as $(32)$ and gives the solutions of it as $(46,47)$, with $\mathrm{Sd}_1,\mathrm{Sd}_2$ antiderivatives of $\alpha_1,\alpha_2$ respectively (equation $(45)$; the field formula following Proposition 15 uses the exponent $\exp(\,i\int\alpha_2)$). Recomputation on the printed forms shows that the two statements are related by one global sign: the printed $(46,47)$ with $\partial\mathrm{Sd}_2/\partial x_1=\alpha_2$, $\partial\mathrm{Sd}_1/\partial x_1=\alpha_1$ satisfy $(D_3+\alpha_2)Ξ=0$ and $(D_3-\alpha_1)\tilde{Ξ}^{\mathrm{sp}}=0$, whereas $(32)$ reads $(D_3-\alpha_2)Ξ=0$ and $(D_3+\alpha_1)\tilde{Ξ}^{\mathrm{sp}}=0$. The two agree if $\mathrm{Sd}_1,\mathrm{Sd}_2$ are read as antiderivatives of $-\alpha_1,-\alpha_2$, equivalently if the signs of the two exponentials are exchanged. The verified assignment, valid for a constant or a variable $\alpha(x_1)$, is the one recorded here: the exponential $\exp(\,i\Theta)$ on the first term accompanies the operator $D_3+\alpha$ whose shift is the derivative of $\Theta$. The pairing rule behind that assignment is the pair of eigenvalue identities
 
@@ -420,13 +420,13 @@ which fix, for each idempotent factor, whether $\exp(\,i\Theta)$ or $\exp(-i\The
 $$
 D_3f+f\vec\alpha = 0,
 \qquad
-D_3 = \vec e_x\partial/\partial Q_x+\vec e_y\partial/\partial Q_y+\vec e_z\partial/\partial Q_z,
+D_3 = \vec e_x\partial/\partial R_x+\vec e_y\partial/\partial R_y+\vec e_z\partial/\partial R_z,
 \qquad
 \vec\alpha = \alpha_1\vec e_x+\alpha_2\vec e_y+\alpha_3\vec e_z ,
 \tag{45}
 $$
 
-with the coefficient on the right: the Dirac equation with a **scalar** potential, with an **electric** potential, and with a **pseudoscalar** potential; the **force-free magnetic fields** of magnetohydrodynamics, $\mathrm{div}\,\vec B = 0$ and $\mathrm{rot}\,\vec B = \nu\vec B$ with a non-constant scalar factor $\nu$, which is $(D_3-\nu)\vec B = 0$ and hence a Beltrami field — the same form as the Beltrami pair $(20)$ above, with $\nu$ in the place of the chiral wavenumber; the **Maxwell system of a slowly changing medium**, that is the pair $(32)$; and the **static Maxwell system**. The Dirac members carry the potentials and the dictionary in *The Dirac Equation in Biquaternionic Form*; the force-free member is the magnetohydrodynamic interpretation of the equations of this section, and the slowly changing member is $(32)$ itself. The source of the list is Kravchenko and Kravchenko (2003), who also observe that of the remarkable subspaces, only the static Maxwell member forces $\vec\alpha$ to be a **gradient** — for it the permittivity must factorise, $\varepsilon = \varepsilon_1(x_1)\varepsilon_2(x_2)\varepsilon_3(x_3)$ with $\alpha_k = \partial/\partial Q_k\,\varepsilon_k/(2\varepsilon_k)$ — while in the other five the coefficient is a general vector-valued function. That distinction is what the corpus's Riccati material covers, and what it does not: the equation with a vectorial coefficient is reduced to *four* scalar Schrödinger equations, not one, and the reduction, its four potentials and its exact Jacobian condition are in *Quaternion Regular Functions*.
+with the coefficient on the right: the Dirac equation with a **scalar** potential, with an **electric** potential, and with a **pseudoscalar** potential; the **force-free magnetic fields** of magnetohydrodynamics, $\mathrm{div}\,\vec B = 0$ and $\mathrm{rot}\,\vec B = \nu\vec B$ with a non-constant scalar factor $\nu$, which is $(D_3-\nu)\vec B = 0$ and hence a Beltrami field — the same form as the Beltrami pair $(20)$ above, with $\nu$ in the place of the chiral wavenumber; the **Maxwell system of a slowly changing medium**, that is the pair $(32)$; and the **static Maxwell system**. The Dirac members carry the potentials and the dictionary in *The Dirac Equation in Biquaternionic Form*; the force-free member is the magnetohydrodynamic interpretation of the equations of this section, and the slowly changing member is $(32)$ itself. The source of the list is Kravchenko and Kravchenko (2003), who also observe that of the remarkable subspaces, only the static Maxwell member forces $\vec\alpha$ to be a **gradient** — for it the permittivity must factorise, $\varepsilon = \varepsilon_1(x_1)\varepsilon_2(x_2)\varepsilon_3(x_3)$ with $\alpha_k = \partial/\partial R_k\,\varepsilon_k/(2\varepsilon_k)$ — while in the other five the coefficient is a general vector-valued function. That distinction is what the corpus's Riccati material covers, and what it does not: the equation with a vectorial coefficient is reduced to *four* scalar Schrödinger equations, not one, and the reduction, its four potentials and its exact Jacobian condition are in *Quaternion Regular Functions*.
 
 ## What Is Not Claimed
 
@@ -460,8 +460,8 @@ The two things a reader should carry away are the two wavenumbers and the fact t
 | Symbol | Meaning |
 |---|---|
 | $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ | Biquaternion algebra, basis $e_t=1,\vec e_x,\vec e_y,\vec e_z$, scalar imaginary $i$ |
-| $D_3=\vec e_x\partial/\partial Q_x+\vec e_y\partial/\partial Q_y+\vec e_z\partial/\partial Q_z$ | Spatial Moisil–Theodoresco operator; $D_3^2=-\Delta$ |
-| $\Delta$ | Spatial Laplacian $\partial^2/\partial Q_x^2+\partial^2/\partial Q_y^2+\partial^2/\partial Q_z^2$ |
+| $D_3=\vec e_x\partial/\partial R_x+\vec e_y\partial/\partial R_y+\vec e_z\partial/\partial R_z$ | Spatial Moisil–Theodoresco operator; $D_3^2=-\Delta$ |
+| $\Delta$ | Spatial Laplacian $\partial^2/\partial R_x^2+\partial^2/\partial R_y^2+\partial^2/\partial R_z^2$ |
 | $D_{3\pm\alpha}=D_3\pm\alpha$ | The shifted (Helmholtz–Dirac) family |
 | $\epsilon,\mu$ | Permittivity and permeability of the medium |
 | $\beta$ | Chirality (Pasteur) measure; a length |

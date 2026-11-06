@@ -306,7 +306,7 @@ The normalization is a convention. The corpus writes $\{Q,Q^\dagger\}=H$; the st
 In the biquaternion framework the Dirac operator is the gradient
 
 $$
-\tilde\nabla=e_t\partial/\partial Q_t+\vec e_x\partial/\partial Q_x+\vec e_y\partial/\partial Q_y+\vec e_z\partial/\partial Q_z,
+\tilde\nabla=e_t\partial/\partial R_t+\vec e_x\partial/\partial R_x+\vec e_y\partial/\partial R_y+\vec e_z\partial/\partial R_z,
 $$
 
 with $\tilde\nabla\tilde\nabla^{\natural}=\tilde\nabla^{\natural}\tilde\nabla=\Box$, the central d'Alembertian. The first-order pair $(\tilde\nabla,\tilde\nabla^{\natural})$ is the supercharge pair, the grading is chirality, and the mass pair is the term that exchanges the two values of the chirality and that the superalgebra reads as the superpotential.
@@ -461,7 +461,7 @@ the vacuum state plus $\varkappa$ times the occupied state. The label is odd and
 In the semiclassical approximation the leading-order momentum is the phase gradient, the real quaternion
 
 $$
-\nabla S=\sum_k\frac{\partial S}{\partial Q_k}\vec e_k .
+\nabla S=\sum_k\frac{\partial S}{\partial R_k}\vec e_k .
 $$
 
 The Hamilton–Jacobi equation fixes its norm to the energy defect,

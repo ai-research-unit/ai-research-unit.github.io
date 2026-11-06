@@ -20,7 +20,7 @@ The trap in this subject is to *assert* the thermality — to write down the exp
 
 **Relation to the parent.** *The KMS Condition and the Biquaternion Framework* is the parent article. It establishes two facts that this article uses unchanged: the imaginary time of the material sector is intrinsic, and the modular Hamiltonian $K=-\log\tilde{Ϛ}$ of a finite-dimensional Gibbs state is a Hermitian element of $\mathbb{M}_+$. It also leaves a gap, which is stated here rather than filled silently. Its modular Hamiltonian is defined through a density matrix in a **finite-dimensional** setting. The wedge-restricted Minkowski vacuum is a state on a field algebra; it is not given by a density matrix, and the parent neither defines the modular operator $\Delta$ nor the modular flow in that setting. The identification of the modular flow with the boost is the **Bisognano–Wichmann theorem** — established physics, imported here, not derived from the biquaternion algebra. What this article does with the gap is make the flow geometric in the one case where the standard theorem supplies it, and label precisely what remains outside the framework.
 
-- **Established, and recomputed below.** In the right wedge, the boost Killing vector $\zeta=x\partial/\partial t'+t'\partial/\partial Q_x$ is future-directed; a boost by rapidity $\theta^{\mathrm{rpd}}$ shifts Rindler time $\eta$ by $\eta\mapsto\eta-\theta^{\mathrm{rpd}}$ under the Lorentz rotor $\tilde U_{\mathrm b}(\theta^{\mathrm{rpd}})=\cosh\frac{\theta^{\mathrm{rpd}}}{2}+i\sinh\frac{\theta^{\mathrm{rpd}}}{2}\vec e_x$; the rotor lies in $\mathbb{M}_+$, preserves $\mathbb{M}_-$ and preserves the biquaternion norm. The massless two-point function along the orbit $\rho=\text{const}$ is $W=-\tfrac{1}{16\pi^2\rho^2}\sinh^{-2}\!\big(\tfrac{1}{2}(\delta\eta-i\epsilon)\big)$ in units $c=1$; it is even and periodic under $\delta\eta\mapsto\delta\eta+2\pi i$, equivalently in imaginary proper time with period $\beta=2\pi/a$, giving the KMS strip $0<\mathrm{Im}\,\delta\tau<\beta$ and the boundary relation $W(\delta\tau+i\beta)=W(-\delta\tau)$. The surface gravity of the redshift-normalized boost $\xi=a\zeta$ is $\kappa=a$ on the horizon, so $T=\kappa/(2\pi)=a/(2\pi)$.
+- **Established, and recomputed below.** In the right wedge, the boost Killing vector $\zeta=r_x\partial/\partial r'_t+r'_t\partial/\partial R_x$ is future-directed; a boost by rapidity $\theta^{\mathrm{rpd}}$ shifts Rindler time $\eta$ by $\eta\mapsto\eta-\theta^{\mathrm{rpd}}$ under the Lorentz rotor $\tilde U_{\mathrm b}(\theta^{\mathrm{rpd}})=\cosh\frac{\theta^{\mathrm{rpd}}}{2}+i\sinh\frac{\theta^{\mathrm{rpd}}}{2}\vec e_x$; the rotor lies in $\mathbb{M}_+$, preserves $\mathbb{M}_-$ and preserves the biquaternion norm. The massless two-point function along the orbit $\rho=\text{const}$ is $W=-\tfrac{1}{16\pi^2\rho^2}\sinh^{-2}\!\big(\tfrac{1}{2}(\delta\eta-i\epsilon)\big)$ in units $c=1$; it is even and periodic under $\delta\eta\mapsto\delta\eta+2\pi i$, equivalently in imaginary proper time with period $\beta=2\pi/a$, giving the KMS strip $0<\mathrm{Im}\,\delta\tau<\beta$ and the boundary relation $W(\delta\tau+i\beta)=W(-\delta\tau)$. The surface gravity of the redshift-normalized boost $\xi=a\zeta$ is $\kappa=a$ on the horizon, so $T=\kappa/(2\pi)=a/(2\pi)$.
 - **Standard, and imported.** The Unruh effect itself; the Bisognano–Wichmann theorem; the KMS characterization of thermal equilibrium; the massless Wightman function and its pole structure; the definition of surface gravity.
 - **Interpretation.** Reading the modular flow as the biquaternionic boost flow, and the Rindler horizon as the zero-divisor cone, are structural interpretations of the standard construction. The algebra is consistent with them; it does not by itself force the thermal interpretation.
 - **Gaps, left visible.** The general modular operator of a field algebra is not constructed in the framework; the algebra of observables of a quantum field theory is infinite-dimensional, so the finite-dimensional interpretation of the modular flow as an inner automorphism is a model, not a derivation; and the framework does not derive thermality, only house it. These are collected in the open questions.
@@ -31,19 +31,19 @@ The article is organized as follows. The next section fixes the wedge, the Rindl
 
 ### The Wedge and Its Horizon
 
-Work in the material sector and restrict to the $x$--$t'$ plane, setting $y=z=0$. A point is
+Work in the material sector and restrict to the $x$--$r'_t$ plane, setting $y=z=0$. A point is
 
 $$
-\tilde R_\varphi = i\,c r'_{t}\,e_t + r_x\,\vec e_x \in \mathbb{M}_-, \qquad \langle\tilde R_\varphi\rangle_{\natural} = -c^2{r'_{t}}^2 + x^2 .
+\tilde R_\varphi = i\,c r'_{t}\,e_t + r_x\,\vec e_x \in \mathbb{M}_-, \qquad \langle\tilde R_\varphi\rangle_{\natural} = -c^2{r'_{t}}^2 + r_x^2 .
 $$
 
 The **right Rindler wedge** is the region
 
 $$
-R = \{(t',x): x > |c r'_{t}|\},
+R = \{(r'_t,r_x): r_x > |c r'_{t}|\},
 $$
 
-and the **left wedge** is its mirror $L=\{(t',x): x<-|c r'_{t}|\}$. The boundary
+and the **left wedge** is its mirror $L=\{(r'_t,r_x): r_x<-|c r'_{t}|\}$. The boundary
 
 $$
 \langle\tilde R_\varphi\rangle_{\natural} = 0 \quad\Longleftrightarrow\quad x = \pm c r'_{t}
@@ -70,7 +70,7 @@ so the orbit of proper acceleration $a$ sits at $\rho=c^2/a$. In units $c=1$ the
 The **boost Killing vector** is
 
 $$
-\zeta = x\,\partial/\partial t' + t'\,\partial/\partial Q_x .
+\zeta = r_x\,\partial/\partial r'_t + r'_t\,\partial/\partial R_x .
 $$
 
 It is future-directed on the right wedge and past-directed on the left. Its orbits in $R$ are the constant-$\rho$ hyperbolas above, with $\eta$ the affine parameter: $\zeta=\partial/\partial\eta$. The acceleration is the rate at which the boost parameter grows along the orbit, and this will become the surface gravity.
@@ -95,7 +95,7 @@ $$
 
 where we have used $\tilde U_{\mathrm b}^{*}=\tilde U_{\mathrm b}$. This is the two-sided action of the companion article on curved spacetime, not the commutator: for the boost generator the two differ, and it is the two-sided form that implements the boost.
 
-**The direction, computed.** On $\tilde R_\varphi=ic r'_t e_t+r_x\vec e_x$ (with $c r'_t=ct'$, $r_x=x$; we drop $r_y,r_z$, which are untouched), rotor conjugation gives
+**The direction, computed.** On $\tilde R_\varphi=ic r'_t e_t+r_x\vec e_x$ (with $c r'_t=cr'_t$, $r_x=x$; we drop $r_y,r_z$, which are untouched), rotor conjugation gives
 
 $$
 c r'_t \longmapsto c r'_t\cosh\theta^{\mathrm{rpd}} - r_x\sinh\theta^{\mathrm{rpd}}, \qquad
@@ -128,10 +128,10 @@ $$
 K = -\log\Delta, \qquad \Delta=\rho \ \ (\text{finite dimension}),
 $$
 
-so that $K=-\log\tilde{Ϛ}$ is Hermitian and therefore lies in $\mathbb{M}_+$. It states that the KMS correlation functions are analytic in the strip $0<\mathrm{Im}\,t'<\beta$ and satisfy
+so that $K=-\log\tilde{Ϛ}$ is Hermitian and therefore lies in $\mathbb{M}_+$. It states that the KMS correlation functions are analytic in the strip $0<\mathrm{Im}\,r'_t<\beta$ and satisfy
 
 $$
-F_{\tilde Q_2\tilde{Q}_1}(t'+i\beta) = F_{\tilde{Q}_1\tilde Q_2}(-t'),
+F_{\tilde Q_2\tilde{Q}_1}(r'_t+i\beta) = F_{\tilde{Q}_1\tilde Q_2}(-r'_t),
 $$
 
 and it records the imaginary time of $\mathbb{M}_-$ as intrinsic.
@@ -179,11 +179,11 @@ This is the section in which thermality is derived rather than asserted.
 Let $\xi^{\mathrm{scl}}$ be the massless real scalar field and $W$ its Wightman function,
 
 $$
-W(x,x_2) = \langle 0|\,\xi^{\mathrm{scl}}(x)\,\xi^{\mathrm{scl}}(x_2)\,|0\rangle
-= \frac{1}{4\pi^2}\,\frac{1}{|r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z-(x_2\,\vec e_x+y_2\,\vec e_y+z_2\,\vec e_z)|^2-(t'-t'_2-i\epsilon)^2},
+W(r_x,x_2) = \langle 0|\,\xi^{\mathrm{scl}}(r_x)\,\xi^{\mathrm{scl}}(x_2)\,|0\rangle
+= \frac{1}{4\pi^2}\,\frac{1}{|r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z-(x_2\,\vec e_x+y_2\,\vec e_y+z_2\,\vec e_z)|^2-(r'_t-r'_{t,2}-i\epsilon)^2},
 $$
 
-in units $c=1$, with the standard $i\epsilon$ prescription. Evaluate it at two points of the same accelerated orbit, $(t',x)=(\rho\sinh\eta,\rho\cosh\eta)$ and the point labelled by $\eta_2$, and set $\delta\eta=\eta-\eta_2$. Using
+in units $c=1$, with the standard $i\epsilon$ prescription. Evaluate it at two points of the same accelerated orbit, $(r'_t,r_x)=(\rho\sinh\eta,\rho\cosh\eta)$ and the point labelled by $\eta_2$, and set $\delta\eta=\eta-\eta_2$. Using
 
 $$
 \Delta x^2 - \Delta {r'_{t}}^2 = \rho^2(\cosh\eta-\cosh\eta_2)^2-\rho^2(\sinh\eta-\sinh\eta_2)^2
@@ -291,13 +291,13 @@ $$
 \sum_\nu\varepsilon_\nu\,\xi_\nu\nabla_\nu\xi_\mu = \kappa\,\xi_\mu .
 $$
 
-For the boost $\zeta=x\partial/\partial t'+t'\partial/\partial Q_x$, whose horizon is $x=|c r'_{t}|$, one finds on the horizon $\nabla_\zeta\zeta = \zeta$, so $\kappa_\zeta=1$ for the unnormalized boost. The redshift-normalized field whose orbits have unit norm at the observer's trajectory is $\xi=a\,\zeta$; its surface gravity is
+For the boost $\zeta=r_x\partial/\partial r'_t+r'_t\partial/\partial R_x$, whose horizon is $x=|c r'_{t}|$, one finds on the horizon $\nabla_\zeta\zeta = \zeta$, so $\kappa_\zeta=1$ for the unnormalized boost. The redshift-normalized field whose orbits have unit norm at the observer's trajectory is $\xi=a\,\zeta$; its surface gravity is
 
 $$
 \kappa = a .
 $$
 
-We have checked this directly: with $\xi=a(x\partial/\partial t'+t'\partial/\partial Q_x)$, the identity $\sum_\nu\varepsilon_\nu\,\xi_\nu\partial/\partial Q_\nu\xi_\mu=\kappa\xi_\mu$ holds with $\kappa=a$ on the horizon $x=t'$. The Unruh temperature is then
+We have checked this directly: with $\xi=a(r_x\partial/\partial r'_t+r'_t\partial/\partial R_x)$, the identity $\sum_\nu\varepsilon_\nu\,\xi_\nu\partial/\partial R_\nu\xi_\mu=\kappa\xi_\mu$ holds with $\kappa=a$ on the horizon $r_x=r'_t$. The Unruh temperature is then
 
 $$
 T=\frac{\kappa}{2\pi}=\frac{a}{2\pi}\quad(\hbar=c=k_B=1),
@@ -364,7 +364,7 @@ the proper acceleration. This is the statement of the preceding section read on 
 
 ## The Statistics
 
-The Unruh temperature does not depend on the statistics of the field. The KMS boundary relation $F_{\tilde Q_2\tilde{Q}_1}(t'+i\beta)=F_{\tilde{Q}_1\tilde Q_2}(-t')$ is the same for bosons and fermions; what differs is the **time-ordered** correlation function, which is antiperiodic for fermions and periodic for bosons, the parent's statement. The strip, and therefore the temperature, is the same. What changes for a fermionic field is the response of a detector and the sign structure of the Matsubara sum; that is the parent's fermionic twist, and it needs the $\mathbb{Z}/2$ grading that the parent records as absent from $\mathbb{B}$ in general and that the Fock-space article realizes only for a single mode. The thermal character of the accelerated vacuum is thus statistics-independent, and the framework's open grading question is orthogonal to the Unruh temperature.
+The Unruh temperature does not depend on the statistics of the field. The KMS boundary relation $F_{\tilde Q_2\tilde{Q}_1}(r'_t+i\beta)=F_{\tilde{Q}_1\tilde Q_2}(-r'_t)$ is the same for bosons and fermions; what differs is the **time-ordered** correlation function, which is antiperiodic for fermions and periodic for bosons, the parent's statement. The strip, and therefore the temperature, is the same. What changes for a fermionic field is the response of a detector and the sign structure of the Matsubara sum; that is the parent's fermionic twist, and it needs the $\mathbb{Z}/2$ grading that the parent records as absent from $\mathbb{B}$ in general and that the Fock-space article realizes only for a single mode. The thermal character of the accelerated vacuum is thus statistics-independent, and the framework's open grading question is orthogonal to the Unruh temperature.
 
 ## What Is Established, What Is Interpretation, and the Gaps
 
@@ -433,7 +433,7 @@ The framework supplies the algebraic home: the horizon as the zero-divisor cone,
 | $\rho,\eta$ | Rindler radius and Rindler time, $x=\rho\cosh\eta$, $c r'_{t}=\rho\sinh\eta$ |
 | $\tau$ | Proper time along the accelerated orbit, $cd\tau=\rho\,d\eta$ |
 | $a=c^2/\rho$ | Proper acceleration of the orbit |
-| $\zeta=x\partial/\partial t'+t'\partial/\partial Q_x$ | Boost Killing vector, $\zeta=\partial/\partial\eta$ |
+| $\zeta=r_x\partial/\partial r'_t+r'_t\partial/\partial R_x$ | Boost Killing vector, $\zeta=\partial/\partial\eta$ |
 | $\xi=a\zeta$ | Redshift-normalized boost; $\kappa=a$ its surface gravity |
 | $\kappa$ | Surface gravity of the boost horizon |
 | $\tilde\Pi_\pm=\tfrac12(e_t\pm i\vec e_x)$ | Idempotents of the boost axis; the horizon limit of the renormalised rotor is $\tilde\Pi_+$ |

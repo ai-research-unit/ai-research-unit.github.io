@@ -34,8 +34,8 @@ which the gauge principle article identifies as the realization of the global sy
 
 $$
 \tilde{A}_2 = \tilde{A} - \tilde{\nabla}\Gamma, \qquad
-D_\mu = \partial/\partial Q_\mu + \frac{iϙ}{\hbar}A_\mu, \qquad
-D_\mu\tilde{Ξ} = \partial/\partial Q_\mu\,\tilde{Ξ} + \frac{iϙ}{\hbar}A_\mu\tilde{Ξ}.
+D_\mu = \partial/\partial R_\mu + \frac{iϙ}{\hbar}A_\mu, \qquad
+D_\mu\tilde{Ξ} = \partial/\partial R_\mu\,\tilde{Ξ} + \frac{iϙ}{\hbar}A_\mu\tilde{Ξ}.
 $$
 
 The covariant derivative is inherited unchanged from the read list; nothing about it is rederived here.
@@ -43,7 +43,7 @@ The covariant derivative is inherited unchanged from the read list; nothing abou
 **Why the abelian case is the clean one.** Because the connection coefficients $A_\mu$ are complex scalars, they are central, and left and right multiplication by them agree. Acting on the scalar $\tilde{Ξ} = \xi\,e_t$, the connection term stays proportional to $e_t$:
 
 $$
-D_\mu\tilde{Ξ} = \left(\partial/\partial Q_\mu\,\xi + \frac{iϙ}{\hbar}A_\mu\xi\right)e_t = (D_\mu\xi)\,e_t .
+D_\mu\tilde{Ξ} = \left(\partial/\partial R_\mu\,\xi + \frac{iϙ}{\hbar}A_\mu\xi\right)e_t = (D_\mu\xi)\,e_t .
 $$
 
 The covariant derivative of the scalar is again a **scalar** — it does not acquire vector components along $\vec e_x, \vec e_y, \vec e_z$. This is exactly the property that fails in the non-abelian case, where the connection does not commute with the field and $D_\mu\tilde{Ξ}$ acquires components in directions the field did not have. It is the reason the abelian mechanism below closes, and the reason the non-abelian one is a gap (see its own section).
@@ -105,7 +105,7 @@ in general, so a term $m^2\sum_\mu A_\mu A_\mu$ in the action is not gauge invar
 **The vacuum value of the covariant derivative.** At the constant vacuum $\xi = v/\sqrt{2}$, the ordinary derivative vanishes and only the connection term survives:
 
 $$
-D_\mu\xi\Big|_{\text{vac}} = \partial/\partial Q_\mu\,\frac{v}{\sqrt{2}} + \frac{iϙ}{\hbar}A_\mu\frac{v}{\sqrt{2}} = \frac{iϙ}{\hbar}\,A_\mu\,\frac{v}{\sqrt{2}},
+D_\mu\xi\Big|_{\text{vac}} = \partial/\partial R_\mu\,\frac{v}{\sqrt{2}} + \frac{iϙ}{\hbar}A_\mu\frac{v}{\sqrt{2}} = \frac{iϙ}{\hbar}\,A_\mu\,\frac{v}{\sqrt{2}},
 \qquad
 D_\mu\tilde{Ξ}\Big|_{\text{vac}} = \frac{iϙ}{\hbar}A_\mu\,\langle\tilde{Ξ}\rangle .
 $$
@@ -166,10 +166,10 @@ gives $\xi\mapsto \exp(iϙ\Gamma/\hbar)\xi = \exp(-i\vartheta^{\mathrm{fld}}/v)\
 **Where the phase went.** The gauge transformation that removes $\theta$ also shifts the connection,
 
 $$
-A_{2,\mu} = A_\mu - \partial/\partial Q_\mu\,\Gamma = A_\mu + \frac{\hbar}{ϙv}\,\partial/\partial Q_\mu\,\vartheta^{\mathrm{fld}} ,
+A_{2,\mu} = A_\mu - \partial/\partial R_\mu\,\Gamma = A_\mu + \frac{\hbar}{ϙv}\,\partial/\partial R_\mu\,\vartheta^{\mathrm{fld}} ,
 $$
 
-so the combination $A_\mu + \frac{\hbar}{ϙv}\partial/\partial Q_\mu\,\vartheta^{\mathrm{fld}}$ is gauge invariant and the mass term depends on it, not on $A_\mu$ alone. The two terms are not separately physical: what the gauge field gained as a mass is exactly the longitudinal component it did not have as a massless field, and $\partial/\partial Q_\mu\,\vartheta^{\mathrm{fld}}$ is that component. The would-be Goldstone boson is **absorbed** by the gauge field, which is why it does not appear in the physical spectrum, and why the counting below balances.
+so the combination $A_\mu + \frac{\hbar}{ϙv}\partial/\partial R_\mu\,\vartheta^{\mathrm{fld}}$ is gauge invariant and the mass term depends on it, not on $A_\mu$ alone. The two terms are not separately physical: what the gauge field gained as a mass is exactly the longitudinal component it did not have as a massless field, and $\partial/\partial R_\mu\,\vartheta^{\mathrm{fld}}$ is that component. The would-be Goldstone boson is **absorbed** by the gauge field, which is why it does not appear in the physical spectrum, and why the counting below balances.
 
 **The degree-of-freedom count.** Count the real, physical, on-shell degrees of freedom before and after the breaking, in four dimensions.
 
@@ -241,7 +241,7 @@ giving the field equations $\nabla A = BE^{+}$ and $\nabla B = AE$, which collap
 
 3. **The reality condition on the connection.** The non-abelian article leaves open the Hermitian-conjugation class of the non-abelian connection under the $i c r'_t$ derivative. Its resolution is a prerequisite for the non-abelian covariant derivative, and hence for the non-abelian kinetic term, and hence for the non-abelian mass.
 
-4. **The scalar kinetic term in the framework's own normalization.** The scalar Lagrangian used here takes the Lorentz-invariant contraction of $D_\mu\xi$ with its conjugate. The corpus's Noether article writes the free scalar kinetic term as the biquaternion norm $-\sum_\mu(\partial/\partial Q_\mu\,\xi^*)(\partial/\partial Q_\mu\,\xi)$, contracting the two factors without a relative metric sign. Because the $i c r'_t$ time derivative is imaginary, $(\partial/\partial Q_t\,\xi)^*=-\partial/\partial Q_t\,\xi^*$, so this metric-free contraction already carries the Lorentzian sign and equals the Lorentz-invariant combination $-\sum_{\mu,\nu}g_{\mu\nu}(\partial/\partial Q_\mu\,\xi)^*(\partial/\partial Q_\nu\,\xi)$: for the free scalar the two normalisations coincide, for a complex scalar as much as for a real one, and the metric-free form is not the Euclidean modulus. The two part company only once the derivative is gauged, where the all-plus contraction is Euclidean and the metric contraction is the one that yields a Proca mass. Which normalization the framework intends for the charged scalar — and whether the difference has content — is not settled here and is recorded in the companion.
+4. **The scalar kinetic term in the framework's own normalization.** The scalar Lagrangian used here takes the Lorentz-invariant contraction of $D_\mu\xi$ with its conjugate. The corpus's Noether article writes the free scalar kinetic term as the biquaternion norm $-\sum_\mu(\partial/\partial R_\mu\,\xi^*)(\partial/\partial R_\mu\,\xi)$, contracting the two factors without a relative metric sign. Because the $i c r'_t$ time derivative is imaginary, $(\partial/\partial R_t\,\xi)^*=-\partial/\partial R_t\,\xi^*$, so this metric-free contraction already carries the Lorentzian sign and equals the Lorentz-invariant combination $-\sum_{\mu,\nu}g_{\mu\nu}(\partial/\partial R_\mu\,\xi)^*(\partial/\partial R_\nu\,\xi)$: for the free scalar the two normalisations coincide, for a complex scalar as much as for a real one, and the metric-free form is not the Euclidean modulus. The two part company only once the derivative is gauged, where the all-plus contraction is Euclidean and the metric contraction is the one that yields a Proca mass. Which normalization the framework intends for the charged scalar — and whether the difference has content — is not settled here and is recorded in the companion.
 
 5. **The Yukawa coupling.** How does the framework's scalar couple to the chiral spinor halves so as to generate fermion mass after breaking? The chiral-fermions article poses the question and this article does not answer it.
 
@@ -286,8 +286,8 @@ One gap is left visible and is not closed. The framework's scalar lies in the ce
 | $\mathbb{M}_-, \mathbb{M}_+$ | Material (anti-Hermitian) and informational (Hermitian) sectors |
 | $\mathbb{H}_{\mathbb{B}}$ | Real-quaternion subspace |
 | $\mathbb{C}_{\mathbb{B}} = \mathrm{span}_{\mathbb{R}}\{e_t, ie_t\}$ | Centre of the algebra; abelian gauge factor |
-| $\tilde{\nabla} = e_t\partial/\partial Q_t + \sum_\mu\,\vec e_\mu\partial/\partial Q_\mu$ | Biquaternionic gradient; $\partial/\partial Q_t = -i\partial/\partial t'/c$ |
-| $\tilde{\nabla}^{\natural} = e_t\partial/\partial Q_t - \sum_\mu\,\vec e_\mu\partial/\partial Q_\mu$ | Quaternion-conjugate gradient |
+| $\tilde{\nabla} = e_t\partial/\partial R_t + \sum_\mu\,\vec e_\mu\partial/\partial R_\mu$ | Biquaternionic gradient; $\partial/\partial R_t = -i\partial/\partial r'_t/c$ |
+| $\tilde{\nabla}^{\natural} = e_t\partial/\partial R_t - \sum_\mu\,\vec e_\mu\partial/\partial R_\mu$ | Quaternion-conjugate gradient |
 | $\Box = \tilde{\nabla}\tilde{\nabla}^{\natural} = \tilde{\nabla}^{\natural}\tilde{\nabla}$ | d'Alembertian |
 | $\tilde{A} = \sum_\mu A_\mu e_\mu = i\,a'_t\,e_t + \vec A \in \mathbb{M}_-$ | Connection; $A_0$ imaginary, $\vec A$ real |
 | $A_\mu$ | Complex connection coefficients (central, abelian) |
@@ -295,7 +295,7 @@ One gap is left visible and is not closed. The framework's scalar lies in the ce
 | $\lambda = \exp(iϙ\Gamma/\hbar)$ | Local central phase |
 | $ϙ, \hbar, \kappa = ϙ/\hbar$ | Charge, reduced Planck constant, coupling |
 | $\tilde{A}_2 = \tilde{A} - \tilde{\nabla}\Gamma$ | Gauge transformation of the connection |
-| $D_\mu = \partial/\partial Q_\mu + i\kappa A_\mu$ | Covariant derivative |
+| $D_\mu = \partial/\partial R_\mu + i\kappa A_\mu$ | Covariant derivative |
 | $\tilde{Ξ} = \xi\,e_t \in \mathbb{C}_{\mathbb{B}}$ | Complex central scalar field |
 | $\xi$ | Complex scalar amplitude; $|\xi| = v/\sqrt{2}$ at the vacuum |
 | $v$ | Vacuum expectation value parameter (so $\langle|\xi|\rangle = v/\sqrt{2}$) |

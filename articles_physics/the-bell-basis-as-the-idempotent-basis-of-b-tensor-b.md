@@ -399,7 +399,7 @@ Because $\tilde\Pi_\epsilon$ is a sum of diagonal tensor terms, the partial trac
 
 $$
 \mathrm{Tr}_2(\tilde\Pi_\epsilon)
-=\tfrac{1}{4}\left(\mathrm{Tr}_\mathbb{B}(e_t)\,e_t+\sum_{\mu\in\{x,y,z\}}\epsilon_\mu\,\mathrm{Tr}_\mathbb{B}(\vec e_\mu)\,\vec e_\mu\right)
+=\tfrac{1}{4}\left(\mathrm{Tr}_\mathbb{B}(e_t)\,e_t+\sum_{\mu\in\{x,r_y,r_z\}}\epsilon_\mu\,\mathrm{Tr}_\mathbb{B}(\vec e_\mu)\,\vec e_\mu\right)
 =\tfrac{1}{4}\left(2\,e_t+0\right)
 =\tfrac{1}{2}\,e_t .
 $$

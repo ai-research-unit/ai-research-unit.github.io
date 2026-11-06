@@ -24,7 +24,7 @@ $$
 \tilde{Q}_- = i c r'_t\,e_t + r_x\,\vec e_x + r_y\,\vec e_y + r_z\,\vec e_z \in \mathbb{M}_-, \qquad \tilde{Q}_+ = c r_t\,e_t + i\bigl(r'_{x}\vec e_x + r'_{y}\vec e_y + r'_{z}\vec e_z\bigr) \in \mathbb{M}_+,
 $$
 
-with $t', r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z, t, r'_{x}\,\vec e_x+r'_{y}\,\vec e_y+r'_{z}\,\vec e_z$ real. The verification of the two inclusions is the pair of computations in *The Material Sector: Four-Vectors, Interval and Lorentz Action* and *The Informational Sector: States, Observables and Probability*, and the interpretation of the coefficients is the $i c r'_t$ dictionary of *Algebra and Element Conventions*.
+with $r'_t, r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z, r_t, r'_{x}\,\vec e_x+r'_{y}\,\vec e_y+r'_{z}\,\vec e_z$ real. The verification of the two inclusions is the pair of computations in *The Material Sector: Four-Vectors, Interval and Lorentz Action* and *The Informational Sector: States, Observables and Probability*, and the interpretation of the coefficients is the $i c r'_t$ dictionary of *Algebra and Element Conventions*.
 
 The centre of the algebra is $\mathbb{C}_{\mathbb{B}} = \mathrm{span}_{\mathbb{R}}\{e_t, ie_t\}$, and it is the complex time sector of *The Biquaternion Space, the Group of Involutions and the Six Subspaces*. The two times are its two real coordinates: writing
 
@@ -48,7 +48,7 @@ $$
 i\bigl(i c r'_t\,e_t + (r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)\bigr) = -c r'_{t}\,e_t + i(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z) \in \mathbb{M}_+, \qquad i\bigl(c r_t\,e_t + i(r'_{x}\,\vec e_x+r'_{y}\,\vec e_y+r'_{z}\,\vec e_z)\bigr) = i c r_t\,e_t - (r'_{x}\,\vec e_x+r'_{y}\,\vec e_y+r'_{z}\,\vec e_z) \in \mathbb{M}_- .
 $$
 
-Read on the coefficients, the material element $(r'_t, r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)$ is carried to the informational element $(t = -t',\ (r'_{x}\,\vec e_x+r'_{y}\,\vec e_y+r'_{z}\,\vec e_z) = r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)$, and the informational element $(t, r'_{x}\,\vec e_x+r'_{y}\,\vec e_y+r'_{z}\,\vec e_z)$ is carried to the material element $(t' = t,\ (r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z) = -(r'_{x}\,\vec e_x+r'_{y}\,\vec e_y+r'_{z}\,\vec e_z))$. The two times therefore exchange roles, with the sign that a quarter turn carries, and the two spaces exchange roles in the same movement. On the central coordinate the exchange is one application of the generator,
+Read on the coefficients, the material element $(r'_t, r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)$ is carried to the informational element $(r_t = -r'_t,\ (r'_{x}\,\vec e_x+r'_{y}\,\vec e_y+r'_{z}\,\vec e_z) = r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)$, and the informational element $(t, r'_{x}\,\vec e_x+r'_{y}\,\vec e_y+r'_{z}\,\vec e_z)$ is carried to the material element $(r'_t = r_t,\ (r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z) = -(r'_{x}\,\vec e_x+r'_{y}\,\vec e_y+r'_{z}\,\vec e_z))$. The two times therefore exchange roles, with the sign that a quarter turn carries, and the two spaces exchange roles in the same movement. On the central coordinate the exchange is one application of the generator,
 
 $$
 \boxed{\;z \mapsto i z = -c r'_{t} + i\,ct\;}
@@ -118,7 +118,7 @@ The two entries that are supplied are what makes the interpretation relational, 
 - It is **not a dynamics**. No evolution equation is read off the exchange, and no rate of change of a state follows from it. The exchange is a relation between two descriptions of one element, and a dynamics is a separate object, which is the constraint analysis the framework names as missing.
 - It is **not an arrow**. The generator is invertible and of order four, so both orientations are present and neither is selected; the direction of the tick is a choice of slice, and the problem of time is not solved here but restated in the temporal interpretation.
 - It is **not a rate or a duration**. The period of the clock is the central rotation, an angle without a second; a physical duration requires a process to compare with it, and no such comparison is made here.
-- It does **not identify the exchange with the analytic continuation**. The Wick rotation as the continuation $t'\mapsto-i\tau$ is a relabeling of one coordinate that holds the space real; the exchange is a rotation of the element that carries the space imaginary, and the two agree on the time axis and in the sign they flip and nowhere else, as *Algebra and Element Conventions* states. The clock interpretation uses the rotation and not the continuation.
+- It does **not identify the exchange with the analytic continuation**. The Wick rotation as the continuation $r'_t\mapsto-i\tau$ is a relabeling of one coordinate that holds the space real; the exchange is a rotation of the element that carries the space imaginary, and the two agree on the time axis and in the sign they flip and nowhere else, as *Algebra and Element Conventions* states. The clock interpretation uses the rotation and not the continuation.
 - It does **not claim an empirical consequence**. It reorganizes the exchange, the phase and the two times under one interpretation; it adds no prediction and no coupling, and it does not turn the phase into a measurable duration.
 
 ## Summary

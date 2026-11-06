@@ -99,7 +99,7 @@ One formula, every reading. The formula is the same in all of them, because the 
 
 ### The material reading
 
-With $Q_t=i c r'_t$ and $Q_k=x_k$, for $t',x,y,z$ real,
+With $Q_t=i c r'_t$ and $Q_k=x_k$, for $r'_t,r_x,r_y,r_z$ real,
 
 $$
 \bigl\langle\tilde Q_-\bigr\rangle_\natural=(i c r'_t)^2+r_x^2+r_y^2+r_z^2=-c^2{r'_{t}}^2+r_x^2+r_y^2+r_z^2 .

@@ -8,12 +8,12 @@ $$
 \boxed{\;\vec p \;\longrightarrow\; \vec p - i m\omega \beta\vec r\;},
 $$
 
-introduced by Marcos Moshinsky and Adam Szczepaniak in 1989. Here $\vec p$ is the momentum operator, $p_k=-i\hbar\,\partial/\partial Q_k$, and the source's equation is the Hamiltonian one,
+introduced by Marcos Moshinsky and Adam Szczepaniak in 1989. Here $\vec p$ is the momentum operator, $p_k=-i\hbar\,\partial/\partial R_k$, and the source's equation is the Hamiltonian one,
 
 $$
 H = c\sum_k\alpha_k\left(p_k - i m\omega\beta Q_k\right) + \beta mc^2 ,
 \qquad
-H\tilde{Ξ}^{\mathrm{sp}} = i\hbar\frac{\partial}{\partial t}\tilde{Ξ}^{\mathrm{sp}} .
+H\tilde{Ξ}^{\mathrm{sp}} = i\hbar\frac{\partial}{\partial r_t}\tilde{Ξ}^{\mathrm{sp}} .
 $$
 
 The substitution is "non-minimal" in the precise sense that it cannot be obtained from a gauge potential: it adds, to the odd (frame-anticommuting) part of the operator, a term linear in the position. The resulting system is exactly solvable, its non-relativistic limit is the three-dimensional isotropic harmonic oscillator together with a spin–orbit coupling of the same order as the level spacing, and it has become the standard laboratory for the relativistic treatment of confining interactions.
@@ -25,19 +25,19 @@ The article derives the substitution, the split of a state into its two frame pa
 **The gradient and the d'Alembertian.** Every derivative in this article is the corpus gradient. The conventions are stated once, here, and used without restatement:
 
 $$
-\tilde\nabla=\sum_{\mu\in\{t,x,y,z\}}e_\mu\,\frac{\partial}{\partial Q_\mu},
+\tilde\nabla=\sum_{\mu\in\{t,x,y,z\}}e_\mu\,\frac{\partial}{\partial R_\mu},
 \qquad
-\tilde\nabla^{\natural}=\sum_{\mu\in\{t,x,y,z\}}\varepsilon_\mu e_\mu\,\frac{\partial}{\partial Q_\mu},
+\tilde\nabla^{\natural}=\sum_{\mu\in\{t,x,y,z\}}\varepsilon_\mu e_\mu\,\frac{\partial}{\partial R_\mu},
 \qquad
-\Box=\tilde\nabla\tilde\nabla^{\natural}=\frac{\partial^2}{\partial Q_t^2}+\Delta_Q ,
+\Box=\tilde\nabla\tilde\nabla^{\natural}=\frac{\partial^2}{\partial R_t^2}+\Delta_Q ,
 $$
 
-with $\varepsilon=(1,-1,-1,-1)$ and $\Delta_Q=\sum_k\partial^2/\partial Q_k^2$. Write $\vec\nabla=\sum_k\vec e_k\,\partial/\partial Q_k$ for the spatial part, so that $\tilde\nabla=e_t\,\partial/\partial Q_t+\vec\nabla$ and $\vec\nabla\vec\nabla=-\Delta_Q$. On the material sector $\mathbb{M}_-$, where $Q_t=i c r'_t$ and $\partial/\partial Q_t=-(i/c)\,\partial/\partial t'$, the d'Alembertian is $\Box=\Delta-c^{-2}\partial^2/\partial t'^2$.
+with $\varepsilon=(1,-1,-1,-1)$ and $\Delta_Q=\sum_k\partial^2/\partial R_k^2$. Write $\vec\nabla=\sum_k\vec e_k\,\partial/\partial R_k$ for the spatial part, so that $\tilde\nabla=e_t\,\partial/\partial R_t+\vec\nabla$ and $\vec\nabla\vec\nabla=-\Delta_Q$. On the material sector $\mathbb{M}_-$, where $Q_t=i c r'_t$ and $\partial/\partial R_t=-(i/c)\,\partial/\partial r'_t$, the d'Alembertian is $\Box=\Delta-c^{-2}\partial^2/\partial r'_t^2$.
 
 **Why the mass needs two fields.** The plain square of the gradient is not scalar. The three spatial units anticommute, so $\vec\nabla\vec\nabla=-\Delta_Q$ is scalar, but the time unit $e_t$ commutes with them instead of anticommuting, and the mixed term survives:
 
 $$
-\tilde\nabla^2=\frac{\partial^2}{\partial Q_t^2}-\Delta_Q+2e_t\,\frac{\partial}{\partial Q_t}\,\vec\nabla
+\tilde\nabla^2=\frac{\partial^2}{\partial R_t^2}-\Delta_Q+2e_t\,\frac{\partial}{\partial R_t}\,\vec\nabla
 \;\neq\;\Box .
 $$
 
@@ -104,7 +104,7 @@ The coefficient is now real, and the action $Q\mapsto\vec e_kQ\vec e_y$ is Hermi
 
 **It is linear in the position**, so it grows without bound. The oscillator potential is confining, the spectrum is discrete, and the model is a relativistic confinement model rather than a scattering problem. This is the physical reason for its use in quark-confinement phenomenology, and the reason the spectrum consists of bound levels with the mass gap at their base.
 
-**The shift of the gradient.** The substitution is a shift of the spatial part of the gradient and of nothing else, because the momentum operator is the spatial gradient: $p_k=-i\hbar\,\partial/\partial Q_k$ gives
+**The shift of the gradient.** The substitution is a shift of the spatial part of the gradient and of nothing else, because the momentum operator is the spatial gradient: $p_k=-i\hbar\,\partial/\partial R_k$ gives
 
 $$
 \vec p - im\omega\beta\vec r \;=\; -i\hbar\left(\vec\nabla+\frac{m\omega}{\hbar}\,\beta\vec r\right).
@@ -179,7 +179,7 @@ $$
 = \vec p^{\,2} + m^2\omega^2\vec r^{\,2} - 3m\hbar\omega ,
 $$
 
-because $[Q_k,p_k]=i\hbar$ in each of the three spatial directions, the sum of the three gives $3i\hbar$, and $im\omega\,(3i\hbar)=-3m\hbar\omega$ through one more use of $i^2=-1$. In the algebra the same three terms are the diagonal of $\vec\nabla_-\vec\nabla_+$: the two shifts multiply to $-\frac{m^2\omega^2}{\hbar^2}\vec r^{\,2}$, the two derivatives to $-\Delta_Q=\vec p^{\,2}/\hbar^2$, and the cross term of $\partial/\partial Q_k$ with $Q_k$ in each direction gives the commutator, which is where the zero point comes from.
+because $[Q_k,p_k]=i\hbar$ in each of the three spatial directions, the sum of the three gives $3i\hbar$, and $im\omega\,(3i\hbar)=-3m\hbar\omega$ through one more use of $i^2=-1$. In the algebra the same three terms are the diagonal of $\vec\nabla_-\vec\nabla_+$: the two shifts multiply to $-\frac{m^2\omega^2}{\hbar^2}\vec r^{\,2}$, the two derivatives to $-\Delta_Q=\vec p^{\,2}/\hbar^2$, and the cross term of $\partial/\partial R_k$ with $Q_k$ in each direction gives the commutator, which is where the zero point comes from.
 
 **The cross part.** A term with $j\ne k$ carries the product of two different spatial units, and that product is a unit again, $\vec e_j\vec e_k=\epsilon_{jkl}\vec e_l$ with $\epsilon_{xyz}=+1$. The pair of ordered terms with the indices exchanged carries the same unit with the opposite sign, so only the antisymmetric part of the coefficient survives, and it is
 
@@ -205,7 +205,7 @@ where the last term is the left multiplication by $i\vec e_k$ with the scalar $L
 
 **Why the product is not the d'Alembertian.** The two factors are both pure vectors, so each is its own negative under the quaternion conjugate, and neither is the conjugate of the other. The product $\vec\nabla_-\vec\nabla_+$ is therefore not the norm of a single element, and its cross terms do not cancel as they do in $\tilde\nabla\tilde\nabla^{\natural}=\Box$. They reduce instead to two remainders: the commutator $[Q_k,p_k]$, which is central and produces $-3m\hbar\omega$, and the antisymmetric part of the units' product, which produces $-2m\omega S$. That is the algebraic statement of the section's title: the product of the two first-order operators is central up to one vector term, and the vector term is the spin–orbit coupling. Nothing here rests on an anticommutation of actions; the anticommutation that matters is that of the three spatial units, which is part of the multiplication table.
 
-**The two orders differ.** $\vec\nabla_+\vec\nabla_-$ is not $\vec\nabla_-\vec\nabla_+$, and the difference is in two places. The cross term of $\partial/\partial Q_k$ with $Q_k$ changes sign with the order, so the constant changes sign: the order $\vec\nabla_+\vec\nabla_-$ gives $+3m\hbar\omega$ where the boxed identity has $-3m\hbar\omega$. The antisymmetric part of the coefficient changes sign with the order as well, so the spin–orbit term changes sign too. The two orders are therefore not related by an overall sign, and the boxed identity belongs to the order $\vec\nabla_-\vec\nabla_+$ alone. That is the order in which the substitution appears, the outer shift being the one carried by the line for $\tilde{Ξ}^{\mathrm{sp}}_+$; its partner, $\hbar^2\vec\nabla_+\vec\nabla_-$, is the operator of the other supersymmetric member and carries $+3m\hbar\omega$ and $+2m\omega S$.
+**The two orders differ.** $\vec\nabla_+\vec\nabla_-$ is not $\vec\nabla_-\vec\nabla_+$, and the difference is in two places. The cross term of $\partial/\partial R_k$ with $Q_k$ changes sign with the order, so the constant changes sign: the order $\vec\nabla_+\vec\nabla_-$ gives $+3m\hbar\omega$ where the boxed identity has $-3m\hbar\omega$. The antisymmetric part of the coefficient changes sign with the order as well, so the spin–orbit term changes sign too. The two orders are therefore not related by an overall sign, and the boxed identity belongs to the order $\vec\nabla_-\vec\nabla_+$ alone. That is the order in which the substitution appears, the outer shift being the one carried by the line for $\tilde{Ξ}^{\mathrm{sp}}_+$; its partner, $\hbar^2\vec\nabla_+\vec\nabla_-$, is the operator of the other supersymmetric member and carries $+3m\hbar\omega$ and $+2m\omega S$.
 
 This is the load-bearing equation of the article. It was checked by exact differentiation on generic polynomial states of total degree at most three, with random complex coefficients: both sides were evaluated on the same state and the residual was zero, not merely small, because the differentiation of a polynomial is exact and no truncation enters. On that class of states the identity holds term by term, with integer coefficients on both sides. The commutator $[Q_k,p_k]=i\hbar$, which a truncated basis realises only in its bulk, is here an identity at every order, and it is the only place where $\hbar$ enters the product.
 
@@ -322,7 +322,7 @@ The comparison isolates where the relativistic content lives. In the free theory
 
 Three structural statements can now be made in the algebra.
 
-**The substitution is a shift of the odd part.** The gradient $\tilde\nabla=e_t\,\partial/\partial Q_t+\sum_k\vec e_k\,\partial/\partial Q_k$ has a frame-even part ($e_t\,\partial/\partial Q_t$, the timelike direction) and a frame-odd part ($\sum_k\vec e_k\,\partial/\partial Q_k$, the spacelike directions). What the substitution adds to the operator is the action $\tilde{Ξ}^{\mathrm{sp}}\mapsto-cm\omega\sum_k\vec e_k\,(Q_k\tilde{Ξ}^{\mathrm{sp}})\,\vec e_y$, and that action is frame-odd, since it anticommutes with $\beta$; it is also linear in the position. Multiplying the two first-order operators of the pair returns a second-order operator that is central except for one remainder: the pieces built from the two shifted gradients combine as in the free case, and what survives beside the centre is the spin–orbit part. In the elements it is
+**The substitution is a shift of the odd part.** The gradient $\tilde\nabla=e_t\,\partial/\partial R_t+\sum_k\vec e_k\,\partial/\partial R_k$ has a frame-even part ($e_t\,\partial/\partial R_t$, the timelike direction) and a frame-odd part ($\sum_k\vec e_k\,\partial/\partial R_k$, the spacelike directions). What the substitution adds to the operator is the action $\tilde{Ξ}^{\mathrm{sp}}\mapsto-cm\omega\sum_k\vec e_k\,(Q_k\tilde{Ξ}^{\mathrm{sp}})\,\vec e_y$, and that action is frame-odd, since it anticommutes with $\beta$; it is also linear in the position. Multiplying the two first-order operators of the pair returns a second-order operator that is central except for one remainder: the pieces built from the two shifted gradients combine as in the free case, and what survives beside the centre is the spin–orbit part. In the elements it is
 
 $$
 -2m\omega\,S=-2m\omega\sum_k L_k^{\mathrm{orb}}\,i\vec e_k
@@ -378,12 +378,12 @@ In the biquaternion framework the substitution shifts the frame-odd part of the 
 |---|---|
 | $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ | Biquaternion algebra |
 | $\mathbb{M}_+$ | Hermitian (informational) sector |
-| $\mathbb{M}_-$ | Material sector, with $Q_t=i c r'_t$ and $\partial/\partial Q_t=-(i/c)\,\partial/\partial t'$ |
+| $\mathbb{M}_-$ | Material sector, with $Q_t=i c r'_t$ and $\partial/\partial R_t=-(i/c)\,\partial/\partial r'_t$ |
 | $e_t = 1$, $\vec e_x, \vec e_y, \vec e_z$ | Quaternion units, $\vec e_k^2 = -e_t$, $\vec e_y\vec e_x = -\vec e_z$ |
-| $\tilde\nabla$ | The corpus gradient, $e_t\,\partial/\partial Q_t+\vec e_x\,\partial/\partial Q_x+\vec e_y\,\partial/\partial Q_y+\vec e_z\,\partial/\partial Q_z$ |
+| $\tilde\nabla$ | The corpus gradient, $e_t\,\partial/\partial R_t+\vec e_x\,\partial/\partial R_x+\vec e_y\,\partial/\partial R_y+\vec e_z\,\partial/\partial R_z$ |
 | $\tilde\nabla^{\natural}$ | Its quaternion conjugate, with $\varepsilon=(1,-1,-1,-1)$ |
-| $\Box = \tilde\nabla\tilde\nabla^{\natural} = \partial^2/\partial Q_t^2+\Delta_Q$ | The d'Alembertian; on $\mathbb{M}_-$, $\Delta-c^{-2}\partial^2/\partial t'^2$ |
-| $\vec\nabla = \sum_k\vec e_k\,\partial/\partial Q_k$ | Spatial part of the gradient; $\vec\nabla\vec\nabla = -\Delta_Q$ |
+| $\Box = \tilde\nabla\tilde\nabla^{\natural} = \partial^2/\partial R_t^2+\Delta_Q$ | The d'Alembertian; on $\mathbb{M}_-$, $\Delta-c^{-2}\partial^2/\partial r'_t^2$ |
+| $\vec\nabla = \sum_k\vec e_k\,\partial/\partial R_k$ | Spatial part of the gradient; $\vec\nabla\vec\nabla = -\Delta_Q$ |
 | $\vec\nabla_\pm = \vec\nabla\pm\frac{m\omega}{\hbar}\vec r$ | The two non-minimal shifts of the spatial gradient |
 | $\omega = -\vec e_z$, $\omega^2=-e_t$ | The pseudoscalar; the right factor carried by a velocity action |
 | $Q\mapsto aQb$ | Action on a state; the two-sided multiplication, written out |
@@ -392,7 +392,7 @@ In the biquaternion framework the substitution shifts the frame-odd part of the 
 | $\beta\alpha_k:\ Q\mapsto i\vec e_kQ\vec e_y$, $\alpha_k\beta:\ Q\mapsto-i\vec e_kQ\vec e_y$ | The two mixed products; $\beta\alpha_k\beta=-\alpha_k$ |
 | $Q_L$, $Q_R$ | Chirality: the two values of the subscript, left-handed and right-handed |
 | $H = c\sum_k\alpha_k(p_k-im\omega\beta Q_k) + \beta mc^2$ | Dirac-oscillator Hamiltonian, the source's equation |
-| $p_k=-i\hbar\,\partial/\partial Q_k$, $\vec p=\sum_k\vec e_kp_k$ | Corpus momentum operator, the spatial gradient in disguise |
+| $p_k=-i\hbar\,\partial/\partial R_k$, $\vec p=\sum_k\vec e_kp_k$ | Corpus momentum operator, the spatial gradient in disguise |
 | $\vec p - im\omega\beta\vec r$ | Non-minimal substitution, the frame-odd shift |
 | $\mathbb{D}$ | The pair operator on $\mathbb{B}\oplus\mathbb{B}$, $\mathbb{D}\tilde{Ξ}^{\mathrm{sp}}=(\tilde\nabla\tilde{Ξ}^{\mathrm{sp}}_R,\tilde\nabla^{\natural}\tilde{Ξ}^{\mathrm{sp}}_L)$; $\mathbb{D}^2=\Box I$ |
 | $\tilde\nabla\tilde{Ξ}^{\mathrm{sp}}_R=\mu\tilde{Ξ}^{\mathrm{sp}}_L$, $\tilde\nabla^{\natural}\tilde{Ξ}^{\mathrm{sp}}_L=\mu\tilde{Ξ}^{\mathrm{sp}}_R$ | The chiral pair, $\mu=mc/\hbar$ |

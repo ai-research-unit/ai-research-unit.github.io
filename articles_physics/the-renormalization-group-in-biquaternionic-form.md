@@ -21,8 +21,8 @@ The **effective action** $\Gamma[\xi]$ is the generating functional of one-parti
 The exact statement of that dependence is the **Wetterich equation**,
 
 $$
-\boxed{\;\partial/\partial t' \Gamma_k[\xi] = \frac{1}{2}\,\mathrm{Tr}\!\left[\Big(\Gamma_k^{(2)}[\xi] + R_k\Big)^{-1}\,\partial/\partial t' R_k\right],
-\qquad t' = \log\frac{k}{\Lambda}\;},
+\boxed{\;\partial/\partial r'_t \Gamma_k[\xi] = \frac{1}{2}\,\mathrm{Tr}\!\left[\Big(\Gamma_k^{(2)}[\xi] + R_k\Big)^{-1}\,\partial/\partial r'_t R_k\right],
+\qquad r'_t = \log\frac{k}{\Lambda}\;},
 $$
 
 where $\Gamma_k^{(2)}$ is the second functional derivative of $\Gamma_k$ with respect to $\xi$, $R_k$ is a **regulator** that suppresses modes with $|p| < k$, and $\Lambda$ is the microscopic scale at which the flow is initialized. Two features of this equation are the whole subject of the article.
@@ -119,7 +119,7 @@ $$
 
 whose coupling $\lambda$ is marginal in $d = 4$ and whose beta function is the textbook one. The point of redoing it here is to show the shell integration explicitly, since a beta function stated without it is exactly the failure mode this subject invites.
 
-Split the field into slow and fast modes, $\xi = \xi_< + \xi_>$, where $\xi_>$ carries only momenta in the shell $\Lambda/b < |k| < \Lambda$. Integrating out $\xi_>$ at one loop gives the correction to the four-point function from the bubble diagram: with two vertices $-(\lambda)$ from $(\lambda/4!)\xi^4$, the one-loop 1PI four-point function in the $s$, $t'$, and $u$ channels is
+Split the field into slow and fast modes, $\xi = \xi_< + \xi_>$, where $\xi_>$ carries only momenta in the shell $\Lambda/b < |k| < \Lambda$. Integrating out $\xi_>$ at one loop gives the correction to the four-point function from the bubble diagram: with two vertices $-(\lambda)$ from $(\lambda/4!)\xi^4$, the one-loop 1PI four-point function in the $s$, $r'_t$, and $u$ channels is
 
 $$
 \Gamma^{(4)}_{\text{1-loop}}(p) = \frac{1}{2}\cdot 3\,(-\lambda)^2\, I_>(p),
@@ -365,7 +365,7 @@ Three gaps are left visible. First, the framework supplies no action, so the bet
 | $\mu$ | Renormalization scale |
 | $\Gamma_k[\xi]$, $\Gamma_k^{(2)}$ | Wilsonian effective action and its second functional derivative |
 | $R_k$ | Regulator function |
-| $\partial/\partial t'\,\Gamma_k = \tfrac12\mathrm{Tr}[(\Gamma_k^{(2)}+R_k)^{-1}\partial/\partial t' R_k]$ | Wetterich exact flow equation; $\mathrm{Tr}$ is the functional trace |
+| $\partial/\partial r'_t\,\Gamma_k = \tfrac12\mathrm{Tr}[(\Gamma_k^{(2)}+R_k)^{-1}\partial/\partial r'_t R_k]$ | Wetterich exact flow equation; $\mathrm{Tr}$ is the functional trace |
 | $\mathrm{Tr}(\tilde Q_1\tilde Q_2)=2\,\mathrm{Sc}(\tilde Q_1\tilde Q_2)$ | Biquaternion trace (fiber trace), distinct from the functional trace |
 | $\beta_i = \mu\,dg_i/d\mu$ | Beta function |
 | $g^*$ | Fixed point, $\beta(g^*) = 0$ |

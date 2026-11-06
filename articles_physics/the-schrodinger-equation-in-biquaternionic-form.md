@@ -2,15 +2,15 @@
 
 ## Introduction
 
-For a pure state $|\tilde{Ξ}^{\mathrm{sp}}(t')\rangle$ and a Hamiltonian $H$, the Schrödinger equation of standard quantum physics is
+For a pure state $|\tilde{Ξ}^{\mathrm{sp}}(r'_t)\rangle$ and a Hamiltonian $H$, the Schrödinger equation of standard quantum physics is
 
 $$
-i\hbar\,\partial/\partial t'|\tilde{Ξ}^{\mathrm{sp}}(t')\rangle = H\,|\tilde{Ξ}^{\mathrm{sp}}(t')\rangle,
+i\hbar\,\partial/\partial r'_t|\tilde{Ξ}^{\mathrm{sp}}(r'_t)\rangle = H\,|\tilde{Ξ}^{\mathrm{sp}}(r'_t)\rangle,
 $$
 
-and for a density matrix $\rho$ the same dynamics reads $i\hbar\,\partial/\partial t'\rho = [H,\rho]$. Both statements have biquaternion forms, and it matters which of the two one has in hand.
+and for a density matrix $\rho$ the same dynamics reads $i\hbar\,\partial/\partial r'_t\rho = [H,\rho]$. Both statements have biquaternion forms, and it matters which of the two one has in hand.
 
-The companion article *Quantum Physics in Biquaternionic Form* treats the second form: it exhibits the $*$-unitary biquaternion $\tilde Q(t')$ obeying $i\hbar\,d\tilde Q/dt' = \tilde R_\psi\tilde Q$ and the state equation $i\hbar\,d\tilde{Ϛ}/dt' = [H,\tilde{Ϛ}]$ for $\tilde{Ϛ} \in \mathbb{M}_+$. It does **not** write the state-vector equation $i\hbar\,\partial/\partial t'\tilde{Ξ}^{\mathrm{sp}} = \tilde R_\psi\tilde{Ξ}^{\mathrm{sp}}$, nor examine its symbol $i$. That is a difference of object rather than an oversight: the "states" of the framework are the elements of $\mathbb{M}_+$, i.e. density-matrix-like objects, whereas a wave function is something else. This article supplies the state-vector form and settles what its $i$ denotes.
+The companion article *Quantum Physics in Biquaternionic Form* treats the second form: it exhibits the $*$-unitary biquaternion $\tilde Q(r'_t)$ obeying $i\hbar\,d\tilde Q/dr'_t = \tilde R_\psi\tilde Q$ and the state equation $i\hbar\,d\tilde{Ϛ}/dr'_t = [H,\tilde{Ϛ}]$ for $\tilde{Ϛ} \in \mathbb{M}_+$. It does **not** write the state-vector equation $i\hbar\,\partial/\partial r'_t\tilde{Ξ}^{\mathrm{sp}} = \tilde R_\psi\tilde{Ξ}^{\mathrm{sp}}$, nor examine its symbol $i$. That is a difference of object rather than an oversight: the "states" of the framework are the elements of $\mathbb{M}_+$, i.e. density-matrix-like objects, whereas a wave function is something else. This article supplies the state-vector form and settles what its $i$ denotes.
 
 The question is not decorative. In and around the algebra $\mathbb{B}$ there are three distinct things commonly written with a symbol that squares to $-1$ or plays the role of $i$:
 
@@ -99,18 +99,18 @@ is the state module; in the matrix picture it is the space of matrices with only
 
 ### Why the wave function is not a generic element of $\mathbb{M}_+$
 
-The temptation is to let the "state" $\tilde{Ϛ} \in \mathbb{M}_+$ of the companion article also serve as the wave function. The obstacle is not that the equation admits no $\mathbb{M}_+$-valued solution — it does — but that $\mathbb{M}_+$ is not stable under the action of the observables. $\mathbb{M}_+$ is neither a subalgebra nor a left ideal of $\mathbb{B}$ (for example $(i\vec e_x)(i\vec e_y) = -\vec e_z \in \mathbb{M}_-$), so for $\tilde{Ξ}^{\mathrm{sp}} \in \mathbb{M}_+$ the product $\tilde R_\psi\tilde{Ξ}^{\mathrm{sp}}$ need not lie in $\mathbb{M}_+$, and the equation $i\hbar\,\partial/\partial t'\tilde{Ξ}^{\mathrm{sp}} = \tilde R_\psi\tilde{Ξ}^{\mathrm{sp}}$ does not define a flow on $\mathbb{M}_+$.
+The temptation is to let the "state" $\tilde{Ϛ} \in \mathbb{M}_+$ of the companion article also serve as the wave function. The obstacle is not that the equation admits no $\mathbb{M}_+$-valued solution — it does — but that $\mathbb{M}_+$ is not stable under the action of the observables. $\mathbb{M}_+$ is neither a subalgebra nor a left ideal of $\mathbb{B}$ (for example $(i\vec e_x)(i\vec e_y) = -\vec e_z \in \mathbb{M}_-$), so for $\tilde{Ξ}^{\mathrm{sp}} \in \mathbb{M}_+$ the product $\tilde R_\psi\tilde{Ξ}^{\mathrm{sp}}$ need not lie in $\mathbb{M}_+$, and the equation $i\hbar\,\partial/\partial r'_t\tilde{Ξ}^{\mathrm{sp}} = \tilde R_\psi\tilde{Ξ}^{\mathrm{sp}}$ does not define a flow on $\mathbb{M}_+$.
 
-That solutions can exist is expected, because both sides can meet in $\mathbb{M}_-$: for $\tilde{Ξ}^{\mathrm{sp}} \in \mathbb{M}_+$ the derivative $\partial/\partial t'\tilde{Ξ}^{\mathrm{sp}}$ lies in the real vector space $\mathbb{M}_+$, so $i\hbar\,\partial/\partial t'\tilde{Ξ}^{\mathrm{sp}} \in \mathbb{M}_-$ at every instant, and $\tilde R_\psi\tilde{Ξ}^{\mathrm{sp}}$ need not be Hermitian. Take $\tilde R_\psi = i\,\vec e_x$ and
-
-$$
-\tilde{Ξ}^{\mathrm{sp}}(t') = i\left(\cos\theta\,\vec e_y + \sin\theta\,\vec e_z\right), \qquad \theta = \frac{r'_{t}}{\hbar}.
-$$
-
-Then $\tilde{Ξ}^{\mathrm{sp}\dagger} = \tilde{Ξ}^{\mathrm{sp}}$, so $\tilde{Ξ}^{\mathrm{sp}}$ is Hermitian at every $t'$, and
+That solutions can exist is expected, because both sides can meet in $\mathbb{M}_-$: for $\tilde{Ξ}^{\mathrm{sp}} \in \mathbb{M}_+$ the derivative $\partial/\partial r'_t\tilde{Ξ}^{\mathrm{sp}}$ lies in the real vector space $\mathbb{M}_+$, so $i\hbar\,\partial/\partial r'_t\tilde{Ξ}^{\mathrm{sp}} \in \mathbb{M}_-$ at every instant, and $\tilde R_\psi\tilde{Ξ}^{\mathrm{sp}}$ need not be Hermitian. Take $\tilde R_\psi = i\,\vec e_x$ and
 
 $$
-i\hbar\,\partial/\partial t'\tilde{Ξ}^{\mathrm{sp}} = \sin\theta\,\vec e_y - \cos\theta\,\vec e_z = (i\,\vec e_x)\,\tilde{Ξ}^{\mathrm{sp}},
+\tilde{Ξ}^{\mathrm{sp}}(r'_t) = i\left(\cos\theta\,\vec e_y + \sin\theta\,\vec e_z\right), \qquad \theta = \frac{r'_{t}}{\hbar}.
+$$
+
+Then $\tilde{Ξ}^{\mathrm{sp}\dagger} = \tilde{Ξ}^{\mathrm{sp}}$, so $\tilde{Ξ}^{\mathrm{sp}}$ is Hermitian at every $r'_t$, and
+
+$$
+i\hbar\,\partial/\partial r'_t\tilde{Ξ}^{\mathrm{sp}} = \sin\theta\,\vec e_y - \cos\theta\,\vec e_z = (i\,\vec e_x)\,\tilde{Ξ}^{\mathrm{sp}},
 $$
 
 so the equation holds. The Hermitian-valued unknown is not inconsistent.
@@ -130,11 +130,11 @@ which is Hermitian, positive, and trace one — an element of the Bloch ball, he
 With these objects separated, the equation reads
 
 $$
-\boxed{\;i\hbar\,\partial/\partial t'\tilde{Ξ}^{\mathrm{sp}}(t') = \tilde R_\psi\,\tilde{Ξ}^{\mathrm{sp}}(t'),
+\boxed{\;i\hbar\,\partial/\partial r'_t\tilde{Ξ}^{\mathrm{sp}}(r'_t) = \tilde R_\psi\,\tilde{Ξ}^{\mathrm{sp}}(r'_t),
 \qquad
 \tilde R_\psi = c r_t\,e_t + i\vec r_\psi \in \mathbb{M}_+,
 \qquad
-\tilde{Ξ}^{\mathrm{sp}}(t') \in \mathbb{B}\tilde\Pi\;},
+\tilde{Ξ}^{\mathrm{sp}}(r'_t) \in \mathbb{B}\tilde\Pi\;},
 $$
 
 where $i$ is the scalar imaginary. Because $i$ is central, $i\tilde R_\psii$, and there is no left/right ordering ambiguity in the equation. Because $\mathbb{B}\tilde\Pi$ is a left ideal, $\tilde R_\psi\tilde{Ξ}^{\mathrm{sp}} \in \mathbb{B}\tilde\Pi$, so the equation is consistent within the module.
@@ -142,31 +142,31 @@ where $i$ is the scalar imaginary. Because $i$ is central, $i\tilde R_\psii$, an
 **Solution.** Since $-i\tilde R_\psi = -ic r_t\,e_t + \vec r_\psi$ and the scalar and vector parts commute,
 
 $$
-\boxed{\;\tilde Q(t') = \exp\!\left(-i Ht'/\hbar\right)
-= \exp(-ic r_t\,t'/\hbar)\left(\cos\theta\,e_t + \sin\theta\,\vec u_\psi\right),
+\boxed{\;\tilde Q(r'_t) = \exp\!\left(-i Hr'_t/\hbar\right)
+= \exp(-ic r_t\,r'_t/\hbar)\left(\cos\theta\,e_t + \sin\theta\,\vec u_\psi\right),
 \qquad
-\theta = \frac{|\vec r_\psi|t'}{\hbar}\;},
+\theta = \frac{|\vec r_\psi|r'_t}{\hbar}\;},
 $$
 
-and $\tilde{Ξ}^{\mathrm{sp}}(t') = \tilde Q(t')\tilde{Ξ}^{\mathrm{sp}}(0)$. The element $\tilde Q$ is $*$-unitary, $\tilde Q\tilde Q^{*} = e_t$: the central phase cancels and $R = \cos\theta\,e_t + \sin\theta\,\vec u_\psi$ is a unit real quaternion, $R R^{*} = e_t$. Consequently the Hermitian norm $\mathrm{Tr}(\tilde{Ξ}^{\mathrm{sp}\dagger}\tilde{Ξ}^{\mathrm{sp}})$ is preserved: with $\tilde{Ξ}^{\mathrm{sp}}(t') = \tilde Q\tilde{Ξ}^{\mathrm{sp}}(0)$,
+and $\tilde{Ξ}^{\mathrm{sp}}(r'_t) = \tilde Q(r'_t)\tilde{Ξ}^{\mathrm{sp}}(0)$. The element $\tilde Q$ is $*$-unitary, $\tilde Q\tilde Q^{*} = e_t$: the central phase cancels and $R = \cos\theta\,e_t + \sin\theta\,\vec u_\psi$ is a unit real quaternion, $R R^{*} = e_t$. Consequently the Hermitian norm $\mathrm{Tr}(\tilde{Ξ}^{\mathrm{sp}\dagger}\tilde{Ξ}^{\mathrm{sp}})$ is preserved: with $\tilde{Ξ}^{\mathrm{sp}}(r'_t) = \tilde Q\tilde{Ξ}^{\mathrm{sp}}(0)$,
 
 $$
-\mathrm{Tr}\!\left(\tilde{Ξ}^{\mathrm{sp}}(t')^\dagger\tilde{Ξ}^{\mathrm{sp}}(t')\right)
+\mathrm{Tr}\!\left(\tilde{Ξ}^{\mathrm{sp}}(r'_t)^\dagger\tilde{Ξ}^{\mathrm{sp}}(r'_t)\right)
 = \mathrm{Tr}\!\left(\tilde{Ξ}^{\mathrm{sp}}(0)^\dagger \tilde Q^{*}\tilde Q\,\tilde{Ξ}^{\mathrm{sp}}(0)\right)
 = \mathrm{Tr}\!\left(\tilde{Ξ}^{\mathrm{sp}}(0)^\dagger\tilde{Ξ}^{\mathrm{sp}}(0)\right).
 $$
 
-Differentiating the solution gives $i\hbar\,\partial/\partial t'\tilde{Ξ}^{\mathrm{sp}} = i\hbar(-i H/\hbar)\tilde{Ξ}^{\mathrm{sp}} = \tilde R_\psi\tilde{Ξ}^{\mathrm{sp}}$, so it is the required solution.
+Differentiating the solution gives $i\hbar\,\partial/\partial r'_t\tilde{Ξ}^{\mathrm{sp}} = i\hbar(-i H/\hbar)\tilde{Ξ}^{\mathrm{sp}} = \tilde R_\psi\tilde{Ξ}^{\mathrm{sp}}$, so it is the required solution.
 
-**Case checked.** For $\tilde R_\psi = i\,\vec e_x$ one has $c r_t = 0$, $\vec r_\psi = \vec e_x$, and $\tilde Q(t') = \cos(t'/\hbar)e_t + \sin(t'/\hbar)\vec e_x$. Then $\tilde Q(t')$ is $*$-unitary, and $\tilde R_\psi\tilde Q = i \vec e_x(\cos(t'/\hbar)e_t + \sin(t'/\hbar)\vec e_x) = i\cos(t'/\hbar)\vec e_x - i\sin(t'/\hbar)e_t$ equals $i\hbar\,d\tilde Q/dt' = i(-\sin(t'/\hbar)e_t + \cos(t'/\hbar)\vec e_x)$, term by term. This case was chosen independently of the general formula and confirms it.
+**Case checked.** For $\tilde R_\psi = i\,\vec e_x$ one has $c r_t = 0$, $\vec r_\psi = \vec e_x$, and $\tilde Q(r'_t) = \cos(r'_t/\hbar)e_t + \sin(r'_t/\hbar)\vec e_x$. Then $\tilde Q(r'_t)$ is $*$-unitary, and $\tilde R_\psi\tilde Q = i \vec e_x(\cos(r'_t/\hbar)e_t + \sin(r'_t/\hbar)\vec e_x) = i\cos(r'_t/\hbar)\vec e_x - i\sin(r'_t/\hbar)e_t$ equals $i\hbar\,d\tilde Q/dr'_t = i(-\sin(r'_t/\hbar)e_t + \cos(r'_t/\hbar)\vec e_x)$, term by term. This case was chosen independently of the general formula and confirms it.
 
-**Consistency with the density matrix.** The companion article's equation for $\tilde{Ϛ} = \tilde{Ξ}^{\mathrm{sp}}\tilde{Ξ}^{\mathrm{sp}\dagger}$ follows from the spinor equation. Differentiating $\tilde{Ϛ} = \tilde{Ξ}^{\mathrm{sp}}\tilde{Ξ}^{\mathrm{sp}\dagger}$ and using $\partial/\partial t'\tilde{Ξ}^{\mathrm{sp}} = -i\tilde R_\psi\tilde{Ξ}^{\mathrm{sp}}/\hbar$, $\partial/\partial t'\tilde{Ξ}^{\mathrm{sp}\dagger} = i\tilde{Ξ}^{\mathrm{sp}\dagger}\tilde R_\psi/\hbar$ (valid because $\tilde R_\psi^{*} = \tilde R_\psi$) gives
+**Consistency with the density matrix.** The companion article's equation for $\tilde{Ϛ} = \tilde{Ξ}^{\mathrm{sp}}\tilde{Ξ}^{\mathrm{sp}\dagger}$ follows from the spinor equation. Differentiating $\tilde{Ϛ} = \tilde{Ξ}^{\mathrm{sp}}\tilde{Ξ}^{\mathrm{sp}\dagger}$ and using $\partial/\partial r'_t\tilde{Ξ}^{\mathrm{sp}} = -i\tilde R_\psi\tilde{Ξ}^{\mathrm{sp}}/\hbar$, $\partial/\partial r'_t\tilde{Ξ}^{\mathrm{sp}\dagger} = i\tilde{Ξ}^{\mathrm{sp}\dagger}\tilde R_\psi/\hbar$ (valid because $\tilde R_\psi^{*} = \tilde R_\psi$) gives
 
 $$
-\boxed{\;\partial/\partial t'\tilde{Ϛ} = -\frac{i}{\hbar}\tilde R_\psi\tilde{Ϛ} + \frac{i}{\hbar}\tilde{Ϛ}\tilde R_\psi
+\boxed{\;\partial/\partial r'_t\tilde{Ϛ} = -\frac{i}{\hbar}\tilde R_\psi\tilde{Ϛ} + \frac{i}{\hbar}\tilde{Ϛ}\tilde R_\psi
 = -\frac{i}{\hbar}[H,\tilde{Ϛ}],
 \qquad\text{i.e.}\qquad
-i\hbar\,\partial/\partial t'\tilde{Ϛ} = [H,\tilde{Ϛ}]\;},
+i\hbar\,\partial/\partial r'_t\tilde{Ϛ} = [H,\tilde{Ϛ}]\;},
 $$
 
 which is the von Neumann equation of the parent article. The Born rule follows as there: with $\tilde{Ϛ} = \tfrac12(e_t + i\vec r)$ and $\tilde\Pi_1(\vec u) = \tfrac12(e_t + i\vec u)$,
@@ -182,12 +182,12 @@ For the up-state spinor $\tilde{Ξ}^{\mathrm{sp}} = \begin{pmatrix} 1 \\ 0\end{p
 It is worth making precise why the obvious alternatives to $i$ fail. Suppose a root $\tilde{Ζ}$ with $\tilde{Ζ}^2 = -1$ is used in place of $i$:
 
 $$
-\hbar\,\tilde{Ζ}\,\partial/\partial t'\tilde{Ξ}^{\mathrm{sp}} = \tilde R_\psi\tilde{Ξ}^{\mathrm{sp}}
+\hbar\,\tilde{Ζ}\,\partial/\partial r'_t\tilde{Ξ}^{\mathrm{sp}} = \tilde R_\psi\tilde{Ξ}^{\mathrm{sp}}
 \qquad\Longrightarrow\qquad
-\partial/\partial t'\tilde{Ξ}^{\mathrm{sp}} = -\frac{1}{\hbar}\tilde{Ζ}\tilde R_\psi\,\tilde{Ξ}^{\mathrm{sp}},
+\partial/\partial r'_t\tilde{Ξ}^{\mathrm{sp}} = -\frac{1}{\hbar}\tilde{Ζ}\tilde R_\psi\,\tilde{Ξ}^{\mathrm{sp}},
 $$
 
-so the generator of the flow is $-\hbar^{-1}\tilde{Ζ}\tilde R_\psi$. The flow preserves the Hermitian form, i.e. $\exp(-\hbar^{-1}t'\tilde{Ζ}\tilde R_\psi)$ is $*$-unitary, exactly when $-\hbar^{-1}\tilde{Ζ}\tilde R_\psi$ is anti-Hermitian, which is the condition
+so the generator of the flow is $-\hbar^{-1}\tilde{Ζ}\tilde R_\psi$. The flow preserves the Hermitian form, i.e. $\exp(-\hbar^{-1}r'_t\tilde{Ζ}\tilde R_\psi)$ is $*$-unitary, exactly when $-\hbar^{-1}\tilde{Ζ}\tilde R_\psi$ is anti-Hermitian, which is the condition
 
 $$
 (\tilde{Ζ}\tilde R_\psi)^{*} = -\tilde{Ζ}\tilde R_\psi
@@ -204,7 +204,7 @@ $$
 \vec{Ζ}\tilde R_\psi = \vec e_z\,(i \vec e_x) = i\,\vec e_z \vec e_x = i\,\vec e_y,
 $$
 
-using $\vec e_z \vec e_x = \vec e_y$. Since $i\,\vec e_y$ is Hermitian, $(i\vec e_y)^{*} = i\vec e_y$, the generator $-\hbar^{-1}\vec{Ζ}\tilde R_\psi = -\hbar^{-1}i\,\vec e_y$ is Hermitian, not anti-Hermitian, and $\exp(-\hbar^{-1}t'\vec{Ζ}\tilde R_\psi)$ is not $*$-unitary. Explicitly, at $t' = \pi\hbar/2$,
+using $\vec e_z \vec e_x = \vec e_y$. Since $i\,\vec e_y$ is Hermitian, $(i\vec e_y)^{*} = i\vec e_y$, the generator $-\hbar^{-1}\vec{Ζ}\tilde R_\psi = -\hbar^{-1}i\,\vec e_y$ is Hermitian, not anti-Hermitian, and $\exp(-\hbar^{-1}r'_t\vec{Ζ}\tilde R_\psi)$ is not $*$-unitary. Explicitly, at $r'_t = \pi\hbar/2$,
 
 $$
 \tilde Q^{*}\tilde Q = \exp\!\left(-i\pi \vec e_y\right)
@@ -222,7 +222,7 @@ There is a second defect in the non-central choice: because $\vec e_z \vec e_x =
 The equation can be rearranged into a statement that lives entirely in one sector at a time. Dividing by $i\hbar$,
 
 $$
-\partial/\partial t'\tilde{Ξ}^{\mathrm{sp}} = -\frac{i}{\hbar}\tilde R_\psi\tilde{Ξ}^{\mathrm{sp}},
+\partial/\partial r'_t\tilde{Ξ}^{\mathrm{sp}} = -\frac{i}{\hbar}\tilde R_\psi\tilde{Ξ}^{\mathrm{sp}},
 \qquad
 -\frac{i}{\hbar}\tilde R_\psi = \frac{\vec r_\psi - i c r_t e_t}{\hbar} \in \mathbb{M}_-.
 $$
@@ -238,13 +238,13 @@ $$
 \left([H,\tilde{Ϛ}]\right)^\dagger = \tilde{Ϛ}\tilde R_\psi - \tilde R_\psi\tilde{Ϛ} = -[H,\tilde{Ϛ}],
 $$
 
-so $[H,\tilde{Ϛ}] \in \mathbb{M}_-$; and since $\tilde{Ϛ} \in \mathbb{M}_+$ and $i\,\mathbb{M}_+ = \mathbb{M}_-$, the term $i\hbar\,\partial/\partial t'\tilde{Ϛ}$ is also in $\mathbb{M}_-$. The von Neumann equation is thus an identity in a single sector, while its solution returns to the complementary one.
+so $[H,\tilde{Ϛ}] \in \mathbb{M}_-$; and since $\tilde{Ϛ} \in \mathbb{M}_+$ and $i\,\mathbb{M}_+ = \mathbb{M}_-$, the term $i\hbar\,\partial/\partial r'_t\tilde{Ϛ}$ is also in $\mathbb{M}_-$. The von Neumann equation is thus an identity in a single sector, while its solution returns to the complementary one.
 
 A structural caution belongs here. The wave function $\tilde{Ξ}^{\mathrm{sp}}$ itself is an element of the state module $\mathbb{B}\tilde\Pi$, not of either sector; it carries no $\mathbb{M}_\pm$ label. The decomposition $\mathbb{B} = \mathbb{M}_+ \oplus \mathbb{M}_-$ classifies Hermitian observables and anti-Hermitian generators, not state vectors. What returns to $\mathbb{M}_+$ is the bilinear object $\tilde{Ϛ} = \tilde{Ξ}^{\mathrm{sp}}\tilde{Ξ}^{\mathrm{sp}\dagger}$, not $\tilde{Ξ}^{\mathrm{sp}}$. Reading the sector labels onto the wave function is the same error as conflating the wave function with the density matrix.
 
 ## What the Biquaternion Form Adds and What It Merely Relabels
 
-**The relabelling.** Under $\mathbb{B} \cong M_2(\mathbb{C})$ with $\vec e_\mu \mapsto -i\sigma_\mu$, a spinor in $\mathbb{B}\tilde\Pi$ is a column vector in $\mathbb{C}^2$, the scalar imaginary is the standard imaginary unit, $\tilde Q(t')$ is a standard element of $\mathrm{U}(2)$, and the equation is literally the two-component Schrödinger equation. Nothing is added for a single qubit beyond vocabulary: the biquaternion equation predicts exactly what the standard one predicts.
+**The relabelling.** Under $\mathbb{B} \cong M_2(\mathbb{C})$ with $\vec e_\mu \mapsto -i\sigma_\mu$, a spinor in $\mathbb{B}\tilde\Pi$ is a column vector in $\mathbb{C}^2$, the scalar imaginary is the standard imaginary unit, $\tilde Q(r'_t)$ is a standard element of $\mathrm{U}(2)$, and the equation is literally the two-component Schrödinger equation. Nothing is added for a single qubit beyond vocabulary: the biquaternion equation predicts exactly what the standard one predicts.
 
 **What is structural.** Three features are genuinely rearranged rather than merely renamed.
 
@@ -258,7 +258,7 @@ A structural caution belongs here. The wave function $\tilde{Ξ}^{\mathrm{sp}}$ 
 
 ## Open Questions
 
-**1. The local complex structure.** The series makes the complex structure local: it is set by the medium through $c = 1/\sqrt{\epsilon\mu}$ and reduces to $ic_0t'$ in vacuum. The scalar imaginary $i$ is a global central element of $\mathbb{B}$, and a central element cannot vary from point to point. Does the $i$ of the Schrödinger equation remain global, or does a local complex structure enter the state module? The relation between the two is unresolved.
+**1. The local complex structure.** The series makes the complex structure local: it is set by the medium through $c = 1/\sqrt{\epsilon\mu}$ and reduces to $ic_0r'_t$ in vacuum. The scalar imaginary $i$ is a global central element of $\mathbb{B}$, and a central element cannot vary from point to point. Does the $i$ of the Schrödinger equation remain global, or does a local complex structure enter the state module? The relation between the two is unresolved.
 
 **2. Many qubits.** The extension to $n$ qubits is via $\mathbb{B}^{\otimes n} \cong M_{2^n}(\mathbb{C})$. The companion article leaves the tensor product over $\mathbb{C}$ as an open question. If it is taken over $\mathbb{C}$, the scalar imaginary remains available as the complex structure; if not, the question of the imaginary unit returns in a new form.
 
@@ -273,12 +273,12 @@ A structural caution belongs here. The wave function $\tilde{Ξ}^{\mathrm{sp}}$ 
 The Schrödinger equation in biquaternionic form is
 
 $$
-\boxed{\;i\hbar\,\partial/\partial t'\tilde{Ξ}^{\mathrm{sp}} = \tilde R_\psi\tilde{Ξ}^{\mathrm{sp}}\;},
+\boxed{\;i\hbar\,\partial/\partial r'_t\tilde{Ξ}^{\mathrm{sp}} = \tilde R_\psi\tilde{Ξ}^{\mathrm{sp}}\;},
 $$
 
 with $\tilde R_\psi = c r_t\,e_t + i\vec r_\psi \in \mathbb{M}_+$ Hermitian, $\tilde{Ξ}^{\mathrm{sp}}$ a spinor in the Peirce carrier $\mathbb{B}\tilde\Pi \cong \mathbb{C}^2$, a minimal left ideal here, and $i$ the **scalar imaginary** — the central root of $-1$ in $\mathbb{B}$, unique up to sign.
 
-The symbol $i$ must not be confused with the quaternion units or the non-central roots of $-1$, which are rotation axes, and it is not a complex structure on $\mathbb{M}_+$, since $i\,\mathbb{M}_+ = \mathbb{M}_-$: the scalar imaginary is the canonical isomorphism between the two sectors, not an operator on either. The wave function is a spinor in the state module, not a generic element of $\mathbb{M}_+$; the density matrix is recovered as $\tilde{Ϛ} = \tilde{Ξ}^{\mathrm{sp}}\tilde{Ξ}^{\mathrm{sp}\dagger}/\mathrm{Tr}(\tilde{Ξ}^{\mathrm{sp}\dagger}\tilde{Ξ}^{\mathrm{sp}}) \in \mathbb{M}_+$, and the spinor equation implies the parent article's von Neumann equation $i\hbar\,\partial/\partial t'\tilde{Ϛ} = [H,\tilde{Ϛ}]$.
+The symbol $i$ must not be confused with the quaternion units or the non-central roots of $-1$, which are rotation axes, and it is not a complex structure on $\mathbb{M}_+$, since $i\,\mathbb{M}_+ = \mathbb{M}_-$: the scalar imaginary is the canonical isomorphism between the two sectors, not an operator on either. The wave function is a spinor in the state module, not a generic element of $\mathbb{M}_+$; the density matrix is recovered as $\tilde{Ϛ} = \tilde{Ξ}^{\mathrm{sp}}\tilde{Ξ}^{\mathrm{sp}\dagger}/\mathrm{Tr}(\tilde{Ξ}^{\mathrm{sp}\dagger}\tilde{Ξ}^{\mathrm{sp}}) \in \mathbb{M}_+$, and the spinor equation implies the parent article's von Neumann equation $i\hbar\,\partial/\partial r'_t\tilde{Ϛ} = [H,\tilde{Ϛ}]$.
 
 Using a non-central root $\tilde{Ζ}$ in place of $i$ fails generically: the generator $-\hbar^{-1}\tilde{Ζ}\tilde R_\psi$ need not be anti-Hermitian, so the flow is not $*$-unitary and the norm is not preserved (explicitly for $\vec{Ζ} = \vec e_z$, $\tilde R_\psi = i\vec e_x$). The scalar imaginary is the only choice, up to sign, that works for every Hermitian Hamiltonian.
 
@@ -292,14 +292,14 @@ Read in the two sectors, the equation says that the Hermitian observable $\tilde
 | $e_t = 1, \vec e_x, \vec e_y, \vec e_z$ | Quaternion basis, $\vec e_\mu^2 = -e_t$ |
 | $i$ | Scalar imaginary, central, $i^2 = -e_t$ |
 | $\mathbb{C}_{\mathbb{B}}$ | Complex subspace $\operatorname{span}_{\mathbb{R}}\{e_t, ie_t\}$; the centre |
-| $\mathbb{M}_+$ | Hermitian subspace (observables): $i\hbar\,\partial/\partial t'\tilde{Ξ}^{\mathrm{sp}} = \tilde R_\psi\tilde{Ξ}^{\mathrm{sp}}$ has $\tilde R_\psi \in \mathbb{M}_+$ |
+| $\mathbb{M}_+$ | Hermitian subspace (observables): $i\hbar\,\partial/\partial r'_t\tilde{Ξ}^{\mathrm{sp}} = \tilde R_\psi\tilde{Ξ}^{\mathrm{sp}}$ has $\tilde R_\psi \in \mathbb{M}_+$ |
 | $\mathbb{M}_-$ | Anti-Hermitian subspace (generators): the generator is $-i H/\hbar \in \mathbb{M}_-$ |
 | $\mathbb{H}_{\mathbb{B}}$ | Real quaternion subspace; home of the unit pure quaternions $\vec u$ |
 | $\tilde R_\psi = c r_t\,e_t + i\vec r_\psi$ | Hermitian element (Hamiltonian) |
 | $\tilde\Pi_{1,2}(\vec u) = \tfrac12(e_t \pm i\vec u)$ | Idempotent (pure state); $\vec u$ the state axis |
 | $\mathbb{B}\tilde\Pi \cong \mathbb{C}^2$ | Minimal left ideal: the state module of spinors $\tilde{Ξ}^{\mathrm{sp}}$ |
 | $\tilde{Ϛ} = \tilde{Ξ}^{\mathrm{sp}}\tilde{Ξ}^{\mathrm{sp}\dagger}/\mathrm{Tr}(\tilde{Ξ}^{\mathrm{sp}\dagger}\tilde{Ξ}^{\mathrm{sp}})$ | Density matrix associated to a spinor |
-| $\tilde Q(t') = \exp(-i Ht'/\hbar)$ | $*$-Unitary evolution, $\tilde{Ξ}^{\mathrm{sp}}(t') = \tilde Q(t')\tilde{Ξ}^{\mathrm{sp}}(0)$ |
+| $\tilde Q(r'_t) = \exp(-i Hr'_t/\hbar)$ | $*$-Unitary evolution, $\tilde{Ξ}^{\mathrm{sp}}(r'_t) = \tilde Q(r'_t)\tilde{Ξ}^{\mathrm{sp}}(0)$ |
 | $2\,\mathrm{Sc}(\tilde\Pi_1(\vec u)\tilde R_\psi^{*}) = c r_t + \vec u\cdot\vec r_\psi = \operatorname{Tr}(\tilde\Pi_1(\vec u)\tilde R_\psi^{*})$ | Trace reading last / Born rule |
 | $\vec e_\mu \vec e_\nu = \varepsilon_{\mu\nu\lambda}\vec e_\lambda$, $\mu \neq \nu$ | Quaternion multiplication |
 | $\langle\tilde{Q}_1,\tilde{Q}_2\rangle_{*}$ | the general plain sesquilinear form, $\mathrm{Sc}(\tilde{Q}_1\tilde{Q}_2^{*})$; on the diagonal $\langle\tilde{Q}_2,\tilde{Q}_2\rangle_{*}=\sum_\mu\lvert Q_{2\mu}\rvert^{2}$ |

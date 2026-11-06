@@ -76,7 +76,7 @@ $$
 \vec L = \vec r\times\vec p = \tfrac12[\vec r,\vec p], \qquad \{L_i^{\mathrm{orb}}, H\} = 0 ,
 $$
 
-with $H = p^2/(2m) - \kappa/r$ the Hamiltonian. The conservation was derived in the preceding article as $d\vec L/dt' = \tfrac12[\vec r,\vec F] = 0$, and it holds for every central force.
+with $H = p^2/(2m) - \kappa/r$ the Hamiltonian. The conservation was derived in the preceding article as $d\vec L/dr'_t = \tfrac12[\vec r,\vec F] = 0$, and it holds for every central force.
 
 ### The Runge–Lenz Vector
 

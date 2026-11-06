@@ -20,7 +20,7 @@ and there is no eight-dimensional compact subalgebra to be found. The algebra th
 
 The article is organised as follows. A first section transcribes the gluon's standard field theory: the eight fields, the field strength, the self-couplings, the invariant tensors, asymptotic freedom and confinement. A second section states what the framework reaches, namely the free kinematics of a single constituent. A third section establishes the obstructions, one at a time: the dimension of the compact algebra, the dimension of the modules, the symmetric invariant tensor, and the failure of the octonion route through non-associativity. A fourth section records the enlarged carrier in which the octet can be embedded and identifies the price — the colour index becomes external data. A fifth section places the result as the ceiling of the category and points to the informational interpretation of confinement.
 
-We use the conventions of the companion articles: the algebra, the units, the sectors, the gradient and the d'Alembertian are those of *Algebra and Element Conventions*, *Frame and Metric Conventions* and *Operator and Calculus Conventions*, and none is restated here. The compact factor is $\mathrm{U}(2)=\mathbb{R}(ie_t)\oplus\mathrm{SU}(2)$ with $\mathrm{SU}(2)=\mathrm{span}_\mathbb{R}\{\vec e_x,\vec e_y,\vec e_z\}$, $[e_a,e_b]=2\sum_c\varepsilon_{abc}e_c$ and $T_a=\tfrac12 e_a$; the covariant derivative is $D_\mu=\partial/\partial Q_\mu+i\kappa\mathcal{A}_\mu$ with $\kappa=ϙ/\hbar$, and the non-abelian curvature is $F_{\mu\nu}=\partial\mathcal{A}_\nu/\partial Q_\mu-\partial\mathcal{A}_\mu/\partial Q_\nu+i\kappa[\mathcal{A}_\mu,\mathcal{A}_\nu]$, from the companion articles. Natural units $\hbar=c=1$ are used for the strong-interaction formulae, where $g_s$ denotes the standard QCD coupling and the standard symbols $f_{abc},d_{abc}$ the $\mathrm{SU}(3)$ invariant tensors; the framework's coupling is $\kappa$ where it appears in the algebra's expressions. Matrix traces on the gauge factors are written $\mathrm{Tr}$, distinct from the informational trace formula of *Norm and Pairing Conventions*.
+We use the conventions of the companion articles: the algebra, the units, the sectors, the gradient and the d'Alembertian are those of *Algebra and Element Conventions*, *Frame and Metric Conventions* and *Operator and Calculus Conventions*, and none is restated here. The compact factor is $\mathrm{U}(2)=\mathbb{R}(ie_t)\oplus\mathrm{SU}(2)$ with $\mathrm{SU}(2)=\mathrm{span}_\mathbb{R}\{\vec e_x,\vec e_y,\vec e_z\}$, $[e_a,e_b]=2\sum_c\varepsilon_{abc}e_c$ and $T_a=\tfrac12 e_a$; the covariant derivative is $D_\mu=\partial/\partial R_\mu+i\kappa\mathcal{A}_\mu$ with $\kappa=ϙ/\hbar$, and the non-abelian curvature is $F_{\mu\nu}=\partial\mathcal{A}_\nu/\partial R_\mu-\partial\mathcal{A}_\mu/\partial R_\nu+i\kappa[\mathcal{A}_\mu,\mathcal{A}_\nu]$, from the companion articles. Natural units $\hbar=c=1$ are used for the strong-interaction formulae, where $g_s$ denotes the standard QCD coupling and the standard symbols $f_{abc},d_{abc}$ the $\mathrm{SU}(3)$ invariant tensors; the framework's coupling is $\kappa$ where it appears in the algebra's expressions. Matrix traces on the gauge factors are written $\mathrm{Tr}$, distinct from the informational trace formula of *Norm and Pairing Conventions*.
 
 - Companion article *The Gauge Group Ceiling: Why the Biquaternion Algebra Reaches SU(2) but Not SU(3)*, for the general theorem of which this article is the gluon case.
 - Companion article *Quantum Chromodynamics under the Biquaternion Framework — A Research Agenda*, for the placement of the strong sector in the framework and the list of open problems.
@@ -42,7 +42,7 @@ Quantum chromodynamics is the gauge theory of the group $SU(3)$ with coupling $g
 $$
 S_{\mathrm{QCD}}=-\frac14\int d^4x\,\sum_a G_{\mu\nu a}G_{\mu\nu a},
 \qquad
-G_{\mu\nu a}=\frac{\partial}{\partial Q_\mu}G_{\nu a}-\frac{\partial}{\partial Q_\nu}G_{\mu a}+g_s\sum_{b,c}f_{abc}G_{\mu b}G_{\nu c} ,
+G_{\mu\nu a}=\frac{\partial}{\partial R_\mu}G_{\nu a}-\frac{\partial}{\partial R_\nu}G_{\mu a}+g_s\sum_{b,c}f_{abc}G_{\mu b}G_{\nu c} ,
 $$
 where $f_{abc}$ are the structure constants of $\mathrm{SU}(3)$, defined by
 $$
@@ -86,9 +86,9 @@ The gluon is in the adjoint representation, whose dimension is the dimension of 
 $$
 \dim\mathrm{SU}(3)=N^2-1=8 ,
 $$
-which is the origin of the eight gluons. The action is invariant under the gauge transformation $G_{\mu a}\mapsto G_{\mu a}-\partial/\partial Q_\mu\,\Gamma_a-g_s\sum_{b,c}f_{abc}G_{\mu b}\Gamma_c$, and its expansion in powers of the fields contains the three-gluon and four-gluon self-couplings,
+which is the origin of the eight gluons. The action is invariant under the gauge transformation $G_{\mu a}\mapsto G_{\mu a}-\partial/\partial R_\mu\,\Gamma_a-g_s\sum_{b,c}f_{abc}G_{\mu b}\Gamma_c$, and its expansion in powers of the fields contains the three-gluon and four-gluon self-couplings,
 $$
-\mathcal{L}_{3}\sim g_s\sum_{a,b,c}f_{abc}\sum_{\mu,\nu}\left(\partial/\partial Q_\mu G_{\nu a}\right)G_{\mu b}G_{\nu c},
+\mathcal{L}_{3}\sim g_s\sum_{a,b,c}f_{abc}\sum_{\mu,\nu}\left(\partial/\partial R_\mu G_{\nu a}\right)G_{\mu b}G_{\nu c},
 \qquad
 \mathcal{L}_{4}\sim g_s^2\sum_{a,b,c,d}f_{abe}f_{cde}\sum_{\mu,\nu}G_{\mu a}G_{\nu b}G_{\mu c}G_{\nu d},
 $$
@@ -211,7 +211,7 @@ $$
 \mathcal{A}_\mu=g_s\sum_a G_{\mu a}\,\frac{\lambda_a}{2},
 $$
 
-a traceless anti-Hermitian $3\times3$ complex matrix, that is, an element of $\mathfrak{su}(3)\subset\mathfrak{u}(3)\subset\mathfrak{u}(4)$. This is the exact sense in which the octet is *outside* $\mathbb{B}$: $\mathcal{A}_\mu$ is not an element of the algebra, and not a linear function of one, while it **is** an element of the endomorphism algebra of the enlarged carrier, $M_4(\mathbb{C})\cong M_2(\mathbb{B})$, as a $3\times3$ block with the fourth direction inert. The eight components $G_{\mu a}$ are the eight coordinates of that block, and the group elements of the embedded $\mathrm{SU}(3)$ have explicit closed forms in biquaternion parameters — an ordered product of three exponentials of the antisymmetric, diagonal and diagonal-less symmetric linear functions, with eight parameters, verified $*$-unitary with unit determinant — so the embedding is not merely an existence statement: the finite gauge transformation $\Omega(x)\in\mathrm{SU}(3)$ and the potential $\Omega^{-1}\partial/\partial Q_\mu\,\Omega$ can be written out in those parameters. That is what the price of the embedding *is*, item by item: the biquaternion parameters of the closed form are the colour data, and they are adjoined to the algebra rather than drawn from it. The algebra's own gauge sector is untouched and remains $\mathrm{U}(2)$.
+a traceless anti-Hermitian $3\times3$ complex matrix, that is, an element of $\mathfrak{su}(3)\subset\mathfrak{u}(3)\subset\mathfrak{u}(4)$. This is the exact sense in which the octet is *outside* $\mathbb{B}$: $\mathcal{A}_\mu$ is not an element of the algebra, and not a linear function of one, while it **is** an element of the endomorphism algebra of the enlarged carrier, $M_4(\mathbb{C})\cong M_2(\mathbb{B})$, as a $3\times3$ block with the fourth direction inert. The eight components $G_{\mu a}$ are the eight coordinates of that block, and the group elements of the embedded $\mathrm{SU}(3)$ have explicit closed forms in biquaternion parameters — an ordered product of three exponentials of the antisymmetric, diagonal and diagonal-less symmetric linear functions, with eight parameters, verified $*$-unitary with unit determinant — so the embedding is not merely an existence statement: the finite gauge transformation $\Omega(x)\in\mathrm{SU}(3)$ and the potential $\Omega^{-1}\partial/\partial R_\mu\,\Omega$ can be written out in those parameters. That is what the price of the embedding *is*, item by item: the biquaternion parameters of the closed form are the colour data, and they are adjoined to the algebra rather than drawn from it. The algebra's own gauge sector is untouched and remains $\mathrm{U}(2)$.
 
 ## The Boundary of the Category
 
@@ -243,7 +243,7 @@ The gluon is the massless spin-one gauge boson of $SU(3)$, eightfold degenerate 
 $$
 S_{\mathrm{QCD}}=-\frac14\int d^4x\,\sum_a G_{\mu\nu a}G_{\mu\nu a},
 \qquad
-G_{\mu\nu a}=\frac{\partial}{\partial Q_\mu}G_{\nu a}-\frac{\partial}{\partial Q_\nu}G_{\mu a}+g_s\sum_{b,c}f_{abc}G_{\mu b}G_{\nu c} ,
+G_{\mu\nu a}=\frac{\partial}{\partial R_\mu}G_{\nu a}-\frac{\partial}{\partial R_\nu}G_{\mu a}+g_s\sum_{b,c}f_{abc}G_{\mu b}G_{\nu c} ,
 $$
 self-coupling through $f_{abc}$, asymptotically free with $b_0=11-\frac23N_f$, and confining at long distances. The framework reaches its **free kinematics**: a colour-fixed gluon is a massless material vector with the self-dual/anti-self-dual helicity decomposition and the field-strength invariants of the companion articles, indistinguishable at the level of the free field from the photon.
 
@@ -283,7 +283,7 @@ This does not contradict the ceiling, because it does not take place in $\mathbb
 | $f_{abc}=2\varepsilon_{abc}$, $\{T_a,T_b\}=-\tfrac12\delta_{ab}e_t$ | Antisymmetric invariant of the compact factor, in the unnormalized basis $e_a$; vanishing symmetric invariant $d_{abc}=0$ |
 | $\mathrm{SU}(3)$, $\dim_\mathbb{R}\mathrm{SU}(3)=8$ | Colour algebra; not reachable from the compact part |
 | $G_{\mu a}$ $(a=1,\dots,8)$ | Gluon fields; adjoint octet |
-| $G_{\mu\nu a}=\frac{\partial}{\partial Q_\mu}G_{\nu a}-\frac{\partial}{\partial Q_\nu}G_{\mu a}+g_s\sum_{b,c}f_{abc}G_{\mu b}G_{\nu c}$ | Gluon field strength; a colour component, no tilde |
+| $G_{\mu\nu a}=\frac{\partial}{\partial R_\mu}G_{\nu a}-\frac{\partial}{\partial R_\nu}G_{\mu a}+g_s\sum_{b,c}f_{abc}G_{\mu b}G_{\nu c}$ | Gluon field strength; a colour component, no tilde |
 | $[\lambda_a,\lambda_b]=2i\sum_c f_{abc}\lambda_c$, $\{\lambda_a,\lambda_b\}=\tfrac43\delta_{ab}I+2\sum_c d_{abc}\lambda_c$ | Gell-Mann tensors |
 | $f_{123}=1$, $f_{147}=\tfrac12$, $f_{156}=-\tfrac12$, $f_{458}=\tfrac{\sqrt3}{2}$ | Sample nonzero $SU(3)$ components of the invariant $f_{abc}$ (verified) |
 | $d_{118}=\tfrac1{\sqrt3}$, $d_{146}=\tfrac12$, $d_{448}=-\tfrac{1}{2\sqrt3}$, $d_{888}=-\tfrac1{\sqrt3}$ | Sample nonzero $SU(3)$ components of the invariant $d_{abc}$ (verified) |

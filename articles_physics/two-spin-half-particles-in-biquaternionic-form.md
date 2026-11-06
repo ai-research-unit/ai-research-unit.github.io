@@ -21,7 +21,7 @@ $$
 with the bilinear product $(x\otimes y)(x_2\otimes y_2)=x\,x_2\otimes y\,y_2$ and the trace
 
 $$
-\mathrm{Tr}(x\otimes y)=\mathrm{Tr}_\mathbb{B}(x)\,\mathrm{Tr}_\mathbb{B}(y),\qquad
+\mathrm{Tr}(r_x\otimes r_y)=\mathrm{Tr}_\mathbb{B}(r_x)\,\mathrm{Tr}_\mathbb{B}(r_y),\qquad
 \mathrm{Tr}_\mathbb{B}(e_t)=2,\qquad \mathrm{Tr}_\mathbb{B}(\vec e_k)=0 ,
 $$
 
@@ -179,8 +179,8 @@ $$
 Each is a Hermitian idempotent of trace one, they are mutually orthogonal, and they resolve the identity:
 
 $$
-\tilde\Pi_{s_{\mathrm{tot}},s_{\mathrm{tot},z}}\tilde\Pi_{s'_{\mathrm{tot}},s'_{\mathrm{tot},z}}=\delta_{s_{\mathrm{tot}}s'_{\mathrm{tot}}}\delta_{s_{\mathrm{tot},z}s'_{\mathrm{tot},z}}\tilde\Pi_{s_{\mathrm{tot}},s_{\mathrm{tot},z}},\qquad
-\sum_{s_{\mathrm{tot}},s_{\mathrm{tot},z}}\tilde\Pi_{s_{\mathrm{tot}},s_{\mathrm{tot},z}}=e_t\otimes e_t .
+\tilde\Pi_{s_{\mathrm{tot}},s_{\mathrm{tot},r_z}}\tilde\Pi_{s'_{\mathrm{tot}},s'_{\mathrm{tot},r_z}}=\delta_{s_{\mathrm{tot}}s'_{\mathrm{tot}}}\delta_{s_{\mathrm{tot},r_z}s'_{\mathrm{tot},r_z}}\tilde\Pi_{s_{\mathrm{tot}},s_{\mathrm{tot},r_z}},\qquad
+\sum_{s_{\mathrm{tot}},s_{\mathrm{tot},r_z}}\tilde\Pi_{s_{\mathrm{tot}},s_{\mathrm{tot},r_z}}=e_t\otimes e_t .
 $$
 
 Explicitly, in the tensor basis,

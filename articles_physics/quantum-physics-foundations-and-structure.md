@@ -28,16 +28,16 @@ $$
 
 The possible results of a measurement of $A$ are the eigenvalues of $A$.
 
-**Postulate 3 (Dynamics).** The evolution of a closed quantum system in time is $*$-unitary. If the state at time $t'_0$ is $\rho(t'_0)$, the state at time $t'$ is
+**Postulate 3 (Dynamics).** The evolution of a closed quantum system in time is $*$-unitary. If the state at time $r'_{t,0}$ is $\rho(r'_{t,0})$, the state at time $r'_t$ is
 
 $$
-\rho(t') = U(t', t'_0)\, \rho(t'_0)\, U(t', t'_0)^\dagger,
+\rho(r'_t) = U(r'_t, r'_{t,0})\, \rho(r'_{t,0})\, U(r'_t, r'_{t,0})^\dagger,
 $$
 
-where $U(t', t'_0)$ is the $*$-unitary evolution operator satisfying
+where $U(r'_t, r'_{t,0})$ is the $*$-unitary evolution operator satisfying
 
 $$
-i\hbar\, \frac{d}{dt'} U(t', t'_0) = H\, U(t', t'_0), \qquad U(t'_0, t'_0) = I,
+i\hbar\, \frac{d}{dr'_t} U(r'_t, r'_{t,0}) = H\, U(r'_t, r'_{t,0}), \qquad U(r'_{t,0}, r'_{t,0}) = I,
 $$
 
 with $H$ the Hamiltonian of the system.
@@ -254,40 +254,40 @@ i.e., the Bloch vector becomes $a^{\mathrm{fop}}$.
 
 ### The Schrödinger Picture
 
-In the **Schrödinger picture**, the state of the system evolves in time, and the observables are fixed. For a pure state $|\tilde{Ξ}^{\mathrm{sp}}(t')\rangle$, the evolution is governed by the **Schrödinger equation**:
+In the **Schrödinger picture**, the state of the system evolves in time, and the observables are fixed. For a pure state $|\tilde{Ξ}^{\mathrm{sp}}(r'_t)\rangle$, the evolution is governed by the **Schrödinger equation**:
 
 $$
-\boxed{\;i\hbar\, \frac{\partial}{\partial t'}|\tilde{Ξ}^{\mathrm{sp}}(t')\rangle = H\, |\tilde{Ξ}^{\mathrm{sp}}(t')\rangle\;},
+\boxed{\;i\hbar\, \frac{\partial}{\partial r'_t}|\tilde{Ξ}^{\mathrm{sp}}(r'_t)\rangle = H\, |\tilde{Ξ}^{\mathrm{sp}}(r'_t)\rangle\;},
 $$
 
 where $H$ is the Hamiltonian. The solution is
 
 $$
-|\tilde{Ξ}^{\mathrm{sp}}(t')\rangle = U(t', t'_0)\, |\tilde{Ξ}^{\mathrm{sp}}(t'_0)\rangle,
+|\tilde{Ξ}^{\mathrm{sp}}(r'_t)\rangle = U(r'_t, r'_{t,0})\, |\tilde{Ξ}^{\mathrm{sp}}(r'_{t,0})\rangle,
 $$
 
-with $U(t', t'_0) = \exp\left(-\tfrac{i}{\hbar}H(t' - t'_0)\right)$ for a time-independent Hamiltonian.
+with $U(r'_t, r'_{t,0}) = \exp\left(-\tfrac{i}{\hbar}H(r'_t - r'_{t,0})\right)$ for a time-independent Hamiltonian.
 
-For a density matrix $\rho(t')$, the evolution is given by the **von Neumann equation**:
+For a density matrix $\rho(r'_t)$, the evolution is given by the **von Neumann equation**:
 
 $$
-i\hbar\, \frac{\partial}{\partial t'}\rho(t') = [H, \rho(t')],
+i\hbar\, \frac{\partial}{\partial r'_t}\rho(r'_t) = [H, \rho(r'_t)],
 $$
 
-whose solution is $\rho(t') = U(t', t'_0)\rho(t'_0)U(t', t'_0)^\dagger$.
+whose solution is $\rho(r'_t) = U(r'_t, r'_{t,0})\rho(r'_{t,0})U(r'_t, r'_{t,0})^\dagger$.
 
 ### The Heisenberg Picture
 
 In the **Heisenberg picture**, the state is fixed, and the observables evolve in time:
 
 $$
-A_H(t') = U(t', t'_0)^\dagger\, A\, U(t', t'_0).
+A_H(r'_t) = U(r'_t, r'_{t,0})^\dagger\, A\, U(r'_t, r'_{t,0}).
 $$
 
 The evolution equation is the **Heisenberg equation**:
 
 $$
-i\hbar\, \frac{d}{dt'} A_H(t') = [A_H(t'), H].
+i\hbar\, \frac{d}{dr'_t} A_H(r'_t) = [A_H(r'_t), H].
 $$
 
 The two pictures are related by a $*$-unitary transformation and give the same predictions for physical quantities.
@@ -455,7 +455,7 @@ The standard formalism has several open issues: the measurement problem, the axi
 | $a$, $P_a$ | Eigenvalue (measurement outcome) and its orthogonal projector |
 | $p(a) = \mathrm{Tr}(P_a \rho)$ | Born probability of outcome $a$ |
 | $\langle A\rangle_\rho = \mathrm{Tr}(A\rho)$ | Expectation value of $A$ in state $\rho$ |
-| $U(t',t'_0)$ | $*$-Unitary evolution operator, $U(t'_0,t'_0) = I$ |
+| $U(r'_t,r'_{t,0})$ | $*$-Unitary evolution operator, $U(r'_{t,0},r'_{t,0}) = I$ |
 | $H$ | Hamiltonian |
 | $\hbar$ | Reduced Planck constant |
 | $\lvert\tilde{Ξ}^{\mathrm{sp}}\rangle = \alpha\lvert 0\rangle + \beta\lvert 1\rangle$ | Pure qubit state, $\lvert\alpha\rvert^2 + \lvert\beta\rvert^2 = 1$ |

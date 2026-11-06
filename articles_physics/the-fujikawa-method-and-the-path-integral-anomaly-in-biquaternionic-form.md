@@ -6,7 +6,7 @@ The **Fujikawa method** derives the axial anomaly from the path integral rather 
 
 The derivation has two facts and one regularisation.
 
-- **A symmetry of the action.** A *global* right rotation $\tilde{Ξ}^{\mathrm{sp}}\mapsto\tilde{Ξ}^{\mathrm{sp}}\,e^{\alpha\omega}$ leaves the massless gradient equation invariant, because left and right multiplications commute. The exponent is the pseudoscalar $\omega=-\vec e_z$, so the two values of the field are multiplied by opposite phases: the rotation is the axial one and not a central phase, and the central $i$ stays free. A *local* rotation $\alpha(x)$ leaves the action invariant only up to a term proportional to $\partial\alpha/\partial Q_\mu$, and that term is the axial current; the corresponding Ward identity is the classical one, and the anomaly is the correction to it.
+- **A symmetry of the action.** A *global* right rotation $\tilde{Ξ}^{\mathrm{sp}}\mapsto\tilde{Ξ}^{\mathrm{sp}}\,e^{\alpha\omega}$ leaves the massless gradient equation invariant, because left and right multiplications commute. The exponent is the pseudoscalar $\omega=-\vec e_z$, so the two values of the field are multiplied by opposite phases: the rotation is the axial one and not a central phase, and the central $i$ stays free. A *local* rotation $\alpha(x)$ leaves the action invariant only up to a term proportional to $\partial\alpha/\partial R_\mu$, and that term is the axial current; the corresponding Ward identity is the classical one, and the anomaly is the correction to it.
 - **A transformation of the measure.** The same rotation is a change of the integration variables $\tilde{Ξ}^{\mathrm{sp}},\tilde{Ξ}^{\mathrm{sp}\dagger}$, and the fermion measure $\mathcal{D}\tilde{Ξ}^{\mathrm{sp}}\,\mathcal{D}\tilde{Ξ}^{\mathrm{sp}\dagger}$ picks up the inverse determinant of the rotation. That determinant is the whole story.
 - **A regularisation.** The determinant is the product of the rotation's eigenvalues, one per mode, and it is divergent; it is regulated by a heat-kernel factor $\exp(-\mathcal{H}/M^2)$, evaluated as $M\to\infty$, and the finite remnant is the anomaly.
 
@@ -22,17 +22,17 @@ A section fixes the gradient, the pseudoscalar and the two values, and gives the
 
 **The frame and the symbols.** Every display below is read in the $\mathbb{M}_-$ frame: its derivative, its coordinates and its metric are *Frame and Metric Conventions*, §*The $\mathbb{M}_-$ Frame*, and are not restated here. The biquaternion gradient is
 $$
-\tilde\nabla=e_t\frac{\partial}{\partial Q_t}+\vec e_x\frac{\partial}{\partial Q_x}+\vec e_y\frac{\partial}{\partial Q_y}+\vec e_z\frac{\partial}{\partial Q_z},
+\tilde\nabla=e_t\frac{\partial}{\partial R_t}+\vec e_x\frac{\partial}{\partial R_x}+\vec e_y\frac{\partial}{\partial R_y}+\vec e_z\frac{\partial}{\partial R_z},
 \qquad
-\tilde\nabla^{\natural}=e_t\frac{\partial}{\partial Q_t}-\vec e_x\frac{\partial}{\partial Q_x}-\vec e_y\frac{\partial}{\partial Q_y}-\vec e_z\frac{\partial}{\partial Q_z},
+\tilde\nabla^{\natural}=e_t\frac{\partial}{\partial R_t}-\vec e_x\frac{\partial}{\partial R_x}-\vec e_y\frac{\partial}{\partial R_y}-\vec e_z\frac{\partial}{\partial R_z},
 $$
-and on $\mathbb{M}_-$ the time derivative reads $\partial/\partial Q_t=-\frac{i}{c}\,\partial/\partial t'$ (*Operator and Calculus Conventions*, §*The Gradient*). The d'Alembertian is the quaternionic norm of the gradient, $\Box=\tilde\nabla\tilde\nabla^{\natural}=\tilde\nabla^{\natural}\tilde\nabla=\partial^2/\partial Q_t^2+\Delta_Q$, which on $\mathbb{M}_-$ is $\Delta-c^{-2}\partial^2/\partial {r'_{t}}^2$. The pseudoscalar is $\omega=-\vec e_z$, with $\omega^2=-e_t$; it anticommutes with $\vec e_x$ and $\vec e_y$ and commutes with $\vec e_z$ (*Special Element Conventions*, §*The Chirality Convention*). A contraction of the derivative with a field is the quaternionic form $\langle\tilde\nabla,\tilde J\rangle_{\natural}=\mathrm{Sc}(\tilde\nabla^{\natural}\tilde J)$, an explicit sum over the four coordinates. The pair operator is the corpus's own,
+and on $\mathbb{M}_-$ the time derivative reads $\partial/\partial R_t=-\frac{i}{c}\,\partial/\partial r'_t$ (*Operator and Calculus Conventions*, §*The Gradient*). The d'Alembertian is the quaternionic norm of the gradient, $\Box=\tilde\nabla\tilde\nabla^{\natural}=\tilde\nabla^{\natural}\tilde\nabla=\partial^2/\partial R_t^2+\Delta_Q$, which on $\mathbb{M}_-$ is $\Delta-c^{-2}\partial^2/\partial {r'_{t}}^2$. The pseudoscalar is $\omega=-\vec e_z$, with $\omega^2=-e_t$; it anticommutes with $\vec e_x$ and $\vec e_y$ and commutes with $\vec e_z$ (*Special Element Conventions*, §*The Chirality Convention*). A contraction of the derivative with a field is the quaternionic form $\langle\tilde\nabla,\tilde J\rangle_{\natural}=\mathrm{Sc}(\tilde\nabla^{\natural}\tilde J)$, an explicit sum over the four coordinates. The pair operator is the corpus's own,
 $$
 \mathbb{D}(\tilde{Ξ}^{\mathrm{sp}}_L,\tilde{Ξ}^{\mathrm{sp}}_R)=\bigl(\tilde\nabla\tilde{Ξ}^{\mathrm{sp}}_R,\ \tilde\nabla^{\natural}\tilde{Ξ}^{\mathrm{sp}}_L\bigr),
 \qquad
 \mathbb{D}^2=\Box\,I ,
 $$
-on $\mathbb{B}\oplus\mathbb{B}$ (*Operator and Calculus Conventions*, §*The Pair Operator and Its Symbol*); it is the chiral pair written once, and it is not a frame object. The Dirac bilinear of two fields is written $\tilde{Ξ}^{\mathrm{sp}\dagger}\xi=\mathrm{Sc}(\tilde{Ξ}^{\mathrm{sp}*}\xi\,i\vec e_x)$, with the fixed right multiplier $i\vec e_x$ standing after the product; it is not a derivative, and the multiplier is the same in every term below. The gauge covariant derivative is $D_\mu=\partial/\partial Q_\mu+iϙA_\mu/\hbar$ with $[D_\mu,D_\nu]=iϙF_{\mu\nu}/\hbar$ for the abelian factor, and the gradient form is $\tilde D=\tilde\nabla+iϙ\tilde A$. The fermion measure is written $\mathcal{D}\tilde{Ξ}^{\mathrm{sp}}\,\mathcal{D}\tilde{Ξ}^{\mathrm{sp}\dagger}$. The four-index symbol is the orientation density of the series, taken positive on the identity order, and the field-strength components are $F_{ti}=E_i$ and $F_{ij}=+\epsilon_{ijk}B_k$, every index written low as the companion article writes it. The field invariants $I_1$ and $I_2$ are the instanton article's. Two traces appear below and are kept apart: $\mathrm{tr}$ is the trace of a complex-linear operator on the four coefficients of the field, and $\mathrm{Tr}$ is the functional trace over modes, which is what a determinant produces. Throughout, natural units $\hbar=c=1$ are used, with $c=1/\sqrt{\epsilon\mu}$ the speed of light in the medium and $c_0$ the vacuum value.
+on $\mathbb{B}\oplus\mathbb{B}$ (*Operator and Calculus Conventions*, §*The Pair Operator and Its Symbol*); it is the chiral pair written once, and it is not a frame object. The Dirac bilinear of two fields is written $\tilde{Ξ}^{\mathrm{sp}\dagger}\xi=\mathrm{Sc}(\tilde{Ξ}^{\mathrm{sp}*}\xi\,i\vec e_x)$, with the fixed right multiplier $i\vec e_x$ standing after the product; it is not a derivative, and the multiplier is the same in every term below. The gauge covariant derivative is $D_\mu=\partial/\partial R_\mu+iϙA_\mu/\hbar$ with $[D_\mu,D_\nu]=iϙF_{\mu\nu}/\hbar$ for the abelian factor, and the gradient form is $\tilde D=\tilde\nabla+iϙ\tilde A$. The fermion measure is written $\mathcal{D}\tilde{Ξ}^{\mathrm{sp}}\,\mathcal{D}\tilde{Ξ}^{\mathrm{sp}\dagger}$. The four-index symbol is the orientation density of the series, taken positive on the identity order, and the field-strength components are $F_{ti}=E_i$ and $F_{ij}=+\epsilon_{ijk}B_k$, every index written low as the companion article writes it. The field invariants $I_1$ and $I_2$ are the instanton article's. Two traces appear below and are kept apart: $\mathrm{tr}$ is the trace of a complex-linear operator on the four coefficients of the field, and $\mathrm{Tr}$ is the functional trace over modes, which is what a determinant produces. Throughout, natural units $\hbar=c=1$ are used, with $c=1/\sqrt{\epsilon\mu}$ the speed of light in the medium and $c_0$ the vacuum value.
 
 The framework results used here are those of the companion articles:
 
@@ -50,19 +50,19 @@ The framework results used here are those of the companion articles:
 $$
 \tilde\nabla\tilde{Ξ}^{\mathrm{sp}}=0 ,
 $$
-one operator, one field, first order. This is the source's own equation translated once. The source writes its derivative with one frame object per coordinate; the translation of the time term is the $e_t\,\partial/\partial Q_t$ term of $\tilde\nabla$ with $\partial/\partial Q_t=-\frac{i}{c}\,\partial/\partial t'$, and the translation of each spatial term is the corresponding $\vec e_k\,\partial/\partial Q_k$. Nothing is added and nothing is dropped. The translated form is the only form used below.
+one operator, one field, first order. This is the source's own equation translated once. The source writes its derivative with one frame object per coordinate; the translation of the time term is the $e_t\,\partial/\partial R_t$ term of $\tilde\nabla$ with $\partial/\partial R_t=-\frac{i}{c}\,\partial/\partial r'_t$, and the translation of each spatial term is the corresponding $\vec e_k\,\partial/\partial R_k$. Nothing is added and nothing is dropped. The translated form is the only form used below.
 
 **The square of the gradient is not scalar.** The two products of the gradient with its conjugate are exact and scalar,
 $$
-\tilde\nabla\tilde\nabla^{\natural}=\sum_{\mu,\nu\in\{t,x,y,z\}}\varepsilon_\nu\,e_\mu e_\nu\frac{\partial^2}{\partial Q_\mu\partial Q_\nu}=\Box,
+\tilde\nabla\tilde\nabla^{\natural}=\sum_{\mu,\nu\in\{t,x,y,z\}}\varepsilon_\nu\,e_\mu e_\nu\frac{\partial^2}{\partial R_\mu\partial R_\nu}=\Box,
 \qquad
 \tilde\nabla^{\natural}\tilde\nabla=\Box ,
 $$
-because the terms with two distinct units annihilate one another: the factor $\varepsilon_\nu$ carries exactly the sign that exchanging the two orders requires. Diagonal terms give $\varepsilon_te_t^2\partial^2/\partial Q_t^2+\sum_k\varepsilon_ke_k^2\partial^2/\partial Q_k^2=\partial^2/\partial Q_t^2+\Delta_Q$; mixed terms with one time index vanish because $e_t$ commutes with every unit and $\varepsilon$ is odd on the spatial indices; and mixed terms with two spatial indices vanish because distinct spatial units anticommute. The square of the gradient with itself has no such pairing, because $e_t$ commutes with every unit and the mixed time–space terms add instead of annihilating:
+because the terms with two distinct units annihilate one another: the factor $\varepsilon_\nu$ carries exactly the sign that exchanging the two orders requires. Diagonal terms give $\varepsilon_te_t^2\partial^2/\partial R_t^2+\sum_k\varepsilon_ke_k^2\partial^2/\partial R_k^2=\partial^2/\partial R_t^2+\Delta_Q$; mixed terms with one time index vanish because $e_t$ commutes with every unit and $\varepsilon$ is odd on the spatial indices; and mixed terms with two spatial indices vanish because distinct spatial units anticommute. The square of the gradient with itself has no such pairing, because $e_t$ commutes with every unit and the mixed time–space terms add instead of annihilating:
 $$
-\tilde\nabla^2=\Box-2\Delta_Q+2\sum_k\vec e_k\frac{\partial^2}{\partial Q_t\partial Q_k},
+\tilde\nabla^2=\Box-2\Delta_Q+2\sum_k\vec e_k\frac{\partial^2}{\partial R_t\partial R_k},
 $$
-which is not a scalar. Recomputed on the test field $f=Q_tQ_x+\tfrac{3}{10}Q_y^2-\tfrac{7}{10}Q_xQ_z+\tfrac12$ at $Q=(0.7,0.2,-0.4,0.9)$, the first identity leaves a residual of $3\times10^{-6}$ against $\Box f=0.599996$, and the second returns the scalar part $-0.6=\Box f-2\Delta_Qf$ together with a vector part $2.0\,\vec e_x=2\,\partial^2f/\partial Q_t\partial Q_x$.
+which is not a scalar. Recomputed on the test field $f=Q_tQ_x+\tfrac{3}{10}Q_y^2-\tfrac{7}{10}Q_xQ_z+\tfrac12$ at $Q=(0.7,0.2,-0.4,0.9)$, the first identity leaves a residual of $3\times10^{-6}$ against $\Box f=0.599996$, and the second returns the scalar part $-0.6=\Box f-2\Delta_Qf$ together with a vector part $2.0\,\vec e_x=2\,\partial^2f/\partial R_t\partial R_x$.
 
 **The consequence for the mass.** A single field cannot carry a mass at first order, because there is no scalar to subtract from a square that is not scalar. The massive equation is therefore the chiral pair, and it is the same dynamics written for the two values and not a second one:
 $$
@@ -139,7 +139,7 @@ $$
 \qquad
 \tilde J_5\ \text{the axial current},
 $$
-because the derivative of the rotation at $\alpha=0$ puts $\omega$ on the right of each of the four components of $\tilde\nabla\alpha$. The pseudoscalar therefore stands on the right of the field, exactly where the chirality belongs, and the contraction is the explicit sum $\langle\tilde\nabla\alpha,\tilde J_5\rangle_{\natural}=\sum_\mu(\partial\alpha/\partial Q_\mu)J_{5\mu}$, per the corpus's rule that a contraction names its index. Under the *global* rotation the term is absent, which is the classical statement. A mass term is not invariant,
+because the derivative of the rotation at $\alpha=0$ puts $\omega$ on the right of each of the four components of $\tilde\nabla\alpha$. The pseudoscalar therefore stands on the right of the field, exactly where the chirality belongs, and the contraction is the explicit sum $\langle\tilde\nabla\alpha,\tilde J_5\rangle_{\natural}=\sum_\mu(\partial\alpha/\partial R_\mu)J_{5\mu}$, per the corpus's rule that a contraction names its index. Under the *global* rotation the term is absent, which is the classical statement. A mass term is not invariant,
 $$
 \tilde{Ξ}^{\mathrm{sp}\dagger}_2\,m\,\tilde{Ξ}^{\mathrm{sp}}_2=m\,\tilde{Ξ}^{\mathrm{sp}\dagger}\tilde{Ξ}^{\mathrm{sp}}\,e^{2\alpha\omega}
 =m\,\tilde{Ξ}^{\mathrm{sp}\dagger}\bigl(\cos2\alpha\,\mathbb 1+\sin2\alpha\,\omega\bigr)\tilde{Ξ}^{\mathrm{sp}},
@@ -177,7 +177,7 @@ $$
 \qquad
 a(x)=\lim_{M\to\infty}\mathrm{tr}\bigl[\rho_\omega\,e^{-\mathcal{H}/M^2}\bigr]_x .
 $$
-The factor $2$ in the exponent is the two determinants, one for $\tilde{Ξ}^{\mathrm{sp}}$ and one for $\tilde{Ξ}^{\mathrm{sp}\dagger}$, and $a$ is the regulated trace at coincidence. Matching the measure factor against the change of the action, $\delta S=-\int d^4x\,(\partial\alpha/\partial Q_\mu)\,j_{5\mu}=\int d^4x\,\alpha\,\sum_\mu\partial j_{5\mu}/\partial Q_\mu$, gives $\langle\tilde\nabla,\tilde J_5\rangle_{\natural}=\sum_\mu\partial j_{5\mu}/\partial Q_\mu=2a$. The anomaly density is therefore $A=2a$. The trace $a$ is the index density of the standard module, since $\int a=-(ϙ^2/32\pi^2)\int d^4x\,\epsilon_{\mu\nu\rho\sigma}F_{\mu\nu}F_{\rho\sigma}$ in the normalization of the index section; that is why $\int A=2\int a$ is twice the index up to the sign that the all-low-index symbol carries, the factor two coming from the two determinants and not from the trace. The determinant is formal and divergent: it is the product of the eigenvalues of $U$ over a complete set of modes, one per spacetime point.
+The factor $2$ in the exponent is the two determinants, one for $\tilde{Ξ}^{\mathrm{sp}}$ and one for $\tilde{Ξ}^{\mathrm{sp}\dagger}$, and $a$ is the regulated trace at coincidence. Matching the measure factor against the change of the action, $\delta S=-\int d^4x\,(\partial\alpha/\partial R_\mu)\,j_{5\mu}=\int d^4x\,\alpha\,\sum_\mu\partial j_{5\mu}/\partial R_\mu$, gives $\langle\tilde\nabla,\tilde J_5\rangle_{\natural}=\sum_\mu\partial j_{5\mu}/\partial R_\mu=2a$. The anomaly density is therefore $A=2a$. The trace $a$ is the index density of the standard module, since $\int a=-(ϙ^2/32\pi^2)\int d^4x\,\epsilon_{\mu\nu\rho\sigma}F_{\mu\nu}F_{\rho\sigma}$ in the normalization of the index section; that is why $\int A=2\int a$ is twice the index up to the sign that the all-low-index symbol carries, the factor two coming from the two determinants and not from the trace. The determinant is formal and divergent: it is the product of the eigenvalues of $U$ over a complete set of modes, one per spacetime point.
 
 **The regulator.** To make the determinant finite and preserve gauge invariance, one regulates it with the square of the operator. The square of the pair operator is scalar, $\mathbb{D}^2=\Box I$, so the regulator is the d'Alembertian itself with the connection included,
 $$
@@ -211,7 +211,7 @@ and it is quoted from the literature of §*Further Reading*, not re-derived here
 
 ## The Symbol, the Cone and the Null Bivectors
 
-**The symbol.** Replacing each derivative of the gradient by $ik_\mu$ turns the operator into an element, its *symbol*. On the material sector, where $\partial/\partial Q_t=-\frac{i}{c}\partial/\partial t'$ and a plane wave carries $e^{i(k_0x_0-\vec k\cdot\vec q)}$ with $x_0=c r'_{t}$, the substitution gives
+**The symbol.** Replacing each derivative of the gradient by $ik_\mu$ turns the operator into an element, its *symbol*. On the material sector, where $\partial/\partial R_t=-\frac{i}{c}\partial/\partial r'_t$ and a plane wave carries $e^{i(k_0x_0-\vec k\cdot\vec q)}$ with $x_0=c r'_{t}$, the substitution gives
 $$
 \tilde K=k_0-i\vec k=k_0-i\,(k_x\vec e_x+k_y\vec e_y+k_z\vec e_z),
 \qquad
@@ -255,7 +255,7 @@ $$
 
 ## Comparison with the Diagrammatic Derivation
 
-**The two computations agree, as they must.** The companion article on anomalies computes the divergence of the axial current from the triangle diagram, with one axial and two vector insertions, and obtains the Adler–Bell–Jackiw coefficient. This article obtains the same coefficient as the Jacobian of the measure. Two notational differences separate the two pages and neither touches the coefficient: the charge, which the companion writes $e$ in its result and $ϙ$ in its current, and this article writes $ϙ$ throughout, and the time index, which the companion writes $t'$ and this article writes $t$ for the frame's time coordinate. The contraction, its $+8$, its minus, and the identification with $\vec E\cdot\vec B$ are the same on both pages. The agreement is not a coincidence: both reduce to the same four-index contraction. The triangle computes it against three current insertions; the heat kernel computes it against the squared operator's field-strength term. The contraction is the same, so the coefficient is the same.
+**The two computations agree, as they must.** The companion article on anomalies computes the divergence of the axial current from the triangle diagram, with one axial and two vector insertions, and obtains the Adler–Bell–Jackiw coefficient. This article obtains the same coefficient as the Jacobian of the measure. Two notational differences separate the two pages and neither touches the coefficient: the charge, which the companion writes $e$ in its result and $ϙ$ in its current, and this article writes $ϙ$ throughout, and the time index, which the companion writes $r'_t$ and this article writes $t$ for the frame's time coordinate. The contraction, its $+8$, its minus, and the identification with $\vec E\cdot\vec B$ are the same on both pages. The agreement is not a coincidence: both reduce to the same four-index contraction. The triangle computes it against three current insertions; the heat kernel computes it against the squared operator's field-strength term. The contraction is the same, so the coefficient is the same.
 
 **What each derivation explains.** The diagrammatic derivation explains *what* the anomaly is as a physical process: a triangle of fermions with an axial current and two gauge currents, finite and unrenormalised. The path-integral derivation explains *why* it is unavoidable: the measure is not invariant under the symmetry, and no choice of regulator removes a symmetry the measure does not have. The second explanation is the deeper one, and it is why the anomaly survives any dynamics that leaves the measure intact: confinement, a condensate, or a change of degrees of freedom cannot remove it, which is the content of anomaly matching.
 
@@ -281,7 +281,7 @@ so the density is a constant times the framework's second invariant $I_2$ of the
 
 **Where the $1/16\pi^2$ comes from.** The coefficient is a four-dimensional Gaussian, and it can be read off before any element is touched. In the coincidence limit the free heat kernel is
 $$
-\big\langle x\big|\exp(-\partial^2/M^2)\big|x\big\rangle
+\big\langle r_x\big|\exp(-\partial^2/M^2)\big|r_x\big\rangle
 = \int\frac{d^4p_E}{(2\pi)^4}\,\exp(-p_E^2/M^2)
 = \frac{M^4}{16\pi^2},
 $$
@@ -297,7 +297,7 @@ and the two combine to $\tfrac12\cdot M^{-4}\cdot M^4/16\pi^2=1/32\pi^2$. Two in
 **The integral of the density.** The integrated anomaly is a topological invariant. In the massless theory, where the divergence is the anomaly alone, the total-derivative form and the index of the operator give
 $$
 \int d^4x\,\langle\tilde\nabla,\tilde J_5\rangle_{\natural}
-= \int d^4x\,A(x)
+= \int d^4x\,A(r_x)
 = -\frac{ϙ^2}{16\pi^2}\int d^4x\,\epsilon_{\mu\nu\rho\sigma}F_{\mu\nu}F_{\rho\sigma}
 = -2\,\mathrm{ind}(\mathbb{D}),
 $$
@@ -373,7 +373,7 @@ the framework's own second invariant. The axial divergence is the ABJ form, with
 | $\tilde{Ξ}^{\mathrm{sp}}$ | The biquaternion fermion field, one element of $\mathbb{B}$, with $\tilde{Ξ}^{\mathrm{sp}\dagger}$ its Dirac-conjugate bilinear |
 | $\mathbb{M}_-,\mathbb{M}_+$ | Material and informational sectors (*Frame and Metric Conventions*) |
 | $\tilde\nabla,\tilde\nabla^{\natural}$ | The biquaternionic gradient and its quaternion conjugate (*Operator and Calculus Conventions*, §*The Gradient*) |
-| $\Box=\tilde\nabla\tilde\nabla^{\natural}$ | The d'Alembertian, $\partial^2/\partial Q_t^2+\Delta_Q$; $\Delta-c^{-2}\partial^2/\partial {r'_{t}}^2$ on $\mathbb{M}_-$ |
+| $\Box=\tilde\nabla\tilde\nabla^{\natural}$ | The d'Alembertian, $\partial^2/\partial R_t^2+\Delta_Q$; $\Delta-c^{-2}\partial^2/\partial {r'_{t}}^2$ on $\mathbb{M}_-$ |
 | $\tilde K=k_0-i\vec k$ | The symbol of the gradient on a plane wave |
 | $\omega=-\vec e_z$ | The pseudoscalar, the volume element; $\omega^2=-e_t$, $\omega^{\natural}=-\omega$ |
 | $\tilde{Ξ}^{\mathrm{sp}}_L,\tilde{Ξ}^{\mathrm{sp}}_R$ | The two values: the eigenspaces of right multiplication by $\vec e_z$ with eigenvalues $-i$ and $+i$, each of complex dimension two |

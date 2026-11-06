@@ -29,10 +29,10 @@ Three boundaries are respected. The Klein–Gordon **propagator** and the **scal
 Two conventions are load-bearing and are stated once. The d'Alembertian is the series convention,
 
 $$
-\Box = \tilde{\nabla}\tilde{\nabla}^{\natural} = \tilde{\nabla}^{\natural}\tilde{\nabla} = \partial^2/\partial Q_t^2 + \Delta ,
+\Box = \tilde{\nabla}\tilde{\nabla}^{\natural} = \tilde{\nabla}^{\natural}\tilde{\nabla} = \partial^2/\partial R_t^2 + \Delta ,
 $$
 
-with $Q_t = i c r'_t$, so that each time derivative carries the factor $(ic)^{-1} = -i/c$ when it is written in $t'$ and the time part is $-c^{-2}$ times the second derivative in $t'$. The imaginary unit satisfies $i^2 = -1$, and every product of two of them is reduced before a display is written: the collapse is what turns $(i\omega/c)^2$ into $-\omega^2/c^2$, and what makes $i\,\mathrm{Sc}(\tilde P\tilde{R}_\varphi^{\natural})$ a purely imaginary exponent whose exponential has unit modulus. The mass parameter of the operator pair is measured in inverse-length units; restoring $\hbar$ and $c$, it is the inverse reduced Compton wavelength
+with $Q_t = i c r'_t$, so that each time derivative carries the factor $(ic)^{-1} = -i/c$ when it is written in $r'_t$ and the time part is $-c^{-2}$ times the second derivative in $r'_t$. The imaginary unit satisfies $i^2 = -1$, and every product of two of them is reduced before a display is written: the collapse is what turns $(i\omega/c)^2$ into $-\omega^2/c^2$, and what makes $i\,\mathrm{Sc}(\tilde P\tilde{R}_\varphi^{\natural})$ a purely imaginary exponent whose exponential has unit modulus. The mass parameter of the operator pair is measured in inverse-length units; restoring $\hbar$ and $c$, it is the inverse reduced Compton wavelength
 
 $$
 \mu = \frac{mc}{\hbar},
@@ -48,14 +48,14 @@ $$
 \tilde\nabla\tilde\nabla^\natural = \tilde\nabla^\natural\tilde\nabla = \Box .
 $$
 
-Neither equality is a square, and the distinction is the first thing the algebra contributes. Writing $\tilde\nabla = e_t\partial/\partial Q_t + \vec\nabla$,
+Neither equality is a square, and the distinction is the first thing the algebra contributes. Writing $\tilde\nabla = e_t\partial/\partial R_t + \vec\nabla$,
 
 $$
-\tilde\nabla^2 = \left(\partial^2/\partial Q_t^2 - \lvert\vec\nabla\rvert^2\right)e_t + 2\,\partial/\partial Q_t\,\vec\nabla ,
+\tilde\nabla^2 = \left(\partial^2/\partial R_t^2 - \lvert\vec\nabla\rvert^2\right)e_t + 2\,\partial/\partial R_t\,\vec\nabla ,
 \qquad \lvert\vec\nabla\rvert^2 = \Delta ,
 $$
 
-so $\tilde\nabla^2 \neq \Box$. The spacelike cross terms do cancel, because the three vector units anticommute pairwise and $\vec\nabla\vec\nabla = -\lvert\vec\nabla\rvert^2e_t$ has no vector remainder; the cross term between the timelike direction and the vector part does not, because the timelike direction is carried by the unit $e_t$, which commutes with every $\vec e_k$ instead of anticommuting with it. The conjugate removes that remainder: $\tilde\nabla^\natural$ enters with $-\vec\nabla$, the two mixed terms $-\partial/\partial Q_t\,\vec\nabla$ and $+\vec\nabla\,\partial/\partial Q_t$ cancel, and $\tilde\nabla\tilde\nabla^\natural$ reduces to $(\partial^2/\partial Q_t^2 + \lvert\vec\nabla\rvert^2)e_t$.
+so $\tilde\nabla^2 \neq \Box$. The spacelike cross terms do cancel, because the three vector units anticommute pairwise and $\vec\nabla\vec\nabla = -\lvert\vec\nabla\rvert^2e_t$ has no vector remainder; the cross term between the timelike direction and the vector part does not, because the timelike direction is carried by the unit $e_t$, which commutes with every $\vec e_k$ instead of anticommuting with it. The conjugate removes that remainder: $\tilde\nabla^\natural$ enters with $-\vec\nabla$, the two mixed terms $-\partial/\partial R_t\,\vec\nabla$ and $+\vec\nabla\,\partial/\partial R_t$ cancel, and $\tilde\nabla\tilde\nabla^\natural$ reduces to $(\partial^2/\partial R_t^2 + \lvert\vec\nabla\rvert^2)e_t$.
 
 The conjugate is therefore what completes the square, and the two facts it uses are properties of the basis: $\vec e_x,\vec e_y,\vec e_z$ anticommute pairwise, and $e_t$ commutes with all three. Both are read from the multiplication table, and no second structure is needed. The root of $\Box$ inside the algebra is therefore the pair $(\tilde\nabla,\tilde\nabla^\natural)$, never one gradient alone. No array and no frame enters the computation: a component check in a chosen basis must return the same element, because the basis is not part of the operator, and the reduction below stays with the operator.
 
@@ -98,11 +98,11 @@ Third, the reduction is **linear in the mass squared**. The second-order equatio
 The gradient and its conjugate are
 
 $$
-\tilde{\nabla} = e_t\partial/\partial Q_t + \vec e_x\partial/\partial Q_x + \vec e_y\partial/\partial Q_y + \vec e_z\partial/\partial Q_z,
+\tilde{\nabla} = e_t\partial/\partial R_t + \vec e_x\partial/\partial R_x + \vec e_y\partial/\partial R_y + \vec e_z\partial/\partial R_z,
 $$
 
 $$
-\tilde{\nabla}^{\natural} = e_t\partial/\partial Q_t - \vec e_x\partial/\partial Q_x - \vec e_y\partial/\partial Q_y - \vec e_z\partial/\partial Q_z .
+\tilde{\nabla}^{\natural} = e_t\partial/\partial R_t - \vec e_x\partial/\partial R_x - \vec e_y\partial/\partial R_y - \vec e_z\partial/\partial R_z .
 $$
 
 Both operators act by multiplication, $\tilde\nabla\tilde{Ξ}$ and $\tilde\nabla^{\natural}\tilde{Ξ}$, and two multiplications compose as the multiplication by the product: $\tilde\nabla\tilde\nabla^{\natural}\tilde{Ξ}$ is a single multiplication, by the element $\tilde\nabla\tilde\nabla^{\natural}$, whose value on $\tilde{Ξ}$ is read off once that element is scalar — which it is, and that is what the next display shows.
@@ -110,7 +110,7 @@ Both operators act by multiplication, $\tilde\nabla\tilde{Ξ}$ and $\tilde\nabla
 Their product is central and scalar:
 
 $$
-\tilde{\nabla}\tilde{\nabla}^{\natural} = \partial^2/\partial Q_t^2 + \partial^2/\partial Q_x^2 + \partial^2/\partial Q_y^2 + \partial^2/\partial Q_z^2 = \Box .
+\tilde{\nabla}\tilde{\nabla}^{\natural} = \partial^2/\partial R_t^2 + \partial^2/\partial R_x^2 + \partial^2/\partial R_y^2 + \partial^2/\partial R_z^2 = \Box .
 $$
 
 The cancellation of the mixed terms uses the quaternion multiplication table twice: the spacelike ones cancel because $\{\vec e_j,\vec e_k\} = 0$ for $j\neq k$, the timelike ones because the scalar part commutes with the vector part. This is why $\Box$ is scalar and central, and why it acts on a biquaternion field coefficient by coefficient,
@@ -136,10 +136,10 @@ and the equality of the two expressions is the equation $(\Box - m^2)\tilde{Ξ}^
 The reduction to one spatial dimension isolates the mechanism without the bookkeeping of three. Take
 
 $$
-\tilde{\nabla} = e_t\partial/\partial Q_t + \vec e_x\partial/\partial Q_x, \qquad
-\tilde{\nabla}^{\natural} = e_t\partial/\partial Q_t - \vec e_x\partial/\partial Q_x,
+\tilde{\nabla} = e_t\partial/\partial R_t + \vec e_x\partial/\partial R_x, \qquad
+\tilde{\nabla}^{\natural} = e_t\partial/\partial R_t - \vec e_x\partial/\partial R_x,
 \qquad
-\Box = \partial^2/\partial Q_t^2 + \partial^2/\partial Q_x^2 .
+\Box = \partial^2/\partial R_t^2 + \partial^2/\partial R_x^2 .
 $$
 
 The chiral pair retains its form and the reduction gives $(\Box - m^2)\tilde{Ξ}^{\mathrm{sp}}_{L,R} = 0$ exactly as before. Each half is a whole biquaternion in the reduced theory as in the full one, so the chirality still splits the pair in two and the mass couples the halves exactly as before. The plane-wave substitution gives $\tilde P = i\omega/c\,e_t + k\vec e_x$ and
@@ -160,7 +160,7 @@ The companion article on the Klein–Gordon equation proves an obstruction that 
 
 $$
 (\tilde{\nabla}^{\natural} + A)(\tilde{\nabla} + B)
-= \Box + (A + B)\,\partial/\partial Q_t + \sum_{k=x,y,z}\left(A\vec e_k - \vec e_k B\right)\partial/\partial Q_k + AB,
+= \Box + (A + B)\,\partial/\partial R_t + \sum_{k=x,y,z}\left(A\vec e_k - \vec e_k B\right)\partial/\partial R_k + AB,
 $$
 
 so cancelling the first-order terms requires $B = -A$ together with $A\vec e_k + \vec e_k A = 0$ for $k = x,y,z$. An element that anticommutes with all three quaternion units must vanish, and the reason is visible one unit at a time: the condition for $\vec e_k$ removes the scalar coefficient together with the coefficient of $\vec e_k$, so the three conditions hold together only on the zero element. With $A = 0$ the constant term is $AB = -A^2 = 0$, which cannot equal $-\mu^2$ for $\mu\neq0$, and no scalar factorisation exists.
@@ -238,13 +238,13 @@ Write the four-wavevector and the four-position as
 $$
 \tilde P = i\frac{\omega}{c}e_t + \vec k\in\mathbb{M}_-,
 \qquad
-\tilde R_\varphi = i c r'_t\,e_t + \vec x\in\mathbb{M}_-,
+\tilde R_\varphi = i c r'_t\,e_t + \vec r\in\mathbb{M}_-,
 $$
 
-with $\vec k = k_1\vec e_x + k_2\vec e_y + k_3\vec e_z$ and $\vec x = r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z$. Here $\vec k^2$ abbreviates the sum $k_1^2+k_2^2+k_3^2$ of the squares of the components, not the quaternion product, which is its negative, $\vec k\,\vec k = -\vec k^2e_t$. The phase is $\mathrm{Sc}(\tilde P\tilde{R}_\varphi^{\natural}) = \vec k\cdot\vec x - \omega t'$, the scalar part of the product with the conjugate four-position. The exponent $i\,\mathrm{Sc}(\tilde P\tilde{R}_\varphi^{\natural})$ is a purely imaginary central element, so the exponential is central and differentiates as an ordinary exponential. On a plane wave,
+with $\vec k = k_1\vec e_x + k_2\vec e_y + k_3\vec e_z$ and $\vec r = r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z$. Here $\vec k^2$ abbreviates the sum $k_1^2+k_2^2+k_3^2$ of the squares of the components, not the quaternion product, which is its negative, $\vec k\,\vec k = -\vec k^2e_t$. The phase is $\mathrm{Sc}(\tilde P\tilde{R}_\varphi^{\natural}) = \vec k\cdot\vec r - \omega r'_t$, the scalar part of the product with the conjugate four-position. The exponent $i\,\mathrm{Sc}(\tilde P\tilde{R}_\varphi^{\natural})$ is a purely imaginary central element, so the exponential is central and differentiates as an ordinary exponential. On a plane wave,
 
 $$
-\partial/\partial t' \longmapsto -i\omega, \qquad \partial/\partial x_k\longmapsto ik_k, \qquad \partial/\partial Q_t \longmapsto -\frac{\omega}{c},
+\partial/\partial r'_t \longmapsto -i\omega, \qquad \partial/\partial x_k\longmapsto ik_k, \qquad \partial/\partial R_t \longmapsto -\frac{\omega}{c},
 $$
 
 and therefore
@@ -271,9 +271,9 @@ $$
 
 which is $E^2 = \vec p^2c^2 + m^2c^4$ under $E = \hbar\omega$, $\vec p = \hbar\vec k$ and $\mu = mc/\hbar$. The sign is the series sign and is consistent with the Klein–Gordon article: the operator $\Box - \mu^2$ vanishes on the same shell on which the biquaternion norm equals $-\mu^2$.
 
-The kernel of the square is larger than the kernel of the pair, and the difference is the information the square discards. For a fixed three-momentum $\vec p$, a **scalar** field obeying the Klein–Gordon equation has a two-dimensional complex solution space, spanned by the positive- and negative-frequency modes $\exp(\mp i(Et'-\vec p\cdot\vec x))$. A biquaternion field has four complex coefficients, and $(\Box - \mu^2)$ acts coefficient by coefficient without mixing them, so the same pair of modes occurs once for each coefficient: an eight-dimensional complex solution space at fixed $\vec p$. The pair carries two such fields, so its second-order solution space at fixed $\vec p$ is sixteen-dimensional.
+The kernel of the square is larger than the kernel of the pair, and the difference is the information the square discards. For a fixed three-momentum $\vec p$, a **scalar** field obeying the Klein–Gordon equation has a two-dimensional complex solution space, spanned by the positive- and negative-frequency modes $\exp(\mp i(Er'_t-\vec p\cdot\vec r))$. A biquaternion field has four complex coefficients, and $(\Box - \mu^2)$ acts coefficient by coefficient without mixing them, so the same pair of modes occurs once for each coefficient: an eight-dimensional complex solution space at fixed $\vec p$. The pair carries two such fields, so its second-order solution space at fixed $\vec p$ is sixteen-dimensional.
 
-The first-order equation selects **half** of that space, and its solution is fixed by one half alone. Given $\tilde{Ξ}^{\mathrm{sp}}_R$, the first member defines $\tilde{Ξ}^{\mathrm{sp}}_L = m^{-1}\tilde\nabla\tilde{Ξ}^{\mathrm{sp}}_R$, and the second member then holds exactly when $(\Box - \mu^2)\tilde{Ξ}^{\mathrm{sp}}_R = 0$. On the mass shell at fixed $\vec p$, $\tilde{Ξ}^{\mathrm{sp}}_R$ is an arbitrary element of $\mathbb{B}$ at each frequency sign — four complex coefficients at $\exp(-i(Et'-\vec p\cdot\vec x))$ and four at $\exp(+i(Et'-\vec p\cdot\vec x))$ — so the pair's solution space is eight-dimensional, half of the sixteen. Each of the eight modes is annihilated by $\Box - \mu^2$, because that operator acts on each coefficient separately and the plane wave is its eigenfunction, but the converse fails: a general second-order solution of the pair is a combination of **sixteen** independent modes with arbitrary coefficients, and the two members cut that space down to eight by relating the halves at each frequency. The square therefore has a kernel twice as large as the pair's; it is a necessary condition, not a sufficient one.
+The first-order equation selects **half** of that space, and its solution is fixed by one half alone. Given $\tilde{Ξ}^{\mathrm{sp}}_R$, the first member defines $\tilde{Ξ}^{\mathrm{sp}}_L = m^{-1}\tilde\nabla\tilde{Ξ}^{\mathrm{sp}}_R$, and the second member then holds exactly when $(\Box - \mu^2)\tilde{Ξ}^{\mathrm{sp}}_R = 0$. On the mass shell at fixed $\vec p$, $\tilde{Ξ}^{\mathrm{sp}}_R$ is an arbitrary element of $\mathbb{B}$ at each frequency sign — four complex coefficients at $\exp(-i(Er'_t-\vec p\cdot\vec r))$ and four at $\exp(+i(Er'_t-\vec p\cdot\vec r))$ — so the pair's solution space is eight-dimensional, half of the sixteen. Each of the eight modes is annihilated by $\Box - \mu^2$, because that operator acts on each coefficient separately and the plane wave is its eigenfunction, but the converse fails: a general second-order solution of the pair is a combination of **sixteen** independent modes with arbitrary coefficients, and the two members cut that space down to eight by relating the halves at each frequency. The square therefore has a kernel twice as large as the pair's; it is a necessary condition, not a sufficient one.
 
 The same count can be read off the algebra. The square is $\Box - \mu^2$ acting in each half separately, and it annihilates each half independently; the first-order pair is the same operator with the two gradients exchanged between the halves and set equal to $m\tilde{Ξ}^{\mathrm{sp}}$, which locks the two halves together. The square forgets the lock, and the lost information is exactly the relation that the lock imposes.
 
@@ -363,16 +363,16 @@ Take the generator to be the Yukawa potential, the static spherically symmetric 
 $$
 \tilde{Ξ}^{\mathrm{sp}}_R = \frac{e^{-mr}}{r},
 \qquad
-r = \lvert\vec x\rvert .
+r = \lvert\vec r\rvert .
 $$
 
 It solves the equation because $\Delta\left(e^{-mr}/r\right) = m^2e^{-mr}/r$ away from the origin, which was checked symbolically. The definition gives the second half in closed form:
 
 $$
 \tilde{Ξ}^{\mathrm{sp}}_L = \frac{1}{m}\vec\nabla\frac{e^{-mr}}{r}
-= -\frac{(1+mr)\,e^{-mr}}{m r^3}\,\vec x ,
+= -\frac{(1+mr)\,e^{-mr}}{m r^3}\,\vec r ,
 \qquad
-\vec x = r_x\,\vec e_x + r_y\,\vec e_y + r_z\,\vec e_z ,
+\vec r = r_x\,\vec e_x + r_y\,\vec e_y + r_z\,\vec e_z ,
 $$
 
 and the pair is exact: the first member holds by construction and the second, $\tilde\nabla^{\natural}\tilde{Ξ}^{\mathrm{sp}}_L = m\tilde{Ξ}^{\mathrm{sp}}_R$, was checked symbolically term by term. Three features belong to the algebra.
@@ -392,7 +392,7 @@ positive everywhere, integrable at infinity, singular at the origin as $1/r^2$. 
 
 ### What the Correspondence Does Not Give
 
-1. **No new solutions, and no privileged half.** The bijection repackages the free solution space. It also does not make the first half the more fundamental object, because the split is symmetric: parity sends $\tilde\nabla$ to $\tilde\nabla^{\natural}$ and back, so if $(\tilde{Ξ}^{\mathrm{sp}}_R,\tilde{Ξ}^{\mathrm{sp}}_L)$ solves the pair then so does $(\tilde{Ξ}^{\mathrm{sp}}_L,\tilde{Ξ}^{\mathrm{sp}}_R)$ composed with $\vec x\mapsto-\vec x$, which was checked on the symbol of the pair at both frequency signs. Kassandrov records the same exchange in external fields, where the halves trade places for anti-self-dual backgrounds.
+1. **No new solutions, and no privileged half.** The bijection repackages the free solution space. It also does not make the first half the more fundamental object, because the split is symmetric: parity sends $\tilde\nabla$ to $\tilde\nabla^{\natural}$ and back, so if $(\tilde{Ξ}^{\mathrm{sp}}_R,\tilde{Ξ}^{\mathrm{sp}}_L)$ solves the pair then so does $(\tilde{Ξ}^{\mathrm{sp}}_L,\tilde{Ξ}^{\mathrm{sp}}_R)$ composed with $\vec r\mapsto-\vec r$, which was checked on the symbol of the pair at both frequency signs. Kassandrov records the same exchange in external fields, where the halves trade places for anti-self-dual backgrounds.
 2. **It fails under minimal coupling.** With $\tilde\nabla\mapsto\tilde\nabla - ie\tilde A$ the two generalized gradients stop commuting, $\tilde\nabla^{\mathrm{gco},\natural}\tilde\nabla^{\mathrm{gco}}\neq\tilde\nabla^{\mathrm{gco}}\tilde\nabla^{\mathrm{gco},\natural}$, and what their commutator carries is the field strength; the product is then no longer the central scalar and the substitution no longer closes. A reduction survives only in a background whose complex field is (anti)self-dual, which is the boundary the hydrogen article meets in its own open questions.
 3. **No physical content is added.** The distribution of the free modes over the mass shell, the amplitude of each half, the chirality of each half: all unchanged. What the section adds is the sentence that can be said about the pair once it is read as one equation and one definition — the second half is the gradient of the first.
 
@@ -400,7 +400,7 @@ The source builds infinite chains of solutions by feeding the generated half bac
 
 ## Summary
 
-The biquaternionic Dirac equation is the first-order pair $\tilde{\nabla}\tilde{Ξ}^{\mathrm{sp}}_R = m\tilde{Ξ}^{\mathrm{sp}}_L$, $\tilde{\nabla}^{\natural}\tilde{Ξ}^{\mathrm{sp}}_L = m\tilde{Ξ}^{\mathrm{sp}}_R$. Applying $\tilde{\nabla}^{\natural}$ to the first member and substituting the second gives $\Box\tilde{Ξ}^{\mathrm{sp}}_R = m^2\tilde{Ξ}^{\mathrm{sp}}_R$, and symmetrically for $\tilde{Ξ}^{\mathrm{sp}}_L$; both chiral halves obey the Klein–Gordon equation $(\Box - m^2)\tilde{Ξ}^{\mathrm{sp}} = 0$ with the series d'Alembertian $\Box = \partial^2/\partial Q_t^2 + \Delta$, which in physical units is $(\Box - m^2c^2/\hbar^2)\tilde{Ξ}^{\mathrm{sp}} = 0$. The square is not the plain square: $\tilde\nabla^2 \neq \Box$, because the timelike unit $e_t$ commutes with the vector units and leaves the mixed term $2\,\partial/\partial Q_t\,\vec\nabla$, and it is the conjugate product $\tilde\nabla\tilde\nabla^\natural$ that cancels it. The conjugate is what completes the square, and the two facts it uses — the pairwise anticommutation of the three vector units and the commuting of $e_t$ — are read from the multiplication table.
+The biquaternionic Dirac equation is the first-order pair $\tilde{\nabla}\tilde{Ξ}^{\mathrm{sp}}_R = m\tilde{Ξ}^{\mathrm{sp}}_L$, $\tilde{\nabla}^{\natural}\tilde{Ξ}^{\mathrm{sp}}_L = m\tilde{Ξ}^{\mathrm{sp}}_R$. Applying $\tilde{\nabla}^{\natural}$ to the first member and substituting the second gives $\Box\tilde{Ξ}^{\mathrm{sp}}_R = m^2\tilde{Ξ}^{\mathrm{sp}}_R$, and symmetrically for $\tilde{Ξ}^{\mathrm{sp}}_L$; both chiral halves obey the Klein–Gordon equation $(\Box - m^2)\tilde{Ξ}^{\mathrm{sp}} = 0$ with the series d'Alembertian $\Box = \partial^2/\partial R_t^2 + \Delta$, which in physical units is $(\Box - m^2c^2/\hbar^2)\tilde{Ξ}^{\mathrm{sp}} = 0$. The square is not the plain square: $\tilde\nabla^2 \neq \Box$, because the timelike unit $e_t$ commutes with the vector units and leaves the mixed term $2\,\partial/\partial R_t\,\vec\nabla$, and it is the conjugate product $\tilde\nabla\tilde\nabla^\natural$ that cancels it. The conjugate is what completes the square, and the two facts it uses — the pairwise anticommutation of the three vector units and the commuting of $e_t$ — are read from the multiplication table.
 
 On the pair the same square is written as one operator. The pair operator $\mathbb{D}$, which exchanges the two chiral halves, gives $\Box$ in each half, because each half is acted on by one product of the gradient with its conjugate; the mass is the same scalar in both halves, so the single equation $(\mathbb{D} - m)\tilde{Ξ}^{\mathrm{sp}} = 0$ splits by chirality into the pair, and $(\mathbb{D} - m)(\mathbb{D} + m)$ is $\Box - m^2$ on each half. The two products are formed at once here, one per half, and the cancellation is the conjugate cancellation of the algebra; what the pair adds is the chirality that the square then loses.
 
@@ -408,7 +408,7 @@ The square root is not scalar. The companion article on the Klein–Gordon equat
 
 The square carries the mass shell $\tilde P\tilde P^{\natural} = -\mu^2$, hence $E^2 = \vec p^2c^2 + m^2c^4$, and the mass-squared coefficient of the second-order operator; it does not carry the sign of the mass, the chirality of each half, or the relation between the halves that selects the first-order solution space from the larger second-order one. At fixed three-momentum the pair's second-order space has complex dimension sixteen and the first-order equation selects eight of them, so the square is a necessary and not a sufficient condition. The Klein–Gordon operator is the bosonic shadow of a first-order object that exchanges the two halves.
 
-The converse holds exactly for the free pair. Read the first member as a definition, $\tilde{Ξ}^{\mathrm{sp}}_L = \frac{1}{m}\tilde\nabla\tilde{Ξ}^{\mathrm{sp}}_R$; the second member then becomes $(\Box - m^2)\tilde{Ξ}^{\mathrm{sp}}_R = 0$, so the free Dirac solutions stand in bijection with the free Klein–Gordon solutions of one chiral half, and the second half is the gradient of the first. In this two-term form there is no gauge freedom, because the only shift the gradient annihilates is the massless Weyl field, which takes the potential off the mass shell; the source's four-scalar form of the same construction does carry the residual gauge $\xi^{\mathrm{scl}}\mapsto\xi^{\mathrm{scl}}+\kappa$ with $D^*\kappa = 0$, and that is what earns the phrase *the Dirac field is a gauge field*. The correspondence is exact for the free field and stops at minimal coupling, where the commutator of the two generalized gradients is the field strength. Its smallest illustration is the static Yukawa pair, generator $e^{-mr}/r$ and second half $-(1+mr)e^{-mr}\vec x/(m r^3)$, on which the Dirac density is positive definite and the Klein–Gordon density vanishes.
+The converse holds exactly for the free pair. Read the first member as a definition, $\tilde{Ξ}^{\mathrm{sp}}_L = \frac{1}{m}\tilde\nabla\tilde{Ξ}^{\mathrm{sp}}_R$; the second member then becomes $(\Box - m^2)\tilde{Ξ}^{\mathrm{sp}}_R = 0$, so the free Dirac solutions stand in bijection with the free Klein–Gordon solutions of one chiral half, and the second half is the gradient of the first. In this two-term form there is no gauge freedom, because the only shift the gradient annihilates is the massless Weyl field, which takes the potential off the mass shell; the source's four-scalar form of the same construction does carry the residual gauge $\xi^{\mathrm{scl}}\mapsto\xi^{\mathrm{scl}}+\kappa$ with $D^*\kappa = 0$, and that is what earns the phrase *the Dirac field is a gauge field*. The correspondence is exact for the free field and stops at minimal coupling, where the commutator of the two generalized gradients is the field strength. Its smallest illustration is the static Yukawa pair, generator $e^{-mr}/r$ and second half $-(1+mr)e^{-mr}\vec r/(m r^3)$, on which the Dirac density is positive definite and the Klein–Gordon density vanishes.
 
 ## Summary of Notation
 
@@ -420,14 +420,14 @@ The converse holds exactly for the free pair. Read the first member as a definit
 | $\mathbb{M}_-$, $\mathbb{M}_+$ | Anti-Hermitian (material) and Hermitian (informational) sectors |
 | $\mathbb{D}$ | Pair operator on $\mathbb{B}\oplus\mathbb{B}$, $\mathbb{D}(\tilde{Ξ}^{\mathrm{sp}}_L,\tilde{Ξ}^{\mathrm{sp}}_R) = (\tilde\nabla\tilde{Ξ}^{\mathrm{sp}}_R,\tilde\nabla^{\natural}\tilde{Ξ}^{\mathrm{sp}}_L)$; it exchanges the chiral halves, $\mathbb{D}^2$ is $\Box$ in each half, and $(\mathbb{D} - m)\tilde{Ξ}^{\mathrm{sp}} = 0$ is the pair |
 | $i\tilde{Ζ}_{\mathrm{ad}}$ | Central grading of the complexified algebra, outside $\mathbb{B}$; the signs $-1$ and $+1$ of the pair are its image |
-| $\tilde{\nabla} = e_t\partial/\partial Q_t + \sum_{k=x,y,z}\vec e_k\,\partial/\partial Q_k$ | Biquaternionic gradient, the one-sided Dirac operator, acting by multiplication on the left |
+| $\tilde{\nabla} = e_t\partial/\partial R_t + \sum_{k=x,y,z}\vec e_k\,\partial/\partial R_k$ | Biquaternionic gradient, the one-sided Dirac operator, acting by multiplication on the left |
 | $\tilde{\nabla}^{\natural}$ | Quaternion conjugate gradient |
-| $\vec\nabla = \sum_{k=x,y,z}\vec e_k\,\partial/\partial Q_k$ | Vector part of the gradient, $\lvert\vec\nabla\rvert^2 = \Delta$ |
-| $\tilde{\nabla}^2 = \left(\partial^2/\partial Q_t^2 - \lvert\vec\nabla\rvert^2\right)e_t + 2\,\partial/\partial Q_t\,\vec\nabla$ | Square of the gradient alone; non-central, with a vector remainder |
-| $\Box = \tilde{\nabla}\tilde{\nabla}^{\natural} = \tilde{\nabla}^{\natural}\tilde{\nabla} = \partial^2/\partial Q_t^2 + \Delta$ | d'Alembertian, series convention |
+| $\vec\nabla = \sum_{k=x,y,z}\vec e_k\,\partial/\partial R_k$ | Vector part of the gradient, $\lvert\vec\nabla\rvert^2 = \Delta$ |
+| $\tilde{\nabla}^2 = \left(\partial^2/\partial R_t^2 - \lvert\vec\nabla\rvert^2\right)e_t + 2\,\partial/\partial R_t\,\vec\nabla$ | Square of the gradient alone; non-central, with a vector remainder |
+| $\Box = \tilde{\nabla}\tilde{\nabla}^{\natural} = \tilde{\nabla}^{\natural}\tilde{\nabla} = \partial^2/\partial R_t^2 + \Delta$ | d'Alembertian, series convention |
 | $\langle\tilde{Q}\rangle_{\natural} = \tilde{Q}\tilde{Q}^{\natural} = \sum_\mu Q_\mu^2$ | Biquaternion norm |
 | $\tilde P = i\omega/c\,e_t + \vec k$ | Four-wavevector, $\tilde P\tilde P^{\natural} = -\mu^2$ |
-| $\tilde R_\varphi = i c r'_t\,e_t + \vec x$, with $\vec x = r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z$ | Four-position, phase $\mathrm{Sc}(\tilde P\tilde{R}_\varphi^{\natural}) = \vec k\cdot\vec x - \omega t'$ |
+| $\tilde R_\varphi = i c r'_t\,e_t + \vec r$, with $\vec r = r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z$ | Four-position, phase $\mathrm{Sc}(\tilde P\tilde{R}_\varphi^{\natural}) = \vec k\cdot\vec r - \omega r'_t$ |
 | $\mu = mc/\hbar$ | Mass parameter of the operator pair (inverse reduced Compton wavelength) |
 | $\tilde{\nabla}\tilde{Ξ}^{\mathrm{sp}}_R = m\tilde{Ξ}^{\mathrm{sp}}_L$, $\tilde{\nabla}^{\natural}\tilde{Ξ}^{\mathrm{sp}}_L = m\tilde{Ξ}^{\mathrm{sp}}_R$ | The one-sided pair; linear, with the mass the same scalar in each half |
 | $\tilde{Ξ}^{\mathrm{sp}}_L = \frac{1}{m}\tilde\nabla\tilde{Ξ}^{\mathrm{sp}}_R$ | The second half as the gradient of the first; the pair's equivalent form, exact whenever $(\Box - m^2)\tilde{Ξ}^{\mathrm{sp}}_R = 0$ |

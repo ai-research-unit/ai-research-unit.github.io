@@ -184,9 +184,9 @@ These are three different maps, but only two distinct actions on the scalar line
 With the value space fixed, the scalar field is written down at once. A spin-$0$ field of mass $m$ is a function into the centre,
 
 $$
-\tilde{Ξ}(x)=\xi^{\mathrm{scl}}(x)\,e_t,
+\tilde{Ξ}(r_x)=\xi^{\mathrm{scl}}(r_x)\,e_t,
 \qquad
-\xi^{\mathrm{scl}}(x)\in\mathbb{C},
+\xi^{\mathrm{scl}}(r_x)\in\mathbb{C},
 $$
 
 and it obeys the Klein–Gordon equation in the form of the companion article,
@@ -203,11 +203,11 @@ $$
 
 with the biquaternion writing carrying no additional content. This is the honest verdict of the companion article, and the algebra of the present article says why it must be so: there is no axis in the field for any non-central algebraic structure to act on.
 
-The plane-wave solutions exhibit the same point. With the four-position $\tilde R_\varphi$ and the four-wavevector $\tilde P/\hbar$ in the material sector, the phase is the real scalar $\mathrm{Sc}(\tilde P\tilde{R}_\varphi^{\natural})/\hbar=\vec k\cdot\vec x-\omega t'$, and the positive-frequency solution is
+The plane-wave solutions exhibit the same point. With the four-position $\tilde R_\varphi$ and the four-wavevector $\tilde P/\hbar$ in the material sector, the phase is the real scalar $\mathrm{Sc}(\tilde P\tilde{R}_\varphi^{\natural})/\hbar=\vec k\cdot\vec r-\omega r'_t$, and the positive-frequency solution is
 
 $$
 \tilde{Ξ}=\xi^{\mathrm{scl}}_0\,\exp\!\left(i\,\mathrm{Sc}(\tilde P\tilde{R}_\varphi^{\natural})/\hbar\right)e_t
-=\xi^{\mathrm{scl}}_0\,\exp\!\left(i(\vec k\cdot\vec x-\omega t')\right)e_t .
+=\xi^{\mathrm{scl}}_0\,\exp\!\left(i(\vec k\cdot\vec r-\omega r'_t)\right)e_t .
 $$
 
 The exponential is central. The mass-shell condition is the biquaternion norm of the four-wavevector,

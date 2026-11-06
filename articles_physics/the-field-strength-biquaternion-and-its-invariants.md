@@ -37,7 +37,7 @@ so $\tilde{F}$ is a **pure-vector** biquaternion. Its three complex components $
 
 The normalization factors $\sqrt{\epsilon}$ and $\sqrt{\mu}$ are the natural ones for a medium. Each term has the dimension of the square root of an energy density, since $\epsilon E^2$ and $\mu H^2$ are both energy densities; consequently $\tilde{F}$ has dimension $\sqrt{\text{energy density}}$, and the biquaternion norm calculated below has the dimension of an energy density. With the constitutive relation $\vec B = \mu\vec H$ the magnetic term may also be written $\sqrt{\mu}\,\vec H = \vec B/\sqrt{\mu}$, so the field strength can equally be regarded as the pair $(\sqrt{\epsilon}\,\vec E, \vec B/\sqrt{\mu})$.
 
-The field strength is not an independent object: it is obtained from the potential biquaternion $\tilde{A} = i\,a'_t + \vec A$ by differentiation with the gradient $\tilde{\nabla}$ of *Operator and Calculus Conventions*, §*The Gradient*, whose conjugate is $\tilde{\nabla}^{\natural}$ and whose d'Alembertian is $\Box=\tilde{\nabla}\tilde{\nabla}^{\natural}=\partial^2/\partial Q_t^2+\Delta_Q$. The construction is
+The field strength is not an independent object: it is obtained from the potential biquaternion $\tilde{A} = i\,a'_t + \vec A$ by differentiation with the gradient $\tilde{\nabla}$ of *Operator and Calculus Conventions*, §*The Gradient*, whose conjugate is $\tilde{\nabla}^{\natural}$ and whose d'Alembertian is $\Box=\tilde{\nabla}\tilde{\nabla}^{\natural}=\partial^2/\partial R_t^2+\Delta_Q$. The construction is
 
 $$
 \tilde{F} = \frac{1}{\sqrt{\mu}}\Bigl(\tilde{\nabla}^{\natural}\tilde{A} - \mathrm{Sc}\!\left(\tilde{\nabla}^{\natural}\tilde{A}\right)\Bigr).
@@ -48,14 +48,14 @@ This is the vector part of $\tilde{\nabla}^{\natural}\tilde{A}$ divided by $\sqr
 In tensor language the same object is the antisymmetric rank-two tensor
 
 $$
-F_{\mu\nu} = \frac{\partial A_\nu}{\partial Q_\mu} - \frac{\partial A_\mu}{\partial Q_\nu},
+F_{\mu\nu} = \frac{\partial A_\nu}{\partial R_\mu} - \frac{\partial A_\mu}{\partial R_\nu},
 \qquad
 F_{0k} = \frac{iE_k}{c},
 \qquad
 F_{jk} = \epsilon_{jkl}B_l .
 $$
 
-It has six independent components — three electric and three magnetic — which is exactly the information carried by the three complex components $F_k$ of the pure-vector biquaternion. The six components are the six planes of the next section, each a product of two units: the three $F_{0k}$ sit on the planes that contain the time direction and the three $F_{jk}$ on the purely spatial planes. The identification is exact, with one constant: $\mathrm{Vect}(\tilde{\nabla}^{\natural}\tilde{A})=\sqrt{\mu}\,\tilde{F}$ identically. Indeed, $\partial/\partial Q_t=-(i/c)\partial/\partial t'$ and $A_0=+i\,a'_t$ give $\mathrm{Vect}(\tilde{\nabla}^{\natural}\tilde{A})=(i/c)\vec E-\vec B$, and $\sqrt{\mu}/c=\mu\sqrt{\epsilon}$. The component formulas above and the combination $F_k = i\sqrt{\epsilon}E_k - \sqrt{\mu}H_k$ are then the same statement read component by component.
+It has six independent components — three electric and three magnetic — which is exactly the information carried by the three complex components $F_k$ of the pure-vector biquaternion. The six components are the six planes of the next section, each a product of two units: the three $F_{0k}$ sit on the planes that contain the time direction and the three $F_{jk}$ on the purely spatial planes. The identification is exact, with one constant: $\mathrm{Vect}(\tilde{\nabla}^{\natural}\tilde{A})=\sqrt{\mu}\,\tilde{F}$ identically. Indeed, $\partial/\partial R_t=-(i/c)\partial/\partial r'_t$ and $A_0=+i\,a'_t$ give $\mathrm{Vect}(\tilde{\nabla}^{\natural}\tilde{A})=(i/c)\vec E-\vec B$, and $\sqrt{\mu}/c=\mu\sqrt{\epsilon}$. The component formulas above and the combination $F_k = i\sqrt{\epsilon}E_k - \sqrt{\mu}H_k$ are then the same statement read component by component.
 
 ## The Place of the Field Strength in the Algebra
 
@@ -112,7 +112,7 @@ The scalar subspace $\mathbb{C}_{\mathbb{B}}$ receives no contribution, which is
 $$
 \{e_t\,i\vec e_k\}_{k=x,y,z}=\{i\vec e_x,i\vec e_y,i\vec e_z\},
 \qquad
-\{(i\vec e_j)(i\vec e_k)\}_{(j,k)=(y,x),(z,y),(x,z)}=\{\vec e_z,\vec e_x,\vec e_y\},
+\{(i\vec e_j)(i\vec e_k)\}_{(j,k)=(r_y,r_x),(r_z,r_y),(r_x,r_z)}=\{\vec e_z,\vec e_x,\vec e_y\},
 $$
 
 using $(i\vec e_j)(i\vec e_k)=-\vec e_j\vec e_k$ and $i^2=-1$. The first three, the planes containing the time direction, have the form $e_t\,i\vec e_k = i\vec e_k$ and are the pure **imaginary** vectors, that is the real span of $\{i\vec e_k\} = \mathrm{Vect}(\mathbb{B})\cap\mathbb{M}_+$. The last three, the purely spatial planes, have the form $(i\vec e_j)(i\vec e_k)$ and are the pure **real** vectors, that is the real span of $\{\vec e_k\} = \mathrm{Vect}(\mathbb{B})\cap\mathbb{M}_-$.
@@ -319,10 +319,10 @@ $$
 
 where $(i\sqrt{\epsilon})^2=-\epsilon$ by $i^2=-1$, in agreement with the direct computation. The two invariants are the real and imaginary parts of the complex number $\vec N\cdot\vec N$, up to constant factors.
 
-The Riemann–Silberstein vector also linearizes the source-free field equations. In vacuum or in a homogeneous medium with no free sources, Maxwell's equations give $\nabla\times\vec E = -\partial\vec B/\partial t'$ and $\nabla\times\vec B = c^{-2}\partial\vec E/\partial t'$, and combining these,
+The Riemann–Silberstein vector also linearizes the source-free field equations. In vacuum or in a homogeneous medium with no free sources, Maxwell's equations give $\nabla\times\vec E = -\partial\vec B/\partial r'_t$ and $\nabla\times\vec B = c^{-2}\partial\vec E/\partial r'_t$, and combining these,
 
 $$
-i\,\frac{\partial\vec N}{\partial t'} = c\,\nabla\times\vec N,
+i\,\frac{\partial\vec N}{\partial r'_t} = c\,\nabla\times\vec N,
 \qquad
 \nabla\cdot\vec N = 0 .
 $$
@@ -377,7 +377,7 @@ $$
 
 is the classical **electric–magnetic duality** transformation.
 
-The transformation is a symmetry of the **source-free** Maxwell equations. Writing $\vec E_\theta,\vec B_\theta$ for the rotated fields, the two equations are preserved, $\nabla\times\vec E_\theta = -\partial\vec B_\theta/\partial t'$ and $\nabla\times\vec B_\theta = c^{-2}\partial\vec E_\theta/\partial t'$, the two terms of each matching after use of $c^2 = 1/(\epsilon\mu)$. With free electric charges and currents present, the transformation is *not* a symmetry: it would map an electric charge into a magnetic charge. Duality relates solutions of the source-free equations, and it relates the electric and magnetic parts of a given solution.
+The transformation is a symmetry of the **source-free** Maxwell equations. Writing $\vec E_\theta,\vec B_\theta$ for the rotated fields, the two equations are preserved, $\nabla\times\vec E_\theta = -\partial\vec B_\theta/\partial r'_t$ and $\nabla\times\vec B_\theta = c^{-2}\partial\vec E_\theta/\partial r'_t$, the two terms of each matching after use of $c^2 = 1/(\epsilon\mu)$. With free electric charges and currents present, the transformation is *not* a symmetry: it would map an electric charge into a magnetic charge. Duality relates solutions of the source-free equations, and it relates the electric and magnetic parts of a given solution.
 
 The effect of the duality rotation on the invariants is clean. Writing $\vec N\cdot\vec N = I_1 + 2icI_2$, the phase rotation gives
 
@@ -496,9 +496,9 @@ so that $\tilde u$ is a unit pure element, $\tilde u^2=-e_t$, the axis of the fl
 **The two rates.** The rotor is the cosine and the sine of one complex angle,
 
 $$
-U(t)=\cos\theta\,e_t+\tilde u\,\sin\theta,
+U(r_t)=\cos\theta\,e_t+\tilde u\,\sin\theta,
 \qquad
-\theta=\tfrac12\,t\,i\sqrt{\epsilon}\,(\sigma+i\omega),
+\theta=\tfrac12\,r_t\,i\sqrt{\epsilon}\,(\sigma+i\omega),
 $$
 
 one formula for both regimes, since $\tilde u^2=-e_t$ makes the exponential the cosine and sine of a scalar angle: at $\omega=0$ the angle is imaginary and the flow is a boost at the rate $\sigma/c$, at $\sigma=0$ it is real and the flow is a rotation at the rate $\omega/c$, and in general the two are carried together. Read on the display of the congruence, the same statement is
@@ -522,7 +522,7 @@ which is the quickest check of a computed flow. Its generator has the four eigen
 
 **These are the four classical types of a one-parameter Lorentz transformation** — hyperbolic, elliptic, parabolic and loxodromic in Herglotz's naming, the classification that *A Brief History of Biquaternions in Physics* records from Herglotz as the four types of a Möbius transformation. The table is therefore not new data on the field. It is the classification of the paragraphs above followed through the exponential rather than left in the algebra, and the two descriptions coincide row by row. Three contributions are separable here and are kept apart: the classification of the one-parameter transformations is Herglotz's, the closed form of the exponential in terms of the two invariants, with its two regimes and its null limit, is Jadczyk and Szulga's, and the reading of the field-strength biquaternion itself as the element of the algebra is this corpus's. The axis of each flow is a line, not an oriented vector: the boost axis is the electric direction and the rotation axis the magnetic one, while the sense of each is that of the exponential itself and is not fixed by the invariants.
 
-**The null row is where the two spellings of one rotation are told apart.** There $\tilde F^2=0$ with $\tilde F\neq0$: the field is a nilpotent of the algebra, and the rotor truncates at the linear term, $U(t)=e_t+\tfrac12t\tilde F$, so the congruence is unipotent. In the defining representation the same flow is unipotent with one three-dimensional block, the degenerate case classified in *The Sandwich Exponential of an N-Regular, Spectrally Degenerate Biquaternion*. Both statements describe one null rotation; what differs is the carrier, and the difference is the same one that makes $\tilde F$ a zero divisor while the display of its flow is not.
+**The null row is where the two spellings of one rotation are told apart.** There $\tilde F^2=0$ with $\tilde F\neq0$: the field is a nilpotent of the algebra, and the rotor truncates at the linear term, $U(r_t)=e_t+\tfrac12t\tilde F$, so the congruence is unipotent. In the defining representation the same flow is unipotent with one three-dimensional block, the degenerate case classified in *The Sandwich Exponential of an N-Regular, Spectrally Degenerate Biquaternion*. Both statements describe one null rotation; what differs is the carrier, and the difference is the same one that makes $\tilde F$ a zero divisor while the display of its flow is not.
 
 **The flow fixes its own generator, and that separates the flow from the field.** Because $U(t)$ is a power series in $\tilde F$ it commutes with it, so the subgroup it generates leaves the tensor at the event unchanged: the flow moves frames and not the field. What the flow is not is a worldline. The worldline of a charge is the flow of the generator multiplied by the scalar $ϙ/m$ acting on the four-momentum, in *The Lorentz Force in Biquaternion Form*; the two generators differ by that scalar, and they agree only in a uniform field, since otherwise the field varies along the motion and the exponent is an ordered product rather than a single exponential.
 
@@ -549,7 +549,7 @@ $$
 
 Its real and imaginary parts are the two invariants of the field; the biquaternion norm and its complex conjugate carry the same pair. Both are invariant under the proper orthochronous Lorentz group — exactly in vacuum, formally in a medium; see §*Lorentz Invariance of the Invariants* — and $I_1$ is unchanged by the spatial reflection while $I_2$ changes its value there. The biquaternion norm vanishes exactly when the field is null, in which case the field-strength biquaternion is a zero divisor.
 
-The same object is, up to the constant $i\sqrt{\epsilon}$, the Riemann–Silberstein vector $\vec N = \vec E + ic\vec B$, whose self-product $\vec N\cdot\vec N = I_1 + 2icI_2$ carries the two invariants, and which obeys the source-free equation $i\partial\vec N/\partial t' = c\,\nabla\times\vec N$ with $\nabla\cdot\vec N = 0$.
+The same object is, up to the constant $i\sqrt{\epsilon}$, the Riemann–Silberstein vector $\vec N = \vec E + ic\vec B$, whose self-product $\vec N\cdot\vec N = I_1 + 2icI_2$ carries the two invariants, and which obeys the source-free equation $i\partial\vec N/\partial r'_t = c\,\nabla\times\vec N$ with $\nabla\cdot\vec N = 0$.
 
 Duality is the rotation $\vec N\mapsto \exp(-i\theta)\vec N$; at $\theta = \pi/2$ it is the classical electric–magnetic duality. It is a symmetry of the source-free Maxwell equations, and it rotates the pair $(I_1, 2cI_2)$ by the angle $-2\theta$, leaving $I_1^2 + 4c^2I_2^2$ invariant.
 
@@ -569,7 +569,7 @@ Finally, the invariants classify the field into null, electric, magnetic, and ge
 | $\mathbb{H}_{\mathbb{B}}$ | Real-quaternion subspace |
 | $\mathbb{M}_+, \mathbb{M}_-$ | Hermitian and anti-Hermitian subspaces |
 | $\tilde{\nabla}, \tilde{\nabla}^{\natural}$ | Biquaternionic gradient and its quaternion conjugate |
-| $\Box$ | The d'Alembertian, $\tilde{\nabla}\tilde{\nabla}^{\natural}=\partial^2/\partial Q_t^2+\Delta_Q$, that of *Operator and Calculus Conventions* |
+| $\Box$ | The d'Alembertian, $\tilde{\nabla}\tilde{\nabla}^{\natural}=\partial^2/\partial R_t^2+\Delta_Q$, that of *Operator and Calculus Conventions* |
 | $\tilde{F} = i\sqrt{\epsilon}\,\vec E - \sqrt{\mu}\,\vec H$ | Field-strength biquaternion (pure vector) |
 | $\vec E, \vec H, \vec B = \mu\vec H$ | Electric field, magnetic field, magnetic induction |
 | $\epsilon, \mu$ | Permittivity and permeability of the medium |

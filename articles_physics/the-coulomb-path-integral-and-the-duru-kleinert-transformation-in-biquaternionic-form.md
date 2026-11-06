@@ -2,14 +2,14 @@
 
 ## Introduction
 
-The path integral for the Coulomb problem — the hydrogen atom, a charge bound by the potential $V(r)=-\kappa/r$ — is the elementary case that the standard time-slicing construction does not reach. Feynman's short-time kernel presumes that the potential is bounded over the short interval between slices, and the $1/r$ singularity at the origin destroys that presumption: paths that pass near the origin give an action whose potential term diverges faster than the kinetic term can compensate, and the limit of the sliced integral does not exist as written. The remedy, found by Duru and Kleinert in 1979, is a transformation of the path integral in two parts: the physical time $t'$ is replaced by a **path-dependent pseudo-time**, and the position is carried by a **coordinate transformation** that renders the transformed action harmonic, hence exactly integrable.
+The path integral for the Coulomb problem — the hydrogen atom, a charge bound by the potential $V(r)=-\kappa/r$ — is the elementary case that the standard time-slicing construction does not reach. Feynman's short-time kernel presumes that the potential is bounded over the short interval between slices, and the $1/r$ singularity at the origin destroys that presumption: paths that pass near the origin give an action whose potential term diverges faster than the kinetic term can compensate, and the limit of the sliced integral does not exist as written. The remedy, found by Duru and Kleinert in 1979, is a transformation of the path integral in two parts: the physical time $r'_t$ is replaced by a **path-dependent pseudo-time**, and the position is carried by a **coordinate transformation** that renders the transformed action harmonic, hence exactly integrable.
 
 The corpus already owns the Coulomb problem on the operator side and the classical side. *The Hydrogen Atom in Biquaternionic Form — The Non-Relativistic Case* separates the Coulomb Hamiltonian in $\mathbb{M}_+$ and obtains the spectrum; *Coulomb Scattering and Rutherford's Formula in Biquaternionic Form* treats the unbound case; and *The Classical Coulomb Problem and Its Hidden SO(4) Symmetry in Biquaternionic Form* owns the classical degeneracy and its $\mathrm{SO}(4)$ algebra. Nothing in the corpus constructs the Coulomb path integral, and nothing mentions the pseudo-time or the Duru–Kleinert transformation. This article supplies that route and records what the algebra contributes to it.
 
 The contribution is an interpretation, and it is a sharper one than the neighbouring path-integral articles.
 
 - **Established (algebra).** The Coulomb potential $V(r)e_t=-(\kappa/r)e_t$ is a **central scalar**: a function of $r$ alone times the identity. The Coulomb problem is therefore a central-scalar configuration in the sense of *The Central Scalar Field: Classical Dynamics in the Biquaternion Centre* and *The Central-Scalar Limit of Classical Mechanics in Biquaternionic Form*, and the whole of the algebra's sector structure — the split $\mathbb{M}_-\oplus\mathbb{M}_+$, the location of the phase, the plain form — is invisible to it. The singularity that defeats the time slicing is a singularity of a central scalar function, not of the algebra.
-- **Established (algebra).** The coordinate transformation of Duru and Kleinert is the square root of the position in the quaternion algebra. In the Kustaanheimo–Stiefel (KS) coordinates $\varsigma\in\mathbb{R}^4$ the position satisfies $r=|r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z|=\langle \varsigma\rangle_{\natural}$, the **quaternion norm** of $\varsigma$; the $1/r$ singularity is the inverse norm $1/\langle \varsigma\rangle_{\natural}$, and the pseudo-time $dt'=r\,ds$ makes the potential term constant, $\int V\,dt'=-\kappa\int ds$, while the kinetic term becomes the quadratic form $2m\int|d\varsigma/ds|^2ds$. What remains, with the energy term $-\int E\,dt'=-E\int \langle \varsigma\rangle_{\natural}\,ds$, is the harmonic form that the transformation is named for.
+- **Established (algebra).** The coordinate transformation of Duru and Kleinert is the square root of the position in the quaternion algebra. In the Kustaanheimo–Stiefel (KS) coordinates $\varsigma\in\mathbb{R}^4$ the position satisfies $r=|r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z|=\langle \varsigma\rangle_{\natural}$, the **quaternion norm** of $\varsigma$; the $1/r$ singularity is the inverse norm $1/\langle \varsigma\rangle_{\natural}$, and the pseudo-time $dr'_t=r\,ds$ makes the potential term constant, $\int V\,dr'_t=-\kappa\int ds$, while the kinetic term becomes the quadratic form $2m\int|d\varsigma/ds|^2ds$. What remains, with the energy term $-\int E\,dr'_t=-E\int \langle \varsigma\rangle_{\natural}\,ds$, is the harmonic form that the transformation is named for.
 - **Established (algebra).** The pseudo-time is a monotone, path-dependent relabeling of the material time, along the same $i c r'_t$ axis on which the phase exponent of *The Path Integral in Biquaternionic Form* lies and along which *Interpretation of the Wick Rotation in the Biquaternion Universe* rotates. It is a relabeling of a coordinate and not a new dimension, and the algebra names the axis without supplying the reparametrisation.
 - **Standard, and transcribed.** The Duru–Kleinert transformation itself, the choice of pseudo-time, the KS map, the reduction to the four-dimensional isotropic oscillator, and the use of the oscillator's Mehler kernel to obtain the Coulomb Green's function. The algebra supplies none of these.
 - **Not supplied.** The functional measure and its transformation law under the coordinate change and the pseudo-time. The transformation is a change of the integration variable and of the measure, and the measure is the algebra's standing gap; the Jacobian of the transformation is exactly the object the algebra cannot write. The path integral's exact integrability is therefore imported whole.
@@ -31,11 +31,11 @@ and take the limit $N\to\infty$ of the product with the intermediate positions i
 
 ## The Pseudo-Time
 
-The first half of the Duru–Kleinert transformation is a reparametrisation of the time. Replace the physical time $t'$ by a **pseudo-time** $s$, path-dependent, according to
+The first half of the Duru–Kleinert transformation is a reparametrisation of the time. Replace the physical time $r'_t$ by a **pseudo-time** $s$, path-dependent, according to
 $$
-\boxed{\;dt'=r(s)\,ds\;},
+\boxed{\;dr'_t=r(s)\,ds\;},
 \qquad\text{equivalently}\qquad
-ds=\frac{dt'}{r(t')} ,
+ds=\frac{dr'_t}{r(r'_t)} ,
 $$
 so that the pseudo-time is the integral of the inverse radius along the trajectory. The transformation is monotone along any trajectory that does not reach the origin, and it is defined where the path integral is; the origin, which the physical slicing could not handle, is where the pseudo-time flow is singular and where the transformed problem is regular, because the two singularities are reciprocal.
 
@@ -43,19 +43,19 @@ Two consequences follow by direct substitution.
 
 **The potential becomes a constant.** The time integral of the Coulomb potential is
 $$
-\int V\,dt'=-\kappa\int\frac{1}{r}\,dt'=-\kappa\int\frac{1}{r}\,r\,ds=-\kappa\int ds ,
+\int V\,dr'_t=-\kappa\int\frac{1}{r}\,dr'_t=-\kappa\int\frac{1}{r}\,r\,ds=-\kappa\int ds ,
 $$
 a term linear in the pseudo-time and with no $1/r$. The singularity that defeated the slicing has been absorbed by the reparametrisation: it was the coefficient of the potential, and the pseudo-time was chosen to cancel it.
 
-**The kinetic term becomes a quadratic form in the new coordinate.** Writing the velocity as $d(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)/dt'$ and using $d(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)/ds=d(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)/dt'\,(dt'/ds)=d(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)/dt'\,r$,
+**The kinetic term becomes a quadratic form in the new coordinate.** Writing the velocity as $d(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)/dr'_t$ and using $d(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)/ds=d(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)/dr'_t\,(dr'_t/ds)=d(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)/dr'_t\,r$,
 $$
-\frac{m}{2}\int|d(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)/dt'|^2dt'
+\frac{m}{2}\int|d(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)/dr'_t|^2dr'_t
 =\frac{m}{2}\int\Big|\frac{d(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)}{ds}\Big|^2\frac{1}{r^2}\,r\,ds
 =\frac{m}{2}\int\Big|\frac{d(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)}{ds}\Big|^2\frac{1}{r}\,ds ,
 $$
 which still carries an inverse radius in the measure of the new coordinate. The second ingredient removes it.
 
-**The reparametrisation is along the material time axis.** In the framework's coordinates the physical time enters the material coordinate as the coefficient $i c r'_t$, so the substitution $dt'=r(s)\,ds$ is a path-dependent relabeling of the $i c r'_t$ direction — the same axis on which the phase exponent $iS/\hbar$ of *The Path Integral in Biquaternionic Form* lies, and the same axis whose relabeling as real is the Wick rotation of *Interpretation of the Wick Rotation in the Biquaternion Universe*. The pseudo-time is not a new dimension and not a new field; it is a reparametrisation of the one time the framework has, and the algebra names the axis without supplying the function $r(s)$. In this it is the closest analogue, on the configuration-space side, of the $i\epsilon$ of the propagator: the same $i c r'_t$ direction, carrying the analyticity that makes the integral converge.
+**The reparametrisation is along the material time axis.** In the framework's coordinates the physical time enters the material coordinate as the coefficient $i c r'_t$, so the substitution $dr'_t=r(s)\,ds$ is a path-dependent relabeling of the $i c r'_t$ direction — the same axis on which the phase exponent $iS/\hbar$ of *The Path Integral in Biquaternionic Form* lies, and the same axis whose relabeling as real is the Wick rotation of *Interpretation of the Wick Rotation in the Biquaternion Universe*. The pseudo-time is not a new dimension and not a new field; it is a reparametrisation of the one time the framework has, and the algebra names the axis without supplying the function $r(s)$. In this it is the closest analogue, on the configuration-space side, of the $i\epsilon$ of the propagator: the same $i c r'_t$ direction, carrying the analyticity that makes the integral converge.
 
 ## The Duru–Kleinert Transformation and the Harmonic Form
 
@@ -95,13 +95,13 @@ $$
 =\frac{m}{2}\int 4N(\varsigma)\Big|\frac{d\varsigma}{ds}\Big|^2\frac{1}{\langle \varsigma\rangle_{\natural}}\,ds
 =2m\int\Big|\frac{d\varsigma}{ds}\Big|^2ds ,
 $$
-a free quadratic form in the four KS coordinates, with the inverse norm cancelled exactly. The potential term is the constant $-\kappa\int ds$ of the previous section. The fixed-energy term of the Jacobi action contributes $-\int E\,dt'=-E\int \langle \varsigma\rangle_{\natural}\,ds$, which is quadratic in $\varsigma$ and, for a bound state $E<0$, supplies the harmonic potential. Collecting the three,
+a free quadratic form in the four KS coordinates, with the inverse norm cancelled exactly. The potential term is the constant $-\kappa\int ds$ of the previous section. The fixed-energy term of the Jacobi action contributes $-\int E\,dr'_t=-E\int \langle \varsigma\rangle_{\natural}\,ds$, which is quadratic in $\varsigma$ and, for a bound state $E<0$, supplies the harmonic potential. Collecting the three,
 $$
 \boxed{\;S\;\longrightarrow\;\int ds\;\Big[\,2m\Big|\frac{d\varsigma}{ds}\Big|^2-E\,\langle \varsigma\rangle_{\natural}-\kappa\,\Big]\;},
 $$
 which is the action of an **isotropic harmonic oscillator in four dimensions**, with the energy-dependent coefficient of $\langle \varsigma\rangle_{\natural}=|\varsigma|^2$ playing the role of the oscillator's restoring term. That the transformed action is harmonic, and that the fixed-energy problem is thereby exactly integrable, is the content of the Duru–Kleinert transformation.
 
-**The reduction is standard, and is transcribed here.** The transformation, the choice $dt'=r\,ds$, the KS map, the reduction to the four-dimensional oscillator, and the conclusion that the Coulomb Green's function is obtained from the oscillator's Mehler kernel are the standard results of Duru and Kleinert and of Kleinert's treatise; they are not re-derived. What is recomputed here is only the algebra of the reduction: the norm identity $r=\langle \varsigma\rangle_{\natural}$, its differential companion $J^{\mathsf T}J=4N(\varsigma)(I-\vec u\vec u^{\mathsf T})$ with the constraint direction $\vec u\propto(\varsigma_2,-\varsigma_1,-\varsigma_0,\varsigma_3)$ (both checked numerically), and the cancellation of the inverse norm between the kinetic term and the pseudo-time Jacobian. The full kernel — the energy spectrum, the degeneracy $n^2$, and the wave functions — is the subject of the hydrogen articles, which obtain it on the operator side, and the value of the path-integral route is that it reaches the same spectrum through the oscillator, whose kernel the corpus owns in *The Harmonic Oscillator in Biquaternionic Form*.
+**The reduction is standard, and is transcribed here.** The transformation, the choice $dr'_t=r\,ds$, the KS map, the reduction to the four-dimensional oscillator, and the conclusion that the Coulomb Green's function is obtained from the oscillator's Mehler kernel are the standard results of Duru and Kleinert and of Kleinert's treatise; they are not re-derived. What is recomputed here is only the algebra of the reduction: the norm identity $r=\langle \varsigma\rangle_{\natural}$, its differential companion $J^{\mathsf T}J=4N(\varsigma)(I-\vec u\vec u^{\mathsf T})$ with the constraint direction $\vec u\propto(\varsigma_2,-\varsigma_1,-\varsigma_0,\varsigma_3)$ (both checked numerically), and the cancellation of the inverse norm between the kinetic term and the pseudo-time Jacobian. The full kernel — the energy spectrum, the degeneracy $n^2$, and the wave functions — is the subject of the hydrogen articles, which obtain it on the operator side, and the value of the path-integral route is that it reaches the same spectrum through the oscillator, whose kernel the corpus owns in *The Harmonic Oscillator in Biquaternionic Form*.
 
 **Why the harmonic form is the point.** The oscillator is the one nontrivial kernel that is exactly known and exactly integrable, and the transformation arranges that the singular problem be equivalent to it. In the algebra's interpretation the two facts line up: the pseudotime makes the potential constant because the potential was the inverse norm, and the coordinate transformation makes the kinetic term the norm's quadratic form because the transformation is the square root. The harmonic oscillator's centrality in the catalogue — the harmonic form is the one the algebra's own $SU(2)$ and rotor structure generates — is what makes the reduction natural, though the reduction is not derived from the algebra.
 
@@ -131,13 +131,13 @@ which is the action of an **isotropic harmonic oscillator in four dimensions**, 
 
 The Coulomb path integral is the elementary problem that Feynman's time slicing does not reach: the $1/r$ singularity at the origin makes the sliced integral, whose short-time kernel presumes a bounded potential, fail to converge. The Duru–Kleinert transformation removes the singularity in two parts. First, the physical time is replaced by a path-dependent pseudo-time,
 $$
-dt'=r\,ds ,
+dr'_t=r\,ds ,
 $$
-which makes the potential term constant, $\int V\,dt'=-\kappa\int ds$, and leaves the kinetic term carrying an inverse radius, $\tfrac{m}{2}\int|d(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)/dt'|^2dt'=\tfrac{m}{2}\int|d(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)/ds|^2(1/r)\,ds$. Second, the position is carried by the Kustaanheimo–Stiefel coordinates $\varsigma\in\mathbb{R}^4$, under which
+which makes the potential term constant, $\int V\,dr'_t=-\kappa\int ds$, and leaves the kinetic term carrying an inverse radius, $\tfrac{m}{2}\int|d(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)/dr'_t|^2dr'_t=\tfrac{m}{2}\int|d(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)/ds|^2(1/r)\,ds$. Second, the position is carried by the Kustaanheimo–Stiefel coordinates $\varsigma\in\mathbb{R}^4$, under which
 $$
 r=|r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z|=\langle \varsigma\rangle_{\natural},\qquad J^{\mathsf T}J=4N(\varsigma)\big(I-\vec u\vec u^{\mathsf T}\big),
 $$
-so that on the KS constraint $\big|d(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)\big|^2=4N(\varsigma)\big|d\varsigma\big|^2$ and the inverse norm cancels. With the fixed-energy term $-\int E\,dt'=-E\int \langle \varsigma\rangle_{\natural}\,ds$ the transformed action is
+so that on the KS constraint $\big|d(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)\big|^2=4N(\varsigma)\big|d\varsigma\big|^2$ and the inverse norm cancels. With the fixed-energy term $-\int E\,dr'_t=-E\int \langle \varsigma\rangle_{\natural}\,ds$ the transformed action is
 $$
 S\;\longrightarrow\;\int ds\;\Big[\,2m\Big|\frac{d\varsigma}{ds}\Big|^2-E\,\langle \varsigma\rangle_{\natural}-\kappa\,\Big],
 $$
@@ -155,7 +155,7 @@ The algebra's contribution is an interpretation. The Coulomb potential is a **ce
 | $\kappa=Ze^2/(4\pi\epsilon_0)$ | Coulomb parameter |
 | $\tilde V=-(\kappa/r)e_t\in\mathbb{C}_{\mathbb{B}}$ | Coulomb potential; a central scalar |
 | $E_n=-m\kappa^2/(2\hbar^2n^2)$ | Bound-state spectrum (from the hydrogen article) |
-| $dt'=r\,ds$, $ds=dt'/r$ | Duru–Kleinert pseudo-time; path-dependent, along $i c r'_t$ |
+| $dr'_t=r\,ds$, $ds=dr'_t/r$ | Duru–Kleinert pseudo-time; path-dependent, along $i c r'_t$ |
 | $\varsigma=(\varsigma_1,\varsigma_2,\varsigma_3,\varsigma_0)\in\mathbb{R}^4$ | Kustaanheimo–Stiefel coordinates |
 | $\varsigma=\varsigma_1\vec e_x+\varsigma_2\vec e_y+\varsigma_3\vec e_z+\varsigma_0e_t\in\mathbb{H}$ | The quaternion carried by $\varsigma$ |
 | $\langle \varsigma\rangle_{\natural}=\varsigma^{\natural}\varsigma=\lvert\vec\varsigma\rvert^2$ | Quaternion norm; equals $r$ |

@@ -443,7 +443,7 @@ The article establishes the algebra of the sector and its interpretation as a tw
 
 ## Summary
 
-- The informational sector is the Hermitian subspace $\mathbb{M}_+$, with a real time and an imaginary space, $\tilde R_\psi=c t\,e_t+i(r'_{x}\vec e_x+r'_{y}\vec e_y+r'_{z}\vec e_z)$.
+- The informational sector is the Hermitian subspace $\mathbb{M}_+$, with a real time and an imaginary space, $\tilde R_\psi=c r_t\,e_t+i(r'_{x}\vec e_x+r'_{y}\vec e_y+r'_{z}\vec e_z)$.
 - Its biquaternion norm is indefinite of signature $(1,3)$; positivity is a condition on the eigenvalues, not on the biquaternion norm.
 - The Hermitian idempotents $\tfrac12(e_t\pm i\vec u)$ are the pure states; they are the halvings of the roots of $+1$ and are zero divisors.
 - The state slice (normalised by $\langle\tilde{Ϛ},e_t\rangle_*=\tfrac12$; trace one in the $2\times2$ image) is the Bloch ball $\lvert\vec r\rvert\leq1$; its boundary is the Bloch sphere, its centre the maximally mixed state.

@@ -30,7 +30,7 @@ $$
 \mathcal{L}_{\mathrm{gh}} = -\,\bar{c}\,\Box\,c,
 $$
 
-with $\zeta$ the gauge parameter. The field $B$ is auxiliary — its equation of motion is $B=-\zeta^{-1}\langle\tilde\nabla,\tilde A\rangle_{\natural}$, and eliminating it returns the familiar $-\tfrac{1}{2\zeta}(\partial\cdot A)^2$ gauge fixing — and the ghosts are the fields that the Faddeev–Popov determinant contributes. For the non-abelian theory the same structure holds with the gauge-fixing term $\sum_a B_a\sum_\mu\partial A_{\mu a}/\partial Q_\mu+\tfrac12\zeta\sum_a B_aB_a$ and the ghost term $-\sum_a\bar{c}_a\sum_\mu\partial(D_\mu c)_a/\partial Q_\mu$, with $D_\mu c_a=\partial/\partial Q_\mu c_a+g\sum_{b,c}f_{abc}A_{\mu b} c_c$.
+with $\zeta$ the gauge parameter. The field $B$ is auxiliary — its equation of motion is $B=-\zeta^{-1}\langle\tilde\nabla,\tilde A\rangle_{\natural}$, and eliminating it returns the familiar $-\tfrac{1}{2\zeta}(\partial\cdot A)^2$ gauge fixing — and the ghosts are the fields that the Faddeev–Popov determinant contributes. For the non-abelian theory the same structure holds with the gauge-fixing term $\sum_a B_a\sum_\mu\partial A_{\mu a}/\partial R_\mu+\tfrac12\zeta\sum_a B_aB_a$ and the ghost term $-\sum_a\bar{c}_a\sum_\mu\partial(D_\mu c)_a/\partial R_\mu$, with $D_\mu c_a=\partial/\partial R_\mu c_a+g\sum_{b,c}f_{abc}A_{\mu b} c_c$.
 
 The gauge-fixed Lagrangian $\mathcal{L}=\mathcal{L}_{\mathrm{gauge}}+\mathcal{L}_{\mathrm{gf}}+\mathcal{L}_{\mathrm{gh}}$ is no longer gauge invariant — the gauge invariance has been destroyed by the gauge-fixing term — but it carries a new invariance that replaces it.
 
@@ -63,7 +63,7 @@ so that the structure constants are $f_{abc}=2\varepsilon_{abc}$, and the genera
 The BRST transformation is a Grassmann-odd derivation $s$ of the field algebra. On the abelian fields it acts as
 
 $$
-sA_\mu = \partial/\partial Q_\mu c,
+sA_\mu = \partial/\partial R_\mu c,
 \qquad
 sc = 0,
 \qquad
@@ -75,7 +75,7 @@ $$
 and on the non-abelian fields as
 
 $$
-\boxed{\;sA_{\mu a} = (D_\mu c)_a = \partial/\partial Q_\mu c_a+g\sum_{b,c}f_{abc}A_{\mu b} c_c,
+\boxed{\;sA_{\mu a} = (D_\mu c)_a = \partial/\partial R_\mu c_a+g\sum_{b,c}f_{abc}A_{\mu b} c_c,
 \qquad
 sc_a = -\tfrac{g}{2}\sum_{b,c}f_{abc}c_bc_c,
 \qquad
@@ -91,7 +91,7 @@ The transformation on the gauge field is the gauge transformation $\delta A_{\mu
 The abelian case is immediate. Since $s$ is a derivation of Grassmann parity one and $c$ is odd,
 
 $$
-s^2 A_\mu = s(\partial/\partial Q_\mu c) = \partial/\partial Q_\mu(sc) = 0,
+s^2 A_\mu = s(\partial/\partial R_\mu c) = \partial/\partial R_\mu(sc) = 0,
 \qquad
 s^2 c = 0,
 \qquad
@@ -107,10 +107,10 @@ The only nonvanishing entry is $s\bar{c}=B$, and $B$ is annihilated by $s$. Henc
 The non-abelian case is where the identity is needed. Applying $s$ to $sA_{\mu a}$ and using the graded Leibniz rule,
 
 $$
-s^2A_{\mu a} = \partial/\partial Q_\mu(sc_a)+g\sum_{b,c}f_{abc}\left[(sA_{\mu b})c_c+A_{\mu b}(sc_c)\right].
+s^2A_{\mu a} = \partial/\partial R_\mu(sc_a)+g\sum_{b,c}f_{abc}\left[(sA_{\mu b})c_c+A_{\mu b}(sc_c)\right].
 $$
 
-The two derivative pieces cancel between themselves: $\partial/\partial Q_\mu(sc_a)=-\tfrac{g}{2}\sum_{b,c}f_{abc}\partial/\partial Q_\mu(c_bc_c)$ and $(sA_{\mu b})c_c$ contributes $g\sum_{b,c}f_{abc}(\partial/\partial Q_\mu c_b)c_c$, and since $\partial/\partial Q_\mu(c_bc_c)=(\partial/\partial Q_\mu c_b)c_c+c_b\partial/\partial Q_\mu c_c$ while the antisymmetry of $f_{abc}$ in its last two indices converts $f_{abc}c_b\partial/\partial Q_\mu c_c$ into $f_{abc}(\partial/\partial Q_\mu c_b)c_c$, their sum is $g\sum_{b,c}f_{abc}\left[-(\partial/\partial Q_\mu c_b)c_c+(\partial/\partial Q_\mu c_b)c_c\right]=0$. What survives is the $A$-dependent part,
+The two derivative pieces cancel between themselves: $\partial/\partial R_\mu(sc_a)=-\tfrac{g}{2}\sum_{b,c}f_{abc}\partial/\partial R_\mu(c_bc_c)$ and $(sA_{\mu b})c_c$ contributes $g\sum_{b,c}f_{abc}(\partial/\partial R_\mu c_b)c_c$, and since $\partial/\partial R_\mu(c_bc_c)=(\partial/\partial R_\mu c_b)c_c+c_b\partial/\partial R_\mu c_c$ while the antisymmetry of $f_{abc}$ in its last two indices converts $f_{abc}c_b\partial/\partial R_\mu c_c$ into $f_{abc}(\partial/\partial R_\mu c_b)c_c$, their sum is $g\sum_{b,c}f_{abc}\left[-(\partial/\partial R_\mu c_b)c_c+(\partial/\partial R_\mu c_b)c_c\right]=0$. What survives is the $A$-dependent part,
 
 $$
 s^2A_{\mu a}
@@ -161,7 +161,7 @@ $$
 \tilde{Ξ}^{\mathrm{sp}} = \bar{c}\left(\langle\tilde\nabla,\tilde A\rangle_{\natural}+\tfrac{\zeta}{2}B\right)
 \qquad\text{(abelian)},
 \qquad
-\tilde{Ξ}^{\mathrm{sp}} = \sum_a\bar{c}_a\left(\sum_\mu\partial A_{\mu a}/\partial Q_\mu+\tfrac{\zeta}{2}B_a\right)
+\tilde{Ξ}^{\mathrm{sp}} = \sum_a\bar{c}_a\left(\sum_\mu\partial A_{\mu a}/\partial R_\mu+\tfrac{\zeta}{2}B_a\right)
 \qquad\text{(non-abelian)} .
 $$
 
@@ -185,7 +185,7 @@ $$
 s\mathcal{L} = s\mathcal{L}_{\mathrm{gauge}} + s^2\tilde{Ξ}^{\mathrm{sp}} = 0 .
 $$
 
-The non-abelian case is the same computation with the covariant derivative, $s\tilde{Ξ}^{\mathrm{sp}}=\sum_a B_a\sum_\mu\partial A_{\mu a}/\partial Q_\mu+\tfrac{\zeta}{2}\sum_a B_aB_a-\sum_a\bar{c}_a\sum_\mu\partial(D_\mu c)_a/\partial Q_\mu$, so that the ghost Lagrangian is $-\sum_a\bar{c}_a\sum_\mu\partial(D_\mu c)_a/\partial Q_\mu$ and the gauge-fixing Lagrangian is $\sum_a B_a\sum_\mu\partial A_{\mu a}/\partial Q_\mu+\tfrac{\zeta}{2}\sum_a B_aB_a$.
+The non-abelian case is the same computation with the covariant derivative, $s\tilde{Ξ}^{\mathrm{sp}}=\sum_a B_a\sum_\mu\partial A_{\mu a}/\partial R_\mu+\tfrac{\zeta}{2}\sum_a B_aB_a-\sum_a\bar{c}_a\sum_\mu\partial(D_\mu c)_a/\partial R_\mu$, so that the ghost Lagrangian is $-\sum_a\bar{c}_a\sum_\mu\partial(D_\mu c)_a/\partial R_\mu$ and the gauge-fixing Lagrangian is $\sum_a B_a\sum_\mu\partial A_{\mu a}/\partial R_\mu+\tfrac{\zeta}{2}\sum_a B_aB_a$.
 
 The structure of the result is the reason BRST is the natural framework for gauge theories: the entire unphysical sector — gauge-fixing term and ghosts — is the image of $s$, and the physical content is what remains after the image is quotiented out. In the biquaternion framework the statement is that $\tilde{Ξ}^{\mathrm{sp}}$ is a Grassmann-odd element of the envelope, $s\tilde{Ξ}^{\mathrm{sp}}$ is its image, and the physical states are the cohomology of $s$, as below.
 
@@ -281,7 +281,7 @@ What the framework does not supply is the Grassmann envelope itself. The algebra
 | $a,b,c$; $\mu,\nu$ | Internal colour and spacetime indices, both written low; every contraction over them is an explicit sum |
 | $T_a=i\vec e_a$, $[T_a,T_b]=2i\sum_c\varepsilon_{abc}T_c$ | $\mathrm{SU}(2)$ generators realized by the commutator |
 | $f_{abc}$ | Structure constants; Jacobi identity required for nilpotency |
-| $g$, $D_\mu=\partial/\partial Q_\mu+gA_\mu$ | Coupling and covariant derivative |
+| $g$, $D_\mu=\partial/\partial R_\mu+gA_\mu$ | Coupling and covariant derivative |
 | $c,\bar{c}$ | Faddeev–Popov ghost and antighost, Grassmann-odd |
 | $B$ | Nakanishi–Lautrup auxiliary field |
 | $\zeta$ | Gauge parameter |
@@ -289,7 +289,7 @@ What the framework does not supply is the Grassmann envelope itself. The algebra
 | $s$ | BRST operator: Grassmann-odd derivation, $\mathrm{gh}(s\tilde{Q}_1)=\mathrm{gh}(\tilde{Q}_1)+1$ |
 | $sA_{\mu a}=(D_\mu c)_a$, $sc_a=-\tfrac{g}{2}\sum_{b,c}f_{abc}c_bc_c$, $s\bar{c}_a=B_a$, $sB_a=0$ | Non-abelian BRST transformations |
 | $s^2=0$ | Nilpotency; from Jacobi, hence from associativity of $\mathbb{B}$ |
-| $\tilde{Ξ}^{\mathrm{sp}}=\sum_a\bar{c}_a(\sum_\mu\partial A_{\mu a}/\partial Q_\mu+\tfrac{\zeta}{2}B_a)$ | Gauge-fixing fermion, $\mathcal{L}=\mathcal{L}_{\mathrm{gauge}}+s\tilde{Ξ}^{\mathrm{sp}}$ |
+| $\tilde{Ξ}^{\mathrm{sp}}=\sum_a\bar{c}_a(\sum_\mu\partial A_{\mu a}/\partial R_\mu+\tfrac{\zeta}{2}B_a)$ | Gauge-fixing fermion, $\mathcal{L}=\mathcal{L}_{\mathrm{gauge}}+s\tilde{Ξ}^{\mathrm{sp}}$ |
 | $\mathrm{gh}(\tilde{A})=0$, $\mathrm{gh}(c)=+1$, $\mathrm{gh}(\bar{c})=-1$, $\mathrm{gh}(B)=0$ | Ghost number |
 | $\mathcal{Q}$, $\mathcal{Q}^2=0$, $s\tilde{Q}_1=[i\mathcal{Q},\tilde{Q}_1]_\pm$ | BRST charge |
 | $\mathcal{H}_{\mathrm{phys}}=\ker \mathcal{Q}/\mathrm{im}\,\mathcal{Q}\big|_{\mathrm{gh}=0}$ | Physical states as BRST cohomology |

@@ -120,13 +120,13 @@ real. This is the **unitary gauge** of the abelian model. In it the scalar is a 
 The same gauge transformation shifts the connection,
 
 $$
-A_{2,\mu} = A_\mu - \partial/\partial Q_\mu\,\Gamma = A_\mu + \frac{\hbar}{ϙv}\,\partial/\partial Q_\mu\,\vartheta^{\mathrm{fld}} ,
+A_{2,\mu} = A_\mu - \partial/\partial R_\mu\,\Gamma = A_\mu + \frac{\hbar}{ϙv}\,\partial/\partial R_\mu\,\vartheta^{\mathrm{fld}} ,
 $$
 
 so that the combination
 
 $$
-\mathcal{A}_\mu := A_\mu + \frac{\hbar}{ϙv}\,\partial/\partial Q_\mu\,\vartheta^{\mathrm{fld}}
+\mathcal{A}_\mu := A_\mu + \frac{\hbar}{ϙv}\,\partial/\partial R_\mu\,\vartheta^{\mathrm{fld}}
 $$
 
 is gauge invariant, and the mass term of the next section depends on it rather than on $A_\mu$ alone. The two terms are not separately physical. What appears as the removal of one field and the shift of another is a single gauge transformation; the erasure of $\vartheta^{\mathrm{fld}}$ and the modification of $A_\mu$ are the same operation seen from the two ends.
@@ -259,7 +259,7 @@ One consequence is worth recording as a caution. If the phase were a *physical* 
 
 The Higgs mechanism hides a gauge symmetry in the vacuum, gives the gauge field the mass $M_A = ϙv/\hbar$, and absorbs the would-be Goldstone mode as the longitudinal polarization. Read information-theoretically, it is an **erasure** of a redundant label and a **relocation** of physical content, not a loss.
 
-The erased object is the phase of the scalar. It is a coordinate on the circle of degenerate vacua, $|\xi| = v/\sqrt{2}$, but it is a **gauge** coordinate: the central phase acts trivially on the informational sector, so no Hermitian observable is conjugate to it, and the gauge-invariant content of the vacuum is the single number $|\xi| = v/\sqrt{2}$, checked to be independent of the phase. A gauge transformation removes the phase from the scalar and shifts the connection by a gradient, and the combination $A_\mu + (\hbar/ϙv)\partial/\partial Q_\mu\,\theta$ is what the mass term depends on. The erasure of the phase and the shift of the connection are one operation, which is why the mechanism is best described as *using* the gauge redundancy rather than suffering it.
+The erased object is the phase of the scalar. It is a coordinate on the circle of degenerate vacua, $|\xi| = v/\sqrt{2}$, but it is a **gauge** coordinate: the central phase acts trivially on the informational sector, so no Hermitian observable is conjugate to it, and the gauge-invariant content of the vacuum is the single number $|\xi| = v/\sqrt{2}$, checked to be independent of the phase. A gauge transformation removes the phase from the scalar and shifts the connection by a gradient, and the combination $A_\mu + (\hbar/ϙv)\partial/\partial R_\mu\,\theta$ is what the mass term depends on. The erasure of the phase and the shift of the connection are one operation, which is why the mechanism is best described as *using* the gauge redundancy rather than suffering it.
 
 The relocated content is the longitudinal mode, and the record is the mass. The degree-of-freedom count balances, $2+2 = 1+3$: one scalar mode became the third gauge polarization, and nothing was created or destroyed. The mass $M_A^2 = ϙ^2v^2/\hbar^2$ was recomputed on a generic connection and a generic parameter set, and the relative entropy was shown to be invariant under the $*$-unitary re-encoding. On the full degrees of freedom the symmetry-breaking map is $*$-unitary and information-preserving; on the gauge-invariant observables it is many-to-one, with the fibre being the gauge orbit — whose information content is zero. The erasure is the quotient map, and its kernel is a gauge orbit.
 
@@ -281,10 +281,10 @@ This distinguishes the mechanism from the two neighbours. Unlike confinement, wh
 | $h,\ \vartheta^{\mathrm{fld}}$ | Radial and angular (would-be Goldstone) fields |
 | $m_h^2 = 2\beta v^2$ | Radial-mode mass |
 | $\tilde{A}\in\mathbb{M}_-$, $\tilde{A}_2 = \tilde{A} - \tilde{\nabla}\Gamma$ | Connection and gauge law |
-| $D_\mu = \partial/\partial Q_\mu + i\kappa A_\mu$, $\kappa = ϙ/\hbar$ | Covariant derivative and coupling |
+| $D_\mu = \partial/\partial R_\mu + i\kappa A_\mu$, $\kappa = ϙ/\hbar$ | Covariant derivative and coupling |
 | $\varepsilon=(1,-1,-1,-1)$ | Coordinate signs for contractions |
 | $\Gamma = -(\hbar/ϙv)\vartheta^{\mathrm{fld}}$ | Gauge function of the unitary gauge |
-| $\mathcal{A}_\mu = A_\mu + (\hbar/ϙv)\partial/\partial Q_\mu\,\vartheta^{\mathrm{fld}}$ | Gauge-invariant combination carrying the mass |
+| $\mathcal{A}_\mu = A_\mu + (\hbar/ϙv)\partial/\partial R_\mu\,\vartheta^{\mathrm{fld}}$ | Gauge-invariant combination carrying the mass |
 | $M_A^2 = ϙ^2v^2/\hbar^2$, $M_A = ϙv/\hbar$ | Gauge-field (Proca) mass; the record |
 | $-\tfrac12 M_A^2\,\langle\tilde{A}\rangle_{\natural}$ | Proca mass term |
 | $2+2 = 1+3$ | Degree-of-freedom balance; conservation |

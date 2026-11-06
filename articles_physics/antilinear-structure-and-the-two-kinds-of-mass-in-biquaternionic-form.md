@@ -166,10 +166,10 @@ $$
 
 The first acts on the right-handed half, the second on the left-handed one, and the second is the quaternion conjugate of the first. The massless case is $\tilde{\nabla}\tilde{Ξ}^{\mathrm{sp}} = 0$, which is the right-handed member alone; the full massless field is the pair, not either member.
 
-**The two-sided reading.** The pair is also the corpus's two-sided structure. For a scalar mass the siding is invisible — $m$ is central, so $m\tilde{Ξ}^{\mathrm{sp}}_L=\tilde{Ξ}^{\mathrm{sp}}_L m$ and the mass term may be read as a left or as a right multiplication — but the siding becomes visible as soon as the mass term carries a direction and a conjugation, which is exactly what the dictionary's form of the equation does. With $t'$ the imaginary time and $D_3=\sum_k\vec e_k\,\partial/\partial Q_k$ the three-dimensional Cauchy–Riemann operator, Kravchenko's form of the equation on $F\in\mathbb{B}$ reads
+**The two-sided reading.** The pair is also the corpus's two-sided structure. For a scalar mass the siding is invisible — $m$ is central, so $m\tilde{Ξ}^{\mathrm{sp}}_L=\tilde{Ξ}^{\mathrm{sp}}_L m$ and the mass term may be read as a left or as a right multiplication — but the siding becomes visible as soon as the mass term carries a direction and a conjugation, which is exactly what the dictionary's form of the equation does. With $r'_t$ the imaginary time and $D_3=\sum_k\vec e_k\,\partial/\partial R_k$ the three-dimensional Cauchy–Riemann operator, Kravchenko's form of the equation on $F\in\mathbb{B}$ reads
 
 $$
-(i\partial/\partial t' + D_3)F - mi\,\bar{F}\,\vec e_z = 0 ,
+(i\partial/\partial r'_t + D_3)F - mi\,\bar{F}\,\vec e_z = 0 ,
 $$
 
 a left multiplication by the derivative, an antilinear coefficient conjugation $\bar{\cdot}$ with no side, and a right multiplication by the spatial unit $\vec e_z$. There the mass term is a right multiplication *followed by* a conjugation, and it is not a single cell. The two readings are related by the dictionary and are not the same equation — their mass terms are of different kinds, a scalar in one and a right multiplication with a conjugation in the other. What they share is the structural reason the second side is needed at all: the Dirac mass is what couples one value to the other, and left multiplication alone preserves the value.
@@ -529,7 +529,7 @@ With the summed index raised, $\gamma^\mu=-\varepsilon_\mu\gamma_\mu$, they are 
 | $\mathrm{Spin}^c(1,3) = \bigl(\mathrm{Spin}(1,3)\times \mathrm{U}(1)\bigr)/\{\pm 1\}$ | Central extension of the spin group by a circle; its central factor is the framework's central phase, and a charged field is one on which that factor acts non-trivially |
 | $\Delta = S\oplus\bar{S}$ | Dirac module, real dim $8$; $\mathcal{C}$ exchanges the halves |
 | $a\tilde{Ξ}^{\mathrm{sp}} b$ | The two-sided action; the side is carried by position and never by a mark |
-| $D_3=\sum_k\vec e_k\,\partial/\partial Q_k$; $t'$ | Three-dimensional Cauchy–Riemann operator; imaginary time, in the two-sided form only |
+| $D_3=\sum_k\vec e_k\,\partial/\partial R_k$; $r'_t$ | Three-dimensional Cauchy–Riemann operator; imaginary time, in the two-sided form only |
 | $m_D$, $m_M$ | Dirac and Majorana masses |
 | $\flat$ acts $+$ on $\mathbb{M}_-$, $-$ on $\mathbb{M}_+$ | The sector sign; the same convention as the material identification |
 

@@ -38,31 +38,31 @@ $$
 \left(\Box-\mu^2-g\,\xi(\tilde R_\varphi)\right)\tilde{Ξ}=0 .
 $$
 
-If the background is **homogeneous**, $\xi=\xi(t')$, the spatial translation invariance survives and the field can be expanded in spatial plane waves,
+If the background is **homogeneous**, $\xi=\xi(r'_t)$, the spatial translation invariance survives and the field can be expanded in spatial plane waves,
 
 $$
-\xi^{\mathrm{scl}}(r'_t, r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)=\int\!\frac{d^3k}{(2\pi)^3}\,u_{\vec k}(t')\,\exp(\,i\vec k\cdot(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)),
+\xi^{\mathrm{scl}}(r'_t, r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)=\int\!\frac{d^3k}{(2\pi)^3}\,u_{\vec k}(r'_t)\,\exp(\,i\vec k\cdot(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)),
 $$
 
 with the mode functions satisfying
 
 $$
-\boxed{\;d^2u_{\vec k}/d{r'_{t}}^2+\omega_{\vec k}^2(t')\,u_{\vec k}=0,
+\boxed{\;d^2u_{\vec k}/d{r'_{t}}^2+\omega_{\vec k}^2(r'_t)\,u_{\vec k}=0,
 \qquad
-\omega_{\vec k}^2(t')=\vec k^2+\mu^2+g\,\xi(t')\;}.
+\omega_{\vec k}^2(r'_t)=\vec k^2+\mu^2+g\,\xi(r'_t)\;}.
 $$
 
 This is the central object of the article: a set of independent harmonic oscillators with a time-dependent frequency. The biquaternion packaging is that the effective mass-squared is read off the biquaternion norm of a material four-wavevector whose time component is not conserved: the mass shell is the level set
 
 $$
-\langle\tilde P_{\vec k}(t')\rangle_{\natural}=-\left(\mu^2+g\,\xi(t')\right)e_t ,
+\langle\tilde P_{\vec k}(r'_t)\rangle_{\natural}=-\left(\mu^2+g\,\xi(r'_t)\right)e_t ,
 \qquad
-\tilde P_{\vec k}(t')=i\omega_{\vec k}(t')e_t+\vec k,
+\tilde P_{\vec k}(r'_t)=i\omega_{\vec k}(r'_t)e_t+\vec k,
 $$
 
-equivalently $\mu^2+g\,\xi(t')=-\mathrm{Sc}(\langle\tilde P_{\vec k}(t')\rangle_{\natural})$, since $\langle\tilde P\rangle_{\natural}=(\vec k^2-\omega^2)e_t$ for this four-wavevector. A time-dependent background is therefore a time-dependent level set of the biquaternion norm. The interaction itself is central: $\mathcal{L}_{\mathrm{int}}$ is a multiple of $e_t$, it commutes with the algebra, and no spinor structure is involved.
+equivalently $\mu^2+g\,\xi(r'_t)=-\mathrm{Sc}(\langle\tilde P_{\vec k}(r'_t)\rangle_{\natural})$, since $\langle\tilde P\rangle_{\natural}=(\vec k^2-\omega^2)e_t$ for this four-wavevector. A time-dependent background is therefore a time-dependent level set of the biquaternion norm. The interaction itself is central: $\mathcal{L}_{\mathrm{int}}$ is a multiple of $e_t$, it commutes with the algebra, and no spinor structure is involved.
 
-Two standard realizations fix the interpretation. A **mass quench** changes $\mu^2$ abruptly or smoothly in time; an **expanding background** makes the frequency depend on time through a scale factor, $\frac{d^2u}{d\eta^2}+(\vec k^2+a^2(\eta)\mu^2)u=0$ in conformal time $\eta$ for a suitably coupled field. Both are captured by $\omega_{\vec k}^2(t')$ above, and both are standard cosmological and condensed-matter problems; the framework writes their operator in the notation of the centre.
+Two standard realizations fix the interpretation. A **mass quench** changes $\mu^2$ abruptly or smoothly in time; an **expanding background** makes the frequency depend on time through a scale factor, $\frac{d^2u}{d\eta^2}+(\vec k^2+a^2(\eta)\mu^2)u=0$ in conformal time $\eta$ for a suitably coupled field. Both are captured by $\omega_{\vec k}^2(r'_t)$ above, and both are standard cosmological and condensed-matter problems; the framework writes their operator in the notation of the centre.
 
 If the background is not homogeneous, $\xi=\xi(\tilde R_\varphi)$, the mode equation acquires a spatial dependence, and the decomposition into spatial plane waves with a single $\vec k$ fails; a slowly varying background can be treated in the adiabatic approximation, and a rapidly varying one requires the full field equation. This article keeps the homogeneous case, which is the exactly solvable one and the one that isolates the temporal mechanism.
 
@@ -71,9 +71,9 @@ If the background is not homogeneous, $\xi=\xi(\tilde R_\varphi)$, the mode equa
 Suppose the background is constant in the remote past and in the remote future,
 
 $$
-\xi(t')\to\xi_{\mathrm{in}}\ \ (t'\to-\infty),
+\xi(r'_t)\to\xi_{\mathrm{in}}\ \ (r'_t\to-\infty),
 \qquad
-\xi(t')\to\xi_{\mathrm{out}}\ \ (t'\to+\infty),
+\xi(r'_t)\to\xi_{\mathrm{out}}\ \ (r'_t\to+\infty),
 $$
 
 with corresponding asymptotic frequencies
@@ -87,15 +87,15 @@ $$
 In each asymptotic region the field admits a standard mode decomposition, and the corresponding operators define the **in** and **out** Fock spaces. The two sets of positive-frequency solutions are, in each region,
 
 $$
-u_{\vec k}^{\mathrm{in}}(t')\sim\frac{1}{\sqrt{2\omega_{\mathrm{in},\vec k}}}\exp(-i\omega_{\mathrm{in},\vec k}t'),
+u_{\vec k}^{\mathrm{in}}(r'_t)\sim\frac{1}{\sqrt{2\omega_{\mathrm{in},\vec k}}}\exp(-i\omega_{\mathrm{in},\vec k}r'_t),
 \qquad
-u_{\vec k}^{\mathrm{out}}(t')\sim\frac{1}{\sqrt{2\omega_{\mathrm{out},\vec k}}}\exp(-i\omega_{\mathrm{out},\vec k}t'),
+u_{\vec k}^{\mathrm{out}}(r'_t)\sim\frac{1}{\sqrt{2\omega_{\mathrm{out},\vec k}}}\exp(-i\omega_{\mathrm{out},\vec k}r'_t),
 $$
 
 normalized by the Klein–Gordon inner product. Both sets solve the same second-order equation; they are related by a linear transformation with time-independent coefficients,
 
 $$
-u_{\vec k}^{\mathrm{in}}(t')=\alpha_{\vec k}\,u_{\vec k}^{\mathrm{out}}(t')+\beta_{\vec k}\,\big(u_{\vec k}^{\mathrm{out}}(t')\big)^* ,
+u_{\vec k}^{\mathrm{in}}(r'_t)=\alpha_{\vec k}\,u_{\vec k}^{\mathrm{out}}(r'_t)+\beta_{\vec k}\,\big(u_{\vec k}^{\mathrm{out}}(r'_t)\big)^* ,
 $$
 
 and the same transformation acts on the mode operators. Writing the in-operators in terms of the out-operators, and mixing the two charge-conjugate modes that carry the same momentum magnitude,
@@ -177,18 +177,18 @@ which is the standard result and is the quantity that the functional integral pr
 
 ## An Exactly Solvable Case: the Sudden Quench
 
-The simplest background with a nonzero effect is a sudden change of the frequency at $t'=0$, the limit of a quench that is fast compared with the oscillation period. Take
+The simplest background with a nonzero effect is a sudden change of the frequency at $r'_t=0$, the limit of a quench that is fast compared with the oscillation period. Take
 
 $$
-\omega(t')=\omega_1\ (\text{for }t'<0),
+\omega(r'_t)=\omega_1\ (\text{for }r'_t<0),
 \qquad
-\omega(t')=\omega_2\ (\text{for }t'>0),
+\omega(r'_t)=\omega_2\ (\text{for }r'_t>0),
 $$
 
-a real scalar mode for economy; the complex case doubles the modes and the pair count below is the same per mode. The in-mode is $u_{\mathrm{in}}(t')=\exp(-i\omega_1 t')/\sqrt{2\omega_1}$ for $t'<0$. The constant prefactor is common to both regions and cancels in the matching, so continuity of $u$ and $du/dt'$ at $t'=0$ may be imposed on the un-normalized form $\exp(-i\omega_1 t')$, whose value and derivative at the origin are $1$ and $-i\omega_1$; this requires the out-region form
+a real scalar mode for economy; the complex case doubles the modes and the pair count below is the same per mode. The in-mode is $u_{\mathrm{in}}(r'_t)=\exp(-i\omega_1 r'_t)/\sqrt{2\omega_1}$ for $r'_t<0$. The constant prefactor is common to both regions and cancels in the matching, so continuity of $u$ and $du/dr'_t$ at $r'_t=0$ may be imposed on the un-normalized form $\exp(-i\omega_1 r'_t)$, whose value and derivative at the origin are $1$ and $-i\omega_1$; this requires the out-region form
 
 $$
-\exp(-i\omega_1 t')=A\,\exp(-i\omega_2 t')+B\,\exp(+i\omega_2 t'),
+\exp(-i\omega_1 r'_t)=A\,\exp(-i\omega_2 r'_t)+B\,\exp(+i\omega_2 r'_t),
 \qquad
 A+B=1,
 \qquad
@@ -203,7 +203,7 @@ A=\frac{1}{2}\left(1+\frac{\omega_1}{\omega_2}\right),
 B=\frac{1}{2}\left(1-\frac{\omega_1}{\omega_2}\right).
 $$
 
-Rescaling to the canonical normalizations of both modes, $u_{\mathrm{in}}=\alpha u_{\mathrm{out}}+\beta u_{\mathrm{out}}^*$ with $u_{\mathrm{in}}=\exp(-i\omega_1t')/\sqrt{2\omega_1}$ and $u_{\mathrm{out}}=\exp(-i\omega_2t')/\sqrt{2\omega_2}$, gives
+Rescaling to the canonical normalizations of both modes, $u_{\mathrm{in}}=\alpha u_{\mathrm{out}}+\beta u_{\mathrm{out}}^*$ with $u_{\mathrm{in}}=\exp(-i\omega_1r'_t)/\sqrt{2\omega_1}$ and $u_{\mathrm{out}}=\exp(-i\omega_2r'_t)/\sqrt{2\omega_2}$, gives
 
 $$
 \alpha=A\sqrt{\frac{\omega_2}{\omega_1}},
@@ -249,7 +249,7 @@ The standard realizations are worth naming for orientation. Cosmological particl
 
 ## Summary
 
-Scalar pair creation is the production of particle–antiparticle pairs by a classical background that breaks time-translation invariance. In the framework the background is a central-valued classical field $\tilde Q_5=\xi e_t$ coupling through $\mathrm{Sc}(\tilde{Ξ}^{*}\tilde{Ξ})$, so a homogeneous background makes the frequency time-dependent, $d^2u_{\vec k}/d{r'_{t}}^2+\omega_{\vec k}^2(t')u_{\vec k}=0$ with $\omega_{\vec k}^2=\vec k^2+\mu^2+g\xi(t')$, and the effective mass-squared is the time-dependent level set of the biquaternion norm of the material four-wavevector, $\mu^2+g\xi=-\mathrm{Sc}(\langle\tilde P\rangle_{\natural})$. The in- and out-mode decompositions are related by a Bogoliubov transformation mixing $a^{\mathrm{fop}}_{\vec k}$ with ${b^{\mathrm{fop}}_{-\vec k}}^\dagger$, with $|\alpha_{\vec k}|^2-|\beta_{\vec k}|^2=1$.
+Scalar pair creation is the production of particle–antiparticle pairs by a classical background that breaks time-translation invariance. In the framework the background is a central-valued classical field $\tilde Q_5=\xi e_t$ coupling through $\mathrm{Sc}(\tilde{Ξ}^{*}\tilde{Ξ})$, so a homogeneous background makes the frequency time-dependent, $d^2u_{\vec k}/d{r'_{t}}^2+\omega_{\vec k}^2(r'_t)u_{\vec k}=0$ with $\omega_{\vec k}^2=\vec k^2+\mu^2+g\xi(r'_t)$, and the effective mass-squared is the time-dependent level set of the biquaternion norm of the material four-wavevector, $\mu^2+g\xi=-\mathrm{Sc}(\langle\tilde P\rangle_{\natural})$. The in- and out-mode decompositions are related by a Bogoliubov transformation mixing $a^{\mathrm{fop}}_{\vec k}$ with ${b^{\mathrm{fop}}_{-\vec k}}^\dagger$, with $|\alpha_{\vec k}|^2-|\beta_{\vec k}|^2=1$.
 
 The transformation is charge neutral: its generator $G_{\vec k}={a^{\mathrm{fop}}_{\vec k}}^\dagger {b^{\mathrm{fop}}_{-\vec k}}^\dagger-a^{\mathrm{fop}}_{\vec k}b^{\mathrm{fop}}_{-\vec k}$ commutes with the $\mathrm{U}(1)$ charge, so the background creates pairs and not single quanta. The in-vacuum is a two-mode squeezed state, the mean number of created pairs per mode is $|\beta_{\vec k}|^2$, and the vacuum persistence amplitude is $|\langle0_{\mathrm{out}}|0_{\mathrm{in}}\rangle|^2=1/|\alpha_{\vec k}|^2=1/(1+|\beta_{\vec k}|^2)$, with the continuum product $\exp\big(-\int\frac{d^3k}{(2\pi)^3}\ln(1+|\beta_{\vec k}|^2)\big)$. On the sudden-quench background $\omega_1\to\omega_2$ the result is $|\beta|^2=(\omega_2-\omega_1)^2/(4\omega_1\omega_2)$, verified numerically, with $|\alpha|^2-|\beta|^2=1$ to fifteen decimal places.
 
@@ -265,8 +265,8 @@ The process is standard scalar quantum field theory in an external background, t
 | $\mathbb{C}_{\mathbb{B}}=\mathrm{span}_{\mathbb{R}}\{e_t,ie_t\}$ | Centre; value space of the background |
 | $\tilde{Ξ}=\xi^{\mathrm{scl}}\,e_t$, $\tilde Q_5=\xi\,e_t$ | Scalar field and central background |
 | $\mathcal{L}_{\mathrm{int}}=-g\,\mathrm{Sc}(\tilde{Ξ}^{*}\tilde{Ξ})\xi$ | Central interaction |
-| $\omega_{\vec k}^2(t')=\vec k^2+\mu^2+g\xi(t')$ | Time-dependent frequency |
-| $\tilde P_{\vec k}(t')=i\omega_{\vec k}(t')e_t+\vec k$ | Material four-wavevector; $\langle\tilde P\rangle_{\natural}$ its biquaternion norm |
+| $\omega_{\vec k}^2(r'_t)=\vec k^2+\mu^2+g\xi(r'_t)$ | Time-dependent frequency |
+| $\tilde P_{\vec k}(r'_t)=i\omega_{\vec k}(r'_t)e_t+\vec k$ | Material four-wavevector; $\langle\tilde P\rangle_{\natural}$ its biquaternion norm |
 | $\omega_{\mathrm{in}},\omega_{\mathrm{out}}$ | Asymptotic frequencies |
 | $\alpha_{\vec k},\beta_{\vec k}$ | Bogoliubov coefficients, $\vert\alpha\vert^2-\vert\beta\vert^2=1$ |
 | $r_{\vec k}$, $\tanh r_{\vec k}=\vert\beta_{\vec k}/\alpha_{\vec k}\vert$ | Squeezing parameter |

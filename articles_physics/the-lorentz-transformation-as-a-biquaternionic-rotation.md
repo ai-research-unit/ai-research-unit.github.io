@@ -12,7 +12,7 @@ This article develops the biquaternionic formulation of the Lorentz transformati
 
 The article is organized as follows. First the $i c r'_t$ convention and the Euclidean form of the metric are recalled, because this is what makes the Lorentz transformation a rotation. Then the boost biquaternion is defined and its properties established. The rotor conjugation is stated and verified against the standard component formulas. The relation between the boost biquaternion and the four-velocity is derived. The group structure is identified, and the optical experiments that select this group rather than the Galilean one are recorded, with their ownership marked. Finally, the subtleties introduced by the complex nature of the rotation and by the local complex structure are discussed.
 
-The conventions are those of the companion articles: the biquaternion algebra is $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, the quaternion basis is $e_t = 1, \vec e_x, \vec e_y, \vec e_z$ with $\vec e_k^2 = -e_t$, the scalar imaginary is $i$, and the biquaternionic gradient is $\tilde{\nabla} = e_t\partial/\partial Q_t + \vec e_x\partial/\partial Q_x + \vec e_y\partial/\partial Q_y + \vec e_z\partial/\partial Q_z$. Throughout, the symbol $c$ denotes the **speed of light in the medium**, $c = 1/\sqrt{\epsilon\mu}$, and $c_0$ denotes the **vacuum speed of light**, $c_0 = 1/\sqrt{\epsilon_0\mu_0}$. In vacuum, $c = c_0$. The symbol $\vec v_b$ (or $\vec v$) is reserved for particle and frame velocities. A pure boost is written $\tilde U_{\mathrm b}$, the rotation factor $\tilde u_{\mathrm r}$, and the general rotor $\tilde U^{\mathrm{lor}}=\tilde U_{\mathrm b}\tilde u_{\mathrm r}$; the boost formulas below are the case $\tilde u_{\mathrm r}=e_t$, and a general transformation is recovered by multiplying the boost on the right by the rotation.
+The conventions are those of the companion articles: the biquaternion algebra is $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, the quaternion basis is $e_t = 1, \vec e_x, \vec e_y, \vec e_z$ with $\vec e_k^2 = -e_t$, the scalar imaginary is $i$, and the biquaternionic gradient is $\tilde{\nabla} = e_t\partial/\partial R_t + \vec e_x\partial/\partial R_x + \vec e_y\partial/\partial R_y + \vec e_z\partial/\partial R_z$. Throughout, the symbol $c$ denotes the **speed of light in the medium**, $c = 1/\sqrt{\epsilon\mu}$, and $c_0$ denotes the **vacuum speed of light**, $c_0 = 1/\sqrt{\epsilon_0\mu_0}$. In vacuum, $c = c_0$. The symbol $\vec v_b$ (or $\vec v$) is reserved for particle and frame velocities. A pure boost is written $\tilde U_{\mathrm b}$, the rotation factor $\tilde u_{\mathrm r}$, and the general rotor $\tilde U^{\mathrm{lor}}=\tilde U_{\mathrm b}\tilde u_{\mathrm r}$; the boost formulas below are the case $\tilde u_{\mathrm r}=e_t$, and a general transformation is recovered by multiplying the boost on the right by the rotation.
 
 ## The $i c r'_t$ Convention and the Euclidean Metric
 
@@ -25,12 +25,12 @@ $$
 With the substitution $x_0= i c r'_t$, the interval becomes
 
 $$
-ds^2 = (ic\,dt')^2 + dx^2 + dy^2 + dz^2 = (x_0)^2 + (x_1)^2 + (x_2)^2 + (x_3)^2.
+ds^2 = (ic\,dr'_t)^2 + dx^2 + dy^2 + dz^2 = (x_0)^2 + (x_1)^2 + (x_2)^2 + (x_3)^2.
 $$
 
 This is the **Euclidean** quadratic form in the four real variables $(x_0, x_1, x_2, x_3)$. The Lorentzian signature has been absorbed into the **complex structure** of the time coordinate.
 
-The group that preserves this form on $\mathbb{R}^4$ is the rotation group $SO(4)$. When the coordinates are complex — as they are when $x_0= i c r'_t$ with $t'$ real — the group becomes $SO(4, \mathbb{C})$, the group of complex rotations preserving the **general plain bilinear form**
+The group that preserves this form on $\mathbb{R}^4$ is the rotation group $SO(4)$. When the coordinates are complex — as they are when $x_0= i c r'_t$ with $r'_t$ real — the group becomes $SO(4, \mathbb{C})$, the group of complex rotations preserving the **general plain bilinear form**
 
 $$
 (x_0)^2 + (x_1)^2 + (x_2)^2 + (x_3)^2.
@@ -398,11 +398,11 @@ We are now in a position to discuss the subtleties of working over the complex n
 
 ### Real vs. Complex Rotations
 
-The Lorentz transformation is a **real** transformation of the real coordinates $(r'_t,r_x,r_y,r_z)$. But in the $i c r'_t$ convention, the time coordinate is $i c r'_t$, which is **imaginary** in the real slice. So the transformation that acts on $(i c r'_t, x, y, z)$ is a **complex** rotation, even though the original transformation on $(r'_t,r_x,r_y,r_z)$ is real.
+The Lorentz transformation is a **real** transformation of the real coordinates $(r'_t,r_x,r_y,r_z)$. But in the $i c r'_t$ convention, the time coordinate is $i c r'_t$, which is **imaginary** in the real slice. So the transformation that acts on $(i c r'_t, r_x, r_y, r_z)$ is a **complex** rotation, even though the original transformation on $(r'_t,r_x,r_y,r_z)$ is real.
 
 The complex nature of the rotation appears in the following places:
 
-1. **The rotation angle is imaginary.** A boost is a rotation by an imaginary angle $i\theta^{\mathrm{rpd}}$ in the plane spanned by the time direction and the boost direction. In real Euclidean geometry, a rotation by an imaginary angle is not a rotation at all — it is a **hyperbolic rotation**. The Lorentz boost is precisely this: a hyperbolic rotation in the $(i c r'_t, x)$ plane.
+1. **The rotation angle is imaginary.** A boost is a rotation by an imaginary angle $i\theta^{\mathrm{rpd}}$ in the plane spanned by the time direction and the boost direction. In real Euclidean geometry, a rotation by an imaginary angle is not a rotation at all — it is a **hyperbolic rotation**. The Lorentz boost is precisely this: a hyperbolic rotation in the $(i c r'_t, r_x)$ plane.
 
 2. **The rotor has an imaginary vector part.** The boost biquaternion $\tilde U_{\mathrm b} = \cosh\frac{\theta^{\mathrm{rpd}}}{2} + i\sinh\frac{\theta^{\mathrm{rpd}}}{2}\vec u_{\mathrm b}$ has a purely imaginary vector part. In contrast, a spatial rotation rotor has a real vector part.
 
@@ -410,7 +410,7 @@ The complex nature of the rotation appears in the following places:
 
 ### The Euclidean Form Is Only Apparent
 
-The Euclidean form $ds^2 = (x_0)^2 + (x_1)^2 + (x_2)^2 + (x_3)^2$ with $x_0= i c r'_t$ appears to be a genuine Euclidean metric on $\mathbb{R}^4$. But it is not: the coordinate $x_0$ is constrained to be imaginary (since $t'$ is real and $x_0= i c r'_t$). So the "real slice" on which the Lorentz transformations act is not all of $\mathbb{R}^4$ but the subspace $\{(i c r'_t, x, y, z) : t', x, y, z \in \mathbb{R}\}$, which is a **complex subspace** of $\mathbb{C}^4$.
+The Euclidean form $ds^2 = (x_0)^2 + (x_1)^2 + (x_2)^2 + (x_3)^2$ with $x_0= i c r'_t$ appears to be a genuine Euclidean metric on $\mathbb{R}^4$. But it is not: the coordinate $x_0$ is constrained to be imaginary (since $r'_t$ is real and $x_0= i c r'_t$). So the "real slice" on which the Lorentz transformations act is not all of $\mathbb{R}^4$ but the subspace $\{(i c r'_t, r_x, r_y, r_z) : r'_t, r_x, r_y, r_z \in \mathbb{R}\}$, which is a **complex subspace** of $\mathbb{C}^4$.
 
 The Lorentz group $SO(1,3)$ acts on this slice as the subgroup of $SO(4, \mathbb{C})$ that preserves the slice. So the statement "the Lorentz transformation is a rotation in 4-dimensional Euclidean space" is correct, but the space in question is $\mathbb{C}^4$ with a general plain bilinear form, not $\mathbb{R}^4$ with a real Euclidean form.
 

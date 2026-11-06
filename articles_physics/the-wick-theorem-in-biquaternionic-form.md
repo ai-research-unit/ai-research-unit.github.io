@@ -43,7 +43,7 @@ The two-point function is the **Feynman propagator**, and the product over pairs
 
 **The fermionic sign.** For fermionic fields the time-ordered product carries a graded sign: the product is defined with a minus sign for every transposition of two fermionic factors needed to bring them into time order, and the contraction of two fermionic fields may equivalently be read off from the ordinary product plus the anticommutator. For Grassmann-valued or operator-valued fermions the definition is
 $$
-T\big\{\tilde{Ξ}^{\mathrm{fop}}_i\tilde{Ξ}^{\mathrm{fop}}_j\big\} = \Theta(t'_i-t'_j)\,\tilde{Ξ}^{\mathrm{fop}}_i\tilde{Ξ}^{\mathrm{fop}}_j - \Theta(t'_j-t'_i)\,\tilde{Ξ}^{\mathrm{fop}}_j\tilde{Ξ}^{\mathrm{fop}}_i ,
+T\big\{\tilde{Ξ}^{\mathrm{fop}}_i\tilde{Ξ}^{\mathrm{fop}}_j\big\} = \Theta(r'_{t,i}-r'_{t,j})\,\tilde{Ξ}^{\mathrm{fop}}_i\tilde{Ξ}^{\mathrm{fop}}_j - \Theta(r'_{t,j}-r'_{t,i})\,\tilde{Ξ}^{\mathrm{fop}}_j\tilde{Ξ}^{\mathrm{fop}}_i ,
 $$
 with the minus sign present for fermions and absent for bosons. The relative sign between the possible complete pairings of a $2m$-point function is the **parity of the permutation** that realizes the pairing, which is why the fermionic Wick theorem is the bosonic one multiplied by the signature of the pairing:
 $$

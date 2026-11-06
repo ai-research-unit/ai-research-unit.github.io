@@ -14,11 +14,11 @@ Nothing here endorses the source's programme, and nothing here uses it as eviden
 
 The derivative of this article is the corpus's biquaternionic gradient, and it is the only first-order operator on the corpus's side of the comparison:
 $$
-\tilde\nabla=\sum_\mu e_\mu\frac{\partial}{\partial Q_\mu},
+\tilde\nabla=\sum_\mu e_\mu\frac{\partial}{\partial R_\mu},
 \qquad
-\tilde\nabla^{\natural}=\sum_\mu\varepsilon_\mu e_\mu\frac{\partial}{\partial Q_\mu},
+\tilde\nabla^{\natural}=\sum_\mu\varepsilon_\mu e_\mu\frac{\partial}{\partial R_\mu},
 \qquad
-\Box=\mathrm{Sc}\bigl(\tilde\nabla\tilde\nabla^{\natural}\bigr)=\frac{\partial^2}{\partial Q_t^2}+\Delta_Q ,
+\Box=\mathrm{Sc}\bigl(\tilde\nabla\tilde\nabla^{\natural}\bigr)=\frac{\partial^2}{\partial R_t^2}+\Delta_Q ,
 $$
 which on the material sector reads $\Box=\Delta-c^{-2}\partial^2/\partial {r'_{t}}^2$. The first-order dynamics is the one-sided pair $\tilde\nabla\tilde{Ξ}^{\mathrm{sp}}_R=m\tilde{Ξ}^{\mathrm{sp}}_L$, $\tilde\nabla^{\natural}\tilde{Ξ}^{\mathrm{sp}}_L=m\tilde{Ξ}^{\mathrm{sp}}_R$, and $\tilde\nabla^2$ is **not** $\Box$: the two differ because $e_t$ commutes with the three spatial units and the mixed derivatives then add, so no single field carries the mass at first order.
 
@@ -185,14 +185,14 @@ and declares it zero "by orthogonality". Orthogonality does not deliver that: a 
 
 The kinetic term of that action is one Dirac operator, the corpus's Dirac equation is another, and the two are not the same operator written twice, so they are displayed separately. The source's operator, written as the action it is, is
 $$
-\tilde{Ξ}^{\mathrm{sp}}\longmapsto iC^0\frac{\partial\tilde{Ξ}^{\mathrm{sp}}}{\partial t}-i\sum_k C_k\frac{\partial\tilde{Ξ}^{\mathrm{sp}}}{\partial x_k}
-=-\frac{\partial\tilde{Ξ}^{\mathrm{sp}}}{\partial t}\vec e_x+\sum_k\vec e_k\frac{\partial\tilde{Ξ}^{\mathrm{sp}}}{\partial x_k}\vec e_y ,
+\tilde{Ξ}^{\mathrm{sp}}\longmapsto iC^0\frac{\partial\tilde{Ξ}^{\mathrm{sp}}}{\partial r_t}-i\sum_k C_k\frac{\partial\tilde{Ξ}^{\mathrm{sp}}}{\partial x_k}
+=-\frac{\partial\tilde{Ξ}^{\mathrm{sp}}}{\partial r_t}\vec e_x+\sum_k\vec e_k\frac{\partial\tilde{Ξ}^{\mathrm{sp}}}{\partial x_k}\vec e_y ,
 $$
 where $C^a=g^{ab}C_b$, so that $C^k=-C_k$, and the unit $i$ of the operator cancels the unit of the action once in each term. It is **two-sided**: the time derivative acts by right multiplication alone, because the left multiplier of $C_t$ is the identity of the algebra, the three spatial derivatives act by a left and a right multiplication, and the mass acts by left multiplication. Its square is minus the flat d'Alembertian of $g$, because the four actions anticommute on distinct indices and square to $\pm1$,
 $$
 \bigl(iC^a\frac{\partial}{\partial x_a}\bigr)^2
 =-\varepsilon_\mu\frac{\partial^2}{\partial x_\mu^2}
-=-\partial^2/\partial t^2+\Delta ,
+=-\partial^2/\partial r_t^2+\Delta ,
 \qquad
 \Delta=\sum_k\partial^2/\partial x_k^2 ,
 $$
@@ -227,7 +227,7 @@ $$
 $$
 is curvature-free by construction, and the teleparallel gauge is the one in which the whole connection is contorsion. Both were verified independently for this corpus in *Torsion, Contorsion and the Spin Connection in Biquaternionic Form*, where the vanishing of the curvature and the non-vanishing of the torsion were checked exactly.
 
-One defect in that paragraph is checkable on the page and needs no computation. The display for the contorsion reads $K_{\mu ab}=-\omega_{\mu ab}(e)=e_{a\nu}\frac{\partial e_{b]}{}^{\nu}}{\partial x^{[\mu}}-e_{b\nu}\frac{\partial e_{a]}{}^{\nu}}{\partial x^{[\mu}}$, and the line immediately below, which the same paragraph equates to it, reads $\kappa\,\mathrm{ReTr}\langle\tilde{Ξ}^{\mathrm{sp}},\,C_{ab}\,\partial \tilde{Ξ}^{\mathrm{sp}}/\partial x_\mu\rangle=-e_{a\nu}\frac{\partial e_{b]}{}^{\nu}}{\partial x^{[\mu}}-e_{b\nu}\frac{\partial e_{a]}{}^{\nu}}{\partial x^{[\mu}}$. The second term changes sign between two consecutive displays of the same object, so at most one of them is right.
+One defect in that paragraph is checkable on the page and needs no computation. The display for the contorsion reads $K_{\mu ab}=-\omega_{\mu ab}(e)=e_{a\nu}\frac{\partial e_{b]}{}^{\nu}}{\partial r_x^{[\mu}}-e_{b\nu}\frac{\partial e_{a]}{}^{\nu}}{\partial r_x^{[\mu}}$, and the line immediately below, which the same paragraph equates to it, reads $\kappa\,\mathrm{ReTr}\langle\tilde{Ξ}^{\mathrm{sp}},\,C_{ab}\,\partial \tilde{Ξ}^{\mathrm{sp}}/\partial x_\mu\rangle=-e_{a\nu}\frac{\partial e_{b]}{}^{\nu}}{\partial r_x^{[\mu}}-e_{b\nu}\frac{\partial e_{a]}{}^{\nu}}{\partial r_x^{[\mu}}$. The second term changes sign between two consecutive displays of the same object, so at most one of them is right.
 
 What is *not* correct is what the source puts into that identity. The teleparallel gauge condition, read as an equation for the contorsion — hence, through Eq. (6), for the bilinear
 $$
@@ -238,8 +238,8 @@ $$
 The display that states the constraint is also the clearest single measure of the dimensional failure, because it puts three different powers of mass in one equation. In the article's own letters it reads
 $$
 \mathrm{Riem}_{\mu\nu ab}\bigl(\omega(e)\bigr)
-=-2\kappa\,D_{[\mu}\mathrm{ReTr}\bigl\langle\tilde{Ξ}^{\mathrm{sp}},\,C_{ab}\,\frac{\partial\tilde{Ξ}^{\mathrm{sp}}}{\partial x^{\nu]}}\bigr\rangle
--2\kappa^{2}\,\mathrm{ReTr}\bigl\langle\tilde{Ξ}^{\mathrm{sp}},\,C_{ac}\,\frac{\partial\tilde{Ξ}^{\mathrm{sp}}}{\partial x^{[\mu}}\bigr\rangle\mathrm{ReTr}\bigl\langle\tilde{Ξ}^{\mathrm{sp}},\,C_{c|b]}\,\frac{\partial\tilde{Ξ}^{\mathrm{sp}}}{\partial x^{\nu]}}\bigr\rangle ,
+=-2\kappa\,D_{[\mu}\mathrm{ReTr}\bigl\langle\tilde{Ξ}^{\mathrm{sp}},\,C_{ab}\,\frac{\partial\tilde{Ξ}^{\mathrm{sp}}}{\partial r_x^{\nu]}}\bigr\rangle
+-2\kappa^{2}\,\mathrm{ReTr}\bigl\langle\tilde{Ξ}^{\mathrm{sp}},\,C_{ac}\,\frac{\partial\tilde{Ξ}^{\mathrm{sp}}}{\partial r_x^{[\mu}}\bigr\rangle\mathrm{ReTr}\bigl\langle\tilde{Ξ}^{\mathrm{sp}},\,C_{c|b]}\,\frac{\partial\tilde{Ξ}^{\mathrm{sp}}}{\partial r_x^{\nu]}}\bigr\rangle ,
 $$
 the bivector $C_{ab}$ of the composites, and with the counting used throughout the article — $[\tilde{Ξ}^{\mathrm{sp}}]=M^{3/2}$, $[\partial]=M$, $[\kappa]=M^{-2}$ — the three members scale as
 $$
@@ -277,10 +277,10 @@ for every $\tilde{Ξ}^{\mathrm{sp}}$. It is the gradient of $-t$ and of nothing 
 
 The rest of that section is the retarded kernel and the bilocal action
 $$
-K(x-y)=\ell_c^{-2}\,\mathrm{H}^{\mathrm{hvs}}(x_0-y_0)\,\Delta_m(x-y),
+K(r_x-r_y)=\ell_c^{-2}\,\mathrm{H}^{\mathrm{hvs}}(x_0-y_0)\,\Delta_m(r_x-r_y),
 \qquad
-\Delta S_K=\tfrac12\int d^4x\,d^4y\;\frac{\partial\tau}{\partial x_\mu}(x)\,K(x-y)\,\frac{\partial\tau}{\partial x^\mu}(y),
-\qquad \frac{\partial}{\partial x^\mu}=\varepsilon_\mu\,\frac{\partial}{\partial x_\mu}\quad(\text{no sum}) .
+\Delta S_K=\tfrac12\int d^4x\,d^4y\;\frac{\partial\tau}{\partial x_\mu}(r_x)\,K(r_x-r_y)\,\frac{\partial\tau}{\partial r_x^\mu}(r_y),
+\qquad \frac{\partial}{\partial r_x^\mu}=\varepsilon_\mu\,\frac{\partial}{\partial x_\mu}\quad(\text{no sum}) .
 $$
 The kernel is the standard retarded Green's function combination; the source itself notes that its Lorentz invariance holds "modulo frame choice for $\Theta$", which is the standard qualification, and since $\tau$ is not the field claimed, the construction adds nothing testable. The source's own "Caveat" names Kozyrev's claims as "controversial and largely unreplicated". The corpus's route to causal asymmetry, in *Causality and the Light Cone as an Information Barrier in Biquaternionic Form* and *Thermal Time and the Modular Flow in the Biquaternion Framework*, does not use Kozyrev and does not depend on this section.
 
@@ -333,11 +333,11 @@ The implication does not hold, and the failure is an index count. The divergence
 $$
 \partial^\mu J_{S\mu}=\alpha\,\epsilon_{\mu\nu\rho\sigma}\,\partial^\mu T_{\nu\rho\sigma} ,
 $$
-and the epsilon needs four distinct indices, so the contraction keeps only the part of the gradient that is antisymmetric in all four — contracting the antisymmetrised gradient, which in four dimensions has the single independent component $\frac{\partial T_{123]}}{\partial x_{[0}}$. Hence the divergence is $4!\,\alpha\,\frac{\partial T_{123]}}{\partial x_{[0}}$, verified numerically on random fields, and it vanishes only when that component does — that is, only when the three-form part of $T$ is closed — while $\Box T=0$ neither requires nor supplies closedness: the wave equation constrains the four components one at a time and says nothing about the antisymmetrised gradient. An explicit counterexample settles it: the field $T_{123}(x)=x_0$, all other components zero, satisfies $\Box T_{\lambda\mu\nu}=0$ identically, while — taking $\epsilon_{0123}=+1$, so that $\partial^0=\partial/\partial t$ —
+and the epsilon needs four distinct indices, so the contraction keeps only the part of the gradient that is antisymmetric in all four — contracting the antisymmetrised gradient, which in four dimensions has the single independent component $\frac{\partial T_{123]}}{\partial x_{[0}}$. Hence the divergence is $4!\,\alpha\,\frac{\partial T_{123]}}{\partial x_{[0}}$, verified numerically on random fields, and it vanishes only when that component does — that is, only when the three-form part of $T$ is closed — while $\Box T=0$ neither requires nor supplies closedness: the wave equation constrains the four components one at a time and says nothing about the antisymmetrised gradient. An explicit counterexample settles it: the field $T_{123}(x)=x_0$, all other components zero, satisfies $\Box T_{\lambda\mu\nu}=0$ identically, while — taking $\epsilon_{0123}=+1$, so that $\partial^0=\partial/\partial r_t$ —
 $$
 J_{S0}=\alpha\,\epsilon_{0123}\,T_{123}=\alpha\,x_0,
 \qquad
-\frac{\partial J_{S\mu}}{\partial x_\mu}=\alpha\,\epsilon_{0123}\,\frac{\partial T_{123}}{\partial x^0}=\alpha\ne0 ,
+\frac{\partial J_{S\mu}}{\partial x_\mu}=\alpha\,\epsilon_{0123}\,\frac{\partial T_{123}}{\partial r_x^0}=\alpha\ne0 ,
 $$
 verified directly. Conservation would hold if $T_{\nu\rho\sigma}$ were the dual of the gradient of a *harmonic* potential, $T_{\nu\rho\sigma}=\epsilon_{\nu\rho\sigma\lambda}\partial/\partial x_\lambda\vartheta^{\mathrm{fld}}$ with $\Box\vartheta^{\mathrm{fld}}=0$; the source neither assumes that form nor derives it. The claimed second-law avatar therefore rests on an identity that fails.
 

@@ -59,7 +59,7 @@ $$
 Both summands are four-real-dimensional. A general Hermitian element and a general anti-Hermitian element are
 $$
 \tilde R_\psi = c r_t\,e_t + i\vec r_\psi, \qquad \vec r_\psi = r'_x\vec e_x+r'_y\vec e_y+r'_z\vec e_z, \qquad
-\tilde R_\varphi = i x_t\,e_t + r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z, \qquad c r_t,r'_x,r'_y,r'_z,x_t,x,y,z\in\mathbb{R},
+\tilde R_\varphi = i x_t\,e_t + r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z, \qquad c r_t,r'_x,r'_y,r'_z,x_t,r_x,r_y,r_z\in\mathbb{R},
 $$
 so that $\mathbb{M}_+$ is the span of $\{e_t, i\vec e_x, i\vec e_y, i\vec e_z\}$ and $\mathbb{M}_-$ is the span of $\{ie_t, \vec e_x, \vec e_y, \vec e_z\}$. The real structure
 $$

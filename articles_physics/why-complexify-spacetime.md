@@ -23,7 +23,7 @@ The minus sign sits explicitly in the metric. This is the standard convention. I
 But it was not always so. Minkowski himself, and most physicists before the 1960s, wrote the interval differently:
 
 $$
-\boxed{\;ds^2 = (ic_0\,dt')^2 + dx^2 + dy^2 + dz^2\;}.
+\boxed{\;ds^2 = (ic_0\,dr'_t)^2 + dx^2 + dy^2 + dz^2\;}.
 $$
 
 Here the imaginary unit $i$ multiplies the time coordinate and the vacuum speed of light. The metric is **Euclidean** — all plus signs. The Lorentzian structure is not in the metric; it is in the coordinate. This is the $i c r'_t$ convention.
@@ -36,7 +36,7 @@ The $i c r'_t$ convention is a precise expression of this union. It says: space 
 
 ## What $i c r'_t$ Does
 
-With the substitution $Q_t = ic_0\,t'$ — the time component of the $\mathbb{B}$ frame of this series — and $Q_x=x$, $Q_y=y$, $Q_z=z$, the Minkowski interval becomes
+With the substitution $Q_t = ic_0\,r'_t$ — the time component of the $\mathbb{B}$ frame of this series — and $Q_x=x$, $Q_y=y$, $Q_z=z$, the Minkowski interval becomes
 
 $$
 ds^2 = Q_t^2 + Q_x^2 + Q_y^2 + Q_z^2,
@@ -52,10 +52,10 @@ $$
 \Box = -\frac{1}{c_0^2}\frac{\partial^2}{\partial {r'_{t}}^2} + \nabla^2
 $$
 
-becomes, with $Q_t = ic_0 t'$,
+becomes, with $Q_t = ic_0 r'_t$,
 
 $$
-\boxed{\;\Box = \sum_\mu\partial^2_{Q_\mu}\;},
+\boxed{\;\Box = \sum_\mu\partial^2/\partial R_\mu^2\;},
 $$
 
 which is the ordinary Euclidean Laplacian in four dimensions. Maxwell's equations and the wave equation take their simplest possible form.
@@ -68,7 +68,7 @@ The switch away from $i c r'_t$ happened for good technical reasons, and it is w
 
 **1. Curved spacetime.** In general relativity, the metric $g_{\mu\nu}$ is a dynamical field. There is no global coordinate transformation that makes it Euclidean in the way $Q_t = i c r'_t$ does for flat spacetime. The $i c r'_t$ convention is tied to the existence of a global inertial frame.
 
-**2. Quantum field theory.** The Wick rotation $t' \to -i\tau$ connects Lorentzian QFT to Euclidean statistical mechanics. In the modern formulation, this is understood as a deformation of the metric, not a change of coordinates. Writing $i c r'_t$ makes the rotation look like a coordinate change, which obscures the fact that it is really a change in the causal structure.
+**2. Quantum field theory.** The Wick rotation $r'_t \to -i\tau$ connects Lorentzian QFT to Euclidean statistical mechanics. In the modern formulation, this is understood as a deformation of the metric, not a change of coordinates. Writing $i c r'_t$ makes the rotation look like a coordinate change, which obscures the fact that it is really a change in the causal structure.
 
 **3. Spinors and the Dirac equation.** The Dirac equation is naturally written in terms of a Lorentzian metric. The $i c r'_t$ convention interacts awkwardly with the spinor formalism, because spinors transform under the Lorentz group in a way that depends on the signature.
 
@@ -92,7 +92,7 @@ turn a rotation by $i\theta$ into a boost of rapidity $\theta$. The hyperbolic f
 
 The objections are the ones this article already treats as real. The first is that the device is tied to a global inertial frame and does not generalise to a curved metric — the objection that decided the question in gravitational physics. The second is subtler: if a rotation by an imaginary angle is taken at face value, it invites reading Minkowski space as a complexified $\mathbb{C}^4$, and the extra real directions that appear carry nothing observable. That objection is not about the algebra of the substitution, which is exact, but about what one is tempted to make of it.
 
-The position of this article is that the first objection is answered by making the complex structure local, which is the whole content of *The Complex Structure Should Be Local* below: the coefficient becomes $c r'_t = ct'$ with $c$ the local speed of light, and the Euclidean form of the wave operator is preserved in any medium. The second objection is the more useful one, and it is the reason this article insists on the sector structure. A complexified coordinate carries eight real parameters, and if all eight were directions of space the theory would have unobservable dimensions. In the biquaternion framework they are not: the material sector keeps the real spatial parts and the imaginary time part, the informational sector keeps the complementary ones, and the signature of each is a projection of the complex structure rather than an extra dimension. The disciplines that make this precise are the ones stated in *Algebra and Element Conventions*.
+The position of this article is that the first objection is answered by making the complex structure local, which is the whole content of *The Complex Structure Should Be Local* below: the coefficient becomes $c r'_t = cr'_t$ with $c$ the local speed of light, and the Euclidean form of the wave operator is preserved in any medium. The second objection is the more useful one, and it is the reason this article insists on the sector structure. A complexified coordinate carries eight real parameters, and if all eight were directions of space the theory would have unobservable dimensions. In the biquaternion framework they are not: the material sector keeps the real spatial parts and the imaginary time part, the informational sector keeps the complementary ones, and the signature of each is a projection of the complex structure rather than an extra dimension. The disciplines that make this precise are the ones stated in *Algebra and Element Conventions*.
 
 What the exchange does not settle is whether the $i c r'_t$ convention should be used *in practice*, and this article does not claim that it should. It claims only that the substitution is not an inelegance to be discarded, and that the structure it exposes — a complex coordinate whose imaginary unit supplies the sign — is a fact about the geometry rather than a trick of notation. The source of the recorded exchange is the 2013 discussion by I. Guzmán de Rojas, "By dismissing Minkowski's notation $x_4 = i c r'_t$ are we not losing an essential aspect of space-time structure?"; it is an informal thread, cited as an instance of the debate and not as authority.
 
@@ -112,7 +112,7 @@ $$
 Q_\mu = q_\mu + i\,q'_\mu, \qquad q_\mu, q'_\mu \in \mathbb{R}.
 $$
 
-The material sector is described by the real coordinates $r_k$ for $k = x, y, z$ — the spatial parameters $x, y, z$ — together with the imaginary time part $c r'_t$. The informational sector — the sector whose elements carry the operator algebra of quantum physics — is described by the imaginary coordinates $r'_k$ for $k = x, y, z$ — the spatial parameters $r'_{x}, r'_{y}, r'_{z}$ — together with the real time part $c r_t$. The time coefficient carries the $i c r'_t$ structure explicitly: $r'_t = t'$, where $c = 1/\sqrt{\epsilon\mu}$ is the **local** speed of light in the medium. In vacuum, $c = c_0$ and the familiar $ic_0 t'$ form is recovered.
+The material sector is described by the real coordinates $r_k$ for $k = x, y, z$ — the spatial parameters $x, y, z$ — together with the imaginary time part $c r'_t$. The informational sector — the sector whose elements carry the operator algebra of quantum physics — is described by the imaginary coordinates $r'_k$ for $k = x, y, z$ — the spatial parameters $r'_{x}, r'_{y}, r'_{z}$ — together with the real time part $c r_t$. The time coefficient carries the $i c r'_t$ structure explicitly: $r'_t = t'$, where $c = 1/\sqrt{\epsilon\mu}$ is the **local** speed of light in the medium. In vacuum, $c = c_0$ and the familiar $ic_0 r'_t$ form is recovered.
 
 In this framework, the Lorentzian signature of the real slice is not postulated; it emerges algebraically from the complex structure. The metric convention, for all its technical convenience, hides this emergence.
 
@@ -126,7 +126,7 @@ $$
 c = \frac{1}{\sqrt{\epsilon\mu}},
 $$
 
-which differs from $c_0$. If the complex structure is determined by the local electromagnetic properties, then the correct time coefficient is $c r'_t = ct'$, not $c_0 t'$. In vacuum, $c = c_0$ and the two coincide. In a medium, they differ.
+which differs from $c_0$. If the complex structure is determined by the local electromagnetic properties, then the correct time coefficient is $c r'_t = cr'_t$, not $c_0 r'_t$. In vacuum, $c = c_0$ and the two coincide. In a medium, they differ.
 
 This is the local version of the $i c r'_t$ convention. It makes the complex structure a **field**, varying from point to point, in the same way that the metric $g_{\mu\nu}(x)$ varies in general relativity. The $i c r'_t$ convention becomes the vacuum limit of a more general local structure, just as special relativity is the local limit of general relativity.
 
@@ -144,7 +144,7 @@ Note the structural parallel with the signature argument. In the metric conventi
 
 Beyond the historical and structural arguments, several independent lines of thought support the complexification program.
 
-**Wick rotation.** The analytic continuation $t' \to -i\tau$ connects Lorentzian QFT to Euclidean statistical mechanics. The partition function of a quantum field theory at finite temperature is computed by continuing to imaginary time and imposing periodic boundary conditions, with the period being the inverse temperature. This is not merely a mathematical convenience: imaginary time is **thermodynamic time**. The imaginary direction is where temperature, entropy, and statistical weight live. If imaginary time already carries thermodynamic meaning, it is natural to ask whether the imaginary directions of a full complexified spacetime might also carry informational meaning. This is a question, not a claim.
+**Wick rotation.** The analytic continuation $r'_t \to -i\tau$ connects Lorentzian QFT to Euclidean statistical mechanics. The partition function of a quantum field theory at finite temperature is computed by continuing to imaginary time and imposing periodic boundary conditions, with the period being the inverse temperature. This is not merely a mathematical convenience: imaginary time is **thermodynamic time**. The imaginary direction is where temperature, entropy, and statistical weight live. If imaginary time already carries thermodynamic meaning, it is natural to ask whether the imaginary directions of a full complexified spacetime might also carry informational meaning. This is a question, not a claim.
 
 **Holography.** In AdS/CFT and related frameworks, the bulk geometry is dual to boundary information. The radial direction in the bulk is not just a spatial direction; it is a renormalization scale, along which moving corresponds to integrating out degrees of freedom. Geometry and information are dual descriptions of the same structure. If extra dimensions can be informational in holography, it is natural to ask whether the imaginary directions of a complexified spacetime could play an analogous role — not "extra space" in the ordinary sense, but directions carrying informational content. This is a structural analogy, not a derivation.
 
@@ -198,7 +198,7 @@ The program claims neither that real spacetime is wrong, nor that the imaginary 
 | $c = 1/\sqrt{\epsilon\mu}$ | Speed of light in the medium (local) |
 | $c_0 = 1/\sqrt{\epsilon_0\mu_0}$ | Speed of light in vacuum (global constant) |
 | $Q_t = i c r'_t$ | Complex time coordinate (local) |
-| $Q_t = i c_0 t'$ | Complex time coordinate (vacuum) |
+| $Q_t = i c_0 r'_t$ | Complex time coordinate (vacuum) |
 | $v$ | Particle or frame velocity |
 
 ## Further Reading

@@ -134,13 +134,13 @@ The symmetric traceless part of $\vec q\otimes\vec v$, the $D^{(2)}$ channel, is
 
 ### The Gradient
 
-The same truncation appears at the level of derivatives, and it is the form in which the multipole expansion actually meets the algebra. The spatial vector gradient is $\vec\nabla = \vec e_x\partial/\partial Q_x + \vec e_y\partial/\partial Q_y + \vec e_z\partial/\partial Q_z$, and its square is
+The same truncation appears at the level of derivatives, and it is the form in which the multipole expansion actually meets the algebra. The spatial vector gradient is $\vec\nabla = \vec e_x\partial/\partial R_x + \vec e_y\partial/\partial R_y + \vec e_z\partial/\partial R_z$, and its square is
 
 $$
-\vec\nabla\,\vec\nabla = \sum_{\mu,\nu}\vec e_\mu \vec e_\nu\,\partial^2/\partial Q_\mu\partial Q_\nu = -\Delta\,e_t ,
+\vec\nabla\,\vec\nabla = \sum_{\mu,\nu}\vec e_\mu \vec e_\nu\,\partial^2/\partial R_\mu\partial R_\nu = -\Delta\,e_t ,
 $$
 
-because the antisymmetric part of the product multiplies the symmetric operator $\partial^2/\partial Q_\mu\partial Q_\nu$ and cancels, leaving only the trace. The second gradient of any scalar potential is therefore a **purely central** element: whatever traceless symmetric structure $\partial^2/\partial Q_i\partial Q_jΞ$ has, the product of two gradient operators discards it. This was verified on a quadratic potential with a random symmetric Hessian, for which $\sum_{\mu\nu}\vec e_\mu \vec e_\nu\,H_{\mu\nu} = -\mathrm{tr}(H)e_t$ exactly. The derivative operator, like the algebra, stops at the trace.
+because the antisymmetric part of the product multiplies the symmetric operator $\partial^2/\partial R_\mu\partial R_\nu$ and cancels, leaving only the trace. The second gradient of any scalar potential is therefore a **purely central** element: whatever traceless symmetric structure $\partial^2/\partial R_i\partial R_jΞ$ has, the product of two gradient operators discards it. This was verified on a quadratic potential with a random symmetric Hessian, for which $\sum_{\mu\nu}\vec e_\mu \vec e_\nu\,H_{\mu\nu} = -\mathrm{tr}(H)e_t$ exactly. The derivative operator, like the algebra, stops at the trace.
 
 The two facts together — the algebra's product and its gradient — say that the finite object can iterate a vector operation arbitrarily many times and still produce only $D^{(0)}\oplus D^{(1)}$ content. The multipole order cannot be raised by multiplication or by differentiation inside the algebra.
 

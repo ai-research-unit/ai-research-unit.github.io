@@ -22,7 +22,7 @@ The article proceeds as follows. The next section reduces the framework to the t
 
 Bosonization lives in two dimensions, and the framework must be reduced before it can be stated.
 
-**The frame.** The arena is the material frame of *Frame and Metric Conventions* read in two slots, $Q_t$ and $Q_x$, reached from the four-slot frame by dropping the two spatial directions $Q_y$ and $Q_z$. The two directions of the arena are $e_t$ and $\vec e_x$. Every display below contracts with the plain weight $\varepsilon=(1,-1)$ of *Frame and Metric Conventions*, §*The Rules*, read in the arena's two slots, and every coordinate derivative is written $\partial/\partial Q_\mu$ as *Operator and Calculus Conventions* fixes it. Nothing else of the frame is restated here.
+**The frame.** The arena is the material frame of *Frame and Metric Conventions* read in two slots, $Q_t$ and $Q_x$, reached from the four-slot frame by dropping the two spatial directions $Q_y$ and $Q_z$. The two directions of the arena are $e_t$ and $\vec e_x$. Every display below contracts with the plain weight $\varepsilon=(1,-1)$ of *Frame and Metric Conventions*, §*The Rules*, read in the arena's two slots, and every coordinate derivative is written $\partial/\partial R_\mu$ as *Operator and Calculus Conventions* fixes it. Nothing else of the frame is restated here.
 
 **The two generator actions.** The two directions act on an element by multiplication on the two sides. The timelike direction is the action $A_t:Q\mapsto iQ\vec e_x$, and the spacelike direction is the action $A_x:Q\mapsto i\vec e_xQ\vec e_y$. Both are the frame's two cells read in the arena, and their products are derived here. Composing each with itself,
 $$
@@ -70,19 +70,19 @@ The reduction is a derived form. In the timelike component the cell $i\vec e_x$ 
 $$
 \boxed{\;
 j_\mu \;\longleftrightarrow\;
--\frac{1}{\sqrt{\pi}}\sum_\nu\epsilon_{\mu\nu}\varepsilon_\nu\frac{\partial\xi^{\mathrm{scl}}}{\partial Q_\nu} ,
+-\frac{1}{\sqrt{\pi}}\sum_\nu\epsilon_{\mu\nu}\varepsilon_\nu\frac{\partial\xi^{\mathrm{scl}}}{\partial R_\nu} ,
 \qquad
 \mathrm{Sc}\bigl(\tilde{Ξ}^{\mathrm{sp}*}\tilde{Ξ}^{\mathrm{sp}}\,i\vec e_x\bigr) \;\longleftrightarrow\;
 -\frac{1}{\pi\alpha}\cos\big(2\sqrt{\pi}\,\xi^{\mathrm{scl}}\big)\;},
 $$
-whose components are $j_t\leftrightarrow\frac{1}{\sqrt\pi}\partial\xi^{\mathrm{scl}}/\partial Q_x$ and $j_x\leftrightarrow\frac{1}{\sqrt\pi}\partial\xi^{\mathrm{scl}}/\partial Q_t$. The first entry is the current correspondence and the second is the mass correspondence, the sine-Gordon interaction.
+whose components are $j_t\leftrightarrow\frac{1}{\sqrt\pi}\partial\xi^{\mathrm{scl}}/\partial R_x$ and $j_x\leftrightarrow\frac{1}{\sqrt\pi}\partial\xi^{\mathrm{scl}}/\partial R_t$. The first entry is the current correspondence and the second is the mass correspondence, the sine-Gordon interaction.
 
 **The two divergences.** The vector current is conserved and the axial current is not:
 $$
-\sum_\mu\varepsilon_\mu\frac{\partial j_\mu}{\partial Q_\mu} = 0 ,
+\sum_\mu\varepsilon_\mu\frac{\partial j_\mu}{\partial R_\mu} = 0 ,
 \qquad
-\sum_\mu\varepsilon_\mu\frac{\partial j_{5\mu}}{\partial Q_\mu}
-= -\frac{1}{\sqrt\pi}\sum_\mu\varepsilon_\mu\frac{\partial^2\xi^{\mathrm{scl}}}{\partial Q_\mu^2} ,
+\sum_\mu\varepsilon_\mu\frac{\partial j_{5\mu}}{\partial R_\mu}
+= -\frac{1}{\sqrt\pi}\sum_\mu\varepsilon_\mu\frac{\partial^2\xi^{\mathrm{scl}}}{\partial R_\mu^2} ,
 $$
 the plain weight sitting inside the divergence. The operator on the right is the quaternionic norm of the gradient of *Operator and Calculus Conventions*, §*The Gradient*, and not the d'Alembertian of the same section: the two differ in the sign of the spatial part, and the anomaly carries the first. The second relation is the anomaly.
 
@@ -92,9 +92,9 @@ j_{5,t}=-j_x,\qquad j_{5,x}=-j_t .
 $$
 That is the dual of the current in the arena with $\epsilon_{01}=+1$, and with the dictionary it reads
 $$
-j_{5,t}=-\frac{1}{\sqrt\pi}\frac{\partial\xi^{\mathrm{scl}}}{\partial Q_t},
+j_{5,r_t}=-\frac{1}{\sqrt\pi}\frac{\partial\xi^{\mathrm{scl}}}{\partial R_t},
 \qquad
-j_{5,x}=-\frac{1}{\sqrt\pi}\frac{\partial\xi^{\mathrm{scl}}}{\partial Q_x} :
+j_{5,r_x}=-\frac{1}{\sqrt\pi}\frac{\partial\xi^{\mathrm{scl}}}{\partial R_x} :
 $$
 the axial current is a gradient. The plain exchange $\sum_\nu\epsilon_{\mu\nu}j_\nu$, with no weight in the sum, is not a gradient: its two components have opposite relative signs, and the weighted dual is the one the anomaly uses. These are standard (Coleman 1975; Mandelstam 1975; von Delft and Schoeller 1998), and the framework does not alter them.
 
@@ -190,11 +190,11 @@ The framework supplies the factor $2$ as the two Majorana fields into which one 
 
 The fermionic side of the dictionary is built from vertex operators, and their dimensions are the sharpest arithmetic of the equivalence.
 
-**The current algebra.** In the bosonized language the current is $j_\mu=-\frac{1}{\sqrt\pi}\sum_\nu\epsilon_{\mu\nu}\varepsilon_\nu\partial\xi^{\mathrm{scl}}/\partial Q_\nu$ (the dictionary above), whose components are $j_t=\frac{1}{\sqrt\pi}\partial\xi^{\mathrm{scl}}/\partial Q_x$ and $j_x=\frac{1}{\sqrt\pi}\partial\xi^{\mathrm{scl}}/\partial Q_t$, and the equal-time commutator of the two lower-index components in the arena is
+**The current algebra.** In the bosonized language the current is $j_\mu=-\frac{1}{\sqrt\pi}\sum_\nu\epsilon_{\mu\nu}\varepsilon_\nu\partial\xi^{\mathrm{scl}}/\partial R_\nu$ (the dictionary above), whose components are $j_t=\frac{1}{\sqrt\pi}\partial\xi^{\mathrm{scl}}/\partial R_x$ and $j_x=\frac{1}{\sqrt\pi}\partial\xi^{\mathrm{scl}}/\partial R_t$, and the equal-time commutator of the two lower-index components in the arena is
 $$
 \bigl[j_t(Q_x),j_x(Q_y)\bigr] = \frac{i}{\pi}\,\frac{d\delta}{dQ_x}(Q_x-Q_y),
 $$
-the **Schwinger term**. The sign and the coefficient are the canonical commutator's: the commutator $[\xi^{\mathrm{scl}},\partial\xi^{\mathrm{scl}}/\partial Q_t]=i\delta$ with $\hbar=1$, the corpus's convention, gives $\frac{1}{\pi}[\partial\xi^{\mathrm{scl}}/\partial Q_x,\partial\xi^{\mathrm{scl}}/\partial Q_t]$, which is $\frac{i}{\pi}$ times the derivative of the delta written in the display above. Both indices are low, so no metric sign enters this commutator; the signature signs are already carried by the dictionary's $\epsilon_{\mu\nu}\varepsilon_\nu$. The coefficient is $1/\pi$, the square of the anomaly's $1/\sqrt\pi$ because it is bilinear in the current, the anomaly being the second relation of the dictionary section.
+the **Schwinger term**. The sign and the coefficient are the canonical commutator's: the commutator $[\xi^{\mathrm{scl}},\partial\xi^{\mathrm{scl}}/\partial R_t]=i\delta$ with $\hbar=1$, the corpus's convention, gives $\frac{1}{\pi}[\partial\xi^{\mathrm{scl}}/\partial R_x,\partial\xi^{\mathrm{scl}}/\partial R_t]$, which is $\frac{i}{\pi}$ times the derivative of the delta written in the display above. Both indices are low, so no metric sign enters this commutator; the signature signs are already carried by the dictionary's $\epsilon_{\mu\nu}\varepsilon_\nu$. The coefficient is $1/\pi$, the square of the anomaly's $1/\sqrt\pi$ because it is bilinear in the current, the anomaly being the second relation of the dictionary section.
 
 **Vertex operators.** The bosonized fermion is an exponential of the boson field, the **vertex operator**
 $$
@@ -216,9 +216,9 @@ T_{tx}=T_{xt}=\pi\,j_tj_x ,
 $$
 the coefficient $\pi/2$ being the inverse of the dictionary's $1/\pi$, and it is the canonical stress tensor of the free boson,
 $$
-T_{tt}=T_{xx}=\frac12\left[\Bigl(\frac{\partial\xi^{\mathrm{scl}}}{\partial Q_t}\Bigr)^2+\Bigl(\frac{\partial\xi^{\mathrm{scl}}}{\partial Q_x}\Bigr)^2\right],
+T_{tt}=T_{xx}=\frac12\left[\Bigl(\frac{\partial\xi^{\mathrm{scl}}}{\partial R_t}\Bigr)^2+\Bigl(\frac{\partial\xi^{\mathrm{scl}}}{\partial R_x}\Bigr)^2\right],
 \qquad
-T_{tx}=T_{xt}=\frac{\partial\xi^{\mathrm{scl}}}{\partial Q_t}\frac{\partial\xi^{\mathrm{scl}}}{\partial Q_x} ,
+T_{tx}=T_{xt}=\frac{\partial\xi^{\mathrm{scl}}}{\partial R_t}\frac{\partial\xi^{\mathrm{scl}}}{\partial R_x} ,
 $$
 so the central charge is $c=1$, matching the fermionic $c=1$ of the central-charge section. The framework adds nothing beyond naming the current's $\mathrm{U}(1)$ as the abelian part of the algebra's symmetry; the non-abelian Sugawara construction belongs to the group theory of the next section.
 
@@ -247,7 +247,7 @@ The non-abelian extension is stated and its status fixed.
 
 **Standard, and transcribed.**
 
-- The abelian dictionary: $j_\mu\leftrightarrow-\tfrac{1}{\sqrt\pi}\sum_\nu\epsilon_{\mu\nu}\varepsilon_\nu\partial\xi^{\mathrm{scl}}/\partial Q_\nu$, $\mathrm{Sc}(\tilde{Ξ}^{\mathrm{sp}*}\tilde{Ξ}^{\mathrm{sp}} i\vec e_x)\leftrightarrow-\tfrac{1}{\pi\alpha}\cos(2\sqrt\pi\xi^{\mathrm{scl}})$; the axial anomaly $\sum_\mu\varepsilon_\mu\partial j_{5\mu}/\partial Q_\mu=-\tfrac{1}{\sqrt\pi}\sum_\mu\varepsilon_\mu\partial^2\xi^{\mathrm{scl}}/\partial Q_\mu^2$; the sine-Gordon parameters $\beta=2\sqrt\pi$.
+- The abelian dictionary: $j_\mu\leftrightarrow-\tfrac{1}{\sqrt\pi}\sum_\nu\epsilon_{\mu\nu}\varepsilon_\nu\partial\xi^{\mathrm{scl}}/\partial R_\nu$, $\mathrm{Sc}(\tilde{Ξ}^{\mathrm{sp}*}\tilde{Ξ}^{\mathrm{sp}} i\vec e_x)\leftrightarrow-\tfrac{1}{\pi\alpha}\cos(2\sqrt\pi\xi^{\mathrm{scl}})$; the axial anomaly $\sum_\mu\varepsilon_\mu\partial j_{5\mu}/\partial R_\mu=-\tfrac{1}{\sqrt\pi}\sum_\mu\varepsilon_\mu\partial^2\xi^{\mathrm{scl}}/\partial R_\mu^2$; the sine-Gordon parameters $\beta=2\sqrt\pi$.
 - The Schwinger term $[j_t,j_x]=\tfrac{i}{\pi}\delta'$, $\delta'$ being the derivative of the delta, with both indices low; the vertex operators with $\Delta_{\mathrm{ch}}=\beta^2/8\pi$ at $\beta=2\sqrt\pi$; the Sugawara stress tensor and its $c=1$.
 - The Coleman–Mandelstam equivalence of the massive Thirring model and sine-Gordon; the soliton–fermion correspondence.
 - The central charge $c=1$ for a complex fermion and for a real boson, and $c=\tfrac12$ for a Majorana field.
@@ -340,14 +340,14 @@ the general rule being $\sum_\mu\gamma^\mu A\gamma_\mu=(-1)^{n+1}(4-2n)A$ for $A
 
 Bosonization in biquaternionic form is the standard two-dimensional equivalence, with the framework's naming of the two sides. The arena's two generator actions are $A_t:Q\mapsto iQ\vec e_x$ and $A_x:Q\mapsto i\vec e_xQ\vec e_y$; they square to $e_t$ and to $-e_t$ and anticommute, and their product in one order is the chirality $\Gamma:Q\mapsto\vec e_xQ\vec e_z$, an involution whose two values are the label: $\tilde{Ξ}^{\mathrm{sp}}_L$ is the minus one and $\tilde{Ξ}^{\mathrm{sp}}_R$ the plus one. The coefficient conjugation fixes the chirality, which is a product of units, and reverses the two generator actions, each of which carries one factor of $i$, so it preserves each value and the two values are a real splitting. In four dimensions the chirality carries the central $i$, the conjugation reverses it, and the values are exchanged. The dictionary is
 $$
-j_t=\mathrm{Sc}\bigl(\tilde{Ξ}^{\mathrm{sp}*}\tilde{Ξ}^{\mathrm{sp}}\bigr)\longleftrightarrow\frac{1}{\sqrt\pi}\frac{\partial\xi^{\mathrm{scl}}}{\partial Q_x},
+j_t=\mathrm{Sc}\bigl(\tilde{Ξ}^{\mathrm{sp}*}\tilde{Ξ}^{\mathrm{sp}}\bigr)\longleftrightarrow\frac{1}{\sqrt\pi}\frac{\partial\xi^{\mathrm{scl}}}{\partial R_x},
 \qquad
-j_x=\mathrm{Sc}\bigl(\tilde{Ξ}^{\mathrm{sp}*}\vec e_x\tilde{Ξ}^{\mathrm{sp}}\vec e_z\bigr)\longleftrightarrow\frac{1}{\sqrt\pi}\frac{\partial\xi^{\mathrm{scl}}}{\partial Q_t},
+j_x=\mathrm{Sc}\bigl(\tilde{Ξ}^{\mathrm{sp}*}\vec e_x\tilde{Ξ}^{\mathrm{sp}}\vec e_z\bigr)\longleftrightarrow\frac{1}{\sqrt\pi}\frac{\partial\xi^{\mathrm{scl}}}{\partial R_t},
 $$
 $$
 \mathrm{Sc}\bigl(\tilde{Ξ}^{\mathrm{sp}*}\tilde{Ξ}^{\mathrm{sp}}\,i\vec e_x\bigr)\longleftrightarrow-\frac{1}{\pi\alpha}\cos\big(2\sqrt\pi\,\xi^{\mathrm{scl}}\big),
 \qquad
-\sum_\mu\varepsilon_\mu\frac{\partial j_{5\mu}}{\partial Q_\mu}=-\frac{1}{\sqrt\pi}\sum_\mu\varepsilon_\mu\frac{\partial^2\xi^{\mathrm{scl}}}{\partial Q_\mu^2},
+\sum_\mu\varepsilon_\mu\frac{\partial j_{5\mu}}{\partial R_\mu}=-\frac{1}{\sqrt\pi}\sum_\mu\varepsilon_\mu\frac{\partial^2\xi^{\mathrm{scl}}}{\partial R_\mu^2},
 $$
 and the framework's contribution is to name the two sides: the fermion is an element of the algebra, read in one value for the count, and the boson is a central scalar, so that the equivalence is a correspondence between the algebra's operator algebra and the centre's exponentiated algebra. The counting $c_{\text{Dirac}}=2\times\tfrac12=1=c_{\text{boson}}$ matches the central charges, the framework's linear mass — the exchange of the two values, carried in the arena by the right factor $\vec e_y$ — bosonizes to the cosine, and the mass's central phase $\exp(i\theta)$ bosonizes to a shift of the boson field, the same central phase that weights the $\theta^{\mathrm{vac}}$ vacuum. The dictionary, the sine-Gordon equivalence, the Schwinger model, and the non-abelian case with its Wess–Zumino term are standard and transcribed.
 

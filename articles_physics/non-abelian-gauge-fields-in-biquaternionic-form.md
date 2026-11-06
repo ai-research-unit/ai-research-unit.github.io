@@ -15,9 +15,9 @@ so a component of the field strength is *not* a number; it is an algebra element
 
 The division between what is established and what is interpretation is kept explicit.
 
-- **Established, and recomputed below.** The vector part of the material sector, $\mathrm{span}_\mathbb{R}\{\vec e_x,\vec e_y,\vec e_z\}$, is a Lie subalgebra of $\mathbb{B}$ under the commutator, and it is $\mathrm{SU}(2)$ up to normalization; the centre contributes the abelian factor. The non-abelian field strength $F_{\mu\nu} = \partial/\partial Q_\mu A_\nu - \partial/\partial Q_\nu A_\mu + i\kappa[A_\mu,A_\nu]$ transforms in the adjoint representation and is not invariant; it is the commutator of covariant derivatives, $[D_\mu,D_\nu] = i\kappa F_{\mu\nu}$; the Bianchi identity holds; and $\mathrm{Tr}(\sum_{\mu,\nu}F_{\mu\nu}F_{\mu\nu})$ is a gauge-invariant density. All of these were recomputed exactly on $\mathrm{SU}(2)$, on generic non-commuting connections, and on at least two independent components (in fact on all six).
+- **Established, and recomputed below.** The vector part of the material sector, $\mathrm{span}_\mathbb{R}\{\vec e_x,\vec e_y,\vec e_z\}$, is a Lie subalgebra of $\mathbb{B}$ under the commutator, and it is $\mathrm{SU}(2)$ up to normalization; the centre contributes the abelian factor. The non-abelian field strength $F_{\mu\nu} = \partial/\partial R_\mu A_\nu - \partial/\partial R_\nu A_\mu + i\kappa[A_\mu,A_\nu]$ transforms in the adjoint representation and is not invariant; it is the commutator of covariant derivatives, $[D_\mu,D_\nu] = i\kappa F_{\mu\nu}$; the Bianchi identity holds; and $\mathrm{Tr}(\sum_{\mu,\nu}F_{\mu\nu}F_{\mu\nu})$ is a gauge-invariant density. All of these were recomputed exactly on $\mathrm{SU}(2)$, on generic non-commuting connections, and on at least two independent components (in fact on all six).
 - **Defect in the parent, reported rather than inherited.** The parent's packaging of the curvature, $\tilde{F} = \mathrm{Vect}(\tilde{\nabla}^{\natural}\tilde{A})$ and $\tilde{F} = \tfrac12\sum_{\mu\nu}F_{\mu\nu}\bar{e}_\mu e_\nu$, does **not** survive the non-abelian extension. The object $\mathrm{Vect}(\tilde{\nabla}^{\natural}\tilde{A})$ is not even in the reality class of the field strength, and it is not the adjoint-covariant object. This is stated in its own section and the repair is given.
-- **Gap, left visible.** The reality condition on the *connection* that would make the non-abelian construction close inside a fixed Hermitian-conjugation eigenspace is obstructed in the time direction by the $i c r'_t$ derivative, $\partial/\partial Q_t = -i\partial/\partial t'$. The obstruction is sharp, is exhibited, and is not smoothed over.
+- **Gap, left visible.** The reality condition on the *connection* that would make the non-abelian construction close inside a fixed Hermitian-conjugation eigenspace is obstructed in the time direction by the $i c r'_t$ derivative, $\partial/\partial R_t = -i\partial/\partial r'_t$. The obstruction is sharp, is exhibited, and is not smoothed over.
 
 ## The Gauge Algebra Inside the Material Sector
 
@@ -68,11 +68,11 @@ $$
 with real coefficient functions $\mathcal{A}_{\mu a}$. The parent's covariant derivative is generalized in the only way that keeps its form,
 
 $$
-D_\mu = \partial/\partial Q_\mu + i\kappa\,\mathcal{A}_\mu, \qquad D = \tilde{\nabla} + i\kappa\,\mathcal{A},
+D_\mu = \partial/\partial R_\mu + i\kappa\,\mathcal{A}_\mu, \qquad D = \tilde{\nabla} + i\kappa\,\mathcal{A},
 \qquad \kappa = \frac{ϙ}{\hbar},
 $$
 
-acting on a matter field $\tilde{Ξ}^{\mathrm{sp}}$ by left multiplication, $D_\mu\tilde{Ξ}^{\mathrm{sp}} = \partial/\partial Q_\mu\,\tilde{Ξ}^{\mathrm{sp}} + i\kappa\,\mathcal{A}_\mu\tilde{Ξ}^{\mathrm{sp}}$. The coupling $\kappa$ plays the role of the abelian $iϙ/\hbar$; the factor $i$ is kept explicit, as in the parent, so that the reality discussion below can be stated cleanly.
+acting on a matter field $\tilde{Ξ}^{\mathrm{sp}}$ by left multiplication, $D_\mu\tilde{Ξ}^{\mathrm{sp}} = \partial/\partial R_\mu\,\tilde{Ξ}^{\mathrm{sp}} + i\kappa\,\mathcal{A}_\mu\tilde{Ξ}^{\mathrm{sp}}$. The coupling $\kappa$ plays the role of the abelian $iϙ/\hbar$; the factor $i$ is kept explicit, as in the parent, so that the reality discussion below can be stated cleanly.
 
 Now let the field transform by a **local, non-central** element of the group,
 
@@ -83,20 +83,20 @@ $$
 Unlike the abelian phase, $\tilde Q$ does not commute with the algebra, and left and right multiplication by it differ. Requiring the covariant derivative to be covariant, $D_{\mathrm g,\mu}(\tilde Q\tilde{Ξ}^{\mathrm{sp}}) = \tilde Q\,D_\mu\tilde{Ξ}^{\mathrm{sp}}$, with $D_{\mathrm g,\mu}$ built from a new connection $\mathcal{A}_{\mathrm g,\mu}$, gives
 
 $$
-(\partial/\partial Q_\mu \tilde Q)\tilde{Ξ}^{\mathrm{sp}} + \tilde Q\,\partial/\partial Q_\mu\,\tilde{Ξ}^{\mathrm{sp}} + i\kappa\,\mathcal{A}_{\mathrm g,\mu} \tilde Q\tilde{Ξ}^{\mathrm{sp}}
-= \tilde Q\,\partial/\partial Q_\mu\,\tilde{Ξ}^{\mathrm{sp}} + i\kappa\,\tilde Q\,\mathcal{A}_\mu\tilde{Ξ}^{\mathrm{sp}},
+(\partial/\partial R_\mu \tilde Q)\tilde{Ξ}^{\mathrm{sp}} + \tilde Q\,\partial/\partial R_\mu\,\tilde{Ξ}^{\mathrm{sp}} + i\kappa\,\mathcal{A}_{\mathrm g,\mu} \tilde Q\tilde{Ξ}^{\mathrm{sp}}
+= \tilde Q\,\partial/\partial R_\mu\,\tilde{Ξ}^{\mathrm{sp}} + i\kappa\,\tilde Q\,\mathcal{A}_\mu\tilde{Ξ}^{\mathrm{sp}},
 $$
 
-so that $\partial/\partial Q_\mu \tilde Q + i\kappa\,\mathcal{A}_{\mathrm g,\mu} \tilde Q = i\kappa\,\tilde Q\mathcal{A}_\mu$, that is,
+so that $\partial/\partial R_\mu \tilde Q + i\kappa\,\mathcal{A}_{\mathrm g,\mu} \tilde Q = i\kappa\,\tilde Q\mathcal{A}_\mu$, that is,
 
 $$
-\boxed{\;\mathcal{A}_{\mathrm g,\mu} = \tilde Q\,\mathcal{A}_\mu\,\tilde Q^{-1} + \frac{i}{\kappa}\,(\partial/\partial Q_\mu \tilde Q)\,\tilde Q^{-1}\;}.
+\boxed{\;\mathcal{A}_{\mathrm g,\mu} = \tilde Q\,\mathcal{A}_\mu\,\tilde Q^{-1} + \frac{i}{\kappa}\,(\partial/\partial R_\mu \tilde Q)\,\tilde Q^{-1}\;}.
 $$
 
 This is the non-abelian transformation law. Two features separate it from the parent's additive law $\tilde{A}_2 = \tilde{A} - \tilde{\nabla}\Gamma$.
 
 - **The homogeneous term is a conjugation.** The connection does not transform by a shift; it transforms in the adjoint representation, $A_\mu \mapsto UA_\mu \tilde Q^{-1}$, with a compensating inhomogeneous term. The conjugation is what makes the transformation law non-linear in the field and the theory non-abelian.
-- **The inhomogeneous term is a pure-gauge connection.** The combination $(\partial/\partial Q_\mu \tilde Q)\tilde Q^{-1}$ is the Maurer–Cartan form of the group element; it is the non-abelian replacement for $-\partial/\partial Q_\mu\,\Gamma$. In the abelian case $\tilde Q = \exp(i\kappa\Gamma)$ is central, $\tilde Q\mathcal{A}_\mu \tilde Q^{-1} = \mathcal{A}_\mu$, and $(\partial/\partial Q_\mu \tilde Q)\tilde Q^{-1} = i\kappa\,\partial/\partial Q_\mu\,\Gamma$, so the law reduces exactly to the parent's $\tilde{A}_{2,\mu} = \tilde{A}_\mu - \partial/\partial Q_\mu\,\Gamma$.
+- **The inhomogeneous term is a pure-gauge connection.** The combination $(\partial/\partial R_\mu \tilde Q)\tilde Q^{-1}$ is the Maurer–Cartan form of the group element; it is the non-abelian replacement for $-\partial/\partial R_\mu\,\Gamma$. In the abelian case $\tilde Q = \exp(i\kappa\Gamma)$ is central, $\tilde Q\mathcal{A}_\mu \tilde Q^{-1} = \mathcal{A}_\mu$, and $(\partial/\partial R_\mu \tilde Q)\tilde Q^{-1} = i\kappa\,\partial/\partial R_\mu\,\Gamma$, so the law reduces exactly to the parent's $\tilde{A}_{2,\mu} = \tilde{A}_\mu - \partial/\partial R_\mu\,\Gamma$.
 
 The covariance was verified numerically on a generic non-commuting connection: with the $\mathcal{A}_\mu$ traceless and $\tilde Q$ a generic $*$-unitary biquaternion, the residual of $D_{\mathrm g,\mu}(\tilde Q\tilde{Ξ}^{\mathrm{sp}}) = \tilde Q D_\mu\tilde{Ξ}^{\mathrm{sp}}$ was of order $10^{-11}$ for all four $\mu$, i.e. at the level of the finite-difference error. It is worth saying what the check means: the identity was *derived* for arbitrary $\tilde Q$ and arbitrary $\mathcal{A}$, and the numerical evaluation is a guard against a sign slip in the derivation, not the source of the result.
 
@@ -104,10 +104,10 @@ The covariance was verified numerically on a generic non-commuting connection: w
 
 ## The Field Strength Is Not Gauge Invariant
 
-The field strength is defined as the curvature of the connection. In component form, and in parallel with the parent's $F_{\mu\nu} = \partial/\partial Q_\mu A_\nu - \partial/\partial Q_\nu A_\mu$,
+The field strength is defined as the curvature of the connection. In component form, and in parallel with the parent's $F_{\mu\nu} = \partial/\partial R_\mu A_\nu - \partial/\partial R_\nu A_\mu$,
 
 $$
-\boxed{\;F_{\mu\nu} = \partial/\partial Q_\mu \mathcal{A}_\nu - \partial/\partial Q_\nu \mathcal{A}_\mu + i\kappa\,[\mathcal{A}_\mu, \mathcal{A}_\nu]\;}
+\boxed{\;F_{\mu\nu} = \partial/\partial R_\mu \mathcal{A}_\nu - \partial/\partial R_\nu \mathcal{A}_\mu + i\kappa\,[\mathcal{A}_\mu, \mathcal{A}_\nu]\;}
 \;\in\; \mathrm{SU}(2)\oplus i\,\mathrm{SU}(2) = \mathrm{SL}(2,\mathbb{C}),
 $$
 
@@ -119,13 +119,13 @@ F = d\mathcal{A} + i\kappa\,\mathcal{A}\wedge\mathcal{A},
 (\mathcal{A}\wedge\mathcal{A})_{\mu\nu} = [\mathcal{A}_\mu,\mathcal{A}_\nu].
 $$
 
-The commutator term is the whole of the difference from the abelian case, and it is not optional: it is what the transformation law requires. To see that, and to see the essential point of this article, apply the transformation law to the definition. Write $B_\mu = (\partial/\partial Q_\mu \tilde Q)\tilde Q^{-1}$, so that $\mathcal{A}_{\mathrm g,\mu} = \tilde Q\mathcal{A}_\mu \tilde Q^{-1} + (i/\kappa)B_\mu$. Two elementary identities prepare the computation:
+The commutator term is the whole of the difference from the abelian case, and it is not optional: it is what the transformation law requires. To see that, and to see the essential point of this article, apply the transformation law to the definition. Write $B_\mu = (\partial/\partial R_\mu \tilde Q)\tilde Q^{-1}$, so that $\mathcal{A}_{\mathrm g,\mu} = \tilde Q\mathcal{A}_\mu \tilde Q^{-1} + (i/\kappa)B_\mu$. Two elementary identities prepare the computation:
 
 $$
-\partial/\partial Q_\mu B_\nu - \partial/\partial Q_\nu B_\mu = [B_\mu,B_\nu],
+\partial/\partial R_\mu B_\nu - \partial/\partial R_\nu B_\mu = [B_\mu,B_\nu],
 $$
 
-which is the Maurer–Cartan (flatness) identity for the pure-gauge field $B_\mu$, and $\partial/\partial Q_\mu(\tilde Q\mathcal{A}_\nu \tilde Q^{-1}) = B_\mu\,\tilde Q\mathcal{A}_\nu \tilde Q^{-1} + \tilde Q(\partial/\partial Q_\mu\,\mathcal{A}_\nu)\tilde Q^{-1} - \tilde Q\mathcal{A}_\nu \tilde Q^{-1}B_\mu$, from $(\partial/\partial Q_\mu \tilde Q) = B_\mu \tilde Q$ and $\partial/\partial Q_\mu(\tilde Q^{-1}) = -\tilde Q^{-1}(\partial/\partial Q_\mu \tilde Q)\tilde Q^{-1}$. Antisymmetrizing the first in $\mu\nu$ and expanding the commutator term of $F_{\mathrm g,\mu\nu}$, the pure-gauge contributions cancel in pairs and one is left with
+which is the Maurer–Cartan (flatness) identity for the pure-gauge field $B_\mu$, and $\partial/\partial R_\mu(\tilde Q\mathcal{A}_\nu \tilde Q^{-1}) = B_\mu\,\tilde Q\mathcal{A}_\nu \tilde Q^{-1} + \tilde Q(\partial/\partial R_\mu\,\mathcal{A}_\nu)\tilde Q^{-1} - \tilde Q\mathcal{A}_\nu \tilde Q^{-1}B_\mu$, from $(\partial/\partial R_\mu \tilde Q) = B_\mu \tilde Q$ and $\partial/\partial R_\mu(\tilde Q^{-1}) = -\tilde Q^{-1}(\partial/\partial R_\mu \tilde Q)\tilde Q^{-1}$. Antisymmetrizing the first in $\mu\nu$ and expanding the commutator term of $F_{\mathrm g,\mu\nu}$, the pure-gauge contributions cancel in pairs and one is left with
 
 $$
 F_{\mathrm g,\mu\nu} = \tilde Q\,F_{\mu\nu}\,\tilde Q^{-1} .
@@ -142,19 +142,19 @@ $$
 
 **The abelian limit.** If all the $\mathcal{A}_\mu$ are central — the abelian case — the commutator term vanishes, the transformation law degenerates to the abelian one, and $F_{\mu\nu}$ becomes invariant. The invariance of the abelian field strength is therefore not a general property of the curvature; it is the consequence of centrality, and it is exactly what fails here.
 
-**The connection as an adjoint-valued orbit.** The parent's interpretation of the connection as a gauge orbit survives, with the abelian group replaced by the adjoint action. The single point $\mathcal{A}_\mu(\tilde{Q}_0) = 0$ can still be reached at any one point: take $\tilde Q(\tilde{Q}_0)$ arbitrary in $SU(2)$ and set $(\partial/\partial Q_\mu \tilde Q)(\tilde{Q}_0) = i\kappa\,\tilde Q(\tilde{Q}_0)\mathcal{A}_\mu(\tilde{Q}_0)$, as the vanishing of $\mathcal{A}_{\mathrm g,\mu} = \tilde Q\mathcal{A}_\mu \tilde Q^{-1} + (i/\kappa)(\partial/\partial Q_\mu \tilde Q)\tilde Q^{-1}$ requires. The first derivatives of a matrix-valued function at a point can be set freely subject to the conjugation condition that unitarity imposes, and the prescribed derivative meets that condition under the mixed reality assignment exhibited in the reality-condition section below ($\mathcal{A}_0$ anti-Hermitian, $\mathcal{A}_k$ Hermitian); for a uniform anti-Hermitian connection the spatial components cannot be brought to zero by a $*$-unitary $\tilde Q$. For that mixed assignment the connection therefore has no gauge-invariant local value. The curvature is again the obstruction to doing this on a neighbourhood. The difference is that the orbit is now the orbit of a vector under conjugation rather than a translate of a scalar, and the statement "$\mathcal{A}$ can be gauged to zero at a point" is a statement about a matrix, not a number.
+**The connection as an adjoint-valued orbit.** The parent's interpretation of the connection as a gauge orbit survives, with the abelian group replaced by the adjoint action. The single point $\mathcal{A}_\mu(\tilde{Q}_0) = 0$ can still be reached at any one point: take $\tilde Q(\tilde{Q}_0)$ arbitrary in $SU(2)$ and set $(\partial/\partial R_\mu \tilde Q)(\tilde{Q}_0) = i\kappa\,\tilde Q(\tilde{Q}_0)\mathcal{A}_\mu(\tilde{Q}_0)$, as the vanishing of $\mathcal{A}_{\mathrm g,\mu} = \tilde Q\mathcal{A}_\mu \tilde Q^{-1} + (i/\kappa)(\partial/\partial R_\mu \tilde Q)\tilde Q^{-1}$ requires. The first derivatives of a matrix-valued function at a point can be set freely subject to the conjugation condition that unitarity imposes, and the prescribed derivative meets that condition under the mixed reality assignment exhibited in the reality-condition section below ($\mathcal{A}_0$ anti-Hermitian, $\mathcal{A}_k$ Hermitian); for a uniform anti-Hermitian connection the spatial components cannot be brought to zero by a $*$-unitary $\tilde Q$. For that mixed assignment the connection therefore has no gauge-invariant local value. The curvature is again the obstruction to doing this on a neighbourhood. The difference is that the orbit is now the orbit of a vector under conjugation rather than a translate of a scalar, and the statement "$\mathcal{A}$ can be gauged to zero at a point" is a statement about a matrix, not a number.
 
 ## The Field Strength as the Commutator of Covariant Derivatives
 
-The curvature is also the antisymmetrized square of the covariant derivative. Direct computation from $D_\mu = \partial/\partial Q_\mu + i\kappa\mathcal{A}_\mu$ gives
+The curvature is also the antisymmetrized square of the covariant derivative. Direct computation from $D_\mu = \partial/\partial R_\mu + i\kappa\mathcal{A}_\mu$ gives
 
 $$
 [D_\mu, D_\nu] = i\kappa\,F_{\mu\nu},
 \qquad
-F_{\mu\nu} = \partial/\partial Q_\mu\,\mathcal{A}_\nu - \partial/\partial Q_\nu\,\mathcal{A}_\mu + i\kappa[\mathcal{A}_\mu,\mathcal{A}_\nu].
+F_{\mu\nu} = \partial/\partial R_\mu\,\mathcal{A}_\nu - \partial/\partial R_\nu\,\mathcal{A}_\mu + i\kappa[\mathcal{A}_\mu,\mathcal{A}_\nu].
 $$
 
-The commutator of covariant derivatives is first order — the second-order terms $\partial^2/\partial Q_\mu\partial Q_\nu$ cancel — and it is multiplication by an algebra element, exactly as in the abelian case; what is new is that this element now contains the commutator of the connections. This identity was recomputed on all pairs $\mu,\nu$ on the same generic non-commuting connection, with residual of order $10^{-16}$.
+The commutator of covariant derivatives is first order — the second-order terms $\partial^2/\partial R_\mu\partial R_\nu$ cancel — and it is multiplication by an algebra element, exactly as in the abelian case; what is new is that this element now contains the commutator of the connections. This identity was recomputed on all pairs $\mu,\nu$ on the same generic non-commuting connection, with residual of order $10^{-16}$.
 
 The identity has a structural interpretation that the abelian case hides. The failure of covariant derivatives to commute is measured by the curvature; and since $F_{\mu\nu} = (1/i\kappa)[D_\mu,D_\nu]$, the statement that $F$ transforms in the adjoint representation is the statement that the commutator of two covariant derivatives is an algebra element on which the gauge group acts by conjugation. In the abelian case the bracket vanishes for the connection and the curvature is a c-number; the adjoint representation is then trivial, which is precisely why $F$ appeared invariant.
 
@@ -163,7 +163,7 @@ The identity has a structural interpretation that the abelian case hides. The fa
 The field strength is constructed from the connection by differentiation, so it cannot be arbitrary: it satisfies a differential identity. In the non-abelian case this identity is not optional either, and it is the statement that the covariant derivative of $F$ is a cycle. Define the covariant derivative acting on an algebra-valued field $\tilde{Q}$ by the adjoint action,
 
 $$
-D_\lambda \tilde{Q} = \partial/\partial Q_\lambda \tilde{Q} + i\kappa\,[\mathcal{A}_\lambda, \tilde{Q}],
+D_\lambda \tilde{Q} = \partial/\partial R_\lambda \tilde{Q} + i\kappa\,[\mathcal{A}_\lambda, \tilde{Q}],
 $$
 
 which is the same as the commutator of operators, $[D_\lambda,\tilde{Q}] = D_\lambda \tilde{Q}$ when $\tilde{Q}$ is multiplication by an algebra element. Then the **Bianchi identity** is
@@ -213,7 +213,7 @@ $$
 
 is gauge invariant. The trace here is the matrix trace on $\mathbb{B}\cong M_2(\mathbb{C})$, restricted to the $\mathrm{SU}(2)$ factor; it is **not** the trace formula $\mathrm{Tr}(\tilde Q_1\tilde Q_2)=2\,\mathrm{Sc}(\tilde Q_1\tilde Q_2)$, which pairs an element of the informational sector with a Hermitian element and is a different pairing on a different subspace. Conflating the two would be an error of the same kind the parent article warns against when it distinguishes the material from the informational sector.
 
-The sign and normalization of $\mathcal{L}$ are the standard ones when the generators are normalized so that the form $-2\,\mathrm{Tr}(T_aT_b) = \delta_{ab}$; the overall sign convention is fixed by the reality class of the connection, treated in the next section. Since the density is a total trace, its variation under a gauge transformation vanishes, and the field equations are the non-abelian Maxwell–Yang–Mills equations, obtained by varying $\mathcal{A}_\mu$: the source-free equation is $\sum_\mu D_\mu F_{\mu\nu} = 0$, in place of the abelian $\sum_\mu\partial/\partial Q_\mu F_{\mu\nu} = 0$. The covariant derivative is necessary, not decorative: the source term of a non-abelian gauge field is itself charged, so the field equation cannot be linear in $F$.
+The sign and normalization of $\mathcal{L}$ are the standard ones when the generators are normalized so that the form $-2\,\mathrm{Tr}(T_aT_b) = \delta_{ab}$; the overall sign convention is fixed by the reality class of the connection, treated in the next section. Since the density is a total trace, its variation under a gauge transformation vanishes, and the field equations are the non-abelian Maxwell–Yang–Mills equations, obtained by varying $\mathcal{A}_\mu$: the source-free equation is $\sum_\mu D_\mu F_{\mu\nu} = 0$, in place of the abelian $\sum_\mu\partial/\partial R_\mu F_{\mu\nu} = 0$. The covariant derivative is necessary, not decorative: the source term of a non-abelian gauge field is itself charged, so the field equation cannot be linear in $F$.
 
 ## The Abelian Parent's Curvature Formula Does Not Survive
 
@@ -227,10 +227,10 @@ $$
 
 and it states that the first identity — the expression of $\tilde{F}$ as $\mathrm{Vect}(\tilde{\nabla}^{\natural}\tilde{A})$ — is "purely algebraic in the derivatives". Both formulas, and the invariance of $\tilde{F}$ asserted two paragraphs later ("The curvature is gauge invariant"), are theorems in the abelian case, and all three **fail** when the connection is $\mathrm{SU}(2)$-valued. This is a defect of the parent, not a defect of this article's construction, and it is reported here rather than quietly repaired.
 
-To state the failure precisely, take the natural non-abelian generalization of the first formula, $\tilde{\nabla}^{\natural}\mathcal{A} = \sum_{\mu\nu}\bar{e}_\mu(\partial/\partial Q_\mu\,\mathcal{A}_\nu)e_\nu$ with $\mathcal{A}_\nu$ now an algebra element, and let $\mathrm{Vect}$ be the trace-free projection used by the parent, $\mathrm{Vect}(\tilde{Q}) = \tilde{Q} - \mathrm{Sc}(\tilde{Q})$ with $\mathrm{Sc}(\tilde{Q}) = \tfrac12\mathrm{Tr}(\tilde{Q})e_t$. On the generic non-commuting connection:
+To state the failure precisely, take the natural non-abelian generalization of the first formula, $\tilde{\nabla}^{\natural}\mathcal{A} = \sum_{\mu\nu}\bar{e}_\mu(\partial/\partial R_\mu\,\mathcal{A}_\nu)e_\nu$ with $\mathcal{A}_\nu$ now an algebra element, and let $\mathrm{Vect}$ be the trace-free projection used by the parent, $\mathrm{Vect}(\tilde{Q}) = \tilde{Q} - \mathrm{Sc}(\tilde{Q})$ with $\mathrm{Sc}(\tilde{Q}) = \tfrac12\mathrm{Tr}(\tilde{Q})e_t$. On the generic non-commuting connection:
 
 1. **$\mathrm{Vect}(\tilde{\nabla}^{\natural}\mathcal{A})$ is not in the reality class of the field strength.** Evaluated on a connection whose components are Hermitian-traceless, the object acquires a nonzero anti-Hermitian part of order unity; it is not Hermitian. This is not a cosmetic difference. In the abelian case $\mathrm{Vect}(\tilde{\nabla}^{\natural}\tilde{A})$ is, up to the normalization, the gauge-invariant field strength — a pure vector with a fixed behaviour under quaternion conjugation — which is what permits the corpus to identify it with $\tilde{F}$; non-abelianly the corresponding object is not adjoint-covariant and need not coincide with the field strength.
-2. **$\mathrm{Vect}(\tilde{\nabla}^{\natural}\mathcal{A})$ is not adjoint-covariant.** Its gauge transform does not equal $\tilde Q\,\mathrm{Vect}(\tilde{\nabla}^{\natural}\mathcal{A})\,\tilde Q^{-1}$; the discrepancy is of order unity. The reason is structural: differentiating $\tilde{\nabla}^{\natural}\mathcal{A}$ brings down a term $(\partial/\partial Q_\mu \tilde Q)$, which is not accompanied by the compensating connection term because the object is bilinear in $\mathcal{A}$ rather than built from the covariant derivative. The abelian case is immune only because there the inhomogeneous term is central and cancels in $\tilde{\nabla}^{\natural}\tilde{A}$.
+2. **$\mathrm{Vect}(\tilde{\nabla}^{\natural}\mathcal{A})$ is not adjoint-covariant.** Its gauge transform does not equal $\tilde Q\,\mathrm{Vect}(\tilde{\nabla}^{\natural}\mathcal{A})\,\tilde Q^{-1}$; the discrepancy is of order unity. The reason is structural: differentiating $\tilde{\nabla}^{\natural}\mathcal{A}$ brings down a term $(\partial/\partial R_\mu \tilde Q)$, which is not accompanied by the compensating connection term because the object is bilinear in $\mathcal{A}$ rather than built from the covariant derivative. The abelian case is immune only because there the inhomogeneous term is central and cancels in $\tilde{\nabla}^{\natural}\tilde{A}$.
 3. **The two parent formulas are not equal to each other.** The combination $\tfrac12\sum_{\mu\nu}F_{\mu\nu}\bar{e}_\mu e_\nu$, formed with the *non-abelian* $F_{\mu\nu}$, differs from $\mathrm{Vect}(\tilde{\nabla}^{\natural}\mathcal{A})$ by an order-unity amount.
 
 The repair is not a small correction; it is a redefinition of what is being packaged. The biquaternion packaging that survives is
@@ -238,10 +238,10 @@ The repair is not a small correction; it is a redefinition of what is being pack
 $$
 \mathcal{F} := \frac{1}{2}\sum_{\mu,\nu\in\{t,x,y,z\}}F_{\mu\nu}\,\bar{e}_\mu e_\nu,
 \qquad
-F_{\mu\nu} = \partial/\partial Q_\mu\,\mathcal{A}_\nu - \partial/\partial Q_\nu\,\mathcal{A}_\mu + i\kappa[\mathcal{A}_\mu,\mathcal{A}_\nu],
+F_{\mu\nu} = \partial/\partial R_\mu\,\mathcal{A}_\nu - \partial/\partial R_\nu\,\mathcal{A}_\mu + i\kappa[\mathcal{A}_\mu,\mathcal{A}_\nu],
 $$
 
-which is a **definition** of the biquaternion representative of the curvature, not an identity expressing it as $\mathrm{Vect}$ of a derivative. Its content is the component identity $F_{\mu\nu} = \partial/\partial Q_\mu\,\mathcal{A}_\nu - \partial/\partial Q_\nu\,\mathcal{A}_\mu + i\kappa[\mathcal{A}_\mu,\mathcal{A}_\nu]$; the biquaternion $\mathcal{F}$ is a convenient carrier of the six independent components and their gauge transformation, not a derived quantity. The parent's clause "purely algebraic in the derivatives" applies to the antisymmetrized derivative part alone; the commutator part is not a derivative of anything and is where the non-abelian content lives.
+which is a **definition** of the biquaternion representative of the curvature, not an identity expressing it as $\mathrm{Vect}$ of a derivative. Its content is the component identity $F_{\mu\nu} = \partial/\partial R_\mu\,\mathcal{A}_\nu - \partial/\partial R_\nu\,\mathcal{A}_\mu + i\kappa[\mathcal{A}_\mu,\mathcal{A}_\nu]$; the biquaternion $\mathcal{F}$ is a convenient carrier of the six independent components and their gauge transformation, not a derived quantity. The parent's clause "purely algebraic in the derivatives" applies to the antisymmetrized derivative part alone; the commutator part is not a derivative of anything and is where the non-abelian content lives.
 
 It should be said in the parent's defence that its formulas are correct in its own domain. The abelian curvature identity $\tilde{F} = \mathrm{Vect}(\tilde{\nabla}^{\natural}\tilde{A})$ is exact when the connection coefficients commute, and it was recomputed there. What the non-abelian extension shows is that the identity is a consequence of centrality, not a general property of curvature — the same lesson as the invariance of $F$.
 
@@ -252,23 +252,23 @@ The parent's outstanding gap is a "reality condition selecting a compact gauge a
 The obstruction is visible in the inhomogeneous term of the transformation law. For a $*$-unitary $\tilde Q$, differentiation of $UU^\dagger = e_t$ gives
 
 $$
-(\partial/\partial Q_\mu \tilde Q)\tilde Q^\dagger = -\,\tilde Q(\partial/\partial Q_\mu \tilde Q)^\dagger ,
+(\partial/\partial R_\mu \tilde Q)\tilde Q^\dagger = -\,\tilde Q(\partial/\partial R_\mu \tilde Q)^\dagger ,
 $$
 
-which says that $(\partial/\partial Q_\mu \tilde Q)\tilde Q^{-1}$ is anti-Hermitian **when the derivative is an ordinary real derivative**. This was checked numerically on a general $*$-unitary $\tilde Q$ (not merely on the exponential parametrization); what was found is the sharp split
+which says that $(\partial/\partial R_\mu \tilde Q)\tilde Q^{-1}$ is anti-Hermitian **when the derivative is an ordinary real derivative**. This was checked numerically on a general $*$-unitary $\tilde Q$ (not merely on the exponential parametrization); what was found is the sharp split
 
 $$
-(\partial/\partial Q_k \tilde Q)\,\tilde Q^{-1} \ \text{is anti-Hermitian for } k=1,2,3,
+(\partial/\partial R_k \tilde Q)\,\tilde Q^{-1} \ \text{is anti-Hermitian for } k=1,2,3,
 \qquad
-(\partial/\partial Q_t \tilde Q)\,\tilde Q^{-1} \ \text{is Hermitian.}
+(\partial/\partial R_t \tilde Q)\,\tilde Q^{-1} \ \text{is Hermitian.}
 $$
 
-The reason is the $i c r'_t$ convention. The time derivative is $\partial/\partial Q_t = -i\partial/\partial t'$, so the object $(\partial/\partial Q_t\,\tilde Q)\tilde Q^{-1}$ carries a factor $-i$ relative to $(\partial/\partial t'\,U)\tilde Q^{-1}$; and both $(\partial/\partial t'\,U)\tilde Q^{-1}$ and $(\partial/\partial Q_k\,U)\tilde Q^{-1}$ are anti-Hermitian for a $*$-unitary $\tilde Q$. Multiplication by $-i$ converts an anti-Hermitian matrix into a Hermitian one. Hence the time-like component of the Maurer–Cartan form has the opposite conjugation behaviour to the space-like components.
+The reason is the $i c r'_t$ convention. The time derivative is $\partial/\partial R_t = -i\partial/\partial r'_t$, so the object $(\partial/\partial R_t\,\tilde Q)\tilde Q^{-1}$ carries a factor $-i$ relative to $(\partial/\partial r'_t\,U)\tilde Q^{-1}$; and both $(\partial/\partial r'_t\,U)\tilde Q^{-1}$ and $(\partial/\partial R_k\,U)\tilde Q^{-1}$ are anti-Hermitian for a $*$-unitary $\tilde Q$. Multiplication by $-i$ converts an anti-Hermitian matrix into a Hermitian one. Hence the time-like component of the Maurer–Cartan form has the opposite conjugation behaviour to the space-like components.
 
 The consequence for the reality condition is immediate. The transformation law is
 
 $$
-\mathcal{A}_{\mathrm g,\mu} = \tilde Q\mathcal{A}_\mu \tilde Q^{-1} + \frac{i}{\kappa}\,(\partial/\partial Q_\mu \tilde Q)\tilde Q^{-1},
+\mathcal{A}_{\mathrm g,\mu} = \tilde Q\mathcal{A}_\mu \tilde Q^{-1} + \frac{i}{\kappa}\,(\partial/\partial R_\mu \tilde Q)\tilde Q^{-1},
 $$
 
 and the homogeneous term preserves the Hermitian-conjugation eigenspace of $\mathcal{A}_\mu$, while the inhomogeneous term has eigenvalue
@@ -313,7 +313,7 @@ under which the transformed components close: $\mathcal{A}_{\mathrm g,0}$ is ant
 The non-abelian gauge field in biquaternionic form is obtained by letting the connection of the parent article take values in the vector part of the material sector, $\mathrm{span}_\mathbb{R}\{\vec e_x,\vec e_y,\vec e_z\} = \mathrm{SU}(2)$, rather than in the central line. The material sector itself decomposes as a Lie algebra, $\mathbb{M}_- = \mathbb{R}(ie_t)\oplus\mathrm{SU}(2)$: the imaginary scalar carries the abelian $\mathrm{U}(1)$ of the parent, and the real vector part carries a compact simple factor. The gauge group is $SU(2)$, the unit real quaternions, and the connection transforms as
 
 $$
-\mathcal{A}_{\mathrm g,\mu} = \tilde Q\,\mathcal{A}_\mu\,\tilde Q^{-1} + \frac{i}{\kappa}\,(\partial/\partial Q_\mu \tilde Q)\,\tilde Q^{-1},
+\mathcal{A}_{\mathrm g,\mu} = \tilde Q\,\mathcal{A}_\mu\,\tilde Q^{-1} + \frac{i}{\kappa}\,(\partial/\partial R_\mu \tilde Q)\,\tilde Q^{-1},
 $$
 
 which reduces to the parent's additive law $\tilde{A}_2 = \tilde{A} - \tilde{\nabla}\Gamma$ when $\tilde Q$ is central.
@@ -321,7 +321,7 @@ which reduces to the parent's additive law $\tilde{A}_2 = \tilde{A} - \tilde{\na
 The field strength is the curvature of this connection,
 
 $$
-F_{\mu\nu} = \partial/\partial Q_\mu\,\mathcal{A}_\nu - \partial/\partial Q_\nu\,\mathcal{A}_\mu + i\kappa[\mathcal{A}_\mu,\mathcal{A}_\nu],
+F_{\mu\nu} = \partial/\partial R_\mu\,\mathcal{A}_\nu - \partial/\partial R_\nu\,\mathcal{A}_\mu + i\kappa[\mathcal{A}_\mu,\mathcal{A}_\nu],
 \qquad
 F = d\mathcal{A} + i\kappa\,\mathcal{A}\wedge\mathcal{A},
 \qquad
@@ -336,7 +336,7 @@ $$
 
 This is the essential difference from the abelian case, and it was verified on all six independent components on a generic non-commuting connection, with the transformation law holding to $10^{-11}$ and the change being of order unity. It satisfies the Bianchi identity $D_\lambda F_{\mu\nu} + D_\mu F_{\nu\lambda} + D_\nu F_{\lambda\mu} = 0$, verified on four independent triples, and the Jacobi identity enters both at the operator level, giving the Bianchi identity from $[D_\lambda,[D_\mu,D_\nu]] + \text{cyclic} = 0$, and at the level of the connection components, where it is the derivation property of the adjoint action that cancels the $\mathcal{A}\wedge\mathcal{A}$ terms. The Yang–Mills density $-\tfrac12\mathrm{Tr}(\sum_{\mu,\nu}F_{\mu\nu}F_{\mu\nu})$ is gauge invariant, verified to $10^{-9}$, with the matrix trace on the $\mathrm{SU}(2)$ factor and not the informational trace formula.
 
-Two things are left visible. First, a **defect in the parent**: the curvature formulas $\tilde{F} = \mathrm{Vect}(\tilde{\nabla}^{\natural}\tilde{A})$ and $\tilde{F} = \tfrac12\sum F_{\mu\nu}\bar{e}_\mu e_\nu$ do not survive; the non-abelian representative $\mathcal{F} = \tfrac12\sum F_{\mu\nu}\bar{e}_\mu e_\nu$ is a definition, and $\mathrm{Vect}(\tilde{\nabla}^{\natural}\mathcal{A})$ is neither in the right reality class nor adjoint-covariant. Second, a **gap**: no single Hermitian-conjugation eigenspace is preserved by the gauge transformation across all four components, because $\partial/\partial Q_t = -i\partial/\partial t'$ flips the conjugation behaviour of the Maurer–Cartan form in the time direction. A consistent mixed assignment exists — time in $\mathrm{SU}(2)\subset\mathbb{M}_-$, space in $i\,\mathrm{SU}(2)\subset\mathbb{M}_+$ — but whether it is the intended physical one is not settled here.
+Two things are left visible. First, a **defect in the parent**: the curvature formulas $\tilde{F} = \mathrm{Vect}(\tilde{\nabla}^{\natural}\tilde{A})$ and $\tilde{F} = \tfrac12\sum F_{\mu\nu}\bar{e}_\mu e_\nu$ do not survive; the non-abelian representative $\mathcal{F} = \tfrac12\sum F_{\mu\nu}\bar{e}_\mu e_\nu$ is a definition, and $\mathrm{Vect}(\tilde{\nabla}^{\natural}\mathcal{A})$ is neither in the right reality class nor adjoint-covariant. Second, a **gap**: no single Hermitian-conjugation eigenspace is preserved by the gauge transformation across all four components, because $\partial/\partial R_t = -i\partial/\partial r'_t$ flips the conjugation behaviour of the Maurer–Cartan form in the time direction. A consistent mixed assignment exists — time in $\mathrm{SU}(2)\subset\mathbb{M}_-$, space in $i\,\mathrm{SU}(2)\subset\mathbb{M}_+$ — but whether it is the intended physical one is not settled here.
 
 ## Summary of Notation
 
@@ -348,8 +348,8 @@ Two things are left visible. First, a **defect in the parent**: the curvature fo
 | $\mathbb{M}_-, \mathbb{M}_+$ | Material (anti-Hermitian) and informational (Hermitian) sectors |
 | $\mathbb{H}_{\mathbb{B}}$ | Real-quaternion subspace |
 | $\mathbb{C}_{\mathbb{B}} = \mathrm{span}_{\mathbb{R}}\{e_t, ie_t\}$ | Centre of the algebra; abelian gauge factor |
-| $\tilde{\nabla} = e_t\partial/\partial Q_t + \sum_\mu\,\vec e_\mu\partial/\partial Q_\mu$ | Biquaternionic gradient; $\partial/\partial Q_t = -i\partial/\partial t'$ |
-| $\tilde{\nabla}^{\natural} = e_t\partial/\partial Q_t - \sum_\mu\,\vec e_\mu\partial/\partial Q_\mu$ | Quaternion-conjugate gradient |
+| $\tilde{\nabla} = e_t\partial/\partial R_t + \sum_\mu\,\vec e_\mu\partial/\partial R_\mu$ | Biquaternionic gradient; $\partial/\partial R_t = -i\partial/\partial r'_t$ |
+| $\tilde{\nabla}^{\natural} = e_t\partial/\partial R_t - \sum_\mu\,\vec e_\mu\partial/\partial R_\mu$ | Quaternion-conjugate gradient |
 | $\Box = \tilde{\nabla}\tilde{\nabla}^{\natural} = \tilde{\nabla}^{\natural}\tilde{\nabla}$ | d'Alembertian |
 | $[e_a,e_b] = 2\varepsilon_{abc}e_c$ | Commutator on the vector part of $\mathbb{M}_-$ |
 | $\mathrm{SU}(2) = \mathrm{span}_{\mathbb{R}}\{\vec e_x,\vec e_y,\vec e_z\}$ | Compact gauge algebra inside $\mathbb{M}_-$ |
@@ -359,14 +359,14 @@ Two things are left visible. First, a **defect in the parent**: the curvature fo
 | $\tilde Q(\tilde{Q}) \in SU(2)$ | Unit real quaternion, $\tilde Q^{-1}=\bar{\tilde Q}=\tilde Q^\dagger$ |
 | $\mathcal{A}_\mu = \sum_a\mathcal{A}_{\mu a} e_a \in \mathrm{SU}(2)$ | Non-abelian connection, $\mathcal{A}=\sum_\mu\mathcal{A}_\mu e_\mu$ |
 | $\kappa = ϙ/\hbar$ | Coupling |
-| $D_\mu = \partial/\partial Q_\mu + i\kappa\mathcal{A}_\mu$ | Covariant derivative, $D=\tilde{\nabla}+i\kappa\mathcal{A}$ |
-| $\mathcal{A}_{\mathrm g,\mu} = \tilde Q\mathcal{A}_\mu \tilde Q^{-1} + \frac{i}{\kappa}(\partial/\partial Q_\mu \tilde Q)\tilde Q^{-1}$ | Non-abelian transformation of the connection |
-| $B_\mu = (\partial/\partial Q_\mu \tilde Q)\tilde Q^{-1}$ | Maurer–Cartan form; $\partial/\partial Q_\mu B_\nu - \partial/\partial Q_\nu B_\mu = [B_\mu,B_\nu]$ |
-| $F_{\mu\nu} = \partial/\partial Q_\mu\,\mathcal{A}_\nu - \partial/\partial Q_\nu\,\mathcal{A}_\mu + i\kappa[\mathcal{A}_\mu,\mathcal{A}_\nu]$ | Non-abelian field strength |
+| $D_\mu = \partial/\partial R_\mu + i\kappa\mathcal{A}_\mu$ | Covariant derivative, $D=\tilde{\nabla}+i\kappa\mathcal{A}$ |
+| $\mathcal{A}_{\mathrm g,\mu} = \tilde Q\mathcal{A}_\mu \tilde Q^{-1} + \frac{i}{\kappa}(\partial/\partial R_\mu \tilde Q)\tilde Q^{-1}$ | Non-abelian transformation of the connection |
+| $B_\mu = (\partial/\partial R_\mu \tilde Q)\tilde Q^{-1}$ | Maurer–Cartan form; $\partial/\partial R_\mu B_\nu - \partial/\partial R_\nu B_\mu = [B_\mu,B_\nu]$ |
+| $F_{\mu\nu} = \partial/\partial R_\mu\,\mathcal{A}_\nu - \partial/\partial R_\nu\,\mathcal{A}_\mu + i\kappa[\mathcal{A}_\mu,\mathcal{A}_\nu]$ | Non-abelian field strength |
 | $F = d\mathcal{A} + i\kappa\,\mathcal{A}\wedge\mathcal{A}$ | Curvature two-form; $(\mathcal{A}\wedge\mathcal{A})_{\mu\nu}=[\mathcal{A}_\mu,\mathcal{A}_\nu]$ |
 | $F_{\mathrm g,\mu\nu} = \tilde Q F_{\mu\nu}\tilde Q^{-1}$ | Adjoint (NOT invariant) transformation of the field strength |
 | $[D_\mu,D_\nu] = i\kappa F_{\mu\nu}$ | Curvature as commutator of covariant derivatives |
-| $D_\lambda \tilde{Q} = \partial/\partial Q_\lambda \tilde{Q} + i\kappa[\mathcal{A}_\lambda,\tilde{Q}]$ | Adjoint covariant derivative, $[D_\lambda,\tilde{Q}]=D_\lambda \tilde{Q}$ |
+| $D_\lambda \tilde{Q} = \partial/\partial R_\lambda \tilde{Q} + i\kappa[\mathcal{A}_\lambda,\tilde{Q}]$ | Adjoint covariant derivative, $[D_\lambda,\tilde{Q}]=D_\lambda \tilde{Q}$ |
 | $D_\lambda F_{\mu\nu} + \text{cyclic} = 0$ | Bianchi identity |
 | $\mathcal{F} = \tfrac12\sum_{\mu\nu}F_{\mu\nu}\bar{e}_\mu e_\nu$ | Biquaternion representative of the curvature (a definition) |
 | $-\tfrac12\mathrm{Tr}(\sum_{\mu,\nu}F_{\mu\nu}F_{\mu\nu})$ | Gauge-invariant Yang–Mills density |
@@ -376,7 +376,7 @@ Two things are left visible. First, a **defect in the parent**: the curvature fo
 ## Further Reading
 
 - [The Covariant Derivative and Gauge Connection in Biquaternionic Form](the-covariant-derivative-and-gauge-connection-in-biquaternionic-form.html) — the immediate parent; its abelian connection, its curvature-commutator identity, its gauge-orbit analysis, and the gap this article takes up.
-- [The Gauge Principle in Biquaternionic Form](the-gauge-principle-in-biquaternionic-form.html) — the origin of the connection and the abelian transformation law, and the preview $F_{\mu\nu} = \partial/\partial Q_\mu A_\nu - \partial/\partial Q_\nu A_\mu + \tfrac{iϙ}{\hbar}[A_\mu,A_\nu]$ that is made exact here.
+- [The Gauge Principle in Biquaternionic Form](the-gauge-principle-in-biquaternionic-form.html) — the origin of the connection and the abelian transformation law, and the preview $F_{\mu\nu} = \partial/\partial R_\mu A_\nu - \partial/\partial R_\nu A_\mu + \tfrac{iϙ}{\hbar}[A_\mu,A_\nu]$ that is made exact here.
 - [Maxwell's Equations in the Biquaternionic Formulation](maxwells-equations-in-the-biquaternionic-formulation.html) — the abelian potential, field strength and gauge scalar that the non-abelian construction generalizes.
 - [The Field-Strength Biquaternion and Its Invariants](the-field-strength-biquaternion-and-its-invariants.html) — the abelian invariants and the biquaternion norm, whose non-abelian extension is posed as an open question.
 - [Chiral Fermions in the Biquaternion Framework](chiral-fermions-in-the-biquaternion-framework.html) — the covariant derivative on the spinor module and the charge operator $Ϙ$, the setting for the matter-representation question.

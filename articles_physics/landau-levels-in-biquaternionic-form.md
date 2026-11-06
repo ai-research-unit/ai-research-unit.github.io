@@ -60,7 +60,7 @@ Because the commutator is central and proportional to $i$, the transverse mechan
 Choose the Landau gauge $\vec A=(0,Bx,0)$, for which $\vec B=B\vec u_z$ and the Hamiltonian is
 
 $$
-H=\frac{1}{2m}\Big[p_x^2+\Big(p_y-\frac{ϙB}{c}x\Big)^2+p_z^2\Big]e_t .
+H=\frac{1}{2m}\Big[p_x^2+\Big(p_y-\frac{ϙB}{c}r_x\Big)^2+p_z^2\Big]e_t .
 $$
 
 The Hamiltonian does not depend on $y$ or $z$, so the momentum components $p_y=\hbar k$ and $p_z=\hbar k_z$ are conserved, and the envelope has the form
@@ -148,7 +148,7 @@ The algebra is thus the canonical oscillator algebra in the centre, and the stan
 
 ### Angular momentum and the second ladder
 
-The uniform field admits a second conserved structure. In the symmetric gauge $\vec A=\frac12\vec B\times\vec r=\frac{B}{2}(-y,x,0)$ the Hamiltonian is invariant under rotations about the field axis, so the canonical angular momentum
+The uniform field admits a second conserved structure. In the symmetric gauge $\vec A=\frac12\vec B\times\vec r=\frac{B}{2}(-r_y,r_x,0)$ the Hamiltonian is invariant under rotations about the field axis, so the canonical angular momentum
 
 $$
 L_z^{\mathrm{orb}}=(\vec r\times p)_z

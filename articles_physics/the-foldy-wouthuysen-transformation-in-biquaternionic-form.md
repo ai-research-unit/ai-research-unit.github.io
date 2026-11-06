@@ -13,9 +13,9 @@ The scope is the transformation itself: its generator, its free-particle closed 
 **Conventions.** Every derivative in this article is the biquaternionic gradient of *Operator and Calculus Conventions*,
 
 $$
-\tilde\nabla=\sum_{\mu\in\{t,x,y,z\}}e_\mu\frac{\partial}{\partial Q_\mu},
+\tilde\nabla=\sum_{\mu\in\{t,x,y,z\}}e_\mu\frac{\partial}{\partial R_\mu},
 \qquad
-\tilde\nabla^{\natural}=\sum_{\mu\in\{t,x,y,z\}}\varepsilon_\mu e_\mu\frac{\partial}{\partial Q_\mu},
+\tilde\nabla^{\natural}=\sum_{\mu\in\{t,x,y,z\}}\varepsilon_\mu e_\mu\frac{\partial}{\partial R_\mu},
 \qquad
 \varepsilon=(1,-1,-1,-1),
 $$
@@ -23,22 +23,22 @@ $$
 with $e_t$ the identity of the algebra and $e_x,e_y,e_z$ the three pure units, $\vec e_x^2=\vec e_y^2=\vec e_z^2=-e_t$ and $\vec e_x\vec e_y=-\vec e_y\vec e_x=\vec e_z$ and cyclic, so that $\vec e_j\vec e_k=-\delta_{jk}e_t+\epsilon_{jkl}\vec e_l$. Its norm is the d'Alembertian
 
 $$
-\Box=\tilde\nabla\tilde\nabla^{\natural}=\tilde\nabla^{\natural}\tilde\nabla=\frac{\partial^2}{\partial Q_t^2}+\Delta_Q ,
+\Box=\tilde\nabla\tilde\nabla^{\natural}=\tilde\nabla^{\natural}\tilde\nabla=\frac{\partial^2}{\partial R_t^2}+\Delta_Q ,
 $$
 
 and on the material sector, where $Q_t=i c r'_t$, the two gradients and the norm read
 
 $$
-\tilde\nabla\big|_{\mathbb M_-}=-\frac{i}{c}e_t\frac{\partial}{\partial t'}+D_3,
+\tilde\nabla\big|_{\mathbb M_-}=-\frac{i}{c}e_t\frac{\partial}{\partial r'_t}+D_3,
 \qquad
-\tilde\nabla^{\natural}\big|_{\mathbb M_-}=-\frac{i}{c}e_t\frac{\partial}{\partial t'}-D_3,
+\tilde\nabla^{\natural}\big|_{\mathbb M_-}=-\frac{i}{c}e_t\frac{\partial}{\partial r'_t}-D_3,
 \qquad
-\Box\big|_{\mathbb M_-}=\Delta_Q-\frac{1}{c^2}\frac{\partial^2}{\partial t'^2},
+\Box\big|_{\mathbb M_-}=\Delta_Q-\frac{1}{c^2}\frac{\partial^2}{\partial r'_t^2},
 \qquad
 D_3=\sum_k\vec e_k\frac{\partial}{\partial q_k}.
 $$
 
-Minimal coupling shifts each derivative, $\partial/\partial Q_\mu\to\partial/\partial Q_\mu-iϙA_\mu/\hbar$, so the pure part becomes $D_3^A=\sum_k\vec e_k(\partial/\partial q_k-iϙA_k/\hbar)$, and $\sum_k\vec e_k\pi_k=-i\hbar D_3^A$ with $\pi_k=p_k-ϙA_k$ and $p_k=-i\hbar\partial/\partial q_k$. The charge is $ϙ$ and the four-potential is $A_\mu=(A_0,-\vec A)$.
+Minimal coupling shifts each derivative, $\partial/\partial R_\mu\to\partial/\partial R_\mu-iϙA_\mu/\hbar$, so the pure part becomes $D_3^A=\sum_k\vec e_k(\partial/\partial q_k-iϙA_k/\hbar)$, and $\sum_k\vec e_k\pi_k=-i\hbar D_3^A$ with $\pi_k=p_k-ϙA_k$ and $p_k=-i\hbar\partial/\partial q_k$. The charge is $ϙ$ and the four-potential is $A_\mu=(A_0,-\vec A)$.
 
 **The two involutions.** The reduction needs two right multiplications of the algebra, written by position. The **mass grading** and the **chirality** are
 
@@ -69,7 +69,7 @@ both gradients acting from the left, with no right multiplication and no conjuga
 The FW transformation is best stated for the Hamiltonian form of the Dirac equation. The pair, read on the Dirac module $\Delta=\mathbb B$, is the equation of motion
 
 $$
-i\hbar\frac{\partial F}{\partial t'}=HF,
+i\hbar\frac{\partial F}{\partial r'_t}=HF,
 \qquad
 HF=\beta mc^2F+OF+ϙA_0F,
 \qquad
@@ -127,7 +127,7 @@ and $\beta O$ is the same two-sided action as $O$, with $\vec e_y$ in place of $
 Let $U=\exp(iS)$, with $S=S_1+S_2+\cdots$ Hermitian so that $U$ is $*$-unitary. The letter $S$ is the FW generator here, as in the literature. The transformed Hamiltonian is
 
 $$
-H_2=UHU^\dagger-i\hbar\,U\frac{\partial}{\partial t'}U^\dagger ,
+H_2=UHU^\dagger-i\hbar\,U\frac{\partial}{\partial r'_t}U^\dagger ,
 $$
 
 where the second term vanishes for a time-independent $S$. Since $H=\beta mc^2+O+\mathcal{E}$, the idea is to choose $S$ so that the large commutator $i[S_1,\beta mc^2]$ equals $-O$ at leading order, cancelling the odd part and leaving an even remainder of order $1/c^2$.
@@ -319,7 +319,7 @@ $$
 The correction is of the order of the half reduced Compton wavelength $\hbar/(2mc)$ — the Zitterbewegung amplitude — and the next correction is of order $1/m^2$. The exact closed form of the previous section gives the same leading term: differentiating $\theta$ and differentiating $\vec u_p$ contribute two pieces whose dependence on $\vec u_p$ cancels, so the sum is the single operator $\vec e_k(\cdot)\vec e_y$, and the residual against $U^\dagger\vec q\,U$ is of order $1/m^2$. The operator $\vec X$ is the **mean position** (Foldy–Wouthuysen position). Its defining property is that its Heisenberg velocity,
 
 $$
-\frac{d\vec X}{dt'}=\frac{i}{\hbar}[H,\vec X]=U^\dagger\Bigl(\beta\frac{\vec pc^2}{E}\Bigr)U,
+\frac{d\vec X}{dr'_t}=\frac{i}{\hbar}[H,\vec X]=U^\dagger\Bigl(\beta\frac{\vec pc^2}{E}\Bigr)U,
 $$
 
 commutes with $H$ and therefore has no oscillatory part: in the transformed frame it is exactly the classical drift $\beta\vec pc^2/E$, and the rapid trembling of the ordinary position operator is entirely contained in the difference
@@ -468,9 +468,9 @@ The biquaternion interpretation turns on two splits that must not be conflated. 
 |---|---|
 | $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ | Biquaternion algebra |
 | $\mathbb{M}_\pm$ | Hermitian ($+$) and anti-Hermitian ($-$) sectors; $\mathbb{M}_-$ is the material sector |
-| $\tilde\nabla=\sum_\mu e_\mu\partial/\partial Q_\mu$ | Biquaternionic gradient; every derivative in the article |
-| $\tilde\nabla^{\natural}=\sum_\mu\varepsilon_\mu e_\mu\partial/\partial Q_\mu$ | Its conjugate, $\varepsilon=(1,-1,-1,-1)$ |
-| $\Box=\tilde\nabla\tilde\nabla^{\natural}=\partial^2/\partial Q_t^2+\Delta_Q$ | The d'Alembertian, $\Delta_Q-c^{-2}\partial^2/\partial t'^2$ on the material sector |
+| $\tilde\nabla=\sum_\mu e_\mu\partial/\partial R_\mu$ | Biquaternionic gradient; every derivative in the article |
+| $\tilde\nabla^{\natural}=\sum_\mu\varepsilon_\mu e_\mu\partial/\partial R_\mu$ | Its conjugate, $\varepsilon=(1,-1,-1,-1)$ |
+| $\Box=\tilde\nabla\tilde\nabla^{\natural}=\partial^2/\partial R_t^2+\Delta_Q$ | The d'Alembertian, $\Delta_Q-c^{-2}\partial^2/\partial r'_t^2$ on the material sector |
 | $D_3=\sum_k\vec e_k\partial/\partial q_k$ | Pure part of the gradient; $D_3^A$ its minimally coupled form |
 | $\beta F=iF\vec e_x$ | Mass grading, the right multiplication by $i\vec e_x$; $\beta^2=e_t$ |
 | $\Gamma F=-iF\vec e_z=iF\omega$ | Chirality, the right multiplication by $-i\vec e_z$; $\omega=-\vec e_z$ is the pseudoscalar, $\omega^2=-e_t$ |
@@ -482,7 +482,7 @@ The biquaternion interpretation turns on two splits that must not be conflated. 
 | $S_1=-\frac{i}{2mc^2}\beta O$ | Leading FW generator; its action is $\frac{1}{2mc}\sum_k\vec e_k\pi_kF\vec e_y$ |
 | $O_1 = i[S_1,\mathcal{E}]$ | Odd remainder after the first step |
 | $S_2 = -\frac{i}{2mc^2}\beta O_1$ | Second generator; odd, like every generator |
-| $H_2 = UHU^\dagger - i\hbar U\partial/\partial t'\,U^\dagger$ | Transformed Hamiltonian |
+| $H_2 = UHU^\dagger - i\hbar U\partial/\partial r'_t\,U^\dagger$ | Transformed Hamiltonian |
 | $AF=i\vec u_pF\vec e_y$ | Free-particle involution, $A^2=-e_t$, $\beta A=-A\beta$ |
 | $\theta = \arctan(|\vec p|/(mc))$ | Free-particle FW angle |
 | $\vec q = \sum_kQ_k\vec e_k$ | Material position |

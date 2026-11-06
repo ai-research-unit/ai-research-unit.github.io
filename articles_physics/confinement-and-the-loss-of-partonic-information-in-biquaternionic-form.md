@@ -283,12 +283,12 @@ one equation per chirality; the second is the conjugate of the first, and the su
 **The two-sided form.** The bag uses Kravchenko's dictionary. A real-linear bijection $A$ carries the source's four-component field $Ξ$ to a biquaternion-valued function $F=A[Ξ]$, under which the Dirac equation becomes the single equation
 
 $$
-\mathcal NF=\left(i\frac{\partial}{\partial t'}+D_3\right)F-mi\,\overline{F}\,\vec e_z=0,
+\mathcal NF=\left(i\frac{\partial}{\partial r'_t}+D_3\right)F-mi\,\overline{F}\,\vec e_z=0,
 \qquad
-D_3=\sum_{k=1}^{3}\vec e_k\frac{\partial}{\partial Q_k}.
+D_3=\sum_{k=1}^{3}\vec e_k\frac{\partial}{\partial R_k}.
 $$
 
-Since $i\partial/\partial t'=-\partial/\partial Q_t$ on the material sector in the natural units $\hbar=c=1$, the same operator reads
+Since $i\partial/\partial r'_t=-\partial/\partial R_t$ on the material sector in the natural units $\hbar=c=1$, the same operator reads
 
 $$
 \mathcal NF=-\tilde\nabla^\natural F-mi\,\overline{F}\,\vec e_z=0 .
@@ -301,10 +301,10 @@ The derivative part acts from the left, the mass part from the right through $\v
 Let $\vec q=r_x\vec e_x+r_y\vec e_y+r_z\vec e_z$, and let $Ξ$ be the source's four-component field, taken time-harmonic,
 
 $$
-Ξ(t',\vec q)=Ξ_\omega(\vec q)\,e^{\,i\omega t'},
+Ξ(r'_t,\vec q)=Ξ_\omega(\vec q)\,e^{\,i\omega r'_t},
 $$
 
-obeying the massive Dirac equation in a bounded domain $\Omega$, with $\partial\Omega$ a closed Liapunov surface. The source writes that equation in its own frame; in the conventions it is the two-sided $\mathcal NF=0$ of the previous subsection, and its derivative part is the gradient alone. The source's time term, with its two imaginary factors, is the $e_t$ term of $\tilde\nabla$ read on the material sector, where the time derivative carries the $i$, so $i\partial/\partial t'=-\partial/\partial Q_t$ and the free part is $-\tilde\nabla^\natural$. The spatial derivative is the sum $\sum_k\vec e_k\,\partial/\partial Q_k$ that $\tilde\nabla$ carries, acting from the left. The mass is the conjugation together with the direction $-\vec e_z$, and it does not commute with the phase, $\overline{Ξ_\omega e^{i\omega t'}}=\overline{Ξ_\omega}\,e^{-i\omega t'}$. The amplitude is therefore taken on the complex-linear operator that the reduction below produces, and not on $\mathcal N$ directly; that is why the source reduces before he applies the ansatz.
+obeying the massive Dirac equation in a bounded domain $\Omega$, with $\partial\Omega$ a closed Liapunov surface. The source writes that equation in its own frame; in the conventions it is the two-sided $\mathcal NF=0$ of the previous subsection, and its derivative part is the gradient alone. The source's time term, with its two imaginary factors, is the $e_t$ term of $\tilde\nabla$ read on the material sector, where the time derivative carries the $i$, so $i\partial/\partial r'_t=-\partial/\partial R_t$ and the free part is $-\tilde\nabla^\natural$. The spatial derivative is the sum $\sum_k\vec e_k\,\partial/\partial R_k$ that $\tilde\nabla$ carries, acting from the left. The mass is the conjugation together with the direction $-\vec e_z$, and it does not commute with the phase, $\overline{Ξ_\omega e^{i\omega r'_t}}=\overline{Ξ_\omega}\,e^{-i\omega r'_t}$. The amplitude is therefore taken on the complex-linear operator that the reduction below produces, and not on $\mathcal N$ directly; that is why the source reduces before he applies the ansatz.
 
 The confinement of the field to $\Omega$ is a **linear boundary condition**: a fixed value for the field's direction along the outward normal, which forbids the flow of the particle through the surface. Translated from the source's frame, the condition is the action of the element $\sum_k u_k\vec e_k$,
 
@@ -330,8 +330,8 @@ that is $\tilde{Ξ}^{\mathrm{sp}}\mapsto-\tilde{Ξ}^{\mathrm{sp}}\vec e_z$ on th
 **Removal of the conjugation operator.** Because the bar is antilinear, $\mathcal N$ is not a left multiplier, and the boundary-value machinery of the algebra — the Cauchy kernel, the Teodorescu transform, the Cauchy-type operator — does not apply to it directly. Splitting $\mathcal N$ into its two halves, with the bar in the off-diagonal places, turns the single antilinear equation into a coupled pair of **complex-linear** equations, one for the field and one for its conjugate. The two halves add to the whole, and their difference is the right action $M_{i\vec e_x}$, with $M_b:\tilde{Ξ}^{\mathrm{sp}}\mapsto\tilde{Ξ}^{\mathrm{sp}} b$; adding and subtracting the two equations therefore reduces the pair to one complex-linear operator:
 
 $$
-R = D_3 + i\frac{\partial}{\partial t'}\,M_{i\vec e_x} - m M_{\vec e_y}
-= D_3 - \frac{\partial}{\partial t'}M_{\vec e_x} - m M_{\vec e_y},
+R = D_3 + i\frac{\partial}{\partial r'_t}\,M_{i\vec e_x} - m M_{\vec e_y}
+= D_3 - \frac{\partial}{\partial r'_t}M_{\vec e_x} - m M_{\vec e_y},
 \qquad
 \mathcal N = u^{+}Ru^{-},
 $$
@@ -345,7 +345,7 @@ D_\alpha \tilde{p} = 0, \qquad \alpha = -(i\omega \vec e_x + m \vec e_y)\in\math
 \qquad D_\alpha = D + M_\alpha ,
 $$
 
-with $D=iD_3=i\sum_{k=1}^{3}\vec e_k\,\partial/\partial Q_k$ ($D^2=\Delta$) and $M_\alpha$ the right action $f\mapsto f\alpha$. A direct reduction of $R$ gives $\alpha'=\omega\vec e_x-im\vec e_y=i\alpha$. The operators $D_{\alpha'}$ and $D_\alpha$ are not the same, but their degeneracy loci are, since $\langle i\alpha\rangle_{\natural}=-\langle\alpha\rangle_{\natural}$, so the mass-shell statement is unchanged. The source writes $\alpha$, and that normalization is kept below. So the massive time-harmonic Dirac field is, after one change of variables, an $\alpha$-hyperholomorphic biquaternionic function, and the whole boundary-value theory of $D_\alpha$ — the Borel–Pompeiu formula, the Cauchy integral formula, the Plemelj–Sokhotski formulas, the Cauchy integral theorem, the Morera theorem and the boundary-value criterion — becomes available to the bag.
+with $D=iD_3=i\sum_{k=1}^{3}\vec e_k\,\partial/\partial R_k$ ($D^2=\Delta$) and $M_\alpha$ the right action $f\mapsto f\alpha$. A direct reduction of $R$ gives $\alpha'=\omega\vec e_x-im\vec e_y=i\alpha$. The operators $D_{\alpha'}$ and $D_\alpha$ are not the same, but their degeneracy loci are, since $\langle i\alpha\rangle_{\natural}=-\langle\alpha\rangle_{\natural}$, so the mass-shell statement is unchanged. The source writes $\alpha$, and that normalization is kept below. So the massive time-harmonic Dirac field is, after one change of variables, an $\alpha$-hyperholomorphic biquaternionic function, and the whole boundary-value theory of $D_\alpha$ — the Borel–Pompeiu formula, the Cauchy integral formula, the Plemelj–Sokhotski formulas, the Cauchy integral theorem, the Morera theorem and the boundary-value criterion — becomes available to the bag.
 
 ### The Mass Shell Is the Zero-Divisor Condition
 
@@ -375,7 +375,7 @@ $$
 
 with the origin $\omega=m=0$ excluded: it is the apex of the cone and is not a zero divisor.
 
-This is the meeting point of the algebra's degeneracy and the physics of the mass shell: the parameter $\alpha$ has no inverse exactly where the bag's frequency is on shell. It also places the bag systematically: the Teodorescu transform $T_\alpha$ (not the generators $T_a$ of the notation table) and the Cauchy-type operator $K_\alpha$ are defined for every $\alpha\in\mathbb{B}$, but with different formulas on the three branches — $\alpha\notin\mathcal Z$, $\alpha\in\mathcal Z$ with $\alpha_t\neq0$, and $\alpha\in\mathcal Z$ with $\alpha_t = 0$ — and the bag's parameter has $\alpha_t = 0$ and lies in the last of the three. The mass shell is thus not an obstruction but the branch on which the algebra is richest (*N-Regularity and N-Degeneracy in the Biquaternion Algebra*, §*The Zero Divisors*, *Zero Divisors as a Physical Locus in Biquaternionic Form*). It is also the point at which this framework's shift meets the scalar Helmholtz shift of *Electromagnetism in Media: The Local Complex Structure at Work*. For a scalar parameter, $D_\alpha = iD_3 + M_\alpha = i\,(D_3 + M_{-i\alpha})$ with $D_3 = \sum_k \vec e_k\,\partial/\partial Q_k$, so the framework's operator is $i$ times the source's $D_{3,\beta} = D_3 + M_\beta$ evaluated at $\beta = -i\alpha$. The bag's parameter is not scalar, so the relation to the Helmholtz operator is formal only, and the genuinely non-scalar case is the one the bag needs.
+This is the meeting point of the algebra's degeneracy and the physics of the mass shell: the parameter $\alpha$ has no inverse exactly where the bag's frequency is on shell. It also places the bag systematically: the Teodorescu transform $T_\alpha$ (not the generators $T_a$ of the notation table) and the Cauchy-type operator $K_\alpha$ are defined for every $\alpha\in\mathbb{B}$, but with different formulas on the three branches — $\alpha\notin\mathcal Z$, $\alpha\in\mathcal Z$ with $\alpha_t\neq0$, and $\alpha\in\mathcal Z$ with $\alpha_t = 0$ — and the bag's parameter has $\alpha_t = 0$ and lies in the last of the three. The mass shell is thus not an obstruction but the branch on which the algebra is richest (*N-Regularity and N-Degeneracy in the Biquaternion Algebra*, §*The Zero Divisors*, *Zero Divisors as a Physical Locus in Biquaternionic Form*). It is also the point at which this framework's shift meets the scalar Helmholtz shift of *Electromagnetism in Media: The Local Complex Structure at Work*. For a scalar parameter, $D_\alpha = iD_3 + M_\alpha = i\,(D_3 + M_{-i\alpha})$ with $D_3 = \sum_k \vec e_k\,\partial/\partial R_k$, so the framework's operator is $i$ times the source's $D_{3,\beta} = D_3 + M_\beta$ evaluated at $\beta = -i\alpha$. The bag's parameter is not scalar, so the relation to the Helmholtz operator is formal only, and the genuinely non-scalar case is the one the bag needs.
 
 ### The Bag Condition Becomes a Boundary Equation
 
@@ -457,7 +457,7 @@ The **bag** picture is different in kind. Two Dirac equations are kept apart the
 
 That condition is a boundary-value problem, and it was reduced to the algebra by Kravchenko (1995). A real-linear bijection carries the source's four-component field to a biquaternion; the mass term carries the componentwise complex conjugation $\overline{\cdot}$; factoring the equation removes it; the time-harmonic amplitude obeys $D_\alpha\tilde{p}=0$ with $\alpha = -(i\omega \vec e_x + m \vec e_y)$; the bag condition becomes the boundary condition $S^-\tilde{p}=0$; and the boundary-value criterion for $D_\alpha$ turns the model into the single boundary equation $\tilde{p} = P_\alpha\tilde{p} = S^+\tilde{p}$ on $\partial\Omega$.
 
-What the framework supplies here is the function theory, the reduction and the Fredholm question; what it still does not supply is the confining dynamics, since the bag assumes the region rather than explaining it. The three facts the reduction leans on were recomputed: the two halves of the right action are complementary, the step $i\cdot i=-1$ leaves $R=D_3-\partial M_{\vec e_x}/\partial t'-mM_{\vec e_y}$ free of complex coefficients, and $\langle \alpha\rangle_{\natural} = m^2-\omega^2$, so the parameter of the reduced bag equation lies in the **zero-divisor set $\mathcal Z$ exactly on the mass shell**.
+What the framework supplies here is the function theory, the reduction and the Fredholm question; what it still does not supply is the confining dynamics, since the bag assumes the region rather than explaining it. The three facts the reduction leans on were recomputed: the two halves of the right action are complementary, the step $i\cdot i=-1$ leaves $R=D_3-\partial M_{\vec e_x}/\partial r'_t-mM_{\vec e_y}$ free of complex coefficients, and $\langle \alpha\rangle_{\natural} = m^2-\omega^2$, so the parameter of the reduced bag equation lies in the **zero-divisor set $\mathcal Z$ exactly on the mass shell**.
 
 ## Summary of Notation
 
@@ -488,12 +488,12 @@ What the framework supplies here is the function theory, the reduction and the F
 | $\mathrm{U}(2)$, $\mathfrak{u}(2)=\mathfrak{u}(1)\oplus\mathfrak{su}(2)$, $\dim_\mathbb{R} = 4$ | Ceiling on the framework's compact gauge algebra |
 | $A$ | Real-linear bijection from the source's four-component functions to biquaternion-valued functions (bag model) |
 | $\tilde\nabla\tilde{Ξ}^{\mathrm{sp}}_R=m\tilde{Ξ}^{\mathrm{sp}}_L$, $\tilde\nabla^\natural\tilde{Ξ}^{\mathrm{sp}}_L=m\tilde{Ξ}^{\mathrm{sp}}_R$ | One-sided Dirac pair; the subscripts $L$ and $R$ are the two values of the chirality |
-| $D_3=\sum_k\vec e_k\partial/\partial Q_k$, $D_3^2=-\Delta$ | Spatial Dirac operator of the dictionary |
-| $\mathcal{N}F=(i\partial/\partial t'+D_3)F-mi\,\overline{F}\,\vec e_z$ | Two-sided Dirac operator; the bar is the conjugation in the mass term |
+| $D_3=\sum_k\vec e_k\partial/\partial R_k$, $D_3^2=-\Delta$ | Spatial Dirac operator of the dictionary |
+| $\mathcal{N}F=(i\partial/\partial r'_t+D_3)F-mi\,\overline{F}\,\vec e_z$ | Two-sided Dirac operator; the bar is the conjugation in the mass term |
 | $\overline{\cdot}$ | Componentwise complex conjugation; the mass term's antilinear factor |
-| $R=D_3-\partial M_{\vec e_x}/\partial t'-mM_{\vec e_y}$, $\mathcal{N}=u^{+}Ru^{-}$ | Conjugation-free operator, after $i\cdot i=-1$; $u^{\pm}$ are the two halves of the change of variables |
+| $R=D_3-\partial M_{\vec e_x}/\partial r'_t-mM_{\vec e_y}$, $\mathcal{N}=u^{+}Ru^{-}$ | Conjugation-free operator, after $i\cdot i=-1$; $u^{\pm}$ are the two halves of the change of variables |
 | $\vec q$ | Position in the bag domain |
-| $D_\alpha = D + M_\alpha$, $D = i\sum_k \vec e_k\,\partial/\partial Q_k$ | Shifted Moisil–Teodoresco operator; $M_b$ is the right action $f\mapsto fb$ |
+| $D_\alpha = D + M_\alpha$, $D = i\sum_k \vec e_k\,\partial/\partial R_k$ | Shifted Moisil–Teodoresco operator; $M_b$ is the right action $f\mapsto fb$ |
 | $\alpha = -(i\omega \vec e_x + m \vec e_y)$ | Bag parameter; $\alpha\in\mathcal Z \iff \omega^2 = m^2$ |
 | $\mathcal Z = \{\tilde Q\neq0 : \langle\tilde Q\rangle_{\natural}=0\}$ | Zero-divisor set; the mass shell in parameter space |
 | $S^\pm$, $P_\alpha = \tfrac12(I+S_\alpha)$ | The two complementary boundary operators of the module; $P_\alpha$ built from the Cauchy-type operator $K_\alpha$ |

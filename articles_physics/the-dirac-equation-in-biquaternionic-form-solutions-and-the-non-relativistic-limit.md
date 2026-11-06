@@ -97,8 +97,8 @@ by the same two laws with one sign reversed. The relative minus sign is the stan
 **The solutions in full.** The fields are these elements multiplied by the phase,
 
 $$
-\tilde{Ξ}^{\mathrm{sp}(+)}_{\pm}=\tilde w_\pm(\vec p)\,e^{-i(Et'-\vec p\cdot\vec x)/\hbar},\qquad
-\tilde{Ξ}^{\mathrm{sp}(-)}_{\pm}=\tilde v_\pm(\vec p)\,e^{+i(Et'-\vec p\cdot\vec x)/\hbar},
+\tilde{Ξ}^{\mathrm{sp}(+)}_{\pm}=\tilde w_\pm(\vec p)\,e^{-i(Er'_t-\vec p\cdot\vec r)/\hbar},\qquad
+\tilde{Ξ}^{\mathrm{sp}(-)}_{\pm}=\tilde v_\pm(\vec p)\,e^{+i(Er'_t-\vec p\cdot\vec r)/\hbar},
 $$
 
 with $E=+\sqrt{\vec p^2+m^2}$ in both lines: the negative-frequency solution is the same construction with the opposite phase, not a different object. On the mass shell the solution space of $\mathcal{D}\tilde w=m\tilde w$ is two-dimensional over $\mathbb{C}$, spanned by $\tilde w_+$ and $\tilde w_-$, and that of $\mathcal{D}\tilde v=-m\tilde v$ is two-dimensional as well. Together they are the four complex dimensions the companion article counts.
@@ -147,7 +147,7 @@ $$
 
 Each sum is an operator written as an element times a scalar: the symbol $\tilde w\langle\tilde w,\cdot\rangle_{\mathrm D}$ is the action sending $\tilde{Ξ}$ to $\tilde w\,\langle\tilde w,\tilde{Ξ}\rangle_{\mathrm D}$, a product of an element with a number, and no matrix enters it. The two identities are the algebraic statement that the four solutions at fixed momentum span the amplitude space, and they are what a sum over spins uses.
 
-**The conserved current.** The vector bilinear of the next section is the conserved current, $j_0=\mathrm{Tr}(\tilde{Ξ}^{\mathrm{sp}*}\tilde{Ξ}^{\mathrm{sp}})$ and $j_k=\mathrm{Tr}(\tilde{Ξ}^{\mathrm{sp}*}\vec e_k\tilde{Ξ}^{\mathrm{sp}}\vec e_z)$, and the continuity equation of the companion article reads $\partial j_0/\partial t'+\nabla\cdot\vec j=0$ on the material sector. The current is the four-vector $\tilde J=ic\,j_0e_t+\vec j$ of $\mathbb{M}_-$, with imaginary scalar part and real vector part: the Dirac current is a material-sector object, as a four-vector must be.
+**The conserved current.** The vector bilinear of the next section is the conserved current, $j_0=\mathrm{Tr}(\tilde{Ξ}^{\mathrm{sp}*}\tilde{Ξ}^{\mathrm{sp}})$ and $j_k=\mathrm{Tr}(\tilde{Ξ}^{\mathrm{sp}*}\vec e_k\tilde{Ξ}^{\mathrm{sp}}\vec e_z)$, and the continuity equation of the companion article reads $\partial j_0/\partial r'_t+\nabla\cdot\vec j=0$ on the material sector. The current is the four-vector $\tilde J=ic\,j_0e_t+\vec j$ of $\mathbb{M}_-$, with imaginary scalar part and real vector part: the Dirac current is a material-sector object, as a four-vector must be.
 
 ## The bilinears
 
@@ -227,10 +227,10 @@ $$
 
 with $\vec B=\nabla\times\vec A$. The first term is the symmetrized sum, $\tfrac12\sum_{j,k}\{\pi_j,\pi_k\}\vec e_j\vec e_k=-\vec\pi^2$, and the second is the commutator, $\sum_{j<k}[\pi_j,\pi_k]\vec e_j\vec e_k$, evaluated with $[\pi_j,\pi_k]=iϙ\epsilon_{jkl}B_l$ and $\sum_{j<k}\epsilon_{jkl}\vec e_j\vec e_k=\vec e_l$, which gives $iϙ\vec B$. The operator ordering is kept throughout, since $\vec p$ and $\vec A$ do not commute, and the magnetic term is exactly what survives it.
 
-With $E\to i\hbar\partial/\partial t'$ and the rest energy factored out by $\tilde{Ξ}=e^{-imt'/\hbar}\tilde{Ξ}'$, the equation becomes the **Pauli equation** for the large part:
+With $E\to i\hbar\partial/\partial r'_t$ and the rest energy factored out by $\tilde{Ξ}=e^{-imr'_t/\hbar}\tilde{Ξ}'$, the equation becomes the **Pauli equation** for the large part:
 
 $$
-\boxed{\;i\hbar\,\frac{\partial\tilde{Ξ}'}{\partial t'}=\left[\frac{(\vec p-ϙ\vec A)^2}{2m}+ϙΞ-\frac{ϙ\hbar}{2m}\,i\vec B\right]\tilde{Ξ}'\;}
+\boxed{\;i\hbar\,\frac{\partial\tilde{Ξ}'}{\partial r'_t}=\left[\frac{(\vec p-ϙ\vec A)^2}{2m}+ϙΞ-\frac{ϙ\hbar}{2m}\,i\vec B\right]\tilde{Ξ}'\;}
 $$
 
 The first two terms are the ordinary non-relativistic Hamiltonian of a charged particle, and the third is the spin–magnetic coupling. The unknown is one element of two complex dimensions.
@@ -335,7 +335,7 @@ The bilinears are traces of products. The scalar and the pseudoscalar are the re
 In the non-relativistic limit the split by the timelike unit separates the large and the small part, the elimination of the small part is exact to the order kept, and the square of the odd part of the action produces the Pauli equation
 
 $$
-i\hbar\,\frac{\partial\tilde{Ξ}'}{\partial t'}=\left[\frac{(\vec p-ϙ\vec A)^2}{2m}+ϙΞ-\frac{ϙ\hbar}{2m}\,i\vec B\right]\tilde{Ξ}'
+i\hbar\,\frac{\partial\tilde{Ξ}'}{\partial r'_t}=\left[\frac{(\vec p-ϙ\vec A)^2}{2m}+ϙΞ-\frac{ϙ\hbar}{2m}\,i\vec B\right]\tilde{Ξ}'
 $$
 
 on one element. The coefficient $1/2m$ of the spin term is the one that $\vec\mu=g\frac{ϙ}{2m}\vec S$ requires with $g=2$, so the gyromagnetic factor and the spin–magnetic coupling are consequences of the mass term of the equation and not separate postulates. In the massless limit the pair decouples, each value keeps one helicity, and chirality is locked to helicity.

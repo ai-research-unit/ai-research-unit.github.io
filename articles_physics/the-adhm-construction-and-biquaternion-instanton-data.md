@@ -34,7 +34,7 @@ in terms of which the six independent components are reduced to three. The compa
 **The quaternionic structure.** Identify a point of $\mathbb R^4$ with a real quaternion,
 
 $$
-x \;=\; x_4\,e_t + x_1\,\vec e_x + x_2\,\vec e_y + x_3\,\vec e_z \in\mathbb H_{\mathbb B} ,
+r_x \;=\; x_4\,e_t + x_1\,\vec e_x + x_2\,\vec e_y + x_3\,\vec e_z \in\mathbb H_{\mathbb B} ,
 $$
 
 or, grouping the coordinates into two complex numbers, with a pair $(z_1,z_2)\in\mathbb C^2$ by $z_1=x_2+ix_1$, $z_2=x_4+ix_3$. Multiplication of quaternions is complex-linear in the second factor of $\mathbb B=\mathbb C\otimes\mathbb H$, so it makes $\mathbb C^2$ into a quaternionic line: right multiplication by $\vec e_x,\vec e_y,\vec e_z$ generates an action of the quaternion units. The Hodge star acts on two-forms with $\star^2=+1$, and the rotation group of the Euclidean slice factors as $SU(2)_+\times SU(2)_-$ up to a central $\mathbb Z_2$, with $SU(2)_+$ acting on the self-dual two-forms as the triplet $\mathbf 3$ and as singlets on the anti-self-dual ones, and $SU(2)_-$ the other way round. A **self-dual** two-form is exactly the component that transforms as the triplet of $SU(2)_+$ and is a singlet of $SU(2)_-$: its three independent components are the three components of that triplet, and relative to a compatible complex structure they are the Kähler form together with the real and imaginary parts of a holomorphic two-form. This is the sense in which the instanton equation is quaternionic rather than merely four-dimensional.
@@ -216,7 +216,7 @@ Counting data, constraints and gauge redundancy gives $\dim_{\mathbb R}\mathcal 
 | $\mathbb H_{\mathbb B}$ | Real-quaternion subspace; Euclidean slice $\mathbb R^4$ |
 | $e_t=1,\vec e_x,\vec e_y,\vec e_z$ | Quaternion basis, $\vec e_k^2=-e_t$, $\vec e_x\vec e_y=\vec e_z$ |
 | $i$ | Central scalar imaginary |
-| $x=x_4e_t+x_1\vec e_x+x_2\vec e_y+x_3\vec e_z$ | Quaternionic coordinate |
+| $r_x=x_4e_t+x_1\vec e_x+x_2\vec e_y+x_3\vec e_z$ | Quaternionic coordinate |
 | $z_1=x_2+ix_1,\ z_2=x_4+ix_3$ | Complex coordinates, defining module $\mathbb C^2$ |
 | $k$ | Instanton number (topological charge $Ϙ$) |
 | $N$ | Rank parameter; $N=2$ for the framework's $SU(2)$ |

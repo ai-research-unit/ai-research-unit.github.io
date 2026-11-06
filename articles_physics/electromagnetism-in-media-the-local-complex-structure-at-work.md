@@ -2,7 +2,7 @@
 
 ## Introduction
 
-Maxwell's equations in a material medium are usually introduced as a small modification of the vacuum equations: replace $\epsilon_0$ and $\mu_0$ by the permittivity $\epsilon$ and the permeability $\mu$ of the medium, and read off the consequences. In the biquaternionic formulation the emphasis is reversed. The medium is the general case and the vacuum is its limit, because the complex structure of the algebra is **local**. The material subspace $\mathbb{M}_-$ is coordinatised by $(i c r'_t,\,x,\,y,\,z)$, and the factor $i$ that marks the temporal direction is paired with the **speed of light in the medium**,
+Maxwell's equations in a material medium are usually introduced as a small modification of the vacuum equations: replace $\epsilon_0$ and $\mu_0$ by the permittivity $\epsilon$ and the permeability $\mu$ of the medium, and read off the consequences. In the biquaternionic formulation the emphasis is reversed. The medium is the general case and the vacuum is its limit, because the complex structure of the algebra is **local**. The material subspace $\mathbb{M}_-$ is coordinatised by $(i c r'_t,\,r_x,\,r_y,\,r_z)$, and the factor $i$ that marks the temporal direction is paired with the **speed of light in the medium**,
 $$
 c=\frac{1}{\sqrt{\epsilon\mu}},
 $$
@@ -18,7 +18,7 @@ The algebra $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$, its units $e_
 
 **An action is a product, and the side is position.** The operator is the element it multiplies by, so the gradient acting from the left is written $\tilde{\nabla}\tilde{F}$, a coefficient acting from the right is written $g\,\vec{\alpha}$, and a two-sided action is $a\,\tilde{Ξ}^{\mathrm{sp}}\,b$. No array is written in the body of this article. The gamma arrays of the older Dirac literature are collected in §*The Legacy Pauli Gamma Formulation* and used nowhere else.
 
-The biquaternionic gradient $\tilde{\nabla}$ and its quaternion conjugate $\tilde{\nabla}^{\natural}$ are those of *Operator and Calculus Conventions*, the d'Alembertian is $\Box=\tilde{\nabla}\tilde{\nabla}^{\natural}$, and the medium enters the gradient only through the derivative in the time direction, whose value on the material sector is $\partial/\partial Q_t=-(i/c)\,\partial/\partial t'$. Throughout, $c$ denotes the speed of light **in the medium** and $c_0$ the vacuum speed; the divergence and curl are written $\mathrm{div}$ and $\mathrm{rot}$.
+The biquaternionic gradient $\tilde{\nabla}$ and its quaternion conjugate $\tilde{\nabla}^{\natural}$ are those of *Operator and Calculus Conventions*, the d'Alembertian is $\Box=\tilde{\nabla}\tilde{\nabla}^{\natural}$, and the medium enters the gradient only through the derivative in the time direction, whose value on the material sector is $\partial/\partial R_t=-(i/c)\,\partial/\partial r'_t$. Throughout, $c$ denotes the speed of light **in the medium** and $c_0$ the vacuum speed; the divergence and curl are written $\mathrm{div}$ and $\mathrm{rot}$.
 
 ## Constitutive Relations and the Two Parameters of a Medium
 
@@ -30,7 +30,7 @@ $$
 $$
 where $\vec E$ is the electric field, $\vec H$ the magnetic field, $\vec D$ the electric displacement and $\vec B$ the magnetic induction. These relations are inherited unchanged from the Maxwell article. The free charge and current densities $\rho$ and $\vec J$ obey the conservation law
 $$
-\mathrm{div}\,\vec J+\frac{\partial\rho}{\partial t'}=0,
+\mathrm{div}\,\vec J+\frac{\partial\rho}{\partial r'_t}=0,
 $$
 which is the integrability condition of the Maxwell system and reappears below as a condition on the biquaternionic source.
 
@@ -60,13 +60,13 @@ The vacuum speed $c_0$ is a global constant. The medium speed $c$ is not: in an 
 
 ## The Biquaternionic Gradient and the Local Complex Structure
 
-The gradient is the one fixed in *Operator and Calculus Conventions*. On the material sector its time derivative takes the value $\partial/\partial Q_t=\partial/\partial(i c r'_t)=-(i/c)\,\partial/\partial t'$, and the d'Alembertian is that file's identity $\Box=\tilde{\nabla}\tilde{\nabla}^{\natural}=\tilde{\nabla}^{\natural}\tilde{\nabla}=\partial^2/\partial Q_t^2+\Delta$ evaluated at that derivative,
+The gradient is the one fixed in *Operator and Calculus Conventions*. On the material sector its time derivative takes the value $\partial/\partial R_t=\partial/\partial(i c r'_t)=-(i/c)\,\partial/\partial r'_t$, and the d'Alembertian is that file's identity $\Box=\tilde{\nabla}\tilde{\nabla}^{\natural}=\tilde{\nabla}^{\natural}\tilde{\nabla}=\partial^2/\partial R_t^2+\Delta$ evaluated at that derivative,
 $$
 \Box=\Delta-\frac{1}{c^2}\,\partial^2/\partial {r'_{t}}^2,
 $$
 the d'Alembertian of a medium with speed $c$. This is the vacuum value with $c$ in place of $c_0$.
 
-The medium enters this operator in exactly one way: through $c$ in $\partial/\partial Q_t$. The algebra — the quaternion units, the scalar imaginary $i$, the decomposition $\mathbb{B}=\mathbb{M}_+\oplus\mathbb{M}_-$ — is fixed and medium-independent. What the medium changes is the **embedding of physical spacetime into the algebra**. The material time coordinate is $i c r'_t=i\,c\,t'$, so the map from physical time to the imaginary scalar direction of $\mathbb{B}$ carries the local factor $c(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)$.
+The medium enters this operator in exactly one way: through $c$ in $\partial/\partial R_t$. The algebra — the quaternion units, the scalar imaginary $i$, the decomposition $\mathbb{B}=\mathbb{M}_+\oplus\mathbb{M}_-$ — is fixed and medium-independent. What the medium changes is the **embedding of physical spacetime into the algebra**. The material time coordinate is $i c r'_t=i\,c\,r'_t$, so the map from physical time to the imaginary scalar direction of $\mathbb{B}$ carries the local factor $c(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)$.
 
 Because $c>0$ is real, the medium rescales the imaginary axis but does not rotate it. The phase of the complex structure is the fixed $i$; its scale is the local $c$. This is the precise sense in which the complex structure is local. In the language of the introduction to the framework, $c$ plays the role of the local scale factor of the complex structure, and the constant vacuum value $c_0$ is the special case in which that scale does not vary. The classical $i c r'_t$ convention of Minkowski space is the vacuum limit of the local structure.
 
@@ -129,7 +129,7 @@ so twice the energy density is the scalar part of the Hermitian form, and $\frac
 
 Finally, in an inhomogeneous medium $\epsilon=\epsilon(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)$ and $\mu=\mu(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)$, and the normalisation is applied pointwise:
 $$
-\tilde{F}(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z,t')=i\sqrt{\epsilon(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)}\,\vec E(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z,t')-\sqrt{\mu(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)}\,\vec H(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z,t').
+\tilde{F}(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z,r'_t)=i\sqrt{\epsilon(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)}\,\vec E(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z,r'_t)-\sqrt{\mu(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)}\,\vec H(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z,r'_t).
 $$
 The field strength is then assembled from the local complex structure, and it inherits the spatial variation of the medium.
 
@@ -156,9 +156,9 @@ The purpose of this section is to display how the medium factors cancel, so that
 For a pure-vector field $\tilde{F}=\vec F$, the biquaternionic gradient acts as
 $$
 \tilde{\nabla}\tilde{F}
-=-\mathrm{div}\,\vec F+\partial/\partial Q_t\,\vec F+\mathrm{rot}\,\vec F,
+=-\mathrm{div}\,\vec F+\partial/\partial R_t\,\vec F+\mathrm{rot}\,\vec F,
 $$
-the scalar part being $-\mathrm{div}\,\vec F$ and the vector part $\partial/\partial Q_t\,\vec F+\mathrm{rot}\,\vec F$. Substituting $\vec F=i\sqrt{\epsilon}\,\vec E-\sqrt{\mu}\,\vec H$ and $\partial/\partial Q_t=-(i/c)\partial/\partial t'$, and separating the real and imaginary parts, the scalar equation gives
+the scalar part being $-\mathrm{div}\,\vec F$ and the vector part $\partial/\partial R_t\,\vec F+\mathrm{rot}\,\vec F$. Substituting $\vec F=i\sqrt{\epsilon}\,\vec E-\sqrt{\mu}\,\vec H$ and $\partial/\partial R_t=-(i/c)\partial/\partial r'_t$, and separating the real and imaginary parts, the scalar equation gives
 $$
 \mathrm{div}\,\vec E=\frac{\rho}{\epsilon},
 \qquad
@@ -166,21 +166,21 @@ $$
 $$
 and the vector equation gives
 $$
-\mathrm{rot}\,\vec H=\frac{\partial\vec D}{\partial t'}+\vec J,
+\mathrm{rot}\,\vec H=\frac{\partial\vec D}{\partial r'_t}+\vec J,
 \qquad
-\mathrm{rot}\,\vec E=-\frac{\partial\vec B}{\partial t'}.
+\mathrm{rot}\,\vec E=-\frac{\partial\vec B}{\partial r'_t}.
 $$
 The first pair is Gauss's law for $\vec D=\epsilon\vec E$ together with $\mathrm{div}\,\vec B=0$ (since $\vec B=\mu\vec H$ and $\mu$ is constant here), and the second pair is the Ampère–Maxwell law and Faraday's law. All four standard equations are recovered, with no residual $\epsilon$ or $\mu$.
 
-The cancellation is the content of the normalisation. In the vector equation, for example, $\partial/\partial Q_t$ acting on the electric half gives
+The cancellation is the content of the normalisation. In the vector equation, for example, $\partial/\partial R_t$ acting on the electric half gives
 $$
-\frac{\partial}{\partial Q_t}\left(i\sqrt{\epsilon}\,\vec E\right)=-\frac{i}{c}\,\frac{\partial}{\partial t'}\left(i\sqrt{\epsilon}\,\vec E\right)=\frac{\sqrt{\epsilon}}{c}\,\frac{\partial\vec E}{\partial t'},
+\frac{\partial}{\partial R_t}\left(i\sqrt{\epsilon}\,\vec E\right)=-\frac{i}{c}\,\frac{\partial}{\partial r'_t}\left(i\sqrt{\epsilon}\,\vec E\right)=\frac{\sqrt{\epsilon}}{c}\,\frac{\partial\vec E}{\partial r'_t},
 $$
-because $\partial/\partial Q_t=-(i/c)\partial/\partial t'$ and $i^2=-1$; on the magnetic half it gives $\partial/\partial Q_t(-\sqrt{\mu}\vec H)=+\frac{i}{c}\sqrt{\mu}\,\partial\vec H/\partial t'$, which is imaginary. The real part of the vector equation, $\frac{\sqrt{\epsilon}}{c}\partial \vec E/\partial t'-\sqrt{\mu}\,\mathrm{rot}\,\vec H=-\sqrt{\mu}\vec J$, is Ampère–Maxwell's law with the coefficient
+because $\partial/\partial R_t=-(i/c)\partial/\partial r'_t$ and $i^2=-1$; on the magnetic half it gives $\partial/\partial R_t(-\sqrt{\mu}\vec H)=+\frac{i}{c}\sqrt{\mu}\,\partial\vec H/\partial r'_t$, which is imaginary. The real part of the vector equation, $\frac{\sqrt{\epsilon}}{c}\partial \vec E/\partial r'_t-\sqrt{\mu}\,\mathrm{rot}\,\vec H=-\sqrt{\mu}\vec J$, is Ampère–Maxwell's law with the coefficient
 $$
 \frac{\sqrt{\epsilon}}{c\sqrt{\mu}}=\epsilon,
 $$
-using $\sqrt{\epsilon\mu}=1/c$; the imaginary part, $\frac{\sqrt{\mu}}{c}\partial \vec H/\partial t'+\sqrt{\epsilon}\,\mathrm{rot}\,\vec E=0$, is Faraday's law with the coefficient $\sqrt{\mu}/(c\sqrt{\epsilon})=\mu$. One power of $i$ comes from the field's electric half and one from $\partial/\partial Q_t$, and the product is the $-1$ that turns the two curl terms into the two time derivatives. The factors $\sqrt{\epsilon}$ and $\sqrt{\mu}$ on the fields are exactly what is required for the medium to cancel out of the components. The biquaternionic Maxwell equation therefore has a form independent of the medium; the medium is carried by the definition of $\tilde{F}$, by the single factor $\sqrt{\mu}$, and by the operator $\partial/\partial Q_t$.
+using $\sqrt{\epsilon\mu}=1/c$; the imaginary part, $\frac{\sqrt{\mu}}{c}\partial \vec H/\partial r'_t+\sqrt{\epsilon}\,\mathrm{rot}\,\vec E=0$, is Faraday's law with the coefficient $\sqrt{\mu}/(c\sqrt{\epsilon})=\mu$. One power of $i$ comes from the field's electric half and one from $\partial/\partial R_t$, and the product is the $-1$ that turns the two curl terms into the two time derivatives. The factors $\sqrt{\epsilon}$ and $\sqrt{\mu}$ on the fields are exactly what is required for the medium to cancel out of the components. The biquaternionic Maxwell equation therefore has a form independent of the medium; the medium is carried by the definition of $\tilde{F}$, by the single factor $\sqrt{\mu}$, and by the operator $\partial/\partial R_t$.
 
 Two companion statements from the Maxwell article carry over unchanged. The first is the integrability condition $\sqrt{\mu}\,\mathrm{Sc}(\tilde{\nabla}^{\natural}\tilde{J})=0$, which is the biquaternionic form of charge conservation. The second is the potential formulation: in the Lorenz gauge the potential biquaternion $\tilde{A}=i\,a'_t+\vec A$ satisfies
 $$
@@ -217,9 +217,9 @@ All of this is standard, and it is what fixes the meaning of a "plane wave in a 
 
 The biquaternionic interpretation is that each Fourier component carries its own local complex structure. The algebra $\mathbb{B}$ is the same at every frequency; what changes is the scale that maps physical time to the imaginary coordinate. For a monochromatic wave the scalar component of the gradient acts as
 $$
-\partial/\partial Q_t=-\frac{i}{c}\,\partial/\partial t'\;\longrightarrow\;-\frac{\omega}{c(\omega)},
+\partial/\partial R_t=-\frac{i}{c}\,\partial/\partial r'_t\;\longrightarrow\;-\frac{\omega}{c(\omega)},
 $$
-because $\partial/\partial t'\to-i\omega$ in the $\exp(-i\omega t')$ convention of this section and $i^2=-1$, so the imaginary time axis is scaled differently at each frequency. The local complex structure is thus **spectral** as well as spatial: it is indexed by the frequency at which the medium is probed.
+because $\partial/\partial r'_t\to-i\omega$ in the $\exp(-i\omega r'_t)$ convention of this section and $i^2=-1$, so the imaginary time axis is scaled differently at each frequency. The local complex structure is thus **spectral** as well as spatial: it is indexed by the frequency at which the medium is probed.
 
 Two caveats delimit what the framework as written supports.
 
@@ -243,48 +243,48 @@ where $\beta$ is the **chirality measure** of the medium, a real scalar of the d
 
 **A name collision.** Everywhere else in this framework the same word labels the two halves of a Dirac field: the element carries the subscript $L$ or $R$, that label takes those two values and no third, and it is read off the element rather than computed; for that sense see *Chiral Fermions in the Biquaternion Framework*. "Chiral medium" is the older use of the same word for an optically active material. The two senses are unrelated and are distinguished by context alone; the medium sense occurs only in this section and its two companions below. The physical motivation for the medium sense — organic molecules such as DNA at some frequencies, the pupil of the eye, and manufactured chiral materials — is recorded by the authors of the time-harmonic treatment cited below.
 
-**The time variable of this section.** The source of this section differentiates with respect to the *real* time, and the corpus's own variable is imaginary: $\partial/\partial t'=ic\,\partial/\partial Q_t$, so that $\partial/\partial t'$ and $ic\,\partial/\partial Q_t$ are the same operator and only one convention should be used in a display. The formulas of this section are written with $\partial/\partial t'$, which is the source's variable, so that each of them can be checked as it stands against Maxwell's equations and against the source; the corpus's $\partial/\partial Q_t$ reappears in the non-chiral reduction of the earlier sections, where it carries no source to be transcribed. The time-harmonic convention is $\exp(i\omega t')$, so that $\partial/\partial t'\to i\omega$.
+**The time variable of this section.** The source of this section differentiates with respect to the *real* time, and the corpus's own variable is imaginary: $\partial/\partial r'_t=ic\,\partial/\partial R_t$, so that $\partial/\partial r'_t$ and $ic\,\partial/\partial R_t$ are the same operator and only one convention should be used in a display. The formulas of this section are written with $\partial/\partial r'_t$, which is the source's variable, so that each of them can be checked as it stands against Maxwell's equations and against the source; the corpus's $\partial/\partial R_t$ reappears in the non-chiral reduction of the earlier sections, where it carries no source to be transcribed. The time-harmonic convention is $\exp(i\omega r'_t)$, so that $\partial/\partial r'_t\to i\omega$.
 
 **The reduction, and why it is not the same reduction.** Substituting the two relations into Faraday's and Ampère–Maxwell's laws and keeping the two divergence equations gives the chiral system
 $$
-\mathrm{rot}\,\vec H=\epsilon\left(\partial/\partial t'\,\vec E+\beta\,\partial/\partial t'\,\mathrm{rot}\,\vec E\right)+\vec J,
+\mathrm{rot}\,\vec H=\epsilon\left(\partial/\partial r'_t\,\vec E+\beta\,\partial/\partial r'_t\,\mathrm{rot}\,\vec E\right)+\vec J,
 \qquad
-\mathrm{rot}\,\vec E=-\mu\left(\partial/\partial t'\,\vec H+\beta\,\partial/\partial t'\,\mathrm{rot}\,\vec H\right),
+\mathrm{rot}\,\vec E=-\mu\left(\partial/\partial r'_t\,\vec H+\beta\,\partial/\partial r'_t\,\mathrm{rot}\,\vec H\right),
 \qquad
 \mathrm{div}\,\vec E=\frac{\rho}{\epsilon},
 \qquad
 \mathrm{div}\,\vec H=0 ,
 $$
-the last of which is unchanged because $\mathrm{div}\,\mathrm{rot}=0$ and $\mu$ is constant. The magnetoelectric terms do not disturb charge conservation either: eliminating $\mathrm{div}\,\mathrm{rot}\,\vec H=0$ against the two divergence equations, or equivalently taking the divergence of Ampère–Maxwell's law, gives $i\omega\rho+\mathrm{div}\,\vec J=0$ in the frequency domain, the law $\partial/\partial t'\,\rho+\mathrm{div}\,\vec J=0$ in the time domain, exactly as for an ordinary medium. Applying $\mathrm{rot}$ separates the fields and gives the chiral wave equations
+the last of which is unchanged because $\mathrm{div}\,\mathrm{rot}=0$ and $\mu$ is constant. The magnetoelectric terms do not disturb charge conservation either: eliminating $\mathrm{div}\,\mathrm{rot}\,\vec H=0$ against the two divergence equations, or equivalently taking the divergence of Ampère–Maxwell's law, gives $i\omega\rho+\mathrm{div}\,\vec J=0$ in the frequency domain, the law $\partial/\partial r'_t\,\rho+\mathrm{div}\,\vec J=0$ in the time domain, exactly as for an ordinary medium. Applying $\mathrm{rot}$ separates the fields and gives the chiral wave equations
 $$
-\mathrm{rot}\,\mathrm{rot}\,\vec E+\epsilon\mu\,\partial^2/\partial t'^2\,\vec E
-+2\beta\epsilon\mu\,\partial^2/\partial t'^2\,\mathrm{rot}\,\vec E
-+\beta^2\epsilon\mu\,\partial^2/\partial t'^2\,\mathrm{rot}\,\mathrm{rot}\,\vec E
-=-\mu\,\partial/\partial t'\,\vec J-\beta\mu\,\partial/\partial t'\,\mathrm{rot}\,\vec J,
+\mathrm{rot}\,\mathrm{rot}\,\vec E+\epsilon\mu\,\partial^2/\partial r'_t^2\,\vec E
++2\beta\epsilon\mu\,\partial^2/\partial r'_t^2\,\mathrm{rot}\,\vec E
++\beta^2\epsilon\mu\,\partial^2/\partial r'_t^2\,\mathrm{rot}\,\mathrm{rot}\,\vec E
+=-\mu\,\partial/\partial r'_t\,\vec J-\beta\mu\,\partial/\partial r'_t\,\mathrm{rot}\,\vec J,
 $$
 and the corresponding equation for $\vec H$ with $\mathrm{rot}\,\vec J$ as its source. At $\beta=0$ these are the ordinary second-order wave equations of the medium. For $\beta\neq0$ the last term makes them **fourth order**: the chiral generalisation is not the non-chiral wave equation with a small term added, it is an equation of a different order.
 
-The chiral system nevertheless collapses into one equation, carried by a new operator. With $D=\vec e_x\,\partial/\partial Q_x+\vec e_y\,\partial/\partial Q_y+\vec e_z\,\partial/\partial Q_z$ the **Moisil–Teodoresco** operator of quaternionic analysis, the operator is
+The chiral system nevertheless collapses into one equation, carried by a new operator. With $D=\vec e_x\,\partial/\partial R_x+\vec e_y\,\partial/\partial R_y+\vec e_z\,\partial/\partial R_z$ the **Moisil–Teodoresco** operator of quaternionic analysis, the operator is
 $$
-\mathcal{M}=\beta\sqrt{\epsilon\mu}\;\partial/\partial t' D+\sqrt{\epsilon\mu}\;\partial/\partial t'-iD ,
+\mathcal{M}=\beta\sqrt{\epsilon\mu}\;\partial/\partial r'_t D+\sqrt{\epsilon\mu}\;\partial/\partial r'_t-iD ,
 $$
 and it acts on the purely vectorial biquaternionic field
 $$
 \vec{\mathcal N}=\vec E-i\sqrt{\frac{\mu}{\epsilon}}\,\vec H,
 \qquad
 \boxed{\;\mathcal{M}\vec{\mathcal N}=-\sqrt{\frac{\mu}{\epsilon}}\,\vec J
--\beta\sqrt{\frac{\mu}{\epsilon}}\,\partial/\partial t'\,\rho+\frac{i\rho}{\epsilon}\;}.
+-\beta\sqrt{\frac{\mu}{\epsilon}}\,\partial/\partial r'_t\,\rho+\frac{i\rho}{\epsilon}\;}.
 $$
-The equivalence is exact and two-way, not a weak-coupling approximation in $\beta$: the physical fields solve the chiral system if and only if $\vec{\mathcal N}$ solves this one (the source's Proposition 1). The field $\vec{\mathcal N}$ is not the Riemann–Silberstein vector $\vec N=\vec E+ic\vec B$ of the earlier sections: since $c\mu=\sqrt{\mu/\epsilon}$, it is exactly the coefficientwise complex conjugate of $\vec N$, and it is written with its own symbol so that the two are not conflated. For $\beta=0$ the operator reduces to $\sqrt{\epsilon\mu}\,\partial/\partial t'-iD$, which is the reduction of the non-chiral case, and the authors are explicit that the chiral operator is *essentially different* from it.
+The equivalence is exact and two-way, not a weak-coupling approximation in $\beta$: the physical fields solve the chiral system if and only if $\vec{\mathcal N}$ solves this one (the source's Proposition 1). The field $\vec{\mathcal N}$ is not the Riemann–Silberstein vector $\vec N=\vec E+ic\vec B$ of the earlier sections: since $c\mu=\sqrt{\mu/\epsilon}$, it is exactly the coefficientwise complex conjugate of $\vec N$, and it is written with its own symbol so that the two are not conflated. For $\beta=0$ the operator reduces to $\sqrt{\epsilon\mu}\,\partial/\partial r'_t-iD$, which is the reduction of the non-chiral case, and the authors are explicit that the chiral operator is *essentially different* from it.
 
-**The non-chiral limit in the framework's own symbols.** At $\beta=0$ the operator is $\mathcal{M}_0=\sqrt{\epsilon\mu}\,\partial/\partial t'-iD$, and composed with its complex conjugate it is the d'Alembertian. Because $D^2=-\Delta$ (verified to $1.8\times10^{-15}$ on random wave vectors) and $\partial/\partial t'$ commutes with $D$,
+**The non-chiral limit in the framework's own symbols.** At $\beta=0$ the operator is $\mathcal{M}_0=\sqrt{\epsilon\mu}\,\partial/\partial r'_t-iD$, and composed with its complex conjugate it is the d'Alembertian. Because $D^2=-\Delta$ (verified to $1.8\times10^{-15}$ on random wave vectors) and $\partial/\partial r'_t$ commutes with $D$,
 $$
-\left(\sqrt{\epsilon\mu}\,\partial/\partial t'-iD\right)\left(\sqrt{\epsilon\mu}\,\partial/\partial t'+iD\right)
-=\epsilon\mu\,\partial^2/\partial t'^2-\Delta=-\Box ,
+\left(\sqrt{\epsilon\mu}\,\partial/\partial r'_t-iD\right)\left(\sqrt{\epsilon\mu}\,\partial/\partial r'_t+iD\right)
+=\epsilon\mu\,\partial^2/\partial r'_t^2-\Delta=-\Box ,
 $$
 which is the parent article's factorization read with the opposite overall sign for $\Box$. The source cites the same identity as the factorization of the non-chiral wave operator on which the earlier quaternionic reformulation rests. Read together, the two statements say that the parent's reduction is the $\beta=0$ member of a one-parameter family, and the member whose single equation is *first* order.
 
-**A degenerate frequency in the frequency domain.** A Fourier transform in $t'$ in the $\exp(i\omega t')$ convention replaces $\partial/\partial t'$ by $i\omega$ and turns $\mathcal{M}$ into $\beta\sqrt{\epsilon\mu}\,i\omega D+\sqrt{\epsilon\mu}\,i\omega-iD$, which factors exactly:
+**A degenerate frequency in the frequency domain.** A Fourier transform in $r'_t$ in the $\exp(i\omega r'_t)$ convention replaces $\partial/\partial r'_t$ by $i\omega$ and turns $\mathcal{M}$ into $\beta\sqrt{\epsilon\mu}\,i\omega D+\sqrt{\epsilon\mu}\,i\omega-iD$, which factors exactly:
 $$
 \mathcal{M}(\omega)=i\left(\beta\sqrt{\epsilon\mu}\,\omega-1\right)\bigl(D+\alpha(\omega)\bigr),
 \qquad
@@ -323,20 +323,20 @@ $$
 $$
 which the source identifies as the quaternionic form of the Silver–Müller condition. The factor $1+i(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)/|r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z|$ is a zero divisor of the algebra — its norm vanishes while its scalar part is $1$ — so the condition may not be divided by it and no decay rate follows from it alone; the caveat, and the extra decay hypothesis the literature attaches to it in the isotropic case, are recorded in *Maxwell's Equations in Chiral Media — The Quaternionic Reformulation*. **The minus sign in $\mathrm{Sd}_\alpha$ is the source's and is not decorative.** The bracketed form of $K_\alpha$ factors $\mathrm{Sd}_\alpha$ out, so it reads identically with either sign; the sign is fixed by the kernel's defining property, and it is the minus that makes $(D+\alpha)K_\alpha=+\delta$ rather than $-\delta$ — checked numerically, the surface integral of $\vec u K_\alpha$ over a sphere surrounding the origin tending to $+1$ for the source's sign and to $-1$ for the other. It is fixed independently by the classical limit: at $\alpha=0$ the source's sign gives $K_0=-(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)/(4\pi|r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z|^{3})$, the Cauchy kernel of $D$, which is also the kernel the article's inhomogeneous-media section arrives at, whereas the other sign would give its negative. The two expressions for $K_\alpha$ agree (the gradient identity was verified to $3\times10^{-9}$, the finite-difference floor). After the time Fourier transform, the chiral operator's fundamental solution acquires the denominator $\omega-a$ with $a=1/(\beta\sqrt{\epsilon\mu})$, the same degenerate frequency as above — together with a double pole there, and an essential singularity through a factor $\exp(ic(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)/(\omega-a))$. For $\beta\neq0$, therefore, the fundamental solution is not a finite combination of the customary kernels; the source expands the exponential and reduces the problem to a series of residues.
 
-Causality is then imposed, not assumed: among the regularisations of the inverse transform the source selects the one that vanishes for $t'<0$, by displacing the frequency into the upper half-plane, $\omega\mapsto\omega-i0$, "in agreement with the condition $\mathrm{Im}\,\alpha\geq0$". For a simple pole this gives the retarded factor
+Causality is then imposed, not assumed: among the regularisations of the inverse transform the source selects the one that vanishes for $r'_t<0$, by displacing the frequency into the upper half-plane, $\omega\mapsto\omega-i0$, "in agreement with the condition $\mathrm{Im}\,\alpha\geq0$". For a simple pole this gives the retarded factor
 $$
-\frac{1}{2\pi i}\oint\frac{\exp(i\omega t')\,d\omega}{\omega-a_y}
-=\mathrm{H}^{\mathrm{hvs}}(t')\,\exp(i a_y t'),
+\frac{1}{2\pi i}\oint\frac{\exp(i\omega r'_t)\,d\omega}{\omega-a_y}
+=\mathrm{H}^{\mathrm{hvs}}(r'_t)\,\exp(i a_y r'_t),
 $$
-with $a_y=a+iy$ and $\Theta$ the Heaviside function, and the higher-order poles give $\mathrm{H}^{\mathrm{hvs}}(t')\,\exp(ia_yt')(it')^{n}/n!$; the residue formula was checked to $3.2\times10^{-9}$ for pole orders 1–3. For $t'<0$ the same integrand must be closed in the lower half-plane, where the displaced pole is not enclosed, so the contour integral vanishes: that is the content of the causality principle here, and it is exactly the statement that the displaced pole lies in the upper half-plane. Convolution of the resulting kernel with the quaternionic source then solves the inhomogeneous chiral system in whole space.
+with $a_y=a+iy$ and $\Theta$ the Heaviside function, and the higher-order poles give $\mathrm{H}^{\mathrm{hvs}}(r'_t)\,\exp(ia_yr'_t)(ir'_t)^{n}/n!$; the residue formula was checked to $3.2\times10^{-9}$ for pole orders 1–3. For $r'_t<0$ the same integrand must be closed in the lower half-plane, where the displaced pole is not enclosed, so the contour integral vanishes: that is the content of the causality principle here, and it is exactly the statement that the displaced pole lies in the upper half-plane. Convolution of the resulting kernel with the quaternionic source then solves the inhomogeneous chiral system in whole space.
 
 **The residue series resums.** The source's interchange of the summation of the expanded exponential with the contour integration is justified, not formal — it checks the uniform convergence that licenses it — and the two residue series it produces are the Bessel series themselves:
 $$
-\mathcal{I}_1=i\mathrm{H}^{\mathrm{hvs}}(t')\,\exp(ia_yt')J_0\!\left(2\sqrt{\kappa(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)\,t'}\right),
+\mathcal{I}_1=i\mathrm{H}^{\mathrm{hvs}}(r'_t)\,\exp(ia_yr'_t)J_0\!\left(2\sqrt{\kappa(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)\,r'_t}\right),
 \qquad
-\mathcal{I}_2=-\mathrm{H}^{\mathrm{hvs}}(t')\sqrt{\frac{r'_{t}}{\kappa(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)}}\,\exp(ia_yt')J_1\!\left(2\sqrt{\kappa(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)\,t'}\right),
+\mathcal{I}_2=-\mathrm{H}^{\mathrm{hvs}}(r'_t)\sqrt{\frac{r'_{t}}{\kappa(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)}}\,\exp(ia_yr'_t)J_1\!\left(2\sqrt{\kappa(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)\,r'_t}\right),
 $$
-where $\kappa(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)=|r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z|/(\beta^2\sqrt{\epsilon\mu})$ is the coefficient of the essential singularity, so that $2\sqrt{\kappa(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)t'}=2\sqrt{t'|r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z|}/(\beta(\epsilon\mu)^{1/4})$. Both identifications were checked to $6\times10^{-13}$ against the standard series of $J_0$ and $J_1$. The time dependence of the chiral fundamental solution is therefore a **closed form** in two Bessel functions, and the source writes it out in that form: the kernel is built from $K_{1/\beta}$ and $\mathrm{Sd}_{1/\beta}$, the parameter $1/\beta$ being the limit of $\alpha(\omega)$ as $\omega\to\infty$, that is the frequency-independent part of the exponent, multiplied by $J_0$ and $J_1$ of $2\sqrt{t'|r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z|}/(\beta(\epsilon\mu)^{1/4})$ and by the retarded factor $\mathrm{H}^{\mathrm{hvs}}(t')\exp(iat')/(\beta\sqrt{\epsilon\mu})$. What fails for $\beta\neq0$ is thus not the existence of a causal fundamental solution but its expression through the customary Cauchy and Helmholtz kernels alone; the essential singularity of the frequency-domain kernel resums into Bessel functions of the retarded variable $\sqrt{\kappa(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)t'}$, one order up from the non-chiral case, where the kernel is $\mathrm{H}^{\mathrm{hvs}}(t')\delta(|r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z|-t'/\sqrt{\epsilon\mu})/(4\pi|r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z|)$ and no Bessel function appears.
+where $\kappa(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)=|r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z|/(\beta^2\sqrt{\epsilon\mu})$ is the coefficient of the essential singularity, so that $2\sqrt{\kappa(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)r'_t}=2\sqrt{r'_t|r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z|}/(\beta(\epsilon\mu)^{1/4})$. Both identifications were checked to $6\times10^{-13}$ against the standard series of $J_0$ and $J_1$. The time dependence of the chiral fundamental solution is therefore a **closed form** in two Bessel functions, and the source writes it out in that form: the kernel is built from $K_{1/\beta}$ and $\mathrm{Sd}_{1/\beta}$, the parameter $1/\beta$ being the limit of $\alpha(\omega)$ as $\omega\to\infty$, that is the frequency-independent part of the exponent, multiplied by $J_0$ and $J_1$ of $2\sqrt{r'_t|r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z|}/(\beta(\epsilon\mu)^{1/4})$ and by the retarded factor $\mathrm{H}^{\mathrm{hvs}}(r'_t)\exp(iar'_t)/(\beta\sqrt{\epsilon\mu})$. What fails for $\beta\neq0$ is thus not the existence of a causal fundamental solution but its expression through the customary Cauchy and Helmholtz kernels alone; the essential singularity of the frequency-domain kernel resums into Bessel functions of the retarded variable $\sqrt{\kappa(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)r'_t}$, one order up from the non-chiral case, where the kernel is $\mathrm{H}^{\mathrm{hvs}}(r'_t)\delta(|r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z|-r'_t/\sqrt{\epsilon\mu})/(4\pi|r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z|)$ and no Bessel function appears.
 
 **What the addition is, and what it is not.** The Drude–Born–Fedorov relations are a standard constitutive model, and everything above is a mathematical result about it: a reduction to one equation, a factorization, a degeneracy, a birefringence and a causal fundamental solution. Nothing in it is evidence for the biquaternion framework, and the framework's own epistemic standard applies. What it does supply is a precise structural statement about the framework's own reduction: that reduction is the $\beta=0$ member of a family, and the family's other members are *not* deformations of it — the operator changes order, acquires a degenerate frequency, and loses the expression of its fundamental solution as a finite combination of the customary kernels (it resums to Bessel functions instead, as recorded above). That is the reason the authors' remark that the chiral operator is "essentially different" is a statement about the algebra and not a figure of speech.
 
@@ -349,9 +349,9 @@ where $\kappa(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)=|r_x\,\vec e_x+r_y\,\ve
 Every medium so far has had constant $\epsilon$ and $\mu$. Let them now be differentiable positive functions of position, $\epsilon=\epsilon(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)$ and $\mu=\mu(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)$, and keep the Maxwell system in the form
 
 $$
-\mathrm{rot}\,\vec H=\epsilon\,\partial/\partial t'\,\vec E+\vec J,
+\mathrm{rot}\,\vec H=\epsilon\,\partial/\partial r'_t\,\vec E+\vec J,
 \qquad
-\mathrm{rot}\,\vec E=-\mu\,\partial/\partial t'\,\vec H,
+\mathrm{rot}\,\vec E=-\mu\,\partial/\partial r'_t\,\vec H,
 \qquad
 \mathrm{div}(\epsilon\vec E)=\rho,
 \qquad
@@ -399,23 +399,23 @@ $$
 and $\ell_\epsilon:=\mathrm{grad}\,\epsilon/\epsilon=2\vec{\epsilon}$, with $\ell_\mu$ defined the same way. Combining the two divergence equations with the two curl equations gives the pair
 
 $$
-D\,\vec E=\langle \ell_\epsilon,\vec E\rangle-\mu\,\partial/\partial t'\,\vec H-\frac{\rho}{\epsilon},
+D\,\vec E=\langle \ell_\epsilon,\vec E\rangle-\mu\,\partial/\partial r'_t\,\vec H-\frac{\rho}{\epsilon},
 \qquad
-D\,\vec H=\langle \ell_\mu,\vec H\rangle+\epsilon\,\partial/\partial t'\,\vec E+\vec J,
+D\,\vec H=\langle \ell_\mu,\vec H\rangle+\epsilon\,\partial/\partial r'_t\,\vec E+\vec J,
 $$
 
 and the scalar-product identity turns each of them into a gradient-corrected operator. For the electric field, adding $\vec{\epsilon}\,\vec E$ and using $\langle \ell_\epsilon,\vec E\rangle=-(\vec{\epsilon}\,\vec E+\vec E\,\vec{\epsilon})$,
 
 $$
 D\,\vec E+\vec{\epsilon}\,\vec E
-=-\tfrac{1}{2}\,\vec E\,\ell_\epsilon-\mu\,\partial/\partial t'\,\vec H-\frac{\rho}{\epsilon},
+=-\tfrac{1}{2}\,\vec E\,\ell_\epsilon-\mu\,\partial/\partial r'_t\,\vec H-\frac{\rho}{\epsilon},
 $$
 
 and for the magnetic field
 
 $$
 D\,\vec H+\vec{\mu}\,\vec H
-=-\tfrac{1}{2}\,\vec H\,\ell_\mu+\epsilon\,\partial/\partial t'\,\vec E+\vec J,
+=-\tfrac{1}{2}\,\vec H\,\ell_\mu+\epsilon\,\partial/\partial r'_t\,\vec E+\vec J,
 $$
 
 where the coefficient stands on the **left** of the field as written, while the two corrections on the right-hand sides are **right** products. The order is not cosmetic: exchanging $\vec E\ell_\epsilon$ for $\ell_\epsilon\vec E$ changes the remainder by $2\,\vec E\times \ell_\epsilon$.
@@ -434,13 +434,13 @@ the pair becomes
 
 $$
 D\,\vec{\mathcal E}+\vec{\mathcal E}\,\vec{\epsilon}
-=-\frac{1}{c}\,\partial/\partial t'\,\vec{\mathcal H}-\frac{\rho}{\sqrt{\epsilon}},
+=-\frac{1}{c}\,\partial/\partial r'_t\,\vec{\mathcal H}-\frac{\rho}{\sqrt{\epsilon}},
 \qquad
 D\,\vec{\mathcal H}+\vec{\mathcal H}\,\vec{\mu}
-=\frac{1}{c}\,\partial/\partial t'\,\vec{\mathcal E}+\sqrt{\mu}\,\vec J,
+=\frac{1}{c}\,\partial/\partial r'_t\,\vec{\mathcal E}+\sqrt{\mu}\,\vec J,
 $$
 
-the corrections now being right products, as the dots record. In the time-harmonic convention $\exp(i\omega t')$ used by the source of this section — the dispersion section above uses $\exp(-i\omega t')$ and the two must not be mixed — with $k=\omega\sqrt{\epsilon\mu}$,
+the corrections now being right products, as the dots record. In the time-harmonic convention $\exp(i\omega r'_t)$ used by the source of this section — the dispersion section above uses $\exp(-i\omega r'_t)$ and the two must not be mixed — with $k=\omega\sqrt{\epsilon\mu}$,
 
 $$
 D\,\vec{\mathcal E}+\vec{\mathcal E}\,\vec{\epsilon}=-ik\,\vec{\mathcal H}-\frac{\rho}{\sqrt{\epsilon}},
@@ -450,7 +450,7 @@ $$
 
 These are exact equivalents of the Maxwell system for arbitrary $\epsilon(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)$ and $\mu(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)$. "Exact" is meant literally: this is neither a weak-inhomogeneity nor a slowly-varying approximation, and no term has been dropped. At constant $\epsilon,\mu$ the vectors $\vec{\epsilon},\vec{\mu}$ vanish and the pair collapses to $D\vec{\mathcal E}=-ik\vec{\mathcal H}-\rho/\sqrt{\epsilon}$ and $D\vec{\mathcal H}=ik\vec{\mathcal E}+\sqrt{\mu}\,\vec J$, which is the constant-coefficient reduction of the earlier sections written in the normalisation of this one.
 
-**Two conventions meet here, and they should be separated.** The vacuum operator of the source's reduction is $\frac{1}{c}\partial/\partial t'+iD$, while the non-chiral reduction recorded in the chiral section above is $M_0=\frac{1}{c}\partial/\partial t'-iD$. The two are complex conjugates of one another and not rivals. The field $\mathcal{F}$ used below is $\sqrt{\epsilon}$ times the Riemann–Silberstein vector, that is, $\sqrt{\epsilon}$ times the conjugate of the chiral section's purely vectorial field $\vec{\mathcal N}=\vec E-iZ\vec H$; conjugating a reduction built on $M_0$ replaces $-iD$ by $+iD$, so the sign of the $iD$ term is carried by which field one starts from. The sections below use the source's convention throughout, and the dictionary to the corpus's field strength is given at the end of this section.
+**Two conventions meet here, and they should be separated.** The vacuum operator of the source's reduction is $\frac{1}{c}\partial/\partial r'_t+iD$, while the non-chiral reduction recorded in the chiral section above is $M_0=\frac{1}{c}\partial/\partial r'_t-iD$. The two are complex conjugates of one another and not rivals. The field $\mathcal{F}$ used below is $\sqrt{\epsilon}$ times the Riemann–Silberstein vector, that is, $\sqrt{\epsilon}$ times the conjugate of the chiral section's purely vectorial field $\vec{\mathcal N}=\vec E-iZ\vec H$; conjugating a reduction built on $M_0$ replaces $-iD$ by $+iD$, so the sign of the $iD$ term is carried by which field one starts from. The sections below use the source's convention throughout, and the dictionary to the corpus's field strength is given at the end of this section.
 
 **The single equation, and why it is a Vekua equation.** One further combination collapses the pair. Set
 
@@ -465,7 +465,7 @@ $$
 where $Z=\sqrt{\mu/\epsilon}$ is the intrinsic impedance fixed earlier. Then the two equations are together equivalent to the single equation
 
 $$
-\boxed{\;\left(\frac{1}{c}\,\partial/\partial t'+iD\right)\mathcal{F}-\mathcal{F}\,(i\vec{c})-\bar{\mathcal{F}}\,(i\vec{Z})
+\boxed{\;\left(\frac{1}{c}\,\partial/\partial r'_t+iD\right)\mathcal{F}-\mathcal{F}\,(i\vec{c})-\bar{\mathcal{F}}\,(i\vec{Z})
 =-\left(\sqrt{\mu}\,\vec J+\frac{i\rho}{\sqrt{\epsilon}}\right)\;},
 $$
 
@@ -479,7 +479,7 @@ $$
 
 the symmetric and antisymmetric combinations of the two medium gradients are precisely the two coefficients that appear.
 
-The structure of the equation is what matters. The operator acting on $\mathcal{F}$ is the vacuum operator $\frac{1}{c}\partial/\partial t'+iD$ of the earlier sections; the inhomogeneity adds two **zeroth-order** terms with variable coefficients, one multiplying $\mathcal{F}$ and one multiplying $\bar{\mathcal{F}}$. A first-order equation whose coefficients act on both $\mathcal{F}$ and its conjugate is a **Vekua equation** — the prototype being $w_{\bar z}=Aw+Bw^{\natural}$ in one complex variable — and the Vekua equation is the governing equation of generalized analytic, or **pseudoanalytic**, functions. The result is that **Maxwell's equations for an arbitrary inhomogeneous medium are equivalent to a single quaternionic equation of Vekua type**, so that the theory of pseudoanalytic functions becomes available for electromagnetism in arbitrary media: its integral representations, its similarity principle, its Liouville-type theorems, and its existence and solvability results. The corpus now carries the first layer of that theory — the generating quartet of the Vekua-type equation, the reduction of the equation to a condition on the coefficients, the equivalent Vekua equation for their combination, and the inverse of the reduction — in the section *The Generating Quartet, the Pseudoanalytic Equation, and the Inverse of the Reduction* below; the four items listed in the previous sentence are what that section does not yet supply, and they are supplied for the linear theory by the integral-representations and Riemann–Hilbert material of the analysis cluster — the boundary value problem with a jump and the singular integral equation of Cauchy type of *Riemann Boundary Value Problems and Singular Integral Equations*, whose Plemelj formulas, canonical factor and solvability criteria are the general form of the four items.
+The structure of the equation is what matters. The operator acting on $\mathcal{F}$ is the vacuum operator $\frac{1}{c}\partial/\partial r'_t+iD$ of the earlier sections; the inhomogeneity adds two **zeroth-order** terms with variable coefficients, one multiplying $\mathcal{F}$ and one multiplying $\bar{\mathcal{F}}$. A first-order equation whose coefficients act on both $\mathcal{F}$ and its conjugate is a **Vekua equation** — the prototype being $w_{\bar z}=Aw+Bw^{\natural}$ in one complex variable — and the Vekua equation is the governing equation of generalized analytic, or **pseudoanalytic**, functions. The result is that **Maxwell's equations for an arbitrary inhomogeneous medium are equivalent to a single quaternionic equation of Vekua type**, so that the theory of pseudoanalytic functions becomes available for electromagnetism in arbitrary media: its integral representations, its similarity principle, its Liouville-type theorems, and its existence and solvability results. The corpus now carries the first layer of that theory — the generating quartet of the Vekua-type equation, the reduction of the equation to a condition on the coefficients, the equivalent Vekua equation for their combination, and the inverse of the reduction — in the section *The Generating Quartet, the Pseudoanalytic Equation, and the Inverse of the Reduction* below; the four items listed in the previous sentence are what that section does not yet supply, and they are supplied for the linear theory by the integral-representations and Riemann–Hilbert material of the analysis cluster — the boundary value problem with a jump and the singular integral equation of Cauchy type of *Riemann Boundary Value Problems and Singular Integral Equations*, whose Plemelj formulas, canonical factor and solvability criteria are the general form of the four items.
 
 Two limitations belong with the result. The equivalence relocates the difficulty rather than removing it: the reduction is exact, but it is a reduction to an equation that must then be solved. And the reduction is not a closed-form solution of the time-dependent inhomogeneous problem. What the framework delivers in closed form is the time-dependent problem for homogeneous media, including the chiral ones, and the static problem for inhomogeneous media; the arbitrary inhomogeneous case reaches the equivalent single equation and stops there.
 
@@ -561,7 +561,7 @@ $$
 D\vec{\alpha}+\vec{\alpha}^{2}=-v ,
 $$
 
-and $\vec{\alpha}=\mathrm{grad}\,\xi/\xi$ with $v=\Delta\xi/\xi$ satisfies that condition identically, the relation $D\vec{\alpha}+\vec{\alpha}^2=-v$ being equivalent to $-\Delta\xi+v\xi=0$. The relation is the quaternionic generalisation of the Riccati equation, and it is the same relation that appears in the corpus's treatment of the quaternionic Riccati equation. The factorisation is a mixed statement, and the sides are not decorative: with the coefficient on the left in both factors, the product of $g\mapsto Dg+\vec{\alpha}g$ with $g\mapsto Dg-\vec{\alpha}g$ acquires the first-order remainder $-2\sum_k(\partial u/\partial Q_k)(\vec e_k\times\vec{\alpha})$, which vanishes only when $\vec{\alpha}$ is scalar, whereas the mixed operator above reproduces $(-\Delta+v)u$ exactly for scalar $u$. The asymmetry between the two sides is a property of the algebra, not of the notation.
+and $\vec{\alpha}=\mathrm{grad}\,\xi/\xi$ with $v=\Delta\xi/\xi$ satisfies that condition identically, the relation $D\vec{\alpha}+\vec{\alpha}^2=-v$ being equivalent to $-\Delta\xi+v\xi=0$. The relation is the quaternionic generalisation of the Riccati equation, and it is the same relation that appears in the corpus's treatment of the quaternionic Riccati equation. The factorisation is a mixed statement, and the sides are not decorative: with the coefficient on the left in both factors, the product of $g\mapsto Dg+\vec{\alpha}g$ with $g\mapsto Dg-\vec{\alpha}g$ acquires the first-order remainder $-2\sum_k(\partial u/\partial R_k)(\vec e_k\times\vec{\alpha})$, which vanishes only when $\vec{\alpha}$ is scalar, whereas the mixed operator above reproduces $(-\Delta+v)u$ exactly for scalar $u$. The asymmetry between the two sides is a property of the algebra, not of the notation.
 
 **The same factorisation covers a whole family of operators — including the conductivity equation.** The factorisation above is the particular case $p=1$, $q=v$ of a more general identity, and the general identity is what connects the framework to the rest of mathematical physics. Let $p,q,u_0$ be complex-valued with $p\in C^2(\Omega)$, $p\neq0$ in $\Omega$, and let $u_0$ be a nonvanishing particular solution of the second-order equation
 
@@ -621,7 +621,7 @@ The two series are the even and the odd parts in $\omega$. Their values at the b
 
 **The carrier of the series is the carrier of the factorisation.** The two carriers are the same function. The series is normalised by $g=\sqrt{p}\,g_0$ with $g_0$ a particular solution of $\frac{d}{dx}\left(p\frac{dg_0}{dx}\right)+qg_0=0$; the factorisation above is carried by $f=p^{1/2}u_0$ with $u_0$ a nonvanishing particular solution of $(\mathrm{div}\,p\,\mathrm{grad}+q)u=0$. In one dimension the two equations are the same equation, so $g=f$ term by term. What the one-dimensional theory adds to the factorisation is the second boundedness condition: the factorisation needs only that $u_0$ be nonvanishing, while the series additionally needs $1/g_0$ bounded, and it is that reciprocal condition which makes the carrier and its square well behaved at both endpoints and hence makes the coefficients computable on the whole interval. The condition is concrete and checkable, and it is exactly the criterion a reader of the factorisation section would want and the section does not supply.
 
-**Why $\omega$ is the right variable, and what the method is worth numerically.** The series is a power series in $\omega$ with coefficients independent of $\omega$. Once the $X^{(n)}_{+}$ and $X^{(n)}_{-}$ are computed to order $N$, an approximate solution is a polynomial in $\omega$ with those coefficients, so an initial-value problem is solved for all $\omega$ at once and a spectral problem in $\omega$ becomes root-finding for a polynomial. That is the property the older power-series representation of the same solution lacked: in the classical form the spectral parameter enters in a manner too complicated to be used quantitatively. The paper's motivating instance is electromagnetic, the equation $-\frac{d^2u}{dx^2}+\omega^2q(x)u=0$ for different complex values of $\omega^2$ — the stratified-medium problem of Wait — which is the corpus's own frequency dependence, and the method returns the solution as a function of the wave number rather than one solution per wave number. The paper reports that the truncated series beats Matlab's adaptive solver `ode45` by several orders of magnitude on three test problems, and the figures are recorded as reported and not reproduced: for $q\equiv-c^2$ with initial data $u(0)=1$, $(du/dx)(0)=-1$ on $(0,1)$ it reports absolute and relative errors of order $10^{-16}$ and $10^{-14}$ for the series at $N=55$ to $58$ against $10^{-9}$ and $10^{-6}$ for `ode45` at $c=1$, and order $10^{-12}$ for both against $10^{-6}$ and $10^{-5}$ at $c=10$; for $q=c^2x^2+c$, where the exact solution is $u=\exp(cx^2/2)\bigl(c_1+c_2\int_0^x\exp(-c{r'_{t}}^2)dt'\bigr)$, the reported `ode45` absolute error at $c=30$ is $0.28$ against the series' $10^{-9}$. The comparison is the author's own, on Matlab 7, and it is a comparison with one adaptive solver rather than a benchmark; the corpus records it as an announced result. Two standing weaknesses of the paper are worth carrying with it. Every example is one-dimensional and the coefficients $p,q$ are smooth on a closed interval, so nothing here addresses a singular endpoint, where the boundedness of $1/g_0$ can fail; and the paper is a short announcement, so the convergence estimates are sketched through the Weierstrass test rather than developed.
+**Why $\omega$ is the right variable, and what the method is worth numerically.** The series is a power series in $\omega$ with coefficients independent of $\omega$. Once the $X^{(n)}_{+}$ and $X^{(n)}_{-}$ are computed to order $N$, an approximate solution is a polynomial in $\omega$ with those coefficients, so an initial-value problem is solved for all $\omega$ at once and a spectral problem in $\omega$ becomes root-finding for a polynomial. That is the property the older power-series representation of the same solution lacked: in the classical form the spectral parameter enters in a manner too complicated to be used quantitatively. The paper's motivating instance is electromagnetic, the equation $-\frac{d^2u}{dx^2}+\omega^2q(x)u=0$ for different complex values of $\omega^2$ — the stratified-medium problem of Wait — which is the corpus's own frequency dependence, and the method returns the solution as a function of the wave number rather than one solution per wave number. The paper reports that the truncated series beats Matlab's adaptive solver `ode45` by several orders of magnitude on three test problems, and the figures are recorded as reported and not reproduced: for $q\equiv-c^2$ with initial data $u(0)=1$, $(du/dx)(0)=-1$ on $(0,1)$ it reports absolute and relative errors of order $10^{-16}$ and $10^{-14}$ for the series at $N=55$ to $58$ against $10^{-9}$ and $10^{-6}$ for `ode45` at $c=1$, and order $10^{-12}$ for both against $10^{-6}$ and $10^{-5}$ at $c=10$; for $q=c^2x^2+c$, where the exact solution is $u=\exp(cx^2/2)\bigl(c_1+c_2\int_0^r_x\exp(-c{r'_{t}}^2)dr'_t\bigr)$, the reported `ode45` absolute error at $c=30$ is $0.28$ against the series' $10^{-9}$. The comparison is the author's own, on Matlab 7, and it is a comparison with one adaptive solver rather than a benchmark; the corpus records it as an announced result. Two standing weaknesses of the paper are worth carrying with it. Every example is one-dimensional and the coefficients $p,q$ are smooth on a closed interval, so nothing here addresses a singular endpoint, where the boundedness of $1/g_0$ can fail; and the paper is a short announcement, so the convergence estimates are sketched through the Weierstrass test rather than developed.
 
 **The three equations that follow from one solution.** The relations between the operators become relations between their solutions. Let the biquaternion-valued function $\mathcal{W}$ solve the Vekua-type equation
 
@@ -687,7 +687,7 @@ with the scalar shift $\alpha$ replaced by the vector coefficient $\vec{\alpha}$
 
 **What this adds, and what it does not.** The inhomogeneous branch of the framework now has four levels, and they should be kept apart. The exact reduction to a single Vekua-type equation holds for arbitrary $\epsilon(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)$ and $\mu(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)$ and for time-dependent fields, but it delivers an equation rather than a solution. The theory of the operator $\mathcal{D}_{\vec{\alpha}}$ with a gradient coefficient is complete and explicit, and it delivers both the Schrödinger reduction and the closed-form fundamental solution, but only for coefficients of the carrier form $\mathrm{grad}\,\xi/\xi$, and, in the closed-form example, for the constant quotient $\Delta\xi/\xi=-k^2$. The general factorisation of $(\mathrm{div}\,p\,\mathrm{grad}+q)$, and with it the conductivity equation, is a third interpretation of the same first-order operators rather than a further level of the same branch: it is the widest statement of the factorisation, of which the Schrödinger reduction is the case $p=1$, and it is an operator identity rather than a solution. The one-dimensional general solution of the last of these is the fourth level, and it is where the sequence finally closes on a formula: one bounded particular solution $g_0$ of the auxiliary equation, with $1/g_0$ bounded as well, generates the whole solution space of $\frac{d}{dx}\left(p\frac{du}{dx}\right)+qu=\omega^2p\,u$ through two explicit recursions, so the reduction that stopped at an equation now ends at a solution — in one dimension, for smooth coefficients, and with the reciprocal boundedness as its price. What remains absent is the body of the general pseudoanalytic, or Vekua, function theory in more than one dimension that the Vekua reduction makes available — the corpus now carries its first layer, the generating quartet with the equation for $w$ and the inverse of the reduction, recorded in the next section, while the theory's own theorems, its similarity principle and its Liouville-type statements among them, are still not carried — a closed-form treatment of the time-dependent inhomogeneous problem, and any numerical work in this article beyond the one-dimensional series — the framework's other numerical method, the collocation scheme of the survey, is recorded in the chiral article where the scattering problem lives.
 
-**A note on the two sources.** The material of these two sections is taken from V. V. Kravchenko, *Quaternionic reformulation of Maxwell's equations for inhomogeneous media and new solutions* (arXiv:math-ph/0104008) and *Quaternionic equation for electromagnetic fields in inhomogeneous media* (arXiv:math-ph/0202010), with one exception: the general $(\mathrm{div}\,p\,\mathrm{grad}+q)$ factorisation of the operator-relation web and the conductivity equation it carries are not in the 2001 paper, which stops at the Schrödinger member; they are cited in the Further Reading to the survey's reference $[29]$, V. V. Kravchenko, *J. Phys. A* **39** (2006) 12407–12425, which is also the primary source of the generating-quartet section below. Both papers write the Moisil–Teodoresco operator as $D=\sum_k i_k\partial/\partial Q_k$ with the quaternion units called $i_k$; the units $\vec e_k$ of this article are the same objects, and their $D$ is the spatial part of the biquaternionic gradient fixed above. In the available text layer of both papers the distinction between multiplying by a coefficient from the left and from the right is not always preserved, so the multiplication order recorded here is not the printed order but the order that reproduces the equations: every statement above was checked numerically, and wherever the alternative order fails it fails by an $O(1)$ margin. One cross-article warning follows from this. In these two papers the two multiplications carry two different letters, and this article names them by position in the product, so the letter written after the element is the one applied last. In *Biquaternion Regular Functions*, by contrast, the shifted operator written $D_\alpha$ adds a *right* product under a letter that names a left product here, so the same letter carries the other side there.
+**A note on the two sources.** The material of these two sections is taken from V. V. Kravchenko, *Quaternionic reformulation of Maxwell's equations for inhomogeneous media and new solutions* (arXiv:math-ph/0104008) and *Quaternionic equation for electromagnetic fields in inhomogeneous media* (arXiv:math-ph/0202010), with one exception: the general $(\mathrm{div}\,p\,\mathrm{grad}+q)$ factorisation of the operator-relation web and the conductivity equation it carries are not in the 2001 paper, which stops at the Schrödinger member; they are cited in the Further Reading to the survey's reference $[29]$, V. V. Kravchenko, *J. Phys. A* **39** (2006) 12407–12425, which is also the primary source of the generating-quartet section below. Both papers write the Moisil–Teodoresco operator as $D=\sum_k i_k\partial/\partial R_k$ with the quaternion units called $i_k$; the units $\vec e_k$ of this article are the same objects, and their $D$ is the spatial part of the biquaternionic gradient fixed above. In the available text layer of both papers the distinction between multiplying by a coefficient from the left and from the right is not always preserved, so the multiplication order recorded here is not the printed order but the order that reproduces the equations: every statement above was checked numerically, and wherever the alternative order fails it fails by an $O(1)$ margin. One cross-article warning follows from this. In these two papers the two multiplications carry two different letters, and this article names them by position in the product, so the letter written after the element is the one applied last. In *Biquaternion Regular Functions*, by contrast, the shifted operator written $D_\alpha$ adds a *right* product under a letter that names a left product here, so the same letter carries the other side there.
 
 ## The Generating Quartet, the Pseudoanalytic Equation, and the Inverse of the Reduction
 
@@ -788,20 +788,20 @@ and, at normal incidence, reflection and transmission coefficients determined by
 $$
 r=\frac{Z_2-Z_1}{Z_2+Z_1},
 \qquad
-t'=\frac{2Z_2}{Z_1+Z_2},
+r'_t=\frac{2Z_2}{Z_1+Z_2},
 $$
-with reflectance $R=|r|^2$ and transmittance $T=(Z_1/Z_2)|t'|^2$ satisfying $R+T=1$. The mismatch $Z_2-Z_1$ is the quantity that controls the reflected wave, and in the variables of this article it is the mismatch between the two local normalisations $\sqrt{\mu_i/\epsilon_i}$. The general oblique-incidence Fresnel coefficients depend on the polarisation; the point for the framework is that the interface is where the local complex structure changes, and the boundary conditions are the matching data across that change.
+with reflectance $R=|r|^2$ and transmittance $T=(Z_1/Z_2)|r'_t|^2$ satisfying $R+T=1$. The mismatch $Z_2-Z_1$ is the quantity that controls the reflected wave, and in the variables of this article it is the mismatch between the two local normalisations $\sqrt{\mu_i/\epsilon_i}$. The general oblique-incidence Fresnel coefficients depend on the polarisation; the point for the framework is that the interface is where the local complex structure changes, and the boundary conditions are the matching data across that change.
 
 ## Conventions for a Plane Wave in the Medium
 
 This section fixes the conventions for the later exercise on plane-wave propagation in a medium. Work in a homogeneous medium with real, possibly frequency-dependent, $\epsilon(\omega)$ and $\mu(\omega)$, and use the complex-amplitude convention
 $$
-\vec E(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z,t')=\mathrm{Re}\!\left[\vec E_0\,\exp(\,i(\vec k\cdot(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)-\omega t'))\right],
+\vec E(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z,r'_t)=\mathrm{Re}\!\left[\vec E_0\,\exp(\,i(\vec k\cdot(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)-\omega r'_t))\right],
 $$
 $$
-\vec H(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z,t')=\mathrm{Re}\!\left[\vec H_0\,\exp(\,i(\vec k\cdot(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)-\omega t'))\right],
+\vec H(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z,r'_t)=\mathrm{Re}\!\left[\vec H_0\,\exp(\,i(\vec k\cdot(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)-\omega r'_t))\right],
 $$
-with complex amplitude vectors $\vec E_0,\vec H_0$ and real $\omega>0$ and $\vec k$. This fixes the sign convention; the opposite choice $\exp(-i(\vec k\cdot(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)-\omega t'))$ is equivalent under $\vec k\to-\vec k$, $\omega\to-\omega$.
+with complex amplitude vectors $\vec E_0,\vec H_0$ and real $\omega>0$ and $\vec k$. This fixes the sign convention; the opposite choice $\exp(-i(\vec k\cdot(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)-\omega r'_t))$ is equivalent under $\vec k\to-\vec k$, $\omega\to-\omega$.
 
 For a source-free plane wave, $\tilde{\nabla}\tilde{F}=0$ is equivalent to the four algebraic conditions
 $$
@@ -858,7 +858,7 @@ The vacuum is the special case $\epsilon=\epsilon_0$, $\mu=\mu_0$, $c=c_0$, $Z=Z
 $$
 \tilde{F}=i\sqrt{\epsilon_0}\,\vec E-\sqrt{\mu_0}\,\vec H,
 $$
-the gradient becomes $\tilde{\nabla}=e_t\,\partial/\partial Q_t+\vec e_x\,\partial/\partial Q_x+\vec e_y\,\partial/\partial Q_y+\vec e_z\,\partial/\partial Q_z$, and the d'Alembertian becomes $\Box=\Delta-c_0^{-2}\partial^2/\partial t'^2=\partial^2/\partial Q_t^2+\Delta$. The complex time coordinate becomes $ic_0t'$, recovering the familiar $i c r'_t$ form with the vacuum speed of light, and the local complex structure becomes constant. The invariants become $I_1=\vec E^2-c_0^2\vec B^2$ and $I_2=\vec E\cdot\vec B$, the Riemann–Silberstein vector becomes $\vec N=\vec E+ic_0\vec B$, and the plane-wave conditions become $k^2=\omega^2/c_0^2$, $|\vec E_0|=c_0|\vec B_0|$, and $\langle\tilde{F}_0\rangle_{\natural}=0$, all as in the parent article. The impedance becomes $Z_0=\sqrt{\mu_0/\epsilon_0}$, and the refractive index becomes $n=1$.
+the gradient becomes $\tilde{\nabla}=e_t\,\partial/\partial R_t+\vec e_x\,\partial/\partial R_x+\vec e_y\,\partial/\partial R_y+\vec e_z\,\partial/\partial R_z$, and the d'Alembertian becomes $\Box=\Delta-c_0^{-2}\partial^2/\partial r'_t^2=\partial^2/\partial R_t^2+\Delta$. The complex time coordinate becomes $ic_0r'_t$, recovering the familiar $i c r'_t$ form with the vacuum speed of light, and the local complex structure becomes constant. The invariants become $I_1=\vec E^2-c_0^2\vec B^2$ and $I_2=\vec E\cdot\vec B$, the Riemann–Silberstein vector becomes $\vec N=\vec E+ic_0\vec B$, and the plane-wave conditions become $k^2=\omega^2/c_0^2$, $|\vec E_0|=c_0|\vec B_0|$, and $\langle\tilde{F}_0\rangle_{\natural}=0$, all as in the parent article. The impedance becomes $Z_0=\sqrt{\mu_0/\epsilon_0}$, and the refractive index becomes $n=1$.
 
 This is the check that the medium conventions are consistent. Every medium result is the general one, and the vacuum results are recovered by setting the two medium parameters to their vacuum values. In particular, the null condition and the zero-divisor structure of the field strength are not special to vacuum; they hold in every medium, with the medium speed defining the cone. The question of which of $c_0$ and $(\epsilon_0,\mu_0)$ is fundamental — whether the vacuum has electromagnetic properties in the same sense that a medium does — is discussed in the Maxwell article and is not settled here.
 
@@ -934,7 +934,7 @@ The product of the four is taken in the order in which the cells stand, and the 
 
 Electromagnetism in a material medium is developed here as the general case, with the vacuum as its limit. The constitutive relations $\vec D=\epsilon\vec E$ and $\vec B=\mu\vec H$ supply the two parameters of a homogeneous medium, which may be taken as the speed $c=1/\sqrt{\epsilon\mu}$ and the impedance $Z=\sqrt{\mu/\epsilon}$, or equivalently as $\epsilon=1/(cZ)$ and $\mu=Z/c$.
 
-The medium enters the biquaternionic structure in two places and nowhere else. First, through $c$ in the gradient, $\partial/\partial Q_t=-(i/c)\partial/\partial t'$, so that the map from physical time to the imaginary scalar direction of $\mathbb{B}$ carries the local scale $c$; this is the sense in which the complex structure is local, the algebra being fixed while its embedding in physical spacetime is not. Second, through the normalisations $\sqrt{\epsilon},\sqrt{\mu}$ of the field strength and the corresponding $1/\sqrt{\epsilon},\sqrt{\mu}$ of the source biquaternion
+The medium enters the biquaternionic structure in two places and nowhere else. First, through $c$ in the gradient, $\partial/\partial R_t=-(i/c)\partial/\partial r'_t$, so that the map from physical time to the imaginary scalar direction of $\mathbb{B}$ carries the local scale $c$; this is the sense in which the complex structure is local, the algebra being fixed while its embedding in physical spacetime is not. Second, through the normalisations $\sqrt{\epsilon},\sqrt{\mu}$ of the field strength and the corresponding $1/\sqrt{\epsilon},\sqrt{\mu}$ of the source biquaternion
 $$
 \tilde{F}=i\sqrt{\epsilon}\,\vec E-\sqrt{\mu}\,\vec H,
 $$
@@ -942,9 +942,9 @@ which is fixed by the parent article and splits $\tilde{F}$ into a Hermitian ele
 
 The single biquaternionic Maxwell equation $\tilde{\nabla}\tilde{F}=-\sqrt{\mu}\,\tilde{J}$ is the same in every medium: the field factors cancel through $\sqrt{\epsilon}/(c\sqrt{\mu})=\epsilon$ and $\sqrt{\mu}/(c\sqrt{\epsilon})=\mu$, and the only medium factor left explicit in the equation is $\sqrt{\mu}$. Dispersion makes the local complex structure spectral: each frequency carries its own speed $c(\omega)=1/\sqrt{\epsilon(\omega)\mu(\omega)}$, refractive index $n(\omega)=c_0/c(\omega)$, dispersion relation $k^2=\omega^2\epsilon(\omega)\mu(\omega)$, and group velocity $v_g=c_0/(n+\omega\,dn/d\omega)$, at least while the normalisation is real. At an interface the local complex structure jumps, and the field strength is discontinuous even though the physical fields satisfy the standard tangential and normal continuity conditions. The vacuum limit $c\to c_0$, $Z\to Z_0$ recovers every object of the parent article, and the zero-divisor cone of the algebra coincides with the wave cone of the medium at every value of $c$.
 
-For a plane wave in the medium, the conventions fixed above are: complex amplitudes in the $\exp(i(\vec k\cdot(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)-\omega t'))$ convention, transversality $\vec k\cdot\vec E_0=\vec k\cdot\vec H_0=0$, the relations $\vec k\times\vec E_0=\omega\mu\vec H_0$ and $\vec k\times\vec H_0=-\omega\epsilon\vec E_0$, the dispersion relation $k=\omega/c(\omega)=n(\omega)\omega/c_0$, and the impedance relation $\vec H_0=Z^{-1}\vec u_k\times\vec E_0$. In these conventions $|\vec E_0|=Z|\vec H_0|=c|\vec B_0|$, the two normalised halves of $\tilde{F}_0$ have equal magnitude, and $\langle\tilde{F}_0\rangle_{\natural}=0$.
+For a plane wave in the medium, the conventions fixed above are: complex amplitudes in the $\exp(i(\vec k\cdot(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)-\omega r'_t))$ convention, transversality $\vec k\cdot\vec E_0=\vec k\cdot\vec H_0=0$, the relations $\vec k\times\vec E_0=\omega\mu\vec H_0$ and $\vec k\times\vec H_0=-\omega\epsilon\vec E_0$, the dispersion relation $k=\omega/c(\omega)=n(\omega)\omega/c_0$, and the impedance relation $\vec H_0=Z^{-1}\vec u_k\times\vec E_0$. In these conventions $|\vec E_0|=Z|\vec H_0|=c|\vec B_0|$, the two normalised halves of $\tilde{F}_0$ have equal magnitude, and $\langle\tilde{F}_0\rangle_{\natural}=0$.
 
-A chiral medium is the one constitutive case recorded here that changes the *order* of the reduction rather than only its parameters. With the Drude–Born–Fedorov relations $\vec D=\epsilon(\vec E+\beta\,\mathrm{rot}\,\vec E)$ and $\vec B=\mu(\vec H+\beta\,\mathrm{rot}\,\vec H)$ the time-dependent Maxwell system still reduces to a single quaternionic equation, but its operator $\mathcal{M}=\beta\sqrt{\epsilon\mu}\,\partial/\partial t'\,D+\sqrt{\epsilon\mu}\,\partial/\partial t'-iD$ is of second order, its wave equations are of fourth order, and its frequency symbol factors as $i(\beta\sqrt{\epsilon\mu}\,\omega-1)(D+\alpha(\omega))$ with a frequency-dependent $\alpha$ that degenerates at $\omega=c/\beta$. The non-chiral reduction $\sqrt{\epsilon\mu}\,\partial/\partial t'-iD$ is the $\beta=0$ member of that family. The same fourth-order equation carries the medium's birefringence, with the two refractive indices $n_\pm(\omega)=1/(1\mp\beta\omega/c)$; and the fundamental solution of $\mathcal{M}$ is causal by construction, built from the retarded kernel $K_\alpha$ with a displaced pole in the upper half-frequency plane.
+A chiral medium is the one constitutive case recorded here that changes the *order* of the reduction rather than only its parameters. With the Drude–Born–Fedorov relations $\vec D=\epsilon(\vec E+\beta\,\mathrm{rot}\,\vec E)$ and $\vec B=\mu(\vec H+\beta\,\mathrm{rot}\,\vec H)$ the time-dependent Maxwell system still reduces to a single quaternionic equation, but its operator $\mathcal{M}=\beta\sqrt{\epsilon\mu}\,\partial/\partial r'_t\,D+\sqrt{\epsilon\mu}\,\partial/\partial r'_t-iD$ is of second order, its wave equations are of fourth order, and its frequency symbol factors as $i(\beta\sqrt{\epsilon\mu}\,\omega-1)(D+\alpha(\omega))$ with a frequency-dependent $\alpha$ that degenerates at $\omega=c/\beta$. The non-chiral reduction $\sqrt{\epsilon\mu}\,\partial/\partial r'_t-iD$ is the $\beta=0$ member of that family. The same fourth-order equation carries the medium's birefringence, with the two refractive indices $n_\pm(\omega)=1/(1\mp\beta\omega/c)$; and the fundamental solution of $\mathcal{M}$ is causal by construction, built from the retarded kernel $K_\alpha$ with a displaced pole in the upper half-frequency plane.
 
 A third kind of constitutive law is not a case of the reduction at all. If $\vec D$ and $\vec H$ acquire terms quadratic in the fields, the equations keep their first order but the theory becomes non-linear: superposition fails, an energy density exists only when the constitutive one-form $\vec E\cdot\delta\vec D+\vec H\cdot\delta\vec B$ is integrable, and the reduction performed in this article does not apply — even though a plane wave can still be an exact solution. The non-commutative vacuum of *Maxwell's Theory on Non-Commutative Spaces and Quaternions* is the corpus's worked example, and the section *Beyond the Linear Constitutive Relation* states the general situation.
 
@@ -953,14 +953,14 @@ The time-harmonic companion of the chiral reduction — the diagonalization into
 Beyond the chiral case, inhomogeneity is now handled in two ways that are not the same kind of result. For a medium with arbitrary $\epsilon(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)$ and $\mu(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)$ and no small parameter, the Maxwell system has an exact quaternionic equivalent,
 $$
 D\,\vec{\mathcal E}+\vec{\mathcal E}\,\vec{\epsilon}
-=-\frac{1}{c}\,\partial/\partial t'\,\vec{\mathcal H}-\frac{\rho}{\sqrt{\epsilon}},
+=-\frac{1}{c}\,\partial/\partial r'_t\,\vec{\mathcal H}-\frac{\rho}{\sqrt{\epsilon}},
 \qquad
 D\,\vec{\mathcal H}+\vec{\mathcal H}\,\vec{\mu}
-=\frac{1}{c}\,\partial/\partial t'\,\vec{\mathcal E}+\sqrt{\mu}\,\vec J,
+=\frac{1}{c}\,\partial/\partial r'_t\,\vec{\mathcal E}+\sqrt{\mu}\,\vec J,
 $$
 with the normalised fields $\vec{\mathcal E}=\sqrt{\epsilon}\,\vec E$, $\vec{\mathcal H}=\sqrt{\mu}\,\vec H$ and the half-gradients $\vec{\epsilon}=\mathrm{grad}\sqrt{\epsilon}/\sqrt{\epsilon}$, $\vec{\mu}=\mathrm{grad}\sqrt{\mu}/\sqrt{\mu}$; and in one line,
 $$
-\left(\frac{1}{c}\,\partial/\partial t'+iD\right)\mathcal{F}-\mathcal{F}\,(i\vec{c})-\bar{\mathcal{F}}\,(i\vec{Z})
+\left(\frac{1}{c}\,\partial/\partial r'_t+iD\right)\mathcal{F}-\mathcal{F}\,(i\vec{c})-\bar{\mathcal{F}}\,(i\vec{Z})
 =-\left(\sqrt{\mu}\,\vec J+\frac{i\rho}{\sqrt{\epsilon}}\right),
 \qquad
 \mathcal{F}=\sqrt{\epsilon}\,\vec E+i\sqrt{\mu}\,\vec H,
@@ -1008,9 +1008,9 @@ The equation that the reduction produces has a solution theory of its own, and i
 | $\vec k,\omega$ | Wavevector and angular frequency |
 | $\vec u_k=\vec k/\lvert\vec k\rvert$ | Unit wavevector |
 | $\beta$ | Chirality measure of a Drude–Born–Fedorov medium (a length) |
-| $D=\vec e_x\,\partial/\partial Q_x+\vec e_y\,\partial/\partial Q_y+\vec e_z\,\partial/\partial Q_z$ | Moisil–Teodoresco operator, $D^2=-\Delta$, the spatial part of $\tilde{\nabla}$; used in every section from the chiral one onward |
+| $D=\vec e_x\,\partial/\partial R_x+\vec e_y\,\partial/\partial R_y+\vec e_z\,\partial/\partial R_z$ | Moisil–Teodoresco operator, $D^2=-\Delta$, the spatial part of $\tilde{\nabla}$; used in every section from the chiral one onward |
 | $\mathcal{D}_{\vec{\alpha}}$ | Operator $g\mapsto Dg+g\,\vec{\alpha}$, the coefficient multiplying on the right |
-| $\mathcal{M}=\beta\sqrt{\epsilon\mu}\,\partial/\partial t'\,D+\sqrt{\epsilon\mu}\,\partial/\partial t'-iD$ | Quaternionic operator of the chiral Maxwell system |
+| $\mathcal{M}=\beta\sqrt{\epsilon\mu}\,\partial/\partial r'_t\,D+\sqrt{\epsilon\mu}\,\partial/\partial r'_t-iD$ | Quaternionic operator of the chiral Maxwell system |
 | $\vec{\mathcal N}=\vec E-i\sqrt{\mu/\epsilon}\,\vec H$ | Purely vectorial field of the chiral reduction |
 | $\alpha(\omega)=\sqrt{\epsilon\mu}\,\omega/(\beta\sqrt{\epsilon\mu}\,\omega-1)$ | Frequency-dependent Moisil–Teodoresco parameter of $\mathcal{M}(\omega)$ |
 | $\omega=c/\beta$ | Degenerate frequency of the chiral reduction, where $\mathcal{M}(\omega)=i/\beta$ and the reduction becomes algebraic |
@@ -1051,7 +1051,7 @@ The equation that the reduction produces has a solution theory of its own, and i
 - Iwo Białynicki-Birula and Zofia Białynicka-Birula, "The role of the Riemann–Silberstein vector in classical and quantum theories of electromagnetism", *Journal of Physics A* 46 (2013) 053001, for the modern account of the complex vector.
 - A. Waser, "Application of Bi-Quaternions in Physics" (2000, updated 2007), for the biquaternionic treatment of the field and its energy–momentum.
 - L. A. Alexeyeva, "Maxwell Equations, Their Hamiltonian and Biquaternionic Forms and Properties of Their Solutions" (2016), for the biquaternionic formulation of the field equations in a medium.
-- S. M. Grudsky, K. V. Khmelnytskaya and V. V. Kravchenko, "On a quaternionic Maxwell equation for the time-dependent electromagnetic field in a chiral medium", *Journal of Physics A: Mathematical and General* **37** (2004) 4641–4647, DOI 10.1088/0305-4470/37/16/013 (preprint arXiv:math-ph/0309062), for the Drude–Born–Fedorov chiral constitutive relations, the reduction of the time-dependent chiral Maxwell system to the single quaternionic equation $\mathcal{M}\vec{\mathcal N}=\sqrt{\mu}\,\tilde J$, the exact factorization of $\mathcal{M}(\omega)$ with its degenerate frequency $c/\beta$, the two refractive indices, the kernel $K_\alpha$ of $D_\alpha=D+\alpha$ with its defining equation $D_\alpha K_\alpha=\delta$ (note the source's $\mathrm{Sd}_\alpha=-\exp(i\alpha|r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z|)/(4\pi|r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z|)$), and the causal fundamental solution, whose residue series resums to Bessel functions $J_0$ and $J_1$ of $2\sqrt{\kappa(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)t'}$. This is the paper recorded in the section *A Chiral Medium: One Quaternionic Equation*.
+- S. M. Grudsky, K. V. Khmelnytskaya and V. V. Kravchenko, "On a quaternionic Maxwell equation for the time-dependent electromagnetic field in a chiral medium", *Journal of Physics A: Mathematical and General* **37** (2004) 4641–4647, DOI 10.1088/0305-4470/37/16/013 (preprint arXiv:math-ph/0309062), for the Drude–Born–Fedorov chiral constitutive relations, the reduction of the time-dependent chiral Maxwell system to the single quaternionic equation $\mathcal{M}\vec{\mathcal N}=\sqrt{\mu}\,\tilde J$, the exact factorization of $\mathcal{M}(\omega)$ with its degenerate frequency $c/\beta$, the two refractive indices, the kernel $K_\alpha$ of $D_\alpha=D+\alpha$ with its defining equation $D_\alpha K_\alpha=\delta$ (note the source's $\mathrm{Sd}_\alpha=-\exp(i\alpha|r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z|)/(4\pi|r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z|)$), and the causal fundamental solution, whose residue series resums to Bessel functions $J_0$ and $J_1$ of $2\sqrt{\kappa(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)r'_t}$. This is the paper recorded in the section *A Chiral Medium: One Quaternionic Equation*.
 - V. V. Kravchenko and H. Oviedo, "On a Quaternionic Reformulation of Maxwell's Equations for Chiral Media and its Applications", *Zeitschrift für Analysis und ihre Anwendungen (Journal for Analysis and its Applications)* **22** (2003), no. 3, 569–589, DOI 10.4171/ZAA/1163, for the time-harmonic reformulation, the diagonalization with the two wavenumbers $\alpha_1,\alpha_2$, the integral representations, the extendability problem and its complete solution, and the treatment of inhomogeneous (slowly varying, stratified) chiral media. This is the source of the dedicated article *Maxwell's Equations in Chiral Media — The Quaternionic Reformulation*, where the reformulation and its applications are recorded.
 - V. V. Kravchenko, "Quaternionic Reformulation of Maxwell Equations for Inhomogeneous Media and New Solutions", *Zeitschrift für Analysis und ihre Anwendungen (Journal for Analysis and its Applications)* (2001), DOI 10.4171/ZAA/1063 (preprint arXiv:math-ph/0104008), for the time-harmonic reformulation of the Maxwell system of an arbitrary inhomogeneous medium, the first-order operator that adds the right product with the gradient coefficient $\vec{\alpha}=\mathrm{grad}\,\xi/\xi$, the reduction to the Schrödinger equation $-\Delta\tilde{Ξ}^{\mathrm{sp}}+(\Delta\xi/\xi)\tilde{Ξ}^{\mathrm{sp}}=0$, the factorisation with the quaternionic Riccati condition $D\vec{\alpha}+\vec{\alpha}^2=-v$, and the closed-form fundamental solution. This is the source of the section *The Operator $\mathcal{D}_{\vec{\alpha}}$, the Reduction to the Schrödinger Equation, and a Fundamental Solution*. Its factorisation is the Schrödinger member ($p=1$) of the general family: the paper carries neither the general $(\mathrm{div}\,p\,\mathrm{grad}+q)$ factorisation, nor the conductivity equation, nor the inverse theorems, and those are cited below to the survey's reference $[29]$. The paper's own attribution of the Riccati form is to Bernstein (1996) and Bernstein–Gürlebeck (1999), and it names no conductivity problem.
 - V. V. Kravchenko, "Quaternionic equation for electromagnetic fields in inhomogeneous media" (2002), DOI 10.1142/9789812794253_0042 (preprint arXiv:math-ph/0202010), for the carrier identity, with the scalar attached on either side of the product, the scalar-product identity, the exact reduction of the Maxwell system of an arbitrary inhomogeneous medium to the two gradient-corrected equations and then to a single Vekua-type quaternionic equation, and the identification of that equation with the governing equation of the pseudoanalytic functions. This is the source of the section *Arbitrary Inhomogeneous Media: The Carrier Function and the Vekua Equation*.

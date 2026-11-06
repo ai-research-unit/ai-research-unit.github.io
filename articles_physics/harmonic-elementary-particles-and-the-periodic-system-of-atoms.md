@@ -16,7 +16,7 @@ $$
 \tilde J_{\mathrm{eg}} = i\rho + \vec J,
 $$
 
-as in the companion EGM article and in *Shock Electromagnetic Waves*. The 2019 paper writes the same object with a partly different sign convention, $\rho = -\rho_E/\sqrt{\epsilon} + i\rho_H/\sqrt{\mu}$ and $\vec J = -\sqrt{\mu}\,\vec j_E + i\sqrt{\epsilon}\,\vec j_H$, which is the negative of the corpus's; every equation below is stated in the paper's own 2019 convention where it is quoted from the paper, and the conventions are not mixed. The source's symbol $\nabla$ means the **pure-vector** gradient, $\nabla = \vec e_x\partial/\partial Q_x + \vec e_y\partial/\partial Q_y + \vec e_z\partial/\partial Q_z$ acting by quaternion multiplication on the left, so that $\nabla\circ\nabla = -\Delta$; this is not the corpus's $\tilde{\nabla}$, which carries the time derivative, and the relation between the two is given in its own section.
+as in the companion EGM article and in *Shock Electromagnetic Waves*. The 2019 paper writes the same object with a partly different sign convention, $\rho = -\rho_E/\sqrt{\epsilon} + i\rho_H/\sqrt{\mu}$ and $\vec J = -\sqrt{\mu}\,\vec j_E + i\sqrt{\epsilon}\,\vec j_H$, which is the negative of the corpus's; every equation below is stated in the paper's own 2019 convention where it is quoted from the paper, and the conventions are not mixed. The source's symbol $\nabla$ means the **pure-vector** gradient, $\nabla = \vec e_x\partial/\partial R_x + \vec e_y\partial/\partial R_y + \vec e_z\partial/\partial R_z$ acting by quaternion multiplication on the left, so that $\nabla\circ\nabla = -\Delta$; this is not the corpus's $\tilde{\nabla}$, which carries the time derivative, and the relation between the two is given in its own section.
 
 ## The Free Charge–Current Field and Its Monochromatic Sector
 
@@ -354,7 +354,7 @@ The corpus's relation to this part of the programme is therefore the same as to 
 | $\rho = -\rho_E/\sqrt{\epsilon} + i\rho_H/\sqrt{\mu}$ | 2019 source's charge convention (negative of the corpus's) |
 | $\vec J = -\sqrt{\mu}\,\vec j_E + i\sqrt{\epsilon}\,\vec j_H$ | 2019 source's current convention |
 | $\tau = c r'_{t}$ | Scaled time; $\omega$ is a frequency in units of $1/\mathrm{length}$ |
-| $\nabla = \vec e_x\partial/\partial Q_x+\vec e_y\partial/\partial Q_y+\vec e_z\partial/\partial Q_z$ | Pure-vector gradient, acting by left quaternion multiplication |
+| $\nabla = \vec e_x\partial/\partial R_x+\vec e_y\partial/\partial R_y+\vec e_z\partial/\partial R_z$ | Pure-vector gradient, acting by left quaternion multiplication |
 | $\nabla\circ\nabla = -\Delta$ | The square of $\nabla$; hence the factorisation below |
 | $(\omega+\nabla)(\omega-\nabla) = \omega^2+\Delta$ | Helmholtz factorisation of the monochromatic operator |
 | $D_\pm = \partial/\partial\tau \pm i\nabla$ | Mutual complex gradients; monochromatically $D_\pm \to -i(\omega \mp \nabla)$ |

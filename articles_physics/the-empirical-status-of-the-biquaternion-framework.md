@@ -42,7 +42,7 @@ The following table collects the quantitative results the series has obtained an
 |---|---|---|
 | Single qubit | Bloch sphere and Bloch ball; $\operatorname{Tr}(\tilde{Ϛ}\tilde R_\psi^{*})=\operatorname{Tr}(\tilde{Ϛ}\tilde R_\psi)=c r_t+\vec r\cdot\vec r_\psi$; sandwich update | States, observables, Born rule, projective measurement |
 | Relativistic point mechanics | $\langle d\tilde R_\varphi\rangle_{\natural}=-c^2d{r'_{t}}^2+dx^2+dy^2+dz^2$; four-momentum $\tilde{P}$ with $\tilde{P}\tilde{P}^{\natural}=-m^2c^2$; four-force $\tilde{K}_{\mathrm{f}}$ orthogonal to it, $\tilde{K}_{\mathrm{f}}\tilde{P}^{\natural}+\tilde{P}\tilde{K}_{\mathrm{f}}^{\natural}=0$ | Interval, mass shell, four-force orthogonality |
-| Maxwell field | $\Box=\tilde{\nabla}\tilde{\nabla}^{\natural}=\partial^2/\partial Q_t^2+\Delta$; Riemann–Silberstein field; invariants | Maxwell's equations in a medium |
+| Maxwell field | $\Box=\tilde{\nabla}\tilde{\nabla}^{\natural}=\partial^2/\partial R_t^2+\Delta$; Riemann–Silberstein field; invariants | Maxwell's equations in a medium |
 | Dirac field | $\tilde{\nabla}\tilde{Ξ}^{\mathrm{sp}}_R=m\tilde{Ξ}^{\mathrm{sp}}_L$, $\tilde{\nabla}^{\natural}\tilde{Ξ}^{\mathrm{sp}}_L=m\tilde{Ξ}^{\mathrm{sp}}_R$; massless case $\tilde{\nabla}\tilde{Ξ}^{\mathrm{sp}}=0$ | Dirac equation, mass term |
 | Electron gyromagnetic ratio | $g=2$ at tree level; anomaly **absent** | Dirac's tree-level value; the anomaly is outside the framework |
 | Hydrogen, relativistic | Exact Dirac–Coulomb spectrum; fine structure | Standard spectrum, quoted not derived |
@@ -95,7 +95,7 @@ Each candidate below is examined under the three questions of the Introduction a
 
 **The candidate.** The framework's most distinctive physical claim after the two-sector interpretation is that the complex structure of $\mathbb{B}$ is **local**, its scale set by the local speed of light $c=1/\sqrt{\epsilon\mu}$. One might hope that an observable depends on the complex structure as such, and not merely on the standard electromagnetic properties of the medium.
 
-**The framework-specific quantity.** The local speed $c(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)=1/\sqrt{\epsilon(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)\mu(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)}$, which fixes the embedding of physical time in the imaginary scalar direction, $\partial/\partial Q_t=-(i/c)\,\partial/\partial t'$.
+**The framework-specific quantity.** The local speed $c(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)=1/\sqrt{\epsilon(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)\mu(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)}$, which fixes the embedding of physical time in the imaginary scalar direction, $\partial/\partial R_t=-(i/c)\,\partial/\partial r'_t$.
 
 **Derived or posited.** The relation $c=1/\sqrt{\epsilon\mu}$ is **standard**, a consequence of the constitutive relations $\vec D=\epsilon\vec E$ and $\vec B=\mu\vec H$; the framework does not derive it. What is posited is the *identification* of this standard speed with the scale of the complex structure. Crucially, the framework adds no equation for $\epsilon$ or $\mu$: in every calculation of the series they are the standard medium parameters, supplied from outside.
 
@@ -107,7 +107,7 @@ Each candidate below is examined under the three questions of the Introduction a
 
 **The candidate.** The framework has two sectors, and the two sectors carry quadratic forms of opposite signature. Perhaps there are two null structures, hence a polarization-dependent propagation speed — birefringence — or a second, "informational" light cone.
 
-**The framework-specific quantity.** The biquaternion norm $\langle\tilde{Q}\rangle_{\natural}=\tilde{Q}\tilde{Q}^{\natural}$. It is a **single** quadratic form on $\mathbb{B}$, and its zero set is a single cone. Its restrictions to $\mathbb{M}_-$ and $\mathbb{M}_+$ are the mirror quadratic forms $-q_t^2+\vec q^2$ and $q_t^2-\vec q^2$; these are restrictions of the same form to complementary subspaces, not two independent propagation structures. A field propagating in the framework obeys one d'Alembertian $\Box=\partial^2/\partial Q_t^2+\Delta$, built from one $c$. There is no second cone and no splitting of polarizations.
+**The framework-specific quantity.** The biquaternion norm $\langle\tilde{Q}\rangle_{\natural}=\tilde{Q}\tilde{Q}^{\natural}$. It is a **single** quadratic form on $\mathbb{B}$, and its zero set is a single cone. Its restrictions to $\mathbb{M}_-$ and $\mathbb{M}_+$ are the mirror quadratic forms $-q_t^2+\vec q^2$ and $q_t^2-\vec q^2$; these are restrictions of the same form to complementary subspaces, not two independent propagation structures. A field propagating in the framework obeys one d'Alembertian $\Box=\partial^2/\partial R_t^2+\Delta$, built from one $c$. There is no second cone and no splitting of polarizations.
 
 **Derived or posited.** The single cone is **derived**: it is the zero-divisor set of the algebra, a theorem of the corpus. The absence of birefringence is therefore a consequence of the algebra, not an unverified claim.
 

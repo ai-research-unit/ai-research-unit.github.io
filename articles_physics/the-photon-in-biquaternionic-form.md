@@ -27,7 +27,7 @@ $$
 \mathbb{M}_+ = \{\tilde{Q} : \tilde{Q}^{*} = \tilde{Q}\} = \mathrm{span}_\mathbb{R}\{c r_t\,e_t, i r'_{x}\,\vec e_x, i r'_{y}\,\vec e_y, i r'_{z}\,\vec e_z\},
 $$
 
-with $t',r'_{x},r'_{y},r'_{z}$ real, $\mathbb{B}=\mathbb{M}_+\oplus\mathbb{M}_-$ and $i\mathbb{M}_\pm=\mathbb{M}_\mp$. The isomorphism with $M_2(\mathbb{C})$ is $\mathsf{M}_2(\vec e_\mu)=-i\sigma_\mu$, $\mathsf{M}_2(i\vec e_\mu)=\sigma_\mu$, and the trace formula is $\mathrm{Tr}(\tilde Q_1\tilde Q_2)=2\,\mathrm{Sc}(\tilde Q_1\tilde Q_2) = 2\langle\tilde{Q}_1,\tilde{Q}_2\rangle$. The biquaternionic gradient is $\tilde{\nabla}=e_t\partial/\partial Q_t+\vec e_x\partial/\partial Q_x+\vec e_y\partial/\partial Q_y+\vec e_z\partial/\partial Q_z$, the field strength is $\tilde{F}=i\sqrt{\epsilon}\,\vec E-\sqrt{\mu}\,\vec H$, and for the free field we set $\epsilon=\epsilon_0$, $\mu=\mu_0$ and use natural units $\hbar=c=1$, in which $c=1/\sqrt{\epsilon\mu}$ gives $\tilde{F}=i\vec E-\vec H$. The Riemann–Silberstein vector is $\vec N=\vec E+ic\vec B$ with $\vec B=\mu\vec H$, so that $\tilde{F}=i\sqrt{\epsilon}\,\vec N$. The material reading is $Q_t=i c r'_t$ and $Q_k=x_k$.
+with $r'_t,r'_{x},r'_{y},r'_{z}$ real, $\mathbb{B}=\mathbb{M}_+\oplus\mathbb{M}_-$ and $i\mathbb{M}_\pm=\mathbb{M}_\mp$. The isomorphism with $M_2(\mathbb{C})$ is $\mathsf{M}_2(\vec e_\mu)=-i\sigma_\mu$, $\mathsf{M}_2(i\vec e_\mu)=\sigma_\mu$, and the trace formula is $\mathrm{Tr}(\tilde Q_1\tilde Q_2)=2\,\mathrm{Sc}(\tilde Q_1\tilde Q_2) = 2\langle\tilde{Q}_1,\tilde{Q}_2\rangle$. The biquaternionic gradient is $\tilde{\nabla}=e_t\partial/\partial R_t+\vec e_x\partial/\partial R_x+\vec e_y\partial/\partial R_y+\vec e_z\partial/\partial R_z$, the field strength is $\tilde{F}=i\sqrt{\epsilon}\,\vec E-\sqrt{\mu}\,\vec H$, and for the free field we set $\epsilon=\epsilon_0$, $\mu=\mu_0$ and use natural units $\hbar=c=1$, in which $c=1/\sqrt{\epsilon\mu}$ gives $\tilde{F}=i\vec E-\vec H$. The Riemann–Silberstein vector is $\vec N=\vec E+ic\vec B$ with $\vec B=\mu\vec H$, so that $\tilde{F}=i\sqrt{\epsilon}\,\vec N$. The material reading is $Q_t=i c r'_t$ and $Q_k=x_k$.
 
 ## The Photon as the Quantum of the Biquaternion Maxwell Field
 
@@ -163,7 +163,7 @@ This is the algebraic content of "the photon has two helicity states and no thir
 The algebra also contains the exponential of a nilpotent, and it is exact. For a pure nilpotent $\vec\Upsilon$ with $\vec\Upsilon^2=0$,
 
 $$
-\exp(t\vec\Upsilon)=e_t+t\vec\Upsilon,
+\exp(r_t\vec\Upsilon)=e_t+r_t\vec\Upsilon,
 $$
 
 a unipotent element. In $SL(2,\mathbb{C})$ these are the null rotations. In the little group of a null direction they are the null translations, the abelian factor that accompanies the helicity $\mathrm{U}(1)$ in $E(2)$. The algebra therefore supplies the one-parameter null translations exactly (*Biquaternion Elementary Functions*, §*The Exponential*).
@@ -254,7 +254,7 @@ What the framework does not supply is the ladder and the gauge. There is no boso
 | $\mathbb{M}_+$ | Hermitian (informational) sector, $\mathrm{span}_\mathbb{R}\{c r_t\,e_t,i r'_{x}\,\vec e_x,i r'_{y}\,\vec e_y,i r'_{z}\,\vec e_z\}$ |
 | $\mathbb{H}_{\mathbb{B}}$ | Real quaternion subspace |
 | $\mathsf{M}_2(\vec e_\mu)=-i\sigma_\mu$, $\mathsf{M}_2(i\vec e_\mu)=\sigma_\mu$ | Isomorphism with $M_2(\mathbb{C})$ |
-| $\tilde{\nabla}=e_t\partial/\partial Q_t+\sum_\mu\,\vec e_\mu\partial/\partial Q_\mu$ | Biquaternionic gradient |
+| $\tilde{\nabla}=e_t\partial/\partial R_t+\sum_\mu\,\vec e_\mu\partial/\partial R_\mu$ | Biquaternionic gradient |
 | $\tilde{A}=i\,a'_t\,e_t+\vec A$ | Potential biquaternion, in $\mathbb{M}_-$ |
 | $\tilde{F}=i\sqrt{\epsilon}\,\vec E-\sqrt{\mu}\,\vec H=i\sqrt{\epsilon}\,\vec N$ | Field-strength biquaternion (vanishing scalar part) |
 | $\vec N=\vec E+ic\vec B$, $\vec B=\mu\vec H$ | Riemann–Silberstein vector; $\tilde{F}=i\sqrt{\epsilon}\,\vec N$ |

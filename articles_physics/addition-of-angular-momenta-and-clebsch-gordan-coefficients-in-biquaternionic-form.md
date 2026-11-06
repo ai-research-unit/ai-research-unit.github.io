@@ -122,7 +122,7 @@ The coupled states $|s_{\mathrm{tot}},s_{\mathrm{tot},z}\rangle_{*}$ are by defi
 For the spin factors the two-factor space is the algebra $\mathbb{B}\otimes\mathbb{B}$ itself. Its trace is the product of the factor traces,
 
 $$
-\mathrm{Tr}(x\otimes y)=\mathrm{Tr}_\mathbb{B}(x)\,\mathrm{Tr}_\mathbb{B}(y),\qquad \mathrm{Tr}_\mathbb{B}(e_t)=2,\quad \mathrm{Tr}_\mathbb{B}(\vec e_k)=0 ,
+\mathrm{Tr}(r_x\otimes r_y)=\mathrm{Tr}_\mathbb{B}(r_x)\,\mathrm{Tr}_\mathbb{B}(r_y),\qquad \mathrm{Tr}_\mathbb{B}(e_t)=2,\quad \mathrm{Tr}_\mathbb{B}(\vec e_k)=0 ,
 $$
 
 so that $\mathrm{Tr}(e_t\otimes e_t)=4$. A product state is represented by the idempotent

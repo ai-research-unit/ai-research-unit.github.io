@@ -160,7 +160,7 @@ When $m\neq0$ the gauge symmetry is absent: the field equation is not invariant 
 The canonical momentum conjugate to $\tilde{Ξ}^{\mathrm{sp}}_\mu$ is, from the standard Rarita–Schwinger Lagrangian,
 
 $$
-\pi_\mu = \frac{\partial\mathcal{L}}{\partial(\partial/\partial t'\,\tilde{Ξ}^{\mathrm{sp}}_\mu)}=\sum_\lambda T_{\lambda t\mu}\bigl(\bar{\tilde{Ξ}}^{\mathrm{sp}}_\lambda\bigr),
+\pi_\mu = \frac{\partial\mathcal{L}}{\partial(\partial/\partial r'_t\,\tilde{Ξ}^{\mathrm{sp}}_\mu)}=\sum_\lambda T_{\lambda r_t\mu}\bigl(\bar{\tilde{Ξ}}^{\mathrm{sp}}_\lambda\bigr),
 \qquad
 \bar{\tilde{Ξ}}^{\mathrm{sp}}_\lambda:=\tilde{Ξ}^{\mathrm{sp}\dagger}_\lambdaiR_{\vec e_x}^{\mathrm{axf}} ,
 $$
@@ -183,10 +183,10 @@ with $\xi_a$ the second-class constraints. The effect of the Dirac bracket is to
 
 ### Anticommutators and Modes
 
-The quantized field is fermionic: the equal-time anticommutator of the field and its momentum is the projection of the naive anticommutator onto the constraint surface. Write $\vec x:=r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z$ for the spatial point and $\vec y$ for the same construction with $y$; then
+The quantized field is fermionic: the equal-time anticommutator of the field and its momentum is the projection of the naive anticommutator onto the constraint surface. Write $\vec r:=r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z$ for the spatial point and $\vec y$ for the same construction with $y$; then
 
 $$
-\{\tilde{Ξ}^{\mathrm{sp}}_\mu(t',\vec x),\,\pi_\nu(t',\vec y)\}=i\,P_{\mu\nu}\,\delta^{(3)}(\vec x-\vec y) ,
+\{\tilde{Ξ}^{\mathrm{sp}}_\mu(r'_t,\vec r),\,\pi_\nu(r'_t,\vec r_y)\}=i\,P_{\mu\nu}\,\delta^{(3)}(\vec r-\vec r_y) ,
 $$
 
 the naive $\delta_{\mu\nu}$ replaced by the entries of the projector of the preceding section, read from its action, and it is that projector that closes the algebra on $(P\tilde{Ξ}^{\mathrm{sp}})_\mu$. The mode expansion carries four polarizations,
@@ -199,7 +199,7 @@ a_r(\vec p)\,\zeta_{\mu,r}(p)\,\exp(-ip\cdot x)
 \right] ,
 $$
 
-with $E_p=\sqrt{\vec p^2+m^2}$, $p\cdot x=E_p t'-\vec p\cdot\vec x$, and with the Rarita–Schwinger polarization spinors satisfying
+with $E_p=\sqrt{\vec p^2+m^2}$, $p\cdot r_x=E_p r'_t-\vec p\cdot\vec r$, and with the Rarita–Schwinger polarization spinors satisfying
 
 $$
 \bigl(\mathbb{D}_p-m\bigr)\zeta_{\mu,r}=0 ,
@@ -306,7 +306,7 @@ The Pauli and gamma formulation is legacy: the reasons are explained in the arti
 The gammas are the frame cells of the body written as single letters; they are a frame of $\mathrm{Cl}_{1,3}(\mathbb{C})=M_4(\mathbb{C})$, not a different algebra.
 
 $$
-\gamma_\mu:=iL_{e_\mu}^{\mathrm{pau}}R_{\vec e_{\nu(\mu)}}^{\mathrm{pau}}\quad(\nu(t)=x,\ \nu(k)=y),
+\gamma_\mu:=iL_{e_\mu}^{\mathrm{pau}}R_{\vec e_{\nu(\mu)}}^{\mathrm{pau}}\quad(\nu(r_t)=r_x,\ \nu(k)=r_y),
 \qquad
 \gamma_5:=-iL_{e_t}^{\mathrm{pau}}R_{\vec e_z}^{\mathrm{pau}},
 $$
@@ -314,7 +314,7 @@ $$
 The same in the axis-free display:
 
 $$
-\gamma_\mu:=iL_{e_\mu}^{\mathrm{axf}}R_{\vec e_{\nu(\mu)}}^{\mathrm{axf}}\quad(\nu(t)=x,\ \nu(k)=y),
+\gamma_\mu:=iL_{e_\mu}^{\mathrm{axf}}R_{\vec e_{\nu(\mu)}}^{\mathrm{axf}}\quad(\nu(r_t)=r_x,\ \nu(k)=r_y),
 \qquad
 \gamma_5:=-iL_{e_t}^{\mathrm{axf}}R_{\vec e_z}^{\mathrm{axf}},
 $$
@@ -368,7 +368,7 @@ $$
 \qquad
 P_{\mu\nu}=g_{\mu\nu}I_4-\tfrac14\gamma_\mu\gamma_\nu,
 \qquad
-\pi_\mu=i\tilde{Ξ}^{\mathrm{sp}\dagger}iR_{\vec e_x}^{\mathrm{axf}}_\nu\,\gamma_{[\nu t\mu]},
+\pi_\mu=i\tilde{Ξ}^{\mathrm{sp}\dagger}iR_{\vec e_x}^{\mathrm{axf}}_\nu\,\gamma_{[\nu r_t\mu]},
 $$
 
 and the polarization equations, the completeness relation and the propagator are
@@ -418,7 +418,7 @@ In the biquaternion framework the field is the tensor product of the material fo
 | $\tilde{Ξ}^{\mathrm{sp}}_\mu\mapsto\tilde{Ξ}^{\mathrm{sp}}_\mu+\partial/\partial x_\mu\,\epsilon$ | Massless gauge symmetry; spinor parameter |
 | $T_{\mu\nu\rho}$ | Antisymmetrized triple of three plain cells; antisymmetric, zero when two indices coincide, and $i\gamma_{[\mu\nu\rho]}$ in the gamma dictionary |
 | $\pi_\mu=\sum_\lambda T_{\lambda t\mu}(\bar{\tilde{Ξ}}^{\mathrm{sp}}_\lambda)$, $\bar{\tilde{Ξ}}^{\mathrm{sp}}_\lambda:=\tilde{Ξ}^{\mathrm{sp}\dagger}_\lambdaiR_{\vec e_x}^{\mathrm{axf}}$ | Canonical momentum, read as the triple applied to the Dirac adjoint; the triple is plain, so the $i$ of the adjoint is the only one |
-| $\vec x:=r_x\vec e_x+r_y\vec e_y+r_z\vec e_z$ | Shorthand for the spatial point in the anticommutator and the delta function |
+| $\vec r:=r_x\vec e_x+r_y\vec e_y+r_z\vec e_z$ | Shorthand for the spatial point in the anticommutator and the delta function |
 | $\{A,B\}_D$, $\Delta_{ab}=\{\xi_a,\xi_b\}_P$ | Dirac bracket and its constraint matrix (second-class constraints, $m\neq0$) |
 | $\{a_r(\vec p),a_s^\dagger(\vec k)\}=(2\pi)^3\delta_{rs}\delta^{(3)}(\vec p-\vec k)$ | Fermionic mode algebra |
 | $\zeta_{\mu,r},v_{\mu,r}$, $r=1,\dots,4$ | Polarization spinors; helicities $\pm\tfrac32,\pm\tfrac12$ |

@@ -73,7 +73,7 @@ $$
 which is the algebraic criterion for a central force established in the companion article *The Central-Scalar Limit of Classical Mechanics in Biquaternionic Form*. The conservation of angular momentum is then the two-line computation of that article,
 
 $$
-d\vec L/dt'=\tfrac12[\vec r,d\vec p/dt']=\tfrac12[\vec r,\vec F]=0 ,
+d\vec L/dr'_t=\tfrac12[\vec r,d\vec p/dr'_t]=\tfrac12[\vec r,\vec F]=0 ,
 $$
 
 with the proper time or the coordinate time giving the same vanishing because the two differ by the central factor $\gamma$. The motion is planar, in the plane orthogonal to $\vec L$.
@@ -86,7 +86,7 @@ $$
 (E-V)^2=\vec p^2c^2+m^2c^4 .
 $$
 
-Decomposing the momentum into radial and tangential parts, $\vec p^2=p_r^2+L^2/r^2$ with $p_r=\gamma mdr/dt'$, the mass-shell relation becomes the **radial constraint**
+Decomposing the momentum into radial and tangential parts, $\vec p^2=p_r^2+L^2/r^2$ with $p_r=\gamma mdr/dr'_t$, the mass-shell relation becomes the **radial constraint**
 
 $$
 (E-V)^2-m^2c^4 = c^2\left(p_r^2+\frac{L^2}{r^2}\right).
@@ -101,11 +101,11 @@ The left-hand side is fixed by the state $(E,L)$ and the right-hand side is non-
 Let $u=1/r$, so that the orbit is the function $u(\theta)$, and write every derivative with respect to $\theta$ explicitly. The radial momentum is related to $du/d\theta$ by a chain rule that is worth writing once:
 
 $$
-p_r=\gamma m\,dr/dt'=\gamma m\,\frac{dr}{d\theta}\,d\theta/dt'
+p_r=\gamma m\,dr/dr'_t=\gamma m\,\frac{dr}{d\theta}\,d\theta/dr'_t
 =\gamma m\left(-\frac{du/d\theta}{u^2}\right)\frac{L}{\gamma m r^2}=-L\,\frac{du}{d\theta} ,
 $$
 
-using $d\theta/dt'=L/(\gamma m r^2)$ from the definition of $L$. Substituting into the radial constraint,
+using $d\theta/dr'_t=L/(\gamma m r^2)$ from the definition of $L$. Substituting into the radial constraint,
 
 $$
 (E-V)^2-m^2c^4 = c^2L^2\left(\left(\frac{du}{d\theta}\right)^2+u^2\right). \tag{1}
@@ -135,7 +135,7 @@ $$
 \frac{d^2u}{d\theta^2}+u=-\frac{mF(1/u)}{L^2u^2},
 $$
 
-which is the equation of the companion article on the central-scalar limit. The angular momentum $L$ here is the relativistic angular momentum $\gamma mr^2d\theta/dt'$, not the non-relativistic $mr^2d\theta/dt'$.
+which is the equation of the companion article on the central-scalar limit. The angular momentum $L$ here is the relativistic angular momentum $\gamma mr^2d\theta/dr'_t$, not the non-relativistic $mr^2d\theta/dr'_t$.
 
 ### What the Relativistic Mass Changes
 
@@ -288,7 +288,7 @@ The non-relativistic inverse-square problem conserves, besides $\vec L$, the Run
 
 The orbit remains a conic **in the rotating frame** $\theta^{\mathrm{azm}}=\omega\theta$, so the shape of the orbit is preserved and the only relativistic effect on it is the uniform rotation of the apsidal line. Equivalently, the relativistic problem conserves the energy and the angular momentum as any planar central-force problem does, and the shape of the orbit is fixed by them; only the orientation is no longer fixed: the periapsis direction advances by $\Delta$ per revolution.
 
-A vector with the algebraic form of the Runge–Lenz vector is therefore **not conserved** in the relativistic problem, and the reason is visible in the equation of motion. For an ansatz $\vec A_{\text{rel}}=\vec p\times\vec L-\alpha\,\vec u_r$ with constant $\alpha$, the time derivative contains a term $\vec F\times\vec L=\kappa L\,\vec u_{\mathrm{azm}}/r^2$ from the force and a term $\alpha\,d\vec u_r/dt'=\alpha L\,\vec u_{\mathrm{azm}}/(\gamma mr^2)$ from the rotating unit vector, and the two cancel only if $\alpha=\gamma m\kappa=(E-V)\kappa/c^2$, which is not constant along the orbit. No choice of constant $\alpha$ removes both terms, and the deficit is exactly the precession.
+A vector with the algebraic form of the Runge–Lenz vector is therefore **not conserved** in the relativistic problem, and the reason is visible in the equation of motion. For an ansatz $\vec A_{\text{rel}}=\vec p\times\vec L-\alpha\,\vec u_r$ with constant $\alpha$, the time derivative contains a term $\vec F\times\vec L=\kappa L\,\vec u_{\mathrm{azm}}/r^2$ from the force and a term $\alpha\,d\vec u_r/dr'_t=\alpha L\,\vec u_{\mathrm{azm}}/(\gamma mr^2)$ from the rotating unit vector, and the two cancel only if $\alpha=\gamma m\kappa=(E-V)\kappa/c^2$, which is not constant along the orbit. No choice of constant $\alpha$ removes both terms, and the deficit is exactly the precession.
 
 What survives is a rotating-frame quantity: the vector constructed from the conic in the $(r,\theta^{\mathrm{azm}})$ plane has a fixed direction in that plane, and in the physical plane it rotates by $\Delta$ per revolution. The hidden symmetry of the non-relativistic problem is thus not destroyed but **deformed**: the compact $\mathrm{SO}(4)$ of the bound Kepler problem becomes a symmetry whose generator acquires a state-dependent phase, and the parameter of the deformation is $\kappa^2/(c^2L^2)$, the same parameter that sets the precession.
 
@@ -380,7 +380,7 @@ In the limit $c\to\infty$ the frequency tends to unity, the orbit becomes the co
 | $\varepsilon=E-mc^2$ | Energy measured from the rest energy |
 | $\gamma=1/\sqrt{1-\vec v^2/c^2}$ | Lorentz factor |
 | $m_{\text{rel}}=\gamma m=(E-V)/c^2$ | Relativistic mass |
-| $p_r=\gamma m\,dr/dt'=-L\,du/d\theta$ | Radial momentum; the chain-rule identity |
+| $p_r=\gamma m\,dr/dr'_t=-L\,du/d\theta$ | Radial momentum; the chain-rule identity |
 | $u=1/r$ | Binet variable; derivatives are written explicitly |
 | $(E-V)^2-m^2c^4=c^2L^2\left(\left(\frac{du}{d\theta}\right)^2+u^2\right)$ | The orbit constraint (mass-shell identity) |
 | $\frac{d^2u}{d\theta^2}+u=-m_{\text{rel}}F(1/u)/(L^2u^2)$ | Relativistic Binet equation |

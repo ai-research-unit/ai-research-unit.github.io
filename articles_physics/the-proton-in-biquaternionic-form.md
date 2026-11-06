@@ -104,7 +104,7 @@ $$
 a derived form: $Ϙ=ϙ_L\tilde\Pi_+(\vec e_z)+ϙ_R\tilde\Pi_-(\vec e_z)$, the two chirality states at the axis of the previous section. The element $Ϙ$ is Hermitian, and it is central only in the vector-like case $ϙ_L=ϙ_R$, where the action is also a left multiplication. The covariant derivative carries it,
 
 $$
-D_\mu\tilde{Ξ}^{\mathrm{sp}}=\frac{\partial\tilde{Ξ}^{\mathrm{sp}}}{\partial Q_\mu}+\frac{i}{\hbar}A_\mu\,\tilde{Ξ}^{\mathrm{sp}}Ϙ .
+D_\mu\tilde{Ξ}^{\mathrm{sp}}=\frac{\partial\tilde{Ξ}^{\mathrm{sp}}}{\partial R_\mu}+\frac{i}{\hbar}A_\mu\,\tilde{Ξ}^{\mathrm{sp}}Ϙ .
 $$
 
 The framework's own abelian gauge structure — the one drawn from the central line $\mathbb{C}_{\mathbb{B}}$ — is the specialization $ϙ_L=ϙ_R$: a central phase multiplies the two values alike, so it is vector-like by construction, and an axial coupling would have to sit outside the centre.
@@ -346,13 +346,13 @@ What the framework does not supply is everything that makes the proton a proton.
 | $i$ | Scalar imaginary, $i^2 = -1$, central |
 | $\mathbb{M}_-, \mathbb{M}_+$ | Material (anti-Hermitian) and informational (Hermitian) sectors; $\mathbb{B}=\mathbb{M}_-\oplus\mathbb{M}_+$ |
 | $\mathbb{C}_{\mathbb{B}} = \mathrm{span}_{\mathbb{R}}\{e_t, ie_t\}$ | Centre of the algebra; abelian (electric-charge) factor |
-| $\tilde{\nabla} = e_t\partial/\partial Q_t + \sum_{k=x,y,z}\vec e_k\partial/\partial Q_k$ | Biquaternionic gradient (Dirac operator), acting on the left |
+| $\tilde{\nabla} = e_t\partial/\partial R_t + \sum_{k=x,y,z}\vec e_k\partial/\partial R_k$ | Biquaternionic gradient (Dirac operator), acting on the left |
 | $\Box = \tilde{\nabla}\tilde{\nabla}^{\natural}$ | d'Alembertian |
 | $\tilde{Ξ}^{\mathrm{sp}}=\tilde{Ξ}^{\mathrm{sp}}_L+\tilde{Ξ}^{\mathrm{sp}}_R$ | The field, an element of $\mathbb{B}$; $\tilde{Ξ}^{\mathrm{sp}}_L$ the value L, $\tilde{Ξ}^{\mathrm{sp}}_R$ the value R, at the axis $\vec e_z$ |
 | $\tilde{Ξ}^{\mathrm{sp}\flat}=-\tilde{Ξ}^{\mathrm{sp}*}$ | The algebra's real structure |
 | $\tilde\Pi_\pm(\vec e_z)$ | The two chirality states at the axis; $\tilde\Pi_+$ the L state, $\tilde\Pi_-$ the R state |
 | $Ϙ=\tfrac{ϙ_L+ϙ_R}{2}e_t+\tfrac{i}{2}(ϙ_L-ϙ_R)\vec e_z=ϙ_L\tilde\Pi_+(\vec e_z)+ϙ_R\tilde\Pi_-(\vec e_z)$ | The charge element, in $\mathbb{M}_+$; the charge is the right multiplication by it |
-| $D_\mu\tilde{Ξ}^{\mathrm{sp}}=\partial\tilde{Ξ}^{\mathrm{sp}}/\partial Q_\mu+\tfrac{i}{\hbar}A_\mu\tilde{Ξ}^{\mathrm{sp}}Ϙ$ | Covariant derivative of the chiral charge |
+| $D_\mu\tilde{Ξ}^{\mathrm{sp}}=\partial\tilde{Ξ}^{\mathrm{sp}}/\partial R_\mu+\tfrac{i}{\hbar}A_\mu\tilde{Ξ}^{\mathrm{sp}}Ϙ$ | Covariant derivative of the chiral charge |
 | $ϙ_L, ϙ_R$ | Chiral couplings (real parameters); a massive field forces $ϙ_L=ϙ_R$ |
 | $Ϙ=ϙ\,e_t$, $ϙ_p=+1$ | Vector-like charge element; the proton's value (inserted, not derived) |
 | $m_p$ | Proton mass (a parameter) |

@@ -30,11 +30,11 @@ $$
 
 with a real positive amplitude $A$ and a real phase $S$. The exponential is central, so it commutes with the module element $\xi$ and with everything else; the amplitude is real and therefore also central. Under the isomorphism $\mathsf{M}_2$, the state is $A \exp(iS/\hbar)\xi$ with a scalar phase multiplying both components equally. This is the WKB form that the framework's conventions make natural: the phase is central, and the module factor is a constant spectator, exactly as in the free and scattering problems.
 
-The momentum acts on the phase in a fixed way. Since $\partial/\partial Q_\mu \exp(iS/\hbar) = (i/\hbar)(\partial S/\partial Q_\mu)\exp(iS/\hbar)$,
+The momentum acts on the phase in a fixed way. Since $\partial/\partial R_\mu \exp(iS/\hbar) = (i/\hbar)(\partial S/\partial R_\mu)\exp(iS/\hbar)$,
 
 $$
 \tilde p\,\tilde{Ξ}^{\mathrm{sp}} = \sum_\mu \vec e_\mu p_\mu \tilde{Ξ}^{\mathrm{sp}}
-= \sum_\mu \vec e_\mu\left(\partial S/\partial Q_\mu - i\hbar\,\partial/\partial Q_\mu \ln A\right)\tilde{Ξ}^{\mathrm{sp}} ,
+= \sum_\mu \vec e_\mu\left(\partial S/\partial R_\mu - i\hbar\,\partial/\partial R_\mu \ln A\right)\tilde{Ξ}^{\mathrm{sp}} ,
 $$
 
 so, separating the real phase gradient from the $\hbar$-suppressed amplitude term,
@@ -42,7 +42,7 @@ so, separating the real phase gradient from the $\hbar$-suppressed amplitude ter
 $$
 \tilde p\,\tilde{Ξ}^{\mathrm{sp}} = \Big[\,\nabla S - i\hbar\,\nabla\ln A\,\Big]\tilde{Ξ}^{\mathrm{sp}},
 \qquad
-\nabla S = \sum_k (\partial S/\partial Q_k)\,\vec e_k .
+\nabla S = \sum_k (\partial S/\partial R_k)\,\vec e_k .
 $$
 
 The leading term $\nabla S$ is a **real quaternion**, an element of the algebra's spatial-vector subspace $\mathbb{H}_{\mathbb{B}}$; the correction is imaginary-scalar times a real vector, and is the first term of the expansion in $\hbar$. At leading order the state is an approximate eigenstate of the momentum with the real eigenvalue $\nabla S$, which is the classical momentum of the trajectory through the point.
@@ -89,11 +89,11 @@ $$
 \frac{|\nabla S|^2}{2m} + V(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z) = E ,
 $$
 
-the **Hamilton–Jacobi equation** for the action $S$ of a particle of energy $E$ in the potential $V$. In the biquaternion algebra the phase gradient is the real quaternion $\nabla S=\sum_\mu(\partial S/\partial Q_\mu)\vec e_\mu$, and its quaternion square is
+the **Hamilton–Jacobi equation** for the action $S$ of a particle of energy $E$ in the potential $V$. In the biquaternion algebra the phase gradient is the real quaternion $\nabla S=\sum_\mu(\partial S/\partial R_\mu)\vec e_\mu$, and its quaternion square is
 
 $$
-(\nabla S)^2 = \sum_{\mu,\nu} \vec e_\mu \vec e_\nu\,\partial S/\partial Q_\mu\,\partial S/\partial Q_\nu
-= -\sum_\mu (\partial S/\partial Q_\mu)^2\,e_t
+(\nabla S)^2 = \sum_{\mu,\nu} \vec e_\mu \vec e_\nu\,\partial S/\partial R_\mu\,\partial S/\partial R_\nu
+= -\sum_\mu (\partial S/\partial R_\mu)^2\,e_t
 = -|\nabla S|^2 e_t ,
 $$
 
@@ -116,24 +116,24 @@ an equation in the centre of the algebra: **the kinetic energy is the biquaterni
 The Hamilton–Jacobi equation is solved by the method of characteristics, and the characteristics are the classical trajectories. Writing $\vec p = \nabla S$ for the classical momentum, the equation reads $|\vec p|^2/2m+V=E$, and its characteristic system is
 
 $$
-d(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)/dt' = \frac{\vec p}{m},
+d(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)/dr'_t = \frac{\vec p}{m},
 \qquad
-\,d\vec p/dt' = -\nabla V .
+\,d\vec p/dr'_t = -\nabla V .
 $$
 
-The phase gradient therefore defines a congruence of trajectories along which $S$ is constant along the wave fronts and increases at the rate $dS/dt' = \vec p\cdot\,d(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)/dt' = |\vec p|^2/m$, which recovers the classical action. This is the optical–mechanical analogy in its algebraic form: the wave fronts $S=\text{const}$ are the surfaces of constant phase, the rays are the trajectories, and the phase gradient is the ray direction. In the biquaternion interpretation the ray direction per point is an element of the real-quaternion subspace $\mathbb{H}_{\mathbb{B}}$, the algebra's copy of three-dimensional space, and the phase accumulated along a ray is a central element of $\mathbb{C}_{\mathbb{B}}$.
+The phase gradient therefore defines a congruence of trajectories along which $S$ is constant along the wave fronts and increases at the rate $dS/dr'_t = \vec p\cdot\,d(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)/dr'_t = |\vec p|^2/m$, which recovers the classical action. This is the optical–mechanical analogy in its algebraic form: the wave fronts $S=\text{const}$ are the surfaces of constant phase, the rays are the trajectories, and the phase gradient is the ray direction. In the biquaternion interpretation the ray direction per point is an element of the real-quaternion subspace $\mathbb{H}_{\mathbb{B}}$, the algebra's copy of three-dimensional space, and the phase accumulated along a ray is a central element of $\mathbb{C}_{\mathbb{B}}$.
 
 ### The free and separable cases
 
 For the free particle the Hamilton–Jacobi equation has the complete integral
 
 $$
-S(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z,t') = \vec p\cdot(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z) - E t',
+S(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z,r'_t) = \vec p\cdot(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z) - E r'_t,
 \qquad
 E = \frac{|\vec p|^2}{2m},
 $$
 
-whose phase gradient is the constant vector $\vec p$, and whose wave function $A\exp(i(\vec p\cdot(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)-Et')/\hbar)$ is the plane wave of the free-particle article. For a separable potential $V=V_1(x_1)+V_2(x_2)+V_3(x_3)$ the equation separates, $S=\sum_k S_k(x_k)$, and each $S_k$ obeys
+whose phase gradient is the constant vector $\vec p$, and whose wave function $A\exp(i(\vec p\cdot(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)-Er'_t)/\hbar)$ is the plane wave of the free-particle article. For a separable potential $V=V_1(x_1)+V_2(x_2)+V_3(x_3)$ the equation separates, $S=\sum_k S_k(x_k)$, and each $S_k$ obeys
 
 $$
 \frac{1}{2m}\left(\frac{dS_k}{dx_k}\right)^2 + V_k(x_k) = E_k,
@@ -303,7 +303,7 @@ $$
 \frac{1}{2m}\langle \nabla S\rangle_{\natural} = E - V :
 $$
 
-the kinetic energy is the biquaternion norm of the phase gradient. Its characteristics are the classical trajectories, with $d(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)/dt'=\vec p/m$ and $d\vec p/dt'=-\nabla V$, and the wave fronts are the surfaces of constant phase. The transport equation gives the WKB amplitude $A=C/\sqrt{|p|}$ and, in three dimensions, the van Vleck determinant $\big|\det\partial^2S_{\mathrm{cl}}/\partial x_i\partial x_f\big|^{1/2}$ — the same object that the companion path-integral article obtains from the Gaussian fluctuation determinant.
+the kinetic energy is the biquaternion norm of the phase gradient. Its characteristics are the classical trajectories, with $d(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)/dr'_t=\vec p/m$ and $d\vec p/dr'_t=-\nabla V$, and the wave fronts are the surfaces of constant phase. The transport equation gives the WKB amplitude $A=C/\sqrt{|p|}$ and, in three dimensions, the van Vleck determinant $\big|\det\partial^2S_{\mathrm{cl}}/\partial x_i\partial x_f\big|^{1/2}$ — the same object that the companion path-integral article obtains from the Gaussian fluctuation determinant.
 
 The Bohr–Sommerfeld condition $\oint p\,dx = 2\pi\hbar(n+\tfrac12)$, with the Maslov offsets from the Airy connection formulas, was verified to be exact for the harmonic oscillator and the Morse potential (relative errors below $5\times10^{-9}$ and $2\times10^{-9}$ respectively) and to be approximate for the anharmonic well $\tfrac12x^2+0.1x^4$, where it underestimates the exact levels by $4.6\%$, $0.88\%$, $0.37\%$, and $0.21\%$ for $n=0,\dots,3$ (exact values from finite-difference diagonalisation). The WKB tunnelling exponent $-\frac{2}{\hbar}\int\sqrt{2m(V-E)}\,dx$ matches the closed parabolic-barrier value $\pi(V_0-E)/\hbar\omega$ to $10^{-9}$ and reproduces the leading exponential of Kemble's exact formula.
 
@@ -323,10 +323,10 @@ The whole semiclassical expansion lives in the **centre** of the algebra: the ph
 | $\tilde{Ξ}^{\mathrm{sp}}=A\exp(iS/\hbar)\xi$ | WKB state; central phase, real central amplitude, constant $\xi$ |
 | $\tilde p=-i\hbar\nabla$ | Momentum operator, Hermitian |
 | $\tilde p\tilde{Ξ}^{\mathrm{sp}}=[\nabla S-i\hbar\nabla\ln A]\tilde{Ξ}^{\mathrm{sp}}$ | Action of the momentum on the WKB state |
-| $\nabla S=\sum_\mu(\partial S/\partial Q_\mu)\vec e_\mu$ | Phase gradient; real quaternion, $\in\mathbb{H}_{\mathbb{B}}$ |
+| $\nabla S=\sum_\mu(\partial S/\partial R_\mu)\vec e_\mu$ | Phase gradient; real quaternion, $\in\mathbb{H}_{\mathbb{B}}$ |
 | $\langle \nabla S\rangle_{\natural}=\lvert\nabla S\rvert^2$ | Biquaternion norm of the phase gradient; $\nabla S\,\nabla S^{\natural}=\lvert\nabla S\rvert^2e_t$ |
 | $\frac{1}{2m}\langle \nabla S\rangle_{\natural}=E-V$ | Hamilton–Jacobi equation as a biquaternion norm |
-| $\vec p=\nabla S$, $d(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)/dt'=\vec p/m$, $d\vec p/dt'=-\nabla V$ | Characteristics; classical trajectories |
+| $\vec p=\nabla S$, $d(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)/dr'_t=\vec p/m$, $d\vec p/dr'_t=-\nabla V$ | Characteristics; classical trajectories |
 | $\nabla\cdot(A^2\nabla S)=0$ | Transport equation |
 | $A=C/\sqrt{\lvert p\rvert}$ | WKB amplitude in one dimension |
 | $\lvert\det\partial^2S_{\mathrm{cl}}/\partial x_i\partial x_f\rvert^{1/2}$ | Van Vleck determinant |

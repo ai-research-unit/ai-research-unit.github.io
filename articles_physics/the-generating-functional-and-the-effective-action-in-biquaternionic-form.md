@@ -264,7 +264,7 @@ Because a central kinetic operator does not mix the material and informational s
 | $\Gamma=\Gamma_-+\Gamma_+$ | Sector factorization for a central (sector-diagonal) action |
 | $V_{\mathrm{eff}}(\tilde{Ξ}_{\mathrm{cl}})=-\Gamma/\text{vol}$ | Effective potential |
 | $\delta V_{\mathrm{eff}}/\delta\tilde{Ξ}_{\mathrm{cl}}=0$, $\delta^2V_{\mathrm{eff}}/\delta\tilde{Ξ}^{2}_{\mathrm{cl}}\ge0$ | Vacuum condition; stability (convexity) |
-| $K^{\mathrm{kin}}=\Box-m^2$, $\Box=\partial^2/\partial Q_t^2+\Delta$ | Central kinetic operator |
+| $K^{\mathrm{kin}}=\Box-m^2$, $\Box=\partial^2/\partial R_t^2+\Delta$ | Central kinetic operator |
 | $\tilde P=iEe_t+\vec p$, $\tilde P\tilde P^{\natural}=-p^2$ | Wave biquaternion |
 
 ## Further Reading

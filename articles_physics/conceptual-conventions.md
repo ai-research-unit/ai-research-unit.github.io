@@ -22,7 +22,7 @@ Each concept below is used somewhere in the corpus, and each one brings somethin
 - **The Pauli matrices $\sigma_k$.** *The defect:* the array carries a preferred axis, and neither the algebra nor the sentence names it. Isotropy is measured, so the axis is a defect and not a notation.
 - **The gamma matrices $\gamma_\mu$.** *The defect:* the five cells carry a preferred frame, and with it a preferred axis, and the frame is not named. Isotropy is measured, so the frame is a defect and not a notation.
 - **A Clifford algebra as a foundation.** *The defect:* it starts from a quadratic form, so a metric is imposed on the algebra before the algebra is read. The biquaternion algebra carries its own form, the norm $\tilde Q\tilde{Q}^{\natural}=\sum_\mu Q_\mu^2$, and the sector fixes the signature. A metric supplied from outside is a preferred datum, and nothing in the algebra asks for one.
-- **The Wick rotation, $t'\mapsto-i\tau$.** *The defect:* it is a relabelling of one coefficient, $i c r'_t\mapsto c\tau$, so the object changes in the relabelling: a point of $\mathbb{M}_-$ becomes a point of $\mathbb{H}_{\mathbb{B}}$, the signature goes from $(3,1)$ to $(4,0)$, and the light cone disappears. It is a computational trick and not an identification of two objects of the algebra.
+- **The Wick rotation, $r'_t\mapsto-i\tau$.** *The defect:* it is a relabelling of one coefficient, $i c r'_t\mapsto c\tau$, so the object changes in the relabelling: a point of $\mathbb{M}_-$ becomes a point of $\mathbb{H}_{\mathbb{B}}$, the signature goes from $(3,1)$ to $(4,0)$, and the light cone disappears. It is a computational trick and not an identification of two objects of the algebra.
 
 ## Preferred Concepts
 

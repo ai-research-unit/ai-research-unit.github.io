@@ -18,7 +18,7 @@ which is the positive-definite Hilbert–Schmidt form on the algebra; the signat
 $$
 S[\tilde{Ξ}] = \int d^4x\; \Big\langle \tilde{Ξ}, K^{\mathrm{kin}}\tilde{Ξ}\Big\rangle,
 \qquad
-\Box = \tilde{\nabla}\tilde{\nabla}^{\natural} = \sum_\mu\partial^2_{Q_\mu} .
+\Box = \tilde{\nabla}\tilde{\nabla}^{\natural} = \sum_\mu\partial^2/\partial R_\mu^2 .
 $$
 The plain form, read as the trace pairing, is what makes the exponent a number and not a biquaternion. Because $K^{\mathrm{kin}}$ is central it preserves each sector, and the sectors are **orthogonal** under the real form,
 $$
@@ -45,7 +45,7 @@ The article proceeds as follows. The next section distinguishes the functional i
 
 The distinction is worth making precisely, because the two share a notation and not a meaning.
 
-The **path integral** of *The Path Integral in Biquaternionic Form* has for its integration variable a map $x:t'\mapsto x(t')$ from an interval to space, and its measure $\mathcal{D}x(t')$ is a limit of finite-dimensional measures on the $N-1$ intermediate positions. The number of integration variables is finite at every stage, and the result is a kernel $K(x_f,t'_f;x_i,t'_i)$ — a function of two points.
+The **path integral** of *The Path Integral in Biquaternionic Form* has for its integration variable a map $r_x:r'_t\mapsto r_x(r'_t)$ from an interval to space, and its measure $\mathcal{D}r_x(r'_t)$ is a limit of finite-dimensional measures on the $N-1$ intermediate positions. The number of integration variables is finite at every stage, and the result is a kernel $K(x_f,r'_{t,f};x_i,r'_{t,i})$ — a function of two points.
 
 The **functional integral** has for its integration variable a field $\tilde{Ξ}:x\mapsto\tilde{Ξ}(x)$, a section of a bundle over spacetime, and its measure $\mathcal{D}\tilde{Ξ}$ is a limit of measures on the field values at finitely many spacetime points. The number of integration variables is finite at every stage too — a lattice regularization makes this explicit — but the limit is over an infinite-dimensional configuration space, and the result is a number $Z$ or a functional $Z[\tilde J]$.
 
@@ -59,7 +59,7 @@ Let the field be a map
 $$
 \tilde{Ξ} : \mathbb{R}^{3,1}\longrightarrow \mathbb{B},
 \qquad
-\tilde{Ξ}(x) = Ξ_t(x)\,e_t + Ξ_x(x)\,\vec e_x + Ξ_y(x)\,\vec e_y + Ξ_z(x)\,\vec e_z,
+\tilde{Ξ}(r_x) = Ξ_t(r_x)\,e_t + Ξ_x(r_x)\,\vec e_x + Ξ_y(r_x)\,\vec e_y + Ξ_z(r_x)\,\vec e_z,
 $$
 with complex coefficients $Ξ_\mu(x)$. The field decomposes along the sectors,
 $$
@@ -155,10 +155,10 @@ The cleanest explicit case is the free scalar field, which the scalar example be
 
 **The Euclidean action.** After the Wick rotation of the next section, the free action of a real scalar of mass $m$ is
 $$
-S_E[\xi] = \int d^4x_E\;\tfrac12\Big(\partial/\partial Q_\mu\xi\,\partial/\partial Q_\mu\xi + m^2\xi^2\Big)
+S_E[\xi] = \int d^4x_E\;\tfrac12\Big(\partial/\partial R_\mu\xi\,\partial/\partial R_\mu\xi + m^2\xi^2\Big)
 = \tfrac12\int d^4x_E\;\xi\big(-\Delta_E + m^2\big)\xi ,
 $$
-with $\Delta_E$ the Euclidean Laplacian, and in momentum space the kinetic operator is $k_E^2+m^2$. In the biquaternion framework the field is scalar-valued for the example and the kinetic operator is the central $-\Box + m^2$ continued to Euclidean signature, with $\Box=\sum_\mu\partial^2_{Q_\mu}$; the wave biquaternion $\tilde P=iEe_t+\vec p$ has biquaternion norm $\tilde P\tilde P^{\natural}=-p^2$, which becomes $k_E^2$ after the Wick rotation, so that the Euclidean kinetic operator is the central scalar $\tilde P\tilde P^{\natural}+m^2$.
+with $\Delta_E$ the Euclidean Laplacian, and in momentum space the kinetic operator is $k_E^2+m^2$. In the biquaternion framework the field is scalar-valued for the example and the kinetic operator is the central $-\Box + m^2$ continued to Euclidean signature, with $\Box=\sum_\mu\partial^2/\partial R_\mu^2$; the wave biquaternion $\tilde P=iEe_t+\vec p$ has biquaternion norm $\tilde P\tilde P^{\natural}=-p^2$, which becomes $k_E^2$ after the Wick rotation, so that the Euclidean kinetic operator is the central scalar $\tilde P\tilde P^{\natural}+m^2$.
 
 **The Gaussian result.** The free generating functional is
 $$
@@ -180,7 +180,7 @@ the Feynman propagator of *The Feynman Propagator in Biquaternionic Form*, whose
 
 The convergence of the Gaussian functional integral is best seen after the Wick rotation, and the framework's account of the rotation is the reason the Euclidean integral is well defined.
 
-The rotation is the replacement of the material time by imaginary time, $t'\mapsto -i\tau$, which in the framework is the identification
+The rotation is the replacement of the material time by imaginary time, $r'_t\mapsto -i\tau$, which in the framework is the identification
 $$
 \mathbb{M}_- \;\longrightarrow\; \mathbb{H}_{\mathbb{B}},
 \qquad
@@ -255,7 +255,7 @@ with the spinor structure carried by the module and the mass term linear and chi
 
 ## Summary
 
-The functional integral over a biquaternion field reduces, in its free part, to a block-diagonal quadratic form and hence to a Gaussian integral on each sector's four-real-dimensional space, and its algebra content is the scalar extraction that makes the exponent a number. For a field $\tilde{Ξ}=\tilde{Ξ}_-+\tilde{Ξ}_+$ and a central kinetic operator $K^{\mathrm{kin}}=\Box-m^2$ with $\Box=\tilde\nabla\tilde\nabla^{\natural}=\sum_\mu\partial^2_{Q_\mu}$,
+The functional integral over a biquaternion field reduces, in its free part, to a block-diagonal quadratic form and hence to a Gaussian integral on each sector's four-real-dimensional space, and its algebra content is the scalar extraction that makes the exponent a number. For a field $\tilde{Ξ}=\tilde{Ξ}_-+\tilde{Ξ}_+$ and a central kinetic operator $K^{\mathrm{kin}}=\Box-m^2$ with $\Box=\tilde\nabla\tilde\nabla^{\natural}=\sum_\mu\partial^2/\partial R_\mu^2$,
 $$
 S[\tilde{Ξ}]=\int d^4x\;\Big\langle\tilde{Ξ},K^{\mathrm{kin}}\tilde{Ξ}\Big\rangle,
 \qquad
@@ -282,13 +282,13 @@ The **measure**, the **space of field configurations**, and the **interaction** 
 | $\tilde{Ξ}=\tilde{Ξ}_-+\tilde{Ξ}_+$ | Biquaternion field and its sector parts |
 | $\mathrm{Sc}(\tilde{Q})=\tfrac12\mathrm{Tr}(\tilde{Q})$ (complex scalar part) | Scalar extraction; the trace converts a biquaternion into a number |
 | $\langle\tilde{Q},\tilde{Q}_1\rangle=\mathrm{Re}\,\mathrm{Tr}(\tilde{Q}^{*}\tilde{Q}_1)$ | Real bilinear form of the action; sector-orthogonal |
-| $\Box=\tilde\nabla\tilde\nabla^{\natural}=\sum_\mu\partial^2_{Q_\mu}$ | d'Alembertian, series convention |
+| $\Box=\tilde\nabla\tilde\nabla^{\natural}=\sum_\mu\partial^2/\partial R_\mu^2$ | d'Alembertian, series convention |
 | $\tilde P=iEe_t+\vec p$, $\tilde P\tilde P^{\natural}=-p^2$ | Wave biquaternion; Euclidean $k_E^2$ |
 | $S[\tilde{Ξ}]=\int d^4x\,\langle\tilde{Ξ},K^{\mathrm{kin}}\tilde{Ξ}\rangle$ | Quadratic biquaternion action; $K^{\mathrm{kin}}=\Box-m^2$ |
 | $Z[\tilde J]=\int\mathcal{D}\tilde{Ξ}\,\exp(-\frac12\langle\tilde{Ξ},K^{\mathrm{kin}}\tilde{Ξ}\rangle+\langle\tilde J,\tilde{Ξ}\rangle)$ | Functional integral with source |
 | $Z_0=(\det K^{\mathrm{kin}})^{-1/2}\exp(\frac12\langle\tilde J,K^{\mathrm{kin}}{}^{-1}\tilde J\rangle)$ | Gaussian result; $\prod_k(\tilde P\tilde P^{\natural}+m^2)^{-1}$ per mode for the free central operator |
 | $W[\tilde J]=\log Z[\tilde J]$, $W-W_0=\tfrac12\langle\tilde J,K^{\mathrm{kin}}{}^{-1}\tilde J\rangle$ | Free energy |
-| $t'\mapsto-i\tau$, $\mathbb{M}_-\to\mathbb{H}_{\mathbb{B}}$ | Wick rotation; $\exp(iS)\to \exp(-S_E)$ |
+| $r'_t\mapsto-i\tau$, $\mathbb{M}_-\to\mathbb{H}_{\mathbb{B}}$ | Wick rotation; $\exp(iS)\to \exp(-S_E)$ |
 | $O$, $O_{\mathrm c}$, $O_{\mathrm{cc}}=O$ | Region, causal complement, causal completeness (localisation) |
 | $\tilde{K}^{\mathrm{mod}}_{W}=2\pi G_1$ | Wedge modular Hamiltonian (the worked causally complete region) |
 | $\det(\mathbb{D}-m)$ | Fermionic Gaussian result (Grassmann integral) |

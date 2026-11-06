@@ -404,7 +404,7 @@ $$
 while the target products are $\tilde\Pi_{\mathrm z}(i\vec e_x) = \tfrac12(i\vec e_x - \vec e_y)$ and $(i\vec e_x)\tilde\Pi_{\mathrm z} = \tfrac12(i\vec e_x + \vec e_y)$, and $(i\vec e_x)\tilde\Pi_{\mathrm z}(i\vec e_x) = \tilde\Pi_2$. Substituting,
 
 $$
-\tilde{Q}_{12}(\tilde\Pi_{\mathrm x}\otimes\tilde\Pi_{\mathrm z})\tilde{Q}_{12}
+\tilde{Q}_{12}(\tilde\Pi_{\mathrm r_x}\otimes\tilde\Pi_{\mathrm r_z})\tilde{Q}_{12}
 = \tfrac{1}{4}\left[e_t\otimes e_t - \vec e_x\otimes \vec e_x + \vec e_y\otimes \vec e_y - \vec e_z\otimes \vec e_z\right].
 $$
 

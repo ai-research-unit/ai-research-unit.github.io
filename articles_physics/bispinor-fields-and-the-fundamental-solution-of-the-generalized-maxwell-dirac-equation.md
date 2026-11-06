@@ -12,21 +12,21 @@ Two conventions are load-bearing. The source's **two bigradients** are $\nabla^\
 
 $$
 \nabla^+ = i\tilde{\nabla}, \qquad \nabla^- = i\tilde{\nabla}^{\natural},
-\qquad \partial/\partial\tau = -\frac{i}{c}\partial/\partial t' ,
+\qquad \partial/\partial\tau = -\frac{i}{c}\partial/\partial r'_t ,
 $$
 
 which was checked exactly. The source's **wave operator** is therefore minus the corpus's d'Alembertian,
 
 $$
 \nabla^-\nabla^+ = \nabla^+\nabla^- = \Box_{\text{s}} := \partial^2/\partial\tau^2 - \Delta = -\,\Box ,
-\qquad \Box = \partial^2/\partial Q_t^2 + \Delta ,
+\qquad \Box = \partial^2/\partial R_t^2 + \Delta ,
 $$
 
 and the source's operator differs in sign from the corpus's. Consequently the source's mass $m$ in $(\nabla^\pm + m)B = F$ is related to the corpus's central shift by $\kappa = -im$, and the case the source studies — an **imaginary** $m = i\rho$ — is the corpus's **real** $\kappa = \rho$, the case in which the homogeneous equation has non-trivial solutions. Every identification below is stated on the source's side and translated once; the factors of $i$ are not left to the reader.
 
 ## The Matrix Form and the Matrix of the Gradient
 
-The source writes its biwave equation in matrix form, $\sum_j D_j\partial/\partial Q_j\,B = G$, and exhibits the four $4\times4$ matrices
+The source writes its biwave equation in matrix form, $\sum_j D_j\partial/\partial R_j\,B = G$, and exhibits the four $4\times4$ matrices
 
 $$
 D^0 = I_4, \qquad
@@ -41,7 +41,7 @@ Three facts follow, and each is worth stating because the source's wording invit
 
 - **The three spacelike matrices close on $\mathrm{Cl}_{3,0}$, not on $\mathrm{Cl}_{1,3}$.** Left multiplications by $ie_j$ and $i\vec e_k$, $j\neq k$, anticommute, $\{D_j,D_k\} = 0$, exactly, since $e_j\vec e_k = -\vec e_ke_j$. So the three of them are a Clifford set with all positive squares.
 - **The fourth is not part of that set.** $D^0 = I$ commutes with everything, so $\{D_0,D_j\} = 2D_j \neq 0$: the source's index identity is a statement about each matrix with itself, not an anticommutation over four indices. The corpus's own Dirac dictionary supplies a genuine Clifford set through the matrix image $Ξ$; the two objects are different and must not be conflated.
-- **The "matrix Dirac operator" is the regular representation of the gradient.** Since $D = \partial/\partial\tau I + \sum_j D_j\partial/\partial Q_j$ is the matrix of $\partial/\partial\tau + i\nabla = \nabla^+$, the matrix form of the source's first-order equation is the matrix form of left multiplication by a biquaternion — no more and no less. The corpus's Dirac dictionary says the same thing from the other side: $\mathbb{B} = \mathrm{End}(S)$, and every complex-linear operator on the spinor module is some biquaternion.
+- **The "matrix Dirac operator" is the regular representation of the gradient.** Since $D = \partial/\partial\tau I + \sum_j D_j\partial/\partial R_j$ is the matrix of $\partial/\partial\tau + i\nabla = \nabla^+$, the matrix form of the source's first-order equation is the matrix form of left multiplication by a biquaternion — no more and no less. The corpus's Dirac dictionary says the same thing from the other side: $\mathbb{B} = \mathrm{End}(S)$, and every complex-linear operator on the spinor module is some biquaternion.
 
 ## The Square and the Two Senses of "the Square of the Dirac Operator"
 
@@ -75,7 +75,7 @@ $$
 \bigl(\Box - \mu^2\bigr)\tilde{Ξ}^{\mathrm{sp}}_{R,L} = 0 ,
 $$
 
-and it squares to the Klein–Gordon operator **with no first-order term**, because the mass enters once on each side. The programme carries the *same* mass twice on the same side, $(\nabla^\pm + m)(\nabla^\mp + m)$, and the cross term $2m\partial/\partial\tau$ it produces survives. Both computations are correct; they are squares of different operators. The corpus's result — the second-order equation implied by the biquaternionic Dirac equation is Klein–Gordon — is therefore not contradicted by the programme, and the programme's operator is not the corpus's mass term: the corpus's mass is the additive central $\Box - \mu^2$ with $\mu = mc/\hbar$ real, while $2\kappa\partial/\partial Q_t$ is first order and cannot be written as $\Box - \mu^2$. The d'Alembertian article states this separation; the present article keeps it.
+and it squares to the Klein–Gordon operator **with no first-order term**, because the mass enters once on each side. The programme carries the *same* mass twice on the same side, $(\nabla^\pm + m)(\nabla^\mp + m)$, and the cross term $2m\partial/\partial\tau$ it produces survives. Both computations are correct; they are squares of different operators. The corpus's result — the second-order equation implied by the biquaternionic Dirac equation is Klein–Gordon — is therefore not contradicted by the programme, and the programme's operator is not the corpus's mass term: the corpus's mass is the additive central $\Box - \mu^2$ with $\mu = mc/\hbar$ real, while $2\kappa\partial/\partial R_t$ is first order and cannot be written as $\Box - \mu^2$. The d'Alembertian article states this separation; the present article keeps it.
 
 One identity is the engine of everything that follows. Because the shifted operator is a conjugation of the wave operator,
 

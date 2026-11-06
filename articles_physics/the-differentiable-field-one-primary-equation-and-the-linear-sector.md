@@ -205,7 +205,7 @@ The last is the fork. Conjugation first gives the two sectors and the corpus's q
 | $\mathbb{B}$ | The biquaternion algebra, isomorphic to $M_2(\mathbb{C})$ |
 | $\mathbb{M}_+$, $\mathbb{M}_-$ | The informational and material sectors, the fixed spaces of ${}^{*}$ and $\flat$ |
 | $\natural$ | The natural conjugation, $\mathbb{C}$-linear, fixing $\mathbb{H}_{\mathbb{B}}$ |
-| $\tilde\nabla$ | The biquaternionic gradient $\sum_\mu e_\mu\partial/\partial Q_\mu$ |
+| $\tilde\nabla$ | The biquaternionic gradient $\sum_\mu e_\mu\partial/\partial R_\mu$ |
 | $N(\tilde Q)$ | The biquaternion norm $\sum_\mu Q_\mu^2$, zero on the cone |
 | $\Sigma$ | One component of a differentiable function |
 | $\mathsf D\Sigma$ | The two-by-two array of its four coordinate derivatives |

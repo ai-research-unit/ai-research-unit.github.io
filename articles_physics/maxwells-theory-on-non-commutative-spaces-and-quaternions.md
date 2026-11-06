@@ -24,7 +24,7 @@ First, and most important, **"non-commutative" here does not mean the non-commut
 
 Second, the deformation is of the **Moyal** type — an algebra deformation, $\kappa_{\mu\nu}$ a fixed background. It is not the **C-space** programme of Clifford-valued coordinates, which deforms the arena differently; the corpus holds that programme separately and the two must be compared, not merged. The mathematical side of the Moyal deformation is the star product of *Deformation Quantization*, and the classical limit that the corpus's *Similitudes between the Poisson Bracket and the Quantum Commutator* develops is the undeformed limit here.
 
-Third, the source's arithmetic convention is the corpus's, with the imaginary unit placed in the time coordinate: the source writes $x_4 = it'$, the corpus writes $\tilde R_\varphi = i c r'_t\,e_t + r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z$, and both make the temporal direction imaginary. The source writes the quaternion units $e_4 = 1$, $e_1,e_2,e_3$ with $\vec e_k^2=-1$, and realises them by $\tau_4 = i\tau_0$, $\tau_k = i\sigma_k$; the corpus's units $e_t=1,\vec e_x,\vec e_y,\vec e_z$ are the same objects with different names. Throughout, $c=\hbar=1$.
+Third, the source's arithmetic convention is the corpus's, with the imaginary unit placed in the time coordinate: the source writes $x_4 = ir'_t$, the corpus writes $\tilde R_\varphi = i c r'_t\,e_t + r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z$, and both make the temporal direction imaginary. The source writes the quaternion units $e_4 = 1$, $e_1,e_2,e_3$ with $\vec e_k^2=-1$, and realises them by $\tau_4 = i\tau_0$, $\tau_k = i\sigma_k$; the corpus's units $e_t=1,\vec e_x,\vec e_y,\vec e_z$ are the same objects with different names. Throughout, $c=\hbar=1$.
 
 ## The Non-Commutative Arena
 
@@ -49,7 +49,7 @@ the field theories on the arena are **non-local** — the same shift that remove
 Field operators are split into plane waves and recombined; the product of two operators becomes the **Moyal product** of the corresponding functions,
 
 $$
-A(x)\star B(x) = \exp\!\left(\frac{i}{2}\kappa_{\mu\nu}\partial/\partial x_\mu\,\partial/\partial x_{2\nu}\right) A(x)B(x_2)\Big|_{x_2=x},
+A(r_x)\star B(r_x) = \exp\!\left(\frac{i}{2}\kappa_{\mu\nu}\partial/\partial x_\mu\,\partial/\partial x_{2\nu}\right) A(r_x)B(x_2)\Big|_{x_2=r_x},
 $$
 
 the Weyl–Moyal correspondence. The star product is associative. Two facts about it matter here. First, the **quadratic (kinetic) terms of an action are unchanged** by the deformation, because the $\kappa$-correction is a total derivative at second order; the propagators are therefore identical to the commutative ones, and, as the source puts it, the deformed theory has the same degrees of freedom as the commutative one, related to it by the Seiberg–Witten map. Second, the deformation first shows itself at **cubic and higher order in the fields** — which is why the free Maxwell action stays quadratic but its field equations do not stay linear.
@@ -97,7 +97,7 @@ The two forms are the same quantity: the $\kappa$-part of the four-index express
 The field equations follow from $\mathcal L$ by the Lagrange–Euler equation. Cast in the form used in matter, they are the familiar pair
 
 $$
-\frac{\partial}{\partial t'}\vec D - \mathrm{rot}\,\vec H = -\vec J,
+\frac{\partial}{\partial r'_t}\vec D - \mathrm{rot}\,\vec H = -\vec J,
 \qquad
 \mathrm{div}\,\vec D = \rho,
 $$
@@ -105,7 +105,7 @@ $$
 together with the source-free pair
 
 $$
-\frac{\partial}{\partial t'}\vec B + \mathrm{rot}\,\vec E = 0,
+\frac{\partial}{\partial r'_t}\vec B + \mathrm{rot}\,\vec E = 0,
 \qquad
 \mathrm{div}\,\vec B = 0 .
 $$
@@ -133,11 +133,11 @@ The corpus's media article develops the **linear** case in full: for a homogeneo
 The source's second-order equations are obtained by eliminating D and H. Applying the curl to the first sourced equation, substituting rot E from the source-free pair, and using the constitutive relations, gives
 
 $$
-\Delta\vec B - \frac{\partial^2}{\partial {r'_{t}}^2}\vec B + \Delta\vec h - \mathrm{grad}\,\mathrm{div}\,\vec h + \frac{\partial}{\partial t'}\mathrm{rot}\,\vec d = -\mathrm{rot}\,\vec J,
+\Delta\vec B - \frac{\partial^2}{\partial {r'_{t}}^2}\vec B + \Delta\vec h - \mathrm{grad}\,\mathrm{div}\,\vec h + \frac{\partial}{\partial r'_t}\mathrm{rot}\,\vec d = -\mathrm{rot}\,\vec J,
 $$
 
 $$
-\Delta\vec E - \frac{\partial^2}{\partial {r'_{t}}^2}\vec E - \frac{\partial^2}{\partial {r'_{t}}^2}\vec d + \mathrm{grad}\,\mathrm{div}\,\vec d + \frac{\partial}{\partial t'}\mathrm{rot}\,\vec h = \frac{\partial}{\partial t'}\vec J + \mathrm{grad}\,\rho .
+\Delta\vec E - \frac{\partial^2}{\partial {r'_{t}}^2}\vec E - \frac{\partial^2}{\partial {r'_{t}}^2}\vec d + \mathrm{grad}\,\mathrm{div}\,\vec d + \frac{\partial}{\partial r'_t}\mathrm{rot}\,\vec h = \frac{\partial}{\partial r'_t}\vec J + \mathrm{grad}\,\rho .
 $$
 
 The time derivative in front of the two rotation terms belongs there: it is what makes the deformed terms cancel for a plane wave, and it is easily lost in the two-column layout of the source. At $\vec\kappa=0$ these are the ordinary wave equations. At $\vec\kappa\ne0$ they are **non-linear**, because $\vec d$ and $\vec h$ are quadratic in the fields.
@@ -187,7 +187,7 @@ The structural interpretation is worth stating as the paper's sharpest contribut
 Multiplying the sourced equations by $\vec E$ and the source-free ones by $\vec H$ and adding gives the Poynting theorem in its deformed form,
 
 $$
-\frac{\partial\mathcal E}{\partial t'} = -(\vec J\cdot\vec E) - \mathrm{div}\,\vec P,
+\frac{\partial\mathcal E}{\partial r'_t} = -(\vec J\cdot\vec E) - \mathrm{div}\,\vec P,
 \qquad
 \vec P = \vec E\times\vec H,
 $$
@@ -247,7 +247,7 @@ proportional to the two invariants contracted with the background, and therefore
 ### The energy density as an integrability condition
 
 The relation behind the Poynting theorem above,
-$\vec E\cdot\partial/\partial t'\vec D + \vec H\cdot\partial/\partial t'\vec B = \partial/\partial t'\mathcal E$, is not a
+$\vec E\cdot\partial/\partial r'_t\vec D + \vec H\cdot\partial/\partial r'_t\vec B = \partial/\partial r'_t\mathcal E$, is not a
 convenience: it is the **integrability condition** for an energy density to exist at all, and it holds because
 $\vec D$ and $\vec H$ are the field-derivatives of a Lagrangian. This is a statement about variational
 non-linear media generally rather than about non-commutativity — the energy density is defined precisely when

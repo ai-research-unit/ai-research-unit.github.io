@@ -22,9 +22,9 @@ The findings are the following.
 
 - **Established, and recomputed below.** The pion triplet is the adjoint of the compact $\mathrm{SU}(2)$ inside the material sector, and the chiral field $\tilde U = \exp(\vec\pi/f_\pi)$ is a unit real quaternion, $\langle\tilde U\rangle_\natural = e_t$. The normalisation is read from the plain weight of the units, $\mathrm{Sc}(\vec e_j\vec e_k) = -\delta_{jk}$ and $\mathrm{Sc}(\vec e_j^{\natural}\vec e_k) = \delta_{jk}$; from them the generators $T_k = \tfrac{i}{2}\vec e_k$ satisfy $\mathrm{Sc}(T_jT_k) = \tfrac14\delta_{jk}$, equivalently $\mathrm{Tr}(T_jT_k) = \tfrac12\delta_{jk}$, and $[T_j,T_k] = i\sum_l\epsilon_{jkl}T_l$. Expanding the biquaternion chiral Lagrangian,
 $$
-\mathcal{L}_\pi^{(2)} = -\frac{f_\pi^2}{2}\sum_\mu\mathrm{Sc}\!\left(\frac{\partial\tilde U}{\partial Q_\mu}\frac{\partial\tilde U^{\natural}}{\partial Q_\mu}\right),
+\mathcal{L}_\pi^{(2)} = -\frac{f_\pi^2}{2}\sum_\mu\mathrm{Sc}\!\left(\frac{\partial\tilde U}{\partial R_\mu}\frac{\partial\tilde U^{\natural}}{\partial R_\mu}\right),
 $$
-gives the canonical pion kinetic term $\tfrac12\sum_k\big((\partial\pi_k/\partial t')^2-(\nabla\pi_k)^2\big)$ with coefficient exactly one. The mass term $f_\pi^2B_0\,\mathrm{Sc}(M\tilde U + M^{*}\tilde U^{*})$ gives the standard Gell-Mann–Oakes–Renner relation $m_\pi^2 f_\pi^2 = -(m_u+m_d)\langle\bar qq\rangle$, equivalently $m_\pi^2 = B_0(m_u+m_d)$ with $B_0 = -\langle\bar qq\rangle/f_\pi^2$.
+gives the canonical pion kinetic term $\tfrac12\sum_k\big((\partial\pi_k/\partial r'_t)^2-(\nabla\pi_k)^2\big)$ with coefficient exactly one. The mass term $f_\pi^2B_0\,\mathrm{Sc}(M\tilde U + M^{*}\tilde U^{*})$ gives the standard Gell-Mann–Oakes–Renner relation $m_\pi^2 f_\pi^2 = -(m_u+m_d)\langle\bar qq\rangle$, equivalently $m_\pi^2 = B_0(m_u+m_d)$ with $B_0 = -\langle\bar qq\rangle/f_\pi^2$.
 - **Interpretation.** Interpreting the pion's isospin triplet as the adjoint of the framework's material-sector $\mathrm{SU}(2)$, and the chiral field as a unit real quaternion, is the interpretive link between the framework's compact group and the pion's quantum numbers. The interpretation is exact at the level of the unbroken subgroup and is labelled where the chiral group is involved.
 - **Gap, left visible.** The framework's centre is vector-like: the algebra supplies the diagonal isospin $SU(2)_V$ and its adjoint action on the pion triplet, but no axial generator of the centre acts on the triplet. The volume cell of the frame is the right multiplication by $-i\vec e_z$, an operator of the frame and not an element of the centre, so it can carry the axial vertex but does not generate a chiral symmetry. The axial currents, the anomaly and the Wess–Zumino–Witten term therefore belong to the fermion and general-gauge sectors. The chiral Lagrangian is realised as a geometric construction on the framework's group manifold, with the axial-current algebra and the anomaly imported from the standard treatment.
 
@@ -152,26 +152,26 @@ with $g_L,g_R$ constant unit quaternions. The diagonal $g_L=g_R=g_V$ is the adjo
 **The two-derivative Lagrangian.** It is
 
 $$
-\boxed{\;\mathcal{L}_\pi^{(2)} = -\frac{f_\pi^2}{2}\sum_\mu\mathrm{Sc}\!\left(\frac{\partial\tilde U}{\partial Q_\mu}\frac{\partial\tilde U^{\natural}}{\partial Q_\mu}\right)
-= -\frac{f_\pi^2}{2}\sum_\mu\left\langle\frac{\partial\tilde U}{\partial Q_\mu}\right\rangle_{*}\;},
+\boxed{\;\mathcal{L}_\pi^{(2)} = -\frac{f_\pi^2}{2}\sum_\mu\mathrm{Sc}\!\left(\frac{\partial\tilde U}{\partial R_\mu}\frac{\partial\tilde U^{\natural}}{\partial R_\mu}\right)
+= -\frac{f_\pi^2}{2}\sum_\mu\left\langle\frac{\partial\tilde U}{\partial R_\mu}\right\rangle_{*}\;},
 $$
 
 the second form reading the same term as the Hermitian norm of each derivative, the two conjugations agreeing on a real-coefficient element because $\tilde U^{*} = \tilde U^{\natural}$ for a unit real quaternion. The overall minus sign is the sign convention that makes the kinetic term positive; the standard literature writes the same term with a plus and a mostly-minus contraction. Expanding,
 
 $$
-\frac{\partial\tilde U}{\partial Q_\mu} = \frac{1}{f_\pi}\frac{\partial\vec\pi}{\partial Q_\mu} + O(\pi^2),
+\frac{\partial\tilde U}{\partial R_\mu} = \frac{1}{f_\pi}\frac{\partial\vec\pi}{\partial R_\mu} + O(\pi^2),
 \qquad
-\mathrm{Sc}\!\left(\frac{\partial\tilde U^{\natural}}{\partial Q_\mu}\frac{\partial\tilde U}{\partial Q_\mu}\right) = \frac{1}{f_\pi^2}\,\sum_k\frac{\partial\pi_k}{\partial Q_\mu}\frac{\partial\pi_k}{\partial Q_\mu} + O(\pi^4),
+\mathrm{Sc}\!\left(\frac{\partial\tilde U^{\natural}}{\partial R_\mu}\frac{\partial\tilde U}{\partial R_\mu}\right) = \frac{1}{f_\pi^2}\,\sum_k\frac{\partial\pi_k}{\partial R_\mu}\frac{\partial\pi_k}{\partial R_\mu} + O(\pi^4),
 $$
 
 using $\mathrm{Sc}(\vec e_j^{\natural}\vec e_k) = \delta_{jk}$, which follows from $\vec e_k^{\natural} = -\vec e_k$ and $\mathrm{Sc}(\vec e_j\vec e_k) = -\delta_{jk}$; the two minus signs cancel. Hence
 
 $$
-\mathcal{L}_\pi^{(2)} = -\frac12\sum_\mu\sum_k\frac{\partial\pi_k}{\partial Q_\mu}\frac{\partial\pi_k}{\partial Q_\mu} + O(\pi^4)
-= \frac12\,\sum_k\left[\left(\frac{\partial\pi_k}{\partial t'}\right)^2-\sum_j\left(\frac{\partial\pi_k}{\partial Q_j}\right)^2\right] + O(\pi^4) ,
+\mathcal{L}_\pi^{(2)} = -\frac12\sum_\mu\sum_k\frac{\partial\pi_k}{\partial R_\mu}\frac{\partial\pi_k}{\partial R_\mu} + O(\pi^4)
+= \frac12\,\sum_k\left[\left(\frac{\partial\pi_k}{\partial r'_t}\right)^2-\sum_j\left(\frac{\partial\pi_k}{\partial R_j}\right)^2\right] + O(\pi^4) ,
 $$
 
-the canonical kinetic term of three real pion fields, with coefficient exactly one and no free parameter. The last step uses $\partial/\partial Q_t = -(i/c)\,\partial/\partial t'$ and sets $c=1$. The higher terms are the interactions: every vertex carries derivatives, their coefficients are fixed by the algebra, and at four derivatives the terms include the Skyrme term of the companion article. This is the chiral Lagrangian at leading order, and it is the framework's principal chiral model with $f = f_\pi$.
+the canonical kinetic term of three real pion fields, with coefficient exactly one and no free parameter. The last step uses $\partial/\partial R_t = -(i/c)\,\partial/\partial r'_t$ and sets $c=1$. The higher terms are the interactions: every vertex carries derivatives, their coefficients are fixed by the algebra, and at four derivatives the terms include the Skyrme term of the companion article. This is the chiral Lagrangian at leading order, and it is the framework's principal chiral model with $f = f_\pi$.
 
 **Why two factors.** The chiral action needs two independent rotations, and one factor cannot carry them. A single rotor has three real parameters, and $SU(2)_L\times SU(2)_R$ has six; with $g_L=g_R$ only the diagonal isospin survives. The second factor is the axial direction: without it there is no axial current, no Goldstone coset and no breaking pattern. On the unit quaternions the star is the inverse, so the pair $g_L\tilde U g_R^{*}$ is the usual left-right action, written by one product and with no operator inverse. Each factor acts alone on one of the two currents of the nonlinear sigma model: $\tilde U^{\natural}\,\partial_\mu\tilde U$ is carried by the right factor and $\partial_\mu\tilde U\,\tilde U^{\natural}$ by the left, and the target is $SU(2)_L\times SU(2)_R/SU(2)_V$. The diagonal leaves the isospin-singlet vacuum fixed and ties the $W$ and $Z$ masses, so that the custodial parameter is one at tree level with hypercharge off.
 
@@ -235,11 +235,11 @@ The chiral Lagrangian's currents are what couple the pions to the rest of the St
 **The vector current.** The unbroken isospin current is the Noether current of the diagonal $SU(2)_V$ acting as $\tilde U\mapsto g_V\tilde U g_V^{*}$. It is built from the Maurer–Cartan form of the companion article, and at lowest order it is
 
 $$
-j_{\mu k} = -\frac{f_\pi^2}{2}\,\mathrm{Sc}\!\left(\frac{\partial\tilde U^{\natural}}{\partial Q_\mu}\left[\vec e_k,\tilde U\right]\right) + \cdots
-= -\sum_{j,l}\epsilon_{kjl}\,\pi_j\,\frac{\partial\pi_l}{\partial Q_\mu} + \cdots ,
+j_{\mu k} = -\frac{f_\pi^2}{2}\,\mathrm{Sc}\!\left(\frac{\partial\tilde U^{\natural}}{\partial R_\mu}\left[\vec e_k,\tilde U\right]\right) + \cdots
+= -\sum_{j,l}\epsilon_{kjl}\,\pi_j\,\frac{\partial\pi_l}{\partial R_\mu} + \cdots ,
 $$
 
-the standard isovector current of the pion triplet. The natural conjugation on the derivative is the one that fixes the sign: with $\partial\tilde U^{\natural}/\partial Q_\mu=-\partial\tilde U/\partial Q_\mu$ and $\mathrm{Sc}(\vec e_j\vec e_k)=-\delta_{jk}$, the two minus signs cancel and the prefactor $-\frac{f_\pi^2}{2}$ produces the displayed minus. It lies in the material sector, like every current of the framework, and it is the current whose charge rotates the pion triplet in the adjoint.
+the standard isovector current of the pion triplet. The natural conjugation on the derivative is the one that fixes the sign: with $\partial\tilde U^{\natural}/\partial R_\mu=-\partial\tilde U/\partial R_\mu$ and $\mathrm{Sc}(\vec e_j\vec e_k)=-\delta_{jk}$, the two minus signs cancel and the prefactor $-\frac{f_\pi^2}{2}$ produces the displayed minus. It lies in the material sector, like every current of the framework, and it is the current whose charge rotates the pion triplet in the adjoint.
 
 **The axial current and its divergence.** The axial current is not the Noether current of a symmetry of the algebra. It is the quark axial current of the underlying theory, which fixes its nature and its anomalous divergence; what the framework contributes is the product of elements that carries the vertex. The frame cell of the coordinate $x_\mu$ multiplies on the left by $e_\mu$ and on the right by $\vec e_{\nu(\mu)}$, with the phase $i$,
 
@@ -399,8 +399,8 @@ $$
 and the leading chiral Lagrangian is the Hermitian norm of its derivative,
 
 $$
-\boxed{\;\mathcal{L}_\pi^{(2)} = -\frac{f_\pi^2}{2}\sum_\mu\mathrm{Sc}\!\left(\frac{\partial\tilde U}{\partial Q_\mu}\frac{\partial\tilde U^{\natural}}{\partial Q_\mu}\right)
-= \frac12\left[\sum_k\left(\frac{\partial\pi_k}{\partial t'}\right)^2-\sum_k\sum_j\left(\frac{\partial\pi_k}{\partial Q_j}\right)^2\right] + O(\pi^4)\;},
+\boxed{\;\mathcal{L}_\pi^{(2)} = -\frac{f_\pi^2}{2}\sum_\mu\mathrm{Sc}\!\left(\frac{\partial\tilde U}{\partial R_\mu}\frac{\partial\tilde U^{\natural}}{\partial R_\mu}\right)
+= \frac12\left[\sum_k\left(\frac{\partial\pi_k}{\partial r'_t}\right)^2-\sum_k\sum_j\left(\frac{\partial\pi_k}{\partial R_j}\right)^2\right] + O(\pi^4)\;},
 $$
 
 with the coefficient exactly one, fixed by $\mathrm{Sc}(T_jT_k) = \tfrac14\delta_{jk}$ for $T_k = \tfrac{i}{2}\vec e_k$, equivalently $\mathrm{Tr}(T_jT_k) = \tfrac12\delta_{jk}$ with $\mathrm{Tr}(\vec e_j\vec e_k) = -2\delta_{jk}$ and $\mathrm{Sc}(\vec e_j^{\natural}\vec e_k) = \delta_{jk}$. These identities were checked on generic elements of the algebra, and the kinetic coefficient was verified numerically on the expansion, coming out exactly $1$.
@@ -427,7 +427,7 @@ The framework supplies the pion's adjoint isovector assignment, the geometric ch
 | $\tilde U = \exp(\vec\pi/f_\pi)$, $\langle\tilde U\rangle_\natural = e_t$ | Chiral field (unit real quaternion) |
 | $\tilde u = \exp(\vec\alpha/2)$ | Adjoint rotation element (isospin rotor) |
 | $\tilde U\mapsto g_L\tilde U g_R^{*}$ | Chiral transformation; diagonal $SU(2)_V$ unbroken |
-| $\mathcal{L}_\pi^{(2)} = -\frac{f_\pi^2}{2}\sum_\mu\mathrm{Sc}\!\left(\frac{\partial\tilde U}{\partial Q_\mu}\frac{\partial\tilde U^{\natural}}{\partial Q_\mu}\right)$ | Leading chiral Lagrangian |
+| $\mathcal{L}_\pi^{(2)} = -\frac{f_\pi^2}{2}\sum_\mu\mathrm{Sc}\!\left(\frac{\partial\tilde U}{\partial R_\mu}\frac{\partial\tilde U^{\natural}}{\partial R_\mu}\right)$ | Leading chiral Lagrangian |
 | $f_\pi$ | Pion decay constant ($\approx 92.1$ MeV) |
 | $\mathcal{L}_\pi^{\text{mass}} = f_\pi^2B_0\,\mathrm{Sc}(M\tilde U+M^{*}\tilde U^{*})$ | Explicit-breaking mass term |
 | $M = \frac{m_u+m_d}{2}e_t+i\frac{m_u-m_d}{2}\vec e_z$ | Quark mass element, Hermitian, spectrum $m_u,m_d$, $\mathrm{Sc}(M)=\frac{m_u+m_d}{2}$ |

@@ -36,13 +36,13 @@ $$
 The gauge group is the unit real quaternions, $SU(2) = \{\tilde U \in \mathbb{H}_{\mathbb{B}} : \tilde U\bar{\tilde U} = e_t\}$, acting on a matter field by left multiplication. A local transformation $\tilde U(\tilde{Q})$ forces the connection
 
 $$
-\mathcal{A}_{2,\mu} = \tilde U\,\mathcal{A}_\mu\,\tilde U^{-1} + \frac{i}{\kappa}\,(\partial/\partial Q_\mu \tilde U)\,\tilde U^{-1},
+\mathcal{A}_{2,\mu} = \tilde U\,\mathcal{A}_\mu\,\tilde U^{-1} + \frac{i}{\kappa}\,(\partial/\partial R_\mu \tilde U)\,\tilde U^{-1},
 $$
 
 which reduces to the abelian law $\tilde{A}_2 = \tilde{A} - \tilde{\nabla}\Lambda$ when $\tilde U=e^{i\kappa\Lambda}$ is central. The field strength
 
 $$
-F_{\mu\nu} = \partial/\partial Q_\mu \mathcal{A}_\nu - \partial/\partial Q_\nu \mathcal{A}_\mu + i\kappa\,[\mathcal{A}_\mu, \mathcal{A}_\nu],
+F_{\mu\nu} = \partial/\partial R_\mu \mathcal{A}_\nu - \partial/\partial R_\nu \mathcal{A}_\mu + i\kappa\,[\mathcal{A}_\mu, \mathcal{A}_\nu],
 \qquad
 F = d\mathcal{A} + i\kappa\,\mathcal{A}\wedge\mathcal{A},
 \qquad
@@ -126,7 +126,7 @@ Two further results of that article are the ones that bear on QCD.
     the time component multiplying on the right and the three spatial ones on the left, and
 
     $$
-    \sum_\mu\frac{\partial j_{5\mu}}{\partial Q_\mu}=2im\,\mathrm{Sc}\bigl(\tilde{Ξ}^{\mathrm{sp}*}\tilde{Ξ}^{\mathrm{sp}}\,\vec e_y\bigr),
+    \sum_\mu\frac{\partial j_{5\mu}}{\partial R_\mu}=2im\,\mathrm{Sc}\bigl(\tilde{Ξ}^{\mathrm{sp}*}\tilde{Ξ}^{\mathrm{sp}}\,\vec e_y\bigr),
     $$
 
     a plain sum, because the signs are carried by the units inside the bilinears and not by the sum. The insertion is $\vec e_y$ where the mass bilinear carries $i\vec e_x$. The density $\mathrm{Sc}(\tilde{Ξ}^{\mathrm{sp}*}\tilde{Ξ}^{\mathrm{sp}}\vec e_y)$ is imaginary, so the $i$ of the coefficient makes the product real. It vanishes only at $m=0$. A genuinely antilinear Majorana-type pairing lives instead on the algebra's real structure $\tilde{Ξ}^{\mathrm{sp}\flat} = -\tilde{Ξ}^{\mathrm{sp}*}$ and on the separate single-field equation built on it, whose plane waves lie on the spacelike locus.
@@ -197,13 +197,13 @@ The question for this agenda is how much of that is a *QCD* obstacle. The answer
 The **anomaly** is now partly supplied, and the position has to be stated carefully because it has moved. The chiral-fermion article attempted no biquaternion formulation of it; the companion *Anomalies and Anomaly Cancellation in Biquaternionic Form* does. It writes the Adler–Bell–Jackiw divergence in the framework's own objects,
 
 $$
-\langle\tilde\nabla,\tilde J_5\rangle_{\natural}=\sum_\mu\frac{\partial j_{5\mu}}{\partial Q_\mu}
+\langle\tilde\nabla,\tilde J_5\rangle_{\natural}=\sum_\mu\frac{\partial j_{5\mu}}{\partial R_\mu}
 =2im\,\mathrm{Sc}\bigl(\tilde{Ξ}^{\mathrm{sp}*}\tilde{Ξ}^{\mathrm{sp}}\,\vec e_y\bigr)-\frac{e^2}{16\pi^2}\,\epsilon_{\mu\nu\rho\sigma}F_{\mu\nu}F_{\rho\sigma},
 $$
 
 identifies the anomaly density with the second biquaternion invariant $I_2=\vec E\cdot\vec B$, exhibits the 't Hooft vertex as a product of the bilinears the framework already carries, and verifies the Standard Model's cancellation conditions generation by generation. What is imported there is the coefficient, quoted from standard field theory rather than derived, and the triangle coefficient $\mathrm{Tr}_R[T_a\{T_b,T_c\}]$ runs over the representation $R$ of whatever gauge group is supplied — for colour, a group the framework does not own. The $\theta$-angle and strong $CP$ lie outside that article by its own statement. So the QCD-specific gap is narrower than it was and is still real: the anomaly is formulated at the level of a single abelian current, and the **colour-dressed** coefficient, the flavour-singlet $\mathrm{U}(1)_A$ at $N_f$ flavours, and the strong $CP$ question remain unbuilt.
 
-**The framework's mass term interacts with both.** The mass is the off-diagonal pairing of the chiral pair written in §"The chiral-fermion issue"; it is the real-form expression of an ordinary Dirac mass, so the interpretation is settled. The framework therefore carries a conserved fermion number — the central phase passes through the linear mass and the vector $\mathrm{U}(1)$ is exact for the massive field — and what the mass breaks is the **axial** charge, with the divergence $\sum_\mu\partial j_{5\mu}/\partial Q_\mu=2im\,\mathrm{Sc}\bigl(\tilde{Ξ}^{\mathrm{sp}*}\tilde{Ξ}^{\mathrm{sp}}\,\vec e_y\bigr)$ established there, which vanishes only at $m=0$. That is the framework's transcription of exactly the chiral-symmetry breaking that organises the light-hadron spectrum. The companion article *The Chiral Condensate and Dynamical Symmetry Breaking in Biquaternionic Form* takes the next step and identifies the condensate with a dynamically generated coefficient of this same linear pair, but it transcribes the gap equation, and the scale, the interaction and the Goldstone counting are standard input rather than framework results. The genuinely antilinear pairing lives on the algebra's real structure $\flat$ and on the separate single-field equation built on it, whose plane waves lie on the spacelike locus; that is a different equation from the gradient equation, and it is not the framework's mass term.
+**The framework's mass term interacts with both.** The mass is the off-diagonal pairing of the chiral pair written in §"The chiral-fermion issue"; it is the real-form expression of an ordinary Dirac mass, so the interpretation is settled. The framework therefore carries a conserved fermion number — the central phase passes through the linear mass and the vector $\mathrm{U}(1)$ is exact for the massive field — and what the mass breaks is the **axial** charge, with the divergence $\sum_\mu\partial j_{5\mu}/\partial R_\mu=2im\,\mathrm{Sc}\bigl(\tilde{Ξ}^{\mathrm{sp}*}\tilde{Ξ}^{\mathrm{sp}}\,\vec e_y\bigr)$ established there, which vanishes only at $m=0$. That is the framework's transcription of exactly the chiral-symmetry breaking that organises the light-hadron spectrum. The companion article *The Chiral Condensate and Dynamical Symmetry Breaking in Biquaternionic Form* takes the next step and identifies the condensate with a dynamically generated coefficient of this same linear pair, but it transcribes the gap equation, and the scale, the interaction and the Goldstone counting are standard input rather than framework results. The genuinely antilinear pairing lives on the algebra's real structure $\flat$ and on the separate single-field equation built on it, whose plane waves lie on the spacelike locus; that is a different equation from the gradient equation, and it is not the framework's mass term.
 
 **What would settle it.** Three computations, in order of dependence:
 

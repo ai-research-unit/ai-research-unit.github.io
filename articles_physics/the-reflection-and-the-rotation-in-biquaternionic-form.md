@@ -12,11 +12,11 @@ The article runs as follows. §*One Cell, Two Readings* separates the cell read 
 
 The conventions are the series'. The algebra, the units, the sectors and the metric are those of *Algebra and Element Conventions* and *Frame and Metric Conventions*; the cells and their multiplication are those of *Matrix Representations Conventions*, and the comparison of the biquaternion algebra with the even half is the dictionary of the same article. None of them is restated here. A cell enters by its two multipliers, and the short names used later — the frame cell, the chirality cell, $\omega$, the three $\eta$ factors — are bound to those multipliers where they are introduced; no cell is named without its product being written at least once. The derivatives are the series' gradient, written once here and never as a cell,
 $$
-\tilde\nabla=\sum_{\mu\in\{t,x,y,z\}}e_\mu\frac{\partial}{\partial Q_\mu},\qquad
-\tilde\nabla^{\natural}=\sum_{\mu\in\{t,x,y,z\}}\varepsilon_\mu e_\mu\frac{\partial}{\partial Q_\mu},\qquad
-\Box=\tilde\nabla\tilde\nabla^{\natural}=\frac{\partial^2}{\partial Q_t^2}+\Delta_Q,
+\tilde\nabla=\sum_{\mu\in\{t,x,y,z\}}e_\mu\frac{\partial}{\partial R_\mu},\qquad
+\tilde\nabla^{\natural}=\sum_{\mu\in\{t,x,y,z\}}\varepsilon_\mu e_\mu\frac{\partial}{\partial R_\mu},\qquad
+\Box=\tilde\nabla\tilde\nabla^{\natural}=\frac{\partial^2}{\partial R_t^2}+\Delta_Q,
 $$
-with $\varepsilon=(1,-1,-1,-1)$, and on the material sector $\partial/\partial Q_t=-(i/c)\,\partial/\partial t'$, so that there $\Box=\Delta_Q-c^{-2}\partial^2/\partial t'^2$. No cell of this article carries a derivative.
+with $\varepsilon=(1,-1,-1,-1)$, and on the material sector $\partial/\partial R_t=-(i/c)\,\partial/\partial r'_t$, so that there $\Box=\Delta_Q-c^{-2}\partial^2/\partial r'_t^2$. No cell of this article carries a derivative.
 
 ## One Cell, Two Readings
 
@@ -146,12 +146,12 @@ Both are reflections, with determinant $-1$; the identity component is the even 
 $$
 \eta_C=-L_{\vec e_y}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}},\qquad \eta_P=iR_{\vec e_x}^{\mathrm{axf}},\qquad \eta_T=-L_{\vec e_y}^{\mathrm{axf}} ,
 $$
-acting as $C[\tilde{Ξ}^{\mathrm{sp}}]=\eta_C\tilde{Ξ}^{\mathrm{sp}*}$, $P[\tilde{Ξ}^{\mathrm{sp}}]=\eta_P\tilde{Ξ}^{\mathrm{sp}}(-\vec x)$ and $T[\tilde{Ξ}^{\mathrm{sp}}]=\eta_T\tilde{Ξ}^{\mathrm{sp}*}(-t')$, with $\tilde{Ξ}^{\mathrm{sp}*}$ the Hermitian conjugate. The internal factor does not decide the determinant by itself:
+acting as $C[\tilde{Ξ}^{\mathrm{sp}}]=\eta_C\tilde{Ξ}^{\mathrm{sp}*}$, $P[\tilde{Ξ}^{\mathrm{sp}}]=\eta_P\tilde{Ξ}^{\mathrm{sp}}(-\vec r)$ and $T[\tilde{Ξ}^{\mathrm{sp}}]=\eta_T\tilde{Ξ}^{\mathrm{sp}*}(-r'_t)$, with $\tilde{Ξ}^{\mathrm{sp}*}$ the Hermitian conjugate. The internal factor does not decide the determinant by itself:
 
 | operation | internal factor | its generator factors | coordinates reversed | determinant | induced map |
 |---|---|---|---|---|---|
-| $P$ | $\eta_P=iR_{\vec e_x}^{\mathrm{axf}}$, the frame cell | odd | $\vec x$ | $-1$ | reflection |
-| $T$ | $\eta_T=-L_{\vec e_y}^{\mathrm{axf}}$ | even | $t'$ | $-1$ | reflection |
+| $P$ | $\eta_P=iR_{\vec e_x}^{\mathrm{axf}}$, the frame cell | odd | $\vec r$ | $-1$ | reflection |
+| $T$ | $\eta_T=-L_{\vec e_y}^{\mathrm{axf}}$ | even | $r'_t$ | $-1$ | reflection |
 | $C$ | $\eta_C=-L_{\vec e_y}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}}$ | odd | none | $+1$ | proper |
 
 $P$ and $T$ each reverse one coordinate and are reflections; $C$ reverses none and is proper. What the parity of the factor decides is not the determinant but the letter, since the letter is read from the chirality cell: the odd factors $\eta_C$ and $\eta_P$ exchange the two parts, while the even factor $\eta_T$ keeps them. The composite $CPT$ carries an even factor and preserves the letter, which is the statement of the CPT article.
@@ -235,7 +235,7 @@ and the massive equation is $(\mathbb{D}-m)\tilde{Ξ}^{\mathrm{sp}}=0$. The pair
 $$
 \mathbb{D}^2\tilde{Ξ}^{\mathrm{sp}}=\bigl(\tilde\nabla\tilde\nabla^{\natural}\tilde{Ξ}^{\mathrm{sp}}_L,\ \tilde\nabla^{\natural}\tilde\nabla\tilde{Ξ}^{\mathrm{sp}}_R\bigr)=\Box\,\tilde{Ξ}^{\mathrm{sp}} ,
 $$
-with $\Box=\Delta_Q-c^{-2}\partial^2/\partial t'^2$ on the material sector, so that $(\mathbb{D}-m)(\mathbb{D}+m)=\Box-m^2$ is the Klein–Gordon operator exactly, with no overall sign left to fix.
+with $\Box=\Delta_Q-c^{-2}\partial^2/\partial r'_t^2$ on the material sector, so that $(\mathbb{D}-m)(\mathbb{D}+m)=\Box-m^2$ is the Klein–Gordon operator exactly, with no overall sign left to fix.
 
 The consequence is immediate. Set $\tilde{Ξ}^{\mathrm{sp}}_R=0$ in a massive field: the first member reads $0=m\tilde{Ξ}^{\mathrm{sp}}_L$, so $\tilde{Ξ}^{\mathrm{sp}}_L=0$ as well, and a massive field carries both parts. A field of one letter alone is not a solution. At $m=0$ the pair decouples into $\tilde\nabla\tilde{Ξ}^{\mathrm{sp}}_R=0$ and $\tilde\nabla^{\natural}\tilde{Ξ}^{\mathrm{sp}}_L=0$, one member for each part, so a field of one part alone is allowed. That decoupling is the operator-level content of the statement that the letter and the helicity agree only in the massless limit.
 
@@ -311,7 +311,7 @@ The claims of this article, in order.
 | $-iR_{\vec e_z}^{\mathrm{axf}} = i\omega = -iL_{e_t}^{\mathrm{axf}}R_{\vec e_z}^{\mathrm{axf}}$ | Chirality cell, $(-iR_{\vec e_z}^{\mathrm{axf}})^{2} = I_4$ |
 | the $L$ part, the $R$ part | The two parts of an element: the value $-1$ and the value $+1$ of the chirality cell |
 | $\tilde{Ξ}^{\mathrm{sp}}_{L,R}$ | The two parts of a field |
-| $\tilde\nabla$, $\tilde\nabla^{\natural}$ | The biquaternion gradient $\sum_\mu e_\mu\partial/\partial Q_\mu$ and its quaternion conjugate $\sum_\mu\varepsilon_\mu e_\mu\partial/\partial Q_\mu$; $\Box=\tilde\nabla\tilde\nabla^{\natural}=\partial^2/\partial Q_t^2+\Delta_Q$; the chiral pair $\tilde\nabla\tilde{Ξ}^{\mathrm{sp}}_R=m\tilde{Ξ}^{\mathrm{sp}}_L$, $\tilde\nabla^{\natural}\tilde{Ξ}^{\mathrm{sp}}_L=m\tilde{Ξ}^{\mathrm{sp}}_R$, whose subscripts name the two members |
+| $\tilde\nabla$, $\tilde\nabla^{\natural}$ | The biquaternion gradient $\sum_\mu e_\mu\partial/\partial R_\mu$ and its quaternion conjugate $\sum_\mu\varepsilon_\mu e_\mu\partial/\partial R_\mu$; $\Box=\tilde\nabla\tilde\nabla^{\natural}=\partial^2/\partial R_t^2+\Delta_Q$; the chiral pair $\tilde\nabla\tilde{Ξ}^{\mathrm{sp}}_R=m\tilde{Ξ}^{\mathrm{sp}}_L$, $\tilde\nabla^{\natural}\tilde{Ξ}^{\mathrm{sp}}_L=m\tilde{Ξ}^{\mathrm{sp}}_R$, whose subscripts name the two members |
 | $\mathbb{D}$ | The pair operator on $\mathbb{B}\oplus\mathbb{B}$, $\mathbb{D}(\tilde{Ξ}^{\mathrm{sp}}_L,\tilde{Ξ}^{\mathrm{sp}}_R)=(\tilde\nabla\tilde{Ξ}^{\mathrm{sp}}_R,\tilde\nabla^{\natural}\tilde{Ξ}^{\mathrm{sp}}_L)$; $\mathbb{D}^2=\Box I$, off-diagonal in the two slots |
 | $iR_{\vec e_x}^{\mathrm{axf}}$ | The frame cell; the reflection whose normal is $e_t$ |
 | $\rho(u) : x\mapsto -\epsilon(u)\,u x u$ | Action of an odd unit cell on the vectors; $u^2=\epsilon(u)I_4$ |

@@ -16,7 +16,7 @@ The article reads the consequence twice. Read on the **material** sector, where 
 
 The two halves of the article are of different standing, and the difference is kept throughout. The algebraic facts — that $e_t$ is the identity, that the temporal direction is the centre, that the material coefficient is imaginary and the informational one real — are established and are verified in the companion articles. The material reading is the interpretation already recorded in *The Material Sector: Four-Vectors, Interval and Lorentz Action*. The **storage reading** of $c r_t$ is an interpretation offered here, subject to the standing hypothesis that the informational sector is physically realised, and it is stated as a reading and not as a result.
 
-The conventions are those of the series. The algebra is $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, with the quaternion basis $e_t = 1, \vec e_x, \vec e_y, \vec e_z$ and $\vec e_k^2 = -e_t$; the conjugations are the complex conjugation $\bar{\cdot}$, the quaternion conjugation ${}^{\natural}$, the Hermitian conjugation ${}^{*} = \bar{\cdot}\circ{}^{\natural}$ and the anti-Hermitian conjugation ${}^{\flat} = -{}^{*}$. The biquaternionic gradient is $\tilde{\nabla} = \sum_{\mu\in\{t,x,y,z\}} e_\mu\,\partial/\partial Q_\mu$. Throughout, the symbol $c$ denotes the **speed of light in the medium**, $c = 1/\sqrt{\epsilon\mu}$.
+The conventions are those of the series. The algebra is $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, with the quaternion basis $e_t = 1, \vec e_x, \vec e_y, \vec e_z$ and $\vec e_k^2 = -e_t$; the conjugations are the complex conjugation $\bar{\cdot}$, the quaternion conjugation ${}^{\natural}$, the Hermitian conjugation ${}^{*} = \bar{\cdot}\circ{}^{\natural}$ and the anti-Hermitian conjugation ${}^{\flat} = -{}^{*}$. The biquaternionic gradient is $\tilde{\nabla} = \sum_{\mu\in\{t,x,y,z\}} e_\mu\,\partial/\partial R_\mu$. Throughout, the symbol $c$ denotes the **speed of light in the medium**, $c = 1/\sqrt{\epsilon\mu}$.
 
 ## The Unit That Is the Identity
 
@@ -94,7 +94,7 @@ $$
 \tilde Q_- = i c r'_t\,e_t + r_x\,\vec e_x + r_y\,\vec e_y + r_z\,\vec e_z \in \mathbb{M}_- ,
 $$
 
-with $t', x, y, z$ real. This is the $i c r'_t$ dictionary of *Algebra and Element Conventions* and of *Why Complexify Spacetime?*: the temporal coefficient is $i c r'_t$, purely imaginary, and the three spatial coefficients are real.
+with $r'_t, r_x, r_y, r_z$ real. This is the $i c r'_t$ dictionary of *Algebra and Element Conventions* and of *Why Complexify Spacetime?*: the temporal coefficient is $i c r'_t$, purely imaginary, and the three spatial coefficients are real.
 
 Two features of the placement carry the physical reading.
 
@@ -128,7 +128,7 @@ $$
 Q_t = c r_t + i c r'_t ,
 $$
 
-whose real part is the informational time and whose imaginary part is the material time, in the dictionary of *Algebra and Element Conventions*, where the complex coefficient $Q_t$ has real part $c r_t = ct$ and imaginary part $c r'_t = ct'$. The reading of the plane as a clock — the exchange by the central imaginary as a quarter turn, the two times as the two projections of one hand — is *Each Sector Is the Other's Clock: the Sector Exchange as Relational Time*.
+whose real part is the informational time and whose imaginary part is the material time, in the dictionary of *Algebra and Element Conventions*, where the complex coefficient $Q_t$ has real part $c r_t = ct$ and imaginary part $c r'_t = cr'_t$. The reading of the plane as a clock — the exchange by the central imaginary as a quarter turn, the two times as the two projections of one hand — is *Each Sector Is the Other's Clock: the Sector Exchange as Relational Time*.
 
 The informational sector is the fixed space of the Hermitian conjugation, $\mathbb{M}_+ = \{\tilde Q : \tilde Q^{*} = \tilde Q\}$, and its general element is
 
@@ -209,7 +209,7 @@ All of the mathematics the article uses is verified: $e_t$ is the identity and c
 | Symbol | Meaning |
 |---|---|
 | $e_t = 1, \vec e_x, \vec e_y, \vec e_z$ | The quaternion base; the temporal unit is the identity, $\vec e_k^2 = -e_t$ |
-| $\mathbb{C}_{\mathbb{B}} = \{Q_te_t\} = \mathrm{span}_{\mathbb{R}}\{e_t, ie_t\}$ | Centre of the algebra, the complex time sector; parameters $c r_t = ct$ and $c r'_t = ct'$ |
+| $\mathbb{C}_{\mathbb{B}} = \{Q_te_t\} = \mathrm{span}_{\mathbb{R}}\{e_t, ie_t\}$ | Centre of the algebra, the complex time sector; parameters $c r_t = ct$ and $c r'_t = cr'_t$ |
 | $Q_t = c r_t + i c r'_t$ | The central coordinate, the coefficient of $Q_te_t$: real part the informational time $c r_t$, imaginary part the material time $i c r'_t$ |
 | $\tilde Q_- = i c r'_t\,e_t + r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z$ | Material element, $\mathbb{M}_-$: imaginary scalar coefficient, real vector coefficients |
 | $\tilde Q_+ = c r_t\,e_t + i(r'_{x}\,\vec e_x+r'_{y}\,\vec e_y+r'_{z}\,\vec e_z)$ | Informational element, $\mathbb{M}_+$: real scalar coefficient, imaginary vector coefficients |
@@ -220,7 +220,7 @@ All of the mathematics the article uses is verified: $e_t$ is the identity and c
 | $\mathrm{Sc}(\tilde Q) = Q_t$ | Scalar part, the temporal coefficient of the element |
 | $\tilde U \in \mathbb{B}^\times_1$, $\langle\tilde U\rangle_{\natural} = e_t$ | Rotor of the Lorentz action $\tilde Q \mapsto \tilde U\tilde Q\tilde U^{*}$, which preserves $\langle\tilde Q\rangle_{\natural}$ |
 | $B(\theta^{\mathrm{rpd}},\vec u) = \cosh\frac{\theta^{\mathrm{rpd}}}{2} + i\sinh\frac{\theta^{\mathrm{rpd}}}{2}\,\vec u$ | Boost rotor of rapidity $\theta^{\mathrm{rpd}}$ along the unit real vector $\vec u$; the rotation fixes $e_t$ and the boost carries it into $\mathbb{M}_+$ |
-| $\partial/\partial Q_t$ | The temporal derivative in the biquaternionic gradient |
+| $\partial/\partial R_t$ | The temporal derivative in the biquaternionic gradient |
 
 ## Further Reading
 

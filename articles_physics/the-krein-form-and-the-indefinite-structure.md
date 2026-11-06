@@ -85,8 +85,8 @@ The group is not the Lorentz group. It is larger: it maps the centre to itself a
 The boosts are the simplest non-compact elements. On the Krein-orthogonal sum of a positive and a negative line,
 
 $$
-T_t e_t=\cosh t\,e_t+\sinh t\,\vec e_x, \qquad
-T_t\vec e_x=\sinh t\,e_t+\cosh t\,\vec e_x,
+T_t e_t=\cosh r_t\,e_t+\sinh r_t\,\vec e_x, \qquad
+T_t\vec e_x=\sinh r_t\,e_t+\cosh r_t\,\vec e_x,
 $$
 
 with $T_t=\mathrm{id}$ on the two remaining directions. Each $T_t$ is a Krein isometry, the family is a one-parameter subgroup, and

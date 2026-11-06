@@ -54,7 +54,7 @@ $$
 \tilde{A} = iA_0e_t+\sum_{k=1}^{3}A_k\vec e_k ,
 $$
 
-with $A_0$ and $A_k$ the real component fields, the coefficients being $Q_t=i c r'_t$ and $Q_k=x_k$. The gradient part of the gauge transformation is $\tilde{\nabla}\Gamma=e_t\partial/\partial Q_t\,\Gamma+\sum_k\vec e_k\,\partial/\partial Q_k\,\Gamma$, so the orbit direction is spanned by the four derivatives of the single gauge function $\Gamma$; this is why the orbit is one-dimensional at each spacetime point and why a single gauge-fixing condition suffices.
+with $A_0$ and $A_k$ the real component fields, the coefficients being $Q_t=i c r'_t$ and $Q_k=x_k$. The gradient part of the gauge transformation is $\tilde{\nabla}\Gamma=e_t\partial/\partial R_t\,\Gamma+\sum_k\vec e_k\,\partial/\partial R_k\,\Gamma$, so the orbit direction is spanned by the four derivatives of the single gauge function $\Gamma$; this is why the orbit is one-dimensional at each spacetime point and why a single gauge-fixing condition suffices.
 
 ## Gauge Fixing: The Faddeev–Popov Construction
 
@@ -122,21 +122,21 @@ the term of the BRST companion, and its elimination of $B$ returns $-\tfrac{1}{2
 
 ### The Non-Abelian Determinant
 
-For a non-abelian theory the determinant is not constant. With the gauge-fixing condition $G_a[\tilde{A}]=\sum_\mu\partial/\partial Q_\mu A_{\mu a}-\omega_a$, the variation under a gauge transformation is
+For a non-abelian theory the determinant is not constant. With the gauge-fixing condition $G_a[\tilde{A}]=\sum_\mu\partial/\partial R_\mu A_{\mu a}-\omega_a$, the variation under a gauge transformation is
 
 $$
-\frac{\delta G_a[\tilde{A}^\Gamma]}{\delta\Gamma_b} = \sum_\mu\partial/\partial Q_\mu(D_\mu)_{ab},
+\frac{\delta G_a[\tilde{A}^\Gamma]}{\delta\Gamma_b} = \sum_\mu\partial/\partial R_\mu(D_\mu)_{ab},
 \qquad
-(D_\mu)_{ab}=\partial/\partial Q_\mu\delta_{ab}+g\sum_c f_{abc}A_{\mu c} ,
+(D_\mu)_{ab}=\partial/\partial R_\mu\delta_{ab}+g\sum_c f_{abc}A_{\mu c} ,
 $$
 
 so the determinant is a functional of the potential through the structure constants,
 
 $$
-\Delta[\tilde{A}] = \det\left(\sum_\mu\partial/\partial Q_\mu D_\mu\right),
+\Delta[\tilde{A}] = \det\left(\sum_\mu\partial/\partial R_\mu D_\mu\right),
 $$
 
-and it must be represented by ghost fields: the Gaussian representation of the determinant as an integral over anticommuting $c,\bar{c}$ gives the ghost Lagrangian $-\sum_{\mu,a}\bar{c}_a\partial/\partial Q_\mu(D_\mu c)_a$ of the BRST construction. The gauge algebra here is realized in the biquaternion framework by the commutator on a subspace of $\mathbb{M}_+$, so the structure constants are those of that realization, and the field-dependence of the determinant is the statement that the gauge algebra is non-abelian. The detailed non-abelian construction — the loop expansion of the determinant, the ghost loops, the renormalization — is the subject of the companion subcategory on gauge fields, and is not repeated here.
+and it must be represented by ghost fields: the Gaussian representation of the determinant as an integral over anticommuting $c,\bar{c}$ gives the ghost Lagrangian $-\sum_{\mu,a}\bar{c}_a\partial/\partial R_\mu(D_\mu c)_a$ of the BRST construction. The gauge algebra here is realized in the biquaternion framework by the commutator on a subspace of $\mathbb{M}_+$, so the structure constants are those of that realization, and the field-dependence of the determinant is the statement that the gauge algebra is non-abelian. The detailed non-abelian construction — the loop expansion of the determinant, the ghost loops, the renormalization — is the subject of the companion subcategory on gauge fields, and is not repeated here.
 
 ## The Gaussian Integral and the Propagator
 
@@ -286,7 +286,7 @@ The gauge-fixed quadratic action is Gaussian, and its inverse is the propagator 
 | $\Delta[\tilde{A}]$ | Faddeev–Popov determinant; gauge invariant |
 | $\Delta=\det(-\Box)$ (abelian) | Field-independent determinant; no ghosts |
 | $\Delta=\det(\partial\cdot D)$ (non-abelian) | Field-dependent determinant; ghosts required |
-| $(D_\mu)_{ab}=\partial/\partial Q_\mu\delta_{ab}+g\sum_c f_{abc}A_{\mu c}$ | Covariant derivative in the adjoint representation |
+| $(D_\mu)_{ab}=\partial/\partial R_\mu\delta_{ab}+g\sum_c f_{abc}A_{\mu c}$ | Covariant derivative in the adjoint representation |
 | $B$ | Nakanishi–Lautrup field representing the delta functional |
 | $\zeta$ | Gauge parameter; multiplies the longitudinal projector |
 | $\delta_{\mu\nu}=(1,1,1,1)$, $p^2=-\sum_\mu p_\mu p_\mu$ | Unit metric on the units $e_t,\vec e_x,\vec e_y,\vec e_z$; invariant momentum scalar |

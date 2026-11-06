@@ -2,7 +2,7 @@
 
 ## Introduction
 
-A quantum system whose Hamiltonian is varied slowly around a closed loop in a parameter space need not return to its original state: beside the **dynamical phase** $-\frac{1}{\hbar}\int E_n\,dt'$, which grows with the duration of the journey, an eigenstate can acquire a **geometric phase** that depends only on the loop. This is the **Berry phase**. Its two defining features are that it is a functional of the path rather than of the speed, and that for a closed path it is defined only modulo $2\pi$.
+A quantum system whose Hamiltonian is varied slowly around a closed loop in a parameter space need not return to its original state: beside the **dynamical phase** $-\frac{1}{\hbar}\int E_n\,dr'_t$, which grows with the duration of the journey, an eigenstate can acquire a **geometric phase** that depends only on the loop. This is the **Berry phase**. Its two defining features are that it is a functional of the path rather than of the speed, and that for a closed path it is defined only modulo $2\pi$.
 
 The phase is computed by two routes. The first integrates the **Berry connection** $\mathcal{A}$ — a $\mathrm{U}(1)$ connection on the parameter space — around the loop; the second integrates the **Berry curvature** $\mathcal{F} = d\mathcal{A}$ over a surface that the loop bounds. Both routes are used below and checked against one another on an explicit example, because their agreement is the content of the statement that the phase is geometric.
 
@@ -29,18 +29,18 @@ $$
 is bounded below by a positive constant along the traversed path, and if the path is traversed slowly enough compared with that gap, then a system started in $|n(R(0))\rangle$ remains in the instantaneous eigenstate up to a phase:
 
 $$
-|\tilde{Ξ}^{\mathrm{sp}}(t')\rangle = \exp(i\gamma_n(t'))\,\exp(-\frac{i}{\hbar}\int_0^{r'_{t}} E_n(R(t'_2))dt'_2)\,|n(R(t'))\rangle .
+|\tilde{Ξ}^{\mathrm{sp}}(r'_t)\rangle = \exp(i\gamma_n(r'_t))\,\exp(-\frac{i}{\hbar}\int_0^{r'_{t}} E_n(R(r'_{t,2}))dr'_{t,2})\,|n(R(r'_t))\rangle .
 $$
 
-Substituting into the Schrödinger equation $i\hbar\,\partial/\partial t'|\tilde{Ξ}^{\mathrm{sp}}\rangle = \tilde R_\psi|\tilde{Ξ}^{\mathrm{sp}}\rangle$, the dynamical factor cancels, and what remains is
+Substituting into the Schrödinger equation $i\hbar\,\partial/\partial r'_t|\tilde{Ξ}^{\mathrm{sp}}\rangle = \tilde R_\psi|\tilde{Ξ}^{\mathrm{sp}}\rangle$, the dynamical factor cancels, and what remains is
 
 $$
-d\gamma_{n}/dt' = i\,\langle n(R(t'))|\frac{d}{dt'}|n(R(t'))\rangle ,
+d\gamma_{n}/dr'_t = i\,\langle n(R(r'_t))|\frac{d}{dr'_t}|n(R(r'_t))\rangle ,
 \qquad\text{so}\qquad
 \gamma_n = i\int_{\mathcal{C}}\langle n|\nabla_R n\rangle\cdot dR .
 $$
 
-The right-hand side is a line integral of a one-form on parameter space; it does not refer to the rate at which the path is traversed. Replacing $R(t')$ by a reparametrization of the same curve leaves $\gamma_n$ unchanged, while the dynamical phase $-\frac{1}{\hbar}\int E_n\,dt'$ scales with the duration. This is the precise sense in which the second phase is **geometric** and the first is not; the speed-independence is checked explicitly on the example below.
+The right-hand side is a line integral of a one-form on parameter space; it does not refer to the rate at which the path is traversed. Replacing $R(r'_t)$ by a reparametrization of the same curve leaves $\gamma_n$ unchanged, while the dynamical phase $-\frac{1}{\hbar}\int E_n\,dr'_t$ scales with the duration. This is the precise sense in which the second phase is **geometric** and the first is not; the speed-independence is checked explicitly on the example below.
 
 The eigenstate is defined only up to a phase, so the integrand is not a gauge-invariant object by itself. Writing $|n\rangle \mapsto \exp(i\alpha(R))|n\rangle$ for a real function $\alpha$ whose phase factor $\exp(i\alpha)$ is single-valued, the phase acquired around a **closed** loop shifts by
 
@@ -220,11 +220,11 @@ It is worth recording that the curvature is a **local** object while the connect
 Take a spin-1/2 in a magnetic field whose direction rotates at a fixed polar angle, so that in the biquaternion framework
 
 $$
-\tilde R_\psi(t') = \tfrac12\,i\,\vec R(t') , \qquad
-\vec R(t') = R\bigl(\sin\theta_0\cos\omega t',\ \sin\theta_0\sin\omega t',\ \cos\theta_0\bigr) ,
+\tilde R_\psi(r'_t) = \tfrac12\,i\,\vec R(r'_t) , \qquad
+\vec R(r'_t) = R\bigl(\sin\theta_0\cos\omega r'_t,\ \sin\theta_0\sin\omega r'_t,\ \cos\theta_0\bigr) ,
 $$
 
-with $R > 0$ and $\theta_0 \in (0,\pi)$ fixed. The path is the circle $\theta = \theta_0$ on the Bloch sphere, traversed once per period $T = 2\pi/\omega$, and the gap is $\Delta = R$ everywhere on the path, so the adiabatic theorem applies provided the rotation is slow compared with the gap, $\hbar\omega \ll R$. The parameter $\theta^{\mathrm{azm}} = \omega t'$ runs from $0$ to $2\pi$.
+with $R > 0$ and $\theta_0 \in (0,\pi)$ fixed. The path is the circle $\theta = \theta_0$ on the Bloch sphere, traversed once per period $T = 2\pi/\omega$, and the gap is $\Delta = R$ everywhere on the path, so the adiabatic theorem applies provided the rotation is slow compared with the gap, $\hbar\omega \ll R$. The parameter $\theta^{\mathrm{azm}} = \omega r'_t$ runs from $0$ to $2\pi$.
 
 The spin-up spinor is $\tilde{Ξ}^{\mathrm{sp}}_+$ of the previous section with $\theta = \theta_0$. Its connection is computed by direct application of the definition, and the result is
 
@@ -279,7 +279,7 @@ The two routes agree, and they agree for **every** $\theta_0$, not merely at the
 
 The equator, $\theta_0 = \pi/2$, is the case $\gamma_+ = -\pi$; the half-angle form $-\theta^{\mathrm{sol}}/2$ is the standard spin-1/2 result, with the sign convention that the spin-up branch is the one followed.
 
-**Speed independence.** Replacing the uniform rotation $\theta^{\mathrm{azm}} = \omega t'$ by a non-uniform $\theta^{\mathrm{azm}}(t') = 2\pi(t'/T)^3$ with the same endpoints changes nothing in either route: the line integral is $\int_0^{2\pi}\mathcal{A}_{\theta^{\mathrm{azm}}}\,d\theta^{\mathrm{azm}}$ once the substitution is made, and the numerical value is again $-\pi$ at the equator and $-\theta^{\mathrm{sol}}/2$ generally. The dynamical phase over the same period is $-\frac{1}{\hbar}\int_0^T \frac{R}{2}\,dt' = -\frac{RT}{2\hbar}$, which scales with $T$; the geometric phase does not. The contrast is the definition of the word "geometric".
+**Speed independence.** Replacing the uniform rotation $\theta^{\mathrm{azm}} = \omega r'_t$ by a non-uniform $\theta^{\mathrm{azm}}(r'_t) = 2\pi(r'_t/T)^3$ with the same endpoints changes nothing in either route: the line integral is $\int_0^{2\pi}\mathcal{A}_{\theta^{\mathrm{azm}}}\,d\theta^{\mathrm{azm}}$ once the substitution is made, and the numerical value is again $-\pi$ at the equator and $-\theta^{\mathrm{sol}}/2$ generally. The dynamical phase over the same period is $-\frac{1}{\hbar}\int_0^T \frac{R}{2}\,dr'_t = -\frac{RT}{2\hbar}$, which scales with $T$; the geometric phase does not. The contrast is the definition of the word "geometric".
 
 **The $2\pi$ ambiguity, exhibited.** The spin-down branch makes the patch structure visible. In the gauge adapted to the north pole the spin-down connection is
 

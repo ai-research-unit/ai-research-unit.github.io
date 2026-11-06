@@ -9,7 +9,7 @@ The article reads the analytic structure physically. It states the regularity co
 The central statement is that **regularity is an on-shell constraint**. The operator
 
 $$
-D=\sum_\mu e_\mu\frac{\partial}{\partial Q_\mu}
+D=\sum_\mu e_\mu\frac{\partial}{\partial R_\mu}
 $$
 
 satisfies $DD^{\natural}=D^{\natural}D=\Box$, so a regular field, $DF=0$, is automatically harmonic, $\Box F=0$. The first-order equation is the field equation; the second-order equation is its consequence. The physical reading is the Dirac-type constraint: not every function is a field, and the fields are the kernel of the constraint.
@@ -34,19 +34,19 @@ satisfies $DD^{\natural}=D^{\natural}D=\Box$, so a regular field, $DF=0$, is aut
 On a four-dimensional real subspace $V\subset\mathbb{B}$ with complex coordinates $Q_t,\dots,Q_z$, the Cauchy–Riemann operator and its conjugate are
 
 $$
-D=\sum_{\mu\in\{t,x,y,z\}}e_\mu\frac{\partial}{\partial Q_\mu},
+D=\sum_{\mu\in\{t,x,y,z\}}e_\mu\frac{\partial}{\partial R_\mu},
 \qquad
-D^{\natural}=e_t\frac{\partial}{\partial Q_t}-\sum_{k=1}^{3}\vec e_k\frac{\partial}{\partial Q_k}.
+D^{\natural}=e_t\frac{\partial}{\partial R_t}-\sum_{k=1}^{3}\vec e_k\frac{\partial}{\partial R_k}.
 $$
 
 The units satisfy the Clifford relation $e_\mu e_\nu^{\natural}+e_\nu e_\mu^{\natural}=2\delta_{\mu\nu}e_t$, so the cross terms cancel:
 
 $$
 DD^{\natural}=D^{\natural}D=\Box
-=\left(\frac{\partial^2}{\partial Q_t^2}+\frac{\partial^2}{\partial Q_x^2}+\frac{\partial^2}{\partial Q_y^2}+\frac{\partial^2}{\partial Q_z^2}\right)e_t.
+=\left(\frac{\partial^2}{\partial R_t^2}+\frac{\partial^2}{\partial R_x^2}+\frac{\partial^2}{\partial R_y^2}+\frac{\partial^2}{\partial R_z^2}\right)e_t.
 $$
 
-The d'Alembertian is scalar and acts component-wise. On the Euclidean real form it is the Laplacian of signature $(4,0)$; on the material slice it is $-c^{-2}\partial^2/\partial t'^2+\Delta$ of signature $(3,1)$; on the informational slice it is $\partial^2/\partial t^2-\Delta$ of signature $(1,3)$.
+The d'Alembertian is scalar and acts component-wise. On the Euclidean real form it is the Laplacian of signature $(4,0)$; on the material slice it is $-c^{-2}\partial^2/\partial r'_t^2+\Delta$ of signature $(3,1)$; on the informational slice it is $\partial^2/\partial r_t^2-\Delta$ of signature $(1,3)$.
 
 ### The Constraint
 
@@ -129,7 +129,7 @@ The shifted operator is
 $$
 D_\alpha=D_{\mathrm s}+M_\alpha,
 \qquad
-D_{\mathrm s}=i\sum_{k=1}^{3}\vec e_k\frac{\partial}{\partial Q_k},
+D_{\mathrm s}=i\sum_{k=1}^{3}\vec e_k\frac{\partial}{\partial R_k},
 \qquad
 D_{\mathrm s}^{2}=\Delta,
 \qquad
@@ -198,11 +198,11 @@ The shifted operator's parameter is not necessarily a physical mass. It is an el
 
 | symbol | meaning |
 | --- | --- |
-| $D=\sum_\mu e_\mu\partial/\partial Q_\mu$ | the Cauchy–Riemann operator |
+| $D=\sum_\mu e_\mu\partial/\partial R_\mu$ | the Cauchy–Riemann operator |
 | $D^{\natural}$ | its quaternion conjugate |
 | $\Box=DD^{\natural}$ | the d'Alembertian |
 | $G=Q^{\natural}/\lVert Q\rVert_E^4$ | the fundamental solution |
-| $D_{\mathrm s}=i\sum_{k=1}^{3}\vec e_k\partial/\partial Q_k$ | the spatial Dirac operator, $D_{\mathrm s}^{2}=\Delta$ |
+| $D_{\mathrm s}=i\sum_{k=1}^{3}\vec e_k\partial/\partial R_k$ | the spatial Dirac operator, $D_{\mathrm s}^{2}=\Delta$ |
 | $D_\alpha=D_{\mathrm s}+M_\alpha$ | the shifted operator |
 | $\alpha$ | the shift, a mass or chemical potential |
 | $\Pi_{\pm\alpha}$ | the Helmholtz projectors |

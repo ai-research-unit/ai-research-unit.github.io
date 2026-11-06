@@ -12,7 +12,7 @@ The claim is not that the tension is resolved. The claim is that the framework o
 
 Seven structural difficulties are usually distinguished. They are stated here in their own terms, with the framework out of view, each followed by what an answer would have to deliver.
 
-**1. Time is a parameter in quantum mechanics and a coordinate in relativity.** In the Schrödinger equation the time $t'$ is an external parameter: the state evolves as a function of it, and it has no spectral decomposition. In relativity the time is one coordinate among four, mixed with the space coordinates by the Lorentz transformation and read from the interval. *An answer must deliver a structure in which the time is not an external parameter.*
+**1. Time is a parameter in quantum mechanics and a coordinate in relativity.** In the Schrödinger equation the time $r'_t$ is an external parameter: the state evolves as a function of it, and it has no spectral decomposition. In relativity the time is one coordinate among four, mixed with the space coordinates by the Lorentz transformation and read from the interval. *An answer must deliver a structure in which the time is not an external parameter.*
 
 **2. The Born rule is an axiom.** The probability interpretation of the wave function is postulated, not derived. The rule $p=|\tilde{Ξ}^{\mathrm{sp}}|^2$ sits inside the formalism as an independent ingredient; nothing in the structure of a Hilbert space singles it out. *An answer must deliver the probability pairing from the structure rather than beside it.*
 

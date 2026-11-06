@@ -66,10 +66,10 @@ The probability band is the sesquilinear sibling of the first and the definite s
 For a complex number $z$ the band's square of the central element is
 
 $$
-(ze_t)\star(ze_t)=ze_t\,\overline{ze_t}=z\bar z\,e_t=\lvert z\rvert^{2}e_t .
+(ze_t)\star(ze_t)=ze_t\,\overline{ze_t}=r_z\bar r_z\,e_t=\lvert r_z\rvert^{2}e_t .
 $$
 
-The phase of $z$ disappears. A central value $\lambda e_t$ has a root exactly when $\lambda$ is a non-negative real number. For $\lambda>0$ the roots are the elements with $\tilde Q\tilde Q^{*}=\lambda e_t$, equivalently the matrices $\sqrt{\lambda}\,U$ with $U$ $*$-unitary; the central roots $z e_t$ with $\lvert z\rvert^{2}=\lambda$ are a subset, not the whole root set. The negative central values have no root. The central imaginary is the sharpest case:
+The phase of $z$ disappears. A central value $\lambda e_t$ has a root exactly when $\lambda$ is a non-negative real number. For $\lambda>0$ the roots are the elements with $\tilde Q\tilde Q^{*}=\lambda e_t$, equivalently the matrices $\sqrt{\lambda}\,U$ with $U$ $*$-unitary; the central roots $r_z e_t$ with $\lvert z\rvert^{2}=\lambda$ are a subset, not the whole root set. The negative central values have no root. The central imaginary is the sharpest case:
 
 $$
 \boxed{\;(ie_t)\star(ie_t)=ie_t\,\overline{ie_t}=i(-i)e_t=e_t\;}.
@@ -93,16 +93,16 @@ so $ie_t$ is a root of $-e_t$, the exponential $e^{i\theta}$ has an algebraic ge
 
 The probability band owns the same centre but reads it as a modulus: it has the clock's values and not the clock's generator.
 
-**The clock is imported as a material element.** A reversible family of the band is a family of unitaries $U(t')=e^{iHt'}$ with $H$ Hermitian. The family lies in the band, since $U(t')U(t')^{*}=e_t$, but its generator is $iH$, which is anti-Hermitian, that is, material. The band contains the clock's action and not the clock's element: time is the parameter of a family whose generator is material.
+**The clock is imported as a material element.** A reversible family of the band is a family of unitaries $U(r'_t)=e^{iHr'_t}$ with $H$ Hermitian. The family lies in the band, since $U(r'_t)U(r'_t)^{*}=e_t$, but its generator is $iH$, which is anti-Hermitian, that is, material. The band contains the clock's action and not the clock's element: time is the parameter of a family whose generator is material.
 
 ### The Interval Is a Clock and the Square a Ruler
 
 The probability band's square is a **ruler**: the Hermitian norm is definite, it measures a length and it supplies the Born weight. The neighbouring quaternionic form is a **clock**: the interval is indefinite, it separates timelike from spacelike, and its zero set is the light cone. One element carries both because the grid carries both metrics. On the material sector the two read
 
 $$
-\langle\tilde R_\varphi\rangle_{*}=c^{2}{r'_{t}}^{2}+\lvert\vec x\rvert^{2},
+\langle\tilde R_\varphi\rangle_{*}=c^{2}{r'_{t}}^{2}+\lvert\vec r\rvert^{2},
 \qquad
-\langle\tilde R_\varphi\rangle_{\natural}=-c^{2}{r'_{t}}^{2}+\lvert\vec x\rvert^{2},
+\langle\tilde R_\varphi\rangle_{\natural}=-c^{2}{r'_{t}}^{2}+\lvert\vec r\rvert^{2},
 $$
 
 so the ruler and the clock differ by twice the squared time, $\langle\tilde R_\varphi\rangle_{*}-\langle\tilde R_\varphi\rangle_{\natural}=2c^{2}{r'_{t}}^{2}$.
@@ -337,36 +337,36 @@ The square is not the only map that crosses. The fourth power crosses, and every
 Write a material four-vector in the physical coordinates,
 
 $$
-\tilde Q=i c r'_t\,e_t+\vec x,
+\tilde Q=i c r'_t\,e_t+\vec r,
 \qquad
-\vec x=r_x\vec e_x+r_y\vec e_y+r_z\vec e_z .
+\vec r=r_x\vec e_x+r_y\vec e_y+r_z\vec e_z .
 $$
 
 Its square and its negative are
 
 $$
-\tilde Q^{2}=-\bigl(c^{2}{r'_{t}}^{2}+\lvert\vec x\rvert^{2}\bigr)e_t+2i c r'_t\,\vec x,
+\tilde Q^{2}=-\bigl(c^{2}{r'_{t}}^{2}+\lvert\vec r\rvert^{2}\bigr)e_t+2i c r'_t\,\vec r,
 \qquad
--\tilde Q^{2}=\bigl(c^{2}{r'_{t}}^{2}+\lvert\vec x\rvert^{2}\bigr)e_t-2i c r'_t\,\vec x .
+-\tilde Q^{2}=\bigl(c^{2}{r'_{t}}^{2}+\lvert\vec r\rvert^{2}\bigr)e_t-2i c r'_t\,\vec r .
 $$
 
 The scalar part of $-\tilde Q^{2}$ is the Hermitian norm,
 
 $$
-\mathrm{Sc}\bigl(-\tilde Q^{2}\bigr)=c^{2}{r'_{t}}^{2}+\lvert\vec x\rvert^{2}
+\mathrm{Sc}\bigl(-\tilde Q^{2}\bigr)=c^{2}{r'_{t}}^{2}+\lvert\vec r\rvert^{2}
 =\langle\tilde Q\rangle_{*},
 $$
 
 the Euclidean weight of the four-vector. The vector part is
 
 $$
-\mathrm{Vect}\bigl(-\tilde Q^{2}\bigr)=-2i c r'_t\,\vec x=-2Q_t\vec Q,
+\mathrm{Vect}\bigl(-\tilde Q^{2}\bigr)=-2i c r'_t\,\vec r=-2Q_t\vec Q,
 $$
 
 the phase vector of the material element. The interval is not the square: it is the quaternionic norm,
 
 $$
-\langle\tilde Q\rangle_{\natural}=-c^{2}{r'_{t}}^{2}+\lvert\vec x\rvert^{2},
+\langle\tilde Q\rangle_{\natural}=-c^{2}{r'_{t}}^{2}+\lvert\vec r\rvert^{2},
 $$
 
 and the gap between the two metrics on the material side is
@@ -377,7 +377,7 @@ $$
 
 The square gives the weight and the axis; the norm gives the interval.
 
-**The square vanishes only at zero on the material sector.** If $\tilde Q^{2}=0$ then $-\tilde Q^{2}=\tilde Q\tilde Q^{*}=0$, and the positive definite Hermitian norm forces $\tilde Q=0$. The square has no nonzero kernel on $\mathbb{M}_-$, although it is not injective there: two distinct purely spatial vectors of equal length have the same square, $-\lvert\vec x\rvert^{2}e_t$. The light cone is the zero set of the interval, not of the square: a null four-vector has $\langle\tilde Q\rangle_{\natural}=0$ and $\tilde Q^{2}\neq0$ in general.
+**The square vanishes only at zero on the material sector.** If $\tilde Q^{2}=0$ then $-\tilde Q^{2}=\tilde Q\tilde Q^{*}=0$, and the positive definite Hermitian norm forces $\tilde Q=0$. The square has no nonzero kernel on $\mathbb{M}_-$, although it is not injective there: two distinct purely spatial vectors of equal length have the same square, $-\lvert\vec r\rvert^{2}e_t$. The light cone is the zero set of the interval, not of the square: a null four-vector has $\langle\tilde Q\rangle_{\natural}=0$ and $\tilde Q^{2}\neq0$ in general.
 
 ### The Arrow Reading
 

@@ -302,7 +302,7 @@ The loop integral, its regularization and its renormalization are standard and a
 | $i$ | Central scalar imaginary, $i^2 = -1$ |
 | $\mathbb{C}_{\mathbb{B}} = \mathrm{span}_{\mathbb{R}}\{e_t, ie_t\}$ | Centre of the algebra; value space of the scalar |
 | $\mathbb{M}_-, \mathbb{M}_+$ | Material (anti-Hermitian) and informational (Hermitian) sectors |
-| $\tilde{\nabla} = e_t\,\partial/\partial Q_t + \sum_k\,\vec e_k\,\partial/\partial Q_k$, $\Box = \tilde{\nabla}\tilde{\nabla}^{\natural} = \partial^2/\partial Q_t^2 + \Delta$ | Biquaternionic gradient; d'Alembertian |
+| $\tilde{\nabla} = e_t\,\partial/\partial R_t + \sum_k\,\vec e_k\,\partial/\partial R_k$, $\Box = \tilde{\nabla}\tilde{\nabla}^{\natural} = \partial^2/\partial R_t^2 + \Delta$ | Biquaternionic gradient; d'Alembertian |
 | $\tilde{Ξ} = \xi\,e_t \in \mathbb{C}_{\mathbb{B}}$ | Complex central scalar |
 | $\tilde{Ξ}_{\mathrm{cl}} = \delta W/\delta\tilde J$ | Classical field; $\tilde{Ξ}_{\mathrm{cl}}=\xi_c\,e_t$ for a constant background |
 | $\delta\tilde{Ξ}$ | Fluctuation about the background, $\tilde{Ξ}_{\mathrm{cl}}+\delta\tilde{Ξ}$ |
@@ -310,7 +310,7 @@ The loop integral, its regularization and its renormalization are standard and a
 | $V_0(\rho) = \frac{\lambda}{4}(\rho - v_0^2)^2$ | Tree-level invariant potential |
 | $\lambda, v_0$ | Quartic coupling; tree-level vacuum parameter; $v_0 = v/\sqrt2$, $\lambda = 4\beta$ against the Higgs companion's $V = \beta(\rho-v^2/2)^2$ |
 | $m_h^2 = \lambda v_0^2$, $m_\theta^2 = 0$ | Radial and angular (Goldstone) masses at tree level |
-| $D_\mu = \partial/\partial Q_\mu + i\kappa A_\mu$, $\kappa = ϙ/\hbar$ | Covariant derivative of the central phase |
+| $D_\mu = \partial/\partial R_\mu + i\kappa A_\mu$, $\kappa = ϙ/\hbar$ | Covariant derivative of the central phase |
 | $ϙ$ | Gauge charge (parameter) |
 | $\Gamma[\tilde{Ξ}_{\mathrm{cl}}] = \langle\tilde{J},\tilde{Ξ}_{\mathrm{cl}}\rangle - W[\tilde{J}]$ | Effective action (Legendre transform) |
 | $\Gamma_1 = \tfrac12\mathrm{Tr}\log S^{(2)}[\tilde{Ξ}_{\mathrm{cl}}]$ | One-loop effective action (determinant) |

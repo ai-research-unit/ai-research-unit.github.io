@@ -81,14 +81,14 @@ This is the quadratic form that the Fisher information will refine: the biquater
 Let $\{p(x;\vartheta^{\mathrm{stt}})\}$ be a family of probability distributions on a discrete outcome set, labelled by a real parameter $\vartheta^{\mathrm{stt}}$, and suppose the family is smooth and the distributions have common support. The **Fisher information** of the family with respect to $\vartheta^{\mathrm{stt}}$ is
 
 $$
-F(\vartheta^{\mathrm{stt}}) = \sum_x p(x;\vartheta^{\mathrm{stt}})\left(\frac{\partial \log p(x;\vartheta^{\mathrm{stt}})}{\partial\vartheta^{\mathrm{stt}}}\right)^2
-= \sum_x \frac{\left(\partial/\partial\vartheta^{\mathrm{stt}} p(x;\vartheta^{\mathrm{stt}})\right)^2}{p(x;\vartheta^{\mathrm{stt}})} .
+F(\vartheta^{\mathrm{stt}}) = \sum_x p(r_x;\vartheta^{\mathrm{stt}})\left(\frac{\partial \log p(r_x;\vartheta^{\mathrm{stt}})}{\partial\vartheta^{\mathrm{stt}}}\right)^2
+= \sum_x \frac{\left(\partial/\partial\vartheta^{\mathrm{stt}} p(r_x;\vartheta^{\mathrm{stt}})\right)^2}{p(r_x;\vartheta^{\mathrm{stt}})} .
 $$
 
 For a multi-parameter family $p(x;\vec\vartheta^{\mathrm{stt}})$ the information is the matrix
 
 $$
-g_{ij}(\vec\vartheta^{\mathrm{stt}}) = \sum_x p(x;\vec\vartheta^{\mathrm{stt}})\,\partial/\partial\vartheta^{\mathrm{stt}}_i\,\log p(x;\vec\vartheta^{\mathrm{stt}})\,\partial/\partial\vartheta^{\mathrm{stt}}_j\,\log p(x;\vec\vartheta^{\mathrm{stt}}),
+g_{ij}(\vec\vartheta^{\mathrm{stt}}) = \sum_x p(r_x;\vec\vartheta^{\mathrm{stt}})\,\partial/\partial\vartheta^{\mathrm{stt}}_i\,\log p(r_x;\vec\vartheta^{\mathrm{stt}})\,\partial/\partial\vartheta^{\mathrm{stt}}_j\,\log p(r_x;\vec\vartheta^{\mathrm{stt}}),
 $$
 
 which is symmetric and positive semidefinite, and is the natural metric of the family. When the family is obtained by measuring a state that depends on the parameter, the information measures how much the measurement reveals about the parameter.

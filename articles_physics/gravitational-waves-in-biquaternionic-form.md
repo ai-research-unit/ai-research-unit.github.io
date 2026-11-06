@@ -140,7 +140,7 @@ $$
 -k_0A_{0\nu}+k_1A_{1\nu}+k_2A_{2\nu}+k_3A_{3\nu} = 0 \qquad\text{and}\qquad -A_{00}+A_{11}+A_{22}+A_{33} = 0 ,
 $$
 
-and in which, in addition, the components with a timelike index vanish, $A_{t\mu} = 0$. For propagation in the $+z$ direction, $k_\mu = (\omega/c)(1,0,0,1)$ in the coordinates $x_\mu = (c r'_{t}, x, y, z)$, so that the phase is $\omega(z/c - t')$ and the plane transverse to the propagation is spanned by $x$ and $y$.
+and in which, in addition, the components with a timelike index vanish, $A_{t\mu} = 0$. For propagation in the $+z$ direction, $k_\mu = (\omega/c)(1,0,0,1)$ in the coordinates $x_\mu = (c r'_{t}, x, y, z)$, so that the phase is $\omega(r_z/c - r'_t)$ and the plane transverse to the propagation is spanned by $x$ and $y$.
 
 **The transversality and tracelessness are checked, not assumed.** For the two amplitudes
 
@@ -166,14 +166,14 @@ $$
 gives, for the plus amplitude,
 
 $$
-R_{txtx} = -R_{tyty} = \frac{\omega^2}{2c^2}\cos\!\left(\frac{\omega}{c}(z - c r'_{t})\right),
+R_{txtx} = -R_{tyty} = \frac{\omega^2}{2c^2}\cos\!\left(\frac{\omega}{c}(r_z - c r'_{t})\right),
 \qquad R_{tztz} = 0,
 $$
 
 and, for the cross amplitude,
 
 $$
-R_{txty} = R_{txyz} = \frac{\omega^2}{2c^2}\cos\!\left(\frac{\omega}{c}(z - c r'_{t})\right),
+R_{txty} = R_{txyz} = \frac{\omega^2}{2c^2}\cos\!\left(\frac{\omega}{c}(r_z - c r'_{t})\right),
 \qquad R_{txtx} = R_{tyty} = R_{tztz} = 0 .
 $$
 
@@ -194,13 +194,13 @@ The wave equation of the first section, $\Box\bar{h}_{\mu\nu} = -\tfrac{16\pi G}
 **The amplitude.** For an isolated, slowly moving source, the far-field transverse-traceless perturbation is
 
 $$
-h_{ij}^{\mathrm{TT}}(r'_t, r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z) = \frac{2G}{c^4 r}\,\left(d^2\mathcal{Q}_{ij}^{\mathrm{TT}}/d{r'_{t}}^2\right)(t' - r/c), \qquad
+h_{ij}^{\mathrm{TT}}(r'_t, r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z) = \frac{2G}{c^4 r}\,\left(d^2\mathcal{Q}_{ij}^{\mathrm{TT}}/d{r'_{t}}^2\right)(r'_t - r/c), \qquad
 \mathcal{Q}_{ij} = \int \rho(x_2\,\vec e_x+y_2\,\vec e_y+z_2\,\vec e_z)\left(x_{2,i}x_{2,j} - \tfrac{1}{3}r_2^2\delta_{ij}\right)d^3x_2,
 $$
 
 where $r = |r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z|$, $\mathcal{Q}_{ij}$ is the **traceless (reduced) quadrupole moment**, and the transverse-traceless projection removes the trace and the longitudinal parts. The field is proportional to the **second** time derivative of the quadrupole moment. The retarded argument makes the wave outgoing along the future light cone, the null cone of $\Box$, which is the zero-divisor cone of $\mathbb{M}_-$ inherited from the material sector.
 
-**No monopole, no dipole.** The multipole expansion begins at the quadrupole, and the reason is conservation. The monopole moment $M = \int\rho\,d^3x$ is the total mass–energy; it is conserved, $dM/dt' = 0$, so there is no monopole radiation. The dipole moment $d_i = \int\rho\,x_i\,d^3x$ has $dd_{i}/dt' = \int\rho\,v_i\,d^3x = P_i$, the total momentum, which is conserved for an isolated source; hence $d^2d_{i}/d{r'_{t}}^2 = 0$ and there is no dipole radiation. The leading radiating moment is therefore the quadrupole. This is the sharpest structural difference from electromagnetism, where the dipole radiates; it is a consequence of momentum conservation, and it is why the gravitational-wave formula has three time derivatives on a quadrupole rather than two on a dipole.
+**No monopole, no dipole.** The multipole expansion begins at the quadrupole, and the reason is conservation. The monopole moment $M = \int\rho\,d^3x$ is the total mass–energy; it is conserved, $dM/dr'_t = 0$, so there is no monopole radiation. The dipole moment $d_i = \int\rho\,x_i\,d^3x$ has $dd_{i}/dr'_t = \int\rho\,v_i\,d^3x = P_i$, the total momentum, which is conserved for an isolated source; hence $d^2d_{i}/d{r'_{t}}^2 = 0$ and there is no dipole radiation. The leading radiating moment is therefore the quadrupole. This is the sharpest structural difference from electromagnetism, where the dipole radiates; it is a consequence of momentum conservation, and it is why the gravitational-wave formula has three time derivatives on a quadrupole rather than two on a dipole.
 
 **The power.** The radiated power, averaged over a period, is
 
@@ -219,9 +219,9 @@ which reduces to the traceless form because $I_{ij} = \mathcal{Q}_{ij} + \tfrac1
 **The prefactor, verified on the binary.** The equal-mass circular binary is the standard check. Two masses $m$ in a circular orbit of radius $R$ (separation $d = 2R$) at angular frequency $\omega$ have the traceless quadrupole
 
 $$
-\mathcal{Q}_{xx} = \frac{mR^2}{3} + mR^2\cos 2\omega t', \qquad
-\mathcal{Q}_{yy} = \frac{mR^2}{3} - mR^2\cos 2\omega t', \qquad
-\mathcal{Q}_{xy} = mR^2\sin 2\omega t',
+\mathcal{Q}_{xx} = \frac{mR^2}{3} + mR^2\cos 2\omega r'_t, \qquad
+\mathcal{Q}_{yy} = \frac{mR^2}{3} - mR^2\cos 2\omega r'_t, \qquad
+\mathcal{Q}_{xy} = mR^2\sin 2\omega r'_t,
 $$
 
 whose third derivatives give $d^3\mathcal{Q}_{ij}/d{r'_{t}}^3 d^3\mathcal{Q}_{ij}/d{r'_{t}}^3 = 128\,m^2R^4\omega^6$, a constant. Then
@@ -246,7 +246,7 @@ and the two agree. A direct check of both the traceless and the unreduced forms 
 
 The radiation theory is built from four objects, and it is worth asking of each whether the framework contains it or merely names it.
 
-**The wave operator.** $\Box = \tilde{\nabla}\tilde{\nabla}^{\natural} = \sum_\mu\partial^2/\partial Q_\mu^2$ is an element of the framework, inherited from the Maxwell article and the parent. It is the operator whose null cone is the zero-divisor cone of $\mathbb{M}_-$ and whose retarded solution carries the outgoing wave. Nothing here is transcribed: $\Box$ is the algebra's own differential operator, and the statement $\Box\bar{\delta\tilde{E}}_\mu = 0$ is written in the framework's notation exactly.
+**The wave operator.** $\Box = \tilde{\nabla}\tilde{\nabla}^{\natural} = \sum_\mu\partial^2/\partial R_\mu^2$ is an element of the framework, inherited from the Maxwell article and the parent. It is the operator whose null cone is the zero-divisor cone of $\mathbb{M}_-$ and whose retarded solution carries the outgoing wave. Nothing here is transcribed: $\Box$ is the algebra's own differential operator, and the statement $\Box\bar{\delta\tilde{E}}_\mu = 0$ is written in the framework's notation exactly.
 
 **The gauge freedom and its residual part.** The linearized diffeomorphism is $\delta\tilde{E}_\mu \mapsto \delta\tilde{E}_\mu - \partial/\partial x_\mu\tilde Q_{\mathrm d}$ with $\tilde Q_{\mathrm d} \in \mathbb{M}_-$, inherited from the parent. The residual freedom of the previous sections has a clean image: the harmonic condition is preserved by exactly those material four-vectors with
 
@@ -280,7 +280,7 @@ Because the antisymmetric part of $\bar{\varepsilon}_\rho\varepsilon_\sigma$ has
 
 The boundary can be drawn as a list, in the manner of the parent article.
 
-**Supplied by the algebra, and recomputed here.** The wave operator $\Box = \tilde{\nabla}\tilde{\nabla}^{\natural} = \sum_\mu\partial^2/\partial Q_\mu^2$ and the null cone it defines; the carrier of the wave as an $\mathbb{M}_-$-valued one-form $\delta\tilde{E}_\mu$, with the trace-reversed shift $\bar{\delta\tilde{E}}_\mu = \delta\tilde{E}_\mu - \tfrac14h\varepsilon_\mu$ and the vacuum equation $\Box\bar{\delta\tilde{E}}_\mu = 0$ once the local Lorentz freedom is fixed; the gauge transformation $\delta\tilde{E}_\mu \mapsto \delta\tilde{E}_\mu - \partial/\partial x_\mu\tilde Q_{\mathrm d}$, whose residual part is the kernel of $\Box$ on $\mathbb{M}_-$; the decomposition $16 = 10 + 6$ and the removal of four further directions by $\tilde Q_{\mathrm d}$, giving the six harmonic-gauge components in the framework's own counting; and the bivector-valued packaging $\tilde{Q}_{3,\mu\nu}$ of the gauge-invariant curvature, whose values lie in the complex pure-vector subspace.
+**Supplied by the algebra, and recomputed here.** The wave operator $\Box = \tilde{\nabla}\tilde{\nabla}^{\natural} = \sum_\mu\partial^2/\partial R_\mu^2$ and the null cone it defines; the carrier of the wave as an $\mathbb{M}_-$-valued one-form $\delta\tilde{E}_\mu$, with the trace-reversed shift $\bar{\delta\tilde{E}}_\mu = \delta\tilde{E}_\mu - \tfrac14h\varepsilon_\mu$ and the vacuum equation $\Box\bar{\delta\tilde{E}}_\mu = 0$ once the local Lorentz freedom is fixed; the gauge transformation $\delta\tilde{E}_\mu \mapsto \delta\tilde{E}_\mu - \partial/\partial x_\mu\tilde Q_{\mathrm d}$, whose residual part is the kernel of $\Box$ on $\mathbb{M}_-$; the decomposition $16 = 10 + 6$ and the removal of four further directions by $\tilde Q_{\mathrm d}$, giving the six harmonic-gauge components in the framework's own counting; and the bivector-valued packaging $\tilde{Q}_{3,\mu\nu}$ of the gauge-invariant curvature, whose values lie in the complex pure-vector subspace.
 
 **Interpretation, not derivation.** Reading the transverse-traceless amplitudes as the physical polarizations, and the two helicities $\pm2$ as the content of those amplitudes, is an interpretation of the transcribed theory. The framework is consistent with the interpretation — the amplitudes can be written in the material basis, and their tracelessness is the statement that the packaging vanishes — but the algebra does not force the interpretation, and the little-group counting that makes $\pm2$ inevitable has no algebraic counterpart.
 
@@ -322,7 +322,7 @@ The framework's reach was drawn. It supplies the wave operator and its null cone
 | $\delta_{\mu\nu}=(1,1,1,1)$ | The unit metric, the coefficient tuple of $\sum_\mu Q_\mu^2$; the material interval is that form read on $Q_t=i c r'_t$, and its one minus is the square of the $i$ |
 | $\langle\tilde{Q}_1,\tilde{Q}_2\rangle_{\natural} = \mathrm{Sc}(\tilde{Q}_1^{\natural}\tilde{Q}_2)$ | General quaternionic bilinear form on $\mathbb{M}_-$, the interval |
 | $Q_\mu=q_\mu+iq'_\mu$; on $\mathbb{M}_-$, $Q_t=i c r'_t$ and $Q_k=x_k$; $x_\mu=(c r'_{t},x,y,z)$ | The coordinate, its material reading, and the real coordinates in which the contractions are written out |
-| $\tilde{\nabla}, \tilde{\nabla}^{\natural}, \Box = \tilde{\nabla}\tilde{\nabla}^{\natural} = \sum_\mu\partial^2/\partial Q_\mu^2$ | Biquaternionic gradient, conjugate, d'Alembertian |
+| $\tilde{\nabla}, \tilde{\nabla}^{\natural}, \Box = \tilde{\nabla}\tilde{\nabla}^{\natural} = \sum_\mu\partial^2/\partial R_\mu^2$ | Biquaternionic gradient, conjugate, d'Alembertian |
 | $h_{\mu\nu}$, $h = -h_{00}+h_{11}+h_{22}+h_{33}$ | Metric perturbation and its trace |
 | $\bar{h}_{00}=h_{00}+\tfrac12h$, $\bar{h}_{0k}=h_{0k}$, $\bar{h}_{kl}=h_{kl}-\tfrac12h\,\delta_{kl}$, $\bar{h} = -h$ | Trace-reversed perturbation |
 | $\delta\tilde{E}_\mu \in \mathbb{M}_-$ | Frame perturbation carrying $h_{\mu\nu} = \langle\varepsilon_\mu,\delta\tilde{E}_\nu\rangle_{\natural} + \langle\delta\tilde{E}_\mu,\varepsilon_\nu\rangle_{\natural}$ |

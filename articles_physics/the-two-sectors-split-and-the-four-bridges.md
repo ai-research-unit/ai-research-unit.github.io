@@ -42,10 +42,10 @@ With $\tilde Q=z_0e_t+z_1\vec e_x+z_2\vec e_y+z_3\vec e_z$, the condition $\tild
 Two properties of the split are used throughout.
 
 - **It is a real subspace, not a complex one.** The sector $\mathbb{M}_+$ is closed under real linear combinations but not under multiplication by $i$: the element $i\vec e_x$ is Hermitian, and $i(i\vec e_x)=-\vec e_x$ is anti-Hermitian. Multiplication by $i$ exchanges the sectors, and no nontrivial complex subspace lies inside one of them.
-- **It is not an ideal decomposition.** The product of two material elements need not be material. For $\tilde{R}_{\varphi,k}=i c r'_t_k+\vec v_k$ with real $t'_k$ and real $\vec v_k$,
+- **It is not an ideal decomposition.** The product of two material elements need not be material. For $\tilde{R}_{\varphi,k}=i c r'_t_k+\vec v_k$ with real $r'_{t,k}$ and real $\vec v_k$,
 
 $$
-\tilde{R}_{\varphi,1}\tilde{R}_{\varphi,2}=\bigl(-c^2t'_1t'_2-(\vec v_1,\vec v_2)\bigr)
+\tilde{R}_{\varphi,1}\tilde{R}_{\varphi,2}=\bigl(-c^2r'_{t,1t}'_2-(\vec v_1,\vec v_2)\bigr)
 +i\bigl(c r'_{t}_1\vec v_2+c r'_{t}_2\vec v_1\bigr)+\vec v_1\times\vec v_2 .
 $$
 
@@ -155,7 +155,7 @@ The rotation's sandwich preserves both sectors, as every congruence does; what i
 
 ### A Pairing: the Off-Sector Scalar
 
-For $\tilde R_\varphi=i c r'_t+\vec v\in\mathbb{M}_-$ and $\tilde R_\psi=c r_t\,e_t+i\vec r_\psi\in\mathbb{M}_+$, with real $t'$, $\vec v$, $c r_t$ and $\vec r_\psi$, the scalar part of the plain product is
+For $\tilde R_\varphi=i c r'_t+\vec v\in\mathbb{M}_-$ and $\tilde R_\psi=c r_t\,e_t+i\vec r_\psi\in\mathbb{M}_+$, with real $r'_t$, $\vec v$, $c r_t$ and $\vec r_\psi$, the scalar part of the plain product is
 
 $$
 \boxed{\;\operatorname{Sc}(\tilde R_\varphi\tilde R_\psi)

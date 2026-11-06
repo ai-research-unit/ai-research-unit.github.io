@@ -29,7 +29,7 @@ $$
 \tilde R_\varphi = i c r'_{t}\,e_t + r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z,
 $$
 
-with $t', x, y, z \in \mathbb{R}$ and $c$ the local speed of light. The scalar part is purely imaginary and the vector part is real, so $\tilde R_\varphi \in \mathbb{M}_-$. The displacement from an event $p$ to an event $q$ is
+with $r'_t, r_x, r_y, r_z \in \mathbb{R}$ and $c$ the local speed of light. The scalar part is purely imaginary and the vector part is real, so $\tilde R_\varphi \in \mathbb{M}_-$. The displacement from an event $p$ to an event $q$ is
 
 $$
 \tilde{Q}_{qp} = \tilde{Q}_q - \tilde{Q}_p = ic\,\Delta r'_t\,e_t + \Delta(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z),
@@ -79,7 +79,7 @@ The vanishing set of the biquaternion norm on the material sector is the double 
 
 $$
 \mathcal{Z} = \{\, \tilde{Q}_1 \in \mathbb{M}_- : \tilde{Q}_1 \ne 0,\ \langle\tilde{Q}_1\rangle_{\natural} = 0 \,\}
-= \{\, i c r'_{t}\,e_t + r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z : |r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z| = c\,|t'| \,\},
+= \{\, i c r'_{t}\,e_t + r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z : |r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z| = c\,|r'_t| \,\},
 $$
 
 the light cone of Minkowski space. The companion article *The Light Cone as the Biquaternion Zero-Divisor Cone* proves the following, and it is quoted here rather than repeated.
@@ -104,7 +104,7 @@ so every nonzero displacement is invertible except the null ones.
 
 **The cone is the propagation locus.** The d'Alembertian of the algebra is the biquaternion norm of the gradient, $\Box = \tilde{\nabla}\tilde{\nabla}^{\natural}$, and a four-wavevector $\tilde P$ solves the massless dispersion relation $\langle\tilde P\rangle_{\natural} = 0$ exactly when it is null. For a null $\tilde P$ every function of the phase $\mathrm{Sc}(\tilde P\tilde{R}_\varphi^{\natural})$ solves the wave equation, so the null directions are the directions in which the algebra propagates without dispersion.
 
-Two features of $\mathcal{Z}$ are used below. First, it is the common boundary of the three regions of the classification: $\langle\cdot\rangle_{\natural}$ is a continuous real function on $\mathbb{M}_-$, its sign is locally constant off $\mathcal{Z}$, and a continuous path can change the sign only by passing through $\mathcal{Z}$. Second, the complement of $\mathcal{Z} \cup \{0\}$ has exactly three connected components: the spacelike region $N > 0$, and the two components of the timelike region $N < 0$, distinguished by the sign of $t'$, called the **future** and the **past**. This is the standard three-component structure of Minkowski space; it is what makes the cone a separating surface and not merely a level set.
+Two features of $\mathcal{Z}$ are used below. First, it is the common boundary of the three regions of the classification: $\langle\cdot\rangle_{\natural}$ is a continuous real function on $\mathbb{M}_-$, its sign is locally constant off $\mathcal{Z}$, and a continuous path can change the sign only by passing through $\mathcal{Z}$. Second, the complement of $\mathcal{Z} \cup \{0\}$ has exactly three connected components: the spacelike region $N > 0$, and the two components of the timelike region $N < 0$, distinguished by the sign of $r'_t$, called the **future** and the **past**. This is the standard three-component structure of Minkowski space; it is what makes the cone a separating surface and not merely a level set.
 
 ## The Barrier That the Rotor Group Preserves
 
@@ -302,14 +302,14 @@ Every bound in this section composes **fixed** rapidities, that is, changes betw
 The barrier has an analytic form, and it is the form in which the algebra itself enforces it. The biquaternionic gradient and its conjugate are
 
 $$
-\tilde{\nabla} = e_t\,\partial/\partial Q_{1t} + \nabla,
+\tilde{\nabla} = e_t\,\partial/\partial R_{1t} + \nabla,
 \qquad
-\tilde{\nabla}^{\natural} = e_t\,\partial/\partial Q_{1t} - \nabla,
+\tilde{\nabla}^{\natural} = e_t\,\partial/\partial R_{1t} - \nabla,
 \qquad
-\Box = \tilde{\nabla}\tilde{\nabla}^{\natural} = \partial^2/\partial Q_{1t}^2 + \Delta = \Delta + \partial^2/\partial Q_{1t}^2,
+\Box = \tilde{\nabla}\tilde{\nabla}^{\natural} = \partial^2/\partial R_{1t}^2 + \Delta = \Delta + \partial^2/\partial R_{1t}^2,
 $$
 
-the series' d'Alembertian. For a wave whose phase is the scalar $s = \mathrm{Sc}(\tilde P\tilde{R}_\varphi^{\natural}) = -\omega t' + \vec k\cdot(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)$, the chain rule gives the corpus identity
+the series' d'Alembertian. For a wave whose phase is the scalar $s = \mathrm{Sc}(\tilde P\tilde{R}_\varphi^{\natural}) = -\omega r'_t + \vec k\cdot(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)$, the chain rule gives the corpus identity
 
 $$
 \Box f(s) = \langle\tilde P\rangle_{\natural}\,\frac{d^2f}{ds^2}(s),
@@ -319,7 +319,7 @@ $$
 
 because $s$ is linear and $\Box s = 0$. The exponential $\exp(s)$ is therefore an eigenfunction with eigenvalue $\langle\tilde P\rangle_{\natural}$, and the oscillatory positive-frequency wave $\exp(is)$ has eigenvalue $-\langle\tilde P\rangle_{\natural}$, the two differing by the overall sign that leaves the kernel unchanged. In either case the characteristic variety, the set on which the symbol vanishes, is exactly the null cone $\mathcal{Z}$. The cone is therefore the characteristic cone of the algebra's own wave operator, and the companion article *The Light Cone as the Biquaternion Zero-Divisor Cone* records the equivalent zero-divisor statement.
 
-The standard theory of hyperbolic operators now supplies the propagation bound. A second-order linear hyperbolic equation with the characteristic cone $\mathcal{Z}$ has finite propagation speed: if a source $\tilde{S}$ is supported in a compact set $K$ at time $t' = 0$, then the solution of $\Box\tilde{Ξ} = \tilde{S}$ is supported at time $t'$ inside the set of points that lie within distance $c r'_{t}$ of $K$, that is, inside the union of the light cones erected on $K$. This is a theorem of the classical theory of partial differential equations, not a property of the biquaternion formulation, and it is cited as standard. Its content here is that the barrier is not imposed on the algebra from outside: the wave operator that the algebra naturally carries has the cone as its characteristic surface, so a field generated in a bounded region propagates only into that region's causal future. The algebraic zero-divisor cone, the geometric light cone and the analytic characteristic cone are the same set.
+The standard theory of hyperbolic operators now supplies the propagation bound. A second-order linear hyperbolic equation with the characteristic cone $\mathcal{Z}$ has finite propagation speed: if a source $\tilde{S}$ is supported in a compact set $K$ at time $r'_t = 0$, then the solution of $\Box\tilde{Ξ} = \tilde{S}$ is supported at time $r'_t$ inside the set of points that lie within distance $c r'_{t}$ of $K$, that is, inside the union of the light cones erected on $K$. This is a theorem of the classical theory of partial differential equations, not a property of the biquaternion formulation, and it is cited as standard. Its content here is that the barrier is not imposed on the algebra from outside: the wave operator that the algebra naturally carries has the cone as its characteristic surface, so a field generated in a bounded region propagates only into that region's causal future. The algebraic zero-divisor cone, the geometric light cone and the analytic characteristic cone are the same set.
 
 ## Causal Automorphisms and the Time Orientation
 
@@ -425,7 +425,7 @@ The information-theoretic interpretation is that $J^+(p)$ is the set of events t
 | $\theta^{\mathrm{rpd}}$, $\tanh\theta^{\mathrm{rpd}}=\beta$ | Rapidity |
 | $\gamma_{\mathrm{rel}} = \gamma_1\gamma_2(1-\beta_1\beta_2\cos\theta)$ | Relative Lorentz factor, $= -\mathrm{Sc}(\tilde{V}_1\tilde{V}^{\natural}_2)/c^2$ |
 | $\tilde{\nabla}, \tilde{\nabla}^{\natural}$ | Biquaternionic gradient and its conjugate |
-| $\Box = \tilde{\nabla}\tilde{\nabla}^{\natural} = \partial^2/\partial Q_{1t}^2+\Delta$ | d'Alembertian, series convention |
+| $\Box = \tilde{\nabla}\tilde{\nabla}^{\natural} = \partial^2/\partial R_{1t}^2+\Delta$ | d'Alembertian, series convention |
 | $SO^+(1,3)\cong SL(2,\mathbb{C})/\{\pm e_t\}$ | Restricted Lorentz group |
 
 ## Further Reading

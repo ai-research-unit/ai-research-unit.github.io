@@ -50,7 +50,7 @@ the four-wavevector of light is a **null** element of $\mathbb{M}_-$, i.e. a zer
 $$
 Ξ = \mathrm{Sc}\!\left(\tilde P\tilde{R}_\varphi^{\natural}\right)
 = \left(\frac{i\omega}{c}\right)(i c r'_{t}) + \vec k\cdot(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)
-= \vec k\cdot(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z) - \omega t' ,
+= \vec k\cdot(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z) - \omega r'_t ,
 \qquad
 \tilde R_\varphi = i c r'_{t}\,e_t + (r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z) .
 $$
@@ -314,7 +314,7 @@ and find the angle that maximises it. (For $\beta = 0.99$ and $\Theta = 0.1$ rad
 
 ## Summary
 
-1. **Four-wavevector.** $\tilde P = i\omega/c\,e_t + \vec k$ is an element of $\mathbb{M}_-$ with $\langle\tilde P\rangle_{\natural} = -\omega^2/c^2 + k^2$; for light $k = \omega/c$ and $\langle\tilde P\rangle_{\natural} = 0$, so light is a null element (zero divisor) of the algebra. The phase $Ξ = \mathrm{Sc}(\tilde P\tilde{R}_\varphi^{\natural}) = \vec k\cdot(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)-\omega t'$ is invariant under rotor conjugation.
+1. **Four-wavevector.** $\tilde P = i\omega/c\,e_t + \vec k$ is an element of $\mathbb{M}_-$ with $\langle\tilde P\rangle_{\natural} = -\omega^2/c^2 + k^2$; for light $k = \omega/c$ and $\langle\tilde P\rangle_{\natural} = 0$, so light is a null element (zero divisor) of the algebra. The phase $Ξ = \mathrm{Sc}(\tilde P\tilde{R}_\varphi^{\natural}) = \vec k\cdot(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)-\omega r'_t$ is invariant under rotor conjugation.
 
 2. **Frequency invariant.** An observer of four-velocity $\tilde{V}$ measures $\omega^{\mathrm{obs}} = -\mathrm{Sc}(\tilde P\tilde{V}^{\natural})$; in the source frame this is $\gamma\omega_0(1-\beta\cos\theta)$.
 

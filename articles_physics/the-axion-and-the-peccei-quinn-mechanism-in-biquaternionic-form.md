@@ -97,8 +97,8 @@ so that $a$ is the angular field and $f_a$ is the scale of the breaking. The kin
 
 $$
 -\mathrm{Sc}\!\left(\tilde\nabla^{\natural}\tilde{Ξ}^{*}\,\tilde\nabla\tilde{Ξ}\right)
-= \frac12\left[(\partial/\partial t'\,\rho)^2 - (\nabla\rho)^2\right]
-+ \frac{\rho^2}{2f_a^2}\left[(\partial/\partial t'\,a)^2 - (\nabla a)^2\right],
+= \frac12\left[(\partial/\partial r'_t\,\rho)^2 - (\nabla\rho)^2\right]
++ \frac{\rho^2}{2f_a^2}\left[(\partial/\partial r'_t\,a)^2 - (\nabla a)^2\right],
 $$
 
 which shows the two modes: the radial mode $\rho$, massive from the Peccei–Quinn potential, and the angular mode $a$, whose kinetic term is canonical after $\rho$ is replaced by its expectation value $\sqrt2\,v_0 = f_a$. The angular field is the **axion**, and its coupling to the rest of the theory is entirely through the symmetry-breaking terms, which is the defining property of a pseudo-Goldstone boson. The identification of the Peccei–Quinn symmetry with the central phase is exact; the identification of the central scalar with the Peccei–Quinn scalar is the modelling step.
@@ -180,16 +180,16 @@ The potential of the previous section is the vacuum energy of the theta vacuum p
 **The coupling.** The Peccei–Quinn current is anomalous, and its divergence is the topological density,
 
 $$
-\sum_\mu\varepsilon_\mu\,\partial/\partial Q_\mu\,j_{PQ,\mu} = \frac{1}{32\pi^2}\,\sum_{\mu,\nu,a}F_{\mu\nu a}F^{\mathrm{dual}}_{\mu\nu a} .
+\sum_\mu\varepsilon_\mu\,\partial/\partial R_\mu\,j_{PQ,\mu} = \frac{1}{32\pi^2}\,\sum_{\mu,\nu,a}F_{\mu\nu a}F^{\mathrm{dual}}_{\mu\nu a} .
 $$
 
-That density is itself a total derivative, $\sum_{\mu,\nu,a}F_{\mu\nu a}F^{\mathrm{dual}}_{\mu\nu a} = \sum_\mu\varepsilon_\mu\,\partial/\partial Q_\mu\,K_\mu$, with $K_\mu$ the Chern–Simons current. The axion therefore couples to the gauge fields through the topological density,
+That density is itself a total derivative, $\sum_{\mu,\nu,a}F_{\mu\nu a}F^{\mathrm{dual}}_{\mu\nu a} = \sum_\mu\varepsilon_\mu\,\partial/\partial R_\mu\,K_\mu$, with $K_\mu$ the Chern–Simons current. The axion therefore couples to the gauge fields through the topological density,
 
 $$
 \mathcal{L}_{aGG} = \frac{a}{f_a}\,\frac{1}{32\pi^2}\,\sum_{\mu,\nu,a}F_{\mu\nu a}F^{\mathrm{dual}}_{\mu\nu a} ,
 $$
 
-and, because the density is a total derivative, the coupling is equivalent to a derivative coupling of the axion to the Chern–Simons current, $\frac{1}{f_a}\sum_\mu\varepsilon_\mu\,\partial/\partial Q_\mu\,a\,K_\mu$. This is the coupling that generates the potential: integrating out the gauge fields in the presence of this term produces the periodic function of $a/f_a+\bar\theta$ written above, and the coefficient $\Lambda^4$ is the topological susceptibility of the gauge sector.
+and, because the density is a total derivative, the coupling is equivalent to a derivative coupling of the axion to the Chern–Simons current, $\frac{1}{f_a}\sum_\mu\varepsilon_\mu\,\partial/\partial R_\mu\,a\,K_\mu$. This is the coupling that generates the potential: integrating out the gauge fields in the presence of this term produces the periodic function of $a/f_a+\bar\theta$ written above, and the coefficient $\Lambda^4$ is the topological susceptibility of the gauge sector.
 
 **Compatibility with the periodicity.** The theta term's charge is quantised, $\frac{1}{32\pi^2}\int d^4x\,FF^{\mathrm{dual}} = Ϙ\in\mathbb{Z}$, so under the shift $a\to a+2\pi f_a$ the axion's coupling changes the action by
 

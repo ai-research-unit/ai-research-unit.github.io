@@ -76,14 +76,14 @@ $$
 
 which the source calls $*$-unitary because each is fixed by the algebra's involution, $(D^\pm)^* = D^\pm$ — the elements with $F^* = F$ are the source's **$*$-unitary** biquaternions, exactly those of the form $f_1 + iF_2$, and they are the corpus's Hermitian subspace $\mathbb{M}_+$. Applied repeatedly to the potential biquaternion in the Lorenz gauge they generate the field strength, the charge–current, the conservation law and the wave equation; the first-order equation $D^+\tilde F = -i\tilde J_{\mathrm{eg}}$ is the source's symmetrized Maxwell system, and it reads the charge–current as the complex gradient of the field strength — charges and currents are, on this interpretation, simply the physical manifestation of that gradient.
 
-The pair is not a new operator for the corpus; it is the corpus gradient in another sign convention. With the corpus's gradient $\tilde{\nabla} = e_t\partial/\partial Q_t + \sum_\mu \vec e_\mu\partial/\partial Q_\mu$ and its quaternion conjugate $\tilde{\nabla}^{\natural}$,
+The pair is not a new operator for the corpus; it is the corpus gradient in another sign convention. With the corpus's gradient $\tilde{\nabla} = e_t\partial/\partial R_t + \sum_\mu \vec e_\mu\partial/\partial R_\mu$ and its quaternion conjugate $\tilde{\nabla}^{\natural}$,
 
 | Source operator | Corpus operator | Composition |
 |---|---|---|
 | $D^+ = \partial/\partial \tau + i\nabla$ | $D^+ = i\,\tilde{\nabla}$ | $D^-D^+ = \partial^2/\partial \tau^2 - \Delta$ |
 | $D^- = \partial/\partial \tau - i\nabla$ | $D^- = i\,\tilde{\nabla}^{\natural}$ | $\Box_{\mathrm{corpus}} = \tilde{\nabla}\tilde{\nabla}^{\natural} = -\,D^-D^+$ |
 
-The sign in the last column is the whole of the difference: the corpus works in the $i c r'_t$ (Euclidean) convention, where $\partial/\partial Q_t = -i\,\partial/\partial \tau$ and $\Box = \partial^2/\partial Q_t^2 + \Delta$ is elliptic, while the programme works in the $\tau = c r'_{t}$ (hyperbolic) convention, where $\Box = \partial^2/\partial \tau^2 - \Delta$ is the wave operator. The two dictionaries differ by $i$ and by an overall sign; neither is more fundamental, but a formula copied from one into the other without the factor $i$ and the sign will fail.
+The sign in the last column is the whole of the difference: the corpus works in the $i c r'_t$ (Euclidean) convention, where $\partial/\partial R_t = -i\,\partial/\partial \tau$ and $\Box = \partial^2/\partial R_t^2 + \Delta$ is elliptic, while the programme works in the $\tau = c r'_{t}$ (hyperbolic) convention, where $\Box = \partial^2/\partial \tau^2 - \Delta$ is the wave operator. The two dictionaries differ by $i$ and by an overall sign; neither is more fundamental, but a formula copied from one into the other without the factor $i$ and the sign will fail.
 
 **The homogeneous biwave equation as an external-field transformation.** The fourth paper of the *Differential algebra of biquaternions* series reads the same gradients with a coefficient. It takes
 
@@ -129,9 +129,9 @@ This is verified by expanding the product in the algebra; the scalar equation is
 The free first-law equation can be split into its real electric and gravimagnetic parts, and the source also writes its general solution as a spinor. The split gives the four equations
 
 $$
-\partial/\partial t'\rho_E + \mathrm{div}\,\vec j_E = 0,
+\partial/\partial r'_t\rho_E + \mathrm{div}\,\vec j_E = 0,
 \qquad
-\partial/\partial t'\rho_H + \mathrm{div}\,\vec j_H = 0,
+\partial/\partial r'_t\rho_H + \mathrm{div}\,\vec j_H = 0,
 $$
 
 $$
@@ -426,11 +426,11 @@ $$
 
 The second is the integrated form of the field equation: the field in a volume is fixed by its earlier value, by its boundary values and by the current that has flowed through the volume.
 
-Integrating the second law over a fixed volume gives the momentum law. Write $m_{D^-}(t')$ and $ϙ_{D^-}(t')$ for the total gravimagnetic (mass) and electric charge in $D^-$. Using the divergence theorem, and taking the two field values on the right at a fixed point of $D^-$ by the mean-value theorem,
+Integrating the second law over a fixed volume gives the momentum law. Write $m_{D^-}(r'_t)$ and $ϙ_{D^-}(r'_t)$ for the total gravimagnetic (mass) and electric charge in $D^-$. Using the divergence theorem, and taking the two field values on the right at a fixed point of $D^-$ by the mean-value theorem,
 
 $$
 \kappa\sqrt{\epsilon}\,\partial/\partial \tau\!\int_{D^-}\!\vec j_H\,dV
-+ \kappa\!\int_{\partial D^-}\!\Big(\frac{\rho_H}{\sqrt{\mu}}\,\vec w + \sqrt{\mu}\,(\vec w,\vec j_E)\Big)dS(x)
++ \kappa\!\int_{\partial D^-}\!\Big(\frac{\rho_H}{\sqrt{\mu}}\,\vec w + \sqrt{\mu}\,(\vec w,\vec j_E)\Big)dS(r_x)
 = ϙ_{D^-}\vec E_2 + m_{D^-}\vec H_2
 + \int_{D^-}\!\big(\vec j_E\times\vec B_2 - \vec j_H\times\vec D_2\big)dV .
 $$
@@ -608,7 +608,7 @@ The corpus's relation to the programme is the same as to every external completi
 | $\tilde J_{\mathrm{eg}} = i\rho + \vec J$ | Charge–current biquaternion |
 | $D^\pm = \partial/\partial \tau \pm i\nabla$ | Mutual complex gradients |
 | $\Box = D^-D^+ = D^+D^-$ | Wave operator of the programme |
-| $\tilde{\nabla} = e_t\partial/\partial Q_t + \sum_\mu \vec e_\mu\partial/\partial Q_\mu$ | Corpus gradient ($D^+ = i\tilde{\nabla}$, $D^- = i\tilde{\nabla}^{\natural}$) |
+| $\tilde{\nabla} = e_t\partial/\partial R_t + \sum_\mu \vec e_\mu\partial/\partial R_\mu$ | Corpus gradient ($D^+ = i\tilde{\nabla}$, $D^- = i\tilde{\nabla}^{\natural}$) |
 | $\Box_{\mathrm{corpus}} = \tilde{\nabla}\tilde{\nabla}^{\natural} = -D^-D^+$ | Corpus d'Alembertian (sign-convention difference) |
 | $\tilde{\mathcal F}$ | Power–force biquaternion of the programme |
 | $W = \tfrac{1}{2}\|\tilde F\|^2$ | Energy density |

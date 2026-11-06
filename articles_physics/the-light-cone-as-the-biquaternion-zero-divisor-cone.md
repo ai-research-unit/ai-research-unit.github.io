@@ -10,7 +10,7 @@ $$
 \langle\tilde R_\varphi\rangle_{\natural} = \langle\tilde R_\varphi,\tilde R_\varphi\rangle_{\natural} = \tilde R_\varphi\,\tilde{R}_\varphi^{\natural} = -c^2{r'_{t}}^2 +r_x^2+r_y^2+r_z^2 ,
 $$
 
-so the equation $\langle\tilde{Q}\rangle_{\natural} = 0$ is exactly the equation of the light cone, $|r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z| = c|t'|$. The Minkowski interval is not imported into the algebra and then made to vanish; it is the algebra's own quadratic form, and the cone is its zero set. What the zero-divisor structure adds is a classification of the points of the cone and a reason why the cone is special: it is the locus where elements of the algebra fail to be invertible, and the failure is precisely the existence of lightlike propagation.
+so the equation $\langle\tilde{Q}\rangle_{\natural} = 0$ is exactly the equation of the light cone, $|r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z| = c|r'_t|$. The Minkowski interval is not imported into the algebra and then made to vanish; it is the algebra's own quadratic form, and the cone is its zero set. What the zero-divisor structure adds is a classification of the points of the cone and a reason why the cone is special: it is the locus where elements of the algebra fail to be invertible, and the failure is precisely the existence of lightlike propagation.
 
 Three threads are developed below.
 
@@ -52,7 +52,7 @@ $$
 \text{spacelike}: \langle\tilde{Q}\rangle_{\natural} > 0 .
 $$
 
-The vanishing set is therefore the pair of cones $|r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z| = c|t'|$, and the future timelike region, the past timelike region and the spacelike exterior are, respectively, the interior of the future cone, the interior of the past cone, and the exterior of both. In the $i c r'_t$ convention the minus sign in $\langle\cdot\rangle_{\natural}$ is carried by the coordinate itself: $(i c r'_{t})^2 = -c^2{r'_{t}}^2$. This is the level-2 Minkowski interval appearing as the restriction of the level-1 identity form of the algebra. The cone is not put into the algebra; it is where the algebra's form degenerates.
+The vanishing set is therefore the pair of cones $|r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z| = c|r'_t|$, and the future timelike region, the past timelike region and the spacelike exterior are, respectively, the interior of the future cone, the interior of the past cone, and the exterior of both. In the $i c r'_t$ convention the minus sign in $\langle\cdot\rangle_{\natural}$ is carried by the coordinate itself: $(i c r'_{t})^2 = -c^2{r'_{t}}^2$. This is the level-2 Minkowski interval appearing as the restriction of the level-1 identity form of the algebra. The cone is not put into the algebra; it is where the algebra's form degenerates.
 
 ## Zero Divisors: the Criterion and the Two Families
 
@@ -156,10 +156,10 @@ The distribution is therefore forced by the topology of the four real slices: th
 The biquaternion norm is not only the interval; it is also the d'Alembertian. Composing the gradient with its quaternion conjugate gives
 
 $$
-\tilde{\nabla}\tilde{\nabla}^{\natural} = \tilde{\nabla}^{\natural}\tilde{\nabla} = \partial^2/\partial Q_t^2 + \Delta =: \Box ,
+\tilde{\nabla}\tilde{\nabla}^{\natural} = \tilde{\nabla}^{\natural}\tilde{\nabla} = \partial^2/\partial R_t^2 + \Delta =: \Box ,
 $$
 
-because the cross terms cancel and the spatial part gives $+\sum_{\mu\in\{x,y,z\}}\partial^2/\partial Q_\mu^2$, the minus sign in $\tilde{\nabla}^{\natural}$ combining with $\vec e_\mu^2 = -e_t$. The wave operator is thus the biquaternion norm of the gradient biquaternion, exactly as $\langle\tilde{Q}\rangle_{\natural} = \langle\tilde{Q},\tilde{Q}\rangle_{\natural} = \tilde{Q}\tilde{Q}^{\natural}$ is the biquaternion norm of $\tilde{Q}$. The factorization $\Box = \tilde{\nabla}\tilde{\nabla}^{\natural}$ is available in the algebra and is not available in a scalar wave operator; it is the algebraic statement that the second-order operator is a product of first-order ones.
+because the cross terms cancel and the spatial part gives $+\sum_{\mu\in\{x,r_y,r_z\}}\partial^2/\partial R_\mu^2$, the minus sign in $\tilde{\nabla}^{\natural}$ combining with $\vec e_\mu^2 = -e_t$. The wave operator is thus the biquaternion norm of the gradient biquaternion, exactly as $\langle\tilde{Q}\rangle_{\natural} = \langle\tilde{Q},\tilde{Q}\rangle_{\natural} = \tilde{Q}\tilde{Q}^{\natural}$ is the biquaternion norm of $\tilde{Q}$. The factorization $\Box = \tilde{\nabla}\tilde{\nabla}^{\natural}$ is available in the algebra and is not available in a scalar wave operator; it is the algebraic statement that the second-order operator is a product of first-order ones.
 
 Now let $\tilde P$ be a four-wavevector, meaning an element of $\mathbb{M}_-$ written as
 
@@ -169,18 +169,18 @@ $$
 \langle\tilde P\rangle_{\natural} = -\frac{\omega^2}{c^2} + \vec k^2 .
 $$
 
-For a plane wave $Ξ = f(s)$ with $s = \mathrm{Sc}(\tilde P\tilde{Q}^{\natural}) = -\omega t' + \vec k\cdot(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)$, the chain rule gives
+For a plane wave $Ξ = f(s)$ with $s = \mathrm{Sc}(\tilde P\tilde{Q}^{\natural}) = -\omega r'_t + \vec k\cdot(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)$, the chain rule gives
 
 $$
-\partial/\partial Q_t\,s = \frac{-\omega}{ic} = \frac{i\omega}{c} = K_0,
+\partial/\partial R_t\,s = \frac{-\omega}{ic} = \frac{i\omega}{c} = K_0,
 \qquad
-\partial/\partial Q_k s = k_k ,
+\partial/\partial R_k s = k_k ,
 $$
 
 so that
 
 $$
-\Box f(s) = \left[(\partial/\partial Q_t\,s)^2 + \sum_{\mu\in\{x,y,z\}}(\partial/\partial Q_\mu s)^2\right] \frac{d^2f}{ds^2}(s)
+\Box f(s) = \left[(\partial/\partial R_t\,s)^2 + \sum_{\mu\in\{x,r_y,r_z\}}(\partial/\partial R_\mu s)^2\right] \frac{d^2f}{ds^2}(s)
 + \bigl(\Box s\bigr) \frac{df}{ds}(s)
 = \left[-\frac{\omega^2}{c^2} + \vec k^2\right] \frac{d^2f}{ds^2}(s)
 = \langle\tilde P\rangle_{\natural}\,\frac{d^2f}{ds^2}(s),
@@ -203,7 +203,7 @@ $$
 \vec k_1 = (1,0,0),\quad \vec k_2 = (0,1,0),\quad \vec k_3 = (0.6,0.8,0),
 $$
 
-with $\omega_i = c|\vec k_i|$ and $c = 1$, so that each $\langle\tilde P_i\rangle_{\natural} = 0$. Evaluating $\BoxΞ = \partial^2/\partial Q_t^2Ξ + \DeltaΞ$ numerically at a generic event gives $|\BoxΞ| \sim 10^{-8}$ at the finite-difference resolution used, i.e. zero. The cross terms between different modes, which the single-mode test cannot see, are the content of the check and they cancel because each mode is separately in the kernel of $\Box$.
+with $\omega_i = c|\vec k_i|$ and $c = 1$, so that each $\langle\tilde P_i\rangle_{\natural} = 0$. Evaluating $\BoxΞ = \partial^2/\partial R_t^2Ξ + \DeltaΞ$ numerically at a generic event gives $|\BoxΞ| \sim 10^{-8}$ at the finite-difference resolution used, i.e. zero. The cross terms between different modes, which the single-mode test cannot see, are the content of the check and they cancel because each mode is separately in the kernel of $\Box$.
 
 The factorization has a second face. Because $\Box = \tilde{\nabla}\tilde{\nabla}^{\natural}$ and the two factors commute, the wave equation is also $\tilde{\nabla}(\tilde{\nabla}^{\natural}Ξ) = 0$, and the cone is the set of directions in which the first-order operator $\tilde{\nabla}^{\natural}$ has a nontrivial kernel of the special form $f(\mathrm{Sc}(\tilde P\tilde{Q}^{\natural}))$. The light cone is the characteristic cone of the operator, and it is the same object as the zero set of the biquaternion norm.
 
@@ -288,7 +288,7 @@ $$
 \langle\tilde R_\varphi\rangle_{\natural} = -c^2{r'_{t}}^2 +r_x^2+r_y^2+r_z^2 ,
 $$
 
-so $\mathcal{Z}$ meets the material sector exactly in the light cone $|r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z| = c|t'|$, and every nonzero real null point is a real multiple of an idempotent $\tilde\Pi(-\vec u_x) = \tfrac12(e_t - i\vec u_x)$. The division subalgebras $\mathbb{C}_{\mathbb{B}}$ and $\mathbb{H}_{\mathbb{B}}$ contain no zero divisors; the cones in the two Hermitian-type sectors $\mathbb{M}_-$ and $\mathbb{M}_+$ are the two real faces of $\mathcal{Z}$, of which the material one is the physical light cone.
+so $\mathcal{Z}$ meets the material sector exactly in the light cone $|r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z| = c|r'_t|$, and every nonzero real null point is a real multiple of an idempotent $\tilde\Pi(-\vec u_x) = \tfrac12(e_t - i\vec u_x)$. The division subalgebras $\mathbb{C}_{\mathbb{B}}$ and $\mathbb{H}_{\mathbb{B}}$ contain no zero divisors; the cones in the two Hermitian-type sectors $\mathbb{M}_-$ and $\mathbb{M}_+$ are the two real faces of $\mathcal{Z}$, of which the material one is the physical light cone.
 
 The cone is also the locus of propagation. Because $\Box = \tilde{\nabla}\tilde{\nabla}^{\natural}$ is the biquaternion norm of the gradient, a four-wavevector $\tilde P$ satisfies $\Box f(\mathrm{Sc}(\tilde P\tilde{Q}^{\natural})) = \langle\tilde P\rangle_{\natural}\frac{d^2f}{ds^2}$ for every smooth $f$; the wave equation holds for every such phase precisely when $\langle\tilde P\rangle_{\natural} = 0$, which is $\omega = c|\vec k|$ and the zero-divisor condition on $\tilde P$. The cone is invariant under rotor conjugation because the biquaternion norm is multiplicative, and its three physical guises — the massless shell in momentum space, the null field in field space, and the dispersionless wavevector in wave space — are one algebraic locus.
 
@@ -308,7 +308,7 @@ The light cone is the set on which elements of the biquaternion algebra cease to
 | $\langle\tilde{Q}\rangle_{\natural} = -c^2{r'_{t}}^2 +r_x^2+r_y^2+r_z^2$ | Interval; zero set is the light cone |
 | $\tilde\Pi(\vec u) = \tfrac12(e_t + i\vec u)$ | Idempotent; $N=0$, $\tilde\Pi^2=\tilde\Pi$ |
 | $\tilde{Q}^2 = 2Q_t\tilde{Q}$ | Non-pure zero-divisor identity |
-| $\tilde{\nabla}, \tilde{\nabla}^{\natural}$, $\Box = \tilde{\nabla}\tilde{\nabla}^{\natural} = \partial^2/\partial Q_t^2+\Delta$ | Gradient, conjugate gradient, d'Alembertian |
+| $\tilde{\nabla}, \tilde{\nabla}^{\natural}$, $\Box = \tilde{\nabla}\tilde{\nabla}^{\natural} = \partial^2/\partial R_t^2+\Delta$ | Gradient, conjugate gradient, d'Alembertian |
 | $\tilde P = i\frac{\omega}{c}e_t + \vec k$ | Four-wavevector, $\mathbb{M}_-$ |
 | $\langle\tilde P\rangle_{\natural} = -\omega^2/c^2 + \vec k^2$ | Null condition $\Leftrightarrow$ dispersionless wave |
 | $\tilde{U}\tilde{U}^{\natural} = e_t$ | Lorentz rotor (unit norm) |

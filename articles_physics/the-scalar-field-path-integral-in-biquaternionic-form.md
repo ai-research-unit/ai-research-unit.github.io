@@ -36,12 +36,12 @@ $$
 with real eigenvalues for the real field and complex eigenvalues for the complex one. The transition amplitude factors into short-time pieces, and inserting the field basis between them gives, for a real field,
 
 $$
-\langle\xi^{\mathrm{scl}}_f,t'_f|\xi^{\mathrm{scl}}_i,t'_i\rangle
-=\int_{\xi^{\mathrm{scl}}(t'_i)=\xi^{\mathrm{scl}}_i}^{\xi^{\mathrm{scl}}(t'_f)=\xi^{\mathrm{scl}}_f}\mathcal{D}\xi^{\mathrm{scl}}\;
-\exp\left(\frac{i}{\hbar}\int_{t'_i}^{t'_f}\!dt'\,\mathrm{Lag}[\xi^{\mathrm{scl}},\partial\xi^{\mathrm{scl}}/\partial t']\right),
+\langle\xi^{\mathrm{scl}}_f,r'_{t,f}|\xi^{\mathrm{scl}}_i,r'_{t,i}\rangle
+=\int_{\xi^{\mathrm{scl}}(r'_{t,i})=\xi^{\mathrm{scl}}_i}^{\xi^{\mathrm{scl}}(r'_{t,f})=\xi^{\mathrm{scl}}_f}\mathcal{D}\xi^{\mathrm{scl}}\;
+\exp\left(\frac{i}{\hbar}\int_{r'_{t,i}}^{r'_{t,f}}\!dr'_t\,\mathrm{Lag}[\xi^{\mathrm{scl}},\partial\xi^{\mathrm{scl}}/\partial r'_t]\right),
 $$
 
-with $\mathrm{Lag}=\int d^3x\,\mathcal{L}$; the phase-space form is obtained by inserting also the momentum completeness relation, and integrating out the momentum returns the Lagrangian form above. The boundary values $\xi^{\mathrm{scl}}_i,\xi^{\mathrm{scl}}_f$ are held fixed, and the measure is the formal product of Lebesgue measures at each time slice, $\mathcal{D}\xi^{\mathrm{scl}}=\prod_t d\xi^{\mathrm{scl}}(t')$, made meaningful by a lattice regulator as in the finite-dimensional Gaussian below.
+with $\mathrm{Lag}=\int d^3x\,\mathcal{L}$; the phase-space form is obtained by inserting also the momentum completeness relation, and integrating out the momentum returns the Lagrangian form above. The boundary values $\xi^{\mathrm{scl}}_i,\xi^{\mathrm{scl}}_f$ are held fixed, and the measure is the formal product of Lebesgue measures at each time slice, $\mathcal{D}\xi^{\mathrm{scl}}=\prod_t d\xi^{\mathrm{scl}}(r'_t)$, made meaningful by a lattice regulator as in the finite-dimensional Gaussian below.
 
 In the framework's notation the field is central-valued and the weight is a central phase,
 
@@ -83,18 +83,18 @@ $$
 and using $\langle\pi|H|\xi^{\mathrm{scl}}\rangle=\langle\pi|\xi^{\mathrm{scl}}\rangle H(\xi^{\mathrm{scl}},\pi)$, the kernel becomes
 
 $$
-\langle\xi^{\mathrm{scl}}_f,t'_f|\xi^{\mathrm{scl}}_i,t'_i\rangle
+\langle\xi^{\mathrm{scl}}_f,r'_{t,f}|\xi^{\mathrm{scl}}_i,r'_{t,i}\rangle
 =\int\mathcal{D}\xi^{\mathrm{scl}}\,\mathcal{D}\pi\;
-\exp\left(\frac{i}{\hbar}\int_{t'_i}^{t'_f}\!dt'\int d^3x\,
-\big[\pi\,\partial\xi^{\mathrm{scl}}/\partial t'+\pi^\dagger\left(\partial\xi^{\mathrm{scl}}/\partial t'\right)^{\dagger}-\mathcal{H}(\xi^{\mathrm{scl}},\pi)\big]\right),
+\exp\left(\frac{i}{\hbar}\int_{r'_{t,i}}^{r'_{t,f}}\!dr'_t\int d^3x\,
+\big[\pi\,\partial\xi^{\mathrm{scl}}/\partial r'_t+\pi^\dagger\left(\partial\xi^{\mathrm{scl}}/\partial r'_t\right)^{\dagger}-\mathcal{H}(\xi^{\mathrm{scl}},\pi)\big]\right),
 $$
 
-the **phase-space** or Hamiltonian form of the functional integral. The momentum is now an independent integration variable, and because the field is complex both kinetic terms appear, with the corresponding boundary terms fixed at the endpoints. Because the Hamiltonian is quadratic in $\pi$, the momentum integral is a Gaussian and can be performed explicitly; it reproduces the Lagrangian form, since with the Hamiltonian $\mathcal{H}=c^{2}\pi\pi^{\dagger}+|\nabla\xi^{\mathrm{scl}}|^{2}+\mu^{2}|\xi^{\mathrm{scl}}|^{2}$ the saddle value of $\pi\partial\xi^{\mathrm{scl}}/\partial t'+\pi^{\dagger}\left(\partial\xi^{\mathrm{scl}}/\partial t'\right)^{\dagger}-\mathcal{H}$ is $2c^{-2}|\partial\xi^{\mathrm{scl}}/\partial t'|^{2}-c^{-2}|\partial\xi^{\mathrm{scl}}/\partial t'|^{2}-|\nabla\xi^{\mathrm{scl}}|^{2}-\mu^{2}|\xi^{\mathrm{scl}}|^{2}=\mathcal{L}$. The saddle point of the momentum integral is
+the **phase-space** or Hamiltonian form of the functional integral. The momentum is now an independent integration variable, and because the field is complex both kinetic terms appear, with the corresponding boundary terms fixed at the endpoints. Because the Hamiltonian is quadratic in $\pi$, the momentum integral is a Gaussian and can be performed explicitly; it reproduces the Lagrangian form, since with the Hamiltonian $\mathcal{H}=c^{2}\pi\pi^{\dagger}+|\nabla\xi^{\mathrm{scl}}|^{2}+\mu^{2}|\xi^{\mathrm{scl}}|^{2}$ the saddle value of $\pi\partial\xi^{\mathrm{scl}}/\partial r'_t+\pi^{\dagger}\left(\partial\xi^{\mathrm{scl}}/\partial r'_t\right)^{\dagger}-\mathcal{H}$ is $2c^{-2}|\partial\xi^{\mathrm{scl}}/\partial r'_t|^{2}-c^{-2}|\partial\xi^{\mathrm{scl}}/\partial r'_t|^{2}-|\nabla\xi^{\mathrm{scl}}|^{2}-\mu^{2}|\xi^{\mathrm{scl}}|^{2}=\mathcal{L}$. The saddle point of the momentum integral is
 
 $$
-\frac{\partial\mathcal{H}}{\partial\pi}=\partial\xi^{\mathrm{scl}}/\partial t'
+\frac{\partial\mathcal{H}}{\partial\pi}=\partial\xi^{\mathrm{scl}}/\partial r'_t
 \qquad\Longleftrightarrow\qquad
-\pi=\frac{1}{c^2}\left(\partial\xi^{\mathrm{scl}}/\partial t'\right)^{\,*},
+\pi=\frac{1}{c^2}\left(\partial\xi^{\mathrm{scl}}/\partial r'_t\right)^{\,*},
 $$
 
 which is the conjugate momentum of the companion canonical quantization. The regularity of the Legendre transform — no constraint, no gauge redundancy — is what makes the passage between the two forms exact and uncontroversial in the scalar sector; in the Dirac and Maxwell cases the same passage requires the introduction of ghosts and constraints, and the framework supplies no principle that would avoid them.
@@ -177,7 +177,7 @@ $$
 =i\hbar\,\delta^{(3)}(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z-\vec y),
 $$
 
-which is the equal-time commutator imposed in the companion quantization. The commutator is thus not extra input: it is the statement $\delta\xi^{\mathrm{scl}}(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)/\delta\xi^{\mathrm{scl}}(\vec y)=\delta^{(3)}$ in the functional representation. The conjugate momentum is the derivative of the action, $\pi=\delta S/\delta(\partial\xi^{\mathrm{scl}}/\partial t')$ on shell, matching the classical Legendre transform.
+which is the equal-time commutator imposed in the companion quantization. The commutator is thus not extra input: it is the statement $\delta\xi^{\mathrm{scl}}(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)/\delta\xi^{\mathrm{scl}}(\vec y)=\delta^{(3)}$ in the functional representation. The conjugate momentum is the derivative of the action, $\pi=\delta S/\delta(\partial\xi^{\mathrm{scl}}/\partial r'_t)$ on shell, matching the classical Legendre transform.
 
 **The mode expansion and the correlators.** The Gaussian integration produces the Wightman and Feynman functions of the companion field article, and the standard free-field Wick expansion recovers the mode algebra from them. The Hamiltonian and the charge are the generators of the time and phase translations, and their matrix elements are reproduced by the functional integral with the appropriate insertions. The equivalence is the standard one and is not re-derived; what the framework changes is the notation.
 
@@ -187,7 +187,7 @@ which is the equal-time commutator imposed in the companion quantization. The co
 
 ## The Euclidean Formulation and the Lattice Determinant
 
-The functional integral is made convergent by continuing to imaginary time. Writing $t'=-i\tau$, so that the material coordinate's time component becomes the real coefficient $c\tau$ and the phase becomes a decaying weight, the action continues to the **Euclidean action**
+The functional integral is made convergent by continuing to imaginary time. Writing $r'_t=-i\tau$, so that the material coordinate's time component becomes the real coefficient $c\tau$ and the phase becomes a decaying weight, the action continues to the **Euclidean action**
 
 $$
 S_E[\tilde{Ξ}]=\int d^4x_E\left[(\partial/\partial\tau\,{\xi^{\mathrm{scl}}}^*)(\partial/\partial\tau\,\xi^{\mathrm{scl}})
@@ -303,7 +303,7 @@ The framework's contribution is the centrality of the configuration space, the b
 | $\mathbb{C}_{\mathbb{B}}=\mathrm{span}_{\mathbb{R}}\{e_t,ie_t\}$ | Centre; the configuration space's value space |
 | $\tilde{Ξ}=\xi^{\mathrm{scl}}\,e_t$, $\tilde J=J\,e_t$, $\xi^{\mathrm{scl}}=(\xi^{\mathrm{scl}}_1+i\xi^{\mathrm{scl}}_2)/\sqrt2$ | Scalar field and central source; real components |
 | $\tilde R_\varphi=i c r'_t\,e_t+r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z$ | Material coordinate |
-| $\tilde{\nabla}=e_t\partial/\partial Q_t+\sum_\mu \vec e_\mu\,\partial/\partial Q_\mu$, $\Box=\partial^2/\partial Q_t^2+\Delta$ | Gradient and d'Alembertian |
+| $\tilde{\nabla}=e_t\partial/\partial R_t+\sum_\mu \vec e_\mu\,\partial/\partial R_\mu$, $\Box=\partial^2/\partial R_t^2+\Delta$ | Gradient and d'Alembertian |
 | $S[\tilde{Ξ}]$ | Central scalar action |
 | $Z[\tilde J]=\int\mathcal{D}\tilde{Ξ}\,\exp(\,iS+i\int[\mathrm{Sc}(\tilde J^{*}\tilde{Ξ})+\mathrm{Sc}(\tilde{Ξ}^{*}\tilde J)])$ | Generating functional |
 | $\mathcal{D}\tilde{Ξ}$ | Functional measure on central-valued configurations |

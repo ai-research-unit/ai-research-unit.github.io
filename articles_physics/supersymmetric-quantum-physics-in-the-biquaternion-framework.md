@@ -89,7 +89,7 @@ Three objects are held apart here. The nilpotent half is one member of the pair:
 
 **One sign, recorded once.** With respect to the sesquilinear form of the algebra the adjoint of the gradient is minus its quaternion conjugate, $(\tilde{\nabla})^{\dagger} = -\tilde{\nabla}^{\natural}$: the derivative contributes a minus, and the units contribute $e_t^{*}=e_t$ and $\vec e_k^{*}=-\vec e_k$, so the two minus signs cancel on the spatial part and the timelike term keeps its own. The pair operator is therefore anti-Hermitian, $\mathbb{D}^{\dagger} = -\mathbb{D}$, and $i\mathbb{D}$ is the Hermitian representative: the operator of the series is anti-Hermitian exactly as its first derivative is, and the factor of $i$ that repairs it is the one that also appears in the momentum of the coordinate form. The algebra is unaffected. Multiplying an anti-Hermitian operator by $i$ multiplies its square by $-1$, so the anticommutator of the repaired pair is $-\Box$ while the algebra's pairing is $+\Box$. The two differ by that one sign, which is the price of Hermiticity. The sign that does move is the one inside the d'Alembertian: on the material sector, where $Q_t=i c r'_t$, the d'Alembertian changes by the one sign of $i^2=-1$.
 
-**The superpotential is the mass.** For a constant mass the parameter is an eigenvalue and the two partners coincide. For a position-dependent mass, $m\to W(Q_x)$, the mass is no longer an eigenvalue but a term of the operator, and the two partner Hamiltonians split, $H_\pm = -\partial^2/\partial Q_x^2 + W^2 \mp dW/dx$. The superpotential is thus the possibly position-dependent mass, and the splitting of the partners is the statement that a spatially varying mass breaks the degeneracy between the two values of the subscript. This is the biquaternion form of the standard claim that the superpotential is the "potential" of the supersymmetric system: here the potential is a mass.
+**The superpotential is the mass.** For a constant mass the parameter is an eigenvalue and the two partners coincide. For a position-dependent mass, $m\to W(Q_x)$, the mass is no longer an eigenvalue but a term of the operator, and the two partner Hamiltonians split, $H_\pm = -\partial^2/\partial R_x^2 + W^2 \mp dW/dx$. The superpotential is thus the possibly position-dependent mass, and the splitting of the partners is the statement that a spatially varying mass breaks the degeneracy between the two values of the subscript. This is the biquaternion form of the standard claim that the superpotential is the "potential" of the supersymmetric system: here the potential is a mass.
 
 The dictionary is not an analogy imposed from outside; it is the statement that the biquaternion algebra's own structure — a first-order operator, a conjugate, a central square, and a pair whose members carry no mass — is the supersymmetry algebra written in the language of the corpus. What the supersymmetric quantum physics adds is the recognition that the graded object's square is the Hamiltonian, and that the zero modes of the graded operator are the invariant content.
 
@@ -154,14 +154,14 @@ The correspondence is exact, and verifiable in closed form, in the reduction to 
 Take the first-order element operator
 
 $$
-\tilde{Q} = \vec e_y\frac{\partial}{\partial Q_x} + i\,W\,\vec e_x ,
+\tilde{Q} = \vec e_y\frac{\partial}{\partial R_x} + i\,W\,\vec e_x ,
 $$
 
 where $W$ is a real superpotential, a function of the coordinate alone. The second basis unit is the mass-like term and $\vec e_y$ is the derivative term. The square follows from the multiplication of the basis, $\vec e_y\vec e_x = -\vec e_z$, $\vec e_x\vec e_y = \vec e_z$ and $\vec e_x^2 = \vec e_y^2 = -e_t$, with the derivative acting on everything to its right, so that the only surviving term of its action on $W$ is the derivative of $W$:
 
 $$
-\tilde{Q}^2 = \left(-\frac{\partial^2}{\partial Q_x^2} + W^2\right)e_t - i\,\frac{dW}{dx}\,\vec e_z
-= \left(-\frac{\partial^2}{\partial Q_x^2} + W^2\right)e_t - \frac{dW}{dx}\,(i \vec e_z).
+\tilde{Q}^2 = \left(-\frac{\partial^2}{\partial R_x^2} + W^2\right)e_t - i\,\frac{dW}{dx}\,\vec e_z
+= \left(-\frac{\partial^2}{\partial R_x^2} + W^2\right)e_t - \frac{dW}{dx}\,(i \vec e_z).
 $$
 
 Both terms of $\tilde Q$ are Hermitian: the derivative and $\vec e_y$ each contribute a minus, and $i\vec e_x$ is Hermitian because $(i\vec e_x)^{*} = i^{*}\vec e_x^{*} = (-i)(-\vec e_x) = i\vec e_x$.
@@ -170,8 +170,8 @@ Both terms of $\tilde Q$ are Hermitian: the derivative and $\vec e_y$ each contr
 
 Two features of this square are the algebraic content of the section.
 
-- The **central part** is $(-\partial^2/\partial Q_x^2+W^2)e_t$: it is the common Hamiltonian of the two values, and it is central because the cross terms of the two factors cancel exactly as in the free case.
-- The **splitting** is $-\frac{dW}{dx}(i\vec e_z)$, and $i\vec e_z$ is a Hermitian biquaternion with $(i\vec e_z)^2 = i^2\vec e_z^2 = +e_t$, an element of $\mathbb{M}_+$ with the two values $\pm1$. The two values of the square — the two partner potentials — are therefore $-\partial^2/\partial Q_x^2+W^2\mp dW/dx$, and each belongs to one of the two values of the subscript.
+- The **central part** is $(-\partial^2/\partial R_x^2+W^2)e_t$: it is the common Hamiltonian of the two values, and it is central because the cross terms of the two factors cancel exactly as in the free case.
+- The **splitting** is $-\frac{dW}{dx}(i\vec e_z)$, and $i\vec e_z$ is a Hermitian biquaternion with $(i\vec e_z)^2 = i^2\vec e_z^2 = +e_t$, an element of $\mathbb{M}_+$ with the two values $\pm1$. The two values of the square — the two partner potentials — are therefore $-\partial^2/\partial R_x^2+W^2\mp dW/dx$, and each belongs to one of the two values of the subscript.
 
 The superpotential is thus the coefficient of the mass-like term, the partner splitting is the value of a Hermitian element, and the two partner Hamiltonians are the two values of a single algebra-valued square. This is the cleanest sense in which the biquaternion framework **contains** supersymmetric quantum physics: the partner structure is the two values of the $\mathbb{M}_+$ remainder of a first-order operator's square.
 
@@ -300,7 +300,7 @@ Supersymmetric quantum physics is the algebra $\{\mathcal{Q},\mathcal{Q}^\dagger
 
 The biquaternion framework supplies this structure natively. The biquaternionic Dirac operator is the gradient $\tilde{\nabla}$, whose square is the central $\Box$; the grading is the value of the subscript, which is $L$ or $R$ and nothing else, with $L$ the minus value; the supercharge is the pair operator $\mathbb{D}$ with $\mathbb{D}^2=\Box$; the superalgebra is the chiral pair, one member per value, in which the mass is the only term that names the other value; and the free theory has $H_+ = H_- = \Box$, a balanced spectrum with a vanishing index. The two-sided form of the same equation, $\tilde{\nabla}^{\natural}F = -i\,m\,\bar{F}\,\vec e_z$, multiplies the derivative on the left and $\vec e_z$ on the right, and exhibits the mass as the term that carries the cell of the two values.
 
-The correspondence is exact in the 1+1-dimensional reduction with a superpotential $W$: the operator $\tilde{Q} = \vec e_y\partial/\partial Q_x + iW\vec e_x$ squares to the central part $(-\partial^2/\partial Q_x^2+W^2)e_t$ plus the Hermitian remainder $-\frac{dW}{dx}(i\vec e_z)$, whose two values are the partner potentials. The identity was checked by finite-difference computation on $121$ points of $[-6,6]$ (step $h=0.1$) with the kink superpotential $W = \tanh x$: it held to $7\times10^{-15}$ on the whole grid, and the operator limit $[D,W]\to dW/dx$ converged at second order in $h$, the error falling by a factor close to four at each halving of the step.
+The correspondence is exact in the 1+1-dimensional reduction with a superpotential $W$: the operator $\tilde{Q} = \vec e_y\partial/\partial R_x + iW\vec e_x$ squares to the central part $(-\partial^2/\partial R_x^2+W^2)e_t$ plus the Hermitian remainder $-\frac{dW}{dx}(i\vec e_z)$, whose two values are the partner potentials. The identity was checked by finite-difference computation on $121$ points of $[-6,6]$ (step $h=0.1$) with the kink superpotential $W = \tanh x$: it held to $7\times10^{-15}$ on the whole grid, and the operator limit $[D,W]\to dW/dx$ converged at second order in $h$, the error falling by a factor close to four at each halving of the step.
 
 The Dirac oscillator is the three-dimensional relativistic realisation: the pair $A_\omega$, $A_\omega^\dagger$ of the companion article has infinitely many zero modes on one side and none on the other, $A_\omega A_\omega^\dagger = 2m\hbar\omega(N+3+S/\hbar)$ has no zero mode, the supersymmetry is unbroken, and the infinite degeneracy of the ground level at $E = \pm mc^2$ is the zero-mode degeneracy of the factorisation. The Witten index is the imbalance of the zero modes between the two values, an invariant of the grading; and shape invariance, the algebraic origin of exact solvability, is the statement that the two values of the Hermitian remainder can be mapped into one another by a change of the mass profile.
 
@@ -328,8 +328,8 @@ The Dirac oscillator is the three-dimensional relativistic realisation: the pair
 | $a^{*}$, $a^{\natural}$, $\bar a$ | Conjugate for the adjoint ($i^{*}=-i$, $\vec e_k^{*}=-\vec e_k$), order-reversing conjugate, coefficient conjugate |
 | $(-1)^F$ | Grading operator |
 | $\mathrm{Ind} = \mathrm{Tr}\,(-1)^F = \dim\ker H_+ - \dim\ker H_-$ | Witten index |
-| $\tilde{Q} = \vec e_y\partial/\partial Q_x + iW\vec e_x$ | Reduced supercharge (1+1 dimensions) |
-| $\tilde{Q}^2 = (-\partial^2/\partial Q_x^2+W^2)e_t - \frac{dW}{dx}(i\vec e_z)$ | Its square (central part plus $\mathbb{M}_+$ remainder) |
+| $\tilde{Q} = \vec e_y\partial/\partial R_x + iW\vec e_x$ | Reduced supercharge (1+1 dimensions) |
+| $\tilde{Q}^2 = (-\partial^2/\partial R_x^2+W^2)e_t - \frac{dW}{dx}(i\vec e_z)$ | Its square (central part plus $\mathbb{M}_+$ remainder) |
 | $A_\omega$, $A_\omega^\dagger$ | Oscillator pair (written $\mathcal{Q}_\pm$ in the companion article) |
 | $S=\sum_k L_k^{\mathrm{orb}}\tilde S_k$ | Spin–orbit element of the oscillator, with the two values $\hbar l$ and $-\hbar(l+1)$ |
 ## Further Reading

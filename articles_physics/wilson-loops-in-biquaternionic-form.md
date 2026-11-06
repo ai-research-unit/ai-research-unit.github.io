@@ -107,7 +107,7 @@ $$
 W(C) = \exp\left(\frac{i}{2}\sum_{\mu,\nu}\varepsilon_\mu\varepsilon_\nu F_{\mu\nu}\Sigma_{\mu\nu}\right),
 $$
 
-with $\Sigma_{\mu\nu}$ the (oriented) area bivector of the loop. A loop in the $xy$ plane of area $\mathcal{A}$ measures only the magnetic component, $W=\exp(iB_3\mathcal{A})$; a loop in the $xt'$ plane measures only the electric component, with the sign fixed by the orientation of the loop; and a loop tilted into a general plane measures the combination $\vec B\cdot\vec u\,\mathcal{A}$ for a spacelike plane and $\vec E\cdot\vec u\,\mathcal{A}$ for a timelike one. This was verified for the plaquette of the preceding paragraph, where the enclosed flux was exactly $h^2F$. In the biquaternion language the exponent is the scalar part of the product of the area bivector with the field strength, and the electric and magnetic parts of $\tilde{F}$ are measured by timelike and spacelike loops respectively. The two invariants of $\tilde{F}^2$ are what remain when the loop is allowed to explore both kinds of plane; a single loop sees only one component.
+with $\Sigma_{\mu\nu}$ the (oriented) area bivector of the loop. A loop in the $xy$ plane of area $\mathcal{A}$ measures only the magnetic component, $W=\exp(iB_3\mathcal{A})$; a loop in the $xr'_t$ plane measures only the electric component, with the sign fixed by the orientation of the loop; and a loop tilted into a general plane measures the combination $\vec B\cdot\vec u\,\mathcal{A}$ for a spacelike plane and $\vec E\cdot\vec u\,\mathcal{A}$ for a timelike one. This was verified for the plaquette of the preceding paragraph, where the enclosed flux was exactly $h^2F$. In the biquaternion language the exponent is the scalar part of the product of the area bivector with the field strength, and the electric and magnetic parts of $\tilde{F}$ are measured by timelike and spacelike loops respectively. The two invariants of $\tilde{F}^2$ are what remain when the loop is allowed to explore both kinds of plane; a single loop sees only one component.
 
 ## The Gaussian Average of the Loop
 
@@ -144,7 +144,7 @@ For the non-abelian theory there is a surface form of the holonomy, but it is no
 $$
 U(\partial S) = \mathcal{P}_S\exp\left(i\int_S \mathcal{F}\right),
 \qquad
-\mathcal{F}(x) = U(x_0,x)\,F_{\mu\nu}(x)\,U(x,x_0)\,dx_\mu\wedge dx_\nu ,
+\mathcal{F}(r_x) = U(x_0,r_x)\,F_{\mu\nu}(r_x)\,U(r_x,x_0)\,dx_\mu\wedge dx_\nu ,
 $$
 
 where the field strength is transported back to a common base point $x_0$ before being integrated, and the path ordering is along the surface. The trace of the holonomy is independent of the choice of base point and of the transport, which is why the Wilson loop is well defined. In the framework the transport factors are elements of the informational realization of the group, and the statement is that the loop measures the field strength dressed by the adjoint action — the same adjoint action that the article on integer-spin quantization identifies as the rotation.

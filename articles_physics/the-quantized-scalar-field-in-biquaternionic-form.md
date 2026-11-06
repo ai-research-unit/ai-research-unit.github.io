@@ -38,10 +38,10 @@ and it is this smeared object, not the point value, that is a well-defined opera
 The value space of the field is the centre. In the mode expansion
 
 $$
-\tilde{Ξ}^{\mathrm{fop}}(\tilde R_\varphi)=\xi^{\mathrm{fop}}(x)\,e_t,
+\tilde{Ξ}^{\mathrm{fop}}(\tilde R_\varphi)=\xi^{\mathrm{fop}}(r_x)\,e_t,
 \qquad
-\xi^{\mathrm{fop}}(x)=\int\!\frac{d^3p}{(2\pi)^3}\frac{1}{\sqrt{2E_{\vec p}}}
-\left(a^{\mathrm{fop}}_{\vec p}\exp(-ip\cdot x)+{b^{\mathrm{fop}}_{\vec p}}^\dagger \exp(+ip\cdot x)\right),
+\xi^{\mathrm{fop}}(r_x)=\int\!\frac{d^3p}{(2\pi)^3}\frac{1}{\sqrt{2E_{\vec p}}}
+\left(a^{\mathrm{fop}}_{\vec p}\exp(-ip\cdot r_x)+{b^{\mathrm{fop}}_{\vec p}}^\dagger \exp(+ip\cdot r_x)\right),
 $$
 
 every coefficient multiplies the central unit $e_t$. Three consequences follow immediately and are worth stating separately.
@@ -72,7 +72,7 @@ $$
 
 so $\xi^{\mathrm{fop}(+)}$ is the **annihilation part** and $\xi^{\mathrm{fop}(-)}$ the **creation part**. The same statement in the biquaternion notation is that the annihilation part is the transport of the vacuum by the positive-frequency central phase.
 
-**The frequency split is Lorentz invariant.** The split is defined by the sign of the energy, and the sign of the energy is preserved by orthochronous Lorentz transformations; equivalently, the positive-frequency part continues analytically in the upper half of the complex time plane when the phase is written $\exp(-iE_{\vec p}t')$. This is the standard statement that the Wightman function is the boundary value of an analytic function, and the framework's central phase $\exp(\,i\,\mathrm{Sc}(\tilde P\tilde{R}_\varphi^{\natural}))$ is the phase in which the statement is made.
+**The frequency split is Lorentz invariant.** The split is defined by the sign of the energy, and the sign of the energy is preserved by orthochronous Lorentz transformations; equivalently, the positive-frequency part continues analytically in the upper half of the complex time plane when the phase is written $\exp(-iE_{\vec p}r'_t)$. This is the standard statement that the Wightman function is the boundary value of an analytic function, and the framework's central phase $\exp(\,i\,\mathrm{Sc}(\tilde P\tilde{R}_\varphi^{\natural}))$ is the phase in which the statement is made.
 
 ## Real and Complex Scalar Fields
 
@@ -214,7 +214,7 @@ $$
 =\exp\!\left(-\frac{1}{2}\int d^3x\,d^3y\;\xi(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)\,K(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z-\vec y)\,\xi(\vec y)\right),
 $$
 
-where $K$ has Fourier symbol $E_{\vec p}=\sqrt{\vec p^2+\mu^2}$; the vacuum wave functional is the exponential of a positive quadratic form, and its width is the energy $E_{\vec p}$. The Gaussian integral of this functional over configurations is the vacuum-to-vacuum amplitude of the scalar functional integral, and the transition functional $\tilde{Ξ}^{\mathrm{sp}}[\xi_f,t'_f]=\int\mathcal{D}\xi_i\,K(\xi_f,t'_f;\xi_i,t'_i)\tilde{Ξ}^{\mathrm{sp}}[\xi_i,t'_i]$ is its kernel. The framework's interpretation is that the wave functional is a functional of **central-valued** configurations, $\tilde{Ξ}^{\mathrm{sp}}[\xi]=\tilde{Ξ}^{\mathrm{sp}}[\xi\,e_t]$, and that it is a complex number for each configuration rather than an element of $\mathbb{B}$; the informational sector's density operators are recovered only in finite-dimensional truncations, as the Fock-space companion records.
+where $K$ has Fourier symbol $E_{\vec p}=\sqrt{\vec p^2+\mu^2}$; the vacuum wave functional is the exponential of a positive quadratic form, and its width is the energy $E_{\vec p}$. The Gaussian integral of this functional over configurations is the vacuum-to-vacuum amplitude of the scalar functional integral, and the transition functional $\tilde{Ξ}^{\mathrm{sp}}[\xi_f,r'_{t,f}]=\int\mathcal{D}\xi_i\,K(\xi_f,r'_{t,f};\xi_i,r'_{t,i})\tilde{Ξ}^{\mathrm{sp}}[\xi_i,r'_{t,i}]$ is its kernel. The framework's interpretation is that the wave functional is a functional of **central-valued** configurations, $\tilde{Ξ}^{\mathrm{sp}}[\xi]=\tilde{Ξ}^{\mathrm{sp}}[\xi\,e_t]$, and that it is a complex number for each configuration rather than an element of $\mathbb{B}$; the informational sector's density operators are recovered only in finite-dimensional truncations, as the Fock-space companion records.
 
 ## What Is Standard and What Is Open
 
@@ -254,8 +254,8 @@ The biquaternion content of the field operator is therefore confined to its valu
 | $\mathbb{M}_-,\mathbb{M}_+$ | Material (anti-Hermitian) and informational (Hermitian) sectors |
 | $\mathbb{C}_{\mathbb{B}}=\mathrm{span}_{\mathbb{R}}\{e_t,ie_t\}$ | Centre; the field's value space |
 | $\tilde R_\varphi=i c r'_t\,e_t+r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z$ | Material coordinate |
-| $\tilde{\nabla}=e_t\partial/\partial Q_t+\sum_k \vec e_k\,\partial/\partial Q_k$, $\Box=\partial^2/\partial Q_t^2+\Delta$ | Gradient and d'Alembertian |
-| $\tilde{Ξ}^{\mathrm{fop}}(\tilde R_\varphi)=\xi^{\mathrm{fop}}(x)e_t$ | Quantized scalar field (central-valued) |
+| $\tilde{\nabla}=e_t\partial/\partial R_t+\sum_k \vec e_k\,\partial/\partial R_k$, $\Box=\partial^2/\partial R_t^2+\Delta$ | Gradient and d'Alembertian |
+| $\tilde{Ξ}^{\mathrm{fop}}(\tilde R_\varphi)=\xi^{\mathrm{fop}}(r_x)e_t$ | Quantized scalar field (central-valued) |
 | $\xi^{\mathrm{fop}(+)},\xi^{\mathrm{fop}(-)}$ | Annihilation (positive-frequency) and creation parts |
 | $a^{\mathrm{fop}}_{\vec p},b^{\mathrm{fop}}_{\vec p}$ | Particle and antiparticle annihilation operators |
 | $Ϙ^{\mathrm{fop}}$ | Conserved $\mathrm{U}(1)$ charge; $[Ϙ^{\mathrm{fop}},\xi^{\mathrm{fop}}]=-\xi^{\mathrm{fop}}$ |

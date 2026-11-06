@@ -171,7 +171,7 @@ which is the operator image of $\{L_i^{\mathrm{orb}},L_j^{\mathrm{orb}}\}=\epsil
 
 It is worth stating exactly what the two successful checks establish, because the resemblance is real and the article would be misleading if it were dismissed.
 
-**Both brackets are Lie brackets.** Each is bilinear, antisymmetric, and satisfies Jacobi. In each theory the observables therefore form a Lie algebra, and the bracket of an observable with the Hamiltonian generates the dynamics: $df/dt'=\{f,H\}$ classically, $df/dt'=(1/i\hbar)[f,H]$ in the Heisenberg picture. The formal parallel between these two evolution equations is the dynamical core of the correspondence.
+**Both brackets are Lie brackets.** Each is bilinear, antisymmetric, and satisfies Jacobi. In each theory the observables therefore form a Lie algebra, and the bracket of an observable with the Hamiltonian generates the dynamics: $df/dr'_t=\{f,H\}$ classically, $df/dr'_t=(1/i\hbar)[f,H]$ in the Heisenberg picture. The formal parallel between these two evolution equations is the dynamical core of the correspondence.
 
 **The correspondence is exact for quadratic observables.** For the Weyl quantization used below, the difference between the Moyal bracket and the Poisson bracket begins at order $\hbar^2$ and involves third derivatives of the observables. Consequently, **if either argument is at most quadratic in the canonical variables, all corrections vanish and the two brackets agree exactly**:
 $$
@@ -289,7 +289,7 @@ where $\operatorname{weyl}^{-1}$ is the Weyl symbol, read off the operator, and 
 
 **Relation to the correspondence principle.** Bohr's correspondence principle states that quantum predictions merge with classical ones in the appropriate limit. The bracket correspondence is its infinitesimal, kinematic part: it matches the local structure of the two theories at a point of phase space. The order-$\hbar^2$ terms are why the merge is asymptotic rather than exact, and they are why taking the classical limit of a quantum system requires a limit of states or quantum numbers, not merely the substitution of brackets. Two familiar qualifications make the point.
 
-- **Ehrenfest.** The exact quantum statement is $d\langle A\rangle/dt' = (1/i\hbar)\langle[A,H]\rangle$. Replacing the right side by the classical bracket $\{A,H\}$ evaluated on the mean values is legitimate only to leading order; the corrections involve the higher moments of the state (the wave-packet spread) and vanish only in the regime in which that spread is negligible.
+- **Ehrenfest.** The exact quantum statement is $d\langle A\rangle/dr'_t = (1/i\hbar)\langle[A,H]\rangle$. Replacing the right side by the classical bracket $\{A,H\}$ evaluated on the mean values is legitimate only to leading order; the corrections involve the higher moments of the state (the wave-packet spread) and vanish only in the regime in which that spread is negligible.
 - **Spin.** For angular momentum the bracket correspondence is exact, but the limit is nonetheless degenerate: with $S_k=(\hbar/2)\sigma_k$ for spin-$\tfrac12$, sending $\hbar\to0$ at fixed spin quantum number sends every spin observable to zero. A classical spin vector emerges only in the limit of large quantum number with $\hbar j$ held fixed. The bracket that matched exactly does not by itself produce a classical limit.
 
 ## The Resemblance in the Biquaternion Framework
@@ -382,7 +382,7 @@ In the biquaternion framework, the observables are the Hermitian elements of $\m
 - [Biquaternion Automorphisms and Derivations](../articles_maths/biquaternion-automorphisms-and-derivations.html), for the algebra-level meaning of "derivation" and for the inner derivations $\mathrm{ad}_a=[a,\cdot]$, the biquaternion instance of the commutator-as-derivation used in the article.
 - [The Informational Sector: States, Observables and Probability](the-informational-sector-states-observables-and-probability.html), for the role of $\mathbb{M}_+$ as the operator space and the reversible/irreversible dichotomy.
 - [Quantum Physics: Foundations and Structure](quantum-physics-foundations-and-structure.html), for the postulational account of observables, commutators, and the classical limit against which the correspondence is stated.
-- [The Schrödinger Equation in Biquaternionic Form](the-schrodinger-equation-in-biquaternionic-form.html), for the Heisenberg-picture dynamics $df/dt'=(1/i\hbar)[f,H]$ and the observable/generator split inside the algebra.
+- [The Schrödinger Equation in Biquaternionic Form](the-schrodinger-equation-in-biquaternionic-form.html), for the Heisenberg-picture dynamics $df/dr'_t=(1/i\hbar)[f,H]$ and the observable/generator split inside the algebra.
 - [Deformation Quantization](../articles_maths/deformation-quantization.html), for the star product as a formal associative deformation and for the Moyal product as the closed-form constant-coefficient case.
 - [Semiclassical Analysis](../articles_maths/semiclassical-analysis.html), for the Weyl quantisation $\mathrm{Op}^w_\hbar$, the Moyal product and the Poisson-bracket correspondence in the pseudodifferential calculus.
 - H. J. Groenewold, "On the Principles of Elementary Quantum Mechanics", *Physica* **12** (1946), 405–446, for the theorem that no quantization map carries the Poisson bracket to the commutator exactly over all polynomials.

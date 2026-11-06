@@ -121,7 +121,7 @@ The nonlinearity is not a technicality. In a linear theory the solutions form a 
 
 ### From Trigonometric to Elliptic
 
-The free solutions of the linear wave equation are single-periodic: $\sin(kz)$ and $\cos(kz)$, with one period. Petiau's closed system has solutions that are **double-periodic** — the **Petiau waves** — built from the elliptic functions. Instead of linear combinations of $\sin z$ and $\cos z$ the solutions are superpositions of the Jacobi elliptic functions $\mathrm{sn}(z,k)$, $\mathrm{cn}(z,k)$, $\mathrm{dn}(z,k)$, whose periods are governed by the **modulus** $k\in[0,1]$. The proper mass $\mu$ enters the argument, so that a typical wave reads $\mathrm{sn}\bigl(\mu(Et'-\vec p\cdot(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)),\,k\bigr)$.
+The free solutions of the linear wave equation are single-periodic: $\sin(kz)$ and $\cos(kz)$, with one period. Petiau's closed system has solutions that are **double-periodic** — the **Petiau waves** — built from the elliptic functions. Instead of linear combinations of $\sin z$ and $\cos z$ the solutions are superpositions of the Jacobi elliptic functions $\mathrm{sn}(z,k)$, $\mathrm{cn}(z,k)$, $\mathrm{dn}(z,k)$, whose periods are governed by the **modulus** $k\in[0,1]$. The proper mass $\mu$ enters the argument, so that a typical wave reads $\mathrm{sn}\bigl(\mu(Er'_t-\vec p\cdot(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)),\,k\bigr)$.
 
 A linear wave has one scale, its frequency, and the amplitude is free. A Petiau wave has two independent periods and a fixed amplitude, and this is the structural difference that the elliptic functions encode.
 
@@ -231,7 +231,7 @@ The empirical side is kept separate: **Barut's** formula $M(N)=M_e\bigl(1+\tfrac
 | $e_t=1,\vec e_x,\vec e_y,\vec e_z$ | Quaternion basis, $\vec e_k^2=-e_t$, $\vec e_x \vec e_y=\vec e_z$ cyclic |
 | $i$ | Central scalar imaginary, $i^2=-1$ |
 | $\tilde{\nabla},\ \tilde{\nabla}^{\natural}$ | Biquaternionic gradient and its quaternion conjugate |
-| $\Box=\tilde{\nabla}\tilde{\nabla}^{\natural}=\tilde{\nabla}^{\natural}\tilde{\nabla}$ | d'Alembertian, $\partial^2/\partial Q_t^2+\Delta$ (series convention) |
+| $\Box=\tilde{\nabla}\tilde{\nabla}^{\natural}=\tilde{\nabla}^{\natural}\tilde{\nabla}$ | d'Alembertian, $\partial^2/\partial R_t^2+\Delta$ (series convention) |
 | $\tilde Q_1,\ \tilde Q_2$ | Lanczos spin-$\frac{1}{2}$ fields |
 | $m=mc/\hbar$ | Scalar mass parameter, inverse-length units |
 | $\tilde{E}$ | Einstein–Mayer mass biquaternion |

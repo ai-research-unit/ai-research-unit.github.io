@@ -28,7 +28,7 @@ $$
 Z=\begin{pmatrix}\upsilon & w\\ p & v\end{pmatrix},
 $$
 
-with $\upsilon,v,w,p$ the complex coordinates and $z_0=\tfrac12(\upsilon+v)$, $z_3=\tfrac12(\upsilon-v)$, $z_1=\tfrac12(w+p)$, $z_2=\tfrac{i}{2}(w-p)$; on the real slice $\upsilon=t'+z$, $v=t'-z$, $w=x-iy$, $p=x+iy=\bar w$. The d'Alembertian is $\Box=4(\partial^2/\partial\upsilon\,\partial v-\partial^2/\partial w\,\partial p)$ and the complex eikonal is
+with $\upsilon,v,w,p$ the complex coordinates and $z_0=\tfrac12(\upsilon+v)$, $z_3=\tfrac12(\upsilon-v)$, $z_1=\tfrac12(w+p)$, $z_2=\tfrac{i}{2}(w-p)$; on the real slice $\upsilon=r'_t+r_z$, $v=r'_t-r_z$, $w=x-iy$, $p=x+iy=\bar w$. The d'Alembertian is $\Box=4(\partial^2/\partial\upsilon\,\partial v-\partial^2/\partial w\,\partial p)$ and the complex eikonal is
 
 $$
 \frac{\partial\Sigma}{\partial\upsilon}\frac{\partial\Sigma}{\partial v}=\frac{\partial\Sigma}{\partial w}\frac{\partial\Sigma}{\partial p}.
@@ -50,7 +50,7 @@ $$
 \tau=Z\zeta,\qquad \tau_A=\sum_B Z_{AB}\,\zeta_B ,
 $$
 
-attaches to a spinor $\zeta$ a second spinor $\tau$. Read as a map, $\zeta\mapsto(\zeta,Z\zeta)$ is complex linear from $\mathbb{C}^2$ into $\mathbb{C}^4$, its image is two-dimensional, and the pair $(\zeta,\tau)$ is the **twistor** of the point. *Twistor Theory and Biquaternions* writes the same relation as $\omega=i\,x\pi$, with $x$ the Hermitian coordinate matrix and the $i$ the complex unit of twistor space; this article follows the source and writes $Z$, absorbing that $i$ into the coordinates, so that the Hermitian character of $Z$ on the real slice is simply the reality of $t',x,y,z$. Two facts follow at once, and both are used below.
+attaches to a spinor $\zeta$ a second spinor $\tau$. Read as a map, $\zeta\mapsto(\zeta,Z\zeta)$ is complex linear from $\mathbb{C}^2$ into $\mathbb{C}^4$, its image is two-dimensional, and the pair $(\zeta,\tau)$ is the **twistor** of the point. *Twistor Theory and Biquaternions* writes the same relation as $\omega=i\,x\pi$, with $x$ the Hermitian coordinate matrix and the $i$ the complex unit of twistor space; this article follows the source and writes $Z$, absorbing that $i$ into the coordinates, so that the Hermitian character of $Z$ on the real slice is simply the reality of $r'_t,r_x,r_y,r_z$. Two facts follow at once, and both are used below.
 
 **The image is a plane, so a spacetime point is a plane in twistor space.** Conversely every two-plane of $\mathbb{C}^4$ that is the graph of a linear map is the plane of exactly one point: the four entries of $Z$ are read off the plane, and the map between points and planes is a bijection. Projectively the plane becomes a **line** in $\mathbb{PT}$, and the correspondence is the classical one — a point of spacetime is a line, a point of twistor space is a two-surface.
 

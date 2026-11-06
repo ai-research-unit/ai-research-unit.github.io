@@ -15,7 +15,7 @@ The order is from the physical to the typographical. The SI units come first, wi
 | Quantity | Symbol | Unit |
 |---|---|---|
 | Length | $x,y,z$; $i c r'_t$ in the length coordinate | metre ($\mathrm{m}$) |
-| Time | $t'$ in the time coordinate | second ($\mathrm{s}$) |
+| Time | $r'_t$ in the time coordinate | second ($\mathrm{s}$) |
 | Mass | $m$ | kilogram ($\mathrm{kg}$) |
 | Temperature | $T$ | kelvin ($\mathrm{K}$) |
 | Electric charge | $ϙ$ | coulomb ($\mathrm{C}$) |
@@ -33,7 +33,7 @@ The order is from the physical to the typographical. The SI units come first, wi
 
 **The coefficients of one element share one unit.** The biquaternion norm is a sum of four squares of the coefficients of a single element, so the four terms are commensurable only if the four coefficients carry the same unit. The requirement is per element and not across elements: the coefficients of a four-displacement are lengths and its norm a length squared, the coefficients of a four-velocity are speeds and its norm a speed squared, and the temporal slot of a four-potential carries the parameter $a'_t=\xi^{\mathrm{scp}}/c$ rather than $\xi^{\mathrm{scp}}$ so that its four components share the unit of the vector potential. The unit is the unit of the quantity the element represents, and it is supplied by the identification.
 
-**The two writings of the temporal slot.** In the length coordinate the material position is $\tilde R_\varphi = i c r'_t\,e_t+\vec q$, with time measured in metres; this is the corpus's default. In the time coordinate the temporal component is $it'$, time stays in seconds, and the conversion is carried by the square of the coordinate: $Q_t=i c r'_t$ has $Q_t^2=-c^2{r'_{t}}^2$, and the metric stays the unit metric, $\delta_{\mu\nu}=(1,1,1,1)$. The quadratic form is one and the same, $\langle\tilde R_\varphi\rangle_{\natural}=-c^2{r'_{t}}^2+r_x^2+r_y^2+r_z^2$; the two differ only in where the factor $c$ is written, and an article that uses the second states it where the temporal slot is read.
+**The two writings of the temporal slot.** In the length coordinate the material position is $\tilde R_\varphi = i c r'_t\,e_t+\vec q$, with time measured in metres; this is the corpus's default. In the time coordinate the temporal component is $ir'_t$, time stays in seconds, and the conversion is carried by the square of the coordinate: $Q_t=i c r'_t$ has $Q_t^2=-c^2{r'_{t}}^2$, and the metric stays the unit metric, $\delta_{\mu\nu}=(1,1,1,1)$. The quadratic form is one and the same, $\langle\tilde R_\varphi\rangle_{\natural}=-c^2{r'_{t}}^2+r_x^2+r_y^2+r_z^2$; the two differ only in where the factor $c$ is written, and an article that uses the second states it where the temporal slot is read.
 
 **Dimensionless and dimensionful.** A pure number — the fine-structure constant $\alpha$, the ratio $g=2$, the phase $S/\hbar$, the trace normalisation $2$ — carries no unit and no conversion. A dimensionful constant is a unit conversion and is written with its unit. No dimensionful constant is derived by the algebra: $c$, $\hbar$, $k_B$, $G$, $m$ and $ϙ$ are inserted at the places where the structure requires a scale. The metrology says the same thing from the other side. Since the 2019 revision the SI fixes $c$, $h$, the elementary charge and $k_B$ by definition and realises the units from them, while a dimensionless constant such as $\alpha$ has to be measured. An article that sets a constant to one — $c=1$, $\hbar=1$ or $G=1$ — says so locally, and the constant returns wherever a dimensional statement is at issue.
 
@@ -111,7 +111,7 @@ A subscript is written with the underscore, `_`, inside the math delimiters, and
 
 **A subscript counts, or it names.** A subscript that only tells one occurrence from another is numeric, so that a family is $\tilde Q_1, \tilde Q_2, \dots$ and a second numbered family of the same statement takes the next numbers. A subscript that names the object or the role it qualifies is a **role label**, and a role label is written in upright roman, as in $\tilde Q_{\mathrm{f}t}$ and $\tilde U_{\mathrm r}$.
 
-**A role-labelled element carries its label in its coefficients.** The generic element-valued field is $\tilde Q_{\mathrm f}=Q_{\mathrm{f}t}e_t+\vec Q_{\mathrm f}$, and its components are $Q_{\mathrm{f}t}$ and $Q_{\mathrm{f}\mu}$: the label $\mathrm f$ belongs to the element and is carried once into the component subscript, beside the direction, so that the components are $Q_{\mathrm{f}t}$ and $Q_{\mathrm{f}\mu}$; it does not count a family. A numbered family is unaffected, $\tilde Q_1=Q_{1t}e_t+\vec Q_1$.
+**A role-labelled element carries its label in its coefficients.** The generic element-valued field is $\tilde Q_{\mathrm f}=Q_{\mathrm{f}r_t}e_t+\vec Q_{\mathrm f}$, and its components are $Q_{\mathrm{f}t}$ and $Q_{\mathrm{f}\mu}$: the label $\mathrm f$ belongs to the element and is carried once into the component subscript, beside the direction, so that the components are $Q_{\mathrm{f}t}$ and $Q_{\mathrm{f}\mu}$; it does not count a family. A numbered family is unaffected, $\tilde Q_1=Q_{1t}e_t+\vec Q_1$.
 
 **The two parts are named by their star.** The Hermitian part is $\tilde R_\psi$, the fixed element of the star, and the anti-Hermitian part is $\tilde R_\varphi$, its anti-fixed element: $\tilde Q=\tilde R_\psi+\tilde R_\varphi$ is the split read on the coefficients, defined in *Algebra and Element Conventions*, §*The Hermitian and Anti-Hermitian Subspaces*. The words **informational** and **material** name $\tilde R_\psi$ and $\tilde R_\varphi$ in the physical articles. The two letters label the parts of one element and not two fields, so no label passes into the coefficients: $\tilde R_\psi$ and $\tilde R_\varphi$ keep the names $Q_t,Q_x,Q_y,Q_z$ and select the slots.
 
@@ -134,7 +134,7 @@ The forms a subscript takes are these.
 
 ## Summary
 
-A unit element is not a physical unit. The series uses the SI, the coefficients of one element share one unit, and the default temporal slot is $i c r'_t$ in metres, with $it'$ and $g_{tt}=-c^2$ stated where an article uses it. A dimensionless number carries no unit and no conversion, and $\mu$ is read by context among the permeability, the inverse Compton length and the direction label.
+A unit element is not a physical unit. The series uses the SI, the coefficients of one element share one unit, and the default temporal slot is $i c r'_t$ in metres, with $ir'_t$ and $g_{tt}=-c^2$ stated where an article uses it. A dimensionless number carries no unit and no conversion, and $\mu$ is read by context among the permeability, the inverse Compton length and the direction label.
 
 Two superscript tokens run beside the element marks. $\mathrm{fop}$ marks the Fock operator, the one glyph that is not an element; $\mathrm{opp}$ marks the opposite algebra, and it is written on an algebra name or on an element that names a tensor factor. The Fock mark comes first and the dagger follows it, $a^{\mathrm{fop}\dagger}$. An upright label of a construction or a variant is written in the caret as well, three lowercase letters by default — $\mathrm{orb}$, $\mathrm{inc}$, $\mathrm{out}$, $\mathrm{ret}$, $\mathrm{reg}$, $\mathrm{lor}$, $\mathrm{wkb}$, $\mathrm{epr}$ in this corpus — and the index of the labels is *Index, Notation and Corpus Conventions*, §*The Three-Letter Labels*. Every token the caret carries is lowercase: $\operatorname{sym}(V)$ the symmetric algebra and $\tilde Q_1\tilde Q_2$ the general plain algebra are written as $\mathrm{opp}$ is.
 
@@ -146,7 +146,7 @@ A subscript is written with the underscore and one token. It is a component or a
 |---|---|
 | SI | Metre, second, kilogram, kelvin, coulomb, with the derived units built on them |
 | $i c r'_t$, $\vec q$ | The default material coordinate, time measured in metres |
-| $it'$, $g_{tt}=-c^2$ | The second writing of the temporal slot, time in seconds; stated where used |
+| $ir'_t$, $g_{tt}=-c^2$ | The second writing of the temporal slot, time in seconds; stated where used |
 | $\mu$ | Permeability, inverse Compton length $\mu=mc/\hbar$, or direction label; read by context |
 | $^{\mathrm{fop}}$ | The Fock-operator mark, the one glyph that is not an element |
 | $^{\mathrm{opp}}$ | The opposite algebra, written on an algebra name or on an element that names a tensor factor |

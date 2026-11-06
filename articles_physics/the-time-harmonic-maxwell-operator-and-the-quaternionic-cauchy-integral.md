@@ -14,7 +14,7 @@ The plan is the diagonalisation and then its consequences. The next section fixe
 
 ## The Time-Harmonic System in a Homogeneous Medium
 
-The convention is $\exp(-i\omega t')$, so that $\partial/\partial t'\to-i\omega$ and a monochromatic field is its complex amplitude. The medium is homogeneous and isotropic, and its response is carried by two possibly complex constants: the permittivity $\epsilon$ and the permeability $\mu$, so that the loss tangent of the dielectric and the inertia of the polarisation processes are both representable by making $\epsilon$ complex. The ohmic conduction of the medium enters separately, through the real conductivity $\sigma_*$, and the two are combined into a single **complex conductivity**
+The convention is $\exp(-i\omega r'_t)$, so that $\partial/\partial r'_t\to-i\omega$ and a monochromatic field is its complex amplitude. The medium is homogeneous and isotropic, and its response is carried by two possibly complex constants: the permittivity $\epsilon$ and the permeability $\mu$, so that the loss tangent of the dielectric and the inertia of the polarisation processes are both representable by making $\epsilon$ complex. The ohmic conduction of the medium enters separately, through the real conductivity $\sigma_*$, and the two are combined into a single **complex conductivity**
 
 $$
 \sigma:=\sigma_*-i\omega\epsilon ,
@@ -85,7 +85,7 @@ so that the curl in the first two equations of $(1)$ can be replaced by the full
 The spatial operator is the Moisil–Theodoresco operator of the series,
 
 $$
-D_3=\vec e_x\partial/\partial Q_x+\vec e_y\partial/\partial Q_y+\vec e_z\partial/\partial Q_z,
+D_3=\vec e_x\partial/\partial R_x+\vec e_y\partial/\partial R_y+\vec e_z\partial/\partial R_z,
 \qquad
 D_3^2=-\Delta ,
 $$
@@ -248,11 +248,11 @@ The time-dependent version of the same decomposition is stated in the book and m
 
 $$
 \ker\Bigl(\frac{1}{c^2}\partial^2/\partial {r'_{t}}^2-\Delta\Bigr)
-=\ker\Bigl(\frac{1}{c}\partial/\partial t'+iD_3\Bigr)\oplus\ker\Bigl(\frac{1}{c}\partial/\partial t'-iD_3\Bigr),
+=\ker\Bigl(\frac{1}{c}\partial/\partial r'_t+iD_3\Bigr)\oplus\ker\Bigl(\frac{1}{c}\partial/\partial r'_t-iD_3\Bigr),
 \tag{17}
 $$
 
-with the biquaternionic Maxwell operator $(1/c)\partial/\partial t'+iD_3$ of the time-dependent reduction. Every solution of the wave equation is the sum of a solution of the first-order operator and a solution of its conjugate, and the two summands are the two halves of the same diagonalisation. Equation $(16)$ is the time-harmonic analogue with $\alpha$ in place of the frequency and the rotated null-set of the generalised operator $N$ in place of the two first-order factors; in the lossless case, where the two chiral wavenumbers coincide, it is the statement that the Helmholtz field splits into the two circular polarisations.
+with the biquaternionic Maxwell operator $(1/c)\partial/\partial r'_t+iD_3$ of the time-dependent reduction. Every solution of the wave equation is the sum of a solution of the first-order operator and a solution of its conjugate, and the two summands are the two halves of the same diagonalisation. Equation $(16)$ is the time-harmonic analogue with $\alpha$ in place of the frequency and the rotated null-set of the generalised operator $N$ in place of the two first-order factors; in the lossless case, where the two chiral wavenumbers coincide, it is the statement that the Helmholtz field splits into the two circular polarisations.
 
 ## The Maxwell–Cauchy Kernel and the Integral Operators
 
@@ -386,8 +386,8 @@ The kernel of the theory is the outgoing Helmholtz kernel $\mathrm{Sd}_\alpha$ o
 | Symbol | Meaning |
 |---|---|
 | $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ | Biquaternion algebra, basis $e_t=1,\vec e_x,\vec e_y,\vec e_z$, scalar imaginary $i$ |
-| $D_3=\vec e_x\partial/\partial Q_x+\vec e_y\partial/\partial Q_y+\vec e_z\partial/\partial Q_z$ | Spatial Moisil–Theodoresco operator; $D_3^2=-\Delta$ |
-| $\Delta$ | Spatial Laplacian $\partial^2/\partial Q_x^2+\partial^2/\partial Q_y^2+\partial^2/\partial Q_z^2$ |
+| $D_3=\vec e_x\partial/\partial R_x+\vec e_y\partial/\partial R_y+\vec e_z\partial/\partial R_z$ | Spatial Moisil–Theodoresco operator; $D_3^2=-\Delta$ |
+| $\Delta$ | Spatial Laplacian $\partial^2/\partial R_x^2+\partial^2/\partial R_y^2+\partial^2/\partial R_z^2$ |
 | $\epsilon,\mu$ | Permittivity and permeability; possibly complex |
 | $\sigma_*$ | Real ohmic conductivity of the medium |
 | $\sigma=\sigma_*-i\omega\epsilon$ | Complex conductivity carried by the first Maxwell equation |

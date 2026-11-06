@@ -32,18 +32,18 @@ The product is the phase $i$ times a product of four generators, and it collapse
 
 **The gradient.** The derivative is the biquaternionic gradient of *Operator and Calculus Conventions*:
 $$
-\tilde\nabla=e_t\frac{\partial}{\partial Q_t}+\vec e_x\frac{\partial}{\partial Q_x}+\vec e_y\frac{\partial}{\partial Q_y}+\vec e_z\frac{\partial}{\partial Q_z},
+\tilde\nabla=e_t\frac{\partial}{\partial R_t}+\vec e_x\frac{\partial}{\partial R_x}+\vec e_y\frac{\partial}{\partial R_y}+\vec e_z\frac{\partial}{\partial R_z},
 \qquad
-\tilde\nabla^{\natural}=e_t\frac{\partial}{\partial Q_t}-\vec e_x\frac{\partial}{\partial Q_x}-\vec e_y\frac{\partial}{\partial Q_y}-\vec e_z\frac{\partial}{\partial Q_z},
+\tilde\nabla^{\natural}=e_t\frac{\partial}{\partial R_t}-\vec e_x\frac{\partial}{\partial R_x}-\vec e_y\frac{\partial}{\partial R_y}-\vec e_z\frac{\partial}{\partial R_z},
 $$
-On the material sector the substitution is $Q_t=i c r'_t$ and $Q_k=x_k$, so $\partial/\partial Q_t=\partial/\partial i c r'_t$. Its norm is the d'Alembertian $\Box$ of that article,
+On the material sector the substitution is $Q_t=i c r'_t$ and $Q_k=x_k$, so $\partial/\partial R_t=\partial/\partial i c r'_t$. Its norm is the d'Alembertian $\Box$ of that article,
 $$
 \Box=\Delta-\frac{1}{c^2}\frac{\partial^2}{\partial {r'_{t}}^2},
 $$
 with the one minus the square of the $i$.
 The gradient acts on the left. The free equation is first order in one field, $\tilde\nabla\tilde F=0$. The massive equation is not a one-field equation, because $\tilde\nabla^2$ is not scalar: the time unit $e_t$ is central and commutes with the three spatial units, so the time–space cross terms add instead of cancelling,
 $$
-\tilde\nabla^2=e_t\Bigl(\frac{\partial^2}{\partial Q_t^2}-\Delta_Q\Bigr)+2\sum_k\vec e_k\frac{\partial^2}{\partial Q_t\partial Q_k},
+\tilde\nabla^2=e_t\Bigl(\frac{\partial^2}{\partial R_t^2}-\Delta_Q\Bigr)+2\sum_k\vec e_k\frac{\partial^2}{\partial R_t\partial R_k},
 $$
 and the mixed term is a vector. The operator $\Box$ has no such term because $\tilde\nabla^{\natural}$ carries the spatial signs reversed, and that is why the d'Alembertian is the norm and not the square. The massive equation is the chiral pair of §*The Two Dirac Equations*, $\tilde\nabla\tilde{Ξ}^{\mathrm{sp}}_R=m\tilde{Ξ}^{\mathrm{sp}}_L$ and $\tilde\nabla^{\natural}\tilde{Ξ}^{\mathrm{sp}}_L=m\tilde{Ξ}^{\mathrm{sp}}_R$, and this article writes no other first-order massive equation of one field.
 
@@ -64,7 +64,7 @@ The opposite attachment, $\sum\epsilon\epsilon\,G^*_\nu\check c_{\nu\mu\lambda}G
 $$
 \check c_{\nu\mu\lambda}-\check c_{\lambda\mu\nu}=-2i\,\varepsilon_{\nu\mu\lambda\rho}\,j_\rho ,
 $$
-because $t'$ is symmetric under the exchange of the first and third slots while $\varepsilon$ is antisymmetric. The two readings must not be mixed, and the exchange isolates precisely the antisymmetric part of the structure constants — the part that survives against the field strength in §*Why the Mass Is Topological*. The Dirac Lagrangian quoted below keeps the source's own order, $\check c_{\nu\mu\lambda}$ with the starred derivative in the first slot, which is also the order of the companion's Lagrangian.
+because $r'_t$ is symmetric under the exchange of the first and third slots while $\varepsilon$ is antisymmetric. The two readings must not be mixed, and the exchange isolates precisely the antisymmetric part of the structure constants — the part that survives against the field strength in §*Why the Mass Is Topological*. The Dirac Lagrangian quoted below keeps the source's own order, $\check c_{\nu\mu\lambda}$ with the starred derivative in the first slot, which is also the order of the companion's Lagrangian.
 
 $H_\mu$ is the dual potential: a complex four-vector, the auxiliary field of the four-dimensional parent action. In the three-dimensional version the auxiliary field is the complex potential $B_\mu$ in the axial gauge $B_\mu j^\mu=0$, and the complex scalar $\xi$ is a spectator carried through both reductions unchanged.
 
@@ -151,7 +151,7 @@ and the scalar obeys its own massive equation, decoupled from $B$.
 
 The overall normalisation is the source's: the kinetic term carries $1/m$, so the mass appears in the denominator of the Maxwell term and in the numerator of the Chern–Simons term. Rescaling $F$ or $B$ moves the $m$ to one side or the other, and the invariant statement is the ratio.
 
-**Quoted, recomputed, and open.** The two parent actions, the four varied equations and the four Lagrangians are the source's, Eqs. (55)–(61), (71), (77)–(81) and (88). This pass recomputed the algebra those expressions use — the anticommutation relations of the four generators, the cancellation of the two factors of $i$ in $\Gamma\,iC_\mu$, the split $i\check c=\varepsilon j+i\,t'j$, the anti-self-duality of $H_{[\mu\nu]}$ and its complex rank three, the trace $H_{(\mu\nu)}=-\xi^*\epsilon_\mu\delta_{\mu\nu}$ with no sum on $\mu$, the reconstruction $G^*_\mu=\sum_\nu\epsilon_\nu H_{\mu\nu}j_\nu$, the total antisymmetry of $\check\varepsilon_{\nu\mu\lambda}$, the symmetries of $t'$ and the exact condition under which it vanishes against an antisymmetric pair, the exchange identity $\check c_{\nu\mu\lambda}-\check c_{\lambda\mu\nu}=-2i\varepsilon_{\nu\mu\lambda\rho}j_\rho$ — and not the eliminations themselves, which are a variational computation on the source's field content. One claim was tested and did not reproduce: the normalisation $K\cdot K=1$ of Eq. (93), with the corpus's weights, so it is carried as the source's own.
+**Quoted, recomputed, and open.** The two parent actions, the four varied equations and the four Lagrangians are the source's, Eqs. (55)–(61), (71), (77)–(81) and (88). This pass recomputed the algebra those expressions use — the anticommutation relations of the four generators, the cancellation of the two factors of $i$ in $\Gamma\,iC_\mu$, the split $i\check c=\varepsilon j+i\,t'j$, the anti-self-duality of $H_{[\mu\nu]}$ and its complex rank three, the trace $H_{(\mu\nu)}=-\xi^*\epsilon_\mu\delta_{\mu\nu}$ with no sum on $\mu$, the reconstruction $G^*_\mu=\sum_\nu\epsilon_\nu H_{\mu\nu}j_\nu$, the total antisymmetry of $\check\varepsilon_{\nu\mu\lambda}$, the symmetries of $r'_t$ and the exact condition under which it vanishes against an antisymmetric pair, the exchange identity $\check c_{\nu\mu\lambda}-\check c_{\lambda\mu\nu}=-2i\varepsilon_{\nu\mu\lambda\rho}j_\rho$ — and not the eliminations themselves, which are a variational computation on the source's field content. One claim was tested and did not reproduce: the normalisation $K\cdot K=1$ of Eq. (93), with the corpus's weights, so it is carried as the source's own.
 
 ## Why the Mass Is Topological
 
@@ -165,7 +165,7 @@ for which the equations of motion are unchanged while the mass term changes by a
 $$
 B_\mu\mapsto B_\mu+p^+_{\mu\nu}\,\partial/\partial x_\nu\Theta ,
 $$
-with $\Theta$ a function on the spin manifold; the Levi-Civita part of $\check c$ dies against the symmetric second derivative and the $t'$ part gives $j_\nu$ times the $\epsilon$-contracted one,
+with $\Theta$ a function on the spin manifold; the Levi-Civita part of $\check c$ dies against the symmetric second derivative and the $r'_t$ part gives $j_\nu$ times the $\epsilon$-contracted one,
 $$
 \check c_{\nu\mu\lambda}\frac{\partial^2\Theta}{\partial x_\mu\partial x_\lambda}=\epsilon_\nu j_\nu\sum_\mu\epsilon_\mu\frac{\partial^2\Theta}{\partial x_\mu^2},
 $$
@@ -179,7 +179,7 @@ t'_{\lambda\mu\nu\rho}=\epsilon_\lambda\epsilon_\nu\,\delta_{\lambda\mu}\delta_{
 $$
 where each term pairs two slots with $\delta$ and carries the weight of one slot from each pair. Its symmetries are not the naive ones. It is symmetric under $\lambda\leftrightarrow\nu$ — the first and third slots — and under $\mu\leftrightarrow\rho$, the second and fourth, and under the exchange of the two pairs $(\lambda\mu)\leftrightarrow(\nu\rho)$; it is **not** symmetric under $\lambda\leftrightarrow\mu$ or under $\mu\leftrightarrow\nu$, so a contraction with an antisymmetric tensor kills it only when the antisymmetric pair is the first and the third slot — verified, and verified to fail for every other pair.
 
-This matters for reading the reduction correctly. A sum $\sum_{\lambda,\nu}t'_{\lambda\mu\nu\rho}X_{\lambda\nu}$ with $X$ antisymmetric vanishes, so the $t'$ part is invisible to a field strength contracted on the first and third slots; but the source's reduced mass term, Eq. (88), contracts the second and third slots, $\check c_{\nu\mu\lambda}F_{\mu\lambda}$, where $t'$ does **not** drop out — checked. The source's spin-manifold Lagrangian nonetheless carries only the Levi-Civita term $\tfrac14\check\varepsilon_{\nu\mu\lambda}B^*_\nu F_{\mu\lambda}$: there the $t'$ pieces of the two terms of Eq. (81) cancel against each other once the slice conditions are imposed at $a=0$. That cancellation is part of the variational reduction and is quoted here, not recomputed; what is recomputed is the symmetry of $t'$ and the resulting exact vanishing condition.
+This matters for reading the reduction correctly. A sum $\sum_{\lambda,\nu}t'_{\lambda\mu\nu\rho}X_{\lambda\nu}$ with $X$ antisymmetric vanishes, so the $r'_t$ part is invisible to a field strength contracted on the first and third slots; but the source's reduced mass term, Eq. (88), contracts the second and third slots, $\check c_{\nu\mu\lambda}F_{\mu\lambda}$, where $r'_t$ does **not** drop out — checked. The source's spin-manifold Lagrangian nonetheless carries only the Levi-Civita term $\tfrac14\check\varepsilon_{\nu\mu\lambda}B^*_\nu F_{\mu\lambda}$: there the $r'_t$ pieces of the two terms of Eq. (81) cancel against each other once the slice conditions are imposed at $a=0$. That cancellation is part of the variational reduction and is quoted here, not recomputed; what is recomputed is the symmetry of $r'_t$ and the resulting exact vanishing condition.
 
 ## The Self-Dual Field Strength
 
@@ -199,14 +199,14 @@ Because the dual returns the same object, half of the six entries are dependent:
 $$
 G^*_\mu=+\sum_\nu\epsilon_\nu\,H_{\mu\nu}\,j_\nu .
 $$
-These signs are fixed and not conventional. With $\check c=(t'-i\varepsilon)j$ and $j=(0,0,0,-1)$ as the corpus has them, the three identities of this paragraph hold exactly on random $G$; and the map $j\mapsto-j$ flips $\check c$, $H$ and $\xi^*$ together, so all three are invariant under the only freedom the neutral vector leaves.
+These signs are fixed and not conventional. With $\check c=(r'_t-i\varepsilon)j$ and $j=(0,0,0,-1)$ as the corpus has them, the three identities of this paragraph hold exactly on random $G$; and the map $j\mapsto-j$ flips $\check c$, $H$ and $\xi^*$ together, so all three are invariant under the only freedom the neutral vector leaves.
 The same construction runs backwards from the auxiliary potential. The source's
 $$
 H_{[\mu\nu]}=\tfrac{i}{2(m-a)}\sum_{\lambda,\rho}\epsilon_\lambda\epsilon_\rho\,C_{\mu\lambda\rho\nu}F_{\lambda\rho},
 \qquad
 C_{\mu\nu\lambda\rho}:=t'_{\mu\nu\lambda\rho}-i\varepsilon_{\mu\nu\lambda\rho},
 $$
-is anti-self-dual for the same reason, and it is the object in which the reduced Lagrangian of the previous section is written. The four-index symbol $C_{\mu\nu\lambda\rho}$ — a tensor, not the generator $C_\mu$ — is the source's $c$ with no neutral vector contracted into it, and $\check c_{\mu\nu\lambda}=C_{\mu\nu\lambda\rho}j_\rho$ with $c_{\mu\nu\lambda}=C_{\mu\nu\lambda\rho}k_\rho$; the $\varepsilon$ part of $C$ is what carries the anti-self-duality, and the $t'$ part is what keeps a symmetric component alive. That symmetric component is the price of the construction: because $H_{\mu\nu}$ is not antisymmetric, it has no Bianchi identity, and the duality has to define its potential by hand instead of reading it off a closure.
+is anti-self-dual for the same reason, and it is the object in which the reduced Lagrangian of the previous section is written. The four-index symbol $C_{\mu\nu\lambda\rho}$ — a tensor, not the generator $C_\mu$ — is the source's $c$ with no neutral vector contracted into it, and $\check c_{\mu\nu\lambda}=C_{\mu\nu\lambda\rho}j_\rho$ with $c_{\mu\nu\lambda}=C_{\mu\nu\lambda\rho}k_\rho$; the $\varepsilon$ part of $C$ is what carries the anti-self-duality, and the $r'_t$ part is what keeps a symmetric component alive. That symmetric component is the price of the construction: because $H_{\mu\nu}$ is not antisymmetric, it has no Bianchi identity, and the duality has to define its potential by hand instead of reading it off a closure.
 
 ## The Two Dirac Equations
 
@@ -236,7 +236,7 @@ with no sum on $\mu$ in $\epsilon_\mu$. Two equations, one per value; the opposi
 $$
 \Bigl(-\tilde\nabla^{\natural}-m\,i\,\overline{\;\cdot\;}\,\vec e_z\Bigr)F=0,
 $$
-with $F\in\mathbb{B}$: the gradient acts from the left, the mass from the right, and the componentwise conjugation $\overline{\;\cdot\;}$ supplies the antilinear part. This is the source's equation: in units $c=1$ the time part of $-\tilde\nabla^{\natural}$ is $i\partial/\partial t'$ and its space part is $\vec e_x\partial/\partial Q_x+\vec e_y\partial/\partial Q_y+\vec e_z\partial/\partial Q_z$. Since $\Gamma$ is the right multiplication by $-i\vec e_z$, the mass term is $m\,\Gamma\overline F$, and the equation can be moved to one side:
+with $F\in\mathbb{B}$: the gradient acts from the left, the mass from the right, and the componentwise conjugation $\overline{\;\cdot\;}$ supplies the antilinear part. This is the source's equation: in units $c=1$ the time part of $-\tilde\nabla^{\natural}$ is $i\partial/\partial r'_t$ and its space part is $\vec e_x\partial/\partial R_x+\vec e_y\partial/\partial R_y+\vec e_z\partial/\partial R_z$. Since $\Gamma$ is the right multiplication by $-i\vec e_z$, the mass term is $m\,\Gamma\overline F$, and the equation can be moved to one side:
 $$
 -m\,i\,\overline F\,\vec e_z=m\,(-i\overline F\,\vec e_z)=m\,\Gamma\,\overline F
 \qquad\Longrightarrow\qquad
@@ -309,7 +309,7 @@ $$
 $$
 Maxwell plus a Chern–Simons mass, with $\check\varepsilon_{\nu\mu\lambda}=\sum_\rho\varepsilon_{\nu\mu\lambda\rho}j_\rho$ and the gauge equation $\sum_\nu\epsilon_\nu\,\partial F_{\nu\mu}/\partial x_\nu+\tfrac m2\sum_{\nu,\lambda}\epsilon_\nu\epsilon_\lambda\check\varepsilon_{\mu\nu\lambda}F^*_{\nu\lambda}=0$. The same $m$ is, in the other reduction, the non-integrable phase of the Dirac field: a shift $mK_\mu$ of the covariant derivative, with $K$ the source's unit complex vector, integrated along a path.
 
-Three facts make the mechanism work. The first-order mass term changes only by a total derivative under the gauge freedom of the dual potential, which is what "topological" means here. Of the two parts of $\check c$, only the Levi-Civita one appears in the reduced Lagrangian of Eq. (88) — the $t'$ part cancels in the reduction — and a Levi-Civita contraction is a Chern–Simons term. And the two-form $H_{\mu\nu}$ carries the same information as the s-vector — three complex components in the anti-self-dual $H_{[\mu\nu]}$ and one in the trace $H_{(\mu\nu)}=-\xi^*\epsilon_\mu\delta_{\mu\nu}$, with no sum on $\mu$, which is four — so the auxiliary field of the reduction is the antisymmetric part of the biquaternion.
+Three facts make the mechanism work. The first-order mass term changes only by a total derivative under the gauge freedom of the dual potential, which is what "topological" means here. Of the two parts of $\check c$, only the Levi-Civita one appears in the reduced Lagrangian of Eq. (88) — the $r'_t$ part cancels in the reduction — and a Levi-Civita contraction is a Chern–Simons term. And the two-form $H_{\mu\nu}$ carries the same information as the s-vector — three complex components in the anti-self-dual $H_{[\mu\nu]}$ and one in the trace $H_{(\mu\nu)}=-\xi^*\epsilon_\mu\delta_{\mu\nu}$, with no sum on $\mu$, which is four — so the auxiliary field of the reduction is the antisymmetric part of the biquaternion.
 
 The parent actions and the eliminations are the source's; the algebraic identities they use were recomputed for this article and hold. The eliminations themselves were not recomputed, and no quantum statement is made.
 
@@ -323,7 +323,7 @@ The parent actions and the eliminations are the source's; the algebraic identiti
 | $\omega=-\vec e_z$ | Pseudoscalar, $\omega^2=-e_t$; the source's $i$, kept distinct from the central unit |
 | $\tilde\nabla$, $\tilde\nabla^{\natural}$ | Biquaternionic gradient and its quaternion conjugate, elements acting on the left |
 | $\tilde\nabla^{ea}_\mu$, $\tilde\nabla^{a}_\mu$ | The same derivative with the electromagnetic and $a$ insertions; superscripts name insertions, not a second operator |
-| $\Box$ | The d'Alembertian, the norm of $\tilde\nabla$; on $Q_t=i c r'_t$ it is $\Delta-\frac{1}{c^2}\partial^2/\partial t'^2$ |
+| $\Box$ | The d'Alembertian, the norm of $\tilde\nabla$; on $Q_t=i c r'_t$ it is $\Delta-\frac{1}{c^2}\partial^2/\partial r'_t^2$ |
 | $c_5{}_{\mu\nu}$ | The source's array of the chirality on the four-vector carrier, written here as $-\epsilon_\mu\check c_{\mu\nu\lambda}k_\lambda$ with no sum on $\mu$; $(c_5)^2=1$, $\epsilon$-antisymmetric |
 | $\delta_{\mu\nu}=(1,1,1,1)$ | The unit metric of the index space; it pairs two slots as $\epsilon_\mu\delta_{\mu\nu}$, with no sum on $\mu$ |
 | $\epsilon=(1,-1,-1,-1)$ | The plain weight, read from the multiplication $\mathrm{Sc}(e_\mu e_\nu)=\epsilon_\mu\delta_{\mu\nu}$; the diagonal of the generator pairing; distinct from $\varepsilon$ |
@@ -336,7 +336,7 @@ The parent actions and the eliminations are the source's; the algebraic identiti
 | $A_\mu$ | Electromagnetic four-potential; it enters only the covariant derivative |
 | $B_\mu, N_\mu$ | Real and imaginary four-vectors of the field, $G=B+iN$ |
 | $k_\mu$, $j_\mu$ | Timelike and spacelike neutral vectors, units of $c$ and $\check c$ |
-| $c_{\mu\nu\lambda}$, $\check c_{\mu\nu\lambda}$ | Structure constants on $k$ and on $j$; $\check c=(t'-i\varepsilon)j$ |
+| $c_{\mu\nu\lambda}$, $\check c_{\mu\nu\lambda}$ | Structure constants on $k$ and on $j$; $\check c=(r'_t-i\varepsilon)j$ |
 | $\check\varepsilon_{\nu\mu\lambda}=\sum_\rho\varepsilon_{\nu\mu\lambda\rho}j_\rho$ | Levi-Civita symbol of the $j$-slice |
 | $H_{\mu\nu}=\sum_\lambda\epsilon_\lambda G^*_\lambda\check c_{\lambda\mu\nu}$ | Two-form of the s-vector; $H_{(\mu\nu)}=-\xi^*\epsilon_\mu\delta_{\mu\nu}$ with no sum on $\mu$, and $H_{[\mu\nu]}$ anti-self-dual |
 | $\xi^*=G^*\cdot j$ | Trace of the two-form, $\xi^*=\sum_\mu\epsilon_\mu G^*_\mu j_\mu$; the complex scalar $\xi=G\cdot j$ with a star |

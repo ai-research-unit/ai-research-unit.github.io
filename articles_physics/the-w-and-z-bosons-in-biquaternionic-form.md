@@ -40,9 +40,9 @@ $$
 \mathcal{L}^{\mathrm{kin}}=-\tfrac14\sum_{a,\mu,\nu}W_{\mu\nu a}W_{\mu\nu a}-\tfrac14\,\sum_{\mu,\nu}B_{\mu\nu}B_{\mu\nu},
 $$
 $$
-W_{\mu\nu a}=\frac{\partial W_{\nu a}}{\partial Q_\mu}-\frac{\partial W_{\mu a}}{\partial Q_\nu}+g\sum_{b,c}\varepsilon_{abc}W_{\mu b}W_{\nu c},
+W_{\mu\nu a}=\frac{\partial W_{\nu a}}{\partial R_\mu}-\frac{\partial W_{\mu a}}{\partial R_\nu}+g\sum_{b,c}\varepsilon_{abc}W_{\mu b}W_{\nu c},
 \qquad
-B_{\mu\nu}=\frac{\partial B_\nu}{\partial Q_\mu}-\frac{\partial B_\mu}{\partial Q_\nu}.
+B_{\mu\nu}=\frac{\partial B_\nu}{\partial R_\mu}-\frac{\partial B_\mu}{\partial R_\nu}.
 $$
 The W fields are charged under the electromagnetic subgroup and the physical charged combinations are
 $$
@@ -70,7 +70,7 @@ $$
 \qquad
 v=246.22\ \mathrm{GeV},
 $$
-gives, through the covariant kinetic term $|D_\mu\xi^{\mathrm{scl}}|^2$, the squared norm summed over the two components, with $D_\mu=\partial/\partial Q_\mu+ig\sum_a T_aW_{\mu a}+i\,g_{\mathrm Y}Y_\xi^{\mathrm{scl}} B_\mu$, the mass terms
+gives, through the covariant kinetic term $|D_\mu\xi^{\mathrm{scl}}|^2$, the squared norm summed over the two components, with $D_\mu=\partial/\partial R_\mu+ig\sum_a T_aW_{\mu a}+i\,g_{\mathrm Y}Y_\xi^{\mathrm{scl}} B_\mu$, the mass terms
 $$
 M_W=\frac{gv}{2},
 \qquad
@@ -98,7 +98,7 @@ $$
 $$
 which holds for a scalar multiplet of weak isospin $1/2$ and hypercharge $1/2$; the measured value, $\rho=1.00038\pm0.00020$, defined with the on-shell mixing angle, is consistent with it. The measured masses are $M_W=80.377\pm0.012$ GeV and $M_Z=91.1876\pm0.0021$ GeV, and the measured weak mixing angle is $\sin^2\theta_W=0.23122\pm0.00004$ in the $\overline{\mathrm{MS}}$ scheme. These values are the empirical input of the sector; the tree-level relations above are identities, and the difference between the tree-level expressions and the measured masses is the radiative correction $\Delta r$, which is standard.
 
-The framework's mass formula for an abelian charged scalar, $\mathcal{L}\supset-\sum_{\mu,\nu}g_{\mu\nu}(D_\mu\xi^{\mathrm{scl}})^*(D_\nu\xi^{\mathrm{scl}})$ with $D_\mu=\partial/\partial Q_\mu+i\kappa A_\mu$ and $\langle|\xi^{\mathrm{scl}}|\rangle=v/\sqrt2$, is
+The framework's mass formula for an abelian charged scalar, $\mathcal{L}\supset-\sum_{\mu,\nu}g_{\mu\nu}(D_\mu\xi^{\mathrm{scl}})^*(D_\nu\xi^{\mathrm{scl}})$ with $D_\mu=\partial/\partial R_\mu+i\kappa A_\mu$ and $\langle|\xi^{\mathrm{scl}}|\rangle=v/\sqrt2$, is
 $$
 \boxed{\;M_A=\frac{ϙ v}{\hbar}=\kappa v\;},
 $$
@@ -160,11 +160,11 @@ $$
 +ie\Big[\big(W^+_{\mu\nu}W^-_\mu-W^-_{\mu\nu}W^+_\mu\big)A_\nu+W^+_\mu W^-_\nu A_{\mu\nu}\Big],
 $$
 $$
-W^\pm_{\mu\nu}=\frac{\partial W^\pm_\nu}{\partial Q_\mu}-\frac{\partial W^\pm_\mu}{\partial Q_\nu},
+W^\pm_{\mu\nu}=\frac{\partial W^\pm_\nu}{\partial R_\mu}-\frac{\partial W^\pm_\mu}{\partial R_\nu},
 \qquad
-Z_{\mu\nu}=\frac{\partial Z_\nu}{\partial Q_\mu}-\frac{\partial Z_\mu}{\partial Q_\nu},
+Z_{\mu\nu}=\frac{\partial Z_\nu}{\partial R_\mu}-\frac{\partial Z_\mu}{\partial R_\nu},
 \qquad
-A_{\mu\nu}=\frac{\partial A_\nu}{\partial Q_\mu}-\frac{\partial A_\mu}{\partial Q_\nu},
+A_{\mu\nu}=\frac{\partial A_\nu}{\partial R_\mu}-\frac{\partial A_\mu}{\partial R_\nu},
 $$
 $$
 \mathcal{L}_{4}=-\frac{g^2}{4}\Big[\big(\sum_{a,\mu}W^a_\mu W^a_\mu\big)^2-\sum_{a,b}\big(\sum_\mu W^a_\mu W^b_\mu\big)^2\Big],
@@ -197,7 +197,7 @@ A free W or Z of mass $M$ is the Proca field $\tilde A\in\mathbb{M}_-$ of the co
 $$
 \mathcal{L}=-\tfrac14\sum_{\mu,\nu}F_{\mu\nu}F_{\mu\nu}-\tfrac12 M^2 \sum_\mu V_\mu V_\mu,
 \qquad
-F_{\mu\nu}=\frac{\partial V_\nu}{\partial Q_\mu}-\frac{\partial V_\mu}{\partial Q_\nu},
+F_{\mu\nu}=\frac{\partial V_\nu}{\partial R_\mu}-\frac{\partial V_\mu}{\partial R_\nu},
 $$
 $$
 \tilde\nabla\tilde F-M^2\tilde A=0,
@@ -261,11 +261,11 @@ The electromagnetic current is a different case, and it is reached. The unbroken
 
 The trilinear and quartic vertices of the electroweak vector bosons come from the non-abelian curvature, and here the framework's structure is sufficient in form. The previous part writes the two vertices in their electroweak form, with the charged and neutral combinations already made; this section writes them in the general non-abelian form from which that specialization follows, so that the structure constants that appear are visibly the ones of the compact factor. Writing the curvature as
 $$
-F_{\mu\nu}=\frac{\partial\mathcal{A}_\nu}{\partial Q_\mu}-\frac{\partial\mathcal{A}_\mu}{\partial Q_\nu}+i\kappa[\mathcal{A}_\mu,\mathcal{A}_\nu],
+F_{\mu\nu}=\frac{\partial\mathcal{A}_\nu}{\partial R_\mu}-\frac{\partial\mathcal{A}_\mu}{\partial R_\nu}+i\kappa[\mathcal{A}_\mu,\mathcal{A}_\nu],
 $$
 the cubic term in the action is linear in the commutator and the quartic term quadratic, so that
 $$
-\mathcal{L}_{3}\sim\kappa\sum_{a,b,c}f_{abc}\Big(\frac{\partial\mathcal{A}_{\nu a}}{\partial Q_\mu}-\frac{\partial\mathcal{A}_{\mu a}}{\partial Q_\nu}\Big)\mathcal{A}_{\mu b}\mathcal{A}_{\nu c},
+\mathcal{L}_{3}\sim\kappa\sum_{a,b,c}f_{abc}\Big(\frac{\partial\mathcal{A}_{\nu a}}{\partial R_\mu}-\frac{\partial\mathcal{A}_{\mu a}}{\partial R_\nu}\Big)\mathcal{A}_{\mu b}\mathcal{A}_{\nu c},
 \qquad
 \mathcal{L}_{4}\sim\kappa^2\sum_{a,b,c,d}f_{abe}f_{cde}\mathcal{A}_{\mu a}\mathcal{A}_{\nu b}\mathcal{A}_{\mu c}\mathcal{A}_{\nu d},
 $$
@@ -401,7 +401,7 @@ The charged current is chiral, $J^{+}_\mu$ of §*The Currents and the Self-Coupl
 | $M_A=\kappa v=ϙ v/\hbar$ | Framework abelian mass from the central scalar |
 | $J^{+}_\mu=\sum_{\text{doublets}}\mathrm{Sc}\big(\tilde{Ξ}^{\mathrm{sp}*}_{\mathrm u}\,i\,(i\vec e_\mu\tilde{Ξ}^{\mathrm{sp}}_{\mathrm d,\mathrm L}\vec e_{\nu(\mu)})\vec e_x\big)$ | Charged current (chiral) |
 | $J_{Z\mu}=\sum_f\mathrm{Sc}\big(f^{*}\,i\,(i\vec e_\mu(T_{3f}f_{\mathrm L}-Q_f\sin^2\theta_Wf)\vec e_{\nu(\mu)})\vec e_x\big)$ | Neutral current |
-| $\mathcal{L}_3\sim\kappa\sum_{a,b,c}f_{abc}(\partial\mathcal{A}_{\nu a}/\partial Q_\mu-\partial\mathcal{A}_{\mu a}/\partial Q_\nu)\mathcal{A}_{\mu b}\mathcal{A}_{\nu c}$, $\mathcal{L}_4\sim\kappa^2\sum_{a,b,c,d}f_{abe}f_{cde}\mathcal{A}_{\mu a}\mathcal{A}_{\nu b}\mathcal{A}_{\mu c}\mathcal{A}_{\nu d}$ | Trilinear and quartic self-couplings, derivative pair antisymmetrized |
+| $\mathcal{L}_3\sim\kappa\sum_{a,b,c}f_{abc}(\partial\mathcal{A}_{\nu a}/\partial R_\mu-\partial\mathcal{A}_{\mu a}/\partial R_\nu)\mathcal{A}_{\mu b}\mathcal{A}_{\nu c}$, $\mathcal{L}_4\sim\kappa^2\sum_{a,b,c,d}f_{abe}f_{cde}\mathcal{A}_{\mu a}\mathcal{A}_{\nu b}\mathcal{A}_{\mu c}\mathcal{A}_{\nu d}$ | Trilinear and quartic self-couplings, derivative pair antisymmetrized |
 | $-\tfrac14\sum_{\mu,\nu}F_{\mu\nu}F_{\mu\nu}-\tfrac12M^2\sum_\mu V_\mu V_\mu$ | Proca Lagrangian of a massive vector $V$; $\langle\tilde\nabla,\tilde A\rangle_{\natural}=0$ |
 | $\sum_r\varepsilon_{r\mu}\varepsilon_{r\nu}=\mathcal{P}_{\mu\nu}=\delta_{\mu\nu}+p_\mu p_\nu/M^2$ | Polarization completeness, $\mathcal{P}$ the transverse sum |
 | $\delta_{\mu\nu}$ | The unit metric of *Frame and Metric Conventions*, $(1,1,1,1)$ on the four $Q_\mu$, the one metric the displays use |

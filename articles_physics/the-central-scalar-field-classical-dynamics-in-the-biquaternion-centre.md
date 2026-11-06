@@ -12,7 +12,7 @@ Four results are established.
 
 - **The field equation in the centre.** The classical action
 $$
-S=\int\left[-\tfrac12\sum_\mu\partial/\partial Q_\mu\,\xi\,\partial/\partial Q_\mu\,\xi-\tfrac12\mu^2\xi^2+g\rho\,\xi\right]d^4x
+S=\int\left[-\tfrac12\sum_\mu\partial/\partial R_\mu\,\xi\,\partial/\partial R_\mu\,\xi-\tfrac12\mu^2\xi^2+g\rho\,\xi\right]d^4x
 $$
 has the Euler–Lagrange equation $(\Box-\mu^2)\tilde{Ξ}=-g\rho\,e_t$, where $\Box=\tilde{\nabla}\tilde{\nabla}^{\natural}$ is central and scalar, so the equation acts on the single scalar component. The free field obeys $(\Box-\mu^2)\tilde{Ξ}=0$, with dispersion $\omega^2=c^2k^2+c^2\mu^2$ and range $\mu^{-1}$.
 - **The static central solution.** A point source of strength $Ϙ$ gives the Yukawa field $\tilde{Ξ}=gQ\,\exp(-\mu r)/(4\pi r)\,e_t$, whose massless limit is the $1/r$ potential $gQ/(4\pi r)$.
@@ -45,7 +45,7 @@ The first property to record is that the centre is not merely a subspace: it is 
 The central scalar field is
 
 $$
-\tilde{Ξ}(x)=\xi(x)\,e_t, \qquad \xi:\mathbb{R}^{1,3}\to\mathbb{C},
+\tilde{Ξ}(r_x)=\xi(r_x)\,e_t, \qquad \xi:\mathbb{R}^{1,3}\to\mathbb{C},
 $$
 
 a single complex-valued function of the event. Its real and imaginary parts are
@@ -66,8 +66,8 @@ The classical action of a real central scalar field coupled to a prescribed sour
 
 $$
 S=\int\mathcal{L}\,d^4x, \qquad
-\mathcal{L}=-\tfrac12\sum_\mu\partial/\partial Q_\mu\,\xi\,\partial/\partial Q_\mu\,\xi-\tfrac12\mu^2\xi^2+g\rho\,\xi,
-\qquad d^4x=c\,dt'\,dx\,dy\,dz .
+\mathcal{L}=-\tfrac12\sum_\mu\partial/\partial R_\mu\,\xi\,\partial/\partial R_\mu\,\xi-\tfrac12\mu^2\xi^2+g\rho\,\xi,
+\qquad d^4x=c\,dr'_t\,dx\,dy\,dz .
 $$
 
 The first two terms are the standard kinetic and mass terms of a relativistic scalar field, with the sign that makes the energy positive; the third is the source coupling, whose sign convention is fixed below by the requirement that like sources attract. The action is a real central scalar, and the field is a single real function, so the variation is elementary.
@@ -77,7 +77,7 @@ The first two terms are the standard kinetic and mass terms of a relativistic sc
 The Euler–Lagrange equation for the single component $\xi$ is
 
 $$
-\frac{\partial\mathcal{L}}{\partial\xi}-\partial/\partial Q_\mu\,\frac{\partial\mathcal{L}}{\partial(\partial/\partial Q_\mu\,\xi)}=0
+\frac{\partial\mathcal{L}}{\partial\xi}-\partial/\partial R_\mu\,\frac{\partial\mathcal{L}}{\partial(\partial/\partial R_\mu\,\xi)}=0
 \quad\Longrightarrow\quad
 -\mu^2\xi+g\rho+\Box\xi=0 ,
 $$
@@ -105,10 +105,10 @@ the biquaternionic Klein–Gordon equation of the companion article, here read a
 In the absence of sources, write a plane wave
 
 $$
-\tilde{Ξ}(x)=\tilde{Ξ}_0\,\exp(i(\vec k\cdot(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)-\omega t')), \qquad \tilde{Ξ}_0\in\mathbb{C},
+\tilde{Ξ}(r_x)=\tilde{Ξ}_0\,\exp(i(\vec k\cdot(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)-\omega r'_t)), \qquad \tilde{Ξ}_0\in\mathbb{C},
 $$
 
-with the central phase $\exp(i(\vec k\cdot(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)-\omega t'))$ understood as multiplication by a central element. Because $\Box=-c^{-2}\,\partial^2/\partial {r'_{t}}^2+\Delta$ acts on it as $\omega^2/c^2-k^2$, the free equation requires the **dispersion relation**
+with the central phase $\exp(i(\vec k\cdot(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)-\omega r'_t))$ understood as multiplication by a central element. Because $\Box=-c^{-2}\,\partial^2/\partial {r'_{t}}^2+\Delta$ acts on it as $\omega^2/c^2-k^2$, the free equation requires the **dispersion relation**
 
 $$
 \omega^2=c^2k^2+c^2\mu^2=c^2k^2+\frac{m^2c^4}{\hbar^2} .
@@ -157,17 +157,17 @@ Two properties of the solution matter for what follows. It is **static** and **s
 
 ### The Field of a Moving Source
 
-It is worth recording the moving case, both for completeness and because the absence of a magnetic counterpart is the subject of a later section. The retarded Green's function of the massless wave operator is $G^{\mathrm{ret}}(x)={\delta(t'_2-t'+|r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z-(x_2\,\vec e_x+y_2\,\vec e_y+z_2\,\vec e_z)|/c)}/(4\pi|r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z-(x_2\,\vec e_x+y_2\,\vec e_y+z_2\,\vec e_z)|)$, and for a point source moving on a worldline $x_s(t')\,\vec e_x+y_s(t')\,\vec e_y+z_s(t')\,\vec e_z$ the field is the scalar Liénard–Wiechert potential
+It is worth recording the moving case, both for completeness and because the absence of a magnetic counterpart is the subject of a later section. The retarded Green's function of the massless wave operator is $G^{\mathrm{ret}}(r_x)={\delta(r'_{t,2}-r'_t+|r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z-(x_2\,\vec e_x+y_2\,\vec e_y+z_2\,\vec e_z)|/c)}/(4\pi|r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z-(x_2\,\vec e_x+y_2\,\vec e_y+z_2\,\vec e_z)|)$, and for a point source moving on a worldline $x_s(r'_t)\,\vec e_x+y_s(r'_t)\,\vec e_y+z_s(r'_t)\,\vec e_z$ the field is the scalar Liénard–Wiechert potential
 
 $$
-\tilde{Ξ}(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z,t')=\frac{gQ}{4\pi}\,\frac{1}{R\left(1-\vec\beta\cdot\vec u\right)}\,e_t ,
+\tilde{Ξ}(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z,r'_t)=\frac{gQ}{4\pi}\,\frac{1}{R\left(1-\vec\beta\cdot\vec u\right)}\,e_t ,
 \qquad
-R=|r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z-(x_s\,\vec e_x+y_s\,\vec e_y+z_s\,\vec e_z)(t'_r)|,\quad
+R=|r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z-(x_s\,\vec e_x+y_s\,\vec e_y+z_s\,\vec e_z)(r'_{t,\mathrm{ret}})|,\quad
 \vec\beta=\frac{\vec v_s}{c},\quad
-\vec u=\frac{r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z-(x_s\,\vec e_x+y_s\,\vec e_y+z_s\,\vec e_z)(t'_r)}{R},
+\vec u=\frac{r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z-(x_s\,\vec e_x+y_s\,\vec e_y+z_s\,\vec e_z)(r'_{t,\mathrm{ret}})}{R},
 $$
 
-evaluated at the retarded time $t'_r=t'-R/c$. The formula is the scalar counterpart of the electromagnetic Liénard–Wiechert potential: the retarded denominator is the same, but there is **one** potential function and no vector potential, so there is no field strength tensor, no electric–magnetic decomposition, and no magnetic field. A moving scalar source produces only a scalar potential, and this is the field-theoretic face of the subcategory's subject.
+evaluated at the retarded time $r'_{t,\mathrm{ret}}=r'_t-R/c$. The formula is the scalar counterpart of the electromagnetic Liénard–Wiechert potential: the retarded denominator is the same, but there is **one** potential function and no vector potential, so there is no field strength tensor, no electric–magnetic decomposition, and no magnetic field. A moving scalar source produces only a scalar potential, and this is the field-theoretic face of the subcategory's subject.
 
 ## The Field Energy and the Stress–Energy
 
@@ -176,7 +176,7 @@ evaluated at the retarded time $t'_r=t'-R/c$. The formula is the scalar counterp
 The stress–energy tensor of the central scalar field is that of a real scalar field, computed in the companion article *Stress–Energy, Conservation Laws and the Field Action in Biquaternionic Form*. Its energy density is
 
 $$
-T_{tt}=\frac{1}{2c^2}\left(\partial\xi/\partial t'\right)^{2}+\tfrac12(\nabla\xi)^2+\tfrac12\mu^2\xi^2>0 ,
+T_{tt}=\frac{1}{2c^2}\left(\partial\xi/\partial r'_t\right)^{2}+\tfrac12(\nabla\xi)^2+\tfrac12\mu^2\xi^2>0 ,
 $$
 
 positive for every field configuration, and its conservation is the statement $\sum_\mu\varepsilon_\mu\,\partial T_{\mu\nu}/\partial x_\mu=0$ on shell, in the $\mathbb{M}_-$ frame with $\varepsilon=(1,-1,-1,-1)$, the indices low and the weight in the sum. The three terms are the kinetic, gradient and mass contributions; all three are central scalars, and their positivity is what fixes the sign of the action above. For a **static** field the kinetic term vanishes and the energy is stored in the gradient and in the mass term, and the momentum density vanishes, $T_{tj}=0$: a static central scalar field carries energy but no momentum, which is the field-theoretic statement that it is a static central configuration.
@@ -226,7 +226,7 @@ which is exactly the inverse-square force of the central-force articles, with $\
 The force is central for an algebraic reason. The field $\tilde{Ξ}=\xi(r)e_t$ is valued in the centre and is therefore invariant under the rotation group, and its gradient transforms as a vector:
 
 $$
-\vec F(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)=-\nabla E(r)=g_{\mathrm t}\,\nabla\xi(r)=g_{\mathrm t}\,\frac{d\xi}{dr}\,\vec u_r ,
+\vec F(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)=-\nabla E(r)=g_{\mathrm r_t}\,\nabla\xi(r)=g_{\mathrm r_t}\,\frac{d\xi}{dr}\,\vec u_r ,
 $$
 
 a real vector parallel to the position, pointing inward because $\frac{d\xi}{dr}<0$ for the attractive field. In the algebra's criterion, $[\vec r,\vec F]=0$, so the force commutes with the position and the angular momentum $\vec L=\vec r\times\vec p=\tfrac12[\vec r,\vec p]$ is conserved. The potential energy $E(r)e_t$ is a **central scalar**, an element of the centre, so the whole configuration is a central-scalar configuration in the sense of the companion article *The Central-Scalar Limit of Classical Mechanics in Biquaternionic Form*: scalar data in the centre, configuration a real vector in the material sector, no vector direction of the informational sector occupied. The field-theoretic origin of a central force is therefore the centrality of the field's value space, not an assumption about the force law.
@@ -257,7 +257,7 @@ which acts on the single complex component by multiplication. Because $i$ is cen
 The complex Lagrangian
 
 $$
-\mathcal{L}=-\tfrac12\sum_\mu\partial/\partial Q_\mu\,\xi^*\,\partial/\partial Q_\mu\,\xi-\tfrac12\mu^2|\xi|^2
+\mathcal{L}=-\tfrac12\sum_\mu\partial/\partial R_\mu\,\xi^*\,\partial/\partial R_\mu\,\xi-\tfrac12\mu^2|\xi|^2
 $$
 
 is invariant under the central phase, and Noether's theorem gives the conserved current
@@ -327,13 +327,13 @@ The three statements are the field-theoretic form of the spin-zero condition: a 
 The central scalar field in the biquaternion framework is a field valued in the centre $\mathbb{C}_{\mathbb{B}}=\operatorname{span}_{\mathbb{R}}\{e_t,ie_t\}$,
 
 $$
-\tilde{Ξ}(x)=\xi(x)e_t ,
+\tilde{Ξ}(r_x)=\xi(r_x)e_t ,
 $$
 
 a single complex scalar component. Because it is central it commutes with the biquaternionic gradient and with every rotation, so it is a Lorentz scalar and a rotational scalar, and its classical action
 
 $$
-S=\int\left[-\tfrac12\sum_\mu\partial/\partial Q_\mu\,\xi\,\partial/\partial Q_\mu\,\xi-\tfrac12\mu^2\xi^2+g\rho\,\xi\right]d^4x,
+S=\int\left[-\tfrac12\sum_\mu\partial/\partial R_\mu\,\xi\,\partial/\partial R_\mu\,\xi-\tfrac12\mu^2\xi^2+g\rho\,\xi\right]d^4x,
 \qquad \mu=\frac{mc}{\hbar},
 $$
 
@@ -369,19 +369,19 @@ The complex field carries the algebra's central phase $\tilde{Ξ}\mapsto \exp(i\
 | $\mathbb{C}_{\mathbb{B}}\cap\mathbb{M}_+=\mathbb{R}e_t$, $\mathbb{C}_{\mathbb{B}}\cap\mathbb{M}_-=\mathbb{R}ie_t$ | The centre's one real direction in each sector |
 | $\tilde{Ξ}=\xi e_t$ | Central scalar field; $\xi$ a complex scalar function |
 | $\xi_1,\xi_2$ | Real and imaginary parts of $\xi$ |
-| $\tilde{\nabla},\tilde{\nabla}^{\natural}$, $\Box=\tilde{\nabla}\tilde{\nabla}^{\natural}=\partial^2/\partial Q_t^2+\Delta$ | Gradient, conjugate gradient, d'Alembertian (central, scalar) |
+| $\tilde{\nabla},\tilde{\nabla}^{\natural}$, $\Box=\tilde{\nabla}\tilde{\nabla}^{\natural}=\partial^2/\partial R_t^2+\Delta$ | Gradient, conjugate gradient, d'Alembertian (central, scalar) |
 | $\mu=mc/\hbar$ | Mass parameter, the inverse range; classically only $\mu^{-1}$ matters |
-| $\mathcal{L}=-\tfrac12\sum_\mu\partial/\partial Q_\mu\,\xi\,\partial/\partial Q_\mu\,\xi-\tfrac12\mu^2\xi^2+g\rho\xi$ | Real scalar Lagrangian |
+| $\mathcal{L}=-\tfrac12\sum_\mu\partial/\partial R_\mu\,\xi\,\partial/\partial R_\mu\,\xi-\tfrac12\mu^2\xi^2+g\rho\xi$ | Real scalar Lagrangian |
 | $(\Box-\mu^2)\tilde{Ξ}=-g\rho e_t$ | Field equation with source |
 | $\omega^2=c^2k^2+c^2\mu^2$ | Dispersion relation of the free field |
 | $G_\mu=\exp(-\mu r)/(4\pi r)$ | Screened Green's function; $(\Delta-\mu^2)G_\mu=-\delta^{(3)}$ |
 | $Ϙ,\rho,g,g_{\mathrm t}$ | Source strength, source density, field coupling, test coupling |
 | $\tilde{Ξ}=gQ\exp(-\mu r)/(4\pi r)\,e_t$ | Yukawa field of a point source; $gQ/(4\pi r)\,e_t$ for $\mu=0$ |
-| $\vec\beta$, $R$, $t'_r$ | Source velocity over $c$, retarded distance, retarded time |
-| $T_{tt}=\tfrac12\left(\partial\xi/\partial t'\right)^{2}/c^2+\tfrac12(\nabla\xi)^2+\tfrac12\mu^2\xi^2$ | Energy density, positive |
+| $\vec\beta$, $R$, $r'_{t,\mathrm{ret}}$ | Source velocity over $c$, retarded distance, retarded time |
+| $T_{tt}=\tfrac12\left(\partial\xi/\partial r'_t\right)^{2}/c^2+\tfrac12(\nabla\xi)^2+\tfrac12\mu^2\xi^2$ | Energy density, positive |
 | $A=gQ/(4\pi)$; $E_{\text{field}}=2\pi A^2/a$ | Field amplitude; massless field energy outside radius $a$ |
 | $E(r)=-\kappa \exp(-\mu r)/r$, $\kappa=g\,g_{\mathrm t}Ϙ/(4\pi)$ | Central interaction energy; $\kappa>0$ attractive |
-| $\vec F=-\nabla E=g_{\mathrm t}\,\nabla\xi=g_{\mathrm t}\,(d\xi/dr)\,\vec u_r$ | Central force on the test source (inward) |
+| $\vec F=-\nabla E=g_{\mathrm r_t}\,\nabla\xi=g_{\mathrm r_t}\,(d\xi/dr)\,\vec u_r$ | Central force on the test source (inward) |
 | $\tilde J=\tfrac{i}{2}(\xi^*\tilde\nabla\xi-\xi\tilde\nabla\xi^*)$ | Conserved current of the central phase; $\langle\tilde\nabla,\tilde J\rangle_{\natural}=0$ |
 | $c=1/\sqrt{\epsilon\mu}$, $c_0$ | Speed of light in the medium; in vacuum |
 

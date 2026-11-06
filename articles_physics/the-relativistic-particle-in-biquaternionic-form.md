@@ -9,7 +9,7 @@ Two facts from the algebra organize the whole account, and they are worth statin
 **The interval is the biquaternion norm.** The material coordinate is the anti-Hermitian biquaternion $\tilde R_\varphi = i c r'_t\,e_t + r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z \in \mathbb{M}_-$, and the Minkowski interval of a displacement is the biquaternion norm
 
 $$
-\langle d\tilde R_\varphi\rangle_{\natural} = d\tilde R_\varphi\,d\tilde{R}_\varphi^{\natural} = (ic\,dt')^2 +dx^2+dy^2+dz^2 = -c^2d{r'_{t}}^2 +dx^2+dy^2+dz^2 .
+\langle d\tilde R_\varphi\rangle_{\natural} = d\tilde R_\varphi\,d\tilde{R}_\varphi^{\natural} = (ic\,dr'_t)^2 +dx^2+dy^2+dz^2 = -c^2d{r'_{t}}^2 +dx^2+dy^2+dz^2 .
 $$
 
 The algebra therefore does not carry a metric that has to be attached to spacetime from outside; its own biquaternion norm, restricted to the real four-dimensional subspace $\mathbb{M}_-$, *is* the Minkowski form. This is the level-1 identity form $\mathrm{diag}(+1,+1,+1,+1)$ on $\mathbb{B}$, whose restriction to the real material slice is the level-2 Minkowski interval, tuple $(-1,+1,+1,+1)$; both levels are fixed by the companion article *Algebra and Element Conventions*, and no metric is introduced here beyond them.
@@ -29,7 +29,7 @@ $$
 with $\lambda$ an arbitrary parameter. The physical content of the curve is not the arbitrary parametrization but the displacement one-form
 
 $$
-d\tilde R_\varphi = ic\,dt'\,e_t + d(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z),
+d\tilde R_\varphi = ic\,dr'_t\,e_t + d(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z),
 $$
 
 whose biquaternion norm is
@@ -43,8 +43,8 @@ Off the null set, $\langle d\tilde R_\varphi\rangle_{\natural}$ has the sign of 
 $$
 \boxed{\; c^2\,d\tau^2 = -\,\langle d\tilde R_\varphi\rangle_{\natural} = c^2d{r'_{t}}^2 -(dx^2+dy^2+dz^2) \;}
 \qquad\Longrightarrow\qquad
-d\tau = dt'\sqrt{1 - \frac{\vec v^2}{c^2}},
-\qquad \vec v = \frac{d(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)}{dt'} .
+d\tau = dr'_t\sqrt{1 - \frac{\vec v^2}{c^2}},
+\qquad \vec v = \frac{d(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)}{dr'_t} .
 $$
 
 The definition is real precisely when the worldline is timelike, $\langle d\tilde R_\varphi\rangle_{\natural} < 0$, and it is the condition that fixes which curves describe a particle of nonzero rest mass. The three cases are the three signs of the biquaternion norm:
@@ -67,10 +67,10 @@ The **four-velocity** is the tangent with respect to proper time,
 
 $$
 \boxed{\ \tilde{V} = \frac{d\tilde R_\varphi}{d\tau}
-= \frac{dt'}{d\tau}\left(ic\,e_t + \frac{d(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)}{dt'}\right)
+= \frac{dr'_t}{d\tau}\left(ic\,e_t + \frac{d(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)}{dr'_t}\right)
 = \gamma\left(ic\,e_t + \vec v\right)\ },
 \qquad
-\gamma = \frac{dt'}{d\tau} = \frac{1}{\sqrt{1-\vec v^2/c^2}} .
+\gamma = \frac{dr'_t}{d\tau} = \frac{1}{\sqrt{1-\vec v^2/c^2}} .
 $$
 
 It lies in $\mathbb{M}_-$ because both terms do: $ic\,e_t$ is the imaginary scalar direction of the material sector and $\vec v$ is a real vector. Its biquaternion norm is the defining normalization of the parameter:
@@ -206,7 +206,7 @@ The action of a free relativistic particle is the invariant length of its worldl
 $$
 \boxed{\ S[\tilde R_\varphi] = -mc\int\sqrt{-\,d\tilde R_\varphi\,d\tilde{R}_\varphi^{\natural}}
 = -mc\int\sqrt{-\langle d\tilde R_\varphi\rangle_{\natural}}
-= -mc^2\int\frac{dt'}{\gamma}\ }\ .
+= -mc^2\int\frac{dr'_t}{\gamma}\ }\ .
 $$
 
 The sign is fixed by the requirement that a free particle move forward in time with positive energy, and the square root is real on a causal worldline by the definition of the proper time. In terms of the coordinate velocity the Lagrangian is
@@ -226,7 +226,7 @@ $$
 so the free Lagrangian's canonical momentum is the physical momentum. Its Legendre transform is the free energy $E = \vec p\cdot\vec v - \mathrm{Lag} = \gamma mc^2$, and the equation of motion is the vanishing of the Euler–Lagrange derivative,
 
 $$
-\frac{d}{dt'}\frac{\partial \mathrm{Lag}}{\partial\vec v} - \left(\frac{\partial \mathrm{Lag}}{\partial x}\vec e_x+\frac{\partial \mathrm{Lag}}{\partial y}\vec e_y+\frac{\partial \mathrm{Lag}}{\partial z}\vec e_z\right) = \frac{d\vec p}{dt'} = 0 ,
+\frac{d}{dr'_t}\frac{\partial \mathrm{Lag}}{\partial\vec v} - \left(\frac{\partial \mathrm{Lag}}{\partial r_x}\vec e_x+\frac{\partial \mathrm{Lag}}{\partial r_y}\vec e_y+\frac{\partial \mathrm{Lag}}{\partial r_z}\vec e_z\right) = \frac{d\vec p}{dr'_t} = 0 ,
 $$
 
 so the free four-momentum $\tilde{P} = m\tilde{V}$ is constant. The same statement in the four-dimensional language is that the free worldline is the straight timelike line,
@@ -341,7 +341,7 @@ satisfies the mass-shell relation $\langle\tilde{P}\rangle_{\natural} = -m^2c^2$
 
 $$
 S[\tilde R_\varphi] = -mc\int\sqrt{-\,d\tilde R_\varphi\,d\tilde{R}_\varphi^{\natural}}
-= -mc^2\int\frac{dt'}{\gamma},
+= -mc^2\int\frac{dr'_t}{\gamma},
 \qquad
 \mathrm{Lag}(\vec v) = -\frac{mc^2}{\gamma},
 $$

@@ -13,7 +13,7 @@ The purpose is not to derive new physics. The purpose is to rewrite the establis
 
 These identities are algebraic, not physical. They are the reason the biquaternion algebra is the natural home of relativistic mechanics.
 
-The conventions are those of the companion articles: the biquaternion algebra is $\mathbb{B} = \mathbb{C} \otimes_\mathbb{R} \mathbb{H}$, the quaternion basis is $e_t = 1, \vec e_x, \vec e_y, \vec e_z$ with $\vec e_\mu^2 = -e_t$, the scalar imaginary is $i$, and the biquaternionic gradient is $\tilde{\nabla} = e_t \partial/\partial Q_t + \vec e_x \partial/\partial Q_x + \vec e_y \partial/\partial Q_y + \vec e_z \partial/\partial Q_z$. Its quaternion conjugate is $\tilde{\nabla}^{\natural} = e_t \partial/\partial Q_t - \vec e_x \partial/\partial Q_x - \vec e_y \partial/\partial Q_y - \vec e_z \partial/\partial Q_z$. The Minkowski metric has signature $(-,+,+,+)$, so that $\partial^2/\partial Q_t^2 = -c^{-2}\,\partial^2/\partial {r'_{t}}^2$. Throughout, the symbol $c$ denotes the **speed of light in the medium**, $c = 1/\sqrt{\epsilon\mu}$, and $c_0$ denotes the **vacuum speed of light**, $c_0 = 1/\sqrt{\epsilon_0\mu_0}$. In vacuum, $c = c_0$. The symbol $v$ (or $\vec v$) is reserved for particle and frame velocities.
+The conventions are those of the companion articles: the biquaternion algebra is $\mathbb{B} = \mathbb{C} \otimes_\mathbb{R} \mathbb{H}$, the quaternion basis is $e_t = 1, \vec e_x, \vec e_y, \vec e_z$ with $\vec e_\mu^2 = -e_t$, the scalar imaginary is $i$, and the biquaternionic gradient is $\tilde{\nabla} = e_t \partial/\partial R_t + \vec e_x \partial/\partial R_x + \vec e_y \partial/\partial R_y + \vec e_z \partial/\partial R_z$. Its quaternion conjugate is $\tilde{\nabla}^{\natural} = e_t \partial/\partial R_t - \vec e_x \partial/\partial R_x - \vec e_y \partial/\partial R_y - \vec e_z \partial/\partial R_z$. The Minkowski metric has signature $(-,+,+,+)$, so that $\partial^2/\partial R_t^2 = -c^{-2}\,\partial^2/\partial {r'_{t}}^2$. Throughout, the symbol $c$ denotes the **speed of light in the medium**, $c = 1/\sqrt{\epsilon\mu}$, and $c_0$ denotes the **vacuum speed of light**, $c_0 = 1/\sqrt{\epsilon_0\mu_0}$. In vacuum, $c = c_0$. The symbol $v$ (or $\vec v$) is reserved for particle and frame velocities.
 
 ## The Four-Position
 
@@ -23,7 +23,7 @@ $$
 \tilde R_\varphi = i c r'_{t}\,e_t + r_x\,\vec e_x + r_y\,\vec e_y + r_z\,\vec e_z,
 $$
 
-where $t' \in \mathbb{R}$ is the ordinary time coordinate, $x, y, z \in \mathbb{R}$ are the ordinary spatial coordinates, and $c$ is the speed of light in the medium. The scalar part of $\tilde R_\varphi$ is the complex time coordinate $i c r'_t$, and the vector part is the spatial position $r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z$. In compact form,
+where $r'_t \in \mathbb{R}$ is the ordinary time coordinate, $x, y, z \in \mathbb{R}$ are the ordinary spatial coordinates, and $c$ is the speed of light in the medium. The scalar part of $\tilde R_\varphi$ is the complex time coordinate $i c r'_t$, and the vector part is the spatial position $r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z$. In compact form,
 
 $$
 \tilde R_\varphi = i c r'_{t}\,e_t + (r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z).
@@ -38,10 +38,10 @@ It is a **material element**; it is what is observed. Its **observable** is the 
 The **invariant interval** between two nearby events in spacetime is the **biquaternion norm** of the displacement biquaternion $d\tilde R_\varphi \in \mathbb{M}_-$:
 
 $$
-\boxed{\;ds^2 = d\tilde R_\varphi\,\overline{d\tilde R_\varphi} = (ic\,dt')^2 + dx^2 + dy^2 + dz^2 = -c^2\,d{r'_{t}}^2 +dx^2+dy^2+dz^2\;}
+\boxed{\;ds^2 = d\tilde R_\varphi\,\overline{d\tilde R_\varphi} = (ic\,dr'_t)^2 + dx^2 + dy^2 + dz^2 = -c^2\,d{r'_{t}}^2 +dx^2+dy^2+dz^2\;}
 $$
 
-Here $\overline{d\tilde R_\varphi} = ic\,dt'\,e_t - d(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)$ is the quaternion conjugate of the displacement. This is the biquaternion form of the Minkowski interval. The minus sign in the time–time component arises algebraically from $i^2 = -1$, not from an independently postulated metric signature.
+Here $\overline{d\tilde R_\varphi} = ic\,dr'_t\,e_t - d(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)$ is the quaternion conjugate of the displacement. This is the biquaternion form of the Minkowski interval. The minus sign in the time–time component arises algebraically from $i^2 = -1$, not from an independently postulated metric signature.
 
 The displacement $d\tilde R_\varphi$ is a **material element**, and the interval is its norm; a spacelike distance is read from that norm.
 
@@ -123,7 +123,7 @@ $$
 \tilde{K}_{\mathrm{f}} = \frac{d\tilde{P}}{d\tau},
 $$
 
-where $\tau$ is the **proper time** of the particle, defined by $d\tau = dt'/\gamma$. The four-force biquaternion lies in the anti-Hermitian subspace $\mathbb{M}_-$, like $\tilde{P}$.
+where $\tau$ is the **proper time** of the particle, defined by $d\tau = dr'_t/\gamma$. The four-force biquaternion lies in the anti-Hermitian subspace $\mathbb{M}_-$, like $\tilde{P}$.
 
 Since $\tilde{P}\tilde{P}^{\natural} = -m^2 c^2$ is constant along the worldline, differentiating gives
 
@@ -151,10 +151,10 @@ $$
 S = -mc\int\sqrt{-\,d\tilde R_\varphi\,\overline{d\tilde R_\varphi}},
 $$
 
-where the square root is the ordinary real square root of the positive quantity $-d\tilde R_\varphi\,\overline{d\tilde R_\varphi} = c^2\,d{r'_{t}}^2 -(dx^2+dy^2+dz^2) = c^2\,d\tau^2$. Since $d\tau = dt'/\gamma$, we have $c\,d\tau = c\,dt'/\gamma$, and the action becomes
+where the square root is the ordinary real square root of the positive quantity $-d\tilde R_\varphi\,\overline{d\tilde R_\varphi} = c^2\,d{r'_{t}}^2 -(dx^2+dy^2+dz^2) = c^2\,d\tau^2$. Since $d\tau = dr'_t/\gamma$, we have $c\,d\tau = c\,dr'_t/\gamma$, and the action becomes
 
 $$
-S = -mc^2\int\frac{dt'}{\gamma} = -mc^2\int\sqrt{1 - \vec v^2/c^2}\,dt',
+S = -mc^2\int\frac{dr'_t}{\gamma} = -mc^2\int\sqrt{1 - \vec v^2/c^2}\,dr'_t,
 $$
 
 which is the standard relativistic action. The biquaternion form makes the **invariant character** of the action manifest: the integrand is built from the biquaternion norm of the displacement biquaternion, which is a Lorentz scalar.
@@ -173,16 +173,16 @@ $$
 \boxed{\;\mathrm{Sc}\!\left(\tilde{\nabla}^{\natural}\tilde{J}\right) = 0\;}
 $$
 
-where $\tilde{\nabla}^{\natural} = e_t\partial/\partial Q_t - \vec e_x\partial/\partial Q_x - \vec e_y\partial/\partial Q_y - \vec e_z\partial/\partial Q_z$ is the quaternion conjugate of the biquaternionic gradient. Expanding the scalar part,
+where $\tilde{\nabla}^{\natural} = e_t\partial/\partial R_t - \vec e_x\partial/\partial R_x - \vec e_y\partial/\partial R_y - \vec e_z\partial/\partial R_z$ is the quaternion conjugate of the biquaternionic gradient. Expanding the scalar part,
 
 $$
-\mathrm{Sc}\!\left(\tilde{\nabla}^{\natural}\tilde{J}\right) = \partial/\partial Q_t(ic\rho) + \mathrm{div}\,\vec j = \frac{\partial \rho}{\partial t'} + \mathrm{div}\,\vec j,
+\mathrm{Sc}\!\left(\tilde{\nabla}^{\natural}\tilde{J}\right) = \partial/\partial R_t(ic\rho) + \mathrm{div}\,\vec j = \frac{\partial \rho}{\partial r'_t} + \mathrm{div}\,\vec j,
 $$
 
 so the condition is the standard continuity equation
 
 $$
-\frac{\partial \rho}{\partial t'} + \mathrm{div}\,\vec j = 0.
+\frac{\partial \rho}{\partial r'_t} + \mathrm{div}\,\vec j = 0.
 $$
 
 The condition is the **scalar part** of $\tilde{\nabla}^{\natural}\tilde{J} = 0$. The full equation $\tilde{\nabla}^{\natural}\tilde{J} = 0$ is stronger, because the vector part of $\tilde{\nabla}^{\natural}\tilde{J}$ does not vanish in general: it involves the spatial derivatives of $\rho$ and $\vec j$, and it does not correspond to a standard physical conservation law. So the continuity equation is the scalar projection of the biquaternion conservation law.
@@ -195,7 +195,7 @@ $$
 \left(\tilde{\nabla}\tilde{\nabla}^{\natural} - \frac{m^2 c^2}{\hbar^2}\right)\tilde{Ξ} = 0.
 $$
 
-Here $\tilde{\nabla}\tilde{\nabla}^{\natural} = \Box = \partial^2/\partial Q_t^2 + \Delta$ is the d'Alembertian in the biquaternion form, and $\hbar$ is the reduced Planck constant. Expanding,
+Here $\tilde{\nabla}\tilde{\nabla}^{\natural} = \Box = \partial^2/\partial R_t^2 + \Delta$ is the d'Alembertian in the biquaternion form, and $\hbar$ is the reduced Planck constant. Expanding,
 
 $$
 \Box\tilde{Ξ} = \frac{m^2 c^2}{\hbar^2}\tilde{Ξ},
@@ -251,12 +251,12 @@ A later formulation puts the same relativistic mechanics into a biquaternion **t
 The objects are those of this article, with a tensor index carried by the biquaternion. The mechanical stress–energy density is $T_{\nu\mu} = \tilde V_\nu G_\mu$, the product of the four-velocity biquaternion and the momentum-density biquaternion; the stress–energy density of a charged particle in a potential field adds a current–potential term; the Lagrangian density is given as its trace; and the conservation statement is written as a **general force equation**,
 
 $$
-\partial/\partial Q_\nu T_{\nu\mu} + \partial/\partial Q_\mu \mathrm{Lag} = 0,
+\partial/\partial R_\nu T_{\nu\mu} + \partial/\partial R_\mu \mathrm{Lag} = 0,
 $$
 
 which reduces to the Lorentz force law under continuity conditions on the four-current and the four-velocity. The tensor of this article and the tensor of that paper are the same object reached by different routes, and the companion exercise on the electromagnetic energy–momentum tensor takes the force equation up as a problem.
 
-**The claim that matters here is negative.** The paper's conclusion is that this formulation "lacks the extra terms that usually arise in biquaternionic electrodynamics". The condition is stated in the body and is worth carrying exactly: the electromagnetic force biquaternion matches the standard force field only if the **Lorenz gauge condition** $F_0 = \partial/\partial Q_\nu A_\nu = 0$ holds; if $F_0 \neq 0$, then the usual biquaternion expressions for the Lorentz force and the two inhomogeneous Maxwell equations carry extra terms, and the calculus of this paper does not. The paper's own account of where those terms come from is equally explicit: they arise when the tensor indices are rearranged "according to their biquaternion affiliation", an operation the author calls external to his system and alien to it, because it destroys the tensor arrangement of the terms.
+**The claim that matters here is negative.** The paper's conclusion is that this formulation "lacks the extra terms that usually arise in biquaternionic electrodynamics". The condition is stated in the body and is worth carrying exactly: the electromagnetic force biquaternion matches the standard force field only if the **Lorenz gauge condition** $F_0 = \partial/\partial R_\nu A_\nu = 0$ holds; if $F_0 \neq 0$, then the usual biquaternion expressions for the Lorentz force and the two inhomogeneous Maxwell equations carry extra terms, and the calculus of this paper does not. The paper's own account of where those terms come from is equally explicit: they arise when the tensor indices are rearranged "according to their biquaternion affiliation", an operation the author calls external to his system and alien to it, because it destroys the tensor arrangement of the terms.
 
 **This is a counterweight to a recurring theme of the corpus, and the two must be read together.** In the electro-gravimagnetic programme the biquaternion formulation is said to **require** an added scalar — the field $a(\tau,r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)$, or $\alpha$ in the later papers — precisely because the reduction to the standard equations is held to fail without it (*The Electro-Gravimagnetic Field and the Magnetic-Charge–Mass Hypothesis*, and the modification recorded in *Maxwell's Equations in Biquaternionic Form*). de Haas reports the opposite outcome for a formulation arranged differently, and ties it to the gauge. The corpus's question then becomes a precise one: do the extra terms come from the **algebra**, or from the way the tensors are **mapped onto** it together with the gauge one imposes? The answer the two sources jointly suggest is the second — that the extra terms are an artefact of the mapping and the gauge rather than of the algebra — and that sits with the corpus's own line that the algebra supplies the home and not the object. The corpus records the two claims side by side and adopts neither.
 
@@ -268,7 +268,7 @@ which reduces to the Lorentz force law under continuity conditions on the four-c
 
 2. **The Lorentz force in biquaternion form.** The four-force in component form is standard: $\tilde{K}_{\mathrm{f}} = i\gamma ϙ(\vec E\cdot\vec v)/c\,e_t + \gamma ϙ(\vec E + \vec v\times\vec B)$. Its expression as a biquaternion product of the field-strength biquaternion $\tilde F$ and the four-velocity $\tilde{V}$ is **not** simply the real part of $\tilde F\circ\tilde{V}$; the correct expression involves the representation theory of $\mathbb{B}$ in the even subalgebra of $\mathrm{Cl}_{1,3}$, and it remains to be worked out cleanly. This is left for a future revision, and it may be addressed by the scientific literature on the biquaternion formulation of the Lorentz force.
 
-3. **The Lagrangian formulation.** The biquaternion action $S = -mc\int\sqrt{-d\tilde R_\varphi\,\overline{d\tilde R_\varphi}}$ is a real Lorentz scalar. Can the full Lagrangian formulation of relativistic mechanics (including interactions) be expressed in biquaternion form? A later tensor-dynamics formulation (de Haas, arXiv:1401.4470v1) gives one: the Lagrangian density as the trace of the stress–energy tensor, and the conservation law as the general force equation $\partial/\partial Q_\nu T_{\nu\mu} + \partial/\partial Q_\mu \mathrm{Lag} = 0$. It is recorded, with its signs and its cautions, in *The Tensor-Dynamics Reading, and the Question of Extra Terms* above.
+3. **The Lagrangian formulation.** The biquaternion action $S = -mc\int\sqrt{-d\tilde R_\varphi\,\overline{d\tilde R_\varphi}}$ is a real Lorentz scalar. Can the full Lagrangian formulation of relativistic mechanics (including interactions) be expressed in biquaternion form? A later tensor-dynamics formulation (de Haas, arXiv:1401.4470v1) gives one: the Lagrangian density as the trace of the stress–energy tensor, and the conservation law as the general force equation $\partial/\partial R_\nu T_{\nu\mu} + \partial/\partial R_\mu \mathrm{Lag} = 0$. It is recorded, with its signs and its cautions, in *The Tensor-Dynamics Reading, and the Question of Extra Terms* above.
 
 4. **The Hamiltonian formulation.** The biquaternion form of the relativistic Hamiltonian and the associated Hamilton equations have not been developed.
 
@@ -307,8 +307,8 @@ These identities are algebraic, not physical. They are the reason the biquaterni
 | $\tilde{K}_{\mathrm{f}} = d\tilde{P}/d\tau$ | Four-force biquaternion |
 | $\tilde{J} = ic\rho\,e_t + \vec j$ | Four-current biquaternion |
 | $\tilde{Q}\tilde{Q}^{\natural}$ | Biquaternion norm (scalar quadratic form) |
-| $\tilde{\nabla} = e_t\partial/\partial Q_t + \sum_\mu \vec e_\mu\partial/\partial Q_\mu$ | Biquaternionic gradient |
-| $\tilde{\nabla}^{\natural} = e_t\partial/\partial Q_t - \sum_\mu \vec e_\mu\partial/\partial Q_\mu$ | Quaternion-conjugate gradient |
+| $\tilde{\nabla} = e_t\partial/\partial R_t + \sum_\mu \vec e_\mu\partial/\partial R_\mu$ | Biquaternionic gradient |
+| $\tilde{\nabla}^{\natural} = e_t\partial/\partial R_t - \sum_\mu \vec e_\mu\partial/\partial R_\mu$ | Quaternion-conjugate gradient |
 | $\Box = \tilde{\nabla}\tilde{\nabla}^{\natural}$ | d'Alembertian |
 | $\tau$ | Proper time |
 | $m$ | Rest mass |
@@ -323,6 +323,6 @@ These identities are algebraic, not physical. They are the reason the biquaterni
 - Chris Doran and Anthony Lasenby, *Geometric Algebra for Physicists* (Cambridge, 2003), for the modern geometric algebra treatment.
 - Pertti Lounesto, *Clifford Algebras and Spinors* (Cambridge, 2001), for the connection to Clifford algebras.
 - L. A. Alexeyeva, "Differential algebra of biquaternions. Dirac equation and its generalized solutions," *Progress in Analysis, Proceedings of the 8th Congress of the ISAAC* (Moscow, 2013), pp. 153–161, for the biquaternion formulation of relativistic wave equations.
-- E. P. J. de Haas, "Biquaternion Formulation of Relativistic Tensor Dynamics," arXiv:1401.4470v1 [physics.gen-ph] (2013), for the biquaternion tensor calculus that fuses antisymmetric and symmetric relativistic tensor dynamics, the stress–energy density $T_{\nu\mu} = \tilde V_\nu G_\mu$, the general force equation $\partial/\partial Q_\nu T_{\nu\mu} + \partial/\partial Q_\mu L = 0$ with the Lagrangian density as its trace, and the claim that the formulation carries no extra terms relative to the standard relativistic language when the Lorenz gauge condition holds. Recorded in *The Tensor-Dynamics Reading, and the Question of Extra Terms*.
+- E. P. J. de Haas, "Biquaternion Formulation of Relativistic Tensor Dynamics," arXiv:1401.4470v1 [physics.gen-ph] (2013), for the biquaternion tensor calculus that fuses antisymmetric and symmetric relativistic tensor dynamics, the stress–energy density $T_{\nu\mu} = \tilde V_\nu G_\mu$, the general force equation $\partial/\partial R_\nu T_{\nu\mu} + \partial/\partial R_\mu L = 0$ with the Lagrangian density as its trace, and the claim that the formulation carries no extra terms relative to the standard relativistic language when the Lorenz gauge condition holds. Recorded in *The Tensor-Dynamics Reading, and the Question of Extra Terms*.
 - A. P. Yefremov, "Quaternions and Biquaternions: Algebra, Geometry, and Physical Theories," arXiv:math-ph/0501055 (2005), for the programme of quaternionic relativity in which the tensor-dynamics formulation situates itself.
 

@@ -2,7 +2,7 @@
 
 ## Introduction
 
-Every result in the read-list articles is a statement about one fixed algebra $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, evaluated at one point. The biquaternion norm, the rotor group, the rotor conjugation, the light cone as the zero-divisor set, the decomposition $\mathbb{B} = \mathbb{M}_+ \oplus \mathbb{M}_-$ — all of them are pointwise and flat. The wave equations written with them presuppose a global coordinate system $(i c r'_t,\,x,\,y,\,z)$ carrying a distinguished imaginary time.
+Every result in the read-list articles is a statement about one fixed algebra $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, evaluated at one point. The biquaternion norm, the rotor group, the rotor conjugation, the light cone as the zero-divisor set, the decomposition $\mathbb{B} = \mathbb{M}_+ \oplus \mathbb{M}_-$ — all of them are pointwise and flat. The wave equations written with them presuppose a global coordinate system $(i c r'_t,\,r_x,\,r_y,\,r_z)$ carrying a distinguished imaginary time.
 
 This article is about what happens when the spacetime in which those equations are written is curved. It is not a report of a finished construction. Its subject is a boundary: what the flat machinery extends to, what a curved metric can be made to do inside the algebra, and where the programme stops.
 
@@ -49,7 +49,7 @@ Four assumptions are built into that statement, and each is a flat-space assumpt
 **3. A global chart with a distinguished time axis.** The biquaternionic gradient
 
 $$
-\tilde{\nabla} = e_t\,\partial/\partial Q_t + \vec e_x\,\partial/\partial Q_x + \vec e_y\,\partial/\partial Q_y + \vec e_z\,\partial/\partial Q_z
+\tilde{\nabla} = e_t\,\partial/\partial R_t + \vec e_x\,\partial/\partial R_x + \vec e_y\,\partial/\partial R_y + \vec e_z\,\partial/\partial R_z
 $$
 
 requires four global coordinates, and requires in addition that the time direction be the coefficient of $e_t$ — that is, a preferred split of the coordinates into a time function and three spatial functions. The Maxwell and Dirac equations of the companion articles are written with this operator and inherit the requirement.
@@ -64,7 +64,7 @@ An algebra has no points, so it cannot have a curvature. The statement is worth 
 
 Two forms of that map are available, and they are the two routes examined below:
 
-- a **scale** on the imaginary time axis, $i c r'_t \mapsto i\,c(x)\,t'$, which is the framework's own local complex structure; and
+- a **scale** on the imaginary time axis, $i c r'_t \mapsto i\,c(r_x)\,r'_t$, which is the framework's own local complex structure; and
 - a **frame**, $dx_\mu \mapsto \tilde{E}_\mu(x)\,dx_\mu$, which is the tetrad of the orthonormal-frame formulation of general relativity.
 
 They are different devices, and it is a mistake to treat them as the same one. The first makes a piece of the embedding's scale local while leaving the frame rigid; the second makes the frame local while leaving every scale to the frame itself. The first is the framework's proposal and yields too little to be general relativity; the second yields everything kinematically and is no longer specifically biquaternionic.
@@ -78,7 +78,7 @@ Finally, a piece of representation-theoretic bookkeeping locates where the work 
 The framework's own route to a local structure is the local complex structure. Its content is stated in *Introduction to the Biquaternion Universe* and developed in *Electromagnetism in Media — The Local Complex Structure at Work*. In a medium with permittivity $\epsilon$ and permeability $\mu$, the speed of light is $c = 1/\sqrt{\epsilon\mu}$, a property of the medium at each point. The material time coordinate is $i c r'_t$, so the map from physical time to the imaginary scalar direction of $\mathbb{B}$ carries the factor $c$; the imaginary unit $i$ is fixed by the algebra and only the real scale attached to the imaginary axis is local. In the gradient, this means
 
 $$
-\partial/\partial Q_t = -\frac{i}{c}\,\partial/\partial t' .
+\partial/\partial R_t = -\frac{i}{c}\,\partial/\partial r'_t .
 $$
 
 The framework's phrasing is that the complex structure is local "in the same spirit as the metric in general relativity", and that the $i c r'_t$ convention of Minkowski space is the vacuum limit $c \to c_0$ of a more general local structure.
@@ -90,25 +90,25 @@ It is at this point that a genuine ambiguity appears, and it should be stated be
 **Reading A, the point map.** Take the four-position as the framework writes it, $\tilde R_\varphi = i c r'_t\,e_t + r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z$, with the local $c$. Then $c$ is a function of position and
 
 $$
-d(i c r'_t) = ic\,dt' + i\,t'\,dc,
+d(i c r'_t) = ic\,dr'_t + i\,r'_t\,dc,
 $$
 
-so the displacement biquaternion is $d\tilde R_\varphi = i(c\,dt' + t'\,dc)e_t + d(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)$ — still an element of $\mathbb{M}_-$ — and the interval is $ds^2 = \langle d\tilde R_\varphi\rangle_{\natural}$, whose time sign comes from $i^2=-1$ and nothing else,
+so the displacement biquaternion is $d\tilde R_\varphi = i(c\,dr'_t + r'_t\,dc)e_t + d(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)$ — still an element of $\mathbb{M}_-$ — and the interval is $ds^2 = \langle d\tilde R_\varphi\rangle_{\natural}$, whose time sign comes from $i^2=-1$ and nothing else,
 
 $$
-ds^2 = -c^2\,d{r'_{t}}^2 - 2c r'_{t}\,dt'\,dc - {r'_{t}}^2 (dc)^2 + dx^2+dy^2+dz^2,
+ds^2 = -c^2\,d{r'_{t}}^2 - 2c r'_{t}\,dr'_t\,dc - {r'_{t}}^2 (dc)^2 + dx^2+dy^2+dz^2,
 $$
 $$
 dc=\sum_i\frac{\partial c}{\partial x_i}\,dx_i,
 \qquad
-ds^2 = -c^2\,d{r'_{t}}^2 - 2c r'_{t}\,dt'\sum_i\frac{\partial c}{\partial x_i}\,dx_i
+ds^2 = -c^2\,d{r'_{t}}^2 - 2c r'_{t}\,dr'_t\sum_i\frac{\partial c}{\partial x_i}\,dx_i
 - {r'_{t}}^2\Bigl(\sum_i\frac{\partial c}{\partial x_i}\,dx_i\Bigr)^2
 + dx^2+dy^2+dz^2 ,
 $$
 
-with $i$ running over $x,y,z$ and with $c$ independent of $t'$; a time-dependent $c$ replaces $c$ by $c+t'\,\partial c/\partial t'$ in the $e_t$ coefficient and in $\det g$. The metric so obtained is nondegenerate — $\det g = -c^2$ in the coordinates $(r'_t,r_x,r_y,r_z)$ — but it is **flat**. The map $(r'_t, r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z) \mapsto i\,c(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)\,t'\,e_t + r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z$ is a diffeomorphism of $\mathbb{R}^4$ onto $\mathbb{M}_-$ (its Jacobian determinant is $c > 0$), and it is pulling back the flat form of $\mathbb{M}_-$; a pullback of a flat form along a diffeomorphism is flat, and no curvature can be produced by reparametrising a flat space. Direct computation confirms it: for $c = 1 + \tfrac{1}{10}(r_x^2+r_y^2+r_z^2)$ and, on a second and independent case, for $c = 2 + \sin x\,\cos y$, every component of the Riemann tensor vanishes. The local scale factor, read as a map of points, changes the coordinate description of flat spacetime and nothing else.
+with $i$ running over $x,y,z$ and with $c$ independent of $r'_t$; a time-dependent $c$ replaces $c$ by $c+r'_t\,\partial c/\partial r'_t$ in the $e_t$ coefficient and in $\det g$. The metric so obtained is nondegenerate — $\det g = -c^2$ in the coordinates $(r'_t,r_x,r_y,r_z)$ — but it is **flat**. The map $(r'_t, r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z) \mapsto i\,c(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)\,r'_t\,e_t + r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z$ is a diffeomorphism of $\mathbb{R}^4$ onto $\mathbb{M}_-$ (its Jacobian determinant is $c > 0$), and it is pulling back the flat form of $\mathbb{M}_-$; a pullback of a flat form along a diffeomorphism is flat, and no curvature can be produced by reparametrising a flat space. Direct computation confirms it: for $c = 1 + \tfrac{1}{10}(r_x^2+r_y^2+r_z^2)$ and, on a second and independent case, for $c = 2 + \sin x\,\cos y$, every component of the Riemann tensor vanishes. The local scale factor, read as a map of points, changes the coordinate description of flat spacetime and nothing else.
 
-**Reading B, the derivative rule.** Take instead the framework's actual usage, in which $c$ enters through the operator $\partial/\partial Q_t = -(i/c)\partial/\partial t'$ and the four-position is written with a single complex coordinate $i c r'_t$ rather than with a position-dependent coefficient. Equivalently, hold $c$ fixed in the differential: $d(i c r'_t) = ic\,dt'$. Then
+**Reading B, the derivative rule.** Take instead the framework's actual usage, in which $c$ enters through the operator $\partial/\partial R_t = -(i/c)\partial/\partial r'_t$ and the four-position is written with a single complex coordinate $i c r'_t$ rather than with a position-dependent coefficient. Equivalently, hold $c$ fixed in the differential: $d(i c r'_t) = ic\,dr'_t$. Then
 
 $$
 ds^2 = -c(x,y,z)^2\,d{r'_{t}}^2 +dx^2+dy^2+dz^2,
@@ -138,7 +138,7 @@ which is $+\tfrac{2}{3}$ at $x = \pi/2$ and vanishes at $x = 0$ and $x = \pi$.
 
 The class is narrow in a way that is easy to state: one free function of the spatial coordinates (or of time as well), no shift vector, and a flat three-metric on the spatial slices, $g_{ij} = \delta_{ij}$. It is the diagonal, spatially rigid sub-case of the frame route of the next section.
 
-Its decisive limitation is the following. Within this class, **Ricci-flatness forces flatness.** The condition $\mathrm{Ric}_{ij} = 0$ requires $\partial^2 u/\partial x_i\partial x_j = 0$ for every pair of spatial indices, so $u = \vec a(t')\cdot(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z) + b(t')$ is affine in the spatial coordinates; then $\mathrm{Ric}_{00} = u\,\Delta u$ vanishes automatically, so this is the whole Ricci-flat family. And every member of that family is flat: for $u = \vec a(t')\cdot(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z) + b(t')$ with arbitrary functions $\vec a(t')$ and $b(t')$, the Riemann tensor vanishes identically, as direct symbolic computation of the general case confirms. The family is the algebra's way of writing a uniformly accelerated (Rindler-type) frame, and it is a reparametrisation of Minkowski space.
+Its decisive limitation is the following. Within this class, **Ricci-flatness forces flatness.** The condition $\mathrm{Ric}_{ij} = 0$ requires $\partial^2 u/\partial x_i\partial x_j = 0$ for every pair of spatial indices, so $u = \vec a(r'_t)\cdot(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z) + b(r'_t)$ is affine in the spatial coordinates; then $\mathrm{Ric}_{00} = u\,\Delta u$ vanishes automatically, so this is the whole Ricci-flat family. And every member of that family is flat: for $u = \vec a(r'_t)\cdot(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z) + b(r'_t)$ with arbitrary functions $\vec a(r'_t)$ and $b(r'_t)$, the Riemann tensor vanishes identically, as direct symbolic computation of the general case confirms. The family is the algebra's way of writing a uniformly accelerated (Rindler-type) frame, and it is a reparametrisation of Minkowski space.
 
 The consequence is worth stating plainly, in the restricted sense in which it holds. A metric that the local-scale route can write down at all cannot be a non-flat Ricci-flat spacetime. It therefore cannot carry a vacuum gravitational field with Weyl curvature, and so it cannot carry a vacuum gravitational wave or a vacuum black-hole exterior. This is a statement about a metric class, not a theorem about the biquaternion programme — but it is enough to show that the local scale factor of the imaginary time axis is not the route by which general relativity will enter the framework.
 
@@ -299,7 +299,7 @@ Complexified, the statement is sharper, and the complexification is the algebra'
 
 With $h$ and $k_\mu$ constant, $T$ is a constant invertible map and $g$ is $\delta_{\mu\nu}$ in the chart $y^\alpha = T^\alpha{}_\mu Q^\mu$; the metric is flat. The remark is small, and it marks a limit of Route Two's flatness criterion: a frame that is pure rotor gauge is flat, but the converse fails. A constant shear is not a rotor, and it produces no curvature, because it is a change of chart rather than a change of frame. Flatness of the frame has at least these two independent sources, and the second is a diffeomorphism, the object the algebra does not have.
 
-With $k_\mu$ constant and $h$ varying, the same family is curved, and its member is the wave the neighbouring articles meet as a gravitational wave. Take $k_\mu$ with $k_t = -i$ and $k_3 = 1$, null since $k_t^2+k_3^2=-1+1=0$, and pass to the real null coordinates $u = t'+z$ and $v = t'-z$, in which $k_\mu\,dQ_\mu = du$ and the metric reads
+With $k_\mu$ constant and $h$ varying, the same family is curved, and its member is the wave the neighbouring articles meet as a gravitational wave. Take $k_\mu$ with $k_t = -i$ and $k_3 = 1$, null since $k_t^2+k_3^2=-1+1=0$, and pass to the real null coordinates $u = r'_t+r_z$ and $v = r'_t-r_z$, in which $k_\mu\,dR_\mu = du$ and the metric reads
 
 $$
 ds^2 = -du\,dv + dx^2 + dy^2 + 2h(u,x,y)\,du^2 ,
@@ -308,7 +308,7 @@ $$
 and its Ricci tensor has a single independent component, in the curvature convention of *Curvature and Geodesics* used throughout this article,
 
 $$
-\mathrm{Ric}_{uu} = -\Bigl(\frac{\partial^2 h}{\partial x^2} + \frac{\partial^2 h}{\partial y^2}\Bigr),
+\mathrm{Ric}_{uu} = -\Bigl(\frac{\partial^2 h}{\partial r_x^2} + \frac{\partial^2 h}{\partial r_y^2}\Bigr),
 $$
 
 all other components vanishing. The metric is therefore Ricci-flat exactly when $h$ is harmonic in the two transverse coordinates. For $h = x^2-y^2$ and for $h = e^x\cos y$ the Ricci tensor vanishes and the Riemann tensor does not, so both are vacuum solutions; for constant $h$ the Riemann tensor vanishes, as the chart argument requires. These are plane-fronted gravitational waves with a constant null direction, written in the algebra's own notation, with one free harmonic function.
@@ -410,9 +410,9 @@ which is the inhomogeneous transformation expected of a connection on the field.
 
 The biquaternion gradient $\tilde\nabla$ is the operator of *Operator and Calculus Conventions*, §*The Gradient*; read on the material sector in the physical coordinates $x_\mu=(r'_t,r_x,r_y,r_z)$, and in units with $c=1$, it is
 $$
-\tilde\nabla = -i\,e_t\,\partial/\partial t' + \sum_k\,\vec e_k\,\partial/\partial x_k,
+\tilde\nabla = -i\,e_t\,\partial/\partial r'_t + \sum_k\,\vec e_k\,\partial/\partial x_k,
 $$
-because $\partial/\partial t'=i\partial/\partial Q_t$, and the two imaginary units multiply to a sign, $(-i)\cdot i=+1$. Its curved replacement substitutes the frame field for the **rigid material frame** and the one-sided derivative for the partial derivative. The rigid material frame is not the algebra basis $e_\mu=(e_t,\vec e_x,\vec e_y,\vec e_z)$, which is not contained in $\mathbb{M}_-$; it is
+because $\partial/\partial r'_t=i\partial/\partial R_t$, and the two imaginary units multiply to a sign, $(-i)\cdot i=+1$. Its curved replacement substitutes the frame field for the **rigid material frame** and the one-sided derivative for the partial derivative. The rigid material frame is not the algebra basis $e_\mu=(e_t,\vec e_x,\vec e_y,\vec e_z)$, which is not contained in $\mathbb{M}_-$; it is
 $$
 \tilde E_0=ie_t,\qquad \tilde E_k=\vec e_k,
 \qquad
@@ -459,10 +459,10 @@ Two consistency statements locate the construction.
 The **flat limit** is exact. Take the rigid material frame $\tilde E_0=ie_t$, $\tilde E_k=\vec e_k$, with $\tilde F_0=-ie_t$, $\tilde F_k=\vec e_k$ and $g_{\mu\nu}$ the flat form, and take $\vec\Gamma_\mu=0$. Then
 $$
 \tilde F_{\mu} D_{\mu}=\tilde F_{\mu}\partial/\partial x_\mu
-=-i\,e_t\,\partial/\partial t'+\sum_k\,\vec e_k\,\partial/\partial x_k
-=e_t\,\partial/\partial Q_t+\sum_k\,\vec e_k\,\partial/\partial Q_k=\tilde\nabla,
+=-i\,e_t\,\partial/\partial r'_t+\sum_k\,\vec e_k\,\partial/\partial x_k
+=e_t\,\partial/\partial R_t+\sum_k\,\vec e_k\,\partial/\partial R_k=\tilde\nabla,
 $$
-where the last equality uses $Q_t=i c r'_t$ and $\partial/\partial t'=i\partial/\partial Q_t$, and the pair reduces to the flat pair of the parent article. The rigid frame is **not** $e_\mu=(e_t,\vec e_x,\vec e_y,\vec e_z)$: $e_t$ is not in $\mathbb{M}_-$, and a term-by-term replacement of $\tilde E_\mu$ by $e_\mu$ is invalid. Nor is it the informational frame: in the same limit $F^{\mathrm{inf}}_\mu\partial/\partial x_\mu=e_t\partial/\partial t'+i\sum_k\,\vec e_k\partial/\partial x_k=i\tilde\nabla$; the biquaternion object that represents the source's differential operator is therefore $i\tilde\nabla$, not $\tilde\nabla$, and the cell transcription is not the gradient. The curved material operator is a strict generalisation: nothing is added at flatness, and nothing of the flat structure is lost.
+where the last equality uses $Q_t=i c r'_t$ and $\partial/\partial r'_t=i\partial/\partial R_t$, and the pair reduces to the flat pair of the parent article. The rigid frame is **not** $e_\mu=(e_t,\vec e_x,\vec e_y,\vec e_z)$: $e_t$ is not in $\mathbb{M}_-$, and a term-by-term replacement of $\tilde E_\mu$ by $e_\mu$ is invalid. Nor is it the informational frame: in the same limit $F^{\mathrm{inf}}_\mu\partial/\partial x_\mu=e_t\partial/\partial r'_t+i\sum_k\,\vec e_k\partial/\partial x_k=i\tilde\nabla$; the biquaternion object that represents the source's differential operator is therefore $i\tilde\nabla$, not $\tilde\nabla$, and the cell transcription is not the gradient. The curved material operator is a strict generalisation: nothing is added at flatness, and nothing of the flat structure is lost.
 
 The **square** is the Lichnerowicz formula. Squaring the cell of the Dirac operator gives
 
@@ -470,9 +470,9 @@ $$
 \boxed{\;(\tilde F_{\mu} D_{\mu})^2 = -\Box_g + \tfrac14 \mathrm{Ric}\;},
 $$
 
-Here $\mathrm{Ric}$ is the Ricci scalar and $\Box_g = g^{\mu\nu}\nabla_\mu\nabla_\nu = \frac{1}{\sqrt{-\det g}}\,\frac{\partial}{\partial x_\mu}\!\left(\sqrt{-\det g}\,g^{\mu\nu}\partial/\partial x_\nu\right)$ is the Laplace–Beltrami operator acting on the field, the inverse metric being the one object written with raised indices because it is the inverse and not a component; so the boxed identity is the standard Lichnerowicz formula $\nabla^{*}\nabla + \tfrac14\mathrm{Ric}$ written with $\nabla^{*}\nabla = -\Box_g$, the form of *Spin Geometry*. The overall sign is fixed by the flat limit. The cells carry the plain weight $\varepsilon_a$, with $\varepsilon=(1,-1,-1,-1)$: they square to $+I_4$ on the time leg and to $-I_4$ on each spatial leg. The rigid square is therefore $\partial^2/\partial t'^2-\Delta=-\Box_g$, and the curvature term must carry the opposite sign to it, which is the sign displayed. The identity was recomputed here for this article on a conformal metric in two dimensions, in both signatures, with the connection taken from the $;(\sum_a iL_{e_a}^{\mathrm{axf}}R_{\vec e_{\nu(a)}}^{\mathrm{axf}}e_a{}^\mu D_\mu)^2=-g^{\mu\nu}\nabla_\mu\nabla_\nu+\mathrm{Ric}/4$ holds identically in the geometer's convention, in which the cells square to minus the norm.
+Here $\mathrm{Ric}$ is the Ricci scalar and $\Box_g = g^{\mu\nu}\nabla_\mu\nabla_\nu = \frac{1}{\sqrt{-\det g}}\,\frac{\partial}{\partial x_\mu}\!\left(\sqrt{-\det g}\,g^{\mu\nu}\partial/\partial x_\nu\right)$ is the Laplace–Beltrami operator acting on the field, the inverse metric being the one object written with raised indices because it is the inverse and not a component; so the boxed identity is the standard Lichnerowicz formula $\nabla^{*}\nabla + \tfrac14\mathrm{Ric}$ written with $\nabla^{*}\nabla = -\Box_g$, the form of *Spin Geometry*. The overall sign is fixed by the flat limit. The cells carry the plain weight $\varepsilon_a$, with $\varepsilon=(1,-1,-1,-1)$: they square to $+I_4$ on the time leg and to $-I_4$ on each spatial leg. The rigid square is therefore $\partial^2/\partial r'_t^2-\Delta=-\Box_g$, and the curvature term must carry the opposite sign to it, which is the sign displayed. The identity was recomputed here for this article on a conformal metric in two dimensions, in both signatures, with the connection taken from the $;(\sum_a iL_{e_a}^{\mathrm{axf}}R_{\vec e_{\nu(a)}}^{\mathrm{axf}}e_a{}^\mu D_\mu)^2=-g^{\mu\nu}\nabla_\mu\nabla_\nu+\mathrm{Ric}/4$ holds identically in the geometer's convention, in which the cells square to minus the norm.
 
-The square is taken on the cell, which acts on the algebra read as a four-dimensional complex vector space. The algebra element itself does not square to a scalar: in the rigid frame $\tilde\nabla^2$ carries the vector term $-2i\sum_k\vec e_k\,\partial^2/\partial t'\partial x_k$, so the algebra square is not the scalar Lichnerowicz square. The formula is the square of the cell, not of the algebra element, and that is why it is stated for the cell reading. The curvature term is not optional: a Dirac field on a curved background obeys a Klein–Gordon-type equation with the $+\mathrm{Ric}/4$ coupling even in the absence of any source, which is the curved-space face of the statement that the square of a first-order operator is second order. With minimal coupling to an electromagnetic potential of the companion articles, the square acquires in addition a field-strength–spin term of the form $\sum_{\mu,\nu}F_{\mu\nu}S_{\mu\nu}$, with $S_{\mu\nu}$ the spin cell, a derived form: a quarter of the commutator of two frame cells, written here with world indices — the curved-space relative of the Pauli term of the Gordon decomposition; its coefficient is stated in the curved-Dirac literature and is not rederived here. For comparison, the alternative first-order equation whose square is exactly the Laplacian, without the $\mathrm{Ric}/4$ term, is the **Dirac–Kähler equation**; the companion maths article records the price of that alternative, which is the loss of the Lorentz-covariant decomposition of the field into its four sectors in curved spacetime.
+The square is taken on the cell, which acts on the algebra read as a four-dimensional complex vector space. The algebra element itself does not square to a scalar: in the rigid frame $\tilde\nabla^2$ carries the vector term $-2i\sum_k\vec e_k\,\partial^2/\partial r'_t\partial x_k$, so the algebra square is not the scalar Lichnerowicz square. The formula is the square of the cell, not of the algebra element, and that is why it is stated for the cell reading. The curvature term is not optional: a Dirac field on a curved background obeys a Klein–Gordon-type equation with the $+\mathrm{Ric}/4$ coupling even in the absence of any source, which is the curved-space face of the statement that the square of a first-order operator is second order. With minimal coupling to an electromagnetic potential of the companion articles, the square acquires in addition a field-strength–spin term of the form $\sum_{\mu,\nu}F_{\mu\nu}S_{\mu\nu}$, with $S_{\mu\nu}$ the spin cell, a derived form: a quarter of the commutator of two frame cells, written here with world indices — the curved-space relative of the Pauli term of the Gordon decomposition; its coefficient is stated in the curved-Dirac literature and is not rederived here. For comparison, the alternative first-order equation whose square is exactly the Laplacian, without the $\mathrm{Ric}/4$ term, is the **Dirac–Kähler equation**; the companion maths article records the price of that alternative, which is the loss of the Lorentz-covariant decomposition of the field into its four sectors in curved spacetime.
 
 ### What This Does and Does Not Settle
 
@@ -495,7 +495,7 @@ $$
 i\,e_{\mu a}\,\mathsf G_a\,\partial/\partial x_\mu
 =-R_{\vec e_x}^{\mathrm{axf}}\bigl(\text{image of }F^{\mathrm{inf}}_\mu\,\partial/\partial x_\mu\bigr),
 $$
-because the map carries the fixed factor $iR_{\vec e_x}^{\mathrm{axf}}$ and $i\cdot i=-1$. The fixed $iR_{\vec e_x}^{\mathrm{axf}}$ is a generator, not part of the derivative; the derivative is the biquaternion-valued $F^{\mathrm{inf}}_\mu\partial/\partial x_\mu$. The article's own operator $\tilde F_\mu D_\mu$ is built from the material frame, while the cell transcription in this section is built from the informational frame. The fixed generator and $\partial/\partial t'=i\partial/\partial Q_t$ relate the two, so they are not term-by-term identical, and the substitution of $\tilde F_\mu$ for the frame vector $F^{\mathrm{inf}}_\mu=e_{\mu a}e^{\mathrm{inf}}_a$ is not a rename. In the chiral-pair form the fixed generator drops out, and the kinetic structure is $F^{\mathrm{inf}}_\mu D_\mu\tilde{Ξ}^{\mathrm{sp}}_R=m\tilde{Ξ}^{\mathrm{sp}}_L$.
+because the map carries the fixed factor $iR_{\vec e_x}^{\mathrm{axf}}$ and $i\cdot i=-1$. The fixed $iR_{\vec e_x}^{\mathrm{axf}}$ is a generator, not part of the derivative; the derivative is the biquaternion-valued $F^{\mathrm{inf}}_\mu\partial/\partial x_\mu$. The article's own operator $\tilde F_\mu D_\mu$ is built from the material frame, while the cell transcription in this section is built from the informational frame. The fixed generator and $\partial/\partial r'_t=i\partial/\partial R_t$ relate the two, so they are not term-by-term identical, and the substitution of $\tilde F_\mu$ for the frame vector $F^{\mathrm{inf}}_\mu=e_{\mu a}e^{\mathrm{inf}}_a$ is not a rename. In the chiral-pair form the fixed generator drops out, and the kinetic structure is $F^{\mathrm{inf}}_\mu D_\mu\tilde{Ξ}^{\mathrm{sp}}_R=m\tilde{Ξ}^{\mathrm{sp}}_L$.
 
 J. Fredsted, *Obtaining consistent Lorentz gauging for a gravitationally coupled fermion* (arXiv:1906.12200v3 [physics.gen-ph], 2019), proves that for a Dirac fermion coupled to gravity in the vierbein formulation the substitution $\partial/\partial x_\mu \to D_\mu$ and the Euler–Lagrange variation **do not commute**. Write $S^{cd}=\tfrac14[\mathsf G^c,\mathsf G^d]$ for the raised spin generator. Varying the gauged action gives the covariant Dirac operator
 $$
@@ -666,7 +666,7 @@ The four of them are, as cells, the frame cells the Dirac operator of this artic
 
 The read-list machinery is flat and pointwise: one fixed algebra, one fixed biquaternion norm with constant coefficients, a global chart with a distinguished imaginary time, and a global rotor group. Curvature cannot be made a property of the algebra, because the algebra has no points and no deformable coefficient; it can only be carried by the field that attaches the algebra to spacetime.
 
-The framework's own local device is the local scale $c = 1/\sqrt{\epsilon\mu}$ of the imaginary time axis. It admits two inequivalent interpretations. As a map of points, $\tilde R_\varphi = i\,c(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)\,t'\,e_t + r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z$, it yields a nondegenerate metric with $\det g = -c^2$ that is identically flat — the pullback of the flat form of $\mathbb{M}_-$ along a diffeomorphism — as direct computation confirms. As a derivative rule, $\partial/\partial Q_t = -(i/c)\partial/\partial t'$ with $c$ held fixed in the differential, it yields $g_{\mu\nu} = \mathrm{diag}(-c^2,1,1,1)$, genuinely curved, with $\mathrm{Ric}_{00} = u\Delta u$, $\mathrm{Ric}_{0i} = 0$, $\mathrm{Ric}_{ij} = -(\partial^2 u/\partial x_i\partial x_j)/u$ for $u = c$. The framework's prose does not choose between the interpretations, and the choice is left open here.
+The framework's own local device is the local scale $c = 1/\sqrt{\epsilon\mu}$ of the imaginary time axis. It admits two inequivalent interpretations. As a map of points, $\tilde R_\varphi = i\,c(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)\,r'_t\,e_t + r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z$, it yields a nondegenerate metric with $\det g = -c^2$ that is identically flat — the pullback of the flat form of $\mathbb{M}_-$ along a diffeomorphism — as direct computation confirms. As a derivative rule, $\partial/\partial R_t = -(i/c)\partial/\partial r'_t$ with $c$ held fixed in the differential, it yields $g_{\mu\nu} = \mathrm{diag}(-c^2,1,1,1)$, genuinely curved, with $\mathrm{Ric}_{00} = u\Delta u$, $\mathrm{Ric}_{0i} = 0$, $\mathrm{Ric}_{ij} = -(\partial^2 u/\partial x_i\partial x_j)/u$ for $u = c$. The framework's prose does not choose between the interpretations, and the choice is left open here.
 
 Within the second interpretation's class — one function, no shift, flat spatial slices — Ricci-flatness forces $u$ to be affine in the spatial coordinates, and every such metric is flat. The class therefore contains no non-flat vacuum geometry: no Weyl curvature, no gravitational waves, no black-hole exteriors. The local scale factor is not the route to general relativity. Nor is it the same object as the metric: $c$ is the Maxwell speed of a medium, and the standard effective metric of a dielectric is a metric for light, not for free fall.
 
@@ -695,7 +695,7 @@ What is missing is not a technical detail but the theory. Nothing determines the
 | $\mathrm{Ad} : SL(2,\mathbb{C}) \to SO^+(1,3)$ | Two-to-one covering homomorphism, kernel $\{\pm e_t\}$ |
 | $c = 1/\sqrt{\epsilon\mu}$, $c_0$ | Speed of light in the medium; in vacuum |
 | $i c r'_t$ | Local imaginary time coordinate, material sector |
-| $\tilde{\nabla} = e_t\partial/\partial Q_t+\sum_k\,\vec e_k\partial/\partial Q_k$ | Biquaternionic gradient, $Q_t=i c r'_t$; needs a global chart |
+| $\tilde{\nabla} = e_t\partial/\partial R_t+\sum_k\,\vec e_k\partial/\partial R_k$ | Biquaternionic gradient, $Q_t=i c r'_t$; needs a global chart |
 | $\tilde{E}_\mu(x) \in \mathbb{M}_-$ | Frame field (tetrad): $d\tilde R_\varphi = \sum_\mu\tilde{E}_\mu dx_\mu$ |
 | $g_{\mu\nu} = \langle \tilde{E}_\mu,\tilde{E}_\nu\rangle_{\natural}$ | Metric carried by the frame field |
 | $k_\mu$, $\tilde k = \sum_\mu k_\mu e_\mu$ | Null covector and the null element it names: $\langle e_\mu,\tilde k\rangle_\natural = k_\mu$ and $\langle\tilde k\rangle_\natural = \sum_\mu k_\mu^2 = 0$; the sign is the square of the $i$ in $Q_t$ |

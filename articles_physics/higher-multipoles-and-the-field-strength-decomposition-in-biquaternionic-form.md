@@ -242,7 +242,7 @@ $$
 
 The field-strength biquaternion of a radiation field is a **zero divisor**: a radiation field is null, whether it is an electric or a magnetic multipole, and the null property is shared by the whole far-zone tower.
 
-A further simplification occurs for definite helicity. With the corpus's $\exp(-i\omega t')$ convention, for which a positive-frequency plane wave has $\vec B = \vec u\times\vec E/c$, a circularly polarised wave of one handedness satisfies $\vec B = -i\,\vec E/c$ as a complex amplitude and the other handedness satisfies $\vec B = +i\,\vec E/c$. For the first,
+A further simplification occurs for definite helicity. With the corpus's $\exp(-i\omega r'_t)$ convention, for which a positive-frequency plane wave has $\vec B = \vec u\times\vec E/c$, a circularly polarised wave of one handedness satisfies $\vec B = -i\,\vec E/c$ as a complex amplitude and the other handedness satisfies $\vec B = +i\,\vec E/c$. For the first,
 
 $$
 \vec N^* = \vec E - ic\,\vec B = 0 ,
@@ -392,8 +392,8 @@ The multipole series and the two decompositions act on different spaces. The dec
 | $i$ | Central scalar imaginary, $i^2 = -1$ |
 | $\mathbb{M}_-, \mathbb{M}_+$ | Material (anti-Hermitian) and informational (Hermitian) sectors |
 | $\mathbb{C}_{\mathbb{B}}, \mathrm{Vect}(\mathbb{B})$ | Centre and complex vector part of $\mathbb{B}$ |
-| $\tilde{\nabla} = e_t\,\partial/\partial Q_t+\vec\nabla$ | Biquaternionic gradient |
-| $\Box = \tilde{\nabla}\tilde{\nabla}^{\natural} = \partial^2/\partial Q_t^2+\Delta$ | d'Alembertian (series convention) |
+| $\tilde{\nabla} = e_t\,\partial/\partial R_t+\vec\nabla$ | Biquaternionic gradient |
+| $\Box = \tilde{\nabla}\tilde{\nabla}^{\natural} = \partial^2/\partial R_t^2+\Delta$ | d'Alembertian (series convention) |
 | $\tilde{F} = i\sqrt{\epsilon}\,\vec E-\sqrt{\mu}\,\vec H$ | Field-strength biquaternion (pure vector) |
 | $\tilde{F}^{*}$ | Hermitian conjugate of $\tilde{F}$ |
 | $\vec N = \vec E+ic\vec B$ | Riemann–Silberstein vector (self-dual) |

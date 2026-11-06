@@ -15,9 +15,9 @@ $$
 with basis $ie_t, \vec e_x, \vec e_y, \vec e_z$, whose biquaternion norm has signature $(3,1)$; it carries the four-vectors of physics. The informational sector is the Hermitian subspace $\mathbb{M}_+$, with basis $e_t, i\vec e_x, i\vec e_y, i\vec e_z$. The two sectors satisfy $\mathbb{B} = \mathbb{M}_-\oplus\mathbb{M}_+$. The biquaternionic gradient is
 
 $$
-\tilde{\nabla} = e_t\,\partial/\partial Q_t + \vec e_x\,\partial/\partial Q_x + \vec e_y\,\partial/\partial Q_y + \vec e_z\,\partial/\partial Q_z,
+\tilde{\nabla} = e_t\,\partial/\partial R_t + \vec e_x\,\partial/\partial R_x + \vec e_y\,\partial/\partial R_y + \vec e_z\,\partial/\partial R_z,
 \qquad
-\Box = \tilde{\nabla}\tilde{\nabla}^{\natural} = \partial^2/\partial Q_t^2 + \Delta .
+\Box = \tilde{\nabla}\tilde{\nabla}^{\natural} = \partial^2/\partial R_t^2 + \Delta .
 $$
 
 Throughout, $c = 1/\sqrt{\epsilon\mu}$ is the speed of light in the medium and $c_0 = 1/\sqrt{\epsilon_0\mu_0}$ its vacuum value. The conventions are those of the companion articles:
@@ -151,13 +151,13 @@ a real, Hermitian central element. It is not itself the four-potential — that 
 The spatial derivative operator is the vector part of the biquaternionic gradient,
 
 $$
-\vec\nabla = \vec e_x\partial/\partial Q_x + \vec e_y\partial/\partial Q_y + \vec e_z\partial/\partial Q_z ,
+\vec\nabla = \vec e_x\partial/\partial R_x + \vec e_y\partial/\partial R_y + \vec e_z\partial/\partial R_z ,
 $$
 
-so that $\tilde{\nabla} = e_t\,\partial/\partial Q_t + \vec\nabla$. Acting on a central element, $\vec\nabla$ produces a pure real vector,
+so that $\tilde{\nabla} = e_t\,\partial/\partial R_t + \vec\nabla$. Acting on a central element, $\vec\nabla$ produces a pure real vector,
 
 $$
-\vec\nabla(Ξ\,e_t) = (\partial/\partial Q_x\,Ξ)\vec e_x + (\partial/\partial Q_y\,Ξ)\vec e_y + (\partial/\partial Q_z\,Ξ)\vec e_z ,
+\vec\nabla(Ξ\,e_t) = (\partial/\partial R_x\,Ξ)\vec e_x + (\partial/\partial R_y\,Ξ)\vec e_y + (\partial/\partial R_z\,Ξ)\vec e_z ,
 $$
 
 which is $-\vec E$ in biquaternion form: since $\vec E = -\vec\nablaΞ$, the object computed is $\vec\nablaΞ = -\vec E$, a pure real vector, an element of the vector part of $\mathbb{H}_{\mathbb{B}}$, and hence of $\mathbb{M}_-$.
@@ -165,10 +165,10 @@ which is $-\vec E$ in biquaternion form: since $\vec E = -\vec\nablaΞ$, the obj
 **The spatial Laplacian.** A fact used twice below is that the second power of the vector gradient is minus the Laplacian,
 
 $$
-\vec\nabla\,\vec\nabla = \sum_{i,j}e_i e_j\,\partial^2/\partial Q_i\partial Q_j = -\sum_i \partial^2/\partial Q_i^2\,e_t = -\Delta\,e_t .
+\vec\nabla\,\vec\nabla = \sum_{i,j}e_i e_j\,\partial^2/\partial R_i\partial R_j = -\sum_i \partial^2/\partial R_i^2\,e_t = -\Delta\,e_t .
 $$
 
-The antisymmetric part of the quaternion product, $\sum_{i<j}(e_i e_j - e_j e_i)\partial^2/\partial Q_i\partial Q_j$, vanishes because the partial derivatives commute, so only the trace survives. This has been verified symbolically: for a quadratic potential $Ξ$ with Hessian $H$, the combination $\sum_{ij}e_i e_j\,H_{ij}$ equals $-\mathrm{tr}(H)e_t$ exactly, and the traceless symmetric part of the Hessian never appears.
+The antisymmetric part of the quaternion product, $\sum_{i<j}(e_i e_j - e_j e_i)\partial^2/\partial R_i\partial R_j$, vanishes because the partial derivatives commute, so only the trace survives. This has been verified symbolically: for a quadratic potential $Ξ$ with Hessian $H$, the combination $\sum_{ij}e_i e_j\,H_{ij}$ equals $-\mathrm{tr}(H)e_t$ exactly, and the traceless symmetric part of the Hessian never appears.
 
 ### The Field-Strength Biquaternion
 
@@ -245,7 +245,7 @@ and it agrees exactly with the $l = 2$ Legendre term of the Coulomb kernel, as n
 The interaction energy of a bounded charge distribution with an external potential $Ξ_{ext}$ is $W = \int\rho\,Ξ_{ext}\,d^3x_2$. Expanding $Ξ_{ext}$ about the origin,
 
 $$
-Ξ_{ext}(x_2\,\vec e_x+y_2\,\vec e_y+z_2\,\vec e_z) = Ξ(0) - x_{i,2} E_i(0) - \tfrac12 x_{i,2}x_{j,2}\,\partial/\partial Q_i\,E_j(0) + \cdots ,
+Ξ_{ext}(x_2\,\vec e_x+y_2\,\vec e_y+z_2\,\vec e_z) = Ξ(0) - x_{i,2} E_i(0) - \tfrac12 x_{i,2}x_{j,2}\,\partial/\partial R_i\,E_j(0) + \cdots ,
 $$
 
 where $\vec E = -\vec\nablaΞ$ is the external field. The quadratic term separates into a trace part and a traceless part once the second moments are written in terms of the quadrupole tensor,
@@ -257,7 +257,7 @@ $$
 and the trace part contributes $-\tfrac16(\nabla\cdot\vec E)(0)\int\rho\,r_2^{\,2}d^3x_2$. For an external field whose own sources lie outside the distribution, $\nabla\cdot\vec E$ vanishes wherever the distribution sits and that term drops, leaving the standard multipole expansion of the interaction energy,
 
 $$
-W = ϙ\,Ξ(0) - \vec p\cdot\vec E(0) - \tfrac16\,\mathcal{Q}_{ij}\,\partial/\partial Q_i\,E_j(0) + \cdots .
+W = ϙ\,Ξ(0) - \vec p\cdot\vec E(0) - \tfrac16\,\mathcal{Q}_{ij}\,\partial/\partial R_i\,E_j(0) + \cdots .
 $$
 
 Separating off the trace term is what leaves the quadrupole entering the expansion through the traceless tensor $\mathcal{Q}_{ij}$ alone, and it is the same split that the representation-theoretic contraction below uses.
@@ -266,17 +266,17 @@ The identity was verified numerically on three point charges: with a quadratic e
 
 Two features of the quadrupole term deserve emphasis, because they are what the algebra will and will not see.
 
-**Only the traceless part of the field gradient matters.** Since $\mathcal{Q}_{ii} = 0$ and $\partial/\partial Q_i\,E_j = -\partial^2/\partial Q_i\partial Q_j\,Ξ$ is symmetric in $i,j$, the contraction $\mathcal{Q}_{ij}\partial/\partial Q_i\,E_j$ receives contributions only from the traceless symmetric part of the field-gradient matrix. Writing
+**Only the traceless part of the field gradient matters.** Since $\mathcal{Q}_{ii} = 0$ and $\partial/\partial R_i\,E_j = -\partial^2/\partial R_i\partial R_j\,Ξ$ is symmetric in $i,j$, the contraction $\mathcal{Q}_{ij}\partial/\partial R_i\,E_j$ receives contributions only from the traceless symmetric part of the field-gradient matrix. Writing
 
 $$
-\partial/\partial Q_i\,E_j = \tfrac13\delta_{ij}\,\nabla\cdot\vec E + T_{ij},
+\partial/\partial R_i\,E_j = \tfrac13\delta_{ij}\,\nabla\cdot\vec E + T_{ij},
 \qquad T_{ii} = 0, \quad T_{ij} = T_{ji},
 $$
 
 the trace term drops against $\mathcal{Q}_{ii} = 0$. With the external field source-free at the location of the distribution, as assumed for the expansion above, the quadrupole interaction is therefore the pure contraction of two $D^{(2)}$ objects,
 
 $$
-\boxed{\;W_{quad} = -\tfrac16\,\mathcal{Q}_{ij}T_{ij} = \tfrac16\,\mathcal{Q}_{ij}\,\partial^2/\partial Q_i\partial Q_j\,Ξ(0)\;}.
+\boxed{\;W_{quad} = -\tfrac16\,\mathcal{Q}_{ij}T_{ij} = \tfrac16\,\mathcal{Q}_{ij}\,\partial^2/\partial R_i\partial R_j\,Ξ(0)\;}.
 $$
 
 **It is a scalar.** Like every interaction energy, $W_{quad}$ is a single number, hence an element of the centre $\mathbb{C}_{\mathbb{B}}$. The algebra has no difficulty with the *value* of the quadrupole interaction. Its difficulty is with the *moment*, and that is the subject of the next section.
@@ -330,7 +330,7 @@ $$
 
 which is a subspace of the tensor square $D^{(1)}\otimes D^{(1)}$ — equivalently of $\mathbb{B}\otimes\mathbb{B}$ — and not a subspace of $\mathbb{B}$. In coordinate terms, a quadrupole is the traceless part of a symmetric bilinear form $\mathcal{Q}(\vec u,\vec v)$ on the vector part. This is the precise sense in which the quadrupole is *outside* the algebra: it is a tensor built from two vectors, not a single element.
 
-The same conclusion can be read off the second derivative. From $\vec\nabla\vec\nabla = -\Delta\,e_t$, the iterated gradient of a scalar potential is a pure central element: the product of the two gradient operators annihilates the traceless symmetric part of $\partial^2/\partial Q_i\partial Q_j\,Ξ$. The quadrupole angular information is carried by the scalar field $Ξ(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)$ — which has arbitrary angular dependence — and by the tensor of its second derivatives, but it is invisible to the *product* of two gradient operators.
+The same conclusion can be read off the second derivative. From $\vec\nabla\vec\nabla = -\Delta\,e_t$, the iterated gradient of a scalar potential is a pure central element: the product of the two gradient operators annihilates the traceless symmetric part of $\partial^2/\partial R_i\partial R_j\,Ξ$. The quadrupole angular information is carried by the scalar field $Ξ(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)$ — which has arbitrary angular dependence — and by the tensor of its second derivatives, but it is invisible to the *product* of two gradient operators.
 
 ### The Invariant Statement
 
@@ -347,7 +347,7 @@ The static field of a bounded source is expanded in multipole moments, one order
 
 The moments fall into two classes. The monopole is a central scalar and the dipole is a vector, so both are **elements of the algebra**, and the dipole interaction $-\vec p\cdot\vec E = \mathrm{Sc}(\tilde{p}\tilde E)$ is an algebra product. The quadrupole is a symmetric traceless rank-two tensor, the representation $D^{(2)}$, and it is **not** an algebra element: the quaternion product of two vectors, $\vec q\vec v = -\vec q\cdot\vec v + \vec q\times\vec v$, projects $D^{(1)}\otimes D^{(1)} = D^{(0)}\oplus D^{(1)}\oplus D^{(2)}$ onto $D^{(0)}\oplus D^{(1)}$ and discards the symmetric traceless part. The algebra, as a rotation representation, is $\mathbb{B} = D^{(0)}\oplus D^{(1)}$ and contains no weight-$\pm2$ state. The quadrupole's home is the symmetric traceless square $\operatorname{sym}^2_0(D^{(1)})\cong D^{(2)}$, a subspace of $\mathbb{B}\otimes\mathbb{B}$.
 
-The quadrupole **interaction** is a scalar and therefore lies in the centre: with the external field source-free at the source, $W_{quad} = -\frac16 \mathcal{Q}_{ij}T_{ij} = \frac16 \mathcal{Q}_{ij}\partial^2/\partial Q_i\partial Q_j\,Ξ(0)$, the contraction of two $D^{(2)}$ objects. The interaction energy is an element of the algebra even though the moment is not.
+The quadrupole **interaction** is a scalar and therefore lies in the centre: with the external field source-free at the source, $W_{quad} = -\frac16 \mathcal{Q}_{ij}T_{ij} = \frac16 \mathcal{Q}_{ij}\partial^2/\partial R_i\partial R_j\,Ξ(0)$, the contraction of two $D^{(2)}$ objects. The interaction energy is an element of the algebra even though the moment is not.
 
 The multipole tower is infinite because the angular structure of a field on the sphere is infinite-dimensional; the algebra is finite because it is the value algebra of a two-state, four-vector structure. The first order at which the difference shows is the quadrupole.
 
@@ -362,9 +362,9 @@ The multipole tower is infinite because the angular structure of a field on the 
 | $\mathbb{C}_{\mathbb{B}} = \{Q_te_t\}$ | Centre of $\mathbb{B}$ (the scalars) |
 | $\mathbb{H}_{\mathbb{B}}$ | Real-quaternion subspace |
 | $\tilde{U}\in\mathbb{H}_{\mathbb{B}}^1$, $\tilde{U}\tilde{U}^{\natural} = e_t$ | Rotation rotor, acting on a vector by $\vec v\mapsto\tilde{U}\vec v\tilde{U}^{*}$ |
-| $\tilde{\nabla} = e_t\,\partial/\partial Q_t + \vec\nabla$ | Biquaternionic gradient |
-| $\vec\nabla = \vec e_x\partial/\partial Q_x + \vec e_y\partial/\partial Q_y + \vec e_z\partial/\partial Q_z$ | Spatial vector gradient |
-| $\Box = \tilde{\nabla}\tilde{\nabla}^{\natural} = \partial^2/\partial Q_t^2 + \Delta$ | d'Alembertian (series convention) |
+| $\tilde{\nabla} = e_t\,\partial/\partial R_t + \vec\nabla$ | Biquaternionic gradient |
+| $\vec\nabla = \vec e_x\partial/\partial R_x + \vec e_y\partial/\partial R_y + \vec e_z\partial/\partial R_z$ | Spatial vector gradient |
+| $\Box = \tilde{\nabla}\tilde{\nabla}^{\natural} = \partial^2/\partial R_t^2 + \Delta$ | d'Alembertian (series convention) |
 | $\tilde{A} = i\,a'_t\,e_t + \vec A$ | Four-potential, an element of $\mathbb{M}_-$ |
 | $\tilde{F} = i\sqrt{\epsilon}\,\vec E - \sqrt{\mu}\,\vec H$ | Field-strength biquaternion |
 | $\vec u = (r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)/r$ | Unit radial quaternion, $\vec u^2 = -e_t$ |

@@ -31,7 +31,7 @@ First, the equation is **first order**: $\tilde{\nabla}$ appears once. This is t
 Second, the **real and imaginary parts of the single complex equation separate the homogeneous and inhomogeneous Maxwell equations**. Writing $\vec F=\tilde{F}$ and decomposing $\tilde{\nabla}\tilde{F}=-\sqrt{\mu}\,\tilde{J}$ into its scalar and vector parts gives the two equations
 
 $$
-\mathrm{div}\,\vec F=R_0,\qquad \partial/\partial Q_t\,\vec F+\mathrm{rot}\,\vec F=-\vec R,
+\mathrm{div}\,\vec F=R_0,\qquad \partial/\partial R_t\,\vec F+\mathrm{rot}\,\vec F=-\vec R,
 $$
 where $R_0$ and $\vec R$ are the scalar and vector parts of $-\sqrt{\mu}\,\tilde J$.
 
@@ -74,10 +74,10 @@ Two equivalent formulations of the classical theory are therefore available, and
 **The first-order, Palatini formulation.** If one wants the field strength to remain the independent variable, one takes $\tilde{F}$ and $\tilde{A}$ as independent and uses the first-order action
 
 $$
-S=\int d^4x\left[-\sum_{\mu,\nu}F_{\mu\nu}\,\partial/\partial Q_\mu A_\nu+\tfrac14 \sum_{\mu,\nu}F_{\mu\nu}F_{\mu\nu}\right].
+S=\int d^4x\left[-\sum_{\mu,\nu}F_{\mu\nu}\,\partial/\partial R_\mu A_\nu+\tfrac14 \sum_{\mu,\nu}F_{\mu\nu}F_{\mu\nu}\right].
 $$
 
-Varying with respect to $A_\nu$ gives $\sum_\mu\partial/\partial Q_\mu F_{\mu\nu}=0$, the inhomogeneous Maxwell equations, and varying with respect to $F_{\mu\nu}$ gives $F_{\mu\nu}=\partial/\partial Q_\mu A_\nu-\partial/\partial Q_\nu A_\mu$, the definition that makes the homogeneous equations automatic; on shell the integrand is $-\tfrac14\sum_{\mu,\nu}F_{\mu\nu}F_{\mu\nu}$. The field strength is present as an independent variable, but the potential reappears as its Lagrange multiplier, carrying no kinetic term of its own. The gauge freedom is not removed by this route; it is relocated. There is no local action in four dimensions in which the gauge-invariant field strength alone is varied and Maxwell's equations, rather than $\tilde{F}=0$, follow.
+Varying with respect to $A_\nu$ gives $\sum_\mu\partial/\partial R_\mu F_{\mu\nu}=0$, the inhomogeneous Maxwell equations, and varying with respect to $F_{\mu\nu}$ gives $F_{\mu\nu}=\partial/\partial R_\mu A_\nu-\partial/\partial R_\nu A_\mu$, the definition that makes the homogeneous equations automatic; on shell the integrand is $-\tfrac14\sum_{\mu,\nu}F_{\mu\nu}F_{\mu\nu}$. The field strength is present as an independent variable, but the potential reappears as its Lagrange multiplier, carrying no kinetic term of its own. The gauge freedom is not removed by this route; it is relocated. There is no local action in four dimensions in which the gauge-invariant field strength alone is varied and Maxwell's equations, rather than $\tilde{F}=0$, follow.
 
 This is the first finding of the article. The biquaternion formulation writes the theory in its most compact and most covariant form, first order in a gauge-invariant object; canonical quantization cannot start from that object. It must either return to the potential and accept the gauge redundancy, or use the first-order formulation and accept the potential as a multiplier. In neither case does the algebra supply the missing structure.
 
@@ -86,7 +86,7 @@ This is the first finding of the article. The biquaternion formulation writes th
 The Legendre transform of the potential formulation is singular, and the singularities are of a different kind from the Dirac case. In natural units the conjugate momenta are
 
 $$
-\pi_\mu=\frac{\partial\mathcal{L}}{\partial(\partial/\partial Q_t A_\mu)}=-F_{t\mu},
+\pi_\mu=\frac{\partial\mathcal{L}}{\partial(\partial/\partial R_t A_\mu)}=-F_{t\mu},
 $$
 
 so that
@@ -130,7 +130,7 @@ $$
 and Gauss's law is a scalar-part condition as well. A direct computation of the quaternion product gives
 
 $$
-\mathrm{Sc}\!\left(\tilde{\nabla}^{\natural}\tilde{\pi}\right)=\partial/\partial Q_t\,\pi_0+\mathrm{div}\,\vec\pi,
+\mathrm{Sc}\!\left(\tilde{\nabla}^{\natural}\tilde{\pi}\right)=\partial/\partial R_t\,\pi_0+\mathrm{div}\,\vec\pi,
 $$
 
 so that on the constraint surface, where $\pi_0\approx0$,
@@ -209,7 +209,7 @@ The alternatives should be named. The **Coulomb gauge** $\mathrm{div}\,\vec A=0$
 
 ## Comparison with the Scalar Field
 
-The counting is worth setting beside the scalar field, because the difference is where the gauge structure lives. A real scalar field $\xi^{\mathrm{scl}}$ of mass $m$ has conjugate momentum $\pi=\partial\xi^{\mathrm{scl}}/\partial t'$, the canonical commutator $[\xi^{\mathrm{fop}}(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z),\pi^{\mathrm{fop}}(\vec y)]=i\delta^{(3)}(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z-\vec y)$, and a mode expansion with **one** polarization,
+The counting is worth setting beside the scalar field, because the difference is where the gauge structure lives. A real scalar field $\xi^{\mathrm{scl}}$ of mass $m$ has conjugate momentum $\pi=\partial\xi^{\mathrm{scl}}/\partial r'_t$, the canonical commutator $[\xi^{\mathrm{fop}}(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z),\pi^{\mathrm{fop}}(\vec y)]=i\delta^{(3)}(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z-\vec y)$, and a mode expansion with **one** polarization,
 
 $$
 \big[a^{\mathrm{fop}}(\vec k),a^{\mathrm{fop}\dagger}(\vec k_2)\big]=(2\pi)^3\delta^{(3)}(\vec k-\vec k_2),
@@ -261,7 +261,7 @@ The extension is a transcription of standard canonical quantization into the fra
 | $i$ | Scalar imaginary, $i^2=-1$ |
 | $\mathbb{M}_+,\mathbb{M}_-$ | Informational (Hermitian) and material (anti-Hermitian) sectors |
 | $\mathbb{H}_{\mathbb{B}}$ | Real-quaternion subspace |
-| $\tilde{\nabla}=e_t\partial/\partial Q_t+\vec e_x\partial/\partial Q_x+\vec e_y\partial/\partial Q_y+\vec e_z\partial/\partial Q_z$ | Biquaternionic gradient |
+| $\tilde{\nabla}=e_t\partial/\partial R_t+\vec e_x\partial/\partial R_x+\vec e_y\partial/\partial R_y+\vec e_z\partial/\partial R_z$ | Biquaternionic gradient |
 | $\tilde{\nabla}^{\natural}$ | Quaternion-conjugate gradient |
 | $\Box=\tilde{\nabla}\tilde{\nabla}^{\natural}=\tilde{\nabla}^{\natural}\tilde{\nabla}$ | d'Alembertian |
 | $\tilde{A}=i\,a'_t\,e_t+\vec A$ | Potential biquaternion (in $\mathbb{M}_-$) |
@@ -272,7 +272,7 @@ The extension is a transcription of standard canonical quantization into the fra
 | $S=\mathrm{Sc}(\tilde{\nabla}^{\natural}\tilde{A})$, $S_2=S-\Box\Gamma$ | Gauge degree of freedom; Lorenz gauge $S=0$ |
 | $\delta_{\mu\nu}$ | Unit metric, all four coefficients $+1$; $\sum_{\mu,\nu}\delta_{\mu\nu}Q_\mu Q_\nu$ is the biquaternion norm on $\mathbb{M}_-$, with $Q_t=i c r'_t$ |
 | $\mathcal{L}=-\tfrac14 \sum_{\mu,\nu}F_{\mu\nu}F_{\mu\nu}$ | Maxwell Lagrangian density (potential formulation) |
-| $\pi_\mu=\partial\mathcal{L}/\partial(\partial/\partial Q_t A_\mu)=-F_{t\mu}$ | Conjugate momenta: $\pi_0\approx0$, $\vec\pi=-i\vec E$ |
+| $\pi_\mu=\partial\mathcal{L}/\partial(\partial/\partial R_t A_\mu)=-F_{t\mu}$ | Conjugate momenta: $\pi_0\approx0$, $\vec\pi=-i\vec E$ |
 | $\tilde{\pi}=\pi_0e_t+\vec\pi$ | Momentum biquaternion |
 | $\mathrm{Sc}(\tilde{\pi})\approx0$, $\mathrm{Sc}(\tilde{\nabla}^{\natural}\tilde{\pi})\approx0$ | Primary and Gauss-law constraints, both first class |
 | $A_\mu$, $\epsilon^{(r)}_\mu$, $a^{\mathrm{fop}}_r,a^{\mathrm{fop}\dagger}_r$ | Quantized potential, polarization vectors, mode operators |

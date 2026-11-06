@@ -28,7 +28,7 @@ The worldline parameter is $\tau$ and the proper time $T$. The material position
 
 The object the path integral must compute is the Feynman propagator of the pair. Its two components are the amplitudes for the two values of the subscript, and each component is an element of the algebra: no array enters, and the pair is what the algebra's own product acts on.
 
-**The two symbols.** A plane wave of the pair is $\tilde{Ξ}^{\mathrm{sp}}(x) = \hat{\tilde{Ξ}^{\mathrm{sp}}}\exp(-ip\cdot x)$, with $p\cdot x = p_0x_0 - \vec p\cdot\vec x$ and $p_0 = E/c$ the contraction of the material frame. The momentum element is $\tilde{P}$, and its norm is the mass-shell scalar,
+**The two symbols.** A plane wave of the pair is $\tilde{Ξ}^{\mathrm{sp}}(x) = \hat{\tilde{Ξ}^{\mathrm{sp}}}\exp(-ip\cdot x)$, with $p\cdot r_x = p_0x_0 - \vec p\cdot\vec r$ and $p_0 = E/c$ the contraction of the material frame. The momentum element is $\tilde{P}$, and its norm is the mass-shell scalar,
 
 $$
 \langle\tilde{P}\rangle_{\natural} = \tilde{P}\tilde{P}^{\natural} = -p^2,
@@ -39,12 +39,12 @@ $$
 The gradient and its conjugate act on the plane wave by left multiplication by the two symbols,
 
 $$
-\tilde{\nabla}\,e^{-ip\cdot x} = i\tilde{P}\,e^{-ip\cdot x},
+\tilde{\nabla}\,e^{-ip\cdot r_x} = i\tilde{P}\,e^{-ip\cdot r_x},
 \qquad
-\tilde{\nabla}^{\natural}\,e^{-ip\cdot x} = i\tilde{P}^{\natural}\,e^{-ip\cdot x},
+\tilde{\nabla}^{\natural}\,e^{-ip\cdot r_x} = i\tilde{P}^{\natural}\,e^{-ip\cdot r_x},
 $$
 
-a derived form: the time derivative of the phase is $-ip_0$ and the spatial derivative $+ip_k$, and on the material sector the time derivative of the gradient is read with $\partial/\partial Q_t = -i\,\partial/\partial x_0$ (*Operator and Calculus Conventions*, §*The Gradient*). The product of the two symbols is the symbol of the d'Alembertian,
+a derived form: the time derivative of the phase is $-ip_0$ and the spatial derivative $+ip_k$, and on the material sector the time derivative of the gradient is read with $\partial/\partial R_t = -i\,\partial/\partial x_0$ (*Operator and Calculus Conventions*, §*The Gradient*). The product of the two symbols is the symbol of the d'Alembertian,
 
 $$
 i\tilde{P}\,i\tilde{P}^{\natural} = -\langle\tilde{P}\rangle_{\natural} = p^2 .
@@ -92,7 +92,7 @@ $$
 \mathbb{D}^2 = \Box ,
 $$
 
-the composition of two left multiplications by the two gradients, whose product is central (*Operator and Calculus Conventions*, §*The Gradient*). In symbols that is the identity $i\tilde{P}\,i\tilde{P}^{\natural} = p^2$; the operator is $\Box=\sum_\mu\partial^2_{Q_\mu}$, and on the material reading, $Q_t=i c r'_t$ and $Q_k=x_k$, it is $\Delta - \partial^2/\partial x_0^2$, with $\Delta$ the Laplacian in the three real spatial coordinates. The square is therefore the series' own scalar operator and not a second one, and that is what makes the first-order operator a square root.
+the composition of two left multiplications by the two gradients, whose product is central (*Operator and Calculus Conventions*, §*The Gradient*). In symbols that is the identity $i\tilde{P}\,i\tilde{P}^{\natural} = p^2$; the operator is $\Box=\sum_\mu\partial^2/\partial R_\mu^2$, and on the material reading, $Q_t=i c r'_t$ and $Q_k=x_k$, it is $\Delta - \partial^2/\partial x_0^2$, with $\Delta$ the Laplacian in the three real spatial coordinates. The square is therefore the series' own scalar operator and not a second one, and that is what makes the first-order operator a square root.
 
 This is standard relativistic quantum physics (see the Further Reading); the companion article *The Feynman Propagator in Biquaternionic Form* treats the same object in the biquaternion framework. Two structural facts are needed here.
 
@@ -134,18 +134,18 @@ $$
 \Delta_F(x,x_2) = \int_0^\infty dT\int_{x(0)=x}^{x(T)=x_2}\mathcal{D}x(\tau)\;
 \exp(iS_0[x]),
 \qquad
-S_0[x] = \int_0^T d\tau\left(\frac{1}{4}\sum_\mu\frac{dQ_\mu}{d\tau}\frac{dQ_\mu}{d\tau} - \mu^2\right),
+S_0[x] = \int_0^T d\tau\left(\frac{1}{4}\sum_\mu\frac{dR_\mu}{d\tau}\frac{dR_\mu}{d\tau} - \mu^2\right),
 $$
 
 up to the standard normalisation of the measure and the einbein gauge choice. The tangent is read in the complex coordinate, $Q_t=i c r'_t$ and $Q_k=x_k$, so that for a straight worldline
 
 $$
-\sum_\mu\frac{dQ_\mu}{d\tau}\frac{dQ_\mu}{d\tau} = -\frac{(x-x_2)^2}{T^2},
+\sum_\mu\frac{dR_\mu}{d\tau}\frac{dR_\mu}{d\tau} = -\frac{(r_x-x_2)^2}{T^2},
 \qquad
-(x-x_2)^2 = (x_0-x_2^0)^2 - \left|\vec x-\vec x_2\right|^2 ,
+(r_x-x_2)^2 = (x_0-x_2^0)^2 - \left|\vec r-\vec x_2\right|^2 ,
 $$
 
-writing $\vec x = r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z$ for the vector part of the position, and the phase reduces to $\exp\left(-i\left[\frac{(x-x_2)^2}{4T} + \mu^2 T\right]\right)$; this is the sign that the explicit free kernel of the next section displays. The Dirac propagator is then $\left(\mathbb{D} + \mu\right)$ applied to $\Delta_F$. The worldline is a curve in the material sector $\mathbb{M}_-$: its tangent is a material four-velocity, and the phase $S_0$ is central. This is the biquaternion content of the scalar worldline: a central phase over a material curve.
+writing $\vec r = r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z$ for the vector part of the position, and the phase reduces to $\exp\left(-i\left[\frac{(x-x_2)^2}{4T} + \mu^2 T\right]\right)$; this is the sign that the explicit free kernel of the next section displays. The Dirac propagator is then $\left(\mathbb{D} + \mu\right)$ applied to $\Delta_F$. The worldline is a curve in the material sector $\mathbb{M}_-$: its tangent is a material four-velocity, and the phase $S_0$ is central. This is the biquaternion content of the scalar worldline: a central phase over a material curve.
 
 The deficiency of this representation is that the spin is nowhere to be seen until the differential operator is applied at the end. The second resolution supplies the spin directly.
 
@@ -179,7 +179,7 @@ The worldline that generates the Dirac propagator itself, rather than the Klein�
 
 $$
 S[x,\tilde{Ξ}^{\mathrm{sp}}] = \int_0^T d\tau\left[
-\frac{1}{4}\sum_\mu\frac{dQ_\mu}{d\tau}\frac{dQ_\mu}{d\tau}
+\frac{1}{4}\sum_\mu\frac{dR_\mu}{d\tau}\frac{dR_\mu}{d\tau}
 + \frac{i}{2}\sum_\mu\tilde{Ξ}^{\mathrm{sp}}_\mu\frac{d\tilde{Ξ}^{\mathrm{sp}}_\mu}{d\tau}
 - \mu^2
 \right],
@@ -229,7 +229,7 @@ The spin factor is where the algebra sits, and its structure is the reason the o
 The spin factor earns its name in a background electromagnetic field, and the calculation shows how the algebra organises the result. Minimal coupling adds the gauge term $\sum_\mu qA_\mu(x)\frac{dx_\mu}{d\tau}$ to the worldline action,
 
 $$
-S[x] = \int_0^T d\tau\left[\frac{1}{4}\sum_\mu\frac{dQ_\mu}{d\tau}\frac{dQ_\mu}{d\tau} - \mu^2 + \sum_\mu qA_\mu(x)\frac{dx_\mu}{d\tau}\right],
+S[x] = \int_0^T d\tau\left[\frac{1}{4}\sum_\mu\frac{dR_\mu}{d\tau}\frac{dR_\mu}{d\tau} - \mu^2 + \sum_\mu qA_\mu(x)\frac{dx_\mu}{d\tau}\right],
 $$
 
 and the odd kinetic term is unchanged. The coupling is through the pair of two units, contracted with the field strength. The six generators are written once, the three of a time index and a spatial one and the three of two spatial indices:
@@ -281,27 +281,27 @@ The biquaternion interpretation is then immediate, and it needs no second algebr
 
 ### The Recurrence and Its Limit
 
-The discrete structure can be written as a pair of coupled recurrences and taken to the continuum, and doing so exhibits the mass pair explicitly. Let $A_+(x,t')$ and $A_-(x,t')$ be the amplitudes to arrive at the lattice point $(x,t')$ having last moved in the $+x$ and $-x$ directions respectively, with the lattice spacing and time step both equal to $\epsilon$ (units $c = 1$). A step carries the particle one site in its direction of motion, and a corner contributes the weight $i\epsilon m/\hbar$; the recurrences are therefore
+The discrete structure can be written as a pair of coupled recurrences and taken to the continuum, and doing so exhibits the mass pair explicitly. Let $A_+(r_x,r'_t)$ and $A_-(r_x,r'_t)$ be the amplitudes to arrive at the lattice point $(r_x,r'_t)$ having last moved in the $+x$ and $-x$ directions respectively, with the lattice spacing and time step both equal to $\epsilon$ (units $c = 1$). A step carries the particle one site in its direction of motion, and a corner contributes the weight $i\epsilon m/\hbar$; the recurrences are therefore
 
 $$
-A_+(x,t'+\epsilon) = A_+(x-\epsilon,t') + \frac{i\epsilon m}{\hbar}\,A_-(x-\epsilon,t'),
+A_+(r_x,r'_t+\epsilon) = A_+(r_x-\epsilon,r'_t) + \frac{i\epsilon m}{\hbar}\,A_-(r_x-\epsilon,r'_t),
 $$
 
 $$
-A_-(x,t'+\epsilon) = A_-(x+\epsilon,t') + \frac{i\epsilon m}{\hbar}\,A_+(x+\epsilon,t'),
+A_-(r_x,r'_t+\epsilon) = A_-(r_x+\epsilon,r'_t) + \frac{i\epsilon m}{\hbar}\,A_+(r_x+\epsilon,r'_t),
 $$
 
 where the first term on each right-hand side is the straight continuation and the second is the corner. Two features are visible by inspection. The **free propagation is diagonal**: the term that carries $A_+$ to $A_+$ and $A_-$ to $A_-$ involves no mixing, and each direction propagates independently. The **mass is off-diagonal**: the corner terms couple the two amplitudes with the weight $i\epsilon m/\hbar$, i.e. with an explicit factor of the mass and an explicit factor of $i$.
 
-Taylor-expanding and taking $\epsilon \to 0$ with the lightlike constraint $|dx/dt'| = 1$ — the particle moves at the speed of light along the null directions, one lattice site per time step — turns the pair into
+Taylor-expanding and taking $\epsilon \to 0$ with the lightlike constraint $|dx/dr'_t| = 1$ — the particle moves at the speed of light along the null directions, one lattice site per time step — turns the pair into
 
 $$
-\frac{\partial A_+}{\partial t'} = -\frac{\partial A_+}{\partial x} + \frac{im}{\hbar}A_-,
+\frac{\partial A_+}{\partial r'_t} = -\frac{\partial A_+}{\partial r_x} + \frac{im}{\hbar}A_-,
 \qquad
-\frac{\partial A_-}{\partial t'} = +\frac{\partial A_-}{\partial x} + \frac{im}{\hbar}A_+,
+\frac{\partial A_-}{\partial r'_t} = +\frac{\partial A_-}{\partial r_x} + \frac{im}{\hbar}A_+,
 $$
 
-the two-part Dirac equation in 1+1 dimensions. The corner weight $i\epsilon m/\hbar$ becomes the mass term $i\mu$, with $\mu=m/\hbar$ at $c=1$, and the two directions become the two values of the subscript. Squaring either line with the other substituted gives $\partial^2 A_+/\partial t'^2-\partial^2 A_+/\partial x^2 = -m^2A_+/\hbar^2$: the cross terms cancel and the two corner factors meet as $i\cdot i=-1$, which is why the mass enters the squared equation with a minus sign. The $i$ of the corner is a relative phase of the two parts, since the rotation $A_+\mapsto e^{i\pi/4}A_+$, $A_-\mapsto e^{-i\pi/4}A_-$ turns the mass term $i\mu$ into the real $-\mu$; that is why the biquaternion pair can carry the real $\mu$, and why the corner weight is a convention rather than a sign. This is the Klein–Gordon equation of the series' d'Alembertian, so the discrete model carries the Dirac square as well as the Dirac equation. This is the discrete origin of the off-diagonal mass pair that the biquaternion algebra writes as $\tilde{\nabla}\tilde{Ξ}^{\mathrm{sp}}_R = \mu\tilde{Ξ}^{\mathrm{sp}}_L$, $\tilde{\nabla}^{\natural}\tilde{Ξ}^{\mathrm{sp}}_L = \mu\tilde{Ξ}^{\mathrm{sp}}_R$: the checkerboard is that pair before the continuum limit has identified the directions with the two values of the subscript. The order of the two factors in a corner is the path ordering that survives as the ordering of the operators $\tilde{\nabla}$ and $\tilde{\nabla}^{\natural}$ in the continuum.
+the two-part Dirac equation in 1+1 dimensions. The corner weight $i\epsilon m/\hbar$ becomes the mass term $i\mu$, with $\mu=m/\hbar$ at $c=1$, and the two directions become the two values of the subscript. Squaring either line with the other substituted gives $\partial^2 A_+/\partial r'_t^2-\partial^2 A_+/\partial r_x^2 = -m^2A_+/\hbar^2$: the cross terms cancel and the two corner factors meet as $i\cdot i=-1$, which is why the mass enters the squared equation with a minus sign. The $i$ of the corner is a relative phase of the two parts, since the rotation $A_+\mapsto e^{i\pi/4}A_+$, $A_-\mapsto e^{-i\pi/4}A_-$ turns the mass term $i\mu$ into the real $-\mu$; that is why the biquaternion pair can carry the real $\mu$, and why the corner weight is a convention rather than a sign. This is the Klein–Gordon equation of the series' d'Alembertian, so the discrete model carries the Dirac square as well as the Dirac equation. This is the discrete origin of the off-diagonal mass pair that the biquaternion algebra writes as $\tilde{\nabla}\tilde{Ξ}^{\mathrm{sp}}_R = \mu\tilde{Ξ}^{\mathrm{sp}}_L$, $\tilde{\nabla}^{\natural}\tilde{Ξ}^{\mathrm{sp}}_L = \mu\tilde{Ξ}^{\mathrm{sp}}_R$: the checkerboard is that pair before the continuum limit has identified the directions with the two values of the subscript. The order of the two factors in a corner is the path ordering that survives as the ordering of the operators $\tilde{\nabla}$ and $\tilde{\nabla}^{\natural}$ in the continuum.
 
 ## Composition, the Propagator Equation, and the Scalar Reduction
 
@@ -331,13 +331,13 @@ It is worth stating what the square does **not** do in this setting. It does not
 The worldline integrals above are written with a proper-time parameter $T$ that has already been gauge-fixed, and the fixing is worth stating because it is the reason the four-dimensional propagator carries a proper-time integral at all. A relativistic worldline is **reparametrisation invariant**: the action
 
 $$
-S[x,e] = \int_0^1 d\tau\left[\frac{1}{4e(\tau)}\sum_\mu\frac{dQ_\mu}{d\tau}\frac{dQ_\mu}{d\tau} - e(\tau)\,\mu^2\right]
+S[x,e] = \int_0^1 d\tau\left[\frac{1}{4e(\tau)}\sum_\mu\frac{dR_\mu}{d\tau}\frac{dR_\mu}{d\tau} - e(\tau)\,\mu^2\right]
 $$
 
 depends on the worldline only through its image, the auxiliary field $e(\tau)$ (the **einbein**) transforming as a density; the parameter $\tau$ has no physical meaning. In the path integral one does not fix $e$ but integrates over it, and the integral over the constant modes of $e$ is precisely the proper-time integral: writing $e(\tau) = T$ for the constant mode, the other modes can be gauged to zero and divide out the volume of the reparametrisation group, and the action becomes
 
 $$
-S = \frac{1}{4T}\int_0^1 \sum_\mu\frac{dQ_\mu}{d\tau}\frac{dQ_\mu}{d\tau}\,d\tau - \mu^2 T ,
+S = \frac{1}{4T}\int_0^1 \sum_\mu\frac{dR_\mu}{d\tau}\frac{dR_\mu}{d\tau}\,d\tau - \mu^2 T ,
 $$
 
 which is the proper-time exponent of the previous sections, with $T$ identified as the total proper time. The fluctuations of the material trajectory about the straight line — equivalently, in the Fourier form used above, the four-dimensional Gaussian integral over $p$ — produce the $T^{-2}$ prefactor $\mathcal{N}(T)$ of the free kernel.
@@ -458,7 +458,7 @@ In the biquaternion framework, a single odd variable is not an element of the al
 | $\mathbb{M}_-$ | Anti-Hermitian (material) sector; the worldline position $\tilde R_\varphi$ |
 | $i$ | Central scalar imaginary |
 | $\mathbb{D}$ | The pair operator, $\mathbb{D}\tilde{Ξ}^{\mathrm{sp}} = (\tilde{\nabla}\tilde{Ξ}^{\mathrm{sp}}_R,\ \tilde{\nabla}^{\natural}\tilde{Ξ}^{\mathrm{sp}}_L)$, with $\mathbb{D}^2 = \Box$ |
-| $\Box$ | Series d'Alembertian, $\sum_\mu\partial^2_{Q_\mu}$; $\Delta-\partial^2/\partial x_0^2$ on the material reading |
+| $\Box$ | Series d'Alembertian, $\sum_\mu\partial^2/\partial R_\mu^2$; $\Delta-\partial^2/\partial x_0^2$ on the material reading |
 | $\Delta$ | Laplacian in the three real spatial coordinates |
 | $\delta_{\mu\nu}=(1,1,1,1)$ | The unit metric on the four slots, the one metric of the series; the interval is $\sum_\mu Q_\mu^2$ |
 | $\varepsilon=(1,-1,-1,-1)$ | Plain weight, the sign of each squared unit: positive on the time slot, negative on the three spatial ones |
@@ -472,7 +472,7 @@ In the biquaternion framework, a single odd variable is not an element of the al
 | $\Delta_F(x-x_2)$ | Scalar (Klein–Gordon) Feynman propagator, $\left(\Box-\mu^2\right)\Delta_F = i\delta^{(4)}$ |
 | $\mathcal S = \left(\mathbb{D}+\mu\right)\Delta_F$ | Dirac propagator as the scalar kernel acted on |
 | $T$ | Proper time (Schwinger parameter) |
-| $x(\tau)$, $dQ_\mu/d\tau$ | Worldline and its tangent, summed over the four slots |
+| $x(\tau)$, $dR_\mu/d\tau$ | Worldline and its tangent, summed over the four slots |
 | $S_0[x]$ | Scalar worldline action |
 | $\tilde{Ξ}^{\mathrm{sp}}_\mu(\tau)$ | Odd (Grassmann) worldline variable; a single one is not an element of the algebra |
 | $\tilde{Ξ}^{\mathrm{sp}}_\mu\tilde{Ξ}^{\mathrm{sp}}_\nu+\tilde{Ξ}^{\mathrm{sp}}_\nu\tilde{Ξ}^{\mathrm{sp}}_\mu = -\tfrac12\varepsilon_\mu\delta_{\mu\nu}e_t$ | The pair of odd variables, an element of the algebra |

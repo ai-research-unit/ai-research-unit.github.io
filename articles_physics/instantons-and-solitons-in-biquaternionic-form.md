@@ -18,18 +18,18 @@ The article is organised around four questions, and it keeps the affirmative ans
 
 ## Two Signatures, Two Kinds of Localised Solution
 
-The framework's differential operators are Lorentzian. With the material coordinates $(i c r'_t,x,y,z)$,
+The framework's differential operators are Lorentzian. With the material coordinates $(i c r'_t,r_x,r_y,r_z)$,
 
 $$
-\tilde{\nabla}=e_t\,\partial/\partial Q_t+\vec e_x\,\partial/\partial Q_x+\vec e_y\,\partial/\partial Q_y+\vec e_z\,\partial/\partial Q_z,
+\tilde{\nabla}=e_t\,\partial/\partial R_t+\vec e_x\,\partial/\partial R_x+\vec e_y\,\partial/\partial R_y+\vec e_z\,\partial/\partial R_z,
 \qquad
-\Box=\tilde{\nabla}\tilde{\nabla}^{\natural}=\partial^2/\partial Q_t^2+\partial^2/\partial Q_x^2+\partial^2/\partial Q_y^2+\partial^2/\partial Q_z^2
-= + \partial^2/\partial Q_t^2+\nabla^2,
+\Box=\tilde{\nabla}\tilde{\nabla}^{\natural}=\partial^2/\partial R_t^2+\partial^2/\partial R_x^2+\partial^2/\partial R_y^2+\partial^2/\partial R_z^2
+= + \partial^2/\partial R_t^2+\nabla^2,
 $$
 
-where $\partial/\partial Q_t=\partial/\partial(i c r'_t)$, so that $\partial^2/\partial Q_t^2=-\partial^2/\partial {r'_{t}}^2$. The operator $\Box$ is hyperbolic, its characteristic cone is the zero-divisor cone of $\mathbb{M}_-$, and the Lorentzian field equations of the framework live here. This is the setting for **solitons**.
+where $\partial/\partial R_t=\partial/\partial(i c r'_t)$, so that $\partial^2/\partial R_t^2=-\partial^2/\partial {r'_{t}}^2$. The operator $\Box$ is hyperbolic, its characteristic cone is the zero-divisor cone of $\mathbb{M}_-$, and the Lorentzian field equations of the framework live here. This is the setting for **solitons**.
 
-The **Wick rotation** is the substitution $t'\mapsto-i\tau$, under which the material coordinate $\tilde R_\varphi=i c r'_t\,e_t+r_x\vec e_x+r_y\vec e_y+r_z\vec e_z$ becomes the real-quaternion element
+The **Wick rotation** is the substitution $r'_t\mapsto-i\tau$, under which the material coordinate $\tilde R_\varphi=i c r'_t\,e_t+r_x\vec e_x+r_y\vec e_y+r_z\vec e_z$ becomes the real-quaternion element
 
 $$
 \tilde{R}_{\varphi,\mathbb H}=c\tau\,e_t+r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z\in\mathbb{H}_{\mathbb{B}},
@@ -41,7 +41,7 @@ $$
 \tilde{\nabla}=e_t\,\partial/\partial x_4+\vec e_x\,\partial/\partial x_1+\vec e_y\,\partial/\partial x_2+\vec e_z\,\partial/\partial x_3
 $$
 
-are each the derivative with respect to the same coordinate under the same name, the list now $(x_4,x_1,x_2,x_3)$ real. What the rotation changes is the sign of the time term alone: $\partial^2/\partial Q_t^2=-\partial^2/\partial t'^2$ on the material sector and $+\partial^2/\partial x_4^2$ on the real slice, so that
+are each the derivative with respect to the same coordinate under the same name, the list now $(x_4,x_1,x_2,x_3)$ real. What the rotation changes is the sign of the time term alone: $\partial^2/\partial R_t^2=-\partial^2/\partial r'_t^2$ on the material sector and $+\partial^2/\partial x_4^2$ on the real slice, so that
 
 $$
 \Box=\partial^2/\partial x_4^2+\partial^2/\partial x_1^2+\partial^2/\partial x_2^2+\partial^2/\partial x_3^2
@@ -73,7 +73,7 @@ The two families are contrasted in the following table.
 | | Instanton | Soliton |
 |---|---|---|
 | Signature | Euclidean ($\star^2=+1$) | Lorentzian ($\star^2=-1$) |
-| Coordinates | $(x_4,x_1,x_2,x_3)$ real | $(i c r'_t,x,y,z)$ |
+| Coordinates | $(x_4,x_1,x_2,x_3)$ real | $(i c r'_t,r_x,r_y,r_z)$ |
 | Defining equation | first order, $F=\pm\star F$ | second order, equation of motion |
 | Boundary data | finite action; gauge field a map $S^3\to SU(2)$ at infinity | static, finite energy; fields approach vacuum at spatial infinity |
 | Charge | Pontryagin number $Ϙ\in\mathbb Z$ | topological sector; e.g. magnetic charge |
@@ -127,13 +127,13 @@ $$
 J_{\mathrm{CS},\mu}=\sum_{\nu,\rho,\sigma}\epsilon_{\mu\nu\rho\sigma}A_\nu F_{\rho\sigma}.
 $$
 
-This identity was verified symbolically, not quoted: taking a general smooth $A_\mu(x)$ in four flat coordinates, forming $F_{\mu\nu}=\partial/\partial Q_\mu A_\nu-\partial/\partial Q_\nu A_\mu$, and computing both sides, one finds
+This identity was verified symbolically, not quoted: taking a general smooth $A_\mu(x)$ in four flat coordinates, forming $F_{\mu\nu}=\partial/\partial R_\mu A_\nu-\partial/\partial R_\nu A_\mu$, and computing both sides, one finds
 
 $$
 \langle\tilde\nabla,\tilde J_{\mathrm{CS}}\rangle_{\natural}=\frac{1}{2}\,\sum_{\mu,\nu,\rho,\sigma}\epsilon_{\mu\nu\rho\sigma}F_{\mu\nu}F_{\rho\sigma}=\sum_{\mu,\nu}F_{\mu\nu}\star F_{\mu\nu}
 $$
 
-as an identity in the derivatives of $A_\mu$, with every second derivative cancelling. The computation was done first in the flat Euclidean coordinates and then in the $i c r'_t$ convention, with the same result; the cancellation of the second derivatives is what the two computations establish. The current $J_{\mathrm{CS},\mu}$ is **gauge dependent**: under $A_\mu\mapsto A_\mu+\partial/\partial Q_\mu\,\Gamma$ it changes by a term whose divergence vanishes by the antisymmetry of $\epsilon$ and the Bianchi identity $\partial/\partial Q_\mu F_{\nu\rho}+\partial/\partial Q_\nu F_{\rho\mu}+\partial/\partial Q_\rho F_{\mu\nu}=0$, so the *density* $\partial/\partial Q_\mu J_{\mathrm{CS},\mu}$ is gauge invariant even though $J_{\mathrm{CS},\mu}$ is not. This is why the density can be an observable and the current cannot.
+as an identity in the derivatives of $A_\mu$, with every second derivative cancelling. The computation was done first in the flat Euclidean coordinates and then in the $i c r'_t$ convention, with the same result; the cancellation of the second derivatives is what the two computations establish. The current $J_{\mathrm{CS},\mu}$ is **gauge dependent**: under $A_\mu\mapsto A_\mu+\partial/\partial R_\mu\,\Gamma$ it changes by a term whose divergence vanishes by the antisymmetry of $\epsilon$ and the Bianchi identity $\partial/\partial R_\mu F_{\nu\rho}+\partial/\partial R_\nu F_{\rho\mu}+\partial/\partial R_\rho F_{\mu\nu}=0$, so the *density* $\partial/\partial R_\mu J_{\mathrm{CS},\mu}$ is gauge invariant even though $J_{\mathrm{CS},\mu}$ is not. This is why the density can be an observable and the current cannot.
 
 The non-abelian identity is the same statement one integration by parts further along. With $F=d\mathcal{A}+i\kappa\,\mathcal{A}\wedge\mathcal{A}$,
 
@@ -168,19 +168,19 @@ $$
 
 with $\star^2=+1$. It is a first-order differential equation for the connection, and in the component description it reads $\vec B=\pm\vec E$ (verified exactly on a generic Euclidean field strength, as recorded above). Its value is that it does two things at once: it implies the equation of motion, and it saturates the action bound in a topological sector.
 
-**Self-duality plus Bianchi implies the equation of motion.** The Bianchi identity $dF=0$ is, in components, $\partial/\partial Q_\mu F_{\nu\rho}+\partial/\partial Q_\nu F_{\rho\mu}+\partial/\partial Q_\rho F_{\mu\nu}=0$, and it is equivalent to the statement that the *dual* is divergence free,
+**Self-duality plus Bianchi implies the equation of motion.** The Bianchi identity $dF=0$ is, in components, $\partial/\partial R_\mu F_{\nu\rho}+\partial/\partial R_\nu F_{\rho\mu}+\partial/\partial R_\rho F_{\mu\nu}=0$, and it is equivalent to the statement that the *dual* is divergence free,
 
 $$
-\sum_\mu\partial/\partial Q_\mu\,\star F_{\mu\nu}=0 .
+\sum_\mu\partial/\partial R_\mu\,\star F_{\mu\nu}=0 .
 $$
 
 This was verified symbolically for a general abelian field strength $F=dA$: the divergence of the dual vanishes identically, whereas the divergence of $F$ itself does not. Now if $F=\pm\star F$, then
 
 $$
-\sum_\mu\partial/\partial Q_\mu F_{\mu\nu}=\pm\,\sum_\mu\partial/\partial Q_\mu\,\star F_{\mu\nu}=0,
+\sum_\mu\partial/\partial R_\mu F_{\mu\nu}=\pm\,\sum_\mu\partial/\partial R_\mu\,\star F_{\mu\nu}=0,
 $$
 
-so every self-dual finite-action field is automatically a source-free solution of the second-order equation. The non-abelian statement is the same with $\partial/\partial Q_\mu$ replaced by the covariant derivative $D_\mu=\partial/\partial Q_\mu+i\kappa[\mathcal{A}_\mu,\;\cdot\;]$: the Bianchi identity is $D_{[\mu}F_{\nu\rho]}=0$, equivalently $D_\mu\star F_{\mu\nu}=0$, and self-duality turns it into the Yang–Mills equation $D_\mu F_{\mu\nu}=0$. The economy is exact: a second-order equation has been replaced by a first-order one, and every solution of the first-order equation is a solution of the second-order one. The converse is false — not every solution is self-dual — so self-duality selects a distinguished subclass, the one that is also a minimiser, as the next paragraph shows.
+so every self-dual finite-action field is automatically a source-free solution of the second-order equation. The non-abelian statement is the same with $\partial/\partial R_\mu$ replaced by the covariant derivative $D_\mu=\partial/\partial R_\mu+i\kappa[\mathcal{A}_\mu,\;\cdot\;]$: the Bianchi identity is $D_{[\mu}F_{\nu\rho]}=0$, equivalently $D_\mu\star F_{\mu\nu}=0$, and self-duality turns it into the Yang–Mills equation $D_\mu F_{\mu\nu}=0$. The economy is exact: a second-order equation has been replaced by a first-order one, and every solution of the first-order equation is a solution of the second-order one. The converse is false — not every solution is self-dual — so self-duality selects a distinguished subclass, the one that is also a minimiser, as the next paragraph shows.
 
 **Self-duality saturates the Bogomolny bound.** The pointwise identity
 
@@ -295,12 +295,12 @@ with $g$ the gauge coupling. The radius $\rho$ does not appear in the action; it
 **Remark (the same operator in the instanton problem).** The single instanton is one member of a family whose general construction is a substitution, not a superposition: the **Jackiw–Nohl–Rebbi–'t Hooft ansatz** writes the gauge potential as a derivative of one scalar function, and the self-duality condition becomes a single nonlinear equation for that function. In the quaternionic form given by Gürsey and Tze and reported by Kravchenko, Kravchenko and Williams, the condition becomes
 
 $$
-\partial/\partial t'\,g+D_3g+| g|^2 = 0
+\partial/\partial r'_t\,g+D_3g+| g|^2 = 0
 $$
 
-for a quaternion-valued $g$, with $D_3 = \vec e_x\partial/\partial Q_x+\vec e_y\partial/\partial Q_y+\vec e_z\partial/\partial Q_z$ the three-dimensional Cauchy–Riemann operator of *Quaternion Regular Functions*. The equation is a time-dependent companion of the Riccati PDE of *Integrable Systems*, and it is quoted from that source rather than derived here; what is structural is that the operator is the same and that the solutions of the ansatz are generated from the kernel of the Fueter-type operator $\partial/\partial t'+D_3$. The instanton problem is thus one of the places where the quaternion function theory of the mathematics Part enters the physics Part directly, rather than through a reformulation of an already-written equation.
+for a quaternion-valued $g$, with $D_3 = \vec e_x\partial/\partial R_x+\vec e_y\partial/\partial R_y+\vec e_z\partial/\partial R_z$ the three-dimensional Cauchy–Riemann operator of *Quaternion Regular Functions*. The equation is a time-dependent companion of the Riccati PDE of *Integrable Systems*, and it is quoted from that source rather than derived here; what is structural is that the operator is the same and that the solutions of the ansatz are generated from the kernel of the Fueter-type operator $\partial/\partial r'_t+D_3$. The instanton problem is thus one of the places where the quaternion function theory of the mathematics Part enters the physics Part directly, rather than through a reformulation of an already-written equation.
 
-One convention point belongs here because it is a signature effect and not a detail. The parent article's curvature carries an explicit factor $i$ in the commutator term, $F_{\mu\nu}=\partial/\partial Q_\mu\,\mathcal{A}_\nu-\partial/\partial Q_\nu\,\mathcal{A}_\mu+i\kappa[\mathcal{A}_\mu,\mathcal{A}_\nu]$, tied to the $i c r'_t$ structure of the Lorentzian convention. On the Euclidean slice the curvature is written without it, as above, with the $i$ either dropped or absorbed into Hermitian generators and a real coupling. Keeping the Lorentzian factor literally, on anti-Hermitian $\mathcal{A}_\mu$ and with $\kappa=1$, the BPST configuration is *not* self-dual: the same numerical check gives $\max|F-\star F|\approx 0.54$ and $\max|F+\star F|\approx 0.60$. The Euclidean continuation of the framework's non-abelian curvature is therefore fixed only up to the placement of the factor $i$, and the placement that carries the instanton is the one without it in the commutator. This is the same signature split that governs the whole article, appearing once more at the level of the equations: the factor $i$ is a Lorentzian structure, and the Euclidean solution does not carry it. The exact form of the continuation — whether the factor migrates into the generators or into the coupling — is a convention question that this article leaves visible rather than resolves.
+One convention point belongs here because it is a signature effect and not a detail. The parent article's curvature carries an explicit factor $i$ in the commutator term, $F_{\mu\nu}=\partial/\partial R_\mu\,\mathcal{A}_\nu-\partial/\partial R_\nu\,\mathcal{A}_\mu+i\kappa[\mathcal{A}_\mu,\mathcal{A}_\nu]$, tied to the $i c r'_t$ structure of the Lorentzian convention. On the Euclidean slice the curvature is written without it, as above, with the $i$ either dropped or absorbed into Hermitian generators and a real coupling. Keeping the Lorentzian factor literally, on anti-Hermitian $\mathcal{A}_\mu$ and with $\kappa=1$, the BPST configuration is *not* self-dual: the same numerical check gives $\max|F-\star F|\approx 0.54$ and $\max|F+\star F|\approx 0.60$. The Euclidean continuation of the framework's non-abelian curvature is therefore fixed only up to the placement of the factor $i$, and the placement that carries the instanton is the one without it in the commutator. This is the same signature split that governs the whole article, appearing once more at the level of the equations: the factor $i$ is a Lorentzian structure, and the Euclidean solution does not carry it. The exact form of the continuation — whether the factor migrates into the generators or into the coupling — is a convention question that this article leaves visible rather than resolves.
 
 The biquaternion packaging of the solution is the parent's, $\mathcal{F}=\tfrac12\sum_{\mu,\nu} F_{\mu\nu}\bar{e}_\mu e_\nu$. The representative is a single biquaternion; the instanton therefore has a biquaternionic form, and the self-duality condition can be read as a condition on it. But, as the previous section showed, the *invariant* content of $\mathcal{F}$ is its matrix trace, not its biquaternion norm: the representative is the framework's object, and the topological density is not the framework's invariant. The instanton is thus expressible in the framework, while its charge is computed by the one bilinear the framework's invariant calculus does not supply.
 
@@ -319,7 +319,7 @@ is an integer because it is the degree of a map $S^2\to S^2$ (or $S^2\to \mathrm
 **Bogomolny bound.** A bound $E\ge|Ϙ|$ with equality for a first-order equation both proves stability — the configuration is at the bottom of its sector — and identifies the first-order equation that the minimiser satisfies. The mechanism is the same completing of the square used for the instanton, transposed to the energy. The cleanest illustration is the one-dimensional kink of the $\xi^4$ model,
 
 $$
-E=\int dx\left[\tfrac12(\partial/\partial Q_x\,\xi)^2+\tfrac{\lambda}{4}(\xi^2-v^2)^2\right],
+E=\int dx\left[\tfrac12(\partial/\partial R_x\,\xi)^2+\tfrac{\lambda}{4}(\xi^2-v^2)^2\right],
 \qquad
 W(\xi)=\sqrt{\tfrac{\lambda}{2}}\left(v^2\xi-\tfrac13\xi^3\right),
 $$
@@ -327,8 +327,8 @@ $$
 for which
 
 $$
-\tfrac12\left(\partial/\partial Q_x\,\xi\mp\sqrt{\tfrac{\lambda}{2}}(v^2-\xi^2)\right)^2
-=\tfrac12(\partial/\partial Q_x\,\xi)^2+\tfrac{\lambda}{4}(\xi^2-v^2)^2\mp\partial/\partial Q_x W ,
+\tfrac12\left(\partial/\partial R_x\,\xi\mp\sqrt{\tfrac{\lambda}{2}}(v^2-\xi^2)\right)^2
+=\tfrac12(\partial/\partial R_x\,\xi)^2+\tfrac{\lambda}{4}(\xi^2-v^2)^2\mp\partial/\partial R_x W ,
 $$
 
 as was verified symbolically by expanding both sides. Integrating,
@@ -337,7 +337,7 @@ $$
 E\;\ge\;\left|W(v)-W(-v)\right|=\frac{2\sqrt{2\lambda}}{3}\,v^3,
 $$
 
-with equality if and only if $\partial/\partial Q_x\,\xi=\pm\sqrt{\lambda/2}(v^2-\xi^2)$: the bound is saturated by the kink, whose stability is therefore proved, and not merely conjectured, within the model. The point of the example is that the bound needs two ingredients — a **potential** with degenerate minima and a **first-order equation** that the configuration satisfies — and the energy functional must contain the potential in the combination that completes the square.
+with equality if and only if $\partial/\partial R_x\,\xi=\pm\sqrt{\lambda/2}(v^2-\xi^2)$: the bound is saturated by the kink, whose stability is therefore proved, and not merely conjectured, within the model. The point of the example is that the bound needs two ingredients — a **potential** with degenerate minima and a **first-order equation** that the configuration satisfies — and the energy functional must contain the potential in the combination that completes the square.
 
 **The framework's situation.** The framework's Lorentzian field content is the abelian Maxwell field, the non-abelian gauge field, and the free scalar field of the Klein–Gordon article. The Maxwell and non-abelian gauge sectors are gauge fields alone; their static finite-energy content is exhausted by the Coulomb field and its singular point limit, and neither has a potential in which a Bogomolny square could be completed. The scalar sector is a *free* massive field, with no self-interaction; a free field has no degenerate vacua and no kink, and it provides no potential of the $\xi^4$ type. Consequently:
 

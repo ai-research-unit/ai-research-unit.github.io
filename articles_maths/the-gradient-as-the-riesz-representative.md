@@ -4,11 +4,13 @@
 
 The gradient of a function at a point is an element of the space on which the function is defined, chosen so that its pairing with a displacement gives the derivative of the function in that displacement. That description mentions two objects of different kinds. The derivative is a linear functional on the displacements, and the space supplies it with no further help. The pairing is an inner product, and the space supplies it only when one is chosen. **The gradient is therefore the element that represents the derivative through the inner product, and it changes when the inner product changes while the derivative does not.**
 
-This article proves that statement and draws its consequences. The differential is read first as a covector, and the fact that a covector is not an element is made into a proposition: without an inner product there is no canonical element, and every linear identification of the dual with the space gives a different one. The Riesz map is then introduced as the identification that an inner product supplies, and the gradient is defined as the inverse image of the differential under it. The coordinate formula follows, with the Gram matrix and its inverse, and the orthonormal case reduces it to the sum of the partial derivatives times the basis vectors. Three cases are worked: the complex plane, with the Wirtinger derivatives and the holomorphic reading; the quaternions, where the gradient carries a side as well as a direction; and the biquaternions, where the scalar part is complex and the real part of the form does the work. The dependence on the form is then computed, and the article separates what the form does from what it does not: the differential, the critical points and the level sets are form-free, while the representative, the orthogonality and the direction of steepest ascent are form-dependent. The last two sections separate the definite from the indefinite case, and the gradient from the derivation.
+This article proves that statement and draws its consequences. The differential is read first as a covector, and the fact that a covector is not an element is made into a proposition: without an inner product there is no canonical element, and every linear identification of the dual with the space gives a different one. The Riesz map is then introduced as the identification that an inner product supplies, and the gradient is defined as the inverse image of the differential under it. The coordinate formula follows, with the Gram matrix and its inverse, and the orthonormal case reduces it to the sum of the partial derivatives times the basis vectors. Three cases are worked: the complex plane, with the Wirtinger derivatives and the holomorphic reading; the quaternions, where the gradient of the square is the conjugate of the element; and the biquaternions, where the scalar part is complex and the real part of the form does the work. The dependence on the form is then computed, and the article separates what the form does from what it does not: the differential, the critical points and the level sets are form-free, while the representative, the orthogonality and the direction of steepest ascent are form-dependent. The last two sections separate the definite from the indefinite case, and the gradient from the derivation.
 
-The article assumes the Fréchet derivative of *Differential Calculus on Normed Spaces*, the inner product, the Cauchy–Schwarz inequality and the Riesz representation theorem of *Hilbert Spaces* and *Banach and Hilbert Spaces*, and the sesquilinear forms of *Sesquilinear Forms and the Lax–Milgram Theorem*. The complex case is read with the two forms and the two realified quadratics of *The Two Metrics of the Complex Numbers*. The biquaternion gradient operator $\tilde\nabla$ and its four readings are *Operator and Calculus Conventions*, §*The Gradient*, and *Biquaternion Analysis*; they are operators built from a basis and the unit form, and the present article writes $\operatorname{grad}F$ for the element that the definition produces, so that the two are never confused. **The operator is one, and the elements are one per form.** The derivations of an algebra are *Automorphisms and Derivations of Algebras* and *The Derivations of a Commutative Algebra*. Nothing here is new mathematics; the content is the separation of two objects that are often written with one symbol.
+The article assumes the Fréchet derivative of *Differential Calculus on Normed Spaces*, the inner product, the Cauchy–Schwarz inequality and the Riesz representation theorem of *Hilbert Spaces* and *Banach and Hilbert Spaces*, and the sesquilinear forms of *Sesquilinear Forms and the Lax–Milgram Theorem*. The complex case is read with the two forms and the two realified quadratics of *The Two Metrics of the Complex Numbers*. The biquaternion gradient operator $\tilde\nabla$ and its four readings are *Operator and Calculus Conventions*, §*The Gradient*, and *Biquaternion Analysis*; they are operators built from a basis and the unit form. The present article writes $\operatorname{grad}F$ for the element that the definition produces; on the unit metric the two coincide element for element, and for any other form there is an element and no operator of the corpus. **The operator is one, and the elements are one per form.** The derivations of an algebra are *Automorphisms and Derivations of Algebras* and *The Derivations of a Commutative Algebra*. Nothing here is new mathematics; the content is the separation of two objects that are often written with one symbol.
 
 The word **metric** is not used for the form. The corpus reserves it for the unit metric $\delta_{\mu\nu}=(1,1,1,1)$, and the whole point of this article is that the gradient needs a form that could have been chosen otherwise. The form is called an inner product, and its matrix in a basis is the Gram matrix.
+
+The partial derivatives are written out, $\partial F/\partial q_i$, and no subscript abbreviates a derivative. The letter $d_i$ is the $i$-th component of the differential in the basis, whose value is $\partial F/\partial q_i$; the corpus forbids the shorthand $F_{q_i}$ (*Operator and Calculus Conventions*, §*Conventions for Derivation*), and a prime marks the imaginary coordinate and never a derivative.
 
 Throughout, $A$ is a finite-dimensional real vector space, later a finite-dimensional algebra over $\mathbb{R}$ or over $\mathbb{C}$, regarded as a real vector space. The letter $m$ is its real dimension, $a$ is a point of $A$, $h$ is a displacement, and $F:A\to\mathbb{R}$ is differentiable at $a$ in the sense of Fréchet; its derivative at $a$ is the linear functional $DF(a)\in A^{*}$. No physics is invoked.
 
@@ -70,37 +72,39 @@ $$
 G_{ij}=\langle b_i,b_j\rangle ,
 $$
 
-a symmetric matrix, positive definite for an inner product and merely invertible for a nondegenerate form. Its inverse is written $H=G^{-1}$, with entries $H_{ij}$.
+a symmetric matrix, positive definite for an inner product and merely invertible for a nondegenerate form. Its inverse is written $G^{-1}$, with entries $(G^{-1})_{ij}$.
 
 **Proposition (the coordinate formula).** With $d_i=\partial F/\partial q_i$ evaluated at $a$,
 
 $$
-\boxed{\;\operatorname{grad}F(a)=\sum_j\Bigl(\sum_i H_{ji}\,d_i\Bigr)b_j\;.}
+\boxed{\;\operatorname{grad}F(a)=\sum_j\Bigl(\sum_i (G^{-1})_{ji}\,d_i\Bigr)b_j\;.}
 $$
 
-*Proof.* Write $g=\operatorname{grad}F(a)=\sum_j v_jb_j$. Testing the defining identity on the basis vector $h=b_i$ gives $DF(a)[b_i]=\langle b_i,g\rangle=\sum_jv_j\langle b_i,b_j\rangle=\sum_jG_{ij}v_j$. The left side is the partial derivative $d_i$, by the coordinate reading of the differential in *Differential Calculus on Normed Spaces*. So $Gv=d$ in matrix form, and $v=Hd$ because $G$ is invertible. The components are $v_j=\sum_iH_{ji}d_i$.
+*Proof.* Write $g=\operatorname{grad}F(a)=\sum_j v_jb_j$. Testing the defining identity on the basis vector $h=b_i$ gives $DF(a)[b_i]=\langle b_i,g\rangle=\sum_jv_j\langle b_i,b_j\rangle=\sum_jG_{ij}v_j$. The left side is the partial derivative $d_i$, by the coordinate reading of the differential in *Differential Calculus on Normed Spaces*. So $Gv=d$ in matrix form, and $v=G^{-1}d$ because $G$ is invertible. The components are $v_j=\sum_i(G^{-1})_{ji}d_i$.
 
-**Corollary (orthonormal basis).** If the basis is orthonormal, $G$ is the identity, $H$ is the identity, and
+**Corollary (orthonormal basis).** If the basis is orthonormal, $G$ is the identity and so is its inverse, and
 
 $$
 \operatorname{grad}F(a)=\sum_i\frac{\partial F}{\partial q_i}\,b_i .
 $$
 
-The corollary is the formula of the elementary calculus, and it is the only case in which the partial derivatives may be read directly as the components of the gradient. In every other basis the components are mixed by $H$. **The mixing is the whole content of the definition: the partial derivatives are the coordinates of a covector, and the gradient is the vector obtained from them by the inverse Gram matrix.**
+The corollary is the formula of the elementary calculus, and it is the only case in which the partial derivatives may be read directly as the components of the gradient. In every other basis the components are mixed by the inverse Gram matrix. **The mixing is the whole content of the definition: the partial derivatives are the coordinates of a covector, and the gradient is the vector obtained from them by the inverse Gram matrix.**
+
+**Remark (the glyph, and the operator of the corpus).** The symbol $\operatorname{grad}$ names the element here, and it is not a second derivative operator. The upright $\mathrm{grad}$ of *Biquaternion Analysis* and the element $\tilde\nabla F$ of *Operator and Calculus Conventions*, §*The Gradient*, are its readings on the unit metric: the units are orthonormal for the Hermitian form $\operatorname{Re}\mathrm{Sc}(Q_1Q_2^{*})$ of §*The Quaternionic and Biquaternionic Cases*, since $\mathrm{Sc}(\vec e_k\vec e_k^{*})=-\mathrm{Sc}(\vec e_k^{2})=1$ and $\mathrm{Sc}(e_te_t^{*})=1$, so the corollary above gives $\tilde\nabla F=\sum_\mu e_\mu\,\partial F/\partial R_\mu$ on the four coordinates, and the three-dimensional $\mathrm{grad}$ on the spatial ones. **The corpus's gradient is the orthonormal case of this definition**, taken with respect to the one form the corpus fixes; another form mixes the partials by $G^{-1}$, and no glyph of the corpus names the result.
 
 **Worked example (a non-orthonormal basis).** Let $A=\mathbb{C}$ with the real inner product $\langle u,v\rangle=\operatorname{Re}(u\bar v)$, the basis $b_1=1$, $b_2=1+i$, and $F(Q)=\operatorname{Re}(Q^{3})$. In the real coordinates $Q=q+i q'$ one has $F=q^{3}-3q(q')^{2}$. The Gram matrix and its inverse are
 
 $$
-G=\begin{pmatrix}1&1\\1&2\end{pmatrix},\qquad H=\begin{pmatrix}2&-1\\-1&1\end{pmatrix}.
+G=\begin{pmatrix}1&1\\1&2\end{pmatrix},\qquad G^{-1}=\begin{pmatrix}2&-1\\-1&1\end{pmatrix}.
 $$
 
-At $Q=0.3+0.2i$ the basis coordinates are $0.1$ and $0.2$, since $0.1+0.2(1+i)=0.3+0.2i$. Testing on the two basis vectors, the partial derivatives are $d_1=\partial F/\partial q_1=F_q=0.15$ and $d_2=\partial F/\partial q_2=F_q+F_{q'}=0.15-0.36=-0.21$. The formula gives the components $v_1=2(0.15)-(-0.21)=0.51$ and $v_2=-0.15+(-0.21)=-0.36$, hence
+At $Q=0.3+0.2i$ the basis coordinates are $\lambda_1=0.1$ and $\lambda_2=0.2$, since $0.1+0.2(1+i)=0.3+0.2i$. Testing on the two basis vectors, the coordinate partials are $d_1=\partial F/\partial\lambda_1=0.15$ and $d_2=\partial F/\partial\lambda_2=\partial F/\partial q+\partial F/\partial q'=0.15-0.36=-0.21$. The formula gives the components $v_1=2(0.15)-(-0.21)=0.51$ and $v_2=-0.15+(-0.21)=-0.36$, hence
 
 $$
 \operatorname{grad}F=0.51-0.36(1+i)=0.15-0.36i .
 $$
 
-The naive sum $d_1b_1+d_2b_2=0.15-0.21(1+i)=-0.06-0.21i$ is a different element, and it fails the defining identity. Testing $h=1$ gives $DF[h]=F_q=0.15$, while $\langle h,\operatorname{grad}F\rangle=0.15$ for the correct element and $-0.06$ for the naive one. **The basis is the witness: the gradient is not the list of partial derivatives unless the basis is orthonormal.**
+The naive sum $d_1b_1+d_2b_2=0.15-0.21(1+i)=-0.06-0.21i$ is a different element, and it fails the defining identity. Testing $h=1$ gives $DF[h]=\partial F/\partial q=0.15$, while $\langle h,\operatorname{grad}F\rangle=0.15$ for the correct element and $-0.06$ for the naive one. **The basis is the witness: the gradient is not the list of partial derivatives unless the basis is orthonormal.**
 
 ### A Complex Basis
 
@@ -114,6 +118,8 @@ the first $n$ rows and columns standing for the $b_k$ and the last $n$ for the $
 
 *Proof.* The four blocks are read from the two slots. $\operatorname{Re}\langle b_k,b_l\rangle=A_{kl}$ and $\operatorname{Re}\langle ib_k,ib_l\rangle=\operatorname{Re}(i\bar i\,G_{kl})=A_{kl}$, which gives the two diagonal blocks. $\operatorname{Re}\langle b_k,ib_l\rangle=\operatorname{Re}(-iG_{kl})=B_{kl}$ and $\operatorname{Re}\langle ib_k,b_l\rangle=\operatorname{Re}(iG_{kl})=-B_{kl}$, which gives the two off-diagonal blocks. The matrix is symmetric because $A$ is symmetric and $B$ is antisymmetric, and that symmetry is exactly the Hermitian symmetry of $G$.
 
+**Corollary (the complex basis case of the coordinate formula).** The coordinate formula applies verbatim to the real basis $b_1,\dots,b_n,ib_1,\dots,ib_n$, with $G_{\mathbb{R}}$ in place of $G$; a gradient written in a complex basis is a gradient written in a real basis of twice the size. **The complex structure enters only through the form and never through the formula.**
+
 **Remark (the two realifications are not the same matrix).** The block matrix is not the realification of a complex matrix, which has the form $\begin{pmatrix}A&-B\\B&A\end{pmatrix}$. The sign sits on the other block, and the reason is that a form pairs two vectors where a matrix acts on one. **Reading the signs from the slots, and not from the matrix analogy, is what keeps the two realifications apart.**
 
 ## The Complex Case
@@ -121,7 +127,7 @@ the first $n$ rows and columns standing for the $b_k$ and the last $n$ for the $
 **Proposition (the gradient in the plane).** Let $A=\mathbb{C}$ with $\langle u,v\rangle=\operatorname{Re}(u\bar v)$, and write $Q=q+iq'$. For a real-valued differentiable $F$,
 
 $$
-\boxed{\;\operatorname{grad}F=F_q+iF_{q'}\;}
+\boxed{\;\operatorname{grad}F=\frac{\partial F}{\partial q}+i\,\frac{\partial F}{\partial q'}\;}
 $$
 
 and
@@ -132,7 +138,7 @@ $$
 
 for every $h\in\mathbb{C}$.
 
-*Proof.* Let $h=h_q+ih_{q'}$ and $g=F_q+iF_{q'}$. Then $h\bar g=(h_q+ih_{q'})(F_q-iF_{q'})=h_qF_q+h_{q'}F_{q'}+i(h_{q'}F_q-h_qF_{q'})$, whose real part is $h_qF_q+h_{q'}F_{q'}=DF(Q)[h]$. So $g$ satisfies the defining identity, and it is the gradient by uniqueness.
+*Proof.* Let $h=\alpha+i\beta$, and write $g_1=\partial F/\partial q$ and $g_2=\partial F/\partial q'$ at $Q$, with $g=g_1+ig_2$. Then $h\bar g=(\alpha+i\beta)(g_1-ig_2)=\alpha g_1+\beta g_2+i(\beta g_1-\alpha g_2)$, whose real part is $\alpha g_1+\beta g_2=DF(Q)[h]$. So $g$ satisfies the defining identity, and it is the gradient by uniqueness.
 
 **Remark (the Wirtinger reading, and the factor two).** The two Wirtinger operators of the corpus are the unhalved ones of *Operator and Calculus Conventions*, $\partial/\partial Q=\partial/\partial q+\partial/\partial(iq')$ and $\partial/\partial\bar Q=\partial/\partial q-\partial/\partial(iq')$, and with them
 
@@ -140,7 +146,7 @@ $$
 \operatorname{grad}F=\frac{\partial F}{\partial\bar Q}
 $$
 
-for real-valued $F$, since $\partial F/\partial\bar Q=F_q+iF_{q'}$. The analysis literature halves the two operators, $\partial/\partial z=\frac12(\partial/\partial q-i\partial/\partial q')$ and $\partial/\partial\bar z=\frac12(\partial/\partial q+i\partial/\partial q')$, as in the Wirtinger calculus of *Analysis on $M_5(\mathbb{C})$*, and then
+for real-valued $F$, since $\partial F/\partial\bar Q=\partial F/\partial q+i\,\partial F/\partial q'$. The analysis literature halves the two operators, $\partial/\partial z=\frac12(\partial/\partial q-i\partial/\partial q')$ and $\partial/\partial\bar z=\frac12(\partial/\partial q+i\partial/\partial q')$, as in the Wirtinger calculus of *Analysis on $M_5(\mathbb{C})$*, and then
 
 $$
 \operatorname{grad}F=2\,\frac{\partial F}{\partial\bar z}.
@@ -164,7 +170,7 @@ $$
 \boxed{\;\operatorname{grad}u=\overline{\frac{df}{dz}},\qquad \operatorname{grad}v=i\,\overline{\frac{df}{dz}}=i\operatorname{grad}u.\;}
 $$
 
-*Proof.* The Cauchy–Riemann equations give $u_q=v_{q'}$ and $u_{q'}=-v_q$, so $df/dz=u_q+iv_q=u_q-iu_{q'}$. Hence $\overline{df/dz}=u_q+iu_{q'}=\operatorname{grad}u$, and $i\overline{df/dz}=-u_{q'}+iu_q=v_q+iv_{q'}=\operatorname{grad}v$, the last step by the same two equations.
+*Proof.* The Cauchy–Riemann equations give $\partial u/\partial q=\partial v/\partial q'$ and $\partial u/\partial q'=-\partial v/\partial q$, so $df/dz=\partial u/\partial q+i\,\partial v/\partial q=\partial u/\partial q-i\,\partial u/\partial q'$. Hence $\overline{df/dz}=\partial u/\partial q+i\,\partial u/\partial q'=\operatorname{grad}u$, and $i\overline{df/dz}=-\partial u/\partial q'+i\,\partial u/\partial q=\partial v/\partial q+i\,\partial v/\partial q'=\operatorname{grad}v$, the last step by the same two equations.
 
 **Worked example.** For $f(z)=z^{2}+3z$ and $z=1+2i$ one has $df/dz=2z+3=5+4i$, hence $\operatorname{grad}u=5-4i$ and $\operatorname{grad}v=4+5i$. Directly, $u=q^{2}-(q')^{2}+3q$ has gradient $(2q+3)+i(-2q')=5-4i$ at the point, and $v=2qq'+3q'$ has gradient $2q'+i(2q+3)=4+5i$.
 
@@ -172,27 +178,27 @@ $$
 
 ## The Quaternionic and Biquaternionic Cases
 
-**The form.** On $\mathbb{H}$ and on $\mathbb{B}$ the Hermitian form is $\langle Q_1,Q_2\rangle_{*}=\operatorname{Sc}(Q_1Q_2^{*})$, the scalar part of the product with the conjugate of the second factor, by *The Canonical Hermitian Form on the Regular Module of the Biquaternion Algebra*. Its real part is a real inner product, as on $\mathbb{C}$, and the gradient is the representative for it.
+**The form.** On $\mathbb{H}$ and on $\mathbb{B}$ the Hermitian form is $\langle Q_1,Q_2\rangle_{*}=\mathrm{Sc}(Q_1Q_2^{*})$, the scalar part of the product with the conjugate of the second factor, by *The Canonical Hermitian Form on the Regular Module of the Biquaternion Algebra*. Its real part is a real inner product, as on $\mathbb{C}$, and the gradient is the representative for it.
 
-**Proposition (two real functions and their gradients).** On $\mathbb{H}$, with $\langle\cdot,\cdot\rangle_{*}$ as above, let $F_1(Q)=\langle Q\rangle_{*}=\operatorname{Sc}(Q\bar Q)$ and $F_2(Q)=\operatorname{Re}(Q^{2})$. Then
+**Proposition (two real functions and their gradients).** On $\mathbb{H}$, with $\langle\cdot,\cdot\rangle_{*}$ as above, let $F_1(Q)=\langle Q\rangle_{*}=\mathrm{Sc}(QQ^{*})$ and $F_2(Q)=\operatorname{Re}(Q^{2})$. Then
 
 $$
-\operatorname{grad}F_1=2Q,\qquad \operatorname{grad}F_2=2\bar Q .
+\operatorname{grad}F_1=2Q,\qquad \operatorname{grad}F_2=2Q^{*} .
 $$
 
-*Proof.* Both functions have real values. For $F_1$, $DF_1(Q)[h]=2\operatorname{Re}(h\bar Q)=\operatorname{Re}\bigl(h\overline{2Q}\bigr)$, so $2Q$ satisfies the defining identity for the realified form $\operatorname{Re}\langle\cdot,\cdot\rangle_{*}$, which is $\langle Q_1,Q_2\rangle_{\mathbb{R}}=\operatorname{Re}(Q_1\bar Q_2)$ in the quaternion product. For $F_2$, $DF_2(Q)[h]=\operatorname{Re}(Qh+hQ)$, and the scalar part of a quaternion product is invariant under the cyclic exchange of the factors, so $\operatorname{Re}(hQ)=\operatorname{Re}(Qh)$ and the derivative is $2\operatorname{Re}(Qh)=\operatorname{Re}\bigl(h\overline{2\bar Q}\bigr)$. Uniqueness gives the two statements.
+*Proof.* Both functions have real values, and the realified form is $\operatorname{Re}\mathrm{Sc}(hg^{*})$, so the defining identity reads $DF(Q)[h]=\operatorname{Re}\mathrm{Sc}(hg^{*})$ for the gradient $g$. For $F_1(Q)=\mathrm{Sc}(QQ^{*})$ the derivative is $DF_1(Q)[h]=\mathrm{Sc}(hQ^{*}+Qh^{*})=2\operatorname{Re}\mathrm{Sc}(hQ^{*})$, the second term being the conjugate of the first, and this is $\operatorname{Re}\mathrm{Sc}\bigl(h(2Q)^{*}\bigr)$; so $\operatorname{grad}F_1=2Q$. For $F_2(Q)=\operatorname{Re}(Q^{2})$ the derivative is $DF_2(Q)[h]=\operatorname{Re}\mathrm{Sc}(hQ+Qh)=2\operatorname{Re}\mathrm{Sc}(hQ)$ by the cyclicity of the scalar part, and this is $\operatorname{Re}\mathrm{Sc}\bigl(h(2Q^{*})^{*}\bigr)$; so $\operatorname{grad}F_2=2Q^{*}$. Uniqueness gives the two statements.
 
-**Remark (why the side matters).** The two functions are the two real quadratic functions of $Q$, and their gradients are $2Q$ and $2\bar Q$: the same formula with the conjugate on the other element. The difference is invisible in a commutative algebra and is present here. **In a non-commutative algebra the gradient carries a side as well as a direction**, and the side is fixed by the slot convention of the form and by the order of the factors in the function.
+**Remark (the conjugation is carried by the function).** $F_1$ is the square of the norm, $\mathrm{Sc}(QQ^{*})=\lvert Q\rvert^{2}$, and its gradient is the element $2Q$ itself. $F_2$ is the real part of the square, and its gradient is the conjugate $2Q^{*}$. **The form is the same in the two lines, so the conjugation is carried by the function and not by the form**, and two functions that the elementary calculus writes alike have gradients that are different elements.
 
-**Proposition (the biquaternion case).** On $\mathbb{B}$, with $\operatorname{Sc}$ the complex scalar part, $F_1(\tilde Q)=\langle\tilde Q\rangle_{*}=\operatorname{Sc}(\tilde Q\tilde Q^{*})$ and $F_2(\tilde Q)=\operatorname{Re}\operatorname{Sc}(\tilde Q^{2})$, the same computation gives
+**Proposition (the biquaternion case).** On $\mathbb{B}$, with $\mathrm{Sc}$ the complex scalar part, $F_1(\tilde Q)=\langle\tilde Q\rangle_{*}=\mathrm{Sc}(\tilde Q\tilde Q^{*})$ and $F_2(\tilde Q)=\operatorname{Re}\mathrm{Sc}(\tilde Q^{2})$, the same computation gives
 
 $$
 \operatorname{grad}F_1=2\tilde Q,\qquad \operatorname{grad}F_2=2\tilde Q^{*},
 $$
 
-the gradients being taken for the real inner product $\operatorname{Re}\operatorname{Sc}(\tilde Q_1\tilde Q_2^{*})$ on the eight real coordinates.
+the gradients being taken for the real inner product $\operatorname{Re}\mathrm{Sc}(\tilde Q_1\tilde Q_2^{*})$ on the eight real coordinates.
 
-*Proof.* The two products are computed as in $\mathbb{H}$ with complex coefficients, and the scalar part is complex; the real part of a complex scalar part is the real inner product, and the proof of the quaternion case applies term by term, the conjugation $*$ now conjugating the coefficients as well as reversing the three vector units. The scalar part is again cyclically invariant, so $\operatorname{Re}\operatorname{Sc}(\tilde Q\tilde h)=\operatorname{Re}\operatorname{Sc}(\tilde h\tilde Q)$.
+*Proof.* The scalar part carries the two identities $\mathrm{Sc}(\tilde X\tilde Y)=\mathrm{Sc}(\tilde Y\tilde X)$ and $\mathrm{Sc}(\tilde X^{*})=\overline{\mathrm{Sc}(\tilde X)}$. The second makes $F_1$ real, since $\tilde Q\tilde Q^{*}$ is fixed by $*$ and the scalar part of a fixed element equals its own conjugate; and it turns a sum with its conjugate into a real part. For $F_1$, $DF_1(\tilde Q)[\tilde h]=\mathrm{Sc}(\tilde h\tilde Q^{*})+\mathrm{Sc}(\tilde Q\tilde h^{*})$, and the second term is the conjugate of the first, so the derivative is $2\operatorname{Re}\mathrm{Sc}(\tilde h\tilde Q^{*})=\operatorname{Re}\mathrm{Sc}\bigl(\tilde h(2\tilde Q)^{*}\bigr)$. For $F_2$, $DF_2(\tilde Q)[\tilde h]=\operatorname{Re}\mathrm{Sc}(\tilde h\tilde Q+\tilde Q\tilde h)=2\operatorname{Re}\mathrm{Sc}(\tilde h\tilde Q)$ by cyclicity, which is $\operatorname{Re}\mathrm{Sc}\bigl(\tilde h(2\tilde Q^{*})^{*}\bigr)$. The two computations verify the defining identity for the real form $\operatorname{Re}\mathrm{Sc}(\tilde Q_1\tilde Q_2^{*})$, and uniqueness gives the statement.
 
 **Remark (the four algebraic norms are not four gradients).** The corpus carries four products, and each of them gives a form and a norm (*Norm and Unitary Conventions*). Each form that is nondegenerate gives its own gradient of the same function, and two forms that differ give two gradients that differ, by the change of form of the next section. **A gradient is attached to one form, and the choice of the form is part of the statement of the gradient** — which is the general thesis of this article, met here in the algebra that the corpus uses.
 
@@ -212,15 +218,15 @@ $$
 \operatorname{diag}(1,-1)\begin{pmatrix}0\\2q'\end{pmatrix}=\begin{pmatrix}0\\-2q'\end{pmatrix},
 $$
 
-that is, $-2q'i$. The two point in opposite directions: the first is the direction in which $F$ increases and the second the direction in which $F$ decreases, since $DF[\pm2q'i]=\pm4(q')^{2}$. The first is the direction of steepest ascent for the first form, which is definite. The second is **not** a direction of steepest ascent for its own form, which is indefinite, $\langle i,i\rangle_{2}=-1$, and the theorem of the definite case has no reading there (§*Definite and Indefinite Forms*).
+that is, $-2q'i$. The two point in opposite directions, and $DF[\pm2q'i]=\pm4(q')^{2}$: the first gradient is a direction of increase and the second a direction of decrease. The first is also the direction of steepest ascent for its form, which is definite. **The second carries no such reading**, because its form is indefinite, $\langle i,i\rangle_{2}=-1$, and the steepest-ascent theorem is a theorem about inner products (§*Definite and Indefinite Forms*).
 
 **Remark (what the form does not touch).** Four objects are unchanged by the choice. The differential $DF(a)$ is unchanged, since it needs no form. The **critical set** is unchanged, since $DF(a)=0$ exactly when $\operatorname{grad}F(a)=0$, the Riesz map being injective. The **level sets** are unchanged, since they are the fibres of $F$. The **tangent space to a level set** is unchanged, since $\ker DF(a)$ is the kernel of the differential, and the identity $\ker DF(a)=(\operatorname{grad}F(a))^{\perp}$ then expresses the same subspace as an orthogonal complement in each form. What the form supplies is the representative, the orthogonality, the normal direction, the direction of steepest ascent and the gradient flow. **The differential is intrinsic and the gradient is a choice**, and the two lists are the exact boundary between them.
 
-**Remark (the gradient field of one function determines the form).** The dependence is not a technicality that disappears on a closer look. For a symmetric form $G$ and the function $F(v)=\frac12\langle v,v\rangle$ the defining identity reads $DF(v)[h]=\langle h,v\rangle$, so the gradient with respect to that same form is $\operatorname{grad}F(v)=v$. With respect to another form $G_2$ the gradient of the same $F$ is $G_2^{-1}Gv$, which differs from $v$ at every $v\neq0$ unless $G_2=G$. **One function and its gradient field therefore determine the form, and a different form gives a different field.**
+**Remark (the gradient field of one function determines the form).** The dependence is not a technicality that disappears on a closer look. For a symmetric form $G$ and the function $F(v)=\frac12\langle v,v\rangle$ the defining identity reads $DF(v)[h]=\langle h,v\rangle$, so the gradient with respect to that same form is $\operatorname{grad}F(v)=v$. With respect to another form $G_2$ the gradient of the same $F$ is $G_2^{-1}Gv$, a field that differs from the field $v\mapsto v$ exactly when $G_2^{-1}G$ is not the identity, that is, exactly when $G_2\neq G$. **The pair of the function and its gradient field therefore determines the form**: the second derivative of $F$ is $G$, and the field gives $G_2^{-1}G$, so $G_2$ is read off from the two.
 
 ## Definite and Indefinite Forms
 
-**Theorem (steepest ascent).** Let the form be a genuine inner product, and let $g=\operatorname{grad}F(a)\neq0$. Among the displacements of unit length the derivative is largest in the direction of $g$:
+**Theorem (steepest ascent).** Let the form be a genuine inner product, with $\lVert h\rVert=\langle h,h\rangle^{1/2}$, and let $g=\operatorname{grad}F(a)\neq0$. Among the displacements of unit length the derivative is largest in the direction of $g$:
 
 $$
 \max_{\lVert h\rVert=1}DF(a)[h]=\lVert g\rVert,\qquad\text{attained exactly at }h=\frac{g}{\lVert g\rVert}.
@@ -234,7 +240,7 @@ $$
 
 *Proof.* By Sylvester's law the form has a basis $e_1,\dots,e_m$ with $\langle e_i,e_i\rangle=\pm1$ and $\langle e_i,e_j\rangle=0$ for $i\neq j$, and both signs occur. For a positive index $k$ and a negative index $l$ the vector $e_k+e_l$ is null, and so is $e_k-e_l$. If $DF(a)$ vanished on every null vector, applying it to $e_k\pm e_l$ gives $DF(a)[e_k]=DF(a)[e_l]=0$; applying it to $e_j\pm e_l$ for every positive $j$ gives $DF(a)[e_j]=0$, and applying it to $e_k\pm e_{l'}$ for every negative $l'$ gives $DF(a)[e_{l'}]=0$. Every basis vector is therefore annihilated, so $DF(a)=0$, against the hypothesis. Along $h=tn$ the square is $t^{2}\langle n,n\rangle=0$ for every real $t$, and the derivative is $t\,DF(a)[n]$, which is unbounded.
 
-**Worked example (the split form on the plane).** Take $\langle u,v\rangle=\operatorname{Re}(uv)$ on $\mathbb{C}$ and $F(Q)=q'$, so that $DF(Q)[h]=h_{q'}$ and $\operatorname{grad}F=-i$. The gradient has negative square, $\langle-i,-i\rangle=\operatorname{Re}(-1)=-1$, so it is not on the positive hyperboloid; and along the null direction $h=t(1+i)$ the derivative is $t$ while $\langle h,h\rangle=t^{2}-t^{2}=0$. **The derivative grows without bound along displacements of zero square.** There is no unit sphere to maximise over, and the descent flow of the split form is not the descent flow of the Euclidean one. The two forms and their two realified quadratics are those of *The Two Metrics of the Complex Numbers*, read here as the two gradients of one function.
+**Worked example (the split form on the plane).** Take $\langle u,v\rangle=\operatorname{Re}(uv)$ on $\mathbb{C}$ and $F(Q)=q'$, so that $DF(Q)[h]=\beta$ for $h=\alpha+i\beta$, and $\operatorname{grad}F=-i$. The gradient has negative square, $\langle-i,-i\rangle=\operatorname{Re}(-1)=-1$, so it is not on the positive hyperboloid; and along the null direction $h=t(1+i)$ the derivative is $t$ while $\langle h,h\rangle=t^{2}-t^{2}=0$. **The derivative grows without bound along displacements of zero square.** There is no unit sphere to maximise over: the set $\langle h,h\rangle=1$ is a hyperbola and is unbounded, and a linear functional is not bounded on it. The descent flow of the split form is not the descent flow of the Euclidean one. The two forms and their two realified quadratics are those of *The Two Metrics of the Complex Numbers*, read here as the two gradients of one function.
 
 ## Derivations Are Not Gradients
 
@@ -246,19 +252,19 @@ $$
 
 for all $a,b\in A$. Over a complex algebra the linearity is over $\mathbb{C}$ unless a real derivation is named.
 
-**The two objects are of different kinds.** A derivation carries an element to an element and differentiates the product; it is a vector field on the algebra, and it is the algebraic analogue of a directional derivative. A gradient carries a functional to an element; it is an identification of the dual with the space. The derivation needs the product, and the gradient needs a form; neither needs what the other needs. **The product of the algebra therefore cannot produce a gradient, and no gradient can produce a derivation.**
+**The two objects are of different kinds.** A derivation carries an element to an element and differentiates the product; it is the algebraic analogue of a directional derivative, taken along the algebra itself. A gradient carries a functional to an element; it is an identification of the dual with the space. The derivation needs the product, and the gradient needs a form; neither needs what the other needs. **The product of the algebra therefore cannot produce a gradient, and no gradient can produce a derivation.**
 
 **Proposition (the complex field has no derivation and has gradients).** Every $\mathbb{R}$-linear derivation of $\mathbb{C}$ into itself is zero.
 
 *Proof.* $D(1)=D(1\cdot1)=2D(1)$, so $D(1)=0$. Then $0=D(0)=D(i\cdot i)=D(i)i+iD(i)=2iD(i)$, and $\mathbb{C}$ has no zero divisors, so $D(i)=0$. A real-linear map that vanishes on $1$ and on $i$ is zero.
 
-So the algebra of the complex numbers admits no nonzero derivation, and it admits a gradient for every differentiable real function, by §*The Complex Case*. The two collections are not merely different; one is empty and the other is as large as the differentiable functions.
+So the algebra of the complex numbers admits no nonzero derivation, and it admits a gradient for every differentiable real-valued function, by §*The Complex Case*. The two collections are not merely different; one is empty and the other is as large as the differentiable functions.
 
 **Proposition (the quaternions have derivations and have gradients).** For $P\in\mathbb{H}$ the map $D_P(Q)=PQ-QP$ is a derivation of $\mathbb{H}$, and the derivations of this form are nonzero for $P$ outside the centre.
 
 *Proof.* $D_P(QR)=PQR-QRP=PQR-QPR+QPR-QRP=D_P(Q)R+QD_P(R)$, which is Leibniz; linearity is immediate. The map vanishes for all $Q$ exactly when $P$ commutes with every $Q$, that is, when $P$ is real.
 
-So $\mathbb{H}$ has both, and $\mathbb{C}$ has only the second. Neither collection determines the other, and neither is a substitute for the other.
+So $\mathbb{H}$ has both collections and $\mathbb{C}$ has only the second, and neither is a substitute for the other.
 
 **Remark (the conjugation between the two notions).** A derivation of a complex algebra is $\mathbb{C}$-linear, $D(\lambda a)=\lambda D(a)$. Give $A^{*}$ the complex structure $(\lambda\varphi)(h)=\lambda\varphi(h)$; the Riesz map of a Hermitian form is then not $\mathbb{C}$-linear but conjugate-linear, and it carries $\lambda\varphi$ to $\bar\lambda\,\Phi^{-1}(\varphi)$. A $\mathbb{C}$-linear identification of $A^{*}$ with $A$ is therefore not what a Hermitian form supplies, and a gradient is not a derivation with a form dropped in. The one conjugation is the algebraic trace of the difference, and it is the same conjugation that appears in $\operatorname{grad}u=\overline{df/dz}$ (§*Complex-Valued Functions*). **The gradient of a real-valued function on a complex algebra is a real object that lives one conjugation away from the complex structure.**
 
@@ -266,7 +272,7 @@ So $\mathbb{H}$ has both, and $\mathbb{C}$ has only the second. Neither collecti
 
 A gradient is the representative of a differential under an inner product. The differential $DF(a)$ is a linear functional, intrinsic to $F$ and $a$; an inner product supplies the Riesz map $\Phi(v)(h)=\langle h,v\rangle$, which is an isomorphism of $A$ onto its real dual $A^{*}$ in finite dimension, and the gradient is $\Phi^{-1}(DF(a))$, the unique element with $DF(a)[h]=\langle h,\operatorname{grad}F(a)\rangle$ for every $h$.
 
-In a real basis the gradient is $\sum_j(\sum_iH_{ji}\partial F/\partial q_i)b_j$, where $G_{ij}=\langle b_i,b_j\rangle$ and $H=G^{-1}$; the formula reduces to the sum of the partial derivatives times the basis vectors exactly when the basis is orthonormal. On $\mathbb{C}$ with the realified Hermitian form, $\operatorname{grad}F=F_q+iF_{q'}$, which is $\partial F/\partial\bar Q$ in the unhalved convention of the corpus and $2\partial F/\partial\bar z$ in the halved one; for holomorphic $f=u+iv$, $\operatorname{grad}u=\overline{df/dz}$ and $\operatorname{grad}v=i\overline{df/dz}$. On $\mathbb{H}$ and $\mathbb{B}$, $\operatorname{grad}\langle Q\rangle_{*}=2Q$, while the gradient of $\operatorname{Re}(Q^{2})$, which is $\operatorname{Re}\operatorname{Sc}(\tilde Q^{2})$ on $\mathbb{B}$, is $2\bar Q$: the conjugate marks the side.
+In a real basis the gradient is $\sum_j(\sum_i(G^{-1})_{ji}\partial F/\partial q_i)b_j$, where $G_{ij}=\langle b_i,b_j\rangle$; the formula reduces to the sum of the partial derivatives times the basis vectors exactly when the basis is orthonormal, which is the case of the corpus's units. On $\mathbb{C}$ with the realified Hermitian form, $\operatorname{grad}F=\partial F/\partial q+i\,\partial F/\partial q'$, which is $\partial F/\partial\bar Q$ in the unhalved convention of the corpus and $2\partial F/\partial\bar z$ in the halved one; for holomorphic $f=u+iv$, $\operatorname{grad}u=\overline{df/dz}$ and $\operatorname{grad}v=i\overline{df/dz}$. On $\mathbb{H}$, $\operatorname{grad}\mathrm{Sc}(QQ^{*})=2Q$ and $\operatorname{grad}\operatorname{Re}(Q^{2})=2Q^{*}$; on $\mathbb{B}$ the same two functions give $2\tilde Q$ and $2\tilde Q^{*}$, the $*$ now conjugating the coefficients as well as reversing the three vector units. **The gradient of the square is the conjugate of the element**, in both algebras, and the conjugation reaches the coefficients in the second.
 
 Two forms on one algebra give two gradients of one function, related by $v_2=G_2^{-1}G_1v_1$; the differential, the critical set, the level sets and their tangent spaces are unchanged, while the representative, the orthogonality, the normal direction and the steepest ascent are not. Nondegeneracy is what the definition needs, and definiteness is what the steepest-ascent theorem needs; an indefinite form has gradients and no steepest ascent. A derivation carries elements to elements and needs the product; a gradient carries functionals to elements and needs a form; the complex field has no nonzero derivation and has gradients, and the quaternions have both.
 
@@ -278,15 +284,15 @@ Two forms on one algebra give two gradients of one function, related by $v_2=G_2
 | $DF(a)\in A^{*}$ | Fréchet derivative of $F$ at $a$, a linear functional; $DF(a)[h]$ its value on $h$ |
 | $\langle h,v\rangle$ | the inner product, linear in the first slot and conjugate-linear in the second; in the real case symmetric |
 | $\Phi(v)(h)=\langle h,v\rangle$ | the Riesz map $A\to A^{*}$; linear in the real case, conjugate-linear in the complex case |
-| $\operatorname{grad}F(a)=\Phi^{-1}(DF(a))$ | the gradient; the unique element with $DF(a)[h]=\langle h,\operatorname{grad}F(a)\rangle$ |
+| $\operatorname{grad}F(a)=\Phi^{-1}(DF(a))$ | the gradient; the unique element with $DF(a)[h]=\langle h,\operatorname{grad}F(a)\rangle$; on the unit metric it is $\tilde\nabla F$ of the corpus |
 | $b_i$, $q_i$ | a real basis of $A$ and the real coordinates of $a=\sum_iq_ib_i$ |
 | $G_{ij}=\langle b_i,b_j\rangle$ | Gram matrix of the form in the basis; symmetric, invertible exactly when the form is nondegenerate |
-| $H=G^{-1}$ | inverse Gram matrix; $\operatorname{grad}F=\sum_j(\sum_iH_{ji}\partial F/\partial q_i)b_j$ |
+| $G^{-1}$ | inverse Gram matrix; $\operatorname{grad}F=\sum_j(\sum_i(G^{-1})_{ji}\partial F/\partial q_i)b_j$ |
 | $A=\operatorname{Re}G$, $B=\operatorname{Im}G$ | blocks of the Gram matrix of $\operatorname{Re}\langle\cdot,\cdot\rangle$ in the real basis $b_1,\dots,b_n,ib_1,\dots,ib_n$: the diagonal blocks are $A$, the off-diagonal blocks are $B$ and $-B$ |
 | $\partial/\partial Q$, $\partial/\partial\bar Q$ | the unhalved Wirtinger operators of the corpus; $\operatorname{grad}F=\partial F/\partial\bar Q$ for real $F$ |
 | $\partial/\partial z$, $\partial/\partial\bar z$ | the halved Wirtinger operators of the literature; $\operatorname{grad}F=2\partial F/\partial\bar z$ for real $F$ |
 | $df/dz$ | the complex derivative of a holomorphic $f$; $\operatorname{grad}(\operatorname{Re}f)=\overline{df/dz}$, $\operatorname{grad}(\operatorname{Im}f)=i\overline{df/dz}$ |
-| $\langle Q_1,Q_2\rangle_{*}=\operatorname{Sc}(Q_1Q_2^{*})$ | the Hermitian form of $\mathbb{H}$ and $\mathbb{B}$; its real part is the real inner product |
+| $\langle Q_1,Q_2\rangle_{*}=\mathrm{Sc}(Q_1Q_2^{*})$ | the Hermitian form of $\mathbb{H}$ and $\mathbb{B}$; its real part is the real inner product |
 | $v_2=G_2^{-1}G_1v_1$ | the change of the gradient under a change of form |
 | $D(ab)=D(a)b+aD(b)$ | the Leibniz rule defining a derivation |
 
@@ -298,7 +304,7 @@ Two forms on one algebra give two gradients of one function, related by $v_2=G_2
 - [Sesquilinear Forms and the Lax–Milgram Theorem](sesquilinear-forms-and-the-lax-milgram-theorem.html), for the bounded forms, the operator they represent and the coercive case.
 - [The Two Metrics of the Complex Numbers](the-two-metrics-of-the-complex-numbers.html), for the two forms on the plane, their Gram matrices, their signatures and the two realified quadratics read here as two gradients.
 - [Analysis on $M_5(\mathbb{C})$](analysis-on-m5c.html), for the halved Wirtinger calculus and the complex differential in several complex variables.
-- [The Canonical Hermitian Form on the Regular Module of the Biquaternion Algebra](the-canonical-hermitian-form-on-the-regular-module-of-the-biquaternion-algebra.html), for the Hermitian form $\operatorname{Sc}(\tilde Q_1\tilde Q_2^{*})$ whose real part is the inner product of the biquaternion case.
+- [The Canonical Hermitian Form on the Regular Module of the Biquaternion Algebra](the-canonical-hermitian-form-on-the-regular-module-of-the-biquaternion-algebra.html), for the Hermitian form $\mathrm{Sc}(\tilde Q_1\tilde Q_2^{*})$ whose real part is the inner product of the biquaternion case.
 - [Operator and Calculus Conventions](operator-and-calculus-conventions.html), §*The Gradient*, for the two derivative operators of the corpus and the unhalved normalisation.
 - [Biquaternion Analysis](biquaternion-analysis.html), for the gradient $\tilde\nabla$ as an operator and the four products read on it.
 - [Automorphisms and Derivations of Algebras](automorphisms-and-derivations-of-algebras.html), for the derivations contrasted with the gradient in the closing section.

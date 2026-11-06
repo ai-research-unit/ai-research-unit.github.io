@@ -13,7 +13,7 @@ $$
 Because $a$ is a complex number, it embeds in the algebra as a **central** element,
 
 $$
-\tilde{A} = a\,e_t = x\,e_t + i\,\frac{p}{m\omega}\,e_t \in \mathbb{C}_{\mathbb{B}} = \operatorname{span}_\mathbb{R}\{e_t, ie_t\} .
+\tilde{A} = a\,e_t = r_x\,e_t + i\,\frac{p}{m\omega}\,e_t \in \mathbb{C}_{\mathbb{B}} = \operatorname{span}_\mathbb{R}\{e_t, ie_t\} .
 $$
 
 The centre $\mathbb{C}_{\mathbb{B}}$ is the intersection of the algebra with the complex numbers, it is two-real-dimensional, and its two real directions $e_t$ and $ie_t$ lie **one in each sector**: $e_t$ is Hermitian and belongs to $\mathbb{M}_+$, while $ie_t$ is anti-Hermitian and belongs to $\mathbb{M}_-$. The two conjugate quadratures of the oscillator therefore occupy the two sectors, and the oscillator's phase advance is the **sector exchange restricted to the centre** — the rotation that multiplication by $i$ performs. The energy is the Hermitian form of the amplitude, $\tfrac12 m\omega^2|a|^2$, which is positive definite, in contrast with the indefinite biquaternion norm.
@@ -35,7 +35,7 @@ $$
 In the framework the worldline is the material-sector curve
 
 $$
-\tilde R_\varphi(t') = i c r'_{t}\,e_t + x(t')\,\vec e_x+y(t')\,\vec e_y+z(t')\,\vec e_z, \qquad (x(t')\,\vec e_x+y(t')\,\vec e_y+z(t')\,\vec e_z) = x(t')\,\vec e_x + y(t')\,\vec e_y + z(t')\,\vec e_z ,
+\tilde R_\varphi(r'_t) = i c r'_{t}\,e_t + r_x(r'_t)\,\vec e_x+r_y(r'_t)\,\vec e_y+r_z(r'_t)\,\vec e_z, \qquad (r_x(r'_t)\,\vec e_x+r_y(r'_t)\,\vec e_y+r_z(r'_t)\,\vec e_z) = r_x(r'_t)\,\vec e_x + r_y(r'_t)\,\vec e_y + r_z(r'_t)\,\vec e_z ,
 $$
 
 and the equation of motion is a statement about its vector part alone. The scalar direction $ie_t$ is untouched: the restoring force acts on the spatial displacement and not on the time. This is the same split that the free particle exhibits, now with a nontrivial vector equation.
@@ -43,7 +43,7 @@ and the equation of motion is a statement about its vector part alone. The scala
 For the present article it is enough to take the motion one-dimensional along a fixed direction $\vec u$, so that
 
 $$
-x(t')\,\vec e_x+y(t')\,\vec e_y+z(t')\,\vec e_z = \zeta(t')\,\vec u, \qquad \zeta(t') = A\cos(\omega t' + \theta^{\mathrm{pha}}),
+r_x(r'_t)\,\vec e_x+r_y(r'_t)\,\vec e_y+r_z(r'_t)\,\vec e_z = \zeta(r'_t)\,\vec u, \qquad \zeta(r'_t) = A\cos(\omega r'_t + \theta^{\mathrm{pha}}),
 $$
 
 with amplitude $A$ and phase $\theta^{\mathrm{pha}}$. The general motion is a superposition of three such one-dimensional motions, or a single one after the orientation of the axes is chosen; nothing in the sector structure depends on the number of dimensions, and the one-dimensional case carries all of it.
@@ -65,10 +65,10 @@ the vector part vanishing because $\vec F$ and $r_x\,\vec e_x+r_y\,\vec e_y+r_z\
 The energy is the sum of the kinetic and elastic terms,
 
 $$
-E = \frac{1}{2}m\left(d\zeta/dt'\right)^{2} + \frac{1}{2}m\omega^2\zeta^2 ,
+E = \frac{1}{2}m\left(d\zeta/dr'_t\right)^{2} + \frac{1}{2}m\omega^2\zeta^2 ,
 $$
 
-and it is conserved, $dE/dt' = 0$, by the equation of motion. In the normalized variables $x = \zeta$ and $p = md\zeta/dt'$ it reads $E = p^2/(2m) + \tfrac12 m\omega^2x^2$, and in the amplitude normalization below it will take the compact form $\tfrac12 m\omega^2|a|^2$. The energy is a real scalar; its placement in the algebra is the subject of the section "Energy and the Hermitian Form".
+and it is conserved, $dE/dr'_t = 0$, by the equation of motion. In the normalized variables $x = \zeta$ and $p = md\zeta/dr'_t$ it reads $E = p^2/(2m) + \tfrac12 m\omega^2x^2$, and in the amplitude normalization below it will take the compact form $\tfrac12 m\omega^2|a|^2$. The energy is a real scalar; its placement in the algebra is the subject of the section "Energy and the Hermitian Form".
 
 ## The Complex Amplitude and the Centre
 
@@ -83,7 +83,7 @@ $$
 The two real numbers $x$ and $\varpi$ are the standard quadratures of the oscillator; the passage from $(x, \varpi)$ to $a$ is the passage from the real phase plane to the complex plane, and it is what makes the oscillator's flow a rigid rotation. Embedding the complex number in the algebra gives the central element
 
 $$
-\tilde{A} = a\,e_t = x\,e_t + i\,\varpi\,e_t \in \mathbb{C}_{\mathbb{B}} .
+\tilde{A} = a\,e_t = r_x\,e_t + i\,\varpi\,e_t \in \mathbb{C}_{\mathbb{B}} .
 $$
 
 The centre is the natural home of a complex amplitude, because it is exactly the part of the algebra isomorphic to $\mathbb{C}$: it commutes with everything, and its two real directions are the only central directions available.
@@ -99,7 +99,7 @@ $$
 so that
 
 $$
-\tilde{A}_{\mathbb{M}_+} = \frac{1}{2}\left(\tilde{A} + \tilde{A}^{*}\right) = x\,e_t \in \mathbb{M}_+ , \qquad
+\tilde{A}_{\mathbb{M}_+} = \frac{1}{2}\left(\tilde{A} + \tilde{A}^{*}\right) = r_x\,e_t \in \mathbb{M}_+ , \qquad
 \tilde{A}_{\mathbb{M}_-} = \frac{1}{2}\left(\tilde{A} - \tilde{A}^{*}\right) = i\,\varpi\,e_t \in \mathbb{M}_- .
 $$
 
@@ -115,7 +115,7 @@ Two remarks fix the interpretation. First, the assignment of $x$ to the Hermitia
 
 ### Contrast with the Quantum Oscillator
 
-The classical decomposition above should be compared carefully with the quantum treatment, because the two statements look similar and are not. In the quantum oscillator the quadratures are **operators** $x$ and $p$, both of which are observables and both of which therefore lie in $\mathbb{M}_+$; the canonical commutator is $[x, p] = i\hbar\,e_t$, whose right-hand side lies in $\mathbb{M}_-$. The companion article *The Harmonic Oscillator in Biquaternionic Form* shows that this equation cannot be satisfied by two elements of $\mathbb{M}_+$: the commutator of two Hermitian biquaternions is a pure real quaternion with a vanishing scalar part, whereas $i\hbar\,e_t$ is a purely imaginary scalar. The quantum oscillator's phase space is not a pair of elements of the two sectors.
+The classical decomposition above should be compared carefully with the quantum treatment, because the two statements look similar and are not. In the quantum oscillator the quadratures are **operators** $x$ and $p$, both of which are observables and both of which therefore lie in $\mathbb{M}_+$; the canonical commutator is $[r_x, p] = i\hbar\,e_t$, whose right-hand side lies in $\mathbb{M}_-$. The companion article *The Harmonic Oscillator in Biquaternionic Form* shows that this equation cannot be satisfied by two elements of $\mathbb{M}_+$: the commutator of two Hermitian biquaternions is a pure real quaternion with a vanishing scalar part, whereas $i\hbar\,e_t$ is a purely imaginary scalar. The quantum oscillator's phase space is not a pair of elements of the two sectors.
 
 The classical oscillator is different because a classical number is not an operator. The real number $\varpi$ has no Hermiticity of its own; one may place it along $e_t$, along $ie_t$, or anywhere else, and the physically meaningful placement is the one dictated by the complex structure of the amplitude. Placing $x$ along $e_t$ and $\varpi$ along $ie_t$ makes the flow a rotation, and that is the placement used here. The quantum and classical statements agree on the **role of the phase** — it is the sector exchange — and disagree on the carrier of the quadratures, because the operator and the classical number are different kinds of object. The quantum companion puts its side of the contrast sharply: in any representation inside $\mathbb{B}$ each quadrature would be an observable, observables are Hermitian, so both quadratures lie in $\mathbb{M}_+$, and the sectors separate the observable content of the amplitude from its generator content rather than the amplitude's two real degrees of freedom. Nothing in the classical construction contradicts that. A classical real number carries no Hermiticity, and placing $x$ along $e_t$ and $\varpi$ along $ie_t$ is the embedding of $\mathbb{C}$ into the centre under which the flow is a rotation; the constraint that forces both quantum quadratures into one sector is simply absent here, and the placement along the two central directions is available. Neither statement is a deformation of the other; they are about different algebras of observables.
 
@@ -126,28 +126,28 @@ The classical oscillator is different because a classical number is not an opera
 The equation of motion in the amplitude variables is the pair
 
 $$
-dx/dt' = \omega\varpi, \qquad \,d\varpi/dt' = -\omega x ,
+dx/dr'_t = \omega\varpi, \qquad \,d\varpi/dr'_t = -\omega r_x ,
 $$
 
 which is equivalent to the single complex equation
 
 $$
-\boxed{\;\frac{d\tilde{A}}{dt'} = -i\omega\,\tilde{A}\;}.
+\boxed{\;\frac{d\tilde{A}}{dr'_t} = -i\omega\,\tilde{A}\;}.
 $$
 
 Its solution is the phase rotation
 
 $$
-\tilde{A}(t') = \exp(-i\omega t')\tilde{A}(0), \qquad a(t') = \exp(-i\omega t')a(0),
+\tilde{A}(r'_t) = \exp(-i\omega r'_t)\tilde{A}(0), \qquad a(r'_t) = \exp(-i\omega r'_t)a(0),
 $$
 
-so that the trajectory in the centre is a circle of radius $|a|$ traversed at angular rate $\omega$. Multiplying the decomposition $\tilde{A} = x\,e_t + i\varpi\,e_t$ by $\exp(-i\omega t')$ and using the centrality of $i$ gives
+so that the trajectory in the centre is a circle of radius $|a|$ traversed at angular rate $\omega$. Multiplying the decomposition $\tilde{A} = r_x\,e_t + i\varpi\,e_t$ by $\exp(-i\omega r'_t)$ and using the centrality of $i$ gives
 
 $$
-x(t') = x_0\cos\omega t' + \varpi_0\sin\omega t', \qquad \varpi(t') = \varpi_0\cos\omega t' - x_0\sin\omega t' ,
+r_x(r'_t) = x_0\cos\omega r'_t + \varpi_0\sin\omega r'_t, \qquad \varpi(r'_t) = \varpi_0\cos\omega r'_t - x_0\sin\omega r'_t ,
 $$
 
-which is the standard solution written with the standard initial conditions. In terms of the momentum, $\varpi(t') = p(t')/(m\omega)$, so this is $x(t') = x_0\cos\omega t' + \frac{p_0}{m\omega}\sin\omega t'$ and $p(t') = p_0\cos\omega t' - m\omega x_0\sin\omega t'$.
+which is the standard solution written with the standard initial conditions. In terms of the momentum, $\varpi(r'_t) = p(r'_t)/(m\omega)$, so this is $r_x(r'_t) = x_0\cos\omega r'_t + \frac{p_0}{m\omega}\sin\omega r'_t$ and $p(r'_t) = p_0\cos\omega r'_t - m\omega x_0\sin\omega r'_t$.
 
 ### The Generator Lies in the Material Sector
 
@@ -160,7 +160,7 @@ $$
 a real multiple of $ie_t$, which lies in $\mathbb{M}_-$: it is along the **timelike direction of the material sector**. The phase advance is therefore generated by the material sector's own time direction, and the rotation it generates is a rotation of the centre by the sector-exchange element $i$. Written as an action on the two quadratures, the generator maps the $\mathbb{M}_+$ part of $\tilde{A}$ into the $\mathbb{M}_-$ part and back:
 
 $$
--i\omega\left(x\,e_t + i\varpi\,e_t\right) = \omega\left(\varpi\,e_t - i x\,e_t\right),
+-i\omega\left(r_x\,e_t + i\varpi\,e_t\right) = \omega\left(\varpi\,e_t - i r_x\,e_t\right),
 $$
 
 so that a quarter period later the position quadrature has become the momentum quadrature. This is the precise sense in which the oscillator's phase is the sector exchange: the flow generated by the material time direction rotates the Hermitian quadrature into the anti-Hermitian one and returns it after a full period.
@@ -203,29 +203,29 @@ The energy is therefore the **Hermitian form** of the amplitude, and it is posit
 The contrast with the **biquaternion norm** is instructive. The biquaternion norm of the central element is not the squared modulus but the complex square,
 
 $$
-\langle\tilde{A}\rangle_{\natural} = \langle\tilde{A},\tilde{A}\rangle_{\natural} = \tilde{A}\,\tilde{A}^{\natural} = a^2\,e_t = \left(x^2 - \varpi^2\right)e_t + 2ix\varpi\,e_t ,
+\langle\tilde{A}\rangle_{\natural} = \langle\tilde{A},\tilde{A}\rangle_{\natural} = \tilde{A}\,\tilde{A}^{\natural} = a^2\,e_t = \left(r_x^2 - \varpi^2\right)e_t + 2ix\varpi\,e_t ,
 $$
 
 which is indefinite: it vanishes on the pair of lines $x = \pm\varpi$ and is negative for $|\varpi| > |x|$. A "energy" built from the biquaternion norm would be unbounded below on the centre, and the orbit would be a hyperbola rather than a circle. The oscillator's stability is precisely the statement that its energy is the Hermitian form and not the biquaternion norm. This is the same distinction that separates the two sectors: $\langle\cdot\rangle_{\natural}$ restricted to $\mathbb{M}_-$ has the Lorentzian signature $(3,1)$ and restricted to $\mathbb{M}_+$ has the signature $(1,3)$, while the Hermitian form $\tilde{Q}\tilde{Q}^{*}$ is positive definite on the centre.
 
-The two forms coincide only on the real axis: for $\tilde{A} = x\,e_t$, $\langle\tilde{A}\rangle_{\natural} = \langle\tilde{A},\tilde{A}\rangle_{\natural} = \tilde{A}\tilde{A}^{*} = x^2e_t$. The discrepancy grows with the imaginary (momentum) quadrature, which is exactly the quadrature that the sector decomposition places in $\mathbb{M}_-$.
+The two forms coincide only on the real axis: for $\tilde{A} = r_x\,e_t$, $\langle\tilde{A}\rangle_{\natural} = \langle\tilde{A},\tilde{A}\rangle_{\natural} = \tilde{A}\tilde{A}^{*} = r_x^2e_t$. The discrepancy grows with the imaginary (momentum) quadrature, which is exactly the quadrature that the sector decomposition places in $\mathbb{M}_-$.
 
 ## The Flow as a Bracket Derivation
 
 The phase rotation can also be written as a Hamiltonian flow, and the exercise makes the sector roles precise. With the normalized momentum $\varpi = p/(m\omega)$ the canonical bracket is $\{x, \varpi\} = 1/(m\omega)$, inherited from $\{x,p\} = 1$, and the energy is $H = \tfrac12 m\omega^2(x^2 + \varpi^2)$. The equations of motion are the bracket equations
 
 $$
-dx/dt' = \{x, H\} = \frac{\partial H}{\partial p} = \omega\varpi, \qquad
-\,d\varpi/dt' = \{\varpi, H\} = -\frac{1}{m\omega}\frac{\partial H}{\partial x} = -\omega x ,
+dx/dr'_t = \{x, H\} = \frac{\partial H}{\partial p} = \omega\varpi, \qquad
+\,d\varpi/dr'_t = \{\varpi, H\} = -\frac{1}{m\omega}\frac{\partial H}{\partial r_x} = -\omega r_x ,
 $$
 
-which are the two real equations of the phase advance. Assembling them into the amplitude gives $d\tilde{A}/dt' = -i\omega\tilde{A}$ again.
+which are the two real equations of the phase advance. Assembling them into the amplitude gives $d\tilde{A}/dr'_t = -i\omega\tilde{A}$ again.
 
 The bracket shows how the sector split interacts with the flow. The energy is a central scalar and lies in the central part of $\mathbb{M}_+$; the bracket with it is a derivation on the space of functions of the centre, and that derivation carries the real part of the amplitude into the imaginary part and back. The oscillator is thus the case in which the Hamiltonian derivation generated by an element of $\mathbb{M}_+$ is the sector exchange on the centre — the classical, single-degree-of-freedom instance of the general relation between the bracket and the algebra discussed in the companion article *Similitudes Between the Poisson Bracket and the Quantum Commutator*. Nothing quantum is used: the bracket is the classical one, and the derivation is a derivation on classical functions, not a commutator with an operator.
 
 ### Numerical Checks
 
-The structural claims of this section were verified by explicit computation with complex-coefficient quaternions. The Hermitian and anti-Hermitian parts of the central amplitude were computed and found to be $x\,e_t$ and $i(p/m\omega)e_t$ respectively; the phase rotation $a\mapsto \exp(-i\omega t')a$ was found to reproduce the standard oscillator solution for the displacement and the momentum to twelve decimal places; the energy was found to equal $\tfrac12 m\omega^2|a|^2$ and to equal the scalar part of $\tilde{A}\tilde{A}^{*}$; and the biquaternion norm was found to be $a^2e_t$, indefinite. Separately, the commutator of two Hermitian biquaternions was computed and found to be the pure real quaternion $-2\,\vec r_\psi\times\vec k$ with a vanishing scalar part, which is the fact that prevents the canonical commutator from being realized in $\mathbb{M}_+$.
+The structural claims of this section were verified by explicit computation with complex-coefficient quaternions. The Hermitian and anti-Hermitian parts of the central amplitude were computed and found to be $r_x\,e_t$ and $i(p/m\omega)e_t$ respectively; the phase rotation $a\mapsto \exp(-i\omega r'_t)a$ was found to reproduce the standard oscillator solution for the displacement and the momentum to twelve decimal places; the energy was found to equal $\tfrac12 m\omega^2|a|^2$ and to equal the scalar part of $\tilde{A}\tilde{A}^{*}$; and the biquaternion norm was found to be $a^2e_t$, indefinite. Separately, the commutator of two Hermitian biquaternions was computed and found to be the pure real quaternion $-2\,\vec r_\psi\times\vec k$ with a vanishing scalar part, which is the fact that prevents the canonical commutator from being realized in $\mathbb{M}_+$.
 
 ## One Oscillator or Two?
 
@@ -233,15 +233,15 @@ The companion article on the quantum oscillator asks whether the complexificatio
 
 **The classical oscillator is one oscillator, not two.** The phase rotation is a single one-parameter group, with a single frequency $\omega$ and a single conserved energy. There is no second frequency and no independent second degree of freedom. The phase plane is two-real-dimensional, and it is exhausted by the two quadratures of the single amplitude.
 
-**The two sectors carry the two quadratures, not two modes.** The $\mathbb{M}_+$ and $\mathbb{M}_-$ parts of $\tilde{A}$ are $x\,e_t$ and $i\varpi\,e_t$; they are the real and imaginary parts of one complex number, coupled rigidly by the phase rotation. They are not independently excitable: setting one to zero at one time does not keep it zero, because the flow carries it into the other after a quarter period. The sector split of the centre is a **direct-sum decomposition of the phase plane**, and the dynamics is a rotation that does not respect it.
+**The two sectors carry the two quadratures, not two modes.** The $\mathbb{M}_+$ and $\mathbb{M}_-$ parts of $\tilde{A}$ are $r_x\,e_t$ and $i\varpi\,e_t$; they are the real and imaginary parts of one complex number, coupled rigidly by the phase rotation. They are not independently excitable: setting one to zero at one time does not keep it zero, because the flow carries it into the other after a quarter period. The sector split of the centre is a **direct-sum decomposition of the phase plane**, and the dynamics is a rotation that does not respect it.
 
-**The two first-order equations are the sector pair.** The equation of motion, written as $dx/dt' = \omega\varpi$ and $d\varpi/dt' = -\omega x$, is a pair of real equations, one for each sector component. The pair is coupled, and the coupling constant is the frequency. In this interpretation the two sectors do carry the two equations of motion, and the phase advance is the coupling. This is the most one can say: the sectors are the two quadratures, and the oscillator is the coupling between them.
+**The two first-order equations are the sector pair.** The equation of motion, written as $dx/dr'_t = \omega\varpi$ and $d\varpi/dr'_t = -\omega r_x$, is a pair of real equations, one for each sector component. The pair is coupled, and the coupling constant is the frequency. In this interpretation the two sectors do carry the two equations of motion, and the phase advance is the coupling. This is the most one can say: the sectors are the two quadratures, and the oscillator is the coupling between them.
 
 A genuinely two-oscillator structure would require two independent complex amplitudes, hence a four-real-dimensional phase space and two frequencies. That is what a two-dimensional isotropic oscillator has, and it is not the structure of the centre. The centre is one complex dimension, and the two sectors are its real and imaginary axes.
 
 ## Summary
 
-The classical harmonic oscillator in biquaternionic form has its trajectory, its restoring force and its energy in the material sector, and its phase structure in the centre. The trajectory is $\tilde R_\varphi = i c r'_{t}\,e_t + x(t')\,\vec e_x+y(t')\,\vec e_y+z(t')\,\vec e_z$ with $d^2(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)/d{r'_{t}}^2 = -\omega^2(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)$; the restoring force $\vec F = -m\omega^2(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)$ is a real vector in $\mathbb{M}_-$ and is central about the origin.
+The classical harmonic oscillator in biquaternionic form has its trajectory, its restoring force and its energy in the material sector, and its phase structure in the centre. The trajectory is $\tilde R_\varphi = i c r'_{t}\,e_t + r_x(r'_t)\,\vec e_x+r_y(r'_t)\,\vec e_y+r_z(r'_t)\,\vec e_z$ with $d^2(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)/d{r'_{t}}^2 = -\omega^2(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)$; the restoring force $\vec F = -m\omega^2(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)$ is a real vector in $\mathbb{M}_-$ and is central about the origin.
 
 The complex amplitude $a = x + ip/(m\omega)$ embeds in the algebra as the central element
 
@@ -251,7 +251,7 @@ $$
 
 so that the two conjugate quadratures occupy the two sectors, along the two real directions of the centre $\mathbb{C}_{\mathbb{B}} = \operatorname{span}_\mathbb{R}\{e_t, ie_t\}$. The assignment of which quadrature occupies which sector is a phase convention; the fact that they occupy different sectors is not.
 
-The equation of motion is $d\tilde{A}/dt' = -i\omega\tilde{A}$, whose solution is the phase rotation $\tilde{A}(t') = \exp(-i\omega t')\tilde{A}(0)$. The generator $-i\omega\,e_t$ lies in $\mathbb{M}_-$ along the timelike direction $ie_t$, and the rotation it generates is the **sector exchange restricted to the centre**: the $\mathbb{M}_+$ quadrature is carried into the $\mathbb{M}_-$ quadrature and back. The oscillator is therefore the system in which the sector exchange is a classical mechanical motion.
+The equation of motion is $d\tilde{A}/dr'_t = -i\omega\tilde{A}$, whose solution is the phase rotation $\tilde{A}(r'_t) = \exp(-i\omega r'_t)\tilde{A}(0)$. The generator $-i\omega\,e_t$ lies in $\mathbb{M}_-$ along the timelike direction $ie_t$, and the rotation it generates is the **sector exchange restricted to the centre**: the $\mathbb{M}_+$ quadrature is carried into the $\mathbb{M}_-$ quadrature and back. The oscillator is therefore the system in which the sector exchange is a classical mechanical motion.
 
 The energy is the Hermitian form,
 
@@ -279,9 +279,9 @@ positive definite and bounded below, whereas the biquaternion norm $\langle\tild
 | $x$, $p$, $\varpi = p/(m\omega)$ | Displacement, momentum, normalized momentum |
 | $a = x + i\varpi \in \mathbb{C}$ | Complex amplitude |
 | $\tilde{A} = a\,e_t \in \mathbb{C}_{\mathbb{B}}$ | Central embedding of the amplitude |
-| $\tilde{A}_{\mathbb{M}_\pm} = \tfrac12(\tilde{A} \pm \tilde{A}^{*})$ | Sector components: $x\,e_t$ and $i\varpi\,e_t$ |
-| $d\tilde{A}/dt' = -i\omega\tilde{A}$ | Amplitude equation; generator $-i\omega\,e_t \in \mathbb{M}_-$ |
-| $\exp(-i\omega t')$ | Phase rotation; sector exchange on the centre |
+| $\tilde{A}_{\mathbb{M}_\pm} = \tfrac12(\tilde{A} \pm \tilde{A}^{*})$ | Sector components: $r_x\,e_t$ and $i\varpi\,e_t$ |
+| $d\tilde{A}/dr'_t = -i\omega\tilde{A}$ | Amplitude equation; generator $-i\omega\,e_t \in \mathbb{M}_-$ |
+| $\exp(-i\omega r'_t)$ | Phase rotation; sector exchange on the centre |
 | $E = \tfrac12 m\omega^2|a|^2$ | Energy; the Hermitian form of the amplitude |
 | $\tilde{A}\tilde{A}^{*} = |a|^2e_t$ | Hermitian form (positive definite) |
 | $\langle\tilde{A}\rangle_{\natural} = a^2e_t$ | Biquaternion norm (indefinite) |

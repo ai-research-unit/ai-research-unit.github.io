@@ -31,7 +31,7 @@ $$
 +b^{\mathrm{fop}\dagger}_r(\vec p)\,\tilde{Ξ}^{\mathrm{sp}(r)}_{-}(\vec p)\,\exp(+ip\cdot x)\Big],
 $$
 
-with $E_{\vec p}=+\sqrt{\vec p^2+m^2}$, $x=(t',\vec x)$ and $p\cdot x=E_{\vec p}t'-\vec p\cdot\vec x$. The amplitudes $\tilde{Ξ}^{\mathrm{sp}(r)}_{\pm}(\vec p)$ are elements of $\mathbb{B}$: they are the two branches of the biquaternion plane wave of the solutions article, the two $+$ amplitudes solving the amplitude equation there at the positive root of $\tilde P\tilde P^{\natural}=-m^2$ and the two $-$ amplitudes at the negative root, with $r=1,2$ counting the two solutions at each root. The mode anticommutators are
+with $E_{\vec p}=+\sqrt{\vec p^2+m^2}$, $r_x=(r'_t,\vec r)$ and $p\cdot r_x=E_{\vec p}r'_t-\vec p\cdot\vec r$. The amplitudes $\tilde{Ξ}^{\mathrm{sp}(r)}_{\pm}(\vec p)$ are elements of $\mathbb{B}$: they are the two branches of the biquaternion plane wave of the solutions article, the two $+$ amplitudes solving the amplitude equation there at the positive root of $\tilde P\tilde P^{\natural}=-m^2$ and the two $-$ amplitudes at the negative root, with $r=1,2$ counting the two solutions at each root. The mode anticommutators are
 
 $$
 \{a^{\mathrm{fop}}_r(\vec p),a^{\mathrm{fop}\dagger}_s(\vec q)\}
@@ -95,7 +95,7 @@ the one-sided chiral pair, in which both gradients act from the left and the mas
 Two formulations carry Dirac's name and must not be read as one. The first is the one-sided pair above; the second is Kravchenko's two-sided equation for a biquaternion field $F$:
 
 $$
-\bigl(i\partial/\partial t'+\nabla\bigr)F-m\,i\,\overline{F}\,\vec e_z=0,
+\bigl(i\partial/\partial r'_t+\nabla\bigr)F-m\,i\,\overline{F}\,\vec e_z=0,
 $$
 
 with $\nabla$ the spatial gradient. In this equation the spatial gradient acts from the left and the mass from the right through $\vec e_z$, and the mass term carries the algebra's complex conjugation $\bar{\cdot}$. It is related to the one-sided pair by the dictionary $A$ of *The Dirac Equation in Biquaternionic Form* but is a different operator; it is recorded here to keep the two apart and is not quantized in this article.
@@ -157,11 +157,11 @@ so that for one mode the mode algebra, the spin ladder and the parity element ar
 The canonical energy–momentum and charge of the quantized field are
 
 $$
-H=\int d^3x\,:\!\mathrm{Sc}\Bigl(\tilde{Ξ}^{\mathrm{fop}\dagger}\Bigl[-\sum_k i\,\vec e_k\,\frac{\partial\tilde{Ξ}^{\mathrm{fop}}}{\partial Q_k}\,\vec e_z+m\,i\,\tilde{Ξ}^{\mathrm{fop}}\,\vec e_x\Bigr]\Bigr)\!:,
+H=\int d^3x\,:\!\mathrm{Sc}\Bigl(\tilde{Ξ}^{\mathrm{fop}\dagger}\Bigl[-\sum_k i\,\vec e_k\,\frac{\partial\tilde{Ξ}^{\mathrm{fop}}}{\partial R_k}\,\vec e_z+m\,i\,\tilde{Ξ}^{\mathrm{fop}}\,\vec e_x\Bigr]\Bigr)\!:,
 $$
 
 $$
-P^{\mathrm{fop}}_k=\int d^3x\,:\!\mathrm{Sc}\Bigl(\tilde{Ξ}^{\mathrm{fop}\dagger}\Bigl(-i\frac{\partial\tilde{Ξ}^{\mathrm{fop}}}{\partial Q_k}\Bigr)\Bigr)\!:,
+P^{\mathrm{fop}}_k=\int d^3x\,:\!\mathrm{Sc}\Bigl(\tilde{Ξ}^{\mathrm{fop}\dagger}\Bigl(-i\frac{\partial\tilde{Ξ}^{\mathrm{fop}}}{\partial R_k}\Bigr)\Bigr)\!:,
 \qquad
 P^{\mathrm{fop}}=\sum_kP^{\mathrm{fop}}_k\vec e_k,
 \qquad
@@ -240,7 +240,7 @@ normal-ordered, Hermitian for all four components, and even under fermion parity
 Writing $\tilde J=iJ_t e_t+\sum_kJ_k\vec e_k\in\mathcal{A}\otimes\mathbb{M}_-$, the conservation law is the operator equation
 
 $$
-\langle\tilde\nabla,\tilde J\rangle_{\natural}(x)=0,
+\langle\tilde\nabla,\tilde J\rangle_{\natural}(r_x)=0,
 $$
 
 on account of the field equation. The operator statement is inherited from the classical identity term by term, since each term of the normal-ordered bilinear is a $c$-number coefficient times a mode-operator monomial and the divergence acts on the coefficient only.
@@ -273,12 +273,12 @@ It is Hermitian and even, and it is the operator whose classical limit is the sp
 **The operator written on an element.** The pair operator $\mathbb{D}$ of *Operator and Calculus Conventions* is defined there on the pair $\mathbb{B}\oplus\mathbb{B}$. Read on one element, which is the carrier of the field, its action is written out with the side in position,
 
 $$
-\mathbb{D}:\ \tilde X\longmapsto-\frac{\partial\tilde X}{\partial t'}\vec e_x-\sum_k\vec e_k\,\frac{\partial\tilde X}{\partial Q_k}\vec e_y ,
+\mathbb{D}:\ \tilde X\longmapsto-\frac{\partial\tilde X}{\partial r'_t}\vec e_x-\sum_k\vec e_k\,\frac{\partial\tilde X}{\partial R_k}\vec e_y ,
 \qquad
 \mathbb{D}_p:\ \tilde X\longmapsto iE_{\vec p}\,\tilde X\vec e_x-i\sum_k p_k\,\vec e_k\tilde X\vec e_y ,
 $$
 
-the first the operator and the second its value on the plane wave $\exp(-iE_{\vec p}t'+i\vec p\cdot\vec x)$. In the time term the left factor is $e_t$, the unit of the algebra, so the term is a single right multiplication by $\vec e_x$; each spatial term carries $\vec e_k$ on the left and $\vec e_y$ on the right. The two imaginary units of the frame are already multiplied to $-1$, so no $i$ remains on the units, and both squares are scalars, $\mathbb{D}^2=\Box$ and $\mathbb{D}_p^2=p^2$, the cross terms cancelling between the time term and the three spatial ones.
+the first the operator and the second its value on the plane wave $\exp(-iE_{\vec p}r'_t+i\vec p\cdot\vec r)$. In the time term the left factor is $e_t$, the unit of the algebra, so the term is a single right multiplication by $\vec e_x$; each spatial term carries $\vec e_k$ on the left and $\vec e_y$ on the right. The two imaginary units of the frame are already multiplied to $-1$, so no $i$ remains on the units, and both squares are scalars, $\mathbb{D}^2=\Box$ and $\mathbb{D}_p^2=p^2$, the cross terms cancelling between the time term and the three spatial ones.
 
 The covariant anticommutator of the free quantized field is the object that carries the canonical structure, and it has two properties that the biquaternion framework reads directly.
 
@@ -296,10 +296,10 @@ $$
 \langle0|\,[\tilde{Ξ}^{\mathrm{fop}}(x),\tilde{Ξ}^{\mathrm{fop}\dagger}(y)i\vec e_x]\,|0\rangle\,\tilde X=(\mathbb{D}+m)\,G_{\mathrm{S}}(x-y)\,\tilde X,
 $$
 
-with $G_{\mathrm{S}}$ the symmetric kernel, which does *not* vanish at spacelike separation. At equal times, in the normalization of the spin–statistics companion, with $\vec\Delta=\vec x-\vec y$,
+with $G_{\mathrm{S}}$ the symmetric kernel, which does *not* vanish at spacelike separation. At equal times, in the normalization of the spin–statistics companion, with $\vec\Delta=\vec r-\vec r_y$,
 
 $$
-[\tilde{Ξ}^{\mathrm{fop}}(x),\tilde{Ξ}^{\mathrm{fop}\dagger}(y)]\,\tilde X
+[\tilde{Ξ}^{\mathrm{fop}}(r_x),\tilde{Ξ}^{\mathrm{fop}\dagger}(r_y)]\,\tilde X
 =i\Bigl(m\tilde X+\sum_k\vec e_k\,\tilde X\,\vec e_y\frac{\partial}{\partial\Delta_k}\Bigr)\vec e_x\,F(\vec\Delta),
 \qquad
 F(\vec\Delta)=\int\!\frac{d^3p}{(2\pi)^3}\,\frac{\cos(\vec p\cdot\vec\Delta)}{E_{\vec p}}
@@ -369,16 +369,16 @@ The covariant anticommutator is a $c$-number and vanishes for spacelike separati
 | $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ | Biquaternion algebra |
 | $e_t=1,\vec e_x,\vec e_y,\vec e_z$ | Quaternion basis, $\vec e_k^2=-e_t$ |
 | $i$ | Scalar imaginary, $i^2=-1$ |
-| $x=(t',\vec x)$, $p\cdot x=E_{\vec p}t'-\vec p\cdot\vec x$, $p_0=E_{\vec p}$ | Spacetime point, plane-wave phase, and energy component |
+| $r_x=(r'_t,\vec r)$, $p\cdot r_x=E_{\vec p}r'_t-\vec p\cdot\vec r$, $p_0=E_{\vec p}$ | Spacetime point, plane-wave phase, and energy component |
 | $\mathbb{M}_-,\mathbb{M}_+$ | Material (anti-Hermitian) and informational (Hermitian) sectors |
 | $\mathbb{H}_{\mathbb{B}}$, $\mathbb{C}_{\mathbb{B}}$ | Real-quaternion subspace; centre |
 | $\tilde Q^{\natural},\bar{\tilde Q},\tilde Q^{*},\tilde Q^{\flat}$ | Quaternion, complex, Hermitian and anti-Hermitian conjugates; $*=\bar{\cdot}\circ\natural$, $\flat=-*$; $\flat$ is the algebra's real structure, not the mass |
 | $\mathrm{Sc}(\tilde Q)$ | Scalar part; every bilinear of the article is the scalar part of an element product |
-| $\tilde{\nabla}=e_t\partial/\partial Q_t+\nabla$, $\nabla=\sum_k\,\vec e_k\,\partial/\partial Q_k$, $\tilde{\nabla}^{\natural}=e_t\partial/\partial Q_t-\nabla$, $\Box=\tilde{\nabla}\tilde{\nabla}^{\natural}$ | Biquaternionic gradient, its spatial part, its natural conjugate, and the d'Alembertian |
-| $\mathbb{D}$ | Pair operator of the operator conventions, that is $\mathbb{D}_{\tilde\nabla}$, defined there on $\mathbb{B}\oplus\mathbb{B}$, where the pair is $(\mathbb{D}-m)$ on $(\tilde{Ξ}^{\mathrm{fop}}_L,\tilde{Ξ}^{\mathrm{fop}}_R)$; read on one element, $\mathbb{D}:\tilde X\mapsto-\frac{\partial\tilde X}{\partial t'}\vec e_x-\sum_k\vec e_k\frac{\partial\tilde X}{\partial Q_k}\vec e_y$, with $\mathbb{D}^2=\Box$ |
+| $\tilde{\nabla}=e_t\partial/\partial R_t+\nabla$, $\nabla=\sum_k\,\vec e_k\,\partial/\partial R_k$, $\tilde{\nabla}^{\natural}=e_t\partial/\partial R_t-\nabla$, $\Box=\tilde{\nabla}\tilde{\nabla}^{\natural}$ | Biquaternionic gradient, its spatial part, its natural conjugate, and the d'Alembertian |
+| $\mathbb{D}$ | Pair operator of the operator conventions, that is $\mathbb{D}_{\tilde\nabla}$, defined there on $\mathbb{B}\oplus\mathbb{B}$, where the pair is $(\mathbb{D}-m)$ on $(\tilde{Ξ}^{\mathrm{fop}}_L,\tilde{Ξ}^{\mathrm{fop}}_R)$; read on one element, $\mathbb{D}:\tilde X\mapsto-\frac{\partial\tilde X}{\partial r'_t}\vec e_x-\sum_k\vec e_k\frac{\partial\tilde X}{\partial R_k}\vec e_y$, with $\mathbb{D}^2=\Box$ |
 | $\mathbb{D}_p$ | Momentum symbol at $p_0=E_{\vec p}$: $\mathbb{D}_p:\tilde X\mapsto iE_{\vec p}\tilde X\vec e_x-i\sum_kp_k\vec e_k\tilde X\vec e_y$, with $\mathbb{D}_p^2=p^2$ |
 | $\tilde{\nabla}\tilde{Ξ}^{\mathrm{sp}}_R=m\tilde{Ξ}^{\mathrm{sp}}_L$, $\tilde{\nabla}^{\natural}\tilde{Ξ}^{\mathrm{sp}}_L=m\tilde{Ξ}^{\mathrm{sp}}_R$ | Massive biquaternion Dirac equation (linear chiral pair) |
-| $\bigl(i\partial/\partial t'+\nabla\bigr)F-m\,i\overline{F}\vec e_z=0$ | Kravchenko's two-sided equation, a different operator, not quantized here |
+| $\bigl(i\partial/\partial r'_t+\nabla\bigr)F-m\,i\overline{F}\vec e_z=0$ | Kravchenko's two-sided equation, a different operator, not quantized here |
 | $\tilde{Ξ}^{\mathrm{fop}}$ | Operator-valued biquaternion field, $\mathcal{A}\otimes\mathbb{B}$; its parts $\tilde{Ξ}^{\mathrm{fop}}_L$, $\tilde{Ξ}^{\mathrm{fop}}_R$ |
 | $\tilde{Ξ}^{\mathrm{fop}\dagger}$, $\tilde{Ξ}^{\mathrm{fop}\dagger}i\vec e_x$ | Hermitian conjugate of the field; Dirac adjoint |
 | $\tilde{Ξ}^{\mathrm{sp}(r)}_{\pm}(\vec p)$ | The two branches of the biquaternion plane wave (solutions article) |

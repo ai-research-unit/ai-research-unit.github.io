@@ -158,16 +158,16 @@ in which the gradient multiplies each chirality part of the field on the left, a
 Kravchenko's equation is a single equation on $\mathbb B$, written $\mathcal NF=0$. Split into its two sides, it reads
 
 $$
-\Bigl(i\frac{\partial}{\partial t'}+\sum_{k=1}^{3}\vec e_k\frac{\partial}{\partial Q_k}\Bigr)F=mi\,\overline F\,\vec e_z ,
+\Bigl(i\frac{\partial}{\partial r'_t}+\sum_{k=1}^{3}\vec e_k\frac{\partial}{\partial R_k}\Bigr)F=mi\,\overline F\,\vec e_z ,
 $$
 
 and the operator that collects the two sides is
 
 $$
-\mathcal NF=\Bigl(i\frac{\partial}{\partial t'}+\sum_{k=1}^{3}\vec e_k\frac{\partial}{\partial Q_k}\Bigr)F-mi\,\overline F\,\vec e_z .
+\mathcal NF=\Bigl(i\frac{\partial}{\partial r'_t}+\sum_{k=1}^{3}\vec e_k\frac{\partial}{\partial R_k}\Bigr)F-mi\,\overline F\,\vec e_z .
 $$
 
-Here $t'$ is the physical time of the material sector, whose relation to the corpus's coordinate is fixed in *Conventions in the Biquaternion Universe*. The derivative is not a second letter for the gradient: Kravchenko's time derivative carries the sign opposite to the corpus's, and his spatial part is the spatial part of the corpus gradient unchanged. The sign is his convention for the time direction, and it is the only respect in which the two derivatives differ.
+Here $r'_t$ is the physical time of the material sector, whose relation to the corpus's coordinate is fixed in *Conventions in the Biquaternion Universe*. The derivative is not a second letter for the gradient: Kravchenko's time derivative carries the sign opposite to the corpus's, and his spatial part is the spatial part of the corpus gradient unchanged. The sign is his convention for the time direction, and it is the only respect in which the two derivatives differ.
 
 The left side is one-sided: the derivative acts from the left. The right side is the mass: the componentwise conjugation $\overline{\cdot}$ supplies the antilinear part, and the fixed direction $\vec e_z$ multiplies on the right. **The letter $\mathcal N$ is the whole two-sided operator and not a factor of it**: it is neither an element of the algebra nor a left or a right multiplication, since its action is a left derivative on one side and a conjugation followed by a right multiplier on the other. This is the **two-sided** equation of the corpus: two sides, one field, and no split of the field into parts. The two parts are there all the same, $F_L$ and $F_R$, and no term of the equation is written on them: the same unit $\vec e_z$ multiplies the conjugated field on the right.
 
@@ -196,7 +196,7 @@ The Dirac–Hestenes equation is invariant under the local phase transformation
 $$
 \tilde{Ξ}^{\mathrm{sp}}\mapsto \tilde{Ξ}^{\mathrm{sp}} E,
 \qquad
-E=\exp\bigl(e\alpha(x)\,\omega\bigr),
+E=\exp\bigl(e\alpha(r_x)\,\omega\bigr),
 \qquad
 eA\mapsto eA-\tilde\nabla\alpha ,
 $$
@@ -208,27 +208,27 @@ $$
 =(\tilde\nabla\tilde{Ξ}^{\mathrm{sp}})\,\omega E-e(\tilde\nabla\alpha)\,\tilde{Ξ}^{\mathrm{sp}} E ,
 $$
 
-because $\partial E/\partial Q_\mu=e(\partial \alpha/\partial Q_\mu)\,\omega E$, because $E$ commutes with $\omega$, and because $\omega^2=-e_t$ turns the two factors of the spin plane into $-1$. The shifted potential produces $+e(\tilde\nabla\alpha)\tilde{Ξ}^{\mathrm{sp}} E$, and the two cancel. The mass term is invariant as well, and this the source states in the spacetime algebra, where the phase generator is the spin plane and commutes with the vector $v_0$. A **left** multiplication by the phase does not work: it puts $\tilde\nabla\alpha$ between $\omega$ and $\tilde{Ξ}^{\mathrm{sp}}$, where no rearrangement removes it, and a direct computation leaves a residual of order one. This is the left-versus-right matter-representation question that the minimal-coupling article records, and the STA equation answers it on the other side from the corpus's one-sided pair: the derivative acts on the left, and the phase, the spin plane and the mass all act on the right.
+because $\partial E/\partial R_\mu=e(\partial \alpha/\partial R_\mu)\,\omega E$, because $E$ commutes with $\omega$, and because $\omega^2=-e_t$ turns the two factors of the spin plane into $-1$. The shifted potential produces $+e(\tilde\nabla\alpha)\tilde{Ξ}^{\mathrm{sp}} E$, and the two cancel. The mass term is invariant as well, and this the source states in the spacetime algebra, where the phase generator is the spin plane and commutes with the vector $v_0$. A **left** multiplication by the phase does not work: it puts $\tilde\nabla\alpha$ between $\omega$ and $\tilde{Ξ}^{\mathrm{sp}}$, where no rearrangement removes it, and a direct computation leaves a residual of order one. This is the left-versus-right matter-representation question that the minimal-coupling article records, and the STA equation answers it on the other side from the corpus's one-sided pair: the derivative acts on the left, and the phase, the spin plane and the mass all act on the right.
 
 ### The discrete symmetries
 
 The discrete operations are not all of one kind, and they are not the right multiplications of the equation. The corpus's operations are
 
 $$
-P[\tilde{Ξ}^{\mathrm{sp}}]=\tilde{Ξ}^{\mathrm{sp}}(t',-\vec x)\,i\vec e_x,
+P[\tilde{Ξ}^{\mathrm{sp}}]=\tilde{Ξ}^{\mathrm{sp}}(r'_t,-\vec r)\,i\vec e_x,
 \qquad
 C[\tilde{Ξ}^{\mathrm{sp}}]=-\vec e_y\,\tilde{Ξ}^{\mathrm{sp}*}\,\vec e_y,
 \qquad
-T[\tilde{Ξ}^{\mathrm{sp}}]=-\vec e_y\,\tilde{Ξ}^{\mathrm{sp}*}(-t',\vec x),
+T[\tilde{Ξ}^{\mathrm{sp}}]=-\vec e_y\,\tilde{Ξ}^{\mathrm{sp}*}(-r'_t,\vec r),
 $$
 
-with $\vec x=r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z$ and $\tilde{Ξ}^{\mathrm{sp}*}$ the conjugation that is antilinear in the coefficients and reverses the order of a product, the antilinear map that carries one part of the field onto the other. **The three are not three of one kind, and none of them is a plain multiplication by a single element on one side.** Parity is a right multiplication by the fixed element $i\vec e_x$, which is odd. Charge conjugation multiplies on **both** sides, by $-\vec e_y$ on the left and by $\vec e_y$ on the right — the conjugation by $\vec e_y$ up to sign — and it is composed with $\tilde{Ξ}^{\mathrm{sp}*}$. Time reversal multiplies on the left by $-\vec e_y$ and is composed with the same $\tilde{Ξ}^{\mathrm{sp}*}$. Their characters and the side of each factor are collected in the table.
+with $\vec r=r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z$ and $\tilde{Ξ}^{\mathrm{sp}*}$ the conjugation that is antilinear in the coefficients and reverses the order of a product, the antilinear map that carries one part of the field onto the other. **The three are not three of one kind, and none of them is a plain multiplication by a single element on one side.** Parity is a right multiplication by the fixed element $i\vec e_x$, which is odd. Charge conjugation multiplies on **both** sides, by $-\vec e_y$ on the left and by $\vec e_y$ on the right — the conjugation by $\vec e_y$ up to sign — and it is composed with $\tilde{Ξ}^{\mathrm{sp}*}$. Time reversal multiplies on the left by $-\vec e_y$ and is composed with the same $\tilde{Ξ}^{\mathrm{sp}*}$. Their characters and the side of each factor are collected in the table.
 
 | Operation | Character | Action | Side of the factor | Chirality |
 |---|---|---|---|---|
-| Parity $P$ | linear | $\tilde{Ξ}^{\mathrm{sp}}(t',-\vec x)\,i\vec e_x$ | right multiplication | exchanges $L$ and $R$ |
+| Parity $P$ | linear | $\tilde{Ξ}^{\mathrm{sp}}(r'_t,-\vec r)\,i\vec e_x$ | right multiplication | exchanges $L$ and $R$ |
 | Charge conjugation $C$ | antilinear | $-\vec e_y\,\tilde{Ξ}^{\mathrm{sp}*}\,\vec e_y$ | both sides | exchanges $L$ and $R$ |
-| Time reversal $T$ | antilinear | $-\vec e_y\,\tilde{Ξ}^{\mathrm{sp}*}(-t',\vec x)$ | left multiplication | keeps $L$ and $R$ |
+| Time reversal $T$ | antilinear | $-\vec e_y\,\tilde{Ξ}^{\mathrm{sp}*}(-r'_t,\vec r)$ | left multiplication | keeps $L$ and $R$ |
 
 Parity is linear and is a one-sided multiplication. Charge conjugation and time reversal are **antilinear**, and each is a fixed factor composed with the conjugation $\tilde{Ξ}^{\mathrm{sp}*}$; charge conjugation is the one operation of the three that acts on both sides. This is why the right factors of the Dirac–Hestenes equation — the linear right multiplications by $\omega$ and by $v_0$ — are not the discrete operations: none of the three is that. The conventions, the signs and the composition $CPT$ are fixed in *The CPT Theorem in Biquaternionic Form* and *Parra's Four Options of the Dirac Equation and the Discrete Symmetries*.
 

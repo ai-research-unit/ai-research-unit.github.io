@@ -272,7 +272,7 @@ $$
 $$
 therefore does not increase, and strictly decreases for any off-axis state when $p>0$.
 
-**Entropy.** The eigenvalues of $\tilde{Ϛ}$ are $\lambda_\pm = \tfrac{1}{2}(1 \pm x)$ with $x = |\vec r|$, and
+**Entropy.** The eigenvalues of $\tilde{Ϛ}$ are $\lambda_\pm = \tfrac{1}{2}(1 \pm x)$ with $r_x = |\vec r|$, and
 $$
 S(x) = -\lambda_+\log\lambda_+ - \lambda_-\log\lambda_-
 = -\frac{1+x}{2}\log\frac{1+x}{2} - \frac{1-x}{2}\log\frac{1-x}{2}.

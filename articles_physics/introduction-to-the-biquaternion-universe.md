@@ -66,9 +66,9 @@ the coefficients $Q_t, Q_x, Q_y, Q_z$ take the explicit form
 $$
 \begin{aligned}
 Q_t &= c r_t + i c r'_t = c r_t+i c r'_t, \\
-Q_x &= r_x + i r'_x = x + i r'_{x}, \\
-Q_y &= r_y + i r'_y = y + i r'_{y}, \\
-Q_z &= r_z + i r'_z = z + i r'_{z}.
+Q_x &= r_x + i r'_x = r_x + i r'_{x}, \\
+Q_y &= r_y + i r'_y = r_y + i r'_{y}, \\
+Q_z &= r_z + i r'_z = r_z + i r'_{z}.
 \end{aligned}
 $$
 
@@ -82,29 +82,29 @@ $$
 r_t = t,\;\; r'_t = t', \qquad r_k = x_k,\;\; r'_k = x'_k .
 $$
 
-The unprimed parameter is throughout the **real part** of the complex coefficient and the primed one its **imaginary part**. It is worth noting which is which for the temporal coefficient: the real part of $Q_t$ is $c r_t = ct$, an informational quantity, while its imaginary part $c r'_t = ct'$ is the material time. The two sectors take disjoint halves of the eight parameters — $\mathbb{M}_-$ takes $r'_t$ together with the three $r_k$, $\mathbb{M}_+$ takes $r_t$ together with the three $r'_k$ — so four complex coefficients and eight real parameters carry exactly the same information.
+The unprimed parameter is throughout the **real part** of the complex coefficient and the primed one its **imaginary part**. It is worth noting which is which for the temporal coefficient: the real part of $Q_t$ is $c r_t = ct$, an informational quantity, while its imaginary part $c r'_t = cr'_t$ is the material time. The two sectors take disjoint halves of the eight parameters — $\mathbb{M}_-$ takes $r'_t$ together with the three $r_k$, $\mathbb{M}_+$ takes $r_t$ together with the three $r'_k$ — so four complex coefficients and eight real parameters carry exactly the same information.
 
 **One element, one point, one label.** The eight parameters split four and four between the parts, and the split gives the element its second interpretation. Read on its material part, the element is a spacetime event, $\tilde R_\varphi=i c r'_t\,e_t+r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z$, and its informational part $\tilde R_\psi$ supplies the four parameters of its **internal label**; read on its informational part, it is an event of the informational sector, $\tilde R_\psi=c r_t\,e_t+i(r'_{x}\,\vec e_x+r'_{y}\,\vec e_y+r'_{z}\,\vec e_z)$, and its material part $\tilde R_\varphi$ supplies the four parameters of its **spacetime label**. The four complex coefficients therefore read as a spacetime point together with the matching point of the other sector, and no coefficient is idle: each carries one coordinate of each sector at once. That is why one element of $\mathbb{B}$ serves both as a four-vector and as a state — the two interpretations use the two halves of the same four coefficients.
 
 ### The Vacuum Limit
 
-In vacuum, $c = c_0$, and the material time coordinate becomes $ic_0 t'$ — the familiar $i c r'_t$ form with the vacuum speed of light. The $i c r'_t$ convention is therefore the vacuum limit of the more general local structure. In a material medium, the complex structure uses $c$, the local speed of light, and varies from point to point. This makes the complex structure **local**, in the same spirit as the metric in general relativity.
+In vacuum, $c = c_0$, and the material time coordinate becomes $ic_0 r'_t$ — the familiar $i c r'_t$ form with the vacuum speed of light. The $i c r'_t$ convention is therefore the vacuum limit of the more general local structure. In a material medium, the complex structure uses $c$, the local speed of light, and varies from point to point. This makes the complex structure **local**, in the same spirit as the metric in general relativity.
 
 ## The Metric
 
 The natural quadratic form on the biquaternion algebra is the **biquaternion norm**
 
 $$
-\langle d\tilde{Q}\rangle_{\natural} = d\tilde{Q} \circ d\tilde{Q}^{\natural} = \sum_{\mu\in\{t,x,y,z\}} (dQ_\mu)^2,
+\langle d\tilde{Q}\rangle_{\natural} = d\tilde{Q} \circ d\tilde{Q}^{\natural} = \sum_{\mu\in\{t,x,y,z\}} (dR_\mu)^2,
 $$
 
-where $\circ$ is the biquaternion product and ${}^{\natural}$ is the **quaternion conjugate**, the involution that reverses the three quaternion directions and leaves the complex coefficients alone: $e_t^{\natural}=e_t$, $\vec e_k^{\natural}=-\vec e_k$, hence $d\tilde{Q}^{\natural} = dQ_t\,e_t - dQ_x\,\vec e_x - dQ_y\,\vec e_y - dQ_z\,\vec e_z$. A second conjugation appears later in the article, the **bar**, and it acts on the other factor: it conjugates the complex coefficients and leaves the quaternion basis alone, $\overline{\tilde{Q}} = \sum_\mu \overline{Q_\mu}\,e_\mu$. The two are different operations on the same element, and the norm uses the first. The quaternion conjugate is what produces the sum of squares: the product $d\tilde{Q} \circ d\tilde{Q}$ of $d\tilde{Q}$ with itself is not $\sum_\mu (dQ_\mu)^2$. Expanding in real and imaginary parts,
+where $\circ$ is the biquaternion product and ${}^{\natural}$ is the **quaternion conjugate**, the involution that reverses the three quaternion directions and leaves the complex coefficients alone: $e_t^{\natural}=e_t$, $\vec e_k^{\natural}=-\vec e_k$, hence $d\tilde{Q}^{\natural} = dR_t\,e_t - dR_x\,\vec e_x - dR_y\,\vec e_y - dR_z\,\vec e_z$. A second conjugation appears later in the article, the **bar**, and it acts on the other factor: it conjugates the complex coefficients and leaves the quaternion basis alone, $\overline{\tilde{Q}} = \sum_\mu \overline{Q_\mu}\,e_\mu$. The two are different operations on the same element, and the norm uses the first. The quaternion conjugate is what produces the sum of squares: the product $d\tilde{Q} \circ d\tilde{Q}$ of $d\tilde{Q}$ with itself is not $\sum_\mu (dR_\mu)^2$. Expanding in real and imaginary parts,
 
 $$
-(dQ_t)^2 = c^2\bigl((dr_t)^2 - (dr'_t)^2 + 2i\,dr_t\,dr'_t\bigr),\qquad (dQ_k)^2 = (dr_k)^2 - (dr'_k)^2 + 2i\,dr_k\,dr'_k .
+(dR_t)^2 = c^2\bigl((dr_t)^2 - (dr'_t)^2 + 2i\,dr_t\,dr'_t\bigr),\qquad (dR_k)^2 = (dr_k)^2 - (dr'_k)^2 + 2i\,dr_k\,dr'_k .
 $$
 
-The **real part** of $\langle d\tilde{Q}\rangle_{\natural} = \sum_\mu (dQ_\mu)^2$ reproduces the Lorentzian interval on the material sector. The minus sign in the time–time component arises algebraically from $i^2 = -1$ in the imaginary time coordinate $i c r'_t$, not from an independently postulated metric signature. The **imaginary part** couples the material and informational sectors through cross terms.
+The **real part** of $\langle d\tilde{Q}\rangle_{\natural} = \sum_\mu (dR_\mu)^2$ reproduces the Lorentzian interval on the material sector. The minus sign in the time–time component arises algebraically from $i^2 = -1$ in the imaginary time coordinate $i c r'_t$, not from an independently postulated metric signature. The **imaginary part** couples the material and informational sectors through cross terms.
 
 Because each part retains only half of the eight parameters, the same biquaternion norm reads off as a real quadratic form on each, and it is again worth having both writings. On the material part, where $d\tilde Q=d\tilde R_\varphi$ and only $dr'_t$ and the $dr_k$ are non-zero,
 
@@ -228,7 +228,7 @@ Two interpretations of the introduction are worth separating. Read as a statemen
 
 ## Summary
 
-The framework is stated in one sentence: the biquaternion algebra $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ is the common biquaternion space of relativity and quantum physics, and its two natural real subspaces carry the two theories. The **anti-Hermitian subspace** $\mathbb{M}_-$ carries the four-vectors of relativity, the material sector, in the coordinates $(i c r'_t,x,y,z)$; the **Hermitian subspace** $\mathbb{M}_+$ carries the operator algebra of quantum physics, the informational sector, in the coordinates $(c r_t,i r'_{x},i r'_{y},i r'_{z})$. Multiplication by $i$ exchanges the two.
+The framework is stated in one sentence: the biquaternion algebra $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ is the common biquaternion space of relativity and quantum physics, and its two natural real subspaces carry the two theories. The **anti-Hermitian subspace** $\mathbb{M}_-$ carries the four-vectors of relativity, the material sector, in the coordinates $(i c r'_t,r_x,r_y,r_z)$; the **Hermitian subspace** $\mathbb{M}_+$ carries the operator algebra of quantum physics, the informational sector, in the coordinates $(c r_t,i r'_{x},i r'_{y},i r'_{z})$. Multiplication by $i$ exchanges the two.
 
 Both sectors are written in the one biquaternion space. A material element is $\tilde{R}=\tilde R_\varphi=i c r'_t\,e_t+r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z$ and an informational element is $\tilde R_\psi=c r_t\,e_t+i(r'_{x}\,\vec e_x+r'_{y}\,\vec e_y+r'_{z}\,\vec e_z)$; the two are the parts of a general element, $\tilde Q=\tilde R_\psi+\tilde R_\varphi$, and the norm $\langle\tilde{Q}\rangle_{\natural}=\sum_\mu Q_\mu^2$ is the interval on $\mathbb{M}_-$, of signature $(-,+,+,+)$ there, and the Hermitian form $\langle\tilde{Q}_1,\tilde{Q}_2\rangle_{*}=\sum_\mu Q_{1\mu}\overline{Q_{2\mu}}$ is the probability weight on $\mathbb{M}_+$. The Lorentz rotors are the unit-norm elements $\tilde U^{\mathrm{lor}}$ with $\tilde U^{\mathrm{lor}}\tilde U^{\mathrm{lor}}{}^{\natural}=e_t$, acting by conjugation; the idempotents $\tilde\Pi_{1,2}(\vec u)=\tfrac12(e_t\pm i\vec u)$ are the pure states of the informational sector; and the observables are the Hermitian elements $\tilde R_\psi=c r_t\,e_t+i\vec r_\psi$ with $c r_t$ real.
 
@@ -252,7 +252,7 @@ The framework is a research program, not a finished theory. The algebraic identi
 | $\overline{\cdot}$ | Bar, the coefficient conjugation: conjugates each complex coefficient $Q_\mu$ and leaves the quaternion basis untouched, $\overline{\tilde{Q}} = \sum_\mu \overline{Q_\mu}\,e_\mu$; the conjugation of the Hermitian form, $\langle\tilde{Q}_1,\tilde{Q}_2\rangle_{*} = \sum_\mu Q_{1\mu}\overline{Q_{2\mu}}$ |
 | ${}^{*} = \overline{\cdot}\circ{}^{\natural}$ | Hermitian conjugation: conjugates both factors, $\tilde{Q}^{*} = \overline{Q_t}e_t - \overline{Q_x}\vec e_x - \overline{Q_y}\vec e_y - \overline{Q_z}\vec e_z$; the conjugation that defines the two sectors, the fixed points of ${}^{*}$ being $\mathbb{M}_+$ |
 | ${}^{\flat} = -{}^{*}$ | Anti-Hermitian conjugation: the star composed with the central sign, $\tilde{Q}^{\flat} = -\tilde{Q}^{*}$, of which the material sector $\mathbb{M}_-$ is the fixed-point set |
-| $\mathbb{M}_-$ | Anti-Hermitian subspace (material sector): coordinates $(i c r'_t, x, y, z)$, parameters $r'_t, r_x, r_y, r_z$ |
+| $\mathbb{M}_-$ | Anti-Hermitian subspace (material sector): coordinates $(i c r'_t, r_x, r_y, r_z)$, parameters $r'_t, r_x, r_y, r_z$ |
 | $\mathbb{M}_+$ | Hermitian subspace (informational sector): coordinates $(c r_t, i r'_{x}, i r'_{y}, i r'_{z})$, parameters $r_t, r'_x, r'_y, r'_z$ |
 | $\mathbb{H}_{\mathbb{B}}$ | Real quaternion subspace (home of the rotation rotors): the real half, all four coefficients real, fixed points of complex conjugation; a subalgebra |
 | $i\mathbb{H}_{\mathbb{B}}$ | Antiquaternion subspace: the imaginary half, all four coefficients purely imaginary, the partner of $\mathbb{H}_{\mathbb{B}}$ in $\mathbb{B} = \mathbb{H}_{\mathbb{B}} \oplus i\mathbb{H}_{\mathbb{B}}$. This split crosses the $\mathbb{M}_\pm$ split: the scalar of $\mathbb{M}_-$ and the vectors of $\mathbb{M}_+$ come from here |

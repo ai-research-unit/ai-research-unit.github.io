@@ -88,7 +88,7 @@ so a small ball is Euclidean with a positive fourth-order correction; for the sp
 
 ### The metric in the velocity coordinates
 
-The sheet is usually described not by $(\rho,\vec u)$ but by the velocity $\vec v$ itself, which is the Beltrami–Klein coordinate of the model — the central projection of the sheet onto the plane $t' = \mathrm{const}$, in which the geodesics are straight chords and the ball $|\vec v|<c$ is the whole of velocity space. Substituting $\vec v = c\tanh(\rho/c)\vec u$ into the metric gives
+The sheet is usually described not by $(\rho,\vec u)$ but by the velocity $\vec v$ itself, which is the Beltrami–Klein coordinate of the model — the central projection of the sheet onto the plane $r'_t = \mathrm{const}$, in which the geodesics are straight chords and the ball $|\vec v|<c$ is the whole of velocity space. Substituting $\vec v = c\tanh(\rho/c)\vec u$ into the metric gives
 $$
 \boxed{\ ds^2 = c^2\;\frac{(c^2-\vec v^2)\,|d\vec v|^2+(\vec v\cdot d\vec v)^2}{(c^2-\vec v^2)^2}\ }\ .
 $$
@@ -189,7 +189,7 @@ The drift is the angle defect: the recorded values agree with $\tfrac12-(a^2+b^2
 
 For a particle whose velocity traces a path in velocity space — an accelerated particle — the holonomy accumulated along the path is a continuous rotation of the rest-frame spin, and its rate is Thomas precession,
 $$
-d\vec\Omega_{\mathrm{T}}/dt' = -\frac{\gamma-1}{v^2}\,\vec v\times\,d\vec v/dt' ,
+d\vec\Omega_{\mathrm{T}}/dr'_t = -\frac{\gamma-1}{v^2}\,\vec v\times\,d\vec v/dr'_t ,
 $$
 the infinitesimal form of the statement that the area swept out per unit time is the rotation accumulated per unit time. The rate form is derived in the companion article on the Wigner rotation; the present article supplies what the rate does not: the exact finite statement, and the identification of the accumulated angle with an area rather than with a Euclidean product of rapidities. In dimensions other than three the same structure is the statement that the symmetric space $SL(2,\mathbb{C})/SU(2)$ has rank one, so its curvature is a single number and every loop's holonomy is a single angle.
 

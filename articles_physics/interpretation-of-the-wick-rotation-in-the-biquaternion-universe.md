@@ -2,7 +2,7 @@
 
 ## Introduction
 
-The **Wick rotation** is a computational procedure used throughout quantum field theory, statistical mechanics, and condensed-matter physics. It consists of the analytic continuation $t' \to -i\tau$ of the time coordinate to imaginary values, and it converts the oscillating phase of the Feynman path integral into a decaying exponential. The procedure is usually presented as a **trick**: it is justified by analytic continuation of the integrand in the complex time plane, it works for a large class of physically relevant problems, and it fails for others, without a general theorem that settles when it works and when it does not.
+The **Wick rotation** is a computational procedure used throughout quantum field theory, statistical mechanics, and condensed-matter physics. It consists of the analytic continuation $r'_t \to -i\tau$ of the time coordinate to imaginary values, and it converts the oscillating phase of the Feynman path integral into a decaying exponential. The procedure is usually presented as a **trick**: it is justified by analytic continuation of the integrand in the complex time plane, it works for a large class of physically relevant problems, and it fails for others, without a general theorem that settles when it works and when it does not.
 
 This article proposes a structural interpretation of the Wick rotation, in terms of the biquaternion algebra. The main observation is the following: the Wick rotation, in the $i c r'_t$ convention, sends the imaginary time coefficient $i c r'_t$ to the real value $c\tau$, while leaving the spatial coordinates $x, y, z$ unchanged. The result is a point of the **quaternion subspace** $\mathbb{H}_{\mathbb{B}}$, whose four coefficients are all real. So the Wick rotation is an **identification** of the material sector $\mathbb{M}_-$ with the quaternion subspace $\mathbb{H}_{\mathbb{B}}$, obtained by relabeling the imaginary coefficient $i c r'_t$ as a real one.
 
@@ -73,7 +73,7 @@ where $r'_t = t'$ is the time coordinate and $(r_x,r_y,r_z)=(x,y,z)$ the spatial
 The **standard Wick rotation** is the substitution
 
 $$
-t' \;\longmapsto\; -i\tau, \qquad \tau \in \mathbb{R},
+r'_t \;\longmapsto\; -i\tau, \qquad \tau \in \mathbb{R},
 $$
 
 in the time coordinate. Under this substitution, the first coefficient of $\tilde{Q}_-$ changes as
@@ -93,7 +93,7 @@ with **all four coefficients real**. In the notation of the quaternion subspace 
 So the standard Wick rotation is the identification
 
 $$
-\boxed{\;\mathbb{M}_- \;\longrightarrow\; \mathbb{H}_{\mathbb{B}}, \qquad (i c r'_t, x, y, z) \;\longmapsto\; (c\tau, x, y, z)\;},
+\boxed{\;\mathbb{M}_- \;\longrightarrow\; \mathbb{H}_{\mathbb{B}}, \qquad (i c r'_t, r_x, r_y, r_z) \;\longmapsto\; (c\tau, r_x, r_y, r_z)\;},
 $$
 
 obtained by relabeling the imaginary coefficient $i c r'_t$ as a real coefficient $c\tau$. The transformation is real-linear, but it is not an isometry: the quadratic form changes sign in the time–time component. The signature changes from $(3, 1)$ to $(4, 0)$.
@@ -176,7 +176,7 @@ The interpretation above suggests a classification of the applications of the Wi
 - Quantum gravity, where the Euclidean action is unbounded below.
 - Any process in which the causal ordering of events matters.
 
-**The exactness is one subgroup at a time.** The relabeling $i c r'_t\mapsto c\tau$ is exact on each one-parameter subgroup taken alone: on a translation in $t'$ it is the analytic continuation $t'\mapsto-i\tau$; on the central phase it turns the oscillation into a real exponential; on a spatial rotation about a fixed axis it does not act at all, because the rotation lives in the spatial units. It fails when two non-commuting factors are present, because the continuation of a product is not the product of the continuations. The polar word $e^{i\tilde{Ξ}^{\mathrm{sp}}\vec u_{\mathrm b}/2}e^{\theta\vec u_{\mathrm r}/2}$ is the example: the boost continues to a rotation and the rotor stays a rotation, but the continued product is not the product of the two continued factors. That is the BCH defect of *The Exponential Word and Its Boundary*.
+**The exactness is one subgroup at a time.** The relabeling $i c r'_t\mapsto c\tau$ is exact on each one-parameter subgroup taken alone: on a translation in $r'_t$ it is the analytic continuation $r'_t\mapsto-i\tau$; on the central phase it turns the oscillation into a real exponential; on a spatial rotation about a fixed axis it does not act at all, because the rotation lives in the spatial units. It fails when two non-commuting factors are present, because the continuation of a product is not the product of the continuations. The polar word $e^{i\tilde{Ξ}^{\mathrm{sp}}\vec u_{\mathrm b}/2}e^{\theta\vec u_{\mathrm r}/2}$ is the example: the boost continues to a rotation and the rotor stays a rotation, but the continued product is not the product of the two continued factors. That is the BCH defect of *The Exponential Word and Its Boundary*.
 
 The split is not exact; some applications lie between the two lists. But the general pattern is as follows: whenever a problem is genuinely about **correlations and equilibrium**, the transfer to $\mathbb{H}_{\mathbb{B}}$ is harmless; whenever a problem is genuinely about **causality and dynamics**, the transfer destroys what the problem was about.
 
@@ -202,7 +202,7 @@ The interpretation is consistent with the known behavior of the Wick rotation. I
 
 ## Summary
 
-The standard Wick rotation is the analytic continuation $t' \to -i\tau$ of the time coordinate, which converts the Lorentzian structure of spacetime into a Euclidean one and turns the oscillating phase of the Feynman path integral into a decaying exponential. It is usually presented as a trick.
+The standard Wick rotation is the analytic continuation $r'_t \to -i\tau$ of the time coordinate, which converts the Lorentzian structure of spacetime into a Euclidean one and turns the oscillating phase of the Feynman path integral into a decaying exponential. It is usually presented as a trick.
 
 In the biquaternion framework, the standard Wick rotation is the identification of the material sector $\mathbb{M}_-$ with the quaternion subspace $\mathbb{H}_{\mathbb{B}}$, obtained by relabeling the imaginary coefficient $i c r'_t$ as a real coefficient $c\tau$ and leaving the spatial coefficients $x, y, z$ unchanged. Both subspaces are four-dimensional real subspaces of the same biquaternion algebra $\mathbb{B}$, and the identification between them is real-linear.
 
@@ -226,10 +226,10 @@ The interpretation organizes the applications into a split between those that tr
 | $r'_t, r_x, r_y, r_z$ | Real parameters on $\mathbb{M}_-$, on $ie_t, \vec e_x, \vec e_y, \vec e_z$; the material point has $r'_t = t'$ |
 | $r_t, r'_x, r'_y, r'_z$ | Real parameters on $\mathbb{M}_+$, on $e_t, i\vec e_x, i\vec e_y, i\vec e_z$; $r_t = t$ |
 | $c$ | Speed of light in the medium |
-| $t'$ | Time coordinate on $\mathbb{M}_-$ |
+| $r'_t$ | Time coordinate on $\mathbb{M}_-$ |
 | $\tau$ | Euclidean coordinate on $\mathbb{H}_{\mathbb{B}}$ |
 | $i c r'_t$ | Imaginary time coefficient on $\mathbb{M}_-$ |
-| $t' \to -i\tau$ | Standard Wick rotation |
+| $r'_t \to -i\tau$ | Standard Wick rotation |
 | $\mathbb{M}_- \to \mathbb{H}_{\mathbb{B}}$ | The transfer as an identification of subspaces |
 
 ## Further Reading

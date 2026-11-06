@@ -154,12 +154,12 @@ and the trace keeps the first and annihilates the second. Three consequences are
 The partition function can be written as the trace of the evolution operator at an **imaginary time**,
 
 $$
-Z=\mathrm{Tr}\big(\exp(-\beta H)\big)=\mathrm{Tr}\,\tilde Q(-i\beta),\qquad \tilde Q(t')=\exp(-i\tilde R_\psit'),
+Z=\mathrm{Tr}\big(\exp(-\beta H)\big)=\mathrm{Tr}\,\tilde Q(-i\beta),\qquad \tilde Q(r'_t)=\exp(-i\tilde R_\psir'_t),
 $$
 
-the analytic continuation $t'\to-i\beta$ of the real-time evolution. This is not a convenience of the biquaternion framework; it is the standard relationship between the thermal trace and imaginary time, and it is the same continuation that makes the Matsubara formalism work.
+the analytic continuation $r'_t\to-i\beta$ of the real-time evolution. This is not a convenience of the biquaternion framework; it is the standard relationship between the thermal trace and imaginary time, and it is the same continuation that makes the Matsubara formalism work.
 
-It is here that the material sector $\mathbb{M}_-$ genuinely enters. The material sector's time coordinate is $i c r'_t$, imaginary by construction, so the continuation $t'\to-i\beta$ of the evolution is a displacement along the $\mathbb{M}_-$ time direction: the analytic continuation to $t'=-i\beta$ moves the Minkowski time coordinate to $i c r'_t=c\beta$, and the thermal operator is the evolution operator evaluated at that displaced point. In this sense the thermal circle of circumference $\beta$ — the compact imaginary-time direction over which the Euclidean formulation is defined — **lies along the time axis of $\mathbb{M}_-$**. The KMS article states the structural point that accompanies this: the complexified time direction in which the KMS continuation takes place is the sum of the imaginary time direction of $\mathbb{M}_-$ and the real time direction of $\mathbb{M}_+$, so that $\mathbb{M}_-\oplus i\mathbb{M}_-=\mathbb{B}$.
+It is here that the material sector $\mathbb{M}_-$ genuinely enters. The material sector's time coordinate is $i c r'_t$, imaginary by construction, so the continuation $r'_t\to-i\beta$ of the evolution is a displacement along the $\mathbb{M}_-$ time direction: the analytic continuation to $r'_t=-i\beta$ moves the Minkowski time coordinate to $i c r'_t=c\beta$, and the thermal operator is the evolution operator evaluated at that displaced point. In this sense the thermal circle of circumference $\beta$ — the compact imaginary-time direction over which the Euclidean formulation is defined — **lies along the time axis of $\mathbb{M}_-$**. The KMS article states the structural point that accompanies this: the complexified time direction in which the KMS continuation takes place is the sum of the imaginary time direction of $\mathbb{M}_-$ and the real time direction of $\mathbb{M}_+$, so that $\mathbb{M}_-\oplus i\mathbb{M}_-=\mathbb{B}$.
 
 Two further facts tie the partition function to that structure, and both are consistent with the KMS article rather than additional to it.
 
@@ -171,7 +171,7 @@ $$
 
 which is Hermitian, hence an element of $\mathbb{M}_+$; the log-partition function $\log Z$ appears as the real scalar part of the modular Hamiltonian. The companion article records the general fact that $K=-\log\tilde{Ϛ}$ lies in $\mathbb{M}_+$; the partition function is precisely the additive scalar that makes this true for the Gibbs state.
 
-Second, the **KMS boundary relation** $F_{AB}(t'+i\beta)=F_{BA}(-t')$ of the companion article is the imaginary-time statement whose finite-dimensional shadow is the Gibbs form used here. The partition function is the normalization of the KMS state, and the strip width in that relation is the same $\beta$ that measures the imaginary-time displacement of the thermal trace. Nothing in the present article changes the KMS boundary relation; the partition function presupposes it.
+Second, the **KMS boundary relation** $F_{AB}(r'_t+i\beta)=F_{BA}(-r'_t)$ of the companion article is the imaginary-time statement whose finite-dimensional shadow is the Gibbs form used here. The partition function is the normalization of the KMS state, and the strip width in that relation is the same $\beta$ that measures the imaginary-time displacement of the thermal trace. Nothing in the present article changes the KMS boundary relation; the partition function presupposes it.
 
 So the material sector enters the partition function not as a component of the thermal operator but as the **direction and period** of the thermal trace: $Z$ is computed from the $\mathbb{M}_+$ Hamiltonian and normalized by an $\mathbb{M}_+$ modular Hamiltonian, while the circle on which the trace is taken lies along the $\mathbb{M}_-$ time.
 

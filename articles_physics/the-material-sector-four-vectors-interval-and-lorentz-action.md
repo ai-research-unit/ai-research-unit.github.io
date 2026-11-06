@@ -35,7 +35,7 @@ $$
 \tilde R_\varphi=i c r'_t\,e_t+r_x\vec e_x+r_y\vec e_y+r_z\vec e_z,
 $$
 
-with $r'_t,r_x,r_y,r_z\in\mathbb{R}$. The parameters are the coordinates themselves, $r'_t=t'$ and $(r_x,r_y,r_z)=(x,y,z)$, so the general element is
+with $r'_t,r_x,r_y,r_z\in\mathbb{R}$. The parameters are the coordinates themselves, $r'_t = t'$ and $(r_x,r_y,r_z)=(x,y,z)$, so the general element is
 
 $$
 \tilde R_\varphi=i c r'_t\,e_t+r_x\vec e_x+r_y\vec e_y+r_z\vec e_z.
@@ -65,7 +65,7 @@ $$
 \tilde Q^{-1}=\frac{\tilde Q^{\natural}}{\langle\tilde Q\rangle_{\natural}},
 $$
 
-so an element is $N$-regular exactly when its norm is non-zero. The **set of units** of the sector is the $N$-regular set, the complement of the norm-zero set. It is not a subgroup: the inverse of a material element is material, but the product of two material elements need not be. On the complement the inverse exists; at a non-zero point of the norm-zero set the element is $N$-degenerate and a **zero divisor**: it has no inverse, and there exists a non-zero element annihilated by it. The origin is $N$-degenerate but not a zero divisor. The zero set is the **light cone**, and it is also the characteristic cone of the wave operator $\Box=\Delta-\partial^2/\partial t'^2/c^2$, whose principal symbol vanishes exactly on the null directions.
+so an element is $N$-regular exactly when its norm is non-zero. The **set of units** of the sector is the $N$-regular set, the complement of the norm-zero set. It is not a subgroup: the inverse of a material element is material, but the product of two material elements need not be. On the complement the inverse exists; at a non-zero point of the norm-zero set the element is $N$-degenerate and a **zero divisor**: it has no inverse, and there exists a non-zero element annihilated by it. The origin is $N$-degenerate but not a zero divisor. The zero set is the **light cone**, and it is also the characteristic cone of the wave operator $\Box=\Delta-\partial^2/\partial r'_t^2/c^2$, whose principal symbol vanishes exactly on the null directions.
 
 ### The Four Forms
 
@@ -129,7 +129,7 @@ $$
 
 with the sign convention that a timelike interval is negative, a null interval is zero and a spacelike interval is positive. The interval is the norm itself, not the square of a separate norm, and the three cases are the three regions of the cone.
 
-The temporal coordinate enters as $i c r'_t$. The factor $i$ is what makes the time direction count with the opposite sign: $i^2=-1$, so the time term is negative while the three space terms are positive. With $c t'$ real in place of $i c r'_t$ the sector would carry a Euclidean four-coordinate space and no causal cone. The Lorentzian signature is therefore a consequence of the placement of the central imaginary, not an added axiom.
+The temporal coordinate enters as $i c r'_t$. The factor $i$ is what makes the time direction count with the opposite sign: $i^2=-1$, so the time term is negative while the three space terms are positive. With $c r'_t$ real in place of $i c r'_t$ the sector would carry a Euclidean four-coordinate space and no causal cone. The Lorentzian signature is therefore a consequence of the placement of the central imaginary, not an added axiom.
 
 For a timelike worldline the proper time is
 
@@ -157,7 +157,7 @@ The sector carries the standard four-vectors of relativistic physics. The table 
 
 | Four-vector | Element | Components | Norm |
 | --- | --- | --- | --- |
-| four-position | $\tilde R=\tilde R_\varphi=i c r'_t\,e_t+\vec x$ | $(c r'_{t},x,y,z)$ | $s^2=-c^2{r'_{t}}^2+\lvert\vec x\rvert^2$ |
+| four-position | $\tilde R=\tilde R_\varphi=i c r'_t\,e_t+\vec r$ | $(c r'_{t},x,y,z)$ | $s^2=-c^2{r'_{t}}^2+\lvert\vec r\rvert^2$ |
 | four-velocity | $\tilde V=i\gamma c\,e_t+\gamma\vec v$ | $(\gamma c,\gamma\vec v)$ | $-c^2$ |
 | four-momentum | $\tilde P=i\frac{E}{c}\,e_t+\vec p$ | $(E/c,\vec p)$ | $-m^2c^2$ |
 | four-wavevector | $\tilde K=i\frac{\omega}{c}\,e_t+\vec k$ | $(\omega/c,\vec k)$ | $0$ for light |
@@ -249,7 +249,7 @@ The action preserves the norm when the acting element has unit norm, and then it
 
 ## Examples
 
-**A four-position.** Take $c=1$, $t'=1$, $x=3$, $y=z=0$. Then $\tilde Q=i e_t+3\vec e_x$ and $\langle\tilde Q\rangle_{\natural}=-1+9=8$, a spacelike interval.
+**A four-position.** Take $c=1$, $r'_t=1$, $x=3$, $y=z=0$. Then $\tilde Q=i e_t+3\vec e_x$ and $\langle\tilde Q\rangle_{\natural}=-1+9=8$, a spacelike interval.
 
 **A light ray.** Take $\tilde Q=i e_t+\vec e_x$. Then $\langle\tilde Q\rangle_{\natural}=-1+1=0$: the element is null and a zero divisor. The ray travels along $x$ at the speed of light.
 
@@ -259,7 +259,7 @@ $$
 \tilde Q_2=\tilde U_{\mathrm b}\tilde Q\tilde U_{\mathrm b}^{*}=i c\tau\cosh\theta^{\mathrm{rpd}}\,e_t-c\tau\sinh\theta^{\mathrm{rpd}}\,\vec e_x,
 $$
 
-the standard boost $t'_2=\tau\cosh\theta^{\mathrm{rpd}}$, $x_2=-\gamma v\tau=-c\tau\sinh\theta^{\mathrm{rpd}}$, and $\langle\tilde Q_2\rangle_{\natural}=-c^2\tau^2$ is unchanged.
+the standard boost $r'_{t,2}=\tau\cosh\theta^{\mathrm{rpd}}$, $x_2=-\gamma v\tau=-c\tau\sinh\theta^{\mathrm{rpd}}$, and $\langle\tilde Q_2\rangle_{\natural}=-c^2\tau^2$ is unchanged.
 
 **A mass shell.** For $\tilde P=i(E/c)e_t+\vec p$, the norm is $\langle\tilde P\rangle_{\natural}=-E^2/c^2+\lvert\vec p\rvert^2=-m^2c^2$, the mass-shell relation. A massless particle has $E=\lvert\vec p\rvert c$ and lies on the cone.
 
@@ -289,7 +289,7 @@ The article interprets the kinematics of the sector: the events, the four-vector
 | Symbol | Meaning |
 | --- | --- |
 | $\mathbb{M}_-$ | the anti-Hermitian subspace, the material sector |
-| $\tilde R_\varphi=i c r'_t e_t+\vec r_\varphi$ | a material element, with $r'_t=t'$; it is its own material part |
+| $\tilde R_\varphi=i c r'_t e_t+\vec r_\varphi$ | a material element, with $r'_t = t'$; it is its own material part |
 | $\tilde Q^{\flat}=-{}^{*}\tilde Q$ | the reversal, whose fixed space is $\mathbb{M}_-$ |
 | $\langle\tilde Q\rangle_{\natural}=\tilde Q\tilde Q^{\natural}$ | the quaternionic norm, the interval |
 | $\tilde Q^{-1}=\tilde Q^{\natural}/\langle\tilde Q\rangle_{\natural}$ | the inverse, defined off the cone |

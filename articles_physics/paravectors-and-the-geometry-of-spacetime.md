@@ -68,7 +68,7 @@ because the norm is multiplicative and $i$ is fixed by ${}^{\natural}$. The corp
 | scalar unit $1$ | time unit | $e_t$ |
 | vector $e_k$, $e_k^2=+e_t$ | imaginary vector | $i\vec e_k$ |
 | paravector $p_t+p_xe_x+p_ye_y+p_ze_z$ | Hermitian element | $p_te_t+i\vec p$ |
-| material four-vector $c r'_{t}+\vec x$ | element of $\mathbb{M}_-$ | $i\,p^{\natural}$ |
+| material four-vector $c r'_{t}+\vec r$ | element of $\mathbb{M}_-$ | $i\,p^{\natural}$ |
 | the source's overbar $\bar p$ | quaternion conjugation | $p^{\natural}$ |
 | the source's dagger $p^\dagger$ | Hermitian conjugation ${}^{*}$, the identity on $\mathbb{M}_+$ | $p^{*}=p$ |
 | volume element $e_1e_2e_3$ | central imaginary | $i$ |
@@ -374,9 +374,9 @@ $$
 a pair of lines in which the gradient acts from the left on each chiral half and the mass is the off-diagonal pairing that mixes them. The second is **two-sided**,
 
 $$
-\Bigl(i\frac{\partial}{\partial t'}+D_3\Bigr)F=mi\,\overline F\,\vec e_z ,
+\Bigl(i\frac{\partial}{\partial r'_t}+D_3\Bigr)F=mi\,\overline F\,\vec e_z ,
 \qquad
-D_3=\sum_{k=1}^{3}\vec e_k\frac{\partial}{\partial Q_k},
+D_3=\sum_{k=1}^{3}\vec e_k\frac{\partial}{\partial R_k},
 $$
 
 a single equation on $\mathbb{B}$ whose left side is one-sided and whose mass term is a right multiplication by $\vec e_z$ accompanied by the componentwise complex conjugation. The distinction is not decoration. In the first equation the chirality is the $\gamma_5$ cell, and on the Dirac module it splits the field into two halves; in the second equation there is no split at all, and the chirality is the volume cell $-L_{e_t}^{\mathrm{pau}}R_{\vec e_z}^{\mathrm{pau}}$. The first is one-sided in the operator and doubled in the field; the second is two-sided in the operator and single in the field.

@@ -176,7 +176,7 @@ It is worth being precise about what the adjoint action is the action *on*. A fi
 $$
 \tilde S_{\mathrm{tot},k}=\tilde L_k+\tilde S_k,
 \qquad
-\tilde L_k=(\vec x\times\vec p)_k,
+\tilde L_k=(\vec r\times\vec p)_k,
 \qquad
 \tilde S^{(\mathrm{adj})}_k=\tfrac12\mathrm{ad}_{i\vec e_k},
 $$

@@ -28,7 +28,7 @@ Q\ \xrightarrow{\ z\ }\ i\,e_zQ\,\vec e_y\ \xrightarrow{\ y\ }\ \vec e_xQ\ \xrig
 $$
 the arrow labelled by a coordinate being the frame cell of that coordinate. The composite collapses to a single right multiplication, $Q\mapsto-Q\vec e_z$, and the chirality cell multiplies on the right by $-i\vec e_z$. So the chirality cell is $i$ times the volume cell, which is how the corpus states it (*Special Element Conventions*, §*The Chirality Convention*). That relation is what places the anomaly's density inside the framework rather than beside it.
 
-**The field strength, in components.** For the abelian anomaly the field strength is $\tilde F=\tilde\nabla^{\natural}\tilde A$ in Heaviside–Lorentz units (the medium factors of *The Field-Strength Biquaternion and Its Invariants* are set to one). The alternating symbol has $\epsilon_{0123}=+1$, and in the real-time indices $t',x,y,z$ the components are
+**The field strength, in components.** For the abelian anomaly the field strength is $\tilde F=\tilde\nabla^{\natural}\tilde A$ in Heaviside–Lorentz units (the medium factors of *The Field-Strength Biquaternion and Its Invariants* are set to one). The alternating symbol has $\epsilon_{0123}=+1$, and in the real-time indices $r'_t,r_x,r_y,r_z$ the components are
 
 $$
 F_{t'i}=E_i,
@@ -38,7 +38,7 @@ $$
 
 the magnetic sign being the one the field-strength article states explicitly, $F_{jk}=\epsilon_{jkl}B_l$. The only frame-dependent component is the time one: the algebra is written in the $i c r'_t$ frame, where $Q_t=i c r'_t$ and $F_{Q_t k}=iE_k/c$, and dropping the $i/c$ returns the real-time $F_{t'k}=E_k$. All densities below are evaluated in the real-time components. For the non-abelian factor the components are those of the companion article on non-abelian gauge fields,
 $$
-F_{\mu\nu}=\frac{\partial\mathcal{A}_\nu}{\partial Q_\mu}-\frac{\partial\mathcal{A}_\mu}{\partial Q_\nu}+i\kappa\,[\mathcal{A}_\mu,\mathcal{A}_\nu],
+F_{\mu\nu}=\frac{\partial\mathcal{A}_\nu}{\partial R_\mu}-\frac{\partial\mathcal{A}_\mu}{\partial R_\nu}+i\kappa\,[\mathcal{A}_\mu,\mathcal{A}_\nu],
 \qquad
 \kappa=\frac{ϙ}{\hbar},
 $$
@@ -113,7 +113,7 @@ $$
 
 where the $i$ of the frame cell and the $-i$ of the chirality cell have been reduced by $i(-i)=+1$. The surviving right multiplier is the product $\vec e_z\vec e_{\nu(\mu)}$, in that order: right multipliers compose in the order in which they act, and $\vec e_z\vec e_{\nu(\mu)}=-\vec e_{\nu(\mu)}\vec e_z$, so writing the pair the other way around flips the sign of the current. With $\nu(t)=x$ and $\nu(k)=y$ the product is $\vec e_y$ on the time coordinate and $-\vec e_x$ on the three space coordinates. The current is conserved only at $m=0$.
 
-**The result.** For a Dirac fermion of electric charge $e$ in four dimensions, with $\tilde J_5=\sum_\mu j_{5\mu}e_\mu$ and with $\langle\tilde\nabla,\tilde J_5\rangle_{\natural}=\sum_\mu\partial j_{5\mu}/\partial Q_\mu$ the divergence — the plain sum, because the metric is already spent inside the frame cells, each of which squares to $\varepsilon_\mu$ times the identity, the plain weight of *Frame and Metric Conventions*, §*The Rules*, so an extra sign vector would apply it a second time —
+**The result.** For a Dirac fermion of electric charge $e$ in four dimensions, with $\tilde J_5=\sum_\mu j_{5\mu}e_\mu$ and with $\langle\tilde\nabla,\tilde J_5\rangle_{\natural}=\sum_\mu\partial j_{5\mu}/\partial R_\mu$ the divergence — the plain sum, because the metric is already spent inside the frame cells, each of which squares to $\varepsilon_\mu$ times the identity, the plain weight of *Frame and Metric Conventions*, §*The Rules*, so an extra sign vector would apply it a second time —
 
 $$
 \boxed{\;\langle\tilde\nabla,\tilde J_5\rangle_{\natural} \;=\; 2m\,\tilde{Ξ}^{\mathrm{sp}\dagger}iR_{\vec e_x}^{\mathrm{axf}}\bigl(\tilde{Ξ}^{\mathrm{sp}}\,\vec e_z\bigr) \;-\; \frac{e^2}{16\pi^2}\,\epsilon_{\mu\nu\rho\sigma}F_{\mu\nu}F_{\rho\sigma}\;}
@@ -282,7 +282,7 @@ $$
 =-\frac{e^2}{16\pi^2}\int d^4x\,\epsilon_{\mu\nu\rho\sigma}F_{\mu\nu}F_{\rho\sigma}
 =-\frac{e^2}{8\pi^2}\,\Delta N_{\mathrm{CS}},
 \qquad
-N_{\mathrm{CS}}=\int d^3x\,J_{\mathrm{CS},t'} .
+N_{\mathrm{CS}}=\int d^3x\,J_{\mathrm{CS},r'_t} .
 $$
 
 The coefficient and the two minus signs are one chain: the boxed divergence carries the minus of the all-low notation, and $\epsilon_{\mu\nu\rho\sigma}F_{\mu\nu}F_{\rho\sigma}=2\,\partial\cdot J_{\mathrm{CS}}$ turns the density into a divergence, so the axial charge is minus $\frac{e^2}{8\pi^2}$ times the change in Chern–Simons number. The magnitude is the standard one; only the sign of $J_{\mathrm{CS}}$ is a convention, and the article fixes it once here.
@@ -441,7 +441,7 @@ The framework's **own** gauge structure is anomaly-free identically: the central
 | $\mathrm{tr}$, $\mathrm{Tr}_R$ | Trace of an operator of the algebra in its four complex dimensions; matrix trace over the gauge representation |
 | $\epsilon_{\mu\nu\rho\sigma}$ | Alternating symbol, written all-low with $\epsilon_{0123}=+1$; raising all four indices multiplies it by $g^{00}g^{11}g^{22}g^{33}=-1$, so the textbook's upper-index contraction is the negative of the all-low one, and the anomaly term carries an explicit minus in this notation |
 | $j_{\mu}=\tilde{Ξ}^{\mathrm{sp}\dagger}iR_{\vec e_x}^{\mathrm{axf}}\,(ie_\mu\tilde{Ξ}^{\mathrm{sp}}\vec e_{\nu(\mu)})$, $j_{5\mu}=\tilde{Ξ}^{\mathrm{sp}\dagger}iR_{\vec e_x}^{\mathrm{axf}}\,(e_\mu\tilde{Ξ}^{\mathrm{sp}}\vec e_z\vec e_{\nu(\mu)})$ | Vector and axial currents; the axial current is the chirality cell inserted between the frame cell and the state, the right multiplier being $\vec e_z\vec e_{\nu(\mu)}$ in that order |
-| $\langle\tilde\nabla,\tilde J_5\rangle_{\natural}=\sum_\mu\partial j_{5\mu}/\partial Q_\mu=2m\tilde{Ξ}^{\mathrm{sp}\dagger}iR_{\vec e_x}^{\mathrm{axf}}(\tilde{Ξ}^{\mathrm{sp}}\vec e_z)-\dfrac{e^2}{16\pi^2}\epsilon_{\mu\nu\rho\sigma}F_{\mu\nu}F_{\rho\sigma}$ | Axial anomaly (ABJ), with the mass term reduced by $i(-i)=+1$; the minus is the lower-index notation, and the divergence is the plain sum, the metric being inside the frame cells |
+| $\langle\tilde\nabla,\tilde J_5\rangle_{\natural}=\sum_\mu\partial j_{5\mu}/\partial R_\mu=2m\tilde{Ξ}^{\mathrm{sp}\dagger}iR_{\vec e_x}^{\mathrm{axf}}(\tilde{Ξ}^{\mathrm{sp}}\vec e_z)-\dfrac{e^2}{16\pi^2}\epsilon_{\mu\nu\rho\sigma}F_{\mu\nu}F_{\rho\sigma}$ | Axial anomaly (ABJ), with the mass term reduced by $i(-i)=+1$; the minus is the lower-index notation, and the divergence is the plain sum, the metric being inside the frame cells |
 | $F_{\mu\nu}=\partial \mathcal{A}_\nu/\partial x_\mu-\partial \mathcal{A}_\mu/\partial x_\nu+i\kappa[\mathcal{A}_\mu,\mathcal{A}_\nu]$, $\kappa=ϙ/\hbar$ | Non-abelian field strength, in components |
 | $I_1=\vec E^2-c^2\vec B^2$, $I_2=\vec E\cdot\vec B$ | Biquaternion field invariants |
 | $\tilde{F}=i\sqrt{\epsilon}\vec E-\sqrt{\mu}\vec H$ | Biquaternion field strength |
@@ -450,7 +450,7 @@ The framework's **own** gauge structure is anomaly-free identically: the central
 | $T_a$ | $SU(2)$ generators; the symmetrised trace of three vanishes for every representation |
 | $Y=ϙ-T_3$ | Hypercharge convention |
 | $D$, $\mathrm{ind}(D)=n_R-n_L$ | Massless Dirac operator of the pair; representative of $\tilde\nabla$ on the state; its index, with $\int d^4x\,\langle\tilde\nabla,\tilde J_5\rangle_{\natural}=2\,\mathrm{ind}(D)$ |
-| $N=\frac{e^2}{32\pi^2}\int d^4x\,\epsilon_{\mu\nu\rho\sigma}F_{\mu\nu}F_{\rho\sigma}$, $N_{\mathrm{CS}}=\int d^3x\,J_{\mathrm{CS},t'}$ | Topological charge, integral by charge quantisation; $N=\frac{e^2}{16\pi^2}N_{\mathrm{CS}}$ and $\Delta Q_5=-2\Delta N$ |
+| $N=\frac{e^2}{32\pi^2}\int d^4x\,\epsilon_{\mu\nu\rho\sigma}F_{\mu\nu}F_{\rho\sigma}$, $N_{\mathrm{CS}}=\int d^3x\,J_{\mathrm{CS},r'_t}$ | Topological charge, integral by charge quantisation; $N=\frac{e^2}{16\pi^2}N_{\mathrm{CS}}$ and $\Delta Q_5=-2\Delta N$ |
 | $SU(3)_c\times SU(2)_L\times \mathrm{U}(1)_Y$ | Standard-model gauge group (standard notation, not framework objects) |
 | $c=1/\sqrt{\epsilon\mu}$, $c_0$ | Speed of light in the medium; in vacuum |
 | $a,b,c$; $\mu,\nu$ | Internal colour and spacetime indices, both written low; every contraction over them is an explicit sum |

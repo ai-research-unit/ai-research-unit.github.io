@@ -21,34 +21,34 @@ which is the dynamics of *Operator and Calculus Conventions*, §*The Gradient*. 
 **The gradient.** It is the element-valued operator of *Operator and Calculus Conventions*, §*The Gradient*, and it is written out here once, because the exercise uses no other derivative:
 
 $$
-\tilde\nabla=\sum_{\mu\in\{t,x,y,z\}}e_\mu\frac{\partial}{\partial Q_\mu}
-=e_t\frac{\partial}{\partial Q_t}+\vec e_x\frac{\partial}{\partial Q_x}+\vec e_y\frac{\partial}{\partial Q_y}+\vec e_z\frac{\partial}{\partial Q_z},
+\tilde\nabla=\sum_{\mu\in\{t,x,y,z\}}e_\mu\frac{\partial}{\partial R_\mu}
+=e_t\frac{\partial}{\partial R_t}+\vec e_x\frac{\partial}{\partial R_x}+\vec e_y\frac{\partial}{\partial R_y}+\vec e_z\frac{\partial}{\partial R_z},
 $$
 
 with its quaternion conjugate and the d'Alembertian,
 
 $$
-\tilde\nabla^{\natural}=\sum_{\mu\in\{t,x,y,z\}}\varepsilon_\mu e_\mu\frac{\partial}{\partial Q_\mu}
-=e_t\frac{\partial}{\partial Q_t}-\vec e_x\frac{\partial}{\partial Q_x}-\vec e_y\frac{\partial}{\partial Q_y}-\vec e_z\frac{\partial}{\partial Q_z},
+\tilde\nabla^{\natural}=\sum_{\mu\in\{t,x,y,z\}}\varepsilon_\mu e_\mu\frac{\partial}{\partial R_\mu}
+=e_t\frac{\partial}{\partial R_t}-\vec e_x\frac{\partial}{\partial R_x}-\vec e_y\frac{\partial}{\partial R_y}-\vec e_z\frac{\partial}{\partial R_z},
 \qquad \varepsilon=(1,-1,-1,-1),
 $$
 
 $$
-\Box=\tilde\nabla\tilde\nabla^{\natural}=\tilde\nabla^{\natural}\tilde\nabla=\frac{\partial^2}{\partial Q_t^2}+\Delta_Q ,
-\qquad \Delta_Q=\frac{\partial^2}{\partial Q_x^2}+\frac{\partial^2}{\partial Q_y^2}+\frac{\partial^2}{\partial Q_z^2}.
+\Box=\tilde\nabla\tilde\nabla^{\natural}=\tilde\nabla^{\natural}\tilde\nabla=\frac{\partial^2}{\partial R_t^2}+\Delta_Q ,
+\qquad \Delta_Q=\frac{\partial^2}{\partial R_x^2}+\frac{\partial^2}{\partial R_y^2}+\frac{\partial^2}{\partial R_z^2}.
 $$
 
-On the material sector $Q_t=i c r'_t$ the time derivative is $\partial/\partial Q_t=-(i/c)\,\partial/\partial t'$ and the d'Alembertian is $\Delta-c^{-2}\partial^2/\partial{r'_{t}}^2$. These lines are the whole operator content of the exercise, and no letter other than $\tilde\nabla$ names the gradient.
+On the material sector $Q_t=i c r'_t$ the time derivative is $\partial/\partial R_t=-(i/c)\,\partial/\partial r'_t$ and the d'Alembertian is $\Delta-c^{-2}\partial^2/\partial{r'_{t}}^2$. These lines are the whole operator content of the exercise, and no letter other than $\tilde\nabla$ names the gradient.
 
 **The square of the gradient is not scalar.** The product $\tilde\nabla\tilde\nabla$ is
 
 $$
-\tilde\nabla^2=\frac{\partial^2}{\partial Q_t^2}-\Delta_Q+2\sum_k\vec e_k\frac{\partial^2}{\partial Q_t\partial Q_k},
+\tilde\nabla^2=\frac{\partial^2}{\partial R_t^2}-\Delta_Q+2\sum_k\vec e_k\frac{\partial^2}{\partial R_t\partial R_k},
 $$
 
-because $e_t$ commutes with the three spatial units while the spatial units anticommute among themselves. The mixed terms are the ones the conjugate removes: in $\tilde\nabla\tilde\nabla^{\natural}$ the coefficient of $\partial^2/\partial Q_t\partial Q_k$ is $e_te_k-\vec e_ke_t=0$, and the coefficient of $\partial^2/\partial Q_\mu^2$ is $\varepsilon_\mu e_\mu^2=1$. So the equation is the pair: the square with the conjugate is the scalar $\Box$ and the square with itself is not a scalar, so no single first-order equation on one field can carry a mass term.
+because $e_t$ commutes with the three spatial units while the spatial units anticommute among themselves. The mixed terms are the ones the conjugate removes: in $\tilde\nabla\tilde\nabla^{\natural}$ the coefficient of $\partial^2/\partial R_t\partial R_k$ is $e_te_k-\vec e_ke_t=0$, and the coefficient of $\partial^2/\partial R_\mu^2$ is $\varepsilon_\mu e_\mu^2=1$. So the equation is the pair: the square with the conjugate is the scalar $\Box$ and the square with itself is not a scalar, so no single first-order equation on one field can carry a mass term.
 
-**The wave element.** A plane wave is $\tilde{Ξ}^{\mathrm{sp}}=\tilde{Ξ}^{\mathrm{sp}}_0\exp(i\theta)$ with $\theta=\vec k\cdot(r_x\vec e_x+r_y\vec e_y+r_z\vec e_z)-\omega t'$, its polarisation $\tilde{Ξ}^{\mathrm{sp}}_0$ an element that does not depend on the coordinates. The phase is central, so it commutes with the polarisation, and the gradient differentiates it to left multiplication by
+**The wave element.** A plane wave is $\tilde{Ξ}^{\mathrm{sp}}=\tilde{Ξ}^{\mathrm{sp}}_0\exp(i\theta)$ with $\theta=\vec k\cdot(r_x\vec e_x+r_y\vec e_y+r_z\vec e_z)-\omega r'_t$, its polarisation $\tilde{Ξ}^{\mathrm{sp}}_0$ an element that does not depend on the coordinates. The phase is central, so it commutes with the polarisation, and the gradient differentiates it to left multiplication by
 
 $$
 i\tilde P=-\tilde K,\qquad
@@ -155,7 +155,7 @@ $$
 e_t-i\vec e_z,\qquad \vec e_x+i\vec e_y,
 $$
 
-with the two signs exchanged for the negative-frequency space. The rest frame supplies no direction to the operator: at $\vec p=0$ the gradient is $e_t\,\partial/\partial Q_t$ alone and its symbol is a central scalar, so the two dimensions are the two dimensions of the part and not two directions of a spin. The axis enters through the reading, as in the next paragraph.
+with the two signs exchanged for the negative-frequency space. The rest frame supplies no direction to the operator: at $\vec p=0$ the gradient is $e_t\,\partial/\partial R_t$ alone and its symbol is a central scalar, so the two dimensions are the two dimensions of the part and not two directions of a spin. The axis enters through the reading, as in the next paragraph.
 
 **The other reading.** Right multiplication by $\tilde Q_{\mathrm{disp}}$ carries a solution of one reading to a solution of the other, because the change of the reading touches no derivative: if the pair holds for $\tilde{Ξ}^{\mathrm{sp}}$, then right multiplication by the unit element carries it to a pair that holds for $\tilde{Ξ}^{\mathrm{sp}}\tilde Q_{\mathrm{disp}}$. In that reading the unit on which the value is read is $\vec e_x$, whose part of value $+1$ has the basis
 
@@ -261,13 +261,13 @@ So the labels are locked to the members: **the field annihilated by $\tilde\nabl
 **The position-space reading.** On the material sector the free member reads
 
 $$
--\frac{i}{c}\,e_t\frac{\partial\tilde{Ξ}^{\mathrm{sp}}}{\partial t'}+\sum_k\vec e_k\frac{\partial\tilde{Ξ}^{\mathrm{sp}}}{\partial Q_k}=0 .
+-\frac{i}{c}\,e_t\frac{\partial\tilde{Ξ}^{\mathrm{sp}}}{\partial r'_t}+\sum_k\vec e_k\frac{\partial\tilde{Ξ}^{\mathrm{sp}}}{\partial R_k}=0 .
 $$
 
-In natural units the same line is read for $\partial\tilde{Ξ}^{\mathrm{sp}}/\partial t'$: with $c=1$,
+In natural units the same line is read for $\partial\tilde{Ξ}^{\mathrm{sp}}/\partial r'_t$: with $c=1$,
 
 $$
-\frac{\partial\tilde{Ξ}^{\mathrm{sp}}}{\partial t'}=-i\sum_k\vec e_k\frac{\partial\tilde{Ξ}^{\mathrm{sp}}}{\partial Q_k},
+\frac{\partial\tilde{Ξ}^{\mathrm{sp}}}{\partial r'_t}=-i\sum_k\vec e_k\frac{\partial\tilde{Ξ}^{\mathrm{sp}}}{\partial R_k},
 $$
 
 one equation on the element, whose two solutions are the two locked states above. The magnitude $\lvert\vec p\rvert$, which the energy carries at $m=0$, is part of the right-hand side and cannot be dropped.
@@ -402,9 +402,9 @@ Two objects are needed by the exercise and are not given in the parent: the nega
 | $\mathbb B=\mathbb C\otimes_\mathbb R\mathbb H$ | Biquaternion algebra |
 | $e_t=1,\vec e_x,\vec e_y,\vec e_z$ | Quaternion basis, $\vec e_k^2=-e_t$ |
 | $i$ | Scalar imaginary, $i^2=-1$ |
-| $\tilde\nabla$ | The biquaternionic gradient, $\sum_\mu e_\mu\,\partial/\partial Q_\mu$, four components |
-| $\tilde\nabla^{\natural}$ | Its quaternion conjugate, $\sum_\mu\varepsilon_\mu e_\mu\,\partial/\partial Q_\mu$ |
-| $\Box=\tilde\nabla\tilde\nabla^{\natural}=\tilde\nabla^{\natural}\tilde\nabla$ | The d'Alembertian, $\partial^2/\partial Q_t^2+\Delta_Q$ |
+| $\tilde\nabla$ | The biquaternionic gradient, $\sum_\mu e_\mu\,\partial/\partial R_\mu$, four components |
+| $\tilde\nabla^{\natural}$ | Its quaternion conjugate, $\sum_\mu\varepsilon_\mu e_\mu\,\partial/\partial R_\mu$ |
+| $\Box=\tilde\nabla\tilde\nabla^{\natural}=\tilde\nabla^{\natural}\tilde\nabla$ | The d'Alembertian, $\partial^2/\partial R_t^2+\Delta_Q$ |
 | $\tilde Q\mapsto-i\tilde Q\vec e_z$ | The action that reads the value; spectrum $+1,+1,-1,-1$ |
 | $\tilde{Ξ}^{\mathrm{sp}}=\tilde{Ξ}^{\mathrm{sp}}_L+\tilde{Ξ}^{\mathrm{sp}}_R$ | The Dirac field and its two parts, values $-1$ and $+1$ |
 | $\tilde P=i k_0e_t+\vec k$ | Wave element of the plane wave, $k_0=E$, $\vec k=\vec p$ |

@@ -202,7 +202,7 @@ and the dimension of the tensor square is the product of the two dimensions.
 
 ### O14. The norm-preserving unit is forced into the centre
 
-**Statement.** There is no quantum dynamics over $\mathbb{B}$ that preserves the Hermitian norm for every Hermitian generator and whose unit is a non-central root of $-e_t$. A dynamics $i\hbar\,\partial/\partial t'\tilde{Ξ}^{\mathrm{sp}}=\tilde{Ζ}\tilde R_\psi\tilde{Ξ}^{\mathrm{sp}}$ preserves the Hermitian norm for every Hermitian $\tilde R_\psi$ only if $\tilde{Ζ}=\pm i e_t$.
+**Statement.** There is no quantum dynamics over $\mathbb{B}$ that preserves the Hermitian norm for every Hermitian generator and whose unit is a non-central root of $-e_t$. A dynamics $i\hbar\,\partial/\partial r'_t\tilde{Ξ}^{\mathrm{sp}}=\tilde{Ζ}\tilde R_\psi\tilde{Ξ}^{\mathrm{sp}}$ preserves the Hermitian norm for every Hermitian $\tilde R_\psi$ only if $\tilde{Ζ}=\pm i e_t$.
 
 **Proof.** The generator is $-\hbar^{-1}\tilde{Ζ}\tilde R_\psi$, so its Hermitian conjugate is $-\hbar^{-1}\tilde R_\psi\tilde{Ζ}^\dagger$; anti-Hermiticity of the generator for all Hermitian $\tilde R_\psi$ therefore reads $-\tilde R_\psi\tilde{Ζ}^\dagger=\tilde{Ζ}\tilde R_\psi$ for all Hermitian $\tilde R_\psi$, which at $\tilde R_\psi=e_t$ forces $\tilde{Ζ}^\dagger=-\tilde{Ζ}$ (so a general root of $-e_t$, which need not be anti-Hermitian, is excluded) and then requires $\tilde R_\psi\tilde{Ζ}=\tilde{Ζ}\tilde R_\psi$ for all Hermitian $\tilde R_\psi$, hence $\tilde{Ζ}$ central. The central roots of $-e_t$ are $\pm i e_t$. The non-central root $\vec{Ζ}=\vec e_z$ with $\tilde R_\psi=i\vec e_x$ gives the generator $-\hbar^{-1}i\vec e_y$, which is Hermitian and generates a non-$*$-unitary flow.
 
@@ -265,7 +265,7 @@ Since the two subspaces intersect only at zero, no non-zero Hermitian element is
 
 **Statement.** There is no element or operation of $\mathbb{B}$ that represents the time derivative or selects a Hamiltonian. The dynamics must be supplied from outside.
 
-**Proof.** The derivations of a finite-dimensional central simple algebra are inner: every derivation of $\mathbb{B}$ is of the form $\mathrm{ad}_{\tilde{Q}}$ for some $\tilde{Q}$. Every such derivation is frozen on the centre and generates a conjugation flow; none of them is a distinguished time translation, and there is no element of the algebra that can be picked out as the generator of physical time. The Schrödinger equation $i\hbar\partial/\partial t'\tilde{Ξ}^{\mathrm{sp}}=\tilde{Ζ}\tilde R_\psi\tilde{Ξ}^{\mathrm{sp}}$ therefore introduces both $\partial/\partial t'$ and $\tilde R_\psi$ as external data.
+**Proof.** The derivations of a finite-dimensional central simple algebra are inner: every derivation of $\mathbb{B}$ is of the form $\mathrm{ad}_{\tilde{Q}}$ for some $\tilde{Q}$. Every such derivation is frozen on the centre and generates a conjugation flow; none of them is a distinguished time translation, and there is no element of the algebra that can be picked out as the generator of physical time. The Schrödinger equation $i\hbar\partial/\partial r'_t\tilde{Ξ}^{\mathrm{sp}}=\tilde{Ζ}\tilde R_\psi\tilde{Ξ}^{\mathrm{sp}}$ therefore introduces both $\partial/\partial r'_t$ and $\tilde R_\psi$ as external data.
 
 **Consequence.** The framework derives no arrow of time and no equation of motion from its algebra; the dynamical law is a posit, and so is the identification of the central parameters that accompany it.
 

@@ -141,7 +141,7 @@ with $\vec u$ a unit pure real quaternion, and $\tilde\Pi_1+\tilde\Pi_2=e_t$. In
 
 Two negative facts about the state element are as structural as the positive ones.
 
-**Provenance-blindness.** The state carries no record of how it was prepared. The algebra shows this directly: a mixed state has many ensemble decompositions. For a state with Bloch vector $\vec r$, $|\vec r|<1$, and a unit direction $\vec u$ orthogonal to $\vec r$, put $t=\sqrt{1-|\vec r|^2}$, so that $\vec r_\pm=\vec r\pm t\vec u$ are unit vectors. Then
+**Provenance-blindness.** The state carries no record of how it was prepared. The algebra shows this directly: a mixed state has many ensemble decompositions. For a state with Bloch vector $\vec r$, $|\vec r|<1$, and a unit direction $\vec u$ orthogonal to $\vec r$, put $r_t=\sqrt{1-|\vec r|^2}$, so that $\vec r_\pm=\vec r\pm r_t\vec u$ are unit vectors. Then
 
 $$
 \tilde{Ϛ}=\tfrac12\,\tilde\Pi_1(\vec r_+)+\tfrac12\,\tilde\Pi_1(\vec r_-)

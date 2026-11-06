@@ -20,7 +20,7 @@ The article is classical throughout, and the scope is the *relativistic* quadrup
 - Companion article *Maxwell's Equations in the Biquaternionic Formulation*, for the potential and field-strength biquaternions.
 - Companion article *The Field-Strength Biquaternion and Its Invariants*, for $\tilde{F}$, the Riemann–Silberstein vector, and the self-dual decomposition.
 
-Throughout, $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ with basis $e_t = 1, \vec e_x, \vec e_y, \vec e_z$ and $\vec e_\mu^2 = -e_t$; the central scalar imaginary is $i$, $i^2 = -1$; the material sector is $\mathbb{M}_-$ and the informational sector $\mathbb{M}_+$; the biquaternionic gradient is $\tilde{\nabla} = e_t\partial/\partial Q_t + \vec\nabla$ with $\vec\nabla = \vec e_x\partial/\partial Q_x + \vec e_y\partial/\partial Q_y + \vec e_z\partial/\partial Q_z$, and $\Box = \tilde{\nabla}\tilde{\nabla}^{\natural} = \partial^2/\partial Q_t^2 + \Delta$. The speed of light in the medium is $c = 1/\sqrt{\epsilon\mu}$. The irreducible rotation representation of dimension $2l+1$ is written $D^{(l)}$, so the monopole is $D^{(0)}$, the dipole and every vector is $D^{(1)}$, and the quadrupole is $D^{(2)}$.
+Throughout, $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ with basis $e_t = 1, \vec e_x, \vec e_y, \vec e_z$ and $\vec e_\mu^2 = -e_t$; the central scalar imaginary is $i$, $i^2 = -1$; the material sector is $\mathbb{M}_-$ and the informational sector $\mathbb{M}_+$; the biquaternionic gradient is $\tilde{\nabla} = e_t\partial/\partial R_t + \vec\nabla$ with $\vec\nabla = \vec e_x\partial/\partial R_x + \vec e_y\partial/\partial R_y + \vec e_z\partial/\partial R_z$, and $\Box = \tilde{\nabla}\tilde{\nabla}^{\natural} = \partial^2/\partial R_t^2 + \Delta$. The speed of light in the medium is $c = 1/\sqrt{\epsilon\mu}$. The irreducible rotation representation of dimension $2l+1$ is written $D^{(l)}$, so the monopole is $D^{(0)}$, the dipole and every vector is $D^{(1)}$, and the quadrupole is $D^{(2)}$.
 
 ## The Quadrupole as a Higher Multipole
 
@@ -73,17 +73,17 @@ The quadrupole is therefore a tensor over the vector part, not a value of the al
 The field of a moving source is obtained from the retarded potentials. For a point charge the Liénard–Wiechert potential is the standard result, and for an extended distribution the four-potential is the retarded integral
 
 $$
-\tilde{A}(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z,t') = \frac{\mu_0}{4\pi}\int \frac{[\tilde{J}(x_2\,\vec e_x+y_2\,\vec e_y+z_2\,\vec e_z,t'_r)]_{ret}}{|r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z-(x_2\,\vec e_x+y_2\,\vec e_y+z_2\,\vec e_z)|}\,d^3x_2 ,
+\tilde{A}(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z,r'_t) = \frac{\mu_0}{4\pi}\int \frac{[\tilde{J}(x_2\,\vec e_x+y_2\,\vec e_y+z_2\,\vec e_z,r'_{t,\mathrm{ret}})]_{ret}}{|r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z-(x_2\,\vec e_x+y_2\,\vec e_y+z_2\,\vec e_z)|}\,d^3x_2 ,
 \qquad
-t'_r = t' - \frac{|r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z-(x_2\,\vec e_x+y_2\,\vec e_y+z_2\,\vec e_z)|}{c} ,
+r'_{t,\mathrm{ret}} = r'_t - \frac{|r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z-(x_2\,\vec e_x+y_2\,\vec e_y+z_2\,\vec e_z)|}{c} ,
 $$
 
 with $\tilde{J} = ic\rho\,e_t + \vec J\in\mathbb{M}_-$ the four-current and the subscript *ret* denoting evaluation at the retarded time. This is the standard retarded solution, transcribed into the material sector; no biquaternion input is needed to write it, and none is used.
 
-For a source with a single frequency $\omega$, the current is $\vec J(x_2\,\vec e_x+y_2\,\vec e_y+z_2\,\vec e_z,t') = \vec J(x_2\,\vec e_x+y_2\,\vec e_y+z_2\,\vec e_z)\exp(-i\omega t')$, and in the far zone $r = |r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z|\to\infty$ the retarded integral reduces to
+For a source with a single frequency $\omega$, the current is $\vec J(x_2\,\vec e_x+y_2\,\vec e_y+z_2\,\vec e_z,r'_t) = \vec J(x_2\,\vec e_x+y_2\,\vec e_y+z_2\,\vec e_z)\exp(-i\omega r'_t)$, and in the far zone $r = |r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z|\to\infty$ the retarded integral reduces to
 
 $$
-\vec A(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z,t') = \frac{\mu_0}{4\pi}\,\frac{\exp(i(kr-\omega t'))}{r}\,\vec F(\vec u) ,
+\vec A(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z,r'_t) = \frac{\mu_0}{4\pi}\,\frac{\exp(i(kr-\omega r'_t))}{r}\,\vec F(\vec u) ,
 \qquad
 \vec F(\vec u) = \int \vec J(x_2\,\vec e_x+y_2\,\vec e_y+z_2\,\vec e_z)\,\exp(-ik\vec u\cdot(x_2\,\vec e_x+y_2\,\vec e_y+z_2\,\vec e_z))\,d^3x_2 ,
 $$
@@ -247,7 +247,7 @@ This field is not a radiation field: it has no $r^{-1}$ part, and its Poynting f
 In the far zone the electric quadrupole produces a genuine radiation field. From the radiation vector computed above, $\vec F_{E2} = -\tfrac{k\omega}{6}\vec{\mathcal{Q}}(\vec u)$, and $\vec B = ik\,\vec u\times\vec A$ in the radiation zone, one obtains
 
 $$
-\vec B_{E2}(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z,t') = -\frac{\mu_0}{4\pi}\,\frac{\exp(i(kr-\omega t'))}{r}\,\frac{ik^2\omega}{6}\,\vec u\times\vec{\mathcal{Q}}(\vec u) .
+\vec B_{E2}(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z,r'_t) = -\frac{\mu_0}{4\pi}\,\frac{\exp(i(kr-\omega r'_t))}{r}\,\frac{ik^2\omega}{6}\,\vec u\times\vec{\mathcal{Q}}(\vec u) .
 $$
 
 The field is transverse, falls off as $r^{-1}$, and carries the angular dependence of degree two through the vector $\vec{\mathcal{Q}}(\vec u)$. The time-averaged angular distribution follows from the Poynting vector $\langle\vec S\rangle = \tfrac{r^2c}{2\mu_0}|\vec B|^2\vec u$:
@@ -269,7 +269,7 @@ $$
 = \frac{1}{4\pi\epsilon_0}\,\frac{1}{180\,c^5}\,\langle \,d^3Q_{ij}/d{r'_{t}}^3 d^3Q_{ij}/d{r'_{t}}^3\rangle\;}
 $$
 
-where the second form is the standard one, and the two agree because a harmonic quadrupole $\mathcal{Q}_{ij}\cos\omega t'$ has $\langle\,d^3Q_{ij}/d{r'_{t}}^3 d^3Q_{ij}/d{r'_{t}}^3\rangle = \tfrac{1}{2}\omega^6\mathcal{Q}_{ij}\mathcal{Q}_{ij}$. This is the standard long-wavelength electric-quadrupole result, reconstructed here from the radiation vector; the sixth power of the frequency is the reason each successive multipole is harder to excite.
+where the second form is the standard one, and the two agree because a harmonic quadrupole $\mathcal{Q}_{ij}\cos\omega r'_t$ has $\langle\,d^3Q_{ij}/d{r'_{t}}^3 d^3Q_{ij}/d{r'_{t}}^3\rangle = \tfrac{1}{2}\omega^6\mathcal{Q}_{ij}\mathcal{Q}_{ij}$. This is the standard long-wavelength electric-quadrupole result, reconstructed here from the radiation vector; the sixth power of the frequency is the reason each successive multipole is harder to excite.
 
 For an axisymmetric source, $\mathcal{Q}_{ij} = \mathrm{diag}(-\tfrac{1}{2}ϙ,-\tfrac{1}{2}ϙ,ϙ)$ with $ϙ = \mathcal{Q}_{zz}$, the angular distribution is the degree-two pattern
 
@@ -296,10 +296,10 @@ For radiation the angular momentum is carried jointly by the multipole order and
 The resolution of the apparent paradox — that the quadrupole is not an algebra element yet its field is biquaternion-valued — is the separation of two spaces. At each point of space–time the field strength takes a value in the algebra,
 
 $$
-\tilde{F}(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z,t') = i\sqrt{\epsilon}\,\vec E(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z,t') - \sqrt{\mu}\,\vec H(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z,t') \in \mathrm{Vect}(\mathbb{B}) ,
+\tilde{F}(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z,r'_t) = i\sqrt{\epsilon}\,\vec E(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z,r'_t) - \sqrt{\mu}\,\vec H(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z,r'_t) \in \mathrm{Vect}(\mathbb{B}) ,
 $$
 
-a pure-vector biquaternion, and the **value** is an element of the six-real-dimensional vector part, which as a rotation module is $D^{(1)}$. The **angular content** of the field, however, is a property of the function $\tilde{F}(\cdot,t')$, living in the infinite-dimensional space of functions on the sphere, and it is that space which contains the $D^{(2)}$ of the quadrupole. The quadrupole field is a vector-valued function whose components depend on the angles through degree-two harmonics; the value at a point is spin one, while the angular map is spin two. There is no contradiction, because the two belong to different spaces: the value algebra is finite, the function space is not.
+a pure-vector biquaternion, and the **value** is an element of the six-real-dimensional vector part, which as a rotation module is $D^{(1)}$. The **angular content** of the field, however, is a property of the function $\tilde{F}(\cdot,r'_t)$, living in the infinite-dimensional space of functions on the sphere, and it is that space which contains the $D^{(2)}$ of the quadrupole. The quadrupole field is a vector-valued function whose components depend on the angles through degree-two harmonics; the value at a point is spin one, while the angular map is spin two. There is no contradiction, because the two belong to different spaces: the value algebra is finite, the function space is not.
 
 The same separation explains the fate of the quadrupole under the algebra's own operations. The product of two field values, or the composition of two gradients, discards the symmetric traceless part — the quaternion product keeps only $D^{(0)}\oplus D^{(1)}$, and $\vec\nabla\vec\nabla = -\Delta\,e_t$ keeps only the trace — so no local algebraic operation performed on the field at a point can manufacture a quadrupole. What produces the quadrupole is the integration against the source, that is, the *retarded solution*, which is a non-local operation; and the angular degree two is produced by the source's angular structure, not by the multiplication of values.
 
@@ -382,8 +382,8 @@ The quadrupole moment is not an algebra element: it is a rank-two tensor, outsid
 | $i$ | Central scalar imaginary, $i^2 = -1$ |
 | $\mathbb{M}_-, \mathbb{M}_+$ | Material (anti-Hermitian) and informational (Hermitian) sectors |
 | $\mathbb{C}_{\mathbb{B}}, \mathrm{Vect}(\mathbb{B})$ | Centre and complex vector part of $\mathbb{B}$ |
-| $\tilde{\nabla} = e_t\partial/\partial Q_t+\vec\nabla$ | Biquaternionic gradient |
-| $\Box = \tilde{\nabla}\tilde{\nabla}^{\natural} = \partial^2/\partial Q_t^2+\Delta$ | d'Alembertian (series convention) |
+| $\tilde{\nabla} = e_t\partial/\partial R_t+\vec\nabla$ | Biquaternionic gradient |
+| $\Box = \tilde{\nabla}\tilde{\nabla}^{\natural} = \partial^2/\partial R_t^2+\Delta$ | d'Alembertian (series convention) |
 | $\tilde{A} = i\,a'_t\,e_t+\vec A$ | Four-potential, an element of $\mathbb{M}_-$ |
 | $\tilde{F} = i\sqrt{\epsilon}\,\vec E-\sqrt{\mu}\,\vec H$ | Field-strength biquaternion (pure vector) |
 | $\vec N = \vec E+ic\vec B$ | Riemann–Silberstein vector, $\tilde{F} = i\sqrt{\epsilon}\,\vec N$ |

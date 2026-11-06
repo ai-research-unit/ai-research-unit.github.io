@@ -319,7 +319,7 @@ $$
 
 by $i^2=-1$; $\xi$ is also the difference $e_+-e_-$ of the two central idempotents $e_\pm=\tfrac12(e_t\pm\xi)$. The sign $\xi$ is central and lies outside $\mathbb{B}_{\mathbb{R}}$, and $\gamma_5$ represents it on the module; it is not its definition, and the two must not be identified.
 
-**The two Dirac equations.** The corpus carries two forms of one dynamics, and they are kept apart by where the second chirality slot sits. In units $\hbar=c=1$, with the biquaternionic gradient $\tilde\nabla=e_t\partial/\partial Q_t+\sum_k\vec e_k\partial/\partial Q_k$ and its conjugate $\tilde\nabla^{\natural}$, the **one-sided** form is the chiral pair
+**The two Dirac equations.** The corpus carries two forms of one dynamics, and they are kept apart by where the second chirality slot sits. In units $\hbar=c=1$, with the biquaternionic gradient $\tilde\nabla=e_t\partial/\partial R_t+\sum_k\vec e_k\partial/\partial R_k$ and its conjugate $\tilde\nabla^{\natural}$, the **one-sided** form is the chiral pair
 
 $$
 \tilde\nabla\tilde{Ξ}^{\mathrm{sp}}_R=m\tilde{Ξ}^{\mathrm{sp}}_L,\qquad
@@ -329,12 +329,12 @@ $$
 two fields, both equations acting from the left, the chirality carried by the two fields and exchanged by $\natural$. The **two-sided** form writes a single field and puts the second slot on the right of the algebra element,
 
 $$
-\left(i\frac{\partial}{\partial t'}+D_3\right)F-m\,i\,\overline{F}\,\vec e_z=0,
+\left(i\frac{\partial}{\partial r'_t}+D_3\right)F-m\,i\,\overline{F}\,\vec e_z=0,
 \qquad
-D_3=\sum_k\vec e_k\frac{\partial}{\partial Q_k},
+D_3=\sum_k\vec e_k\frac{\partial}{\partial R_k},
 $$
 
-with the derivative acting from the left, the bar the antilinear entry, and $\vec e_z$ multiplying from the right after the conjugation. Since $i\partial/\partial t'=-\partial/\partial Q_t$ in these units, the free part is $-\tilde\nabla^{\natural}$, and the equation reads
+with the derivative acting from the left, the bar the antilinear entry, and $\vec e_z$ multiplying from the right after the conjugation. Since $i\partial/\partial r'_t=-\partial/\partial R_t$ in these units, the free part is $-\tilde\nabla^{\natural}$, and the equation reads
 
 $$
 \tilde\nabla^{\natural}F=m\left(-i\overline{F}\,\vec e_z\right),
@@ -391,7 +391,7 @@ The matrix frame is the frame of the actions written as letters, and it is confi
 | $\Gamma=-iR_{\vec e_z}^{\mathrm{axf}}$ | The chirality cell of the module; equal to the fifth frame cell in the frame |
 | $\chi=i\tilde{Ζ}_{\mathrm{ad}}$, $\chi^2=e_t$ | The central grading; central, outside $\mathbb{B}_{\mathbb{R}}$, represented on the module by the fifth frame cell |
 | $\tilde\nabla\tilde{Ξ}^{\mathrm{sp}}_R=m\tilde{Ξ}^{\mathrm{sp}}_L$, $\tilde\nabla^{\natural}\tilde{Ξ}^{\mathrm{sp}}_L=m\tilde{Ξ}^{\mathrm{sp}}_R$ | The one-sided Dirac equation, the chiral pair |
-| $(i\partial/\partial t'+D_3)F-mi\overline{F}\vec e_z=0$ | The two-sided Dirac equation, the mass on the right |
+| $(i\partial/\partial r'_t+D_3)F-mi\overline{F}\vec e_z=0$ | The two-sided Dirac equation, the mass on the right |
 
 ## Further Reading
 - Manfred Scheunert, *The Theory of Lie Superalgebras*, Lecture Notes in Mathematics 716 (Springer, 1979), for the graded bracket, the super-Jacobi identity and the structure theory.

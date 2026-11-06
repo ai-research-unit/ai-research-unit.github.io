@@ -409,7 +409,7 @@ clearest statement of what the programme assumes.
 | $\alpha$ | Scalar part of the tension, named the density of the ether |
 | $\tilde J_{\mathrm{eg}} = i\rho + \vec J$ | Charge–current biquaternion of the programme; not the corpus four-current |
 | $\nabla^{\pm} = \partial/\partial \tau \pm i\nabla$ | Mutual complex gradients of the postulate |
-| $\nabla = \vec e_x\,\partial/\partial x+\vec e_y\,\partial/\partial y+\vec e_z\,\partial/\partial z$ | Pure-vector gradient, left quaternion multiplication |
+| $\nabla = \vec e_x\,\partial/\partial r_x+\vec e_y\,\partial/\partial r_y+\vec e_z\,\partial/\partial r_z$ | Pure-vector gradient, left quaternion multiplication |
 | $\nabla\circ\nabla = -\Delta$ | The square of $\nabla$ |
 | $\nabla^{\pm}_{\omega} = \omega \pm \nabla$ | The paper's $\omega$-gradients; $\nabla^{\pm}_{\omega} = iD_{\mp}$ at fixed frequency |
 | $\tilde{Ξ}(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z,\omega)$ | Biamplitude, $\tilde{A}(\tau,r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z) = \tilde{Ξ}(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z,\omega)\exp(-i\omega\tau)$ |

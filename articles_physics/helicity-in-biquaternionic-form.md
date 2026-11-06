@@ -169,9 +169,9 @@ of rank exactly one. The matrix in parentheses, $p_{\alpha\bar\beta}=\frac{E}{c}
 
 The passage from rank one to a product of two spinors is a lemma of linear algebra, and it is the reason the algebra needs no separate spinor-helicity postulate.
 
-**Lemma.** A nonzero $2\times2$ matrix $M$ has rank one if and only if there are nonzero columns $\lambda,\bar\lambda\in\mathbb{C}^2$ with $M=\lambda\bar\lambda^{T}$. The pair is determined up to the scaling $(\lambda,\bar\lambda)\mapsto(t'\lambda,{r'_{t}}^{-1}\bar\lambda)$, $t'\in\mathbb{C}^\times$.
+**Lemma.** A nonzero $2\times2$ matrix $M$ has rank one if and only if there are nonzero columns $\lambda,\bar\lambda\in\mathbb{C}^2$ with $M=\lambda\bar\lambda^{T}$. The pair is determined up to the scaling $(\lambda,\bar\lambda)\mapsto(r'_t\lambda,{r'_{t}}^{-1}\bar\lambda)$, $r'_t\in\mathbb{C}^\times$.
 
-*Proof.* If $M=\lambda\bar\lambda^{T}$ with both factors nonzero, every column is a multiple of $\lambda$, so the column space is one-dimensional and the rank is one. Conversely, if the rank is one, take a nonzero column $\lambda$; every other column is a multiple of it, and every row is a multiple of the row $\bar\lambda^{T}$ read off any nonzero row; then $M=\lambda\bar\lambda^{T}$. The scaling is the elementary ambiguity, $(t'\lambda)({r'_{t}}^{-1}\bar\lambda)^{T}=\lambda\bar\lambda^{T}$.
+*Proof.* If $M=\lambda\bar\lambda^{T}$ with both factors nonzero, every column is a multiple of $\lambda$, so the column space is one-dimensional and the rank is one. Conversely, if the rank is one, take a nonzero column $\lambda$; every other column is a multiple of it, and every row is a multiple of the row $\bar\lambda^{T}$ read off any nonzero row; then $M=\lambda\bar\lambda^{T}$. The scaling is the elementary ambiguity, $(r'_t\lambda)({r'_{t}}^{-1}\bar\lambda)^{T}=\lambda\bar\lambda^{T}$.
 
 Applying it to the null momentum,
 
@@ -210,9 +210,9 @@ The calculus built on these objects — the momentum-conservation constraints, t
 
 The scaling freedom of the factorisation is the kinematic little group, and the helicity is its weight. This is where the two levels of the article meet.
 
-**The scaling leaves the momentum invariant.** If $\mathsf{M}_2(\tilde P)=\lambda\bar\lambda^{T}$ and one sends $\lambda\mapsto t'\lambda$, $\bar\lambda\mapsto{r'_{t}}^{-1}\bar\lambda$ with $t'\in\mathbb{C}^\times$, the product is unchanged, so $\tilde P$ is unchanged. The scaling is exactly the ambiguity of the lemma.
+**The scaling leaves the momentum invariant.** If $\mathsf{M}_2(\tilde P)=\lambda\bar\lambda^{T}$ and one sends $\lambda\mapsto r'_t\lambda$, $\bar\lambda\mapsto{r'_{t}}^{-1}\bar\lambda$ with $r'_t\in\mathbb{C}^\times$, the product is unchanged, so $\tilde P$ is unchanged. The scaling is exactly the ambiguity of the lemma.
 
-**From $\mathbb{C}^\times$ to $U(1)$.** For a real momentum the reality condition fixes the modulus of $t'$ and leaves its phase, so the freedom is a $U(1)$. That $U(1)$ is realized inside the algebra as the rotation about $\vec p$: the rotor $\tilde u_{\mathrm r}=\cos(\theta/2)+\sin(\theta/2)\vec u_p$ commutes with $\tilde P$, since $iE/c$ is central and $\vec u_p$ commutes with $\vec p$, and it acts on the spinor module by the phase $e^{\pm i\theta/2}$. The little-group scaling is therefore not an abstract relabelling; it is the rotation about the momentum axis acting on the two factors.
+**From $\mathbb{C}^\times$ to $U(1)$.** For a real momentum the reality condition fixes the modulus of $r'_t$ and leaves its phase, so the freedom is a $U(1)$. That $U(1)$ is realized inside the algebra as the rotation about $\vec p$: the rotor $\tilde u_{\mathrm r}=\cos(\theta/2)+\sin(\theta/2)\vec u_p$ commutes with $\tilde P$, since $iE/c$ is central and $\vec u_p$ commutes with $\vec p$, and it acts on the spinor module by the phase $e^{\pm i\theta/2}$. The little-group scaling is therefore not an abstract relabelling; it is the rotation about the momentum axis acting on the two factors.
 
 **The weight is the helicity.** An object of helicity $h$ scales as ${r'_{t}}^{-2h}$, so a monomial of $\lambda$-degree $d_\lambda$ and $\bar\lambda$-degree $d_{\bar\lambda}$ in a particle of definite helicity has
 
@@ -301,7 +301,7 @@ At $m=0$ a second description opens. The null momentum is a zero divisor, hence 
 | $\tilde P=\frac{iE}{c}e_t+\vec p$ | The four-momentum, null when $\langle\tilde P\rangle_{\natural}=0$ |
 | $\lambda,\ \bar\lambda$ | In the factorisation sections only: the two spinors with $\mathsf{M}_2(\tilde P)=\lambda\bar\lambda^{T}$; not the operator |
 | $\langle ij\rangle,\ [ij]$ | The brackets, the symplectic pairing on $S$ and on $\bar S$ |
-| $t'$ | The little-group scaling, $\lambda\mapsto t'\lambda$, $\bar\lambda\mapsto {r'_{t}}^{-1}\bar\lambda$; $\lvert t'\rvert=1$ for a real momentum |
+| $r'_t$ | The little-group scaling, $\lambda\mapsto r'_t\lambda$, $\bar\lambda\mapsto {r'_{t}}^{-1}\bar\lambda$; $\lvert r'_t\rvert=1$ for a real momentum |
 | $h$ | The helicity, the weight; the operator's eigenvalue is $\hbar h$ |
 | $\xi=-iR_{\vec e_z}^{\mathrm{axf}}$ | The chirality cell, a pure right multiplier; not the helicity |
 

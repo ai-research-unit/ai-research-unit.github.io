@@ -61,7 +61,7 @@ $$
 
 and the charge contraction is $\tilde{K}_{\mathrm{f}}=ϙ\,\mathrm{F}(\tilde{V})$, the biquaternion form of the Lorentz force of Companion article *The Lorentz Force in Biquaternion Form*, for the four-force as an anti-Hermitian projection.
 
-Here $\tau$ is proper time, $t'$ laboratory time, $\vec v$ the velocity, $\gamma$ the Lorentz factor, $\vec E$ and $\vec B$ the electric field and magnetic induction, and $ϙ,m,g$ the charge, mass, and gyromagnetic factor. The projection is $P_{\mathbb{M}_-}(\tilde{Q})=\tfrac12(\tilde{Q}-\tilde{Q}^{*})$, and the Hermitian form on $\mathbb{M}_+$, read through the trace, is $\mathrm{Tr}(\tilde Q_1\tilde Q_2)=2\,\mathrm{Sc}(\tilde Q_1\tilde Q_2)$.
+Here $\tau$ is proper time, $r'_t$ laboratory time, $\vec v$ the velocity, $\gamma$ the Lorentz factor, $\vec E$ and $\vec B$ the electric field and magnetic induction, and $ϙ,m,g$ the charge, mass, and gyromagnetic factor. The projection is $P_{\mathbb{M}_-}(\tilde{Q})=\tfrac12(\tilde{Q}-\tilde{Q}^{*})$, and the Hermitian form on $\mathbb{M}_+$, read through the trace, is $\mathrm{Tr}(\tilde Q_1\tilde Q_2)=2\,\mathrm{Sc}(\tilde Q_1\tilde Q_2)$.
 
 ## The Spin Four-Vector
 
@@ -308,10 +308,10 @@ shows that the departure from spin-follows-velocity is governed by $(g/2-1)$ and
 
 ## The Laboratory-Frame Limit: Larmor and Thomas
 
-The non-relativistic limit of the BMT equation reproduces the **Larmor precession** of a magnetic moment by the usual argument. Let $\vec v\to\mathbf{0}$, so that $\gamma\to1$, $S_{0}\to0$, and $d/d\tau\to d/dt'$. Then
+The non-relativistic limit of the BMT equation reproduces the **Larmor precession** of a magnetic moment by the usual argument. Let $\vec v\to\mathbf{0}$, so that $\gamma\to1$, $S_{0}\to0$, and $d/d\tau\to d/dr'_t$. Then
 
 $$
-\frac{d\vec S_{\rm vec}}{dt'}
+\frac{d\vec S_{\rm vec}}{dr'_t}
 \;\longrightarrow\;
 \frac{ϙ}{m}\frac{g}{2}\,\vec S_{\rm vec}\times\vec B
 =\vec\mu\times\vec B,

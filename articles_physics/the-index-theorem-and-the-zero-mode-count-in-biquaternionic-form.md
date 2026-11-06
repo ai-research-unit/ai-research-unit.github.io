@@ -28,17 +28,17 @@ The article states the theorem as the standard result it is, derives the special
 **The gradient.** The derivative of the article is the biquaternionic gradient of *Operator and Calculus Conventions*, §*The Gradient*,
 
 $$
-\tilde\nabla=\sum_{\mu\in\{t,x,y,z\}}e_\mu\frac{\partial}{\partial Q_\mu}
-=e_t\frac{\partial}{\partial Q_t}+\vec e_x\frac{\partial}{\partial Q_x}+\vec e_y\frac{\partial}{\partial Q_y}+\vec e_z\frac{\partial}{\partial Q_z},
+\tilde\nabla=\sum_{\mu\in\{t,x,y,z\}}e_\mu\frac{\partial}{\partial R_\mu}
+=e_t\frac{\partial}{\partial R_t}+\vec e_x\frac{\partial}{\partial R_x}+\vec e_y\frac{\partial}{\partial R_y}+\vec e_z\frac{\partial}{\partial R_z},
 $$
 
 with its quaternion conjugate and the scalar d'Alembertian
 
 $$
-\tilde\nabla^{\natural}=\sum_{\mu\in\{t,x,y,z\}}\varepsilon_\mu e_\mu\frac{\partial}{\partial Q_\mu},
+\tilde\nabla^{\natural}=\sum_{\mu\in\{t,x,y,z\}}\varepsilon_\mu e_\mu\frac{\partial}{\partial R_\mu},
 \qquad
 \Box=\mathrm{Sc}\bigl(\tilde\nabla^{\natural}\tilde\nabla\bigr)
-=\frac{\partial^2}{\partial Q_t^2}+\Delta_Q ,
+=\frac{\partial^2}{\partial R_t^2}+\Delta_Q ,
 \qquad
 \varepsilon=(1,-1,-1,-1).
 $$
@@ -49,14 +49,14 @@ Each term is a left multiplication by one frame unit. The symbol is the same sum
 
 $$
 \tilde D_R=\sum_{\mu}e_\mu D_\mu,\qquad
-D_\mu\tilde{Ξ}^{\mathrm{sp}}=\frac{\partial\tilde{Ξ}^{\mathrm{sp}}}{\partial Q_\mu}+i\kappa\,\mathcal A_\mu\tilde{Ξ}^{\mathrm{sp}},
+D_\mu\tilde{Ξ}^{\mathrm{sp}}=\frac{\partial\tilde{Ξ}^{\mathrm{sp}}}{\partial R_\mu}+i\kappa\,\mathcal A_\mu\tilde{Ξ}^{\mathrm{sp}},
 $$
 
 with the sum over $\mu\in\{t,x,y,z\}$ and the connection $\mathcal A_\mu$ valued in the gauge algebra, multiplying the field from the left. The components are those of the gauge-covariant derivative of *Algebra and Element Conventions*, and
 
 $$
 [D_\mu,D_\nu]\tilde{Ξ}^{\mathrm{sp}}=i\kappa\,F_{\mu\nu}\tilde{Ξ}^{\mathrm{sp}},\qquad
-F_{\mu\nu}=\frac{\partial\mathcal A_\nu}{\partial Q_\mu}-\frac{\partial\mathcal A_\mu}{\partial Q_\nu}+i\kappa[\mathcal A_\mu,\mathcal A_\nu].
+F_{\mu\nu}=\frac{\partial\mathcal A_\nu}{\partial R_\mu}-\frac{\partial\mathcal A_\mu}{\partial R_\nu}+i\kappa[\mathcal A_\mu,\mathcal A_\nu].
 $$
 
 **The symbol, and the square.** The principal symbol at a covector $\zeta$ is the left multiplication by $\sum_\mu\zeta_\mu e_\mu$. That element is invertible for every real $\zeta\neq0$, because its norm is $\sum_\mu\zeta_\mu^2$ and that is nonzero; so the operator is elliptic, and on a closed manifold its kernel and cokernel are finite-dimensional. The square of the symbol is not a multiple of the identity,
@@ -67,7 +67,7 @@ $$
 
 because $e_t$ commutes with the three spatial units, so the mixed time–space terms add; the three spatial units anticommute, so their mixed terms vanish; and each spatial square is $-e_t$, which gives the negative sum. Ellipticity needs the invertibility of the symbol and not of its square, so the vector term changes nothing.
 
-The square of the operator is not scalar either. What is scalar is the composition with the conjugate, $\mathrm{Sc}(\tilde\nabla^{\natural}\tilde\nabla)=\Box$, and on the material sector that reads $\Delta-c^{-2}\partial^2/\partial t'^2$. The connection enters through the commutator $[D_\mu,D_\nu]$, and for the pure-gauge connection $\mathcal A_\mu=(i\kappa)^{-1}u^{-1}\partial u/\partial Q_\mu$ the covariant derivative is a conjugation of the free one, $D_\mu\tilde{Ξ}^{\mathrm{sp}}=u^{-1}\partial(u\tilde{Ξ}^{\mathrm{sp}})/\partial Q_\mu$.
+The square of the operator is not scalar either. What is scalar is the composition with the conjugate, $\mathrm{Sc}(\tilde\nabla^{\natural}\tilde\nabla)=\Box$, and on the material sector that reads $\Delta-c^{-2}\partial^2/\partial r'_t^2$. The connection enters through the commutator $[D_\mu,D_\nu]$, and for the pure-gauge connection $\mathcal A_\mu=(i\kappa)^{-1}u^{-1}\partial u/\partial R_\mu$ the covariant derivative is a conjugation of the free one, $D_\mu\tilde{Ξ}^{\mathrm{sp}}=u^{-1}\partial(u\tilde{Ξ}^{\mathrm{sp}})/\partial R_\mu$.
 
 **The first order, and the mass.** The free equation is first order and carries one field, $\tilde\nabla\tilde{Ξ}^{\mathrm{sp}}=0$. The massive equation is the chiral pair
 
@@ -256,11 +256,11 @@ The index density is a total derivative whose integral equals the instanton char
 | $\mathbb M_+,\mathbb M_-$ | Informational (Hermitian) and material (anti-Hermitian) sectors |
 | $\mathfrak{su}(2)=\mathrm{span}_{\mathbb R}\{\vec e_x,\vec e_y,\vec e_z\}$ | Compact gauge algebra inside $\mathbb M_-$ |
 | $T_a=\tfrac12 \vec e_a$, $[T_a,T_b]=\varepsilon_{abc}T_c$ | Normalised generators |
-| $\Box=\mathrm{Sc}(\tilde\nabla^{\natural}\tilde\nabla)=\partial^2/\partial Q_t^2+\Delta$ | d'Alembertian of the $\mathbb{B}$ frame; the scalar part of $\tilde\nabla^{\natural}\tilde\nabla$ |
-| $\Delta=\partial^2/\partial Q_x^2+\partial^2/\partial Q_y^2+\partial^2/\partial Q_z^2$ | Laplacian in the three vector coordinates |
-| $\tilde\nabla=\sum_\mu e_\mu\,\partial/\partial Q_\mu$ | Biquaternionic gradient, acting from the left; $\tilde\nabla^{\natural}=\sum_\mu\varepsilon_\mu e_\mu\,\partial/\partial Q_\mu$ |
+| $\Box=\mathrm{Sc}(\tilde\nabla^{\natural}\tilde\nabla)=\partial^2/\partial R_t^2+\Delta$ | d'Alembertian of the $\mathbb{B}$ frame; the scalar part of $\tilde\nabla^{\natural}\tilde\nabla$ |
+| $\Delta=\partial^2/\partial R_x^2+\partial^2/\partial R_y^2+\partial^2/\partial R_z^2$ | Laplacian in the three vector coordinates |
+| $\tilde\nabla=\sum_\mu e_\mu\,\partial/\partial R_\mu$ | Biquaternionic gradient, acting from the left; $\tilde\nabla^{\natural}=\sum_\mu\varepsilon_\mu e_\mu\,\partial/\partial R_\mu$ |
 | $\tilde D_R=\sum_\mu e_\mu D_\mu$ | Twisted Dirac operator in the representation $R$; the gauge-covariant gradient |
-| $D_\mu=\partial/\partial Q_\mu+i\kappa\,\mathcal A_\mu$ | Covariant derivative; $[D_\mu,D_\nu]=i\kappa F_{\mu\nu}$ |
+| $D_\mu=\partial/\partial R_\mu+i\kappa\,\mathcal A_\mu$ | Covariant derivative; $[D_\mu,D_\nu]=i\kappa F_{\mu\nu}$ |
 | $\tilde{Ξ}^{\mathrm{sp}}_L$, $\tilde{Ξ}^{\mathrm{sp}}_R$ | The two values of the chirality subscript; $R$ is the plus value |
 | $\xi$ | Chirality of the frame: right multiplication by $-i\vec e_z$, whose two eigenspaces are $\mathbb B_L$ and $\mathbb B_R$ |
 | $G_M$ | Chirality of the manifold's spinor factor; the grading the twisted operator reverses |
@@ -272,7 +272,7 @@ The index density is a total derivative whose integral equals the instanton char
 | $R$ | Representation label, defining (dim $2$) or adjoint (dim $3$) |
 | $\kappa$ | Coupling constant of the gauge field |
 | $\mathcal F=d\mathcal A+i\kappa\,\mathcal A\wedge\mathcal A$ | Field-strength two-form |
-| $F_{\mu\nu}=\partial/\partial Q_\mu\,\mathcal A_\nu-\partial/\partial Q_\nu\,\mathcal A_\mu+i\kappa[\mathcal A_\mu,\mathcal A_\nu]$ | Its components; $[D_\mu,D_\nu]=i\kappa F_{\mu\nu}$ |
+| $F_{\mu\nu}=\partial/\partial R_\mu\,\mathcal A_\nu-\partial/\partial R_\nu\,\mathcal A_\mu+i\kappa[\mathcal A_\mu,\mathcal A_\nu]$ | Its components; $[D_\mu,D_\nu]=i\kappa F_{\mu\nu}$ |
 | $Ϙ=\frac{1}{8\pi^2}\int\mathrm{Tr}(F\wedge F)$ | Topological (instanton) charge, $Ϙ\in\mathbb Z$; the trace in the defining representation |
 | $\Omega_{\mathrm{CS}}$ | Chern–Simons three-form; $d\Omega_{\mathrm{CS}}=\mathrm{Tr}(F\wedge F)$ |
 | $\eta(0)$, $h$ | Eta invariant and boundary zero-mode count (APS) |

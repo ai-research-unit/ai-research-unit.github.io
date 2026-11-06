@@ -197,7 +197,7 @@ with $\epsilon_t \equiv 1$. We group the sixteen pairs $(m,m_2)$ into three clas
 Collecting, the coefficient of $\vec e_l\otimes \vec e_l$ in $16\,\tilde\Pi_\epsilon^2$ is $2\epsilon_l + 2\epsilon_j\epsilon_k$, where $\{j,k,l\} = \{x,y,z\}$. Since
 
 $$
-16\,\tilde\Pi_\epsilon = 4\,e_t\otimes e_t + 4\sum_{l\in\{x,y,z\}}\epsilon_l\,\vec e_l\otimes \vec e_l,
+16\,\tilde\Pi_\epsilon = 4\,e_t\otimes e_t + 4\sum_{l\in\{x,r_y,r_z\}}\epsilon_l\,\vec e_l\otimes \vec e_l,
 $$
 
 the requirement $\tilde\Pi_\epsilon^2 = \tilde\Pi_\epsilon$ reduces to
@@ -335,7 +335,7 @@ with a sign pattern satisfying $\epsilon_1\epsilon_2\epsilon_3 = +1$. This is th
 | Physical process | Single measurement | Evolution | Successive measurements | Singlet measurement | Reduced state | Correlation function |
 | Structural object | Idempotent + idempotent | Idempotent + $*$-unitary | Sequence of idempotents | Idempotent in $\mathbb{B}\otimes\mathbb{B}$ | Partial trace | Bell idempotents |
 | Rule used | Trace formula | Trace formula + rotor conjugation | Product of trace formulas | Tensor-product trace formula | Partial trace + trace formula | Tensor-product trace reading of the Hermitian form |
-| Result | $\cos^2(\theta/2)$ | $(\hbar/2)\cos(\omega_L t')$ | $\cos^2(\theta_1/2)\cos^2((\theta_2-\theta_1)/2)$ | $(1/4)(1 - \vec u_x\cdot\vec u_y)$ | $\tilde{Ϛ}_1 = \tfrac{1}{2}e_t$ | $E = -\sum_j \epsilon_j a_j b_j$ |
+| Result | $\cos^2(\theta/2)$ | $(\hbar/2)\cos(\omega_L r'_t)$ | $\cos^2(\theta_1/2)\cos^2((\theta_2-\theta_1)/2)$ | $(1/4)(1 - \vec u_x\cdot\vec u_y)$ | $\tilde{Ϛ}_1 = \tfrac{1}{2}e_t$ | $E = -\sum_j \epsilon_j a_j b_j$ |
 
 ## Summary
 

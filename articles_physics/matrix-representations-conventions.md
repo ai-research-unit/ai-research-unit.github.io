@@ -832,7 +832,7 @@ $$
 $$
 and §*The Legacy Pauli Gamma Formulation* prints the $\mathbb{M}_-$ arrays: the $\mathbb{B}$-frame ones follow by multiplying the three spatial generators by $i$, which replaces $iL_{\vec e_k}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}}$ by $-L_{\vec e_k}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}}$ and leaves $iR_{\vec e_x}^{\mathrm{axf}}$ unchanged.
 
-The d'Alembertian is one operator, $\Box=\partial^2/\partial Q_t^2+\Delta_Q=\Delta-\partial^2/\partial x_0^2$, and only its reading in the frame changes. A frame display in the series is in the $\mathbb{M}_-$ frame unless it says otherwise. The other uses of the word are not coordinate frames: the five generators are the image of the Clifford map and are not a coordinate frame, the **axis-free** and **Peirce** frames are the two bases that fix the matrix display, and a **rest frame** is a physical observer.
+The d'Alembertian is one operator, $\Box=\partial^2/\partial R_t^2+\Delta_Q=\Delta-\partial^2/\partial x_0^2$, and only its reading in the frame changes. A frame display in the series is in the $\mathbb{M}_-$ frame unless it says otherwise. The other uses of the word are not coordinate frames: the five generators are the image of the Clifford map and are not a coordinate frame, the **axis-free** and **Peirce** frames are the two bases that fix the matrix display, and a **rest frame** is a physical observer.
 
 **The slash is not used.** The Dirac slash is not part of the notation of the corpus. A contraction is written out with the index repeated in the same position, as the cell sum below for a momentum. No index is raised or lowered and no metric tensor enters: the metric of the series is the sign vector $\varepsilon$ inside the product, and $Q_t=i c r'_t$ is substituted only on the material sector $\mathbb{M}_-$. A multi-slot object is written with every slot low, in the order of its definition: row or output first, column or input second; a tetrad is frame first, world second, and a structure constant is output first. An inverse matrix is written $X^{-1}$, so the inverse metric is $(g^{-1})_{\mu\nu}$ and never a second symbol $g_{\mu\nu}$. In both frames the momentum contraction is a cell sum,
 $$
@@ -937,7 +937,7 @@ $$
 $$
 and Clifford reversal, $\mathrm{rev}(\gamma_{\mu_1}\cdots\gamma_{\mu_k})=\gamma_{\mu_k}\cdots\gamma_{\mu_1}$, is quaternion conjugation under the reading.
 
-**The contractions.** In gamma notation a momentum contraction is $\sum_\mu \gamma_\mu p_\mu=i(L_{e_t}^{\mathrm{pau}}R_{\vec e_x}^{\mathrm{pau}}p_t+L_{\vec e_x}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}}p_x+L_{\vec e_y}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}}p_y+L_{\vec e_z}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}}p_z)$, a derivative contraction is $i\sum_\mu \gamma_\mu\partial/\partial x_\mu$ with $x_0=q'_t$, and the same contraction in the $\mathbb{B}$ coordinate is $\sum_\mu \gamma_\mu\partial/\partial Q_\mu$. The two differ by the coordinate, $Q_t=ix_0$, and not by the matrices: $\partial/\partial x_\mu$ and $\partial/\partial Q_\mu$ already name the frame, so the array needs no label to say which is meant. The axis-free spelling of the same sums is the one with the $\mathrm{axf}$ cells, and it is the one the body writes.
+**The contractions.** In gamma notation a momentum contraction is $\sum_\mu \gamma_\mu p_\mu=i(L_{e_t}^{\mathrm{pau}}R_{\vec e_x}^{\mathrm{pau}}p_t+L_{\vec e_x}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}}p_x+L_{\vec e_y}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}}p_y+L_{\vec e_z}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}}p_z)$, a derivative contraction is $i\sum_\mu \gamma_\mu\partial/\partial x_\mu$ with $x_0=q'_t$, and the same contraction in the $\mathbb{B}$ coordinate is $\sum_\mu \gamma_\mu\partial/\partial R_\mu$. The two differ by the coordinate, $Q_t=ix_0$, and not by the matrices: $\partial/\partial x_\mu$ and $\partial/\partial R_\mu$ already name the frame, so the array needs no label to say which is meant. The axis-free spelling of the same sums is the one with the $\mathrm{axf}$ cells, and it is the one the body writes.
 
 Over $\mathbb{R}$ the products of the five span $\mathrm{Cl}_{1,3}(\mathbb{R})\cong M_2(\mathbb{H})$ and the cells span $\mathrm{Cl}_{3,1}(\mathbb{R})\cong M_4(\mathbb{R})$.
 
@@ -1022,7 +1022,7 @@ $$
 $$
 and the trace factorises over the two factors,
 $$
-\operatorname{Tr}(x\otimes y)=\operatorname{Tr}(x)\,\operatorname{Tr}(y),\qquad
+\operatorname{Tr}(r_x\otimes r_y)=\operatorname{Tr}(r_x)\,\operatorname{Tr}(r_y),\qquad
 \operatorname{Tr}(e_t)=2,\qquad \operatorname{Tr}(\vec e_k)=0 .
 $$
 A subscript names the factor it traces, $\operatorname{Tr}_\mathbb{B}(e_t)=2$ and $\operatorname{Tr}_\mathbb{B}(\vec e_k)=0$, and an unsubscripted $\operatorname{Tr}$ on $\mathbb{B}\otimes\mathbb{B}$ is the trace of the $4\times4$ image: on the units $\operatorname{Tr}(e_t\otimes e_t)=4$ and $\operatorname{Tr}(\vec e_j\otimes\vec e_k)=0$. The two-qubit arena of the exercises is this algebra and is read with this trace; it needs no second trace convention.

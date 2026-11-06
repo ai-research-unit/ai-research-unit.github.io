@@ -117,14 +117,14 @@ The dimension count makes the same point. $\dim_\mathbb{C}M_2(\mathbb{C})=4=\dim
 
 ## Microcausality: The Equal-Time Brackets
 
-The operator-level content of the theorem is a computation with the parents' free field. Every derivative of the field in this article is the corpus gradient $\tilde\nabla$ or its conjugate $\tilde\nabla^{\natural}$ of *Operator and Calculus Conventions*, §*The Gradient*, with $\Box=\tilde\nabla\tilde\nabla^{\natural}$ the d'Alembertian there; on the material sector $\partial/\partial Q_t=-(i/c)\,\partial/\partial t'$, so $\Box=\Delta_Q-c^{-2}\partial^2/\partial t'^2$. No other derivative operator is written.
+The operator-level content of the theorem is a computation with the parents' free field. Every derivative of the field in this article is the corpus gradient $\tilde\nabla$ or its conjugate $\tilde\nabla^{\natural}$ of *Operator and Calculus Conventions*, §*The Gradient*, with $\Box=\tilde\nabla\tilde\nabla^{\natural}$ the d'Alembertian there; on the material sector $\partial/\partial R_t=-(i/c)\,\partial/\partial r'_t$, so $\Box=\Delta_Q-c^{-2}\partial^2/\partial r'_t^2$. No other derivative operator is written.
 
 The field is the element-valued map $\tilde{Ξ}^{\mathrm{fop}}:\mathbb{R}^{1,3}\to\mathbb{B}$ of *Canonical Quantization of the Biquaternion Dirac Field*, with the mode expansion
 
 $$
-\tilde{Ξ}^{\mathrm{fop}}(X,t')=\int\!\frac{d^3p}{(2\pi)^3}\,\frac{1}{\sqrt{2E_{\vec p}}}
-\sum_{r=1}^{2}\Big[a^{\mathrm{fop}}_r(\vec p)\,\tilde{Ξ}^{\mathrm{sp}(r)}_{+}(\vec p)\,\exp(-ip\cdot x)
-+b^{\mathrm{fop}\dagger}_r(\vec p)\,\tilde{Ξ}^{\mathrm{sp}(r)}_{-}(\vec p)\,\exp(+ip\cdot x)\Big],
+\tilde{Ξ}^{\mathrm{fop}}(X,r'_t)=\int\!\frac{d^3p}{(2\pi)^3}\,\frac{1}{\sqrt{2E_{\vec p}}}
+\sum_{r=1}^{2}\Big[a^{\mathrm{fop}}_r(\vec p)\,\tilde{Ξ}^{\mathrm{sp}(r)}_{+}(\vec p)\,\exp(-ip\cdot r_x)
++b^{\mathrm{fop}\dagger}_r(\vec p)\,\tilde{Ξ}^{\mathrm{sp}(r)}_{-}(\vec p)\,\exp(+ip\cdot r_x)\Big],
 $$
 
 where $\tilde{Ξ}^{\mathrm{sp}(r)}_{\pm}(\vec p)$ are the parent's positive- and negative-frequency amplitudes, elements of $\mathbb{B}$, and $\tilde{Ξ}^{\mathrm{fop}\dagger}$ is the Hermitian conjugate.
@@ -139,7 +139,7 @@ $$
 the mass being the off-diagonal coupling of the two halves. On the single element that carries the four complex components of the field it is one two-sided action, written with both elements in position:
 
 $$
-\mathbb{D}:\ \tilde X\longmapsto-\frac{\partial\tilde X}{\partial t'}\vec e_x-\sum_k\vec e_k\frac{\partial\tilde X}{\partial Q_k}\vec e_y .
+\mathbb{D}:\ \tilde X\longmapsto-\frac{\partial\tilde X}{\partial r'_t}\vec e_x-\sum_k\vec e_k\frac{\partial\tilde X}{\partial R_k}\vec e_y .
 $$
 
 The time term carries $e_t$ on the left, and $e_t$ is the unit, so that term is a single right multiplication by $\vec e_x$; each spatial term carries $\vec e_k$ on the left and $\vec e_y$ on the right, so the spatial part is genuinely two-sided and is the multiplication by no single element. Both elements stand in position in the display, and the operator is never written as a product of two one-sided symbols: a single glyph for the pair of one-sided factors would hide exactly the information the computation below uses. On a plane wave the same operator has the symbol
@@ -150,7 +150,7 @@ $$
 \mathbb{D}_p^2=p_0^2-|\vec p|^2=m^2,
 $$
 
-because $\exp(-ip\cdot x)$ gives $-iE_{\vec p}$ to the time derivative and $+ip_k$ to the spatial ones. The glyph is the pair operator's, of *Operator and Calculus Conventions*: on the pair it is $\mathbb{D}(\tilde{Ξ}^{\mathrm{sp}}_R,\tilde{Ξ}^{\mathrm{sp}}_L)=(\tilde\nabla\tilde{Ξ}^{\mathrm{sp}}_R,\tilde\nabla^{\natural}\tilde{Ξ}^{\mathrm{sp}}_L)$ with $\mathbb{D}^2=\Box I$, and on one element, which is how the equal-time computation uses it, it is the coordinate form above with $\mathbb{D}^2=\Box$. The square is scalar: the cross terms cancel because left and right multiplications commute, the time term contributes $-\partial^2/\partial t'^2$, and the spatial terms contribute $+\Delta_Q$ because $\vec e_y^2=-e_t$ and $\vec e_k\vec e_l+\vec e_l\vec e_k=-2\delta_{kl}e_t$. Verified on the symbol at random momenta, with $p^2=p_0^2-|\vec p|^2$: $\mathbb{D}_p^2-p^2I$ to $2.7\times10^{-15}$.
+because $\exp(-ip\cdot x)$ gives $-iE_{\vec p}$ to the time derivative and $+ip_k$ to the spatial ones. The glyph is the pair operator's, of *Operator and Calculus Conventions*: on the pair it is $\mathbb{D}(\tilde{Ξ}^{\mathrm{sp}}_R,\tilde{Ξ}^{\mathrm{sp}}_L)=(\tilde\nabla\tilde{Ξ}^{\mathrm{sp}}_R,\tilde\nabla^{\natural}\tilde{Ξ}^{\mathrm{sp}}_L)$ with $\mathbb{D}^2=\Box I$, and on one element, which is how the equal-time computation uses it, it is the coordinate form above with $\mathbb{D}^2=\Box$. The square is scalar: the cross terms cancel because left and right multiplications commute, the time term contributes $-\partial^2/\partial r'_t^2$, and the spatial terms contribute $+\Delta_Q$ because $\vec e_y^2=-e_t$ and $\vec e_k\vec e_l+\vec e_l\vec e_k=-2\delta_{kl}e_t$. Verified on the symbol at random momenta, with $p^2=p_0^2-|\vec p|^2$: $\mathbb{D}_p^2-p^2I$ to $2.7\times10^{-15}$.
 
 The parents' spin sums are the two completeness identities
 
@@ -181,7 +181,7 @@ $$
 The time part of $\mathbb{D}_p$ gives $iE_{\vec p}(\tilde{Ξ} i\vec e_x)\vec e_x=E_{\vec p}\tilde{Ξ}$, because $i\vec e_x\,i\vec e_x=i^2\vec e_x^2=e_t$; it is even in $\vec p$, and so is $\cos\theta$. The spatial part $-i\sum_kp_k\vec e_k(\tilde{Ξ} i\vec e_x)\vec e_y$ and the mass term $2im\sin\theta(\tilde{Ξ} i\vec e_x)$ are odd, because $\sin\theta$ and $p_k$ are. The odd terms vanish under symmetric integration. Division by $2E_{\vec p}$ leaves $\cos\theta$ times the identity on the test element, which integrates to $\delta^{(3)}(\vec\Delta)$, so the equal-time relation is the component statement
 
 $$
-\boxed{\;\{\tilde{Ξ}^{\mathrm{fop}}_\mu(X,t'),\tilde{Ξ}^{\mathrm{fop}\dagger}_\nu(Y,t')\}=\delta_{\mu\nu}\,\delta^{(3)}(\vec\Delta)\;},
+\boxed{\;\{\tilde{Ξ}^{\mathrm{fop}}_\mu(X,r'_t),\tilde{Ξ}^{\mathrm{fop}\dagger}_\nu(Y,r'_t)\}=\delta_{\mu\nu}\,\delta^{(3)}(\vec\Delta)\;},
 $$
 
 the indices $\mu,\nu$ running over the four units, and the anticommutator is local. Parity in $\vec p$ decides what survives: the time part of $\mathbb{D}_p$ is even and remains, the spatial part and the mass term are odd and cancel.
@@ -203,7 +203,7 @@ $$
 Integrating with $\int\frac{d^3p}{(2\pi)^3}\,\frac{\cos\theta}{E_{\vec p}}=F(\vec\Delta)$ and $\int\frac{d^3p}{(2\pi)^3}\,\frac{p_k\sin\theta}{E_{\vec p}}=-\nabla_kF$, and using $(\tilde{Ξ}\,i\vec e_x)\vec e_y=i\tilde{Ξ}\vec e_z$, leaves
 
 $$
-[\tilde{Ξ}^{\mathrm{fop}}(X,t'),\tilde{Ξ}^{\mathrm{fop}\dagger}(Y,t')]\,\tilde{Ξ}
+[\tilde{Ξ}^{\mathrm{fop}}(X,r'_t),\tilde{Ξ}^{\mathrm{fop}\dagger}(Y,r'_t)]\,\tilde{Ξ}
 =i\,mF(\vec\Delta)\,\tilde{Ξ}\vec e_x-i\sum_k\vec e_k\,\tilde{Ξ}\vec e_z\,\nabla_kF(\vec\Delta),
 \qquad
 F(\vec\Delta)=\int\!\frac{d^3p}{(2\pi)^3}\,\frac{1}{E_{\vec p}}\cos(\vec p\cdot\vec\Delta),
@@ -318,7 +318,7 @@ What the framework establishes is that the two pairings which survive the theore
 | $(-1)^F=i\vec e_z=e_t-2\tilde\Pi_-=2\tilde S_z/\hbar$ | Fermion parity; Hermitian involution in $\mathbb{M}_+$ |
 | $\{\vec\Upsilon_x,\vec\Upsilon_y\}=e_t$, $[\vec\Upsilon_x,\vec\Upsilon_y]=i\vec e_z$ | Fermionic mode relation; failure of the bosonic relation |
 | $\tilde\nabla$, $\tilde\nabla^{\natural}$, $\Box=\tilde\nabla\tilde\nabla^{\natural}$ | Corpus gradient, its quaternion conjugate and the d'Alembertian (*Operator and Calculus Conventions*, §*The Gradient*) |
-| $\mathbb{D}\tilde X=-\partial\tilde X/\partial t'\,\vec e_x-\sum_k\vec e_k\,\partial\tilde X/\partial Q_k\,\vec e_y$ | Pair operator on one element (coordinate form); the time term is a single right multiplication, the spatial terms two-sided; $\mathbb{D}^2=\Box$ |
+| $\mathbb{D}\tilde X=-\partial\tilde X/\partial r'_t\,\vec e_x-\sum_k\vec e_k\,\partial\tilde X/\partial R_k\,\vec e_y$ | Pair operator on one element (coordinate form); the time term is a single right multiplication, the spatial terms two-sided; $\mathbb{D}^2=\Box$ |
 | $\mathbb{D}_p\tilde X=iE_{\vec p}\tilde X\vec e_x-i\sum_k p_k\vec e_k\tilde X\vec e_y$ | Symbol of the same operator on a plane wave; $\mathbb{D}_p^2=p_0^2-\lvert\vec p\rvert^2=m^2$ |
 | $\nabla_k=\partial/\partial\Delta_k$ | Gradient with respect to the spatial separation |
 | $\tilde{Ξ}^{\mathrm{fop}}$, $\bar{\tilde{Ξ}}^{\mathrm{sp}}^{\mathrm{fop}}=\tilde{Ξ}^{\mathrm{fop}\dagger}i\vec e_x$ | Quantized element-valued Dirac field and its Dirac adjoint, $\bar{\tilde{Ξ}}^{\mathrm{sp}}X=\mathrm{Sc}(\tilde{Ξ}^{\mathrm{sp}*}iX\vec e_x)$ |

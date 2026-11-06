@@ -2,7 +2,7 @@
 
 ## Introduction
 
-The local complex structure of the framework attaches one number to the algebraic imaginary-time direction: the local speed of light $c=1/\sqrt{\epsilon\mu}$. The imaginary phase is the algebra's fixed $i$, the scale is $c$, and the map $t'\mapsto i\,c\,t'\,e_t$ is what turns "the temporal direction is imaginary" into a statement about lengths. The positivity of $c$ is what makes it a rescaling of the imaginary axis rather than a rotation of it (*The Local Complex Structure and the Speed of Light*).
+The local complex structure of the framework attaches one number to the algebraic imaginary-time direction: the local speed of light $c=1/\sqrt{\epsilon\mu}$. The imaginary phase is the algebra's fixed $i$, the scale is $c$, and the map $r'_t\mapsto i\,c\,r'_t\,e_t$ is what turns "the temporal direction is imaginary" into a statement about lengths. The positivity of $c$ is what makes it a rescaling of the imaginary axis rather than a rotation of it (*The Local Complex Structure and the Speed of Light*).
 
 Thermodynamics attaches a second number to the same direction. The KMS condition says that the correlation functions of a thermal state at inverse temperature
 $$
@@ -22,9 +22,9 @@ Throughout, the algebra is $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ w
 
 Two ingredients of the local complex structure are used below, and it is worth separating them because the thermal structure will have an analogue of one and not of the other.
 
-**The phase.** The imaginary unit is the algebra's own $i$, central, with $i^2=-1$. It is the same at every point, and it is what supplies the minus sign of the Minkowski interval: the $i^2$ of $(ic\,dt')^2$ is the signature. Nothing physical follows from the phase alone.
+**The phase.** The imaginary unit is the algebra's own $i$, central, with $i^2=-1$. It is the same at every point, and it is what supplies the minus sign of the Minkowski interval: the $i^2$ of $(ic\,dr'_t)^2$ is the signature. Nothing physical follows from the phase alone.
 
-**The scale.** The one free number is $c$. It is what makes the statement "the temporal direction is imaginary" dimensionally meaningful, because $i c r'_t$ is a length and $t'$ is a time. It is local, $c=c(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)$ in an inhomogeneous medium, and the structure is global only in the limit in which $c$ is constant. The metric it induces is $g=\mathrm{diag}(-c^2,1,1,1)$.
+**The scale.** The one free number is $c$. It is what makes the statement "the temporal direction is imaginary" dimensionally meaningful, because $i c r'_t$ is a length and $r'_t$ is a time. It is local, $c=c(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)$ in an inhomogeneous medium, and the structure is global only in the limit in which $c$ is constant. The metric it induces is $g=\mathrm{diag}(-c^2,1,1,1)$.
 
 The formal shape to carry away is: **a fixed algebraic direction, plus one real positive scale attached to it locally**. The scale is real and positive so that it rescales the imaginary axis rather than rotating it; the structure is pointwise rather than holomorphic; and it requires a scale, since without one the statement "the temporal direction is imaginary" has no metric content.
 
@@ -32,9 +32,9 @@ The formal shape to carry away is: **a fixed algebraic direction, plus one real 
 
 The KMS condition is a statement about the *same* algebraic direction, and its scale is $\beta$. Three facts fix the parallel.
 
-**The direction is the algebraic one.** The KMS strip is a strip in the *complex* time plane, and the direction along which the correlation functions are continued is the imaginary one — the direction of $i c r'_t$ in the material sector, spanned by the coefficient $i c r'_t$ that is imaginary by construction (*The KMS Condition and the Biquaternion Framework*). The shift $t'\mapsto t'+i\beta$ moves the real parameter along that algebraic direction.
+**The direction is the algebraic one.** The KMS strip is a strip in the *complex* time plane, and the direction along which the correlation functions are continued is the imaginary one — the direction of $i c r'_t$ in the material sector, spanned by the coefficient $i c r'_t$ that is imaginary by construction (*The KMS Condition and the Biquaternion Framework*). The shift $r'_t\mapsto r'_t+i\beta$ moves the real parameter along that algebraic direction.
 
-**The period is $\beta$, and the length is $c\beta$.** The imaginary-time direction is compact with circumference $\beta$ *in the coordinate $t'$*, so the thermal circle has circumference $c\beta=\hbar c/(k_BT)$ in the material sector's units. The identity
+**The period is $\beta$, and the length is $c\beta$.** The imaginary-time direction is compact with circumference $\beta$ *in the coordinate $r'_t$*, so the thermal circle has circumference $c\beta=\hbar c/(k_BT)$ in the material sector's units. The identity
 $$
 \boxed{\;c\beta=\frac{\hbar c}{k_BT}\;}
 $$
@@ -88,7 +88,7 @@ is fixed by the local surface gravity of the horizon. Both read the same scale $
 
 The thermal structure and the framework's Euclidean continuation are two readings of one direction, and neither needs the other. This is worth stating carefully, because the thermal partition function is usually reached by a Wick rotation.
 
-**The standard route, quoted.** The usual treatment continues the real time, $\tau=it'$ with $t'=-i\tau$: the imaginary time coordinate $i c r'_t$ becomes the real $c\tau$, and the Euclidean formulation of thermal field theory is the theory on the compactified rotated direction with period $\beta$ (*Interpretation of the Wick Rotation in the Biquaternion Universe*). The central rotation $t'\mapsto \exp(i\theta)t'$ is the same generator read on the time coordinate (*Special Element Conventions*, §*The Central Map and Its Restrictions*). This is correct and standard.
+**The standard route, quoted.** The usual treatment continues the real time, $\tau=ir'_t$ with $r'_t=-i\tau$: the imaginary time coordinate $i c r'_t$ becomes the real $c\tau$, and the Euclidean formulation of thermal field theory is the theory on the compactified rotated direction with period $\beta$ (*Interpretation of the Wick Rotation in the Biquaternion Universe*). The central rotation $r'_t\mapsto \exp(i\theta)r'_t$ is the same generator read on the time coordinate (*Special Element Conventions*, §*The Central Map and Its Restrictions*). This is correct and standard.
 
 **The alternative route, which needs no rotation.** The construction can stay in the material sector, because the direction is already imaginary there and the positivity is the Hermitian form's. The wave biquaternion is kept as $\tilde{P}_E = i\omega_n e_t+\vec p\in\mathbb{M}_-$, where the Hermitian form is $\langle\tilde{Q}_1,\tilde{Q}_2\rangle_{*} = \mathrm{Sc}(\tilde{Q}_1\tilde{Q}_2^{*}) = \sum_\mu Q_{1\mu}\overline{Q_{2\mu}}$, and $\langle\tilde{P}_E,\tilde{P}_E\rangle_{*} = \omega_n^2+\vec p^2 = k_E^2 \ge 0$, where the biquaternion norm of the same element is indefinite; the two routes agree by the identity $\langle i\omega_n e_t+\vec p,\,i\omega_n e_t+\vec p\rangle_{*} = \langle -\omega_n e_t+\vec p\rangle_{\natural}$ (*The Matsubara Thermal Formalism in Biquaternionic Form*). What the temperature fixes is then not a rotation but a period.
 

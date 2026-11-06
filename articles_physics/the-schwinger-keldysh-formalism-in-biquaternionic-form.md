@@ -34,9 +34,9 @@ The formalism begins with a contour and produces a doubling; the doubling is wha
 
 **The contour.** The **closed-time path** $\mathcal{C}$ runs along the real time axis from $-\infty$ to $+\infty$ and then back from $+\infty$ to $-\infty$, with a possible excursion into the imaginary direction. Writing the two legs as $\mathcal{C}_+$ and $\mathcal{C}_-$, the field is defined on each leg separately:
 $$
-\tilde{Ξ}_+(r'_t, r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z) \equiv \tilde{Ξ}(r'_t, r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)\big|_{t'\in\mathcal{C}_+},
+\tilde{Ξ}_+(r'_t, r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z) \equiv \tilde{Ξ}(r'_t, r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)\big|_{r'_t\in\mathcal{C}_+},
 \qquad
-\tilde{Ξ}_-(r'_t, r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z) \equiv \tilde{Ξ}(r'_t, r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)\big|_{t'\in\mathcal{C}_-}.
+\tilde{Ξ}_-(r'_t, r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z) \equiv \tilde{Ξ}(r'_t, r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)\big|_{r'_t\in\mathcal{C}_-}.
 $$
 The generating functional is
 $$
@@ -138,7 +138,7 @@ the **fluctuation–dissipation relation**. With the model retarded and advanced
 
 **Centrality and the framework.** The thermal factor $\coth(\beta\omega/2)$ is a central scalar, so the fluctuation–dissipation relation multiplies every component of the module structure identically: the relation is diagonal in the module and in the sector index. Consequently, for a scalar biquaternion field the equilibrium CTP structure factorizes into the two sectors, and each sector carries the same thermal factor; for a spinor field the factor is still central but the difference $G^R-G^A$ is a matrix, and the relation is a matrix proportionality rather than a scalar one.
 
-**Where the thermal factor comes from.** It comes from the state, not the algebra: the KMS condition at inverse temperature $\beta$ — the analyticity of $G$ in the strip $0<\mathrm{Im}\,t'<\beta$ and the boundary relation $G(t'+i\beta)=G(-t')$ — is what forces the coefficient to be $\coth(\beta\omega/2)$. The framework houses the strip as the complexified material direction; the value of $\beta$ is an input, exactly as in the Matsubara article.
+**Where the thermal factor comes from.** It comes from the state, not the algebra: the KMS condition at inverse temperature $\beta$ — the analyticity of $G$ in the strip $0<\mathrm{Im}\,r'_t<\beta$ and the boundary relation $G(r'_t+i\beta)=G(-r'_t)$ — is what forces the coefficient to be $\coth(\beta\omega/2)$. The framework houses the strip as the complexified material direction; the value of $\beta$ is an input, exactly as in the Matsubara article.
 
 ## Relation to Matsubara and to the Thermal States
 

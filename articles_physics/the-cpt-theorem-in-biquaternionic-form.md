@@ -8,17 +8,17 @@ This article asks what the biquaternion framework supplies for the theorem. The 
 
 **The operator, fixed once.** Every derivative in this article is the biquaternionic gradient of *Operator and Calculus Conventions*, §*The Gradient*,
 $$
-\tilde\nabla=e_t\frac{\partial}{\partial Q_t}+\vec e_x\frac{\partial}{\partial Q_x}+\vec e_y\frac{\partial}{\partial Q_y}+\vec e_z\frac{\partial}{\partial Q_z},
+\tilde\nabla=e_t\frac{\partial}{\partial R_t}+\vec e_x\frac{\partial}{\partial R_x}+\vec e_y\frac{\partial}{\partial R_y}+\vec e_z\frac{\partial}{\partial R_z},
 $$
 
 with its quaternion conjugate and the scalar d'Alembertian
 $$
-\tilde\nabla^{\natural}=e_t\frac{\partial}{\partial Q_t}-\vec e_x\frac{\partial}{\partial Q_x}-\vec e_y\frac{\partial}{\partial Q_y}-\vec e_z\frac{\partial}{\partial Q_z},
+\tilde\nabla^{\natural}=e_t\frac{\partial}{\partial R_t}-\vec e_x\frac{\partial}{\partial R_x}-\vec e_y\frac{\partial}{\partial R_y}-\vec e_z\frac{\partial}{\partial R_z},
 \qquad
-\Box=\tilde\nabla\tilde\nabla^{\natural}=\tilde\nabla^{\natural}\tilde\nabla=\frac{\partial^2}{\partial Q_t^2}+\Delta_Q,
+\Box=\tilde\nabla\tilde\nabla^{\natural}=\tilde\nabla^{\natural}\tilde\nabla=\frac{\partial^2}{\partial R_t^2}+\Delta_Q,
 $$
 
-the last read on the material sector $\mathbb{M}_-$, where $Q_t=i c r'_t$, as $\Delta-c^{-2}\partial^2/\partial t'^2$. The gradient is an element with derivative coefficients, it acts by **left** multiplication, and no other action of it is meant anywhere below. No second derivative operator is introduced, and no list of generators is used.
+the last read on the material sector $\mathbb{M}_-$, where $Q_t=i c r'_t$, as $\Delta-c^{-2}\partial^2/\partial r'_t^2$. The gradient is an element with derivative coefficients, it acts by **left** multiplication, and no other action of it is meant anywhere below. No second derivative operator is introduced, and no list of generators is used.
 
 **The field, its two members and the pair.** The field is one element $\tilde{Ξ}^{\mathrm{sp}}=\tilde{Ξ}^{\mathrm{sp}}_L+\tilde{Ξ}^{\mathrm{sp}}_R$ of $\mathbb{B}$, and the dynamics is the **chiral pair**
 $$
@@ -34,7 +34,7 @@ $$
 
 and that operator is the two lines written once, not a new object. The pair cannot be shortened to one equation on one member, because the square of the gradient is not scalar: $e_t$ commutes with the spatial units and the mixed derivatives add,
 $$
-\tilde\nabla^2=\frac{\partial^2}{\partial Q_t^2}-\Delta_Q+2e_t\sum_k\vec e_k\frac{\partial^2}{\partial Q_t\partial Q_k},
+\tilde\nabla^2=\frac{\partial^2}{\partial R_t^2}-\Delta_Q+2e_t\sum_k\vec e_k\frac{\partial^2}{\partial R_t\partial R_k},
 $$
 
 whose last term is a pure vector. The free equation therefore stays first order in one member, $\tilde\nabla\tilde{Ξ}^{\mathrm{sp}}_R=0$, the massive equation is the pair, and this algebra carries no one-field first-order massive equation.
@@ -53,12 +53,12 @@ The division between what is established and what is only transcribed is kept ex
 - **Established, and recomputed below.** The field's conjugation is the algebra's conjugation of the coefficients, $J=\bar{\cdot}$, an anti-linear involution and an automorphism, $\overline{ab}=\bar a\,\bar b$, applied to the field value at each point. The three operations on the pair are
     $$
     C[\tilde{Ξ}^{\mathrm{sp}}]=\bigl(-\tilde{Ξ}^{\mathrm{sp}J}_R,\ \tilde{Ξ}^{\mathrm{sp}J}_L\bigr),\qquad
-    P[\tilde{Ξ}^{\mathrm{sp}}](t',\vec x)=\bigl(\tilde{Ξ}^{\mathrm{sp}}_R(t',-\vec x),\ \tilde{Ξ}^{\mathrm{sp}}_L(t',-\vec x)\bigr),
+    P[\tilde{Ξ}^{\mathrm{sp}}](r'_t,\vec r)=\bigl(\tilde{Ξ}^{\mathrm{sp}}_R(r'_t,-\vec r),\ \tilde{Ξ}^{\mathrm{sp}}_L(r'_t,-\vec r)\bigr),
     $$
     $$
-    T[\tilde{Ξ}^{\mathrm{sp}}](t',\vec x)=\bigl(\tilde{Ξ}^{\mathrm{sp}J}_L(-t',\vec x),\ \tilde{Ξ}^{\mathrm{sp}J}_R(-t',\vec x)\bigr),
+    T[\tilde{Ξ}^{\mathrm{sp}}](r'_t,\vec r)=\bigl(\tilde{Ξ}^{\mathrm{sp}J}_L(-r'_t,\vec r),\ \tilde{Ξ}^{\mathrm{sp}J}_R(-r'_t,\vec r)\bigr),
     $$
-    with $\vec x=r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z$. $C$ and $P$ **exchange the two entries**; $T$ **keeps them**. $C$ carries the internal factor $\Gamma$ and $T$ carries none, so the factor belongs to the operation that conjugates and exchanges at once and not to the time reversal. Each operation maps every solution of the pair to a solution, verified on the differential equation itself at three on-shell momenta and on sixteen coefficient choices per momentum, at residual $7.6\times10^{-15}$ or smaller. $C$ and $T$ are anti-linear, $C[i\tilde{Ξ}^{\mathrm{sp}}]=-i\,C[\tilde{Ξ}^{\mathrm{sp}}]$ and $T[i\tilde{Ξ}^{\mathrm{sp}}]=-i\,T[\tilde{Ξ}^{\mathrm{sp}}]$, and $P$ is linear; the operator induced on the mode algebra by $T$ is anti-unitary and the one induced by $C$ is unitary, which is transcribed. The composition
+    with $\vec r=r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z$. $C$ and $P$ **exchange the two entries**; $T$ **keeps them**. $C$ carries the internal factor $\Gamma$ and $T$ carries none, so the factor belongs to the operation that conjugates and exchanges at once and not to the time reversal. Each operation maps every solution of the pair to a solution, verified on the differential equation itself at three on-shell momenta and on sixteen coefficient choices per momentum, at residual $7.6\times10^{-15}$ or smaller. $C$ and $T$ are anti-linear, $C[i\tilde{Ξ}^{\mathrm{sp}}]=-i\,C[\tilde{Ξ}^{\mathrm{sp}}]$ and $T[i\tilde{Ξ}^{\mathrm{sp}}]=-i\,T[\tilde{Ξ}^{\mathrm{sp}}]$, and $P$ is linear; the operator induced on the mode algebra by $T$ is anti-unitary and the one induced by $C$ is unitary, which is transcribed. The composition
     $$
     \mathrm{CPT}=C\circ P\circ T,\qquad \mathrm{CPT}[\tilde{Ξ}^{\mathrm{sp}}](x)=\bigl(-\tilde{Ξ}^{\mathrm{sp}}_L,\tilde{Ξ}^{\mathrm{sp}}_R\bigr)(-x),
     $$
@@ -87,7 +87,7 @@ $$
 
 **The pair operator.** The two members are one operator on the pair, $\mathbb{D}(\tilde{Ξ}^{\mathrm{sp}}_L,\tilde{Ξ}^{\mathrm{sp}}_R)=(\tilde\nabla\tilde{Ξ}^{\mathrm{sp}}_R,\tilde\nabla^{\natural}\tilde{Ξ}^{\mathrm{sp}}_L)$, with $\mathbb{D}^2=\Box I$ because the two compositions $\tilde\nabla\tilde\nabla^{\natural}$ and $\tilde\nabla^{\natural}\tilde\nabla$ are both the same scalar. The massive equation is $(\mathbb{D}-m)\tilde{Ξ}^{\mathrm{sp}}=0$, and its two components are the pair. Nothing else is meant by a two-sided operator in this article: the operator is the pair written once, it contains no matrix generator, and its carrier is the pair $(\tilde{Ξ}^{\mathrm{sp}}_L,\tilde{Ξ}^{\mathrm{sp}}_R)\in\mathbb{B}\oplus\mathbb{B}$.
 
-**The plane wave.** On $e^{-ip\cdot x}$ with $p\cdot x=E_{\vec p}t'-\vec p\cdot\vec x$, the gradient acts by left multiplication by its symbol
+**The plane wave.** On $e^{-ip\cdot x}$ with $p\cdot r_x=E_{\vec p}r'_t-\vec p\cdot\vec r$, the gradient acts by left multiplication by its symbol
 $$
 \tilde K=-E_{\vec p}\,e_t+i\vec p,\qquad
 \tilde K^{\natural}=-E_{\vec p}\,e_t-i\vec p,\qquad
@@ -110,7 +110,7 @@ Let $\tilde{Ξ}^{\mathrm{sp}}$ solve the pair, with $m$ the mass. A discrete ope
 
 The test is a substitution, and one convention must be fixed before it can be made. **The conjugation here is applied to the field value at each point**, $J[\tilde{Ξ}^{\mathrm{sp}}](x)=\overline{\tilde{Ξ}^{\mathrm{sp}}(x)}$, and every check below is made on the differential equation. That choice is what makes the factors of $C$ and $T$ determinate; read instead on the amplitudes with the plane-wave basis held fixed, the two factors change places, which is the convention trap this article records rather than hides. The composition is the same under either reading, and the next sections verify it as a composition.
 
-Under the pointwise reading the arithmetic is short. On $e^{-ip\cdot x}$ the gradient acts as $\tilde K=-E_{\vec p}e_t+i\vec p$. Conjugating the phase reverses the sign of both $E_{\vec p}$ and $\vec p$, so the conjugate branch carries the symbol of $\tilde K$ at the reversed four-momentum, namely $-\tilde K$; reflecting $t'$ alone reverses $E_{\vec p}$ and leaves $\vec p$, so that branch carries $-\tilde K^{\natural}$. These two signs are the whole of the difference between $C$ and $T$, and they are computed below rather than asserted.
+Under the pointwise reading the arithmetic is short. On $e^{-ip\cdot x}$ the gradient acts as $\tilde K=-E_{\vec p}e_t+i\vec p$. Conjugating the phase reverses the sign of both $E_{\vec p}$ and $\vec p$, so the conjugate branch carries the symbol of $\tilde K$ at the reversed four-momentum, namely $-\tilde K$; reflecting $r'_t$ alone reverses $E_{\vec p}$ and leaves $\vec p$, so that branch carries $-\tilde K^{\natural}$. These two signs are the whole of the difference between $C$ and $T$, and they are computed below rather than asserted.
 
 ### Charge conjugation
 
@@ -143,7 +143,7 @@ verified at residual $0$. The sign is not a convention: an anti-linear map resca
 
 Define
 $$
-P[\tilde{Ξ}^{\mathrm{sp}}](t',\vec x)=\bigl(\tilde{Ξ}^{\mathrm{sp}}_R(t',-\vec x),\ \tilde{Ξ}^{\mathrm{sp}}_L(t',-\vec x)\bigr).
+P[\tilde{Ξ}^{\mathrm{sp}}](r'_t,\vec r)=\bigl(\tilde{Ξ}^{\mathrm{sp}}_R(r'_t,-\vec r),\ \tilde{Ξ}^{\mathrm{sp}}_L(r'_t,-\vec r)\bigr).
 $$
 
 Only the spatial derivatives change sign, the field is not conjugated, and the two entries are exchanged. On the symbol the reflection sends $\tilde K=-E_{\vec p}e_t+i\vec p$ to $-E_{\vec p}e_t-i\vec p=\tilde K^{\natural}$, so the reflected first member is the second member at the reflected argument, and the reflected second member is the first. No internal factor is left over and none is needed: the exchange alone carries the symbol from $\tilde K$ to $\tilde K^{\natural}$, and $\tilde K^{\natural}\tilde K=m^2$ is the identity the two members are written with. The reflection squares to the identity, $P^2=\mathrm{id}$.
@@ -154,14 +154,14 @@ Parity is linear, it keeps the positive-frequency branch positive-frequency and 
 
 Define
 $$
-T[\tilde{Ξ}^{\mathrm{sp}}](t',\vec x)=\bigl(\tilde{Ξ}^{\mathrm{sp}J}_L(-t',\vec x),\ \tilde{Ξ}^{\mathrm{sp}J}_R(-t',\vec x)\bigr).
+T[\tilde{Ξ}^{\mathrm{sp}}](r'_t,\vec r)=\bigl(\tilde{Ξ}^{\mathrm{sp}J}_L(-r'_t,\vec r),\ \tilde{Ξ}^{\mathrm{sp}J}_R(-r'_t,\vec r)\bigr).
 $$
 
 The time derivative changes sign, the field is conjugated, and the two entries are **not** exchanged. No internal factor appears, and this is the point at which an article that carries over the cell formulation's assignments goes wrong: the source's frame factor sits with the wrong operation once the conjugation is applied pointwise.
 
-**Why no factor.** The conjugation and the reflection of $t'$ both reverse the sign of the $e_t$ term of the symbol, so the two reversals cancel and the reflected field stays on the branch with $E_{\vec p}$ positive, carrying $\tilde K^{\natural}$ where $\tilde\nabla$ acts and $\tilde K$ where $\tilde\nabla^{\natural}$ acts. The two symbols are exchanged relative to the original equation, and since $\tilde K\tilde K^{\natural}=m^2$ the second member is reproduced unchanged:
+**Why no factor.** The conjugation and the reflection of $r'_t$ both reverse the sign of the $e_t$ term of the symbol, so the two reversals cancel and the reflected field stays on the branch with $E_{\vec p}$ positive, carrying $\tilde K^{\natural}$ where $\tilde\nabla$ acts and $\tilde K$ where $\tilde\nabla^{\natural}$ acts. The two symbols are exchanged relative to the original equation, and since $\tilde K\tilde K^{\natural}=m^2$ the second member is reproduced unchanged:
 $$
-T:\ (\tilde{Ξ}^{\mathrm{sp}}_L,\tilde{Ξ}^{\mathrm{sp}}_R)(t',\vec x)\longmapsto\bigl(\tilde{Ξ}^{\mathrm{sp}J}_L,\ \tilde{Ξ}^{\mathrm{sp}J}_R\bigr)(-t',\vec x),\qquad T^2=\mathrm{id}.
+T:\ (\tilde{Ξ}^{\mathrm{sp}}_L,\tilde{Ξ}^{\mathrm{sp}}_R)(r'_t,\vec r)\longmapsto\bigl(\tilde{Ξ}^{\mathrm{sp}J}_L,\ \tilde{Ξ}^{\mathrm{sp}J}_R\bigr)(-r'_t,\vec r),\qquad T^2=\mathrm{id}.
 $$
 
 A relative sign is not available here. Putting $-1$ on the left entry leaves a residual of order $10^{1}$ at $m=3$, $\vec p=(1,2,2)$; carrying no factor leaves $7.1\times10^{-15}$. The factor that the cell formulation attached to time reversal is the factor that pointwise conjugation has already spent, and the reader who keeps both ends up with two.
@@ -173,15 +173,15 @@ $$
 T[i\tilde{Ξ}^{\mathrm{sp}}]=T\bigl[(i\tilde{Ξ}^{\mathrm{sp}}_L,\ i\tilde{Ξ}^{\mathrm{sp}}_R)\bigr]=\bigl((-i)\tilde{Ξ}^{\mathrm{sp}J}_L,\ (-i)\tilde{Ξ}^{\mathrm{sp}J}_R\bigr)=-i\bigl(\tilde{Ξ}^{\mathrm{sp}J}_L,\ \tilde{Ξ}^{\mathrm{sp}J}_R\bigr)=-i\,T[\tilde{Ξ}^{\mathrm{sp}}].
 $$
 
-Both $C$ and $T$ are anti-linear, and both conjugate the scalar imaginary. The difference between them appears when the field map is promoted to an operator on the mode algebra: the operator induced by $T$ is anti-unitary, while the operator induced by $C$ is unitary. The reason is that $T$ reverses the sign of the evolution phase $e^{-iHt}$, and the conjugation is what turns the reversed evolution into a symmetry; $C$ only exchanges the particle and antiparticle labels at fixed energy, so its induced operator is linear. This article constructs the field maps, so it records the anti-linearity of both and leaves the mode operators aside. The framework's single scalar imaginary $i$ — the same $i$ that appears in the gradient through $Q_t=i c r'_t$ and in the chirality $\Gamma=i\omega$ — is exactly what the conjugation negates. A time reversal written without the conjugation, as $\tilde{Ξ}^{\mathrm{sp}}\mapsto(-\tilde{Ξ}^{\mathrm{sp}}_L,\tilde{Ξ}^{\mathrm{sp}}_R)(-t',\vec x)$, is a different, linear map, and is *not* a symmetry of the pair.
+Both $C$ and $T$ are anti-linear, and both conjugate the scalar imaginary. The difference between them appears when the field map is promoted to an operator on the mode algebra: the operator induced by $T$ is anti-unitary, while the operator induced by $C$ is unitary. The reason is that $T$ reverses the sign of the evolution phase $e^{-iHt}$, and the conjugation is what turns the reversed evolution into a symmetry; $C$ only exchanges the particle and antiparticle labels at fixed energy, so its induced operator is linear. This article constructs the field maps, so it records the anti-linearity of both and leaves the mode operators aside. The framework's single scalar imaginary $i$ — the same $i$ that appears in the gradient through $Q_t=i c r'_t$ and in the chirality $\Gamma=i\omega$ — is exactly what the conjugation negates. A time reversal written without the conjugation, as $\tilde{Ξ}^{\mathrm{sp}}\mapsto(-\tilde{Ξ}^{\mathrm{sp}}_L,\tilde{Ξ}^{\mathrm{sp}}_R)(-r'_t,\vec r)$, is a different, linear map, and is *not* a symmetry of the pair.
 
 The three operations are collected below, together with the composition. The fourth column records what each operation does with the two entries, which is the only structural datum that survives the migration: the exchange is imposed and is not a multiplication.
 
 | Operation | Action on $(\tilde{Ξ}^{\mathrm{sp}}_L,\tilde{Ξ}^{\mathrm{sp}}_R)$ | Internal factor | Entries | Linear? |
 |---|---|---|---|---|
 | $C$ | $(-\tilde{Ξ}^{\mathrm{sp}J}_R,\ \tilde{Ξ}^{\mathrm{sp}J}_L)$ | $\Gamma$ | exchanges | anti-linear |
-| $P$ | $(\tilde{Ξ}^{\mathrm{sp}}_R,\ \tilde{Ξ}^{\mathrm{sp}}_L)(t',-\vec x)$ | $1$ | exchanges | linear |
-| $T$ | $(\tilde{Ξ}^{\mathrm{sp}J}_L,\ \tilde{Ξ}^{\mathrm{sp}J}_R)(-t',\vec x)$ | $1$ | keeps | anti-linear |
+| $P$ | $(\tilde{Ξ}^{\mathrm{sp}}_R,\ \tilde{Ξ}^{\mathrm{sp}}_L)(r'_t,-\vec r)$ | $1$ | exchanges | linear |
+| $T$ | $(\tilde{Ξ}^{\mathrm{sp}J}_L,\ \tilde{Ξ}^{\mathrm{sp}J}_R)(-r'_t,\vec r)$ | $1$ | keeps | anti-linear |
 | $\mathrm{CPT}=C\circ P\circ T$ | $(-\tilde{Ξ}^{\mathrm{sp}}_L,\ \tilde{Ξ}^{\mathrm{sp}}_R)(-x)$ | $\Gamma$ | keeps | linear |
 
 Two remarks on conventions. First, an overall scalar multiplying both entries is not fixed by the requirement that the pair be preserved, and no such scalar is written. Second, the individual factors of $C$ and $T$ are convention-dependent — they change places between the pointwise reading used here and the amplitude reading — while the factor of the composition and the entry pattern of the table are not. That is why the composition is verified separately, in the next section, and why its statement is the one to quote.
@@ -190,15 +190,15 @@ Two remarks on conventions. First, an overall scalar multiplying both entries is
 
 The verification was carried out on the differential equation itself, not only on a momentum-space identity, and on cases other than the one that suggested the definitions. The working field was fixed by one entry, the other being its completion,
 $$
-\tilde{Ξ}^{\mathrm{sp}}_R=\xi\,e^{-ip\cdot x}+\xi_2\,e^{+ip\cdot x},\qquad
+\tilde{Ξ}^{\mathrm{sp}}_R=\xi\,e^{-ip\cdot r_x}+\xi_2\,e^{+ip\cdot r_x},\qquad
 \tilde{Ξ}^{\mathrm{sp}}_L=\frac{1}{m}\tilde\nabla\tilde{Ξ}^{\mathrm{sp}}_R
-=\frac{1}{m}\bigl(\tilde K\xi\,e^{-ip\cdot x}+\tilde K_+\xi_2\,e^{+ip\cdot x}\bigr),
+=\frac{1}{m}\bigl(\tilde K\xi\,e^{-ip\cdot r_x}+\tilde K_+\xi_2\,e^{+ip\cdot r_x}\bigr),
 $$
 
 with
 $$
 \tilde K=-E_{\vec p}\,e_t+i\vec p,\qquad \tilde K_+=+E_{\vec p}\,e_t-i\vec p,\qquad
-p\cdot x=E_{\vec p}t'-\vec p\cdot\vec x,\qquad E_{\vec p}^2=\vec p^2+m^2,
+p\cdot r_x=E_{\vec p}r'_t-\vec p\cdot\vec r,\qquad E_{\vec p}^2=\vec p^2+m^2,
 $$
 
 and $\xi,\xi_2$ arbitrary constant elements of $\mathbb{B}$, with no constraint relating the two: this is the point at which the arbitrariness matters, since the two members are independent elements and not two projections of one. The first branch is positive-frequency and the second negative-frequency; their sum is a general solution of the pair by linearity, and the second member holds because $\tilde K^{\natural}\tilde K=m^2$ on shell, the second branch carrying $\tilde K_+=-\tilde K$ and $\tilde K_+^{\natural}\tilde K_+=\tilde K\tilde K^{\natural}=m^2$ as well. Substituting, conjugating, exchanging and reflecting as the definitions require, the residual of $(\mathbb{D}-m)$ acting on each transform was evaluated and found to vanish to machine precision in every case. The checks were run for the three parameter sets
@@ -212,12 +212,12 @@ The individual checks are worth a word each, because they test different parts o
 
 - **$C$.** The exchange and the sign were verified together, on the differential equation, and the image was confirmed to solve the pair. The transform conjugates the polarization and keeps the energy and the momentum, and the sign is the one computed in the charge-conjugation section: $(-K)K^{\natural}=-m^{2}$ against $K^{\natural}K=+m^{2}$. Without the sign the residual is of order $10^{1}$; with it, $10^{-15}$. In the mode expansion $C$ exchanges the particle operator $a^{\mathrm{fop}}$ with the antiparticle operator $b^{\mathrm{fop}}$, which is the operator-level statement that the conserved charge reverses sign; that statement is transcribed, and the field-level check is the one performed here.
 - **$P$.** The reflection of the argument and the exchange of the entries were verified, and the reflected field was confirmed to solve the pair, at residual $0$. The transform keeps the positive-frequency branch positive-frequency and reverses the momentum, $\vec p\mapsto-\vec p$, and it needs no internal factor: the exchange alone turns $\tilde K$ into $\tilde K^{\natural}$.
-- **$T$.** The time reflection and the conjugation were verified, with no internal factor, and the conjugated-reflected field was confirmed to solve the pair. Because $T$ is anti-linear, the check on a superposition is the sharpest one: a linear map that ignored the conjugation, $\tilde{Ξ}^{\mathrm{sp}}\mapsto(\tilde{Ξ}^{\mathrm{sp}}_L,\tilde{Ξ}^{\mathrm{sp}}_R)(-t',\vec x)$, leaves a residual of order $10^{1}$, and so does the same map with a relative sign.
+- **$T$.** The time reflection and the conjugation were verified, with no internal factor, and the conjugated-reflected field was confirmed to solve the pair. Because $T$ is anti-linear, the check on a superposition is the sharpest one: a linear map that ignored the conjugation, $\tilde{Ξ}^{\mathrm{sp}}\mapsto(\tilde{Ξ}^{\mathrm{sp}}_L,\tilde{Ξ}^{\mathrm{sp}}_R)(-r'_t,\vec r)$, leaves a residual of order $10^{1}$, and so does the same map with a relative sign.
 
 Two negative results belong here, to prevent a later pass from claiming more than was checked.
 
 - The verification is of the **free** pair. Nothing was checked for a field with a local interaction, and no claim is made there. The reason the free check cannot be promoted is stated below: the CPT theorem is precisely the statement that the composition survives interactions when the factors do not, and a free-field identity contains no information about that.
-- The operation $T$ was *not* defined as the linear map $\tilde{Ξ}^{\mathrm{sp}}\mapsto(\tilde{Ξ}^{\mathrm{sp}}_L,\tilde{Ξ}^{\mathrm{sp}}_R)(-t',\vec x)$ that is sometimes written, nor with a relative sign added to it. Neither preserves the pair, and the numbers above say so.
+- The operation $T$ was *not* defined as the linear map $\tilde{Ξ}^{\mathrm{sp}}\mapsto(\tilde{Ξ}^{\mathrm{sp}}_L,\tilde{Ξ}^{\mathrm{sp}}_R)(-r'_t,\vec r)$ that is sometimes written, nor with a relative sign added to it. Neither preserves the pair, and the numbers above say so.
 
 ## The Algebra's Conjugations Are Not the Discrete Operations
 
@@ -238,9 +238,9 @@ The anti-linear part of $C$ and of $T$ is exactly the algebra's conjugation of t
 Compose the three operations by applying $T$ first, then $P$, then $C$, and write $\mathrm{CPT}=C\circ P\circ T$. Because $C$ and $T$ are anti-linear, the composition must be evaluated as a composition, not by multiplying the three internal factors. Applied to a field $\tilde{Ξ}^{\mathrm{sp}}$,
 $$
 (\tilde{Ξ}^{\mathrm{sp}}_L,\tilde{Ξ}^{\mathrm{sp}}_R)
-\xrightarrow{\;T\;}\bigl(\tilde{Ξ}^{\mathrm{sp}J}_L,\ \tilde{Ξ}^{\mathrm{sp}J}_R\bigr)(-t',\vec x)
-\xrightarrow{\;P\;}\bigl(\tilde{Ξ}^{\mathrm{sp}J}_R,\ \tilde{Ξ}^{\mathrm{sp}J}_L\bigr)(-t',-\vec x)
-\xrightarrow{\;C\;}\bigl(-\tilde{Ξ}^{\mathrm{sp}}_L,\ \tilde{Ξ}^{\mathrm{sp}}_R\bigr)(-x),
+\xrightarrow{\;T\;}\bigl(\tilde{Ξ}^{\mathrm{sp}J}_L,\ \tilde{Ξ}^{\mathrm{sp}J}_R\bigr)(-r'_t,\vec r)
+\xrightarrow{\;P\;}\bigl(\tilde{Ξ}^{\mathrm{sp}J}_R,\ \tilde{Ξ}^{\mathrm{sp}J}_L\bigr)(-r'_t,-\vec r)
+\xrightarrow{\;C\;}\bigl(-\tilde{Ξ}^{\mathrm{sp}}_L,\ \tilde{Ξ}^{\mathrm{sp}}_R\bigr)(-r_x),
 $$
 
 so that
@@ -248,7 +248,7 @@ $$
 \mathrm{CPT}[\tilde{Ξ}^{\mathrm{sp}}](x)=\bigl(-\tilde{Ξ}^{\mathrm{sp}}_L,\tilde{Ξ}^{\mathrm{sp}}_R\bigr)(-x),
 $$
 
-with the sign $-1$ on the first entry and $+1$ on the second, which is the chirality $\Gamma$ read on the two eigenspaces of $R_\omega$: $-1$ on the eigenspace with eigenvalue $i$, $+1$ on the other. The internal factor is read off the composition, and its agreement with the product of the three internal factors, $1\cdot1\cdot\Gamma$, is an accident of this alignment and should not be taken as general: the free scalar phase of each operation enters the composition through the conjugation, which does not commute with the exchange of the parts. Under the equally admissible convention $T'\tilde{Ξ}^{\mathrm{sp}}=\bigl(\tilde{Ξ}^{\mathrm{sp}J}_L,-\tilde{Ξ}^{\mathrm{sp}J}_R\bigr)(-t',\vec x)$, which differs from $T$ by the overall sign, the composition carries the internal factor $-\Gamma$ and the naive product gives $+\Gamma$: the two differ by a sign, and both map solutions to solutions. That is the concrete sense in which verifying $C$, $P$ and $T$ individually and multiplying is not the same as verifying $CPT$.
+with the sign $-1$ on the first entry and $+1$ on the second, which is the chirality $\Gamma$ read on the two eigenspaces of $R_\omega$: $-1$ on the eigenspace with eigenvalue $i$, $+1$ on the other. The internal factor is read off the composition, and its agreement with the product of the three internal factors, $1\cdot1\cdot\Gamma$, is an accident of this alignment and should not be taken as general: the free scalar phase of each operation enters the composition through the conjugation, which does not commute with the exchange of the parts. Under the equally admissible convention $T'\tilde{Ξ}^{\mathrm{sp}}=\bigl(\tilde{Ξ}^{\mathrm{sp}J}_L,-\tilde{Ξ}^{\mathrm{sp}J}_R\bigr)(-r'_t,\vec r)$, which differs from $T$ by the overall sign, the composition carries the internal factor $-\Gamma$ and the naive product gives $+\Gamma$: the two differ by a sign, and both map solutions to solutions. That is the concrete sense in which verifying $C$, $P$ and $T$ individually and multiplying is not the same as verifying $CPT$.
 
 The composition has the following verified properties.
 
@@ -296,11 +296,11 @@ with the sign a free phase of the composition. This is the group-theoretic fact 
 
 **Established, and recomputed.**
 
-- The three operations $C[\tilde{Ξ}^{\mathrm{sp}}]=(-\tilde{Ξ}^{\mathrm{sp}J}_R,\tilde{Ξ}^{\mathrm{sp}J}_L)$ with $J=\bar{\cdot}$ pointwise, $P[\tilde{Ξ}^{\mathrm{sp}}](t',\vec x)=(\tilde{Ξ}^{\mathrm{sp}}_R,\tilde{Ξ}^{\mathrm{sp}}_L)(t',-\vec x)$ and $T[\tilde{Ξ}^{\mathrm{sp}}](t',\vec x)=(\tilde{Ξ}^{\mathrm{sp}J}_L,\tilde{Ξ}^{\mathrm{sp}J}_R)(-t',\vec x)$ each preserve the free chiral pair $\tilde\nabla\tilde{Ξ}^{\mathrm{sp}}_R=m\tilde{Ξ}^{\mathrm{sp}}_L$, $\tilde\nabla^{\natural}\tilde{Ξ}^{\mathrm{sp}}_L=m\tilde{Ξ}^{\mathrm{sp}}_R$, verified on the differential equation for three on-shell momenta, on the four basis polarizations of each part and on both frequency branches: eight solutions per momentum, three momenta, residual at most $1.8\times10^{-15}$.
+- The three operations $C[\tilde{Ξ}^{\mathrm{sp}}]=(-\tilde{Ξ}^{\mathrm{sp}J}_R,\tilde{Ξ}^{\mathrm{sp}J}_L)$ with $J=\bar{\cdot}$ pointwise, $P[\tilde{Ξ}^{\mathrm{sp}}](r'_t,\vec r)=(\tilde{Ξ}^{\mathrm{sp}}_R,\tilde{Ξ}^{\mathrm{sp}}_L)(r'_t,-\vec r)$ and $T[\tilde{Ξ}^{\mathrm{sp}}](r'_t,\vec r)=(\tilde{Ξ}^{\mathrm{sp}J}_L,\tilde{Ξ}^{\mathrm{sp}J}_R)(-r'_t,\vec r)$ each preserve the free chiral pair $\tilde\nabla\tilde{Ξ}^{\mathrm{sp}}_R=m\tilde{Ξ}^{\mathrm{sp}}_L$, $\tilde\nabla^{\natural}\tilde{Ξ}^{\mathrm{sp}}_L=m\tilde{Ξ}^{\mathrm{sp}}_R$, verified on the differential equation for three on-shell momenta, on the four basis polarizations of each part and on both frequency branches: eight solutions per momentum, three momenta, residual at most $1.8\times10^{-15}$.
 - $C$ and $T$ are anti-linear, $C[i\tilde{Ξ}^{\mathrm{sp}}]=-i\,C[\tilde{Ξ}^{\mathrm{sp}}]$ and $T[i\tilde{Ξ}^{\mathrm{sp}}]=-i\,T[\tilde{Ξ}^{\mathrm{sp}}]$, and $P$ is linear; the operator induced by $T$ is anti-unitary and the one induced by $C$ is unitary.
 - $C$ and $P$ exchange the two entries and $T$ keeps them, so the composition keeps them. The chirality is the right action $\tilde{Ξ}^{\mathrm{sp}}\mapsto\tilde{Ξ}^{\mathrm{sp}}\Gamma=-i\tilde{Ξ}^{\mathrm{sp}}\vec e_z$, and it is a single right multiplication; the two entries of the pair are **not** its eigenspaces, because a left action preserves both eigenspaces of any right multiplication, so an equation between the two would force $0=m\times(\text{nonzero})$. The eigenspaces of $R_\omega$, with eigenvalues $i$ and $-i$ for $\omega=-\vec e_z$, are what the source's cell formulation projected onto, and the projection is what the migration removes.
 - The composition $\mathrm{CPT}=C\circ P\circ T$ acts as $\mathrm{CPT}[\tilde{Ξ}^{\mathrm{sp}}](x)=(-\tilde{Ξ}^{\mathrm{sp}}_L,\tilde{Ξ}^{\mathrm{sp}}_R)(-x)$; it is complex-linear, reverses the argument, and its sign pattern $\mathrm{diag}(-1,+1)$ is the chirality $\Gamma$, up to the free scalar phase of the three operations. This is the one statement of the article that does not depend on the choice of conjugation.
-- The gradient is a left action, so it acts on both entries with the same factor, and its square is not scalar, $\tilde\nabla^2=\partial^2/\partial Q_t^2-\Delta_Q+2e_t\sum_k\vec e_k\partial^2/(\partial Q_t\partial Q_k)$; the massive equation is therefore the pair, and the pair operator $\mathbb{D}$ of the conventions has $\mathbb{D}^2=\Box I$.
+- The gradient is a left action, so it acts on both entries with the same factor, and its square is not scalar, $\tilde\nabla^2=\partial^2/\partial R_t^2-\Delta_Q+2e_t\sum_k\vec e_k\partial^2/(\partial R_t\partial R_k)$; the massive equation is therefore the pair, and the pair operator $\mathbb{D}$ of the conventions has $\mathbb{D}^2=\Box I$.
 - The algebra's conjugations ${}^{\natural}$, $\bar{\cdot}$, ${}^{*}$ preserve both sectors; ${}^{*}$ is $+1$ on $\mathbb{M}_+$ and $-1$ on $\mathbb{M}_-$; the sector swap is the central multiplication by $i$. No discrete operation is a sector swap.
 - The algebra's three conjugations are order-two maps that commute pairwise, with $\natural=\bar{\cdot}\circ{}^{*}$, so they and the identity form a $\mathbb{Z}_2\times\mathbb{Z}_2$. This is a computation on the coefficients, and it is the one point where the classification below and the algebra meet without transcription.
 
@@ -357,7 +357,7 @@ The classification supplies a second reading of the same eight operations: they 
 | $\mathbb{H}_{\mathbb{B}}$, $\mathbb{C}_{\mathbb{B}}=\mathbb{C}e_t$ | Real-quaternion subspace; centre |
 | ${}^{\natural}$, $\bar{\cdot}$, ${}^{*}=({}^{\natural})^{\,*}$ | Quaternion, complex, and Hermitian conjugations; order two, commuting pairwise, $\natural=\bar{\cdot}\circ{}^{*}$ |
 | $\tilde{Q}^{\flat}=-\tilde{Q}^{*}$ | Anti-Hermitian conjugate; the algebra's real structure, $\mathbb{C}$-antilinear and order-reversing |
-| $\tilde\nabla=e_t\partial/\partial Q_t+\sum_k\vec e_k\partial/\partial Q_k$, $\Box=\tilde\nabla\tilde\nabla^{\natural}$ | Biquaternionic gradient, acting on the left, and d'Alembertian |
+| $\tilde\nabla=e_t\partial/\partial R_t+\sum_k\vec e_k\partial/\partial R_k$, $\Box=\tilde\nabla\tilde\nabla^{\natural}$ | Biquaternionic gradient, acting on the left, and d'Alembertian |
 | $\tilde{Ξ}^{\mathrm{sp}}_L$, $\tilde{Ξ}^{\mathrm{sp}}_R$ | The two entries of the pair: two elements of $\mathbb{B}$, not the eigenspaces of the chirality, which no left action can separate |
 | $\tilde{Ξ}^{\mathrm{sp}}=\tilde{Ξ}^{\mathrm{sp}}_L+\tilde{Ξ}^{\mathrm{sp}}_R$ | The Dirac field, one element of $\mathbb{B}$; dynamics $\tilde\nabla\tilde{Ξ}^{\mathrm{sp}}_R=m\tilde{Ξ}^{\mathrm{sp}}_L$, $\tilde\nabla^{\natural}\tilde{Ξ}^{\mathrm{sp}}_L=m\tilde{Ξ}^{\mathrm{sp}}_R$ |
 | $\omega=-\vec e_z$, $\Gamma=i\omega=-i\vec e_z$ | $\omega^2=-e_t$; the chirality is the right action $\tilde{Ξ}^{\mathrm{sp}}\mapsto\tilde{Ξ}^{\mathrm{sp}}\Gamma=-i\tilde{Ξ}^{\mathrm{sp}}\vec e_z$, with $\Gamma^2=e_t$, equal to $-1$ on the eigenspace of $R_\omega$ with eigenvalue $i$ and $+1$ on the other |
@@ -365,8 +365,8 @@ The classification supplies a second reading of the same eight operations: they 
 | $\tilde K=-E_{\vec p}e_t+i\vec p$ | Symbol of $\tilde\nabla$ on $e^{-ip\cdot x}$; $\tilde K^{\natural}\tilde K=E_{\vec p}^2-\vec p^2=m^2$ |
 | $J=\bar{\cdot}$, $\tilde{Ζ}^{J}$ | The conjugation of the field: the coefficient conjugation applied at each point, anti-linear and an automorphism |
 | $C[\tilde{Ξ}^{\mathrm{sp}}]=(-\tilde{Ξ}^{\mathrm{sp}J}_R,\tilde{Ξ}^{\mathrm{sp}J}_L)$ | Charge conjugation (anti-linear, exchanges the entries, internal factor $\Gamma$, $C^2=-e_t$) |
-| $P[\tilde{Ξ}^{\mathrm{sp}}](t',\vec x)=(\tilde{Ξ}^{\mathrm{sp}}_R,\tilde{Ξ}^{\mathrm{sp}}_L)(t',-\vec x)$ | Parity (linear, exchanges the entries, no internal factor, $P^2=\mathrm{id}$) |
-| $T[\tilde{Ξ}^{\mathrm{sp}}](t',\vec x)=(\tilde{Ξ}^{\mathrm{sp}J}_L,\tilde{Ξ}^{\mathrm{sp}J}_R)(-t',\vec x)$ | Time reversal (anti-linear, keeps the entries, no internal factor, $T^2=\mathrm{id}$) |
+| $P[\tilde{Ξ}^{\mathrm{sp}}](r'_t,\vec r)=(\tilde{Ξ}^{\mathrm{sp}}_R,\tilde{Ξ}^{\mathrm{sp}}_L)(r'_t,-\vec r)$ | Parity (linear, exchanges the entries, no internal factor, $P^2=\mathrm{id}$) |
+| $T[\tilde{Ξ}^{\mathrm{sp}}](r'_t,\vec r)=(\tilde{Ξ}^{\mathrm{sp}J}_L,\tilde{Ξ}^{\mathrm{sp}J}_R)(-r'_t,\vec r)$ | Time reversal (anti-linear, keeps the entries, no internal factor, $T^2=\mathrm{id}$) |
 | $\mathrm{CPT}=C\circ P\circ T$ | CPT composition; $\mathrm{CPT}[\tilde{Ξ}^{\mathrm{sp}}](x)=(-\tilde{Ξ}^{\mathrm{sp}}_L,\tilde{Ξ}^{\mathrm{sp}}_R)(-x)$, the sign pattern of $\Gamma$ |
 | $\{1,P,T,PT,C,CP,CT,CPT\}/\{\pm1\}\cong\mathbb{Z}_2^3$ | The group of the eight discrete operations, up to the sign of a product |
 

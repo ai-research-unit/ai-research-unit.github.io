@@ -7,7 +7,7 @@ One-dimensional scattering is the simplest problem in which a quantum system mee
 The biquaternion content is again a consequence of centrality. For an external potential $V(x)$ the Hamiltonian is
 
 $$
-H = \left[-\frac{\hbar^2}{2m}\partial^2/\partial Q_x^2 + V(x)\right]e_t \in \mathbb{C}_{\mathbb{B}},
+H = \left[-\frac{\hbar^2}{2m}\partial^2/\partial R_x^2 + V(r_x)\right]e_t \in \mathbb{C}_{\mathbb{B}},
 $$
 
 a multiple of the identity, because a scalar potential couples to the scalar slot. The external field therefore does not act on the state module at all: it cannot rotate, mix, or relatively phase the two components of a state-module element. The scattering matrix factorises as $S \otimes I_2$ on the space of channels tensored with the module; every reflection and transmission amplitude is a scalar function of the energy; and there is **no spin-flip channel**, not because a spin-flip amplitude happens to be small, but because the operator that would produce it is not present. This is the scattering counterpart of the frozen module factor of the free-particle article, and it is what makes the subcategory's fields spin-0 scalars.
@@ -25,7 +25,7 @@ For a particle of mass $m$ in a real potential $V(x)$, the stationary equation i
 $$
 H\,\tilde{Ξ}^{\mathrm{sp}} = E\,\tilde{Ξ}^{\mathrm{sp}},
 \qquad
-H = \left[-\frac{\hbar^2}{2m}\frac{d^2}{dx^2} + V(x)\right]e_t = c r_t(x)\,e_t,
+H = \left[-\frac{\hbar^2}{2m}\frac{d^2}{dx^2} + V(r_x)\right]e_t = c r_t(r_x)\,e_t,
 $$
 
 with $\tilde{Ξ}^{\mathrm{sp}}$ a field taking values in the state module $\mathbb{B}\tilde\Pi$. Since $H$ is central, the equation is componentwise the scalar equation
@@ -158,7 +158,7 @@ Unitarity of $S$ is thus the algebraic form of flux conservation. In the framewo
 
 ### The step
 
-Let $V(x) = 0$ for $x<0$ and $V(x) = V_0$ for $x>0$, with $E>V_0$. The wave vectors are $k_1 = \sqrt{2mE}/\hbar$ and $k_2 = \sqrt{2m(E-V_0)}/\hbar$. Continuity of $\xi^{\mathrm{scl}}$ and $\partial\xi^{\mathrm{scl}}/\partial x$ at the origin, with the ansatz $\xi^{\mathrm{scl}} = \exp(ik_1x)+r\exp(-ik_1x)$ on the left and $\xi^{\mathrm{scl}} = t\exp(ik_2x)$ on the right, gives
+Let $V(x) = 0$ for $x<0$ and $V(x) = V_0$ for $x>0$, with $E>V_0$. The wave vectors are $k_1 = \sqrt{2mE}/\hbar$ and $k_2 = \sqrt{2m(E-V_0)}/\hbar$. Continuity of $\xi^{\mathrm{scl}}$ and $\partial\xi^{\mathrm{scl}}/\partial r_x$ at the origin, with the ansatz $\xi^{\mathrm{scl}} = \exp(ik_1x)+r\exp(-ik_1x)$ on the left and $\xi^{\mathrm{scl}} = t\exp(ik_2x)$ on the right, gives
 
 $$
 1 + r = t,
@@ -421,7 +421,7 @@ so the phase runs from $\pi/2$ at threshold to zero at infinite energy, a change
 
 ## Summary
 
-The one-dimensional biquaternion Schrödinger equation with a real potential is $(-\frac{\hbar^2}{2m}\partial^2/\partial Q_x^2 + V(x))e_t\,\tilde{Ξ}^{\mathrm{sp}} = E\tilde{Ξ}^{\mathrm{sp}}$. The Hamiltonian is central, so the equation reduces to a scalar equation for the envelope, $\tilde{Ξ}^{\mathrm{sp}} = \xi^{\mathrm{scl}}\xi$ with $\xi$ a constant module element, and no potential treated here acts on the module.
+The one-dimensional biquaternion Schrödinger equation with a real potential is $(-\frac{\hbar^2}{2m}\partial^2/\partial R_x^2 + V(r_x))e_t\,\tilde{Ξ}^{\mathrm{sp}} = E\tilde{Ξ}^{\mathrm{sp}}$. The Hamiltonian is central, so the equation reduces to a scalar equation for the envelope, $\tilde{Ξ}^{\mathrm{sp}} = \xi^{\mathrm{scl}}\xi$ with $\xi$ a constant module element, and no potential treated here acts on the module.
 
 The current is $J = \frac{\hbar}{2mi}\mathrm{Tr}(\tilde{Ξ}^{\mathrm{sp}\dagger}\frac{d\tilde{Ξ}^{\mathrm{sp}}}{dx} - \left(\frac{d\tilde{Ξ}^{\mathrm{sp}}}{dx}\right)^\dagger\tilde{Ξ}^{\mathrm{sp}})$, which for a superposition $A\exp(ikx)+B\exp(-ikx)$ reduces to $J = \frac{\hbar k}{m}(|A|^2-|B|^2)$: the oscillatory interference terms contribute nothing to the imaginary part. Flux conservation across the scattering region is $|A|^2+|D|^2 = |B|^2+|C|^2$, which is exactly the unitarity $S^{*} S = I_2$, and which for incidence from the left is $R+T=1$.
 
@@ -439,7 +439,7 @@ The biquaternion content is that the potential couples only to the scalar slot, 
 | $\mathbb{C}_{\mathbb{B}}$ | Centre; the Hamiltonian multiplies $e_t$ |
 | $\mathbb{M}_+$, $\mathbb{M}_-$ | Hermitian and anti-Hermitian sectors |
 | $\mathbb{B}\tilde\Pi\cong \mathbb{C}^2$ | State module |
-| $H = [-\frac{\hbar^2}{2m}\partial^2/\partial Q_x^2 + V(x)]e_t$ | Central Hamiltonian |
+| $H = [-\frac{\hbar^2}{2m}\partial^2/\partial R_x^2 + V(r_x)]e_t$ | Central Hamiltonian |
 | $\tilde{Ξ}^{\mathrm{sp}} = \xi^{\mathrm{scl}}\,\xi$ | Factorised stationary state |
 | $k_j = \sqrt{2m(E-V_j)}/\hbar$ | Wave vector in region $j$; imaginary when $E<V_j$ |
 | $\kappa_j = \sqrt{2m(V_j-E)}/\hbar$ | Decay constant in a forbidden region |

@@ -249,10 +249,10 @@ The scalar imaginary deserves its own section because it is the one element whos
 **Given the algebra, $i$ is determined up to sign.** Regard $\mathbb{B}$ as a real algebra. Its centre is
 
 $$
-Z(\mathbb{B})=\{z\in\mathbb{B}\ :\ z\tilde Q_1=\tilde Q_1 z \text{ for all }\tilde Q_1\}=\operatorname{span}_{\mathbb{R}}\{e_t,i\},
+Z(\mathbb{B})=\{z\in\mathbb{B}\ :\ r_z\tilde Q_1=\tilde Q_1 r_z \text{ for all }\tilde Q_1\}=\operatorname{span}_{\mathbb{R}}\{e_t,i\},
 $$
 
-which is a copy of $\mathbb{C}$ inside $\mathbb{B}$; this is read off from the requirement that a central element commute with $\vec e_x,\vec e_y,\vec e_z$, which forces its vector coefficients to vanish. The elements of the centre that square to $-e_t$ are exactly the solutions of $z_0^2=-1$ for $z=z_0e_t$ among these, namely
+which is a copy of $\mathbb{C}$ inside $\mathbb{B}$; this is read off from the requirement that a central element commute with $\vec e_x,\vec e_y,\vec e_z$, which forces its vector coefficients to vanish. The elements of the centre that square to $-e_t$ are exactly the solutions of $z_0^2=-1$ for $r_z=z_0e_t$ among these, namely
 
 $$
 \boxed{\;z=\pm i\;}.

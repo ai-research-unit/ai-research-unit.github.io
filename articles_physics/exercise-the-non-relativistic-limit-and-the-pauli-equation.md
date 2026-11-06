@@ -15,9 +15,9 @@ Five problems are worked:
 **The operators, fixed once.** Every derivative in this exercise is the biquaternionic gradient
 
 $$
-\tilde\nabla=\sum_{\mu\in\{t,x,y,z\}}e_\mu\frac{\partial}{\partial Q_\mu},
+\tilde\nabla=\sum_{\mu\in\{t,x,y,z\}}e_\mu\frac{\partial}{\partial R_\mu},
 \qquad
-\tilde\nabla^{\natural}=\sum_{\mu\in\{t,x,y,z\}}\varepsilon_\mu e_\mu\frac{\partial}{\partial Q_\mu},
+\tilde\nabla^{\natural}=\sum_{\mu\in\{t,x,y,z\}}\varepsilon_\mu e_\mu\frac{\partial}{\partial R_\mu},
 \qquad
 \varepsilon=(1,-1,-1,-1),
 $$
@@ -25,20 +25,20 @@ $$
 and its norm is the d'Alembertian
 
 $$
-\Box=\tilde\nabla\tilde\nabla^{\natural}=\tilde\nabla^{\natural}\tilde\nabla=\frac{\partial^2}{\partial Q_t^2}+\Delta_Q .
+\Box=\tilde\nabla\tilde\nabla^{\natural}=\tilde\nabla^{\natural}\tilde\nabla=\frac{\partial^2}{\partial R_t^2}+\Delta_Q .
 $$
 
 On the material sector, where $Q_t=i c r'_t$, the gradient and its conjugate read
 
 $$
-\tilde\nabla\big|_{\mathbb M_-}=-\frac{i}{c}e_t\frac{\partial}{\partial t'}+\sum_k\vec e_k\frac{\partial}{\partial r_k},
+\tilde\nabla\big|_{\mathbb M_-}=-\frac{i}{c}e_t\frac{\partial}{\partial r'_t}+\sum_k\vec e_k\frac{\partial}{\partial r_k},
 \qquad
-\tilde\nabla^{\natural}\big|_{\mathbb M_-}=-\frac{i}{c}e_t\frac{\partial}{\partial t'}-\sum_k\vec e_k\frac{\partial}{\partial r_k},
+\tilde\nabla^{\natural}\big|_{\mathbb M_-}=-\frac{i}{c}e_t\frac{\partial}{\partial r'_t}-\sum_k\vec e_k\frac{\partial}{\partial r_k},
 \qquad
-\Box\big|_{\mathbb M_-}=\Delta-\frac{1}{c^2}\frac{\partial^2}{\partial t'^2},
+\Box\big|_{\mathbb M_-}=\Delta-\frac{1}{c^2}\frac{\partial^2}{\partial r'_t^2},
 $$
 
-and the pure part of the gradient is written $D_3=\sum_k\vec e_k\partial/\partial r_k$. Minimal coupling shifts each derivative, $\partial/\partial Q_\mu\to\partial/\partial Q_\mu-iqA_\mu/\hbar$, and with it the gradient:
+and the pure part of the gradient is written $D_3=\sum_k\vec e_k\partial/\partial r_k$. Minimal coupling shifts each derivative, $\partial/\partial R_\mu\to\partial/\partial R_\mu-iqA_\mu/\hbar$, and with it the gradient:
 
 $$
 \tilde\nabla\longmapsto\tilde\nabla-\frac{iq}{\hbar}\tilde A,
@@ -69,12 +69,12 @@ $$
 The massive case is not of that form, and the reason is a square. The square of the gradient is not scalar: the time unit commutes with the three spatial units instead of anticommuting with them, so the mixed derivatives add, and each spatial unit squares to $-e_t$, which puts the wrong sign on the Laplacian. Explicitly, on a general field,
 
 $$
-\tilde\nabla^2=\Box-2\Delta-\frac{2i}{c}\sum_k\vec e_k\frac{\partial^2}{\partial t'\,\partial r_k},
+\tilde\nabla^2=\Box-2\Delta-\frac{2i}{c}\sum_k\vec e_k\frac{\partial^2}{\partial r'_t\,\partial r_k},
 $$
 
 so $\tilde\nabla^2\neq\Box$ and no scalar mass can be subtracted from the square. The massive equation is therefore a pair of first-order equations in two fields, the **chiral pair**, and it is stated below. No one-field first-order massive equation is written anywhere in this exercise.
 
-**On the parent article.** The parent's non-relativistic section works only to leading order. It factors out the rest energy, eliminates the small component with the approximation $\partial/\partial t'\,\tilde{Ξ}^{\mathrm{sp}\,\mathrm{odd}}\approx 0$, and reads off the Pauli Hamiltonian; it stops there. It contains no spin–orbit and no Darwin term, and it does not perform a systematic Foldy–Wouthuysen transformation. It also does not state the sector ($\mathbb M_\pm$) status of the intermediate operators it uses. Problems 3 and 4 supply those orders and that status. Where the parent is silent this is stated explicitly and not silently filled in.
+**On the parent article.** The parent's non-relativistic section works only to leading order. It factors out the rest energy, eliminates the small component with the approximation $\partial/\partial r'_t\,\tilde{Ξ}^{\mathrm{sp}\,\mathrm{odd}}\approx 0$, and reads off the Pauli Hamiltonian; it stops there. It contains no spin–orbit and no Darwin term, and it does not perform a systematic Foldy–Wouthuysen transformation. It also does not state the sector ($\mathbb M_\pm$) status of the intermediate operators it uses. Problems 3 and 4 supply those orders and that status. Where the parent is silent this is stated explicitly and not silently filled in.
 
 All the derivatives below are $\tilde\nabla$, $\tilde\nabla^{\natural}$ and their pure part $D_3$, and no other differential operator appears. Natural units $\hbar=c=1$ are used while deriving; $\hbar$ and $c$ are restored wherever a physical statement is made. Fixing the frame, the chirality is the operator that multiplies on the right by $-i\vec e_z$ and takes the two values $\mp1$; the field is one element $F\in\mathbb B$ split into its two parts, $F=F_L+F_R$, of value $-1$ and $+1$. The side is position: the chirality acts as $F\mapsto-iF\vec e_z$, and the left action $F\mapsto-i\vec e_zF$ is a different element, never used here. Since $\vec e_z=-\omega$ with $\omega$ the pseudoscalar of the frame, $\omega^2=-e_t$, the chirality is also written $F\mapsto iF\omega$; the $i$ in front of it is the central scalar $i$ of the algebra and not $\omega$.
 
@@ -94,10 +94,10 @@ $$
 
 Both gradients act on the left, and no right multiplication and no conjugation enters. On the Dirac module $\Delta=\mathbb B$ the pair is a four-component equation, and it is the equation reduced below.
 
-**The two-sided form.** Kravchenko's dictionary writes the same physics as a single equation on the whole algebra. The derivative acts on the left, the mass acts on the right through $\vec e_z=-\omega$, and a componentwise conjugation supplies the antilinear part. Here $D_3=\sum_k\vec e_k\,\partial/\partial Q_k$ is the pure part of the gradient and $\mathcal N$ names the left-hand side. In natural units:
+**The two-sided form.** Kravchenko's dictionary writes the same physics as a single equation on the whole algebra. The derivative acts on the left, the mass acts on the right through $\vec e_z=-\omega$, and a componentwise conjugation supplies the antilinear part. Here $D_3=\sum_k\vec e_k\,\partial/\partial R_k$ is the pure part of the gradient and $\mathcal N$ names the left-hand side. In natural units:
 
 $$
-\mathcal N F=\Bigl(i\frac{\partial}{\partial t'}+D_3\Bigr)F-mi\,\overline F\,\vec e_z=0 .
+\mathcal N F=\Bigl(i\frac{\partial}{\partial r'_t}+D_3\Bigr)F-mi\,\overline F\,\vec e_z=0 .
 $$
 
 Equivalently,
@@ -106,12 +106,12 @@ $$
 -\tilde\nabla^{\natural}F-mi\,\overline F\,\vec e_z=0
 $$
 
-for a field $F\in\mathbb B$, since $i\partial/\partial t'=-\partial/\partial Q_t$ in these units. The two forms are related by a change of representation, but they are different operators: the pair is linear in the field, while the mass term of the two-sided form is antilinear because it carries $\overline F$.
+for a field $F\in\mathbb B$, since $i\partial/\partial r'_t=-\partial/\partial R_t$ in these units. The two forms are related by a change of representation, but they are different operators: the pair is linear in the field, while the mass term of the two-sided form is antilinear because it carries $\overline F$.
 
 | | One-sided pair | Two-sided form |
 |---|---|---|
-| Equation | $\tilde\nabla F_R=mF_L$, $\tilde\nabla^{\natural}F_L=mF_R$ | $\mathcal NF=0$, with $\mathcal NF=(i\partial/\partial t'+D_3)F-mi\overline F\vec e_z$ |
-| Multiplication | left by $\tilde\nabla$ and $\tilde\nabla^{\natural}$ | left by $i\partial/\partial t'$ and $D_3$; right by $\vec e_z$; antilinear bar |
+| Equation | $\tilde\nabla F_R=mF_L$, $\tilde\nabla^{\natural}F_L=mF_R$ | $\mathcal NF=0$, with $\mathcal NF=(i\partial/\partial r'_t+D_3)F-mi\overline F\vec e_z$ |
+| Multiplication | left by $\tilde\nabla$ and $\tilde\nabla^{\natural}$ | left by $i\partial/\partial r'_t$ and $D_3$; right by $\vec e_z$; antilinear bar |
 | Field | $F=F_L+F_R\in\Delta=\mathbb B$ | $F\in\mathbb B$ |
 | Mass | off-diagonal pairing of the chiral halves | $-mi\overline F\vec e_z$: a conjugation and a direction |
 | Chirality | the central sign, $\mp1$ on the two halves | the right multiplication by $-i\vec e_z$ |
@@ -129,7 +129,7 @@ The reduction below is of the one-sided pair, read on the Dirac module. The Fold
 **The Hamiltonian.** The pair, read on the module, is the equation of motion
 
 $$
-i\hbar\frac{\partial F}{\partial t'}=HF,
+i\hbar\frac{\partial F}{\partial r'_t}=HF,
 \qquad
 H=\beta mc^2+O+qΞ,
 \qquad
@@ -153,9 +153,9 @@ so that $O$ is odd, $qΞ$ is even, and $H$ is Hermitian. The eigenvalues of $H$ 
 **The two halves.** With $\beta\tilde{Ξ}^{\mathrm{sp}\,\mathrm{evn}}=+\tilde{Ξ}^{\mathrm{sp}\,\mathrm{evn}}$ and $\beta\tilde{Ξ}^{\mathrm{sp}\,\mathrm{odd}}=-\tilde{Ξ}^{\mathrm{sp}\,\mathrm{odd}}$, the equation of motion reads on the two parts
 
 $$
-i\hbar\frac{\partial\tilde{Ξ}^{\mathrm{sp}\,\mathrm{evn}}}{\partial t'}=mc^2\tilde{Ξ}^{\mathrm{sp}\,\mathrm{evn}}+O\tilde{Ξ}^{\mathrm{sp}\,\mathrm{odd}}+qΞ\tilde{Ξ}^{\mathrm{sp}\,\mathrm{evn}},
+i\hbar\frac{\partial\tilde{Ξ}^{\mathrm{sp}\,\mathrm{evn}}}{\partial r'_t}=mc^2\tilde{Ξ}^{\mathrm{sp}\,\mathrm{evn}}+O\tilde{Ξ}^{\mathrm{sp}\,\mathrm{odd}}+qΞ\tilde{Ξ}^{\mathrm{sp}\,\mathrm{evn}},
 \qquad
-i\hbar\frac{\partial\tilde{Ξ}^{\mathrm{sp}\,\mathrm{odd}}}{\partial t'}=-mc^2\tilde{Ξ}^{\mathrm{sp}\,\mathrm{odd}}+O\tilde{Ξ}^{\mathrm{sp}\,\mathrm{evn}}+qΞ\tilde{Ξ}^{\mathrm{sp}\,\mathrm{odd}} .
+i\hbar\frac{\partial\tilde{Ξ}^{\mathrm{sp}\,\mathrm{odd}}}{\partial r'_t}=-mc^2\tilde{Ξ}^{\mathrm{sp}\,\mathrm{odd}}+O\tilde{Ξ}^{\mathrm{sp}\,\mathrm{evn}}+qΞ\tilde{Ξ}^{\mathrm{sp}\,\mathrm{odd}} .
 $$
 
 The even operator $qΞ$ is the electrostatic energy and the odd operator $O$ is what couples the large and the small parts: $O\tilde{Ξ}^{\mathrm{sp}\,\mathrm{evn}}$ is small and $O\tilde{Ξ}^{\mathrm{sp}\,\mathrm{odd}}$ is large. This is the system reduced in Problem 1.
@@ -176,17 +176,17 @@ $$
 
 and the odd operator is the pure part of the gauged gradient, $\sum_k\vec e_k\pi_k=-i\hbar D_3^A$, multiplied on the right by $\vec e_y$. Writing it as $\hbar c\,\vec\pi$, that is as the left multiplication by an element, would make it even; the right multiplier $\vec e_y$ is what makes it odd, and it is also what reverses the chirality.
 
-*Step 2: factoring out the rest energy.* Write $F=\exp(-i\theta)\,G$ with $\theta=mc^2t'/\hbar$. The factor is the central element $\cos\theta-i\sin\theta$, which commutes with every operator of the reduction, so it can be cancelled on both sides. What is left of the mass term is $(\beta-1)mc^2$, which vanishes on the large part and is $-2mc^2$ on the small part, and the parent's two coupled equations follow:
+*Step 2: factoring out the rest energy.* Write $F=\exp(-i\theta)\,G$ with $\theta=mc^2r'_t/\hbar$. The factor is the central element $\cos\theta-i\sin\theta$, which commutes with every operator of the reduction, so it can be cancelled on both sides. What is left of the mass term is $(\beta-1)mc^2$, which vanishes on the large part and is $-2mc^2$ on the small part, and the parent's two coupled equations follow:
 
 $$
-i\hbar\frac{\partial\tilde{Ξ}^{\mathrm{sp}\,\mathrm{evn}}}{\partial t'}=O\tilde{Ξ}^{\mathrm{sp}\,\mathrm{odd}}+qΞ\tilde{Ξ}^{\mathrm{sp}\,\mathrm{evn}},
+i\hbar\frac{\partial\tilde{Ξ}^{\mathrm{sp}\,\mathrm{evn}}}{\partial r'_t}=O\tilde{Ξ}^{\mathrm{sp}\,\mathrm{odd}}+qΞ\tilde{Ξ}^{\mathrm{sp}\,\mathrm{evn}},
 $$
 
 $$
-i\hbar\frac{\partial\tilde{Ξ}^{\mathrm{sp}\,\mathrm{odd}}}{\partial t'}=O\tilde{Ξ}^{\mathrm{sp}\,\mathrm{evn}}-2mc^2\tilde{Ξ}^{\mathrm{sp}\,\mathrm{odd}}+qΞ\tilde{Ξ}^{\mathrm{sp}\,\mathrm{odd}} .
+i\hbar\frac{\partial\tilde{Ξ}^{\mathrm{sp}\,\mathrm{odd}}}{\partial r'_t}=O\tilde{Ξ}^{\mathrm{sp}\,\mathrm{evn}}-2mc^2\tilde{Ξ}^{\mathrm{sp}\,\mathrm{odd}}+qΞ\tilde{Ξ}^{\mathrm{sp}\,\mathrm{odd}} .
 $$
 
-*Step 3: the leading elimination.* The term $2mc^2\tilde{Ξ}^{\mathrm{sp}\,\mathrm{odd}}$ dominates the second equation whenever the fields, the kinetic energy and $\partial\tilde{Ξ}^{\mathrm{sp}\,\mathrm{odd}}/\partial t'$ are small compared with $mc^2$. Neglecting the other terms there,
+*Step 3: the leading elimination.* The term $2mc^2\tilde{Ξ}^{\mathrm{sp}\,\mathrm{odd}}$ dominates the second equation whenever the fields, the kinetic energy and $\partial\tilde{Ξ}^{\mathrm{sp}\,\mathrm{odd}}/\partial r'_t$ are small compared with $mc^2$. Neglecting the other terms there,
 
 $$
 \tilde{Ξ}^{\mathrm{sp}\,\mathrm{odd}}=\frac{O}{2mc^2}\,\tilde{Ξ}^{\mathrm{sp}\,\mathrm{evn}}+O(c^{-3}),
@@ -195,7 +195,7 @@ $$
 so the small part is of relative order $v/c$, as it must be. Substituting into the first equation eliminates $\tilde{Ξ}^{\mathrm{sp}\,\mathrm{odd}}$ exactly at this order:
 
 $$
-i\hbar\frac{\partial\tilde{Ξ}^{\mathrm{sp}\,\mathrm{evn}}}{\partial t'}=\left[\frac{O^2}{2mc^2}+qΞ\right]\tilde{Ξ}^{\mathrm{sp}\,\mathrm{evn}} ,
+i\hbar\frac{\partial\tilde{Ξ}^{\mathrm{sp}\,\mathrm{evn}}}{\partial r'_t}=\left[\frac{O^2}{2mc^2}+qΞ\right]\tilde{Ξ}^{\mathrm{sp}\,\mathrm{evn}} ,
 $$
 
 and on the large part $O^2/(2mc^2)=(\vec\pi^2-\hbar q\boldsymbol\sigma\cdot\vec B)/2m$, whose leading term is $\vec\pi^2/2m$ and whose remainder is evaluated in Problem 2.
@@ -215,7 +215,7 @@ e^{iS_1}He^{-iS_1}
 =H+i[S_1,H]-\tfrac12[S_1,[S_1,H]]-\tfrac{i}{6}[S_1,[S_1,[S_1,H]]]+\cdots
 $$
 
-the full transformed operator being this expression minus $i\hbar\partial/\partial t'$. Using $\beta O=-O\beta$ and $\beta E=E\beta$, the three elementary commutators are
+the full transformed operator being this expression minus $i\hbar\partial/\partial r'_t$. Using $\beta O=-O\beta$ and $\beta E=E\beta$, the three elementary commutators are
 
 $$
 i[S_1,\beta mc^2]=-O,\qquad
@@ -265,7 +265,7 @@ $$
 Subtracting the rest energy,
 
 $$
-\boxed{\;i\hbar\frac{\partial\tilde{Ξ}^{\mathrm{sp}\,\mathrm{evn}}}{\partial t'}=\left[\frac{(p-q\vec A)^2}{2m}+qΞ-\frac{q\hbar}{2m}\,\boldsymbol\sigma\cdot\vec B\right]\tilde{Ξ}^{\mathrm{sp}\,\mathrm{evn}}\;}
+\boxed{\;i\hbar\frac{\partial\tilde{Ξ}^{\mathrm{sp}\,\mathrm{evn}}}{\partial r'_t}=\left[\frac{(p-q\vec A)^2}{2m}+qΞ-\frac{q\hbar}{2m}\,\boldsymbol\sigma\cdot\vec B\right]\tilde{Ξ}^{\mathrm{sp}\,\mathrm{evn}}\;}
 $$
 
 which is the Pauli equation exactly as the parent reports it. The coefficient $1/2m$ is the whole content of the $g=2$ result of Problem 2: it is produced by the $2mc^2$ in the denominator of the small-component elimination, not put in by hand.
@@ -276,10 +276,10 @@ which is the Pauli equation exactly as the parent reports it. The coefficient $1
 
 **Solution.**
 
-*Step 1: the substitution.* The minimal coupling of this exercise is a shift of every derivative, $\partial/\partial Q_\mu\to\partial/\partial Q_\mu-iqA_\mu/\hbar$; on the gradient it is $\tilde\nabla\to\tilde\nabla-iq\tilde A/\hbar$, with $A_\mu=(Ξ,-\vec A)$ in this mostly-minus metric, so that $\tilde A=Ξ e_t-\vec A$. The time component gives
+*Step 1: the substitution.* The minimal coupling of this exercise is a shift of every derivative, $\partial/\partial R_\mu\to\partial/\partial R_\mu-iqA_\mu/\hbar$; on the gradient it is $\tilde\nabla\to\tilde\nabla-iq\tilde A/\hbar$, with $A_\mu=(Ξ,-\vec A)$ in this mostly-minus metric, so that $\tilde A=Ξ e_t-\vec A$. The time component gives
 
 $$
-i\hbar\frac{\partial}{\partial t'}\ \longrightarrow\ i\hbar\frac{\partial}{\partial t'}-qΞ ,
+i\hbar\frac{\partial}{\partial r'_t}\ \longrightarrow\ i\hbar\frac{\partial}{\partial r'_t}-qΞ ,
 $$
 
 and the spatial components give $\vec\pi=p-q\vec A$, that is the pure part of the gradient becomes $D_3^A$ with $\sum_k\vec e_k\pi_k=-i\hbar D_3^A$. The electrostatic energy is collected in $V=qΞ$. The sign of the coupling is tied to the metric and to the convention for $A_\mu$; the mostly-plus convention often writes the opposite sign. Within this article the statement above is used throughout.
@@ -472,7 +472,7 @@ $$
 (\vec E\times\vec\pi)_i^\dagger=(\vec E\times\vec\pi)_i+i\hbar(\nabla\times\vec E)_i ,
 $$
 
-so the term is Hermitian if and only if $\nabla\times\vec E=0$, its failure of Hermiticity being proportional to the curl. Since $\vec E=-\nablaΞ$ for an electrostatic field, $\nabla\times\vec E=-\nabla\times\nablaΞ=0$ identically, and the term is Hermitian. Writing it instead as $\boldsymbol\sigma\cdot(\nabla V\times\vec\pi)$ makes this manifest, because $\nabla V$ is a gradient. For a general time-dependent field, where $\vec E$ has a solenoidal part and $\nabla\times\vec E=-\partial/\partial t'\,\vec B$, the antisymmetric part does not vanish and the non-relativistic reduction requires the symmetrized ordering; this is the only place in the reduction where the result is convention- and ordering-sensitive beyond the metric conventions already noted.
+so the term is Hermitian if and only if $\nabla\times\vec E=0$, its failure of Hermiticity being proportional to the curl. Since $\vec E=-\nablaΞ$ for an electrostatic field, $\nabla\times\vec E=-\nabla\times\nablaΞ=0$ identically, and the term is Hermitian. Writing it instead as $\boldsymbol\sigma\cdot(\nabla V\times\vec\pi)$ makes this manifest, because $\nabla V$ is a gradient. For a general time-dependent field, where $\vec E$ has a solenoidal part and $\nabla\times\vec E=-\partial/\partial r'_t\,\vec B$, the antisymmetric part does not vanish and the non-relativistic reduction requires the symmetrized ordering; this is the only place in the reduction where the result is convention- and ordering-sensitive beyond the metric conventions already noted.
 
 *Step 2: the $\mathbb M_+$ representatives.* Under the isomorphism, a Hermitian $2\times2$ matrix $c r_t\,I_2+\vec r_\psi\cdot\boldsymbol\sigma$ corresponds to the Hermitian biquaternion $c r_t\,e_t+i\vec r_\psi\in\mathbb M_+$. Applying it term by term, with $\vec B=\sum_k B_k\vec e_k$ and $(\vec E\times\vec\pi)=(\vec E\times\vec\pi)_k\vec e_k$,
 
@@ -493,7 +493,7 @@ Every term of the reduced, two-component Hamiltonian is Hermitian, hence every t
 
 2. **The anti-Hermitian generator.** $S_1$ is Hermitian, so $iS_1$ is anti-Hermitian: it plays the rôle that the elements of $\mathbb M_-$ play in the companion quantum article, where the Lie algebra of the $*$-unitary group is $\mathbb M_-$. It is not itself in $\mathbb M_-$, because it is built from right multiplications and is not a left multiplication by an element. The two gradings must not be conflated: the Foldy–Wouthuysen grading is by conjugation with $\beta$, the $\mathbb M_\pm$ grading is by ${}^{*}$. Thus the odd operator $O$ is Foldy–Wouthuysen-odd and Hermitian, yet it is not the left multiplication by the element $\hbar c\vec\pi$ — that element acts on one side and is even — and the identification of "odd" with "not in $\mathbb M_+$" is incorrect.
 
-3. **The real structure and the mass term.** In the biquaternion equation the conjugation $\flat=-{}^{*}$ is the algebra's real structure. It maps $\mathbb M_+$ to $\mathbb M_-$ and fixes $\mathbb M_-$: if $F\in\mathbb M_+$ then $F^\flat=-F\in\mathbb M_-$, and if $F\in\mathbb M_-$ then $F^\flat=F$. Its action is diagonal on the sector decomposition with opposite signs $\mp1$: a coupling built on $\flat$ — a Majorana-type mass, $mF^\flat$ — would carry those opposite signs. The parent's mass term is not that coupling; it is the linear, chirality-off-diagonal pair $\tilde\nabla F_R=mF_L$, $\tilde\nabla^{\natural}F_L=mF_R$, which couples the two values of the chirality and leaves each element's sector membership untouched. The operation that exchanges the two sectors is multiplication by the central $i$. The rest-energy factor that is removed before the reduction, the central element $\cos\theta-i\sin\theta$ with $\theta=mc^2t'/\hbar$, is not Hermitian either: the conjugation inverts $\theta$, so the element is fixed by ${}^{*}$ neither as it stands nor after multiplication by $-1$, and it lies in neither $\mathbb M_+$ nor $\mathbb M_-$. The phase that removes the mass term from a $\beta$-diagonal equation, $\exp(-i\beta\theta)=\cos\theta\,e_t+\sin\theta\,\vec e_x$, is a right multiplication, and it splits the other way: its scalar part lies in $\mathbb M_+$ and its pure part in $\mathbb M_-$, since $\vec e_x$ is anti-Hermitian. Either way the rest-energy factor is a phase and not an observable, and it must be factored out before a two-component (hence $\mathbb M_+$) description of the dynamics is reached.
+3. **The real structure and the mass term.** In the biquaternion equation the conjugation $\flat=-{}^{*}$ is the algebra's real structure. It maps $\mathbb M_+$ to $\mathbb M_-$ and fixes $\mathbb M_-$: if $F\in\mathbb M_+$ then $F^\flat=-F\in\mathbb M_-$, and if $F\in\mathbb M_-$ then $F^\flat=F$. Its action is diagonal on the sector decomposition with opposite signs $\mp1$: a coupling built on $\flat$ — a Majorana-type mass, $mF^\flat$ — would carry those opposite signs. The parent's mass term is not that coupling; it is the linear, chirality-off-diagonal pair $\tilde\nabla F_R=mF_L$, $\tilde\nabla^{\natural}F_L=mF_R$, which couples the two values of the chirality and leaves each element's sector membership untouched. The operation that exchanges the two sectors is multiplication by the central $i$. The rest-energy factor that is removed before the reduction, the central element $\cos\theta-i\sin\theta$ with $\theta=mc^2r'_t/\hbar$, is not Hermitian either: the conjugation inverts $\theta$, so the element is fixed by ${}^{*}$ neither as it stands nor after multiplication by $-1$, and it lies in neither $\mathbb M_+$ nor $\mathbb M_-$. The phase that removes the mass term from a $\beta$-diagonal equation, $\exp(-i\beta\theta)=\cos\theta\,e_t+\sin\theta\,\vec e_x$, is a right multiplication, and it splits the other way: its scalar part lies in $\mathbb M_+$ and its pure part in $\mathbb M_-$, since $\vec e_x$ is anti-Hermitian. Either way the rest-energy factor is a phase and not an observable, and it must be factored out before a two-component (hence $\mathbb M_+$) description of the dynamics is reached.
 
 *Step 4: the sides, one line per operator.* Every operator of the reduction is listed with the element that multiplies on the left and the element that multiplies on the right. The column headed "side" is the answer to the only question that matters here: whether the operator is a single multiplication or a product of two.
 
@@ -537,7 +537,7 @@ $$
 S_1=-\frac{i}{2mc^2}\beta O=-\frac{1}{2mc}\sum_k\vec e_k\pi_k\,(\cdot)\,\vec e_z=\frac{i\hbar}{2mc}\bigl(D_3^A\cdot\bigr)\vec e_z ,
 $$
 
-produces the Pauli Hamiltonian $i\hbar\,\partial\tilde{Ξ}^{\mathrm{sp}\,\mathrm{evn}}/\partial t'=\bigl[\vec\pi^2/2m+qΞ-(q\hbar/2m)\boldsymbol\sigma\cdot\vec B\bigr]\tilde{Ξ}^{\mathrm{sp}\,\mathrm{evn}}$, reproducing the parent article. The minimal substitution in the gradient, $\tilde\nabla\to\tilde\nabla-iq\tilde A/\hbar$, gives $[\pi_i,\pi_j]=i\hbar q\epsilon_{ijk}B_k$ and $(\boldsymbol\sigma\cdot\vec\pi)^2=\vec\pi^2-q\hbar\boldsymbol\sigma\cdot\vec B$, and the coefficient $1/2m$ produced by the elimination fixes $g=2$ and $\vec\mu=(q/m)\vec S$, hence $\mu_B=e\hbar/2m_e$ for the electron. At the next order in $1/c$, the second-order term $-\tfrac12[S_1,[S_1,E]]$ of the first transformation gives the Darwin term $+\hbar^2\nabla^2V/(8m^2c^2)=-(q\hbar^2/8m^2c^2)\nabla\cdot\vec E$ and the spin–orbit coupling $-(q\hbar/4m^2c^2)\boldsymbol\sigma\cdot(\vec E\times\vec\pi)=(\hbar/4m^2c^2)r^{-1}(dV/dr)\boldsymbol\sigma\cdot\vec L$, while the expansion of the free large-part energy gives the relativistic kinetic correction $-(\boldsymbol\sigma\cdot\vec\pi)^4/(8m^3c^2)$. The second transformation removes the residual odd term $O_1$ and adds no even term at this order. Summed, these reproduce the exact Dirac fine structure of hydrogenic ions for 36 levels with $n\le6$, with difference exactly zero.
+produces the Pauli Hamiltonian $i\hbar\,\partial\tilde{Ξ}^{\mathrm{sp}\,\mathrm{evn}}/\partial r'_t=\bigl[\vec\pi^2/2m+qΞ-(q\hbar/2m)\boldsymbol\sigma\cdot\vec B\bigr]\tilde{Ξ}^{\mathrm{sp}\,\mathrm{evn}}$, reproducing the parent article. The minimal substitution in the gradient, $\tilde\nabla\to\tilde\nabla-iq\tilde A/\hbar$, gives $[\pi_i,\pi_j]=i\hbar q\epsilon_{ijk}B_k$ and $(\boldsymbol\sigma\cdot\vec\pi)^2=\vec\pi^2-q\hbar\boldsymbol\sigma\cdot\vec B$, and the coefficient $1/2m$ produced by the elimination fixes $g=2$ and $\vec\mu=(q/m)\vec S$, hence $\mu_B=e\hbar/2m_e$ for the electron. At the next order in $1/c$, the second-order term $-\tfrac12[S_1,[S_1,E]]$ of the first transformation gives the Darwin term $+\hbar^2\nabla^2V/(8m^2c^2)=-(q\hbar^2/8m^2c^2)\nabla\cdot\vec E$ and the spin–orbit coupling $-(q\hbar/4m^2c^2)\boldsymbol\sigma\cdot(\vec E\times\vec\pi)=(\hbar/4m^2c^2)r^{-1}(dV/dr)\boldsymbol\sigma\cdot\vec L$, while the expansion of the free large-part energy gives the relativistic kinetic correction $-(\boldsymbol\sigma\cdot\vec\pi)^4/(8m^3c^2)$. The second transformation removes the residual odd term $O_1$ and adds no even term at this order. Summed, these reproduce the exact Dirac fine structure of hydrogenic ions for 36 levels with $n\le6$, with difference exactly zero.
 
 Every term of the reduced Hamiltonian is Hermitian and therefore lies in $\mathbb M_+$. The objects that do not are the two-sided operators of the reduction — the mass term $\beta mc^2$ and the odd operator $O$, which end in right multiplications by $i\vec e_x$ and by $\vec e_y$ and so are not left multiplications by an element — together with the anti-Hermitian generator $iS_1$ and the rest-energy phase, which is not Hermitian and belongs to neither sector. The real structure $\flat$ — whose opposite-sign action on the sectors a Majorana-type coupling would carry — is not the parent's mass term, which is the linear coupling of the two chiralities. The Foldy–Wouthuysen grading by $\beta$ must not be confused with the $\mathbb M_\pm$ grading by ${}^{*}$. All terms are energies, the three corrections carrying the expected $c^{-2}$.
 

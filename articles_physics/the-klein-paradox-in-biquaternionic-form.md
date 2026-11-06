@@ -8,7 +8,7 @@ This article treats the Klein step in the biquaternion framework. The framework 
 
 The article is organised as follows. The next section writes the Dirac equation at a step and reduces it along one axis. The third section does the standard matching and gives the reflection and transmission coefficients, with the exact current conservation checked. The fourth states the paradox and its quantum-field-theoretic resolution. The fifth gives the biquaternion interpretation and separates what the algebra supplies from what it only transcribes. The sixth reports a worked numerical case and the massless limit. The closing sections are the open questions, the summary, the notation table and the literature.
 
-The conventions are those of the companion articles. The algebra is $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ with units $e_t = 1, \vec e_x, \vec e_y, \vec e_z$, $\vec e_k^2 = -e_t$, central scalar imaginary $i$; $\mathbb{M}_+$ is the Hermitian and $\mathbb{M}_-$ the anti-Hermitian subspace; the gradient is $\tilde\nabla = e_t\partial/\partial Q_t + \vec e_x\partial/\partial Q_x + \vec e_y\partial/\partial Q_y + \vec e_z\partial/\partial Q_z$; the biquaternion Dirac equation is the linear chiral pair $\tilde\nabla\tilde{Ξ}^{\mathrm{sp}}_R = m\tilde{Ξ}^{\mathrm{sp}}_L$, $\tilde\nabla^{\natural}\tilde{Ξ}^{\mathrm{sp}}_L = m\tilde{Ξ}^{\mathrm{sp}}_R$; and the minimal coupling replaces $\tilde\nabla$ by $D = \tilde\nabla + \frac{iϙ}{\hbar}\tilde{A}$, acting by left multiplication.
+The conventions are those of the companion articles. The algebra is $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ with units $e_t = 1, \vec e_x, \vec e_y, \vec e_z$, $\vec e_k^2 = -e_t$, central scalar imaginary $i$; $\mathbb{M}_+$ is the Hermitian and $\mathbb{M}_-$ the anti-Hermitian subspace; the gradient is $\tilde\nabla = e_t\partial/\partial R_t + \vec e_x\partial/\partial R_x + \vec e_y\partial/\partial R_y + \vec e_z\partial/\partial R_z$; the biquaternion Dirac equation is the linear chiral pair $\tilde\nabla\tilde{Ξ}^{\mathrm{sp}}_R = m\tilde{Ξ}^{\mathrm{sp}}_L$, $\tilde\nabla^{\natural}\tilde{Ξ}^{\mathrm{sp}}_L = m\tilde{Ξ}^{\mathrm{sp}}_R$; and the minimal coupling replaces $\tilde\nabla$ by $D = \tilde\nabla + \frac{iϙ}{\hbar}\tilde{A}$, acting by left multiplication.
 
 ## The Dirac Equation at a Potential Step
 
@@ -182,7 +182,7 @@ The biquaternion framework locates the three ingredients: the potential is centr
 |---|---|
 | $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ | Biquaternion algebra |
 | $e_t = 1, \vec e_x, \vec e_y, \vec e_z$ | Quaternion basis, $\vec e_k^2 = -e_t$ |
-| $\tilde\nabla = e_t\partial/\partial Q_t + \sum_{k=x,y,z}\vec e_k\,\partial/\partial Q_k$ | Biquaternionic gradient |
+| $\tilde\nabla = e_t\partial/\partial R_t + \sum_{k=x,y,z}\vec e_k\,\partial/\partial R_k$ | Biquaternionic gradient |
 | $D = \tilde\nabla + \frac{iϙ}{\hbar}\tilde{A}$ | Covariant derivative (minimal coupling) |
 | $\tilde{A} = i\,a'_te_t$ | Electrostatic potential biquaternion |
 | $V_0$, $ϙ\xi(x) = V_0\mathrm{H}^{\mathrm{hvs}}(x)$ | Step height and potential energy |

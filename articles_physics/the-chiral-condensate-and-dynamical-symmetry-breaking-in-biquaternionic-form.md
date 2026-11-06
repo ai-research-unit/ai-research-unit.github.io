@@ -99,7 +99,7 @@ $$
 
 the four factors of $i$ multiplying to $i^{4}=+1$. The composite is $-R_{\vec e_z}$, and $i$ times it is the corpus's volume cell of the frame, $\xi=-iR_{\vec e_z}$, which is the fifth cell. That the composite is a pure right multiplication is not an accident of the order: the left slots multiply to $-\vec e_t$, a central scalar, and a central scalar has no side, so only the right multiplications are left standing. This is recorded once, here, because it is the one place where the four generators are used together.
 
-**The frame, the coordinates and the units.** Every derivative in a two-sided display is with respect to $x_\mu=(r'_t,r_x,r_y,r_z)$, in units $c=1$; the $i c r'_t$ normalization $Q_t=i c r'_t$ is named only where the gradient is written. In these coordinates $\partial^2/\partial Q_t^2=-\partial^2/\partial t'^2$, so the contraction that reproduces $\Box$ carries the tuple $(-1,+1,+1,+1)$ in the material coordinates, while the generators carry the same vector with the opposite overall sign, $\varepsilon_\mu$; the minus between them is taken once, in $\mathbb{D}^{2}$, and no display below carries a second sign vector. The plain form, read as the trace formula $\mathrm{Tr}(\tilde Q_1\tilde Q_2)=2\,\mathrm{Sc}(\tilde Q_1\tilde Q_2)$, is inherited unchanged. Throughout, $c=1/\sqrt{\epsilon\mu}$ is the speed of light in the medium and $c_0$ the vacuum value; natural units $\hbar=c=1$ are used in the gap-equation section.
+**The frame, the coordinates and the units.** Every derivative in a two-sided display is with respect to $x_\mu=(r'_t,r_x,r_y,r_z)$, in units $c=1$; the $i c r'_t$ normalization $Q_t=i c r'_t$ is named only where the gradient is written. In these coordinates $\partial^2/\partial R_t^2=-\partial^2/\partial r'_t^2$, so the contraction that reproduces $\Box$ carries the tuple $(-1,+1,+1,+1)$ in the material coordinates, while the generators carry the same vector with the opposite overall sign, $\varepsilon_\mu$; the minus between them is taken once, in $\mathbb{D}^{2}$, and no display below carries a second sign vector. The plain form, read as the trace formula $\mathrm{Tr}(\tilde Q_1\tilde Q_2)=2\,\mathrm{Sc}(\tilde Q_1\tilde Q_2)$, is inherited unchanged. Throughout, $c=1/\sqrt{\epsilon\mu}$ is the speed of light in the medium and $c_0$ the vacuum value; natural units $\hbar=c=1$ are used in the gap-equation section.
 
 The framework results used here are those of the companion articles:
 
@@ -111,7 +111,7 @@ The framework results used here are those of the companion articles:
 
 ## The Pair, the Two-Sided Equation and the Chirality
 
-**The gradient equation.** The gradient is $\tilde{\nabla}=e_t\partial/\partial Q_t+\sum_k\vec e_k\partial/\partial Q_k$, and its quaternion conjugate squares with it to the scalar d'Alembertian, $\tilde{\nabla}\tilde{\nabla}^{\natural}=\tilde{\nabla}^{\natural}\tilde{\nabla}=\Box$. The chiral pair
+**The gradient equation.** The gradient is $\tilde{\nabla}=e_t\partial/\partial R_t+\sum_k\vec e_k\partial/\partial R_k$, and its quaternion conjugate squares with it to the scalar d'Alembertian, $\tilde{\nabla}\tilde{\nabla}^{\natural}=\tilde{\nabla}^{\natural}\tilde{\nabla}=\Box$. The chiral pair
 
 $$
 \tilde{\nabla}\tilde{Ξ}^{\mathrm{sp}}_R=m\tilde{Ξ}^{\mathrm{sp}}_L,\qquad
@@ -126,10 +126,10 @@ $$
 \mathbb{D}\tilde{Ξ}^{\mathrm{sp}}=-\sum_\mu e_\mu\,\frac{\partial\tilde{Ξ}^{\mathrm{sp}}}{\partial x_\mu}\,\vec e_{\nu(\mu)} ,
 \qquad
 \mathbb{D}^{2}=-\sum_\mu\varepsilon_\mu\frac{\partial^{2}}{\partial x_\mu^{2}}
-=-\frac{\partial^{2}}{\partial t'^{2}}+\sum_k\frac{\partial^{2}}{\partial x_k^{2}}=\Box ,
+=-\frac{\partial^{2}}{\partial r'_t^{2}}+\sum_k\frac{\partial^{2}}{\partial x_k^{2}}=\Box ,
 $$
 
-a sum of four products — one element, one derivative of the field, one unit — and the square is the d'Alembertian: the first equality is the anticommutator $\{G_\mu,G_\rho\}=2\varepsilon_\mu\delta_{\mu\rho}$ with the derivatives commuting with the constant multipliers, the last is the definition $\Box=\partial^2/\partial Q_\mu\partial Q_\mu$ read on the $i c r'_t$ slice, where $Q_k=x_k$ and $\partial^2/\partial Q_t^2=-\partial^2/\partial t'^2$, so that $\Box=-\partial^2/\partial t'^2+\sum_k\partial^2/\partial x_k^2$; the minus in front of the sum is the one of that convention, and it is taken once, here. The equation is $(\mathbb{D}-m)\tilde{Ξ}^{\mathrm{sp}}=0$. It is one equation and not four, and because $\xi$ anticommutes with every generator it splits by value into two members, $\mathbb{D}\tilde{Ξ}^{\mathrm{sp}}_R=m\tilde{Ξ}^{\mathrm{sp}}_L$ and $\mathbb{D}\tilde{Ξ}^{\mathrm{sp}}_L=m\tilde{Ξ}^{\mathrm{sp}}_R$: the derivative carries each value into the other and the mass carries it back. Every bilinear and every rotation below is an object of this equation.
+a sum of four products — one element, one derivative of the field, one unit — and the square is the d'Alembertian: the first equality is the anticommutator $\{G_\mu,G_\rho\}=2\varepsilon_\mu\delta_{\mu\rho}$ with the derivatives commuting with the constant multipliers, the last is the definition $\Box=\partial^2/\partial R_\mu\partial R_\mu$ read on the $i c r'_t$ slice, where $Q_k=x_k$ and $\partial^2/\partial R_t^2=-\partial^2/\partial r'_t^2$, so that $\Box=-\partial^2/\partial r'_t^2+\sum_k\partial^2/\partial x_k^2$; the minus in front of the sum is the one of that convention, and it is taken once, here. The equation is $(\mathbb{D}-m)\tilde{Ξ}^{\mathrm{sp}}=0$. It is one equation and not four, and because $\xi$ anticommutes with every generator it splits by value into two members, $\mathbb{D}\tilde{Ξ}^{\mathrm{sp}}_R=m\tilde{Ξ}^{\mathrm{sp}}_L$ and $\mathbb{D}\tilde{Ξ}^{\mathrm{sp}}_L=m\tilde{Ξ}^{\mathrm{sp}}_R$: the derivative carries each value into the other and the mass carries it back. Every bilinear and every rotation below is an object of this equation.
 
 **Chirality, and why it belongs to the two-sided equation.** On the algebra the statement is the side and nothing else: $\xi$ is a pure right multiplier and the gradient is a pure left multiplier, so they commute, and each member of the pair acts inside one value. The two-sided writing is where the derivative occupies **both** slots, and there the same operator anticommutes with it:
 
@@ -221,7 +221,7 @@ $$
 
 which vanishes exactly when $m=0$. The mass is the only explicit breaking, and the identity is exact at the classical level. The quantum correction to it — the axial anomaly, which adds a term even at $m=0$ — belongs to the companion articles; the *spontaneous* breaking that a condensate produces is a separate phenomenon from that anomaly.
 
-**Why the sum carries no metric factor.** The metric is already spent inside the generators, since $G_0^{2}=+\mathrm{id}$ and $G_k^{2}=-\mathrm{id}$ differ in sign exactly as the entries of $g$ do. Hence $j_{5k}$ is the contravariant spatial component and $\sum_\mu\partial j_{5\mu}/\partial x_\mu=\partial j_5^0/\partial t'+\nabla\cdot\vec j_5$ is the divergence; an extra $\varepsilon$ would apply the metric a second time.
+**Why the sum carries no metric factor.** The metric is already spent inside the generators, since $G_0^{2}=+\mathrm{id}$ and $G_k^{2}=-\mathrm{id}$ differ in sign exactly as the entries of $g$ do. Hence $j_{5k}$ is the contravariant spatial component and $\sum_\mu\partial j_{5\mu}/\partial x_\mu=\partial j_5^0/\partial r'_t+\nabla\cdot\vec j_5$ is the divergence; an extra $\varepsilon$ would apply the metric a second time.
 
 **The companion's notation.** There the identity reads $\langle\tilde\nabla,\tilde J_5\rangle_{\natural}=\mathrm{Sc}(\tilde\nabla^{\natural}\tilde J_5)=2im\,\tilde{Ξ}^{\mathrm{sp}\natural}\xi\tilde{Ξ}^{\mathrm{sp}}$, the time slot of $\tilde J_5$ carrying the factor $ic$ that the $i c r'_t$ coordinate requires. The two notations name the same operator, and the same glyph: $\xi$ is the corpus's chirality operator, the frame's fifth cell, a pure right multiplier, and it takes the value $-1$ on $\tilde{Ξ}^{\mathrm{sp}}_L$ and $+1$ on $\tilde{Ξ}^{\mathrm{sp}}_R$ in either notation.
 
@@ -508,8 +508,8 @@ The framework supplies the carrier, the symmetry pattern and the sector placemen
 | $i$ | Central scalar imaginary, $i^2=-1$ |
 | $\mathbb{M}_-,\mathbb{M}_+$ | Material (anti-Hermitian) and informational (Hermitian) sectors |
 | $\mathbb{C}_{\mathbb{B}}=\mathrm{span}_{\mathbb{R}}\{e_t,ie_t\}$ | Centre; the condensate itself sits on $\mathbb{R}e_t$ |
-| $\tilde{\nabla}=e_t\partial/\partial Q_t+\sum_\mu\vec e_\mu\partial/\partial Q_\mu$ | Biquaternionic gradient |
-| $\Box=\tilde{\nabla}\tilde{\nabla}^{\natural}=\partial^2/\partial Q_t^2+\sum_k\partial^2/\partial Q_k^2$ | d'Alembertian, series convention; $Q_k=x_k$ |
+| $\tilde{\nabla}=e_t\partial/\partial R_t+\sum_\mu\vec e_\mu\partial/\partial R_\mu$ | Biquaternionic gradient |
+| $\Box=\tilde{\nabla}\tilde{\nabla}^{\natural}=\partial^2/\partial R_t^2+\sum_k\partial^2/\partial R_k^2$ | d'Alembertian, series convention; $Q_k=x_k$ |
 | $\tilde{\nabla}\tilde{Ξ}^{\mathrm{sp}}_R=m\tilde{Ξ}^{\mathrm{sp}}_L$, $\tilde{\nabla}^{\natural}\tilde{Ξ}^{\mathrm{sp}}_L=m\tilde{Ξ}^{\mathrm{sp}}_R$ | Gradient equation: the linear chiral pair, one-sided |
 | $(\mathbb{D}-m)\tilde{Ξ}^{\mathrm{sp}}=0$, $\mathbb{D}\tilde{Ξ}^{\mathrm{sp}}=-\sum_\mu e_\mu(\partial_\mu\tilde{Ξ}^{\mathrm{sp}})\vec e_{\nu(\mu)}$ | Two-sided equation; $\mathbb{D}^2=\Box$ |
 | $G_\mu:\ Q\mapsto i e_\mu Q\vec e_{\nu(\mu)}$, $\nu(t)=x$, $\nu(k)=y$ | Generator actions; $\{G_\mu,G_\nu\}=2\varepsilon_\mu\delta_{\mu\nu}\,\mathrm{id}$ |
