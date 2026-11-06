@@ -71,7 +71,7 @@
         <h1 id="n-regularity-and-n-degeneracy-in-the-biquaternion-algebra"><strong>N-Regularity and N-Degeneracy in the Biquaternion Algebra</strong></h1>
 <h2 id="introduction">Introduction</h2>
 <p>The biquaternion algebra carries one multiplicative norm, the quaternionic norm, the diagonal of the general quaternionic bilinear form. It alone decides invertibility. This article defines it, proves its multiplicative law, and separates the elements of $\mathbb{B}$ into the two cases of its value: the <strong>$\natural$-regular</strong> case of non-zero norm, whose elements are the units of the algebra and form a group, and the <strong>$\natural$-degenerate</strong> case of zero norm, the null cone. This article is the study of this one norm and of its two cases.</p>
-<p><strong>Notation.</strong> An element is $\tilde Q=Q_t e_t+\vec Q$, its natural conjugation is $\tilde Q^{\natural}=Q_t-\vec Q$, and the product of the article is the plain product $\tilde P\tilde Q$ of the algebra, which is associative and has the two-sided unit $e_t$. The norm is $\langle\tilde Q\rangle_{\natural}=\sum_\mu Q_\mu^2$. A biquaternion is <strong>$\natural$-regular</strong> when $\langle\tilde Q\rangle_{\natural}\neq0$ and <strong>$\natural$-degenerate</strong> when $\langle\tilde Q\rangle_{\natural}=0$, the two terms fixed in <em>The Four Forms and the Four Algebraic Norms over the Biquaternion Algebra</em>, §<em>Regular and Degenerate Biquaternions</em>. The product $\tilde P^{\natural}\tilde Q$ has a left unit and no right unit; it is recorded in one remark in §<em>The $\natural$-Regular Case</em>, because only the plain product has a group of units.</p>
+<p><strong>Notation.</strong> An element is $\tilde Q=Q_t e_t+\vec Q$, its natural conjugation is $\tilde Q^{\natural}=Q_t-\vec Q$, and the product of the article is the plain product $\tilde Q_2\tilde Q$ of the algebra, which is associative and has the two-sided unit $e_t$. The norm is $\langle\tilde Q\rangle_{\natural}=\sum_\mu Q_\mu^2$. A biquaternion is <strong>$\natural$-regular</strong> when $\langle\tilde Q\rangle_{\natural}\neq0$ and <strong>$\natural$-degenerate</strong> when $\langle\tilde Q\rangle_{\natural}=0$, the two terms fixed in <em>The Four Forms and the Four Algebraic Norms over the Biquaternion Algebra</em>, §<em>Regular and Degenerate Biquaternions</em>. The product $\tilde Q_2^{\natural}\tilde Q$ has a left unit and no right unit; it is recorded in one remark in §<em>The $\natural$-Regular Case</em>, because only the plain product has a group of units.</p>
 <h2 id="the-quaternionic-norm">The Quaternionic Norm</h2>
 <p><strong>Definition.</strong> The <strong>quaternionic norm</strong>, also the <strong>general quaternionic bilinear algebraic norm</strong>, of $\tilde Q=Q_t e_t+\vec Q$ is the complex scalar</p>
 <p>$$
@@ -82,19 +82,19 @@ $$</p>
 \tilde Q\tilde Q^{\natural}=\tilde Q^{\natural}\tilde Q=\langle\tilde Q\rangle_{\natural}e_t.
 $$</p>
 <p>The value is a complex scalar, not a length. Its vanishing set is the null cone in $\mathbb{B}$, not a sphere. The name records the algebra: $\mathbb{B}$ is the complexification of the quaternions, and $\langle\cdot\rangle_{\natural}$ is the quaternionic norm of that algebra.</p>
-<p><strong>Theorem (multiplicativity).</strong> For all $\tilde P,\tilde Q\in\mathbb{B}$,</p>
+<p><strong>Theorem (multiplicativity).</strong> For all $\tilde Q,\tilde Q_2\in\mathbb{B}$,</p>
 <p>$$
-\langle\tilde P\tilde Q\rangle_{\natural}=\langle\tilde P\rangle_{\natural}\langle\tilde Q\rangle_{\natural}.
+\langle\tilde Q_2\tilde Q\rangle_{\natural}=\langle\tilde Q_2\rangle_{\natural}\langle\tilde Q\rangle_{\natural}.
 $$</p>
-<p><em>Proof.</em> The natural conjugation is an anti-automorphism, so $(\tilde P\tilde Q)^{\natural}=\tilde Q^{\natural}\tilde P^{\natural}$. Then</p>
+<p><em>Proof.</em> The natural conjugation is an anti-automorphism, so $(\tilde Q_2\tilde Q)^{\natural}=\tilde Q^{\natural}\tilde Q_2^{\natural}$. Then</p>
 <p>$$
-(\tilde P\tilde Q)(\tilde P\tilde Q)^{\natural}
-=\tilde P\tilde Q\tilde Q^{\natural}\tilde P^{\natural}
-=\tilde P\,\langle\tilde Q\rangle_{\natural}e_t\,\tilde P^{\natural}
-=\langle\tilde Q\rangle_{\natural}\tilde P\tilde P^{\natural}
-=\langle\tilde P\rangle_{\natural}\langle\tilde Q\rangle_{\natural}e_t,
+(\tilde Q_2\tilde Q)(\tilde Q_2\tilde Q)^{\natural}
+=\tilde Q_2\tilde Q\tilde Q^{\natural}\tilde Q_2^{\natural}
+=\tilde Q_2\,\langle\tilde Q\rangle_{\natural}e_t\,\tilde Q_2^{\natural}
+=\langle\tilde Q\rangle_{\natural}\tilde Q_2\tilde Q_2^{\natural}
+=\langle\tilde Q_2\rangle_{\natural}\langle\tilde Q\rangle_{\natural}e_t,
 $$</p>
-<p>and the left side is $\langle\tilde P\tilde Q\rangle_{\natural}e_t$ by the identity of the norm.</p>
+<p>and the left side is $\langle\tilde Q_2\tilde Q\rangle_{\natural}e_t$ by the identity of the norm.</p>
 <p><strong>Consequence.</strong> The unit set $\{\langle\cdot\rangle_{\natural}\neq0\}$ and the null cone $\{\langle\cdot\rangle_{\natural}=0\}$ are both stable under the product.</p>
 <h2 id="the-two-cases">The Two Cases</h2>
 <p>The value of the norm separates the algebra into two parts.</p>
@@ -139,12 +139,12 @@ $$</p>
 <p>and it is the <strong>unit group</strong> of the plain product.</p>
 <p>By the criterion above it is the complement of the null cone: the algebra minus the origin and the zero divisors.</p>
 <p><strong>Theorem.</strong> $\mathbb{B}^{\times}$ is a group under the plain product.</p>
-<p><em>Proof.</em> Closure: $\langle\tilde P\tilde Q\rangle_{\natural}=\langle\tilde P\rangle_{\natural}\langle\tilde Q\rangle_{\natural}\neq0$. Associativity: the plain product is associative. Identity: $e_t$, with $\langle e_t\rangle_{\natural}=1$. Inverse: for $\tilde Q\in\mathbb{B}^{\times}$,</p>
+<p><em>Proof.</em> Closure: $\langle\tilde Q_2\tilde Q\rangle_{\natural}=\langle\tilde Q_2\rangle_{\natural}\langle\tilde Q\rangle_{\natural}\neq0$. Associativity: the plain product is associative. Identity: $e_t$, with $\langle e_t\rangle_{\natural}=1$. Inverse: for $\tilde Q\in\mathbb{B}^{\times}$,</p>
 <p>$$
 \tilde Q^{-1}=\frac{\tilde Q^{\natural}}{\langle\tilde Q\rangle_{\natural}},
 $$</p>
 <p>since $\tilde Q\tilde Q^{\natural}=\tilde Q^{\natural}\tilde Q=\langle\tilde Q\rangle_{\natural}e_t$.</p>
-<p><strong>Remark (the inverse is the conjugate over the norm).</strong> In the plain product the two-sided inverse is $\tilde Q^{\natural}/\langle\tilde Q\rangle_{\natural}$. In the product $\tilde P^{\natural}\tilde Q$ the one-sided solution is $\tilde Q/\langle\tilde Q\rangle_{\natural}$. The criterion $\langle\cdot\rangle_{\natural}\neq0$ is the same; the inverse is not. The unit group is a plain-product object.</p>
+<p><strong>Remark (the inverse is the conjugate over the norm).</strong> In the plain product the two-sided inverse is $\tilde Q^{\natural}/\langle\tilde Q\rangle_{\natural}$. In the product $\tilde Q_2^{\natural}\tilde Q$ the one-sided solution is $\tilde Q/\langle\tilde Q\rangle_{\natural}$. The criterion $\langle\cdot\rangle_{\natural}\neq0$ is the same; the inverse is not. The unit group is a plain-product object.</p>
 <p><strong>Theorem (the partition).</strong> The algebra is the disjoint union of the $\natural$-regular and the $\natural$-degenerate biquaternions,</p>
 <p>$$
 \mathbb{B}=\{\tilde Q:\langle\tilde Q\rangle_{\natural}\neq0\}\uplus\{\tilde Q:\langle\tilde Q\rangle_{\natural}=0\}=\mathbb{B}^{\times}\uplus\mathcal{N},
@@ -157,7 +157,7 @@ $$</p>
 $$</p>
 <p>The origin is the only point of the cone that is not a zero divisor.</p>
 <p><em>Proof.</em> The cone is the zero set of a polynomial, hence closed, and it is a proper algebraic subset, hence of empty interior; its complement is open and dense. The boundary of the group is the intersection of the closures of the group and of its complement, that is the cone.</p>
-<p><strong>Remark (the $\natural$-bilinear product).</strong> For the product $\tilde P^{\natural}\tilde Q$ the element $e_t$ is a left unit and there is no right unit, so no element has a two-sided inverse and there is no group of units. The two one-sided equations with $e_t$ have the common unique solution $\tilde Q/\langle\tilde Q\rangle_{\natural}$ exactly when $\langle\tilde Q\rangle_{\natural}\neq0$. The criterion is unchanged; what is lost is the group, and with it the two-sided inverse $\tilde Q^{\natural}/\langle\tilde Q\rangle_{\natural}$. That is why this article uses the plain product.</p>
+<p><strong>Remark (the $\natural$-bilinear product).</strong> For the product $\tilde Q_2^{\natural}\tilde Q$ the element $e_t$ is a left unit and there is no right unit, so no element has a two-sided inverse and there is no group of units. The two one-sided equations with $e_t$ have the common unique solution $\tilde Q/\langle\tilde Q\rangle_{\natural}$ exactly when $\langle\tilde Q\rangle_{\natural}\neq0$. The criterion is unchanged; what is lost is the group, and with it the two-sided inverse $\tilde Q^{\natural}/\langle\tilde Q\rangle_{\natural}$. That is why this article uses the plain product.</p>
 <h2 id="the-math96-degenerate-case-the-origin-together-with-the-zero-divisors">The $\natural$-degenerate case: the origin together with the zero divisors</h2>
 <p><strong>Definition.</strong> Let $\cdot$ be a product on $\mathbb{B}$. A non-zero $\tilde Q$ is a <strong>left zero divisor</strong> of $\cdot$ if $\tilde Q\cdot\tilde X=0$ for some $\tilde X\neq0$, a <strong>right zero divisor</strong> if $\tilde X\cdot\tilde Q=0$ for some $\tilde X\neq0$, and a <strong>zero divisor</strong> if it is one or the other. The element $0$ is not a zero divisor of any product.</p>
 <p>Throughout this section the product is the plain product $\tilde Q_1\tilde Q_2$ of the algebra, which is associative and has the two-sided unit $e_t$; it is the product in which the zero-divisor set is visible as a stratification.</p>
@@ -292,7 +292,7 @@ $$</p>
 <td>the natural conjugation</td>
 </tr>
 <tr>
-<td>$\tilde P\tilde Q$</td>
+<td>$\tilde Q_2\tilde Q$</td>
 <td>the plain product, associative, with the two-sided unit $e_t$</td>
 </tr>
 <tr>
@@ -332,7 +332,7 @@ $$</p>
 <td>the rank-one factorisation of a non-zero null element</td>
 </tr>
 <tr>
-<td>$\tilde P^{\natural}\tilde Q$</td>
+<td>$\tilde Q_2^{\natural}\tilde Q$</td>
 <td>the $\natural$-bilinear product, with a left unit and no right unit</td>
 </tr>
 <tr>

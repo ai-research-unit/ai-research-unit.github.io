@@ -85,25 +85,25 @@
 <p><strong>Why this is a rule and not a taste.</strong> An array carries a frame, a dimension and a signature inside a symbol, and the sentence that prints it does not say so. A cell carries none of the three. That is the defect stated in full in <em>Why AXF Matrices instead of Pauli and Gamma Matrices</em>, and it is the reason the two formulations are kept as a record and not used as a language.</p>
 <h2 id="the-matrix-models">The Matrix Models</h2>
 <p><strong>Two kinds of matrix model read the algebra.</strong> The <strong>isomorphism</strong> $\mathsf{M}_2:\mathbb{B}\to M_2(\mathbb{C})$ reads the element itself as a $2\times2$ complex matrix, of the algebra's own size. The <strong>regular representation</strong> reads multiplication as a linear map on the algebra taken as a complex vector space, and its target is $\mathrm{End}_{\mathbb{C}}(\mathbb{B})=M_4(\mathbb{C})$; its image is a four-dimensional subspace of that ambient algebra, not the ambient algebra. The two are different representations, not two sizes of one.</p>
-<p><strong>The matrices are the matrices of operators.</strong> Every array of this chapter is the matrix of a complex-linear operator of $\mathbb{B}$ read in a basis; the operator is the object and the array is one display of it. The two elementary operators are the multiplications $L_{\tilde Q}$ and $R_{\tilde P}$, and their product is the <strong>two-sided operator</strong> of <em>Two-Sided Operators on the Biquaternion Algebra</em>,
+<p><strong>The matrices are the matrices of operators.</strong> Every array of this chapter is the matrix of a complex-linear operator of $\mathbb{B}$ read in a basis; the operator is the object and the array is one display of it. The two elementary operators are the multiplications $L_{\tilde Q}$ and $R_{\tilde Q_2}$, and their product is the <strong>two-sided operator</strong> of <em>Two-Sided Operators on the Biquaternion Algebra</em>,
 $$
-L_{\tilde Q}R_{\tilde P}:\mathbb{B}\longrightarrow\mathbb{B},
+L_{\tilde Q}R_{\tilde Q_2}:\mathbb{B}\longrightarrow\mathbb{B},
 \qquad
-L_{\tilde Q}R_{\tilde P}(X)=\tilde Q\,X\,\tilde P,
+L_{\tilde Q}R_{\tilde Q_2}(X)=\tilde Q\,X\,\tilde Q_2,
 $$
 so the matrix of a two-sided operator is the product of the two regular matrices, taken in the same frame on both factors,
 $$
-\mathsf{M}_{4L}(\tilde Q)\,\mathsf{M}_{4R}(\tilde P).
+\mathsf{M}_{4L}(\tilde Q)\,\mathsf{M}_{4R}(\tilde Q_2).
 $$
 This is the whole reason the article writes both families and their products: the object displayed is an operator of the two-sided family, and the matrix is what a computation can multiply.</p>
 <p><strong>The sixteen cells are the sixteen basis operators.</strong> The pair $(\mu,\nu)$ names the basis two-sided operator $e_\mu[\,]e_\nu$, $X\mapsto e_\mu Xe_\nu$, and its matrix is the cell $L_{e_\mu}R_{e_\nu}$. The sixteen cells are therefore the matrices of a basis: by the generation theorem of that article, §<em>The Sixteen Products as a Basis</em>, they are linearly independent and they span the ambient $\operatorname{End}_{\mathbb{C}}(\mathbb{B})=M_4(\mathbb{C})$, of complex dimension sixteen. Every operator of $\mathbb{B}$ is a complex combination of the sixteen cells, and the sixteen coefficients are its coordinates in that basis.</p>
 <p><strong>The coefficients of a two-sided operator are an outer product.</strong> Expanding in the cell basis,
 $$
-L_{\tilde Q}R_{\tilde P}=\sum_{\mu,\nu}Q_\mu P_\nu\,L_{e_\mu}R_{e_\nu},
+L_{\tilde Q}R_{\tilde Q_2}=\sum_{\mu,\nu}Q_\mu Q_{2\nu}\,L_{e_\mu}R_{e_\nu},
 \qquad
-c\bigl(L_{\tilde Q}R_{\tilde P}\bigr)=QP^{\mathsf T},
+c\bigl(L_{\tilde Q}R_{\tilde Q_2}\bigr)=QQ_2^{\mathsf T},
 $$
-so the coefficient array $c(T)$ of <em>The Enveloping Operator Algebra of the Biquaternion Algebra and the Bi-module Structure</em> has rank one, and the length of the operator, $\ell(T)=\operatorname{rank}c(T)$, is one. A general operator has a coefficient matrix of any rank up to four, and a sum $L_{\tilde Q}R_{\tilde P}+L_{\tilde R}R_{\tilde S}$ is one two-sided operator exactly when the sum of the two outer products still has rank one. The rank-one set of coefficient arrays is the Segre variety of the two-sided family, and the linear space of all sixteen coefficients is the enveloping algebra $\mathbb{B}\otimes\mathbb{B}_{\mathrm{opp}}$ of <em>The Enveloping Operator Algebra of the Biquaternion Algebra and the Bi-module Structure</em>, the cell $L_{e_\mu}R_{e_\nu}$ being the image of $e_\mu\otimes e_{\mathrm{opp},\nu}$. One table of sixteen cells therefore serves three readings: the matrices of the basis two-sided operators, the coordinates of the enveloping algebra, and, in §<em>The Clifford Structure</em>, the Clifford algebra itself.</p>
+so the coefficient array $c(T)$ of <em>The Enveloping Operator Algebra of the Biquaternion Algebra and the Bi-module Structure</em> has rank one, and the length of the operator, $\ell(T)=\operatorname{rank}c(T)$, is one. A general operator has a coefficient matrix of any rank up to four, and a sum $L_{\tilde Q}R_{\tilde Q_2}+L_{\tilde Q_3}R_{\tilde Q_4}$ is one two-sided operator exactly when the sum of the two outer products still has rank one. The rank-one set of coefficient arrays is the Segre variety of the two-sided family, and the linear space of all sixteen coefficients is the enveloping algebra $\mathbb{B}\otimes\mathbb{B}_{\mathrm{opp}}$ of <em>The Enveloping Operator Algebra of the Biquaternion Algebra and the Bi-module Structure</em>, the cell $L_{e_\mu}R_{e_\nu}$ being the image of $e_\mu\otimes e_{\mathrm{opp},\nu}$. One table of sixteen cells therefore serves three readings: the matrices of the basis two-sided operators, the coordinates of the enveloping algebra, and, in §<em>The Clifford Structure</em>, the Clifford algebra itself.</p>
 <div class="table-scroll"><table>
 <thead>
 <tr>
@@ -448,7 +448,7 @@ $$
 L_{\mathrm{axf},e_\mu}R_{\mathrm{axf},e_\nu}\;\longleftrightarrow\;L_{\mathrm{pau},e_\mu}R_{\mathrm{pau},e_\nu},
 \qquad \mu,\nu\in\{t,x,y,z\},
 $$
-and the coefficients $Q_\mu P_\nu$ of a two-sided operator are the same sixteen numbers in both frames. Only the arrays differ: here real signed permutations, in the Peirce frame complex arrays with entries in $\{0,\pm1,\pm i\}$. §<em>The Switch Between the Two Frames</em> writes the sixteen expressions one by one, each an equality of the Pauli cell with its axis-free partner conjugated.</p>
+and the coefficients $Q_\mu Q_{2\nu}$ of a two-sided operator are the same sixteen numbers in both frames. Only the arrays differ: here real signed permutations, in the Peirce frame complex arrays with entries in $\{0,\pm1,\pm i\}$. §<em>The Switch Between the Two Frames</em> writes the sixteen expressions one by one, each an equality of the Pauli cell with its axis-free partner conjugated.</p>
 <p><strong>The cost.</strong> No $2\times2$ block appears, no Peirce idempotent is visible, and the sixteen arrays are all of one kind, so no five of them are singled out. The frame that gives the transpose dictionary takes away the block and the gamma frame; the next sections buy them back.</p>
 <h2 id="the-math302-pauli-representation">The $M_4(\mathbb{C})$ Pauli Representation</h2>
 <p><strong>A second frame, and what it buys.</strong> The same two operators are displayed in the Peirce frame of the standard pair. The frame is a choice, and it is the choice the rest of the corpus makes: it is the frame in which the left matrix is a $2\times2$ block matrix, in which every cell is a Kronecker product of two $2\times2$ matrices, and in which five of them are the gamma matrices. Its label is $\mathrm{pau}$.</p>
@@ -1170,7 +1170,7 @@ Its eight unit matrices are real signed permutations, its stitch is $R_{\mathrm{
 </tr>
 <tr>
 <td>$c(T)$, $\ell(T)=\operatorname{rank}c(T)$</td>
-<td>The coefficient array of an operator $T$ in the sixteen cells, and its length; $c(L_{\tilde Q}R_{\tilde P})=QP^{\mathsf T}$</td>
+<td>The coefficient array of an operator $T$ in the sixteen cells, and its length; $c(L_{\tilde Q}R_{\tilde Q_2})=QQ_2^{\mathsf T}$</td>
 </tr>
 <tr>
 <td>$C_{\Pi}$</td>

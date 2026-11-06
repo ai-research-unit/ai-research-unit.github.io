@@ -185,9 +185,9 @@ and the image is self-centralising, in the same position as the diagonal subalge
 <p><strong>Two commuting copies, one per block, and the regular module is a direct sum of two simple modules.</strong></p>
 <p><strong>The operators.</strong> Left multiplication and right multiplication are the blockwise operators
 $$
-L_{\tilde Q}=\begin{pmatrix}L_{\tilde Q_{+}}&0\\ 0&L_{\tilde Q_{-}}\end{pmatrix},\qquad R_{\tilde P}=\begin{pmatrix}R_{\tilde P_{+}}&0\\ 0&R_{\tilde P_{-}}\end{pmatrix},
+L_{\tilde Q}=\begin{pmatrix}L_{\tilde Q_{+}}&0\\ 0&L_{\tilde Q_{-}}\end{pmatrix},\qquad R_{\tilde Q_2}=\begin{pmatrix}R_{\tilde Q_{2+}}&0\\ 0&R_{\tilde Q_{2-}}\end{pmatrix},
 $$
-where $L_{u}$ and $R_{v}$ are the left and right multiplications of the quaternion algebra on itself. They <strong>commute</strong>, $L_{\tilde Q}R_{\tilde P}=R_{\tilde P}L_{\tilde Q}$, because the two act on different slots of the product, and every $L$ commutes with every $R$ blockwise.</p>
+where $L_{u}$ and $R_{v}$ are the left and right multiplications of the quaternion algebra on itself. They <strong>commute</strong>, $L_{\tilde Q}R_{\tilde Q_2}=R_{\tilde Q_2}L_{\tilde Q}$, because the two act on different slots of the product, and every $L$ commutes with every $R$ blockwise.</p>
 <p><strong>The module.</strong> The regular module is the free module $\mathbb{H}^{2}$ over $\mathbb{H}$ with basis $(1,j)$, and as a module over the algebra it is
 $$
 \mathbb{B}_{\mathrm{spl}}=\mathbb{H}\tilde\Pi_{1}\oplus\mathbb{H}\tilde\Pi_{2},
@@ -234,9 +234,9 @@ a direct sum of two simple modules, each of quaternionic dimension one, each ann
 <p><strong>The spectrum of the regular module.</strong> The two simple modules are non-isomorphic, because an intertwiner between them would be a nonzero element of the missing off-diagonal corner. So the module has two non-isomorphic composition factors and, unlike the reduced biquaternion category where the two factors were the same field with different actions, the factors here are two non-isomorphic simple modules over the same division ring.</p>
 <h2 id="the-product">The Product</h2>
 <p><strong>The product is blockwise, the algebra separates, and the model is faithful but not surjective.</strong></p>
-<p><strong>Theorem (multiplicativity).</strong> For all $\tilde Q,\tilde P$,
+<p><strong>Theorem (multiplicativity).</strong> For all $\tilde Q,\tilde Q_2$,
 $$
-\mathsf M(\tilde Q)\mathsf M(\tilde P)=\mathsf M(\tilde Q\tilde P)=\begin{pmatrix}\tilde Q_{+}\tilde P_{+}&0\\ 0&\tilde Q_{-}\tilde P_{-}\end{pmatrix}.
+\mathsf M(\tilde Q)\mathsf M(\tilde Q_2)=\mathsf M(\tilde Q\tilde Q_2)=\begin{pmatrix}\tilde Q_{+}\tilde Q_{2+}&0\\ 0&\tilde Q_{-}\tilde Q_{2-}\end{pmatrix}.
 $$</p>
 <p><em>Proof.</em> The left multiplication is a homomorphism of the algebra into the endomorphisms of the module, and in the basis $(1,j)$ its matrix is diagonal with the two block multiplications on the diagonal. Injectivity holds because the two diagonal entries are the two idempotent coordinates.</p>
 <p><strong>The algebra separates.</strong> The consequence is that the algebra has no cross-block structure at all: sums, products, inverses, powers and polynomials act blockwise, and every question about $\mathbb{B}_{\mathrm{spl}}$ is two questions about $\mathbb{H}$. The Peirce decomposition is therefore not a convenience but an isomorphism,
@@ -274,9 +274,9 @@ $$
 \ker\operatorname{tr}=j\mathbb{H},
 $$
 the purely split-imaginary part of the algebra. It is a subspace and not an ideal: the algebra has only two proper ideals, the two blocks, and neither is $j\mathbb{H}$. This is a difference from the reduced biquaternion category, where the kernel of the trace was the complex line $\mathbb{C}j$ and the complement was the scalar line.</p>
-<p><strong>The trace form.</strong> The bilinear form $(\tilde Q,\tilde P)\mapsto\operatorname{Sc}\operatorname{tr}(\mathsf M(\tilde Q)\mathsf M(\tilde P))$ is the reduced trace of the product,
+<p><strong>The trace form.</strong> The bilinear form $(\tilde Q,\tilde Q_2)\mapsto\operatorname{Sc}\operatorname{tr}(\mathsf M(\tilde Q)\mathsf M(\tilde Q_2))$ is the reduced trace of the product,
 $$
-\operatorname{Sc}\operatorname{tr}\bigl(\mathsf M(\tilde Q)\mathsf M(\tilde P)\bigr)=\operatorname{Sc}\bigl(\tilde Q_{+}\tilde P_{+}\bigr)+\operatorname{Sc}\bigl(\tilde Q_{-}\tilde P_{-}\bigr),
+\operatorname{Sc}\operatorname{tr}\bigl(\mathsf M(\tilde Q)\mathsf M(\tilde Q_2)\bigr)=\operatorname{Sc}\bigl(\tilde Q_{+}\tilde Q_{2+}\bigr)+\operatorname{Sc}\bigl(\tilde Q_{-}\tilde Q_{2-}\bigr),
 $$
 a real bilinear form of real signature $(4,4)$: four positive directions from the two real parts and four negative from the two imaginary parts. The form is <strong>nondegenerate</strong>, because the quaternion trace form is nondegenerate and the block sum of two copies is nondegenerate. So the trace form of the category is a form of signature $(4,4)$, and its radical is zero.</p>
 <p><strong>The reading.</strong> Four trace forms of the block: $\operatorname{diag}(2,-2)$ of signature $(1,1)$ for the complex numbers, $\operatorname{diag}(2,0)$ degenerate for the dual numbers, $2\,\mathrm I_{2}$ of signature $(2,2)$ for the reduced biquaternions, and the $(4,4)$ form here. The pattern is the real dimension: the form is the reduced trace of the product, and the signature is $(n/2,n/2)$ where $n$ is the real dimension of the algebra, for every semisimple algebra of the block.</p>
@@ -416,7 +416,7 @@ $$
 so the relation between the two norms is a <strong>product</strong>: the quaternionic norm gives the pair $(N(\tilde Q_{+}),N(\tilde Q_{-}))$ and the determinant gives their product. The pair vanishes only at zero; the product vanishes whenever one factor vanishes. That is the whole of the difference between the anisotropic norm and the singular determinant, and it is why the split biquaternion algebra is the category where the two words "norm" and "determinant" must be used with care.</p>
 <p><strong>The four forms.</strong> With $\mathrm{Sc}$ the scalar part taken in the quaternion and in the split-complex slot alike, the four forms of the layer are
 $$
-\langle\tilde Q,\tilde P\rangle_{\sigma_{1}\sigma_{2}}=\mathrm{Sc}\bigl(\tilde Q^{\sigma_{1}}\tilde P^{\sigma_{2}}\bigr),
+\langle\tilde Q,\tilde Q_2\rangle_{\sigma_{1}\sigma_{2}}=\mathrm{Sc}\bigl(\tilde Q^{\sigma_{1}}\tilde Q_2^{\sigma_{2}}\bigr),
 $$
 with each $\sigma$ the identity, the quaternion conjugation ${}^{\natural}$ or the star ${}^{*}$, and the model reads each one as a scalar part of a product of two models, that is as a reduced trace. The four slots at equal arguments behave as follows.</p>
 <div class="table-scroll"><table>

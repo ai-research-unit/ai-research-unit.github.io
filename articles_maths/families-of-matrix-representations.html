@@ -81,13 +81,13 @@ L_{\mathcal{F}}(\tilde Q)_{\mu\nu}=\bigl[\tilde Qf_\nu\bigr]_{\mu},\qquad
 R_{\mathcal{F}}(\tilde Q)_{\mu\nu}=\bigl[f_\nu\tilde Q\bigr]_{\mu}.
 $$
 Both are $4\times4$ complex arrays. The element does not depend on $\mathcal{F}$; the array does. Below the frame is fixed and the subscript is dropped.</p>
-<p><strong>The three laws.</strong> For all $\tilde P,\tilde Q\in\mathbb{B}$,
+<p><strong>The three laws.</strong> For all $\tilde Q,\tilde Q_2\in\mathbb{B}$,
 $$
-L(\tilde P\tilde Q)=L(\tilde P)L(\tilde Q),\qquad
-R(\tilde P\tilde Q)=R(\tilde Q)R(\tilde P),\qquad
-L(\tilde P)R(\tilde Q)=R(\tilde Q)L(\tilde P).
+L(\tilde Q_2\tilde Q)=L(\tilde Q_2)L(\tilde Q),\qquad
+R(\tilde Q_2\tilde Q)=R(\tilde Q)R(\tilde Q_2),\qquad
+L(\tilde Q_2)R(\tilde Q)=R(\tilde Q)L(\tilde Q_2).
 $$
-The first is the associativity $(\tilde P\tilde Q)\tilde X=\tilde P(\tilde Q\tilde X)$ read on the left. The second is the associativity $(\tilde X\tilde Q)\tilde P=\tilde X(\tilde Q\tilde P)$ read on the right, and it is the interesting one: the right family carries the product backwards. The third holds because the two factors sit on opposite sides of the argument and never meet.</p>
+The first is the associativity $(\tilde Q_2\tilde Q)\tilde X=\tilde Q_2(\tilde Q\tilde X)$ read on the left. The second is the associativity $(\tilde X\tilde Q)\tilde Q_2=\tilde X(\tilde Q\tilde Q_2)$ read on the right, and it is the interesting one: the right family carries the product backwards. The third holds because the two factors sit on opposite sides of the argument and never meet.</p>
 <p><strong>The three laws need no coordinates.</strong> Each is an identity between products of elements, read through the columns of a frame. A change of frame conjugates every array and therefore preserves all three. This is why the statements below are frame-free and why only the displays are frame-bound.</p>
 <p><strong>Faithfulness.</strong> If $L(\tilde Q)=0$ then $\tilde Qf_\nu=0$ for each $\nu$, and since the four $f_\nu$ span, $\tilde Q=0$; the same argument holds on the right. So each side is an injective image, of complex dimension four inside the sixteen of $M_4(\mathbb{C})$, and an element is known by its left matrix alone and by its right matrix alone.</p>
 <p><strong>The centre is the coincidence locus.</strong> The identity $L(\tilde Q)=R(\tilde Q)$ says $\tilde Q\tilde X=\tilde X\tilde Q$ for every $\tilde X$, that is $\tilde Q\in\mathbb{C}e_t$. So the two families agree on the centre and nowhere else.</p>
@@ -95,7 +95,7 @@ The first is the associativity $(\tilde P\tilde Q)\tilde X=\tilde P(\tilde Q\til
 <h2 id="what-the-laws-give-the-two-families">What the Laws Give the Two Families</h2>
 <p><strong>The left family is the algebra and the right family is its opposite.</strong> The first law makes $\mathbb{B}_L=\{L(\tilde Q)\}$ a subalgebra of $M_4(\mathbb{C})$ isomorphic to $\mathbb{B}$. The second makes $\mathbb{B}_R=\{R(\tilde Q)\}$ a subalgebra isomorphic to the opposite algebra $\mathbb{B}_{\mathrm{opp}}$. These are abstractly the same algebra, because $M_2(\mathbb{C})$ is isomorphic to its opposite through transposition; this is why a switch between the sides can exist at all.</p>
 <p><strong>Every left matrix commutes with every right matrix.</strong> The left matrix of any element commutes with the right matrix of any other, and the two elements need not be related. So the left family lies in the commutant of the right family and conversely.</p>
-<p><strong>The two families meet in the scalars.</strong> Suppose $L(\tilde P)=R(\tilde Q)$. Applying both to $e_t$ gives $\tilde P=\tilde Q$, and then $L(\tilde Q)=R(\tilde Q)$, so $\tilde Q$ is central and the common matrix is scalar. Hence
+<p><strong>The two families meet in the scalars.</strong> Suppose $L(\tilde Q_2)=R(\tilde Q)$. Applying both to $e_t$ gives $\tilde Q_2=\tilde Q$, and then $L(\tilde Q)=R(\tilde Q)$, so $\tilde Q$ is central and the common matrix is scalar. Hence
 $$
 \mathbb{B}_L\cap\mathbb{B}_R=\mathbb{C}\,\mathrm I_4,
 $$
@@ -113,12 +113,12 @@ so the spectrum is $Q_t\pm iB$, each value twice. The rank is the same too: it i
 <p><strong>The kernels.</strong> The kernel of the left matrix is the left annihilator of the element, the kernel of the right matrix is its right annihilator. The two have the same dimension, $4-\operatorname{rank}L(\tilde Q)$, and they are in general different subspaces of the coordinate space.</p>
 <p><strong>The trace pairing.</strong> Within one family the trace pairing is the scalar product of the algebra,
 $$
-\operatorname{Tr}\bigl(L(\tilde P)L(\tilde Q)\bigr)=4\operatorname{Sc}(\tilde P\tilde Q),\qquad
-\operatorname{Tr}\bigl(R(\tilde P)R(\tilde Q)\bigr)=4\operatorname{Sc}(\tilde P\tilde Q),
+\operatorname{Tr}\bigl(L(\tilde Q_2)L(\tilde Q)\bigr)=4\operatorname{Sc}(\tilde Q_2\tilde Q),\qquad
+\operatorname{Tr}\bigl(R(\tilde Q_2)R(\tilde Q)\bigr)=4\operatorname{Sc}(\tilde Q_2\tilde Q),
 $$
 because the product of two matrices of one side is again a matrix of that side. Across the two families it collapses to the product of the scalar parts,
 $$
-\operatorname{Tr}\bigl(L(\tilde P)R(\tilde Q)\bigr)=4P_tQ_t .
+\operatorname{Tr}\bigl(L(\tilde Q_2)R(\tilde Q)\bigr)=4P_tQ_t .
 $$
 So the two sides are orthogonal for the trace form exactly when one of the two scalar parts vanishes, and what couples them is the centre and nothing else.</p>
 <div class="table-scroll"><table>
@@ -162,8 +162,8 @@ So the two sides are orthogonal for the trace form exactly when one of the two s
 </tr>
 <tr>
 <td>trace pairing inside</td>
-<td>$4\operatorname{Sc}(\tilde P\tilde Q)$</td>
-<td>$4\operatorname{Sc}(\tilde P\tilde Q)$</td>
+<td>$4\operatorname{Sc}(\tilde Q_2\tilde Q)$</td>
+<td>$4\operatorname{Sc}(\tilde Q_2\tilde Q)$</td>
 </tr>
 <tr>
 <td>trace pairing with the other side</td>
@@ -174,7 +174,7 @@ So the two sides are orthogonal for the trace form exactly when one of the two s
 </table></div>
 <p><strong>None of these numbers sees the frame.</strong> A change of frame conjugates the arrays, and a conjugation leaves the trace, the determinant, the characteristic polynomial and the rank untouched. The table above is therefore a table of the element, written twice.</p>
 <h2 id="the-switch-between-the-left-and-the-right">The Switch Between the Left and the Right</h2>
-<p><strong>A conjugation is not available.</strong> No invertible $\mathsf X$ satisfies $R(\tilde Q)=\mathsf X\,L(\tilde Q)\,\mathsf X^{-1}$ for all $\tilde Q$. Such an $\mathsf X$ would carry products to products, while the right family reverses them, so it would force $L(\tilde P\tilde Q)=L(\tilde Q\tilde P)$ for all $\tilde P,\tilde Q$; the pair $(\vec e_x,\vec e_y)$ refutes that, because $\vec e_x\vec e_y=\vec e_z$ while $\vec e_y\vec e_x=-\vec e_z$. So the matrix that changes the side has to be combined with a transposition, and no matrix alone is enough.</p>
+<p><strong>A conjugation is not available.</strong> No invertible $\mathsf X$ satisfies $R(\tilde Q)=\mathsf X\,L(\tilde Q)\,\mathsf X^{-1}$ for all $\tilde Q$. Such an $\mathsf X$ would carry products to products, while the right family reverses them, so it would force $L(\tilde Q_2\tilde Q)=L(\tilde Q\tilde Q_2)$ for all $\tilde Q_2,\tilde Q$; the pair $(\vec e_x,\vec e_y)$ refutes that, because $\vec e_x\vec e_y=\vec e_z$ while $\vec e_y\vec e_x=-\vec e_z$. So the matrix that changes the side has to be combined with a transposition, and no matrix alone is enough.</p>
 <p><strong>The form behind the switch.</strong> What is needed is a scalar product, and the algebra carries one:
 $$
 \beta(\tilde X,\tilde Y)=\operatorname{Sc}(\tilde X\tilde Y).
@@ -202,7 +202,7 @@ R(\tilde Q)=\mathsf W^{-1}L(\tilde Q)^{\mathsf T}\mathsf W .
 $$
 This is the switch. The form is symmetric, so $\mathsf W$ is a symmetric matrix, and the switch consists of a transposition and a congruence rather than of a transposition alone.</p>
 <p><strong>Three immediate properties.</strong> Applying the stitch twice returns the array, because transposition and conjugation by a fixed matrix are both involutions. The matrix $\mathsf W$ is symmetric and invertible, so the switch is defined in every frame and never degenerates. And $\mathsf W$ is read off the multiplication of the four frame vectors, so no choice is made beyond the frame itself.</p>
-<p><strong>The switch is unique up to a scalar.</strong> Every matrix $\mathsf M$ that satisfies $\mathsf M\,R(\tilde Q)=L(\tilde Q)^{\mathsf T}\mathsf M$ for all $\tilde Q$ is of the form $\mathsf M=\mathsf W\,L(\tilde P)$ with $\tilde P$ arbitrary: a four-dimensional family, because $\mathsf W^{-1}\mathsf M$ has to commute with the whole right family, and the commutant of that family is the left family. Among these solutions exactly the symmetric ones are the scalar multiples of $\mathsf W$. The requirement of symmetry, equivalently the requirement that the matrix be the Gram matrix of a form on the algebra, therefore fixes the switch up to one nonzero scalar, and the Gram matrix is the canonical representative.</p>
+<p><strong>The switch is unique up to a scalar.</strong> Every matrix $\mathsf M$ that satisfies $\mathsf M\,R(\tilde Q)=L(\tilde Q)^{\mathsf T}\mathsf M$ for all $\tilde Q$ is of the form $\mathsf M=\mathsf W\,L(\tilde Q_2)$ with $\tilde Q_2$ arbitrary: a four-dimensional family, because $\mathsf W^{-1}\mathsf M$ has to commute with the whole right family, and the commutant of that family is the left family. Among these solutions exactly the symmetric ones are the scalar multiples of $\mathsf W$. The requirement of symmetry, equivalently the requirement that the matrix be the Gram matrix of a form on the algebra, therefore fixes the switch up to one nonzero scalar, and the Gram matrix is the canonical representative.</p>
 <p><strong>The switch is not the Hermitian dictionary.</strong> The algebra carries a second form, the Hermitian one $\langle\tilde X,\tilde Y\rangle_*=\operatorname{Sc}(\tilde X\tilde Y^{*})$. Its dictionary takes the adjoint and stays inside the family, $L(\tilde Q)^{\dagger}=L(\tilde Q^{*})$. The switch takes the transpose and exchanges the sides. The two are read on the same array and answer different questions.</p>
 <p><strong>The transpose alone does not cross the divide.</strong> Transposition reverses the order of a product, exactly as the conjugation of the element does, so it cannot by itself turn a product-preserving action into a product-reversing one. The side is changed only when the transposition is followed by the congruence with $\mathsf W$; the transposition reverses the order once, and the congruence restores it.</p>
 <h2 id="the-matrix-that-changes-the-frame">The Matrix That Changes the Frame</h2>
@@ -290,7 +290,7 @@ A(\tilde Q^{\natural})=\varepsilon\,A(\tilde Q)^{\mathsf T}\varepsilon^{-1}.
 $$
 At size two the transposition and the conjugation are the same operation, because the matrix already is the element. At size four they separate: the transposition returns the conjugate, and the transposition followed by the switch returns the other side.</p>
 <h2 id="summary">Summary</h2>
-<p>An element has a left matrix and a right matrix in each frame, so each frame gives two families of arrays. Associativity makes the left family multiplicative and the right family anti-multiplicative, makes every left matrix commute with every right matrix, and makes each family faithful. The two families coincide exactly on the centre, where both are scalar, so they meet in the line $\mathbb{C}\mathrm I_4$ and span seven dimensions. Their invariants agree: trace $4Q_t$, determinant $\langle\tilde Q\rangle_{\natural}^2$, characteristic polynomial $((X-Q_t)^2+B^2)^2$, spectrum $Q_t\pm iB$ twice, rank $0$, $2$ or $4$. Within a family the trace pairing is the scalar product $4\operatorname{Sc}(\tilde P\tilde Q)$; across the families it is $4P_tQ_t$, so only the centre couples the two sides.</p>
+<p>An element has a left matrix and a right matrix in each frame, so each frame gives two families of arrays. Associativity makes the left family multiplicative and the right family anti-multiplicative, makes every left matrix commute with every right matrix, and makes each family faithful. The two families coincide exactly on the centre, where both are scalar, so they meet in the line $\mathbb{C}\mathrm I_4$ and span seven dimensions. Their invariants agree: trace $4Q_t$, determinant $\langle\tilde Q\rangle_{\natural}^2$, characteristic polynomial $((X-Q_t)^2+B^2)^2$, spectrum $Q_t\pm iB$ twice, rank $0$, $2$ or $4$. Within a family the trace pairing is the scalar product $4\operatorname{Sc}(\tilde Q_2\tilde Q)$; across the families it is $4P_tQ_t$, so only the centre couples the two sides.</p>
 <p>Two matrices generate every relation. A change of frame is a conjugation by an invertible $\mathsf C$, applied to both sides at once because the frame belongs to the carrier and the side to the action. The switch $\mathsf W$ is the Gram matrix of the symmetric form $\beta(\tilde X,\tilde Y)=\operatorname{Sc}(\tilde X\tilde Y)$; it satisfies $\mathsf W R(\tilde Q)=L(\tilde Q)^{\mathsf T}\mathsf W$, hence $R(\tilde Q)=\mathsf W^{-1}L(\tilde Q)^{\mathsf T}\mathsf W$, and it is symmetric, nondegenerate and unique up to a nonzero scalar once symmetry is required. Each frame carries its own switch, the Gram matrix of $\beta$ on its own vectors, and the two changes are compatible, $\mathsf W'=\mathsf C^{\mathsf T}\mathsf W\mathsf C$, so the arrays and the switch of a frame are transported as one object.</p>
 <p>No conjugation carries the left family onto the right, because a conjugation preserves the product while the right side reverses it, and a transposition alone returns the conjugate element and not the other side. At size two the same mechanism gives the conjugate of the element, with $\varepsilon=i\sigma_2$, and there is no second side, because the carrier already is the algebra.</p>
 <h2 id="summary-of-notation">Summary of Notation</h2>
