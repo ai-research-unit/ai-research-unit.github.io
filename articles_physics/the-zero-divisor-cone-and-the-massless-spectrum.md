@@ -81,7 +81,7 @@ $$
 \langle\tilde R_\Phi\rangle_{\natural}=-{r'_{t}}^2+\lvert r_x\vec e_x+r_y\vec e_y+r_z\vec e_z\rvert^2,
 $$
 
-of signature $(-,+,+,+)$. The cone cut by $\mathbb{B}_{\Phi}$ is the **null cone** ${r'_{t}}^2=\lvert\vec r\rvert^2$.
+of signature $(3,1)$, three positive spatial directions and one negative temporal one. The cone cut by $\mathbb{B}_{\Phi}$ is the **null cone** ${r'_{t}}^2=\lvert\vec r\rvert^2$.
 
 The mass shell is a level set of the norm of the **four-momentum**, not of the position. With
 

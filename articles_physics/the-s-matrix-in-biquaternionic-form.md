@@ -254,7 +254,7 @@ $$
 -i\left(\vec e_x\tilde Q\vec e_y\,p_x+\vec e_y\tilde Q\vec e_y\,p_y+\vec e_z\tilde Q\vec e_y\,p_z\right),
 $$
 
-with one term per component of the momentum, each of the form $\tilde Q\mapsto a\tilde Qb$ with two multipliers. This is why the framework writes the contraction with two-sided multipliers, the cells of *Two-Sided Operators on the Biquaternion Algebra*: a single multiplier would keep the operator inside the four-dimensional algebra, and the four components need the pair. The arrays the framework prints for the propagation are not used in the body of an article; the reasons are the subject of *Why AXF Matrices instead of Pauli and Gamma Matrices*.
+with one term per component of the momentum, each of the form $\tilde Q\mapsto a\tilde Qb$ with two multipliers. This is why the framework writes the contraction with two-sided multipliers, the basis operators of *Two-Sided Operators on the Biquaternion Algebra*: a single multiplier would keep the operator inside the four-dimensional algebra, and the four components need the pair. The arrays the framework prints for the propagation are not used in the body of an article; the reasons are the subject of *Why AXF Matrices instead of Pauli and Gamma Matrices*.
 
 Two of the multipliers that the corpus prints are single ones, because $e_t$ is the unit of the algebra and a slot carrying it collapses: the time term is the single multiplier $\tilde Q\mapsto i\tilde Q\vec e_xE$, and the multiplier $\tilde Q\mapsto-i\tilde Q\vec e_z$, which the solutions article reads on the two values $\tilde{Ξ}_{\mathrm{sp},L},\tilde{Ξ}_{\mathrm{sp},R}$, is the other single one. The derivative form of the contraction replaces $p_\mu$ by $\partial/\partial R_\mu$.
 

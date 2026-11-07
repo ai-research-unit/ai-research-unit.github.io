@@ -26,7 +26,7 @@ The two rules differ by a reciprocal rescaling, $\vec\Upsilon_{\mathrm{chart},+}
 
 The basis has a further property that is easy to miss: it depends on $\tilde Q$ only through the complex line spanned by the vector part. The elements $\tilde Q$ and $a\tilde Q+b e_t$, with $a\neq0$, share the same eigenbasis, while their eigenvalues move affinely. The eigenbasis is therefore attached to a point of $\mathbb{P}^2$, not to a point of $\mathbb{B}$.
 
-The second part of the article reads spinors and the Peirce index in this basis. The two minimal left ideals $S_\pm=\mathbb{B}\tilde\Pi_\pm$ are the two Peirce copies. Each has a basis made of one idempotent and one nilpotent of $\mathcal{B}(\tilde Q)$, and left multiplication by $\tilde Q$ acts on each by the same diagonal matrix $\operatorname{diag}(\lambda_+,\lambda_-)$. Chirality is a right-multiplication label, not a left eigenvalue: the two gradings are independent, and the four basis vectors are the four cells of their grid.
+The second part of the article reads spinors and the Peirce index in this basis. The two minimal left ideals $S_\pm=\mathbb{B}\tilde\Pi_\pm$ are the two Peirce copies. Each has a basis made of one idempotent and one nilpotent of $\mathcal{B}(\tilde Q)$, and left multiplication by $\tilde Q$ acts on each by the same diagonal matrix $\operatorname{diag}(\lambda_+,\lambda_-)$. Chirality is a right-multiplication label, not a left eigenvalue: the two gradings are independent, and the four basis vectors are the four basis operators of their grid.
 
 **Notation.** An element is $\tilde Q=Q_te_t+\vec Q$, with $\vec Q=Q_x\vec e_x+Q_y\vec e_y+Q_z\vec e_z$ and $\vec Q^2=-B^2e_t$, where
 
@@ -763,7 +763,7 @@ $$
 \zeta_-\tilde Q=\lambda_-\zeta_-\quad(\zeta_-\in S_-).
 $$
 
-Thus $S_+$ is the $\lambda_+$-eigenspace of $R_{\tilde Q}$ and $S_-$ the $\lambda_-$-eigenspace. The Peirce index is the eigenvalue of the right multiplication, in the same way that the spectral label is the eigenvalue of the left multiplication. The two statements are different: the left action carries both eigenvalues on each Peirce copy, and the right action carries one eigenvalue on each. In particular the cell of the frame is $-R_{\vec{Ζ}}=-iR_{\vec u}$ with $\vec u=-i\vec{Ζ}$, so it is $-1$ on $S_+$ and $+1$ on $S_-$ (*Operator Chirality on the Biquaternion Algebra*), and the two letters $L$ and $R$ name its two values. The values separate the copies, and they are the values of a copy index: they are not a chirality of the module, because the two halves are the same module (*The Polarized Module of the Biquaternion Algebra*).
+Thus $S_+$ is the $\lambda_+$-eigenspace of $R_{\tilde Q}$ and $S_-$ the $\lambda_-$-eigenspace. The Peirce index is the eigenvalue of the right multiplication, in the same way that the spectral label is the eigenvalue of the left multiplication. The two statements are different: the left action carries both eigenvalues on each Peirce copy, and the right action carries one eigenvalue on each. In particular the basis operator of the frame is $-R_{\vec{Ζ}}=-iR_{\vec u}$ with $\vec u=-i\vec{Ζ}$, so it is $-1$ on $S_+$ and $+1$ on $S_-$ (*Operator Chirality on the Biquaternion Algebra*), and the two letters $L$ and $R$ name its two values. The values separate the copies, and they are the values of a copy index: they are not a chirality of the module, because the two halves are the same module (*The Polarized Module of the Biquaternion Algebra*).
 
 **Proposition (the two gradings).** The following two decompositions coexist:
 
@@ -776,7 +776,7 @@ $$
 \mathbb{B}_{st}=\tilde\Pi_s\mathbb{B}\cap S_t.
 $$
 
-The four basis vectors are the four cells of the grid, with rows the left spectral index $s$ and columns the Peirce index $t$:
+The four basis vectors are the four basis operators of the grid, with rows the left spectral index $s$ and columns the Peirce index $t$:
 
 |  | $t=+$ | $t=-$ |
 |---|---|---|

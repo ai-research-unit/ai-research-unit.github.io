@@ -261,7 +261,7 @@ The $\natural$-degenerate case is the null cone, with the origin at its apex and
 
 - [The Spectrum](the-spectrum.html), for the quadratic condition $B^2$, the spectral-degenerate cone and the behaviour on it.
 - [Relations between the N Norm and Spectral Regularity and Degeneracy](relations-between-the-n-norm-and-spectral-regularity-and-degeneracy.html), for the comparison of the norm with the spectral condition, the four sectors and the information each invariant carries.
-- [The N-Regular Sector](the-n-regular-sector.html), for the unit group as a sector, its matrix model, its topology and its two spectral cells.
+- [The N-Regular Sector](the-n-regular-sector.html), for the unit group as a sector, its matrix model, its topology and its two spectral sectors.
 - [The N-Degenerate Sector](the-n-degenerate-sector.html), for the null cone, its three strata, its link and its degenerate polar decomposition.
 - Richard D. Schafer, *An Introduction to Nonassociative Algebras* (Academic Press, 1966), for the norm and the one-sided inverses of a non-associative algebra.
 - Nathan Jacobson, *Structure and Representations of Jordan Algebras* (American Mathematical Society, 1968), for a quadratic form defined by a product and its multiplicative law.

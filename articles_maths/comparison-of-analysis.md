@@ -71,7 +71,7 @@ The first-order operator is the ordinary derivative in $\mathbb{R}$, the Cauchy�
 | $\mathbb{B}_{H}$ | the real quaternion subspace of $\mathbb{B}$ |
 | $\mathbb{B}_{\Psi}$ and $\mathbb{B}_{\Phi}$ | the Hermitian and anti-Hermitian subspaces of $\mathbb{B}$ |
 | $\Pi_{1,2}$ | the idempotents of $\mathbb{C}_{\mathrm{spl}}$ |
-| `—` | an empty cell, stated and never filled |
+| `—` | an empty entry, stated and never filled |
 
 ## Further Reading
 

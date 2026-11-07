@@ -181,11 +181,11 @@ The natural conjugation reverses the order of a product, and the star is the Her
 
 The table does not add a product, a theorem or a completeness claim. It is the four-by-three shape of the twelve questions, and it is offered as a mnemonic because the names are easier to remember in the table than in the list. The algebra's own caution stands: no single product carries both a metric and a closed symmetry, and the twelve are four jobs with two halves, not twelve equivalent structures.
 
-**The boundary.** The assignment of the twelve words to the twelve cells is a reading, not a derivation. The table does not assert that the twelve questions are independent or exhaustive, and it does not replace the property table or the classification of the twelve structures.
+**The boundary.** The assignment of the twelve words to the twelve basis operators is a reading, not a derivation. The table does not assert that the twelve questions are independent or exhaustive, and it does not replace the property table or the classification of the twelve structures.
 
 ## The Two Slots Behind the Names
 
-The four names are not attached to four unrelated structures. They are attached to the four cells of one grid, and each cell is a pair of answers to two questions.
+The four names are not attached to four unrelated structures. They are attached to the four entries of one grid, and each entry is a pair of answers to two questions.
 
 | Question | Slot | Rule |
 | --- | --- | --- |

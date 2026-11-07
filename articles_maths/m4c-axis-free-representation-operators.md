@@ -201,7 +201,7 @@ $$
 D=\begin{pmatrix}1&0&0&0\\0&-1&0&0\\0&0&-1&0\\0&0&0&-1\end{pmatrix},
 \qquad D^2=\mathrm I_4,\quad \det D=-1.
 $$
-Its entries are the signs of $e_\mu^{\natural}=s_\mu e_\mu$, with $s_t=1$ and $s_x=s_y=s_z=-1$. It is not an algebra map, not one of the sixteen cells and not a one-sided multiplication; it is the linear involution of the coefficient space that changes the signs of the three vector coordinates.
+Its entries are the signs of $e_\mu^{\natural}=s_\mu e_\mu$, with $s_t=1$ and $s_x=s_y=s_z=-1$. It is not an algebra map, not one of the sixteen basis operators and not a one-sided multiplication; it is the linear involution of the coefficient space that changes the signs of the three vector coordinates.
 
 **The stitch.** The right matrix is obtained from the left by transposition and a sign on each side:
 $$
@@ -252,7 +252,7 @@ $$
 | $\vec e_y$ | $L_{\mathrm{axf},\vec e_y}R_{\mathrm{axf},e_t}=L_{\mathrm{axf},\vec e_y}$ | $L_{\mathrm{axf},\vec e_y}R_{\mathrm{axf},\vec e_x}$ | $L_{\mathrm{axf},\vec e_y}R_{\mathrm{axf},\vec e_y}$ | $L_{\mathrm{axf},\vec e_y}R_{\mathrm{axf},\vec e_z}$ |
 | $\vec e_z$ | $L_{\mathrm{axf},\vec e_z}R_{\mathrm{axf},e_t}=L_{\mathrm{axf},\vec e_z}$ | $L_{\mathrm{axf},\vec e_z}R_{\mathrm{axf},\vec e_x}$ | $L_{\mathrm{axf},\vec e_z}R_{\mathrm{axf},\vec e_y}$ | $L_{\mathrm{axf},\vec e_z}R_{\mathrm{axf},\vec e_z}$ |
 
-Each row is labelled by its left unit and each column by its right unit, so each entry is the product of the two labels, left factor first. The first row is the right family, the first column the left family, the diagonal entry $L_{\mathrm{axf},e_t}R_{\mathrm{axf},e_t}$ the identity, and the remaining nine the genuinely two-sided cells. The table is the matrix form of the four families of *Two-Sided Operators on the Biquaternion Algebra*, §*The Operator $L_{\tilde Q}R_{\tilde Q_2}$*.
+Each row is labelled by its left unit and each column by its right unit, so each entry is the product of the two labels, left factor first. The first row is the right family, the first column the left family, the diagonal entry $L_{\mathrm{axf},e_t}R_{\mathrm{axf},e_t}$ the identity, and the remaining nine the genuinely two-sided basis operators. The table is the matrix form of the four families of *Two-Sided Operators on the Biquaternion Algebra*, §*The Operator $L_{\tilde Q}R_{\tilde Q_2}$*.
 
 ### The Sixteen, Entry by Entry
 
@@ -290,7 +290,7 @@ L_{\mathrm{axf},\vec e_z}R_{\mathrm{axf},\vec e_y}=\begin{pmatrix}0&-1&0&0\\-1&0
 L_{\mathrm{axf},\vec e_z}R_{\mathrm{axf},\vec e_z}=\begin{pmatrix}-1&0&0&0\\0&1&0&0\\0&0&1&0\\0&0&0&-1\end{pmatrix}.
 $$
 
-**The pattern.** Each matrix has four nonzero entries, one in each row and each column, and every nonzero entry is $\pm1$. No entry is imaginary: the axis-free basis makes the sixteen products real. The first row and the first column are the four right and the four left matrices; the nine remaining entries are the genuinely two-sided cells. A cell with exactly one index equal to $t$ is skew-symmetric; a cell with both indices equal to $t$ or with neither equal to $t$ is symmetric. The display is the matrix form of the sixteen products $L_{\mathrm{axf},e_\mu}R_{\mathrm{axf},e_\nu}$ of *Matrix Representations Conventions*, §*The 4×4 Regular Representation*, read in the axis-free basis.
+**The pattern.** Each matrix has four nonzero entries, one in each row and each column, and every nonzero entry is $\pm1$. No entry is imaginary: the axis-free basis makes the sixteen products real. The first row and the first column are the four right and the four left matrices; the nine remaining entries are the genuinely two-sided basis operators. A basis operator with exactly one index equal to $t$ is skew-symmetric; a basis operator with both indices equal to $t$ or with neither equal to $t$ is symmetric. The display is the matrix form of the sixteen products $L_{\mathrm{axf},e_\mu}R_{\mathrm{axf},e_\nu}$ of *Matrix Representations Conventions*, §*The 4×4 Regular Representation*, read in the axis-free basis.
 
 **One entry.** The table gives, for example,
 $$
@@ -368,7 +368,7 @@ c_{\mu\nu}=\tfrac14\operatorname{Tr}\bigl((L_{\mathrm{axf},e_\mu}R_{\mathrm{axf}
 $$
 The map $M\mapsto c(M)$ is a linear isomorphism of $M_4(\mathbb{C})$ onto itself. It is the coordinate chart used in §*The Cone of Products*.
 
-**No change of frame is needed.** In the axis-free basis the coefficient matrix is computed from the matrix $M$ by the sixteen traces above, with no conjugation and no change-of-frame matrix. The sixteen cells are real, so for a real matrix $M$ the coefficient matrix is real and its rank is the same over $\mathbb{R}$ and over $\mathbb{C}$.
+**No change of frame is needed.** In the axis-free basis the coefficient matrix is computed from the matrix $M$ by the sixteen traces above, with no conjugation and no change-of-frame matrix. The sixteen basis operators are real, so for a real matrix $M$ the coefficient matrix is real and its rank is the same over $\mathbb{R}$ and over $\mathbb{C}$.
 
 ## The Rank of a One-Sided Operator
 
@@ -781,7 +781,7 @@ is an isomorphism of complex algebras. The sixteen elementary tensors $e_\mu\oti
 
 **The length over the reals.** For a real matrix $M$, the coefficient matrix $c(M)$ is real, and its rank over $\mathbb{R}$ equals its rank over $\mathbb{C}$. Hence the least number of real products summing to $M$ equals the least number of complex products. The length is the same over the two fields.
 
-**The frame.** In the axis-free frame the real structure is the real span of the products. The sixteen cells are real signed permutations, and the real form is read directly from the entries. A complex linear combination of the cells is in $M_4(\mathbb{R})$ exactly when its sixteen coefficients are real, because the cells are a real basis.
+**The frame.** In the axis-free frame the real structure is the real span of the products. The sixteen basis operators are real signed permutations, and the real form is read directly from the entries. A complex linear combination of the basis operators is in $M_4(\mathbb{R})$ exactly when its sixteen coefficients are real, because the basis operators are a real basis.
 
 ## What the Factorization Buys and Does Not
 
@@ -814,7 +814,7 @@ The operators on the biquaternion algebra sit at three levels. Every endomorphis
 
 The left matrix is the structure-constant display with $Q_t$ on the diagonal and the three vector coefficients in the off-diagonal positions; the right matrix differs by the signs of the stitch $R_{\mathrm{axf}}=D(L_{\mathrm{axf}})^{\mathsf T}D$, with $D=\operatorname{diag}(1,-1,-1,-1)$. The four left matrices and the four right matrices are real signed permutations, each family a basis of its copy.
 
-The sixteen products $L_{\mathrm{axf},e_\mu}R_{\mathrm{axf},e_\nu}$ are real signed permutations and an orthogonal basis of $M_4(\mathbb{C})$, of Hilbert–Schmidt norm two. They compose up to sign with the second slot reversed, their trace is $4Q_tP_t$, and their determinant is $\langle Q\rangle_{\natural}^2\langle P\rangle_{\natural}^2$. Every basis matrix is a unit of determinant one and rank four; the span is not a division algebra, since $L_{\mathrm{axf},e_t}R_{\mathrm{axf},e_t}+L_{\mathrm{axf},\vec e_x}R_{\mathrm{axf},\vec e_x}=\operatorname{diag}(0,0,2,2)$ has rank two. The first row of the table is the right family, the first column the left family, and the nine remaining cells are genuinely two-sided.
+The sixteen products $L_{\mathrm{axf},e_\mu}R_{\mathrm{axf},e_\nu}$ are real signed permutations and an orthogonal basis of $M_4(\mathbb{C})$, of Hilbert–Schmidt norm two. They compose up to sign with the second slot reversed, their trace is $4Q_tP_t$, and their determinant is $\langle Q\rangle_{\natural}^2\langle P\rangle_{\natural}^2$. Every basis matrix is a unit of determinant one and rank four; the span is not a division algebra, since $L_{\mathrm{axf},e_t}R_{\mathrm{axf},e_t}+L_{\mathrm{axf},\vec e_x}R_{\mathrm{axf},\vec e_x}=\operatorname{diag}(0,0,2,2)$ has rank two. The first row of the table is the right family, the first column the left family, and the nine remaining basis operators are genuinely two-sided.
 
 The coefficient matrix $c(M)$ is the coordinate matrix of $M$ in the sixteen-dimensional basis $L_{\mathrm{axf},e_\mu}R_{\mathrm{axf},e_\nu}$, computed by $c_{\mu\nu}=\frac14\operatorname{Tr}((L_{\mathrm{axf},e_\mu}R_{\mathrm{axf},e_\nu})^{\mathsf T}M)$. It is a linear isomorphism of $M_4(\mathbb{C})$ onto itself, and it is not the matrix $M$. The product set is the seven-dimensional Segre cone of pure tensors in $\mathbb{B}\otimes\mathbb{B}_{\mathrm{opp}}\cong M_4(\mathbb{C})$. It is not a subspace. The factorisation map has eight parameters, one scaling orbit, and the zero operator as vertex. The product condition is the rank condition $\operatorname{rank}c(M)\le1$.
 
@@ -822,7 +822,7 @@ The length is the coefficient rank, $\ell(M)=\operatorname{rank}c(M)$, and it ta
 
 The plain adjoint swaps the two parameters, and the type criteria are $\tilde Q_2=\lambda\tilde Q$ for self-adjoint, $\tilde Q_2\tilde Q=\pm e_t$ for isometry and $\tilde Q_2\tilde Q=e_t$ for multiplicative. The isometry group is $\{\pm\mathrm{Ad}_{\tilde Q}\}$, of complex dimension three, and it is not a pin group.
 
-In one line: every two-sided operator is a single product of one left and one right multiplication; the set of such products is the seven-dimensional cone of pure tensors, characterised by a rank-one coefficient matrix, closed under composition but not under addition, with length the coefficient rank, product matrix rank in $\{0,1,2,4\}$, and the real form $M_4(\mathbb{R})$ visible as the real span of the sixteen real cells.
+In one line: every two-sided operator is a single product of one left and one right multiplication; the set of such products is the seven-dimensional cone of pure tensors, characterised by a rank-one coefficient matrix, closed under composition but not under addition, with length the coefficient rank, product matrix rank in $\{0,1,2,4\}$, and the real form $M_4(\mathbb{R})$ visible as the real span of the sixteen real basis operators.
 
 ## Summary of Notation
 
@@ -854,7 +854,7 @@ In one line: every two-sided operator is a single product of one left and one ri
 | $\dagger$ | Hilbert–Schmidt adjoint |
 | $\operatorname{rank}M$ | the matrix rank of $M$; the coefficient rank is written $\operatorname{rank}c(M)$ |
 | $E_{11}$ | the first matrix unit in the axis-free basis |
-| $M_4(\mathbb{R})$ | the real matrices, the real span of the sixteen cells |
+| $M_4(\mathbb{R})$ | the real matrices, the real span of the sixteen basis operators |
 
 ## Further Reading
 
@@ -869,4 +869,4 @@ In one line: every two-sided operator is a single product of one left and one ri
 - [The Enveloping Operator Algebra of the Biquaternion Algebra and the Bi-module Structure](the-enveloping-operator-algebra-of-the-biquaternion-algebra-and-the-bi-module-structure.html), for the algebra $\mathbb{B}\otimes_{\mathbb{C}}\mathbb{B}_{\mathrm{opp}}$ and the pure tensors.
 - [The Four Adjoints of the Biquaternion Algebra in Examples](the-four-adjoints-of-the-biquaternion-algebra-in-examples.html), for the plain adjoint and its comparison with the other adjoints.
 - [The Hermitian Sandwich: Definition and Multiplicativity](the-hermitian-sandwich-definition-and-multiplicativity.html), for the real subcone $\tilde Q_2=\tilde Q^{*}$.
-- [Matrix Representations Conventions](matrix-representations-conventions.html), for the four left and four right matrices and the sixteen cells entry by entry.
+- [Matrix Representations Conventions](matrix-representations-conventions.html), for the four left and four right matrices and the sixteen basis operators entry by entry.

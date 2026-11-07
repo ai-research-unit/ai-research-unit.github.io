@@ -2,7 +2,7 @@
 
 ## Introduction
 
-This is cell $10$ of the four-sector arrangement of the two quadratic conditions
+This is sector $10$ of the four-sector arrangement of the two quadratic conditions
 
 $$
 \langle\tilde Q\rangle_{\natural}=Q_t^2+B^2,\qquad B^2=Q_x^2+Q_y^2+Q_z^2,
@@ -14,7 +14,7 @@ $$
 \Sigma_{10}=\mathcal S\setminus\mathcal N,
 $$
 
-and it is one of the two **mixed** sectors: the two cells on which the norm problem and the spectral problem give different answers. Its partner is $\Sigma_{01}=\mathcal N\setminus\mathcal S$; the two together are the witness that the problems are independent. The vocabulary, the two cones and the naming convention are those of *N-Regularity and N-Degeneracy in the Biquaternion Algebra* and *The Spectrum*. The opposite corner $\Sigma_{00}$ is treated in *The N-Degenerate, Spectrally Degenerate Sector* and $\Sigma_{01}$ in *The N-Degenerate, Spectrally Regular Sector*.
+and it is one of the two **mixed** sectors: the two sectors on which the norm problem and the spectral problem give different answers. Its partner is $\Sigma_{01}=\mathcal N\setminus\mathcal S$; the two together are the witness that the problems are independent. The vocabulary, the two cones and the naming convention are those of *N-Regularity and N-Degeneracy in the Biquaternion Algebra* and *The Spectrum*. The opposite corner $\Sigma_{00}$ is treated in *The N-Degenerate, Spectrally Degenerate Sector* and $\Sigma_{01}$ in *The N-Degenerate, Spectrally Regular Sector*.
 
 Throughout, $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$, with basis $e_t,\vec e_x,\vec e_y,\vec e_z$, $\vec e_k^2=-e_t$, and $\tilde Q=Q_te_t+\vec Q$; the conjugation is ${}^{\natural}$; the quaternionic norm is $\langle\tilde Q\rangle_{\natural}=\tilde Q^{\natural}\tilde Q$, central; and the product is the plain product unless stated otherwise. The null cone is $\mathcal N=\{N=0\}$; the spectral-degenerate cone is $\mathcal S=\{B^2=0\}$; **spectrally degenerate** means $B^2=0$, and it is a statement about the spectrum, not about diagonalisability.
 
@@ -257,7 +257,7 @@ a single Jordan block with eigenvalue $1$, and the identity $e_t$ itself, a semi
 | **$\natural$-regular, spectrally degenerate** $\Sigma_{10}$ | $\langle\tilde Q\rangle_{\natural}\neq0$, $B^2=0$ | $Q_tu$, $u$ unipotent | $\{Q_t\}$, repeated | no canonical one on $\Sigma_{10}^{\mathrm{J}}$; one-term and non-unique on $\Sigma_{10}^{\mathrm{s}}$ | stays in $\mathbb{B}^\times$; can land in $\Sigma_{11}$ |
 | **doubly degenerate** $\Sigma_{00}$ | $\langle\tilde Q\rangle_{\natural}=0$, $B^2=0$ | non-zero nilpotents of index two, plus the origin | $\{0\}$ | no canonical one off the origin | $0$ or $\Sigma_{01}$ |
 
-**The two mixed sectors.** $\Sigma_{01}$ and $\Sigma_{10}$ are the independence witnesses: $\Sigma_{01}$ is $\natural$-degenerate with a full eigenbasis, $\Sigma_{10}$ is $\natural$-regular with none. Neither cone contains the other, and these are the cells that show it.
+**The two mixed sectors.** $\Sigma_{01}$ and $\Sigma_{10}$ are the independence witnesses: $\Sigma_{01}$ is $\natural$-degenerate with a full eigenbasis, $\Sigma_{10}$ is $\natural$-regular with none. Neither cone contains the other, and these are the sectors that show it.
 
 **Position among the four sectors.** Sector $10$ is the **degenerate half of the unit group**, $\mathbb{B}^\times=\Sigma_{10}\sqcup\Sigma_{11}$, and it has two strata: the punctured scalar line $\Sigma_{10}^{\mathrm{s}}$ and the Jordan part $\Sigma_{10}^{\mathrm{J}}$. These are strata of the sector, not sectors of their own: both have $\langle\tilde Q\rangle_{\natural}\neq0$ and $B^2=0$, so no predicate separates them. The split is by the minimal polynomial and is recorded in *Relations between the N Norm and Spectral Regularity and Degeneracy*, §*The Chain of Invariants*.
 

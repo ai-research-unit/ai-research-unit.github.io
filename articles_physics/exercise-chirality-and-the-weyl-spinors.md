@@ -6,8 +6,8 @@ This is one of the articles of the Dirac exercise series accompanying the biquat
 
 The following are assumed.
 
-- The algebra, the units, the sectors and the conjugations are those of *Algebra and Element Conventions*; the two values of the subscript are those of *Special Element and Peirce Conventions*, §*The Spin and Spinor Convention*; the biquaternionic gradient and the d'Alembertian are those of *Operator and Calculus Conventions*; and the four forms are those of *Product and Form Conventions*. None of them is restated here.
-- The field is one element $\tilde{Ξ}_{\mathrm{sp}}$ of $\mathbb{B}$. Its two parts $\tilde{Ξ}_{\mathrm{sp},L}$ and $\tilde{Ξ}_{\mathrm{sp},R}$ carry the two values of the subscript, and they are named in Problem 1.
+- The algebra, the units, the sectors and the conjugations are those of *Algebra and Element Conventions*; the two parts named by the subscript are those of *Special Element and Peirce Conventions*, §*The Spin and Spinor Convention*; the biquaternionic gradient and the d'Alembertian are those of *Operator and Calculus Conventions*; and the four forms are those of *Product and Form Conventions*. None of them is restated here.
+- The field is one element $\tilde{Ξ}_{\mathrm{sp}}$ of $\mathbb{B}$. Its two parts $\tilde{Ξ}_{\mathrm{sp},L}$ and $\tilde{Ξ}_{\mathrm{sp},R}$ carry the two parts named by the subscript, and they are named in Problem 1.
 - The group $SL(2,\mathbb{C})$ is the set of unit elements, and $\pi$ is its double cover of $SO^{+}(1,3)$, acting on $\mathbb{B}_{\Phi}$ (*Norm and Unitary Conventions*, §*The Unitary Convention*; the parent article).
 - The two actions. On one part the group acts by left multiplication, $\tilde{Ξ}_{\mathrm{sp}}\mapsto\tilde U\tilde{Ξ}_{\mathrm{sp}}$; on the other by left multiplication with the coefficient conjugate, $\tilde{Ξ}_{\mathrm{sp}}\mapsto\bar{\tilde U}\,\tilde{Ξ}_{\mathrm{sp}}$ (the parent article, §*The Two Halves*).
 - The forms. The quaternionic form $\langle X,Y\rangle_{\natural}$, the Hermitian form $\langle X,Y\rangle_{*}$ and the biquaternion norm $\langle X\rangle_{\natural}$ (*Product and Form Conventions*, §*The Form Convention*; *Norm and Unitary Conventions*, §*The Norm Convention*). Their formulas are theirs and are not restated here.
@@ -18,7 +18,7 @@ Seven problems are worked below, one per section.
 
 **One declared direction, and nothing else.** A frame is declared once, by a unit vector $\vec u$ of the algebra, real and of square $\vec u^2=-e_t$. It is the only datum the exercise adds to the algebra, it is a property of the frame, and no element of any problem carries it.
 
-**The value is the subscript.** The subscript takes two values and there are exactly two. The part of the minus value is written $\tilde{Ξ}_{\mathrm{sp},L}$ and the part of the plus value is written $\tilde{Ξ}_{\mathrm{sp},R}$, in the letters of §*The Slot Label, Which Is the Chirality* of *Operator Family Conventions*; the cell that carries it is the right multiplication $-iR_{\vec u}$, named once here as the conventions name it (*Special Element and Peirce Conventions*, §*The Spin and Spinor Convention*). The side is the chirality; the cell is an example of the right slot, and its value is what the subscript records. **That is the whole definition, and no formula is written for it**: the value is named, not computed.
+**The value is the subscript.** The subscript takes two values and there are exactly two. The part of the minus value is written $\tilde{Ξ}_{\mathrm{sp},L}$ and the part of the plus value is written $\tilde{Ξ}_{\mathrm{sp},R}$, in the letters of §*The Slot Label, Which Is the Chirality* of *Operator Family Conventions*; the basis operator that carries it is the right multiplication $-iR_{\vec u}$, named once here as the conventions name it (*Special Element and Peirce Conventions*, §*The Spin and Spinor Convention*). The side is the chirality; the basis operator is an example of the right slot, and its value is what the subscript records. **That is the whole definition, and no formula is written for it**: the value is named, not computed.
 
 **Three facts, in words.** Every element is the sum of one part of each value, and only the zero element is both. A product takes the letter of its right factor. Left multiplication keeps the letter, whatever the left factor.
 
@@ -274,7 +274,7 @@ A fourth point, the form of the invariant pairing inside the algebra, is the par
 
 The Pauli and gamma formulation is legacy: the reasons are explained in the article *Why AXF Matrices instead of Pauli and Gamma Matrices*. The generators carry no frame label: $\gamma_\mu$ is one set of matrices, and the frame is named on the coordinate.
 
-The gammas are a frame of $\mathrm{Cl}_{1,3}(\mathbb{C})=M_4(\mathbb{C})$, not a different algebra. Here $L_a$ and $R_b$ are the left and right multiplications, $L_a\tilde{Ξ}_{\mathrm{sp}}=a\tilde{Ξ}_{\mathrm{sp}}$ and $R_b\tilde{Ξ}_{\mathrm{sp}}=\tilde{Ξ}_{\mathrm{sp}} b$, and $c(M)$ is the coefficient matrix of $M$ in the basis of the sixteen products. The five frame cells are, in the Peirce display,
+The gammas are a frame of $\mathrm{Cl}_{1,3}(\mathbb{C})=M_4(\mathbb{C})$, not a different algebra. Here $L_a$ and $R_b$ are the left and right multiplications, $L_a\tilde{Ξ}_{\mathrm{sp}}=a\tilde{Ξ}_{\mathrm{sp}}$ and $R_b\tilde{Ξ}_{\mathrm{sp}}=\tilde{Ξ}_{\mathrm{sp}} b$, and $c(M)$ is the coefficient matrix of $M$ in the basis of the sixteen products. The five frame basis operators are, in the Peirce display,
 
 $$
 \gamma_0=iL_{\mathrm{pau},e_t}R_{\mathrm{pau},\vec e_x},\quad \gamma_1=iL_{\mathrm{pau},\vec e_x}R_{\mathrm{pau},\vec e_y},\quad \gamma_2=iL_{\mathrm{pau},\vec e_y}R_{\mathrm{pau},\vec e_y},\quad \gamma_3=iL_{\mathrm{pau},\vec e_z}R_{\mathrm{pau},\vec e_y},\quad \gamma_5=-iL_{\mathrm{pau},e_t}R_{\mathrm{pau},\vec e_z} .
@@ -304,13 +304,13 @@ $$
 \gamma_3=\begin{pmatrix}0&-i&0&0\\-i&0&0&0\\0&0&0&-i\\0&0&-i&0\end{pmatrix},\qquad
 \gamma_5=\begin{pmatrix}0&0&0&i\\0&0&-i&0\\0&i&0&0\\-i&0&0&0\end{pmatrix},
 $$
-the signed permutations $\gamma_0=iR_{\mathrm{axf},\vec e_x}$ and $\gamma_k=iL_{\mathrm{axf},\vec e_k}R_{\mathrm{axf},\vec e_{\nu(k)}}$, carried into the Peirce arrays by $C_{\Pi}$. These are the arrays of the four coordinate cells of the display, $\gamma_0=C_t$ and $\gamma_k=C_k$, together with the chirality cell $\gamma_5$.
+the signed permutations $\gamma_0=iR_{\mathrm{axf},\vec e_x}$ and $\gamma_k=iL_{\mathrm{axf},\vec e_k}R_{\mathrm{axf},\vec e_{\nu(k)}}$, carried into the Peirce arrays by $C_{\Pi}$. These are the arrays of the four coordinate basis operators of the display, $\gamma_0=C_t$ and $\gamma_k=C_k$, together with the chirality basis operator $\gamma_5$.
 
 A single product is a pure tensor; the products form the seven-dimensional cone $\operatorname{rank}c(M)\le1$, and a general element is a sum of at most four, with $\ell(M)=\operatorname{rank}c(M)$.
 
-$\gamma_5$ is the reference-frame cell of the chirality $\Gamma$; the central grading $\chi=i\tilde{Ζ}_{\mathrm{ad}}$ — the difference of the two central idempotents of the complexified algebra, so $\chi^2=e_t$ — is a different object, represented by $\gamma_5$ on the Dirac module.
+$\gamma_5$ is the reference-frame basis operator of the chirality $\Gamma$; the central grading $\chi=i\tilde{Ζ}_{\mathrm{ad}}$ — the difference of the two central idempotents of the complexified algebra, so $\chi^2=e_t$ — is a different object, represented by $\gamma_5$ on the Dirac module.
 
-The dictionary is complex-linear; over $\mathbb{R}$ the products span $\mathrm{Cl}_{1,3}(\mathbb{R})\cong M_2(\mathbb{H})$ and the cells span $\mathrm{Cl}_{3,1}(\mathbb{R})\cong M_4(\mathbb{R})$.
+The dictionary is complex-linear; over $\mathbb{R}$ the products span $\mathrm{Cl}_{1,3}(\mathbb{R})\cong M_2(\mathbb{H})$ and the basis operators span $\mathrm{Cl}_{3,1}(\mathbb{R})\cong M_4(\mathbb{R})$.
 
 **The standard identities.** In the $\gamma$ reading, with $\epsilon_{0123}=+1$:
 
@@ -337,9 +337,9 @@ $$
 =4\bigl(\varepsilon_\mu\delta_{\mu\nu}\varepsilon_\rho\delta_{\rho\sigma}-\varepsilon_\mu\delta_{\mu\rho}\varepsilon_\nu\delta_{\nu\sigma}+\varepsilon_\mu\delta_{\mu\sigma}\varepsilon_\nu\delta_{\nu\rho}\bigr).
 $$
 
-The four contraction sums are fixed by the metric, because a cell's square is. With the summed index raised, $\gamma^\mu=-\varepsilon_\mu\gamma_\mu$, they are $-4I_4$, $+2\gamma_\alpha$, $-4\varepsilon_\alpha\delta_{\alpha\beta}I_4$ and $-2\gamma_\alpha\gamma_\beta\gamma_\delta$. With every index low only the first keeps a closed form, $\sum_\mu\gamma_\mu\gamma_\mu=-2I_4$; the other three are index-dependent and are computed, not transcribed.
+The four contraction sums are fixed by the metric, because a basis operator's square is. With the summed index raised, $\gamma^\mu=-\varepsilon_\mu\gamma_\mu$, they are $-4I_4$, $+2\gamma_\alpha$, $-4\varepsilon_\alpha\delta_{\alpha\beta}I_4$ and $-2\gamma_\alpha\gamma_\beta\gamma_\delta$. With every index low only the first keeps a closed form, $\sum_\mu\gamma_\mu\gamma_\mu=-2I_4$; the other three are index-dependent and are computed, not transcribed.
 
-**The display.** Every array printed in this section is given twice: in the Peirce display first, labelled $\mathrm{pau}$, whose arrays are the ones the literature prints, and in the axis-free display after it, labelled $\mathrm{axf}$, which is the display of the body and of the corpus. The two are carried into one another by $L_{\mathrm{axf},e_\mu}=C_{\Pi}L_{\mathrm{pau},e_\mu}C_{\Pi}^{-1}$, and a conjugation by $C_{\Pi}$ changes no product, no anticommutator, no trace and no determinant, so every identity of the section holds in both. An array is a statement about one display; a cell named in the running text keeps the Peirce label, and its axis-free array is the conjugate. The label names the array and not the operator.
+**The display.** Every array printed in this section is given twice: in the Peirce display first, labelled $\mathrm{pau}$, whose arrays are the ones the literature prints, and in the axis-free display after it, labelled $\mathrm{axf}$, which is the display of the body and of the corpus. The two are carried into one another by $L_{\mathrm{axf},e_\mu}=C_{\Pi}L_{\mathrm{pau},e_\mu}C_{\Pi}^{-1}$, and a conjugation by $C_{\Pi}$ changes no product, no anticommutator, no trace and no determinant, so every identity of the section holds in both. An array is a statement about one display; a basis operator named in the running text keeps the Peirce label, and its axis-free array is the conjugate. The label names the array and not the operator.
 
 ## Summary
 
@@ -356,7 +356,7 @@ Seven problems were solved. (1) The subscript takes two values and there are exa
 | $\langle X\rangle_{\natural} = XX^{\natural}$ | Biquaternion norm; $\langle X,Y\rangle_{\natural}=\mathrm{Sc}(X^{\natural}Y)$ its form |
 | $\langle X,Y\rangle_{*} = \mathrm{Sc}(XY^{*})$ | Hermitian form |
 | $\vec u$ | The declared unit vector of the frame, $\vec u^2=-e_t$ |
-| $-iR_{\vec u}$ | The chirality cell of the declared frame |
+| $-iR_{\vec u}$ | The chirality basis operator of the declared frame |
 | $\tilde{Ξ}_{\mathrm{sp},L}$, $\tilde{Ξ}_{\mathrm{sp},R}$ | The two parts of the field, of values $-1$ and $+1$ |
 | $\tilde\nabla=\sum_\mu e_\mu\,\partial/\partial R_\mu$ | Biquaternionic gradient |
 | $\Box=\tilde\nabla\tilde\nabla^{\natural}$ | The d'Alembertian, the quaternionic norm of the gradient |

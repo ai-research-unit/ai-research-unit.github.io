@@ -2,7 +2,7 @@
 
 ## Introduction
 
-This is cell $11$ of the four-sector arrangement of the two quadratic conditions
+This is sector $11$ of the four-sector arrangement of the two quadratic conditions
 
 $$
 \langle\tilde Q\rangle_{\natural}=Q_t^2+B^2,\qquad B^2=Q_x^2+Q_y^2+Q_z^2,
@@ -14,7 +14,7 @@ $$
 \Sigma_{11}=\mathbb{B}\setminus(\mathcal N\cup\mathcal S),
 $$
 
-and it is the **generic** sector: the open dense cell in which both problems of the arrangement receive the positive answer. The other three cells are the mixed sectors $\Sigma_{10}=\mathcal S\setminus\mathcal N$ and $\Sigma_{01}=\mathcal N\setminus\mathcal S$, and the doubly degenerate cell $\Sigma_{00}=\mathcal N\cap\mathcal S$, treated in *The N-Regular, Spectrally Degenerate Sector*, *The N-Degenerate, Spectrally Regular Sector* and *The N-Degenerate, Spectrally Degenerate Sector*. The vocabulary, the two cones and the naming convention are those of *N-Regularity and N-Degeneracy in the Biquaternion Algebra* and *The Spectrum*.
+and it is the **generic** sector: the open dense sector in which both problems of the arrangement receive the positive answer. The other three sectors are the mixed sectors $\Sigma_{10}=\mathcal S\setminus\mathcal N$ and $\Sigma_{01}=\mathcal N\setminus\mathcal S$, and the doubly degenerate sector $\Sigma_{00}=\mathcal N\cap\mathcal S$, treated in *The N-Regular, Spectrally Degenerate Sector*, *The N-Degenerate, Spectrally Regular Sector* and *The N-Degenerate, Spectrally Degenerate Sector*. The vocabulary, the two cones and the naming convention are those of *N-Regularity and N-Degeneracy in the Biquaternion Algebra* and *The Spectrum*.
 
 Throughout, $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$, with basis $e_t,\vec e_x,\vec e_y,\vec e_z$, $\vec e_k^2=-e_t$, and $\tilde Q=Q_te_t+\vec Q$; the conjugation is ${}^{\natural}$; the quaternionic norm is $\langle\tilde Q\rangle_{\natural}=\tilde Q^{\natural}\tilde Q$, central; and the product is the plain product unless stated otherwise. The null cone is $\mathcal N=\{N=0\}$; the spectral-degenerate cone is $\mathcal S=\{B^2=0\}$; **regular** means non-zero: $\langle\tilde Q\rangle_{\natural}\neq0$ for the norm, $B^2\neq0$ for the spectrum.
 
@@ -931,7 +931,7 @@ $$
 \mathbb{B}=\Sigma_{11}\sqcup\Sigma_{10}\sqcup\Sigma_{01}\sqcup\Sigma_{00}.
 $$
 
-It is the only cell off both cones, and its closure is all of $\mathbb{B}$.
+It is the only sector off both cones, and its closure is all of $\mathbb{B}$.
 
 **The two cones are tangent exactly on the common stratum.** The defining functions satisfy the identity
 
@@ -947,9 +947,9 @@ $$
 
 coincide whenever $Q_t=0$. At a common point of the two cones one has $Q_t=0$ and $B^2=0$, which is $\Sigma_{00}$; there the gradients are both $2(0,\vec Q)$, equal and non-zero off the origin. So the cones are tangent along $\Sigma_{00}\setminus\{0\}$ and both singular at the origin. On $\Sigma_{11}$ there is nothing to be tangent to: the sector is disjoint from both cones.
 
-**The cell where the answers agree.** Every element of the sector is a unit with distinct eigenvalues: both questions — is it invertible, and are its eigenvalues separated — receive the positive answer. This is the fourth corner of the $2\times2$ table and the reason the independence of the two problems is not vacuous: the doubly regular case exists, and it exists on a dense open set.
+**The sector where the answers agree.** Every element of the sector is a unit with distinct eigenvalues: both questions — is it invertible, and are its eigenvalues separated — receive the positive answer. This is the fourth corner of the $2\times2$ table and the reason the independence of the two problems is not vacuous: the doubly regular case exists, and it exists on a dense open set.
 
-**Independence, restated.** $\Sigma_{01}$ and $\Sigma_{10}$ show that neither cone contains the other. $\Sigma_{11}$ shows that the two conditions are simultaneously satisfiable, and $\Sigma_{00}$ shows that they are simultaneously violable. The four cells together are the complete truth table of the pair of predicates $(N\neq0,\ B^2\neq0)$.
+**Independence, restated.** $\Sigma_{01}$ and $\Sigma_{10}$ show that neither cone contains the other. $\Sigma_{11}$ shows that the two conditions are simultaneously satisfiable, and $\Sigma_{00}$ shows that they are simultaneously violable. The four sectors together are the complete truth table of the pair of predicates $(N\neq0,\ B^2\neq0)$.
 
 ## Comparison with the Other Three Sectors
 
@@ -960,7 +960,7 @@ coincide whenever $Q_t=0$. At a common point of the two cones one has $Q_t=0$ an
 | **norm-regular, spectrally degenerate** $\Sigma_{10}$ | $\langle\tilde Q\rangle_{\natural}\neq0$, $B^2=0$ | $Q_tu$, $u$ unipotent | $\{Q_t\}$, repeated | fails on $\Sigma_{10}^{\mathrm{J}}$; one-term and non-unique on $\Sigma_{10}^{\mathrm{s}}$ | stays in $\mathbb{B}^\times$; lands in $\Sigma_{10}$ or $\Sigma_{11}$ |
 | **doubly degenerate** $\Sigma_{00}$ | $\langle\tilde Q\rangle_{\natural}=0$, $B^2=0$ | non-zero nilpotents of index two, plus the origin | $\{0\}$ | fails off the origin | $0$ or $\Sigma_{01}$ |
 
-The four cells are exhaustive and disjoint. $\Sigma_{11}$ is the unique cell in which both predicates hold, $\Sigma_{00}$ the unique cell in which both fail, and the two mixed cells are the remaining two rows of the truth table.
+The four sectors are exhaustive and disjoint. $\Sigma_{11}$ is the unique sector in which both predicates hold, $\Sigma_{00}$ the unique sector in which both fail, and the two mixed sectors are the remaining two rows of the truth table.
 
 **Position among the four sectors.** Sector $11$ is the **distinct sector**: two distinct non-zero eigenvalues, a unique two-term spectral decomposition, and no point of either cone. The finer split inside the other sectors is by the minimal polynomial, not by the two predicates; it is recorded in *Relations between the N Norm and Spectral Regularity and Degeneracy*, §*The Chain of Invariants*. On this sector the two classifications coincide, because the sector is homogeneous: every element has two distinct non-zero eigenvalues and a unique Peirce decomposition relative to $\tilde Q$.
 
@@ -1062,9 +1062,9 @@ with $\vec{Ζ}=-i\vec Q/B$. The eigenvalues weight the operator, not the element
 | multiplication | $\Sigma_{11}\cdot\Sigma_{11}\subseteq\Sigma_{10}\cup\Sigma_{11}$, with both outcomes; not product-closed |
 | squares | in $\Sigma_{11}$ when $Q_t\neq0$, on the scalar line when $Q_t=0$ |
 | relation to the cones | off both cones; the cones are tangent along $\Sigma_{00}\setminus\{0\}$ |
-| place in the arrangement | the distinct sector: the one cell where both answers are positive |
+| place in the arrangement | the distinct sector: the one sector where both answers are positive |
 
-The sector is the generic sector. It is the set of units with distinct non-zero eigenvalues, the complement of the union of the two cones, and the only cell of the arrangement in which both questions — is the element invertible, and can its eigenvalues be told apart — receive the positive answer. It is what the algebra looks like when nothing degenerates. Its complement is the arrangement, and the three other sectors are the three ways the doubly regular case can fail: by losing invertibility, by losing spectral separation, or by losing both.
+The sector is the generic sector. It is the set of units with distinct non-zero eigenvalues, the complement of the union of the two cones, and the only sector of the arrangement in which both questions — is the element invertible, and can its eigenvalues be told apart — receive the positive answer. It is what the algebra looks like when nothing degenerates. Its complement is the arrangement, and the three other sectors are the three ways the doubly regular case can fail: by losing invertibility, by losing spectral separation, or by losing both.
 
 ## Summary of Notation
 

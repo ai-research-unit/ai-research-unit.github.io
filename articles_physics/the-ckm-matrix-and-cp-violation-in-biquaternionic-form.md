@@ -253,9 +253,9 @@ the same expression with the leptonic angles and phase. The framework's structur
 
 The Pauli and gamma formulation is legacy: the reasons are explained in the article *Why AXF Matrices instead of Pauli and Gamma Matrices*. The generators carry no frame label: $\gamma_\mu$ is one set of matrices, $\gamma_0^2=I_4$ and $\gamma_k^2=-I_4$. The frame belongs to the coordinate, not to the array.
 
-The body of the article is written in elements: a generator is the action $X\mapsto ie_\mu X\vec e_{\nu(\mu)}$, the field carries the label $L$ or $R$, and the mixing is the number $V_{ab}$. The older literature writes the same five generators as arrays, and they are collected here — with the cells that display them — so that a reader who comes from the matrix literature can translate; they enter nowhere else in the article. The letter $\gamma$ of the unitarity triangle, in the section on the Wolfenstein parametrisation, is the triangle's angle and has nothing to do with $\gamma_\mu$.
+The body of the article is written in elements: a generator is the action $X\mapsto ie_\mu X\vec e_{\nu(\mu)}$, the field carries the label $L$ or $R$, and the mixing is the number $V_{ab}$. The older literature writes the same five generators as arrays, and they are collected here — with the basis operators that display them — so that a reader who comes from the matrix literature can translate; they enter nowhere else in the article. The letter $\gamma$ of the unitarity triangle, in the section on the Wolfenstein parametrisation, is the triangle's angle and has nothing to do with $\gamma_\mu$.
 
-**The frame and the signs.** The names below are the $\mathbb{B}_{\Phi}$ frame, $\varepsilon=(1,-1,-1,-1)$, with the index low and $\epsilon_{0123}=+1$. The generator cell of the coordinate $x_\mu$ is $\gamma_\mu$, and $\gamma_5$ is the chirality cell:
+**The frame and the signs.** The names below are the $\mathbb{B}_{\Phi}$ frame, $\varepsilon=(1,-1,-1,-1)$, with the index low and $\epsilon_{0123}=+1$. The generator basis operator of the coordinate $x_\mu$ is $\gamma_\mu$, and $\gamma_5$ is the chirality basis operator:
 
 $$
 \gamma_0=iL_{\mathrm{pau},e_t}R_{\mathrm{pau},\vec e_x},\quad \gamma_1=iL_{\mathrm{pau},\vec e_x}R_{\mathrm{pau},\vec e_y},\quad \gamma_2=iL_{\mathrm{pau},\vec e_y}R_{\mathrm{pau},\vec e_y},\quad \gamma_3=iL_{\mathrm{pau},\vec e_z}R_{\mathrm{pau},\vec e_y},\quad \gamma_5=-iL_{\mathrm{pau},e_t}R_{\mathrm{pau},\vec e_z} .
@@ -269,7 +269,7 @@ $$
 
 The gammas are a frame of $\mathrm{Cl}_{1,3}(\mathbb{C})=M_4(\mathbb{C})$, not a different algebra. The generator of the charged current of this article is $\gamma_\mu$ in these names, and the label $L$ of the body is what the older notation writes with the projector $P_L$; that projector is a named object of the older notation, and it needs no formula here.
 
-**The squares.** Every square is a cell square, with $L_aR_bL_cR_d=L_{ac}R_{db}$, and the only sources of a sign are $i^2=-1$ and the squares of the imaginary units, $\vec e_k^2=-e_t$ and $e_t^2=e_t$:
+**The squares.** Every square is a basis operator square, with $L_aR_bL_cR_d=L_{ac}R_{db}$, and the only sources of a sign are $i^2=-1$ and the squares of the imaginary units, $\vec e_k^2=-e_t$ and $e_t^2=e_t$:
 
 $$
 \gamma_5^2=(-i)^2L_{\mathrm{pau},e_t}R_{\mathrm{pau},\vec e_z}L_{\mathrm{pau},e_t}R_{\mathrm{pau},\vec e_z}=(-1)L_{\mathrm{pau},e_t}R_{\mathrm{pau},\vec e_z^2}=(-1)(-I_4)=I_4,
@@ -295,7 +295,7 @@ $$
 
 so a square spends $i^2=-1$ once, and it spends one quaternion square for $\gamma_0$ against two for $\gamma_k$: two minus signs give $(\gamma_0)^2=+I_4$, three give $(\gamma_k)^2=-I_4$.
 
-**The fifth generator and the central sign.** $\gamma_5$ is the older notation's name for the fifth generator; the cell is one right multiplication, $-iR_{\vec e_z}$, a pure right multiplier, and the older notation calls it $\gamma_5$. The label $L$ of the body is its minus part. The abstract central sign of the complexified algebra, $\chi=i\tilde{Ζ}_{\mathrm{ad}}$ of *Special Element Conventions*, §*The Root Convention*, is a different object; its representative on the array is $\gamma_5$.
+**The fifth generator and the central sign.** $\gamma_5$ is the older notation's name for the fifth generator; the basis operator is one right multiplication, $-iR_{\vec e_z}$, a pure right multiplier, and the older notation calls it $\gamma_5$. The label $L$ of the body is its minus part. The abstract central sign of the complexified algebra, $\chi=i\tilde{Ζ}_{\mathrm{ad}}$ of *Special Element Conventions*, §*The Root Convention*, is a different object; its representative on the array is $\gamma_5$.
 
 **The identities.** In the frame declared above, with $\epsilon_{0123}=+1$,
 $$
@@ -332,7 +332,7 @@ $$
 
 The metric sits in the raised index and nowhere else. With every index low the same sums read $\sum_\mu\gamma_\mu\gamma_\mu=-2I_4$, $\sum_\mu\gamma_\mu\gamma_0\gamma_\mu=+4\gamma_0$, and the spatial sums vanish, $\sum_\mu\gamma_\mu\gamma_k\gamma_\mu=0$.
 
-**Closure.** The sixteen products — $I_4$, the four $\gamma_\mu$, the six $\gamma_\mu\gamma_\nu$ with $\mu<\nu$, the four $\gamma_5\gamma_\mu$ and $\gamma_5$ — are a basis of $M_4(\mathbb{C})=\mathrm{Cl}_{1,3}(\mathbb{C})$, so no product of gammas leaves the algebra and the dictionary closes. The real algebras are smaller. The sixteen cells $L_aR_b$, whose product is again a cell, span $\mathrm{Cl}_{3,1}(\mathbb{R})\cong M_4(\mathbb{R})$ over $\mathbb{R}$; the products of the gammas alone span $\mathrm{Cl}_{1,3}(\mathbb{R})\cong M_2(\mathbb{H})$. Both are sixteen-dimensional, and both complexify to $M_4(\mathbb{C})$. The chirality cell is not among the products with real coefficients:
+**Closure.** The sixteen products — $I_4$, the four $\gamma_\mu$, the six $\gamma_\mu\gamma_\nu$ with $\mu<\nu$, the four $\gamma_5\gamma_\mu$ and $\gamma_5$ — are a basis of $M_4(\mathbb{C})=\mathrm{Cl}_{1,3}(\mathbb{C})$, so no product of gammas leaves the algebra and the dictionary closes. The real algebras are smaller. The sixteen basis operators $L_aR_b$, whose product is again a basis operator, span $\mathrm{Cl}_{3,1}(\mathbb{R})\cong M_4(\mathbb{R})$ over $\mathbb{R}$; the products of the gammas alone span $\mathrm{Cl}_{1,3}(\mathbb{R})\cong M_2(\mathbb{H})$. Both are sixteen-dimensional, and both complexify to $M_4(\mathbb{C})$. The chirality basis operator is not among the products with real coefficients:
 
 $$
 \gamma_5=i\,\gamma_0\gamma_1\gamma_2\gamma_3 ,
@@ -340,7 +340,7 @@ $$
 
 so it enters with the central $i$, and the real algebra generated by the four $\gamma_\mu$ does not contain it. The chirality grading is the one place where the dictionary needs more than the four gammas.
 
-**The display.** Every array printed in this section is given twice: in the Peirce display first, labelled $\mathrm{pau}$, whose arrays are the ones the literature prints, and in the axis-free display after it, labelled $\mathrm{axf}$, which is the display of the body and of the corpus. The two are carried into one another by $L_{\mathrm{axf},e_\mu}=C_{\Pi}L_{\mathrm{pau},e_\mu}C_{\Pi}^{-1}$, and a conjugation by $C_{\Pi}$ changes no product, no anticommutator, no trace and no determinant, so every identity of the section holds in both. An array is a statement about one display; a cell named in the running text keeps the Peirce label, and its axis-free array is the conjugate. The label names the array and not the operator.
+**The display.** Every array printed in this section is given twice: in the Peirce display first, labelled $\mathrm{pau}$, whose arrays are the ones the literature prints, and in the axis-free display after it, labelled $\mathrm{axf}$, which is the display of the body and of the corpus. The two are carried into one another by $L_{\mathrm{axf},e_\mu}=C_{\Pi}L_{\mathrm{pau},e_\mu}C_{\Pi}^{-1}$, and a conjugation by $C_{\Pi}$ changes no product, no anticommutator, no trace and no determinant, so every identity of the section holds in both. An array is a statement about one display; a basis operator named in the running text keeps the Peirce label, and its axis-free array is the conjugate. The label names the array and not the operator.
 
 ## Summary
 

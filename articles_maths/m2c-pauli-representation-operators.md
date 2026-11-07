@@ -206,7 +206,7 @@ by the mixed-product property. It is the operator.
 
 **The Kronecker product of the $4\times4$ matrices.** The Kronecker product $(\mathrm I_2\otimes A)\otimes(B^{\mathsf T}\otimes\mathrm I_2)$ is $16\times16$, acts on the tensor square of the carrier, and is not the operator. The distinction is the one drawn in *$M_4(\mathbb{C})$ Pauli Representation : Operators*, §*The Kronecker Question*: the ordinary product is the operator, the Kronecker product of the two $2\times2$ matrices is its display, and the Kronecker product of the two $4\times4$ matrices is a different operator on a different space.
 
-**The frame dependence.** The display $B^{\mathsf T}\otimes A$ is a property of the Peirce frame. In the axis-free basis the same operator is a sum of sixteen signed-permutation cells, and no $2\times2$ block appears; the pair survives, but the frame does not display it. The two articles read the same operator in the two frames, and the pair is the invariant.
+**The frame dependence.** The display $B^{\mathsf T}\otimes A$ is a property of the Peirce frame. In the axis-free basis the same operator is a sum of sixteen signed-permutation basis operators, and no $2\times2$ block appears; the pair survives, but the frame does not display it. The two articles read the same operator in the two frames, and the pair is the invariant.
 
 ### The Coefficient Matrix
 

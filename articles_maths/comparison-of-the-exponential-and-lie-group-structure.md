@@ -61,7 +61,7 @@ The exponential is a group homomorphism onto a single component of the units for
 | $GL_2(\mathbb{R}),GL(2,\mathbb{C})$ | the unit groups of $\mathbb{H}_{\mathrm{spl}}$ and $\mathbb{B}$ |
 | $\{N>0\}$ | the identity component of the units of $\mathbb{H}_{\mathrm{spl}}$ and of $\mathbb{C}_{\mathrm{spl}}$ |
 | $t\mapsto\exp(t\tilde Q)$ | the general one-parameter subgroup |
-| `—` | an empty cell, stated and never filled |
+| `—` | an empty entry, stated and never filled |
 
 ## Further Reading
 

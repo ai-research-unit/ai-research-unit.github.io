@@ -219,7 +219,7 @@ $$
 \Bigl(\tfrac{59}{2},29\Bigr)\longleftrightarrow\Bigl(29,\tfrac{59}{2}\Bigr)\ \longrightarrow\ \cdots
 $$
 
-The first member is the **fundamental doublet**: the representation $\tau^{\frac12,0}\oplus\tau^{0,\frac12}$, four complex components in all — the two spin projections $\pm\frac12$ in two copies, one copy from each factor — which is the **electron**. The Dirac field reads the two copies as the two values of the subscript, which in the massless limit are the two helicities. Each single arrow is one interlocking step, adding $\frac12$ to both labels; each double arrow pairs a representation with its conjugate.
+The first member is the **fundamental doublet**: the representation $\tau^{\frac12,0}\oplus\tau^{0,\frac12}$, four complex components in all — the two spin projections $\pm\frac12$ in two copies, one copy from each factor — which is the **electron**. The Dirac field reads the two copies as the two parts named by the subscript, which in the massless limit are the two helicities. Each single arrow is one interlocking step, adding $\frac12$ to both labels; each double arrow pairs a representation with its conjugate.
 
 ### The Dirac Equation on the Doublet
 
@@ -348,7 +348,7 @@ The framework's relation to this is the fundamental doublet's factor: $\mathbb{C
 | $l=k/2$, $\bar l=r/2$ | Lorentz labels from the numbers of unbarred/barred indices |
 | $\dim\mathrm{sym}^{(k,r)}=(k+1)(r+1)$ | Degree of the representation |
 | $s=\lvert l-\bar l\rvert$ | Generalised spin of the field type $(l,\bar l)\oplus(\bar l,l)$ |
-| $\tilde{Ξ}_{\mathrm{sp},L}$, $\tilde{Ξ}_{\mathrm{sp},R}$ | The two values of the subscript, the two parts of the Dirac element; one equation per value |
+| $\tilde{Ξ}_{\mathrm{sp},L}$, $\tilde{Ξ}_{\mathrm{sp},R}$ | The two parts of the Dirac element named by the subscript; one equation per part |
 | $M^{l\bar l}_\mu$, $M(p)$ | Generator matrices of the representation and the momentum matrix |
 | $D(p)=\det(M(p)+mE)$ | Determinant whose roots are the masses |
 | $\mu_0$, $\lambda_i$ | Mass scale and eigenvalues of $M_0$ |

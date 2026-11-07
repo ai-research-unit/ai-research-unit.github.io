@@ -440,7 +440,7 @@ The converse holds exactly for the free pair. Read the first member as a definit
 - O. Klein, "Elektrodynamik und Wellenmechanik vom Standpunkt des Korrespondenzprinzips," *Zeitschrift für Physik* **41** (1927) 407–442, and W. Gordon, "Der Comptoneffekt nach der Schrödingerschen Theorie," *Zeitschrift für Physik* **40** (1926) 117–133, for the second-order relativistic wave equation.
 - J. D. Bjorken and S. D. Drell, *Relativistic Quantum Mechanics* (McGraw-Hill, 1964), for the first-order equation, its second-order square and the plane-wave solutions.
 - J. J. Sakurai, *Advanced Quantum Mechanics* (Addison-Wesley, 1967), for the square of the Dirac operator and the Weyl decomposition.
-- C. Itzykson and J.-B. Zuber, *Quantum Field Theory* (McGraw-Hill, 1980), for the five cells of the older frame and their representations, and the mass shell.
+- C. Itzykson and J.-B. Zuber, *Quantum Field Theory* (McGraw-Hill, 1980), for the five basis operators of the older frame and their representations, and the mass shell.
 - P. Lounesto, *Clifford Algebras and Spinors* (Cambridge, 2001), for the even subalgebra and the square root of the wave operator.
 - D. Hestenes, *Space-Time Algebra* (Gordon and Breach, 1966), and C. Doran and A. Lasenby, *Geometric Algebra for Physicists* (Cambridge, 2003), for the geometric-algebra interpretation of the Dirac operator and its square.
 - S. S. Schweber, *An Introduction to Relativistic Quantum Field Theory* (Harper and Row, 1961), and A. I. Akhiezer and V. B. Berestetskii, *Quantum Electrodynamics* (Wiley, 1965), for the older arrangement of the Dirac equation in two halves and the squared equation in an external field.

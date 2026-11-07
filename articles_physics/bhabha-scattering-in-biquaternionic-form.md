@@ -6,7 +6,7 @@
 
 Bhabha scattering is the workhorse of electron–positron colliders: because its small-angle cross section is large, exactly calculable and dominated by the $1/t^2$ photon propagator, it is used as the **luminosity monitor** of the machine. This is the counterpart of the companion article *Møller Scattering in Biquaternionic Form*, and the biquaternion interpretation is largely shared: the amplitude is a product of material-sector currents joined by the framework's photon propagator, and the two structural features the framework owns are the **fermion sign** — here appearing as the relative sign between exchange and annihilation — and **crossing symmetry**, which is the framework's charge conjugation $\mathcal C$, the real structure that pairs an element with its conjugate.
 
-The article is organised as follows. The next section sets up the kinematics, the frame cells and the equations of the external states, then the two amplitudes with their relative sign. The section after that gives the spin sum, the traces and the cross section with its small-angle behaviour. Then comes the crossing relation to Møller, with the exact check, followed by the biquaternion interpretation, including the annihilation channel's relation to charge conjugation and to bound-state physics, and then the open questions. A closing dictionary carries the five cells into the display of the older literature; nothing before it needs that display. The summary, the notation table and the literature close the article.
+The article is organised as follows. The next section sets up the kinematics, the frame basis operators and the equations of the external states, then the two amplitudes with their relative sign. The section after that gives the spin sum, the traces and the cross section with its small-angle behaviour. Then comes the crossing relation to Møller, with the exact check, followed by the biquaternion interpretation, including the annihilation channel's relation to charge conjugation and to bound-state physics, and then the open questions. A closing dictionary carries the five basis operators into the display of the older literature; nothing before it needs that display. The summary, the notation table and the literature close the article.
 
 ## The Process and Its Two Amplitudes
 
@@ -42,24 +42,23 @@ $$
 
 so that $t\le0$ and, at small angles, $t\to0^-$ and $u\to-s$.
 
-### The frame cells and the momentum cell
+### The frame operators and the momentum operator
+The algebra is $\mathbb{B}$, read in the units $e_t,\vec e_x,\vec e_y,\vec e_z$ of *Algebra and Element Conventions*, and the two-sided multiplications are the basis operators of *Operator Family Conventions*, written here by their action $X\mapsto aXb$.
 
-The algebra is $\mathbb{B}$, read in the units $e_t,\vec e_x,\vec e_y,\vec e_z$ of *Algebra and Element Conventions*, and the two-sided multiplications are the cells of *Operator Family Conventions*, written here by their action $X\mapsto aXb$.
-
-The four **frame cells** that the current uses act by
+The four **frame basis operators** that the current uses act by
 
 $$
 \Gamma_t: X\mapsto iX\vec e_x,\qquad
 \Gamma_k: X\mapsto i\vec e_kX\vec e_y\quad(k=1,2,3),
 $$
 
-with $(\vec e_1,\vec e_2,\vec e_3)=(\vec e_x,\vec e_y,\vec e_z)$, and the fifth, the cell that carries the split, acts by
+with $(\vec e_1,\vec e_2,\vec e_3)=(\vec e_x,\vec e_y,\vec e_z)$, and the fifth, the basis operator that carries the split, acts by
 
 $$
 \mathsf{V}_{\mathrm{vol}}: X\mapsto -iX\vec e_z .
 $$
 
-Each frame cell carries exactly one factor of the central $i$, so a square spends $i^2=-1$ once, and the remaining signs come from the squares of the three spatial units:
+Each frame basis operator carries exactly one factor of the central $i$, so a square spends $i^2=-1$ once, and the remaining signs come from the squares of the three spatial units:
 
 $$
 \Gamma_t^2=1,\qquad
@@ -67,9 +66,9 @@ $$
 \Gamma_\mu\Gamma_\nu+\Gamma_\nu\Gamma_\mu=0\quad(\mu\neq\nu),
 $$
 
-the $1$ being the identity action and the $0$ the zero action. The anticommutation comes from the quaternion rule of two different spatial units. The time cell is a right multiplication alone, the three spatial cells carry a factor on each side, and the fifth is a right multiplication alone; that side is what makes it a chirality, and its anticommutation with the four frame cells is a separate property of the list.
+the $1$ being the identity action and the $0$ the zero action. The anticommutation comes from the quaternion rule of two different spatial units. The time basis operator is a right multiplication alone, the three spatial basis operators carry a factor on each side, and the fifth is a right multiplication alone; that side is what makes it a chirality, and its anticommutation with the four frame basis operators is a separate property of the list.
 
-The **momentum cell** of a four-momentum $p=(p_0,p_1,p_2,p_3)$ is the sum of the four frame cells with the components as coefficients,
+The **momentum basis operator** of a four-momentum $p=(p_0,p_1,p_2,p_3)$ is the sum of the four frame basis operators with the components as coefficients,
 
 $$
 P(p): X\mapsto p_0\,iX\vec e_x-\sum_{k=1}^3 p_k\,i\vec e_kX\vec e_y,
@@ -107,7 +106,7 @@ with $\bar F$ the coefficient conjugate. The derivative acts on the left, the ma
 
 The subscript on an element takes the two values $L$ and $R$: the value of $\mathsf{V}_{\mathrm{vol}}$ is $-1$ on the $L$ part and $+1$ on the $R$ part. The conjugation takes each letter to the other, because it sends $-i\vec e_z$ to $+i\vec e_z$. The mass term carries $\bar F$ and is therefore the only term that relates the two parts: the conjugation plays the part of the second field of the pair, and the unit $-i\vec e_z$ the part of the mass. That is why the two-sided reading is one equation for one element rather than a pair, and why it is antilinear.
 
-**The frame-cell reading.** In the frame cells the two states satisfy
+**The frame-basis operator reading.** In the frame basis operators the two states satisfy
 
 $$
 P(p)\,\tilde u(p)=m\,\tilde u(p),
@@ -115,7 +114,7 @@ P(p)\,\tilde u(p)=m\,\tilde u(p),
 P(k)\,\tilde v(k)=-m\,\tilde v(k),
 $$
 
-with the momentum cell acting on the element as defined. The two lines are distinguished by the sign of the mass term, because $\tilde u$ carries the positive-frequency factor $e^{-i(p\cdot x)/\hbar}$ and $\tilde v$ the negative-frequency factor $e^{+i(p\cdot x)/\hbar}$; the opposite sign is the crossing, not a second mass. This is not the two-sided equation: there the mass acts on the right by a unit and the field is conjugated, here the mass is the central scalar $m$ and the field is not.
+with the momentum basis operator acting on the element as defined. The two lines are distinguished by the sign of the mass term, because $\tilde u$ carries the positive-frequency factor $e^{-i(p\cdot x)/\hbar}$ and $\tilde v$ the negative-frequency factor $e^{+i(p\cdot x)/\hbar}$; the opposite sign is the crossing, not a second mass. This is not the two-sided equation: there the mass acts on the right by a unit and the field is conjugated, here the mass is the central scalar $m$ and the field is not.
 
 ### The two amplitudes
 
@@ -127,7 +126,7 @@ J_t(a,b):=\mathrm{Sc}\bigl(a^{*}b\bigr),
 J_k(a,b):=\mathrm{Sc}\bigl(a^{*}\,\vec e_k\,b\,\vec e_z\bigr)\quad(k=1,2,3),
 $$
 
-with $a$ the element of the outgoing line and $b$ that of the incoming one. The time component is the Hermitian form of *Product and Form Conventions* read with its two arguments exchanged, $J_t(a,b)=\langle b,a\rangle_{*}$. The four numbers are the frame-cell bilinears reduced to the algebra, a derived form: the central $i$ of the cell cancels the central $i$ of the adjoint, and the product $\vec e_y\vec e_x=-\vec e_z$ turns the right multiplier of a spatial cell into $\vec e_z$. Every one of the four is a single complex number, and the brackets below are ordinary products.
+with $a$ the element of the outgoing line and $b$ that of the incoming one. The time component is the Hermitian form of *Product and Form Conventions* read with its two arguments exchanged, $J_t(a,b)=\langle b,a\rangle_{*}$. The four numbers are the frame-basis operator bilinears reduced to the algebra, a derived form: the central $i$ of the basis operator cancels the central $i$ of the adjoint, and the product $\vec e_y\vec e_x=-\vec e_z$ turns the right multiplier of a spatial basis operator into $\vec e_z$. Every one of the four is a single complex number, and the brackets below are ordinary products.
 
 Two currents contract with the sign vector,
 
@@ -156,7 +155,7 @@ The first term is the **scattering** diagram, with coefficient $-e^2$ and denomi
 
 ## The Spin Sum and the Cross Section
 
-Averaging over the two states of each incoming particle and summing over the two of each outgoing particle costs the factor $\tfrac14$. The sum over the two states of a line is the standard completeness relation, and in the massless limit it is the momentum cell that expresses it: $P(p)$ is then nilpotent of rank two, so the two states of the line exhaust it. The squared amplitude is then
+Averaging over the two states of each incoming particle and summing over the two of each outgoing particle costs the factor $\tfrac14$. The sum over the two states of a line is the standard completeness relation, and in the massless limit it is the momentum basis operator that expresses it: $P(p)$ is then nilpotent of rank two, so the two states of the line exhaust it. The squared amplitude is then
 
 $$
 \frac14\sum_{\mathrm{states}}|\mathcal M|^2
@@ -184,7 +183,7 @@ $$
 
 where $\varepsilon=(1,-1,-1,-1)$ is the sign vector and $\operatorname{Tr}$ is the trace of the action on the four-dimensional complex space $\mathbb{B}$.
 
-Each factor is a cell, and a product of cells is a cell: the action $X\mapsto aXb$ followed by $X\mapsto cXd$ is $X\mapsto caXbd$, a derived form, so the left multipliers multiply in the order reverse to the order of application and the right multipliers in that order. The trace of a cell is four times the product of the scalar parts of its two multipliers,
+Each factor is a two-sided operator, and a product of two-sided operators is a two-sided operator: the action $X\mapsto aXb$ followed by $X\mapsto cXd$ is $X\mapsto caXbd$, a derived form, so the left multipliers multiply in the order reverse to the order of application and the right multipliers in that order. The trace of a basis operator is four times the product of the scalar parts of its two multipliers,
 
 $$
 \operatorname{Tr}\bigl[X\mapsto aXb\bigr]=4\,\mathrm{Sc}(a)\,\mathrm{Sc}(b),
@@ -281,7 +280,7 @@ The $s$-channel also connects the free scattering problem to **bound states**. T
 
 ### What the framework supplies and what it does not
 
-The framework supplies the two currents, the photon propagator, the external Fock states, the fermion sign as the antisymmetry of its mode algebra, and charge conjugation as the real structure $\mathcal C$ that relates the exchange and annihilation channels. The trace evaluation is the cell algebra of the frame cells, not a new dynamical input. It does **not** supply the $Z$-exchange contribution or the positronium spectrum. As always, the tree-level result is standard electrodynamics expressed in the framework's variables, and no framework-specific prediction is claimed.
+The framework supplies the two currents, the photon propagator, the external Fock states, the fermion sign as the antisymmetry of its mode algebra, and charge conjugation as the real structure $\mathcal C$ that relates the exchange and annihilation channels. The trace evaluation is the basis operator algebra of the frame basis operators, not a new dynamical input. It does **not** supply the $Z$-exchange contribution or the positronium spectrum. As always, the tree-level result is standard electrodynamics expressed in the framework's variables, and no framework-specific prediction is claimed.
 
 ## Open Questions
 
@@ -303,7 +302,7 @@ The Pauli and gamma formulation is legacy: the reasons are explained in the arti
 
 This section fixes the dictionary that the traces above reproduce, and nothing here is needed outside it.
 
-The five cells below are a frame of $\mathrm{Cl}_{1,3}(\mathbb{C})=M_4(\mathbb{C})$, elements of the same algebra as the body's cells, not of a larger one. Here $L_a$ and $R_b$ are the left and right multiplications, $L_a\tilde{Ξ}_{\mathrm{sp}}=a\tilde{Ξ}_{\mathrm{sp}}$ and $R_b\tilde{Ξ}_{\mathrm{sp}}=\tilde{Ξ}_{\mathrm{sp}} b$.
+The five basis operators below are a frame of $\mathrm{Cl}_{1,3}(\mathbb{C})=M_4(\mathbb{C})$, elements of the same algebra as the body's basis operators, not of a larger one. Here $L_a$ and $R_b$ are the left and right multiplications, $L_a\tilde{Ξ}_{\mathrm{sp}}=a\tilde{Ξ}_{\mathrm{sp}}$ and $R_b\tilde{Ξ}_{\mathrm{sp}}=\tilde{Ξ}_{\mathrm{sp}} b$.
 
 $$
 \gamma_0=iL_{\mathrm{pau},e_t}R_{\mathrm{pau},\vec e_x},\quad \gamma_1=iL_{\mathrm{pau},\vec e_x}R_{\mathrm{pau},\vec e_y},\quad \gamma_2=iL_{\mathrm{pau},\vec e_y}R_{\mathrm{pau},\vec e_y},\quad \gamma_3=iL_{\mathrm{pau},\vec e_z}R_{\mathrm{pau},\vec e_y},\quad \gamma_5=-iL_{\mathrm{pau},e_t}R_{\mathrm{pau},\vec e_z} .
@@ -315,13 +314,13 @@ $$
 \gamma_0=iL_{\mathrm{axf},e_t}R_{\mathrm{axf},\vec e_x},\quad \gamma_1=iL_{\mathrm{axf},\vec e_x}R_{\mathrm{axf},\vec e_y},\quad \gamma_2=iL_{\mathrm{axf},\vec e_y}R_{\mathrm{axf},\vec e_y},\quad \gamma_3=iL_{\mathrm{axf},\vec e_z}R_{\mathrm{axf},\vec e_y},\quad \gamma_5=-iL_{\mathrm{axf},e_t}R_{\mathrm{axf},\vec e_z} .
 $$
 
-Each $\gamma_\mu$ carries one factor of $i$, so a square spends $i^2=-1$ once; the signs of the squares are the metric signs. The fifth cell is not independent, since
+Each $\gamma_\mu$ carries one factor of $i$, so a square spends $i^2=-1$ once; the signs of the squares are the metric signs. The fifth basis operator is not independent, since
 
 $$
 \gamma_5=i\gamma_0\gamma_1\gamma_2\gamma_3 .
 $$
 
-These are the body's own cells — $\Gamma_t=\gamma_0$, $\Gamma_k=\gamma_k$ for $k=1,2,3$, and $\mathsf{V}_{\mathrm{vol}}=\gamma_5$ — so nothing in the body needs the gammas: the reading is a bookkeeping device for the traces, and $\mathrm{tr}$ is the $4\times4$ matrix trace of this reading, the same number as the body's trace $\operatorname{Tr}$ of the action on $\mathbb{B}$.
+These are the body's own basis operators — $\Gamma_t=\gamma_0$, $\Gamma_k=\gamma_k$ for $k=1,2,3$, and $\mathsf{V}_{\mathrm{vol}}=\gamma_5$ — so nothing in the body needs the gammas: the reading is a bookkeeping device for the traces, and $\mathrm{tr}$ is the $4\times4$ matrix trace of this reading, the same number as the body's trace $\operatorname{Tr}$ of the action on $\mathbb{B}$.
 
 **The trace identities.** In the $\gamma$ reading, with $\varepsilon=(1,-1,-1,-1)$ and $\epsilon_{0123}=+1$,
 
@@ -352,17 +351,17 @@ $$
 
 which is the algebra behind the cross section.
 
-The central grading $\xi_{\mathrm{ad}}:=i\tilde{Ζ}_{\mathrm{ad}}$ is a different object from the cell $\mathsf{V}_{\mathrm{vol}}$, and the two must not be read as one. Here $\tilde{Ζ}_{\mathrm{ad}}$ is a central root of $-e_t$, so $\tilde{Ζ}_{\mathrm{ad}}^2=-e_t$ and $\xi_{\mathrm{ad}}^2=i^2\tilde{Ζ}_{\mathrm{ad}}^2=(-1)(-e_t)=e_t$; equivalently, $\xi_{\mathrm{ad}}$ is the difference of the two central idempotents of the complexified algebra. Being central, it acts on the Dirac module as a sign, and its representative there is $\gamma_5$. The fifth cell $\mathsf{V}_{\mathrm{vol}}$ acts on that same module exactly as $\gamma_5$ acts; what the two-sided reading adds is not a second operator but the frame in which the mass can act by right multiplication.
+The central grading $\xi_{\mathrm{ad}}:=i\tilde{Ζ}_{\mathrm{ad}}$ is a different object from the basis operator $\mathsf{V}_{\mathrm{vol}}$, and the two must not be read as one. Here $\tilde{Ζ}_{\mathrm{ad}}$ is a central root of $-e_t$, so $\tilde{Ζ}_{\mathrm{ad}}^2=-e_t$ and $\xi_{\mathrm{ad}}^2=i^2\tilde{Ζ}_{\mathrm{ad}}^2=(-1)(-e_t)=e_t$; equivalently, $\xi_{\mathrm{ad}}$ is the difference of the two central idempotents of the complexified algebra. Being central, it acts on the Dirac module as a sign, and its representative there is $\gamma_5$. The fifth basis operator $\mathsf{V}_{\mathrm{vol}}$ acts on that same module exactly as $\gamma_5$ acts; what the two-sided reading adds is not a second operator but the frame in which the mass can act by right multiplication.
 
-Read over $\mathbb{R}$ rather than $\mathbb{C}$, the cells generate a real Clifford algebra of sixteen dimensions, and its complexification is the whole of $M_4(\mathbb{C})$. The algebra $\mathbb{B}$ itself is the eight-dimensional real algebra $M_2(\mathbb{C})$, the complexified quaternions. That complexification is what lets the cells and the gammas be the same objects, and it is why no larger algebra is needed.
+Read over $\mathbb{R}$ rather than $\mathbb{C}$, the basis operators generate a real Clifford algebra of sixteen dimensions, and its complexification is the whole of $M_4(\mathbb{C})$. The algebra $\mathbb{B}$ itself is the eight-dimensional real algebra $M_2(\mathbb{C})$, the complexified quaternions. That complexification is what lets the basis operators and the gammas be the same objects, and it is why no larger algebra is needed.
 
-**The display.** Every array printed in this section is given twice: in the Peirce display first, labelled $\mathrm{pau}$, whose arrays are the ones the literature prints, and in the axis-free display after it, labelled $\mathrm{axf}$, which is the display of the body and of the corpus. The two are carried into one another by $L_{\mathrm{axf},e_\mu}=C_{\Pi}L_{\mathrm{pau},e_\mu}C_{\Pi}^{-1}$, and a conjugation by $C_{\Pi}$ changes no product, no anticommutator, no trace and no determinant, so every identity of the section holds in both. An array is a statement about one display; a cell named in the running text keeps the Peirce label, and its axis-free array is the conjugate. The label names the array and not the operator.
+**The display.** Every array printed in this section is given twice: in the Peirce display first, labelled $\mathrm{pau}$, whose arrays are the ones the literature prints, and in the axis-free display after it, labelled $\mathrm{axf}$, which is the display of the body and of the corpus. The two are carried into one another by $L_{\mathrm{axf},e_\mu}=C_{\Pi}L_{\mathrm{pau},e_\mu}C_{\Pi}^{-1}$, and a conjugation by $C_{\Pi}$ changes no product, no anticommutator, no trace and no determinant, so every identity of the section holds in both. An array is a statement about one display; a basis operator named in the running text keeps the Peirce label, and its axis-free array is the conjugate. The label names the array and not the operator.
 
 ## Summary
 
 Bhabha scattering, $e^+e^-\to e^+e^-$, is the tree-level electron–positron process with two diagrams, $t$-channel scattering and $s$-channel annihilation, contributing with a relative negative sign. Its spin-averaged cross section is $(\pi\alpha^2/s)[u^2(1/s+1/t)^2+(t/s)^2+(s/t)^2]$ below the $Z$ scale, equal to $(\pi\alpha^2/s)[(s^2+u^2)/t^2+(t^2+u^2)/s^2+2u^2/(st)]$; the interference term is negative because $st<0$. At small angles the $1/t^2$ term dominates, $d\sigma/d(\cos\theta)\sim2\pi\alpha^2s/t^2$, which is why the process is the luminosity monitor of electron–positron colliders. By crossing symmetry it is the same amplitude as Møller scattering in the permuted Mandelstam variables, term for term.
 
-In the biquaternion framework the amplitude is the contraction of material-sector currents by the quantized photon propagator, in the exchange and annihilation channels. The external states solve the one-sided chiral pair; the two-sided reading replaces the mass by a right multiplication by $-i\vec e_z$, and the frame-cell reading is the momentum-cell equation. The two structures the framework owns are the **fermion sign**, which is the antisymmetry of the mode algebra established by the canonical-quantization article, and **charge conjugation**, the real structure $\mathcal C$ that pairs an element with its conjugate and that relates the annihilation channel to the exchange channel and the Bhabha process to the Møller process. The $s$-channel annihilation current is the doorway to positronium, which the corpus does not yet treat. The framework supplies the components and the symmetries; the trace evaluation is the cell algebra of the frame cells, while the $Z$ exchange and the bound-state spectrum remain outside its established content, and no framework-specific prediction is claimed.
+In the biquaternion framework the amplitude is the contraction of material-sector currents by the quantized photon propagator, in the exchange and annihilation channels. The external states solve the one-sided chiral pair; the two-sided reading replaces the mass by a right multiplication by $-i\vec e_z$, and the frame-basis operator reading is the momentum-basis operator equation. The two structures the framework owns are the **fermion sign**, which is the antisymmetry of the mode algebra established by the canonical-quantization article, and **charge conjugation**, the real structure $\mathcal C$ that pairs an element with its conjugate and that relates the annihilation channel to the exchange channel and the Bhabha process to the Møller process. The $s$-channel annihilation current is the doorway to positronium, which the corpus does not yet treat. The framework supplies the components and the symmetries; the trace evaluation is the basis operator algebra of the frame basis operators, while the $Z$ exchange and the bound-state spectrum remain outside its established content, and no framework-specific prediction is claimed.
 
 ## Summary of Notation
 
@@ -377,9 +376,9 @@ In the biquaternion framework the amplitude is the contraction of material-secto
 | $\theta$ | Angle between the incoming and the outgoing positron |
 | $d\sigma/d(\cos\theta)$ | Leading-order spin-averaged cross section |
 | $\alpha=e^2/4\pi$ | Fine-structure constant |
-| $\Gamma_t: X\mapsto iX\vec e_x$, $\Gamma_k: X\mapsto i\vec e_kX\vec e_y$ | Four frame cells |
-| $\mathsf{V}_{\mathrm{vol}}: X\mapsto -iX\vec e_z$ | Volume cell of the frame |
-| $P(p): X\mapsto p_0iX\vec e_x-\sum_kp_ki\vec e_kX\vec e_y$ | Momentum cell; $P(p)^2=p_0^2-\vec p^2$ |
+| $\Gamma_t: X\mapsto iX\vec e_x$, $\Gamma_k: X\mapsto i\vec e_kX\vec e_y$ | Four frame basis operators |
+| $\mathsf{V}_{\mathrm{vol}}: X\mapsto -iX\vec e_z$ | Volume basis operator of the frame |
+| $P(p): X\mapsto p_0iX\vec e_x-\sum_kp_ki\vec e_kX\vec e_y$ | Momentum basis operator; $P(p)^2=p_0^2-\vec p^2$ |
 | $J_\mu(a,b)$ | Current of a line, $J_t=\mathrm{Sc}(a^*b)$, $J_k=\mathrm{Sc}(a^*\vec e_kb\vec e_z)$ |
 | $J(a,b)\cdot J(c,d)$ | Contraction with the sign vector, $\sum_\mu\varepsilon_\mu J_\mu(a,b)J_\mu(c,d)$ |
 | $\tilde u(p)$, $\tilde v(k)$ | Electron and positron state elements |

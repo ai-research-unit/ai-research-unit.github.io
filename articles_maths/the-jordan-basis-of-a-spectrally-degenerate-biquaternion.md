@@ -26,17 +26,17 @@ listed chain by chain, is then a basis of the algebra, a **Jordan basis**, in wh
 
 **Place among the Peirce decompositions.** This article is the degenerate particular case of *Peirce Decompositions of the Biquaternion Algebra*. That article attaches a Peirce basis to any complete orthogonal pair of idempotents, and shows that the four basis vectors split into the two couples $\mathcal{C}_+=(\tilde\Pi_+,\vec\Upsilon_+)$ and $\mathcal{C}_-=(\vec\Upsilon_-,\tilde\Pi_-)$, on which left multiplication acts by the same Peirce matrix. Here the pair is an adapted frame of §*The Frame on the Sector*: complete, orthogonal and primitive, so the four corners and the basis are the general Peirce data. What is special is the matrix of the element: $\mathsf M_{\tilde\Pi}(\tilde Q)=J_2(Q_t)$, so each couple is a Jordan chain rather than a pair of eigenvectors. The reciprocal $\mathbb{C}^\times$ of the general theory is fixed here by $\vec\Upsilon_-=\vec Q$, not by a normalisation convention.
 
-The sector is the union of two cells of the four-cell arrangement,
+The sector is the union of two sectors of the four-cell arrangement,
 
 $$
 \mathcal S=\Sigma_{10}\sqcup\Sigma_{00},
 $$
 
-and each cell has its own article: *The N-Regular, Spectrally Degenerate Sector* for $\Sigma_{10}$ and *The N-Degenerate, Spectrally Degenerate Sector* for $\Sigma_{00}$. The cell articles compute the Peirce data, the generators and the comparison with the other cells. This article treats what the two cells have in common: the equation, the strata, the geometry, the matrix form, the construction of the Jordan basis, the multiplicative behaviour, and the way the sector sits inside the spectral partition.
+and each sector has its own article: *The N-Regular, Spectrally Degenerate Sector* for $\Sigma_{10}$ and *The N-Degenerate, Spectrally Degenerate Sector* for $\Sigma_{00}$. The sector articles compute the Peirce data, the generators and the comparison with the other sectors. This article treats what the two sectors have in common: the equation, the strata, the geometry, the matrix form, the construction of the Jordan basis, the multiplicative behaviour, and the way the sector sits inside the spectral partition.
 
 **The word degenerate refers to the spectrum only.** It says that the two eigenvalues coincide, not that the element is a zero divisor and not that the element fails to be diagonalisable. Two warnings fix the reading. The scalar line $\mathbb C e_t$ lies in the sector, and its points are central, hence semisimple; the origin is diagonalisable as well. The defective elements form the **Jordan part** $\mathcal S^{\mathrm n}\cup\mathcal S^{\mathrm u}$ of the sector, a proper subset. Conversely, an element outside the sector can be a zero divisor: the Hermitian idempotent $\tfrac12(e_t+i\vec u)$ with $\vec u\cdot\vec u=1$ has $B^2=-\tfrac14$ and $\det\tilde Q=0$. Spectral degeneracy and degeneracy of the product are independent conditions.
 
-**Conventions.** The algebra is $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ on the basis $e_t,\vec e_x,\vec e_y,\vec e_z$, of complex dimension four and real dimension eight, with $\vec e_x\vec e_y=\vec e_z$, $\vec e_x^2=\vec e_y^2=\vec e_z^2=-e_t$, and central scalar imaginary $i$. An element is $\tilde Q=Q_te_t+\vec Q$ with $Q_\mu\in\mathbb{C}$ and $\vec Q=Q_x\vec e_x+Q_y\vec e_y+Q_z\vec e_z$. The natural conjugation is $\tilde Q^{\natural}=Q_t-\vec Q$ and the Hermitian conjugation is $\tilde Q^{*}=\overline{Q_t}-\overline{\vec Q}$; the product is the plain product, with unit $e_t$. The **determinant** is $\det\tilde Q=Q_t^2+B^2$. A **sector** is one of the two halves selected by one condition; a **cell** is one of the four intersections $\Sigma_{ij}$, with $i=1$ for $\det\tilde Q\neq0$ and $i=0$ for $\det\tilde Q=0$, and $j=1$ for $B^2\neq0$ and $j=0$ for $B^2=0$.
+**Conventions.** The algebra is $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ on the basis $e_t,\vec e_x,\vec e_y,\vec e_z$, of complex dimension four and real dimension eight, with $\vec e_x\vec e_y=\vec e_z$, $\vec e_x^2=\vec e_y^2=\vec e_z^2=-e_t$, and central scalar imaginary $i$. An element is $\tilde Q=Q_te_t+\vec Q$ with $Q_\mu\in\mathbb{C}$ and $\vec Q=Q_x\vec e_x+Q_y\vec e_y+Q_z\vec e_z$. The natural conjugation is $\tilde Q^{\natural}=Q_t-\vec Q$ and the Hermitian conjugation is $\tilde Q^{*}=\overline{Q_t}-\overline{\vec Q}$; the product is the plain product, with unit $e_t$. The **determinant** is $\det\tilde Q=Q_t^2+B^2$. A **sector** is one of the two halves selected by one condition; a **sector** is one of the four intersections $\Sigma_{ij}$, with $i=1$ for $\det\tilde Q\neq0$ and $i=0$ for $\det\tilde Q=0$, and $j=1$ for $B^2\neq0$ and $j=0$ for $B^2=0$.
 
 ## Definition and Characterisation
 
@@ -579,7 +579,7 @@ In particular the two Peirce copies are the two blocks of the left action, and t
 
 *Proof.* The left action is the theorem of §*The Basis and the Left Action* read on the two chains $(\tilde\Pi_+,\vec\Upsilon_+)$ and $(\vec\Upsilon_-,\tilde\Pi_-)$. The right action is computed in the table. ∎
 
-**Remark (why the two copies are not two values).** The index $\pm$ of $S_\pm$ is a copy index: the two spaces are isomorphic, and no left multiplication tells them apart. A cell does not grade this pair either, since the theorem shows that $R_{\tilde Q}$ carries $S_+$ into $S_++S_-$ and is scalar only on $S_-$; a right multiplier therefore does not preserve the two copies. The pair is not the operator chirality of *Operator Chirality on the Biquaternion Algebra*: the label there is the side on which an operator multiplies, and the two values of a cell are its two eigenspaces on a carrier, which are not these two copies.
+**Remark (why the two copies are not two values).** The index $\pm$ of $S_\pm$ is a copy index: the two spaces are isomorphic, and no left multiplication tells them apart. A sector does not grade this pair either, since the theorem shows that $R_{\tilde Q}$ carries $S_+$ into $S_++S_-$ and is scalar only on $S_-$; a right multiplier therefore does not preserve the two copies. The pair is not the operator chirality of *Operator Chirality on the Biquaternion Algebra*: the label there is the side on which an operator multiplies, and the two values of a sector are its two eigenspaces on a carrier, which are not these two copies.
 
 The four labels are collected in the table.
 
@@ -614,7 +614,7 @@ $$
 u_1u_2=e_t+\bigl(2\vec e_x+i\vec e_y+i\vec e_z\bigr)+\bigl(-e_t-\vec e_x-i\vec e_y-i\vec e_z\bigr)=\vec e_x,
 $$
 
-which has $B^2=1$ and $\det\tilde Q=1$: it lies in the doubly regular cell $\Sigma_{11}$, outside the sector. ∎
+which has $B^2=1$ and $\det\tilde Q=1$: it lies in the doubly regular sector $\Sigma_{11}$, outside the sector. ∎
 
 **Remark (the unit half is not a group).** The product of two unipotents need not be unipotent, as the proposition shows. The unit half $\Sigma_{10}$ is therefore a union of similarity orbits closed under inversion, not a subgroup of $\mathbb{B}^\times$. The scalar line minus the origin is a subgroup, and the unipotent stratum is a single orbit for each scalar part, but the two do not compose within the sector.
 
@@ -634,7 +634,7 @@ $$
 
 ## Relation to the Spectrally Regular Sector
 
-The spectrally regular sector is the complement $\mathbb{B}\setminus\mathcal S=\{B^2\neq0\}$. It is open and dense, and it splits into the two cells
+The spectrally regular sector is the complement $\mathbb{B}\setminus\mathcal S=\{B^2\neq0\}$. It is open and dense, and it splits into the two sectors
 
 $$
 \Sigma_{11}=\{\det\tilde Q\neq0,\ B^2\neq0\},\qquad
@@ -645,16 +645,16 @@ On it the eigenvalues are distinct, the discriminant is non-zero, the root $\vec
 
 The regular article reads its basis in a root-adapted Fourier form. There is no such reading here: the Fourier form needs the pure root $\rho=i\vec{Ζ}$ with $\rho^2=-1$, and the degenerate vector part is nilpotent. The counterpart is the truncated exponential, $e^{\theta\tilde Q}=e^{\theta Q_t}(e_t+\theta\vec Q)$, of §*Multiplication, Inversion, and the Exponential*.
 
-The four cells are collected in the table.
+The four sectors are collected in the table.
 
-| cell | $\det$ | $B^2$ | complex dimension | description |
+| sector | $\det$ | $B^2$ | complex dimension | description |
 |---|---|---|---|---|
 | $\Sigma_{11}$ | $\neq0$ | $\neq0$ | $4$ | the generic unit, with distinct non-zero eigenvalues |
 | $\Sigma_{10}$ | $\neq0$ | $=0$ | $3$ | the unit of the sector: $\mathbb{C}^\times e_t$ and the unipotents |
 | $\Sigma_{01}$ | $=0$ | $\neq0$ | $3$ | the zero divisor with distinct eigenvalues, one of them zero |
 | $\Sigma_{00}$ | $=0$ | $=0$ | $2$ | the nilpotents, with the origin adjoined |
 
-**Remark (density and boundary).** The sector is closed with empty interior, so every point of it is a limit of points of the spectrally regular sector; it is the boundary of the open set on which the eigenbasis exists. The two conditions are independent, and the cells $\Sigma_{10}$ and $\Sigma_{01}$ are the witnesses: each is a non-empty open part of one cone on which the other condition is non-zero. The comparison of the two cones is *Relations between the N Norm and Spectral Regularity and Degeneracy*.
+**Remark (density and boundary).** The sector is closed with empty interior, so every point of it is a limit of points of the spectrally regular sector; it is the boundary of the open set on which the eigenbasis exists. The two conditions are independent, and the sectors $\Sigma_{10}$ and $\Sigma_{01}$ are the witnesses: each is a non-empty open part of one cone on which the other condition is non-zero. The comparison of the two cones is *Relations between the N Norm and Spectral Regularity and Degeneracy*.
 
 ## Consequences
 
@@ -736,7 +736,7 @@ The Jordan basis is not the limit of the eigenbasis. The spectral idempotents di
 | $\mathcal S=\{B^2=0\}$ | the spectrally degenerate sector |
 | $\mathbb{B}\setminus\mathcal S=\{B^2\neq0\}$ | the spectrally regular sector |
 | $\mathcal N=\{\det\tilde Q=0\}$ | the null cone, the zero-divisor set |
-| $\Sigma_{ij}$ | the cell with $\det\tilde Q\neq0$ for $i=1$ and $B^2\neq0$ for $j=1$ |
+| $\Sigma_{ij}$ | the sector with $\det\tilde Q\neq0$ for $i=1$ and $B^2\neq0$ for $j=1$ |
 | $\Sigma_{10}=\{Q_t\neq0\}$ | the unit half of the sector |
 | $\Sigma_{00}=\{Q_t=0\}$ | the zero-divisor half of the sector |
 | $\mathcal S^{\mathrm{s}}=\{\vec Q=0\}$ | the scalar stratum, the vertex |
@@ -760,15 +760,15 @@ The Jordan basis is not the limit of the eigenbasis. The spectral idempotents di
 - [The Spectrum](the-spectrum.html), for the spectral criterion, the cone, the three strata and the similarity classification
 - [The Eigenbasis of a Spectrally Regular Biquaternion](the-eigenbasis-of-a-spectrally-regular-biquaternion.html), for the complementary sector and the eigenbasis construction
 - [The Eigenbasis of a Spectrally Regular Biquaternion](the-eigenbasis-of-a-spectrally-regular-biquaternion.html), for the matrix reading of the eigenbasis
-- [The N-Regular, Spectrally Degenerate Sector](the-n-regular-spectrally-degenerate-sector.html), for the unit half as a cell, with the Peirce data and the degenerate limits of the eigenbasis
-- [The N-Degenerate, Spectrally Degenerate Sector](the-n-degenerate-spectrally-degenerate-sector.html), for the nilpotent half as a cell, with the same Peirce data
+- [The N-Regular, Spectrally Degenerate Sector](the-n-regular-spectrally-degenerate-sector.html), for the unit half as a sector, with the Peirce data and the degenerate limits of the eigenbasis
+- [The N-Degenerate, Spectrally Degenerate Sector](the-n-degenerate-spectrally-degenerate-sector.html), for the nilpotent half as a sector, with the same Peirce data
 - [Relations between Exponential Polar Decomposition and Eigenbasis of an N-Regular, Spectrally Degenerate Biquaternion](relations-between-exponential-polar-decomposition-and-eigenbasis-of-an-n-regular-spectrally-degenerate-biquaternion.html), for the chain as the limit of a rescaled eigenbasis
 - [Worked Examples of an Eigenbasis of a Biquaternion](worked-examples-of-an-eigenbasis-of-a-biquaternion.html), for the explicit constructions in coordinates
 - [The One-Sided Operators of an N-Regular, Spectrally Degenerate Biquaternion](the-one-sided-operators-of-an-n-regular-spectrally-degenerate-biquaternion.html), for the degenerate operator on the two-sided module
 - [N-Regularity and N-Degeneracy in the Biquaternion Algebra](n-regularity-and-n-degeneracy-in-the-biquaternion-algebra.html), for the norm and its partition
 - [The N-Regular Sector](the-n-regular-sector.html) and [The N-Degenerate Sector](the-n-degenerate-sector.html), for the two halves of the norm partition
 - [The Polar Decomposition of an N-Degenerate Biquaternion](the-polar-decomposition-of-an-n-degenerate-biquaternion.html), for the vanishing modulus and the partial isometry
-- [Relations between the N Norm and Spectral Regularity and Degeneracy](relations-between-the-n-norm-and-spectral-regularity-and-degeneracy.html), for the four cells and the independence of the two cones
+- [Relations between the N Norm and Spectral Regularity and Degeneracy](relations-between-the-n-norm-and-spectral-regularity-and-degeneracy.html), for the four sectors and the independence of the two cones
 - [The Biquaternion Algebra](the-biquaternion-algebra.html), for the algebra, its coordinates and its conjugations
 - [The $M_4(\mathbb{C})$ Axis-Free Representation](m4c-axis-free-representation.html), for the matrix model, the determinant and the trace
 - [Biquaternion Elementary Functions](biquaternion-elementary-functions.html), for the exponential and its truncated form

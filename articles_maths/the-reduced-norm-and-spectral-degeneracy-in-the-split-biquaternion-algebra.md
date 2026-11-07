@@ -4,9 +4,9 @@
 
 The split-biquaternion algebra $\mathbb{B}_{\mathrm{spl}}\cong\mathbb{H}\oplus\mathbb{H}$ carries two quadratic conditions on one element. The **reduced norm** $\Delta(\tilde Q)=|Q_+|^2|Q_-|^2$ is real, non-negative, multiplicative, and vanishes exactly when a half vanishes. The **component invariants** $|\vec q_\pm|^2$ are the squared lengths of the two vector parts; each vanishes exactly when its half is scalar. The first decides invertibility, the second detects scalar halves. The **spectrum** is regular when the reduced characteristic polynomial has no repeated root.
 
-This article compares these invariants. Spectral regularity forces $\Delta\neq0$, but $\Delta\neq0$ does not force spectral regularity. Hence the cell "reduced-norm-degenerate, spectrally regular" is empty, while its opposite is not: a vanishing reduced norm forces a whole half to vanish, and a vanishing half is scalar, hence spectrally degenerate. The biquaternion algebra differs: its norm is a sum, not a product, and its Hermitian idempotents are norm-degenerate with simple spectra.
+This article compares these invariants. Spectral regularity forces $\Delta\neq0$, but $\Delta\neq0$ does not force spectral regularity. Hence the sector "reduced-norm-degenerate, spectrally regular" is empty, while its opposite is not: a vanishing reduced norm forces a whole half to vanish, and a vanishing half is scalar, hence spectrally degenerate. The biquaternion algebra differs: its norm is a sum, not a product, and its Hermitian idempotents are norm-degenerate with simple spectra.
 
-**Conventions.** The split complex unit is $j$, with $j^2=1$, and the idempotents are $\tilde\Pi_{1,2}=\tfrac12(1\pm j)$. An element is $\tilde Q=Q_+\tilde\Pi_1+Q_-\tilde\Pi_2$ with $Q_\pm=t_\pm+\vec q_\pm$, $t_\pm\in\mathbb{R}$, $\vec q_\pm=\sum_k q_{\pm k}\vec e_k$, and $|\vec q_\pm|^2=\sum_k q_{\pm k}^2$. The quaternion norm is $|Q_\pm|^2=t_\pm^2+|\vec q_\pm|^2$. The split-biquaternion norm is $\langle\tilde Q\rangle_{\natural}=|Q_+|^2\tilde\Pi_1+|Q_-|^2\tilde\Pi_2=\sum_\mu Q_\mu^2$, where $Q_\mu$ are the coefficients in the basis $e_\mu$. The reduced norm is $\Delta=|Q_+|^2|Q_-|^2=\langle\tilde Q\rangle_{\natural}\langle\tilde Q\rangle_{\natural}^{*}$. The spectral classification is *[Spectral Regularity and Degeneracy in the Split-Biquaternion Algebra](spectral-regularity-and-degeneracy-in-the-split-biquaternion-algebra.html)*; the cells are *[The Three Sectors of the Split-Biquaternion Algebra](the-three-sectors-of-the-split-biquaternion-algebra.html)*; the algebra and norm are *[Split-Biquaternion Algebra](split-biquaternion-algebra.html)* and *[Split-Biquaternion Norm and Invertibility](split-biquaternion-norm-and-invertibility.html)*.
+**Conventions.** The split complex unit is $j$, with $j^2=1$, and the idempotents are $\tilde\Pi_{1,2}=\tfrac12(1\pm j)$. An element is $\tilde Q=Q_+\tilde\Pi_1+Q_-\tilde\Pi_2$ with $Q_\pm=t_\pm+\vec q_\pm$, $t_\pm\in\mathbb{R}$, $\vec q_\pm=\sum_k q_{\pm k}\vec e_k$, and $|\vec q_\pm|^2=\sum_k q_{\pm k}^2$. The quaternion norm is $|Q_\pm|^2=t_\pm^2+|\vec q_\pm|^2$. The split-biquaternion norm is $\langle\tilde Q\rangle_{\natural}=|Q_+|^2\tilde\Pi_1+|Q_-|^2\tilde\Pi_2=\sum_\mu Q_\mu^2$, where $Q_\mu$ are the coefficients in the basis $e_\mu$. The reduced norm is $\Delta=|Q_+|^2|Q_-|^2=\langle\tilde Q\rangle_{\natural}\langle\tilde Q\rangle_{\natural}^{*}$. The spectral classification is *[Spectral Regularity and Degeneracy in the Split-Biquaternion Algebra](spectral-regularity-and-degeneracy-in-the-split-biquaternion-algebra.html)*; the sectors are *[The Three Sectors of the Split-Biquaternion Algebra](the-three-sectors-of-the-split-biquaternion-algebra.html)*; the algebra and norm are *[Split-Biquaternion Algebra](split-biquaternion-algebra.html)* and *[Split-Biquaternion Norm and Invertibility](split-biquaternion-norm-and-invertibility.html)*.
 
 ## The Reduced Norm and the Component Invariants
 
@@ -92,7 +92,7 @@ A vanishing component invariant means only that one half is scalar; the half may
 
 For the converse, take $Q_+=1$ and $Q_-=\vec e_z$. Then $\Delta=1$ but $p_+=(\lambda-1)^2$ has a repeated root, so the element is spectrally degenerate.
 
-**Corollary (the mixed cells).** The cell $\{\Delta\neq0,\ \text{spectrally degenerate}\}$ is non-empty, and the cell $\{\Delta=0,\ \text{spectrally regular}\}$ is empty.
+**Corollary (the mixed sectors).** The sector $\{\Delta\neq0,\ \text{spectrally degenerate}\}$ is non-empty, and the sector $\{\Delta=0,\ \text{spectrally regular}\}$ is empty.
 
 The only independence available is the failure of the converse: a unit can have a repeated root, but a zero divisor cannot have a simple spectrum. In logical form,
 
@@ -104,9 +104,9 @@ $$
 
 There is no element that is norm-degenerate and spectrally regular.
 
-## The Empty Mixed Cell and Its Cause
+## The Empty Mixed Sector and Its Cause
 
-**Definition (the mixed cell).** Let
+**Definition (the mixed sector).** Let
 
 $$
 \Sigma_{01}=\{\tilde Q:\Delta(\tilde Q)=0\text{ and }p_{\tilde Q}\text{ has no repeated root}\}.
@@ -118,7 +118,7 @@ $$
 
 The zero-divisor half is the **zero** scalar, so its reduced polynomial is $\lambda^2$, a double root at $0$. The other half may have a simple spectrum, but the double root already makes the element degenerate. A product of non-negative factors vanishes only through a zero factor.
 
-**Corollary (no norm-degenerate regular element).** The empty cell is the failure of the converse. The non-empty cells are $\Sigma_{11}=\{\Delta\neq0,\ \text{spectrally regular}\}$, $\Sigma_{10}=\{\Delta\neq0,\ \text{spectrally degenerate}\}$ and $\Sigma_{00}=\{\Delta=0\}$; their geometry is *[The Three Sectors of the Split-Biquaternion Algebra](the-three-sectors-of-the-split-biquaternion-algebra.html)*.
+**Corollary (no norm-degenerate regular element).** The empty sector is the failure of the converse. The non-empty sectors are $\Sigma_{11}=\{\Delta\neq0,\ \text{spectrally regular}\}$, $\Sigma_{10}=\{\Delta\neq0,\ \text{spectrally degenerate}\}$ and $\Sigma_{00}=\{\Delta=0\}$; their geometry is *[The Three Sectors of the Split-Biquaternion Algebra](the-three-sectors-of-the-split-biquaternion-algebra.html)*.
 
 ## The Chain of Invariants
 
@@ -159,7 +159,7 @@ $$
 \eta=Q_t^2+B^2,\qquad B^2=Q_x^2+Q_y^2+Q_z^2,
 $$
 
-with $Q_\mu\in\mathbb{C}$. It is a **sum**, not a product. The norm-degenerate set is the complex cone $\{Q_t^2+B^2=0\}$, and the spectral-degenerate set is $\{B^2=0\}$. The mixed cell $\Sigma_{01}$ is non-empty; the witnesses are the Hermitian idempotents.
+with $Q_\mu\in\mathbb{C}$. It is a **sum**, not a product. The norm-degenerate set is the complex cone $\{Q_t^2+B^2=0\}$, and the spectral-degenerate set is $\{B^2=0\}$. The mixed sector $\Sigma_{01}$ is non-empty; the witnesses are the Hermitian idempotents.
 
 Let $\vec u\in\mathbb{R}^3$ with $\vec u\cdot\vec u=1$ and put
 
@@ -183,7 +183,7 @@ $$
 B^2(E)=\tfrac{i^2}{4}(\vec u\cdot\vec u)=-\tfrac14\neq0.
 $$
 
-Since $E^2=E$ and $E\neq0,1$, its minimal polynomial is $X(X-1)$, so the spectrum $\{0,1\}$ is simple. Thus $E$ is norm-degenerate and spectrally regular: it lies in the biquaternion $\Sigma_{01}$, the cell that is empty in the split algebra. These idempotents are non-central, form a two-sphere, and are rank-one projections in the matrix model $\mathbb{B}\cong M_2(\mathbb{C})$.
+Since $E^2=E$ and $E\neq0,1$, its minimal polynomial is $X(X-1)$, so the spectrum $\{0,1\}$ is simple. Thus $E$ is norm-degenerate and spectrally regular: it lies in the biquaternion $\Sigma_{01}$, the sector that is empty in the split algebra. These idempotents are non-central, form a two-sphere, and are rank-one projections in the matrix model $\mathbb{B}\cong M_2(\mathbb{C})$.
 
 A sum can cancel: $Q_t^2$ and $B^2$ can be opposite non-zero complex numbers, whereas a product of non-negative reals needs a zero factor. And $\mathbb{B}_{\mathrm{spl}}$ has only the four central idempotents $0,\tilde\Pi_1,\tilde\Pi_2,1$, because each division algebra has only $0$ and $1$; a non-zero idempotent of the split algebra has a zero half. The biquaternion matrix algebra has non-central idempotents, and the Hermitian ones are the witnesses the split algebra cannot produce.
 
@@ -193,7 +193,7 @@ The reduced norm is $\Delta=|Q_+|^2|Q_-|^2$, the product of the two quaternion n
 
 Spectral regularity implies norm regularity but not conversely. $\Sigma_{01}$ is empty; $\Sigma_{10}$ is non-empty. The scalar/vector data determines the factor norms, their product $\Delta$, and $p_{\tilde Q}$; these maps do not reverse.
 
-The biquaternion algebra has a sum, not a product. Its Hermitian idempotents $\tfrac12(1+i\vec u)$ have norm zero and spectrum $\{1,0\}$, so its $\Sigma_{01}$ is non-empty. The split algebra has no such element, and its empty cell measures the difference.
+The biquaternion algebra has a sum, not a product. Its Hermitian idempotents $\tfrac12(1+i\vec u)$ have norm zero and spectrum $\{1,0\}$, so its $\Sigma_{01}$ is non-empty. The split algebra has no such element, and its empty sector measures the difference.
 
 ## Summary of Notation
 
@@ -206,8 +206,8 @@ The biquaternion algebra has a sum, not a product. Its Hermitian idempotents $\t
 | $\lvert\vec q_\pm\rvert^2$ | Component invariant, the squared vector part |
 | $\langle\tilde Q\rangle_{\natural}=\lvert Q_+\rvert^2\tilde\Pi_1+\lvert Q_-\rvert^2\tilde\Pi_2$ | Split-biquaternion norm |
 | $\Delta=\lvert Q_+\rvert^2\lvert Q_-\rvert^2=\langle\tilde Q\rangle_{\natural}\langle\tilde Q\rangle_{\natural}^{*}$ | Reduced norm |
-| $\Sigma_{01}=\{\Delta=0,\ \text{spectrally regular}\}$ | The empty mixed cell |
-| $\Sigma_{10}=\{\Delta\neq0,\ \text{spectrally degenerate}\}$ | The non-empty mixed cell |
+| $\Sigma_{01}=\{\Delta=0,\ \text{spectrally regular}\}$ | The empty mixed sector |
+| $\Sigma_{10}=\{\Delta\neq0,\ \text{spectrally degenerate}\}$ | The non-empty mixed sector |
 | $p_{\tilde Q}=p_+p_-$ | Reduced characteristic polynomial |
 
 ## Further Reading
@@ -218,4 +218,4 @@ The biquaternion algebra has a sum, not a product. Its Hermitian idempotents $\t
 - [Spectral Regularity and Degeneracy in the Split-Biquaternion Algebra](spectral-regularity-and-degeneracy-in-the-split-biquaternion-algebra.html), for the repeated-root criterion.
 - [The Spectrum](the-spectrum.html), for the complex cone and the comparison with the split case.
 - [The N-Degenerate, Spectrally Regular Sector](the-n-degenerate-spectrally-regular-sector.html), for the biquaternion $\Sigma_{01}$ and the Hermitian idempotents.
-- [The Three Sectors of the Split-Biquaternion Algebra](the-three-sectors-of-the-split-biquaternion-algebra.html), for the three non-empty cells and their dimensions.
+- [The Three Sectors of the Split-Biquaternion Algebra](the-three-sectors-of-the-split-biquaternion-algebra.html), for the three non-empty sectors and their dimensions.

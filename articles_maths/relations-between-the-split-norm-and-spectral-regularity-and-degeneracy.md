@@ -164,7 +164,7 @@ In the biquaternion algebra, as *[The Spectrum](the-spectrum.html)* proves, the 
 | $\mathbb{H}_{\mathrm{spl}}$ | indefinite | the cone $\langle\vec v\rangle_{\natural}=0$ | non-zero null vector part | yes |
 | $\mathbb{B}$ | $Q_t^2+B^2$, complex-valued | the cone $B^2=0$ | nilpotent and unipotent strata | yes |
 
-In $\mathbb{C}$ and $\mathbb{H}$ the norm is positive definite and vanishes only at the origin; $\Sigma_{01}$ is empty and the picture has three non-empty cells, with $\Sigma_{00}=\{0\}$. In $\mathbb{H}_{\mathrm{spl}}$ and $\mathbb{B}$ the mixed sectors are non-empty, but the degenerate locus is a cone carrying defective elements. In $\mathbb{C}_{\mathrm{spl}}$ the norm is indefinite, the conditions are independent, the degenerate locus is a line, and every element is semisimple. The plane is therefore the unique algebra with four non-empty sectors and no defective stratum; the geometry of the sectors is *The Four Sectors of the Split-Complex Algebra*.
+In $\mathbb{C}$ and $\mathbb{H}$ the norm is positive definite and vanishes only at the origin; $\Sigma_{01}$ is empty and the picture has three non-empty sectors, with $\Sigma_{00}=\{0\}$. In $\mathbb{H}_{\mathrm{spl}}$ and $\mathbb{B}$ the mixed sectors are non-empty, but the degenerate locus is a cone carrying defective elements. In $\mathbb{C}_{\mathrm{spl}}$ the norm is indefinite, the conditions are independent, the degenerate locus is a line, and every element is semisimple. The plane is therefore the unique algebra with four non-empty sectors and no defective stratum; the geometry of the sectors is *The Four Sectors of the Split-Complex Algebra*.
 
 The sign of $j^2$ separates the definite norm and complex spectrum of $\mathbb{C}$ from the indefinite norm and real spectrum of $\mathbb{C}_{\mathrm{spl}}$.
 
@@ -196,7 +196,7 @@ The four combinations are $\Sigma_{11}$, $\Sigma_{01}$, $\Sigma_{10}$ and $\Sigm
 ## Further Reading
 
 - [Spectral Regularity and Degeneracy in the Split-Complex Algebra](spectral-regularity-and-degeneracy-in-the-split-complex-algebra.html), for the eigenvalue problem and the criterion.
-- [The Four Sectors of the Split-Complex Algebra](the-four-sectors-of-the-split-complex-algebra.html), for the geometry of the four cells.
+- [The Four Sectors of the Split-Complex Algebra](the-four-sectors-of-the-split-complex-algebra.html), for the geometry of the four sectors.
 - [Zero Divisors of the Split-Complex Algebra](zero-divisors-of-the-split-complex-algebra.html), for the null lines and the annihilators.
 - [Norm and Invertibility in the General Split-Complex Algebra](norm-and-invertibility-in-the-general-split-complex-algebra.html), for the split norm.
 - [Eigenvalue Decomposition and Eigenbasis of a Split-Complex Number](eigenvalue-decomposition-and-eigenbasis-of-a-split-complex-number.html), for the spectral decomposition.

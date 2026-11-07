@@ -60,7 +60,7 @@ The exponential is entire and never zero in every column, and its kernel is the 
 | $\tilde Q_\pm$ | the two quaternion halves of $\tilde Q$ in $\mathbb{B}_{\mathrm{spl}}$ |
 | $\Gamma,\mathrm{B}$ | the Gamma and Beta functions, $\mathrm{B}$ written so as not to collide with the norm $B$ |
 | $W$ | the Lambert function |
-| `—` | an empty cell, stated and never filled |
+| `—` | an empty entry, stated and never filled |
 
 ## Further Reading
 

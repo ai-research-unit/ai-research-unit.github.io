@@ -260,7 +260,7 @@ For the isomorphism, let $Q_8^{L}=\{\pm\mathrm{I}_4,\pm L_{\mathrm{axf},\vec e_x
 | $L_{\mathrm{axf},\vec e_y}$ | $L_{\mathrm{axf},\vec e_y}$ | $-L_{\mathrm{axf},\vec e_z}$ | $-L_{\mathrm{axf},e_t}$ | $L_{\mathrm{axf},\vec e_x}$ |
 | $L_{\mathrm{axf},\vec e_z}$ | $L_{\mathrm{axf},\vec e_z}$ | $L_{\mathrm{axf},\vec e_y}$ | $-L_{\mathrm{axf},\vec e_x}$ | $-L_{\mathrm{axf},e_t}$ |
 
-**The right table.** Row $\nu$, column $\sigma$, entry $R_{\mathrm{axf},e_\nu} R_{\mathrm{axf},e_\sigma}$. It is the table of the opposite quaternion algebra, so the signs sit in the other cells.
+**The right table.** Row $\nu$, column $\sigma$, entry $R_{\mathrm{axf},e_\nu} R_{\mathrm{axf},e_\sigma}$. It is the table of the opposite quaternion algebra, so the signs sit in the other basis operators.
 
 | $R_{\mathrm{axf},e_\nu} R_{\mathrm{axf},e_\sigma}$ | $R_{\mathrm{axf},e_t}$ | $R_{\mathrm{axf},\vec e_x}$ | $R_{\mathrm{axf},\vec e_y}$ | $R_{\mathrm{axf},\vec e_z}$ |
 |---|---|---|---|---|
@@ -380,7 +380,7 @@ and each row of the coefficient array has exactly four nonzero entries.
 | $E_{43}$ | $\tfrac14\bigl(-L_{\mathrm{axf},e_t}R_{\mathrm{axf},\vec e_x}+L_{\mathrm{axf},\vec e_x}R_{\mathrm{axf},e_t}-L_{\mathrm{axf},\vec e_y}R_{\mathrm{axf},\vec e_z}-L_{\mathrm{axf},\vec e_z}R_{\mathrm{axf},\vec e_y}\bigr)$ |
 | $E_{44}$ | $\tfrac14\bigl(L_{\mathrm{axf},e_t}R_{\mathrm{axf},e_t}+L_{\mathrm{axf},\vec e_x}R_{\mathrm{axf},\vec e_x}+L_{\mathrm{axf},\vec e_y}R_{\mathrm{axf},\vec e_y}-L_{\mathrm{axf},\vec e_z}R_{\mathrm{axf},\vec e_z}\bigr)$ |
 
-**Two examples in full.** For $E_{11}$ the four diagonal cells enter with the signs of the coordinates: the trace sum $1-(-1)-(-1)-(-1)=4$ gives the coefficient $1$, while the off-diagonal entries cancel. For $E_{12}$ the four cells with exactly one $t$ index enter; the two $t$-first matrices give the first column, and the two $t$-second matrices give the second.
+**Two examples in full.** For $E_{11}$ the four diagonal basis operators enter with the signs of the coordinates: the trace sum $1-(-1)-(-1)-(-1)=4$ gives the coefficient $1$, while the off-diagonal entries cancel. For $E_{12}$ the four basis operators with exactly one $t$ index enter; the two $t$-first matrices give the first column, and the two $t$-second matrices give the second.
 
 **The coefficient array is a signed permutation.** In each expansion the four indices $(\mu,\nu)$ are distinct, and each row index and each column index occurs exactly once. The array $\varepsilon_{ij}$ is therefore a signed permutation matrix, of rank four.
 
@@ -414,7 +414,7 @@ where $\mathsf{E}_{rc}$ is the matrix unit of the Peirce basis. The corresponden
 
 **Proof.** The four Peirce elements form a system of $2\times2$ matrix units, not four orthogonal idempotents: their table is the matrix-unit table $E_{ij}E_{kl}=\delta_{jk}E_{il}$ of the model article. Multiplying the four elements in the coefficient basis, and conjugating each of the sixteen products $L_{\mathrm{pau},P_i}R_{\mathrm{pau},P_j}$ by the Peirce change $C_{\Pi}$, gives a matrix with a single nonzero entry in the Peirce basis, at the position of the table, with value $+1$. The computation is sixteen products of $4\times4$ matrices, and no case is exceptional.
 
-**The two bases are adapted to different questions.** The coefficient basis makes the $L_{\mathrm{axf},e_\mu}R_{\mathrm{axf},e_\nu}$ signed permutations. The Peirce basis makes the products $L_{\mathrm{pau},P_i}R_{\mathrm{pau},P_j}$ matrix units. Neither basis does both: in the Peirce basis the $L_{\mathrm{axf},e_\mu}R_{\mathrm{axf},e_\nu}$ are monomial with entries in $\{1,-1,i,-i\}$ but not matrix units; in the coefficient basis the Peirce products are sums of four cells whose coefficient array has rank one, so each is a single product.
+**The two bases are adapted to different questions.** The coefficient basis makes the $L_{\mathrm{axf},e_\mu}R_{\mathrm{axf},e_\nu}$ signed permutations. The Peirce basis makes the products $L_{\mathrm{pau},P_i}R_{\mathrm{pau},P_j}$ matrix units. Neither basis does both: in the Peirce basis the $L_{\mathrm{axf},e_\mu}R_{\mathrm{axf},e_\nu}$ are monomial with entries in $\{1,-1,i,-i\}$ but not matrix units; in the coefficient basis the Peirce products are sums of four basis operators whose coefficient array has rank one, so each is a single product.
 
 **Why the two are consistent.** Both are bases of the same sixteen-dimensional algebra. The change of basis between them is the Peirce change $C_{\Pi}$ of the model article, of determinant $-\tfrac14$, and the lengths agree because the length is basis-independent.
 
@@ -465,7 +465,7 @@ $$
 2. **The product is closed up to sign.** The thirty-two matrices $\pm L_{\mathrm{axf},e_\mu}R_{\mathrm{axf},e_\nu}$ form a group. Products, inverses and powers stay in a finite set. In the matrix-unit basis the product of two basis elements is either zero or a third, but the coefficients of a general product spread over sixteen terms.
 3. **The coefficients are traces.** Orthogonality gives $c_{\mu\nu}=\tfrac14\operatorname{tr}(L_{\mathrm{axf},e_\mu}{R_{\mathrm{axf},e_\nu}}^{*}A)$ with norm $2$. There is no linear system to solve.
 4. **The coefficient rank is the length.** The least number of products is the rank of a $4\times4$ matrix. This is the natural measure of complexity of an operator, and it is basis-independent.
-5. **The physics matrices are sparse in this basis.** The chirality projectors, the mass bilinear and the Lorentz generators are linear combinations of a few cells with coefficients in $\{1,-1,i,-i\}$.
+5. **The physics matrices are sparse in this basis.** The chirality projectors, the mass bilinear and the Lorentz generators are linear combinations of a few basis operators with coefficients in $\{1,-1,i,-i\}$.
 6. **The matrix units are the wrong default.** Every $E_{ij}$ has length four. A table in matrix units overstates the number of products by a factor of four in every entry.
 
 **The caveat.** The matrix units remain the canonical basis of the abstract algebra: they are the definition of the product, and the theorems of the category are stated in them. The eigenbasis remains canonical for spectral theory. The Peirce basis remains canonical for the chiral blocks. The sixteen matrices are the default for the operator question, not a replacement for the others.
@@ -498,7 +498,7 @@ $$
 
 The Pauli and gamma formulation is legacy: the reasons are explained in the article *Why AXF Matrices instead of Pauli and Gamma Matrices*. The generators carry no frame label: $\gamma_\mu$ is one set of matrices, $\gamma_0^2=I_4$ and $\gamma_k^2=-I_4$. The frame belongs to the coordinate, not to the array.
 
-The gamma frame is one choice inside the method's basis; the body writes the cells.
+The gamma frame is one choice inside the method's basis; the body writes the basis operators.
 
 **The five matrices.** In the corpus frame $(\beta,\delta)=(\vec e_y,\vec e_x)$,
 $$
@@ -523,17 +523,17 @@ $$
 P_{\pm}=\tfrac12\bigl(\mathrm{I}_4\pm\gamma_5\bigr)
 =\tfrac12\bigl(L_{\mathrm{axf},e_t}R_{\mathrm{axf},e_t}\mp iL_{\mathrm{axf},e_t}R_{\mathrm{axf},\vec e_z}\bigr).
 $$
-Both are single products up to a scalar: $P_+$ and $P_-$ are linear combinations of two cells, not products themselves.
+Both are single products up to a scalar: $P_+$ and $P_-$ are linear combinations of two basis operators, not products themselves.
 
-**The reading.** The gammas are five of the sixteen cells up to the scalar $i$. The products of the gammas are the other eleven, up to scalars. The Dirac algebra is the method's algebra with a chosen five-element frame, not a different algebra.
+**The reading.** The gammas are five of the sixteen basis operators up to the scalar $i$. The products of the gammas are the other eleven, up to scalars. The Dirac algebra is the method's algebra with a chosen five-element frame, not a different algebra.
 
 **The frame is not canonical.** The five displayed matrices are one choice among the gamma sets of the companion article. The basis $\{L_{\mathrm{axf},e_\mu}R_{\mathrm{axf},e_\nu}\}$ is canonical once the coefficient basis is fixed; the gamma set inside it is not.
 
-Over $\mathbb{R}$ the dictionary is complex-linear: the products span $\mathrm{Cl}_{1,3}(\mathbb{R})\cong M_2(\mathbb{H})$ and the cells span $\mathrm{Cl}_{3,1}(\mathbb{R})\cong M_4(\mathbb{R})$.
+Over $\mathbb{R}$ the dictionary is complex-linear: the products span $\mathrm{Cl}_{1,3}(\mathbb{R})\cong M_2(\mathbb{H})$ and the basis operators span $\mathrm{Cl}_{3,1}(\mathbb{R})\cong M_4(\mathbb{R})$.
 
 ## Summary
 
-The algebra $M_4(\mathbb{C})$ is built by the two-sided operators method, which produces the sixteen matrices $L_{\mathrm{axf},e_\mu}R_{\mathrm{axf},e_\nu}$, all signed permutations of determinant one. They are orthogonal for the Hilbert–Schmidt form with $\operatorname{tr}(L_{\mathrm{axf},e_\mu}{R_{\mathrm{axf},e_\nu}}^{*}L_{\mathrm{axf},e_\rho}R_{\mathrm{axf},e_\sigma})=4\delta_{\mu\rho}\delta_{\nu\sigma}$, so the coefficients of a matrix are sixteen traces. They are closed under multiplication up to sign, and the thirty-two matrices $\pm L_{\mathrm{axf},e_\mu}R_{\mathrm{axf},e_\nu}$ form a group of order $32$, isomorphic to $(Q_8\times Q_8)/\{\pm(1,1)\}$. The product rule is read from two $4\times4$ tables, the left quaternion table and the right opposite table. Every matrix unit is a sum of four cells with coefficients $\pm\tfrac14$, so every matrix unit has length four; the matrix-unit basis is the worst basis for the product. In the Peirce basis the sixteen products $L_{\mathrm{pau},P_i}R_{\mathrm{pau},P_j}$ are exactly the sixteen matrix units with coefficient $+1$. The coefficient matrix of a product is an outer product, and the rank of the coefficient matrix is the length, the least number of two-sided operators. The Clifford frame is five of the sixteen matrices up to the scalar $i$. The sixteen matrices are the default for matrices that come from operators; they do not replace the matrix units for the abstract algebra, the eigenbasis for spectral theory or the Peirce basis for the chiral blocks.
+The algebra $M_4(\mathbb{C})$ is built by the two-sided operators method, which produces the sixteen matrices $L_{\mathrm{axf},e_\mu}R_{\mathrm{axf},e_\nu}$, all signed permutations of determinant one. They are orthogonal for the Hilbert–Schmidt form with $\operatorname{tr}(L_{\mathrm{axf},e_\mu}{R_{\mathrm{axf},e_\nu}}^{*}L_{\mathrm{axf},e_\rho}R_{\mathrm{axf},e_\sigma})=4\delta_{\mu\rho}\delta_{\nu\sigma}$, so the coefficients of a matrix are sixteen traces. They are closed under multiplication up to sign, and the thirty-two matrices $\pm L_{\mathrm{axf},e_\mu}R_{\mathrm{axf},e_\nu}$ form a group of order $32$, isomorphic to $(Q_8\times Q_8)/\{\pm(1,1)\}$. The product rule is read from two $4\times4$ tables, the left quaternion table and the right opposite table. Every matrix unit is a sum of four basis operators with coefficients $\pm\tfrac14$, so every matrix unit has length four; the matrix-unit basis is the worst basis for the product. In the Peirce basis the sixteen products $L_{\mathrm{pau},P_i}R_{\mathrm{pau},P_j}$ are exactly the sixteen matrix units with coefficient $+1$. The coefficient matrix of a product is an outer product, and the rank of the coefficient matrix is the length, the least number of two-sided operators. The Clifford frame is five of the sixteen matrices up to the scalar $i$. The sixteen matrices are the default for matrices that come from operators; they do not replace the matrix units for the abstract algebra, the eigenbasis for spectral theory or the Peirce basis for the chiral blocks.
 
 $$
 \boxed{\ \operatorname{tr}(L_{\mathrm{axf},e_\mu}{R_{\mathrm{axf},e_\nu}}^{*}L_{\mathrm{axf},e_\rho}R_{\mathrm{axf},e_\sigma})=4\delta_{\mu\rho}\delta_{\nu\sigma},\qquad

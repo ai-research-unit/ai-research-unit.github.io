@@ -253,7 +253,7 @@ the third step using $u^{2}=q(u)e_t$, which is central and may be moved past $s$
 
 The Pauli and gamma formulation is legacy: the reasons are explained in the article *Why AXF Matrices instead of Pauli and Gamma Matrices*. The generators carry no frame label: $\gamma_\mu$ is one set of matrices, and the frame is named on the coordinate.
 
-The gammas are a frame of $\mathrm{Cl}_{1,3}(\mathbb{C})=M_4(\mathbb{C})$, not a different algebra. They are the cells of the actions above written as letters, and this section is the only place in the article where they appear: every section above is written in actions.
+The gammas are a frame of $\mathrm{Cl}_{1,3}(\mathbb{C})=M_4(\mathbb{C})$, not a different algebra. They are the basis operators of the actions above written as letters, and this section is the only place in the article where they appear: every section above is written in actions.
 
 Here $L_a$ and $R_b$ are the left and right multiplications of §*The Module and the Action*, and $c(M)$ is the coefficient matrix of $M$ in the basis of the sixteen products.
 
@@ -297,7 +297,7 @@ $$
 \gamma_5^2=I_4 .
 $$
 
-**The fifth gamma.** The product $\gamma_0\gamma_1\gamma_2\gamma_3$ is computed in cells, and the factors of $i$ are reduced first: the four cells carry $i^4=(i^2)^2=+1$, so the two factors of $i^2=-1$ cancel. The left multipliers multiply in order, $e_t\vec e_x\vec e_y\vec e_z=\vec e_z^2=-e_t$, and the right multipliers compose in reverse, $\vec e_y\vec e_y\vec e_y\vec e_x=\vec e_y^3\vec e_x=-\vec e_y\vec e_x=\vec e_z$. The product is therefore
+**The fifth gamma.** The product $\gamma_0\gamma_1\gamma_2\gamma_3$ is computed in basis operators, and the factors of $i$ are reduced first: the four basis operators carry $i^4=(i^2)^2=+1$, so the two factors of $i^2=-1$ cancel. The left multipliers multiply in order, $e_t\vec e_x\vec e_y\vec e_z=\vec e_z^2=-e_t$, and the right multipliers compose in reverse, $\vec e_y\vec e_y\vec e_y\vec e_x=\vec e_y^3\vec e_x=-\vec e_y\vec e_x=\vec e_z$. The product is therefore
 
 $$
 \gamma_0\gamma_1\gamma_2\gamma_3=-L_{\mathrm{pau},e_t}R_{\mathrm{pau},\vec e_z}=-R_{\mathrm{pau},\vec e_z},
@@ -309,9 +309,9 @@ $$
 \gamma_0\gamma_1\gamma_2\gamma_3=-L_{\mathrm{axf},e_t}R_{\mathrm{axf},\vec e_z}=-R_{\mathrm{axf},\vec e_z},
 $$
 
-and the single $i$ of the definition gives $\gamma_5=i\gamma_0\gamma_1\gamma_2\gamma_3=-iR_{\mathrm{pau},\vec e_z}=-iL_{\mathrm{pau},e_t}R_{\mathrm{pau},\vec e_z}$. The cell $\Gamma:=-iR_{\mathrm{pau},\vec e_z}$ is the chirality cell of the module, and in this frame $\gamma_5=\Gamma$.
+and the single $i$ of the definition gives $\gamma_5=i\gamma_0\gamma_1\gamma_2\gamma_3=-iR_{\mathrm{pau},\vec e_z}=-iL_{\mathrm{pau},e_t}R_{\mathrm{pau},\vec e_z}$. The basis operator $\Gamma:=-iR_{\mathrm{pau},\vec e_z}$ is the chirality basis operator of the module, and in this frame $\gamma_5=\Gamma$.
 
-**The central grading and the cell.** The cell $\gamma_5$ is the representative on the Dirac module of an object that is not an element of the algebra. The central grading is $\chi=i\tilde{Ζ}_{\mathrm{ad}}$, with $\tilde{Ζ}_{\mathrm{ad}}$ the central root of $-e_t$ in the complexification, so that
+**The central grading and the basis operator.** The basis operator $\gamma_5$ is the representative on the Dirac module of an object that is not an element of the algebra. The central grading is $\chi=i\tilde{Ζ}_{\mathrm{ad}}$, with $\tilde{Ζ}_{\mathrm{ad}}$ the central root of $-e_t$ in the complexification, so that
 
 $$
 \xi^2=i^2\,\tilde{Ζ}_{\mathrm{ad}}^2=(-1)(-e_t)=e_t ,
@@ -342,11 +342,11 @@ $$
 
 Here $k_m=mc/\hbar$ is the mass wave number, the inverse of the mass length.
 
-which is the second member of the pair with its left field read as $-i\overline{F}\,\vec e_z$: a conjugation and the fixed direction $\vec e_z$. That right-hand factor is the chirality cell, since $-i\overline{F}\,\vec e_z=\Gamma\,\overline{F}$ with $\Gamma=-iR_{\mathrm{pau},\vec e_z}=\gamma_5$, so the mass of the two-sided equation is carried by the cell that names the chirality — the two-sided counterpart of the off-diagonal mass of the one-sided pair, and the reason the mass is chirality-odd here as it is off-diagonal there. The two forms are one operator read from two sides, and the dictionary between them is that of *The Dirac Equation in Biquaternionic Form*. In the language of this article the one-sided pair is the superalgebra's own statement in the chirality grading of the supersymmetry article, where the gradient is the odd element and its conjugate is the odd element of the conjugate module, the two paired off-diagonally by the mass; the two-sided equation is instead the cell $L_{\tilde\nabla^{\natural}}$ with the chirality carried on the right: what the one-sided form holds in a second field, the two-sided form holds in the side of the action.
+which is the second member of the pair with its left field read as $-i\overline{F}\,\vec e_z$: a conjugation and the fixed direction $\vec e_z$. That right-hand factor is the chirality basis operator, since $-i\overline{F}\,\vec e_z=\Gamma\,\overline{F}$ with $\Gamma=-iR_{\mathrm{pau},\vec e_z}=\gamma_5$, so the mass of the two-sided equation is carried by the basis operator that names the chirality — the two-sided counterpart of the off-diagonal mass of the one-sided pair, and the reason the mass is chirality-odd here as it is off-diagonal there. The two forms are one operator read from two sides, and the dictionary between them is that of *The Dirac Equation in Biquaternionic Form*. In the language of this article the one-sided pair is the superalgebra's own statement in the chirality grading of the supersymmetry article, where the gradient is the odd element and its conjugate is the odd element of the conjugate module, the two paired off-diagonally by the mass; the two-sided equation is instead the basis operator $L_{\tilde\nabla^{\natural}}$ with the chirality carried on the right: what the one-sided form holds in a second field, the two-sided form holds in the side of the action.
 
-**The cells and the cone.** A single product is a pure tensor. Writing $c(M)$ for the coefficient matrix of $M$ in the basis of the sixteen products, the products form the seven-dimensional cone $\operatorname{rank}c(M)\le1$, and a general element is a sum of at most four, with $\ell(M)=\operatorname{rank}c(M)$. The dictionary is complex-linear; over $\mathbb{R}$ the products span $\mathrm{Cl}_{1,3}(\mathbb{R})\cong M_2(\mathbb{H})$ and the cells span $\mathrm{Cl}_{3,1}(\mathbb{R})\cong M_4(\mathbb{R})$.
+**The basis operators and the cone.** A single product is a pure tensor. Writing $c(M)$ for the coefficient matrix of $M$ in the basis of the sixteen products, the products form the seven-dimensional cone $\operatorname{rank}c(M)\le1$, and a general element is a sum of at most four, with $\ell(M)=\operatorname{rank}c(M)$. The dictionary is complex-linear; over $\mathbb{R}$ the products span $\mathrm{Cl}_{1,3}(\mathbb{R})\cong M_2(\mathbb{H})$ and the basis operators span $\mathrm{Cl}_{3,1}(\mathbb{R})\cong M_4(\mathbb{R})$.
 
-**The display.** Every array printed in this section is given twice: in the Peirce display first, labelled $\mathrm{pau}$, whose arrays are the ones the literature prints, and in the axis-free display after it, labelled $\mathrm{axf}$, which is the display of the body and of the corpus. The two are carried into one another by $L_{\mathrm{axf},e_\mu}=C_{\Pi}L_{\mathrm{pau},e_\mu}C_{\Pi}^{-1}$, and a conjugation by $C_{\Pi}$ changes no product, no anticommutator, no trace and no determinant, so every identity of the section holds in both. An array is a statement about one display; a cell named in the running text keeps the Peirce label, and its axis-free array is the conjugate. The label names the array and not the operator.
+**The display.** Every array printed in this section is given twice: in the Peirce display first, labelled $\mathrm{pau}$, whose arrays are the ones the literature prints, and in the axis-free display after it, labelled $\mathrm{axf}$, which is the display of the body and of the corpus. The two are carried into one another by $L_{\mathrm{axf},e_\mu}=C_{\Pi}L_{\mathrm{pau},e_\mu}C_{\Pi}^{-1}$, and a conjugation by $C_{\Pi}$ changes no product, no anticommutator, no trace and no determinant, so every identity of the section holds in both. An array is a statement about one display; a basis operator named in the running text keeps the Peirce label, and its axis-free array is the conjugate. The label names the array and not the operator.
 
 ## Summary
 
@@ -364,7 +364,7 @@ so it reverses a commutator and preserves an anticommutator: the star reverses t
 
 A **supercharge** is an odd element, paired either with **itself**, $\{\mathcal{Q},\mathcal{Q}\}=2\mathcal{Q}^{2}=2H$, which is the square of the ambient algebra and needs $\mathcal{Q}^{2}\neq0$, or with its **star**, $\{\mathcal{Q},\mathcal{Q}^{*}\}=2H'$, which is the nilpotent pairing of the corpus's supersymmetric quantum physics and is Hermitian and even because the star is an involution. The two agree for a Hermitian supercharge and are reconciled by $i^{2}=-1$ otherwise. In the module $A^{1}=\mathbb{B}u$ a supercharge is $\mathcal{Q}=su$ with adjoint $\mathcal{Q}^{*}=-us^{*}$ and $\mathcal{Q}\mathcal{Q}^{*}=-q(u)ss^{*}$, an even element; the symmetric form $\{\mathcal{Q},\mathcal{Q}^{*}\}=-q(u)(ss^{*}+s^{*}s)$ holds when $s$ has a definite $u$-parity, and only the evenness and the Hermiticity hold in general. The odd extension is one generator, not a second algebra, and the odd slot carries the algebra's own Hermitian form, $-q(u)\langle s,t\rangle_{*}$, which is the form of $\mathbb{B}$ for a spacelike $u$ and its negative for a timelike one.
 
-The matrix frame is the frame of the actions written as letters, and it is confined to *The Legacy Pauli Gamma Formulation*: the five cells, their squares fixed by $i^2=-1$, the central sign $\chi=i\tilde{Ζ}_{\mathrm{ad}}$ with $\chi^2=e_t$, and the two Dirac equations — the one-sided chiral pair, whose chirality sits in the two fields, and the two-sided cell equation, whose chirality sits in the side of the action.
+The matrix frame is the frame of the actions written as letters, and it is confined to *The Legacy Pauli Gamma Formulation*: the five basis operators, their squares fixed by $i^2=-1$, the central sign $\chi=i\tilde{Ζ}_{\mathrm{ad}}$ with $\chi^2=e_t$, and the two Dirac equations — the one-sided chiral pair, whose chirality sits in the two fields, and the two-sided basis operator equation, whose chirality sits in the side of the action.
 
 ## Summary of Notation
 
@@ -389,9 +389,9 @@ The matrix frame is the frame of the actions written as letters, and it is confi
 | $\{\mathcal{Q},\mathcal{Q}^{*}\}=-q(u)(ss^{*}+s^{*}s)$ | Its pairing when $s^{*}s$ has no part of $u$-parity $-1$, in particular for an even $s$ of definite $u$-parity |
 | $\langle su,tu\rangle_{*}=-q(u)\langle s,t\rangle_{*}$, $\langle s,tu\rangle_{*}=0$ | The Hermitian form on the odd slot |
 | $(-1)^F=i\vec e_z\in\mathbb{B}_{\Psi}$, $((-1)^F)^2=e_t$ | The one fermionic mode the algebra hosts natively |
-| $\gamma_\mu$, $\gamma_5$ | The frame cells of *The Legacy Pauli Gamma Formulation*: letters for the cells, used in that section only |
-| $\Gamma=-iR_{\mathrm{axf},\vec e_z}$ | The chirality cell of the module; equal to the fifth frame cell in the frame |
-| $\chi=i\tilde{Ζ}_{\mathrm{ad}}$, $\chi^2=e_t$ | The central grading; central, outside $\mathbb{B}_{\mathbb{R}}$, represented on the module by the fifth frame cell |
+| $\gamma_\mu$, $\gamma_5$ | The frame basis operators of *The Legacy Pauli Gamma Formulation*: letters for the basis operators, used in that section only |
+| $\Gamma=-iR_{\mathrm{axf},\vec e_z}$ | The chirality basis operator of the module; equal to the fifth frame basis operator in the frame |
+| $\chi=i\tilde{Ζ}_{\mathrm{ad}}$, $\chi^2=e_t$ | The central grading; central, outside $\mathbb{B}_{\mathbb{R}}$, represented on the module by the fifth frame basis operator |
 | $\tilde\nabla\tilde{Ξ}_{\mathrm{sp},R}=k_m\tilde{Ξ}_{\mathrm{sp},L}$, $\tilde\nabla^{\natural}\tilde{Ξ}_{\mathrm{sp},L}=k_m\tilde{Ξ}_{\mathrm{sp},R}$ | The one-sided Dirac equation, the chiral pair |
 | $(i\partial/\partial r'_t+D_3)F-k_mi\overline{F}\vec e_z=0$ | The two-sided Dirac equation, the mass on the right |
 

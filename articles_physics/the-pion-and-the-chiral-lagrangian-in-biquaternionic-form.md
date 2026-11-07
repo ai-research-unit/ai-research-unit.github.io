@@ -26,7 +26,7 @@ $$
 $$
 gives the canonical pion kinetic term $\tfrac12\sum_k\big((\partial\pi_k/\partial r'_t)^2-(\nabla\pi_k)^2\big)$ with coefficient exactly one. The mass term $f_\pi^2B_0\,\mathrm{Sc}(M\tilde U + M^{*}\tilde U^{*})$ gives the standard Gell-Mann–Oakes–Renner relation $m_\pi^2 f_\pi^2 = -(m_u+m_d)\langle\bar qq\rangle$, equivalently $m_\pi^2 = B_0(m_u+m_d)$ with $B_0 = -\langle\bar qq\rangle/f_\pi^2$.
 - **Interpretation.** Interpreting the pion's isospin triplet as the adjoint of the framework's material-sector $\mathrm{SU}(2)$, and the chiral field as a unit real quaternion, is the interpretive link between the framework's compact group and the pion's quantum numbers. The interpretation is exact at the level of the unbroken subgroup and is labelled where the chiral group is involved.
-- **Gap, left visible.** The framework's centre is vector-like: the algebra supplies the diagonal isospin $SU(2)_V$ and its adjoint action on the pion triplet, but no axial generator of the centre acts on the triplet. The fifth cell of the frame is the right multiplication by $-i\vec e_z$, an operator of the frame and not an element of the centre, so it can carry the axial vertex but does not generate a chiral symmetry. The axial currents, the anomaly and the Wess–Zumino–Witten term therefore belong to the fermion and general-gauge sectors. The chiral Lagrangian is realised as a geometric construction on the framework's group manifold, with the axial-current algebra and the anomaly imported from the standard treatment.
+- **Gap, left visible.** The framework's centre is vector-like: the algebra supplies the diagonal isospin $SU(2)_V$ and its adjoint action on the pion triplet, but no axial generator of the centre acts on the triplet. The fifth basis operator of the frame is the right multiplication by $-i\vec e_z$, an operator of the frame and not an element of the centre, so it can carry the axial vertex but does not generate a chiral symmetry. The axial currents, the anomaly and the Wess–Zumino–Witten term therefore belong to the fermion and general-gauge sectors. The chiral Lagrangian is realised as a geometric construction on the framework's group manifold, with the axial-current algebra and the anomaly imported from the standard treatment.
 
 - Companion article *Goldstone's Theorem in Biquaternionic Form*, for the Goldstone boson, the derivative couplings, the decay constant and the effective Lagrangian.
 - Companion article *The Nonlinear Sigma Model in Biquaternionic Form*, for the group-valued field, its invariant metric and its flat connection, of which this article is the chiral specialisation.
@@ -64,7 +64,7 @@ $$
 
 and Goldstone's theorem gives three massless scalars, which are the three pions $\pi^\pm,\pi^0$. The nonzero quark masses break the symmetry explicitly, giving the pions a small mass and making them **pseudo-Goldstone** bosons; the explicit breaking is a perturbation, and the chiral Lagrangian organises its effects.
 
-**The framework's part.** The biquaternion framework does not contain colour and does not contain the quark condensate; those belong to the fermion sector. What the framework contains is the group $SU(2)$, realised as the unit real quaternions, and its adjoint action on the material sector. The unbroken isospin $SU(2)_V$ is exactly such a group, and the pion triplet transforms in its adjoint, so the framework supplies the correct transformation law of the pion under the unbroken symmetry. The axial generators that complete $G$ are not supplied by the centre. A central element commutes with the triplet, so its adjoint action is trivial; the isospin in use is the two-sided action $\vec\pi\mapsto g_V\vec\pi g_V^{*}$ of the non-central rotors, and that action has no axial partner in the algebra. The fifth cell of the frame is an operator of the frame and not a central element, and this is the boundary of the framework's reach; it is stated precisely in the section on currents below and in the reading section at the end.
+**The framework's part.** The biquaternion framework does not contain colour and does not contain the quark condensate; those belong to the fermion sector. What the framework contains is the group $SU(2)$, realised as the unit real quaternions, and its adjoint action on the material sector. The unbroken isospin $SU(2)_V$ is exactly such a group, and the pion triplet transforms in its adjoint, so the framework supplies the correct transformation law of the pion under the unbroken symmetry. The axial generators that complete $G$ are not supplied by the centre. A central element commutes with the triplet, so its adjoint action is trivial; the isospin in use is the two-sided action $\vec\pi\mapsto g_V\vec\pi g_V^{*}$ of the non-central rotors, and that action has no axial partner in the algebra. The fifth basis operator of the frame is an operator of the frame and not a central element, and this is the boundary of the framework's reach; it is stated precisely in the section on currents below and in the reading section at the end.
 
 ## The Pion as an Adjoint of the Material Sector
 
@@ -241,28 +241,28 @@ $$
 
 the standard isovector current of the pion triplet. The natural conjugation on the derivative is the one that fixes the sign: with $\partial\tilde U^{\natural}/\partial R_\mu=-\partial\tilde U/\partial R_\mu$ and $\mathrm{Sc}(\vec e_j\vec e_k)=-\delta_{jk}$, the two minus signs cancel and the prefactor $-\frac{f_\pi^2}{2}$ produces the displayed minus. It lies in the material sector, like every current of the framework, and it is the current whose charge rotates the pion triplet in the adjoint.
 
-**The axial current and its divergence.** The axial current is not the Noether current of a symmetry of the algebra. It is the quark axial current of the underlying theory, which fixes its nature and its anomalous divergence; what the framework contributes is the product of elements that carries the vertex. The frame cell of the coordinate $x_\mu$ multiplies on the left by $e_\mu$ and on the right by $\vec e_{\nu(\mu)}$, with the phase $i$,
+**The axial current and its divergence.** The axial current is not the Noether current of a symmetry of the algebra. It is the quark axial current of the underlying theory, which fixes its nature and its anomalous divergence; what the framework contributes is the product of elements that carries the vertex. The frame basis operator of the coordinate $x_\mu$ multiplies on the left by $e_\mu$ and on the right by $\vec e_{\nu(\mu)}$, with the phase $i$,
 
 $$
 C_\mu:\ \tilde Q\;\longmapsto\; i\,e_\mu\,\tilde Q\,\vec e_{\nu(\mu)} ,
 \qquad \nu(t)=x,\quad \nu(k)=y ,
 $$
 
-so that the time slot collapses, $e_t\tilde Q=\tilde Q$, and the timelike cell is the single right multiplication $\tilde Q\mapsto i\tilde Q\vec e_x$, while the three spatial cells keep both factors. The fifth cell of the frame is the right multiplication by $-i\vec e_z$,
+so that the time slot collapses, $e_t\tilde Q=\tilde Q$, and the timelike basis operator is the single right multiplication $\tilde Q\mapsto i\tilde Q\vec e_x$, while the three spatial basis operators keep both factors. The fifth basis operator of the frame is the right multiplication by $-i\vec e_z$,
 
 $$
 \xi:\ \tilde Q\;\longmapsto\; -i\,\tilde Q\,\vec e_z ,
 \qquad \xi\xi = e_t ,
 $$
 
-where $\xi\xi$ is the cell applied twice. The axial vertex is the product of the frame cell with the fifth cell, the fifth cell applied first, and the two central imaginaries multiply to one, $i\cdot(-i)=-i^2=1$, so the product is a single product of elements:
+where $\xi\xi$ is the basis operator applied twice. The axial vertex is the product of the frame basis operator with the fifth basis operator, the fifth basis operator applied first, and the two central imaginaries multiply to one, $i\cdot(-i)=-i^2=1$, so the product is a single product of elements:
 
 $$
 C_\mu\xi:\ \tilde Q\;\longmapsto\; e_\mu\,\tilde Q\,\vec e_z\vec e_{\nu(\mu)} ,
 \qquad \vec e_z\vec e_x=\vec e_y ,\quad \vec e_z\vec e_y=-\vec e_x .
 $$
 
-The axial vertex is therefore the frame cell with $\vec e_z\vec e_{\nu(\mu)}$ as its right multiplier, and no second imaginary unit survives. The vertex of the axial current in the direction $k$ is that product read on the quark field, with the isospin generator:
+The axial vertex is therefore the frame basis operator with $\vec e_z\vec e_{\nu(\mu)}$ as its right multiplier, and no second imaginary unit survives. The vertex of the axial current in the direction $k$ is that product read on the quark field, with the isospin generator:
 
 $$
 j_{5\mu k} = \bar q\,C_\mu\xi\,T_k\,q .
@@ -285,7 +285,7 @@ $$
 = \frac{m_u+m_d}{2}\,\bar q\,(i\xi)\,T_k\,q ,
 $$
 
-the cell $i\xi$ being the right multiplication by $\vec e_z$, the phase $i$ cancelling the $-i$ of the fifth cell, and at the level of the chiral Lagrangian it is proportional to the pion field itself,
+the basis operator $i\xi$ being the right multiplication by $\vec e_z$, the phase $i$ cancelling the $-i$ of the fifth basis operator, and at the level of the chiral Lagrangian it is proportional to the pion field itself,
 
 $$
 \langle\tilde\nabla,\tilde J_{\Phi,5k}\rangle_{\natural} = f_\pi m_\pi^2\,\pi_k + \cdots ,
@@ -293,7 +293,7 @@ $$
 \langle 0|j_{5\mu k}(0)|\pi_l(p)\rangle = i f_\pi p_\mu\,\delta_{kl} ,
 $$
 
-which is the partially conserved axial current (PCAC) and the defining matrix element of the decay constant. The framework does not produce this current as the Noether current of a symmetry of its centre: the centre is vector-like, and no axial generator exists in $\mathbb{B}_{C}$. The fifth cell is an operator of the frame and not an element of the centre; it can carry the axial vertex, but it does not generate a chiral symmetry of the algebra. The axial current, its anomaly and the Wess–Zumino–Witten term are therefore imported from the fermion and general-gauge sectors, and the framework's contribution is the geometric field and its normalisation.
+which is the partially conserved axial current (PCAC) and the defining matrix element of the decay constant. The framework does not produce this current as the Noether current of a symmetry of its centre: the centre is vector-like, and no axial generator exists in $\mathbb{B}_{C}$. The fifth basis operator belongs to the frame and not to the centre; it can carry the axial vertex, but it does not generate a chiral symmetry of the algebra. The axial current, its anomaly and the Wess–Zumino–Witten term are therefore imported from the fermion and general-gauge sectors, and the framework's contribution is the geometric field and its normalisation.
 
 **The soft limit.** Because every pion coupling is a derivative, the amplitude for a process with an additional pion of momentum $k$ is proportional to $k$ as $k\to0$, and the amplitude with an extra soft pion vanishes: the Adler zero. The statement follows from the form of $\mathcal{L}_\pi^{(2)}$ alone and is therefore inherited by the framework's chiral Lagrangian unchanged. It is the reason the pion is weakly coupled at low energy even though the underlying theory is strongly coupled.
 
@@ -313,7 +313,7 @@ connects the nucleon axial charge, its mass and its pion coupling. The relation 
 
 **The plain form fixes the normalisation.** The kinetic term's coefficient is fixed by $\mathrm{Sc}(T_jT_k)=\tfrac14\delta_{jk}$, and the framework's plain form, read on the units, supplies it. The framework therefore contributes the normalisation in which $f_\pi$ appears, and hence the normalisation in which the GOR relation and the PCAC matrix element are written. This is the same role the plain form plays in every bilinear of the series.
 
-**The chiral group's axial half is not supplied.** The framework's centre is vector-like, and the algebra contains no axial generator of the centre acting on the pion triplet. The isospin $SU(2)_V$ is realised as the diagonal of the two-sided action, conjugation by a single rotor; the axial $SU(2)_A$ is not. The fifth cell of the frame is the right multiplication by $-i\vec e_z$, an operator of the frame and not an element of the centre, so it can represent the axial vertex but does not generate a symmetry. The consequence is that the chiral Lagrangian is available to the framework as a geometric object and as a theory of the unbroken isospin current, while the axial current, the anomaly, the Wess–Zumino–Witten term and the flavour-singlet $\eta_{\mathrm s}$ mass are imported. This is the same boundary that the companion articles on chiral fermions and on the Standard Model agenda draw for the fermion sector, seen here from the pion side.
+**The chiral group's axial half is not supplied.** The framework's centre is vector-like, and the algebra contains no axial generator of the centre acting on the pion triplet. The isospin $SU(2)_V$ is realised as the diagonal of the two-sided action, conjugation by a single rotor; the axial $SU(2)_A$ is not. The fifth basis operator of the frame is the right multiplication by $-i\vec e_z$, an operator of the frame and not an element of the centre, so it can represent the axial vertex but does not generate a symmetry. The consequence is that the chiral Lagrangian is available to the framework as a geometric object and as a theory of the unbroken isospin current, while the axial current, the anomaly, the Wess–Zumino–Witten term and the flavour-singlet $\eta_{\mathrm s}$ mass are imported. This is the same boundary that the companion articles on chiral fermions and on the Standard Model agenda draw for the fermion sector, seen here from the pion side.
 
 ## Open Questions
 
@@ -347,13 +347,13 @@ $$
 \gamma_0=iL_{\mathrm{axf},e_t}R_{\mathrm{axf},\vec e_x},\quad \gamma_1=iL_{\mathrm{axf},\vec e_x}R_{\mathrm{axf},\vec e_y},\quad \gamma_2=iL_{\mathrm{axf},\vec e_y}R_{\mathrm{axf},\vec e_y},\quad \gamma_3=iL_{\mathrm{axf},\vec e_z}R_{\mathrm{axf},\vec e_y},\quad \gamma_5=-iL_{\mathrm{axf},e_t}R_{\mathrm{axf},\vec e_z} .
 $$
 
-The four frame cells multiply to $\gamma_0\gamma_1\gamma_2\gamma_3=-i\xi$, so $\gamma_5=i\gamma_0\gamma_1\gamma_2\gamma_3$ spends one more $i$ and returns $\xi$: the two imaginary units give $i\cdot(-i)=1$, and the fifth cell is the fifth cell of the body, not a sixth one.
+The four frame basis operators multiply to $\gamma_0\gamma_1\gamma_2\gamma_3=-i\xi$, so $\gamma_5=i\gamma_0\gamma_1\gamma_2\gamma_3$ spends one more $i$ and returns $\xi$: the two imaginary units give $i\cdot(-i)=1$, and the fifth basis operator is one of the body's own, not a sixth one.
 
-Each of the four is one factor of $i$ times a bare cell of the body, $\gamma_\mu=i\beta_\mu$ with $\beta_\mu=L_{\mathrm{pau},e_\mu}R_{\mathrm{pau},\vec e_{\nu(\mu)}}$; the fifth is not of that form, being the fifth cell itself, $\gamma_5=\xi=-iR_{\mathrm{pau},\vec e_z}$. Nothing in the body needs the gammas: they are its own cells with the $i$ made explicit. The bare cells anticommute with the body's weight, $\{\beta_a,\beta_b\}=2(-\varepsilon_a\delta_{ab})I_4$: $\beta_t^2=-I_4$ while $\beta_k^2=+I_4$. The one $i$ per cell flips that square, $\gamma_t^2=-\beta_t^2=+I_4$, and leaves the three spatial signs alone, so the gammas anticommute with the negative metric, $\{\gamma_a,\gamma_b\}=2g_{ab}I_4$ with $g=-\eta$. The difference between the two signatures is therefore exactly one factor of $i$ per cell, spent as $i^2=-1$, and the signs that remain are the quaternion squares $\vec e_k^2=-e_t$. The central grading $\xi_{\mathrm{ad}}:=i\tilde{Ζ}_{\mathrm{ad}}$ — with $\tilde{Ζ}_{\mathrm{ad}}$ a central root of $-e_t$, so $\xi_{\mathrm{ad}}^2=i^2\tilde{Ζ}_{\mathrm{ad}}^2=(-1)(-e_t)=e_t$ — is a different object, represented by $\gamma_5$ on the Dirac module.
+Each of the four is one factor of $i$ times a bare basis operator of the body, $\gamma_\mu=i\beta_\mu$ with $\beta_\mu=L_{\mathrm{pau},e_\mu}R_{\mathrm{pau},\vec e_{\nu(\mu)}}$; the fifth is not of that form, being the fifth basis operator itself, $\gamma_5=\xi=-iR_{\mathrm{pau},\vec e_z}$. Nothing in the body needs the gammas: they are its own basis operators with the $i$ made explicit. The bare basis operators anticommute with the body's weight, $\{\beta_a,\beta_b\}=2(-\varepsilon_a\delta_{ab})I_4$: $\beta_t^2=-I_4$ while $\beta_k^2=+I_4$. The one $i$ per basis operator flips that square, $\gamma_t^2=-\beta_t^2=+I_4$, and leaves the three spatial signs alone, so the gammas anticommute with the negative metric, $\{\gamma_a,\gamma_b\}=2g_{ab}I_4$ with $g=-\eta$. The difference between the two signatures is therefore exactly one factor of $i$ per basis operator, spent as $i^2=-1$, and the signs that remain are the quaternion squares $\vec e_k^2=-e_t$. The central grading $\xi_{\mathrm{ad}}:=i\tilde{Ζ}_{\mathrm{ad}}$ — with $\tilde{Ζ}_{\mathrm{ad}}$ a central root of $-e_t$, so $\xi_{\mathrm{ad}}^2=i^2\tilde{Ζ}_{\mathrm{ad}}^2=(-1)(-e_t)=e_t$ — is a different object, represented by $\gamma_5$ on the Dirac module.
 
-The dictionary is complex-linear; over $\mathbb{R}$ the products span $\mathrm{Cl}_{1,3}(\mathbb{R})\cong M_2(\mathbb{H})$ and the cells span $\mathrm{Cl}_{3,1}(\mathbb{R})\cong M_4(\mathbb{R})$.
+The dictionary is complex-linear; over $\mathbb{R}$ the products span $\mathrm{Cl}_{1,3}(\mathbb{R})\cong M_2(\mathbb{H})$ and the basis operators span $\mathrm{Cl}_{3,1}(\mathbb{R})\cong M_4(\mathbb{R})$.
 
-**The identities the bodies cite.** In the $\gamma$ reading, with $\varepsilon=(1,-1,-1,-1)$ the sign vector of the cells,
+**The identities the bodies cite.** In the $\gamma$ reading, with $\varepsilon=(1,-1,-1,-1)$ the sign vector of the basis operators,
 $$
 \{\gamma_\mu,\gamma_\nu\}=2\varepsilon_\mu\delta_{\mu\nu}I_4,\qquad
 (\gamma_k)^2=-I_4,\qquad
@@ -435,7 +435,7 @@ The framework supplies the pion's adjoint isovector assignment, the geometric ch
 | $B_0 = -\langle\bar qq\rangle/f_\pi^2$ | Condensate scale parameter |
 | $m_\pi^2 = B_0(m_u+m_d)$, $m_\pi^2f_\pi^2 = -(m_u+m_d)\langle\bar qq\rangle$ | Pion mass and the Gell-Mann–Oakes–Renner relation |
 | $j_{\mu k}$, $j_{5\mu k}$ | Isospin (vector) and axial currents |
-| $C_\mu$, $\xi$ | Frame cell of the coordinate $x_\mu$, $\tilde Q\mapsto ie_\mu\tilde Q\vec e_{\nu(\mu)}$ with $\nu(t)=x$ and $\nu(k)=y$; and the fifth cell, the right multiplication by $-i\vec e_z$, written $-iR_{\vec e_z}$ where the operator is the subject |
+| $C_\mu$, $\xi$ | Frame basis operator of the coordinate $x_\mu$, $\tilde Q\mapsto ie_\mu\tilde Q\vec e_{\nu(\mu)}$ with $\nu(t)=x$ and $\nu(k)=y$; and the fifth basis operator, the right multiplication by $-i\vec e_z$, written $-iR_{\vec e_z}$ where the operator is the subject |
 | $\tilde\nabla\tilde{Ξ}_{\mathrm{sp},R}=k_m\tilde{Ξ}_{\mathrm{sp},L}$, $\tilde\nabla^{\natural}\tilde{Ξ}_{\mathrm{sp},L}=k_m\tilde{Ξ}_{\mathrm{sp},R}$ | Chiral pair of the Dirac equation; the two parts are coupled only by the mass |
 | $\langle0\vert j_{5\mu k}(0)\vert\pi_l(p)\rangle = if_\pi p_\mu\delta_{kl}$ | Defining matrix element of $f_\pi$ |
 | $\langle\tilde\nabla,\tilde J_{\Phi,5k}\rangle_{\natural} = f_\pi m_\pi^2\pi_k$ | PCAC |

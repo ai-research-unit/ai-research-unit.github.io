@@ -12,7 +12,7 @@ it is multiplicative, and it vanishes only at the origin. The **square of the im
 
 The comparison has a definite shape. As functions, $M$ and $B$ are independent: neither determines the other. As vanishing conditions they are nested: $B\neq0$ implies $M\neq0$, because $M=B+t^2$. The nesting is strict, its strictness is the punctured real axis, and it is the content of the relation.
 
-**Conventions.** The element is $z=t+bi$ with $t,b\in\mathbb{R}$, the conjugation is $\bar z=t-bi$, the modulus squared is $|z|^2=z\bar z=t^2+b^2$, and the modulus is $|z|=\sqrt{t^2+b^2}$. The companion articles write $Q=q+iq'$ and $\langle Q\rangle_*=Q\bar Q$; the translation is $t=q$, $b=q'$, $|z|^2=\langle Q\rangle_*$. The spectral criterion and the cells are those of *Spectral Regularity and Degeneracy in the Complex Algebra* and *The Three Sectors of the Complex Algebra*.
+**Conventions.** The element is $z=t+bi$ with $t,b\in\mathbb{R}$, the conjugation is $\bar z=t-bi$, the modulus squared is $|z|^2=z\bar z=t^2+b^2$, and the modulus is $|z|=\sqrt{t^2+b^2}$. The companion articles write $Q=q+iq'$ and $\langle Q\rangle_*=Q\bar Q$; the translation is $t=q$, $b=q'$, $|z|^2=\langle Q\rangle_*$. The spectral criterion and the sectors are those of *Spectral Regularity and Degeneracy in the Complex Algebra* and *The Three Sectors of the Complex Algebra*.
 
 ## The Two Invariants
 
@@ -77,7 +77,7 @@ $$
 
 The phrase *the unit circle meets the real axis at $\pm1$* might suggest that the intersection points are doubly regular. They are the opposite: they are the spectrally degenerate points of the circle.
 
-## The Origin and the Empty Cell
+## The Origin and the Empty Sector
 
 **Theorem (the vanishing locus of the modulus).** For $z\in\mathbb{C}$, $M(z)=0$ exactly when $z=0$. There is no non-zero modulus-degenerate element, every non-zero complex number is a unit, and the zero-divisor class is empty.
 
@@ -87,7 +87,7 @@ The phrase *the unit circle meets the real axis at $\pm1$* might suggest that th
 
 *Proof.* $M(z)=0$ forces $z=0$, and $B(0)=0$. Conversely $B=0$ alone does not force $M=0$: every other real number is a counterexample.
 
-**Corollary (the empty cell).** No element has $M=0$ and $B\neq0$.
+**Corollary (the empty sector).** No element has $M=0$ and $B\neq0$.
 
 *Proof.* $M=0$ forces $z=0$, and $B(0)=0$.
 
@@ -101,7 +101,7 @@ The phrase *the unit circle meets the real axis at $\pm1$* might suggest that th
 |---|---|---|---|
 | modulus squared | $M=t^2+b^2$ | 2 | the origin from the rest |
 | imaginary square | $B=b^2$ | 2 | the real axis from the rest |
-| characteristic polynomial | $(2t,M)$ | 3 | the three cells |
+| characteristic polynomial | $(2t,M)$ | 3 | the three sectors |
 | minimal polynomial | $X-t$ or $(X-t)^2+b^2$ | 2 | the real axis from its complement |
 
 *Proof.* The modulus vanishes only at the origin and $B$ only on the real axis. The characteristic polynomial is $X^2-2tX+M$: two distinct roots with non-zero product on $\Sigma_{11}$, a double non-zero root on $\Sigma_{10}$, and a double root at zero on $\Sigma_{00}$. The minimal polynomial is $X-t$ on the real axis and the characteristic polynomial off it.
@@ -110,13 +110,13 @@ The phrase *the unit circle meets the real axis at $\pm1$* might suggest that th
 
 *Proof.* All the listed quantities depend on $t$ and $b^2$ only, and $z$ and $\bar z$ share both.
 
-**Remark (the chain stops).** The modulus separates the origin from the rest, the imaginary square separates the real axis from the rest, and the characteristic polynomial separates the three cells. The minimal polynomial refines nothing: off the real axis it is the characteristic polynomial, and on it, it is the degree-one reduction. The chain has three cell-separating invariants and no fourth; the spectral invariant $B$ is the discriminant of the characteristic polynomial. In the biquaternion algebra the chain continues, because the minimal polynomial separates the nilpotent and unipotent strata of the degenerate cone; here there are no such strata.
+**Remark (the chain stops).** The modulus separates the origin from the rest, the imaginary square separates the real axis from the rest, and the characteristic polynomial separates the three sectors. The minimal polynomial refines nothing: off the real axis it is the characteristic polynomial, and on it, it is the degree-one reduction. The chain has three sector-separating invariants and no fourth; the spectral invariant $B$ is the discriminant of the characteristic polynomial. In the biquaternion algebra the chain continues, because the minimal polynomial separates the nilpotent and unipotent strata of the degenerate cone; here there are no such strata.
 
 ## The Place among the Algebras
 
 **The complex case is the smallest definite algebra in which the spectral condition is not automatic.**
 
-| algebra | modulus or norm | spectral condition | $\Sigma_{01}$ | cells |
+| algebra | modulus or norm | spectral condition | $\Sigma_{01}$ | sectors |
 |---|---|---|---|---|
 | $\mathbb{R}$ | $t^2$, definite | never holds (always degenerate) | empty | 2 |
 | $\mathbb{C}$ | $t^2+b^2$, definite | $b^2$ | empty | 3 |
@@ -126,7 +126,7 @@ The phrase *the unit circle meets the real axis at $\pm1$* might suggest that th
 
 *Proof.* In $\mathbb{R}$ the regular matrix is $(t)$, so the spectrum is $\{t\}$ and the spectral condition never holds. In $\mathbb{C}$ the criterion is this article. In $\mathbb{H}$ the eigenvalues of the regular representation are $t\pm i\lvert\vec v\rvert$, each twice, so the condition is $\vec v\neq0$ and the norm is definite. In $\mathbb{C}_{\mathrm{spl}}$ the norm is $t^2-b^2$, zero on the lines $t=\pm b$, and the spectral condition is $b\neq0$; the point $1+j$ has norm $0$ and $b=1$. In $\mathbb{B}$ the norm is $Q_t^2+B^2$, zero on non-zero elements, and the spectral condition is $B^2\neq0$; the details are *Relations between the N Norm and Spectral Regularity and Degeneracy*.
 
-**Corollary (the meaning of the empty cell).** A definite modulus forces $\Sigma_{01}$ to be empty; an indefinite or complex-valued modulus allows it to be non-empty. The complex algebra is definite, so it has three cells, and it is the first definite algebra in which the spectral condition is not automatic.
+**Corollary (the meaning of the empty sector).** A definite modulus forces $\Sigma_{01}$ to be empty; an indefinite or complex-valued modulus allows it to be non-empty. The complex algebra is definite, so it has three sectors, and it is the first definite algebra in which the spectral condition is not automatic.
 
 *Proof.* Definiteness says $M=0$ only at the origin, which is spectrally degenerate; hence no point has $M=0$ and $B\neq0$. The second sentence is the table.
 
@@ -138,7 +138,7 @@ As functions, $M$ and $B$ are independent: $1+i$ and $2+i$ have the same $B$ and
 
 The unit circle meets the real axis at $\pm1$. These points are modulus-regular and spectrally degenerate, not doubly regular; the doubly regular points of the circle are the two open arcs between them. The origin is the only doubly degenerate point, and there is no non-zero modulus-degenerate element, so every non-zero complex number is a unit and the zero-divisor class is empty.
 
-The characteristic polynomial $X^2-2tX+M$ separates the three cells; the minimal polynomial adds no cell. The spectral data determine $z$ only up to the sign of $b$, so $z$ and $\bar z$ are spectrally indistinguishable. Among the algebras of the corpus the complex case is the smallest definite case with three cells: $\mathbb{R}$ has two, $\mathbb{H}$ has three, and the split and biquaternion algebras have four because their norms are indefinite or complex.
+The characteristic polynomial $X^2-2tX+M$ separates the three sectors; the minimal polynomial adds no sector. The spectral data determine $z$ only up to the sign of $b$, so $z$ and $\bar z$ are spectrally indistinguishable. Among the algebras of the corpus the complex case is the smallest definite case with three sectors: $\mathbb{R}$ has two, $\mathbb{H}$ has three, and the split and biquaternion algebras have four because their norms are indefinite or complex.
 
 ## Summary of Notation
 
@@ -152,14 +152,14 @@ The characteristic polynomial $X^2-2tX+M$ separates the three cells; the minimal
 | modulus-regular / degenerate | $M\neq0$ / $M=0$ |
 | spectrally regular / degenerate | $B\neq0$ / $B=0$ |
 | $\mathrm{U}(1)=\{M=1\}$ | the unit circle |
-| $\Sigma_{ij}$ | the cell with $M\neq0$ iff $i=1$ and $B\neq0$ iff $j=1$ |
-| $\Sigma_{01}$ | the empty cell |
+| $\Sigma_{ij}$ | the sector with $M\neq0$ iff $i=1$ and $B\neq0$ iff $j=1$ |
+| $\Sigma_{01}$ | the empty sector |
 
 ## Further Reading
 
 - [Spectral Regularity and Degeneracy in the Complex Algebra](spectral-regularity-and-degeneracy-in-the-complex-algebra.html), for the characteristic polynomial, the discriminant and the spectral criterion.
 - [Eigenvalue Decomposition and Eigenbasis of a Complex Number](eigenvalue-decomposition-and-eigenbasis-of-a-complex-number.html), for the eigenbasis, the spectral idempotents and the polar reading.
-- [The Three Sectors of the Complex Algebra](the-three-sectors-of-the-complex-algebra.html), for the partition into cells, their closure and their dimension.
+- [The Three Sectors of the Complex Algebra](the-three-sectors-of-the-complex-algebra.html), for the partition into sectors, their closure and their dimension.
 - [Complex Norm and Invertibility](complex-norm-and-invertibility.html), for the modulus, multiplicativity, the inverse and the three-way classification.
 - [Complex Algebra](complex-algebra.html), for the algebra and its real and imaginary subspaces.
 - [Modulus–Unit Polar Decomposition of Complex Numbers](modulus-unit-polar-decomposition-of-complex-numbers.html), for the unit circle and the polar form.

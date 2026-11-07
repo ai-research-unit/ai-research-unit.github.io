@@ -743,9 +743,9 @@ If one insists on an $h_0$, four readings are available, and they have different
 | action per nat | $h_0=\frac{m\,c}{k_m}$ | action | a convention, $1$ nat $=1$ radian |
 | action per bit | $h_0=\frac{m\,c}{k_m}\log2$ | action | a convention joining two units |
 | Landauer quantum | $h_0=k_BT\log2$ | energy | thermodynamic, temperature-dependent |
-| phase-space cell | $h_0=h$ | action | semiclassical, one state per cell |
+| phase-space basis operator | $h_0=h$ | action | semiclassical, one state per basis operator |
 
-The first two are conventions: they join the phase unit to the information unit by a definition, and neither is forced by the algebra. The third is no constant of nature. It is the energy cost of erasure at a temperature, and it varies with the state of the bath. The fourth identifies a phase-space cell with a state, and it is imported from statistical mechanics.
+The first two are conventions: they join the phase unit to the information unit by a definition, and neither is forced by the algebra. The third is no constant of nature. It is the energy cost of erasure at a temperature, and it varies with the state of the bath. The fourth identifies a phase-space basis operator with a state, and it is imported from statistical mechanics.
 
 ### The Verdict
 

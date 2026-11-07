@@ -324,9 +324,9 @@ The one-sided action is not a device of this article. It is the multiplication o
 
 The Pauli and gamma formulation is legacy: the reasons are explained in the article *Why AXF Matrices instead of Pauli and Gamma Matrices*. The generators carry no frame label: $\gamma_\mu$ is one set of matrices, and the frame is named on the coordinate.
 
-The gamma matrices are a **frame** of the same cell algebra, written as $4\times4$ matrices on the regular module. They are displayed once, here, so that the body of the article can be read without them.
+The gamma matrices are a **frame** of the same basis operator algebra, written as $4\times4$ matrices on the regular module. They are displayed once, here, so that the body of the article can be read without them.
 
-The gammas are a frame of $\mathrm{Cl}_{1,3}(\mathbb{C})\cong M_4(\mathbb{C})$, not a different algebra. In cell notation,
+The gammas are a frame of $\mathrm{Cl}_{1,3}(\mathbb{C})\cong M_4(\mathbb{C})$, not a different algebra. In basis operator notation,
 
 $$
 \gamma_0=iL_{\mathrm{pau},e_t}R_{\mathrm{pau},\vec e_x},\qquad
@@ -346,9 +346,9 @@ $$
 \gamma_5=-iL_{\mathrm{axf},e_t}R_{\mathrm{axf},\vec e_z}.
 $$
 
-Each is a one-cell product, and each satisfies the anticommutation relations appropriate to the signature: $\gamma_0^2=I_4$, $\gamma_k^2=-I_4$ for $k=1,2,3$, and $\gamma_\mu\gamma_\nu+\gamma_\nu\gamma_\mu=2\varepsilon_\mu\delta_{\mu\nu}I_4$ with $\varepsilon=(1,-1,-1,-1)$. The fifth is the product of the other four, $\gamma_5=i\gamma_0\gamma_1\gamma_2\gamma_3$, and it satisfies $\gamma_5^2=I_4$. As an operator, $\gamma_5$ **is** the chirality cell $\Gamma=-iL_{\mathrm{pau},e_t}R_{\mathrm{pau},\vec e_z}$ of §*The Two Chiral Halves* — one operator, written once as a cell and once as a matrix of the frame. The algebra element behind the cell is the central grading $\xi$ of the complexification, which is not a gamma matrix; the body of the article uses $\xi$ and never needs a gamma symbol.
+Each is a one-basis operator product, and each satisfies the anticommutation relations appropriate to the signature: $\gamma_0^2=I_4$, $\gamma_k^2=-I_4$ for $k=1,2,3$, and $\gamma_\mu\gamma_\nu+\gamma_\nu\gamma_\mu=2\varepsilon_\mu\delta_{\mu\nu}I_4$ with $\varepsilon=(1,-1,-1,-1)$. The fifth is the product of the other four, $\gamma_5=i\gamma_0\gamma_1\gamma_2\gamma_3$, and it satisfies $\gamma_5^2=I_4$. As an operator, $\gamma_5$ **is** the chirality basis operator $\Gamma=-iL_{\mathrm{pau},e_t}R_{\mathrm{pau},\vec e_z}$ of §*The Two Chiral Halves* — one operator, written once as a basis operator and once as a matrix of the frame. The algebra element behind the basis operator is the central grading $\xi$ of the complexification, which is not a gamma matrix; the body of the article uses $\xi$ and never needs a gamma symbol.
 
-A single cell $L_aR_b$ is a pure tensor of $\mathbb{B}\otimes\mathbb{B}_{\mathrm{opp}}$, of tensor rank one; as an operator on $\Delta$ its rank is four whenever $a$ and $b$ are invertible, so the two ranks must not be confused. The pure cells form the seven-dimensional cone of rank at most one, and a general element is a sum of at most four of them. Two cells multiply by $L_aR_b\,L_cR_d=L_{ac}R_{db}$, the right factors in reverse order, and the products of the four frame cells $\gamma_0,\dots,\gamma_3$ give the usual sixteen-element Clifford basis. Every sign among them comes from $i^2=-1$ together with $\vec e_k^2=-e_t$: for instance
+A single basis operator $L_aR_b$ is a pure tensor of $\mathbb{B}\otimes\mathbb{B}_{\mathrm{opp}}$, of tensor rank one; as an operator on $\Delta$ its rank is four whenever $a$ and $b$ are invertible, so the two ranks must not be confused. The pure basis operators form the seven-dimensional cone of rank at most one, and a general element is a sum of at most four of them. Two basis operators multiply by $L_aR_b\,L_cR_d=L_{ac}R_{db}$, the right factors in reverse order, and the products of the four frame basis operators $\gamma_0,\dots,\gamma_3$ give the usual sixteen-element Clifford basis. Every sign among them comes from $i^2=-1$ together with $\vec e_k^2=-e_t$: for instance
 
 $$
 \gamma_0\gamma_1=i^2L_{\mathrm{pau},e_t\vec e_x}R_{\mathrm{pau},\vec e_y\vec e_x}=-L_{\mathrm{pau},\vec e_x}R_{\mathrm{pau},\vec e_y\vec e_x}=L_{\mathrm{pau},\vec e_x}R_{\mathrm{pau},\vec e_z},
@@ -360,11 +360,11 @@ $$
 \gamma_0\gamma_1=i^2L_{\mathrm{axf},e_t\vec e_x}R_{\mathrm{axf},\vec e_y\vec e_x}=-L_{\mathrm{axf},\vec e_x}R_{\mathrm{axf},\vec e_y\vec e_x}=L_{\mathrm{axf},\vec e_x}R_{\mathrm{axf},\vec e_z},
 $$
 
-and the same four steps give $\gamma_0\gamma_1\gamma_2\gamma_3=-i\Gamma$, that is $\gamma_5=i\gamma_0\gamma_1\gamma_2\gamma_3$ with $\Gamma$ the chirality cell.
+and the same four steps give $\gamma_0\gamma_1\gamma_2\gamma_3=-i\Gamma$, that is $\gamma_5=i\gamma_0\gamma_1\gamma_2\gamma_3$ with $\Gamma$ the chirality basis operator.
 
-The dictionary is complex-linear: the five cells are a complex frame, and their sixteen products are the sixteen-element Clifford basis. What the frame does **not** fix is the real slice. Both $\mathrm{Cl}_{1,3}(\mathbb{R})\cong M_2(\mathbb{H})$ and $\mathrm{Cl}_{3,1}(\mathbb{R})\cong M_4(\mathbb{R})$ are real forms of the same complex algebra $\mathrm{Cl}_{4}(\mathbb{C})\cong M_4(\mathbb{C})$, and they are not isomorphic to one another. The signs in the display above are the ones that make $\vec e_x,\vec e_y,\vec e_z$ spacelike bivectors, that is the signature $(1,3)$; the other choice of signs describes the other real form, and the complex frame cannot tell the two apart. The choice is made once, in [Matrix Representations: Conventions](matrix-representations-conventions.html), and it is held throughout the series.
+The dictionary is complex-linear: the five basis operators are a complex frame, and their sixteen products are the sixteen-element Clifford basis. What the frame does **not** fix is the real slice. Both $\mathrm{Cl}_{1,3}(\mathbb{R})\cong M_2(\mathbb{H})$ and $\mathrm{Cl}_{3,1}(\mathbb{R})\cong M_4(\mathbb{R})$ are real forms of the same complex algebra $\mathrm{Cl}_{4}(\mathbb{C})\cong M_4(\mathbb{C})$, and they are not isomorphic to one another. The signs in the display above are the ones that make $\vec e_x,\vec e_y,\vec e_z$ spacelike bivectors, that is the signature $(1,3)$; the other choice of signs describes the other real form, and the complex frame cannot tell the two apart. The choice is made once, in [Matrix Representations: Conventions](matrix-representations-conventions.html), and it is held throughout the series.
 
-**The display.** Every array printed in this section is given twice: in the Peirce display first, labelled $\mathrm{pau}$, whose arrays are the ones the literature prints, and in the axis-free display after it, labelled $\mathrm{axf}$, which is the display of the body and of the corpus. The two are carried into one another by $L_{\mathrm{axf},e_\mu}=C_{\Pi}L_{\mathrm{pau},e_\mu}C_{\Pi}^{-1}$, and a conjugation by $C_{\Pi}$ changes no product, no anticommutator, no trace and no determinant, so every identity of the section holds in both. An array is a statement about one display; a cell named in the running text keeps the Peirce label, and its axis-free array is the conjugate. The label names the array and not the operator.
+**The display.** Every array printed in this section is given twice: in the Peirce display first, labelled $\mathrm{pau}$, whose arrays are the ones the literature prints, and in the axis-free display after it, labelled $\mathrm{axf}$, which is the display of the body and of the corpus. The two are carried into one another by $L_{\mathrm{axf},e_\mu}=C_{\Pi}L_{\mathrm{pau},e_\mu}C_{\Pi}^{-1}$, and a conjugation by $C_{\Pi}$ changes no product, no anticommutator, no trace and no determinant, so every identity of the section holds in both. An array is a statement about one display; a basis operator named in the running text keeps the Peirce label, and its axis-free array is the conjugate. The label names the array and not the operator.
 
 ## Summary
 
@@ -389,7 +389,7 @@ What the article does **not** supply is a dynamics. It supplies the carrier, the
 | $i$ | Scalar imaginary, $i^2=-1$ |
 | $\bar{\tilde{Q}}$, $\tilde{Q}^{\natural}$, $\tilde{Q}^{*}$ | Coefficientwise complex, quaternion, and Hermitian conjugates; $\tilde{Q}^{*}=\overline{\tilde{Q}^{\natural}}$ |
 | $\mathbb{B}_{\Phi}$, $\mathbb{B}_{\Psi}$ | Anti-Hermitian and Hermitian sectors; material and informational |
-| $\tilde X_L,\tilde X_R$ | The two values of the subscript; $L$ is the minus value; a product takes the value of its right factor, and a left multiplication keeps it |
+| $\tilde X_L,\tilde X_R$ | The two parts named by the subscript; a product takes the value of its right factor, and a left multiplication keeps the value |
 | $S$, $\bar S$ | The defining module $(\tfrac12,0)$ and its conjugate $(0,\tfrac12)$ |
 | $\tilde U_{\mathrm{lor}}$ | Element of norm one, $SL(2,\mathbb{C})$ |
 | $\tilde X\mapsto\tilde U_{\mathrm{lor}}\tilde X$ | The one-sided action on the module |

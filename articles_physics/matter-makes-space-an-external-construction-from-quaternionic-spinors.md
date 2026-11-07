@@ -451,7 +451,7 @@ What the source does supply is a reminder, in a form the corpus's own articles s
 | $G_\mu$ | the source's four generators of Eq. (1), read as the actions displayed in the text: $G_0:\tilde{Ξ}_{\mathrm{sp}}\mapsto i\vec e_x\tilde{Ξ}_{\mathrm{sp}}$, $G_x:\tilde{Ξ}_{\mathrm{sp}}\mapsto-\vec e_y\tilde{Ξ}_{\mathrm{sp}}\vec e_x$, $G_y:\tilde{Ξ}_{\mathrm{sp}}\mapsto\vec e_y\tilde{Ξ}_{\mathrm{sp}}\vec e_y$, $G_z:\tilde{Ξ}_{\mathrm{sp}}\mapsto-\vec e_y\tilde{Ξ}_{\mathrm{sp}}\vec e_z$ |
 | $C_{\mu\nu}$ | the commutator $\tfrac12[C_\mu,C_\nu]$ of two frame actions, the slot of the source's $\tfrac12[q_\mu,q_\nu]$: the product $C_\mu C_\nu$ for distinct indices, left multiplication by the bivector for two spatial indices, two-sided for one time and one spatial index |
 | $\tilde\nabla$, $\tilde\nabla^{\natural}$, $\Box$ | the corpus's gradient, conjugate gradient and d'Alembertian, defined in the introduction: the only derivative operators this article uses of its own, all acting from the left |
-| $D_\mu$ | the source's covariant derivative, a derivative and not an action: it carries the spin connection and is never a cell |
+| $D_\mu$ | the source's covariant derivative, a derivative and not an action: it carries the spin connection and is never a basis operator |
 | $\operatorname{Alt}$ | the normalised antisymmetrisation, the average over the six permutations with signs |
 | $\varepsilon_\mu$ | the sign vector $\varepsilon_t=+1$, $\varepsilon_k=-1$, which writes a raised index low |
 | $\kappa=8\pi G$ | the source's single coupling, used both as $\kappa$ and as $\kappa^{-1}$ |

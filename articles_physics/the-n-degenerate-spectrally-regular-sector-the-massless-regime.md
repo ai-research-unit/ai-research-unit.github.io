@@ -2,7 +2,7 @@
 
 ## Introduction
 
-The cell $\Sigma_{01}$ is the set of elements with vanishing norm and non-vanishing vector square: $N=0$ and $B^2\neq0$. The element is a zero divisor, and it has two distinct eigenvalues, one of which is zero. It is a non-zero multiple of a primitive idempotent,
+The region $\Sigma_{01}$ is the set of elements with vanishing norm and non-vanishing vector square: $N=0$ and $B^2\neq0$. The element is a zero divisor, and it has two distinct eigenvalues, one of which is zero. It is a non-zero multiple of a primitive idempotent,
 
 $$
 \tilde Q=\kappa\,\tilde\Pi,
@@ -14,13 +14,13 @@ $$
 
 and its spectrum is $\{\kappa,0\}$. On the material slice it is the light cone minus the apex: a massless momentum, with one light-cone eigenvalue zero and the other $2iE/c$.
 
-The physical content is the **light ray**: a rank-one element, a direction and a scale, one non-zero light-cone mode and one frozen mode, no inverse and no generator. The article reads the cell, the idempotent, the zero divisor, the spectrum and the boundary. It proves nothing; the sector theorems are those of *The N-Degenerate, Spectrally Regular Sector*, and the cone is that of *The Zero-Divisor Cone and the Massless Spectrum*.
+The physical content is the **light ray**: a rank-one element, a direction and a scale, one non-zero light-cone mode and one frozen mode, no inverse and no generator. The article reads the region, the idempotent, the zero divisor, the spectrum and the boundary. It proves nothing; the sector theorems are those of *The N-Degenerate, Spectrally Regular Sector*, and the cone is that of *The Zero-Divisor Cone and the Massless Spectrum*.
 
 ## The Results It Uses
 
 | Mathematical Content | Source Mathematical Article |
 | --- | --- |
-| The definition, the five descriptions and the geometry of the cell | [The N-Degenerate, Spectrally Regular Sector](../articles_maths/the-n-degenerate-spectrally-regular-sector.html) |
+| The definition, the five descriptions and the geometry of the region | [The N-Degenerate, Spectrally Regular Sector](../articles_maths/the-n-degenerate-spectrally-regular-sector.html) |
 | The zero-divisor cone, its rulings and the massless limit | [The Zero-Divisor Cone and the Massless Spectrum](the-zero-divisor-cone-and-the-massless-spectrum.html) |
 | The primitive idempotents and the minimal left ideals | [The Polarized Module of the Biquaternion Algebra](../articles_maths/the-polarized-module-of-the-biquaternion-algebra.html) |
 | The spectrum and the two-term writing | [The Biquaternion Eigenvalue Decomposition](../articles_maths/the-biquaternion-eigenvalue-decomposition.html) |
@@ -29,31 +29,30 @@ The physical content is the **light ray**: a rank-one element, a direction and a
 | The spectral reading of a four-momentum | [The Spectral Reading of a Four-Vector](the-spectral-reading-of-a-four-vector.html) |
 | The indefinite form and the cone | [The Krein Form and the Indefinite Structure](the-krein-form-and-the-indefinite-structure.html) |
 
-## The Cell
-
-The cell is
+## The Region
+The region is
 
 $$
 \Sigma_{01}=\{N=0,\ B^2\neq0\}
 =\{Q_t^2+B^2=0,\ B^2\neq0\}.
 $$
 
-On the null cone $N=0$ one has $Q_t^2=-B^2$, so $B^2\neq0$ is equivalent to $Q_t\neq0$. The cell is the null cone minus the doubly degenerate cone:
+On the null cone $N=0$ one has $Q_t^2=-B^2$, so $B^2\neq0$ is equivalent to $Q_t\neq0$. The region is the null cone minus the doubly degenerate cone:
 
 $$
 \Sigma_{01}=\mathcal N\setminus\mathcal S
 =\{\kappa\tilde\Pi\ :\ \kappa\in\mathbb{C}^\times,\ \tilde\Pi^2=\tilde\Pi,\ \tilde\Pi\neq0,e_t\}.
 $$
 
-Every element of the cell is a non-zero complex multiple of a primitive idempotent. The scalar part is $\kappa/2$, and the idempotent is recovered as
+Every element of the region is a non-zero complex multiple of a primitive idempotent. The scalar part is $\kappa/2$, and the idempotent is recovered as
 
 $$
 \tilde\Pi=\frac{\tilde Q}{2Q_t}=\frac{\tilde Q}{\kappa}.
 $$
 
-The cell is of real dimension six. It is the null cone with the apex and the nilpotent directions removed. Its closure is the full null cone, and the removed set is the cell $\Sigma_{00}$.
+The region is of real dimension six. It is the null cone with the apex and the nilpotent directions removed. Its closure is the full null cone, and the removed set is the region $\Sigma_{00}$.
 
-An element of the cell has the characteristic polynomial
+An element of the region has the characteristic polynomial
 
 $$
 p_{\tilde Q}(X)=X(X-\kappa),
@@ -63,7 +62,7 @@ p_{\tilde Q}(X)=X(X-\kappa),
 \lambda_-=0,
 $$
 
-with $\kappa=2Q_t\neq0$. The two eigenvalues are distinct, so the cell is spectrally regular; one of them is zero, so the element is not invertible. The spectral idempotents are
+with $\kappa=2Q_t\neq0$. The two eigenvalues are distinct, so the region is spectrally regular; one of them is zero, so the element is not invertible. The spectral idempotents are
 
 $$
 e_+=\tilde\Pi=\frac{\tilde Q}{\kappa},
@@ -81,7 +80,7 @@ $$
 \tilde Q=\kappa\,\tilde\Pi+0\,e_-,
 $$
 
-and the idempotent $e_-$ is present and non-trivial. This is the only cell in which the spectrum is regular and one coefficient is zero.
+and the idempotent $e_-$ is present and non-trivial. This is the only region in which the spectrum is regular and one coefficient is zero.
 
 ## The Light Ray
 
@@ -175,13 +174,13 @@ $$
 
 with the other coefficient zero.
 
-The massless limit of the Doppler pair is a limit of the eigenvalues, not a failure of the decomposition: $\lambda_-\to0$ and $\lambda_+\to2iE/c$. The cell is the boundary of the two-mode cell at $N=0$, and the limit is continuous in the element.
+The massless limit of the Doppler pair is a limit of the eigenvalues, not a failure of the decomposition: $\lambda_-\to0$ and $\lambda_+\to2iE/c$. The region is the boundary of the two-mode region at $N=0$, and the limit is continuous in the element.
 
 On the material slice the idempotent is Hermitian: $\tilde\Pi=\tfrac12(e_t-i\vec u_p)$ satisfies $\tilde\Pi^*=\tilde\Pi$, and it is rank one and trace one. It is a pure boundary state of the informational sector: a rank-one Hermitian density matrix of zero norm. The element $\tilde P_{\Phi}=2iE/c\,\tilde\Pi$ is anti-Hermitian, so the momentum is not a state; the state is the idempotent, and the momentum is an imaginary multiple of it.
 
 ## The Zero Divisor
 
-The cell is the zero-divisor cone with its vertex and its nilpotent directions removed. The vanishing of the norm is the vanishing of the product with the conjugate:
+The region is the zero-divisor cone with its vertex and its nilpotent directions removed. The vanishing of the norm is the vanishing of the product with the conjugate:
 
 $$
 \tilde Q\tilde Q^{\natural}=N e_t=0.
@@ -199,11 +198,11 @@ while its right annihilator is $S_-=\mathbb{C}\vec\Upsilon_-\oplus\mathbb{C}e_-$
 
 The reading is information loss. The left multiplication maps the four-dimensional algebra onto the right ideal $\tilde\Pi\mathbb{B}$, spanned by $\tilde\Pi$ and $\vec\Upsilon_-$, and annihilates the plane spanned by $\vec\Upsilon_+$ and $e_-$. The kernel is not a defect of the description; it is the structure of the ray. A light ray has a direction and a scale, and it carries no longitudinal mode.
 
-The cone is ruled by the null lines $\mathbb{C}\tilde Q$. Each line is a ray; the idempotent is the normalised representative. The null lines are the fibers of the projection to the complex projective null quadric, and the scale is the coordinate along the fiber. The cell is the total space of a $\mathbb{C}^\times$-bundle over the complement of the nilpotent conic ($Q_t=0$) in that quadric; on the real material slice the base is the celestial sphere.
+The cone is ruled by the null lines $\mathbb{C}\tilde Q$. Each line is a ray; the idempotent is the normalised representative. The null lines are the fibers of the projection to the complex projective null quadric, and the scale is the coordinate along the fiber. The region is the total space of a $\mathbb{C}^\times$-bundle over the complement of the nilpotent conic ($Q_t=0$) in that quadric; on the real material slice the base is the celestial sphere.
 
 ## Products and the Boundary
 
-The cell is not closed under products. The product of two elements of the cell is null,
+The region is not closed under products. The product of two elements of the region is null,
 
 $$
 \Sigma_{01}\cdot\Sigma_{01}\subseteq\mathcal N=\Sigma_{01}\cup\Sigma_{00},
@@ -211,32 +210,32 @@ $$
 
 and all three outcomes occur. The product of two scaled idempotents can be a scaled idempotent (when the product is a non-zero idempotent), zero (when the idempotents are orthogonal), or a non-zero nilpotent (when the product squares to zero but does not vanish). The product is never a unit.
 
-The boundary of the cell is the doubly degenerate cell $\Sigma_{00}$: the apex and the nilpotent directions. The cell lies on the boundary of the unit group at $N=0$: a path in $\Sigma_{11}$ that reaches $N=0$ lands here, unless it also reaches $B=0$, in which case it lands in $\Sigma_{00}$.
+The boundary of the region is the doubly degenerate region $\Sigma_{00}$: the apex and the nilpotent directions. The region lies on the boundary of the unit group at $N=0$: a path in $\Sigma_{11}$ that reaches $N=0$ lands here, unless it also reaches $B=0$, in which case it lands in $\Sigma_{00}$.
 
-The cell is the null cone minus its vertex and its nilpotent directions. Its closure is the full cone; the removed set is the doubly degenerate cell.
+The region is the null cone minus its vertex and its nilpotent directions. Its closure is the full cone; the removed set is the doubly degenerate region.
 
 ## Physical Interpretations
 
-- **The cell is a light ray.** $N=0$ and $B\neq0$: a massless momentum, one non-zero light-cone frequency and one zero frequency, a direction and an energy.
+- **The region is a light ray.** $N=0$ and $B\neq0$: a massless momentum, one non-zero light-cone frequency and one zero frequency, a direction and an energy.
 - **The element is a scaled idempotent.** The idempotent is the direction, the coefficient is the complex scale, and the ray is the projective class of the element.
 - **The zero divisor is information loss.** The left multiplication annihilates a two-dimensional right ideal and maps onto a two-dimensional right ideal. The longitudinal mode is absent.
 - **The spectrum has one zero.** The two-term writing survives with a vanishing second coefficient; the massless limit is a limit of eigenvalues, not a breakdown of the spectral decomposition.
 - **There is no inverse and no generator.** The element is not invertible, and the exponential is invertible, so no logarithm exists. The ray is not a reversible process.
 - **The idempotent is the pure boundary state.** On the material slice it is Hermitian, rank one and trace one; the momentum is an imaginary multiple of it, so the element is anti-Hermitian while the state is Hermitian. The physical reading is a ray with an energy; the state is the idempotent.
-- **The cone is ruled.** The rays are the null lines; the complex projective null quadric is the base, the real celestial sphere is its material slice, and the scale is the fiber. The cell is the generic part of the cone.
-- **The cell lies on the boundary of the unit group.** A massive element reaching the light cone lands here unless it also reaches the nilpotent directions; a massless element is the limit of a moving massive one.
+- **The cone is ruled.** The rays are the null lines; the complex projective null quadric is the base, the real celestial sphere is its material slice, and the scale is the fiber. The region is the generic part of the cone.
+- **The region lies on the boundary of the unit group.** A massive element reaching the light cone lands here unless it also reaches the nilpotent directions; a massless element is the limit of a moving massive one.
 
 ## Limits
 
-The light-ray reading needs the material slice and the massless dispersion relation $E=\lvert\vec p\rvert c$. In the full algebra the cell is the null cone minus the spectral cone, and the names energy and momentum are readings of $Q_t$ and $B$.
+The light-ray reading needs the material slice and the massless dispersion relation $E=\lvert\vec p\rvert c$. In the full algebra the region is the null cone minus the spectral cone, and the names energy and momentum are readings of $Q_t$ and $B$.
 
 On the material slice the idempotent is a Hermitian pure state, while the element is an imaginary multiple of it and is not itself a state. Over the complex algebra a general primitive idempotent need not be Hermitian, and then it is a null flag rather than a physical state.
 
 The zero divisor is not a division by zero in a physical theory. It is a non-invertible element; the algebra supplies the kernel and the image, not a physical singularity.
 
-No dynamics is supplied. The cell says what a massless element is at an instant; it does not say how it propagates, and it does not supply a wave equation.
+No dynamics is supplied. The region says what a massless element is at an instant; it does not say how it propagates, and it does not supply a wave equation.
 
-The cell is not a particle count. One zero eigenvalue is one frozen mode, not an empty state and not a second particle.
+The region is not a particle count. One zero eigenvalue is one frozen mode, not an empty state and not a second particle.
 
 ## Summary
 
@@ -247,14 +246,14 @@ The cell is not a particle count. One zero eigenvalue is one frozen mode, not an
 - The element is not invertible, has no logarithm and no generator; the process is not reversible.
 - On the material slice it is a massless momentum: one light-cone eigenvalue zero, the other $2iE/c$; the massless limit of the Doppler pair.
 - On the real slice the idempotent is a Hermitian pure boundary state; the momentum is an imaginary multiple of it, and a general complex idempotent is a null flag.
-- The cone is ruled by the null lines; the cell is the generic part, with the doubly degenerate cell as boundary.
-- The cell supplies no dynamics, no wave equation and no particle count.
+- The cone is ruled by the null lines; the region is the generic part, with the doubly degenerate region as boundary.
+- The region supplies no dynamics, no wave equation and no particle count.
 
 ## Summary of Notation
 
 | symbol | meaning |
 | --- | --- |
-| $\Sigma_{01}$ | the cell $N=0$, $B^2\neq0$ |
+| $\Sigma_{01}$ | the region $N=0$, $B^2\neq0$ |
 | $\tilde Q=\kappa\tilde\Pi$ | the scaled idempotent |
 | $\kappa=2Q_t$ | the non-zero eigenvalue, the complex scale |
 | $\lambda_+=\kappa,\ \lambda_-=0$ | the spectrum |
@@ -268,9 +267,9 @@ The cell is not a particle count. One zero eigenvalue is one frozen mode, not an
 
 ## Further Reading
 
-- [The Four Regimes of an Element: Mass and Motion](the-four-regimes-of-an-element-mass-and-motion.html), for the partition and the other three cells.
+- [The Four Regimes of an Element: Mass and Motion](the-four-regimes-of-an-element-mass-and-motion.html), for the partition and the other three regions.
 - [The Zero-Divisor Cone and the Massless Spectrum](the-zero-divisor-cone-and-the-massless-spectrum.html), for the cone, its rulings and the massless limit.
 - [The Spectral Reading of a Four-Vector](the-spectral-reading-of-a-four-vector.html), for the massless limit of the Doppler pair.
-- [The N-Degenerate, Spectrally Degenerate Sector: The Vacuum and the Nilpotent Ladder](the-n-degenerate-spectrally-degenerate-sector-the-vacuum-and-the-nilpotent-ladder.html), for the boundary of the cell.
-- [The N-Regular, Spectrally Regular Sector: Mass in Motion](the-n-regular-spectrally-regular-sector-mass-in-motion.html), for the cell whose boundary this is.
+- [The N-Degenerate, Spectrally Degenerate Sector: The Vacuum and the Nilpotent Ladder](the-n-degenerate-spectrally-degenerate-sector-the-vacuum-and-the-nilpotent-ladder.html), for the boundary of the region.
+- [The N-Regular, Spectrally Regular Sector: Mass in Motion](the-n-regular-spectrally-regular-sector-mass-in-motion.html), for the region whose boundary this is.
 - [The Polarized Module of the Biquaternion Algebra](../articles_maths/the-polarized-module-of-the-biquaternion-algebra.html), for the primitive idempotents and the spinor spaces.

@@ -32,9 +32,9 @@ $$
 \nu(t)=x,\quad\nu(k)=y .
 $$
 
-They are a frame, not the algebra. They are a choice of four actions, made once here and used throughout, and the choice is not a default of the notation. The three spatial units have three different jobs: $\vec e_x$ is the right multiplier of the temporal generator, $\vec e_y$ the common right multiplier of the three spatial ones, and $\vec e_z$ appears in the chirality cell and in the current's last factor, and nowhere else in the frame. Each generator carries a spatial unit on the right, so each of the four exchanges the value of an element.
+They are a frame, not the algebra. They are a choice of four actions, made once here and used throughout, and the choice is not a default of the notation. The three spatial units have three different jobs: $\vec e_x$ is the right multiplier of the temporal generator, $\vec e_y$ the common right multiplier of the three spatial ones, and $\vec e_z$ appears in the chirality basis operator and in the current's last factor, and nowhere else in the frame. Each generator carries a spatial unit on the right, so each of the four exchanges the value of an element.
 
-**The axis is a property of the basis, and it is stated once.** An action is diagonal in a basis when it carries each basis element into a multiple of itself. In the coefficient basis the diagonal actions of the sixteen cells are exactly four, and they are the four squares, with the eigenvalues
+**The axis is a property of the basis, and it is stated once.** An action is diagonal in a basis when it carries each basis element into a multiple of itself. In the coefficient basis the diagonal actions of the sixteen basis operators are exactly four, and they are the four squares, with the eigenvalues
 
 | action | $e_t$ | $\vec e_x$ | $\vec e_y$ | $\vec e_z$ |
 |---|---|---|---|---|
@@ -45,7 +45,7 @@ They are a frame, not the algebra. They are a choice of four actions, made once 
 
 The four are unchanged as a set by a permutation of the three units, so the coefficient basis says nothing about any spatial direction: one row carries four pluses and each of the other three carries two minuses, and no row is singled out. The frame above does name three directions in three jobs, and that is the price of using it; it is paid openly, and no sentence of this article lets one of the three pass as though the algebra preferred it.
 
-**The chirality cell.** The cell that reads the value is the right multiplication by $-i\vec e_z$. It is named here because the two values are the subject of the axial vertex below, and it is used nowhere else.
+**The chirality basis operator.** The basis operator that reads the value is the right multiplication by $-i\vec e_z$. It is named here because the two values are the subject of the axial vertex below, and it is used nowhere else.
 
 ### The Pairing
 
@@ -168,7 +168,7 @@ $$
 
 which is the identity as stated. The spin term is the divergence of a bilinear and not the bilinear times a divergence, and that is the content of the last step: the two bivector contributions add into one derivative.
 
-The algebra was checked numerically, on at most a hundred elements. The sixteen cells of the coefficient basis are signed permutations of the four coefficients, each of determinant $1$, of Euclidean norm two and mutually orthogonal, exactly; the four diagonal actions are the four squares, with the eigenvalues tabled above, exactly; the product of two generators and the two mixed products of the proof hold with residual zero. The field equation holds to $10^{-16}$ and the adjoint to $5\times10^{-16}$, on a three-mode superposition of on-shell plane waves. The derived form of the current is exact; the position-space identity holds to $7\times10^{-17}$ in all four components; the momentum-space form to $8\times10^{-16}$ over twenty-five random on-shell pairs, its parent identity to $2\times10^{-15}$ and its axial companion to $7\times10^{-16}$. The four components of the current are real on every solution, and the temporal one is positive.
+The algebra was checked numerically, on at most a hundred elements. The sixteen basis operators of the coefficient basis are signed permutations of the four coefficients, each of determinant $1$, of Euclidean norm two and mutually orthogonal, exactly; the four diagonal actions are the four squares, with the eigenvalues tabled above, exactly; the product of two generators and the two mixed products of the proof hold with residual zero. The field equation holds to $10^{-16}$ and the adjoint to $5\times10^{-16}$, on a three-mode superposition of on-shell plane waves. The derived form of the current is exact; the position-space identity holds to $7\times10^{-17}$ in all four components; the momentum-space form to $8\times10^{-16}$ over twenty-five random on-shell pairs, its parent identity to $2\times10^{-15}$ and its axial companion to $7\times10^{-16}$. The four components of the current are real on every solution, and the temporal one is positive.
 
 ### A note on the total divergence
 
@@ -242,16 +242,16 @@ Each product is a scalar plus a bivector, and the scalar part is the momentum co
 
 ### The axial companion
 
-The **axial companion** takes the product of a generator with the chirality cell: the action $\tilde Q\mapsto ie_\mu\tilde Q\vec e_{\nu(\mu)}$ followed by $\tilde Q\mapsto-i\tilde Q\vec e_z$. Two features are worth stating before the algebra. First, it is a **real action**: the two imaginary units multiply to $+1$, so
+The **axial companion** takes the product of a generator with the chirality basis operator: the action $\tilde Q\mapsto ie_\mu\tilde Q\vec e_{\nu(\mu)}$ followed by $\tilde Q\mapsto-i\tilde Q\vec e_z$. Two features are worth stating before the algebra. First, it is a **real action**: the two imaginary units multiply to $+1$, so
 
 $$
 \big(ie_\mu\,\cdot\,\vec e_{\nu(\mu)}\big)\big(-i\,\cdot\,\vec e_z\big)
 =e_\mu\,\cdot\,\vec e_z\vec e_{\nu(\mu)},
 $$
 
-and the axial vertex carries no imaginary unit at all. Second, each generator exchanges the value while a product of two generators keeps it, because the two units $\vec e_x$ and $\vec e_y$ exchange the value and their products are $\pm e_t$ and $\pm\vec e_z$, which keep it. So the chirality cell reverses the sign of the weight part of a product and leaves the bivector part alone. That reversal is what exchanges the two slots.
+and the axial vertex carries no imaginary unit at all. Second, each generator exchanges the value while a product of two generators keeps it, because the two units $\vec e_x$ and $\vec e_y$ exchange the value and their products are $\pm e_t$ and $\pm\vec e_z$, which keep it. So the chirality basis operator reverses the sign of the weight part of a product and leaves the bivector part alone. That reversal is what exchanges the two slots.
 
-With both products expanded as above and the chirality cell moved to the front of each, the sum divided by $2m$ gives
+With both products expanded as above and the chirality basis operator moved to the front of each, the sum divided by $2m$ gives
 
 $$
 \bar w_2\,e_\mu\,w\,\vec e_z\vec e_{\nu(\mu)}
@@ -366,7 +366,7 @@ The comparison map of *Matrix Representations Conventions* reads the eight real 
 
 ### What the framework does not supply
 
-The current is not a bilinear in the field and its conjugate alone. Written as a pairing it is a scalar part of three factors, $\tilde{Ξ}_{\mathrm{sp}}^*$, the generator, and the frame's unit $c_\mu$; and $c_\mu$ is not determined by the field. For the temporal component the unit cancels and the density is a scalar part of two factors; for the three spatial components it does not, and the unit $\vec e_z$ stands in the product. The older spelling puts the same datum in the adjoint, in a right multiplication that the field alone does not supply; the derived form of this article puts it in the last factor. Read from the operator side, as in the companion article on minimal coupling, the datum is a multiplication that the adjoint carries and the field does not. Either way the current needs one datum of the frame that the field does not carry, and that is the sense in which the framework does not derive this identity from a product inside the algebra. It transcribes the identity, names its two structures in the algebra's own sectors, and verifies the algebra of the split. The same caveat applies to the axial companion, which carries the chirality cell in addition to the frame's units.
+The current is not a bilinear in the field and its conjugate alone. Written as a pairing it is a scalar part of three factors, $\tilde{Ξ}_{\mathrm{sp}}^*$, the generator, and the frame's unit $c_\mu$; and $c_\mu$ is not determined by the field. For the temporal component the unit cancels and the density is a scalar part of two factors; for the three spatial components it does not, and the unit $\vec e_z$ stands in the product. The older spelling puts the same datum in the adjoint, in a right multiplication that the field alone does not supply; the derived form of this article puts it in the last factor. Read from the operator side, as in the companion article on minimal coupling, the datum is a multiplication that the adjoint carries and the field does not. Either way the current needs one datum of the frame that the field does not carry, and that is the sense in which the framework does not derive this identity from a product inside the algebra. It transcribes the identity, names its two structures in the algebra's own sectors, and verifies the algebra of the split. The same caveat applies to the axial companion, which carries the chirality basis operator in addition to the frame's units.
 
 What the algebra does supply is the location of the two terms: the convection term is the central direction, and the spin term is the bivector direction, with its magnetic part in the informational sector. That placement is a real bookkeeping statement, and it is the framework's contribution to this identity.
 
@@ -388,7 +388,7 @@ What the algebra does supply is the location of the two terms: the convection te
 
 The Pauli and gamma formulation is legacy: the reasons are explained in the article *Why AXF Matrices instead of Pauli and Gamma Matrices*. The generators carry no frame label: $\gamma_\mu$ is one set of matrices, $\gamma_0^2=I_4$ and $\gamma_k^2=-I_4$. The frame belongs to the coordinate, not to the array.
 
-This section, and only this section, names the generator cells and the chirality cell by their standard Greek letters. Nothing above depends on the names: they are a change of typography for a reader who knows the Clifford notation, and every formula of the article is stated in the cell spelling.
+This section, and only this section, names the generator basis operators and the chirality basis operator by their standard Greek letters. Nothing above depends on the names: they are a change of typography for a reader who knows the Clifford notation, and every formula of the article is stated in the basis operator spelling.
 
 The gammas are a frame of $\mathrm{Cl}_{1,3}(\mathbb{C})=M_4(\mathbb{C})$, not a different algebra. Here $L_a$ and $R_b$ are the left and right multiplications, $L_a\tilde{Ξ}_{\mathrm{sp}}=a\tilde{Ξ}_{\mathrm{sp}}$ and $R_b\tilde{Ξ}_{\mathrm{sp}}=\tilde{Ξ}_{\mathrm{sp}} b$, and $c(M)$ is the coefficient matrix of $M$ in the basis of the sixteen products.
 
@@ -410,15 +410,15 @@ $$
 \gamma_5=-iL_{\mathrm{axf},e_t}R_{\mathrm{axf},\vec e_z} .
 $$
 
-These are the cells of the conventions under their usual names: $\gamma_\mu$ is $iL_{\mathrm{pau},e_\mu}R_{\delta_\mu}$ and $\gamma_5$ is the chirality cell, so the dictionary between the two spellings is a subscript — $\delta_t=\vec e_x$ and $\delta_k=\vec e_y$ — together with a factor of $i$. In these names the relations read $\{\gamma_\mu,\gamma_\nu\}=2\varepsilon_\mu\delta_{\mu\nu}$, $\gamma_\mu\gamma_\nu=g_{\mu\nu}-i\sigma_{\mu\nu}$, $\{\gamma_\mu,\gamma_5\}=0$, the equation $i\sum_\mu\varepsilon_\mu\gamma_\mu\nabla_\mu\tilde{Ξ}_{\mathrm{sp}}=k_m\tilde{Ξ}_{\mathrm{sp}}$, and the current $\tilde{Ξ}_{\mathrm{sp}}^{\dagger}iR_{\mathrm{axf},\vec e_x}\gamma_\mu\tilde{Ξ}_{\mathrm{sp}}$ with $\tilde{Ξ}_{\mathrm{sp}}^{\dagger}\gamma_0$. The mixed products of the proof are $\gamma_\mu L_{\mathrm{pau},e_\nu}R_{\delta_\nu}=-ig_{\mu\nu}-\sigma_{\mu\nu}$ and $L_{\mathrm{pau},e_\nu}R_{\delta_\nu}\gamma_\mu=-ig_{\mu\nu}+\sigma_{\mu\nu}$, and the axial vertex is $\gamma_\mu\gamma_5$, the product that the collapse $i\cdot(-i)=1$ writes as the real cell $L_{\mathrm{pau},e_\mu}R_{\delta_\mu}R_{\mathrm{pau},\vec e_z}$.
+These are the basis operators of the conventions under their usual names: $\gamma_\mu$ is $iL_{\mathrm{pau},e_\mu}R_{\delta_\mu}$ and $\gamma_5$ is the chirality basis operator, so the dictionary between the two spellings is a subscript — $\delta_t=\vec e_x$ and $\delta_k=\vec e_y$ — together with a factor of $i$. In these names the relations read $\{\gamma_\mu,\gamma_\nu\}=2\varepsilon_\mu\delta_{\mu\nu}$, $\gamma_\mu\gamma_\nu=g_{\mu\nu}-i\sigma_{\mu\nu}$, $\{\gamma_\mu,\gamma_5\}=0$, the equation $i\sum_\mu\varepsilon_\mu\gamma_\mu\nabla_\mu\tilde{Ξ}_{\mathrm{sp}}=k_m\tilde{Ξ}_{\mathrm{sp}}$, and the current $\tilde{Ξ}_{\mathrm{sp}}^{\dagger}iR_{\mathrm{axf},\vec e_x}\gamma_\mu\tilde{Ξ}_{\mathrm{sp}}$ with $\tilde{Ξ}_{\mathrm{sp}}^{\dagger}\gamma_0$. The mixed products of the proof are $\gamma_\mu L_{\mathrm{pau},e_\nu}R_{\delta_\nu}=-ig_{\mu\nu}-\sigma_{\mu\nu}$ and $L_{\mathrm{pau},e_\nu}R_{\delta_\nu}\gamma_\mu=-ig_{\mu\nu}+\sigma_{\mu\nu}$, and the axial vertex is $\gamma_\mu\gamma_5$, the product that the collapse $i\cdot(-i)=1$ writes as the real basis operator $L_{\mathrm{pau},e_\mu}R_{\delta_\mu}R_{\mathrm{pau},\vec e_z}$.
 
 A single product is a pure tensor; the products form the seven-dimensional cone $\operatorname{rank}c(M)\le1$, and a general element is a sum of at most four, with $\ell(M)=\operatorname{rank}c(M)$.
 
-The reference-frame cell of the chirality operator is $\gamma_5$; the central grading $\chi=i\tilde{Ζ}_{\mathrm{ad}}$ — the difference of the two central idempotents of the complexified algebra, so $\chi^2=e_t$ — is a different object, represented by $\gamma_5$ on the Dirac module.
+The reference-frame basis operator of the chirality operator is $\gamma_5$; the central grading $\chi=i\tilde{Ζ}_{\mathrm{ad}}$ — the difference of the two central idempotents of the complexified algebra, so $\chi^2=e_t$ — is a different object, represented by $\gamma_5$ on the Dirac module.
 
-The dictionary is complex-linear; over $\mathbb{R}$ the products span $\mathrm{Cl}_{1,3}(\mathbb{R})\cong M_2(\mathbb{H})$ and the cells span $\mathrm{Cl}_{3,1}(\mathbb{R})\cong M_4(\mathbb{R})$.
+The dictionary is complex-linear; over $\mathbb{R}$ the products span $\mathrm{Cl}_{1,3}(\mathbb{R})\cong M_2(\mathbb{H})$ and the basis operators span $\mathrm{Cl}_{3,1}(\mathbb{R})\cong M_4(\mathbb{R})$.
 
-**The display.** Every array printed in this section is given twice: in the Peirce display first, labelled $\mathrm{pau}$, whose arrays are the ones the literature prints, and in the axis-free display after it, labelled $\mathrm{axf}$, which is the display of the body and of the corpus. The two are carried into one another by $L_{\mathrm{axf},e_\mu}=C_{\Pi}L_{\mathrm{pau},e_\mu}C_{\Pi}^{-1}$, and a conjugation by $C_{\Pi}$ changes no product, no anticommutator, no trace and no determinant, so every identity of the section holds in both. An array is a statement about one display; a cell named in the running text keeps the Peirce label, and its axis-free array is the conjugate. The label names the array and not the operator.
+**The display.** Every array printed in this section is given twice: in the Peirce display first, labelled $\mathrm{pau}$, whose arrays are the ones the literature prints, and in the axis-free display after it, labelled $\mathrm{axf}$, which is the display of the body and of the corpus. The two are carried into one another by $L_{\mathrm{axf},e_\mu}=C_{\Pi}L_{\mathrm{pau},e_\mu}C_{\Pi}^{-1}$, and a conjugation by $C_{\Pi}$ changes no product, no anticommutator, no trace and no determinant, so every identity of the section holds in both. An array is a statement about one display; a basis operator named in the running text keeps the Peirce label, and its axis-free array is the conjugate. The label names the array and not the operator.
 
 ## Summary
 
@@ -450,7 +450,7 @@ The biquaternion interpretation is a naming of the two structures: the split of 
 | $e_\mu$, $\varepsilon_\mu$, $\delta_{\mu\nu}$ | The four units, $e_t$ and $\vec e_k$; the plain weight of the conventions, and the Kronecker delta |
 | $\vec e_{\nu(\mu)}$ | The frame's right multipliers, with $\nu(t)=x$ and $\nu(k)=y$ |
 | $ie_\mu\,\cdot\,\vec e_{\nu(\mu)}$, the action $\tilde Q\mapsto ie_\mu\tilde Q\vec e_{\nu(\mu)}$ | The four generators of the frame; each exchanges the value |
-| $-i\,\cdot\,\vec e_z$, the action $\tilde Q\mapsto-i\tilde Q\vec e_z$ | The chirality cell, named once; it keeps the value |
+| $-i\,\cdot\,\vec e_z$, the action $\tilde Q\mapsto-i\tilde Q\vec e_z$ | The chirality basis operator, named once; it keeps the value |
 | $\bar{\tilde{Ξ}}_{\mathrm{sp}}\,X=\operatorname{Sc}(\tilde{Ξ}_{\mathrm{sp}}^*iX\vec e_x)$ | The pairing: a scalar part of a product of elements; a derived form of this article |
 | $c_\mu$ | The frame's unit in the current, $c_t=e_t$ and $c_k=\vec e_z$ |
 | $\Sigma_{\mu\nu}$ | The spin generator, $\frac{i}{4}$ times the commutator of the two generators, antisymmetric; $i$ times the Lorentz generator of the conventions, which is half the bivector of the pair |

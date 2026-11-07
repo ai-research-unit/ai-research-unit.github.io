@@ -227,4 +227,4 @@ Every element is semisimple, because each half lies in $\mathbb{H}$ and a direct
 - [Split-Biquaternion Spectral Theory](split-biquaternion-spectral-theory.html), for left multiplication and the quaternionic spectra.
 - [The Spectrum](the-spectrum.html), for the complex cone and the defective elements off the scalar line.
 - [The Reduced Norm and Spectral Degeneracy in the Split-Biquaternion Algebra](the-reduced-norm-and-spectral-degeneracy-in-the-split-biquaternion-algebra.html), for the comparison of the two predicates.
-- [The Three Sectors of the Split-Biquaternion Algebra](the-three-sectors-of-the-split-biquaternion-algebra.html), for the cells and their dimensions.
+- [The Three Sectors of the Split-Biquaternion Algebra](the-three-sectors-of-the-split-biquaternion-algebra.html), for the sectors and their dimensions.

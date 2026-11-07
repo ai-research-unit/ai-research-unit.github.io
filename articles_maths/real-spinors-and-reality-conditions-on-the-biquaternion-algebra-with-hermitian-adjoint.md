@@ -128,7 +128,7 @@ The Pauli and gamma formulation is legacy: the reasons are explained in the arti
 
 The gammas are the generators $\gamma_k=i\vec e_k$, $k=1,2,3$, of the $\mathrm{Cl}_{3,0}$ reading of the biquaternion algebra $\mathbb{B}\cong M_2(\mathbb{C})$: the literature frame of the same algebra, not a different algebra.
 
-On the Peirce carrier the generator is a left multiplication, a cell with a trivial right multiplier,
+On the Peirce carrier the generator is a left multiplication, a basis operator with a trivial right multiplier,
 $$
 \gamma_k=L_{i\vec e_k}R_{e_t}=iL_{\vec e_k},\qquad c(\gamma_k)=\sigma_k ,
 $$

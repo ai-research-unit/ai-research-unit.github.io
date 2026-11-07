@@ -28,7 +28,7 @@ The division between what is established and what is interpretation is stated at
 - **Interpretation.** Interpreting the coupled equation as "the Dirac field in a background electromagnetic connection" is a geometric interpretation of an algebraic construction. The algebra supplies the transformation law and the covariance; the connection/curvature picture is a consistent interpretation, as in the gauge principle article.
 - **Gaps, left visible.** No product of the field with its conjugate that the algebra offers is conserved, and which object the conserved interaction current is remains open. Whether the physical field is the one the connection multiplies from the left or its $\natural$-image is a choice the parent left open. The relative phase broken by the mass, and whether it can be gauged, is not treated here. These are stated as gaps in the sections where they arise and collected in the open questions.
 
-The article is organized as follows. The next section recalls the Dirac field, its two values of the subscript, and the phase symmetry that is to be localized. The section after that states the minimal-coupling prescription, and a subsection of it separates the two forms of the Dirac equation that the corpus carries on the algebra — the one-sided pair and the two-sided form with the conjugation in the mass term — and states why the prescription attaches to the first. The following section proves the covariance in the massless case and fixes the sign conventions. The next section treats the massive case, where the linear mass term preserves the covariance and the relative phase is what the mass breaks. A section examines the interaction current and the Maxwell source, reports the negative result on an explicit solution, and records one external identity of the same shape, due to Arbab, which is verified here and cited without being adopted as framework content. A section separates what the algebra supplies from what it only transcribes. The article then collects the open questions, and a closing section fixes the frame in which the cells are compared with the standard matrices, and that section is the only place in which those matrices appear.
+The article is organized as follows. The next section recalls the Dirac field, its two components, and the phase symmetry that is to be localized. The section after that states the minimal-coupling prescription, and a subsection of it separates the two forms of the Dirac equation that the corpus carries on the algebra — the one-sided pair and the two-sided form with the conjugation in the mass term — and states why the prescription attaches to the first. The following section proves the covariance in the massless case and fixes the sign conventions. The next section treats the massive case, where the linear mass term preserves the covariance and the relative phase is what the mass breaks. A section examines the interaction current and the Maxwell source, reports the negative result on an explicit solution, and records one external identity of the same shape, due to Arbab, which is verified here and cited without being adopted as framework content. A section separates what the algebra supplies from what it only transcribes. The article then collects the open questions, and a closing section fixes the frame in which the basis operators are compared with the standard matrices, and that section is the only place in which those matrices appear.
 
 ## The Dirac Field and Its Phase Symmetry
 
@@ -46,13 +46,13 @@ $$
 
 The first member is then identical in form to the source-free biquaternion Maxwell equation obeyed by the field-strength biquaternion $\tilde{F}$; the difference is the carrier, the Maxwell field being an element of the vector part and the Dirac field a general element.
 
-**The two values of the subscript.** The field is an element, and it is written as the sum of its two parts,
+**The two components of the pair.** The field is an element, and it is written as the sum of its two parts,
 
 $$
 \tilde{Ξ}_{\mathrm{sp}} = \tilde{Ξ}_{\mathrm{sp},L} + \tilde{Ξ}_{\mathrm{sp},R} .
 $$
 
-The subscript takes two values and no more. It belongs to the element and not to the equation: a general element, a product, a unit and a field all carry it. The two values are exactly two, and only the zero element carries both. The value is read from the chirality cell of the declared frame (*Special Element Conventions*, §*The Chirality Convention*); the article writes the value and never computes it.
+The subscript names one of two components and no more. It belongs to the element and not to the equation: a general element, a product, a unit and a field all carry it. The two components are exactly two, and only the zero element carries both values. The value is read from the chirality basis operator of the declared frame (*Special Element Conventions*, §*The Chirality Convention*); the article writes the value and never computes it.
 
 Three facts about the letters are used below. The first two are the convention's own statement, and the third follows from the first.
 
@@ -414,9 +414,9 @@ What the algebra forces and what it merely rewrites in its own notation are easi
 
 The Pauli and gamma formulation is legacy: the reasons are explained in the article *Why AXF Matrices instead of Pauli and Gamma Matrices*. The generators carry no frame label: $\gamma_\mu$ is one set of matrices, and the frame is named on the coordinate.
 
-The gammas are a frame of $\mathrm{Cl}_{1,3}(\mathbb{C})=M_4(\mathbb{C})$, not a different algebra, and they are used only in this section, as the frame in which the cells can be compared with the standard matrices.
+The gammas are a frame of $\mathrm{Cl}_{1,3}(\mathbb{C})=M_4(\mathbb{C})$, not a different algebra, and they are used only in this section, as the frame in which the basis operators can be compared with the standard matrices.
 
-Write $L_a\tilde{Ξ}_{\mathrm{sp}}=a\tilde{Ξ}_{\mathrm{sp}}$ and $R_b\tilde{Ξ}_{\mathrm{sp}}=\tilde{Ξ}_{\mathrm{sp}} b$ for the left and right multiplications, and $c(M)$ for the matrix of a cell in the basis of the sixteen products. The four gammas and $\gamma_5$ are single cells:
+Write $L_a\tilde{Ξ}_{\mathrm{sp}}=a\tilde{Ξ}_{\mathrm{sp}}$ and $R_b\tilde{Ξ}_{\mathrm{sp}}=\tilde{Ξ}_{\mathrm{sp}} b$ for the left and right multiplications, and $c(M)$ for the matrix of a basis operator in the basis of the sixteen products. The four gammas and $\gamma_5$ are single basis operators:
 
 $$
 \gamma_0=iL_{\mathrm{pau},e_t}R_{\mathrm{pau},\vec e_x},\quad \gamma_1=iL_{\mathrm{pau},\vec e_x}R_{\mathrm{pau},\vec e_y},\quad \gamma_2=iL_{\mathrm{pau},\vec e_y}R_{\mathrm{pau},\vec e_y},\quad \gamma_3=iL_{\mathrm{pau},\vec e_z}R_{\mathrm{pau},\vec e_y},\quad \gamma_5=-iL_{\mathrm{pau},e_t}R_{\mathrm{pau},\vec e_z} .
@@ -428,23 +428,23 @@ $$
 \gamma_0=iL_{\mathrm{axf},e_t}R_{\mathrm{axf},\vec e_x},\quad \gamma_1=iL_{\mathrm{axf},\vec e_x}R_{\mathrm{axf},\vec e_y},\quad \gamma_2=iL_{\mathrm{axf},\vec e_y}R_{\mathrm{axf},\vec e_y},\quad \gamma_3=iL_{\mathrm{axf},\vec e_z}R_{\mathrm{axf},\vec e_y},\quad \gamma_5=-iL_{\mathrm{axf},e_t}R_{\mathrm{axf},\vec e_z} .
 $$
 
-A single cell is a tensor $a\otimes b$ read through $L_aR_b$, so its coefficient matrix has rank one; the cells form the seven-dimensional cone $\operatorname{rank}c(M)\le1$, and every element of $M_4(\mathbb{C})$ is a sum of at most four of them.
+A single basis operator is a tensor $a\otimes b$ read through $L_aR_b$, so its coefficient matrix has rank one; the basis operators form the seven-dimensional cone $\operatorname{rank}c(M)\le1$, and every element of $M_4(\mathbb{C})$ is a sum of at most four of them.
 
-$\gamma_5$ is the cell $\mathsf{V}_{\mathrm{vol}}=-iR_{\vec e_z}$, a pure right multiplier. Its side is the right slot, which is what makes it a chirality, and its eigenvalues are $\pm1$ with multiplicity two each: that is the statement that the two values of the subscript are two.
+$\gamma_5$ is the basis operator $\mathsf{V}_{\mathrm{vol}}=-iR_{\vec e_z}$, a pure right multiplier. Its side is the right slot, which is what makes it a chirality, and its eigenvalues are $\pm1$ with multiplicity two each: that is the statement that the two values are two.
 
-The dictionary is complex-linear; over $\mathbb{R}$ the products span $\mathrm{Cl}_{1,3}(\mathbb{R})\cong M_2(\mathbb{H})$ and the cells span $\mathrm{Cl}_{3,1}(\mathbb{R})\cong M_4(\mathbb{R})$.
+The dictionary is complex-linear; over $\mathbb{R}$ the products span $\mathrm{Cl}_{1,3}(\mathbb{R})\cong M_2(\mathbb{H})$ and the basis operators span $\mathrm{Cl}_{3,1}(\mathbb{R})\cong M_4(\mathbb{R})$.
 
-**The conserved current of the older literature.** The object that the previous sections cannot build is written here, once, in this display. The conserved current is the bilinear built with the generator cell of the coordinate $x_\mu$ — the cell $iL_{e_\mu}R_{\vec e_{\nu(\mu)}}$, with $\nu(t)=x$ and $\nu(k)=y$ — and with the adjoint row $\tilde{Ξ}_{\mathrm{sp}}^{\dagger}iR_{\vec e_x}$:
+**The conserved current of the older literature.** The object that the previous sections cannot build is written here, once, in this display. The conserved current is the bilinear built with the generator basis operator of the coordinate $x_\mu$ — the basis operator $iL_{e_\mu}R_{\vec e_{\nu(\mu)}}$, with $\nu(t)=x$ and $\nu(k)=y$ — and with the adjoint row $\tilde{Ξ}_{\mathrm{sp}}^{\dagger}iR_{\vec e_x}$:
 
 $$
 j_\mu = \tilde{Ξ}_{\mathrm{sp}}^{\dagger}iR_{\mathrm{axf},\vec e_x}\,iL_{\mathrm{axf},e_\mu}R_{\mathrm{axf},\vec e_{\nu(\mu)}}\,\tilde{Ξ}_{\mathrm{sp}} ,
 $$
 
-whose time component is $\tilde{Ξ}_{\mathrm{sp}}^{\dagger}\tilde{Ξ}_{\mathrm{sp}}$ and whose spatial components are $\tilde{Ξ}_{\mathrm{sp}}^{\dagger}\alpha_k\tilde{Ξ}_{\mathrm{sp}}$ with $\alpha_k = L_{\mathrm{axf},\vec e_k}R_{\mathrm{axf},\vec e_z}$. The ingredient that the algebra's own bilinears cannot supply is the adjoint row, which is built on the one-sided cell $iR_{\vec e_x}$ and lies outside the algebra. That is why $i\tilde{Ξ}_{\mathrm{sp}}\tilde{Ξ}_{\mathrm{sp}}^*$ cannot be the conserved current, and why the current is recorded in this section and nowhere else.
+whose time component is $\tilde{Ξ}_{\mathrm{sp}}^{\dagger}\tilde{Ξ}_{\mathrm{sp}}$ and whose spatial components are $\tilde{Ξ}_{\mathrm{sp}}^{\dagger}\alpha_k\tilde{Ξ}_{\mathrm{sp}}$ with $\alpha_k = L_{\mathrm{axf},\vec e_k}R_{\mathrm{axf},\vec e_z}$. The ingredient that the algebra's own bilinears cannot supply is the adjoint row, which is built on the one-sided basis operator $iR_{\vec e_x}$ and lies outside the algebra. That is why $i\tilde{Ξ}_{\mathrm{sp}}\tilde{Ξ}_{\mathrm{sp}}^*$ cannot be the conserved current, and why the current is recorded in this section and nowhere else.
 
 **The other form of the Dirac equation.** The third object of the older literature is the four-column form, on which the central phase multiplies the field one way on one part and the other way on the other, so that the vector phase and the relative phase exchange their roles. It is the carrier the closing sentence of *The Dirac Equation in Biquaternionic Form* names, and no construction of this article uses it: the algebra's own field carries the common phase, as the section on the field shows.
 
-**The identities the corpus cites.** In the $\gamma$ reading, with $\varepsilon=(1,-1,-1,-1)$ the sign vector of the cells,
+**The identities the corpus cites.** In the $\gamma$ reading, with $\varepsilon=(1,-1,-1,-1)$ the sign vector of the basis operators,
 $$
 \{\gamma_\mu,\gamma_\nu\}=2\varepsilon_\mu\delta_{\mu\nu}I_4,\qquad
 (\gamma_k)^2=-I_4,\qquad
@@ -505,7 +505,7 @@ $$
 
 The prescription attaches to the one-sided pair and not to the parent's two-sided form, because the two-sided form's mass term is a conjugation and a right multiplication and carries no continuous central phase to localize.
 
-The interaction current is not a product of the field with its conjugate inside the algebra. The gauge-invariant, material-sector bilinear $i\tilde{Ξ}_{\mathrm{sp}}\tilde{Ξ}_{\mathrm{sp}}^*$ is not conserved on solutions of the massless equation: the exact solution $\tilde{Ξ}_{\mathrm{sp},R} = \tfrac12\xi\left(-e_t - i\vec e_x + \vec e_y + i\vec e_z\right)$ with $\xi = \exp(iQ_x-Q_t)$ gives $\mathrm{Sc}(\tilde{\nabla}^{\natural}\tilde J_{\Phi,\mathrm{sp}}) = -2i\,e^{-2Q_t}$, while the scalar part of $\tilde J_{\Phi,\mathrm{sp}}$ has the required density form $i\,c\rho$. The conserved current of the older literature is not of this kind: it carries an adjoint built on a one-sided cell outside the algebra, and its form is recorded in the closing section with the other gamma-display statements. The pure-biquaternion form of the current, and the closure of the sourced system, are left as open questions, together with the choice of the left or right matter representation and the gauging of the relative phase of the two parts.
+The interaction current is not a product of the field with its conjugate inside the algebra. The gauge-invariant, material-sector bilinear $i\tilde{Ξ}_{\mathrm{sp}}\tilde{Ξ}_{\mathrm{sp}}^*$ is not conserved on solutions of the massless equation: the exact solution $\tilde{Ξ}_{\mathrm{sp},R} = \tfrac12\xi\left(-e_t - i\vec e_x + \vec e_y + i\vec e_z\right)$ with $\xi = \exp(iQ_x-Q_t)$ gives $\mathrm{Sc}(\tilde{\nabla}^{\natural}\tilde J_{\Phi,\mathrm{sp}}) = -2i\,e^{-2Q_t}$, while the scalar part of $\tilde J_{\Phi,\mathrm{sp}}$ has the required density form $i\,c\rho$. The conserved current of the older literature is not of this kind: it carries an adjoint built on a one-sided basis operator outside the algebra, and its form is recorded in the closing section with the other gamma-display statements. The pure-biquaternion form of the current, and the closure of the sourced system, are left as open questions, together with the choice of the left or right matter representation and the gauging of the relative phase of the two parts.
 
 One external result is recorded on the source side, and it is not a development of the framework: the identity of A. I. Arbab (arXiv:1708.06230v2), by which the mixed invariant of the two coupled field strengths is fixed by the pairing of the potential with the four-current. It is a constraint following from that source's own four equations, and the residual form in that section exhibits that dependence; it is not re-derived here, and its other claims are not adopted. It is recorded because it has the shape that Open Question 4 asks for, and because the corpus has no statement of that shape.
 
@@ -524,7 +524,7 @@ One external result is recorded on the source side, and it is not a development 
 | $\vec u$ | The declared unit of the frame, in the parent's two-sided form |
 | $\Box = \tilde{\nabla}\tilde{\nabla}^{\natural} = \tilde{\nabla}^{\natural}\tilde{\nabla}$ | d'Alembertian |
 | $\tilde{Ξ}_{\mathrm{sp}}$ | Biquaternion Dirac field, an element of $\mathbb{B}$ |
-| $\tilde{Ξ}_{\mathrm{sp},L}, \tilde{Ξ}_{\mathrm{sp},R}$ | The two parts of the field; the subscript takes two values and no more |
+| $\tilde{Ξ}_{\mathrm{sp},L}, \tilde{Ξ}_{\mathrm{sp},R}$ | The two parts of the field; the subscript names one of two components and no more |
 | $\tilde{Ξ}_{\mathrm{sp}}^{\flat} = -\tilde{Ξ}_{\mathrm{sp}}^*$, $\tilde{Ξ}_{\mathrm{sp}}^* = \overline{\tilde{Ξ}_{\mathrm{sp}}^{\natural}}$ | Anti-Hermitian conjugate of the field (the algebra's real structure; **not** the mass) |
 | $\tilde{\nabla}\tilde{Ξ}_{\mathrm{sp},R} = k_m\tilde{Ξ}_{\mathrm{sp},L}$, $\tilde{\nabla}^{\natural}\tilde{Ξ}_{\mathrm{sp},L} = k_m\tilde{Ξ}_{\mathrm{sp},R}$ | Free biquaternion Dirac equation (massive chiral pair) |
 | $\tilde{A}_{\Phi} = i\,a'_t\,e_t + \vec A$ | Connection = potential biquaternion (in $\mathbb{B}_{\Phi}$) |

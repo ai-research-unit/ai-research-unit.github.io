@@ -8,7 +8,7 @@ The biquaternion algebra is the even part. Its product sees the parity and nothi
 
 The sixteen two-sided operators $L_{\mathrm{pau},e_\mu} R_{\mathrm{pau},e_\nu}$ give the exact dictionary. Each of them is one Clifford basis element up to a scalar $\pm1$ or $\pm i$, and the table of their grades is the dictionary between the two-sided index pair and the Clifford grade. The table is not a function of the indices alone: the four vectors are $L_{\mathrm{pau},e_t}R_{\mathrm{pau},\vec e_x},L_{\mathrm{pau},\vec e_x}R_{\mathrm{pau},\vec e_y},L_{\mathrm{pau},\vec e_y}R_{\mathrm{pau},\vec e_y},L_{\mathrm{pau},\vec e_z}R_{\mathrm{pau},\vec e_y}$, a staircase, not a row or a column. The frame is the choice of that staircase.
 
-The body writes the abstract Clifford frame as $v_0,v_1,v_2,v_3$, with $v_0^2=1$ and $v_k^2=-1$, and the frame elements as cells. The gamma notation for the same objects is collected in the Gamma section. The two-sided basis is *The Two-Sided Operators Method to Build $M_4(\mathbb{C})$*; the even slot and the odd slot are *Biquaternion Versors and the Orthogonal Group*; the traces that read the scalar and pseudoscalar coordinates are *The Vector and the Axial Traces of $M_4(\mathbb{C})$*.
+The body writes the abstract Clifford frame as $v_0,v_1,v_2,v_3$, with $v_0^2=1$ and $v_k^2=-1$, and the frame elements as basis operators. The gamma notation for the same objects is collected in the Gamma section. The two-sided basis is *The Two-Sided Operators Method to Build $M_4(\mathbb{C})$*; the even slot and the odd slot are *Biquaternion Versors and the Orthogonal Group*; the traces that read the scalar and pseudoscalar coordinates are *The Vector and the Axial Traces of $M_4(\mathbb{C})$*.
 
 ## The Two Gradings
 
@@ -118,7 +118,7 @@ $$
 $$
 The counts are the dimensions of the exterior algebra; the table is a bijection between the sixteen two-sided operators and the sixteen Clifford basis elements.
 
-**The five cells of the frame.** The frame is the five entries
+**The five basis operators of the frame.** The frame is the five entries
 $$
 iL_{\mathrm{pau},e_t}R_{\mathrm{pau},\vec e_x},\qquad
 iL_{\mathrm{pau},\vec e_x}R_{\mathrm{pau},\vec e_y},\qquad
@@ -156,7 +156,7 @@ $$
 $$
 in the real-linear dictionary. The grade of the operation is recovered from the frame, not from the biquaternion product. The operation-level statement is *The Star and the Conjugate-Linear Operators of $M_4(\mathbb{C})$*.
 
-**The two dictionaries.** The complex-linear dictionary reads the same five cells as one-sided and two-sided operators,
+**The two dictionaries.** The complex-linear dictionary reads the same five basis operators as one-sided and two-sided operators,
 $$
 iL_{\mathrm{pau},e_t}R_{\mathrm{pau},\vec e_x}=R_{i \vec e_x},\qquad
 iL_{i \vec e_k}R_{\mathrm{pau},\vec e_y},\qquad
@@ -170,13 +170,13 @@ up to the scalar $i$; its even part is the complexified even Clifford algebra $M
 
 **The frame part.** The assignment of a grade to a particular $L_{\mathrm{pau},e_\mu} R_{\mathrm{pau},e_\nu}$ is frame-dependent. A different frame $\tilde v_\mu=Uv_\mu U^{-1}$ gives a different five-element subset of the sixteen two-sided operators and a different staircase of vectors. The grade of the Clifford element is canonical; its expression in the two-sided basis is not.
 
-**The invariant statement.** The correct invariant statement is: the sixteen two-sided operators are a Clifford basis up to scalars; the five cells are a frame inside it; the grade table is the matrix of the change of basis between the two-sided basis and the Clifford basis. The table above is one such matrix, for the frame of the corpus.
+**The invariant statement.** The correct invariant statement is: the sixteen two-sided operators are a Clifford basis up to scalars; the five basis operators are a frame inside it; the grade table is the matrix of the change of basis between the two-sided basis and the Clifford basis. The table above is one such matrix, for the frame of the corpus.
 
 ## The Legacy Pauli Gamma Formulation
 
 The Pauli and gamma formulation is legacy: the reasons are explained in the article *Why AXF Matrices instead of Pauli and Gamma Matrices*. The generators carry no frame label: $\gamma_\mu$ is one set of matrices, $\gamma_0^2=I_4$ and $\gamma_k^2=-I_4$. The frame belongs to the coordinate, not to the array.
 
-The gammas are the frame $v_\mu$ of the Clifford algebra written as $4\times4$ matrices; the body writes the cells.
+The gammas are the frame $v_\mu$ of the Clifford algebra written as $4\times4$ matrices; the body writes the basis operators.
 
 $$
 \gamma_0=iL_{\mathrm{pau},e_t}R_{\mathrm{pau},\vec e_x},\quad \gamma_1=iL_{\mathrm{pau},\vec e_x}R_{\mathrm{pau},\vec e_y},\quad \gamma_2=iL_{\mathrm{pau},\vec e_y}R_{\mathrm{pau},\vec e_y},\quad \gamma_3=iL_{\mathrm{pau},\vec e_z}R_{\mathrm{pau},\vec e_y},\quad \gamma_5=-iL_{\mathrm{pau},e_t}R_{\mathrm{pau},\vec e_z},
@@ -196,7 +196,7 @@ z & \gamma_{12} & -i\gamma_{012} & -i\gamma_3 & \gamma_{03}
 $$
 with the correspondence $e_t\mapsto I$, $\vec e_x\mapsto\gamma_2\gamma_3$, $\vec e_y\mapsto\gamma_3\gamma_1$, $\vec e_z\mapsto\gamma_1\gamma_2$ and $i\mapsto i\gamma_5$.
 
-Over $\mathbb{R}$ the dictionary is complex-linear: the products of the five span $\mathrm{Cl}_{1,3}(\mathbb{R})\cong M_2(\mathbb{H})$ and the cells span $\mathrm{Cl}_{3,1}(\mathbb{R})\cong M_4(\mathbb{R})$.
+Over $\mathbb{R}$ the dictionary is complex-linear: the products of the five span $\mathrm{Cl}_{1,3}(\mathbb{R})\cong M_2(\mathbb{H})$ and the basis operators span $\mathrm{Cl}_{3,1}(\mathbb{R})\cong M_4(\mathbb{R})$.
 
 ## Summary
 
@@ -210,7 +210,7 @@ y & 2 & 3 & 1 & 2\\
 z & 2 & 3 & 1 & 2
 \end{array}
 $$
-and the five cells of the frame are $iL_{\mathrm{pau},e_t}R_{\mathrm{pau},\vec e_x}$, $iL_{\mathrm{pau},\vec e_x}R_{\mathrm{pau},\vec e_y}$, $iL_{\mathrm{pau},\vec e_y}R_{\mathrm{pau},\vec e_y}$, $iL_{\mathrm{pau},\vec e_z}R_{\mathrm{pau},\vec e_y}$ and $-iL_{\mathrm{pau},e_t}R_{\mathrm{pau},\vec e_z}$. The biquaternion product sees the parity and not the grade; the grade needs the frame. The odd slot is a copy of $\mathbb{B}$ as a module, but the vector/trivector split is not a module split, which is why the geometric content of the odd sector is carried by the dictionary rather than by the product.
+and the five basis operators of the frame are $iL_{\mathrm{pau},e_t}R_{\mathrm{pau},\vec e_x}$, $iL_{\mathrm{pau},\vec e_x}R_{\mathrm{pau},\vec e_y}$, $iL_{\mathrm{pau},\vec e_y}R_{\mathrm{pau},\vec e_y}$, $iL_{\mathrm{pau},\vec e_z}R_{\mathrm{pau},\vec e_y}$ and $-iL_{\mathrm{pau},e_t}R_{\mathrm{pau},\vec e_z}$. The biquaternion product sees the parity and not the grade; the grade needs the frame. The odd slot is a copy of $\mathbb{B}$ as a module, but the vector/trivector split is not a module split, which is why the geometric content of the odd sector is carried by the dictionary rather than by the product.
 
 | quantity | value |
 |---|---|
@@ -219,7 +219,7 @@ and the five cells of the frame are $iL_{\mathrm{pau},e_t}R_{\mathrm{pau},\vec e
 | grade dimensions | $1,4,6,4,1$ |
 | odd slot | $V\oplus\Lambda^3V$, $4+4$ |
 | Hodge pairs | $(v_0,v_{123})$, $(v_1,v_{023})$, $(v_2,v_{013})$, $(v_3,v_{012})$ |
-| five cells | $iL_{\mathrm{pau},e_t}R_{\mathrm{pau},\vec e_x},iL_{\mathrm{pau},\vec e_x}R_{\mathrm{pau},\vec e_y},iL_{\mathrm{pau},\vec e_y}R_{\mathrm{pau},\vec e_y},iL_{\mathrm{pau},\vec e_z}R_{\mathrm{pau},\vec e_y},-iL_{\mathrm{pau},e_t}R_{\mathrm{pau},\vec e_z}$ |
+| five basis operators | $iL_{\mathrm{pau},e_t}R_{\mathrm{pau},\vec e_x},iL_{\mathrm{pau},\vec e_x}R_{\mathrm{pau},\vec e_y},iL_{\mathrm{pau},\vec e_y}R_{\mathrm{pau},\vec e_y},iL_{\mathrm{pau},\vec e_z}R_{\mathrm{pau},\vec e_y},-iL_{\mathrm{pau},e_t}R_{\mathrm{pau},\vec e_z}$ |
 | scalar | $L_{\mathrm{pau},e_t}R_{\mathrm{pau},e_t}=I$ |
 | pseudoscalar | $L_{\mathrm{pau},e_t}R_{\mathrm{pau},\vec e_z}$ up to $-i$ |
 | vectors | $L_{\mathrm{pau},e_t}R_{\mathrm{pau},\vec e_x},L_{\mathrm{pau},\vec e_x}R_{\mathrm{pau},\vec e_y},L_{\mathrm{pau},\vec e_y}R_{\mathrm{pau},\vec e_y},L_{\mathrm{pau},\vec e_z}R_{\mathrm{pau},\vec e_y}$ |

@@ -279,7 +279,7 @@ The corpus records, in *The Minimal Coupling of the Biquaternion Dirac Field to 
 
 **What the algebra does not say.** It does not say which physical degree of freedom is carried by which factor. The embedding of the left multiplications is $a\mapsto a\otimes\mathbb 1_{\mathrm{opp}}$ and of the right multiplications is $b\mapsto\mathbb 1\otimes b_{\mathrm{opp}}$; the two factors are algebraically distinct but no physical label attaches to either from the algebra alone. Fauser's caution on the same point is that the identification of the right multiplication with a specific internal symmetry — the iso-spin degree of freedom — is not warranted by the algebra. The corpus records the caution and leaves the physical assignment open.
 
-**The precise form of the remaining question.** In the enveloping algebra the question becomes: for the physical Dirac field, which factor of $\mathbb B^{\mathrm e}$ carries the spin and which the internal quantum numbers, and is the split forced by the requirement that the current be conserved? The corpus's observation that the conserved current needs the Clifford-odd cell $iL_{e_t}R_{\vec e_x}$ of the full algebra is a constraint of exactly this kind, and it is the natural place to look for the answer. The algebra alone closes the existence half of the question and leaves the assignment half open.
+**The precise form of the remaining question.** In the enveloping algebra the question becomes: for the physical Dirac field, which factor of $\mathbb B^{\mathrm e}$ carries the spin and which the internal quantum numbers, and is the split forced by the requirement that the current be conserved? The corpus's observation that the conserved current needs the Clifford-odd basis operator $iL_{e_t}R_{\vec e_x}$ of the full algebra is a constraint of exactly this kind, and it is the natural place to look for the answer. The algebra alone closes the existence half of the question and leaves the assignment half open.
 
 ## The Envelope as a Luxury of the Associative Unital Case
 
@@ -323,9 +323,9 @@ $$
 
 A single product is a pure tensor; the products form the seven-dimensional cone $\operatorname{rank}c(M)\le1$, and a general element is a sum of at most four, with $\ell(M)=\operatorname{rank}c(M)$.
 
-$\gamma_5$ is the reference-frame cell of the chirality operator; the central grading $\chi=i\tilde{Ζ}_{\mathrm{ad}}$ — the difference of the two central idempotents of the complexified algebra, so $\chi^2=e_t$ — is a different object, represented by $\gamma_5$ on the Dirac module.
+$\gamma_5$ is the reference-frame basis operator of the chirality operator; the central grading $\chi=i\tilde{Ζ}_{\mathrm{ad}}$ — the difference of the two central idempotents of the complexified algebra, so $\chi^2=e_t$ — is a different object, represented by $\gamma_5$ on the Dirac module.
 
-The dictionary is complex-linear; over $\mathbb{R}$ the products span $\mathrm{Cl}_{1,3}(\mathbb{R})\cong M_2(\mathbb{H})$ and the cells span $\mathrm{Cl}_{3,1}(\mathbb{R})\cong M_4(\mathbb{R})$.
+The dictionary is complex-linear; over $\mathbb{R}$ the products span $\mathrm{Cl}_{1,3}(\mathbb{R})\cong M_2(\mathbb{H})$ and the basis operators span $\mathrm{Cl}_{3,1}(\mathbb{R})\cong M_4(\mathbb{R})$.
 
 ## Summary
 

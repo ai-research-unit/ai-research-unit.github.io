@@ -309,7 +309,7 @@ G_5G_0+G_0G_5=L_{\mathrm{axf},e_t}R_{\mathrm{axf},e_-y}+L_{\mathrm{axf},e_t}R_{\
 \qquad
 G_5G_k+G_kG_5=L_{\mathrm{axf},\vec e_k}R_{\mathrm{axf},\vec e_x}-L_{\mathrm{axf},\vec e_k}R_{\mathrm{axf},\vec e_x}=0 .
 $$
-The product identity is the cell computation
+The product identity is the basis operator computation
 $$
 G_0G_1G_2G_3=L_{\mathrm{axf},e_t}R_{\mathrm{axf},\vec e_x}L_{\mathrm{axf},\vec e_x}R_{\mathrm{axf},\vec e_y}L_{\mathrm{axf},\vec e_y}R_{\mathrm{axf},\vec e_y}L_{\mathrm{axf},\vec e_z}R_{\mathrm{axf},\vec e_y}=-L_{\mathrm{axf},e_t}R_{\mathrm{axf},\vec e_z}=-iG_5 . \qquad\square
 $$
@@ -336,7 +336,7 @@ of complex dimension eight, not the four-dimensional left factor $L(\mathbb{B})$
 
 ## The Star and the Adjoint
 
-**The Dirac adjoint.** The Dirac adjoint of a spinor is $\psi^{*}G_0$, with $G_0=iL_{\mathrm{axf},e_t}R_{\mathrm{axf},\vec e_x}$ the time generator of the complex frame. In the operator dictionary the two factors are the star (the algebra involution on the spinor) and the time generator (the odd operation). The star is not the generator; the generator is the bar in the real frame, and the cell $iL_{\mathrm{axf},e_t}R_{\mathrm{axf},\vec e_x}$ in the complex frame. The composite is the adjoint.
+**The Dirac adjoint.** The Dirac adjoint of a spinor is $\psi^{*}G_0$, with $G_0=iL_{\mathrm{axf},e_t}R_{\mathrm{axf},\vec e_x}$ the time generator of the complex frame. In the operator dictionary the two factors are the star (the algebra involution on the spinor) and the time generator (the odd operation). The star is not the generator; the generator is the bar in the real frame, and the basis operator $iL_{\mathrm{axf},e_t}R_{\mathrm{axf},\vec e_x}$ in the complex frame. The composite is the adjoint.
 
 **The Hermitian form.** The Hermitian form on $\mathbb{B}$ is
 $$
@@ -350,7 +350,7 @@ and the star is its involution. The bar is the coefficient conjugation that defi
 
 The Pauli and gamma formulation is legacy: the reasons are explained in the article *Why AXF Matrices instead of Pauli and Gamma Matrices*. The generators carry no frame label: $\gamma_\mu$ is one set of matrices, $\gamma_0^2=I_4$ and $\gamma_k^2=-I_4$. The frame belongs to the coordinate, not to the array.
 
-The gammas are the five generators of the two frames above, written as matrices; the body writes them as operators and cells.
+The gammas are the five generators of the two frames above, written as matrices; the body writes them as operators and basis operators.
 
 $$
 \gamma_0=\bar{\cdot},\quad
@@ -365,7 +365,7 @@ $$
 $$
 for the complex-linear frame, with $\gamma_5=i\gamma_0\gamma_1\gamma_2\gamma_3$ in the latter.
 
-The difference between the frames is the difference between the bar and the cell: the first is antilinear with even part $L(\mathbb{B})$, the second is linear with even part $M_2\oplus M_2$. Over $\mathbb{R}$ the first spans $\mathrm{Cl}_{1,3}(\mathbb{R})\cong M_2(\mathbb{H})$ and the second spans $\mathrm{Cl}_{3,1}(\mathbb{R})\cong M_4(\mathbb{R})$ on the same carrier.
+The difference between the frames is the difference between the bar and the basis operator: the first is antilinear with even part $L(\mathbb{B})$, the second is linear with even part $M_2\oplus M_2$. Over $\mathbb{R}$ the first spans $\mathrm{Cl}_{1,3}(\mathbb{R})\cong M_2(\mathbb{H})$ and the second spans $\mathrm{Cl}_{3,1}(\mathbb{R})\cong M_4(\mathbb{R})$ on the same carrier.
 
 ## Summary
 
@@ -383,7 +383,7 @@ A_0=\bar{\cdot},\qquad
 A_k=\bar{\cdot}L_{\mathrm{axf},-i\vec e_k},\qquad
 A_5=R_{\mathrm{axf},-i\vec e_z},
 $$
-with $(A_0)^2=I$, $(A_k)^2=-I$, $\{A_\mu,A_\nu\}=2\varepsilon_\mu\delta_{\mu\nu}I$, and $\{A_5,A_\mu\}=0$. The product of the four is $iI$; the even part is $L(\mathbb{B})\cong\mathbb{B}$, and the odd part is the conjugate-linear family. The complex-linear frame is the five cells
+with $(A_0)^2=I$, $(A_k)^2=-I$, $\{A_\mu,A_\nu\}=2\varepsilon_\mu\delta_{\mu\nu}I$, and $\{A_5,A_\mu\}=0$. The product of the four is $iI$; the even part is $L(\mathbb{B})\cong\mathbb{B}$, and the odd part is the conjugate-linear family. The complex-linear frame is the five basis operators
 $$
 G_0=iL_{\mathrm{axf},e_t}R_{\mathrm{axf},\vec e_x},\qquad
 G_k=iL_{\mathrm{axf},\vec e_k}R_{\mathrm{axf},\vec e_y},\qquad
@@ -399,7 +399,7 @@ with $G_5=iG_0G_1G_2G_3$, and the complexified even algebra $M_2\oplus M_2$. The
 | bar matrix | $J=\operatorname{diag}(J_2,J_2,J_2,J_2)$, $\operatorname{tr}J=0$, $\det J=1$ |
 | natural matrix | $D=\operatorname{diag}(1,-1,-1,-1)$, $\operatorname{tr}D=-2$, $\det D=1$ |
 | star matrix | $S=D_8J$, $\operatorname{tr}S=0$, $\det S=1$ |
-| natural in the cell basis | $-\tfrac12(L_{\mathrm{axf},e_t}R_{\mathrm{axf},e_t}+L_{\mathrm{axf},\vec e_x}R_{\mathrm{axf},\vec e_x}+L_{\mathrm{axf},\vec e_y}R_{\mathrm{axf},\vec e_y}+L_{\mathrm{axf},\vec e_z}R_{\mathrm{axf},\vec e_z})$ |
+| natural in the operator basis | $-\tfrac12(L_{\mathrm{axf},e_t}R_{\mathrm{axf},e_t}+L_{\mathrm{axf},\vec e_x}R_{\mathrm{axf},\vec e_x}+L_{\mathrm{axf},\vec e_y}R_{\mathrm{axf},\vec e_y}+L_{\mathrm{axf},\vec e_z}R_{\mathrm{axf},\vec e_z})$ |
 | $C_b$ | $L_{\bar b}\bar{\cdot}$ |
 | $C_aC_b$ | $L_{\bar a b}$ |
 | $C'_aC'_b$ | $L_{a\bar b}$ |
@@ -425,7 +425,7 @@ with $G_5=iG_0G_1G_2G_3$, and the complexified even algebra $M_2\oplus M_2$. The
 | $L_{a}R_{b}$ | the two-sided operator $L_aR_b$ |
 | $C_b,C'_b$ | the conjugate-linear operators $\bar{\cdot}L_b$ and $L_b\bar{\cdot}$ |
 | $A_0,A_k,A_5$ | the generators of the real-linear frame |
-| $G_0,G_k,G_5$ | the generators of the complex-linear frame, five cells |
+| $G_0,G_k,G_5$ | the generators of the complex-linear frame, five basis operators |
 
 ## Further Reading
 

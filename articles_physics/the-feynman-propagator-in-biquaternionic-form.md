@@ -14,7 +14,7 @@ $$
 
 Here $k_m=mc/\hbar$ is the mass wave number, the inverse of the mass length.
 
-The framework carries two equations called the Dirac equation, and they must not be read as one. The pair displayed above is the first: it is the definition. The gradient acts by left multiplication, the field is the element $\tilde{Ξ}_{\mathrm{sp}}=\tilde{Ξ}_{\mathrm{sp},L}+\tilde{Ξ}_{\mathrm{sp},R}$ of $\mathbb{B}$, and the mass is the off-diagonal pairing of the two values of the subscript, $L$ and $R$ (*Special Element Conventions*, §*The Chirality Convention*).
+The framework carries two equations called the Dirac equation, and they must not be read as one. The pair displayed above is the first: it is the definition. The gradient acts by left multiplication, the field is the element $\tilde{Ξ}_{\mathrm{sp}}=\tilde{Ξ}_{\mathrm{sp},L}+\tilde{Ξ}_{\mathrm{sp},R}$ of $\mathbb{B}$, and the mass is the off-diagonal pairing of the two parts named by the subscript, $L$ and $R$ (*Special Element Conventions*, §*The Chirality Convention*).
 
 The second is the **two-sided** form of *The Dirac Equation in Biquaternionic Form*, a single equation on $\mathbb{B}$,
 
@@ -38,7 +38,7 @@ $$
 \boxed{\;S_F(x-y):\ \tilde Q\ \longmapsto\ \big\langle 0\big|\,T\,\tilde{Ξ}_{\mathrm{sp}}(x)\,\big(\tilde{Ξ}_{\mathrm{sp}}^*(y)\,i\,\tilde Q\,\vec e_x\big)\,\big|0\big\rangle\;},
 $$
 
-with $T$ the fermionic time-ordering operator. The adjoint of the field enters as the Hermitian conjugate $\tilde{Ξ}_{\mathrm{sp}}^*$, and the fixed pair $i\,\vec e_x$ that closes it on the test element is the timelike frame cell. The test element stands where the older display puts the object it multiplies; here it is an element of the algebra, and the propagator carries an element to an element.
+with $T$ the fermionic time-ordering operator. The adjoint of the field enters as the Hermitian conjugate $\tilde{Ξ}_{\mathrm{sp}}^*$, and the fixed pair $i\,\vec e_x$ that closes it on the test element is the timelike frame basis operator. The test element stands where the older display puts the object it multiplies; here it is an element of the algebra, and the propagator carries an element to an element.
 
 The two-point function is where the boundary condition of the theory is stored. Its momentum-space amplitude is not a function but a distribution, and what makes it the *Feynman* amplitude rather than the retarded or advanced one is a contour prescription in the complex energy plane — the $i\epsilon$.
 
@@ -60,9 +60,9 @@ $$
 +b_{\mathrm{fop},r}^{\dagger}(\vec p)\,\tilde V_{\Phi}^{(r)}(\vec p)\,\exp(+ip\cdot x/\hbar)\Big],
 $$
 
-with $E_{\vec p}=+\sqrt{\vec p^{\,2}c^2+m^{2}\,c^{4}}$, and with $\tilde W_{\Psi}^{(r)}$ and $\tilde V_{\Phi}^{(r)}$ the plane-wave elements of that momentum: the two solutions of the chiral pair and their two negative-frequency partners, each an element of $\mathbb{B}$. Its adjoint is the Hermitian conjugate $\tilde{Ξ}_{\mathrm{fop}}^*(x)$, carried with the same fixed pair $i\,\vec e_x$. That pair sits inside the time-ordered product, between the adjoint field and the test element, and the contraction over the two solutions consumes it: what acts on the test element is the kernel $\mathcal{A}_p+mc$ derived below, and no cell survives in the amplitude.
+with $E_{\vec p}=+\sqrt{\vec p^{\,2}c^2+m^{2}\,c^{4}}$, and with $\tilde W_{\Psi}^{(r)}$ and $\tilde V_{\Phi}^{(r)}$ the plane-wave elements of that momentum: the two solutions of the chiral pair and their two negative-frequency partners, each an element of $\mathbb{B}$. Its adjoint is the Hermitian conjugate $\tilde{Ξ}_{\mathrm{fop}}^*(x)$, carried with the same fixed pair $i\,\vec e_x$. That pair sits inside the time-ordered product, between the adjoint field and the test element, and the contraction over the two solutions consumes it: what acts on the test element is the kernel $\mathcal{A}_p+mc$ derived below, and no basis operator survives in the amplitude.
 
-**The momentum action.** The four frame cells of *Frame and Metric Conventions*, written out as actions instead of as cells, are
+**The momentum action.** The four frame basis operators of *Frame and Metric Conventions*, written out as actions instead of as basis operators, are
 
 $$
 G_t:\ \tilde Q\longmapsto i\,\tilde Q\,\vec e_x,
@@ -329,7 +329,7 @@ S_F=(\mathbb{D}+k_m)\,G_F,
 (\Box-k_m^{2})\,G_F=i\,\delta^{(4)},
 $$
 
-in the distributional sense, with $\mathbb{D}$ the pair operator of *Operator and Calculus Conventions*, acting on the value of the action. The pair operator and the momentum action are two writings of one first-order symbol, the first on pairs of values of the subscript and the second by the four cell actions read on a single element; the change of variable of the introduction relates them, they are not the same map, and they share the pole set because the square of each is multiplication by $p^2$. The overall factor is a normalization: the conventions article writes $\mathcal{S}=(\mathbb{D}+k_m)G$ with $(\mathbb{D}-k_m)\mathcal{S}=\delta I$ and $(\Box-k_m^{2})G=\delta$, whereas the time-ordered product of this article carries $S_F=i\mathcal{S}$; the companion Klein–Gordon article fixes $(\Box-\mu^2)G=-\delta^{(4)}$ at $\mu=m$, so its $G$ is $i$ times the $G_F$ here. None of these normalizations affects a pole position or a support. The differential equation holds for the Feynman, retarded, and advanced choices alike, because the difference between them is supported only on the mass shell and carries no additional source off it. The differential equation, therefore, does not determine the propagator. What determines it is the time-ordering prescription, which in momentum space is the contour and in configuration space is the split of support into $x_0>y_0$ and $x_0<y_0$.
+in the distributional sense, with $\mathbb{D}$ the pair operator of *Operator and Calculus Conventions*, acting on the value of the action. The pair operator and the momentum action are two writings of one first-order symbol, the first on pairs of values of the subscript and the second by the four basis operator actions read on a single element; the change of variable of the introduction relates them, they are not the same map, and they share the pole set because the square of each is multiplication by $p^2$. The overall factor is a normalization: the conventions article writes $\mathcal{S}=(\mathbb{D}+k_m)G$ with $(\mathbb{D}-k_m)\mathcal{S}=\delta I$ and $(\Box-k_m^{2})G=\delta$, whereas the time-ordered product of this article carries $S_F=i\mathcal{S}$; the companion Klein–Gordon article fixes $(\Box-\mu^2)G=-\delta^{(4)}$ at $\mu=m$, so its $G$ is $i$ times the $G_F$ here. None of these normalizations affects a pole position or a support. The differential equation holds for the Feynman, retarded, and advanced choices alike, because the difference between them is supported only on the mass shell and carries no additional source off it. The differential equation, therefore, does not determine the propagator. What determines it is the time-ordering prescription, which in momentum space is the contour and in configuration space is the split of support into $x_0>y_0$ and $x_0<y_0$.
 
 This is the sharpest way to see why the question "does the algebra supply the $i\epsilon$?" cannot be answered by finding an $i$ in the algebra. The equation of motion supplies a differential operator, and a differential operator has many distributional inverses; the algebra supplies the operator $\tilde{\nabla}$ (or its second-order companion $\tilde{\nabla}\tilde{\nabla}^{\natural}$) and hence the same many inverses. Distinguishing the Feynman one requires a condition that is not an equation of motion. The complex structure enters when that condition is *represented* — as a contour in $\mathbb{B}_{C}$, or as a point in the complexified time plane — and not when it is *chosen*.
 
@@ -372,9 +372,9 @@ $$
 
 A single product is a pure tensor; the products form the seven-dimensional cone $\operatorname{rank}c(M)\le1$, and a general element is a sum of at most four, with $\ell(M)=\operatorname{rank}c(M)$.
 
-$\gamma_5$ is the reference-frame cell of the chirality $\Gamma$; the central grading $\chi=i\tilde{Ζ}_{\mathrm{ad}}$ — the difference of the two central idempotents of the complexified algebra, so $\chi^2=e_t$ — is a different object, represented by $\gamma_5$ on the Dirac module.
+$\gamma_5$ is the reference-frame basis operator of the chirality $\Gamma$; the central grading $\chi=i\tilde{Ζ}_{\mathrm{ad}}$ — the difference of the two central idempotents of the complexified algebra, so $\chi^2=e_t$ — is a different object, represented by $\gamma_5$ on the Dirac module.
 
-The dictionary is complex-linear; over $\mathbb{R}$ the products span $\mathrm{Cl}_{1,3}(\mathbb{R})\cong M_2(\mathbb{H})$ and the cells span $\mathrm{Cl}_{3,1}(\mathbb{R})\cong M_4(\mathbb{R})$.
+The dictionary is complex-linear; over $\mathbb{R}$ the products span $\mathrm{Cl}_{1,3}(\mathbb{R})\cong M_2(\mathbb{H})$ and the basis operators span $\mathrm{Cl}_{3,1}(\mathbb{R})\cong M_4(\mathbb{R})$.
 
 The body's momentum action then reads, in the gamma display,
 
@@ -388,9 +388,9 @@ $$
 \{\gamma_\mu,\gamma_\nu\}=2\varepsilon_\mu\delta_{\mu\nu}\mathbf{1},
 $$
 
-which is the anticommutator of the body, in its named form: $\gamma_\mu$ *is* the cell $iL_{\mathrm{pau},e_\mu}R_{\mathrm{pau},\vec e_{\nu(\mu)}}$, so this is the same statement. It is not an extra input. For $\mu\neq\nu$ the two products $\gamma_\mu\gamma_\nu$ and $\gamma_\nu\gamma_\mu$ differ by a single transposition — on the left when one index is $t$, on the right when both are spatial — and a transposition reverses a quaternion sign, so they cancel; for $\mu=\nu$ each square is $\pm\mathbf{1}$, the sign coming from $e_t^2=e_t$ and $\vec e_k^2=-e_t$.
+which is the anticommutator of the body, in its named form: $\gamma_\mu$ *is* the basis operator $iL_{\mathrm{pau},e_\mu}R_{\mathrm{pau},\vec e_{\nu(\mu)}}$, so this is the same statement. It is not an extra input. For $\mu\neq\nu$ the two products $\gamma_\mu\gamma_\nu$ and $\gamma_\nu\gamma_\mu$ differ by a single transposition — on the left when one index is $t$, on the right when both are spatial — and a transposition reverses a quaternion sign, so they cancel; for $\mu=\nu$ each square is $\pm\mathbf{1}$, the sign coming from $e_t^2=e_t$ and $\vec e_k^2=-e_t$.
 
-**The display.** Every array printed in this section is given twice: in the Peirce display first, labelled $\mathrm{pau}$, whose arrays are the ones the literature prints, and in the axis-free display after it, labelled $\mathrm{axf}$, which is the display of the body and of the corpus. The two are carried into one another by $L_{\mathrm{axf},e_\mu}=C_{\Pi}L_{\mathrm{pau},e_\mu}C_{\Pi}^{-1}$, and a conjugation by $C_{\Pi}$ changes no product, no anticommutator, no trace and no determinant, so every identity of the section holds in both. An array is a statement about one display; a cell named in the running text keeps the Peirce label, and its axis-free array is the conjugate. The label names the array and not the operator.
+**The display.** Every array printed in this section is given twice: in the Peirce display first, labelled $\mathrm{pau}$, whose arrays are the ones the literature prints, and in the axis-free display after it, labelled $\mathrm{axf}$, which is the display of the body and of the corpus. The two are carried into one another by $L_{\mathrm{axf},e_\mu}=C_{\Pi}L_{\mathrm{pau},e_\mu}C_{\Pi}^{-1}$, and a conjugation by $C_{\Pi}$ changes no product, no anticommutator, no trace and no determinant, so every identity of the section holds in both. An array is a statement about one display; a basis operator named in the running text keeps the Peirce label, and its axis-free array is the conjugate. The label names the array and not the operator.
 
 ## Summary
 
@@ -428,7 +428,7 @@ and the prescription is a deformation of the mass-shell scalar. The added term $
 | $\mathbb{B}_{\Phi},\mathbb{B}_{\Psi}$ | Material (anti-Hermitian) and informational (Hermitian) sectors |
 | $\mathbb{B}_{C}$ | The centre of $\mathbb{B}$ (*Algebra and Element Conventions*) |
 | $\mathrm{id}$ | The identity, as an action on $\mathbb{B}$ |
-| $G_t$, $G_k$ | The four frame cells written as actions, $\tilde Q\mapsto i\tilde Q\vec e_x$ and $\tilde Q\mapsto i\vec e_k\tilde Q\vec e_y$; $G_t^2=\mathrm{id}$, $G_k^2=-\mathrm{id}$, $\{G_\mu,G_\nu\}=2\varepsilon_\mu\delta_{\mu\nu}\mathrm{id}$ |
+| $G_t$, $G_k$ | The four frame basis operators written as actions, $\tilde Q\mapsto i\tilde Q\vec e_x$ and $\tilde Q\mapsto i\vec e_k\tilde Q\vec e_y$; $G_t^2=\mathrm{id}$, $G_k^2=-\mathrm{id}$, $\{G_\mu,G_\nu\}=2\varepsilon_\mu\delta_{\mu\nu}\mathrm{id}$ |
 | $\varepsilon$ | The plain weight of the four directions, the square of the units (*Frame and Metric Conventions*) |
 | $\mathcal{A}_p$ | The momentum action, $p_0G_t-\sum_kp_kG_k$, written out as $\tilde Q\mapsto ip_0\tilde Q\vec e_x-i\sum_kp_k\vec e_k\tilde Q\vec e_y$; $\mathcal{A}_p^2=p^2\mathrm{id}$ |
 | $\tilde{\nabla}$ | Biquaternionic gradient (*Operator and Calculus Conventions*); $Q_t$ is the time coordinate, $i r'_t$ on $\mathbb{B}_{\Phi}$ |
@@ -436,8 +436,8 @@ and the prescription is a deformation of the mass-shell scalar. The added term $
 | $\mathbb{D}$ | The pair operator of *Operator and Calculus Conventions*, whose square is $\Box$ |
 | $\mathcal{N}=-\tilde\nabla^{\natural}-k_mi\,\overline{\,\cdot}\,\vec e_z$ | Two-sided Dirac operator of *The Dirac Equation in Biquaternionic Form* |
 | $D_3$ | Its spatial part, defined in that article |
-| $\tilde{Ξ}_{\mathrm{sp}}=\tilde{Ξ}_{\mathrm{sp},L}+\tilde{Ξ}_{\mathrm{sp},R}$ | The biquaternion Dirac field, an element of $\mathbb{B}$, split into the two values of the subscript |
-| $\tilde{Ξ}_{\mathrm{sp}}^*$, $\tilde{Ξ}_{\mathrm{sp}}^*i\vec e_x$ | The Hermitian conjugate of the field, and the adjoint it forms with the fixed timelike cell |
+| $\tilde{Ξ}_{\mathrm{sp}}=\tilde{Ξ}_{\mathrm{sp},L}+\tilde{Ξ}_{\mathrm{sp},R}$ | The biquaternion Dirac field, an element of $\mathbb{B}$, split into the two parts named by the subscript |
+| $\tilde{Ξ}_{\mathrm{sp}}^*$, $\tilde{Ξ}_{\mathrm{sp}}^*i\vec e_x$ | The Hermitian conjugate of the field, and the adjoint it forms with the fixed timelike basis operator |
 | $\tilde W_{\Psi}^{(r)}(\vec p)$, $\tilde V_{\Phi}^{(r)}(\vec p)$ | The plane-wave elements of the two frequency branches |
 | $\mathcal{A}_p+mc$, $\mathcal{A}_p-mc$ | The two numerators, on shell: the map form of the two sums over the solutions |
 | $p=(E,\vec p)$, $p_\pm=(\pm E_{\vec p},\vec p)$, $p^2=E^2-\vec p^2$ | Four-momentum, the two pole momenta, and the Lorentz square |

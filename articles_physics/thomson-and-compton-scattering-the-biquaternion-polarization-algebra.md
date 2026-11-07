@@ -399,7 +399,7 @@ What the framework does **not** supply is the dynamics. The Thomson cross-sectio
 
 The Pauli and gamma formulation is legacy: the reasons are explained in the article *Why AXF Matrices instead of Pauli and Gamma Matrices*. The generators carry no frame label: $\gamma_\mu$ is one set of matrices, $\gamma_0^2=I_4$ and $\gamma_k^2=-I_4$. The frame belongs to the coordinate, not to the array.
 
-The gammas are a frame of $\mathrm{Cl}_{1,3}(\mathbb{C})=M_4(\mathbb{C})$, not a different algebra. Here $L_a$ and $R_b$ are the left and right multiplications, $L_a\tilde{Ξ}_{\mathrm{sp}}=a\tilde{Ξ}_{\mathrm{sp}}$ and $R_b\tilde{Ξ}_{\mathrm{sp}}=\tilde{Ξ}_{\mathrm{sp}} b$, and $c(M)$ is the coefficient matrix of $M$ in the basis of the sixteen products. Each generator is one cell,
+The gammas are a frame of $\mathrm{Cl}_{1,3}(\mathbb{C})=M_4(\mathbb{C})$, not a different algebra. Here $L_a$ and $R_b$ are the left and right multiplications, $L_a\tilde{Ξ}_{\mathrm{sp}}=a\tilde{Ξ}_{\mathrm{sp}}$ and $R_b\tilde{Ξ}_{\mathrm{sp}}=\tilde{Ξ}_{\mathrm{sp}} b$, and $c(M)$ is the coefficient matrix of $M$ in the basis of the sixteen products. Each generator is one basis operator,
 $$
 \gamma_0=iL_{\mathrm{pau},e_t}R_{\mathrm{pau},\vec e_x}=iR_{\mathrm{pau},\vec e_x},\qquad
 \gamma_1=iL_{\mathrm{pau},\vec e_x}R_{\mathrm{pau},\vec e_y},\qquad
@@ -422,9 +422,9 @@ with the interval and the orientation
 $$
 -{r'_{t}}^2+r_x^2+r_y^2+r_z^2,\qquad \epsilon_{0123}=+1 .
 $$
-The four directions carry the unit metric $\delta_{\mu\nu}$, and the one minus of the interval is the square of the $i$ in $Q_t=i r'_t$. The time generator is a **right** multiplication, the three spatial ones are **left-times-right**, and the mass unit $L_{\mathrm{pau},e_t}$ is the identity: the asymmetry is the frame, not a choice, and it is why the gradient $\tilde\nabla$ and the momentum $\tilde P_{\Phi}$ enter the cell formulation with one generator of each type.
+The four directions carry the unit metric $\delta_{\mu\nu}$, and the one minus of the interval is the square of the $i$ in $Q_t=i r'_t$. The time generator is a **right** multiplication, the three spatial ones are **left-times-right**, and the mass unit $L_{\mathrm{pau},e_t}$ is the identity: the asymmetry is the frame, not a choice, and it is why the gradient $\tilde\nabla$ and the momentum $\tilde P_{\Phi}$ enter the basis operator formulation with one generator of each type.
 
-Every factor of $i$ in these cells is the same central unit, so $i^2=-1$; the squares then come out with the weight's signs, and the two minus signs involved are distinct. For the time generator,
+Every factor of $i$ in these basis operators is the same central unit, so $i^2=-1$; the squares then come out with the weight's signs, and the two minus signs involved are distinct. For the time generator,
 $$
 (\gamma_0)^2 = i^2\,R_{\mathrm{pau},\vec e_x}R_{\mathrm{pau},\vec e_x} = i^2\,R_{\mathrm{pau},\vec e_x\vec e_x} = i^2\,R_{\mathrm{pau},-e_t} = (-1)(-1)\,I_4 = +I_4 ,
 $$
@@ -446,15 +446,15 @@ $$
 (\gamma_k)^2 = i^2\,L_{\mathrm{axf},\vec e_k}L_{\mathrm{axf},\vec e_k}\,R_{\mathrm{axf},\vec e_y}R_{\mathrm{axf},\vec e_y} = i^2\,(+I_4) = -I_4 ,
 $$
 
-because both quaternion squares are $-e_t$ and their product is $+I_4$. The squares carry the whole of the signs: the time cell squares to $+I_4$ and the spatial cells to $-I_4$, and the anticommutation relations below hold in every frame.
+because both quaternion squares are $-e_t$ and their product is $+I_4$. The squares carry the whole of the signs: the time basis operator squares to $+I_4$ and the spatial basis operators to $-I_4$, and the anticommutation relations below hold in every frame.
 
 A product $M=ab$ of two elements has the coefficient matrix $c(M)_{ij}=a_ib_j$, of rank one: the products therefore fill the seven-dimensional cone $\operatorname{rank}c(M)\le1$ inside the sixteen-dimensional algebra, a general element is a sum of at most four of them, and $\ell(M)=\operatorname{rank}c(M)$ is that number.
 
-The central grading of the complexified algebra, $\chi=i\tilde{Ζ}_{\mathrm{ad}}$ with $\chi^2=e_t$, is a different object from $\gamma_5$: $\xi$ lives in the algebra, where the two central idempotents are $\tfrac12(e_t\pm\xi)$, while $\gamma_5=-iL_{\mathrm{pau},e_t}R_{\mathrm{pau},\vec e_z}$ is its representative on the Dirac module. That $\gamma_5$ is the same cell as the chirality cell $-iR_{\mathrm{pau},\vec e_z}$ of the spin section is why one factor separates the two helicities of the photon and the two spin states of the electron.
+The central grading of the complexified algebra, $\chi=i\tilde{Ζ}_{\mathrm{ad}}$ with $\chi^2=e_t$, is a different object from $\gamma_5$: $\xi$ lives in the algebra, where the two central idempotents are $\tfrac12(e_t\pm\xi)$, while $\gamma_5=-iL_{\mathrm{pau},e_t}R_{\mathrm{pau},\vec e_z}$ is its representative on the Dirac module. That $\gamma_5$ is the same basis operator as the chirality basis operator $-iR_{\mathrm{pau},\vec e_z}$ of the spin section is why one factor separates the two helicities of the photon and the two spin states of the electron.
 
-The dictionary is complex-linear; over $\mathbb{R}$ the products span $\mathrm{Cl}_{1,3}(\mathbb{R})\cong M_2(\mathbb{H})$ and the cells span $\mathrm{Cl}_{3,1}(\mathbb{R})\cong M_4(\mathbb{R})$.
+The dictionary is complex-linear; over $\mathbb{R}$ the products span $\mathrm{Cl}_{1,3}(\mathbb{R})\cong M_2(\mathbb{H})$ and the basis operators span $\mathrm{Cl}_{3,1}(\mathbb{R})\cong M_4(\mathbb{R})$.
 
-**The identities the bodies cite.** In the $\gamma$ reading, with $\varepsilon=(1,-1,-1,-1)$ the sign vector of the cells,
+**The identities the bodies cite.** In the $\gamma$ reading, with $\varepsilon=(1,-1,-1,-1)$ the sign vector of the basis operators,
 $$
 \{\gamma_\mu,\gamma_\nu\}=2\varepsilon_\mu\delta_{\mu\nu}I_4,\qquad
 (\gamma_k)^2=-I_4,\qquad
@@ -478,16 +478,16 @@ $$
 $$
 The contraction sums follow from the squares. With one index raised, $\gamma^\mu=-\varepsilon_\mu\gamma_\mu$, so that $\sum_\mu\gamma^\mu\gamma_\mu=-4I_4$, $\sum_\mu\gamma^\mu\gamma_\alpha\gamma_\mu=2\gamma_\alpha$, $\sum_\mu\gamma^\mu\gamma_\alpha\gamma_\beta\gamma_\mu=-4\varepsilon_\alpha\delta_{\alpha\beta}I_4$ and $\sum_\mu\gamma^\mu\gamma_\gamma\gamma_\beta\gamma_\alpha\gamma_\mu=-2\gamma_\gamma\gamma_\beta\gamma_\alpha$.
 
-The fifth cell is $\gamma_0\gamma_1\gamma_2\gamma_3=-i\gamma_5=-R_{\mathrm{pau},\vec e_z}=-L_{\mathrm{axf},e_t}R_{\mathrm{axf},\vec e_z}$, the same cell written in the two displays.
+The fifth basis operator is $\gamma_0\gamma_1\gamma_2\gamma_3=-i\gamma_5=-R_{\mathrm{pau},\vec e_z}=-L_{\mathrm{axf},e_t}R_{\mathrm{axf},\vec e_z}$, the same basis operator written in the two displays.
 
-The four contraction sums are statements about the squares, because a cell's square is. For generators that all square to $+I_4$ (written $\Gamma_\mu$ here), they take the textbook values,
+The four contraction sums are statements about the squares, because a basis operator's square is. For generators that all square to $+I_4$ (written $\Gamma_\mu$ here), they take the textbook values,
 $$
 \sum_\mu\Gamma_\mu\Gamma_\mu=4I_4,\qquad
 \sum_\mu\Gamma_\mu\Gamma_\alpha\Gamma_\mu=-2\Gamma_\alpha,\qquad
 \sum_\mu\Gamma_\mu\Gamma_\alpha\Gamma_\beta\Gamma_\mu=4\delta_{\alpha\beta}I_4,\qquad
 \sum_\mu\Gamma_\mu\Gamma_\alpha\Gamma_\beta\Gamma_\gamma\Gamma_\mu=-2\Gamma_\gamma\Gamma_\beta\Gamma_\alpha .
 $$
-For the cells of this article only the even one is a plain trace: $\sum_\mu\gamma_\mu\gamma_\mu=-2I_4$, since $\gamma_0^2=+I_4$ and the three spatial squares are $-I_4$. The odd ones depend on the signs as written, and the two that follow from the weight are worth recording, because the weight is not $\delta_{\mu\nu}$: with all indices down,
+For the basis operators of this article only the even one is a plain trace: $\sum_\mu\gamma_\mu\gamma_\mu=-2I_4$, since $\gamma_0^2=+I_4$ and the three spatial squares are $-I_4$. The odd ones depend on the signs as written, and the two that follow from the weight are worth recording, because the weight is not $\delta_{\mu\nu}$: with all indices down,
 $$
 \sum_\mu\gamma_\mu\gamma_0\gamma_\mu=4\gamma_0,\qquad
 \sum_\mu\gamma_\mu\gamma_k\gamma_\mu=0 ,
@@ -499,7 +499,7 @@ $$
 \tilde\nabla\tilde{Ξ}_{\mathrm{sp},R} = k_m\tilde{Ξ}_{\mathrm{sp},L} ,\qquad
 \tilde\nabla^{\natural}\tilde{Ξ}_{\mathrm{sp},L} = k_m\tilde{Ξ}_{\mathrm{sp},R} ,
 $$
-in which the gradient acts by left multiplication only, the field is a section of $\Delta = S\oplus S^{\mathrm c}$, and the mass is the off-diagonal pairing of the two chiral halves. Its plane-wave reduction is the eigenvalue problem of the symbol cell of the spin section,
+in which the gradient acts by left multiplication only, the field is a section of $\Delta = S\oplus S^{\mathrm c}$, and the mass is the off-diagonal pairing of the two chiral halves. Its plane-wave reduction is the eigenvalue problem of the symbol basis operator of the spin section,
 $$
 D(p) = p_{0}\,\gamma_0-\sum_k p_{k}\,\gamma_k+m\,L_{\mathrm{pau},e_t}R_{\mathrm{pau},e_t} ,
 \qquad
@@ -514,7 +514,7 @@ D(p) = p_{0}\,\gamma_0-\sum_k p_{k}\,\gamma_k+m\,L_{\mathrm{axf},e_t}R_{\mathrm{
 D(p)\tilde{Ξ}_{\mathrm{sp}} = 2m\,c\,\tilde{Ξ}_{\mathrm{sp}} \ \ \text{on the positive-frequency solutions},
 $$
 
-and the cell obeys $D(p)^2 = 2m\,c\,D(p)$ on shell, so $D(p)/2m\,c$ is the projector of rank two that the previous section uses. The cell that carries its chirality is $\gamma_5=-iR_{\mathrm{axf},\vec e_z}$, a pure right multiplier, and its projectors $\tfrac12(1\pm\gamma_5)$ separate the chiral halves; the central sign $\chi=i\tilde{Ζ}_{\mathrm{ad}}$ is the same operator written centrally, and $\tfrac12(e_t\pm\xi)$ are its central idempotents.
+and the basis operator obeys $D(p)^2 = 2m\,c\,D(p)$ on shell, so $D(p)/2m\,c$ is the projector of rank two that the previous section uses. The basis operator that carries its chirality is $\gamma_5=-iR_{\mathrm{axf},\vec e_z}$, a pure right multiplier, and its projectors $\tfrac12(1\pm\gamma_5)$ separate the chiral halves; the central sign $\chi=i\tilde{Ζ}_{\mathrm{ad}}$ is the same operator written centrally, and $\tfrac12(e_t\pm\xi)$ are its central idempotents.
 
 The second is Kravchenko's **two-sided** equation, the dictionary form on $\mathbb{B}$,
 $$
@@ -522,19 +522,19 @@ $$
 \qquad\text{that is}\qquad
 -\tilde\nabla^{\natural}F - k_mi\,\overline{F}\,\vec e_z = 0
 $$
-where $D_3=\sum_k\vec e_k\,\partial/\partial R_k$ is the three-dimensional Cauchy–Riemann operator, the bar is the componentwise conjugation and $\vec e_z$ multiplies from the right. Its mass term is a conjugation together with a fixed direction rather than an off-diagonal pairing, the cell that carries its split is $\gamma_5=i\omega$ with $\omega=-L_{\mathrm{pau},e_t}R_{\mathrm{pau},\vec e_z}$, and its analytic machinery is the Cauchy theory of the dictionary article.
+where $D_3=\sum_k\vec e_k\,\partial/\partial R_k$ is the three-dimensional Cauchy–Riemann operator, the bar is the componentwise conjugation and $\vec e_z$ multiplies from the right. Its mass term is a conjugation together with a fixed direction rather than an off-diagonal pairing, the basis operator that carries its split is $\gamma_5=i\omega$ with $\omega=-L_{\mathrm{pau},e_t}R_{\mathrm{pau},\vec e_z}$, and its analytic machinery is the Cauchy theory of the dictionary article.
 
 | Aspect | One-sided equation | Two-sided equation |
 |---|---|---|
 | Form | $\tilde\nabla\tilde{Ξ}_{\mathrm{sp},R}=k_m\tilde{Ξ}_{\mathrm{sp},L}$, $\tilde\nabla^\natural\tilde{Ξ}_{\mathrm{sp},L}=k_m\tilde{Ξ}_{\mathrm{sp},R}$ | $\mathcal{N}F=0$, that is $-\tilde\nabla^{\natural}F-k_mi\,\overline{F}\,\vec e_z=0$ |
 | Multiplication | left, by $\tilde\nabla$ and $\tilde\nabla^\natural$ | left, plus right by $\vec e_z$ in the mass term, plus the antilinear bar |
 | Mass | off-diagonal pairing of $S$ and $S^{\mathrm c}$ | $-k_mi\,\overline{F}\,\vec e_z$ |
-| Chirality | the side: the right slot for a right multiplier, both slots for a central scalar | the cell that realises the split is $\gamma_5=-iL_{\mathrm{pau},e_t}R_{\mathrm{pau},\vec e_z}=i\omega$, with $\omega=-L_{\mathrm{pau},e_t}R_{\mathrm{pau},\vec e_z}$; in the axis-free display $\gamma_5=-iL_{\mathrm{axf},e_t}R_{\mathrm{axf},\vec e_z}=i\omega$, with $\omega=-L_{\mathrm{axf},e_t}R_{\mathrm{axf},\vec e_z}$ |
+| Chirality | the side: the right slot for a right multiplier, both slots for a central scalar | the basis operator that realises the split is $\gamma_5=-iL_{\mathrm{pau},e_t}R_{\mathrm{pau},\vec e_z}=i\omega$, with $\omega=-L_{\mathrm{pau},e_t}R_{\mathrm{pau},\vec e_z}$; in the axis-free display $\gamma_5=-iL_{\mathrm{axf},e_t}R_{\mathrm{axf},\vec e_z}=i\omega$, with $\omega=-L_{\mathrm{axf},e_t}R_{\mathrm{axf},\vec e_z}$ |
 | Use | kinematics, spin sums, and this article | the dictionary, the Cauchy theory, the integral representation |
 
-The two are related by the dictionary and are not the same operator; the scattering problem uses only the first, with the second entering exclusively through the identity of the cell.
+The two are related by the dictionary and are not the same operator; the scattering problem uses only the first, with the second entering exclusively through the identity of the basis operator.
 
-**The display.** Every array printed in this section is given twice: in the Peirce display first, labelled $\mathrm{pau}$, whose arrays are the ones the literature prints, and in the axis-free display after it, labelled $\mathrm{axf}$, which is the display of the body and of the corpus. The two are carried into one another by $L_{\mathrm{axf},e_\mu}=C_{\Pi}L_{\mathrm{pau},e_\mu}C_{\Pi}^{-1}$, and a conjugation by $C_{\Pi}$ changes no product, no anticommutator, no trace and no determinant, so every identity of the section holds in both. An array is a statement about one display; a cell named in the running text keeps the Peirce label, and its axis-free array is the conjugate. The label names the array and not the operator.
+**The display.** Every array printed in this section is given twice: in the Peirce display first, labelled $\mathrm{pau}$, whose arrays are the ones the literature prints, and in the axis-free display after it, labelled $\mathrm{axf}$, which is the display of the body and of the corpus. The two are carried into one another by $L_{\mathrm{axf},e_\mu}=C_{\Pi}L_{\mathrm{pau},e_\mu}C_{\Pi}^{-1}$, and a conjugation by $C_{\Pi}$ changes no product, no anticommutator, no trace and no determinant, so every identity of the section holds in both. An array is a statement about one display; a basis operator named in the running text keeps the Peirce label, and its axis-free array is the conjugate. The label names the array and not the operator.
 
 ## Summary
 

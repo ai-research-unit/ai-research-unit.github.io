@@ -137,7 +137,7 @@ $$
 \star\tilde{F} = -i\tilde{F} = \tilde{F}(-i),
 $$
 
-the scalar imaginary being central, so that left and right multiplication agree. The statement is intrinsic: no Clifford generator, no gamma matrix (no cell $T_{\mu\nu}$), and no choice of representation enters. The Hodge dual of the framework's field strength is the scalar imaginary acting on the vector part of the algebra.
+the scalar imaginary being central, so that left and right multiplication agree. The statement is intrinsic: no Clifford generator, no gamma matrix (no basis operator $T_{\mu\nu}$), and no choice of representation enters. The Hodge dual of the framework's field strength is the scalar imaginary acting on the vector part of the algebra.
 
 ## The Self-Dual and Anti-Self-Dual Split
 

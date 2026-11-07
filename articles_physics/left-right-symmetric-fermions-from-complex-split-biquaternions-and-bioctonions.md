@@ -53,11 +53,11 @@ which carries each half to the other, with $\omega^2=1$, $\omega$ central and $\
 $$
 L_aL_b=L_{ab},\qquad R_bR_c=R_{cb},
 $$
-so the left action generates a copy of $\mathbb{H}$ and the right action the opposite algebra $\mathbb{H}_{\mathrm{opp}}$, which is isomorphic to $\mathbb{H}$ through conjugation but is a different copy. The imaginary part of each is a Lie algebra isomorphic to $\mathrm{su}(2)$; the real span of the six cells $L_{\mathrm{axf},\vec e_k},R_{\mathrm{axf},\vec e_k}$ is $\mathrm{so}(4)\cong\mathrm{su}(2)\oplus\mathrm{su}(2)$, and the two $\mathrm{su}(2)$'s commute. Together the two actions generate the full endomorphism algebra,
+so the left action generates a copy of $\mathbb{H}$ and the right action the opposite algebra $\mathbb{H}_{\mathrm{opp}}$, which is isomorphic to $\mathbb{H}$ through conjugation but is a different copy. The imaginary part of each is a Lie algebra isomorphic to $\mathrm{su}(2)$; the real span of the six basis operators $L_{\mathrm{axf},\vec e_k},R_{\mathrm{axf},\vec e_k}$ is $\mathrm{so}(4)\cong\mathrm{su}(2)\oplus\mathrm{su}(2)$, and the two $\mathrm{su}(2)$'s commute. Together the two actions generate the full endomorphism algebra,
 $$
 \boxed{\;\operatorname{span}_{\mathbb{C}}\{\,L_aR_b:a,b\in\mathbb{B}\,\} = \operatorname{End}_{\mathbb{C}}(\mathbb{B}) \cong M_4(\mathbb{C}) \cong \mathrm{Cl}(4)\;},
 $$
-the complexified Dirac algebra, of complex dimension $16$. These statements were checked on the four-dimensional model of $\mathbb{B}$: the left and right actions commute identically, $L_{\mathrm{axf},\vec e_x}L_{\mathrm{axf},\vec e_y}=L_{\mathrm{axf},\vec e_z}$ while $R_{\mathrm{axf},\vec e_x}R_{\mathrm{axf},\vec e_y}=R_{\mathrm{axf},\vec e_y}R_{\mathrm{axf},\vec e_x}=-R_{\mathrm{axf},\vec e_z}$, each action spans a four-dimensional algebra, the six imaginary cells span a six-dimensional Lie algebra closed under the commutator, and the span of the sixteen cells $L_aR_b$ is sixteen-dimensional, i.e. all of $M_4(\mathbb{C})$.
+the complexified Dirac algebra, of complex dimension $16$. These statements were checked on the four-dimensional model of $\mathbb{B}$: the left and right actions commute identically, $L_{\mathrm{axf},\vec e_x}L_{\mathrm{axf},\vec e_y}=L_{\mathrm{axf},\vec e_z}$ while $R_{\mathrm{axf},\vec e_x}R_{\mathrm{axf},\vec e_y}=R_{\mathrm{axf},\vec e_y}R_{\mathrm{axf},\vec e_x}=-R_{\mathrm{axf},\vec e_z}$, each action spans a four-dimensional algebra, the six imaginary basis operators span a six-dimensional Lie algebra closed under the commutator, and the span of the sixteen basis operators $L_aR_b$ is sixteen-dimensional, i.e. all of $M_4(\mathbb{C})$.
 
 ## The Left-Right Symmetric Interpretation
 
@@ -69,7 +69,7 @@ $$
 
 That is the charge multiset of half a generation, and the summand's conjugate ideal supplies the antiparticles, exactly as in the undoubled construction of the particle-roster article.
 
-**The chirality trap.** The chirality is carried by **which set** a state comes from and not by its expression: the source's own equations give the same element $\tfrac12(1+ie_1e_2)$ for the left-handed neutrino of the first set and the right-handed neutrino of the second, and the source says so explicitly. That element is idempotent for the usual reason, $(ie_1e_2)^2=i^2\,e_1e_2e_1e_2=(-1)(-1)=+1$, with $e_1,e_2$ the chain-algebra generators of the summand. Operator chirality names the trap exactly: a chirality is not an element that two states could share or fail to share, it is a side, the eigenspace of the frame's fifth cell (*Operator Chirality on the Biquaternion Algebra*), and for the chain algebra it is which summand the state comes from. The corpus's warning to itself here is that an idempotent of the right-action factor, $\tfrac12(e_t+i\vec e_z)$, has the same *shape* as the chain idempotent $\tfrac12(1+ie_1e_2)$ and has been read as a chirality on the strength of that shape; the two are different objects, and the one root at which the idempotent's ideal and a chiral half coincide is recorded as a coincidence in *The Legacy Pauli Gamma Formulation*. A reader who looks for two different algebraic expressions for the two chiralities will not find them; the element that gives the sets their relative sign is the volume element $\omega$, treated below, while the automorphism that exchanges the two summands is $\sigma$.
+**The chirality trap.** The chirality is carried by **which set** a state comes from and not by its expression: the source's own equations give the same element $\tfrac12(1+ie_1e_2)$ for the left-handed neutrino of the first set and the right-handed neutrino of the second, and the source says so explicitly. That element is idempotent for the usual reason, $(ie_1e_2)^2=i^2\,e_1e_2e_1e_2=(-1)(-1)=+1$, with $e_1,e_2$ the chain-algebra generators of the summand. Operator chirality names the trap exactly: a chirality is not an element that two states could share or fail to share, it is a side, the eigenspace of the frame's fifth basis operator (*Operator Chirality on the Biquaternion Algebra*), and for the chain algebra it is which summand the state comes from. The corpus's warning to itself here is that an idempotent of the right-action factor, $\tfrac12(e_t+i\vec e_z)$, has the same *shape* as the chain idempotent $\tfrac12(1+ie_1e_2)$ and has been read as a chirality on the strength of that shape; the two are different objects, and the one root at which the idempotent's ideal and a chiral half coincide is recorded as a coincidence in *The Legacy Pauli Gamma Formulation*. A reader who looks for two different algebraic expressions for the two chiralities will not find them; the element that gives the sets their relative sign is the volume element $\omega$, treated below, while the automorphism that exchanges the two summands is $\sigma$.
 
 **The weak factors from the two actions.** The weak $\mathrm{SU}(2)$ factors come from a different place, and the two facts of the previous section have to be kept apart. The doubling supplies the two chiralities, and the two commuting quaternion actions of the biquaternion algebra supply two commuting $\mathrm{su}(2)$ algebras. The interpretation is that the left action is $\mathrm{SU}(2)_L$ and the right action is $\mathrm{SU}(2)_R$: the left multiplications act on the internal biquaternion index of the states, the right multiplications act on a separate one, and the two commute by the computation above, so that the states of the doubled construction can be organised into doublets of the left action and doublets of the right action without the two actions interfering. The second non-abelian factor that the undoubled construction had to leave to an interpretation, whose absence makes the minimal version non-chiral, is here supplied by the right action, and the electroweak factor of the enlarged theory is the $\mathrm{su}(2)\oplus\mathrm{su}(2)=\mathrm{so}(4)$ of the previous section. What the two actions supply, and what they do not, is stated in *The Two Actions and the Chirality* below: the left action is chirality-diagonal, the right action is chirality-mixing, and the source's sharper statement, that each factor acts on one chirality, is a statement about a selected ideal and not about the two actions.
 
@@ -89,7 +89,7 @@ in which the colour $\mathrm{SU}(3)_c$ and the baryon-minus-lepton number $\math
 
 The construction is a finite algebra, and the source writes no equation of motion. The corpus's dictionary does supply one, and it is worth writing here because it separates two things that the construction runs together: the two sides of the action and the two chiralities. The equation comes in two forms, and they must not be read as one.
 
-**The one-sided pair.** The biquaternion Dirac field is an element of $\mathbb{B}$, and chirality is its subscript in the sense of *Operator Chirality on the Biquaternion Algebra*: the side is the slot of an operator, and a state has a value only as the eigenvalue of a cell, here $\tilde{Ξ}_{\mathrm{sp},L}$ in the $-1$ eigenspace of $-iR_{\vec e_z}$ and $\tilde{Ξ}_{\mathrm{sp},R}$ in the $+1$, so the field is one of the two and the pair below is a pair of *equations*, not a pair of halves. The equation is the chirality-off-diagonal pair
+**The one-sided pair.** The biquaternion Dirac field is an element of $\mathbb{B}$, and chirality is its subscript in the sense of *Operator Chirality on the Biquaternion Algebra*: the side is the slot of an operator, and a state has a value only as the eigenvalue of a basis operator, here $\tilde{Ξ}_{\mathrm{sp},L}$ in the $-1$ eigenspace of $-iR_{\vec e_z}$ and $\tilde{Ξ}_{\mathrm{sp},R}$ in the $+1$, so the field is one of the two and the pair below is a pair of *equations*, not a pair of halves. The equation is the chirality-off-diagonal pair
 $$
 \begin{aligned}
 \tilde\nabla\tilde{Ξ}_{\mathrm{sp},R}&=k_m\,\tilde{Ξ}_{\mathrm{sp},L},\\
@@ -102,7 +102,7 @@ with $\tilde\nabla$ the biquaternionic gradient and $\tilde\nabla^{\natural}$ it
 $$
 \tilde\nabla^{\natural}F=m\,(-iR_{\vec e_z})\bar F=-i\,m\,\bar F\,\vec e_z ,
 $$
-where $F\in\mathbb{B}$, $\bar F$ is the coefficient conjugate, and $(-iR_{\vec e_z})\bar F=-i\,\bar F\,\vec e_z$ is the fifth cell of the frame applied to the conjugate. The derivative is a left multiplier and occupies the left slot; the mass is a right multiplier and occupies the right slot, and it squares to the identity for that reason,
+where $F\in\mathbb{B}$, $\bar F$ is the coefficient conjugate, and $(-iR_{\vec e_z})\bar F=-i\,\bar F\,\vec e_z$ is the fifth basis operator of the frame applied to the conjugate. The derivative is a left multiplier and occupies the left slot; the mass is a right multiplier and occupies the right slot, and it squares to the identity for that reason,
 $$
 (-iR_{\vec e_z})^2=(-i)^2R_{\vec e_z}^{\,2}=(-1)(-e_t)=e_t ,
 $$
@@ -114,15 +114,15 @@ so the mass operation is an involution. The two sides of the equation are thus t
 
 The interpretation above identifies the left action with $\mathrm{SU}(2)_L$ and the right action with $\mathrm{SU}(2)_R$. The next question is how each action stands to the chirality, and that answer needs no choice.
 
-**The chirality splitting.** By *Operator Chirality on the Biquaternion Algebra*, the chirality of a state is the side on which it is multiplied, and on the elements it is read from the fifth cell of the frame, $-iR_{\vec e_z}$, which is a pure right multiplier:
+**The chirality splitting.** By *Operator Chirality on the Biquaternion Algebra*, the chirality of a state is the side on which it is multiplied, and on the elements it is read from the fifth basis operator of the frame, $-iR_{\vec e_z}$, which is a pure right multiplier:
 $$
 (-iR_{\vec e_z})\tilde X=-i\,\tilde X\vec e_z,\qquad
 \tilde X_L=\tfrac12\bigl(\tilde X+i\,\tilde X\vec e_z\bigr),\qquad
 \tilde X_R=\tfrac12\bigl(\tilde X-i\,\tilde X\vec e_z\bigr).
 $$
-The cell squares to the identity, $(-iR_{\vec e_z})^2=(-i)^2R_{\vec e_z}^{\,2}=(-1)(-e_t)=e_t$, and its two eigenvalues are $-1$ and $+1$, each twice, so $\mathbb{B}=\mathbb{B}_L\oplus\mathbb{B}_R$ with each half of complex dimension two. The definition uses the frame and nothing else: no root, no idempotent, no ideal, no Clifford relation.
+The basis operator squares to the identity, $(-iR_{\vec e_z})^2=(-i)^2R_{\vec e_z}^{\,2}=(-1)(-e_t)=e_t$, and its two eigenvalues are $-1$ and $+1$, each twice, so $\mathbb{B}=\mathbb{B}_L\oplus\mathbb{B}_R$ with each half of complex dimension two. The definition uses the frame and nothing else: no root, no idempotent, no ideal, no Clifford relation.
 
-**The left action preserves both halves.** The two multipliers of a cell commute, $L_aR_b=R_bL_a$, so $L_a$ commutes with $-iR_{\vec e_z}$ for every $a$: a left multiplication carries $\mathbb{B}_L$ into itself and $\mathbb{B}_R$ into itself. No element is excluded, so the whole three-dimensional $\mathrm{su}(2)_L$, and the central direction with it, is chirality-diagonal.
+**The left action preserves both halves.** The two multipliers of a basis operator commute, $L_aR_b=R_bL_a$, so $L_a$ commutes with $-iR_{\vec e_z}$ for every $a$: a left multiplication carries $\mathbb{B}_L$ into itself and $\mathbb{B}_R$ into itself. No element is excluded, so the whole three-dimensional $\mathrm{su}(2)_L$, and the central direction with it, is chirality-diagonal.
 
 **The right action moves them.** A right multiplication commutes with $-iR_{\vec e_z}$ only when its multiplier commutes with $\vec e_z$, since $R_bR_c=R_{cb}$, so the commuting right multipliers are the two-dimensional span of $e_t$ and $\vec e_z$. The weaker question, whether $R_b$ keeps one half inside itself, has a wider answer, and it is the one that matters: in the display where the elements are $2\times2$ matrices and $\vec e_z$ is minus $i$ times the third Pauli unit, the $L$ half is the first column and the $R$ half the second, and $R_b$ keeps the first column inside itself exactly when $b$ is upper triangular. That is a three-dimensional subalgebra, the span of $e_t$, $\vec e_z$ and $\vec e_x+i\vec e_y$, and $\mathrm{su}(2)_R=\operatorname{span}(\vec e_x,\vec e_y,\vec e_z)$ is not it: $\vec e_x$ carries the first column out of itself, into a matrix with both columns occupied. For a generic $b$ the image of $\mathbb{B}_L$ meets both halves.
 
@@ -136,15 +136,15 @@ The source notes that the right action of $\mathbb{C}\otimes\mathbb{H}$ on $\mat
 $$
 \mathrm{Cl}(3)\otimes_{\mathbb{C}}(\mathbb{C}\otimes\mathbb{H})_{\mathrm{opp}}\cong M_4(\mathbb{C})\oplus M_4(\mathbb{C})\cong\mathrm{Cl}(5)\cong\mathrm{Cl}(6)^+ ,
 $$
-of complex dimension $32$ and with a two-dimensional centre. Read on one chirality — the sixteen cells $L_aR_b$ with both factors in $\mathbb{B}$ — the same construction gives the smaller algebra $\mathrm{Cl}(4)\cong\operatorname{End}_{\mathbb{C}}(\mathbb{B})\cong M_4(\mathbb{C})$, which is the source's "the right action on $\mathbb{C}\otimes\mathbb{H}$ gives $\mathrm{Cl}(4)$". What remains the source's, and is recorded as such, is the identification of the Coxeter element with a parity-reversal operator.
+of complex dimension $32$ and with a two-dimensional centre. Read on one chirality — the sixteen basis operators $L_aR_b$ with both factors in $\mathbb{B}$ — the same construction gives the smaller algebra $\mathrm{Cl}(4)\cong\operatorname{End}_{\mathbb{C}}(\mathbb{B})\cong M_4(\mathbb{C})$, which is the source's "the right action on $\mathbb{C}\otimes\mathbb{H}$ gives $\mathrm{Cl}(4)$". What remains the source's, and is recorded as such, is the identification of the Coxeter element with a parity-reversal operator.
 
-**Two rungs, two volume elements.** The Coxeter element the source writes is an object of the second rung, and the biquaternion dictionary does not name it. The algebra generated acts on the eight-dimensional $\mathrm{Cl}(3)$ and has dimension $32$; the cells $L_aR_b$ with both factors in $\mathbb{B}$ span only the first rung,
+**Two rungs, two volume elements.** The Coxeter element the source writes is an object of the second rung, and the biquaternion dictionary does not name it. The algebra generated acts on the eight-dimensional $\mathrm{Cl}(3)$ and has dimension $32$; the basis operators $L_aR_b$ with both factors in $\mathbb{B}$ span only the first rung,
 $$
 \mathbb{B}^{\mathrm{e}}=\mathbb{B}\otimes_{\mathbb{C}}\mathbb{B}_{\mathrm{opp}}\cong M_4(\mathbb{C})\cong\mathrm{Cl}(4),
 $$
 of dimension $16$, acting on the four-dimensional $\mathbb{B}$.
 
-The volume element of the first rung is the product of the four frame cells written in *The Legacy Pauli Gamma Formulation*,
+The volume element of the first rung is the product of the four frame basis operators written in *The Legacy Pauli Gamma Formulation*,
 $$
 i\,(iL_{\mathrm{axf},e_t}R_{\mathrm{axf},\vec e_x})(iL_{\mathrm{axf},\vec e_x}R_{\mathrm{axf},\vec e_y})(iL_{\mathrm{axf},\vec e_y}R_{\mathrm{axf},\vec e_y})(iL_{\mathrm{axf},\vec e_z}R_{\mathrm{axf},\vec e_y})=-iL_{\mathrm{axf},e_t}R_{\mathrm{axf},\vec e_z},
 $$
@@ -158,7 +158,7 @@ using $R_bR_c=R_{cb}$, so that $R_{\mathrm{axf},\vec e_x}R_{\mathrm{axf},\vec e_
 $$
 \bigl(L_\omega R_{\mathrm{axf},-\vec e_z}\bigr)^2=L_{\omega^2}R_{\mathrm{axf},(-\vec e_z)^2}=L_1R_{\mathrm{axf},-e_t}=-I_8,
 $$
-with $\omega^2=1$ and $\vec e_z^{\,2}=-e_t$. That is why the Coxeter element is not the first rung's fifth cell: it multiplies by the volume element on the left and by a bivector on the right, and it acts on the algebra rather than on $\mathbb{B}$. The corpus therefore states the dictionary at the rung where it is exact and records the $\mathrm{Cl}(5)$ Coxeter element as an object of the larger algebra, which is the algebra this article already declares outside the sixteen cells.
+with $\omega^2=1$ and $\vec e_z^{\,2}=-e_t$. That is why the Coxeter element is not the first rung's fifth basis operator: it multiplies by the volume element on the left and by a bivector on the right, and it acts on the algebra rather than on $\mathbb{B}$. The corpus therefore states the dictionary at the rung where it is exact and records the $\mathrm{Cl}(5)$ Coxeter element as an object of the larger algebra, which is the algebra this article already declares outside the sixteen basis operators.
 
 ## The Volume Element as the Higgs Candidate
 
@@ -240,7 +240,7 @@ The Pauli and gamma formulation is legacy: the reasons are explained in the arti
 
 Every section but this one is written on the algebra; here the same objects are written as gamma matrices, for readers who want the standard notation. The gammas are a frame of $\mathrm{Cl}_{1,3}(\mathbb{C})=M_4(\mathbb{C})$, not a different algebra.
 
-The cells are those of the setup, $L_aR_b$ with $x\mapsto axb$ and the right factors multiplying in reverse order; $c(M)$ is the coefficient matrix of $M$ in the basis of the sixteen products, and $\ell(M)=\operatorname{rank}c(M)$ its cell rank. The frame is
+The basis operators are those of the setup, $L_aR_b$ with $x\mapsto axb$ and the right factors multiplying in reverse order; $c(M)$ is the coefficient matrix of $M$ in the basis of the sixteen products, and $\ell(M)=\operatorname{rank}c(M)$ its basis operator rank. The frame is
 $$
 \begin{aligned}
 \gamma_0&=iL_{\mathrm{pau},e_t}R_{\mathrm{pau},\vec e_x}, & \gamma_1&=iL_{\mathrm{pau},\vec e_x}R_{\mathrm{pau},\vec e_y}, & \gamma_2&=iL_{\mathrm{pau},\vec e_y}R_{\mathrm{pau},\vec e_y},\\
@@ -257,7 +257,7 @@ $$
 \end{aligned}
 $$
 
-Every gamma is a single cell. The single cells are the pure tensors; they form the seven-dimensional cone $\ell(M)\le1$, and a general element of the algebra is a sum of at most four of them.
+Every gamma is a single basis operator. The single basis operators are the pure tensors; they form the seven-dimensional cone $\ell(M)\le1$, and a general element of the algebra is a sum of at most four of them.
 
 **The relations, and where the signs come from.** With $\varepsilon=(1,-1,-1,-1)$,
 $$
@@ -266,7 +266,7 @@ $$
 \{\gamma_\mu,\gamma_5\}&=0, & \gamma_5^2&=I_4.
 \end{aligned},
 \qquad \varepsilon=(1,-1,-1,-1),$$
-Each entry is the cell rule with $i^2=-1$ and $\vec e_k^{\,2}=-e_t$. The first pair, for instance,
+Each entry is the basis operator rule with $i^2=-1$ and $\vec e_k^{\,2}=-e_t$. The first pair, for instance,
 $$
 \begin{aligned}
 \gamma_0\gamma_1&=i^2\,L_{\mathrm{pau},e_t}L_{\mathrm{pau},\vec e_x}\,R_{\mathrm{pau},\vec e_x}R_{\mathrm{pau},\vec e_y}=-L_{\mathrm{pau},\vec e_x}R_{\mathrm{pau},-\vec e_z}=+L_{\mathrm{pau},\vec e_x}R_{\mathrm{pau},\vec e_z},\\
@@ -285,11 +285,11 @@ $$
 
 since $e_t$ is the unit and $R_{\mathrm{pau},\vec e_x}R_{\mathrm{pau},\vec e_y}=R_{\mathrm{pau},-\vec e_z}$ while $R_{\mathrm{pau},\vec e_y}R_{\mathrm{pau},\vec e_x}=R_{\mathrm{pau},\vec e_z}$, the two right multiplications themselves anticommuting; the signs come from $i^2=-1$ in each product.
 
-**Chirality.** $\gamma_5=-iL_{\mathrm{pau},e_t}R_{\mathrm{pau},\vec e_z}$ is the chirality cell of *The Two Dirac Equations*, and the product of the four frame cells returns it,
+**Chirality.** $\gamma_5=-iL_{\mathrm{pau},e_t}R_{\mathrm{pau},\vec e_z}$ is the chirality basis operator of *The Two Dirac Equations*, and the product of the four frame basis operators returns it,
 $$
 \gamma_0\gamma_1\gamma_2\gamma_3=-R_{\mathrm{axf},\vec e_z},\qquad\text{so}\qquad i\,\gamma_0\gamma_1\gamma_2\gamma_3=-iR_{\mathrm{axf},\vec e_z}=\gamma_5 ,
 $$
-with the four factors carrying $i^4=1$ and the left and right products evaluated as in *Two rungs, two volume elements*. The cell and the corpus's abstract central grading $\xi_{\mathrm{ad}}=i\tilde{Ζ}_{\mathrm{ad}}$ are different objects, and the two must not be confused: $\xi_{\mathrm{ad}}$ is the difference $\Pi_1-\Pi_2$ of the two central idempotents, so $\xi_{\mathrm{ad}}=\omega$ and $\xi_{\mathrm{ad}}^2=e_t$, while $\tilde{Ζ}_{\mathrm{ad}}$ is the central root of $-e_t$ itself, $\tilde{Ζ}_{\mathrm{ad}}=-i\,\omega$, since $(-i\omega)^2=(-i)^2\omega^2=(-1)(+1)=-e_t$. So $\omega$, $\tilde{Ζ}_{\mathrm{ad}}$ and $\gamma_5$ are three different objects: a central element, its root, and the cell that carries it on the module. $\gamma_5$ represents $\xi_{\mathrm{ad}}$ on the Dirac module, as $\pm1$ on the two chiral halves, and the sign of the representation — hence which summand is called left — is the only freedom left.
+with the four factors carrying $i^4=1$ and the left and right products evaluated as in *Two rungs, two volume elements*. The basis operator and the corpus's abstract central grading $\xi_{\mathrm{ad}}=i\tilde{Ζ}_{\mathrm{ad}}$ are different objects, and the two must not be confused: $\xi_{\mathrm{ad}}$ is the difference $\Pi_1-\Pi_2$ of the two central idempotents, so $\xi_{\mathrm{ad}}=\omega$ and $\xi_{\mathrm{ad}}^2=e_t$, while $\tilde{Ζ}_{\mathrm{ad}}$ is the central root of $-e_t$ itself, $\tilde{Ζ}_{\mathrm{ad}}=-i\,\omega$, since $(-i\omega)^2=(-i)^2\omega^2=(-1)(+1)=-e_t$. So $\omega$, $\tilde{Ζ}_{\mathrm{ad}}$ and $\gamma_5$ are three different objects: a central element, its root, and the basis operator that carries it on the module. $\gamma_5$ represents $\xi_{\mathrm{ad}}$ on the Dirac module, as $\pm1$ on the two chiral halves, and the sign of the representation — hence which summand is called left — is the only freedom left.
 
 **Traces.** With $\epsilon_{0123}=+1$,
 $$
@@ -297,11 +297,11 @@ $$
 \mathrm{tr}(\gamma_5\gamma_\mu\gamma_\nu\gamma_\rho\gamma_\sigma)=-4i\,\epsilon_{\mu\nu\rho\sigma}.
 $$
 
-**The dictionary.** It is complex-linear; over $\mathbb{R}$ the products span $\mathrm{Cl}_{1,3}(\mathbb{R})\cong M_2(\mathbb{H})$ and the cells span $\mathrm{Cl}_{3,1}(\mathbb{R})\cong M_4(\mathbb{R})$.
+**The dictionary.** It is complex-linear; over $\mathbb{R}$ the products span $\mathrm{Cl}_{1,3}(\mathbb{R})\cong M_2(\mathbb{H})$ and the basis operators span $\mathrm{Cl}_{3,1}(\mathbb{R})\cong M_4(\mathbb{R})$.
 
-**The display.** Every array printed in this section is given twice: in the Peirce display first, labelled $\mathrm{pau}$, whose arrays are the ones the literature prints, and in the axis-free display after it, labelled $\mathrm{axf}$, which is the display of the body and of the corpus. The two are carried into one another by $L_{\mathrm{axf},e_\mu}=C_{\Pi}L_{\mathrm{pau},e_\mu}C_{\Pi}^{-1}$, and a conjugation by $C_{\Pi}$ changes no product, no anticommutator, no trace and no determinant, so every identity of the section holds in both. An array is a statement about one display; a cell named in the running text keeps the Peirce label, and its axis-free array is the conjugate. The label names the array and not the operator.
+**The display.** Every array printed in this section is given twice: in the Peirce display first, labelled $\mathrm{pau}$, whose arrays are the ones the literature prints, and in the axis-free display after it, labelled $\mathrm{axf}$, which is the display of the body and of the corpus. The two are carried into one another by $L_{\mathrm{axf},e_\mu}=C_{\Pi}L_{\mathrm{pau},e_\mu}C_{\Pi}^{-1}$, and a conjugation by $C_{\Pi}$ changes no product, no anticommutator, no trace and no determinant, so every identity of the section holds in both. An array is a statement about one display; a basis operator named in the running text keeps the Peirce label, and its axis-free array is the conjugate. The label names the array and not the operator.
 
-**A remark on the idempotent construction.** A display labelled *Peirce* in this section is a frame, a choice of basis for the arrays; a Peirce decomposition is what a primitive idempotent produces on the algebra. The two are different kinds of object, and it is the second that this remark is about. The source builds its isospin mechanism from two choices, and the corpus keeps them in view because they are easy to mistake for structure. The first is a primitive idempotent of the right-action factor, $\tilde\Pi_+=\tfrac12(e_t+i\vec e_z)$; a primitive idempotent is a point of the projective line of $\mathbb{B}$, so choosing one chooses a direction in the algebra. The second is the axis $\tau_3=1-2N$ of the ladder factor, which is what makes *interchange* and *annihilate* meaningful for a pair of states. With those two choices the source writes the isospin triple $\tau_a$, the totally isotropic elements $\beta_1=\tfrac12(-\vec e_x+i\vec e_y\tau_3)$ and $\beta_2=\Omega_L^{\dagger}i\vec e_y$, and the four states $V_R$, $V_L$, $e^-_R$, $e^-_L$ built from them, and obtains its statement that the generators annihilate the right-handed pair and interchange the left-handed one. Every step of it is correct and none of it is adopted here, because a Peirce basis is a coordinate choice attached to one idempotent: change the root and the four states change, while the chirality splitting of *Operator Chirality on the Biquaternion Algebra* does not. The rule that follows is that chirality is a side, read from the frame, and that a Peirce decomposition is a coordinate system laid on top of it. The two agree at exactly one root, up to sign: the one aligned with the fifth cell, where the Peirce sign is $P=R_{i\vec e_z}=iR_{\vec e_z}=-\gamma_5$ and the projector on the ideal is $\tfrac12(\mathrm I-\gamma_5)$, the projector on the $L$ half. That agreement is a coincidence of arrays at one root out of the projective line, and it is the origin of every statement that a Peirce idempotent *is* a chirality.
+**A remark on the idempotent construction.** A display labelled *Peirce* in this section is a frame, a choice of basis for the arrays; a Peirce decomposition is what a primitive idempotent produces on the algebra. The two are different kinds of object, and it is the second that this remark is about. The source builds its isospin mechanism from two choices, and the corpus keeps them in view because they are easy to mistake for structure. The first is a primitive idempotent of the right-action factor, $\tilde\Pi_+=\tfrac12(e_t+i\vec e_z)$; a primitive idempotent is a point of the projective line of $\mathbb{B}$, so choosing one chooses a direction in the algebra. The second is the axis $\tau_3=1-2N$ of the ladder factor, which is what makes *interchange* and *annihilate* meaningful for a pair of states. With those two choices the source writes the isospin triple $\tau_a$, the totally isotropic elements $\beta_1=\tfrac12(-\vec e_x+i\vec e_y\tau_3)$ and $\beta_2=\Omega_L^{\dagger}i\vec e_y$, and the four states $V_R$, $V_L$, $e^-_R$, $e^-_L$ built from them, and obtains its statement that the generators annihilate the right-handed pair and interchange the left-handed one. Every step of it is correct and none of it is adopted here, because a Peirce basis is a coordinate choice attached to one idempotent: change the root and the four states change, while the chirality splitting of *Operator Chirality on the Biquaternion Algebra* does not. The rule that follows is that chirality is a side, read from the frame, and that a Peirce decomposition is a coordinate system laid on top of it. The two agree at exactly one root, up to sign: the one aligned with the fifth basis operator, where the Peirce sign is $P=R_{i\vec e_z}=iR_{\vec e_z}=-\gamma_5$ and the projector on the ideal is $\tfrac12(\mathrm I-\gamma_5)$, the projector on the $L$ half. That agreement is a coincidence of arrays at one root out of the projective line, and it is the origin of every statement that a Peirce idempotent *is* a chirality.
 
 ## Summary
 
@@ -311,7 +311,7 @@ The first fact is the doubling. The central volume element of each algebra is an
 
 The interpretations are the identification of the two summands with the two chiralities and of the two quaternion actions with $\mathrm{SU}(2)_L$ and $\mathrm{SU}(2)_R$, the identification of the neutral state of the right-handed summand with the sterile right-handed neutrino, the assignment of the states to the Pati–Salam multiplets, and the interpretation of the volume element $\omega$ as the Higgs.
 
-The equation side is written on the algebra and not on arrays: the chirality-off-diagonal pair $\tilde\nabla\tilde{Ξ}_{\mathrm{sp},R}=k_m\tilde{Ξ}_{\mathrm{sp},L}$ and $\tilde\nabla^{\natural}\tilde{Ξ}_{\mathrm{sp},L}=k_m\tilde{Ξ}_{\mathrm{sp},R}$, one equation per chirality, together with the single two-sided equation $\tilde\nabla^{\natural}F=m(-iR_{\vec e_z})\bar F$, in which the mass applies the frame's fifth cell to $\bar F$ as a right multiplication, and that cell squares to $e_t$.
+The equation side is written on the algebra and not on arrays: the chirality-off-diagonal pair $\tilde\nabla\tilde{Ξ}_{\mathrm{sp},R}=k_m\tilde{Ξ}_{\mathrm{sp},L}$ and $\tilde\nabla^{\natural}\tilde{Ξ}_{\mathrm{sp},L}=k_m\tilde{Ξ}_{\mathrm{sp},R}$, one equation per chirality, together with the single two-sided equation $\tilde\nabla^{\natural}F=m(-iR_{\vec e_z})\bar F$, in which the mass applies the frame's fifth basis operator to $\bar F$ as a right multiplication, and that basis operator squares to $e_t$.
 
 The construction's contact with the framework's ledger is that the second chirality and the sterile state are supplied by the algebra rather than added by hand, and that a sterile fermion is unconstrained by the anomaly conditions. Its open end is the same as that of the undoubled construction: the three commutator computations that would decide whether the abelian charge is a physical gauge charge, together with the choice of the supercharge sector that would fix which states carry which weak quantum numbers.
 
@@ -336,19 +336,19 @@ The construction, like the particle-roster one, is outside the biquaternion alge
 | $\Pi_{1,2}=\tfrac12(1\pm\omega)$ and $\tfrac12(1\pm J)$ | Central idempotents projecting on the two summands |
 | $\Pi_{\mathrm{ch}}$, $\Pi_\Omega$ | Primitive idempotent of the chain algebra; projector on the two-dimensional module $\{\Pi_{\mathrm{ch}},\Omega_L^{\dagger}\Pi_{\mathrm{ch}}\}$ |
 | $\sigma:e_i\mapsto-e_i$ | Parity automorphism; the discrete left-right symmetry; the outer exchange of the two summands |
-| $L_aR_b$ | Cell, $x\mapsto axb$, with the right factors multiplying in reverse order |
+| $L_aR_b$ | Basis operator, $x\mapsto axb$, with the right factors multiplying in reverse order |
 | $L_x,R_x$ | Left and right quaternion multiplications; commuting $\mathrm{su}(2)$'s |
-| $-iR_{\vec e_z}$ | The fifth cell of the frame, a pure right multiplier; $\tilde X_L,\tilde X_R$ are its two eigenspaces, of dimension two each, and the left action preserves both |
-| $i\,(iL_{\mathrm{axf},e_t}R_{\mathrm{axf},\vec e_x})(iL_{\mathrm{axf},\vec e_x}R_{\mathrm{axf},\vec e_y})(iL_{\mathrm{axf},\vec e_y}R_{\mathrm{axf},\vec e_y})(iL_{\mathrm{axf},\vec e_z}R_{\mathrm{axf},\vec e_y})=-iL_{\mathrm{axf},e_t}R_{\mathrm{axf},\vec e_z}$ | Four-factor fifth cell of the first rung, $\mathrm{Cl}(4)$; it equals the chirality cell, and squares to $I_4$ |
-| $-i\vec e_z$ | The right multiplier that the fifth cell applies, $-iR_{\vec e_z}\tilde X=-i\tilde X\vec e_z$; it squares to $e_t$ |
+| $-iR_{\vec e_z}$ | The fifth basis operator of the frame, a pure right multiplier; $\tilde X_L,\tilde X_R$ are its two eigenspaces, of dimension two each, and the left action preserves both |
+| $i\,(iL_{\mathrm{axf},e_t}R_{\mathrm{axf},\vec e_x})(iL_{\mathrm{axf},\vec e_x}R_{\mathrm{axf},\vec e_y})(iL_{\mathrm{axf},\vec e_y}R_{\mathrm{axf},\vec e_y})(iL_{\mathrm{axf},\vec e_z}R_{\mathrm{axf},\vec e_y})=-iL_{\mathrm{axf},e_t}R_{\mathrm{axf},\vec e_z}$ | Four-factor fifth basis operator of the first rung, $\mathrm{Cl}(4)$; it equals the chirality basis operator, and squares to $I_4$ |
+| $-i\vec e_z$ | The right multiplier that the fifth basis operator applies, $-iR_{\vec e_z}\tilde X=-i\tilde X\vec e_z$; it squares to $e_t$ |
 | $\tilde\nabla\tilde{Ξ}_{\mathrm{sp},R}=k_m\tilde{Ξ}_{\mathrm{sp},L}$, $\tilde\nabla^{\natural}\tilde{Ξ}_{\mathrm{sp},L}=k_m\tilde{Ξ}_{\mathrm{sp},R}$ | The chirality-off-diagonal pair of Dirac equations |
 | $\tilde\nabla^{\natural}F=-im\,\bar F\,\vec e_z$ | The same content as one two-sided equation |
 | $L_\omega R_{\mathrm{axf},-\vec e_z}$ (one ordering) | Coxeter element of the second rung, $\mathrm{Cl}(3)\otimes_{\mathbb{C}}\mathbb{B}_{\mathrm{opp}}\cong\mathrm{Cl}(5)$; squares to $-I_8$ |
-| $M_4(\mathbb{C})\cong\mathrm{Cl}(4)$ | First rung: the sixteen cells $L_aR_b$ with both factors in $\mathbb{B}$, acting on the four-dimensional $\mathbb{B}$; contains $\mathrm{so}(4)\cong\mathrm{su}(2)\oplus\mathrm{su}(2)$ |
+| $M_4(\mathbb{C})\cong\mathrm{Cl}(4)$ | First rung: the sixteen basis operators $L_aR_b$ with both factors in $\mathbb{B}$, acting on the four-dimensional $\mathbb{B}$; contains $\mathrm{so}(4)\cong\mathrm{su}(2)\oplus\mathrm{su}(2)$ |
 | $\mathrm{Cl}(3)\otimes_{\mathbb{C}}(\mathbb{C}\otimes\mathbb{H})_{\mathrm{opp}}\cong M_4(\mathbb{C})\oplus M_4(\mathbb{C})\cong\mathrm{Cl}(5)\cong\mathrm{Cl}(6)^+$ | Algebra generated by left $\mathrm{Cl}(3)$ and right $\mathbb{C}\otimes\mathbb{H}$; dimension $32$, centre $2$ |
 | $\Omega_L=\alpha_1\alpha_2\alpha_3$, $\Omega_R$ | Composite ladder operators of the two summands; read as $W^\pm$ |
 | $\tau_1=\Omega_L+\Omega_L^{\dagger}$, $\tau_2=i(\Omega_L-\Omega_L^{\dagger})$, $\tau_3=1-2N$ | $\mathrm{su}(2)$ triple from the ladder operator; on its two-dimensional module $\tau_3=\Omega_L\Omega_L^{\dagger}-\Omega_L^{\dagger}\Omega_L$; the source's axis |
-| $\tilde\Pi_+=\tfrac12(e_t+i\vec e_z)$ | The root aligned with the fifth cell; its ideal $\mathbb{B}\tilde\Pi_+$ is the $L$ half, the root at which a Peirce ideal is a chiral half. The source's choice |
+| $\tilde\Pi_+=\tfrac12(e_t+i\vec e_z)$ | The root aligned with the fifth basis operator; its ideal $\mathbb{B}\tilde\Pi_+$ is the $L$ half, the root at which a Peirce ideal is a chiral half. The source's choice |
 | $\beta_1,\beta_2$; $V_R,V_L,e^-_R,e^-_L$ | The source's totally isotropic elements and four states; they need the idempotent and the axis, and are not constructed here |
 | $\mathrm{SU}(2)_L,\mathrm{SU}(2)_R$ | Weak factors read from the left and right actions (interpretation) |
 | $\mathrm{SU}(4)_c\times\mathrm{SU}(2)_L\times\mathrm{SU}(2)_R$ | Pati–Salam gauge group of the interpretation |
@@ -378,6 +378,6 @@ The construction, like the particle-roster one, is outside the biquaternion alge
 - L. Boyle, "The standard model, the exceptional Jordan algebra, and triality," arXiv:2006.16265, and M. Dubois-Violette and I. Todorov, "Exceptional quantum geometry and particle physics," *Nuclear Physics B* **938** (2019) 751, for $\mathrm{F}_4$, $\mathrm{E}_6$ and their maximal subgroups, cited by the source.
 - S. L. Adler, *Quantum Theory as an Emergent Phenomenon* (Cambridge, 2004), for trace dynamics, the programme's route from a matrix mechanics to quantum theory.
 - Companion article [Complex Split Biquaternions and the Clifford Algebra Cl(3)](../articles_maths/complex-split-biquaternions-and-the-clifford-algebra-cl3.html), for the algebraic doubling of the lepton case.
-- Companion article [Operator Chirality on the Biquaternion Algebra](../articles_maths/operator-chirality-on-the-biquaternion-algebra.html), for chirality as the side of a multiplication, the fifth cell of a frame, and the separation of that notion from a root, an idempotent and a Peirce decomposition.
+- Companion article [Operator Chirality on the Biquaternion Algebra](../articles_maths/operator-chirality-on-the-biquaternion-algebra.html), for chirality as the side of a multiplication, the fifth basis operator of a frame, and the separation of that notion from a root, an idempotent and a Peirce decomposition.
 - Companion article [The Particle Roster of the Complex Octonionic Chain Algebra](the-particle-roster-of-the-complex-octonionic-chain-algebra.html), for the undoubled construction, its charges and its three open tests.
 - Companion article [The Seesaw Mechanism and Majorana Mass in Biquaternionic Form](the-seesaw-mechanism-and-majorana-mass-in-biquaternionic-form.html), for the mass mechanism in the framework's own conventions.

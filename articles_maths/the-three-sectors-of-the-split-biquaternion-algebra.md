@@ -2,7 +2,7 @@
 
 ## Introduction
 
-Two predicates cut the split-biquaternion algebra $\mathbb{B}_{\mathrm{spl}}\cong\mathbb{H}\oplus\mathbb{H}$ into four cells: the reduced norm $\Delta=|Q_+|^2|Q_-|^2$ is zero or non-zero, and the reduced characteristic polynomial $p_{\tilde Q}=p_+p_-$ has a repeated root or not. The four cells are the **sectors** $\Sigma_{ij}$, with $i=1$ for $\Delta\neq0$ and $j=1$ for spectral regularity. Three of them are non-empty; the fourth, $\Sigma_{01}$, is empty. This article defines the sectors, proves that three are non-empty and one is empty, and describes each one with its dimension and closure. The spectral criterion is *[Spectral Regularity and Degeneracy in the Split-Biquaternion Algebra](spectral-regularity-and-degeneracy-in-the-split-biquaternion-algebra.html)*; the comparison is *[The Reduced Norm and Spectral Degeneracy in the Split-Biquaternion Algebra](the-reduced-norm-and-spectral-degeneracy-in-the-split-biquaternion-algebra.html)*.
+Two predicates cut the split-biquaternion algebra $\mathbb{B}_{\mathrm{spl}}\cong\mathbb{H}\oplus\mathbb{H}$ into four sectors: the reduced norm $\Delta=|Q_+|^2|Q_-|^2$ is zero or non-zero, and the reduced characteristic polynomial $p_{\tilde Q}=p_+p_-$ has a repeated root or not. The four sectors are the **sectors** $\Sigma_{ij}$, with $i=1$ for $\Delta\neq0$ and $j=1$ for spectral regularity. Three of them are non-empty; the fourth, $\Sigma_{01}$, is empty. This article defines the sectors, proves that three are non-empty and one is empty, and describes each one with its dimension and closure. The spectral criterion is *[Spectral Regularity and Degeneracy in the Split-Biquaternion Algebra](spectral-regularity-and-degeneracy-in-the-split-biquaternion-algebra.html)*; the comparison is *[The Reduced Norm and Spectral Degeneracy in the Split-Biquaternion Algebra](the-reduced-norm-and-spectral-degeneracy-in-the-split-biquaternion-algebra.html)*.
 
 **Conventions.** The split complex unit is $j$, with $j^2=1$, and $\tilde\Pi_{1,2}=\tfrac12(1\pm j)$. An element is $\tilde Q=Q_+\tilde\Pi_1+Q_-\tilde\Pi_2$ with $Q_\pm=t_\pm+\vec q_\pm$, $t_\pm\in\mathbb{R}$, $\vec q_\pm=\sum_k q_{\pm k}\vec e_k$, $|\vec q_\pm|^2=\sum_k q_{\pm k}^2$, and $|Q_\pm|^2=t_\pm^2+|\vec q_\pm|^2$. The reduced norm is $\Delta=|Q_+|^2|Q_-|^2$. The spectrum is $\{t_+\pm i|\vec q_+|\}\cup\{t_-\pm i|\vec q_-|\}$, and a repeated root occurs exactly when $\vec q_+=0$, or $\vec q_-=0$, or $t_+=t_-$ and $|\vec q_+|=|\vec q_-|$. The algebra is *[Split-Biquaternion Algebra](split-biquaternion-algebra.html)*; the norm and zero divisors are *[Split-Biquaternion Norm and Invertibility](split-biquaternion-norm-and-invertibility.html)* and *[Split-Biquaternion Zero Divisors](split-biquaternion-zero-divisors.html)*.
 
@@ -65,7 +65,7 @@ $$
 \mathbb{B}_{\mathrm{spl}}=\Sigma_{11}\sqcup\Sigma_{10}\sqcup\Sigma_{00}.
 $$
 
-The fourth cell is empty, so the partition has three members.
+The fourth sector is empty, so the partition has three members.
 
 ## The Sector $\Sigma_{11}$: Reduced-Norm-Regular, Spectrally Regular
 
@@ -189,5 +189,5 @@ The dimensions are $8$, $6$ and $4$. $\Sigma_{11}$ is open and dense; $\Sigma_{1
 - [Split-Biquaternion Norm and Invertibility](split-biquaternion-norm-and-invertibility.html), for the reduced norm and the unit criterion.
 - [Split-Biquaternion Zero Divisors](split-biquaternion-zero-divisors.html), for the two ideals $Z_+$ and $Z_-$.
 - [Spectral Regularity and Degeneracy in the Split-Biquaternion Algebra](spectral-regularity-and-degeneracy-in-the-split-biquaternion-algebra.html), for the union spectrum and the repeated-root criterion.
-- [The Reduced Norm and Spectral Degeneracy in the Split-Biquaternion Algebra](the-reduced-norm-and-spectral-degeneracy-in-the-split-biquaternion-algebra.html), for the empty mixed cell and the chain of invariants.
+- [The Reduced Norm and Spectral Degeneracy in the Split-Biquaternion Algebra](the-reduced-norm-and-spectral-degeneracy-in-the-split-biquaternion-algebra.html), for the empty mixed sector and the chain of invariants.
 - [The Spectrum](the-spectrum.html), for the defective Jordan part and the nilpotents.

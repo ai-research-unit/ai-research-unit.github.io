@@ -225,7 +225,7 @@ $$
 =\cos\alpha\,\tilde{Ξ}_{\mathrm{sp}}+\sin\alpha\,\tilde{Ξ}_{\mathrm{sp}}\vec e_z ,
 $$
 
-a right multiplication by an element of the algebra, so it commutes with the left action of the gradient. Read on the pair, the rotation multiplies $\tilde{Ξ}_{\mathrm{sp},L}$ by $e^{-i\alpha}$ and $\tilde{Ξ}_{\mathrm{sp},R}$ by $e^{+i\alpha}$, the two values of the subscript; the mass is the term that couples the two members, so the massless pair is invariant and the massive one is not. The axial current and its divergence are recorded there, in *The Chiral Condensate and Dynamical Symmetry Breaking in Biquaternionic Form*.
+a right multiplication by an element of the algebra, so it commutes with the left action of the gradient. Read on the pair, the rotation multiplies $\tilde{Ξ}_{\mathrm{sp},L}$ by $e^{-i\alpha}$ and $\tilde{Ξ}_{\mathrm{sp},R}$ by $e^{+i\alpha}$, the two parts named by the subscript; the mass is the term that couples the two members, so the massless pair is invariant and the massive one is not. The axial current and its divergence are recorded there, in *The Chiral Condensate and Dynamical Symmetry Breaking in Biquaternionic Form*.
 
 A nonzero vacuum expectation of the fermion bilinear,
 

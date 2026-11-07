@@ -6,7 +6,7 @@ The biquaternion algebra carries two objects that the literature calls a spinor,
 
 This article fixes both definitions, proves what they imply, and separates them from the three pictures that stand in their place in the older literature: the column of a matrix model, the gamma matrices, and a second rotation triple attached to the conjugate part. Three results carry the content. A vector carrier has the weights $0$ and $\pm1$, a spinor carrier has $\pm\tfrac12$, and the parity of the weights is what separates them. The two parts of a Dirac spinor are not two independent carriers but two copies of one, because in adapted bases the same left multiplication has the same matrix on both. And no left multiplication carries one part into the other, so the operator that couples them multiplies on the right.
 
-The article is the spinor counterpart of *Angular Momentum and Spin in the Biquaternion Algebra*: that article defines the spin of a carrier as a maximal weight and classifies the carriers; this one takes the two spinor carriers it produces and names them. The algebra, the units, the two-sided operator and the conjugation are those of *Algebra and Element Conventions*. The two definitions use none of a Clifford relation, a gamma cell, a Pauli array, a volume element or a Peirce basis; the Pauli arrays appear twice, in worked instances, and never as a definition.
+The article is the spinor counterpart of *Angular Momentum and Spin in the Biquaternion Algebra*: that article defines the spin of a carrier as a maximal weight and classifies the carriers; this one takes the two spinor carriers it produces and names them. The algebra, the units, the two-sided operator and the conjugation are those of *Algebra and Element Conventions*. The two definitions use none of a Clifford relation, a gamma basis operator, a Pauli array, a volume element or a Peirce basis; the Pauli arrays appear twice, in worked instances, and never as a definition.
 
 ## The Side of a Multiplication
 
@@ -116,7 +116,7 @@ R\bigl(\tilde\Pi_+(\vec u)\bigr)=\tfrac12\bigl(\mathrm{id}+R(i\vec u)\bigr),\qqu
 R\bigl(\tilde\Pi_-(\vec u)\bigr)=\tfrac12\bigl(\mathrm{id}-R(i\vec u)\bigr).
 $$
 
-That grading is the object the corpus calls the chirality cell of a frame: in the axis-free frame the cell is the right multiplier $-iR_{\vec e_z}$ (*Operator Chirality on the Biquaternion Algebra*, *The Pauli Module of the Biquaternion Algebra*), which is the negative of $R(i\vec u)$ at $\vec u=\vec e_z$, and a grading agrees with its negative on the two parts and differs only in which part carries which sign. The idempotent form is used here because the idempotent is what defines the carrier, and it names no frame. What the cell does not give is invariant data of the pair: the two parts are two copies, the index that separates them is a copy index, and the sign attaches to the declared axis (*The Polarized Module of the Biquaternion Algebra*).
+That grading is the object the corpus calls the chirality basis operator of a frame: in the axis-free frame the basis operator is the right multiplier $-iR_{\vec e_z}$ (*Operator Chirality on the Biquaternion Algebra*, *The Pauli Module of the Biquaternion Algebra*), which is the negative of $R(i\vec u)$ at $\vec u=\vec e_z$, and a grading agrees with its negative on the two parts and differs only in which part carries which sign. The idempotent form is used here because the idempotent is what defines the carrier, and it names no frame. What the basis operator does not give is invariant data of the pair: the two parts are two copies, the index that separates them is a copy index, and the sign attaches to the declared axis (*The Polarized Module of the Biquaternion Algebra*).
 
 ## What Carries One Part to the Other
 
@@ -166,7 +166,7 @@ so it sends the first column onto the second coordinate by coordinate. The multi
 
 ## What the Definitions Do Not Use
 
-The definition of an elementary spinor names the axis that selects its carrier, and the definition of a Dirac spinor names one axis and nothing else. The two definitions use none of: a Clifford relation, a gamma cell, a Pauli array, a volume element, a Peirce basis, a second rotation triple. Three claims of the older literature are replaced, and each replacement is a statement of the same fact with fewer objects.
+The definition of an elementary spinor names the axis that selects its carrier, and the definition of a Dirac spinor names one axis and nothing else. The two definitions use none of: a Clifford relation, a gamma basis operator, a Pauli array, a volume element, a Peirce basis, a second rotation triple. Three claims of the older literature are replaced, and each replacement is a statement of the same fact with fewer objects.
 
 **The four-component column.** A column of four components is a Dirac spinor written in a chosen frame, namely the frame of the two carriers read as two columns. The definition does not need the frame: the element exists before the columns do, and the columns are its coordinates in the decomposition.
 
@@ -184,7 +184,7 @@ A Dirac spinor is an element of $\mathbb{B}$ whose two parts are its two compone
 
 The pair is a multiplicity. Right multiplication by $i\vec v$ with $\vec v\perp\vec u$ carries one part onto the other and is left-linear, so in adapted bases every left multiplication has the same matrix on both parts. The decomposition is therefore one carrier taken twice, not two carriers.
 
-No left multiplication moves between the parts, so the coupling of the parts is a right multiplication. The multipliers that do it are the imaginary units, and the axis of the image doubles the angle: a perpendicular unit exchanges the two parts, a parallel unit preserves them, and anything between carries the carrier to a third one. All perpendicular units give the same map up to a nonzero scalar, so the space of such maps is a complex line and the mass is one complex number times a fixed exchange. The two names cost one declared direction between them, and no Clifford relation, no gamma cell and no second triple.
+No left multiplication moves between the parts, so the coupling of the parts is a right multiplication. The multipliers that do it are the imaginary units, and the axis of the image doubles the angle: a perpendicular unit exchanges the two parts, a parallel unit preserves them, and anything between carries the carrier to a third one. All perpendicular units give the same map up to a nonzero scalar, so the space of such maps is a complex line and the mass is one complex number times a fixed exchange. The two names cost one declared direction between them, and no Clifford relation, no gamma basis operator and no second triple.
 
 ## Summary of Notation
 
@@ -212,8 +212,8 @@ No left multiplication moves between the parts, so the coupling of the parts is 
 - [Angular Momentum and Spin in the Biquaternion Algebra](angular-momentum-and-spin-in-the-biquaternion-algebra.html), for the definition of spin as a maximal weight, the Casimir, the sphere of minimal left ideals, the double cover and the four uses of the word spin.
 - [Operator Chirality on the Biquaternion Algebra](operator-chirality-on-the-biquaternion-algebra.html), for the side of a multiplication as the chirality, and for the swap.
 - [The Polarized Module of the Biquaternion Algebra](the-polarized-module-of-the-biquaternion-algebra.html), for the decomposition $V\cong S\oplus S$ of the carrier and the two spinor spaces.
-- [The Pauli Module of the Biquaternion Algebra](the-pauli-module-of-the-biquaternion-algebra.html), for the two slots as two copies of one module and for the chirality cell whose eigenspaces they are.
-- [The Unpolarized Module of the Biquaternion Algebra](the-unpolarized-module-of-the-biquaternion-algebra.html), for the Dirac module $S\oplus S^{\mathrm{c}}$, the conjugate action on the second factor, and the no-go theorem on the cell.
+- [The Pauli Module of the Biquaternion Algebra](the-pauli-module-of-the-biquaternion-algebra.html), for the two slots as two copies of one module and for the chirality basis operator whose eigenspaces they are.
+- [The Unpolarized Module of the Biquaternion Algebra](the-unpolarized-module-of-the-biquaternion-algebra.html), for the Dirac module $S\oplus S^{\mathrm{c}}$, the conjugate action on the second factor, and the no-go theorem on the basis operator.
 - [Quaternion Rotations and Reflections](quaternion-rotations-and-reflections.html), for the rotation through $\theta$ about $u$ as the adjoint action of $\cos\tfrac{\theta}{2}+u\sin\tfrac{\theta}{2}$, which fixes the sign used above.
 - [Spinors as Peirce Coordinates](spinors-as-peirce-coordinates.html), for the coordinate vector on a Peirce carrier and the weight condition that makes it a spinor.
 - [Spinors as Coordinates in $M_4(\mathbb{C})$](spinors-as-coordinates-in-m4c.html), for the same construction at $n=4$, the $2+2$ chiral split and the higher spin.

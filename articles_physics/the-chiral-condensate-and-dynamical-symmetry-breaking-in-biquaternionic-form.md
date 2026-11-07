@@ -12,7 +12,7 @@ $$
 
 Here $k_m=mc/\hbar$ is the mass wave number, the inverse of the mass length.
 
-The framework carries two first-order writings of one mass coupling, and this article keeps them apart from the first line. The **gradient equation** is that pair on the algebra: every derivative acts by left multiplication, the two members are conjugate, and no chirality term is one of its terms, because no right multiplication is one. The **two-sided equation** is $(\mathbb{D}-k_m)\tilde{Ξ}_{\mathrm{sp}}=0$, in which every derivative sits between a left multiplier and a right multiplier; the cell that carries it is the frame's fifth cell $\xi:\ Q\mapsto-iQ\vec e_z$, and that cell multiplies on the **right**, which is where the chirality is: the side, not the cell, is the notion. The condensate, its bilinears and the axial rotation are read from the two-sided equation; the gradient equation supplies the mass shell. The section *The Pair, the Two-Sided Equation and the Chirality* states both, and every later section says which one it uses.
+The framework carries two first-order writings of one mass coupling, and this article keeps them apart from the first line. The **gradient equation** is that pair on the algebra: every derivative acts by left multiplication, the two members are conjugate, and no chirality term is one of its terms, because no right multiplication is one. The **two-sided equation** is $(\mathbb{D}-k_m)\tilde{Ξ}_{\mathrm{sp}}=0$, in which every derivative sits between a left multiplier and a right multiplier; the basis operator that carries it is the frame's fifth basis operator $\xi:\ Q\mapsto-iQ\vec e_z$, and that basis operator multiplies on the **right**, which is where the chirality is: the side, not the basis operator, is the notion. The condensate, its bilinears and the axial rotation are read from the two-sided equation; the gradient equation supplies the mass shell. The section *The Pair, the Two-Sided Equation and the Chirality* states both, and every later section says which one it uses.
 
 This article asks what the framework supplies for the condensate. The answer is a short chain of algebraic facts and one large missing physical input. The categories are the corpus's: **established** (and recomputed here), **transcribed** from the standard literature, and **gap** (left visible).
 
@@ -29,7 +29,7 @@ $$
 G_\mu:\ Q\ \longmapsto\ i\,e_\mu\,Q\,\vec e_{\nu(\mu)} ,
 $$
 
-with $e_t=1$ the unit of the algebra, $e_k=\vec e_k$, $\nu(t)=x$ and $\nu(k)=y$; the **chirality** is the frame's fifth cell, the operator
+with $e_t=1$ the unit of the algebra, $e_k=\vec e_k$, $\nu(t)=x$ and $\nu(k)=y$; the **chirality** is the frame's fifth basis operator, the operator
 
 $$
 \xi:\ Q\ \longmapsto\ -i\,Q\,\vec e_z .
@@ -46,13 +46,13 @@ $$
 
 with $\varepsilon=(1,-1,-1,-1)$, the products read as actions and $\mathrm{id}$ the identity action. There is no root, no idempotent and no split behind these five maps: each is a product by units, and nothing else is introduced to hold it.
 
-**The side, which is what chirality is.** A cell is the operator $L_aR_b$, acting $Q\mapsto aQb$, and it has two slots: the left one, where $a$ multiplies, and the right one, where $b$ multiplies. An operator multiplies on the left, on the right, or on both, and that is the whole of the corpus's notion of operator chirality ([Operator Chirality on the Biquaternion Algebra](../articles_maths/operator-chirality-on-the-biquaternion-algebra.html)): a property of the operator, not a sign carried by an element. The five maps above are read on that scale and they are not alike. The time generator is $G_t=iR_{\vec e_x}$, a **pure right multiplier**, because $L_{e_t}$ is the identity and a cell with the left slot empty is a right multiplication. The three spatial generators occupy **both slots**, $G_k=iL_{\vec e_k}R_{\vec e_y}$. The chirality is a **pure right multiplier** too,
+**The side, which is what chirality is.** A basis operator is the operator $L_aR_b$, acting $Q\mapsto aQb$, and it has two slots: the left one, where $a$ multiplies, and the right one, where $b$ multiplies. An operator multiplies on the left, on the right, or on both, and that is the whole of the corpus's notion of operator chirality ([Operator Chirality on the Biquaternion Algebra](../articles_maths/operator-chirality-on-the-biquaternion-algebra.html)): a property of the operator, not a sign carried by an element. The five maps above are read on that scale and they are not alike. The time generator is $G_t=iR_{\vec e_x}$, a **pure right multiplier**, because $L_{e_t}$ is the identity and a basis operator with the left slot empty is a right multiplication. The three spatial generators occupy **both slots**, $G_k=iL_{\vec e_k}R_{\vec e_y}$. The chirality is a **pure right multiplier** too,
 
 $$
 \xi=-iR_{\vec e_z},\qquad \xi Q=-i\,Q\,\vec e_z ,
 $$
 
-and it is the frame's fifth cell: four generators plus this one, declared together with the frame. Three consequences follow, and each is a statement about the slot rather than a computation about phases.
+and it is the frame's fifth basis operator: four generators plus this one, declared together with the frame. Three consequences follow, and each is a statement about the slot rather than a computation about phases.
 
 *It commutes with every left multiplication.* A left multiplier and a right multiplier never fail to commute, $L_aR_b=R_bL_a$, so $\xi$ commutes with the gradient $\tilde\nabla$, which multiplies on the left; and it commutes with the mass $m$, which is central and therefore occupies both slots. The value of a field is stable under every left multiplication, and hence under both members of the gradient equation; the reason is the side, and no computation about phases is needed.
 
@@ -62,9 +62,9 @@ $$
 \xi\,G_\mu\,\xi^{-1}=-G_\mu\qquad(\mu=t,x,y,z),
 $$
 
-that is $\{\xi,G_\mu\}=0$, and the left slot contributes nothing to the sign because $\xi$ has none. A reader who expects chirality to be *defined* by anticommuting with the frame cannot have it: the frame's time cell carries $L_{e_t}=\mathrm{id}$ in its left slot, and an operator that anticommuted with the identity would be zero. The sign in this algebra is not produced by an anticommutator; it is produced by the side.
+that is $\{\xi,G_\mu\}=0$, and the left slot contributes nothing to the sign because $\xi$ has none. A reader who expects chirality to be *defined* by anticommuting with the frame cannot have it: the frame's time basis operator carries $L_{e_t}=\mathrm{id}$ in its left slot, and an operator that anticommuted with the identity would be zero. The sign in this algebra is not produced by an anticommutator; it is produced by the side.
 
-*It is not a functional on the algebra.* A sign attached to elements would have to be a multiplicative map into $\{\pm1\}$, and none separates the two sides, because the two families of multipliers overlap in the scalars and a scalar has no side. The sign is one operator, the fifth cell of the frame, whose two eigenspaces are of equal size; the subscript below is what it does, and not what the algebra is.
+*It is not a functional on the algebra.* A sign attached to elements would have to be a multiplicative map into $\{\pm1\}$, and none separates the two sides, because the two families of multipliers overlap in the scalars and a scalar has no side. The sign is one operator, the fifth basis operator of the frame, whose two eigenspaces are of equal size; the subscript below is what it does, and not what the algebra is.
 
 **The chirality is a side, and the subscript reads it off.** The subscript takes two values, $L$ and $R$: $\tilde{Ξ}_{\mathrm{sp},L}$ and $\tilde{Ξ}_{\mathrm{sp},R}$ for a state, $Q_L$ and $Q_R$ for a general element. The letters are the Dirac ones. The value $L$ is the minus one and the value $R$ the plus one, as the corpus fixes them (*Operator Chirality on the Biquaternion Algebra*, §*What Operator Chirality Is Not*); this article uses the convention and does not restate it. The value is read from the one operator, $\xi Q_L=-Q_L$ and $\xi Q_R=+Q_R$, and the two eigenspaces are of equal size, so every element is one part of each value and only the zero element is both. A product takes the letter of its right factor, $(\tilde X\tilde Y)\vec e_z=\tilde X(\tilde Y\vec e_z)$, and left multiplication keeps the letter. The value is a property of the element and of the declared frame, and no second object is needed to carry it.
 
@@ -91,21 +91,21 @@ $$
 \xi\,\bigl(iR_{\mathrm{axf},\vec e_x}\bigr)\,\xi=-iR_{\mathrm{axf},\vec e_x} ,
 $$
 
-the sign is reversed, and on the $L$ part $\xi\tilde{Ξ}_{\mathrm{sp}}=-\tilde{Ξ}_{\mathrm{sp}}$, so oddness reads $\tilde{Ξ}_{\mathrm{sp}}^*iR_{\mathrm{axf},\vec e_x}\tilde{Ξ}_{\mathrm{sp}}=-\tilde{Ξ}_{\mathrm{sp}}^*iR_{\mathrm{axf},\vec e_x}\tilde{Ξ}_{\mathrm{sp}}$ and the pairing vanishes. That is why the bilinear pairs one part of each value and never a value with itself, and it is the corpus's statement that $\xi$ anticommutes with the frame's time cell.
+the sign is reversed, and on the $L$ part $\xi\tilde{Ξ}_{\mathrm{sp}}=-\tilde{Ξ}_{\mathrm{sp}}$, so oddness reads $\tilde{Ξ}_{\mathrm{sp}}^*iR_{\mathrm{axf},\vec e_x}\tilde{Ξ}_{\mathrm{sp}}=-\tilde{Ξ}_{\mathrm{sp}}^*iR_{\mathrm{axf},\vec e_x}\tilde{Ξ}_{\mathrm{sp}}$ and the pairing vanishes. That is why the bilinear pairs one part of each value and never a value with itself, and it is the corpus's statement that $\xi$ anticommutes with the frame's time basis operator.
 
-**The fifth cell.** The composite of the four generator actions, applied in the order $z,y,x,t$ with the action of $z$ innermost, is a single right multiplication,
+**The fifth basis operator.** The composite of the four generator actions, applied in the order $z,y,x,t$ with the action of $z$ innermost, is a single right multiplication,
 
 $$
 Q\ \xrightarrow{\ z\ }\ i\,e_zQ\,\vec e_y\ \xrightarrow{\ y\ }\ \vec e_xQ\ \xrightarrow{\ x\ }\ -i\,Q\,\vec e_y\ \xrightarrow{\ t\ }\ -Q\,\vec e_z ,
 $$
 
-the four factors of $i$ multiplying to $i^{4}=+1$. The composite is $-R_{\vec e_z}$, and $i$ times it is the corpus's fifth cell of the frame, $\xi=-iR_{\vec e_z}$, which is the fifth cell. That the composite is a pure right multiplication is not an accident of the order: the left slots multiply to $-\vec e_t$, a central scalar, and a central scalar has no side, so only the right multiplications are left standing. This is recorded once, here, because it is the one place where the four generators are used together.
+the four factors of $i$ multiplying to $i^{4}=+1$. The composite is $-R_{\vec e_z}$, and $i$ times it is the corpus's fifth basis operator of the frame, $\xi=-iR_{\vec e_z}$, which is the fifth basis operator. That the composite is a pure right multiplication is not an accident of the order: the left slots multiply to $-\vec e_t$, a central scalar, and a central scalar has no side, so only the right multiplications are left standing. This is recorded once, here, because it is the one place where the four generators are used together.
 
 **The frame, the coordinates and the units.** Every derivative in a two-sided display is with respect to $x_\mu=(r'_t,r_x,r_y,r_z)$ and the constants are carried; the $i r'_t$ normalization $Q_t=i r'_t$ is named only where the gradient is written. In these coordinates $\partial^2/\partial R_t^2=-\partial^2/\partial {r'_t}^2$, so the contraction that reproduces $\Box$ carries the tuple $(-1,+1,+1,+1)$ in the material coordinates, while the generators carry the same vector with the opposite overall sign, $\varepsilon_\mu$; the minus between them is taken once, in $\mathbb{D}^{2}$, and no display below carries a second sign vector. The plain form, read as the trace formula $\mathrm{Tr}(\tilde Q_1\tilde Q_2)=2\,\mathrm{Sc}(\tilde Q_1\tilde Q_2)$, is inherited unchanged. Throughout, $c=1/\sqrt{\epsilon\mu}$ is the speed of light in the medium and $c_0$ the vacuum value; the gap-equation section writes every mass through $k_m=m\,c/\hbar$.
 
 The framework results used here are those of the companion articles:
 
-- Companion article *Chiral Fermions in the Biquaternion Framework*, for the chiral classification and the two values of the subscript.
+- Companion article *Chiral Fermions in the Biquaternion Framework*, for the chiral classification and the two parts named by the subscript.
 - Companion article *The Dirac Equation in Biquaternionic Form*, for the massless equation, its chiral solutions and the fermion bilinears.
 - Companion article *Noether's Theorem in Biquaternionic Form*, for the axial current and its conservation law.
 - Companion article *Antilinear Structure and the Two Kinds of Mass in Biquaternionic Form*, for the separation of the linear chiral pair from the real structure $\flat$.
@@ -161,7 +161,7 @@ $$
 \tilde{Ξ}_{\mathrm{sp},L}\longmapsto \exp(-i\alpha)\tilde{Ξ}_{\mathrm{sp},L} ,\qquad \tilde{Ξ}_{\mathrm{sp},R}\longmapsto \exp(+i\alpha)\tilde{Ξ}_{\mathrm{sp},R} .
 $$
 
-The rotation is an element and not a symbol: its two phase factors are read off from the two values of the subscript, and the relative phase of the two values is what it supplies.
+The rotation is an element and not a symbol: its two phase factors are read off from the two parts named by the subscript, and the relative phase of the two values is what it supplies.
 
 **Why both are symmetries.** The central phase is constant, so it occupies both slots and commutes with $\mathbb{D}$ at any mass. The axial phase is a right multiplication and has no left slot: on the algebra it commutes with every left multiplier, hence with the gradient, and with the mass, which is central; in the two-sided writing the derivative occupies **both** slots, so there the same rotation does not commute with $\mathbb{D}$, and the amount by which it fails is exactly the phase $\exp(2i\alpha\xi)$. Hence
 
@@ -225,7 +225,7 @@ which vanishes exactly when $m=0$. The mass is the only explicit breaking, and t
 
 **Why the sum carries no metric factor.** The metric is already spent inside the generators, since $G_0^{2}=+\mathrm{id}$ and $G_k^{2}=-\mathrm{id}$ differ in sign exactly as the entries of $g$ do. Hence $j_{5k}$ is the contravariant spatial component and $\sum_\mu\partial j_{5\mu}/\partial x_\mu=\partial j_5^0/\partial r'_t+\nabla\cdot\vec j_5$ is the divergence; an extra $\varepsilon$ would apply the metric a second time.
 
-**The companion's notation.** There the identity reads $\langle\tilde\nabla,\tilde J_{\Phi,5}\rangle_{\natural}=\mathrm{Sc}(\tilde\nabla^{\natural}\tilde J_{\Phi,5})=2im\,\tilde{Ξ}_{\mathrm{sp}}^{\natural}\xi\tilde{Ξ}_{\mathrm{sp}}$, the time slot of $\tilde J_{\Phi,5}$ carrying the factor $ic$ that the $i r'_t$ coordinate requires. The two notations name the same operator, and the same glyph: $\xi$ is the corpus's chirality operator, the frame's fifth cell, a pure right multiplier, and it takes the value $-1$ on $\tilde{Ξ}_{\mathrm{sp},L}$ and $+1$ on $\tilde{Ξ}_{\mathrm{sp},R}$ in either notation.
+**The companion's notation.** There the identity reads $\langle\tilde\nabla,\tilde J_{\Phi,5}\rangle_{\natural}=\mathrm{Sc}(\tilde\nabla^{\natural}\tilde J_{\Phi,5})=2im\,\tilde{Ξ}_{\mathrm{sp}}^{\natural}\xi\tilde{Ξ}_{\mathrm{sp}}$, the time slot of $\tilde J_{\Phi,5}$ carrying the factor $ic$ that the $i r'_t$ coordinate requires. The two notations name the same operator, and the same glyph: $\xi$ is the corpus's chirality operator, the frame's fifth basis operator, a pure right multiplier, and it takes the value $-1$ on $\tilde{Ξ}_{\mathrm{sp},L}$ and $+1$ on $\tilde{Ξ}_{\mathrm{sp},R}$ in either notation.
 
 **Two symmetries, two currents.** For later use we record the vector and axial bilinears and their divergences:
 
@@ -300,7 +300,7 @@ $$
 + G\left[(\tilde{Ξ}_{\mathrm{sp}}^*iR_{\mathrm{axf},\vec e_x}\tilde{Ξ}_{\mathrm{sp}})^{2}+\bigl(\tilde{Ξ}_{\mathrm{sp}}^*iR_{\mathrm{axf},\vec e_x}(\tilde{Ξ}_{\mathrm{sp}}\vec e_z)\bigr)^{2}\right],
 $$
 
-in which $G$ has mass dimension $-2$. The interaction is chirally invariant: the combination is the invariant of the axial rotation noted above, because the pair of bilinears rotates as a two-vector, and the second term is the pseudoscalar partner with the unit $\vec e_z$ and no cell. The framework carries the same structure: the four-fermion interaction pairs the bilinears, and it does not need the algebra beyond the chiral pairing that the bilinears already are.
+in which $G$ has mass dimension $-2$. The interaction is chirally invariant: the combination is the invariant of the axial rotation noted above, because the pair of bilinears rotates as a two-vector, and the second term is the pseudoscalar partner with the unit $\vec e_z$ and no basis operator. The framework carries the same structure: the four-fermion interaction pairs the bilinears, and it does not need the algebra beyond the chiral pairing that the bilinears already are.
 
 **The mean-field mass.** Linearising the interaction about the condensate, $(\tilde{Ξ}_{\mathrm{sp}}^*iR_{\mathrm{axf},\vec e_x}\tilde{Ξ}_{\mathrm{sp}})^{2}\to2\langle\tilde{Ξ}_{\mathrm{sp}}^*iR_{\mathrm{axf},\vec e_x}\tilde{Ξ}_{\mathrm{sp}}\rangle\,\tilde{Ξ}_{\mathrm{sp}}^*iR_{\mathrm{axf},\vec e_x}\tilde{Ξ}_{\mathrm{sp}}+\ldots$, replaces the four-fermion term by a mass term $-k_m\,\tilde{Ξ}_{\mathrm{sp}}^*iR_{\mathrm{axf},\vec e_x}\tilde{Ξ}_{\mathrm{sp}}$ with
 
@@ -441,11 +441,11 @@ $$
 
 A single product is a pure tensor; the products form the seven-dimensional cone $\operatorname{rank}c(M)\le1$, and a general element is a sum of at most four, with $\ell(M)=\operatorname{rank}c(M)$.
 
-$\gamma_5$ is the reference-frame cell of the chirality operator $\xi=-iR_{\vec e_z}$; it is the same operator in this display, and only its array changes, because $\xi=i\gamma_0\gamma_1\gamma_2\gamma_3$ is a product of the four generators and the display does not touch the side.
+$\gamma_5$ is the reference-frame basis operator of the chirality operator $\xi=-iR_{\vec e_z}$; it is the same operator in this display, and only its array changes, because $\xi=i\gamma_0\gamma_1\gamma_2\gamma_3$ is a product of the four generators and the display does not touch the side.
 
-The dictionary is complex-linear; over $\mathbb{R}$ the products span $\mathrm{Cl}_{1,3}(\mathbb{R})\cong M_2(\mathbb{H})$ and the cells span $\mathrm{Cl}_{3,1}(\mathbb{R})\cong M_4(\mathbb{R})$.
+The dictionary is complex-linear; over $\mathbb{R}$ the products span $\mathrm{Cl}_{1,3}(\mathbb{R})\cong M_2(\mathbb{H})$ and the basis operators span $\mathrm{Cl}_{3,1}(\mathbb{R})\cong M_4(\mathbb{R})$.
 
-**The body's actions under their gamma names.** The generator actions of the body are the gammas, $G_\mu=\gamma_\mu$, and the chirality cell is the gamma-five cell itself, $\xi=\gamma_5=-iR_{\mathrm{pau},\vec e_z}$. The single collapse behind every simplification in the body is
+**The body's actions under their gamma names.** The generator actions of the body are the gammas, $G_\mu=\gamma_\mu$, and the chirality basis operator is $\gamma_5$ itself, $\xi=\gamma_5=-iR_{\mathrm{pau},\vec e_z}$. The single collapse behind every simplification in the body is
 
 $$
 i\,\gamma_\mu=-L_{\mathrm{pau},e_\mu}R_{\mathrm{pau},\vec e_{\nu(\mu)}} ,
@@ -461,7 +461,7 @@ i\,\gamma_\mu=-L_{\mathrm{axf},e_\mu}R_{\mathrm{axf},\vec e_{\nu(\mu)}} ,
 i\,\gamma_5=R_{\mathrm{axf},\vec e_z} ,
 $$
 
-so multiplying a generator or the chirality cell by $i$ trades it for a plain cell; four generators therefore carry $i^{4}=+1$ and the fifth cell is $\gamma_0\gamma_1\gamma_2\gamma_3=\omega=-i\gamma_5$.
+so multiplying a generator or the chirality basis operator by $i$ trades it for a plain basis operator; four generators therefore carry $i^{4}=+1$ and the fifth basis operator is $\gamma_0\gamma_1\gamma_2\gamma_3=\omega=-i\gamma_5$.
 
 **The identities the article cites.** In the $\gamma$ reading, with $\epsilon_{0123}=+1$,
 $$
@@ -483,9 +483,9 @@ $$
 \mathrm{tr}(\gamma_\mu\gamma_\nu\gamma_\rho\gamma_\sigma)
 =4\bigl(\varepsilon_\mu\delta_{\mu\nu}\varepsilon_\rho\delta_{\rho\sigma}-\varepsilon_\mu\delta_{\mu\rho}\varepsilon_\nu\delta_{\nu\sigma}+\varepsilon_\mu\delta_{\mu\sigma}\varepsilon_\nu\delta_{\nu\rho}\bigr).
 $$
-The four contraction sums are fixed by the metric, because a cell's square is. With the summed index raised, $\gamma^\mu=-\varepsilon_\mu\gamma_\mu$, they are $-4I_4$, $+2\gamma_\alpha$, $-4\varepsilon_\alpha\delta_{\alpha\beta}I_4$ and $-2\gamma_\alpha\gamma_\beta\gamma_\delta$. With every index low only the first keeps a closed form, $\sum_\mu\gamma_\mu\gamma_\mu=-2I_4$; the other three are index-dependent and are computed, not transcribed.
+The four contraction sums are fixed by the metric, because a basis operator's square is. With the summed index raised, $\gamma^\mu=-\varepsilon_\mu\gamma_\mu$, they are $-4I_4$, $+2\gamma_\alpha$, $-4\varepsilon_\alpha\delta_{\alpha\beta}I_4$ and $-2\gamma_\alpha\gamma_\beta\gamma_\delta$. With every index low only the first keeps a closed form, $\sum_\mu\gamma_\mu\gamma_\mu=-2I_4$; the other three are index-dependent and are computed, not transcribed.
 
-**The display.** Every array printed in this section is given twice: in the Peirce display first, labelled $\mathrm{pau}$, whose arrays are the ones the literature prints, and in the axis-free display after it, labelled $\mathrm{axf}$, which is the display of the body and of the corpus. The two are carried into one another by $L_{\mathrm{axf},e_\mu}=C_{\Pi}L_{\mathrm{pau},e_\mu}C_{\Pi}^{-1}$, and a conjugation by $C_{\Pi}$ changes no product, no anticommutator, no trace and no determinant, so every identity of the section holds in both. An array is a statement about one display; a cell named in the running text keeps the Peirce label, and its axis-free array is the conjugate. The label names the array and not the operator.
+**The display.** Every array printed in this section is given twice: in the Peirce display first, labelled $\mathrm{pau}$, whose arrays are the ones the literature prints, and in the axis-free display after it, labelled $\mathrm{axf}$, which is the display of the body and of the corpus. The two are carried into one another by $L_{\mathrm{axf},e_\mu}=C_{\Pi}L_{\mathrm{pau},e_\mu}C_{\Pi}^{-1}$, and a conjugation by $C_{\Pi}$ changes no product, no anticommutator, no trace and no determinant, so every identity of the section holds in both. An array is a statement about one display; a basis operator named in the running text keeps the Peirce label, and its axis-free array is the conjugate. The label names the array and not the operator.
 
 ## Summary
 
@@ -495,7 +495,7 @@ $$
 \boxed{\;\langle\tilde{Ξ}_{\mathrm{sp}}^*iR_{\mathrm{axf},\vec e_x}\tilde{Ξ}_{\mathrm{sp}}\rangle\;} ,
 $$
 
-and it is the order parameter of the axial symmetry that the framework's **linear chiral mass pair** $\tilde{\nabla}\tilde{Ξ}_{\mathrm{sp},R}=k_m\tilde{Ξ}_{\mathrm{sp},L}$, $\tilde{\nabla}^{\natural}\tilde{Ξ}_{\mathrm{sp},L}=k_m\tilde{Ξ}_{\mathrm{sp},R}$ breaks. The two writings are kept apart throughout: the pair is the one-sided statement in the algebra, and the two-sided equation $(\mathbb{D}-k_m)\tilde{Ξ}_{\mathrm{sp}}=0$ with $\mathbb{D}\tilde{Ξ}_{\mathrm{sp}}=-\sum_\mu e_\mu(\partial_\mu\tilde{Ξ}_{\mathrm{sp}})\vec e_{\nu(\mu)}$ is the writing in which the bilinears are read. Chirality is a **side** and not a sign carried by an element: $\xi=-iR_{\vec e_z}$ is the frame's fifth cell and multiplies on the right, the gradient multiplies on the left, and the mass is the one term of the equation with both slots and therefore no side. The massless two-sided equation carries both the vector and the axial phase, $\tilde{Ξ}_{\mathrm{sp}}\mapsto\exp(i\alpha)\tilde{Ξ}_{\mathrm{sp}}$ and $\tilde{Ξ}_{\mathrm{sp}}\mapsto\exp(i\alpha\xi)\tilde{Ξ}_{\mathrm{sp}}=\tilde{Ξ}_{\mathrm{sp}}\exp(\alpha\vec e_z)$; the mass term preserves the central one and breaks the axial one, with $\sum_\mu\partial j_{5\mu}/\partial x_\mu=2m\,\tilde{Ξ}_{\mathrm{sp}}^*iR_{\mathrm{axf},\vec e_x}(\tilde{Ξ}_{\mathrm{sp}}\vec e_z)$. A nonzero condensate reproduces exactly this breaking, spontaneously, and its value is the coefficient of the same linear chiral pair: $m=-2G\langle\tilde{Ξ}_{\mathrm{sp}}^*iR_{\mathrm{axf},\vec e_x}\tilde{Ξ}_{\mathrm{sp}}\rangle$. The order parameter sits on the real central line, and it is not the antilinear pairing built on the algebra's real structure $\flat$.
+and it is the order parameter of the axial symmetry that the framework's **linear chiral mass pair** $\tilde{\nabla}\tilde{Ξ}_{\mathrm{sp},R}=k_m\tilde{Ξ}_{\mathrm{sp},L}$, $\tilde{\nabla}^{\natural}\tilde{Ξ}_{\mathrm{sp},L}=k_m\tilde{Ξ}_{\mathrm{sp},R}$ breaks. The two writings are kept apart throughout: the pair is the one-sided statement in the algebra, and the two-sided equation $(\mathbb{D}-k_m)\tilde{Ξ}_{\mathrm{sp}}=0$ with $\mathbb{D}\tilde{Ξ}_{\mathrm{sp}}=-\sum_\mu e_\mu(\partial_\mu\tilde{Ξ}_{\mathrm{sp}})\vec e_{\nu(\mu)}$ is the writing in which the bilinears are read. Chirality is a **side** and not a sign carried by an element: $\xi=-iR_{\vec e_z}$ is the frame's fifth basis operator and multiplies on the right, the gradient multiplies on the left, and the mass is the one term of the equation with both slots and therefore no side. The massless two-sided equation carries both the vector and the axial phase, $\tilde{Ξ}_{\mathrm{sp}}\mapsto\exp(i\alpha)\tilde{Ξ}_{\mathrm{sp}}$ and $\tilde{Ξ}_{\mathrm{sp}}\mapsto\exp(i\alpha\xi)\tilde{Ξ}_{\mathrm{sp}}=\tilde{Ξ}_{\mathrm{sp}}\exp(\alpha\vec e_z)$; the mass term preserves the central one and breaks the axial one, with $\sum_\mu\partial j_{5\mu}/\partial x_\mu=2m\,\tilde{Ξ}_{\mathrm{sp}}^*iR_{\mathrm{axf},\vec e_x}(\tilde{Ξ}_{\mathrm{sp}}\vec e_z)$. A nonzero condensate reproduces exactly this breaking, spontaneously, and its value is the coefficient of the same linear chiral pair: $m=-2G\langle\tilde{Ξ}_{\mathrm{sp}}^*iR_{\mathrm{axf},\vec e_x}\tilde{Ξ}_{\mathrm{sp}}\rangle$. The order parameter sits on the real central line, and it is not the antilinear pairing built on the algebra's real structure $\flat$.
 
 The standard mean-field account was verified. With $N_c$ colours and cutoff $\Lambda$ the gap equation is $1=4N_cG\,I_1(m)$, the critical coupling is $G_c=\pi^2/(N_c\Lambda^2)$, and for $N_c=3$, $\Lambda=0.65$ GeV, and a constituent mass $m=0.3$ GeV the condensate is $-(247\ \mathrm{MeV})^3$ — the accepted order of magnitude. The Goldstone count is $N_f^2-1$, giving three pions for $N_f=2$ and eight modes for $N_f=3$, the ninth would-be mode being the $\eta'$, which the anomaly keeps heavy; the spin-$0$ effective description of those modes belongs to another subcategory and is not developed here.
 
@@ -515,8 +515,8 @@ The framework supplies the carrier, the symmetry pattern and the sector placemen
 | $\tilde{\nabla}\tilde{Ξ}_{\mathrm{sp},R}=k_m\tilde{Ξ}_{\mathrm{sp},L}$, $\tilde{\nabla}^{\natural}\tilde{Ξ}_{\mathrm{sp},L}=k_m\tilde{Ξ}_{\mathrm{sp},R}$ | Gradient equation: the linear chiral pair, one-sided |
 | $(\mathbb{D}-k_m)\tilde{Ξ}_{\mathrm{sp}}=0$, $\mathbb{D}\tilde{Ξ}_{\mathrm{sp}}=-\sum_\mu e_\mu(\partial_\mu\tilde{Ξ}_{\mathrm{sp}})\vec e_{\nu(\mu)}$ | Two-sided equation; $\mathbb{D}^2=\Box$ |
 | $G_\mu:\ Q\mapsto i e_\mu Q\vec e_{\nu(\mu)}$, $\nu(t)=x$, $\nu(k)=y$ | Generator actions; $\{G_\mu,G_\nu\}=2\varepsilon_\mu\delta_{\mu\nu}\,\mathrm{id}$ |
-| $\xi:\ Q\mapsto-iQ\vec e_z=-iR_{\vec e_z}$, the frame's fifth cell | Chirality operator: a **pure right multiplier**, so it commutes with every left multiplication and $\{\xi,G_\mu\}=0$; $\xi^2=1$, $\xi\,\mathbb{D}\,\xi^{-1}=-\mathbb{D}$ |
-| $i\xi:\ Q\mapsto Q\vec e_z$ | The collapse of the imaginary unit: $\xi$ is the fifth cell itself, and $i\xi$ is a plain right multiplication |
+| $\xi:\ Q\mapsto-iQ\vec e_z=-iR_{\vec e_z}$, the frame's fifth basis operator | Chirality operator: a **pure right multiplier**, so it commutes with every left multiplication and $\{\xi,G_\mu\}=0$; $\xi^2=1$, $\xi\,\mathbb{D}\,\xi^{-1}=-\mathbb{D}$ |
+| $i\xi:\ Q\mapsto Q\vec e_z$ | The collapse of the imaginary unit: $\xi$ is the fifth basis operator itself, and $i\xi$ is a plain right multiplication |
 | $G_t=iR_{\vec e_x}$, $G_k=iL_{\vec e_k}R_{\vec e_y}$ | The slots of the generators: the time one has **no left slot**, the three spatial ones carry **both slots** |
 | $m$ | Central scalar: the one term of the equation with **both slots**, hence no side, and therefore the only term that pairs the two values |
 | $U_\alpha=\exp(i\alpha\xi)$ | The axial rotation, a pure right multiplication; $U_\alpha(\mathbb{D}-k_m)U_\alpha^{-1}=\exp(2i\alpha\xi)\mathbb{D}-k_m$ |
@@ -539,7 +539,7 @@ The framework supplies the carrier, the symmetry pattern and the sector placemen
 
 ## Further Reading
 
-- [Operator Chirality on the Biquaternion Algebra](../articles_maths/operator-chirality-on-the-biquaternion-algebra.html), for the side of an operator, the fifth cell of the frame and the two values of the subscript.
+- [Operator Chirality on the Biquaternion Algebra](../articles_maths/operator-chirality-on-the-biquaternion-algebra.html), for the side of an operator, the fifth basis operator of the frame and the two parts named by the subscript.
 - [Why AXF Matrices instead of Pauli and Gamma Matrices](why-axf-matrices-instead-of-pauli-and-gamma-matrices.html), for the reasons the AXF matrices replace the Pauli and gamma matrices.
 - Y. Nambu and G. Jona-Lasinio, "Dynamical model of elementary particles based on an analogy with superconductivity. I," *Physical Review* **122** (1961) 345–358, and II, *Physical Review* **124** (1961) 246–254, for the four-fermion mechanism of dynamical mass generation.
 - J. Goldstone, "Field theories with superconductor solutions," *Nuovo Cimento* **19** (1961) 154–164, for the Goldstone theorem and the counting of broken generators.

@@ -30,7 +30,7 @@ The article is organised as follows. The results it borrows are stated with thei
 
 **The supercharge.** The algebra $\{Q,Q^\dagger\}=H$, $Q^2=0$, the partner spectra, the zero modes, the Witten index, the biquaternion Dirac operator $\mathcal{D}=Q+Q^\dagger$ with $\mathcal{D}^2=\Box$, chirality as the grading, the mass pair and the superpotential are those of *Supersymmetric Quantum Physics in the Biquaternion Framework*; the statement that an odd supercharge is an element of the ambient graded algebra and never an element of $\mathbb{B}$ is that of *The Superalgebra Reading and the Odd Extension in Biquaternionic Form*; the several gradings and the warning against conflating them are those of *The Grading, Fermion Parity and the Two Sectors in Biquaternionic Form*.
 
-**The two Dirac equations.** The one-sided chiral pair, the two-sided equation of Kravchenko and the chirality cell are those of *The Dirac Equation in Biquaternionic Form*, §*The One-Sided and the Two-Sided Equation*.
+**The two Dirac equations.** The one-sided chiral pair, the two-sided equation of Kravchenko and the chirality basis operator are those of *The Dirac Equation in Biquaternionic Form*, §*The One-Sided and the Two-Sided Equation*.
 
 **The label.** The Grassmann algebra as the minimal odd extension, Berezin integration and the fermionic coherent states are those of *Grassmann Coherent States in Biquaternionic Form*; the exact one-mode Wick theorem is that of *The Wick Theorem in Biquaternionic Form*; the Jordan–Wigner square root and its string are those of *The Jordan–Wigner Transformation in Biquaternionic Form*.
 
@@ -223,7 +223,7 @@ $$
 
 This is a genuine $\mathbb{Z}/2$ grading of $\mathbb{B}$ as an associative algebra, and it is the grading the Fock-space article calls the parity grading. It is inner: the parity is conjugation by an element of the algebra, and its odd part is a two-dimensional subspace of the algebra itself. The mode's fermionic character is carried by that inner automorphism, and it is carried by nothing else.
 
-**The chirality.** The other parity is a label on the field and not an element of the algebra. The chirality takes two values, $L$ and $R$; an element is written $\tilde{Ξ}_{\mathrm{sp},L}$ or $\tilde{Ξ}_{\mathrm{sp},R}$; a product takes the value of its right factor, and left multiplication keeps the value of its argument; and only the zero element carries both values. On an action the label is a cell, and the chirality cell of the reference frame is the right multiplication by the unit with the phase,
+**The chirality.** The other parity is a label on the field and not an element of the algebra. The chirality takes two values, $L$ and $R$; an element is written $\tilde{Ξ}_{\mathrm{sp},L}$ or $\tilde{Ξ}_{\mathrm{sp},R}$; a product takes the value of its right factor, and left multiplication keeps the value of its argument; and only the zero element carries both values. On an action the label is a basis operator, and the chirality basis operator of the reference frame is the right multiplication by the unit with the phase,
 
 $$
 \Gamma=-iR_{\vec e_z}:\ \tilde Q\longmapsto-i\,\tilde Q\,\vec e_z ,
@@ -339,7 +339,7 @@ $$
 
 where $\bar F$ is the coefficient conjugation. The derivative acts from the left. The mass acts from the right, by the unit $\vec e_z$ together with the conjugation $\bar{\cdot}$, so the two sides commute; the conjugation is the antilinear part. This is the form in which an element acts on both sides at once. It is not the same operator as the one-sided pair: the price of the single equation is the antilinear conjugation. The two forms are compared in *The Dirac Equation in Biquaternionic Form*, §*The One-Sided and the Two-Sided Equation*.
 
-The two-sided form exhibits the point of the taxonomy. The derivative is blind to the chirality, and the mass is the term that carries it. The cell that carries it is the chirality cell $\Gamma$ of §*The Occupation Parity*, the same object as the fifth frame cell of §*The Legacy Pauli Gamma Formulation*; it is a cell, not an element of $\mathbb{B}$.
+The two-sided form exhibits the point of the taxonomy. The derivative is blind to the chirality, and the mass is the term that carries it. The basis operator that carries it is the chirality basis operator $\Gamma$ of §*The Occupation Parity*, the same object as the fifth frame basis operator of §*The Legacy Pauli Gamma Formulation*; it is a basis operator, not an element of $\mathbb{B}$.
 
 The two forms are set side by side once:
 
@@ -366,7 +366,7 @@ The supercharge is the case in which the square-zero is paired with the Hamilton
 
 - **The cohomology is the zero-mode space.** For $H$ positive semidefinite and the complex elliptic, $\ker Q=\ker H\oplus\mathrm{im}\,Q$, so $\ker Q/\mathrm{im}\,Q\cong\ker H$. The cohomology is the space of zero modes, and the cohomological index is its graded dimension. The supercharge's content is not the whole spectrum but the part of it that the grading protects.
 - **The splitting is by the Hamiltonian.** The mode's anticommutator is the identity and splits the identity into two rungs; the supercharge's anticommutator is $H$, and the splitting is by the spectrum of $H$; the zero modes are the part that survives.
-- **The grading is chirality.** The supercharge is odd under the chirality; the mode is odd under $(-1)^F=i\vec e_z$. The chirality is a two-valued label on the field, and on an action it is the chirality cell $\Gamma$ of §*The Occupation Parity*; it is not an element of $\mathbb{B}$, and no element of $\mathbb{B}$ carries it. In the one-mode truncation the two parities can be read on the same element, but they remain different objects: they are labels of different spaces and have different physical meanings. The coincidence is not a coincidence of the role.
+- **The grading is chirality.** The supercharge is odd under the chirality; the mode is odd under $(-1)^F=i\vec e_z$. The chirality is a two-valued label on the field, and on an action it is the chirality basis operator $\Gamma$ of §*The Occupation Parity*; it is not an element of $\mathbb{B}$, and no element of $\mathbb{B}$ carries it. In the one-mode truncation the two parities can be read on the same element, but they remain different objects: they are labels of different spaces and have different physical meanings. The coincidence is not a coincidence of the role.
 
 ## The Label
 
@@ -525,7 +525,7 @@ The word "grading" is used in the corpus for several structures, and the taxonom
 | grading | where it lives | what carries it | its odd part | type |
 |---|---|---|---|---|
 | occupation parity | $\mathbb{B}$ | $(-1)^F=i\vec e_z$ | $\mathbb{C}\{X,X^*\}$ | algebra, $\mathbb{Z}/2$, inner |
-| chirality | the field's two values | the cell $\Gamma$ | the exchange of the two values | label, $\mathbb{Z}/2$, not inner |
+| chirality | the field's two values | the basis operator $\Gamma$ | the exchange of the two values | label, $\mathbb{Z}/2$, not inner |
 | ghost number | $\mathbb{B}\otimes\Lambda$ | $N_{\mathrm{gh}}$ | $Q_{\mathrm{BRST}}$ has degree $+1$ | algebra, $\mathbb{Z}$ |
 | number | Fock space | $N$ | — | state space, $\mathbb{N}$ |
 | sector splitting | $\mathbb{B}$ | $*$ | — | not a grading |
@@ -608,9 +608,9 @@ The article adds no dynamics, no mass, no coupling and no empirical prediction. 
 
 The Pauli and gamma formulation is legacy: the reasons are explained in the article *Why AXF Matrices instead of Pauli and Gamma Matrices*. The generators carry no frame label: $\gamma_\mu$ is one set of matrices, $\gamma_0^2=I_4$ and $\gamma_k^2=-I_4$. The frame belongs to the coordinate, not to the array.
 
-The gammas are a frame of $\mathrm{Cl}_{1,3}(\mathbb{C})=M_4(\mathbb{C})$, not a different algebra. This is the only section of the article in which they appear; the rest of the article is written in cells.
+The gammas are a frame of $\mathrm{Cl}_{1,3}(\mathbb{C})=M_4(\mathbb{C})$, not a different algebra. This is the only section of the article in which they appear; the rest of the article is written in basis operators.
 
-Here $L_a$ and $R_b$ are the left and right multiplications, $L_a\tilde{Ξ}_{\mathrm{sp}}=a\tilde{Ξ}_{\mathrm{sp}}$ and $R_b\tilde{Ξ}_{\mathrm{sp}}=\tilde{Ξ}_{\mathrm{sp}} b$. The cells compose by $L_aR_b\,L_cR_d=L_{ac}R_{db}$, with the right factors in reverse order, and $c(M)$ is the coefficient matrix of $M$ in the basis of the sixteen products. Since $L_{\mathrm{pau},e_t}$ and $R_{\mathrm{pau},e_t}$ are the identities of the left and right factors, two of the five cells collapse to one-sided multipliers: $\gamma_0=iR_{\mathrm{pau},\vec e_x}$ and $\gamma_5=-iR_{\mathrm{pau},\vec e_z}$.
+Here $L_a$ and $R_b$ are the left and right multiplications, $L_a\tilde{Ξ}_{\mathrm{sp}}=a\tilde{Ξ}_{\mathrm{sp}}$ and $R_b\tilde{Ξ}_{\mathrm{sp}}=\tilde{Ξ}_{\mathrm{sp}} b$. The basis operators compose by $L_aR_b\,L_cR_d=L_{ac}R_{db}$, with the right factors in reverse order, and $c(M)$ is the coefficient matrix of $M$ in the basis of the sixteen products. Since $L_{\mathrm{pau},e_t}$ and $R_{\mathrm{pau},e_t}$ are the identities of the left and right factors, two of the five basis operators collapse to one-sided multipliers: $\gamma_0=iR_{\mathrm{pau},\vec e_x}$ and $\gamma_5=-iR_{\mathrm{pau},\vec e_z}$.
 
 $$
 \gamma_0=iL_{\mathrm{pau},e_t}R_{\mathrm{pau},\vec e_x},\quad \gamma_1=iL_{\mathrm{pau},\vec e_x}R_{\mathrm{pau},\vec e_y},\quad \gamma_2=iL_{\mathrm{pau},\vec e_y}R_{\mathrm{pau},\vec e_y},\quad \gamma_3=iL_{\mathrm{pau},\vec e_z}R_{\mathrm{pau},\vec e_y},\quad \gamma_5=-iL_{\mathrm{pau},e_t}R_{\mathrm{pau},\vec e_z} .
@@ -622,7 +622,7 @@ $$
 \gamma_0=iL_{\mathrm{axf},e_t}R_{\mathrm{axf},\vec e_x},\quad \gamma_1=iL_{\mathrm{axf},\vec e_x}R_{\mathrm{axf},\vec e_y},\quad \gamma_2=iL_{\mathrm{axf},\vec e_y}R_{\mathrm{axf},\vec e_y},\quad \gamma_3=iL_{\mathrm{axf},\vec e_z}R_{\mathrm{axf},\vec e_y},\quad \gamma_5=-iL_{\mathrm{axf},e_t}R_{\mathrm{axf},\vec e_z} .
 $$
 
-The frame is a Clifford frame. Using $i^2=-1$, the cell rule and $\vec e_k^2=-e_t$, the squares are
+The frame is a Clifford frame. Using $i^2=-1$, the basis operator rule and $\vec e_k^2=-e_t$, the squares are
 
 $$
 \gamma_0^2=i^2L_{\mathrm{pau},e_t}R_{\mathrm{pau},\vec e_x^2}=(-1)\bigl(-L_{\mathrm{pau},e_t}R_{\mathrm{pau},e_t}\bigr)=+L_{\mathrm{pau},e_t}R_{\mathrm{pau},e_t},
@@ -676,15 +676,15 @@ $$
 \{\gamma_5,\gamma_\mu\}=0\quad(\mu=0,1,2,3).
 $$
 
-A single cell $L_aR_b$ is a pure tensor; the cells form the seven-dimensional cone $\{\operatorname{rank}c(M)\le1\}$, and a general element is a sum of at most four, with $\ell(M)=\operatorname{rank}c(M)$.
+A single basis operator $L_aR_b$ is a pure tensor; the basis operators form the seven-dimensional cone $\{\operatorname{rank}c(M)\le1\}$, and a general element is a sum of at most four, with $\ell(M)=\operatorname{rank}c(M)$.
 
-The parity of this frame is visible in the right factor. Every even product of the frame is a single cell $L_aR_b$ with $b\in\mathrm{span}\{e_t,\vec e_z\}$, and every odd product is a single cell with $b\in\mathrm{span}\{\vec e_x,\vec e_y\}$. The even part of the algebra generated by the frame is therefore $\mathbb{B}\otimes\mathrm{span}\{e_t,\vec e_z\}$, of complex dimension eight. The left multipliers $L_a=L_aR_{\mathrm{pau},e_t}$ are the copy of $\mathbb{B}$ inside it. This is the complexified even Clifford algebra; the real one, of real dimension eight, is the $\mathbb{B}$ of §*The Occupation Parity*.
+The parity of this frame is visible in the right factor. Every even product of the frame is a single basis operator $L_aR_b$ with $b\in\mathrm{span}\{e_t,\vec e_z\}$, and every odd product is a single basis operator with $b\in\mathrm{span}\{\vec e_x,\vec e_y\}$. The even part of the algebra generated by the frame is therefore $\mathbb{B}\otimes\mathrm{span}\{e_t,\vec e_z\}$, of complex dimension eight. The left multipliers $L_a=L_aR_{\mathrm{pau},e_t}$ are the copy of $\mathbb{B}$ inside it. This is the complexified even Clifford algebra; the real one, of real dimension eight, is the $\mathbb{B}$ of §*The Occupation Parity*.
 
-The cell is $\Gamma=\xi_{\mathrm{cell}}=-iL_{\mathrm{pau},e_t}R_{\mathrm{pau},\vec e_z}$, which the reference frame's display writes $\gamma_5$; it is a pure right multiplier, and that side is the chirality. The central grading $\chi=i\tilde{Ζ}_{\mathrm{ad}}$ — the difference of the two central idempotents of the complexified algebra, so $\chi^2=e_t$ — is a different object, represented by $\gamma_5$ on the Dirac module.
+The basis operator is $\Gamma=\xi_{\mathrm{basis operator}}=-iL_{\mathrm{pau},e_t}R_{\mathrm{pau},\vec e_z}$, which the reference frame's display writes $\gamma_5$; it is a pure right multiplier, and that side is the chirality. The central grading $\chi=i\tilde{Ζ}_{\mathrm{ad}}$ — the difference of the two central idempotents of the complexified algebra, so $\chi^2=e_t$ — is a different object, represented by $\gamma_5$ on the Dirac module.
 
-The dictionary is complex-linear; over $\mathbb{R}$ the products span $\mathrm{Cl}_{1,3}(\mathbb{R})\cong M_2(\mathbb{H})$ and the sixteen real cells $L_{\mathrm{pau},e_\mu}R_{\mathrm{pau},e_\nu}$ span $\mathrm{Cl}_{3,1}(\mathbb{R})\cong M_4(\mathbb{R})$.
+The dictionary is complex-linear; over $\mathbb{R}$ the products span $\mathrm{Cl}_{1,3}(\mathbb{R})\cong M_2(\mathbb{H})$ and the sixteen real basis operators $L_{\mathrm{pau},e_\mu}R_{\mathrm{pau},e_\nu}$ span $\mathrm{Cl}_{3,1}(\mathbb{R})\cong M_4(\mathbb{R})$.
 
-**The display.** Every array printed in this section is given twice: in the Peirce display first, labelled $\mathrm{pau}$, whose arrays are the ones the literature prints, and in the axis-free display after it, labelled $\mathrm{axf}$, which is the display of the body and of the corpus. The two are carried into one another by $L_{\mathrm{axf},e_\mu}=C_{\Pi}L_{\mathrm{pau},e_\mu}C_{\Pi}^{-1}$, and a conjugation by $C_{\Pi}$ changes no product, no anticommutator, no trace and no determinant, so every identity of the section holds in both. An array is a statement about one display; a cell named in the running text keeps the Peirce label, and its axis-free array is the conjugate. The label names the array and not the operator.
+**The display.** Every array printed in this section is given twice: in the Peirce display first, labelled $\mathrm{pau}$, whose arrays are the ones the literature prints, and in the axis-free display after it, labelled $\mathrm{axf}$, which is the display of the body and of the corpus. The two are carried into one another by $L_{\mathrm{axf},e_\mu}=C_{\Pi}L_{\mathrm{pau},e_\mu}C_{\Pi}^{-1}$, and a conjugation by $C_{\Pi}$ changes no product, no anticommutator, no trace and no determinant, so every identity of the section holds in both. An array is a statement about one display; a basis operator named in the running text keeps the Peirce label, and its axis-free array is the conjugate. The label names the array and not the operator.
 
 ## Summary
 
@@ -698,7 +698,7 @@ The mode is the element $X=\tfrac12(i\vec e_x-\vec e_y)$ with its star, acting o
 
 The differential is an odd derivation of ghost number $+1$ on $\mathbb{B}\otimes\Lambda$, with $s^2=0$ inherited from associativity and the Jacobi identity. It has no vacuum state and no pairing of the square; its content is the cohomology $\ker Q/\mathrm{im}\,Q$ at ghost number zero, and the unphysical content is the Kugo–Ojima quartet.
 
-The supercharge is an odd operator on a graded Hilbert space, with $Q^2=0$ and $\{Q,Q^\dagger\}=H$. Its cohomology is the zero-mode space, its cohomological index is the Witten index, and its parity is the chirality. In the framework it is the part of the Dirac action that exchanges the two values of the chirality, with $\mathcal{D}=Q+Q^\dagger$ and $\mathcal{D}^2=\Box$, and it is never an element of $\mathbb{B}$: the chirality is carried by a label and by the cell $\Gamma=-iR_{\vec e_z}$, and no element of the algebra carries it.
+The supercharge is an odd operator on a graded Hilbert space, with $Q^2=0$ and $\{Q,Q^\dagger\}=H$. Its cohomology is the zero-mode space, its cohomological index is the Witten index, and its parity is the chirality. In the framework it is the part of the Dirac action that exchanges the two values of the chirality, with $\mathcal{D}=Q+Q^\dagger$ and $\mathcal{D}^2=\Box$, and it is never an element of $\mathbb{B}$: the chirality is carried by a label and by the basis operator $\Gamma=-iR_{\vec e_z}$, and no element of the algebra carries it.
 
 The biquaternion realization carries two forms of the Dirac equation. The one-sided form is the chiral pair $\tilde\nabla\tilde{Ξ}_{\mathrm{sp},R}=k_m\tilde{Ξ}_{\mathrm{sp},L}$, $\tilde\nabla^\natural\tilde{Ξ}_{\mathrm{sp},L}=k_m\tilde{Ξ}_{\mathrm{sp},R}$, with both gradients acting from the left on the two chirality parts of an element. The two-sided form is Kravchenko's single equation $\tilde\nabla^\natural F=-i\,m\,\bar F\,\vec e_z$ on $F\in\mathbb{B}$, in which the derivative acts from the left and the mass from the right, through the unit $\vec e_z$ and the conjugation. The two are different operators, and the price of the single equation is the antilinear conjugation.
 
@@ -731,21 +731,21 @@ The classification is a map, not a derivation. It adds no physics, and it leaves
 | $H^0=\ker X$, $H^1=M/\mathrm{im}\,X$ | its cohomology |
 | $\mathrm{Cl}_{1,3}=\mathrm{Cl}^0\oplus\mathrm{Cl}^1$ | Clifford algebra and its degree grading |
 | $\mathbb{B}=\mathrm{Cl}^0_{1,3}$ | the biquaternion algebra as the even part of the real $\mathrm{Cl}_{1,3}$; real dimension eight |
-| $L_a,R_b$, $L_{a}R_{b}$ | $L_a\tilde{Ξ}_{\mathrm{sp}}=a\tilde{Ξ}_{\mathrm{sp}}$, $R_b\tilde{Ξ}_{\mathrm{sp}}=\tilde{Ξ}_{\mathrm{sp}} b$; $L_{a}R_{b}\tilde{Ξ}_{\mathrm{sp}}=a\tilde{Ξ}_{\mathrm{sp}} b$; cells compose by $L_aR_b\,L_cR_d=L_{ac}R_{db}$ |
+| $L_a,R_b$, $L_{a}R_{b}$ | $L_a\tilde{Ξ}_{\mathrm{sp}}=a\tilde{Ξ}_{\mathrm{sp}}$, $R_b\tilde{Ξ}_{\mathrm{sp}}=\tilde{Ξ}_{\mathrm{sp}} b$; $L_{a}R_{b}\tilde{Ξ}_{\mathrm{sp}}=a\tilde{Ξ}_{\mathrm{sp}} b$; basis operators compose by $L_aR_b\,L_cR_d=L_{ac}R_{db}$ |
 | $\mathrm{Cl}^1=\mathbb{B}_Lu$ | the odd slot, a rank-one left module; $u$ the odd unit of the reference frame |
 | $Q_{\mathrm{BRST}}$ | the BRST charge, an operator on the Fock space |
 | $s$ | the BRST derivation, $s^2=0$ |
 | $\alpha,\beta,\delta$ | colour indices of the gauge field and the ghosts; the mode operators are written $a,a^\dagger$ |
 | $c_\alpha,\bar c_\alpha,B_\alpha$ | ghost, antighost and Nakanishi–Lautrup field; not elements of $\mathbb{B}$ |
-| $c(M)$ | the coefficient matrix of a cell in the basis of the sixteen products |
+| $c(M)$ | the coefficient matrix of a basis operator in the basis of the sixteen products |
 | $\Lambda$ | the Grassmann algebra of odd labels |
 | $\varkappa_i$ | a Grassmann label, $\varkappa_i^2=0$ |
 | $Q$, $Q^\dagger$ | the supersymmetric supercharge pair |
 | $\mathcal{D}=Q+Q^\dagger$ | the Dirac operator, the Hermitian sum of the supercharge and its adjoint; written $\mathbb{D}$ in the companion articles |
 | $H=\{Q,Q^\dagger\}$ | the supersymmetric Hamiltonian |
 | $\mathrm{Ind}=\mathrm{Tr}(-1)^F$ | the Witten index |
-| $\Gamma=-iR_{\vec e_z}$ | the chirality cell of the reference frame |
-| $\chi=i\tilde{Ζ}_{\mathrm{ad}}$, $\chi^2=e_t$ | the central chirality, not an element of $\mathbb{B}$; its cell is $\xi_{\mathrm{cell}}=-iL_{\mathrm{axf},e_t}R_{\mathrm{axf},\vec e_z}$ |
+| $\Gamma=-iR_{\vec e_z}$ | the chirality basis operator of the reference frame |
+| $\chi=i\tilde{Ζ}_{\mathrm{ad}}$, $\chi^2=e_t$ | the central chirality, not an element of $\mathbb{B}$; its basis operator is $\xi_{\mathrm{basis operator}}=-iL_{\mathrm{axf},e_t}R_{\mathrm{axf},\vec e_z}$ |
 | $F$ | the algebra-valued field of the two-sided Dirac equation |
 | $\tilde{Ξ}_{\mathrm{sp},L},\tilde{Ξ}_{\mathrm{sp},R}$ | the two chirality parts of the field element |
 | $\tilde P_{\Phi}=iP_t e_t+\vec p$ | the physical four-momentum |

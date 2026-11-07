@@ -155,7 +155,7 @@ but the two coefficients are equal: the terms are not separated by the spectrum 
 
 *Proof.* $b\neq0$ gives $|z|^2=t^2+b^2\geq b^2>0$. The converse fails at $z=1$, where $|z|^2=1$ and $b=0$.
 
-**Remark (the asymmetry).** The spectral condition is blind to the real part, so it cannot see the modulus; the modulus sees both coordinates. The spectrally regular set is therefore contained in the modulus-regular set, and the inclusion is strict. The comparison is *Relations between the Modulus and Spectral Regularity and Degeneracy*, and the count of cells is *The Three Sectors of the Complex Algebra*.
+**Remark (the asymmetry).** The spectral condition is blind to the real part, so it cannot see the modulus; the modulus sees both coordinates. The spectrally regular set is therefore contained in the modulus-regular set, and the inclusion is strict. The comparison is *Relations between the Modulus and Spectral Regularity and Degeneracy*, and the count of sectors is *The Three Sectors of the Complex Algebra*.
 
 ## Summary
 
@@ -183,13 +183,13 @@ Every element of $\mathbb{C}$ is semisimple. The minimal polynomial is $X-t$ on 
 | $\sigma(z)$ | the spectrum |
 | $m_z(X)$ | the minimal polynomial: $X-t$ if $b=0$, $(X-t)^2+b^2$ if $b\neq0$ |
 | $\mathbb{R}$ | the real axis, the spectral-degenerate set |
-| $\Sigma_{11},\Sigma_{10},\Sigma_{00}$ | the spectral cells, defined in *The Three Sectors of the Complex Algebra* |
+| $\Sigma_{11},\Sigma_{10},\Sigma_{00}$ | the spectral sectors, defined in *The Three Sectors of the Complex Algebra* |
 
 ## Further Reading
 
 - [Eigenvalue Decomposition and Eigenbasis of a Complex Number](eigenvalue-decomposition-and-eigenbasis-of-a-complex-number.html), for the eigenbasis $(1,-i),(1,i)$, the diagonal form, the idempotents $e_\pm$ and the polar reading.
 - [Relations between the Modulus and Spectral Regularity and Degeneracy](relations-between-the-modulus-and-spectral-regularity-and-degeneracy.html), for the comparison of $|z|^2$ and $b^2$, the nesting of the two regular sets and the chain of invariants.
-- [The Three Sectors of the Complex Algebra](the-three-sectors-of-the-complex-algebra.html), for the partition $\Sigma_{11},\Sigma_{10},\Sigma_{00}$ and the empty cell $\Sigma_{01}$.
+- [The Three Sectors of the Complex Algebra](the-three-sectors-of-the-complex-algebra.html), for the partition $\Sigma_{11},\Sigma_{10},\Sigma_{00}$ and the empty sector $\Sigma_{01}$.
 - [Complex Algebra](complex-algebra.html), for the definition, the conjugation and the real and imaginary subspaces.
 - [$M_2(\mathbb{R})$ Cayley Representation](m2r-cayley-representation.html), for the Cayley matrix, its determinant and its trace.
 - [Complex Norm and Invertibility](complex-norm-and-invertibility.html), for the modulus, its multiplicativity and the criterion $z\neq0$.

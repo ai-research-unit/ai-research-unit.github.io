@@ -21,7 +21,7 @@ The article is organized as follows. The next section fixes the classical field 
 
 The next section gives the Hamiltonian, the normal-ordering constant, and the four-momentum and charge. A section on spin and statistics records why anticommutation is forced here, without developing the full spin–statistics theorem, which the companion article *The Spin–Statistics Theorem in Biquaternionic Form* treats on its own. A section relates the result to the KMS thermal-state framework. The article then gives an explicit accounting of what is standard and what is open. It closes with the summary, the notation table, and further reading.
 
-Every derivative of the field in this article is the corpus gradient $\tilde\nabla$ or its conjugate $\tilde\nabla^{\natural}$, defined once in §*The Pair Operator and Its Symbol*: $\tilde\nabla=\sum_\mu e_\mu\,\partial/\partial R_\mu$ and $\tilde\nabla^{\natural}=\sum_\mu\varepsilon_\mu e_\mu\,\partial/\partial R_\mu$ with $\varepsilon=(1,-1,-1,-1)$. No other derivative operator is written. No operator below is a cell named by an abstract glyph: each is an element of $\mathbb{B}$, an action written out with its sides in position — the element multiplied on the left and the element multiplied on the right, both visible — or a number. Where an operator is two-sided, the two elements are named in the sentence that introduces it.
+Every derivative of the field in this article is the corpus gradient $\tilde\nabla$ or its conjugate $\tilde\nabla^{\natural}$, defined once in §*The Pair Operator and Its Symbol*: $\tilde\nabla=\sum_\mu e_\mu\,\partial/\partial R_\mu$ and $\tilde\nabla^{\natural}=\sum_\mu\varepsilon_\mu e_\mu\,\partial/\partial R_\mu$ with $\varepsilon=(1,-1,-1,-1)$. No other derivative operator is written. No operator below is a basis operator named by an abstract glyph: each is an element of $\mathbb{B}$, an action written out with its sides in position — the element multiplied on the left and the element multiplied on the right, both visible — or a number. Where an operator is two-sided, the two elements are named in the sentence that introduces it.
 
 ## The Classical Field and Its Conjugate Momentum
 
@@ -39,7 +39,7 @@ $$
 \tilde{\nabla}^{\natural}\tilde{Ξ}_{\mathrm{sp},L}=0,
 $$
 
-one equation per chirality. The single equation $\tilde{\nabla}\tilde{Ξ}_{\mathrm{sp}}=0$ is the right-handed member, not the whole massless field. Here $k_m=mc/\hbar$ is the mass wave number, the inverse of the mass length.
+one equation per chirality. The single equation $\tilde{\nabla}\tilde{Ξ}_{\mathrm{sp}}=0$ is the member written $R$, not the whole massless field. Here $k_m=mc/\hbar$ is the mass wave number, the inverse of the mass length.
 
 Two formulations now carry the name *Dirac equation*, and they must not be read as one. The pair above is the corpus's **one-sided** equation: both gradients act from the left, and the mass is the off-diagonal pairing of the two chiral halves. Kravchenko's **two-sided** equation, for a biquaternion field $F$,
 

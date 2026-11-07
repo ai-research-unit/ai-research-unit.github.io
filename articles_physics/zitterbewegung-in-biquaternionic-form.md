@@ -8,7 +8,7 @@ The biquaternion framework of these articles splits $\mathbb{B}$ by Hermitian co
 
 This article tests that suggestion rather than assuming it. The finding is mixed, and it is stated plainly from the outset. The oscillation can be derived and its frequency checked, and the mass does set the sector rotation: the rest-energy phase turns the two sectors into one another at $c\,k_m$; but the identification of the $\pm$-energy parts with the two sectors does **not** hold, because the energy sign is fixed by a map that multiplies the field on the right, while the sector is fixed by a conjugation of its value. The two splits have the same physical scale — the mass — and that is why the suggestion is tempting, but they are splits of different objects by different operations. Section *Does the Sector Split Do Real Work?* gives the argument, and Section *What Survives* separates the claims that hold from the one that does not.
 
-The article is organised as follows. The next section recalls the standard picture, writes the Heisenberg velocity identity, and records the three contested readings of the effect. The section after fixes the biquaternion setting and the plane-wave branches, following the parent. The following section recomputes the oscillation with the maps written out, reduces every factor of $i$ with $i^2=-1$, and checks the frequency and the amplitude on cases chosen independently of the rest case. A short section then isolates the genuinely algebraic content — the real structure as a diagonal action with opposite signs on the sectors, and the rest-energy phase as a rotation between them — and shows that the Zitterbewegung phase is the square of the free-evolution phase, so its frequency is twice the sector-rotation frequency. The central section tests the sector identification and reports its failure. The closing sections record the relation to the companion article on the electron, set the cell notation alongside the standard Dirac notation in one place and for comparison only, and summarise the statements that survive. Nothing here depends on the electron article; the connection is noted where relevant.
+The article is organised as follows. The next section recalls the standard picture, writes the Heisenberg velocity identity, and records the three contested readings of the effect. The section after fixes the biquaternion setting and the plane-wave branches, following the parent. The following section recomputes the oscillation with the maps written out, reduces every factor of $i$ with $i^2=-1$, and checks the frequency and the amplitude on cases chosen independently of the rest case. A short section then isolates the genuinely algebraic content — the real structure as a diagonal action with opposite signs on the sectors, and the rest-energy phase as a rotation between them — and shows that the Zitterbewegung phase is the square of the free-evolution phase, so its frequency is twice the sector-rotation frequency. The central section tests the sector identification and reports its failure. The closing sections record the relation to the companion article on the electron, set the basis operator notation alongside the standard Dirac notation in one place and for comparison only, and summarise the statements that survive. Nothing here depends on the electron article; the connection is noted where relevant.
 
 ## The Standard Picture
 
@@ -72,7 +72,7 @@ $$
 \end{aligned}
 $$
 
-for a field of mass $m$. The field is one element $\tilde{Ξ}_{\mathrm{sp}}=\tilde{Ξ}_{\mathrm{sp},L}+\tilde{Ξ}_{\mathrm{sp},R}$ of $\mathbb{B}$, and its two parts carry the two values of the subscript. Each line multiplies the part with one value by the gradient and pairs it with the part of the other value; the mass is the term that carries the value across, and it is the only such term. At $m=0$ the pair decouples into the two one-sided equations $\tilde\nabla\tilde{Ξ}_{\mathrm{sp},R}=0$ and $\tilde\nabla^{\natural}\tilde{Ξ}_{\mathrm{sp},L}=0$, one for each value.
+for a field of mass $m$. The field is one element $\tilde{Ξ}_{\mathrm{sp}}=\tilde{Ξ}_{\mathrm{sp},L}+\tilde{Ξ}_{\mathrm{sp},R}$ of $\mathbb{B}$, and its two parts are the two components that the subscripts name. Each line applies the gradient to one component and equates it to $k_m$ times the other, so $k_m$ is the coefficient of that exchange. The gradient multiplies on the left and keeps the value, and $k_m$ is central and keeps it too, so no term of the pair moves a value across: the letters name the two components, and the pair relates them. At $m=0$ the pair decouples into the two one-sided equations $\tilde\nabla\tilde{Ξ}_{\mathrm{sp},R}=0$ and $\tilde\nabla^{\natural}\tilde{Ξ}_{\mathrm{sp},L}=0$, one for each component.
 
 The conjugation $\flat$ is the algebra's real structure, not the mass term (§*The Conjugations* of the conventions article cited above). The corpus also carries a **two-sided** form of the same physics — Kravchenko's single equation on $\mathbb{B}$, in which the mass acts by right multiplication through $\vec e_z$ and a conjugation supplies the antilinear part — but the two forms are related by a dictionary and are not the same operator (parent, §*The One-Sided and the Two-Sided Equation*). The Zitterbewegung derivation below uses the pair.
 
@@ -104,7 +104,7 @@ One fact about the field will be needed throughout, and it is the sector action 
 
 ## Recomputing the Oscillation
 
-The generators of the parent are the map $\beta$ of *The Standard Picture* and three spatial maps, written in cells as $iL_{\mathrm{axf},\vec e_k}R_{\mathrm{axf},\vec e_y}$. With the action, the composition and the unit of *Operator Family Conventions*, and with the structure constants of the units, they give
+The generators of the parent are the map $\beta$ of *The Standard Picture* and three spatial maps, written in basis operators as $iL_{\mathrm{axf},\vec e_k}R_{\mathrm{axf},\vec e_y}$. With the action, the composition and the unit of *Operator Family Conventions*, and with the structure constants of the units, they give
 
 $$
 \left(iR_{\mathrm{axf},\vec e_x}\right)^2 = \mathrm{id}, \qquad
@@ -121,7 +121,7 @@ $$
 = L_{\mathrm{axf},\vec e_k}R_{\mathrm{axf},\vec e_z},
 $$
 
-because $\vec e_y\vec e_x=-\vec e_z$ and a cell is linear in its second multiplier; the last cell is the map $\alpha_k$ of *The Standard Picture*. The relations $\{\alpha_j,\alpha_k\} = 2\delta_{jk}\,\mathrm{id}$, $\{\alpha_k,\beta\} = 0$ and $H^2 = E^2\,\mathrm{id}$ all follow, and each was checked numerically.
+because $\vec e_y\vec e_x=-\vec e_z$ and a basis operator is linear in its second multiplier; the last basis operator is the map $\alpha_k$ of *The Standard Picture*. The relations $\{\alpha_j,\alpha_k\} = 2\delta_{jk}\,\mathrm{id}$, $\{\alpha_k,\beta\} = 0$ and $H^2 = E^2\,\mathrm{id}$ all follow, and each was checked numerically.
 
 The identity boxed in *The Standard Picture* is exact, and $cp_k/H$ in it denotes the operator $cp_kH^{-1} = cp_kH/E^2$ — not a multiple of the identity, since $H$ is an operator and not a scalar. The three equivalent forms of that section rest on $\{\alpha_k-cp_k/H,\,H\}=0$, which the relations above give.
 
@@ -202,7 +202,7 @@ The Zitterbewegung is usually introduced as a property of the electron, and a [c
 
 The Pauli and gamma formulation is legacy: the reasons are explained in the article *Why AXF Matrices instead of Pauli and Gamma Matrices*. The generators carry no frame label: $\gamma_\mu$ is one set of matrices, $\gamma_0^2=I_4$ and $\gamma_k^2=-I_4$. The frame belongs to the coordinate, not to the array.
 
-The gammas are a frame of the cell algebra $\mathrm{Cl}_{1,3}(\mathbb{C})=M_4(\mathbb{C})$, not a different algebra. They are recorded here for comparison with the standard Dirac notation; the derivation above uses only the cells $\beta$ and $\alpha_k$.
+The gammas are a frame of the basis operator algebra $\mathrm{Cl}_{1,3}(\mathbb{C})=M_4(\mathbb{C})$, not a different algebra. They are recorded here for comparison with the standard Dirac notation; the derivation above uses only the basis operators $\beta$ and $\alpha_k$.
 
 Here $L_a$ and $R_b$ are the left and right multiplications, $L_a\tilde{Ξ}_{\mathrm{sp}}=a\tilde{Ξ}_{\mathrm{sp}}$ and $R_b\tilde{Ξ}_{\mathrm{sp}}=\tilde{Ξ}_{\mathrm{sp}} b$, and $c(M)$ is the coefficient matrix of $M$ in the basis of the sixteen products.
 
@@ -226,19 +226,19 @@ $$
 
 They satisfy $\{\gamma_\mu,\gamma_\nu\}=2\varepsilon_\mu\delta_{\mu\nu}L_{\mathrm{pau},e_t}R_{\mathrm{pau},e_t}$ with $\varepsilon=(1,-1,-1,-1)$, the product $\gamma_5=i\gamma_0\gamma_1\gamma_2\gamma_3$ squares to the identity, and $\gamma_5$ anticommutes with all four: $\{\gamma_\mu,\gamma_5\}=0$.
 
-A single cell $L_aR_b$ is a pure tensor; a single product is one cell up to a phase, the products form the seven-dimensional cone $\operatorname{rank}c(M)\le1$, and a general element is a sum of at most four, with $\ell(M)=\operatorname{rank}c(M)$.
+A single basis operator $L_aR_b$ is a pure tensor; a single product is one basis operator up to a phase, the products form the seven-dimensional cone $\operatorname{rank}c(M)\le1$, and a general element is a sum of at most four, with $\ell(M)=\operatorname{rank}c(M)$.
 
-$\gamma_5$ is the reference-frame cell of the chirality operator $\Gamma$; the central grading $\xi$ — the difference of the two central idempotents of the complexified algebra, so $\chi^2=e_t$ — is a different object, represented by $\gamma_5$ on the Dirac module.
+$\gamma_5$ is the reference-frame basis operator of the chirality operator $\Gamma$; the central grading $\xi$ — the difference of the two central idempotents of the complexified algebra, so $\chi^2=e_t$ — is a different object, represented by $\gamma_5$ on the Dirac module.
 
-The dictionary is complex-linear; over $\mathbb{R}$ the products span $\mathrm{Cl}_{1,3}(\mathbb{R})\cong M_2(\mathbb{H})$ and the cells span $\mathrm{Cl}_{3,1}(\mathbb{R})\cong M_4(\mathbb{R})$.
+The dictionary is complex-linear; over $\mathbb{R}$ the products span $\mathrm{Cl}_{1,3}(\mathbb{R})\cong M_2(\mathbb{H})$ and the basis operators span $\mathrm{Cl}_{3,1}(\mathbb{R})\cong M_4(\mathbb{R})$.
 
-**The display.** Every array printed in this section is given twice: in the Peirce display first, labelled $\mathrm{pau}$, whose arrays are the ones the literature prints, and in the axis-free display after it, labelled $\mathrm{axf}$, which is the display of the body and of the corpus. The two are carried into one another by $L_{\mathrm{axf},e_\mu}=C_{\Pi}L_{\mathrm{pau},e_\mu}C_{\Pi}^{-1}$, and a conjugation by $C_{\Pi}$ changes no product, no anticommutator, no trace and no determinant, so every identity of the section holds in both. An array is a statement about one display; a cell named in the running text keeps the Peirce label, and its axis-free array is the conjugate. The label names the array and not the operator.
+**The display.** Every array printed in this section is given twice: in the Peirce display first, labelled $\mathrm{pau}$, whose arrays are the ones the literature prints, and in the axis-free display after it, labelled $\mathrm{axf}$, which is the display of the body and of the corpus. The two are carried into one another by $L_{\mathrm{axf},e_\mu}=C_{\Pi}L_{\mathrm{pau},e_\mu}C_{\Pi}^{-1}$, and a conjugation by $C_{\Pi}$ changes no product, no anticommutator, no trace and no determinant, so every identity of the section holds in both. An array is a statement about one display; a basis operator named in the running text keeps the Peirce label, and its axis-free array is the conjugate. The label names the array and not the operator.
 
 ## Summary
 
 The Zitterbewegung was derived in the biquaternion notation of the series. The Heisenberg velocity satisfies the exact identity $\alpha_k(r'_t) = cp_k/H + \exp(\frac{k_m\,iHr'_{t}}{m\,c^{2}})(\alpha_k(0)-cp_k/H)\exp(-\frac{k_m\,iHr'_{t}}{m\,c^{2}})$, checked at momentum $|\vec p| = 0.374\,mc$ and three times, to machine precision (the largest coefficient of the difference below $10^{-15}$); the integrated position formula was checked against a direct integration on the same case, with the largest coefficient of the difference below $5\times10^{-16}$. The oscillating term has frequency $2c\,k_{t}^{\prime}$, equal to $2c\,k_m$ at rest, and the electron value $1.55269\times10^{21}\ \text{rad s}^{-1}$ and amplitude $\dfrac{1}{2\,k_m} = 193.1$ fm were confirmed.
 
-The genuinely algebraic content is that the mass is the linear coupling between the two values of the subscript, that the real structure $\flat$ acts with opposite signs on the two sectors, and that the rest-energy phase $\exp(-i r'_t\,k_m) = \cos(r'_t\,k_m)e_t - \sin(r'_t\,k_m)(ie_t)$ rotates the two sectors into one another at $c\,k_m$. The Zitterbewegung phase is the square of this evolution phase, so its frequency is exactly twice the sector-rotation frequency.
+The genuinely algebraic content is that the mass is the central coefficient that couples the two components of the pair, that the real structure $\flat$ acts with opposite signs on the two sectors, and that the rest-energy phase $\exp(-i r'_t\,k_m) = \cos(r'_t\,k_m)e_t - \sin(r'_t\,k_m)(ie_t)$ rotates the two sectors into one another at $c\,k_m$. The Zitterbewegung phase is the square of this evolution phase, so its frequency is exactly twice the sector-rotation frequency.
 
 The structural claim that motivated the article fails. The positive- and negative-energy parts of the field are **not** its $\mathbb{B}_{\Phi}$ and $\mathbb{B}_{\Psi}$ parts. The energy sign is the sign of the eigenvalue of a Hamiltonian that multiplies the field on the right, and no element of the algebra does that by left multiplication, while the sectors are fixed by the conjugation of the value; the two are splits of different objects, a family of solutions and the values it takes; and on the dictionary the series supplies, both energy branches correspond to $\mathbb{B}_{\Psi}$ elements while the current lives in $\mathbb{B}_{\Phi}$. The relation between the trembling and the complexification is therefore one of phase and scale — the trembling is the second harmonic of the sector rotation — and not the identity the strong form of the claim requires.
 
@@ -250,14 +250,14 @@ The structural claim that motivated the article fails. The positive- and negativ
 | $e_t, \vec e_x, \vec e_y, \vec e_z$ | Its four units, the coefficient basis |
 | $i$ | The central scalar imaginary |
 | $\mathbb{B}_{\Phi}$, $\mathbb{B}_{\Psi}$ | The anti-Hermitian (material) and Hermitian (informational) sectors |
-| $\tilde{Ξ}_{\mathrm{sp}}$, $\tilde{Ξ}_{\mathrm{sp},L}$, $\tilde{Ξ}_{\mathrm{sp},R}$ | The field, one element of $\mathbb{B}$, and its two parts, one per value of the subscript |
+| $\tilde{Ξ}_{\mathrm{sp}}$, $\tilde{Ξ}_{\mathrm{sp},L}$, $\tilde{Ξ}_{\mathrm{sp},R}$ | The field, one element of $\mathbb{B}$, and its two parts, one per letter of the pair |
 | $\tilde{Ξ}_{\mathrm{sp}}^{(+)}, \tilde{Ξ}_{\mathrm{sp}}^{(-)}$ | The two frequency branches; $\tilde{Ξ}_{\mathrm{sp},0}^{(\pm)}$ their constant elements |
 | $\tilde R_\Phi$ | The four-position biquaternion of the parent |
 | $\tilde K_{\Phi}$ | The wave biquaternion of the parent, $\vec k_\Phi=\vec p\,\frac{k_m}{m\,c}$ |
 | $\tilde P_{\Phi}\tilde P_{\Phi}^{\natural} = -m^{2}\,c^{2}$ | Biquaternionic mass-shell condition |
 | $\flat$ | The anti-Hermitian conjugation (the algebra's real structure, not the mass term), *Algebra and Element Conventions* |
 | $\tilde\nabla$ | The biquaternionic gradient (Dirac operator), *Operator and Calculus Conventions* |
-| $L_{a}R_{b}$ | A two-sided cell; its action and its composition are *Operator and Calculus Conventions* and *Operator Family Conventions* |
+| $L_{a}R_{b}$ | A two-sided basis operator; its action and its composition are *Operator and Calculus Conventions* and *Operator Family Conventions* |
 | $\mathrm{id}$ | The identity map |
 | $\beta:\tilde Q\mapsto i\tilde Q\vec e_x$ | The time map, one right multiplication |
 | $\alpha_k:\tilde Q\mapsto\vec e_k\tilde Q\vec e_z$ | The three spatial maps |

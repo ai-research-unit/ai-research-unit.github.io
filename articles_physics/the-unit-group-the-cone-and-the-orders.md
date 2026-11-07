@@ -246,7 +246,7 @@ the quaternion group of order eight and the binary tetrahedral group of order tw
 
 **The finite unit group has no phase.** A finite subgroup of $S^{3}$ is discrete and lies in the real slice; it carries no continuous phase. The phase of the framework comes from the centre $\mathbb{C}^{\times}e_t$, not from the units. Interpreted physically, a finite symmetry has no clock, and a continuous phase is a central, not a discrete, object.
 
-**The Hurwitz units are the tetrahedral half of the Clifford lift.** The binary octahedral group $2O$ of order $48$ is the lift to the unit sphere of the one-qubit Clifford group, whose projective image is the octahedral rotation group of order $24$; the Hurwitz group $2T$ of order $24$ is its index-two tetrahedral half. Interpreted physically, the $24$-cell is not the Clifford group: it is the even half of it, and the identification of the Hurwitz units with the single-qubit Clifford group is wrong by the index two.
+**The Hurwitz units are the tetrahedral half of the Clifford lift.** The binary octahedral group $2O$ of order $48$ is the lift to the unit sphere of the one-qubit Clifford group, whose projective image is the octahedral rotation group of order $24$; the Hurwitz group $2T$ of order $24$ is its index-two tetrahedral half. Interpreted physically, the $24$-basis operator is not the Clifford group: it is the even half of it, and the identification of the Hurwitz units with the single-qubit Clifford group is wrong by the index two.
 
 **The figure is larger than the group.** The $24$-cell has $1152$ symmetries, while the unit group has $24$ elements; its conjugation action on the real slice gives twelve rotations. Interpreted physically, the symmetry of the lattice is not the unit group; the figure can have more symmetries than the operations the units supply. The distinction is the one between a crystal's point group and the rotations of its lattice.
 
@@ -312,4 +312,4 @@ The orders are the Lipschitz and Hurwitz lattices, with unit groups $Q_8$ and $2
 - [Biquaternion Elementary Functions](../articles_maths/biquaternion-elementary-functions.html), for the parity-matched lattice and the kernel of the exponential.
 - [Quaternion Orders and Finite Groups of Units](../articles_maths/quaternion-orders-and-finite-groups-of-units.html), for the lattices, the finite unit groups and the complex order.
 - [The Polar Decomposition and Its Three Pairings](the-polar-decomposition-and-its-three-pairings.html), §*The Domain*, for the three construction domains and the witnesses in one table.
-- John H. Conway and Derek A. Smith, *On Quaternions and Octonions* (A. K. Peters, 2003), for the Lipschitz and Hurwitz orders and the $24$-cell.
+- John H. Conway and Derek A. Smith, *On Quaternions and Octonions* (A. K. Peters, 2003), for the Lipschitz and Hurwitz orders and the $24$-basis operator.

@@ -65,7 +65,7 @@ $$
 
 **The chain declares one spatial unit.** The spin of a site is measured along a direction the chain supplies, and that direction is the article's only named unit. Write $\vec u$ for it. Nothing in the algebra privileges one of the three spatial units; the chain does, once, at the outset, by declaring its axis. Every statement below that holds for a declared unit is written in $\vec u$, so that no unit is privileged by the notation itself. The chain measures along the third coordinate direction, so its declared unit is $\vec u=\vec e_z$, and the body writes $\vec e_z$ only where that concrete direction enters a formula.
 
-**An operator is diagonal in a basis when each basis element is carried into a multiple of itself.** Of the sixteen cells, four are diagonal in each of the two bases of this article, and the two fours are different. In the coefficient basis they are the four squares,
+**An operator is diagonal in a basis when each basis element is carried into a multiple of itself.** Of the sixteen basis operators, four are diagonal in each of the two bases of this article, and the two fours are different. In the coefficient basis they are the four squares,
 
 $$
 e_t e_t ,\qquad \vec e_x\vec e_x ,\qquad \vec e_y\vec e_y ,\qquad \vec e_z\vec e_z ,
@@ -77,7 +77,7 @@ $$
 e_t e_t ,\qquad e_t\vec u ,\qquad \vec u e_t ,\qquad \vec u\vec u ,
 $$
 
-the row naming the declared unit and the time unit and no other spatial unit at all. Three of the four carry a time slot, and a cell with a time slot collapses, because $e_t$ is the unit: the four are the identity, right multiplication by $\vec u$, left multiplication by $\vec u$, and the two-sided $\vec u[\,]\vec u$. That set therefore changes when the units are permuted, and the coefficient-basis four do not.
+the row naming the declared unit and the time unit and no other spatial unit at all. Three of the four carry a time slot, and a basis operator with a time slot collapses, because $e_t$ is the unit: the four are the identity, right multiplication by $\vec u$, left multiplication by $\vec u$, and the two-sided $\vec u[\,]\vec u$. That set therefore changes when the units are permuted, and the coefficient-basis four do not.
 
 **The site parity is diagonal in the frame built on the declared unit.** Right multiplication by $i\vec u$ carries each of the four elements of that frame into a multiple of itself, $+1$ on two of them and $-1$ on the other two, and it is not diagonal in the coefficient basis, where it carries a coefficient unit into a combination of the other units. This is the only role the axis plays below: the string multiplies one such parity per site, so it is diagonal in the frame built on the declared unit and not in the coefficient basis, and that is a property of the basis and not of the algebra.
 
@@ -246,17 +246,17 @@ The biquaternion reading is the same as before: the increments of the cochain ar
 
 - Companion article *Fock Space and Creation/Annihilation Operators in Biquaternionic Form*, for the one-mode ladder identified here with the one-site spin, and the parity $i\vec e_z$.
 - Companion article *The Spinor Module in Biquaternionic Form and Its Lorentz Action*, for the two displays of one element and the conjugation $C_\Pi$ that carries one into the other.
-- Companion article *Biquaternion Physical Interpretation of Operator Chirality*, for the definition of chirality as the side on which an operator multiplies; the closing section prints its cell.
+- Companion article *Biquaternion Physical Interpretation of Operator Chirality*, for the definition of chirality as the side on which an operator multiplies; the closing section prints its basis operator.
 
 ## The Legacy Pauli Gamma Formulation
 
 The Pauli and gamma formulation is legacy: the reasons are explained in the article *Why AXF Matrices instead of Pauli and Gamma Matrices*. The generators carry no frame label: $\gamma_\mu$ is one set of matrices, and the frame is named on the coordinate.
 
-The gammas are a frame of $\mathrm{Cl}_{1,3}(\mathbb{C})=M_4(\mathbb{C})$, not a different algebra. They are cells of the same two-sided operator algebra that the one-site identification used, and the chirality cell is the right multiplication by $\vec e_z$ that separated the two carriers there.
+The gammas are a frame of $\mathrm{Cl}_{1,3}(\mathbb{C})=M_4(\mathbb{C})$, not a different algebra. They are basis operators of the same two-sided operator algebra that the one-site identification used, and the chirality basis operator is the right multiplication by $\vec e_z$ that separated the two carriers there.
 
 Here $L_a$ and $R_b$ are the left and right multiplications, $L_a\tilde{Ξ}_{\mathrm{sp}}=a\tilde{Ξ}_{\mathrm{sp}}$ and $R_b\tilde{Ξ}_{\mathrm{sp}}=\tilde{Ξ}_{\mathrm{sp}} b$, and $c(M)$ is the coefficient matrix of $M$ in the basis of the sixteen products.
 
-The four frame cells are the four coordinates, with the factor $i$ belonging to the cell:
+The four frame basis operators are the four coordinates, with the factor $i$ belonging to the basis operator:
 
 $$
 \gamma_0=iL_{\mathrm{pau},e_t}R_{\mathrm{pau},\vec e_x},\qquad
@@ -274,7 +274,7 @@ $$
 \gamma_3=iL_{\mathrm{axf},\vec e_z}R_{\mathrm{axf},\vec e_y}.
 $$
 
-The fifth gamma is not a fifth frame vector but their product, and $i^2=-1$ fixes its sign and its cell. Multiplying cells, $L_aR_b\,L_cR_d=L_{ac}R_{db}$, with $\vec e_x\vec e_x=\vec e_y\vec e_y=-e_t$ and $\vec e_x\vec e_y=-\vec e_y\vec e_x=\vec e_z$,
+The fifth gamma is not a fifth frame vector but their product, and $i^2=-1$ fixes its sign and its basis operator. Multiplying basis operators, $L_aR_b\,L_cR_d=L_{ac}R_{db}$, with $\vec e_x\vec e_x=\vec e_y\vec e_y=-e_t$ and $\vec e_x\vec e_y=-\vec e_y\vec e_x=\vec e_z$,
 
 $$
 \gamma_0\gamma_1\gamma_2\gamma_3=-L_{\mathrm{pau},e_t}R_{\mathrm{pau},\vec e_z},
@@ -290,7 +290,7 @@ $$
 \gamma_5:=i\gamma_0\gamma_1\gamma_2\gamma_3=i\bigl(-L_{\mathrm{axf},e_t}R_{\mathrm{axf},\vec e_z}\bigr)=-iL_{\mathrm{axf},e_t}R_{\mathrm{axf},\vec e_z}=-iR_{\mathrm{axf},\vec e_z}.
 $$
 
-The four gammas carry $i^4=1$, so the single $i$ of the definition survives, and no second factor of $i$ is left over: the cell that results is $-iR_{\mathrm{pau},\vec e_z}$, in which the left multiplier is the identity and the cell has collapsed to a right multiplication.
+The four gammas carry $i^4=1$, so the single $i$ of the definition survives, and no second factor of $i$ is left over: the basis operator that results is $-iR_{\mathrm{pau},\vec e_z}$, in which the left multiplier is the identity and the basis operator has collapsed to a right multiplication.
 
 That right multiplication is the one the one-site section met, up to the factor $i$: the Peirce sign of the two carriers is $P=R_{\mathrm{pau},i\vec e_z}=iR_{\mathrm{pau},\vec e_z}$, so
 
@@ -308,9 +308,9 @@ $$
 P^2=I_4 ,
 $$
 
-and the two differ only by the overall sign that the frame fixes. The Peirce sign is a copy index inside $\mathbb{B}$; the chirality is not. The cell is $-iR_{\mathrm{axf},\vec e_z}$, a pure right multiplier, and its side is the right slot; its central form is the sign $\chi=i\tilde{Ζ}_{\mathrm{ad}}$ of the complexified algebra.
+and the two differ only by the overall sign that the frame fixes. The Peirce sign is a copy index inside $\mathbb{B}$; the chirality is not. The basis operator is $-iR_{\mathrm{axf},\vec e_z}$, a pure right multiplier, and its side is the right slot; its central form is the sign $\chi=i\tilde{Ζ}_{\mathrm{ad}}$ of the complexified algebra.
 
-The frame is Clifford, with $\varepsilon=(1,-1,-1,-1)$ and $I_4=L_{\mathrm{pau},e_t}R_{\mathrm{pau},e_t}$ the identity cell:
+The frame is Clifford, with $\varepsilon=(1,-1,-1,-1)$ and $I_4=L_{\mathrm{pau},e_t}R_{\mathrm{pau},e_t}$ the identity basis operator:
 
 $$
 \{\gamma_\mu,\gamma_\nu\}=2\varepsilon_\mu\delta_{\mu\nu}I_4 ,
@@ -320,17 +320,17 @@ $$
 \{\gamma_\mu,\gamma_5\}=0 ,
 \qquad \varepsilon=(1,-1,-1,-1),$$
 
-all three checked cell by cell.
+all three checked operator by operator.
 
 A single product is a pure tensor; the products form the seven-dimensional cone $\operatorname{rank}c(M)\le1$, and a general element is a sum of at most four, with $\ell(M)=\operatorname{rank}c(M)$.
 
-$\gamma_5$ is the reference-frame cell of the chirality $\Gamma$. The central grading is a different object and carries its own factors: $\tilde{Ζ}_{\mathrm{ad}}$ is the central root of the double with $\tilde{Ζ}_{\mathrm{ad}}^2=-e_t$, so $\chi=i\tilde{Ζ}_{\mathrm{ad}}$ has
+$\gamma_5$ is the reference-frame basis operator of the chirality $\Gamma$. The central grading is a different object and carries its own factors: $\tilde{Ζ}_{\mathrm{ad}}$ is the central root of the double with $\tilde{Ζ}_{\mathrm{ad}}^2=-e_t$, so $\chi=i\tilde{Ζ}_{\mathrm{ad}}$ has
 
 $$
 \xi^2=i^2\tilde{Ζ}_{\mathrm{ad}}^2=(-1)(-e_t)=e_t ,
 $$
 
-and $\xi$ is the difference of the two central idempotents of the complexified algebra, $(e_t+\xi)/2-(e_t-\xi)/2=\xi$. The cell represents $\xi$ on the Dirac module; it is not its definition. The chirality pairs the two halves of that module, and the field article writes the pair as two equations, one for each chirality:
+and $\xi$ is the difference of the two central idempotents of the complexified algebra, $(e_t+\xi)/2-(e_t-\xi)/2=\xi$. The basis operator represents $\xi$ on the Dirac module; it is not its definition. The chirality pairs the two halves of that module, and the field article writes the pair as two equations, one for each chirality:
 
 $$
 \tilde\nabla\tilde{Ξ}_{\mathrm{sp},R}=k_m\tilde{Ξ}_{\mathrm{sp},L} ,
@@ -344,9 +344,9 @@ Here $k_m=mc/\hbar$ is the mass wave number, the inverse of the mass length.
 
 The two act from the left; what separates them is the conjugation $\natural$, not a change of side. The mass is the one term of the pair that mixes the two chiralities.
 
-The dictionary is complex-linear; over $\mathbb{R}$ the products span $\mathrm{Cl}_{1,3}(\mathbb{R})\cong M_2(\mathbb{H})$ and the cells span $\mathrm{Cl}_{3,1}(\mathbb{R})\cong M_4(\mathbb{R})$.
+The dictionary is complex-linear; over $\mathbb{R}$ the products span $\mathrm{Cl}_{1,3}(\mathbb{R})\cong M_2(\mathbb{H})$ and the basis operators span $\mathrm{Cl}_{3,1}(\mathbb{R})\cong M_4(\mathbb{R})$.
 
-**The display.** Every array printed in this section is given twice: in the Peirce display first, labelled $\mathrm{pau}$, whose arrays are the ones the literature prints, and in the axis-free display after it, labelled $\mathrm{axf}$, which is the display of the body and of the corpus. The two are carried into one another by $L_{\mathrm{axf},e_\mu}=C_{\Pi}L_{\mathrm{pau},e_\mu}C_{\Pi}^{-1}$, and a conjugation by $C_{\Pi}$ changes no product, no anticommutator, no trace and no determinant, so every identity of the section holds in both. An array is a statement about one display; a cell named in the running text keeps the Peirce label, and its axis-free array is the conjugate. The label names the array and not the operator.
+**The display.** Every array printed in this section is given twice: in the Peirce display first, labelled $\mathrm{pau}$, whose arrays are the ones the literature prints, and in the axis-free display after it, labelled $\mathrm{axf}$, which is the display of the body and of the corpus. The two are carried into one another by $L_{\mathrm{axf},e_\mu}=C_{\Pi}L_{\mathrm{pau},e_\mu}C_{\Pi}^{-1}$, and a conjugation by $C_{\Pi}$ changes no product, no anticommutator, no trace and no determinant, so every identity of the section holds in both. An array is a statement about one display; a basis operator named in the running text keeps the Peirce label, and its axis-free array is the conjugate. The label names the array and not the operator.
 
 ## Summary
 
@@ -386,7 +386,7 @@ The transformation is a change of generators of one algebra — both lists gener
 | $\tilde N_j=\tilde C_j^{*}\tilde C_j=\tfrac12(e_t-\tilde Z_j)$ | Occupation of a site |
 | $\prod_j\tilde Z_j$ | Whole-chain parity; boundary-condition sectors |
 | $H_{XY}=-J\sum_j((\vec e_x)_j(\vec e_x)_{j+1}+(\vec e_y)_j(\vec e_y)_{j+1})$ | XY chain, $=2J\sum_j(\tilde C_j^{*}\tilde C_{j+1}+\text{h.c.})$ |
-| $e_te_t$, $e_t\vec u$, $\vec u e_t$, $\vec u\vec u$ | The four diagonal cells of the frame built on the declared unit; $\vec u$ is the declared unit, $\vec u=\vec e_z$ for this chain |
+| $e_te_t$, $e_t\vec u$, $\vec u e_t$, $\vec u\vec u$ | The four diagonal basis operators of the frame built on the declared unit; $\vec u$ is the declared unit, $\vec u=\vec e_z$ for this chain |
 | $\tilde Q_L,\tilde Q_R$ | The two values of the chirality subscript, minus and plus |
 | $C_\Pi$ | The conjugation that carries one display into the other |
 

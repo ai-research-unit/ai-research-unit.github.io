@@ -29,7 +29,7 @@ The answer developed here is narrower than the title might suggest, and it is wo
 
 **What this article is and is not.** It is a computation of how the frame route of the parent article linearizes, and a comparison of the result with standard linearized gravity. It is not a derivation of general relativity from the biquaternion algebra, and it does not claim that the algebra predicts the linearized Einstein equation. The linear theory is transcribed into the framework's notation; the framework's contribution is the sector structure of the carrier and the form of the gauge transformation, both of which are checked, and neither of which is a dynamics.
 
-The body is written in the biquaternion algebra. An action on an element is written as it acts, $\tilde Q\mapsto a\tilde Qb$, and a cell appears only where the operator itself is the subject, in *The Fermionic Coupling at First Order*. The gamma matrices appear only in the final section, *The Legacy Pauli Gamma Formulation*, which is a translation table and not a second formulation.
+The body is written in the biquaternion algebra. An action on an element is written as it acts, $\tilde Q\mapsto a\tilde Qb$, and a basis operator appears only where the operator itself is the subject, in *The Fermionic Coupling at First Order*. The gamma matrices appear only in the final section, *The Legacy Pauli Gamma Formulation*, which is a translation table and not a second formulation.
 
 The framework's conventions are used here and are not restated. The material basis $\varepsilon_\mu$ of $\mathbb{B}_{\Phi}$, the real coordinates $x_\mu=(r'_{t},r_x,r_y,r_z)$ of the material frame and the biquaternionic d'Alembertian $\Box$ are those of *Frame and Metric Conventions* and *Operator and Calculus Conventions*, and every pairing written here is the quaternionic form $\langle\cdot,\cdot\rangle_{\natural}$ of *Norm and Pairing Conventions*. The plain form is a different pairing and is not used. There is one metric, the unit metric $\delta_{\mu\nu}=(1,1,1,1)$ on the four $Q_\mu$; the material interval is that form read on $Q_t=i r'_t$, $-{r'_{t}}^2+r_x^2+r_y^2+r_z^2$, and its one minus is the square of the $i$. The one symbol this article fixes for itself is the dual material basis $\varepsilon_{\mathrm{du},\lambda}$, fixed by $\langle\varepsilon_{\mathrm{du},\lambda},\varepsilon_\rho\rangle_{\natural}=\delta_{\lambda\rho}$; it carries the trace and the surjectivity of the frame map below.
 
@@ -219,7 +219,7 @@ with the exact expansion $g_{\mu\nu} = \langle\varepsilon_\mu,\varepsilon_\nu\ra
 
 The construction above is pure geometry: it linearizes the frame and reads the metric perturbation off it. Where matter attaches to that frame, the parent article's attachment is the one-sided covariant derivative $D_\mu\tilde{Ξ}_{\mathrm{sp}} = \partial/\partial x_\mu\,\tilde{Ξ}_{\mathrm{sp}} + \vec\Gamma_\mu\tilde{Ξ}_{\mathrm{sp}}$ on an element-valued Dirac field, with $\vec\Gamma_\mu$ the spin connection. An external source shows that this attachment has two inequivalent forms, and the difference is not a higher-order subtlety here.
 
-For the standard vierbein coupling of a Dirac fermion to gravity, gauging the flat equation and varying the gauged action **do not commute**: the varied equation carries an anticommutator term between the generator cell of a coordinate and the Lorentz generator, which the substituted equation does not. The generator cell of the coordinate $x_\mu$ is the frame cell $iL_{\mathrm{axf},e_\mu}R_{\mathrm{axf},\vec e_{\nu(\mu)}}$, with $\nu(t)=x$ and $\nu(k)=y$, and $S_{ab}$ is the Lorentz generator those cells build, the quarter-commutator displayed in *Matrix Representations Conventions*, §*The Clifford Structure*. The relevant commutator is, with $\varepsilon=(1,-1,-1,-1)$ the plain weight of the frame,
+For the standard vierbein coupling of a Dirac fermion to gravity, gauging the flat equation and varying the gauged action **do not commute**: the varied equation carries an anticommutator term between the generator basis operator of a coordinate and the Lorentz generator, which the substituted equation does not. The generator basis operator of the coordinate $x_\mu$ is the frame basis operator $iL_{\mathrm{axf},e_\mu}R_{\mathrm{axf},\vec e_{\nu(\mu)}}$, with $\nu(t)=x$ and $\nu(k)=y$, and $S_{ab}$ is the Lorentz generator those basis operators build, the quarter-commutator displayed in *Matrix Representations Conventions*, §*The Clifford Structure*. The relevant commutator is, with $\varepsilon=(1,-1,-1,-1)$ the plain weight of the frame,
 
 $$
 \bigl[L_{e_c}R_{\mathrm{axf},\vec e_{\nu(c)}},S_{ab}\bigr]
@@ -407,7 +407,7 @@ The boundary can be drawn as a list, in the manner of the parent article.
 
 The Pauli and gamma formulation is legacy: the reasons are explained in the article *Why AXF Matrices instead of Pauli and Gamma Matrices*. The generators carry no frame label: $\gamma_\mu$ is one set of matrices, and the frame is named on the coordinate.
 
-The gammas are a frame of $\mathrm{Cl}_{1,3}(\mathbb{C})=M_4(\mathbb{C})$, not a different algebra. They are the frame cells of the body. Here $L_a$ and $R_b$ are the left and right multiplications, $L_a\tilde{Ξ}_{\mathrm{sp}}=a\tilde{Ξ}_{\mathrm{sp}}$ and $R_b\tilde{Ξ}_{\mathrm{sp}}=\tilde{Ξ}_{\mathrm{sp}} b$, and $c(M)$ is the coefficient matrix of $M$ in the basis of the sixteen products. Every $i$ below is the central scalar, with $i^2=-1$, so each cell carries one factor of $i$ and each product of two cells carries $i^2=-1$.
+The gammas are a frame of $\mathrm{Cl}_{1,3}(\mathbb{C})=M_4(\mathbb{C})$, not a different algebra. They are the frame basis operators of the body. Here $L_a$ and $R_b$ are the left and right multiplications, $L_a\tilde{Ξ}_{\mathrm{sp}}=a\tilde{Ξ}_{\mathrm{sp}}$ and $R_b\tilde{Ξ}_{\mathrm{sp}}=\tilde{Ξ}_{\mathrm{sp}} b$, and $c(M)$ is the coefficient matrix of $M$ in the basis of the sixteen products. Every $i$ below is the central scalar, with $i^2=-1$, so each basis operator carries one factor of $i$ and each product of two basis operators carries $i^2=-1$.
 
 $$
 \gamma_0=iL_{\mathrm{pau},e_t}R_{\mathrm{pau},\vec e_x},\quad
@@ -427,7 +427,7 @@ $$
 
 A single product is a pure tensor; the products form the seven-dimensional cone $\operatorname{rank}c(M)\le1$, and a general element is a sum of at most four, with $\ell(M)=\operatorname{rank}c(M)$.
 
-The time cell simplifies at once, because $L_{\mathrm{pau},e_t}$ is the identity: $\gamma_0=iR_{\mathrm{pau},\vec e_x}$. The fifth gamma is not a fifth frame vector but their product,
+The time basis operator simplifies at once, because $L_{\mathrm{pau},e_t}$ is the identity: $\gamma_0=iR_{\mathrm{pau},\vec e_x}$. The fifth gamma is not a fifth frame vector but their product,
 
 $$
 \gamma_5:=i\gamma_0\gamma_1\gamma_2\gamma_3=-iL_{\mathrm{pau},e_t}R_{\mathrm{pau},\vec e_z}=-iR_{\mathrm{pau},\vec e_z}.
@@ -439,9 +439,9 @@ $$
 \gamma_5:=i\gamma_0\gamma_1\gamma_2\gamma_3=-iL_{\mathrm{axf},e_t}R_{\mathrm{axf},\vec e_z}=-iR_{\mathrm{axf},\vec e_z}.
 $$
 
-The four cells in the product carry $i^4=1$, so the single $i$ of the definition survives; the cell that results is $-iR_{\mathrm{pau},\vec e_z}$, the chirality cell.
+The four basis operators in the product carry $i^4=1$, so the single $i$ of the definition survives; the basis operator that results is $-iR_{\mathrm{pau},\vec e_z}$, the chirality basis operator.
 
-$\gamma_5$ is the reference-frame cell of the chirality operator. The central grading $\chi=i\tilde{Ζ}_{\mathrm{ad}}$, with $\tilde{Ζ}_{\mathrm{ad}}$ the central root of $-e_t$, is the difference of the two central idempotents of the complexified algebra, so $\chi^2=e_t$. It is a different object, represented by $\gamma_5$ on the Dirac module.
+$\gamma_5$ is the reference-frame basis operator of the chirality operator. The central grading $\chi=i\tilde{Ζ}_{\mathrm{ad}}$, with $\tilde{Ζ}_{\mathrm{ad}}$ the central root of $-e_t$, is the difference of the two central idempotents of the complexified algebra, so $\chi^2=e_t$. It is a different object, represented by $\gamma_5$ on the Dirac module.
 
 The dictionary is complex-linear; over $\mathbb{R}$ the products span $\mathrm{Cl}_{1,3}(\mathbb{R})\cong M_2(\mathbb{H})$, and the real left–right products $L_{\mathrm{pau},e_\mu}R_{\mathrm{pau},\vec e_{\nu(\mu)}}$, without the central $i$, span $\mathrm{Cl}_{3,1}(\mathbb{R})\cong M_4(\mathbb{R})$.
 
@@ -470,9 +470,9 @@ $$
 =4\bigl(\varepsilon_\mu\delta_{\mu\nu}\varepsilon_\rho\delta_{\rho\sigma}-\varepsilon_\mu\delta_{\mu\rho}\varepsilon_\nu\delta_{\nu\sigma}+\varepsilon_\mu\delta_{\mu\sigma}\varepsilon_\nu\delta_{\nu\rho}\bigr).
 $$
 
-The sign change is the one convention change in the translation: the time cell has $\gamma_0^2=+I_4$, while the material time basis vector has $\langle\varepsilon_0,\varepsilon_0\rangle_{\natural}=-1$.
+The sign change is the one convention change in the translation: the time basis operator has $\gamma_0^2=+I_4$, while the material time basis vector has $\langle\varepsilon_0,\varepsilon_0\rangle_{\natural}=-1$.
 
-The contraction sums depend only on the squares of the cells, not on the representation, and they are fixed once the summed index is raised, $\gamma^\mu=-\varepsilon_\mu\gamma_\mu$:
+The contraction sums depend only on the squares of the basis operators, not on the representation, and they are fixed once the summed index is raised, $\gamma^\mu=-\varepsilon_\mu\gamma_\mu$:
 
 $$
 \sum_\mu\gamma^\mu\gamma_\mu=-4I_4,\qquad
@@ -503,7 +503,7 @@ $$
 
 with the spatial gradient acting from the left, the mass from the right through $\vec e_z$, and the mass term carrying the algebra's complex conjugation $\overline{\cdot}$. The first acts on a pair of chirality halves with a scalar mass; the second acts on one biquaternion with a directed, antilinear mass. They share the frame, not the operator. Here $\hbar/(mc)$ is the mass length.
 
-**The display.** Every array printed in this section is given twice: in the Peirce display first, labelled $\mathrm{pau}$, whose arrays are the ones the literature prints, and in the axis-free display after it, labelled $\mathrm{axf}$, which is the display of the body and of the corpus. The two are carried into one another by $L_{\mathrm{axf},e_\mu}=C_{\Pi}L_{\mathrm{pau},e_\mu}C_{\Pi}^{-1}$, and a conjugation by $C_{\Pi}$ changes no product, no anticommutator, no trace and no determinant, so every identity of the section holds in both. An array is a statement about one display; a cell named in the running text keeps the Peirce label, and its axis-free array is the conjugate. The label names the array and not the operator.
+**The display.** Every array printed in this section is given twice: in the Peirce display first, labelled $\mathrm{pau}$, whose arrays are the ones the literature prints, and in the axis-free display after it, labelled $\mathrm{axf}$, which is the display of the body and of the corpus. The two are carried into one another by $L_{\mathrm{axf},e_\mu}=C_{\Pi}L_{\mathrm{pau},e_\mu}C_{\Pi}^{-1}$, and a conjugation by $C_{\Pi}$ changes no product, no anticommutator, no trace and no determinant, so every identity of the section holds in both. An array is a statement about one display; a basis operator named in the running text keeps the Peirce label, and its axis-free array is the conjugate. The label names the array and not the operator.
 
 ## Summary
 
@@ -542,7 +542,7 @@ What the algebra supplies is the kinematic fibre of linearized gravity and the f
 | $\bar{h}_{00}=h_{00}+\tfrac12h$, $\bar{h}_{kl}=h_{kl}-\tfrac12h\,\delta_{kl}$, $\bar{h} = -h$ | Trace-reversed perturbation; here the overbar marks trace reversal, not complex conjugation |
 | $\bar{\delta\tilde{E}_{\Phi}}_\mu = \delta\tilde{E}_{\Phi}_\mu - \tfrac14 h\,\varepsilon_\mu$ | Trace-reversed frame perturbation |
 | $\vec G \in \mathrm{span}_{\mathbb{R}}\{\vec e_k, i\vec e_k\}$ | Infinitesimal local Lorentz generator (complex pure vector) |
-| $iL_{\mathrm{axf},e_\mu}R_{\mathrm{axf},\vec e_{\nu(\mu)}}$ | The generator cell of the coordinate $x_\mu$, in the axis-free display of *Matrix Representations Conventions*; it is a cell, that is, an operator |
+| $iL_{\mathrm{axf},e_\mu}R_{\mathrm{axf},\vec e_{\nu(\mu)}}$ | The generator basis operator of the coordinate $x_\mu$, in the axis-free display of *Matrix Representations Conventions*; it is a basis operator, that is, an operator |
 | $\tilde Q_{\Phi,\mathrm d} \in \mathbb{B}_{\Phi}$ | Gauge four-vector, $\delta\tilde{E}_{\Phi}_\mu \mapsto \delta\tilde{E}_{\Phi}_\mu - \partial/\partial x_\mu\,\tilde Q_{\Phi,\mathrm d}$ |
 | $h_{\mu\nu} \mapsto h_{\mu\nu} - \partial/\partial x_\mu\,\zeta_\nu - \partial/\partial x_\nu\,\zeta_\mu$, $\zeta_\nu = \langle\tilde Q_{\Phi,\mathrm d},\varepsilon_\nu\rangle_{\natural}$ | Linearized gauge transformation |
 | $\mathrm{Riem}_{\mu\nu\rho\sigma}$ | Linearized Riemann tensor (gauge-invariant field strength) |

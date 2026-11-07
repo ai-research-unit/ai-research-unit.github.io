@@ -169,7 +169,7 @@ $$
 [R_x,R_y]=-i\,\mathrm{sgn}(ϙ)\,\ell_B^2\,e_t ,
 $$
 
-whose right-hand side is a central **area**: the flux count of the fifth section is the statement that this area is the phase-space cell of one state. The two algebras are the same central oscillator algebra; the first is the energy, the second is the degeneracy.
+whose right-hand side is a central **area**: the flux count of the fifth section is the statement that this area is the phase-space basis operator of one state. The two algebras are the same central oscillator algebra; the first is the energy, the second is the degeneracy.
 
 In the biquaternion interpretation $L_{\mathrm{orb},z}$ and the guiding-centre operators are central Hermitian, and both commute with the module. The algebra has thus two commuting $\mathrm{U}(1)$'s worth of central ladder structure — the energy ladder and the degeneracy ladder — and the state module is invariant under both. The symmetric-gauge eigenstates are the angular-momentum eigenstates $L_{\mathrm{orb},z}=\frac{m^{2}\,c}{k_m}$ within a Landau level, with $m$ bounded below by $-n$; the two gauges are related by a gauge transformation and give the same spectrum and degeneracy.
 
@@ -219,7 +219,7 @@ $$
 Ξ_0=2\pi\ell_B^2 B=\frac{hc}{|ϙ|}.
 $$
 
-The flux quantum is thus the central area of one guiding-centre cell, and the degeneracy is the number of such cells in the sample. In the framework the statement is that the two central commutators fix the energy spacing and the state count, and the algebra of the centre contains all of it.
+The flux quantum is thus the central area of one guiding-centre basis operator, and the degeneracy is the number of such basis operators in the sample. In the framework the statement is that the two central commutators fix the energy spacing and the state count, and the algebra of the centre contains all of it.
 
 ## Spin: What Is Not Here
 

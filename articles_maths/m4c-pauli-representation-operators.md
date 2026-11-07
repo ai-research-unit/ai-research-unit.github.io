@@ -10,7 +10,7 @@
 - A one-sided operator is a left or a right multiplication. The left matrices fill the four-dimensional copy $\mathbb{B}_L=\{\mathrm I_2\otimes A\}$, and the right matrices fill the four-dimensional copy $\mathbb{B}_R=\{B^{\mathsf T}\otimes\mathrm I_2\}$. These are exactly the two subsets of the Pauli Representation article, and their intersection is the scalars.
 - A two-sided operator is a product $L_{\tilde Q}R_{\tilde Q_2}=L(\tilde Q)R(\tilde Q_2)$. The products fill a seven-dimensional cone in $M_4(\mathbb{C})$, not a subspace, and they are exactly the matrices whose coefficient matrix has rank at most one.
 
-**The matrix side.** The sixteen products $L_{\mathrm{pau},e_\mu}R_{\mathrm{pau},e_\nu}$ form an orthogonal basis of $M_4(\mathbb{C})$, of Hilbert–Schmidt norm two. The Pauli evaluation writes each of them as a $4\times4$ Kronecker product of two $2\times2$ matrices. One Clifford frame, built from a pair $(\beta,\delta)$ of orthogonal spatial directions, gives five cell multiples and the anticommutation relations. The coefficient matrix $c(M)$ turns the product condition into a rank condition, and the cone of products into the cone over the Segre variety $\mathbb{P}^3\times\mathbb{P}^3$. The article records these constructions, and closes with the open questions. It also settles the frame question: a change of the element basis sends $c$ to a congruence, so the length survives every basis (§*The Change of Frame Is a Congruence*), and in the Peirce frame the sixteen matrix units are the shortest matrices of their size, each a single product (§*The Sixteen Lengths*).
+**The matrix side.** The sixteen products $L_{\mathrm{pau},e_\mu}R_{\mathrm{pau},e_\nu}$ form an orthogonal basis of $M_4(\mathbb{C})$, of Hilbert–Schmidt norm two. The Pauli evaluation writes each of them as a $4\times4$ Kronecker product of two $2\times2$ matrices. One Clifford frame, built from a pair $(\beta,\delta)$ of orthogonal spatial directions, gives five basis operator multiples and the anticommutation relations. The coefficient matrix $c(M)$ turns the product condition into a rank condition, and the cone of products into the cone over the Segre variety $\mathbb{P}^3\times\mathbb{P}^3$. The article records these constructions, and closes with the open questions. It also settles the frame question: a change of the element basis sends $c$ to a congruence, so the length survives every basis (§*The Change of Frame Is a Congruence*), and in the Peirce frame the sixteen matrix units are the shortest matrices of their size, each a single product (§*The Sixteen Lengths*).
 
 **The result in one line.** Every matrix is a sum of at most four two-sided products; the products themselves are the matrices of coefficient rank at most one; and the least number of products is the coefficient rank.
 
@@ -171,7 +171,7 @@ $$
 | $\vec e_y$ | $L_{\mathrm{pau},\vec e_y}R_{\mathrm{pau},e_t}=L_{\mathrm{pau},\vec e_y}$ | $L_{\mathrm{pau},\vec e_y}R_{\mathrm{pau},\vec e_x}$ | $L_{\mathrm{pau},\vec e_y}R_{\mathrm{pau},\vec e_y}$ | $L_{\mathrm{pau},\vec e_y}R_{\mathrm{pau},\vec e_z}$ |
 | $\vec e_z$ | $L_{\mathrm{pau},\vec e_z}R_{\mathrm{pau},e_t}=L_{\mathrm{pau},\vec e_z}$ | $L_{\mathrm{pau},\vec e_z}R_{\mathrm{pau},\vec e_x}$ | $L_{\mathrm{pau},\vec e_z}R_{\mathrm{pau},\vec e_y}$ | $L_{\mathrm{pau},\vec e_z}R_{\mathrm{pau},\vec e_z}$ |
 
-Each row is labelled by its left unit and each column by its right unit, so each entry is the product of the two labels, left factor first. The first row is the right family, the first column the left family, the diagonal entry $L_{\mathrm{pau},e_t}R_{\mathrm{pau},e_t}$ the identity, and the remaining nine the genuinely two-sided cells. The table is the matrix form of the four families of *Two-Sided Operators on the Biquaternion Algebra*, §*The Operator $L_{\tilde Q}R_{\tilde Q_2}$*.
+Each row is labelled by its left unit and each column by its right unit, so each entry is the product of the two labels, left factor first. The first row is the right family, the first column the left family, the diagonal entry $L_{\mathrm{pau},e_t}R_{\mathrm{pau},e_t}$ the identity, and the remaining nine the genuinely two-sided basis operators. The table is the matrix form of the four families of *Two-Sided Operators on the Biquaternion Algebra*, §*The Operator $L_{\tilde Q}R_{\tilde Q_2}$*.
 
 ### The Sixteen, Entry by Entry
 
@@ -209,7 +209,7 @@ L_{\mathrm{pau},\vec e_z}R_{\mathrm{pau},\vec e_y}=\begin{pmatrix}0&0&-i&0\\0&0&
 L_{\mathrm{pau},\vec e_z}R_{\mathrm{pau},\vec e_z}=\begin{pmatrix}-1&0&0&0\\0&1&0&0\\0&0&1&0\\0&0&0&-1\end{pmatrix}.
 $$
 
-**The pattern.** Each matrix has four nonzero entries, one in each row and each column, and every nonzero entry is $\pm1$ or $\pm i$. The first row and the first column are the four left and the four right matrices; the nine remaining entries are the genuinely two-sided cells. The display is the matrix form of the sixteen products $L_{\mathrm{pau},e_\mu}R_{\mathrm{pau},e_\nu}$ of *Matrix Representations Conventions*, §*The 4×4 Regular Representation*.
+**The pattern.** Each matrix has four nonzero entries, one in each row and each column, and every nonzero entry is $\pm1$ or $\pm i$. The first row and the first column are the four left and the four right matrices; the nine remaining entries are the genuinely two-sided basis operators. The display is the matrix form of the sixteen products $L_{\mathrm{pau},e_\mu}R_{\mathrm{pau},e_\nu}$ of *Matrix Representations Conventions*, §*The 4×4 Regular Representation*.
 
 **The Pauli evaluation on the families.** With $\mathsf M_2(e_t)=\mathrm I_2$ and $\mathsf M_2(\vec e_k)=-i\sigma_k$,
 $$
@@ -218,7 +218,7 @@ L_{\mathrm{pau},e_t}R_{\mathrm{pau},\vec e_k}=-i\,\sigma_k^{\mathsf T}\otimes\ma
 L_{\mathrm{pau},\vec e_k}R_{\mathrm{pau},e_t}=-i\,\mathrm I_2\otimes\sigma_k,\qquad
 L_{\mathrm{pau},\vec e_j}R_{\mathrm{pau},\vec e_k}=-\sigma_k^{\mathsf T}\otimes\sigma_j,
 $$
-with $j,k\in\{x,y,z\}$. The first family is the identity, the second the right copy, the third the left copy, and the fourth the nine genuinely two-sided cells. The evaluation is a $4\times4$ Kronecker product of two $2\times2$ matrices; §*The Kronecker Question* separates it from the $16\times16$ Kronecker product of two $4\times4$ matrices.
+with $j,k\in\{x,y,z\}$. The first family is the identity, the second the right copy, the third the left copy, and the fourth the nine genuinely two-sided basis operators. The evaluation is a $4\times4$ Kronecker product of two $2\times2$ matrices; §*The Kronecker Question* separates it from the $16\times16$ Kronecker product of two $4\times4$ matrices.
 
 **One entry.** The table gives $L_{\mathrm{pau},\vec e_x}R_{\mathrm{pau},\vec e_y}=L_{\mathrm{pau},\vec e_x}\mathsf P\,(L_{\mathrm{pau},\vec e_y})^{\mathsf T}\mathsf P^{-1}$,
 $$
@@ -300,7 +300,7 @@ L_{\tilde Q}R_{\tilde Q_2}=L(\tilde Q)R(\tilde Q_2)
 =\mathsf M_2(\tilde Q_2)^{\mathsf T}\otimes\mathsf M_2(\tilde Q).
 $$
 
-**On the basis.** The evaluation reproduces the four family formulas of §*The Table in Four Families*: the identity, the right copy, the left copy and the nine cells. It is a $4\times4$ matrix, the Kronecker product of two $2\times2$ matrices, and it is the ordinary product $L(\tilde Q)R(\tilde Q_2)$ written in the model.
+**On the basis.** The evaluation reproduces the four family formulas of §*The Table in Four Families*: the identity, the right copy, the left copy and the nine basis operators. It is a $4\times4$ matrix, the Kronecker product of two $2\times2$ matrices, and it is the ordinary product $L(\tilde Q)R(\tilde Q_2)$ written in the model.
 
 ### Why the $4\times4$ Kronecker Product Is Not the Operator
 
@@ -331,7 +331,7 @@ The mass term is $-mL_tR_t$. For a momentum $p$, the same operator reads
 $$
 D(p)=i\bigl((L_{\mathrm{pau},e_t}R_{\mathrm{pau},\vec e_x}p_t+L_{\mathrm{pau},\vec e_x}R_{\mathrm{pau},\vec e_y}p_x+L_{\mathrm{pau},\vec e_y}R_{\mathrm{pau},\vec e_y}p_y+L_{\mathrm{pau},\vec e_z}R_{\mathrm{pau},\vec e_y}p_z)\bigr),
 $$
-so the frame is visible in the formula: another pair $(\beta,\delta)$ replaces the four cells by four single products spread over several cells. This is the matrix Dirac operator of the frame; it is not the biquaternionic gradient $\tilde\nabla$, which is a left multiplication. The dictionary relates the two; it does not identify them as operators on the same carrier.
+so the frame is visible in the formula: another pair $(\beta,\delta)$ replaces the four basis operators by four single products spread over several basis operators. This is the matrix Dirac operator of the frame; it is not the biquaternionic gradient $\tilde\nabla$, which is a left multiplication. The dictionary relates the two; it does not identify them as operators on the same carrier.
 
 ## The Cone of Products
 
@@ -446,7 +446,7 @@ $$
 $$
 so $c=\mathsf Cc'\mathsf C^{\mathsf T}$ by linear independence of the sixteen. (iii) $\det\mathsf C\neq0$, and multiplication on the left and on the right by invertible matrices preserves the rank.
 
-**Only the determinant is used.** The Peirce change $C_{\Pi}$ of §*The Sixteen Matrices $L_{\mathrm{pau},e_\mu}R_{\mathrm{pau},e_\nu}$* is not orthogonal: $C_{\Pi}^{\dagger}C_{\Pi}=\tfrac12\mathrm I_4$, the product $C_{\Pi}^{\mathsf T}C_{\Pi}$ is not diagonal, and $\det C_{\Pi}=-\tfrac14$. None of this enters. A shortcut from the transpose — "the transpose of a monomial cell is another cell, so the coefficients do not move" — would fail here, because the transpose of a matrix is not a frame-free operation and the cells are not closed under it in an ordered way. The congruence is the statement that survives every basis, orthogonal or not.
+**Only the determinant is used.** The Peirce change $C_{\Pi}$ of §*The Sixteen Matrices $L_{\mathrm{pau},e_\mu}R_{\mathrm{pau},e_\nu}$* is not orthogonal: $C_{\Pi}^{\dagger}C_{\Pi}=\tfrac12\mathrm I_4$, the product $C_{\Pi}^{\mathsf T}C_{\Pi}$ is not diagonal, and $\det C_{\Pi}=-\tfrac14$. None of this enters. A shortcut from the transpose — "the transpose of a monomial basis operator is another basis operator, so the coefficients do not move" — would fail here, because the transpose of a matrix is not a frame-free operation and the basis operators are not closed under it in an ordered way. The congruence is the statement that survives every basis, orthogonal or not.
 
 **The two displays of the corpus.** The sixteen of the coefficient basis are $C_{\Pi}L_{\mathrm{pau},e_\mu}R_{\mathrm{pau},e_\nu}C_{\Pi}^{-1}$, the same four units in the same order, so the abstract basis is common, only the display moves, the coefficient matrix is literally unchanged, and the two operator articles compute one number. The congruence answers a different question: what happens when the sixteen are built from another basis of *elements*, for instance from the four Peirce elements themselves. That basis is not orthogonal, so the extraction $\tfrac14\operatorname{Tr}(T^{\dagger}M)$ no longer applies to it and the dual basis must be used; the rank, and with it the length, is unchanged by (iii).
 
@@ -692,11 +692,11 @@ is an isomorphism of complex algebras. The sixteen elementary tensors $e_\mu\oti
 
 ## Open Questions
 
-- The classification of Clifford frames in $M_4(\mathbb{C})$: is every frame of the normal form above, and what is the stabiliser of the cell frame?
+- The classification of Clifford frames in $M_4(\mathbb{C})$: is every frame of the normal form above, and what is the stabiliser of the basis operator frame?
 - The choice of frame as a choice of Clifford structure: which gradings the algebra admits, and how they are related.
 - A dictionary, frame by frame, between the explicit matrix frames of the physics articles and the tensor basis. The corpus has many explicit representations, and they need not use the same pair $(\beta,\delta)$.
 - Which physical statements are frame-independent, and which are artefacts of a table. The mass bilinear, the axial current and the chiral projectors are the first candidates.
-- The sign of the pseudoscalar cell and the choice of the second central root of $-1$; the two conventions must not be mixed inside one computation.
+- The sign of the pseudoscalar basis operator and the choice of the second central root of $-1$; the two conventions must not be mixed inside one computation.
 - The Peirce image of a general frame, and the spinor-basis change that relates two frames.
 - The Segre length in physics: the matrices of length at most $r$ are the locus $\operatorname{rank}c\le r$, cut out by the $(r+1)\times(r+1)$ minors; what is not known is which physical operators have length two or three, and why.
 - The two-sided Dirac operator against the left gradient: the dictionary at the level of differential operators, not only of matrices.
@@ -705,9 +705,9 @@ is an isomorphism of complex algebras. The sixteen elementary tensors $e_\mu\oti
 
 The Pauli and gamma formulation is legacy: the reasons are explained in the article *Why AXF Matrices instead of Pauli and Gamma Matrices*. The generators carry no frame label: $\gamma_\mu$ is one set of matrices, $\gamma_0^2=I_4$ and $\gamma_k^2=-I_4$. The frame belongs to the coordinate, not to the array.
 
-The gammas are a frame of $\mathrm{Cl}_{1,3}(\mathbb{C})=M_4(\mathbb{C})$, not a separate algebra; the body writes the cells.
+The gammas are a frame of $\mathrm{Cl}_{1,3}(\mathbb{C})=M_4(\mathbb{C})$, not a separate algebra; the body writes the basis operators.
 
-### The five cells
+### The five basis operators
 
 **The reference frame.** Define
 $$
@@ -717,7 +717,7 @@ $$
 \gamma_3=iL_{\mathrm{pau},\vec e_z}R_{\mathrm{pau},\vec e_y},\qquad
 \gamma_5=-iL_{\mathrm{pau},e_t}R_{\mathrm{pau},\vec e_z}.
 $$
-Each is a unit multiple of one cell of the sixteen, and each is a single two-sided operator. In the Pauli evaluation,
+Each is a unit multiple of one basis operator of the sixteen, and each is a single two-sided operator. In the Pauli evaluation,
 $$
 \gamma_0=\sigma_1\otimes\mathrm I_2,\qquad
 \gamma_k=i\,\sigma_2\otimes\sigma_k,\qquad
@@ -736,9 +736,9 @@ $$
 $$
 \gamma_5=\begin{pmatrix}-1&0&0&0\\0&-1&0&0\\0&0&1&0\\0&0&0&1\end{pmatrix}.
 $$
-Each has trace $0$, determinant $1$ and rank $4$. The five are unit multiples of five cells of the table of §*The Table in Four Families*; the choice of the five is the choice of a frame.
+Each has trace $0$, determinant $1$ and rank $4$. The five are unit multiples of five basis operators of the table of §*The Table in Four Families*; the choice of the five is the choice of a frame.
 
-**The cells.** The five are supported on single cells because the pair of directions is a pair of coordinate axes; a general frame of the normal form below is not supported on cells. The cell property is a property of the pair, not of the construction.
+**The basis operators.** The five are supported on single basis operators because the pair of directions is a pair of coordinate axes; a general frame of the normal form below is not supported on basis operators. The basis operator property is a property of the pair, not of the construction.
 
 ### The normal form and the Pair $(\beta,\delta)$
 
@@ -751,17 +751,17 @@ $$
 \gamma_0=iL(e_t)R(\delta),\qquad
 \gamma_k=iL(\vec e_k)R(\beta),\qquad k=x,y,z.
 $$
-For the reference frame $(\beta,\delta)=(\vec e_y,\vec e_x)$, the five are the cells of §*The Five Cells*; in that frame $\beta\delta=-\vec e_z$ and $\gamma_5=iL_{\mathrm{pau},e_t}R_{\mathrm{pau},\beta\delta}$.
+For the reference frame $(\beta,\delta)=(\vec e_y,\vec e_x)$, the five are the basis operators of §*The Five Basis Operators*; in that frame $\beta\delta=-\vec e_z$ and $\gamma_5=iL_{\mathrm{pau},e_t}R_{\mathrm{pau},\beta\delta}$.
 
 **The normal form.** Every pair $(\beta,\delta)$ gives a frame with the anticommutation relations of §*The Clifford Relations*, and the five operators determine the pair: $\delta$ is the right factor of $\gamma_0$, and $\beta$ is the right factor of $\gamma_1$. Distinct pairs give distinct frames, not two descriptions of one frame.
 
-**The free parameter.** Nothing selects the pair. The relations use only $\beta^2=\delta^2=-e_t$ and $\beta\delta=-\delta\beta$; no Clifford relation mentions $\beta$ or $\delta$. The three spatial directions enter in three roles: $\beta$ as the common right factor of the three spatial generators, $\delta$ as the right factor of the time generator, and $\beta\delta$ as the right factor of the pseudoscalar. The algebra assigns no direction to any role. What changes with the pair is the list of operators, whether they are cells, the sign of $\gamma_5$, and the grade table.
+**The free parameter.** Nothing selects the pair. The relations use only $\beta^2=\delta^2=-e_t$ and $\beta\delta=-\delta\beta$; no Clifford relation mentions $\beta$ or $\delta$. The three spatial directions enter in three roles: $\beta$ as the common right factor of the three spatial generators, $\delta$ as the right factor of the time generator, and $\beta\delta$ as the right factor of the pseudoscalar. The algebra assigns no direction to any role. What changes with the pair is the list of operators, whether they are basis operators, the sign of $\gamma_5$, and the grade table.
 
-**Cells only for axes.** If $\beta$ is not one of $\vec e_x,\vec e_y,\vec e_z$, the spatial generators are not cells:
+**Basis operators only for axes.** If $\beta$ is not one of $\vec e_x,\vec e_y,\vec e_z$, the spatial generators are not basis operators:
 $$
 \gamma_k=iL_{\mathrm{pau},\vec e_k}R_{\mathrm{pau},\beta}=i\sum_\nu\beta_\nu\,L_{\mathrm{pau},\vec e_k}R_{\mathrm{pau},e_\nu}
 $$
-is a single product of coefficient rank one, supported on several cells. If $\delta$ is not a coordinate axis, $\gamma_0$ is not a cell either. The cell table of §*The Sixteen Products of the Frame* is the table of the reference pair.
+is a single product of coefficient rank one, supported on several basis operators. If $\delta$ is not a coordinate axis, $\gamma_0$ is not a basis operator either. The basis operator table of §*The Sixteen Products of the Frame* is the table of the reference pair.
 
 **Conjugacy.** For a unit $\tilde u$ and $U=L(\tilde u)R(\tilde u^{-1})$,
 $$
@@ -786,9 +786,9 @@ $$
 
 ### The sixteen products of the frame
 
-**The table.** In the reference frame the products of the five are the sixteen cells up to units.
+**The table.** In the reference frame the products of the five are the sixteen basis operators up to units.
 
-| Grade | Product | Cell | Coefficient |
+| Grade | Product | Basis operator | Coefficient |
 |---|---|---|---|
 | $0$ | $1$ | $L_{\mathrm{pau},e_t}R_{\mathrm{pau},e_t}$ | $1$ |
 | $1$ | $\gamma_0$ | $L_{\mathrm{pau},e_t}R_{\mathrm{pau},\vec e_x}$ | $i$ |
@@ -807,13 +807,13 @@ $$
 | $3$ | $\gamma_1\gamma_2\gamma_3$ | $L_{\mathrm{pau},e_t}R_{\mathrm{pau},\vec e_y}$ | $-i$ |
 | $4$ | $\gamma_0\gamma_1\gamma_2\gamma_3$ | $L_{\mathrm{pau},e_t}R_{\mathrm{pau},\vec e_z}$ | $-1$ |
 
-The products are distinct, so they are the sixteen cells in some order, each with a coefficient in $\{1,-1,i,-i\}$. The table is the multiplication table of the frame read in the cell basis.
+The products are distinct, so they are the sixteen basis operators in some order, each with a coefficient in $\{1,-1,i,-i\}$. The table is the multiplication table of the frame read in the operator basis.
 
 **The algebra.** The relations identify the span of the five with the Clifford algebra $\mathrm{Cl}_{1,3}(\mathbb{C})$; the sixteen products are a basis of $M_4(\mathbb{C})$. The Lorentz generators are the six commutators
 $$
 \Sigma_{\mu\nu}=\tfrac{i}{2}[\gamma_\mu,\gamma_\nu],
 $$
-which are again cells: $\Sigma^{01}=iL_{\mathrm{pau},\vec e_x}R_{\mathrm{pau},\vec e_z}$, $\Sigma^{02}=iL_{\mathrm{pau},\vec e_y}R_{\mathrm{pau},\vec e_z}$, $\Sigma^{03}=iL_{\mathrm{pau},\vec e_z}R_{\mathrm{pau},\vec e_z}$, $\Sigma^{12}=iL_{\mathrm{pau},\vec e_z}R_{\mathrm{pau},e_t}$, $\Sigma^{13}=-iL_{\mathrm{pau},\vec e_y}R_{\mathrm{pau},e_t}$, $\Sigma^{23}=iL_{\mathrm{pau},\vec e_x}R_{\mathrm{pau},e_t}$. They are even, of grade two, and they generate the spinor representation of $\mathfrak{so}(1,3)$ on $\mathbb{B}\cong\mathbb{C}^4$.
+which are again basis operators: $\Sigma^{01}=iL_{\mathrm{pau},\vec e_x}R_{\mathrm{pau},\vec e_z}$, $\Sigma^{02}=iL_{\mathrm{pau},\vec e_y}R_{\mathrm{pau},\vec e_z}$, $\Sigma^{03}=iL_{\mathrm{pau},\vec e_z}R_{\mathrm{pau},\vec e_z}$, $\Sigma^{12}=iL_{\mathrm{pau},\vec e_z}R_{\mathrm{pau},e_t}$, $\Sigma^{13}=-iL_{\mathrm{pau},\vec e_y}R_{\mathrm{pau},e_t}$, $\Sigma^{23}=iL_{\mathrm{pau},\vec e_x}R_{\mathrm{pau},e_t}$. They are even, of grade two, and they generate the spinor representation of $\mathfrak{so}(1,3)$ on $\mathbb{B}\cong\mathbb{C}^4$.
 
 ### The chiral reading
 
@@ -827,13 +827,13 @@ Its two eigenspaces are the two chiral blocks, each of complex dimension two. Th
 $$
 P_\pm=\tfrac12(\mathrm I_4\pm\gamma_5)=\tfrac12\bigl(L_{\mathrm{pau},e_t}R_{\mathrm{pau},e_t}\pm iL_{\mathrm{pau},e_t}R_{\mathrm{pau},\beta\delta}\bigr)=L_{\mathrm{pau},e_t/2}R_{\mathrm{pau},e_t\pm i\beta\delta}.
 $$
-In the frame $P_+=\operatorname{diag}(0,0,1,1)$ and $P_-=\operatorname{diag}(1,1,0,0)$. Both have rank two, and the second parameter has quaternionic norm zero. They are single two-sided operators, but not cells: a single product can be singular, and a single product need not be a cell.
+In the frame $P_+=\operatorname{diag}(0,0,1,1)$ and $P_-=\operatorname{diag}(1,1,0,0)$. Both have rank two, and the second parameter has quaternionic norm zero. They are single two-sided operators, but not basis operators: a single product can be singular, and a single product need not be a basis operator.
 
 **The two Weyl blocks.** The frame is block diagonal for the left family, $L(\tilde Q)=\operatorname{diag}(\mathsf M_2(\tilde Q),\mathsf M_2(\tilde Q))$, so the left image preserves the two chiral blocks. The four generators are not in the left image: they exchange the blocks. The Dirac algebra needs the two-sided operators; the left regular model cannot hold it.
 
 **Types.** In the reference frame, $\gamma_0$ and $\gamma_5$ lie in the right family $\mathbb{B}_R$, because their left factor is $e_t$; the three spatial generators lie in neither one-sided family. The distinction is a property of the pair, not of the anticommutation relations.
 
-Over $\mathbb{R}$ the dictionary is complex-linear: the products span $\mathrm{Cl}_{1,3}(\mathbb{R})\cong M_2(\mathbb{H})$ and the cells span $\mathrm{Cl}_{3,1}(\mathbb{R})\cong M_4(\mathbb{R})$.
+Over $\mathbb{R}$ the dictionary is complex-linear: the products span $\mathrm{Cl}_{1,3}(\mathbb{R})\cong M_2(\mathbb{H})$ and the basis operators span $\mathrm{Cl}_{3,1}(\mathbb{R})\cong M_4(\mathbb{R})$.
 
 ## Summary
 
@@ -843,7 +843,7 @@ The sixteen products $L_{\mathrm{pau},e_\mu}R_{\mathrm{pau},e_\nu}$ are an ortho
 
 The Pauli evaluation is $L_{\tilde Q}R_{\tilde Q_2}=\mathsf M_2(\tilde Q_2)^{\mathsf T}\otimes\mathsf M_2(\tilde Q)$, a $4\times4$ Kronecker product of two $2\times2$ matrices. The Kronecker product of two $4\times4$ matrices is $16\times16$ and is not the operator; the matrix of the operator is the ordinary product $L(\tilde Q)R(\tilde Q_2)$.
 
-The frame is generated by a pair $(\beta,\delta)$ of orthogonal spatial directions. The reference pair $(\vec e_y,\vec e_x)$ gives five cell multiples; a general pair gives five single products of coefficient rank one, spread over several cells. Nothing selects the pair, and the normal form is a slice through the set of frames, not a conjugacy class. The chiral reading is the pseudoscalar cell $iL_{\mathrm{pau},e_t}R_{\mathrm{pau},\beta\delta}$, with eigenvalues $\pm1$, the projectors $P_\pm=L_{\mathrm{pau},e_t/2}R_{\mathrm{pau},e_t\pm i\beta\delta}$, and the two Weyl blocks exchanged by the four generators. The left regular model cannot hold the Dirac algebra.
+The frame is generated by a pair $(\beta,\delta)$ of orthogonal spatial directions. The reference pair $(\vec e_y,\vec e_x)$ gives five basis operator multiples; a general pair gives five single products of coefficient rank one, spread over several basis operators. Nothing selects the pair, and the normal form is a slice through the set of frames, not a conjugacy class. The chiral reading is the pseudoscalar basis operator $iL_{\mathrm{pau},e_t}R_{\mathrm{pau},\beta\delta}$, with eigenvalues $\pm1$, the projectors $P_\pm=L_{\mathrm{pau},e_t/2}R_{\mathrm{pau},e_t\pm i\beta\delta}$, and the two Weyl blocks exchanged by the four generators. The left regular model cannot hold the Dirac algebra.
 
 The product set is the seven-dimensional Segre cone of pure tensors in $\mathbb{B}\otimes\mathbb{B}_{\mathrm{opp}}=M_4(\mathbb{C})$. It is not a subspace. The factorisation map has eight parameters, one scaling orbit, and the zero operator as vertex. The coefficient matrix $c(M)$ turns the product condition into the rank condition $\operatorname{rank}c(M)\le1$. The length is the coefficient rank, $\ell(M)=\operatorname{rank}c(M)$, and it takes the values $0,1,2,3,4$; every matrix is a sum of at most four products, and a generic matrix needs four. The matrix rank of a product is in $\{0,1,2,4\}$ and is independent of the length: matrix rank one can have length four, and matrix rank two can have length one. The matrix unit $E_{11}$ has rank one and length one, and all sixteen units have length one in this frame and length four in the axis-free basis, because the two arrays name different operators. The length is frame-invariant: a change of the element basis sends $c$ to $C^{-1}cC^{-\mathsf T}$, of the same rank, and a change of the display alone leaves $c$ unchanged.
 
@@ -875,8 +875,8 @@ In one line: every two-sided operator is a single product of one left and one ri
 | $\mathrm{Ad}_{\tilde Q}(X)=\tilde Q X\tilde Q^{-1}$ | the inner automorphism |
 | $\mathbb{B}_{\mathrm{opp}}$ | the opposite algebra, with the reversed product |
 | $\beta,\delta$ | the two right directions of a frame, $\beta^2=\delta^2=-e_t$, $\beta\delta=-\delta\beta$ |
-| $L_{\mathrm{pau},e_t}R_{\mathrm{pau},\beta\delta}$ | the pseudoscalar cell, the fifth generator of the frame |
-| $\Sigma_{\mu\nu}$ | the Lorentz generators, six even cells |
+| $L_{\mathrm{pau},e_t}R_{\mathrm{pau},\beta\delta}$ | the pseudoscalar basis operator, the fifth generator of the frame |
+| $\Sigma_{\mu\nu}$ | the Lorentz generators, six even basis operators |
 | $P_\pm=L_{e_t/2}R_{e_t\pm i\beta\delta}$ | the chirality projectors |
 | $C_{\Pi}$ | the Peirce change from the Peirce frame to the coefficient basis |
 | $\mathsf C$ | the matrix of a change of element basis, $f_\alpha=\sum_\mu\mathsf C_{\mu\alpha}e_\mu$; $c'=\mathsf C^{-1}c\,\mathsf C^{-\mathsf T}$ |
@@ -900,5 +900,5 @@ In one line: every two-sided operator is a single product of one left and one ri
 - [The Enveloping Operator Algebra of the Biquaternion Algebra and the Bi-module Structure](the-enveloping-operator-algebra-of-the-biquaternion-algebra-and-the-bi-module-structure.html), for the algebra $\mathbb{B}\otimes_{\mathbb{C}}\mathbb{B}_{\mathrm{opp}}$ and the pure tensors.
 - [The Four Adjoints of the Biquaternion Algebra in Examples](the-four-adjoints-of-the-biquaternion-algebra-in-examples.html), for the plain adjoint and its comparison with the other adjoints.
 - [The Hermitian Sandwich: Definition and Multiplicativity](the-hermitian-sandwich-definition-and-multiplicativity.html), for the real subcone $\tilde Q_2=\tilde Q^{*}$.
-- [Matrix Representations Conventions](matrix-representations-conventions.html), for the $2\times2$ unit images, the four left and four right matrices, the exchange $\mathsf P$ and the sixteen cells entry by entry.
+- [Matrix Representations Conventions](matrix-representations-conventions.html), for the $2\times2$ unit images, the four left and four right matrices, the exchange $\mathsf P$ and the sixteen basis operators entry by entry.
 - [Conventions of the Matrix Models](../articles_physics/matrix-representations-conventions.html), for the explicit chiral matrices of one frame, the Peirce match and the chirality.

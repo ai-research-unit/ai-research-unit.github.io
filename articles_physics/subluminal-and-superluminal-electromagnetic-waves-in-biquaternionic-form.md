@@ -39,7 +39,7 @@ $$
 
 two first-order equations in two chiral halves, and the spinorial part below is read in that form. Here $\hbar/(mc)$ is the mass length.
 
-**The source's letter.** The source writes its calculus with one letter for a first-order operator of its own, one generator per coordinate. That operator is not one of the corpus's conventions, and this article neither uses it nor displays it. The free-field content of the source is carried here by $\tilde\nabla$; the massive content by the chiral pair. Where the source's own equation is translated, the translation is stated once, and no cell appears.
+**The source's letter.** The source writes its calculus with one letter for a first-order operator of its own, one generator per coordinate. That operator is not one of the corpus's conventions, and this article neither uses it nor displays it. The free-field content of the source is carried here by $\tilde\nabla$; the massive content by the chiral pair. Where the source's own equation is translated, the translation is stated once, and no basis operator appears.
 
 **Worked action.** The operator is read off the multiplication table of the units: a coordinate times a unit returns the product of that coordinate's unit with the unit, and the only constants the table carries are the ones the sector substitution puts in, $-i$ in the temporal slot and nothing in the three spatial slots.
 
@@ -492,7 +492,7 @@ The programme of Rodrigues and Vaz works in a bundle of differential forms and p
 | $Ξ_{X_n},\ Ξ_{XBB_n}$ | Scalar X-wave seed and its closed form, with $\theta_{\mathrm{axc}}$ the axicon angle and $a_0$ the constant that regularises the seed |
 | $\tilde{Ξ}_{\mathrm{sp}}$, $\tilde{Ξ}_{\mathrm{sp}}^{\natural}$ | The spinor, an element of $\mathbb{B}$, and its reverse, the corpus's $\natural$ conjugation; the source writes the reverse $\tilde{Ξ}_{\mathrm{sp}}$ |
 | $\tilde{Ξ}_{\mathrm{sp},\pm}$ | The two values of the split by $i\vec e_x$, $i\vec e_x\,\tilde{Ξ}_{\mathrm{sp},\pm}\,i\vec e_x=\pm\tilde{Ξ}_{\mathrm{sp},\pm}$, with $\tilde{Ξ}_{\mathrm{sp}}=\tilde{Ξ}_{\mathrm{sp},+}+\tilde{Ξ}_{\mathrm{sp},-}$ |
-| $\tilde{Ξ}_{\mathrm{sp},L}$, $\tilde{Ξ}_{\mathrm{sp},R}$ | The two values of the subscript, $L$ the minus value and $R$ the plus one; $\tilde{Ξ}_{\mathrm{sp},+L}$ and $\tilde{Ξ}_{\mathrm{sp},+R}$ are the two values of the $+$ branch |
+| $\tilde{Ξ}_{\mathrm{sp},L}$, $\tilde{Ξ}_{\mathrm{sp},R}$ | The two parts named by the subscript; $\tilde{Ξ}_{\mathrm{sp},+L}$ and $\tilde{Ξ}_{\mathrm{sp},+R}$ are the two values of the $+$ branch |
 | $\tilde{Ξ}_{\mathrm{sp}}=\rho^{1/2}\exp(\omega\theta_{\mathrm{dua}}/2)R$ | Canonical decomposition: rotor $R$, density $\rho$, angle $\theta_{\mathrm{dua}}$; the letter $\rho$ is reused in the X-wave for the cylindrical radius |
 | $\theta_{\mathrm{dua}}$ | Takabayasi (Yvon–Takabayasi) angle; $0,\pi$ electron/positron, $\pi/2,3\pi/2$ muon/antimuon |
 | $\xi$ | Spinor with the phase divided out, $\tilde{Ξ}_{\mathrm{sp}}=\xi\exp(\omega\theta_{\mathrm{dua}}/2)$; the linear Dirac equation is for $\xi$ |
@@ -506,7 +506,7 @@ The programme of Rodrigues and Vaz works in a bundle of differential forms and p
 
 ## Further Reading
 
-- [The Gradient, the D'Alembertian and the Cell Operator](the-gradient-the-dalembertian-and-the-cell-operator.html), for the gradient, its conjugate and the d'Alembertian, and for the names of the other operators.
+- [The Gradient, the D'Alembertian and the Basis operator Operator](the-gradient-the-dalembertian-and-the-basis operator-operator.html), for the gradient, its conjugate and the d'Alembertian, and for the names of the other operators.
 - Waldyr Alves Rodrigues Jr. and Jayme Vaz Jr., "Subluminal and Superluminal Electromagnetic Waves and the Lepton Mass Spectrum", arXiv:hep-th/9607231 (1996), the source of this article.
 - J. Vaz Jr. and W. A. Rodrigues Jr., "Maxwell and Dirac Theories as an Already Unified Theory", *Advances in Applied Clifford Algebras* (1995), for the equivalence of the Maxwell and massless Dirac equations underlying the spinor representation.
 - W. A. Rodrigues Jr. and J.-Y. Lu, "On the Existence of Undistorted Progressive Waves (UPWs) of Arbitrary Speeds $0\le|v|\le\infty$ in Nature", RP 12/96, IMECC-UNICAMP (1996), for the UPW and X-wave family and their generation.

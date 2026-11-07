@@ -2,7 +2,7 @@
 
 ## Introduction
 
-Two conditions cut the quaternion algebra into four cells: the vanishing of the quaternion norm and the vanishing of the squared length of the vector part. Because the norm is positive definite, one of the four cells is empty and the other three are nonempty. The three are the **sectors**: the non-real quaternions, the real axis minus the origin, and the origin. This article defines the cells, proves that exactly three are nonempty, describes each sector, computes its dimension and closure, and records the absence of defective elements and of nonzero norm-degenerate elements. A summary table collects the four cells.
+Two conditions cut the quaternion algebra into four sectors: the vanishing of the quaternion norm and the vanishing of the squared length of the vector part. Because the norm is positive definite, one of the four sectors is empty and the other three are nonempty. The three are the **sectors**: the non-real quaternions, the real axis minus the origin, and the origin. This article defines the sectors, proves that exactly three are nonempty, describes each sector, computes its dimension and closure, and records the absence of defective elements and of nonzero norm-degenerate elements. A summary table collects the four sectors.
 
 The algebra is [Quaternion Algebra](quaternion-algebra.html); the norm is [Norm and Invertibility in the Quaternion Algebra](norm-and-invertibility-in-the-quaternion-algebra.html); the spectral criterion is [Spectral Regularity and Degeneracy in the Quaternion Algebra](spectral-regularity-and-degeneracy-in-the-quaternion-algebra.html); the comparison of the two conditions is [Relations between the Quaternion Norm and Spectral Regularity and Degeneracy](relations-between-the-quaternion-norm-and-spectral-regularity-and-degeneracy.html); the biquaternion analogue is [The Spectrum](the-spectrum.html).
 
@@ -10,7 +10,7 @@ The algebra is [Quaternion Algebra](quaternion-algebra.html); the norm is [Norm 
 
 ## The Two Predicates and the Sectors
 
-**Definition (the cells).** For $i,j\in\{0,1\}$ set
+**Definition (the sectors).** For $i,j\in\{0,1\}$ set
 $$\Sigma_{ij}=\{\tilde q\in\mathbb H:\ |\tilde q|^2\ne0\iff i=1,\quad |\vec q|^2\ne0\iff j=1\}.$$
 Explicitly,
 $$\Sigma_{11}=\{|\tilde q|^2\ne0,\ |\vec q|^2\ne0\},\quad \Sigma_{10}=\{|\tilde q|^2\ne0,\ |\vec q|^2=0\},$$
@@ -19,7 +19,7 @@ $$\Sigma_{01}=\{|\tilde q|^2=0,\ |\vec q|^2\ne0\},\quad \Sigma_{00}=\{|\tilde q|
 **Theorem (partition).** The four sets are pairwise disjoint and cover $\mathbb H$:
 $$\mathbb H=\Sigma_{11}\sqcup\Sigma_{10}\sqcup\Sigma_{01}\sqcup\Sigma_{00}.$$
 
-*Proof.* Each element has exactly one truth value for each of the two conditions, hence lies in exactly one of the four cells.
+*Proof.* Each element has exactly one truth value for each of the two conditions, hence lies in exactly one of the four sectors.
 
 **Theorem (explicit description).**
 $$\Sigma_{11}=\mathbb H\setminus\mathbb R,\qquad \Sigma_{10}=\mathbb R^\times,\qquad \Sigma_{01}=\varnothing,\qquad \Sigma_{00}=\{0\}.$$
@@ -28,7 +28,7 @@ $$\Sigma_{11}=\mathbb H\setminus\mathbb R,\qquad \Sigma_{10}=\mathbb R^\times,\q
 
 **Corollary (three nonempty, one empty).** The witnesses
 $$\vec e_x\in\Sigma_{11},\qquad 1\in\Sigma_{10},\qquad 0\in\Sigma_{00}$$
-show that the first, second and fourth cells are nonempty; the third is empty. The three nonempty cells are the **sectors**.
+show that the first, second and fourth sectors are nonempty; the third is empty. The three nonempty sectors are the **sectors**.
 
 ## The Sector of the Non-Real Quaternions
 
@@ -55,13 +55,13 @@ $$(1+\vec e_x)(1-\vec e_x)=2\in\mathbb R.$$
 
 **Norm description.** $|\tilde q|^2=q_t^2>0$, the inverse is $q_t^{-1}$, and the polar angle is $\theta=0$ for $q_t>0$ and $\theta=\pi$ for $q_t<0$, with $J$ arbitrary. The positive ray is the identity component of the group.
 
-**Remark (the only coexistence).** $\Sigma_{10}$ is the only sector whose elements are norm-regular and spectrally degenerate. Its elements are units and semisimple, so the degeneracy is neither non-invertibility nor defect: it is the collapse of the two eigenvalues onto the real axis. In the split-quaternion and biquaternion algebras the corresponding cell contains defective elements; see [Spectral Regularity and Degeneracy in the Quaternion Algebra](spectral-regularity-and-degeneracy-in-the-quaternion-algebra.html).
+**Remark (the only coexistence).** $\Sigma_{10}$ is the only sector whose elements are norm-regular and spectrally degenerate. Its elements are units and semisimple, so the degeneracy is neither non-invertibility nor defect: it is the collapse of the two eigenvalues onto the real axis. In the split-quaternion and biquaternion algebras the corresponding sector contains defective elements; see [Spectral Regularity and Degeneracy in the Quaternion Algebra](spectral-regularity-and-degeneracy-in-the-quaternion-algebra.html).
 
 ## The Sector of the Origin
 
 **Theorem.** $\Sigma_{00}=\{0\}$. It is a single point, closed, of dimension zero, and the unique non-unit of $\mathbb H$. For $\tilde q=0$, $L_0=0$, the characteristic polynomial is $\lambda^4$, the minimal polynomial is $\lambda$, and the spectrum is $\{0\}$; every nonzero vector is an eigenvector and every basis is an eigenbasis.
 
-*Proof.* The cell was computed above; the norm is zero only at the origin, so the origin is the only non-unit. The matrix of $L_0$ is zero, and the polynomial statements are immediate.
+*Proof.* The sector was computed above; the norm is zero only at the origin, so the origin is the only non-unit. The matrix of $L_0$ is zero, and the polynomial statements are immediate.
 
 **Proposition (semisimple).** The origin is semisimple: $\mathbb R[0]=\mathbb R$ is a field, and the minimal polynomial $\lambda$ is squarefree.
 
@@ -73,7 +73,7 @@ $$(1+\vec e_x)(1-\vec e_x)=2\in\mathbb R.$$
 
 ## Dimensions and Closures
 
-The dimensions are the real dimensions of the cells as subsets of $\mathbb H\cong\mathbb R^4$.
+The dimensions are the real dimensions of the sectors as subsets of $\mathbb H\cong\mathbb R^4$.
 
 | sector | condition | description | dimension |
 |---|---|---|---|
@@ -82,13 +82,13 @@ The dimensions are the real dimensions of the cells as subsets of $\mathbb H\con
 | $\Sigma_{01}$ | $|\tilde q|^2=0,\ |\vec q|^2\ne0$ | empty | — |
 | $\Sigma_{00}$ | $|\tilde q|^2=0,\ |\vec q|^2=0$ | the origin; closed; closure $\{0\}$ | $0$ |
 
-**Theorem (the closures).** The closures of the four cells are
+**Theorem (the closures).** The closures of the four sectors are
 $$\overline{\Sigma_{11}}=\mathbb H,\qquad \overline{\Sigma_{10}}=\mathbb R,\qquad \overline{\Sigma_{01}}=\varnothing,\qquad \overline{\Sigma_{00}}=\{0\}.$$
-Each closure is a union of cells, so the partition satisfies the frontier condition of a stratification.
+Each closure is a union of sectors, so the partition satisfies the frontier condition of a stratification.
 
-*Proof.* The only nontrivial closure is that of $\Sigma_{11}$, which is $\mathbb H$ because the real axis is approximated by non-real quaternions; $\mathbb R$ is closed, and the remaining two cells are closed or empty. The closures are $\Sigma_{11}\cup\Sigma_{10}\cup\Sigma_{00}$, $\Sigma_{10}\cup\Sigma_{00}$, $\varnothing$ and $\Sigma_{00}$ respectively.
+*Proof.* The only nontrivial closure is that of $\Sigma_{11}$, which is $\mathbb H$ because the real axis is approximated by non-real quaternions; $\mathbb R$ is closed, and the remaining two sectors are closed or empty. The closures are $\Sigma_{11}\cup\Sigma_{10}\cup\Sigma_{00}$, $\Sigma_{10}\cup\Sigma_{00}$, $\varnothing$ and $\Sigma_{00}$ respectively.
 
-**Remark (the dimensions do not add).** $4+1+0=5>4$. The cells are disjoint, but the closures overlap: the real axis is the boundary of the open sector, and the origin is the boundary of the line. The dimension count of a stratification is not the dimension of the ambient space.
+**Remark (the dimensions do not add).** $4+1+0=5>4$. The sectors are disjoint, but the closures overlap: the real axis is the boundary of the open sector, and the origin is the boundary of the line. The dimension count of a stratification is not the dimension of the ambient space.
 
 **Corollary (the boundary).** The boundary of $\Sigma_{11}$ is $\Sigma_{10}\cup\Sigma_{00}=\mathbb R$; the boundary of $\Sigma_{10}$ is $\Sigma_{00}$; the boundary of $\Sigma_{00}$ is $\Sigma_{00}$.
 
@@ -109,20 +109,20 @@ $$\mathbb H^\times=\mathbb H\setminus\{0\}=\Sigma_{11}\cup\Sigma_{10}.$$
 
 ## Summary
 
-The two conditions $|\tilde q|^2\ne0$ and $|\vec q|^2\ne0$ partition $\mathbb H$ into four cells. Because the norm is positive definite and the spectral form has radical the real axis, the cells are
+The two conditions $|\tilde q|^2\ne0$ and $|\vec q|^2\ne0$ partition $\mathbb H$ into four sectors. Because the norm is positive definite and the spectral form has radical the real axis, the sectors are
 $$\Sigma_{11}=\mathbb H\setminus\mathbb R,\qquad \Sigma_{10}=\mathbb R^\times,\qquad \Sigma_{01}=\varnothing,\qquad \Sigma_{00}=\{0\}.$$
 The first is open, dense, connected and four-dimensional; the second is a one-dimensional subgroup with two components, locally closed, with closure the real axis; the third is empty; the fourth is a closed point, the only non-unit, the only doubly degenerate element and the only element of the norm-degenerate set.
 
-Every element is semisimple, so there is no defective element and no defective sector. No nonzero element is norm-degenerate, so every nonzero quaternion is a unit and $\mathbb H$ has no zero divisor. The fourth cell is empty precisely because the norm is definite; in the biquaternion algebra it is nonempty and carries zero divisors.
+Every element is semisimple, so there is no defective element and no defective sector. No nonzero element is norm-degenerate, so every nonzero quaternion is a unit and $\mathbb H$ has no zero divisor. The fourth sector is empty precisely because the norm is definite; in the biquaternion algebra it is nonempty and carries zero divisors.
 
 ## Summary of Notation
 
 | symbol | meaning |
 |---|---|
-| $\Sigma_{ij}$ | the cell with norm truth value $i$ and spectral truth value $j$ |
+| $\Sigma_{ij}$ | the sector with norm truth value $i$ and spectral truth value $j$ |
 | $\Sigma_{11}=\mathbb H\setminus\mathbb R$ | the non-real sector |
 | $\Sigma_{10}=\mathbb R^\times$ | the punctured real axis |
-| $\Sigma_{01}=\varnothing$ | the empty cell |
+| $\Sigma_{01}=\varnothing$ | the empty sector |
 | $\Sigma_{00}=\{0\}$ | the origin |
 | $\mathbb H^\times=\mathbb H\setminus\{0\}$ | the unit group |
 | $|\tilde q|^2=q_t^2+|\vec q|^2$ | the quaternion norm |

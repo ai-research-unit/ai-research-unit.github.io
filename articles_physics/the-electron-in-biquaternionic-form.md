@@ -26,7 +26,7 @@ A second, less comfortable point belongs in the introduction. Almost every state
 
 ## The Electron as a Biquaternion Field
 
-**The objects are named here and fixed elsewhere.** The algebra, its four units and its coefficient basis are *Algebra and Element Conventions*; the star, the involution $\flat$ and the two sectors are fixed there; the gradient, its quaternion conjugate and the d'Alembertian are *Operator and Calculus Conventions*; the complex coordinate and the metric of the material sector are *Frame and Metric Conventions*; the two-sided operators and their cells are *Matrix Representations Conventions*, and the one display in this article is the axis-free one. No formula of those objects is repeated here, and every use below is a use of the file named.
+**The objects are named here and fixed elsewhere.** The algebra, its four units and its coefficient basis are *Algebra and Element Conventions*; the star, the involution $\flat$ and the two sectors are fixed there; the gradient, its quaternion conjugate and the d'Alembertian are *Operator and Calculus Conventions*; the complex coordinate and the metric of the material sector are *Frame and Metric Conventions*; the two-sided operators and their basis operators are *Matrix Representations Conventions*, and the one display in this article is the axis-free one. No formula of those objects is repeated here, and every use below is a use of the file named.
 
 **The electron's data are carried by these objects.**
 
@@ -39,7 +39,7 @@ A second, less comfortable point belongs in the introduction. Almost every state
 | Spin state | the state $\tilde{Ϛ}_{\Psi}(\vec u)\in\mathbb{B}_{\Psi}$ along a declared unit direction $\vec u$ |
 | Spin observables | Hermitian elements $\tilde R_\Psi = i \sum_k h_k\vec e_k\in\mathbb{B}_{\Psi}$ |
 | Conserved current | $\tilde{J}_{\Phi} = ic\,j_0 e_t + \vec j\in\mathbb{B}_{\Phi}$, with $j_0\ge0$ |
-| Chirality parts | the parts $\tilde{Ξ}_{\mathrm{sp},L}$ and $\tilde{Ξ}_{\mathrm{sp},R}$, the two values of the subscript |
+| Chirality parts | the parts $\tilde{Ξ}_{\mathrm{sp},L}$ and $\tilde{Ξ}_{\mathrm{sp},R}$, the two components of the pair |
 
 The placement of these objects already contains the article's main structural observation: the electron's state-like data (its spin) and its field-strength-like data (its Coulomb field) are $\mathbb{B}_{\Psi}$ objects, its current is an $\mathbb{B}_{\Phi}$ object, the algebra's real structure $\flat$ acts on the two sectors with opposite signs while the mass term relates the two parts of the chirality, and it is the rest-energy phase that rotates one sector into the other. There is no single sector of the algebra in which "the electron" lives.
 
@@ -256,9 +256,9 @@ Two gaps are structural and cannot be closed by better notation: the mass value 
 
 The Pauli and gamma formulation is legacy: the reasons are explained in the article *Why AXF Matrices instead of Pauli and Gamma Matrices*. The generators carry no frame label: $\gamma_\mu$ is one set of matrices, and the frame is named on the coordinate.
 
-The sections above are written in cells; this section writes the same cells as gamma matrices, for readers who want the standard notation. The gammas are a frame of $\mathrm{Cl}_{1,3}(\mathbb{C})=M_4(\mathbb{C})$, not a different algebra.
+The sections above are written in basis operators; this section writes the same basis operators as gamma matrices, for readers who want the standard notation. The gammas are a frame of $\mathrm{Cl}_{1,3}(\mathbb{C})=M_4(\mathbb{C})$, not a different algebra.
 
-Each gamma is a single cell $T_{a,b}=L_aR_b$, a pure tensor, and a general element of $M_4(\mathbb{C})$ is a sum of at most four such cells.
+Each gamma is a single basis operator $T_{a,b}=L_aR_b$, a pure tensor, and a general element of $M_4(\mathbb{C})$ is a sum of at most four such basis operators.
 
 $$
 \gamma_0=iL_{\mathrm{pau},e_t}R_{\mathrm{pau},\vec e_x},\quad \gamma_1=iL_{\mathrm{pau},\vec e_x}R_{\mathrm{pau},\vec e_y},\quad \gamma_2=iL_{\mathrm{pau},\vec e_y}R_{\mathrm{pau},\vec e_y},\quad \gamma_3=iL_{\mathrm{pau},\vec e_z}R_{\mathrm{pau},\vec e_y},\quad \gamma_5=-iL_{\mathrm{pau},e_t}R_{\mathrm{pau},\vec e_z} .
@@ -270,11 +270,11 @@ $$
 \gamma_0=iL_{\mathrm{axf},e_t}R_{\mathrm{axf},\vec e_x},\quad \gamma_1=iL_{\mathrm{axf},\vec e_x}R_{\mathrm{axf},\vec e_y},\quad \gamma_2=iL_{\mathrm{axf},\vec e_y}R_{\mathrm{axf},\vec e_y},\quad \gamma_3=iL_{\mathrm{axf},\vec e_z}R_{\mathrm{axf},\vec e_y},\quad \gamma_5=-iL_{\mathrm{axf},e_t}R_{\mathrm{axf},\vec e_z} .
 $$
 
-$\gamma_5$ is the cell of the chirality operator $\Gamma:\tilde{Ξ}_{\mathrm{sp}}\mapsto -i\,e_t\,\tilde{Ξ}_{\mathrm{sp}}\,\vec e_z = -iR_{\mathrm{pau},\vec e_z}$, which acts on the Dirac module. The central grading $\chi=i\tilde{Ζ}_{\mathrm{ad}}$, where $\tilde{Ζ}_{\mathrm{ad}}$ is the central root of $-1$ that complexifies the real subalgebra $\mathbb{B}_{\mathbb{R}}=\mathbb{B}_{H}$ ($\tilde{Ζ}_{\mathrm{ad}}^2=-1$, $[\tilde{Ζ}_{\mathrm{ad}},i]=0$), is the difference of the two central idempotents of the complexified algebra, so $\xi^2=i^2\tilde{Ζ}_{\mathrm{ad}}^2=(-1)(-1)=e_t$. The grading $\xi$ is central and belongs to the algebra, $\Gamma$ is its representative on the module, and $\gamma_5$ is that representative written as a cell.
+$\gamma_5$ is the basis operator of the chirality operator $\Gamma:\tilde{Ξ}_{\mathrm{sp}}\mapsto -i\,e_t\,\tilde{Ξ}_{\mathrm{sp}}\,\vec e_z = -iR_{\mathrm{pau},\vec e_z}$, which acts on the Dirac module. The central grading $\chi=i\tilde{Ζ}_{\mathrm{ad}}$, where $\tilde{Ζ}_{\mathrm{ad}}$ is the central root of $-1$ that complexifies the real subalgebra $\mathbb{B}_{\mathbb{R}}=\mathbb{B}_{H}$ ($\tilde{Ζ}_{\mathrm{ad}}^2=-1$, $[\tilde{Ζ}_{\mathrm{ad}},i]=0$), is the difference of the two central idempotents of the complexified algebra, so $\xi^2=i^2\tilde{Ζ}_{\mathrm{ad}}^2=(-1)(-1)=e_t$. The grading $\xi$ is central and belongs to the algebra, $\Gamma$ is its representative on the module, and $\gamma_5$ is that representative written as a basis operator.
 
-The dictionary is complex-linear; over $\mathbb{R}$ the products span $\mathrm{Cl}_{1,3}(\mathbb{R})\cong M_2(\mathbb{H})$ and the cells span $\mathrm{Cl}_{3,1}(\mathbb{R})\cong M_4(\mathbb{R})$. The four generator cells of the older display are these gammas, $\gamma_\mu$, and the charge-conjugation cell is $C = -iL_{\mathrm{pau},\vec e_y}R_{\mathrm{pau},\vec e_z} = i\gamma_2\gamma_0$, the antisymmetric matrix with $C^2=-I_4$ that reverses all four gammas under transposition.
+The dictionary is complex-linear; over $\mathbb{R}$ the products span $\mathrm{Cl}_{1,3}(\mathbb{R})\cong M_2(\mathbb{H})$ and the basis operators span $\mathrm{Cl}_{3,1}(\mathbb{R})\cong M_4(\mathbb{R})$. The four generator basis operators of the older display are these gammas, $\gamma_\mu$, and the charge-conjugation basis operator is $C = -iL_{\mathrm{pau},\vec e_y}R_{\mathrm{pau},\vec e_z} = i\gamma_2\gamma_0$, the antisymmetric matrix with $C^2=-I_4$ that reverses all four gammas under transposition.
 
-**The identities the bodies cite.** In the $\gamma$ reading, with $\varepsilon=(1,-1,-1,-1)$ the sign vector of the cells,
+**The identities the bodies cite.** In the $\gamma$ reading, with $\varepsilon=(1,-1,-1,-1)$ the sign vector of the basis operators,
 $$
 \{\gamma_\mu,\gamma_\nu\}=2\varepsilon_\mu\delta_{\mu\nu}I_4,\qquad
 (\gamma_k)^2=-I_4,\qquad
@@ -334,8 +334,8 @@ The electron's data are not confined to either sector: state-like and field-stre
 | $\mathcal{N}F = (i\partial/\partial r'_t+\vec\nabla)F - k_{m_e}i\,\overline{F}\,\vec e_z$, $\vec\nabla=\sum_k\vec e_k\partial/\partial R_k$ | Two-sided Dirac equation of the dictionary form |
 | $g$, $\mu_B = ec\dfrac{1}{2\,k_{m_e}}$ | Gyromagnetic factor; Bohr magneton |
 | $\chi=i\tilde{Ζ}_{\mathrm{ad}}$, $\Gamma = -iR_{\mathrm{axf},\vec e_z}$ | Central chirality grading and its representative; closing section |
-| $L_a$, $R_b$, $T_{a,b}=L_aR_b$ | Left and right multiplication and their cell; closing section |
-| $C = -iL_{\mathrm{pau},\vec e_y}R_{\mathrm{pau},\vec e_z}$ | Charge-conjugation cell; closing section |
+| $L_a$, $R_b$, $T_{a,b}=L_aR_b$ | Left and right multiplication and their basis operator; closing section |
+| $C = -iL_{\mathrm{pau},\vec e_y}R_{\mathrm{pau},\vec e_z}$ | Charge-conjugation basis operator; closing section |
 
 ## Further Reading
 

@@ -328,11 +328,11 @@ $$
 
 The body's five actions are these: the time insertion is $\gamma_0$, the three spatial insertions are $\gamma_1$, $\gamma_2$ and $\gamma_3$, and the chirality action is $\gamma_5$.
 
-A single product is a pure tensor; in the sixteen-dimensional coefficient space the products form the seven-dimensional cone of coefficient rank at most one. A general element is a sum of at most four products; its **length** $\ell(M)$ is the least number of products in such a sum. The **matrix rank** of $M$ on the regular module is a different number: for a single cell $L_QR_P$ it is $\operatorname{rank}\mathsf M_2(Q)\operatorname{rank}\mathsf M_2(P)$, and it lies in $\{0,1,2,4\}$. The two numbers are independent.
+A single product is a pure tensor; in the sixteen-dimensional coefficient space the products form the seven-dimensional cone of coefficient rank at most one. A general element is a sum of at most four products; its **length** $\ell(M)$ is the least number of products in such a sum. The **matrix rank** of $M$ on the regular module is a different number: for a single basis operator $L_QR_P$ it is $\operatorname{rank}\mathsf M_2(Q)\operatorname{rank}\mathsf M_2(P)$, and it lies in $\{0,1,2,4\}$. The two numbers are independent.
 
 $\gamma_5$ is the chirality action itself, $-iL_{\mathrm{pau},e_t}R_{\mathrm{pau},\vec e_z}$, so the fifth action and the fifth gamma are one object seen in two readings. The central grading $\xi_{\mathrm{ad}}:=i\tilde{Ζ}_{\mathrm{ad}}$ — the difference of the two central idempotents of the complexified algebra, so $\xi_{\mathrm{ad}}^2=e_t$ — is a different object; it merely has the same representative $\gamma_5$ on the Dirac module, so that the two central idempotents correspond to the two chiral projectors and $\xi$ is the module representative of $\xi_{\mathrm{ad}}$.
 
-The dictionary $M\mapsto c(M)$ is complex-linear; over $\mathbb{R}$ the products span $\mathrm{Cl}_{1,3}(\mathbb{R})\cong M_2(\mathbb{H})$ and the cells span $\mathrm{Cl}_{3,1}(\mathbb{R})\cong M_4(\mathbb{R})$.
+The dictionary $M\mapsto c(M)$ is complex-linear; over $\mathbb{R}$ the products span $\mathrm{Cl}_{1,3}(\mathbb{R})\cong M_2(\mathbb{H})$ and the basis operators span $\mathrm{Cl}_{3,1}(\mathbb{R})\cong M_4(\mathbb{R})$.
 
 **The identities the body cites.** In the $\gamma$ reading, with $\varepsilon=(1,-1,-1,-1)$ and $\epsilon_{0123}=+1$,
 
@@ -359,9 +359,9 @@ $$
 =4\bigl(\varepsilon_\mu\delta_{\mu\nu}\varepsilon_\rho\delta_{\rho\sigma}-\varepsilon_\mu\delta_{\mu\rho}\varepsilon_\nu\delta_{\nu\sigma}+\varepsilon_\mu\delta_{\mu\sigma}\varepsilon_\nu\delta_{\nu\rho}\bigr).
 $$
 
-Each $\gamma$ is a cell with one factor of $i$; the squares use $i^2=-1$.
+Each $\gamma$ is a basis operator with one factor of $i$; the squares use $i^2=-1$.
 
-The contraction sums are fixed by the metric, because the sign of a cell's square is. With the summed index raised, $\gamma^\mu=-\varepsilon_\mu\gamma_\mu$,
+The contraction sums are fixed by the metric, because the sign of a basis operator's square is. With the summed index raised, $\gamma^\mu=-\varepsilon_\mu\gamma_\mu$,
 
 $$
 \sum_\mu\gamma^\mu\gamma_\mu=-4I_4,\qquad
@@ -375,7 +375,7 @@ $$
 
 With every index low only the first keeps a closed form, $\sum_\mu\gamma_\mu\gamma_\mu=-2I_4$; the other three are index-dependent and are computed, not transcribed.
 
-**The display.** Every array printed in this section is given twice: in the Peirce display first, labelled $\mathrm{pau}$, whose arrays are the ones the literature prints, and in the axis-free display after it, labelled $\mathrm{axf}$, which is the display of the body and of the corpus. The two are carried into one another by $L_{\mathrm{axf},e_\mu}=C_{\Pi}L_{\mathrm{pau},e_\mu}C_{\Pi}^{-1}$, and a conjugation by $C_{\Pi}$ changes no product, no anticommutator, no trace and no determinant, so every identity of the section holds in both. An array is a statement about one display; a cell named in the running text keeps the Peirce label, and its axis-free array is the conjugate. The label names the array and not the operator.
+**The display.** Every array printed in this section is given twice: in the Peirce display first, labelled $\mathrm{pau}$, whose arrays are the ones the literature prints, and in the axis-free display after it, labelled $\mathrm{axf}$, which is the display of the body and of the corpus. The two are carried into one another by $L_{\mathrm{axf},e_\mu}=C_{\Pi}L_{\mathrm{pau},e_\mu}C_{\Pi}^{-1}$, and a conjugation by $C_{\Pi}$ changes no product, no anticommutator, no trace and no determinant, so every identity of the section holds in both. An array is a statement about one display; a basis operator named in the running text keeps the Peirce label, and its axis-free array is the conjugate. The label names the array and not the operator.
 
 ## Summary
 

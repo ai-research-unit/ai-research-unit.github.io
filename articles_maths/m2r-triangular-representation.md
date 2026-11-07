@@ -252,7 +252,7 @@ $$
 \chi_{\mathsf{M}_2(Q)}(t)=(t-q)^{2},
 $$
 
-of discriminant zero, so every element is spectrally degenerate and no element is spectrally regular. The two roots coincide, the eigenvalue $q$ is repeated, and the eigenspace is computed in the next section. The dual numbers are the only category of the block in which the spectral classification has one nonempty cell.
+of discriminant zero, so every element is spectrally degenerate and no element is spectrally regular. The two roots coincide, the eigenvalue $q$ is repeated, and the eigenspace is computed in the next section. The dual numbers are the only category of the block in which the spectral classification has one nonempty sector.
 
 **The polar form.** The determinant is a quadratic form, and its polar form is recovered from the trace and the determinant by the identity for $2\times2$ matrices,
 

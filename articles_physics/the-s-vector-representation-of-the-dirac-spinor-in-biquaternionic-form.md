@@ -178,7 +178,7 @@ The charge current is $e\,\pi_\mu = e\sum_{\rho,\sigma}\epsilon_\rho\epsilon_\si
 $$
 \Gamma:\tilde{Ξ}_{\mathrm{sp}}\longmapsto-i\tilde{Ξ}_{\mathrm{sp}}\vec e_z,
 $$
-a pure right multiplier, so its side is the right slot and its two eigenspaces are the two values of every field. In the reference frame it is the ordered product of the four generators up to the factor $i$, and it anticommutes with each $C_\mu$; both are properties of the cell, and neither is what makes it a chirality. Its array on that frame, written in §The Legacy Pauli Gamma Formulation, is the usual fifth generator. The source further rewrites the mass form as
+a pure right multiplier, so its side is the right slot and its two eigenspaces are the two values of every field. In the reference frame it is the ordered product of the four generators up to the factor $i$, and it anticommutes with each $C_\mu$; both are properties of the basis operator, and neither is what makes it a chirality. Its array on that frame, written in §The Legacy Pauli Gamma Formulation, is the usual fifth generator. The source further rewrites the mass form as
 
 $$
 \tilde{Ξ}_{\mathrm{sp}}^{\dagger}C_0\tilde{Ξ}_{\mathrm{sp}} = \sum_\mu\epsilon_\mu\, U_{\mathrm{vec},\mu}\,\tilde{Ξ}_{\mathrm{sp}}^{\dagger}C_0\, C_\mu\tilde{Ξ}_{\mathrm{sp}}
@@ -492,7 +492,7 @@ What the construction supplies is a dictionary; what it does not supply is covar
 | $(G\otimes H)_\lambda = \sum_{\mu,\nu}\epsilon_\mu\epsilon_\nu\,G_\mu c_{\mu\lambda\nu}H_\nu$ | Composition law |
 | $B_\mu, N_\mu$ | Real four-vectors of the two parts of the field |
 | $G_\mu = B_\mu + iN_\mu$ | s-Vector (the vector representation of the field) |
-| $\tilde{Ξ}_{\mathrm{sp},R}, \tilde{Ξ}_{\mathrm{sp},L}$ | The two values of the field, $+1$ and $-1$ |
+| $\tilde{Ξ}_{\mathrm{sp},R}, \tilde{Ξ}_{\mathrm{sp},L}$ | The two parts of the field, one per letter of the pair |
 | $G_{R\mu}, G_{L\mu}$ | The two parts of the s-vector, the two values of $c_5$ |
 | $\tilde{Ξ}_{\mathrm{sp},1}, \tilde{Ξ}_{\mathrm{sp},2}$ | The two parts of the field |
 | $G_{\mu\nu}$ | Field strength of the self-dual form |

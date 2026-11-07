@@ -26,7 +26,7 @@ $$
 \tilde{Ξ}_{\mathrm{sp}}=\tilde{Ξ}_{\mathrm{sp},L}+\tilde{Ξ}_{\mathrm{sp},R}\in\mathbb{B},
 $$
 
-whose two parts are the two eigenvalues of one cell, $\tilde{Ξ}_{\mathrm{sp},L}$ the value L and $\tilde{Ξ}_{\mathrm{sp},R}$ the value R (*Special Element Conventions*, §*The Chirality Convention*). The cell is a choice and the values are not: another traceless $u$ with $u^2=-e_t$ gives another cell with the same two values; every element of the algebra is such a field, and only the zero element has both parts zero. This article declares the axis $\vec u=\vec e_z$, the unit at which the chirality cell is the fifth cell of the material frame $\mathbb{B}_{\Phi}$. The free propagation is the biquaternion Dirac equation
+whose two parts are the two eigenvalues of one basis operator, $\tilde{Ξ}_{\mathrm{sp},L}$ the value L and $\tilde{Ξ}_{\mathrm{sp},R}$ the value R (*Special Element Conventions*, §*The Chirality Convention*). The basis operator is a choice and the values are not: another traceless $u$ with $u^2=-e_t$ gives another basis operator with the same two values; every element of the algebra is such a field, and only the zero element has both parts zero. This article declares the axis $\vec u=\vec e_z$, the unit at which the chirality basis operator is the fifth basis operator of the material frame $\mathbb{B}_{\Phi}$. The free propagation is the biquaternion Dirac equation
 
 $$
 \tilde{\nabla}\tilde{Ξ}_{\mathrm{sp},R}=k_{m_p}\,\tilde{Ξ}_{\mathrm{sp},L},
@@ -40,7 +40,7 @@ In this section we record what is structural about placing it there and what is 
 
 The article carries two Dirac equations, and they must not be read as one. They share the operator and the mass coefficient; they differ in how many times the operator is written.
 
-**The one-sided equation** is the pair displayed above, and it is the corpus's definition. Every derivative acts by left multiplication, and the mass is the off-diagonal pairing of the two values rather than a term inside either. The two values are read from the chirality cell and from nothing else; the label is not an element of the algebra, because the element that suggests itself, $i\vec e_z$, has square $+e_t$ and the split it gives is the index of the decomposition and not the chirality (*Special Element Conventions*, §*The Chirality Convention*, the paragraph *What the word does not name*).
+**The one-sided equation** is the pair displayed above, and it is the corpus's definition. Every derivative acts by left multiplication, and the mass is the off-diagonal pairing of the two values rather than a term inside either. The two values are read from the chirality basis operator and from nothing else; the label is not an element of the algebra, because the element that suggests itself, $i\vec e_z$, has square $+e_t$ and the split it gives is the index of the decomposition and not the chirality (*Special Element Conventions*, §*The Chirality Convention*, the paragraph *What the word does not name*).
 
 **The two-sided equation** writes the same pair once, on the same element. The pair operator of *Operator and Calculus Conventions*, §*The Pair Operator and Its Symbol*, carries the L value by $\tilde{\nabla}^{\natural}$ and the R value by $\tilde{\nabla}$,
 
@@ -111,7 +111,7 @@ $$
 
 The framework's own abelian gauge structure — the one drawn from the central line $\mathbb{B}_{C}$ — is the specialization $ϙ_L=ϙ_R$: a central phase multiplies the two values alike, so it is vector-like by construction, and an axial coupling would have to sit outside the centre.
 
-Two structural facts about $Ϙ$ are inherited from the chiral-fermion article and are used here. First, $Ϙ$ is Hermitian and diagonal in the two values: it commutes with the chirality cell $\Gamma=-iR_{\vec e_z}$, and it acts on the L value by $ϙ_L$ and on the R value by $ϙ_R$. Second, the **mass selection rule**. The mass term is the only term of the free pair that links the two values, so it is the only place where the two charges meet. Under a gauge transformation the L value picks up the phase $\exp(\frac{k_m\,iϙ_{L}\,\lambda}{m\,c})$ and the R value the phase $\exp(\frac{k_m\,iϙ_{R}\,\lambda}{m\,c})$; the derivative terms are made covariant by the transformed potential, but the mass term $\tilde{\nabla}\tilde{Ξ}_{\mathrm{sp},R}=k_{m_p}\tilde{Ξ}_{\mathrm{sp},L}$ then carries one phase on each side, so it is invariant for every real gauge function $\lambda$ **if and only if** $ϙ_R=ϙ_L$. A framework fermion that carries a mass is thus *forced* to be vector-like, and its charge element collapses to the central element,
+Two structural facts about $Ϙ$ are inherited from the chiral-fermion article and are used here. First, $Ϙ$ is Hermitian and diagonal in the two values: it commutes with the chirality basis operator $\Gamma=-iR_{\vec e_z}$, and it acts on the L value by $ϙ_L$ and on the R value by $ϙ_R$. Second, the **mass selection rule**. The mass term is the only term of the free pair that links the two values, so it is the only place where the two charges meet. Under a gauge transformation the L value picks up the phase $\exp(\frac{k_m\,iϙ_{L}\,\lambda}{m\,c})$ and the R value the phase $\exp(\frac{k_m\,iϙ_{R}\,\lambda}{m\,c})$; the derivative terms are made covariant by the transformed potential, but the mass term $\tilde{\nabla}\tilde{Ξ}_{\mathrm{sp},R}=k_{m_p}\tilde{Ξ}_{\mathrm{sp},L}$ then carries one phase on each side, so it is invariant for every real gauge function $\lambda$ **if and only if** $ϙ_R=ϙ_L$. A framework fermion that carries a mass is thus *forced* to be vector-like, and its charge element collapses to the central element,
 
 $$
 \boxed{\;ϙ_L=ϙ_R=ϙ
@@ -167,7 +167,7 @@ which are Hermitian but have *half-integer* values; they cannot carry the proton
 
 Three further distinctions belong here, because the framework has several conserved-looking quantities and they are easy to conflate.
 
-- **Electric charge versus chirality.** The element $Ϙ$ is diagonal in the two values and commutes with the chirality cell for every $ϙ_L,ϙ_R$; the axial combination $ϙ_R=-ϙ_L$ makes $Ϙ=-ϙ_L\,\Gamma$, proportional to the chirality cell. But $\Gamma$ is the chirality cell, not an electric charge, and the axial assignment is precisely one that fails the mass selection rule. For the massive proton only the vector-like specialization survives, and it is blind to the chirality.
+- **Electric charge versus chirality.** The element $Ϙ$ is diagonal in the two values and commutes with the chirality basis operator for every $ϙ_L,ϙ_R$; the axial combination $ϙ_R=-ϙ_L$ makes $Ϙ=-ϙ_L\,\Gamma$, proportional to the chirality basis operator. But $\Gamma$ is the chirality basis operator, not an electric charge, and the axial assignment is precisely one that fails the mass selection rule. For the massive proton only the vector-like specialization survives, and it is blind to the chirality.
 - **Electric charge versus the $\mathrm{SU}(2)$ generators.** As above, these have imaginary or half-integer values; they are isospin-like, not electric.
 - **Electric charge versus baryon number.** The framework supplies no baryon-number current, no conserved fermion number beyond the central phase, and no composite quantum number at all. The central phase does pass through the linear pair, so the proton's electric charge is conserved by the massive free equation; but that is a statement about the $\mathrm{U}(1)$ of electromagnetism, not about baryon number, which is not constructed here.
 
@@ -267,9 +267,9 @@ The table sorts the proton's properties by the status they have in the framework
 
 The Pauli and gamma formulation is legacy: the reasons are explained in the article *Why AXF Matrices instead of Pauli and Gamma Matrices*. The generators carry no frame label: $\gamma_\mu$ is one set of matrices, and the frame is named on the coordinate.
 
-No gamma appears in the sections above, and this section is where it does. Its purpose is to give the same cells their standard names, for a reader who wants the Dirac notation, and to state once the identities that notation carries. The gammas are a frame of $\mathrm{Cl}_{1,3}(\mathbb{C})=M_4(\mathbb{C})$, not a different algebra.
+No gamma appears in the sections above, and this section is where it does. Its purpose is to give the same basis operators their standard names, for a reader who wants the Dirac notation, and to state once the identities that notation carries. The gammas are a frame of $\mathrm{Cl}_{1,3}(\mathbb{C})=M_4(\mathbb{C})$, not a different algebra.
 
-Each gamma is a single cell $L_aR_b$, the operator $\tilde{Ξ}_{\mathrm{sp}}\mapsto a\tilde{Ξ}_{\mathrm{sp}} b$. The frame is
+Each gamma is a single basis operator $L_aR_b$, the operator $\tilde{Ξ}_{\mathrm{sp}}\mapsto a\tilde{Ξ}_{\mathrm{sp}} b$. The frame is
 
 $$
 \gamma_0=iL_{\mathrm{pau},e_t}R_{\mathrm{pau},\vec e_x},\quad \gamma_1=iL_{\mathrm{pau},\vec e_x}R_{\mathrm{pau},\vec e_y},\quad \gamma_2=iL_{\mathrm{pau},\vec e_y}R_{\mathrm{pau},\vec e_y},\quad \gamma_3=iL_{\mathrm{pau},\vec e_z}R_{\mathrm{pau},\vec e_y},\quad \gamma_5=-iL_{\mathrm{pau},e_t}R_{\mathrm{pau},\vec e_z} .
@@ -281,13 +281,13 @@ $$
 \gamma_0=iL_{\mathrm{axf},e_t}R_{\mathrm{axf},\vec e_x},\quad \gamma_1=iL_{\mathrm{axf},\vec e_x}R_{\mathrm{axf},\vec e_y},\quad \gamma_2=iL_{\mathrm{axf},\vec e_y}R_{\mathrm{axf},\vec e_y},\quad \gamma_3=iL_{\mathrm{axf},\vec e_z}R_{\mathrm{axf},\vec e_y},\quad \gamma_5=-iL_{\mathrm{axf},e_t}R_{\mathrm{axf},\vec e_z} .
 $$
 
-Because $L_{\mathrm{pau},e_t}$ is the identity of the module, the first and the last simplify: $\gamma_0=iR_{\mathrm{pau},\vec e_x}$ and $\gamma_5=-iR_{\mathrm{pau},\vec e_z}$. In this frame $\gamma_0$ and $\gamma_5$ are Hermitian and $\gamma_1,\gamma_2,\gamma_3$ are anti-Hermitian — the standard Dirac pattern for $\varepsilon=(1,-1,-1,-1)$ — and that is why the Dirac adjoint of the charge section is built with $G_t=\gamma_0$ alone. Each gamma is one cell and not a sum of cells, which the coefficient matrix $c(\gamma)$ records by having rank one; a general element is a sum of such products, they form the seven-dimensional cone $\operatorname{rank}c(M)\le1$, and the least number of products summing to $M$ is $\operatorname{rank}c(M)$, at most four.
+Because $L_{\mathrm{pau},e_t}$ is the identity of the module, the first and the last simplify: $\gamma_0=iR_{\mathrm{pau},\vec e_x}$ and $\gamma_5=-iR_{\mathrm{pau},\vec e_z}$. In this frame $\gamma_0$ and $\gamma_5$ are Hermitian and $\gamma_1,\gamma_2,\gamma_3$ are anti-Hermitian — the standard Dirac pattern for $\varepsilon=(1,-1,-1,-1)$ — and that is why the Dirac adjoint of the charge section is built with $G_t=\gamma_0$ alone. Each gamma is one basis operator and not a sum of basis operators, which the coefficient matrix $c(\gamma)$ records by having rank one; a general element is a sum of such products, they form the seven-dimensional cone $\operatorname{rank}c(M)\le1$, and the least number of products summing to $M$ is $\operatorname{rank}c(M)$, at most four.
 
-The generator cells $G_\mu$ of the charge section are exactly these gammas, $G_\mu=\gamma_\mu$: $G_t=\gamma_0=iR_{\mathrm{pau},\vec e_x}$ and $G_k=\gamma_k=iL_{\mathrm{pau},\vec e_k}R_{\mathrm{pau},\vec e_y}$. The anticommutator of the notation table is therefore the Clifford relation below.
+The generator basis operators $G_\mu$ of the charge section are exactly these gammas, $G_\mu=\gamma_\mu$: $G_t=\gamma_0=iR_{\mathrm{pau},\vec e_x}$ and $G_k=\gamma_k=iL_{\mathrm{pau},\vec e_k}R_{\mathrm{pau},\vec e_y}$. The anticommutator of the notation table is therefore the Clifford relation below.
 
-**Chirality, three objects and one representative.** $\gamma_5=-iR_{\mathrm{pau},\vec e_z}$ *is* the chirality cell $\Gamma$ of the charge section, so the fifth cell and the fifth gamma are one object in two readings. The central grading $\chi=i\tilde{Ζ}_{\mathrm{ad}}$ — the difference of the two central idempotents of the complexified algebra, so $\chi^2=e_t$ — is a different object: it is central, it belongs to the double $\mathbb{C}\otimes_\mathbb{R}\mathbb{B}_\mathbb{R}$, and it is not an element of $\mathbb{B}$. The chain is $\xi$ in the double, $\Gamma=\mathrm{diag}(-I_2,I_2)$ its representative on the Dirac module, and $\gamma_5$ that representative written as a cell.
+**Chirality, three objects and one representative.** $\gamma_5=-iR_{\mathrm{pau},\vec e_z}$ *is* the chirality basis operator $\Gamma$ of the charge section, so the fifth basis operator and the fifth gamma are one object in two readings. The central grading $\chi=i\tilde{Ζ}_{\mathrm{ad}}$ — the difference of the two central idempotents of the complexified algebra, so $\chi^2=e_t$ — is a different object: it is central, it belongs to the double $\mathbb{C}\otimes_\mathbb{R}\mathbb{B}_\mathbb{R}$, and it is not an element of $\mathbb{B}$. The chain is $\xi$ in the double, $\Gamma=\mathrm{diag}(-I_2,I_2)$ its representative on the Dirac module, and $\gamma_5$ that representative written as a basis operator.
 
-The dictionary is complex-linear; over $\mathbb{R}$ the products span $\mathrm{Cl}_{1,3}(\mathbb{R})\cong M_2(\mathbb{H})$ and the cells span $\mathrm{Cl}_{3,1}(\mathbb{R})\cong M_4(\mathbb{R})$.
+The dictionary is complex-linear; over $\mathbb{R}$ the products span $\mathrm{Cl}_{1,3}(\mathbb{R})\cong M_2(\mathbb{H})$ and the basis operators span $\mathrm{Cl}_{3,1}(\mathbb{R})\cong M_4(\mathbb{R})$.
 
 **The identities the body and the notation table cite.** Here $\mathrm{tr}$ is the $4\times4$ matrix trace, $I_4$ the identity of $M_4(\mathbb{C})$, $\varepsilon=(1,-1,-1,-1)$ and $\epsilon_{0123}=+1$.
 
@@ -309,7 +309,7 @@ $$
 =4\bigl(\varepsilon_\mu\delta_{\mu\nu}\varepsilon_\rho\delta_{\rho\sigma}-\varepsilon_\mu\delta_{\mu\rho}\varepsilon_\nu\delta_{\nu\sigma}+\varepsilon_\mu\delta_{\mu\sigma}\varepsilon_\nu\delta_{\nu\rho}\bigr).
 $$
 
-**The contraction sums depend on the frame, because a cell's square does.** In $\mathbb{B}_{\Phi}$, with the plain weight $\varepsilon=(1,-1,-1,-1)$,
+**The contraction sums depend on the frame, because a basis operator's square does.** In $\mathbb{B}_{\Phi}$, with the plain weight $\varepsilon=(1,-1,-1,-1)$,
 
 $$
 \sum_\mu\varepsilon_\mu\,\gamma_\mu\gamma_\mu=4I_4,\qquad
@@ -321,9 +321,9 @@ $$
 \sum_\mu\varepsilon_\mu\,\gamma_\mu\gamma_\alpha\gamma_\beta\gamma_\rho\gamma_\mu=+2\gamma_\alpha\gamma_\beta\gamma_\rho .
 $$
 
-With the summed index raised the weights become signs, $\gamma^\mu=-\varepsilon_\mu\gamma_\mu$, and the same four sums read $-4I_4$, $+2\gamma_\alpha$, $-4\varepsilon_\alpha\delta_{\alpha\beta}I_4$ and $-2\gamma_\alpha\gamma_\beta\gamma_\rho$. Without weights the sum is $\sum_\mu\gamma_\mu\gamma_\mu=(1-1-1-1)I_4=-2I_4$: the metric has left the cells and entered the sum.
+With the summed index raised the weights become signs, $\gamma^\mu=-\varepsilon_\mu\gamma_\mu$, and the same four sums read $-4I_4$, $+2\gamma_\alpha$, $-4\varepsilon_\alpha\delta_{\alpha\beta}I_4$ and $-2\gamma_\alpha\gamma_\beta\gamma_\rho$. Without weights the sum is $\sum_\mu\gamma_\mu\gamma_\mu=(1-1-1-1)I_4=-2I_4$: the metric has left the basis operators and entered the sum.
 
-**The display.** Every array printed in this section is given twice: in the Peirce display first, labelled $\mathrm{pau}$, whose arrays are the ones the literature prints, and in the axis-free display after it, labelled $\mathrm{axf}$, which is the display of the body and of the corpus. The two are carried into one another by $L_{\mathrm{axf},e_\mu}=C_{\Pi}L_{\mathrm{pau},e_\mu}C_{\Pi}^{-1}$, and a conjugation by $C_{\Pi}$ changes no product, no anticommutator, no trace and no determinant, so every identity of the section holds in both. An array is a statement about one display; a cell named in the running text keeps the Peirce label, and its axis-free array is the conjugate. The label names the array and not the operator.
+**The display.** Every array printed in this section is given twice: in the Peirce display first, labelled $\mathrm{pau}$, whose arrays are the ones the literature prints, and in the axis-free display after it, labelled $\mathrm{axf}$, which is the display of the body and of the corpus. The two are carried into one another by $L_{\mathrm{axf},e_\mu}=C_{\Pi}L_{\mathrm{pau},e_\mu}C_{\Pi}^{-1}$, and a conjugation by $C_{\Pi}$ changes no product, no anticommutator, no trace and no determinant, so every identity of the section holds in both. An array is a statement about one display; a basis operator named in the running text keeps the Peirce label, and its axis-free array is the conjugate. The label names the array and not the operator.
 
 ## Summary
 
@@ -362,7 +362,7 @@ What the framework does not supply is everything that makes the proton a proton.
 | $m_p$ | Proton mass (a parameter) |
 | $\tilde{P}_{\Phi}=iE/c\,e_t+\vec p$ | Four-momentum; the mass shell is $\tilde{P}_{\Phi}\tilde{P}_{\Phi}^{\natural}=-m_p^2c^2$, that is $E^2=\lvert\vec p\rvert^2c^2+m_p^2c^4$ |
 | $\mathbb{D}$, $\mathbb{D}^2=\Box$ | The pair operator of the two-sided equation $(\mathbb{D}-k_{m_p})\tilde{Ξ}_{\mathrm{sp}}=0$; it carries the L value by $\tilde\nabla^{\natural}$ and the R value by $\tilde\nabla$ |
-| $\Gamma=-iR_{\vec e_z}$ | The chirality cell, the cell that reads the two values; the legacy section writes it $\gamma_5$ |
+| $\Gamma=-iR_{\vec e_z}$ | The chirality basis operator, the basis operator that reads the two values; the legacy section writes it $\gamma_5$ |
 | $\tilde J_{\Phi}=i[\tilde{Ξ}_{\mathrm{sp}}^*(\tilde\nabla\tilde{Ξ}_{\mathrm{sp}})-(\tilde\nabla\tilde{Ξ}_{\mathrm{sp}}^*)\tilde{Ξ}_{\mathrm{sp}}]$ | The sesquilinear current of the field, an element of $\mathbb{B}_{\Phi}$ (*Product and Form Conventions*) |
 | $T_a=\tfrac12 e_a$ | Generators of $\mathfrak{su}(2)=\mathrm{span}_\mathbb{R}\{\vec e_x,\vec e_y,\vec e_z\}\subset\mathbb{B}_{\Phi}$; $T_a^2=-\tfrac14e_t$, values $\pm\tfrac i2$ |
 | $iT_a=\tfrac12 i e_a\in\mathbb{B}_{\Psi}$ | $(iT_a)^2=+\tfrac14e_t$, values $\pm\tfrac12$; neither is the electric charge |

@@ -2,17 +2,17 @@
 
 ## Introduction
 
-The cell $\Sigma_{10}$ is the set of elements that have an invariant magnitude but no spectral splitting: $N\neq0$ and $B^2=0$. The two eigenvalues coincide at $Q_t$, the characteristic polynomial is a square, and the element is a unit. The question of the cell is what remains of a two-mode object when the two modes meet.
+The region $\Sigma_{10}$ is the set of elements that have an invariant magnitude but no spectral splitting: $N\neq0$ and $B^2=0$. The two eigenvalues coincide at $Q_t$, the characteristic polynomial is a square, and the element is a unit. The question of the region is what remains of a two-mode object when the two modes meet.
 
-Two answers live in the same cell, and they are physically different. The **scalar line** $Q_te_t$ is semisimple: the eigenvalue is repeated, but the element is diagonalisable, every basis is an eigenbasis, and the two-term writing is not unique. It is the **rest frame** of a massive momentum. The **Jordan part** $Q_t e_t+\vec\Upsilon$ with $\vec\Upsilon^2=0$, $\vec\Upsilon\neq0$ is defective: the eigenvalue is repeated and the element is a single Jordan block. It is the **exceptional point** of the complexified algebra, where two modes have coalesced and the eigenbasis has disappeared.
+Two answers live in the same region, and they are physically different. The **scalar line** $Q_te_t$ is semisimple: the eigenvalue is repeated, but the element is diagonalisable, every basis is an eigenbasis, and the two-term writing is not unique. It is the **rest frame** of a massive momentum. The **Jordan part** $Q_t e_t+\vec\Upsilon$ with $\vec\Upsilon^2=0$, $\vec\Upsilon\neq0$ is defective: the eigenvalue is repeated and the element is a single Jordan block. It is the **exceptional point** of the complexified algebra, where two modes have coalesced and the eigenbasis has disappeared.
 
-The article reads both faces. It states the cell and its geometry, reads the scalar line as the rest frame, reads the Jordan part as the exceptional point, and states where the two readings stop. It proves nothing; the sector theorems are those of *The N-Regular, Spectrally Degenerate Sector*, and the Jordan basis is that of *The Jordan Basis of a Spectrally Degenerate Biquaternion*.
+The article reads both faces. It states the region and its geometry, reads the scalar line as the rest frame, reads the Jordan part as the exceptional point, and states where the two readings stop. It proves nothing; the sector theorems are those of *The N-Regular, Spectrally Degenerate Sector*, and the Jordan basis is that of *The Jordan Basis of a Spectrally Degenerate Biquaternion*.
 
 ## The Results It Uses
 
 | Mathematical Content | Source Mathematical Article |
 | --- | --- |
-| The definition, the five descriptions and the geometry of the cell | [The N-Regular, Spectrally Degenerate Sector](../articles_maths/the-n-regular-spectrally-degenerate-sector.html) |
+| The definition, the five descriptions and the geometry of the region | [The N-Regular, Spectrally Degenerate Sector](../articles_maths/the-n-regular-spectrally-degenerate-sector.html) |
 | The two regimes, the centraliser and the Peirce data | [The N-Regular, Spectrally Degenerate Sector](../articles_maths/the-n-regular-spectrally-degenerate-sector.html), §*The Two Regimes* |
 | The Jordan basis and the canonical flag | [The Jordan Basis of a Spectrally Degenerate Biquaternion](../articles_maths/the-jordan-basis-of-a-spectrally-degenerate-biquaternion.html) |
 | The repeated eigenvalue and the discriminant | [The Spectrum](../articles_maths/the-spectrum.html) |
@@ -22,25 +22,24 @@ The article reads both faces. It states the cell and its geometry, reads the sca
 | The polar word and its degenerate boundary | [The Polar Decomposition and Its Three Pairings](the-polar-decomposition-and-its-three-pairings.html) |
 | The exponential boundary | [The Exponential, the Logarithm and the Generator](the-exponential-the-logarithm-and-the-generator.html) |
 
-## The Cell
-
-The cell is
+## The Region
+The region is
 
 $$
 \Sigma_{10}=\{N\neq0,\ B^2=0\}
 =\{Q_t^2+B^2\neq0,\ B^2=0\}.
 $$
 
-On the spectral cone $B^2=0$ one has $N=Q_t^2$, so the norm is non-zero exactly when the scalar part is non-zero. The cell is therefore
+On the spectral cone $B^2=0$ one has $N=Q_t^2$, so the norm is non-zero exactly when the scalar part is non-zero. The region is therefore
 
 $$
 \Sigma_{10}=\mathcal S\setminus\mathcal N
 =\{Q_t e_t+\vec\Upsilon\ :\ Q_t\in\mathbb{C}^\times,\ \vec\Upsilon^2=0\}.
 $$
 
-The pair $(Q_t,\vec\Upsilon)$ is determined by the element: $Q_t$ is the scalar part and $\vec\Upsilon=\vec Q$. The cell is a complex cone of complex dimension three and real dimension six, with the apex removed. Its singular locus is the punctured scalar line, the vertex of the spectral cone.
+The pair $(Q_t,\vec\Upsilon)$ is determined by the element: $Q_t$ is the scalar part and $\vec\Upsilon=\vec Q$. The region is a complex cone of complex dimension three and real dimension six, with the apex removed. Its singular locus is the punctured scalar line, the vertex of the spectral cone.
 
-An element of the cell is a unit with a repeated eigenvalue:
+An element of the region is a unit with a repeated eigenvalue:
 
 $$
 p_{\tilde Q}(X)=(X-Q_t)^2,
@@ -51,7 +50,7 @@ p_{\tilde Q}(X)=(X-Q_t)^2,
 N=Q_t^2\neq0.
 $$
 
-The cell splits by the vector part into two regimes:
+The region splits by the vector part into two regimes:
 
 $$
 \Sigma_{10}=\Sigma_{10}^{\mathrm{s}}\sqcup\Sigma_{10}^{\mathrm{J}},
@@ -110,7 +109,7 @@ The **rest frame** is therefore the scalar line. The reading has three parts.
 - **No preferred axis.** Every direction is an eigenaxis, because the element is central. The two-term writing is not unique: every complementary pair of idempotents gives the same element. The rest frame is the only frame in which the momentum has no preferred axis.
 - **A global phase and a scale.** The central element commutes with everything and acts as a scalar on every module. Its modulus is the mass; its phase is the causal label of the material sector, fixed to $i$ on the positive-energy timelike slice. Read on a state module, the same central phase multiplies every component and is unobservable on rays. The rest frame carries the rest frequency, not an orientation.
 
-The scalar line is the boundary of the two-mode cell. A massive particle in motion approaches it as $\vec p\to0$; the two eigenvalues coalesce, the two-term writing becomes non-unique, and the direction $\vec p/\lvert\vec p\rvert$ is lost. The limit is continuous in the element and discontinuous in the frame: the element has a limit, the eigenbasis does not.
+The scalar line is the boundary of the two-mode region. A massive particle in motion approaches it as $\vec p\to0$; the two eigenvalues coalesce, the two-term writing becomes non-unique, and the direction $\vec p/\lvert\vec p\rvert$ is lost. The limit is continuous in the element and discontinuous in the frame: the element has a limit, the eigenbasis does not.
 
 ## The Jordan Part: The Exceptional Point
 
@@ -164,11 +163,11 @@ Three consequences follow, and each is a reading of a theorem.
 - **A shear.** The element is a scale times a unipotent, $Q_t e_t+\vec\Upsilon=Q_t(e_t+\vec\Upsilon/Q_t)$ with $(\vec\Upsilon/Q_t)^2=0$. The unipotent is a null rotation of the frame: it preserves the flag and moves along it. The reading is a rate with a shear, not a rate with a direction.
 - **A double pole.** The inverse $\tilde Q^{-1}=Q_t^{-1}e_t-Q_t^{-2}\vec\Upsilon$ has a double pole in $Q_t$. In a propagator or a resolvent, the double pole is the signature of a defective mode; the residue is not a projector but a projector plus a nilpotent.
 
-The exceptional point is not on the real material slice. A real spatial vector has $B^2=\lvert\vec p\rvert^2$, which vanishes only at $\vec p=0$, and then $\vec\Upsilon=0$: the real slice meets the cell on the scalar line only. The Jordan part needs a complex isotropic spatial vector, and its physical reading is a complexified momentum, not a real four-momentum.
+The exceptional point is not on the real material slice. A real spatial vector has $B^2=\lvert\vec p\rvert^2$, which vanishes only at $\vec p=0$, and then $\vec\Upsilon=0$: the real slice meets the region on the scalar line only. The Jordan part needs a complex isotropic spatial vector, and its physical reading is a complexified momentum, not a real four-momentum.
 
 ## The Spectrum and the Beat
 
-The cell has one eigenvalue. The two spectral questions have different answers:
+The region has one eigenvalue. The two spectral questions have different answers:
 
 | question | answer on the scalar line | answer on the Jordan part |
 | --- | --- | --- |
@@ -180,9 +179,9 @@ The cell has one eigenvalue. The two spectral questions have different answers:
 | inverse? | yes | yes |
 | generator? | yes, up to the lattice | yes, up to the lattice |
 
-The **beat stops** on the whole cell: the two frequencies are equal, so there is no oscillation between two modes. The **rate remains**: the eigenvalue $Q_t$ is the frequency of the global phase, and the element still generates a one-parameter group. The reading is precise: a beat needs two frequencies, a phase needs one.
+The **beat stops** on the whole region: the two frequencies are equal, so there is no oscillation between two modes. The **rate remains**: the eigenvalue $Q_t$ is the frequency of the global phase, and the element still generates a one-parameter group. The reading is precise: a beat needs two frequencies, a phase needs one.
 
-The Fourier kernel degenerates with the cell. At $B=0$ the root $\vec Q/B$ is undefined, the exponential is the dual-number kernel
+The Fourier kernel degenerates with the region. At $B=0$ the root $\vec Q/B$ is undefined, the exponential is the dual-number kernel
 
 $$
 e^{\theta\tilde Q}=e^{\theta Q_t}\bigl(e_t+\theta\vec\Upsilon\bigr),
@@ -192,15 +191,15 @@ and there is no Fourier basis attached to the element. The transform exists, but
 
 ## Products and the Boundary
 
-The cell is inverse-closed and not product-closed:
+The region is inverse-closed and not product-closed:
 
 $$
 \Sigma_{10}\cdot\Sigma_{10}\subseteq\Sigma_{10}\cup\Sigma_{11}.
 $$
 
-The scalar line is closed under products and lies in the cell. The Jordan part is closed under powers: the square of $Q_t e_t+\vec\Upsilon$ is $Q_t^2 e_t+2Q_t\vec\Upsilon$, which is again Jordan. A product of two Jordan elements with different nilpotent directions can leave the cell and land in $\Sigma_{11}$; the norm stays non-zero, so the product never reaches the null cone.
+The scalar line is closed under products and lies in the region. The Jordan part is closed under powers: the square of $Q_t e_t+\vec\Upsilon$ is $Q_t^2 e_t+2Q_t\vec\Upsilon$, which is again Jordan. A product of two Jordan elements with different nilpotent directions can leave the region and land in $\Sigma_{11}$; the norm stays non-zero, so the product never reaches the null cone.
 
-The boundary of the cell inside the spectral cone is the null-cone intersection $\Sigma_{00}$, which the cell does not contain; the interior boundary between the two regimes is the scalar line. The cell is the boundary of the two-mode cell $\Sigma_{11}$ at $B=0$: a path in $\Sigma_{11}$ that reaches $B=0$ lands here.
+The boundary of the region inside the spectral cone is the null-cone intersection $\Sigma_{00}$, which the region does not contain; the interior boundary between the two regimes is the scalar line. The region is the boundary of the two-mode region $\Sigma_{11}$ at $B=0$: a path in $\Sigma_{11}$ that reaches $B=0$ lands here.
 
 ## Physical Interpretations
 
@@ -209,8 +208,8 @@ The boundary of the cell inside the spectral cone is the null-cone intersection 
 - **The Jordan part is the exceptional point.** The element has a single eigenvalue and a single eigendirection; $L_{\tilde Q}$ is defective, its eigenbasis has collapsed, and a perturbation needs a Jordan chain.
 - **The unipotent is a shear.** The element is a scale times a null rotation. It preserves the flag and moves along it; the reading is a rate with a shear, not a rate with a direction.
 - **The double pole is the defective response.** The inverse has a double pole in the scalar part; in a resolvent or a propagator, the double pole is the signature of a coalesced mode.
-- **The beat stops and the rate remains.** The cell has one frequency; there is no oscillation between two modes, but there is still a global phase and a one-parameter group.
-- **The cell is the boundary of the two-mode regime.** A massive particle in motion approaches the rest frame as $\vec p\to0$; the element has a limit, the eigenbasis does not.
+- **The beat stops and the rate remains.** The region has one frequency; there is no oscillation between two modes, but there is still a global phase and a one-parameter group.
+- **The region is the boundary of the two-mode regime.** A massive particle in motion approaches the rest frame as $\vec p\to0$; the element has a limit, the eigenbasis does not.
 - **No canonical Peirce decomposition, only a flag.** A Peirce decomposition always exists, but on the Jordan part no pair of non-trivial idempotents is attached to the element: a chosen adapted idempotent gives the Jordan block $J_2(Q_t)$. There is no spectral decomposition and no eigenbasis. The closest structure attached to the element is a flag; the flag is the invariant, and only the scale of the vector that spans its line is a gauge of the flag.
 
 ## Limits
@@ -221,11 +220,11 @@ The exceptional-point reading is conditional on reading the element as the opera
 
 The Jordan part is not on the real material slice. A real four-momentum with $B=0$ has $\vec p=0$ and lies on the scalar line. The Jordan part is a complexified regime.
 
-The cell is not a phase transition. "Degenerate" is spectral, not thermodynamic; the cell is a property of one element, not a basin of attraction.
+The region is not a phase transition. "Degenerate" is spectral, not thermodynamic; the region is a property of one element, not a basin of attraction.
 
-The cell is not a particle count. A repeated eigenvalue is not two particles with equal masses; it is one element with one eigenvalue and, on the Jordan part, one eigendirection.
+The region is not a particle count. A repeated eigenvalue is not two particles with equal masses; it is one element with one eigenvalue and, on the Jordan part, one eigendirection.
 
-No dynamics is supplied. The cell says what the element is at an instant; it does not say how it gets there or what it does.
+No dynamics is supplied. The region says what the element is at an instant; it does not say how it gets there or what it does.
 
 ## Summary
 
@@ -233,30 +232,30 @@ No dynamics is supplied. The cell says what the element is at an instant; it doe
 - The scalar line $Q_te_t$ is semisimple, central and the real rest frame: one frequency, no preferred axis, non-unique two-term writing.
 - The Jordan part $Q_t e_t+\vec\Upsilon$ with $\vec\Upsilon^2=0$ is defective: one eigenvalue, one Jordan block, no eigenbasis, no canonical Peirce decomposition; a chosen adapted idempotent gives $J_2(Q_t)$, and the flag is the invariant.
 - The physical reading of the Jordan part is the exceptional point: coalesced modes, a shear, a double pole in the inverse.
-- The beat stops on the whole cell; the rate remains. The cell has one frequency and still generates a one-parameter group.
-- The cell is inverse-closed and not product-closed; products stay in $\Sigma_{10}\cup\Sigma_{11}$.
-- The real material slice meets the cell on the scalar line only; the Jordan part is a complexified regime.
-- The cell is the boundary of the two-mode cell at $B=0$; the element has a limit, the eigenbasis does not.
-- The cell supplies no dynamics, no phase transition and no particle count.
+- The beat stops on the whole region; the rate remains. The region has one frequency and still generates a one-parameter group.
+- The region is inverse-closed and not product-closed; products stay in $\Sigma_{10}\cup\Sigma_{11}$.
+- The real material slice meets the region on the scalar line only; the Jordan part is a complexified regime.
+- The region is the boundary of the two-mode region at $B=0$; the element has a limit, the eigenbasis does not.
+- The region supplies no dynamics, no phase transition and no particle count.
 
 ## Summary of Notation
 
 | symbol | meaning |
 | --- | --- |
-| $\Sigma_{10}$ | the cell $N\neq0$, $B^2=0$ |
+| $\Sigma_{10}$ | the region $N\neq0$, $B^2=0$ |
 | $\Sigma_{10}^{\mathrm{s}}$ | the scalar line $Q_te_t$, $Q_t\neq0$ |
 | $\Sigma_{10}^{\mathrm{J}}$ | the Jordan part $Q_t e_t+\vec\Upsilon$, $\vec\Upsilon^2=0$, $\vec\Upsilon\neq0$ |
 | $Q_t$ | the repeated eigenvalue |
 | $\vec\Upsilon$ | the pure nilpotent direction |
-| $N=Q_t^2$ | the norm on the cell |
+| $N=Q_t^2$ | the norm on the region |
 | $\tilde Q^{-1}=Q_t^{-1}e_t-Q_t^{-2}\vec\Upsilon$ | the inverse on the Jordan part |
 | $L_{\tilde Q}$ | left multiplication, the operator reading |
 
 ## Further Reading
 
-- [The Four Regimes of an Element: Mass and Motion](the-four-regimes-of-an-element-mass-and-motion.html), for the partition and the other three cells.
+- [The Four Regimes of an Element: Mass and Motion](the-four-regimes-of-an-element-mass-and-motion.html), for the partition and the other three regions.
 - [The Spectral Reading of a Four-Vector](the-spectral-reading-of-a-four-vector.html), for the rest frame and the Doppler pair.
-- [The N-Regular, Spectrally Regular Sector: Mass in Motion](the-n-regular-spectrally-regular-sector-mass-in-motion.html), for the cell whose boundary this is.
+- [The N-Regular, Spectrally Regular Sector: Mass in Motion](the-n-regular-spectrally-regular-sector-mass-in-motion.html), for the region whose boundary this is.
 - [The N-Degenerate, Spectrally Degenerate Sector: The Vacuum and the Nilpotent Ladder](the-n-degenerate-spectrally-degenerate-sector-the-vacuum-and-the-nilpotent-ladder.html), for the nilpotents, the other defective regime.
 - [The Exponential, the Logarithm and the Generator](the-exponential-the-logarithm-and-the-generator.html), for the logarithm and the boundary.
 - [The Polar Decomposition and Its Three Pairings](the-polar-decomposition-and-its-three-pairings.html), for the word at the degenerate boundary.

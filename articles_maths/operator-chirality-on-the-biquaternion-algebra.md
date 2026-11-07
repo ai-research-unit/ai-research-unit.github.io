@@ -4,9 +4,9 @@
 
 Every operator on the biquaternion algebra multiplies on a side, and the side is given by the multiplication itself: $L(a)$ multiplies an element on the left, $R(b)$ multiplies it on the right. Operator chirality is the name of that side. The definition is one line long, it names no frame, and everything else in this article follows from it.
 
-The obvious route to the notion goes through a single cell, and it is worth saying why that route misleads. Pick an element $u$ with $u^2=-e_t$ and no scalar part, and form the right multiplier $-iR_u$. Its square is the identity, its eigenvalues are $\pm1$ with two of each, and its eigenspaces are two halves of the algebra. The construction is correct, and the physics uses it. But its order is wrong: it produces an operator and then reads a chirality off it. The error shows in the product. The cell so obtained is a pure right multiplier, so by any definition of chirality worth the name it has a chirality of its own; and an object that has a chirality cannot be what chirality means. Here the sides come first, and that cell becomes one example of one of them.
+The obvious route to the notion goes through a single basis operator, and it is worth saying why that route misleads. Pick an element $u$ with $u^2=-e_t$ and no scalar part, and form the right multiplier $-iR_u$. Its square is the identity, its eigenvalues are $\pm1$ with two of each, and its eigenspaces are two halves of the algebra. The construction is correct, and the physics uses it. But its order is wrong: it produces an operator and then reads a chirality off it. The error shows in the product. The basis operator so obtained is a pure right multiplier, so by any definition of chirality worth the name it has a chirality of its own; and an object that has a chirality cannot be what chirality means. Here the sides come first, and that basis operator becomes one example of one of them.
 
-The article is purely algebraic. The algebra is $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$, central simple over $\mathbb{C}$, of complex dimension four, with unit $e_t$ and reduced trace $\operatorname{Sc}$; the identity operator is $\mathrm I$. A basis of $\mathbb{B}$ is chosen twice and only twice: in the section on the trace form, where an array is the convenience being discussed, and in one example about dimension, where the example says so. Nowhere else is a basis chosen. The proof of the structure isomorphism is quantified over all bases and picks none, so it counts as no choice. The cells and the two families belong to *Families of Matrix Representations*. The carriers and their splittings belong to *The Unpolarized Module of the Biquaternion Algebra*. The ambient operator space belongs to *The Endomorphisms of the Biquaternion Algebra*.
+The article is purely algebraic. The algebra is $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$, central simple over $\mathbb{C}$, of complex dimension four, with unit $e_t$ and reduced trace $\operatorname{Sc}$; the identity operator is $\mathrm I$. A basis of $\mathbb{B}$ is chosen twice and only twice: in the section on the trace form, where an array is the convenience being discussed, and in one example about dimension, where the example says so. Nowhere else is a basis chosen. The proof of the structure isomorphism is quantified over all bases and picks none, so it counts as no choice. The basis operators and the two families belong to *Families of Matrix Representations*. The carriers and their splittings belong to *The Unpolarized Module of the Biquaternion Algebra*. The ambient operator space belongs to *The Endomorphisms of the Biquaternion Algebra*.
 
 ## The Two Sides
 
@@ -26,7 +26,7 @@ $$
 L(a)R(b)(\tilde X)=a\tilde Xb=R(b)L(a)(\tilde X).
 $$
 
-The left factor and the right factor act on the two ends of the argument, so they cannot meet. Products of cells multiply accordingly,
+The left factor and the right factor act on the two ends of the argument, so they cannot meet. Products of basis operators multiply accordingly,
 
 $$
 \bigl(L_aR_b\bigr)\bigl(L_cR_d\bigr)=L_{ac}R_{db},
@@ -48,7 +48,7 @@ $$
 \Phi\colon\mathbb{B}\otimes_{\mathbb{C}}\mathbb{B}\to\operatorname{End}_{\mathbb{C}}(\mathbb{B}),\qquad \Phi(a\otimes b)=L_aR_b ,
 $$
 
-and $\Phi$ is an isomorphism, because for any basis $e_1,\dots,e_4$ the sixteen cells $L_{e_\mu}R_{e_\nu}$ are independent: an operator on a four-dimensional space is an arbitrary array of sixteen numbers, and the cells supply the sixteen coordinate directions. Under $\Phi$ the two sides become the two factors, and their overlap becomes the tensor of the two units:
+and $\Phi$ is an isomorphism, because for any basis $e_1,\dots,e_4$ the sixteen basis operators $L_{e_\mu}R_{e_\nu}$ are independent: an operator on a four-dimensional space is an arbitrary array of sixteen numbers, and the basis operators supply the sixteen coordinate directions. Under $\Phi$ the two sides become the two factors, and their overlap becomes the tensor of the two units:
 
 $$
 L(\mathbb{B})=\Phi(\mathbb{B}\otimes e_t),\qquad
@@ -56,7 +56,7 @@ R(\mathbb{B})=\Phi(e_t\otimes\mathbb{B}),\qquad
 L(\mathbb{B})\cap R(\mathbb{B})=\Phi(e_t\otimes e_t).
 $$
 
-This is the technical core of the article. A cell $L_aR_b$ is a coordinate of $\Phi$ and not a primitive object, and a statement written in cells is a statement about $\Phi$ which becomes intrinsic once it is written in the two images.
+This is the technical core of the article. A basis operator $L_aR_b$ is a coordinate of $\Phi$ and not a primitive object, and a statement written in basis operators is a statement about $\Phi$ which becomes intrinsic once it is written in the two images.
 
 **Definition.** An operator has the **left slot** when it lies in $L(\mathbb{B})$, the **right slot** when it lies in $R(\mathbb{B})$, **both slots** when it lies in the intersection, and **no single side** otherwise:
 
@@ -66,9 +66,9 @@ $$
 
 Operator chirality is that label. It is a property of an operator, it takes four values, and it is fixed by the multiplication before anything else is chosen.
 
-The third case is the one that needs care. A cell such as $L_aR_b$ with neither parameter central occupies both slots in the plain sense of the words, and it has not both slots in the sense of the definition: it has no single side. The word *both* names two different things in the two sentences, a label and a family, and the corpus keeps them apart by grammar. The cell $L_aR_b$ is a member of the family $LR$; its label is *no single side*. The third case is reserved for the operators that genuinely multiply on both ends at once, and those are the scalars.
+The third case is the one that needs care. A basis operator such as $L_aR_b$ with neither parameter central occupies both slots in the plain sense of the words, and it has not both slots in the sense of the definition: it has no single side. The word *both* names two different things in the two sentences, a label and a family, and the corpus keeps them apart by grammar. The basis operator $L_aR_b$ is a member of the family $LR$; its label is *no single side*. The third case is reserved for the operators that genuinely multiply on both ends at once, and those are the scalars.
 
-The asymmetry appears the moment one multiplies. The product of two left multipliers is a left multiplier, and the product of two right multipliers is a right multiplier, so each side is a four-dimensional subalgebra and the two subalgebras meet in the scalars. A product of one of each is a cell, and a general cell is on neither side. The label is therefore not respected by the product, except on the scalars, and this is the first hint that it is not a grading; the last section makes that a theorem.
+The asymmetry appears the moment one multiplies. The product of two left multipliers is a left multiplier, and the product of two right multipliers is a right multiplier, so each side is a four-dimensional subalgebra and the two subalgebras meet in the scalars. A product of one of each is a basis operator, and a general basis operator is on neither side. The label is therefore not respected by the product, except on the scalars, and this is the first hint that it is not a grading; the last section makes that a theorem.
 
 The label is also a name and not a quantity. It is not additive: $L_a+L_c$ has the left slot while $L_a+R_b$ has none, so the set of operators with no single side is the complement of a union and not a subspace. It carries no sign: $cL_a$ and $-cL_a$ are labelled alike. No linear functional on the endomorphism algebra assigns the four labels, for the reason given at the end.
 
@@ -80,7 +80,7 @@ $$
 \sigma=\Phi\circ\tau\circ\Phi^{-1},\qquad\text{so that}\qquad \sigma(L_aR_b)=L_bR_a .
 $$
 
-The rule exchanges the two entries of an elementary tensor; it refers to no basis. It is well defined because the cells are a basis of the endomorphism algebra, so every operator has one coefficient array and the rule permutes its two indices.
+The rule exchanges the two entries of an elementary tensor; it refers to no basis. It is well defined because the basis operators are a basis of the endomorphism algebra, so every operator has one coefficient array and the rule permutes its two indices.
 
 **Theorem.** The map $\sigma$ is an involution and an anti-automorphism, and it exchanges the two images:
 
@@ -88,7 +88,7 @@ $$
 \sigma^2=\mathrm{id},\qquad \sigma(XY)=\sigma(Y)\sigma(X),\qquad \sigma\bigl(L(\mathbb{B})\bigr)=R(\mathbb{B}),\qquad \sigma\bigl(R(\mathbb{B})\bigr)=L(\mathbb{B}).
 $$
 
-*Proof.* The flip is its own inverse, so $\sigma$ is. For the reversal, take two cells:
+*Proof.* The flip is its own inverse, so $\sigma$ is. For the reversal, take two basis operators:
 
 $$
 \sigma\bigl((L_aR_b)(L_cR_d)\bigr)=\sigma(L_{ac}R_{db})=L_{db}R_{ac}=(L_dR_c)(L_bR_a)=\sigma(L_cR_d)\,\sigma(L_aR_b),
@@ -104,7 +104,7 @@ $$
 
 The left multiplier of an element and the right multiplier of the same element are the same operator written on the two ends, and the swap is what changes the writing. This is why the two families have arrays that agree up to a sign, and it is why every statement about a left multiplier has a twin statement about a right one.
 
-Two further properties are used later. The swap permutes the cells of any basis, so it preserves the number of one-sided factors in a decomposition, which is the length $\ell$ of the operator articles. It also preserves the rank, since it transposes the coefficient matrix:
+Two further properties are used later. The swap permutes the basis operators of any basis, so it preserves the number of one-sided factors in a decomposition, which is the length $\ell$ of the operator articles. It also preserves the rank, since it transposes the coefficient matrix:
 
 $$
 \ell\bigl(\sigma(M)\bigr)=\ell(M),\qquad \operatorname{rank}\sigma(M)=\operatorname{rank}M .
@@ -130,7 +130,7 @@ $$
 
 The swap is the adjoint of $X$ with respect to $\beta$.
 
-*Proof.* For a cell, the left side is $\operatorname{Sc}(a\tilde Yb\tilde Z)$ and the right side is $\operatorname{Sc}(\tilde Yb\tilde Za)$, and cyclicity makes them equal. Linearity extends the identity to all operators.
+*Proof.* For a basis operator, the left side is $\operatorname{Sc}(a\tilde Yb\tilde Z)$ and the right side is $\operatorname{Sc}(\tilde Yb\tilde Za)$, and cyclicity makes them equal. Linearity extends the identity to all operators.
 
 The identity is worth pausing on. Adjointness is a basis-free notion, so the theorem describes $\sigma$ using the multiplication and the trace and nothing else, and it says what the exchange of sides is in the language a bilinear form provides. The reading of the same fact in a display is an array, and an array has to be written in a basis. Here it is. In a basis of the carrier where $\beta$ has Gram matrix $\mathsf W$ the adjoint of a matrix is $\mathsf W^{-1}[X]^{\mathsf T}\mathsf W$, so
 
@@ -144,7 +144,7 @@ The second display is the one-factor case, and it is the reason the two families
 
 The array belongs to the basis and not to the algebra, and the dependence cancels. A change of carrier basis replaces $\mathsf W$ by $\mathsf P^{\mathsf T}\mathsf W\mathsf P$ and $[X]$ by $\mathsf P^{-1}[X]\mathsf P$, and the two changes undo each other; that cancellation is the whole reason a computation may be done in a convenient basis.
 
-On the sixteen coefficients of the cells the statement is shorter still. The array of $\sigma(X)$ is the transpose of the array of $X$, in every frame, because $\sigma$ matches the cell $L_aR_b$ with the cell $L_bR_a$ and does nothing else. The transpose is the intrinsic content, and the matrix $\mathsf W^{-1}(\cdot)^{\mathsf T}\mathsf W$ is what the transpose becomes once a carrier basis is imposed.
+On the sixteen coefficients of the basis operators the statement is shorter still. The array of $\sigma(X)$ is the transpose of the array of $X$, in every frame, because $\sigma$ matches the basis operator $L_aR_b$ with the basis operator $L_bR_a$ and does nothing else. The transpose is the intrinsic content, and the matrix $\mathsf W^{-1}(\cdot)^{\mathsf T}\mathsf W$ is what the transpose becomes once a carrier basis is imposed.
 
 ## The Two Eigenspaces
 
@@ -178,7 +178,7 @@ $$
 
 so it is a Lie algebra of dimension six. Both computations are one line and both use only the anti-automorphism property; the involution decides which operation survives, and that is the sense in which the exchange of sides and the Jordan–Lie split are one statement. The decomposition of an endomorphism algebra into a symmetric and an exterior square is standard for a nondegenerate symmetric form. What is specific here is that the form is the trace form of the algebra and the reflection is the exchange of the two sides, so the split is read off the two-sided structure rather than imposed on it.
 
-A caution belongs here, because a dimension alone says nothing. The example needs a basis and uses the coefficient basis. Take the six cells $L_{e_\mu}R_{e_\nu}$ over the pairs $\mu<\nu$, and let $\mathsf S$ be their span. The six are independent, so $\mathsf S$ is six-dimensional like $\operatorname{Neg}(\sigma)$. The swap does not preserve it, and it is worth seeing how badly: it sends each of the six cells to a cell outside the span, the six images span the six complementary cells, and $\mathsf S\cap\sigma(\mathsf S)=\{0\}$ while $\mathsf S+\sigma(\mathsf S)$ is twelve-dimensional. Two spaces of the same dimension, one fixed by the multiplication and one by a choice of six cells, and the second is not merely displaced by the swap, it is carried off it entirely. Equal dimensions never identify two subspaces, and a count of one-sided factors is not a membership.
+A caution belongs here, because a dimension alone says nothing. The example needs a basis and uses the coefficient basis. Take the six basis operators $L_{e_\mu}R_{e_\nu}$ over the pairs $\mu<\nu$, and let $\mathsf S$ be their span. The six are independent, so $\mathsf S$ is six-dimensional like $\operatorname{Neg}(\sigma)$. The swap does not preserve it, and it is worth seeing how badly: it sends each of the six basis operators to a basis operator outside the span, the six images span the six complementary basis operators, and $\mathsf S\cap\sigma(\mathsf S)=\{0\}$ while $\mathsf S+\sigma(\mathsf S)$ is twelve-dimensional. Two spaces of the same dimension, one fixed by the multiplication and one by a choice of six basis operators, and the second is not merely displaced by the swap, it is carried off it entirely. Equal dimensions never identify two subspaces, and a count of one-sided factors is not a membership.
 
 ## Conjugation Exchanges the Sides
 
@@ -220,17 +220,17 @@ Eleven objects are routinely offered as the home of chirality. Each is a genuine
 | an idempotent | an element with $\tilde\Pi^2=\tilde\Pi$ | a condition on an element, not on an operator |
 | a Peirce decomposition | four lines cut by two idempotents | the label's four cases are not lines of the algebra |
 | a Peirce basis | a basis of the algebra | a basis is a display; the images exist before one is declared |
-| a spectrum | the list $+1,+1,-1,-1$ of one operator | a list of numbers is a consequence of a chosen cell |
+| a spectrum | the list $+1,+1,-1,-1$ of one operator | a list of numbers is a consequence of a chosen basis operator |
 | a spinor | an element of a minimal left ideal | a subspace of $\mathbb{B}$; the label is a membership in $\operatorname{End}(\mathbb{B})$ |
 | the module $S$ | one minimal left ideal, a spinor module | needs a point of a projective line to be chosen |
 | an ideal | a subspace $I$ with $\mathbb{B}I\subseteq I$ | a subspace of the algebra, and the label names no subspace |
 | a Clifford algebra | the algebra with $\{e_i,e_j\}=2g_{ij}$ | fixes a dimension and a signature; the images do not |
-| a matrix unit of $M_4(\mathbb{C})$ | a basis element $E_{ij}$ of a display | the cell is a sum of four of them, and the display is not the algebra |
-| the cell itself | one right multiplier $-iR_u$ | an example of the right slot, and an example is not the definition |
+| a matrix unit of $M_4(\mathbb{C})$ | a basis element $E_{ij}$ of a display | the basis operator is a sum of four of them, and the display is not the algebra |
+| the basis operator itself | one right multiplier $-iR_u$ | an example of the right slot, and an example is not the definition |
 
 A **root** is an element $\tilde Z$ with $\tilde Z^2=e_t$, and it is what a Peirce decomposition is built from. It enters after the label, not before: the label depends on $L$ and $R$, which the multiplication supplies, while a root is a further choice made when a splitting of the algebra is wanted. An **idempotent** is a condition on an element, $\tilde\Pi^2=\tilde\Pi$; the label is a condition on an operator, a membership, and the two conditions have different shapes and different carriers.
 
-A **spectrum** is offered in the same way, and it is the offer a physicist is likeliest to accept: chirality is said to be the pair of eigenvalues $+1$ and $-1$. The pair is a theorem about the cell, and the theorem needs two hypotheses, $u^2=-e_t$ and $\operatorname{Sc}u=0$. A theorem with hypotheses about a chosen element cannot be the definition of a label that needs no element. The comparison of shapes settles it: the label has four cases and a spectrum is a finite list of numbers in $\mathbb{C}$; a list cannot carry four cases, and two of the four have no spectrum at all. What the spectrum does supply is the balance, two of each sign, and that balance is why the cell is usable as a projector once it has been chosen.
+A **spectrum** is offered in the same way, and it is the offer a physicist is likeliest to accept: chirality is said to be the pair of eigenvalues $+1$ and $-1$. The pair is a theorem about the basis operator, and the theorem needs two hypotheses, $u^2=-e_t$ and $\operatorname{Sc}u=0$. A theorem with hypotheses about a chosen element cannot be the definition of a label that needs no element. The comparison of shapes settles it: the label has four cases and a spectrum is a finite list of numbers in $\mathbb{C}$; a list cannot carry four cases, and two of the four have no spectrum at all. What the spectrum does supply is the balance, two of each sign, and that balance is why the basis operator is usable as a projector once it has been chosen.
 
 A **Peirce decomposition** takes two idempotents and returns four lines of $\mathbb{B}$. The label returns four cases on the operator space, and not one of those cases is a line of the algebra. A **Peirce basis** is a basis, and the label is read without one: the images of $L$ and $R$ exist before any basis is declared, and they do not move when a basis changes.
 
@@ -242,19 +242,19 @@ An **ideal** is a subspace $I$ of the algebra with $\mathbb{B}I\subseteq I$, tha
 
 A **Clifford algebra** is the algebra generated by vectors with $\{e_i,e_j\}=2g_{ij}$, and it is offered as the natural home of chirality with a product of generators as the chirality element. Two reasons settle it. The relation fixes squares and anticommutators and says nothing about the side on which an operator multiplies, which is the only datum the label uses. And a Clifford algebra fixes a dimension and a signature, while the two images exist for every algebra in every dimension: $L$ and $R$ are defined by the multiplication, and their intersection is the centre, always. The Clifford reading is a display of the algebra, and it is a correct display; it is not a foundation.
 
-A **matrix unit of $M_4(\mathbb{C})$** is the last of the display artefacts, and it is the one that looks most like a definition, because in a display the cell is a diagonal of signs and a matrix unit is the smallest thing a display has. The cell is not a unit of that basis: written in any matrix display it is a sum of four matrix units, and it is one operator, not a combination of four. The number $4$ belongs to the display and not to the algebra, while the two images belong to the algebra and to every algebra. A definition that named a matrix unit would be a definition of one display, and it would not survive the change of display that leaves every operator label where it was.
+A **matrix unit of $M_4(\mathbb{C})$** is the last of the display artefacts, and it is the one that looks most like a definition, because in a display the basis operator is a diagonal of signs and a matrix unit is the smallest thing a display has. The basis operator is not a unit of that basis: written in any matrix display it is a sum of four matrix units, and it is one operator, not a combination of four. The number $4$ belongs to the display and not to the algebra, while the two images belong to the algebra and to every algebra. A definition that named a matrix unit would be a definition of one display, and it would not survive the change of display that leaves every operator label where it was.
 
-The **cell the older reading took for the definition** is the case that matters, and it repays a careful look. That object is a right multiplier $-iR_u$ for an element $u$ with $u^2=-e_t$ and $\operatorname{Sc}u=0$. Three properties follow in a line each. Since $R_u^2=R_{u^2}=-\mathrm I$, the cell squares to $\mathrm I$. Its trace is zero, because $u$ is traceless. Its spectrum is $+1,+1,-1,-1$, so the projectors $\tfrac12(\mathrm I\pm iR_u)$ have rank two apiece and the split is balanced. A cell with square one, trace zero and a balanced spectrum is exactly what a chirality element should be, and it is a pure right multiplier. That is the whole point. Under the definition of this article the cell has the right slot; it is an example of one of the four labels, and an example cannot be the definition of the label. What it also is, and this is its limitation rather than its virtue, is an object built from a chosen element: choose another $u$ and the cell changes, while every label of every operator stays where it was.
+The **basis operator the older reading took for the definition** is the case that matters, and it repays a careful look. That object is a right multiplier $-iR_u$ for an element $u$ with $u^2=-e_t$ and $\operatorname{Sc}u=0$. Three properties follow in a line each. Since $R_u^2=R_{u^2}=-\mathrm I$, the basis operator squares to $\mathrm I$. Its trace is zero, because $u$ is traceless. Its spectrum is $+1,+1,-1,-1$, so the projectors $\tfrac12(\mathrm I\pm iR_u)$ have rank two apiece and the split is balanced. A basis operator with square one, trace zero and a balanced spectrum is exactly what a chirality element should be, and it is a pure right multiplier. That is the whole point. Under the definition of this article the basis operator has the right slot; it is an example of one of the four labels, and an example cannot be the definition of the label. What it also is, and this is its limitation rather than its virtue, is an object built from a chosen element: choose another $u$ and the basis operator changes, while every label of every operator stays where it was.
 
 One hypothesis must not be dropped in that computation, because it is false without it. The statement that $R_u$ has spectrum $+i,+i,-i,-i$ and trace zero for **any** $u$ with $u^2=-e_t$ fails at the central element $ie_t$, which satisfies the square condition and gives $R_{ie_t}=i\mathrm I$, a spectrum of $+i$ four times and a trace of $4i$. Tracelessness is the missing hypothesis, and it is what makes $R_u$ behave as a chirality element rather than as a scalar in disguise.
 
-The cell acts on the algebra as well as on the operator space, and that action is where the two component letters come from. For a traceless $u$ with $u^2=-e_t$ every element splits,
+The basis operator acts on the algebra as well as on the operator space, and that action is where the two component letters come from. For a traceless $u$ with $u^2=-e_t$ every element splits,
 
 $$
 \tilde X=\tilde X_L+\tilde X_R,\qquad R_u\tilde X_L=i\tilde X_L,\qquad R_u\tilde X_R=-i\tilde X_R,
 $$
 
-with each part of complex dimension two and no element but zero in both. A product takes the letter of its right factor, since $R_u(\tilde X\tilde Y)=\tilde X R_u(\tilde Y)$, and a left multiplication therefore keeps the letter. The letters belong to this cell, and they belong to the element rather than to the operator: a different $u$ gives a different pair of halves. That is why the split is a property of the chosen element, and why the operator label, which needs no element at all, is the more primitive notion.
+with each part of complex dimension two and no element but zero in both. A product takes the letter of its right factor, since $R_u(\tilde X\tilde Y)=\tilde X R_u(\tilde Y)$, and a left multiplication therefore keeps the letter. The letters belong to this basis operator, and they belong to the element rather than to the operator: a different $u$ gives a different pair of halves. That is why the split is a property of the chosen element, and why the operator label, which needs no element at all, is the more primitive notion.
 
 **Which operators keep a letter, and which change it.** The rule above settles the transport of the letters for the whole of the algebra, and the answer separates the two slots cleanly. Every left multiplier keeps the letter, so $P_R\,L(a)\,P_L=0$ for every $a$ and every traceless $u$ with $u^2=-e_t$. A central scalar is a left multiplier, so it keeps it too, and a term in the centre multiplies each half by itself and exchanges nothing. A right multiplier keeps the letter when $v$ commutes with $u$ and exchanges the two letters when $v$ anticommutes with it,
 $$
@@ -276,13 +276,13 @@ A sign, when the physics wants one, has to be chosen as an operator. Any $R_u$ w
 
 ## Summary
 
-Operator chirality is the side on which an operator multiplies. The left multipliers form a four-dimensional image, the right multipliers another, the two meet in the scalars and span seven of the sixteen dimensions, and the remaining nine directions multiply on neither side alone. An operator is labelled left, right, both, or neither; the scalar line is the third case, and a two-sided cell is the fourth.
+Operator chirality is the side on which an operator multiplies. The left multipliers form a four-dimensional image, the right multipliers another, the two meet in the scalars and span seven of the sixteen dimensions, and the remaining nine directions multiply on neither side alone. An operator is labelled left, right, both, or neither; the scalar line is the third case, and a two-sided basis operator is the fourth.
 
 Under the structure isomorphism $\Phi(a\otimes b)=L_aR_b$ the two sides are the two tensor factors and their overlap is the tensor of the two units. The exchange of the sides is the flip transported to the endomorphism algebra, $\sigma=\Phi\tau\Phi^{-1}$. It is intrinsic. It squares to the identity, reverses products, exchanges the two images and fixes the scalars. It carries every $L_a$ to $R_a$, preserves rank and length, and is not inner. It is the adjoint of the trace form, and in a basis where that form is diagonal it is the transpose through a sign matrix. Its fixed part is a ten-dimensional Jordan algebra and its negated part a six-dimensional Lie algebra, and the two are the symmetric and the exterior square.
 
 The quaternion conjugate is the second side-exchanger, $\natural L(a)\natural=R(a^{\natural})$. It differs from the swap in that it conjugates the parameters and reverses their order, and the sign in which the two differ is the origin of every phase the corpus obtains from a change of side.
 
-None of this needs a root, an idempotent, a Peirce decomposition, a Peirce basis, a spectrum, a spinor, the module $S$, an ideal, a Clifford algebra, a matrix unit of a display, or the cell the older reading used. That cell is the instructive case: a pure right multiplier with square one, trace zero and a balanced spectrum, hence an example of the right side and not the definition of chirality, and built from a chosen element besides. The one contact with the Peirce theory is an identity forced by a shared element, and it is an identity of two constructions and not of two notions.
+None of this needs a root, an idempotent, a Peirce decomposition, a Peirce basis, a spectrum, a spinor, the module $S$, an ideal, a Clifford algebra, a matrix unit of a display, or the basis operator the older reading used. That basis operator is the instructive case: a pure right multiplier with square one, trace zero and a balanced spectrum, hence an example of the right side and not the definition of chirality, and built from a chosen element besides. The one contact with the Peirce theory is an identity forced by a shared element, and it is an identity of two constructions and not of two notions.
 
 $$
 \boxed{\ \text{chirality}=\text{the side};\qquad X\in L(\mathbb{B}),\ \ X\in R(\mathbb{B}),\ \ X\in L(\mathbb{B})\cap R(\mathbb{B}),\ \ \text{or neither};\qquad \sigma=\Phi\tau\Phi^{-1},\quad \sigma(L_a)=R_a .\ }
@@ -294,7 +294,7 @@ $$
 |---|---|
 | $L(a)$, $L_a$ | the left multiplier, $\tilde X\mapsto a\tilde X$ |
 | $R(b)$, $R_b$ | the right multiplier, $\tilde X\mapsto\tilde Xb$ |
-| $L_aR_b$ | the cell, with a left and a right slot |
+| $L_aR_b$ | the basis operator, with a left and a right slot |
 | $L(\mathbb{B})$, $R(\mathbb{B})$ | the two images, four-dimensional, meeting in the centre |
 | left slot, right slot, both slots, no single side | operator chirality, a membership in the two images |
 | $\Phi(a\otimes b)=L_aR_b$ | the structure isomorphism $\mathbb{B}\otimes_{\mathbb{C}}\mathbb{B}\to\operatorname{End}_{\mathbb{C}}(\mathbb{B})$ |

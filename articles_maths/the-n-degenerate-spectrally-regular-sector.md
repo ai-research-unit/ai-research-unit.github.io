@@ -2,7 +2,7 @@
 
 ## Introduction
 
-This is cell $01$ of the four-sector arrangement of the two quadratic conditions
+This is sector $01$ of the four-sector arrangement of the two quadratic conditions
 
 $$
 \langle\tilde Q\rangle_{\natural}=Q_t^2+B^2,\qquad B^2=Q_x^2+Q_y^2+Q_z^2,
@@ -14,7 +14,7 @@ $$
 \Sigma_{01}=\mathcal{N}\setminus\mathcal S,
 $$
 
-and it is one of the two **mixed** sectors: the two cells on which the norm problem and the spectral problem give different answers. The vocabulary, the two cones and the naming convention are those of *N-Regularity and N-Degeneracy in the Biquaternion Algebra* and *The Spectrum*. The opposite corner $\Sigma_{00}$ is treated in *The N-Degenerate, Spectrally Degenerate Sector*.
+and it is one of the two **mixed** sectors: the two sectors on which the norm problem and the spectral problem give different answers. The vocabulary, the two cones and the naming convention are those of *N-Regularity and N-Degeneracy in the Biquaternion Algebra* and *The Spectrum*. The opposite corner $\Sigma_{00}$ is treated in *The N-Degenerate, Spectrally Degenerate Sector*.
 
 Throughout, $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$, with basis $e_t,\vec e_x,\vec e_y,\vec e_z$, $\vec e_k^2=-e_t$, and $\tilde Q=Q_te_t+\vec Q$; the conjugation is ${}^{\natural}$; the quaternionic norm is $\langle\tilde Q\rangle_{\natural}=\tilde Q^{\natural}\tilde Q$, central; and the product is the plain product unless stated otherwise. The null cone is $\mathcal{N}=\{N=0\}$; the spectral-degenerate cone is $\mathcal S=\{B^2=0\}$; **spectrally regular** means $B^2\neq0$.
 
@@ -352,7 +352,7 @@ with spectral idempotents $\tilde\Pi_\pm=(e_t\pm i\vec e_x)/2$, spectrum $\{2,0\
 | **$\natural$-regular, spectrally degenerate** $\Sigma_{10}$ | $\langle\tilde Q\rangle_{\natural}\neq0$, $B^2=0$ | units with a repeated eigenvalue, plus the scalar line minus $0$ | $\{Q_t\}$ | fails off the scalar line, one term on it | stays in $\mathbb{B}^\times$; can land in $\Sigma_{11}$ |
 | **doubly degenerate** $\Sigma_{00}$ | $\langle\tilde Q\rangle_{\natural}=0$, $B^2=0$ | non-zero nilpotents of index two, plus the origin | $\{0\}$ | fails off the origin | $0$ or $\Sigma_{01}$ |
 
-**The two mixed sectors.** $\Sigma_{01}$ and $\Sigma_{10}$ are the independence witnesses: $\Sigma_{01}$ is a zero divisor with a full eigenbasis, $\Sigma_{10}$ is a unit with none. Neither cone contains the other, and these are the cells that show it.
+**The two mixed sectors.** $\Sigma_{01}$ and $\Sigma_{10}$ are the independence witnesses: $\Sigma_{01}$ is a zero divisor with a full eigenbasis, $\Sigma_{10}$ is a unit with none. Neither cone contains the other, and these are the sectors that show it.
 
 **Position among the four sectors.** Sector $01$ is the **idempotent stratum** of the null cone: the elements $c\tilde\Pi$ with $c\neq0$ and $\tilde\Pi$ a non-trivial idempotent. It is the only sector on which the norm vanishes while the spectrum stays separated, so it is one of the two independence witnesses. The finer split inside $\Sigma_{10}$ and $\Sigma_{00}$ is by the minimal polynomial, not by the two predicates; it is recorded in *Relations between the N Norm and Spectral Regularity and Degeneracy*, §*The Chain of Invariants*.
 
@@ -376,7 +376,7 @@ with equality exactly when the element is normal: $\tilde Q\tilde Q^*=\tilde Q^*
 
 **One-sided operators.** Rank $2$, equal to $2Q_t$ times a projection, with kernel the corresponding annihilator plane. Neither multiplication is invertible on either side.
 
-**The "clean degenerate" cell.** It is the cell in which invertibility fails and nothing else does: the eigenvalues are separated, the Peirce decomposition relative to $\tilde Q$ exists and is unique, the annihilators are the two Peirce planes, and the only pathology is the zero eigenvalue, which is exactly the norm condition.
+**The "clean degenerate" sector.** It is the sector in which invertibility fails and nothing else does: the eigenvalues are separated, the Peirce decomposition relative to $\tilde Q$ exists and is unique, the annihilators are the two Peirce planes, and the only pathology is the zero eigenvalue, which is exactly the norm condition.
 
 ## The Generators, the Eigenvalues, and the Element
 

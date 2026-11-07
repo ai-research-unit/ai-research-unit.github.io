@@ -10,7 +10,7 @@ $$
 c_{\mu\nu\lambda} = \sum_\rho\bigl(t_{\mu\nu\lambda\rho} - i\varepsilon_{\mu\nu\lambda\rho}\bigr)k_\rho,
 $$
 
-where $L_{a}R_{b}\psi=a\psi b$ are the cells, $L_{e_\mu}R_{\vec e_{\nu(\mu)}}$ is the reference cell of the $\mu$-th coordinate, with $\nu(t)=x$ and $\nu(k)=y$ for $k=1,2,3$, and $L_{e_t}R_{\vec e_z}$ is the chirality cell, so that $t_{\mu\nu\lambda\rho} = \tfrac14\mathrm{tr}(L_{e_\mu}R_{\vec e_{\nu(\mu)}}L_{e_\nu}R_{\vec e_{\nu(\nu)}}L_{e_\lambda}R_{\vec e_{\nu(\lambda)}}L_{e_\rho}R_{\vec e_{\nu(\rho)}})$ and $\varepsilon_{\mu\nu\lambda\rho} = \tfrac14\mathrm{tr}(L_{e_t}R_{\vec e_z}L_{e_\mu}R_{\vec e_{\nu(\mu)}}L_{e_\nu}R_{\vec e_{\nu(\nu)}}L_{e_\lambda}R_{\vec e_{\nu(\lambda)}})$ are the traces of four and five reference cells, the unit phases of the cells cancelling in the trace, and $k_\mu$ is a neutral vector. The reference cells are the bare cells, of square $\pm1$; the physics articles of the relativistic quantum series use the scaled cells $iL_{e_\mu}R_{\vec e_{\nu(\mu)}}$ and $-iL_{e_t}R_{\vec e_z}$, and every statement below is a statement about the bare cells, in which the $i$'s are absent by construction. No single letter stands for a reference cell: the cell is written as its two multipliers. The composition
+where $L_{a}R_{b}\psi=a\psi b$ are the basis operators, $L_{e_\mu}R_{\vec e_{\nu(\mu)}}$ is the reference basis operator of the $\mu$-th coordinate, with $\nu(t)=x$ and $\nu(k)=y$ for $k=1,2,3$, and $L_{e_t}R_{\vec e_z}$ is the chirality basis operator, so that $t_{\mu\nu\lambda\rho} = \tfrac14\mathrm{tr}(L_{e_\mu}R_{\vec e_{\nu(\mu)}}L_{e_\nu}R_{\vec e_{\nu(\nu)}}L_{e_\lambda}R_{\vec e_{\nu(\lambda)}}L_{e_\rho}R_{\vec e_{\nu(\rho)}})$ and $\varepsilon_{\mu\nu\lambda\rho} = \tfrac14\mathrm{tr}(L_{e_t}R_{\vec e_z}L_{e_\mu}R_{\vec e_{\nu(\mu)}}L_{e_\nu}R_{\vec e_{\nu(\nu)}}L_{e_\lambda}R_{\vec e_{\nu(\lambda)}})$ are the traces of four and five reference basis operators, the unit phases of the basis operators cancelling in the trace, and $k_\mu$ is a neutral vector. The reference basis operators are the bare basis operators, of square $\pm1$; the physics articles of the relativistic quantum series use the scaled cells $iL_{e_\mu}R_{\vec e_{\nu(\mu)}}$ and $-iL_{e_t}R_{\vec e_z}$, and every statement below is a statement about the bare basis operators, in which the $i$'s are absent by construction. No single letter stands for a reference basis operator: it is written as its two multipliers. The composition
 
 $$
 (G \star H)_\lambda = \sum_{\mu,\nu}G_\mu\, c_{\mu\lambda\nu} H_\nu
@@ -140,11 +140,11 @@ $$
 
 A single product is a pure tensor; the products form the seven-dimensional cone $\operatorname{rank}c(M)\le1$, and a general element is a sum of at most four, with $\ell(M)=\operatorname{rank}c(M)$.
 
-$\gamma_5$ is the reference-frame cell of the chirality $\Gamma$; the central grading $\chi=i\tilde{Ζ}_{\mathrm{ad}}$ — the difference of the two central idempotents of the complexified algebra, so $\chi^2=e_t$ — is a different object, represented by $\gamma_5$ on the Dirac module.
+$\gamma_5$ is the reference-frame basis operator of the chirality $\Gamma$; the central grading $\chi=i\tilde{Ζ}_{\mathrm{ad}}$ — the difference of the two central idempotents of the complexified algebra, so $\chi^2=e_t$ — is a different object, represented by $\gamma_5$ on the Dirac module.
 
-The dictionary is complex-linear; over $\mathbb{R}$ the products span $\mathrm{Cl}_{1,3}(\mathbb{R})\cong M_2(\mathbb{H})$ and the cells span $\mathrm{Cl}_{3,1}(\mathbb{R})\cong M_4(\mathbb{R})$.
+The dictionary is complex-linear; over $\mathbb{R}$ the products span $\mathrm{Cl}_{1,3}(\mathbb{R})\cong M_2(\mathbb{H})$ and the basis operators span $\mathrm{Cl}_{3,1}(\mathbb{R})\cong M_4(\mathbb{R})$.
 
-**The identities the bodies cite.** In the $\gamma$ reading, with $\varepsilon=(1,-1,-1,-1)$ the sign vector of the cells,
+**The identities the bodies cite.** In the $\gamma$ reading, with $\varepsilon=(1,-1,-1,-1)$ the sign vector of the basis operators,
 $$
 \{\gamma_\mu,\gamma_\nu\}=2\varepsilon_\mu\delta_{\mu\nu}I_4,\qquad
 (\gamma_k)^2=-I_4,\qquad
@@ -181,9 +181,9 @@ The identities Jacobi, Jordan, the derivation identity, the fundamental identity
 | $G, H, K$ | Elements of $V$ |
 | $G \star H$ | The composition, $(G\star H)_\lambda = \sum_{\mu,\nu}G_\mu c_{\mu\lambda\nu}H_\nu$ |
 | $c_{\mu\nu\lambda} = \sum_\rho(t_{\mu\nu\lambda\rho} - i\varepsilon_{\mu\nu\lambda\rho})k_\rho$ | Structure constants |
-| $t_{\mu\nu\lambda\rho} = \tfrac14\mathrm{tr}(L_{e_\mu}R_{\vec e_{\nu(\mu)}}L_{e_\nu}R_{\vec e_{\nu(\nu)}}L_{e_\lambda}R_{\vec e_{\nu(\lambda)}}L_{e_\rho}R_{\vec e_{\nu(\rho)}})$ | Symmetric trace of four reference cells |
-| $\varepsilon_{\mu\nu\lambda\rho} = \tfrac14\mathrm{tr}(L_{e_t}R_{\vec e_z}L_{e_\mu}R_{\vec e_{\nu(\mu)}}L_{e_\nu}R_{\vec e_{\nu(\nu)}}L_{e_\lambda}R_{\vec e_{\nu(\lambda)}})$ | Totally antisymmetric symbol, the trace of five reference cells |
-| $L_{e_\mu}R_{\vec e_{\nu(\mu)}}$, $L_{e_t}R_{\vec e_z}$ | The reference cells of the four coordinates and of the chirality, in the units $e_t,\vec e_x,\vec e_y,\vec e_z$ of $\mathbb{B}$; $L_{a}R_{b}\psi=a\psi b$, and $\nu(t)=x$, $\nu(k)=y$ |
+| $t_{\mu\nu\lambda\rho} = \tfrac14\mathrm{tr}(L_{e_\mu}R_{\vec e_{\nu(\mu)}}L_{e_\nu}R_{\vec e_{\nu(\nu)}}L_{e_\lambda}R_{\vec e_{\nu(\lambda)}}L_{e_\rho}R_{\vec e_{\nu(\rho)}})$ | Symmetric trace of four reference basis operators |
+| $\varepsilon_{\mu\nu\lambda\rho} = \tfrac14\mathrm{tr}(L_{e_t}R_{\vec e_z}L_{e_\mu}R_{\vec e_{\nu(\mu)}}L_{e_\nu}R_{\vec e_{\nu(\nu)}}L_{e_\lambda}R_{\vec e_{\nu(\lambda)}})$ | Totally antisymmetric symbol, the trace of five reference basis operators |
+| $L_{e_\mu}R_{\vec e_{\nu(\mu)}}$, $L_{e_t}R_{\vec e_z}$ | The reference basis operators of the four coordinates and of the chirality, in the units $e_t,\vec e_x,\vec e_y,\vec e_z$ of $\mathbb{B}$; $L_{a}R_{b}\psi=a\psi b$, and $\nu(t)=x$, $\nu(k)=y$ |
 | $k_\mu$ | Neutral vector, the unit of the composition |
 | $G \bullet H = \tfrac12(G\star H + H\star G)$ | Jordan (symmetric) product |
 | $[G,H] = \tfrac12(G\star H - H\star G)$ | Lie (antisymmetric) bracket |

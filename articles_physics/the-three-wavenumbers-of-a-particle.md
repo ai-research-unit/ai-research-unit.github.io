@@ -536,7 +536,7 @@ so the spacing of the fringes is the distance per radian, magnified by the geome
 
 **It is the ruler of a bound orbit.** A closed orbit holds a whole number of turns of phase, $r=n/k_{\Phi}$, so the distance $1/k_{\Phi}$ is the step of the ladder of bound states. For hydrogen in the ground state the step is the orbit itself, and the quantization is the statement that the orbit is one step long.
 
-**It is the coherence length of an ensemble.** A thermal ensemble has its wave numbers spread over $k_T=\sqrt{2\pi mk_BT}\frac{k_m}{m\,c}$, so the distance over which its phase stays defined is $1/k_T$: $0.685\ \mathrm{nm}$ for the electron at $300\ \mathrm{K}$ and $0.0160\ \mathrm{nm}$ for the neutron. A gas is quantum when the interparticle spacing reaches that distance, and the criterion $n/k_T^{3}\sim1$ is the statement that the cells of size $1/k_T$ have filled the volume.
+**It is the coherence length of an ensemble.** A thermal ensemble has its wave numbers spread over $k_T=\sqrt{2\pi mk_BT}\frac{k_m}{m\,c}$, so the distance over which its phase stays defined is $1/k_T$: $0.685\ \mathrm{nm}$ for the electron at $300\ \mathrm{K}$ and $0.0160\ \mathrm{nm}$ for the neutron. A gas is quantum when the interparticle spacing reaches that distance, and the criterion $n/k_T^{3}\sim1$ is the statement that the basis operators of size $1/k_T$ have filled the volume.
 
 ### Interference and Diffraction
 
@@ -598,7 +598,7 @@ $$
 
 For the electron at $300\ \mathrm{K}$ this is $1.460\times10^{9}\ \mathrm{m^{-1}}$, with an ordinary wavelength of $4.30\ \mathrm{nm}$; for the neutron, $6.261\times10^{10}\ \mathrm{m^{-1}}$ and $0.100\ \mathrm{nm}$.
 
-**The degeneracy criterion is a count of cells per particle.** A gas is quantum when the volume per particle is comparable to the cube of the inverse wave number:
+**The degeneracy criterion is a count of basis operators per particle.** A gas is quantum when the volume per particle is comparable to the cube of the inverse wave number:
 
 $$
 \dfrac{n}{k_T^{3}} \sim 1 .

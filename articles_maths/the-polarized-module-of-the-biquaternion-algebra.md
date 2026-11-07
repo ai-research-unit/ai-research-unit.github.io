@@ -353,7 +353,7 @@ The two spinor spaces $S_\pm=\mathbb{B}\tilde\Pi_\pm$ are the two Peirce carrier
 
 A spinor is an element of one of the two spaces. The family splits each space canonically into a diagonal line and a mixed line, $S_{+}=\mathbb{C}\tilde\Pi_{+}\oplus\mathbb{B}_{-+}$ and $S_{-}=\mathbb{B}_{+-}\oplus\mathbb{C}\tilde\Pi_{-}$. A Peirce basis chooses a generator of the mixed line and gives the adapted coordinates; the gauge is the reciprocal scaling of the two mixed units. The ladder is left multiplication by the mixed units, and its composites are the two projections. The intrinsic data of a single spinor are the diagonal coefficient and the element of the mixed line; the mixed coordinate is gauge-dependent. The Peirce index is the right index. Right multiplication preserves a spinor space under a corner condition and exchanges the two spaces by the mixed units; the star does not exchange them.
 
-The index that the choice supplies is a copy index and not a chirality: the two halves are isomorphic, so no observation inside the algebra distinguishes them, and the pair is moved by the automorphisms of the module. Chirality is carried by the conjugate pair and by the cell $\mathsf{V}_{\mathrm{vol}}=-iR_{\vec e_z}$, not by this splitting.
+The index that the choice supplies is a copy index and not a chirality: the two halves are isomorphic, so no observation inside the algebra distinguishes them, and the pair is moved by the automorphisms of the module. Chirality is carried by the conjugate pair and by the basis operator $\mathsf{V}_{\mathrm{vol}}=-iR_{\vec e_z}$, not by this splitting.
 
 ## Summary of Notation
 

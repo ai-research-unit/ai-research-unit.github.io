@@ -26,7 +26,7 @@ Every display below is an element, a product of elements, or a conjugation of on
 
 **The two operators.** The gradient $\tilde\nabla$ and the d'Alembertian $\Box$ are the series operators (*Operator and Calculus Conventions*); the article names them and does not restate them. It uses one property, which the same article fixes: the product of the gradient with its natural conjugate is the d'Alembertian. That product is the sense in which the two first-order operators of the pair below are square roots of $\Box$, and it is a convention of the series, not a result of this article.
 
-**The letters.** The cell of a frame is the right multiplication by the third unit with the phase $-i$, a pure right multiplier whose side is the right slot,
+**The letters.** The basis operator of a frame is the right multiplication by the third unit with the phase $-i$, a pure right multiplier whose side is the right slot,
 $$
 \tilde{Ξ}_{\mathrm{sp}}\longmapsto-i\,\tilde{Ξ}_{\mathrm{sp}}\,\vec e_z ,
 $$
@@ -207,11 +207,11 @@ $$
 
 In the notation of the body the dictionary is one line: $\gamma_\mu=i c_\mu$ and $\gamma_5=\Gamma$. A single product is a pure tensor; the products form the seven-dimensional cone $\operatorname{rank}c(M)\le1$, and a general element is a sum of at most four, with $\ell(M)=\operatorname{rank}c(M)$.
 
-$\gamma_5$ is the reference-frame cell of the chirality $\Gamma$; the central grading $\chi=i\tilde{Ζ}_{\mathrm{ad}}$ — the difference of the two central idempotents of the complexified algebra, so $\chi^2=e_t$ — is a different object, represented by $\gamma_5$ on the Dirac module.
+$\gamma_5$ is the reference-frame basis operator of the chirality $\Gamma$; the central grading $\chi=i\tilde{Ζ}_{\mathrm{ad}}$ — the difference of the two central idempotents of the complexified algebra, so $\chi^2=e_t$ — is a different object, represented by $\gamma_5$ on the Dirac module.
 
-The dictionary is complex-linear; over $\mathbb{R}$ the products span $\mathrm{Cl}_{1,3}(\mathbb{R})\cong M_2(\mathbb{H})$ and the cells span $\mathrm{Cl}_{3,1}(\mathbb{R})\cong M_4(\mathbb{R})$.
+The dictionary is complex-linear; over $\mathbb{R}$ the products span $\mathrm{Cl}_{1,3}(\mathbb{R})\cong M_2(\mathbb{H})$ and the basis operators span $\mathrm{Cl}_{3,1}(\mathbb{R})\cong M_4(\mathbb{R})$.
 
-**The identities the bodies cite.** In the $\gamma$ reading, with $\varepsilon=(1,-1,-1,-1)$ the sign vector of the cells,
+**The identities the bodies cite.** In the $\gamma$ reading, with $\varepsilon=(1,-1,-1,-1)$ the sign vector of the basis operators,
 $$
 \{\gamma_\mu,\gamma_\nu\}=2\varepsilon_\mu\delta_{\mu\nu}I_4,\qquad
 (\gamma_k)^2=-I_4,\qquad

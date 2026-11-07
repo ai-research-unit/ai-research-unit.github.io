@@ -2,7 +2,7 @@
 
 ## Introduction
 
-Two quadratic conditions single out the spectral behaviour of a quaternion. The first is the quaternion norm $|\tilde q|^2=\tilde q\tilde q^{\natural}=q_t^2+|\vec q|^2$, which is multiplicative and positive definite. The second is the squared length $|\vec q|^2$ of the vector part, which is the discriminant of the eigenvalue problem. This article compares the two forms, proves that they are independent, identifies the cells they cut in $\mathbb H$, and shows that the real axis minus the origin is precisely the set where norm regularity and spectral degeneracy coexist. The origin is the only doubly degenerate point, and the norm-degenerate set is $\{0\}$, which contains no zero divisor.
+Two quadratic conditions single out the spectral behaviour of a quaternion. The first is the quaternion norm $|\tilde q|^2=\tilde q\tilde q^{\natural}=q_t^2+|\vec q|^2$, which is multiplicative and positive definite. The second is the squared length $|\vec q|^2$ of the vector part, which is the discriminant of the eigenvalue problem. This article compares the two forms, proves that they are independent, identifies the sectors they cut in $\mathbb H$, and shows that the real axis minus the origin is precisely the set where norm regularity and spectral degeneracy coexist. The origin is the only doubly degenerate point, and the norm-degenerate set is $\{0\}$, which contains no zero divisor.
 
 The algebra is [Quaternion Algebra](quaternion-algebra.html); the norm and invertibility are [Norm and Invertibility in the Quaternion Algebra](norm-and-invertibility-in-the-quaternion-algebra.html); the spectral criterion is [Spectral Regularity and Degeneracy in the Quaternion Algebra](spectral-regularity-and-degeneracy-in-the-quaternion-algebra.html); the sectors are [The Three Sectors of the Quaternion Algebra](the-three-sectors-of-the-quaternion-algebra.html); the comparison of the eight algebras is [Comparison of the Algebras](comparison-of-the-algebras.html).
 
@@ -60,7 +60,7 @@ consists exactly of the nonzero real quaternions. Every element is norm-regular 
 
 *Proof.* The matrix is scalar and $q_t\ne0$; the minimal polynomial is linear and squarefree.
 
-**Remark (the only coexistence).** $\Sigma_{10}$ is the only cell in which a quaternion is norm-regular and spectrally degenerate. Its elements are units, so spectral degeneracy here is neither non-invertibility nor defect; it is the collapse of the two eigenvalues onto the real axis. The comparison with the split and biquaternion algebras, where norm-regular spectrally degenerate elements can be defective, is in [Spectral Regularity and Degeneracy in the Quaternion Algebra](spectral-regularity-and-degeneracy-in-the-quaternion-algebra.html).
+**Remark (the only coexistence).** $\Sigma_{10}$ is the only sector in which a quaternion is norm-regular and spectrally degenerate. Its elements are units, so spectral degeneracy here is neither non-invertibility nor defect; it is the collapse of the two eigenvalues onto the real axis. The comparison with the split and biquaternion algebras, where norm-regular spectrally degenerate elements can be defective, is in [Spectral Regularity and Degeneracy in the Quaternion Algebra](spectral-regularity-and-degeneracy-in-the-quaternion-algebra.html).
 
 ## The Origin
 
@@ -123,7 +123,7 @@ The partition, its dimensions and its closures are the subject of [The Three Sec
 
 The quaternion norm $q_t^2+s^2$ and the spectral form $s^2$ are independent quadratic forms: neither is proportional to the other, and neither determines the other. The norm is positive definite with radical $\{0\}$; the spectral form is positive semidefinite of rank three with radical the real axis. Hence the norm-degenerate set is $\{0\}$ and the spectral-degenerate set is $\mathbb R$, with $\{0\}\subsetneq\mathbb R$. The real axis minus the origin is exactly the set of norm-regular, spectrally degenerate elements; these are the nonzero real scalars, all units and all semisimple. The origin is the only doubly degenerate point, the only non-unit and the only element of the norm-degenerate set, which contains no zero divisor.
 
-Among the eight, $\mathbb H$ is the only noncommutative division algebra with both forms positive definite. The cell $\Sigma_{01}$ is empty for $\mathbb R,\mathbb C,\mathbb{C}_{\mathrm{dln}},\mathbb H$ and nonempty for $\mathbb{C}_{\mathrm{spl}},\mathbb{H}_{\mathrm{spl}},\mathbb B$. The chain
+Among the eight, $\mathbb H$ is the only noncommutative division algebra with both forms positive definite. The sector $\Sigma_{01}$ is empty for $\mathbb R,\mathbb C,\mathbb{C}_{\mathrm{dln}},\mathbb H$ and nonempty for $\mathbb{C}_{\mathrm{spl}},\mathbb{H}_{\mathrm{spl}},\mathbb B$. The chain
 $$\tilde q=0\iff|\tilde q|^2=0\implies s^2=0\iff\tilde q\in\mathbb R$$
 has one strict implication, whose failure is $\mathbb R^\times$.
 
@@ -135,7 +135,7 @@ has one strict implication, whose failure is $\mathbb R^\times$.
 | $|\tilde q|=\sqrt{\langle\tilde q\rangle_{\natural}}$ | the modulus |
 | $s=|\vec q|$ | the length of the vector part |
 | $s^2=|\vec q|^2$ | the spectral form |
-| $\Sigma_{ij}$ | the cell with norm truth value $i$ and spectral truth value $j$ |
+| $\Sigma_{ij}$ | the sector with norm truth value $i$ and spectral truth value $j$ |
 | $\Sigma_{10}=\mathbb R^\times$ | norm-regular, spectrally degenerate |
 | $\Sigma_{00}=\{0\}$ | doubly degenerate |
 | $\Sigma_{01}=\varnothing$ | norm-degenerate, spectrally regular |

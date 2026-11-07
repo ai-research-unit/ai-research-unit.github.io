@@ -52,7 +52,7 @@ The automorphism group and the derivation space are both trivial for $\mathbb{R}
 | $\mathrm{SL}_2(\mathbb{R}),\mathrm{SL}(2,\mathbb{C})_{\mathbb{R}},\mathrm{SO}(1,3),\mathrm{SO}(2,1),\mathrm{SO}(4)$ | the derivation spaces of the four higher columns |
 | $SO(3)\times SO(3)$ | the inner automorphism group of $\mathbb{B}_{\mathrm{spl}}$ |
 | $SO^{+}(2,1),O(2,1),O(1,3)$ | the identity component and the full Lorentz groups of signatures $(2,1)$ and $(1,3)$ |
-| `—` | an empty cell, stated and never filled |
+| `—` | an empty entry, stated and never filled |
 
 ## Further Reading
 

@@ -191,7 +191,7 @@ The biquaternion algebra $M_2(\mathbb{C})$ has a genuine defective cone at $B^{2
 ## Further Reading
 
 - [Relations between the Reduced Norm and Spectral Regularity and Degeneracy](relations-between-the-reduced-norm-and-spectral-regularity-and-degeneracy.html), for the comparison of $Q_+Q_-$ with $(Q_+-Q_-)^{2}$, the independence of the conditions and the chain of invariants.
-- [The Four Sectors of the Reduced Biquaternion Algebra](the-four-sectors-of-the-reduced-biquaternion-algebra.html), for the four nonempty cells, their dimensions and their closures.
+- [The Four Sectors of the Reduced Biquaternion Algebra](the-four-sectors-of-the-reduced-biquaternion-algebra.html), for the four nonempty sectors, their dimensions and their closures.
 - [Eigenvalue Decomposition and Eigenbasis of a Reduced Biquaternion](eigenvalue-decomposition-and-eigenbasis-of-a-reduced-biquaternion.html), for the eigenprojections, the Peirce decomposition and the eigenbasis.
 - [$M_2(\mathbb{C})$ Reduced Representation](m2c-reduced-representation.html), for the $2\times2$ and $4\times4$ readings of the same decomposition.
 - [Worked Examples of Eigenbasis a Reduced Biquaternion](worked-examples-of-eigenbasis-a-reduced-biquaternion.html), for the computed cases.

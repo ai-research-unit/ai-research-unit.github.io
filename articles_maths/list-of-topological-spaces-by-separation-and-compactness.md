@@ -90,7 +90,7 @@ The implications among the conditions are these, and each is recorded with the a
 
 ## The Matrix of the Standard Spaces
 
-The following table records the compactness and countability conditions satisfied by the spaces of the corpus. A blank cell is not a claim of failure; it records that the corpus does not establish the condition for that space.
+The following table records the compactness and countability conditions satisfied by the spaces of the corpus. A blank entry is not a claim of failure; it records that the corpus does not establish the condition for that space.
 
 | Space | compact | countably compact | Lindelöf | $\sigma$-compact | locally compact | paracompact |
 |---|---|---|---|---|---|---|

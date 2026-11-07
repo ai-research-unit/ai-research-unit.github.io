@@ -193,7 +193,7 @@ Finally, the standing **empirical-contact** gap applies with full force. Nothing
 
 The Pauli and gamma formulation is legacy: the reasons are explained in the article *Why AXF Matrices instead of Pauli and Gamma Matrices*. The generators carry no frame label: $\gamma_\mu$ is one set of matrices, and the frame is named on the coordinate.
 
-The gammas are a frame of $\mathrm{Cl}_{1,3}(\mathbb{C})=M_4(\mathbb{C})$, not a different algebra. They are the frame cells of the body written as letters, and this section is the only place in the article where they appear: every section above is written in cells.
+The gammas are a frame of $\mathrm{Cl}_{1,3}(\mathbb{C})=M_4(\mathbb{C})$, not a different algebra. They are the frame basis operators of the body written as letters, and this section is the only place in the article where they appear: every section above is written in basis operators.
 
 Here $L_a$ and $R_b$ are the left and right multiplications, $L_a\tilde{Ξ}_{\mathrm{sp}}=a\tilde{Ξ}_{\mathrm{sp}}$ and $R_b\tilde{Ξ}_{\mathrm{sp}}=\tilde{Ξ}_{\mathrm{sp}} b$, and $c(M)$ is the coefficient matrix of $M$ in the basis of the sixteen products.
 
@@ -225,7 +225,7 @@ $$
 
 The time gamma has one multiplier, and its minus cancels $i^{2}=-1$; the spatial gammas have two, whose two minus signs multiply to $+I_4$ and leave $i^{2}=-1$ standing. The products of distinct gammas anticommute, so the frame obeys $\{\gamma_\mu,\gamma_\nu\}=2\varepsilon_\mu\delta_{\mu\nu}I_4$ with $\varepsilon=(1,-1,-1,-1)$.
 
-The fifth gamma is not a fifth frame vector but their product. The four defining $i$'s contribute $i^{4}=1$ and the cells contribute $\gamma_0\gamma_1\gamma_2\gamma_3=-R_{\mathrm{pau},\vec e_z}$, so
+The fifth gamma is not a fifth frame vector but their product. The four defining $i$'s contribute $i^{4}=1$ and the basis operators contribute $\gamma_0\gamma_1\gamma_2\gamma_3=-R_{\mathrm{pau},\vec e_z}$, so
 
 $$
 i\,\gamma_0\gamma_1\gamma_2\gamma_3 \;=\; -iR_{\mathrm{pau},\vec e_z} \;=\; \gamma_5 ,
@@ -237,17 +237,17 @@ $$
 i\,\gamma_0\gamma_1\gamma_2\gamma_3 \;=\; -iR_{\mathrm{axf},\vec e_z} \;=\; \gamma_5 ,
 $$
 
-the chirality cell of the neutrality section.
+the chirality basis operator of the neutrality section.
 
 **The charge operator in gammas.** With $\gamma_5=P_R-P_L$ the two projectors read $P_L=\tfrac12(I_4-\gamma_5)$ and $P_R=\tfrac12(I_4+\gamma_5)$, so $Ϙ=ϙ_LP_L+ϙ_RP_R$ is diagonal in the gamma grading and the neutrality constraint $Ϙ\tilde{Ξ}_{\mathrm{sp}}=0$ is the statement that the neutral state lies in one chirality eigenspace of $\gamma_5$.
 
-Two objects must not be confused here. $\gamma_5$ is the reference-frame cell of the chirality $\Gamma=-iR_{\mathrm{pau},\vec e_z}$. The central grading is $\chi=i\tilde{Ζ}_{\mathrm{ad}}$, with $\tilde{Ζ}_{\mathrm{ad}}$ the central root of $-e_t$, so that $\xi^{2}=i^{2}\tilde{Ζ}_{\mathrm{ad}}^{2}=(-1)(-e_t)=e_t$; $\xi$ is also the difference $e_+-e_-$ of the two central idempotents. It is a different object, central and not an element of $\mathbb{B}$, and $\gamma_5$ is only its representative on the Dirac module.
+Two objects must not be confused here. $\gamma_5$ is the reference-frame basis operator of the chirality $\Gamma=-iR_{\mathrm{pau},\vec e_z}$. The central grading is $\chi=i\tilde{Ζ}_{\mathrm{ad}}$, with $\tilde{Ζ}_{\mathrm{ad}}$ the central root of $-e_t$, so that $\xi^{2}=i^{2}\tilde{Ζ}_{\mathrm{ad}}^{2}=(-1)(-e_t)=e_t$; $\xi$ is also the difference $e_+-e_-$ of the two central idempotents. It is a different object, central and not an element of $\mathbb{B}$, and $\gamma_5$ is only its representative on the Dirac module.
 
 A single product is a pure tensor; the products form the seven-dimensional cone $\operatorname{rank}c(M)\le1$, and a general element is a sum of at most four, with $\ell(M)=\operatorname{rank}c(M)$.
 
-The dictionary is complex-linear; over $\mathbb{R}$ the products span $\mathrm{Cl}_{1,3}(\mathbb{R})\cong M_2(\mathbb{H})$ and the cells span $\mathrm{Cl}_{3,1}(\mathbb{R})\cong M_4(\mathbb{R})$.
+The dictionary is complex-linear; over $\mathbb{R}$ the products span $\mathrm{Cl}_{1,3}(\mathbb{R})\cong M_2(\mathbb{H})$ and the basis operators span $\mathrm{Cl}_{3,1}(\mathbb{R})\cong M_4(\mathbb{R})$.
 
-**The display.** Every array printed in this section is given twice: in the Peirce display first, labelled $\mathrm{pau}$, whose arrays are the ones the literature prints, and in the axis-free display after it, labelled $\mathrm{axf}$, which is the display of the body and of the corpus. The two are carried into one another by $L_{\mathrm{axf},e_\mu}=C_{\Pi}L_{\mathrm{pau},e_\mu}C_{\Pi}^{-1}$, and a conjugation by $C_{\Pi}$ changes no product, no anticommutator, no trace and no determinant, so every identity of the section holds in both. An array is a statement about one display; a cell named in the running text keeps the Peirce label, and its axis-free array is the conjugate. The label names the array and not the operator.
+**The display.** Every array printed in this section is given twice: in the Peirce display first, labelled $\mathrm{pau}$, whose arrays are the ones the literature prints, and in the axis-free display after it, labelled $\mathrm{axf}$, which is the display of the body and of the corpus. The two are carried into one another by $L_{\mathrm{axf},e_\mu}=C_{\Pi}L_{\mathrm{pau},e_\mu}C_{\Pi}^{-1}$, and a conjugation by $C_{\Pi}$ changes no product, no anticommutator, no trace and no determinant, so every identity of the section holds in both. An array is a statement about one display; a basis operator named in the running text keeps the Peirce label, and its axis-free array is the conjugate. The label names the array and not the operator.
 
 ## Summary
 

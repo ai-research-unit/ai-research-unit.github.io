@@ -142,7 +142,7 @@ The problem is not that $\bar\theta$ is nonzero but that it is unnaturally small
 
 ## The Chiral Rotation and the Invariance of the Physical Parameter
 
-The reason $\bar\theta$ and not $\theta$ is the physical parameter is the anomaly. The common axial rotation of the quark fields multiplies the two values of the subscript by opposite central phases,
+The reason $\bar\theta$ and not $\theta$ is the physical parameter is the anomaly. The common axial rotation of the quark fields multiplies the two parts named by the subscript by opposite central phases,
 
 $$
 \tilde{Ξ}_{\mathrm{sp},L}\longmapsto \exp(-i\alpha)\tilde{Ξ}_{\mathrm{sp},L} ,

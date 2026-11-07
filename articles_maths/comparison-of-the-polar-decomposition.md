@@ -146,7 +146,7 @@ The decompositions fall into the definite series $\mathbb{R}, \mathbb{C}, \mathb
 | $B_+$ | the Hermitian positive subspace of $\mathbb{B}$ carrying the hyperbolic rotation |
 | $\mathrm{U}(1)$ | the rotor of $\mathbb{H}_{\mathrm{spl}}$ from the elliptic direction $\vec e_x$ |
 | $N$ | the norm of the algebra |
-| `—` | an empty cell, stated and never filled |
+| `—` | an empty entry, stated and never filled |
 
 ## Further Reading
 

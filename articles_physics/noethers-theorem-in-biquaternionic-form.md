@@ -438,7 +438,7 @@ expresses the symmetry of the energy–momentum tensor together with the conserv
 
 The Pauli and gamma formulation is legacy: the reasons are explained in the article *Why AXF Matrices instead of Pauli and Gamma Matrices*. The generators carry no frame label: $\gamma_\mu$ is one set of matrices, and the frame is named on the coordinate.
 
-The gammas are a frame of $\mathrm{Cl}_{1,3}(\mathbb{C})=M_4(\mathbb{C})$, not a different algebra. The two-sided cells act on the module by $L_a\tilde{Ξ}_{\mathrm{sp}}=a\tilde{Ξ}_{\mathrm{sp}}$ and $R_b\tilde{Ξ}_{\mathrm{sp}}=\tilde{Ξ}_{\mathrm{sp}} b$, with $L_aR_bL_cR_d=L_{ac}R_{db}$, and the frame of the article is
+The gammas are a frame of $\mathrm{Cl}_{1,3}(\mathbb{C})=M_4(\mathbb{C})$, not a different algebra. The two-sided basis operators act on the module by $L_a\tilde{Ξ}_{\mathrm{sp}}=a\tilde{Ξ}_{\mathrm{sp}}$ and $R_b\tilde{Ξ}_{\mathrm{sp}}=\tilde{Ξ}_{\mathrm{sp}} b$, with $L_aR_bL_cR_d=L_{ac}R_{db}$, and the frame of the article is
 
 $$
 \gamma_0=iL_{\mathrm{pau},e_t}R_{\mathrm{pau},\vec e_x},\quad
@@ -458,7 +458,7 @@ $$
 \gamma_5=-iL_{\mathrm{axf},e_t}R_{\mathrm{axf},\vec e_z} .
 $$
 
-**The body's objects under their gamma names.** Because $L_{\mathrm{pau},e_t}$ is the identity, $\gamma_5=-iR_{\mathrm{pau},\vec e_z}$: the two-valued chirality of the body has the gamma-five cell as its display. The generator cell of the coordinate $x_\mu$ is $\gamma_\mu$, so the vector current of the body is $\tilde{Ξ}_{\mathrm{sp}}^{\dagger}iR_{\mathrm{axf},\vec e_x}\gamma_\mu\tilde{Ξ}_{\mathrm{sp}}$, and the Dirac adjoint is $\tilde{Ξ}_{\mathrm{sp}}^{\dagger}\gamma_0$, since $\gamma_0=iR_{\mathrm{pau},\vec e_x}$. The axial current's cell is a product of two frame cells, and the two units $\vec e_z$ and $\vec e_{\tau(\mu)}$ of the body's axial current are exactly that product:
+**The body's objects under their gamma names.** Because $L_{\mathrm{pau},e_t}$ is the identity, $\gamma_5=-iR_{\mathrm{pau},\vec e_z}$: the two-valued chirality of the body has the gamma-five basis operator as its display. The generator basis operator of the coordinate $x_\mu$ is $\gamma_\mu$, so the vector current of the body is $\tilde{Ξ}_{\mathrm{sp}}^{\dagger}iR_{\mathrm{axf},\vec e_x}\gamma_\mu\tilde{Ξ}_{\mathrm{sp}}$, and the Dirac adjoint is $\tilde{Ξ}_{\mathrm{sp}}^{\dagger}\gamma_0$, since $\gamma_0=iR_{\mathrm{pau},\vec e_x}$. The axial current's basis operator is a product of two frame basis operators, and the two units $\vec e_z$ and $\vec e_{\tau(\mu)}$ of the body's axial current are exactly that product:
 
 $$
 \bigl(iL_{\mathrm{pau},e_\mu}R_{\mathrm{pau},\vec e_{\tau(\mu)}}\bigr)\bigl(-iR_{\mathrm{pau},\vec e_z}\bigr)
@@ -486,9 +486,9 @@ $$
 i\,\gamma_\mu = -L_{\mathrm{axf},e_\mu}R_{\mathrm{axf},\vec e_{\tau(\mu)}} ,
 $$
 
-by $i^2=-1$: multiplying a generator cell by $i$ trades it for a plain one, which is why a product of four generator cells carries $i^4=+1$ and no residual unit. Under the same identity the mass term of the two-sided equation, $-mi\,\bar F\vec e_z$ in the body, is $m\,\bar F\gamma_5$ in the frame: right multiplication by $\vec e_z$ is the cell $i\gamma_5$, so $(-mi)(i\gamma_5)\bar F=-m\,i^2\gamma_5\bar F=+m\,\gamma_5\bar F$.
+by $i^2=-1$: multiplying a generator basis operator by $i$ trades it for a plain one, which is why a product of four generator basis operators carries $i^4=+1$ and no residual unit. Under the same identity the mass term of the two-sided equation, $-mi\,\bar F\vec e_z$ in the body, is $m\,\bar F\gamma_5$ in the frame: right multiplication by $\vec e_z$ is the basis operator $i\gamma_5$, so $(-mi)(i\gamma_5)\bar F=-m\,i^2\gamma_5\bar F=+m\,\gamma_5\bar F$.
 
-**The central grading.** The cell $\gamma_5$ is not the grading itself. The central grading $\xi_{\mathrm{ad}}=i\tilde{Ζ}_{\mathrm{ad}}$ — the difference of the two central idempotents of the complexified algebra, with $\tilde{Ζ}_{\mathrm{ad}}^2=-e_t$ and so $\xi_{\mathrm{ad}}^2=e_t$ — is a different object, represented by $\gamma_5$ on the Dirac module. That is how the two Dirac equations meet: the one-sided pair carries $\xi_{\mathrm{ad}}$ as a central sign, while the mass of the two-sided equation is a right multiplication by the chirality cell, and the cell is the representative of the sign on the module.
+**The central grading.** The basis operator $\gamma_5$ is not the grading itself. The central grading $\xi_{\mathrm{ad}}=i\tilde{Ζ}_{\mathrm{ad}}$ — the difference of the two central idempotents of the complexified algebra, with $\tilde{Ζ}_{\mathrm{ad}}^2=-e_t$ and so $\xi_{\mathrm{ad}}^2=e_t$ — is a different object, represented by $\gamma_5$ on the Dirac module. That is how the two Dirac equations meet: the one-sided pair carries $\xi_{\mathrm{ad}}$ as a central sign, while the mass of the two-sided equation is a right multiplication by the chirality basis operator, and the basis operator is the representative of the sign on the module.
 
 **The identities of the frame.** With $\varepsilon=(1,-1,-1,-1)$,
 
@@ -502,11 +502,11 @@ $$
 \{\gamma_\mu,\gamma_5\}=0 ,
 $$
 
-the anticommutation with $\gamma_5$ being what makes the chirality cell the axial insertion. The first relation is the quaternion multiplication table in the frame: a cell that pairs $e_t$ with a spatial unit squares to the square of that unit, and the central $i$ of each generator flips the sign, so the timelike cell squares to $+I_4$ and the three spatial ones to $-I_4$. The bracket carries the weight, and the reason is again $i^2$: each $\gamma_\mu$ is $i$ times the plain cell $L_{\mathrm{pau},e_\mu}R_{\mathrm{pau},\vec e_{\tau(\mu)}}$, whose own Clifford bracket is $-2\varepsilon_\mu\delta_{\mu\nu}I_4$, so the two factors of $i$ inside the bracket turn it into $+2\varepsilon_\mu\delta_{\mu\nu}I_4$.
+the anticommutation with $\gamma_5$ being what makes the chirality basis operator the axial insertion. The first relation is the quaternion multiplication table in the frame: a basis operator that pairs $e_t$ with a spatial unit squares to the square of that unit, and the central $i$ of each generator flips the sign, so the timelike basis operator squares to $+I_4$ and the three spatial ones to $-I_4$. The bracket carries the weight, and the reason is again $i^2$: each $\gamma_\mu$ is $i$ times the plain basis operator $L_{\mathrm{pau},e_\mu}R_{\mathrm{pau},\vec e_{\tau(\mu)}}$, whose own Clifford bracket is $-2\varepsilon_\mu\delta_{\mu\nu}I_4$, so the two factors of $i$ inside the bracket turn it into $+2\varepsilon_\mu\delta_{\mu\nu}I_4$.
 
-The dictionary is complex-linear; over $\mathbb{R}$ the products span $\mathrm{Cl}_{1,3}(\mathbb{R})\cong M_2(\mathbb{H})$ and the plain cells span $\mathrm{Cl}_{3,1}(\mathbb{R})\cong M_4(\mathbb{R})$, the two Clifford algebras that differ by that relative $i$.
+The dictionary is complex-linear; over $\mathbb{R}$ the products span $\mathrm{Cl}_{1,3}(\mathbb{R})\cong M_2(\mathbb{H})$ and the plain basis operators span $\mathrm{Cl}_{3,1}(\mathbb{R})\cong M_4(\mathbb{R})$, the two Clifford algebras that differ by that relative $i$.
 
-**The display.** Every array printed in this section is given twice: in the Peirce display first, labelled $\mathrm{pau}$, whose arrays are the ones the literature prints, and in the axis-free display after it, labelled $\mathrm{axf}$, which is the display of the body and of the corpus. The two are carried into one another by $L_{\mathrm{axf},e_\mu}=C_{\Pi}L_{\mathrm{pau},e_\mu}C_{\Pi}^{-1}$, and a conjugation by $C_{\Pi}$ changes no product, no anticommutator, no trace and no determinant, so every identity of the section holds in both. An array is a statement about one display; a cell named in the running text keeps the Peirce label, and its axis-free array is the conjugate. The label names the array and not the operator.
+**The display.** Every array printed in this section is given twice: in the Peirce display first, labelled $\mathrm{pau}$, whose arrays are the ones the literature prints, and in the axis-free display after it, labelled $\mathrm{axf}$, which is the display of the body and of the corpus. The two are carried into one another by $L_{\mathrm{axf},e_\mu}=C_{\Pi}L_{\mathrm{pau},e_\mu}C_{\Pi}^{-1}$, and a conjugation by $C_{\Pi}$ changes no product, no anticommutator, no trace and no determinant, so every identity of the section holds in both. An array is a statement about one display; a basis operator named in the running text keeps the Peirce label, and its axis-free array is the conjugate. The label names the array and not the operator.
 
 ## Summary
 
@@ -583,7 +583,7 @@ The field translation current is the canonical energy–momentum, $-\partial T_{
 - [Why AXF Matrices instead of Pauli and Gamma Matrices](why-axf-matrices-instead-of-pauli-and-gamma-matrices.html), for the reasons the AXF matrices replace the Pauli and gamma matrices.
 - [Relativistic Mechanics in Biquaternionic Form](relativistic-mechanics-in-biquaternionic-form.html) — the action and the conserved current this article starts from.
 - [The Klein–Gordon Equation in Biquaternionic Form](the-klein-gordon-equation-in-biquaternionic-form.html) — the field, its Lagrangian form, and the current the Noether derivation reproduces.
-- [The Dirac Equation in Biquaternionic Form](the-dirac-equation-in-biquaternionic-form.html) — the chiral pair, the frame in the cell algebra, and Kravchenko's two-sided dictionary.
+- [The Dirac Equation in Biquaternionic Form](the-dirac-equation-in-biquaternionic-form.html) — the chiral pair, the frame in the basis operator algebra, and Kravchenko's two-sided dictionary.
 - [Chiral Fermions in the Biquaternion Framework](chiral-fermions-in-the-biquaternion-framework.html) — the mass term, the two parts of the Dirac field, and the axial current.
 - [The Poincaré Group and the Biquaternion Frame](the-poincare-group-and-the-biquaternion-frame.html) — the symmetry group, and the corrected central translation phase.
 - [Exercise: Four-Momentum Conservation in a Collision](exercise-four-momentum-conservation-in-a-collision.html) — the total four-momentum of an isolated system, and the report of the proper-time four-force defect.

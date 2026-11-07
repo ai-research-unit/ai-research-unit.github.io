@@ -258,7 +258,7 @@ Under this action $\mathbb{B}$ is a single balanced representation. The two Casi
 
 The Pauli and gamma formulation is legacy: the reasons are explained in the article *Why AXF Matrices instead of Pauli and Gamma Matrices*. The generators carry no frame label: $\gamma_\mu$ is one set of matrices, and the frame is named on the coordinate.
 
-The gammas are a frame of $\mathrm{Cl}_{1,3}(\mathbb{C})=M_4(\mathbb{C})$, not a different algebra. The five generators are cells, each a pure tensor, and the six multipliers of the symmetry section are read in the same frame:
+The gammas are a frame of $\mathrm{Cl}_{1,3}(\mathbb{C})=M_4(\mathbb{C})$, not a different algebra. The five generators are basis operators, each a pure tensor, and the six multipliers of the symmetry section are read in the same frame:
 
 $$
 \begin{aligned}
@@ -280,7 +280,7 @@ $$
 
 **The boundary the gammas make plain.** The $\mathrm{SU}(2)\oplus\mathrm{SU}(2)$ of the symmetry section is the pair of multipliers, left against right, and the gamma dictionary shows that the two copies are of different kinds: the left multipliers are bivectors, and the right ones are not, $R_{\vec e_x}$ being the vector $\gamma_0$ up to $-i$, $R_{\vec e_y}$ a trivector and $R_{\vec e_z}$ the product of all four. The bivector space is six-dimensional over $\mathbb{C}$ and closed under the commutator, so the two $\mathrm{su}(2)$'s are not its self-dual and anti-self-dual halves; reading them so replaces the action of the algebra on itself by a split of the Lorentz generators, which is a different object. What the algebra reaches is the $\mathrm{so}(3,1)$ of its bivectors together with the $\mathrm{so}(4)$ of its own module structure, and the hidden symmetry of the Coulomb problem is in neither.
 
-**The display.** Every array printed in this section is given twice: in the Peirce display first, labelled $\mathrm{pau}$, whose arrays are the ones the literature prints, and in the axis-free display after it, labelled $\mathrm{axf}$, which is the display of the body and of the corpus. The two are carried into one another by $L_{\mathrm{axf},e_\mu}=C_{\Pi}L_{\mathrm{pau},e_\mu}C_{\Pi}^{-1}$, and a conjugation by $C_{\Pi}$ changes no product, no anticommutator, no trace and no determinant, so every identity of the section holds in both. An array is a statement about one display; a cell named in the running text keeps the Peirce label, and its axis-free array is the conjugate. The label names the array and not the operator.
+**The display.** Every array printed in this section is given twice: in the Peirce display first, labelled $\mathrm{pau}$, whose arrays are the ones the literature prints, and in the axis-free display after it, labelled $\mathrm{axf}$, which is the display of the body and of the corpus. The two are carried into one another by $L_{\mathrm{axf},e_\mu}=C_{\Pi}L_{\mathrm{pau},e_\mu}C_{\Pi}^{-1}$, and a conjugation by $C_{\Pi}$ changes no product, no anticommutator, no trace and no determinant, so every identity of the section holds in both. An array is a statement about one display; a basis operator named in the running text keeps the Peirce label, and its axis-free array is the conjugate. The label names the array and not the operator.
 
 ## Summary
 

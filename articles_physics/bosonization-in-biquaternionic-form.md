@@ -24,7 +24,7 @@ Bosonization lives in two dimensions, and the framework must be reduced before i
 
 **The frame.** The arena is the material frame of *Frame and Metric Conventions* read in two slots, $Q_t$ and $Q_x$, reached from the four-slot frame by dropping the two spatial directions $Q_y$ and $Q_z$. The two directions of the arena are $e_t$ and $\vec e_x$. Every display below contracts with the plain weight $\varepsilon=(1,-1)$ of *Frame and Metric Conventions*, §*The Rules*, read in the arena's two slots, and every coordinate derivative is written $\partial/\partial R_\mu$ as *Operator and Calculus Conventions* fixes it. Nothing else of the frame is restated here.
 
-**The two generator actions.** The two directions act on an element by multiplication on the two sides. The timelike direction is the action $A_t:Q\mapsto iQ\vec e_x$, and the spacelike direction is the action $A_x:Q\mapsto i\vec e_xQ\vec e_y$. Both are the frame's two cells read in the arena, and their products are derived here. Composing each with itself,
+**The two generator actions.** The two directions act on an element by multiplication on the two sides. The timelike direction is the action $A_t:Q\mapsto iQ\vec e_x$, and the spacelike direction is the action $A_x:Q\mapsto i\vec e_xQ\vec e_y$. Both are the frame's two basis operators read in the arena, and their products are derived here. Composing each with itself,
 $$
 A_tA_t:Q\mapsto -Q\vec e_x\vec e_x=Q,
 \qquad
@@ -58,13 +58,13 @@ and they were checked by recomputation on generic elements. The conjugation ther
 
 The dictionary is stated first in its standard form, then in the framework's notation.
 
-**The two components of the current.** The adjoint of the field is the field read through the Hermitian conjugation and followed by the arena's timelike cell (*Index and Notation Conventions*, §*The Upper and Low Marks*). In the arena the two components of the current reduce to two scalar parts,
+**The two components of the current.** The adjoint of the field is the field read through the Hermitian conjugation and followed by the arena's timelike basis operator (*Index and Notation Conventions*, §*The Upper and Low Marks*). In the arena the two components of the current reduce to two scalar parts,
 $$
 j_t=\mathrm{Sc}\bigl(\tilde{Ξ}_{\mathrm{sp}}^*\tilde{Ξ}_{\mathrm{sp}}\bigr),
 \qquad
 j_x=\mathrm{Sc}\bigl(\tilde{Ξ}_{\mathrm{sp}}^*\,\vec e_x\tilde{Ξ}_{\mathrm{sp}}\,\vec e_z\bigr).
 $$
-The reduction is a derived form. In the timelike component the cell $i\vec e_x$ meets itself, and $(i\vec e_x)^2=i^2\,\vec e_x\vec e_x=e_t$, so the identity is what remains. In the spacelike component the same cell follows the arena's second generator, and $(i\vec e_x\,Q\,\vec e_y)(i\vec e_x)=\vec e_xQ\vec e_z$, so the chirality is what remains. The two components therefore carry the identity and the chirality, and no third cell appears. Both scalar parts are real, and the check is a recomputation on generic elements.
+The reduction is a derived form. In the timelike component the basis operator $i\vec e_x$ meets itself, and $(i\vec e_x)^2=i^2\,\vec e_x\vec e_x=e_t$, so the identity is what remains. In the spacelike component the same basis operator follows the arena's second generator, and $(i\vec e_x\,Q\,\vec e_y)(i\vec e_x)=\vec e_xQ\vec e_z$, so the chirality is what remains. The two components therefore carry the identity and the chirality, and no third basis operator appears. Both scalar parts are real, and the check is a recomputation on generic elements.
 
 **The standard dictionary.** For a massless field $\tilde{Ξ}_{\mathrm{sp}}$ and a real scalar $\xi_{\mathrm{scl}}$, with a normalisation constant $\alpha$ setting the short-distance cutoff and with the convention $\epsilon_{01}=+1$,
 $$
@@ -144,7 +144,7 @@ and the label balances. Here $k_m=mc/\hbar$ is the mass wave number, the inverse
 $$
 \mathrm{Sc}\bigl(\tilde{Ξ}_{\mathrm{sp}}^*\tilde{Ξ}_{\mathrm{sp}}\,i\vec e_x\bigr),
 $$
-the adjoint's bilinear with the timelike cell left in place. It is real, and it too ends in a right factor that exchanges the two values — $\vec e_x$ — so it multiplies one value by the other. Under the dictionary it is the cosine.
+the adjoint's bilinear with the timelike basis operator left in place. It is real, and it too ends in a right factor that exchanges the two values — $\vec e_x$ — so it multiplies one value by the other. Under the dictionary it is the cosine.
 
 **The bosonization of the mass.** Under the dictionary, for real $m$,
 $$
@@ -164,7 +164,7 @@ The phase is therefore a **shift of the boson field**. In the framework the mass
 $$
 i\,\mathrm{Sc}\bigl(\tilde{Ξ}_{\mathrm{sp}}^*\,\vec e_x\tilde{Ξ}_{\mathrm{sp}}\,\vec e_z\,i\vec e_x\bigr),
 $$
-with the chirality inserted beside the timelike cell. The two insertions act on opposite values — the chirality keeps the value and the timelike cell exchanges it — and the scalar part of the resulting element is imaginary, so $i$ times it is real; the check is a recomputation on generic elements. A chiral rotation by $\theta$ rotates the two densities into one another, and a mass $m=|m|\exp(i\theta)$ selects the direction $\theta$ in that plane. In the arena the coefficient conjugation preserves each value, so the two densities are real with respect to it and the rotation is a real rotation; its bosonized image is the real, doubly-periodic shifted cosine of the previous paragraph, not a phase. In four dimensions the coefficient conjugation reverses the chirality and therefore exchanges the values, so a real element pairs a value with the conjugate of the other and the two values are not two independent real planes; the arena's cosine image has no four-dimensional analogue. A chiral rotation still exists in four dimensions, but it is anomalous and becomes a $\theta_{\mathrm{vac}}$ term rather than a shift of a boson. This is the algebraic face of the counting failure recorded below, and it was verified on the actions.
+with the chirality inserted beside the timelike basis operator. The two insertions act on opposite values — the chirality keeps the value and the timelike basis operator exchanges it — and the scalar part of the resulting element is imaginary, so $i$ times it is real; the check is a recomputation on generic elements. A chiral rotation by $\theta$ rotates the two densities into one another, and a mass $m=|m|\exp(i\theta)$ selects the direction $\theta$ in that plane. In the arena the coefficient conjugation preserves each value, so the two densities are real with respect to it and the rotation is a real rotation; its bosonized image is the real, doubly-periodic shifted cosine of the previous paragraph, not a phase. In four dimensions the coefficient conjugation reverses the chirality and therefore exchanges the values, so a real element pairs a value with the conjugate of the other and the two values are not two independent real planes; the arena's cosine image has no four-dimensional analogue. A chiral rotation still exists in four dimensions, but it is anomalous and becomes a $\theta_{\mathrm{vac}}$ term rather than a shift of a boson. This is the algebraic face of the counting failure recorded below, and it was verified on the actions.
 
 ## The Anomaly and the Central-Charge Matching
 
@@ -268,7 +268,7 @@ The non-abelian extension is stated and its status fixed.
 
 The Pauli and gamma formulation is legacy: the reasons are explained in the article *Why AXF Matrices instead of Pauli and Gamma Matrices*. The generators carry no frame label: $\gamma_\mu$ is one set of matrices, $\gamma_0^2=I_4$ and $\gamma_k^2=-I_4$. The frame belongs to the coordinate, not to the array.
 
-The gamma symbols are used only in this section; every other section writes the same objects as cells. The gammas are a frame of $\mathrm{Cl}_{1,3}(\mathbb{C})=M_4(\mathbb{C})$, not a different algebra; in the two-dimensional reduction of this article the two generators are $\gamma_0=iL_{\mathrm{pau},e_t}R_{\mathrm{pau},\vec e_x}=iR_{\mathrm{pau},\vec e_x}$ and $\gamma_1=iL_{\mathrm{pau},\vec e_x}R_{\mathrm{pau},\vec e_y}$ with $L_{a}R_{b}$, and the two-dimensional chirality is their product, the cell $L_{\mathrm{pau},\vec e_x}R_{\mathrm{pau},\vec e_z}$, not the four-dimensional $\gamma_5$.
+The gamma symbols are used only in this section; every other section writes the same objects as basis operators. The gammas are a frame of $\mathrm{Cl}_{1,3}(\mathbb{C})=M_4(\mathbb{C})$, not a different algebra; in the two-dimensional reduction of this article the two generators are $\gamma_0=iL_{\mathrm{pau},e_t}R_{\mathrm{pau},\vec e_x}=iR_{\mathrm{pau},\vec e_x}$ and $\gamma_1=iL_{\mathrm{pau},\vec e_x}R_{\mathrm{pau},\vec e_y}$ with $L_{a}R_{b}$, and the two-dimensional chirality is their product, the basis operator $L_{\mathrm{pau},\vec e_x}R_{\mathrm{pau},\vec e_z}$, not the four-dimensional $\gamma_5$.
 
 Here $L_a$ and $R_b$ are the left and right multiplications, $L_a\tilde{Ξ}_{\mathrm{sp}}=a\tilde{Ξ}_{\mathrm{sp}}$ and $R_b\tilde{Ξ}_{\mathrm{sp}}=\tilde{Ξ}_{\mathrm{sp}} b$, and $c(M)$ is the coefficient matrix of $M$ in the basis of the sixteen products.
 
@@ -282,7 +282,7 @@ $$
 \gamma_0=iL_{\mathrm{axf},e_t}R_{\mathrm{axf},\vec e_x},\quad \gamma_1=iL_{\mathrm{axf},\vec e_x}R_{\mathrm{axf},\vec e_y},\quad \gamma_2=iL_{\mathrm{axf},\vec e_y}R_{\mathrm{axf},\vec e_y},\quad \gamma_3=iL_{\mathrm{axf},\vec e_z}R_{\mathrm{axf},\vec e_y},\quad \gamma_5=-iL_{\mathrm{axf},e_t}R_{\mathrm{axf},\vec e_z} .
 $$
 
-In two dimensions only $\gamma_0$ and $\gamma_1$ are present, and their product is the chirality cell:
+In two dimensions only $\gamma_0$ and $\gamma_1$ are present, and their product is the chirality basis operator:
 $$
 \gamma_0\gamma_1=L_{\mathrm{pau},\vec e_x}R_{\mathrm{pau},\vec e_z},
 \qquad
@@ -297,13 +297,13 @@ $$
 (\gamma_0\gamma_1)^2=I_4 .
 $$
 
-The four-dimensional $\gamma_5$ is not this product; it is the fifth cell times $i$, and its square is also $I_4$ because $i^2=-1$ turns the fifth cell's $-L_{\mathrm{pau},e_t}R_{\mathrm{pau},e_t}$ into $+L_{\mathrm{pau},e_t}R_{\mathrm{pau},e_t}$.
+The four-dimensional $\gamma_5$ is not this product; it is the fifth basis operator times $i$, and its square is also $I_4$ because $i^2=-1$ turns the fifth basis operator's $-L_{\mathrm{pau},e_t}R_{\mathrm{pau},e_t}$ into $+L_{\mathrm{pau},e_t}R_{\mathrm{pau},e_t}$.
 
 A single product is a pure tensor; the products form the seven-dimensional cone $\operatorname{rank}c(M)\le1$, and a general element is a sum of at most four, with $\ell(M)=\operatorname{rank}c(M)$.
 
-$\gamma_5$ is the reference-frame cell of the chirality $\Gamma$; the central grading $\chi=i\tilde{Ζ}_{\mathrm{ad}}$ — the difference of the two central idempotents of the complexified algebra, so $\chi^2=e_t$ — is a different object, represented by $\gamma_5$ on the Dirac module.
+$\gamma_5$ is the reference-frame basis operator of the chirality $\Gamma$; the central grading $\chi=i\tilde{Ζ}_{\mathrm{ad}}$ — the difference of the two central idempotents of the complexified algebra, so $\chi^2=e_t$ — is a different object, represented by $\gamma_5$ on the Dirac module.
 
-The dictionary is complex-linear; over $\mathbb{R}$ the products span $\mathrm{Cl}_{1,3}(\mathbb{R})\cong M_2(\mathbb{H})$ and the cells span $\mathrm{Cl}_{3,1}(\mathbb{R})\cong M_4(\mathbb{R})$.
+The dictionary is complex-linear; over $\mathbb{R}$ the products span $\mathrm{Cl}_{1,3}(\mathbb{R})\cong M_2(\mathbb{H})$ and the basis operators span $\mathrm{Cl}_{3,1}(\mathbb{R})\cong M_4(\mathbb{R})$.
 
 **The standard gamma identities.** In the $\gamma$ reading, with $\epsilon_{0123}=+1$ and $\varepsilon=(1,-1,-1,-1)$,
 $$
@@ -334,7 +334,7 @@ $$
 $$
 the general rule being $\sum_\mu\gamma^\mu A\gamma_\mu=(-1)^{n+1}(4-2n)A$ for $A$ a product of $n$ distinct generators. The metric sits in the raised index and nowhere else: with every index low the sums read $\sum_\mu\gamma_\mu\gamma_\mu=-2I_4$, $\sum_\mu\gamma_\mu\gamma_0\gamma_\mu=+4\gamma_0$, and the spacelike sums vanish, $\sum_\mu\gamma_\mu\gamma_k\gamma_\mu=0$.
 
-**The display.** Every array printed in this section is given twice: in the Peirce display first, labelled $\mathrm{pau}$, whose arrays are the ones the literature prints, and in the axis-free display after it, labelled $\mathrm{axf}$, which is the display of the body and of the corpus. The two are carried into one another by $L_{\mathrm{axf},e_\mu}=C_{\Pi}L_{\mathrm{pau},e_\mu}C_{\Pi}^{-1}$, and a conjugation by $C_{\Pi}$ changes no product, no anticommutator, no trace and no determinant, so every identity of the section holds in both. An array is a statement about one display; a cell named in the running text keeps the Peirce label, and its axis-free array is the conjugate. The label names the array and not the operator.
+**The display.** Every array printed in this section is given twice: in the Peirce display first, labelled $\mathrm{pau}$, whose arrays are the ones the literature prints, and in the axis-free display after it, labelled $\mathrm{axf}$, which is the display of the body and of the corpus. The two are carried into one another by $L_{\mathrm{axf},e_\mu}=C_{\Pi}L_{\mathrm{pau},e_\mu}C_{\Pi}^{-1}$, and a conjugation by $C_{\Pi}$ changes no product, no anticommutator, no trace and no determinant, so every identity of the section holds in both. An array is a statement about one display; a basis operator named in the running text keeps the Peirce label, and its axis-free array is the conjugate. The label names the array and not the operator.
 
 ## Summary
 

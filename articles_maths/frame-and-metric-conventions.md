@@ -10,7 +10,7 @@ This article fixes the general notion first, then the two coordinate frames. The
 
 Each frame is fixed with its coordinate. The coordinate is part of the frame, not a separate choice; there is one metric, $\delta_{\mu\nu}=(1,1,1,1)$. The plain weight belongs to the product and is the same in both frames.
 
-The article is read after *Algebra and Element Conventions* and before *Matrix Representations Conventions*. It uses no left or right multiplication, no cell and no explicit array.
+The article is read after *Algebra and Element Conventions* and before *Matrix Representations Conventions*. It uses no left or right multiplication and no explicit array.
 
 **The order is the order of dependence, and it is also the order of risk.** The coordinate frame decides the signs of every interval term. A mistake in it propagates into every display of the article that follows.
 

@@ -163,7 +163,7 @@ $$
 \tilde\nabla\tilde{Ξ}_{\mathrm{sp},R}=k_m\tilde{Ξ}_{\mathrm{sp},L},\qquad \tilde\nabla^{\natural}\tilde{Ξ}_{\mathrm{sp},L}=k_m\tilde{Ξ}_{\mathrm{sp},R} ,
 $$
 
-in which the gradient multiplies on the left in each line and the mass pairs the two values of the subscript. Chirality here is not an extra operator: it is the split of the field into its L part and its R part, and the mass is what mixes the two. The operator is one-sided, and the two lines are the two values. Here $k_m=mc/\hbar$ is the mass wave number, the inverse of the mass length.
+in which the gradient multiplies on the left in each line and the mass is the central coefficient that relates the two components. Chirality here is not an extra operator: it is the split of the field into its L part and its R part, and the mass is what mixes the two. The operator is one-sided, and the two lines are the two values. Here $k_m=mc/\hbar$ is the mass wave number, the inverse of the mass length.
 
 **The two-sided equation, and the mass direction.** Kravchenko's equation is a single equation on $\mathbb{B}$, written $\mathcal NF=0$, with
 
@@ -223,7 +223,7 @@ The physical point the corpus records is that the left-versus-right question of 
 
 ## Open Questions
 
-1. **Chirality.** The field is a general element, and it carries both values of the subscript. Whether the right multiplication by $-\vec e_x$, composed with the conjugation, agrees with the corpus's chirality — the cell $-iR_{\vec e_z}$ of the axis-free frame — is not answered by the equation. The corpus's *The Reflection and the Rotation in Biquaternionic Form* records that the algebra of three space vectors does not single out a chirality by itself; the cell belongs to a frame.
+1. **Chirality.** The field is a general element, and it carries both letters of the pair. Whether the right multiplication by $-\vec e_x$, composed with the conjugation, agrees with the corpus's chirality — the basis operator $-iR_{\vec e_z}$ of the axis-free frame — is not answered by the equation. The corpus's *The Reflection and the Rotation in Biquaternionic Form* records that the algebra of three space vectors does not single out a chirality by itself; the basis operator belongs to a frame.
 
 2. **The odd element.** The right factor is even in both parities. The elements that change parity between the two readings are the three space vectors, odd in the formulation and even in the spacetime reading. Which parity is the physical one, and does the corpus's sector split select it?
 
@@ -237,7 +237,7 @@ The physical point the corpus records is that the left-versus-right question of 
 
 The Pauli and gamma formulation is legacy: the reasons are explained in the article *Why AXF Matrices instead of Pauli and Gamma Matrices*. The generators carry no frame label: $\gamma_\mu$ is one set of matrices, and the frame is named on the coordinate.
 
-No gamma symbol is used in the body of this article; the five appear here for reference, as cells of the full operator algebra. They are a frame of $\mathrm{Cl}_{1,3}(\mathbb{C})=M_4(\mathbb{C})$, not a different algebra. Here $L_a$ and $R_b$ are the left and right multiplications, $L_a\tilde{Ξ}_{\mathrm{sp}}=a\tilde{Ξ}_{\mathrm{sp}}$ and $R_b\tilde{Ξ}_{\mathrm{sp}}=\tilde{Ξ}_{\mathrm{sp}} b$, and $c(M)$ is the coefficient matrix of $M$ in the basis of the sixteen products.
+No gamma symbol is used in the body of this article; the five appear here for reference, as basis operators of the full operator algebra. They are a frame of $\mathrm{Cl}_{1,3}(\mathbb{C})=M_4(\mathbb{C})$, not a different algebra. Here $L_a$ and $R_b$ are the left and right multiplications, $L_a\tilde{Ξ}_{\mathrm{sp}}=a\tilde{Ξ}_{\mathrm{sp}}$ and $R_b\tilde{Ξ}_{\mathrm{sp}}=\tilde{Ξ}_{\mathrm{sp}} b$, and $c(M)$ is the coefficient matrix of $M$ in the basis of the sixteen products.
 
 $$
 \gamma_0=iL_{\mathrm{pau},e_t}R_{\mathrm{pau},\vec e_x},\quad \gamma_1=iL_{\mathrm{pau},\vec e_x}R_{\mathrm{pau},\vec e_y},\quad \gamma_2=iL_{\mathrm{pau},\vec e_y}R_{\mathrm{pau},\vec e_y},\quad \gamma_3=iL_{\mathrm{pau},\vec e_z}R_{\mathrm{pau},\vec e_y},\quad \gamma_5=-iL_{\mathrm{pau},e_t}R_{\mathrm{pau},\vec e_z} .
@@ -249,13 +249,13 @@ $$
 \gamma_0=iL_{\mathrm{axf},e_t}R_{\mathrm{axf},\vec e_x},\quad \gamma_1=iL_{\mathrm{axf},\vec e_x}R_{\mathrm{axf},\vec e_y},\quad \gamma_2=iL_{\mathrm{axf},\vec e_y}R_{\mathrm{axf},\vec e_y},\quad \gamma_3=iL_{\mathrm{axf},\vec e_z}R_{\mathrm{axf},\vec e_y},\quad \gamma_5=-iL_{\mathrm{axf},e_t}R_{\mathrm{axf},\vec e_z} .
 $$
 
-A single product is a pure tensor; the products form the seven-dimensional cone $\operatorname{rank}c(M)\le1$, and a general element is a sum of at most four, with $\ell(M)=\operatorname{rank}c(M)$. The first is the odd cell of the Dirac adjoint, the $\beta$ of the Hamiltonian frame; the last is the chirality cell.
+A single product is a pure tensor; the products form the seven-dimensional cone $\operatorname{rank}c(M)\le1$, and a general element is a sum of at most four, with $\ell(M)=\operatorname{rank}c(M)$. The first is the odd basis operator of the Dirac adjoint, the $\beta$ of the Hamiltonian frame; the last is the chirality basis operator.
 
-$\gamma_5$ is the reference-frame cell of the chirality operator; the central grading $\chi=i\tilde{Ζ}_{\mathrm{ad}}$ — the difference of the two central idempotents of the complexified algebra, so $\chi^2=e_t$ — is a different object, represented by $\gamma_5$ on the Dirac module.
+$\gamma_5$ is the reference-frame basis operator of the chirality operator; the central grading $\chi=i\tilde{Ζ}_{\mathrm{ad}}$ — the difference of the two central idempotents of the complexified algebra, so $\chi^2=e_t$ — is a different object, represented by $\gamma_5$ on the Dirac module.
 
-The dictionary is complex-linear; over $\mathbb{R}$ the products span $\mathrm{Cl}_{1,3}(\mathbb{R})\cong M_2(\mathbb{H})$ and the cells span $\mathrm{Cl}_{3,1}(\mathbb{R})\cong M_4(\mathbb{R})$.
+The dictionary is complex-linear; over $\mathbb{R}$ the products span $\mathrm{Cl}_{1,3}(\mathbb{R})\cong M_2(\mathbb{H})$ and the basis operators span $\mathrm{Cl}_{3,1}(\mathbb{R})\cong M_4(\mathbb{R})$.
 
-**The display.** Every array printed in this section is given twice: in the Peirce display first, labelled $\mathrm{pau}$, whose arrays are the ones the literature prints, and in the axis-free display after it, labelled $\mathrm{axf}$, which is the display of the body and of the corpus. The two are carried into one another by $L_{\mathrm{axf},e_\mu}=C_{\Pi}L_{\mathrm{pau},e_\mu}C_{\Pi}^{-1}$, and a conjugation by $C_{\Pi}$ changes no product, no anticommutator, no trace and no determinant, so every identity of the section holds in both. An array is a statement about one display; a cell named in the running text keeps the Peirce label, and its axis-free array is the conjugate. The label names the array and not the operator.
+**The display.** Every array printed in this section is given twice: in the Peirce display first, labelled $\mathrm{pau}$, whose arrays are the ones the literature prints, and in the axis-free display after it, labelled $\mathrm{axf}$, which is the display of the body and of the corpus. The two are carried into one another by $L_{\mathrm{axf},e_\mu}=C_{\Pi}L_{\mathrm{pau},e_\mu}C_{\Pi}^{-1}$, and a conjugation by $C_{\Pi}$ changes no product, no anticommutator, no trace and no determinant, so every identity of the section holds in both. An array is a statement about one display; a basis operator named in the running text keeps the Peirce label, and its axis-free array is the conjugate. The label names the array and not the operator.
 
 ## Summary
 

@@ -4,7 +4,7 @@
 
 A **nonlinear Dirac equation** is a Dirac equation with a self-interaction term. The free equation is linear in the field, so that solutions superpose; a term built from the field itself destroys that superposability and makes the equation describe a fermion that acts on itself. The best-motivated case is geometric. In the **Einstein–Cartan–Sciama–Kibble** extension of general relativity, the spin of matter is the source of the antisymmetric part of the connection, the torsion; that torsion couples to the axial current of the field, and when it is eliminated from the field equations it leaves an effective **axial-axial spin–spin self-interaction** that is cubic in the field. The resulting equation is the standard example of a nonlinearly self-interacting Dirac field, and it is a toy model for the idea that the self-interaction of the fermion regulates its own short-distance behaviour.
 
-The field of this article is an element $\tilde{Ξ}_{\mathrm{sp}}$ of the biquaternion algebra $\mathbb{B}$. Its two parts carry the two values of the subscript, $\tilde{Ξ}_{\mathrm{sp},L}$ and $\tilde{Ξ}_{\mathrm{sp},R}$, the mass couples them, and every interaction below is read on these two parts.
+The field of this article is an element $\tilde{Ξ}_{\mathrm{sp}}$ of the biquaternion algebra $\mathbb{B}$. Its two parts are the two components that the subscripts name, $\tilde{Ξ}_{\mathrm{sp},L}$ and $\tilde{Ξ}_{\mathrm{sp},R}$; the mass is the central coefficient that couples them, and every interaction below is read on these two parts.
 
 Two models dominate the literature, and they fill the two channels other than the axial one. The **Thirring model** (Thirring 1958) is a $1+1$-dimensional theory whose interaction is the square of the vector current, contracted with the metric, $-\frac{g}{2}\sum_\mu\varepsilon_\mu V_\mu V_\mu$; it is exactly solvable and is the field-theory side of the bosonisation correspondence with the sine-Gordon model. The **Soler model** (Soler 1970) is a $3+1$-dimensional theory whose interaction is the square of the scalar bilinear, $\frac{g}{2}S_{\mathrm d}^2$; it is the mean-field relative of the Nambu–Jona-Lasinio four-fermion interaction, and it is the model in which exact closed-form solutions have been found.
 
@@ -22,11 +22,11 @@ The article is organised as follows. The next section fixes the field, the pairi
 
 ## The Field, the Pairing and the Two Equations
 
-The conventions are those of the companion articles: the algebra and its units, the gradient $\tilde\nabla$, the d'Alembertian $\Box$, the two values of the subscript, and the two sectors $\mathbb{B}_{\Psi}$ and $\mathbb{B}_{\Phi}$. A bilinear of this article is a **pairing** and never an action. It is the scalar part of the product of the Hermitian conjugate of the field, one element built from the field, and the fixed element $i\vec e_x$,
+The conventions are those of the companion articles: the algebra and its units, the gradient $\tilde\nabla$, the d'Alembertian $\Box$, the two components of the pair, and the two sectors $\mathbb{B}_{\Psi}$ and $\mathbb{B}_{\Phi}$. A bilinear of this article is a **pairing** and never an action. It is the scalar part of the product of the Hermitian conjugate of the field, one element built from the field, and the fixed element $i\vec e_x$,
 $$\mathrm{Sc}\bigl(\tilde{Ξ}_{\mathrm{sp}}^*iX\vec e_x\bigr),$$
 where $X$ is the element the bilinear reads. The fixed element $i\vec e_x$ is the only datum the pairing adds to the field, and it is the same one for every bilinear below. The **slot action** of the index $\mu$ is the action
 $$\tilde Q\longmapsto ie_\mu\tilde Q\vec e_{\nu(\mu)},$$
-in the element language; it is the derived form of the corresponding frame cell and it is the object every bilinear below is built from. The second line is a derived form again: the sources write the Dirac adjoint as an operator, and the scalar part written here is the same object with the operator spent.
+in the element language; it is the derived form of the corresponding frame basis operator and it is the object every bilinear below is built from. The second line is a derived form again: the sources write the Dirac adjoint as an operator, and the scalar part written here is the same object with the operator spent.
 
 ### The Bilinear Pairing
 
@@ -77,7 +77,7 @@ in this frame. The verification is exact: the six cross compositions sum to zero
 
 ### The Two Values and the Axial Bilinear
 
-The subscript takes two values: the element is $L$ when its value is the minus one and $R$ when its value is the plus one, and only the zero element carries both. The value is decided by the right slot: a left multiplication keeps the value, and a product takes the value of its right factor. These two facts are stated in words because every sentence below uses them and none computes them.
+The subscript names one of two components: the element is $L$ when the test returns the minus one and $R$ when it returns the plus one, and only the zero element carries both values. The value is decided by the right slot: a left multiplication keeps the value, and a product takes the value of its right factor. These two facts are stated in words because every sentence below uses them and none computes them.
 
 The mass multiplies the scalar density, and the density is the object that pairs the two values: $S_{\mathrm d}$ pairs one value with the other and vanishes on an element of a single value, so a field of one value alone carries no mass term.
 
@@ -256,7 +256,7 @@ The duality is the exact reason the two-dimensional model has one coupling. It i
 
 The Pauli and gamma formulation is legacy: the reasons are explained in the article *Why AXF Matrices instead of Pauli and Gamma Matrices*. The generators carry no frame label: $\gamma_\mu$ is one set of matrices, $\gamma_0^2=I_4$ and $\gamma_k^2=-I_4$. The frame belongs to the coordinate, not to the array.
 
-This section writes the same cells in the $\gamma$ notation, so that each formula the sources state can be checked against the cell it names. The gammas are a frame of $\mathrm{Cl}_{1,3}(\mathbb{C})=M_4(\mathbb{C})$, not a different algebra.
+This section writes the same basis operators in the $\gamma$ notation, so that each formula the sources state can be checked against the basis operator it names. The gammas are a frame of $\mathrm{Cl}_{1,3}(\mathbb{C})=M_4(\mathbb{C})$, not a different algebra.
 
 Here $L_a$ and $R_b$ are the left and right multiplications, $L_a\tilde{Ξ}_{\mathrm{sp}}=a\tilde{Ξ}_{\mathrm{sp}}$ and $R_b\tilde{Ξ}_{\mathrm{sp}}=\tilde{Ξ}_{\mathrm{sp}} b$.
 
@@ -280,11 +280,11 @@ $$
 
 A single product $L_{a}R_{b}$ is a pure tensor $a\otimes b$; the single products form a seven-dimensional cone, of rank at most one, and a general element of the algebra is a sum of at most four of them.
 
-The axial cells are the products of a generator and the chirality cell: $c^{(5)}_\mu=\gamma_\mu\gamma_5$, since $L_{\mathrm{pau},e_t}R_{\mathrm{pau},\vec e_x}\cdot L_{\mathrm{pau},e_t}R_{\mathrm{pau},\vec e_z}=L_{\mathrm{pau},e_t}R_{\mathrm{pau},\vec e_z\vec e_x}=L_{\mathrm{pau},e_t}R_{\mathrm{pau},\vec e_y}$ is exactly $c^{(5)}_0$, and the three spatial products agree the same way. That is the dictionary entry the sources need: the Hehl–Datta term of this article **is** the $\left(\tilde{Ξ}_{\mathrm{sp}}^{\dagger}iR_{\mathrm{axf},\vec e_x}\gamma_\mu\gamma_5\tilde{Ξ}_{\mathrm{sp}}\right)\gamma^\mu\gamma_5\tilde{Ξ}_{\mathrm{sp}}$ of the torsion literature.
+The axial basis operators are the products of a generator and the chirality basis operator: $c^{(5)}_\mu=\gamma_\mu\gamma_5$, since $L_{\mathrm{pau},e_t}R_{\mathrm{pau},\vec e_x}\cdot L_{\mathrm{pau},e_t}R_{\mathrm{pau},\vec e_z}=L_{\mathrm{pau},e_t}R_{\mathrm{pau},\vec e_z\vec e_x}=L_{\mathrm{pau},e_t}R_{\mathrm{pau},\vec e_y}$ is exactly $c^{(5)}_0$, and the three spatial products agree the same way. That is the dictionary entry the sources need: the Hehl–Datta term of this article **is** the $\left(\tilde{Ξ}_{\mathrm{sp}}^{\dagger}iR_{\mathrm{axf},\vec e_x}\gamma_\mu\gamma_5\tilde{Ξ}_{\mathrm{sp}}\right)\gamma^\mu\gamma_5\tilde{Ξ}_{\mathrm{sp}}$ of the torsion literature.
 
-$\gamma_5$ is the reference-frame cell of the chirality operator; the central grading $\chi=i\tilde{Ζ}_{\mathrm{ad}}$ — the difference of the two central idempotents of the complexified algebra, so $\chi^2=e_t$ — is a different object, represented by $\gamma_5$ on the Dirac module.
+$\gamma_5$ is the reference-frame basis operator of the chirality operator; the central grading $\chi=i\tilde{Ζ}_{\mathrm{ad}}$ — the difference of the two central idempotents of the complexified algebra, so $\chi^2=e_t$ — is a different object, represented by $\gamma_5$ on the Dirac module.
 
-The cell dictionary is complex-linear. With the central $i$ dropped, the four cells are real $4\times4$ matrices, and they square to $-g=(-1,+1,+1,+1)$: the timelike one to $-I_4$ and the three spacelike ones to $+I_4$. They span the full algebra $\mathrm{Cl}_{3,1}(\mathbb{R})\cong M_4(\mathbb{R})$ of real $4\times4$ matrices. Restoring the $i$ flips every square, because $i^2=-1$, and the cells then square to $+g$ and span $M_4(\mathbb{C})\cong\mathrm{Cl}_{1,3}(\mathbb{C})$, which is the algebra the $\gamma$ notation uses. The whole difference between the real and the complex reading is that single factor of $-1$.
+The basis operator dictionary is complex-linear. With the central $i$ dropped, the four basis operators are real $4\times4$ matrices, and they square to $-g=(-1,+1,+1,+1)$: the timelike one to $-I_4$ and the three spacelike ones to $+I_4$. They span the full algebra $\mathrm{Cl}_{3,1}(\mathbb{R})\cong M_4(\mathbb{R})$ of real $4\times4$ matrices. Restoring the $i$ flips every square, because $i^2=-1$, and the basis operators then square to $+g$ and span $M_4(\mathbb{C})\cong\mathrm{Cl}_{1,3}(\mathbb{C})$, which is the algebra the $\gamma$ notation uses. The whole difference between the real and the complex reading is that single factor of $-1$.
 
 ### The Identities the Sources Cite
 
@@ -319,7 +319,7 @@ $S_{cd}=\tfrac14[\gamma_c,\gamma_d]$ is the Lorentz generator in the $\gamma$ ba
 
 ### The Four Contraction Sums
 
-A cell's square is a frame statement, and every contraction of the frame inherits that. Written with the signature sign $\varepsilon_\mu$ on the summed index, the way every other contraction in this article is written, the four sums hold in either frame:
+A basis operator's square is a frame statement, and every contraction of the frame inherits that. Written with the signature sign $\varepsilon_\mu$ on the summed index, the way every other contraction in this article is written, the four sums hold in either frame:
 
 $$
 \sum_\mu\varepsilon_\mu\gamma_\mu\gamma_\mu=4I_4,\qquad
@@ -330,7 +330,7 @@ $$
 
 In each of the four the contracted generator is the same one on both sides, so it is never moved past another generator and no reordering sign enters. With the summed index raised, $\gamma^\mu=-\varepsilon_\mu\gamma_\mu$, the weights become signs and the sums read $-4I_4$, $+2\gamma_\alpha$, $-4\varepsilon_\alpha\delta_{\alpha\beta}I_4$ and $-2\gamma_\gamma\gamma_\beta\gamma_\alpha$. With every index low only the first keeps a closed form, $\sum_\mu\gamma_\mu\gamma_\mu=-2I_4$, and the second is $4\gamma_\alpha$ on the time index and $0$ on each spatial one, so the unweighted form is a signature statement and not an identity of four dimensions alone.
 
-**The display.** Every array printed in this section is given twice: in the Peirce display first, labelled $\mathrm{pau}$, whose arrays are the ones the literature prints, and in the axis-free display after it, labelled $\mathrm{axf}$, which is the display of the corpus. The two are carried into one another by $L_{\mathrm{axf},e_\mu}=C_{\Pi}L_{\mathrm{pau},e_\mu}C_{\Pi}^{-1}$, and a conjugation by $C_{\Pi}$ changes no product, no anticommutator, no trace and no determinant, so every identity of the section holds in both. An array is a statement about one display; a cell named in the running text keeps the Peirce label, and its axis-free array is the conjugate. The label names the array and not the operator.
+**The display.** Every array printed in this section is given twice: in the Peirce display first, labelled $\mathrm{pau}$, whose arrays are the ones the literature prints, and in the axis-free display after it, labelled $\mathrm{axf}$, which is the display of the corpus. The two are carried into one another by $L_{\mathrm{axf},e_\mu}=C_{\Pi}L_{\mathrm{pau},e_\mu}C_{\Pi}^{-1}$, and a conjugation by $C_{\Pi}$ changes no product, no anticommutator, no trace and no determinant, so every identity of the section holds in both. An array is a statement about one display; a basis operator named in the running text keeps the Peirce label, and its axis-free array is the conjugate. The label names the array and not the operator.
 
 ## Summary
 

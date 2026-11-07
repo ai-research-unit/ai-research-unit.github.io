@@ -150,7 +150,7 @@ Unlike *[The Spectrum](the-spectrum.html)*, whose degenerate cone carries nilpot
 
 ## Summary
 
-The four sectors are the truth-value cells of the split norm and the spectral condition. $\Sigma_{11}$ is the complement of the three lines $b=0$, $t=b$ and $t=-b$; it is open and dense, of dimension two, with six components: the positive-norm quadrants $t>|b|$ and $t<-|b|$, each split by the removed real axis, and the negative-norm sectors $b>|t|$ and $b<-|t|$. Its elements are units with distinct eigenvalues.
+The four sectors are the truth-value sectors of the split norm and the spectral condition. $\Sigma_{11}$ is the complement of the three lines $b=0$, $t=b$ and $t=-b$; it is open and dense, of dimension two, with six components: the positive-norm quadrants $t>|b|$ and $t<-|b|$, each split by the removed real axis, and the negative-norm sectors $b>|t|$ and $b<-|t|$. Its elements are units with distinct eigenvalues.
 
 $\Sigma_{01}$ is the two null lines with the origin removed, of dimension one and four rays; its elements are zero divisors $2t e_\pm$ with eigenvalues $2t$ and $0$. $\Sigma_{10}$ is the real axis minus the origin, of dimension one and two half-lines; its elements are scalar units with repeated eigenvalue $t$. $\Sigma_{00}$ is the origin, of dimension zero, the only element degenerate for both and not a zero divisor.
 

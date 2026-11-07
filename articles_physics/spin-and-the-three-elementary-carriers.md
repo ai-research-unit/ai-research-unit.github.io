@@ -75,7 +75,7 @@ No observed elementary particle carries another spin. Four boundaries keep the t
 Two further physical qualifications belong to the carrier, not to the table.
 
 - **The massless spin-$1$ count is two.** $V$ has three states. For a massless field the longitudinal state is removed by gauge invariance, leaving the two helicities of the photon and the gluon. The algebra supplies the triplet; the massless restriction is a separate input.
-- **The weak chirality is not the Peirce index.** $S_+$ and $S_-$ are isomorphic as left modules, so the left action does not distinguish them. The chirality of the weak interaction is the cell $\mathsf{V}_{\mathrm{vol}}=-iR_{\vec e_z}$, not the copy index.
+- **The weak chirality is not the Peirce index.** $S_+$ and $S_-$ are isomorphic as left modules, so the left action does not distinguish them. The chirality of the weak interaction is the basis operator $\mathsf{V}_{\mathrm{vol}}=-iR_{\vec e_z}$, not the copy index.
 
 ## The Results It Uses
 
@@ -136,7 +136,7 @@ Three module-theoretic facts carry the reading.
 
 The third fact is the physical content of the module structure. The action is faithful, and it does not descend to the Lorentz group: $-e_t$ acts as $-\mathrm{id}$ on $S$ while it acts trivially by conjugation on the four-vectors of $\mathbb{B}_{\Phi}$. The double cover therefore appears on the module side and not on the four-vector side, and **spin-$\tfrac12$ is a module datum**. It is a property of how the algebra acts on the carrier, not of a form on the carrier.
 
-One caution belongs here, because it is easy to state wrongly. **A single minimal left ideal is one Peirce copy, not two.** The ideals $\mathbb{B}\tilde\Pi_+$ and $\mathbb{B}\tilde\Pi_-$ are both isomorphic to $S$ and carry the same defining representation; they differ by the Peirce idempotent, not by the chirality. Chirality is the side, and the cell that realises the split is $\mathsf{V}_{\mathrm{vol}}=-iR_{\vec e_z}$, a pure right multiplier, whose two eigenspaces on $\Delta$ are the defining representation and its conjugate, $S$ and $S^{\mathrm{c}}$, which are non-isomorphic as complex representations. The doubling below treats the second ideal; this section treats one carrier and its two structures.
+One caution belongs here, because it is easy to state wrongly. **A single minimal left ideal is one Peirce copy, not two.** The ideals $\mathbb{B}\tilde\Pi_+$ and $\mathbb{B}\tilde\Pi_-$ are both isomorphic to $S$ and carry the same defining representation; they differ by the Peirce idempotent, not by the chirality. Chirality is the side, and the basis operator that realises the split is $\mathsf{V}_{\mathrm{vol}}=-iR_{\vec e_z}$, a pure right multiplier, whose two eigenspaces on $\Delta$ are the defining representation and its conjugate, $S$ and $S^{\mathrm{c}}$, which are non-isomorphic as complex representations. The doubling below treats the second ideal; this section treats one carrier and its two structures.
 
 ## The Probability Structure: the Second Slot
 
@@ -251,7 +251,7 @@ That asymmetry is the algebraic form of a physical statement. The complement is 
 
 ## The Mass Coupling
 
-The coupling supplied by the two ideals is a **copy flip**, not the chiral mass. The corpus once called it the chirality-off-diagonal mass; that name conflated the Peirce index with the chirality, which is the cell. The pair of right multiplications by $\vec\Upsilon_x$ and $\vec\Upsilon_y$ moves a state from $S$ to its complement and back, and the reading rests on three algebraic facts.
+The coupling supplied by the two ideals is a **copy flip**, not the chiral mass. The corpus once called it the chirality-off-diagonal mass; that name conflated the Peirce index with the chirality, which is the basis operator. The pair of right multiplications by $\vec\Upsilon_x$ and $\vec\Upsilon_y$ moves a state from $S$ to its complement and back, and the reading rests on three algebraic facts.
 
 - **The copy flip is off-diagonal.** A coupling that is $\mathbb{B}$-linear on the left cannot be a left multiplication by an element of $\mathbb{B}$: the left action preserves each ideal, since the ideals are left ideals. Such a coupling is a right multiplication, and right multiplication is what the module theory supplies.
 - **The generator is null, the map is an isometry.** The natural generator is the matrix unit $\vec\Upsilon_x$: it has vanishing norm and $\vec\Upsilon_x^2=0$, so it is not a unit of the algebra. The map it induces is nevertheless an isometry of the two Hilbert structures, because $\vec\Upsilon_x\vec\Upsilon_x^{*}=\tilde\Pi_+$ and $\zeta\tilde\Pi_+=\zeta$ for every $\zeta\in S$: the idempotent is a right identity on the carrier. The nilpotence is a property of the chosen generator and not of the map: the representatives that induce the same map differ by an element of $\operatorname{Ann}(S)=\mathbb{C}\{\vec\Upsilon_y,\tilde\Pi_-\}$, and some of them are units. The inverse between the modules is the right multiplication by $\vec\Upsilon_y$.
@@ -263,7 +263,7 @@ The reading has a boundary that must be stated in the same breath. **The article
 
 **The chiral mass is a different coupling.** It is the invariant sesquilinear pairing $\beta:S\times S^{\mathrm{c}}\to\mathbb{C}$ of *The Unpolarized Module of the Biquaternion Algebra*, off-diagonal in the grading $\chi=i\tilde{Ζ}_{\mathrm{ad}}$ and odd under it. It is not $\mathbb{B}_{\mathbb{R}}$-linear, so it is not a right multiplication and not an element of the algebra; it exists because $S$ and $S^{\mathrm{c}}$ are real-isomorphic and complex-inequivalent. A biquaternion is a section of $S\oplus S$ and carries no chirality; the Dirac field is the pair in $\Delta=S\oplus S^{\mathrm{c}}$. The two couplings must not be identified: the copy flip is $\mathbb{B}$-linear and moves between isomorphic copies, while the chiral mass is not $\mathbb{B}_{\mathbb{R}}$-linear and moves between inequivalent halves.
 
-A convention warning belongs here, because the corpus once used the word *chirality* in two ways. The two ideals were sometimes called the two chiralities; they are the two **Peirce copies**, a copy index, and they are not a chirality. Chirality is the side; the cell that realises the split is $\mathsf{V}_{\mathrm{vol}}=-iR_{\vec e_z}$, a pure right multiplier, and its two eigenspaces on $\Delta$ are $S$ and $S^{\mathrm{c}}$. These are different objects. The ideals are isomorphic as modules; $S$ and $S^{\mathrm{c}}$ are not isomorphic as complex representations. The copy flip of this section moves between the two **ideals**, and it is the column flip of the first convention. It is not the passage to the conjugate representation, and it is not the chiral mass.
+A convention warning belongs here, because the corpus once used the word *chirality* in two ways. The two ideals were sometimes called the two chiralities; they are the two **Peirce copies**, a copy index, and they are not a chirality. Chirality is the side; the basis operator that realises the split is $\mathsf{V}_{\mathrm{vol}}=-iR_{\vec e_z}$, a pure right multiplier, and its two eigenspaces on $\Delta$ are $S$ and $S^{\mathrm{c}}$. These are different objects. The ideals are isomorphic as modules; $S$ and $S^{\mathrm{c}}$ are not isomorphic as complex representations. The copy flip of this section moves between the two **ideals**, and it is the column flip of the first convention. It is not the passage to the conjugate representation, and it is not the chiral mass.
 
 ## Three Complements
 
@@ -312,7 +312,7 @@ The three-way table is the sharpest statement of the article about the word *com
 Three negative statements keep the reading exact.
 
 - **It is not the dual.** The dual of $S$ is the right ideal $S^{*}=\tilde\Pi_+\mathbb{B}=\mathbb{C}\{\tilde\Pi_+,\vec\Upsilon_x\}$, the first row of the matrix model, reached by the Hermitian conjugation ${}^{*}$. The complement is a left ideal reached by right multiplication. A bra is not an antiparticle.
-- **It is not a second representation.** The complement is isomorphic to $S$, so it carries the same defining representation of the double cover. The two chiralities are the two eigenspaces of the cell $\mathsf{V}_{\mathrm{vol}}=-iR_{\vec e_z}$ on $\Delta$, that is $S$ and its conjugate $S^{\mathrm{c}}$, which are non-isomorphic as complex representations. The doubling is a **copy**, not a second representation.
+- **It is not a second representation.** The complement is isomorphic to $S$, so it carries the same defining representation of the double cover. The two chiralities are the two eigenspaces of the basis operator $\mathsf{V}_{\mathrm{vol}}=-iR_{\vec e_z}$ on $\Delta$, that is $S$ and its conjugate $S^{\mathrm{c}}$, which are non-isomorphic as complex representations. The doubling is a **copy**, not a second representation.
 - **It is not a second sector.** Each ideal meets each sector in exactly one real dimension: $S\cap\mathbb{B}_{\Psi}=\mathbb{R}\{\tilde\Pi_+\}$, $S\cap\mathbb{B}_{\Phi}=\mathbb{R}\{i\tilde\Pi_+\}$, and similarly for the complement. Neither ideal is material or informational, and the sector split cuts across both. There is, in particular, no nonzero idempotent in $\mathbb{B}_{\Phi}$, so the complement cannot be the material sector.
 
 The independence is sharper than the dimension count. Multiplication by the central imaginary exchanges the sectors, $i\mathbb{B}_{\Psi}=\mathbb{B}_{\Phi}$, so a complex subspace contained in one sector is zero; the two ideals are complex two-dimensional and can never be split along $\mathbb{B}_{\Psi}$ and $\mathbb{B}_{\Phi}$. The sector content of an ideal sits entirely on its **diagonal** corner: $\mathbb{C}\tilde\Pi_+\cap\mathbb{B}_{\Psi}=\mathbb{R}\{\tilde\Pi_+\}$ and $\mathbb{C}\tilde\Pi_+\cap\mathbb{B}_{\Phi}=\mathbb{R}\{i\tilde\Pi_+\}$, while the nilpotent line $\mathbb{C}\vec\Upsilon_y$ meets both sectors in $\{0\}$. The sector label therefore attaches to the idempotent and not to the ladder: the doubling is an **informational** doubling, two idempotents of $\mathbb{B}_{\Psi}$, and not a material–informational pair.
@@ -414,7 +414,7 @@ The first four rows live on elementary carriers of $\mathbb{B}$ itself. The last
 - **One pair of ideals only.** The general idempotent generates a minimal left ideal for every unit vector, and its complement is a different subspace.
 - **Not the dual and not a sector.** The dual is the right ideal reached by ${}^{*}$; the sectors cut across both ideals.
 - **The algebra's form is not the metric.** It is indefinite and degenerate on $S$; the positive definite form is $\langle\cdot,\cdot\rangle_{*}$.
-- **One ideal is one Peirce copy.** The two ideals are isomorphic, and the copy index is a Peirce corner. Chirality is the side of a cell; the cell that realises the split has $S$ and $S^{\mathrm{c}}$ as its eigenspaces on $\Delta$.
+- **One ideal is one Peirce copy.** The two ideals are isomorphic, and the copy index is a Peirce corner. Chirality is the side of a basis operator; the basis operator that realises the split has $S$ and $S^{\mathrm{c}}$ as its eigenspaces on $\Delta$.
 - **No dynamics.** Nothing here says how a state moves between the copies in time, or why the chiral mass has the value it has.
 
 ## Summary
@@ -438,7 +438,7 @@ The algebra also splits into two minimal left ideals, the second column $\mathbb
 | $\tilde\Pi_+=\tfrac12(e_t+i\vec e_z)$, $\tilde\Pi_-=e_t-\tilde\Pi_+$ | the vacuum idempotent and its Peirce complement |
 | $\vec\Upsilon_x=\tfrac12(i\vec e_x-\vec e_y)$, $\vec\Upsilon_y=\tfrac12(i\vec e_x+\vec e_y)$ | the nilpotent matrix units $E_{12}$ and $E_{21}$ |
 | $S=\mathbb{B}\tilde\Pi_+=\mathbb{C}\{\tilde\Pi_+,\vec\Upsilon_y\}$ | the spinor space, the Peirce carrier, first column |
-| $S^{\mathrm{c}}$ | the conjugate representation of $S$; the other eigenspace of the chirality cell |
+| $S^{\mathrm{c}}$ | the conjugate representation of $S$; the other eigenspace of the chirality basis operator |
 | $\mathbb{B}\tilde\Pi_-=\mathbb{C}\{\tilde\Pi_-,\vec\Upsilon_x\}$ | the complementary ideal, second column |
 | $\mathbb{B}=S\oplus\mathbb{B}\tilde\Pi_-$ | the Peirce (module) decomposition |
 | $S\vec\Upsilon_x=\mathbb{B}\tilde\Pi_-$ | the module isomorphism, right multiplication |

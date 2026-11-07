@@ -14,7 +14,7 @@ $$
 
 and that this is not an extra assumption but the reflection in the state space of two facts already fixed by the parents: the one-particle space is a complex two-dimensional space, and the bracket is the anticommutator, which the spin–statistics companion fixes by the spin. The two together force the exterior algebra, occupation numbers $0$ and $1$, and the Lorentz decomposition $0\oplus\tfrac12\oplus 0$ over the two spin states of one momentum.
 
-**Notation, by reference.** The algebra $\mathbb{B}$ and its units, the two conjugations ${}^{\natural}$ and ${}^{*}$, the scalar part $\mathrm{Sc}$ and the trace $\operatorname{Tr}$ are those of *Algebra and Element Conventions*, *Product and Form Conventions* and *Norm and Pairing Conventions*; the letters $L$ and $R$ on an element are the subscript of *Operator Chirality on the Biquaternion Algebra*, §*What Operator Chirality Is Not*; the Fock mark $_{\mathrm{fop}}$ is that of *Index and Notation Conventions*. Nothing of this is redefined here. An action is written out, $Q\mapsto aQb$; no operator symbol is used in the body, and the cells return only in the closing legacy section.
+**Notation, by reference.** The algebra $\mathbb{B}$ and its units, the two conjugations ${}^{\natural}$ and ${}^{*}$, the scalar part $\mathrm{Sc}$ and the trace $\operatorname{Tr}$ are those of *Algebra and Element Conventions*, *Product and Form Conventions* and *Norm and Pairing Conventions*; the letters $L$ and $R$ on an element are the subscript of *Operator Chirality on the Biquaternion Algebra*, §*What Operator Chirality Is Not*; the Fock mark $_{\mathrm{fop}}$ is that of *Index and Notation Conventions*. Nothing of this is redefined here. An action is written out, $Q\mapsto aQb$; no operator symbol is used in the body, and the basis operators return only in the closing legacy section.
 
 The article develops five things.
 
@@ -243,7 +243,7 @@ Second, the trace reading is the *algebraic* trace on $\mathbb{B}$, which for th
 
 The Pauli and gamma formulation is legacy: the reasons are explained in the article *Why AXF Matrices instead of Pauli and Gamma Matrices*. The generators carry no frame label: $\gamma_\mu$ is one set of matrices, and the frame is named on the coordinate.
 
-The gamma symbols are used only in this section; every other section writes the same objects as cells. Here $L_a$ and $R_b$ are the left and right multiplications, $L_a\tilde{Ξ}_{\mathrm{sp}}=a\tilde{Ξ}_{\mathrm{sp}}$ and $R_b\tilde{Ξ}_{\mathrm{sp}}=\tilde{Ξ}_{\mathrm{sp}} b$; on the regular module a left multiplication is the cell $L_aR_{\mathrm{pau},e_t}$, so the body's $L_{\tilde Q}$ are the cells whose right factor is the unit. The gammas are a frame of $\mathrm{Cl}_{1,3}(\mathbb{C})=M_4(\mathbb{C})$, not a different algebra, and $c(M)$ is the coefficient matrix of $M$ in the basis of the sixteen products.
+The gamma symbols are used only in this section; every other section writes the same objects as basis operators. Here $L_a$ and $R_b$ are the left and right multiplications, $L_a\tilde{Ξ}_{\mathrm{sp}}=a\tilde{Ξ}_{\mathrm{sp}}$ and $R_b\tilde{Ξ}_{\mathrm{sp}}=\tilde{Ξ}_{\mathrm{sp}} b$; on the regular module a left multiplication is the basis operator $L_aR_{\mathrm{pau},e_t}$, so the body's $L_{\tilde Q}$ are the basis operators whose right factor is the unit. The gammas are a frame of $\mathrm{Cl}_{1,3}(\mathbb{C})=M_4(\mathbb{C})$, not a different algebra, and $c(M)$ is the coefficient matrix of $M$ in the basis of the sixteen products.
 
 $$
 \gamma_0=iL_{\mathrm{pau},e_t}R_{\mathrm{pau},\vec e_x},\quad \gamma_1=iL_{\mathrm{pau},\vec e_x}R_{\mathrm{pau},\vec e_y},\quad \gamma_2=iL_{\mathrm{pau},\vec e_y}R_{\mathrm{pau},\vec e_y},\quad \gamma_3=iL_{\mathrm{pau},\vec e_z}R_{\mathrm{pau},\vec e_y},\quad \gamma_5=-iL_{\mathrm{pau},e_t}R_{\mathrm{pau},\vec e_z} .
@@ -255,7 +255,7 @@ $$
 \gamma_0=iL_{\mathrm{axf},e_t}R_{\mathrm{axf},\vec e_x},\quad \gamma_1=iL_{\mathrm{axf},\vec e_x}R_{\mathrm{axf},\vec e_y},\quad \gamma_2=iL_{\mathrm{axf},\vec e_y}R_{\mathrm{axf},\vec e_y},\quad \gamma_3=iL_{\mathrm{axf},\vec e_z}R_{\mathrm{axf},\vec e_y},\quad \gamma_5=-iL_{\mathrm{axf},e_t}R_{\mathrm{axf},\vec e_z} .
 $$
 
-Each generator is $i$ times a real cell, and multiplying by $i$ trades it back: $i\gamma_0=-L_{\mathrm{pau},e_t}R_{\mathrm{pau},\vec e_x}$ and $i\gamma_k=-L_{\mathrm{pau},\vec e_k}R_{\mathrm{pau},\vec e_y}$. Because $i^2=-1$, the square of a generator is minus the square of its cell, $(iL_aR_b)^2=-L_{a^2}R_{b^2}$, and with $e_t^2=e_t$ and $\vec e_k^2=-e_t$ that one line gives both signs of the frame,
+Each generator is $i$ times a real basis operator, and multiplying by $i$ trades it back: $i\gamma_0=-L_{\mathrm{pau},e_t}R_{\mathrm{pau},\vec e_x}$ and $i\gamma_k=-L_{\mathrm{pau},\vec e_k}R_{\mathrm{pau},\vec e_y}$. Because $i^2=-1$, the square of a generator is minus the square of its basis operator, $(iL_aR_b)^2=-L_{a^2}R_{b^2}$, and with $e_t^2=e_t$ and $\vec e_k^2=-e_t$ that one line gives both signs of the frame,
 
 $$
 \gamma_0^2=-L_{\mathrm{pau},e_t^2}R_{\mathrm{pau},\vec e_x^2}=-L_{\mathrm{pau},e_t}R_{\mathrm{pau},-e_t}=+I_4,
@@ -279,21 +279,21 @@ $$
 \{\gamma_\mu,\gamma_5\}=0,
 $$
 
-with $\varepsilon=(1,-1,-1,-1)$, and the chirality cell is their product,
+with $\varepsilon=(1,-1,-1,-1)$, and the chirality basis operator is their product,
 
 $$
 \gamma_5=i\gamma_0\gamma_1\gamma_2\gamma_3.
 $$
 
-The relations were checked exactly on the cells, where each product is a composition of left and right multiplications, so the check is one of algebra in $\mathbb{B}$ and not of a chosen matrix frame.
+The relations were checked exactly on the basis operators, where each product is a composition of left and right multiplications, so the check is one of algebra in $\mathbb{B}$ and not of a chosen matrix frame.
 
 A single product is a pure tensor; the products form the seven-dimensional cone $\{M:\operatorname{rank}c(M)\le1\}$, and a general element is a sum of at most four, with its **length** $\ell(M)=\operatorname{rank}c(M)$.
 
-$\gamma_5$ is the reference-frame cell of the chirality operator. The central grading $\xi_{\mathrm{ad}}=i\tilde{Ζ}_{\mathrm{ad}}$, with $\tilde{Ζ}_{\mathrm{ad}}$ the central root of $-e_t$ and $\xi_{\mathrm{ad}}$ the difference of the two central idempotents of the complexified algebra, so that $\xi_{\mathrm{ad}}^2=e_t$, is a different object, represented by $\gamma_5$ on the Dirac module.
+$\gamma_5$ is the reference-frame basis operator of the chirality operator. The central grading $\xi_{\mathrm{ad}}=i\tilde{Ζ}_{\mathrm{ad}}$, with $\tilde{Ζ}_{\mathrm{ad}}$ the central root of $-e_t$ and $\xi_{\mathrm{ad}}$ the difference of the two central idempotents of the complexified algebra, so that $\xi_{\mathrm{ad}}^2=e_t$, is a different object, represented by $\gamma_5$ on the Dirac module.
 
-The dictionary is complex-linear; over $\mathbb{R}$ the products span $\mathrm{Cl}_{1,3}(\mathbb{R})\cong M_2(\mathbb{H})$, and the real cells $L_aR_b$, without the central $i$, span $\mathrm{Cl}_{3,1}(\mathbb{R})\cong M_4(\mathbb{R})$.
+The dictionary is complex-linear; over $\mathbb{R}$ the products span $\mathrm{Cl}_{1,3}(\mathbb{R})\cong M_2(\mathbb{H})$, and the real basis operators $L_aR_b$, without the central $i$, span $\mathrm{Cl}_{3,1}(\mathbb{R})\cong M_4(\mathbb{R})$.
 
-**The display.** Every array printed in this section is given twice: in the Peirce display first, labelled $\mathrm{pau}$, whose arrays are the ones the literature prints, and in the axis-free display after it, labelled $\mathrm{axf}$, which is the display of the body and of the corpus. The two are carried into one another by $L_{\mathrm{axf},e_\mu}=C_{\Pi}L_{\mathrm{pau},e_\mu}C_{\Pi}^{-1}$, and a conjugation by $C_{\Pi}$ changes no product, no anticommutator, no trace and no determinant, so every identity of the section holds in both. An array is a statement about one display; a cell named in the running text keeps the Peirce label, and its axis-free array is the conjugate. The label names the array and not the operator.
+**The display.** Every array printed in this section is given twice: in the Peirce display first, labelled $\mathrm{pau}$, whose arrays are the ones the literature prints, and in the axis-free display after it, labelled $\mathrm{axf}$, which is the display of the body and of the corpus. The two are carried into one another by $L_{\mathrm{axf},e_\mu}=C_{\Pi}L_{\mathrm{pau},e_\mu}C_{\Pi}^{-1}$, and a conjugation by $C_{\Pi}$ changes no product, no anticommutator, no trace and no determinant, so every identity of the section holds in both. An array is a statement about one display; a basis operator named in the running text keeps the Peirce label, and its axis-free array is the conjugate. The label names the array and not the operator.
 
 ## Summary
 

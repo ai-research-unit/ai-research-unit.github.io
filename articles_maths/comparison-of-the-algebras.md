@@ -109,7 +109,7 @@ The eight algebras agree in being associative, and differ in every other definin
 | $\mathbb{R}_{\mathbb{H}}, \operatorname{Im}\mathbb{H}$ | the scalar and vector subspaces of $\mathbb{H}$ |
 | $S,V,\mathbb{C}_{\mathrm{spl},2},\mathbb{C}_{\mathrm{spl},3}$ | the four subspaces of $\mathbb{H}_{\mathrm{spl}}$ |
 | $\mathbb{B}_{H}, \mathbb{B}_{\Psi},\mathbb{B}_{\Phi}$ | subspaces of $\mathbb{B}$ |
-| `—` | the empty-cell marker of this category |
+| `—` | the empty-entry marker of this category |
 
 ## Further Reading
 

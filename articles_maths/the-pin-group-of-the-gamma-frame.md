@@ -115,7 +115,7 @@ $$
 A_0=\bar{\cdot},\qquad
 A_k=\bar{\cdot}\circ L_{-i \vec e_k},
 $$
-so the odd generators are the bar and the bar times the three spacelike units. They satisfy the cell relation of *The Star and the Conjugate-Linear Operators of $M_4(\mathbb{C})$*. The finite group is the smallest subgroup of Pin that contains them.
+so the odd generators are the bar and the bar times the three spacelike units. They satisfy the basis operator relation of *The Star and the Conjugate-Linear Operators of $M_4(\mathbb{C})$*. The finite group is the smallest subgroup of Pin that contains them.
 
 **The spin part.** The even group $L(U)$ is a finite subgroup of the even part of Pin. It contains the quaternion group
 $$
@@ -190,13 +190,13 @@ $$
 \gamma_0=iL_{e_t}R_{\vec e_x},\quad \gamma_1=iL_{\vec e_x}R_{\vec e_y},\quad \gamma_2=iL_{\vec e_y}R_{\vec e_y},\quad \gamma_3=iL_{\vec e_z}R_{\vec e_y},\quad \gamma_5=-iL_{e_t}R_{\vec e_z} .
 $$
 
-In the real-linear frame, in which the body writes, the same five are $\gamma_0=\bar{\cdot}$, $\gamma_k=\bar{\cdot}\circ L_{-i\vec e_k}$ for $k=1,2,3$, and $\gamma_5=R_{-i\vec e_z}=-iL_{e_t}R_{\vec e_z}$: the four vectors are antilinear there, and the cells above are their complex-linear form.
+In the real-linear frame, in which the body writes, the same five are $\gamma_0=\bar{\cdot}$, $\gamma_k=\bar{\cdot}\circ L_{-i\vec e_k}$ for $k=1,2,3$, and $\gamma_5=R_{-i\vec e_z}=-iL_{e_t}R_{\vec e_z}$: the four vectors are antilinear there, and the basis operators above are their complex-linear form.
 
 A single product is a pure tensor; the products form the seven-dimensional cone $\operatorname{rank}c(M)\le1$, and a general element is a sum of at most four, with $\ell(M)=\operatorname{rank}c(M)$.
 
-$\gamma_5$ is the reference-frame cell of the chirality operator; the central grading $\chi=i\tilde{Ζ}_{\mathrm{ad}}$ — the difference of the two central idempotents of the complexified algebra, so $\chi^2=e_t$ — is a different object, represented by $\gamma_5$ on the Dirac module.
+$\gamma_5$ is the reference-frame basis operator of the chirality operator; the central grading $\chi=i\tilde{Ζ}_{\mathrm{ad}}$ — the difference of the two central idempotents of the complexified algebra, so $\chi^2=e_t$ — is a different object, represented by $\gamma_5$ on the Dirac module.
 
-The dictionary is complex-linear; over $\mathbb{R}$ the products span $\mathrm{Cl}_{1,3}(\mathbb{R})\cong M_2(\mathbb{H})$ and the cells span $\mathrm{Cl}_{3,1}(\mathbb{R})\cong M_4(\mathbb{R})$.
+The dictionary is complex-linear; over $\mathbb{R}$ the products span $\mathrm{Cl}_{1,3}(\mathbb{R})\cong M_2(\mathbb{H})$ and the basis operators span $\mathrm{Cl}_{3,1}(\mathbb{R})\cong M_4(\mathbb{R})$.
 
 ## Summary
 

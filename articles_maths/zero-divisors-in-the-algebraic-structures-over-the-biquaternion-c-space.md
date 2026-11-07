@@ -307,7 +307,7 @@ On the remarkable subspaces the four null sets are cut to two shapes (*Remarkabl
 
 **The cone is the boundary of the Hermitian level sets.** The level sets of the Hermitian form are the real hyperboloids, the hyperboloid model of hyperbolic space, against the complex hypersurfaces of $\langle\cdot,\cdot\rangle_{\natural}$; on a Lorentzian slice the intersection degenerates to the two nappes of the null cone, and the future nappe is the Hermitian cone (*The Krein Level Sets and the Hyperbolic Structure*). The cone is thus the boundary of the real hyperbolic picture attached to the definite form, and it is the largest nontrivial vanishing set of a square: the natural square $\tilde Q_2\tilde Q_2^{\natural}$ vanishes exactly on the cone, while the sesquilinear square $\tilde Q_2\star\tilde Q_2=\tilde Q_2\tilde Q_2^{*}$ vanishes at the origin alone (*The Squares and the Positive Cone of the Biquaternion Sesqualgebra*).
 
-These five statements are not about the twelve products. They are about the one quadratic form the twelve inherit, and they are the reason the cone is the meeting point of the grid rather than one of its cells.
+These five statements are not about the twelve products. They are about the one quadratic form the twelve inherit, and they are the reason the cone is the meeting point of the grid rather than one of its entries.
 
 ## The One-Sided Inverse Equations
 

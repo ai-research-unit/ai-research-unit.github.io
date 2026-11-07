@@ -122,7 +122,7 @@ The minimal faithful matrix model of the eight algebras climbs from the scalars 
 | $S,V,I_1,I_2$ | the simple quaternion module and the ideals of the regular modules |
 | $R(\cdot)$ | the representation ring of an algebra |
 | $\mathbb{Z},\mathbb{Z}^2$ | the representation rings of the eight algebras |
-| `—` | an empty cell, stated and never filled |
+| `—` | an empty entry, stated and never filled |
 
 ## Further Reading
 

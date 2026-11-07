@@ -198,7 +198,7 @@ $$
 \gamma_1\gamma_2\gamma_3=ij .
 $$
 
-The native object is the triple $(\vec e_x,\vec e_y,\vec e_z)$ of quaternion units; a generator is one of them multiplied by $i\,j$, and a product of two is minus a quaternion unit. Each generator acts by left multiplication on the algebra, one cell of the two-sided family $L_aR_b$.
+The native object is the triple $(\vec e_x,\vec e_y,\vec e_z)$ of quaternion units; a generator is one of them multiplied by $i\,j$, and a product of two is minus a quaternion unit. Each generator acts by left multiplication on the algebra, one basis operator of the two-sided family $L_aR_b$.
 
 The dictionary is complex-linear; over $\mathbb{R}$ the generators $E_\mu=j\vec e_\mu$ span $\mathrm{Cl}_{0,3}(\mathbb{R})\cong\mathbb{H}\oplus\mathbb{H}$.
 

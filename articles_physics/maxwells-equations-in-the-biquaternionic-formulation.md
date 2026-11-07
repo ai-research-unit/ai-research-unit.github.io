@@ -4,11 +4,11 @@
 
 Maxwell's equations are the clearest illustration of why the biquaternionic formulation is natural. In their biquaternionic form, they collapse into a single equation relating a biquaternionic field strength to a biquaternionic source. With the $i r'_t$ structure built into the Minkowski subspace, the biquaternionic structure becomes manifest, and the Lorentz invariance of electromagnetism appears as a rotor conjugation in the Minkowski subspace.
 
-This article develops the biquaternionic formulation of Maxwell's equations in a material medium characterized by permittivity $\epsilon$ and permeability $\mu$, then takes the vacuum limit $\epsilon = \epsilon_0$, $\mu = \mu_0$. The presentation proceeds in the natural order: first the standard Maxwell equations in three-vector form, then the potential biquaternion $\tilde{A}_{\Phi}$, then the biquaternionic gradient $\tilde{\nabla}$, then the field-strength biquaternion $\tilde{F}$, and finally the single biquaternionic equation that replaces the four standard Maxwell equations. It then works through the retarded Green's function, the three-vector and stationary forms, the gauge structure, the hydrodynamic correspondence, the relation between the two formulations and the matrix route that sits inside it, the author's variant with its added scalar, the biquaternionic energy–momentum and the energy law it satisfies, the Lorentz transformation of the potential, the vacuum limit and the question of what is fundamental, the field bivector against the field operator, the vacuum equation read as a Cauchy–Riemann condition, the internal freedom that equation leaves, and the complexified extension; it closes with the frame cells that give the gamma names.
+This article develops the biquaternionic formulation of Maxwell's equations in a material medium characterized by permittivity $\epsilon$ and permeability $\mu$, then takes the vacuum limit $\epsilon = \epsilon_0$, $\mu = \mu_0$. The presentation proceeds in the natural order: first the standard Maxwell equations in three-vector form, then the potential biquaternion $\tilde{A}_{\Phi}$, then the biquaternionic gradient $\tilde{\nabla}$, then the field-strength biquaternion $\tilde{F}$, and finally the single biquaternionic equation that replaces the four standard Maxwell equations. It then works through the retarded Green's function, the three-vector and stationary forms, the gauge structure, the hydrodynamic correspondence, the relation between the two formulations and the matrix route that sits inside it, the author's variant with its added scalar, the biquaternionic energy–momentum and the energy law it satisfies, the Lorentz transformation of the potential, the vacuum limit and the question of what is fundamental, the field bivector against the field operator, the vacuum equation read as a Cauchy–Riemann condition, the internal freedom that equation leaves, and the complexified extension; it closes with the frame basis operators that give the gamma names.
 
 Throughout this article, the symbol $c$ denotes the **speed of light in the medium**: $c = 1/\sqrt{\epsilon\mu}$. In vacuum, $c$ reduces to the constant vacuum speed of light $c_0 = 1/\sqrt{\epsilon_0\mu_0}$. The symbol $v$ (and $\vec v$) is reserved for particle and frame velocities; the fluid velocity is $\vec v_f$ and the boost velocity is $\vec v_b$. This convention keeps the notation consistent with relativistic mechanics, where $c$ is the speed of light and $v$ is a velocity.
 
-The algebra, its units and its central imaginary are those of *Algebra and Element Conventions*, §*The Base and Its Units*: the scalar $i$ is central, and a product of two factors of $i$ is a sign, so every display below is reduced with $i^2 = -1$ rather than left with a doubled $i$. The body is written in elements and in the products of the algebra; the one exception is the reported matrix display of *A fourth route* below, which is the object of that subsection and of nothing else. The gamma names appear only in *The Legacy Pauli Gamma Formulation*, where they name frame cells and where the same rule fixes their signs.
+The algebra, its units and its central imaginary are those of *Algebra and Element Conventions*, §*The Base and Its Units*: the scalar $i$ is central, and a product of two factors of $i$ is a sign, so every display below is reduced with $i^2 = -1$ rather than left with a doubled $i$. The body is written in elements and in the products of the algebra; the one exception is the reported matrix display of *A fourth route* below, which is the object of that subsection and of nothing else. The gamma names appear only in *The Legacy Pauli Gamma Formulation*, where they name frame basis operators and where the same rule fixes their signs.
 
 ## Maxwell's Equations in a Material Medium
 
@@ -665,7 +665,7 @@ $$
 \tilde U = \cosh\frac{\theta_{\mathrm{rpd}}}{2} + i\sinh\frac{\theta_{\mathrm{rpd}}}{2}\,\vec u = \exp\!\left(\frac{\tilde{Ξ}_{\mathrm{sp}}}{2}\,i\vec u\right),
 $$
 
-with the rapidity $\theta_{\mathrm{rpd}}$ related to the velocity by $\tanh\theta_{\mathrm{rpd}} = v_b/c$, and $\vec u = \vec v_b/v_b$ the unit vector in the direction of the boost. The Lorentz factor — a number, not a frame cell, and unrelated to the $\gamma$ names of *The Legacy Pauli Gamma Formulation* below — is
+with the rapidity $\theta_{\mathrm{rpd}}$ related to the velocity by $\tanh\theta_{\mathrm{rpd}} = v_b/c$, and $\vec u = \vec v_b/v_b$ the unit vector in the direction of the boost. The Lorentz factor — a number, not a frame basis operator, and unrelated to the $\gamma$ names of *The Legacy Pauli Gamma Formulation* below — is
 
 $$
 \gamma = \frac{1}{\sqrt{1 - v_b^2/c^2}} = \cosh\theta_{\mathrm{rpd}} .
@@ -816,7 +816,7 @@ This is the natural generalization of the $i r'_t$ structure. The electromagneti
 
 The Pauli and gamma formulation is legacy: the reasons are explained in the article *Why AXF Matrices instead of Pauli and Gamma Matrices*. The generators carry no frame label: $\gamma_\mu$ is one set of matrices, and the frame is named on the coordinate.
 
-The body writes its operators as cells $L_aR_b$, a left multiplication followed by a right one: $L_a$ multiplies on the left by $a$ and $R_b$ on the right by $b$. The gamma names are the names of the frame cells. Two cells multiply by multiplying the left factors and the right factors, the right factors in reverse order,
+The body writes its operators as basis operators $L_aR_b$, a left multiplication followed by a right one: $L_a$ multiplies on the left by $a$ and $R_b$ on the right by $b$. The gamma names are the names of the frame basis operators. Two basis operators multiply by multiplying the left factors and the right factors, the right factors in reverse order,
 
 $$
 L_aR_b\,L_cR_d=L_{ac}R_{db},
@@ -842,7 +842,7 @@ $$
 \gamma_0^2=+I_4,\qquad \gamma_1^2=\gamma_2^2=\gamma_3^2=-I_4,\qquad \gamma_5^2=+I_4,
 $$
 
-with $\{\gamma_\mu,\gamma_\nu\}=2\varepsilon_\mu\delta_{\mu\nu}I_4$, $\varepsilon=(1,-1,-1,-1)$, and $\{\gamma_5,\gamma_\mu\}=0$. The four frame cells multiply to $-i\gamma_5$, that is, $\gamma_5$ is $i$ times their product,
+with $\{\gamma_\mu,\gamma_\nu\}=2\varepsilon_\mu\delta_{\mu\nu}I_4$, $\varepsilon=(1,-1,-1,-1)$, and $\{\gamma_5,\gamma_\mu\}=0$. The four frame basis operators multiply to $-i\gamma_5$, that is, $\gamma_5$ is $i$ times their product,
 
 $$
 \gamma_0\gamma_1\gamma_2\gamma_3=-i\gamma_5,
@@ -850,7 +850,7 @@ $$
 \gamma_5=i\gamma_0\gamma_1\gamma_2\gamma_3 .
 $$
 
-The single $i$ in a generator is also what makes a doubled $i$ collapse: multiplying a generator by $i$ returns a plain cell,
+The single $i$ in a generator is also what makes a doubled $i$ collapse: multiplying a generator by $i$ returns a plain basis operator,
 
 $$
 i\gamma_\mu=-L_{\mathrm{pau},e_\mu}R_{\mathrm{pau},\vec e_{\nu(\mu)}},
@@ -870,13 +870,13 @@ $$
 F(\;)=\tfrac12\bigl(R_{\tilde F}-L_{\tilde F}\bigr).
 $$
 
-$\gamma_5$ is the reference-frame cell of the chirality operator. The central grading $\chi=i\tilde{Ζ}_{\mathrm{ad}}$ — the difference of the two central idempotents of the complexified algebra, so $\chi^2=e_t$ — is a different object, represented by $\gamma_5$ on the Dirac module.
+$\gamma_5$ is the reference-frame basis operator of the chirality operator. The central grading $\chi=i\tilde{Ζ}_{\mathrm{ad}}$ — the difference of the two central idempotents of the complexified algebra, so $\chi^2=e_t$ — is a different object, represented by $\gamma_5$ on the Dirac module.
 
-**The two-sided structure, and the two Dirac equations.** The cells come in two families, $L$ and $R$, and that is what separates the corpus's two Dirac equations of *Biquaternion Representation of Spin One-Half and the Relativistic One-Electron Atom*. The one-sided equation acts with the left family alone, $L_{\tilde\nabla}\tilde{Ξ}_{\mathrm{sp},R}=\frac{k_m}{\tilde{Ξ}_{\mathrm{sp},L}}$ and $L_{\tilde\nabla^{\natural}}\tilde{Ξ}_{\mathrm{sp},L}=\frac{k_m}{\tilde{Ξ}_{\mathrm{sp},R}}$, and it splits the field into its two chirality halves. The two-sided equation carries the mass through the right family, $iL_{\mathrm{pau},e_t}\partial/\partial r'_t\,F+\sum_kL_{\mathrm{pau},\vec e_k}\partial/\partial R_k\,F-mi\,R_{\mathrm{pau},\vec e_z}\overline{F}=0$; its chirality sits in that right multiplication, and its mass term is **antilinear**, the complex conjugation $\overline{F}$ being what the right cell acts on. The two share the frame and not the operator. The field operator of *The Field Bivector and the Field Operator* above is the third object of the same kind, $\tfrac12(R_{\tilde F}-L_{\tilde F})$, one cell from each family, antisymmetrised. In this article the field equation is written with the element; the operators of *The Field Bivector and the Field Operator* above are written as actions on an argument, and the gamma names are attached to the frame cells here and nowhere else. Here $\hbar/(mc)$ is the mass length.
+**The two-sided structure, and the two Dirac equations.** The basis operators come in two families, $L$ and $R$, and that is what separates the corpus's two Dirac equations of *Biquaternion Representation of Spin One-Half and the Relativistic One-Electron Atom*. The one-sided equation acts with the left family alone, $L_{\tilde\nabla}\tilde{Ξ}_{\mathrm{sp},R}=\frac{k_m}{\tilde{Ξ}_{\mathrm{sp},L}}$ and $L_{\tilde\nabla^{\natural}}\tilde{Ξ}_{\mathrm{sp},L}=\frac{k_m}{\tilde{Ξ}_{\mathrm{sp},R}}$, and it splits the field into its two chirality halves. The two-sided equation carries the mass through the right family, $iL_{\mathrm{pau},e_t}\partial/\partial r'_t\,F+\sum_kL_{\mathrm{pau},\vec e_k}\partial/\partial R_k\,F-mi\,R_{\mathrm{pau},\vec e_z}\overline{F}=0$; its chirality sits in that right multiplication, and its mass term is **antilinear**, the complex conjugation $\overline{F}$ being what the right basis operator acts on. The two share the frame and not the operator. The field operator of *The Field Bivector and the Field Operator* above is the third object of the same kind, $\tfrac12(R_{\tilde F}-L_{\tilde F})$, one basis operator from each family, antisymmetrised. In this article the field equation is written with the element; the operators of *The Field Bivector and the Field Operator* above are written as actions on an argument, and the gamma names are attached to the frame basis operators here and nowhere else. Here $\hbar/(mc)$ is the mass length.
 
-The dictionary is complex-linear; over $\mathbb{R}$ the products span $\mathrm{Cl}_{1,3}(\mathbb{R})\cong M_2(\mathbb{H})$ and the cells span $\mathrm{Cl}_{3,1}(\mathbb{R})\cong M_4(\mathbb{R})$.
+The dictionary is complex-linear; over $\mathbb{R}$ the products span $\mathrm{Cl}_{1,3}(\mathbb{R})\cong M_2(\mathbb{H})$ and the basis operators span $\mathrm{Cl}_{3,1}(\mathbb{R})\cong M_4(\mathbb{R})$.
 
-**The display.** Every array printed in this section is given twice: in the Peirce display first, labelled $\mathrm{pau}$, whose arrays are the ones the literature prints, and in the axis-free display after it, labelled $\mathrm{axf}$, which is the display of the body and of the corpus. The two are carried into one another by $L_{\mathrm{axf},e_\mu}=C_{\Pi}L_{\mathrm{pau},e_\mu}C_{\Pi}^{-1}$, and a conjugation by $C_{\Pi}$ changes no product, no anticommutator, no trace and no determinant, so every identity of the section holds in both. An array is a statement about one display; a cell named in the running text keeps the Peirce label, and its axis-free array is the conjugate. The label names the array and not the operator.
+**The display.** Every array printed in this section is given twice: in the Peirce display first, labelled $\mathrm{pau}$, whose arrays are the ones the literature prints, and in the axis-free display after it, labelled $\mathrm{axf}$, which is the display of the body and of the corpus. The two are carried into one another by $L_{\mathrm{axf},e_\mu}=C_{\Pi}L_{\mathrm{pau},e_\mu}C_{\Pi}^{-1}$, and a conjugation by $C_{\Pi}$ changes no product, no anticommutator, no trace and no determinant, so every identity of the section holds in both. An array is a statement about one display; a basis operator named in the running text keeps the Peirce label, and its axis-free array is the conjugate. The label names the array and not the operator.
 
 ## Summary
 

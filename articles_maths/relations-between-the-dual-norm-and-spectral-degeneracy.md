@@ -8,11 +8,11 @@ $$
 D=\{a+b\varepsilon : b\neq0\}=\mathbb{C}_{\mathrm{dln},R}\setminus R\cdot1.
 $$
 
-This article compares the norm and the defect. The comparison has a sharp answer. A unit can be defective: every $a+b\varepsilon$ with $a\neq0$ and $b\neq0$ is a unit and has minimal polynomial $(X-a)^2$. The only semisimple non-unit is the origin. Consequently the two invariants are independent only in the direction of the unit group: the combination "unit and defective" is open and dense, while the combination "non-unit and semisimple" is a single point. The sector table has three non-empty cells and one empty one when read on the non-zero elements, the empty cell being the origin. The chain of invariants runs from the element through the minimal polynomial and the characteristic polynomial to the norm, and each step forgets something: the minimal polynomial forgets the value of the infinitesimal part, the characteristic polynomial forgets the defect, and the norm forgets the sign of the eigenvalue.
+This article compares the norm and the defect. The comparison has a sharp answer. A unit can be defective: every $a+b\varepsilon$ with $a\neq0$ and $b\neq0$ is a unit and has minimal polynomial $(X-a)^2$. The only semisimple non-unit is the origin. Consequently the two invariants are independent only in the direction of the unit group: the combination "unit and defective" is open and dense, while the combination "non-unit and semisimple" is a single point. The sector table has three non-empty sectors and one empty one when read on the non-zero elements, the empty sector being the origin. The chain of invariants runs from the element through the minimal polynomial and the characteristic polynomial to the norm, and each step forgets something: the minimal polynomial forgets the value of the infinitesimal part, the characteristic polynomial forgets the defect, and the norm forgets the sign of the eigenvalue.
 
 **Notation and scope.** The algebra is $\mathbb{C}_{\mathrm{dln},R}$ over a real closed field $R$, with the geometric case $R=\mathbb{R}$; a general element is $Q=a+b\varepsilon$ with $a=\operatorname{Re}Q$ and $b=\operatorname{Inf}Q$, equal to $q+\varepsilon q'$ in the prime notation of *Dual-Numbers Algebra*. The norm is $\langle Q\rangle=Q\bar Q=a^2$, the conjugation is $\bar Q=a-b\varepsilon$, and $\mathrm{M}=(\varepsilon)=\{a=0\}$. The spectral theory is *Spectral Regularity and Degeneracy in the Dual-Number Algebra*, the defect is *The Defective Sector of the Dual-Number Algebra*, and the norm is *Dual-Numbers Norm and Invertibility*. The four sectors of the biquaternion algebra, used only for comparison at the end, are *Relations between the N Norm and Spectral Regularity and Degeneracy*.
 
-**A word on the two tables.** The **norm/spectrum** table of article 1 has two empty cells, $\Sigma_{11}$ and $\Sigma_{01}$, because spectral regularity is impossible in $\mathbb{C}_{\mathrm{dln},R}$. The table of this article that has three non-empty cells and one empty one is the **norm/defect** table, not the norm/spectrum table. The two tables are distinguished in §*The Sector Tables*.
+**A word on the two tables.** The **norm/spectrum** table of article 1 has two empty sectors, $\Sigma_{11}$ and $\Sigma_{01}$, because spectral regularity is impossible in $\mathbb{C}_{\mathrm{dln},R}$. The table of this article that has three non-empty sectors and one empty one is the **norm/defect** table, not the norm/spectrum table. The two tables are distinguished in §*The Sector Tables*.
 
 ## The Norm
 
@@ -144,7 +144,7 @@ and the two invariants are the two coordinates of this decomposition: the norm d
 
 ## The Sector Tables
 
-**The norm/spectrum table has two empty cells; the norm/defect table has three non-empty cells and one empty one on the non-zero elements.**
+**The norm/spectrum table has two empty sectors; the norm/defect table has three non-empty sectors and one empty one on the non-zero elements.**
 
 **Definition (the norm/spectrum sectors).** For $i,j\in\{0,1\}$, the sector $\Sigma_{ij}$ is the set of elements with $\langle Q\rangle\neq0$ if $i=1$ and $\langle Q\rangle=0$ if $i=0$, and with $Q$ spectrally regular if $j=1$ and spectrally degenerate if $j=0$.
 
@@ -182,9 +182,9 @@ $$
 | **norm-regular** | $T_{11}=R^\times$ | $T_{10}=D_1$ |
 | **norm-degenerate** | $T_{01}=\{0\}$ | $T_{00}=\mathrm{M}\setminus\{0\}$ |
 
-**Corollary (the count).** The norm/defect table has four non-empty cells if the origin is counted, and three non-empty cells and one empty one when it is read on the non-zero elements. The empty cell is $T_{01}=\{0\}$, the single semisimple non-unit. The three non-empty cells are the punctured real axis, the open dense set of defective units, and the punctured maximal ideal. The norm/spectrum table, by contrast, has two non-empty cells and two empty ones.
+**Corollary (the count).** The norm/defect table has four non-empty sectors if the origin is counted, and three non-empty sectors and one empty one when it is read on the non-zero elements. The empty sector is $T_{01}=\{0\}$, the single semisimple non-unit. The three non-empty sectors are the punctured real axis, the open dense set of defective units, and the punctured maximal ideal. The norm/spectrum table, by contrast, has two non-empty sectors and two empty ones.
 
-*Proof.* The identifications are the theorem; the only cell that disappears on removing the origin is $T_{01}$.
+*Proof.* The identifications are the theorem; the only sector that disappears on removing the origin is $T_{01}$.
 
 **Remark (the refinement).** The norm/defect table refines the norm/spectrum table:
 
@@ -193,7 +193,7 @@ $$
 \Sigma_{00}=T_{01}\sqcup T_{00}.
 $$
 
-The norm/spectrum table collapses the defect distinction inside the units and inside the maximal ideal. The norm/defect table keeps it, and it is the table in which the three non-empty cells and the empty one are visible.
+The norm/spectrum table collapses the defect distinction inside the units and inside the maximal ideal. The norm/defect table keeps it, and it is the table in which the three non-empty sectors and the empty one are visible.
 
 ## The Chain of Invariants
 
@@ -248,7 +248,7 @@ The count of patterns is the count of degeneration types, not of values: the cha
 
 The norm is $\langle Q\rangle=a^2$, a degenerate quadratic form of rank one, multiplicative, with radical $\mathrm{M}$, non-zero exactly on the units and blind to the infinitesimal part. The defect is the failure of an eigenbasis, decided by the minimal polynomial; the defective set is $D=\{b\neq0\}=\mathbb{C}_{\mathrm{dln}}\setminus R\cdot1$, blind to the real part and carried by the nilpotent part $b\varepsilon\in\mathrm{M}$. The punctured maximal ideal is the nilpotent stratum, not the whole defective set.
 
-The interaction is exhausted by four statements: a non-zero norm-degenerate element is defective; a non-zero semisimple element is a unit; a unit can be defective ($1+\varepsilon$ is the simplest witness); and the only semisimple non-unit is the origin. Hence $\mathbb{C}_{\mathrm{dln}}=R^\times\sqcup D_1\sqcup(\mathrm{M}\setminus\{0\})\sqcup\{0\}$. The norm/spectrum table has two empty cells, $\Sigma_{11}$ and $\Sigma_{01}$, and two non-empty cells, $\Sigma_{10}$ and $\Sigma_{00}$. The norm/defect table has $T_{11}=R^\times$, $T_{10}=D_1$, $T_{01}=\{0\}$, $T_{00}=\mathrm{M}\setminus\{0\}$; on the non-zero elements it has three non-empty cells and one empty one, the empty cell being the origin.
+The interaction is exhausted by four statements: a non-zero norm-degenerate element is defective; a non-zero semisimple element is a unit; a unit can be defective ($1+\varepsilon$ is the simplest witness); and the only semisimple non-unit is the origin. Hence $\mathbb{C}_{\mathrm{dln}}=R^\times\sqcup D_1\sqcup(\mathrm{M}\setminus\{0\})\sqcup\{0\}$. The norm/spectrum table has two empty sectors, $\Sigma_{11}$ and $\Sigma_{01}$, and two non-empty sectors, $\Sigma_{10}$ and $\Sigma_{00}$. The norm/defect table has $T_{11}=R^\times$, $T_{10}=D_1$, $T_{01}=\{0\}$, $T_{00}=\mathrm{M}\setminus\{0\}$; on the non-zero elements it has three non-empty sectors and one empty one, the empty sector being the origin.
 
 The chain is $(a,b)\mapsto m_Q\mapsto p_Q\mapsto\langle Q\rangle$. The minimal polynomial fixes the eigenvalue and the defect bit but not $b$; the characteristic polynomial is $(X-a)^2$ in both defect cases, so it loses the defect, and it has one independent coefficient because the norm is the square of half the trace; the norm loses the sign of the eigenvalue. The minimal polynomial is the first invariant that sees the defect, and the norm is the last that still sees the eigenvalue, up to sign.
 

@@ -8,7 +8,7 @@ The distinction is a consequence of a fact that is easy to miss: the Clifford em
 $$
 \mathsf{M}_4:\mathbb{B}\longrightarrow \mathrm{Cl}^{+}(1,3)\subset M_4(\mathbb{C})
 $$
-is **real-linear, not complex-linear**. The central imaginary $i$ of $\mathbb{B}$ maps to the pseudoscalar cell $L_{\mathrm{pau},e_t}R_{\mathrm{pau},\vec e_z}$, not to $iI$:
+is **real-linear, not complex-linear**. The central imaginary $i$ of $\mathbb{B}$ maps to the pseudoscalar basis operator $L_{\mathrm{pau},e_t}R_{\mathrm{pau},\vec e_z}$, not to $iI$:
 $$
 \mathsf{M}_4(ib)=\mathsf{M}_4(i)\mathsf{M}_4(b)=L_{\mathrm{pau},e_t}R_{\mathrm{pau},\vec e_z}\,\mathsf{M}_4(b).
 $$
@@ -18,7 +18,7 @@ This article computes the two traces, proves the identity
 $$
 \operatorname{Tr}_{\mathrm{reg}}=\operatorname{Tr}_{\Delta}+\operatorname{Tr}_{\Delta,5},
 $$
-identifies the two coordinates of the two-sided basis that carry them, and states the vanishing on the odd sector. The five frame cells $iL_{\mathrm{pau},e_t}R_{\mathrm{pau},\vec e_x},iL_{\mathrm{pau},\vec e_x}R_{\mathrm{pau},\vec e_y},iL_{\mathrm{pau},\vec e_y}R_{\mathrm{pau},\vec e_y},iL_{\mathrm{pau},\vec e_z}R_{\mathrm{pau},\vec e_y}$ and the pseudoscalar cell $-iL_{\mathrm{pau},e_t}R_{\mathrm{pau},\vec e_z}$, and the $\mathsf{M}_4$ map, are those of *The Gamma Frame and the Complexified Dirac Algebra of $M_4(\mathbb{C})$* and *Matrix Representations Conventions*; the two-sided basis is *The Two-Sided Operators Method to Build $M_4(\mathbb{C})$*; the chirality is *The Two Chiralities of $M_4(\mathbb{C})$*.
+identifies the two coordinates of the two-sided basis that carry them, and states the vanishing on the odd sector. The five frame basis operators $iL_{\mathrm{pau},e_t}R_{\mathrm{pau},\vec e_x},iL_{\mathrm{pau},\vec e_x}R_{\mathrm{pau},\vec e_y},iL_{\mathrm{pau},\vec e_y}R_{\mathrm{pau},\vec e_y},iL_{\mathrm{pau},\vec e_z}R_{\mathrm{pau},\vec e_y}$ and the pseudoscalar basis operator $-iL_{\mathrm{pau},e_t}R_{\mathrm{pau},\vec e_z}$, and the $\mathsf{M}_4$ map, are those of *The Gamma Frame and the Complexified Dirac Algebra of $M_4(\mathbb{C})$* and *Matrix Representations Conventions*; the two-sided basis is *The Two-Sided Operators Method to Build $M_4(\mathbb{C})$*; the chirality is *The Two Chiralities of $M_4(\mathbb{C})$*.
 
 ## The Real-Linear Embedding
 
@@ -55,7 +55,7 @@ $$
 \operatorname{tr}\mathsf{M}_4(a)=4a_0,\qquad
 \operatorname{tr}\bigl((-iL_{\mathrm{pau},e_t}R_{\mathrm{pau},\vec e_z})\mathsf{M}_4(a)\bigr)=0,
 $$
-because the trace pairing is orthogonal on the sixteen cells, $\operatorname{tr}(L_{\mathrm{pau},e_\mu}R_{\mathrm{pau},e_\nu} L_{\mathrm{pau},e_\rho}R_{\mathrm{pau},e_\tau})=4\,g_{\mu\mu}g_{\nu\nu}\delta_{\mu\rho}\delta_{\nu\tau}$, so the functional $\operatorname{tr}\bigl((-iL_{\mathrm{pau},e_t}R_{\mathrm{pau},\vec e_z})\,\cdot\bigr)$ reads only the $L_{\mathrm{pau},e_t}R_{\mathrm{pau},\vec e_z}$ coordinate, and $\mathsf{M}_4(a)$ has none.
+because the trace pairing is orthogonal on the sixteen basis operators, $\operatorname{tr}(L_{\mathrm{pau},e_\mu}R_{\mathrm{pau},e_\nu} L_{\mathrm{pau},e_\rho}R_{\mathrm{pau},e_\tau})=4\,g_{\mu\mu}g_{\nu\nu}\delta_{\mu\rho}\delta_{\nu\tau}$, so the functional $\operatorname{tr}\bigl((-iL_{\mathrm{pau},e_t}R_{\mathrm{pau},\vec e_z})\,\cdot\bigr)$ reads only the $L_{\mathrm{pau},e_t}R_{\mathrm{pau},\vec e_z}$ coordinate, and $\mathsf{M}_4(a)$ has none.
 
 **The imaginary part.** For the imaginary quaternion $ia'$,
 $$
@@ -130,9 +130,9 @@ $$
 \qquad
 \operatorname{tr}\bigl((-iL_{\mathrm{pau},e_t}R_{\mathrm{pau},\vec e_z})L_{\mathrm{pau},e_\mu}R_{\mathrm{pau},e_\nu}\bigr)=4i\,\delta_{\mu t}\delta_{\nu z},
 $$
-because $L_{\mathrm{pau},e_t}R_{\mathrm{pau},e_t}=I$, $L_{\mathrm{pau},e_t}R_{\mathrm{pau},\vec e_z}$ is the pseudoscalar cell, and every other $L_{\mathrm{pau},e_\mu}R_{\mathrm{pau},e_\nu}$ is a vector, bivector or trivector product.
+because $L_{\mathrm{pau},e_t}R_{\mathrm{pau},e_t}=I$, $L_{\mathrm{pau},e_t}R_{\mathrm{pau},\vec e_z}$ is the pseudoscalar basis operator, and every other $L_{\mathrm{pau},e_\mu}R_{\mathrm{pau},e_\nu}$ is a vector, bivector or trivector product.
 
-**Proof.** The table of *The $\mathbb{Z}$-Grading and the Odd Slot of $M_4(\mathbb{C})$* gives $L_{\mathrm{pau},e_t}R_{\mathrm{pau},e_t}=I$, the pseudoscalar $L_{\mathrm{pau},e_t}R_{\mathrm{pau},\vec e_z}$, and the other fourteen as vectors, bivectors or trivectors. The trace of every graded cell other than $I$ and $L_{\mathrm{pau},e_t}R_{\mathrm{pau},\vec e_z}$ is zero, and $L_{\mathrm{pau},e_t}R_{\mathrm{pau},\vec e_z}$ times a vector, bivector or trivector is again one of those. Only $I$ and $L_{\mathrm{pau},e_t}R_{\mathrm{pau},\vec e_z}$ survive: $\operatorname{tr}I=4$ and $\operatorname{tr}\bigl((-iL_{\mathrm{pau},e_t}R_{\mathrm{pau},\vec e_z})L_{\mathrm{pau},e_t}R_{\mathrm{pau},\vec e_z}\bigr)=4i$.
+**Proof.** The table of *The $\mathbb{Z}$-Grading and the Odd Slot of $M_4(\mathbb{C})$* gives $L_{\mathrm{pau},e_t}R_{\mathrm{pau},e_t}=I$, the pseudoscalar $L_{\mathrm{pau},e_t}R_{\mathrm{pau},\vec e_z}$, and the other fourteen as vectors, bivectors or trivectors. The trace of every graded basis operator other than $I$ and $L_{\mathrm{pau},e_t}R_{\mathrm{pau},\vec e_z}$ is zero, and $L_{\mathrm{pau},e_t}R_{\mathrm{pau},\vec e_z}$ times a vector, bivector or trivector is again one of those. Only $I$ and $L_{\mathrm{pau},e_t}R_{\mathrm{pau},\vec e_z}$ survive: $\operatorname{tr}I=4$ and $\operatorname{tr}\bigl((-iL_{\mathrm{pau},e_t}R_{\mathrm{pau},\vec e_z})L_{\mathrm{pau},e_t}R_{\mathrm{pau},\vec e_z}\bigr)=4i$.
 
 **The reading on the basis.** For
 $$
@@ -143,7 +143,7 @@ $$
 \operatorname{tr}A=4c_{tt},\qquad
 \operatorname{tr}\bigl((-iL_{\mathrm{pau},e_t}R_{\mathrm{pau},\vec e_z})A\bigr)=4i\,c_{tz}.
 $$
-The vector trace reads the coefficient of $L_{\mathrm{pau},e_t}R_{\mathrm{pau},e_t}=I$; the axial trace reads the coefficient of $L_{\mathrm{pau},e_t}R_{\mathrm{pau},\vec e_z}$, the pseudoscalar cell. The other fourteen coordinates are invisible to both. This is the exact content of the statement that the traces see only the scalar and the pseudoscalar.
+The vector trace reads the coefficient of $L_{\mathrm{pau},e_t}R_{\mathrm{pau},e_t}=I$; the axial trace reads the coefficient of $L_{\mathrm{pau},e_t}R_{\mathrm{pau},\vec e_z}$, the pseudoscalar basis operator. The other fourteen coordinates are invisible to both. This is the exact content of the statement that the traces see only the scalar and the pseudoscalar.
 
 **The biquaternion coordinates.** For $A=\mathsf{M}_4(b)$,
 $$
@@ -164,7 +164,7 @@ $$
 \operatorname{tr}\bigl((-iL_{\mathrm{pau},e_t}R_{\mathrm{pau},\vec e_z})\mathsf{M}_4(X)\bigr)=0 .
 $$
 
-**Proof.** In the chiral basis the pseudoscalar cell reads $-iL_{\mathrm{pau},e_t}R_{\mathrm{pau},\vec e_z}=\operatorname{diag}(I_2,-I_2)$; an odd element is off-diagonal, so its trace is zero. The product $(-iL_{\mathrm{pau},e_t}R_{\mathrm{pau},\vec e_z})X$ is also off-diagonal, so its trace is zero.
+**Proof.** In the chiral basis the pseudoscalar basis operator reads $-iL_{\mathrm{pau},e_t}R_{\mathrm{pau},\vec e_z}=\operatorname{diag}(I_2,-I_2)$; an odd element is off-diagonal, so its trace is zero. The product $(-iL_{\mathrm{pau},e_t}R_{\mathrm{pau},\vec e_z})X$ is also off-diagonal, so its trace is zero.
 
 **The reading.** The odd sector is invisible to both traces. The vector and axial traces see the even part only, and within the even part they see only the scalar and the pseudoscalar. This is why a trace cannot detect the odd generator: the odd generator is not an element of the biquaternion algebra but an operation on the module, and its contribution to a closed trace vanishes.
 
@@ -172,7 +172,7 @@ $$
 
 ## The Sign Conventions
 
-**The pseudoscalar cell.** The article uses
+**The pseudoscalar basis operator.** The article uses
 $$
 -iL_{\mathrm{pau},e_t}R_{\mathrm{pau},\vec e_z}=i\,(iL_{\mathrm{pau},e_t}R_{\mathrm{pau},\vec e_x})(iL_{\mathrm{pau},\vec e_x}R_{\mathrm{pau},\vec e_y})(iL_{\mathrm{pau},\vec e_y}R_{\mathrm{pau},\vec e_y})(iL_{\mathrm{pau},\vec e_z}R_{\mathrm{pau},\vec e_y}),\qquad
 (-iL_{\mathrm{pau},e_t}R_{\mathrm{pau},\vec e_z})^2=I,\qquad
@@ -180,7 +180,7 @@ P_{\pm}=\tfrac12(I\mp iL_{\mathrm{pau},e_t}R_{\mathrm{pau},\vec e_z}),
 $$
 and the embedding $\mathsf{M}_4(i)=L_{\mathrm{pau},e_t}R_{\mathrm{pau},\vec e_z}$. The opposite sign of $L_{\mathrm{pau},e_t}R_{\mathrm{pau},\vec e_z}$ exchanges $P_+$ and $P_-$ and changes the sign of the axial trace; the identity $\operatorname{Tr}_{\mathrm{reg}}=\operatorname{Tr}_{\Delta}+\operatorname{Tr}_{\Delta,5}$ is invariant under the exchange, because both the axial trace and the chiral difference change sign. The absolute statement is the pair, not the sign of either member.
 
-**The trace of the pseudoscalar cell.** Its trace is zero:
+**The trace of the pseudoscalar basis operator.** Its trace is zero:
 $$
 \operatorname{tr}L_{\mathrm{pau},e_t}R_{\mathrm{pau},\vec e_z}=0 .
 $$
@@ -200,9 +200,9 @@ $$
 
 A single product is a pure tensor; the products form the seven-dimensional cone $\operatorname{rank}c(M)\le1$, and a general element is a sum of at most four, with $\ell(M)=\operatorname{rank}c(M)$.
 
-$\gamma_5$ is the reference-frame cell of the chirality $\Gamma$; the central grading $\chi=i\tilde{Ζ}_{\mathrm{ad}}$ — the difference of the two central idempotents of the complexified algebra, so $\chi^2=e_t$ — is a different object, represented by $\gamma_5$ on the Dirac module.
+$\gamma_5$ is the reference-frame basis operator of the chirality $\Gamma$; the central grading $\chi=i\tilde{Ζ}_{\mathrm{ad}}$ — the difference of the two central idempotents of the complexified algebra, so $\chi^2=e_t$ — is a different object, represented by $\gamma_5$ on the Dirac module.
 
-The dictionary is complex-linear; over $\mathbb{R}$ the products span $\mathrm{Cl}_{1,3}(\mathbb{R})\cong M_2(\mathbb{H})$ and the cells span $\mathrm{Cl}_{3,1}(\mathbb{R})\cong M_4(\mathbb{R})$.
+The dictionary is complex-linear; over $\mathbb{R}$ the products span $\mathrm{Cl}_{1,3}(\mathbb{R})\cong M_2(\mathbb{H})$ and the basis operators span $\mathrm{Cl}_{3,1}(\mathbb{R})\cong M_4(\mathbb{R})$.
 
 ## Summary
 
@@ -212,7 +212,7 @@ $$
 \qquad
 \operatorname{Tr}_{\Delta,5}(b)=\operatorname{tr}\bigl((-iL_{\mathrm{pau},e_t}R_{\mathrm{pau},\vec e_z})\mathsf{M}_4(b)\bigr)=4ia'_0=4i\operatorname{Im}b_0 .
 $$
-Their sum is the regular trace $4b_0$. The chiral traces are $2b_0$ and $2\bar b_0$. On the two-sided basis the vector trace reads the coefficient of $L_{\mathrm{pau},e_t}R_{\mathrm{pau},e_t}=I$ and the axial trace reads the coefficient of the pseudoscalar cell $L_{\mathrm{pau},e_t}R_{\mathrm{pau},\vec e_z}$; the other fourteen coordinates are invisible. The odd elements have zero trace in both. The pair is the data the anomaly needs; the regular trace is their sum and cannot replace either member.
+Their sum is the regular trace $4b_0$. The chiral traces are $2b_0$ and $2\bar b_0$. On the two-sided basis the vector trace reads the coefficient of $L_{\mathrm{pau},e_t}R_{\mathrm{pau},e_t}=I$ and the axial trace reads the coefficient of the pseudoscalar basis operator $L_{\mathrm{pau},e_t}R_{\mathrm{pau},\vec e_z}$; the other fourteen coordinates are invisible. The odd elements have zero trace in both. The pair is the data the anomaly needs; the regular trace is their sum and cannot replace either member.
 
 | quantity | value on $b=a+ia'$ | value on the basis |
 |---|---|---|
@@ -229,7 +229,7 @@ Their sum is the regular trace $4b_0$. The chiral traces are $2b_0$ and $2\bar b
 |---|---|
 | $\mathbb{B}$ | the biquaternion algebra |
 | $\mathsf{M}_4$ | the real-linear Clifford embedding $\mathbb{B}\to\mathrm{Cl}^{+}(1,3)$ |
-| $L_{\mathrm{pau},e_\mu}R_{\mathrm{pau},e_\nu}$ | the two-sided cells $L_{\mathrm{pau},e_\mu}R_{\mathrm{pau},e_\nu}$; $L_{\mathrm{pau},e_t}R_{\mathrm{pau},e_t}=I$ and $L_{\mathrm{pau},e_t}R_{\mathrm{pau},\vec e_z}$ the pseudoscalar cell |
+| $L_{\mathrm{pau},e_\mu}R_{\mathrm{pau},e_\nu}$ | the two-sided basis operators $L_{\mathrm{pau},e_\mu}R_{\mathrm{pau},e_\nu}$; $L_{\mathrm{pau},e_t}R_{\mathrm{pau},e_t}=I$ and $L_{\mathrm{pau},e_t}R_{\mathrm{pau},\vec e_z}$ the pseudoscalar basis operator |
 | $P_\pm$ | the chiral projectors $\tfrac12(I\mp iL_{\mathrm{pau},e_t}R_{\mathrm{pau},\vec e_z})$ |
 | $\operatorname{Tr}_{\Delta}$ | the vector trace $\operatorname{tr}\mathsf{M}_4(\cdot)$ |
 | $\operatorname{Tr}_{\Delta,5}$ | the axial trace $\operatorname{tr}((-iL_{\mathrm{pau},e_t}R_{\mathrm{pau},\vec e_z})\mathsf{M}_4(\cdot))$ |
@@ -239,9 +239,9 @@ Their sum is the regular trace $4b_0$. The chiral traces are $2b_0$ and $2\bar b
 ## Further Reading
 
 - [Why AXF Matrices instead of Pauli and Gamma Matrices](../articles_physics/why-axf-matrices-instead-of-pauli-and-gamma-matrices.html), for the reasons the AXF matrices replace the Pauli and gamma matrices.
-- [The Gamma Frame and the Complexified Dirac Algebra of $M_4(\mathbb{C})$](the-gamma-frame-and-the-complexified-dirac-algebra-of-m4c.html), for the five frame cells and the Clifford basis.
+- [The Gamma Frame and the Complexified Dirac Algebra of $M_4(\mathbb{C})$](the-gamma-frame-and-the-complexified-dirac-algebra-of-m4c.html), for the five frame basis operators and the Clifford basis.
 - [The Two-Sided Operators Method to Build $M_4(\mathbb{C})$](the-two-sided-operators-method-to-build-m4c.html), for the sixteen $L_{\mathrm{pau},e_\mu}R_{\mathrm{pau},e_\nu}$ and their product table.
-- [The $\mathbb{Z}$-Grading and the Odd Slot of $M_4(\mathbb{C})$](the-z-grading-and-the-odd-slot-of-m4c.html), for the table $L_{\mathrm{pau},e_t}R_{\mathrm{pau},e_t}=I$, the pseudoscalar cell $L_{\mathrm{pau},e_t}R_{\mathrm{pau},\vec e_z}$ and the grades of the other fourteen.
+- [The $\mathbb{Z}$-Grading and the Odd Slot of $M_4(\mathbb{C})$](the-z-grading-and-the-odd-slot-of-m4c.html), for the table $L_{\mathrm{pau},e_t}R_{\mathrm{pau},e_t}=I$, the pseudoscalar basis operator $L_{\mathrm{pau},e_t}R_{\mathrm{pau},\vec e_z}$ and the grades of the other fourteen.
 - [The Two Chiralities of $M_4(\mathbb{C})$](the-two-chiralities-of-m4c.html), for the projectors $P_\pm$ and the chiral blocks.
 - [The Involution and the Hermitian Structure of $M_4(\mathbb{C})$](the-involution-and-the-hermitian-structure-of-m4c.html), for the trace form and the Hermitian structure.
 - [Conventions of the Matrix Models](../articles_physics/matrix-representations-conventions.html), for the real-linear embedding and the explicit matrices, §*The Clifford Structure and the Frame*.

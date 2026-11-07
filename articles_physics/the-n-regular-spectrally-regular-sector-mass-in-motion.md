@@ -2,17 +2,17 @@
 
 ## Introduction
 
-The cell $\Sigma_{11}$ is the set of elements for which both questions of the arrangement receive the positive answer: the norm does not vanish, and the two eigenvalues do not coincide. It is the generic cell, open and dense in the algebra. It is also the cell of a massive particle in motion, and of a spacelike momentum. Its physical content is the two-mode picture: two distinct light-cone frequencies, two invariant planes, a mode basis, and a beat. The two frequencies differ by $2\lvert\vec p\rvert=2mc\lvert\sinh\theta_{\mathrm{rpd}}\rvert$, and that difference is the beat frequency: a kinematic beat between the two modes, not a dynamical effect.
+The region $\Sigma_{11}$ is the set of elements for which both questions of the arrangement receive the positive answer: the norm does not vanish, and the two eigenvalues do not coincide. It is the generic region, open and dense in the algebra. It is also the region of a massive particle in motion, and of a spacelike momentum. Its physical content is the two-mode picture: two distinct light-cone frequencies, two invariant planes, a mode basis, and a beat. The two frequencies differ by $2\lvert\vec p\rvert=2mc\lvert\sinh\theta_{\mathrm{rpd}}\rvert$, and that difference is the beat frequency: a kinematic beat between the two modes, not a dynamical effect.
 
-The article reads the cell. It states the conditions and the spectrum, reads the two-mode structure, the causal sign, the frame dependence, the invertibility and the spinor decomposition, and it labels the interpretations. It proves nothing: the sector theorems, the eigenbasis and the Peirce data are those of the mathematics articles cited below.
+The article reads the region. It states the conditions and the spectrum, reads the two-mode structure, the causal sign, the frame dependence, the invertibility and the spinor decomposition, and it labels the interpretations. It proves nothing: the sector theorems, the eigenbasis and the Peirce data are those of the mathematics articles cited below.
 
-The name of the cell is deliberately double. **Mass in motion** is the timelike branch; the cell also contains the spacelike branch, where the invariant $N$ is positive and the two eigenvalues lie on opposite halves of the imaginary axis. The cell is a spectral type, not a single causal class; the sign of $N$ is a second reading of the same cell.
+The name of the region is deliberately double. **Mass in motion** is the timelike branch; the region also contains the spacelike branch, where the invariant $N$ is positive and the two eigenvalues lie on opposite halves of the imaginary axis. The region is a spectral type, not a single causal class; the sign of $N$ is a second reading of the same region.
 
 ## The Results It Uses
 
 | Mathematical Content | Source Mathematical Article |
 | --- | --- |
-| The definition, the five descriptions and the geometry of the cell | [The N-Regular, Spectrally Regular Sector](../articles_maths/the-n-regular-spectrally-regular-sector.html) |
+| The definition, the five descriptions and the geometry of the region | [The N-Regular, Spectrally Regular Sector](../articles_maths/the-n-regular-spectrally-regular-sector.html) |
 | The spectrum, the spectral idempotents and the two-term writing | [The Biquaternion Eigenvalue Decomposition](../articles_maths/the-biquaternion-eigenvalue-decomposition.html) |
 | The eigenbasis and the Peirce corners | [The Eigenbasis of a Spectrally Regular Biquaternion](../articles_maths/the-eigenbasis-of-a-spectrally-regular-biquaternion.html) |
 | The spinor spaces and the Peirce index | [The Polarized Module of the Biquaternion Algebra](../articles_maths/the-polarized-module-of-the-biquaternion-algebra.html) |
@@ -22,18 +22,17 @@ The name of the cell is deliberately double. **Mass in motion** is the timelike 
 | The polar word and the unit group | [The Polar Decomposition and Its Three Pairings](the-polar-decomposition-and-its-three-pairings.html) |
 | The Lorentz action as a sandwich | [Frames, Rotations and the Lorentz Group](frames-rotations-and-the-lorentz-group.html) |
 
-## The Cell
-
-The cell is
+## The Region
+The region is
 
 $$
 \Sigma_{11}=\{N\neq0,\ B^2\neq0\}
 =\mathbb{B}\setminus(\mathcal N\cup\mathcal S),
 $$
 
-the complement of the union of the null cone and the spectral cone. It is open, dense and of full measure; its complement is the union of the two complex hypersurfaces $N=0$ and $B^2=0$, each of real codimension two, and it has measure zero. A generic element of the algebra lies here. The cell is connected but not simply connected, and it is of complex dimension four, real dimension eight.
+the complement of the union of the null cone and the spectral cone. It is open, dense and of full measure; its complement is the union of the two complex hypersurfaces $N=0$ and $B^2=0$, each of real codimension two, and it has measure zero. A generic element of the algebra lies here. The region is connected but not simply connected, and it is of complex dimension four, real dimension eight.
 
-An element of the cell is a unit with two distinct eigenvalues. The characteristic polynomial is
+An element of the region is a unit with two distinct eigenvalues. The characteristic polynomial is
 
 $$
 p_{\tilde Q}(X)=X^2-2Q_tX+N,
@@ -51,7 +50,7 @@ $$
 \lambda_+\lambda_-=N\neq0.
 $$
 
-The two roots are non-zero, so the element is invertible: $\tilde Q^{-1}=\tilde Q^{\natural}/N$. The cell is inverse-closed. The spectral idempotents are unique,
+The two roots are non-zero, so the element is invertible: $\tilde Q^{-1}=\tilde Q^{\natural}/N$. The region is inverse-closed. The spectral idempotents are unique,
 
 $$
 e_\pm=\frac{\tilde Q-\lambda_\mp e_t}{\lambda_\pm-\lambda_\mp},
@@ -59,7 +58,7 @@ e_\pm=\frac{\tilde Q-\lambda_\mp e_t}{\lambda_\pm-\lambda_\mp},
 \tilde Q=\lambda_+e_++\lambda_-e_-,
 $$
 
-and both coefficients are non-zero. This is the only cell in which the spectral decomposition has two non-zero terms and two non-trivial idempotents.
+and both coefficients are non-zero. This is the only region in which the spectral decomposition has two non-zero terms and two non-trivial idempotents.
 
 ## The Spectrum
 
@@ -88,19 +87,19 @@ $$
 \frac{\lambda_+}{\lambda_-}=e^{2\theta_{\mathrm{rpd}}}.
 $$
 
-The product is the invariant. The two factors are frame-dependent, and their dependence is exactly the Doppler rescaling. The cell therefore carries the whole relativistic kinematics of one particle: mass, energy, momentum and rapidity are four readings of one pair.
+The product is the invariant. The two factors are frame-dependent, and their dependence is exactly the Doppler rescaling. The region therefore carries the whole relativistic kinematics of one particle: mass, energy, momentum and rapidity are four readings of one pair.
 
 ### The Causal Sign
 
-The sign of $N$ separates the two branches of the cell. On the material slice $N=-E^2/c^2+\lvert\vec p\rvert^2$.
+The sign of $N$ separates the two branches of the region. On the material slice $N=-E^2/c^2+\lvert\vec p\rvert^2$.
 
 | branch | condition | eigenvalues | reading |
 | --- | --- | --- | --- |
 | timelike | $\lvert\vec p\rvert<E/c$ | both on the same imaginary half | a massive particle in motion |
-| lightlike | $\lvert\vec p\rvert=E/c$ | one zero | the boundary cell $\Sigma_{01}$ |
+| lightlike | $\lvert\vec p\rvert=E/c$ | one zero | the boundary region $\Sigma_{01}$ |
 | spacelike | $\lvert\vec p\rvert>E/c$ | on opposite imaginary halves | a spacelike momentum |
 
-The timelike branch is the one the cell is named after. The spacelike branch is in the same cell because both conditions are non-zero; its spectrum has one eigenvalue with a positive imaginary part and one with a negative imaginary part, and its norm is positive. The two branches are not connected inside the real material slice without crossing the light cone, which is the boundary $\Sigma_{01}$; in the full complex cell they are connected through complexified momenta.
+The timelike branch is the one the region is named after. The spacelike branch is in the same region because both conditions are non-zero; its spectrum has one eigenvalue with a positive imaginary part and one with a negative imaginary part, and its norm is positive. The two branches are not connected inside the real material slice without crossing the light cone, which is the boundary $\Sigma_{01}$; in the full complex region they are connected through complexified momenta.
 
 ### What the Spectrum Does Not Determine
 
@@ -112,7 +111,7 @@ $$
 \lambda_+\lambda_-=N.
 $$
 
-It does not fix the direction $\vec Q/B$, the two angles of the axis, or the reality of the vector part. A rotation leaves the pair unchanged and rotates the axis. The cell is therefore larger than the spectrum: it is the spectrum together with the eigenprojections, and the eigenprojections carry the frame.
+It does not fix the direction $\vec Q/B$, the two angles of the axis, or the reality of the vector part. A rotation leaves the pair unchanged and rotates the axis. The region is therefore larger than the spectrum: it is the spectrum together with the eigenprojections, and the eigenprojections carry the frame.
 
 ## The Two Modes
 
@@ -163,46 +162,46 @@ The two idempotents are the two pure states along the axis $\vec Q/B$; on the ma
 
 ## Invertibility and Frame
 
-The cell is contained in the unit group. Every element has an inverse,
+The region is contained in the unit group. Every element has an inverse,
 
 $$
 \tilde Q^{-1}=\lambda_+^{-1}e_++\lambda_-^{-1}e_-=\frac{\tilde Q^{\natural}}{N},
 $$
 
-and the inverse lies in the cell. The polar word
+and the inverse lies in the region. The polar word
 
 $$
 \tilde Q=r\,e^{i\alpha}\,\tilde U_{\Psi,\mathrm b}\,\tilde u_{\mathrm r}
 $$
 
-exists on the whole cell, with $r=\lvert N\rvert^{1/2}$ and the three factors a scale, a central phase, a Hermitian boost and a real rotor. The cell is therefore contained in the domain of the polar decomposition: every element of the cell has a frame, an amplitude and a phase.
+exists on the whole region, with $r=\lvert N\rvert^{1/2}$ and the three factors a scale, a central phase, a Hermitian boost and a real rotor. The region is therefore contained in the domain of the polar decomposition: every element of the region has a frame, an amplitude and a phase.
 
-The cell is inverse-closed but not product-closed. The norm is multiplicative, so the product of two elements of the cell has non-zero norm and lies in $\Sigma_{11}\cup\Sigma_{10}$; both outcomes occur, and inside $\Sigma_{10}$ both the scalar line and the Jordan part occur. A product of two elements of the cell can land on the scalar line, where the two eigenvalues coincide, or in the Jordan part, where the element is defective. The cell is a symmetric subset of the unit group, not a subgroup: it contains no subgroup, because it does not contain the identity.
+The region is inverse-closed but not product-closed. The norm is multiplicative, so the product of two elements of the region has non-zero norm and lies in $\Sigma_{11}\cup\Sigma_{10}$; both outcomes occur, and inside $\Sigma_{10}$ both the scalar line and the Jordan part occur. A product of two elements of the region can land on the scalar line, where the two eigenvalues coincide, or in the Jordan part, where the element is defective. The region is a symmetric subset of the unit group, not a subgroup: it contains no subgroup, because it does not contain the identity.
 
-The boundary of the cell is the arrangement. A path inside the cell that reaches $B=0$ lands in $\Sigma_{10}$; a path that reaches $N=0$ lands in $\Sigma_{01}$; a path that reaches both lands in $\Sigma_{00}$. The scalar line is the rest-frame part of the boundary $B=0$, and the Jordan part is its exceptional-point part; the cell $\Sigma_{01}$ is the boundary component $N=0$ with $B\neq0$.
+The boundary of the region is the arrangement. A path inside the region that reaches $B=0$ lands in $\Sigma_{10}$; a path that reaches $N=0$ lands in $\Sigma_{01}$; a path that reaches both lands in $\Sigma_{00}$. The scalar line is the rest-frame part of the boundary $B=0$, and the Jordan part is its exceptional-point part; the region $\Sigma_{01}$ is the boundary component $N=0$ with $B\neq0$.
 
 ## Physical Interpretations
 
-- **The cell is a particle in motion.** On the material slice the two eigenvalues are the two light-cone frequencies of one momentum, and the pair is the Doppler pair. The cell is the spectral form of relativistic kinematics: mass is the product, energy the sum, momentum the difference, rapidity the ratio.
-- **The two terms are two null components, not two particles.** Each term is a complex multiple of a minimal idempotent. Their sum is one element, their coefficients sum to $2iE/c$, and their product is $-m^2c^2$. A two-particle reading would need two independent mass-shell conditions; the cell has one.
-- **The causal sign is the sign of the norm.** Timelike and spacelike momenta share the cell because both conditions are non-zero; they differ in the sign of $N$ and in the placement of the eigenvalues on the imaginary axis. The cell is a spectral type, and the causal class is a second invariant read from the same element.
+- **The region is a particle in motion.** On the material slice the two eigenvalues are the two light-cone frequencies of one momentum, and the pair is the Doppler pair. The region is the spectral form of relativistic kinematics: mass is the product, energy the sum, momentum the difference, rapidity the ratio.
+- **The two terms are two null components, not two particles.** Each term is a complex multiple of a minimal idempotent. Their sum is one element, their coefficients sum to $2iE/c$, and their product is $-m^2c^2$. A two-particle reading would need two independent mass-shell conditions; the region has one.
+- **The causal sign is the sign of the norm.** Timelike and spacelike momenta share the region because both conditions are non-zero; they differ in the sign of $N$ and in the placement of the eigenvalues on the imaginary axis. The region is a spectral type, and the causal class is a second invariant read from the same element.
 - **The eigenbasis is a frame attached to the element.** The two eigenspaces are unique; the idempotents are unique; the nilpotents inside each eigenspace are a gauge. The frame is not a laboratory frame, and the mode basis is not a measurement basis until a laboratory frame is chosen.
 - **A spinor carries both modes.** Each minimal ideal is a complex plane on which the left action is diagonal with both eigenvalues. The Peirce index is the right eigenvalue. The reading is the algebraic form of the two-component spinor, not a derivation of the spin-statistics theorem.
-- **The cell lies in the domain of the polar word.** Every element has a scale, a phase, a boost and a rotor. The frame is a coordinate on the cell; the word exists on the whole cell and degenerates on the boundary, failing when the modulus vanishes ($N=0$) and losing its axis data when the eigenvalues coalesce ($B=0$).
-- **The cell is generic.** Its complement is the union of the two complex hypersurfaces $N=0$ and $B^2=0$, of measure zero. A generic element is a unit with two distinct modes; each cone is one complex equation, hence two real conditions, and a degeneracy is the vanishing of one of the two.
-- **Invertibility is reversibility.** The element has an inverse, a logarithm up to the branch lattice, and a one-parameter group. The cell is the regime in which the element is a reversible process with a generator.
+- **The region lies in the domain of the polar word.** Every element has a scale, a phase, a boost and a rotor. The frame is a coordinate on the region; the word exists on the whole region and degenerates on the boundary, failing when the modulus vanishes ($N=0$) and losing its axis data when the eigenvalues coalesce ($B=0$).
+- **The region is generic.** Its complement is the union of the two complex hypersurfaces $N=0$ and $B^2=0$, of measure zero. A generic element is a unit with two distinct modes; each cone is one complex equation, hence two real conditions, and a degeneracy is the vanishing of one of the two.
+- **Invertibility is reversibility.** The element has an inverse, a logarithm up to the branch lattice, and a one-parameter group. The region is the regime in which the element is a reversible process with a generator.
 
 ## Limits
 
-The identification of the cell with a particle in motion needs the material slice and the four-momentum chart. In the full algebra the cell is a spectral type, and the names mass and motion are readings of $N$ and $B^2$, not definitions.
+The identification of the region with a particle in motion needs the material slice and the four-momentum chart. In the full algebra the region is a spectral type, and the names mass and motion are readings of $N$ and $B^2$, not definitions.
 
 The two eigenvalues are not two energies and not two particles. The sum of the coefficients is $2iE/c$, and the product is $-m^2c^2$; the individual coefficients are frame-dependent null components.
 
-The cell contains the spacelike branch. The name "mass in motion" describes the timelike branch; a spacelike momentum has $N>0$ and its "mass" is imaginary. The cell is not a causal class.
+The region contains the spacelike branch. The name "mass in motion" describes the timelike branch; a spacelike momentum has $N>0$ and its "mass" is imaginary. The region is not a causal class.
 
-The spinor reading is algebraic. The two minimal ideals are copies of one module, distinguished by the Peirce index; they are not the two chiral halves. The identification with physical chirality and with the spin-statistics theorem is an extra step, not a theorem of the cell.
+The spinor reading is algebraic. The two minimal ideals are copies of one module, distinguished by the Peirce index; they are not the two chiral halves. The identification with physical chirality and with the spin-statistics theorem is an extra step, not a theorem of the region.
 
-No dynamics is supplied. The cell is a property of one element at one instant; the article does not say how the element evolves, and it does not supply a mass spectrum.
+No dynamics is supplied. The region is a property of one element at one instant; the article does not say how the element evolves, and it does not supply a mass spectrum.
 
 ## Summary
 
@@ -211,16 +210,16 @@ No dynamics is supplied. The cell is a property of one element at one instant; t
 - On the material slice the pair is the Doppler pair $i\,mc\,e^{\pm\theta_{\mathrm{rpd}}}$; the sum is $2iE/c$, the difference $2i\lvert\vec p\rvert$, the product $-m^2c^2$.
 - The sign of $N$ separates the timelike branch (eigenvalues on the same imaginary half) from the spacelike branch (opposite halves).
 - The eigenbasis is unique, the Peirce decomposition is diagonal with both coefficients non-zero, and the spinor spaces each carry both eigenvalues.
-- The cell is inverse-closed and not product-closed; products land in $\Sigma_{11}$ or in $\Sigma_{10}$, on its scalar line or its Jordan part.
-- The cell lies in the domain of the polar word: scale, phase, boost and rotor.
-- The boundary of the cell is the arrangement: $B=0$ gives the rest frame and the exceptional point, $N=0$ gives the light ray.
-- The cell is generic and reversible; it supplies no dynamics, no particle count and no mass spectrum.
+- The region is inverse-closed and not product-closed; products land in $\Sigma_{11}$ or in $\Sigma_{10}$, on its scalar line or its Jordan part.
+- The region lies in the domain of the polar word: scale, phase, boost and rotor.
+- The boundary of the region is the arrangement: $B=0$ gives the rest frame and the exceptional point, $N=0$ gives the light ray.
+- The region is generic and reversible; it supplies no dynamics, no particle count and no mass spectrum.
 
 ## Summary of Notation
 
 | symbol | meaning |
 | --- | --- |
-| $\Sigma_{11}$ | the cell $N\neq0$, $B^2\neq0$ |
+| $\Sigma_{11}$ | the region $N\neq0$, $B^2\neq0$ |
 | $N=Q_t^2+B^2$ | the norm |
 | $B^2=Q_x^2+Q_y^2+Q_z^2$ | the vector square, the discriminant |
 | $\lambda_\pm=Q_t\pm iB$ | the two eigenvalues |
@@ -232,7 +231,7 @@ No dynamics is supplied. The cell is a property of one element at one instant; t
 
 ## Further Reading
 
-- [The Four Regimes of an Element: Mass and Motion](the-four-regimes-of-an-element-mass-and-motion.html), for the partition and the other three cells.
+- [The Four Regimes of an Element: Mass and Motion](the-four-regimes-of-an-element-mass-and-motion.html), for the partition and the other three regions.
 - [The Spectral Reading of a Four-Vector](the-spectral-reading-of-a-four-vector.html), for the Doppler pair and the two-term writing.
 - [The Polar Decomposition and Its Three Pairings](the-polar-decomposition-and-its-three-pairings.html), for the polar word.
 - [Frames, Rotations and the Lorentz Group](frames-rotations-and-the-lorentz-group.html), for the sandwich and the boost.

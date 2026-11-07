@@ -6,7 +6,7 @@ The biquaternion algebra $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ c
 
 The sector is the set-theoretic intersection of the two cones. It has three descriptions, given in §*The Sector and Its Three Descriptions*: it is $\{Q_t=0,\ \vec Q^2=0\}$, it is the set of square-zero elements, and it is the pure stratum of the null cone with the origin adjoined. The article then computes its geometry (a complex cone of dimension two), its elements (nilpotents of index two), the special role of the origin, and its behaviour under multiplication. The last sections compare it with the other three sectors and collect the consequences.
 
-**Scope and naming.** The product is the plain product of $\mathbb{B}$; the algebra is $\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ on $e_t,\vec e_x,\vec e_y,\vec e_z$, with $\vec e_k^2=-e_t$; the conjugation is ${}^{\natural}$, and $\langle\tilde Q\rangle_{\natural}=\tilde Q^{\natural}\tilde Q$ is central. The null cone is written $\mathcal{N}$ and the spectral-degenerate cone $\mathcal S$, as in *N-Regularity and N-Degeneracy in the Biquaternion Algebra* and *The Spectrum*. A **sector** is one of the four cells cut out by the two conditions. The word degenerate is qualified by the condition it refers to, so "doubly degenerate" means $\langle\tilde Q\rangle_{\natural}=0$ and $B^2=0$.
+**Scope and naming.** The product is the plain product of $\mathbb{B}$; the algebra is $\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ on $e_t,\vec e_x,\vec e_y,\vec e_z$, with $\vec e_k^2=-e_t$; the conjugation is ${}^{\natural}$, and $\langle\tilde Q\rangle_{\natural}=\tilde Q^{\natural}\tilde Q$ is central. The null cone is written $\mathcal{N}$ and the spectral-degenerate cone $\mathcal S$, as in *N-Regularity and N-Degeneracy in the Biquaternion Algebra* and *The Spectrum*. A **sector** is one of the four sectors cut out by the two conditions. The word degenerate is qualified by the condition it refers to, so "doubly degenerate" means $\langle\tilde Q\rangle_{\natural}=0$ and $B^2=0$.
 
 ## The Sector and Its Three Descriptions
 
@@ -244,7 +244,7 @@ polynomial in $\theta$; the flow is never oscillatory, and no Fourier basis is a
 
 **One-sided operators.** Rank $2$, square-zero; the kernels are the two annihilator planes; neither multiplication is invertible on either side.
 
-**The "everything fails" cell.** It is the cell in which invertibility, the Peirce decomposition relative to $\tilde Q$ (off the origin), the eigenbasis, the polar decomposition and the injectivity of both multiplications all fail. It is what makes the two problems look alike before the mixed sectors separate them.
+**The "everything fails" sector.** It is the sector in which invertibility, the Peirce decomposition relative to $\tilde Q$ (off the origin), the eigenbasis, the polar decomposition and the injectivity of both multiplications all fail. It is what makes the two problems look alike before the mixed sectors separate them.
 
 ## The Generators, the Eigenvalues, and the Element
 
@@ -312,7 +312,7 @@ gives $e\tilde Qe=0$, $e\tilde Qf=\tilde Q$, $f\tilde Qe=0$, $f\tilde Qf=0$.
 | relation to the cones | $\Sigma_{00}=\mathcal{N}\cap\mathcal S$, with the two cones tangent along the whole sector |
 | place in the arrangement | the only sector on which both answers are negative |
 
-The sector is the doubly degenerate cell: the set of square-zero elements, the intersection of the two cones, the locus on which invertibility and spectral separation are both answered in the negative, and the one place where the origin, a semisimple point, sits among the defective ones.
+The sector is the doubly degenerate sector: the set of square-zero elements, the intersection of the two cones, the locus on which invertibility and spectral separation are both answered in the negative, and the one place where the origin, a semisimple point, sits among the defective ones.
 
 ## Summary of Notation
 

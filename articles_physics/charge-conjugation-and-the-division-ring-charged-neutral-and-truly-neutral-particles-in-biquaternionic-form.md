@@ -6,7 +6,7 @@ Charge conjugation is the discrete operation that exchanges a particle with its 
 
 The classification of the algebra literature answers the question with a single algebraic datum. The field of the article is valued in a module, and a module has a **division ring** of scalars, which is $\mathbb{R}$, $\mathbb{H}$ or $\mathbb{C}$ and nothing else. Over a real division ring the fixed product that implements the conjugation is central, so the conjugation reduces to the coefficient conjugation and exchanges no two states. Over a quaternionic division ring it is a genuine product of units and exchanges an element with a distinct partner; over the complex one it relates the module to its conjugate. The division ring, in other words, is what decides whether a particle can be its own antiparticle. (The literature writes the operation with a star on the element; here the star is reserved for the Hermitian conjugation of the corpus, and the bar is the coefficient conjugation.)
 
-The article is organised as follows. A first section writes the conjugation on the algebra and fixes the two values of the subscript. A second states the division-ring trichotomy. A third reads the trichotomy as the three classes of particles, and a fourth places the three classes in the biquaternion algebra. A fifth separates what the framework supplies from what it transcribes. The article closes with the open questions, the legacy section on the gamma formulation, and the summary.
+The article is organised as follows. A first section writes the conjugation on the algebra and fixes the two components of the pair. A second states the division-ring trichotomy. A third reads the trichotomy as the three classes of particles, and a fourth places the three classes in the biquaternion algebra. A fifth separates what the framework supplies from what it transcribes. The article closes with the open questions, the legacy section on the gamma formulation, and the summary.
 
 - Companion article *The CPT Theorem in Biquaternionic Form*, for the explicit form of the conjugation and for the classification of the discrete operations.
 - The mathematics articles *Division Rings*, *Central Simple Algebras and the Brauer Group* and *The Brauer Wall Group and the Eightfold Way*, for the division ring as an isomorphism invariant of a real or complex algebra.
@@ -43,7 +43,7 @@ $$
 Q\mapsto-e_y\,Q\,e_y ,
 $$
 
-It is linear, it is an automorphism, and its square is the identity: the two factors multiply to $e_y^2=-e_t$ on the left and on the right, and the two signs cancel. The conjugation is that multiplier preceded by the coefficient conjugation, and the two behave differently on the two values of the subscript.
+It is linear, it is an automorphism, and its square is the identity: the two factors multiply to $e_y^2=-e_t$ on the left and on the right, and the two signs cancel. The conjugation is that multiplier preceded by the coefficient conjugation, and the two behave differently on the two components of the pair.
 
 ### The Two Values of the Subscript
 
@@ -61,7 +61,7 @@ $$
 
 The one-sided form, the right multiplication by $e_x$, has order four: its square is minus the argument, $Q\mapsto Qe_x\mapsto Qe_xe_x=-Q$, and its fourth power returns the argument. The two signs come from the two units: the two-sided product uses $-e_y$ twice on each side, so its square is $e_y^4=+e_t$, and the one-sided product uses $e_x$ twice, so its square is $e_x^2=-e_t$.
 
-**The two lines.** The free equation of the series has two lines, one for each value of the subscript; the pair is fixed in *Operator and Calculus Conventions*, §*The Pair Operator*, and is not restated here. The conjugation keeps the value, so it carries a field of one line to a field of the same line; that a solution is carried to a solution is the companion article's explicit verification.
+**The two lines.** The free equation of the series has two lines, one for each component of the pair; the pair is fixed in *Operator and Calculus Conventions*, §*The Pair Operator*, and is not restated here. The conjugation keeps the value, so it carries a field of one line to a field of the same line; that a solution is carried to a solution is the companion article's explicit verification.
 
 ## The Division-Ring Trichotomy
 
@@ -95,7 +95,7 @@ The square of the operation is the identity on the algebra, and two signs are in
 
 **The two-sided square.** The multiplier and the conjugation square to the identity, because the fixed product enters twice on each side and its square is the central $-e_t$. On the algebra, therefore, the conjugation is an involution, $(Q^{\mathrm c})^{\mathrm c}=Q$, which is the standard statement for a Dirac field. The pair, and not one side of it, is what the algebra carries, and the two readings do not conflict: one is one-sided and the other two-sided.
 
-The corpus meets both signs elsewhere: the Euclidean charge conjugation of *The Spectral Triple of the Biquaternion Algebra* is a cell that squares to $-I_4$, and the real structure of *Bosonization in Biquaternionic Form* is an involution. The moral for the classification is that the sign of a square belongs to the representation and not to the division ring, and that neither sign changes the class of a particle.
+The corpus meets both signs elsewhere: the Euclidean charge conjugation of *The Spectral Triple of the Biquaternion Algebra* is a basis operator that squares to $-I_4$, and the real structure of *Bosonization in Biquaternionic Form* is an involution. The moral for the classification is that the sign of a square belongs to the representation and not to the division ring, and that neither sign changes the class of a particle.
 
 ## The Three Classes of Particles
 
@@ -136,10 +136,10 @@ The biquaternion algebra has two readings, and the trichotomy uses both. Read ov
 
 A display that singles out a direction does so through its basis, and the test is a property of the basis alone: an operator is diagonal when each basis element is carried into a multiple of itself.
 
-- In the coefficient basis the diagonal cells are the four squares, $e_te_t$, $\vec e_x\vec e_x$, $\vec e_y\vec e_y$, $\vec e_z\vec e_z$. The set is unchanged by any permutation of the three spatial units, because the four squares name the four directions and nothing else.
-- In a frame built on a declared direction $\vec u$ the diagonal cells are four others: $e_te_t$, $e_t\vec u$, $\vec u\,e_t$, $\vec u\vec u$. The declared direction appears twice, time appears twice, and the other two spatial units appear in none. The set changes when the units are permuted, and it is written with $\vec u$ so that no axis is privileged by the notation.
+- In the coefficient basis the diagonal basis operators are the four squares, $e_te_t$, $\vec e_x\vec e_x$, $\vec e_y\vec e_y$, $\vec e_z\vec e_z$. The set is unchanged by any permutation of the three spatial units, because the four squares name the four directions and nothing else.
+- In a frame built on a declared direction $\vec u$ the diagonal basis operators are four others: $e_te_t$, $e_t\vec u$, $\vec u\,e_t$, $\vec u\vec u$. The declared direction appears twice, time appears twice, and the other two spatial units appear in none. The set changes when the units are permuted, and it is written with $\vec u$ so that no axis is privileged by the notation.
 
-That is the whole of the axis. The change from one display to the other is the conjugation by $C_{\Pi}$, which keeps the trace, the determinant, the spectrum, the rank and every product; the four diagonal cells are not among the things it keeps, and no argument of this article depends on which of the two displays is written.
+That is the whole of the axis. The change from one display to the other is the conjugation by $C_{\Pi}$, which keeps the trace, the determinant, the spectrum, the rank and every product; the four diagonal basis operators are not among the things it keeps, and no argument of this article depends on which of the two displays is written.
 
 ### Choosing the Algebra
 
@@ -158,7 +158,7 @@ The interpretation is not a derivation, and it adds no field content. Its value 
 Each statement below is a computation and not an analogy.
 
 - **The conjugation on the element.** $Q^{\mathrm c}=-e_y\bar Qe_y$ is conjugate-linear, preserves products, and squares to the identity.
-- **The multiplier and the values.** The two-sided product $-e_yQe_y$ exchanges the two values of the subscript, the coefficient conjugation exchanges them as well, and the conjugation keeps them.
+- **The multiplier and the values.** The two-sided product $-e_yQe_y$ reverses the value, the coefficient conjugation reverses it as well, and the conjugation, being the two together, keeps it.
 - **The two signs.** The one-sided form is the right multiplication by $e_x$ and its square is minus the argument; the two-sided product squares to the identity. The sign is the square of the unit.
 - **The two fixed sets.** The fixed set of the coefficient conjugation is the real-quaternion subspace $\mathbb{B}_{H}$; the fixed set of the conjugation is a real subalgebra of real dimension four that is not a division ring.
 
@@ -190,7 +190,7 @@ Each statement below is a computation and not an analogy.
 
 The Pauli and gamma formulation is legacy: the reasons are explained in the article *Why AXF Matrices instead of Pauli and Gamma Matrices*. The generators carry no frame label: $\gamma_\mu$ is one set of matrices, $\gamma_0^2=I_4$ and $\gamma_k^2=-I_4$. The frame belongs to the coordinate, not to the array.
 
-This section is the only place in the article where the gamma matrices appear. They are not a different algebra and no formula above needs them: they are a frame of $\mathrm{Cl}_{1,3}(\mathbb{C})=M_4(\mathbb{C})$, and each gamma *is* one of the five frame cells, the factor $i$ included, so the dictionary below carries no extra phase.
+This section is the only place in the article where the gamma matrices appear. They are not a different algebra and no formula above needs them: they are a frame of $\mathrm{Cl}_{1,3}(\mathbb{C})=M_4(\mathbb{C})$, and each gamma *is* one of the five frame basis operators, the factor $i$ included, so the dictionary below carries no extra phase.
 
 With $L_a\tilde{Ξ}_{\mathrm{sp}}=a\tilde{Ξ}_{\mathrm{sp}}$ and $R_b\tilde{Ξ}_{\mathrm{sp}}=\tilde{Ξ}_{\mathrm{sp}} b$, the dictionary is:
 
@@ -212,7 +212,7 @@ $$
 \gamma_5=-iL_{\mathrm{axf},e_t}R_{\mathrm{axf},\vec e_z}.
 $$
 
-The first and the last collapse to one-sided multipliers, $\gamma_0=iR_{\mathrm{pau},\vec e_x}$ and $\gamma_5=-iR_{\mathrm{pau},\vec e_z}$, because $L_{\mathrm{pau},e_t}$ is the identity. The charge-conjugation cell of the article is the same frame read in the spatial direction:
+The first and the last collapse to one-sided multipliers, $\gamma_0=iR_{\mathrm{pau},\vec e_x}$ and $\gamma_5=-iR_{\mathrm{pau},\vec e_z}$, because $L_{\mathrm{pau},e_t}$ is the identity. The charge-conjugation basis operator of the article is the same frame read in the spatial direction:
 
 $$
 \eta_C=-L_{\mathrm{pau},\vec e_y}R_{\mathrm{pau},\vec e_y}=i\gamma_2,
@@ -224,7 +224,7 @@ $$
 \eta_C=-L_{\mathrm{axf},\vec e_y}R_{\mathrm{axf},\vec e_y}=i\gamma_2,
 $$
 
-and the chirality cell is:
+and the chirality basis operator is:
 
 $$
 \Gamma=-iR_{\mathrm{pau},\vec e_z}=\gamma_5.
@@ -236,7 +236,7 @@ $$
 \Gamma=-iR_{\mathrm{axf},\vec e_z}=\gamma_5.
 $$
 
-The dictionary is complex-linear. Over $\mathbb{R}$ it splits into two real forms: the products of $\gamma_0,\dots,\gamma_3$ satisfy the $\mathrm{Cl}_{1,3}$ relations and span $\mathrm{Cl}_{1,3}(\mathbb{R})\cong M_2(\mathbb{H})$, while the sixteen two-sided cells $L_aR_b$ span $\mathrm{Cl}_{3,1}(\mathbb{R})\cong M_4(\mathbb{R})$.
+The dictionary is complex-linear. Over $\mathbb{R}$ it splits into two real forms: the products of $\gamma_0,\dots,\gamma_3$ satisfy the $\mathrm{Cl}_{1,3}$ relations and span $\mathrm{Cl}_{1,3}(\mathbb{R})\cong M_2(\mathbb{H})$, while the sixteen two-sided basis operators $L_aR_b$ span $\mathrm{Cl}_{3,1}(\mathbb{R})\cong M_4(\mathbb{R})$.
 
 The central grading $\xi$ is a different object from $\gamma_5$. It is $\chi=i\tilde{Ζ}_{\mathrm{ad}}$, where $\tilde{Ζ}_{\mathrm{ad}}$ is the adjoined central root of $-1$, with $\tilde{Ζ}_{\mathrm{ad}}^{2}=-e_t$, so that $\xi^{2}=e_t$; it is also the difference $e_+-e_-$ of the two central idempotents. On the Dirac module it is represented by $\gamma_5$, and it is not $\Gamma$.
 
@@ -265,13 +265,13 @@ $$
 =4\bigl(\varepsilon_\mu\delta_{\mu\nu}\varepsilon_\rho\delta_{\rho\sigma}-\varepsilon_\mu\delta_{\mu\rho}\varepsilon_\nu\delta_{\nu\sigma}+\varepsilon_\mu\delta_{\mu\sigma}\varepsilon_\nu\delta_{\nu\rho}\bigr).
 $$
 
-No identity in this list is used in the body of the article. They are recorded so that a formula written in the gamma frame can be translated into the cells, and they are the only place in the article where gamma symbols occur.
+No identity in this list is used in the body of the article. They are recorded so that a formula written in the gamma frame can be translated into the basis operators, and they are the only place in the article where gamma symbols occur.
 
-**The display.** Every array printed in this section is given twice: in the Peirce display first, labelled $\mathrm{pau}$, whose arrays are the ones the literature prints, and in the axis-free display after it, labelled $\mathrm{axf}$, which is the display of the body and of the corpus. The two are carried into one another by $L_{\mathrm{axf},e_\mu}=C_{\Pi}L_{\mathrm{pau},e_\mu}C_{\Pi}^{-1}$, and a conjugation by $C_{\Pi}$ changes no product, no anticommutator, no trace and no determinant, so every identity of the section holds in both. An array is a statement about one display; a cell named in the running text keeps the Peirce label, and its axis-free array is the conjugate. The label names the array and not the operator.
+**The display.** Every array printed in this section is given twice: in the Peirce display first, labelled $\mathrm{pau}$, whose arrays are the ones the literature prints, and in the axis-free display after it, labelled $\mathrm{axf}$, which is the display of the body and of the corpus. The two are carried into one another by $L_{\mathrm{axf},e_\mu}=C_{\Pi}L_{\mathrm{pau},e_\mu}C_{\Pi}^{-1}$, and a conjugation by $C_{\Pi}$ changes no product, no anticommutator, no trace and no determinant, so every identity of the section holds in both. An array is a statement about one display; a basis operator named in the running text keeps the Peirce label, and its axis-free array is the conjugate. The label names the array and not the operator.
 
 ## Summary
 
-Charge conjugation is the conjugate-linear map $Q^{\mathrm c}=-e_y\bar Qe_y$ of the biquaternion algebra: the coefficient conjugation, followed by the two-sided product by a fixed product of units. It preserves products and reverses the scalar. The multiplier alone, $-e_yQe_y$, exchanges the two values of the subscript; the coefficient conjugation exchanges them as well, so the conjugation keeps them; and the conjugation is an involution. The one-sided form is the right multiplication by $e_x$, whose square is $-e_t$, that is, minus the argument; the sign of that square is the square of the unit, not a property of the division ring.
+Charge conjugation is the conjugate-linear map $Q^{\mathrm c}=-e_y\bar Qe_y$ of the biquaternion algebra: the coefficient conjugation, followed by the two-sided product by a fixed product of units. It preserves products and reverses the scalar. The multiplier alone, $-e_yQe_y$, reverses the value; the coefficient conjugation reverses it as well, so the conjugation keeps it; and the conjugation is an involution. The one-sided form is the right multiplication by $e_x$, whose square is $-e_t$, that is, minus the argument; the sign of that square is the square of the unit, not a property of the division ring.
 
 The three charge classes are the three division rings of the module. Over $\mathbb{R}$ the fixed product is central, the conjugation is the coefficient conjugation, and no element of the module moves: the truly neutral particles, at $Ϙ=\bar0$, with the parity $-1$ for the photon and the phi meson and $+1$ for the $\pi^0$ and the $\eta$. Over $\mathbb{H}$ the fixed product is not central and an element is carried to a distinct partner: the neutral particles, at $Ϙ=0$, the neutron among them. Over $\mathbb{C}$ the conjugation relates the module to its conjugate: the charged particles, at $Ϙ=\pm1$.
 
@@ -285,16 +285,16 @@ The biquaternion algebra read over $\mathbb{C}$ has $\mathbb{C}$ for scalars, so
 | $\mathbb{R}$, $\mathbb{H}$, $\mathbb{C}$ | The three division rings a module can carry; one per charge class |
 | $Q^{\mathrm c}=-e_y\bar Qe_y$ | Charge conjugation on the element; $\bar{\cdot}$ is the coefficient conjugation |
 | $-e_y$ | The fixed product; its square is $-e_t$, and it is fixed only up to a scalar |
-| $Q\mapsto-e_yQe_y$ | The two-sided multiplier; exchanges the two values of the subscript; its square is the identity |
+| $Q\mapsto-e_yQe_y$ | The two-sided multiplier; reverses the value; its square is the identity |
 | $Q\mapsto Qe_x$ | The one-sided form; its square is $-e_t$, its order is four |
-| $Q_L$, $Q_R$ | The two values of the subscript, the minus one and the plus one |
+| $Q_L$, $Q_R$ | The two components of the pair, of value minus one and plus one |
 | $\tilde{Ξ}_{\mathrm{sp},L}$, $\tilde{Ξ}_{\mathrm{sp},R}$ | The two lines of the free equation, one per value |
 | $\mathbb{B}_{H}\subset\mathbb{B}$ | Real-quaternion subspace, $\cong\mathbb{H}$; fixed set of the coefficient conjugation |
 | the fixed set of $Q^{\mathrm c}$ | Time and $y$ real, $x$ and $z$ imaginary; a real subalgebra of real dimension four, not a division ring |
 | $Ϙ=\pm1,0,\bar{0}$ | Charged (either sign), neutral, truly neutral charge states |
 | $C_{\Pi}$ | The change of display; keeps trace, determinant, spectrum, rank and products |
 | $\mathrm{pau}$, $\mathrm{axf}$ | The labels of the two displays of an array |
-| $\gamma_\mu$, $\Gamma=\gamma_5$ | The frame cells of the closing section; they appear only in *The Legacy Pauli Gamma Formulation* |
+| $\gamma_\mu$, $\Gamma=\gamma_5$ | The frame basis operators of the closing section; they appear only in *The Legacy Pauli Gamma Formulation* |
 
 ## Further Reading
 

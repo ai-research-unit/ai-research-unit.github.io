@@ -10,7 +10,7 @@ $$
 
 and it is exactly the group of units of the plain product. This article studies that sector as a set: its characterisation, its matrix model, its multiplicative and topological structure, and the place of the spectral condition inside it. Its partner is *The N-Degenerate Sector*, the null cone, on which the norm vanishes.
 
-The sector is defined by one condition, and the spectrum does not split it into two open halves. It is connected. The spectral condition cuts inside it a closed stratum of real codimension two, the spectrally degenerate units, and leaves its complement, the spectrally regular units, open and dense. The two pieces are the cells $\Sigma_{11}$ and $\Sigma_{10}$ of *The N-Regular, Spectrally Regular Sector* and *The N-Regular, Spectrally Degenerate Sector*; this article records their place in the sector and cites their internal study.
+The sector is defined by one condition, and the spectrum does not split it into two open halves. It is connected. The spectral condition cuts inside it a closed stratum of real codimension two, the spectrally degenerate units, and leaves its complement, the spectrally regular units, open and dense. The two pieces are the sectors $\Sigma_{11}$ and $\Sigma_{10}$ of *The N-Regular, Spectrally Regular Sector* and *The N-Regular, Spectrally Degenerate Sector*; this article records their place in the sector and cites their internal study.
 
 **Conventions.** The algebra is $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ on the basis $e_t,\vec e_x,\vec e_y,\vec e_z$, of complex dimension four and real dimension eight, with $\vec e_x\vec e_y=\vec e_z$ and $\vec e_k^2=-e_t$. An element is $\tilde Q=Q_te_t+\vec Q$ with $Q_\mu\in\mathbb{C}$ and $\vec Q=Q_x\vec e_x+Q_y\vec e_y+Q_z\vec e_z$. The natural conjugation is $\tilde Q^{\natural}=Q_t-\vec Q$ and the Hermitian conjugation is $\tilde Q^{*}=\overline{Q_t}-\overline{\vec Q}$. The **quaternionic norm** is
 
@@ -20,7 +20,7 @@ $$
 
 a complex scalar; it is multiplicative and it decides invertibility. Its zero set is the **null cone** $\mathcal{N}$. The **spectral-degenerate cone** is $\mathcal{S}=\{B^2=0\}$. The product is the plain product, with unit $e_t$.
 
-The words are fixed as follows. A **sector** is one of the two halves selected by the norm, as in the title of this article; a **cell** is one of the four intersections $\Sigma_{ij}$ selected by the norm and the spectrum together, called a sector in the spectral articles. The two uses are kept apart here. The **norm-one group** is $\mathbb{B}^{\times}_1=\{N=1\}$, called the **unit factor** in the polar articles; the word *unit* alone means an invertible element, an element of $\mathbb{B}^{\times}$. The two senses are kept apart, as in *Norm and Unitary Conventions*, §*The Unitary Convention*.
+The words are fixed as follows. A **sector** is one of the two halves selected by the norm, as in the title of this article; a **sector** is one of the four intersections $\Sigma_{ij}$ selected by the norm and the spectrum together, called a sector in the spectral articles. The two uses are kept apart here. The **norm-one group** is $\mathbb{B}^{\times}_1=\{N=1\}$, called the **unit factor** in the polar articles; the word *unit* alone means an invertible element, an element of $\mathbb{B}^{\times}$. The two senses are kept apart, as in *Norm and Unitary Conventions*, §*The Unitary Convention*.
 
 ## Definition and Characterisation
 
@@ -218,13 +218,13 @@ $$
 
 On the sector the eigenvalues are $\lambda_\pm=Q_t\pm iB$, both non-zero, and $\langle\tilde Q\rangle_{\natural}=\lambda_+\lambda_-$.
 
-*Proof.* The two cells are the intersections of the sector with the complement and with the zero set of $B^2$. The eigenvalues satisfy $\lambda_++\lambda_-=2Q_t$ and $\lambda_+\lambda_-=Q_t^2+B^2=N$, so neither vanishes when $\langle\tilde Q\rangle_{\natural}\neq0$.
+*Proof.* The two sectors are the intersections of the sector with the complement and with the zero set of $B^2$. The eigenvalues satisfy $\lambda_++\lambda_-=2Q_t$ and $\lambda_+\lambda_-=Q_t^2+B^2=N$, so neither vanishes when $\langle\tilde Q\rangle_{\natural}\neq0$.
 
 **Theorem (the two types).**
 
 (i) On $\Sigma_{11}$ the eigenvalues are distinct and non-zero; $\tilde Q$ is diagonalisable, with a unique two-term spectral decomposition $\tilde Q=\lambda_+\tilde\Pi_++\lambda_-\tilde\Pi_-$ into orthogonal idempotents.
 
-(ii) On $\Sigma_{10}$ the two eigenvalues coincide at the value $Q_t$, which is non-zero on the cell. The element is either the scalar $Q_t e_t$, with minimal polynomial $X-Q_t$, or a Jordan element $Q_t e_t+\vec\Upsilon$ with $\vec\Upsilon\neq0$ and $\vec\Upsilon^2=0$, with minimal polynomial $(X-Q_t)^2$; the second is not diagonalisable.
+(ii) On $\Sigma_{10}$ the two eigenvalues coincide at the value $Q_t$, which is non-zero on the sector. The element is either the scalar $Q_t e_t$, with minimal polynomial $X-Q_t$, or a Jordan element $Q_t e_t+\vec\Upsilon$ with $\vec\Upsilon\neq0$ and $\vec\Upsilon^2=0$, with minimal polynomial $(X-Q_t)^2$; the second is not diagonalisable.
 
 *Proof.* The discriminant is $-4B^2$, so it vanishes exactly on $\Sigma_{10}$. On $\Sigma_{10}$ the element is $Q_te_t+\vec\Upsilon$ with $\vec\Upsilon^2=0$, and the centraliser is the algebra of dual numbers, whose only idempotents are $0$ and $e_t$; hence there is no non-trivial spectral decomposition off the scalar line (*Relations between the N Norm and Spectral Regularity and Degeneracy*, §*The Two Decompositions*).
 
@@ -237,13 +237,13 @@ $$
 
 with $\mathcal{N}_{\mathrm p}=\{\vec\Upsilon\neq0:\vec\Upsilon^2=0\}$ the pure stratum of the null cone.
 
-**Theorem (the shapes of the halves).** The cell $\Sigma_{11}$ is open and dense in $\mathbb{B}$, of real dimension eight, and connected. The cell $\Sigma_{10}$ is closed in $\mathbb{B}^{\times}$, of real dimension six, and connected; it is the disjoint union of the scalar line and the Jordan cone. The sector is connected: $\Sigma_{11}$ is connected and dense, and every point of $\Sigma_{10}$ lies in its closure. The spectral split is a stratification, not a partition into two open halves.
+**Theorem (the shapes of the halves).** The sector $\Sigma_{11}$ is open and dense in $\mathbb{B}$, of real dimension eight, and connected. The sector $\Sigma_{10}$ is closed in $\mathbb{B}^{\times}$, of real dimension six, and connected; it is the disjoint union of the scalar line and the Jordan cone. The sector is connected: $\Sigma_{11}$ is connected and dense, and every point of $\Sigma_{10}$ lies in its closure. The spectral split is a stratification, not a partition into two open halves.
 
 *Proof.* $\Sigma_{11}$ is the complement of the union of the two closed cones $\mathcal{N}$ and $\mathcal{S}$, each of real codimension two; the complement is open and dense, and it is connected because the removal of a closed subset of codimension at least two from a connected manifold leaves a connected manifold. $\Sigma_{10}$ is the trace on the sector of the closed cone $\mathcal{S}$, hence closed in the sector. It is the union of the connected scalar line and the connected Jordan cone, and the closure of the Jordan cone contains the scalar line; hence it is connected. Its real dimension is that of $\mathcal{S}\setminus\mathcal{N}$, namely six.
 
-**Theorem (multiplication does not follow the spectrum).** Neither cell is closed under multiplication, and both are stable under inversion.
+**Theorem (multiplication does not follow the spectrum).** Neither sector is closed under multiplication, and both are stable under inversion.
 
-*Proof.* Inversion preserves the eigenvalues, hence preserves each cell. For the products, put $\nu_1=\vec e_x+i\vec e_y$ and $\nu_2=\vec e_x+i\vec e_z$. Both are square-zero, so $e_t+\nu_1$ and $e_t+\nu_2$ lie in $\Sigma_{10}$; their product is
+*Proof.* Inversion preserves the eigenvalues, hence preserves each sector. For the products, put $\nu_1=\vec e_x+i\vec e_y$ and $\nu_2=\vec e_x+i\vec e_z$. Both are square-zero, so $e_t+\nu_1$ and $e_t+\nu_2$ lie in $\Sigma_{10}$; their product is
 
 $$
 (e_t+\nu_1)(e_t+\nu_2)=\vec e_x,
@@ -251,7 +251,7 @@ $$
 
 which has $B^2=1$ and lies in $\Sigma_{11}$. In the other direction, $e_t+\vec e_x$ and $e_t-\vec e_x$ lie in $\Sigma_{11}$, and their product is $2e_t$, which lies in $\Sigma_{10}$.
 
-**Remark (the exponential on the cell).** The exponential carries the scalar line onto itself, and
+**Remark (the exponential on the sector).** The exponential carries the scalar line onto itself, and
 
 $$
 \exp\bigl(\mathbb{C}e_t+\{\vec\Upsilon:\vec\Upsilon^2=0\}\bigr)=\Sigma_{10}.
@@ -259,7 +259,7 @@ $$
 
 Indeed $\exp(a e_t+\vec\Upsilon)=e^a(e_t+\vec\Upsilon)$ for $\vec\Upsilon^2=0$, and every element of $\Sigma_{10}$ is of that form (*Biquaternion Elementary Functions*, §*The Logarithm*).
 
-**Remark (why the split is not a second sector).** The norm split is multiplicative and inversion-stable, and it is the partition that the group law follows. The spectral split is inversion-stable but not multiplicative: a product of two spectrally degenerate units can be spectrally regular, and a product of two spectrally regular units can be degenerate. It is therefore a stratification of the sector, not a second partition of the algebra at the same level. The four-cell grid is the simultaneous refinement, and its two regular cells are the two halves above.
+**Remark (why the split is not a second sector).** The norm split is multiplicative and inversion-stable, and it is the partition that the group law follows. The spectral split is inversion-stable but not multiplicative: a product of two spectrally degenerate units can be spectrally regular, and a product of two spectrally regular units can be degenerate. It is therefore a stratification of the sector, not a second partition of the algebra at the same level. The four-cell grid is the simultaneous refinement, and its two regular sectors are the two halves above.
 
 ## Comparison with the N-Degenerate Sector
 
@@ -295,7 +295,7 @@ The sector is the domain of the group law, of the polar decomposition, of the lo
 
 The sector retracts onto $\mathrm{U}(2)\cong(S^1\times S^3)/\{\pm e_t\}$. The fundamental group is infinite cyclic and is carried by the phase; the universal cover is $\mathbb{R}\times S^3$. The Euclidean sphere is not a group and is not the compact part of the sector; the compact part is the $*$-unitary group.
 
-The spectral condition cuts the sector into an open dense cell and a closed thin cell. The open cell is the generic case of distinct eigenvalues; the thin cell is the union of the scalar line and the Jordan cone. Neither is a subsemigroup, and the sector remains connected across both. The detailed study of the two cells is the subject of *The N-Regular, Spectrally Regular Sector* and *The N-Regular, Spectrally Degenerate Sector*.
+The spectral condition cuts the sector into an open dense sector and a closed thin sector. The open sector is the generic case of distinct eigenvalues; the thin sector is the union of the scalar line and the Jordan cone. Neither is a subsemigroup, and the sector remains connected across both. The detailed study of the two sectors is the subject of *The N-Regular, Spectrally Regular Sector* and *The N-Regular, Spectrally Degenerate Sector*.
 
 The boundary of the sector is the null cone. The two articles together carry the norm partition: this one the invertible half, *The N-Degenerate Sector* the half on which the norm vanishes.
 
@@ -307,7 +307,7 @@ Under the matrix model it is $GL_2(\mathbb{C})$, the norm is the determinant, an
 
 The sector is connected and non-compact and retracts onto $\mathrm{U}(2)\cong(S^1\times S^3)/\{\pm e_t\}$; its homotopy groups are $\mathbb{Z},0,\mathbb{Z}$ and its universal cover is $\mathbb{R}\times S^3$. The exponential is onto, and no continuous single-valued logarithm exists on the sector.
 
-The spectrum does not split the sector into two open halves. The spectrally regular units form an open dense cell of real dimension eight, the spectrally degenerate units a closed cell of real dimension six, the union of the scalar line and the Jordan cone. Both cells are inversion-stable, neither is product-stable, and the sector is connected. The two cells are studied in their own articles; this article owns the sector that contains them.
+The spectrum does not split the sector into two open halves. The spectrally regular units form an open dense sector of real dimension eight, the spectrally degenerate units a closed sector of real dimension six, the union of the scalar line and the Jordan cone. Both sectors are inversion-stable, neither is product-stable, and the sector is connected. The two sectors are studied in their own articles; this article owns the sector that contains them.
 
 ## Summary of Notation
 
@@ -337,9 +337,9 @@ The spectrum does not split the sector into two open halves. The spectrally regu
 - [N-Regularity and N-Degeneracy in the Biquaternion Algebra](n-regularity-and-n-degeneracy-in-the-biquaternion-algebra.html), for the norm, the criterion, the inverse formula and the two cases
 - [The N-Degenerate Sector](the-n-degenerate-sector.html), for the partner article and the null cone
 - [The Polar Decomposition of an N-Regular Biquaternion](the-polar-decomposition-of-an-n-regular-biquaternion.html), for the modulus, the four factors and the group of units
-- [The N-Regular, Spectrally Regular Sector](the-n-regular-spectrally-regular-sector.html), for the open dense cell
+- [The N-Regular, Spectrally Regular Sector](the-n-regular-spectrally-regular-sector.html), for the open dense sector
 - [The N-Regular, Spectrally Degenerate Sector](the-n-regular-spectrally-degenerate-sector.html), for the scalar line and the Jordan cone
-- [Relations between the N Norm and Spectral Regularity and Degeneracy](relations-between-the-n-norm-and-spectral-regularity-and-degeneracy.html), for the four cells and the chain of invariants
+- [Relations between the N Norm and Spectral Regularity and Degeneracy](relations-between-the-n-norm-and-spectral-regularity-and-degeneracy.html), for the four sectors and the chain of invariants
 - [The Biquaternion Unit Group as a Topological Group](the-biquaternion-unit-group-as-a-topological-group.html), for the determinant sequence, the centre and the covering
 - [The Unitary Group of the Biquaternion Algebra](the-unitary-group-of-the-biquaternion-algebra.html), for the polar retraction, the homotopy groups and the universal cover
 - [The Topology of the Zero-Divisor Cone](the-topology-of-the-zero-divisor-cone.html), for the boundary of the sector and its link

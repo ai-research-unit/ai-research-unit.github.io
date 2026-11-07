@@ -248,7 +248,7 @@ The operator, by contrast, is continuous through the limit: it never divides by 
 
 The two words name different things and coincide at one mass.
 
-**Chirality** is the eigenvalue of the chirality cell $\xi=-iR_{\mathrm{axf},\vec e_z}$, a pure right multiplier that carries one chiral half to minus itself and the other to plus itself. It is not a central sign but a slot: it acts on the right, a product takes the value of its right factor, and a left multiplication keeps the value. It is Lorentz invariant with or without a mass, because it commutes with the six Lorentz cells (*Chiral Fermions in the Biquaternion Framework*).
+**Chirality** is the eigenvalue of the chirality basis operator $\xi=-iR_{\mathrm{axf},\vec e_z}$, a pure right multiplier that carries one chiral half to minus itself and the other to plus itself. It is not a central sign but a slot: it acts on the right, a product takes the value of its right factor, and a left multiplication keeps the value. It is Lorentz invariant with or without a mass, because it commutes with the six Lorentz basis operators (*Chiral Fermions in the Biquaternion Framework*).
 
 **Helicity** is the eigenvalue of $\lambda$, a projection on the momentum, fixed by the little group and dependent on it.
 
@@ -256,9 +256,9 @@ So the two differ in kind. Chirality is a fixed side, the same in every frame an
 
 **Why helicity is conserved and chirality is not.** Helicity is $\vec J\cdot\vec u_p$, since the orbital part contributes nothing, and both factors are conserved by a free motion: $\vec J$ generates the rotations the free Hamiltonian respects, and $\vec p$ is conserved, so $\vec u_p$ is conserved with it. Hence $[\lambda,\tilde R_\Psi]=0$ for a free particle, at any mass. Chirality has no such argument, because what breaks it is the mass and not the motion. One is a symmetry of the free motion, the other a symmetry of the massless Lagrangian.
 
-In the algebra the mass is the off-diagonal pair that exchanges the two chiral parts, central in coefficient and odd under the cell (*The Hydrogen Atom in Biquaternionic Form — The Relativistic Case*). At $m=0$ the pair decouples into two Weyl equations, one per part, and that decoupling is why the two labels agree there.
+In the algebra the mass is the off-diagonal pair that exchanges the two chiral parts, central in coefficient and odd under the basis operator (*The Hydrogen Atom in Biquaternionic Form — The Relativistic Case*). At $m=0$ the pair decouples into two Weyl equations, one per part, and that decoupling is why the two labels agree there.
 
-**The cell at an axis.** The chirality cell is the frame's version of the grading that separates the two parts: the right multiplier $R(i\vec u_p)$ at the momentum axis, up to the sign that decides which part is called positive. The two parts of a Dirac spinor are the two left ideals at a declared axis, the right multiplier separates them, and the cell is that multiplier at the frame's own axis $\vec e_z$ (*Operator Chirality on the Biquaternion Algebra*; *Spinors and Dirac Spinors in the Biquaternion Algebra*, §*The Pair Is a Multiplicity*).
+**The basis operator at an axis.** The chirality basis operator is the frame's version of the grading that separates the two parts: the right multiplier $R(i\vec u_p)$ at the momentum axis, up to the sign that decides which part is called positive. The two parts of a Dirac spinor are the two left ideals at a declared axis, the right multiplier separates them, and the basis operator is that multiplier at the frame's own axis $\vec e_z$ (*Operator Chirality on the Biquaternion Algebra*; *Spinors and Dirac Spinors in the Biquaternion Algebra*, §*The Pair Is a Multiplicity*).
 
 ## What the Algebra Supplies and What It Does Not
 
@@ -303,7 +303,7 @@ At $m=0$ a second description opens. The null momentum is a zero divisor, hence 
 | $\langle ij\rangle,\ [ij]$ | The brackets, the symplectic pairing on $S$ and on $\bar S$ |
 | $r'_t$ | The little-group scaling, $\lambda\mapsto r'_t\lambda$, $\bar\lambda\mapsto {r'_{t}}^{-1}\bar\lambda$; $\lvert r'_t\rvert=1$ for a real momentum |
 | $h$ | The helicity, the weight; the operator's eigenvalue is $\frac{m\,c\,h}{k_m}$ |
-| $\xi=-iR_{\mathrm{axf},\vec e_z}$ | The chirality cell, a pure right multiplier; not the helicity |
+| $\xi=-iR_{\mathrm{axf},\vec e_z}$ | The chirality basis operator, a pure right multiplier; not the helicity |
 
 ## Further Reading
 
@@ -314,11 +314,11 @@ At $m=0$ a second description opens. The null momentum is a zero divisor, hence 
 - [Canonical Quantization of the Biquaternion Graviton Field](canonical-quantization-of-the-biquaternion-graviton-field.html), for the spin-two spectrum and the two physical states.
 - [The Determination of the Possible Spins in Biquaternionic Form](the-determination-of-the-possible-spins-in-biquaternionic-form.html), for the little-group classification and the statement that the reduction from $2s+1$ to two is the gauge condition.
 - [Angular Momentum and Spin in Biquaternionic Form](angular-momentum-and-spin-in-biquaternionic-form.html), for the spin operator whose projection this is.
-- [Chiral Fermions in the Biquaternion Framework](chiral-fermions-in-the-biquaternion-framework.html), for the chirality cell and its invariance.
+- [Chiral Fermions in the Biquaternion Framework](chiral-fermions-in-the-biquaternion-framework.html), for the chirality basis operator and its invariance.
 - [The Hydrogen Atom in Biquaternionic Form — The Relativistic Case](the-hydrogen-atom-in-biquaternionic-form-the-relativistic-case.html), for the non-conservation of chirality at nonzero mass.
 - [Spinors and Dirac Spinors in the Biquaternion Algebra](../articles_maths/spinors-and-dirac-spinors-in-the-biquaternion-algebra.html), for the elementary spinor, the weights $\pm\tfrac12$, and the two parts of a Dirac spinor as two copies.
 - [Angular Momentum and Spin in the Biquaternion Algebra](../articles_maths/angular-momentum-and-spin-in-the-biquaternion-algebra.html), for the definition of spin as a maximal weight and the classification of the carriers.
-- [Operator Chirality on the Biquaternion Algebra](../articles_maths/operator-chirality-on-the-biquaternion-algebra.html), for the chirality cell as a right multiplier and the two parts it separates.
+- [Operator Chirality on the Biquaternion Algebra](../articles_maths/operator-chirality-on-the-biquaternion-algebra.html), for the chirality basis operator as a right multiplier and the two parts it separates.
 - [N-Regularity and N-Degeneracy in the Biquaternion Algebra](../articles_maths/n-regularity-and-n-degeneracy-in-the-biquaternion-algebra.html), for the zero-divisor criterion and the pure and non-pure families.
 - [The Forms, the Norms and the Singular Set of $M_4(\mathbb{C})$](../articles_maths/the-forms-the-norms-and-the-singular-set-of-m4c.html), for the rank-one statement and the spinor factorisation.
 - [The Spinor Module in Biquaternionic Form and Its Lorentz Action](the-spinor-module-in-biquaternionic-form-and-its-lorentz-action.html), for the module $S$, the conjugate module and the symplectic form.

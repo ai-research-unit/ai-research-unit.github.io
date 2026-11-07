@@ -215,7 +215,7 @@ $$
 (e_Nu)(e_Nv)+(e_Nv)(e_Nu)=e_Nu e_Nv+e_Nv e_Nu=-e_N^2(uv+vu)=-(uv+vu)=0,
 $$
 
-where the middle step uses that $u$ and $v$ both anticommute with $e_N$ and $e_N^2=-1$. The products $e_Ne_i$ therefore satisfy the cell relation of the form $\mathfrak{Q}$ restricted to $e_N^\perp$, and by the universal property they generate a quotient of $\mathrm{Cl}(e_N^\perp,\mathfrak{Q})$. Both sides have dimension $2^{N-1}$, so the map is an isomorphism.
+where the middle step uses that $u$ and $v$ both anticommute with $e_N$ and $e_N^2=-1$. The products $e_Ne_i$ therefore satisfy the basis operator relation of the form $\mathfrak{Q}$ restricted to $e_N^\perp$, and by the universal property they generate a quotient of $\mathrm{Cl}(e_N^\perp,\mathfrak{Q})$. Both sides have dimension $2^{N-1}$, so the map is an isomorphism.
 
 **Low-dimensional instances.** For $\mathrm{Cl}_{0,2}$ one has $\mathrm{Cl}^0_{0,2}=\operatorname{span}\{1,e_1e_2\}\cong\mathbb{C}$; for $\mathrm{Cl}_{3,0}$ one has $\mathrm{Cl}^0_{3,0}\cong\mathbb{H}$, as computed above; and for $\mathrm{Cl}_{1,3}$ the recursion applied to a generator of square $-1$ gives $\mathrm{Cl}^0_{1,3}\cong\mathrm{Cl}_{1,2}$, which is $M_2(\mathbb{C})$ by the identification of the next section, the same algebra that is used in the biquaternion articles. The recursion holds whenever a generator of square $-1$ exists; when a generator of square $+1$ is used instead, the same computation returns $-\mathfrak{Q}$ in place of $\mathfrak{Q}$, which is why the sign of the form matters and why the recursion alternates between the two definite families.
 

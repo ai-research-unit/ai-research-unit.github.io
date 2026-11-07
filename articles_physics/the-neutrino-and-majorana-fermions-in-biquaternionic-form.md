@@ -23,13 +23,13 @@ The article is organized as follows. The next section fixes the field, the two v
 
 **The field is an element.** In this framework the state of a fermion is an element of $\mathbb{B}$, written $\tilde{Ξ}_{\mathrm{sp}}$, and a general element is written $Q$. An element has four complex coefficients and eight real components. Every statement below is a statement about elements, their products, and the multipliers of one declared frame.
 
-**The chirality is a value of one operator.** Chirality is the side on which an operator multiplies; the cell that supplies a sign is
+**The chirality is a value of one operator.** Chirality is the side on which an operator multiplies; the basis operator that supplies a sign is
 
 $$
 \xi=-iR_{\mathrm{axf},\vec e_z},\qquad \xi Q=-i\,Q\,\vec e_z ,\qquad \xi^{2}=1 ,
 $$
 
-a pure right multiplier, so it is an example of the right slot and never its definition. It carries part of the coefficient space to minus itself and part to plus itself, and the two parts are the two values of the subscript: $\xi\tilde{Ξ}_{\mathrm{sp},L}=-\tilde{Ξ}_{\mathrm{sp},L}$ and $\xi\tilde{Ξ}_{\mathrm{sp},R}=+\tilde{Ξ}_{\mathrm{sp},R}$. Every element is one part of each value, $\tilde{Ξ}_{\mathrm{sp}}=\tilde{Ξ}_{\mathrm{sp},L}+\tilde{Ξ}_{\mathrm{sp},R}$, each part is of two complex dimensions, and only the zero element is both. The letters are the Dirac ones, $L$ for the minus value and $R$ for the plus one (*Matrix Representations Conventions*, §*The Subscript on an Element*).
+a pure right multiplier, so it is an example of the right slot and never its definition. It carries part of the coefficient space to minus itself and part to plus itself, and the basis operator returns $-1$ on one and $+1$ on the other: $\xi\tilde{Ξ}_{\mathrm{sp},L}=-\tilde{Ξ}_{\mathrm{sp},L}$ and $\xi\tilde{Ξ}_{\mathrm{sp},R}=+\tilde{Ξ}_{\mathrm{sp},R}$. Every element is one part of each value, $\tilde{Ξ}_{\mathrm{sp}}=\tilde{Ξ}_{\mathrm{sp},L}+\tilde{Ξ}_{\mathrm{sp},R}$, each part is of two complex dimensions, and only the zero element is both. The letters are the Dirac ones, $L$ for the minus value and $R$ for the plus one (*Matrix Representations Conventions*, §*The Subscript on an Element*).
 
 **The rule for products.** A product takes the value of its right factor, $(QR)\vec e_z=Q(R\vec e_z)$, and a left multiplication keeps the value. Both follow at once from the definition, and they are the rule the section on the mass runs on.
 
@@ -316,21 +316,21 @@ The framework transcribes both facts, and neither is a derivation.
 
 The Pauli and gamma formulation is legacy: the reasons are explained in the article *Why AXF Matrices instead of Pauli and Gamma Matrices*. The generators carry no frame label: $\gamma_\mu$ is one set of matrices, $\gamma_0^2=I_4$ and $\gamma_k^2=-I_4$. The frame belongs to the coordinate, not to the array.
 
-The gammas are a frame of $\mathrm{Cl}_{1,3}(\mathbb{C})=M_4(\mathbb{C})$, not a different algebra. In cells they are
+The gammas are a frame of $\mathrm{Cl}_{1,3}(\mathbb{C})=M_4(\mathbb{C})$, not a different algebra. In basis operators they are
 
 $$
 \gamma_0=iL_{\mathrm{axf},e_t}R_{\mathrm{axf},\vec e_x},\quad \gamma_1=iL_{\mathrm{axf},\vec e_x}R_{\mathrm{axf},\vec e_y},\quad \gamma_2=iL_{\mathrm{axf},\vec e_y}R_{\mathrm{axf},\vec e_y},\quad \gamma_3=iL_{\mathrm{axf},\vec e_z}R_{\mathrm{axf},\vec e_y},\quad \gamma_5=-iL_{\mathrm{axf},e_t}R_{\mathrm{axf},\vec e_z} .
 $$
 
-Here $L_a$ and $R_b$ are the left and right multiplications, $L_a\tilde{Ξ}_{\mathrm{sp}}=a\tilde{Ξ}_{\mathrm{sp}}$ and $R_b\tilde{Ξ}_{\mathrm{sp}}=\tilde{Ξ}_{\mathrm{sp}} b$. Each of these is one product of a left and a right multiplication, so its coefficient matrix $c(\gamma_\mu)$ is a pure tensor: the single products fill the seven-dimensional cone $\operatorname{rank}c(M)\le1$ inside the sixteen-dimensional cell algebra, a general element is a sum of at most four of them, and the least number of products needed is $\ell(M)=\operatorname{rank}c(M)$.
+Here $L_a$ and $R_b$ are the left and right multiplications, $L_a\tilde{Ξ}_{\mathrm{sp}}=a\tilde{Ξ}_{\mathrm{sp}}$ and $R_b\tilde{Ξ}_{\mathrm{sp}}=\tilde{Ξ}_{\mathrm{sp}} b$. Each of these is one product of a left and a right multiplication, so its coefficient matrix $c(\gamma_\mu)$ is a pure tensor: the single products fill the seven-dimensional cone $\operatorname{rank}c(M)\le1$ inside the sixteen-dimensional basis operator algebra, a general element is a sum of at most four of them, and the least number of products needed is $\ell(M)=\operatorname{rank}c(M)$.
 
-The four multipliers of the body are the real parts of these cells: $c_\mu=-i\gamma_\mu$, and the operator $D=\sum_\mu\varepsilon_\mu c_\mu\partial/\partial x_\mu$ is the one the conjugation commutes with. That is the whole content of the statement that the $i$ belongs to the generator and not to the operator, and the two displays are two readings of one frame.
+The four multipliers of the body are the real parts of these basis operators: $c_\mu=-i\gamma_\mu$, and the operator $D=\sum_\mu\varepsilon_\mu c_\mu\partial/\partial x_\mu$ is the one the conjugation commutes with. That is the whole content of the statement that the $i$ belongs to the generator and not to the operator, and the two displays are two readings of one frame.
 
-$\gamma_5$ is the reference-frame cell of the chirality; the chirality operator of the body is its axis-free form, $\xi=-iR_{\mathrm{axf},\vec e_z}$.
+$\gamma_5$ is the reference-frame basis operator of the chirality; the chirality operator of the body is its axis-free form, $\xi=-iR_{\mathrm{axf},\vec e_z}$.
 
-The dictionary is complex-linear; over $\mathbb{R}$ the products span $\mathrm{Cl}_{1,3}(\mathbb{R})\cong M_2(\mathbb{H})$ and the cells span $\mathrm{Cl}_{3,1}(\mathbb{R})\cong M_4(\mathbb{R})$.
+The dictionary is complex-linear; over $\mathbb{R}$ the products span $\mathrm{Cl}_{1,3}(\mathbb{R})\cong M_2(\mathbb{H})$ and the basis operators span $\mathrm{Cl}_{3,1}(\mathbb{R})\cong M_4(\mathbb{R})$.
 
-**The identities the bodies cite.** In the $\gamma$ reading, with $\varepsilon=(1,-1,-1,-1)$ the sign vector of the cells,
+**The identities the bodies cite.** In the $\gamma$ reading, with $\varepsilon=(1,-1,-1,-1)$ the sign vector of the basis operators,
 $$
 \{\gamma_\mu,\gamma_\nu\}=2\varepsilon_\mu\delta_{\mu\nu}I_4,\qquad
 (\gamma_k)^2=-I_4,\qquad
@@ -374,7 +374,7 @@ The left-handedness of the neutrino is empirical, and the mass values and mixing
 | $e_t = 1, \vec e_x, \vec e_y, \vec e_z$ | Quaternion basis, $\vec e_\mu^2=-e_t$, $\vec e_x \vec e_y=\vec e_z$ |
 | $i$ | Scalar imaginary, $i^2=-1$ |
 | $\tilde{Ξ}_{\mathrm{sp}}=\tilde{Ξ}_{\mathrm{sp},L}+\tilde{Ξ}_{\mathrm{sp},R}$ | The field, an element, and its two values |
-| $\xi=-iR_{\mathrm{axf},\vec e_z}$ | One cell that carries the split, a pure right multiplier; $\xi\tilde{Ξ}_{\mathrm{sp},L}=-\tilde{Ξ}_{\mathrm{sp},L}$, $\xi\tilde{Ξ}_{\mathrm{sp},R}=+\tilde{Ξ}_{\mathrm{sp},R}$ |
+| $\xi=-iR_{\mathrm{axf},\vec e_z}$ | One basis operator that carries the split, a pure right multiplier; $\xi\tilde{Ξ}_{\mathrm{sp},L}=-\tilde{Ξ}_{\mathrm{sp},L}$, $\xi\tilde{Ξ}_{\mathrm{sp},R}=+\tilde{Ξ}_{\mathrm{sp},R}$ |
 | $\mathbb{B}_{\Phi}, \mathbb{B}_{\Psi}$ | Material (anti-Hermitian) and informational (Hermitian) sectors |
 | $\mathbb{B}_{H} = \{Q:\bar{Q}=Q\}$ | Real-quaternion subspace, fixed space of $\bar{\cdot}$ |
 | $\mathbb{B}_{C} = \mathrm{span}_{\mathbb{R}}\{e_t, ie_t\}$ | Complex scalar subspace; the centre |
