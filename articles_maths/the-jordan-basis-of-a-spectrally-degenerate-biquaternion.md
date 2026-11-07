@@ -556,7 +556,7 @@ A general inner automorphism need not preserve the chosen frame, and the image o
 
 **Remark (the boundary).** The construction is defined on $\mathcal S\setminus\mathbb{C}e_t$; on the scalar line the vector part vanishes, the flag collapses, and no adapted frame is distinguished. On that line $\tilde Q=Q_te_t$ and every basis is an eigenbasis; the Jordan type is four blocks $J_1(Q_t)$, and at the origin $L_{\tilde Q}=0$.
 
-## Spinors and Chirality
+## The Spinor Spaces and the Two Sides
 
 **The two minimal left ideals are the two Jordan blocks of the left action, and the right action distinguishes them only partly.**
 
@@ -578,6 +578,8 @@ $$
 In particular the two Peirce copies are the two blocks of the left action, and the right action mixes $S_+$ into $S_++S_-$.
 
 *Proof.* The left action is the theorem of §*The Basis and the Left Action* read on the two chains $(\tilde\Pi_+,\vec\Upsilon_+)$ and $(\vec\Upsilon_-,\tilde\Pi_-)$. The right action is computed in the table. ∎
+
+**Remark (why the two copies are not two values).** The index $\pm$ of $S_\pm$ is a copy index: the two spaces are isomorphic, and no left multiplication tells them apart. A cell does not grade this pair either, since the theorem shows that $R_{\tilde Q}$ carries $S_+$ into $S_++S_-$ and is scalar only on $S_-$; a right multiplier therefore does not preserve the two copies. The pair is not the operator chirality of *Operator Chirality on the Biquaternion Algebra*: the label there is the side on which an operator multiplies, and the two values of a cell are its two eigenspaces on a carrier, which are not these two copies.
 
 The four labels are collected in the table.
 

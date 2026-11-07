@@ -249,7 +249,7 @@ $$
 
 because the time unit commutes with the three spatial units and the mixed derivatives survive. So a first-order equation on one value cannot be turned into the Klein–Gordon equation by squaring it, and the first-order operator whose square is $\Box$ needs both values. This is why the massive equation is a pair, while the massless equation stays first order, $\tilde\nabla\tilde{Ξ}_{\mathrm{sp},R}=0$ and $\tilde\nabla^{\natural}\tilde{Ξ}_{\mathrm{sp},L}=0$.
 
-**How the two are one.** The two members are two equations on one element: each is one left multiplication, by the gradient or by its conjugate; no derivative acts from the right; the mass is the only term that couples the two values; and no third object stands behind them. On the material sector the same $\Box$ is the Klein–Gordon operator in the real time, as *Operator and Calculus Conventions* states.
+**How the two are one.** The two members are two equations on one element: each is one left multiplication, by the gradient or by its conjugate; no derivative acts from the right; the mass is the only term that relates the two parts; and no third object stands behind them. On the material sector the same $\Box$ is the Klein–Gordon operator in the real time, as *Operator and Calculus Conventions* states.
 
 ### The Proton
 

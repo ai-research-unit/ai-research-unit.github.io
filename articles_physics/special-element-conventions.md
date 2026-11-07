@@ -41,7 +41,7 @@ A **root of $1$** of the algebra is an element $\tilde{Ζ}$ with $\tilde{Ζ}^2 =
 
 **It is allowed to add subscripts when several roots are used.** **The subscript of a root is numeric when it counts and a role label when it names.** Where more than one occurs the roots are numbered, $\tilde{Ζ}_1, \tilde{Ζ}_2$, as for the nilpotents and for the idempotent pairs other than the complete sign pair of §*The Idempotent Convention*; where a root plays a named role, it carries the role in upright roman as its subscript. A sign is a subscript where the statement needs one.
 
-**The adjoined generator of the double carries the root glyph.** The double $\mathbb{C}\otimes_{\mathbb{R}}\mathbb{B}_{\mathbb{R}}$ carries a central root of $-1$ outside $\mathbb{B}_{\mathbb{R}}$; it is written $\tilde{Ζ}_{\mathrm{ad}}$, the biquaternion root glyph with the role subscript $\mathrm{ad}$ of the paragraph above. It is a root of the double, not an element of $\mathbb{B}$. The chirality is the cell $\mathsf{V}_{\mathrm{vol}}$ of §*The Chirality Convention*; its central form is $\chi=i\tilde{Ζ}_{\mathrm{ad}}$ with $\chi^2=e_t$. No other letter is used for it.
+**The adjoined generator of the double carries the root glyph.** The double $\mathbb{C}\otimes_{\mathbb{R}}\mathbb{B}_{\mathbb{R}}$ carries a central root of $-1$ outside $\mathbb{B}_{\mathbb{R}}$; it is written $\tilde{Ζ}_{\mathrm{ad}}$, the biquaternion root glyph with the role subscript $\mathrm{ad}$ of the paragraph above. It is a root of the double, not an element of $\mathbb{B}$. The sign of the double is $\chi=i\tilde{Ζ}_{\mathrm{ad}}$, with $\chi^2=e_t$, and it is the central form of the fifth cell of a frame, $\mathsf{V}_{\mathrm{vol}}=-iR_{\vec e_z}$, written in the double. The cell is one example of the right slot and not the definition of the label, which is a side of an operator and needs no element; §*The Chirality Convention* states both, and neither is called chirality in this file. No other letter is used for either.
 
 The root glyph is therefore **split by the case rule**, and the split is the reason the convention is stated:
 
@@ -130,7 +130,7 @@ is a pure right multiplier; it squares to the identity, its trace is zero, and i
 $$
 s=\frac{k_m\,\max}{m\,c}\operatorname{spec}\bigl(\rho(\vec u\cdot\vec S)\bigr)\in\tfrac12\mathbb{Z}_{\ge0},
 $$
-a scalar label and not a vector. The two sentences agree on every carrier the corpus uses, and the algebraic one is the sentence an article computes with (*Angular Momentum and Spin in the Biquaternion Algebra*, §*The Casimir and the Definition of Spin*, in the mathematical corpus). The label is $s$ and the projection $s_z$. The half-angle is the exponential coordinate of the rotor, the Peirce index is a copy label, and the chirality is the cell of §*The Chirality Convention*, whose central form is the sign $\chi=i\tilde{Ζ}_{\mathrm{ad}}$ of the complexification.
+a scalar label and not a vector. The two sentences agree on every carrier the corpus uses, and the algebraic one is the sentence an article computes with (*Angular Momentum and Spin in the Biquaternion Algebra*, §*The Casimir and the Definition of Spin*, in the mathematical corpus). The label is $s$ and the projection $s_z$. The half-angle is the exponential coordinate of the rotor, the Peirce index is a copy label, and the chirality is the side on which an operator multiplies, the fifth cell of §*The Chirality Convention* being the example of it that a frame writes down.
 
 ### The Spinor Convention
 

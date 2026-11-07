@@ -152,7 +152,7 @@ $$
 
 Both multipliers have modulus one, so the rotation is periodic in $\alpha$: it is a rotation and not a boost. The two lines are one operation read on the two values; the field is one element, and the rotation multiplies each of its parts by its own phase.
 
-**The mass, and the phase it takes.** The mass is the term that couples the two values: in the chiral pair it is the only term that carries the field from one value to the other. The two values are rotated in opposite senses, so a term that joins them takes twice the phase. With $M_q$ the quark mass matrix — a flavour-space matrix, imported from the Standard Model and not a display of the algebra — the rotation gives
+**The mass, and the phase it takes.** The mass is the term that relates the two parts: in the chiral pair it is the only term that joins them, and it is a central coefficient, so it keeps the value of each part and moves no value across. The two parts are rotated in opposite senses, so a term that joins them takes twice the phase. With $M_q$ the quark mass matrix — a flavour-space matrix, imported from the Standard Model and not a display of the algebra — the rotation gives
 
 $$
 M_q\;\longmapsto\;\exp(2i\alpha)M_q ,
@@ -193,7 +193,7 @@ Because it is the integral of a parity-odd density, the theta term violates $P$ 
 
 The physical theta parameter is $\bar\theta=\theta+\arg\det M_q$, and the neutron electric dipole moment bounds it by $|\bar\theta|\lesssim10^{-10}$, which is the strong CP problem: the framework, like the Standard Model without additional structure, gives no reason for the near-vanishing. The framework supplies the CP-odd density as the invariant $I_2$, read as the imaginary component of the norm of the field element, and supplies the periodicity and the vacuum structure, but it does not supply the value of $\theta$, which is a coefficient in the action and not an element of the algebra; the resolution is imported.
 
-The field content is carried by the gradient and by the chirality subscript: the gradient acts from the left, the mass is the one term that couples the two values, and the massive equation is the chiral pair $\tilde\nabla\tilde{Ξ}_{\mathrm{sp},R}=k_m\tilde{Ξ}_{\mathrm{sp},L}$, $\tilde\nabla^{\natural}\tilde{Ξ}_{\mathrm{sp},L}=k_m\tilde{Ξ}_{\mathrm{sp},R}$, since $\tilde\nabla^2$ is not scalar.
+The field content is carried by the gradient and by the chirality subscript: the gradient acts from the left, the mass is the one term that relates the two parts, and the massive equation is the chiral pair $\tilde\nabla\tilde{Ξ}_{\mathrm{sp},R}=k_m\tilde{Ξ}_{\mathrm{sp},L}$, $\tilde\nabla^{\natural}\tilde{Ξ}_{\mathrm{sp},L}=k_m\tilde{Ξ}_{\mathrm{sp},R}$, since $\tilde\nabla^2$ is not scalar.
 
 ## Summary of Notation
 

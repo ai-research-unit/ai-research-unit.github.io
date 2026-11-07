@@ -144,7 +144,7 @@ It should be said clearly that this derivation uses the map $\beta$ of *The Stan
 
 There is a genuinely algebraic statement available, and it is the strongest positive result of the article. It has two parts.
 
-**The real structure is diagonal on the sectors.** The conjugation $\flat$ acts as $-1$ on the $\mathbb{B}_{\Psi}$ part of the field and $+1$ on its $\mathbb{B}_{\Phi}$ part: it **preserves** each sector and marks it with a sign. This is a property of the algebra's real structure, not of the mass term; the parent's mass is the linear term that couples the two values, and, being a real scalar, it leaves each element's sector membership untouched. The operation that exchanges the two sectors is multiplication by the central $i$ (§*The Conjugations*).
+**The real structure is diagonal on the sectors.** The conjugation $\flat$ acts as $-1$ on the $\mathbb{B}_{\Psi}$ part of the field and $+1$ on its $\mathbb{B}_{\Phi}$ part: it **preserves** each sector and marks it with a sign. This is a property of the algebra's real structure, not of the mass term; the parent's mass is the linear term that relates the two parts, and, being a real scalar, it leaves each element's sector membership untouched. The operation that exchanges the two sectors is multiplication by the central $i$ (§*The Conjugations*).
 
 **The rest-energy phase rotates the sectors into one another.** Factoring out the rest energy writes the free phase as
 

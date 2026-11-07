@@ -178,7 +178,7 @@ Each statement below is a computation and not an analogy.
 
 **Is the neutrality of a field always the statement that its module is fixed by one of the two conjugations?** The neutron's neutrality is the quaternionic ring, which here is the statement that the module is fixed by the coefficient conjugation. The photon's self-conjugacy is the real ring, the statement that it is fixed by the charge conjugation. Whether every neutral field is of one of the two kinds, or whether a third kind exists that the division-ring classification does not see, is not settled by the theorem.
 
-**The conjugation and massive neutral fermions.** A Majorana field is neutral but carries mass. In the framework, the mass term couples the two values of the subscript, and the conjugation keeps them, so a Majorana mass and a Dirac mass are distinguished by which values the mass term joins. The companion computation stops at the free field, and the massive case is not done.
+**The conjugation and massive neutral fermions.** A Majorana field is neutral but carries mass. In the framework, the mass term relates the two parts of the subscript, and the coefficient conjugation exchanges the two values. A Dirac mass and a Majorana mass are therefore distinguished by the shape of the term — linear against antilinear — and not by the parts it joins. The companion computation stops at the free field, and the massive case is not done.
 
 **The charge-conjugation parity of truly neutral particles.** The $\pi^0$ has $C=+1$ and the phi meson has $C=-1$ despite both being $Ϙ=0$. In the algebra the sign is a sign of the fixed set — the identity on the module up to $\pm1$ — and where such a sign comes from is open.
 

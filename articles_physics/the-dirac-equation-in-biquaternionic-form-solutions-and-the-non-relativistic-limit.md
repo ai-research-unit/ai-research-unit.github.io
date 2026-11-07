@@ -269,7 +269,7 @@ $$
 
 and it carries a single value: no part of the other value appears in it, which is what "chirality is conserved at $m=0$" states. The locking of chirality to helicity is the counting above: one solution per value, of opposite helicity, so a massless fermion of definite helicity has definite chirality, and the assignment reverses for the negative-frequency branch.
 
-The mass term is the only term that couples the two values, and it is the reason the locking fails at $m\neq0$: the two laws of the solutions section, $\mathcal{D}\tilde\zeta_{R\pm}=(E\mp|\vec p|\,c)\tilde\zeta_{L\pm}$ and the law with the two elements interchanged, carry the mass through $\sqrt{E+|\vec p|\,c}\sqrt{E-|\vec p|\,c}=m$, and they degenerate exactly when $m=0$. The Weyl fields are therefore the $m\to0$ limit of the solutions constructed above, and the biquaternionic equation reduces in that limit to the pair of one-value equations.
+The mass term is the only term that relates the two parts, and it is the reason the locking fails at $m\neq0$: the two laws of the solutions section, $\mathcal{D}\tilde\zeta_{R\pm}=(E\mp|\vec p|\,c)\tilde\zeta_{L\pm}$ and the law with the two elements interchanged, carry the mass through $\sqrt{E+|\vec p|\,c}\sqrt{E-|\vec p|\,c}=m$, and they degenerate exactly when $m=0$. The Weyl fields are therefore the $m\to0$ limit of the solutions constructed above, and the biquaternionic equation reduces in that limit to the pair of one-value equations.
 
 ## The Legacy Pauli Gamma Formulation
 

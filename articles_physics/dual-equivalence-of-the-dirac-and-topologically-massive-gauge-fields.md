@@ -248,7 +248,7 @@ one factor of $i$ spent on $i^2=-1$. Read back, $\tilde{Ξ}_{\mathrm{sp},L}=F$ a
 $$
 i\sum_{\nu,\lambda}\epsilon_\nu\epsilon_\lambda\,\check c_{\mu\nu\lambda}\,\tilde\nabla_\nu G_\lambda-m\,G^*_\mu=0,
 $$
-whose mass couples $G$ to $G^*$ and whose two chiral lines above are its two parts, $G^{\mathrm R}_\mu$ and $G^{\mathrm L}_\mu$. It is the equation whose mass couples the two values: one line, one mass, two parts. So the elimination of $H_\mu$ returns the *pair*, not one equation, and the chirality of the mass is the same chirality that the gauge reduction carries into the Chern–Simons term.
+whose mass couples $G$ to $G^*$ and whose two chiral lines above are its two parts, $G^{\mathrm R}_\mu$ and $G^{\mathrm L}_\mu$. It is the equation whose mass relates the two parts: one line, one mass, two parts. So the elimination of $H_\mu$ returns the *pair*, not one equation, and the chirality of the mass is the same chirality that the gauge reduction carries into the Chern–Simons term.
 
 ## The Mass as a Non-Integrable Phase
 
