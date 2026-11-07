@@ -158,7 +158,7 @@ with $\tilde{Ξ}_{\mathrm{sp}}^0$ an arbitrary solution of the homogeneous equat
 The plane-wave solutions are written with the four-wavevector of the read list,
 
 $$
-\tilde P_{\Phi}\,k_{\Phi} = i\frac{\omega}{c}e_t + \vec k\in\mathbb{B}_{\Phi},
+\tilde K_{\Phi} = i\frac{\omega}{c}e_t + \vec k\in\mathbb{B}_{\Phi},
 \qquad
 \tilde R_\Phi = i r'_t\,e_t + r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z\in\mathbb{B}_{\Phi} ,
 $$
@@ -178,10 +178,10 @@ $$
 = \left(\frac{\omega^2}{c^2} - \vec k^2\right)\tilde{Ξ}.
 $$
 
-The Klein–Gordon equation therefore requires $\omega^2/c^2 - \vec k^2 = k_m^{2}$. Since the biquaternion norm of the four-wavevector is $\langle\tilde P_{\Phi}\,k_{\Phi}\rangle_{\natural}  =\frac{k_m^{2}\,\tilde{P}_{\Phi}\,\tilde{P}_{\Phi}^{\natural}}{m^{2}\,c^{2}}= -\omega^2/c^2 + \vec k^2$, this is exactly the mass-shell condition
+The Klein–Gordon equation therefore requires $\omega^2/c^2 - \vec k^2 = k_m^{2}$. Since the biquaternion norm of the four-wavevector is $\langle\tilde K_{\Phi}\rangle_{\natural}  =\frac{k_m^{2}\,\tilde{P}_{\Phi}\,\tilde{P}_{\Phi}^{\natural}}{m^{2}\,c^{2}}= -\omega^2/c^2 + \vec k^2$, this is exactly the mass-shell condition
 
 $$
-\langle\tilde P_{\Phi}\,k_{\Phi}\rangle_{\natural} = -k_m^{2}
+\langle\tilde K_{\Phi}\rangle_{\natural} = -k_m^{2}
 \qquad\Longleftrightarrow\qquad
 -\frac{\omega^2}{c^2} + \vec k^2 = -k_m^{2},
 $$
@@ -199,7 +199,7 @@ $$
 \omega = \pm\sqrt{c^2\vec k^2 + c^2k_m^{2}}
 $$
 
-are the two frequency branches. They are the same dispersion relation with opposite signs, not two different equations, and no choice of $\vec k$ or $m$ makes the negative root disappear. Here $k_{\Phi}=\frac{k_m\,p}{m\,c}$ is the momentum length.
+are the two frequency branches. They are the same dispersion relation with opposite signs, not two different equations, and no choice of $\vec k$ or $m$ makes the negative root disappear. Here $k_{\Phi}=\frac{k_m\,p}{m\,c}$ is the momentum wave number.
 
 **Case checked.** As a case chosen independently of the derivation, take dimensionless units $\hbar = 1$, $c = 2$, $m = 0.7$, $\vec k = (0.9,-0.5,0.3)$. Then $c^2\vec k^2 = 4(1.15) = 4.6$, $c^2k_m^{2} = 0.49\cdot16 = 7.84$, so $\omega^2 = 12.44$ and $\omega \approx 3.5270$. Substituting $\tilde{Ξ} = \cos(\vec k\cdot(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)-\omega r'_t)$ and $\cos(\vec k\cdot(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)+\omega r'_t)$ into $\Box\tilde{Ξ} - k_m^{2}\tilde{Ξ}$ by second-order finite differences on a grid with step $10^{-4}$ gives a residual of order $10^{-7}$ at random points for **both** branches, which is the discretization error $O(h^2)$ and confirms that both signs solve the equation. The check was made on a numerically chosen case and not on the special value $\vec k = 0$, where the two branches coincide up to sign and a sign error would hide.
 
@@ -353,7 +353,7 @@ One exception to the obstruction is imported from the literature and kept separa
 | $\Box = \tilde{\nabla}\tilde{\nabla}^{\natural} = \partial^2/\partial R_t^2 + \Delta$ | d'Alembertian |
 | $\tilde{Ξ}$ | Biquaternion-valued Klein–Gordon field |
 | $\tilde R_\Phi = i r'_t\,e_t + r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z$ | Four-position biquaternion |
-| $\tilde P_{\Phi}\,k_{\Phi} = i\omega/c\,e_t + \vec k$ | Four-wavevector biquaternion |
+| $\tilde K_{\Phi} = i\omega/c\,e_t + \vec k$ | Four-wavevector biquaternion |
 | $\langle\tilde{Q}\rangle_{\natural} = \tilde{Q}\tilde{Q}^{\natural}$ | Biquaternion norm |
 | $\tilde P_{\Phi}\tilde P_{\Phi}^{\natural}= -m^{2}\,c^{2}$ | Mass-shell condition |
 | $\tilde{J}_{\Phi} = ic\rho\,e_t + \vec j$ | Conserved four-current |

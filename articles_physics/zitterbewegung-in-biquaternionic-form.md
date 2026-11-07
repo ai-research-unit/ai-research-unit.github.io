@@ -253,7 +253,7 @@ The structural claim that motivated the article fails. The positive- and negativ
 | $\tilde{Ξ}_{\mathrm{sp}}$, $\tilde{Ξ}_{\mathrm{sp},L}$, $\tilde{Ξ}_{\mathrm{sp},R}$ | The field, one element of $\mathbb{B}$, and its two parts, one per value of the subscript |
 | $\tilde{Ξ}_{\mathrm{sp}}^{(+)}, \tilde{Ξ}_{\mathrm{sp}}^{(-)}$ | The two frequency branches; $\tilde{Ξ}_{\mathrm{sp},0}^{(\pm)}$ their constant elements |
 | $\tilde R_\Phi$ | The four-position biquaternion of the parent |
-| $\tilde P_{\Phi}\,k_{\Phi}$ | The wave biquaternion of the parent, $\vec k=\vec p\,k_{\Phi}$ |
+| $\tilde K_{\Phi}$ | The wave biquaternion of the parent, $\vec k=\vec p\,\frac{k_m}{m\,c}$ |
 | $\tilde P_{\Phi}\tilde P_{\Phi}^{\natural} = -m^{2}\,c^{2}$ | Biquaternionic mass-shell condition |
 | $\flat$ | The anti-Hermitian conjugation (the algebra's real structure, not the mass term), *Algebra and Element Conventions* |
 | $\tilde\nabla$ | The biquaternionic gradient (Dirac operator), *Operator and Calculus Conventions* |
@@ -267,7 +267,7 @@ The structural claim that motivated the article fails. The positive- and negativ
 | $\dfrac{1}{2\,k_m}$ | Zitterbewegung amplitude (order) |
 | $c(M)$, $\ell(M)$ | Coefficient matrix of an element in the sixteen products, and its rank (length) |
 
-Here $k_{\Phi}=\frac{k_m\,p}{m\,c}$ is the momentum length.
+Here $k_{\Phi}=\frac{k_m\,p}{m\,c}$ is the momentum wave number.
 
 ## Further Reading
 

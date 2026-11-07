@@ -203,7 +203,7 @@ $$
 
 with the biquaternion writing carrying no additional content. This is the honest verdict of the companion article, and the algebra of the present article says why it must be so: there is no axis in the field for any non-central algebraic structure to act on. Here $k_m=mc/\hbar$ is the mass wave number, the inverse of the mass length.
 
-The plane-wave solutions exhibit the same point. With the four-position $\tilde R_\Phi$ and the four-wavevector $\tilde P_{\Phi}\,k_{\Phi}$ in the material sector, the phase is the real scalar $\mathrm{Sc}(\tilde P_{\Phi}\tilde{R}_\Phi^{\natural})/\hbar=\vec k\cdot\vec r-\omega r'_t/c$, and the positive-frequency solution is
+The plane-wave solutions exhibit the same point. With the four-position $\tilde R_\Phi$ and the four-wavevector $\tilde K_{\Phi}$ in the material sector, the phase is the real scalar $\mathrm{Sc}(\tilde P_{\Phi}\tilde{R}_\Phi^{\natural})/\hbar=\vec k\cdot\vec r-\omega r'_t/c$, and the positive-frequency solution is
 
 $$
 \tilde{Ξ}=\xi_{\mathrm{scl},0}\,\exp\!\left(i\,\mathrm{Sc}\frac{k_m\,\tilde{P}_{\Phi}\,\tilde{R}_{\Phi}^{\natural}}{m\,c}\right)e_t
@@ -213,7 +213,7 @@ $$
 The exponential is central. The mass-shell condition is the biquaternion norm of the four-wavevector,
 
 $$
-\langle\tilde P_{\Phi}\,k_{\Phi}\rangle_{\natural}=-\frac{\omega^2}{c^2}+k_x^2+k_y^2+k_z^2 ,
+\langle\tilde K_{\Phi}\rangle_{\natural}=-\frac{\omega^2}{c^2}+k_x^2+k_y^2+k_z^2 ,
 $$
 
 and setting it to the negative constant $-k_m^{2}$ gives the dispersion relation
@@ -224,7 +224,7 @@ $$
 \omega^2=c^2\left(k_x^2+k_y^2+k_z^2\right)+c^2k_m^{2},
 $$
 
-which is the standard relativistic dispersion relation. It is reproduced here only to record that the scalar field's entire algebraic content is the biquaternion norm of a four-vector, not the action of the algebra on a state. The conserved current $\tilde{J}_{\Phi}$ lies in $\mathbb{B}_{\Phi}$, its scalar component being the imaginary scalar direction, exactly as for the four-current of relativistic mechanics. Here $k_{\Phi}=\frac{k_m\,p}{m\,c}$ is the momentum length.
+which is the standard relativistic dispersion relation. It is reproduced here only to record that the scalar field's entire algebraic content is the biquaternion norm of a four-vector, not the action of the algebra on a state. The conserved current $\tilde{J}_{\Phi}$ lies in $\mathbb{B}_{\Phi}$, its scalar component being the imaginary scalar direction, exactly as for the four-current of relativistic mechanics. Here $k_{\Phi}=\frac{k_m\,p}{m\,c}$ is the momentum wave number.
 
 One structural remark belongs with the equation. The first-order operators of the framework act on states and change their content. The scalar field has no such action. The only operator the scalar equation uses is the central scalar $\Box$, whose square-root structure is a statement about the *operator*, not about the field it acts on. A scalar field is annihilated by a composite of state operators without ever being a state; it is the trivial channel appearing in the composition, not an element of the carrier.
 
@@ -320,7 +320,7 @@ For the sector split, the centre meets each sector in one real direction: the re
 | $H=\tfrac12(\tilde{Ξ}_{\mathrm{sp}}\tilde\xi^{*}+\tilde\xi\tilde{Ξ}_{\mathrm{sp}}^*)$ | Hermitian product of two states, in $\mathbb{B}_{\Psi}$ |
 | $\sigma=\mathrm{Sc}\,H$ | Scalar part of $H$; the time coefficient of $iH$, not a Lorentz scalar |
 | $\mathfrak{b}(\tilde{Ξ}_{\mathrm{sp}},\tilde\xi)=2\,\mathrm{Sc}(\tilde{Ξ}_{\mathrm{sp}}^*\tilde\xi)$ | Mixed pairing of two states of opposite labels |
-| $\tilde R_\Phi$, $\tilde P_{\Phi}\,k_{\Phi}$ | Four-position and four-wavevector, in $\mathbb{B}_{\Phi}$ (cited) |
+| $\tilde R_\Phi$, $\tilde K_{\Phi}$ | Four-position and four-wavevector, in $\mathbb{B}_{\Phi}$ (cited) |
 | $\langle\tilde{Q}\rangle_{\natural}$ | Biquaternion norm (cited) |
 | $\Box$ | d'Alembertian, central and scalar (cited) |
 | $c$, $\frac{m\,c}{k_m}$, $m$ | Speed of light in the medium, reduced Planck constant, mass |
