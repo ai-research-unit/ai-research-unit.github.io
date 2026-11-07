@@ -126,11 +126,11 @@ $$</p>
 $$</p>
 <p>It is completely positive and trace preserving, with Kraus operators</p>
 <p>$$
-\tilde{K}_0 = \sqrt{1-p}\,e_t, \qquad
-\tilde{K}_1 = \sqrt{p}\,\tilde\Pi_1(\vec u), \qquad
-\tilde{K}_2 = \sqrt{p}\,\tilde\Pi_2(\vec u),
+\tilde M_{\mathrm{kraus},0} = \sqrt{1-p}\,e_t, \qquad
+\tilde M_{\mathrm{kraus},1} = \sqrt{p}\,\tilde\Pi_1(\vec u), \qquad
+\tilde M_{\mathrm{kraus},2} = \sqrt{p}\,\tilde\Pi_2(\vec u),
 $$</p>
-<p>whose normalization $\sum_l \tilde{K}_l^{*} \tilde{K}_l = (1-p)e_t + p(\tilde\Pi_1 + \tilde\Pi_2) = e_t$ holds because the idempotents are Hermitian and complementary. The channel is <strong>unital</strong>: it fixes the maximally mixed state $\tilde{Ϛ} = \tfrac12 e_t$, so it is not a depolarizing map that pushes states toward the centre; it is a map that pushes them toward an <em>axis</em>.</p>
+<p>whose normalization $\sum_l \tilde M_{\mathrm{kraus},l}^{*} \tilde M_{\mathrm{kraus},l} = (1-p)e_t + p(\tilde\Pi_1 + \tilde\Pi_2) = e_t$ holds because the idempotents are Hermitian and complementary. The channel is <strong>unital</strong>: it fixes the maximally mixed state $\tilde{Ϛ} = \tfrac12 e_t$, so it is not a depolarizing map that pushes states toward the centre; it is a map that pushes them toward an <em>axis</em>.</p>
 <p>On the Bloch vector the channel acts by</p>
 <p>$$
 \boxed{\;\vec r \;\longmapsto\; \vec r_2 = (1-p)\,\vec r + p\,(\vec u\cdot\vec r)\,\vec u\;}.
@@ -347,7 +347,7 @@ $$</p>
 <td>Dephasing action on states</td>
 </tr>
 <tr>
-<td>$\tilde{K}_0 = \sqrt{1-p}\,e_t,\ \tilde{K}_{1,2} = \sqrt{p}\,\tilde\Pi_{1,2}$</td>
+<td>$\tilde M_{\mathrm{kraus},0} = \sqrt{1-p}\,e_t,\ \tilde M_{\mathrm{kraus},1,2} = \sqrt{p}\,\tilde\Pi_{1,2}$</td>
 <td>Kraus operators of dephasing</td>
 </tr>
 <tr>
@@ -379,7 +379,7 @@ $$</p>
 <td>Von Neumann entropy, $\lambda_\pm = \tfrac12(1\pm|\vec r|)$</td>
 </tr>
 <tr>
-<td>$Ξ(\tilde{Ϛ}) = \sum_l \tilde{K}_l\tilde{Ϛ}\tilde{K}_l^{*}$</td>
+<td>$Ξ(\tilde{Ϛ}) = \sum_l \tilde M_{\mathrm{kraus},l}\tilde{Ϛ}\tilde M_{\mathrm{kraus},l}^{*}$</td>
 <td>Kraus representation of a channel</td>
 </tr>
 <tr>

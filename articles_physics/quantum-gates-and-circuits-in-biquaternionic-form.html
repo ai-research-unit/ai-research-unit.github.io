@@ -106,7 +106,7 @@ $$</p>
 \mathrm{Tr}\!\left(Ξ_{\tilde Q}(\tilde{Ϛ})\right) = \mathrm{Tr}(\tilde{Ϛ}) = 1 .
 $$</p>
 <p>So a gate maps states to states.</p>
-<p><strong>The gate is a channel of Kraus rank one.</strong> In the language of the companion article on quantum channels, $Ξ_{\tilde Q}$ has the single Kraus operator $\tilde{K} = \tilde Q$ with $\tilde{K}^{*}\tilde{K} = e_t$. It is therefore completely positive and trace preserving, and it is exactly the class of channels that are <strong>invertible within the channels</strong>, with inverse $Ξ^{-1}_{\tilde Q} = Ξ_{\tilde Q^{*}}$ (whose Kraus operator is $\tilde Q^{*}$); it is also exactly the class that <strong>preserves purity</strong>, $\mathrm{Tr}(Ξ_{\tilde Q}(\tilde{Ϛ})^2) = \mathrm{Tr}(\tilde{Ϛ}^2)$. A gate is a reversible process, and conversely every reversible process of the informational sector is a gate.</p>
+<p><strong>The gate is a channel of Kraus rank one.</strong> In the language of the companion article on quantum channels, $Ξ_{\tilde Q}$ has the single Kraus operator $\tilde M_{\mathrm{kraus}} = \tilde Q$ with $\tilde M_{\mathrm{kraus}}^{*}\tilde M_{\mathrm{kraus}} = e_t$. It is therefore completely positive and trace preserving, and it is exactly the class of channels that are <strong>invertible within the channels</strong>, with inverse $Ξ^{-1}_{\tilde Q} = Ξ_{\tilde Q^{*}}$ (whose Kraus operator is $\tilde Q^{*}$); it is also exactly the class that <strong>preserves purity</strong>, $\mathrm{Tr}(Ξ_{\tilde Q}(\tilde{Ϛ})^2) = \mathrm{Tr}(\tilde{Ϛ}^2)$. A gate is a reversible process, and conversely every reversible process of the informational sector is a gate.</p>
 <h3 id="why-matrix-unitarity-and-not-unit-norm">Why Matrix-Unitarity and Not Unit Norm</h3>
 <p>The condition $\tilde Q\tilde Q^{*} = e_t$ must not be confused with the unit-norm condition $\tilde U_{\mathrm{lor}}\tilde U_{\mathrm{lor}}{}^{\natural} = e_t$ that defines the Lorentz rotors $SL(2,\mathbb{C})$. The two conditions pick out two different subgroups of the same algebra, and only the first is a group of gates.</p>
 <p>The distinction is visible in a single example. A <strong>boost biquaternion</strong></p>
@@ -440,7 +440,7 @@ $$</p>
 <p>The output is not a product of idempotents; its partial trace is $\tfrac12 e_t$, the maximally mixed qubit state, by the computation of the companion article. The circuit has converted a product state into a maximally entangled state by a single conjugation, and every step of the conversion is an algebraic product and conjugation in $\mathbb{B}\otimes\mathbb{B}$.</p>
 <h2 id="gates-and-the-irreversible-channels">Gates and the Irreversible Channels</h2>
 <p>The read list for this article closes with <em>Quantum Channels and the Reversible/Irreversible Dichotomy</em>, and the contrast between the two is the conceptual content of the gate formalism.</p>
-<p>A <strong>state map</strong> is a completely positive, trace-preserving map on $\mathbb{B}_{\Psi}$, extended complex-linearly to $\mathbb{B} = \mathbb{B}_{\Psi} \oplus \mathbb{B}_{\Phi}$ and written in Kraus form $Ξ(\tilde{Ϛ}) = \sum_l \tilde{K}_l\tilde{Ϛ}\tilde{K}_l^{*}$ with $\sum_l\tilde{K}_l^{*}\tilde{K}_l = e_t$. The dichotomy is:</p>
+<p>A <strong>state map</strong> is a completely positive, trace-preserving map on $\mathbb{B}_{\Psi}$, extended complex-linearly to $\mathbb{B} = \mathbb{B}_{\Psi} \oplus \mathbb{B}_{\Phi}$ and written in Kraus form $Ξ(\tilde{Ϛ}) = \sum_l \tilde M_{\mathrm{kraus},l}\tilde{Ϛ}\tilde M_{\mathrm{kraus},l}^{*}$ with $\sum_l\tilde M_{\mathrm{kraus},l}^{*}\tilde M_{\mathrm{kraus},l} = e_t$. The dichotomy is:</p>
 <p>$$
 \text{reversible} \quad\Longleftrightarrow\quad \text{Kraus rank one} \quad\Longleftrightarrow\quad Ξ = Ξ_{\tilde Q}\ \text{for a }{}^{*}\text{-unitary } \tilde Q \quad\Longleftrightarrow\quad Ξ \text{ is a gate.}
 $$</p>
@@ -584,7 +584,7 @@ $$</p>
 <td>Swap gate</td>
 </tr>
 <tr>
-<td>$Ξ(\tilde{Ϛ})=\sum_l\tilde{K}_l\tilde{Ϛ}\tilde{K}_l^{*}$</td>
+<td>$Ξ(\tilde{Ϛ})=\sum_l\tilde M_{\mathrm{kraus},l}\tilde{Ϛ}\tilde M_{\mathrm{kraus},l}^{*}$</td>
 <td>Kraus representation of a channel</td>
 </tr>
 <tr>
