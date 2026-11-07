@@ -80,7 +80,7 @@ $$
 
 Here $k_{\Phi}=\frac{k_m\,p}{m\,c}$ is the momentum wave number.
 
-and the plane-wave phase is the scalar part $\mathrm{Sc}(\tilde P_{\Phi}\tilde{R}_\Phi^{\natural})/\hbar=\vec k_\Phi\cdot(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)-\omega r'_t$. Substituting $\tilde{Ξ}=\xi_0\exp(i\mathrm{Sc}\frac{k_m\,\tilde{P}_{\Phi}\,\tilde{R}_{\Phi}^{\natural}}{m\,c})e_t$ into $\left(\Box-k_m^{2}\right)\tilde{Ξ}=0$ gives $\omega^2/c^2-\vec k_\Phi^2=k_m^{2}$, which is the mass-shell condition
+and the plane-wave phase is the scalar part $\mathrm{Sc}(\tilde P_{\Phi}\tilde{R}_\Phi^{\natural})/\hbar=\vec k_\Phi\cdot(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)-\frac{\omega}{c} r'_t$. Substituting $\tilde{Ξ}=\xi_0\exp(i\mathrm{Sc}\frac{k_m\,\tilde{P}_{\Phi}\,\tilde{R}_{\Phi}^{\natural}}{m\,c})e_t$ into $\left(\Box-k_m^{2}\right)\tilde{Ξ}=0$ gives $\omega^2/c^2-\vec k_\Phi^2=k_m^{2}$, which is the mass-shell condition
 
 $$
 \langle\tilde K_{\Phi}\rangle_{\natural}=-k_m^{2}\,e_t .
@@ -150,9 +150,9 @@ For a **real** (neutral) scalar field the field is Hermitian, $\xi_{\mathrm{fop}
 The mode operators inherit their brackets from the equal-time relations. A direct computation gives
 
 $$
-\boxed{\;\big[a_{\mathrm{fop},\vec p},{a_{\mathrm{fop},\vec k_\Phi}}^\dagger\big]
+\boxed{\;\big[a_{\mathrm{fop},\vec p},{a_{\mathrm{fop},\vec p^{\,\prime}}}^\dagger\big]
 =\big[b_{\mathrm{fop},\vec p},{b_{\mathrm{fop},\vec k_\Phi}}^\dagger\big]
-=(2\pi\hbar)^3\delta^{(3)}(\vec p-\hbar\vec k_\Phi),
+=(2\pi\hbar)^3\delta^{(3)}(\vec p-\vec p^{\,\prime}),
 \qquad
 \big[a_{\mathrm{fop},\vec p},{b_{\mathrm{fop},\vec k_\Phi}}^\dagger\big]=0\;},
 $$
@@ -272,7 +272,7 @@ $$
 \left(a_{\mathrm{fop},\vec p}\exp(-ip\cdot x/\hbar)+{b_{\mathrm{fop},\vec p}}^\dagger \exp(+ip\cdot x/\hbar)\right),
 $$
 
-the phases being central unitaries $\exp(\pm  i\,\mathrm{Sc}\frac{k_m\,\tilde{P}_{\Phi}\,\tilde{R}_{\Phi}^{\natural}}{m\,c})$ built from the material four-wavevector $\tilde K_{\Phi}=i\frac{E_{\vec p}}{\hbar c}e_t+\frac{\vec p}{\hbar}$; the mode commutators are $[a_{\mathrm{fop},\vec p},{a_{\mathrm{fop},\vec k_\Phi}}^\dagger]=[b_{\mathrm{fop},\vec p},{b_{\mathrm{fop},\vec k_\Phi}}^\dagger]=(2\pi\hbar)^3\delta^{(3)}(\vec p-\hbar\vec k_\Phi)$ and all others zero, and they reproduce the equal-time relation. The Fock space is the symmetric algebra of the one-particle space. The Hamiltonian is $:\!H\!:=\int\frac{d^3p}{(2\pi\hbar)^3}E_{\vec p}(a_{\mathrm{fop}}^{\dagger}a_{\mathrm{fop}}+b_{\mathrm{fop}}^{\dagger}b_{\mathrm{fop}})$ after normal ordering, and the normal-ordered charge has particles and antiparticles of opposite sign.
+the phases being central unitaries $\exp(\pm  i\,\mathrm{Sc}\frac{k_m\,\tilde{P}_{\Phi}\,\tilde{R}_{\Phi}^{\natural}}{m\,c})$ built from the material four-wavevector $\tilde K_{\Phi}=i\frac{E_{\vec p}}{\hbar c}e_t+\frac{\vec p}{\hbar}$; the mode commutators are $[a_{\mathrm{fop},\vec p},{a_{\mathrm{fop},\vec p^{\,\prime}}}^\dagger]=[b_{\mathrm{fop},\vec p},{b_{\mathrm{fop},\vec k_\Phi}}^\dagger]=(2\pi\hbar)^3\delta^{(3)}(\vec p-\vec p^{\,\prime})$ and all others zero, and they reproduce the equal-time relation. The Fock space is the symmetric algebra of the one-particle space. The Hamiltonian is $:\!H\!:=\int\frac{d^3p}{(2\pi\hbar)^3}E_{\vec p}(a_{\mathrm{fop}}^{\dagger}a_{\mathrm{fop}}+b_{\mathrm{fop}}^{\dagger}b_{\mathrm{fop}})$ after normal ordering, and the normal-ordered charge has particles and antiparticles of opposite sign.
 
 The field's value space is the centre $\mathbb{B}_{C}$, and the algebra supplies no ladder for it: no pair in $\mathbb{B}$ satisfies $[a_{\mathrm{fop}},a_{\mathrm{fop}}^{\dagger}]=e_t$, since the trace of a commutator vanishes while $\mathrm{Tr}(e_t)=2$. The scalar mode algebra is thus the Weyl algebra of an imported module. The quantization is a transcription of standard canonical quantization into the framework's notation; its distinctive content is the central-valuedness of the field, the biquaternion-norm interpretation of the mass shell, and the explicit determination that this sector, alone among the three, receives nothing algebraic from $\mathbb{B}$.
 
@@ -296,7 +296,7 @@ The field's value space is the centre $\mathbb{B}_{C}$, and the algebra supplies
 | $\langle\tilde K_{\Phi}\rangle_{\natural}=-k_m^{2}\,e_t$ | Mass-shell condition |
 | $E_{\vec p}=c\sqrt{\vec p^{\,2}+m^{2}c^{2}}$, $p\cdot x=\frac{E_{\vec p}}{c}r'_t-\vec p\cdot(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)$ | On-shell energy and phase |
 | $a_{\mathrm{fop},\vec p},b_{\mathrm{fop},\vec p}$ | Particle and antiparticle annihilation operators |
-| $[a_{\mathrm{fop},\vec p},{a_{\mathrm{fop},\vec k_\Phi}}^\dagger]=(2\pi\hbar)^3\delta^{(3)}(\vec p-\hbar\vec k_\Phi)$ | Mode commutators |
+| $[a_{\mathrm{fop},\vec p},{a_{\mathrm{fop},\vec p^{\,\prime}}}^\dagger]=(2\pi\hbar)^3\delta^{(3)}(\vec p-\vec p^{\,\prime})$ | Mode commutators |
 | $\mathcal{F}=\bigoplus_n(\mathcal{H}_1^{\otimes n})_+$ | Bosonic Fock space (symmetric algebra) |
 | $:\!H\!:=\int\frac{d^3p}{(2\pi\hbar)^3}E_{\vec p}(a_{\mathrm{fop}}^{\dagger}a_{\mathrm{fop}}+b_{\mathrm{fop}}^{\dagger}b_{\mathrm{fop}})$ | Normal-ordered Hamiltonian |
 | $Ϙ_{\mathrm{fop}}=\int\frac{d^3p}{(2\pi\hbar)^3}(a_{\mathrm{fop}}^{\dagger}a_{\mathrm{fop}}-b_{\mathrm{fop}}^{\dagger}b_{\mathrm{fop}})$ | Conserved charge |

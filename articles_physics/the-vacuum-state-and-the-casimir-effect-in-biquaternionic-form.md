@@ -65,7 +65,7 @@ A_\mu(x)=\int\!\frac{d^{3}k}{(2\pi)^3}\sqrt{\frac{c}{2\omega_k}}\sum_{r=0}^{3}
 \qquad
 \big[a_{\mathrm{fop},r}(\vec k_\Phi),a_{\mathrm{fop},s}^{\dagger}(\vec k_2)\big]=\sigma_{\mathrm{met},r}\,\delta_{rs}\,(2\pi)^3\,\delta^{(3)}(\vec k_\Phi-\vec k_2),
 $$
-with $\sigma_{\mathrm{met}}=(-1,+1,+1,+1)$ and $\omega_k=|\vec k_\Phi|$ for the massless field. The normal-ordered Hamiltonian is
+with $\sigma_{\mathrm{met}}=(-1,+1,+1,+1)$, $\omega_k=c\lvert\vec k_\Phi\rvert$ an angular frequency for the massless field, and $k\cdot x=\vec k_\Phi\cdot(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)-\omega_k r'_t/c$. The normal-ordered Hamiltonian is
 $$
 :\!H\!:\,=\sum_{r=0}^{3}\int\!\frac{d^{3}k}{(2\pi)^3}\,\sigma_{\mathrm{met},r}\,\hbar\omega_k\,a_{\mathrm{fop},r}^{\dagger}(\vec k_\Phi)a_{\mathrm{fop},r}(\vec k_\Phi),
 $$

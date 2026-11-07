@@ -166,8 +166,8 @@ for every $\tilde{Ξ}\in\mathbb{B}$. The right multiplication by $i\vec e_x$ is 
 The field is element-valued; the biquaternion content is the algebra on which it is built and the notation, and the mode algebra is imposed. Two choices are available. The **Fermi choice** imposes
 
 $$
-\{a_{\mathrm{fop},r}(\vec p),a_{\mathrm{fop},s}^{\dagger}(\vec k_\Phi)\}=(2\pi\hbar)^3\delta_{rs}\delta^{(3)}(\vec p-\hbar\vec k_\Phi),\qquad
-\{b_{\mathrm{fop},r}(\vec p),b_{\mathrm{fop},s}^{\dagger}(\vec k_\Phi)\}=(2\pi\hbar)^3\delta_{rs}\delta^{(3)}(\vec p-\hbar\vec k_\Phi),
+\{a_{\mathrm{fop},r}(\vec p),a_{\mathrm{fop},s}^{\dagger}(\vec p^{\,\prime})\}=(2\pi\hbar)^3\delta_{rs}\delta^{(3)}(\vec p-\vec p^{\,\prime}),\qquad
+\{b_{\mathrm{fop},r}(\vec p),b_{\mathrm{fop},s}^{\dagger}(\vec k_\Phi)\}=(2\pi\hbar)^3\delta_{rs}\delta^{(3)}(\vec p-\vec p^{\,\prime}),
 $$
 
 with all other brackets vanishing, and the **Bose choice** replaces both braces by brackets.

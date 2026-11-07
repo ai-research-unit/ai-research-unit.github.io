@@ -68,9 +68,9 @@ $$
 with $a_{\mathrm{fop},r}$ annihilating particles and $b_{\mathrm{fop},r}$ annihilating antiparticles. The mode algebra is
 
 $$
-\{a_{\mathrm{fop},r}(\vec p),a_{\mathrm{fop},s}^{\dagger}(\vec k_\Phi)\}
+\{a_{\mathrm{fop},r}(\vec p),a_{\mathrm{fop},s}^{\dagger}(\vec p^{\,\prime})\}
 =\{b_{\mathrm{fop},r}(\vec p),b_{\mathrm{fop},s}^{\dagger}(\vec k_\Phi)\}
-=(2\pi\hbar)^3\delta_{rs}\delta^{(3)}(\vec p-\hbar\vec k_\Phi),
+=(2\pi\hbar)^3\delta_{rs}\delta^{(3)}(\vec p-\vec p^{\,\prime}),
 $$
 
 with all other anticommutators vanishing. The particle number, the antiparticle number, the total number of quanta and the electric charge are

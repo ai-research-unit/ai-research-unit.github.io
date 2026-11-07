@@ -140,7 +140,7 @@ $$
 -k_{t}^{\prime}A_{0\nu}+k_1A_{1\nu}+k_2A_{2\nu}+k_3A_{3\nu} = 0 \qquad\text{and}\qquad -A_{00}+A_{11}+A_{22}+A_{33} = 0 ,
 $$
 
-and in which, in addition, the components with a timelike index vanish, $A_{t\mu} = 0$. For propagation in the $+z$ direction, $k_\mu = (\omega/c)(1,0,0,1)$ in the coordinates $x_\mu = (r'_{t}, r_x, r_y, r_z)$, so that the phase is $\omega(r_z/c - r'_t)$ and the plane transverse to the propagation is spanned by $x$ and $y$.
+and in which, in addition, the components with a timelike index vanish, $A_{t\mu} = 0$. For propagation in the $+z$ direction, $k_\mu = (\omega/c)(1,0,0,1)$ in the coordinates $x_\mu = (r'_{t}, r_x, r_y, r_z)$, so that the phase is $(\omega/c)(r_z - r'_t)$ and the plane transverse to the propagation is spanned by $x$ and $y$.
 
 **The transversality and tracelessness are checked, not assumed.** For the two amplitudes
 

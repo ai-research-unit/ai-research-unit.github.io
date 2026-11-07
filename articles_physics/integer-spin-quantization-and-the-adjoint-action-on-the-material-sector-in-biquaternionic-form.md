@@ -233,7 +233,7 @@ with polarization labels $\xi_r$ and mode operators satisfying
 
 $$
 \left[a_{\mathrm{fop},r}(\vec p),a_{\mathrm{fop},s}^{\dagger}(\vec k_\Phi)\right]
-= \delta_{rs}(2\pi\hbar)^3\delta^{(3)}(\vec p-\hbar\vec k_\Phi),
+= \delta_{rs}(2\pi\hbar)^3\delta^{(3)}(\vec p-\vec p^{\,\prime}),
 \qquad
 \left[a_{\mathrm{fop},r}(\vec p),a_{\mathrm{fop},s}(\vec k_\Phi)\right]=0 .
 $$

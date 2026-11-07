@@ -269,7 +269,7 @@ $$
 $$
 The distinction is not bookkeeping: a single monochromatic wave has no envelope and travels at $v_p$, while a narrow superposition travels at $v_g$. For two frequencies $\omega \pm \Delta\omega$ with wave numbers $k \pm \Delta k$, the sum of the two real waves factors as
 $$
-\cos\big((k+\Delta k)r_z - (\omega+\Delta\omega)r'_t\big) + \cos\big((k-\Delta k)r_z - (\omega-\Delta\omega)r'_t\big)
+\cos\big((k+\Delta k)r_z - (\omega+\Delta\omega)r'_t/c\big) + \cos\big((k-\Delta k)r_z - (\omega-\Delta\omega)r'_t/c\big)
 = 2\cos(\Delta k\,r_z - \Delta\omega\,r'_t/c)\cos(kz-\omega r'_t/c),
 $$
 an envelope $\cos(\Delta k\,r_z-\Delta\omega\,r'_t/c)$ modulating the carrier. The envelope's speed is $\Delta\omega/\Delta k$, which tends to $v_g = d\omega/dk$ as $\Delta\omega\to0$. This shows that in a dispersive medium the physically transported energy moves at the group velocity, while the phase of the carrier moves at the phase velocity — a distinction the single-frequency statements of Problems 1–3 cannot display.
