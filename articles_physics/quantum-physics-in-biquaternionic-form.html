@@ -295,28 +295,26 @@ $$</p>
 \tilde\Pi(r'_t) = \tilde Q(r'_t)\,\tilde\Pi(0)\,\tilde Q(r'_t)^{*},
 $$</p>
 <p>where $\tilde Q(r'_t)$ is a <strong>$*$-unitary biquaternion</strong>, $\tilde Q\tilde Q^{*} = e_t$, satisfying the <strong>Schrödinger equation</strong></p>
-<p>$$
-i mc/k_m\, \frac{d}{dr'_t}\tilde Q(r'_t) = \tilde R_\Psi\,\tilde Q(r'_t), \qquad \tilde Q(0) = e_t,
+<p>$$\frac{m\,c\,i\,d}{k_m\,dr'_{t}}\tilde Q(r'_t) = \tilde R_\Psi\,\tilde Q(r'_t), \qquad \tilde Q(0) = e_t,
 $$</p>
 <p>with $\tilde R_\Psi = c r_t e_t + i\vec r_\Psi \in \mathbb{B}_{\Psi}$ the Hamiltonian, a Hermitian element. In the evolution formulas the same element is written $H$, so $H:=\tilde R_\Psi = c r_t\,e_t + i\vec r_\Psi$.</p>
 <p><strong>The solution.</strong> We have $-i\tilde R_\Psi = -ic r_t e_t + \vec r_\Psi$. The scalar part and the vector part commute, so</p>
 <p>$$
-\boxed{\;\tilde Q(r'_t) = \exp(-i H r'_t\,k_m/(mc)) = \exp(-ic r_t r'_t\,k_m/(mc))\left(\cos(|\vec r_\Psi|r'_t\,k_m/(mc))\,e_t + \sin(|\vec r_\Psi|r'_t\,k_m/(mc))\,\vec u_\Psi\right)\;},
+\boxed{\;\tilde Q(r'_t) = \exp(-\frac{k_m\,i\,H\,r'_{t}}{m\,c}) = \exp(-\frac{k_m\,i\,r_{t}\,r'_{t}}{m})\left(\cos(|\vec r_\Psi|\frac{k_m\,r'_{t}}{m\,c})\,e_t + \sin(|\vec r_\Psi|\frac{k_m\,r'_{t}}{m\,c})\,\vec u_\Psi\right)\;},
 $$</p>
 <p>where $\vec u_\Psi = \vec r_\Psi/|\vec r_\Psi|$ (for $\vec r_\Psi \neq 0$). The exponential of the vector part uses $\vec u_\Psi^2 = -e_t$, which gives the trigonometric form.</p>
-<p>The element $\tilde Q(r'_t)$ is <strong>$*$-unitary</strong>: $\tilde Q(r'_t)\tilde Q(r'_t)^{*} = e_t$. It is not Hermitian in general: writing $\theta = |\vec r_\Psi|r'_t\,k_m/(mc)$, $\tilde Q(r'_t)$ is Hermitian exactly when $\tilde Q(r'_t)^2 = e_t$, which requires either $\sin\theta = 0$ together with $c r_t\,r'_t\,k_m/(mc) \in \pi\mathbb{Z}$, or $\cos\theta = 0$ together with $c r_t\,r'_t\,k_m/(mc) \in \tfrac{\pi}{2} + \pi\mathbb{Z}$. For $c r_t = 0$ only the first case survives, at the isolated times $r'_t = n\pi mc/k_m/|\vec r_\Psi|$. For $c r_t \neq 0$ and $\vec r_\Psi \neq 0$, apart from $r'_t=0$, the first case gives Hermitian times exactly when $c r_t/|\vec r_\Psi|$ is rational, and the second contributes in addition only when that ratio, in lowest terms, is a ratio of odd integers. It is an element of the $*$-unitary group $\mathrm{U}(2) \subset \mathbb{B}$.</p>
-<p><strong>The trace part of the Hamiltonian does not affect the state.</strong> Since $\exp(-ic r_t r'_t\,k_m/(mc))$ is a central complex scalar, and since the conjugation</p>
+<p>The element $\tilde Q(r'_t)$ is <strong>$*$-unitary</strong>: $\tilde Q(r'_t)\tilde Q(r'_t)^{*} = e_t$. It is not Hermitian in general: writing $\theta = |\vec r_\Psi|\frac{k_m\,r'_{t}}{m\,c}$, $\tilde Q(r'_t)$ is Hermitian exactly when $\tilde Q(r'_t)^2 = e_t$, which requires either $\sin\theta = 0$ together with $\frac{k_m\,r_{t}\,r'_{t}}{m\,\in\,\pi\,\mathbb{Z}}$, or $\cos\theta = 0$ together with $\frac{2\,k_m\,r_{t}\,r'_{t}}{m\,\in\,\pi} + \pi\mathbb{Z}$. For $c r_t = 0$ only the first case survives, at the isolated times $r'_t =\frac{m\,c\,n\,\pi}{k_m}|\vec r_\Psi|$. For $c r_t \neq 0$ and $\vec r_\Psi \neq 0$, apart from $r'_t=0$, the first case gives Hermitian times exactly when $c r_t/|\vec r_\Psi|$ is rational, and the second contributes in addition only when that ratio, in lowest terms, is a ratio of odd integers. It is an element of the $*$-unitary group $\mathrm{U}(2) \subset \mathbb{B}$.</p>
+<p><strong>The trace part of the Hamiltonian does not affect the state.</strong> Since $\exp(-\frac{k_m\,i\,r_{t}\,r'_{t}}{m})$ is a central complex scalar, and since the conjugation</p>
 <p>$$
-\tilde Q(r'_t)\,\tilde\Pi\,\tilde Q(r'_t)^{*} = \exp(-ic r_t r'_t\,k_m/(mc))\tilde u\,\tilde\Pi\,\exp(+ic r_t r'_t\,k_m/(mc))\tilde u^{*} = \tilde u\,\tilde\Pi\,\tilde u^{*}
+\tilde Q(r'_t)\,\tilde\Pi\,\tilde Q(r'_t)^{*} = \exp(-\frac{k_m\,i\,r_{t}\,r'_{t}}{m})\tilde u\,\tilde\Pi\,\exp(+\frac{k_m\,i\,r_{t}\,r'_{t}}{m})\tilde u^{*} = \tilde u\,\tilde\Pi\,\tilde u^{*}
 $$</p>
-<p>(with $\tilde u = \cos(|\vec r_\Psi|r'_t\,k_m/(mc))e_t + \sin(|\vec r_\Psi|r'_t\,k_m/(mc))\vec u_\Psi$ a unit real quaternion), the phase $\exp(-ic r_t r'_t\,k_m/(mc))$ cancels out. So only the traceless part $\vec r_\Psi$ of the Hamiltonian affects the state evolution. This is the standard result: the trace part of the Hamiltonian contributes only to a global, unobservable phase.</p>
+<p>(with $\tilde u = \cos(|\vec r_\Psi|\frac{k_m\,r'_{t}}{m\,c})e_t + \sin(|\vec r_\Psi|\frac{k_m\,r'_{t}}{m\,c})\vec u_\Psi$ a unit real quaternion), the phase $\exp(-\frac{k_m\,i\,r_{t}\,r'_{t}}{m})$ cancels out. So only the traceless part $\vec r_\Psi$ of the Hamiltonian affects the state evolution. This is the standard result: the trace part of the Hamiltonian contributes only to a global, unobservable phase.</p>
 <p><strong>Time evolution of a mixed state.</strong> A general state $\tilde{Ϛ} = \tfrac{1}{2}(e_t + i\vec r)$ evolves by the same conjugation:</p>
 <p>$$
 \tilde{Ϛ}(r'_t) = \tilde Q(r'_t)\,\tilde{Ϛ}(0)\,\tilde Q(r'_t)^{*}.
 $$</p>
 <p>This is the <strong>von Neumann equation</strong>, expressed as a rotor conjugation. In differential form, it is</p>
-<p>$$
-i mc/k_m\, \frac{d}{dr'_t}\tilde{Ϛ}(r'_t) = [H, \tilde{Ϛ}(r'_t)],
+<p>$$\frac{m\,c\,i\,d}{k_m\,dr'_{t}}\tilde{Ϛ}(r'_t) = [H, \tilde{Ϛ}(r'_t)],
 $$</p>
 <p>with the commutator defined in the biquaternion algebra.</p>
 <p><strong>Interpretation.</strong> The $*$-unitary $\tilde Q(r'_t)$ is an inner automorphism of the algebra: conjugation by a $*$-unitary biquaternion preserves multiplication. Its action on $\mathbb{B}_{\Psi}$ keeps the scalar part fixed and rotates the imaginary vector part, giving the standard precession of a spin-1/2 in a magnetic field, expressed as the biquaternion rotation.</p>
@@ -326,17 +324,14 @@ $$</p>
 \tilde R_{\Psi,\mathrm{H}}(r'_t) = \tilde Q(r'_t)^{*}\,\tilde R_\Psi\,\tilde Q(r'_t).
 $$</p>
 <p>The evolution equation is the <strong>Heisenberg equation</strong></p>
-<p>$$
-i mc/k_m\, \frac{d}{dr'_t}\tilde R_{\Psi,\mathrm{H}}(r'_t) = [\tilde R_{\Psi,\mathrm{H}}(r'_t), H],
+<p>$$\frac{m\,c\,i\,d}{k_m\,dr'_{t}}\tilde R_{\Psi,\mathrm{H}}(r'_t) = [\tilde R_{\Psi,\mathrm{H}}(r'_t), H],
 $$</p>
 <p>where $H$ is the Hamiltonian.</p>
-<p><strong>Derivation.</strong> We compute the time derivative of $\tilde R_{\Psi,\mathrm{H}}(r'_t) = \tilde Q^{*}\tilde R_\Psi\tilde Q$, using the Schrödinger equation $i mc/k_m\,d\tilde Q/dr'_t = H\tilde Q$ and its adjoint $-i mc/k_m\,\left(d\tilde Q/dr'_t\right)^{*} = \tilde Q^{*}H$:</p>
-<p>$$
-i mc/k_m\, \frac{d}{dr'_t}\tilde R_{\Psi,\mathrm{H}} = i mc/k_m\left(\left(d\tilde Q/dr'_t\right)^{*}\tilde R_\Psi\tilde Q + \tilde Q^{*}\tilde R_\Psi d\tilde Q/dr'_t\right) = -\tilde Q^{*}H\tilde R_\Psi\tilde Q + \tilde Q^{*}\tilde R_\Psi H\tilde Q = \tilde Q^{*}[\tilde R_\Psi, H]\tilde Q.
+<p><strong>Derivation.</strong> We compute the time derivative of $\tilde R_{\Psi,\mathrm{H}}(r'_t) = \tilde Q^{*}\tilde R_\Psi\tilde Q$, using the Schrödinger equation $\frac{m\,c\,i\,d\,\tilde{Q}}{k_m\,dr'_{t}}= H\tilde Q$ and its adjoint $-\frac{m\,c\,i}{k_m}\left(d\tilde Q/dr'_t\right)^{*} = \tilde Q^{*}H$:</p>
+<p>$$\frac{m\,c\,i\,d}{k_m\,dr'_{t}}\tilde R_{\Psi,\mathrm{H}} =\frac{m\,c\,i}{k_m}\left(\left(d\tilde Q/dr'_t\right)^{*}\tilde R_\Psi\tilde Q + \tilde Q^{*}\tilde R_\Psi d\tilde Q/dr'_t\right) = -\tilde Q^{*}H\tilde R_\Psi\tilde Q + \tilde Q^{*}\tilde R_\Psi H\tilde Q = \tilde Q^{*}[\tilde R_\Psi, H]\tilde Q.
 $$</p>
-<p>Since $\tilde Q(r'_t) = \exp(-i H r'_t\,k_m/(mc))$ is a function of $H$, it <strong>commutes with $H$</strong>. This is what makes the last expression equal to $[\tilde R_{\Psi,\mathrm{H}}, \tilde Q^{*}H\tilde Q] = [\tilde R_{\Psi,\mathrm{H}}, H]$. So</p>
-<p>$$
-i mc/k_m\, \frac{d}{dr'_t}\tilde R_{\Psi,\mathrm{H}}(r'_t) = [\tilde R_{\Psi,\mathrm{H}}(r'_t), H].
+<p>Since $\tilde Q(r'_t) = \exp(-\frac{k_m\,i\,H\,r'_{t}}{m\,c})$ is a function of $H$, it <strong>commutes with $H$</strong>. This is what makes the last expression equal to $[\tilde R_{\Psi,\mathrm{H}}, \tilde Q^{*}H\tilde Q] = [\tilde R_{\Psi,\mathrm{H}}, H]$. So</p>
+<p>$$\frac{m\,c\,i\,d}{k_m\,dr'_{t}}\tilde R_{\Psi,\mathrm{H}}(r'_t) = [\tilde R_{\Psi,\mathrm{H}}(r'_t), H].
 $$</p>
 <p>The two pictures are related by a $*$-unitary transformation and give the same physical predictions.</p>
 <h3 id="reversibility">Reversibility</h3>
@@ -456,7 +451,7 @@ $$</p>
 \tilde U_{\mathrm b,2}\tilde U_{\mathrm b,1} = \tilde{W}\,\tilde U_{\mathrm b}, \qquad \tilde{W} \in SU(2),
 $$</p>
 <p>separates a $*$-unitary factor $\tilde{W}$ — the <strong>Thomas–Wigner rotation</strong> — from a positive-definite Hermitian boost factor $\tilde U_{\mathrm b}$, both of unit norm. The composition of two relativistic transformations therefore produces a genuine quantum operation, a spin rotation: the relativistic group generates an element of the quantum group. This is where the two structures meet, and it is the algebraic origin of the non-commutativity of the boosts, treated in <em>The Material Sector: Four-Vectors, Interval and Lorentz Action</em> and in <em>The Lorentz Group in Biquaternionic Form — Structure and Representations</em>.</p>
-<p><strong>The shared imaginary unit.</strong> The $i$ of the Schrödinger equation $i mc/k_m\,d\tilde Q/dr'_t = \tilde R_\Psi\tilde Q$, the $i$ of the phase $\exp(-i H r'_t\,k_m/(mc))$, and the $i$ of the material coordinate $i c r'_t$ are one and the same element of $\mathbb{B}$: the scalar imaginary. The generator of the quantum phase and the origin of the Lorentzian signature of the interval are not independent conventions, but two consequences of the complex structure that defines the material sector. The quantum dynamics of this article runs on the same complex time as the relativistic kinematics of $\mathbb{B}_{\Phi}$.</p>
+<p><strong>The shared imaginary unit.</strong> The $i$ of the Schrödinger equation $\frac{m\,c\,i\,d\,\tilde{Q}}{k_m\,dr'_{t}}= \tilde R_\Psi\tilde Q$, the $i$ of the phase $\exp(-\frac{k_m\,i\,H\,r'_{t}}{m\,c})$, and the $i$ of the material coordinate $i c r'_t$ are one and the same element of $\mathbb{B}$: the scalar imaginary. The generator of the quantum phase and the origin of the Lorentzian signature of the interval are not independent conventions, but two consequences of the complex structure that defines the material sector. The quantum dynamics of this article runs on the same complex time as the relativistic kinematics of $\mathbb{B}_{\Phi}$.</p>
 <p><strong>What the compatibility does and does not provide.</strong> The framework supplies a common biquaternion space: the relativistic and quantum objects are made from the same elements, their transformation groups are subgroups of the same invertible elements acting by one conjugation formula, their intersection is the rotation group, and the Wigner rotation has an algebraic locus. It does not supply, by itself, a relativistic quantum dynamics. A Lorentz-covariant state space, microcausality, and the many-particle structure are not contained in the single-qubit formalism above, which is the non-relativistic restriction: the state space is a fixed Bloch ball, and a boost moves a state off it. Those questions belong to the biquaternion Dirac equation and its canonical quantization, treated in the companion articles, where the state space, and not only the transformation group, becomes relativistic.</p>
 <h2 id="what-is-structural-and-what-is-new">What Is Structural and What Is New</h2>
 <p><strong>What is standard QM, reformulated.</strong></p>
@@ -577,7 +572,7 @@ $$</p>
 <td>Projective measurement</td>
 </tr>
 <tr>
-<td>$\tilde Q(r'_t) = \exp(-ic r_t\,r'_t\,k_m/(mc))(\cos(|\vec r_\Psi|r'_t\,k_m/(mc))e_t + \sin(|\vec r_\Psi|r'_t\,k_m/(mc))\vec u_\Psi)$</td>
+<td>$\tilde Q(r'_t) = \exp(-\frac{k_m\,i\,r_{t}\,r'_{t}}{m})(\cos(|\vec r_\Psi|\frac{k_m\,r'_{t}}{m\,c})e_t + \sin(|\vec r_\Psi|\frac{k_m\,r'_{t}}{m\,c})\vec u_\Psi)$</td>
 <td>$*$-Unitary evolution</td>
 </tr>
 <tr>

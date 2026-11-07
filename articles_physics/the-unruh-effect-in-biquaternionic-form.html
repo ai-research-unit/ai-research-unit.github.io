@@ -72,14 +72,14 @@
 <h2 id="introduction">Introduction</h2>
 <p>The <strong>Unruh effect</strong> is the statement that a uniformly accelerated observer in the Minkowski vacuum does not see a vacuum. On a trajectory of constant proper acceleration $a$, the observer registers a thermal bath at the <strong>Unruh temperature</strong></p>
 <p>$$
-T = \frac{ma}{2\pi \,k_B k_m},
+T =\frac{m\,a}{2\,k_m\,\pi\,k_{B}},
 $$</p>
 <p>with a Planckian spectrum in the frequency conjugate to the observer's proper time. The effect is not a property of the detector or of the acceleration mechanism; it is a property of the state of the field as seen from the accelerated frame. This article develops that statement inside the biquaternion algebra $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, in the notation of the companion articles.</p>
 <p>Three structures carry the effect, and all three have a definite home in the framework.</p>
 <ol>
 <li><strong>The Rindler wedge.</strong> The accelerated trajectory is confined to a wedge of Minkowski space, the <strong>right Rindler wedge</strong> $R=\{x>|c r'_{t}|\}$. Its boundary is the light cone — which, in the material sector $\mathbb{B}_{\Phi}$, is exactly the <strong>zero-divisor cone</strong> of the algebra. The wedge, its horizon, and its boost flow are material-sector objects.</li>
 <li><strong>The boost as the modular Hamiltonian.</strong> By the Bisognano–Wichmann theorem, the modular operator of the vacuum restricted to the wedge is $\Delta=\exp(-2\pi K_{\mathrm{boost}})$, where $K_{\mathrm{boost}}$ is the generator of boosts. The modular flow is therefore the boost flow. The boost generator is a Hermitian element of the algebra; for a boost along $\vec e_x$ it is $G_1=i\vec e_x\in\mathbb{B}_{\Psi}$.</li>
-<li><strong>The KMS condition.</strong> The KMS condition of the companion article states that the correlation functions of a thermal state are analytic in a strip of width $\beta=mc/k_m/(k_BT)$ in the complex time plane and satisfy a boundary relation that exchanges the operators. The wedge vacuum satisfies that condition with respect to the boost flow, and the width of the strip is what fixes the temperature.</li>
+<li><strong>The KMS condition.</strong> The KMS condition of the companion article states that the correlation functions of a thermal state are analytic in a strip of width $\beta=\frac{m\,c}{k_m\,k_{B}\,T}$ in the complex time plane and satisfy a boundary relation that exchanges the operators. The wedge vacuum satisfies that condition with respect to the boost flow, and the width of the strip is what fixes the temperature.</li>
 </ol>
 <p>The trap in this subject is to <em>assert</em> the thermality — to write down the exponential spectrum and the temperature as if the algebra had produced them. It has not. Thermality is a statement about the <strong>analyticity of the two-point function</strong>, and the section that derives it shows the step: the two-point function along the accelerated orbit is an explicit function whose analytic continuation to imaginary proper time is periodic, and the period <em>is</em> the KMS width. The temperature is then recomputed a second time, from the <strong>surface gravity</strong> of the boost orbit, so that it is not a single formula asserted twice.</p>
 <p><strong>Relation to the parent.</strong> <em>The KMS Condition and the Biquaternion Framework</em> is the parent article. It establishes two facts that this article uses unchanged: the imaginary time of the material sector is intrinsic, and the modular Hamiltonian $K=-\log\tilde{Ϛ}$ of a finite-dimensional Gibbs state is a Hermitian element of $\mathbb{B}_{\Psi}$. It also leaves a gap, which is stated here rather than filled silently. Its modular Hamiltonian is defined through a density matrix in a <strong>finite-dimensional</strong> setting. The wedge-restricted Minkowski vacuum is a state on a field algebra; it is not given by a density matrix, and the parent neither defines the modular operator $\Delta$ nor the modular flow in that setting. The identification of the modular flow with the boost is the <strong>Bisognano–Wichmann theorem</strong> — established physics, imported here, not derived from the biquaternion algebra. What this article does with the gap is make the flow geometric in the one case where the standard theorem supplies it, and label precisely what remains outside the framework.</p>
@@ -248,18 +248,18 @@ $$</p>
 <p>$$
 \beta = \frac{2\pi}{a} \quad (\text{units } c=1).
 $$</p>
-<p>Since $\beta=mc/k_m/(k_BT)$, the temperature is</p>
+<p>Since $\beta=\frac{m\,c}{k_m\,k_{B}\,T}$, the temperature is</p>
 <p>$$
-T = \frac{1}{\beta} = \frac{a}{2\pi} \quad (mc/k_m=k_B=1),
+T = \frac{1}{\beta} = \frac{a}{2\pi} \quad (\hbar=k_B=1),
 $$</p>
 <p>and restoring the constants,</p>
 <p>$$
-\boxed{\;T = \frac{ma}{2\pi \,k_B k_m}\;}.
+\boxed{\;T =\frac{m\,a}{2\,k_m\,\pi\,k_{B}}\;}.
 $$</p>
 <p>This is the Unruh temperature. In the orbit parametrization used here, $a=1/\rho$, so the temperature of the orbit of radius $\rho$ is $T=(2\pi\rho)^{-1}$ in natural units; the near-horizon orbits, $\rho\to0$, are the hot ones, which is the field-theoretic reason a horizon is hot. Equivalently, the same period expressed in imaginary <strong>Rindler time</strong> is $2\pi i$, and $\beta=2\pi/a$ follows from $\tau=\rho\eta$; the two statements are the same period in different time variables, and we have checked the conversion.</p>
 <p><strong>A case not used to derive it.</strong> The formulas were extracted from the massless scalar; the numerical value of the temperature is independent of that choice. For an acceleration equal to terrestrial gravity, $a=g=9.80665\ \mathrm{m\,s^{-2}}$,</p>
 <p>$$
-T=\frac{mg}{2\pi \,k_B k_m}=3.98\times10^{-20}\ \mathrm{K},
+T=\frac{m\,g}{2\,k_m\,\pi\,k_{B}}=3.98\times10^{-20}\ \mathrm{K},
 $$</p>
 <p>which is unobservably small — the reason the effect is a theoretical structure rather than a laboratory signal. The companion records the numerical evaluation.</p>
 <h2 id="the-temperature-from-the-surface-gravity">The Temperature from the Surface Gravity</h2>
@@ -274,7 +274,7 @@ $$</p>
 <p>We have checked this directly: with $\xi=a(r_x\partial/\partial r'_t+r'_t\partial/\partial R_x)$, the identity $\sum_\nu\varepsilon_\nu\,\xi_\nu\partial/\partial R_\nu\xi_\mu=\kappa\xi_\mu$ holds with $\kappa=a$ on the horizon $r_x=r'_t$. The Unruh temperature is then</p>
 <p>$$
 T=\frac{\kappa}{2\pi}=\frac{a}{2\pi}\quad(\hbar=c=k_B=1),
-\qquad\text{i.e.}\qquad T=\frac{ma}{2\pi \,k_B k_m},
+\qquad\text{i.e.}\qquad T=\frac{\hbar a}{2\pi c\,k_B},
 $$</p>
 <p>in agreement with the imaginary-time route. The two computations are independent in the sense that one uses the pole structure of the two-point function and the other the normalization of the boost on its horizon; that they agree is a check on the whole construction, not a restatement. The relation between them is transparent once stated: the imaginary-time period is $2\pi$ in the boost parameter, and the boost parameter is the Rindler time whose gradient is the surface gravity. The <strong>surface gravity is the rate of change of the boost rapidity per unit proper time</strong>, and the imaginary-time period $\beta=2\pi/\kappa$ is the reciprocal of the temperature $T=\kappa/(2\pi)$ — equivalently, the period is $2\pi$ times the reciprocal of the surface gravity.</p>
 <h2 id="the-polar-word-at-the-horizon">The Polar Word at the Horizon</h2>
@@ -321,7 +321,7 @@ $$</p>
 <h2 id="the-statistics">The Statistics</h2>
 <p>The Unruh temperature does not depend on the statistics of the field. The KMS boundary relation $F_{\tilde Q_2\tilde{Q}_1}(r'_t+i\beta)=F_{\tilde{Q}_1\tilde Q_2}(-r'_t)$ is the same for bosons and fermions; what differs is the <strong>time-ordered</strong> correlation function, which is antiperiodic for fermions and periodic for bosons, the parent's statement. The strip, and therefore the temperature, is the same. What changes for a fermionic field is the response of a detector and the sign structure of the Matsubara sum; that is the parent's fermionic twist, and it needs the $\mathbb{Z}/2$ grading that the parent records as absent from $\mathbb{B}$ in general and that the Fock-space article realizes only for a single mode. The thermal character of the accelerated vacuum is thus statistics-independent, and the framework's open grading question is orthogonal to the Unruh temperature.</p>
 <h2 id="what-is-established-what-is-interpretation-and-the-gaps">What Is Established, What Is Interpretation, and the Gaps</h2>
-<p><strong>Established (physics).</strong> The Unruh effect and the temperature $T=mc/k_m a/(2\pi c k_B)$; the Bisognano–Wichmann theorem; the KMS characterization of thermal equilibrium and its boundary relation; the massless Wightman function and its pole structure; the definition of surface gravity and its value $\kappa=a$ for the redshift-normalized boost.</p>
+<p><strong>Established (physics).</strong> The Unruh effect and the temperature $T=\frac{m\,a}{2\,k_m\,\pi\,k_{B}}$; the Bisognano–Wichmann theorem; the KMS characterization of thermal equilibrium and its boundary relation; the massless Wightman function and its pole structure; the definition of surface gravity and its value $\kappa=a$ for the redshift-normalized boost.</p>
 <p><strong>Established (algebra), recomputed here.</strong> The boost rotor $\tilde U_{\mathrm b}(\theta_{\mathrm{rpd}})=\cosh\frac{\theta_{\mathrm{rpd}}}{2}+i\sinh\frac{\theta_{\mathrm{rpd}}}{2}\vec e_x$ lies in $\mathbb{B}_{\Psi}$, is Hermitian and of unit norm, and preserves $\mathbb{B}_{\Phi}$ and the biquaternion norm; it shifts the Rindler time by $\eta\mapsto\eta-\theta_{\mathrm{rpd}}$; its generator is $G_1=i\vec e_x\in\mathbb{B}_{\Psi}$ with the two-sided action; the horizon is the zero-divisor cone of $\mathbb{B}_{\Phi}$.</p>
 <p><strong>Interpretation.</strong> Reading the modular flow as the biquaternionic boost flow, and the Rindler horizon as the zero-divisor cone, are structural interpretations. The algebra is consistent with them and makes the flow explicit in the finite-dimensional model; it does not force the thermal interpretation.</p>
 <p><strong>Gaps.</strong></p>
@@ -364,9 +364,9 @@ $$</p>
 <p>whose poles at $\delta\tau=2\pi i n/a$ and the identity $\sinh^2(z+i\pi)=\sinh^2 z$ give the strip $0<\mathrm{Im}\,\delta\tau<\beta$ and the KMS boundary relation $W(\delta\tau+i\beta)=W(-\delta\tau)$ with</p>
 <p>$$
 \boxed{\;\beta = \frac{2\pi}{a}, \qquad T=\frac{1}{\beta}=\frac{a}{2\pi}
-\quad(mc/k_m=k_B=1)\;},
+\quad(\hbar=k_B=1)\;},
 $$</p>
-<p>or $T=mc/k_m a/(2\pi c k_B)$ with the constants restored. The temperature is recomputed independently from the surface gravity of the redshift-normalized boost $\xi=a\zeta$, for which $\sum_\nu\varepsilon_\nu\,\xi_\nu\nabla_\nu\xi_\mu=a\xi_\mu$ on the horizon, giving $T=\kappa/(2\pi)=a/(2\pi)$.</p>
+<p>or $T=\frac{m\,a}{2\,k_m\,\pi\,k_{B}}$ with the constants restored. The temperature is recomputed independently from the surface gravity of the redshift-normalized boost $\xi=a\zeta$, for which $\sum_\nu\varepsilon_\nu\,\xi_\nu\nabla_\nu\xi_\mu=a\xi_\mu$ on the horizon, giving $T=\kappa/(2\pi)=a/(2\pi)$.</p>
 <p>The framework supplies the algebraic home: the horizon as the zero-divisor cone, the generator in the informational sector $\mathbb{B}_{\Psi}$, the thermal circle along the material time $i c r'_t$, and the two-sided action that distinguishes the boost from a rotation. It does not supply the Unruh effect, the Bisognano–Wichmann theorem, or a modular operator for a field algebra; those are imported, and the gap in the parent is left visible.</p>
 <h2 id="summary-of-notation">Summary of Notation</h2>
 <div class="table-scroll"><table>
@@ -474,7 +474,7 @@ $$</p>
 <td>KMS strip width in imaginary proper time</td>
 </tr>
 <tr>
-<td>$T=mc/k_m a/(2\pi c k_B)$</td>
+<td>$T=\frac{m\,a}{2\,k_m\,\pi\,k_{B}}$</td>
 <td>Unruh temperature</td>
 </tr>
 <tr>

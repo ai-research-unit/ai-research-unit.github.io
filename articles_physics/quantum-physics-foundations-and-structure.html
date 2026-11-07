@@ -90,8 +90,7 @@ $$</p>
 \rho(r'_t) = U(r'_t, r'_{t,0})\, \rho(r'_{t,0})\, U(r'_t, r'_{t,0})^\dagger,
 $$</p>
 <p>where $U(r'_t, r'_{t,0})$ is the $*$-unitary evolution operator satisfying</p>
-<p>$$
-i mc/k_m\, \frac{d}{dr'_t} U(r'_t, r'_{t,0}) = H\, U(r'_t, r'_{t,0}), \qquad U(r'_{t,0}, r'_{t,0}) = I,
+<p>$$\frac{m\,c\,i\,d}{k_m\,dr'_{t}} U(r'_t, r'_{t,0}) = H\, U(r'_t, r'_{t,0}), \qquad U(r'_{t,0}, r'_{t,0}) = I,
 $$</p>
 <p>with $H$ the Hamiltonian of the system.</p>
 <p><strong>Postulate 4 (Measurement).</strong> A projective measurement of an observable $A$ has outcomes labeled by its eigenvalues. If $A$ has spectral decomposition</p>
@@ -226,16 +225,15 @@ $$</p>
 <h3 id="the-schrodinger-picture">The Schrödinger Picture</h3>
 <p>In the <strong>Schrödinger picture</strong>, the state of the system evolves in time, and the observables are fixed. For a pure state $|\tilde{Ξ}_{\mathrm{sp}}(r'_t)\rangle$, the evolution is governed by the <strong>Schrödinger equation</strong>:</p>
 <p>$$
-\boxed{\;i mc/k_m\, \frac{\partial}{\partial r'_t}|\tilde{Ξ}_{\mathrm{sp}}(r'_t)\rangle = H\, |\tilde{Ξ}_{\mathrm{sp}}(r'_t)\rangle\;},
+\boxed{\;\frac{m\,c\,i}{k_m}\frac{\partial}{\partial  r'_t}|\tilde{Ξ}_{\mathrm{sp}}(r'_t)\rangle  = H\, |\tilde{Ξ}_{\mathrm{sp}}(r'_t)\rangle\;},
 $$</p>
 <p>where $H$ is the Hamiltonian. The solution is</p>
 <p>$$
 |\tilde{Ξ}_{\mathrm{sp}}(r'_t)\rangle = U(r'_t, r'_{t,0})\, |\tilde{Ξ}_{\mathrm{sp}}(r'_{t,0})\rangle,
 $$</p>
-<p>with $U(r'_t, r'_{t,0}) = \exp\left(-\tfrac{i k_m}{mc}H(r'_t - r'_{t,0})\right)$ for a time-independent Hamiltonian.</p>
+<p>with $U(r'_t, r'_{t,0}) = \exp\left(-\frac{k_m\,i}{m\,c}H(r'_t - r'_{t,0})\right)$ for a time-independent Hamiltonian.</p>
 <p>For a density matrix $\rho(r'_t)$, the evolution is given by the <strong>von Neumann equation</strong>:</p>
-<p>$$
-i mc/k_m\, \frac{\partial}{\partial r'_t}\rho(r'_t) = [H, \rho(r'_t)],
+<p>$$\frac{m\,c\,i}{k_m}\frac{\partial}{\partial  r'_t}\rho(r'_t) = [H, \rho(r'_t)],
 $$</p>
 <p>whose solution is $\rho(r'_t) = U(r'_t, r'_{t,0})\rho(r'_{t,0})U(r'_t, r'_{t,0})^\dagger$.</p>
 <h3 id="the-heisenberg-picture">The Heisenberg Picture</h3>
@@ -244,8 +242,7 @@ $$</p>
 A_H(r'_t) = U(r'_t, r'_{t,0})^\dagger\, A\, U(r'_t, r'_{t,0}).
 $$</p>
 <p>The evolution equation is the <strong>Heisenberg equation</strong>:</p>
-<p>$$
-i mc/k_m\, \frac{d}{dr'_t} A_H(r'_t) = [A_H(r'_t), H].
+<p>$$\frac{m\,c\,i\,d}{k_m\,dr'_{t}} A_H(r'_t) = [A_H(r'_t), H].
 $$</p>
 <p>The two pictures are related by a $*$-unitary transformation and give the same predictions for physical quantities.</p>
 <h3 id="unitarity-and-reversibility">Unitarity and Reversibility</h3>
@@ -385,7 +382,7 @@ $$</p>
 <td>Hamiltonian</td>
 </tr>
 <tr>
-<td>$mc/k_m$</td>
+<td>$\frac{m\,c}{k_m}$</td>
 <td>Reduced Planck constant</td>
 </tr>
 <tr>

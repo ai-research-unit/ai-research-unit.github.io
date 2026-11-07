@@ -90,7 +90,7 @@ $$</p>
 <p>$$
 \Box = \tilde{\nabla}\tilde{\nabla}^{\natural} = \tilde{\nabla}^{\natural}\tilde{\nabla} = \partial^2/\partial R_t^2 + \Delta = \Delta + \partial^2/\partial R_t^2 ,
 $$</p>
-<p>the series convention. The connection is $\tilde{A} = \sum_{\mu\in\{t,x,y,z\}}A_\mu e_\mu = i\,a'_t\,e_t + \vec A \in \mathbb{B}_{\Phi}$, with $A_0 = i\,a'_t$ purely imaginary and $A_1,A_2,A_3$ real; it transforms as above under a real gauge function $\Gamma$. The coupling is written $\kappa = ϙ\,k_m/(mc)$, so that $D = \tilde{\nabla} + i\kappa\tilde{A}$ and $D_\mu = \partial/\partial R_\mu + i\kappa A_\mu$. The gauge scalar is $S = \mathrm{Sc}(\tilde{\nabla}^{\natural}\tilde{A})$. Throughout, $c = 1/\sqrt{\epsilon\mu}$ is the <strong>speed of light in the medium</strong> and $c_0$ its vacuum value. The plain form, read as the trace formula $\mathrm{Tr}(\tilde{Q}_1\tilde{Q}_2)=2\,\mathrm{Sc}(\tilde{Q}_1\tilde{Q}_2)$, is inherited unchanged.</p>
+<p>the series convention. The connection is $\tilde{A} = \sum_{\mu\in\{t,x,y,z\}}A_\mu e_\mu = i\,a'_t\,e_t + \vec A \in \mathbb{B}_{\Phi}$, with $A_0 = i\,a'_t$ purely imaginary and $A_1,A_2,A_3$ real; it transforms as above under a real gauge function $\Gamma$. The coupling is written $\kappa =\frac{k_m\,ϙ}{m\,c}$, so that $D = \tilde{\nabla} + i\kappa\tilde{A}$ and $D_\mu = \partial/\partial R_\mu + i\kappa A_\mu$. The gauge scalar is $S = \mathrm{Sc}(\tilde{\nabla}^{\natural}\tilde{A})$. Throughout, $c = 1/\sqrt{\epsilon\mu}$ is the <strong>speed of light in the medium</strong> and $c_0$ its vacuum value. The plain form, read as the trace formula $\mathrm{Tr}(\tilde{Q}_1\tilde{Q}_2)=2\,\mathrm{Sc}(\tilde{Q}_1\tilde{Q}_2)$, is inherited unchanged.</p>
 <h2 id="the-gauge-orbit-as-a-torsor">The Gauge Orbit as a Torsor</h2>
 <p>The set $\mathcal{O}(\tilde{A})$ is the image of the map</p>
 <p>$$
@@ -122,7 +122,7 @@ $$</p>
 \qquad
 \tilde{Ξ}_{\mathrm{sp},2} = \lambda\tilde{Ξ}_{\mathrm{sp}},
 \qquad
-\lambda = \exp(i ϙ\Gamma\,k_m/(mc)).
+\lambda = \exp(\frac{k_m\,i\,ϙ\,\Gamma}{m\,c}).
 $$</p>
 <p>The three shifts are arranged so that the derivative of the transformed field in the transformed background is the transform of the derivative:</p>
 <p>$$
@@ -184,8 +184,8 @@ $$</p>
 <p>The claim that the orbit carries no state information can be made exact with the relative entropy, the basic monotone quantity of the informational sector.</p>
 <p>Let $\omega$ be a state of the charged field algebra in a background connection $\tilde{A}$, and let $\omega_2$ be the corresponding state in the gauge-transformed background $\tilde{A}_2 = \tilde{A} - \tilde{\nabla}\Gamma$. Gauge covariance states that the two are related by the automorphism implemented by the local central phase,</p>
 <p>$$
-\lambda(\tilde{Q}) = \exp(iϙ\Gamma(\tilde{Q})\,k_m/(mc)), \qquad
-\omega_2 = \omega \circ \mathrm{Ad}_{\lambda^{-1}} .
+\lambda(\tilde{Q}) = \exp(\frac{k_m\,i\,ϙ\,\Gamma\,\tilde{Q}}{m\,c}), \qquad
+\omega_2 = \omega \circ  \mathrm{Ad}_{\lambda^{-1}} .
 $$</p>
 <p>Because $\lambda$ is central and of unit phase, the automorphism is inner and implemented by a $*$-unitary of the algebra, and the GNS representations of $\omega$ and $\omega_2$ are unitarily equivalent. For any two backgrounds $\tilde{A}$ and $\tilde{Q}_1$ and their gauge transforms, the relative entropies therefore agree:</p>
 <p>$$
@@ -205,9 +205,9 @@ $$</p>
 <p>The orbit is locally trivial — a single point can always be gauged away — but not globally, and the global obstruction is the only place the orbit's structure becomes a physical number.</p>
 <p><strong>Local elimination is always possible; global elimination is not.</strong> As shown above, a connection can be gauged to zero at any point. It can be gauged to zero on a neighbourhood precisely when its curvature vanishes there, because a flat connection is locally a gradient. Globally, a flat connection need not be a gradient: its <strong>holonomy</strong> around a non-contractible loop is the obstruction. The holonomy is the path-ordered exponential of the connection around a closed curve,</p>
 <p>$$
-\boxed{\;\tilde U(C) = \mathcal{P}\exp\!\left(i\frac{ϙ k_m}{mc}\oint_C \sum_\mu\varepsilon_\mu A_\mu\,dx_\mu\right)\;},
+\boxed{\;\tilde U(C) = \mathcal{P}\exp\!\left(\frac{k_m\,i\,ϙ}{m\,c}\oint_C \sum_\mu\varepsilon_\mu A_\mu\,dx_\mu\right)\;},
 $$</p>
-<p>and its trace is the Wilson loop, $W(C) = \mathrm{Tr}\,\tilde U(C)$. The coupling $\frac{ϙ k_m}{mc}$ is the one of the covariant derivative above, so the exponent is a pure number; it is invariant under the gradient shift because the loop integral of a total derivative vanishes. In the biquaternion framework the connection being integrated is a material-sector object, $\tilde{A}\in\mathbb{B}_{\Phi}$, and the group element it exponentiates into is an element of the informational realization of the gauge group, so the Wilson loop is a two-sector bilinear. This is the construction of the companion article on Wilson loops, and it is not re-derived here.</p>
+<p>and its trace is the Wilson loop, $W(C) = \mathrm{Tr}\,\tilde U(C)$. The coupling $\frac{k_m\,ϙ}{m\,c}$ is the one of the covariant derivative above, so the exponent is a pure number; it is invariant under the gradient shift because the loop integral of a total derivative vanishes. In the biquaternion framework the connection being integrated is a material-sector object, $\tilde{A}\in\mathbb{B}_{\Phi}$, and the group element it exponentiates into is an element of the informational realization of the gauge group, so the Wilson loop is a two-sector bilinear. This is the construction of the companion article on Wilson loops, and it is not re-derived here.</p>
 <p><strong>The holonomy is the orbit's global invariant.</strong> The orbit of a connection is its gauge group; the holonomy is a functional of the connection that is constant on the orbit and is not a local function of the curvature. It is therefore exactly the part of the orbit's information that survives the local triviality. The framework's ordering of the object is clean:</p>
 <ul>
 <li>the connection is a point in the orbit, and has no invariant local value;</li>
@@ -300,7 +300,7 @@ $$</p>
 </ol>
 <h2 id="summary">Summary</h2>
 <p>The gauge orbit of a biquaternionic connection is the set $\mathcal{O}(\tilde{A}) = \{\tilde{A} - \tilde{\nabla}\Gamma\}$ of descriptions of one physical configuration. It is a torsor for the group of real gauge functions modulo constants: the gradient map has kernel the constants, so the gauge group acts freely and transitively, and there is no preferred representative. It is the fibre of the curvature map, because $\tilde{F} = \mathrm{Vect}(\tilde{\nabla}^{\natural}\tilde{A})$ is orbit-invariant while the gauge scalar $S = \mathrm{Sc}(\tilde{\nabla}^{\natural}\tilde{A})$ shifts by $-\Box\Gamma$ and is pure gauge. The rank of the pure-gauge map is one per Fourier mode, which yields the standard degree-of-freedom count $4\to3\to2$.</p>
-<p>Information-theoretically the orbit is a <strong>redundancy</strong>, not a loss. A gauge transformation is implemented by the central phase $\lambda = \exp(iϙ\Gamma\,k_m/(mc))$, which is $*$-unitary, so gauge-related backgrounds define unitarily equivalent states and the relative entropy is constant along the orbit,</p>
+<p>Information-theoretically the orbit is a <strong>redundancy</strong>, not a loss. A gauge transformation is implemented by the central phase $\lambda = \exp(\frac{k_m\,i\,ϙ\,\Gamma}{m\,c})$, which is $*$-unitary, so gauge-related backgrounds define unitarily equivalent states and the relative entropy is constant along the orbit,</p>
 <p>$$
 S(\tilde{Ϛ}_{\tilde{A}_2}\|\tilde{Ϛ}_{\tilde{Q}_{1,2}}) = S(\tilde{Ϛ}_{\tilde{A}}\|\tilde{Ϛ}_{\tilde{Q}_1}).
 $$</p>
@@ -356,11 +356,11 @@ $$</p>
 <td>Real scalar gauge function</td>
 </tr>
 <tr>
-<td>$\lambda = \exp(iϙ\Gamma\,k_m/(mc))$</td>
+<td>$\lambda = \exp(\frac{k_m\,i\,ϙ\,\Gamma}{m\,c})$</td>
 <td>Local central phase</td>
 </tr>
 <tr>
-<td>$\kappa = ϙ\,k_m/(mc)$</td>
+<td>$\kappa =\frac{k_m\,ϙ}{m\,c}$</td>
 <td>Coupling</td>
 </tr>
 <tr>
@@ -388,7 +388,7 @@ $$</p>
 <td>Abelian curvature components</td>
 </tr>
 <tr>
-<td>$\tilde U(C) = \mathcal{P}\exp(i\frac{ϙ k_m}{mc}\oint_C \sum_\mu\varepsilon_\mu A_\mu dx_\mu)$</td>
+<td>$\tilde U(C) = \mathcal{P}\exp(\frac{k_m\,i\,ϙ}{m\,c}\oint_C \sum_\mu\varepsilon_\mu A_\mu dx_\mu)$</td>
 <td>Holonomy; global obstruction</td>
 </tr>
 <tr>

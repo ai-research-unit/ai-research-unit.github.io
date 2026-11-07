@@ -89,7 +89,7 @@ $$</p>
 <p>$$
 \Box = \tilde{\nabla}\tilde{\nabla}^{\natural} = \tilde{\nabla}^{\natural}\tilde{\nabla} = \partial^2/\partial R_t^2+\Delta .
 $$</p>
-<p>The biquaternion norm is $\langle\tilde{Q}\rangle_{\natural} = \langle\tilde{Q},\tilde{Q}\rangle_{\natural}=\tilde{Q}\tilde{Q}^{\natural}=\sum_\mu Q_\mu^2$ — the unit metric $\mathrm{diag}(+1,+1,+1,+1)$ on $\mathbb{C}$ — and on the real material slice it is the interval $-c^2{r'_{t}}^2+r_x^2+r_y^2+r_z^2$, whose one minus is the square of the $i$ in $Q_t=i c r'_t$. The scalar mass enters as the length $1/k_m$, so that the scalar equation is $(\Box-k_m^{2})\tilde{Ξ}=0$, matching the companion article <em>The Klein–Gordon Equation in Biquaternionic Form</em>. The field strength is $\tilde{F}=i\sqrt{\epsilon}\,\vec E-\sqrt{\mu}\,\vec H$, the source is $\sqrt{\mu}\,\tilde{J}=\frac{i\rho}{\sqrt{\epsilon}}e_t+\sqrt{\mu}\,\vec J$, and the Maxwell equation is $\tilde{\nabla}\tilde{F}=-\sqrt{\mu}\,\tilde{J}$, all as fixed in the companion article <em>Maxwell's Equations in the Biquaternionic Formulation</em>. The energy density is $W=\tfrac12(\epsilon\vec E^2+\mu\vec H^2)$ and the Poynting vector is $\vec S=\vec E\times\vec H$. The trace formula is $\mathrm{Tr}(\tilde Q_1\tilde Q_2)=2\,\mathrm{Sc}(\tilde Q_1\tilde Q_2) = 2\langle\tilde Q_1,\tilde Q_2\rangle$. Throughout, $c=1/\sqrt{\epsilon\mu}$ is the speed of light in the medium and $c_0$ its vacuum value. Here $1/k_m$ is the mass length.</p>
+<p>The biquaternion norm is $\langle\tilde{Q}\rangle_{\natural} = \langle\tilde{Q},\tilde{Q}\rangle_{\natural}=\tilde{Q}\tilde{Q}^{\natural}=\sum_\mu Q_\mu^2$ — the unit metric $\mathrm{diag}(+1,+1,+1,+1)$ on $\mathbb{C}$ — and on the real material slice it is the interval $-c^2{r'_{t}}^2+r_x^2+r_y^2+r_z^2$, whose one minus is the square of the $i$ in $Q_t=i c r'_t$. The scalar mass enters as the length $\hbar/(mc)$, so that the scalar equation is $(\Box-(k_m)^{2})\tilde{Ξ}=0$, matching the companion article <em>The Klein–Gordon Equation in Biquaternionic Form</em>. The field strength is $\tilde{F}=i\sqrt{\epsilon}\,\vec E-\sqrt{\mu}\,\vec H$, the source is $\sqrt{\mu}\,\tilde{J}=\frac{i\rho}{\sqrt{\epsilon}}e_t+\sqrt{\mu}\,\vec J$, and the Maxwell equation is $\tilde{\nabla}\tilde{F}=-\sqrt{\mu}\,\tilde{J}$, all as fixed in the companion article <em>Maxwell's Equations in the Biquaternionic Formulation</em>. The energy density is $W=\tfrac12(\epsilon\vec E^2+\mu\vec H^2)$ and the Poynting vector is $\vec S=\vec E\times\vec H$. The trace formula is $\mathrm{Tr}(\tilde Q_1\tilde Q_2)=2\,\mathrm{Sc}(\tilde Q_1\tilde Q_2) = 2\langle\tilde Q_1,\tilde Q_2\rangle$. Throughout, $c=1/\sqrt{\epsilon\mu}$ is the speed of light in the medium and $c_0$ its vacuum value. Here $\hbar/(mc)$ is the mass length.</p>
 <p><strong>A sign warning.</strong> As in the companion exercise <em>Exercise: The Electromagnetic Energy–Momentum Tensor</em>, the mixed component $\mathsf{T}_{00}$ carries a sign in the $i c r'_t$ convention: for the electromagnetic field $\mathsf{T}_{00}=-W$, while the physical energy density is $T_{tt}=W$. This article keeps the same convention for the scalar field and states it at each tensor, so that the two fields can be compared without a sign discrepancy.</p>
 <h2 id="the-field-action-in-biquaternion-form">The Field Action in Biquaternion Form</h2>
 <p>The action of a field theory is a functional of the field and its first derivatives,</p>
@@ -107,22 +107,22 @@ $$</p>
 <h3 id="the-scalar-action">The Scalar Action</h3>
 <p>Let $\tilde{Ξ}$ be a biquaternion-valued field and take the Lagrangian density</p>
 <p>$$
-\boxed{\ \mathcal{L}_\xi = -\tfrac12\sum_\mu\partial/\partial R_\mu\,\tilde{Ξ}\,\partial/\partial R_\mu\,\tilde{Ξ}^{\natural} - \tfrac12k_m^{2}\,\tilde{Ξ}\tilde{Ξ}^{\natural}\ } ,
+\boxed{\ \mathcal{L}_\xi = -\tfrac12\sum_\mu\partial/\partial R_\mu\,\tilde{Ξ}\,\partial/\partial R_\mu\,\tilde{Ξ}^{\natural} - \tfrac12(mc/\hbar)^{2}\,\tilde{Ξ}\tilde{Ξ}^{\natural}\ } ,
 \qquad
-1/k_m .
+\hbar/(mc) .
 $$</p>
 <p>Because $\Box$ is central and scalar, the field decomposes into its four components and the Euler–Lagrange equation is componentwise the scalar equation. For a real scalar component $\xi$ the variation gives</p>
 <p>$$
-\Box\xi - k_m^{2}\xi = 0 ,
+\Box\xi - (k_m)^{2}\xi = 0 ,
 $$</p>
 <p>that is,</p>
 <p>$$
-\left(\Box-k_m^{2}\right)\tilde{Ξ} = 0 ,
+\left(\Box-(k_m)^{2}\right)\tilde{Ξ} = 0 ,
 $$</p>
 <p>the biquaternionic Klein–Gordon equation of the companion article. The overall sign of $\mathcal{L}_\xi$ is fixed by the requirement that the energy be positive, as the stress–energy section shows; in the coordinates $Q_t=i c r'_t$ and $Q_k=x_k$, the kinetic term of $\mathcal{L}_\xi$ written out is</p>
 <p>$$
-\mathcal{L}_\xi = -\tfrac12\left(-\frac{1}{c^2}\left(\partial\xi/\partial r'_t\right)^{2}+(\nabla\xi)^2\right)-\tfrac12k_m^{2}\xi^2
-= \frac{1}{2c^2}\left(\partial\xi/\partial r'_t\right)^{2}-\frac12(\nabla\xi)^2-\frac12k_m^{2}\xi^2 ,
+\mathcal{L}_\xi = -\tfrac12\left(-\frac{1}{c^2}\left(\partial\xi/\partial r'_t\right)^{2}+(\nabla\xi)^2\right)-\tfrac12(k_m)^{2}\xi^2
+= \frac{1}{2c^2}\left(\partial\xi/\partial r'_t\right)^{2}-\frac12(\nabla\xi)^2-\frac12(k_m)^{2}\xi^2 ,
 $$</p>
 <p>and it is this sign that makes the energy density of the next section positive. A complex scalar field, equivalently two real scalar fields, carries the doubling that the Klein–Gordon article records.</p>
 <h3 id="the-electromagnetic-action">The Electromagnetic Action</h3>
@@ -168,13 +168,13 @@ $$</p>
 $$</p>
 <p>the sign being the one that makes $T_{tt}>0$; the canonical Noether tensor is the negative of this expression, and the two differ only by the overall sign just discussed. Its components are, with $Q_t=i c r'_t$ and $Q_k=x_k$, the time row carrying the minus of $i^2$,</p>
 <p>$$
-\boxed{\ T_{tt} = \frac{1}{2c^2}\left(\partial\xi/\partial r'_t\right)^{2} + \frac12(\nabla\xi)^2 + \frac12k_m^{2}\xi^2 > 0\} ,
+\boxed{\ T_{tt} = \frac{1}{2c^2}\left(\partial\xi/\partial r'_t\right)^{2} + \frac12(\nabla\xi)^2 + \frac12(k_m)^{2}\xi^2 > 0\ } ,
 $$</p>
 <p>$$
 T_{tk} = T_{kt} = -\frac{1}{c}\,\partial\xi/\partial r'_t\,\partial/\partial R_k\,\xi ,
 \qquad
 T_{jk} = T_{kj} = \partial/\partial R_j\,\xi\,\partial/\partial R_k\,\xi
-+ \delta_{jk}\left(\frac{1}{2c^2}\left(\partial\xi/\partial r'_t\right)^{2}-\frac12(\nabla\xi)^2-\frac12k_m^{2}\xi^2\right) .
++ \delta_{jk}\left(\frac{1}{2c^2}\left(\partial\xi/\partial r'_t\right)^{2}-\frac12(\nabla\xi)^2-\frac12(k_m)^{2}\xi^2\right) .
 $$</p>
 <p>For a right-moving massless wave, $\xi=f(x-c r'_{t})$, these reduce to $T_{tt}=T_{xx}=(\partial\xi/\partial r_x)^2$ and $T_{tx}=T_{tt}$, the null-field pattern of a single traveling wave.</p>
 <p>The energy density is manifestly positive: it is the sum of three squares, one for the kinetic term, one for the gradient, and one for the mass. The conservation law</p>
@@ -197,7 +197,7 @@ $$</p>
 \quad
 mc/\hbar = 1.3,
 $$</p>
-<p>with $\omega_i^2 = \vec k_i^2+k_m^{2}$ for each mode, so that each mode is on shell and the two are on shell simultaneously. Evaluating $\sum_\mu\partial/\partial R_\mu T_{\mu\nu}$ by second-order finite differences with step $10^{-3}$ at the event $r'_t=0.7$, $(r_x,r_y,r_z)=(0.3,-0.5,0.2)$ gave residuals of order $10^{-6}$ for all four $\nu$, which is the discretisation error $O(h^2)$; the energy density at the same event was $T_{tt}=3.37>0$. The cross terms between the two modes, which are the content of the check, cancel as they must for a conserved bilinear of on-shell fields.</p>
+<p>with $\omega_i^2 = \vec k_i^2+(k_m)^{2}$ for each mode, so that each mode is on shell and the two are on shell simultaneously. Evaluating $\sum_\mu\partial/\partial R_\mu T_{\mu\nu}$ by second-order finite differences with step $10^{-3}$ at the event $r'_t=0.7$, $(r_x,r_y,r_z)=(0.3,-0.5,0.2)$ gave residuals of order $10^{-6}$ for all four $\nu$, which is the discretisation error $O(h^2)$; the energy density at the same event was $T_{tt}=3.37>0$. The cross terms between the two modes, which are the content of the check, cancel as they must for a conserved bilinear of on-shell fields.</p>
 <h2 id="the-electromagnetic-stressenergy-as-a-bigeneral-quaternionic-bilinear">The Electromagnetic Stress–Energy as a Bigeneral quaternionic Bilinear</h2>
 <p>For the electromagnetic field the improved stress–energy tensor has a closed algebraic form in the biquaternion algebra. With the material basis $\mathcal{E}_\mu\in\{ie_t,\vec e_x,\vec e_y,\vec e_z\}$,</p>
 <p>$$
@@ -319,11 +319,11 @@ $$</p>
 <h2 id="summary">Summary</h2>
 <p>The action of a field theory yields both its equations of motion and, by Noether's theorem, its conserved stress–energy. In biquaternion form the scalar action</p>
 <p>$$
-\mathcal{L}_\xi = -\tfrac12\sum_\mu\partial/\partial R_\mu\,\tilde{Ξ}\,\partial/\partial R_\mu\,\tilde{Ξ}^{\natural}-\tfrac12k_m^{2}\tilde{Ξ}\tilde{Ξ}^{\natural},
+\mathcal{L}_\xi = -\tfrac12\sum_\mu\partial/\partial R_\mu\,\tilde{Ξ}\,\partial/\partial R_\mu\,\tilde{Ξ}^{\natural}-\tfrac12(mc/\hbar)^{2}\tilde{Ξ}\tilde{Ξ}^{\natural},
 \qquad
-1/k_m,
+\hbar/(mc),
 $$</p>
-<p>has the Euler–Lagrange equation $(\Box-k_m^{2})\tilde{Ξ}=0$, and the electromagnetic action</p>
+<p>has the Euler–Lagrange equation $(\Box-(k_m)^{2})\tilde{Ξ}=0$, and the electromagnetic action</p>
 <p>$$
 S_{\mathrm{em}} = -\frac14\int \sum_{\mu,\nu}F_{\mu\nu}F_{\mu\nu}\,d^4r ,
 \qquad
@@ -332,7 +332,7 @@ $$</p>
 <p>has the equation $\tilde{\nabla}\tilde{F}=-\sqrt{\mu}\,\tilde{J}$, with $\tilde J=ic\rho\,e_t+\vec J$. The translation Noether current is the canonical tensor $\mathsf{T}_{\mu\nu}=\sum_a\frac{\partial\mathcal{L}}{\partial(\partial/\partial R_\mu\,\tilde{Ξ}_{\mathrm{sp},a})}\partial/\partial R_\nu\,\tilde{Ξ}_{\mathrm{sp},a}-\delta_{\mu\nu}\mathcal{L}$, conserved on shell, taken with the overall sign that makes $T_{tt}>0$.</p>
 <p>The scalar stress–energy is $T_{\mu\nu}=\partial/\partial R_\mu\,\xi\partial/\partial R_\nu\,\xi+\delta_{\mu\nu}\mathcal{L}_\xi$, with</p>
 <p>$$
-T_{tt}=\frac{1}{2c^2}\left(\partial\xi/\partial r'_t\right)^{2}+\frac12(\nabla\xi)^2+\frac12k_m^{2}\xi^2>0,
+T_{tt}=\frac{1}{2c^2}\left(\partial\xi/\partial r'_t\right)^{2}+\frac12(\nabla\xi)^2+\frac12(k_m)^{2}\xi^2>0,
 \qquad
 \sum_\mu\partial/\partial R_\mu T_{\mu\nu}=0 \ \text{on shell},
 $$</p>
@@ -385,15 +385,15 @@ $$</p>
 <td>Action; $\mathcal{L}$ the Lagrangian density</td>
 </tr>
 <tr>
-<td>$\mathcal{L}_\xi=-\tfrac12\sum_\mu\partial/\partial R_\mu\,\tilde{Ξ}\,\partial/\partial R_\mu\,\tilde{Ξ}^{\natural}-\tfrac12k_m^{2}\tilde{Ξ}\tilde{Ξ}^{\natural}$</td>
+<td>$\mathcal{L}_\xi=-\tfrac12\sum_\mu\partial/\partial R_\mu\,\tilde{Ξ}\,\partial/\partial R_\mu\,\tilde{Ξ}^{\natural}-\tfrac12(k_m)^{2}\tilde{Ξ}\tilde{Ξ}^{\natural}$</td>
 <td>Scalar Lagrangian</td>
 </tr>
 <tr>
-<td>$1/k_m$</td>
-<td>The mass length, $1/k_m$; its reciprocal $mc\,k_m/(mc)=mc\,k_m/(mc)$ is the scalar mass parameter</td>
+<td>$\hbar/(mc)$</td>
+<td>The mass length, $\hbar/(mc)$; its reciprocal $k_m=k_m$ is the scalar mass parameter</td>
 </tr>
 <tr>
-<td>$(\Box-k_m^{2})\tilde{Ξ}=0$</td>
+<td>$(\Box-(k_m)^{2})\tilde{Ξ}=0$</td>
 <td>Biquaternionic Klein–Gordon equation</td>
 </tr>
 <tr>
@@ -441,7 +441,7 @@ $$</p>
 <td>Scalar stress–energy</td>
 </tr>
 <tr>
-<td>$T_{tt}=\frac{1}{2c^2}\left(\partial\xi/\partial r'_t\right)^{2}+\frac12(\nabla\xi)^2+\frac12k_m^{2}\xi^2$</td>
+<td>$T_{tt}=\frac{1}{2c^2}\left(\partial\xi/\partial r'_t\right)^{2}+\frac12(\nabla\xi)^2+\frac12(k_m)^{2}\xi^2$</td>
 <td>Scalar energy density, positive</td>
 </tr>
 <tr>

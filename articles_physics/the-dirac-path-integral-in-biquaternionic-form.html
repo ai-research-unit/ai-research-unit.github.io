@@ -108,7 +108,7 @@ i\tilde{P}\,\tilde{Ξ}_{\mathrm{sp},\mathrm{amp},R} = k_m\tilde{Ξ}_{\mathrm{sp}
 \qquad
 i\tilde{P}^{\natural}\,\tilde{Ξ}_{\mathrm{sp},\mathrm{amp},L} = k_m\tilde{Ξ}_{\mathrm{sp},\mathrm{amp},R} ,
 $$</p>
-<p>and eliminating one part returns the mass shell, $p^2=m^{2}c^{2}$, since $\tilde{P}^{\natural}\tilde{P} = \langle\tilde{P}\rangle_{\natural}$.</p>
+<p>and eliminating one part returns the mass shell, $p^2=m^{2}\,c^{2}$, since $\tilde{P}^{\natural}\tilde{P} = \langle\tilde{P}\rangle_{\natural}$.</p>
 <p><strong>The propagator.</strong> The Green kernel of the pair is the inverse of $\mathbb{D}-k_m$, and on a plane wave its two components are</p>
 <p>$$
 \mathcal S_L = \frac{i\,k_m - \tilde{P}}{p^2 - k_m^{2}},
@@ -286,11 +286,11 @@ $$</p>
 <p>where the first term on each right-hand side is the straight continuation and the second is the corner. Two features are visible by inspection. The <strong>free propagation is diagonal</strong>: the term that carries $A_+$ to $A_+$ and $A_-$ to $A_-$ involves no mixing, and each direction propagates independently. The <strong>mass is off-diagonal</strong>: the corner terms couple the two amplitudes with the weight $i\epsilon\,k_m$, i.e. with an explicit factor of the mass and an explicit factor of $i$.</p>
 <p>Taylor-expanding and taking $\epsilon \to 0$ with the lightlike constraint $|dr_x/dr'_t| = 1$ — the particle moves at the speed of light along the null directions, one lattice site per time step — turns the pair into</p>
 <p>$$
-\frac{\partial A_+}{\partial r'_t} = -\frac{\partial A_+}{\partial r_x} + \frac{im k_m}{mc}A_-,
+\frac{\partial A_+}{\partial r'_t} = -\frac{\partial A_+}{\partial r_x} +\frac{k_m\,i}{c}A_-,
 \qquad
-\frac{\partial A_-}{\partial r'_t} = +\frac{\partial A_-}{\partial r_x} + \frac{im k_m}{mc}A_+,
+\frac{\partial A_-}{\partial r'_t} = +\frac{\partial A_-}{\partial r_x} +\frac{k_m\,i}{c}A_+,
 $$</p>
-<p>the two-part Dirac equation in 1+1 dimensions. The corner weight $i\epsilon\,k_m$ becomes the mass term $i\,k_m$, with $k_m=m/\hbar$ at $c=1$, and the two directions become the two values of the subscript. Squaring either line with the other substituted gives $\partial^2 A_+/\partial {r'_t}^2-\partial^2 A_+/\partial r_x^2 = -A_+c^{2}\,k_m^{-2}$: the cross terms cancel and the two corner factors meet as $i\cdot i=-1$, which is why the mass enters the squared equation with a minus sign. The $i$ of the corner is a relative phase of the two parts, since the rotation $A_+\mapsto e^{i\pi/4}A_+$, $A_-\mapsto e^{-i\pi/4}A_-$ turns the mass term $i\,k_m$ into the real $-k_m$; that is why the biquaternion pair can carry the real $k_m$, and why the corner weight is a convention rather than a sign. This is the Klein–Gordon equation of the series' d'Alembertian, so the discrete model carries the Dirac square as well as the Dirac equation. This is the discrete origin of the off-diagonal mass pair that the biquaternion algebra writes as $\tilde{\nabla}\tilde{Ξ}_{\mathrm{sp},R} = k_m\tilde{Ξ}_{\mathrm{sp},L}$, $\tilde{\nabla}^{\natural}\tilde{Ξ}_{\mathrm{sp},L} = k_m\tilde{Ξ}_{\mathrm{sp},R}$: the checkerboard is that pair before the continuum limit has identified the directions with the two values of the subscript. The order of the two factors in a corner is the path ordering that survives as the ordering of the operators $\tilde{\nabla}$ and $\tilde{\nabla}^{\natural}$ in the continuum.</p>
+<p>the two-part Dirac equation in 1+1 dimensions. The corner weight $i\epsilon\,k_m$ becomes the mass term $i\,k_m$, with $k_m=\frac{k_m}{c}$ at $c=1$, and the two directions become the two values of the subscript. Squaring either line with the other substituted gives $\partial^2 A_+/\partial {r'_t}^2-\partial^2 A_+/\partial r_x^2 = -A_+c^{2}\,k_m^{-2}$: the cross terms cancel and the two corner factors meet as $i\cdot i=-1$, which is why the mass enters the squared equation with a minus sign. The $i$ of the corner is a relative phase of the two parts, since the rotation $A_+\mapsto e^{i\pi/4}A_+$, $A_-\mapsto e^{-i\pi/4}A_-$ turns the mass term $i\,k_m$ into the real $-k_m$; that is why the biquaternion pair can carry the real $k_m$, and why the corner weight is a convention rather than a sign. This is the Klein–Gordon equation of the series' d'Alembertian, so the discrete model carries the Dirac square as well as the Dirac equation. This is the discrete origin of the off-diagonal mass pair that the biquaternion algebra writes as $\tilde{\nabla}\tilde{Ξ}_{\mathrm{sp},R} = k_m\tilde{Ξ}_{\mathrm{sp},L}$, $\tilde{\nabla}^{\natural}\tilde{Ξ}_{\mathrm{sp},L} = k_m\tilde{Ξ}_{\mathrm{sp},R}$: the checkerboard is that pair before the continuum limit has identified the directions with the two values of the subscript. The order of the two factors in a corner is the path ordering that survives as the ordering of the operators $\tilde{\nabla}$ and $\tilde{\nabla}^{\natural}$ in the continuum.</p>
 <h2 id="composition-the-propagator-equation-and-the-scalar-reduction">Composition, the Propagator Equation, and the Scalar Reduction</h2>
 <p>The path integral must carry the composition law of a kernel and the Green's-function equation, and both are transparent in the biquaternion framework.</p>
 <p><strong>Composition belongs to the proper-time kernel, not to $\mathcal S$.</strong> Write $K_T(x,x_2)$ for the kernel of $\exp\left(iT\left(\Box-k_m^{2}\right)\right)$. Then</p>
@@ -453,7 +453,7 @@ $$</p>
 </tr>
 <tr>
 <td>$1/k_m$</td>
-<td>The mass length, $1/k_m$; its reciprocal $k_m=mc/\hbar$ is the mass parameter</td>
+<td>The mass length, $\hbar/(mc)$; its reciprocal $k_m=mc/\hbar$ is the mass parameter</td>
 </tr>
 <tr>
 <td>$\tilde{Ξ}_{\mathrm{sp}}$, $\tilde{Ξ}_{\mathrm{sp},L}$, $\tilde{Ξ}_{\mathrm{sp},R}$</td>

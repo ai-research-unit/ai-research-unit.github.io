@@ -71,7 +71,7 @@
         <h1 id="canonical-quantization-of-the-biquaternion-raritaschwinger-field"><strong>Canonical Quantization of the Biquaternion Rarita–Schwinger Field</strong></h1>
 <h2 id="introduction">Introduction</h2>
 <p>The Rarita–Schwinger field is the field of spin $\tfrac32$: a vector-spinor $\tilde{Ξ}_{\mathrm{sp},\mu}$, carrying one Lorentz vector index and one Dirac spinor index, subject to the constraint that its trace vanish. As a classical field equation the Rarita–Schwinger equation is the subject of the companion article <em>The Rarita–Schwinger Equation: Spin 3/2 in Biquaternionic Form</em>; the present article takes that equation as given and develops the <strong>canonical quantization</strong> of the field in the biquaternion framework: the constraint structure, the mode expansion, the anticommutators, the count of physical polarizations, and the gauge and ghost structure of the massless case.</p>
-<p><strong>Units.</strong> Throughout, a four-momentum is $(p_0,\vec p)$ with $p_0=E/c$, the mass shell is $E^2=\vec p^{\,2}c^2+m^{2}c^{4}$, and every mass enters through the mass wave number $k_m=mc/\hbar$.</p>
+<p><strong>Units.</strong> Throughout, a four-momentum is $(p_0,\vec p)$ with $p_0=E/c$, the mass shell is $E^2=\vec p^{\,2}c^2+m^{2}\,c^{4}$, and every mass enters through the mass wave number $k_m=mc/\hbar$.</p>
 <p>The biquaternion framework is well suited to this field, because the two indices of $\tilde{Ξ}_{\mathrm{sp},\mu}$ correspond to the two kinds of object the framework distinguishes. The vector index carries the <strong>material</strong> vector representation, which the article on integer-spin quantization identifies with the adjoint action on the vector part $V\subset\mathbb{B}_{\Phi}$; the spinor index carries the representation that the Dirac article identifies as the spin-$\tfrac12$ carrier. The Rarita–Schwinger field is therefore the tensor product of the two, and its decomposition is the framework's own:</p>
 <p>$$
 \boxed{\;1\otimes\tfrac12=\tfrac32\oplus\tfrac12,
@@ -99,7 +99,7 @@ $$</p>
 \qquad
 \mathbb{D}_p\tilde{Ξ}_{\mathrm{sp}}:=\sum_\mu\varepsilon_\mu\,i\,e_\mu\,\tilde{Ξ}_{\mathrm{sp}}\,\vec e_{\nu(\mu)}\,p_\mu ,
 $$</p>
-<p>with $\mathbb{D}^2=\Box$ and $\mathbb{D}_p^2=p^2\,k_m/(mc)^2$, which is $k_m^{2}$ on the mass shell; the minus sign of $\mathbb{D}$ is the product of the imaginary unit of the frame cell and the one the Dirac operator carries, $i\cdot i=-1$, and $\mathbb{D}_p$ keeps the single one of the cell. The second is the <strong>trace spinor</strong> of a vector-spinor, the metric contraction of its vector index with the frame cells,</p>
+<p>with $\mathbb{D}^2=\Box$ and $\mathbb{D}_p^2=\frac{k_m^{2}\,p^{2}}{m^{2}\,c^{2}}$, which is $k_m^{2}$ on the mass shell; the minus sign of $\mathbb{D}$ is the product of the imaginary unit of the frame cell and the one the Dirac operator carries, $i\cdot i=-1$, and $\mathbb{D}_p$ keeps the single one of the cell. The second is the <strong>trace spinor</strong> of a vector-spinor, the metric contraction of its vector index with the frame cells,</p>
 <p>$$
 \Sigma(\tilde{Ξ}_{\mathrm{sp}}):=\sum_\mu\varepsilon_\mu\,i\,e_\mu\,\tilde{Ξ}_{\mathrm{sp},\mu}\,\vec e_{\nu(\mu)} .
 $$</p>
@@ -226,7 +226,7 @@ $$</p>
 <h2 id="the-propagator-and-its-gauge-fixing">The Propagator and Its Gauge Fixing</h2>
 <p>The momentum-space propagator is the inverse of the quadratic form that the field equation and the constraint define on the traceless subspace. It is of the general form</p>
 <p>$$
-G_{\mu\nu}(p) = -\frac{i}{p^2-mc/k_m^2k_m^2\Bigl[\bigl(\mathbb{D}_p+m\bigr)\Pi_{\mu\nu} + \text{(lower-spin terms)}\Bigr] ,
+G_{\mu\nu}(p) = -\frac{i}{p^2-\hbar^2k_m^2\Bigl[\bigl(\mathbb{D}_p+m\bigr)\Pi_{\mu\nu} + \text{(lower-spin terms)}\Bigr] ,
 $$</p>
 <p>where the transverse projector $\Pi_{\mu\nu}$ is the one of the completeness relation and the lower-spin terms are the parts that the constraint removes; in the standard covariant form the propagator carries the gauge-fixing dependence of the massless case and a $p_\mu p_\nu$ term whose coefficient involves $1/m^2$ for the massive case. The detailed form, including the dependence on the gauge-fixing parameter and the $D$-dimensional continuation, is the standard result and is cited below; the framework's contribution is the identification of the trace part of the projector with the algebra's traceless projector and the interpretation of the lower-spin terms as the removed $\left(\tfrac12\right)$ component.</p>
 <p>The massless case requires the gauge fixing, and the gauge-fixing parameter enters the propagator in the same way as in the vector case, through the longitudinal-traceless decomposition of the field. The ghost fields are spinor and commuting, so they live in the spinor carrier tensored with the even part of the algebra; the BRST structure is the standard one, with the gauge parameter now a spinor.</p>
@@ -366,7 +366,7 @@ $$</p>
 <p>$$
 \sum_{r=1}^{4}\zeta_{\mu,r}\bar\zeta_{\nu,r}=(\gamma\cdot p+m)\Pi_{\mu\nu},
 \qquad
-G_{\mu\nu}(p)=-\frac{i}{p^2-mc/k_m^2k_m^2\Bigl[(\gamma\cdot p+m)\Pi_{\mu\nu}+\text{(lower-spin terms)}\Bigr].
+G_{\mu\nu}(p)=-\frac{i}{p^2-\hbar^2k_m^2\Bigl[(\gamma\cdot p+m)\Pi_{\mu\nu}+\text{(lower-spin terms)}\Bigr].
 $$</p>
 <p><strong>The display.</strong> Every array printed in this section is given twice: in the Peirce display first, labelled $\mathrm{pau}$, whose arrays are the ones the literature prints, and in the axis-free display after it, labelled $\mathrm{axf}$, which is the display of the body and of the corpus. The two are carried into one another by $L_{\mathrm{axf},e_\mu}=C_{\Pi}L_{\mathrm{pau},e_\mu}C_{\Pi}^{-1}$, and a conjugation by $C_{\Pi}$ changes no product, no anticommutator, no trace and no determinant, so every identity of the section holds in both. An array is a statement about one display; a cell named in the running text keeps the Peirce label, and its axis-free array is the conjugate. The label names the array and not the operator.</p>
 <h2 id="summary">Summary</h2>

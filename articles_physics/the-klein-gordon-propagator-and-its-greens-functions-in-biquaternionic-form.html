@@ -112,7 +112,7 @@ $$</p>
 \qquad
 \left(\Box-k_m^{2}\right)\;\longmapsto\;\frac{\omega^2}{c^2}-\vec k^2-k_m^{2} .
 $$</p>
-<p>The symbol vanishes precisely on the <strong>mass shell</strong> $\langle\tilde P\rangle_{\natural}=\tilde P\tilde P^{\natural}= -m^{2}c^{2}$, that is, on</p>
+<p>The symbol vanishes precisely on the <strong>mass shell</strong> $\langle\tilde P\rangle_{\natural}=\tilde P\tilde P^{\natural}= -m^{2}\,c^{2}$, that is, on</p>
 <p>$$
 \omega^2=c^2\vec k^2+c^2k_m^{2},
 $$</p>
@@ -144,7 +144,7 @@ $$</p>
 <p>$$
 \Omega_{\vec p}=\sqrt{\vec p^2+k_m^{2}}.
 $$</p>
-<p>In natural units this is the on-shell energy; with $c$ restored it is $mc/k_m\Omega_{\vec p}=\sqrt{mc/k_m^2c^2\vec p^2+m^2c^4}$, the usual relativistic energy. The two poles sit on the real axis in the distributional sense, and the four standard prescriptions displace them into the complex plane in four ways. Each prescription defines a Green's function with a definite support and a definite interpretation.</p>
+<p>In natural units this is the on-shell energy; with $c$ restored it is $\frac{m\,c\,\Omega_{\vec p}}{k_m}=\sqrt{\frac{m^{2}\,c^{4}\,\vec p^{2}}{k_m^{2}}+m^2c^4}$, the usual relativistic energy. The two poles sit on the real axis in the distributional sense, and the four standard prescriptions displace them into the complex plane in four ways. Each prescription defines a Green's function with a definite support and a definite interpretation.</p>
 <div class="table-scroll"><table>
 <thead>
 <tr>
@@ -225,7 +225,7 @@ p\,\frac{\sin(\Omega_p r'_t)}{\Omega_p}\,\sin(pr),
 \qquad
 \Omega_p=\sqrt{p^2+k_m^{2}}.
 $$</p>
-<p>The substitution $p=(mc)\sinh u$, which is the hyperboloid parametrization of the mass shell, gives $\Omega_p=(mc)\cosh u$, $dp=k_m\cosh u\,du$, and</p>
+<p>The substitution $p=(m\,c)\sinh u$, which is the hyperboloid parametrization of the mass shell, gives $\Omega_p=(m\,c)\cosh u$, $dp=k_m\cosh u\,du$, and</p>
 <p>$$
 \frac{p\,dp}{\Omega_p}=k_m\sinh u\,du,
 \qquad
@@ -394,7 +394,7 @@ $$</p>
 </ol>
 <h2 id="summary">Summary</h2>
 <p>The Klein–Gordon operator $(\Box-k_m^{2})$ is a central scalar element of $\mathbb{B}$, and every Green's function of it is a central scalar times $e_t$. With the defining convention $(\Box-k_m^{2})G=-\delta^{(4)}$, matching the electromagnetism exercise at $k_m=0$, the momentum-space amplitude is $G=-(p^2-k_m^{2})^{-1}$ and the four standard prescriptions displace its two poles at $\omega=\pm\Omega_{\vec p}=\pm\sqrt{\vec p^2+k_m^{2}}$.</p>
-<p>The retarded Green's function is derived from its Fourier representation. The frequency contour gives $\mathrm{H}_{\mathrm{hvs}}(r'_t)\sin(\Omega_{\vec p}r'_t)/\Omega_{\vec p}$; the angular integral reduces the kernel to a radial Bessel integral; the substitution $p=(mc)\sinh u$ and a hyperbolic rotation evaluate it as $\frac{\pi}{2}J_0(k_m\sqrt{{r'_{t}}^2-r^2})$; and differentiation gives the closed form</p>
+<p>The retarded Green's function is derived from its Fourier representation. The frequency contour gives $\mathrm{H}_{\mathrm{hvs}}(r'_t)\sin(\Omega_{\vec p}r'_t)/\Omega_{\vec p}$; the angular integral reduces the kernel to a radial Bessel integral; the substitution $p=(m\,c)\sinh u$ and a hyperbolic rotation evaluate it as $\frac{\pi}{2}J_0(k_m\sqrt{{r'_{t}}^2-r^2})$; and differentiation gives the closed form</p>
 <p>$$
 G_R(\tilde R_\Phi)
 =\frac{\mathrm{H}_{\mathrm{hvs}}(r'_t)}{2\pi}\left[\delta(r_x^2)-\frac{k_m}{2\sqrt{-r_x^2}}\,J_1\!\left(k_m\sqrt{-r_x^2}\right)\mathrm{H}_{\mathrm{hvs}}(-r_x^2)\right],
@@ -438,7 +438,7 @@ $$</p>
 <td>Material coordinate, $\in\mathbb{B}_{\Phi}$</td>
 </tr>
 <tr>
-<td>$\tilde P=mc/k_m\,(i\omega/c\,e_t+\vec k)$</td>
+<td>$\tilde P=\frac{m\,c\,(i\omega/c\,e_t+\vec k)}{k_m}$</td>
 <td>Material four-wavevector, $\in\mathbb{B}_{\Phi}$</td>
 </tr>
 <tr>
@@ -463,7 +463,7 @@ $$</p>
 </tr>
 <tr>
 <td>$1/k_m$</td>
-<td>The mass length, $1/k_m$; its reciprocal $k_m=mc/\hbar$ is the inverse Compton wave number ($k_m=m$ in natural units)</td>
+<td>The mass length, $\hbar/(mc)$; its reciprocal $k_m=mc/\hbar$ is the inverse Compton wave number ($k_m=m$ in natural units)</td>
 </tr>
 <tr>
 <td>$\Omega_{\vec p}=\sqrt{\vec p^2+k_m^{2}}$</td>
