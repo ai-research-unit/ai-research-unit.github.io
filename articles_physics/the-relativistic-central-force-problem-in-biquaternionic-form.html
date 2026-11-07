@@ -119,7 +119,7 @@ $$</p>
 $$</p>
 <p>which is the algebraic criterion for a central force established in the companion article <em>The Central-Scalar Limit of Classical Mechanics in Biquaternionic Form</em>. The conservation of angular momentum is then the two-line computation of that article,</p>
 <p>$$
-d\vec L/dr'_t=\tfrac12[\vec r,d\vec p/dr'_t]=\tfrac12[\vec r,\vec F]=0 ,
+c\,d\vec L/dr'_t=\tfrac12[\vec r,c\,d\vec p/dr'_t]=\tfrac12[\vec r,\vec F]=0 ,
 $$</p>
 <p>with the proper time or the coordinate time giving the same vanishing because the two differ by the central factor $\gamma$. The motion is planar, in the plane orthogonal to $\vec L$.</p>
 <h3 id="the-mass-shell-relation-and-the-radial-momentum">The Mass-Shell Relation and the Radial Momentum</h3>
@@ -127,7 +127,7 @@ $$</p>
 <p>$$
 (E-V)^2=\vec p^2c^2+m^2c^4 .
 $$</p>
-<p>Decomposing the momentum into radial and tangential parts, $\vec p^2=p_r^2+L^2/r^2$ with $p_r=\gamma mdr/dr'_t$, the mass-shell relation becomes the <strong>radial constraint</strong></p>
+<p>Decomposing the momentum into radial and tangential parts, $\vec p^2=p_r^2+L^2/r^2$ with $p_r=\gamma\,m\,c\,dr/dr'_t$, the mass-shell relation becomes the <strong>radial constraint</strong></p>
 <p>$$
 (E-V)^2-m^2c^4 = c^2\left(p_r^2+\frac{L^2}{r^2}\right).
 $$</p>
@@ -136,10 +136,10 @@ $$</p>
 <h3 id="from-the-constraint-to-the-orbit-equation">From the Constraint to the Orbit Equation</h3>
 <p>Let $u=1/r$, so that the orbit is the function $u(\theta)$, and write every derivative with respect to $\theta$ explicitly. The radial momentum is related to $du/d\theta$ by a chain rule that is worth writing once:</p>
 <p>$$
-p_r=\gamma m\,dr/dr'_t=\gamma m\,\frac{dr}{d\theta}\,d\theta/dr'_t
+p_r=\gamma\,m\,c\,dr/dr'_t=\gamma\,m\,c\,\frac{dr}{d\theta}\,d\theta/dr'_t
 =\gamma m\left(-\frac{du/d\theta}{u^2}\right)\frac{L}{\gamma m r^2}=-L\,\frac{du}{d\theta} ,
 $$</p>
-<p>using $d\theta/dr'_t=L/(\gamma m r^2)$ from the definition of $L$. Substituting into the radial constraint,</p>
+<p>using $d\theta/dr'_t=L/(\gamma\,m\,c\,r^2)$ from the definition of $L$. Substituting into the radial constraint,</p>
 <p>$$
 (E-V)^2-m^2c^4 = c^2L^2\left(\left(\frac{du}{d\theta}\right)^2+u^2\right). \tag{1}
 $$</p>
@@ -159,7 +159,7 @@ $$</p>
 <p>$$
 \frac{d^2u}{d\theta^2}+u=-\frac{mF(1/u)}{L^2u^2},
 $$</p>
-<p>which is the equation of the companion article on the central-scalar limit. The angular momentum $L$ here is the relativistic angular momentum $\gamma mr^2d\theta/dr'_t$, not the non-relativistic $mr^2d\theta/dr'_t$.</p>
+<p>which is the equation of the companion article on the central-scalar limit. The angular momentum $L$ here is the relativistic angular momentum $\gamma\,m\,c\,r^2d\theta/dr'_t$, not the non-relativistic $m\,c\,r^2d\theta/dr'_t$.</p>
 <h3 id="what-the-relativistic-mass-changes">What the Relativistic Mass Changes</h3>
 <p>The substitution $m\to\gamma m$ is not a relabelling, and it is worth stating what it does. In the non-relativistic problem the right-hand side of Binet's equation is a function of $u$ alone, because $m$ and $L$ are constants. Relativistically it is a function of $u$ alone as well, but through the combination $(E-V)/c^2$, which varies along the orbit. The consequence is that the equation is no longer of the Kepler type except for the one force law for which the $u$-dependence cancels in the right way. That force law is the inverse-square force, and it is treated next.</p>
 <p>For a general power law $F=-\kappa r^{-n}$ the equation is nonlinear and the orbit is not a conic. The qualitative relativistic effects — a perihelion advance, a modification of the effective potential and the possible loss of a centrifugal barrier — are present for every central force, and the inverse-square case is the one that can be solved in closed form.</p>
@@ -365,7 +365,7 @@ $$</p>
 <td>Relativistic mass</td>
 </tr>
 <tr>
-<td>$p_r=\gamma m\,dr/dr'_t=-L\,du/d\theta$</td>
+<td>$p_r=\gamma\,m\,c\,dr/dr'_t=-L\,du/d\theta$</td>
 <td>Radial momentum; the chain-rule identity</td>
 </tr>
 <tr>
