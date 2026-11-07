@@ -80,7 +80,7 @@ The four-vectors of relativistic kinematics, and the constraints they satisfy, a
 The free particle is defined by the vanishing of the four-force,
 
 $$
-\tilde{K}_{\mathrm{f}} = \frac{d\tilde{P}}{d\tau} = 0 .
+\tilde{\mathcal F}_{\mathrm{frc}} = \frac{d\tilde{P}}{d\tau} = 0 .
 $$
 
 Since $\tilde{P} = m\tilde{V}$ and $m$ is constant, this says that the four-velocity is constant, $\tilde{V} = \tilde{V}_0$, and integrating once gives the straight worldline
@@ -94,7 +94,7 @@ with $\vec v$ a constant real vector. In words: the free particle moves with con
 Differentiating the constraint along the worldline expresses the orthogonality of the four-force to the four-momentum,
 
 $$
-\tilde{K}_{\mathrm{f}}\,\tilde{P}^{\natural} + \tilde{P}\,\tilde{K}_{\mathrm{f}}^{\natural} = 0 ,
+\tilde{\mathcal F}_{\mathrm{frc}}\,\tilde{P}^{\natural} + \tilde{P}\,\tilde{\mathcal F}_{\mathrm{frc}}^{\natural} = 0 ,
 $$
 
 which is the biquaternion form of $\sum_\mu\varepsilon_\mu f_\mu p_\mu = 0$. For the free particle both terms vanish separately; for a forced particle the identity says that a four-force can turn the four-momentum but cannot change its norm, and hence cannot change the rest mass.
@@ -254,7 +254,7 @@ The transcription is transparent under the isomorphism $\mathsf{M}_2$ of the alg
 | Four-velocity $v_\mu$ | $\tilde{V} = \gamma(ic\,e_t + \vec v)$ | $\mathbb{B}_{\Phi}$ |
 | Mass shell $\sum_\mu\varepsilon_\mu v_\mu v_\mu = -c^2$ | $\tilde{V}\tilde{V}^{\natural} = -c^2$ | constraint in $\mathbb{B}_{\Phi}$ |
 | Four-momentum $p_\mu = (E/c, \vec p)$ | $\tilde{P} = i(E/c)e_t + \vec p$ | $\mathbb{B}_{\Phi}$ |
-| Four-force $f_\mu$ | $\tilde{K}_{\mathrm{f}} = d\tilde{P}/d\tau$ | $\mathbb{B}_{\Phi}$ |
+| Four-force $f_\mu$ | $\tilde{\mathcal F}_{\mathrm{frc}} = d\tilde{P}/d\tau$ | $\mathbb{B}_{\Phi}$ |
 | Lorentz transformation $\Lambda_{\mu\nu}$ | rotor conjugation $\tilde U_{\mathrm{lor}}(\cdot)\tilde U_{\mathrm{lor}}{}^{*}$ | rotor in $\mathbb{B}$ |
 | Boost | $\tilde U_{\mathrm b} = \cosh\frac{\theta_{\mathrm{rpd}}}{2} + i\sinh\frac{\theta_{\mathrm{rpd}}}{2}\vec u_{\mathrm b}$ | $\mathbb{B}_{\Psi}$ |
 | Spatial rotation | $R(\cdot)R^{*}$ | $\mathbb{B}_{H}$ |
@@ -270,7 +270,7 @@ $$
 \tilde R_\Phi(r'_t) = i c r'_{t}\,e_t + r_{0x}\,\vec e_x+r_{0y}\,\vec e_y+r_{0z}\,\vec e_z + \vec v\,r'_t \in \mathbb{B}_{\Phi} ,
 $$
 
-with four-velocity $\tilde{V} = \gamma(ic\,e_t + \vec v)$ and four-momentum $\tilde{P} = m\tilde{V} = i(E/c)e_t + \vec p$, both in $\mathbb{B}_{\Phi}$, and constrained by the mass-shell relation $\tilde{P}\tilde{P}^{\natural} = -m^2c^2$. The free particle satisfies $\tilde{K}_{\mathrm{f}} = d\tilde{P}/d\tau = 0$, which is Newton's first law.
+with four-velocity $\tilde{V} = \gamma(ic\,e_t + \vec v)$ and four-momentum $\tilde{P} = m\tilde{V} = i(E/c)e_t + \vec p$, both in $\mathbb{B}_{\Phi}$, and constrained by the mass-shell relation $\tilde{P}\tilde{P}^{\natural} = -m^2c^2$. The free particle satisfies $\tilde{\mathcal F}_{\mathrm{frc}} = d\tilde{P}/d\tau = 0$, which is Newton's first law.
 
 Inertial frames are the unit-norm biquaternions $\tilde U_{\mathrm{lor}} \in SL(2,\mathbb{C})$, acting on the material sector by rotor conjugation $\tilde R_\Phi \mapsto \tilde U_{\mathrm{lor}}\tilde R_\Phi\tilde U_{\mathrm{lor}}{}^{*}$. The action is linear, preserves $\mathbb{B}_{\Phi}$ and preserves the biquaternion norm, and it commutes with the proper-time derivative, so the free-particle equation is form-invariant: this is the relativity principle. Compositions of frames compose as rotor products.
 
@@ -293,7 +293,7 @@ The free particle occupies only the material sector, carries no internal vector,
 | $\vec v$, $\vec V$ | Particle velocity; frame velocity |
 | $\tilde{V} = \gamma(ic\,e_t + \vec v)$ | Four-velocity, in $\mathbb{B}_{\Phi}$; $\tilde{V}\tilde{V}^{\natural} = -c^2$ |
 | $\tilde{P} = m\tilde{V} = i(E/c)e_t + \vec p$ | Four-momentum; $\tilde{P}\tilde{P}^{\natural} = -m^2c^2$ |
-| $\tilde{K}_{\mathrm{f}} = d\tilde{P}/d\tau$ | Four-force; $\tilde{K}_{\mathrm{f}} = 0$ for the free particle |
+| $\tilde{\mathcal F}_{\mathrm{frc}} = d\tilde{P}/d\tau$ | Four-force; $\tilde{\mathcal F}_{\mathrm{frc}} = 0$ for the free particle |
 | $\tilde U_{\mathrm{lor}} \in \mathbb{B}$, $\tilde U_{\mathrm{lor}}\tilde U_{\mathrm{lor}}{}^{\natural} = e_t$ | Lorentz rotor; frame transformation |
 | $\tilde R_\Phi \mapsto \tilde U_{\mathrm{lor}}\tilde R_\Phi\tilde U_{\mathrm{lor}}{}^{*}$ | Rotor conjugation (frame change) |
 | $\tilde U_{\mathrm b} = \cosh\frac{\theta_{\mathrm{rpd}}}{2} + i\sinh\frac{\theta_{\mathrm{rpd}}}{2}\vec u_{\mathrm b}$ | Boost rotor, in $\mathbb{B}_{\Psi}$; $\tanh\theta_{\mathrm{rpd}} = V/c$ |

@@ -41,9 +41,9 @@ defined modulo $2\pi$; the branch is stated where the argument is used, and the 
 | $\langle\tilde{Q}_1,\tilde{Q}_2\rangle=\mathrm{Sc}(\tilde{Q}_1\tilde{Q}_2)$ | plain | $P$ | $Q_t^2-Q_x^2-Q_y^2-Q_z^2$ | $\mathbb{C}$ | $(4,4)$ | complex cone |
 | $\langle\tilde{Q}_1,\tilde{Q}_2\rangle_{\natural}=\mathrm{Sc}(\tilde{Q}_1^{\natural}\tilde{Q}_2)$ | quaternionic | $N$ | $Q_t^2+Q_x^2+Q_y^2+Q_z^2$ | $\mathbb{C}$ | $(4,4)$ | multiplicative; zero-divisor cone |
 | $\langle\tilde{Q}_1,\tilde{Q}_2\rangle_{*}=\mathrm{Sc}(\tilde{Q}_1\tilde{Q}_2^{*})$ | Hermitian | $H$ | $\lvert Q_t\rvert^2+\lvert Q_x\rvert^2+\lvert Q_y\rvert^2+\lvert Q_z\rvert^2$ | $\mathbb{R}$ | $(8,0)$ | definite; topology |
-| $\langle\tilde{Q}_1,\tilde{Q}_2\rangle_{\natural*}=\mathrm{Sc}(\tilde{Q}_1^{\natural}\tilde{Q}_2^{*})$ | Krein | $K$ | $\lvert Q_t\rvert^2-\lvert Q_x\rvert^2-\lvert Q_y\rvert^2-\lvert Q_z\rvert^2$ | $\mathbb{R}$ | $(2,6)$ | indefinite |
+| $\langle\tilde{Q}_1,\tilde{Q}_2\rangle_{\natural*}=\mathrm{Sc}(\tilde{Q}_1^{\natural}\tilde{Q}_2^{*})$ | Krein | $\mathrm{Kr}$ | $\lvert Q_t\rvert^2-\lvert Q_x\rvert^2-\lvert Q_y\rvert^2-\lvert Q_z\rvert^2$ | $\mathbb{R}$ | $(2,6)$ | indefinite |
 
-**One letter, two arities.** The four also carry one letter each, $P$ for the plain, $N$ for the quaternionic, $H$ for the Hermitian and $K$ for the Krein, the letter naming the form with two arguments and the algebraic norm with one: $P(\tilde{Q}_1,\tilde{Q}_2)$ is the plain form and $P(\tilde{Q})$ the plain norm, and the same holds for the other three. The plain norm is written $P$ and not $B$, because $B$ is the complex modulus of the vector part, $B^{2}=Q_x^{2}+Q_y^{2}+Q_z^{2}$. The letters and the four qualified notions of a regular and a degenerate biquaternion are those of *The Four Forms and the Four Algebraic Norms over the Biquaternion Algebra*, §*Regular and Degenerate Biquaternions*.
+**One letter, two arities.** The four also carry one letter each, $P$ for the plain, $N$ for the quaternionic, $H$ for the Hermitian and $\mathrm{Kr}$ for the Krein, the letter naming the form with two arguments and the algebraic norm with one: $P(\tilde{Q}_1,\tilde{Q}_2)$ is the plain form and $P(\tilde{Q})$ the plain norm, and the same holds for the other three. The plain norm is written $P$ and not $B$, because $B$ is the complex modulus of the vector part, $B^{2}=Q_x^{2}+Q_y^{2}+Q_z^{2}$. The letters and the four qualified notions of a regular and a degenerate biquaternion are those of *The Four Forms and the Four Algebraic Norms over the Biquaternion Algebra*, §*Regular and Degenerate Biquaternions*.
 
 The quaternionic norm is the determinant in the $2\times2$ image and is the multiplicative one, vanishing exactly on the zero-divisor cone; the Hermitian norm is the definite one and carries the topology. The signature column is that of the realified form on the eight real parameters; on the material sector the restrictions are those stated above. Read on one argument the four are the plain norm, the Hermitian norm, the quaternionic norm and the Krein norm. The other sense of the word, the **topological norm**, is the square root of the definite one, $\lVert\tilde{Q}\rVert_E = \bigl(\langle\tilde{Q}\rangle_{*}\bigr)^{1/2}$, and it is *The Norm Defined by a Form*. The four products, their forms and their norms go together, one to a row:
 
@@ -52,9 +52,9 @@ The quaternionic norm is the determinant in the $2\times2$ image and is the mult
 | the general plain bilinear | $\langle\tilde{Q}_1,\tilde{Q}_2\rangle$ | $P$ | the plain norm $\langle\tilde{Q}\rangle$ |
 | the general quaternionic bilinear | $\langle\tilde{Q}_1,\tilde{Q}_2\rangle_{\natural}$ | $N$ | the quaternionic norm $\langle\tilde{Q}\rangle_{\natural}$ |
 | the general plain sesquilinear | $\langle\tilde{Q}_1,\tilde{Q}_2\rangle_{*}$ | $H$ | the Hermitian norm $\langle\tilde{Q}\rangle_{*}$ |
-| the general quaternionic sesquilinear | $\langle\tilde{Q}_1,\tilde{Q}_2\rangle_{\natural*}$ | $K$ | the Krein norm $\langle\tilde{Q}\rangle_{\natural*}$ |
+| the general quaternionic sesquilinear | $\langle\tilde{Q}_1,\tilde{Q}_2\rangle_{\natural*}$ | $\mathrm{Kr}$ | the Krein norm $\langle\tilde{Q}\rangle_{\natural*}$ |
 
-**The qualified regular and the qualified degenerate.** For a letter $Ξ$ of the four, a biquaternion is **$Ξ$-regular** when $Ξ(\tilde{Q})\neq0$ and **$Ξ$-degenerate** when $Ξ(\tilde{Q})=0$. Only $N$ decides invertibility: $\{N=0\}$ is the origin together with the zero divisors, so $N$-regular is the unit group and $N$-degenerate the non-units. $P$-degenerate and $K$-degenerate contain units, $P(e_t+\vec e_x)=K(e_t+\vec e_x)=0$ with $N(e_t+\vec e_x)=2$, and $H$-degenerate is the origin alone. The unqualified *regular* is the spectral one, $B^{2}\neq0$, of *The Spectrum*, so the letter is never omitted.
+**The qualified regular and the qualified degenerate.** For a letter $Ξ$ of the four, a biquaternion is **$Ξ$-regular** when $Ξ(\tilde{Q})\neq0$ and **$Ξ$-degenerate** when $Ξ(\tilde{Q})=0$. Only $N$ decides invertibility: $\{N=0\}$ is the origin together with the zero divisors, so $N$-regular is the unit group and $N$-degenerate the non-units. $P$-degenerate and $\mathrm{Kr}$-degenerate contain units, $P(e_t+\vec e_x)=\mathrm{Kr}(e_t+\vec e_x)=0$ with $N(e_t+\vec e_x)=2$, and $H$-degenerate is the origin alone. The unqualified *regular* is the spectral one, $B^{2}\neq0$, of *The Spectrum*, so the letter is never omitted.
 
 ### The Unitary Convention
 
@@ -86,7 +86,7 @@ and the other three norms of the layer are not unit-element conditions. Their le
 | $P$ | $\langle\tilde Q\rangle$ | $Q_t^{2}-Q_x^{2}-Q_y^{2}-Q_z^{2}=e_t$ | the complex hyperboloid of the plain norm | no |
 | $N$ | $\langle\tilde Q\rangle_{\natural}$ | $Q_t^{2}+Q_x^{2}+Q_y^{2}+Q_z^{2}=e_t$ | $\mathbb{B}^{\times}_{1}$, the norm-one units | **yes** |
 | $H$ | $\langle\tilde Q\rangle_{*}$ | $\lvert Q_t\rvert^{2}+\lvert Q_x\rvert^{2}+\lvert Q_y\rvert^{2}+\lvert Q_z\rvert^{2}=1$ | the unit sphere of the Hermitian norm | no |
-| $K$ | $\langle\tilde Q\rangle_{\natural*}$ | $\lvert Q_t\rvert^{2}-\lvert Q_x\rvert^{2}-\lvert Q_y\rvert^{2}-\lvert Q_z\rvert^{2}=1$ | the indefinite level set of the Krein norm | no |
+| $\mathrm{Kr}$ | $\langle\tilde Q\rangle_{\natural*}$ | $\lvert Q_t\rvert^{2}-\lvert Q_x\rvert^{2}-\lvert Q_y\rvert^{2}-\lvert Q_z\rvert^{2}=1$ | the indefinite level set of the Krein norm | no |
 
 **Only $N$ decides invertibility**, which is the reason it is the norm of the glyph: $\{N=0\}$ is the origin together with the zero divisors, while the other three degenerate sets contain units. The phrase "the norm in view" belongs to the polar decompositions, where the author names the norm in the text and takes its level set; it is not a licence to read one glyph under four norms.
 
@@ -116,7 +116,7 @@ A boost is a unit element and is not $*$-unitary: $\tilde U_{\mathrm b}$ is $N$-
 $$
 \tilde U_{\mathrm b}=\cosh\frac{\theta_{\mathrm{rpd}}}{2}\,e_t+i\sinh\frac{\theta_{\mathrm{rpd}}}{2}\,\vec u_{\mathrm b},
 $$
-a Hermitian element of norm one; it carries the glyph $\tilde U$ of every unit element. It is the **frame rotor**; the four-vector factor $\mathcal B=\tilde U_{\mathrm b}^{-2}$ is a different object, and §*The Polar Word and the Three Pairings* separates the four objects called a boost. Where an infinitesimal generator is needed it is read from the exponential as the pure element $\tfrac12 i\vec u_{\mathrm b}$, and the Lorentz brackets are written on the pure elements $\tfrac12\vec e_k$ and $\tfrac12 i\vec e_k$. No letter $K$ is introduced for the Lorentz boost.
+a Hermitian element of norm one; it carries the glyph $\tilde U$ of every unit element. It is the **frame rotor**; the four-vector factor $\mathcal B=\tilde U_{\mathrm b}^{-2}$ is a different object, and §*The Polar Word and the Three Pairings* separates the four objects called a boost. Where an infinitesimal generator is needed it is read from the exponential as the pure element $\tfrac12 i\vec u_{\mathrm b}$, and the Lorentz brackets are written on the pure elements $\tfrac12\vec e_k$ and $\tfrac12 i\vec e_k$. No letter $\mathrm{Kr}$ is introduced for the Lorentz boost.
 
 ## The Polar Word and the Three Pairings
 
@@ -222,7 +222,7 @@ The three pairings are three bracketings of the same word, and their domains dif
 
 ## Summary
 
-Each form has a norm, and each norm takes one letter, $P$, $N$, $H$ or $K$, used with two arguments for the form and with one for the norm. Regular and degenerate are qualified by the letter, because only the $N$ pair gives the unit partition, and the unqualified word regular is spectral. Norm one is fixed layer by layer by the unitary convention, and for the biquaternion layer it is $N$ and no other; the star-unitary condition is a different condition, and only $N$ decides invertibility. The letter $u$ names a unit element and nothing else.
+Each form has a norm, and each norm takes one letter, $P$, $N$, $H$ or $\mathrm{Kr}$, used with two arguments for the form and with one for the norm. Regular and degenerate are qualified by the letter, because only the $N$ pair gives the unit partition, and the unqualified word regular is spectral. Norm one is fixed layer by layer by the unitary convention, and for the biquaternion layer it is $N$ and no other; the star-unitary condition is a different condition, and only $N$ decides invertibility. The letter $u$ names a unit element and nothing else.
 
 The polar word is $\tilde Q=r\,e^{i\alpha}\tilde U_{\mathrm b}\tilde u_{\mathrm r}$ on the complement of the zero-divisor cone. It is a section of the word map, not of the exponential. The modulus is the square root of the quaternionic norm, not of the Hermitian one; the Hermitian norm is the topological norm and never enters the existence condition. Four objects carry the word *boost*, and the factor of two between the frame rotor and the four-vector factor is the most common error in the corpus; for a four-momentum $\Rho=imc$, $\Theta=-i\tilde{Ξ}_{\mathrm{sp}}$ and the word parameter is $\tilde{Ξ}_{\mathrm{sp},w}=2\tilde{Ξ}_{\mathrm{sp}}$.
 
@@ -232,7 +232,7 @@ The trace is the trace of the $2\times2$ image, $\operatorname{Tr}\tilde Q=2Q_t$
 
 | Symbol | Meaning |
 |---|---|
-| $P$, $N$, $H$, $K$ | The four norms, the diagonals of the plain, quaternionic, Hermitian and Krein forms |
+| $P$, $N$, $H$, $\mathrm{Kr}$ | The four norms, the diagonals of the plain, quaternionic, Hermitian and Krein forms |
 | $N(\tilde Q)=\tilde Q\tilde Q^{\natural}$ | The biquaternion norm, the multiplicative one; its zero set is the zero-divisor cone |
 | $H(\tilde Q)=\mathrm{Sc}(\tilde Q\tilde Q^{*})$ | The Hermitian norm, real and non-negative |
 | $Ξ$-regular, $Ξ$-degenerate | $Ξ(\tilde Q)\neq0$ and $Ξ(\tilde Q)=0$; only the $N$ pair is the unit partition |

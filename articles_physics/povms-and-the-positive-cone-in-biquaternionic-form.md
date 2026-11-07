@@ -145,16 +145,16 @@ A **projection-valued measure** is the special case in which every $\tilde{E}_y$
 A general measurement is specified not only by the outcome probabilities but by the state left behind. If the effect is written in a Kraus form
 
 $$
-\tilde{E}_y = \tilde{K}_y^{*}\tilde{K}_y , \qquad \tilde{K}_y\in\mathbb{B},
+\tilde{E}_y = \tilde M_{\mathrm{kraus},y}^{*}\tilde M_{\mathrm{kraus},y} , \qquad \tilde M_{\mathrm{kraus},y}\in\mathbb{B},
 $$
 
-then the unnormalized post-measurement state is $\tilde{K}_y\tilde{Ϛ}\tilde{K}_y^{*}$ and the normalized state is
+then the unnormalized post-measurement state is $\tilde M_{\mathrm{kraus},y}\tilde{Ϛ}\tilde M_{\mathrm{kraus},y}^{*}$ and the normalized state is
 
 $$
-\tilde{Ϛ}_y = \frac{\tilde{K}_y\tilde{Ϛ}\tilde{K}_y^{*}}{2\,\mathrm{Sc}(\tilde{K}_y\tilde{Ϛ}\tilde{K}_y^{*})},
+\tilde{Ϛ}_y = \frac{\tilde M_{\mathrm{kraus},y}\tilde{Ϛ}\tilde M_{\mathrm{kraus},y}^{*}}{2\,\mathrm{Sc}(\tilde M_{\mathrm{kraus},y}\tilde{Ϛ}\tilde M_{\mathrm{kraus},y}^{*})},
 $$
 
-The outcome probability is $p_y=\mathrm{Sc}(\tilde{K}_y\tilde{Ϛ}\tilde{K}_y^{*})/\mathrm{Sc}(\tilde{Ϛ})=2\,\mathrm{Sc}(\tilde{K}_y\tilde{Ϛ}\tilde{K}_y^{*}) = 2\,\mathrm{Sc}(\tilde{Ϛ}\tilde{E}_y^{*})=2\,\mathrm{Sc}(\tilde{Ϛ}\tilde{E}_y)$, whose $2\times2$ reading at normalisation is $\operatorname{Tr}(\tilde{Ϛ}\tilde{E}_y)$, and the resolution of the identity is $\sum_y\tilde{K}_y^{*}\tilde{K}_y = e_t$. The measurement is therefore an **instrument**: a family of completely positive maps indexed by the outcome, one of which occurs. This is the measurement side of the channel formalism of the companion article *Quantum Channels and the Reversible/Irreversible Dichotomy*; a measurement followed by discarding the outcome is the channel $Ξ(\tilde{Ϛ}) = \sum_y\tilde{K}_y\tilde{Ϛ}\tilde{K}_y^{*}$.
+The outcome probability is $p_y=\mathrm{Sc}(\tilde M_{\mathrm{kraus},y}\tilde{Ϛ}\tilde M_{\mathrm{kraus},y}^{*})/\mathrm{Sc}(\tilde{Ϛ})=2\,\mathrm{Sc}(\tilde M_{\mathrm{kraus},y}\tilde{Ϛ}\tilde M_{\mathrm{kraus},y}^{*}) = 2\,\mathrm{Sc}(\tilde{Ϛ}\tilde{E}_y^{*})=2\,\mathrm{Sc}(\tilde{Ϛ}\tilde{E}_y)$, whose $2\times2$ reading at normalisation is $\operatorname{Tr}(\tilde{Ϛ}\tilde{E}_y)$, and the resolution of the identity is $\sum_y\tilde M_{\mathrm{kraus},y}^{*}\tilde M_{\mathrm{kraus},y} = e_t$. The measurement is therefore an **instrument**: a family of completely positive maps indexed by the outcome, one of which occurs. This is the measurement side of the channel formalism of the companion article *Quantum Channels and the Reversible/Irreversible Dichotomy*; a measurement followed by discarding the outcome is the channel $Ξ(\tilde{Ϛ}) = \sum_y\tilde M_{\mathrm{kraus},y}\tilde{Ϛ}\tilde M_{\mathrm{kraus},y}^{*}$.
 
 ### The Polar Form of an Effect
 
@@ -240,7 +240,7 @@ Collecting the structure, a measurement in the framework is a resolution of the 
 - **Effects** are the elements of the operator interval $[0,e_t]$, i.e. the cone intersected with its reflection through $\tfrac12 e_t$; in coefficients, $|\vec a|\leq\min(a_t,1-a_t)$.
 - **POVMs** are resolutions of the identity by effects; **PVMs** are the resolutions by idempotents, i.e. by extreme effects.
 - **Probabilities** are the normalised Hermitian form $p_y=\langle\tilde{Ϛ},\tilde E_y\rangle_{*}/\langle\tilde{Ϛ},e_t\rangle_{*}$, whose final reading at normalisation is the trace $p_y = \operatorname{Tr}(\tilde{Ϛ}\tilde{E}_y^{*})$; the pairing is the one under which the cone is self-dual.
-- **Post-measurement states** are the Kraus images $\tilde{K}_y\tilde{Ϛ}\tilde{K}_y^{*}$, normalized.
+- **Post-measurement states** are the Kraus images $\tilde M_{\mathrm{kraus},y}\tilde{Ϛ}\tilde M_{\mathrm{kraus},y}^{*}$, normalized.
 
 The general measurement is a convex decomposition of the identity into effects that are not extreme. The idempotents remain the extreme effects, and the projective measurement remains the extreme case; what the general measurement adds is the ability to have more outcomes than the dimension of the module, which is exactly what is needed for tasks such as state discrimination with more than two candidate states.
 
@@ -299,10 +299,10 @@ and the cone is self-dual with respect to the Hermitian form, $2\langle\tilde R_
 | $\mathrm{ext}[0,e_t] = \{\text{idempotents}\}$ | Extreme effects |
 | $\{\tilde{E}_y\}$, $\tilde{E}_y\ge0$, $\sum_y\tilde{E}_y = e_t$ | POVM |
 | $p_y = 2\langle\tilde{Ϛ},\tilde{E}_y\rangle_{*}$ | Born rule for a POVM; $2\times2$ reading $\operatorname{Tr}(\tilde{Ϛ}\tilde{E}_y^{*})$ |
-| $\tilde{E}_y = \tilde{K}_y^{*}\tilde{K}_y$ | Kraus form of an effect |
+| $\tilde{E}_y = \tilde M_{\mathrm{kraus},y}^{*}\tilde M_{\mathrm{kraus},y}$ | Kraus form of an effect |
 | $\tilde M_{\mathrm{kraus},y}=\tilde R_\Psi_{\mathrm{pos},y}\tilde Q_{\mathrm{p},y}$, $\tilde R_\Psi_{\mathrm{pos},y}=\sqrt{\tilde M_{\mathrm{kraus},y}\tilde M_{\mathrm{kraus},y}^{*}}$ | Polar form of the Kraus operator; $\tilde R_\Psi_{\mathrm{pos},y}\ge0$, $\tilde Q_{\mathrm{p},y}$ a partial isometry |
 | $\tilde E_y=\tilde Q_{\mathrm{p},y}^{*}\tilde R_\Psi_{\mathrm{pos},y}^{2}\tilde Q_{\mathrm{p},y}$ | Effect as the backaction-conjugated squared strength |
-| $\tilde{Ϛ}_y = \tilde{K}_y\tilde{Ϛ}\tilde{K}_y^{*}/p_y$ | Post-measurement state |
+| $\tilde{Ϛ}_y = \tilde M_{\mathrm{kraus},y}\tilde{Ϛ}\tilde M_{\mathrm{kraus},y}^{*}/p_y$ | Post-measurement state |
 | $\tilde{E}_y = V^\dagger\tilde{F}_yV$ | Naimark dilation |
 | $\tilde{E}_k = \tfrac23\tilde\Pi_1(\vec u_k)$ | Trine POVM |
 | $\langle\tilde{Q}_1,\tilde{Q}_2\rangle$ | the general plain bilinear form, the scalar part of the general plain bilinear product, $\mathrm{Sc}(\tilde{Q}_1\tilde{Q}_2)$ |

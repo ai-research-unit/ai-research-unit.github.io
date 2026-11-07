@@ -60,7 +60,7 @@ $$
 
 So a gate maps states to states.
 
-**The gate is a channel of Kraus rank one.** In the language of the companion article on quantum channels, $Ξ_{\tilde Q}$ has the single Kraus operator $\tilde{K} = \tilde Q$ with $\tilde{K}^{*}\tilde{K} = e_t$. It is therefore completely positive and trace preserving, and it is exactly the class of channels that are **invertible within the channels**, with inverse $Ξ^{-1}_{\tilde Q} = Ξ_{\tilde Q^{*}}$ (whose Kraus operator is $\tilde Q^{*}$); it is also exactly the class that **preserves purity**, $\mathrm{Tr}(Ξ_{\tilde Q}(\tilde{Ϛ})^2) = \mathrm{Tr}(\tilde{Ϛ}^2)$. A gate is a reversible process, and conversely every reversible process of the informational sector is a gate.
+**The gate is a channel of Kraus rank one.** In the language of the companion article on quantum channels, $Ξ_{\tilde Q}$ has the single Kraus operator $\tilde M_{\mathrm{kraus}} = \tilde Q$ with $\tilde M_{\mathrm{kraus}}^{*}\tilde M_{\mathrm{kraus}} = e_t$. It is therefore completely positive and trace preserving, and it is exactly the class of channels that are **invertible within the channels**, with inverse $Ξ^{-1}_{\tilde Q} = Ξ_{\tilde Q^{*}}$ (whose Kraus operator is $\tilde Q^{*}$); it is also exactly the class that **preserves purity**, $\mathrm{Tr}(Ξ_{\tilde Q}(\tilde{Ϛ})^2) = \mathrm{Tr}(\tilde{Ϛ}^2)$. A gate is a reversible process, and conversely every reversible process of the informational sector is a gate.
 
 ### Why Matrix-Unitarity and Not Unit Norm
 
@@ -423,7 +423,7 @@ The output is not a product of idempotents; its partial trace is $\tfrac12 e_t$,
 
 The read list for this article closes with *Quantum Channels and the Reversible/Irreversible Dichotomy*, and the contrast between the two is the conceptual content of the gate formalism.
 
-A **state map** is a completely positive, trace-preserving map on $\mathbb{B}_{\Psi}$, extended complex-linearly to $\mathbb{B} = \mathbb{B}_{\Psi} \oplus \mathbb{B}_{\Phi}$ and written in Kraus form $Ξ(\tilde{Ϛ}) = \sum_l \tilde{K}_l\tilde{Ϛ}\tilde{K}_l^{*}$ with $\sum_l\tilde{K}_l^{*}\tilde{K}_l = e_t$. The dichotomy is:
+A **state map** is a completely positive, trace-preserving map on $\mathbb{B}_{\Psi}$, extended complex-linearly to $\mathbb{B} = \mathbb{B}_{\Psi} \oplus \mathbb{B}_{\Phi}$ and written in Kraus form $Ξ(\tilde{Ϛ}) = \sum_l \tilde M_{\mathrm{kraus},l}\tilde{Ϛ}\tilde M_{\mathrm{kraus},l}^{*}$ with $\sum_l\tilde M_{\mathrm{kraus},l}^{*}\tilde M_{\mathrm{kraus},l} = e_t$. The dichotomy is:
 
 $$
 \text{reversible} \quad\Longleftrightarrow\quad \text{Kraus rank one} \quad\Longleftrightarrow\quad Ξ = Ξ_{\tilde Q}\ \text{for a }{}^{*}\text{-unitary } \tilde Q \quad\Longleftrightarrow\quad Ξ \text{ is a gate.}
@@ -523,7 +523,7 @@ The **contrast with the irreversible channels** is the Kraus-rank dichotomy. A c
 | $\tilde{Q}_{\tilde Q}=\tilde\Pi_1\otimes e_t+\tilde\Pi_2\otimes\tilde Q$ | Controlled gate |
 | $\mathrm{CNOT}=\tilde\Pi_1(\vec u_z)\otimes e_t+\tilde\Pi_2(\vec u_z)\otimes(i\vec e_x)$ | Controlled-$X$ |
 | $\mathrm{SWAP}=\tfrac12(e_t\otimes e_t-\sum_k \vec e_k\otimes \vec e_k)$ | Swap gate |
-| $Ξ(\tilde{Ϛ})=\sum_l\tilde{K}_l\tilde{Ϛ}\tilde{K}_l^{*}$ | Kraus representation of a channel |
+| $Ξ(\tilde{Ϛ})=\sum_l\tilde M_{\mathrm{kraus},l}\tilde{Ϛ}\tilde M_{\mathrm{kraus},l}^{*}$ | Kraus representation of a channel |
 | $Ξ_{\mathrm{deph},p}$ | Dephasing channel (irreversible, not a gate) |
 | $\langle\tilde{Q}_1,\tilde{Q}_2\rangle$ | the general plain bilinear form, the scalar part of the general plain bilinear product, $\mathrm{Sc}(\tilde{Q}_1\tilde{Q}_2)$ |
 | $\langle\tilde{Q}_1,\tilde{Q}_2\rangle_{\natural}$ | the general quaternionic bilinear form, $\mathrm{Sc}(\tilde{Q}_1^{\natural}\tilde{Q}_2)$; on the diagonal $\langle\tilde{Q}_2,\tilde{Q}_2\rangle_{\natural}=\langle\tilde{Q}_2\rangle_{\natural}$ |

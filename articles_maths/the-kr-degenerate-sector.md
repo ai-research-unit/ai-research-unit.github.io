@@ -1,4 +1,4 @@
-# __The K-Degenerate Sector__
+# __The Kr-Degenerate Sector__
 
 ## Introduction
 
@@ -9,7 +9,7 @@ $$
 =\{\tilde Q:|Q_t|=\lVert\vec Q\rVert_E\}.
 $$
 
-It is a real cone of real codimension one, smooth off its apex, and its partner is *The K-Regular Sector*. The two articles carry the partition of *K-Regularity and Degeneracy in the Biquaternion Algebra*; the spectral condition is not used as a subdivision, and §*Why There Is No Spectral Split* of that article gives the four reasons.
+It is a real cone of real codimension one, smooth off its apex, and its partner is *The Kr-Regular Sector*. The two articles carry the partition of *Kr-Regularity and Degeneracy in the Biquaternion Algebra*; the spectral condition is not used as a subdivision, and §*Why There Is No Spectral Split* of that article gives the four reasons.
 
 The sector is **not homogeneous algebraically**. It splits by the algebraic norm into the **doubly null set** $\mathcal K_{\mathrm d}=\mathcal K\cap\mathcal N$, which is the Peirce lines together with the origin, and the **isotropic units** $\mathcal K_{\mathrm u}=\mathcal K\setminus\mathcal K_{\mathrm d}$. That split is the trace of the algebraic partition, zero divisors against units, and it is the only refinement of the sector that the corpus uses.
 
@@ -47,7 +47,7 @@ Its elements are **isotropic**; the non-zero ones are the **Krein-null** element
 
 *Proof.* (i) $\iff$ (ii) is the coordinate form of the norm. On the complex line the form is $\lambda\mapsto|\lambda|^2\langle\tilde Q\rangle_{\natural*}$, which vanishes identically exactly when $\langle\tilde Q\rangle_{\natural*}=0$, and then the line is its own radical: this is (ii) $\iff$ (iii) $\iff$ (v). The real plane is the real space of the complex line, and the real form is the real part of the Hermitian one, so its radical is the real space of the complex radical: (iii) $\iff$ (iv).
 
-**Corollary (the Krein sign on a null line).** A null line is neither positive nor negative definite: it is degenerate, and its radical is the line itself. This is the line criterion of *K-Regularity and Degeneracy in the Biquaternion Algebra*, §*Krein Orthogonality and the Complement*, read at the value zero.
+**Corollary (the Krein sign on a null line).** A null line is neither positive nor negative definite: it is degenerate, and its radical is the line itself. This is the line criterion of *Kr-Regularity and Degeneracy in the Biquaternion Algebra*, §*Krein Orthogonality and the Complement*, read at the value zero.
 
 **Corollary (the scalar part never vanishes off the origin).** Every non-zero element of $\mathcal K$ has $Q_t\neq0$.
 
@@ -226,7 +226,7 @@ The pair of witnesses is $e_t+\vec e_x$, of pair $(0,2)$, and $e_t+i\vec e_x$, o
 
 **Corollary (the sector straddles the algebraic partition).** The null set is neither contained in the unit group nor in the zero-divisor set: it meets both, and its two strata are exactly the two intersections. The Krein norm alone cannot see the difference, since it vanishes on both; the algebraic norm is the invariant that separates them.
 
-**Remark (the equality case).** The doubly null set is the equality case of the inequality of *K-Regularity and Degeneracy in the Biquaternion Algebra*, §*The degeneracy case: the null set*: an algebraic-null element has non-positive Krein norm, and it is Krein-null exactly on the Peirce lines, together with the origin. So the closed negative half-space $\{\langle\cdot\rangle_{\natural*}\le0\}$ contains the whole zero-divisor set, and the doubly null set is where the two cones touch.
+**Remark (the equality case).** The doubly null set is the equality case of the inequality of *Kr-Regularity and Degeneracy in the Biquaternion Algebra*, §*The degeneracy case: the null set*: an algebraic-null element has non-positive Krein norm, and it is Krein-null exactly on the Peirce lines, together with the origin. So the closed negative half-space $\{\langle\cdot\rangle_{\natural*}\le0\}$ contains the whole zero-divisor set, and the doubly null set is where the two cones touch.
 
 ## Comparison with the Regular Sector
 
@@ -293,8 +293,8 @@ The sector is the light cone of the Krein form. It is a single orbit of the isom
 
 ## Further Reading
 
-- [The K-Regular Sector](the-k-regular-sector.html), for the positive and negative regions and their geometry.
-- [K-Regularity and Degeneracy in the Biquaternion Algebra](k-regularity-and-degeneracy-in-the-biquaternion-algebra.html), for the partition, the line criterion, the Krein cone, the two partitions of the algebra, and the four reasons why no spectral split is available.
+- [The Kr-Regular Sector](the-kr-regular-sector.html), for the positive and negative regions and their geometry.
+- [Kr-Regularity and Degeneracy in the Biquaternion Algebra](kr-regularity-and-degeneracy-in-the-biquaternion-algebra.html), for the partition, the line criterion, the Krein cone, the two partitions of the algebra, and the four reasons why no spectral split is available.
 - [The Krein Level Sets and the Hyperbolic Structure](the-krein-level-sets-and-the-hyperbolic-structure.html), for the level sets, the null quadric and the complex hyperbolic ball.
 - [The Krein Isometry Group and Its Cartan Decomposition](the-krein-isometry-group-and-its-cartan-decomposition.html), for the group $\mathrm{U}(1,3)$ and its transitive action.
 - [N-Regularity and N-Degeneracy in the Biquaternion Algebra](n-regularity-and-n-degeneracy-in-the-biquaternion-algebra.html), for the algebraic norm, the unit group and the zero-divisor cone.

@@ -261,7 +261,7 @@ $$
 
 Each is an effect, they sum to $e_t$, and no two are orthogonal; the probabilities are $p_k=\tfrac13(1+\vec u_k\cdot\vec r)$ with $\sum_kp_k=1$. The normalised Hermitian form thus covers general measurement statistics unchanged. Non-projective measurements are not exotic: they are needed for tasks such as unambiguous discrimination of non-orthogonal states, and the effect formalism is the algebraic home of that possibility.
 
-The normalised Hermitian form gives measurement **statistics**, not the post-measurement state; the update requires Kraus operators $\tilde{K}_i$ with $\sum_i\tilde{K}_i^{*}\tilde{K}_i=e_t$, treated in the companion article on quantum channels, and every POVM with $k$ outcomes has a Neumark dilation to a projective measurement on $\mathbb{B}\otimes_\mathbb{C}M_k(\mathbb{C})\cong M_{2k}(\mathbb{C})$, the article's two- and three-outcome examples living inside $\mathbb{B}\otimes_\mathbb{C}\mathbb{B}\cong M_4(\mathbb{C})$.
+The normalised Hermitian form gives measurement **statistics**, not the post-measurement state; the update requires Kraus operators $\tilde M_{\mathrm{kraus},i}$ with $\sum_i\tilde M_{\mathrm{kraus},i}^{*}\tilde M_{\mathrm{kraus},i}=e_t$, treated in the companion article on quantum channels, and every POVM with $k$ outcomes has a Neumark dilation to a projective measurement on $\mathbb{B}\otimes_\mathbb{C}M_k(\mathbb{C})\cong M_{2k}(\mathbb{C})$, the article's two- and three-outcome examples living inside $\mathbb{B}\otimes_\mathbb{C}\mathbb{B}\cong M_4(\mathbb{C})$.
 
 ## Comparison with the Hilbert-Space Statement
 
@@ -349,7 +349,7 @@ The comparison with the standard statement is exact, because $\mathbb{B}\cong M_
 | $\langle\tilde\Pi(\vec u_x),\tilde\Pi(\vec u_y)\rangle_{*}/\langle\tilde\Pi,e_t\rangle_{*} = \tfrac{1}{2}(1+\vec u_x\cdot\vec u_y) = \cos^2(\theta/2)$ | Transition probability; in the $2\times2$ image $\mathrm{Tr}(\tilde\Pi\tilde\Pi_{\mathrm{p}}^{*})$ |
 | $\iota: e_t\mapsto I_2$, $\vec e_\mu\mapsto -i\sigma_\mu$ | Isomorphism $\mathbb{B}\to M_2(\mathbb{C})$ |
 | $\mathrm{tr}\circ\iota = \mathrm{Tr}$ | Trace correspondence |
-| $\tilde{K}_i$, $\sum_i\tilde{K}_i^{*}\tilde{K}_i = e_t$ | Kraus operators (measurement update) |
+| $\tilde M_{\mathrm{kraus},i}$, $\sum_i\tilde M_{\mathrm{kraus},i}^{*}\tilde M_{\mathrm{kraus},i} = e_t$ | Kraus operators (measurement update) |
 | $\langle\tilde{Q}_1,\tilde{Q}_2\rangle$ | the general plain bilinear form, the scalar part of the general plain bilinear product, $\mathrm{Sc}(\tilde{Q}_1\tilde{Q}_2)$ |
 | $\langle\tilde{Q}_1,\tilde{Q}_2\rangle_{*}$ | the Hermitian form, $\mathrm{Sc}(\tilde{Q}_1\tilde{Q}_2^{*})$, the probability pairing; on the diagonal $\langle\tilde{Q}_2,\tilde{Q}_2\rangle_{*}=\sum_\mu\lvert Q_{2\mu}\rvert^{2}\ge0$ |
 

@@ -10,9 +10,9 @@ The order is: the norm reading of the four letters, the qualified regular and de
 
 ## The Norm Convention
 
-**One letter, two arities.** The four letters $P$, $N$, $H$ and $K$ fixed in *Product and Form Conventions* name each form with two arguments and the corresponding algebraic norm with one: $P(\tilde Q)$ is the plain norm, $N(\tilde Q)$ the quaternionic, $H(\tilde Q)$ the Hermitian and $K(\tilde Q)$ the Krein, and the bracket of the same subscript does the same. This article reads that second arity.
+**One letter, two arities.** The four letters $P$, $N$, $H$ and $\mathrm{Kr}$ fixed in *Product and Form Conventions* name each form with two arguments and the corresponding algebraic norm with one: $P(\tilde Q)$ is the plain norm, $N(\tilde Q)$ the quaternionic, $H(\tilde Q)$ the Hermitian and $\mathrm{Kr}(\tilde Q)$ the Krein, and the bracket of the same subscript does the same. This article reads that second arity.
 
-**The qualified regular and the qualified degenerate.** In $\mathbb{B}$, for a letter $\Phi$ of the four, a biquaternion is **$\Phi$-regular** when $\Phi(\tilde Q)\neq0$ and **$\Phi$-degenerate** when $\Phi(\tilde Q)=0$. Only $N$ decides invertibility: $\{N=0\}$ is the origin together with the zero divisors, so $\natural$-regular is the unit group and $\natural$-degenerate the non-units. $P$-degenerate and $K$-degenerate contain units, $P(e_t+\vec e_x)=K(e_t+\vec e_x)=0$ with $N(e_t+\vec e_x)=2$, and $H$-degenerate is the origin alone. The unqualified *regular* is the spectral one, $B^{2}\neq0$, of *The Spectrum*, so the letter is never omitted.
+**The qualified regular and the qualified degenerate.** In $\mathbb{B}$, for a letter $\Phi$ of the four, a biquaternion is **$\Phi$-regular** when $\Phi(\tilde Q)\neq0$ and **$\Phi$-degenerate** when $\Phi(\tilde Q)=0$. Only $N$ decides invertibility: $\{N=0\}$ is the origin together with the zero divisors, so $\natural$-regular is the unit group and $\natural$-degenerate the non-units. $P$-degenerate and $\mathrm{Kr}$-degenerate contain units, $P(e_t+\vec e_x)=\mathrm{Kr}(e_t+\vec e_x)=0$ with $N(e_t+\vec e_x)=2$, and $H$-degenerate is the origin alone. The unqualified *regular* is the spectral one, $B^{2}\neq0$, of *The Spectrum*, so the letter is never omitted.
 
 ### The Six Layer Tables
 
@@ -133,7 +133,7 @@ and the other three norms of the layer are not unit-element conditions. Their le
 | $P$ | $\langle\tilde Q\rangle$ | $Q_t^{2}-Q_x^{2}-Q_y^{2}-Q_z^{2}=e_t$ | the complex hyperboloid of the plain norm | no |
 | $N$ | $\langle\tilde Q\rangle_{\natural}$ | $Q_t^{2}+Q_x^{2}+Q_y^{2}+Q_z^{2}=e_t$ | $\mathbb{B}^{\times}_{1}$, the norm-one units | **yes** |
 | $H$ | $\langle\tilde Q\rangle_{*}$ | $\lvert Q_t\rvert^{2}+\lvert Q_x\rvert^{2}+\lvert Q_y\rvert^{2}+\lvert Q_z\rvert^{2}=1$ | the unit sphere of the Hermitian norm | no |
-| $K$ | $\langle\tilde Q\rangle_{\natural*}$ | $\lvert Q_t\rvert^{2}-\lvert Q_x\rvert^{2}-\lvert Q_y\rvert^{2}-\lvert Q_z\rvert^{2}=1$ | the indefinite level set of the Krein norm | no |
+| $\mathrm{Kr}$ | $\langle\tilde Q\rangle_{\natural*}$ | $\lvert Q_t\rvert^{2}-\lvert Q_x\rvert^{2}-\lvert Q_y\rvert^{2}-\lvert Q_z\rvert^{2}=1$ | the indefinite level set of the Krein norm | no |
 
 **Only $N$ decides invertibility**, which is the reason it is the norm of the glyph: $\{N=0\}$ is the origin together with the zero divisors, while the other three degenerate sets contain units. The phrase "the norm in view" belongs to the polar decompositions, where the author names the norm in the text and takes its level set; it is not a licence to read one glyph under four norms.
 
@@ -165,7 +165,7 @@ Outside them the letter keeps a single shape for a single meaning, and the font 
 
 ## Summary
 
-The four letters $P$, $N$, $H$ and $K$ name the four algebraic norms with one argument, beside the four forms with two. A biquaternion is **$\Phi$-regular** when $\Phi(\tilde Q)\neq0$ and **$\Phi$-degenerate** when $\Phi(\tilde Q)=0$; only $N$ decides invertibility, so the $N$-regular elements are the units and the $N$-degenerate ones the non-units, while the other three pairs are not a partition into invertible and singular.
+The four letters $P$, $N$, $H$ and $\mathrm{Kr}$ name the four algebraic norms with one argument, beside the four forms with two. A biquaternion is **$\Phi$-regular** when $\Phi(\tilde Q)\neq0$ and **$\Phi$-degenerate** when $\Phi(\tilde Q)=0$; only $N$ decides invertibility, so the $N$-regular elements are the units and the $N$-degenerate ones the non-units, while the other three pairs are not a partition into invertible and singular.
 
 The six layer tables give, for each layer, only the brackets that survive on its glyph. The **algebraic norm** is the diagonal of the form, the **realified signature** is that of the real quadratic form with the positive directions counted first, and the **role** records whether the bracket carries the topology or the invertibility criterion. In $\mathbb{C}$ the star bracket is definite and multiplicative at once; in the split-complex numbers the two exchange their signatures and no bracket is both; in the quaternion and biquaternion layers the Hermitian bracket is the definite one and the quaternionic norm the multiplicative one; in the reduced biquaternions no mark degenerates and the four remain distinct.
 
@@ -177,8 +177,8 @@ The reservation of $U$ and $u$ is local to the layers of the biquaternion family
 
 | Symbol | Meaning |
 |---|---|
-| $P(\tilde Q)$, $N(\tilde Q)$, $H(\tilde Q)$, $K(\tilde Q)$ | The plain, quaternionic, Hermitian and Krein algebraic norms, the forms with one argument |
-| $\Phi$-regular, $\Phi$-degenerate | $\Phi(\tilde Q)\neq0$ and $\Phi(\tilde Q)=0$ for $\Phi\in\{P,N,H,K\}$ |
+| $P(\tilde Q)$, $N(\tilde Q)$, $H(\tilde Q)$, $\mathrm{Kr}(\tilde Q)$ | The plain, quaternionic, Hermitian and Krein algebraic norms, the forms with one argument |
+| $\Phi$-regular, $\Phi$-degenerate | $\Phi(\tilde Q)\neq0$ and $\Phi(\tilde Q)=0$ for $\Phi\in\{P,N,H,\mathrm{Kr}\}$ |
 | $\operatorname{Re}\langle Q\rangle$ | The realified form, whose signature is tabulated layer by layer |
 | $U$, $\tilde U$, $\tilde u$, $\vec u$ | A unit element of a layer, and its pure case; not a unitary element |
 | $\mathrm{U}(n)$ | The unitary group, upright roman, outside the layers |

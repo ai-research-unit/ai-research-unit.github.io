@@ -27,7 +27,7 @@ $$
 
 lies in $\mathbb{B}_{\Phi}$ and satisfies $\mathrm{Sc}(\tilde{\nabla}^{\natural}\tilde{J}) = i\,\mathrm{Sc}[(\Box\tilde{Ξ}^{*})\tilde{Ξ} - \tilde{Ξ}^{*}(\Box\tilde{Ξ})]$, which vanishes whenever the field obeys the Klein–Gordon equation, the sign of $\tilde{J}$ being the one for which the charge density of a positive-frequency wave is positive; the same current for the Dirac field, whose components are $j_\mu=\mathrm{Sc}(\tilde{Ξ}_{\mathrm{sp}}^*e_\mu\tilde{Ξ}_{\mathrm{sp}}\,b_\mu)$ with $b_t=e_t$ and $b_k=\vec e_z$, conserved at every mass, while the axial current is conserved only at $m=0$; the free-particle four-momentum $\tilde{P} = m\tilde{V}$ is the Noether charge of translation invariance, and the **total** four-momentum of an isolated system is conserved; and a translation acts on a plane wave by the central unit-modulus phase $\exp(i\,\mathrm{Sc}(\tilde P\tilde{R}_{\Phi,0}^{\natural}))$. What is standard, what is only transcribed, and what is interpretation is separated in its own section below.
 
-**Two defects in the read list, handled rather than repeated.** First, the four-force of the parent is defined by the **proper**-time derivative, $\tilde{K}_{\mathrm{f}} = d\tilde{P}/d\tau$, so the sum $\sum_a\tilde{K}_{\mathrm{f},a}$ across bodies is *not* the rate of change of the total four-momentum unless all the Lorentz factors agree; *Exercise: Four-Momentum Conservation in a Collision* reports this, and the conservation law is stated correctly below. Second, the translation of a plane wave is by a **central phase**, $\exp(i\,\mathrm{Sc}(\tilde P\tilde{R}_{\Phi,0}^{\natural}))$, and the $i$ is not optional: the same scalar in a real exponential, $\exp(\mathrm{Sc}(\tilde P\tilde{R}_{\Phi,0}^{\natural}))$, is a dilation and not a phase at all.
+**Two defects in the read list, handled rather than repeated.** First, the four-force of the parent is defined by the **proper**-time derivative, $\tilde{\mathcal F}_{\mathrm{frc}} = d\tilde{P}/d\tau$, so the sum $\sum_a\tilde{\mathcal F}_{\mathrm{frc},a}$ across bodies is *not* the rate of change of the total four-momentum unless all the Lorentz factors agree; *Exercise: Four-Momentum Conservation in a Collision* reports this, and the conservation law is stated correctly below. Second, the translation of a plane wave is by a **central phase**, $\exp(i\,\mathrm{Sc}(\tilde P\tilde{R}_{\Phi,0}^{\natural}))$, and the $i$ is not optional: the same scalar in a real exponential, $\exp(\mathrm{Sc}(\tilde P\tilde{R}_{\Phi,0}^{\natural}))$, is a dilation and not a phase at all.
 
 **Conventions.** The units, the coefficient basis, the conjugations, the two sectors, the gradient and its quaternion conjugate, the d'Alembertian, the trace and the two displays are those of the read list and of the conventions files of the series; they are used here and not restated. One calibration is this article's own, and it belongs to the two coordinate charts rather than to the algebra: the gradient is taken with respect to the coefficients $Q_\mu$, with $Q_t=i c r'_t$, and the energy–momentum tensor of the later sections is written in the real coordinates $x_\mu=(c r'_{t},r_x,r_y,r_z)$, which are the same chart with $Q_t=ix_0$; the two are held apart where they are used. Throughout, $c$ is the **speed of light in the medium** and $c_0$ the vacuum value; $\vec v$ is reserved for particle and frame velocities.
 
@@ -283,18 +283,18 @@ $$
 \frac{d\tilde{P}_{\mathrm{tot}}}{dr'_t} = 0\;},
 $$
 
-a vanishing **coordinate**-time derivative. The parent defines the four-force by the **proper**-time derivative of a single body, $\tilde{K}_{\mathrm{f},a} = d\tilde{P}_a/d\tau_a$, and since $d\tau_a = dr'_t/\gamma_a$,
+a vanishing **coordinate**-time derivative. The parent defines the four-force by the **proper**-time derivative of a single body, $\tilde{\mathcal F}_{\mathrm{frc},a} = d\tilde{P}_a/d\tau_a$, and since $d\tau_a = dr'_t/\gamma_a$,
 
 $$
-\frac{d\tilde{P}_a}{dr'_t} = \frac{1}{\gamma_a}\tilde{K}_{\mathrm{f},a},
+\frac{d\tilde{P}_a}{dr'_t} = \frac{1}{\gamma_a}\tilde{\mathcal F}_{\mathrm{frc},a},
 \qquad\text{so}\qquad
-\sum_a \tilde{K}_{\mathrm{f},a} = \sum_a \gamma_a\frac{d\tilde{P}_a}{dr'_t},
+\sum_a \tilde{\mathcal F}_{\mathrm{frc},a} = \sum_a \gamma_a\frac{d\tilde{P}_a}{dr'_t},
 $$
 
-which equals $d\tilde{P}_{\mathrm{tot}}/dr'_t$ only when all the $\gamma_a$ are equal. The parent's symbol $\tilde{K}_{\mathrm{f}}$ is a per-body proper-time rate and cannot be summed across bodies. The conservation law in terms of the parent's four-forces is therefore
+which equals $d\tilde{P}_{\mathrm{tot}}/dr'_t$ only when all the $\gamma_a$ are equal. The parent's symbol $\tilde{\mathcal F}_{\mathrm{frc}}$ is a per-body proper-time rate and cannot be summed across bodies. The conservation law in terms of the parent's four-forces is therefore
 
 $$
-\sum_a \frac{1}{\gamma_a}\tilde{K}_{\mathrm{f},a} = \frac{d\tilde{P}_{\mathrm{tot}}}{dr'_t} = 0,
+\sum_a \frac{1}{\gamma_a}\tilde{\mathcal F}_{\mathrm{frc},a} = \frac{d\tilde{P}_{\mathrm{tot}}}{dr'_t} = 0,
 $$
 
 or, in the integrated form that avoids the derivative altogether, $\sum_{\mathrm{in}}\tilde{P} = \sum_{\mathrm{out}}\tilde{P}$ for a collision. The exercise reports this defect; the corrected statement above is the one to use.
@@ -302,7 +302,7 @@ or, in the integrated form that avoids the derivative altogether, $\sum_{\mathrm
 **A numerical witness.** Two bodies connected by a translation-invariant interaction exchange momentum, so at some instant $d\tilde{P}_2/dr'_t = -d\tilde{P}_1/dr'_t = i\,e_t + \vec e_x$, and their Lorentz factors differ, $\gamma_1 = 5/3$, $\gamma_2 = 5/4$. Then $d\tilde{P}_{\mathrm{tot}}/dr'_t = 0$, but
 
 $$
-\tilde{K}_{\mathrm{f},1} + \tilde{K}_{\mathrm{f},2} = (\gamma_2 - \gamma_1)\left(i\,e_t + \vec e_x\right) = -\frac{5}{12}\left(i\,e_t + \vec e_x\right) \neq 0 .
+\tilde{\mathcal F}_{\mathrm{frc},1} + \tilde{\mathcal F}_{\mathrm{frc},2} = (\gamma_2 - \gamma_1)\left(i\,e_t + \vec e_x\right) = -\frac{5}{12}\left(i\,e_t + \vec e_x\right) \neq 0 .
 $$
 
 The naive sum of the parent's four-forces is not zero even though the total four-momentum is conserved. For the collision of *Exercise: Four-Momentum Conservation in a Collision* ($E_1 = 3mc^2$, equal masses, $\theta^* = 90^\circ$), the total four-momenta $\tilde{P}_{\mathrm{in}}$ and $\tilde{P}_{\mathrm{out}}$ were recomputed and agree component by component in the laboratory.
@@ -534,7 +534,7 @@ $$
 \qquad E = \gamma mc^2,\quad \vec p = \gamma m\vec v,
 $$
 
-as the Noether charge, conserved for a free particle. The conservation law for a system is the vanishing of the **coordinate**-time derivative of the total, $d\tilde{P}_{\mathrm{tot}}/dr'_t = 0$; the parent's proper-time four-force cannot be summed across bodies, and the correct form is $\sum_a\tilde{K}_{\mathrm{f},a}/\gamma_a = 0$, or the integrated $\sum_{\mathrm{in}}\tilde{P} = \sum_{\mathrm{out}}\tilde{P}$. A translation acts on a plane wave by the central unit-modulus phase $\exp(i\,\mathrm{Sc}(\tilde P\tilde{R}_{\Phi,0}^{\natural}))$, with $\mathrm{Sc}(\tilde P\tilde{R}_{\Phi,0}^{\natural}) = \vec k\cdot\vec R_0-\omega r'_{t,0}$.
+as the Noether charge, conserved for a free particle. The conservation law for a system is the vanishing of the **coordinate**-time derivative of the total, $d\tilde{P}_{\mathrm{tot}}/dr'_t = 0$; the parent's proper-time four-force cannot be summed across bodies, and the correct form is $\sum_a\tilde{\mathcal F}_{\mathrm{frc},a}/\gamma_a = 0$, or the integrated $\sum_{\mathrm{in}}\tilde{P} = \sum_{\mathrm{out}}\tilde{P}$. A translation acts on a plane wave by the central unit-modulus phase $\exp(i\,\mathrm{Sc}(\tilde P\tilde{R}_{\Phi,0}^{\natural}))$, with $\mathrm{Sc}(\tilde P\tilde{R}_{\Phi,0}^{\natural}) = \vec k\cdot\vec R_0-\omega r'_{t,0}$.
 
 The field translation current is the canonical energy–momentum, $-\partial T_{0\nu}/\partial x_0+\sum_k\partial T_{k\nu}/\partial r_k = 0$ on shell in the real coordinates, with positive energy density $T_{00} = \frac{1}{c^2}|\partial\xi_{\mathrm{scl}}/\partial r'_t|^2 + |\nabla\xi_{\mathrm{scl}}|^2 + k_m^{2}|\xi_{\mathrm{scl}}|^2$. Rank two cannot be one biquaternion, so the framework packages it bilinearly; the Maxwell object $\tilde{W} = \tfrac12\tilde{F}\tilde{F}^{*}$ is its time row, and $\mathrm{Sc}(\tilde{\nabla}\tilde{W}) = \frac{i}{c}\vec J\cdot\vec E$ is the energy law it carries. Lorentz invariance gives the angular-momentum bivector $\tilde L = \tfrac12\sum L_{\mu\nu}\,e^{\natural}_\mu e_\nu$, with the rank-three field current reduced to the rank-two particle bivector only when the spin term vanishes. The theorem is standard; the algebra supplies the home of each conserved object and the compact form of its divergence, and it supplies no conservation law the symmetries did not already give.
 
@@ -556,7 +556,7 @@ The field translation current is the canonical energy–momentum, $-\partial T_{
 | $\tilde{R}_{\Phi,0}\in\mathbb{B}_{\Phi}$ | Constant translation (displacement) |
 | $\tilde{V} = \gamma(ic\,e_t + \vec v)$ | Four-velocity, $\tilde{V}\tilde{V}^{\natural} = -c^2$ |
 | $\tilde{P} = m\tilde{V} = iE/c\,e_t + \vec p$ | Four-momentum, Noether charge of translation; real energy and momentum, so in $\mathbb{B}_{\Phi}$ |
-| $\tilde{K}_{\mathrm{f},a} = d\tilde{P}_a/d\tau_a$ | Four-force (proper-time derivative; not summable) |
+| $\tilde{\mathcal F}_{\mathrm{frc},a} = d\tilde{P}_a/d\tau_a$ | Four-force (proper-time derivative; not summable) |
 | $\tilde{Ξ} = \xi_{\mathrm{scl}}\,e_t\in\mathbb{B}_{C}$ | Complex biquaternion scalar field |
 | $\mathcal{L} = \sum_\mu(\partial{\xi_{\mathrm{scl}}}^{*}/\partial R_\mu)(\partial\xi_{\mathrm{scl}}/\partial R_\mu) + k_m^{2}|\xi_{\mathrm{scl}}|^2$ | Field Lagrangian density, $Q$ frame |
 | $\tilde{J} = i[(\tilde{\nabla}\tilde{Ξ}^{*})\tilde{Ξ} - \tilde{Ξ}^{*}\tilde{\nabla}\tilde{Ξ}]$ | Central-phase Noether current, in $\mathbb{B}_{\Phi}$ |

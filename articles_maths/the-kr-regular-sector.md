@@ -1,4 +1,4 @@
-# __The K-Regular Sector__
+# __The Kr-Regular Sector__
 
 ## Introduction
 
@@ -9,7 +9,7 @@ $$
 =\{\tilde Q:\langle\tilde Q\rangle_{\natural*}\neq0\},
 $$
 
-and it splits into the positive region and the negative region. Its partner is *The K-Degenerate Sector*, for $\mathcal K$. The two articles carry the partition of *K-Regularity and Degeneracy in the Biquaternion Algebra*; the spectral condition is not used as a subdivision, and §*Why There Is No Spectral Split* of that article gives the four reasons.
+and it splits into the positive region and the negative region. Its partner is *The Kr-Degenerate Sector*, for $\mathcal K$. The two articles carry the partition of *Kr-Regularity and Degeneracy in the Biquaternion Algebra*; the spectral condition is not used as a subdivision, and §*Why There Is No Spectral Split* of that article gives the four reasons.
 
 **Conventions.** The algebra is $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ on the basis $e_t,\vec e_x,\vec e_y,\vec e_z$, of complex dimension four and real dimension eight, with $\vec e_x\vec e_y=\vec e_z$ and $\vec e_k^2=-e_t$. An element is $\tilde Q=Q_te_t+\vec Q$ with $Q_\mu\in\mathbb{C}$ and $\vec Q=Q_x\vec e_x+Q_y\vec e_y+Q_z\vec e_z$. The natural conjugation is $\tilde Q^{\natural}=Q_t-\vec Q$, the Hermitian conjugation is $\tilde Q^{*}=\overline{Q_t}-\overline{\vec Q}$, and the coefficient signs are $\varepsilon=(1,-1,-1,-1)$. The forms are
 
@@ -43,7 +43,7 @@ the union of the **positive region** $\mathbb{B}^{\natural*}_+=\{\langle\tilde Q
 
 (v) the restriction of the Krein form to the line $\mathbb{C}\tilde Q$ is definite.
 
-*Proof.* (i) $\iff$ (ii) is the coordinate form of the norm. (ii) $\iff$ (iii) is the line criterion of *K-Regularity and Degeneracy in the Biquaternion Algebra*, §*Krein Orthogonality and the Complement*: a line is degenerate exactly when its radical is non-zero, and for a Hermitian form on a complex line the radical is the line itself exactly when the form vanishes at a non-zero point. (iii) $\iff$ (iv) is the realification: the real plane is the real space of the complex line, and the real form is the real part of the Hermitian one, so a radical over $\mathbb{C}$ and a radical over $\mathbb{R}$ coincide. (iii) $\iff$ (v): on the line the form is $\lambda\mapsto|\lambda|^2\langle\tilde Q\rangle_{\natural*}$, which is non-degenerate exactly when $\langle\tilde Q\rangle_{\natural*}\neq0$, and then it is definite with the sign of that value.
+*Proof.* (i) $\iff$ (ii) is the coordinate form of the norm. (ii) $\iff$ (iii) is the line criterion of *Kr-Regularity and Degeneracy in the Biquaternion Algebra*, §*Krein Orthogonality and the Complement*: a line is degenerate exactly when its radical is non-zero, and for a Hermitian form on a complex line the radical is the line itself exactly when the form vanishes at a non-zero point. (iii) $\iff$ (iv) is the realification: the real plane is the real space of the complex line, and the real form is the real part of the Hermitian one, so a radical over $\mathbb{C}$ and a radical over $\mathbb{R}$ coincide. (iii) $\iff$ (v): on the line the form is $\lambda\mapsto|\lambda|^2\langle\tilde Q\rangle_{\natural*}$, which is non-degenerate exactly when $\langle\tilde Q\rangle_{\natural*}\neq0$, and then it is definite with the sign of that value.
 
 **Proposition (the sign is the sign of the line).** The line $\mathbb{C}\tilde Q$ is positive definite exactly in the positive region and negative definite exactly in the negative region. The line carries the sign of the norm, and no other sign occurs.
 
@@ -101,7 +101,7 @@ $$
 
 **Remark (neither region is convex).** The positive elements $e_t$ and $-e_t$ have the zero element as midpoint, and the negative elements $\vec e_x$ and $-\vec e_x$ do the same. Convexity fails in the strongest way in both regions.
 
-**Remark (the Krein cone).** The closure of the positive region is the Krein cone $P_K=\{|Q_t|\ge\lVert\vec Q\rVert_E\}$, closed and star-shaped with respect to the origin, neither convex nor pointed; it is *K-Regularity and Degeneracy in the Biquaternion Algebra*, §*The Krein Cone*, and its boundary structure is *The Krein Level Sets and the Hyperbolic Structure*.
+**Remark (the Krein cone).** The closure of the positive region is the Krein cone $P_K=\{|Q_t|\ge\lVert\vec Q\rVert_E\}$, closed and star-shaped with respect to the origin, neither convex nor pointed; it is *Kr-Regularity and Degeneracy in the Biquaternion Algebra*, §*The Krein Cone*, and its boundary structure is *The Krein Level Sets and the Hyperbolic Structure*.
 
 ## Multiplication and Inversion
 
@@ -155,7 +155,7 @@ $$
 
 and they all lie in the negative region.
 
-*Proof.* By *K-Regularity and Degeneracy in the Biquaternion Algebra*, §*The degeneracy case: the null set*, an algebraic-null element has non-positive Krein norm, with equality exactly on the doubly null Peirce lines. So a zero divisor has negative or zero Krein norm; it is in the regular sector exactly when the value is negative, and then it is not doubly null. Conversely a zero divisor that is not doubly null has negative value and lies in the sector.
+*Proof.* By *Kr-Regularity and Degeneracy in the Biquaternion Algebra*, §*The degeneracy case: the null set*, an algebraic-null element has non-positive Krein norm, with equality exactly on the doubly null Peirce lines. So a zero divisor has negative or zero Krein norm; it is in the regular sector exactly when the value is negative, and then it is not doubly null. Conversely a zero divisor that is not doubly null has negative value and lies in the sector.
 
 **The sector against the algebraic partition.**
 
@@ -234,10 +234,10 @@ The sector is the metric interior and exterior of the null set, taken together. 
 
 ## Further Reading
 
-- [The K-Degenerate Sector](the-k-degenerate-sector.html), for the null set, the doubly null Peirce lines and the isotropic units.
-- [K-Regularity and Degeneracy in the Biquaternion Algebra](k-regularity-and-degeneracy-in-the-biquaternion-algebra.html), for the partition, the Krein cone, the two partitions of the algebra, and the four reasons why no spectral split is available.
+- [The Kr-Degenerate Sector](the-kr-degenerate-sector.html), for the null set, the doubly null Peirce lines and the isotropic units.
+- [Kr-Regularity and Degeneracy in the Biquaternion Algebra](kr-regularity-and-degeneracy-in-the-biquaternion-algebra.html), for the partition, the Krein cone, the two partitions of the algebra, and the four reasons why no spectral split is available.
 - [The Four Forms and the Four Algebraic Norms over the Biquaternion Algebra](the-four-forms-and-the-four-algebraic-norms-over-the-biquaternion-algebra.html), for the form, its Gram matrix and its inertia.
-- [K-Regularity and Degeneracy in the Biquaternion Algebra](k-regularity-and-degeneracy-in-the-biquaternion-algebra.html), for the line criterion and the two partitions of the algebra.
+- [Kr-Regularity and Degeneracy in the Biquaternion Algebra](kr-regularity-and-degeneracy-in-the-biquaternion-algebra.html), for the line criterion and the two partitions of the algebra.
 - [The Fundamental Symmetry of the Form](the-fundamental-symmetry-of-the-form.html), for the fundamental symmetry and the bridge.
 - [The Krein Level Sets and the Hyperbolic Structure](the-krein-level-sets-and-the-hyperbolic-structure.html), for the level sets, their topology and the complex hyperbolic ball.
 - [The Krein Isometry Group and Its Cartan Decomposition](the-krein-isometry-group-and-its-cartan-decomposition.html), for the group $\mathrm{U}(1,3)$ and its action.

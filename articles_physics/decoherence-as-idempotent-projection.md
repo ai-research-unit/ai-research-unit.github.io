@@ -85,12 +85,12 @@ $$
 It is completely positive and trace preserving, with Kraus operators
 
 $$
-\tilde{K}_0 = \sqrt{1-p}\,e_t, \qquad
-\tilde{K}_1 = \sqrt{p}\,\tilde\Pi_1(\vec u), \qquad
-\tilde{K}_2 = \sqrt{p}\,\tilde\Pi_2(\vec u),
+\tilde M_{\mathrm{kraus},0} = \sqrt{1-p}\,e_t, \qquad
+\tilde M_{\mathrm{kraus},1} = \sqrt{p}\,\tilde\Pi_1(\vec u), \qquad
+\tilde M_{\mathrm{kraus},2} = \sqrt{p}\,\tilde\Pi_2(\vec u),
 $$
 
-whose normalization $\sum_l \tilde{K}_l^{*} \tilde{K}_l = (1-p)e_t + p(\tilde\Pi_1 + \tilde\Pi_2) = e_t$ holds because the idempotents are Hermitian and complementary. The channel is **unital**: it fixes the maximally mixed state $\tilde{Ϛ} = \tfrac12 e_t$, so it is not a depolarizing map that pushes states toward the centre; it is a map that pushes them toward an *axis*.
+whose normalization $\sum_l \tilde M_{\mathrm{kraus},l}^{*} \tilde M_{\mathrm{kraus},l} = (1-p)e_t + p(\tilde\Pi_1 + \tilde\Pi_2) = e_t$ holds because the idempotents are Hermitian and complementary. The channel is **unital**: it fixes the maximally mixed state $\tilde{Ϛ} = \tfrac12 e_t$, so it is not a depolarizing map that pushes states toward the centre; it is a map that pushes them toward an *axis*.
 
 On the Bloch vector the channel acts by
 
@@ -336,7 +336,7 @@ One many-qubit case belongs here because a source overstates it. The singlet $\l
 | $\langle\tilde{Ϛ}\rangle_{\natural} = \tfrac14(1-|\vec r|^2)e_t$ | Biquaternion norm (positivity condition) |
 | $Ξ_{\mathrm{deph},p}$ | Dephasing channel of strength $p \in [0,1]$ along $\vec u$ |
 | $Ξ_{\mathrm{deph},p}(\tilde{Ϛ}) = (1-p)\tilde{Ϛ} + p(\tilde\Pi_1\tilde{Ϛ}\tilde\Pi_1 + \tilde\Pi_2\tilde{Ϛ}\tilde\Pi_2)$ | Dephasing action on states |
-| $\tilde{K}_0 = \sqrt{1-p}\,e_t,\ \tilde{K}_{1,2} = \sqrt{p}\,\tilde\Pi_{1,2}$ | Kraus operators of dephasing |
+| $\tilde M_{\mathrm{kraus},0} = \sqrt{1-p}\,e_t,\ \tilde M_{\mathrm{kraus},1,2} = \sqrt{p}\,\tilde\Pi_{1,2}$ | Kraus operators of dephasing |
 | $\vec r \mapsto (1-p)\vec r + p(\vec u\cdot\vec r)\vec u$ | Dephasing action on the Bloch vector |
 | $Ξ_{\mathrm{deph},p} \circ Ξ_{\mathrm{deph},q} = Ξ_{\mathrm{deph},p+q-pq}$ | Composition law |
 | $\alpha = i\vec u$, $\alpha^2 = e_t$ | Pointer observable |
@@ -344,7 +344,7 @@ One many-qubit case belongs here because a source overstates it. The singlet $\l
 | $\lvert\tilde{Ξ}_{\mathrm{sp}}^-\rangle = \tfrac{1}{\sqrt2}(\lvert01\rangle-\lvert10\rangle)$ | Singlet; decoherence-free for collective dephasing |
 | $A = \mathbb{C}\tilde\Pi_1 \oplus \mathbb{C}\tilde\Pi_2$ | Pointer (commutative) subalgebra |
 | $S(\tilde{Ϛ}) = -\lambda_+\log\lambda_+ - \lambda_-\log\lambda_-$ | Von Neumann entropy, $\lambda_\pm = \tfrac12(1\pm|\vec r|)$ |
-| $Ξ(\tilde{Ϛ}) = \sum_l \tilde{K}_l\tilde{Ϛ}\tilde{K}_l^{*}$ | Kraus representation of a channel |
+| $Ξ(\tilde{Ϛ}) = \sum_l \tilde M_{\mathrm{kraus},l}\tilde{Ϛ}\tilde M_{\mathrm{kraus},l}^{*}$ | Kraus representation of a channel |
 | $\langle\tilde{Q}_1,\tilde{Q}_2\rangle_{\natural}$ | the general quaternionic bilinear form, $\mathrm{Sc}(\tilde{Q}_1^{\natural}\tilde{Q}_2)$; on the diagonal $\langle\tilde{Q}_2,\tilde{Q}_2\rangle_{\natural}=\langle\tilde{Q}_2\rangle_{\natural}$ |
 | $\langle\tilde{Q}_1,\tilde{Q}_2\rangle$ | the general plain bilinear form, the scalar part of the general plain bilinear product, $\mathrm{Sc}(\tilde{Q}_1\tilde{Q}_2)$ |
 

@@ -5,7 +5,7 @@
 
 The general quaternionic sesquilinear form $\langle\tilde Q,\tilde Q\rangle_{\natural*}=\mathrm{Sc}(\tilde Q^{\natural}\tilde Q^{*})=\sum_\mu\varepsilon_\mu|Q_\mu|^{2}$ of *The Four Forms and the Four Algebraic Norms over the Biquaternion Algebra*, of signature $(2,6)$, is read here on the remarkable real subspaces of *Subspaces and Decompositions* — the centre $\mathbb{B}_{C}$, the vector subspace $\mathbb{B}_{V}$, the quaternion subspace $\mathbb{B}_{H}$, the anti-quaternion subspace $\mathbb{B}_{iH}$, the Hermitian subspace $\mathbb{B}_{\Psi}$ and the anti-Hermitian subspace $\mathbb{B}_{\Phi}$.
 
-The form is used, not re-derived. Its definition, its Krein signature $(2,6)$ and its automorphism group $\mathrm{U}(1,3)$ are *The Four Forms and the Four Algebraic Norms over the Biquaternion Algebra*; its null set and its totally isotropic subspaces are *K-Regularity and Degeneracy in the Biquaternion Algebra*; the remarkable subspaces and their bases are *Subspaces and Decompositions*; and the companion readings of the same six by the other three pairings are *Remarkable Subspaces and the Four General Products, Forms and Norms*, *Remarkable Subspaces under the General Quaternionic Algebra* and *Remarkable Subspaces under the General Plain Sesqualgebra*. This article owns the restrictions themselves and the structure of each one.
+The form is used, not re-derived. Its definition, its Krein signature $(2,6)$ and its automorphism group $\mathrm{U}(1,3)$ are *The Four Forms and the Four Algebraic Norms over the Biquaternion Algebra*; its null set and its totally isotropic subspaces are *Kr-Regularity and Degeneracy in the Biquaternion Algebra*; the remarkable subspaces and their bases are *Subspaces and Decompositions*; and the companion readings of the same six by the other three pairings are *Remarkable Subspaces and the Four General Products, Forms and Norms*, *Remarkable Subspaces under the General Quaternionic Algebra* and *Remarkable Subspaces under the General Plain Sesqualgebra*. This article owns the restrictions themselves and the structure of each one.
 
 ## The Restriction Matrices
 
@@ -61,7 +61,7 @@ Each of the four indefinite rows carries a **real null cone**, of real dimension
 | Hermitian $\mathbb{B}_{\Psi}$ | $q_t^{2}=(q'_x)^{2}+(q'_y)^{2}+(q'_z)^{2}$ | $3$ |
 | Anti-Hermitian $\mathbb{B}_{\Phi}$ | $(q'_t)^{2}=q_x^{2}+q_y^{2}+q_z^{2}$ | $3$ |
 
-**Remark (the isotropic lines of a row).** On each indefinite row the null cone is a quadratic cone of real dimension $3$, whose isotropic real lines are parametrised by the real unit directions; the maximal dimension of a totally isotropic subspace is $1$ on each row, since the signature is $(1,3)$ and the Witt index of a Lorentzian form is $1$. On the two definite rows there is no isotropic element, and on the centre and the vector subspace the form is definite, so the origin is the only isotropic point. The isotropic structure of the form on the whole algebra, where the Witt index over $\mathbb{R}$ is $2$, is *The K-Degenerate Sector*, §*The Witt Index*.
+**Remark (the isotropic lines of a row).** On each indefinite row the null cone is a quadratic cone of real dimension $3$, whose isotropic real lines are parametrised by the real unit directions; the maximal dimension of a totally isotropic subspace is $1$ on each row, since the signature is $(1,3)$ and the Witt index of a Lorentzian form is $1$. On the two definite rows there is no isotropic element, and on the centre and the vector subspace the form is definite, so the origin is the only isotropic point. The isotropic structure of the form on the whole algebra, where the Witt index over $\mathbb{R}$ is $2$, is *The Kr-Degenerate Sector*, §*The Witt Index*.
 
 ## The Coincidences with the Other Three Forms
 
@@ -103,7 +103,7 @@ On the remarkable subspaces the general quaternionic sesquilinear form coincides
 
 **A negative vector element.** For $\tilde Q=\vec e_x$ the value is $\varepsilon_x|1|^{2}=-1$, and for $\tilde Q=\vec e_x+i\vec e_x$ it is $-1-1=-2$; the vector subspace is negative definite, and it realises the negative index $6$ of the form.
 
-**The null element of the quaternion row.** For $\tilde Q=e_t+\vec e_x$ the value is $1-1=0$, and the element lies on the null cone $q_t^{2}=q_x^{2}+q_y^{2}+q_z^{2}$ of the quaternion subspace; it is a zero divisor of the algebra, and the Peirce lines it carries are those of *The K-Degenerate Sector*, §*The Doubly Null Stratum*.
+**The null element of the quaternion row.** For $\tilde Q=e_t+\vec e_x$ the value is $1-1=0$, and the element lies on the null cone $q_t^{2}=q_x^{2}+q_y^{2}+q_z^{2}$ of the quaternion subspace; it is a zero divisor of the algebra, and the Peirce lines it carries are those of *The Kr-Degenerate Sector*, §*The Doubly Null Stratum*.
 
 **The null element of the anti-quaternion row.** For $\tilde Q=ie_t+i\vec e_x$ the value is $1-1=0$, on the cone $(q'_t)^{2}=\sum_k(q'_k)^{2}$ of the anti-quaternion subspace; the sign of the scalar coefficient is the one the row prescribes.
 
@@ -134,7 +134,7 @@ On the remarkable real subspaces the general quaternionic sesquilinear form carr
 ## Further Reading
 
 - [The Four Forms and the Four Algebraic Norms over the Biquaternion Algebra](the-four-forms-and-the-four-algebraic-norms-over-the-biquaternion-algebra.html), for the form, its coefficient Gram matrix and its inertia.
-- [The K-Degenerate Sector](the-k-degenerate-sector.html), for the null set, the doubly null lines and the Witt index.
+- [The Kr-Degenerate Sector](the-kr-degenerate-sector.html), for the null set, the doubly null lines and the Witt index.
 - [Subspaces and Decompositions](subspaces-and-decompositions-of-the-biquaternion-algebra.html), for the remarkable real subspaces and their bases
 - [Remarkable Subspaces under the General Plain Sesqualgebra](remarkable-subspaces-under-the-general-plain-sesqualgebra.html), for the definite companion reading of the same six
 - [Remarkable Subspaces under the General Quaternionic Algebra](remarkable-subspaces-under-the-general-quaternionic-algebra.html), for the norm reading of the same six

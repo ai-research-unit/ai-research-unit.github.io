@@ -343,7 +343,7 @@ along $\vec a\times\vec v$, with only the transverse acceleration contributing. 
 | $\tilde{Q}^{\natural}$, $\tilde{Q}^{*}=\overline{\tilde{Q}^{\natural}}$ | Quaternion conjugate, Hermitian conjugate |
 | $\tilde{V}=\gamma(ic\,e_t+\vec v)$ | Four-velocity, $\langle\tilde{V}\rangle_{\natural}=-c^2$ |
 | $\tilde{P}=m\tilde{V}=iE/c\,e_t+\vec p$ | Four-momentum |
-| $\tilde{K}_{\mathrm{f}}=d\tilde{P}/d\tau$ | Four-force, in $\mathbb{B}_{\Phi}$ |
+| $\tilde{\mathcal F}_{\mathrm{frc}}=d\tilde{P}/d\tau$ | Four-force, in $\mathbb{B}_{\Phi}$ |
 | $c$, $c_0$ | Speed of light in the medium; in vacuum |
 | $\gamma=(1-\vec v^2/c^2)^{-1/2}$ | Lorentz factor |
 | $\theta_{\mathrm{rpd}}$, $\tanh\theta_{\mathrm{rpd}}=v/c$ | Rapidity |

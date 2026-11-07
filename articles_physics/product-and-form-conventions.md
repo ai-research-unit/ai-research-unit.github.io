@@ -309,7 +309,7 @@ Throughout the series a signature is written $(n,m)$ with the **positive** direc
 
 The twelve products are one construction. Two slots, each read plain or through its conjugation, give four general products; the exchange of the two arguments within the class of the product gives a symmetric and an antisymmetric part to each. Each product is written by its two slots and the conjugation each one carries, $\tilde Q_1\tilde Q_2$, $\tilde Q_1^{\natural}\tilde Q_2$, $\tilde Q_1\tilde Q_2^{*}$ and $\tilde Q_1^{\natural}\tilde Q_2^{*}$ for the general products, the same four with the bullet $\bullet$ for their symmetric parts and with the wedge $\wedge$ for their antisymmetric parts, the class carried by the subscript. The general product is the sum of its symmetric and its antisymmetric part. The bare interchange of the two arguments is not the class-preserving exchange, so the two antisymmetrisations are not one operation; on the reduced biquaternion space four of the twelve products coincide.
 
-The four forms are the four maps read on two arguments. The identity gives the plain bilinear form $B$, the natural sign the quaternionic form $N$, the star the Hermitian form $H$ and the flat sign the Krein form $K$, with the signature convention and the pairwise sign rule that make the table consistent. Each lower layer has its own table, and where a mark degenerates the brackets collapse two and two rather than becoming a different convention.
+The four forms are the four maps read on two arguments. The identity gives the plain bilinear form $B$, the natural sign the quaternionic form $N$, the star the Hermitian form $H$ and the flat sign the Krein form $\mathrm{Kr}$, with the signature convention and the pairwise sign rule that make the table consistent. Each lower layer has its own table, and where a mark degenerates the brackets collapse two and two rather than becoming a different convention.
 
 The Hermitian form is the one that carries probability: $\langle e_t,e_t\rangle_*=1$, a normalised state has $\langle\tilde{Ϛ},e_t\rangle_*=\tfrac12$, and the Born weight is a ratio of pairings. Its type is decided by the second argument. The article closes by separating the conventions that are chosen from the assignments that are forced by the algebra.
 
@@ -322,7 +322,7 @@ The Hermitian form is the one that carries probability: $\langle e_t,e_t\rangle_
 | the same four with $\wedge$ | Their antisymmetric parts, the class carried by the subscript |
 | $\tilde Q_1\bullet\tilde Q_2$ | The symmetric product, the half-sum of the two orders |
 | $\tilde Q_1\wedge\tilde Q_2$ | The antisymmetric product, the half-difference; on differential forms the same glyph is the exterior product |
-| $B$, $N$, $H$, $K$ | The four forms: plain, quaternionic, Hermitian, Krein |
+| $B$, $N$, $H$, $\mathrm{Kr}$ | The four forms: plain, quaternionic, Hermitian, Krein |
 | $\langle\tilde Q_1,\tilde Q_2\rangle_{*}$ | The Hermitian form, $\mathrm{Sc}(\tilde Q_1\tilde Q_2^{*})$ |
 | $\natural$, ${}^{*}$, $\flat=-{}^{*}$ | The natural, star and flat conjugations |
 | $\mathrm{Form}$, $\mathrm{Norm}$ | The generic form of the statement and the form at its two equal arguments |

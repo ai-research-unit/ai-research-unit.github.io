@@ -120,7 +120,7 @@ The mass-shell relation is the **constraint that defines the physical four-momen
 The **four-force biquaternion** is the proper-time derivative of the four-momentum:
 
 $$
-\tilde{K}_{\mathrm{f}} = \frac{d\tilde{P}}{d\tau},
+\tilde{\mathcal F}_{\mathrm{frc}} = \frac{d\tilde{P}}{d\tau},
 $$
 
 where $\tau$ is the **proper time** of the particle, defined by $d\tau = dr'_t/\gamma$. The four-force biquaternion lies in the anti-Hermitian subspace $\mathbb{B}_{\Phi}$, like $\tilde{P}$.
@@ -128,7 +128,7 @@ where $\tau$ is the **proper time** of the particle, defined by $d\tau = dr'_t/\
 Since $\tilde{P}\tilde{P}^{\natural} = -m^2c^2$ is constant along the worldline, differentiating gives
 
 $$
-\tilde{K}_{\mathrm{f}}\tilde{P}^{\natural} + \tilde{P}\tilde{K}_{\mathrm{f}}^{\natural} = 0,
+\tilde{\mathcal F}_{\mathrm{frc}}\tilde{P}^{\natural} + \tilde{P}\tilde{\mathcal F}_{\mathrm{frc}}^{\natural} = 0,
 $$
 
 which is the biquaternion form of the standard orthogonality condition $f_\mu p_\mu = 0$: the four-force is orthogonal to the four-momentum. This is the reason the four-force can change the direction of the four-momentum but not its norm, and hence not the rest mass.
@@ -136,7 +136,7 @@ which is the biquaternion form of the standard orthogonality condition $f_\mu p_
 For a charged particle in an electromagnetic field, the four-force in component form is
 
 $$
-\tilde{K}_{\mathrm{f}} = i\gamma\frac{ϙ}{c}\left(\vec E\cdot\vec v\right)e_t + \gamma ϙ\left(\vec E + \vec v\times\vec B\right),
+\tilde{\mathcal F}_{\mathrm{frc}} = i\gamma\frac{ϙ}{c}\left(\vec E\cdot\vec v\right)e_t + \gamma ϙ\left(\vec E + \vec v\times\vec B\right),
 $$
 
 where $ϙ$ is the charge, $\vec E$ and $\vec B$ are the electric and magnetic fields, and $\vec v$ is the particle velocity. The scalar part is the **power** delivered to the particle (imaginary, as required by the $i c r'_t$ convention for a four-vector), and the vector part is the **relativistic three-force** $\gamma ϙ(\vec E + \vec v\times\vec B)$.
@@ -228,7 +228,7 @@ which is identical in form to the source-free biquaternion Maxwell equation. The
 | Four-velocity | $\tilde{V} = \gamma(ic\,e_t + \vec v)$ | $\tilde{V}\tilde{V}^{\natural} = -c^2$ |
 | Four-momentum | $\tilde{P} = m\tilde{V}$ | $\tilde{P}\tilde{P}^{\natural} = -m^2c^2$ |
 | Mass-shell relation | $\tilde{P}\tilde{P}^{\natural} = -m^2c^2$ | — |
-| Four-force | $\tilde{K}_{\mathrm{f}} = d\tilde{P}/d\tau$ | $\tilde{K}_{\mathrm{f}}\tilde{P}^{\natural} + \tilde{P}\tilde{K}_{\mathrm{f}}^{\natural} = 0$ |
+| Four-force | $\tilde{\mathcal F}_{\mathrm{frc}} = d\tilde{P}/d\tau$ | $\tilde{\mathcal F}_{\mathrm{frc}}\tilde{P}^{\natural} + \tilde{P}\tilde{\mathcal F}_{\mathrm{frc}}^{\natural} = 0$ |
 | Action | $S = -mc\int\sqrt{-\,d\tilde R_\Phi\,\overline{d\tilde R_\Phi}}$ | — |
 | Current | $\tilde{J} = ic\rho\,e_t + \vec j$ | $\mathrm{Sc}(\tilde{\nabla}^{\natural}\tilde{J}) = 0$ |
 | Klein–Gordon | $(\tilde{\nabla}\tilde{\nabla}^{\natural} - (k_m)^{2})\tilde{Ξ} = 0$ | — |
@@ -268,7 +268,7 @@ which reduces to the Lorentz force law under continuity conditions on the four-c
 
 1. **The Lorentz transformation of four-vectors.** The four-vectors in $\mathbb{B}_{\Phi}$ transform under the Lorentz group by a **rotor conjugation** involving the boost biquaternion. The precise form of this transformation, and its relation to the standard four-vector transformation, is the subject of the companion article on the Lorentz transformation.
 
-2. **The Lorentz force in biquaternion form.** The four-force in component form is standard: $\tilde{K}_{\mathrm{f}} = i\gamma ϙ(\vec E\cdot\vec v)/c\,e_t + \gamma ϙ(\vec E + \vec v\times\vec B)$. Its expression as a biquaternion product of the field-strength biquaternion $\tilde F$ and the four-velocity $\tilde{V}$ is **not** simply the real part of $\tilde F\circ\tilde{V}$; the correct expression involves the representation theory of $\mathbb{B}$ in the even subalgebra of $\mathrm{Cl}_{1,3}$, and it remains to be worked out cleanly. This is left for a future revision, and it may be addressed by the scientific literature on the biquaternion formulation of the Lorentz force.
+2. **The Lorentz force in biquaternion form.** The four-force in component form is standard: $\tilde{\mathcal F}_{\mathrm{frc}} = i\gamma ϙ(\vec E\cdot\vec v)/c\,e_t + \gamma ϙ(\vec E + \vec v\times\vec B)$. Its expression as a biquaternion product of the field-strength biquaternion $\tilde F$ and the four-velocity $\tilde{V}$ is **not** simply the real part of $\tilde F\circ\tilde{V}$; the correct expression involves the representation theory of $\mathbb{B}$ in the even subalgebra of $\mathrm{Cl}_{1,3}$, and it remains to be worked out cleanly. This is left for a future revision, and it may be addressed by the scientific literature on the biquaternion formulation of the Lorentz force.
 
 3. **The Lagrangian formulation.** The biquaternion action $S = -mc\int\sqrt{-d\tilde R_\Phi\,\overline{d\tilde R_\Phi}}$ is a real Lorentz scalar. Can the full Lagrangian formulation of relativistic mechanics (including interactions) be expressed in biquaternion form? A later tensor-dynamics formulation (de Haas, arXiv:1401.4470v1) gives one: the Lagrangian density as the trace of the stress–energy tensor, and the conservation law as the general force equation $\partial/\partial R_\nu T_{\nu\mu} + \partial/\partial R_\mu \mathrm{Lag} = 0$. It is recorded, with its signs and its cautions, in *The Tensor-Dynamics Reading, and the Question of Extra Terms* above.
 
@@ -306,7 +306,7 @@ These identities are algebraic, not physical. They are the reason the biquaterni
 | $\tilde R_\Phi = i c r'_t\,e_t + r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z$ | Four-position biquaternion |
 | $\tilde{V} = \gamma(ic\,e_t + \vec v)$ | Four-velocity biquaternion |
 | $\tilde{P} = m\tilde{V}$ | Four-momentum biquaternion |
-| $\tilde{K}_{\mathrm{f}} = d\tilde{P}/d\tau$ | Four-force biquaternion |
+| $\tilde{\mathcal F}_{\mathrm{frc}} = d\tilde{P}/d\tau$ | Four-force biquaternion |
 | $\tilde{J} = ic\rho\,e_t + \vec j$ | Four-current biquaternion |
 | $\tilde{Q}\tilde{Q}^{\natural}$ | Biquaternion norm (scalar quadratic form) |
 | $\tilde{\nabla} = e_t\partial/\partial R_t + \sum_\mu \vec e_\mu\partial/\partial R_\mu$ | Biquaternionic gradient |

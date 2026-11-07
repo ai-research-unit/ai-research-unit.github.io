@@ -24,7 +24,7 @@ This article develops the biquaternionic formulation of the Dirac equation. The 
 
 The article is organized as follows. First the gradient and the equation are stated, then the algebra and the two values of the subscript. The equation is solved, first for plane waves and then in spherical and cylindrical coordinates, and the relation to the Maxwell equation follows. The two-sided form, the potentials and the algebra discussion close the body, and *The Legacy Pauli Gamma Formulation* prints the older display for the reader who has to compare with it.
 
-The conventions are those of the companion articles: the algebra and its units are those of *Algebra and Element Conventions*, the coordinates, the metric and the frame those of *Frame and Metric Conventions*, and the units and the two writings of the temporal slot those of *Physics Units and Most Common Elements Conventions*. No formula of theirs is repeated here. Two points are this article's own. The symbol $c$ is the speed of light **in the medium** and $c_0$ the vacuum speed, so that $c=c_0$ only in vacuum and a result quoted with $c$ is a result in the medium. A squared three-vector such as $\vec v^2$ or $\vec p^2$ is the Euclidean square, not the quaternion square, which is its negative; the symbol $v$ is kept for particle and frame velocities.
+The conventions are those of the companion articles: the algebra and its units are those of *Algebra and Element Conventions*, the coordinates, the metric and the frame those of *Frame and Metric Conventions*, and the units and the two writings of the temporal slot those of *Physics Units and Common Elements Conventions*. No formula of theirs is repeated here. Two points are this article's own. The symbol $c$ is the speed of light **in the medium** and $c_0$ the vacuum speed, so that $c=c_0$ only in vacuum and a result quoted with $c$ is a result in the medium. A squared three-vector such as $\vec v^2$ or $\vec p^2$ is the Euclidean square, not the quaternion square, which is its negative; the symbol $v$ is kept for particle and frame velocities.
 
 ## The Gradient and the Equation
 
@@ -329,7 +329,7 @@ which is obtained by expanding $-m^{2}\,c^{2}= -(E/c)^2 + \vec p^2$.
 
 ### The Four-Acceleration and Four-Force
 
-The **four-acceleration biquaternion** is $\tilde{A} = d\tilde{V}/d\tau$, where $\tau$ is the proper time. The **four-force biquaternion** is $\tilde{K}_{\mathrm{f}} = d\tilde{P}/d\tau =m\,\tilde{A}$. The four-acceleration satisfies $\tilde{A}\tilde{V}^{\natural} + \tilde{V}\tilde{A}^{\natural} = 0$, which is the biquaternion form of the orthogonality condition $\sum_\mu\varepsilon_\mu a_\mu v_\mu = 0$.
+The **four-acceleration biquaternion** is $\tilde{A} = d\tilde{V}/d\tau$, where $\tau$ is the proper time. The **four-force biquaternion** is $\tilde{\mathcal F}_{\mathrm{frc}} = d\tilde{P}/d\tau =m\,\tilde{A}$. The four-acceleration satisfies $\tilde{A}\tilde{V}^{\natural} + \tilde{V}\tilde{A}^{\natural} = 0$, which is the biquaternion form of the orthogonality condition $\sum_\mu\varepsilon_\mu a_\mu v_\mu = 0$.
 
 ### Summary of Relativistic Kinematics
 
@@ -339,7 +339,7 @@ The **four-acceleration biquaternion** is $\tilde{A} = d\tilde{V}/d\tau$, where 
 | Interval | $ds^2 = \langle d\tilde R_\Phi\rangle_{\natural} = d\tilde R_\Phi\,d\tilde{R}_\Phi^{\natural}$ | $= -c^2 d{r'_{t}}^2 +dr_x^2+dr_y^2+dr_z^2$ |
 | Four-velocity | $\tilde{V} = \gamma(ic\, e_t + \vec v)$ | $\tilde{V}\tilde{V}^{\natural} = -c^2$ |
 | Four-momentum | $\tilde{P} =m\,\tilde{V}$ | $\tilde{P}\tilde{P}^{\natural} = -m^{2}\,c^{2}$ |
-| Four-force | $\tilde{K}_{\mathrm{f}} = d\tilde{P}/d\tau$ | — |
+| Four-force | $\tilde{\mathcal F}_{\mathrm{frc}} = d\tilde{P}/d\tau$ | — |
 
 These kinematic relations are the biquaternion form of standard relativistic mechanics, and they are the natural setting for the biquaternionic Dirac equation.
 

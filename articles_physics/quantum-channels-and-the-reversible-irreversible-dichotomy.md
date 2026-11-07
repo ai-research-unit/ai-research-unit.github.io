@@ -62,13 +62,13 @@ Normalisation preservation of $Ξ$ is equivalent to **unitality** of the dual, $
 
 ### The Kraus Representation
 
-The structure theorem for completely positive maps is the **Kraus representation** (the Choi–Kraus theorem). A map $Ξ$ on $\mathbb{B}$ is completely positive if and only if there exist finitely many **Kraus operators** $\tilde{K}_l \in \mathbb{B}$ with
+The structure theorem for completely positive maps is the **Kraus representation** (the Choi–Kraus theorem). A map $Ξ$ on $\mathbb{B}$ is completely positive if and only if there exist finitely many **Kraus operators** $\tilde M_{\mathrm{kraus},l} \in \mathbb{B}$ with
 
 $$
-\boxed{\;Ξ(\tilde{Q}) = \sum_l \tilde{K}_l\,\tilde{Q}\,\tilde{K}_l^{*}\;} ,
+\boxed{\;Ξ(\tilde{Q}) = \sum_l \tilde M_{\mathrm{kraus},l}\,\tilde{Q}\,\tilde M_{\mathrm{kraus},l}^{*}\;} ,
 $$
 
-and it is trace preserving if and only if $\sum_l \tilde{K}_l^{*} \tilde{K}_l = e_t$. A completely positive, trace-preserving map is a **quantum channel**; its dual is $Ξ^{*}(\tilde R_\Psi) = \sum_l \tilde{K}_l^{*} \tilde R_\Psi\tilde{K}_l$, and the normalization is exactly $Ξ^{*}(e_t) = e_t$. The representation is not unique: two Kraus sets define the same channel precisely when they differ by a partial isometry. The **Kraus rank** is the minimal number of Kraus operators, equal to the rank of the Choi matrix $J(Ξ) = \sum_{jk} \tilde{E}_{jk}\otimesΞ(\tilde{E}_{jk})$, written on a basis $\{\tilde E_{jk}\}$ of $\mathbb{B}$, and complete positivity is the condition $J(Ξ) \geq 0$. For a qubit channel the Choi matrix is $4\times4$, so the Kraus rank is at most four.
+and it is trace preserving if and only if $\sum_l \tilde M_{\mathrm{kraus},l}^{*} \tilde M_{\mathrm{kraus},l} = e_t$. A completely positive, trace-preserving map is a **quantum channel**; its dual is $Ξ^{*}(\tilde R_\Psi) = \sum_l \tilde M_{\mathrm{kraus},l}^{*} \tilde R_\Psi\tilde M_{\mathrm{kraus},l}$, and the normalization is exactly $Ξ^{*}(e_t) = e_t$. The representation is not unique: two Kraus sets define the same channel precisely when they differ by a partial isometry. The **Kraus rank** is the minimal number of Kraus operators, equal to the rank of the Choi matrix $J(Ξ) = \sum_{jk} \tilde{E}_{jk}\otimesΞ(\tilde{E}_{jk})$, written on a basis $\{\tilde E_{jk}\}$ of $\mathbb{B}$, and complete positivity is the condition $J(Ξ) \geq 0$. For a qubit channel the Choi matrix is $4\times4$, so the Kraus rank is at most four.
 
 The companion article already introduced this form for generalized measurements. The point here is that it describes *every* physical process, not only measurement.
 
@@ -98,7 +98,7 @@ $$
 Ξ_{\tilde Q}(\tilde{Ϛ}) = \tilde Q\,\tilde{Ϛ}\,\tilde Q^{*}, \qquad \tilde Q \in \mathbb{B}, \quad \tilde Q\tilde Q^{*} = e_t .
 $$
 
-This is a channel with the single Kraus operator $\tilde{K} = \tilde Q$, and it maps states to states because $\tilde Q\tilde{Ϛ}\tilde Q^{*}$ is Hermitian, positive, and of trace one.
+This is a channel with the single Kraus operator $\tilde M_{\mathrm{kraus}} = \tilde Q$, and it maps states to states because $\tilde Q\tilde{Ϛ}\tilde Q^{*}$ is Hermitian, positive, and of trace one.
 
 Here "$*$-unitary" means $*$-unitary in the matrix sense, $\tilde Q\tilde Q^{*} = e_t$, and the $*$-unitary biquaternions form the group $\mathrm{U}(2) \subset \mathbb{B}$. This must be distinguished from the condition $\tilde Q\tilde Q^{\natural} = e_t$ of unit **biquaternion norm**, which defines $SL(2,\mathbb{C})$ and describes the Lorentz rotors acting on the material sector $\mathbb{B}_{\Phi}$. A Lorentz boost rotor is Hermitian and hence is **not** matrix-unitary: for a boost, $\tilde Q\tilde Q^{*} = \tilde Q^2 \neq e_t$. Conjugation by a boost does not preserve the trace, so a boost is not a channel. The reversible processes of the informational sector are the *matrix-unitary* conjugations. The distinction is one of sector, not of group type. On $\mathbb{B}_{\Phi}$ the group $\{\tilde Q:\tilde Q\tilde Q^{\natural}=e_t\}=SL(2,\mathbb{C})$ gives the whole proper orthochronous Lorentz group, up to the double cover; on $\mathbb{B}_{\Psi}$ only the compact factor acts, so the image is the maximal compact subgroup $\mathrm{U}(2)$. The $\mathbb{B}_{\Psi}$ transformation is therefore the compact half of the same group, not a second group: Lorentz is boost times rotation, and on $\mathbb{B}_{\Psi}$ only the rotation survives.
 
@@ -143,7 +143,7 @@ The kernel is explicit. For an element with $B\neq0$ the logarithms differ by th
 
 The map $Ξ_{\tilde Q}$ is invertible, with inverse $Ξ^{-1}_{\tilde Q} = Ξ_{\tilde Q^{*}} = Ξ_{\tilde Q(-r'_t)}$, again a $*$-unitary channel: $*$-unitary evolution is **reversible**.
 
-The converse is the precise statement of the dichotomy. A completely positive, trace-preserving map on $\mathbb{B} \cong M_2(\mathbb{C})$ is invertible, with an inverse that is again completely positive and trace preserving, **if and only if** it is conjugation by a $*$-unitary element; equivalently, a channel preserves the purity of every state if and only if it is a $*$-unitary conjugation. In the Kraus language the criterion is transparent: a channel with Kraus rank one has the form $Ξ(\tilde{Q}) = \tilde{K}\tilde{Q}\tilde{K}^{*}$ with $\tilde{K}^{*}\tilde{K} = e_t$, so $\tilde{K}$ is $*$-unitary; and a $*$-unitary conjugation has Kraus rank one. Hence
+The converse is the precise statement of the dichotomy. A completely positive, trace-preserving map on $\mathbb{B} \cong M_2(\mathbb{C})$ is invertible, with an inverse that is again completely positive and trace preserving, **if and only if** it is conjugation by a $*$-unitary element; equivalently, a channel preserves the purity of every state if and only if it is a $*$-unitary conjugation. In the Kraus language the criterion is transparent: a channel with Kraus rank one has the form $Ξ(\tilde{Q}) = \tilde M_{\mathrm{kraus}}\tilde{Q}\tilde M_{\mathrm{kraus}}^{*}$ with $\tilde M_{\mathrm{kraus}}^{*}\tilde M_{\mathrm{kraus}} = e_t$, so $\tilde M_{\mathrm{kraus}}$ is $*$-unitary; and a $*$-unitary conjugation has Kraus rank one. Hence
 
 $$
 \boxed{\;\text{reversible} \quad\Longleftrightarrow\quad \text{Kraus rank one} \quad\Longleftrightarrow\quad Ξ = Ξ_{\tilde Q} \text{ for some }{}^{*}\text{-unitary } \tilde Q\;} .
@@ -155,7 +155,7 @@ The kernel of $\tilde Q \mapsto Ξ_{\tilde Q}$ on $\mathbb{B}_{\Psi}$ is the gro
 
 ### Sums of Conjugations and Stinespring Dilation
 
-A general quantum channel is a sum of conjugations, $Ξ(\tilde{Ϛ}) = \sum_l \tilde{K}_l\tilde{Ϛ}\tilde{K}_l^{*}$ with $\sum_l \tilde{K}_l^{*}\tilde{K}_l = e_t$, involving two or more Kraus operators. But a trace-preserving channel with a single Kraus operator is necessarily $*$-unitary, since $\tilde{K}^{*}\tilde{K} = e_t$ *is* unitarity. It follows that **a channel is irreversible precisely when its Kraus rank is at least two**. Irreversibility is not a matter of degree in the action of a single element; it is the presence of a sum, and the choice among the terms is what the map forgets.
+A general quantum channel is a sum of conjugations, $Ξ(\tilde{Ϛ}) = \sum_l \tilde M_{\mathrm{kraus},l}\tilde{Ϛ}\tilde M_{\mathrm{kraus},l}^{*}$ with $\sum_l \tilde M_{\mathrm{kraus},l}^{*}\tilde M_{\mathrm{kraus},l} = e_t$, involving two or more Kraus operators. But a trace-preserving channel with a single Kraus operator is necessarily $*$-unitary, since $\tilde M_{\mathrm{kraus}}^{*}\tilde M_{\mathrm{kraus}} = e_t$ *is* unitarity. It follows that **a channel is irreversible precisely when its Kraus rank is at least two**. Irreversibility is not a matter of degree in the action of a single element; it is the presence of a sum, and the choice among the terms is what the map forgets.
 
 The information-theoretic picture is that the Kraus operators describe the interaction of the system with an environment that is not observed. This is made precise by the **Stinespring dilation**: every channel can be written
 
@@ -199,7 +199,7 @@ $$
 + p\left(\tilde\Pi_1\,\tilde{Ϛ}\,\tilde\Pi_1 + \tilde\Pi_2\,\tilde{Ϛ}\,\tilde\Pi_2\right)\;}.
 $$
 
-It is completely positive and trace preserving with the three Kraus operators $\tilde{K}_0 = \sqrt{1-p}\,e_t$, $\tilde{K}_1 = \sqrt{p}\,\tilde\Pi_1(\vec u)$, $\tilde{K}_2 = \sqrt{p}\,\tilde\Pi_2(\vec u)$: because the idempotents are Hermitian, $\tilde{K}_1^{*}\tilde{K}_1 + \tilde{K}_2^{*}\tilde{K}_2 = p(\tilde\Pi_1 + \tilde\Pi_2) = p\,e_t$, and the normalization sums to $(1-p)e_t + p\,e_t = e_t$.
+It is completely positive and trace preserving with the three Kraus operators $\tilde M_{\mathrm{kraus},0} = \sqrt{1-p}\,e_t$, $\tilde M_{\mathrm{kraus},1} = \sqrt{p}\,\tilde\Pi_1(\vec u)$, $\tilde M_{\mathrm{kraus},2} = \sqrt{p}\,\tilde\Pi_2(\vec u)$: because the idempotents are Hermitian, $\tilde M_{\mathrm{kraus},1}^{*}\tilde M_{\mathrm{kraus},1} + \tilde M_{\mathrm{kraus},2}^{*}\tilde M_{\mathrm{kraus},2} = p(\tilde\Pi_1 + \tilde\Pi_2) = p\,e_t$, and the normalization sums to $(1-p)e_t + p\,e_t = e_t$.
 
 ### The Bloch Vector Formula
 
@@ -302,7 +302,7 @@ The dichotomy of this article is the dichotomy of **Kraus rank**: a channel is r
 
 ## Summary
 
-A general state map on the informational sector is a linear map on $\mathbb{B}_{\Psi}$, extended complex-linearly to $\mathbb{B} = \mathbb{B}_{\Psi} \oplus \mathbb{B}_{\Phi}$ and required to be completely positive and trace preserving. Complete positivity guarantees that the map remains positive when the system is entangled with a reference system; trace preservation guarantees that it sends states to states. Every such map has a Kraus representation $Ξ(\tilde{Ϛ}) = \sum_l \tilde{K}_l\tilde{Ϛ}\tilde{K}_l^{*}$ with $\sum_l \tilde{K}_l^{*}\tilde{K}_l = e_t$, and the minimal number of Kraus operators is the Choi rank.
+A general state map on the informational sector is a linear map on $\mathbb{B}_{\Psi}$, extended complex-linearly to $\mathbb{B} = \mathbb{B}_{\Psi} \oplus \mathbb{B}_{\Phi}$ and required to be completely positive and trace preserving. Complete positivity guarantees that the map remains positive when the system is entangled with a reference system; trace preservation guarantees that it sends states to states. Every such map has a Kraus representation $Ξ(\tilde{Ϛ}) = \sum_l \tilde M_{\mathrm{kraus},l}\tilde{Ϛ}\tilde M_{\mathrm{kraus},l}^{*}$ with $\sum_l \tilde M_{\mathrm{kraus},l}^{*}\tilde M_{\mathrm{kraus},l} = e_t$, and the minimal number of Kraus operators is the Choi rank.
 
 The reversible/irreversible dichotomy is the dichotomy of Kraus rank. A channel is reversible if and only if it has Kraus rank one, which happens if and only if it is conjugation by a $*$-unitary biquaternion, $\tilde{Ϛ} \mapsto \tilde Q\tilde{Ϛ}\tilde Q^{*}$ with $\tilde Q\tilde Q^{*} = e_t$. This is exactly the class of inner automorphisms of the algebra, and exactly the class of channels that preserve purity. The one-parameter subgroups are generated by Hamiltonians $\tilde R_\Psi \in \mathbb{B}_{\Psi}$ through $\tilde Q(r'_t) = \exp(-\frac{k_m\,i\,Hr'_{t}}{m\,c})$, whose generators $-\frac{k_m\,i\,H}{m\,c}$ lie in the complementary subspace $\mathbb{B}_{\Phi}$. A channel is irreversible if and only if its Kraus rank is at least two; the general irreversible channel is a sum of conjugations, and by Stinespring dilation it is the reduction of a reversible evolution on a larger system with the environment discarded.
 
@@ -325,10 +325,10 @@ The relation of the split to the two subspaces is asymmetric. States and observa
 | $\tilde R_\Psi = c r_t e_t + i\vec r_\Psi$ | Observable / Hamiltonian |
 | $\tilde\Pi_{1,2}(\vec u) = \tfrac{1}{2}(e_t \pm i\vec u)$ | Idempotents (pure states) |
 | $\operatorname{Tr}(\tilde{Ϛ}\tilde R_\Psi^{*})=\operatorname{Tr}(\tilde{Ϛ}\tilde R_\Psi)=2\,\mathrm{Sc}(\tilde{Ϛ}\tilde R_\Psi^{*}) = 2\langle\tilde{Ϛ},\tilde R_\Psi\rangle_{*}$ | Trace reading at normalisation (Born rule) |
-| $Ξ(\tilde{Ϛ}) = \sum_l \tilde{K}_l\tilde{Ϛ}\tilde{K}_l^{*}$ | Kraus representation of a channel |
-| $\sum_l \tilde{K}_l^{*}\tilde{K}_l = e_t$ | Trace-preservation condition |
+| $Ξ(\tilde{Ϛ}) = \sum_l \tilde M_{\mathrm{kraus},l}\tilde{Ϛ}\tilde M_{\mathrm{kraus},l}^{*}$ | Kraus representation of a channel |
+| $\sum_l \tilde M_{\mathrm{kraus},l}^{*}\tilde M_{\mathrm{kraus},l} = e_t$ | Trace-preservation condition |
 | $\tilde M_{\mathrm{kraus},l}=\tilde R_\Psi_{\mathrm{pos},l}\tilde U_{\mathrm{p},l}$, $\tilde R_\Psi_{\mathrm{pos},l}=\sqrt{\tilde M_{\mathrm{kraus},l}\tilde M_{\mathrm{kraus},l}^{*}}$ | Generalized Cartan factorization of a Kraus operator; $\tilde R_\Psi_{\mathrm{pos},l}\ge0$, $\tilde U_{\mathrm{p},l}$ a partial isometry |
-| $Ξ^{*}(\tilde R_\Psi) = \sum_l \tilde{K}_l^{*}\tilde R_\Psi\tilde{K}_l$ | Dual (Heisenberg-picture) map |
+| $Ξ^{*}(\tilde R_\Psi) = \sum_l \tilde M_{\mathrm{kraus},l}^{*}\tilde R_\Psi\tilde M_{\mathrm{kraus},l}$ | Dual (Heisenberg-picture) map |
 | $\tilde Q(r'_t) = \exp(-\frac{k_m\,i\,Hr'_{t}}{m\,c})$ | One-parameter $*$-unitary group |
 | $-\frac{k_m\,i\,H}{m\,c\,\in\,\mathbb{B}}_{\Phi}$ | Generator of reversible evolution |
 | $Ξ_{\mathrm{deph},p}$ | Dephasing channel along $\vec u$ |

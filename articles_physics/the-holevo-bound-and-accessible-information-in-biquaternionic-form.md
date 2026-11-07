@@ -158,10 +158,10 @@ This is the Holevo bound, sometimes called the Holevo–Schumacher–Westmorelan
 
 The standard proof has two steps, both of which are theorems about entropy under maps.
 
-**Step 1: the measurement is a quantum channel.** A measurement with POVM $\{\tilde{E}_y\}$ followed by the recording of the outcome is a completely positive trace-preserving map carrying the quantum state to a classical state. In the Kraus language, choosing any square roots $\tilde{K}_y = \tilde{E}_y^{1/2}$ gives $\tilde{E}_y = \tilde{K}_y^{*}\tilde{K}_y$ and
+**Step 1: the measurement is a quantum channel.** A measurement with POVM $\{\tilde{E}_y\}$ followed by the recording of the outcome is a completely positive trace-preserving map carrying the quantum state to a classical state. In the Kraus language, choosing any square roots $\tilde M_{\mathrm{kraus},y} = \tilde{E}_y^{1/2}$ gives $\tilde{E}_y = \tilde M_{\mathrm{kraus},y}^{*}\tilde M_{\mathrm{kraus},y}$ and
 
 $$
-Ξ(\tilde{Ϛ}) = \sum_y \mathrm{Tr}\bigl(\tilde{K}_y\tilde{Ϛ}\tilde{K}_y^{*}\bigr)\,|y\rangle\langle y| ,
+Ξ(\tilde{Ϛ}) = \sum_y \mathrm{Tr}\bigl(\tilde M_{\mathrm{kraus},y}\tilde{Ϛ}\tilde M_{\mathrm{kraus},y}^{*}\bigr)\,|y\rangle\langle y| ,
 $$
 
 a channel from $\mathbb{B}_{\Psi}$ to the diagonal (commutative) subalgebra of the register, with Kraus rank at most the number of outcomes. The measured classical state is $Ξ(\tilde{Ϛ}^{\natural})$.

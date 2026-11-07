@@ -154,10 +154,10 @@ $$
 \frac{d}{dr'_t}\left(\tilde{P}_1 + \tilde{P}_2\right) = 0,
 $$
 
-where $r'_t$ is the time coordinate of a fixed inertial frame. Introducing the coordinate-time four-forces $\tilde{K}_{\mathrm{f},a} = d\tilde{P}_a/dr'_t$, this reads
+where $r'_t$ is the time coordinate of a fixed inertial frame. Introducing the coordinate-time four-forces $\tilde{\mathcal F}_{\mathrm{frc},a} = d\tilde{P}_a/dr'_t$, this reads
 
 $$
-\tilde{K}_{\mathrm{f},1} + \tilde{K}_{\mathrm{f},2} = 0.
+\tilde{\mathcal F}_{\mathrm{frc},1} + \tilde{\mathcal F}_{\mathrm{frc},2} = 0.
 $$
 
 Because the decomposition into scalar (time) and vector (space) parts is by real-linear projections, the single biquaternion equation is equivalent to the separate conservation of total energy and total three-momentum in the chosen frame:

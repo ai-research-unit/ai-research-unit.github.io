@@ -412,13 +412,13 @@ In the standard framework, the measurement postulate is stated separately from t
 - **Probability** $p_+=\langle\tilde\Pi_1,\tilde{Ϛ}\rangle_{*}/\langle\tilde{Ϛ},e_t\rangle_{*}=\mathrm{Sc}(\tilde\Pi_1\tilde{Ϛ}^{*})/\mathrm{Sc}(\tilde{Ϛ})$, whose trace reading at normalisation is $\operatorname{Tr}(\tilde\Pi_1\tilde{Ϛ}^{*})=\operatorname{Tr}(\tilde\Pi_1\tilde{Ϛ}) = 2\langle\tilde\Pi_1,\tilde{Ϛ}\rangle_{*}$.
 - **Post-measurement state** $\tilde{Ϛ}_{\mathrm{out}} = \tilde\Pi_1$, from the sandwich operation.
 
-**Generalized measurement.** A general measurement is described by a set of **Kraus operators** $\{\tilde{K}_i\} \subset \mathbb{B}$ satisfying $\sum_i \tilde{K}_i^{*}\tilde{K}_i = e_t$. The action on a state is
+**Generalized measurement.** A general measurement is described by a set of **Kraus operators** $\{\tilde M_{\mathrm{kraus},i}\} \subset \mathbb{B}$ satisfying $\sum_i \tilde M_{\mathrm{kraus},i}^{*}\tilde M_{\mathrm{kraus},i} = e_t$. The action on a state is
 
 $$
-\tilde{Ϛ} \;\longmapsto\; \sum_i \tilde{K}_i\,\tilde{Ϛ}\,\tilde{K}_i^{*},
+\tilde{Ϛ} \;\longmapsto\; \sum_i \tilde M_{\mathrm{kraus},i}\,\tilde{Ϛ}\,\tilde M_{\mathrm{kraus},i}^{*},
 $$
 
-and the probability of outcome $i$ is $p_i=\mathrm{Sc}(\tilde{K}_i^{*}\tilde{K}_i\tilde{Ϛ})/\mathrm{Sc}(\tilde{Ϛ})$, whose trace reading at normalisation is $\operatorname{Tr}(\tilde{K}_i^{*} \tilde{K}_i \tilde{Ϛ})$. The Kraus operators are elements of $\mathbb{B}$, and the framework inherits the full POVM formalism in biquaternion language.
+and the probability of outcome $i$ is $p_i=\mathrm{Sc}(\tilde M_{\mathrm{kraus},i}^{*}\tilde M_{\mathrm{kraus},i}\tilde{Ϛ})/\mathrm{Sc}(\tilde{Ϛ})$, whose trace reading at normalisation is $\operatorname{Tr}(\tilde M_{\mathrm{kraus},i}^{*} \tilde M_{\mathrm{kraus},i} \tilde{Ϛ})$. The Kraus operators are elements of $\mathbb{B}$, and the framework inherits the full POVM formalism in biquaternion language.
 
 **A structural point.** The **reversible–irreversible distinction** is algebraic in the biquaternion framework. $*$-Unitary elements $\tilde Q$ preserve the biquaternion norm of $\mathbb{B}$ and generate reversible evolution. Idempotent elements $\tilde\Pi$ do not preserve the biquaternion norm (they satisfy $\tilde\Pi^2 = \tilde\Pi$ but $\langle\tilde\Pi\rangle_{\natural} = \tilde\Pi\tilde\Pi^{\natural} = 0$) and generate irreversible projection. The two kinds of process are distinguished by a property of the acting element, not by a separate postulate.
 

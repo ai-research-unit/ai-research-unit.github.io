@@ -212,7 +212,7 @@ $$
 V(\tilde Q_1^{\natural}\tilde Q_2^{*})=V(\tilde Q_1^{\natural}\tilde Q_2^{*}),
 $$
 
-and it satisfies $V(\tilde Q_1\tilde Q_2^{*})+V(\tilde Q_1^{\natural}\tilde Q_2^{*})=-2Q_{1t}\overline{\vec Q_2}$. Its scalar part is the Krein form $K$. It is the only general product whose vector part has both a conjugate-symmetric and a conjugate-alternating piece.
+and it satisfies $V(\tilde Q_1\tilde Q_2^{*})+V(\tilde Q_1^{\natural}\tilde Q_2^{*})=-2Q_{1t}\overline{\vec Q_2}$. Its scalar part is the Krein form $\mathrm{Kr}$. It is the only general product whose vector part has both a conjugate-symmetric and a conjugate-alternating piece.
 
 ## The Four Symmetric Vector Parts
 
@@ -272,7 +272,7 @@ $$
 V(\tilde Q_1\bullet_{\natural*}\tilde Q_2)=\tfrac12\bigl(V(\tilde Q_1^{\natural}\tilde Q_2^{*})+\overline{V(\tilde Q_2^{\natural}\tilde Q_1^{*})}\bigr).
 $$
 
-Its diagonal is $-Q_t\overline{\vec Q}-\overline{Q_t}\vec Q$, a real vector. It vanishes exactly when $Q_t=0$ or $\vec Q=iQ_t\vec r$ with $\vec r$ a real vector. Its image is all of $\mathbb{B}_{V}$, and its diagonal image is the real vector subspace $\mathrm{Vect}_{\mathbb{R}}(\mathbb{B})$. On pure vectors it vanishes. Its scalar part is the Krein form $K$; the values of the product itself lie in no remarkable subspace of *Subspaces and Decompositions*.
+Its diagonal is $-Q_t\overline{\vec Q}-\overline{Q_t}\vec Q$, a real vector. It vanishes exactly when $Q_t=0$ or $\vec Q=iQ_t\vec r$ with $\vec r$ a real vector. Its image is all of $\mathbb{B}_{V}$, and its diagonal image is the real vector subspace $\mathrm{Vect}_{\mathbb{R}}(\mathbb{B})$. On pure vectors it vanishes. Its scalar part is the Krein form $\mathrm{Kr}$; the values of the product itself lie in no remarkable subspace of *Subspaces and Decompositions*.
 
 ## The Four Antisymmetric Vector Parts
 

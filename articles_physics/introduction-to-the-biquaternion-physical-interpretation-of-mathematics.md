@@ -167,9 +167,9 @@ The category reads a second corpus as well. The *Biquaternion Algebraic Structur
 
 #### Algebra with the K Norm
 
-- [K-Regularity and Degeneracy in the Biquaternion Algebra](../articles_maths/k-regularity-and-degeneracy-in-the-biquaternion-algebra.html)
-- [The K-Regular Sector](../articles_maths/the-k-regular-sector.html)
-- [The K-Degenerate Sector](../articles_maths/the-k-degenerate-sector.html)
+- [Kr-Regularity and Degeneracy in the Biquaternion Algebra](../articles_maths/kr-regularity-and-degeneracy-in-the-biquaternion-algebra.html)
+- [The Kr-Regular Sector](../articles_maths/the-kr-regular-sector.html)
+- [The Kr-Degenerate Sector](../articles_maths/the-kr-degenerate-sector.html)
 
 #### Remarkable Subspaces and the Forms
 

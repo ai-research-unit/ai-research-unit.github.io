@@ -59,7 +59,7 @@ F_{jk}=\epsilon_{jkl}B_l
 \qquad\text{(real components)},
 $$
 
-and the charge contraction is $\tilde{K}_{\mathrm{f}}=ϙ\,\mathrm{F}(\tilde{V})$, the biquaternion form of the Lorentz force of Companion article *The Lorentz Force in Biquaternion Form*, for the four-force as an anti-Hermitian projection.
+and the charge contraction is $\tilde{\mathcal F}_{\mathrm{frc}}=ϙ\,\mathrm{F}(\tilde{V})$, the biquaternion form of the Lorentz force of Companion article *The Lorentz Force in Biquaternion Form*, for the four-force as an anti-Hermitian projection.
 
 Here $\tau$ is proper time, $r'_t$ laboratory time, $\vec v$ the velocity, $\gamma$ the Lorentz factor, $\vec E$ and $\vec B$ the electric field and magnetic induction, and $ϙ,m,g$ the charge, mass, and gyromagnetic factor. The projection is $P_{\mathbb{B}_{\Phi}}(\tilde{Q})=\tfrac12(\tilde{Q}-\tilde{Q}^{*})$, and the Hermitian form on $\mathbb{B}_{\Psi}$, read through the trace, is $\mathrm{Tr}(\tilde Q_1\tilde Q_2)=2\,\mathrm{Sc}(\tilde Q_1\tilde Q_2)$.
 
@@ -434,7 +434,7 @@ is the subject of the companion article of this subcategory. The equation's two-
 | $P_{\mathbb{B}_{\Phi}}(\tilde{Q})=\tfrac12(\tilde{Q}-\tilde{Q}^{*})$ | Projection onto the material sector |
 | $\tilde{V}=\gamma(ic\,e_t+\vec v)$ | Four-velocity, $\langle\tilde{V}\rangle_{\natural}=-c^2$ |
 | $\tilde{P}=m\tilde{V}=iE/c\,e_t+\vec p$ | Four-momentum |
-| $\tilde{K}_{\mathrm{f}}=d\tilde{P}/d\tau=ϙ\,\mathrm{F}(\tilde{V})$ | Four-force (Lorentz force), in $\mathbb{B}_{\Phi}$ |
+| $\tilde{\mathcal F}_{\mathrm{frc}}=d\tilde{P}/d\tau=ϙ\,\mathrm{F}(\tilde{V})$ | Four-force (Lorentz force), in $\mathbb{B}_{\Phi}$ |
 | $\tilde{S}=iS_0e_t+\vec S_{\rm vec}$ | Spin four-vector, in $\mathbb{B}_{\Phi}$, $\langle\tilde{S},\tilde{V}\rangle=0$ |
 | $\tilde U_{\mathrm{lor},\vec v}$ | Lorentz boost rotor to the momentary rest frame |
 | $\vec s$ | Rest-frame spin, $\langle\tilde{S}\rangle_\natural=\vec s^2$ |
