@@ -95,32 +95,12 @@ $$</p>
 <p>two first-order equations in two chiral halves, and the spinorial part below is read in that form. Here $\hbar/(mc)$ is the mass length.</p>
 <p><strong>The source's letter.</strong> The source writes its calculus with one letter for a first-order operator of its own, one generator per coordinate. That operator is not one of the corpus's conventions, and this article neither uses it nor displays it. The free-field content of the source is carried here by $\tilde\nabla$; the massive content by the chiral pair. Where the source's own equation is translated, the translation is stated once, and no cell appears.</p>
 <p><strong>Worked action.</strong> The operator is read off the multiplication table of the units. With $c=1$, constants die, and a coordinate times a unit returns the product of that coordinate's unit with the unit.</p>
-<div class="table-scroll"><table>
-<thead>
-<tr>
-<th>$\tilde{Ξ}_{\mathrm{sp}}$</th>
-<th>$\tilde\nabla\tilde{Ξ}_{\mathrm{sp}}$</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>$\vec e_z$</td>
-<td>$0$</td>
-</tr>
-<tr>
-<td>$q_x\vec e_y$</td>
-<td>$\vec e_z$</td>
-</tr>
-<tr>
-<td>$r'_t\vec e_x$</td>
-<td>$-i\vec e_x$</td>
-</tr>
-<tr>
-<td>$\sin q_x\,\vec e_x$</td>
-<td>$-\cos q_x\,e_t$</td>
-</tr>
-</tbody>
-</table></div>
+<p>| $\tilde{Ξ}_{\mathrm{sp}}$ | $\tilde\nabla\tilde{Ξ}_{\mathrm{sp}}$ |
+|+-|+-|
+| $\vec e_z$ | $0$ |
+| $q_x\vec e_y$ | $\vec e_z$ |
+| $r'_t\vec e_x$ | $-i\vec e_x$ |
+| $\sin q_x\,\vec e_x$ | $-\cos q_x\,e_t$ |</p>
 <p>The time entry carries the $-i$ of $\partial/\partial R_t=-i\,\partial/\partial r'_t$; the spatial entries carry the multiplication table, $\vec e_x\vec e_y=\vec e_z$ and $\vec e_x\vec e_x=-e_t$. These are the values of the gradient, not of the source's own operator, and they are the only ones used below.</p>
 <p>The source's <strong>volume element</strong> is the product of its four frame generators. In the algebra it acts on the field as right multiplication by $-\vec e_z$, so the element is</p>
 <p>$$
@@ -133,17 +113,17 @@ $$</p>
 <h3 id="the-plane-wave-and-the-duality">The plane wave and the duality</h3>
 <p>The free equation $\tilde\nabla\tilde F=0$ is solved by the plane wave</p>
 <p>$$
-\tilde F = f\,\exp(i\theta_{\mathrm{pha}}),\qquad \theta_{\mathrm{pha}}=k_{t}^{\prime}x_0-\vec k\cdot\vec q ,
+\tilde F = f\,\exp(i\theta_{\mathrm{pha}}),\qquad \theta_{\mathrm{pha}}=k_{t}^{\prime}x_0-\vec k_\Phi\cdot\vec q ,
 $$</p>
 <p>with $f$ a constant element and $k$ the propagation vector. The gradient acts on the phase through the symbol</p>
 <p>$$
-\tilde K=k_{t}^{\prime}-i\vec k,\qquad \vec k=\sum_k\vec e_k k_k ,
+-i\tilde K_{\Phi}=k_{t}^{\prime}-i\vec k_\Phi,\qquad \vec k_\Phi=\sum_k\vec e_k k_k ,
 $$</p>
-<p>so the equation is $\tilde Kf=0$. Applying $\tilde K^{\natural}$ on the left gives $\tilde K^{\natural}\tilde Kf=(k_{t}^{\prime\,2}-|\vec k|^2)f=0$, and the propagation vector is <strong>null</strong>,</p>
+<p>so the equation is $-i\tilde K_{\Phi}f=0$. Applying $i\tilde K_{\Phi}^{\natural}$ on the left gives $i\tilde K_{\Phi}^{\natural}\cdot(-i\tilde K_{\Phi})f=-\tilde K_{\Phi}^{\natural}\tilde K_{\Phi}f=(k_{t}^{\prime\,2}-|\vec k_\Phi|^2)f=0$, and the propagation vector is <strong>null</strong>,</p>
 <p>$$
-k^2=0\quad\Longleftrightarrow\quad k_{t}^{\prime}=\pm|\vec k| .
+k^2=0\quad\Longleftrightarrow\quad k_{t}^{\prime}=\pm|\vec k_\Phi| .
 $$</p>
-<p>The condition $\tilde Kf=0$ is four independent complex conditions on the six complex components of $f$. On a null $k$ its kernel is two-dimensional, the two polarizations, and on the whole kernel $f^2=0$: the plane wave has <strong>null invariants</strong>. The step is not a cancellation, because a null $\tilde K$ has no inverse; it is the rank of left multiplication by a null element. Checked on the six components for several null $k$, the kernel is two-dimensional and $f^2=0$ on it. The invariant $\tilde F^2=f^2\exp(2i\theta_{\mathrm{pha}})$ vanishes with it.</p>
+<p>The condition $-i\tilde K_{\Phi}f=0$ is four independent complex conditions on the six complex components of $f$. On a null $k$ its kernel is two-dimensional, the two polarizations, and on the whole kernel $f^2=0$: the plane wave has <strong>null invariants</strong>. The step is not a cancellation, because a null $-i\tilde K_{\Phi}$ has no inverse; it is the rank of left multiplication by a null element. Checked on the six components for several null $k$, the kernel is two-dimensional and $f^2=0$ on it. The invariant $\tilde F^2=f^2\exp(2i\theta_{\mathrm{pha}})$ vanishes with it.</p>
 <p>Both facts are the standard ones, and the source's point in restating them is the contrast with what follows — the plane waves of the free equation sit on the special null case, and the source then exhibits solutions that do not.</p>
 <p>The role of the volume element is worth one paragraph, because the source insists on it. Since $\omega^2=-1$, the source's exponential splits as $\exp(\omega\theta_{\mathrm{pha}})=\cos\theta_{\mathrm{pha}}+\omega\sin\theta_{\mathrm{pha}}$, and the electric and magnetic parts of its field are a quarter period apart. That is the source's display. The corpus writes the same plane wave with the central $i$, and its <strong>duality rotation</strong> is $F\mapsto\exp(i\theta)F$, as in <em>The Field-Strength Biquaternion and Its Invariants</em>. The source's $\omega$ and the corpus's central $i$ are different elements; both square to $-1$ and both generate a phase, and the article keeps them apart. The duality parameter is the one that governs the non-linear equation below.</p>
 <h3 id="the-hertz-potential">The Hertz potential</h3>
@@ -352,52 +332,12 @@ $$</p>
 M_p=m+\frac{3}{2\alpha}m\sum_{l=0}^{p}4^l
 $$</p>
 <p>and reads off $M_0=m$, $M_1=m_\mu$, $M_2=m_\tau$, $M_3=20090\,m_e=10291$ MeV. The formula gives none of those numbers. What reproduces the tau is the <strong>last term alone</strong>, $1+4^p$ at $p=2$, which is the $1+16$ of the tau paragraph above; $1+4^p$ and the sum coincide only at $p=1$:</p>
-<div class="table-scroll"><table>
-<thead>
-<tr>
-<th>$p$</th>
-<th>printed</th>
-<th>$\sum_{l=0}^{p}4^l$</th>
-<th>from the sum</th>
-<th>$1+4^p$</th>
-<th>from the last term</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>0</td>
-<td>$m_e$</td>
-<td>$1$</td>
-<td>$206.55\,m_e$</td>
-<td>$2$</td>
-<td>$412\,m_e$</td>
-</tr>
-<tr>
-<td>1</td>
-<td>$206.55\,m_e$</td>
-<td>$5$</td>
-<td>$1029\,m_e$</td>
-<td>$5$</td>
-<td>$1029\,m_e$</td>
-</tr>
-<tr>
-<td>2</td>
-<td>$3495\,m_e$</td>
-<td>$21$</td>
-<td>$4318\,m_e$</td>
-<td>$17$</td>
-<td>$3495\,m_e$</td>
-</tr>
-<tr>
-<td>3</td>
-<td>$20090\,m_e$</td>
-<td>$85$</td>
-<td>$17473\,m_e$</td>
-<td>$65$</td>
-<td>$13362\,m_e$</td>
-</tr>
-</tbody>
-</table></div>
+<p>| $p$ | printed | $\sum_{l=0}^{p}4^l$ | from the sum | $1+4^p$ | from the last term |
+|+-|+-|+-|+-|+-|+-|
+| 0 | $m_e$ | $1$ | $206.55\,m_e$ | $2$ | $412\,m_e$ |
+| 1 | $206.55\,m_e$ | $5$ | $1029\,m_e$ | $5$ | $1029\,m_e$ |
+| 2 | $3495\,m_e$ | $21$ | $4318\,m_e$ | $17$ | $3495\,m_e$ |
+| 3 | $20090\,m_e$ | $85$ | $17473\,m_e$ | $65$ | $13362\,m_e$ |</p>
 <p>Neither column matches the print. The <strong>sum</strong> shifts the whole sequence by one: it gives the muon where the print gives the electron, so $M_0\ne m$ and every later entry is one step ahead. The <strong>last term</strong> is right at the tau and wrong everywhere else, offering $412\,m_e=211$ MeV and $1029\,m_e=526$ MeV as leptons at $p=0$ and $p=1$, and $13362\,m_e=6828$ MeV at $p=3$. The muon's own number comes from the <strong>separate</strong> formula $M=m(1+3n/2\alpha)$ at $n=1$, and the tau's from the last term at $p=2$; no single reading of (6.24) gives both.</p>
 <p>Two entries of the table are unreadable rather than wrong, and the table carries the corrected values. The scan shows the tau coefficient as $3845\,m_e$, where $1+17\cdot\frac{3}{2\alpha}=3495\,m_e$; the $1785$ MeV printed beside it belongs to $3495\,m_e$, while $3845\,m_e$ is $1965$ MeV, so a digit has slipped between the two numbers and $3495$ is the intended coefficient. The $M_3$ entry, $20090\,m_e$, is $10266$ MeV at $m_ec^2=0.511$ MeV, not the $10291$ MeV printed beside it — the two entries would need different electron rest energies to agree with their own MeV figures. What the table above rests on is the <strong>formula</strong> rather than the digits, and the formula does not reproduce the sequence it is said to give. The hypothesis itself is called ad hoc in the paper.</p>
 <h2 id="maxwell-and-the-massless-dirac-equation">Maxwell and the Massless Dirac Equation</h2>
@@ -435,120 +375,34 @@ $$</p>
 <h2 id="summary">Summary</h2>
 <p>The programme of Rodrigues and Vaz works in a bundle of differential forms and presses the free Maxwell equation $\tilde\nabla\tilde F=0$ in two directions. It exhibits <strong>subluminal and superluminal undistorted progressive wave solutions with non-null invariants and longitudinal components</strong>, built from a Hertz potential and a spherical Helmholtz solution, and connects the free stationary solution to the old question of purely electromagnetic particles. It represents the field as the <strong>spinor bilinear</strong> $F=-\tilde{Ξ}_{\mathrm{sp}}\vec e_z\tilde{Ξ}_{\mathrm{sp}}^{\natural}$ and shows the Maxwell equation to be a <strong>non-linear Dirac–Hestenes equation</strong>, with the <strong>Takabayasi angle</strong> as the knob: the two constraints collapse its two coefficients into a single real one for every $\theta_{\mathrm{dua}}$, a conserved current makes that coefficient the mass, and $0$ and $\pi$ then give the electron and the positron, while $\pi/2$ and $3\pi/2$ make it the muon and the antimuon once a magnetic current is added, with $M=m(1+3n/2\alpha)$ at $n=1$. In the other direction the <strong>massless Dirac equation is a Maxwell equation with an axial (magnetic) current</strong>, which is the route by which a magnetic current appears.</p>
 <h2 id="summary-of-notation">Summary of Notation</h2>
-<div class="table-scroll"><table>
-<thead>
-<tr>
-<th>Symbol</th>
-<th>Meaning</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>$\mathbb{B}$</td>
-<td>The biquaternion algebra, of which the field and the spinor are elements</td>
-</tr>
-<tr>
-<td>$\varepsilon=(1,-1,-1,-1)$</td>
-<td>sign vector of the layer</td>
-</tr>
-<tr>
-<td>$\omega=-\vec e_z$</td>
-<td>Volume element, the pseudoscalar; $\omega^2=-e_t$; the source's "$i$", its duality generator, not the corpus's central $i$</td>
-</tr>
-<tr>
-<td>$-\vec e_z$</td>
-<td>Fixed spin-plane bivector; as the element $\omega$ it multiplies the spinor on the right</td>
-</tr>
-<tr>
-<td>$\tilde\nabla$</td>
-<td>The biquaternionic gradient, $e_t\partial/\partial R_t+\vec e_x\partial/\partial R_x+\vec e_y\partial/\partial R_y+\vec e_z\partial/\partial R_z$; an element with derivative coefficients, acting on the left</td>
-</tr>
-<tr>
-<td>$\tilde\nabla^{\natural}$, $\Box$</td>
-<td>The quaternion conjugate, $\sum_\mu\varepsilon_\mu e_\mu\partial/\partial R_\mu$, and the d'Alembertian $\Box=\tilde\nabla\tilde\nabla^{\natural}=\Delta-\partial^2/\partial{r'_{t}}^2$</td>
-</tr>
-<tr>
-<td>$\tilde F$, $\tilde F_0$, $\tilde F_e$, $\tilde F_+$</td>
-<td>Field biquaternion; the stationary subluminal solution; the electron field; the field of the $+$ branch</td>
-</tr>
-<tr>
-<td>$\pi$, $A$</td>
-<td>Hertz potential; vector potential, $A=-\delta\pi$</td>
-</tr>
-<tr>
-<td>$f$, $k$, $x$</td>
-<td>Constant 2-form; propagation vector ($k^2=0$); position</td>
-</tr>
-<tr>
-<td>$\vec E_0,\vec B_0,\vec W$</td>
-<td>Fields of the stationary solution and their common vector, $\mathrm{curl}\,\vec W=+\Omega\vec W$ in the corpus's gradient</td>
-</tr>
-<tr>
-<td>$\Omega$</td>
-<td>Intrinsic frequency of the subluminal solution ($\Omega$ in the Helmholtz equation $\nabla^2\xi+\Omega^2\xi=0$); the letter is reused, as in the source, for the bivector $\Omega=\sum_\mu g_{\mu\mu}v_\mu\Omega_\mu$ of the spinorial section</td>
-</tr>
-<tr>
-<td>$\varpi,\ q,\ \zeta_<$</td>
-<td>Frequency and axial wavenumber of the moving subluminal solution, with $\varpi^2-q^2=\Omega^2$ and group velocity $v=d\varpi/dq$; $\zeta_<$ is its oblate radial coordinate</td>
-</tr>
-<tr>
-<td>$Ξ_{X_n},\ Ξ_{XBB_n}$</td>
-<td>Scalar X-wave seed and its closed form, with $\theta_{\mathrm{axc}}$ the axicon angle and $a_0$ the constant that regularises the seed</td>
-</tr>
-<tr>
-<td>$\tilde{Ξ}_{\mathrm{sp}}$, $\tilde{Ξ}_{\mathrm{sp}}^{\natural}$</td>
-<td>The spinor, an element of $\mathbb{B}$, and its reverse, the corpus's $\natural$ conjugation; the source writes the reverse $\tilde{Ξ}_{\mathrm{sp}}$</td>
-</tr>
-<tr>
-<td>$\tilde{Ξ}_{\mathrm{sp},\pm}$</td>
-<td>The two values of the split by $i\vec e_x$, $i\vec e_x\,\tilde{Ξ}_{\mathrm{sp},\pm}\,i\vec e_x=\pm\tilde{Ξ}_{\mathrm{sp},\pm}$, with $\tilde{Ξ}_{\mathrm{sp}}=\tilde{Ξ}_{\mathrm{sp},+}+\tilde{Ξ}_{\mathrm{sp},-}$</td>
-</tr>
-<tr>
-<td>$\tilde{Ξ}_{\mathrm{sp},L}$, $\tilde{Ξ}_{\mathrm{sp},R}$</td>
-<td>The two values of the subscript, $L$ the minus value and $R$ the plus one; $\tilde{Ξ}_{\mathrm{sp},+L}$ and $\tilde{Ξ}_{\mathrm{sp},+R}$ are the two values of the $+$ branch</td>
-</tr>
-<tr>
-<td>$\tilde{Ξ}_{\mathrm{sp}}=\rho^{1/2}\exp(\omega\theta_{\mathrm{dua}}/2)R$</td>
-<td>Canonical decomposition: rotor $R$, density $\rho$, angle $\theta_{\mathrm{dua}}$; the letter $\rho$ is reused in the X-wave for the cylindrical radius</td>
-</tr>
-<tr>
-<td>$\theta_{\mathrm{dua}}$</td>
-<td>Takabayasi (Yvon–Takabayasi) angle; $0,\pi$ electron/positron, $\pi/2,3\pi/2$ muon/antimuon</td>
-</tr>
-<tr>
-<td>$\xi$</td>
-<td>Spinor with the phase divided out, $\tilde{Ξ}_{\mathrm{sp}}=\xi\exp(\omega\theta_{\mathrm{dua}}/2)$; the linear Dirac equation is for $\xi$</td>
-</tr>
-<tr>
-<td>$m$, $M$, $N$</td>
-<td>Electron mass; the two coefficients of the sourced equation, $M=m+3mq_{\mathrm{m}}\sin\theta_{\mathrm{dua}}/e$ and $N=-3mq_{\mathrm{m}}\cos\theta_{\mathrm{dua}}/e$, the second vanishing at $\theta_{\mathrm{dua}}=\pi/2$ and $3\pi/2$; the letter $M$ is reused, as in the source, for the radial factor of the X-wave</td>
-</tr>
-<tr>
-<td>$q_{\mathrm{m}}$, $\alpha$</td>
-<td>Magnetic charge, $q_{\mathrm{m}}=en/2\alpha$ from the Dirac quantisation condition $\frac{k_m\,eq_{\mathrm{m}}}{m\,c^{2}}=n/2$; $\alpha=\frac{k_m\,e^{2}}{m\,c^{2}}$ the fine-structure constant</td>
-</tr>
-<tr>
-<td>$j$, $g$, $J=J_{\mathrm{e}}-\omega J_{\mathrm{m}}$</td>
-<td>Vector current, axial current, total current with electric and magnetic parts; the contractions $\langle\tilde\nabla,\tilde j\rangle$ and $\langle\tilde\nabla,\tilde g\rangle$ are the series' contractions of the gradient with the two currents</td>
-</tr>
-<tr>
-<td>$\tilde{Ξ}_{\mathrm{sp},\mathrm{dua},\theta}$</td>
-<td>The family of the source, $\tfrac12(\tilde{Ξ}_{\mathrm{sp}}+e^{\omega\theta_{\mathrm{dua}}}i\vec e_x\,\tilde{Ξ}_{\mathrm{sp}}\,i\vec e_x)$, which is the projection at $\theta_{\mathrm{dua}}$ in a duality-rotated frame; $\tilde{Ξ}_{\mathrm{sp},\mathrm{dua},\theta}+\tilde{Ξ}_{\mathrm{sp},\theta_{\mathrm{dua}}+\pi}=\tilde{Ξ}_{\mathrm{sp}}$ replaces the printed $\Lambda_{\mathrm{dua},\theta}=\Lambda_{\theta_{\mathrm{dua}}+\pi}$</td>
-</tr>
-<tr>
-<td>$S=-\tfrac12\tilde{Ξ}_{\mathrm{sp}}\vec e_z\tilde{Ξ}_{\mathrm{sp}}^{-1}$</td>
-<td>Bivector of the canonical analysis; $S_\mu=\tfrac12\,i\,Fe_\mu F\vec e_{\nu(\mu)}$ the Maxwell energy–momentum one-form, $e_\mu$ the unit of the coordinate $x_\mu$</td>
-</tr>
-<tr>
-<td>$\\Lambda,\\ \\mathcal{Q}_{\\mathrm{sig}}$</td>
-<td>The two scalars of the spinorial Maxwell equation, $\Lambda=\Omega\cdot S$ and $\\mathcal{Q}_{\\mathrm{sig}}=\Omega\cdot(\omega S)$, projections of $\Omega$ on the spin bivector; they add into the single coefficient $\Lambda+\omega\,\mathcal{Q}_{\mathrm{sig}}=\lambda e^{\omega\theta_{\mathrm{dua}}}$</td>
-</tr>
-<tr>
-<td>$\lambda,\ \kappa$</td>
-<td>The source's rotated pair, $\lambda=\Lambda\cos\theta_{\mathrm{dua}}+\\mathcal{Q}_{\\mathrm{sig}}\\sin\theta_{\mathrm{dua}}$ and $\kappa=\\mathcal{Q}_{\\mathrm{sig}}\\cos\theta_{\mathrm{dua}}-\Lambda\sin\theta_{\mathrm{dua}}$, with $\lambda+\omega\kappa=(\Lambda+\\omega\\,\\mathcal{Q}_{\\mathrm{sig}})e^{-\omega\theta_{\mathrm{dua}}}$; the constraints force $\kappa=0$ and $\lambda=\Lambda/\cos\theta_{\mathrm{dua}}$ real, and $\langle\tilde\nabla,\tilde J_{\Phi}\rangle=0$ then makes $\lambda$ a constant mass</td>
-</tr>
-</tbody>
-</table></div>
+<p>| Symbol | Meaning |
+|+-|+-|
+| $\mathbb{B}$ | The biquaternion algebra, of which the field and the spinor are elements |
+| $\varepsilon=(1,-1,-1,-1)$ | sign vector of the layer |
+| $\omega=-\vec e_z$ | Volume element, the pseudoscalar; $\omega^2=-e_t$; the source's "$i$", its duality generator, not the corpus's central $i$ |
+| $-\vec e_z$ | Fixed spin-plane bivector; as the element $\omega$ it multiplies the spinor on the right |
+| $\tilde\nabla$ | The biquaternionic gradient, $e_t\partial/\partial R_t+\vec e_x\partial/\partial R_x+\vec e_y\partial/\partial R_y+\vec e_z\partial/\partial R_z$; an element with derivative coefficients, acting on the left |
+| $\tilde\nabla^{\natural}$, $\Box$ | The quaternion conjugate, $\sum_\mu\varepsilon_\mu e_\mu\partial/\partial R_\mu$, and the d'Alembertian $\Box=\tilde\nabla\tilde\nabla^{\natural}=\Delta-\partial^2/\partial{r'_{t}}^2$ |
+| $\tilde F$, $\tilde F_0$, $\tilde F_e$, $\tilde F_+$ | Field biquaternion; the stationary subluminal solution; the electron field; the field of the $+$ branch |
+| $\pi$, $A$ | Hertz potential; vector potential, $A=-\delta\pi$ |
+| $f$, $k$, $x$ | Constant 2-form; propagation vector ($k^2=0$); position |
+| $\vec E_0,\vec B_0,\vec W$ | Fields of the stationary solution and their common vector, $\mathrm{curl}\,\vec W=+\Omega\vec W$ in the corpus's gradient |
+| $\Omega$ | Intrinsic frequency of the subluminal solution ($\Omega$ in the Helmholtz equation $\nabla^2\xi+\Omega^2\xi=0$); the letter is reused, as in the source, for the bivector $\Omega=\sum_\mu g_{\mu\mu}v_\mu\Omega_\mu$ of the spinorial section |
+| $\varpi,\ q,\ \zeta_<$ | Frequency and axial wavenumber of the moving subluminal solution, with $\varpi^2-q^2=\Omega^2$ and group velocity $v=d\varpi/dq$; $\zeta_<$ is its oblate radial coordinate |
+| $Ξ_{X_n},\ Ξ_{XBB_n}$ | Scalar X-wave seed and its closed form, with $\theta_{\mathrm{axc}}$ the axicon angle and $a_0$ the constant that regularises the seed |
+| $\tilde{Ξ}_{\mathrm{sp}}$, $\tilde{Ξ}_{\mathrm{sp}}^{\natural}$ | The spinor, an element of $\mathbb{B}$, and its reverse, the corpus's $\natural$ conjugation; the source writes the reverse $\tilde{Ξ}_{\mathrm{sp}}$ |
+| $\tilde{Ξ}_{\mathrm{sp},\pm}$ | The two values of the split by $i\vec e_x$, $i\vec e_x\,\tilde{Ξ}_{\mathrm{sp},\pm}\,i\vec e_x=\pm\tilde{Ξ}_{\mathrm{sp},\pm}$, with $\tilde{Ξ}_{\mathrm{sp}}=\tilde{Ξ}_{\mathrm{sp},+}+\tilde{Ξ}_{\mathrm{sp},-}$ |
+| $\tilde{Ξ}_{\mathrm{sp},L}$, $\tilde{Ξ}_{\mathrm{sp},R}$ | The two values of the subscript, $L$ the minus value and $R$ the plus one; $\tilde{Ξ}_{\mathrm{sp},+L}$ and $\tilde{Ξ}_{\mathrm{sp},+R}$ are the two values of the $+$ branch |
+| $\tilde{Ξ}_{\mathrm{sp}}=\rho^{1/2}\exp(\omega\theta_{\mathrm{dua}}/2)R$ | Canonical decomposition: rotor $R$, density $\rho$, angle $\theta_{\mathrm{dua}}$; the letter $\rho$ is reused in the X-wave for the cylindrical radius |
+| $\theta_{\mathrm{dua}}$ | Takabayasi (Yvon–Takabayasi) angle; $0,\pi$ electron/positron, $\pi/2,3\pi/2$ muon/antimuon |
+| $\xi$ | Spinor with the phase divided out, $\tilde{Ξ}_{\mathrm{sp}}=\xi\exp(\omega\theta_{\mathrm{dua}}/2)$; the linear Dirac equation is for $\xi$ |
+| $m$, $M$, $N$ | Electron mass; the two coefficients of the sourced equation, $M=m+3mq_{\mathrm{m}}\sin\theta_{\mathrm{dua}}/e$ and $N=-3mq_{\mathrm{m}}\cos\theta_{\mathrm{dua}}/e$, the second vanishing at $\theta_{\mathrm{dua}}=\pi/2$ and $3\pi/2$; the letter $M$ is reused, as in the source, for the radial factor of the X-wave |
+| $q_{\mathrm{m}}$, $\alpha$ | Magnetic charge, $q_{\mathrm{m}}=en/2\alpha$ from the Dirac quantisation condition $\frac{k_m\,eq_{\mathrm{m}}}{m\,c^{2}}=n/2$; $\alpha=\frac{k_m\,e^{2}}{m\,c^{2}}$ the fine-structure constant |
+| $j$, $g$, $J=J_{\mathrm{e}}-\omega J_{\mathrm{m}}$ | Vector current, axial current, total current with electric and magnetic parts; the contractions $\langle\tilde\nabla,\tilde j\rangle$ and $\langle\tilde\nabla,\tilde g\rangle$ are the series' contractions of the gradient with the two currents |
+| $\tilde{Ξ}_{\mathrm{sp},\mathrm{dua},\theta}$ | The family of the source, $\tfrac12(\tilde{Ξ}_{\mathrm{sp}}+e^{\omega\theta_{\mathrm{dua}}}i\vec e_x\,\tilde{Ξ}_{\mathrm{sp}}\,i\vec e_x)$, which is the projection at $\theta_{\mathrm{dua}}$ in a duality-rotated frame; $\tilde{Ξ}_{\mathrm{sp},\mathrm{dua},\theta}+\tilde{Ξ}_{\mathrm{sp},\theta_{\mathrm{dua}}+\pi}=\tilde{Ξ}_{\mathrm{sp}}$ replaces the printed $\Lambda_{\mathrm{dua},\theta}=\Lambda_{\theta_{\mathrm{dua}}+\pi}$ |
+| $S=-\tfrac12\tilde{Ξ}_{\mathrm{sp}}\vec e_z\tilde{Ξ}_{\mathrm{sp}}^{-1}$ | Bivector of the canonical analysis; $S_\mu=\tfrac12\,i\,Fe_\mu F\vec e_{\nu(\mu)}$ the Maxwell energy–momentum one-form, $e_\mu$ the unit of the coordinate $x_\mu$ |
+| $\\Lambda,\\ \\mathcal{Q}_{\\mathrm{sig}}$ | The two scalars of the spinorial Maxwell equation, $\Lambda=\Omega\cdot S$ and $\\mathcal{Q}_{\\mathrm{sig}}=\Omega\cdot(\omega S)$, projections of $\Omega$ on the spin bivector; they add into the single coefficient $\Lambda+\omega\,\mathcal{Q}_{\mathrm{sig}}=\lambda e^{\omega\theta_{\mathrm{dua}}}$ |
+| $\lambda,\ \kappa$ | The source's rotated pair, $\lambda=\Lambda\cos\theta_{\mathrm{dua}}+\\mathcal{Q}_{\\mathrm{sig}}\\sin\theta_{\mathrm{dua}}$ and $\kappa=\\mathcal{Q}_{\\mathrm{sig}}\\cos\theta_{\mathrm{dua}}-\Lambda\sin\theta_{\mathrm{dua}}$, with $\lambda+\omega\kappa=(\Lambda+\\omega\\,\\mathcal{Q}_{\\mathrm{sig}})e^{-\omega\theta_{\mathrm{dua}}}$; the constraints force $\kappa=0$ and $\lambda=\Lambda/\cos\theta_{\mathrm{dua}}$ real, and $\langle\tilde\nabla,\tilde J_{\Phi}\rangle=0$ then makes $\lambda$ a constant mass |</p>
 <h2 id="further-reading">Further Reading</h2>
 <ul>
 <li><a href="the-gradient-the-dalembertian-and-the-cell-operator.html">The Gradient, the D'Alembertian and the Cell Operator</a>, for the gradient, its conjugate and the d'Alembertian, and for the names of the other operators.</li>

@@ -137,14 +137,14 @@ $$</p>
 <p>The body of this article is written in these actions; the closing section gives their standard names.</p>
 <p>The mode operators obey</p>
 <p>$$
-\{a_{\mathrm{fop},r}(\vec p),a_{\mathrm{fop},s}^{\dagger}(\vec k)\}
-=\{b_{\mathrm{fop},r}(\vec p),b_{\mathrm{fop},s}^{\dagger}(\vec k)\}
-=(2\pi)^3\delta_{rs}\delta^{(3)}(\vec p-\vec k),
+\{a_{\mathrm{fop},r}(\vec p),a_{\mathrm{fop},s}^{\dagger}(\vec k_\Phi)\}
+=\{b_{\mathrm{fop},r}(\vec p),b_{\mathrm{fop},s}^{\dagger}(\vec k_\Phi)\}
+=(2\pi)^3\delta_{rs}\delta^{(3)}(\vec p-\vec k_\Phi),
 $$</p>
 <p>with all other anticommutators vanishing. The plane-wave elements of the parent article obey the normalizations it records there, and the two sums over its two solutions are the numerators of this article, read as actions on $\mathbb{B}$: the positive-frequency sum is the momentum action shifted up by the mass, $\mathcal{A}_p+m$, and the negative-frequency sum is the same action shifted down, $\mathcal{A}_p-m$, both on shell.</p>
 <p>Contracting the mode operators against the vacuum gives the two elementary two-point actions. The <strong>positive-frequency</strong> piece is</p>
 <p>$$
-W_+(x-y):\ \tilde Q\ \longmapsto\ \int\!\frac{d^3p}{(2\pi)^3}\frac{1}{2E_{\vec p}}\,\big(\mathcal{A}_{p}(\tilde Q)+m\tilde Q\big)\,\exp(-ip\cdot(x-y)),
+W_+(x-y):\ \tilde Q\ \longmapsto\ \int\!\frac{d^3p}{(2\pi)^3}\frac{1}{2E_{\vec p}}\,\big(\mathcal{A}_{p}(\tilde Q)+m\tilde Q\big)\,\exp(-i(p\cdot(x-y))/\hbar),
 $$</p>
 <p>in which only the $a_{\mathrm{fop}} a_{\mathrm{fop}}^{\dagger}$ contraction survives, and the <strong>negative-frequency</strong> piece is</p>
 <p>$$
@@ -159,8 +159,8 @@ $$</p>
 <h2 id="the-pole-structure-and-the-contour">The Pole Structure and the Contour</h2>
 <p>The two $\mathrm{H}_{\mathrm{hvs}}$ functions can be represented by a single four-dimensional integral. The standard result, and the object whose biquaternion form is the subject of this article, is</p>
 <p>$$
-\boxed{\;S_F(x-y):\ \tilde Q\longmapsto i\int\!\frac{d^4p}{(2\pi)^4}\;
-\exp(-ip\cdot(x-y))\frac{\mathcal{A}_p(\tilde Q)+m\tilde Q}{p^2-m^{2}\,c^{2}+i\epsilon},
+\boxed{\;S_F(x-y):\ \tilde Q\longmapsto i\int\!\frac{d^4p}{(2\pi\hbar)^4}\;
+\exp(-i(p\cdot(x-y))/\hbar)\frac{\mathcal{A}_p(\tilde Q)+m\tilde Q}{p^2-m^{2}\,c^{2}+i\epsilon},
 \qquad \epsilon\to0^+\;}.
 $$</p>
 <p>The action is written by what it does, so the display carries the test element and no second symbol. The overall $i$ and the $i\epsilon$ are fixed by requiring that the $p_0$ integral reproduce the two branches, with the normalization of the time-ordered product and the fermionic relative sign. It is worth performing that check explicitly, because it is where a sign can silently go wrong.</p>
@@ -358,7 +358,7 @@ S_F(x-y):\ \tilde Q\longmapsto\big\langle 0\big|\,T\,\tilde{Ξ}_{\mathrm{sp}}(x)
 $$</p>
 <p>Its content is the contour prescription, and the prescription is fixed by time ordering together with the fermionic anticommutation sign:</p>
 <p>$$
-S_F(x-y):\ \tilde Q\longmapsto i\int\!\frac{d^4p}{(2\pi)^4}\,\exp(-ip\cdot(x-y))\frac{\mathcal{A}_p(\tilde Q)+m\tilde Q}{p^2-m^{2}\,c^{2}+i\epsilon},
+S_F(x-y):\ \tilde Q\longmapsto i\int\!\frac{d^4p}{(2\pi\hbar)^4}\,\exp(-i(p\cdot(x-y))/\hbar)\frac{\mathcal{A}_p(\tilde Q)+m\tilde Q}{p^2-m^{2}\,c^{2}+i\epsilon},
 \qquad
 \mathcal{A}_p:\ \tilde Q\longmapsto i p_0\tilde Q\,\vec e_x-i\sum_{k=1}^{3} p_k\,\vec e_k\,\tilde Q\,\vec e_y .
 $$</p>

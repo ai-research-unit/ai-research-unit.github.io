@@ -132,14 +132,14 @@ $$
 $$</p>
 <p>and the same holds for $\tilde{Ξ}_{\mathrm{sp},L}$: each entry obeys the Klein–Gordon equation, and the completion of one entry is the other,
 $$
-\tilde{Ξ}_{\mathrm{sp},L}=\frac{1}{m}\tilde\nabla\tilde{Ξ}_{\mathrm{sp},R},\qquad\tilde{Ξ}_{\mathrm{sp},R}=\frac{1}{m}\tilde\nabla^{\natural}\tilde{Ξ}_{\mathrm{sp},L} .
+\tilde{Ξ}_{\mathrm{sp},L}=\frac{1}{k_m}\tilde\nabla\tilde{Ξ}_{\mathrm{sp},R},\qquad\tilde{Ξ}_{\mathrm{sp},R}=\frac{1}{k_m}\tilde\nabla^{\natural}\tilde{Ξ}_{\mathrm{sp},L} .
 $$</p>
 <p><strong>The pair operator.</strong> The two members are one operator on the pair, $\mathbb{D}(\tilde{Ξ}_{\mathrm{sp},L},\tilde{Ξ}_{\mathrm{sp},R})=(\tilde\nabla\tilde{Ξ}_{\mathrm{sp},R},\tilde\nabla^{\natural}\tilde{Ξ}_{\mathrm{sp},L})$, with $\mathbb{D}^2=\Box I$ because the two compositions $\tilde\nabla\tilde\nabla^{\natural}$ and $\tilde\nabla^{\natural}\tilde\nabla$ are both the same scalar. The massive equation is $(\mathbb{D}-k_m)\tilde{Ξ}_{\mathrm{sp}}=0$, and its two components are the pair. Nothing else is meant by a two-sided operator in this article: the operator is the pair written once, it contains no matrix generator, and its carrier is the pair $(\tilde{Ξ}_{\mathrm{sp},L},\tilde{Ξ}_{\mathrm{sp},R})\in\mathbb{B}\oplus\mathbb{B}$.</p>
-<p><strong>The plane wave.</strong> On $e^{-ip\cdot x}$ with $p\cdot x=E_{\vec p}r'_t-\vec p\cdot\vec r$, the gradient acts by left multiplication by its symbol
+<p><strong>The plane wave.</strong> The wave numbers of the particle are $k_{t}^{\prime}=E_{\vec p}/(\hbar\,c)$, $\vec k_\Phi=\vec p/\hbar$ and $k_m=mc/\hbar$, so the phase is the pure number $k_{t}^{\prime}r'_t-\vec k_\Phi\cdot\vec r$. On $e^{-i(k_{t}^{\prime}r'_t-\vec k_\Phi\cdot\vec r)}$ the gradient acts by left multiplication by its symbol
 $$
-\tilde K=-E_{\vec p}\,e_t+i\vec p,\qquad
-\tilde K^{\natural}=-E_{\vec p}\,e_t-i\vec p,\qquad
-\tilde K^{\natural}\tilde K=E_{\vec p}^2-\vec p^2=m^2 ,
+i\tilde K_{\Phi}=-k_{t}^{\prime}\,e_t+i\vec k_\Phi,\qquad
+i\tilde K_{\Phi}^{\natural}=-k_{t}^{\prime}\,e_t-i\vec k_\Phi,\qquad
+-\tilde K_{\Phi}^{\natural}\tilde K_{\Phi}=k_{t}^{\prime\,2}-\lvert\vec k_\Phi\rvert^{2}=k_m^{2} ,
 $$</p>
 <p>the last on the mass shell. The symbol is an element of the algebra, its square is not scalar, and its quaternion norm is the mass shell. This is the amplitude used in the verification below.</p>
 <h3 id="the-two-entries-the-sides-and-what-no-element-does">The Two Entries, the Sides, and What No Element Does</h3>
@@ -149,18 +149,18 @@ $$</p>
 <h2 id="the-three-operations-built-explicitly">The Three Operations Built Explicitly</h2>
 <p>Let $\tilde{Ξ}_{\mathrm{sp}}$ solve the pair, with $m$ the mass. A discrete operation is a map $\tilde{Ξ}_{\mathrm{sp}}\mapsto\tilde{Ξ}_{\mathrm{sp},2}$ whose output also solves the pair. We take the operations in the standard form: $C$ is local and anti-linear, $P$ is a spatial reflection and linear, $T$ is a time reflection and anti-linear. Each is defined by what it does with the two entries, the conjugation it applies, and an internal factor fixed by the requirement that the transformed field satisfy the same pair; that requirement determines the factor up to a nonzero scalar multiplying both entries, which is a convention.</p>
 <p>The test is a substitution, and one convention must be fixed before it can be made. <strong>The conjugation here is applied to the field value at each point</strong>, $J[\tilde{Ξ}_{\mathrm{sp}}](x)=\overline{\tilde{Ξ}_{\mathrm{sp}}(x)}$, and every check below is made on the differential equation. That choice is what makes the factors of $C$ and $T$ determinate; read instead on the amplitudes with the plane-wave basis held fixed, the two factors change places, which is the convention trap this article records rather than hides. The composition is the same under either reading, and the next sections verify it as a composition.</p>
-<p>Under the pointwise reading the arithmetic is short. On $e^{-ip\cdot x}$ the gradient acts as $\tilde K=-E_{\vec p}e_t+i\vec p$. Conjugating the phase reverses the sign of both $E_{\vec p}$ and $\vec p$, so the conjugate branch carries the symbol of $\tilde K$ at the reversed four-momentum, namely $-\tilde K$; reflecting $r'_t$ alone reverses $E_{\vec p}$ and leaves $\vec p$, so that branch carries $-\tilde K^{\natural}$. These two signs are the whole of the difference between $C$ and $T$, and they are computed below rather than asserted.</p>
+<p>Under the pointwise reading the arithmetic is short. On $e^{-i(k_{t}^{\prime}r'_t-\vec k_\Phi\cdot\vec r)}$ the gradient acts as $i\tilde K_{\Phi}=-k_{t}^{\prime}e_t+i\vec k_\Phi$. Conjugating the phase reverses the sign of both $k_{t}^{\prime}$ and $\vec k_\Phi$, so the conjugate branch carries the symbol of $i\tilde K_{\Phi}$ at the reversed four-momentum, namely $-i\tilde K_{\Phi}$; reflecting $r'_t$ alone reverses $k_{t}^{\prime}$ and leaves $\vec k_\Phi$, so that branch carries $-i\tilde K_{\Phi}^{\natural}$. These two signs are the whole of the difference between $C$ and $T$, and they are computed below rather than asserted.</p>
 <h3 id="charge-conjugation">Charge conjugation</h3>
 <p>Define
 $$
 C[\tilde{Ξ}_{\mathrm{sp}}]=\bigl(-\tilde{Ξ}_{\mathrm{sp},R}^J,\ \tilde{Ξ}_{\mathrm{sp},L}^J\bigr),
 $$</p>
 <p>with $J=\bar{\cdot}$ the conjugation of the coefficients, applied pointwise. The equation is conjugated and the two entries are exchanged, and one sign rides on the entry that came from $\tilde{Ξ}_{\mathrm{sp},R}$. The sign is computed, not chosen.</p>
-<p><strong>Why the sign is there.</strong> On $e^{-ip\cdot x}$ the first member reads $\tilde\nabla\tilde{Ξ}_{\mathrm{sp},R}=\tilde K\tilde{Ξ}_{\mathrm{sp},R}=k_m\tilde{Ξ}_{\mathrm{sp},L}$, so $\tilde{Ξ}_{\mathrm{sp},L}=\tilde K\tilde{Ξ}_{\mathrm{sp},R}/m$. Conjugating gives $\overline{\tilde{Ξ}_{\mathrm{sp},L}}=\tilde K^{\natural}\overline{\tilde{Ξ}_{\mathrm{sp},R}}/m$ on the conjugate branch, and that branch carries $-\tilde K$ rather than $\tilde K^{\natural}$, because the frequency change reverses the sign of the $e_t$ term. The conjugated first member therefore comes out as
+<p><strong>Why the sign is there.</strong> On $e^{-i(k_{t}^{\prime}r'_t-\vec k_\Phi\cdot\vec r)}$ the first member reads $\tilde\nabla\tilde{Ξ}_{\mathrm{sp},R}=i\tilde K_{\Phi}\tilde{Ξ}_{\mathrm{sp},R}=k_m\tilde{Ξ}_{\mathrm{sp},L}$, so $\tilde{Ξ}_{\mathrm{sp},L}=i\tilde K_{\Phi}\tilde{Ξ}_{\mathrm{sp},R}/k_m$. Conjugating gives $\overline{\tilde{Ξ}_{\mathrm{sp},L}}=i\tilde K_{\Phi}^{\natural}\overline{\tilde{Ξ}_{\mathrm{sp},R}}/k_m$ on the conjugate branch, and that branch carries $-i\tilde K_{\Phi}$ rather than $i\tilde K_{\Phi}^{\natural}$, because the frequency change reverses the sign of the $e_t$ term. The conjugated first member therefore comes out as
 $$
-(-\tilde K)\,\frac{\tilde K^{\natural}\overline{\tilde{Ξ}_{\mathrm{sp},R}}}{m}=-m\,\overline{\tilde{Ξ}_{\mathrm{sp},R}},
+(-i\tilde K_{\Phi})\,\frac{i\tilde K_{\Phi}^{\natural}\overline{\tilde{Ξ}_{\mathrm{sp},R}}}{k_m}=-k_m\,\overline{\tilde{Ξ}_{\mathrm{sp},R}},
 $$
-one sign short of the $+m\overline{\tilde{Ξ}_{\mathrm{sp},R}}$ that the exchange alone produces, since $\tilde K^{\natural}\tilde K=+m^2$ while $(-\tilde K)\tilde K^{\natural}=-m^2$. The compensating $-1$ is placed on the entry that came from $\tilde{Ξ}_{\mathrm{sp},R}$, which after the exchange is the left one, and the member is then satisfied exactly. Without it the residual is of order $10^{1}$ at $m=3$, $\vec p=(1,2,2)$, six orders above the round-off; with it the residual is $7.1\times10^{-15}$.</p>
+one sign short of the $+k_m\overline{\tilde{Ξ}_{\mathrm{sp},R}}$ that the exchange alone produces, since $-\tilde K_{\Phi}^{\natural}\tilde K_{\Phi}=+k_m^{2}$ while $(-i\tilde K_{\Phi})i\tilde K_{\Phi}^{\natural}=-k_m^{2}$. The compensating $-1$ is placed on the entry that came from $\tilde{Ξ}_{\mathrm{sp},R}$, which after the exchange is the left one, and the member is then satisfied exactly. Without it the residual is of order $10^{1}$ at $m=3$, $\vec p=(1,2,2)$, six orders above the round-off; with it the residual is $7.1\times10^{-15}$.</p>
 <p><strong>The factor is the chirality.</strong> The sign pattern is $-1$ on the left entry and $+1$ on the right, and that is the right multiplication by $\Gamma=-i\vec e_z$ read on the two eigenspaces of $R_\omega$. So $C$ carries the internal factor $\Gamma$, and $\Gamma$ is a multiplication by an element, on the right.</p>
 <p>Because $\tilde{Ξ}_{\mathrm{sp}}^J$ enters, $C$ is anti-linear, and the operator it induces on the mode algebra is unitary. It exchanges the two entries. Applied twice it returns the field with a minus,
 $$
@@ -174,20 +174,20 @@ verified at residual $0$. The sign is not a convention: an anti-linear map resca
 $$
 P[\tilde{Ξ}_{\mathrm{sp}}](r'_t,\vec r)=\bigl(\tilde{Ξ}_{\mathrm{sp},R}(r'_t,-\vec r),\ \tilde{Ξ}_{\mathrm{sp},L}(r'_t,-\vec r)\bigr).
 $$</p>
-<p>Only the spatial derivatives change sign, the field is not conjugated, and the two entries are exchanged. On the symbol the reflection sends $\tilde K=-E_{\vec p}e_t+i\vec p$ to $-E_{\vec p}e_t-i\vec p=\tilde K^{\natural}$, so the reflected first member is the second member at the reflected argument, and the reflected second member is the first. No internal factor is left over and none is needed: the exchange alone carries the symbol from $\tilde K$ to $\tilde K^{\natural}$, and $\tilde K^{\natural}\tilde K=m^2$ is the identity the two members are written with. The reflection squares to the identity, $P^2=\mathrm{id}$.</p>
-<p>Parity is linear, it keeps the positive-frequency branch positive-frequency and reverses the momentum, $\vec p\mapsto-\vec p$, and it exchanges the two entries.</p>
+<p>Only the spatial derivatives change sign, the field is not conjugated, and the two entries are exchanged. On the symbol the reflection sends $i\tilde K_{\Phi}=-k_{t}^{\prime}e_t+i\vec k_\Phi$ to $-k_{t}^{\prime}e_t-i\vec k_\Phi=i\tilde K_{\Phi}^{\natural}$, so the reflected first member is the second member at the reflected argument, and the reflected second member is the first. No internal factor is left over and none is needed: the exchange alone carries the symbol from $i\tilde K_{\Phi}$ to $i\tilde K_{\Phi}^{\natural}$, and $-\tilde K_{\Phi}^{\natural}\tilde K_{\Phi}=k_m^{2}$ is the identity the two members are written with. The reflection squares to the identity, $P^2=\mathrm{id}$.</p>
+<p>Parity is linear, it keeps the positive-frequency branch positive-frequency and reverses the momentum, $\vec k_\Phi\mapsto-\vec k_\Phi$, and it exchanges the two entries.</p>
 <h3 id="time-reversal">Time reversal</h3>
 <p>Define
 $$
 T[\tilde{Ξ}_{\mathrm{sp}}](r'_t,\vec r)=\bigl(\tilde{Ξ}_{\mathrm{sp},L}^J(-r'_t,\vec r),\ \tilde{Ξ}_{\mathrm{sp},R}^J(-r'_t,\vec r)\bigr).
 $$</p>
 <p>The time derivative changes sign, the field is conjugated, and the two entries are <strong>not</strong> exchanged. No internal factor appears, and this is the point at which an article that carries over the cell formulation's assignments goes wrong: the source's frame factor sits with the wrong operation once the conjugation is applied pointwise.</p>
-<p><strong>Why no factor.</strong> The conjugation and the reflection of $r'_t$ both reverse the sign of the $e_t$ term of the symbol, so the two reversals cancel and the reflected field stays on the branch with $E_{\vec p}$ positive, carrying $\tilde K^{\natural}$ where $\tilde\nabla$ acts and $\tilde K$ where $\tilde\nabla^{\natural}$ acts. The two symbols are exchanged relative to the original equation, and since $\tilde K\tilde K^{\natural}=m^2$ the second member is reproduced unchanged:
+<p><strong>Why no factor.</strong> The conjugation and the reflection of $r'_t$ both reverse the sign of the $e_t$ term of the symbol, so the two reversals cancel and the reflected field stays on the branch with $k_{t}^{\prime}$ positive, carrying $i\tilde K_{\Phi}^{\natural}$ where $\tilde\nabla$ acts and $i\tilde K_{\Phi}$ where $\tilde\nabla^{\natural}$ acts. The two symbols are exchanged relative to the original equation, and since $-\tilde K_{\Phi}\tilde K_{\Phi}^{\natural}=k_m^{2}$ the second member is reproduced unchanged:
 $$
 T:\ (\tilde{Ξ}_{\mathrm{sp},L},\tilde{Ξ}_{\mathrm{sp},R})(r'_t,\vec r)\longmapsto\bigl(\tilde{Ξ}_{\mathrm{sp},L}^J,\ \tilde{Ξ}_{\mathrm{sp},R}^J\bigr)(-r'_t,\vec r),\qquad T^2=\mathrm{id}.
 $$</p>
-<p>A relative sign is not available here. Putting $-1$ on the left entry leaves a residual of order $10^{1}$ at $m=3$, $\vec p=(1,2,2)$; carrying no factor leaves $7.1\times10^{-15}$. The factor that the cell formulation attached to time reversal is the factor that pointwise conjugation has already spent, and the reader who keeps both ends up with two.</p>
-<h3 id="math208-is-anti-linear">$T$ is anti-linear</h3>
+<p>A relative sign is not available here. Putting $-1$ on the left entry leaves a residual of order $10^{1}$ at $k_m=3$ and $\vec k_\Phi=(1,2,2)$ in units of $k_m$; carrying no factor leaves $7.1\times10^{-15}$. The factor that the cell formulation attached to time reversal is the factor that pointwise conjugation has already spent, and the reader who keeps both ends up with two.</p>
+<h3 id="math212-is-anti-linear">$T$ is anti-linear</h3>
 <p>The conjugation in $T$ is not a calculational convenience; it is what makes the field map anti-linear, the classical counterpart of the anti-unitary operator. With $i$ the scalar imaginary and $J=\bar{\cdot}$,
 $$
 T[i\tilde{Ξ}_{\mathrm{sp}}]=T\bigl[(i\tilde{Ξ}_{\mathrm{sp},L},\ i\tilde{Ξ}_{\mathrm{sp},R})\bigr]=\bigl((-i)\tilde{Ξ}_{\mathrm{sp},L}^J,\ (-i)\tilde{Ξ}_{\mathrm{sp},R}^J\bigr)=-i\bigl(\tilde{Ξ}_{\mathrm{sp},L}^J,\ \tilde{Ξ}_{\mathrm{sp},R}^J\bigr)=-i\,T[\tilde{Ξ}_{\mathrm{sp}}].
@@ -239,24 +239,24 @@ $$</p>
 <h2 id="each-operation-preserves-the-free-equation">Each Operation Preserves the Free Equation</h2>
 <p>The verification was carried out on the differential equation itself, not only on a momentum-space identity, and on cases other than the one that suggested the definitions. The working field was fixed by one entry, the other being its completion,
 $$
-\tilde{Ξ}_{\mathrm{sp},R}=\xi\,e^{-ip\cdot x}+\xi_2\,e^{+ip\cdot x},\qquad
-\tilde{Ξ}_{\mathrm{sp},L}=\frac{1}{m}\tilde\nabla\tilde{Ξ}_{\mathrm{sp},R}
-=\frac{1}{m}\bigl(\tilde K\xi\,e^{-ip\cdot x}+\tilde K_+\xi_2\,e^{+ip\cdot x}\bigr),
+\tilde{Ξ}_{\mathrm{sp},R}=\xi\,e^{-i(k_{t}^{\prime}r'_t-\vec k_\Phi\cdot\vec r)}+\xi_2\,e^{+i(k_{t}^{\prime}r'_t-\vec k_\Phi\cdot\vec r)},\qquad
+\tilde{Ξ}_{\mathrm{sp},L}=\frac{1}{k_m}\tilde\nabla\tilde{Ξ}_{\mathrm{sp},R}
+=\frac{1}{k_m}\bigl(i\tilde K_{\Phi}\xi\,e^{-i(k_{t}^{\prime}r'_t-\vec k_\Phi\cdot\vec r)}+\tilde K_{\Phi,+}\xi_2\,e^{+i(k_{t}^{\prime}r'_t-\vec k_\Phi\cdot\vec r)}\bigr),
 $$</p>
 <p>with
 $$
-\tilde K=-E_{\vec p}\,e_t+i\vec p,\qquad \tilde K_+=+E_{\vec p}\,e_t-i\vec p,\qquad
-p\cdot x=E_{\vec p}r'_t-\vec p\cdot\vec r,\qquad E_{\vec p}^2=\vec p^2+m^2,
+i\tilde K_{\Phi}=-k_{t}^{\prime}\,e_t+i\vec k_\Phi,\qquad i\tilde K_{\Phi,+}=+k_{t}^{\prime}\,e_t-i\vec k_\Phi,\qquad
+k_{t}^{\prime}=\frac{E_{\vec p}}{\hbar c},\qquad k_{t}^{\prime\,2}=\lvert\vec k_\Phi\rvert^{2}+k_m^{2},
 $$</p>
-<p>and $\xi,\xi_2$ arbitrary constant elements of $\mathbb{B}$, with no constraint relating the two: this is the point at which the arbitrariness matters, since the two members are independent elements and not two projections of one. The first branch is positive-frequency and the second negative-frequency; their sum is a general solution of the pair by linearity, and the second member holds because $\tilde K^{\natural}\tilde K=m^2$ on shell, the second branch carrying $\tilde K_+=-\tilde K$ and $\tilde K_+^{\natural}\tilde K_+=\tilde K\tilde K^{\natural}=m^2$ as well. Substituting, conjugating, exchanging and reflecting as the definitions require, the residual of $(\mathbb{D}-k_m)$ acting on each transform was evaluated and found to vanish to machine precision in every case. The checks were run for the three parameter sets
+<p>and $\xi,\xi_2$ arbitrary constant elements of $\mathbb{B}$, with no constraint relating the two: this is the point at which the arbitrariness matters, since the two members are independent elements and not two projections of one. The first branch is positive-frequency and the second negative-frequency; their sum is a general solution of the pair by linearity, and the second member holds because $-\tilde K_{\Phi}^{\natural}\tilde K_{\Phi}=k_m^{2}$ on shell, the second branch carrying $\tilde K_{\Phi,+}=-i\tilde K_{\Phi}$ and $\tilde K_{\Phi,+}^{\natural}\tilde K_{\Phi,+}=-\tilde K_{\Phi}\tilde K_{\Phi}^{\natural}=k_m^{2}$ as well. Substituting, conjugating, exchanging and reflecting as the definitions require, the residual of $(\mathbb{D}-k_m)$ acting on each transform was evaluated and found to vanish to machine precision in every case. The checks were run for the three parameter sets
 $$
-(m,\vec p)=(3,(1,2,2)),\qquad (5,(3,4,0)),\qquad (\tfrac{7}{2},(1,0,-2)),
+(k_m,\vec k_\Phi/k_m)=(3,(1,2,2)),\qquad (5,(3,4,0)),\qquad (\tfrac{7}{2},(1,0,-2)),
 $$</p>
-<p>each with $E_{\vec p}=+\sqrt{\vec p^2+m^2}$, on the sixteen combinations of the four basis elements of $\mathbb{B}$ for the two coefficients and on eight random pairs, with both frequency branches present. All three operations and their composition passed on all three cases, at residual $7.6\times10^{-15}$ or smaller.</p>
+<p>each with $k_{t}^{\prime}=+\sqrt{\lvert\vec k_\Phi\rvert^{2}+k_m^{2}}$, on the sixteen combinations of the four basis elements of $\mathbb{B}$ for the two coefficients and on eight random pairs, with both frequency branches present. All three operations and their composition passed on all three cases, at residual $7.6\times10^{-15}$ or smaller.</p>
 <p>The individual checks are worth a word each, because they test different parts of the structure.</p>
 <ul>
 <li><strong>$C$.</strong> The exchange and the sign were verified together, on the differential equation, and the image was confirmed to solve the pair. The transform conjugates the polarization and keeps the energy and the momentum, and the sign is the one computed in the charge-conjugation section: $(-K)K^{\natural}=-m^{2}$ against $K^{\natural}K=+m^{2}$. Without the sign the residual is of order $10^{1}$; with it, $10^{-15}$. In the mode expansion $C$ exchanges the particle operator $a_{\mathrm{fop}}$ with the antiparticle operator $b_{\mathrm{fop}}$, which is the operator-level statement that the conserved charge reverses sign; that statement is transcribed, and the field-level check is the one performed here.</li>
-<li><strong>$P$.</strong> The reflection of the argument and the exchange of the entries were verified, and the reflected field was confirmed to solve the pair, at residual $0$. The transform keeps the positive-frequency branch positive-frequency and reverses the momentum, $\vec p\mapsto-\vec p$, and it needs no internal factor: the exchange alone turns $\tilde K$ into $\tilde K^{\natural}$.</li>
+<li><strong>$P$.</strong> The reflection of the argument and the exchange of the entries were verified, and the reflected field was confirmed to solve the pair, at residual $0$. The transform keeps the positive-frequency branch positive-frequency and reverses the momentum, $\vec k_\Phi\mapsto-\vec k_\Phi$, and it needs no internal factor: the exchange alone turns $i\tilde K_{\Phi}$ into $i\tilde K_{\Phi}^{\natural}$.</li>
 <li><strong>$T$.</strong> The time reflection and the conjugation were verified, with no internal factor, and the conjugated-reflected field was confirmed to solve the pair. Because $T$ is anti-linear, the check on a superposition is the sharpest one: a linear map that ignored the conjugation, $\tilde{Ξ}_{\mathrm{sp}}\mapsto(\tilde{Ξ}_{\mathrm{sp},L},\tilde{Ξ}_{\mathrm{sp},R})(-r'_t,\vec r)$, leaves a residual of order $10^{1}$, and so does the same map with a relative sign.</li>
 </ul>
 <p>Two negative results belong here, to prevent a later pass from claiming more than was checked.</p>
@@ -430,8 +430,8 @@ $$</p>
 <td>The pair operator on $\mathbb{B}\oplus\mathbb{B}$; $\mathbb{D}^2=\Box I$; $(\mathbb{D}-k_m)\tilde{Ξ}_{\mathrm{sp}}=0$ is the pair</td>
 </tr>
 <tr>
-<td>$\tilde K=-E_{\vec p}e_t+i\vec p$</td>
-<td>Symbol of $\tilde\nabla$ on $e^{-ip\cdot x}$; $\tilde K^{\natural}\tilde K=E_{\vec p}^2-\vec p^2=m^2$</td>
+<td>$i\tilde K_{\Phi}=-k_{t}^{\prime}e_t+i\vec k_\Phi$</td>
+<td>Symbol of $\tilde\nabla$ on $e^{-i(k_{t}^{\prime}r'_t-\vec k_\Phi\cdot\vec r)}$; $-\tilde K_{\Phi}^{\natural}\tilde K_{\Phi}=k_{t}^{\prime\,2}-\lvert\vec k_\Phi\rvert^{2}=k_m^{2}$</td>
 </tr>
 <tr>
 <td>$J=\bar{\cdot}$, $\tilde{Ζ}^{J}$</td>

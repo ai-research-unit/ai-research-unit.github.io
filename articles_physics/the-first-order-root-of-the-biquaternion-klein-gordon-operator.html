@@ -118,20 +118,20 @@ $$</p>
 \tilde\nabla^{\natural}\tilde\nabla=\tilde\nabla\tilde\nabla^{\natural}=\Box .
 $$</p>
 <h3 id="the-symbol-and-the-mass-shell">The symbol and the mass shell</h3>
-<p>On a plane wave $e^{i(k_{t}^{\prime}x_0-\vec k\cdot\vec r)}$ every derivative is a multiple of the wave. The substitution is $\partial/\partial R_t\mapsto k_{t}^{\prime}$ and $\partial/\partial R_k\mapsto-ik_k$, so the gradient becomes one fixed element of the algebra,</p>
+<p>On a plane wave $e^{i(k_{t}^{\prime}x_0-\vec k_\Phi\cdot\vec r)}$ every derivative is a multiple of the wave. The substitution is $\partial/\partial R_t\mapsto k_{t}^{\prime}$ and $\partial/\partial R_k\mapsto-ik_k$, so the gradient becomes one fixed element of the algebra,</p>
 <p>$$
-\tilde K=k_{t}^{\prime}-i\vec k=k_{t}^{\prime}-i\sum_k\vec e_k k_k,
+-i\tilde K_{\Phi}=k_{t}^{\prime}-i\vec k_\Phi=k_{t}^{\prime}-i\sum_k\vec e_k k_k,
 \qquad
-\tilde K^{\natural}\tilde K=\tilde K\tilde K^{\natural}=k_{t}^{\prime\,2}-\lvert\vec k\rvert^2 ,
+(-i\tilde K_{\Phi})^{\natural}(-i\tilde K_{\Phi})=-\tilde K_{\Phi}\tilde K_{\Phi}^{\natural}=k_{t}^{\prime\,2}-\lvert\vec k_\Phi\rvert^2 ,
 $$</p>
 <p>and the second identity is the symbol of $\Box$. The mass shell is the level set</p>
 <p>$$
-k_{t}^{\prime\,2}-\lvert\vec k\rvert^2=k_m^{2}
+k_{t}^{\prime\,2}-\lvert\vec k_\Phi\rvert^2=k_m^{2}
 \quad\Longleftrightarrow\quad
 E^2=\vec p^{\,2}c^2+m^2c^4 ,
 $$</p>
-<p>with $\vec k=\vec p\,\frac{k_m}{m\,c}$. Here $k_{\Phi}=\frac{k_m\,p}{m\,c}$ and $k_{t}^{\prime}=E/(\frac{m\,c^{2}}{k_m})$ are the momentum and energy wave numbers.</p>
-<p>The symbol of $\Box$ is the interval of the wave covector, and the mass shell is that symbol set to $k_m^{2}$. The symbol of the gradient is a zero divisor on exactly the same set: left multiplication by $\tilde K$ is invertible off the cone and has rank two on it. The equation $\tilde\nabla\tilde{Ξ}=0$ therefore has a nonzero plane-wave solution exactly where the massless Klein–Gordon equation does, and it halves the solution space there, as §<em>What the Root Does Not Carry</em> records.</p>
+<p>with $\vec k_\Phi=\vec p\,\frac{k_m}{m\,c}$. Here $k_{\Phi}=\frac{k_m\,p}{m\,c}$ and $k_{t}^{\prime}=E/(\frac{m\,c^{2}}{k_m})$ are the momentum and energy wave numbers.</p>
+<p>The symbol of $\Box$ is the interval of the wave covector, and the mass shell is that symbol set to $k_m^{2}$. The symbol of the gradient is a zero divisor on exactly the same set: left multiplication by $-i\tilde K_{\Phi}$ is invertible off the cone and has rank two on it. The equation $\tilde\nabla\tilde{Ξ}=0$ therefore has a nonzero plane-wave solution exactly where the massless Klein–Gordon equation does, and it halves the solution space there, as §<em>What the Root Does Not Carry</em> records.</p>
 <h2 id="the-factorisation">The Factorisation</h2>
 <h3 id="the-two-factors">The two factors</h3>
 <p>The product of the gradient and its conjugate is the d'Alembertian, and the square of the gradient is not: $\tilde\nabla^{\natural}\tilde\nabla=\tilde\nabla\tilde\nabla^{\natural}=\Box$, while $\tilde\nabla^2$ keeps the vector remainder of §<em>The gradient is the first-order operator</em>.</p>
@@ -169,32 +169,11 @@ $$</p>
 \tilde\nabla\xi=\sum_\mu e_\mu\frac{\partial\xi}{\partial R_\mu},
 $$</p>
 <p>and setting it to zero imposes four independent complex conditions, one per unit. The field is then constant. A root requires a field with room for the four units, and the algebra supplies exactly four complex dimensions.</p>
-<div class="table-scroll"><table>
-<thead>
-<tr>
-<th>Field</th>
-<th>First-order equation</th>
-<th>Root?</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>One complex number</td>
-<td>$\tilde\nabla\xi=0$, which forces $\partial\xi/\partial R_\mu=0$</td>
-<td>no, it has no solution that propagates</td>
-</tr>
-<tr>
-<td>Element of $\mathbb{B}$, massless</td>
-<td>$\tilde\nabla\tilde{Ξ}=0$</td>
-<td>yes, one factor of $\Box$</td>
-</tr>
-<tr>
-<td>Element of $\mathbb{B}$, massive</td>
-<td>$\tilde\nabla\tilde{Ξ}_{\mathrm{sp},R}=k_m\tilde{Ξ}_{\mathrm{sp},L}$ and $\tilde\nabla^{\natural}\tilde{Ξ}_{\mathrm{sp},L}=k_m\tilde{Ξ}_{\mathrm{sp},R}$</td>
-<td>yes, the pair</td>
-</tr>
-</tbody>
-</table></div>
+<p>| Field | First-order equation | Root? |
+|+-|+-|+-|
+| One complex number | $\tilde\nabla\xi=0$, which forces $\partial\xi/\partial R_\mu=0$ | no, it has no solution that propagates |
+| Element of $\mathbb{B}$, massless | $\tilde\nabla\tilde{Ξ}=0$ | yes, one factor of $\Box$ |
+| Element of $\mathbb{B}$, massive | $\tilde\nabla\tilde{Ξ}_{\mathrm{sp},R}=k_m\tilde{Ξ}_{\mathrm{sp},L}$ and $\tilde\nabla^{\natural}\tilde{Ξ}_{\mathrm{sp},L}=k_m\tilde{Ξ}_{\mathrm{sp},R}$ | yes, the pair |</p>
 <h2 id="the-mass-and-the-chiral-pair">The Mass and the Chiral Pair</h2>
 <h3 id="the-mass-is-central">The mass is central</h3>
 <p>A physical mass is a scalar: it multiplies every element by the same constant, so it commutes with the gradient. It cannot therefore be the zero-order term of a first-order factor. No zero-order term anticommutes with all four left multiplications of the gradient: $\ell_{e_t}$ is the identity map, and a map $B$ with $\{\ell_{e_\mu},B\}=0$ for every $\mu$ is zero (§<em>Verification</em>).</p>
@@ -226,17 +205,17 @@ $$</p>
 <p>Then $\mathbb{D}^2=\Box I$, so that $(\mathbb{D}-k_m)(\mathbb{D}+k_m)=\left(\Box-k_m^{2}\right)I$, and the pair is $(\mathbb{D}-k_m)\tilde{Ξ}_{\mathrm{sp}}=0$. This is the precise sense in which a mass needs a pair: the doubling is the carrier of the factorisation, not a doubling of particles, and the two parts are the two labelled halves of one field.</p>
 <p>The mass term is a multiple of the identity on the two slots and cannot move between them; the gradient is the off-diagonal block, and it is the gradient that carries the mass across. A scalar mass cannot sit in a single factor, for the reason of §<em>No single square</em>; the pair supplies the second slot that the mass needs in order to appear as an equality.</p>
 <h3 id="the-determinant">The determinant</h3>
-<p>On a plane wave the symbol of $\mathbb{D}$, written $\mathbb{D}(\tilde K)$, is the block matrix with $\ell_{\tilde K}$ and $\ell_{\tilde K^{\natural}}$ off the diagonal, where $\ell_M$ is left multiplication by $M$, and its determinant is</p>
+<p>On a plane wave the symbol of $\mathbb{D}$, written $\mathbb{D}(-i\tilde K_{\Phi})$, is the block matrix with $\ell_{-i\tilde K_{\Phi}}$ and $\ell_{i\tilde K_{\Phi}^{\natural}}$ off the diagonal, where $\ell_M$ is left multiplication by $M$, and its determinant is</p>
 <p>$$
-\det\left(\mathbb{D}(\tilde K)-k_m\right)
-=\left(k_{t}^{\prime\,2}-\lvert\vec k\rvert^2-k_m^{2}\right)^4 ,
+\det\left(\mathbb{D}(-i\tilde K_{\Phi})-k_m\right)
+=\left(k_{t}^{\prime\,2}-\lvert\vec k_\Phi\rvert^2-k_m^{2}\right)^4 ,
 $$</p>
-<p>the fourth power of the symbol of $\Box-k_m^{2}$: eliminating one block leaves the Schur complement $1/k_m\left(k_{t}^{\prime\,2}-\lvert\vec k\rvert^2-k_m^{2}\right)$ times the four-dimensional identity.</p>
+<p>the fourth power of the symbol of $\Box-k_m^{2}$: eliminating one block leaves the Schur complement $1/k_m\left(k_{t}^{\prime\,2}-\lvert\vec k_\Phi\rvert^2-k_m^{2}\right)$ times the four-dimensional identity.</p>
 <p>The determinant is a product of eigenvalues, and it is not a square root. A determinant identity says that a power of the scalar symbol is the determinant of a first-order operator; a root needs one first-order operator whose square is the scalar operator, and the power four is the evidence that this operator lives on the doubled carrier. The vanishing is a consistency check on the factorisation, and not a construction of a single root.</p>
 <h2 id="what-the-root-does-not-carry">What the Root Does Not Carry</h2>
 <p>The classification is a statement of form, and its boundaries are part of the result.</p>
 <ol>
-<li><strong>It is stronger than Klein–Gordon.</strong> The massless first-order equation selects a subspace of the second-order solution space. At a null momentum the second-order equation admits every element, four complex dimensions, while $\tilde\nabla\tilde{Ξ}=0$ admits two: at $k=(1,1,0,0)$ left multiplication by $\tilde K$ has rank two and kernel two, and the kernel carries one state of each value of the chirality, the right action $\tilde{Ξ}_{\mathrm{sp}}\mapsto-i\tilde{Ξ}_{\mathrm{sp}}\vec e_z$. What the root halves is the room for the field at that momentum, not the spectrum.</li>
+<li><strong>It is stronger than Klein–Gordon.</strong> The massless first-order equation selects a subspace of the second-order solution space. At a null momentum the second-order equation admits every element, four complex dimensions, while $\tilde\nabla\tilde{Ξ}=0$ admits two: at $k=(1,1,0,0)$ left multiplication by $-i\tilde K_{\Phi}$ has rank two and kernel two, and the kernel carries one state of each value of the chirality, the right action $\tilde{Ξ}_{\mathrm{sp}}\mapsto-i\tilde{Ξ}_{\mathrm{sp}}\vec e_z$. What the root halves is the room for the field at that momentum, not the spectrum.</li>
 <li><strong>No mass and no coupling are predicted.</strong> The classification says which first-order structures have the Klein–Gordon second order; it does not say which one nature uses, and it does not determine $1/k_m$. The sign of the mass carries no content either: the pair at $k_m$ and the pair at $-k_m$ are the same equations with the sign of one part flipped.</li>
 <li><strong>The coefficients are constant and the background flat.</strong> A position-dependent coefficient adds a term in which the derivative acts on the coefficient, and a gauged derivative adds a field strength; the constant-coefficient classification is then the starting point rather than the answer. On a curved background the derivatives become covariant, and the classification applies in the tangent space at each point. The $x$ coordinates are flat; the algebra coordinates give the same operator and not a different root.</li>
 <li><strong>The real structure is open.</strong> The article works over $\mathbb{C}$. Whether the gradient can be given a real structure, and which sign that structure carries, is the charge-conjugation question, and the article does not settle it. The index question is a different one again, and the massless kernel of §<em>The symbol and the mass shell</em> splits by the chirality without the gradient separating the two values.</li>
@@ -247,157 +226,48 @@ $$</p>
 <p>The doubling is not a doubling of particles. The two values of the label are the two parts of one element, and the second member of the pair is determined by the first through the gradient.</p>
 <h2 id="verification">Verification</h2>
 <p>The identities were recomputed before they were written. The algebra multiplication and the left and right multiplications were built as four-dimensional complex matrices, and the symbol reductions were checked at random wave covectors. The residuals are the largest absolute difference over the stated samples, and $k_m$ is a fixed real mass coefficient.</p>
-<div class="table-scroll"><table>
-<thead>
-<tr>
-<th>Check</th>
-<th>Result</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>$\tilde K^{\natural}\tilde K-(k_{t}^{\prime\,2}-\lvert\vec k\rvert^2)e_t$ on $100$ random wave covectors</td>
-<td>$8.9\times10^{-16}$</td>
-</tr>
-<tr>
-<td>the symbol of the square, $\tilde K^2-\left(k_{t}^{\prime\,2}+\lvert\vec k\rvert^2\right)e_t+2ik_{t}^{\prime}\vec k$, on $100$ random wave covectors</td>
-<td>$1.8\times10^{-15}$</td>
-</tr>
-<tr>
-<td>the sixteen maps $\tilde{Ξ}_{\mathrm{sp}}\mapsto e_\mu\tilde{Ξ}_{\mathrm{sp}} e_\nu$ are independent</td>
-<td>rank $16$</td>
-</tr>
-<tr>
-<td>no element anticommutes with the three spatial units</td>
-<td>kernel dimension $0$</td>
-</tr>
-<tr>
-<td>no map anticommutes with the four left multiplications</td>
-<td>dimension $0$</td>
-</tr>
-<tr>
-<td>the same for a generic quaternionic triple, over $100$ conjugates</td>
-<td>kernel dimension $0$</td>
-</tr>
-<tr>
-<td>$\det\ell_{\tilde K}-(k_{t}^{\prime\,2}-\lvert\vec k\rvert^2)^2$ on $100$ random wave covectors</td>
-<td>$5.7\times10^{-14}$</td>
-</tr>
-<tr>
-<td>rank and kernel of $\ell_{\tilde K}$ at five null wave covectors</td>
-<td>rank $2$, kernel $2$ (exact)</td>
-</tr>
-<tr>
-<td>the same off the cone, at $k=(2,1,0,0)$</td>
-<td>rank $4$</td>
-</tr>
-<tr>
-<td>the chirality on the null kernel, the eigenvalues of the right action by $\vec e_z$</td>
-<td>$\pm i$, one of each</td>
-</tr>
-<tr>
-<td>$\mathbb{D}(\tilde K)^2-\Box I_8$</td>
-<td>$1.8\times10^{-15}$</td>
-</tr>
-<tr>
-<td>$\det(\mathbb{D}(\tilde K)-k_m)-(\Box-k_m^{2})^4$ on $100$ random wave covectors</td>
-<td>$2.5\times10^{-11}$</td>
-</tr>
-<tr>
-<td>the elimination, $\tilde\nabla^{\natural}\tilde\nabla\tilde{Ξ}_{\mathrm{sp},R}/k_m^{2}-\tilde{Ξ}_{\mathrm{sp},R}$ on shell</td>
-<td>$3.6\times10^{-15}$</td>
-</tr>
-</tbody>
-</table></div>
-<p>The numerical checks are checks of polynomial identities at random points. The proof is the algebra of the preceding sections; the numbers guard against a sign or factor error in the transcription. Two exact values are quoted in the text: at $k=(2,1,0,0)$ the norm $\tilde K^{\natural}\tilde K$ is $3$, the determinant $\det\ell_{\tilde K}$ is $9$, and at $k_m=1$ the determinant of $\mathbb{D}(\tilde K)-k_m$ is $16$.</p>
+<p>| Check | Result |
+|+-|+-|
+| $(-i\tilde K_{\Phi})^{\natural}(-i\tilde K_{\Phi})-(k_{t}^{\prime\,2}-\lvert\vec k_\Phi\rvert^2)e_t$ on $100$ random wave covectors | $8.9\times10^{-16}$ |
+| the symbol of the square, $\tilde K_{\Phi}^2+\left(k_{t}^{\prime\,2}+\lvert\vec k_\Phi\rvert^2\right)e_t-2ik_{t}^{\prime}\vec k_\Phi$, on $100$ random wave covectors | $1.8\times10^{-15}$ |
+| the sixteen maps $\tilde{Ξ}_{\mathrm{sp}}\mapsto e_\mu\tilde{Ξ}_{\mathrm{sp}} e_\nu$ are independent | rank $16$ |
+| no element anticommutes with the three spatial units | kernel dimension $0$ |
+| no map anticommutes with the four left multiplications | dimension $0$ |
+| the same for a generic quaternionic triple, over $100$ conjugates | kernel dimension $0$ |
+| $\det\ell_{-i\tilde K_{\Phi}}-(k_{t}^{\prime\,2}-\lvert\vec k_\Phi\rvert^2)^2$ on $100$ random wave covectors | $5.7\times10^{-14}$ |
+| rank and kernel of $\ell_{-i\tilde K_{\Phi}}$ at five null wave covectors | rank $2$, kernel $2$ (exact) |
+| the same off the cone, at $k=(2,1,0,0)$ | rank $4$ |
+| the chirality on the null kernel, the eigenvalues of the right action by $\vec e_z$ | $\pm i$, one of each |
+| $\mathbb{D}(-i\tilde K_{\Phi})^2-\Box I_8$ | $1.8\times10^{-15}$ |
+| $\det(\mathbb{D}(-i\tilde K_{\Phi})-k_m)-(\Box-k_m^{2})^4$ on $100$ random wave covectors | $2.5\times10^{-11}$ |
+| the elimination, $\tilde\nabla^{\natural}\tilde\nabla\tilde{Ξ}_{\mathrm{sp},R}/k_m^{2}-\tilde{Ξ}_{\mathrm{sp},R}$ on shell | $3.6\times10^{-15}$ |</p>
+<p>The numerical checks are checks of polynomial identities at random points. The proof is the algebra of the preceding sections; the numbers guard against a sign or factor error in the transcription. Two exact values are quoted in the text: at $k=(2,1,0,0)$ the norm $(-i\tilde K_{\Phi})^{\natural}(-i\tilde K_{\Phi})$ is $3$, the determinant $\det\ell_{-i\tilde K_{\Phi}}$ is $9$, and at $k_m=1$ the determinant of $\mathbb{D}(-i\tilde K_{\Phi})-k_m$ is $16$.</p>
 <h2 id="summary">Summary</h2>
 <p>The first-order root of the biquaternion Klein–Gordon operator exists, and it is a pair of first-order operators rather than one: the gradient and its conjugate, with $\tilde\nabla\tilde\nabla^{\natural}=\Box$. The square of the gradient alone is not scalar, because $e_t$ is the identity and commutes with the three spatial units, so the mixed derivatives add. No first-order operator with constant element coefficients acting on the left has a scalar square either, because that needs four elements anticommuting pairwise with squares $+1,-1,-1,-1$, and the three of square $-1$ already generate the algebra.</p>
 <p>The free equation is first order in one field, $\tilde\nabla\tilde{Ξ}=0$, and it implies the massless Klein–Gordon equation. At a null momentum it selects two of the four complex dimensions of the second-order solution space, one state of each value of the chirality.</p>
 <p>The mass is scalar and central. It commutes with the gradient, so it cannot be the zero-order term of a first-order factor; it is the coupling of the two parts of one element, and the pair operator $\mathbb{D}$ carries it, with $(\mathbb{D}-k_m)(\mathbb{D}+k_m)=(\Box-k_m^{2})I$. Eliminating one member returns $\Box\tilde{Ξ}_{\mathrm{sp},R}=k_m^{2}\tilde{Ξ}_{\mathrm{sp},R}$, so the pair and the second-order equation on one part are equivalent.</p>
 <p>A field whose value is one complex number has no first-order equation: the four terms of the gradient impose four independent conditions on one function. The results are a classification of form. No mass, no coupling and no dynamics are predicted. The open questions are the gauged, curved, position-dependent and real-structure extensions.</p>
 <h2 id="summary-of-notation">Summary of Notation</h2>
-<div class="table-scroll"><table>
-<thead>
-<tr>
-<th>Symbol</th>
-<th>Meaning</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>$\mathbb{B}$</td>
-<td>The biquaternion algebra</td>
-</tr>
-<tr>
-<td>$e_t,\vec e_x,\vec e_y,\vec e_z$</td>
-<td>The four units</td>
-</tr>
-<tr>
-<td>$i$</td>
-<td>The central imaginary unit</td>
-</tr>
-<tr>
-<td>$Q_\mu$</td>
-<td>The algebra coordinates</td>
-</tr>
-<tr>
-<td>$x_\mu$</td>
-<td>The Lorentz coordinates</td>
-</tr>
-<tr>
-<td>$\tilde\nabla$</td>
-<td>Biquaternionic gradient, an element with derivative coefficients, acting on the left</td>
-</tr>
-<tr>
-<td>$\tilde\nabla^{\natural}$</td>
-<td>Its quaternion conjugate, the second factor of $\Box$</td>
-</tr>
-<tr>
-<td>$\Box$</td>
-<td>d'Alembertian; its Lorentz form is derived in §<em>The Equation</em></td>
-</tr>
-<tr>
-<td>$c$</td>
-<td>The speed of light in the medium</td>
-</tr>
-<tr>
-<td>$1/k_m$</td>
-<td>The mass length, $\hbar/(mc)$; its reciprocal $k_m=mc/\hbar$ is the inverse reduced Compton wavelength</td>
-</tr>
-<tr>
-<td>$k_\mu$</td>
-<td>The wave covector of a plane wave</td>
-</tr>
-<tr>
-<td>$\omega=-\vec e_z$</td>
-<td>The pseudoscalar of the algebra, $\omega^2=-e_t$</td>
-</tr>
-<tr>
-<td>$\tilde K=k_{t}^{\prime}-i\vec k$</td>
-<td>The symbol of the gradient, an element of $\mathbb{B}$</td>
-</tr>
-<tr>
-<td>$\ell_M$</td>
-<td>Left multiplication by $M$</td>
-</tr>
-<tr>
-<td>$\tilde{Ξ}$</td>
-<td>The field of the Klein–Gordon equation, an element of $\mathbb{B}$</td>
-</tr>
-<tr>
-<td>$\tilde{Ξ}_{\mathrm{sp},L},\tilde{Ξ}_{\mathrm{sp},R}$</td>
-<td>The two parts of an element, the two values of the label</td>
-</tr>
-<tr>
-<td>$\mathbb{D}$</td>
-<td>The pair operator on $\mathbb{B}\oplus\mathbb{B}$, $\mathbb{D}(\tilde{Ξ}_{\mathrm{sp},L},\tilde{Ξ}_{\mathrm{sp},R})=(\tilde\nabla\tilde{Ξ}_{\mathrm{sp},R},\tilde\nabla^{\natural}\tilde{Ξ}_{\mathrm{sp},L})$, with $\mathbb{D}^2=\Box I$</td>
-</tr>
-<tr>
-<td>the label</td>
-<td>$L$ or $R$, two values, carried by the parts of an element</td>
-</tr>
-</tbody>
-</table></div>
+<p>| Symbol | Meaning |
+|+-|+-|
+| $\mathbb{B}$ | The biquaternion algebra |
+| $e_t,\vec e_x,\vec e_y,\vec e_z$ | The four units |
+| $i$ | The central imaginary unit |
+| $Q_\mu$ | The algebra coordinates |
+| $x_\mu$ | The Lorentz coordinates |
+| $\tilde\nabla$ | Biquaternionic gradient, an element with derivative coefficients, acting on the left |
+| $\tilde\nabla^{\natural}$ | Its quaternion conjugate, the second factor of $\Box$ |
+| $\Box$ | d'Alembertian; its Lorentz form is derived in §<em>The Equation</em> |
+| $c$ | The speed of light in the medium |
+| $1/k_m$ | The mass length, $\hbar/(mc)$; its reciprocal $k_m=mc/\hbar$ is the inverse reduced Compton wavelength |
+| $k_\mu$ | The wave covector of a plane wave |
+| $\omega=-\vec e_z$ | The pseudoscalar of the algebra, $\omega^2=-e_t$ |
+| $-i\tilde K_{\Phi}=k_{t}^{\prime}-i\vec k_\Phi$ | The symbol of the gradient, an element of $\mathbb{B}$ |
+| $\ell_M$ | Left multiplication by $M$ |
+| $\tilde{Ξ}$ | The field of the Klein–Gordon equation, an element of $\mathbb{B}$ |
+| $\tilde{Ξ}_{\mathrm{sp},L},\tilde{Ξ}_{\mathrm{sp},R}$ | The two parts of an element, the two values of the label |
+| $\mathbb{D}$ | The pair operator on $\mathbb{B}\oplus\mathbb{B}$, $\mathbb{D}(\tilde{Ξ}_{\mathrm{sp},L},\tilde{Ξ}_{\mathrm{sp},R})=(\tilde\nabla\tilde{Ξ}_{\mathrm{sp},R},\tilde\nabla^{\natural}\tilde{Ξ}_{\mathrm{sp},L})$, with $\mathbb{D}^2=\Box I$ |
+| the label | $L$ or $R$, two values, carried by the parts of an element |</p>
 <h2 id="further-reading">Further Reading</h2>
 <ul>
 <li>P. A. M. Dirac, "The quantum theory of the electron," <em>Proceedings of the Royal Society A</em> <strong>117</strong> (1928) 610–624, for the first-order equation and its second-order consequence.</li>

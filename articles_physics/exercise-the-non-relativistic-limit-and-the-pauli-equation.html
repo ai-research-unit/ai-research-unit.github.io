@@ -109,13 +109,13 @@ $$</p>
 \qquad
 \sum_k\vec e_k\pi_k=-\frac{m\,c\,i\,D_{3}^{A}}{k_m},
 $$</p>
-<p>with $\pi_k=p_k-qA_k$ and $D_3^A=\sum_k\vec e_k(\partial/\partial r_k-\frac{k_m\,iqA_{k}}{m\,c})$ the pure part of the gauged gradient. The corpus names this family $\tilde\nabla_{\mathrm{gco}}$ in <em>The Covariant Derivative and the Gauge Connection in Biquaternionic Form</em>, where the potential is written $i\,a'_t\,e_t+\vec A$; the exercise keeps its own $\tilde A_{\Phi}=Ξ e_t-\vec A$ and writes the operator out rather than borrowing the name. A plane wave $\exp\!\bigl(i(k_{t}^{\prime}x_0-\vec k\cdot\vec q)\bigr)$, with $x_0=r'_{t}$, replaces the gradient by the element</p>
+<p>with $\pi_k=p_k-qA_k$ and $D_3^A=\sum_k\vec e_k(\partial/\partial r_k-\frac{k_m\,iqA_{k}}{m\,c})$ the pure part of the gauged gradient. The corpus names this family $\tilde\nabla_{\mathrm{gco}}$ in <em>The Covariant Derivative and the Gauge Connection in Biquaternionic Form</em>, where the potential is written $i\,a'_t\,e_t+\vec A$; the exercise keeps its own $\tilde A_{\Phi}=Ξ e_t-\vec A$ and writes the operator out rather than borrowing the name. A plane wave $\exp\!\bigl(i(k_{t}^{\prime}x_0-\vec k_\Phi\cdot\vec q)\bigr)$, with $x_0=r'_{t}$, replaces the gradient by the element</p>
 <p>$$
-\tilde K=k_{t}^{\prime}-i\vec k,
+-i\tilde K_{\Phi}=k_{t}^{\prime}-i\vec k_\Phi,
 \qquad
-\tilde Kf=0\ \text{on the light cone},
+-i\tilde K_{\Phi}f=0\ \text{on the light cone},
 \qquad
-\tilde K^{\natural}\tilde K=k_{t}^{\prime\,2}-\lvert\vec k\rvert^2 .
+(-i\tilde K_{\Phi})^{\natural}(-i\tilde K_{\Phi})=k_{t}^{\prime\,2}-\lvert\vec k_\Phi\rvert^2 .
 $$</p>
 <p><strong>What the gradient can do, and what it cannot.</strong> The massless equation is one first-order equation in one field,</p>
 <p>$$
@@ -147,47 +147,14 @@ $$</p>
 -\tilde\nabla^{\natural}F-mi\,\overline F\,\vec e_z=0
 $$</p>
 <p>for a field $F\in\mathbb B$, since $i\partial/\partial r'_t=-\partial/\partial R_t$ in these units. The two forms are related by a change of representation, but they are different operators: the pair is linear in the field, while the mass term of the two-sided form is antilinear because it carries $\overline F$.</p>
-<div class="table-scroll"><table>
-<thead>
-<tr>
-<th></th>
-<th>One-sided pair</th>
-<th>Two-sided form</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Equation</td>
-<td>$\tilde\nabla F_R=mF_L$, $\tilde\nabla^{\natural}F_L=mF_R$</td>
-<td>$\mathcal NF=0$, with $\mathcal NF=(i\partial/\partial r'_t+D_3)F-mi\overline F\vec e_z$</td>
-</tr>
-<tr>
-<td>Multiplication</td>
-<td>left by $\tilde\nabla$ and $\tilde\nabla^{\natural}$</td>
-<td>left by $i\partial/\partial r'_t$ and $D_3$; right by $\vec e_z$; antilinear bar</td>
-</tr>
-<tr>
-<td>Field</td>
-<td>$F=F_L+F_R\in\Delta=\mathbb B$</td>
-<td>$F\in\mathbb B$</td>
-</tr>
-<tr>
-<td>Mass</td>
-<td>off-diagonal pairing of the chiral halves</td>
-<td>$-mi\overline F\vec e_z$: a conjugation and a direction</td>
-</tr>
-<tr>
-<td>Chirality</td>
-<td>the central sign, $\mp1$ on the two halves</td>
-<td>the right multiplication by $-i\vec e_z$</td>
-</tr>
-<tr>
-<td>Use</td>
-<td>the formulation and its kinematics</td>
-<td>the dictionary, the Cauchy theory, the integral representation</td>
-</tr>
-</tbody>
-</table></div>
+<p>| | One-sided pair | Two-sided form |
+|+-|+-|+-|
+| Equation | $\tilde\nabla F_R=mF_L$, $\tilde\nabla^{\natural}F_L=mF_R$ | $\mathcal NF=0$, with $\mathcal NF=(i\partial/\partial r'_t+D_3)F-mi\overline F\vec e_z$ |
+| Multiplication | left by $\tilde\nabla$ and $\tilde\nabla^{\natural}$ | left by $i\partial/\partial r'_t$ and $D_3$; right by $\vec e_z$; antilinear bar |
+| Field | $F=F_L+F_R\in\Delta=\mathbb B$ | $F\in\mathbb B$ |
+| Mass | off-diagonal pairing of the chiral halves | $-mi\overline F\vec e_z$: a conjugation and a direction |
+| Chirality | the central sign, $\mp1$ on the two halves | the right multiplication by $-i\vec e_z$ |
+| Use | the formulation and its kinematics | the dictionary, the Cauchy theory, the integral representation |</p>
 <p>The reduction below is of the one-sided pair, read on the Dirac module. The Foldy–Wouthuysen transformation is applied to the Hamiltonian of that pair. The two-sided form is a different operator, antilinear in its mass term; its non-relativistic reduction is not attempted here.</p>
 <h3 id="the-hamiltonian-form">The Hamiltonian form</h3>
 <p><strong>The two gradings.</strong> The reduction needs two involutions of the module, and both are right multiplications of the algebra, written by position.</p>
@@ -212,7 +179,7 @@ $$</p>
 \qquad
 O=O^{\dagger},\quad \beta=\beta^{\dagger},
 $$</p>
-<p>so that $O$ is odd, $qΞ$ is even, and $H$ is Hermitian. The eigenvalues of $H$ at zero potential are $\pm\sqrt{m^2c^4+c^2\vec\pi^2}$, which is the mass shell $\tilde K^{\natural}\tilde K=m^2$ of the pair.</p>
+<p>so that $O$ is odd, $qΞ$ is even, and $H$ is Hermitian. The eigenvalues of $H$ at zero potential are $\pm\sqrt{m^2c^4+c^2\vec\pi^2}$, which is the mass shell $(-i\tilde K_{\Phi})^{\natural}(-i\tilde K_{\Phi})=k_m^{2}$ of the pair.</p>
 <p><strong>The two halves.</strong> With $\beta\tilde{Ξ}_{\mathrm{sp},\mathrm{evn}}=+\tilde{Ξ}_{\mathrm{sp},\mathrm{evn}}$ and $\beta\tilde{Ξ}_{\mathrm{sp},\mathrm{odd}}=-\tilde{Ξ}_{\mathrm{sp},\mathrm{odd}}$, the equation of motion reads on the two parts</p>
 <p>$$\frac{m\,c\,i}{k_m}\frac{\partial\tilde{Ξ}_{\mathrm{sp},\mathrm{evn}}}{\partial  r'_t}=mc^2\tilde{Ξ}_{\mathrm{sp},\mathrm{evn}}+O\tilde{Ξ}_{\mathrm{sp},\mathrm{odd}}+qΞ\tilde{Ξ}_{\mathrm{sp},\mathrm{evn}},\frac{m\,c\,i}{k_m}\frac{\partial\tilde{Ξ}_{\mathrm{sp},\mathrm{odd}}}{\partial  r'_t}=-mc^2\tilde{Ξ}_{\mathrm{sp},\mathrm{odd}}+O\tilde{Ξ}_{\mathrm{sp},\mathrm{evn}}+qΞ\tilde{Ξ}_{\mathrm{sp},\mathrm{odd}} .
 $$</p>
@@ -433,47 +400,14 @@ $$</p>
 $$</p>
 <p>so the term is Hermitian if and only if $\nabla\times\vec E=0$, its failure of Hermiticity being proportional to the curl. Since $\vec E=-\nablaΞ$ for an electrostatic field, $\nabla\times\vec E=-\nabla\times\nablaΞ=0$ identically, and the term is Hermitian. Writing it instead as $\boldsymbol\sigma\cdot(\nabla V\times\vec\pi)$ makes this manifest, because $\nabla V$ is a gradient. For a general time-dependent field, where $\vec E$ has a solenoidal part and $\nabla\times\vec E=-\partial/\partial r'_t\,\vec B$, the antisymmetric part does not vanish and the non-relativistic reduction requires the symmetrized ordering; this is the only place in the reduction where the result is convention- and ordering-sensitive beyond the metric conventions already noted.</p>
 <p><em>Step 2: the $\mathbb{B}_{\Psi}$ representatives.</em> Under the isomorphism, a Hermitian $2\times2$ matrix $r_t\,I_2+\vec r_\Psi\cdot\boldsymbol\sigma$ corresponds to the Hermitian biquaternion $r_t\,e_t+i\vec r_\Psi\in\mathbb{B}_{\Psi}$. Applying it term by term, with $\vec B=\sum_k B_k\vec e_k$ and $(\vec E\times\vec\pi)=(\vec E\times\vec\pi)_k\vec e_k$,</p>
-<div class="table-scroll"><table>
-<thead>
-<tr>
-<th>Term of $H$</th>
-<th>Biquaternion representative</th>
-<th>Sector</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>$\vec\pi^2 c/(2\,m\,c)$</td>
-<td>$(\vec\pi^2 c/(2\,m\,c))\,e_t$</td>
-<td>$\mathbb{B}_{\Psi}$</td>
-</tr>
-<tr>
-<td>$qΞ$</td>
-<td>$(qΞ)\,e_t$</td>
-<td>$\mathbb{B}_{\Psi}$</td>
-</tr>
-<tr>
-<td>$-\frac{q c}{2\,k_m}\boldsymbol\sigma\cdot\vec B$</td>
-<td>$-\frac{q c}{2\,k_m}\,i\vec B$</td>
-<td>$\mathbb{B}_{\Psi}$</td>
-</tr>
-<tr>
-<td>$-\dfrac{(\boldsymbol\sigma\cdot\vec\pi)^4}{8m^3c^2}$</td>
-<td>$-\dfrac{1}{8m^3c^2}\bigl(\vec\pi^2-\frac{m\,c\,q\,i\,\vec B}{k_m}\bigr)^2$</td>
-<td>$\mathbb{B}_{\Psi}$</td>
-</tr>
-<tr>
-<td>$\frac{1}{8\,k_m^{2}}\nabla^2 V$</td>
-<td>$\frac{1}{8\,k_m^{2}}(\nabla^2V)\,e_t$</td>
-<td>$\mathbb{B}_{\Psi}$</td>
-</tr>
-<tr>
-<td>$-\frac{q}{4\,m\,c\,k_m}\boldsymbol\sigma\cdot(\vec E\times\vec\pi)$</td>
-<td>$-\frac{q}{4\,m\,c\,k_m}\,i(\vec E\times\vec\pi)$</td>
-<td>$\mathbb{B}_{\Psi}$</td>
-</tr>
-</tbody>
-</table></div>
+<p>| Term of $H$ | Biquaternion representative | Sector |
+|+-|+-|+-|
+| $\vec\pi^2 c/(2\,m\,c)$ | $(\vec\pi^2 c/(2\,m\,c))\,e_t$ | $\mathbb{B}_{\Psi}$ |
+| $qΞ$ | $(qΞ)\,e_t$ | $\mathbb{B}_{\Psi}$ |
+| $-\frac{q c}{2\,k_m}\boldsymbol\sigma\cdot\vec B$ | $-\frac{q c}{2\,k_m}\,i\vec B$ | $\mathbb{B}_{\Psi}$ |
+| $-\dfrac{(\boldsymbol\sigma\cdot\vec\pi)^4}{8m^3c^2}$ | $-\dfrac{1}{8m^3c^2}\bigl(\vec\pi^2-\frac{m\,c\,q\,i\,\vec B}{k_m}\bigr)^2$ | $\mathbb{B}_{\Psi}$ |
+| $\frac{1}{8\,k_m^{2}}\nabla^2 V$ | $\frac{1}{8\,k_m^{2}}(\nabla^2V)\,e_t$ | $\mathbb{B}_{\Psi}$ |
+| $-\frac{q}{4\,m\,c\,k_m}\boldsymbol\sigma\cdot(\vec E\times\vec\pi)$ | $-\frac{q}{4\,m\,c\,k_m}\,i(\vec E\times\vec\pi)$ | $\mathbb{B}_{\Psi}$ |</p>
 <p>Every term of the reduced, two-component Hamiltonian is Hermitian, hence every term lands in $\mathbb{B}_{\Psi}$. This is the precise content of the parent's remark that the spin term is an observable of the informational sector; the remark applies term by term. Each representative is a left multiplication by an element, which is what makes the identification possible at all.</p>
 <p><em>Step 3: what does not land in $\mathbb{B}_{\Psi}$.</em> Three classes of object in the reduction do not.</p>
 <ol>
@@ -488,118 +422,28 @@ $$</p>
 </li>
 </ol>
 <p><em>Step 4: the sides, one line per operator.</em> Every operator of the reduction is listed with the element that multiplies on the left and the element that multiplies on the right. The column headed "side" is the answer to the only question that matters here: whether the operator is a single multiplication or a product of two.</p>
-<div class="table-scroll"><table>
-<thead>
-<tr>
-<th>Operator</th>
-<th>Left element</th>
-<th>Right element</th>
-<th>Side</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>$\beta$</td>
-<td>$e_t$</td>
-<td>$i\vec e_x$</td>
-<td>right multiplication alone</td>
-</tr>
-<tr>
-<td>$\Gamma$</td>
-<td>$e_t$</td>
-<td>$-i\vec e_z$</td>
-<td>right multiplication alone</td>
-</tr>
-<tr>
-<td>$O$</td>
-<td>$\vec e_k$, with $\pi_k$</td>
-<td>$\vec e_y$</td>
-<td>two-sided</td>
-</tr>
-<tr>
-<td>$S_1$</td>
-<td>$\vec e_k$, with $\pi_k$</td>
-<td>$\vec e_z$</td>
-<td>two-sided</td>
-</tr>
-<tr>
-<td>$O_1$</td>
-<td>the element $\vec E$</td>
-<td>$\vec e_z$</td>
-<td>two-sided</td>
-</tr>
-<tr>
-<td>$S_2$</td>
-<td>the element $\vec E$</td>
-<td>$\vec e_y$</td>
-<td>two-sided</td>
-</tr>
-<tr>
-<td>$O^2$</td>
-<td>$\vec e_j\vec e_k$, with $\pi_j\pi_k$</td>
-<td>$e_t$, the two $\vec e_y$ having collapsed</td>
-<td>left multiplication by an element</td>
-</tr>
-<tr>
-<td>$\vec\pi^2$, $qΞ$, $\boldsymbol\sigma\cdot\vec B$, the $c^{-2}$ terms</td>
-<td>an element of $\mathbb{B}_{\Psi}$</td>
-<td>$e_t$</td>
-<td>left multiplication by an element</td>
-</tr>
-</tbody>
-</table></div>
+<p>| Operator | Left element | Right element | Side |
+|+-|+-|+-|+-|
+| $\beta$ | $e_t$ | $i\vec e_x$ | right multiplication alone |
+| $\Gamma$ | $e_t$ | $-i\vec e_z$ | right multiplication alone |
+| $O$ | $\vec e_k$, with $\pi_k$ | $\vec e_y$ | two-sided |
+| $S_1$ | $\vec e_k$, with $\pi_k$ | $\vec e_z$ | two-sided |
+| $O_1$ | the element $\vec E$ | $\vec e_z$ | two-sided |
+| $S_2$ | the element $\vec E$ | $\vec e_y$ | two-sided |
+| $O^2$ | $\vec e_j\vec e_k$, with $\pi_j\pi_k$ | $e_t$, the two $\vec e_y$ having collapsed | left multiplication by an element |
+| $\vec\pi^2$, $qΞ$, $\boldsymbol\sigma\cdot\vec B$, the $c^{-2}$ terms | an element of $\mathbb{B}_{\Psi}$ | $e_t$ | left multiplication by an element |</p>
 <p>No other right multiplication and no other differential operator occurs in the reduction: the only derivative is the pure part of the gradient, $\sum_k\vec e_k\pi_k=-\frac{m\,c\,i\,D_{3}^{A}}{k_m}$, and it always appears with the single left element $\vec e_k$ shown. The elements $\vec e_y$ and $\vec e_z$ that close $O$, $S_1$, $O_1$ and $S_2$ are the only right multipliers, and no symbol of the article stands for an operator whose sides are left unstated.</p>
 <h2 id="problem-5-the-physical-dimensions-of-each-term">Problem 5: The physical dimensions of each term</h2>
 <p><strong>Statement.</strong> Determine the physical dimensions of each term.</p>
 <p><strong>Solution.</strong> Every term is an energy, since each is a term of a Hamiltonian. The individual coefficients nevertheless carry different powers of $\frac{m\,c}{k_m}$ and $c$, and checking them is a useful consistency test. In SI units, with $[\frac{m\,c}{k_m}]=\mathrm{kg\,m^2\,s^{-1}}$, $[c]=\mathrm{m\,s^{-1}}$, $[q]=\mathrm C$, $[Ξ]=\mathrm V=\mathrm{kg\,m^2\,s^{-3}A^{-1}}$, $[\vec B]=\mathrm T=\mathrm{kg\,s^{-2}A^{-1}}$ and $[\vec E]=\mathrm{V\,m^{-1}}=\mathrm{kg\,m\,s^{-3}A^{-1}}$:</p>
-<div class="table-scroll"><table>
-<thead>
-<tr>
-<th>Term</th>
-<th>Coefficient units</th>
-<th>Field/operator units</th>
-<th>Product</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>$\vec\pi^2 c/(2\,m\,c)$</td>
-<td>$1/m$</td>
-<td>$(\mathrm{kg\,m\,s^{-1}})^2$</td>
-<td>$\mathrm{kg\,m^2\,s^{-2}}$</td>
-</tr>
-<tr>
-<td>$qΞ$</td>
-<td>$\mathrm C$</td>
-<td>$\mathrm{kg\,m^2\,s^{-3}A^{-1}}$</td>
-<td>$\mathrm{kg\,m^2\,s^{-2}}$</td>
-</tr>
-<tr>
-<td>$-\frac{q c}{2\,k_m}\boldsymbol\sigma\cdot\vec B$</td>
-<td>$\mathrm C\,\mathrm{kg\,m^2\,s^{-1}\,kg^{-1}}$</td>
-<td>$\mathrm{kg\,s^{-2}A^{-1}}$</td>
-<td>$\mathrm{kg\,m^2\,s^{-2}}$</td>
-</tr>
-<tr>
-<td>$-\frac{q}{8\,k_m^{2}}\nabla\cdot\vec E$</td>
-<td>$\mathrm C\,\mathrm{kg^2m^4s^{-2}}\,\mathrm{kg^{-2}m^{-2}s^{2}}$</td>
-<td>$\mathrm{kg\,s^{-3}A^{-1}}$</td>
-<td>$\mathrm{kg\,m^2\,s^{-2}}$</td>
-</tr>
-<tr>
-<td>$-\frac{q}{4\,m\,c\,k_m}\boldsymbol\sigma\cdot(\vec E\times\vec\pi)$</td>
-<td>$\mathrm C\,\mathrm{kg\,m^2s^{-1}}\,\mathrm{kg^{-2}m^{-2}s^{2}}$</td>
-<td>$\mathrm{kg^2m^2s^{-4}A^{-1}}$</td>
-<td>$\mathrm{kg\,m^2\,s^{-2}}$</td>
-</tr>
-<tr>
-<td>$-\dfrac{(\boldsymbol\sigma\cdot\vec\pi)^4}{8m^3c^2}$</td>
-<td>$\mathrm{kg^{-3}m^{-2}s^{2}}$</td>
-<td>$\mathrm{kg^4m^4s^{-4}}$</td>
-<td>$\mathrm{kg\,m^2\,s^{-2}}$</td>
-</tr>
-</tbody>
-</table></div>
+<p>| Term | Coefficient units | Field/operator units | Product |
+|+-|+-|+-|+-|
+| $\vec\pi^2 c/(2\,m\,c)$ | $1/m$ | $(\mathrm{kg\,m\,s^{-1}})^2$ | $\mathrm{kg\,m^2\,s^{-2}}$ |
+| $qΞ$ | $\mathrm C$ | $\mathrm{kg\,m^2\,s^{-3}A^{-1}}$ | $\mathrm{kg\,m^2\,s^{-2}}$ |
+| $-\frac{q c}{2\,k_m}\boldsymbol\sigma\cdot\vec B$ | $\mathrm C\,\mathrm{kg\,m^2\,s^{-1}\,kg^{-1}}$ | $\mathrm{kg\,s^{-2}A^{-1}}$ | $\mathrm{kg\,m^2\,s^{-2}}$ |
+| $-\frac{q}{8\,k_m^{2}}\nabla\cdot\vec E$ | $\mathrm C\,\mathrm{kg^2m^4s^{-2}}\,\mathrm{kg^{-2}m^{-2}s^{2}}$ | $\mathrm{kg\,s^{-3}A^{-1}}$ | $\mathrm{kg\,m^2\,s^{-2}}$ |
+| $-\frac{q}{4\,m\,c\,k_m}\boldsymbol\sigma\cdot(\vec E\times\vec\pi)$ | $\mathrm C\,\mathrm{kg\,m^2s^{-1}}\,\mathrm{kg^{-2}m^{-2}s^{2}}$ | $\mathrm{kg^2m^2s^{-4}A^{-1}}$ | $\mathrm{kg\,m^2\,s^{-2}}$ |
+| $-\dfrac{(\boldsymbol\sigma\cdot\vec\pi)^4}{8m^3c^2}$ | $\mathrm{kg^{-3}m^{-2}s^{2}}$ | $\mathrm{kg^4m^4s^{-4}}$ | $\mathrm{kg\,m^2\,s^{-2}}$ |</p>
 <p>The pattern is informative. The leading terms ($\vec\pi^2 c/(2\,m\,c)$, $qΞ$, the spin term) carry no power of $c$; the three corrections each carry $c^{-2}$, which is the statement that they are relativistic corrections of order $v^2/c^2$. The spin term carries one power of $\frac{m\,c}{k_m}$ in its coefficient, while the leading kinetic and electrostatic terms carry none. Written with $\vec S=\frac{m\,c}{2\,k_m}\boldsymbol\sigma$, it is $-(q/m)\vec S\cdot\vec B$, the classical coupling of a magnetic moment; the power of $\frac{m\,c}{k_m}$ is the conversion between the dimensionless $\boldsymbol\sigma$ and the spin. The Darwin term carries $\frac{m^{2}\,c^{2}}{k_m^{2}}$ and has no classical counterpart. The spin–orbit term carries one power of $\frac{m\,c}{k_m}$ in its coefficient, but it is quadratic in the angular momenta once $\vec S$ and $\vec L=\vec r\times p$ are used, so it becomes the classical Thomas-precession coupling when $\vec S$ and $\vec L$ are treated as classical vectors.</p>
 <h2 id="summary">Summary</h2>
 <p>The non-relativistic limit of the biquaternion Dirac equation was carried through in five steps, for the one-sided chiral pair read on the Dirac module. Every derivative in the reduction is the biquaternionic gradient: the free equation is the first-order one-field equation $\tilde\nabla F=0$, the massive equation is the chiral pair $\tilde\nabla F_R=mF_L$, $\tilde\nabla^{\natural}F_L=mF_R$, and the square of the gradient is neither scalar nor the d'Alembertian, so no one-field first-order massive equation was written at any point. The two-sided form of the parent is a different operator, antilinear in its mass term, and is not reduced here.</p>
@@ -610,108 +454,31 @@ $$</p>
 <p>produces the Pauli Hamiltonian $\frac{m\,c^{2}\,i}{k_m}\partial\tilde{Ξ}_{\mathrm{sp},\mathrm{evn}}/\partial r'_t=\bigl[\vec\pi^2 c/(2\,m\,c)+qΞ-(qc/k_m/2)\boldsymbol\sigma\cdot\vec B\bigr]\tilde{Ξ}_{\mathrm{sp},\mathrm{evn}}$, reproducing the parent article. The minimal substitution in the gradient, $\tilde\nabla\to\tilde\nabla-\frac{k_m\,i\,q\,\tilde{A}_{\Phi}}{m\,c}$, gives $[\pi_i,\pi_j]=\frac{m\,c\,i\,q\,\epsilon_{ijk}\,B_{k}}{k_m}$ and $(\boldsymbol\sigma\cdot\vec\pi)^2=\vec\pi^2-\frac{m\,c\,q\,\boldsymbol{\sigma}\,\vec B}{k_m}$, and the coefficient $1/2m$ produced by the elimination fixes $g=2$ and $\vec\mu=(q/m)\vec S$, hence $\mu_B=ec\dfrac{1}{2\,k_{m_e}}$ for the electron. At the next order in $1/c$, the second-order term $-\tfrac12[S_1,[S_1,E]]$ of the first transformation gives the Darwin term $+\frac{m^{2}\,c^{2}}{k_m^{2}}\nabla^2 V/(8m^2c^2)=-(\frac{q}{8\,k_m^{2}})\nabla\cdot\vec E$ and the spin–orbit coupling $-(\frac{q}{4\,m\,c\,k_m})\boldsymbol\sigma\cdot(\vec E\times\vec\pi)=(\frac{1}{4\,m\,c\,k_m})r^{-1}(dV/dr)\boldsymbol\sigma\cdot\vec L$, while the expansion of the free large-part energy gives the relativistic kinetic correction $-(\boldsymbol\sigma\cdot\vec\pi)^4/(8m^3c^2)$. The second transformation removes the residual odd term $O_1$ and adds no even term at this order. Summed, these reproduce the exact Dirac fine structure of hydrogenic ions for 36 levels with $n\le6$, with difference exactly zero.</p>
 <p>Every term of the reduced Hamiltonian is Hermitian and therefore lies in $\mathbb{B}_{\Psi}$. The objects that do not are the two-sided operators of the reduction — the mass term $\beta mc^2$ and the odd operator $O$, which end in right multiplications by $i\vec e_x$ and by $\vec e_y$ and so are not left multiplications by an element — together with the anti-Hermitian generator $iS_1$ and the rest-energy phase, which is not Hermitian and belongs to neither sector. The real structure $\flat$ — whose opposite-sign action on the sectors a Majorana-type coupling would carry — is not the parent's mass term, which is the linear coupling of the two chiralities. The Foldy–Wouthuysen grading by $\beta$ must not be confused with the $\mathbb{B}_{\Psi}/\mathbb{B}_{\Phi}$ grading by ${}^{*}$. All terms are energies, the three corrections carrying the expected $c^{-2}$.</p>
 <h2 id="summary-of-notation">Summary of Notation</h2>
-<div class="table-scroll"><table>
-<thead>
-<tr>
-<th>Symbol</th>
-<th>Meaning</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>$\mathbb B=\mathbb C\otimes_\mathbb R\mathbb H$</td>
-<td>Biquaternion algebra</td>
-</tr>
-<tr>
-<td>$e_t=1,\vec e_x,\vec e_y,\vec e_z$, $\vec e_k^2=-e_t$</td>
-<td>Quaternion basis</td>
-</tr>
-<tr>
-<td>$\mathbb{B}_{\Psi},\mathbb{B}_{\Phi}$</td>
-<td>Hermitian / anti-Hermitian subspaces</td>
-</tr>
-<tr>
-<td>$\mathsf{M}_2(\vec e_k)=-i\sigma_k$, $\sigma_k\leftrightarrow i\vec e_k$</td>
-<td>Isomorphism, Pauli matrices</td>
-</tr>
-<tr>
-<td>$\tilde\nabla$, $\tilde\nabla^{\natural}$</td>
-<td>The gradient and its conjugate, $\varepsilon=(1,-1,-1,-1)$</td>
-</tr>
-<tr>
-<td>$\Box=\tilde\nabla\tilde\nabla^{\natural}$</td>
-<td>The d'Alembertian</td>
-</tr>
-<tr>
-<td>$D_3=\sum_k\vec e_k\partial/\partial r_k$, $D_3^A$</td>
-<td>Pure part of the gradient, free and gauged</td>
-</tr>
-<tr>
-<td>$\tilde\nabla-\frac{k_m\,i\,q\,\tilde{A}_{\Phi}}{m\,c}$, $\tilde A_{\Phi}=Ξ e_t-\vec A$</td>
-<td>The gauged gradient; minimal substitution</td>
-</tr>
-<tr>
-<td>$\tilde K=k_{t}^{\prime}-i\vec k$</td>
-<td>Symbol of the gradient on a plane wave; $\tilde K^{\natural}\tilde K=k_{t}^{\prime\,2}-\lvert\vec k\rvert^2$</td>
-</tr>
-<tr>
-<td>$F=F_L+F_R$; $\Gamma F=-iF\vec e_z$</td>
-<td>The field and its chirality, values $\mp1$</td>
-</tr>
-<tr>
-<td>$\beta F=iF\vec e_x$, $\beta^2=1$, $\beta\Gamma=-\Gamma\beta$</td>
-<td>The mass grading; $\beta O=-O\beta$</td>
-</tr>
-<tr>
-<td>$O=c\sum_k\vec e_k\pi_k(\cdot)\vec e_y=-\frac{m\,c^{2}\,i\,D_{3}^{A}\,\vec e_{y}}{k_m}$</td>
-<td>The odd operator; $O^2=c^2(\vec\pi^2-\frac{m\,c\,i\,q\,\vec B}{k_m})$</td>
-</tr>
-<tr>
-<td>$\omega=-\vec e_z$, $\omega^2=-e_t$</td>
-<td>The pseudoscalar of the frame</td>
-</tr>
-<tr>
-<td>$\vec\pi=p-q\vec A$</td>
-<td>Kinetic momentum</td>
-</tr>
-<tr>
-<td>$\vec B=\nabla\times\vec A$, $\vec E$</td>
-<td>Magnetic, electric fields</td>
-</tr>
-<tr>
-<td>$V=qΞ$</td>
-<td>Potential energy</td>
-</tr>
-<tr>
-<td>$H=\beta mc^2+O+E$, $E=qΞ$</td>
-<td>Split Hamiltonian; odd and even parts</td>
-</tr>
-<tr>
-<td>$S_1=-\frac{i}{2\,m\,c^{2}}\beta O=-\frac{1}{2\,m\,c}\sum_k\vec e_k\pi_k(\cdot)\vec e_z$</td>
-<td>Foldy–Wouthuysen generator</td>
-</tr>
-<tr>
-<td>$O_1=i[S_1,E]=\frac{q}{2\,k_m}(\vec E\cdot)\vec e_z$</td>
-<td>Residual odd operator</td>
-</tr>
-<tr>
-<td>$S_2=-\frac{i}{2\,m\,c^{2}}\beta O_1=\frac{q}{4\,m\,c^{2}\,k_m}(\vec E\cdot)\vec e_y$</td>
-<td>Second generator</td>
-</tr>
-<tr>
-<td>$\vec S=\frac{m\,c}{2\,k_m}\boldsymbol\sigma$, $\vec\mu=g\frac{q}{2m}\vec S$</td>
-<td>Spin and magnetic moment</td>
-</tr>
-<tr>
-<td>$g=2$</td>
-<td>Gyromagnetic factor</td>
-</tr>
-<tr>
-<td>$\mu_B=ec\dfrac{1}{2\,k_{m_e}}$</td>
-<td>Bohr magneton</td>
-</tr>
-</tbody>
-</table></div>
+<p>| Symbol | Meaning |
+|+-|+-|
+| $\mathbb B=\mathbb C\otimes_\mathbb R\mathbb H$ | Biquaternion algebra |
+| $e_t=1,\vec e_x,\vec e_y,\vec e_z$, $\vec e_k^2=-e_t$ | Quaternion basis |
+| $\mathbb{B}_{\Psi},\mathbb{B}_{\Phi}$ | Hermitian / anti-Hermitian subspaces |
+| $\mathsf{M}_2(\vec e_k)=-i\sigma_k$, $\sigma_k\leftrightarrow i\vec e_k$ | Isomorphism, Pauli matrices |
+| $\tilde\nabla$, $\tilde\nabla^{\natural}$ | The gradient and its conjugate, $\varepsilon=(1,-1,-1,-1)$ |
+| $\Box=\tilde\nabla\tilde\nabla^{\natural}$ | The d'Alembertian |
+| $D_3=\sum_k\vec e_k\partial/\partial r_k$, $D_3^A$ | Pure part of the gradient, free and gauged |
+| $\tilde\nabla-\frac{k_m\,i\,q\,\tilde{A}_{\Phi}}{m\,c}$, $\tilde A_{\Phi}=Ξ e_t-\vec A$ | The gauged gradient; minimal substitution |
+| $-i\tilde K_{\Phi}=k_{t}^{\prime}-i\vec k_\Phi$ | Symbol of the gradient on a plane wave; $(-i\tilde K_{\Phi})^{\natural}(-i\tilde K_{\Phi})=k_{t}^{\prime\,2}-\lvert\vec k_\Phi\rvert^2$ |
+| $F=F_L+F_R$; $\Gamma F=-iF\vec e_z$ | The field and its chirality, values $\mp1$ |
+| $\beta F=iF\vec e_x$, $\beta^2=1$, $\beta\Gamma=-\Gamma\beta$ | The mass grading; $\beta O=-O\beta$ |
+| $O=c\sum_k\vec e_k\pi_k(\cdot)\vec e_y=-\frac{m\,c^{2}\,i\,D_{3}^{A}\,\vec e_{y}}{k_m}$ | The odd operator; $O^2=c^2(\vec\pi^2-\frac{m\,c\,i\,q\,\vec B}{k_m})$ |
+| $\omega=-\vec e_z$, $\omega^2=-e_t$ | The pseudoscalar of the frame |
+| $\vec\pi=p-q\vec A$ | Kinetic momentum |
+| $\vec B=\nabla\times\vec A$, $\vec E$ | Magnetic, electric fields |
+| $V=qΞ$ | Potential energy |
+| $H=\beta mc^2+O+E$, $E=qΞ$ | Split Hamiltonian; odd and even parts |
+| $S_1=-\frac{i}{2\,m\,c^{2}}\beta O=-\frac{1}{2\,m\,c}\sum_k\vec e_k\pi_k(\cdot)\vec e_z$ | Foldy–Wouthuysen generator |
+| $O_1=i[S_1,E]=\frac{q}{2\,k_m}(\vec E\cdot)\vec e_z$ | Residual odd operator |
+| $S_2=-\frac{i}{2\,m\,c^{2}}\beta O_1=\frac{q}{4\,m\,c^{2}\,k_m}(\vec E\cdot)\vec e_y$ | Second generator |
+| $\vec S=\frac{m\,c}{2\,k_m}\boldsymbol\sigma$, $\vec\mu=g\frac{q}{2m}\vec S$ | Spin and magnetic moment |
+| $g=2$ | Gyromagnetic factor |
+| $\mu_B=ec\dfrac{1}{2\,k_{m_e}}$ | Bohr magneton |</p>
 <h2 id="further-reading">Further Reading</h2>
 <ul>
 <li>P. A. M. Dirac, "The quantum theory of the electron," <em>Proceedings of the Royal Society A</em> <strong>117</strong> (1928) 610–624, for the original prediction of $g=2$.</li>
