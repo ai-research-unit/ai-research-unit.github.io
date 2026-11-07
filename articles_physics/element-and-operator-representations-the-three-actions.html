@@ -348,12 +348,12 @@ $$</p>
 <h3 id="the-composition-laws">The Composition Laws</h3>
 <p>The one-sided maps compose by multiplying their parameters:</p>
 <p>$$
-L_{\tilde A}L_{\tilde B}=L_{\tilde A\tilde B}, \qquad R_{\tilde A}R_{\tilde B}=R_{\tilde B\tilde A}, \qquad L_{\tilde A}R_{\tilde B}=R_{\tilde B}L_{\tilde A}.
+L_{\tilde Q_1}L_{\tilde Q_2}=L_{\tilde Q_1\tilde Q_2}, \qquad R_{\tilde Q_1}R_{\tilde Q_2}=R_{\tilde Q_2\tilde Q_1}, \qquad L_{\tilde Q_1}R_{\tilde Q_2}=R_{\tilde Q_2}L_{\tilde Q_1}.
 $$</p>
-<p>The reversal in the right family is the anti-automorphism of the composition of maps: $(R_{\tilde A}R_{\tilde B})(X)=X\tilde B\tilde A=R_{\tilde B\tilde A}(X)$. The left and right families commute, because multiplication in the algebra is associative.</p>
+<p>The reversal in the right family is the anti-automorphism of the composition of maps: $(R_{\tilde Q_1}R_{\tilde Q_2})(X)=X\tilde Q_2\tilde Q_1=R_{\tilde Q_2\tilde Q_1}(X)$. The left and right families commute, because multiplication in the algebra is associative.</p>
 <p>The two-sided maps compose by</p>
 <p>$$
-\bigl(L_{\tilde A}R_{\tilde B}\bigr)\bigl(L_{\tilde C}R_{\tilde D}\bigr)=L_{\tilde A\tilde C}R_{\tilde D\tilde B},
+\bigl(L_{\tilde Q_1}R_{\tilde Q_2}\bigr)\bigl(L_{\tilde Q_3}R_{\tilde Q_4}\bigr)=L_{\tilde Q_1\tilde Q_3}R_{\tilde Q_4\tilde Q_2},
 $$</p>
 <p>and the sandwich is the special case in which the right parameter is the Hermitian conjugate of the left:</p>
 <p>$$
@@ -367,15 +367,15 @@ $$</p>
 $$</p>
 <p>so</p>
 <p>$$
-\bigl(L_{\tilde Q}\bigr)^{\approx}=R_{\tilde Q}, \qquad \bigl(R_{\tilde Q}\bigr)^{\approx}=L_{\tilde Q}, \qquad \bigl(L_{\tilde A}R_{\tilde B}\bigr)^{\approx}=L_{\tilde B}R_{\tilde A}.
+\bigl(L_{\tilde Q}\bigr)^{\approx}=R_{\tilde Q}, \qquad \bigl(R_{\tilde Q}\bigr)^{\approx}=L_{\tilde Q}, \qquad \bigl(L_{\tilde Q_1}R_{\tilde Q_2}\bigr)^{\approx}=L_{\tilde Q_2}R_{\tilde Q_1}.
 $$</p>
 <p>The adjoint <strong>swaps the sides and does not conjugate the parameter</strong>. This separates it from the Hermitian dagger, which keeps the side and conjugates, and from the quaternionic and signed adjoints. The type criteria follow: a left multiplication is self-adjoint exactly when $\tilde Q$ is central; a nonzero one-sided operator is never skew-adjoint; a nonzero two-sided operator is self-adjoint exactly when its parameters are proportional over $\mathbb{C}$.</p>
 <p>The physical reading is the absence of orientation in the measuring pairing. The plain form pairs two displacements and returns a number; it does not know which factor is on the left. The orientation of a process is in the commutator $XY-YX$, not in the form. The form measures the symmetric data and leaves the orientation to the commutator.</p>
 <h3 id="the-two-sided-operator-as-a-pair">The Two-Sided Operator as a Pair</h3>
 <p>A two-sided operator is a pair of parameters, and only the relative data are physical:</p>
 <p>$$
-L_{\tilde A}R_{\tilde B}=L_{\tilde C}R_{\tilde D}
-\iff \tilde C=\lambda\tilde A,\quad \tilde D=\lambda^{-1}\tilde B,
+L_{\tilde Q_1}R_{\tilde Q_2}=L_{\tilde Q_3}R_{\tilde Q_4}
+\iff \tilde Q_3=\lambda\tilde Q_1,\quad \tilde Q_4=\lambda^{-1}\tilde Q_2,
 \qquad \lambda\in\mathbb{C}^{\times}.
 $$</p>
 <p>The identity is the pair $(\lambda e_t,\lambda^{-1}e_t)$. A frame change is specified by an operand and its adjoint operand, and a common central phase cancels between them. The pair, not either member, is the physical object. The operator is invertible exactly when both parameters are units; if either is a zero divisor, the kernel is nontrivial. This is the operator-level form of the cone: the non-invertible two-sided maps are exactly those whose pair meets it.</p>
@@ -396,7 +396,7 @@ $$</p>
 <h3 id="the-monoid-of-acting-maps">The Monoid of Acting Maps</h3>
 <p>The left multiplications form a monoid under composition, isomorphic to the multiplicative monoid of $\mathbb{B}$:</p>
 <p>$$
-L_{\tilde A}L_{\tilde B}=L_{\tilde A\tilde B}, \qquad L_{\mathrm{axf},e_t}=\mathrm{id}.
+L_{\tilde Q_1}L_{\tilde Q_2}=L_{\tilde Q_1\tilde Q_2}, \qquad L_{\mathrm{axf},e_t}=\mathrm{id}.
 $$</p>
 <p>The reversible elements are the units of the algebra, that is the elements off the cone. The right multiplications form the opposite monoid, and the two-sided maps form a monoid whose units are the pairs of units.</p>
 <p>The reading is the <strong>process–state split</strong>. A process is an acting map: it composes, it can be undone exactly when it is a unit, and the reversible processes form a group. A state is an idempotent: it is the fixed point of a projection and it is not a map of the same kind. The algebra supplies both in one object, and the cone is the boundary between the reversible and the irreversible. The monoid is not a $C^{*}$-algebra; a kernel is not a measurement, and the passage from an invertible map to a non-invertible one is the collapse, not the mere vanishing of the norm.</p>
@@ -420,7 +420,7 @@ $$</p>
 <p><strong>The trace factor.</strong> The trace of the $2\times2$ matrix is $2Q_t$, the trace of the regular matrix is $4Q_t$, and the trace of the operator is $4|Q_t|^2$. The factor two is the number of columns; the factor four is the dimension of the regular module or the number of matrix units. The factors are bookkeeping, not physics, but they are the bookkeeping in which the factor-of-two errors of the corpus live.</p>
 <p><strong>The three actions.</strong> A left multiplication and a right multiplication carry an element with one side fixed; they are the operators of carriage, and they change the scale and in general the sector of what they act on. The sandwich acts on both sides and carries a frame; it preserves the two sectors, and the physical Lorentz transformation is a sandwich, not a multiplication. The mass term is a right multiplication, which is why it can move between the two chiralities while a left multiplication cannot.</p>
 <p><strong>The plain adjoint swaps the sides.</strong> The adjoint for $\langle X,Y\rangle=\operatorname{Sc}(XY)$ is the associate, $L_{\tilde Q}^{\approx}=R_{\tilde Q}$. It does not conjugate the parameter. The form measures the symmetric data; the orientation of a process is in the commutator, not in the form. Self-adjointness for the plain form is not hermiticity, and the observables are not the self-adjoint elements of this family.</p>
-<p><strong>The two-sided pair.</strong> A two-sided operator is a pair $(\tilde A,\tilde B)$ defined up to a common central factor, $(\lambda\tilde A,\lambda^{-1}\tilde B)$. A frame change is specified by an operand and its adjoint operand, and a common phase cancels. The operator is invertible exactly when both parameters are units; the non-invertible two-sided maps are exactly those whose pair meets the cone.</p>
+<p><strong>The two-sided pair.</strong> A two-sided operator is a pair $(\tilde Q_1,\tilde Q_2)$ defined up to a common central factor, $(\lambda\tilde Q_1,\lambda^{-1}\tilde Q_2)$. A frame change is specified by an operand and its adjoint operand, and a common phase cancels. The operator is invertible exactly when both parameters are units; the non-invertible two-sided maps are exactly those whose pair meets the cone.</p>
 <p><strong>The monoid is the process–state split.</strong> The acting maps compose; the reversible ones are the units off the cone, and they form a group. The states are the idempotents, which are fixed points and not maps of the same kind. The cone is the boundary between the reversible and the irreversible. The monoid is not a $C^{*}$-algebra, and a kernel is not a measurement.</p>
 <p><strong>The Peirce corners are the state/observable split.</strong> The diagonal corners are the populations and the off-diagonal corners the coherences. Left multiplication preserves the column ideals; right multiplication moves between them, and the mass is the right multiplication by the column-swap unit $i\vec e_x$, not by a nilpotent. That is the operator-level reason the mass coupling is a right action.</p>
 <h2 id="the-correspondence-table">The Correspondence Table</h2>
@@ -534,7 +534,7 @@ $$</p>
 <li>The four-vector operator returns the Euclidean square on the identity, not the interval; the positive weight and the spacetime length are different readings of the same element.</li>
 <li>The determinant's degree and the trace's factor are the bookkeeping in which the standard factor-of-two errors live.</li>
 <li>An element acts in three ways: left multiplication, right multiplication and the sandwich. The one-sided maps are linear and carry an element; the sandwich is quadratic and carries a frame.</li>
-<li>The one-sided composition laws are $L_{\tilde A}L_{\tilde B}=L_{\tilde A\tilde B}$ and $R_{\tilde A}R_{\tilde B}=R_{\tilde B\tilde A}$; the two families commute. The sandwich is multiplicative, $\operatorname{H}_{\tilde Q}\operatorname{H}_{\tilde U}=\operatorname{H}_{\tilde Q\tilde U}$, but not linear.</li>
+<li>The one-sided composition laws are $L_{\tilde Q_1}L_{\tilde Q_2}=L_{\tilde Q_1\tilde Q_2}$ and $R_{\tilde Q_1}R_{\tilde Q_2}=R_{\tilde Q_2\tilde Q_1}$; the two families commute. The sandwich is multiplicative, $\operatorname{H}_{\tilde Q}\operatorname{H}_{\tilde U}=\operatorname{H}_{\tilde Q\tilde U}$, but not linear.</li>
 <li>The adjoint for the plain form swaps the sides and leaves the parameter alone; self-adjoint one-sided operators are the central multiplications. The orientation is in the commutator, not in the form.</li>
 <li>A two-sided operator is a pair defined up to a common central factor; it is invertible exactly when both parameters are units.</li>
 <li>The sandwich preserves the two sectors, is a congruence, and is self-adjoint for the Hermitian form exactly when a central-phase multiple of its parameter lies in $\mathbb{B}_{\Psi}$ or $\mathbb{B}_{\Phi}$. On the $*$-unitary slice it is an inner automorphism.</li>

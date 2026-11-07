@@ -337,13 +337,13 @@ $$</p>
 <p>The eigenvalues of $\tilde E_{\Psi}$ are $\sigma_i^{2}$, the squares of the singular values of $\tilde M_{\mathrm{kraus}}$ and the eigenvalues of $\tilde M_{\mathrm{kraus},H}^{2}$. The effect is positive, and $\tilde E_{\Psi}\leq e_t$ exactly when every $\sigma_i\leq1$; for an instrument the resolution $\sum_y\tilde E_{\Psi}_y=e_t$ forces each $\sigma_i\leq1$.</p>
 <p>The formula is not $\tilde E_{\Psi}=\tilde M_{\mathrm{kraus},H}^{2}$ in general. The two agree only when $\tilde M_{\mathrm{kraus},0}$ commutes with $\tilde M_{\mathrm{kraus},H}$, and in particular when $\tilde M_{\mathrm{kraus},0}$ is a function of $\tilde M_{\mathrm{kraus},H}$. On the cone they need not agree at all: the effect and the squared strength can sit on different lines, with $\tilde M_{\mathrm{kraus},0}$ carrying one to the other.</p>
 <h3 id="the-effect-does-not-determine-the-split">The Effect Does Not Determine the Split</h3>
-<p>The effect determines the singular values, not the factorization. If $\tilde W$ is $*$-unitary and $\tilde M_{\mathrm{kraus}}'=\tilde W\tilde M_{\mathrm{kraus}}$, then</p>
+<p>The effect determines the singular values, not the factorization. If $\tilde U_{\mathrm{gau}}$ is $*$-unitary and $\tilde M_{\mathrm{kraus}}'=\tilde U_{\mathrm{gau}}\tilde M_{\mathrm{kraus}}$, then</p>
 <p>$$
 \tilde M_{\mathrm{kraus}}'^{*}\tilde M_{\mathrm{kraus}}'=\tilde M_{\mathrm{kraus}}^{*}\tilde M_{\mathrm{kraus}}=\tilde E_{\Psi},
 \qquad
-\tilde M_{\mathrm{kraus},H}'=\tilde W\tilde M_{\mathrm{kraus},H}\tilde W^{*},
+\tilde M_{\mathrm{kraus},H}'=\tilde U_{\mathrm{gau}}\tilde M_{\mathrm{kraus},H}\tilde U_{\mathrm{gau}}^{*},
 \qquad
-\tilde M_{\mathrm{kraus},0}'=\tilde W\tilde M_{\mathrm{kraus},0}.
+\tilde M_{\mathrm{kraus},0}'=\tilde U_{\mathrm{gau}}\tilde M_{\mathrm{kraus},0}.
 $$</p>
 <p>The same effect therefore admits different strengths and different backactions. The canonical choice $\tilde M_{\mathrm{kraus}}=\sqrt{\tilde E}_{\Psi}$ gives $\tilde M_{\mathrm{kraus},H}=\sqrt{\tilde E}_{\Psi}$ and $\tilde M_{\mathrm{kraus},0}$ the projection onto $\operatorname{ran}\tilde E_{\Psi}$; a physical Kraus operator need not be that choice. The polar decomposition is a decomposition of the amplitude, not a decomposition of the effect. This is the precise sense in which the effect is the probability functional and the amplitude carries more.</p>
 <h3 id="a-null-example-where-the-two-differ">A Null Example Where the Two Differ</h3>
