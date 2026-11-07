@@ -167,14 +167,14 @@ $$</p>
 <h2 id="guptableuler-quantization">Gupta–Bleuler Quantization</h2>
 <p>Covariant quantization proceeds with all four polarizations and imposes a subsidiary condition. Expand the free potential in plane waves,</p>
 <p>$$
-A_\mu(x)=\int\!\frac{d^3k}{(2\pi)^3}\frac{1}{\sqrt{2\omega_k}}\sum_{r=0}^{3}
+A_\mu(x)=\int\!\frac{d^3k}{(2\pi)^3}\sqrt{\frac{c}{2\omega_k}}\sum_{r=0}^{3}
 \left[\epsilon^{(r)}_\mu(\vec k_\Phi)\,a_{\mathrm{fop},r}(\vec k_\Phi)\,\exp(-ik\cdot x)
 +\epsilon^{(r)*}_\mu(\vec k_\Phi)\,a_{\mathrm{fop},r}^{\dagger}(\vec k_\Phi)\,\exp(+ik\cdot x)\right],
 $$</p>
 <p>with $\omega_k=|\vec k_\Phi|$ for the massless field and with polarization vectors normalized as $\langle\epsilon^{(r)},\epsilon^{(s)}\rangle_{\natural}=\sigma_{\mathrm{met},r}\delta_{rs}$, where $(\sigma_{\mathrm{met},0},\sigma_{\mathrm{met},1},\sigma_{\mathrm{met},2},\sigma_{\mathrm{met},3})=(-1,+1,+1,+1)$, the one minus being the square of the $i$ that the time coefficient carries, $Q_t=i r'_t$, and the natural form on the four units $e_t,\vec e_x,\vec e_y,\vec e_z$ being $\delta_{\mu\nu}$. The mode operators carry the corresponding commutators,</p>
 <p>$$
 \boxed{\;\big[a_{\mathrm{fop},r}(\vec k_\Phi),a_{\mathrm{fop},s}^{\dagger}(\vec k_2)\big]
-=\sigma_{\mathrm{met},r}\,\delta_{rs}\,(2\pi)^3\delta^{(3)}(\vec k_\Phi-\vec k_2)\;},
+=\sigma_{\mathrm{met},r}\,\delta_{rs}\,(2\pi)^3\,\delta^{(3)}(\vec k_\Phi-\vec k_2)\;},
 $$</p>
 <p>with all other commutators vanishing. The signs are not optional: the timelike mode has $\sigma_{\mathrm{met},0}=-1$, so the one-particle state $a_{\mathrm{fop},0}^{\dagger}|0\rangle$ has <strong>negative norm</strong>, $\langle0|a_{\mathrm{fop},0}a_{\mathrm{fop},0}^{\dagger}|0\rangle=-1$. The longitudinal mode has positive norm, as do the two transverse modes.</p>
 <p>The negative-norm states are removed by a <strong>subsidiary condition</strong>. The Lorenz gauge condition $S=0$ is imposed on the positive-frequency part of the field,</p>
@@ -206,7 +206,7 @@ $$</p>
 <h2 id="comparison-with-the-scalar-field">Comparison with the Scalar Field</h2>
 <p>The counting is worth setting beside the scalar field, because the difference is where the gauge structure lives. A real scalar field $\xi_{\mathrm{scl}}$ of mass $m$ has conjugate momentum $\pi=\partial\xi_{\mathrm{scl}}/\partial r'_t$, the canonical commutator $[\xi_{\mathrm{fop}}(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z),\pi_{\mathrm{fop}}(\vec y)]=i\delta^{(3)}(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z-\vec y)$, and a mode expansion with <strong>one</strong> polarization,</p>
 <p>$$
-\big[a_{\mathrm{fop}}(\vec k_\Phi),a_{\mathrm{fop}}^{\dagger}(\vec k_2)\big]=(2\pi)^3\delta^{(3)}(\vec k_\Phi-\vec k_2),
+\big[a_{\mathrm{fop}}(\vec k_\Phi),a_{\mathrm{fop}}^{\dagger}(\vec k_2)\big]=(2\pi)^3\,\delta^{(3)}(\vec k_\Phi-\vec k_2),
 $$</p>
 <p>with dispersion $\omega_k=\sqrt{\vec k_\Phi^2+m^2}$. Its Fock space has positive-definite norm, there is no constraint, and no gauge condition has to be imposed: the Legendre transform is regular. The massless scalar field has one mode. The photon has <strong>two</strong> physical transverse modes and reaches them only after the two unphysical modes — the timelike and the longitudinal — have been removed by a subsidiary condition. The photon is not a scalar particle with an extra label; the reduction from four components to two is performed by the gauge structure, and that structure is what the algebra does not fix. If the gauge field is given a mass, as in the Proca theory, the gauge freedom is absent, the constraint structure changes, and a third (longitudinal) polarization becomes physical — which shows that the two-polarization count is a consequence of the gauge symmetry, not of the number of field components.</p>
 <h2 id="comparison-with-the-dirac-case">Comparison with the Dirac Case</h2>
@@ -233,7 +233,7 @@ $$</p>
 <h2 id="summary">Summary</h2>
 <p>The biquaternion Maxwell equation $\tilde{\nabla}\tilde{F}=-\sqrt{\mu}\,\tilde{J}_{\Phi}$ is first order, and its natural variable $\tilde{F}=i\sqrt{\epsilon}\,\vec E-\sqrt{\mu}\,\vec H$ is gauge invariant; its real and imaginary parts separate the homogeneous and the inhomogeneous Maxwell equations. But $\tilde{F}$ has no canonical partner, and no local Lagrangian in four dimensions produces the field equation by varying $\tilde{F}$ alone. Canonical quantization must therefore return to the potential $\tilde{A}_{\Phi}$, and with it the gauge freedom $\tilde{A}_{\Phi,2}=\tilde{A}_{\Phi}-\tilde{\nabla}\Gamma$, whose field is $S=\mathrm{Sc}(\tilde{\nabla}^{\natural}\tilde{A}_{\Phi})$ with $S_2=S-\Box\Gamma$.</p>
 <p>The Legendre transform is singular. The conjugate momenta are $\pi_\mu=-F_{t\mu}$, so $\pi_0\approx0$ is primary and Gauss's law $\mathrm{div}\,\vec\pi\approx0$ is secondary; both are <strong>first class</strong> and generate gauge transformations. The phase-space count $8-2\times2=4$ gives two field degrees of freedom. In the notation of the companion articles the constraints are $\mathrm{Sc}(\tilde{\pi})\approx0$ and $\mathrm{Sc}(\tilde{\nabla}^{\natural}\tilde{\pi})\approx0$, the same scalar-part shape as the charge-conservation condition $\sqrt{\mu}\,\mathrm{Sc}(\tilde{\nabla}^{\natural}\tilde{J}_{\Phi})=0$.</p>
-<p>Covariant quantization is Gupta–Bleuler: four polarizations with commutators $[a_{\mathrm{fop},r},a_{\mathrm{fop},s}^{\dagger}]=\sigma_{\mathrm{met},r}\delta_{rs}(2\pi)^3\delta^{(3)}$, $\sigma_{\mathrm{met}}=(-1,+1,+1,+1)$, so the timelike mode has negative norm; the subsidiary condition $(a_{\mathrm{fop},0}-a_{\mathrm{fop},3})|\tilde{Ξ}_{\mathrm{sp}}\rangle=0$ leaves the zero-norm combination $a_{\mathrm{fop},0}^{\dagger}-a_{\mathrm{fop},3}^{\dagger}$, which decouples, and the physical subspace has positive-definite norm and exactly the two transverse polarizations, with $\sum_{\lambda=1}^2\epsilon_i^{(\lambda)}\epsilon_j^{(\lambda)}=\delta_{ij}-\vec{u_k}_i\vec{u_k}_j$. By comparison a real scalar field has one mode, no constraint, and positive norm. The two-polarization count follows from the gauge symmetry, not from the number of components.</p>
+<p>Covariant quantization is Gupta–Bleuler: four polarizations with commutators $[a_{\mathrm{fop},r},a_{\mathrm{fop},s}^{\dagger}]=\sigma_{\mathrm{met},r}\delta_{rs}(2\pi\hbar)^3\delta^{(3)}$, $\sigma_{\mathrm{met}}=(-1,+1,+1,+1)$, so the timelike mode has negative norm; the subsidiary condition $(a_{\mathrm{fop},0}-a_{\mathrm{fop},3})|\tilde{Ξ}_{\mathrm{sp}}\rangle=0$ leaves the zero-norm combination $a_{\mathrm{fop},0}^{\dagger}-a_{\mathrm{fop},3}^{\dagger}$, which decouples, and the physical subspace has positive-definite norm and exactly the two transverse polarizations, with $\sum_{\lambda=1}^2\epsilon_i^{(\lambda)}\epsilon_j^{(\lambda)}=\delta_{ij}-\vec{u_k}_i\vec{u_k}_j$. By comparison a real scalar field has one mode, no constraint, and positive norm. The two-polarization count follows from the gauge symmetry, not from the number of components.</p>
 <p>The extension is a transcription of standard canonical quantization into the framework's notation, not a derivation of the quantized structure from $\mathbb{B}$. Unlike the Dirac case it requires no new grading, but unlike the Dirac case the natural variable is not the canonical one, and the gauge must be fixed from outside the algebra. The framework cannot quantize the Maxwell field automatically.</p>
 <h2 id="summary-of-notation">Summary of Notation</h2>
 <div class="table-scroll"><table>
@@ -325,7 +325,7 @@ $$</p>
 <td>Quantized potential, polarization vectors, mode operators</td>
 </tr>
 <tr>
-<td>$[a_{\mathrm{fop},r}(\vec k_\Phi),a_{\mathrm{fop},s}^{\dagger}(\vec k_2)]=\sigma_{\mathrm{met},r}\delta_{rs}(2\pi)^3\delta^{(3)}$</td>
+<td>$[a_{\mathrm{fop},r}(\vec k_\Phi),a_{\mathrm{fop},s}^{\dagger}(\vec k_2)]=\sigma_{\mathrm{met},r}\delta_{rs}(2\pi\hbar)^3\delta^{(3)}$</td>
 <td>Mode commutator, $\sigma_{\mathrm{met}}=(-1,+1,+1,+1)$</td>
 </tr>
 <tr>

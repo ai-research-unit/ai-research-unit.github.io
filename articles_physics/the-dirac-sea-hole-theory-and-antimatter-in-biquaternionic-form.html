@@ -95,7 +95,7 @@
 <h2 id="the-problems-with-hole-theory">The Problems with Hole Theory</h2>
 <p>Four objections made the filled sea untenable as a fundamental description.</p>
 <ul>
-<li><strong>Infinite charge and energy.</strong> A completely filled sea of negative-energy states has infinite total charge and infinite (negative) energy. Only differences from the sea are observable, so the infinities must be subtracted, but the subtraction is a prescription, not a derivation. In the operator language this prescription becomes <strong>normal ordering</strong>, the removal of the vacuum expectation value of the energy and charge; the framework's canonical-quantization article performs exactly this subtraction and records the constant $E_0=-2V\int\frac{d^3p}{(2\pi)^3}E_{\vec p}$.</li>
+<li><strong>Infinite charge and energy.</strong> A completely filled sea of negative-energy states has infinite total charge and infinite (negative) energy. Only differences from the sea are observable, so the infinities must be subtracted, but the subtraction is a prescription, not a derivation. In the operator language this prescription becomes <strong>normal ordering</strong>, the removal of the vacuum expectation value of the energy and charge; the framework's canonical-quantization article performs exactly this subtraction and records the constant $E_0=-2V\int\frac{d^3p}{(2\pi\hbar)^3}E_{\vec p}$.</li>
 <li><strong>It is a fermion-only device.</strong> The exclusion principle is what keeps the sea inert. A boson obeys no exclusion, so a filled bosonic sea would be no obstacle to further occupation, and the negative-frequency problem of the Klein–Gordon equation must be resolved another way — by the second-quantized treatment of the two branches with a different statistics. Hole theory therefore cannot be the general theory of the vacuum.</li>
 <li><strong>The sea is an infinite many-body state, not a one-particle statement.</strong> Its consistency requires an infinite number of particles and a notion of the vacuum as a state of an operator algebra, which the one-particle equation does not supply.</li>
 <li><strong>It is not needed.</strong> Once the fields are quantized, the same predictions follow from the anticommutation relations alone, without populating anything.</li>
@@ -105,13 +105,13 @@
 <h3 id="the-reinterpretation">The reinterpretation</h3>
 <p>The reinterpretation of the negative branch is usually credited to Furry and Oppenheimer (1934), who showed that positron processes follow from the second-quantized electron field without a sea, and to Stückelberg (1941) and Feynman (1948), who made the picture systematic: a negative-frequency solution propagating forward in time is the same as a positive-frequency antiparticle propagating backward in time. The field operator is expanded as</p>
 <p>$$
-\boxed{\;\tilde{Ξ}_{\mathrm{fop}}(x) = \sum_r\int\frac{d^3p}{(2\pi)^3}\frac{1}{\sqrt{2E_{\vec p}}}\left[a_{\mathrm{fop},r}(\vec p)\,w^{(r)}(\vec p)\exp(-ip\cdot x) + b_{\mathrm{fop},r}^{\dagger}(\vec p)\,v^{(r)}(\vec p)\exp(+ip\cdot x)\right]\;},
+\boxed{\;\tilde{Ξ}_{\mathrm{fop}}(x) = \sum_r\int\frac{d^3p}{(2\pi\hbar)^3}\sqrt{\frac{\hbar c}{2E_{\vec p}}}\left[a_{\mathrm{fop},r}(\vec p)\,w^{(r)}(\vec p)\exp(-ip\cdot x/\hbar) + b_{\mathrm{fop},r}^{\dagger}(\vec p)\,v^{(r)}(\vec p)\exp(+ip\cdot x/\hbar)\right]\;},
 $$</p>
 <p>in which the <strong>annihilation</strong> operator multiplies the positive-frequency spinors and the <strong>creation</strong> operator of antiparticles multiplies the negative-frequency spinors. There is no sea; the vacuum $|0\rangle$ is defined by $a_{\mathrm{fop}}|0\rangle = b_{\mathrm{fop}}|0\rangle = 0$. The framework's canonical-quantization article writes precisely this expansion on the spinor module, with each mode function the module representative of a biquaternion plane wave.</p>
 <h3 id="normal-ordering">Normal ordering</h3>
 <p>With the anticommutator the Hamiltonian becomes, after normal ordering,</p>
 <p>$$
-\boxed{\;H_{\mathrm{fop}} = \sum_r\int\frac{d^3p}{(2\pi)^3}E_{\vec p}\left(a_{\mathrm{fop},r}^{\dagger} a_{\mathrm{fop},r} + b_{\mathrm{fop},r}^{\dagger} b_{\mathrm{fop},r}\right)\;},
+\boxed{\;H_{\mathrm{fop}} = \sum_r\int\frac{d^3p}{(2\pi\hbar)^3}E_{\vec p}\left(a_{\mathrm{fop},r}^{\dagger} a_{\mathrm{fop},r} + b_{\mathrm{fop},r}^{\dagger} b_{\mathrm{fop},r}\right)\;},
 $$</p>
 <p>a positive sum of particle and antiparticle numbers, with the divergent constant removed. The charge is equally normal-ordered, and particles and antiparticles carry opposite charge. This is the modern replacement of the filled sea, and it is the content the framework already has.</p>
 <h2 id="vacuum-polarization-where-the-seas-response-became-measurable">Vacuum Polarization: Where the Sea's Response Became Measurable</h2>
@@ -128,7 +128,7 @@ $$</p>
 <h3 id="the-infinite-charge-is-the-normal-ordering-constant">The infinite charge is the normal-ordering constant</h3>
 <p>The framework's one-particle structure has no sea, and therefore no infinite charge of its own. The infinity appears only when the field is quantized, as the normal-ordering constant</p>
 <p>$$
-E_0 = -2V\int\frac{d^3p}{(2\pi)^3}E_{\vec p},
+E_0 = -2V\int\frac{d^3p}{(2\pi\hbar)^3}E_{\vec p},
 $$</p>
 <p>which the canonical-quantization article removes by the standard prescription and describes as "an ultraviolet feature of the free field." The framework's added question is whether the biquaternion structure singles out a distinguished regularization or assigns $E_0$ a geometric meaning; the article records that "nothing in the biquaternion structure as used here changes that," and the question is open. This is the correct place to state the article's negative conclusion: <strong>the framework inherits the sea's infinity as the ordinary normal-ordering constant and does not, in the corpus as it stands, explain it.</strong></p>
 <h3 id="charge-conjugation-and-the-two-branches">Charge conjugation and the two branches</h3>
@@ -174,7 +174,7 @@ $$</p>
 </ol>
 <h2 id="summary">Summary</h2>
 <p>The Dirac equation has negative-energy solutions with no lower bound, and Klein's paradox shows that a strong potential drives a one-particle state onto them. Dirac's 1930 hole theory filled the negative-energy states and identified the holes with positive-energy, positively charged particles, predicting the positron (observed by Anderson in 1932) before it was found. The filled sea is untenable as a fundamental picture: it carries infinite charge and energy, it works only for fermions, it is irreducibly many-body, and it is unnecessary. The modern treatment reinterprets the negative-frequency modes as antiparticle creation operators, defines the vacuum as the empty Fock state, and removes the vacuum constant by normal ordering.</p>
-<p>The biquaternion framework is naturally on this second side. Its mass shell has the two branches; its canonical quantization expands the field in positive- and negative-frequency modes, exhibits the unbounded energy that would follow from commuting modes, and finds stability in the anticommutator, which is exactly "the operator content of the Dirac sea." Its charge conjugation is the real structure $\mathcal C$ on the doubled module, which relabels particles as antiparticles as the hole picture does. What the framework does not do is fill a sea — its one-particle algebra has none — and it does not explain the vacuum constant, which appears as the ordinary normal-ordering constant $E_0=-2V\int d^3p\,E_{\vec p}/(2\pi)^3$. In condensed matter, by contrast, the Dirac sea is a physical filled band, and in the Dirac materials of the companion article the sea and its holes are measured.</p>
+<p>The biquaternion framework is naturally on this second side. Its mass shell has the two branches; its canonical quantization expands the field in positive- and negative-frequency modes, exhibits the unbounded energy that would follow from commuting modes, and finds stability in the anticommutator, which is exactly "the operator content of the Dirac sea." Its charge conjugation is the real structure $\mathcal C$ on the doubled module, which relabels particles as antiparticles as the hole picture does. What the framework does not do is fill a sea — its one-particle algebra has none — and it does not explain the vacuum constant, which appears as the ordinary normal-ordering constant $E_0=-2V\int d^3p\,E_{\vec p}/(2\pi\hbar)^3$. In condensed matter, by contrast, the Dirac sea is a physical filled band, and in the Dirac materials of the companion article the sea and its holes are measured.</p>
 <h2 id="summary-of-notation">Summary of Notation</h2>
 <div class="table-scroll"><table>
 <thead>
@@ -201,7 +201,7 @@ $$</p>
 <td>Fock vacuum; no sea</td>
 </tr>
 <tr>
-<td>$E_0=-2V\int\frac{d^3p}{(2\pi)^3}E_{\vec p}$</td>
+<td>$E_0=-2V\int\frac{d^3p}{(2\pi\hbar)^3}E_{\vec p}$</td>
 <td>Normal-ordering constant (vacuum energy)</td>
 </tr>
 <tr>

@@ -217,20 +217,20 @@ $$</p>
 <h3 id="bosonic-modes">Bosonic Modes</h3>
 <p>An integer-spin field is quantized with commutators, not anticommutators. The mode expansion carries one oscillator pair for each of the $2s+1$ polarizations at each momentum,</p>
 <p>$$
-Ξ_{\mathrm{fop}}(x) = \int\!\frac{d^3p}{(2\pi)^3}\frac{1}{\sqrt{2\omega_{\vec p}}}
+Ξ_{\mathrm{fop}}(x) = \int\!\frac{d^3p}{(2\pi\hbar)^3}\sqrt{\frac{c}{2\omega_{\vec p}}}
 \sum_{r=1}^{2s+1}\left[
-\xi_r(\vec p)\,a_{\mathrm{fop},r}(\vec p)\,\exp(-ip\cdot x)
-+ \xi_{r}^{*}(\vec p)\,a_{\mathrm{fop},r}^{\dagger}(\vec p)\,\exp(+ip\cdot x)
+\xi_r(\vec p)\,a_{\mathrm{fop},r}(\vec p)\,\exp(-ip\cdot x/\hbar)
++ \xi_{r}^{*}(\vec p)\,a_{\mathrm{fop},r}^{\dagger}(\vec p)\,\exp(+ip\cdot x/\hbar)
 \right],
 $$</p>
 <p>with polarization labels $\xi_r$ and mode operators satisfying</p>
 <p>$$
 \left[a_{\mathrm{fop},r}(\vec p),a_{\mathrm{fop},s}^{\dagger}(\vec k_\Phi)\right]
-= \delta_{rs}(2\pi)^3\delta^{(3)}(\vec p-\vec k_\Phi),
+= \delta_{rs}(2\pi\hbar)^3\delta^{(3)}(\vec p-\hbar\vec k_\Phi),
 \qquad
 \left[a_{\mathrm{fop},r}(\vec p),a_{\mathrm{fop},s}(\vec k_\Phi)\right]=0 .
 $$</p>
-<p>The Fock space is the symmetric (bosonic) algebra over the one-particle space, and the Hamiltonian is normal-ordered, $:H:=\int d^3p/(2\pi)^3\,\omega_{\vec p}\sum_ra_{\mathrm{fop},r}^{\dagger}a_{\mathrm{fop},r}$, with $2s+1$ half-quanta per mode in the vacuum energy. For a massive integer-spin field the $2s+1$ polarizations all have positive norm, as in the Proca case; for a massless one the covariant description requires the indefinite metric and the subsidiary condition, and the physical polarizations are the two helicity states $\pm s$.</p>
+<p>The Fock space is the symmetric (bosonic) algebra over the one-particle space, and the Hamiltonian is normal-ordered, $:H:=\int d^3p/(2\pi\hbar)^3\,\omega_{\vec p}\sum_ra_{\mathrm{fop},r}^{\dagger}a_{\mathrm{fop},r}$, with $2s+1$ half-quanta per mode in the vacuum energy. For a massive integer-spin field the $2s+1$ polarizations all have positive norm, as in the Proca case; for a massless one the covariant description requires the indefinite metric and the subsidiary condition, and the physical polarizations are the two helicity states $\pm s$.</p>
 <p>The reason the bracket must be a commutator is the spin–statistics theorem, which the companion article <em>The Spin–Statistics Theorem in Biquaternionic Form</em> treats in the framework's terms. Its content here is the linkage between the adjoint action and the bosonic algebra: integer spin means that the internal angular momentum eigenvalues are integers, and the exchange of two identical particles must return the state to itself, so the mode operators commute. A hypothetical integer-spin field quantized with anticommutators would have a state of the wrong exchange symmetry, and the theorem forbids it. The algebra does not independently forbid it — the Fock companion proves that the bracket is not native to $\mathbb{B}$ — but the representation theory that the adjoint action realizes is what the theorem uses.</p>
 <h3 id="positivity-gauge-and-the-two-massless-states">Positivity, Gauge, and the Two Massless States</h3>
 <p>The massive integer-spin case is the case in which the little group is $\mathrm{SO}(3)$ and all $2s+1$ states are physical, with positive norm. The massless case is the case in which the little group contracts to $\mathrm{ISO}(2)$ and the physical states are the two of helicity $\pm s$; the remaining $2s-1$ states are removed by the gauge symmetry, and their removal costs the indefinite metric in a covariant description. The Proca-to-Maxwell transition of the preceding article is the $s=1$ instance: three positive-norm states become two physical states plus the two unphysical ones that the subsidiary condition removes, precisely when the mass vanishes and the gauge symmetry appears. The same pattern holds for every integer $s$, and the pattern is a property of the little group, not of the algebra.</p>
@@ -332,7 +332,7 @@ $$</p>
 </tr>
 <tr>
 <td>$a_{\mathrm{fop},r},a_{\mathrm{fop},r}^{\dagger}$</td>
-<td>Bosonic mode operators, $[a_{\mathrm{fop},r},a_{\mathrm{fop},s}^{\dagger}]=\delta_{rs}(2\pi)^3\delta^{(3)}$</td>
+<td>Bosonic mode operators, $[a_{\mathrm{fop},r},a_{\mathrm{fop},s}^{\dagger}]=\delta_{rs}(2\pi\hbar)^3\delta^{(3)}$</td>
 </tr>
 <tr>
 <td>$\lambda=\vec u_p\cdot\vec S$</td>

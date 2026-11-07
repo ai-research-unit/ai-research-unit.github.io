@@ -79,7 +79,7 @@
 <ol>
 <li><strong>Its value space.</strong> The field is central-valued: at each event it is an operator times $e_t$, so its value-space indices are trivial, its Lorentz transformation has no spin part, and it commutes with every element of the algebra. This is the operator form of the statement that spin $0$ lives in the centre.</li>
 <li><strong>Its algebra.</strong> The field is an operator-valued distribution, unbounded, and its commutator with its adjoint is a <strong>multiple of the identity</strong>, the commutator function. The field therefore generates a CCR algebra whose brackets are central; the non-commutativity of the field is a fixed c-number function, not an operator. This is what makes the scalar field bosonic, and it is the structure $\mathbb{B}$ cannot host, as the companion article <em>Fock Space and Creation/Annihilation Operators in Biquaternionic Form</em> proves.</li>
-<li><strong>Its phases.</strong> The only biquaternion structure the field carries is the transport of the central phase $\exp(\pm i\,\mathrm{Sc}(\tilde P_{\Phi}\tilde{R}_\Phi^{\natural}))$ and the centrality of that phase. The mass shell is a level set of the biquaternion norm; the exponentials are central unitaries; the Lorentz rotors act trivially on them.</li>
+<li><strong>Its phases.</strong> The only biquaternion structure the field carries is the transport of the central phase $\exp(\pm i\,\mathrm{Sc}(\tilde P_{\Phi}\tilde{R}_\Phi^{\natural})/\hbar)$ and the centrality of that phase. The mass shell is a level set of the biquaternion norm; the exponentials are central unitaries; the Lorentz rotors act trivially on them.</li>
 </ol>
 <p>The article is organised as follows. The next section treats the field as an operator-valued distribution and fixes its value space. The following section separates its positive- and negative-frequency parts. The next section treats the real and complex cases and charge conjugation. The section after that establishes the c-number character of the field commutator. The next section gives the two-point functions and the propagator, read through the biquaternion norm. A section treats the transformation of the field operator under the Poincaré group and the central phase. The final section separates what is standard from what is open.</p>
 <ul>
@@ -102,8 +102,8 @@ $$</p>
 <p>$$
 \tilde{Ξ}_{\mathrm{fop}}(\tilde R_\Phi)=\xi_{\mathrm{fop}}(r_x)\,e_t,
 \qquad
-\xi_{\mathrm{fop}}(r_x)=\int\!\frac{d^3p}{(2\pi)^3}\frac{1}{\sqrt{2E_{\vec p}}}
-\left(a_{\mathrm{fop},\vec p}\exp(-ip\cdot x)+{b_{\mathrm{fop},\vec p}}^\dagger \exp(+ip\cdot x)\right),
+\xi_{\mathrm{fop}}(r_x)=\int\!\frac{d^3p}{(2\pi\hbar)^3}\sqrt{\frac{\hbar c}{2E_{\vec p}}}
+\left(a_{\mathrm{fop},\vec p}\exp(-ip\cdot x/\hbar)+{b_{\mathrm{fop},\vec p}}^\dagger \exp(+ip\cdot x/\hbar)\right),
 $$</p>
 <p>every coefficient multiplies the central unit $e_t$. Three consequences follow immediately and are worth stating separately.</p>
 <ul>
@@ -114,9 +114,9 @@ $$</p>
 <h2 id="the-positive-and-negative-frequency-parts">The Positive- and Negative-Frequency Parts</h2>
 <p>The decomposition of the field into its two exponential branches is the operator form of the two-branch structure of the parent equation. Define</p>
 <p>$$
-\xi_{\mathrm{fop}}^{(+)}(x)=\int\!\frac{d^3p}{(2\pi)^3}\frac{1}{\sqrt{2E_{\vec p}}}\,a_{\mathrm{fop},\vec p}\,\exp(-ip\cdot x),
+\xi_{\mathrm{fop}}^{(+)}(x)=\int\!\frac{d^3p}{(2\pi\hbar)^3}\sqrt{\frac{\hbar c}{2E_{\vec p}}}\,a_{\mathrm{fop},\vec p}\,\exp(-ip\cdot x/\hbar),
 \qquad
-\xi_{\mathrm{fop}}^{(-)}(x)=\int\!\frac{d^3p}{(2\pi)^3}\frac{1}{\sqrt{2E_{\vec p}}}\,{b_{\mathrm{fop},\vec p}}^\dagger\,\exp(+ip\cdot x),
+\xi_{\mathrm{fop}}^{(-)}(x)=\int\!\frac{d^3p}{(2\pi\hbar)^3}\sqrt{\frac{\hbar c}{2E_{\vec p}}}\,{b_{\mathrm{fop},\vec p}}^\dagger\,\exp(+ip\cdot x/\hbar),
 $$</p>
 <p>so that $\xi_{\mathrm{fop}}=\xi_{\mathrm{fop}}^{(+)}+\xi_{\mathrm{fop}}^{(-)}$ and $\xi_{\mathrm{fop}}^{\dagger}=\xi_{\mathrm{fop}}^{(+)\dagger}+\xi_{\mathrm{fop}}^{(-)\dagger}$, with $\xi_{\mathrm{fop}}^{(+)\dagger}$ containing ${a_{\mathrm{fop},\vec p}}^\dagger$ and $\xi_{\mathrm{fop}}^{(-)\dagger}$ containing $b_{\mathrm{fop},\vec p}$. Two facts fix the interpretation.</p>
 <p><strong>The positive-frequency part annihilates the vacuum.</strong> Because $a_{\mathrm{fop},\vec p}|0\rangle=0$ for every $\vec p$,</p>
@@ -126,7 +126,7 @@ $$</p>
 \langle0|\xi_{\mathrm{fop}}^{(-)}(x)=0 ,
 $$</p>
 <p>so $\xi_{\mathrm{fop}}^{(+)}$ is the <strong>annihilation part</strong> and $\xi_{\mathrm{fop}}^{(-)}$ the <strong>creation part</strong>. The same statement in the biquaternion notation is that the annihilation part is the transport of the vacuum by the positive-frequency central phase.</p>
-<p><strong>The frequency split is Lorentz invariant.</strong> The split is defined by the sign of the energy, and the sign of the energy is preserved by orthochronous Lorentz transformations; equivalently, the positive-frequency part continues analytically in the upper half of the complex time plane when the phase is written $\exp(-iE_{\vec p}r'_t/(\hbar c))$. This is the standard statement that the Wightman function is the boundary value of an analytic function, and the framework's central phase $\exp(\,i\,\mathrm{Sc}(\tilde P_{\Phi}\tilde{R}_\Phi^{\natural}))$ is the phase in which the statement is made.</p>
+<p><strong>The frequency split is Lorentz invariant.</strong> The split is defined by the sign of the energy, and the sign of the energy is preserved by orthochronous Lorentz transformations; equivalently, the positive-frequency part continues analytically in the upper half of the complex time plane when the phase is written $\exp(-iE_{\vec p}r'_t/(\hbar c))$. This is the standard statement that the Wightman function is the boundary value of an analytic function, and the framework's central phase $\exp(\,i\,\mathrm{Sc}(\tilde P_{\Phi}\tilde{R}_\Phi^{\natural})/\hbar)$ is the phase in which the statement is made.</p>
 <h2 id="real-and-complex-scalar-fields">Real and Complex Scalar Fields</h2>
 <p>The framework admits both cases, and their difference is the standard one, sharpened by the algebra's conjugation structure.</p>
 <p><strong>The complex (charged) field.</strong> Here $\xi_{\mathrm{fop}}^{\dagger}\ne\xi_{\mathrm{fop}}$, and the expansion contains two independent operator sets, $a_{\mathrm{fop},\vec p}$ and $b_{\mathrm{fop},\vec p}$. The field carries a conserved $\mathrm{U}(1)$ charge, with $[Ϙ_{\mathrm{fop}},\xi_{\mathrm{fop}}]=-\xi_{\mathrm{fop}}$ and $[Ϙ_{\mathrm{fop}},\xi_{\mathrm{fop}}^{\dagger}]=+\xi_{\mathrm{fop}}^{\dagger}$, so the field operator has a definite charge and its conjugate has the opposite one. The charge is the Noether charge of the current $\tilde J_{\Phi}\in\mathbb{B}_{\Phi}$ of the companion article <em>Noether's Theorem in Biquaternionic Form</em>.</p>
@@ -141,8 +141,8 @@ $$</p>
 <p>and it leaves the commutators and the Hamiltonian invariant. It is an antiunitary-or-$*$-unitary operation according to the convention for the mode operators; the corpus's concern is only that it is the map that reverses the charge, and it is the standard one.</p>
 <p><strong>The real (neutral) field.</strong> Imposing $\xi_{\mathrm{fop}}^{\dagger}=\xi_{\mathrm{fop}}$ forces $b_{\mathrm{fop},\vec p}=a_{\mathrm{fop},\vec p}$ and reduces the expansion to a single set of modes,</p>
 <p>$$
-\xi_{\mathrm{fop}}(x)=\int\!\frac{d^3p}{(2\pi)^3}\frac{1}{\sqrt{2E_{\vec p}}}
-\left(a_{\mathrm{fop},\vec p}\exp(-ip\cdot x)+{a_{\mathrm{fop},\vec p}}^\dagger \exp(+ip\cdot x)\right),
+\xi_{\mathrm{fop}}(x)=\int\!\frac{d^3p}{(2\pi\hbar)^3}\sqrt{\frac{\hbar c}{2E_{\vec p}}}
+\left(a_{\mathrm{fop},\vec p}\exp(-ip\cdot x/\hbar)+{a_{\mathrm{fop},\vec p}}^\dagger \exp(+ip\cdot x/\hbar)\right),
 $$</p>
 <p>in which the field creates and destroys its own antiparticle. The charge vanishes identically, and the $\mathrm{U}(1)$ symmetry of the complex case is not present. In the framework's terms the real field is a <strong>Hermitian central-valued</strong> operator field, while the complex field is a central-valued field whose conjugate is a distinct operator.</p>
 <p><strong>The real structure is not charge conjugation.</strong> The algebra carries the anti-Hermitian conjugation $\tilde{Ξ}^{\flat}=-\tilde{Ξ}^{*}$, which on a central element is $\xi\,e_t\mapsto-\xi^*e_t$. This is the algebra's real structure; it is not the particle–antiparticle exchange, because it acts on the value space rather than on the mode operators and it carries a minus sign. The two operations coincide only after a further convention is fixed, and the framework does not fix one. The four levels at which the corpus uses the name charge conjugation are tabulated in <em>Antilinear Structure and the Two Kinds of Mass in Biquaternionic Form</em>. What the framework does supply is the <strong>central phase</strong> $\exp(i\alpha)$ under which $\xi_{\mathrm{fop}}\to \exp(-i\alpha)\xi_{\mathrm{fop}}$, generated by the charge; this $\mathrm{U}(1)$ is the group that the companion articles <em>Goldstone's Theorem in Biquaternionic Form</em> and <em>The Higgs Mechanism in Biquaternionic Form</em> take as the framework's canonical continuous symmetry.</p>
@@ -150,8 +150,8 @@ $$</p>
 <p>The defining property of a bosonic field is that its commutator is a c-number. From the mode algebra,</p>
 <p>$$
 \boxed{\;\big[\xi_{\mathrm{fop}}(x),\xi_{\mathrm{fop}}^{\dagger}(y)\big]
-=\int\!\frac{d^3p}{(2\pi)^3\,2E_{\vec p}}
-\left(\exp(-ip\cdot(x-y))-\exp(+ip\cdot(x-y))\right)
+=\int\!\frac{d^3p}{(2\pi\hbar)^3\,\frac{\hbar c}{2E_{\vec p}}}
+\left(\exp(-ip\cdot(x-y)/\hbar)-\exp(+ip\cdot(x-y)/\hbar)\right)
 \equiv i\Delta(x-y)\;},
 $$</p>
 <p>while</p>
@@ -166,7 +166,7 @@ $$</p>
 <p>The field operator's content is exhausted by its correlation functions. The basic one is the <strong>Wightman function</strong></p>
 <p>$$
 \boxed{\;W(x-y)=\langle0|\xi_{\mathrm{fop}}(x)\xi_{\mathrm{fop}}^{\dagger}(y)|0\rangle
-=\int\!\frac{d^3p}{(2\pi)^3\,2E_{\vec p}}\,\exp(-ip\cdot(x-y))\;},
+=\int\!\frac{d^3p}{(2\pi\hbar)^3\,\frac{\hbar c}{2E_{\vec p}}}\,\exp(-ip\cdot(x-y)/\hbar)\;},
 $$</p>
 <p>which is precisely the positive-frequency part of the commutator function and is annihilated by the Klein–Gordon operator in each variable,</p>
 <p>$$
@@ -220,7 +220,7 @@ $$</p>
 <p>so the canonical commutator is the identity $\delta\xi(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)/\delta\xi(\vec y)=\delta^{(3)}(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z-\vec y)$ and the field-basis representation is the functional analogue of the coordinate representation of quantum physics. In this representation the Hamiltonian is a differential operator and the Schrödinger equation is a functional differential equation.</p>
 <p>For the free scalar the ground-state functional is an explicit Gaussian. With the Hamiltonian of the companion quantization and the real field for economy,</p>
 <p>$$
-\tilde{Ξ}_{\mathrm{sp},0}[\xi]\;\propto\;\exp\!\left(-\frac{1}{2}\int\frac{d^3p}{(2\pi)^3}\,E_{\vec p}\,\big|\xi(\vec p)\big|^2\right)
+\tilde{Ξ}_{\mathrm{sp},0}[\xi]\;\propto\;\exp\!\left(-\frac{1}{2}\int\frac{d^3p}{(2\pi\hbar)^3}\,E_{\vec p}\,\big|\xi(\vec p)\big|^2\right)
 =\exp\!\left(-\frac{1}{2}\int d^3r\,d^3y\;\xi(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)\,K(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z-\vec y)\,\xi(\vec y)\right),
 $$</p>
 <p>where $K$ has Fourier symbol $E_{\vec p}=\sqrt{\vec p^2+\mu^2}$; the vacuum wave functional is the exponential of a positive quadratic form, and its width is the energy $E_{\vec p}$. The Gaussian integral of this functional over configurations is the vacuum-to-vacuum amplitude of the scalar functional integral, and the transition functional $\tilde{Ξ}_{\mathrm{sp}}[\xi_f,r'_{t,f}]=\int\mathcal{D}\xi_i\,K(\xi_f,r'_{t,f};\xi_i,r'_{t,i})\tilde{Ξ}_{\mathrm{sp}}[\xi_i,r'_{t,i}]$ is its kernel. The framework's interpretation is that the wave functional is a functional of <strong>central-valued</strong> configurations, $\tilde{Ξ}_{\mathrm{sp}}[\xi]=\tilde{Ξ}_{\mathrm{sp}}[\xi\,e_t]$, and that it is a complex number for each configuration rather than an element of $\mathbb{B}$; the informational sector's density operators are recovered only in finite-dimensional truncations, as the Fock-space companion records.</p>

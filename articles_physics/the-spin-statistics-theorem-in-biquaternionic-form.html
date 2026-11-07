@@ -187,9 +187,9 @@ $$</p>
 <p>The operator-level content of the theorem is a computation with the parents' free field. Every derivative of the field in this article is the corpus gradient $\tilde\nabla$ or its conjugate $\tilde\nabla^{\natural}$ of <em>Operator and Calculus Conventions</em>, §<em>The Gradient</em>, with $\Box=\tilde\nabla\tilde\nabla^{\natural}$ the d'Alembertian there; on the material sector $\partial/\partial R_t=-i\,\partial/\partial r'_t$, so $\Box=\Delta_Q-\partial^2/\partial {r'_t}^2$. No other derivative operator is written.</p>
 <p>The field is the element-valued map $\tilde{Ξ}_{\mathrm{fop}}:\mathbb{R}^{1,3}\to\mathbb{B}$ of <em>Canonical Quantization of the Biquaternion Dirac Field</em>, with the mode expansion</p>
 <p>$$
-\tilde{Ξ}_{\mathrm{fop}}(X,r'_t)=\int\!\frac{d^3p}{(2\pi)^3}\,\frac{1}{\sqrt{2E_{\vec p}}}
-\sum_{r=1}^{2}\Big[a_{\mathrm{fop},r}(\vec p)\,\tilde{Ξ}_{\mathrm{sp},+}^{(r)}(\vec p)\,\exp(-ip\cdot x)
-+b_{\mathrm{fop},r}^{\dagger}(\vec p)\,\tilde{Ξ}_{\mathrm{sp},-}^{(r)}(\vec p)\,\exp(+ip\cdot x)\Big],
+\tilde{Ξ}_{\mathrm{fop}}(X,r'_t)=\int\!\frac{d^3p}{(2\pi\hbar)^3}\,\sqrt{\frac{\hbar c}{2E_{\vec p}}}
+\sum_{r=1}^{2}\Big[a_{\mathrm{fop},r}(\vec p)\,\tilde{Ξ}_{\mathrm{sp},+}^{(r)}(\vec p)\,\exp(-ip\cdot x/\hbar)
++b_{\mathrm{fop},r}^{\dagger}(\vec p)\,\tilde{Ξ}_{\mathrm{sp},-}^{(r)}(\vec p)\,\exp(+ip\cdot x/\hbar)\Big],
 $$</p>
 <p>where $\tilde{Ξ}_{\mathrm{sp},\pm}^{(r)}(\vec p)$ are the parent's positive- and negative-frequency amplitudes, elements of $\mathbb{B}$, and $\tilde{Ξ}_{\mathrm{fop}}^{\dagger}$ is the Hermitian conjugate.</p>
 <p>The corpus's Dirac equation is one equation per chirality, both acting from the left,</p>
@@ -217,8 +217,8 @@ $$</p>
 <p>for every $\tilde{Ξ}\in\mathbb{B}$. The right multiplication by $i\vec e_x$ is the factor that the Dirac adjoint carries, moved onto the argument: $\bar{\tilde{Ξ}}_{\mathrm{sp}}X=\mathrm{Sc}(\tilde{Ξ}_{\mathrm{sp}}^*iX\vec e_x)$, and here it multiplies the test element, not the field, so the identity stays an identity of operators on one element. The identities are operator statements and not statements about solutions, and the second carries the opposite mass sign because the negative-frequency branch has the covariant norm $-2m$. Verified with the parent's covariant normalizations $\langle\tilde{Ξ}_{\mathrm{sp},\pm}^{(r)},\tilde{Ξ}_{\mathrm{sp},\pm}^{(s)}\rangle_{\mathrm D}=\pm2m\delta_{rs}$ at random momenta: the norms to $1.8\times10^{-15}$ and the two identities to $2.1\times10^{-14}$.</p>
 <p>The field is element-valued; the biquaternion content is the algebra on which it is built and the notation, and the mode algebra is imposed. Two choices are available. The <strong>Fermi choice</strong> imposes</p>
 <p>$$
-\{a_{\mathrm{fop},r}(\vec p),a_{\mathrm{fop},s}^{\dagger}(\vec k_\Phi)\}=(2\pi)^3\delta_{rs}\delta^{(3)}(\vec p-\vec k_\Phi),\qquad
-\{b_{\mathrm{fop},r}(\vec p),b_{\mathrm{fop},s}^{\dagger}(\vec k_\Phi)\}=(2\pi)^3\delta_{rs}\delta^{(3)}(\vec p-\vec k_\Phi),
+\{a_{\mathrm{fop},r}(\vec p),a_{\mathrm{fop},s}^{\dagger}(\vec k_\Phi)\}=(2\pi\hbar)^3\delta_{rs}\delta^{(3)}(\vec p-\hbar\vec k_\Phi),\qquad
+\{b_{\mathrm{fop},r}(\vec p),b_{\mathrm{fop},s}^{\dagger}(\vec k_\Phi)\}=(2\pi\hbar)^3\delta_{rs}\delta^{(3)}(\vec p-\hbar\vec k_\Phi),
 $$</p>
 <p>with all other brackets vanishing, and the <strong>Bose choice</strong> replaces both braces by brackets.</p>
 <p><strong>The anticommutator (Fermi choice).</strong> At equal times the two branches enter with opposite phases, and with $\theta=\vec p\cdot\vec\Delta$, where $\vec\Delta=X-Y$ is the separation and $X=r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z$, $Y$ likewise (the sign of $\theta$ is fixed by the mode-expansion convention and drops out of the anticommutator, only $\cos\theta$ surviving there), the completeness identities give</p>
@@ -242,12 +242,12 @@ $$</p>
 <p>$$
 \frac{1}{2E_{\vec p}}\Big[2m\cos\theta\,\big(\tilde{Ξ}\,i\vec e_x\big)+2\sin\theta\sum_k p_k\,\vec e_k\big(\tilde{Ξ}\,i\vec e_x\big)\vec e_y\Big].
 $$</p>
-<p>Integrating with $\int\frac{d^3p}{(2\pi)^3}\,\frac{\cos\theta}{E_{\vec p}}=F(\vec\Delta)$ and $\int\frac{d^3p}{(2\pi)^3}\,\frac{p_k\sin\theta}{E_{\vec p}}=-\nabla_kF$, and using $(\tilde{Ξ}\,i\vec e_x)\vec e_y=i\tilde{Ξ}\vec e_z$, leaves</p>
+<p>Integrating with $\int\frac{d^3p}{(2\pi\hbar)^3}\,\frac{\cos\theta}{E_{\vec p}}=F(\vec\Delta)$ and $\int\frac{d^3p}{(2\pi\hbar)^3}\,\frac{p_k\sin\theta}{E_{\vec p}}=-\nabla_kF$, and using $(\tilde{Ξ}\,i\vec e_x)\vec e_y=i\tilde{Ξ}\vec e_z$, leaves</p>
 <p>$$
 [\tilde{Ξ}_{\mathrm{fop}}(X,r'_t),\tilde{Ξ}_{\mathrm{fop}}^{\dagger}(Y,r'_t)]\,\tilde{Ξ}
 =i\,mF(\vec\Delta)\,\tilde{Ξ}\vec e_x-i\sum_k\vec e_k\,\tilde{Ξ}\vec e_z\,\nabla_kF(\vec\Delta),
 \qquad
-F(\vec\Delta)=\int\!\frac{d^3p}{(2\pi)^3}\,\frac{1}{E_{\vec p}}\cos(\vec p\cdot\vec\Delta),
+F(\vec\Delta)=\int\!\frac{d^3p}{(2\pi\hbar)^3}\,\frac{1}{E_{\vec p}}\cos(\vec p\cdot\vec\Delta),
 $$</p>
 <p>with $\nabla_k=\partial/\partial\Delta_k$. For $m>0$ the kernel is $F(\vec\Delta)=\dfrac{m}{2\pi^2|\vec\Delta|}\,K_1\!\big(m|\vec\Delta|\big)$, the modified Bessel function of the second kind. The identity $\int_0^\infty\frac{p}{E}\sin(p\Delta)\,dp=mK_1(m\Delta)$ is the derivative in $\Delta$ of $\int_0^\infty\frac{\cos(p\Delta)}{E}\,dp=K_0(m\Delta)$, and both were checked numerically for $k_m=1$ and $\Delta=0.5,2,5,10$ to thirty digits. Nothing cancels: $F$ is positive and decaying, and $\nabla_kF$ vanishes only where $\Delta_k$ does, so the kernel is nonzero for <strong>every</strong> $\vec\Delta\ne 0$. It decays exponentially for large separations, but it does not vanish. So at equal times and spatial separation $\vec\Delta\ne 0$ — a spacelike separation — the commutator of the spin-$\tfrac12$ field is nonzero, while the anticommutator is zero. The Bose choice fails microcausality for a half-integer-spin field.</p>
 <p>The chiral pair has a compact covariant form. With the gradient and its conjugate fixed above, $\tilde\nabla\tilde\nabla^{\natural}=\tilde\nabla^{\natural}\tilde\nabla=\Box$, and the mass couples the two chiralities through the pair of the preceding section. Each member is a one-sided action: $\tilde\nabla\tilde{Ξ}_{\mathrm{sp},R}=k_m\tilde{Ξ}_{\mathrm{sp},L}$ is the left action of the gradient on the right-handed half, $\tilde\nabla^{\natural}\tilde{Ξ}_{\mathrm{sp},L}=k_m\tilde{Ξ}_{\mathrm{sp},R}$ the left action of its conjugate on the left-handed half. The pair is kept as two equations because the two act on different objects, both from the left, and the conjugate gradient $\natural$ is what separates them. Together they are the pair operator $\mathbb{D}$ acting on $(\tilde{Ξ}_{\mathrm{sp},R},\tilde{Ξ}_{\mathrm{sp},L})$, with $\mathbb{D}^2=\Box I$, and the mass is the off-diagonal coupling of the two halves rather than a term inside either. With the field quantized by anticommutators, the general two-point functions are</p>
@@ -260,12 +260,12 @@ $$</p>
 <h2 id="the-energy-and-the-norm">The Energy and the Norm</h2>
 <p>The third ingredient is positivity, and it is where the finite algebra has a native statement. With the mode expansion, the Hamiltonian of the free field is</p>
 <p>$$
-H=\sum_r\int\!\frac{d^3p}{(2\pi)^3}\,E_{\vec p}\,
+H=\sum_r\int\!\frac{d^3p}{(2\pi\hbar)^3}\,E_{\vec p}\,
 \big(a_{\mathrm{fop},r}^{\dagger}a_{\mathrm{fop},r}-b_{\mathrm{fop},r}b_{\mathrm{fop},r}^{\dagger}\big).
 $$</p>
 <p>The sign of the antiparticle term is decided by the bracket. With the <strong>Fermi choice</strong>, $b_{\mathrm{fop}}b_{\mathrm{fop}}^{\dagger}=1-b_{\mathrm{fop}}^{\dagger}b_{\mathrm{fop}}$, so after normal ordering</p>
 <p>$$
-H=\sum_r\int\!\frac{d^3p}{(2\pi)^3}\,E_{\vec p}\,
+H=\sum_r\int\!\frac{d^3p}{(2\pi\hbar)^3}\,E_{\vec p}\,
 \big(a_{\mathrm{fop},r}^{\dagger}a_{\mathrm{fop},r}+b_{\mathrm{fop},r}^{\dagger}b_{\mathrm{fop},r}\big)+E_0,
 $$</p>
 <p>which is non-negative on the Fock space up to the c-number $E_0$ that normal ordering removes. With the <strong>Bose choice</strong>, $b_{\mathrm{fop}}b_{\mathrm{fop}}^{\dagger}=1+b_{\mathrm{fop}}^{\dagger}b_{\mathrm{fop}}$, and the antiparticle contribution enters with the opposite sign, $a_{\mathrm{fop}}^{\dagger}a_{\mathrm{fop}}-b_{\mathrm{fop}}^{\dagger}b_{\mathrm{fop}}$: the energy is unbounded below as antiparticle number grows, and the vacuum is unstable. The same sign appears in the norm: the anticommutator gives the positive-definite fermionic Fock space, the commutator gives an indefinite metric. This is the parent quantization article's argument, and it is stated here because it is half of the theorem's force.</p>
@@ -456,7 +456,7 @@ $$</p>
 <td>Antisymmetric (Pauli–Jordan-type) and symmetric two-point kernels</td>
 </tr>
 <tr>
-<td>$H=\sum_r\int\frac{d^3p}{(2\pi)^3}E_{\vec p}(a_{\mathrm{fop},r}^{\dagger}a_{\mathrm{fop},r}+b_{\mathrm{fop},r}^{\dagger}b_{\mathrm{fop},r})+E_0$</td>
+<td>$H=\sum_r\int\frac{d^3p}{(2\pi\hbar)^3}E_{\vec p}(a_{\mathrm{fop},r}^{\dagger}a_{\mathrm{fop},r}+b_{\mathrm{fop},r}^{\dagger}b_{\mathrm{fop},r})+E_0$</td>
 <td>Normal-ordered Hamiltonian (Fermi choice)</td>
 </tr>
 <tr>

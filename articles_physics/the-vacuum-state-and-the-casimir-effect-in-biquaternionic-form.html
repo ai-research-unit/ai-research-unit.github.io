@@ -116,15 +116,15 @@ which is the Born rule of the informational sector specialized to the vacuum. Th
 <h2 id="the-zero-point-energy-and-the-trace-part">The Zero-Point Energy and the Trace Part</h2>
 <p><strong>From the mode expansion.</strong> The free Maxwell potential expands in four covariant polarisations,
 $$
-A_\mu(x)=\int\!\frac{d^{3}k}{(2\pi)^{3}}\frac{1}{\sqrt{2\omega_k}}\sum_{r=0}^{3}
+A_\mu(x)=\int\!\frac{d^{3}k}{(2\pi)^3}\sqrt{\frac{c}{2\omega_k}}\sum_{r=0}^{3}
 \Big(a_{\mathrm{fop},r}(\vec k_\Phi)\,\epsilon^{(r)}_\mu(\vec k_\Phi)\,\exp(-ik\cdot x)
 +a_{\mathrm{fop},r}^{\dagger}(\vec k_\Phi)\,\epsilon^{(r)*}_\mu(\vec k_\Phi)\,\exp(+ik\cdot x)\Big),
 \qquad
-\big[a_{\mathrm{fop},r}(\vec k_\Phi),a_{\mathrm{fop},s}^{\dagger}(\vec k_2)\big]=\sigma_{\mathrm{met},r}\,\delta_{rs}\,(2\pi)^{3}\delta^{(3)}(\vec k_\Phi-\vec k_2),
+\big[a_{\mathrm{fop},r}(\vec k_\Phi),a_{\mathrm{fop},s}^{\dagger}(\vec k_2)\big]=\sigma_{\mathrm{met},r}\,\delta_{rs}\,(2\pi)^3\,\delta^{(3)}(\vec k_\Phi-\vec k_2),
 $$
 with $\sigma_{\mathrm{met}}=(-1,+1,+1,+1)$ and $\omega_k=|\vec k_\Phi|$ for the massless field. The normal-ordered Hamiltonian is
 $$
-:\!H\!:\,=\sum_{r=0}^{3}\int\!\frac{d^{3}k}{(2\pi)^{3}}\,\sigma_{\mathrm{met},r}\,\omega_k\,a_{\mathrm{fop},r}^{\dagger}(\vec k_\Phi)a_{\mathrm{fop},r}(\vec k_\Phi),
+:\!H\!:\,=\sum_{r=0}^{3}\int\!\frac{d^{3}k}{(2\pi)^3}\,\sigma_{\mathrm{met},r}\,\hbar\omega_k\,a_{\mathrm{fop},r}^{\dagger}(\vec k_\Phi)a_{\mathrm{fop},r}(\vec k_\Phi),
 $$
 and the constant discarded in passing to the normal-ordered form is the zero-point energy.</p>
 <p><strong>Its value.</strong> Reordering the modes produces, per mode, the contribution $\sum_r\sigma_{\mathrm{met},r}\,\tfrac12\frac{m\,c\,\omega_{k}}{k_m}$. Since
@@ -133,12 +133,12 @@ $$
 $$
 the zero-point constant of the covariant field is that of <strong>two</strong> transverse modes, $\frac{m\,c\,\omega_{k}}{k_m}$ per mode, and the free vacuum energy is the quartically divergent integral
 $$
-E_0=\sum_{r=0}^{3}\sigma_{\mathrm{met},r}\sum_{\text{modes}}\tfrac12\frac{m\,c\,\omega_{k}}{k_m}=2\,V\!\int\!\frac{d^{3}k}{(2\pi)^{3}}\,\tfrac12\frac{m\,c^{2}}{k_m}\lvert\vec k_\Phi\rvert
+E_0=\sum_{r=0}^{3}\sigma_{\mathrm{met},r}\sum_{\text{modes}}\tfrac12\frac{m\,c\,\omega_{k}}{k_m}=2\,V\!\int\!\frac{d^{3}k}{(2\pi)^3}\,\tfrac12\frac{m\,c^{2}}{k_m}\lvert\vec k_\Phi\rvert
 \;\xrightarrow[\ \Lambda\ ]{}\;\frac{m\,c^{2}\,\Lambda^{4}}{8\,k_m\,\pi^{2}}\,V .
 $$
 The coefficient is the free-space density for two polarisations; the divergence is quartic and proportional to the volume $V$. This is the biquaternion transcription of the standard fact that the electromagnetic zero-point energy diverges as the fourth power of the cutoff. The Dirac parent is the mirror case: there the normal-ordering constant is <em>negative</em>,
 $$
-E_0^{\mathrm{D}}=-\,2V\!\int\!\frac{d^{3}p}{(2\pi)^{3}}\,E_{\vec p},
+E_0^{\mathrm{D}}=-\,2V\!\int\!\frac{d^{3}p}{(2\pi\hbar)^3}\,E_{\vec p},
 $$
 also quartically divergent, as that article records. The sign difference (positive for bosons, negative for the two fermion branches) is the standard one and is not removed by the framework.</p>
 <p><strong>The zero-point energy is a central scalar.</strong> In the framework the zero-point coefficient multiplies the identity $e_t$: it is a real number, hence an element of the <strong>centre</strong> $\mathbb{B}_{C}=\mathrm{span}_{\mathbb{R}}\{e_t,ie_t\}$ of $\mathbb{B}$. A central scalar commutes with every biquaternion and, in the evolution $\tilde{Ϛ}_{\Psi}\mapsto\tilde U\tilde{Ϛ}_{\Psi}\tilde U^{*}$ with $\tilde U=\exp(-\frac{k_m\,i\,Hr'_{t}}{m\,c^{2}})$, contributes only a phase that cancels. This is exactly the statement of <em>The Harmonic Oscillator in Biquaternionic Form</em>: the trace part $r_t$ of a Hamiltonian is a central scalar, and "the zero-point energy is unobservable and the trace part of the Hamiltonian is a central scalar are the same statement". The trace formula makes "trace part" literal, $\mathrm{Tr}(\tilde R_\Psi)=2\,\mathrm{Sc}(\tilde R_\Psi)$.</p>
@@ -153,7 +153,7 @@ $$
 $$
 each with frequency $\omega=c\sqrt{\vec k_\perp^{2}+(\pi n/a)^{2}}$. The TE and TM families each carry <strong>one</strong> polarization for every $n\ge1$; the single $n=0$ mode is the transverse electromagnetic (TEM) mode with $\omega=c|\vec k_\perp|$, independent of $a$. The bare zero-point energy per unit area of the plates is therefore
 $$
-\frac{E(a)}{A}=\frac{m\,c^{2}}{2\,k_m}\int\!\frac{d^{2}k_\perp}{(2\pi)^{2}}
+\frac{E(a)}{A}=\frac{m\,c^{2}}{2\,k_m}\int\!\frac{d^{2}k_\perp}{(2\pi)^2}
 \Bigg[\,2\sum_{n=1}^{\infty}\sqrt{\vec k_\perp^{2}+\Big(\frac{\pi n}{a}\Big)^{2}}
 \;+\;|\vec k_\perp|\,\Bigg].
 $$</p>
@@ -161,7 +161,7 @@ $$</p>
 <p><strong>The physical subtraction.</strong> The Casimir energy is not the bare sum but the <em>change</em> in the zero-point energy produced by the plates. In the mode-density formulation this is
 $$
 \frac{E_{\mathrm{cas}}(a)}{A}
-=\frac{m\,c^{2}}{2\,k_m}\int\!\frac{d^{2}k_\perp}{(2\pi)^{2}}
+=\frac{m\,c^{2}}{2\,k_m}\int\!\frac{d^{2}k_\perp}{(2\pi)^2}
 \Bigg[\,2\sum_{n=1}^{\infty}\sqrt{\vec k_\perp^{2}+\Big(\frac{\pi n}{a}\Big)^{2}}
 \;-\;2\,\frac{a}{\pi}\int_{0}^{\infty} dq\,\sqrt{\vec k_\perp^{2}+q^{2}}\,\Bigg],
 $$
@@ -175,12 +175,12 @@ which is <strong>even</strong> in $x$ and <strong>linearly growing</strong>, the
 <h2 id="first-route-the-spectral-zeta-function">First Route: the Spectral Zeta Function</h2>
 <p>The spectral zeta function of the Dirichlet-type problem is
 $$
-\zeta_3(s)=\sum_{n=1}^{\infty}\int\!\frac{d^{2}k_\perp}{(2\pi)^{2}}\,
+\zeta_3(s)=\sum_{n=1}^{\infty}\int\!\frac{d^{2}k_\perp}{(2\pi)^2}\,
 \Big(\vec k_\perp^{2}+\Big(\frac{\pi n}{a}\Big)^{2}\Big)^{-s},
 $$
 defined for $\mathrm{Re}\,s>\tfrac32$ and continued from there. The transverse integral is elementary,
 $$
-\int\!\frac{d^{2}k_\perp}{(2\pi)^{2}}\,\big(\vec k_\perp^{2}+m^{2}\big)^{-s}
+\int\!\frac{d^{2}k_\perp}{(2\pi)^2}\,\big(\vec k_\perp^{2}+m^{2}\big)^{-s}
 =\frac{1}{4\pi}\,\frac{\Gamma(s-1)}{\Gamma(s)}\,m^{2-2s},
 $$
 so with $m=\pi n/a$,
@@ -208,7 +208,7 @@ This is the Casimir energy per unit area of a <strong>single</strong> massless s
 <p>The second route uses the heat kernel rather than the mode sum directly, and it is independent of the first: it evaluates a convergent integral and uses $\zeta(4)=\pi^{4}/90$, not $\zeta(-3)$.</p>
 <p><strong>The heat kernel.</strong> For the Dirichlet-type problem the heat kernel per unit area is
 $$
-G_{\mathrm{prop}}(r'_t)=\sum_{n=1}^{\infty}\int\!\frac{d^{2}k_\perp}{(2\pi)^{2}}\,
+G_{\mathrm{prop}}(r'_t)=\sum_{n=1}^{\infty}\int\!\frac{d^{2}k_\perp}{(2\pi)^2}\,
 \exp(-r'_t(\vec k_\perp^{2}+(\pi n/a)^{2}))
 =\frac{1}{4\pi r'_t}\sum_{n=1}^{\infty}\exp(-(\pi n/a)^{2}r'_t),
 $$

@@ -101,11 +101,11 @@ $$</p>
 <h2 id="the-two-point-function-of-the-quantized-dirac-field">The Two-Point Function of the Quantized Dirac Field</h2>
 <p>The companion article quantizes the field on its module; here the same modes are read as elements of $\mathbb{B}$, and the operator-valued field is</p>
 <p>$$
-\tilde{Ξ}_{\mathrm{fop}}(x)=\int\!\frac{d^3p}{(2\pi)^3}\frac{1}{\sqrt{2E_{\vec p}}}
-\sum_{r=1}^{2}\Big[a_{\mathrm{fop},r}(\vec p)\,\tilde W_{\Psi}^{(r)}(\vec p)\,\exp(-ip\cdot x)
-+b_{\mathrm{fop},r}^{\dagger}(\vec p)\,\tilde V_{\Phi}^{(r)}(\vec p)\,\exp(+ip\cdot x)\Big],
+\tilde{Ξ}_{\mathrm{fop}}(x)=\int\!\frac{d^3p}{(2\pi\hbar)^3}\sqrt{\frac{\hbar c}{2E_{\vec p}}}
+\sum_{r=1}^{2}\Big[a_{\mathrm{fop},r}(\vec p)\,\tilde W_{\Psi}^{(r)}(\vec p)\,\exp(-ip\cdot x/\hbar)
++b_{\mathrm{fop},r}^{\dagger}(\vec p)\,\tilde V_{\Phi}^{(r)}(\vec p)\,\exp(+ip\cdot x/\hbar)\Big],
 $$</p>
-<p>with $E_{\vec p}=+\sqrt{\vec p^{\,2}c^2+m^{2}\,c^{4}}$, and with $\tilde W_{\Psi}^{(r)}$ and $\tilde V_{\Phi}^{(r)}$ the plane-wave elements of that momentum: the two solutions of the chiral pair and their two negative-frequency partners, each an element of $\mathbb{B}$. Its adjoint is the Hermitian conjugate $\tilde{Ξ}_{\mathrm{fop}}^*(x)$, carried with the same fixed pair $i\,\vec e_x$. That pair sits inside the time-ordered product, between the adjoint field and the test element, and the contraction over the two solutions consumes it: what acts on the test element is the kernel $\mathcal{A}_p+m$ derived below, and no cell survives in the amplitude.</p>
+<p>with $E_{\vec p}=+\sqrt{\vec p^{\,2}c^2+m^{2}\,c^{4}}$, and with $\tilde W_{\Psi}^{(r)}$ and $\tilde V_{\Phi}^{(r)}$ the plane-wave elements of that momentum: the two solutions of the chiral pair and their two negative-frequency partners, each an element of $\mathbb{B}$. Its adjoint is the Hermitian conjugate $\tilde{Ξ}_{\mathrm{fop}}^*(x)$, carried with the same fixed pair $i\,\vec e_x$. That pair sits inside the time-ordered product, between the adjoint field and the test element, and the contraction over the two solutions consumes it: what acts on the test element is the kernel $\mathcal{A}_p+mc$ derived below, and no cell survives in the amplitude.</p>
 <p><strong>The momentum action.</strong> The four frame cells of <em>Frame and Metric Conventions</em>, written out as actions instead of as cells, are</p>
 <p>$$
 G_t:\ \tilde Q\longmapsto i\,\tilde Q\,\vec e_x,
@@ -139,16 +139,16 @@ $$</p>
 <p>$$
 \{a_{\mathrm{fop},r}(\vec p),a_{\mathrm{fop},s}^{\dagger}(\vec k_\Phi)\}
 =\{b_{\mathrm{fop},r}(\vec p),b_{\mathrm{fop},s}^{\dagger}(\vec k_\Phi)\}
-=(2\pi)^3\delta_{rs}\delta^{(3)}(\vec p-\vec k_\Phi),
+=(2\pi\hbar)^3\delta_{rs}\delta^{(3)}(\vec p-\hbar\vec k_\Phi),
 $$</p>
-<p>with all other anticommutators vanishing. The plane-wave elements of the parent article obey the normalizations it records there, and the two sums over its two solutions are the numerators of this article, read as actions on $\mathbb{B}$: the positive-frequency sum is the momentum action shifted up by the mass, $\mathcal{A}_p+m$, and the negative-frequency sum is the same action shifted down, $\mathcal{A}_p-m$, both on shell.</p>
+<p>with all other anticommutators vanishing. The plane-wave elements of the parent article obey the normalizations it records there, and the two sums over its two solutions are the numerators of this article, read as actions on $\mathbb{B}$: the positive-frequency sum is the momentum action shifted up by the mass, $\mathcal{A}_p+mc$, and the negative-frequency sum is the same action shifted down, $\mathcal{A}_p-mc$, both on shell.</p>
 <p>Contracting the mode operators against the vacuum gives the two elementary two-point actions. The <strong>positive-frequency</strong> piece is</p>
 <p>$$
-W_+(x-y):\ \tilde Q\ \longmapsto\ \int\!\frac{d^3p}{(2\pi)^3}\frac{1}{2E_{\vec p}}\,\big(\mathcal{A}_{p}(\tilde Q)+mc\tilde Q\big)\,\exp(-i(p\cdot(x-y))/\hbar),
+W_+(x-y):\ \tilde Q\ \longmapsto\ \int\!\frac{d^3p}{(2\pi\hbar)^3}\frac{1}{2E_{\vec p}}\,\big(\mathcal{A}_{p}(\tilde Q)+mc\tilde Q\big)\,\exp(-i(p\cdot(x-y))/\hbar),
 $$</p>
 <p>in which only the $a_{\mathrm{fop}} a_{\mathrm{fop}}^{\dagger}$ contraction survives, and the <strong>negative-frequency</strong> piece is</p>
 <p>$$
-W_-(x-y):\ \tilde Q\ \longmapsto\ \int\!\frac{d^3p}{(2\pi)^3}\frac{1}{2E_{\vec p}}\,\big(\mathcal{A}_{p}(\tilde Q)-mc\tilde Q\big)\,\exp(+i(p\cdot(x-y))/\hbar),
+W_-(x-y):\ \tilde Q\ \longmapsto\ \int\!\frac{d^3p}{(2\pi\hbar)^3}\frac{1}{2E_{\vec p}}\,\big(\mathcal{A}_{p}(\tilde Q)-mc\tilde Q\big)\,\exp(+i(p\cdot(x-y))/\hbar),
 $$</p>
 <p>in which only $b_{\mathrm{fop}} b_{\mathrm{fop}}^{\dagger}$ survives. In both expressions the momentum action is on shell, because the free mode expansion contains the on-shell modes and nothing else. These two objects are not yet the propagator; each is a boundary value of an analytic function, and it is the time ordering that combines them into $S_F$.</p>
 <p>Time ordering for a fermion field carries the anticommutation sign:</p>
@@ -166,62 +166,62 @@ $$</p>
 <p>The action is written by what it does, so the display carries the test element and no second symbol. The overall $i$ and the $i\epsilon$ are fixed by requiring that the $p_0$ integral reproduce the two branches, with the normalization of the time-ordered product and the fermionic relative sign. It is worth performing that check explicitly, because it is where a sign can silently go wrong.</p>
 <p>Write the $p_0$ integral at fixed $\vec p$, and put $\Delta t=x_0-y_0$ and $\Delta\vec r=\vec r-\vec y$. Since</p>
 <p>$$
-p^2-m^{2}\,c^{2}=p_0^2-\vec p^2-m^{2}\,c^{2}=p_0^2-E_{\vec p}^2,
+p^2-m^{2}\,c^{2}=p_0^2-\vec p^2-m^{2}\,c^{2}=p_0^2-\frac{E_{\vec p}^2}{c^{2}},
 $$</p>
 <p>the integrand has poles where</p>
 <p>$$
-\boxed{\;p_0^2-E_{\vec p}^2+i\epsilon=0,
+\boxed{\;p_0^2-\frac{E_{\vec p}^2}{c^{2}}+i\epsilon=0,
 \qquad\text{i.e.}\qquad
-p_0=\pm\sqrt{E_{\vec p}^2-i\epsilon}
-=\pm\Big(E_{\vec p}-\frac{i\epsilon}{2E_{\vec p}}\Big)+O(\epsilon^2)\;}.
+p_0=\pm\sqrt{\frac{E_{\vec p}^2}{c^{2}}-i\epsilon}
+=\pm\Big(\frac{E_{\vec p}}{c}-\frac{i\epsilon\,c}{2E_{\vec p}}\Big)+O(\epsilon^2)\;}.
 $$</p>
 <p>The sign is worth fixing once explicitly. Let $p_0=E_{\vec p}/c+\delta$. Then the denominator is $2(E_{\vec p}/c)\,\delta+i\epsilon$, and it vanishes at $\delta=-i\epsilon\,c/(2E_{\vec p})$, which is <strong>below</strong> the axis. At $p_0=-E_{\vec p}/c+\delta$ the denominator is $-2(E_{\vec p}/c)\,\delta+i\epsilon$, and it vanishes at $\delta=+i\epsilon\,c/(2E_{\vec p})$, which is <strong>above</strong> it.</p>
 <p>This is the whole content of the prescription: the two poles are displaced in <em>opposite</em> directions. The decay of $\exp(-ip_0\Delta t)$ then selects one pole or the other:</p>
 <ul>
-<li>for $\Delta t>0$, close the contour in the lower half-plane and pick up the pole at $+E_{\vec p}$;</li>
-<li>for $\Delta t<0$, close in the upper half-plane and pick up the pole at $-E_{\vec p}$.</li>
+<li>for $\Delta t>0$, close the contour in the lower half-plane and pick up the pole at $+E_{\vec p}/c$;</li>
+<li>for $\Delta t<0$, close in the upper half-plane and pick up the pole at $-E_{\vec p}/c$.</li>
 </ul>
-<p>Write $p_+=(E_{\vec p},\vec p)$ and $p_-=(-E_{\vec p},\vec p)$. The residues are</p>
+<p>Write $p_+=(E_{\vec p}/c,\vec p)$ and $p_-=(-E_{\vec p}/c,\vec p)$. The residues are</p>
 <p>$$
-\mathrm{Res}_{p_0=+E_{\vec p}}\frac{\mathcal{A}_p(\tilde Q)+mc\tilde Q}{p_0^2-E_{\vec p}^2}
-=\frac{\mathcal{A}_{p_+}(\tilde Q)+mc\tilde Q}{2E_{\vec p}},
+\mathrm{Res}_{p_0=+E_{\vec p}/c}\frac{\mathcal{A}_p(\tilde Q)+mc\tilde Q}{p_0^2-E_{\vec p}^2/c^{2}}
+=\frac{\mathcal{A}_{p_+}(\tilde Q)+mc\tilde Q}{2E_{\vec p}/c},
 \qquad
-\mathrm{Res}_{p_0=-E_{\vec p}}\frac{\mathcal{A}_p(\tilde Q)+mc\tilde Q}{p_0^2-E_{\vec p}^2}
-=\frac{\mathcal{A}_{p_-}(\tilde Q)+mc\tilde Q}{-2E_{\vec p}}.
+\mathrm{Res}_{p_0=-E_{\vec p}/c}\frac{\mathcal{A}_p(\tilde Q)+mc\tilde Q}{p_0^2-E_{\vec p}^2/c^{2}}
+=\frac{\mathcal{A}_{p_-}(\tilde Q)+mc\tilde Q}{-2E_{\vec p}/c}.
 $$</p>
 <p>The contour contributes $-2\pi i$ when it closes below and $+2\pi i$ when it closes above. With the residues above and the overall factor $i$ of $S_F$, the two cases are</p>
 <p>$$
-\Delta t>0:\quad i\,(-2\pi i)\,\frac{\mathcal{A}_{p_+}(\tilde Q)+mc\tilde Q}{2E_{\vec p}}
-=2\pi\,\frac{\mathcal{A}_{p_+}(\tilde Q)+mc\tilde Q}{2E_{\vec p}},
+\Delta t>0:\quad i\,(-2\pi i)\,\frac{\mathcal{A}_{p_+}(\tilde Q)+mc\tilde Q}{2E_{\vec p}/c}
+=2\pi\,\frac{\mathcal{A}_{p_+}(\tilde Q)+mc\tilde Q}{2E_{\vec p}/c},
 $$</p>
 <p>$$
-\Delta t<0:\quad i\,(+2\pi i)\,\frac{\mathcal{A}_{p_-}(\tilde Q)+mc\tilde Q}{-2E_{\vec p}}
-=2\pi\,\frac{\mathcal{A}_{p_-}(\tilde Q)+mc\tilde Q}{2E_{\vec p}},
+\Delta t<0:\quad i\,(+2\pi i)\,\frac{\mathcal{A}_{p_-}(\tilde Q)+mc\tilde Q}{-2E_{\vec p}/c}
+=2\pi\,\frac{\mathcal{A}_{p_-}(\tilde Q)+mc\tilde Q}{2E_{\vec p}/c},
 $$</p>
 <p>in both lines the product of the two imaginary units being $i^2=-1$.</p>
-<p>Both carry the same <strong>positive</strong> weight: the sign of the half-plane and the sign inside the residue cancel, and the $2\pi$ cancels against the $1/(2\pi)$ of the $p_0$ measure, leaving $1/(2E_{\vec p})$, which is the normalisation of $W_\pm$. The fermionic minus is therefore not in the contour, and it must come from the numerator. For $\Delta t>0$ the $p_0$ integral is already the positive-frequency integrand of $W_+$. For $\Delta t<0$ it is</p>
+<p>Both carry the same <strong>positive</strong> weight: the sign of the half-plane and the sign inside the residue cancel, and the $2\pi$ cancels against the $1/(2\pi)$ of the $p_0$ measure, leaving $c/(2E_{\vec p})$, which is the normalisation of $W_\pm$. The fermionic minus is therefore not in the contour, and it must come from the numerator. For $\Delta t>0$ the $p_0$ integral is already the positive-frequency integrand of $W_+$. For $\Delta t<0$ it is</p>
 <p>$$
-\frac{\mathcal{A}_{p_-}(\tilde Q)+mc\tilde Q}{2E_{\vec p}}\,\exp\!\big(+iE_{\vec p}\Delta r_t/(\hbar c)+i\vec p\cdot\Delta\vec r/\hbar\big).
+\frac{\mathcal{A}_{p_-}(\tilde Q)+mc\tilde Q}{2E_{\vec p}/c}\,\exp\!\big(+iE_{\vec p}\Delta r_t/(\hbar c)+i\vec p\cdot\Delta\vec r/\hbar\big).
 $$</p>
 <p>Now flip the integration variable, $\vec p\to-\vec p$: the measure and $E_{\vec p}$ are unchanged, and the spatial phase reverses. The action is linear in the four-momentum, so flipping all four components flips its sign,</p>
 <p>$$
-\mathcal{A}_{(-E_{\vec p},-\vec p)}=-\mathcal{A}_{(E_{\vec p},\vec p)},
+\mathcal{A}_{(-E_{\vec p}/c,-\vec p)}=-\mathcal{A}_{(E_{\vec p}/c,\vec p)},
 $$</p>
 <p>and the numerator of the flipped expression becomes</p>
 <p>$$
-\mathcal{A}_{(-E_{\vec p},-\vec p)}(\tilde Q)+mc\tilde Q
-=-\big(\mathcal{A}_{(E_{\vec p},\vec p)}(\tilde Q)-mc\tilde Q\big),
+\mathcal{A}_{(-E_{\vec p}/c,-\vec p)}(\tilde Q)+mc\tilde Q
+=-\big(\mathcal{A}_{(E_{\vec p}/c,\vec p)}(\tilde Q)-mc\tilde Q\big),
 $$</p>
 <p>which is the negative-frequency numerator of $W_-$ with a minus. The single covariant expression, with its single factor of $i$ in front, therefore reproduces both the time ordering and the fermionic minus.</p>
 <p>Three things are conflated in the phrase "the $i\epsilon$ does the time ordering", and they are worth separating.</p>
 <ol>
 <li>The $i\epsilon$ fixes which pole lies in which half-plane; that is the boundary condition, and its sign is the choice of propagator.</li>
 <li>The overall $i$ fixes the normalization of the amplitude relative to the two $\mathrm{H}_{\mathrm{hvs}}$ terms.</li>
-<li>The minus in front of $W_-$ is carried by the numerator, through the two numerators $\mathcal{A}_p+m$ and $\mathcal{A}_p-m$. It is the two-point form of the anticommutation, and it has no counterpart in the scalar case, where the two residues share one numerator and the time-ordered combination is $\mathrm{H}_{\mathrm{hvs}}W_++\mathrm{H}_{\mathrm{hvs}}W_-$.</li>
+<li>The minus in front of $W_-$ is carried by the numerator, through the two numerators $\mathcal{A}_p+mc$ and $\mathcal{A}_p-mc$. It is the two-point form of the anticommutation, and it has no counterpart in the scalar case, where the two residues share one numerator and the time-ordered combination is $\mathrm{H}_{\mathrm{hvs}}W_++\mathrm{H}_{\mathrm{hvs}}W_-$.</li>
 </ol>
-<p><strong>A recomputation on a case chosen for it.</strong> Take $m=0.7$ and $\vec p=(0.3,-0.9,1.1)$, so that $|\vec p|=1.4525839046$ and $E_{\vec p}=1.6124515497$. Applying the four coordinate actions twice on a hundred random elements, the identity $\mathcal{A}_p^2=p^2\,\mathrm{id}$ holds to better than $10^{-14}$ and $(\mathcal{A}_p-m)(\mathcal{A}_p+m)=(p^2-m^{2}\,c^{2})\,\mathrm{id}$ to the same, the anticommutator $\{G_\mu,G_\nu\}=2\varepsilon_\mu\delta_{\mu\nu}\,\mathrm{id}$ holds exactly on the grid tested, and $\mathcal{A}_{-p}=-\mathcal{A}_p$ exactly. The identity</p>
+<p><strong>A recomputation on a case chosen for it.</strong> Take $m\,c^{2}=0.7$ and $\vec p=(0.3,-0.9,1.1)\,m\,c$, so that $|\vec p|=1.4525839046\,m\,c$ and $E_{\vec p}=1.6124515497\,m\,c^{2}$; every momentum below is quoted in units of $m\,c$ and every energy in units of $m\,c^{2}$. Applying the four coordinate actions twice on a hundred random elements, the identity $\mathcal{A}_p^2=p^2\,\mathrm{id}$ holds to better than $10^{-14}$ and $(\mathcal{A}_p-mc)(\mathcal{A}_p+mc)=(p^2-m^{2}\,c^{2})\,\mathrm{id}$ to the same, the anticommutator $\{G_\mu,G_\nu\}=2\varepsilon_\mu\delta_{\mu\nu}\,\mathrm{id}$ holds exactly on the grid tested, and $\mathcal{A}_{-p}=-\mathcal{A}_p$ exactly. The identity</p>
 <p>$$
-(\mathcal{A}_p-m)(\mathcal{A}_p+m)=\mathcal{A}_p^2-m^2\,\mathrm{id}=(p^2-m^{2}\,c^{2})\,\mathrm{id}
+(\mathcal{A}_p-mc)(\mathcal{A}_p+mc)=\mathcal{A}_p^2-m^{2}c^{2}\,\mathrm{id}=(p^2-m^{2}\,c^{2})\,\mathrm{id}
 $$</p>
 <p>is not a coincidence: it is the square of the action derived above, and it holds for off-shell $p$ as well. For $\epsilon=10^{-3}$ the Feynman poles come out at</p>
 <p>$$
@@ -229,7 +229,7 @@ p_0=+1.61245158-i\,3.101\times10^{-4}
 \qquad\text{and}\qquad
 p_0=-1.61245158+i\,3.101\times10^{-4},
 $$</p>
-<p>that is, one on each side of the real axis, at the distance $\epsilon/(2E_{\vec p})$ the boxed display predicts.</p>
+<p>that is, one on each side of the real axis, at the distance $\epsilon\,c/(2E_{\vec p})$ the boxed display predicts.</p>
 <h2 id="feynman-retarded-and-advanced-what-selects-the-contour">Feynman, Retarded, and Advanced: What Selects the Contour</h2>
 <p>The pole structure makes the choice of propagator explicit. Three prescriptions are available, and they differ only in how the two poles are displaced:</p>
 <div class="table-scroll"><table>
@@ -243,18 +243,18 @@ $$</p>
 <tbody>
 <tr>
 <td>Feynman</td>
-<td>$p_0^2-E_{\vec p}^2+i\epsilon$</td>
-<td>$\pm E_{\vec p}\mp i\epsilon/(2E_{\vec p})$ (opposite sides)</td>
+<td>$p_0^2-E_{\vec p}^2/c^{2}+i\epsilon$</td>
+<td>$\pm E_{\vec p}/c\mp i\epsilon\,c/(2E_{\vec p})$ (opposite sides)</td>
 </tr>
 <tr>
 <td>Retarded</td>
-<td>$(p_0+i\epsilon)^2-E_{\vec p}^2$</td>
-<td>$\pm E_{\vec p}-i\epsilon$ (both below)</td>
+<td>$(p_0+i\epsilon)^2-E_{\vec p}^2/c^{2}$</td>
+<td>$\pm E_{\vec p}/c-i\epsilon$ (both below)</td>
 </tr>
 <tr>
 <td>Advanced</td>
-<td>$(p_0-i\epsilon)^2-E_{\vec p}^2$</td>
-<td>$\pm E_{\vec p}+i\epsilon$ (both above)</td>
+<td>$(p_0-i\epsilon)^2-E_{\vec p}^2/c^{2}$</td>
+<td>$\pm E_{\vec p}/c+i\epsilon$ (both above)</td>
 </tr>
 </tbody>
 </table></div>
@@ -303,7 +303,7 @@ $$</p>
 <p>which is elliptic: all four directions now carry the same sign, and that single sign flip is exactly what separates the hyperbolic reading from the elliptic one. The Euclidean Green's function of the elliptic operator is unique once one demands decay at infinity, and its analytic continuation back to real time is the Feynman propagator. In that route the complexification of time is exactly what makes the continuation available.</p>
 <p>But the selection is still analytic, not algebraic. The step "continue the unique Euclidean Green's function" is the input: uniqueness rests on a decay condition in the Euclidean variables, and the direction of the rotation is a further choice, equivalent to the sign of $\epsilon$. Nothing in $\mathbb{B}$ prefers decaying-in-Euclidean over growing. So the Wick rotation exhibits the algebra's complex structure as a <em>necessary</em> carrier of the continuation, and the analytic input as the thing that fixes which continuation; it does not convert the algebra into a derivation of the Feynman prescription.</p>
 <h2 id="the-propagator-as-a-distribution">The Propagator as a Distribution</h2>
-<p>It matters that $S_F$ is a distribution, and not only because the statement is true. The integral defining it converges for no real $p$ on the mass shell; the mass shell is precisely the pole set, and the unregulated amplitude $(\mathcal{A}_p+m)/(p^2-m^{2}\,c^{2})$ is undefined there. The $i\epsilon$ is what turns the algebraic inverse of $\mathcal{A}_p-m$ off the mass shell into a distributional inverse on all of momentum space.</p>
+<p>It matters that $S_F$ is a distribution, and not only because the statement is true. The integral defining it converges for no real $p$ on the mass shell; the mass shell is precisely the pole set, and the unregulated amplitude $(\mathcal{A}_p+mc)/(p^2-m^{2}\,c^{2})$ is undefined there. The $i\epsilon$ is what turns the algebraic inverse of $\mathcal{A}_p-mc$ off the mass shell into a distributional inverse on all of momentum space.</p>
 <p>The two-point action of the chiral pair satisfies</p>
 <p>$$
 (\mathbb{D}-k_m)\,S_F=i\,\delta^{(4)}(x-y),
@@ -446,7 +446,7 @@ $$</p>
 <td>The plane-wave elements of the two frequency branches</td>
 </tr>
 <tr>
-<td>$\mathcal{A}_p+m$, $\mathcal{A}_p-m$</td>
+<td>$\mathcal{A}_p+mc$, $\mathcal{A}_p-mc$</td>
 <td>The two numerators, on shell: the map form of the two sums over the solutions</td>
 </tr>
 <tr>
