@@ -376,7 +376,7 @@ $$
 \;}
 $$
 
-It is **linear** in $\tilde{Ξ}_{\mathrm{sp}}$ and **off-diagonal in the value**: each line holds the part with one value on the left and the part with the other value on the right. At $m=0$ it decouples into two one-sided equations,
+It is **linear** in $\tilde{Ξ}_{\mathrm{sp}}$, **off-diagonal in the part** and **diagonal in the value**: each line applies a left multiplication to one part and equates the result to a multiple of the other, and a left multiplication keeps the value it meets, so the two sides of one line carry one value. The two letters of this display therefore name the two factors of the factorisation and not two values; where they are to name the values, the mass is the term that carries the field across, and §*The Massive Case* writes the pair in that form. At $m=0$ it decouples into two one-sided equations,
 
 $$
 \tilde{\nabla}\tilde{Ξ}_{\mathrm{sp},R}=0,
@@ -404,7 +404,15 @@ The structural identity of the two equations is the algebraic content of the sta
 
 The massive equation is the chiral pair boxed in *Statement*. The mass term is **linear** in the field and acts between the two parts: it is the biquaternion transcription of the mass term of the matrix Dirac equation, and it is what relates the two components.
 
-The coupling does not come from the left. Left multiplication by any element preserves the value of the field: a product takes the letter of its right factor, and the left multiplier does not touch it (*Matrix Representations Conventions*, §*The Bridge to the $4\times4$ Displays*). So no left multiplication carries one value into the other, and the one-sided pair, whose two lines are both left multiplications, equates same-valued objects: its two letters name two parts and not two values, and a field whose two parts had definite values, one of each, would satisfy both lines only by vanishing. What does exchange the two values is a right multiplication by a unit perpendicular to the axis, or the coefficient conjugation. A right multiplication by a unit that commutes with the axis — the time unit or the axis unit itself — is a different object again: it acts inside one value, leaves the letter alone, and carries a direction. That is why the two-sided form of *An Explicit Dictionary with Conjugation in the Mass Term* needs the coefficient bar beside the direction, and neither of the two alone.
+The coupling does not come from the left. Left multiplication by any element preserves the value of the field: a product takes the letter of its right factor, and the left multiplier does not touch it (*Matrix Representations Conventions*, §*The Bridge to the $4\times4$ Displays*). So no left multiplication carries one value into the other. Read with its letters as the two values, the pair as printed has **no nonzero solution at all**: the first line would equate a value-$R$ element to a value-$L$ one, and the two halves meet only at zero. Read as a factorisation it is exact — in momentum space the second part is the first multiplied on the left, $\tilde{Ξ}_{\mathrm{sp},L}=\frac{i}{k_m}\tilde{K}_{\Phi}\tilde{Ξ}_{\mathrm{sp},R}$, and $\tilde\nabla^{\natural}\tilde\nabla=\Box$ carries the second-order equation — and in that reading the two letters name the two **factors** and not the two values, which is how the mathematical article that supplies the factorisation uses them (*The First Order Root of the Biquaternion d'Alembertian*). What does exchange the two values is a right multiplication by a unit $i\vec v$ with $\vec v$ perpendicular to the axis, or the coefficient conjugation, and the side on which it acts is the side of the **mass** and never of the derivative: a left multiplier keeps every value, so a derivative term can carry the field out of its part only by ceasing to be a multiplication by an element (*Operator Chirality on the Biquaternion Algebra*, §*What Operator Chirality Is Not*; *Spinors and Dirac Spinors in the Biquaternion Algebra*, §*What Carries One Part to the Other*). A right multiplication by a unit that commutes with the axis — the time unit or the axis unit itself — is a different object again: it acts inside one value, leaves the letter alone, and carries a direction. That is why the two-sided form of *An Explicit Dictionary with Conjugation in the Mass Term* needs the coefficient bar beside the direction, and neither of the two alone.
+
+**The two letters, in the two readings.** Written with the exchange on the right, the pair reads
+$$
+\tilde\nabla\tilde{Ξ}_{\mathrm{sp},R}=k_m\,\tilde{Ξ}_{\mathrm{sp},L}\,i\vec v,
+\qquad
+\tilde\nabla^{\natural}\tilde{Ξ}_{\mathrm{sp},L}=k_m\,\tilde{Ξ}_{\mathrm{sp},R}\,i\vec v,
+$$
+with $\vec v$ a unit real vector perpendicular to the declared axis. Each line then lands inside one value on both sides, the mass carries the exchange, and the square is unchanged because $(i\vec v)^{2}=+1$: applying $\tilde\nabla^{\natural}$ to the first line returns $\Box\tilde{Ξ}_{\mathrm{sp},R}=k_m^{2}\tilde{Ξ}_{\mathrm{sp},R}$. This is the display in which the letters name the two values, and it is the display the two mathematical articles describe; the pair boxed in §*Statement* is the same equation with the right factor left implicit, and a reader who takes its letters for values finds the two halves meeting at zero.
 
 **A remark on the anti-Hermitian conjugation $\flat$.** The algebra carries, besides the quaternion conjugate and the Hermitian conjugation ${}^{*}$, a further antilinear involution:
 
@@ -473,7 +481,7 @@ $$
 \tilde{Ξ}_{\mathrm{sp}}(\tilde R_\Phi) = \tilde{Ξ}_{\mathrm{sp},0} \exp\!\left(i\,\mathrm{Sc}\!\left(\tilde{K}_{\Phi}\tilde{R}_\Phi^{\natural}\right)\right) = \tilde{Ξ}_{\mathrm{sp},0}\,\exp(i\theta), \qquad \theta = \vec k_\Phi\cdot(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z) - k_{t}^{\prime} r'_t,
 $$
 
-does solve the pair, with one polarization biquaternion per value, $\tilde{Ξ}_{\mathrm{sp},0} = \tilde{Ξ}_{\mathrm{sp},0}^L + \tilde{Ξ}_{\mathrm{sp},0}^R$. Differentiating as in the massless case, $\tilde{\nabla}$ acts on $\exp(i\theta)$ as left multiplication by $i\tilde{K}_{\Phi}$ and $\tilde{\nabla}^{\natural}$ as left multiplication by $i\tilde{K}_{\Phi}^{\natural}$, so the chiral pair becomes the momentum-space system
+does solve the pair, with one polarization biquaternion for each part, $\tilde{Ξ}_{\mathrm{sp},0} = \tilde{Ξ}_{\mathrm{sp},0}^L + \tilde{Ξ}_{\mathrm{sp},0}^R$. Differentiating as in the massless case, $\tilde{\nabla}$ acts on $\exp(i\theta)$ as left multiplication by $i\tilde{K}_{\Phi}$ and $\tilde{\nabla}^{\natural}$ as left multiplication by $i\tilde{K}_{\Phi}^{\natural}$, so the chiral pair becomes the momentum-space system
 
 $$
 i\tilde{K}_{\Phi}\,\tilde{Ξ}_{\mathrm{sp},0}^{R}= k_m\,\tilde{Ξ}_{\mathrm{sp},0}^L,
