@@ -16,7 +16,7 @@ The findings are stated in advance.
 4. **The Wigner rotation is the curvature of the boost connection.** Its angle is the hyperbolic area of the geodesic triangle whose sides are the three rapidities of the loop; the Euclidean area $\tfrac12 ab$ is the leading term, and the correction is $-\tfrac{1}{24}ab(a^2+b^2)$.
 5. **The light cone is the boundary at infinity.** It is at infinite geodesic distance from every velocity while the velocity itself is bounded by $c$: the rapidity is unbounded where the velocity is bounded, and that is the geometric statement that no finite number of boosts reaches $c$.
 
-The notation is that of the foundational articles: the algebra, the units, the sectors, the material coordinate $Q_t=i c r'_t$ and the biquaternion norm are those of *Algebra and Element Conventions*, *Physics Units and Most Common Elements* and *Norm and Pairing Conventions*, and none is restated here. The four-velocity is
+The notation is that of the foundational articles: the algebra, the units, the sectors, the material coordinate $Q_t=i c r'_t$ and the biquaternion norm are those of *Algebra and Element Conventions*, *Physics Units and Most Common Elements Conventions* and *Norm and Pairing Conventions*, and none is restated here. The four-velocity is
 $$
 \tilde{V} = \gamma(ic\,e_t+\vec v),\qquad \langle\tilde{V}\rangle_{\natural} = -c^2,\qquad \gamma = \Bigl(1-\frac{\vec v^2}{c^2}\Bigr)^{-1/2},
 $$

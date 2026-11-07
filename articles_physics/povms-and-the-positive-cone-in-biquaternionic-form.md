@@ -161,21 +161,21 @@ The outcome probability is $p_y=\mathrm{Sc}(\tilde{K}_y\tilde{Ϛ}\tilde{K}_y^{*}
 The Kraus form has a polar reading. Write each Kraus operator as
 
 $$
-\tilde K_y=\tilde R_\Psi_{\mathrm{pos},y}\tilde Q_{\mathrm{p},y},
+\tilde M_{\mathrm{kraus},y}=\tilde R_\Psi_{\mathrm{pos},y}\tilde Q_{\mathrm{p},y},
 \qquad
-\tilde R_\Psi_{\mathrm{pos},y}=\sqrt{\tilde K_y\tilde K_y^{*}},
+\tilde R_\Psi_{\mathrm{pos},y}=\sqrt{\tilde M_{\mathrm{kraus},y}\tilde M_{\mathrm{kraus},y}^{*}},
 $$
 
 with $\tilde R_\Psi_{\mathrm{pos},y}$ Hermitian positive semidefinite and $\tilde Q_{\mathrm{p},y}$ a partial isometry. Then
 
 $$
-\tilde E_y=\tilde K_y^{*}\tilde K_y
+\tilde E_y=\tilde M_{\mathrm{kraus},y}^{*}\tilde M_{\mathrm{kraus},y}
 =\tilde Q_{\mathrm{p},y}^{*}\tilde R_\Psi_{\mathrm{pos},y}^{2}\tilde Q_{\mathrm{p},y}.
 $$
 
-The effect is the squared strength conjugated by the backaction. Its eigenvalues are the squares of the singular values of $\tilde K_y$. For an invertible amplitude in the Cartan word $r e^{i\alpha}\tilde U_{\mathrm b}\tilde u_{\mathrm r}$, the singular values are $r e^{\pm\theta_{\mathrm{rpd},w}/2}$, so the effect has eigenvalues $r^{2}e^{\pm\theta_{\mathrm{rpd},w}}$: the scale and the rapidity survive and the angles drop out. The effect therefore sees the strength but not the backaction: $\tilde K_y$ and $\tilde W\tilde K_y$ with $\tilde W$ $*$-unitary have the same effect and different polar factors.
+The effect is the squared strength conjugated by the backaction. Its eigenvalues are the squares of the singular values of $\tilde M_{\mathrm{kraus},y}$. For an invertible amplitude in the Cartan word $r e^{i\alpha}\tilde U_{\mathrm b}\tilde u_{\mathrm r}$, the singular values are $r e^{\pm\theta_{\mathrm{rpd},w}/2}$, so the effect has eigenvalues $r^{2}e^{\pm\theta_{\mathrm{rpd},w}}$: the scale and the rapidity survive and the angles drop out. The effect therefore sees the strength but not the backaction: $\tilde M_{\mathrm{kraus},y}$ and $\tilde W\tilde M_{\mathrm{kraus},y}$ with $\tilde W$ $*$-unitary have the same effect and different polar factors.
 
-The strata are the strata of the effect body. A **sharp** effect is $\tilde E_y=\tilde\Pi$; then $\tilde K_y=\tilde\Pi$, $\tilde R_\Psi_{\mathrm{pos},y}=\tilde\Pi$ and $\tilde Q_{\mathrm{p},y}=\tilde\Pi$, and the amplitude is a zero divisor on the null cone. A **soft rank-one** effect is $\tilde E_y=\lambda\tilde\Pi$ with $0<\lambda<1$; then $\tilde K_y=\sqrt{\lambda}\,\tilde\Pi$, $\tilde R_\Psi_{\mathrm{pos},y}=\sqrt{\lambda}\,\tilde\Pi$ and $\tilde Q_{\mathrm{p},y}=\tilde\Pi$, and the amplitude is again null, although the effect is on the boundary of the cone and not at an extreme point. A **full-rank** effect is $\tilde E_y>0$; then $\tilde K_y$ is invertible, $\tilde R_\Psi_{\mathrm{pos},y}$ is positive definite, $\tilde Q_{\mathrm{p},y}$ is $*$-unitary, and the effect lies in the interior of the effect body. The extreme points of the body are $0$, $e_t$ and the rank-one projectors; the polar form reaches the interior through invertible amplitudes. The null cone of the amplitude is therefore the rank-one boundary of the effect cone, not only the sharp set. The companion article *The Polar Decomposition of a Kraus Operator* works the examples and gives the measurement reading.
+The strata are the strata of the effect body. A **sharp** effect is $\tilde E_y=\tilde\Pi$; then $\tilde M_{\mathrm{kraus},y}=\tilde\Pi$, $\tilde R_\Psi_{\mathrm{pos},y}=\tilde\Pi$ and $\tilde Q_{\mathrm{p},y}=\tilde\Pi$, and the amplitude is a zero divisor on the null cone. A **soft rank-one** effect is $\tilde E_y=\lambda\tilde\Pi$ with $0<\lambda<1$; then $\tilde M_{\mathrm{kraus},y}=\sqrt{\lambda}\,\tilde\Pi$, $\tilde R_\Psi_{\mathrm{pos},y}=\sqrt{\lambda}\,\tilde\Pi$ and $\tilde Q_{\mathrm{p},y}=\tilde\Pi$, and the amplitude is again null, although the effect is on the boundary of the cone and not at an extreme point. A **full-rank** effect is $\tilde E_y>0$; then $\tilde M_{\mathrm{kraus},y}$ is invertible, $\tilde R_\Psi_{\mathrm{pos},y}$ is positive definite, $\tilde Q_{\mathrm{p},y}$ is $*$-unitary, and the effect lies in the interior of the effect body. The extreme points of the body are $0$, $e_t$ and the rank-one projectors; the polar form reaches the interior through invertible amplitudes. The null cone of the amplitude is therefore the rank-one boundary of the effect cone, not only the sharp set. The companion article *The Polar Decomposition of a Kraus Operator* works the examples and gives the measurement reading.
 
 ### Naimark dilation
 
@@ -300,7 +300,7 @@ and the cone is self-dual with respect to the Hermitian form, $2\langle\tilde R_
 | $\{\tilde{E}_y\}$, $\tilde{E}_y\ge0$, $\sum_y\tilde{E}_y = e_t$ | POVM |
 | $p_y = 2\langle\tilde{Ϛ},\tilde{E}_y\rangle_{*}$ | Born rule for a POVM; $2\times2$ reading $\operatorname{Tr}(\tilde{Ϛ}\tilde{E}_y^{*})$ |
 | $\tilde{E}_y = \tilde{K}_y^{*}\tilde{K}_y$ | Kraus form of an effect |
-| $\tilde K_y=\tilde R_\Psi_{\mathrm{pos},y}\tilde Q_{\mathrm{p},y}$, $\tilde R_\Psi_{\mathrm{pos},y}=\sqrt{\tilde K_y\tilde K_y^{*}}$ | Polar form of the Kraus operator; $\tilde R_\Psi_{\mathrm{pos},y}\ge0$, $\tilde Q_{\mathrm{p},y}$ a partial isometry |
+| $\tilde M_{\mathrm{kraus},y}=\tilde R_\Psi_{\mathrm{pos},y}\tilde Q_{\mathrm{p},y}$, $\tilde R_\Psi_{\mathrm{pos},y}=\sqrt{\tilde M_{\mathrm{kraus},y}\tilde M_{\mathrm{kraus},y}^{*}}$ | Polar form of the Kraus operator; $\tilde R_\Psi_{\mathrm{pos},y}\ge0$, $\tilde Q_{\mathrm{p},y}$ a partial isometry |
 | $\tilde E_y=\tilde Q_{\mathrm{p},y}^{*}\tilde R_\Psi_{\mathrm{pos},y}^{2}\tilde Q_{\mathrm{p},y}$ | Effect as the backaction-conjugated squared strength |
 | $\tilde{Ϛ}_y = \tilde{K}_y\tilde{Ϛ}\tilde{K}_y^{*}/p_y$ | Post-measurement state |
 | $\tilde{E}_y = V^\dagger\tilde{F}_yV$ | Naimark dilation |

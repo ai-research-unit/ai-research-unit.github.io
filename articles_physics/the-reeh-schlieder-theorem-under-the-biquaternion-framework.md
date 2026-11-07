@@ -130,9 +130,9 @@ $$
 $$
 and the cyclic vector $\Omega_{\tilde{Ϛ}}=[e_t]$ is separating as well. The Tomita–Takesaki theorem therefore applies in finite dimension, and the framework has an exact model of the Reeh–Schlieder hypothesis in which the distinguished vector is the GNS vector of a **mixed** state. The modular data are those of the modular-theory companion article, written for the state:
 $$
-\Delta\big(\tilde Q_3\big)=e^{-\tilde K_{\mathrm{mod}}}\,\tilde Q_3\,e^{\tilde K_{\mathrm{mod}}},
+\Delta\big(\tilde Q_3\big)=e^{-\tilde H_{\mathrm{modular}}}\,\tilde Q_3\,e^{\tilde H_{\mathrm{modular}}},
 \qquad
-J\big(\tilde Q_3\big)=e^{-\tilde K_{\mathrm{mod}}/2}\tilde Q_3^{*}e^{\tilde K_{\mathrm{mod}}/2},
+J\big(\tilde Q_3\big)=e^{-\tilde H_{\mathrm{modular}}/2}\tilde Q_3^{*}e^{\tilde H_{\mathrm{modular}}/2},
 \qquad
 \Delta=S^*S,
 $$

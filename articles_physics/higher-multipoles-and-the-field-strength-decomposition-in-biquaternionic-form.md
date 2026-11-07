@@ -25,7 +25,7 @@ The conventions are those of the companion articles:
 - Companion article *Radiation from Accelerated Charges in Biquaternionic Form*, for the retarded solution and the radiation field.
 - Companion article *The Spinor Representation of the Lorentz Group in Biquaternionic Form*, for the two complex three-dimensional representations of the Lorentz group.
 
-Throughout, the algebra, the units, the sectors, the gradient, the d'Alembertian and the speed of light are those of *Algebra and Element Conventions*, *Physics Units and Most Common Elements* and *Operator and Calculus Conventions*, and none is restated here. The irreducible rotation representation of dimension $2l+1$ is $D^{(l)}$; the electric and magnetic multipoles of order $l$ are written $E_l$ and $M_l$.
+Throughout, the algebra, the units, the sectors, the gradient, the d'Alembertian and the speed of light are those of *Algebra and Element Conventions*, *Physics Units and Most Common Elements Conventions* and *Operator and Calculus Conventions*, and none is restated here. The irreducible rotation representation of dimension $2l+1$ is $D^{(l)}$; the electric and magnetic multipoles of order $l$ are written $E_l$ and $M_l$.
 
 ## The Multipole Series of a Localised Source
 

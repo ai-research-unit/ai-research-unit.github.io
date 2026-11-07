@@ -32,7 +32,7 @@ Tomita's theorem states that $\sigma_{r'_{t}}$ maps $M$ to itself for every $r'_
 $$
 \tilde{K}_{\mathrm{mod}}=-\log\tilde{Ϛ}\ \in\mathbb{B}_{\Psi},
 $$
-so that $\sigma_{r'_{t}}(\tilde Q_2)=\exp(-ir'_t\tilde{K}_{\mathrm{mod}})\tilde Q_2\,\exp(ir'_t\tilde{K}_{\mathrm{mod}})$ and the modular operator acts as $\Delta(\tilde Q_2)=e^{-\tilde K_{\mathrm{mod}}}\tilde Q_2\,e^{\tilde K_{\mathrm{mod}}}$.
+so that $\sigma_{r'_{t}}(\tilde Q_2)=\exp(-ir'_t\tilde{K}_{\mathrm{mod}})\tilde Q_2\,\exp(ir'_t\tilde{K}_{\mathrm{mod}})$ and the modular operator acts as $\Delta(\tilde Q_2)=e^{-\tilde H_{\mathrm{modular}}}\tilde Q_2\,e^{\tilde H_{\mathrm{modular}}}$.
 
 Three properties of the flow are used below.
 

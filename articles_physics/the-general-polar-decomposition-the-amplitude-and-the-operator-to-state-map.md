@@ -24,7 +24,7 @@ The conventions are those of *Algebra and Element Conventions*. The algebra is $
 | the rank-one case and the partial isometry on the null cone | [*The Polar Decomposition of a Biquaternion*](../articles_maths/the-polar-decomposition-of-a-biquaternion.html), §*The Isometry Factor*, §*Examples* | the cone case of the same general pair |
 | the state space, the Bloch ball and the Born rule | [*Quantum Physics in Biquaternionic Form*](quantum-physics-in-biquaternionic-form.html), §*States* | the normalisation and the trace-one condition |
 | the trace reading of the Born weight | [*The Born Rule from the Hermitian Form — Derivation and Comparison*](the-born-rule-from-the-hermitian-form-derivation-and-comparison.html), §*The Trace Reading and Normalisation* | $\operatorname{Tr}(\tilde Q\tilde Q^{*})=2\langle\tilde Q,\tilde Q\rangle_{*}$ |
-| the modular Hamiltonian of a faithful state | [*The Modular Hamiltonian in Biquaternionic Form*](the-modular-hamiltonian-in-biquaternionic-form.html), §*Definition from the Modular Operator* | $\tilde K_{\mathrm{mod}}=-\ln\tilde{Ϛ}$ |
+| the modular Hamiltonian of a faithful state | [*The Modular Hamiltonian in Biquaternionic Form*](the-modular-hamiltonian-in-biquaternionic-form.html), §*Definition from the Modular Operator* | $\tilde H_{\mathrm{modular}}=-\ln\tilde{Ϛ}$ |
 
 ## The Map
 
@@ -143,7 +143,7 @@ which is the right polar decomposition. Written in the same left form as $\tilde
 For a faithful state, $\tilde{Ϛ}_Q>0$, the modular Hamiltonian is defined by
 
 $$
-\tilde K_{\mathrm{mod}}=-\ln\tilde{Ϛ}_Q=-2\ln\tilde Q_{\mathrm n}
+\tilde H_{\mathrm{modular}}=-\ln\tilde{Ϛ}_Q=-2\ln\tilde Q_{\mathrm n}
 =-2\ln\tilde Q_H+\ln\!\bigl(2\langle\tilde Q_H,\tilde Q_H\rangle_{*}\bigr)e_t .
 $$
 
@@ -160,14 +160,14 @@ The map is not an extra structure added to the theory; it is the common form of 
 
 | object | operator | state it defines | article |
 |---|---|---|---|
-| measurement outcome | Kraus operator $\tilde K_y$ | $\tilde K_y\tilde{Ϛ}\tilde K_y^{*}/p_y$ | [*The Polar Decomposition of a Kraus Operator: Effect, Backaction and the Measurement Boundary*](the-polar-decomposition-of-a-kraus-operator-effect-backaction-and-the-measurement-boundary.html) |
+| measurement outcome | Kraus operator $\tilde M_{\mathrm{kraus},y}$ | $\tilde M_{\mathrm{kraus},y}\tilde{Ϛ}\tilde M_{\mathrm{kraus},y}^{*}/p_y$ | [*The Polar Decomposition of a Kraus Operator: Effect, Backaction and the Measurement Boundary*](the-polar-decomposition-of-a-kraus-operator-effect-backaction-and-the-measurement-boundary.html) |
 | polarization | Jones matrix $\tilde J$ | the normalized $\tilde J\tilde J^{*}$, the output coherency | [*Pancharatnam's Phase and the Polarization Sphere in Biquaternionic Form*](pancharatnams-phase-and-the-polarization-sphere-in-biquaternionic-form.html) |
 | scattering | S-matrix element $\tilde S$ | the normalized $\tilde S\tilde S^{*}$ | [*The S-Matrix in Biquaternionic Form*](the-s-matrix-in-biquaternionic-form.html) |
 | field | field strength $\tilde F$ | the normalized $\tilde F\tilde F^{*}$; for a null field, an energy–momentum direction | [*The Field-Strength Biquaternion and Its Invariants*](the-field-strength-biquaternion-and-its-invariants.html) |
 
 In each row the map is the same and the physical name of the state is different. The measurement row adds a conditioning on the initial state; the polarization row reads the state as a coherency matrix; the scattering row reads it as the state produced by an interaction; the field row reads it as the field's state, which for a null field is an energy–momentum direction. The unity is algebraic, and the differences are in the interpretation of the operator.
 
-One caution about the measurement row. The map of this article takes an operator to a state without an input. The post-measurement state of an instrument takes an operator and an input state, $\tilde{Ϛ}\mapsto\tilde K\tilde{Ϛ}\tilde K^{*}/p$. The two coincide only when the input is the maximally mixed state, $\tilde{Ϛ}=\tfrac12 e_t$, in which case the output is proportional to $\tilde K\tilde K^{*}$. The operator-to-state map is the input-free shadow of the instrument, not the instrument itself.
+One caution about the measurement row. The map of this article takes an operator to a state without an input. The post-measurement state of an instrument takes an operator and an input state, $\tilde{Ϛ}\mapsto\tilde M_{\mathrm{kraus}}\tilde{Ϛ}\tilde M_{\mathrm{kraus}}^{*}/p$. The two coincide only when the input is the maximally mixed state, $\tilde{Ϛ}=\tfrac12 e_t$, in which case the output is proportional to $\tilde M_{\mathrm{kraus}}\tilde M_{\mathrm{kraus}}^{*}$. The operator-to-state map is the input-free shadow of the instrument, not the instrument itself.
 
 ## The Name of the Map
 
@@ -223,7 +223,7 @@ Read as a whole, the table is a dictionary between the algebra's rank stratigrap
 | $p_i=\sigma_i^{2}/(\sigma_1^{2}+\sigma_2^{2})$ | the state's eigenvalues |
 | $\operatorname{Tr}\tilde{Ϛ}_Q^{2}$ | the purity, between $\tfrac12$ and $1$ |
 | $\tilde Q_0=\tilde Q_H^{+}\tilde Q$ | the $*$-unitary phase off the cone, the partial isometry on it; the phase coordinate along the fibre |
-| $\tilde K_{\mathrm{mod}}=-\ln\tilde{Ϛ}_Q$ | the modular Hamiltonian of a faithful state |
+| $\tilde H_{\mathrm{modular}}=-\ln\tilde{Ϛ}_Q$ | the modular Hamiltonian of a faithful state |
 | $\operatorname{Tr}\tilde Q=2\operatorname{Sc}\tilde Q=2Q_t$ | the trace |
 | $\langle\tilde Q_1,\tilde Q_2\rangle_{*}=\mathrm{Sc}(\tilde Q_1\tilde Q_2^{*})$ | the Hermitian form |
 

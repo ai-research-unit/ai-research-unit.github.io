@@ -236,7 +236,7 @@ Three properties fix the map. It is **right-invariant**, $(\tilde Q\tilde W)(\ti
 
 The direction is the one that is easy to get backwards: the reversible operators produce the least informative state, and the zero divisors produce the pure states. The reason is that the map keeps the ratios of the singular values and discards the $*$-unitary factor and the overall scale; a reversible operator has equal singular values, so its image carries no information beyond the normalisation.
 
-**The boundary.** The map takes an operator to a state without an input. A measurement instrument takes an operator and an input state, $\tilde{Ϛ}\mapsto\tilde K\tilde{Ϛ}\tilde K^{*}/p$, and the two coincide only when the input is $\tfrac12e_t$. The operator-to-state map is therefore the input-free shadow of the instrument, not the instrument, and it neither selects an outcome nor supplies a dynamics. It is developed in *The General Polar Decomposition, the Amplitude and the Operator-to-State Map*.
+**The boundary.** The map takes an operator to a state without an input. A measurement instrument takes an operator and an input state, $\tilde{Ϛ}\mapsto\tilde M_{\mathrm{kraus}}\tilde{Ϛ}\tilde M_{\mathrm{kraus}}^{*}/p$, and the two coincide only when the input is $\tfrac12e_t$. The operator-to-state map is therefore the input-free shadow of the instrument, not the instrument, and it neither selects an outcome nor supplies a dynamics. It is developed in *The General Polar Decomposition, the Amplitude and the Operator-to-State Map*.
 
 ### The Spectral Decomposition Is the Readout
 

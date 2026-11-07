@@ -30,7 +30,7 @@ Let $\sigma$ be a faithful state of a von Neumann algebra $M$, with modular oper
 $$
 K_\sigma=-\log\Delta_\sigma,
 $$
-a self-adjoint (generally unbounded) operator affiliated with $M$, so that the modular flow of the preceding article is formally $\sigma_{r'_{t}}(\tilde Q_1)=\exp(-it'K_\sigma)\tilde Q_1 \exp(it'K_\sigma)$. In finite dimension, with $\Delta_\sigma$ acting as $e^{-\tilde K_\sigma}\,\cdot\,e^{\tilde K_\sigma}$ and $\sigma$ a density matrix,
+a self-adjoint (generally unbounded) operator affiliated with $M$, so that the modular flow of the preceding article is formally $\sigma_{r'_{t}}(\tilde Q_1)=\exp(-it'K_\sigma)\tilde Q_1 \exp(it'K_\sigma)$. In finite dimension, with $\Delta_\sigma$ acting as $e^{-\tilde H_{\mathrm{modular},\sigma}}\,\cdot\,e^{\tilde H_{\mathrm{modular},\sigma}}$ and $\sigma$ a density matrix,
 $$
 K_\sigma=-\log\sigma,
 $$
@@ -133,12 +133,12 @@ The scaling was checked further at a step of $10^{-4}$, where $\delta S-\delta\l
 The deficit in the exact identity has its own operator, and it is the one introduced in the relative-entropy companion article. On the algebra the relative modular operator of two states is
 $$
 \Delta_{\tilde{Ϛ},\tilde{Ϛ}_0}\big(\tilde Q_1\big)
-=e^{-\tilde K_{\mathrm{mod}}}\,\tilde Q_1\,e^{\tilde K_{\mathrm{mod},0}},
+=e^{-\tilde H_{\mathrm{modular}}}\,\tilde Q_1\,e^{\tilde H_{\mathrm{modular},0}},
 \qquad
 \log\Delta_{\tilde{Ϛ},\tilde{Ϛ}_0}\big(\tilde Q_1\big)
 =\log\tilde{Ϛ}\,\tilde Q_1-\tilde Q_1\log\tilde{Ϛ}_0,
 $$
-with $\tilde K_{\mathrm{mod}}=-\log\tilde{Ϛ}$ and $\tilde K_{\mathrm{mod},0}=-\log\tilde{Ϛ}_0$ the two modular Hamiltonians, and with relative modular Hamiltonian $K_{\tilde{Ϛ},\tilde{Ϛ}_0}=-\log\Delta_{\tilde{Ϛ},\tilde{Ϛ}_0}$. Evaluated on the GNS vector $\Omega_{\tilde{Ϛ}}=\tilde{Ϛ}^{1/2}$, the logarithm of the relative modular operator has expectation the relative entropy,
+with $\tilde H_{\mathrm{modular}}=-\log\tilde{Ϛ}$ and $\tilde H_{\mathrm{modular},0}=-\log\tilde{Ϛ}_0$ the two modular Hamiltonians, and with relative modular Hamiltonian $K_{\tilde{Ϛ},\tilde{Ϛ}_0}=-\log\Delta_{\tilde{Ϛ},\tilde{Ϛ}_0}$. Evaluated on the GNS vector $\Omega_{\tilde{Ϛ}}=\tilde{Ϛ}^{1/2}$, the logarithm of the relative modular operator has expectation the relative entropy,
 $$
 S(\tilde{Ϛ}\|\tilde{Ϛ}_0)
 =\big\langle\Omega_{\tilde{Ϛ}},\log\Delta_{\tilde{Ϛ},\tilde{Ϛ}_0}\Omega_{\tilde{Ϛ}}\big\rangle,
