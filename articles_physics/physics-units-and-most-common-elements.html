@@ -1,0 +1,837 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Physics Units and Most Common Elements — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="physics-units-and-most-common-elements"><strong>Physics Units and Most Common Elements</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>This article collects two catalogues, and they answer two different questions. The first fixes the physical units: the five dimensions of the corpus, the two tables of quantities, and the two writings of the temporal slot. The second fixes the glyphs a reader meets in every article: the tilde-marked elements, with their role, their formula, their space and their meaning.</p>
+<p>The units belong to no element of the algebra. They enter where an element is identified with a physical quantity, and the identification is a convention of the article that makes it. The elements are algebraic, and their glyphs are fixed by <em>Algebra and Element Conventions</em>.</p>
+<p>The article assumes the base of <em>Algebra and Element Conventions</em> and the marks of <em>Index and Notation Conventions</em>. It states conventions only. The proofs and the physical interpretations of the objects it names belong to the articles cited beside them.</p>
+<h2 id="physical-units">Physical Units</h2>
+<p><strong>A unit element is not a physical unit.</strong> The base $e_t,\vec e_x,\vec e_y,\vec e_z$ of <em>Algebra and Element Conventions</em>, §<em>The Base and Its Units</em> is algebraic: its structure constants are $0$ or $\pm1$, and the biquaternion norm is a sum of four squares of coefficients. No element of $\mathbb{B}$ carries a metre, a second or a kilogram. A physical unit enters only where an element is <strong>identified</strong> with a physical quantity, and that identification is a convention of the article that makes it, not a property of the algebra. The phrase <em>unit element</em> names a basis element and <em>physical unit</em> names a convention of measurement; the two are never exchanged. The word <em>base</em> carries both senses in this article, and the context decides: the base of the algebra is the four elements, and a base unit is a unit of the SI.</p>
+<p><strong>The series uses the SI.</strong> Length is measured in metres, time in seconds, mass in kilograms, temperature in kelvin and charge in coulomb. Four of the five are base units of the SI. The coulomb is not: the base unit of current is the ampere, and the coulomb is $\mathrm{C}=\mathrm{A\,s}$.</p>
+<p><strong>The word <em>fundamental</em> has four senses, and the corpus uses the first.</strong> A quantity can be called fundamental because its dimension is independent, because its unit is a base unit of the SI, because its defining constant is fixed exactly, or because nature supplies it. The four do not agree. The SI has seven base units — metre, second, kilogram, ampere, kelvin, mole, candela — and since 2019 it fixes seven constants: the caesium-133 hyperfine frequency $\Delta\nu_{\mathrm{Cs}}$, the speed of light $c$, the Planck constant $h$, the elementary charge $e$, the Boltzmann constant $k_B$, the Avogadro constant $N_A$ and the luminous efficacy $K_{\mathrm{cd}}$. Every unit, base or not, is realised from those seven. A base unit is therefore a bookkeeping choice, and no unit is fundamental in the sense that nature supplies it. The corpus uses the first sense: a quantity is fundamental when its dimension is one of the five, and any other dimension is a product of powers of them.</p>
+<p><strong>The dimension letters stand only in these tables.</strong> The corpus writes a dimension in upright roman — $\mathrm{L}$ for length, $\mathrm{T}$ for time, $\mathrm{M}$ for mass, $\Theta$ for temperature and $\mathrm{Q}$ for charge — and a derived dimension as a product of powers, $\mathrm{M}\,\mathrm{L}^{2}\,\mathrm{T}^{-2}$. Three of the five letters already carry another meaning: $\mathsf M_2$ is the matrix map, $\mathsf T_{\mu\nu}$ the energy–momentum tensor, and $\Theta$ the complex angle of <em>Algebra and Element Conventions</em>. A dimension letter therefore stands only in the two tables below, and never in an expression.</p>
+<p><strong>The corpus keeps charge as an independent dimension with a derived unit.</strong> The corpus writes charge and not current, so $\mathrm{Q}$ stays a fifth dimension, independent of the other four, while its unit is built from the ampere. The mole and the candela are not used, and current never appears as a base quantity of its own.</p>
+<p>The five fundamental quantities are these.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Quantity</th>
+<th>Symbol in the corpus</th>
+<th>Dimension</th>
+<th>Unit</th>
+<th>How the unit is realised</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Length</td>
+<td>$r_x,r_y,r_z$; $i c r'_t$ in the length coordinate</td>
+<td>$\mathrm{L}$</td>
+<td>metre ($\mathrm{m}$)</td>
+<td>$c=299\,792\,458\ \mathrm{m\,s^{-1}}$, exact</td>
+</tr>
+<tr>
+<td>Time</td>
+<td>$r'_t$ in the time coordinate</td>
+<td>$\mathrm{T}$</td>
+<td>second ($\mathrm{s}$)</td>
+<td>$\Delta\nu_{\mathrm{Cs}}=9\,192\,631\,770\ \mathrm{Hz}$, exact</td>
+</tr>
+<tr>
+<td>Mass</td>
+<td>$m$</td>
+<td>$\mathrm{M}$</td>
+<td>kilogram ($\mathrm{kg}$)</td>
+<td>$h=6.626\,070\,15\times10^{-34}\ \mathrm{J\,s}$, exact</td>
+</tr>
+<tr>
+<td>Temperature</td>
+<td>$T$</td>
+<td>$\Theta$</td>
+<td>kelvin ($\mathrm{K}$)</td>
+<td>$k_B=1.380\,649\times10^{-23}\ \mathrm{J\,K^{-1}}$, exact</td>
+</tr>
+<tr>
+<td>Electric charge</td>
+<td>$ϙ$</td>
+<td>$\mathrm{Q}$</td>
+<td>coulomb ($\mathrm{C}$)</td>
+<td>$e=1.602\,176\,634\times10^{-19}\ \mathrm{C}$, exact; the coulomb is $\mathrm{A\,s}$</td>
+</tr>
+</tbody>
+</table></div>
+<p>Everything else follows from them. The second table carries the rest of what the articles use, with a status on each row: <em>derived</em> means the unit is a product of base units; <em>defining</em> means the SI fixes the constant exactly and realises a unit from it; <em>measured</em> means the value is measured; <em>pure number</em> means the quantity has no unit at all.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Quantity</th>
+<th>Symbol in the corpus</th>
+<th>Dimension</th>
+<th>Unit</th>
+<th>Status</th>
+<th>Note</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Speed</td>
+<td>$c$, $c_0$</td>
+<td>$\mathrm{L}\,\mathrm{T}^{-1}$</td>
+<td>$\mathrm{m\,s^{-1}}$</td>
+<td>defining</td>
+<td>exact; the conversion of the temporal slot</td>
+</tr>
+<tr>
+<td>Momentum</td>
+<td>$\vec p$</td>
+<td>$\mathrm{M}\,\mathrm{L}\,\mathrm{T}^{-1}$</td>
+<td>$\mathrm{kg\,m\,s^{-1}}$</td>
+<td>derived</td>
+<td>quoted in $\mathrm{MeV}/c$</td>
+</tr>
+<tr>
+<td>Force</td>
+<td>$\tilde K_{\mathrm f}$</td>
+<td>$\mathrm{M}\,\mathrm{L}\,\mathrm{T}^{-2}$</td>
+<td>newton ($\mathrm{N}$)</td>
+<td>derived</td>
+<td>$\mathrm{kg\,m\,s^{-2}}$; four-force per particle</td>
+</tr>
+<tr>
+<td>Energy</td>
+<td>$E$</td>
+<td>$\mathrm{M}\,\mathrm{L}^{2}\,\mathrm{T}^{-2}$</td>
+<td>joule ($\mathrm{J}$)</td>
+<td>derived</td>
+<td>$\mathrm{kg\,m^2\,s^{-2}}$; quoted in $\mathrm{eV}$</td>
+</tr>
+<tr>
+<td>Action, angular momentum, spin</td>
+<td>$S$, $S_0$, $\vec L$, $\tilde S_k$</td>
+<td>$\mathrm{M}\,\mathrm{L}^{2}\,\mathrm{T}^{-1}$</td>
+<td>joule-second ($\mathrm{J\,s}$)</td>
+<td>derived</td>
+<td>$\mathrm{kg\,m^2\,s^{-1}}$; see the caution on $S$</td>
+</tr>
+<tr>
+<td>Entropy</td>
+<td>$S$</td>
+<td>$\mathrm{M}\,\mathrm{L}^{2}\,\mathrm{T}^{-2}\,\Theta^{-1}$</td>
+<td>$\mathrm{J\,K^{-1}}$</td>
+<td>derived</td>
+<td>the Bekenstein–Hawking value is $A/4$ in Planck units; see the caution on $S$</td>
+</tr>
+<tr>
+<td>Four-potential</td>
+<td>$\tilde A$, components $a'_t$ and $\vec A$</td>
+<td>$\mathrm{M}\,\mathrm{L}\,\mathrm{T}^{-1}\,\mathrm{Q}^{-1}$</td>
+<td>$\mathrm{V\,s\,m^{-1}}$</td>
+<td>derived</td>
+<td>$a'_t$ is in the unit of $\vec A$, so the four coefficients share one unit</td>
+</tr>
+<tr>
+<td>Electric field</td>
+<td>$\vec E$</td>
+<td>$\mathrm{M}\,\mathrm{L}\,\mathrm{T}^{-2}\,\mathrm{Q}^{-1}$</td>
+<td>$\mathrm{V\,m^{-1}}$</td>
+<td>derived</td>
+<td>$\mathrm{kg\,m\,s^{-3}\,A^{-1}}$</td>
+</tr>
+<tr>
+<td>Magnetic field strength</td>
+<td>$\vec H$</td>
+<td>$\mathrm{Q}\,\mathrm{L}^{-1}\,\mathrm{T}^{-1}$</td>
+<td>$\mathrm{A\,m^{-1}}$</td>
+<td>derived</td>
+<td>the flux density is $\vec B=\mu\vec H$ in tesla</td>
+</tr>
+<tr>
+<td>Current density</td>
+<td>$\vec J$, four-current $\tilde J$</td>
+<td>$\mathrm{Q}\,\mathrm{L}^{-2}\,\mathrm{T}^{-1}$</td>
+<td>$\mathrm{A\,m^{-2}}$</td>
+<td>derived</td>
+<td>$\tilde J=i c\rho\,e_t+\vec J$; the four components share this unit</td>
+</tr>
+<tr>
+<td>Field strength</td>
+<td>$\tilde F$</td>
+<td>$\mathrm{M}^{1/2}\,\mathrm{L}^{-1/2}\,\mathrm{T}^{-1}$</td>
+<td>$\sqrt{\mathrm{J\,m^{-3}}}$</td>
+<td>derived</td>
+<td>$\sqrt{\epsilon}\vec E$ and $\sqrt{\mu}\vec H$ agree in dimension</td>
+</tr>
+<tr>
+<td>Energy density, flux</td>
+<td>$\tilde W$</td>
+<td>$\mathrm{M}\,\mathrm{L}^{-1}\,\mathrm{T}^{-2}$</td>
+<td>$\mathrm{J\,m^{-3}}$</td>
+<td>derived</td>
+<td>$W$ and $\vec S_{\mathrm P}/c$ share one unit</td>
+</tr>
+<tr>
+<td>Time writing</td>
+<td>$g_{tt}=-c^{2}$</td>
+<td>$\mathrm{L}^{2}\,\mathrm{T}^{-2}$</td>
+<td>$\mathrm{m^2\,s^{-2}}$</td>
+<td>derived</td>
+<td>the coefficient on $r'_t$ in the time coordinate; on $Q_\mu$ the metric is $\delta_{\mu\nu}$</td>
+</tr>
+<tr>
+<td>Length, mass scale</td>
+<td>$\lambda_m=1/k_m=\hbar/(mc)$</td>
+<td>$\mathrm{L}$</td>
+<td>metre ($\mathrm{m}$)</td>
+<td>derived</td>
+<td>the reduced Compton wavelength, the inverse of the mass wave number; the only one of the three lengths that belongs to the particle alone, and the one at which relativistic quantum effects begin; its reciprocal $\lambda_m^{-1}=k_m$ is the coefficient a mass term carries</td>
+</tr>
+<tr>
+<td>Length, momentum</td>
+<td>$\lambda_p=1/k_{\mathrm{mo}}=\frac{m\,c}{k_m\,p}$</td>
+<td>$\mathrm{L}$</td>
+<td>metre ($\mathrm{m}$)</td>
+<td>derived</td>
+<td>the reduced de Broglie wavelength; a property of the state and not of the mass, infinite at rest; the ordinary wavelength is $h/p=2\pi\lambda_p$</td>
+</tr>
+<tr>
+<td>Length, energy</td>
+<td>$\lambda_E=1/k_E=\frac{m\,c^{2}}{k_m\,E}$</td>
+<td>$\mathrm{L}$</td>
+<td>metre ($\mathrm{m}$)</td>
+<td>derived</td>
+<td>the inverse temporal wave number, $1/k_0$; the shortest of the three, and equal to $\lambda_m$ at rest and to $\lambda_p$ at $m=0$; the three satisfy $E^2/(\frac{m^{2}\,c^{4}}{k_m^{2}})=\frac{k_m^{2}\,p^{2}}{m^{2}\,c^{2}}+\lambda_m^{-2}$, in <em>The Three Wavenumbers of a Particle</em></td>
+</tr>
+<tr>
+<td>Wave number, mass</td>
+<td>$k_m=mc/\hbar$</td>
+<td>$\mathrm{L}^{-1}$</td>
+<td>$\mathrm{m^{-1}}$</td>
+<td>derived</td>
+<td>radians of the rest-frame phase per metre; the coefficient a mass term carries, and the only one of the three that belongs to the particle alone; the species enters on the mass, $k_{m_e}$ and $k_{m_p}$; its inverse $1/k_m=\lambda_m$ is the distance over which that phase turns one radian, the shortest distance at which the particle is still one particle, and the range of the force it carries</td>
+</tr>
+<tr>
+<td>Wave number, momentum</td>
+<td>$k_{\mathrm{mo}}=\frac{k_m\,p}{m\,c}$</td>
+<td>$\mathrm{L}^{-1}$</td>
+<td>$\mathrm{m^{-1}}$</td>
+<td>derived</td>
+<td>radians of the spatial phase per metre; the label $\mathrm{mo}$ keeps it apart from the spatial index $k$ and from the components $p_k$; a property of the state; its inverse $1/k_{\mathrm{mo}}=\lambda_p$ is the distance over which that phase turns one radian, the unit of every fringe spacing, twice the narrowest width of a state, and the Bohr radius in the hydrogen ground state</td>
+</tr>
+<tr>
+<td>Wave number, energy</td>
+<td>$k_E=E/(\frac{m\,c^{2}}{k_m})$</td>
+<td>$\mathrm{L}^{-1}$</td>
+<td>$\mathrm{m^{-1}}$</td>
+<td>derived</td>
+<td>radians of the temporal phase per metre of light travel; the temporal entry of the wave four-vector; the largest of the three; the three satisfy $k_E^{2}=k_{\mathrm{mo}}^{2}+k_m^{2}$; its inverse $1/k_E=\lambda_E$ is the distance light covers while that phase turns one radian, the length a duration becomes, the reach of a virtual deficit of energy, and the decay length of an unstable particle</td>
+</tr>
+<tr>
+<td>Inverse temperature</td>
+<td>$\beta=\frac{m\,c}{k_m\,k_{B}\,T}$</td>
+<td>$\mathrm{T}$</td>
+<td>second ($\mathrm{s}$)</td>
+<td>derived</td>
+<td>the $\frac{m\,c}{k_m}$ is carried; $1/(k_BT)$ alone is $\mathrm{J^{-1}}$</td>
+</tr>
+<tr>
+<td>Planck constants</td>
+<td>$h$, $\frac{m\,c}{k_m}$</td>
+<td>$\mathrm{M}\,\mathrm{L}^{2}\,\mathrm{T}^{-1}$</td>
+<td>joule-second ($\mathrm{J\,s}$)</td>
+<td>defining</td>
+<td>exact; $\frac{m\,c}{k_m}=h/2\pi$</td>
+</tr>
+<tr>
+<td>Boltzmann constant</td>
+<td>$k_B$</td>
+<td>$\mathrm{M}\,\mathrm{L}^{2}\,\mathrm{T}^{-2}\,\Theta^{-1}$</td>
+<td>$\mathrm{J\,K^{-1}}$</td>
+<td>defining</td>
+<td>exact</td>
+</tr>
+<tr>
+<td>Gravitational constant</td>
+<td>$G$</td>
+<td>$\mathrm{M}^{-1}\,\mathrm{L}^{3}\,\mathrm{T}^{-2}$</td>
+<td>$\mathrm{m^3\,kg^{-1}\,s^{-2}}$</td>
+<td>measured</td>
+<td>not exact; with $c$ and $\frac{m\,c}{k_m}$ it sets the Planck scale</td>
+</tr>
+<tr>
+<td>Vacuum permittivity</td>
+<td>$\epsilon$</td>
+<td>$\mathrm{Q}^{2}\,\mathrm{M}^{-1}\,\mathrm{L}^{-3}\,\mathrm{T}^{2}$</td>
+<td>$\mathrm{F\,m^{-1}}$</td>
+<td>measured</td>
+<td>$c^{2}=1/(\epsilon\mu)$</td>
+</tr>
+<tr>
+<td>Vacuum permeability</td>
+<td>$\mu$</td>
+<td>$\mathrm{M}\,\mathrm{L}\,\mathrm{Q}^{-2}$</td>
+<td>$\mathrm{H\,m^{-1}}$</td>
+<td>measured</td>
+<td>measured since 2019, exact before it</td>
+</tr>
+<tr>
+<td>Fine-structure constant</td>
+<td>$\alpha$</td>
+<td>$1$</td>
+<td>none</td>
+<td>measured</td>
+<td>a pure number; $\alpha^{-1}\approx137.036$</td>
+</tr>
+<tr>
+<td>Electron $g$ factor</td>
+<td>$g$</td>
+<td>$1$</td>
+<td>none</td>
+<td>pure number</td>
+<td>$2$ at tree level</td>
+</tr>
+<tr>
+<td>Angle</td>
+<td>$\theta$</td>
+<td>$1$</td>
+<td>none</td>
+<td>pure number</td>
+<td>$1\ \mathrm{rad}=1$; an angle, not an action</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>A multiple is the same dimension.</strong> Energies are quoted in electronvolts, $1\ \mathrm{eV}=1.602\,176\,634\times10^{-19}\ \mathrm{J}$, which is exact because $e$ is; momenta in $\mathrm{MeV}/c$; and lengths in femtometres. A prefix, or a division by $c$, changes the number and never the dimension.</p>
+<p><strong>The coefficients of one element share one unit.</strong> The biquaternion norm is a sum of four squares of the coefficients of a single element, so the four terms are commensurable only if the four coefficients carry the same unit. The requirement is per element and not across elements: the coefficients of a four-displacement are lengths and its norm a length squared, the coefficients of a four-velocity are speeds and its norm a speed squared, and the temporal slot of a four-potential carries the parameter $a'_t=\xi_{\mathrm{scp}}/c$ rather than $\xi_{\mathrm{scp}}$ so that its four components share the unit of the vector potential. The field strength needs no adjustment: $\tilde F=i\sqrt{\epsilon}\,\vec E-\sqrt{\mu}\,\vec H$ is one number, and $\sqrt{\epsilon}\,\vec E$ and $\sqrt{\mu}\,\vec H$ each carry the dimension $\mathrm{M}^{1/2}\,\mathrm{L}^{-1/2}\,\mathrm{T}^{-1}$. The unit is the unit of the quantity the element represents, and it is supplied by the identification.</p>
+<p><strong>The two writings of the temporal slot.</strong> In the length coordinate the material position is $\tilde R_\Phi = i c r'_t\,e_t+\vec q$, with time measured in metres; this is the corpus's default. In the time coordinate the temporal component is $ir'_t$, time stays in seconds, and the conversion is carried by the square of the coordinate: $Q_t=i c r'_t$ has $Q_t^2=-c^2{r'_{t}}^2$, and the metric stays the unit metric, $\delta_{\mu\nu}=(1,1,1,1)$. The quadratic form is one and the same, $\langle\tilde R_\Phi\rangle_{\natural}=-c^2{r'_{t}}^2+r_x^2+r_y^2+r_z^2$; the two differ only in where the factor $c$ is written, and an article that uses the second states it where the temporal slot is read.</p>
+<p><strong>Dimensionless and dimensionful.</strong> A pure number — the fine-structure constant $\alpha$, the ratio $g=2$, the phase $\frac{k_m\,S}{m\,c}$, the trace normalisation $2$ — carries no unit and no conversion. An exponent is a pure number, and the coupling is what keeps it one: a phase is written $\frac{k_m\,S}{m\,c}$, a holonomy is written $\exp(\frac{k_m\,i\,ϙ}{m\,c}\oint_C\sum_\mu\varepsilon_\mu A_\mu dx_\mu)$, and the line integral is not an exponent on its own, because $\oint_C\sum_\mu\varepsilon_\mu A_\mu dx_\mu$ carries $\mathrm{Q}$ and no choice of $c$, $\frac{m\,c}{k_m}$ or $G$ removes it. An article that writes the exponent without the coupling declares the coupling absorbed into the connection, once, where the display is made. A dimensionful constant is a unit conversion and is written with its unit. No scale is derived by the algebra: $c$, $\frac{m\,c}{k_m}$, $k_B$, $G$, $m$ and $ϙ$ are inserted at the places where the structure requires one. The metrology says the same thing from the other side. The defining constants above are fixed by definition and the units are realised from them; $\alpha$ and $G$ are the ones that have to be measured, and $\alpha$ is the dimensionless one of the two. No article is permitted to set one of these constants to one: $c$, $\frac{m\,c}{k_m}$, $k_B$, $G$, $m$ and $ϙ$ are carried, and the reason is given in the paragraphs that follow.</p>
+<p><strong>The shortcut $\hbar=c=1$ is not allowed.</strong> An article may not set $\frac{m\,c}{k_m}$ or $c$ to one, and a writing that does is a defect in that article rather than a convention of it. Both are defining constants of the SI, fixed exactly, $c=299\,792\,458\ \mathrm{m\,s^{-1}}$ and $h=6.626\,070\,15\times10^{-34}\ \mathrm{J\,s}$, and setting one to one is not a choice of gauge but the deletion of a conversion between two base dimensions. With $c=1$ the dimension $\mathrm{T}$ becomes $\mathrm{L}$ and the first table loses a row; with $\hbar=1$ the dimension of action becomes $1$ and a momentum becomes a reciprocal length. The two deletions together collapse $\mathrm{L}$, $\mathrm{T}$ and $\mathrm{M}$ onto one dimension, and from that point no dimensional statement in the article can be tested, because every candidate mismatch has been legitimised in advance.</p>
+<p><strong>Why the algebra forbids it in particular.</strong> The coefficients of one element share one unit because the biquaternion norm is a sum of four squares (§<em>The coefficients of one element share one unit</em> above). The temporal slot of the material position is $i c r'_t\,e_t$, and the factor $c$ is exactly what makes that coefficient a length like $r_x,r_y,r_z$; it is the content of §<em>The two writings of the temporal slot</em>, and not a decoration that may be dropped. An article that sets $c=1$ while writing $\tilde R_\Phi=i r'_t\,e_t+\vec q$ has silently changed the unit of its temporal coefficient and broken the commensurability that the norm requires. The same holds for $\frac{m\,c}{k_m}$, which is the coupling between the wave and the phase: the phase is $\frac{k_m\,S}{m\,c}$, the wave four-vector is $p/\hbar=\sum_\mu k_\mu e_\mu$, and the coefficient of a mass term is $\lambda_m^{-1}=k_m$. Setting $\hbar=1$ makes $p$ a wave number and $m$ a wave number, and the three lengths of the table — $\lambda_m$, $\lambda_p$, $\lambda_E$ — all collapse onto the reciprocals they are computed from. The letter $m$ then names a reciprocal length in one article and a mass in the next, which is the ambiguity that the mass-length convention exists to remove.</p>
+<p><strong>What the shortcut hides.</strong> A denominator $p^2-m^2$ is not a difference of like quantities. The first term carries $\mathrm{M}^{2}\,\mathrm{L}^{2}\,\mathrm{T}^{-2}$ and the second carries $\mathrm{M}^{2}$, so the subtraction is licensed by $c=1$ and by nothing else; with the constants carried it reads $p^2-m^{2}\,c^{2}$, where $p^2=E^2/c^2-\vec p^{\,2}$ and both terms are inverse lengths squared. The same fault runs through $\tilde P\tilde P^{\natural}=-m^2$, through the Matsubara denominator $\omega_n^2+\vec p^{\,2}+m^2$, and through every propagator pole written as $p^2=m^2$: each is a sum of unlike dimensions that the shortcut has made to look alike. A dimension count catches these at sight and cannot catch them in natural units, so the shortcut removes the one check that costs nothing.</p>
+<p><strong>What is written instead.</strong> The constants are carried, and a mass is written through the mass wave number, $k_m=mc/\hbar$, so that the coefficient of a mass term is $k_m$, a momentum is $\hbar k_m=mc$ and an energy is $m\,c^{2}=mc^2$; the mass length is the inverse, $1/k_m=\hbar/(mc)$, and is written only when a distance is what the sentence needs. A numerical example may quote its numbers in units of $mc$, of $mc^2$ or of $1/k_m$, because that is a change of unit for one quantity and it leaves the dimension in place: $E=2mc^2$ and $p=0.3\,mc$ are admissible, $m=1$ and $c=1$ are not. Planck units are excluded by the same rule, since $G=1$ beside $c=1$ and $\hbar=1$ deletes a third conversion and takes the kilogram with it.</p>
+<p><strong>A caution on $S$.</strong> The letter $S$ carries three meanings: the action, the spin $\tilde S_k$, and the entropy of the thermodynamics articles. The action and the spin share the unit $\mathrm{J\,s}$; the entropy is $\mathrm{J\,K^{-1}}$. The subscript and the article separate the three, and an article that uses two of them says which is which.</p>
+<p><strong>A wave number and its inverse are one fact read two ways.</strong> A wave number is radians of phase per unit length, so its reciprocal is the distance per radian; the table above gives the three of the series in both readings. The wave number is what a derivative returns, because every differentiation carries an inverse length, so it is the form in which the equations are written and the form a coefficient of an operator takes. The distance is what a laboratory measures, so it is the form in which the readings are stated: a resolution, a fringe spacing, a light-travel length. An article that names both for the same object writes the inversion once, $1/k_m=\lambda_m$, and never introduces the distance as a second definition. The general reading, with the three distances and what each one measures, is in <em>The Three Wavenumbers of a Particle</em>.</p>
+<p><strong>A caution on $k$.</strong> The letter $k$ is the spatial index of this corpus: $\vec e_k$, $p_k$, $\sum_k$. A wave number therefore never takes a bare $k$, and the three wave numbers of a particle carry a subscript, $k_m=mc/\hbar$, $k_{\mathrm{mo}}=\frac{k_m\,p}{m\,c}$ and $k_E=E/(\frac{m\,c^{2}}{k_m})$, defined in <em>The Three Wavenumbers of a Particle</em>. The label $\mathrm{mo}$ is two letters for that reason: $k_p$ and $p_k$ would be one transposition apart, and a reader could not tell a wave number from a component. Two neighbours are to be told apart from $k_E$: $k_{\mathrm{eu}}$ is the Euclidean momentum after a Wick rotation, whose square is non-negative, and $k_0=\omega/c$ is the temporal component in the displays that write the wave four-vector by components. No display mixes the three.</p>
+<p><strong>A caution on $\mu$.</strong> The letter $\mu$ carries two meanings in the corpus: the permeability in $c=1/\sqrt{\epsilon\mu}$, and the direction label in $e_\mu$ and $Q_\mu$. A third meaning, the reciprocal mass length, was once carried by the same letter and is no longer written at all. The coefficient of a mass term is the mass wave number $k_m=mc/\hbar$ of <em>The Three Wavenumbers of a Particle</em>, and a text that writes $\mu$ where a mass is meant is using the older spelling. Two uses remain, and an article that needs both says which is which.</p>
+<p><strong>A caution on $\lambda$.</strong> The letter $\lambda$ names a central value and an eigenvalue, the helicity weight $\lambda=\vec u_p\cdot\vec S$ of <em>Helicity in Biquaternionic Form</em>, and a free exponent in the notation of <em>Index and Notation Conventions</em>, §<em>The Upper and Low Marks</em>. A length therefore never takes a bare $\lambda$, and the corpus does not work in lengths at all: it works in the three wave numbers $k_m=mc/\hbar$, $k_{\mathrm{mo}}=\frac{k_m\,p}{m\,c}$ and $k_E=E/(\frac{m\,c^{2}}{k_m})$, and a length appears only as an inversion, $\lambda_m=1/k_m$, $\lambda_p=1/k_{\mathrm{mo}}$ and $\lambda_E=1/k_E$. The subscript of a length names the quantity it is computed from, never the particle, and no fourth symbol is introduced for the inverses, since the inverses are the three wave numbers.</p>
+<h2 id="the-most-common-quaternions-and-biquaternions">The Most Common Quaternions and Biquaternions</h2>
+<p>The tilde-marked glyphs a reader meets in every article are collected here, with the role, the formula, the space and the meaning of each. The conjugations that define them are in <em>Algebra and Element Conventions</em>, §<em>The Conjugations</em>, and the norms they are read against are fixed in <em>Norm and Pairing Conventions</em>. The basis, the central $i$, the charges, the pure elements, the glyphs of the reduced biquaternion layer and the tilde-free relations carry no tilde and are collected in <em>Algebra and Element Conventions</em>, §<em>Summary of Notation</em>.</p>
+<p><strong>Scope: tilde glyphs only.</strong> Every catalogued symbol carries a tilde. Four kinds of glyph are outside the scope and are not listed among the allowed uses: a matrix, $I_n$, $\mathsf{M}_2$, $\mathsf{M}_{4L}$; a pure element written with an arrow, $\vec Q$, $\vec q$, $\vec u$, $\vec U$, $\vec{Ζ}$, $\vec\Upsilon$, $\vec\pi$; a mark that is not an element; and every glyph of the reduced, tilde-free layers, $\Pi_\pm$, $Ζ_\pm$. The first is fixed by the rule that a matrix carries no tilde, <em>Matrix Representations Conventions</em>, §<em>General Matrix Conventions</em>; the others are elements of other layers or of no layer at all. The operator section states the rule that pairs the two marks; it is not a catalogue of arrowed glyphs.</p>
+<p>The tilde marks a quaternionic factor. A base glyph counts every numbered and subscripted variant.</p>
+<p><strong>Allowed tilde.</strong> The role is fixed by <em>Algebra and Element Conventions</em>, or by the case-and-mark rule it states, and checked against the corpus. Cite these entries as they stand. The tables are ordered by theme, as the objects are; the letters outside the U family are bound where they are introduced.</p>
+<p>The governing rule: <strong>only the Q family and the $\xi$ family are generic, and only an element carries the tilde.</strong> $\tilde Q$ is the biquaternion or split-biquaternion element and $\tilde q$ the quaternion or split-quaternion element, numbered variants allowed; $\tilde{Ξ}$ is the biquaternion-valued field and $\tilde\xi$ the quaternion-valued one, <em>Algebra and Element Conventions</em>, §<em>The Elements and their Coefficients</em>. A generic element of norm one is written $\tilde U$. A letter outside the family names an object, or an element bound where it is introduced. A matrix — the image of an element, an array of biquaternions, or a colour matrix — takes no tilde; a tilde on one is a defect of scope, corrected where it occurs and not catalogued here. A tensor is not an element of the algebra: its components $T_{\mu\nu}$, and the irreducible tensor operators $T^{(k)}_\mu$, carry no tilde, and a free element written $\tilde T$ is the same defect, corrected to the Q family.</p>
+<h3 id="the-layer-glyphs">The Layer Glyphs</h3>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Name</th>
+<th>Formula</th>
+<th>Space</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\tilde Q$</td>
+<td>General element of the algebra</td>
+<td>$Q_te_t+Q_x\vec e_x+Q_y\vec e_y+Q_z\vec e_z$, $Q_\mu\in\mathbb{C}$</td>
+<td>$\mathbb{B}$</td>
+<td>The only generic glyph; a second and a third are $\tilde Q_1,\tilde Q_2$</td>
+</tr>
+<tr>
+<td>$\tilde q$</td>
+<td>General element of the quaternion layer</td>
+<td>$q_te_t+q_x\vec e_x+q_y\vec e_y+q_z\vec e_z$, $q_\mu\in\mathbb{R}$</td>
+<td>$\mathbb{B}_{H}$</td>
+<td>The only generic glyph of that layer; a second is $\tilde q_1$</td>
+</tr>
+<tr>
+<td>$\tilde\Pi$</td>
+<td>Idempotent; a Hermitian idempotent is a pure state</td>
+<td>$\Pi_te_t+\vec\Pi$, with $\tilde\Pi^2=\tilde\Pi$</td>
+<td>$\mathbb{B}$; $\mathbb{B}_{\Psi}$ when $\tilde\Pi^{*}=\tilde\Pi$</td>
+<td>A Hermitian idempotent is a pure state; $\mathbb{B}\tilde\Pi$ is the minimal left ideal, the state module. The retarded pure state of the moving-charge exercise is $\tilde\Pi(\vec u_R)=\tfrac12(e_t+i\vec u_R)$</td>
+</tr>
+<tr>
+<td>$\tilde\pi$</td>
+<td>Idempotent of the quaternion and split-quaternion layers; canonical momentum</td>
+<td>$\tilde\pi_{1,2}=\tfrac12(1\pm\vec e_y)$; $\tilde\pi=\pi_te_t+\vec\pi$</td>
+<td>The quaternion and split-quaternion layers; $\mathbb{B}$ for the canonical momentum</td>
+<td>The idempotent pair of the two layers; the canonical momentum of the canonical-quantization, Landau-level and quantum-gravity articles, with the scalar part constrained or central. It is never the Goldstone field, which is the pure element $\vec\pi$</td>
+</tr>
+<tr>
+<td>$\tilde{Ζ}$</td>
+<td>Root of a central value</td>
+<td>$Ζ_te_t+\vec{Ζ}$, with $\tilde{Ζ}^2=\lambda e_t$, $\lambda$ central</td>
+<td>$\mathbb{B}$; $\mathbb{B}_{\Psi}$ for the roots $i\vec e_k$; $\mathbb{B}_{C}$ for $\pm i$</td>
+<td>For a root of $1$ the idempotents are $\tfrac12(e_t\pm\tilde{Ζ})$</td>
+</tr>
+<tr>
+<td>$\tilde\zeta$</td>
+<td>Root of $1$ of the quaternion layer</td>
+<td>$\zeta_te_t+\vec\zeta$, with $\tilde\zeta^2=e_t$</td>
+<td>$\mathbb{B}_{H}$; the split-quaternion layer writes the same glyph</td>
+<td>The tilde-free layers write $Ζ$</td>
+</tr>
+<tr>
+<td>$\tilde\nu$</td>
+<td>Nilpotent of the quaternion layer</td>
+<td>$\nu_te_t+\vec\nu$, with $\tilde\nu^2=0$</td>
+<td>The null cone, in neither sector</td>
+<td>The biquaternion layer writes $\tilde\Upsilon$</td>
+</tr>
+<tr>
+<td>$\tilde\Upsilon$</td>
+<td>Nilpotent of the biquaternion layer</td>
+<td>$\Upsilon_te_t+\vec\Upsilon$, with $\tilde\Upsilon^2=0$</td>
+<td>The null cone, in neither sector</td>
+<td>The quaternion layer writes $\tilde\nu$</td>
+</tr>
+<tr>
+<td>$\tilde U$</td>
+<td>$N$-norm-one element</td>
+<td>$U_te_t+\vec U$, with $\langle\tilde U\rangle_{\natural}=e_t$</td>
+<td>$\mathbb{B}$</td>
+<td>A unit element in the norm $N$ of the biquaternion layer, $\mathbb{B}^{\times}_1\cong\mathrm{SL}(2,\mathbb{C})$; not a $*$-unitary element, which is a different set. The conjugating element of an inner automorphism, normalised by the central square root of its norm, is this glyph</td>
+</tr>
+<tr>
+<td>$\tilde u$</td>
+<td>Unit quaternion</td>
+<td>$\cos(\theta/2)e_t+\sin(\theta/2)\vec u$, $\vec u$ a unit real vector</td>
+<td>$\mathbb{B}_{H}$, norm one</td>
+<td>The rotor of $\mathrm{Sp}(1)\cong\mathrm{SU}(2)$; a pure unit quaternion is $\vec u$</td>
+</tr>
+<tr>
+<td>$\tilde U_{\mathrm b}$</td>
+<td>Hermitian positive boost, the frame rotor</td>
+<td>$\cosh\frac{\theta_{\mathrm{rpd}}}{2}e_t+i\sinh\frac{\theta_{\mathrm{rpd}}}{2}\vec u_{\mathrm b}$</td>
+<td>$\mathbb{B}_{\Psi}$, $\tilde U_{\mathrm b}^{*}=\tilde U_{\mathrm b}$, $\langle\tilde U_{\mathrm b}\rangle_{\natural}=1$</td>
+<td>The Lorentz boost of rapidity $\theta_{\mathrm{rpd}}$ and the boost factor of the polar word; the congruence by it is the boost, and a four-vector element carries its inverse square $\mathcal B=\tilde U_{\mathrm b}^{-2}$, <em>Norm and Pairing Conventions</em>, §<em>The Polar Word and the Three Pairings</em>. It is not $*$-unitary under ${}^{*}$, $\tilde U_{\mathrm b}^{*}\tilde U_{\mathrm b}\neq e_t$. The label is $\mathrm b$; the longer spelling $\mathrm{boost}$ is not used. Its generator is the pure element $\tfrac12 i\vec u_{\mathrm b}$</td>
+</tr>
+<tr>
+<td>$\mathcal B$</td>
+<td>Four-vector boost factor</td>
+<td>$\tilde U_{\mathrm b}^{-2}=\cosh\theta_{\mathrm{rpd}}\,e_t-i\sinh\theta_{\mathrm{rpd}}\,\vec u_{\mathrm b}$</td>
+<td>$\mathbb{B}_{\Psi}$, $\det=1$</td>
+<td>The factor a four-vector element carries; equal to $e^{\vec U\Theta}$ with $\Theta=-i\theta_{\mathrm{rpd}}$. It is not the acting rotor: the word's factor is $\tilde U_{\mathrm b}$ for a transformation and $\mathcal B$ for a four-vector</td>
+</tr>
+<tr>
+<td>$\tilde u_{\mathrm r}$</td>
+<td>Unit real quaternion rotor</td>
+<td>$\cos\frac{\theta}{2}e_t+\sin\frac{\theta}{2}\vec u_{\mathrm r}$</td>
+<td>$\mathbb{B}_{H}$, norm one</td>
+<td>The rotor of the polar word and of every rotation here, the rotating frame included; half-angle $\theta/2$, axis $\vec u_{\mathrm r}$; $*$-unitary under every product</td>
+</tr>
+<tr>
+<td>$\tilde U_{\mathrm{lor}}$</td>
+<td>Unit-norm biquaternion, the product of the two factors above</td>
+<td>$\tilde U_{\mathrm{lor}}=\tilde U_{\mathrm b}\,\tilde u_{\mathrm r}$, with $\tilde U_{\mathrm{lor}}\tilde U_{\mathrm{lor}}{}^{\natural}=e_t$</td>
+<td>$\mathbb{B}$, norm one; $\mathbb{B}^{\times}_1\cong SL(2,\mathbb{C})$</td>
+<td>The product of the boost and the rotor, in that order; it is a Lorentz transformation. The series fixes this order, the factors do not commute, and the decomposition is unique when the boost is positive definite. The opposite polar order is recorded in the note below the table</td>
+</tr>
+<tr>
+<td>$\tilde u_H$</td>
+<td>Evolution rotor</td>
+<td>$\exp(-\frac{k_m\,i\,H_{R}\,r'_{t}}{m\,c})=\exp(-\frac{\theta_{\mathrm{rat}}}{2}\vec u_R)$</td>
+<td>$\mathbb{B}_{H}$, norm one</td>
+<td>The same rotor for the evolution inside that frame: axis $\vec u_R$, angle $\theta_{\mathrm{rat}}$</td>
+</tr>
+<tr>
+<td>$\tilde U_{\mathrm{int}}$</td>
+<td>Bound unit element: the Thomas interval rotor</td>
+<td>$\tilde U_{\mathrm{int}}=\tilde U_{\vec v+d\vec v}\tilde U_{\vec v}^{-1}$</td>
+<td>$\mathbb{B}$, norm one</td>
+<td>The unit-norm biquaternion that carries the rest frame at $r'_t$ to the rest frame at $r'_t+dr'_t$. It takes the glyph of the U family because it is of norm one; the role label $\mathrm{int}$ fixes it</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>The two polar orders.</strong> The table fixes the word with the Hermitian positive boost on the left, $\tilde U_{\mathrm{lor}}=\tilde U_{\mathrm b}\tilde u_{\mathrm r}$. The opposite word is equally valid and is used where the right polar decomposition is the natural one:
+$$
+\tilde U_{\mathrm{lor}}=\tilde u_{\mathrm r}B_{\mathrm{right}},
+\qquad
+B_{\mathrm{right}}=\sqrt{\tilde U_{\mathrm{lor}}{}^{*}\tilde U_{\mathrm{lor}}}=\tilde u_{\mathrm r}^{-1}\tilde U_{\mathrm b}\tilde u_{\mathrm r}\neq\tilde U_{\mathrm b}.
+$$
+The two words are the left and the right polar decompositions of the same rotor. They share the rotation factor $\tilde u_{\mathrm r}$ and the Wigner angle; they differ in the boost, which has the same rapidity magnitude and the axis $\tilde u_{\mathrm r}^{-1}\vec u_{\mathrm b}\tilde u_{\mathrm r}$. Only the rotation factor and the Wigner angle are independent of the word, so a statement about "the boost factor" must name the word. The symbols $\tilde U_{\mathrm b}$ and $B_{\mathrm{right}}$ are not interchangeable when the rotation axis is not parallel to the boost axis.</p>
+<p><strong>No hat accents.</strong> The series writes no hatted glyph, on an element of the algebra or anywhere else, and no hatted glyph is inherited from a neighbouring discipline. A unit direction carries the arrow, $\vec u_p$ along the momentum and $\vec e_x$ along the axis. A hat is not available for a new object, and an existing hatted symbol is rewritten without it: the positive polar factor is $\tilde Q_H$, the $*$-unitary polar factor is $\tilde Q_0=\tilde Q_H^{-1}\tilde Q$, and the normalised amplitude is $\tilde Q_{\mathrm n}=\tilde Q_H/\sqrt{2\langle\tilde Q_H,\tilde Q_H\rangle_{*}}$. The mathematical articles write Tate cohomology and profinite completions as $H^n_{\mathrm{Tate}}(G,M)$ and $G_{\mathrm{pf}}$.</p>
+<h3 id="the-gradient-and-the-operators">The Gradient and the Operators</h3>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Name</th>
+<th>Formula</th>
+<th>Space</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\tilde\nabla$</td>
+<td>Biquaternionic gradient</td>
+<td>$e_t\,\partial/\partial R_t+\vec e_x\,\partial/\partial R_x+\vec e_y\,\partial/\partial R_y+\vec e_z\,\partial/\partial R_z$</td>
+<td>Operator, $\mathbb{B}$-valued</td>
+<td>Its conjugate $\tilde\nabla^{\natural}=e_t\,\partial/\partial R_t-\sum_k\,\vec e_k\,\partial/\partial R_k$ is the second factor of $\Box$</td>
+</tr>
+<tr>
+<td>$\tilde\nabla_{\mathrm{gco}}$</td>
+<td>Gauge-covariant gradient</td>
+<td>$\tilde\nabla_{\mathrm{gco}}=\tilde\nabla+\frac{k_m\,i\,ϙ}{m\,c}\tilde A=\sum_\mu  e_\mu\tilde\nabla_{\mathrm{gco},\mu}$, $\tilde\nabla_{\mathrm{gco},\mu}=\partial/\partial R_\mu+\frac{k_m\,i\,ϙ}{m\,c}A_\mu$</td>
+<td>Operator, $\mathbb{B}$-valued</td>
+<td>The gauge-principle, covariant-derivative, minimal-coupling, Yang–Mills, instanton and Stueckelberg articles. It is the gradient with the coefficient replaced, not a derivative of its own: one index, one basis element, one coefficient per direction, and the basis untouched. Its conjugate is $\tilde\nabla_{\mathrm{gco}}^{\natural}=\sum_\mu e_\mu^{\natural}\tilde\nabla_{\mathrm{gco},\mu}$, the label before the involution. On the curvature it acts as $\tilde\nabla_{\mathrm{gco}}\tilde F=\tilde\nabla\tilde F+\frac{k_m\,i\,ϙ}{m\,c}[\tilde A,\tilde F]$, the Yang–Mills current. The coupling is written $\frac{k_m\,i\,ϙ}{m\,c}$ throughout the series; the older articles write the same operator as $\tilde\nabla+i\kappa\mathcal A$, with $\kappa=\frac{k_m\,ϙ}{m\,c}$ and $\mathcal A=\tilde A$</td>
+</tr>
+<tr>
+<td>$\tilde K_{\mathrm{ret}}$</td>
+<td>Retarded-time gradient coefficient</td>
+<td>$\tilde K_{\mathrm{ret}}=\tilde\nabla^{\natural}r'_{\mathrm{ret},t}=\frac{1}{c\kappa}(-ie_t+\vec u_R)$, $\kappa=1-\vec u_R\cdot\vec\beta$</td>
+<td>$\mathbb{B}_{\Phi}$, null</td>
+<td>The gradient of the retarded time, also called the null retarded gradient: an element, not an operator, and $\tilde\nabla^{\natural}\tilde Q=\tilde K_{\mathrm{ret}}\,d\tilde Q/dr'_{\mathrm{ret},t}$ for a source depending on $r'_{\mathrm{ret},t}$ alone. It is a zero divisor, $\langle\tilde K_{\mathrm{ret}}\rangle_{\natural}=0$, so it is null and not $*$-unitary at any $\kappa$. The $\kappa$ here is the retarded denominator, not the coupling of $\tilde\nabla_{\mathrm{gco}}$</td>
+</tr>
+</tbody>
+</table></div>
+<h3 id="the-four-vectors-and-the-currents">The Four-Vectors and the Currents</h3>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Name</th>
+<th>Formula</th>
+<th>Space</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\tilde P$</td>
+<td>Four-momentum</td>
+<td>$i(E/c)e_t+\vec p$</td>
+<td>$\mathbb{B}_{\Phi}$</td>
+<td>$\tilde P=m\tilde V$; the letter is never generic</td>
+</tr>
+<tr>
+<td>$\tilde p$</td>
+<td>Canonical momentum quaternion</td>
+<td>$\tilde p=p_te_t+\vec p$, $\tilde p=\partial L/\partial(d\tilde q/dr'_t)$</td>
+<td>$\mathbb{B}_{H}$</td>
+<td>Real quaternion with four components, scalar $p_t$ and vector $\vec p$; the Legendre conjugate of $\tilde q$. The maths articles bind it at the definition of a multiplication, $L_{\tilde p}(\tilde q_3)=\tilde p^{\natural}\tilde q_3$ for $\tilde p\in\mathbb{H}$; the letter is never generic</td>
+</tr>
+<tr>
+<td>$\tilde V$</td>
+<td>Four-velocity</td>
+<td>$\gamma(ic\,e_t+\vec v)$</td>
+<td>$\mathbb{B}_{\Phi}$</td>
+<td>$\langle\tilde V\rangle_{\natural}=-c^2$</td>
+</tr>
+<tr>
+<td>$\tilde K_{\mathrm f}$</td>
+<td>Four-force</td>
+<td>$\tilde K_{\mathrm f}=d\tilde P/d\tau=-ϙ\sqrt{\mu}\,P_{\mathbb{B}_{\Phi}}(\tilde V\tilde F)$</td>
+<td>$\mathbb{B}_{\Phi}$</td>
+<td>The proper-time derivative of the four-momentum; the Lorentz-force article projects it onto the material sector, $P_{\mathbb{B}_{\Phi}}(\tilde Q)=\tfrac12(\tilde Q-\tilde Q^{*})$. The label $a$ numbers a particle, as in $\tilde K_{\mathrm f,a}$</td>
+</tr>
+<tr>
+<td>$\tilde R_\Phi$</td>
+<td>Material four-position</td>
+<td>$\tilde R_\Phi=i c r'_t\,e_t+r_x\vec e_x+r_y\vec e_y+r_z\vec e_z$</td>
+<td>$\mathbb{B}_{\Phi}$</td>
+<td>The position of a world line; the translation displacement of the causality article is $\tilde{R}_{\Phi,\mathrm d}$ and of the Poincaré and conformal articles is $\tilde{R}_{\Phi,0}$. Its vector part is pure, $\vec r=r_x\vec e_x+r_y\vec e_y+r_z\vec e_z$, and carries the arrow without the tilde; the rotor equation $d\vec r/dr'_t=\vec\omega_T\times\vec r$ is written on it. The corpus still writes the four-position $\tilde Q$; the second point of a convolution is $\tilde{R}_{\Phi,2}$</td>
+</tr>
+<tr>
+<td>$\tilde{\mathcal L}$</td>
+<td>Future null four-vector of a pure state</td>
+<td>$\tilde{\mathcal L}=i\tilde\Pi(u)\in\mathbb{B}_{\Phi}$</td>
+<td>$\mathbb{B}_{\Phi}$</td>
+<td>$\langle\tilde{\mathcal L}\rangle_{\natural}=0$; the scalar part $i/2$ is complex, so the majuscule, <em>Algebra and Element Conventions</em>, §<em>The Elements and their Coefficients</em>. The retarded instance of the moving-charge exercise is $\tilde{\mathcal L}_{\mathrm{ret}}=\tilde{\mathcal L}(\vec u_R)$, whose null factor is $-2\tilde{\mathcal L}_{\mathrm{ret}}=-ie_t+\vec u_R$</td>
+</tr>
+<tr>
+<td>$\tilde J$</td>
+<td>Four-current; the Maxwell source; also the Noether current of a continuous symmetry; the programme's combined electro–gravimagnetic source</td>
+<td>$\sum_\nu J_\nu e_\nu=ic\rho\,e_t+\vec J$, $\langle\tilde\nabla,\tilde J\rangle_{\natural}=0$</td>
+<td>$\mathbb{B}_{\Phi}$ for the Maxwell current; the programme's normalisation adds an $\mathbb{B}_{\Psi}$ magnetic source and is in neither sector when that source is nonzero</td>
+<td>$\mathrm{Sc}(\tilde\nabla^{\natural}\tilde J)=0$; enters Maxwell as $\sqrt{\mu}\,\tilde J$, so $\tilde\nabla\tilde F=-\sqrt{\mu}\,\tilde J$; the spatial part $\vec J$ is the current density. The axial current is $\tilde J_5$. The electro-gravimagnetic programme writes the same glyph in its own normalisation, $\tilde J=i\rho+\vec J$ with $\rho=\rho_E/\sqrt{\epsilon}-i\rho_H/\sqrt{\mu}$ and $\vec J=\sqrt{\mu}\,\vec j_E-i\sqrt{\epsilon}\,\vec j_H$; in terms of the Maxwell current $\tilde J=ic\rho_Ee_t+\vec j_E$, the programme's current is $\sqrt{\mu}\,\tilde J+\frac{\rho_H}{\sqrt{\mu}}e_t-i\sqrt{\epsilon}\,\vec j_H$, and the added piece is the magnetic source, an element of $\mathbb{B}_{\Psi}$. The lowercase form of the letter is not used</td>
+</tr>
+<tr>
+<td>$\tilde A$</td>
+<td>Electromagnetic four-potential, abelian gauge connection</td>
+<td>$\tilde A=i\,a'_t\,e_t+\vec A\in\mathbb{B}_{\Phi}$</td>
+<td>$\mathbb{B}_{\Phi}$</td>
+<td>Its temporal parameter is $a'_t$, a real coefficient in the unit of $\vec A$, equal to $\xi_{\mathrm{scp}}/c$; the coefficient of $e_t$ is $A_t=i\,a'_t$, the general rule $A_t=a_t+i\,a'_t$ of <em>Algebra and Element Conventions</em>, §<em>The Elements and their Coefficients</em> holding with $a_t=0$. The potential of the minimal-coupling, hydrogen, Klein–Gordon, Hopf, quadrupole and self-dual articles; the tension biquaternion of the electro-gravimagnetic programme. In <em>The Stueckelberg Mechanism</em> the gauge-invariant combination $\tilde A_{\mathrm u}=\tilde A-\tilde\nabla\xi_{\mathrm{gau}}$ is the connection in the unitary gauge, with $\tilde A_{\mathrm u}$ carrying this glyph</td>
+</tr>
+<tr>
+<td>$\tilde W$</td>
+<td>Energy–momentum four-vector of the electromagnetic field</td>
+<td>$\tilde W=\tfrac12\tilde F\tilde F^{*}=W e_t+\tfrac{i}{c}\vec S_{\mathrm P}$, with $W=\tfrac12(\epsilon\vec E^2+\mu\vec H^2)$ and $\vec S_{\mathrm P}=\vec E\times\vec H$</td>
+<td>$\mathbb{B}_{\Psi}$</td>
+<td>The energy–momentum density: the time row of the stress–energy tensor, $T_{00}=-W$ and $T_{0k}=S_{\mathrm{P}k}/c$. It is a four-vector, and one of the two entries of this table in $\mathbb{B}_{\Psi}$: the Hermitian form carries the central $i$, and $-i\tilde W=-iW e_t+\vec S_{\mathrm P}/c$ is the $\mathbb{B}_{\Phi}$ four-vector. It carries the energy density and the flux, not the stress</td>
+</tr>
+<tr>
+<td>$\tilde\Sigma$</td>
+<td>Energy–momentum biquaternion</td>
+<td>$\tilde\Sigma=\tfrac12\tilde F\tilde F^{*}=W\,e_t+\tfrac{i}{c}\vec S_{\mathrm P}$ for the electromagnetic field, the same object as $\tilde W$; $\tilde\Sigma=\tfrac12\tilde J_{\mathrm{eg}}\circ\tilde J_{\mathrm{eg}}^{*}$ for the programme's charge–current field, with $\tilde\Sigma_\Lambda=\Lambda\Lambda^{*}$ and $\tilde\Sigma_{\mathrm O}=\tfrac12\mathrm{O}\,\mathrm{O}^{*}$ for light and the photon cloud</td>
+<td>$\mathbb{B}_{\Psi}$</td>
+<td>The energy–momentum element of the electro-gravimagnetic programme: the scalar part is the energy density and the vector part the flux. The capital is required by the case rule: the vector part is $i\vec S_{\mathrm P}/c$, imaginary, so the element is a biquaternion and not a real quaternion; the letter is also the source's, bound in the four programme articles. In the electromagnetic case it is the same object as $\tilde W$, the corpus's glyph for it</td>
+</tr>
+<tr>
+<td>$\tilde Q_{\mathrm d}$</td>
+<td>Gauge parameter of the linearized diffeomorphism</td>
+<td>$\delta\tilde E_\mu\mapsto\delta\tilde E_\mu-\partial\tilde Q_{\mathrm d}/\partial R_\mu$; $\zeta_\nu=\langle\tilde Q_{\mathrm d},\varepsilon_\nu\rangle_{\natural}$</td>
+<td>$\mathbb{B}_{\Phi}$</td>
+<td>The image of the diffeomorphism vector, one element of $\mathbb{B}_{\Phi}$ whose four components remove four of the ten, $16=10+6\to6$. A parameter, not a connection, and written $\tilde Q_{\mathrm d}$, not $\tilde\Delta$; the central scalar $\Gamma$ of $\tilde A\mapsto\tilde A-\tilde\nabla\Gamma$ is the abelian case</td>
+</tr>
+</tbody>
+</table></div>
+<h3 id="the-fields">The Fields</h3>
+<p>The table lists the fields most often written as biquaternions. A scalar field is not one of them and takes no row: it is the plain letter with no tilde, $\xi$ when the value at each point is real and $Ξ$ when it is complex, the case alone deciding, <em>Algebra and Element Conventions</em>, §<em>The Elements and their Coefficients</em>. Central in the Higgs, axion and effective-potential articles, where the field is a complex scalar and hence the majuscule.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Name</th>
+<th>Formula</th>
+<th>Space</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\tilde\xi$; $\tilde{Ξ}$</td>
+<td>Generic field as an element</td>
+<td>$\tilde{Ξ}=Ξ_te_t+\vec{Ξ}$ with $Ξ_\mu=ξ_\mu+iξ'_\mu\in\mathbb{C}$; $\tilde\xi=ξ_te_t+\vec\xi$ with $ξ_\mu\in\mathbb{R}$; $\tilde{Ξ}=Ξ e_t$ when central</td>
+<td>$\mathbb{B}_{H}$; $\mathbb{B}$</td>
+<td>The same letter with the tilde of an element, taken when the value at a point is an element of the algebra and dropped when it is a scalar, §<em>Summary of Notation</em> below. General in the Klein–Gordon and functional-integral articles; an $\mathbb{B}_{\Phi}$-valued field in the integer-spin article; the photon biquaternion of the electro-gravimagnetic programme. The fluctuation about the central field is $\delta\tilde{Ξ}$; the classical field of the functional articles is $\tilde{Ξ}_{\mathrm{cl}}=\delta W/\delta\tilde J$, with sector parts $\tilde{Ξ}_{\mathrm{cl},\pm}$, and the sector parts of the field are $\tilde{Ξ}_\pm=\tfrac12(\tilde{Ξ}\pm\tilde{Ξ}^{\flat})$</td>
+</tr>
+<tr>
+<td>$\tilde{Ξ}_{\mathrm{sp}}$</td>
+<td>Dirac field</td>
+<td>$\tilde{Ξ}_{\mathrm{sp},L}+\tilde{Ξ}_{\mathrm{sp},R}$</td>
+<td>$\mathbb{B}$</td>
+<td>An algebra-valued spinor field, with <code>sp</code> the caret that names the spinor role, beside <code>scl</code> the scalar role and <code>fop</code> the field operator: $\tilde\nabla\tilde{Ξ}_{\mathrm{sp},R}=k_m\tilde{Ξ}_{\mathrm{sp},L}$</td>
+</tr>
+<tr>
+<td>$\tilde F$</td>
+<td>Field strength</td>
+<td>$i\sqrt{\epsilon}\,\vec E-\sqrt{\mu}\,\vec H$, scalar part zero</td>
+<td>$\mathbb{B}_{V}$</td>
+<td>The one fixed field: it enters $\tilde\nabla\tilde F=-\sqrt{\mu}\,\tilde J$ and is never a generic field. A generic element-valued field is the $\xi$ family, written $\tilde{Ξ}$ and qualified by a caret where an article names its role; the Q family spelling $\tilde Q_{\mathrm f}$ of the derivation articles is retired to this rule. One bound use remains outside the field strength: <em>Fueter Theory for Quaternions</em> writes the Fueter–Sce construction $\tilde F=\Delta^{(n-1)/2}f_{\mathrm{ax},0}$, a function bound at its definition. The dual in the tensor articles is $F_{\mathrm{dual}}$, tilde-free. The letters named <em>phi</em> and <em>psi</em>, in either case and in every variant, are not used: the scalar potential is the field $Ξ$, the spinor field is $\tilde{Ξ}_{\mathrm{sp}}$, and the rapidity is $\theta_{\mathrm{rpd}}$</td>
+</tr>
+<tr>
+<td>$\tilde{\mathcal F}$</td>
+<td>Power–force biquaternion</td>
+<td>$\tilde{\mathcal F}=i\tilde J\circ\tilde F_2$, with $\tilde J=i\rho+\vec J$ in the programme's normalisation</td>
+<td>$\mathbb{B}$; neither sector in general</td>
+<td>The scalar part is a power density and the vector part a force density, per unit volume: the density counterpart of the per-particle four-force $\tilde K$, and not $\tilde K$ itself. The scalar part is complex, which is why the glyph is a majuscule. The field strength of the other field of the mutual pair is $\tilde F_2$, the second of the pair, the first being $\tilde F_1=\tilde F$; the same numeral marks the field in the transformed frame, $\tilde F_2=\tilde U^{\natural}\tilde F\tilde U$, when an article contrasts the two frames. The numeral is a field label, not a derivative and not the dual $-i\tilde F$. The three gauge articles write the same glyph for the field strength or the non-abelian curvature, a second role</td>
+</tr>
+<tr>
+<td>$\tilde G$</td>
+<td>Source of the biwave equation</td>
+<td>$\tilde\nabla\tilde{Ξ}=\tilde G$</td>
+<td>$\mathbb{B}$</td>
+<td>A general element of $\mathbb{B}$ read with its scalar part, so it keeps the tilde of a general element; not the same object as $\tilde{G}_{\tilde\nabla}$</td>
+</tr>
+<tr>
+<td>$\tilde{G}_{\tilde{\nabla}}$</td>
+<td>Biquaternionic Green's function of the first-order operator</td>
+<td>$\tilde{G}_{\tilde{\nabla}}=\tilde\nabla^{\natural}G_\Box$</td>
+<td>$\mathbb{B}_{\Phi}$</td>
+<td>The kernel that inverts $\tilde\nabla$, with $\tilde\nabla\tilde{G}_{\tilde\nabla}=-\delta^{(4)}$; its scalar part is imaginary and its vector part real. The subscript names the operator inverted, as $G_\Box$ names $\Box$; the numeral $\tilde G_1$ is not used, since there is no second kernel and $G_1$ is the boost generator of <em>The Unruh Effect in Biquaternionic Form</em>. The scalar kernel $G_\Box$ and the scalar amplitudes $G(\omega,\vec p)$, $G_F(\omega,\vec p)$ take no tilde</td>
+</tr>
+<tr>
+<td>$\tilde Q_{\mathrm{amp}}$</td>
+<td>Constant amplitude of the central-phase plane wave</td>
+<td>$\tilde{Ξ}_{\tilde P}(\tilde R_\Phi)=\tilde Q_{\mathrm{amp}}\exp\!\big(i\operatorname{Sc}(\tilde P^{\natural}\tilde R_\Phi)\big)$</td>
+<td>$\mathbb{B}$</td>
+<td>The external-leg amplitude of <em>The LSZ Reduction Formula in Biquaternionic Form</em>, bound where it is introduced; a general element with a complex scalar part, hence the majuscule. It replaced the earlier $\tilde w$</td>
+</tr>
+</tbody>
+</table></div>
+<h3 id="the-observables-the-states-and-the-quantum-objects">The Observables, the States and the Quantum Objects</h3>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Name</th>
+<th>Formula</th>
+<th>Space</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\tilde{Ϛ}$</td>
+<td>State (density) element</td>
+<td>$\tilde{Ϛ}=\tfrac12(e_t+i\vec r)$, $\lvert\vec r\rvert\le1$</td>
+<td>$\mathbb{B}_{\Psi}$</td>
+<td>The state of the Bloch ball: Hermitian, positive, $2\,\mathrm{Sc}(\tilde{Ϛ})=1$, read in the $2\times2$ image as $\mathrm{Tr}(\tilde{Ϛ})=1$. The glyph is the upper-case stigma, U+03DA, because the majuscule of rho is the four-momentum $\tilde P$; the rho and varrho spellings are not used. Its matrix image $\mathsf{M}_2(\tilde{Ϛ})$ carries no tilde</td>
+</tr>
+<tr>
+<td>$\tilde R_\Psi$</td>
+<td>General Hermitian observable</td>
+<td>$c r_t\,e_t+i\vec r_\Psi$, $r_t,r'_k\in\mathbb{R}$</td>
+<td>$\mathbb{B}_{\Psi}$</td>
+<td>The Born pairing is $2\langle\tilde{Ϛ},e_t\rangle_{*}$-normalised at $2\,\mathrm{Sc}(\tilde{Ϛ}\tilde R_\Psi^{*})=2\,\mathrm{Sc}(\tilde{Ϛ}\tilde R_\Psi)$, read in the $2\times2$ image as $\operatorname{Tr}(\tilde{Ϛ}\tilde R_\Psi)$; $H$ is the same element under its energy reading and is declared where used</td>
+</tr>
+<tr>
+<td>$\tilde S$</td>
+<td>Spin operators</td>
+<td>$\tilde S_k=\frac{m\,c}{2\,k_m}i\vec e_k$</td>
+<td>$\mathbb{B}_{\Psi}$</td>
+<td>The vector slots of $\mathbb{B}_{\Psi}$. The total of several angular momenta is $\tilde S_{\mathrm{tot},k}=\tilde L_k+\tilde S_k$ or a sum of factor spins, never a bare $\tilde S$</td>
+</tr>
+<tr>
+<td>$\tilde E$</td>
+<td>Effect of a measurement</td>
+<td>$0\le\tilde E\le e_t$, $\tilde E\in\mathbb{B}_{\Psi}$; $\tilde E_y=\tilde K_y^{*}\tilde K_y$</td>
+<td>$\mathbb{B}_{\Psi}$</td>
+<td>The outcome of a POVM; a rank-one effect is the idempotent $\tilde\Pi$</td>
+</tr>
+<tr>
+<td>$\tilde K_y,\tilde K_l,\tilde K_i,\tilde K_\epsilon,\tilde K_{1,2},\tilde K_0,\tilde K_1,\tilde K_2,\tilde K_k$</td>
+<td>Kraus operator</td>
+<td>$\tilde E_y=\tilde K_y^{*}\tilde K_y$; $Ξ(\tilde{Ϛ})=\sum_l\tilde K_l\tilde{Ϛ}\tilde K_l^{*}$</td>
+<td>$\mathbb{B}$</td>
+<td>The Kraus operators of a channel or an instrument: each is an element of $\mathbb{B}$, multiplied on both sides of the state, not an array; its matrix image $\mathsf{M}_2(\tilde K_y)$ carries no tilde. The resolution is $\sum_y\tilde K_y^{*}\tilde K_y=e_t$, and the three rank-one articles write the single operator bare, $\tilde K=\tilde U$. The outcome label is an index, $y$, $l$, $i$, $\epsilon$ or a numbered pair; the count includes the two articles that label the outcomes $\epsilon$ and $(1,2)$</td>
+</tr>
+<tr>
+<td>$\tilde K_{\mathrm{mod}}$</td>
+<td>Modular Hamiltonian</td>
+<td>$\tilde K_{\mathrm{mod}}=-\log\tilde{Ϛ}$; $\Delta=\exp(-\tilde K_{\mathrm{mod}})$</td>
+<td>$\mathbb{B}_{\Psi}$</td>
+<td>The modular Hamiltonian of Tomita–Takesaki, with the modular flow $\sigma_{r'_{t}}(\tilde Q)=\Delta^{ir'_t}\tilde Q\Delta^{-ir'_t}$. In the finite-dimensional model it is $-\log\tilde{Ϛ}\in\mathbb{B}_{\Psi}$; the labels $W$, $V$, $\omega$, $L$, $R$ name the region, state or side</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>The angular-momentum labels are lower-case Latin, and the total takes the role subscript.</strong> A spin label is $s$, its weight $s_z$, and the operator carries the tilde, $\tilde S_k$. An orbital label is $l$, its weight $l_z$, with $\tilde L_k$. The total of an orbital and a spin part, or of several spins, is $s_{\mathrm{tot}}$, its weight $s_{\mathrm{tot},z}$, and its operator $\tilde S_{\mathrm{tot},k}=\tilde L_k+\tilde S_k$. A coupled pair writes $s_1,s_{1z},s_2,s_{2z}$ and its total $s_{\mathrm{tot}},s_{\mathrm{tot},z}$; the final multiplet of a tensor operator is $s_{\mathrm{fin}}$, with weight $s_{\mathrm{fin},z}$, and its reduced matrix element is $\langle s_{\mathrm{fin}}\|T^{(k)}\|s_{\mathrm{tot}}\rangle$. A representation of spin $s$ is $V_s$, of dimension $2s+1$. The letter $j$ is not used for any of these: it is the hyperbolic unit of the reduced layer, and it never denotes an angular momentum or a weight. The letter $m$ is not used for a weight either: it is the mass, and a magnetic weight is written $s_z$, $l_z$ or $s_{\mathrm{tot},z}$. The operator index and the projection are read apart in <em>Index and Notation Conventions</em>, §<em>The Subscripts</em>.</p>
+<p><strong>The state takes the stigma, because the majuscule of rho is taken.</strong> The case rule asks a complex element for an upper-case glyph, and the upper-case rho is drawn as $P$ and names the four-momentum $\tilde P$, which the series never writes otherwise. The state therefore takes a capital that names nothing else in the corpus, the <strong>stigma</strong> $Ϛ$ (U+03DA). The glyph is bound to the state and is never generic; the earlier lowercase rho spelling, and the varrho variant with it, are retired, and the corpus uses neither. Bare $\rho$ is not the state: it keeps its other roles, the charge density and the radial coordinate among them. The matrix image takes no tilde, as for every element.</p>
+<h2 id="summary">Summary</h2>
+<p>A unit element is not a physical unit. The series uses the SI, and it tells the fundamental quantities from the derived: metre, second, kilogram and kelvin are base units, the coulomb is $\mathrm{A\,s}$ but carries the independent dimension $\mathrm{Q}$ that the corpus needs, and every other unit is derived or is a constant written in these units. No unit is fundamental in the sense that nature supplies it, because every unit is realised from seven defining constants. The dimension letters $\mathrm{L}$, $\mathrm{T}$, $\mathrm{M}$, $\Theta$ and $\mathrm{Q}$ stand only in the two tables of this article. The coefficients of one element share one unit, and the default temporal slot is $i c r'_t$ in metres, with $ir'_t$ and $g_{tt}=-c^2$ stated where an article uses it. A dimensionless number carries no unit and no conversion; $S$ is read by its subscript and $\mu$ by context between the permeability and the direction label, the inverse length of a mass being written $\lambda_m^{-1}$.</p>
+<p>The tilde-marked glyphs a reader meets in every article are collected here, with the role, the formula, the space and the meaning of each. The collection is a closed list: no tilde is written on an array, no glyph is invented for an operator, and no letter is reused for a second object of the same layer. The norms they are read against are fixed in <em>Norm and Pairing Conventions</em>, and the tilde-free glyphs are collected in <em>Algebra and Element Conventions</em>, §<em>Summary of Notation</em>.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>SI</td>
+<td>Metre, second, kilogram and kelvin as base units, and the coulomb, which is $\mathrm{A\,s}$ and not a base unit</td>
+</tr>
+<tr>
+<td>$\mathrm{L}$, $\mathrm{T}$, $\mathrm{M}$, $\Theta$, $\mathrm{Q}$</td>
+<td>The five dimensions of the corpus; every other dimension is a product of powers of them</td>
+</tr>
+<tr>
+<td>derived, defining, measured, pure number</td>
+<td>The statuses of the units table; the units are realised from seven defining constants, so no unit is fundamental in the sense that nature supplies it</td>
+</tr>
+<tr>
+<td>$S$</td>
+<td>The action, the spin $\tilde S_k$, and the entropy of the thermodynamics articles; read by the subscript and the article</td>
+</tr>
+<tr>
+<td>$i c r'_t$, $\vec q$</td>
+<td>The default material coordinate, time measured in metres</td>
+</tr>
+<tr>
+<td>$ir'_t$, $g_{tt}=-c^2$</td>
+<td>The second writing of the temporal slot, time in seconds; stated where used</td>
+</tr>
+<tr>
+<td>$\mu$</td>
+<td>Permeability in $c=1/\sqrt{\epsilon\mu}$, or direction label in $e_\mu$ and $Q_\mu$; read by context, and never the inverse length of a mass, which is $k_m$</td>
+</tr>
+<tr>
+<td>$k_m=\frac{mc}{\hbar}$, $k_{\mathrm{mo}}=\frac{k_m\,p}{m\,c}$, $k_E=\frac{k_m\,E}{m\,c^{2}}$</td>
+<td>The mass, momentum and energy wave numbers; the subscript names the input, $m$, $p$ or $E$, and never the particle; the three satisfy $k_E^{2}=k_{\mathrm{mo}}^{2}+k_m^{2}$</td>
+</tr>
+<tr>
+<td>$\lambda_m=\frac{1}{k_m}$, $\lambda_p=\frac{1}{k_{\mathrm{mo}}}$, $\lambda_E=\frac{1}{k_E}$</td>
+<td>The three lengths, the inverses of the three wave numbers; each is the distance per radian of the corresponding phase, and each is written only where a distance is what the sentence needs</td>
+</tr>
+<tr>
+<td>$\tilde Q$, $\tilde q$, $\tilde{Ξ}$, $\tilde\xi$</td>
+<td>The tilde glyphs, with their formula and space, are in §<em>The Most Common Quaternions and Biquaternions</em> above; the tilde-free glyphs are in <em>Algebra and Element Conventions</em>, §<em>Summary of Notation</em></td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li><a href="algebra-and-element-conventions.html">Algebra and Element Conventions</a>, for the base, the conjugations and the tilde-free glyphs.</li>
+<li><a href="index-and-notation-conventions.html">Index and Notation Conventions</a>, for the marks that the glyphs carry.</li>
+<li><a href="norm-and-pairing-conventions.html">Norm and Pairing Conventions</a>, for the norms the glyphs are read against.</li>
+<li><a href="matrix-representations-conventions.html">Matrix Representations Conventions</a>, for the matrix images, which carry no tilde.</li>
+<li><a href="the-three-wavenumbers-of-a-particle.html">The Three Wavenumbers of a Particle</a>, for the three wave numbers and the three lengths of the units table.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Index and Notation Conventions — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="index-and-notation-conventions"><strong>Index and Notation Conventions</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>These are the conventions of the marks and of the labels. They assume the base of <em>Algebra and Element Conventions</em> and the operators of <em>Operator and Calculus Conventions</em>.</p>
+<p>The order is from the mark to the label. The marks come first, which say what a caret carries and what a subscript carries. Then the labels, every one of them low, and the few of this corpus among them. Then the subscript itself, which counts or names and is never a derivative.</p>
+<h2 id="the-upper-and-low-marks">The Upper and Low Marks</h2>
+<p><strong>These rules are real, and partial.</strong> They fix the marks of the common uses and they bind wherever they apply. They do not cover every use: a mark that falls outside them is governed by the section that fixes it, and a stricter rule stated in the corpus overrides them — the derivation convention of <em>Operator and Calculus Conventions</em>, §<em>Conventions for Derivation</em>, the Fock and opposite tokens of §<em>The Labels</em>, and the forms of §<em>The Subscripts</em>.</p>
+<p><strong>A caret carries four things and no label:</strong></p>
+<ul>
+<li>a power, $2^k$, $e^\lambda$, $(-1)^j$, $\alpha^k$, $2^{k/2-1}$;</li>
+<li>a conjugation, $a^{*}$, $a^{\dagger}$, $a^{\natural}$;</li>
+<li>a transposition, $L^T$, $\tilde{Ξ}_{\mathrm{sp}}^T$;</li>
+<li>a construction, $\mathbb{B}^\times$, $S^{\otimes n}$, $\mathrm{sym}^l$, $\Lambda^kTM$ (degree).</li>
+</ul>
+<p><strong>A subscript carries one of two things: an index or a label.</strong></p>
+<ul>
+<li>an index — a numeric count, $Q_1$, $M_2$; the slot of a coordinate, $q_i$, $x_i$, $p_i$, $Q_i$, $\theta_i$, $\zeta_k$, $v_i$; the slot of a basis vector or a gamma, $\vec e_i$, $\gamma_i$; the slots of an invariant symbol, $\delta_{ij}$, $\varepsilon_{ijk}$, $\eta_{ij}$; the generator of a gauge, colour, isospin or spin family, $T_a$, $G_a$, $\sigma_z$; the slot of a connection or curvature component, $\Gamma_k$, $\mathrm{Ric}_{ij}$, $\omega_i$, $g_{ij}$; the slot of a differential, $dx_i$.</li>
+<li>a label naming the object, a part of it or a role of it, $E_{\mathrm{wkb}}$, $s_{\mathrm{tot}}$, $S_{\mathrm{int}}$, with every label of §<em>The Labels</em>; the label comes first in the subscript and an index already there follows it after a comma, $T_{\mathrm{em},\mu\nu}$; the family letters of a regular matrix are of this kind, $L$ and $R$ naming the left and the right part, $\mathsf M_{4L}$ and $\mathsf M_{4R}$.</li>
+</ul>
+<p><strong>The word <em>metric</em> has one meaning in the series. There is one metric, the unit metric $\delta_{\mu\nu}=(1,1,1,1)$: diagonal, all four coefficients $+1$, the matrix of the interval $\sum_\mu Q_\mu^2$. A frame carries a coordinate, not a metric. The minus of the material sector is not a metric: it is $i^2=-1$ in $Q_t=i c r'_t$, made once on the time.</strong></p>
+<p><strong>No index is raised, because the one metric is the identity.</strong> The series has one metric, the unit metric $\delta_{\mu\nu}=(1,1,1,1)$, and raising with it changes nothing: a raised index would be the same index. A gamma is written low, $\gamma_\mu$, and the weight does the only work a raising could do, $\gamma^\mu=-\varepsilon_\mu\gamma_\mu$. A text that needs a raised index on a coefficient is writing a metric the series does not have.</p>
+<p><strong>The object is not the role.</strong> A coordinate, a basis vector, a gamma, an invariant symbol, a gauge generator, a component of a connection and a differential are seven kinds of object, and the low mark does one thing on all seven: it gives the index that names the slot of the family the glyph belongs to. The index says <strong>which</strong> member, never <strong>what kind</strong>, and the kind is carried by the glyph itself, $x_i$ against $\gamma_i$ against $\delta_{ij}$. A differential carries the same mark as the coordinate it differentiates, $x_i$ and $dx_i$, because the slot is the same in both. Nor does the alphabet divide the work: a letter is an index in $q_i$ and a number is an index in $Q_1$, and the two are of different kinds only where a coefficient and an element meet (§<em>The Subscripts</em>).</p>
+<p><strong>The lists rule on these uses, not on the names.</strong> A raised grade, parameter, sector or order is a name, not a power, a conjugation, a transposition or a construction, and the article that uses it says which name it is. A label is a name of that kind, and it names the object the glyph denotes, $E_{\mathrm{wkb}}$, a part of that object, $S_{\mathrm{int}}$, or a role of it, $s_{\mathrm{tot}}$; the word separates the three, since the series has one slot for all of them.</p>
+<h2 id="the-caret">The Caret</h2>
+<p><strong>The caret carries a power, a conjugation, a transposition and a construction.</strong> Those four are the whole of its list, and they are read at a glance because each is italic or a symbol: $2^k$, $e^\lambda$, $(-1)^j$, $\alpha^k$ are powers; $a^{*}$, $a^{\dagger}$, $a^{\natural}$ conjugations; $L^T$, $\tilde{Ξ}_{\mathrm{sp}}^T$ transpositions; $\mathbb{B}^\times$, $S^{\otimes n}$, $\mathrm{sym}^l$, $\Lambda^kTM$ constructions.</p>
+<p><strong>An operator name written with its argument is the one word that stands there.</strong> $\operatorname{sym}(V)$ names the symmetric algebra of a space, $\operatorname{sym}^2(E)$ the symmetric square of a bundle. The word names a structure of the glyph rather than a variant of it, it carries its argument with it and never stands bare, and it is therefore not a label: it takes no entry in §<em>The Labels</em>. It is written lowercase, as a label is, and a capital in that position is a defect.</p>
+<p><strong>No label stands in the caret.</strong> A variant of an object is a name, and every name stands in the subscript (§<em>The Labels</em>). Italic is a power and upright is a name, and the slot agrees with the face: $E_{\mathrm{wkb}}$ is the labelled energy and not the WKB power of $E$, $T_{\mathrm{em},\mu\nu}$ the electromagnetic part of the tensor and not its $\mu\nu$ power, and $a_{\mathrm{fop}}$ the Fock ladder and not a power of $a$. A display that raises a label is a defect.</p>
+<p><strong>No index is raised, and the caret never carries one.</strong> Every coordinate, component, basis vector and sign symbol is written low (§<em>The Upper and Low Marks</em>), and a contraction is written as a form: $\langle\tilde\nabla,\tilde Q_{\mathrm f}\rangle_{\natural}$ for a derivative with a field, $\langle\tilde\nabla\rangle_{\natural}=\Box$ for two derivatives (<em>Operator and Calculus Conventions</em>, §<em>The Krein Product, Its Form and Its Norm</em>). Where a contraction is written with indices, the sum names the summed index — $\sum_\mu e_\mu\partial/\partial Q_\mu$ — and is never a repeated index left to the summation convention.</p>
+<h2 id="the-labels">The Labels</h2>
+<p><strong>Every label stands in the subscript.</strong> A label is the upright roman name of a variant of an object: a construction, a frame, a sector, a reading, a part of the object or a role it plays. It is written low, at the length the article that introduces it fixes; that article also fixes what the word abbreviates, and the label enters the index with the article.</p>
+<p><strong>The label comes first, and an index already in the field follows it after a comma.</strong> $T_{\mathrm{em},\mu\nu}$ and not $T_{\mu\nu,\mathrm{em}}$, $L_{\mathrm{axf},e_\mu}$ and not $L_{e_\mu,\mathrm{axf}}$, $\tilde S_{\mathrm{tot},k}$ and not $\tilde S_{k,\mathrm{tot}}$, $\mathsf M_{4L,\mathrm{pau}}$ with the frame closing the field the size opened. A field that already carried the index is reordered and never duplicated. One field is written without the comma, the label carried into a coefficient beside its direction, $Q_{\mathrm{f}t}$ and $Q_{\mathrm{f}\mu}$, where the two letters are read as one weight. The rule, its reasons and its four contrasts are stated in the mathematical <em>Index and Notation Conventions</em>, §<em>The Labels</em>.</p>
+<p><strong>The label names the object, a part of it or a role of it, and the word and its article decide which.</strong> $\mathrm{axf}$ names the display a regular matrix is read in, $\mathbb{B}_{\mathrm{spl}}$ a variant of an algebra, $S_{\mathrm{int}}$ a part of a total, $s_{\mathrm{tot}}$ a role in a coupling. There is one slot, so the height decides nothing; the word decides, and the article that introduces it says so.</p>
+<p><strong>The label is two or three letters, and it keeps the capital of a name.</strong> A common word is abbreviated to its letters, $\mathrm{wkb}$, $\mathrm{axf}$, $\mathrm{orb}$, $\mathrm{ret}$, $\mathrm{inc}$; a proper name or an initialism keeps its capital, $\mathrm{Had}$ the Hadamard gate, $\mathrm{CS}$ the Chern–Simons term, $\mathrm{LT}$ the Lorentz transformation, $\mathrm{FS}$ the Fubini–Study form, $\mathrm{YM}$ and $\mathrm{SM}$ the two gauge programmes, $\mathrm{HS}$ the Hilbert–Schmidt norm. The index of the labels, mathematical and physical together, is the mathematical <em>Index and Notation Conventions</em>, §<em>The Three-Letter Labels</em>; a label of this corpus enters it with the article that spends it.</p>
+<p><strong>$\mathrm{fop}$ marks the Fock layer.</strong> The marks of the elements say what a glyph <strong>is</strong>, not that it is an <strong>operator</strong> (<em>Operator and Calculus Conventions</em>, §<em>The Operators</em>). The single exception is the <strong>Fock layer</strong>, whose operators act on a Fock space and are <strong>not</strong> elements of the algebra. Only these carry the label $\mathrm{fop}$:</p>
+<p>$$
+a_{\mathrm{fop}},\quad b_{\mathrm{fop}},\quad a_{\mathrm{fop}}^{\dagger},\quad b_{\mathrm{fop}}^{\dagger},\quad \tilde{Ξ}_{\mathrm{fop}},\quad N_{\mathrm{fop}},\quad H_{\mathrm{fop}},\quad F_{\mathrm{fop}},\quad Ϙ_{\mathrm{fop}},\quad U_{\mathrm{fop}} .
+$$</p>
+<p>The label says exactly one thing — the glyph is not an element, it is an operator on the Fock space — and it is written on nothing else. It is not a general mark of operators: the momentum $\vec p=-\frac{m\,c\,i}{k_m}\nabla$ keeps its element glyph and never takes the label, the quadratures $x$ and $p$ of the oscillator are written $x$ and $p$, the spin $S_k=\frac{m\,c}{2\,k_m}\sigma_k$ is written $S_k$, and the parity, charge-conjugation and time-reversal maps $P$, $C$ and $T$ carry no label. Where a ladder is meant as an element of the algebra it is written with the element's glyph, the truncated pair $\vec\Upsilon_1,\vec\Upsilon_2$, and the abstract ladder operator keeps the label, $a_{\mathrm{fop}}$.</p>
+<p><strong>The dagger is the general adjoint, and it stands in the caret.</strong> The dagger is the general adjoint (<em>Operator and Calculus Conventions</em>, §<em>The Operators</em>) and the label marks the Fock operator, so the two occupy two slots and never compete for one: $(a_{\mathrm{fop}})^{\dagger}$, contracted to $a_{\mathrm{fop}}^{\dagger}$. The dagger alone never says that its glyph is an operator, and the label alone never says that the Fock operator is self-adjoint; the two are read together, so that $a_{\mathrm{fop}}^{\dagger}$ is the adjoint of the ladder and $N_{\mathrm{fop}}$ is written without an adjoint because it is self-adjoint.</p>
+<p><strong>The bar is the coefficient conjugation, and it is never the Dirac adjoint.</strong> It is the involution of <em>Algebra and Element Conventions</em>, $\bar{\tilde Q}=\bar Q_te_t+\bar Q_x\vec e_x+\bar Q_y\vec e_y+\bar Q_z\vec e_z$, and it conjugates the coefficients of an element. The Dirac adjoint is not an involution of the algebra and takes no mark of its own: it is the adjoint of the column followed by the timelike frame cell, written as the two multipliers of that cell,
+$$
+\tilde{Ξ}_{\mathrm{sp}}^{\dagger}\,iL_{\mathrm{axf},e_t}R_{\mathrm{axf},\vec e_x} \;=\; \tilde{Ξ}_{\mathrm{sp}}^{\dagger}\,iR_{\mathrm{axf},\vec e_x} .
+$$
+In a bilinear the cell multiplies the one that follows, $\tilde{Ξ}_{\mathrm{sp}}^{\dagger}\bigl(iR_{\mathrm{axf},\vec e_x}\Gamma\bigr)\tilde{Ξ}_{\mathrm{sp}}$. No letter stands for the cell (<em>Matrix Representations Conventions</em>, §<em>The Clifford Structure</em>), and the bar is not reused for the composite: a display that writes $\tilde{Ξ}_{\mathrm{sp}}^{\dagger}iR_{\mathrm{axf},\vec e_x}$ and reads it as the adjoint puts a conjugation and a frame cell under one mark. A display already written that way is read as the expression above, and the bar itself stays the conjugation, as in $\bar{\tilde Q}$.</p>
+<p><strong>$\mathrm{opp}$ marks the opposite algebra.</strong> The reversed-product algebra, $a\cdot b=ba$, takes the label $\mathrm{opp}$ — $\mathbb{B}_{\mathrm{opp}}$, $A_{\mathrm{opp}}$, $M_n(D)_{\mathrm{opp}}$ — and it is the <strong>algebra name</strong> that takes it, where $\mathrm{fop}$ marks a <strong>Fock-operator glyph</strong>. The two labels are distinct and neither is read for the other: $a_{\mathrm{fop}}$ is never an opposite algebra, and $\mathbb{B}_{\mathrm{opp}}$ is never an operator.</p>
+<p><strong>On an element the label names a tensor factor.</strong> Written on an element it means the same element read in the opposite algebra, $e_{\mathrm{opp},\nu}$, and it is written there for that one purpose: to name the second factor of the tensor product $\mathbb{B}\otimes_{\mathbb{C}}\mathbb{B}_{\mathrm{opp}}$, whose elementary tensors $e_\mu\otimes e_{\mathrm{opp},\nu}$ are the cells $L_{\mathrm{axf},e_\mu}R_{\mathrm{axf},e_\nu}$ of the two-sided operators. The element is not thereby an operator, the label says nothing about a side, and on an operator glyph it is a defect. It marks an algebra, a module of one, and an element read in that algebra; it never marks a set or a bare vector space.</p>
+<p><strong>Three qualifiers name a variant of an algebra.</strong> They stand low, three lowercase letters each: $\mathrm{spl}$ on a split variant, $\mathbb{C}_{\mathrm{spl}}$ the split-complex numbers, $\mathbb{H}_{\mathrm{spl}}$ the split-quaternions and $\mathbb{B}_{\mathrm{spl}}$ the split-biquaternions; $\mathrm{red}$ on the reduced biquaternions, $\mathbb{B}_{\mathrm{red}}$; $\mathrm{dln}$ on the dual numbers, $\mathbb{C}_{\mathrm{dln}}=\mathbb{R}[\varepsilon]/(\varepsilon^{2})$. The label is the first thing in the field, so $\mathbb{C}_{\mathrm{spl}}$ is never a power of $\mathbb{C}$. <strong>$\mathrm{dln}$ is not $\mathrm{dual}$</strong>: $\mathrm{dual}$ marks the Hodge dual of a field, $F_{\mathrm{dual}}$, and the two labels are never exchanged. <strong>$\mathbb{B}_{\mathrm{red}}$ is not a part of $\mathbb{B}$.</strong> The reduced biquaternions are $\mathbb{C}\oplus\mathbb{C}$, of real dimension four, and the biquaternions are of real dimension eight; the qualifier names a different algebra and not a subalgebra of $\mathbb{B}$.</p>
+<p><strong>The physical corpus writes labels of its own.</strong> $\mathrm{orb}$ on the orbital part, $\mathrm{inc}$ on the incident field, $\mathrm{out}$ on the outgoing solution, $\mathrm{ret}$ on the retarded field, $\mathrm{reg}$ on the regular representation, $\mathrm{can}$ on the canonical tensor, $\mathrm{pol}$ on the polarisation vector, $\mathrm{lor}$ on the Lorentz object, $\mathrm{wkb}$ on the approximation, $\mathrm{mhv}$ on the amplitude, $\mathrm{epr}$ on the steering value, $\mathrm{sp}$ on the spinor, $\mathrm{em}$ on the electromagnetic part, and $\mathrm{axf}$ and $\mathrm{pau}$ on the two displays of the regular matrices, axis-free and Pauli, which the gamma sections keep. Each stands low on the glyph it qualifies, and the word names the part or the role it marks.</p>
+<p><strong>Six codes separate two spellings.</strong> $\mathrm{rgs}$, $\mathrm{tpl}$, $\mathrm{prm}$, $\mathrm{dfc}$, $\mathrm{obf}$, $\mathrm{adg}$, each separating the rarer of two words that share three letters — regularised from regular, topological from top, perimeter from periodic, defective from defining, orbifold from orbital, adjugate from adjoint. A code is a label and stands low with the rest, on the object it qualifies: $h_{\mathrm{tpl}}$ the topological entropy.</p>
+<p><strong>The twelve algebraic structures carry no code at all.</strong> A product is written by its two slots and the conjugation each one carries, $\tilde Q_1\tilde Q_2$, $\tilde Q_1\tilde Q_2^{*}$, $\tilde Q_1^{\natural}\tilde Q_2$, $\tilde Q_1^{\natural}\tilde Q_2^{*}$, $\tilde Q_1\bullet\tilde Q_2$, $\tilde Q_1\bullet_{*}\tilde Q_2$, $\tilde Q_1\bullet_{\natural}\tilde Q_2$, $\tilde Q_1\bullet_{\natural*}\tilde Q_2$, $\tilde Q_1\wedge\tilde Q_2$, $\tilde Q_1\wedge_{*}\tilde Q_2$, $\tilde Q_1\wedge_{\natural}\tilde Q_2$, $\tilde Q_1\wedge_{\natural*}\tilde Q_2$, and the operator names the structure on its own.</p>
+<h2 id="the-subscripts">The Subscripts</h2>
+<p>A subscript is written with the underscore, <code>_</code>, inside the math delimiters, and the underscore takes a single token: one character is written bare, $Q_t$ and $Q_k$, and two characters or more are wrapped in braces, $Q_{n+1}$ and $\tilde Q_{\mathrm{f}t}$, because a bare underscore would take the first character alone.</p>
+<p><strong>The label is written first in the field, and an index already there follows it after a comma.</strong> $L_{\mathrm{axf},e_\mu}$ is the matrix of $\vec e_\mu$ in the axis-free frame, $s_{\mathrm{tot},z}$ the projection of the total, $\tilde S_{\mathrm{tot},k}$ the generator; the rule, its reasons and its four contrasts are stated in the mathematical <em>Index and Notation Conventions</em>, §<em>The Labels</em>.</p>
+<p><strong>A subscript is never a partial derivative.</strong> The subscript is an index or a label, a partial derivative is written with $\partial$, and the rule is fixed in <em>Operator and Calculus Conventions</em>, §<em>Conventions for Derivation</em>.</p>
+<p><strong>A coefficient carries a letter index and an element a number.</strong> In the quaternionic layers a coefficient is indexed by the direction it multiplies, $Q_x$ and $q_x$, and an element that is counted carries a number on its tilde, $\tilde Q_1, \tilde Q_2$. In the commutative layers, which have no direction, both the element and its coefficients carry the number of the element, $Q_1 = q_1 + iq'_1$. The two indices are of different kinds, a letter against a number, so a coefficient index is never read as the number of an element, nor the reverse.</p>
+<p><strong>It is allowed to add subscripts when several elements of the same kind are used.</strong> The permission covers the general elements, the units, the roots, the idempotents and the nilpotents alike: wherever a statement carries more than one element of one kind, the occurrences are told apart by a subscript.</p>
+<p><strong>A subscript counts, or it names.</strong> A subscript that only tells one occurrence from another is numeric, so that a family is $\tilde Q_1, \tilde Q_2, \dots$ and a second numbered family of the same statement takes the next numbers. A subscript that names the object or the role it qualifies is a <strong>role label</strong>, and a role label is written in upright roman, as in $\tilde Q_{\mathrm{f}t}$ and $\tilde U_{\mathrm r}$.</p>
+<p><strong>A role-labelled element carries its label in its coefficients.</strong> The generic element-valued field is $\tilde Q_{\mathrm f}=Q_{\mathrm{f}r_t}e_t+\vec Q_{\mathrm f}$, and its components are $Q_{\mathrm{f}t}$ and $Q_{\mathrm{f}\mu}$: the label $\mathrm f$ belongs to the element and is carried once into the component subscript, beside the direction, so that the components are $Q_{\mathrm{f}t}$ and $Q_{\mathrm{f}\mu}$; it does not count a family. A numbered family is unaffected, $\tilde Q_1=Q_{1t}e_t+\vec Q_1$.</p>
+<p><strong>The two parts are named by their star.</strong> The Hermitian part is $\tilde R_\Psi$, the fixed element of the star, and the anti-Hermitian part is $\tilde R_\Phi$, its anti-fixed element: $\tilde Q=\tilde R_\Psi+\tilde R_\Phi$ is the split read on the coefficients, defined in <em>Algebra and Element Conventions</em>, §<em>The Hermitian and Anti-Hermitian Subspaces</em>. The words <strong>informational</strong> and <strong>material</strong> name $\tilde R_\Psi$ and $\tilde R_\Phi$ in the physical articles. The two letters label the parts of one element and not two fields, so no label passes into the coefficients: $\tilde R_\Psi$ and $\tilde R_\Phi$ keep the names $Q_t,Q_x,Q_y,Q_z$ and select the slots.</p>
+<p><strong>An angular-momentum total takes the role subscript, and its projection the axis.</strong> A spin label is $s$ with projection $s_z$; the total of an orbital and a spin part, or of several spins, is $s_{\mathrm{tot}}$ with projection $s_{\mathrm{tot},z}$, and the operator is $\tilde S_{\mathrm{tot},k}=\tilde L_k+\tilde S_k$. The subscript $k$ is the vector index of the operator, and the three components close on $[\tilde S_{\mathrm{tot},i},\tilde S_{\mathrm{tot},j}]=\frac{m\,c\,i\,\epsilon_{ijk}\,\tilde{S}_{\mathrm{tot},k}}{k_m}$. The projection is not a component of the operator: it is the scalar weight, the eigenvalue of $\tilde S_{\mathrm{tot},3}$ on $|s_{\mathrm{tot}},s_{\mathrm{tot},z}\rangle$, and it names the axis $z$ on which the measurement is made. The role is repeated in the projection so that $s_{1z}$, $s_{2z}$ and $s_{\mathrm{tot},z}$ are told apart without the context; the operator keeps the vector index $k$, and the weight never takes it. The role and the axis share one pair of braces, $s_{\mathrm{tot},z}$, with a comma between them.</p>
+<p><strong>A sign is a subscript where the statement needs one</strong>, the member attached to $+1$ taking the subscript $+$ and the member attached to $-1$ the subscript $-$, as in $\tilde\Pi_+$ and $\tilde\Pi_-$. In the reduced biquaternion layer the sign belongs to the idempotent pair and to its coordinates, $\Pi_\pm$, $Q_{+}$ and $Q_{-}$, the two basis coordinates carrying the triangles, $Q_{\blacktriangle}$ and $Q_{\blacktriangledown}$, and a numbered element putting its number first in either case, $Q_{1+}$ and $Q_{1\blacktriangle}$; the element they build is $\breve Q$. The sign is read with the glyph: $\tilde Q_\pm$ names an element of the sector $\mathbb{B}_{\Psi}$ or $\mathbb{B}_{\Phi}$, while $Q_\pm$ names the idempotent coordinates of $\breve Q$.</p>
+<p>The forms a subscript takes are these.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>The subscript is</th>
+<th>Example</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>a digit</td>
+<td>$\tilde Q_1$, $\tilde Q_2$</td>
+</tr>
+<tr>
+<td>a letter</td>
+<td>$Q_k$, $Q_\mu$</td>
+</tr>
+<tr>
+<td>two indices</td>
+<td>$Q_{ab}$</td>
+</tr>
+<tr>
+<td>a sign</td>
+<td>$\tilde\Pi_\pm$</td>
+</tr>
+<tr>
+<td>an upright word</td>
+<td>$\tilde Q_{\mathrm{f}t}$, $\tilde U_{\mathrm r}$</td>
+</tr>
+<tr>
+<td>a grouped expression</td>
+<td>$Q_{n+1}$</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>The letter $\iota$ is not used.</strong> No physics article uses $\iota$, in any spelling. The comparison of the biquaternion algebra with the even Clifford algebra is written by its values, $e_t\mapsto I_4$ and $\vec e_x\mapsto\gamma_2\gamma_3$, or by the words "the Clifford image", and never by a symbol. An interior product is written as the pairing it is, $\omega(X_f,\,\cdot\,)=df$, and an inner automorphism in words. The letter is not reserved for a third object: it carries no meaning in the series, and a display that introduces it is a defect.</p>
+<h2 id="summary">Summary</h2>
+<p>Every <strong>label</strong> stands in the subscript, the label first in the field and an index already there after a comma, $T_{\mathrm{em},\mu\nu}$. Two of them mark the layer of a glyph: $\mathrm{fop}$ marks the Fock operator, the one glyph that is not an element, and $\mathrm{opp}$ marks the opposite algebra, written on an algebra name or on an element that names a tensor factor. Three qualifiers name a variant of an algebra, $\mathrm{spl}$, $\mathrm{red}$, $\mathrm{dln}$, and the corpus writes labels of its own, $\mathrm{orb}$, $\mathrm{inc}$, $\mathrm{out}$, $\mathrm{ret}$, $\mathrm{reg}$, $\mathrm{lor}$, $\mathrm{wkb}$, $\mathrm{epr}$ among them. A label of a common word is lowercase, a label of a name keeps its capital, $\mathrm{Had}$, $\mathrm{CS}$, $\mathrm{LT}$. The index is the mathematical <em>Index and Notation Conventions</em>, §<em>The Three-Letter Labels</em>.</p>
+<p>A subscript is written with the underscore and one token. It is a component or a label, never a derivative. A coefficient carries a letter index and a counted element a number; a subscript either counts or names, and a role label is carried once into the coefficients. A sign is a subscript where the statement needs one. The allowed forms are the digit, the letter, two indices, a sign, an upright word and a grouped expression. The family letters $L$ and $R$ of a regular matrix are labels of that kind, and they are written italic as the letters of the operators rather than upright as a word; they follow the size in the same subscript, $\mathsf M_{4L}$ and $\mathsf M_{4R}$. A label is written first in the subscript and an index already there follows it after a comma, $L_{\mathrm{axf},e_\mu}$ and $T_{\mathrm{em},\mu\nu}$; the frame closes the same field, $\mathsf M_{4L,\mathrm{pau}}$. The caret carries a power, a conjugation, a transposition and a construction, and no label; $\operatorname{sym}(V)$ is the one word that stands there. The letter $\iota$ is not used at all. An <strong>angular-momentum total</strong> takes the role subscript, $s_{\mathrm{tot}}$, and its projection the axis, $s_{\mathrm{tot},z}$; the operator carries the vector index, $\tilde S_{\mathrm{tot},k}$.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\mathrm{fop}$</td>
+<td>The Fock-operator mark, the one glyph that is not an element</td>
+</tr>
+<tr>
+<td>$\mathrm{opp}$</td>
+<td>The opposite algebra, written on an algebra name or on an element that names a tensor factor</td>
+</tr>
+<tr>
+<td>$\mathrm{orb}$, $\mathrm{inc}$, $\mathrm{out}$, $\mathrm{lor}$, $\mathrm{rgs}$, $\mathrm{tpl}$, $\mathrm{prm}$, $\mathrm{dfc}$, $\mathrm{obf}$, $\mathrm{adg}$</td>
+<td>The three-letter labels of a construction or a variant, the last six separating two spellings; the index is the mathematical <em>Index and Notation Conventions</em>, §<em>The Three-Letter Labels</em></td>
+</tr>
+<tr>
+<td>$\tilde Q_1\tilde Q_2$, $\tilde Q_1^{\natural}\tilde Q_2$, $\tilde Q_1\tilde Q_2^{*}$, $\tilde Q_1^{\natural}\tilde Q_2^{*}$</td>
+<td>The four general products, written by their two slots and their conjugations, never by a code; with $\bullet$ their symmetric parts and with $\wedge$ their antisymmetric parts, the class carried by the subscript</td>
+</tr>
+<tr>
+<td>$Q_{\mathrm{f}t}$, $Q_{n+1}$, $\tilde\Pi_\pm$, $L_{\mathrm{axf},e_\mu}$</td>
+<td>The subscript forms: a label carried with its direction in one field, a grouped expression, a sign, a label first and an index after a comma</td>
+</tr>
+<tr>
+<td>$s_{\mathrm{tot}}$, $s_{\mathrm{tot},z}$, $\tilde S_{\mathrm{tot},k}$</td>
+<td>Total angular-momentum label, its projection, and the operator, which carries the vector index $k$</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li><a href="algebra-and-element-conventions.html">Algebra and Element Conventions</a>, for the base these conventions qualify.</li>
+<li><a href="physics-units-and-most-common-elements.html">Physics Units and Most Common Elements</a>, for the physical units and the glyphs these marks qualify.</li>
+<li><a href="operator-and-calculus-conventions.html">Operator and Calculus Conventions</a>, for the operators that take the Fock mark and the derivative that is never a subscript.</li>
+<li><a href="../articles_maths/index-and-notation-conventions.html">Conventions in Mathematics</a>, for the same subscript rules on the mathematical corpus.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>
