@@ -227,7 +227,7 @@ The two formulations agree, as they must. The biquaternion formulation makes exp
 | $i$ | Scalar imaginary, $i^2 = -1$ |
 | $\boldsymbol{\sigma} = (\sigma_1, \sigma_2, \sigma_3)$ | Pauli matrices |
 | $\tilde\Pi(\vec u) = \tfrac{1}{2}(e_t + i\vec u)$ | Pure-state idempotent |
-| $\tilde R_\Psi = c r_t e_t + i\vec r_\Psi$ | Hermitian element (observable) |
+| $\tilde R_\Psi = r_t e_t + i\vec r_\Psi$ | Hermitian element (observable) |
 | $\mathrm{Tr}(\tilde Q)=2\,\mathrm{Sc}(\tilde Q)$ | Trace of an element of $\mathbb{B}_{\Psi}$ |
 | $p_+ = \langle\tilde\Pi_n,\tilde\Pi_z\rangle_{*}/\langle\tilde\Pi_z,e_t\rangle_{*} = \operatorname{Tr}(\tilde\Pi_n \circ \tilde\Pi_z^{*})=\operatorname{Tr}(\tilde\Pi_n \circ \tilde\Pi_z)$ | Born rule in biquaternion form (trace at normalisation) |
 

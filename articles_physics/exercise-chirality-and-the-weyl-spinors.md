@@ -68,7 +68,7 @@ $$
 
 and with $\frac{m\,c}{k_m}$ and $c$ restored the same statement is $(\Box - k_m^{2})\tilde{Ξ}_{\mathrm{sp}}=0$. The sign on the time term of $\Box$ is the series convention of the material sector, and the article uses that one operator and no second one. Thus the mass term, and only the mass term, couples the two values: when $m=0$ each part separately obeys a one-sided equation; for $m\neq0$ it obeys the Klein–Gordon equation. Here $k_m=mc/\hbar$ is the mass wave number, the inverse of the mass length.
 
-**Mass shell.** For a plane wave $\tilde{Ξ}_{\mathrm{sp}}\propto\exp(-ik_0x_0+i\vec k\cdot(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z))$ with $x_0 = c r'_{t}$, the Klein–Gordon equation gives $k_0^2 = \vec k^2 + k_m^{2}$. Equivalently, with the four-momentum $\tilde{P}_{\Phi} = iE/c\,e_t + \vec p\in\mathbb{B}_{\Phi}$ and $k =\frac{k_m\,P}{m\,c}$, whose components are $(k_0,\vec k) = (k_E,\vec p\,k_{\mathrm{mo}})$,
+**Mass shell.** For a plane wave $\tilde{Ξ}_{\mathrm{sp}}\propto\exp(-ik_0x_0+i\vec k\cdot(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z))$ with $x_0 = r'_{t}$, the Klein–Gordon equation gives $k_0^2 = \vec k^2 + k_m^{2}$. Equivalently, with the four-momentum $\tilde{P}_{\Phi} = iE/c\,e_t + \vec p\in\mathbb{B}_{\Phi}$ and $k =\frac{k_m\,P}{m\,c}$, whose components are $(k_0,\vec k) = (k_E,\vec p\,k_{\mathrm{mo}})$,
 
 $$
 \langle\tilde{P}_{\Phi}\rangle_{\natural} = \tilde{P}_{\Phi}\tilde{P}_{\Phi}^{\natural} = -\frac{E^2}{c^2} + \vec p^2 = -m^2c^2 \qquad(\vec p^2=|\vec p|^2),
@@ -161,10 +161,10 @@ $$
 
 where the last inclusion uses $i\mathbb{B}_{\Psi} = \mathbb{B}_{\Phi}$.
 
-**Biquaternion norm.** Write $H = c r_t\,e_t + i\vec r_\Psi$. Then $V = ic r_t\,e_t - \vec r_\Psi$, and
+**Biquaternion norm.** Write $H = r_t\,e_t + i\vec r_\Psi$. Then $V = i r_t\,e_t - \vec r_\Psi$, and
 
 $$
-\langle V\rangle_{\natural} = \langle iH\rangle_{\natural} = -\langle H\rangle_{\natural} = -c^2 r_t^2 + \vec r_\Psi^2 \qquad(\vec r_\Psi^2=|\vec r_\Psi|^2),
+\langle V\rangle_{\natural} = \langle iH\rangle_{\natural} = -\langle H\rangle_{\natural} = -r_t^2 + \vec r_\Psi^2 \qquad(\vec r_\Psi^2=|\vec r_\Psi|^2),
 $$
 
 which is the $(3,1)$ Minkowski form of $\mathbb{B}_{\Phi}$. The check is the single-element case: for $v = w$ of one value one has $H = ww^{*}$, whose quaternionic norm vanishes (residual $<10^{-14}$ over $100$ elements), so
@@ -245,7 +245,7 @@ at residual $5\times10^{-15}$, because $\bar{\tilde U}^{\,*} = \tilde U^{-1}$ by
 The solutions have the expected limits.
 
 - **Rapidity limits.** As $\theta_{\mathrm{rpd}}\to0$ both parts become indistinguishable, reflecting that the chiral splitting is a property of the full Lorentz group, not of its compact subgroup; for large $\theta_{\mathrm{rpd}}$ the parts diverge exponentially, one part stretched by $\exp(\theta_{\mathrm{rpd}}/2)$ and the other contracted by $\exp(-\theta_{\mathrm{rpd}}/2)$.
-- **$v = \pm w$ (one element):** $H = \pm ww^{*}$ has vanishing norm, so $V$ is null. For a generic pair, $V$ is timelike or spacelike according to the sign of $\langle V\rangle_{\natural} = -c^2 r_t^2+\vec r_\Psi^2$.
+- **$v = \pm w$ (one element):** $H = \pm ww^{*}$ has vanishing norm, so $V$ is null. For a generic pair, $V$ is timelike or spacelike according to the sign of $\langle V\rangle_{\natural} = -r_t^2+\vec r_\Psi^2$.
 - **$\theta = 2\pi$ versus $4\pi$:** the field picks up $-1$ at $2\pi$ and returns at $4\pi$, while the four-vector is unchanged at both — the double cover in its simplest instance.
 
 ## What the Solutions Illustrate

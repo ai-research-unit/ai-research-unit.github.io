@@ -85,7 +85,7 @@ The theorem is about wedges because the wedge is the region for which the releva
 $$
 \zeta=r_x\partial/\partial r'_t+c^2r'_t\partial/\partial R_x=c\partial/\partial\eta,
 $$
-which is future-directed inside $W_R$ and past-directed inside $W_L$, and whose orbits are the constant-$\rho$ hyperbolas $x=\rho\cosh\eta$, $c r'_{t}=\rho\sinh\eta$. In the material sector $\mathbb{B}_{\Phi}$ the boundary lies in the **zero-divisor cone** $\langle\tilde R_\Phi\rangle_{\natural}=0$, as established in the companion article on $\mathbb{B}_{\Phi}$ and used in the Unruh article. In the boost plane $(x_0,x_1)$ the wedge is exactly a connected component of the complement of the light cone of that plane — the two null lines $x_1=\pm x_0$ — and the boost is exactly the Killing vector that preserves it.
+which is future-directed inside $W_R$ and past-directed inside $W_L$, and whose orbits are the constant-$\rho$ hyperbolas $x=\rho\cosh\eta$, $r'_{t}=\rho\sinh\eta$. In the material sector $\mathbb{B}_{\Phi}$ the boundary lies in the **zero-divisor cone** $\langle\tilde R_\Phi\rangle_{\natural}=0$, as established in the companion article on $\mathbb{B}_{\Phi}$ and used in the Unruh article. In the boost plane $(x_0,x_1)$ the wedge is exactly a connected component of the complement of the light cone of that plane — the two null lines $x_1=\pm x_0$ — and the boost is exactly the Killing vector that preserves it.
 
 **No such flow exists for a general region.** For a region $O$ that is not a wedge, there is in general no Killing vector of Minkowski space whose flow preserves $O$, and the modular Hamiltonian $H_{\mathrm{modular},O}=-\log\Delta_O$ is not a geometric generator: it is a nonlocal operator on the region, not an integral of a local current against a Killing vector. The contrast is stark already in the vacuum. For a wedge the modular Hamiltonian is the boost $H_{\mathrm{modular,boost}}$; for a ball of radius $R$ in a conformal field theory it is the Casini–Huerta–Myers operator
 $$
@@ -110,15 +110,15 @@ $$
 \tilde U_{\Psi,\mathrm b}(\theta_{\mathrm{rpd}})=\exp\!\Big(\frac{\theta_{\mathrm{rpd}}}{2}G_1\Big)
 =\cosh\frac{\theta_{\mathrm{rpd}}}{2}+i\sinh\frac{\theta_{\mathrm{rpd}}}{2}\,\vec e_x \in\mathbb{B}_{\Psi},
 $$
-Hermitian and of unit norm, $\tilde U_{\Psi,\mathrm b}\tilde U_{\Psi,\mathrm b}^{\natural}=e_t$. On an element $\tilde R_\Phi=ic r'_t e_t+r_x\vec e_x+r_y\vec e_y+r_z\vec e_z\in\mathbb{B}_{\Phi}$ the rotor acts by **rotor conjugation** $\tilde R_\Phi\mapsto\tilde U_{\Psi,\mathrm b}(\theta_{\mathrm{rpd}})\tilde R_\Phi\tilde U_{\Psi,\mathrm b}(\theta_{\mathrm{rpd}})$ (the rotor is Hermitian, so $\tilde U_{\Psi,\mathrm b}^{*}=\tilde U_{\Psi,\mathrm b}$), and a direct recomputation in the matrix representation gives
+Hermitian and of unit norm, $\tilde U_{\Psi,\mathrm b}\tilde U_{\Psi,\mathrm b}^{\natural}=e_t$. On an element $\tilde R_\Phi=i r'_t e_t+r_x\vec e_x+r_y\vec e_y+r_z\vec e_z\in\mathbb{B}_{\Phi}$ the rotor acts by **rotor conjugation** $\tilde R_\Phi\mapsto\tilde U_{\Psi,\mathrm b}(\theta_{\mathrm{rpd}})\tilde R_\Phi\tilde U_{\Psi,\mathrm b}(\theta_{\mathrm{rpd}})$ (the rotor is Hermitian, so $\tilde U_{\Psi,\mathrm b}^{*}=\tilde U_{\Psi,\mathrm b}$), and a direct recomputation in the matrix representation gives
 $$
-c r'_t\longmapsto c r'_t\cosh\theta_{\mathrm{rpd}}-r_x\sinh\theta_{\mathrm{rpd}},\qquad
-r_x\longmapsto r_x\cosh\theta_{\mathrm{rpd}}-c r'_t\sinh\theta_{\mathrm{rpd}},\qquad
+r'_t\longmapsto r'_t\cosh\theta_{\mathrm{rpd}}-r_x\sinh\theta_{\mathrm{rpd}},\qquad
+r_x\longmapsto r_x\cosh\theta_{\mathrm{rpd}}-r'_t\sinh\theta_{\mathrm{rpd}},\qquad
 r_y,r_z\ \text{unchanged},
 $$
-with the biquaternion norm preserved, $\langle\tilde U_{\Psi,\mathrm b}\tilde R_\Phi\tilde U_{\Psi,\mathrm b}\rangle_{\natural}=\langle\tilde R_\Phi\rangle_{\natural}$. On the Rindler orbit $c r'_t=cr'_t=\rho\sinh\eta$, $r_x=x=\rho\cosh\eta$, the same computation gives
+with the biquaternion norm preserved, $\langle\tilde U_{\Psi,\mathrm b}\tilde R_\Phi\tilde U_{\Psi,\mathrm b}\rangle_{\natural}=\langle\tilde R_\Phi\rangle_{\natural}$. On the Rindler orbit $r'_t=r'_t=\rho\sinh\eta$, $r_x=x=\rho\cosh\eta$, the same computation gives
 $$
-c r'_t\longmapsto\rho\sinh(\eta-\theta_{\mathrm{rpd}}),\qquad r_x\longmapsto\rho\cosh(\eta-\theta_{\mathrm{rpd}}),
+r'_t\longmapsto\rho\sinh(\eta-\theta_{\mathrm{rpd}}),\qquad r_x\longmapsto\rho\cosh(\eta-\theta_{\mathrm{rpd}}),
 $$
 so the rotor of rapidity $\theta_{\mathrm{rpd}}$ shifts the Rindler time by $\eta\mapsto\eta-\theta_{\mathrm{rpd}}$. This is the orientation fixed in the Unruh article, and it is used below.
 
@@ -208,7 +208,7 @@ The question posed for this article is whether the biquaternion framework's boos
 
 *Unitarity.* The modular flow is $*$-unitary: $\Delta^{is}=\exp(-2\pi isH_{\mathrm{modular,boost}})$ satisfies $\Delta^{is}(\Delta^{is})^\dagger=1$. The finite-dimensional boost rotor is Hermitian, $\tilde U_{\Psi,\mathrm b}(\theta_{\mathrm{rpd}})^{*}=\tilde U_{\Psi,\mathrm b}(\theta_{\mathrm{rpd}})$, with $\tilde U_{\Psi,\mathrm b}(\theta_{\mathrm{rpd}})^2=\exp(\theta_{\mathrm{rpd}} G_1)\neq e_t$ for $\theta_{\mathrm{rpd}}\neq0$, so it is not $*$-unitary implementing a symmetry of the finite-dimensional Hilbert space. This is the familiar statement that the Lorentz group, being noncompact, has no nontrivial finite-dimensional $*$-unitary representation; the $*$-unitary implementation of the boost exists only on the field-theoretic Hilbert space, not inside $\mathbb{B}$.
 
-*Inner versus two-sided.* In finite dimension the modular flow is inner, $\sigma_s(\tilde Q_1)=e^{-is\tilde H_{\Psi,\mathrm{modular}}}\tilde Q_1\,e^{is\tilde H_{\Psi,\mathrm{modular}}}=\exp(-isK)\tilde Q_1 \exp(isK)$, whose generator on the algebra is the **commutator** $-i[H_{\mathrm{modular}},\cdot]$. The geometric boost on $\mathbb{B}_{\Phi}$ is the **two-sided** action with generator the anticommutator $\tfrac12(G_1\cdot+\cdot G_1)$. On the boost plane the commutator vanishes, $-i[G_1,\tilde R_\Phi]=0$ for $\tilde R_\Phi=ic r'_t e_t+r_x\vec e_x$, while the two-sided action moves $c r'_t,r_x$ precisely as the boost; and off the boost plane the commutator generates a rotation in the $(\vec e_y,\vec e_z)$ plane. So the finite-dimensional inner flow cannot be the geometric boost on the material sector. This is the exact sense in which the model verifies the generator but not the flow.
+*Inner versus two-sided.* In finite dimension the modular flow is inner, $\sigma_s(\tilde Q_1)=e^{-is\tilde H_{\Psi,\mathrm{modular}}}\tilde Q_1\,e^{is\tilde H_{\Psi,\mathrm{modular}}}=\exp(-isK)\tilde Q_1 \exp(isK)$, whose generator on the algebra is the **commutator** $-i[H_{\mathrm{modular}},\cdot]$. The geometric boost on $\mathbb{B}_{\Phi}$ is the **two-sided** action with generator the anticommutator $\tfrac12(G_1\cdot+\cdot G_1)$. On the boost plane the commutator vanishes, $-i[G_1,\tilde R_\Phi]=0$ for $\tilde R_\Phi=i r'_t e_t+r_x\vec e_x$, while the two-sided action moves $r'_t,r_x$ precisely as the boost; and off the boost plane the commutator generates a rotation in the $(\vec e_y,\vec e_z)$ plane. So the finite-dimensional inner flow cannot be the geometric boost on the material sector. This is the exact sense in which the model verifies the generator but not the flow.
 
 *State selection.* The theorem identifies $\Delta$ with the boost for the **vacuum**. The framework's modular theory requires a faithful state and does not select one: the distinguished tracial state $\tilde{Ϛ}_{\Psi}=\tfrac12e_t$ gives the trivial flow. For the boost-thermal state $\tilde{Ϛ}_{\Psi}\propto \exp(-\beta G_1)$ the modular Hamiltonian is
 $$
@@ -266,10 +266,10 @@ The framework does **not** make the geometric boost an inner automorphism of the
 | $i$ | Scalar imaginary, $i^2=-1$ |
 | $\mathbb{B}_{\Phi},\mathbb{B}_{\Psi}$ | Material (anti-Hermitian) and informational (Hermitian) sectors |
 | $\mathbb{B}_{H}$ | Real-quaternion subspace |
-| $\tilde R_\Phi=i c r'_t\,e_t+r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z$ | Material-sector coordinate, $\in\mathbb{B}_{\Phi}$ |
-| $\langle\tilde R_\Phi\rangle_{\natural}=\tilde R_\Phi\tilde{R}_\Phi^{\natural}=-c^2{r'_{t}}^2+r_x^2+r_y^2+r_z^2$ | Biquaternion norm |
+| $\tilde R_\Phi=i r'_t\,e_t+r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z$ | Material-sector coordinate, $\in\mathbb{B}_{\Phi}$ |
+| $\langle\tilde R_\Phi\rangle_{\natural}=\tilde R_\Phi\tilde{R}_\Phi^{\natural}=-{r'_{t}}^2+r_x^2+r_y^2+r_z^2$ | Biquaternion norm |
 | $W_R=\{x:x_1>|x_0|\}$, $W_L$ | Right wedge and its mirror (causal complement) |
-| $\rho,\eta$ | Rindler radius and time, $x=\rho\cosh\eta$, $c r'_{t}=\rho\sinh\eta$ |
+| $\rho,\eta$ | Rindler radius and time, $x=\rho\cosh\eta$, $r'_{t}=\rho\sinh\eta$ |
 | $\zeta=r_x\partial/\partial r'_t+c^2r'_t\partial/\partial R_x=c\partial/\partial\eta$ | Boost Killing vector |
 | $G_1=i\vec e_x\in\mathbb{B}_{\Psi}$ | Boost generator (Hermitian, $G_1^2=e_t$) |
 | $\tilde U_{\Psi,\mathrm b}(\theta_{\mathrm{rpd}})=\cosh\frac{\theta_{\mathrm{rpd}}}{2}+i\sinh\frac{\theta_{\mathrm{rpd}}}{2}\vec e_x$ | Boost rotor (Hermitian, unit norm) |

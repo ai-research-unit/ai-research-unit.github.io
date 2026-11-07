@@ -29,7 +29,7 @@ lies in $\mathbb{B}_{\Phi}$ and satisfies $\mathrm{Sc}(\tilde{\nabla}^{\natural}
 
 **Two defects in the read list, handled rather than repeated.** First, the four-force of the parent is defined by the **proper**-time derivative, $\tilde{\mathcal F}_{\Phi,\mathrm{frc}} = d\tilde{P}_{\Phi}/d\tau$, so the sum $\sum_a\tilde{\mathcal F}_{\mathrm{frc},a}$ across bodies is *not* the rate of change of the total four-momentum unless all the Lorentz factors agree; *Exercise: Four-Momentum Conservation in a Collision* reports this, and the conservation law is stated correctly below. Second, the translation of a plane wave is by a **central phase**, $\exp(i\,\mathrm{Sc}(\tilde P_{\Phi}\tilde{R}_{\Phi,0}^{\natural}))$, and the $i$ is not optional: the same scalar in a real exponential, $\exp(\mathrm{Sc}(\tilde P_{\Phi}\tilde{R}_{\Phi,0}^{\natural}))$, is a dilation and not a phase at all.
 
-**Conventions.** The units, the coefficient basis, the conjugations, the two sectors, the gradient and its quaternion conjugate, the d'Alembertian, the trace and the two displays are those of the read list and of the conventions files of the series; they are used here and not restated. One calibration is this article's own, and it belongs to the two coordinate charts rather than to the algebra: the gradient is taken with respect to the coefficients $Q_\mu$, with $Q_t=i c r'_t$, and the energy–momentum tensor of the later sections is written in the real coordinates $x_\mu=(c r'_{t},r_x,r_y,r_z)$, which are the same chart with $Q_t=ix_0$; the two are held apart where they are used. Throughout, $c$ is the **speed of light in the medium** and $c_0$ the vacuum value; $\vec v$ is reserved for particle and frame velocities.
+**Conventions.** The units, the coefficient basis, the conjugations, the two sectors, the gradient and its quaternion conjugate, the d'Alembertian, the trace and the two displays are those of the read list and of the conventions files of the series; they are used here and not restated. One calibration is this article's own, and it belongs to the two coordinate charts rather than to the algebra: the gradient is taken with respect to the coefficients $Q_\mu$, with $Q_t=i r'_t$, and the energy–momentum tensor of the later sections is written in the real coordinates $x_\mu=(r'_{t},r_x,r_y,r_z)$, which are the same chart with $Q_t=ix_0$; the two are held apart where they are used. Throughout, $c$ is the **speed of light in the medium** and $c_0$ the vacuum value; $\vec v$ is reserved for particle and frame velocities.
 
 **The Dirac field, once.** The Dirac content of the later sections is the element $\tilde{Ξ}_{\mathrm{sp}}=\tilde{Ξ}_{\mathrm{sp},L}+\tilde{Ξ}_{\mathrm{sp},R}$ of $\mathbb{B}$, whose two parts carry the two values: the value of $\tilde{Ξ}_{\mathrm{sp},L}$ is $-1$, the value of $\tilde{Ξ}_{\mathrm{sp},R}$ is $+1$, and only the zero element carries both. A product takes the value of its right factor, and left multiplication keeps the value, so the two parts are stable under multiplication on the left. The adjoint with which the currents are formed is the algebra's own conjugation, $\tilde{Ξ}_{\mathrm{sp}}^*$. The same objects under their legacy names are collected in the closing section *The Legacy Pauli Gamma Formulation*, and none of those names is used before it.
 
@@ -44,7 +44,7 @@ S[\tilde R_\Phi] = -mc\int\sqrt{-\,d\tilde R_\Phi\,d\tilde{R}_\Phi^{\natural}},
 \qquad d\tilde R_\Phi = ic\,dr'_t\,e_t + d(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)\in\mathbb{B}_{\Phi} .
 $$
 
-Because $d\tilde R_\Phi\,d\tilde{R}_\Phi^{\natural} = -c^2d{r'_{t}}^2 +dr_x^2+dr_y^2+dr_z^2 = -c^2d\tau^2$ with $\tau$ the proper time, the action is $S = -mc^2\int dr'_t/\gamma$, and the Lagrangian in the coordinate time $r'_t$ is
+Because $d\tilde R_\Phi\,d\tilde{R}_\Phi^{\natural} = -d{r'_{t}}^2 +dr_x^2+dr_y^2+dr_z^2 = -c^2d\tau^2$ with $\tau$ the proper time, the action is $S = -mc^2\int dr'_t/\gamma$, and the Lagrangian in the coordinate time $r'_t$ is
 
 $$
 \mathrm{Lag}(\vec v) = -mc^2\sqrt{1-\vec v^2/c^2} = -\frac{mc^2}{\gamma},
@@ -67,10 +67,10 @@ $$
 +k_m^{2}\,{\xi_{\mathrm{scl}}}^{*}\xi_{\mathrm{scl}} ,
 $$
 
-the uniform signs being what the $\natural$ conjugation supplies. The time term is nevertheless negative, because $\partial/\partial R_t=\partial/\partial i c r'_t$ acts on both factors and two applications of it give $-\frac{1}{c^2}\partial^2/\partial {r'_t}^2$; in the real coordinates $x_\mu=(c r'_{t},r_x,r_y,r_z)$ the same expression reads
+the uniform signs being what the $\natural$ conjugation supplies. The time term is nevertheless negative, because $\partial/\partial R_t=\partial/\partial i r'_t$ acts on both factors and two applications of it give $-\partial^2/\partial {r'_t}^2$; in the real coordinates $x_\mu=(r'_{t},r_x,r_y,r_z)$ the same expression reads
 
 $$
-\mathcal{L} = -\frac{1}{c^2}\left|\frac{\partial\xi_{\mathrm{scl}}}{\partial r'_t}\right|^2 + |\nabla\xi_{\mathrm{scl}}|^2 + k_m^{2}|\xi_{\mathrm{scl}}|^2 .
+\mathcal{L} = -\left|\frac{\partial\xi_{\mathrm{scl}}}{\partial r'_t}\right|^2 + |\nabla\xi_{\mathrm{scl}}|^2 + k_m^{2}|\xi_{\mathrm{scl}}|^2 .
 $$
 
 This is the form used with the energy–momentum tensor below. The Euler–Lagrange equation of $\mathcal{L}$ is the biquaternion Klein–Gordon equation
@@ -128,10 +128,10 @@ The overall sign of a current is free — the symmetry with the opposite generat
 
 ### The Current Lies in the Material Sector
 
-The temporal component in the $i c r'_t$ basis is $J_t = i\left(\xi_{\mathrm{scl}}\,\frac{\partial{\xi_{\mathrm{scl}}}^{*}}{\partial R_t} - {\xi_{\mathrm{scl}}}^{*}\frac{\partial\xi_{\mathrm{scl}}}{\partial R_t}\right)$. Because $\partial/\partial R_t=\partial/\partial i c r'_t$ and the spatial derivatives are plain, the two kinds of component are recorded separately:
+The temporal component in the $i r'_t$ basis is $J_t = i\left(\xi_{\mathrm{scl}}\,\frac{\partial{\xi_{\mathrm{scl}}}^{*}}{\partial R_t} - {\xi_{\mathrm{scl}}}^{*}\frac{\partial\xi_{\mathrm{scl}}}{\partial R_t}\right)$. Because $\partial/\partial R_t=-i\,\partial/\partial r'_t$ and the spatial derivatives are plain, the two kinds of component are recorded separately:
 
 $$
-J_t = -\frac{1}{c}\left({\xi_{\mathrm{scl}}}^{*}\partial/\partial r'_t\,\xi_{\mathrm{scl}} - \xi_{\mathrm{scl}}\,\partial/\partial r'_t\,{\xi_{\mathrm{scl}}}^{*}\right) = -\frac{2i}{c}\,\mathrm{Im}\!\left({\xi_{\mathrm{scl}}}^{*}\frac{\partial\xi_{\mathrm{scl}}}{\partial r'_t}\right),
+J_t = -\left({\xi_{\mathrm{scl}}}^{*}\partial/\partial r'_t\,\xi_{\mathrm{scl}} - \xi_{\mathrm{scl}}\,\partial/\partial r'_t\,{\xi_{\mathrm{scl}}}^{*}\right) = -2i\,\mathrm{Im}\!\left({\xi_{\mathrm{scl}}}^{*}\frac{\partial\xi_{\mathrm{scl}}}{\partial r'_t}\right),
 $$
 
 which is **purely imaginary**, while the spatial components
@@ -143,10 +143,10 @@ $$
 are real, the $i$ of the current multiplying the $-2i$ of the Wronskian to $+2$. Hence $\tilde{J}_{\Phi}\in\mathbb{B}_{\Phi}$, with imaginary scalar part and real vector part, exactly as the four-current of relativistic mechanics. Writing $J_t = ic\rho$ recovers the parent's convention $\tilde{J}_{\Phi} = ic\rho\,e_t + \vec j$, with
 
 $$
-\rho = \frac{i}{c^2}\left({\xi_{\mathrm{scl}}}^{*}\partial/\partial r'_t\,\xi_{\mathrm{scl}} - \xi_{\mathrm{scl}}\,\partial/\partial r'_t\,{\xi_{\mathrm{scl}}}^{*}\right),
+\rho = \frac{i}{c}\left({\xi_{\mathrm{scl}}}^{*}\partial/\partial r'_t\,\xi_{\mathrm{scl}} - \xi_{\mathrm{scl}}\,\partial/\partial r'_t\,{\xi_{\mathrm{scl}}}^{*}\right),
 $$
 
-which is real and **positive** on a positive-frequency wave $\xi_{\mathrm{scl}}\propto\exp(i(\vec k\cdot\vec r-\omega r'_t))$, where it equals $\frac{2\omega}{c^2}|\xi_{\mathrm{scl}}|^2$. This is the sign convention of *The Klein–Gordon Equation in Biquaternionic Form*, and it is what fixes the sign of $\tilde{J}_{\Phi}$ above.
+which is real and **positive** on a positive-frequency wave $\xi_{\mathrm{scl}}\propto\exp(i(\vec k\cdot\vec r-\omega r'_t))$, where it equals $\frac{2\omega}{c}|\xi_{\mathrm{scl}}|^2$. This is the sign convention of *The Klein–Gordon Equation in Biquaternionic Form*, and it is what fixes the sign of $\tilde{J}_{\Phi}$ above.
 
 ### Conservation and the Identity Behind It
 
@@ -168,7 +168,7 @@ $$
 \mathrm{Sc}\!\left(\tilde{\nabla}^{\natural}\tilde{J}_{\Phi}\right) = 0 \quad\text{on shell},
 $$
 
-which is the continuity equation $\partial/\partial r'_t\rho + \mathrm{div}\,\vec j = 0$. The reason the time component needs no separate sign is the same one met above: $\partial/\partial R_t=\partial/\partial i c r'_t$ meets $J_t=ic\rho$, and the $ic$ of the variable cancels the $ic$ of the current, leaving the plain $\partial\rho/\partial r'_t$ of the continuity equation.
+which is the continuity equation $\partial/\partial r'_t\rho + \mathrm{div}\,\vec j = 0$. The reason the time component needs no separate sign is the same one met above: $\partial/\partial R_t=\partial/\partial i r'_t$ meets $J_t=ic\rho$, and the $ic$ of the variable cancels the $ic$ of the current, leaving the plain $\partial\rho/\partial r'_t$ of the continuity equation.
 
 ### On What Case This Was Checked
 
@@ -317,7 +317,7 @@ $$
 \tilde{Ξ}_0\ \text{constant}.
 $$
 
-The multiplier is **central and of unit modulus**, because $\mathrm{Sc}(\tilde P_{\Phi}\tilde{R}_{\Phi,0}^{\natural}) = \langle\tilde P_{\Phi},\tilde{R}_{\Phi,0}\rangle_{\natural}$ is real: writing $\tilde P_{\Phi} = i\frac{\omega}{c}e_t + \vec k$ and $\tilde{R}_{\Phi,0} = i R_{0t} e_t + \vec R_0$, with $R_{0t} = c r'_{t}_0$,
+The multiplier is **central and of unit modulus**, because $\mathrm{Sc}(\tilde P_{\Phi}\tilde{R}_{\Phi,0}^{\natural}) = \langle\tilde P_{\Phi},\tilde{R}_{\Phi,0}\rangle_{\natural}$ is real: writing $\tilde P_{\Phi} = i\frac{\omega}{c}e_t + \vec k$ and $\tilde{R}_{\Phi,0} = i R_{0t} e_t + \vec R_0$, with $R_{0t} = r'_{t}_0$,
 
 $$
 \mathrm{Sc}\!\left(\tilde P_{\Phi}\tilde{R}_{\Phi,0}^{\natural}\right) = -\frac{\omega R_{0t}}{c} + \vec k\cdot\vec R_0 = \vec k\cdot\vec R_0-\omega r'_{t,0} .
@@ -339,10 +339,10 @@ with the scalar Lagrangian of the same coordinates,
 
 $$
 \mathcal{L}_{\mathrm{scl},\xi} = \sum_\mu\frac{\partial{\xi_{\mathrm{scl}}}^*}{\partial R_\mu}\frac{\partial\xi_{\mathrm{scl}}}{\partial R_\mu} + k_m^{2}|\xi_{\mathrm{scl}}|^2
-= -\frac{1}{c^2}\left|\frac{\partial\xi_{\mathrm{scl}}}{\partial r'_t}\right|^2 + |\nabla\xi_{\mathrm{scl}}|^2 + k_m^{2}|\xi_{\mathrm{scl}}|^2 .
+= -\left|\frac{\partial\xi_{\mathrm{scl}}}{\partial r'_t}\right|^2 + |\nabla\xi_{\mathrm{scl}}|^2 + k_m^{2}|\xi_{\mathrm{scl}}|^2 .
 $$
 
-Here $x_\mu=(c r'_{t},r_x,r_y,r_z)$ are the real coordinates, the chart of $Q_\mu$ with the $i$ of the time coefficient removed, $Q_t=ix_0$: $Q_0=i c r'_t$ carries the $i$, while $x_0=c r'_{t}$ does not. Both indices of $T$ are low, the first the row. The coefficient of $\mathcal{L}_{\mathrm{scl},\xi}$ is the plain form of the two units, $\mathrm{Sc}(e_\mu e_\nu)=\varepsilon_\mu\delta_{\mu\nu}$: plus on the time entry and minus on the three space entries. The derivative index of the conservation law carries one minus on the time direction and none on the three space directions, and that minus is the square of the $i$ in $Q_t=i c r'_t$, spent once and written out. Translation invariance gives
+Here $x_\mu=(r'_{t},r_x,r_y,r_z)$ are the real coordinates, the chart of $Q_\mu$ with the $i$ of the time coefficient removed, $Q_t=ix_0$: $Q_0=i r'_t$ carries the $i$, while $x_0=r'_{t}$ does not. Both indices of $T$ are low, the first the row. The coefficient of $\mathcal{L}_{\mathrm{scl},\xi}$ is the plain form of the two units, $\mathrm{Sc}(e_\mu e_\nu)=\varepsilon_\mu\delta_{\mu\nu}$: plus on the time entry and minus on the three space entries. The derivative index of the conservation law carries one minus on the time direction and none on the three space directions, and that minus is the square of the $i$ in $Q_t=i r'_t$, spent once and written out. Translation invariance gives
 
 $$
 -\frac{\partial T_{0\nu}}{\partial x_0}+\sum_k\frac{\partial T_{k\nu}}{\partial r_k} = 0
@@ -351,7 +351,7 @@ $$
 on shell. Its time–time component is the energy density,
 
 $$
-T_{00} = \frac{1}{c^2}\left|\frac{\partial\xi_{\mathrm{scl}}}{\partial r'_t}\right|^2 + |\nabla\xi_{\mathrm{scl}}|^2 + k_m^{2}|\xi_{\mathrm{scl}}|^2 > 0,
+T_{00} = \left|\frac{\partial\xi_{\mathrm{scl}}}{\partial r'_t}\right|^2 + |\nabla\xi_{\mathrm{scl}}|^2 + k_m^{2}|\xi_{\mathrm{scl}}|^2 > 0,
 $$
 
 positive for every configuration because each term is a square. This was checked by recomputation on an on-shell superposition of two plane waves: the four divergences $-\partial T_{0\nu}/\partial x_0+\sum_k\partial T_{k\nu}/\partial r_k$ vanish to $10^{-10}$, the tensor is symmetric, and $T_{00}$ equals the expression above.
@@ -368,11 +368,11 @@ $$
 \mathrm{Sc}\!\left(\tilde{\nabla}\tilde{W}_{\Psi}\right) = -\frac{i}{c}\left(\frac{\partial W}{\partial r'_t}+\mathrm{div}\,\vec S\right) = \frac{i}{c}\,\vec J\cdot\vec E ,
 $$
 
-the last equality being the Poynting theorem. The factor $i$ is uniform across the two terms, as a temporal component must be in the $i c r'_t$ convention, and dividing it out recovers $\partial W/\partial r'_t + \mathrm{div}\,\vec S + \vec J\cdot\vec E = 0$. The real form $\tilde W_{\Psi} = W + \frac{1}{c}\vec S$ fails exactly this test: its scalar divergence carries the $i$ on the time term only, and on a free plane wave it equals $\frac{1-i}{c}\partial W/\partial r'_t$, which is not zero. What *Exercise: The Electromagnetic Energy–Momentum Tensor* isolates is that factor $i$ on the Poynting part, and the equation $\tilde{\nabla}\tilde{W}_{\Psi} = -\tilde{\mathcal F}$, taken as a biquaternion identity with a power–force density on the right, is not what the corpus establishes for either form: what it verifies is the scalar statement above, not the vector one. Read as a Noether statement, $\mathrm{Sc}(\tilde{\nabla}\tilde{W}_{\Psi}) = \frac{i}{c}\vec J\cdot\vec E$ says the translation current is conserved up to the work done on the charges — the source is present, so the field alone is not closed.
+the last equality being the Poynting theorem. The factor $i$ is uniform across the two terms, as a temporal component must be in the $i r'_t$ convention, and dividing it out recovers $\partial W/\partial r'_t + \mathrm{div}\,\vec S + \vec J\cdot\vec E = 0$. The real form $\tilde W_{\Psi} = W + \frac{1}{c}\vec S$ fails exactly this test: its scalar divergence carries the $i$ on the time term only, and on a free plane wave it equals $\frac{1-i}{c}\partial W/\partial r'_t$, which is not zero. What *Exercise: The Electromagnetic Energy–Momentum Tensor* isolates is that factor $i$ on the Poynting part, and the equation $\tilde{\nabla}\tilde{W}_{\Psi} = -\tilde{\mathcal F}$, taken as a biquaternion identity with a power–force density on the right, is not what the corpus establishes for either form: what it verifies is the scalar statement above, not the vector one. Read as a Noether statement, $\mathrm{Sc}(\tilde{\nabla}\tilde{W}_{\Psi}) = \frac{i}{c}\vec J\cdot\vec E$ says the translation current is conserved up to the work done on the charges — the source is present, so the field alone is not closed.
 
-### A Caution on the $i c r'_t$ Convention
+### A Caution on the $i r'_t$ Convention
 
-The energy density is not $\mathcal{L}_{\mathrm{scl},\xi}$ and is not obtained from it by a flat sum: $T_{00}=\frac{1}{c^2}|\dot\xi_{\mathrm{scl}}|^2+|\nabla\xi_{\mathrm{scl}}|^2+k_m^{2}|\xi_{\mathrm{scl}}|^2$ while $\mathcal{L}_{\mathrm{scl},\xi}=-\frac{1}{c^2}|\dot\xi_{\mathrm{scl}}|^2+|\nabla\xi_{\mathrm{scl}}|^2+k_m^{2}|\xi_{\mathrm{scl}}|^2$, with the mass wave number $k_m=mc/\hbar$ and its reciprocal $k_m=mc/\hbar$. The gradient and $\Box$ live in the $Q_\mu$ frame, where $Q_0=i c r'_t$; the tensor lives in $x_\mu=(c r'_{t},r_x,r_y,r_z)$, where the time component is real and the minus is written on the time derivative. Mixing the two charts produces the wrong sign on the time derivative, and the mismatch is the same $1/i^2=-1$ that makes the time term of the uniform $Q$-frame sum of $\mathcal{L}$ negative once written in the real coordinates. This is the same caution the energy–momentum exercise records for the trace.
+The energy density is not $\mathcal{L}_{\mathrm{scl},\xi}$ and is not obtained from it by a flat sum: $T_{00}=\frac{1}{c^2}|\dot\xi_{\mathrm{scl}}|^2+|\nabla\xi_{\mathrm{scl}}|^2+k_m^{2}|\xi_{\mathrm{scl}}|^2$ while $\mathcal{L}_{\mathrm{scl},\xi}=-\frac{1}{c^2}|\dot\xi_{\mathrm{scl}}|^2+|\nabla\xi_{\mathrm{scl}}|^2+k_m^{2}|\xi_{\mathrm{scl}}|^2$, with the mass wave number $k_m=mc/\hbar$ and its reciprocal $k_m=mc/\hbar$. The gradient and $\Box$ live in the $Q_\mu$ frame, where $Q_0=i r'_t$; the tensor lives in $x_\mu=(r'_{t},r_x,r_y,r_z)$, where the time component is real and the minus is written on the time derivative. Mixing the two charts produces the wrong sign on the time derivative, and the mismatch is the same $1/i^2=-1$ that makes the time term of the uniform $Q$-frame sum of $\mathcal{L}$ negative once written in the real coordinates. This is the same caution the energy–momentum exercise records for the trace.
 
 ## Lorentz Invariance and the Angular-Momentum Bivector
 
@@ -536,7 +536,7 @@ $$
 
 as the Noether charge, conserved for a free particle. The conservation law for a system is the vanishing of the **coordinate**-time derivative of the total, $d\tilde{P}_{\Phi,\mathrm{tot}}/dr'_t = 0$; the parent's proper-time four-force cannot be summed across bodies, and the correct form is $\sum_a\tilde{\mathcal F}_{\mathrm{frc},a}/\gamma_a = 0$, or the integrated $\sum_{\mathrm{in}}\tilde{P}_{\Phi} = \sum_{\mathrm{out}}\tilde{P}_{\Phi}$. A translation acts on a plane wave by the central unit-modulus phase $\exp(i\,\mathrm{Sc}(\tilde P_{\Phi}\tilde{R}_{\Phi,0}^{\natural}))$, with $\mathrm{Sc}(\tilde P_{\Phi}\tilde{R}_{\Phi,0}^{\natural}) = \vec k\cdot\vec R_0-\omega r'_{t,0}$.
 
-The field translation current is the canonical energy–momentum, $-\partial T_{0\nu}/\partial x_0+\sum_k\partial T_{k\nu}/\partial r_k = 0$ on shell in the real coordinates, with positive energy density $T_{00} = \frac{1}{c^2}|\partial\xi_{\mathrm{scl}}/\partial r'_t|^2 + |\nabla\xi_{\mathrm{scl}}|^2 + k_m^{2}|\xi_{\mathrm{scl}}|^2$. Rank two cannot be one biquaternion, so the framework packages it bilinearly; the Maxwell object $\tilde{W}_{\Psi} = \tfrac12\tilde{F}\tilde{F}^{*}$ is its time row, and $\mathrm{Sc}(\tilde{\nabla}\tilde{W}_{\Psi}) = \frac{i}{c}\vec J\cdot\vec E$ is the energy law it carries. Lorentz invariance gives the angular-momentum bivector $\tilde L = \tfrac12\sum L_{\mu\nu}\,e^{\natural}_\mu e_\nu$, with the rank-three field current reduced to the rank-two particle bivector only when the spin term vanishes. The theorem is standard; the algebra supplies the home of each conserved object and the compact form of its divergence, and it supplies no conservation law the symmetries did not already give.
+The field translation current is the canonical energy–momentum, $-\partial T_{0\nu}/\partial x_0+\sum_k\partial T_{k\nu}/\partial r_k = 0$ on shell in the real coordinates, with positive energy density $T_{00} = |\partial\xi_{\mathrm{scl}}/\partial r'_t|^2 + |\nabla\xi_{\mathrm{scl}}|^2 + k_m^{2}|\xi_{\mathrm{scl}}|^2$. Rank two cannot be one biquaternion, so the framework packages it bilinearly; the Maxwell object $\tilde{W}_{\Psi} = \tfrac12\tilde{F}\tilde{F}^{*}$ is its time row, and $\mathrm{Sc}(\tilde{\nabla}\tilde{W}_{\Psi}) = \frac{i}{c}\vec J\cdot\vec E$ is the energy law it carries. Lorentz invariance gives the angular-momentum bivector $\tilde L = \tfrac12\sum L_{\mu\nu}\,e^{\natural}_\mu e_\nu$, with the rank-three field current reduced to the rank-two particle bivector only when the spin term vanishes. The theorem is standard; the algebra supplies the home of each conserved object and the compact form of its divergence, and it supplies no conservation law the symmetries did not already give.
 
 ## Summary of Notation
 
@@ -549,10 +549,10 @@ The field translation current is the canonical energy–momentum, $-\partial T_{
 | $\mathbb{B}_{H}, \mathbb{B}_{C} = \mathrm{span}_{\mathbb{R}}\{e_t, ie_t\}$ | Real-quaternion subspace; complex scalar line (the centre) |
 | $\tilde{\nabla} = e_t\partial/\partial R_t + \sum_\mu\,\vec e_\mu\,\partial/\partial R_\mu$ | Biquaternionic gradient |
 | $\tilde{\nabla}^{\natural} = e_t\partial/\partial R_t - \sum_\mu\,\vec e_\mu\,\partial/\partial R_\mu$ | Quaternion-conjugate gradient; $\mathrm{Sc}(e_\mu^{\natural}e_\nu)=\delta_{\mu\nu}$ |
-| $\Box = \tilde{\nabla}\tilde{\nabla}^{\natural} = \tilde{\nabla}^{\natural}\tilde{\nabla} = \partial^2/\partial R_t^2 + \Delta$ | d'Alembertian, $Q_t=i c r'_t$ |
+| $\Box = \tilde{\nabla}\tilde{\nabla}^{\natural} = \tilde{\nabla}^{\natural}\tilde{\nabla} = \partial^2/\partial R_t^2 + \Delta$ | d'Alembertian, $Q_t=i r'_t$ |
 | $S = -mc\int\sqrt{-d\tilde R_\Phi\,d\tilde{R}_\Phi^{\natural}}$ | Free-particle action |
 | $\mathrm{Lag} = -mc^2\sqrt{1-\vec v^2/c^2}$ | Free-particle Lagrangian |
-| $\tilde R_\Phi = i c r'_{t}\,e_t + r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z$ | Four-position, in $\mathbb{B}_{\Phi}$ |
+| $\tilde R_\Phi = i r'_{t}\,e_t + r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z$ | Four-position, in $\mathbb{B}_{\Phi}$ |
 | $\tilde{R}_{\Phi,0}\in\mathbb{B}_{\Phi}$ | Constant translation (displacement) |
 | $\tilde{V}_{\Phi} = \gamma(ic\,e_t + \vec v)$ | Four-velocity, $\tilde{V}_{\Phi}\tilde{V}_{\Phi}^{\natural} = -c^2$ |
 | $\tilde{P}_{\Phi} = m\tilde{V}_{\Phi} = iE/c\,e_t + \vec p$ | Four-momentum, Noether charge of translation; real energy and momentum, so in $\mathbb{B}_{\Phi}$ |
@@ -566,7 +566,7 @@ The field translation current is the canonical energy–momentum, $-\partial T_{
 | $\tilde{Ξ}_{\mathrm{sp}}^*$ | The adjoint with which the currents are formed: the algebra's conjugation |
 | $j_\mu=\mathrm{Sc}(\tilde{Ξ}_{\mathrm{sp}}^*e_\mu\tilde{Ξ}_{\mathrm{sp}}\,b_\mu)$, $b_t=e_t$, $b_k=\vec e_z$ | Vector current of the Dirac field; $j_t$ is its Hermitian norm |
 | $j_{5\mu}=\mathrm{Sc}(\tilde{Ξ}_{\mathrm{sp}}^*ie_\mu\tilde{Ξ}_{\mathrm{sp}}\,\vec e_z\vec e_{\tau(\mu)}\vec e_x)$, $\tau(t)=x$, $\tau(k)=y$ | Axial current; $\sum_\mu\partial j_{5\mu}/\partial R_\mu=2im\,\mathrm{Sc}(\tilde{Ξ}_{\mathrm{sp}}^*\tilde{Ξ}_{\mathrm{sp}}\vec e_y)$ |
-| $x_\mu = (c r'_{t},r_x,r_y,r_z)$ | Real coordinates of the energy–momentum tensor, the chart of $Q_\mu$ at $Q_t=ix_0$ |
+| $x_\mu = (r'_{t},r_x,r_y,r_z)$ | Real coordinates of the energy–momentum tensor, the chart of $Q_\mu$ at $Q_t=ix_0$ |
 | $T_{\mu\nu} = (\partial{\xi_{\mathrm{scl}}}^*/\partial x_\mu)(\partial\xi_{\mathrm{scl}}/\partial x_\nu) + (\partial\xi_{\mathrm{scl}}/\partial x_\mu)(\partial{\xi_{\mathrm{scl}}}^*/\partial x_\nu) + \varepsilon_\mu\delta_{\mu\nu}\mathcal{L}_{\mathrm{scl},\xi}$ | Canonical energy–momentum in the real coordinates; the coefficient of $\mathcal{L}_{\mathrm{scl},\xi}$ is the plain form of the two units |
 | $\tilde{W}_{\Psi} = \tfrac12\tilde{F}\tilde{F}^{*} = W\,e_t + \frac{i}{c}\vec S$ | Maxwell energy–momentum (time row), in $\mathbb{B}_{\Psi}$; $\mathrm{Sc}(\tilde\nabla\tilde W_{\Psi})=\frac{i}{c}\vec J\cdot\vec E$ |
 | $L_{\mu\nu} = x_\mu p_\nu - x_\nu p_\mu$, $\tilde L = \tfrac12\sum L_{\mu\nu}\,e^{\natural}_\mu e_\nu$ | Angular momentum and its bivector |

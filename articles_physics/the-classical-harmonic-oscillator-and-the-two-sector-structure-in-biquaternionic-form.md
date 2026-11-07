@@ -35,7 +35,7 @@ $$
 In the framework the worldline is the material-sector curve
 
 $$
-\tilde R_\Phi(r'_t) = i c r'_{t}\,e_t + r_x(r'_t)\,\vec e_x+r_y(r'_t)\,\vec e_y+r_z(r'_t)\,\vec e_z, \qquad (r_x(r'_t)\,\vec e_x+r_y(r'_t)\,\vec e_y+r_z(r'_t)\,\vec e_z) = r_x(r'_t)\,\vec e_x + r_y(r'_t)\,\vec e_y + r_z(r'_t)\,\vec e_z ,
+\tilde R_\Phi(r'_t) = i r'_{t}\,e_t + r_x(r'_t)\,\vec e_x+r_y(r'_t)\,\vec e_y+r_z(r'_t)\,\vec e_z, \qquad (r_x(r'_t)\,\vec e_x+r_y(r'_t)\,\vec e_y+r_z(r'_t)\,\vec e_z) = r_x(r'_t)\,\vec e_x + r_y(r'_t)\,\vec e_y + r_z(r'_t)\,\vec e_z ,
 $$
 
 and the equation of motion is a statement about its vector part alone. The scalar direction $ie_t$ is untouched: the restoring force acts on the spatial displacement and not on the time. This is the same split that the free particle exhibits, now with a nontrivial vector equation.
@@ -241,7 +241,7 @@ A genuinely two-oscillator structure would require two independent complex ampli
 
 ## Summary
 
-The classical harmonic oscillator in biquaternionic form has its trajectory, its restoring force and its energy in the material sector, and its phase structure in the centre. The trajectory is $\tilde R_\Phi = i c r'_{t}\,e_t + r_x(r'_t)\,\vec e_x+r_y(r'_t)\,\vec e_y+r_z(r'_t)\,\vec e_z$ with $d^2(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)/d{r'_{t}}^2 = -\omega^2(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)$; the restoring force $\vec F = -m\omega^2(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)$ is a real vector in $\mathbb{B}_{\Phi}$ and is central about the origin.
+The classical harmonic oscillator in biquaternionic form has its trajectory, its restoring force and its energy in the material sector, and its phase structure in the centre. The trajectory is $\tilde R_\Phi = i r'_{t}\,e_t + r_x(r'_t)\,\vec e_x+r_y(r'_t)\,\vec e_y+r_z(r'_t)\,\vec e_z$ with $d^2(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)/d{r'_{t}}^2 = -\omega^2(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)$; the restoring force $\vec F = -m\omega^2(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)$ is a real vector in $\mathbb{B}_{\Phi}$ and is central about the origin.
 
 The complex amplitude $a = x + ip/(m\omega)$ embeds in the algebra as the central element
 
@@ -269,11 +269,11 @@ positive definite and bounded below, whereas the biquaternion norm $\langle\tild
 | $e_t = 1, \vec e_x, \vec e_y, \vec e_z$ | Quaternion basis, $\vec e_\mu^2 = -e_t$, $\vec e_\mu \vec e_\nu = \epsilon_{\mu\nu\lambda}\vec e_\lambda$ $(\mu\neq \nu)$ |
 | $i$ | Central scalar imaginary, $i^2 = -e_t$; $i\,\mathbb{B}_{\Psi} = \mathbb{B}_{\Phi}$ |
 | $\mathbb{B}_{\Phi}$ | Anti-Hermitian (material) sector: $iq'_te_t + \vec q$ |
-| $\mathbb{B}_{\Psi}$ | Hermitian (informational) sector: $c r_t\,e_t + i\vec r_\Psi$ |
+| $\mathbb{B}_{\Psi}$ | Hermitian (informational) sector: $r_t\,e_t + i\vec r_\Psi$ |
 | $\mathbb{B}_{C} = \operatorname{span}_\mathbb{R}\{e_t, ie_t\}$ | Centre; the phase plane of the oscillator |
 | $\mathbb{B}_{\Psi} \cap \mathbb{B}_{C} = e_t\mathbb{R}$ | Real axis of the phase plane (position quadrature) |
 | $\mathbb{B}_{\Phi} \cap \mathbb{B}_{C} = ie_t\mathbb{R}$ | Imaginary axis of the phase plane (momentum quadrature) |
-| $\tilde R_\Phi = i c r'_{t}\,e_t + r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z$ | Worldline, in $\mathbb{B}_{\Phi}$ |
+| $\tilde R_\Phi = i r'_{t}\,e_t + r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z$ | Worldline, in $\mathbb{B}_{\Phi}$ |
 | $\omega$, $k = m\omega^2$ | Angular frequency; spring constant |
 | $\vec F = -m\omega^2(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)$ | Restoring force, real vector in $\mathbb{B}_{\Phi}$; central, $[\vec F,r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z]=0$ |
 | $x$, $p$, $\varpi = p/(m\omega)$ | Displacement, momentum, normalized momentum |

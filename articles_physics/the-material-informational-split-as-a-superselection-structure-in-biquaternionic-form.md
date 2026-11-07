@@ -58,8 +58,8 @@ $$
 $$
 Both summands are four-real-dimensional. A general Hermitian element and a general anti-Hermitian element are
 $$
-\tilde R_\Psi = c r_t\,e_t + i\vec r_\Psi, \qquad \vec r_\Psi = r'_x\vec e_x+r'_y\vec e_y+r'_z\vec e_z, \qquad
-\tilde R_\Phi = i c r'_t\,e_t + r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z, \qquad c r_t,r'_x,r'_y,r'_z,r'_t,r_x,r_y,r_z\in\mathbb{R},
+\tilde R_\Psi = r_t\,e_t + i\vec r_\Psi, \qquad \vec r_\Psi = r'_x\vec e_x+r'_y\vec e_y+r'_z\vec e_z, \qquad
+\tilde R_\Phi = i r'_t\,e_t + r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z, \qquad r_t,r'_x,r'_y,r'_z,r'_t,r_x,r_y,r_z\in\mathbb{R},
 $$
 so that $\mathbb{B}_{\Psi}$ is the span of $\{e_t, i\vec e_x, i\vec e_y, i\vec e_z\}$ and $\mathbb{B}_{\Phi}$ is the span of $\{ie_t, \vec e_x, \vec e_y, \vec e_z\}$. The real structure
 $$
@@ -256,7 +256,7 @@ with even part $\mathbb{B}_{\Phi}^{0}$ and odd part $\mathbb{B}_{\Psi}^{0}$.
 
 The material-informational split is a superselection structure of a definite and restricted kind. It is worth stating the interpretation in one place.
 
-**Material and informational data.** $\mathbb{B}_{\Phi}$ carries the four-vectors: the four-position $\tilde{R}=\tilde R_\Phi=i c r'_t\,e_t+r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z$, the four-velocity $\tilde{V}_{\Phi} = \gamma(ic\,e_t+\vec v)$, the four-momentum $\tilde{P}_{\Phi} = m\tilde{V}_{\Phi}$, and their invariants. $\mathbb{B}_{\Psi}$ carries the states and observables: the idempotents that parametrise the pure states, the Bloch ball of mixed states, and the Hermitian observables paired with them by $\mathrm{Tr}(\tilde{Ϛ}_{\Psi}\tilde R_\Psi^{*})$. The two are complementary real forms of the same complex algebra, related by the complex structure $i$ that exchanges them.
+**Material and informational data.** $\mathbb{B}_{\Phi}$ carries the four-vectors: the four-position $\tilde{R}=\tilde R_\Phi=i r'_t\,e_t+r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z$, the four-velocity $\tilde{V}_{\Phi} = \gamma(ic\,e_t+\vec v)$, the four-momentum $\tilde{P}_{\Phi} = m\tilde{V}_{\Phi}$, and their invariants. $\mathbb{B}_{\Psi}$ carries the states and observables: the idempotents that parametrise the pure states, the Bloch ball of mixed states, and the Hermitian observables paired with them by $\mathrm{Tr}(\tilde{Ϛ}_{\Psi}\tilde R_\Psi^{*})$. The two are complementary real forms of the same complex algebra, related by the complex structure $i$ that exchanges them.
 
 Each observable is the representative $iA$ of a **material element** $A\in\mathbb{B}_{\Phi}$; the material element is what is observed, and the Hermitian representative is its reading operator.
 
@@ -295,8 +295,8 @@ with the material part the compact $\mathrm{SU}(2)$ of rotations and the informa
 | $\mathbb{B} = \mathbb{B}_{\Psi}\oplus\mathbb{B}_{\Phi}$ | Hermitian decomposition |
 | $P_\pm = \tfrac12(\mathrm{id}\pm{}^{*})$ | Real-linear sector projections (not in $\mathbb{B}$) |
 | $Z(\mathbb{B}) = \mathbb{C}e_t$ | Centre; $\mathbb{R}e_t$ informational, $\mathbb{R}(ie_t)$ material |
-| $\tilde R_\Psi = c r_t\,e_t + i\vec r_\Psi$ | General Hermitian element, the informational part |
-| $\tilde R_\Phi = i c r'_te_t + r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z$ | General anti-Hermitian element, the material part |
+| $\tilde R_\Psi = r_t\,e_t + i\vec r_\Psi$ | General Hermitian element, the informational part |
+| $\tilde R_\Phi = i r'_te_t + r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z$ | General anti-Hermitian element, the material part |
 | $\mathrm{Tr}(\tilde{Q}) = 2\,\mathrm{Sc}(\tilde{Q})$ | Trace |
 | $\tilde{Q}\mapsto\tilde U\tilde{Q}\tilde U^{*}$ | Congruence (physical operation) |
 | $\mathbb{B}_{\Psi}^{0}\cup\mathbb{B}_{\Phi}^{0}$ | Traceless parts, $\mathrm{SL}(2,\mathbb{C}) = \mathbb{B}_{\Psi}^{0}\oplus\mathbb{B}_{\Phi}^{0}$ |

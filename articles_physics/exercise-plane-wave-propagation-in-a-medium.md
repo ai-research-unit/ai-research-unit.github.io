@@ -40,7 +40,7 @@ An exercise built on parents tests them. The parent states the conditions above 
 
 ## The Problem
 
-The parent's plane-wave section fixes the conventions and quotes the consequences. The problem here is to *apply* them: to take the single biquaternionic Maxwell equation with no source, substitute the plane-wave ansatz, and obtain every downstream statement by computation rather than by quotation. The natural objects are the ones the parent fixes — the field-strength biquaternion $\tilde{F}$, the medium speed $c$, the impedance $Z$, the Riemann–Silberstein vector $\vec N$ — and the natural operator is $\tilde{\nabla}$ with its medium entry $\partial/\partial R_t = -\frac{i}{c}\partial/\partial r'_t$.
+The parent's plane-wave section fixes the conventions and quotes the consequences. The problem here is to *apply* them: to take the single biquaternionic Maxwell equation with no source, substitute the plane-wave ansatz, and obtain every downstream statement by computation rather than by quotation. The natural objects are the ones the parent fixes — the field-strength biquaternion $\tilde{F}$, the medium speed $c$, the impedance $Z$, the Riemann–Silberstein vector $\vec N$ — and the natural operator is $\tilde{\nabla}$ with its medium entry $\partial/\partial R_t = -i\partial/\partial r'_t$.
 
 The calculation is an eigenvalue problem. A plane wave is an eigenfunction of every $\partial/\partial R_\mu$, so $\tilde{\nabla}$ acts on it by left multiplication by a constant biquaternion, and $\tilde{\nabla}\tilde{F} = 0$ becomes a purely algebraic annihilation condition. That condition is what the exercise solves, and the four conditions and the dispersion relation fall out of its scalar and vector parts.
 
@@ -56,7 +56,7 @@ $$
 \qquad
 \partial/\partial R_j\,\exp(\,i(\vec k\cdot(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)-\omega r'_t)) = i k_j\,\exp(\,i(\vec k\cdot(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)-\omega r'_t)),
 $$
-using $\partial/\partial R_t = -\frac{i}{c}\partial/\partial r'_t$ and $\partial/\partial r'_t \to -i\omega$. Hence
+using $\partial/\partial R_t = -i\partial/\partial r'_t$ and $\partial/\partial r'_t \to -i\omega$. Hence
 $$
 \tilde{\nabla}\tilde{F} = \left(-\frac{\omega}{c}\,e_t + i\vec k\right)\tilde{F}_0\,\exp(\,i(\vec k\cdot(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)-\omega r'_t)),
 \qquad
@@ -256,7 +256,7 @@ So the energy–momentum biquaternion of the wave is itself a **zero divisor**, 
 $$
 \partial/\partial R_t = -\frac{i}{c(\omega)}\,\partial/\partial r'_t \;\longrightarrow\; -\frac{i}{c(\omega)}\,(-i\omega) = -\frac{\omega}{c(\omega)},
 $$
-a **real** eigenvalue, so that the operator eigenvalue is $-\frac{\omega}{c(\omega)}e_t + i\vec k$. The imaginary time axis $i c r'_t = i\,c(\omega)\,r'_t$ is scaled by $c(\omega)$, which is different at each frequency; the algebra $\mathbb{B}$ and the scalar $i$ are fixed, and only the embedding of physical time into the imaginary direction changes. This is the precise sense in which the local complex structure is spectral as well as spatial, and it is why the dispersion relation must be imposed frequency by frequency.
+a **real** eigenvalue, so that the operator eigenvalue is $-\frac{\omega}{c(\omega)}e_t + i\vec k$. The imaginary time axis $i r'_t = i\,c(\omega)\,r'_t$ is scaled by $c(\omega)$, which is different at each frequency; the algebra $\mathbb{B}$ and the scalar $i$ are fixed, and only the embedding of physical time into the imaginary direction changes. This is the precise sense in which the local complex structure is spectral as well as spatial, and it is why the dispersion relation must be imposed frequency by frequency.
 
 **Solution (b).** With $n(\omega) = c_0/c(\omega)$ and $k = \frac{n(\omega)\omega}{c_0}$, the phase velocity is
 $$
@@ -280,7 +280,7 @@ an envelope $\cos(\Delta k\,r_z-\Delta\omega\,r'_t)$ modulating the carrier. The
 
 **Statement.** (a) With the harmonic time dependence $\tilde F = \tilde F_0(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)\exp(-i\omega r'_t)$ and wave number $k = \omega/c$, derive the equation satisfied by the complex amplitude and its radiating solution. (b) Take the time-independent limit, recover the Poisson equation and the Newton-potential solution, and exhibit the scalar and vector potentials of the stationary field.
 
-**Solution (a).** In the corpus's three-vector form the field satisfies $\partial/\partial R_t\tilde F+\mathrm{rot}\,\tilde F=-\vec j$, with $\vec j = \sqrt{\mu}\,\vec J_{\mathrm{e}} - i\sqrt{\epsilon}\,\vec J_{\mathrm{m}}$ and $\partial/\partial R_t=-c^{-1}\partial/\partial r'_t$. For the harmonic dependence $\partial/\partial R_t=-k$, so
+**Solution (a).** In the corpus's three-vector form the field satisfies $\partial/\partial R_t\tilde F+\mathrm{rot}\,\tilde F=-\vec j$, with $\vec j = \sqrt{\mu}\,\vec J_{\mathrm{e}} - i\sqrt{\epsilon}\,\vec J_{\mathrm{m}}$ and $\partial/\partial R_t=-i\partial/\partial r'_t$. For the harmonic dependence $\partial/\partial R_t=-k$, so
 
 $$
 \mathrm{rot}\,\tilde F - k\,\tilde F = -\vec j,
@@ -368,7 +368,7 @@ The exercise confirms the parent's plane-wave results on cases the parent did no
 | $\mathbb{B}_{\Phi}, \mathbb{B}_{\Psi}$ | Anti-Hermitian (material) and Hermitian (informational) subspaces |
 | $\mathbb{B}_{H}, \mathbb{B}_{C}$ | Real-quaternion subspace, scalar subspace |
 | $\tilde{\nabla}, \tilde{\nabla}^{\natural}, \Box = \tilde{\nabla}\tilde{\nabla}^{\natural}$ | Biquaternionic gradient, its quaternion conjugate, d'Alembertian |
-| $\partial/\partial R_t = -\frac{i}{c}\partial/\partial r'_t$ | Temporal component of the gradient (medium) |
+| $\partial/\partial R_t = -i\partial/\partial r'_t$ | Temporal component of the gradient (medium) |
 | $\tilde{F} = i\sqrt{\epsilon}\,\vec E - \sqrt{\mu}\,\vec H$ | Field-strength biquaternion (pure vector) |
 | $\tilde{F}_0$ | Plane-wave amplitude of the field strength |
 | $\vec E_0, \vec H_0, \vec B_0 = \mu\vec H_0$ | Complex amplitudes; $\vec B_0$ the magnetic induction amplitude |

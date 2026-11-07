@@ -110,21 +110,21 @@ $$
 the spatial gradient of *Operator and Calculus Conventions*, §*The Gradient*, which is the vector part of $\tilde\nabla$ and is therefore pure and arrowed, with real quaternion coefficients on the material sector. The equation is
 
 $$
-\mathcal{N}F := \Bigl(\frac{i}{c}\frac{\partial}{\partial r'_t} + \vec\nabla\Bigr)F - i\,\overline{F}\,\vec e_z\,k_m = 0,
+\mathcal{N}F := \Bigl(i\frac{\partial}{\partial r'_t} + \vec\nabla\Bigr)F - i\,\overline{F}\,\vec e_z\,k_m = 0,
 $$
 
 where $\overline{\cdot}$ is the coefficient conjugation of *Algebra and Element Conventions*, the corpus's glyph for the map the source writes $C$, applied to the coefficients of the field, and the unit $\vec e_z$ multiplies the result from the right. The corpus's spatial operator of *Biquaternion Regular Functions* is $D=i\vec\nabla$, with $D^2=\Delta$; the two differ by the fixed central imaginary, and this section keeps $\vec\nabla$, because that is the normalization in which the mass term of the equation above is real. A reader who changes normalization in the middle of a computation changes the operator.
 
 **Three kinds of action in one operator.** The display mixes a left action, an antilinear map and a right action, and the mixture is the dictionary's content rather than a slip of notation. The time derivative and $\vec\nabla$ act from the left; the bar acts on the coefficients, has no side, and is the antilinear entry; the multiplication by $\vec e_z$ acts from the right. How such a combination is printed is fixed by the conventions (*Product and Form Conventions*, both copies): the side is carried by position and never by a mark. The mass term is therefore $\overline{F}\,\vec e_z$ and not a product of two operator letters: the bar is applied to the field and the unit multiplies what comes out. Because $\vec e_z$ has real coefficients, the bar commutes with that multiplication, $\overline{F\vec e_z}=\overline{F}\,\vec e_z$, so the source's order and the corpus's are one operator.
 
-**Why the $1/c$.** The operator adds an inverse time to an inverse length, and only $\frac{i}{c}\partial/\partial r'_t$ is an inverse length like $\vec\nabla$, and the mass term carries that same unit by the identification made at the box. The source prints the equation at $c=1$, where the first factor is $i\partial/\partial r'_t$.
+**Why the $1/c$.** The operator adds an inverse time to an inverse length, and only $i\partial/\partial r'_t$ is an inverse length like $\vec\nabla$, and the mass term carries that same unit by the identification made at the box. The source prints the equation at $c=1$, where the first factor is $i\partial/\partial r'_t$.
 
-**One sector, two coordinates.** The operator is read on the material sector $\mathbb{B}_{\Phi}$, where $Q_t=i c r'_t$ and $Q_k=q_k$. There $R_t=i c r'_t$ is the complex time coordinate, so $\partial/\partial r'_t$ differentiates with respect to the physical time and $\partial/\partial R_k$ is the physical spatial derivative: the two symbols name the two coordinates of one sector and do not mix two conventions. Since $\partial/\partial R_t=-\frac{i}{c}\,\partial/\partial r'_t$,
+**One sector, two coordinates.** The operator is read on the material sector $\mathbb{B}_{\Phi}$, where $Q_t=i r'_t$ and $Q_k=q_k$. There $R_t=i r'_t$ is the complex time coordinate, so $\partial/\partial r'_t$ differentiates with respect to the physical time and $\partial/\partial R_k$ is the physical spatial derivative: the two symbols name the two coordinates of one sector and do not mix two conventions. Since $\partial/\partial R_t=-i\partial/\partial r'_t$,
 
 $$
-\frac{i}{c}\frac{\partial}{\partial r'_t} = -\frac{\partial}{\partial R_t},
+i\frac{\partial}{\partial r'_t} = -\frac{\partial}{\partial R_t},
 \qquad\text{so that}\qquad
-\frac{i}{c}\frac{\partial}{\partial r'_t} + \vec\nabla = -\tilde{\nabla}^{\natural},
+i\frac{\partial}{\partial r'_t} + \vec\nabla = -\tilde{\nabla}^{\natural},
 $$
 
 the time term of the gradient carrying $e_t$, the identity of the algebra, so that the three symbols are one operator.
@@ -161,7 +161,7 @@ $$
 the operator
 
 $$
-R[F] := \Bigl(\frac{i}{c}\partial/\partial r'_t + \vec\nabla\Bigr)F\;e_{+} + \Bigl(-\frac{i}{c}\partial/\partial r'_t + \vec\nabla\Bigr)F\;e_{-} - F\,\vec e_y\,k_m
+R[F] := \Bigl(i\partial/\partial r'_t + \vec\nabla\Bigr)F\;e_{+} + \Bigl(-i\partial/\partial r'_t + \vec\nabla\Bigr)F\;e_{-} - F\,\vec e_y\,k_m
 $$
 
 is related to $\mathcal{N}$ by a change of variable on each side. The conjugation has not been removed, only moved: it sits in the two factors that surround the operator, and the operator itself is free of it.
@@ -216,7 +216,7 @@ The article now carries two equations, and they must not be read as one. The cor
 
 | | One-sided equation | Two-sided equation |
 |---|---|---|
-| the equation | $\tilde{\nabla}\tilde{Ξ}_{\mathrm{sp},R}=k_m\,\tilde{Ξ}_{\mathrm{sp},L}$, $\tilde{\nabla}^\natural\tilde{Ξ}_{\mathrm{sp},L}=k_m\,\tilde{Ξ}_{\mathrm{sp},R}$ | $\bigl(\frac{i}{c}\partial/\partial r'_t+\vec\nabla\bigr)F-i\,\overline{F}\,\vec e_z\,k_m=0$, that is $-\tilde{\nabla}^\natural F-i\,\overline{F}\,\vec e_z\,k_m=0$ |
+| the equation | $\tilde{\nabla}\tilde{Ξ}_{\mathrm{sp},R}=k_m\,\tilde{Ξ}_{\mathrm{sp},L}$, $\tilde{\nabla}^\natural\tilde{Ξ}_{\mathrm{sp},L}=k_m\,\tilde{Ξ}_{\mathrm{sp},R}$ | $\bigl(i\partial/\partial r'_t+\vec\nabla\bigr)F-i\,\overline{F}\,\vec e_z\,k_m=0$, that is $-\tilde{\nabla}^\natural F-i\,\overline{F}\,\vec e_z\,k_m=0$ |
 | the action | left, by $\tilde{\nabla}$ and $\tilde{\nabla}^\natural$ | left by the derivative, right by $\vec e_z$ in the mass term, and the coefficient bar |
 | the field | one element $\tilde{Ξ}_{\mathrm{sp}}=\tilde{Ξ}_{\mathrm{sp},L}+\tilde{Ξ}_{\mathrm{sp},R}$ of $\mathbb{B}$ | one element $F$ of $\mathbb{B}$ |
 | the mass | the term that carries the value across | $-i\,\overline{F}\,\vec e_z\,k_m$: a conjugation together with a direction |
@@ -266,20 +266,20 @@ Before the solutions are written, it is useful to collect the basic relativistic
 The **four-position biquaternion** is
 
 $$
-\tilde R_\Phi = i c r'_t\, e_t + r_x\, \vec e_x + r_y\, \vec e_y + r_z\, \vec e_z,
+\tilde R_\Phi = i r'_t\, e_t + r_x\, \vec e_x + r_y\, \vec e_y + r_z\, \vec e_z,
 $$
 
-with $Q_t = i c r'_t$. The scalar part is the complex time coordinate, and the vector part is the ordinary spatial position.
+with $Q_t = i r'_t$. The scalar part is the complex time coordinate, and the vector part is the ordinary spatial position.
 
 ### The Invariant Interval
 
 The invariant interval is the square of the biquaternion displacement:
 
 $$
-ds^2 = \langle d\tilde R_\Phi\rangle_{\natural} = d\tilde R_\Phi\,d\tilde{R}_\Phi^{\natural} = (ic\,dr'_t)^2 + dr_x^2 + dr_y^2 + dr_z^2 = -c^2 d{r'_{t}}^2 +dr_x^2+dr_y^2+dr_z^2.
+ds^2 = \langle d\tilde R_\Phi\rangle_{\natural} = d\tilde R_\Phi\,d\tilde{R}_\Phi^{\natural} = (i\,dr'_t)^2 + dr_x^2 + dr_y^2 + dr_z^2 = -d{r'_{t}}^2 +dr_x^2+dr_y^2+dr_z^2.
 $$
 
-This is the biquaternion form of the Minkowski interval. The Lorentzian signature emerges algebraically from $i^2 = -1$, as discussed in the companion article on the $i c r'_t$ convention.
+This is the biquaternion form of the Minkowski interval. The Lorentzian signature emerges algebraically from $i^2 = -1$, as discussed in the companion article on the $i r'_t$ convention.
 
 ### The Four-Velocity
 
@@ -335,8 +335,8 @@ The **four-acceleration biquaternion** is $\tilde{A}_{\Phi} = d\tilde{V}_{\Phi}/
 
 | Quantity | Biquaternion | Constraint |
 |---|---|---|
-| Four-position | $\tilde R_\Phi = i c r'_t\, e_t + r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z$ | — |
-| Interval | $ds^2 = \langle d\tilde R_\Phi\rangle_{\natural} = d\tilde R_\Phi\,d\tilde{R}_\Phi^{\natural}$ | $= -c^2 d{r'_{t}}^2 +dr_x^2+dr_y^2+dr_z^2$ |
+| Four-position | $\tilde R_\Phi = i r'_t\, e_t + r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z$ | — |
+| Interval | $ds^2 = \langle d\tilde R_\Phi\rangle_{\natural} = d\tilde R_\Phi\,d\tilde{R}_\Phi^{\natural}$ | $= -d{r'_{t}}^2 +dr_x^2+dr_y^2+dr_z^2$ |
 | Four-velocity | $\tilde{V}_{\Phi} = \gamma(ic\, e_t + \vec v)$ | $\tilde{V}_{\Phi}\tilde{V}_{\Phi}^{\natural} = -c^2$ |
 | Four-momentum | $\tilde{P}_{\Phi} =m\,\tilde{V}_{\Phi}$ | $\tilde{P}_{\Phi}\tilde{P}_{\Phi}^{\natural} = -m^{2}\,c^{2}$ |
 | Four-force | $\tilde{\mathcal F}_{\Phi,\mathrm{frc}} = d\tilde{P}_{\Phi}/d\tau$ | — |
@@ -431,7 +431,7 @@ $$
 = \tilde{Ξ}_{\mathrm{sp},0}\,\exp(\,i(\vec k\cdot(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)-\omega r'_t))\;},
 $$
 
-where $\tilde{Ξ}_{\mathrm{sp},0} \in \mathbb{B}$ is a constant biquaternion, $\frac{k_m\,\tilde{P}_{\Phi}}{m\,c}= i k_0 e_t + \vec e_x k_1 + \vec e_y k_2 + \vec e_z k_3$ (with $k_0 = \omega/c$) is the wave biquaternion, and $\tilde R_\Phi = e_t (i c r'_t) + \vec e_x r_x + \vec e_y r_y + \vec e_z r_z$ is the four-position biquaternion. The scalar part $\mathrm{Sc}(\tilde{P}_{\Phi}\tilde{R}_\Phi^{\natural})/\hbar = \vec k\cdot(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z) - \omega r'_t$ is real, so the exponent $i\,\mathrm{Sc}\frac{k_m\,\tilde{P}_{\Phi}\,\tilde{R}_{\Phi}^{\natural}}{m\,c}$ is a purely imaginary central element; the exponential therefore commutes with $\tilde{Ξ}_{\mathrm{sp},0}$ and differentiates to left multiplication by $\frac{k_m\,i\,\tilde{P}_{\Phi}}{m\,c}$,
+where $\tilde{Ξ}_{\mathrm{sp},0} \in \mathbb{B}$ is a constant biquaternion, $\frac{k_m\,\tilde{P}_{\Phi}}{m\,c}= i k_0 e_t + \vec e_x k_1 + \vec e_y k_2 + \vec e_z k_3$ (with $k_0 = \omega/c$) is the wave biquaternion, and $\tilde R_\Phi = e_t (i r'_t) + \vec e_x r_x + \vec e_y r_y + \vec e_z r_z$ is the four-position biquaternion. The scalar part $\mathrm{Sc}(\tilde{P}_{\Phi}\tilde{R}_\Phi^{\natural})/\hbar = \vec k\cdot(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z) - \omega r'_t$ is real, so the exponent $i\,\mathrm{Sc}\frac{k_m\,\tilde{P}_{\Phi}\,\tilde{R}_{\Phi}^{\natural}}{m\,c}$ is a purely imaginary central element; the exponential therefore commutes with $\tilde{Ξ}_{\mathrm{sp},0}$ and differentiates to left multiplication by $\frac{k_m\,i\,\tilde{P}_{\Phi}}{m\,c}$,
 
 $$
 \tilde{\nabla}\tilde{Ξ}_{\mathrm{sp}} =\frac{k_m\,i\,\tilde{P}_{\Phi}\,\tilde{Ξ}_{\mathrm{sp}}}{m\,c},
@@ -486,7 +486,7 @@ $$
 $$
 and the field is the shifted conjugate gradient of a potential: one element of $\mathbb{B}$ built from another by differentiation, with no column and no second carrier. At $\kappa = 0$ it is the completion $\tilde{Ξ}_{\mathrm{sp}}\mapsto\tilde{\nabla}^{\natural}\tilde{Ξ}_{\mathrm{sp}}$ of the next section, and for $\kappa \neq 0$ it is its shifted form. The source calls the scalar generator a **C-field** and takes the field to be the convolution of $\tilde{\nabla}^{\natural}_\kappa\tilde{Ξ}_{\mathrm{sp},0}$ with it, which is how the same construction produces extended rather than only elementary solutions; the convolution is the one developed in the companion article on distributions.
 
-**Why the elementary field is null.** For the elementary case the potential is a plane wave, $\xi_{\mathrm{scl}}=\exp(i(\vec k\cdot(r_x\vec e_x+r_y\vec e_y+r_z\vec e_z)-\omega r'_t))$, and the field is read off by differentiating it. In the coordinate $Q_t=i c r'_t$ the time derivative is $\partial\xi_{\mathrm{scl}}/\partial R_t=-\omega\xi_{\mathrm{scl}}$ and the three spatial ones are $\partial_k\xi_{\mathrm{scl}}=ik_k\xi_{\mathrm{scl}}$, so
+**Why the elementary field is null.** For the elementary case the potential is a plane wave, $\xi_{\mathrm{scl}}=\exp(i(\vec k\cdot(r_x\vec e_x+r_y\vec e_y+r_z\vec e_z)-\omega r'_t))$, and the field is read off by differentiating it. In the coordinate $Q_t=i r'_t$ the time derivative is $\partial\xi_{\mathrm{scl}}/\partial R_t=-\omega\xi_{\mathrm{scl}}$ and the three spatial ones are $\partial_k\xi_{\mathrm{scl}}=ik_k\xi_{\mathrm{scl}}$, so
 $$
 \tilde{\nabla}^{\natural}_\kappa\,\xi_{\mathrm{scl}} = \bigl((\kappa-\omega)\,e_t - i k_x\vec e_x - i k_y\vec e_y - i k_z\vec e_z\bigr)\xi_{\mathrm{scl}} ,
 $$
@@ -791,13 +791,13 @@ $$
 
 one for each value; the single equation $\tilde{\nabla}\tilde{Ξ}_{\mathrm{sp}}=0$ is the one with the plus value. The two values are the letters $L$ and $R$ that every element carries; the value of a product is the value of its right factor, left multiplication keeps it, and the mass is the only term that carries the field from one value to the other. In the massless limit each part carries one helicity. The equation with the plus value has the same form as the source-free biquaternion Maxwell equation, and the other is its conjugate. The structural identity is the statement that both fields are read in the same algebra — no matrix, no column and no separate space. Each part satisfies the Klein–Gordon equation $(\Box - k_m^{2})\tilde{Ξ}_{\mathrm{sp},L,R} = 0$.
 
-The relativistic kinematic relations are expressed in the same language: the four-velocity $\tilde{V}_{\Phi} = \gamma(ic\, e_t + \vec v)$ satisfies $\tilde{V}_{\Phi}\tilde{V}_{\Phi}^{\natural} = -c^2$, the four-momentum $\tilde{P}_{\Phi} =m\,\tilde{V}_{\Phi}$ satisfies the mass-shell relation $\tilde{P}_{\Phi}\tilde{P}_{\Phi}^{\natural} = -m^{2}\,c^{2}$, and the four-position $\tilde R_\Phi = i c r'_t\, e_t + r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z$ gives the invariant interval $ds^2 = \langle d\tilde R_\Phi\rangle_{\natural} = d\tilde R_\Phi\,d\tilde{R}_\Phi^{\natural}$.
+The relativistic kinematic relations are expressed in the same language: the four-velocity $\tilde{V}_{\Phi} = \gamma(ic\, e_t + \vec v)$ satisfies $\tilde{V}_{\Phi}\tilde{V}_{\Phi}^{\natural} = -c^2$, the four-momentum $\tilde{P}_{\Phi} =m\,\tilde{V}_{\Phi}$ satisfies the mass-shell relation $\tilde{P}_{\Phi}\tilde{P}_{\Phi}^{\natural} = -m^{2}\,c^{2}$, and the four-position $\tilde R_\Phi = i r'_t\, e_t + r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z$ gives the invariant interval $ds^2 = \langle d\tilde R_\Phi\rangle_{\natural} = d\tilde R_\Phi\,d\tilde{R}_\Phi^{\natural}$.
 
 The plane-wave solutions of the massless equation with the plus value are $\tilde{Ξ}_{\mathrm{sp}} = \tilde{Ξ}_{\mathrm{sp},0}\exp\!\left(i\,\mathrm{Sc}\frac{k_m\,\tilde{P}_{\Phi}\,\tilde{R}_{\Phi}^{\natural}}{m\,c}\right) = \tilde{Ξ}_{\mathrm{sp},0}\,\exp(\,i(\vec k\cdot(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)-\omega r'_t))$ with $\tilde{P}_{\Phi}\tilde{Ξ}_{\mathrm{sp},0}/\hbar = 0$, nonzero only for null $\frac{k_m\,\tilde{P}_{\Phi}}{m\,c}$, giving the two spin states of that value; the other value has the conjugate plane waves, and the two are the two helicities, which a massless plane wave fixes to $-\tfrac12$ and $+\tfrac12$. The massive plane waves satisfy the mass-shell condition $\tilde{P}_{\Phi}\tilde{P}_{\Phi}^{\natural}=-m^{2}\,c^{2}$; the two frequency branches are the particle and the antiparticle, and with the two spin states they give the four solutions the field carries.
 
 The spherical and cylindrical solutions are constructed from harmonic functions by the completion $\tilde{Ξ}_{\mathrm{sp}}\mapsto\tilde{\nabla}^{\natural}\tilde{Ξ}_{\mathrm{sp}}$, and they describe the angular momentum states of the fermion field and the waveguide modes.
 
-A second form of the same equation is Kravchenko's, and it is two-sided: $\bigl(\frac{i}{c}\partial/\partial r'_t+\vec\nabla\bigr)F-i\,\overline{F}\,\vec e_z\,k_m=0$, whose free part is $-\tilde{\nabla}^{\natural}$ and whose mass term is a coefficient conjugation together with the right multiplication by the direction $\vec e_z$. The conjugation obstructs the analytic theory, so it is moved into the change of variable, and the conjugation-free operator
+A second form of the same equation is Kravchenko's, and it is two-sided: $\bigl(i\partial/\partial r'_t+\vec\nabla\bigr)F-i\,\overline{F}\,\vec e_z\,k_m=0$, whose free part is $-\tilde{\nabla}^{\natural}$ and whose mass term is a coefficient conjugation together with the right multiplication by the direction $\vec e_z$. The conjugation obstructs the analytic theory, so it is moved into the change of variable, and the conjugation-free operator
 
 $$
 R[F] = \vec\nabla F - \frac{1}{c}\frac{\partial F}{\partial r'_t}\,\vec e_x - F\,\vec e_y\,k_m
@@ -825,7 +825,7 @@ The biquaternion framework provides a compact and unified language for the Maxwe
 | $c_0 = 1/\sqrt{\epsilon_0\mu_0}$ | Speed of light in vacuum |
 | $\vec v$ | Particle three-velocity |
 | $\gamma = 1/\sqrt{1 - \vec v^2/c^2}$ | Lorentz factor |
-| $\tilde R_\Phi = i c r'_t\,e_t + r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z$ | Four-position biquaternion |
+| $\tilde R_\Phi = i r'_t\,e_t + r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z$ | Four-position biquaternion |
 | $\tilde{V}_{\Phi} = \gamma(ic\,e_t + \vec v)$ | Four-velocity biquaternion |
 | $\tilde{P}_{\Phi} =m\,\tilde{V}_{\Phi}$ | Four-momentum biquaternion, since $m\,c=mc$; the shell is $\tilde{P}_{\Phi}\tilde{P}_{\Phi}^{\natural}=-m^{2}\,c^{2}$ |
 | $k_m=\dfrac{mc}{\hbar}$ | The mass wave number of the field, the one wave number of the article; $\mathsf{L}^{-1}$, the coefficient of the mass term, and $k_m^{2}$ the coefficient of the Klein–Gordon mass term. Its inverse $1/k_m=\hbar/(mc)$ is the reduced Compton wavelength. Defined in *The Three Wavenumbers of a Particle* |
@@ -838,7 +838,7 @@ The biquaternion framework provides a compact and unified language for the Maxwe
 | $\bar{\cdot}$, written $C$ by the source | Componentwise complex conjugation, $Q_\mu\mapsto\bar Q_\mu$ on the coefficients: an automorphism, $\mathbb{C}$-antilinear and not an anti-automorphism |
 | $\vec\nabla = \sum_{k=1}^{3}\vec e_k\,\partial/\partial R_k$ | The spatial gradient, pure, $\vec\nabla^2=-\Delta$ and $\lvert\vec\nabla\rvert^2=\Delta$, with real quaternion coefficients on the material sector; the source writes it $D$ |
 | $D = i\vec\nabla$ | The corpus's spatial operator of *Biquaternion Regular Functions*, $D^2=\Delta$ |
-| $\mathcal{N} = \frac{i}{c}\partial/\partial r'_t + \vec\nabla - i\,\overline{\cdot}\,\vec e_z\,k_m$ | The two-sided Dirac operator with the conjugation in the mass term; its free part is $-\tilde{\nabla}^{\natural}$ |
+| $\mathcal{N} = i\partial/\partial r'_t + \vec\nabla - i\,\overline{\cdot}\,\vec e_z\,k_m$ | The two-sided Dirac operator with the conjugation in the mass term; its free part is $-\tilde{\nabla}^{\natural}$ |
 | $R[F] = \vec\nabla F-\frac{1}{c}\partial F/\partial r'_t\,\vec e_x-F\vec e_y\,k_m$ | The conjugation-free operator of the same source; real, with coefficients in $\mathbb{H}$, so $R[\mathrm{Re}\,F]=R[\mathrm{Im}\,F]=0$ |
 | $\epsilon = \exp(2G)$, $\vec{\nu} = \mathrm{grad}\,G$ | The Dirac potential $g=dG/dr_x$ read as the inhomogeneity of a static Maxwell medium |
 | $k = \omega\sqrt{\epsilon\mu}$ | Maxwell wave number; the Dirac–Maxwell correspondence holds iff $k^2=\alpha^2$, equivalently $E^2=\frac{m^{2}\,c^{2}\,\omega^{2}}{k_m^{2}}+m^{2}\,c^{4}$ |

@@ -80,18 +80,18 @@ Two consequences follow.
 A general observable of the informational sector is an element
 
 $$
-\tilde R_\Psi=c r_t e_t+i\,\vec r_\Psi,\qquad c r_t\in\mathbb{R},\quad \vec r_\Psi\in\mathbb{R}^3,
+\tilde R_\Psi=r_t e_t+i\,\vec r_\Psi,\qquad r_t\in\mathbb{R},\quad \vec r_\Psi\in\mathbb{R}^3,
 $$
 
-of the same subspace $\mathbb{B}_{\Psi}$. The state $\tilde{Ϛ}_{\Psi}=\tfrac12(e_t+i\vec r)$ is a particular case: an observable with $c r_t=\tfrac12$ and $\vec r_\Psi=\tfrac12\vec r$, positive and normalised, $\langle\tilde{Ϛ}_{\Psi},e_t\rangle_{*}=\tfrac12$. **States are positive normalised observables** (trace one in the $2\times2$ image). The standard formalism also represents states and observables by operators, but there the state is standardly read as a functional — a positive normalized linear map on observables — while the observable enters as the object acted upon. In the biquaternion framework the distinction is not one of kind and not one of dual space: it is the conjunction of two conditions, positivity and normalisation, imposed on elements of one four-dimensional real space.
+of the same subspace $\mathbb{B}_{\Psi}$. The state $\tilde{Ϛ}_{\Psi}=\tfrac12(e_t+i\vec r)$ is a particular case: an observable with $r_t=\tfrac12$ and $\vec r_\Psi=\tfrac12\vec r$, positive and normalised, $\langle\tilde{Ϛ}_{\Psi},e_t\rangle_{*}=\tfrac12$. **States are positive normalised observables** (trace one in the $2\times2$ image). The standard formalism also represents states and observables by operators, but there the state is standardly read as a functional — a positive normalized linear map on observables — while the observable enters as the object acted upon. In the biquaternion framework the distinction is not one of kind and not one of dual space: it is the conjunction of two conditions, positivity and normalisation, imposed on elements of one four-dimensional real space.
 
 Two facts make the cohabitation exact. First, the Hermitian form $\langle\tilde{Ϛ}_{\Psi},\tilde R_\Psi\rangle_{*}=\mathrm{Sc}(\tilde{Ϛ}_{\Psi}\tilde R_\Psi^{*})$ is a positive-definite symmetric form on $\mathbb{B}_{\Psi}$, with Gram matrix the identity in the basis $\{e_t,i\vec e_x,i\vec e_y,i\vec e_z\}$; with the state normalised against the unit, the Born weight is
 
 $$
-\boxed{\;\frac{\langle\tilde{Ϛ}_{\Psi},\tilde R_\Psi\rangle_{*}}{\langle\tilde{Ϛ}_{\Psi},e_t\rangle_{*}}=c r_t+\vec r\cdot\vec r_\Psi\;},
+\boxed{\;\frac{\langle\tilde{Ϛ}_{\Psi},\tilde R_\Psi\rangle_{*}}{\langle\tilde{Ϛ}_{\Psi},e_t\rangle_{*}}=r_t+\vec r\cdot\vec r_\Psi\;},
 $$
 
-and the trace reads it as $\mathrm{Tr}(\tilde{Ϛ}_{\Psi}\tilde R_\Psi^{*})=c r_t+\vec r\cdot\vec r_\Psi$, with $\mathrm{Tr}(e_t)=2$. Second — and this is the point for the ontology — because the form is positive definite, the map
+and the trace reads it as $\mathrm{Tr}(\tilde{Ϛ}_{\Psi}\tilde R_\Psi^{*})=r_t+\vec r\cdot\vec r_\Psi$, with $\mathrm{Tr}(e_t)=2$. Second — and this is the point for the ontology — because the form is positive definite, the map
 
 $$
 \tilde{Ϛ}_{\Psi}\ \longmapsto\ \left(\tilde R_\Psi\mapsto \frac{\langle\tilde{Ϛ}_{\Psi},\tilde R_\Psi\rangle_{*}}{\langle\tilde{Ϛ}_{\Psi},e_t\rangle_{*}}\right)
@@ -99,10 +99,10 @@ $$
 
 is injective: an element of $\mathbb{B}_{\Psi}$ is determined by its pairings with observables. So the state, regarded as a functional on observables, is an element of the very space on which it is a functional; $\mathbb{B}_{\Psi}$ is its own dual under the plain form (equivalently under the trace in the $2\times2$ image), and there is no second space in which the state lives.
 
-That the state is a *positive* functional is part of the same structure. If $\tilde R_\Psi\geq0$, meaning $c r_t\geq|\vec r_\Psi|$, then
+That the state is a *positive* functional is part of the same structure. If $\tilde R_\Psi\geq0$, meaning $r_t\geq|\vec r_\Psi|$, then
 
 $$
-\mathrm{Tr}(\tilde{Ϛ}_{\Psi}\tilde R_\Psi^{*})=c r_t+\vec r\cdot\vec r_\Psi\ \geq\ |\vec r_\Psi|-|\vec r|\,|\vec r_\Psi|=\left(1-|\vec r|\right)|\vec r_\Psi|\ \geq\ 0 .
+\mathrm{Tr}(\tilde{Ϛ}_{\Psi}\tilde R_\Psi^{*})=r_t+\vec r\cdot\vec r_\Psi\ \geq\ |\vec r_\Psi|-|\vec r|\,|\vec r_\Psi|=\left(1-|\vec r|\right)|\vec r_\Psi|\ \geq\ 0 .
 $$
 
 Positivity of the functional is thus not an extra postulate; it is the positivity condition $|\vec r|\leq1$ of the state seen from the dual side.
@@ -216,7 +216,7 @@ $$
 \tilde{Ϛ}_{\Psi}=\tfrac12\left(e_t+i\vec r\right),\qquad |\vec r|\leq1 ,
 $$
 
-equivalently a point of the Bloch ball, equivalently a normalised element of the future light cone of the biquaternion norm. Its purity is idempotence, $|\vec r|=1$, equivalently vanishing of the biquaternion norm and zero-divisorhood at that normalisation; its mixedness is the single scalar $\tilde{Ϛ}_{\Psi}^2-\tilde{Ϛ}_{\Psi}=\tfrac14(|\vec r|^2-1)e_t$. States and observables are elements of the same four-dimensional real space, distinguished only by positivity and normalisation; the normalised Hermitian form $\langle\tilde{Ϛ}_{\Psi},\tilde R_\Psi\rangle_{*}/\langle\tilde{Ϛ}_{\Psi},e_t\rangle_{*}=c r_t+\vec r\cdot\vec r_\Psi$ makes the state a positive normalized functional on that space, its positive definiteness makes the space its own dual, and the trace $\mathrm{Tr}(\tilde{Ϛ}_{\Psi}\tilde R_\Psi^{*})=c r_t+\vec r\cdot\vec r_\Psi$ is the $2\times2$ reading of the same functional. The states form a convex body whose extreme points are the pure states, so superposition is a property of the spinor module, not of the state space.
+equivalently a point of the Bloch ball, equivalently a normalised element of the future light cone of the biquaternion norm. Its purity is idempotence, $|\vec r|=1$, equivalently vanishing of the biquaternion norm and zero-divisorhood at that normalisation; its mixedness is the single scalar $\tilde{Ϛ}_{\Psi}^2-\tilde{Ϛ}_{\Psi}=\tfrac14(|\vec r|^2-1)e_t$. States and observables are elements of the same four-dimensional real space, distinguished only by positivity and normalisation; the normalised Hermitian form $\langle\tilde{Ϛ}_{\Psi},\tilde R_\Psi\rangle_{*}/\langle\tilde{Ϛ}_{\Psi},e_t\rangle_{*}=r_t+\vec r\cdot\vec r_\Psi$ makes the state a positive normalized functional on that space, its positive definiteness makes the space its own dual, and the trace $\mathrm{Tr}(\tilde{Ϛ}_{\Psi}\tilde R_\Psi^{*})=r_t+\vec r\cdot\vec r_\Psi$ is the $2\times2$ reading of the same functional. The states form a convex body whose extreme points are the pure states, so superposition is a property of the spinor module, not of the state space.
 
 Two negative facts bound the ontology. The element is **provenance-blind** — it has many ensemble decompositions, and the maximally mixed state has one for every basis — and it carries **no outcome index**, the probabilities $p_\pm$ being determined while the realised outcome is not. The state is not a spacetime object, lying in the sector complementary to the four-vectors; and it is not a spinor ray, being the idempotent built from the ray with the central phase already quotiented out. It is the Hermitian square of a positive amplitude, $\tilde{Ϛ}_{\Psi,Q}=\tilde Q_{\mathrm n}^{2}$, and the passage from the operator to the state forgets the $*$-unitary fibre.
 
@@ -234,12 +234,12 @@ The article's interpretive claim is that the algebra settles the identity, the s
 | $\mathbb{B}_{H}$, $\mathbb{B}_{C}$ | Real-quaternion subspace; complex scalar centre |
 | $\tilde{Ϛ}_{\Psi} = \tfrac12(e_t + i\vec r)$ | State, $\lvert\vec r\rvert\leq1$ (Bloch ball) |
 | $\tilde\Pi_{1,2}(\vec u) = \tfrac12(e_t \pm i\vec u)$ | Pure state (Hermitian idempotent, rank one, zero divisor) |
-| $\tilde R_\Psi = c r_t\,e_t + i\vec r_\Psi$ | Observable (general Hermitian element) |
+| $\tilde R_\Psi = r_t\,e_t + i\vec r_\Psi$ | Observable (general Hermitian element) |
 | $\langle\tilde R_\Psi\rangle_{\natural} = \tilde R_\Psi\tilde R_\Psi^{\natural}$ | Biquaternion norm, signature $(1,3)$ on $\mathbb{B}_{\Psi}$ |
 | $\langle\tilde{Ϛ}_{\Psi}\rangle_{\natural} = \tfrac14(1-\lvert\vec r\rvert^2)e_t$ | Biquaternion norm of a state; positivity $\Leftrightarrow\langle\tilde{Ϛ}_{\Psi}\rangle_{\natural}\geq0$ |
 | $\tilde{Ϛ}_{\Psi}^2 - \tilde{Ϛ}_{\Psi} = \tfrac14(\lvert\vec r\rvert^2-1)e_t$ | Deviation from idempotency (mixedness) |
 | $\mathrm{Tr}(\tilde Q)=2\,\mathrm{Sc}(\tilde Q)$ | Trace |
-| $\langle\tilde{Ϛ}_{\Psi},\tilde R_\Psi\rangle_{*}/\langle\tilde{Ϛ}_{\Psi},e_t\rangle_{*} = c r_t + \vec r\cdot\vec r_\Psi$, with trace reading $\operatorname{Tr}(\tilde{Ϛ}_{\Psi}\tilde R_\Psi^{*})=\operatorname{Tr}(\tilde{Ϛ}_{\Psi}\tilde R_\Psi)$ | Born rule; form first, trace at normalisation last |
+| $\langle\tilde{Ϛ}_{\Psi},\tilde R_\Psi\rangle_{*}/\langle\tilde{Ϛ}_{\Psi},e_t\rangle_{*} = r_t + \vec r\cdot\vec r_\Psi$, with trace reading $\operatorname{Tr}(\tilde{Ϛ}_{\Psi}\tilde R_\Psi^{*})=\operatorname{Tr}(\tilde{Ϛ}_{\Psi}\tilde R_\Psi)$ | Born rule; form first, trace at normalisation last |
 | $\lambda_\pm = \tfrac12(1\pm\lvert\vec r\rvert)$ | Eigenvalues of $\tilde{Ϛ}_{\Psi}$ |
 | $\vec u, \vec u, \vec u_\Psi, \vec u_r$ | Unit pure real quaternions (directions) |
 | ${}^{*} = ({}^{\natural})^{\,*}$ | Hermitian conjugation |

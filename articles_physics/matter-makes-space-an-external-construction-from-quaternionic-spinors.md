@@ -20,7 +20,7 @@ $$
 \qquad
 \Box=\mathrm{Sc}\bigl(\tilde\nabla\tilde\nabla^{\natural}\bigr)=\frac{\partial^2}{\partial R_t^2}+\Delta_Q ,
 $$
-which on the material sector reads $\Box=\Delta-c^{-2}\partial^2/\partial {r'_{t}}^2$. The first-order dynamics is the one-sided pair $\tilde\nabla\tilde{Ξ}_{\mathrm{sp},R}=\frac{k_m}{\tilde{Ξ}_{\mathrm{sp},L}}$, $\tilde\nabla^{\natural}\tilde{Ξ}_{\mathrm{sp},L}=\frac{k_m}{\tilde{Ξ}_{\mathrm{sp},R}}$, and $\tilde\nabla^2$ is **not** $\Box$: the two differ because $e_t$ commutes with the three spatial units and the mixed derivatives then add, so no single field carries the mass at first order. Here $\hbar/(mc)$ is the mass length.
+which on the material sector reads $\Box=\Delta-\partial^2/\partial {r'_{t}}^2$. The first-order dynamics is the one-sided pair $\tilde\nabla\tilde{Ξ}_{\mathrm{sp},R}=\frac{k_m}{\tilde{Ξ}_{\mathrm{sp},L}}$, $\tilde\nabla^{\natural}\tilde{Ξ}_{\mathrm{sp},L}=\frac{k_m}{\tilde{Ξ}_{\mathrm{sp},R}}$, and $\tilde\nabla^2$ is **not** $\Box$: the two differ because $e_t$ commutes with the three spatial units and the mixed derivatives then add, so no single field carries the mass at first order. Here $\hbar/(mc)$ is the mass length.
 
 The source's four generators act on the field, and they are written here as the actions they are:
 $$

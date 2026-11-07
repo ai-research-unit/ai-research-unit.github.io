@@ -4,7 +4,7 @@
 
 This article records a short external programme, that of S. I. Kruglov as presented in *Maxwell's Theory on Non-Commutative Spaces and Quaternions* (arXiv:hep-th/0110059, 2001). The arena is different from the corpus's. The coordinates do not commute,
 
-**Frame.** The corpus displays are read in the $\mathbb{B}$ frame, with the corpus position $\tilde R_\Phi=i c r'_te_t+r_x\vec e_x+r_y\vec e_y+r_z\vec e_z$; formulas quoted from the source keep the source's $x_\mu$.
+**Frame.** The corpus displays are read in the $\mathbb{B}$ frame, with the corpus position $\tilde R_\Phi=i r'_te_t+r_x\vec e_x+r_y\vec e_y+r_z\vec e_z$; formulas quoted from the source keep the source's $x_\mu$.
 
 $$
 [x_\mu,x_\nu] = i\kappa_{\mu\nu},
@@ -24,7 +24,7 @@ First, and most important, **"non-commutative" here does not mean the non-commut
 
 Second, the deformation is of the **Moyal** type — an algebra deformation, $\kappa_{\mu\nu}$ a fixed background. It is not the **C-space** programme of Clifford-valued coordinates, which deforms the arena differently; the corpus holds that programme separately and the two must be compared, not merged. The mathematical side of the Moyal deformation is the star product of *Deformation Quantization*, and the classical limit that the corpus's *Similitudes between the Poisson Bracket and the Quantum Commutator* develops is the undeformed limit here.
 
-Third, the source's arithmetic convention is the corpus's, with the imaginary unit placed in the time coordinate: the source writes $x_4 = ir'_t$, the corpus writes $\tilde R_\Phi = i c r'_t\,e_t + r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z$, and both make the temporal direction imaginary. The source writes the quaternion units $e_4 = 1$, $e_1,e_2,e_3$ with $\vec e_k^2=-1$, and realises them by $\tau_4 = i\tau_0$, $\tau_k = i\sigma_k$; the corpus's units $e_t=1,\vec e_x,\vec e_y,\vec e_z$ are the same objects with different names. Throughout, $c=\hbar=1$.
+Third, the source's arithmetic convention is the corpus's, with the imaginary unit placed in the time coordinate: the source writes $x_4 = ir'_t$, the corpus writes $\tilde R_\Phi = i r'_t\,e_t + r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z$, and both make the temporal direction imaginary. The source writes the quaternion units $e_4 = 1$, $e_1,e_2,e_3$ with $\vec e_k^2=-1$, and realises them by $\tau_4 = i\tau_0$, $\tau_k = i\sigma_k$; the corpus's units $e_t=1,\vec e_x,\vec e_y,\vec e_z$ are the same objects with different names. Throughout, $c=\hbar=1$.
 
 ## The Non-Commutative Arena
 
@@ -348,7 +348,7 @@ Kruglov's *Maxwell's Theory on Non-Commutative Spaces and Quaternions* re-derive
 | $\kappa_{\mu\nu}$ | Constant antisymmetric deformation tensor, dimension $(\text{length})^2$ |
 | $\Lambda_{NC}$, $\epsilon_{\mu\nu}$ | Non-commutativity scale and dimensionless shape tensor, $\kappa_{\mu\nu}=\epsilon_{\mu\nu}/\Lambda_{NC}^2$ |
 | $\kappa_i$ | Three-vector of the deformation, $\kappa_i=\tfrac12\epsilon_{ijk}\kappa_{jk}$, $\kappa_{i4}=0$ |
-| $[x_\mu,x_\nu]=i\kappa_{\mu\nu}$ | The defining commutator; the corpus's "$i c r'_t$" convention is kept for time |
+| $[x_\mu,x_\nu]=i\kappa_{\mu\nu}$ | The defining commutator; the corpus's "$i r'_t$" convention is kept for time |
 | $\star$ | Moyal star product, $\exp(\tfrac{i}{2}\kappa_{\mu\nu}\partial/\partial x_\mu\,\partial/\partial x_{2\nu})$ |
 | $[A_\mu,A_\nu]_M$ | Moyal bracket $A_\mu\star A_\nu - A_\nu\star A_\mu$ |
 | $F_{\mu\nu}$, $\tilde F_{\mu\nu}$ | Field strength and its dual; $E_i=iF_{i4}$, $B_i=\epsilon_{ijk}F_{jk}$ |

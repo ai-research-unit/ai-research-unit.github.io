@@ -8,7 +8,7 @@ This is one of the exercises in the relativity series. It is a set of worked pro
 $$
 \langle \tilde Q_1, \tilde Q_2\rangle = \mathrm{Sc}\!\left(\tilde Q_1\tilde Q_2^{\natural}\right),
 $$
-which is symmetric, real-valued on $\mathbb{B}_{\Phi}$, and reproduces the biquaternion norm on the diagonal. The four-position $\tilde R_\Phi = i c r'_t\,e_t + r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z$, the four-velocity $\tilde{V}_{\Phi} = \gamma(ic\,e_t + \vec v)$ with $\langle\tilde{V}_{\Phi}\rangle_{\natural} = -c^2$, and the four-momentum
+which is symmetric, real-valued on $\mathbb{B}_{\Phi}$, and reproduces the biquaternion norm on the diagonal. The four-position $\tilde R_\Phi = i r'_t\,e_t + r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z$, the four-velocity $\tilde{V}_{\Phi} = \gamma(ic\,e_t + \vec v)$ with $\langle\tilde{V}_{\Phi}\rangle_{\natural} = -c^2$, and the four-momentum
 $$
 \tilde{P}_{\Phi} = m\tilde{V}_{\Phi} = i\frac{E}{c}\,e_t + \vec p,
 \qquad \langle\tilde{P}_{\Phi}\rangle_{\natural} = -m^2c^2,
@@ -50,7 +50,7 @@ $$
 \mathrm{Vect}\!\left(\tilde{P}_{\Phi,\rm in}-\tilde{P}_{\Phi,\rm out}\right) = 0
 \iff \sum_a \vec p_a = \sum_f \vec p_f .
 $$
-These are the conservation of total energy and of total three-momentum. The biquaternion law is therefore not a new law: it is the pair of standard laws written as one $\mathbb{B}_{\Phi}$-valued equation. The reason the compression is possible is structural — energy and three-momentum are the scalar and vector components of one element of the material sector, and the $i c r'_t$ convention is what puts them there.
+These are the conservation of total energy and of total three-momentum. The biquaternion law is therefore not a new law: it is the pair of standard laws written as one $\mathbb{B}_{\Phi}$-valued equation. The reason the compression is possible is structural — energy and three-momentum are the scalar and vector components of one element of the material sector, and the $i r'_t$ convention is what puts them there.
 
 **Remark on counting.** A reader may ask whether a single biquaternion equation can carry four real conditions. It can, because $\mathbb{B}$ is a four-dimensional *complex* algebra while the difference lies in the four-dimensional *real* subspace $\mathbb{B}_{\Phi}$: the equation $\tilde{P}_{\Phi,\rm in}-\tilde{P}_{\Phi,\rm out}=0$ is one $\mathbb{B}_{\Phi}$-valued equation, and since $\mathbb{B}_{\Phi}$ has real dimension four ($\mathbb{B}$ itself has complex dimension four, i.e. real dimension eight), it is exactly four real equations. No information is lost, and none is smuggled in.
 
@@ -340,7 +340,7 @@ as the sum rule requires.
 $$
 \tilde{P}_{\Phi,a} = i\left(m_ac + \frac{1}{2}\frac{m_av_a^2}{c}\right)e_t + m_a\vec v_a + O(v^3/c^3).
 $$
-The scalar part is $i/c$ times (rest energy + kinetic energy), and the vector part is the Newtonian momentum. Four-momentum conservation therefore splits into the separate conservation of total rest-plus-kinetic energy and of total Newtonian momentum. Because the rest masses are separately conserved in a non-relativistic collision, this is the Newtonian conservation of kinetic energy and momentum. The single biquaternion equation reproduces both, with the $i c r'_t$ convention packing them into one element of $\mathbb{B}_{\Phi}$.
+The scalar part is $i/c$ times (rest energy + kinetic energy), and the vector part is the Newtonian momentum. Four-momentum conservation therefore splits into the separate conservation of total rest-plus-kinetic energy and of total Newtonian momentum. Because the rest masses are separately conserved in a non-relativistic collision, this is the Newtonian conservation of kinetic energy and momentum. The single biquaternion equation reproduces both, with the $i r'_t$ convention packing them into one element of $\mathbb{B}_{\Phi}$.
 
 **Solution (b).** In the fixed-target expression $s = (m_1^2+m_2^2)c^4 + 2E_1m_2c^2$, writing $E_1 = m_1c^2+T_{\mathrm{kin},1}$ gives $s = (m_1+m_2)^2c^4 + 2T_{\mathrm{kin},1}m_2c^2$. At the production threshold $s = (M_{\rm out})^2c^4$, so
 $$

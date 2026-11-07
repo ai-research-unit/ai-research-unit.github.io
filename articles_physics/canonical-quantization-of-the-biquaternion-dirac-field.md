@@ -68,7 +68,7 @@ $$
 \qquad \varepsilon=(1,-1,-1,-1),
 $$
 
-with $\Delta_Q:=\sum_k\partial^2/\partial R_k^2$ the spatial Laplacian. On the material sector $\partial/\partial R_t=-(i/c)\partial/\partial r'_t$, so $\Box=\Delta_Q-c^{-2}\partial^2/\partial {r'_t}^2$.
+with $\Delta_Q:=\sum_k\partial^2/\partial R_k^2$ the spatial Laplacian. On the material sector $\partial/\partial R_t=-i\,\partial/\partial r'_t$, so $\Box=\Delta_Q-\partial^2/\partial {r'_t}^2$.
 
 The chiral pair is one operator on the pair of elements,
 

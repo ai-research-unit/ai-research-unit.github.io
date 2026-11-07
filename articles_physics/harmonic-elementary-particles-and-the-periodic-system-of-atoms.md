@@ -27,7 +27,7 @@ D_-\tilde J_{\Phi,\mathrm{eg}} = 0,
 \qquad
 D_- = \partial/\partial\tau - i\nabla,
 \qquad
-\tau = c r'_{t},
+\tau = r'_{t},
 $$
 
 with the paper's pure-vector $\nabla$. Its scalar part is the conservation law $\partial/\partial\tau\,\rho + \mathrm{div}\,\vec J = 0$ and its vector part the first-order inertia equation for the current; both are in the companion article, and nothing here changes them.
@@ -353,7 +353,7 @@ The corpus's relation to this part of the programme is therefore the same as to 
 | $\vec j_E, \vec j_H$ | Electric and gravimagnetic current densities |
 | $\rho = -\rho_E/\sqrt{\epsilon} + i\rho_H/\sqrt{\mu}$ | 2019 source's charge convention (negative of the corpus's) |
 | $\vec J = -\sqrt{\mu}\,\vec j_E + i\sqrt{\epsilon}\,\vec j_H$ | 2019 source's current convention |
-| $\tau = c r'_{t}$ | Scaled time; $\omega$ is a frequency in units of $1/\mathrm{length}$ |
+| $\tau = r'_{t}$ | Scaled time; $\omega$ is a frequency in units of $1/\mathrm{length}$ |
 | $\nabla = \vec e_x\partial/\partial R_x+\vec e_y\partial/\partial R_y+\vec e_z\partial/\partial R_z$ | Pure-vector gradient, acting by left quaternion multiplication |
 | $\nabla\circ\nabla = -\Delta$ | The square of $\nabla$; hence the factorisation below |
 | $(\omega+\nabla)(\omega-\nabla) = \omega^2+\Delta$ | Helmholtz factorisation of the monochromatic operator |

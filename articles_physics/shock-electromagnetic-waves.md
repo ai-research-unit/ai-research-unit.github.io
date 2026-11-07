@@ -78,7 +78,7 @@ $$
 
 where $\tilde{F}^+$ and $\tilde{F}^-$ are the limiting values on the two sides of $S$.
 
-The distributional derivative of a discontinuous function acquires a surface term. Let $\tilde U_{\mathrm n}$ be the unit normal to $S$ in the $i c r'_t$ convention, $\tilde U_{\mathrm n} = i\nu_t\,e_t + \vec u$ with $\nu_t^2 + \lvert\vec u\rvert^2 = 1$, and let $\delta_S$ be the surface delta distribution. For a spatial surface $\nu_t = 0$, and the normal is the pure $\vec u$. Then
+The distributional derivative of a discontinuous function acquires a surface term. Let $\tilde U_{\mathrm n}$ be the unit normal to $S$ in the $i r'_t$ convention, $\tilde U_{\mathrm n} = i\nu_t\,e_t + \vec u$ with $\nu_t^2 + \lvert\vec u\rvert^2 = 1$, and let $\delta_S$ be the surface delta distribution. For a spatial surface $\nu_t = 0$, and the normal is the pure $\vec u$. Then
 
 $$
 \partial/\partial R_\mu \tilde{F} = \{\partial/\partial R_\mu \tilde{F}\} + [\tilde{F}]_S\, n_\mu\, \delta_S,
@@ -134,7 +134,7 @@ $$
 \{n_0 + i\vec u\}\circ[B]_F = 0 .
 $$
 
-The $i$ on the spatial part of the normal is the bigradient's, and the condition is the article's $\tilde U_{\mathrm n}[\tilde{F}]_S = 0$: the two normals differ only by the position of the $i$, since $-i(n_0 + i\vec u) = \vec u - i n_0$ puts the imaginary unit in the time slot, which is the $i c r'_t$ convention's $\tilde U_{\mathrm n} = i\nu_t e_t + \vec u$, and an overall factor in a vanishing condition is empty. Normalising the wave vector gives $n_0 = -1$, and separating the scalar and vector parts of $[B]_F = [b] + [\vec B]$,
+The $i$ on the spatial part of the normal is the bigradient's, and the condition is the article's $\tilde U_{\mathrm n}[\tilde{F}]_S = 0$: the two normals differ only by the position of the $i$, since $-i(n_0 + i\vec u) = \vec u - i n_0$ puts the imaginary unit in the time slot, which is the $i r'_t$ convention's $\tilde U_{\mathrm n} = i\nu_t e_t + \vec u$, and an overall factor in a vanishing condition is empty. Normalising the wave vector gives $n_0 = -1$, and separating the scalar and vector parts of $[B]_F = [b] + [\vec B]$,
 
 $$
 [b] + i(\vec u,[\vec B]) = 0 ,
@@ -406,7 +406,7 @@ The treatment of shock electromagnetic waves in the biquaternion framework is th
 | $c_0 = 1/\sqrt{\epsilon_0\mu_0}$ | **Speed of light in vacuum** (global constant) |
 | $\tilde{\nabla} = e_t\partial/\partial R_t + \sum_\mu \vec e_\mu \partial/\partial R_\mu$ | Biquaternionic gradient |
 | $\Box = \partial^2/\partial R_t^2 + \Delta$ | d'Alembertian |
-| $\tilde U_{\mathrm n}$ | Unit normal to the surface, $i\nu_t e_t + \vec u$ in the $i c r'_t$ convention; the spatial case is the pure $\vec u$ |
+| $\tilde U_{\mathrm n}$ | Unit normal to the surface, $i\nu_t e_t + \vec u$ in the $i r'_t$ convention; the spatial case is the pure $\vec u$ |
 | $[\tilde{F}]_S$ | Jump of $\tilde{F}$ across the surface $S$ |
 | $\tilde J_{\Phi,\mathrm{eg}} = i\rho + \vec J$ | Charge–current biquaternion of the electro-gravimagnetic programme |
 | $\rho = \rho_E/\sqrt{\epsilon} - i\rho_H/\sqrt{\mu}$ | Combined complex charge density |

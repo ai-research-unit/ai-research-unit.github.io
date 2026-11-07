@@ -238,9 +238,9 @@ Z=1+\exp(-\beta\omega)=1.339596,
 \qquad
 \log Z=0.292368,
 $$
-reproducing the parents' $Z$ and $K$; more generally, for a Gibbs state with $\tilde R_\Psi=c r_t\,e_t+i\vec r_\Psi$ at inverse temperature $\beta$, the same identity $\tilde H_{\Psi,\mathrm{modular}}=\beta\tilde R_\Psi+(\log Z)e_t$ was checked on the independent data $c r_t=0.7$, $\vec r_\Psi=(0.3,-0.5,0.8)$, $\beta=1.2$, where
+reproducing the parents' $Z$ and $K$; more generally, for a Gibbs state with $\tilde R_\Psi=r_t\,e_t+i\vec r_\Psi$ at inverse temperature $\beta$, the same identity $\tilde H_{\Psi,\mathrm{modular}}=\beta\tilde R_\Psi+(\log Z)e_t$ was checked on the independent data $r_t=0.7$, $\vec r_\Psi=(0.3,-0.5,0.8)$, $\beta=1.2$, where
 $$
-Z=2\exp(-\beta c r_t)\cosh(\beta|\vec r_\Psi|)=1.547753
+Z=2\exp(-\beta r_t)\cosh(\beta|\vec r_\Psi|)=1.547753
 $$
 and $\tilde H_{\Psi,\mathrm{modular}}-(\beta\tilde R_\Psi+(\log Z)e_t)$ vanishes to $4\times10^{-39}$.
 
@@ -270,14 +270,14 @@ $$
 $$
 No matrix diagonalization is needed to evaluate the state; the doubled scalar part of a biquaternion product is the whole computation.
 
-Second, the physical Gibbs form follows by the shift $\tilde H_{\Psi,\mathrm{modular}}=\beta\tilde R_\Psi+(\log Z)e_t$. With $\tilde R_\Psi=c r_t\,e_t+i\vec r_\Psi$,
+Second, the physical Gibbs form follows by the shift $\tilde H_{\Psi,\mathrm{modular}}=\beta\tilde R_\Psi+(\log Z)e_t$. With $\tilde R_\Psi=r_t\,e_t+i\vec r_\Psi$,
 $$
 Z=\mathrm{Tr}\big(\exp(-\beta H)\big)=2\,\mathrm{Sc}\big(\exp(-\beta H)\big)
-=2\exp(-\beta c r_t)\cosh(\beta|\vec r_\Psi|),
+=2\exp(-\beta r_t)\cosh(\beta|\vec r_\Psi|),
 $$
 and the scalar and vector parts of $\tilde H_{\Psi,\mathrm{modular}}$ have direct thermodynamic interpretations:
 $$
-\mathrm{Sc}(\tilde H_{\Psi,\mathrm{modular}})=\beta c r_t+\log Z,
+\mathrm{Sc}(\tilde H_{\Psi,\mathrm{modular}})=\beta r_t+\log Z,
 \qquad
 \vec a=\beta\vec r_\Psi,
 $$
@@ -338,11 +338,11 @@ $$
 $$
 and the modular flow is the boost by rapidity $2\pi s$ in the modular parameter $s$. The two wedges have opposite orientation: the boost generator whose flow is future-directed on the right wedge is past-directed on the left, so $\tilde H_{\Psi,\mathrm{modular},L}=-\tilde H_{\Psi,\mathrm{modular},R}$ and "the wedge modular Hamiltonian" is wedge-dependent, as the Unruh article records; the norm $|\tilde H_{\Psi,\mathrm{modular},W}|$ is what enters the temperature and is the same for both.
 
-Three checks make this concrete, and all were recomputed symbolically in the algebra. First, the rotor really is the boost: on $\tilde R_\Phi=ic r'_t e_t+r_x\vec e_x$ (with $c r'_t=cr'_t$, and the other components untouched),
+Three checks make this concrete, and all were recomputed symbolically in the algebra. First, the rotor really is the boost: on $\tilde R_\Phi=i r'_t e_t+r_x\vec e_x$ (with $r'_t=r'_t$, and the other components untouched),
 $$
-c r'_t\longmapsto c r'_t\cosh\theta_{\mathrm{rpd}}-r_x\sinh\theta_{\mathrm{rpd}},
+r'_t\longmapsto r'_t\cosh\theta_{\mathrm{rpd}}-r_x\sinh\theta_{\mathrm{rpd}},
 \qquad
-r_x\longmapsto r_x\cosh\theta_{\mathrm{rpd}}-c r'_t\sinh\theta_{\mathrm{rpd}},
+r_x\longmapsto r_x\cosh\theta_{\mathrm{rpd}}-r'_t\sinh\theta_{\mathrm{rpd}},
 \qquad
 \langle\tilde U_{\Psi,\mathrm b}\tilde R_\Phi\tilde U_{\Psi,\mathrm b}\rangle_{\natural}=\langle\tilde R_\Phi\rangle_{\natural}.
 $$
@@ -354,7 +354,7 @@ $$
 and exponentiating this derivation reproduces the finite rotor action, $\exp(\theta_{\mathrm{rpd}}\,\delta_{G_1})\tilde R_\Phi=\tilde U_{\Psi,\mathrm b}(\theta_{\mathrm{rpd}})\tilde R_\Phi\tilde U_{\Psi,\mathrm b}(\theta_{\mathrm{rpd}})$, with $\delta_{G_1}=\tfrac12\{G_1,\cdot\,\}$. Third, the **commutator** $[G_1,\tilde R_\Phi]$ is *not* the boost: on the boost plane $r_y=r_z=0$ it vanishes, and in general it generates a rotation in the orthogonal plane,
 $$
 [G_1,\tilde R_\Phi]=\big(0,\,0,\,-2i\,r_z,\,2i\,r_y\big)
-\quad\text{for}\quad \tilde R_\Phi=ic r'_t e_t+r_x\vec e_x+r_y\vec e_y+r_z\vec e_z .
+\quad\text{for}\quad \tilde R_\Phi=i r'_t e_t+r_x\vec e_x+r_y\vec e_y+r_z\vec e_z .
 $$
 So the modular Hamiltonian's action here is two-sided, not an inner commutator: writing $\tilde H_{\Psi,\mathrm{modular},W}=2\pi G_1$ identifies the algebra element, and the flow it generates on $\mathbb{B}_{\Phi}$ is the rotor conjugation above. This is the same warning the curved-spacetime and Lorentz-transformation companions give for boosts, and the wedge is a case where it is load-bearing — a reader who generates the flow by $-i[\tilde H_{\Psi,\mathrm{modular},W},\cdot]$ obtains a rotation about $\vec e_x$, not the boost.
 
@@ -374,7 +374,7 @@ There is a structural reason the wedge case looks different from the finite-dime
 - $\tilde H_{\Psi,\mathrm{modular}}=-\log\Delta$ is defined by $\Delta=\exp(-\tilde H_{\Psi,\mathrm{modular}})$; with this convention $\Delta^{ir'_t}=\exp(-i\tilde H_{\Psi,\mathrm{modular}}r'_t)$ and $d\sigma_{r'_{t}}/dr'_t|_{r'_t=0}=-i[\tilde H_{\Psi,\mathrm{modular}},\tilde Q_3]$, and the opposite sign convention reverses which flow is KMS.
 - In $\mathbb{B}\cong M_2(\mathbb{C})$, $\tilde H_{\Psi,\mathrm{modular}}=-\log\tilde{Ϛ}_{\Psi}\in\mathbb{B}_{\Psi}$, with the spectral form $a_0=-\tfrac12\log\det\tilde{Ϛ}_{\Psi}$, $\vec a=-\tfrac12\log(\lambda_+/\lambda_-)\vec u_r$; $\Delta>0$ for every faithful state, and $\tilde H_{\Psi,\mathrm{modular}}$ does not exist for a non-faithful one.
 - $\tilde H_{\Psi,\mathrm{modular}}$ generates the same flow as $\Delta^{ir'_t}$: verified symbolically and numerically on a generic rotated state and a thermal state.
-- $\mathrm{Tr}(\exp(-\tilde H_{\Psi,\mathrm{modular}}))=1$, and the trace formula makes the Gibbs state a doubled scalar extraction, with $\mathrm{Sc}(\tilde H_{\Psi,\mathrm{modular}})=\beta c r_t+\log Z$ and $\vec a=\beta\vec r_\Psi$.
+- $\mathrm{Tr}(\exp(-\tilde H_{\Psi,\mathrm{modular}}))=1$, and the trace formula makes the Gibbs state a doubled scalar extraction, with $\mathrm{Sc}(\tilde H_{\Psi,\mathrm{modular}})=\beta r_t+\log Z$ and $\vec a=\beta\vec r_\Psi$.
 - $\tilde H_{\Psi,\mathrm{modular}}=-2\log\tilde Q_{\mathrm n}$ for the bracket-normalised amplitude $\tilde Q_{\mathrm n}=\tilde{Ϛ}_{\Psi}^{1/2}$, with a central additive constant for an unnormalised amplitude; checked on a generic rotated state.
 - In the wedge, $\tilde H_{\Psi,\mathrm{modular},W}=2\pi G_1$ with $G_1=i\vec e_x\in\mathbb{B}_{\Psi}$; the rotor action is the boost, its generator is the anticommutator $\tfrac12\{G_1,\cdot\,\}$, and the commutator is a rotation in the orthogonal plane.
 
@@ -412,7 +412,7 @@ a_0=-\tfrac12\log\det\tilde{Ϛ}_{\Psi},
 \qquad
 \vec a=-\tfrac12\log\frac{\lambda_+}{\lambda_-}\vec u_r,
 $$
-so the modular Hamiltonian is a Hermitian element of the informational sector, with the scalar part fixed by the determinant of the state and the vector part by its Bloch polarization. It was verified symbolically and numerically — on a generic rotated state and on a thermal state, not only on the case that suggested the formulas — that $\tilde H_{\Psi,\mathrm{modular}}$ generates the same flow as $\Delta^{ir'_t}$, that $\mathrm{Tr}(\exp(-\tilde H_{\Psi,\mathrm{modular}}))=1$, and that the trace formula $\mathrm{Tr}(\tilde{R}_{\Psi,1}\tilde{R}_{\Psi,2}^{*})=2\langle\tilde{R}_{\Psi,1},\tilde{R}_{\Psi,2}\rangle_{*} = 2\,\mathrm{Sc}(\tilde{R}_{\Psi,1}\tilde{R}_{\Psi,2}^{*})$ makes the Gibbs form computable, with $\mathrm{Sc}(\tilde H_{\Psi,\mathrm{modular}})=\beta c r_t+\log Z$ and $\vec a=\beta\vec r_\Psi$.
+so the modular Hamiltonian is a Hermitian element of the informational sector, with the scalar part fixed by the determinant of the state and the vector part by its Bloch polarization. It was verified symbolically and numerically — on a generic rotated state and on a thermal state, not only on the case that suggested the formulas — that $\tilde H_{\Psi,\mathrm{modular}}$ generates the same flow as $\Delta^{ir'_t}$, that $\mathrm{Tr}(\exp(-\tilde H_{\Psi,\mathrm{modular}}))=1$, and that the trace formula $\mathrm{Tr}(\tilde{R}_{\Psi,1}\tilde{R}_{\Psi,2}^{*})=2\langle\tilde{R}_{\Psi,1},\tilde{R}_{\Psi,2}\rangle_{*} = 2\,\mathrm{Sc}(\tilde{R}_{\Psi,1}\tilde{R}_{\Psi,2}^{*})$ makes the Gibbs form computable, with $\mathrm{Sc}(\tilde H_{\Psi,\mathrm{modular}})=\beta r_t+\log Z$ and $\vec a=\beta\vec r_\Psi$.
 
 The one structural question the finite-dimensional model cannot settle is locality. For a general spacetime region the modular Hamiltonian of the vacuum is nonlocal, and the modular flow is not geometric; it is local exactly in the exceptional cases where the flow is a symmetry flow — the Bisognano–Wichmann wedge, where $\tilde H_{\Psi,\mathrm{modular},W}=2\pi G_1$ with $G_1=i\vec e_x\in\mathbb{B}_{\Psi}$ and the flow is the boost by rapidity $2\pi s$, and the conformal ball, which the framework cannot fully express because the special conformal generators are not elements of $\mathbb{B}$. In the wedge the flow is outer and the action is the two-sided rotor conjugation, not the commutator $[\tilde H_{\Psi,\mathrm{modular},W},\cdot\,]$; in the finite-dimensional model the flow is inner and the commutator is correct. Both cases have $\tilde H_{\Psi,\mathrm{modular}}\in\mathbb{B}_{\Psi}$, by different mechanisms, and the gap between them is the type gap of the modular-theory parent.
 

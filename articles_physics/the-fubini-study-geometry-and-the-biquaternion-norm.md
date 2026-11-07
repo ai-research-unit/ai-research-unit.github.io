@@ -25,7 +25,7 @@ The article proceeds as follows. The state space and its two forms are recalled;
 
 ## The State Space and Its Two Forms
 
-An element of the Hermitian subspace is $\tilde R_\Psi=c r_t\,e_t+i\vec r_\Psi$ with $c r_t\in\mathbb{R}$ and $\vec r_\Psi\in\mathbb{R}^3$, and the state space is the normalised hyperplane of the future cone,
+An element of the Hermitian subspace is $\tilde R_\Psi=r_t\,e_t+i\vec r_\Psi$ with $r_t\in\mathbb{R}$ and $\vec r_\Psi\in\mathbb{R}^3$, and the state space is the normalised hyperplane of the future cone,
 $$
 \{\text{states}\}=\left\{\tilde{Ϛ}_{\Psi}\in\mathbb{B}_{\Psi}:\ \langle\tilde{Ϛ}_{\Psi},e_t\rangle_{*}=\tfrac12,\ \langle\tilde{Ϛ}_{\Psi}\rangle_{\natural}\geq0\right\},
 \qquad
@@ -37,7 +37,7 @@ Two symmetric forms live on the same four-dimensional real space, and the whole 
 
 **The plain form.** For two Hermitian elements $\tilde{R}_{\Psi,1}=c r_{t,1}\,e_t+i\vec r_{\Psi,1}$ and $\tilde{R}_{\Psi,2}=c r_{t,2}\,e_t+i\vec r_{\Psi,2}$,
 $$
-\langle\tilde{R}_{\Psi,1},\tilde{R}_{\Psi,2}\rangle_{*}=\mathrm{Sc}\bigl(\tilde{R}_{\Psi,1}\tilde{R}_{\Psi,2}^{*}\bigr)=c^2 r_{t,1}r_{t,2}+\vec r_{\Psi,1}\cdot\vec r_{\Psi,2}
+\langle\tilde{R}_{\Psi,1},\tilde{R}_{\Psi,2}\rangle_{*}=\mathrm{Sc}\bigl(\tilde{R}_{\Psi,1}\tilde{R}_{\Psi,2}^{*}\bigr)=r_{t,1}r_{t,2}+\vec r_{\Psi,1}\cdot\vec r_{\Psi,2}
 $$
 is positive definite, of signature $(4,0)$; its $2\times2$ reading is $\mathrm{Tr}(\tilde{R}_{\Psi,1}\tilde{R}_{\Psi,2})=2\langle\tilde{R}_{\Psi,1},\tilde{R}_{\Psi,2}\rangle_{*}$, the Euclidean pairing on $\mathbb{R}^4$ with $\mathrm{Tr}(e_t)=2$, and it is the Hilbert–Schmidt pairing of the matrix model.
 
@@ -45,7 +45,7 @@ is positive definite, of signature $(4,0)$; its $2\times2$ reading is $\mathrm{T
 $$
 \langle\tilde{R}_{\Psi,1}\rangle_{\natural} = \langle\tilde{R}_{\Psi,1},\tilde{R}_{\Psi,1}\rangle_{\natural}=\tilde{R}_{\Psi,1}\tilde{R}_{\Psi,1}^{\natural}=\bigl(c r_{t,1}^2-|\vec r_{\Psi,1}|^2\bigr)e_t,
 \qquad
-\langle\tilde{R}_{\Psi,1},\tilde{R}_{\Psi,2}\rangle_{\natural}=\tfrac12\bigl(\tilde{R}_{\Psi,1}\tilde{R}_{\Psi,2}^{\natural}+\tilde{R}_{\Psi,2}\tilde{R}_{\Psi,1}^{\natural}\bigr)=\bigl(c^2 r_{t,1}r_{t,2}-\vec r_{\Psi,1}\cdot\vec r_{\Psi,2}\bigr)e_t,
+\langle\tilde{R}_{\Psi,1},\tilde{R}_{\Psi,2}\rangle_{\natural}=\tfrac12\bigl(\tilde{R}_{\Psi,1}\tilde{R}_{\Psi,2}^{\natural}+\tilde{R}_{\Psi,2}\tilde{R}_{\Psi,1}^{\natural}\bigr)=\bigl(r_{t,1}r_{t,2}-\vec r_{\Psi,1}\cdot\vec r_{\Psi,2}\bigr)e_t,
 $$
 is indefinite, of signature $(1,3)$; its future cone is the positivity cone of the states, and its boundary is the pure states.
 

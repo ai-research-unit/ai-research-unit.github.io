@@ -131,7 +131,7 @@ $$
 \tilde\nabla_{\mathrm{gco},\mu} = \partial/\partial R_\mu +\frac{k_m\,i\,ϙ}{m\,c}A_\mu,
 $$
 
-with $\partial/\partial R_t = -(i/c)\,\partial/\partial r'_t$ and $\partial/\partial R_k = \partial/\partial x_k$. This is the identical component form derived in the gauge principle article, now read as an operator on the Dirac field. Setting $\hbar = 1$ gives $\tilde\nabla_{\mathrm{gco},\mu} = \partial/\partial R_\mu + iϙA_\mu$, the convention used for the minimal substitution in the companion article on the solutions and the non-relativistic limit.
+with $\partial/\partial R_t = -i\,\partial/\partial r'_t$ and $\partial/\partial R_k = \partial/\partial x_k$. This is the identical component form derived in the gauge principle article, now read as an operator on the Dirac field. Setting $\hbar = 1$ gives $\tilde\nabla_{\mathrm{gco},\mu} = \partial/\partial R_\mu + iϙA_\mu$, the convention used for the minimal substitution in the companion article on the solutions and the non-relativistic limit.
 
 **The connection is a material-sector object.** The gauge principle article shows that a **real** gauge function $\Gamma$ keeps $\tilde{A}_{\Phi,2} = \tilde{A}_{\Phi} - \tilde{\nabla}\Gamma$ in $\mathbb{B}_{\Phi}$. The coupling is therefore the coupling of the Dirac field to a material-sector connection, and the ingredient $\frac{k_m\,i\,ϙ}{m\,c}\tilde{A}_{\Phi}$ in $\tilde\nabla_{\mathrm{gco}}$ is Hermitian:
 
@@ -309,7 +309,7 @@ $$
 
 the square of the topological norm, so the scalar part of $\tilde J_{\Phi,\mathrm{sp}}$ itself is $i\,\|\tilde{Ξ}_{\mathrm{sp}}\|_E^2$ — a positive imaginary number, of the $ic\rho$ form of a positive density with $c\rho = \|\tilde{Ξ}_{\mathrm{sp}}\|_E^2$. By these three tests it is a plausible current.
 
-**It is not conserved.** The divergence of $\tilde J_{\Phi,\mathrm{sp}}$ in the $i c r'_t$ convention is the scalar part of $\tilde{\nabla}^{\natural}\tilde J_{\Phi,\mathrm{sp}}$,
+**It is not conserved.** The divergence of $\tilde J_{\Phi,\mathrm{sp}}$ in the $i r'_t$ convention is the scalar part of $\tilde{\nabla}^{\natural}\tilde J_{\Phi,\mathrm{sp}}$,
 
 $$
 \mathrm{Sc}\!\left(\tilde{\nabla}^{\natural}\tilde J_{\Phi,\mathrm{sp}}\right) = \frac{\partial}{\partial R_t}\mathrm{Sc}\left(\tilde J_{\Phi,\mathrm{sp}}\right) + \mathrm{div}\,\vec J,
@@ -404,7 +404,7 @@ What the algebra forces and what it merely rewrites in its own notation are easi
 
 4. **The sourced system.** How does the Dirac current feed the biquaternionic Maxwell equation $\tilde{\nabla}\tilde{F} = -\sqrt{\mu}\,\tilde{J}_{\Phi}$, and does the coupled system close on the algebra? The integrability condition $\sqrt{\mu}\,\mathrm{Sc}(\tilde{\nabla}^{\natural}\tilde{J}_{\Phi}) = 0$ must be recovered from the current. The external identity of the section on the mixed invariant supplies the shape of an answer — the source contraction is fixed by the two field strengths — but it is stated for the source's own field strengths, not for $\tilde{Ξ}_{\mathrm{sp}}$, so it does not by itself close the corpus's system.
 
-5. **The shared generator.** The internal phase $\exp(\frac{k_m\,i\,ϙ\,\Gamma}{m\,c})$ and the complex time coordinate $i c r'_t$ both use the single element $i$ of $\mathbb{B}$. Is this identification content-bearing, or vacuous because the phase is central? (The gauge principle article's open question.)
+5. **The shared generator.** The internal phase $\exp(\frac{k_m\,i\,ϙ\,\Gamma}{m\,c})$ and the complex time coordinate $i r'_t$ both use the single element $i$ of $\mathbb{B}$. Is this identification content-bearing, or vacuous because the phase is central? (The gauge principle article's open question.)
 
 6. **The non-abelian extension.** When the connection becomes $\mathbb{B}$-valued it is no longer central, so it no longer commutes with the field, and the left/right question becomes sharp: the order of the factors is then part of the statement. The companions on the covariant derivative, on non-abelian fields and on the Yang–Mills equation place the field, but the choice is made there rather than forced.
 
@@ -534,7 +534,7 @@ One external result is recorded on the source side, and it is not a development 
 | $ϙ$ | Charge (coupling constant), not fixed by the algebra |
 | $\tilde\nabla_{\mathrm{gco}} = \tilde{\nabla} +\frac{k_m\,i\,ϙ}{m\,c}\tilde{A}_{\Phi}$ | Covariant derivative (left action) |
 | $\tilde\nabla_{\mathrm{gco}}^{\natural} = \tilde{\nabla}^{\natural} +\frac{k_m\,i\,ϙ}{m\,c}\tilde{A}_{\Phi}^{\natural}$ | Its $\natural$-image; the operator of the second member of the pair |
-| $\tilde\nabla_{\mathrm{gco},\mu} = \partial/\partial R_\mu +\frac{k_m\,i\,ϙ}{m\,c}A_\mu$ | Components; $\partial/\partial R_t = -(i/c)\,\partial/\partial r'_t$ |
+| $\tilde\nabla_{\mathrm{gco},\mu} = \partial/\partial R_\mu +\frac{k_m\,i\,ϙ}{m\,c}A_\mu$ | Components; $\partial/\partial R_t = -i\,\partial/\partial r'_t$ |
 | $\tilde{F}$ | Field-strength biquaternion; $\tilde\nabla_{\mathrm{gco}}^{\natural}\tilde\nabla_{\mathrm{gco}} = \sum_\mu  \tilde\nabla_{\mathrm{gco},\mu}^2 +\frac{k_m\,i\,ϙ}{m\,c}\tilde{F}$ |
 | $\tilde\nabla_{\mathrm{gco}}\tilde{Ξ}_{\mathrm{sp},R} = k_m\tilde{Ξ}_{\mathrm{sp},L}$, $\tilde\nabla_{\mathrm{gco}}^{\natural}\tilde{Ξ}_{\mathrm{sp},L} = k_m\tilde{Ξ}_{\mathrm{sp},R}$ | Minimally coupled Dirac equation |
 | $\frac{k_m\,i\,ϙ}{m\,c}\tilde{A}_{\Phi}\tilde{Ξ}_{\mathrm{sp}}$ | Interaction term |

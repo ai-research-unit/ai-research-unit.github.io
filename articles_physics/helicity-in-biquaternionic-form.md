@@ -163,7 +163,7 @@ $$
 \mathsf{M}_2(\tilde P_{\Phi})=i\left(\frac{E}{c}I_2-\vec p\cdot\boldsymbol\sigma\right),
 $$
 
-of rank exactly one. The matrix in parentheses, $p_{\alpha\bar\beta}=\frac{E}{c}\delta_{\alpha\bar\beta}-(\vec p\cdot\boldsymbol\sigma)_{\alpha\bar\beta}$, is the standard spinor-helicity bispinor, Hermitian, of determinant $E^2/c^2-\vec p^{\,2}=m^2c^2$, and rank one exactly at $m=0$. The factor $i$ is the framework's $i c r'_t$ convention; with $\tilde R_\Psi=-i\tilde P_{\Phi}\in\mathbb{B}_{\Psi}$ one has $\mathsf{M}_2(\tilde R_\Psi)=p_{\alpha\bar\beta}$ exactly.
+of rank exactly one. The matrix in parentheses, $p_{\alpha\bar\beta}=\frac{E}{c}\delta_{\alpha\bar\beta}-(\vec p\cdot\boldsymbol\sigma)_{\alpha\bar\beta}$, is the standard spinor-helicity bispinor, Hermitian, of determinant $E^2/c^2-\vec p^{\,2}=m^2c^2$, and rank one exactly at $m=0$. The factor $i$ is the framework's $i r'_t$ convention; with $\tilde R_\Psi=-i\tilde P_{\Phi}\in\mathbb{B}_{\Psi}$ one has $\mathsf{M}_2(\tilde R_\Psi)=p_{\alpha\bar\beta}$ exactly.
 
 ## Rank One Is Factorisability
 

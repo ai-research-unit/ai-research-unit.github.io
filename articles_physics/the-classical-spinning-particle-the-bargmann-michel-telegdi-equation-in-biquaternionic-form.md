@@ -24,7 +24,7 @@ $$
 B=\sum_{\lambda,\nu}S_\lambda F_{\lambda\nu}v_\nu.
 $$
 
-This is the BMT equation in the conventions of this series, in which the four-velocity has $\langle\tilde{V}_{\Phi}\rangle_\natural=-\gamma^{2}c^{2}+\gamma^{2}\vec v^{2}=-c^{2}$, the minus on the time term being the square of the $i$ in $i c r'_t$. In the biquaternion algebra it becomes
+This is the BMT equation in the conventions of this series, in which the four-velocity has $\langle\tilde{V}_{\Phi}\rangle_\natural=-\gamma^{2}c^{2}+\gamma^{2}\vec v^{2}=-c^{2}$, the minus on the time term being the square of the $i$ in $i r'_t$. In the biquaternion algebra it becomes
 
 $$
 \frac{d\tilde{S}_{\Psi}}{d\tau}
@@ -442,7 +442,7 @@ is the subject of the companion article of this subcategory. The equation's two-
 | $g$, $\gamma_g=gq/2m$, $\vec\mu=\gamma_g\vec s$ | Gyromagnetic factor, ratio, magnetic moment |
 | $\tilde{F}=i\sqrt{\epsilon}\,\vec E-\sqrt{\mu}\,\vec H$ | Field-strength biquaternion |
 | $c=1/\sqrt{\epsilon\mu}$ | Speed of light in the medium |
-| $F_{tk}=E_k/c$, $F_{jk}=\epsilon_{jkl}B_l$ | Field tensor components (real time; $i c r'_t$: $F_{tk}=iE_k/c$) |
+| $F_{tk}=E_k/c$, $F_{jk}=\epsilon_{jkl}B_l$ | Field tensor components (real time; $i r'_t$: $F_{tk}=iE_k/c$) |
 | $\mathrm{F}(\tilde{V}_{\Phi})=-\sqrt{\mu}P_{\mathbb{B}_{\Phi}}(\tilde{V}_{\Phi}\tilde{F})$ | Field action, components $\sum_\nu F_{\mu\nu}V_\nu$ |
 | $\langle\tilde{Q}_1,\tilde{Q}_2\rangle=\mathrm{Sc}(\tilde{Q}_1\tilde{Q}_2^{\natural})=-Q_{1,0}Q_{2,0}+\vec Q_1\cdot\vec Q_2$ | Invariant pairing on $\mathbb{B}_{\Phi}$ |
 | $B=\sum_{\lambda,\nu}S_\lambda F_{\lambda\nu}v_\nu=\langle\tilde{S}_{\Psi},\mathrm{F}(\tilde{V}_{\Phi})\rangle$ | Spin–field–velocity invariant |

@@ -26,7 +26,7 @@ The word "information" is used in its physical, signal-theoretic sense: a signal
 An event is an element of the material sector,
 
 $$
-\tilde R_\Phi = i c r'_{t}\,e_t + r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z,
+\tilde R_\Phi = i r'_{t}\,e_t + r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z,
 $$
 
 with $r'_t, r_x, r_y, r_z \in \mathbb{R}$ and $c$ the local speed of light. The scalar part is purely imaginary and the vector part is real, so $\tilde R_\Phi \in \mathbb{B}_{\Phi}$. The displacement from an event $p$ to an event $q$ is
@@ -79,15 +79,15 @@ The vanishing set of the biquaternion norm on the material sector is the double 
 
 $$
 \mathcal{Z} = \{\, \tilde{Q}_1 \in \mathbb{B}_{\Phi} : \tilde{Q}_1 \ne 0,\ \langle\tilde{Q}_1\rangle_{\natural} = 0 \,\}
-= \{\, i c r'_{t}\,e_t + r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z : |r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z| = c\,|r'_t| \,\},
+= \{\, i r'_{t}\,e_t + r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z : |r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z| = c\,|r'_t| \,\},
 $$
 
 the light cone of Minkowski space. The companion article *The Light Cone as the Biquaternion Zero-Divisor Cone* proves the following, and it is quoted here rather than repeated.
 
-**The cone is the zero-divisor set.** A nonzero biquaternion is $N$-degenerate, $\langle\tilde{Q}_1\rangle_{\natural} = 0$, if and only if it is a zero divisor of $\mathbb{B}$: there is a nonzero $\tilde Q_2$ with $\tilde{Q}_1\tilde Q_2 = 0$. The zero divisors split into a nilpotent family, whose scalar part vanishes, and a family of multiples of the algebra's idempotents, whose scalar part does not. On the real material slice the second family is the one that occurs: a nonzero null element with $c r'_{t} \ne 0$ is a multiple of an idempotent by the purely imaginary scalar $2i c r'_t$,
+**The cone is the zero-divisor set.** A nonzero biquaternion is $N$-degenerate, $\langle\tilde{Q}_1\rangle_{\natural} = 0$, if and only if it is a zero divisor of $\mathbb{B}$: there is a nonzero $\tilde Q_2$ with $\tilde{Q}_1\tilde Q_2 = 0$. The zero divisors split into a nilpotent family, whose scalar part vanishes, and a family of multiples of the algebra's idempotents, whose scalar part does not. On the real material slice the second family is the one that occurs: a nonzero null element with $r'_{t} \ne 0$ is a multiple of an idempotent by the purely imaginary scalar $2i r'_t$,
 
 $$
-\tilde R_\Phi = i c r'_t\left(e_t - i\vec u_x\right) = 2i c r'_t\,\tilde\Pi(-\vec u_x),
+\tilde R_\Phi = i r'_t\left(e_t - i\vec u_x\right) = 2i r'_t\,\tilde\Pi(-\vec u_x),
 \qquad
 \tilde\Pi(-\vec u_x) = \tfrac12\left(e_t - i\vec u_x\right),
 \qquad
@@ -319,7 +319,7 @@ $$
 
 because $s$ is linear and $\Box s = 0$. The exponential $\exp(s)$ is therefore an eigenfunction with eigenvalue $\langle\tilde P_{\Phi}\rangle_{\natural}$, and the oscillatory positive-frequency wave $\exp(is)$ has eigenvalue $-\langle\tilde P_{\Phi}\rangle_{\natural}$, the two differing by the overall sign that leaves the kernel unchanged. In either case the characteristic variety, the set on which the symbol vanishes, is exactly the null cone $\mathcal{Z}$. The cone is therefore the characteristic cone of the algebra's own wave operator, and the companion article *The Light Cone as the Biquaternion Zero-Divisor Cone* records the equivalent zero-divisor statement.
 
-The standard theory of hyperbolic operators now supplies the propagation bound. A second-order linear hyperbolic equation with the characteristic cone $\mathcal{Z}$ has finite propagation speed: if a source $\tilde Q_{\mathrm{src}}$ is supported in a compact set $K$ at time $r'_t = 0$, then the solution of $\Box\tilde{Ξ} = \tilde Q_{\mathrm{src}}$ is supported at time $r'_t$ inside the set of points that lie within distance $c r'_{t}$ of $K$, that is, inside the union of the light cones erected on $K$. This is a theorem of the classical theory of partial differential equations, not a property of the biquaternion formulation, and it is cited as standard. Its content here is that the barrier is not imposed on the algebra from outside: the wave operator that the algebra naturally carries has the cone as its characteristic surface, so a field generated in a bounded region propagates only into that region's causal future. The algebraic zero-divisor cone, the geometric light cone and the analytic characteristic cone are the same set.
+The standard theory of hyperbolic operators now supplies the propagation bound. A second-order linear hyperbolic equation with the characteristic cone $\mathcal{Z}$ has finite propagation speed: if a source $\tilde Q_{\mathrm{src}}$ is supported in a compact set $K$ at time $r'_t = 0$, then the solution of $\Box\tilde{Ξ} = \tilde Q_{\mathrm{src}}$ is supported at time $r'_t$ inside the set of points that lie within distance $r'_{t}$ of $K$, that is, inside the union of the light cones erected on $K$. This is a theorem of the classical theory of partial differential equations, not a property of the biquaternion formulation, and it is cited as standard. Its content here is that the barrier is not imposed on the algebra from outside: the wave operator that the algebra naturally carries has the cone as its characteristic surface, so a field generated in a bounded region propagates only into that region's causal future. The algebraic zero-divisor cone, the geometric light cone and the analytic characteristic cone are the same set.
 
 ## Causal Automorphisms and the Time Orientation
 
@@ -410,10 +410,10 @@ The information-theoretic interpretation is that $J^+(p)$ is the set of events t
 | $i$ | Central scalar imaginary, $i^2=-1$ |
 | $c$, $c_0$ | Speed of light in the medium, and in vacuum |
 | $\tilde{Q}_1^{\natural}$, $\bar{\tilde{Q}_1}$, $\tilde{Q}_1^{*} = \overline{\tilde{Q}_1^{\natural}}$ | Quaternion, complex and Hermitian conjugation |
-| $\tilde R_\Phi = i c r'_{t}\,e_t + r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z$ | Material four-position |
+| $\tilde R_\Phi = i r'_{t}\,e_t + r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z$ | Material four-position |
 | $\tilde{Q}_{qp} = \tilde{Q}_q - \tilde{Q}_p$ | Displacement from $p$ to $q$ |
 | $\langle\tilde{Q}_1\rangle_{\natural} = \tilde{Q}_1\tilde{Q}_1^{\natural} = \sum_\mu Q_{1,\mu}^2$ | Biquaternion norm; the interval on $\mathbb{B}_{\Phi}$ |
-| $\delta_{\mu\nu}=(1,1,1,1)$ | The metric, the identity matrix; with $Q_t=i c r'_t$ the material interval is $-c^2{r'_{t}}^2+r_x^2+r_y^2+r_z^2$ |
+| $\delta_{\mu\nu}=(1,1,1,1)$ | The metric, the identity matrix; with $Q_t=i r'_t$ the material interval is $-{r'_{t}}^2+r_x^2+r_y^2+r_z^2$ |
 | $\mathrm{Sc}$ | Scalar projection of a biquaternion |
 | $\mathcal{Z}$ | Light cone: the $N=0$ locus of $\mathbb{B}_{\Phi}$, the material-sector part of the zero-divisor set of $\mathbb{B}$ |
 | $p \preceq q$ | Causal order: $\langle\tilde{Q}_{qp}\rangle_{\natural}\le 0$ and $\Delta r'_t\ge 0$ |

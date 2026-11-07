@@ -294,7 +294,7 @@ The companion articles express quantum physics in the biquaternion algebra $\mat
 
 **The observables.** In the framework the observables of a two-state system are the Hermitian elements
 $$
-\tilde R_\Psi = c r_t\,e_t + i\,\vec r_\Psi, \qquad c r_t\in\mathbb{R}, \quad \vec r_\Psi=(r'_x,r'_y,r'_z)\in\mathbb{R}^3,
+\tilde R_\Psi = r_t\,e_t + i\,\vec r_\Psi, \qquad r_t\in\mathbb{R}, \quad \vec r_\Psi=(r'_x,r'_y,r'_z)\in\mathbb{R}^3,
 $$
 of the Hermitian subspace $\mathbb{B}_{\Psi}$, with $\mathbb{B}=\mathbb{B}_{\Psi}\oplus\mathbb{B}_{\Phi}$. For two such elements $\tilde{R}_{\Psi,1}=c r_{t,1}\,e_t+i\vec r_{\Psi,1}$ and $\tilde{R}_{\Psi,2}=c r_{t,2}\,e_t+i\vec r_{\Psi,2}$, their **commutator** is
 $$
@@ -362,7 +362,7 @@ In the biquaternion framework, the observables are the Hermitian elements of $\m
 | $e_t,\vec e_x,\vec e_y,\vec e_z$; $i$ | Quaternion basis ($\vec e_k^2=-e_t$); scalar imaginary ($i^2=-1$) |
 | $\mathbb{B}_{\Psi}$, $\mathbb{B}_{\Phi}$ | Hermitian (observables) and anti-Hermitian (generators) subspaces |
 | $\mathbb{B}_{H}$ | Real-quaternion subspace |
-| $\tilde R_\Psi=c r_t\,e_t+i\vec r_\Psi$ | Hermitian observable |
+| $\tilde R_\Psi=r_t\,e_t+i\vec r_\Psi$ | Hermitian observable |
 | $[\tilde{R}_{\Psi,1},\tilde{R}_{\Psi,2}]=-2(\vec r_{\Psi,1}\times\vec r_{\Psi,2})$ | Biquaternion commutator ($\frac{m\,c}{k_m}$-free) |
 | $\tilde S_{\Psi,k}=(\frac{m\,c}{2\,k_m})i\vec e_k$ | Spin-$\tfrac12$ observables |
 | $\mathrm{Tr}(\tilde Q\tilde R_\Psi)=2\,\mathrm{Sc}(\tilde Q\tilde R_\Psi)$ | Trace formula |

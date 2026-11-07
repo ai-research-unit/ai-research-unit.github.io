@@ -90,7 +90,7 @@ The left-hand side is $\tilde\nabla\tilde F$; the right-hand side is the mass te
 
 ### Why the equation is the right one
 
-The transcription is not a guess. It is fixed by two requirements: the equation must reproduce the standard Proca system, and it must do so in the series' $i c r'_t$ convention without a change of metric. The check is carried out below by solving the equation for plane waves and reading off the dispersion relation. The result is the physical massive shell and the Lorenz condition, and the two together are the standard content of the Proca system. Any other relative sign between the two sides would give a dispersion relation with the wrong sign of $m^2$, that is, a spacelike or tachyonic shell, and the check excludes it.
+The transcription is not a guess. It is fixed by two requirements: the equation must reproduce the standard Proca system, and it must do so in the series' $i r'_t$ convention without a change of metric. The check is carried out below by solving the equation for plane waves and reading off the dispersion relation. The result is the physical massive shell and the Lorenz condition, and the two together are the standard content of the Proca system. Any other relative sign between the two sides would give a dispersion relation with the wrong sign of $m^2$, that is, a spacelike or tachyonic shell, and the check excludes it.
 
 ### The failure of gauge invariance, explicitly
 

@@ -6,7 +6,7 @@ The **KMS condition** — named after Kubo, Martin, and Schwinger — is the cor
 
 The KMS condition has imaginary time built into its structure. The analytic continuation $r'_t \to r'_t + i\beta$ is not a convenience; it is the content of the condition. This suggests that a framework in which imaginary time is **intrinsic** — not an analytic continuation, but the natural coordinate — might be a natural setting for the condition.
 
-The material sector $\mathbb{B}_{\Phi}$ of the biquaternion algebra is such a framework. Its time coordinate is $i c r'_t$, which is imaginary by construction. The purpose of this article is to make this structural fit explicit, to state the KMS condition in the biquaternion language, and to flag what is established and what remains to be developed.
+The material sector $\mathbb{B}_{\Phi}$ of the biquaternion algebra is such a framework. Its time coordinate is $i r'_t$, which is imaginary by construction. The purpose of this article is to make this structural fit explicit, to state the KMS condition in the biquaternion language, and to flag what is established and what remains to be developed.
 
 The article is organized as follows. First the KMS condition is recalled as established physics, for both bosons and fermions. Then the role of imaginary time in the condition is made explicit. Then the material sector $\mathbb{B}_{\Phi}$ is recalled, and the naturalness of imaginary time in this sector is discussed. Then the KMS condition is stated in the biquaternion language, and the structural fit is analyzed. The article closes with the status of the interpretation and with directions for future work.
 
@@ -88,17 +88,17 @@ So the KMS condition is intrinsically an imaginary-time statement. Without imagi
 The material sector $\mathbb{B}_{\Phi}$ is the four-dimensional real subspace of $\mathbb{B}$ of elements of the form
 
 $$
-\tilde R_\Phi = i c r'_t\, e_t + r_x\, \vec e_x + r_y\, \vec e_y + r_z\, \vec e_z, \qquad r'_t, r_x, r_y, r_z \in \mathbb{R}.
+\tilde R_\Phi = i r'_t\, e_t + r_x\, \vec e_x + r_y\, \vec e_y + r_z\, \vec e_z, \qquad r'_t, r_x, r_y, r_z \in \mathbb{R}.
 $$
 
-The first coefficient is **imaginary** ($i c r'_t$), and the three remaining coefficients are **real**. In the physical identification, $r'_t$ is the material time, so the first coefficient is $i c r'_t$.
+The first coefficient is **imaginary** ($i r'_t$), and the three remaining coefficients are **real**. In the physical identification, $r'_t$ is the material time, so the first coefficient is $i r'_t$.
 
 The imaginary character of the time coordinate is **intrinsic** to the material sector. It is not introduced by analytic continuation, and it is not the result of a Wick rotation. It is the algebraic structure of the subspace: the time coordinate multiplies the imaginary unit $i$, which is the fundamental scalar of the biquaternion algebra.
 
 The d'Alembertian on $\mathbb{B}_{\Phi}$ is
 
 $$
-\Box_{\mathbb{B}_{\Phi}} = -\frac{1}{c^2}\frac{\partial^2}{\partial {r'_{t}}^2} + \Delta,
+\Box_{\mathbb{B}_{\Phi}} = -\frac{\partial^2}{\partial {r'_{t}}^2} + \Delta,
 $$
 
 which is the ordinary Lorentzian wave operator. The wave operator has the same form as in standard relativistic physics, but the imaginary time is now an algebraic feature of the framework, not a computational device.
@@ -136,7 +136,7 @@ This is the same condition as in the standard formulation, with the operators ta
 
 The KMS condition acquires a natural algebraic interpretation in the material sector for three reasons.
 
-**First, the imaginary time is intrinsic.** The time coordinate of $\mathbb{B}_{\Phi}$ is $i c r'_t$, which is imaginary by construction. The shift $r'_t \to r'_t + i\beta$ moves the real parameter $r'_t$ off the real axis in the complex time plane. The imaginary direction along which the shift occurs is spanned by the coefficient $i c r'_t$ of the material sector; the real part of the complexified time is spanned by the coefficient $c r_t$ of the informational sector. So the complexified time direction in which the KMS analyticity takes place is the **sum** of the imaginary time direction of $\mathbb{B}_{\Phi}$ and the real time direction of $\mathbb{B}_{\Psi}$.
+**First, the imaginary time is intrinsic.** The time coordinate of $\mathbb{B}_{\Phi}$ is $i r'_t$, which is imaginary by construction. The shift $r'_t \to r'_t + i\beta$ moves the real parameter $r'_t$ off the real axis in the complex time plane. The imaginary direction along which the shift occurs is spanned by the coefficient $i r'_t$ of the material sector; the real part of the complexified time is spanned by the coefficient $r_t$ of the informational sector. So the complexified time direction in which the KMS analyticity takes place is the **sum** of the imaginary time direction of $\mathbb{B}_{\Phi}$ and the real time direction of $\mathbb{B}_{\Psi}$.
 
 **Second, the complexified time direction has a natural algebraic realization.** The complexification of $\mathbb{B}_{\Phi}$ as a real subspace of $\mathbb{B}$ is $\mathbb{B}$ itself:
 
@@ -144,7 +144,7 @@ $$
 \boxed{\;\mathbb{B}_{\Phi} \oplus i\,\mathbb{B}_{\Phi} = \mathbb{B}_{\Phi} \oplus \mathbb{B}_{\Psi} = \mathbb{B}\;}.
 $$
 
-The complexified time direction of $\mathbb{B}_{\Phi}$ — the direction in which the KMS continuation takes place — is therefore a specific 2-dimensional complex subspace of $\mathbb{B}$, spanned by the imaginary time coefficient $i c r'_t$ of $\mathbb{B}_{\Phi}$ and the real time coefficient $c r_t$ of $\mathbb{B}_{\Psi}$. The KMS condition, which requires analyticity in this complexified direction, has a natural home in the algebra.
+The complexified time direction of $\mathbb{B}_{\Phi}$ — the direction in which the KMS continuation takes place — is therefore a specific 2-dimensional complex subspace of $\mathbb{B}$, spanned by the imaginary time coefficient $i r'_t$ of $\mathbb{B}_{\Phi}$ and the real time coefficient $r_t$ of $\mathbb{B}_{\Psi}$. The KMS condition, which requires analyticity in this complexified direction, has a natural home in the algebra.
 
 **Third, the modular Hamiltonian lives in $\mathbb{B}_{\Psi}$.** In the algebraic formulation of the KMS condition, the modular Hamiltonian $H_{\mathrm{modular}}=-\log\Delta$ (where $\Delta$ is the modular operator) generates the modular evolution. In a finite-dimensional setting, $\Delta$ is the density matrix $\rho$, and $H_{\mathrm{modular}}=-\log\rho$. The density matrix is a positive Hermitian element of the algebra, so $H_{\mathrm{modular}}=-\log\rho$ is a **Hermitian element** of the algebra, and therefore lies in the Hermitian subspace $\mathbb{B}_{\Psi}$. This is an algebraic fact, not an interpretation. The interpretive content is that the modular Hamiltonian, being a Hermitian element, is naturally an object of the informational sector: temperature, modular evolution, and the imaginary-time shift are all encoded in $\mathbb{B}_{\Psi}$-valued operators acting on $\mathbb{B}_{\Phi}$-valued fields.
 
@@ -152,7 +152,7 @@ The complexified time direction of $\mathbb{B}_{\Phi}$ — the direction in whic
 
 The thermal formalism downstream of the KMS condition is usually reached by a Wick rotation, and it is reached without one. This is where the condition's intrinsic imaginary time has a precise consequence.
 
-**The standard route, quoted.** The usual treatment continues the real time, $\tau = ir'_t$ with $r'_t = -i\tau$: the material-time coefficient $i c r'_t$ becomes the real $c\tau$, the $i c r'_t$ metric becomes the Euclidean metric, and the wave biquaternion is read on the real scalar axis, where its biquaternion norm is definite. This is correct, and it is what the literature does (*Interpretation of the Wick Rotation in the Biquaternion Universe*).
+**The standard route, quoted.** The usual treatment continues the real time, $\tau = ir'_t$ with $r'_t = -i\tau$: the material-time coefficient $i r'_t$ becomes the real $c\tau$, the $i r'_t$ metric becomes the Euclidean metric, and the wave biquaternion is read on the real scalar axis, where its biquaternion norm is definite. This is correct, and it is what the literature does (*Interpretation of the Wick Rotation in the Biquaternion Universe*).
 
 **The alternative route, which needs no rotation.** The imaginary direction is already in the material sector, so the thermal construction can stay there. The wave biquaternion is kept as the material element
 $$
@@ -182,7 +182,7 @@ The fermionic KMS condition might then be readable as a statement about the spin
 
 **Established (algebra).**
 
-- The material sector $\mathbb{B}_{\Phi}$ of the biquaternion algebra and its intrinsic imaginary time coordinate $i c r'_t$.
+- The material sector $\mathbb{B}_{\Phi}$ of the biquaternion algebra and its intrinsic imaginary time coordinate $i r'_t$.
 - The complexification of $\mathbb{B}_{\Phi}$ as the full algebra $\mathbb{B}$.
 - The modular Hamiltonian $H_{\mathrm{modular}}=-\log\rho$ is a Hermitian element of the algebra, hence lies in $\mathbb{B}_{\Psi}$.
 - The identity $\langle i\omega_n e_t+\vec p,\,i\omega_n e_t+\vec p\rangle_{*} = \langle -\omega_n e_t+\vec p\rangle_{\natural}$ between the Hermitian form at a material element and the biquaternion norm at the rotated one; the material-sector thermal route and the rotated route therefore agree.
@@ -221,7 +221,7 @@ The KMS condition is the correct abstract characterization of thermal equilibriu
 
 The KMS condition has imaginary time built into it. The analytic continuation $r'_t \to r'_t + i\beta$ is not a convenience; it is the content of the condition.
 
-The material sector $\mathbb{B}_{\Phi}$ of the biquaternion algebra has imaginary time intrinsically: its time coordinate is $i c r'_t$, which is imaginary by construction. The KMS condition, which is stated in terms of the imaginary time, acquires a natural algebraic interpretation in this sector. The shift $r'_t \to r'_t + i\beta$ is a shift in the coefficient $q'_t = c r'_{t}$ by an imaginary amount, and the complexified time direction in which the KMS continuation takes place is the sum of the imaginary time direction of $\mathbb{B}_{\Phi}$ and the real time direction of $\mathbb{B}_{\Psi}$.
+The material sector $\mathbb{B}_{\Phi}$ of the biquaternion algebra has imaginary time intrinsically: its time coordinate is $i r'_t$, which is imaginary by construction. The KMS condition, which is stated in terms of the imaginary time, acquires a natural algebraic interpretation in this sector. The shift $r'_t \to r'_t + i\beta$ is a shift in the coefficient $q'_t = r'_{t}$ by an imaginary amount, and the complexified time direction in which the KMS continuation takes place is the sum of the imaginary time direction of $\mathbb{B}_{\Phi}$ and the real time direction of $\mathbb{B}_{\Psi}$.
 
 The modular Hamiltonian $H_{\mathrm{modular}}=-\log\rho$ of the KMS condition is a Hermitian element of the algebra, and therefore lies in the informational sector $\mathbb{B}_{\Psi}$. This is an algebraic fact, not an interpretation. Its interpretive content is that the modular evolution, the temperature, and the imaginary-time shift are all encoded in $\mathbb{B}_{\Psi}$-valued operators acting on $\mathbb{B}_{\Phi}$-valued fields. This provides a natural structural interpretation of the KMS condition, in which the material and informational sectors are connected through the thermal structure.
 

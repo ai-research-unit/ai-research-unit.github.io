@@ -4,9 +4,9 @@
 
 The angular-momentum algebra is the Lie algebra $\mathfrak{su}(2)$ with a chosen basis. In the biquaternion algebra $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ it appears in two normalisations: as the anti-Hermitian pure quaternions $g_k=-\tfrac12\vec e_k$, which are the elements of the Lie algebra, and as the Hermitian elements $\tilde S_k=\tfrac12 i\vec e_k=-ig_k$, which are the same generators multiplied by $-i$. The factor $-i$ is what makes them self-adjoint, and it is the only difference between the two pictures.
 
-This article develops the module theory of that algebra inside $\mathbb{B}$: the Casimir, the highest-weight classification, the two module structures, the subcarriers of the regular module, the orbital realisation, the addition of angular momenta, the tensor products, and the four uses of the word spin. It is the pure-mathematical counterpart of *Angular Momentum and Spin in Biquaternionic Form*; the symbols are the same, and the difference is that the present article sets $\hbar=1$ and never leaves the algebra.
+This article develops the module theory of that algebra inside $\mathbb{B}$: the Casimir, the highest-weight classification, the two module structures, the subcarriers of the regular module, the orbital realisation, the addition of angular momenta, the tensor products, and the four uses of the word spin. It is the pure-mathematical counterpart of *Angular Momentum and Spin in Biquaternionic Form*, and it states every structure in the algebra itself.
 
-The constant $\hbar$ is a unit of action, not an element of $\mathbb{B}$. Every operator below is $\tilde S_k=\tfrac12 i\vec e_k$; the physical article writes the same operator with the dimensionful factor, $\tilde S_k=\tfrac{\hbar}{2}i\vec e_k$, and every algebraic statement is homogeneous in $\tilde S_k$. Restoring $\hbar$ is the substitution $\tilde S_k\mapsto\hbar \tilde S_k$, which multiplies every weight by $\hbar$ and the Casimir by $\hbar^2$.
+No scale enters the algebra. Every operator below is $\tilde S_k=\tfrac12 i\vec e_k$, and every weight, every bracket and the Casimir are fixed by the multiplication of $\mathbb{B}$; the article carries no constant beside the elements.
 
 The article also proves one statement that the dimension count does not give. The multiplication map $\mathbb{B}\otimes\mathbb{B}\to\mathbb{B}$ is equivariant for conjugation, and its kernel contains the whole spin-two summand of the tensor square. The product of two biquaternions therefore carries no spin two, and the reason is not arithmetic but a vanishing map.
 
@@ -71,7 +71,7 @@ $$
 \tilde S_k=\tfrac12 i\vec e_k\in\mathbb{B}_{\Psi},\qquad [\tilde S_i,\tilde S_j]=i\epsilon_{ijk}\tilde S_k,\qquad \tilde S_k^*=\tilde S_k.
 $$
 
-They are related by $\tilde S_k=-ig_k$. The bracket of the $\tilde S_k$ is the standard angular-momentum relation with $\hbar=1$; the bracket of the $g_k$ is its anti-Hermitian form. The triple is read as one vector, $\vec S$ with components $\tilde S_k$, so that $\vec u\cdot\vec S=u_k\tilde S_k$ for a unit $\vec u$; the glyph is arrowed and carries no tilde, because each component is a pure element (*Algebra and Element Conventions*, §*The Centre and the Vector Subspace*).
+They are related by $\tilde S_k=-ig_k$. The bracket of the $\tilde S_k$ is the standard angular-momentum relation; the bracket of the $g_k$ is its anti-Hermitian form. The triple is read as one vector, $\vec S$ with components $\tilde S_k$, so that $\vec u\cdot\vec S=u_k\tilde S_k$ for a unit $\vec u$; the glyph is arrowed and carries no tilde, because each component is a pure element (*Algebra and Element Conventions*, §*The Centre and the Vector Subspace*).
 
 **Proposition (the exponential).** For a unit $\vec u\in\mathfrak{g}$ and real $\theta$, the rotation through $\theta$ about $\vec u$ is
 

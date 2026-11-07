@@ -51,7 +51,7 @@ In the framework the obstruction is immediate and is worth stating in its own no
 
 **Theorem.** There are no $\tilde{R}_{\Psi,1},\tilde{R}_{\Psi,2}\in\mathbb{B}_{\Psi}$ and no non-zero central real $\lambda$ with $[\tilde{R}_{\Psi,1},\tilde{R}_{\Psi,2}]=\lambda\,i\,e_t$.
 
-**Proof.** Write $\tilde{R}_{\Psi,1}=c r_{t,1}\,e_t+i\vec r_{\Psi,1}$ and $\tilde{R}_{\Psi,2}=c r_{t,2}\,e_t+i\vec r_{\Psi,2}$ with $c r_{t,1},c r_{t,2}\in\mathbb{R}$ and $\vec r_{\Psi,1},\vec r_{\Psi,2}\in\mathbb{R}^3$. The product has scalar part $\mathrm{Sc}(\tilde{R}_{\Psi,1}\tilde{R}_{\Psi,2})=c^2 r_{t,1}r_{t,2}+\vec r_{\Psi,1}\cdot\vec r_{\Psi,2}$; the cross terms contribute the symmetric $\vec r_{\Psi,1}\cdot\vec r_{\Psi,2}$ part, and the antisymmetric part of the product is traceless. The same computation with $\tilde{R}_{\Psi,1}$ and $\tilde{R}_{\Psi,2}$ exchanged gives the identical scalar part, so
+**Proof.** Write $\tilde{R}_{\Psi,1}=c r_{t,1}\,e_t+i\vec r_{\Psi,1}$ and $\tilde{R}_{\Psi,2}=c r_{t,2}\,e_t+i\vec r_{\Psi,2}$ with $c r_{t,1},c r_{t,2}\in\mathbb{R}$ and $\vec r_{\Psi,1},\vec r_{\Psi,2}\in\mathbb{R}^3$. The product has scalar part $\mathrm{Sc}(\tilde{R}_{\Psi,1}\tilde{R}_{\Psi,2})=r_{t,1}r_{t,2}+\vec r_{\Psi,1}\cdot\vec r_{\Psi,2}$; the cross terms contribute the symmetric $\vec r_{\Psi,1}\cdot\vec r_{\Psi,2}$ part, and the antisymmetric part of the product is traceless. The same computation with $\tilde{R}_{\Psi,1}$ and $\tilde{R}_{\Psi,2}$ exchanged gives the identical scalar part, so
 $$
 \boxed{\;\mathrm{Sc}\bigl([\tilde{R}_{\Psi,1},\tilde{R}_{\Psi,2}]\bigr)=0\;}.
 $$
@@ -228,7 +228,7 @@ The biquaternion framework and the canonical commutation relation are **independ
 | ${}^{*}={}^{\natural}\circ\bar{\cdot}$ | Hermitian conjugation |
 | $\mathbb{B}_{\Psi}$, $\mathbb{B}_{\Phi}$ | Hermitian and anti-Hermitian subspaces, $\mathbb{B}=\mathbb{B}_{\Psi}\oplus\mathbb{B}_{\Phi}$ |
 | $\mathrm{Tr}(\tilde{Q})=2\,\mathrm{Sc}(\tilde{Q})$ | Trace, $\mathrm{Tr}(e_t)=2$ |
-| $\tilde{R}_{\Psi,1}=c r_{t,1}\,e_t+i\vec r_{\Psi,1}$ | General element of $\mathbb{B}_{\Psi}$; $\mathrm{Sc}(\tilde{R}_{\Psi,1}\tilde{R}_{\Psi,2})=c^2 r_{t,1}r_{t,2}+\vec r_{\Psi,1}\cdot\vec r_{\Psi,2}$ |
+| $\tilde{R}_{\Psi,1}=c r_{t,1}\,e_t+i\vec r_{\Psi,1}$ | General element of $\mathbb{B}_{\Psi}$; $\mathrm{Sc}(\tilde{R}_{\Psi,1}\tilde{R}_{\Psi,2})=r_{t,1}r_{t,2}+\vec r_{\Psi,1}\cdot\vec r_{\Psi,2}$ |
 | $[Q,P]=\frac{m\,c\,i\,I}{k_m}$ | Canonical commutation relation |
 | $\exp(i\alpha Q)\exp(i\beta P)=\exp(-\frac{m\,c\,i\,\alpha\,\beta}{k_m})\exp(i\beta P)\exp(i\alpha Q)$ | Weyl form of the relation |
 | $[Q,P^n]=\frac{m\,c\,i\,nP^{n-1}}{k_m}$ | the identity behind the boundedness obstruction; the case $m=1$ of McCoy's formula |

@@ -44,7 +44,7 @@ $$
   =: \sum_{\mu\in\{t,x,y,z\}}  e_\mu\, \tilde\nabla_{\mathrm{gco},\mu},
 $$
 
-where the coordinate is that of the material frame of *Frame and Metric Conventions*, $Q_t = i c r'_t$ and $Q_k = r_k$. Its action on a biquaternion-valued field $\tilde{Ξ}_{\mathrm{sp}}(\tilde{Q})$ is left multiplication by that operator,
+where the coordinate is that of the material frame of *Frame and Metric Conventions*, $Q_t = i r'_t$ and $Q_k = r_k$. Its action on a biquaternion-valued field $\tilde{Ξ}_{\mathrm{sp}}(\tilde{Q})$ is left multiplication by that operator,
 
 $$
 \tilde\nabla_{\mathrm{gco}}\tilde{Ξ}_{\mathrm{sp}} = \tilde{\nabla}\tilde{Ξ}_{\mathrm{sp}} +\frac{k_m\,i\,ϙ}{m\,c}\tilde{A}_{\Phi}\tilde{Ξ}_{\mathrm{sp}},
@@ -190,12 +190,12 @@ so that $\partial/\partial R_\mu\,\Gamma(\tilde{Q}_0) = A_\mu(\tilde{Q}_0)$ and 
 **The connection one-form is a real quaternion.** One observation about the connection is worth recording. Pairing the connection with a coordinate displacement gives
 
 $$
-\sum_\mu A_\mu\,dx_\mu = A_t\,d(i c r'_t) + \sum_k A_k\,dr_k = -\xi\,dr'_t + \vec A\cdot d\vec r ,
+\sum_\mu A_\mu\,dx_\mu = A_t\,d(i r'_t) + \sum_k A_k\,dr_k = -\xi\,dr'_t + \vec A\cdot d\vec r ,
 \qquad
 d\vec r = \vec e_x\,dr_x + \vec e_y\,dr_y + \vec e_z\,dr_z ,
 $$
 
-which is real. The time term is real because its two imaginary units cancel, $d(i c r'_t) = ic\,dr'_t$ and $A_t = i\,a'_t$ giving $-\xi\,dr'_t$; the spatial terms are real because $A_k$ and $dr_k$ are separately real. In the algebra this says $\sum_\mu A_\mu\,dx_\mu \in \mathbb{B}_{H}$, the real-quaternion subspace. Around a closed path the integral is gauge invariant, because $\sum_\mu A_\mu\,dx_\mu \mapsto \sum_\mu A_\mu\,dx_\mu - d\Gamma$ and $\oint d\Gamma = 0$. Reading the exponential of this integral as a **holonomy** is a geometric interpretation of the algebraic fact; whether the real-quaternion character of the one-form carries content beyond this bookkeeping is not established here and is recorded as an open question.
+which is real. The time term is real because its two imaginary units cancel, $d(i r'_t) = ic\,dr'_t$ and $A_t = i\,a'_t$ giving $-\xi\,dr'_t$; the spatial terms are real because $A_k$ and $dr_k$ are separately real. In the algebra this says $\sum_\mu A_\mu\,dx_\mu \in \mathbb{B}_{H}$, the real-quaternion subspace. Around a closed path the integral is gauge invariant, because $\sum_\mu A_\mu\,dx_\mu \mapsto \sum_\mu A_\mu\,dx_\mu - d\Gamma$ and $\oint d\Gamma = 0$. Reading the exponential of this integral as a **holonomy** is a geometric interpretation of the algebraic fact; whether the real-quaternion character of the one-form carries content beyond this bookkeeping is not established here and is recorded as an open question.
 
 ## The Curvature as the Commutator of Covariant Derivatives
 
@@ -343,7 +343,7 @@ A second external source goes further and puts the two objects into one. J. Fred
 
 4. **Dynamical content of the covariant square.** The curvature term $\frac{k_m\,i\,ϙ}{m\,c}\tilde{F}$ in $\tilde\nabla_{\mathrm{gco}}^{\natural} \tilde\nabla_{\mathrm{gco}}$ is structurally the biquaternion analogue of the curvature term in the square of a Dirac operator. Does it carry observable content — a magnetic-moment coupling — or is it a rewriting of the commutator identity with no independent consequence?
 
-5. **The one-form and the holonomy.** The connection one-form $\sum_\mu A_\mu\,dx_\mu$ is a real quaternion, the loop integral is gauge invariant, and the curvature measures its infinitesimal holonomy. Is the real-quaternion character content-bearing, or is it the $i c r'_t$ convention in disguise? No answer is offered here.
+5. **The one-form and the holonomy.** The connection one-form $\sum_\mu A_\mu\,dx_\mu$ is a real quaternion, the loop integral is gauge invariant, and the curvature measures its infinitesimal holonomy. Is the real-quaternion character content-bearing, or is it the $i r'_t$ convention in disguise? No answer is offered here.
 
 6. **Gauge fixing.** The canonical-quantization article establishes that the framework cannot fix the gauge. The present article does not supply a selection principle either; the gauge orbit of the connection is exactly as large as the local phases allow.
 
@@ -397,7 +397,7 @@ The identity is the square of the chiral pair $\tilde\nabla_{\mathrm{gco}}\tilde
 | $\tilde{A}_{\Phi,2} = \tilde{A}_{\Phi} - \tilde{\nabla}\Gamma$ | Gauge transformation of the connection |
 | $m$ | Mass of the parent's Dirac field |
 | $\tilde\nabla_{\mathrm{gco}} = \tilde{\nabla} +\frac{k_m\,i\,ϙ}{m\,c}\tilde{A}_{\Phi} = \sum_\mu  e_\mu \tilde\nabla_{\mathrm{gco},\mu}$ | Covariant derivative |
-| $\tilde\nabla_{\mathrm{gco},\mu} = \partial/\partial R_\mu +\frac{k_m\,i\,ϙ}{m\,c}A_\mu$ | Components; $\partial/\partial R_t = \partial/\partial(i c r'_t)$ |
+| $\tilde\nabla_{\mathrm{gco},\mu} = \partial/\partial R_\mu +\frac{k_m\,i\,ϙ}{m\,c}A_\mu$ | Components; $\partial/\partial R_t = \partial/\partial(i r'_t)$ |
 | $\tilde\nabla_{\mathrm{gco}}^{\natural} = \tilde{\nabla}^{\natural} +\frac{k_m\,i\,ϙ}{m\,c}\tilde{A}_{\Phi}^{\natural}$ | Quaternion conjugate of $\tilde\nabla_{\mathrm{gco}}$ |
 | $\tilde{A}_{\Phi}^{\natural}$ | Quaternion conjugate of the connection, by *Product and Form Conventions* |
 | $[\tilde\nabla_{\mathrm{gco},\mu}, f] = \partial/\partial R_\mu f$ | Derivation property |

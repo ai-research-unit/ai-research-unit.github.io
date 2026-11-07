@@ -51,7 +51,7 @@ $$
 \boxed{\;T = -\frac{1}{2\,m}\tilde p^{\,2} =\frac{1}{2\,m}\tilde p\,\tilde p^{\natural} =\frac{p^{2}}{2\,m}e_t\;}.
 $$
 
-The explicit minus sign is not decoration. The quaternion square of a pure vector is **minus** its Euclidean square, so writing $\tilde p^{\,2}/(2m)$ without the sign would reverse the kinetic term, leaving a Hamiltonian unbounded below and no bound states at all. The sign is the same algebraic fact — $\vec e_k^2=-e_t$ — that gives the biquaternion norm $\langle\tilde R_\Psi\rangle_{\natural}=c^2 r_t^2-|\vec r_\Psi|^2$ on $\mathbb{B}_{\Psi}$ its Lorentzian signature; for the momentum, whose scalar part is zero, the biquaternion norm is $-\sum_kh_k^2\,e_t$, the negative of the Euclidean square. The kinetic operator is, up to the factor $1/2m$, the biquaternion norm of the momentum.
+The explicit minus sign is not decoration. The quaternion square of a pure vector is **minus** its Euclidean square, so writing $\tilde p^{\,2}/(2m)$ without the sign would reverse the kinetic term, leaving a Hamiltonian unbounded below and no bound states at all. The sign is the same algebraic fact — $\vec e_k^2=-e_t$ — that gives the biquaternion norm $\langle\tilde R_\Psi\rangle_{\natural}=r_t^2-|\vec r_\Psi|^2$ on $\mathbb{B}_{\Psi}$ its Lorentzian signature; for the momentum, whose scalar part is zero, the biquaternion norm is $-\sum_kh_k^2\,e_t$, the negative of the Euclidean square. The kinetic operator is, up to the factor $1/2m$, the biquaternion norm of the momentum.
 
 ### The potential
 
@@ -70,10 +70,10 @@ Adding the two terms,
 $$
 \boxed{\;H = T+\tilde{Ξ}
 = \left[-\frac{m\,c^{2}}{2\,k_m^{2}}\nabla^2-\frac{\kappa}{r}\right]e_t
-= c r_t\,e_t, \qquad c r_t = -\frac{m\,c^{2}}{2\,k_m^{2}}\nabla^2-\frac{\kappa}{r}\;}.
+= r_t\,e_t, \qquad r_t = -\frac{m\,c^{2}}{2\,k_m^{2}}\nabla^2-\frac{\kappa}{r}\;}.
 $$
 
-The Hamiltonian is Hermitian and lies in $\mathbb{B}_{\Psi}$, and its vector part is zero: $\vec r_\Psi=0$ in the general form $\tilde R_\Psi=c r_t\,e_t+i\vec r_\Psi$. It is therefore **central**, commuting with every element of $\mathbb{B}$, and in particular with the spin operators and with $i$.
+The Hamiltonian is Hermitian and lies in $\mathbb{B}_{\Psi}$, and its vector part is zero: $\vec r_\Psi=0$ in the general form $\tilde R_\Psi=r_t\,e_t+i\vec r_\Psi$. It is therefore **central**, commuting with every element of $\mathbb{B}$, and in particular with the spin operators and with $i$.
 
 The generator of the Schrödinger equation is
 
@@ -222,7 +222,7 @@ a spinor field whose orbital factor is the familiar exponential and whose spin f
 
 ## Correspondence with the Standard Solution
 
-Under the isomorphism $\mathsf{M}_2$ the transcription is transparent. The field $\tilde{Ξ}_{\mathrm{sp}}$ is a two-component column, the central Hamiltonian acts as $c r_t I_2$, and the biquaternion Schrödinger equation becomes two identical copies of the standard Schrödinger equation for the Coulomb problem. The correspondence is collected here.
+Under the isomorphism $\mathsf{M}_2$ the transcription is transparent. The field $\tilde{Ξ}_{\mathrm{sp}}$ is a two-component column, the central Hamiltonian acts as $r_t I_2$, and the biquaternion Schrödinger equation becomes two identical copies of the standard Schrödinger equation for the Coulomb problem. The correspondence is collected here.
 
 | Standard object | Biquaternion object | Slot |
 |---|---|---|
@@ -292,7 +292,7 @@ at the next order. The Darwin term, the relativistic kinetic correction and the 
 The non-relativistic hydrogen atom in biquaternionic form is the Coulomb problem for a spinor field. The momentum $\tilde p=-\frac{m\,c\,i}{k_m}\nabla$ is Hermitian in $\mathbb{B}_{\Psi}$; its quaternion square is minus the Euclidean square, $\tilde p^{\,2}=-p^{\,2}e_t=\frac{m^{2}\,c^{2}}{k_m^{2}}\nabla^2 e_t$, so the kinetic energy is $-\tilde p^{\,2}/(2m)=\tilde p\tilde p^{\natural}/(2m)=p^{\,2}/(2m)e_t$. Adding the central scalar potential $-\kappa/r$ gives
 
 $$
-H = \left[-\frac{m\,c^{2}}{2\,k_m^{2}}\nabla^2-\frac{\kappa}{r}\right]e_t = c r_t\,e_t \in  \mathbb{B}_{\Psi},
+H = \left[-\frac{m\,c^{2}}{2\,k_m^{2}}\nabla^2-\frac{\kappa}{r}\right]e_t = r_t\,e_t \in  \mathbb{B}_{\Psi},
 \qquad
 -\frac{k_m\,i}{m\,c}H = i\left(\frac{c}{2\,k_m}\nabla^2+\frac{k_m\,\kappa}{m\,c\,r}\right)e_t \in  \mathbb{B}_{\Phi} .
 $$
@@ -322,7 +322,7 @@ The framework's contribution is therefore structural, not spectral. It identifie
 | $\tilde p=-\frac{m\,c\,i}{k_m}\nabla=\sum_k  \vec e_k p_k$, $p_k=-\frac{m\,c\,i}{k_m}\partial/\partial R_k$ | Momentum, Hermitian, in $\mathbb{B}_{\Psi}$ |
 | $\tilde p^{\,2}=-p^{\,2}e_t$, $\tilde p\tilde p^{\natural}=p^{\,2}e_t$ | Quaternion square and biquaternion norm of the momentum |
 | $T=-\tilde p^{\,2}/(2m)$ | Kinetic energy |
-| $H=c r_t\,e_t$, $c r_t=-\frac{m\,c^{2}}{2\,k_m^{2}}\nabla^2-\frac{\kappa}{r}$ | Coulomb Hamiltonian, central, in $\mathbb{B}_{\Psi}$ |
+| $H=r_t\,e_t$, $r_t=-\frac{m\,c^{2}}{2\,k_m^{2}}\nabla^2-\frac{\kappa}{r}$ | Coulomb Hamiltonian, central, in $\mathbb{B}_{\Psi}$ |
 | $-\frac{k_m\,i\,H}{m\,c\,\in\,\mathbb{B}}_{\Phi}$ | Time-translation generator, $H$ read through $i$ |
 | $\kappa=Ze^2/(4\pi\epsilon_0)$ | Coulomb coupling |
 | $a_0=\frac{m\,c^{2}}{k_m^{2}\,\kappa}$ | Bohr radius |

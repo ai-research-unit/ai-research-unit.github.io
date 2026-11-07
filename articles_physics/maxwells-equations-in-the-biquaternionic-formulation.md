@@ -2,7 +2,7 @@
 
 ## Introduction
 
-Maxwell's equations are the clearest illustration of why the biquaternionic formulation is natural. In their biquaternionic form, they collapse into a single equation relating a biquaternionic field strength to a biquaternionic source. With the $i c r'_t$ structure built into the Minkowski subspace, the biquaternionic structure becomes manifest, and the Lorentz invariance of electromagnetism appears as a rotor conjugation in the Minkowski subspace.
+Maxwell's equations are the clearest illustration of why the biquaternionic formulation is natural. In their biquaternionic form, they collapse into a single equation relating a biquaternionic field strength to a biquaternionic source. With the $i r'_t$ structure built into the Minkowski subspace, the biquaternionic structure becomes manifest, and the Lorentz invariance of electromagnetism appears as a rotor conjugation in the Minkowski subspace.
 
 This article develops the biquaternionic formulation of Maxwell's equations in a material medium characterized by permittivity $\epsilon$ and permeability $\mu$, then takes the vacuum limit $\epsilon = \epsilon_0$, $\mu = \mu_0$. The presentation proceeds in the natural order: first the standard Maxwell equations in three-vector form, then the potential biquaternion $\tilde{A}_{\Phi}$, then the biquaternionic gradient $\tilde{\nabla}$, then the field-strength biquaternion $\tilde{F}$, and finally the single biquaternionic equation that replaces the four standard Maxwell equations. It then works through the retarded Green's function, the three-vector and stationary forms, the gauge structure, the hydrodynamic correspondence, the relation between the two formulations and the matrix route that sits inside it, the author's variant with its added scalar, the biquaternionic energy–momentum and the energy law it satisfies, the Lorentz transformation of the potential, the vacuum limit and the question of what is fundamental, the field bivector against the field operator, the vacuum equation read as a Cauchy–Riemann condition, the internal freedom that equation leaves, and the complexified extension; it closes with the frame cells that give the gamma names.
 
@@ -70,7 +70,7 @@ $$
 
 where $a'_t=\xi_{\mathrm{scp}}/c$ is the temporal parameter, the scalar potential in the unit of $\vec A$, and $\vec A$ is the vector potential. The coefficient of $e_t$ is $A_t=i\,a'_t$, the imaginary case of the general $A_t=a_t+i\,a'_t$. The tilde signals that $\tilde{A}_{\Phi}$ is an element of the biquaternion algebra $\mathbb{B}$, not a four-vector.
 
-The scalar part $A_0 = i\,a'_t$ is purely imaginary, matching the complex time coordinate $i c r'_t$. The vector part $\vec A$ is the ordinary vector potential. The factor of $i$ in $A_0$ is the same factor that appears in the complex time coordinate.
+The scalar part $A_0 = i\,a'_t$ is purely imaginary, matching the complex time coordinate $i r'_t$. The vector part $\vec A$ is the ordinary vector potential. The factor of $i$ in $A_0$ is the same factor that appears in the complex time coordinate.
 
 The coordinate representation of $\tilde{A}_{\Phi}$ as a four-vector potential is
 
@@ -90,10 +90,10 @@ The four-vector representation is a coordinate representation of the biquaternio
 
 The operator this article differentiates with is the **biquaternionic gradient** of *Operator and Calculus Conventions*, §*The Gradient*: an element of four terms, one per coordinate, whose quaternion conjugate is the same element with the three spatial signs reversed. Both are the conventions' objects, and neither is defined here.
 
-Two facts about the gradient carry the rest of the article. On the material slice, where $Q_t = i c r'_t$, the time derivative carries one factor of $i$,
+Two facts about the gradient carry the rest of the article. On the material slice, where $Q_t = i r'_t$, the time derivative carries one factor of $i$,
 
 $$
-\frac{\partial}{\partial R_t} = -\frac{i}{c}\,\frac{\partial}{\partial r'_t},
+\frac{\partial}{\partial R_t} = -i\frac{\partial}{\partial r'_t},
 $$
 
 the substitution fixed in §*Conventions for Derivation* of the same article; that factor is the one that combines with $A_0 = i\,a'_t$ below, where the product of the two factors of $i$ is a sign. And the product of the gradient with its conjugate is the **d'Alembertian** times the unit,
@@ -112,7 +112,7 @@ $$
 \tilde{F} = \vec F, \qquad \vec F = i\sqrt{\epsilon}\,\vec E - \sqrt{\mu}\,\vec H.
 $$
 
-Here $\vec F$ is a complex three-vector combining the electric and magnetic fields, with an **imaginary** electric part and a **real** magnetic part: the electric field carries a time index, and in the $i c r'_t$ convention it is the time direction that supplies the factor $i$. The tilde signals that $\tilde{F}$ is a biquaternion with vanishing scalar part. The factors $\sqrt{\epsilon}$ and $\sqrt{\mu}$ are the natural normalization factors that make the biquaternionic product symmetric between electric and magnetic contributions.
+Here $\vec F$ is a complex three-vector combining the electric and magnetic fields, with an **imaginary** electric part and a **real** magnetic part: the electric field carries a time index, and in the $i r'_t$ convention it is the time direction that supplies the factor $i$. The tilde signals that $\tilde{F}$ is a biquaternion with vanishing scalar part. The factors $\sqrt{\epsilon}$ and $\sqrt{\mu}$ are the natural normalization factors that make the biquaternionic product symmetric between electric and magnetic contributions.
 
 The field strength is the antisymmetric part of the gradient of the potential. In the biquaternion algebra it is the vector part of $\tilde{\nabla}^{\natural}\tilde{A}_{\Phi}$, divided by $\sqrt\mu$:
 
@@ -134,15 +134,16 @@ $$
 
 The scalar part comes from $e_te_t=e_t$ and from the minus in $\tilde{\nabla}^{\natural}$ against $\vec e_k\vec e_k=-e_t$; the rotation is the antisymmetric part of $\vec e_k\vec e_j$.
 
-**Step 2: the fields.** In the $i c r'_t$ convention $\partial/\partial R_t = -(i/c)\partial/\partial r'_t$, and the two derivative terms become
+**Step 2: the fields.** In the $i r'_t$ convention $\partial/\partial R_t = -i\,\partial/\partial r'_t$, and the two derivative terms become
 
 $$
 \frac{\partial \vec A}{\partial R_t}-\nabla A_0
-=-\frac{i}{c}\frac{\partial\vec A}{\partial r'_t}-\frac{i}{c}\nabla\xi_{\mathrm{scp}}
-=-\frac{i}{c}\Bigl(\frac{\partial\vec A}{\partial r'_t}+\nabla\xi_{\mathrm{scp}}\Bigr),
+=-i\frac{\partial\vec A}{\partial r'_t}-i\nabla a'_t
+=-\frac{i}{c}\Bigl(c\,\frac{\partial\vec A}{\partial r'_t}+\nabla\xi_{\mathrm{scp}}\Bigr)
+=\frac{i}{c}\,\vec E,
 $$
 
-using $A_0 = i\,a'_t$, $a'_t=\xi_{\mathrm{scp}}/c$ and $i^2=-1$. With $\vec E=-\nabla\xi_{\mathrm{scp}}-\partial\vec A/\partial r'_t$ and $\vec B=\mathrm{rot}\,\vec A$,
+using $A_0 = i\,a'_t$, $a'_t=\xi_{\mathrm{scp}}/c$, $i^2=-1$ and $\vec E=-\nabla\xi_{\mathrm{scp}}-c\,\partial\vec A/\partial r'_t$, the time derivative being $c\,\partial/\partial r'_t$ because $r'_t$ is a length. With $\vec B=\mathrm{rot}\,\vec A$,
 
 $$
 \mathrm{Vect}\bigl(\tilde{\nabla}^{\natural}\tilde{A}_{\Phi}\bigr)
@@ -210,7 +211,7 @@ i.e., the scalar part of $\tilde{\nabla}^{\natural} \tilde J_{\Phi}$ vanishes. I
 
 $$
 \mathrm{Sc}\bigl(\tilde\nabla^\natural\tilde J_{\Phi}\bigr)=\frac{\partial J_0}{\partial R_t}+\mathrm{div}\,\vec J
-=-\frac{i}{c}\frac{\partial}{\partial r'_t}\bigl(ic\rho\bigr)+\mathrm{div}\,\vec J
+=-i\frac{\partial}{\partial r'_t}\bigl(ic\rho\bigr)+\mathrm{div}\,\vec J
 =\frac{\partial\rho}{\partial r'_t}+\mathrm{div}\,\vec J,
 $$
 
@@ -263,12 +264,12 @@ The physically relevant Green's function is the **retarded** one, which vanishes
 $$
 \begin{aligned}
 \tilde{G}_{\Phi,\tilde{\nabla}} = \tilde{\nabla}^{\natural}\,G_\Box
-&=\frac{1}{4\pi R c}\,\delta'\!\left(r'_t - \frac{R}{c}\right)\bigl(-i\,e_t + \vec u_R\bigr)\\
-&\quad+\frac{1}{4\pi R^2}\,\delta\!\left(r'_t - \frac{R}{c}\right)\vec u_R,
+&=\frac{1}{4\pi R c}\,\delta'\!\left(r'_t - R\right)\bigl(-i\,e_t + \vec u_R\bigr)\\
+&\quad+\frac{1}{4\pi R^2}\,\delta\!\left(r'_t - R\right)\vec u_R,
 \end{aligned}
 $$
 
-where $G_\Box(R,r'_t) = (4\pi R)^{-1}\delta(r'_t - R/c)$ is the scalar retarded kernel of the wave operator, $\delta'$ is the derivative of the delta with respect to its argument, $R = \sqrt{r_x^2+r_y^2+r_z^2}$, and $\vec u_R = (r_x \vec e_x + r_y \vec e_y + r_z \vec e_z)/R$ is the unit radial biquaternion. It satisfies $\tilde{\nabla}\tilde{G}_{\Phi,\tilde{\nabla}} = (\tilde{\nabla}\tilde{\nabla}^{\natural})G_\Box = \Box G_\Box\,e_t = -\delta(\tilde{Q})\,e_t$, the unit $e_t$ being the one carried by the right-hand side of the defining equation, and it is supported on the future light cone. The kernel is not a multiple of the delta alone: the $\delta'$ term is a **double layer** on the cone and the $\delta$ term a **single layer**, and it is the $\delta'$ term — absent from any schematic multiple-of-$\delta$ display — that the wave-front and jump conditions of *Shock Electromagnetic Waves* require. Its distributional layer calculus is that of *Distributions on Surfaces, Layers, and Jump Conditions*.
+where $G_\Box(R,r'_t) = (4\pi R)^{-1}\delta(r'_t - R)$ is the scalar retarded kernel of the wave operator, $\delta'$ is the derivative of the delta with respect to its argument, $R = \sqrt{r_x^2+r_y^2+r_z^2}$, and $\vec u_R = (r_x \vec e_x + r_y \vec e_y + r_z \vec e_z)/R$ is the unit radial biquaternion. It satisfies $\tilde{\nabla}\tilde{G}_{\Phi,\tilde{\nabla}} = (\tilde{\nabla}\tilde{\nabla}^{\natural})G_\Box = \Box G_\Box\,e_t = -\delta(\tilde{Q})\,e_t$, the unit $e_t$ being the one carried by the right-hand side of the defining equation, and it is supported on the future light cone. The kernel is not a multiple of the delta alone: the $\delta'$ term is a **double layer** on the cone and the $\delta$ term a **single layer**, and it is the $\delta'$ term — absent from any schematic multiple-of-$\delta$ display — that the wave-front and jump conditions of *Shock Electromagnetic Waves* require. Its distributional layer calculus is that of *Distributions on Surfaces, Layers, and Jump Conditions*.
 
 The solution of the inhomogeneous equation is then the retarded convolution
 
@@ -287,7 +288,7 @@ $$
 
 So the boxed solution is a pure vector exactly when $\mathrm{Sc}(\tilde{\nabla}^{\natural}\tilde J_{\Phi}) = 0$, and when that condition fails the field it returns carries a scalar whose value is the retarded average of the violation. The constraint is therefore not an extra condition imposed beside the formula: it is the statement that the formula's output lies in the space in which $\tilde F$ is defined.
 
-The retarded Green's function is distinct from the **Cauchy kernel** $\tilde{Q}^{\natural}/\|\tilde{Q}\|_E^4$ of the elliptic theory (companion articles on biquaternion integration and biquaternion analysis on subspaces). The difference is which reading of one operator is inverted. The Cauchy kernel is the fundamental solution of $\Box=\partial^2/\partial R_t^2+\Delta_Q$ read with the four real coordinates $Q_\mu$ of the $\mathbb{B}$ frame, where all four coefficients have the same sign; the retarded kernel is the fundamental solution of the same $\Box$ read on $\mathbb{B}_{\Phi}$, where $Q_t=i c r'_t$ turns it into $\Delta-c^{-2}\partial^2/\partial {r'_t}^2$. There is one d'Alembertian, not two: the substitution is a change of coordinate, and it changes the signature. The two kernels are related by the **Wick rotation** $r'_t \to -i\tau$, which converts the hyperbolic kernel into the elliptic one. The elliptic kernel is the natural object in the Euclidean (imaginary-time) formulation; the retarded kernel is the natural object in the Lorentzian (real-time) formulation.
+The retarded Green's function is distinct from the **Cauchy kernel** $\tilde{Q}^{\natural}/\|\tilde{Q}\|_E^4$ of the elliptic theory (companion articles on biquaternion integration and biquaternion analysis on subspaces). The difference is which reading of one operator is inverted. The Cauchy kernel is the fundamental solution of $\Box=\partial^2/\partial R_t^2+\Delta_Q$ read with the four real coordinates $Q_\mu$ of the $\mathbb{B}$ frame, where all four coefficients have the same sign; the retarded kernel is the fundamental solution of the same $\Box$ read on $\mathbb{B}_{\Phi}$, where $Q_t=i r'_t$ turns it into $\Delta-\partial^2/\partial {r'_t}^2$. There is one d'Alembertian, not two: the substitution is a change of coordinate, and it changes the signature. The two kernels are related by the **Wick rotation** $r'_t \to -i\tau$, which converts the hyperbolic kernel into the elliptic one. The elliptic kernel is the natural object in the Euclidean (imaginary-time) formulation; the retarded kernel is the natural object in the Lorentzian (real-time) formulation.
 
 ## The Three-Vector Form
 
@@ -299,7 +300,7 @@ $$
 \tilde F = \vec F,
 $$
 
-and $\partial/\partial R_t = -\frac{i}{c}\partial/\partial r'_t$, the biquaternionic Maxwell equation $\tilde\nabla\tilde F = -\sqrt{\mu}\,\tilde J_{\Phi}$ is the pair
+and $\partial/\partial R_t = -i\partial/\partial r'_t$, the biquaternionic Maxwell equation $\tilde\nabla\tilde F = -\sqrt{\mu}\,\tilde J_{\Phi}$ is the pair
 
 $$
 \partial/\partial R_t\,\vec F + \mathrm{rot}\,\vec F = -\vec R,
@@ -395,8 +396,8 @@ which means
 
 $$
 S=\frac{\partial A_0}{\partial R_t} + \mathrm{div}\,\vec A
-=-\frac{i}{c}\frac{\partial}{\partial r'_t}\Bigl(i\,a'_t\Bigr)+\mathrm{div}\,\vec A
-=\frac{1}{c^2}\frac{\partial\xi_{\mathrm{scp}}}{\partial r'_t}+\mathrm{div}\,\vec A=0,
+=-i\frac{\partial}{\partial r'_t}\Bigl(i\,a'_t\Bigr)+\mathrm{div}\,\vec A
+=\frac{1}{c}\frac{\partial\xi_{\mathrm{scp}}}{\partial r'_t}+\mathrm{div}\,\vec A=0,
 $$
 
 where the two factors of $i$ give $i^2=-1$, $a'_t=\xi_{\mathrm{scp}}/c$ restores the potential, and the sign of the second term follows. This is the biquaternionic form of the standard Lorenz condition $\sum_\mu \partial A_\mu/\partial R_\mu = 0$, written in the familiar three-vector shape. It is a choice of gauge, not a physical condition. (The electro-gravimagnetic programme of *The Electro-Gravimagnetic Field and the Magnetic-Charge–Mass Hypothesis* uses the same condition in a different role, imposing it as a constraint of its representation rather than choosing it as a gauge; see that article, where the difference of logical status is recorded and not resolved.) In the Lorenz gauge, the potential satisfies the wave equation
@@ -475,7 +476,7 @@ The two formulations are related as follows:
 
 The first-order formulation is the most compact: one equation for the field strength. The second-order formulation is the most familiar: the wave equation for the potential. Both are valid, and both are biquaternionic.
 
-**A third route, and where it loses equivalence.** The two formulations above are equivalent to each other, and both are equivalent to the Maxwell system. The classical route to a single equation is a third thing, and it is not equivalent. Eliminating one field — solving the Ampère–Maxwell law for $\vec H$ and substituting it into $\mathrm{rot}\,\vec E=-\partial/\partial r'_t\vec B$ — yields a second-order wave equation for $\vec E$ alone, and that equation admits solutions the Maxwell system does not. Any $\vec E=\nabla f$ with $\Box f=0$ solves it, since $\Box\nabla f=\nabla\Box f$ vanishes, while $\mathrm{div}\,\vec E=\Delta f$ need not vanish; for $f=\exp(ik(z-c r'_{t}))$ the divergence is $-k^2f$, so the elimination has enlarged the solution set by a longitudinal sector that Maxwell forbids. The constraints $\mathrm{div}\,\vec D=\rho$ and $\mathrm{div}\,\vec B=0$ are not implied by the wave equation and have to be reimposed by hand, and the boundary data do not transfer either: a Dirichlet or Neumann datum on $\vec E$ is natural data for the wave equation and not for the first-order system, while the natural Maxwell datum — the tangential components of $\vec E$ and $\vec H$ — is not a datum the wave equation is posed with. The reduction is convenient rather than faithful: it is what one wants for propagation, and it is not a statement of the theory.
+**A third route, and where it loses equivalence.** The two formulations above are equivalent to each other, and both are equivalent to the Maxwell system. The classical route to a single equation is a third thing, and it is not equivalent. Eliminating one field — solving the Ampère–Maxwell law for $\vec H$ and substituting it into $\mathrm{rot}\,\vec E=-\partial/\partial r'_t\vec B$ — yields a second-order wave equation for $\vec E$ alone, and that equation admits solutions the Maxwell system does not. Any $\vec E=\nabla f$ with $\Box f=0$ solves it, since $\Box\nabla f=\nabla\Box f$ vanishes, while $\mathrm{div}\,\vec E=\Delta f$ need not vanish; for $f=\exp(ik(z-r'_{t}))$ the divergence is $-k^2f$, so the elimination has enlarged the solution set by a longitudinal sector that Maxwell forbids. The constraints $\mathrm{div}\,\vec D=\rho$ and $\mathrm{div}\,\vec B=0$ are not implied by the wave equation and have to be reimposed by hand, and the boundary data do not transfer either: a Dirichlet or Neumann datum on $\vec E$ is natural data for the wave equation and not for the first-order system, while the natural Maxwell datum — the tangential components of $\vec E$ and $\vec H$ — is not a datum the wave equation is posed with. The reduction is convenient rather than faithful: it is what one wants for propagation, and it is not a statement of the theory.
 
 The biquaternionic formulation pays no such price, because it eliminates nothing. The single equation $\tilde{\nabla}\tilde{F}=-\sqrt{\mu}\,\tilde{J}_{\Phi}$ is first order in one field-strength biquaternion, and the constraints are not separate conditions added afterwards: $\mathrm{div}\,\vec F=R_0$ is the scalar part of that same equation. This is the property Kravchenko calls the **diagonalization** of the Maxwell system, and it can be reproduced in vector calculus by combining the two fields rather than eliminating one of them into the other; *Maxwell's Equations in Chiral Media — The Quaternionic Reformulation* displays the combinations and the first-order equations they satisfy. The two routes are distinct claims and both are wanted: the quaternionic form is preferred because it carries a function theory, and the point here is only that the first-order biquaternionic equation already has the equivalence the wave equation lacks.
 
@@ -604,7 +605,7 @@ $$
 W = \frac{1}{2}\left(\epsilon\,\vec E\cdot\vec E + \mu\,\vec H\cdot\vec H\right), \qquad \vec S = \vec E\times\vec H.
 $$
 
-The scalar part of $\tilde{W}_{\Psi}$ is the energy density, real; the vector part is $(i/c)\vec S$, purely imaginary. The object is therefore an element of the Hermitian subspace $\mathbb{B}_{\Psi}$, as every Hermitian form is, and the factor $i$ on the Poynting part is required: in the $i c r'_t$ convention a temporal component carries an $i$ relative to a spatial one, exactly as the scalar part of the source $\sqrt{\mu}\,\tilde{J}_{\Phi}$ above is $i\rho/\sqrt{\epsilon}$ rather than $\rho/\sqrt{\epsilon}$. The form $\tilde{F}\tilde{F}^{*}$ is computed in *The Field-Strength Biquaternion and Its Invariants*; the factor $\tfrac{1}{2}$ is fixed by the requirement that the scalar part be the energy density. The energy–momentum **tensor** $T_{\mu\nu}$ is the source of the gravitational field in any theory that couples gravity to electromagnetism; $\tilde{W}_{\Psi}$ carries its energy density and its energy flux.
+The scalar part of $\tilde{W}_{\Psi}$ is the energy density, real; the vector part is $(i/c)\vec S$, purely imaginary. The object is therefore an element of the Hermitian subspace $\mathbb{B}_{\Psi}$, as every Hermitian form is, and the factor $i$ on the Poynting part is required: in the $i r'_t$ convention a temporal component carries an $i$ relative to a spatial one, exactly as the scalar part of the source $\sqrt{\mu}\,\tilde{J}_{\Phi}$ above is $i\rho/\sqrt{\epsilon}$ rather than $\rho/\sqrt{\epsilon}$. The form $\tilde{F}\tilde{F}^{*}$ is computed in *The Field-Strength Biquaternion and Its Invariants*; the factor $\tfrac{1}{2}$ is fixed by the requirement that the scalar part be the energy density. The energy–momentum **tensor** $T_{\mu\nu}$ is the source of the gravitational field in any theory that couples gravity to electromagnetism; $\tilde{W}_{\Psi}$ carries its energy density and its energy flux.
 
 The energy law is the scalar part of the biquaternionic equation
 
@@ -612,12 +613,12 @@ $$
 \tilde{\nabla} \tilde{W}_{\Psi} = -\tilde{\mathcal F},
 $$
 
-where $\tilde{\mathcal F}$ is the biquaternionic power–force density, whose scalar part is fixed by the work done on the charges. Only the scalar part of this equation is used below. Writing out the two parts of the left-hand side, with $\partial/\partial R_t=-(i/c)\partial/\partial r'_t$,
+where $\tilde{\mathcal F}$ is the biquaternionic power–force density, whose scalar part is fixed by the work done on the charges. Only the scalar part of this equation is used below. Writing out the two parts of the left-hand side, with $\partial/\partial R_t=-i\,\partial/\partial r'_t$,
 
 $$
 \mathrm{Sc}\bigl(\tilde\nabla\tilde W_{\Psi}\bigr)=\frac{\partial W}{\partial R_t}-\frac{i}{c}\,\mathrm{div}\,\vec S,
 \qquad
-\mathrm{Vect}\bigl(\tilde\nabla\tilde W_{\Psi}\bigr)=\frac{1}{c^2}\frac{\partial\vec S}{\partial r'_t}+\nabla W+\frac{i}{c}\,\mathrm{rot}\,\vec S .
+\mathrm{Vect}\bigl(\tilde\nabla\tilde W_{\Psi}\bigr)=\frac{1}{c}\frac{\partial\vec S}{\partial r'_t}+\nabla W+\frac{i}{c}\,\mathrm{rot}\,\vec S .
 $$
 
 The scalar part is the Poynting theorem: with $\mathrm{Sc}(\tilde{\mathcal F})=-\frac{i}{c}\vec J\cdot\vec E$ the equation reads
@@ -704,7 +705,7 @@ $$
 \tilde{A}_{\Phi} = i\,a'_t + \vec A.
 $$
 
-The complex time coordinate becomes $ic_0 r'_t$, recovering the familiar $i c r'_t$ form with the vacuum speed of light. The structure of the equations is unchanged. This is the content of the statement that the vacuum is a special case of a medium: the same equations describe both, with different values of $\epsilon$ and $\mu$.
+The complex time coordinate becomes $i r'_t$, recovering the familiar $i r'_t$ form with the vacuum speed of light. The structure of the equations is unchanged. This is the content of the statement that the vacuum is a special case of a medium: the same equations describe both, with different values of $\epsilon$ and $\mu$.
 
 ## The Question of What Is Fundamental
 
@@ -809,7 +810,7 @@ with complex coefficients that are not restricted to either subspace. Restrictin
 
 The biquaternionic formulation extends naturally to this setting. The gradient $\tilde{\nabla}$ becomes an operator on the complexified coordinates, and the factorization $\tilde{\nabla}\tilde{\nabla}^{\natural} = \Box\,e_t$ continues to hold, with $\Box$ now the complexified d'Alembertian. The single equation $\tilde{\nabla} \tilde{F} = -\sqrt{\mu}\,\tilde{J}_{\Phi}$ remains valid, but the fields and sources are now fully complex. The integrability condition $\mathrm{Sc}(\tilde{\nabla}^{\natural} \sqrt{\mu}\,\tilde{J}_{\Phi}) = 0$ remains the conservation law for the complexified source.
 
-This is the natural generalization of the $i c r'_t$ structure. The electromagnetic field is the material slice of a complex field, just as the material sector $\mathbb{B}_{\Phi}$ is a real slice of the complexified biquaternion algebra. The structure of Maxwell's equations is preserved, but the arena is larger.
+This is the natural generalization of the $i r'_t$ structure. The electromagnetic field is the material slice of a complex field, just as the material sector $\mathbb{B}_{\Phi}$ is a real slice of the complexified biquaternion algebra. The structure of Maxwell's equations is preserved, but the arena is larger.
 
 ## The Legacy Pauli Gamma Formulation
 
@@ -896,7 +897,7 @@ The energy and momentum of the field are carried by the halved Hermitian form $\
 | $\mathbb{B}_{\Psi}$ | Hermitian subspace (informational sector) |
 | $\tilde{A}_{\Phi}$ | Potential biquaternion |
 | $\tilde{F}$ | Field-strength biquaternion |
-| $G_\Box$, $\tilde G_{\Phi,\tilde\nabla}$ | Scalar retarded kernel $(4\pi R)^{-1}\delta(r'_t-R/c)$ and the first-order kernel $\tilde\nabla^{\natural}G_\Box$ |
+| $G_\Box$, $\tilde G_{\Phi,\tilde\nabla}$ | Scalar retarded kernel $(4\pi R)^{-1}\delta(r'_t-R)$ and the first-order kernel $\tilde\nabla^{\natural}G_\Box$ |
 | $\delta'$ | Derivative of the delta with respect to its argument |
 | $\vec N = \vec E + ic\vec B$ | Riemann–Silberstein vector; $\tilde F = i\sqrt{\epsilon}\,\vec N$ |
 | $L_a$, $R_b$ | Left and right multiplication, by $a$ on the left and by $b$ on the right |
@@ -930,7 +931,7 @@ The energy and momentum of the field are carried by the halved Hermitian form $\
 
 - [Why AXF Matrices instead of Pauli and Gamma Matrices](why-axf-matrices-instead-of-pauli-and-gamma-matrices.html), for the reasons the AXF matrices replace the Pauli and gamma matrices.
 - Hermann Minkowski, "Space and Time" (1908), reprinted in *The Principle of Relativity* (Dover).
-- Albert Einstein, *The Meaning of Relativity* (Princeton, 1922), for the $i c r'_t$ formulation of special relativity.
+- Albert Einstein, *The Meaning of Relativity* (Princeton, 1922), for the $i r'_t$ formulation of special relativity.
 - James Clerk Maxwell, *A Treatise on Electricity and Magnetism* (Dover, 1954), for the original formulation.
 - G. Rousseaux and É. Guyon, "À propos d'une analogie entre la mécanique des fluides et l'électromagnétisme", *Bulletin de l'Union des Physiciens* **96** (2002), no. 841 (2), 125–134, for the fluid–electromagnetism correspondence of *The Hydrodynamic Form of the Equations* — the Lamb vector, the dictionary the text attributes to Marmanis, the two Galilean limits and their fluid interpretations — and for the historical claim, recorded in *A Brief History of Biquaternions in Physics*, that the mechanical model of the field was the origin of the equations rather than an interpretation of them. An expository article in a teachers' journal, in French; cited for the analogy's content and its historical claims, not as primary literature.
 - Lev Landau and Evgeny Lifshitz, *The Classical Theory of Fields* (Pergamon, 1975), for the four-dimensional formulation.

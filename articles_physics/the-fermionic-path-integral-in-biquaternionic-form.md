@@ -2,13 +2,13 @@
 
 ## Introduction
 
-The companion article *The Path Integral in Biquaternionic Form* settles what the biquaternion algebra can and cannot contribute to a path integral: the phase factor $\exp(\frac{k_m\,i\,S}{m\,c})$ is a *central* $*$-unitary element, because the central scalar imaginary is the algebra's unique complex structure up to sign; the exponent lies along the $i c r'_t$ direction of the material sector $\mathbb{B}_{\Phi}$; and the measure, the action and the space of paths are not supplied by the algebra, because $\mathbb{B}$ is finite-dimensional and the space of histories is not. The companion article *The Feynman Propagator in Biquaternionic Form* adds where the $i\epsilon$ lives and that the algebra names its axis without choosing its orientation. The companion article *Interpretation of the Wick Rotation in the Biquaternion Universe* adds that $r'_t\to-i\tau$ is the relabeling of the imaginary-time coefficient as a real one, turning the material sector into the quaternion subspace.
+The companion article *The Path Integral in Biquaternionic Form* settles what the biquaternion algebra can and cannot contribute to a path integral: the phase factor $\exp(\frac{k_m\,i\,S}{m\,c})$ is a *central* $*$-unitary element, because the central scalar imaginary is the algebra's unique complex structure up to sign; the exponent lies along the $i r'_t$ direction of the material sector $\mathbb{B}_{\Phi}$; and the measure, the action and the space of paths are not supplied by the algebra, because $\mathbb{B}$ is finite-dimensional and the space of histories is not. The companion article *The Feynman Propagator in Biquaternionic Form* adds where the $i\epsilon$ lives and that the algebra names its axis without choosing its orientation. The companion article *Interpretation of the Wick Rotation in the Biquaternion Universe* adds that $r'_t\to-i\tau$ is the relabeling of the imaginary-time coefficient as a real one, turning the material sector into the quaternion subspace.
 
 **Units.** Throughout, a four-momentum is $(p_0,\vec p)$ with $p_0=E/c$, the mass shell is $E^2=\vec p^{\,2}c^2+m^{2}\,c^{4}$, and every mass enters through the mass wave number $k_m=mc/\hbar$.
 
 This article applies those findings to the spin-$\tfrac12$ field, where the histories are **anticommuting**. The fermionic path integral differs from the bosonic one in exactly one structural place — the integration variables are odd, so the integral is Berezin's rather than Lebesgue's — and that one difference propagates into every formula. The article establishes:
 
-- **The action and its sector.** The biquaternion Dirac action as a bilinear; the **one-sided** pair over the two parts of the field, which is what the integral integrates, and the **two-sided** (Kravchenko) equation, which it does not; the phase $iS$ as an element of $\mathbb{B}_{\Phi}$ along the $i c r'_t$ axis; and the action as an even (bosonic) functional of the fermionic field.
+- **The action and its sector.** The biquaternion Dirac action as a bilinear; the **one-sided** pair over the two parts of the field, which is what the integral integrates, and the **two-sided** (Kravchenko) equation, which it does not; the phase $iS$ as an element of $\mathbb{B}_{\Phi}$ along the $i r'_t$ axis; and the action as an even (bosonic) functional of the fermionic field.
 - **The Berezin measure.** Fermionic histories are Grassmann-valued biquaternion fields; the measure is the Berezin measure on the Grassmann extension of the coefficient algebra, and in the finite-mode reduction it is $\prod_a d\tilde{Ξ}_{\mathrm{sp},a}^{\dagger}\,d\tilde{Ξ}_{\mathrm{sp},a}$ with the convention fixed once.
 - **The Gaussian integral and the determinant.** Completing the square in the Grassmann algebra gives the free generating functional, the two-point function as the inverse kernel, and the determinant of the pair operator; the finite-mode statements were recomputed exactly.
 - **The Pfaffian and the real structure.** For a field whose quadratic form is antisymmetric — the Majorana case, for which the algebra supplies the field-to-its-conjugate pairing — the integral is a Pfaffian, with $\mathrm{Pf}^2=\det$ and a sign that carries physical content.
@@ -28,7 +28,7 @@ $$
 \tilde\nabla^{\natural}=e_t\frac{\partial}{\partial R_t}-\vec e_x\frac{\partial}{\partial R_x}-\vec e_y\frac{\partial}{\partial R_y}-\vec e_z\frac{\partial}{\partial R_z},
 $$
 
-read on the material sector $\mathbb{B}_{\Phi}$ as $\tilde\nabla|_{\mathbb{B}_{\Phi}}=-\frac{i}{c}e_t\,\partial/\partial r'_t+\sum_k\vec e_k\,\partial/\partial R_k$, and it composes with its conjugate to the d'Alembertian, $\tilde\nabla\tilde\nabla^{\natural}=\tilde\nabla^{\natural}\tilde\nabla=\Box=\partial^2/\partial R_t^2+\Delta_Q$, read on that sector as $\Delta-c^{-2}\partial^2/\partial {r'_t}^2$. No derivative below is written in any other form.
+read on the material sector $\mathbb{B}_{\Phi}$ as $\tilde\nabla|_{\mathbb{B}_{\Phi}}=-\frac{i}{c}e_t\,\partial/\partial r'_t+\sum_k\vec e_k\,\partial/\partial R_k$, and it composes with its conjugate to the d'Alembertian, $\tilde\nabla\tilde\nabla^{\natural}=\tilde\nabla^{\natural}\tilde\nabla=\Box=\partial^2/\partial R_t^2+\Delta_Q$, read on that sector as $\Delta-\partial^2/\partial {r'_t}^2$. No derivative below is written in any other form.
 
 The classical field theory is defined by the parent article's Lagrangian density. The field is $\tilde{Ξ}_{\mathrm{sp}}$, with the two parts $\tilde{Ξ}_{\mathrm{sp},L}$ and $\tilde{Ξ}_{\mathrm{sp},R}$, and its **Dirac adjoint** is the right multiplication of $\tilde{Ξ}_{\mathrm{sp}}^{\dagger}$ by the single element $i\vec e_x$,
 
@@ -231,7 +231,7 @@ $$
 
 its denominator being $-p^2+m^2-i\epsilon$; multiplying numerator and denominator by $-1$ returns the preceding form.
 
-The determinant is therefore that of the operator whose inverse is $S_F$ up to the overall $i$ that the Minkowski weight carries, with the deformed mass-shell denominator; the deformation lies along the $i c r'_t$ axis of the material sector. The pair squares to the d'Alembertian, $\mathbb{D}^2=\Box I$, so its eigenvalues on a plane wave are $\pm\mu$ with $\mu^2=p^2$, in four opposite pairs, and each pair contributes $(\mu-m)(-\mu-m)=m^2-\mu^2$. The determinant is thus the fourth power of the scalar mode factor,
+The determinant is therefore that of the operator whose inverse is $S_F$ up to the overall $i$ that the Minkowski weight carries, with the deformed mass-shell denominator; the deformation lies along the $i r'_t$ axis of the material sector. The pair squares to the d'Alembertian, $\mathbb{D}^2=\Box I$, so its eigenvalues on a plane wave are $\pm\mu$ with $\mu^2=p^2$, in four opposite pairs, and each pair contributes $(\mu-m)(-\mu-m)=m^2-\mu^2$. The determinant is thus the fourth power of the scalar mode factor,
 
 $$
 \det\big(\mathbb{D}-k_m\big)=\big(p^2-m^{2}\,c^{2}\big)^4=\det\big(\Box-k_m^{2}\big)
@@ -268,7 +268,7 @@ Second, the algebra's own statement is the *existence* of the antisymmetric pair
 
 ## The Euclidean Integral and the Boundary Conditions
 
-**Wick rotation.** With $r'_t\to-i\tau$ the $i c r'_t$ direction of $\mathbb{B}_{\Phi}$ becomes the real quaternion direction, as the Wick-rotation companion establishes, and the oscillatory weight becomes a decaying one:
+**Wick rotation.** With $r'_t\to-i\tau$ the $i r'_t$ direction of $\mathbb{B}_{\Phi}$ becomes the real quaternion direction, as the Wick-rotation companion establishes, and the oscillatory weight becomes a decaying one:
 
 $$
 \exp(\,iS)\;\longrightarrow\;\exp(\,-S_{\mathrm{E}}),
@@ -276,7 +276,7 @@ $$
 S_{\mathrm{E}}=\int d\tau\,d^3r\;\mathrm{Sc}\big(\bar{\tilde{Ξ}}_{\mathrm{sp},L}\,\tilde\nabla\tilde{Ξ}_{\mathrm{sp},R}+\bar{\tilde{Ξ}}_{\mathrm{sp},R}\,\tilde\nabla^{\natural}\tilde{Ξ}_{\mathrm{sp},L}+m\,(\bar{\tilde{Ξ}}_{\mathrm{sp},L}\tilde{Ξ}_{\mathrm{sp},L}+\bar{\tilde{Ξ}}_{\mathrm{sp},R}\tilde{Ξ}_{\mathrm{sp},R})\big),
 $$
 
-with $\tilde\nabla$ and $\tilde\nabla^{\natural}$ the corpus gradient and its conjugate read at $r'_t=-i\tau$: the substitution moves the coordinate $Q_t=i c r'_t$ to $Q_t=c\tau$ and renames no operator, so the gradient is the one of §*The Pair Operator on the Algebra* and the integral is the same density written on the real slice. The kinetic operator is anti-Hermitian and the mass term Hermitian, and the plus sign on the mass is the one that makes the kernel $M=\mathbb{D}+k_m$ of the Gaussian. The Euclidean determinant is therefore real, and positive for real $m$; a continuous phase appears only when a non-Hermitian deformation is added.
+with $\tilde\nabla$ and $\tilde\nabla^{\natural}$ the corpus gradient and its conjugate read at $r'_t=-i\tau$: the substitution moves the coordinate $Q_t=i r'_t$ to $Q_t=c\tau$ and renames no operator, so the gradient is the one of §*The Pair Operator on the Algebra* and the integral is the same density written on the real slice. The kinetic operator is anti-Hermitian and the mass term Hermitian, and the plus sign on the mass is the one that makes the kernel $M=\mathbb{D}+k_m$ of the Gaussian. The Euclidean determinant is therefore real, and positive for real $m$; a continuous phase appears only when a non-Hermitian deformation is added.
 
 **Antiperiodic boundary conditions.** The Euclidean fermionic integral that computes a thermal trace is taken over fields on a circle of circumference $\beta=\frac{m\,c}{k_m\,k_{B}\,T}$ in $\tau$ with the fermions antiperiodic,
 
@@ -319,7 +319,7 @@ The phase of the determinant is where the fermionic integral's analytic content 
 
 **The algebra's own.**
 
-- *The sector and centrality statements.* The phase $iS$ is central and lies in $\mathbb{B}_{\Phi}$ along the $i c r'_t$ axis; the action is even; the sources are odd and live in the Grassmann extension. These are the generalities companion's findings applied to the fermionic case, and they are the only place where the algebra's structure enters.
+- *The sector and centrality statements.* The phase $iS$ is central and lies in $\mathbb{B}_{\Phi}$ along the $i r'_t$ axis; the action is even; the sources are odd and live in the Grassmann extension. These are the generalities companion's findings applied to the fermionic case, and they are the only place where the algebra's structure enters.
 - *The real structure that makes the pairing available.* That the algebra offers a field-to-its-own-conjugate pairing at all is what $\flat=-{}^{*}$ makes available; that the resulting integral is a Pfaffian is the consequence.
 - *The biquaternion form of the kernel.* The deformed mass-shell denominator inherited from the propagator companion, with the symbol of the gradient written on the units, $w\mapsto\tilde K w$ on each part of the pair, and its square the mass shell.
 
@@ -342,7 +342,7 @@ The phase of the determinant is where the fermionic integral's analytic content 
 
 ## Summary
 
-The fermionic path integral of the biquaternion spin-$\tfrac12$ field is the Berezin integral over Grassmann-valued biquaternion histories of the phase $\exp(iS)$, with the biquaternion Dirac action as the bilinear $S=\int\mathrm{Sc}(\bar{\tilde{Ξ}}_{\mathrm{sp},L}\tilde\nabla\tilde{Ξ}_{\mathrm{sp},R}+\bar{\tilde{Ξ}}_{\mathrm{sp},R}\tilde\nabla^{\natural}\tilde{Ξ}_{\mathrm{sp},L})-\int m\,\mathrm{Sc}(\bar{\tilde{Ξ}}_{\mathrm{sp},L}\tilde{Ξ}_{\mathrm{sp},L}+\bar{\tilde{Ξ}}_{\mathrm{sp},R}\tilde{Ξ}_{\mathrm{sp},R})$ and the sources odd. The equation integrated is the **one-sided** pair over the two parts of the field; Kravchenko's **two-sided** equation is a different operator, related to it by a real-linear dictionary, and is not integrated here. The phase is central and lies in $\mathbb{B}_{\Phi}$ along the $i c r'_t$ axis; the action is even, so the parity sectors do not mix and an odd integral vanishes.
+The fermionic path integral of the biquaternion spin-$\tfrac12$ field is the Berezin integral over Grassmann-valued biquaternion histories of the phase $\exp(iS)$, with the biquaternion Dirac action as the bilinear $S=\int\mathrm{Sc}(\bar{\tilde{Ξ}}_{\mathrm{sp},L}\tilde\nabla\tilde{Ξ}_{\mathrm{sp},R}+\bar{\tilde{Ξ}}_{\mathrm{sp},R}\tilde\nabla^{\natural}\tilde{Ξ}_{\mathrm{sp},L})-\int m\,\mathrm{Sc}(\bar{\tilde{Ξ}}_{\mathrm{sp},L}\tilde{Ξ}_{\mathrm{sp},L}+\bar{\tilde{Ξ}}_{\mathrm{sp},R}\tilde{Ξ}_{\mathrm{sp},R})$ and the sources odd. The equation integrated is the **one-sided** pair over the two parts of the field; Kravchenko's **two-sided** equation is a different operator, related to it by a real-linear dictionary, and is not integrated here. The phase is central and lies in $\mathbb{B}_{\Phi}$ along the $i r'_t$ axis; the action is even, so the parity sectors do not mix and an odd integral vanishes.
 
 The Gaussian is the determinant, verified exactly for a general complex $2\times2$ matrix in the convention $\int d\varkappa^*d\varkappa\,\varkappa\varkappa^*=1$; the two-point function is the inverse kernel in the stated index order, $\langle\tilde{Ξ}_{\mathrm{sp},a}\tilde{Ξ}_{\mathrm{sp},b}^{\dagger}\rangle=(M^{-1})_{ab}$, verified to nine decimals; the generating functional is $Z[\eta,\bar\eta]=\det M\exp[-\bar\eta M^{-1}\eta]$ in the Minkowski weight, with the plus sign in the Euclidean one; and for the field the kernel is the companion's amplitude carried on the two parts of the field
 
@@ -365,7 +365,7 @@ The algebra contributes the centrality of the phase, the sector location of the 
 | $\tilde\nabla$, $\tilde\nabla^{\natural}$, $\Box=\tilde\nabla\tilde\nabla^{\natural}$ | The corpus gradient, its conjugate and the d'Alembertian; the only derivative in the article |
 | $\tilde\nabla\tilde{Ξ}_{\mathrm{sp},R}=k_m\tilde{Ξ}_{\mathrm{sp},L}$, $\tilde\nabla^{\natural}\tilde{Ξ}_{\mathrm{sp},L}=k_m\tilde{Ξ}_{\mathrm{sp},R}$ | One-sided pair; the equation integrated |
 | $-\tilde\nabla^{\natural}F-mi\,\bar F\,\vec e_z=0$ | Two-sided (Kravchenko) equation; different operator, not integrated |
-| $\exp(iS)$ | Path-integral phase; central, in $\mathbb{B}_{C}$, exponent along $i c r'_t$ |
+| $\exp(iS)$ | Path-integral phase; central, in $\mathbb{B}_{C}$, exponent along $i r'_t$ |
 | $\eta,\bar\eta$ | Odd (Grassmann) sources |
 | $\mathcal{D}\tilde{Ξ}_{\mathrm{sp}}^{\dagger}\mathcal{D}\tilde{Ξ}_{\mathrm{sp}}=\prod_x\prod_ad\tilde{Ξ}_{\mathrm{sp},a}^{\dagger}(x)\,d\tilde{Ξ}_{\mathrm{sp},a}(x)$ | Berezin measure |
 | $\int d\varkappa^*d\varkappa\,\varkappa\varkappa^*=1$ | Berezin normalization used throughout |
@@ -380,7 +380,7 @@ The algebra contributes the centrality of the phase, the sector location of the 
 | $\det(\mathbb{D}-k_m)=(p^2-m^{2}\,c^{2})^4=\det(\Box-k_m^{2})$ | Determinant; the four opposite eigenvalue pairs of the pair give the fourth power of the scalar mode factor |
 | $\int d\tilde{Ξ}_{\mathrm{sp},2N}\cdots d\tilde{Ξ}_{\mathrm{sp},1}\,\exp(-\frac12\tilde{Ξ}_{\mathrm{sp}} A\tilde{Ξ}_{\mathrm{sp}})=\mathrm{Pf}(A)$, $\mathrm{Pf}^2=\det A$ | Pfaffian for an antisymmetric form |
 | $\flat=-{}^{*}$ | Real structure; makes the field-to-conjugate pairing available |
-| $\exp(iS)\to \exp(-S_{\mathrm{E}})$ | Wick rotation ($i c r'_t$ direction becomes real) |
+| $\exp(iS)\to \exp(-S_{\mathrm{E}})$ | Wick rotation ($i r'_t$ direction becomes real) |
 | $\tilde{Ξ}_{\mathrm{sp}}(\tau+\beta)=-\tilde{Ξ}_{\mathrm{sp}}(\tau)$, $\omega_n=(2n+1)\pi/\beta$ | Antiperiodic thermal boundary condition |
 | $Z(\beta)=\det(\mathbb{D}+k_m)_{\text{AP}}$ | Finite-temperature free partition function, the pair read at $r'_t=-i\tau$ |
 

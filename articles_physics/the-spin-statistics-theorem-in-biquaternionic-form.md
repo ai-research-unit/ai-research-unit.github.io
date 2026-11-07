@@ -117,7 +117,7 @@ The dimension count makes the same point. $\dim_\mathbb{C}M_2(\mathbb{C})=4=\dim
 
 ## Microcausality: The Equal-Time Brackets
 
-The operator-level content of the theorem is a computation with the parents' free field. Every derivative of the field in this article is the corpus gradient $\tilde\nabla$ or its conjugate $\tilde\nabla^{\natural}$ of *Operator and Calculus Conventions*, §*The Gradient*, with $\Box=\tilde\nabla\tilde\nabla^{\natural}$ the d'Alembertian there; on the material sector $\partial/\partial R_t=-(i/c)\,\partial/\partial r'_t$, so $\Box=\Delta_Q-c^{-2}\partial^2/\partial {r'_t}^2$. No other derivative operator is written.
+The operator-level content of the theorem is a computation with the parents' free field. Every derivative of the field in this article is the corpus gradient $\tilde\nabla$ or its conjugate $\tilde\nabla^{\natural}$ of *Operator and Calculus Conventions*, §*The Gradient*, with $\Box=\tilde\nabla\tilde\nabla^{\natural}$ the d'Alembertian there; on the material sector $\partial/\partial R_t=-i\,\partial/\partial r'_t$, so $\Box=\Delta_Q-\partial^2/\partial {r'_t}^2$. No other derivative operator is written.
 
 The field is the element-valued map $\tilde{Ξ}_{\mathrm{fop}}:\mathbb{R}^{1,3}\to\mathbb{B}$ of *Canonical Quantization of the Biquaternion Dirac Field*, with the mode expansion
 

@@ -26,14 +26,14 @@ $$
 \Box=\tilde\nabla\tilde\nabla^{\natural}=\tilde\nabla^{\natural}\tilde\nabla=\frac{\partial^2}{\partial R_t^2}+\Delta_Q ,
 $$
 
-and on the material sector, where $Q_t=i c r'_t$, the two gradients and the norm read
+and on the material sector, where $Q_t=i r'_t$, the two gradients and the norm read
 
 $$
 \tilde\nabla\big|_{\mathbb{B}_{\Phi}}=-\frac{i}{c}e_t\frac{\partial}{\partial r'_t}+D_3,
 \qquad
 \tilde\nabla^{\natural}\big|_{\mathbb{B}_{\Phi}}=-\frac{i}{c}e_t\frac{\partial}{\partial r'_t}-D_3,
 \qquad
-\Box\big|_{\mathbb{B}_{\Phi}}=\Delta_Q-\frac{1}{c^2}\frac{\partial^2}{\partial {r'_t}^2},
+\Box\big|_{\mathbb{B}_{\Phi}}=\Delta_Q-\frac{\partial^2}{\partial {r'_t}^2},
 \qquad
 D_3=\sum_k\vec e_k\frac{\partial}{\partial q_k}.
 $$
@@ -469,7 +469,7 @@ The biquaternion interpretation turns on two splits that must not be conflated. 
 | $\mathbb{B}_{\Psi}$ and $\mathbb{B}_{\Phi}$ | Hermitian ($+$) and anti-Hermitian ($-$) sectors; $\mathbb{B}_{\Phi}$ is the material sector |
 | $\tilde\nabla=\sum_\mu e_\mu\partial/\partial R_\mu$ | Biquaternionic gradient; every derivative in the article |
 | $\tilde\nabla^{\natural}=\sum_\mu\varepsilon_\mu e_\mu\partial/\partial R_\mu$ | Its conjugate, $\varepsilon=(1,-1,-1,-1)$ |
-| $\Box=\tilde\nabla\tilde\nabla^{\natural}=\partial^2/\partial R_t^2+\Delta_Q$ | The d'Alembertian, $\Delta_Q-c^{-2}\partial^2/\partial {r'_t}^2$ on the material sector |
+| $\Box=\tilde\nabla\tilde\nabla^{\natural}=\partial^2/\partial R_t^2+\Delta_Q$ | The d'Alembertian, $\Delta_Q-\partial^2/\partial {r'_t}^2$ on the material sector |
 | $D_3=\sum_k\vec e_k\partial/\partial q_k$ | Pure part of the gradient; $D_3^A$ its minimally coupled form |
 | $\beta F=iF\vec e_x$ | Mass grading, the right multiplication by $i\vec e_x$; $\beta^2=e_t$ |
 | $\Gamma F=-iF\vec e_z=iF\omega$ | Chirality, the right multiplication by $-i\vec e_z$; $\omega=-\vec e_z$ is the pseudoscalar, $\omega^2=-e_t$ |

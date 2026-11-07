@@ -32,13 +32,13 @@ $$
 the fixed space of the reversal. In coordinates it is the set of elements with an imaginary scalar coefficient and real vector coefficients,
 
 $$
-\tilde R_\Phi=i c r'_t\,e_t+r_x\vec e_x+r_y\vec e_y+r_z\vec e_z,
+\tilde R_\Phi=i r'_t\,e_t+r_x\vec e_x+r_y\vec e_y+r_z\vec e_z,
 $$
 
 with $r'_t,r_x,r_y,r_z\in\mathbb{R}$. The parameters are the coordinates themselves, so the general element is
 
 $$
-\tilde R_\Phi=i c r'_t\,e_t+r_x\vec e_x+r_y\vec e_y+r_z\vec e_z.
+\tilde R_\Phi=i r'_t\,e_t+r_x\vec e_x+r_y\vec e_y+r_z\vec e_z.
 $$
 
 The basis is $\{ie_t,\vec e_x,\vec e_y,\vec e_z\}$, of real dimension four. The sector is the sum of two blocks, the imaginary scalar block $A_2=\mathbb{R}(ie_t)$ and the real vector block $B_1=\operatorname{span}_{\mathbb{R}}\{\vec e_x,\vec e_y,\vec e_z\}$.
@@ -56,7 +56,7 @@ with $\vec r_{\Phi,1}=(r_{1x},r_{1y},r_{1z})$ and $\vec r_{\Phi,2}=(r_{2x},r_{2y
 The quaternionic norm on the sector is
 
 $$
-\boxed{\;\langle\tilde R_\Phi\rangle_{\natural}=\tilde R_\Phi\tilde R_\Phi^{\natural}=-c^2(r'_t)^2+r_x^2+r_y^2+r_z^2=-c^2{r'_{t}}^2+r_x^2+r_y^2+r_z^2\;}.
+\boxed{\;\langle\tilde R_\Phi\rangle_{\natural}=\tilde R_\Phi\tilde R_\Phi^{\natural}=-c^2(r'_t)^2+r_x^2+r_y^2+r_z^2=-{r'_{t}}^2+r_x^2+r_y^2+r_z^2\;}.
 $$
 
 It is real and of signature $(3,1)$: three positive spatial directions and one negative temporal one. The inverse formula is
@@ -121,15 +121,15 @@ The positivity of $\tilde U_{\Psi,\mathrm b}$ removes the sign ambiguity: $\tild
 
 ### The Sector Is Spacetime
 
-The element $i c r'_t\,e_t+r_x\vec e_x+r_y\vec e_y+r_z\vec e_z$ is a spacetime event. Its norm is the squared interval,
+The element $i r'_t\,e_t+r_x\vec e_x+r_y\vec e_y+r_z\vec e_z$ is a spacetime event. Its norm is the squared interval,
 
 $$
-\langle\tilde Q\rangle_{\natural}=-c^2{r'_{t}}^2+r_x^2+r_y^2+r_z^2=s^2,
+\langle\tilde Q\rangle_{\natural}=-{r'_{t}}^2+r_x^2+r_y^2+r_z^2=s^2,
 $$
 
 with the sign convention that a timelike interval is negative, a null interval is zero and a spacelike interval is positive. The interval is the norm itself, not the square of a separate norm, and the three cases are the three regions of the cone.
 
-The temporal coordinate enters as $i c r'_t$. The factor $i$ is what makes the time direction count with the opposite sign: $i^2=-1$, so the time term is negative while the three space terms are positive. With $c r'_t$ real in place of $i c r'_t$ the sector would carry a Euclidean four-coordinate space and no causal cone. The Lorentzian signature is therefore a consequence of the placement of the central imaginary, not an added axiom.
+The temporal coordinate enters as $i r'_t$. The factor $i$ is what makes the time direction count with the opposite sign: $i^2=-1$, so the time term is negative while the three space terms are positive. With $r'_t$ real in place of $i r'_t$ the sector would carry a Euclidean four-coordinate space and no causal cone. The Lorentzian signature is therefore a consequence of the placement of the central imaginary, not an added axiom.
 
 For a timelike worldline the proper time is
 
@@ -157,7 +157,7 @@ The sector carries the standard four-vectors of relativistic physics. The table 
 
 | Four-vector | Element | Components | Norm |
 | --- | --- | --- | --- |
-| four-position | $\tilde R=\tilde R_\Phi=i c r'_t\,e_t+\vec r$ | $(c r'_{t},r_x,r_y,r_z)$ | $s^2=-c^2{r'_{t}}^2+\lvert\vec r\rvert^2$ |
+| four-position | $\tilde R=\tilde R_\Phi=i r'_t\,e_t+\vec r$ | $(r'_{t},r_x,r_y,r_z)$ | $s^2=-{r'_{t}}^2+\lvert\vec r\rvert^2$ |
 | four-velocity | $\tilde V_{\Phi}=i\gamma c\,e_t+\gamma\vec v$ | $(\gamma c,\gamma\vec v)$ | $-c^2$ |
 | four-momentum | $\tilde P_{\Phi}=i\frac{E}{c}\,e_t+\vec p$ | $(E/c,\vec p)$ | $-m^2c^2$ |
 | four-wavevector | $\tilde K=i\frac{\omega}{c}\,e_t+\vec k$ | $(\omega/c,\vec k)$ | $0$ for light |
@@ -271,7 +271,7 @@ The article interprets the kinematics of the sector: the events, the four-vector
 
 ## Summary
 
-- The material sector is the anti-Hermitian subspace $\mathbb{B}_{\Phi}$, with an imaginary time and a real space, $\tilde Q=i c r'_t\,e_t+r_x\vec e_x+r_y\vec e_y+r_z\vec e_z$.
+- The material sector is the anti-Hermitian subspace $\mathbb{B}_{\Phi}$, with an imaginary time and a real space, $\tilde Q=i r'_t\,e_t+r_x\vec e_x+r_y\vec e_y+r_z\vec e_z$.
 - Its norm is the Minkowski interval, of signature $(3,1)$, and its zero set is the light cone.
 - The light cone is the $N$-degenerate set; its non-zero points are the zero divisors; on it the elements have no inverse; and it is the characteristic cone of the wave operator.
 - The set of units of the sector is the $N$-regular set, the complement of the cone; the inverse is $\tilde Q^{\natural}/\langle\tilde Q\rangle_{\natural}$.
@@ -289,7 +289,7 @@ The article interprets the kinematics of the sector: the events, the four-vector
 | Symbol | Meaning |
 | --- | --- |
 | $\mathbb{B}_{\Phi}$ | the anti-Hermitian subspace, the material sector |
-| $\tilde R_\Phi=i c r'_t e_t+\vec r_\Phi$ | a material element; it is its own material part |
+| $\tilde R_\Phi=i r'_t e_t+\vec r_\Phi$ | a material element; it is its own material part |
 | $\tilde Q^{\flat}=-{}^{*}\tilde Q$ | the reversal, whose fixed space is $\mathbb{B}_{\Phi}$ |
 | $\langle\tilde Q\rangle_{\natural}=\tilde Q\tilde Q^{\natural}$ | the quaternionic norm, the interval |
 | $\tilde Q^{-1}=\tilde Q^{\natural}/\langle\tilde Q\rangle_{\natural}$ | the inverse, defined off the cone |

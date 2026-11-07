@@ -118,7 +118,7 @@ $$
 \langle\tilde{Q}\rangle_{\natural} = \tilde{Q}\tilde{Q}^{\natural} = \sum_{\mu\in\{t,x,y,z\}} Q_\mu^2 ,
 $$
 
-whose indefinite signature on $\mathbb{B}_{\Phi}$ arises algebraically from $i^2 = -1$ in the imaginary time coefficient $i c r'_t$. The null elements $\langle\tilde{Q}\rangle_{\natural} = 0$, $\tilde{Q} \neq 0$, are the zero divisors; on $\mathbb{B}_{\Phi}$ they are the light cone.
+whose indefinite signature on $\mathbb{B}_{\Phi}$ arises algebraically from $i^2 = -1$ in the imaginary temporal coordinate $i r'_t$. The null elements $\langle\tilde{Q}\rangle_{\natural} = 0$, $\tilde{Q} \neq 0$, are the zero divisors; on $\mathbb{B}_{\Phi}$ they are the light cone.
 
 The single structural fact that organizes the whole subsequent history is the isomorphism
 

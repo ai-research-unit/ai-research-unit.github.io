@@ -108,7 +108,7 @@ $$
 \tilde{Ξ}(r_x)=\tilde{Ξ}_0\,\exp(i(\vec k\cdot(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)-\omega r'_t)), \qquad \tilde{Ξ}_0\in\mathbb{C},
 $$
 
-with the central phase $\exp(i(\vec k\cdot(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)-\omega r'_t))$ understood as multiplication by a central element. Because $\Box=-c^{-2}\,\partial^2/\partial {r'_{t}}^2+\Delta$ acts on it as $\omega^2/c^2-k^2$, the free equation requires the **dispersion relation**
+with the central phase $\exp(i(\vec k\cdot(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)-\omega r'_t))$ understood as multiplication by a central element. Because $\Box=-\partial^2/\partial {r'_{t}}^2+\Delta$ acts on it as $\omega^2/c^2-k^2$, the free equation requires the **dispersion relation**
 
 $$
 \omega^2=c^2k^2+c^2(k_m)^{2}=c^2k^2+c^2(k_m)^{2} .
@@ -167,7 +167,7 @@ R=|r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z-(x_s\,\vec e_x+y_s\,\vec e_y+z_s\,\
 \vec u=\frac{r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z-(x_s\,\vec e_x+y_s\,\vec e_y+z_s\,\vec e_z)(r'_{\mathrm{ret},t})}{R},
 $$
 
-evaluated at the retarded time $r'_{\mathrm{ret},t}=r'_t-R/c$. The formula is the scalar counterpart of the electromagnetic Liénard–Wiechert potential: the retarded denominator is the same, but there is **one** potential function and no vector potential, so there is no field strength tensor, no electric–magnetic decomposition, and no magnetic field. A moving scalar source produces only a scalar potential, and this is the field-theoretic face of the subcategory's subject.
+evaluated at the retarded time $r'_{\mathrm{ret},t}=r'_t-R$. The formula is the scalar counterpart of the electromagnetic Liénard–Wiechert potential: the retarded denominator is the same, but there is **one** potential function and no vector potential, so there is no field strength tensor, no electric–magnetic decomposition, and no magnetic field. A moving scalar source produces only a scalar potential, and this is the field-theoretic face of the subcategory's subject.
 
 ## The Field Energy and the Stress–Energy
 

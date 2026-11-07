@@ -8,7 +8,7 @@ Two features of the framework shape the principle. First, an action must be a **
 
 The scope is relativistic. The non-relativistic action belongs to the non-relativistic theory; the classical relativistic particle, its light cone, and the Lorentz group as biquaternion-norm automorphisms belong to the non-quantum relativistic theory; and the spin-specific equations belong to the spin articles. What is established here is the common functional apparatus: the free-particle action and its coupling, the real field Lagrangian, the biquaternionic Euler–Lagrange equation, and the symmetry statements. The conserved current and the stress–energy tensor that follow from the symmetries are developed in the companion article on Noether's theorem, which this article supplies the action for.
 
-- Companion article *Relativistic Mechanics in Biquaternionic Form*, for the four-position, four-velocity, four-momentum, mass shell, and the free-particle action in the $i c r'_t$ convention.
+- Companion article *Relativistic Mechanics in Biquaternionic Form*, for the four-position, four-velocity, four-momentum, mass shell, and the free-particle action in the $i r'_t$ convention.
 - Companion article *Noether's Theorem in Biquaternionic Form*, for the conserved current and the stress–energy tensor read off the Lagrangians fixed here.
 - Companion article *Algebra and Element Conventions*, for the biquaternion norm, the four conjugations, the mass term, and the Lagrangian sign convention.
 - Companion article *The Klein–Gordon Equation in Biquaternionic Form*, for the second-order field equation that the scalar Lagrangian varies to.
@@ -78,7 +78,7 @@ The action of a free relativistic particle is the proper time along its worldlin
 $$
 S = -mc\int\sqrt{-\,d\tilde R_\Phi\,\overline{d\tilde R_\Phi}} = -mc\int\sqrt{-\,\langle d\tilde R_\Phi\rangle_{\natural}} ,
 $$
-with $\tilde R_\Phi = i c r'_t\,e_t + r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z$ the four-position biquaternion. With $d\tilde R_\Phi = (ic\,e_t + d(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)/dr'_t)\,dr'_t$ the integrand is the invariant interval, and parametrising by the coordinate time gives the standard Lagrangian
+with $\tilde R_\Phi = i r'_t\,e_t + r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z$ the four-position biquaternion. With $d\tilde R_\Phi = (ic\,e_t + d(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)/dr'_t)\,dr'_t$ the integrand is the invariant interval, and parametrising by the coordinate time gives the standard Lagrangian
 $$
 \boxed{\;
 S = -mc^2\int\frac{dr'_t}{\gamma} = \int \mathrm{Lag}\,dr'_t , \qquad
@@ -153,7 +153,7 @@ $$
 \mathcal{L} = -\,(\partial/\partial R_t\,\xi^*)(\partial/\partial R_t\,\xi) - \sum_k(\partial/\partial R_k\,\xi^*)(\partial/\partial R_k\,\xi) - (mc/\hbar)^{2}\,\xi^*\xi ,
 \qquad \hbar/(mc) ,
 $$
-which is the standard relativistic scalar Lagrangian with the time-like kinetic term carrying the sign the $i c r'_t$ convention gives it. Its Euler–Lagrange equation is
+which is the standard relativistic scalar Lagrangian with the time-like kinetic term carrying the sign the $i r'_t$ convention gives it. Its Euler–Lagrange equation is
 $$
 \boxed{\;
 \left(\Box - (k_m)^{2}\right)\tilde{Ξ} = 0 ,
@@ -243,7 +243,7 @@ $$
 T_{\mu\nu} = -(\partial/\partial R_\mu\xi^*)\partial/\partial R_\nu\xi - (\partial/\partial R_\mu\xi)\partial/\partial R_\nu\xi^* - \delta_{\mu\nu}\,\mathcal{L} ,
 \qquad \sum_\mu\partial/\partial R_\mu T_{\mu\nu} = 0 \ \text{on shell},
 $$
-whose time–time component is the energy density. The companion article records the caution that in the $i c r'_t$ convention the time index carries the sign the metric would carry, so the biquaternion packaging of $T$ must be read through the same convention as $\Box$; mixing the two produces the wrong sign on the time derivative. This is the same hazard as the d'Alembertian sign, in a different place.
+whose time–time component is the energy density. The companion article records the caution that in the $i r'_t$ convention the time index carries the sign the metric would carry, so the biquaternion packaging of $T$ must be read through the same convention as $\Box$; mixing the two produces the wrong sign on the time derivative. This is the same hazard as the d'Alembertian sign, in a different place.
 
 **Lorentz transformations.** The actions are invariant under the rotor action $\tilde R_\Phi\mapsto\tilde U\tilde R_\Phi\tilde U^{*}$ because each is built from the biquaternion norm, which the rotor preserves; the conserved quantities are the six angular momenta. The verification and the consequences are the subject of the next section.
 

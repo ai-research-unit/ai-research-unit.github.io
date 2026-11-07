@@ -51,14 +51,14 @@ The count of the parameters is the same in every picture: four complex coefficie
 The four-vector picture is the one that carries the dictionary. The four complex coefficients are not four independent physical coordinates: each coefficient holds one material and one informational coordinate. In the conventions of the corpus,
 
 $$
-Q_t = c r_t + i c r'_t, \qquad Q_x = r_x + i r'_{x}, \qquad Q_y = r_y + i r'_{y}, \qquad Q_z = r_z + i r'_{z}.
+Q_t = r_t + i r'_t, \qquad Q_x = r_x + i r'_{x}, \qquad Q_y = r_y + i r'_{y}, \qquad Q_z = r_z + i r'_{z}.
 $$
 
 The real part of the scalar coefficient is the informational time and the imaginary part is the material time; each vector coefficient carries one material and one informational spatial coordinate.
 
 | Sector | Condition on the coefficients | Four-vector | Physical object |
 | --- | --- | --- | --- |
-| Material $\mathbb{B}_{\Phi}$ | $Q_t$ purely imaginary, $Q_k$ real | $(i c r'_t, r_x, r_y, r_z)$ | four-position, four-momentum, four-velocity |
+| Material $\mathbb{B}_{\Phi}$ | $Q_t$ purely imaginary, $Q_k$ real | $(i r'_t, r_x, r_y, r_z)$ | four-position, four-momentum, four-velocity |
 | Informational $\mathbb{B}_{\Psi}$ | $Q_t$ real, $Q_k$ purely imaginary | $(c t, i r'_{x}, i r'_{y}, i r'_{z})$ | state, observable, field strength |
 | Real quaternion $\mathbb{B}_{H}$ | all four coefficients real | $(q_t, q_x, q_y, q_z)$ | rotor, scale, ordinary quaternion |
 

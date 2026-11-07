@@ -31,15 +31,15 @@ The answer developed here is narrower than the title might suggest, and it is wo
 
 The body is written in the biquaternion algebra. An action on an element is written as it acts, $\tilde Q\mapsto a\tilde Qb$, and a cell appears only where the operator itself is the subject, in *The Fermionic Coupling at First Order*. The gamma matrices appear only in the final section, *The Legacy Pauli Gamma Formulation*, which is a translation table and not a second formulation.
 
-The framework's conventions are used here and are not restated. The material basis $\varepsilon_\mu$ of $\mathbb{B}_{\Phi}$, the real coordinates $x_\mu=(c r'_{t},r_x,r_y,r_z)$ of the material frame and the biquaternionic d'Alembertian $\Box$ are those of *Frame and Metric Conventions* and *Operator and Calculus Conventions*, and every pairing written here is the quaternionic form $\langle\cdot,\cdot\rangle_{\natural}$ of *Norm and Pairing Conventions*. The plain form is a different pairing and is not used. There is one metric, the unit metric $\delta_{\mu\nu}=(1,1,1,1)$ on the four $Q_\mu$; the material interval is that form read on $Q_t=i c r'_t$, $-c^2{r'_{t}}^2+r_x^2+r_y^2+r_z^2$, and its one minus is the square of the $i$. The one symbol this article fixes for itself is the dual material basis $\varepsilon_{\mathrm{du},\lambda}$, fixed by $\langle\varepsilon_{\mathrm{du},\lambda},\varepsilon_\rho\rangle_{\natural}=\delta_{\lambda\rho}$; it carries the trace and the surjectivity of the frame map below.
+The framework's conventions are used here and are not restated. The material basis $\varepsilon_\mu$ of $\mathbb{B}_{\Phi}$, the real coordinates $x_\mu=(r'_{t},r_x,r_y,r_z)$ of the material frame and the biquaternionic d'Alembertian $\Box$ are those of *Frame and Metric Conventions* and *Operator and Calculus Conventions*, and every pairing written here is the quaternionic form $\langle\cdot,\cdot\rangle_{\natural}$ of *Norm and Pairing Conventions*. The plain form is a different pairing and is not used. There is one metric, the unit metric $\delta_{\mu\nu}=(1,1,1,1)$ on the four $Q_\mu$; the material interval is that form read on $Q_t=i r'_t$, $-{r'_{t}}^2+r_x^2+r_y^2+r_z^2$, and its one minus is the square of the $i$. The one symbol this article fixes for itself is the dual material basis $\varepsilon_{\mathrm{du},\lambda}$, fixed by $\langle\varepsilon_{\mathrm{du},\lambda},\varepsilon_\rho\rangle_{\natural}=\delta_{\lambda\rho}$; it carries the trace and the surjectivity of the frame map below.
 
 One derived form is needed repeatedly, and it is recorded once. The framework's imaginary time is $Q_t=ix_0$, so $\partial/\partial R_t=-i\,\partial/\partial x_0$ and the biquaternionic d'Alembertian is the tensorial wave operator,
 
 $$
-\Box = \partial^2/\partial R_t^2 + \Delta = -\frac{1}{c^2}\frac{\partial^2}{\partial {r'_t}^2}+\frac{\partial^2}{\partial r_x^2}+\frac{\partial^2}{\partial r_y^2}+\frac{\partial^2}{\partial r_z^2} .
+\Box = \partial^2/\partial R_t^2 + \Delta = -\frac{\partial^2}{\partial {r'_t}^2}+\frac{\partial^2}{\partial r_x^2}+\frac{\partial^2}{\partial r_y^2}+\frac{\partial^2}{\partial r_z^2} .
 $$
 
-A product $k_\lambda x_\lambda$ below is the invariant contraction $-k_0x_0+k_1r_x+k_2r_y+k_3r_z$, not a sum of like components; its one minus is the square of the $i$ in $Q_t=i c r'_t$.
+A product $k_\lambda x_\lambda$ below is the invariant contraction $-k_0x_0+k_1r_x+k_2r_y+k_3r_z$, not a sum of like components; its one minus is the square of the $i$ in $Q_t=i r'_t$.
 
 ## Linearized Gravity in Standard Form
 
@@ -140,7 +140,7 @@ $$
 h_{\mu\nu} = A_{\mu\nu}\cos(k_\lambda x_\lambda), \qquad -k_0^2+k_1^2+k_2^2+k_3^2 = 0,
 $$
 
-with a constant symmetric amplitude $A_{\mu\nu}$. The harmonic condition and the residual gauge freedom can be used to put it in **transverse-traceless** form, in which $-k_0A_{0\nu}+k_1A_{1\nu}+k_2A_{2\nu}+k_3A_{3\nu} = 0$ and $-A_{00}+A_{11}+A_{22}+A_{33} = 0$. For propagation in the $+z$ direction, $k_\mu = (\omega/c)(1,0,0,1)$ in the coordinates $x_\mu = (c r'_{t}, r_x, r_y, r_z)$, so that the phase is $\omega(r_z/c - r'_t)$, and the two independent amplitudes are the **plus** polarization, $A_{11} = -A_{22} \ne 0$, and the **cross** polarization, $A_{12} = A_{21} \ne 0$, all other components zero. For such a wave $\mathrm{Ric}_{\mu\nu} = 0$, while $\mathrm{Riem}_{\mu\nu\rho\sigma} \ne 0$: the curvature is nonzero even though the Ricci tensor vanishes, which is what distinguishes a gravitational wave from a gauge artifact. The two polarizations are the physical, propagating degrees of freedom of the linear theory.
+with a constant symmetric amplitude $A_{\mu\nu}$. The harmonic condition and the residual gauge freedom can be used to put it in **transverse-traceless** form, in which $-k_0A_{0\nu}+k_1A_{1\nu}+k_2A_{2\nu}+k_3A_{3\nu} = 0$ and $-A_{00}+A_{11}+A_{22}+A_{33} = 0$. For propagation in the $+z$ direction, $k_\mu = (\omega/c)(1,0,0,1)$ in the coordinates $x_\mu = (r'_{t}, r_x, r_y, r_z)$, so that the phase is $\omega(r_z/c - r'_t)$, and the two independent amplitudes are the **plus** polarization, $A_{11} = -A_{22} \ne 0$, and the **cross** polarization, $A_{12} = A_{21} \ne 0$, all other components zero. For such a wave $\mathrm{Ric}_{\mu\nu} = 0$, while $\mathrm{Riem}_{\mu\nu\rho\sigma} \ne 0$: the curvature is nonzero even though the Ricci tensor vanishes, which is what distinguishes a gravitational wave from a gauge artifact. The two polarizations are the physical, propagating degrees of freedom of the linear theory.
 
 This is the theory that the framework's frame route will now be asked to contain.
 
@@ -249,7 +249,7 @@ $$
 \boxed{\;\tilde R_\Psi = h\,e_t\;},
 $$
 
-a real multiple of the identity carrying only the **trace** $h = -h_{00}+h_{11}+h_{22}+h_{33}$, one minus being the square of the $i$ in $Q_t=i c r'_t$. The off-diagonal contributions cancel in pairs by the symmetry of $h$, and the spatial-spatial contributions collapse to $\sum_k h_{kk}$; what survives is the trace and nothing else. The traceless part of $h_{\mu\nu}$ — nine of the ten components, and all of the transverse-traceless content that carries the two gravitational-wave polarizations — maps to zero. The same collapse occurs for the reverse ordering $\sum h_{\mu\nu}\varepsilon_\mu^{\natural}\varepsilon_\nu$. The computation was performed on randomly generated symmetric perturbations, and the result was checked to be the trace $h=-h_{00}+h_{11}+h_{22}+h_{33}$ in each case; the traceless diagonal case was checked separately and maps to zero.
+a real multiple of the identity carrying only the **trace** $h = -h_{00}+h_{11}+h_{22}+h_{33}$, one minus being the square of the $i$ in $Q_t=i r'_t$. The off-diagonal contributions cancel in pairs by the symmetry of $h$, and the spatial-spatial contributions collapse to $\sum_k h_{kk}$; what survives is the trace and nothing else. The traceless part of $h_{\mu\nu}$ — nine of the ten components, and all of the transverse-traceless content that carries the two gravitational-wave polarizations — maps to zero. The same collapse occurs for the reverse ordering $\sum h_{\mu\nu}\varepsilon_\mu^{\natural}\varepsilon_\nu$. The computation was performed on randomly generated symmetric perturbations, and the result was checked to be the trace $h=-h_{00}+h_{11}+h_{22}+h_{33}$ in each case; the traceless diagonal case was checked separately and maps to zero.
 
 This is the precise sense in which the graviton is not a material biquaternion, and the obstacle is sharper than the observation that $h$ is not in $\mathbb{B}_{\Phi}$.
 
@@ -532,7 +532,7 @@ What the algebra supplies is the kinematic fibre of linearized gravity and the f
 | $\varepsilon_{\mathrm{du},\nu}$ | Dual material basis, $\langle\varepsilon_{\mathrm{du},\lambda},\varepsilon_\rho\rangle_{\natural}=\delta_{\lambda\rho}$ |
 | $\varepsilon=(1,-1,-1,-1)$ | The plain weight of the frame, $\mathrm{Sc}(e_\mu e_\nu)=\varepsilon_\mu\delta_{\mu\nu}$; used in *The Fermionic Coupling at First Order* and *The Legacy Pauli Gamma Formulation* |
 | $\langle\tilde{Q}_1,\tilde{Q}_2\rangle_{\natural} = \mathrm{Sc}(\tilde{Q}_1^{\natural}\tilde{Q}_2)$ | General quaternionic bilinear form on $\mathbb{B}_{\Phi}$, the interval |
-| $x_\mu = (c r'_{t},r_x,r_y,r_z)$, $\partial/\partial x_\mu$ | Real coordinates and their derivatives; the framework's imaginary time is $i x_0$ |
+| $x_\mu = (r'_{t},r_x,r_y,r_z)$, $\partial/\partial x_\mu$ | Real coordinates and their derivatives; the framework's imaginary time is $i x_0$ |
 | $\partial/\partial R_t = -i\partial/\partial x_0$ | Relation of the framework's imaginary time derivative to $\partial/\partial x_0$ |
 | $\tilde{\nabla}, \tilde{\nabla}^{\natural}, \Box = \tilde{\nabla}\tilde{\nabla}^{\natural} = \sum_\mu\partial^2/\partial R_\mu^2$ | Biquaternionic gradient, conjugate, d'Alembertian |
 | $g_{\mu\nu}\,\mathrm{d}r_x^\mu\mathrm{d}r_x^\nu = -c^2\mathrm{d}r'_t^2+\mathrm{d}\vec r^2+h_{\mu\nu}\,\mathrm{d}r_x^\mu\mathrm{d}r_x^\nu$ | Linearized metric: the flat interval plus the perturbation $h_{\mu\nu}$ |

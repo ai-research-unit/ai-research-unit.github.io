@@ -38,10 +38,10 @@ The four components are the four coefficients of a biquaternion. The count of si
 
 ## The Equation
 
-$\Box$ is the biquaternion d'Alembertian of the series, one operator in both coordinate frames, and the article uses it without restating it (*Operator and Calculus Conventions*). It is read here in the Lorentz coordinates $x_0=c r'_{t}$ and $r_k$, related to the algebra coordinates by $Q_t=ix_0$ and $Q_k=r_k$. Derived from that relation, its Lorentz form is
+$\Box$ is the biquaternion d'Alembertian of the series, one operator in both coordinate frames, and the article uses it without restating it (*Operator and Calculus Conventions*). It is read here in the Lorentz coordinates $x_0=r'_{t}$ and $r_k$, related to the algebra coordinates by $Q_t=ix_0$ and $Q_k=r_k$. Derived from that relation, its Lorentz form is
 
 $$
-\Box=-\frac{1}{c^2}\frac{\partial^2}{\partial {r'_t}^2}+\Delta ,
+\Box=-\frac{\partial^2}{\partial {r'_t}^2}+\Delta ,
 $$
 
 because the substitution turns $\partial^2/\partial R_t^2$ into $-\partial^2/\partial x_0^2$ and leaves the three spatial derivatives alone. This is the form the rest of the article uses.
@@ -58,10 +58,10 @@ $$
 \tilde\nabla^2=\frac{\partial^2}{\partial R_t^2}-\Delta_Q+2\sum_k\vec e_k\frac{\partial^2}{\partial R_t\,\partial R_k},
 $$
 
-and on the material sector, where $\partial/\partial R_t=-(i/c)\partial/\partial r'_t$, the same operator is
+and on the material sector, where $\partial/\partial R_t=-i\,\partial/\partial r'_t$, the same operator is
 
 $$
-\tilde\nabla^2=\Box-2\Delta-\frac{2i}{c}\sum_k\vec e_k\frac{\partial^2}{\partial r'_t\,\partial q_k}.
+\tilde\nabla^2=\Box-2\Delta-2i\sum_k\vec e_k\frac{\partial^2}{\partial r'_t\,\partial q_k}.
 $$
 
 The mixed term is the whole difference. The three spatial units anticommute in pairs and square to $-e_t$, so the spatial part of the square is scalar. The time unit does not join them: $e_t$ is the identity of the algebra, so it commutes with every spatial unit, and the two orders of $\partial^2/\partial R_t\partial R_k$ add instead of cancelling. The time coefficient of the gradient is the identity, and nothing anticommutes with the identity.

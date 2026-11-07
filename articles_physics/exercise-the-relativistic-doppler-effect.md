@@ -49,10 +49,10 @@ the four-wavevector of light is a **null** element of $\mathbb{B}_{\Phi}$, i.e. 
 **Solution (b).** Fix the plane-wave convention $\propto \exp(iΞ)$ with
 $$
 Ξ = \mathrm{Sc}\!\left(\tilde P_{\Phi}\tilde{R}_\Phi^{\natural}\right)
-= \left(\frac{i\omega}{c}\right)(i c r'_{t}) + \vec k\cdot(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)
+= \left(\frac{i\omega}{c}\right)(i r'_{t}) + \vec k\cdot(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)
 = \vec k\cdot(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z) - \omega r'_t ,
 \qquad
-\tilde R_\Phi = i c r'_{t}\,e_t + (r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z) .
+\tilde R_\Phi = i r'_{t}\,e_t + (r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z) .
 $$
 Let $\tilde U$ be any unit-norm biquaternion and let $\tilde P_{\Phi,2} = \tilde U\tilde P_{\Phi}\tilde U^{*}$, $\tilde{R}_{\Phi,2} = \tilde U\tilde R_\Phi\tilde U^{*}$. Then
 $$
@@ -340,7 +340,7 @@ and find the angle that maximises it. (For $\beta = 0.99$ and $\Theta = 0.1$ rad
 | $\mathrm{Sc}$ | Scalar projection of a biquaternion |
 | $\langle\tilde{Q}\rangle_{\natural} = \tilde{Q}\tilde{Q}^{\natural}$ | Biquaternion norm |
 | $c$, $c_0$ | Speed of light in the medium, and in vacuum |
-| $\tilde R_\Phi = i c r'_t\,e_t + r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z$ | Four-position |
+| $\tilde R_\Phi = i r'_t\,e_t + r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z$ | Four-position |
 | $\tilde P_{\Phi} =\frac{m\,c\,(i\omega/c\,e_t + \vec k)}{k_m}$ | Four-wavevector, $\langle\tilde P_{\Phi}\rangle_{\natural} = 0$ for light |
 | $\tilde{V}_{\Phi} = \gamma_b(ic\,e_t + \vec v_b)$ | Observer four-velocity, $\langle\tilde{V}_{\Phi}\rangle_{\natural} = -c^2$ |
 | $\tilde U_{\Psi,\mathrm b} = \cosh\frac{\theta_{\mathrm{rpd}}}{2} + i\sinh\frac{\theta_{\mathrm{rpd}}}{2}\vec u$ | Boost biquaternion (Hermitian, unit norm) |

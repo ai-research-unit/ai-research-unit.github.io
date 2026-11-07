@@ -12,10 +12,10 @@ $$
 \boxed{\;\langle\tilde{Q}\rangle_{\natural} = \tilde{Q}\tilde{Q}^{\natural} = Q_t^2 + Q_x^2 + Q_y^2 + Q_z^2 = 0\;},
 $$
 
-and its nonzero elements are exactly the **zero divisors** of the algebra, the elements whose matrix image $\mathsf{M}_2(\tilde{Q})$ has rank one. The cone is written $\mathcal N$; the letter $\mathcal C$ is kept for the celestial sphere of the next section, which is its projectivisation and not the cone itself. On the material sector $\mathbb{B}_{\Phi}$, with $\tilde R_\Phi = i c r'_t\,e_t + r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z$, the norm is the interval,
+and its nonzero elements are exactly the **zero divisors** of the algebra, the elements whose matrix image $\mathsf{M}_2(\tilde{Q})$ has rank one. The cone is written $\mathcal N$; the letter $\mathcal C$ is kept for the celestial sphere of the next section, which is its projectivisation and not the cone itself. On the material sector $\mathbb{B}_{\Phi}$, with $\tilde R_\Phi = i r'_t\,e_t + r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z$, the norm is the interval,
 
 $$
-\langle\tilde R_\Phi\rangle_{\natural} = -c^2{r'_{t}}^2 + |r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z|^2,
+\langle\tilde R_\Phi\rangle_{\natural} = -{r'_{t}}^2 + |r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z|^2,
 $$
 
 so the null cone of the algebra restricts to the **light cone** of the material sector, and its nonzero elements are the lightlike four-vectors. The cone is a real three-dimensional cone in the four real dimensions of the sector; it has a single point at the origin and is otherwise regular, and its nonzero elements are the lightlike directions of the material geometry.
@@ -96,7 +96,7 @@ The null cone of the biquaternion norm is the zero-divisor cone, and on the mate
 | Symbol | Meaning |
 |---|---|
 | $\langle\tilde{Q}\rangle_{\natural} = \tilde{Q}\tilde{Q}^{\natural}$ | the biquaternion norm; $\langle\tilde{Q}\rangle_{\natural}=0$ is the null cone |
-| $\mathbb{B}_{\Phi}$ | the material sector, $\tilde R_\Phi = i c r'_t\,e_t + r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z$ |
+| $\mathbb{B}_{\Phi}$ | the material sector, $\tilde R_\Phi = i r'_t\,e_t + r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z$ |
 | $\mathcal{C} \cong S^2$ | the celestial sphere, the null directions up to scale |
 | $\mathbb{P}^1\times\mathbb{P}^1$ | the Segre quadric, the projective complex null cone, the two chiral spheres |
 | $\zeta \in \mathbb{C}^2$ | the spinor; the direction is its ray, $\zeta\mapsto \exp(i\alpha)\zeta$ |

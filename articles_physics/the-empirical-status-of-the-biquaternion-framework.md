@@ -40,8 +40,8 @@ The following table collects the quantitative results the series has obtained an
 
 | Domain | Framework result | Standard result reproduced |
 |---|---|---|
-| Single qubit | Bloch sphere and Bloch ball; $\operatorname{Tr}(\tilde{Ϛ}_{\Psi}\tilde R_\Psi^{*})=\operatorname{Tr}(\tilde{Ϛ}_{\Psi}\tilde R_\Psi)=c r_t+\vec r\cdot\vec r_\Psi$; sandwich update | States, observables, Born rule, projective measurement |
-| Relativistic point mechanics | $\langle d\tilde R_\Phi\rangle_{\natural}=-c^2d{r'_{t}}^2+dr_x^2+dr_y^2+dr_z^2$; four-momentum $\tilde{P}_{\Phi}$ with $\tilde{P}_{\Phi}\tilde{P}_{\Phi}^{\natural}= -m^{2}\,c^{2}$; four-force $\tilde{\mathcal F}_{\Phi,\mathrm{frc}}$ orthogonal to it, $\tilde{\mathcal F}_{\Phi,\mathrm{frc}}\tilde{P}_{\Phi}^{\natural}+\tilde{P}_{\Phi}\tilde{\mathcal F}_{\Phi,\mathrm{frc}}^{\natural}=0$ | Interval, mass shell, four-force orthogonality |
+| Single qubit | Bloch sphere and Bloch ball; $\operatorname{Tr}(\tilde{Ϛ}_{\Psi}\tilde R_\Psi^{*})=\operatorname{Tr}(\tilde{Ϛ}_{\Psi}\tilde R_\Psi)=r_t+\vec r\cdot\vec r_\Psi$; sandwich update | States, observables, Born rule, projective measurement |
+| Relativistic point mechanics | $\langle d\tilde R_\Phi\rangle_{\natural}=-d{r'_{t}}^2+dr_x^2+dr_y^2+dr_z^2$; four-momentum $\tilde{P}_{\Phi}$ with $\tilde{P}_{\Phi}\tilde{P}_{\Phi}^{\natural}= -m^{2}\,c^{2}$; four-force $\tilde{\mathcal F}_{\Phi,\mathrm{frc}}$ orthogonal to it, $\tilde{\mathcal F}_{\Phi,\mathrm{frc}}\tilde{P}_{\Phi}^{\natural}+\tilde{P}_{\Phi}\tilde{\mathcal F}_{\Phi,\mathrm{frc}}^{\natural}=0$ | Interval, mass shell, four-force orthogonality |
 | Maxwell field | $\Box=\tilde{\nabla}\tilde{\nabla}^{\natural}=\partial^2/\partial R_t^2+\Delta$; Riemann–Silberstein field; invariants | Maxwell's equations in a medium |
 | Dirac field | $\tilde{\nabla}\tilde{Ξ}_{\mathrm{sp},R}=k_m\tilde{Ξ}_{\mathrm{sp},L}$, $\tilde{\nabla}^{\natural}\tilde{Ξ}_{\mathrm{sp},L}=k_m\tilde{Ξ}_{\mathrm{sp},R}$; massless case $\tilde{\nabla}\tilde{Ξ}_{\mathrm{sp}}=0$ | Dirac equation, mass term |
 | Electron gyromagnetic ratio | $g=2$ at tree level; anomaly **absent** | Dirac's tree-level value; the anomaly is outside the framework |
@@ -97,9 +97,9 @@ Each candidate below is examined under the three questions of the Introduction a
 
 **The candidate.** The framework's most distinctive physical claim after the two-sector interpretation is that the complex structure of $\mathbb{B}$ is **local**, its scale set by the local speed of light $c=1/\sqrt{\epsilon\mu}$. One might hope that an observable depends on the complex structure as such, and not merely on the standard electromagnetic properties of the medium.
 
-**The framework-specific quantity.** The local speed $c(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)=1/\sqrt{\epsilon(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)\mu(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)}$, which fixes the embedding of physical time in the imaginary scalar direction, $\partial/\partial R_t=-(i/c)\,\partial/\partial r'_t$.
+**The framework-specific quantity.** The local speed $c(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)=1/\sqrt{\epsilon(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)\mu(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)}$, which fixes the conversion of the local clock into the temporal length, $r'_t=c\,t'$, and hence the embedding of physical time in the imaginary scalar direction, $i r'_t=i\,c\,t'$; the derivative with respect to the coordinate itself, $\partial/\partial R_t=-i\,\partial/\partial r'_t$, carries no medium factor.
 
-**Derived or posited.** The relation $c=1/\sqrt{\epsilon\mu}$ is **standard**, a consequence of the constitutive relations $\vec D=\epsilon\vec E$ and $\vec B=\mu\vec H$; the framework does not derive it. What is posited is the *identification* of this standard speed with the scale of the complex structure. Crucially, the framework adds no equation for $\epsilon$ or $\mu$: in every calculation of the series they are the standard medium parameters, supplied from outside.
+**Derived or posited.** The relation $c=1/\sqrt{\epsilon\mu}$ is **standard**, a consequence of the constitutive relations $\vec D=\epsilon\vec E$ and $\vec B=\mu\vec H$; the framework does not derive it. What is posited is the *identification* of this standard speed with the conversion of the temporal coordinate. Crucially, the framework adds no equation for $\epsilon$ or $\mu$: in every calculation of the series they are the standard medium parameters, supplied from outside.
 
 **The existing bound.** None specific to the framework. Bounds on $\epsilon(\omega)$ and $\mu(\omega)$ are bounds on the standard medium response, which the framework takes as input; they do not test the complex-structure interpretation, because that interpretation makes no claim about their values.
 
@@ -271,7 +271,7 @@ The main result is therefore negative, and meant to be: the framework currently 
 | $c_0=1/\sqrt{\epsilon_0\mu_0}$ | Vacuum speed of light |
 | $\tilde{\nabla}$, $\Box=\tilde{\nabla}\tilde{\nabla}^{\natural}$ | Biquaternionic gradient, d'Alembertian |
 | $\tilde\Pi_{1,2}=\tfrac12(e_t\pm i\vec{u})$ | Idempotent (pure state) |
-| $\tilde R_\Psi=c r_t\,e_t+i\vec r_\Psi$ | Hermitian element (observable) |
+| $\tilde R_\Psi=r_t\,e_t+i\vec r_\Psi$ | Hermitian element (observable) |
 | $\mathrm{Tr}(\tilde Q_1\tilde Q_2^{*})=2\,\mathrm{Sc}(\tilde Q_1\tilde Q_2^{*})$ | Trace reading of the Hermitian form (on which the Born rule is written) |
 | $\mathbb{B}\cong M_2(\mathbb{C})$ | The algebra is the standard complex $2\times2$ algebra |
 | $SL(2,\mathbb{C})$ | Unit-norm biquaternions (Lorentz double cover) |

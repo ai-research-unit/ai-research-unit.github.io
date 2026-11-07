@@ -150,7 +150,7 @@ $$
 \langle\tilde{Q}_1,\tilde{Q}_2\rangle = \mathrm{Sc}(\tilde{Q}_1\tilde{Q}_2) = Q_{1t}Q_{2t} - Q_{1x}Q_{2x} - Q_{1y}Q_{2y} - Q_{1z}Q_{2z},
 $$
 
-$\mathbb{C}$-**bilinear** in both arguments; on $\mathbb{B}_{\Phi}$ it is $-c^2{r'_{t}}^2-x^2-y^2-z^2$, signature $(0,4)$.
+$\mathbb{C}$-**bilinear** in both arguments; on $\mathbb{B}_{\Phi}$ it is $-{r'_{t}}^2-x^2-y^2-z^2$, signature $(0,4)$.
 
 The **quaternionic form** applies the quaternion conjugation to the first argument and the identity to the second:
 
@@ -158,7 +158,7 @@ $$
 \langle\tilde{Q}_1,\tilde{Q}_2\rangle_{\natural} = \mathrm{Sc}(\tilde{Q}_1^{\natural}\tilde{Q}_2) = Q_{1t}Q_{2t} + Q_{1x}Q_{2x} + Q_{1y}Q_{2y} + Q_{1z}Q_{2z},
 $$
 
-$\mathbb{C}$-**bilinear** in both arguments; on $\mathbb{B}_{\Phi}$ it is $-c^2{r'_{t}}^2+r_x^2+r_y^2+r_z^2$, signature $(3,1)$.
+$\mathbb{C}$-**bilinear** in both arguments; on $\mathbb{B}_{\Phi}$ it is $-{r'_{t}}^2+r_x^2+r_y^2+r_z^2$, signature $(3,1)$.
 
 The **Hermitian form** applies the identity to the first argument and the Hermitian conjugation to the second:
 
@@ -166,7 +166,7 @@ $$
 \langle\tilde{Q}_1,\tilde{Q}_2\rangle_{*} = \mathrm{Sc}(\tilde{Q}_1\tilde{Q}_2^{*}) = Q_{1t}\bar{Q}_{2t} + Q_{1x}\bar{Q}_{2x} + Q_{1y}\bar{Q}_{2y} + Q_{1z}\bar{Q}_{2z},
 $$
 
-$\mathbb{C}$-**sesquilinear**, linear in the first argument and antilinear in the second; on $\mathbb{B}_{\Phi}$ it is $c^2{r'_{t}}^2+r_x^2+r_y^2+r_z^2$, signature $(4,0)$.
+$\mathbb{C}$-**sesquilinear**, linear in the first argument and antilinear in the second; on $\mathbb{B}_{\Phi}$ it is ${r'_{t}}^2+r_x^2+r_y^2+r_z^2$, signature $(4,0)$.
 
 The **Krein form** applies the quaternion conjugation to the first argument and the Hermitian conjugation to the second:
 
@@ -174,7 +174,7 @@ $$
 \langle\tilde{Q}_1,\tilde{Q}_2\rangle_{\natural*} = \mathrm{Sc}(\tilde{Q}_1^{\natural}\tilde{Q}_2^{*}) = Q_{1t}\bar{Q}_{2t} - Q_{1x}\bar{Q}_{2x} - Q_{1y}\bar{Q}_{2y} - Q_{1z}\bar{Q}_{2z},
 $$
 
-$\mathbb{C}$-**sesquilinear**, linear in the first argument and antilinear in the second; on $\mathbb{B}_{\Phi}$ it is $c^2{r'_{t}}^2-x^2-y^2-z^2$, signature $(1,3)$.
+$\mathbb{C}$-**sesquilinear**, linear in the first argument and antilinear in the second; on $\mathbb{B}_{\Phi}$ it is ${r'_{t}}^2-x^2-y^2-z^2$, signature $(1,3)$.
 
 Each form is the scalar part of its own product. The Hermitian form is the pairing that carries probability; the plain form is its restriction to $\mathbb{B}_{\Psi}$ and the primary computational form on the sector; the other two are read by choosing the conjugation of a slot, and the trace is a reading of the Hermitian form in the $2\times2$ image.
 
@@ -259,7 +259,7 @@ and the Born weight of an observable is the normalised Hermitian form,
 $$
 p=\frac{\langle\tilde{Ϛ}_{\Psi},\tilde R_\Psi\rangle_{*}}{\langle\tilde{Ϛ}_{\Psi},e_t\rangle_{*}}
  =\frac{\mathrm{Sc}(\tilde{Ϛ}_{\Psi}\tilde R_\Psi^{*})}{\mathrm{Sc}(\tilde{Ϛ}_{\Psi})}
- =c r_t+\vec r\cdot\vec r_\Psi .
+ =r_t+\vec r\cdot\vec r_\Psi .
 $$
 
 The star is the Hermitian conjugation, and it is what makes the pairing positive definite on the whole algebra. On $\mathbb{B}_{\Psi}$ it is inert, since both arguments are Hermitian, and the weight is positive there by the sector's own definiteness. The weight is written with the star on $\mathbb{B}_{\Psi}$ and on $\mathbb{B}$ alike. On $\mathbb{B}_{\Psi}$ both arguments are Hermitian, so $\tilde R_\Psi^{*}=\tilde R_\Psi$ and the star acts as the identity on them, but it is not omitted: it names the form that is positive definite everywhere. The same weight is therefore also $\mathrm{Sc}(\tilde{Ϛ}_{\Psi}\tilde R_\Psi)/\mathrm{Sc}(\tilde{Ϛ}_{\Psi})$, the plain scalar. The plain form is the restriction of the Hermitian form to the sector, not a second definition of the weight. The Hermitian norm is the only one of the four that is positive definite on the whole algebra; the plain form is definite only on a sector, with opposite signs on the two. For a state $\tilde{Ϛ}_{\Psi}\ge0$ and an effect $0\le\tilde R_\Psi\le e_t$ the weight lies in $[0,1]$, manifestly non-negative because the form is positive definite on the whole algebra. The trace is the final reading, at normalisation: the unstarred trace is real, because $(AB)^{\dagger}=BA$ for Hermitian $A,B$ gives $\overline{\mathrm{tr}(AB)}=\mathrm{tr}(AB)$; it is non-negative here because $\mathrm{tr}(AB)=\mathrm{tr}(A^{1/2}BA^{1/2})\ge0$ for the positive state and effect. The weight is therefore also $p=\operatorname{Tr}(\tilde{Ϛ}_{\Psi}\tilde R_\Psi)/\operatorname{Tr}(\tilde{Ϛ}_{\Psi})\in[0,1]$.

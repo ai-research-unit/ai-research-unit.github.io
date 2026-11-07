@@ -77,13 +77,13 @@ The state is pure, $\tilde{Ϛ}_{\Psi}^2 = \tilde{Ϛ}_{\Psi}$, exactly when $|\ve
 
 ### The biquaternion norm on $\mathbb{B}_{\Psi}$
 
-The biquaternion norm of the algebra is $\langle\tilde{Q}\rangle_{\natural} = \langle\tilde{Q},\tilde{Q}\rangle_{\natural} = \tilde{Q}\tilde{Q}^{\natural} = \sum_\mu Q_\mu^2$. On a Hermitian element $\tilde R_\Psi = c r_t\,e_t + i\vec r_\Psi$ with real coefficients it is the real scalar
+The biquaternion norm of the algebra is $\langle\tilde{Q}\rangle_{\natural} = \langle\tilde{Q},\tilde{Q}\rangle_{\natural} = \tilde{Q}\tilde{Q}^{\natural} = \sum_\mu Q_\mu^2$. On a Hermitian element $\tilde R_\Psi = r_t\,e_t + i\vec r_\Psi$ with real coefficients it is the real scalar
 
 $$
-\langle\tilde R_\Psi\rangle_{\natural} = c^2 r_t^2 - |\vec r_\Psi|^2 ,
+\langle\tilde R_\Psi\rangle_{\natural} = r_t^2 - |\vec r_\Psi|^2 ,
 $$
 
-so it has signature $(1,3)$; the cone $\langle\tilde R_\Psi\rangle_{\natural}\geq0$ with $c r_t\geq0$ is the positive cone of the Hermitian subspace, and positivity of the operator is exactly $\langle\tilde R_\Psi\rangle_{\natural}\geq0$ together with $c r_t\geq0$. Equivalently, the biquaternion norm is the determinant of the matrix image,
+so it has signature $(1,3)$; the cone $\langle\tilde R_\Psi\rangle_{\natural}\geq0$ with $r_t\geq0$ is the positive cone of the Hermitian subspace, and positivity of the operator is exactly $\langle\tilde R_\Psi\rangle_{\natural}\geq0$ together with $r_t\geq0$. Equivalently, the biquaternion norm is the determinant of the matrix image,
 
 $$
 \langle\tilde R_\Psi\rangle_{\natural} = \langle\tilde R_\Psi,\tilde R_\Psi\rangle_{\natural} = \det M(\tilde R_\Psi) ,
@@ -258,7 +258,7 @@ None of this is available in the same form for a general $d$-level system, where
 The state space of the qubit is the normalised hyperplane of the positive cone of the Hermitian subspace $\mathbb{B}_{\Psi}$, and the cone is defined by the algebra's biquaternion norm
 
 $$
-\langle\tilde R_\Psi\rangle_{\natural} = \langle\tilde R_\Psi,\tilde R_\Psi\rangle_{\natural} = c^2 r_t^2 - |\vec r_\Psi|^2 = \det M(\tilde R_\Psi), \qquad
+\langle\tilde R_\Psi\rangle_{\natural} = \langle\tilde R_\Psi,\tilde R_\Psi\rangle_{\natural} = r_t^2 - |\vec r_\Psi|^2 = \det M(\tilde R_\Psi), \qquad
 \langle\tilde{Ϛ}_{\Psi}\rangle_{\natural} = \tfrac{1}{4}\bigl(1-|\vec r|^2\bigr)e_t .
 $$
 
@@ -287,7 +287,7 @@ The description is the standard qubit entropy, and it predicts nothing new. What
 | $\lambda_\pm = \tfrac12(1\pm|\vec r|)$ | Eigenvalues |
 | $\mathrm{Tr}(\tilde{Q}) = 2\,\mathrm{Sc}(\tilde{Q})$ | Trace, the $2\times2$ reading |
 | $\langle\tilde{Q}\rangle_{\natural} = \langle\tilde{Q},\tilde{Q}\rangle_{\natural} = \tilde{Q}\tilde{Q}^{\natural} = \sum_\mu Q_\mu^2$ | Biquaternion norm |
-| $\langle\tilde R_\Psi\rangle_{\natural} = \langle\tilde R_\Psi,\tilde R_\Psi\rangle_{\natural} = c^2 r_t^2 - |\vec r_\Psi|^2 = \det M(\tilde R_\Psi)$ | Biquaternion norm of a Hermitian element |
+| $\langle\tilde R_\Psi\rangle_{\natural} = \langle\tilde R_\Psi,\tilde R_\Psi\rangle_{\natural} = r_t^2 - |\vec r_\Psi|^2 = \det M(\tilde R_\Psi)$ | Biquaternion norm of a Hermitian element |
 | $\langle\tilde{Ϛ}_{\Psi}\rangle_{\natural} = \tfrac14(1-|\vec r|^2)e_t$ | Biquaternion norm of a state |
 | $\tilde{Ϛ}_{\Psi}^2 - \tilde{Ϛ}_{\Psi} = -\langle\tilde{Ϛ}_{\Psi}\rangle_{\natural}e_t$ | Deviation from idempotency |
 | $P(\tilde{Ϛ}_{\Psi}) = 2\langle\tilde{Ϛ}_{\Psi},\tilde{Ϛ}_{\Psi}\rangle_{*} = 1-2\langle\tilde{Ϛ}_{\Psi}\rangle_{\natural}$ | Purity; $2\times2$ reading $\mathrm{Tr}(\tilde{Ϛ}_{\Psi}^2)$ |

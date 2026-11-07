@@ -6,10 +6,10 @@ The relativistic particle is the simplest physical object the biquaternion frame
 
 Two facts from the algebra organize the whole account, and they are worth stating at the outset.
 
-**The interval is the biquaternion norm.** The material coordinate is the anti-Hermitian biquaternion $\tilde R_\Phi = i c r'_t\,e_t + r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z \in \mathbb{B}_{\Phi}$, and the Minkowski interval of a displacement is the biquaternion norm
+**The interval is the biquaternion norm.** The material coordinate is the anti-Hermitian biquaternion $\tilde R_\Phi = i r'_t\,e_t + r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z \in \mathbb{B}_{\Phi}$, and the Minkowski interval of a displacement is the biquaternion norm
 
 $$
-\langle d\tilde R_\Phi\rangle_{\natural} = d\tilde R_\Phi\,d\tilde{R}_\Phi^{\natural} = (ic\,dr'_t)^2 +dr_x^2+dr_y^2+dr_z^2 = -c^2d{r'_{t}}^2 +dr_x^2+dr_y^2+dr_z^2 .
+\langle d\tilde R_\Phi\rangle_{\natural} = d\tilde R_\Phi\,d\tilde{R}_\Phi^{\natural} = (i\,dr'_t)^2 +dr_x^2+dr_y^2+dr_z^2 = -d{r'_{t}}^2 +dr_x^2+dr_y^2+dr_z^2 .
 $$
 
 The algebra therefore does not carry a metric that has to be attached to spacetime from outside; its own biquaternion norm, restricted to the real four-dimensional subspace $\mathbb{B}_{\Phi}$, *is* the Minkowski form. This is the level-1 identity form $\mathrm{diag}(+1,+1,+1,+1)$ on $\mathbb{B}$, whose restriction to the real material slice is the level-2 Minkowski interval, tuple $(-1,+1,+1,+1)$; both levels are fixed by the companion article *Algebra and Element Conventions*, and no metric is introduced here beyond them.
@@ -23,7 +23,7 @@ The article is organized as follows. The next section fixes the worldline and th
 A relativistic particle is described by a curve in the material sector,
 
 $$
-\tilde R_\Phi(\lambda) : \lambda \longmapsto \tilde R_\Phi(\lambda) = i c r'_{t}(\lambda)\,e_t + (r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)(\lambda) \in \mathbb{B}_{\Phi} ,
+\tilde R_\Phi(\lambda) : \lambda \longmapsto \tilde R_\Phi(\lambda) = i r'_{t}(\lambda)\,e_t + (r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)(\lambda) \in \mathbb{B}_{\Phi} ,
 $$
 
 with $\lambda$ an arbitrary parameter. The physical content of the curve is not the arbitrary parametrization but the displacement one-form
@@ -35,7 +35,7 @@ $$
 whose biquaternion norm is
 
 $$
-\langle d\tilde R_\Phi\rangle_{\natural} = d\tilde R_\Phi\,d\tilde{R}_\Phi^{\natural} = -c^2d{r'_{t}}^2 +dr_x^2+dr_y^2+dr_z^2 .
+\langle d\tilde R_\Phi\rangle_{\natural} = d\tilde R_\Phi\,d\tilde{R}_\Phi^{\natural} = -d{r'_{t}}^2 +dr_x^2+dr_y^2+dr_z^2 .
 $$
 
 Off the null set, $\langle d\tilde R_\Phi\rangle_{\natural}$ has the sign of $-d\tau^2$ for a real number $d\tau$, and the **proper time** is defined by
@@ -147,7 +147,7 @@ $$
 \qquad (m > 0),
 $$
 
-and the invariant $\langle\tilde{P}_{\Phi}\rangle_{\natural}$ is what the Lorentz group preserves, so the classification of a particle as massive is frame-independent. The relation between the two energy equations is worth recording: in the rest frame $\vec p = 0$ and $E = mc^2$, so the imaginary scalar part of the four-momentum at rest is $i mc$, which is the rest energy in the $i c r'_t$ convention.
+and the invariant $\langle\tilde{P}_{\Phi}\rangle_{\natural}$ is what the Lorentz group preserves, so the classification of a particle as massive is frame-independent. The relation between the two energy equations is worth recording: in the rest frame $\vec p = 0$ and $E = mc^2$, so the imaginary scalar part of the four-momentum at rest is $i mc$, which is the rest energy in the $i r'_t$ convention.
 
 Two limits fix the picture. As $m\to 0$ with $\vec p$ held fixed the mass shell collapses onto the null cone $\langle\tilde{P}_{\Phi}\rangle_{\natural} = 0$, and the particle becomes the zero divisor of the companion article *The Light Cone as the Biquaternion Zero-Divisor Cone*. As $v\ll c$ the energy separates into the rest energy and the kinetic term,
 
@@ -314,7 +314,7 @@ The conventions of the construction are those of the following companion article
 The relativistic particle is a timelike worldline in the material sector $\mathbb{B}_{\Phi}$,
 
 $$
-\tilde R_\Phi(\tau) = i c r'_{t}\,e_t + r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z,
+\tilde R_\Phi(\tau) = i r'_{t}\,e_t + r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z,
 \qquad
 d\tau^2 = -\frac{1}{c^2}\langle d\tilde R_\Phi\rangle_{\natural} = d{r'_{t}}^2 - \frac{dr_x^2+dr_y^2+dr_z^2}{c^2},
 $$
@@ -360,7 +360,7 @@ The interval is the biquaternion norm, the mass shell is its level set, the caus
 | $\mathbb{B}_{H}, \mathbb{B}_{C}$ | Real-quaternion subspace; complex scalar line (centre) |
 | ${}^{\natural},\ \bar{\cdot},\ {}^{*}=({}^{\natural})^{\,*},\ {}^\flat=-{}^{*}$ | Quaternion, complex, Hermitian, anti-Hermitian conjugations |
 | $\langle\tilde{Q}\rangle_{\natural} = \tilde{Q}\tilde{Q}^{\natural} = \sum_\mu Q_\mu^2$ | Biquaternion norm (level 1: identity on $\mathbb{C}$) |
-| $\tilde R_\Phi = i c r'_t\,e_t + r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z$ | Four-position, in $\mathbb{B}_{\Phi}$ |
+| $\tilde R_\Phi = i r'_t\,e_t + r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z$ | Four-position, in $\mathbb{B}_{\Phi}$ |
 | $d\tau^2 = -\langle d\tilde R_\Phi\rangle_{\natural}/c^2$ | Proper time |
 | $\tilde{V}_{\Phi} = \gamma(ic\,e_t + \vec v)$, $\langle\tilde{V}_{\Phi}\rangle_{\natural} = -c^2$ | Four-velocity, unit timelike |
 | $\gamma = 1/\sqrt{1-\vec v^2/c^2}$ | Lorentz factor |

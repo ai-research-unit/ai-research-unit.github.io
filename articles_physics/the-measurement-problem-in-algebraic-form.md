@@ -37,7 +37,7 @@ $$
 that a general observable is a Hermitian element
 
 $$
-\tilde R_\Psi = c r_t\, e_t + i\,\vec r_\Psi, \qquad \vec r_\Psi \in \mathbb{R}^3,
+\tilde R_\Psi = r_t\, e_t + i\,\vec r_\Psi, \qquad \vec r_\Psi \in \mathbb{R}^3,
 $$
 
 and that a pure state is an idempotent
@@ -110,7 +110,7 @@ The two classes are therefore not an exhaustive partition of the acting elements
 
 ## The Problem in Algebraic Form
 
-Fix a state $\tilde{Ϛ}_{\Psi} \in \mathbb{B}_{\Psi}$ and an observable $\tilde R_\Psi = c r_t e_t + i\vec r_\Psi$ with spectral idempotents $\tilde\Pi_{1,2} = \tfrac{1}{2}(e_t \pm i\vec u_\Psi)$ and Born probabilities $p_\pm = \langle\tilde\Pi_{1,2},\tilde{Ϛ}_{\Psi}\rangle_{*}/\langle\tilde{Ϛ}_{\Psi},e_t\rangle_{*}$. The framework places three algebraic objects at our disposal:
+Fix a state $\tilde{Ϛ}_{\Psi} \in \mathbb{B}_{\Psi}$ and an observable $\tilde R_\Psi = r_t e_t + i\vec r_\Psi$ with spectral idempotents $\tilde\Pi_{1,2} = \tfrac{1}{2}(e_t \pm i\vec u_\Psi)$ and Born probabilities $p_\pm = \langle\tilde\Pi_{1,2},\tilde{Ϛ}_{\Psi}\rangle_{*}/\langle\tilde{Ϛ}_{\Psi},e_t\rangle_{*}$. The framework places three algebraic objects at our disposal:
 
 1. **The reversible evolution** $\Gamma_{\tilde Q_3}(\tilde{Ϛ}_{\Psi}) = \tilde Q_3\tilde{Ϛ}_{\Psi}\tilde Q_3^{*}$, with $\tilde Q_3\tilde Q_3^{*} = e_t$.
 2. **The two conditional outcomes** $\Gamma_{\tilde\Pi_{1,2}}(\tilde{Ϛ}_{\Psi}) = p_\pm \tilde\Pi_{1,2}$; normalized, the post-measurement state is $\tilde\Pi_{1,2}$ itself, produced on the branch labelled $\pm$.
@@ -250,7 +250,7 @@ What the reformulation changes is the form of the statement: two dynamics become
 | $e_t = 1, \vec e_x, \vec e_y, \vec e_z$ | Quaternion basis, $\vec e_k^2 = -e_t$ |
 | $i$ | Scalar imaginary, $i^2 = -1$ |
 | $\tilde{Ϛ}_{\Psi} = \tfrac{1}{2}(e_t + i\vec r)$ | State, $\|\vec r\| \leq 1$ (Bloch ball) |
-| $\tilde R_\Psi = c r_t\,e_t + i\vec r_\Psi$ | Hermitian observable |
+| $\tilde R_\Psi = r_t\,e_t + i\vec r_\Psi$ | Hermitian observable |
 | $\tilde\Pi_{1,2}(\vec u) = \tfrac{1}{2}(e_t \pm i\vec u)$ | Idempotent (pure state, projective outcome) |
 | $\operatorname{Tr}(\tilde\Pi\tilde R_\Psi^{*})=\operatorname{Tr}(\tilde\Pi\tilde R_\Psi)=2\,\mathrm{Sc}(\tilde\Pi\tilde R_\Psi^{*}) = 2\langle\tilde\Pi,\tilde R_\Psi\rangle_{*}$ | Trace reading at normalisation (Born rule) |
 | $p_\pm = \langle\tilde\Pi_{1,2}(\vec u_\Psi),\tilde{Ϛ}_{\Psi}\rangle_{*}/\langle\tilde{Ϛ}_{\Psi},e_t\rangle_{*} = \operatorname{Tr}(\tilde\Pi_{1,2}(\vec u_\Psi)\tilde{Ϛ}_{\Psi}^{*})=\operatorname{Tr}(\tilde\Pi_{1,2}(\vec u_\Psi)\tilde{Ϛ}_{\Psi})$ | Outcome probabilities (trace at normalisation) |

@@ -133,7 +133,7 @@ Two comments fix the interpretation. First, the tower is infinite because the sp
 
 ### The Potential and the Field
 
-In the $i c r'_t$ convention the four-potential is an element of the material sector,
+In the $i r'_t$ convention the four-potential is an element of the material sector,
 
 $$
 \tilde{A}_{\Phi} = i\,a'_t\,e_t + \vec A \in \mathbb{B}_{\Phi} ,

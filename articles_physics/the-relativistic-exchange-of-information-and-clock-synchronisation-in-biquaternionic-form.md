@@ -22,7 +22,7 @@ The exchange discussed here is the classical exchange of signals. It is not the 
 
 ### The Null Condition Between Two Events
 
-Let an emitter be at the event $A$ with coordinate $\tilde{Q}_A = i c r'_{t}_A\,e_t + x_A\,\vec e_x+y_A\,\vec e_y+z_A\,\vec e_z$, and a receiver at the event $B$ with $\tilde{Q}_B = i c r'_{t}_B\,e_t + x_B\,\vec e_x+y_B\,\vec e_y+z_B\,\vec e_z$. The displacement is
+Let an emitter be at the event $A$ with coordinate $\tilde{Q}_A = i r'_{t}_A\,e_t + x_A\,\vec e_x+y_A\,\vec e_y+z_A\,\vec e_z$, and a receiver at the event $B$ with $\tilde{Q}_B = i r'_{t}_B\,e_t + x_B\,\vec e_x+y_B\,\vec e_y+z_B\,\vec e_z$. The displacement is
 
 $$
 \tilde{Q}_{BA} = \tilde{Q}_B - \tilde{Q}_A = ic\,\Delta r'_t\,e_t + \Delta(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z),
@@ -144,7 +144,7 @@ $$
 \langle\tilde Q_{A,2} - \tilde{Q}_B\rangle_{\natural} = 0,
 $$
 
-with $\tilde Q_{A,2} = i c r'_{t}_3\,e_t+x_A\,\vec e_x+y_A\,\vec e_y+z_A\,\vec e_z$ the reception event at the mirror's home position. Since $x_{A,2}\,\vec e_x+y_{A,2}\,\vec e_y+z_{A,2}\,\vec e_z = x_A\,\vec e_x+y_A\,\vec e_y+z_A\,\vec e_z$, the spatial separation is the same on both legs, $|x_B\,\vec e_x+y_B\,\vec e_y+z_B\,\vec e_z-(x_A\,\vec e_x+y_A\,\vec e_y+z_A\,\vec e_z)| = L$, and the null conditions read
+with $\tilde Q_{A,2} = i r'_{t}_3\,e_t+x_A\,\vec e_x+y_A\,\vec e_y+z_A\,\vec e_z$ the reception event at the mirror's home position. Since $x_{A,2}\,\vec e_x+y_{A,2}\,\vec e_y+z_{A,2}\,\vec e_z = x_A\,\vec e_x+y_A\,\vec e_y+z_A\,\vec e_z$, the spatial separation is the same on both legs, $|x_B\,\vec e_x+y_B\,\vec e_y+z_B\,\vec e_z-(x_A\,\vec e_x+y_A\,\vec e_y+z_A\,\vec e_z)| = L$, and the null conditions read
 
 $$
 c^2(r'_{t,2}-r'_{t,1})^2 = L^2,
@@ -365,7 +365,7 @@ The exchange of information and the synchronisation of clocks are built from the
 | $e_t=1,\vec e_x,\vec e_y,\vec e_z$ | Quaternion basis, $\vec e_\mu^2=-e_t$ |
 | $i$ | Central scalar imaginary, $i^2=-1$ |
 | $c$ | Speed of light (its vacuum value in the numbers quoted here) |
-| $\tilde R_\Phi = i c r'_{t}\,e_t+r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z$ | Material four-position |
+| $\tilde R_\Phi = i r'_{t}\,e_t+r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z$ | Material four-position |
 | $\tilde{Q}_{BA} = \tilde{Q}_B-\tilde{Q}_A$ | Displacement from $A$ to $B$ |
 | $\langle\tilde{Q}\rangle_{\natural} = \tilde{Q}\tilde{Q}^{\natural} = \sum_\mu Q_\mu^2$ | Biquaternion norm |
 | $\mathrm{Sc}$ | Scalar projection |

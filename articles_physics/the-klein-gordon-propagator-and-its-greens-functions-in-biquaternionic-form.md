@@ -14,13 +14,13 @@ is a **central scalar** element of the algebra: the d'Alembertian $\Box=\tilde{\
 
 The article is organized as follows. The operator, its convention and its defining equation are stated first, together with the momentum-space amplitude and the sign conventions. The poles and the four standard prescriptions are then identified. The retarded Green's function is derived in position space from its Fourier representation: the frequency contour is done exactly, the angular integral is reduced by a hyperbolic rotation to a Bessel function, and the closed form is exhibited and checked against the homogeneous equation. The light-cone Jacobian that converts the invariant kernel into the retarded-time kernel is exhibited, and the massless limit is compared with the retarded kernel of the electromagnetism exercise. The advanced kernel, the boundary condition that selects the retarded one, and the Pauli–Jordan function are then treated, with microcausality verified. The Feynman propagator, its contour, its time-ordered interpretation and its Euclidean form are given. A closing section states the biquaternion interpretation of the whole construction, and open questions are recorded.
 
-Throughout, the series conventions are used: $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ with $e_t=1,\vec e_x,\vec e_y,\vec e_z$, $\vec e_k^2=-e_t$, $\vec e_j \vec e_k=-\delta_{jk}e_t+\varepsilon_{jkl}\vec e_l$; central $i$; $\tilde R_\Phi=i c r'_t\,e_t+r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z\in\mathbb{B}_{\Phi}$; $\tilde{\nabla}=e_t\partial/\partial R_t+\sum_k \vec e_k\partial/\partial R_k$; and the series d'Alembertian
+Throughout, the series conventions are used: $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ with $e_t=1,\vec e_x,\vec e_y,\vec e_z$, $\vec e_k^2=-e_t$, $\vec e_j \vec e_k=-\delta_{jk}e_t+\varepsilon_{jkl}\vec e_l$; central $i$; $\tilde R_\Phi=i r'_t\,e_t+r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z\in\mathbb{B}_{\Phi}$; $\tilde{\nabla}=e_t\partial/\partial R_t+\sum_k \vec e_k\partial/\partial R_k$; and the series d'Alembertian
 
 $$
 \Box=\tilde{\nabla}\tilde{\nabla}^{\natural}=\tilde{\nabla}^{\natural}\tilde{\nabla}=\partial^2/\partial R_t^2+\Delta=\Delta+ \partial^2/\partial R_t^2 .
 $$
 
-The mass parameter is $k_m=mc/\hbar$, so that $k_m^{2}=k_m^{2}$ is the quantity that multiplies the field in the c-explicit equation; as the companion article *The Feynman Propagator in Biquaternionic Form* does, the kernels are quoted with $c$ restored. The signature conventions are level 1 and level 2 only: the biquaternion norm on $\mathbb{C}$ and its material reading, $Q_t=i c r'_t$. No second metric is used anywhere in this article.
+The mass parameter is $k_m=mc/\hbar$, so that $k_m^{2}=k_m^{2}$ is the quantity that multiplies the field in the c-explicit equation; as the companion article *The Feynman Propagator in Biquaternionic Form* does, the kernels are quoted with $c$ restored. The signature conventions are level 1 and level 2 only: the biquaternion norm on $\mathbb{C}$ and its material reading, $Q_t=i r'_t$. No second metric is used anywhere in this article.
 
 - Companion article *The Klein–Gordon Equation in Biquaternionic Form*, for the equation, its mass term, and the central scalar d'Alembertian.
 - Companion article *The Scalar Field in the Centre: Why Spin 0 Escapes the Biquaternion State Module*, for the field's central value space and the exclusion of the state module.
@@ -46,7 +46,7 @@ and because both $\Box$ and the mass term are central and scalar, the equation i
 $$
 \tilde P_{\Phi}=i\frac{\omega}{c}e_t+\vec k\in\mathbb{B}_{\Phi},
 \qquad
-\tilde R_\Phi=i c r'_t\,e_t+r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z,
+\tilde R_\Phi=i r'_t\,e_t+r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z,
 \qquad
 \mathrm{Sc}(\tilde P_{\Phi}\tilde{R}_\Phi^{\natural})=\vec k\cdot(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)-\omega r'_t,
 $$
@@ -77,7 +77,7 @@ $$
 \delta^{(4)}(\tilde R_\Phi)=\delta(r'_t)\,\delta^{(3)}(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)\;}
 $$
 
-with the physical measure $d^3y\,dr'_{t,2}$ over the source point $\tilde{R}_{\Phi,2}$ for the convolution, exactly as the companion exercise *The Retarded Potentials and the Green's Function* fixes it for the massless operator. The sign is not physical: reversing it, $(\Box-k_m^{2})G=+\delta^{(4)}$, is compensated by a minus in the convolution, and an overall constant factor in $G$ never changes the pole structure or the support. It is fixed here so that at $k_m=0$ the retarded kernel is the exercise's $G_{\mathrm{ret}}=\frac{1}{4\pi R}\delta(r'_t-R/c)$ with no extra sign, and so that the mass term enters with the same sign as in the equation.
+with the physical measure $d^3y\,dr'_{t,2}$ over the source point $\tilde{R}_{\Phi,2}$ for the convolution, exactly as the companion exercise *The Retarded Potentials and the Green's Function* fixes it for the massless operator. The sign is not physical: reversing it, $(\Box-k_m^{2})G=+\delta^{(4)}$, is compensated by a minus in the convolution, and an overall constant factor in $G$ never changes the pole structure or the support. It is fixed here so that at $k_m=0$ the retarded kernel is the exercise's $G_{\mathrm{ret}}=\frac{1}{4\pi R}\delta(r'_t-R)$ with no extra sign, and so that the mass term enters with the same sign as in the equation.
 
 A second convention is fixed at the same time: the whole article works with the operator $\Box-k_m^{2}$ and never with $-\Box+k_m^{2}$, so that the momentum-space amplitude carries no compensating minus. With the measure $d^4p=d^3p\,d\omega$ and the phase $\exp(i(\vec p\cdot(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)-\omega r'_t))$, the defining equation becomes
 
@@ -241,7 +241,7 @@ in natural units, with the Bessel term restricted to the interior of the cone by
 
 Three checks were carried out on this closed form.
 
-1. **Massless limit.** As $k_m\to0$ the Bessel term vanishes and only $\frac{\mathrm{H}_{\mathrm{hvs}}(r'_t)}{2\pi}\delta(r_x^2)$ remains. Converting the invariant delta to a radial delta by the light-cone Jacobian below gives $\frac{1}{4\pi r}\delta(r'_t-r)$, which is exactly the retarded kernel $\frac{1}{4\pi R}\delta(r'_t-R/c)$ of the electromagnetism exercise at $c=1$. The limit was verified numerically for $k_m=10^{-3}$.
+1. **Massless limit.** As $k_m\to0$ the Bessel term vanishes and only $\frac{\mathrm{H}_{\mathrm{hvs}}(r'_t)}{2\pi}\delta(r_x^2)$ remains. Converting the invariant delta to a radial delta by the light-cone Jacobian below gives $\frac{1}{4\pi r}\delta(r'_t-r)$, which is exactly the retarded kernel $\frac{1}{4\pi R}\delta(r'_t-R)$ of the electromagnetism exercise at $c=1$. The limit was verified numerically for $k_m=10^{-3}$.
 2. **The homogeneous equation.** Inside the cone the Bessel form must satisfy $(\Box-k_m^{2})G_{\mathrm{rgs},R}=0$, because the only source is at the origin. Evaluating the radial d'Alembertian $-\partial^2/\partial {r'_{t}}^2+\partial^2/\partial r^2+\frac{2}{r}\partial/\partial r-k_m^{2}$ by finite differences at six random interior points with $r'_t\in[2.5,4]$, $r/r'_t\in[0.2,0.85]$ and $k_m\in[0.4,1.5]$, the greatest residual was $1.1\times 10^{-9}$, against an amplitude of order $10^{-2}$.
 3. **The Bessel function.** The series evaluation of $J_1$ reproduces the reference values $J_1(1)=0.4400505857$ and $J_1(2)=0.5767248078$ to ten digits, so the Bessel factor in the kernel is not a source of error.
 
@@ -388,7 +388,7 @@ Three facts summarize what the framework does and does not contribute to the Kle
 
 **The singular loci are the biquaternion norm's geometry.** The light cone is the zero-divisor cone $\langle\tilde R_\Phi\rangle_{\natural}=0$ of the material sector; the mass shell is the level set $\langle\tilde P_{\Phi}\rangle_{\natural}=-k_m^{2}$. The Fourier kernel's poles, the support of the retarded kernel, the vanishing of the commutator, and the exponential range of the Euclidean kernel are all faces of one algebraic object, the biquaternion norm of $\mathbb{B}$ read on $\mathbb{B}_{\Phi}$. This is genuinely the algebra's contribution: the framework does not postulate the light cone, it identifies it as the zero set of the biquaternion norm, and the propagation of a spin-$0$ field follows.
 
-**The causal boundary condition is physical, not algebraic.** The defining equation admits both the retarded and the advanced kernel, and the algebra is indifferent between them; the retarded choice is the no-incoming-radiation condition, a physical input. The framework locates the choice in the direction of the $i\epsilon$ displacement along the imaginary-scalar axis $i c r'_t$, exactly as the companion article on the Feynman propagator argues; it does not derive the choice.
+**The causal boundary condition is physical, not algebraic.** The defining equation admits both the retarded and the advanced kernel, and the algebra is indifferent between them; the retarded choice is the no-incoming-radiation condition, a physical input. The framework locates the choice in the direction of the $i\epsilon$ displacement along the imaginary-scalar axis $i r'_t$, exactly as the companion article on the Feynman propagator argues; it does not derive the choice.
 
 The derivation of the retarded kernel given above is a transcription of the standard scalar field theory into the framework's notation, with the biquaternion-norm identifications supplying the interpretation. The genuinely biquaternionic content lies in the identification of the cone and the shell with the biquaternion norm, and in the proof that nothing else of the algebra enters.
 
@@ -434,7 +434,7 @@ The algebra's contribution is the identification of the singular loci with the b
 | $i$ | Central scalar imaginary, $i^2=-1$ |
 | $\mathbb{B}_{\Phi},\mathbb{B}_{\Psi}$ | Material (anti-Hermitian) and informational (Hermitian) sectors |
 | $\mathbb{B}_{C}=\operatorname{span}_{\mathbb{R}}\{e_t,ie_t\}$ | Centre of $\mathbb{B}$; the scalar field's value space |
-| $\tilde R_\Phi=i c r'_t\,e_t+r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z$ | Material coordinate, $\in\mathbb{B}_{\Phi}$ |
+| $\tilde R_\Phi=i r'_t\,e_t+r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z$ | Material coordinate, $\in\mathbb{B}_{\Phi}$ |
 | $\tilde P_{\Phi}=\frac{m\,c\,(i\omega/c\,e_t+\vec k)}{k_m}$ | Material four-wavevector, $\in\mathbb{B}_{\Phi}$ |
 | $\langle\tilde R_\Phi\rangle_{\natural}=\tilde R_\Phi\tilde{R}_\Phi^{\natural}$ | Biquaternion norm |
 | $\langle\tilde{Q}_1,\tilde{Q}_2\rangle_{*}=\mathrm{Sc}(\tilde{Q}_1\tilde{Q}_2^{*})$ | Hermitian form; real, positive definite |
@@ -452,7 +452,7 @@ The algebra's contribution is the identification of the singular loci with the b
 | $\langle\tilde P_{\Phi}\rangle_{\natural}=-k_m^{2}$ | Mass shell |
 | $J_1,K_1$ | Bessel and modified Bessel functions |
 | $\mathrm{H}_{\mathrm{hvs}}(r'_t),\mathrm{sgn}(r'_t)$ | Heaviside step and sign functions |
-| $\delta_{\mu\nu}=(1,1,1,1)$ | The metric, the identity matrix; with $Q_t=i c r'_t$ the material interval is $-c^2{r'_{t}}^2+r_x^2+r_y^2+r_z^2$ |
+| $\delta_{\mu\nu}=(1,1,1,1)$ | The metric, the identity matrix; with $Q_t=i r'_t$ the material interval is $-{r'_{t}}^2+r_x^2+r_y^2+r_z^2$ |
 | $\mathrm{Tr}(\tilde Q_1\tilde Q_2)=2\,\mathrm{Sc}(\tilde Q_1\tilde Q_2)$ | Trace formula |
 
 ## Further Reading

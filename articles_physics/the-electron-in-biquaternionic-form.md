@@ -124,7 +124,7 @@ The electron's spin is where the framework is strongest and where the distinctio
 
 The electron's relativistic dynamics is the chirality pair $\tilde{\nabla}\tilde{Ξ}_{\mathrm{sp},R}=k_{m_e}\tilde{Ξ}_{\mathrm{sp},L}$, $\tilde{\nabla}^{\natural}\tilde{Ξ}_{\mathrm{sp},L}=k_{m_e}\tilde{Ξ}_{\mathrm{sp},R}$. The plane-wave solutions are computed in the companion solutions article, in the algebra's own objects. They come in two branches at each momentum, the positive-frequency $w^{(r)}(\vec p)\exp\!\big(-\frac{k_m\,i\,(Er'_t-\vec p\cdot\vec r)}{m\,c}\big)$ and the negative-frequency $v^{(r)}(\vec p)\exp\!\big(+\frac{k_m\,i\,(Er'_t-\vec p\cdot\vec r)}{m\,c}\big)$, with $\vec r = r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z$, $E = +\sqrt{\vec p^2c^2 + m_e^2c^4}$ and $r$ the spin label. Together they span a complex space of dimension four, one pair for each value of the chirality; the dimension two of each pair is the dimension of the irreducible action, and the count is the count of the two values. The spin sums, normalisations, and bilinears are constructed in the companion solutions article and are not repeated here.
 
-**A note on the wave biquaternion.** The mass-shell condition is written in the corpus convention, in which the four-wavevector has the imaginary time component of the $i c r'_t$ convention,
+**A note on the wave biquaternion.** The mass-shell condition is written in the corpus convention, in which the four-wavevector has the imaginary time component of the $i r'_t$ convention,
 
 $$
 \tilde P_{\Phi}\,k_{\mathrm{mo}} = i\,\frac{\omega}{c}\,e_t + \vec k, \qquad
@@ -300,7 +300,7 @@ The contraction sums follow from the squares. With one index raised, $\gamma^\mu
 
 ## Summary
 
-The electron is the biquaternion Dirac field $\tilde{Ξ}_{\mathrm{sp}}\in\mathbb{B}$: one element whose two chirality parts satisfy the pair $\tilde{\nabla}\tilde{Ξ}_{\mathrm{sp},R} = k_{m_e}\tilde{Ξ}_{\mathrm{sp},L}$, $\tilde{\nabla}^{\natural}\tilde{Ξ}_{\mathrm{sp},L} = k_{m_e}\tilde{Ξ}_{\mathrm{sp},R}$. The mass is the coefficient of the off-diagonal coupling of the two values; the algebra's real structure $\flat={}-{}^{*}$ acts on the two sectors with opposite signs; and the rest-energy phase $\exp(-icr'_t/1/k_{m_e}) = \cos(cr'_t/1/k_{m_e})e_t - \sin(cr'_t/1/k_{m_e})(ie_t)$ rotates the two sectors into one another at $ck_{m_e}$. The charge is inserted at the gradient by minimal coupling, which for the linear mass pair is exactly gauge covariant; the conserved current then lies in $\mathbb{B}_{\Phi}$, while the static Coulomb field of a point charge is a purely imaginary vector and lies in $\mathbb{B}_{\Psi}$.
+The electron is the biquaternion Dirac field $\tilde{Ξ}_{\mathrm{sp}}\in\mathbb{B}$: one element whose two chirality parts satisfy the pair $\tilde{\nabla}\tilde{Ξ}_{\mathrm{sp},R} = k_{m_e}\tilde{Ξ}_{\mathrm{sp},L}$, $\tilde{\nabla}^{\natural}\tilde{Ξ}_{\mathrm{sp},L} = k_{m_e}\tilde{Ξ}_{\mathrm{sp},R}$. The mass is the coefficient of the off-diagonal coupling of the two values; the algebra's real structure $\flat={}-{}^{*}$ acts on the two sectors with opposite signs; and the rest-energy phase $\exp(-i r'_t/1/k_{m_e}) = \cos(r'_t/1/k_{m_e})e_t - \sin(r'_t/1/k_{m_e})(ie_t)$ rotates the two sectors into one another at $ck_{m_e}$. The charge is inserted at the gradient by minimal coupling, which for the linear mass pair is exactly gauge covariant; the conserved current then lies in $\mathbb{B}_{\Phi}$, while the static Coulomb field of a point charge is a purely imaginary vector and lies in $\mathbb{B}_{\Psi}$.
 
 The framework derives the electron's spin-$\tfrac{1}{2}$ representation content from the unique irreducible action of $\mathbb{B}\cong M_2(\mathbb{C})$ on a complex space of dimension two, and the spin state and observable structure from the state of $\mathbb{B}_{\Psi}$ with the Born pairing; the magnitude $\frac{m\,c}{2\,k_m}$ is a normalisation. It derives the tree-level gyromagnetic factor $g=2$ from the $1/2m_e$ coefficient produced by eliminating the small part, giving $\vec\mu_e = -(e/m_e)\vec S$ and one Bohr magneton $\mu_B = ec\dfrac{1}{2\,k_{m_e}} = 9.274010\times10^{-24}$ J T$^{-1}$; the anomalous part $a\approx\alpha/2\pi$ is outside the equation. It reproduces the Zitterbewegung at $\omega_Z = 2ck_{m_e} = 1.55269\times10^{21}$ rad s$^{-1}$ and amplitude $\frac{m}{2\,k_m\,m_{e}}= 193.1$ fm, and the companion article's test shows the trembling is the second harmonic of the sector rotation, not a signature of either sector. It contains the two values of the chirality and the mass term as the chirality-mixing coupling, but not the weak $V-A$ coupling of the left-handed electron.
 
@@ -310,7 +310,7 @@ The electron's data are not confined to either sector: state-like and field-stre
 
 | Symbol | Meaning |
 |---|---|
-| $Q_t=i c r'_t$, $Q_k=x,y,z$ | Coordinates; $r'_t$ the real time of the material sector |
+| $Q_t=i r'_t$, $Q_k=x,y,z$ | Coordinates; $r'_t$ the real time of the material sector |
 | $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ | Biquaternion algebra |
 | $e_t = 1, \vec e_x, \vec e_y, \vec e_z$ | The four units of the coefficient basis |
 | $i$ | Scalar imaginary, $i^2 = -1$ |

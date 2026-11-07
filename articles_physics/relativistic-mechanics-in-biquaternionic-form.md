@@ -2,7 +2,7 @@
 
 ## Introduction
 
-The equations of relativistic mechanics — the four-position, the invariant interval, the four-velocity, the four-momentum, the mass-shell relation, the four-force, the action, the conserved current, and the relativistic wave equations — are usually written in the language of four-vectors and Minkowski tensors. This article expresses them in the biquaternion algebra $\mathbb{B} = \mathbb{C} \otimes_\mathbb{R} \mathbb{H}$, using the $i c r'_t$ convention in which the complex time coordinate absorbs the minus sign of the Minkowski metric.
+The equations of relativistic mechanics — the four-position, the invariant interval, the four-velocity, the four-momentum, the mass-shell relation, the four-force, the action, the conserved current, and the relativistic wave equations — are usually written in the language of four-vectors and Minkowski tensors. This article expresses them in the biquaternion algebra $\mathbb{B} = \mathbb{C} \otimes_\mathbb{R} \mathbb{H}$, using the $i r'_t$ convention in which the complex time coordinate absorbs the minus sign of the Minkowski metric.
 
 The purpose is not to derive new physics. The purpose is to rewrite the established equations of relativistic mechanics in the biquaternion language, so that the algebraic structure of the theory is manifest. The biquaternion formulation makes the following structural facts explicit:
 
@@ -13,23 +13,23 @@ The purpose is not to derive new physics. The purpose is to rewrite the establis
 
 These identities are algebraic, not physical. They are the reason the biquaternion algebra is the natural home of relativistic mechanics.
 
-The conventions are those of the companion articles: the biquaternion algebra is $\mathbb{B} = \mathbb{C} \otimes_\mathbb{R} \mathbb{H}$, the quaternion basis is $e_t = 1, \vec e_x, \vec e_y, \vec e_z$ with $\vec e_\mu^2 = -e_t$, the scalar imaginary is $i$, and the biquaternionic gradient is $\tilde{\nabla} = e_t \partial/\partial R_t + \vec e_x \partial/\partial R_x + \vec e_y \partial/\partial R_y + \vec e_z \partial/\partial R_z$. Its quaternion conjugate is $\tilde{\nabla}^{\natural} = e_t \partial/\partial R_t - \vec e_x \partial/\partial R_x - \vec e_y \partial/\partial R_y - \vec e_z \partial/\partial R_z$. The Minkowski metric has signature $(-,+,+,+)$, so that $\partial^2/\partial R_t^2 = -c^{-2}\,\partial^2/\partial {r'_{t}}^2$. Throughout, the symbol $c$ denotes the **speed of light in the medium**, $c = 1/\sqrt{\epsilon\mu}$, and $c_0$ denotes the **vacuum speed of light**, $c_0 = 1/\sqrt{\epsilon_0\mu_0}$. In vacuum, $c = c_0$. The symbol $v$ (or $\vec v$) is reserved for particle and frame velocities.
+The conventions are those of the companion articles: the biquaternion algebra is $\mathbb{B} = \mathbb{C} \otimes_\mathbb{R} \mathbb{H}$, the quaternion basis is $e_t = 1, \vec e_x, \vec e_y, \vec e_z$ with $\vec e_\mu^2 = -e_t$, the scalar imaginary is $i$, and the biquaternionic gradient is $\tilde{\nabla} = e_t \partial/\partial R_t + \vec e_x \partial/\partial R_x + \vec e_y \partial/\partial R_y + \vec e_z \partial/\partial R_z$. Its quaternion conjugate is $\tilde{\nabla}^{\natural} = e_t \partial/\partial R_t - \vec e_x \partial/\partial R_x - \vec e_y \partial/\partial R_y - \vec e_z \partial/\partial R_z$. The Minkowski metric has signature $(-,+,+,+)$, so that $\partial^2/\partial R_t^2 = -\partial^2/\partial {r'_{t}}^2$. Throughout, the symbol $c$ denotes the **speed of light in the medium**, $c = 1/\sqrt{\epsilon\mu}$, and $c_0$ denotes the **vacuum speed of light**, $c_0 = 1/\sqrt{\epsilon_0\mu_0}$. In vacuum, $c = c_0$. The symbol $v$ (or $\vec v$) is reserved for particle and frame velocities.
 
 ## The Four-Position
 
 The **four-position biquaternion** is
 
 $$
-\tilde R_\Phi = i c r'_{t}\,e_t + r_x\,\vec e_x + r_y\,\vec e_y + r_z\,\vec e_z,
+\tilde R_\Phi = i r'_{t}\,e_t + r_x\,\vec e_x + r_y\,\vec e_y + r_z\,\vec e_z,
 $$
 
-where $r'_t \in \mathbb{R}$ is the ordinary time coordinate, $x, y, z \in \mathbb{R}$ are the ordinary spatial coordinates, and $c$ is the speed of light in the medium. The scalar part of $\tilde R_\Phi$ is the complex time coordinate $i c r'_t$, and the vector part is the spatial position $r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z$. In compact form,
+where $r'_t \in \mathbb{R}$ is the ordinary time coordinate, $x, y, z \in \mathbb{R}$ are the ordinary spatial coordinates, and $c$ is the speed of light in the medium. The scalar part of $\tilde R_\Phi$ is the complex time coordinate $i r'_t$, and the vector part is the spatial position $r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z$. In compact form,
 
 $$
-\tilde R_\Phi = i c r'_{t}\,e_t + (r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z).
+\tilde R_\Phi = i r'_{t}\,e_t + (r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z).
 $$
 
-The four-position biquaternion lives in the **anti-Hermitian subspace** $\mathbb{B}_{\Phi}$ (imaginary scalar part, real vector part), matching the structure of the four-vector $x_\mu = (i c r'_t, r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)$ in the $i c r'_t$ convention.
+The four-position biquaternion lives in the **anti-Hermitian subspace** $\mathbb{B}_{\Phi}$ (imaginary scalar part, real vector part), matching the structure of the four-vector $x_\mu = (i r'_t, r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)$ in the $i r'_t$ convention.
 
 It is a **material element**; it is what is observed. Its **observable** is the Hermitian representative $i\tilde R_\Phi\in\mathbb{B}_{\Psi}$, whose eigenvalues are the readings.
 
@@ -38,10 +38,10 @@ It is a **material element**; it is what is observed. Its **observable** is the 
 The **invariant interval** between two nearby events in spacetime is the **biquaternion norm** of the displacement biquaternion $d\tilde R_\Phi \in \mathbb{B}_{\Phi}$:
 
 $$
-\boxed{\;ds^2 = d\tilde R_\Phi\,\overline{d\tilde R_\Phi} = (ic\,dr'_t)^2 + dr_x^2+dr_y^2+dr_z^2 = -c^2\,d{r'_{t}}^2 +dr_x^2+dr_y^2+dr_z^2\;}
+\boxed{\;ds^2 = d\tilde R_\Phi\,\overline{d\tilde R_\Phi} = (i\,dr'_t)^2 + dr_x^2+dr_y^2+dr_z^2 = -d{r'_{t}}^2 +dr_x^2+dr_y^2+dr_z^2\;}
 $$
 
-Here $\overline{d\tilde R_\Phi} = ic\,dr'_t\,e_t - d(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)$ is the quaternion conjugate of the displacement. This is the biquaternion form of the Minkowski interval. The minus sign in the time–time component arises algebraically from $i^2 = -1$, not from an independently postulated metric signature.
+Here $\overline{d\tilde R_\Phi} = i\,dr'_t\,e_t - d(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)$ is the quaternion conjugate of the displacement. This is the biquaternion form of the Minkowski interval. The minus sign in the time–time component arises algebraically from $i^2 = -1$, not from an independently postulated metric signature.
 
 The displacement $d\tilde R_\Phi$ is a **material element**, and the interval is its norm; a spacelike distance is read from that norm.
 
@@ -139,7 +139,7 @@ $$
 \tilde{\mathcal F}_{\Phi,\mathrm{frc}} = i\gamma\frac{ϙ}{c}\left(\vec E\cdot\vec v\right)e_t + \gamma ϙ\left(\vec E + \vec v\times\vec B\right),
 $$
 
-where $ϙ$ is the charge, $\vec E$ and $\vec B$ are the electric and magnetic fields, and $\vec v$ is the particle velocity. The scalar part is the **power** delivered to the particle (imaginary, as required by the $i c r'_t$ convention for a four-vector), and the vector part is the **relativistic three-force** $\gamma ϙ(\vec E + \vec v\times\vec B)$.
+where $ϙ$ is the charge, $\vec E$ and $\vec B$ are the electric and magnetic fields, and $\vec v$ is the particle velocity. The scalar part is the **power** delivered to the particle (imaginary, as required by the $i r'_t$ convention for a four-vector), and the vector part is the **relativistic three-force** $\gamma ϙ(\vec E + \vec v\times\vec B)$.
 
 **Note on the biquaternion expression.** The component formula above is standard and unambiguous. The expression of the same four-force as a **biquaternion product** of the field-strength biquaternion $\tilde F$ and the four-velocity $\tilde{V}_{\Phi}$ is **not** simply the real part of $\tilde F\circ\tilde{V}_{\Phi}$; the correct expression involves the representation theory of $\mathbb{B}$ in the even subalgebra of $\mathrm{Cl}_{1,3}$, and it needs to be worked out carefully. This is left as an open question, to be addressed when the relevant literature on the biquaternion formulation of the Lorentz force is reviewed. The structural fact — that the four-force is an element of $\mathbb{B}_{\Phi}$ built from the field strength and the four-velocity — is correct; the explicit formula in terms of $\tilde F$ and $\tilde{V}_{\Phi}$ is deferred.
 
@@ -151,10 +151,10 @@ $$
 S = -mc\int\sqrt{-\,d\tilde R_\Phi\,\overline{d\tilde R_\Phi}},
 $$
 
-where the square root is the ordinary real square root of the positive quantity $-d\tilde R_\Phi\,\overline{d\tilde R_\Phi} = c^2\,d{r'_{t}}^2 -(dr_x^2+dr_y^2+dr_z^2) = c^2\,d\tau^2$. Since $d\tau = dr'_t/\gamma$, we have $c\,d\tau = c\,dr'_t/\gamma$, and the action becomes
+where the square root is the ordinary real square root of the positive quantity $-d\tilde R_\Phi\,\overline{d\tilde R_\Phi} = d{r'_{t}}^2 -(dr_x^2+dr_y^2+dr_z^2) = c^2\,d\tau^2$, with $\tau$ the proper time. Since $d\tau = dr'_t/(c\gamma)$, we have $c\,d\tau = dr'_t/\gamma$, and the action becomes
 
 $$
-S = -mc^2\int\frac{dr'_t}{\gamma} = -mc^2\int\sqrt{1 - \vec v^2/c^2}\,dr'_t,
+S = -mc\int\frac{dr'_t}{\gamma} = -mc\int\sqrt{1 - \vec v^2/c^2}\,dr'_t,
 $$
 
 which is the standard relativistic action. The biquaternion form makes the **invariant character** of the action manifest: the integrand is built from the biquaternion norm of the displacement biquaternion, which is a Lorentz scalar.
@@ -201,7 +201,7 @@ $$
 \Box\tilde{Ξ} = (k_m)^{2}\tilde{Ξ},
 $$
 
-which is the standard Klein–Gordon equation $(\Box-(k_m)^{2}\frac{k_m^{2}}{m^{2}})\xi = 0$ with $\Box = -c^{-2}\,\partial^2/\partial {r'_{t}}^2 + \Delta$. The biquaternion form is compact and manifestly Lorentz-covariant.
+which is the standard Klein–Gordon equation $(\Box-(k_m)^{2}\frac{k_m^{2}}{m^{2}})\xi = 0$ with $\Box = -\partial^2/\partial {r'_{t}}^2 + \Delta$. The biquaternion form is compact and manifestly Lorentz-covariant.
 
 ## The Dirac Equation
 
@@ -223,8 +223,8 @@ which is identical in form to the source-free biquaternion Maxwell equation. The
 
 | Quantity | Biquaternion formula | Constraint |
 |---|---|---|
-| Four-position | $\tilde R_\Phi = i c r'_{t}\,e_t + r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z$ | — |
-| Invariant interval | $ds^2 = d\tilde R_\Phi\,\overline{d\tilde R_\Phi}$ | $= -c^2 d{r'_{t}}^2 +dr_x^2+dr_y^2+dr_z^2$ |
+| Four-position | $\tilde R_\Phi = i r'_{t}\,e_t + r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z$ | — |
+| Invariant interval | $ds^2 = d\tilde R_\Phi\,\overline{d\tilde R_\Phi}$ | $= -d{r'_{t}}^2 +dr_x^2+dr_y^2+dr_z^2$ |
 | Four-velocity | $\tilde{V}_{\Phi} = \gamma(ic\,e_t + \vec v)$ | $\tilde{V}_{\Phi}\tilde{V}_{\Phi}^{\natural} = -c^2$ |
 | Four-momentum | $\tilde{P}_{\Phi} = m\tilde{V}_{\Phi}$ | $\tilde{P}_{\Phi}\tilde{P}_{\Phi}^{\natural} = -m^2c^2$ |
 | Mass-shell relation | $\tilde{P}_{\Phi}\tilde{P}_{\Phi}^{\natural} = -m^2c^2$ | — |
@@ -282,7 +282,7 @@ These questions are open.
 
 ## Summary
 
-The ten basic formulas of relativistic mechanics — four-position, invariant interval, four-velocity, four-momentum, mass-shell relation, four-force, action, current, Klein–Gordon, and Dirac — can all be expressed in the biquaternion algebra $\mathbb{B}$ using the $i c r'_t$ convention. The biquaternion formulation makes the following structural facts explicit:
+The ten basic formulas of relativistic mechanics — four-position, invariant interval, four-velocity, four-momentum, mass-shell relation, four-force, action, current, Klein–Gordon, and Dirac — can all be expressed in the biquaternion algebra $\mathbb{B}$ using the $i r'_t$ convention. The biquaternion formulation makes the following structural facts explicit:
 
 - The invariant interval is the biquaternion norm of the four-position displacement biquaternion.
 - The four-velocity, four-momentum, four-force, four-potential, and four-current lie in the anti-Hermitian subspace $\mathbb{B}_{\Phi}$.
@@ -303,7 +303,7 @@ These identities are algebraic, not physical. They are the reason the biquaterni
 | $c_0 = 1/\sqrt{\epsilon_0\mu_0}$ | Speed of light in vacuum |
 | $\vec v$ | Particle three-velocity |
 | $\gamma = 1/\sqrt{1 - \vec v^2/c^2}$ | Lorentz factor |
-| $\tilde R_\Phi = i c r'_t\,e_t + r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z$ | Four-position biquaternion |
+| $\tilde R_\Phi = i r'_t\,e_t + r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z$ | Four-position biquaternion |
 | $\tilde{V}_{\Phi} = \gamma(ic\,e_t + \vec v)$ | Four-velocity biquaternion |
 | $\tilde{P}_{\Phi} = m\tilde{V}_{\Phi}$ | Four-momentum biquaternion |
 | $\tilde{\mathcal F}_{\Phi,\mathrm{frc}} = d\tilde{P}_{\Phi}/d\tau$ | Four-force biquaternion |

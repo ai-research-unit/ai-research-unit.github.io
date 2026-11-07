@@ -50,7 +50,7 @@ The principle sharpens when the two disciplines are set side by side, because th
 compact object and **two different** ones at once.
 
 **One object.** The thermal circle is the central phase at finite temperature. The imaginary
-direction is the material sector's own $i c r'_t$, not one produced by a rotation, and it is the central phase:
+direction is the material sector's own $i r'_t$, not one produced by a rotation, and it is the central phase:
 the KMS condition is the statement of periodicity in that phase, and the modular flow it generates is the
 central rotation. The thermal theory is usually reached by the Wick rotation $r'_t\mapsto-i\tau$, which reads
 that same direction as real; the direction itself is the material sector's, and the temperature

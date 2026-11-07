@@ -13,7 +13,7 @@ The division between what is established and what is interpretation is kept expl
 
 - **Established, and recomputed below.** The identity $[D_\mu,D_\nu]=i\kappa F_{\mu\nu}$ with $F_{\mu\nu}$ a definite element of the algebra; that the commutator is zeroth order (multiplication); the antisymmetry $F_{\mu\nu}=-F_{\nu\mu}$; the Bianchi identity $D_\lambda F_{\mu\nu}+D_\mu F_{\nu\lambda}+D_\nu F_{\lambda\mu}=0$; its identification with the operator Jacobi identity; and the algebraic Jacobi identity used in the coordinate proof. All were recomputed exactly on $\mathrm{SU}(2)$ with generic non-commuting, position-dependent connections, on all index pairs and all index triples, and on two independent random families. The abelian case was also recomputed, and is reported as *not* evidence.
 - **Scope limitation, reported rather than smoothed over.** The reduction "operator commutator $=$ algebra element" is exact. The stronger interpretation "the curvature *is* a single algebra commutator" is not: $F_{\mu\nu} = \partial/\partial R_\mu\,\mathcal{A}_\nu-\partial/\partial R_\nu\,\mathcal{A}_\mu+i\kappa[\mathcal{A}_\mu,\mathcal{A}_\nu]$ contains the exterior-derivative term, which is not a commutator of algebra elements. It is a single commutator of the connection components only when the curl $\partial/\partial R_\mu\,\mathcal{A}_\nu-\partial/\partial R_\nu\,\mathcal{A}_\mu$ vanishes. This is stated where it arises and carried into the open questions.
-- **Inherited, and not settled here.** The reality class of the connection in the $i c r'_t$ direction, and which compact gauge algebra the framework selects, are taken unchanged from the non-abelian article; nothing here resolves them.
+- **Inherited, and not settled here.** The reality class of the connection in the $i r'_t$ direction, and which compact gauge algebra the framework selects, are taken unchanged from the non-abelian article; nothing here resolves them.
 
 ## The Covariant Derivative and the Curvature It Defines
 
@@ -28,7 +28,7 @@ D_\mu = \partial/\partial R_\mu + i\kappa\,\mathcal{A}_\mu, \qquad
 D_\mu\tilde{Ξ}_{\mathrm{sp}} = \partial/\partial R_\mu\,\tilde{Ξ}_{\mathrm{sp}} + i\kappa\,\mathcal{A}_\mu\tilde{Ξ}_{\mathrm{sp}} ,
 \qquad \kappa =\frac{k_m\,ϙ}{m\,c}.
 $$
-This is the formal statement of the connection, before any reality condition is imposed; the obstruction to a single Hermitian-conjugation eigenspace across all four components, a property of the $i c r'_t$ derivative and not of the gauge algebra, is inherited unchanged from the companion and is carried as open question 3 below.
+This is the formal statement of the connection, before any reality condition is imposed; the obstruction to a single Hermitian-conjugation eigenspace across all four components, a property of the $i r'_t$ derivative and not of the gauge algebra, is inherited unchanged from the companion and is carried as open question 3 below.
 This is the one-sided, non-abelian connection of the companion article; its transformation law under a local $\tilde U(\tilde{Q}) \in SU(2)$ is
 $$
 \mathcal{A}_{\mathrm g,\mu} = \tilde U\,\mathcal{A}_\mu\,\tilde U^{-1} + \frac{i}{\kappa}\,(\partial/\partial R_\mu \tilde U)\,\tilde U^{-1},
@@ -313,7 +313,7 @@ Two things are left visible. First, a **scope limitation**: the curvature is a c
 | $\mathcal{A}_\mu = \sum_a\mathcal{A}_{\mu a} \vec e_a \in \mathrm{SU}(2)$ | Non-abelian connection, $\mathcal{A}=\sum_\mu\mathcal{A}_\mu e_\mu$ |
 | $\kappa =\frac{k_m\,ϙ}{m\,c}$ | Coupling |
 | $D_\mu = \partial/\partial R_\mu + i\kappa\mathcal{A}_\mu$ | Covariant derivative on matter (one-sided, left) |
-| $\partial/\partial R_t = -i\partial/\partial r'_t$ | $i c r'_t$ time derivative |
+| $\partial/\partial R_t = -i\partial/\partial r'_t$ | $i r'_t$ time derivative |
 | $F_{\mu\nu} = \partial/\partial R_\mu\,\mathcal{A}_\nu-\partial/\partial R_\nu\,\mathcal{A}_\mu+i\kappa[\mathcal{A}_\mu,\mathcal{A}_\nu]$ | Curvature components, antisymmetric |
 | $[D_\mu,D_\nu] = i\kappa F_{\mu\nu}$ | Curvature as the commutator of covariant derivatives |
 | $F_{\mathrm g,\mu\nu} = \tilde UF_{\mu\nu}\tilde U^{-1}$ | Adjoint transformation of the curvature |

@@ -6,7 +6,7 @@
 
 The framework's contribution to this subject is unusually direct, and it rests on a result established earlier in the series. In the abelian sector the topological density is not a foreign object: it is proportional to the framework's second invariant, $I_2=\vec E\cdot\vec B$.
 
-**Frame.** Displays are read in the $\mathbb{B}$ frame of *Frame and Metric Conventions*, with the $i c r'_t$ convention for sums over indices: the labels are summed directly, and the four-index symbol is the all-low orientation density of *Operator and Calculus Conventions*.
+**Frame.** Displays are read in the $\mathbb{B}$ frame of *Frame and Metric Conventions*, with the $i r'_t$ convention for sums over indices: the labels are summed directly, and the four-index symbol is the all-low orientation density of *Operator and Calculus Conventions*.
 
 $$
 \tfrac14\sum_{\mu,\nu,\rho,\sigma}\epsilon_{\mu\nu\rho\sigma}F_{\mu\nu}F_{\rho\sigma}
@@ -26,7 +26,7 @@ S_\theta=\frac{\theta}{32\pi^2}\int \sum_{\mu,\nu}F_{\mu\nu}F_{\mathrm{dual},\mu
 F_{\mathrm{dual},\mu\nu}=\tfrac12\sum_{\rho,\sigma}\epsilon_{\mu\nu\rho\sigma}F_{\rho\sigma} ,
 $$
 
-with all indices summed in the $i c r'_t$ convention as in the companion gauge articles. Charges are in units $\hbar=c=1$ where a quantisation statement is made. The trace $\mathrm{Tr}$ is the matrix trace on the gauge factor, distinguished from the trace of an element of the algebra, and it is taken in the fundamental representation with $\mathrm{Tr}(T^aT^b)=\tfrac12\delta^{ab}$; that normalization is what makes $Ϙ$ an integer.
+with all indices summed in the $i r'_t$ convention as in the companion gauge articles. Charges are in units $\hbar=c=1$ where a quantisation statement is made. The trace $\mathrm{Tr}$ is the matrix trace on the gauge factor, distinguished from the trace of an element of the algebra, and it is taken in the fundamental representation with $\mathrm{Tr}(T^aT^b)=\tfrac12\delta^{ab}$; that normalization is what makes $Ϙ$ an integer.
 
 Two things follow, and the article states them separately. The framework **supplies** the theta term's density and its discrete periodicity; it **does not supply** the value of $\theta$, because $\theta$ is a parameter labelling the vacuum and not an output of a complexified classical algebra. The strong CP problem is the statement that the observed near-vanishing of the physical theta parameter is not explained by the framework — or by the Standard Model without additional structure. This is reported as the boundary of what the algebra can address.
 
@@ -86,7 +86,7 @@ S_\theta^{\text{ab}}=\frac{\theta}{32\pi^2}\int d^4r\,\frac{4i}{c}I_2
 =\frac{i\theta}{8\pi^2 c}\int d^4r\,I_2 .
 $$
 
-The theta term is thus the integral of the framework's own parity-odd invariant, with the factor $i$ that the $i c r'_t$ convention attaches to it. This is the genuine affirmative content of the article: in the abelian sector the CP-odd term is not an object the framework lacks; it is $I_2$, already present in *The Field-Strength Biquaternion and Its Invariants*.
+The theta term is thus the integral of the framework's own parity-odd invariant, with the factor $i$ that the $i r'_t$ convention attaches to it. This is the genuine affirmative content of the article: in the abelian sector the CP-odd term is not an object the framework lacks; it is $I_2$, already present in *The Field-Strength Biquaternion and Its Invariants*.
 
 **The same invariant, read from the element.** The array above is a contraction, and the invariant it contracts to is one component of a norm. In vacuum the two medium factors of the companion are one, so $c=1$ there; the quaternionic norm of the field-strength element is $-(I_1+2iI_2)$ (*The Field-Strength Biquaternion and Its Invariants*), so the parity-odd invariant is minus one half of its imaginary part,
 

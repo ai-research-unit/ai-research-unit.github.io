@@ -55,9 +55,9 @@ $$
 \tilde{\mathcal F}_{\Phi,\mathrm{frc}} = i\,\frac{\gamma P_{\text{mech}}}{c}\,e_t + \gamma\,\vec f.
 $$
 
-This is the biquaternion transcription of the Minkowski force $F_{\mathrm{lor},\mu} = (i\gamma P_{\text{mech}}/c,\ \gamma\vec f)$ in the $i c r'_t$ convention, so the coefficient of $e_t$ is the $i c r'_t$ time component $K_0$.
+This is the biquaternion transcription of the Minkowski force $F_{\mathrm{lor},\mu} = (i\gamma P_{\text{mech}}/c,\ \gamma\vec f)$ in the $i r'_t$ convention, so the coefficient of $e_t$ is the $i r'_t$ time component $K_0$.
 
-**Origin in the field tensor.** The component form is the contraction $F_{\mathrm{lor},\mu} = ϙ\sum_\nu F_{\mu\nu}v_\nu$. In the $i c r'_t$ convention the metric is Euclidean, so no metric factor arises and $v_\nu = (i\gamma c,\ \gamma\vec v)$. The field tensor is the one fixed by the field-strength article,
+**Origin in the field tensor.** The component form is the contraction $F_{\mathrm{lor},\mu} = ϙ\sum_\nu F_{\mu\nu}v_\nu$. In the $i r'_t$ convention the metric is Euclidean, so no metric factor arises and $v_\nu = (i\gamma c,\ \gamma\vec v)$. The field tensor is the one fixed by the field-strength article,
 
 $$
 F_{\mu\nu} =
@@ -442,7 +442,7 @@ $$
 \frac{dP_\mu}{d\tau} = \frac{ϙ}{m}\sum_\nu F_{\mu\nu}P_\nu,
 $$
 
-so the proper-time motion is a superposition of exponentials whose rates are $(ϙ/m)$ times the eigenvalues of the field matrix $F_{\mu\nu}$. In the $i c r'_t$ convention those eigenvalues are determined by the two invariants: the characteristic polynomial is
+so the proper-time motion is a superposition of exponentials whose rates are $(ϙ/m)$ times the eigenvalues of the field matrix $F_{\mu\nu}$. In the $i r'_t$ convention those eigenvalues are determined by the two invariants: the characteristic polynomial is
 
 $$
 \det\!\left(\lambda\,\mathbb{1} - F\right)

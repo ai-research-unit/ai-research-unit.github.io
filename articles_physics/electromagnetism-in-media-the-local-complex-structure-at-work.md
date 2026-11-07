@@ -2,7 +2,7 @@
 
 ## Introduction
 
-Maxwell's equations in a material medium are usually introduced as a small modification of the vacuum equations: replace $\epsilon_0$ and $\mu_0$ by the permittivity $\epsilon$ and the permeability $\mu$ of the medium, and read off the consequences. In the biquaternionic formulation the emphasis is reversed. The medium is the general case and the vacuum is its limit, because the complex structure of the algebra is **local**. The material subspace $\mathbb{B}_{\Phi}$ is coordinatised by $(i c r'_t,\,r_x,\,r_y,\,r_z)$, and the factor $i$ that marks the temporal direction is paired with the **speed of light in the medium**,
+Maxwell's equations in a material medium are usually introduced as a small modification of the vacuum equations: replace $\epsilon_0$ and $\mu_0$ by the permittivity $\epsilon$ and the permeability $\mu$ of the medium, and read off the consequences. In the biquaternionic formulation the emphasis is reversed. The medium is the general case and the vacuum is its limit, because the complex structure of the algebra is **local**. The material subspace $\mathbb{B}_{\Phi}$ is coordinatised by $(i r'_t,\,r_x,\,r_y,\,r_z)$, and the factor $i$ that marks the temporal direction is paired with the **speed of light in the medium**,
 $$
 c=\frac{1}{\sqrt{\epsilon\mu}},
 $$
@@ -18,7 +18,7 @@ The algebra $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$, its units $e_
 
 **An action is a product, and the side is position.** The operator is the element it multiplies by, so the gradient acting from the left is written $\tilde{\nabla}\tilde{F}$, a coefficient acting from the right is written $g\,\vec{\alpha}$, and a two-sided action is $a\,\tilde{Ξ}_{\mathrm{sp}}\,b$. No array is written in the body of this article. The gamma arrays of the older Dirac literature are collected in §*The Legacy Pauli Gamma Formulation* and used nowhere else.
 
-The biquaternionic gradient $\tilde{\nabla}$ and its quaternion conjugate $\tilde{\nabla}^{\natural}$ are those of *Operator and Calculus Conventions*, the d'Alembertian is $\Box=\tilde{\nabla}\tilde{\nabla}^{\natural}$, and the medium enters the gradient only through the derivative in the time direction, whose value on the material sector is $\partial/\partial R_t=-(i/c)\,\partial/\partial r'_t$. Throughout, $c$ denotes the speed of light **in the medium** and $c_0$ the vacuum speed; the divergence and curl are written $\mathrm{div}$ and $\mathrm{rot}$.
+The biquaternionic gradient $\tilde{\nabla}$ and its quaternion conjugate $\tilde{\nabla}^{\natural}$ are those of *Operator and Calculus Conventions*, the d'Alembertian is $\Box=\tilde{\nabla}\tilde{\nabla}^{\natural}$, and on the material sector the time derivative is $\partial/\partial R_t=-i\,\partial/\partial r'_t$, with $r'_t$ the temporal length in metres. The gradient carries no medium factor: the medium enters through the conversion $r'_t=c\,t'$ between that length and the clock, and through the normalisations of the field. Throughout, $c$ denotes the speed of light **in the medium** and $c_0$ the vacuum speed; the divergence and curl are written $\mathrm{div}$ and $\mathrm{rot}$.
 
 ## Constitutive Relations and the Two Parameters of a Medium
 
@@ -60,17 +60,17 @@ The vacuum speed $c_0$ is a global constant. The medium speed $c$ is not: in an 
 
 ## The Biquaternionic Gradient and the Local Complex Structure
 
-The gradient is the one fixed in *Operator and Calculus Conventions*. On the material sector its time derivative takes the value $\partial/\partial R_t=\partial/\partial(i c r'_t)=-(i/c)\,\partial/\partial r'_t$, and the d'Alembertian is that file's identity $\Box=\tilde{\nabla}\tilde{\nabla}^{\natural}=\tilde{\nabla}^{\natural}\tilde{\nabla}=\partial^2/\partial R_t^2+\Delta$ evaluated at that derivative,
+The gradient is the one fixed in *Operator and Calculus Conventions*. On the material sector its time derivative takes the value $\partial/\partial R_t=\partial/\partial(i r'_t)=-i\,\partial/\partial r'_t=-(i/c)\,\partial/\partial t'$, and the d'Alembertian is that file's identity $\Box=\tilde{\nabla}\tilde{\nabla}^{\natural}=\tilde{\nabla}^{\natural}\tilde{\nabla}=\partial^2/\partial R_t^2+\Delta$ evaluated at that derivative,
 $$
-\Box=\Delta-\frac{1}{c^2}\,\partial^2/\partial {r'_{t}}^2,
+\Box=\Delta-\partial^2/\partial {r'_{t}}^2,
 $$
-the d'Alembertian of a medium with speed $c$. This is the vacuum value with $c$ in place of $c_0$.
+the d'Alembertian in the temporal length $r'_t$. Written in the clock time it is $\Delta-c^{-2}\,\partial^2/\partial {t'}^2$, the d'Alembertian of a medium with speed $c$, and there it reduces to the vacuum value with $c$ in place of $c_0$.
 
-The medium enters this operator in exactly one way: through $c$ in $\partial/\partial R_t$. The algebra — the quaternion units, the scalar imaginary $i$, the decomposition $\mathbb{B}=\mathbb{B}_{\Psi}\oplus\mathbb{B}_{\Phi}$ — is fixed and medium-independent. What the medium changes is the **embedding of physical spacetime into the algebra**. The material time coordinate is $i c r'_t=i\,c\,r'_t$, so the map from physical time to the imaginary scalar direction of $\mathbb{B}$ carries the local factor $c(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)$.
+The medium enters this operator in exactly one way: through the conversion $r'_t=c\,t'$ with which the temporal slot is measured. The algebra — the quaternion units, the scalar imaginary $i$, the decomposition $\mathbb{B}=\mathbb{B}_{\Psi}\oplus\mathbb{B}_{\Phi}$ — is fixed and medium-independent, and in the length coordinate the operator carries no medium factor at all. What the medium changes is the **embedding of physical time into the algebra**. The material time coordinate is $i r'_t=i\,c\,t'$, so the map from the physical second to the imaginary scalar direction of $\mathbb{B}$ carries the local factor $c(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)$.
 
-Because $c>0$ is real, the medium rescales the imaginary axis but does not rotate it. The phase of the complex structure is the fixed $i$; its scale is the local $c$. This is the precise sense in which the complex structure is local. In the language of the introduction to the framework, $c$ plays the role of the local scale factor of the complex structure, and the constant vacuum value $c_0$ is the special case in which that scale does not vary. The classical $i c r'_t$ convention of Minkowski space is the vacuum limit of the local structure.
+Because $c>0$ is real, the medium rescales that embedding but does not rotate it. The phase of the complex structure is the fixed $i$; its unit is the local $c$. This is the precise sense in which the complex structure is local. In the language of the introduction to the framework, $c$ plays the role of the local conversion of the temporal coordinate, and the constant vacuum value $c_0$ is the special case in which that conversion does not vary. The classical $i r'_t$ convention of Minkowski space is the vacuum limit of the local structure.
 
-Two comments are worth making. First, the factorization $\Box=\tilde{\nabla}\tilde{\nabla}^{\natural}$ holds for any real positive $c$, so the algebraic fact on which the biquaternionic Maxwell equation rests is insensitive to the medium. Second, passing from vacuum to medium does not change the algebra $\mathbb{B}$; a medium is not a deformation of the complex structure but a different local scale for its imaginary direction.
+Two comments are worth making. First, the factorization $\Box=\tilde{\nabla}\tilde{\nabla}^{\natural}$ holds for any real positive $c$, so the algebraic fact on which the biquaternionic Maxwell equation rests is insensitive to the medium. Second, passing from vacuum to medium does not change the algebra $\mathbb{B}$; a medium is not a deformation of the complex structure but a different local conversion for its imaginary direction.
 
 ## The Field Strength and Its Two Halves
 
@@ -158,7 +158,7 @@ $$
 \tilde{\nabla}\tilde{F}
 =-\mathrm{div}\,\vec F+\partial/\partial R_t\,\vec F+\mathrm{rot}\,\vec F,
 $$
-the scalar part being $-\mathrm{div}\,\vec F$ and the vector part $\partial/\partial R_t\,\vec F+\mathrm{rot}\,\vec F$. Substituting $\vec F=i\sqrt{\epsilon}\,\vec E-\sqrt{\mu}\,\vec H$ and $\partial/\partial R_t=-(i/c)\partial/\partial r'_t$, and separating the real and imaginary parts, the scalar equation gives
+the scalar part being $-\mathrm{div}\,\vec F$ and the vector part $\partial/\partial R_t\,\vec F+\mathrm{rot}\,\vec F$. Substituting $\vec F=i\sqrt{\epsilon}\,\vec E-\sqrt{\mu}\,\vec H$ and $\partial/\partial R_t=-i\,\partial/\partial r'_t$, and separating the real and imaginary parts, the scalar equation gives
 $$
 \mathrm{div}\,\vec E=\frac{\rho}{\epsilon},
 \qquad
@@ -166,21 +166,21 @@ $$
 $$
 and the vector equation gives
 $$
-\mathrm{rot}\,\vec H=\frac{\partial\vec D}{\partial r'_t}+\vec J,
+\mathrm{rot}\,\vec H=c\,\frac{\partial\vec D}{\partial r'_t}+\vec J,
 \qquad
-\mathrm{rot}\,\vec E=-\frac{\partial\vec B}{\partial r'_t}.
+\mathrm{rot}\,\vec E=-c\,\frac{\partial\vec B}{\partial r'_t}.
 $$
 The first pair is Gauss's law for $\vec D=\epsilon\vec E$ together with $\mathrm{div}\,\vec B=0$ (since $\vec B=\mu\vec H$ and $\mu$ is constant here), and the second pair is the Ampère–Maxwell law and Faraday's law. All four standard equations are recovered, with no residual $\epsilon$ or $\mu$.
 
 The cancellation is the content of the normalisation. In the vector equation, for example, $\partial/\partial R_t$ acting on the electric half gives
 $$
-\frac{\partial}{\partial R_t}\left(i\sqrt{\epsilon}\,\vec E\right)=-\frac{i}{c}\,\frac{\partial}{\partial r'_t}\left(i\sqrt{\epsilon}\,\vec E\right)=\frac{\sqrt{\epsilon}}{c}\,\frac{\partial\vec E}{\partial r'_t},
+\frac{\partial}{\partial R_t}\left(i\sqrt{\epsilon}\,\vec E\right)=-i\frac{\partial}{\partial r'_t}\left(i\sqrt{\epsilon}\,\vec E\right)=\sqrt{\epsilon}\,\frac{\partial\vec E}{\partial r'_t},
 $$
-because $\partial/\partial R_t=-(i/c)\partial/\partial r'_t$ and $i^2=-1$; on the magnetic half it gives $\partial/\partial R_t(-\sqrt{\mu}\vec H)=+\frac{i}{c}\sqrt{\mu}\,\partial\vec H/\partial r'_t$, which is imaginary. The real part of the vector equation, $\frac{\sqrt{\epsilon}}{c}\partial \vec E/\partial r'_t-\sqrt{\mu}\,\mathrm{rot}\,\vec H=-\sqrt{\mu}\vec J$, is Ampère–Maxwell's law with the coefficient
+because $\partial/\partial R_t=-i\,\partial/\partial r'_t$ and $i^2=-1$; on the magnetic half it gives $\partial/\partial R_t(-\sqrt{\mu}\vec H)=+i\sqrt{\mu}\,\partial\vec H/\partial r'_t$, which is imaginary. The real part of the vector equation, $\sqrt{\epsilon}\,\partial \vec E/\partial r'_t-\sqrt{\mu}\,\mathrm{rot}\,\vec H=-\sqrt{\mu}\vec J$, is Ampère–Maxwell's law with the coefficient
 $$
-\frac{\sqrt{\epsilon}}{c\sqrt{\mu}}=\epsilon,
+\sqrt{\frac{\epsilon}{\mu}}=\epsilon c,
 $$
-using $\sqrt{\epsilon\mu}=1/c$; the imaginary part, $\frac{\sqrt{\mu}}{c}\partial \vec H/\partial r'_t+\sqrt{\epsilon}\,\mathrm{rot}\,\vec E=0$, is Faraday's law with the coefficient $\sqrt{\mu}/(c\sqrt{\epsilon})=\mu$. One power of $i$ comes from the field's electric half and one from $\partial/\partial R_t$, and the product is the $-1$ that turns the two curl terms into the two time derivatives. The factors $\sqrt{\epsilon}$ and $\sqrt{\mu}$ on the fields are exactly what is required for the medium to cancel out of the components. The biquaternionic Maxwell equation therefore has a form independent of the medium; the medium is carried by the definition of $\tilde{F}$, by the single factor $\sqrt{\mu}$, and by the operator $\partial/\partial R_t$.
+using $\sqrt{\epsilon\mu}=1/c$, so that $\epsilon c\,\partial\vec E/\partial r'_t=c\,\partial\vec D/\partial r'_t$; the imaginary part, $\sqrt{\mu}\,\partial \vec H/\partial r'_t+\sqrt{\epsilon}\,\mathrm{rot}\,\vec E=0$, is Faraday's law with the coefficient $\sqrt{\mu/\epsilon}=\mu c$. One power of $i$ comes from the field's electric half and one from $\partial/\partial R_t$, and the product is the $-1$ that turns the two curl terms into the two time derivatives. The factors $\sqrt{\epsilon}$ and $\sqrt{\mu}$ on the fields are exactly what is required for the medium to cancel out of the components. The biquaternionic Maxwell equation therefore has a form independent of the medium; the medium is carried by the definition of $\tilde{F}$, by the single factor $\sqrt{\mu}$, and by the operator $\partial/\partial R_t$.
 
 Two companion statements from the Maxwell article carry over unchanged. The first is the integrability condition $\sqrt{\mu}\,\mathrm{Sc}(\tilde{\nabla}^{\natural}\tilde{J}_{\Phi})=0$, which is the biquaternionic form of charge conservation. The second is the potential formulation: in the Lorenz gauge the potential biquaternion $\tilde{A}_{\Phi}=i\,a'_t+\vec A$ satisfies
 $$
@@ -217,7 +217,7 @@ All of this is standard, and it is what fixes the meaning of a "plane wave in a 
 
 The biquaternionic interpretation is that each Fourier component carries its own local complex structure. The algebra $\mathbb{B}$ is the same at every frequency; what changes is the scale that maps physical time to the imaginary coordinate. For a monochromatic wave the scalar component of the gradient acts as
 $$
-\partial/\partial R_t=-\frac{i}{c}\,\partial/\partial r'_t\;\longrightarrow\;-\frac{\omega}{c(\omega)},
+\partial/\partial R_t=-i\frac{\partial}{\partial r'_t}\;\longrightarrow\;-\omega,
 $$
 because $\partial/\partial r'_t\to-i\omega$ in the $\exp(-i\omega r'_t)$ convention of this section and $i^2=-1$, so the imaginary time axis is scaled differently at each frequency. The local complex structure is thus **spectral** as well as spatial: it is indexed by the frequency at which the medium is probed.
 
@@ -858,7 +858,7 @@ The vacuum is the special case $\epsilon=\epsilon_0$, $\mu=\mu_0$, $c=c_0$, $Z=Z
 $$
 \tilde{F}=i\sqrt{\epsilon_0}\,\vec E-\sqrt{\mu_0}\,\vec H,
 $$
-the gradient becomes $\tilde{\nabla}=e_t\,\partial/\partial R_t+\vec e_x\,\partial/\partial R_x+\vec e_y\,\partial/\partial R_y+\vec e_z\,\partial/\partial R_z$, and the d'Alembertian becomes $\Box=\Delta-c_0^{-2}\partial^2/\partial {r'_t}^2=\partial^2/\partial R_t^2+\Delta$. The complex time coordinate becomes $ic_0r'_t$, recovering the familiar $i c r'_t$ form with the vacuum speed of light, and the local complex structure becomes constant. The invariants become $I_1=\vec E^2-c_0^2\vec B^2$ and $I_2=\vec E\cdot\vec B$, the Riemann–Silberstein vector becomes $\vec N=\vec E+ic_0\vec B$, and the plane-wave conditions become $k^2=\omega^2/c_0^2$, $|\vec E_0|=c_0|\vec B_0|$, and $\langle\tilde{F}_0\rangle_{\natural}=0$, all as in the parent article. The impedance becomes $Z_0=\sqrt{\mu_0/\epsilon_0}$, and the refractive index becomes $n=1$.
+the gradient becomes $\tilde{\nabla}=e_t\,\partial/\partial R_t+\vec e_x\,\partial/\partial R_x+\vec e_y\,\partial/\partial R_y+\vec e_z\,\partial/\partial R_z$ with $\partial/\partial R_t=-i\,\partial/\partial r'_t$, and the d'Alembertian becomes $\Box=\partial^2/\partial R_t^2+\Delta=\Delta-\partial^2/\partial {r'_{t}}^2$, which in the clock time is $\Delta-c_0^{-2}\partial^2/\partial {t'}^2$. The complex time coordinate becomes $i r'_t$, recovering the familiar $i r'_t$ form with the vacuum speed of light, and the local complex structure becomes constant. The invariants become $I_1=\vec E^2-c_0^2\vec B^2$ and $I_2=\vec E\cdot\vec B$, the Riemann–Silberstein vector becomes $\vec N=\vec E+ic_0\vec B$, and the plane-wave conditions become $k^2=\omega^2/c_0^2$, $|\vec E_0|=c_0|\vec B_0|$, and $\langle\tilde{F}_0\rangle_{\natural}=0$, all as in the parent article. The impedance becomes $Z_0=\sqrt{\mu_0/\epsilon_0}$, and the refractive index becomes $n=1$.
 
 This is the check that the medium conventions are consistent. Every medium result is the general one, and the vacuum results are recovered by setting the two medium parameters to their vacuum values. In particular, the null condition and the zero-divisor structure of the field strength are not special to vacuum; they hold in every medium, with the medium speed defining the cone. The question of which of $c_0$ and $(\epsilon_0,\mu_0)$ is fundamental — whether the vacuum has electromagnetic properties in the same sense that a medium does — is discussed in the Maxwell article and is not settled here.
 
@@ -934,7 +934,7 @@ The product of the four is taken in the order in which the cells stand, and the 
 
 Electromagnetism in a material medium is developed here as the general case, with the vacuum as its limit. The constitutive relations $\vec D=\epsilon\vec E$ and $\vec B=\mu\vec H$ supply the two parameters of a homogeneous medium, which may be taken as the speed $c=1/\sqrt{\epsilon\mu}$ and the impedance $Z=\sqrt{\mu/\epsilon}$, or equivalently as $\epsilon=1/(cZ)$ and $\mu=Z/c$.
 
-The medium enters the biquaternionic structure in two places and nowhere else. First, through $c$ in the gradient, $\partial/\partial R_t=-(i/c)\partial/\partial r'_t$, so that the map from physical time to the imaginary scalar direction of $\mathbb{B}$ carries the local scale $c$; this is the sense in which the complex structure is local, the algebra being fixed while its embedding in physical spacetime is not. Second, through the normalisations $\sqrt{\epsilon},\sqrt{\mu}$ of the field strength and the corresponding $1/\sqrt{\epsilon},\sqrt{\mu}$ of the source biquaternion
+The medium enters the biquaternionic structure in two places and nowhere else. First, through the conversion $r'_t=c\,t'$ that sets the temporal slot, the gradient being $\partial/\partial R_t=-i\partial/\partial r'_t=-(i/c)\partial/\partial t'$, so that the map from the physical second to the imaginary scalar direction of $\mathbb{B}$ carries the local conversion $c$; this is the sense in which the complex structure is local, the algebra being fixed while its embedding in physical time is not. Second, through the normalisations $\sqrt{\epsilon},\sqrt{\mu}$ of the field strength and the corresponding $1/\sqrt{\epsilon},\sqrt{\mu}$ of the source biquaternion
 $$
 \tilde{F}=i\sqrt{\epsilon}\,\vec E-\sqrt{\mu}\,\vec H,
 $$
@@ -989,7 +989,7 @@ The equation that the reduction produces has a solution theory of its own, and i
 | $\mathbb{B}_{C},\mathbb{B}_{H}$ | Scalar subspace, real-quaternion subspace |
 | $\mathbb{B}_{\Psi},\mathbb{B}_{\Phi}$ | Hermitian and anti-Hermitian subspaces |
 | $\tilde{\nabla},\tilde{\nabla}^{\natural}$ | Biquaternionic gradient and its quaternion conjugate |
-| $\Box=\tilde{\nabla}\tilde{\nabla}^{\natural}=\Delta-c^{-2}\partial^2/\partial {r'_{t}}^2$ | d'Alembertian in the medium |
+| $\Box=\tilde{\nabla}\tilde{\nabla}^{\natural}=\Delta-\partial^2/\partial {r'_{t}}^2$ | d'Alembertian in the medium |
 | $\epsilon,\mu$ | Permittivity and permeability of the medium |
 | $\epsilon_0,\mu_0$ | Vacuum permittivity and permeability |
 | $\vec D=\epsilon\vec E,\ \vec B=\mu\vec H$ | Constitutive relations |

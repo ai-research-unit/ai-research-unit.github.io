@@ -16,7 +16,7 @@ $$
 \tilde\nabla^{\natural}=\sum_{\mu\in\{t,x,y,z\}}\varepsilon_\mu e_\mu\frac{\partial}{\partial R_\mu},\qquad
 \Box=\tilde\nabla\tilde\nabla^{\natural}=\frac{\partial^2}{\partial R_t^2}+\Delta_Q,
 $$
-with $\varepsilon=(1,-1,-1,-1)$, and on the material sector $\partial/\partial R_t=-(i/c)\,\partial/\partial r'_t$, so that there $\Box=\Delta_Q-c^{-2}\partial^2/\partial {r'_t}^2$. No cell of this article carries a derivative.
+with $\varepsilon=(1,-1,-1,-1)$, and on the material sector $\partial/\partial R_t=-i\,\partial/\partial r'_t$, so that there $\Box=\Delta_Q-\partial^2/\partial {r'_t}^2$. No cell of this article carries a derivative.
 
 ## One Cell, Two Readings
 
@@ -235,7 +235,7 @@ and the massive equation is $(\mathbb{D}-k_m)\tilde{Ξ}_{\mathrm{sp}}=0$. The pa
 $$
 \mathbb{D}^2\tilde{Ξ}_{\mathrm{sp}}=\bigl(\tilde\nabla\tilde\nabla^{\natural}\tilde{Ξ}_{\mathrm{sp},L},\ \tilde\nabla^{\natural}\tilde\nabla\tilde{Ξ}_{\mathrm{sp},R}\bigr)=\Box\,\tilde{Ξ}_{\mathrm{sp}} ,
 $$
-with $\Box=\Delta_Q-c^{-2}\partial^2/\partial {r'_t}^2$ on the material sector, so that $(\mathbb{D}-k_m)(\mathbb{D}+k_m)=\Box-k_m^{2}$ is the Klein–Gordon operator exactly, with no overall sign left to fix. Here $k_m=mc/\hbar$ is the mass wave number, the inverse of the mass length.
+with $\Box=\Delta_Q-\partial^2/\partial {r'_t}^2$ on the material sector, so that $(\mathbb{D}-k_m)(\mathbb{D}+k_m)=\Box-k_m^{2}$ is the Klein–Gordon operator exactly, with no overall sign left to fix. Here $k_m=mc/\hbar$ is the mass wave number, the inverse of the mass length.
 
 The consequence is immediate. Set $\tilde{Ξ}_{\mathrm{sp},R}=0$ in a massive field: the first member reads $0=k_m\tilde{Ξ}_{\mathrm{sp},L}$, so $\tilde{Ξ}_{\mathrm{sp},L}=0$ as well, and a massive field carries both parts. A field of one letter alone is not a solution. At $m=0$ the pair decouples into $\tilde\nabla\tilde{Ξ}_{\mathrm{sp},R}=0$ and $\tilde\nabla^{\natural}\tilde{Ξ}_{\mathrm{sp},L}=0$, one member for each part, so a field of one part alone is allowed. That decoupling is the operator-level content of the statement that the letter and the helicity agree only in the massless limit.
 
@@ -303,7 +303,7 @@ The claims of this article, in order.
 | $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ | Biquaternion algebra |
 | even half, odd half | The cells with an even and with an odd number of generator factors; the even half is the image of $\mathbb{B}$ |
 | $\varepsilon=(+1,-1,-1,-1)$ | Sign vector of the four generators: the biquaternion norm on the Hermitian basis |
-| $\langle\tilde Q\rangle_\natural$, $Q_t=i c r'_t$ | Minkowski interval of the material coordinates, signature $(3,1)$ |
+| $\langle\tilde Q\rangle_\natural$, $Q_t=i r'_t$ | Minkowski interval of the material coordinates, signature $(3,1)$ |
 | $L_{a}R_{b}$ | Left multiplication $L_a$ and right multiplication $R_b$: $L_{a}R_{b}\tilde{Ξ}_{\mathrm{sp}} = a\tilde{Ξ}_{\mathrm{sp}} b$, $L_{a}R_{b}L_{c}R_{d} = L_{ac}R_{db}$ |
 | image of $\tilde Q$ | The $\mathbb{R}$-linear comparison with the even half, per *Matrix Representations Conventions*; named, never written as a symbol |
 | the four frame cells | The generator cells: $iR_{\mathrm{axf},\vec e_x}$, and $iL_{\mathrm{axf},\vec e_k}R_{\mathrm{axf},\vec e_y}$ for $k=1,2,3$ |

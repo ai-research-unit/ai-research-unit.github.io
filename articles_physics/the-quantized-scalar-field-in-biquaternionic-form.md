@@ -253,7 +253,7 @@ The biquaternion content of the field operator is therefore confined to its valu
 | $i$ | Central scalar imaginary |
 | $\mathbb{B}_{\Phi},\mathbb{B}_{\Psi}$ | Material (anti-Hermitian) and informational (Hermitian) sectors |
 | $\mathbb{B}_{C}=\mathrm{span}_{\mathbb{R}}\{e_t,ie_t\}$ | Centre; the field's value space |
-| $\tilde R_\Phi=i c r'_t\,e_t+r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z$ | Material coordinate |
+| $\tilde R_\Phi=i r'_t\,e_t+r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z$ | Material coordinate |
 | $\tilde{\nabla}=e_t\partial/\partial R_t+\sum_k \vec e_k\,\partial/\partial R_k$, $\Box=\partial^2/\partial R_t^2+\Delta$ | Gradient and d'Alembertian |
 | $\tilde{Ξ}_{\mathrm{fop}}(\tilde R_\Phi)=\xi_{\mathrm{fop}}(r_x)e_t$ | Quantized scalar field (central-valued) |
 | $\xi_{\mathrm{fop}}^{(+)},\xi_{\mathrm{fop}}^{(-)}$ | Annihilation (positive-frequency) and creation parts |

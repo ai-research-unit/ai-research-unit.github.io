@@ -49,7 +49,7 @@ a quadratic form with values in the **centre**, not in $\mathbb{R}$. Its coeffic
 $$
 \langle\tilde Q_1\tilde Q_1\rangle_{\natural}=\langle\tilde Q_1\rangle_{\natural}\langle\tilde Q_1\rangle_{\natural},
 $$
-and it is indefinite on $\mathbb{B}_{\Psi}$: for $\tilde R_\Psi=c r_t\,e_t+i\vec r_\Psi$ one has $\langle\tilde R_\Psi\rangle_{\natural}=(c^2 r_t^2-|\vec r_\Psi|^2)e_t$, of signature $(1,3)$. Its null cone is the pure-state boundary of the Bloch ball.
+and it is indefinite on $\mathbb{B}_{\Psi}$: for $\tilde R_\Psi=r_t\,e_t+i\vec r_\Psi$ one has $\langle\tilde R_\Psi\rangle_{\natural}=(r_t^2-|\vec r_\Psi|^2)e_t$, of signature $(1,3)$. Its null cone is the pure-state boundary of the Bloch ball.
 
 The two norms differ in every structural respect that matters here. The Hermitian norm is real-valued and positive definite; the biquaternion norm is centre-valued and indefinite. The Hermitian norm is preserved by the left action of the unitaries on the state module; the biquaternion norm is preserved by the left action of the unit-norm elements $SL(2,\mathbb{C})$. The Hermitian norm detects the state; the biquaternion norm detects the determinant. A reader who asks "which norm does the framework use" is asking a question with two correct answers, and the answer depends on whether the object at hand is a state overlap or a determinant.
 

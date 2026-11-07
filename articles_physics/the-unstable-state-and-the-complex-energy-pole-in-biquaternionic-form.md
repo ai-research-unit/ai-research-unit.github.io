@@ -12,10 +12,10 @@ This article treats the unstable state in the biquaternion framework of this ser
 The article is organised as follows. A first section defines the survival amplitude and the survival probability in the module and records the exact short-time law, which is quadratic and which no pure exponential satisfies. A second writes the resolvent of the interacting Hamiltonian, defines the self-energy, and locates the pole on the second sheet. A third reads the pole in the algebra: its conjugate mirror, and its centrality. A fourth derives the effective central self-energy of a block that couples the two module slots, which is the framework's form of the statement that a state-dependent coupling can be eliminated into a complex central potential. A fifth treats the exactly soluble case and separates what is transcribed from the external literature from what is recomputed here. A sixth gives the decay law and its limits, and a seventh separates what the algebra adds from what it does not. The closing sections are the open questions, the summary, the notation table and the external reading.
 
 $$
-\tilde R_\Psi = c r_t\,e_t + i\,\vec r_\Psi, \qquad c r_t\in\mathbb{R},\quad \vec r_\Psi\in\mathbb{R}^3,
+\tilde R_\Psi = r_t\,e_t + i\,\vec r_\Psi, \qquad r_t\in\mathbb{R},\quad \vec r_\Psi\in\mathbb{R}^3,
 $$
 
-and the centre is $\mathbb{B}_{C}=\mathbb{C}e_t$. The state module is $S=\mathbb{B}\tilde\Pi\cong\mathbb{C}^2$ with the dictionary $\mathsf{M}_2(\vec e_\mu)=-i\sigma_\mu$ and $\mathsf{M}_2(i\vec e_\mu)=\sigma_\mu$; a pure state is the idempotent $\tilde\Pi=\tfrac12(e_t+i\vec u)$ with $\vec u$ a unit vector along the $\vec e_\mu$, and $\mathrm{Tr}(\tilde\Pi)=1$. The trace convention is $\mathrm{Tr}=2\,\mathrm{Sc}$. The dynamics is $\tilde Q(r'_t)=\exp(-\frac{k_m\,i\,Hr'_{t}}{m\,c})$ with the state evolving by conjugation, $\tilde{Ϛ}_{\Psi}(r'_t)=\tilde Q(r'_t)\tilde{Ϛ}_{\Psi}(0)\tilde Q(r'_t)^{*}$; the evolution is $*$-unitary, $\tilde Q\tilde Q^{*}=e_t$, and the scalar part $c r_t$ of the Hamiltonian contributes only a global phase to the conjugated state. Energies are measured in the same units as $\frac{m\,c\,\omega}{k_m}$.
+and the centre is $\mathbb{B}_{C}=\mathbb{C}e_t$. The state module is $S=\mathbb{B}\tilde\Pi\cong\mathbb{C}^2$ with the dictionary $\mathsf{M}_2(\vec e_\mu)=-i\sigma_\mu$ and $\mathsf{M}_2(i\vec e_\mu)=\sigma_\mu$; a pure state is the idempotent $\tilde\Pi=\tfrac12(e_t+i\vec u)$ with $\vec u$ a unit vector along the $\vec e_\mu$, and $\mathrm{Tr}(\tilde\Pi)=1$. The trace convention is $\mathrm{Tr}=2\,\mathrm{Sc}$. The dynamics is $\tilde Q(r'_t)=\exp(-\frac{k_m\,i\,Hr'_{t}}{m\,c})$ with the state evolving by conjugation, $\tilde{Ϛ}_{\Psi}(r'_t)=\tilde Q(r'_t)\tilde{Ϛ}_{\Psi}(0)\tilde Q(r'_t)^{*}$; the evolution is $*$-unitary, $\tilde Q\tilde Q^{*}=e_t$, and the scalar part $r_t$ of the Hamiltonian contributes only a global phase to the conjugated state. Energies are measured in the same units as $\frac{m\,c\,\omega}{k_m}$.
 
 The convention for the resolvent follows *The Resolvent Operator*, which writes $R(\lambda)=(L-\lambda)^{-1}$; this article writes the Green's function $G(z)=(z-\tilde R_\Psi)^{-1}$, so the two are related by $G(z)=-R(z)$, and the poles are the eigenvalues in both.
 
@@ -351,7 +351,7 @@ What the algebra adds is that the pole is central, that a non-central coupling r
 |---|---|
 | $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ | Biquaternion algebra; centre $\mathbb{B}_{C}=\mathbb{C}e_t$ |
 | $\mathbb{B}_{\Psi}$, $\mathbb{B}_{\Phi}$ | Hermitian and anti-Hermitian subspaces |
-| $\tilde R_\Psi=c r_t\,e_t+i\vec r_\Psi$ | Hamiltonian, Hermitian, $c r_t\in\mathbb{R}$, $\vec r_\Psi\in\mathbb{R}^3$ |
+| $\tilde R_\Psi=r_t\,e_t+i\vec r_\Psi$ | Hamiltonian, Hermitian, $r_t\in\mathbb{R}$, $\vec r_\Psi\in\mathbb{R}^3$ |
 | $\tilde\Pi_0$ | Idempotent of the initial state, rank one, $\mathrm{Tr}=1$ |
 | $\tilde Q(r'_t)=\exp(-\frac{k_m\,i\,Hr'_{t}}{m\,c})$ | $*$-Unitary evolution, $\tilde Q\tilde Q^{*}=e_t$ |
 | $A(r'_t)=\mathrm{Tr}(\tilde\Pi_0\tilde Q(r'_t))$ | Survival amplitude; $P(r'_t)=\lvert A(r'_t)\rvert^{2}$ |

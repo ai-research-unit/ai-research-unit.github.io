@@ -70,7 +70,7 @@ so $i$ carries $\mathbb{B}_{\Psi}$ out of itself; it is not an operator on $\mat
 
 ## The Scalar Imaginary Exchanges the Two Sectors
 
-The relation $i\,\mathbb{B}_{\Psi} = \mathbb{B}_{\Phi}$ is the algebraic content of the Hermitian decomposition, and it is the whole reason the scalar imaginary is the right unit for the Schrödinger equation. Concretely, for a Hermitian element $\tilde R_\Psi = c r_t\,e_t + i\vec r_\Psi \in \mathbb{B}_{\Psi}$, using $\tilde R_\Psi^{*} = \tilde R_\Psi$, $i^{*} = -i$, and the centrality of $i$,
+The relation $i\,\mathbb{B}_{\Psi} = \mathbb{B}_{\Phi}$ is the algebraic content of the Hermitian decomposition, and it is the whole reason the scalar imaginary is the right unit for the Schrödinger equation. Concretely, for a Hermitian element $\tilde R_\Psi = r_t\,e_t + i\vec r_\Psi \in \mathbb{B}_{\Psi}$, using $\tilde R_\Psi^{*} = \tilde R_\Psi$, $i^{*} = -i$, and the centrality of $i$,
 
 $$
 (i\tilde R_\Psi)^{*} = \tilde R_\Psi^{*} i^{*} = \tilde R_\Psi\,(-i) = -i\tilde R_\Psi.
@@ -130,14 +130,14 @@ With these objects separated, the equation reads
 $$
 \boxed{\;\frac{m\,c\,i}{k_m}\partial/\partial r'_t\tilde{Ξ}_{\mathrm{sp}}(r'_t) = \tilde R_\Psi\,\tilde{Ξ}_{\mathrm{sp}}(r'_t),
 \qquad
-\tilde R_\Psi = c r_t\,e_t + i\vec r_\Psi \in  \mathbb{B}_{\Psi},
+\tilde R_\Psi = r_t\,e_t + i\vec r_\Psi \in  \mathbb{B}_{\Psi},
 \qquad
 \tilde{Ξ}_{\mathrm{sp}}(r'_t) \in  \mathbb{B}\tilde\Pi\;},
 $$
 
 where $i$ is the scalar imaginary. Because $i$ is central, $i\tilde R_\psii$, and there is no left/right ordering ambiguity in the equation. Because $\mathbb{B}\tilde\Pi$ is a left ideal, $\tilde R_\Psi\tilde{Ξ}_{\mathrm{sp}} \in \mathbb{B}\tilde\Pi$, so the equation is consistent within the module.
 
-**Solution.** Since $-i\tilde R_\Psi = -ic r_t\,e_t + \vec r_\Psi$ and the scalar and vector parts commute,
+**Solution.** Since $-i\tilde R_\Psi = -i r_t\,e_t + \vec r_\Psi$ and the scalar and vector parts commute,
 
 $$
 \boxed{\;\tilde Q(r'_t) = \exp\!\left(-\frac{k_m\,i\,Hr'_{t}}{m\,c}\right)
@@ -156,7 +156,7 @@ $$
 
 Differentiating the solution gives $\frac{m\,c\,i}{k_m}\partial/\partial r'_t\tilde{Ξ}_{\mathrm{sp}} =\frac{m\,c\,i}{k_m}(-\frac{k_m\,i\,H}{m\,c})\tilde{Ξ}_{\mathrm{sp}} = \tilde R_\Psi\tilde{Ξ}_{\mathrm{sp}}$, so it is the required solution.
 
-**Case checked.** For $\tilde R_\Psi = i\,\vec e_x$ one has $c r_t = 0$, $\vec r_\Psi = \vec e_x$, and $\tilde Q(r'_t) = \cos(\frac{k_m\,r'_{t}}{m\,c})e_t + \sin(\frac{k_m\,r'_{t}}{m\,c})\vec e_x$. Then $\tilde Q(r'_t)$ is $*$-unitary, and $\tilde R_\Psi\tilde Q = i \vec e_x(\cos(\frac{k_m\,r'_{t}}{m\,c})e_t + \sin(\frac{k_m\,r'_{t}}{m\,c})\vec e_x) = i\cos(\frac{k_m\,r'_{t}}{m\,c})\vec e_x - i\sin(\frac{k_m\,r'_{t}}{m\,c})e_t$ equals $\frac{m\,c\,i\,d\,\tilde{Q}}{k_m\,dr'_{t}}= i(-\sin(\frac{k_m\,r'_{t}}{m\,c})e_t + \cos(\frac{k_m\,r'_{t}}{m\,c})\vec e_x)$, term by term. This case was chosen independently of the general formula and confirms it.
+**Case checked.** For $\tilde R_\Psi = i\,\vec e_x$ one has $r_t = 0$, $\vec r_\Psi = \vec e_x$, and $\tilde Q(r'_t) = \cos(\frac{k_m\,r'_{t}}{m\,c})e_t + \sin(\frac{k_m\,r'_{t}}{m\,c})\vec e_x$. Then $\tilde Q(r'_t)$ is $*$-unitary, and $\tilde R_\Psi\tilde Q = i \vec e_x(\cos(\frac{k_m\,r'_{t}}{m\,c})e_t + \sin(\frac{k_m\,r'_{t}}{m\,c})\vec e_x) = i\cos(\frac{k_m\,r'_{t}}{m\,c})\vec e_x - i\sin(\frac{k_m\,r'_{t}}{m\,c})e_t$ equals $\frac{m\,c\,i\,d\,\tilde{Q}}{k_m\,dr'_{t}}= i(-\sin(\frac{k_m\,r'_{t}}{m\,c})e_t + \cos(\frac{k_m\,r'_{t}}{m\,c})\vec e_x)$, term by term. This case was chosen independently of the general formula and confirms it.
 
 **Consistency with the density matrix.** The companion article's equation for $\tilde{Ϛ}_{\Psi} = \tilde{Ξ}_{\mathrm{sp}}\tilde{Ξ}_{\mathrm{sp}}^{\dagger}$ follows from the spinor equation. Differentiating $\tilde{Ϛ}_{\Psi} = \tilde{Ξ}_{\mathrm{sp}}\tilde{Ξ}_{\mathrm{sp}}^{\dagger}$ and using $\partial/\partial r'_t\tilde{Ξ}_{\mathrm{sp}} = -\frac{k_m\,i\,\tilde{R}_{\Psi}\,\tilde{Ξ}_{\mathrm{sp}}}{m\,c}$, $\partial/\partial r'_t\tilde{Ξ}_{\mathrm{sp}}^{\dagger} =\frac{k_m\,i\,\tilde{Ξ}_{\mathrm{sp}}^{\dagger}\,\tilde{R}_{\Psi}}{m\,c}$ (valid because $\tilde R_\Psi^{*} = \tilde R_\Psi$) gives
 
@@ -220,7 +220,7 @@ The equation can be rearranged into a statement that lives entirely in one secto
 $$
 \partial/\partial r'_t\tilde{Ξ}_{\mathrm{sp}} = -\frac{k_m\,i}{m\,c}\tilde R_\Psi\tilde{Ξ}_{\mathrm{sp}},
 \qquad
--\frac{k_m\,i}{m\,c}\tilde R_\Psi =\frac{\vec r_\Psi - i c r_t e_t}{\frac{m\,c}{k_m}} \in  \mathbb{B}_{\Phi}.
+-\frac{k_m\,i}{m\,c}\tilde R_\Psi =\frac{\vec r_\Psi - i r_t e_t}{\frac{m\,c}{k_m}} \in  \mathbb{B}_{\Phi}.
 $$
 
 The generator $-\frac{k_m\,i\,H}{m\,c}$ is anti-Hermitian; this is the general reason the exponential is $*$-unitary. The two interpretations are then:
@@ -254,7 +254,7 @@ A structural caution belongs here. The wave function $\tilde{Ξ}_{\mathrm{sp}}$ 
 
 ## Open Questions
 
-**1. The local complex structure.** The series makes the complex structure local: it is set by the medium through $c = 1/\sqrt{\epsilon\mu}$ and reduces to $ic_0r'_t$ in vacuum. The scalar imaginary $i$ is a global central element of $\mathbb{B}$, and a central element cannot vary from point to point. Does the $i$ of the Schrödinger equation remain global, or does a local complex structure enter the state module? The relation between the two is unresolved.
+**1. The local complex structure.** The series makes the complex structure local: it is set by the medium through $c = 1/\sqrt{\epsilon\mu}$ and reduces to $i r'_t$ in vacuum. The scalar imaginary $i$ is a global central element of $\mathbb{B}$, and a central element cannot vary from point to point. Does the $i$ of the Schrödinger equation remain global, or does a local complex structure enter the state module? The relation between the two is unresolved.
 
 **2. Many qubits.** The extension to $n$ qubits is via $\mathbb{B}^{\otimes n} \cong M_{2^n}(\mathbb{C})$. The companion article leaves the tensor product over $\mathbb{C}$ as an open question. If it is taken over $\mathbb{C}$, the scalar imaginary remains available as the complex structure; if not, the question of the imaginary unit returns in a new form.
 
@@ -272,7 +272,7 @@ $$
 \boxed{\;\frac{m\,c\,i}{k_m}\partial/\partial r'_t\tilde{Ξ}_{\mathrm{sp}} = \tilde R_\Psi\tilde{Ξ}_{\mathrm{sp}}\;},
 $$
 
-with $\tilde R_\Psi = c r_t\,e_t + i\vec r_\Psi \in \mathbb{B}_{\Psi}$ Hermitian, $\tilde{Ξ}_{\mathrm{sp}}$ a spinor in the Peirce carrier $\mathbb{B}\tilde\Pi \cong \mathbb{C}^2$, a minimal left ideal here, and $i$ the **scalar imaginary** — the central root of $-1$ in $\mathbb{B}$, unique up to sign.
+with $\tilde R_\Psi = r_t\,e_t + i\vec r_\Psi \in \mathbb{B}_{\Psi}$ Hermitian, $\tilde{Ξ}_{\mathrm{sp}}$ a spinor in the Peirce carrier $\mathbb{B}\tilde\Pi \cong \mathbb{C}^2$, a minimal left ideal here, and $i$ the **scalar imaginary** — the central root of $-1$ in $\mathbb{B}$, unique up to sign.
 
 The symbol $i$ must not be confused with the quaternion units or the non-central roots of $-1$, which are rotation axes, and it is not a complex structure on $\mathbb{B}_{\Psi}$, since $i\,\mathbb{B}_{\Psi} = \mathbb{B}_{\Phi}$: the scalar imaginary is the canonical isomorphism between the two sectors, not an operator on either. The wave function is a spinor in the state module, not a generic element of $\mathbb{B}_{\Psi}$; the density matrix is recovered as $\tilde{Ϛ}_{\Psi} = \tilde{Ξ}_{\mathrm{sp}}\tilde{Ξ}_{\mathrm{sp}}^{\dagger}/\mathrm{Tr}(\tilde{Ξ}_{\mathrm{sp}}^{\dagger}\tilde{Ξ}_{\mathrm{sp}}) \in \mathbb{B}_{\Psi}$, and the spinor equation implies the parent article's von Neumann equation $\frac{m\,c\,i}{k_m}\partial/\partial r'_t\tilde{Ϛ}_{\Psi} = [H,\tilde{Ϛ}_{\Psi}]$.
 
@@ -291,12 +291,12 @@ Read in the two sectors, the equation says that the Hermitian observable $\tilde
 | $\mathbb{B}_{\Psi}$ | Hermitian subspace (observables): $\frac{m\,c\,i}{k_m}\partial/\partial r'_t\tilde{Ξ}_{\mathrm{sp}} = \tilde R_\Psi\tilde{Ξ}_{\mathrm{sp}}$ has $\tilde R_\Psi \in \mathbb{B}_{\Psi}$ |
 | $\mathbb{B}_{\Phi}$ | Anti-Hermitian subspace (generators): the generator is $-\frac{k_m\,i\,H}{m\,c\,\in\,\mathbb{B}}_{\Phi}$ |
 | $\mathbb{B}_{H}$ | Real quaternion subspace; home of the unit pure quaternions $\vec u$ |
-| $\tilde R_\Psi = c r_t\,e_t + i\vec r_\Psi$ | Hermitian element (Hamiltonian) |
+| $\tilde R_\Psi = r_t\,e_t + i\vec r_\Psi$ | Hermitian element (Hamiltonian) |
 | $\tilde\Pi_{1,2}(\vec u) = \tfrac12(e_t \pm i\vec u)$ | Idempotent (pure state); $\vec u$ the state axis |
 | $\mathbb{B}\tilde\Pi \cong \mathbb{C}^2$ | Minimal left ideal: the state module of spinors $\tilde{Ξ}_{\mathrm{sp}}$ |
 | $\tilde{Ϛ}_{\Psi} = \tilde{Ξ}_{\mathrm{sp}}\tilde{Ξ}_{\mathrm{sp}}^{\dagger}/\mathrm{Tr}(\tilde{Ξ}_{\mathrm{sp}}^{\dagger}\tilde{Ξ}_{\mathrm{sp}})$ | Density matrix associated to a spinor |
 | $\tilde Q(r'_t) = \exp(-\frac{k_m\,i\,Hr'_{t}}{m\,c})$ | $*$-Unitary evolution, $\tilde{Ξ}_{\mathrm{sp}}(r'_t) = \tilde Q(r'_t)\tilde{Ξ}_{\mathrm{sp}}(0)$ |
-| $2\,\mathrm{Sc}(\tilde\Pi_1(\vec u)\tilde R_\Psi^{*}) = c r_t + \vec u\cdot\vec r_\Psi = \operatorname{Tr}(\tilde\Pi_1(\vec u)\tilde R_\Psi^{*})$ | Trace reading last / Born rule |
+| $2\,\mathrm{Sc}(\tilde\Pi_1(\vec u)\tilde R_\Psi^{*}) = r_t + \vec u\cdot\vec r_\Psi = \operatorname{Tr}(\tilde\Pi_1(\vec u)\tilde R_\Psi^{*})$ | Trace reading last / Born rule |
 | $\vec e_\mu \vec e_\nu = \varepsilon_{\mu\nu\lambda}\vec e_\lambda$, $\mu \neq \nu$ | Quaternion multiplication |
 | $\langle\tilde{Q}_1,\tilde{Q}_2\rangle_{*}$ | the general plain sesquilinear form, $\mathrm{Sc}(\tilde{Q}_1\tilde{Q}_2^{*})$; on the diagonal $\langle\tilde{Q}_2,\tilde{Q}_2\rangle_{*}=\sum_\mu\lvert Q_{2\mu}\rvert^{2}$ |
 | $\langle\tilde{Q}_1,\tilde{Q}_2\rangle$ | the general plain bilinear form, the scalar part of the general plain bilinear product, $\mathrm{Sc}(\tilde{Q}_1\tilde{Q}_2)$ |

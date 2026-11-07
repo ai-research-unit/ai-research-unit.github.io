@@ -16,7 +16,7 @@ Three claims organise the discussion.
 
 The article closes by separating what the framework contains from what remains an agenda. The separation is sharp: the null structure of the tetrad is native, and the curvature that the tetrad is used to describe is not.
 
-The conventions are inherited from the read-list articles and none is redefined. The biquaternion algebra is $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, with basis $e_t = 1, \vec e_x, \vec e_y, \vec e_z$ satisfying $\vec e_k^2 = -e_t$ and $\vec e_x \vec e_y = \vec e_z$, and scalar imaginary $i$ commuting with the quaternion units. The anti-Hermitian and Hermitian subspaces are $\mathbb{B}_{\Phi}$ and $\mathbb{B}_{\Psi}$, the real-quaternion subspace is $\mathbb{B}_{H}$, and the biquaternion norm is $\langle\tilde Q\rangle_{\natural} = \tilde Q\tilde Q^{\natural}$. The material sector is $\mathbb{B}_{\Phi} = \{i c r'_t e_t + r_x\vec e_x + r_y\vec e_y + r_z\vec e_z : r'_t, r_k \in \mathbb{R}\}$, with four-vector coordinates $(c r'_t,r_x,r_y,r_z)$, and the bilinear (polar) form on it is
+The conventions are inherited from the read-list articles and none is redefined. The biquaternion algebra is $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, with basis $e_t = 1, \vec e_x, \vec e_y, \vec e_z$ satisfying $\vec e_k^2 = -e_t$ and $\vec e_x \vec e_y = \vec e_z$, and scalar imaginary $i$ commuting with the quaternion units. The anti-Hermitian and Hermitian subspaces are $\mathbb{B}_{\Phi}$ and $\mathbb{B}_{\Psi}$, the real-quaternion subspace is $\mathbb{B}_{H}$, and the biquaternion norm is $\langle\tilde Q\rangle_{\natural} = \tilde Q\tilde Q^{\natural}$. The material sector is $\mathbb{B}_{\Phi} = \{i r'_t e_t + r_x\vec e_x + r_y\vec e_y + r_z\vec e_z : r'_t, r_k \in \mathbb{R}\}$, with four-vector coordinates $(r'_t,r_x,r_y,r_z)$, and the bilinear (polar) form on it is
 
 $$
 \langle \tilde Q_1, \tilde Q_2\rangle_{\natural} \;=\; \mathrm{Sc}\big(\tilde Q_1\tilde Q_2^{\natural}\big) \;=\; -c^2r'_{1t}r'_{2t} + r_{1x}r_{2x} + r_{1y}r_{2y} + r_{1z}r_{2z} ,
@@ -62,7 +62,7 @@ m = -\frac{1}{\sqrt2}\vec e_x - \frac{i}{\sqrt2}\vec e_y, \qquad
 \tag{2}
 $$
 
-In four-vector coordinates $(c r'_t,r_x,r_y,r_z)$ the four legs read
+In four-vector coordinates $(r'_t,r_x,r_y,r_z)$ the four legs read
 
 $$
 l = \big(\tfrac{1}{\sqrt2},0,0,-\tfrac{1}{\sqrt2}\big), \quad
@@ -138,9 +138,9 @@ $$
 \tag{7}
 $$
 
-Substituting (2), the right-hand side of (7) reproduces the interval $-c^2(r'_t)^2+r_x^2+r_y^2+r_z^2$: the four zero divisors rebuild the material-sector interval, and its one minus is the square of the $i$ in $Q_t=i c r'_t$. No other input is used. Both (6) and (7) were recomputed symbolically; (6) was checked on a general element $\tilde{Q}$ with all four coefficients arbitrary, and (7) on the explicit legs.
+Substituting (2), the right-hand side of (7) reproduces the interval $-c^2(r'_t)^2+r_x^2+r_y^2+r_z^2$: the four zero divisors rebuild the material-sector interval, and its one minus is the square of the $i$ in $Q_t=i r'_t$. No other input is used. Both (6) and (7) were recomputed symbolically; (6) was checked on a general element $\tilde{Q}$ with all four coefficients arbitrary, and (7) on the explicit legs.
 
-Equation (7) is the null-tetrad counterpart of the frame relation $g_{\mu\nu} = \langle\tilde E_{\Phi}_\mu,\tilde E_{\Phi}_\nu\rangle_{\natural}$ of the parent article. There the frame was orthonormal and its legs lay in $\mathbb{B}_{\Phi}$; here the frame is null and complex, and its legs are zero divisors. At each point the two are related by the local Lorentz transformation that carries one basis to the other, so the parent's remark — that the algebra supplies the local Lorentz group and the home of the frame, but not the frame itself — applies here verbatim.
+Equation (7) is the null-tetrad counterpart of the frame relation $g_{\mu\nu} = \langle\tilde E_{\Phi,\mu},\tilde E_{\Phi,\nu}\rangle_{\natural}$ of the parent article. There the frame was orthonormal and its legs lay in $\mathbb{B}_{\Phi}$; here the frame is null and complex, and its legs are zero divisors. At each point the two are related by the local Lorentz transformation that carries one basis to the other, so the parent's remark — that the algebra supplies the local Lorentz group and the home of the frame, but not the frame itself — applies here verbatim.
 
 ## The Spinor Dyad Behind the Tetrad
 

@@ -270,7 +270,7 @@ The neutron's composite character is not reached. The framework has no colour gr
 | $i$ | Scalar imaginary, $i^2=-1$, central |
 | $\mathbb{B}_{\Phi}, \mathbb{B}_{\Psi}$ | Material (anti-Hermitian) and informational (Hermitian) sectors; $\mathbb{B}=\mathbb{B}_{\Phi}\oplus\mathbb{B}_{\Psi}$ |
 | $\tilde{\nabla}$ | Biquaternionic gradient, the Dirac operator, acting on the left |
-| $\nabla$, $Q_t=i c r'_t$ | Spatial gradient; imaginary time of the material sector |
+| $\nabla$, $Q_t=i r'_t$ | Spatial gradient; imaginary time of the material sector |
 | $\Box$ | d'Alembertian, the quaternionic norm of the gradient |
 | $\tilde{Ξ}_{\mathrm{sp}}=\tilde{Ξ}_{\mathrm{sp},L}+\tilde{Ξ}_{\mathrm{sp},R}$ | The field, an element of $\mathbb{B}$; $\tilde{Ξ}_{\mathrm{sp},L}$ the value L, $\tilde{Ξ}_{\mathrm{sp},R}$ the value R, at the axis $\vec e_z$ |
 | $\tilde{Ξ}_{\mathrm{sp}}^{\flat} = -\tilde{Ξ}_{\mathrm{sp}}^*$ | The algebra's real structure |
@@ -295,7 +295,7 @@ The neutron's composite character is not reached. The framework has no colour gr
 - [Fock Space and Creation/Annihilation Operators in Biquaternionic Form](fock-space-and-creation-annihilation-operators-in-biquaternionic-form.html) — the many-particle space (the antisymmetric tensor algebra of the one-particle space) and its operators, the construction that lets a three-fermion *state* be written while supplying no binding.
 - [Quantum Chromodynamics under the Biquaternion Framework — A Research Agenda](quantum-chromodynamics-under-the-biquaternion-framework-a-research-agenda.html) — the established ceiling on the colour group, the absent confinement mechanism, and the three-way classification the composite section inherits.
 - [Non-Abelian Gauge Fields in Biquaternionic Form](non-abelian-gauge-fields-in-biquaternionic-form.html) — the compact gauge algebra inside $\mathbb{B}_{\Phi}$ and the non-abelian machinery that stops short of colour.
-- [The Material Sector: Four-Vectors, Interval and Lorentz Action](the-material-sector-four-vectors-interval-and-lorentz-action.html) — the sector decomposition, the four-vectors, and the $i c r'_t$ convention.
+- [The Material Sector: Four-Vectors, Interval and Lorentz Action](the-material-sector-four-vectors-interval-and-lorentz-action.html) — the sector decomposition, the four-vectors, and the $i r'_t$ convention.
 - [The Informational Sector: States, Observables and Probability](the-informational-sector-states-observables-and-probability.html) — the Hermitian sector, the rotor action, and the trace formula.
 - [Introduction to the Biquaternion Universe](introduction-to-the-biquaternion-universe.html) — the algebra, the two sectors, the frame constants, and the open many-particle extension on which a composite construction would depend.
 - [The Spinor Module in Biquaternionic Form and Its Lorentz Action](the-spinor-module-in-biquaternionic-form-and-its-lorentz-action.html) — the Lorentz action on the field and the representation on which the spin-$\tfrac12$ content rests.

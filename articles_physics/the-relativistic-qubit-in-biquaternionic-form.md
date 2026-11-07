@@ -39,7 +39,7 @@ so the state space is the Bloch ball $|\vec r|\leq1$, and the pure states are it
 $$
 \tilde\Pi_{1,2}(\vec u) = \tfrac12\bigl(e_t \pm i\vec u\bigr), \qquad |\vec u| = 1,
 $$
-and for a Hermitian observable $\tilde R_\Psi = c r_t e_t + i\vec r_\Psi$ the Born pairing is $\langle\tilde{Ϛ}_{\Psi},\tilde R_\Psi\rangle_{*}/\langle\tilde{Ϛ}_{\Psi},e_t\rangle_{*}=\mathrm{Sc}(\tilde{Ϛ}_{\Psi}\tilde R_\Psi^{*})/\mathrm{Sc}(\tilde{Ϛ}_{\Psi}) = c r_t + \vec r\cdot\vec r_\Psi$, whose trace reading at normalisation is $\operatorname{Tr}(\tilde{Ϛ}_{\Psi}\tilde R_\Psi^{*})/\operatorname{Tr}(\tilde{Ϛ}_{\Psi})=\operatorname{Tr}(\tilde{Ϛ}_{\Psi}\tilde R_\Psi)/\operatorname{Tr}(\tilde{Ϛ}_{\Psi})$, the star being inert on $\mathbb{B}_{\Psi}$ and the unstarred trace real, and non-negative when $\tilde R_\Psi\ge0$. None of this uses relativity; it is the content of the quantum-mechanical companion, recalled here because the relativistic qubit is a structure imposed on this state space.
+and for a Hermitian observable $\tilde R_\Psi = r_t e_t + i\vec r_\Psi$ the Born pairing is $\langle\tilde{Ϛ}_{\Psi},\tilde R_\Psi\rangle_{*}/\langle\tilde{Ϛ}_{\Psi},e_t\rangle_{*}=\mathrm{Sc}(\tilde{Ϛ}_{\Psi}\tilde R_\Psi^{*})/\mathrm{Sc}(\tilde{Ϛ}_{\Psi}) = r_t + \vec r\cdot\vec r_\Psi$, whose trace reading at normalisation is $\operatorname{Tr}(\tilde{Ϛ}_{\Psi}\tilde R_\Psi^{*})/\operatorname{Tr}(\tilde{Ϛ}_{\Psi})=\operatorname{Tr}(\tilde{Ϛ}_{\Psi}\tilde R_\Psi)/\operatorname{Tr}(\tilde{Ϛ}_{\Psi})$, the star being inert on $\mathbb{B}_{\Psi}$ and the unstarred trace real, and non-negative when $\tilde R_\Psi\ge0$. None of this uses relativity; it is the content of the quantum-mechanical companion, recalled here because the relativistic qubit is a structure imposed on this state space.
 
 ### Why the carrier is forced
 
@@ -148,7 +148,7 @@ $$
 $$
 \tilde{\mathcal L}_{\Phi}(u) = \tfrac{i}{2}\,e_t - \tfrac12\,\vec r ,
 $$
-so in the four-vector coordinates $\tilde R_\Phi = i c r'_t\,e_t + r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z$ its time component is $c r'_{t} = \tfrac12 > 0$ and its spatial direction is
+so in the four-vector coordinates $\tilde R_\Phi = i r'_t\,e_t + r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z$ its time component is $r'_{t} = \tfrac12 > 0$ and its spatial direction is
 $$
 \vec u_p = -\vec u_r .
 $$
@@ -263,7 +263,7 @@ The frame dependence of everything that follows enters through the momentum argu
 
 ## Observables, Generators, and the Two Sectors
 
-**Observables.** The observables of the qubit are the Hermitian elements $\tilde R_\Psi = c r_t\,e_t + i\vec r_\Psi$, with the spin operators
+**Observables.** The observables of the qubit are the Hermitian elements $\tilde R_\Psi = r_t\,e_t + i\vec r_\Psi$, with the spin operators
 $$
 \tilde{S}_{\Psi,k} =\frac{m\,c}{2\,k_m}\,i \vec e_k , \qquad [\tilde{S}_{\Psi,j},\tilde{S}_{\Psi,k}] =\frac{m\,c\,i\,\epsilon_{jkl}\,\tilde{S}_{\Psi,l}}{k_m},
 $$

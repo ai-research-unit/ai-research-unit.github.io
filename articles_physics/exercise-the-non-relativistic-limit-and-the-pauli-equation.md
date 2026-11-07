@@ -28,14 +28,14 @@ $$
 \Box=\tilde\nabla\tilde\nabla^{\natural}=\tilde\nabla^{\natural}\tilde\nabla=\frac{\partial^2}{\partial R_t^2}+\Delta_Q .
 $$
 
-On the material sector, where $Q_t=i c r'_t$, the gradient and its conjugate read
+On the material sector, where $Q_t=i r'_t$, the gradient and its conjugate read
 
 $$
 \tilde\nabla\big|_{\mathbb{B}_{\Phi}}=-\frac{i}{c}e_t\frac{\partial}{\partial r'_t}+\sum_k\vec e_k\frac{\partial}{\partial r_k},
 \qquad
 \tilde\nabla^{\natural}\big|_{\mathbb{B}_{\Phi}}=-\frac{i}{c}e_t\frac{\partial}{\partial r'_t}-\sum_k\vec e_k\frac{\partial}{\partial r_k},
 \qquad
-\Box\big|_{\mathbb{B}_{\Phi}}=\Delta-\frac{1}{c^2}\frac{\partial^2}{\partial {r'_t}^2},
+\Box\big|_{\mathbb{B}_{\Phi}}=\Delta-\frac{\partial^2}{\partial {r'_t}^2},
 $$
 
 and the pure part of the gradient is written $D_3=\sum_k\vec e_k\partial/\partial r_k$. Minimal coupling shifts each derivative, $\partial/\partial R_\mu\to\partial/\partial R_\mu-\frac{k_m\,iqA_{\mu}}{m\,c}$, and with it the gradient:
@@ -50,7 +50,7 @@ $$
 \sum_k\vec e_k\pi_k=-\frac{m\,c\,i\,D_{3}^{A}}{k_m},
 $$
 
-with $\pi_k=p_k-qA_k$ and $D_3^A=\sum_k\vec e_k(\partial/\partial r_k-\frac{k_m\,iqA_{k}}{m\,c})$ the pure part of the gauged gradient. The corpus names this family $\tilde\nabla_{\mathrm{gco}}$ in *The Covariant Derivative and the Gauge Connection in Biquaternionic Form*, where the potential is written $i\,a'_t\,e_t+\vec A$; the exercise keeps its own $\tilde A_{\Phi}=Ξ e_t-\vec A$ and writes the operator out rather than borrowing the name. A plane wave $\exp\!\bigl(i(k_0x_0-\vec k\cdot\vec q)\bigr)$, with $x_0=c r'_{t}$, replaces the gradient by the element
+with $\pi_k=p_k-qA_k$ and $D_3^A=\sum_k\vec e_k(\partial/\partial r_k-\frac{k_m\,iqA_{k}}{m\,c})$ the pure part of the gauged gradient. The corpus names this family $\tilde\nabla_{\mathrm{gco}}$ in *The Covariant Derivative and the Gauge Connection in Biquaternionic Form*, where the potential is written $i\,a'_t\,e_t+\vec A$; the exercise keeps its own $\tilde A_{\Phi}=Ξ e_t-\vec A$ and writes the operator out rather than borrowing the name. A plane wave $\exp\!\bigl(i(k_0x_0-\vec k\cdot\vec q)\bigr)$, with $x_0=r'_{t}$, replaces the gradient by the element
 
 $$
 \tilde K=k_0-i\vec k,
@@ -69,7 +69,7 @@ $$
 The massive case is not of that form, and the reason is a square. The square of the gradient is not scalar: the time unit commutes with the three spatial units instead of anticommuting with them, so the mixed derivatives add, and each spatial unit squares to $-e_t$, which puts the wrong sign on the Laplacian. Explicitly, on a general field,
 
 $$
-\tilde\nabla^2=\Box-2\Delta-\frac{2i}{c}\sum_k\vec e_k\frac{\partial^2}{\partial r'_t\,\partial r_k},
+\tilde\nabla^2=\Box-2\Delta-2i\sum_k\vec e_k\frac{\partial^2}{\partial r'_t\,\partial r_k},
 $$
 
 so $\tilde\nabla^2\neq\Box$ and no scalar mass can be subtracted from the square. The massive equation is therefore a pair of first-order equations in two fields, the **chiral pair**, and it is stated below. No one-field first-order massive equation is written anywhere in this exercise.
@@ -172,7 +172,7 @@ $$
 
 and the odd operator is the pure part of the gauged gradient, $\sum_k\vec e_k\pi_k=-\frac{m\,c\,i\,D_{3}^{A}}{k_m}$, multiplied on the right by $\vec e_y$. Writing it as $\frac{m\,c^{2}\,\vec \pi}{k_m}$, that is as the left multiplication by an element, would make it even; the right multiplier $\vec e_y$ is what makes it odd, and it is also what reverses the chirality.
 
-*Step 2: factoring out the rest energy.* Write $F=\exp(-i\theta)\,G$ with $\theta=cr'_t\,k_m$. The factor is the central element $\cos\theta-i\sin\theta$, which commutes with every operator of the reduction, so it can be cancelled on both sides. What is left of the mass term is $(\beta-1)mc^2$, which vanishes on the large part and is $-2mc^2$ on the small part, and the parent's two coupled equations follow:
+*Step 2: factoring out the rest energy.* Write $F=\exp(-i\theta)\,G$ with $\theta=r'_t\,k_m$. The factor is the central element $\cos\theta-i\sin\theta$, which commutes with every operator of the reduction, so it can be cancelled on both sides. What is left of the mass term is $(\beta-1)mc^2$, which vanishes on the large part and is $-2mc^2$ on the small part, and the parent's two coupled equations follow:
 
 $$\frac{m\,c\,i}{k_m}\frac{\partial\tilde{Ξ}_{\mathrm{sp},\mathrm{evn}}}{\partial  r'_t}=O\tilde{Ξ}_{\mathrm{sp},\mathrm{odd}}+qΞ\tilde{Ξ}_{\mathrm{sp},\mathrm{evn}},
 $$
@@ -470,7 +470,7 @@ $$
 
 so the term is Hermitian if and only if $\nabla\times\vec E=0$, its failure of Hermiticity being proportional to the curl. Since $\vec E=-\nablaΞ$ for an electrostatic field, $\nabla\times\vec E=-\nabla\times\nablaΞ=0$ identically, and the term is Hermitian. Writing it instead as $\boldsymbol\sigma\cdot(\nabla V\times\vec\pi)$ makes this manifest, because $\nabla V$ is a gradient. For a general time-dependent field, where $\vec E$ has a solenoidal part and $\nabla\times\vec E=-\partial/\partial r'_t\,\vec B$, the antisymmetric part does not vanish and the non-relativistic reduction requires the symmetrized ordering; this is the only place in the reduction where the result is convention- and ordering-sensitive beyond the metric conventions already noted.
 
-*Step 2: the $\mathbb{B}_{\Psi}$ representatives.* Under the isomorphism, a Hermitian $2\times2$ matrix $c r_t\,I_2+\vec r_\Psi\cdot\boldsymbol\sigma$ corresponds to the Hermitian biquaternion $c r_t\,e_t+i\vec r_\Psi\in\mathbb{B}_{\Psi}$. Applying it term by term, with $\vec B=\sum_k B_k\vec e_k$ and $(\vec E\times\vec\pi)=(\vec E\times\vec\pi)_k\vec e_k$,
+*Step 2: the $\mathbb{B}_{\Psi}$ representatives.* Under the isomorphism, a Hermitian $2\times2$ matrix $r_t\,I_2+\vec r_\Psi\cdot\boldsymbol\sigma$ corresponds to the Hermitian biquaternion $r_t\,e_t+i\vec r_\Psi\in\mathbb{B}_{\Psi}$. Applying it term by term, with $\vec B=\sum_k B_k\vec e_k$ and $(\vec E\times\vec\pi)=(\vec E\times\vec\pi)_k\vec e_k$,
 
 | Term of $H$ | Biquaternion representative | Sector |
 |---|---|---|
@@ -489,7 +489,7 @@ Every term of the reduced, two-component Hamiltonian is Hermitian, hence every t
 
 2. **The anti-Hermitian generator.** $S_1$ is Hermitian, so $iS_1$ is anti-Hermitian: it plays the rôle that the elements of $\mathbb{B}_{\Phi}$ play in the companion quantum article, where the Lie algebra of the $*$-unitary group is $\mathbb{B}_{\Phi}$. It is not itself in $\mathbb{B}_{\Phi}$, because it is built from right multiplications and is not a left multiplication by an element. The two gradings must not be conflated: the Foldy–Wouthuysen grading is by conjugation with $\beta$, the $\mathbb{B}_{\Psi}/\mathbb{B}_{\Phi}$ grading is by ${}^{*}$. Thus the odd operator $O$ is Foldy–Wouthuysen-odd and Hermitian, yet it is not the left multiplication by the element $\frac{m\,c^{2}\,\vec \pi}{k_m}$ — that element acts on one side and is even — and the identification of "odd" with "not in $\mathbb{B}_{\Psi}$" is incorrect.
 
-3. **The real structure and the mass term.** In the biquaternion equation the conjugation $\flat=-{}^{*}$ is the algebra's real structure. It maps $\mathbb{B}_{\Psi}$ to $\mathbb{B}_{\Phi}$ and fixes $\mathbb{B}_{\Phi}$: if $F\in\mathbb{B}_{\Psi}$ then $F^\flat=-F\in\mathbb{B}_{\Phi}$, and if $F\in\mathbb{B}_{\Phi}$ then $F^\flat=F$. Its action is diagonal on the sector decomposition with opposite signs $\mp1$: a coupling built on $\flat$ — a Majorana-type mass, $mF^\flat$ — would carry those opposite signs. The parent's mass term is not that coupling; it is the linear, chirality-off-diagonal pair $\tilde\nabla F_R=mF_L$, $\tilde\nabla^{\natural}F_L=mF_R$, which couples the two values of the chirality and leaves each element's sector membership untouched. The operation that exchanges the two sectors is multiplication by the central $i$. The rest-energy factor that is removed before the reduction, the central element $\cos\theta-i\sin\theta$ with $\theta=cr'_t\,k_m$, is not Hermitian either: the conjugation inverts $\theta$, so the element is fixed by ${}^{*}$ neither as it stands nor after multiplication by $-1$, and it lies in neither $\mathbb{B}_{\Psi}$ nor $\mathbb{B}_{\Phi}$. The phase that removes the mass term from a $\beta$-diagonal equation, $\exp(-i\beta\theta)=\cos\theta\,e_t+\sin\theta\,\vec e_x$, is a right multiplication, and it splits the other way: its scalar part lies in $\mathbb{B}_{\Psi}$ and its pure part in $\mathbb{B}_{\Phi}$, since $\vec e_x$ is anti-Hermitian. Either way the rest-energy factor is a phase and not an observable, and it must be factored out before a two-component (hence $\mathbb{B}_{\Psi}$) description of the dynamics is reached.
+3. **The real structure and the mass term.** In the biquaternion equation the conjugation $\flat=-{}^{*}$ is the algebra's real structure. It maps $\mathbb{B}_{\Psi}$ to $\mathbb{B}_{\Phi}$ and fixes $\mathbb{B}_{\Phi}$: if $F\in\mathbb{B}_{\Psi}$ then $F^\flat=-F\in\mathbb{B}_{\Phi}$, and if $F\in\mathbb{B}_{\Phi}$ then $F^\flat=F$. Its action is diagonal on the sector decomposition with opposite signs $\mp1$: a coupling built on $\flat$ — a Majorana-type mass, $mF^\flat$ — would carry those opposite signs. The parent's mass term is not that coupling; it is the linear, chirality-off-diagonal pair $\tilde\nabla F_R=mF_L$, $\tilde\nabla^{\natural}F_L=mF_R$, which couples the two values of the chirality and leaves each element's sector membership untouched. The operation that exchanges the two sectors is multiplication by the central $i$. The rest-energy factor that is removed before the reduction, the central element $\cos\theta-i\sin\theta$ with $\theta=r'_t\,k_m$, is not Hermitian either: the conjugation inverts $\theta$, so the element is fixed by ${}^{*}$ neither as it stands nor after multiplication by $-1$, and it lies in neither $\mathbb{B}_{\Psi}$ nor $\mathbb{B}_{\Phi}$. The phase that removes the mass term from a $\beta$-diagonal equation, $\exp(-i\beta\theta)=\cos\theta\,e_t+\sin\theta\,\vec e_x$, is a right multiplication, and it splits the other way: its scalar part lies in $\mathbb{B}_{\Psi}$ and its pure part in $\mathbb{B}_{\Phi}$, since $\vec e_x$ is anti-Hermitian. Either way the rest-energy factor is a phase and not an observable, and it must be factored out before a two-component (hence $\mathbb{B}_{\Psi}$) description of the dynamics is reached.
 
 *Step 4: the sides, one line per operator.* Every operator of the reduction is listed with the element that multiplies on the left and the element that multiplies on the right. The column headed "side" is the answer to the only question that matters here: whether the operator is a single multiplication or a product of two.
 

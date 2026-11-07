@@ -14,7 +14,7 @@ The article is organised as follows. The next section fixes the classical field,
 
 - Companion article *The Klein–Gordon Equation in Biquaternionic Form*, for the field equation, its two frequency branches, the mass-shell condition, and the conserved current.
 - Companion article *Noether's Theorem in Biquaternionic Form*, for the scalar Lagrangian, its central scalar form, the $\mathrm{U}(1)$ current $\tilde J_{\Phi}\in\mathbb{B}_{\Phi}$, and the energy–momentum tensor.
-- Companion article *The Material Sector: Four-Vectors, Interval and Lorentz Action*, for the material four-wavevector, the biquaternion norm, and the $i c r'_t$ coordinate.
+- Companion article *The Material Sector: Four-Vectors, Interval and Lorentz Action*, for the material four-wavevector, the biquaternion norm, and the $i r'_t$ coordinate.
 - Companion article *Fock Space and Creation/Annihilation Operators in Biquaternionic Form*, for the trace argument against a bosonic mode in $\mathbb{B}$, and for the exterior and symmetric algebras as the fermionic and bosonic Fock spaces.
 - Companion article *The Spin–Statistics Theorem in Biquaternionic Form*, for the connection between spin and the choice of bracket.
 - Companion article *Canonical Quantization of the Biquaternion Dirac Field*, for the contrasting constrained quantization and the grading the algebra does not supply.
@@ -28,7 +28,7 @@ $$
 \tilde{Ξ}(\tilde R_\Phi)=\xi(\tilde R_\Phi)\,e_t,\qquad \xi:\mathbb{R}^{1,3}\to\mathbb{C},
 $$
 
-with $\tilde R_\Phi=i c r'_t\,e_t+r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z\in\mathbb{B}_{\Phi}$. Its action is $S[\tilde{Ξ}]=\int\mathcal{L}\,d^4r$ with the real Lagrangian density established by the companion article *Noether's Theorem in Biquaternionic Form*,
+with $\tilde R_\Phi=i r'_t\,e_t+r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z\in\mathbb{B}_{\Phi}$. Its action is $S[\tilde{Ξ}]=\int\mathcal{L}\,d^4r$ with the real Lagrangian density established by the companion article *Noether's Theorem in Biquaternionic Form*,
 
 $$
 \mathcal{L}=-\,\mathrm{Sc}\!\left[(\tilde{\nabla}^{\natural}\tilde{Ξ}^{*})(\tilde{\nabla}\tilde{Ξ})\right]
@@ -36,17 +36,17 @@ $$
 =-\,(\partial/\partial R_t\,\xi^*)(\partial/\partial R_t\,\xi)-\sum_k(\partial/\partial R_k\,\xi^*)(\partial/\partial R_k\,\xi)-k_m^{2}\xi^*\xi .
 $$
 
-Because $\partial/\partial R_t=-\tfrac{i}{c}\partial/\partial r'_t$, the Lagrangian written in the physical time is
+Because $\partial/\partial R_t=-i\partial/\partial r'_t$, the Lagrangian written in the physical time is
 
 $$
-\mathcal{L}=\frac{1}{c^2}|\partial\xi/\partial r'_t|^2-|\nabla\xi|^2-k_m^{2}|\xi|^2 .
+\mathcal{L}=|\partial\xi/\partial r'_t|^2-|\nabla\xi|^2-k_m^{2}|\xi|^2 .
 $$
 
 The **conjugate momentum** is
 
 $$
-\pi=\frac{\partial\mathcal{L}}{\partial\left(\partial\xi/\partial r'_t\right)}=\frac{1}{c^2}\left(\partial\xi/\partial r'_t\right)^{\,*},\qquad
-\pi^\dagger=\frac{\partial\mathcal{L}}{\partial\left(\partial\xi/\partial r'_t\right)^{\,*}}=\frac{1}{c^2}\partial\xi/\partial r'_t,
+\pi=\frac{\partial\mathcal{L}}{\partial\left(\partial\xi/\partial r'_t\right)}=\left(\partial\xi/\partial r'_t\right)^{\,*},\qquad
+\pi^\dagger=\frac{\partial\mathcal{L}}{\partial\left(\partial\xi/\partial r'_t\right)^{\,*}}=\partial\xi/\partial r'_t,
 $$
 
 and the Legendre transform is **regular**: $\pi$ determines $\partial\xi/\partial r'_t$ and conversely, so the phase space is the full space of pairs $(\xi,\pi)$ and no constraint appears. This is the first point of contrast with the two parent quantizations. The Dirac field carried a **second-class** constraint, $\pi-i\tilde{Ξ}_{\mathrm{sp}}^{\dagger}\approx0$, because its equation is first order in time; the Maxwell field carried two **first-class** constraints, $\pi^0\approx0$ and $\mathrm{div}\,\vec\pi\approx0$, because its potential is a gauge field. The scalar field carries neither. Its equation is second order, so the momentum is independent, and its field is single-component, so there is no gauge redundancy to remove. The canonical structure is therefore taken over from the classical theory without modification — which is the technical reason the quantization below is a transcription with no obstruction and no new structure.
@@ -237,7 +237,7 @@ Because the question addressed here is the second-quantization question of the f
 
 **Standard quantum field theory, transcribed.**
 
-- The Lagrangian $\mathcal{L}=-(\partial/\partial R_t\,\xi^*)(\partial/\partial R_t\,\xi)-\sum_k(\partial/\partial R_k\,\xi^*)(\partial/\partial R_k\,\xi)-k_m^{2}\xi^*\xi$, the conjugate momentum $\pi=c^{-2}\left(\partial\xi/\partial r'_t\right)^{\,*}$, and the regular Legendre transform.
+- The Lagrangian $\mathcal{L}=-(\partial/\partial R_t\,\xi^*)(\partial/\partial R_t\,\xi)-\sum_k(\partial/\partial R_k\,\xi^*)(\partial/\partial R_k\,\xi)-k_m^{2}\xi^*\xi$, the conjugate momentum $\pi=\left(\partial\xi/\partial r'_t\right)^{\,*}$, and the regular Legendre transform.
 - The equal-time commutators, imposed and verified, and the three reasons the bracket is a commutator rather than an anticommutator.
 - The mode expansion in the parent's plane waves, the mode commutators, and the recovery of the equal-time relation.
 - The symmetric Fock space, the occupation basis, the vacuum, and the number operator.
@@ -255,7 +255,7 @@ Because the question addressed here is the second-quantization question of the f
 
 ## Summary
 
-The biquaternion Klein–Gordon field is quantized by promoting its central-valued representative to an operator-valued field. The classical theory has the action of the companion Noether article, conjugate momentum $\pi=c^{-2}\left(\partial\xi/\partial r'_t\right)^{\,*}$, and a **regular** Legendre transform: unlike the Dirac case there is no second-class constraint, and unlike the Maxwell case there is no gauge redundancy. The equal-time relations are commutators,
+The biquaternion Klein–Gordon field is quantized by promoting its central-valued representative to an operator-valued field. The classical theory has the action of the companion Noether article, conjugate momentum $\pi=\left(\partial\xi/\partial r'_t\right)^{\,*}$, and a **regular** Legendre transform: unlike the Dirac case there is no second-class constraint, and unlike the Maxwell case there is no gauge redundancy. The equal-time relations are commutators,
 
 $$
 \big[\xi_{\mathrm{fop}}(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z,r'_t),\pi_{\mathrm{fop}}(\vec y,r'_t)\big]
@@ -285,13 +285,13 @@ The field's value space is the centre $\mathbb{B}_{C}$, and the algebra supplies
 | $i$ | Central scalar imaginary, $i^2=-1$ |
 | $\mathbb{B}_{\Psi},\mathbb{B}_{\Phi}$ | Informational (Hermitian) and material (anti-Hermitian) sectors |
 | $\mathbb{B}_{C}=\mathrm{span}_{\mathbb{R}}\{e_t,ie_t\}$ | Centre; the scalar field's value space |
-| $\tilde R_\Phi=i c r'_t\,e_t+r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z$, $\langle\tilde R_\Phi\rangle_{\natural}=\tilde R_\Phi\tilde{R}_\Phi^{\natural}$ | Material coordinate, $\in\mathbb{B}_{\Phi}$, and its biquaternion norm; spacelike means $N>0$ |
+| $\tilde R_\Phi=i r'_t\,e_t+r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z$, $\langle\tilde R_\Phi\rangle_{\natural}=\tilde R_\Phi\tilde{R}_\Phi^{\natural}$ | Material coordinate, $\in\mathbb{B}_{\Phi}$, and its biquaternion norm; spacelike means $N>0$ |
 | $\tilde{\nabla}=e_t\partial/\partial R_t+\sum_\mu \vec e_\mu\,\partial/\partial R_\mu$ | Biquaternionic gradient |
 | $\Box=\tilde{\nabla}\tilde{\nabla}^{\natural}=\tilde{\nabla}^{\natural}\tilde{\nabla}=\partial^2/\partial R_t^2+\Delta$ | d'Alembertian |
 | $\tilde{Ξ}=\xi\,e_t$, $\xi=(\xi_1+i\xi_2)/\sqrt2$ | Scalar field, valued in the centre; real components |
 | $\mathcal{L}=-\,\mathrm{Sc}[(\tilde{\nabla}^{\natural}\tilde{Ξ}^{*})(\tilde{\nabla}\tilde{Ξ})]-k_m^{2}\mathrm{Sc}[\tilde{Ξ}^{*}\tilde{Ξ}]$ | Scalar Lagrangian density |
 | $1/k_m$ | The mass length, $\hbar/(mc)$ |
-| $\pi=c^{-2}\left(\partial\xi/\partial r'_t\right)^{\,*}$, $\pi^\dagger=c^{-2}\partial\xi/\partial r'_t$ | Conjugate momenta; Legendre transform regular |
+| $\pi=\left(\partial\xi/\partial r'_t\right)^{\,*}$, $\pi^\dagger=\partial\xi/\partial r'_t$ | Conjugate momenta; Legendre transform regular |
 | $\tilde P_{\Phi}\,k_{\mathrm{mo}}=i\omega/c\,e_t+\vec k$, $\langle\tilde P_{\Phi}\,k_{\mathrm{mo}}\rangle_{\natural}=\frac{k_m^{2}\,\tilde{P}_{\Phi}\,\tilde{P}_{\Phi}^{\natural}}{m^{2}\,c^{2}}$ | Material four-wavevector and biquaternion norm |
 | $\langle\tilde P_{\Phi}\,k_{\mathrm{mo}}\rangle_{\natural}=-k_m^{2}\,e_t$ | Mass-shell condition |
 | $E_{\vec p}=\sqrt{\vec p^2+k_m^{2}}$, $p\cdot x=E_{\vec p}r'_t-\vec p\cdot(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)$ | On-shell energy and phase (natural units) |
@@ -302,7 +302,7 @@ The field's value space is the centre $\mathbb{B}_{C}$, and the algebra supplies
 | $Ϙ_{\mathrm{fop}}=\int\frac{d^3p}{(2\pi)^3}(a_{\mathrm{fop}}^{\dagger}a_{\mathrm{fop}}-b_{\mathrm{fop}}^{\dagger}b_{\mathrm{fop}})$ | Conserved charge |
 | $i\Delta(x-y)=[\xi_{\mathrm{fop}}(x),\xi_{\mathrm{fop}}^{\dagger}(y)]$ | Commutator (Pauli–Jordan) function |
 | $\mathrm{Tr}(e_t)=2$, $\mathrm{Tr}([\tilde Q_2,\tilde Q_1])=0$ | Trace identity; no bosonic mode in $\mathbb{B}$ |
-| $\delta_{\mu\nu}=(1,1,1,1)$ | The metric, the identity matrix; with $Q_t=i c r'_t$ the material interval is $-c^2{r'_{t}}^2+r_x^2+r_y^2+r_z^2$ |
+| $\delta_{\mu\nu}=(1,1,1,1)$ | The metric, the identity matrix; with $Q_t=i r'_t$ the material interval is $-{r'_{t}}^2+r_x^2+r_y^2+r_z^2$ |
 
 ## Further Reading
 

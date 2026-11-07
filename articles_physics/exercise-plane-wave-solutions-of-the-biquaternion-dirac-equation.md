@@ -38,7 +38,7 @@ $$
 \qquad \Delta_Q=\frac{\partial^2}{\partial R_x^2}+\frac{\partial^2}{\partial R_y^2}+\frac{\partial^2}{\partial R_z^2}.
 $$
 
-On the material sector $Q_t=i c r'_t$ the time derivative is $\partial/\partial R_t=-(i/c)\,\partial/\partial r'_t$ and the d'Alembertian is $\Delta-c^{-2}\partial^2/\partial{r'_{t}}^2$. These lines are the whole operator content of the exercise, and no letter other than $\tilde\nabla$ names the gradient.
+On the material sector $Q_t=i r'_t$ the time derivative is $\partial/\partial R_t=-i\,\partial/\partial r'_t$ and the d'Alembertian is $\Delta-\partial^2/\partial{r'_{t}}^2$. These lines are the whole operator content of the exercise, and no letter other than $\tilde\nabla$ names the gradient.
 
 **The square of the gradient is not scalar.** The product $\tilde\nabla\tilde\nabla$ is
 

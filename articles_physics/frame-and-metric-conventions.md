@@ -4,9 +4,9 @@
 
 In this article a *frame* means a spacetime frame: a choice of coordinates on the biquaternion space. There are two, the $\mathbb{B}$ frame and the $\mathbb{B}_{\Phi}$ frame, and every display in the series is written in one of them. A reader who mixes the two changes a sign or a factor of $i$ and has no way to see it in the result.
 
-**The word metric has one meaning in the series. There is one metric, the unit metric $\delta_{\mu\nu}=(1,1,1,1)$: diagonal, all four coefficients $+1$, the matrix of the interval $\sum_\mu Q_\mu^2$. A frame carries a coordinate, not a metric. The minus of the material sector is not a metric: it is $i^2=-1$ in $Q_t=i c r'_t$, made once on the time.**
+**The word metric has one meaning in the series. There is one metric, the unit metric $\delta_{\mu\nu}=(1,1,1,1)$: diagonal, all four coefficients $+1$, the matrix of the interval $\sum_\mu Q_\mu^2$. A frame carries a coordinate, not a metric. The minus of the material sector is not a metric: it is $i^2=-1$ in $Q_t=i r'_t$, made once on the time.**
 
-This article fixes the general notion first, then the two coordinate frames. The $\mathbb{B}$ frame is the general frame of the biquaternion universe, and its metric is the unit metric, $\delta_{\mu\nu}=(1,1,1,1)$, the same one the two sectors carry. The $\mathbb{B}_{\Phi}$ frame is a particular case of it on the material sector, kept to display familiar equations in their usual form; there the interval is $-c^2{r'_{t}}^2+r_x^2+r_y^2+r_z^2$, and its one minus is the square of the $i$ in $Q_t=i c r'_t$. It then gives the Clifford map, which translates those directions into $M_4(\mathbb{C})$ and is a dictionary rather than a structure of the algebra, and it closes with the rules that keep them apart.
+This article fixes the general notion first, then the two coordinate frames. The $\mathbb{B}$ frame is the general frame of the biquaternion universe, and its metric is the unit metric, $\delta_{\mu\nu}=(1,1,1,1)$, the same one the two sectors carry. The $\mathbb{B}_{\Phi}$ frame is a particular case of it on the material sector, kept to display familiar equations in their usual form; there the interval is $-{r'_{t}}^2+r_x^2+r_y^2+r_z^2$, and its one minus is the square of the $i$ in $Q_t=i r'_t$. It then gives the Clifford map, which translates those directions into $M_4(\mathbb{C})$ and is a dictionary rather than a structure of the algebra, and it closes with the rules that keep them apart.
 
 Each frame is fixed with its coordinate. The coordinate is part of the frame, not a separate choice; there is one metric, $\delta_{\mu\nu}=(1,1,1,1)$. The plain weight belongs to the product and is the same in both frames.
 
@@ -18,7 +18,7 @@ The article is read after *Algebra and Element Conventions* and before *Matrix R
 
 **A frame is a choice of coordinate, not a part of the object.** It is a rule that turns an element into four labelled components, together with a stated law for passing to another such rule. The object is what the rule leaves fixed. The coordinate is part of the frame, not a choice made after it: each of the two frames carries its interval, and the two intervals differ by the one $i$ inside a coefficient, while the metric is $\delta_{\mu\nu}$ in both. The test of a frame statement is that it names the frame and its coordinate; the test of an invariant statement is that it does not. A coordinate taken from one frame and read in the other is an object of neither, and no algebraic check detects it.
 
-**The two coordinate frames have names.** The names are read $\mathbb{B}$ for biquaternion and $\mathbb{B}_{\Phi}$ for the material sector. The $\mathbb{B}$ frame is the biquaternion space read in its own complex coordinate: the natural complete frame, with no reality condition and all four directions on the same footing. The $\mathbb{B}_{\Phi}$ frame is the material real frame, named for the sector it is defined on, reached by $Q_t=i c r'_t$ in physics and by $Q_t=iq'_t$ in mathematics. $Q_\mu$ stays the name of the complex coordinate and $x_\mu$ the name of the real one; the frame name and the coordinate name are separate. The four values of the map carry the index low and no frame label: they are one set of arrays, the same in both frames, and the arrays themselves are displayed in §*The Clifford Map*. The frame is named on the coordinate, $Q_\mu$ or $x_\mu$, and never on the array.
+**The two coordinate frames have names.** The names are read $\mathbb{B}$ for biquaternion and $\mathbb{B}_{\Phi}$ for the material sector. The $\mathbb{B}$ frame is the biquaternion space read in its own complex coordinate: the natural complete frame, with no reality condition and all four directions on the same footing. The $\mathbb{B}_{\Phi}$ frame is the material real frame, named for the sector it is defined on, reached by $Q_t=i r'_t$ in physics and by $Q_t=iq'_t$ in mathematics. $Q_\mu$ stays the name of the complex coordinate and $x_\mu$ the name of the real one; the frame name and the coordinate name are separate. The four values of the map carry the index low and no frame label: they are one set of arrays, the same in both frames, and the arrays themselves are displayed in §*The Clifford Map*. The frame is named on the coordinate, $Q_\mu$ or $x_\mu$, and never on the array.
 
 **The frame and the invariant are read together.** The plain weight is an invariant: $\mathrm{Sc}(e_t^2)=+1$ and $\mathrm{Sc}(\vec e_k^2)=-1$ hold in both frames, so $\varepsilon=(1,-1,-1,-1)$ belongs to the product and not to a frame. What a frame supplies is the coordinate, and the coordinate alone fixes the interval. There is one metric, $\delta_{\mu\nu}$, and it is the same in both frames. The weight and the metric are two objects, and no sentence needs both to be read.
 
@@ -36,7 +36,7 @@ This is the general case. The two real sectors are conditions on these four coef
 $$
 \langle\tilde Q\rangle_\natural=\tilde Q\tilde Q^\natural=Q_t^2+Q_x^2+Q_y^2+Q_z^2 .
 $$
-Every coefficient is $+1$, and the value is complex in general. The tuple is a coefficient tuple, not a real signature; a signature appears only when a sector is imposed. On $\mathbb{B}_{\Phi}$, with $Q_t=i c r'_t$, the value is $-c^2{r'_{t}}^2+r_x^2+r_y^2+r_z^2$; on $\mathbb{B}_{\Psi}$, with $Q_t=c r_t$ and $Q_k=i r'_{x_k}$, it is $c^2 r_t^2-r'_{x}^2-r'_{y}^2-r'_{z}^2$. The metric is $\delta_{\mu\nu}=(1,1,1,1)$, and on $\mathbb{B}_{\Phi}$ the interval is still the plain sum $\sum_\mu Q_\mu^2$, read on the complex coefficient $Q_t=i c r'_t$.
+Every coefficient is $+1$, and the value is complex in general. The tuple is a coefficient tuple, not a real signature; a signature appears only when a sector is imposed. On $\mathbb{B}_{\Phi}$, with $Q_t=i r'_t$, the value is $-{r'_{t}}^2+r_x^2+r_y^2+r_z^2$; on $\mathbb{B}_{\Psi}$, with $Q_t=r_t$ and $Q_k=i r'_{x_k}$, it is $r_t^2-r'_{x}^2-r'_{y}^2-r'_{z}^2$. The metric is $\delta_{\mu\nu}=(1,1,1,1)$, and on $\mathbb{B}_{\Phi}$ the interval is still the plain sum $\sum_\mu Q_\mu^2$, read on the complex coefficient $Q_t=i r'_t$.
 
 **The general frame, and its form is Euclidean.** The $\mathbb{B}$ frame is the frame of the biquaternion universe itself, not of one sector of it; the $\mathbb{B}_{\Phi}$ frame is this one read on a sector. Its form is $\sum_\mu Q_\mu^2$, with all four coefficients $+1$. On real coefficients that is the ordinary Euclidean metric: positive definite, with no direction singled out by a sign. The coefficients are complex in general, so the form is the complexified Euclidean form; a real signature appears only when a sector is imposed. A Lorentzian signature is not a property of this frame.
 
@@ -44,25 +44,25 @@ Every coefficient is $+1$, and the value is complex in general. The tuple is a c
 
 **The material case.** On $\mathbb{B}_{\Phi}$ the coefficients are
 $$
-Q_t=i c r'_t,\qquad Q_x=r_x,\qquad Q_y=r_y,\qquad Q_z=r_z ,
+Q_t=i r'_t,\qquad Q_x=r_x,\qquad Q_y=r_y,\qquad Q_z=r_z ,
 $$
-with $r'_t,r_x,r_y,r_z$ real and $c$ the local speed of light. This is the coordinate the physics corpus writes by default. It is a sector condition on the $\mathbb{B}$ frame, not the definition of the frame.
+with $r'_t,r_x,r_y,r_z$ real and all four in metres. This is the coordinate the physics corpus writes by default. It is a sector condition on the $\mathbb{B}$ frame, not the definition of the frame.
 
 ## The $\mathbb{B}_{\Phi}$ Frame
 
 **The coordinate.** The $\mathbb{B}_{\Phi}$ frame is the material coordinate, defined on $\mathbb{B}_{\Phi}$,
 $$
-x_0=c r'_{t},\qquad x_1=r_x,\qquad x_2=r_y,\qquad x_3=r_z ,
+x_0=r'_{t},\qquad x_1=r_x,\qquad x_2=r_y,\qquad x_3=r_z ,
 $$
 with $r'_t,r_k$ real. On the material case $Q_t=ix_0$ and $Q_k=x_k$ for $k=1,2,3$: one substitution, a rotation of the time axis by $i$.
 
-**A particular case, kept for convenience.** The $\mathbb{B}_{\Phi}$ frame is the $\mathbb{B}$ frame restricted to $\mathbb{B}_{\Phi}$, not a second universe and not a second algebra. It is defined only after the coefficients have been put on that sector, and its one change is the time coordinate: $Q_t=i c r'_t$ becomes the real $x_0=c r'_{t}$, so a display writes $r'_t$ with no $i$ attached. The $i$ does not disappear; its square becomes the sign of the time term, $i^2=-1$, so the interval reads $-c^2{r'_{t}}^2+r_x^2+r_y^2+r_z^2$ with real coefficients, and the metric is still $\delta_{\mu\nu}$. Nothing is chosen a second time, and no matrix is needed: $Q_t=i c r'_t$ is the change of frame. The purpose of the frame is display: to write familiar equations in their familiar shape, with a real time and one minus on the time term. Nothing is added to the content, and the same equation is read in the notation of the textbooks.
+**A particular case, kept for convenience.** The $\mathbb{B}_{\Phi}$ frame is the $\mathbb{B}$ frame restricted to $\mathbb{B}_{\Phi}$, not a second universe and not a second algebra. It is defined only after the coefficients have been put on that sector, and its one change is the time coordinate: $Q_t=i r'_t$ becomes the real $x_0=r'_{t}$, so a display writes $r'_t$ with no $i$ attached. The $i$ does not disappear; its square becomes the sign of the time term, $i^2=-1$, so the interval reads $-{r'_{t}}^2+r_x^2+r_y^2+r_z^2$ with real coefficients, and the metric is still $\delta_{\mu\nu}$. Nothing is chosen a second time, and no matrix is needed: $Q_t=i r'_t$ is the change of frame. The purpose of the frame is display: to write familiar equations in their familiar shape, with a real time and one minus on the time term. Nothing is added to the content, and the same equation is read in the notation of the textbooks.
 
 **The interval carries one minus, and the minus is the square of the $i$.** On $\mathbb{B}_{\Phi}$ the same interval reads
 $$
 -x_0^2+x_1^2+x_2^2+x_3^2 ,
 $$
-with one minus on the time term and none on the space. The minus is not a signature: it is the square of the $i$ in $Q_t=i c r'_t$, written once in the coordinate and read once here. The sign is now explicit in the coordinate, and no metric is written. The frame fixes the interval; it does not offer a choice of interval. Read on $\mathbb{B}_{\Phi}$, this is the interval of the two real sectors; on $\mathbb{B}_{\Psi}$ the same form is read on the informational coordinate, where the minuses sit on the space.
+with one minus on the time term and none on the space. The minus is not a signature: it is the square of the $i$ in $Q_t=i r'_t$, written once in the coordinate and read once here. The sign is now explicit in the coordinate, and no metric is written. The frame fixes the interval; it does not offer a choice of interval. Read on $\mathbb{B}_{\Phi}$, this is the interval of the two real sectors; on $\mathbb{B}_{\Psi}$ the same form is read on the informational coordinate, where the minuses sit on the space.
 
 **The squares are the same in both frames.**
 $$
@@ -76,19 +76,19 @@ Each column uses its own coordinate; the $\mathbb{B}$ column is the general fram
 
 | | $\mathbb{B}$ frame | $\mathbb{B}_{\Phi}$ frame |
 |---|---|---|
-| coordinate | $Q_\mu\in\mathbb{C}$; on $\mathbb{B}_{\Phi}$, $Q_t=i c r'_t$ | the same $Q_\mu$; on $\mathbb{B}_{\Phi}$, $x_0=c r'_{t}$ and $Q_t=ix_0$ |
-| interval $\sum_\mu Q_\mu^2$ | coefficients $(1,1,1,1)$; complex in general | $-c^2{r'_{t}}^2+r_x^2+r_y^2+r_z^2$ on $\mathbb{B}_{\Phi}$ |
+| coordinate | $Q_\mu\in\mathbb{C}$; on $\mathbb{B}_{\Phi}$, $Q_t=i r'_t$ | the same $Q_\mu$; on $\mathbb{B}_{\Phi}$, $x_0=r'_{t}$ and $Q_t=ix_0$ |
+| interval $\sum_\mu Q_\mu^2$ | coefficients $(1,1,1,1)$; complex in general | $-{r'_{t}}^2+r_x^2+r_y^2+r_z^2$ on $\mathbb{B}_{\Phi}$ |
 | metric | $\delta_{\mu\nu}=(1,1,1,1)$ | $\delta_{\mu\nu}=(1,1,1,1)$ |
 | plain weight $\varepsilon$ | $(1,-1,-1,-1)$ | $(1,-1,-1,-1)$ |
 | squares of the four units | $\mathrm{Sc}(e_t^2)=+1$ and $\mathrm{Sc}(\vec e_k^2)=-1$, that is $\varepsilon$ | the same, that is $\varepsilon$ |
 
-**There is one metric and one weight, and the two frames differ in the coordinate.** The metric is $\delta_{\mu\nu}=(1,1,1,1)$ in both frames, and it is the coefficient tuple of the interval $\sum_\mu Q_\mu^2$. In the $\mathbb{B}_{\Phi}$ frame the interval still has every coefficient $+1$ in the $Q$'s; written in the real coordinate it reads $-c^2{r'_{t}}^2+r_x^2+r_y^2+r_z^2$, and the one minus is the $i$ of $Q_t=ix_0$, which is $i^2=-1$ on the time slot. The plain weight $\varepsilon=(1,-1,-1,-1)$ is the square of the units, the same in both frames, and it is not the metric. A reader who carries the weight from one frame to the other as if it were the interval gets a sign that no algebra check will catch.
+**There is one metric and one weight, and the two frames differ in the coordinate.** The metric is $\delta_{\mu\nu}=(1,1,1,1)$ in both frames, and it is the coefficient tuple of the interval $\sum_\mu Q_\mu^2$. In the $\mathbb{B}_{\Phi}$ frame the interval still has every coefficient $+1$ in the $Q$'s; written in the real coordinate it reads $-{r'_{t}}^2+r_x^2+r_y^2+r_z^2$, and the one minus is the $i$ of $Q_t=ix_0$, which is $i^2=-1$ on the time slot. The plain weight $\varepsilon=(1,-1,-1,-1)$ is the square of the units, the same in both frames, and it is not the metric. A reader who carries the weight from one frame to the other as if it were the interval gets a sign that no algebra check will catch.
 
 **One metric, and neither real sector adds one.** The metric is $\delta_{\mu\nu}=(1,1,1,1)$, the coefficient tuple of $\sum_\mu Q_\mu^2$, and a sector is a condition on the four coefficients, not another frame: $\mathbb{B}_{\Phi}$ makes $Q_t$ imaginary, so its one minus is the square of one $i$; $\mathbb{B}_{\Psi}$ makes the three space coefficients imaginary, so its three minuses are the squares of three $i$'s. Neither touches the metric. A metric that differed on one sector would be a second object, and there is none. The sign a reader sees belongs to the coordinate the square was taken in, not to the metric.
 
 **The $i$ is never put into the metric.** The one metric, $\delta_{\mu\nu}$, has real coefficients everywhere. What changes is which coordinate carries the $i$: on the material case it is $Q_t$, in the $\mathbb{B}_{\Phi}$ frame it is none. A metric with an $i$ in it is not a metric of this series.
 
-**The substitution is the material one.** $Q_t=i c r'_t$ is made on $\mathbb{B}_{\Phi}$. The informational sector has real time and imaginary space, $\tilde R_\Psi=c r_t\,e_t+i(r'_{x}\vec e_x+r'_{y}\vec e_y+r'_{z}\vec e_z)$, and it is not obtained by the same substitution. An article that writes both sectors states which coordinate belongs to which.
+**The substitution is the material one.** $Q_t=i r'_t$ is made on $\mathbb{B}_{\Phi}$. The informational sector has real time and imaginary space, $\tilde R_\Psi=r_t\,e_t+i(r'_{x}\vec e_x+r'_{y}\vec e_y+r'_{z}\vec e_z)$, and it is not obtained by the same substitution. An article that writes both sectors states which coordinate belongs to which.
 
 ## The Clifford Map
 
@@ -125,9 +125,9 @@ Eight rules follow.
 3. **The index is low, and it labels a direction.** The index names which of the four directions is read; it is not a tensor slot, and no label is raised on the array itself: raising is done with the weight, $\gamma^\mu=-\varepsilon_\mu\gamma_\mu$. The fifth is a product and not an image of a direction, so it is written $\gamma_5$ without a label.
 4. **Name the frame with its coordinate.** The coordinate frame carries its interval. A statement that names a frame names the coordinate it reads; an interval is never moved from one frame to another.
 5. **The $i$ is in the coordinate or in the signs, never in the metric.** The one metric has real coefficients.
-6. **$Q_t=i c r'_t$ is material.** The substitution is made on $\mathbb{B}_{\Phi}$ and is not carried to $\mathbb{B}_{\Psi}$ without saying so.
+6. **$Q_t=i r'_t$ is material.** The substitution is made on $\mathbb{B}_{\Phi}$ and is not carried to $\mathbb{B}_{\Psi}$ without saying so.
 7. **A change of frame is a written substitution.** It has a law, $Q_t=ix_0$ in the coordinates, and the article gives it. The frame is named on the coordinate and no metric is written, because the substitution carries the interval at once. A display is read only in the frame that produced it. The substitution does not touch the matrices.
-8. **The interval is a norm, not a metric.** The interval of an element is squared by multiplying it by its conjugate, $\langle\tilde X\rangle_\natural=\tilde X\tilde X^\natural$. In the $\mathbb{B}$ frame this is the plain sum $\sum_\mu Q_\mu^2$, with every coefficient $+1$. In the $\mathbb{B}_{\Phi}$ frame the interval is $-c^2{r'_{t}}^2+r_x^2+r_y^2+r_z^2$: one minus, the square of the one $i$ of $Q_t=i c r'_t$, which is $i^2=-1$ on the time slot. The minus is the $i$ squared, not a signature, and no metric is written in either frame. The weight is not the negative of a metric: it records the square of each unit, and it is the same in both frames. The letter $\eta$ is never the metric.
+8. **The interval is a norm, not a metric.** The interval of an element is squared by multiplying it by its conjugate, $\langle\tilde X\rangle_\natural=\tilde X\tilde X^\natural$. In the $\mathbb{B}$ frame this is the plain sum $\sum_\mu Q_\mu^2$, with every coefficient $+1$. In the $\mathbb{B}_{\Phi}$ frame the interval is $-{r'_{t}}^2+r_x^2+r_y^2+r_z^2$: one minus, the square of the one $i$ of $Q_t=i r'_t$, which is $i^2=-1$ on the time slot. The minus is the $i$ squared, not a signature, and no metric is written in either frame. The weight is not the negative of a metric: it records the square of each unit, and it is the same in both frames. The letter $\eta$ is never the metric.
 
 **The plain weight is not a metric.** $\varepsilon=(1,-1,-1,-1)$ follows from the multiplication of the units, $\mathrm{Sc}(e_t^2)=+1$ and $\mathrm{Sc}(\vec e_k^2)=-1$. It belongs to the product, it is the same in both frames, and no frame changes it or raises it.
 
@@ -137,7 +137,7 @@ Eight rules follow.
 
 The word *frame* here means a spacetime frame: a choice of coordinates on the biquaternion space. There are two, $\mathbb{B}$ and $\mathbb{B}_{\Phi}$, and each carries its interval as part of the choice. The metric is one, $\delta_{\mu\nu}=(1,1,1,1)$, the same in both.
 
-The $\mathbb{B}$ frame is the biquaternion space read in its own coordinate, $Q_\mu\in\mathbb{C}$: the natural complete frame, the general frame of the biquaternion universe, with interval coefficients $(1,1,1,1)$, the Euclidean form, and no reality condition. The material case is $Q_t=i c r'_t$, $Q_k=r_k$, and there the interval is the Minkowski one. The $\mathbb{B}_{\Phi}$ frame is a particular case of it, kept for convenience: the material real frame, $x_0=c r'_{t}$ on $\mathbb{B}_{\Phi}$, where the interval reads $-c^2{r'_{t}}^2+r_x^2+r_y^2+r_z^2$; the time direction is the one the weight leaves positive. On the material case the two differ by $Q_t=ix_0$.
+The $\mathbb{B}$ frame is the biquaternion space read in its own coordinate, $Q_\mu\in\mathbb{C}$: the natural complete frame, the general frame of the biquaternion universe, with interval coefficients $(1,1,1,1)$, the Euclidean form, and no reality condition. The material case is $Q_t=i r'_t$, $Q_k=r_k$, and there the interval is the Minkowski one. The $\mathbb{B}_{\Phi}$ frame is a particular case of it, kept for convenience: the material real frame, $x_0=r'_{t}$ on $\mathbb{B}_{\Phi}$, where the interval reads $-{r'_{t}}^2+r_x^2+r_y^2+r_z^2$; the time direction is the one the weight leaves positive. On the material case the two differ by $Q_t=ix_0$.
 
 The metric is one, and it is the tuple of the interval in the $Q$'s: $\delta_{\mu\nu}=(1,1,1,1)$ with $\sum_\mu Q_\mu^2=Q_t^2+Q_x^2+Q_y^2+Q_z^2$. In the $\mathbb{B}_{\Phi}$ frame the same interval reads $-x_0^2+x_1^2+x_2^2+x_3^2$, and the one minus is the $i$ of $Q_t=ix_0$, which is $i^2=-1$ on the time slot. The plain weight $\varepsilon=(1,-1,-1,-1)$ is a different object: it belongs to the product and is the same in both frames. Naming the frame and its coordinate together is what keeps a sign from moving silently.
 
@@ -147,10 +147,10 @@ The metric is one, and it is the tuple of the interval in the $Q$'s: $\delta_{\m
 
 | Symbol | Meaning |
 |---|---|
-| $Q_\mu$ | The $\mathbb{B}$-frame coordinate, $Q_\mu\in\mathbb{C}$; material case $Q_t=i c r'_t$, $Q_k=r_k$; interval coefficients $(1,1,1,1)$ |
-| $x_\mu$ | The coordinate of the $\mathbb{B}_{\Phi}$ frame, on $\mathbb{B}_{\Phi}$, $x_0=c r'_{t}$, $x_k=r_k$; $Q_t=ix_0$, so the interval reads $-c^2{r'_{t}}^2+r_x^2+r_y^2+r_z^2$ |
+| $Q_\mu$ | The $\mathbb{B}$-frame coordinate, $Q_\mu\in\mathbb{C}$; material case $Q_t=i r'_t$, $Q_k=r_k$; interval coefficients $(1,1,1,1)$ |
+| $x_\mu$ | The coordinate of the $\mathbb{B}_{\Phi}$ frame, on $\mathbb{B}_{\Phi}$, $x_0=r'_{t}$, $x_k=r_k$; $Q_t=ix_0$, so the interval reads $-{r'_{t}}^2+r_x^2+r_y^2+r_z^2$ |
 | $\varepsilon=(1,-1,-1,-1)$ | The plain weight, $\mathrm{Sc}(e_\mu e_\nu)=\varepsilon_\mu\delta_{\mu\nu}$; the same in both frames |
-| $\langle\tilde Q\rangle_\natural=\sum_\mu Q_\mu^2$ | The quaternionic interval; coefficients $\delta_{\mu\nu}=(1,1,1,1)$ in the $Q$ coordinate (complex in general), and $-c^2{r'_{t}}^2+r_x^2+r_y^2+r_z^2$ read on $\mathbb{B}_{\Phi}$ |
+| $\langle\tilde Q\rangle_\natural=\sum_\mu Q_\mu^2$ | The quaternionic interval; coefficients $\delta_{\mu\nu}=(1,1,1,1)$ in the $Q$ coordinate (complex in general), and $-{r'_{t}}^2+r_x^2+r_y^2+r_z^2$ read on $\mathbb{B}_{\Phi}$ |
 | $\delta_{\mu\nu}$ | The unit metric, the one metric of the series: diagonal, $(1,1,1,1)$ on the four $Q_\mu$, the same on the general frame and on the two real sectors |
 | $\gamma_\mu$ | The four values of the Clifford map, one set for both frames, the index always low; the arrays are displayed in §*The Clifford Map* |
 | $\mathsf{K}$ | The Clifford map, a dictionary from the four directions of a frame into $M_4(\mathbb{C})$, the same in both frames, not a structure of $\mathbb{B}$; its values are displayed in §*The Clifford Map* |

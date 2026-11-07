@@ -153,7 +153,7 @@ The real part of $B$ is half the difference of the damping rates, in the order $
 | case | element | eigenvalues | interpretation of $B$ |
 | --- | --- | --- | --- |
 | material four-momentum | $i\frac{E}{c}e_t+\vec p$ | $i\left(\frac{E}{c}\pm\lvert\vec p\rvert\right)$ | $B=\lvert\vec p\rvert$: the momentum magnitude; the pair is the Doppler pair |
-| Hermitian observable | $c r_t+i\vec r_\Psi$ | $c r_t\mp\lvert\vec r_\Psi\rvert$ | $B=i\lvert\vec r_\Psi\rvert$: the half-gap is $\lvert\vec r_\Psi\rvert$ |
+| Hermitian observable | $r_t+i\vec r_\Psi$ | $r_t\mp\lvert\vec r_\Psi\rvert$ | $B=i\lvert\vec r_\Psi\rvert$: the half-gap is $\lvert\vec r_\Psi\rvert$ |
 | normal, real $B$ | $\vec Q$ real, $B$ real | $Q_t\pm iB$ | real half-gap; the damping sits in $Q_t$ |
 | normal, complex $B$ | $\vec Q$ a complex multiple of a real vector, $B$ complex | complex | complex half-gap; orthogonal modes, growing norm |
 | non-normal | $\vec Q$ not a complex multiple of a real vector | real or complex | biorthogonal modes; non-normality alone does not force growth |
@@ -364,19 +364,19 @@ The real part is a dilation, the imaginary part a phase. Both are central: they 
 
 **Boundary.** A global phase is not an observable, and a scale is not a physical field. The interpretation is licensed for the centre; it does not say that every scalar is a gauge transformation, and it does not supply a gauge field.
 
-**Interpretation 2: the rest frame and time-only displacement.** In the material sector the scalar is $Q_t=i c r'_t$, so
+**Interpretation 2: the rest frame and time-only displacement.** In the material sector the scalar is $Q_t=i r'_t$, so
 
 $$
-\tilde X=i c r'_te_t,
+\tilde X=i r'_te_t,
 \qquad
-\langle\tilde X\rangle_{\natural}=-c^2{r'_{t}}^2.
+\langle\tilde X\rangle_{\natural}=-{r'_{t}}^2.
 $$
 
 The element is a purely temporal displacement: a worldline with no spatial part. The four-velocity of a particle at rest is the same kind of element, $ic\,e_t$. The physical interpretation is **time only**: a clock reading with no direction in space, and no spatial momentum. For a four-momentum it is the rest frame, because $B^2=\lvert\vec p\rvert^2$ vanishes exactly at $\vec p=0$; for a general material element it is the whole time axis.
 
-**Boundary.** A rest frame exists only for a massive particle; the algebra gives the interval, not the mass. The scalar $i c r'_t$ is a displacement, not a duration measured by a particular clock; the identification of $r'_t$ with a physical time is the material-sector dictionary, not a consequence of the spectrum.
+**Boundary.** A rest frame exists only for a massive particle; the algebra gives the interval, not the mass. The scalar $i r'_t$ is a displacement, not a duration measured by a particular clock; the identification of $r'_t$ with a physical time is the material-sector dictionary, not a consequence of the spectrum.
 
-**Interpretation 3: the trivial observable and the maximally mixed state.** In the informational sector a Hermitian scalar $c r_t\,e_t$ is a multiple of the identity. Every state is an eigenstate with the same outcome $c r_t$, and no measurement basis is selected. The trace-one scalar $\tfrac12e_t$ is the maximally mixed state; the scalar line is where the Bloch vector vanishes.
+**Interpretation 3: the trivial observable and the maximally mixed state.** In the informational sector a Hermitian scalar $r_t\,e_t$ is a multiple of the identity. Every state is an eigenstate with the same outcome $r_t$, and no measurement basis is selected. The trace-one scalar $\tfrac12e_t$ is the maximally mixed state; the scalar line is where the Bloch vector vanishes.
 
 **Boundary.** The observable interpretation and the state interpretation are two identifications of the same central element, not one derivation of the other. The spectrum alone says *central*; it does not say *observable* or *state*. The state interpretation belongs to *The Informational Sector: States, Observables and Probability*.
 
@@ -402,7 +402,7 @@ The last identity is the sharp one: the element $\vec N$ is a zero divisor, but 
 
 **Interpretation 2: a null translation.** The identity $\vec N^2=0$ says that the displacement is square-zero: the generator applied twice vanishes, so the exponential truncates at first order. The exponential $e_t+\theta\vec N$ is a one-parameter group of unipotent transformations whose generator is a zero divisor. The physical interpretation is a **reversible translation with a non-invertible generator**: the motion can be undone, the velocity cannot be inverted.
 
-**Boundary.** The physical lightlike displacement is real and has $Q_t=i c r'_t\neq0$ and $B=\lvert\vec r\rvert\neq0$ away from the origin; it is spectrally regular, not nilpotent. The nilpotent is the complex isotropic model of a null direction; the two must not be identified. This is the same distinction as *the nilpotent is not a four-momentum*, stated for displacements rather than momenta.
+**Boundary.** The physical lightlike displacement is real and has $Q_t=i r'_t\neq0$ and $B=\lvert\vec r\rvert\neq0$ away from the origin; it is spectrally regular, not nilpotent. The nilpotent is the complex isotropic model of a null direction; the two must not be identified. This is the same distinction as *the nilpotent is not a four-momentum*, stated for displacements rather than momenta.
 
 **Interpretation 3: a zero-frequency one-way coupling.** The matrix normal form is a Jordan block at zero,
 

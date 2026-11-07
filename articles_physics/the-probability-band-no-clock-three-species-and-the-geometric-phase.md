@@ -100,9 +100,9 @@ The probability band owns the same centre but reads it as a modulus: it has the 
 The probability band's square is a **ruler**: the Hermitian norm is definite, it measures a length and it supplies the Born weight. The neighbouring quaternionic form is a **clock**: the interval is indefinite, it separates timelike from spacelike, and its zero set is the light cone. One element carries both because the grid carries both metrics. On the material sector the two read
 
 $$
-\langle\tilde R_\Phi\rangle_{*}=c^{2}{r'_{t}}^{2}+\lvert\vec r\rvert^{2},
+\langle\tilde R_\Phi\rangle_{*}={r'_{t}}^{2}+\lvert\vec r\rvert^{2},
 \qquad
-\langle\tilde R_\Phi\rangle_{\natural}=-c^{2}{r'_{t}}^{2}+\lvert\vec r\rvert^{2},
+\langle\tilde R_\Phi\rangle_{\natural}=-{r'_{t}}^{2}+\lvert\vec r\rvert^{2},
 $$
 
 so the ruler and the clock differ by twice the squared time, $\langle\tilde R_\Phi\rangle_{*}-\langle\tilde R_\Phi\rangle_{\natural}=2c^{2}{r'_{t}}^{2}$.
@@ -119,7 +119,7 @@ The neighbour that carries the interval makes the split the probability band can
 
 *Proof.* By the injectivity of the parameter map, $L_{\tilde Q^{\natural}}=L_{\tilde Q}$ is $\tilde Q^{\natural}=\tilde Q$, which is centrality; and $L_{\tilde Q^{\natural}}=-L_{\tilde Q}$ is $\tilde Q^{\natural}=-\tilde Q$, which is purity.
 
-The centre $\mathbb{C}e_t$ is the two-real-dimensional time plane, carrying $i c r'_t$ and $c r_t$; the pure part $\mathbb{C}\otimes\mathbb{R}^{3}$ is the six-real-dimensional space, carrying the three material and the three informational directions. The bracket of two pure elements is pure, because the scalar part of a commutator vanishes, so it touches no central coordinate.
+The centre $\mathbb{C}e_t$ is the two-real-dimensional time plane, carrying $i r'_t$ and $r_t$; the pure part $\mathbb{C}\otimes\mathbb{R}^{3}$ is the six-real-dimensional space, carrying the three material and the three informational directions. The bracket of two pure elements is pure, because the scalar part of a commutator vanishes, so it touches no central coordinate.
 
 **The interpretation.** The causality band's operator layer splits the interval into a central time plane and a pure spatial part: the self-adjoint parameter is time, the skew-adjoint parameter is space, and the bracket lives in the space. The probability band has no such split because its square is a modulus.
 
@@ -337,7 +337,7 @@ The square is not the only map that crosses. The fourth power crosses, and every
 Write a material four-vector in the physical coordinates,
 
 $$
-\tilde Q=i c r'_t\,e_t+\vec r,
+\tilde Q=i r'_t\,e_t+\vec r,
 \qquad
 \vec r=r_x\vec e_x+r_y\vec e_y+r_z\vec e_z .
 $$
@@ -345,28 +345,28 @@ $$
 Its square and its negative are
 
 $$
-\tilde Q^{2}=-\bigl(c^{2}{r'_{t}}^{2}+\lvert\vec r\rvert^{2}\bigr)e_t+2i c r'_t\,\vec r,
+\tilde Q^{2}=-\bigl({r'_{t}}^{2}+\lvert\vec r\rvert^{2}\bigr)e_t+2i r'_t\,\vec r,
 \qquad
--\tilde Q^{2}=\bigl(c^{2}{r'_{t}}^{2}+\lvert\vec r\rvert^{2}\bigr)e_t-2i c r'_t\,\vec r .
+-\tilde Q^{2}=\bigl({r'_{t}}^{2}+\lvert\vec r\rvert^{2}\bigr)e_t-2i r'_t\,\vec r .
 $$
 
 The scalar part of $-\tilde Q^{2}$ is the Hermitian norm,
 
 $$
-\mathrm{Sc}\bigl(-\tilde Q^{2}\bigr)=c^{2}{r'_{t}}^{2}+\lvert\vec r\rvert^{2}
+\mathrm{Sc}\bigl(-\tilde Q^{2}\bigr)={r'_{t}}^{2}+\lvert\vec r\rvert^{2}
 =\langle\tilde Q\rangle_{*},
 $$
 
 the Euclidean weight of the four-vector. The vector part is
 
 $$
-\mathrm{Vect}\bigl(-\tilde Q^{2}\bigr)=-2i c r'_t\,\vec r=-2Q_t\vec Q,
+\mathrm{Vect}\bigl(-\tilde Q^{2}\bigr)=-2i r'_t\,\vec r=-2Q_t\vec Q,
 $$
 
 the phase vector of the material element. The interval is not the square: it is the quaternionic norm,
 
 $$
-\langle\tilde Q\rangle_{\natural}=-c^{2}{r'_{t}}^{2}+\lvert\vec r\rvert^{2},
+\langle\tilde Q\rangle_{\natural}=-{r'_{t}}^{2}+\lvert\vec r\rvert^{2},
 $$
 
 and the gap between the two metrics on the material side is

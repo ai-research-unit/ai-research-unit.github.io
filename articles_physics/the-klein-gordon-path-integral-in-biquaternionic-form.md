@@ -10,7 +10,7 @@ The biquaternion content of the Klein–Gordon path integral is a statement abou
 
 The article is organised as follows. The field configuration space and the action are set up first, and the equation of motion is derived from the action by variation. The generating functional is defined and the free Gaussian is evaluated, first on a finite lattice where it is an ordinary finite-dimensional integral and can be checked exactly, and then in the formal continuum limit. The stationary-phase expansion and the classical field are treated next. The Wick rotation and Euclidean functional are then discussed, with the positivity question. A closing section states the biquaternion interpretation, and open questions are recorded.
 
-Throughout, the conventions are those of the companion articles: $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ with $e_t=1,\vec e_x,\vec e_y,\vec e_z$, $\vec e_k^2=-e_t$, central $i$; $\mathbb{B}_{C}=\operatorname{span}_{\mathbb{R}}\{e_t,ie_t\}$ is the centre; $\tilde R_\Phi=i c r'_t\,e_t+r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z\in\mathbb{B}_{\Phi}$; $\tilde{\nabla}=e_t\partial/\partial R_t+\sum_k \vec e_k\partial/\partial R_k$; and $\Box=\tilde{\nabla}\tilde{\nabla}^{\natural}=\partial^2/\partial R_t^2+\Delta=\Delta+ \partial^2/\partial R_t^2$. The scalar field is $\tilde{Ξ}=\xi\,e_t$ with $\xi$ complex, and the mass enters as the length $k_m=mc/\hbar$. The analytic parts are written with $c$ explicit, as the companion articles are.
+Throughout, the conventions are those of the companion articles: $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ with $e_t=1,\vec e_x,\vec e_y,\vec e_z$, $\vec e_k^2=-e_t$, central $i$; $\mathbb{B}_{C}=\operatorname{span}_{\mathbb{R}}\{e_t,ie_t\}$ is the centre; $\tilde R_\Phi=i r'_t\,e_t+r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z\in\mathbb{B}_{\Phi}$; $\tilde{\nabla}=e_t\partial/\partial R_t+\sum_k \vec e_k\partial/\partial R_k$; and $\Box=\tilde{\nabla}\tilde{\nabla}^{\natural}=\partial^2/\partial R_t^2+\Delta=\Delta+ \partial^2/\partial R_t^2$. The scalar field is $\tilde{Ξ}=\xi\,e_t$ with $\xi$ complex, and the mass enters as the length $k_m=mc/\hbar$. The analytic parts are written with $c$ explicit, as the companion articles are.
 
 - Companion article *The Klein–Gordon Equation in Biquaternionic Form*, for the scalar equation, its mass-term sign, and the central scalar operator.
 - Companion article *The Klein–Gordon Propagator and Its Green's Functions in Biquaternionic Form*, for the free two-point function, the four contour prescriptions, and the Euclidean kernel.
@@ -217,10 +217,10 @@ so that the propagator is the inverse of the biquaternion norm shifted by the ma
 
 ### The transfer to the quaternion subspace
 
-The oscillatory functional integral is converted into a decaying one by the Wick rotation, which the companion article *Interpretation of the Wick Rotation in the Biquaternion Universe* identifies with the passage from the material sector to the quaternion subspace: the imaginary time coefficient $i c r'_t$ is relabelled as the real coefficient $c\tau$, and a point of $\mathbb{B}_{\Phi}$ becomes a point of $\mathbb{B}_{H}$,
+The oscillatory functional integral is converted into a decaying one by the Wick rotation, which the companion article *Interpretation of the Wick Rotation in the Biquaternion Universe* identifies with the passage from the material sector to the quaternion subspace: the imaginary time coefficient $i r'_t$ is relabelled as the real coefficient $c\tau$, and a point of $\mathbb{B}_{\Phi}$ becomes a point of $\mathbb{B}_{H}$,
 
 $$
-\tilde R_\Phi=i c r'_t\,e_t+r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z\;\in\;\mathbb{B}_{\Phi}
+\tilde R_\Phi=i r'_t\,e_t+r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z\;\in\;\mathbb{B}_{\Phi}
 \qquad\longmapsto\qquad
 \tilde{Q}_E=c\tau\,e_t+r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z\;\in\;\mathbb{B}_{H} .
 $$
@@ -308,7 +308,7 @@ The semiclassical expansion about a source has the classical Klein–Gordon equa
 | $\mathbb{B}_{C}=\operatorname{span}_{\mathbb{R}}\{e_t,ie_t\}$ | Centre of $\mathbb{B}$; the scalar field's value space |
 | $\mathbb{B}_{\Phi},\mathbb{B}_{\Psi}$ | Material (anti-Hermitian) and informational (Hermitian) sectors |
 | $\mathbb{B}_{H}$ | Quaternion subspace, target of the Wick rotation |
-| $\tilde R_\Phi=i c r'_t\,e_t+r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z$ | Material coordinate, $\in\mathbb{B}_{\Phi}$ |
+| $\tilde R_\Phi=i r'_t\,e_t+r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z$ | Material coordinate, $\in\mathbb{B}_{\Phi}$ |
 | $\tilde{Q}_E=c\tau\,e_t+r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z$ | Euclidean coordinate, $\in\mathbb{B}_{H}$ |
 | $\tilde{Ξ}=\xi e_t$ | Scalar (spin-$0$) field, valued in the centre |
 | $\tilde P_{\Phi}=\frac{m\,c\,(i\omega/c\,e_t+\vec k)}{k_m}$ | Material four-wavevector, $\in\mathbb{B}_{\Phi}$ |
@@ -321,7 +321,7 @@ The semiclassical expansion about a source has the classical Klein–Gordon equa
 | $Z[J]$ | Generating functional; $\tilde{J}_{\Phi}=Je_t$ a central source |
 | $G$, $G_E$ | Two-point kernels, $(\Box-k_m^{2})G=-\delta^{(4)}$ and $(-\Delta_E+k_m^{2})G_E=\delta^{(4)}$ |
 | $A$, $A^{-1}$ | Lattice quadratic form and its inverse (lattice propagator) |
-| $\delta_{\mu\nu}=(1,1,1,1)$ | The metric, the identity matrix; with $Q_t=i c r'_t$ the material interval is $-c^2{r'_{t}}^2+r_x^2+r_y^2+r_z^2$ |
+| $\delta_{\mu\nu}=(1,1,1,1)$ | The metric, the identity matrix; with $Q_t=i r'_t$ the material interval is $-{r'_{t}}^2+r_x^2+r_y^2+r_z^2$ |
 | $\mathrm{Tr}(\tilde Q_1\tilde Q_2)=2\,\mathrm{Sc}(\tilde Q_1\tilde Q_2)$ | Trace formula |
 
 ## Further Reading

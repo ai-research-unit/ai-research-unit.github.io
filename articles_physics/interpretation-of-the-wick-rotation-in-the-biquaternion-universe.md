@@ -4,7 +4,7 @@
 
 The **Wick rotation** is a computational procedure used throughout quantum field theory, statistical mechanics, and condensed-matter physics. It consists of the analytic continuation $r'_t \to -i\tau$ of the time coordinate to imaginary values, and it converts the oscillating phase of the Feynman path integral into a decaying exponential. The procedure is usually presented as a **trick**: it is justified by analytic continuation of the integrand in the complex time plane, it works for a large class of physically relevant problems, and it fails for others.
 
-This article proposes a structural interpretation of the Wick rotation, in terms of the biquaternion algebra. The main observation is the following: the Wick rotation, in the $i c r'_t$ convention, sends the imaginary time coefficient $i c r'_t$ to the real value $c\tau$, while leaving the spatial coordinates $r_x, r_y, r_z$ unchanged. The result is a point of the **quaternion subspace** $\mathbb{B}_{H}$, whose four coefficients are all real. So the Wick rotation is a **change of real slice**. It replaces the reality condition of the material sector by the reality condition of $\mathbb{B}_{H}$, on one and the same complexified field. It is not a map of algebras from $\mathbb{B}_{\Phi}$ to $\mathbb{B}_{H}$, and no such map exists.
+This article proposes a structural interpretation of the Wick rotation, in terms of the biquaternion algebra. The main observation is the following: the Wick rotation, in the $i r'_t$ convention, sends the imaginary time coefficient $i r'_t$ to the real value $c\tau$, while leaving the spatial coordinates $r_x, r_y, r_z$ unchanged. The result is a point of the **quaternion subspace** $\mathbb{B}_{H}$, whose four coefficients are all real. So the Wick rotation is a **change of real slice**. It replaces the reality condition of the material sector by the reality condition of $\mathbb{B}_{H}$, on one and the same complexified field. It is not a map of algebras from $\mathbb{B}_{\Phi}$ to $\mathbb{B}_{H}$, and no such map exists.
 
 This interpretation explains, in a single structural fact, when the procedure is available and when it is not. The two subspaces are the fixed spaces of two conjugate-linear involutions of the one algebra, related by a time reflection. The rotation is a square root of that reflection, the root that fixes the three spatial coefficients up to the sign of $i$ in the time slot. A quantity crosses from one slice to the other when it is analytic across the deformation, and it fails to cross when the deformation meets a pole or a branch cut. The compactness of the slice is the reason the rotated problem is easier: a definite norm gives no zero divisors, a division algebra, an elliptic operator and a compact group in one stroke.
 
@@ -19,7 +19,7 @@ The biquaternion algebra $\mathbb{B}$ is cut into remarkable real subspaces: the
 **The quaternion subspace $\mathbb{B}_{H}$.** An element has the form
 
 $$
-\tilde{Q} = q_t\, e_t + q_x\, \vec e_x + q_y\, \vec e_y + q_z\, \vec e_z = (c r_t)\, e_t + r_x\, \vec e_x + r_y\, \vec e_y + r_z\, \vec e_z, \qquad q_t, q_x, q_y, q_z \in \mathbb{R}.
+\tilde{Q} = q_t\, e_t + q_x\, \vec e_x + q_y\, \vec e_y + q_z\, \vec e_z = (r_t)\, e_t + r_x\, \vec e_x + r_y\, \vec e_y + r_z\, \vec e_z, \qquad q_t, q_x, q_y, q_z \in \mathbb{R}.
 $$
 
 Here the time parameter is real, $r_t$, and $\tau$ is its value on the rotated point. All four coefficients are **real**. The quadratic form
@@ -33,7 +33,7 @@ has signature $(4, 0)$. The subspace is a subalgebra of $\mathbb{B}$ isomorphic 
 **The material sector $\mathbb{B}_{\Phi}$.** An element has the form
 
 $$
-\tilde R_\Phi = i c r'_t\, e_t + r_x\, \vec e_x + r_y\, \vec e_y + r_z\, \vec e_z, \qquad r'_t, r_x, r_y, r_z \in \mathbb{R}.
+\tilde R_\Phi = i r'_t\, e_t + r_x\, \vec e_x + r_y\, \vec e_y + r_z\, \vec e_z, \qquad r'_t, r_x, r_y, r_z \in \mathbb{R}.
 $$
 
 The first coefficient is **imaginary**, the three remaining coefficients are **real**. The quadratic form
@@ -47,13 +47,13 @@ has signature $(3, 1)$. The subspace is not a subalgebra, and it contains a thre
 **The informational sector $\mathbb{B}_{\Psi}$.** An element has the form
 
 $$
-\tilde R_\Psi = c r_t\, e_t + i r'_x\, \vec e_x + i r'_y\, \vec e_y + i r'_z\, \vec e_z, \qquad r_t, r'_x, r'_y, r'_z \in \mathbb{R}.
+\tilde R_\Psi = r_t\, e_t + i r'_x\, \vec e_x + i r'_y\, \vec e_y + i r'_z\, \vec e_z, \qquad r_t, r'_x, r'_y, r'_z \in \mathbb{R}.
 $$
 
 The first coefficient is **real**, the three remaining coefficients are **imaginary**. The quadratic form
 
 $$
-\langle\tilde R_\Psi\rangle_{\natural} = c^2 r_t^2 - (r'_x)^2 - (r'_y)^2 - (r'_z)^2
+\langle\tilde R_\Psi\rangle_{\natural} = r_t^2 - (r'_x)^2 - (r'_y)^2 - (r'_z)^2
 $$
 
 has signature $(1, 3)$, the mirror image of the signature on $\mathbb{B}_{\Phi}$.
@@ -65,10 +65,10 @@ The three subspaces are distinct, and each has its own algebraic and analytic ch
 In relativistic field theory, a point of the material sector is written
 
 $$
-\tilde R_\Phi = i c r'_t\, e_t + r_x\, \vec e_x + r_y\, \vec e_y + r_z\, \vec e_z \in \mathbb{B}_{\Phi},
+\tilde R_\Phi = i r'_t\, e_t + r_x\, \vec e_x + r_y\, \vec e_y + r_z\, \vec e_z \in \mathbb{B}_{\Phi},
 $$
 
-where $r'_t$ is the time coordinate and $r_x, r_y, r_z$ the spatial ones, so that the four coefficients are $i c r'_t, r_x, r_y, r_z$.
+where $r'_t$ is the time coordinate and $r_x, r_y, r_z$ the spatial ones, so that the four coefficients are $i r'_t, r_x, r_y, r_z$.
 
 The **standard Wick rotation** is the substitution
 
@@ -79,7 +79,7 @@ $$
 in the time coordinate. Under this substitution, the first coefficient of $\tilde{R}_\Phi$ changes as
 
 $$
-\boxed{\;i c r'_t \;\longmapsto\; i c\,(-i\tau) = c\tau\;},
+\boxed{\;i r'_t \;\longmapsto\; i c\,(-i\tau) = c\tau\;},
 $$
 
 while the spatial coefficients $r_x, r_y, r_z$ are unchanged. The rotated point is
@@ -93,12 +93,12 @@ with **all four coefficients real**. In the notation of the quaternion subspace 
 So the standard Wick rotation acts on the coefficient tuple by the linear map
 
 $$
-W=\mathrm{diag}(-i,\,1,\,1,\,1),\qquad W(i c r'_t,\ r_x,\ r_y,\ r_z)=(c r'_t,\ r_x,\ r_y,\ r_z)=(c\tau,\ r_x,\ r_y,\ r_z),
+W=\mathrm{diag}(-i,\,1,\,1,\,1),\qquad W(i r'_t,\ r_x,\ r_y,\ r_z)=(r'_t,\ r_x,\ r_y,\ r_z)=(c\tau,\ r_x,\ r_y,\ r_z),
 $$
 
 with $\tau=r'_t$ the parameter of the image. The map multiplies the time coefficient by $-i$ and fixes the three spatial ones. It is $\mathbb{C}$-linear and bijective, and it is not a ring map. It carries $\mathbb{B}_{\Phi}$ onto $\mathbb{B}_{H}$ coefficient by coefficient, and it is not an isometry: the quadratic form changes sign in the time–time component, and the signature changes from $(3, 1)$ to $(4, 0)$.
 
-**Two operations carry the name, and the algebra tells them apart.** The substitution $r'_t\mapsto-i\tau$ is a rotation of the contour. It takes the material coordinate off the real axis, and at $\tau$ real the source point has $r'_t=-i\tau$ with time coefficient $c\tau$, which is real, so the source is not a point of $\mathbb{B}_{\Phi}$ at all. The relabelling $i c r'_t\mapsto c\tau$ is a different operation: it multiplies the time coefficient by $-i$, produces the real coefficient $c r'_t$, and has $\tau=r'_t$. That operation is the map $W$. It is a bijection of $\mathbb{B}_{\Phi}$ onto $\mathbb{B}_{H}$ and it is the one this article reads. The first is the device of the calculation; the second is the change of reality condition.
+**Two operations carry the name, and the algebra tells them apart.** The substitution $r'_t\mapsto-i\tau$ is a rotation of the contour. It takes the material coordinate off the real axis, and at $\tau$ real the source point has $r'_t=-i\tau$ with time coefficient $c\tau$, which is real, so the source is not a point of $\mathbb{B}_{\Phi}$ at all. The relabelling $i r'_t\mapsto c\tau$ is a different operation: it multiplies the time coefficient by $-i$, produces the real coefficient $r'_t$, and has $\tau=r'_t$. That operation is the map $W$. It is a bijection of $\mathbb{B}_{\Phi}$ onto $\mathbb{B}_{H}$ and it is the one this article reads. The first is the device of the calculation; the second is the change of reality condition.
 
 **The two subspaces are two reality conditions on one algebra.** Each is the fixed space of a conjugate-linear involution of $\mathbb{B}$:
 
@@ -130,12 +130,12 @@ $$
 Z_E = \int  \mathcal{D}\xi\; \exp(-S_E[\xi]\frac{k_m}{m\,c}),
 $$
 
-with a decaying integrand, and it is convergent (at least formally). The basis of the procedure is that the wave operator of the Lorentzian formulation, $-c^{-2}\,\partial^2/\partial {r'_{t}}^2 + \Delta$, becomes the Euclidean Laplacian $\partial^2/\partial \tau^2/c^2 + \Delta$, which is elliptic and well behaved.
+with a decaying integrand, and it is convergent (at least formally). The basis of the procedure is that the wave operator of the Lorentzian formulation, $-\partial^2/\partial {r'_{t}}^2 + \Delta$, becomes the Euclidean Laplacian $\partial^2/\partial \tau^2/c^2 + \Delta$, which is elliptic and well behaved.
 
-In the biquaternion interpretation, the operation is the following. The Lorentzian field $\xi$ on $\mathbb{B}_{\Phi}$ is continued to a field on $\mathbb{B}_{H}$ by the substitution $i c r'_t \mapsto c\tau$. The d'Alembertian, read on the material sector, is
+In the biquaternion interpretation, the operation is the following. The Lorentzian field $\xi$ on $\mathbb{B}_{\Phi}$ is continued to a field on $\mathbb{B}_{H}$ by the substitution $i r'_t \mapsto c\tau$. The d'Alembertian, read on the material sector, is
 
 $$
-\Box = \Delta - \frac{1}{c^2}\frac{\partial^2}{\partial {r'_{t}}^2},
+\Box = \Delta - \frac{\partial^2}{\partial {r'_{t}}^2},
 $$
 
 and the same operator, read on the real coordinates of $\mathbb{B}_{H}$, is
@@ -155,7 +155,7 @@ The reason the change is useful is that $\mathbb{B}_{H}$ is the compact real sli
 | Property | $\mathbb{B}_{H}$ | $\mathbb{B}_{\Phi}$ |
 |---|---|---|
 | Signature of the quadratic form | $(4, 0)$ positive-definite | $(3, 1)$ indefinite |
-| d'Alembertian | $\partial^2/\partial \tau^2/c^2 + \Delta$ (elliptic) | $-c^{-2}\,\partial^2/\partial {r'_{t}}^2 + \Delta$ (hyperbolic) |
+| d'Alembertian | $\partial^2/\partial \tau^2/c^2 + \Delta$ (elliptic) | $-\partial^2/\partial {r'_{t}}^2 + \Delta$ (hyperbolic) |
 | Zero divisors | None | Light cone |
 | Division algebra | Yes | No |
 | Symmetry group | $SO(4)$, compact | $SO(3, 1)$, non-compact |
@@ -215,7 +215,7 @@ The interpretation of the Wick rotation as a change of real slice is an **interp
 - The biquaternion algebra contains four natural four-dimensional real subspaces: $\mathbb{B}_{H}$, $\mathbb{B}_{iH}$, $\mathbb{B}_{\Psi}$, and $\mathbb{B}_{\Phi}$. Three of them — $\mathbb{B}_{H}$, $\mathbb{B}_{\Psi}$, $\mathbb{B}_{\Phi}$ — are involved in the Wick rotation.
 - The three subspaces have distinct signatures: $(4, 0)$, $(1, 3)$, $(3, 1)$.
 - $\mathbb{B}_{H}$ and $\mathbb{B}_{\Phi}$ are the fixed spaces of the conjugate-linear involutions $\bar{\cdot}$ and $\flat$, and $\flat=\bar{\cdot}\circ T$ with $W^{2}=T$.
-- The standard Wick rotation acts on a point of $\mathbb{B}_{\Phi}$ by the coefficient map $W=\mathrm{diag}(-i,1,1,1)$, which sends the imaginary coefficient $i c r'_t$ to the real $c\tau$ and leaves the spatial coefficients unchanged.
+- The standard Wick rotation acts on a point of $\mathbb{B}_{\Phi}$ by the coefficient map $W=\mathrm{diag}(-i,1,1,1)$, which sends the imaginary coefficient $i r'_t$ to the real $c\tau$ and leaves the spatial coefficients unchanged.
 - The resulting point lies in $\mathbb{B}_{H}$.
 - The map is $\mathbb{C}$-linear, bijective and not a ring map; $\mathbb{B}_{H}$ is closed under multiplication and $\mathbb{B}_{\Phi}$ is not.
 
@@ -232,7 +232,7 @@ The interpretation is consistent with the known behaviour of the Wick rotation. 
 
 The standard Wick rotation is the analytic continuation $r'_t \to -i\tau$ of the time coordinate, which converts the Lorentzian structure of spacetime into a Euclidean one and turns the oscillating phase of the Feynman path integral into a decaying exponential. It is usually presented as a trick.
 
-In the biquaternion framework, the standard Wick rotation is the coefficient map $W=\mathrm{diag}(-i,1,1,1)$, which sends the imaginary coefficient $i c r'_t$ to the real coefficient $c\tau$ and leaves the spatial coefficients $r_x, r_y, r_z$ unchanged. The material sector $\mathbb{B}_{\Phi}$ and the quaternion subspace $\mathbb{B}_{H}$ are two reality conditions on one algebra: each is the fixed space of a conjugate-linear involution, and $\flat=\bar{\cdot}\circ T$ with $W^{2}=T$. The rotation is a square root of the time reflection that separates the two conditions, the root that fixes the three spatial coefficients up to the sign of $i$ in the time slot, and it is not a map of algebras between them.
+In the biquaternion framework, the standard Wick rotation is the coefficient map $W=\mathrm{diag}(-i,1,1,1)$, which sends the imaginary coefficient $i r'_t$ to the real coefficient $c\tau$ and leaves the spatial coefficients $r_x, r_y, r_z$ unchanged. The material sector $\mathbb{B}_{\Phi}$ and the quaternion subspace $\mathbb{B}_{H}$ are two reality conditions on one algebra: each is the fixed space of a conjugate-linear involution, and $\flat=\bar{\cdot}\circ T$ with $W^{2}=T$. The rotation is a square root of the time reflection that separates the two conditions, the root that fixes the three spatial coefficients up to the sign of $i$ in the time slot, and it is not a map of algebras between them.
 
 The quaternion subspace $\mathbb{B}_{H}$ is the compact real slice: its quadratic form is positive-definite, it has no zero divisors, it is a division algebra, its d'Alembertian is elliptic, and its isometry group is compact. Those are one property under five names. The change is useful because the continued problem on the compact slice is easier than the original problem on the indefinite one.
 
@@ -250,13 +250,13 @@ The interpretation organizes the applications into a split between those that tr
 | $\mathbb{B}_{\Psi}$ | Informational sector: signature $(1, 3)$, mirror hyperbolic |
 | $\mathbb{B}_{\Phi}$ | Material sector: signature $(3, 1)$, hyperbolic |
 | $q_t, q_x, q_y, q_z$ | Real parameters on $\mathbb{B}_{H}$, on $e_t, \vec e_x, \vec e_y, \vec e_z$; the rotated point has $q_t = c\tau$ |
-| $(c r_t)\,e_t + r_x\,\vec e_x + r_y\,\vec e_y + r_z\,\vec e_z$ | The same element in physical coordinates; $q_t = c r_t$ and $(q_x,q_y,q_z)=(r_x,r_y,r_z)$ |
+| $(r_t)\,e_t + r_x\,\vec e_x + r_y\,\vec e_y + r_z\,\vec e_z$ | The same element in physical coordinates; $q_t = r_t$ and $(q_x,q_y,q_z)=(r_x,r_y,r_z)$ |
 | $r'_t, r_x, r_y, r_z$ | Real parameters on $\mathbb{B}_{\Phi}$, on $ie_t, \vec e_x, \vec e_y, \vec e_z$ |
 | $r_t, r'_x, r'_y, r'_z$ | Real parameters on $\mathbb{B}_{\Psi}$, on $e_t, i\vec e_x, i\vec e_y, i\vec e_z$ |
 | $c$ | Speed of light in the medium |
 | $r'_t$ | Time coordinate on $\mathbb{B}_{\Phi}$ |
 | $\tau$ | Euclidean coordinate on $\mathbb{B}_{H}$ |
-| $i c r'_t$ | Imaginary time coefficient on $\mathbb{B}_{\Phi}$ |
+| $i r'_t$ | Imaginary time coefficient on $\mathbb{B}_{\Phi}$ |
 | $r'_t \to -i\tau$ | Standard Wick rotation |
 | $W=\mathrm{diag}(-i,1,1,1)$ | The coefficient map of the rotation: the time coefficient times $-i$, the three space coefficients fixed |
 | $T=\mathrm{diag}(-1,1,1,1)$ | The time reflection; $W^{2}=T$, so $\flat=\bar{\cdot}\circ W^{2}$ |

@@ -132,8 +132,8 @@ For $V=0$ the short-time kernel is exact for every $\varepsilon$, and the Trotte
 $$
 \boxed{\;K_0(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z,r'_t)
 = \int\frac{d^3p}{(\frac{2\,m\,c\,\pi}{k_m})^3}\,\exp(\,\frac{k_m\,i\,\vec p\,(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)}{m\,c})\,\exp(-i\varepsilon p^2 c/(\frac{2\,m^{2}\,c^{2}}{k_m}))\Big|_{\varepsilon\to  r'_t}
-= \left(\frac{k_m}{2\pi i c r'_t}\right)^{3/2}
-\exp\left(\frac{im|r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z|^2}{\frac{2\,m\,c\,r'_{t}}{k_m}}\right)\;},
+= \left(\frac{k_m}{2\pi i r'_t}\right)^{3/2}
+\exp\left(\frac{im|r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z|^2}{\frac{2\,m\,r'_{t}}{k_m}}\right)\;},
 $$
 
 which is the free kernel of the free-particle article. It is central, and its phase is the classical free action $S_{\mathrm{cl}}=m|r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z|^2/2r'_t$ over $\frac{m\,c}{k_m}$. The squared modulus is the spreading density $|K_0|^2=(\frac{k_m}{2\,c\,\pi\,r'_{t}})^3$, constant in space, which is the statement that a point source spreads uniformly in free space.
@@ -326,7 +326,7 @@ $$
 
 and the Trotter product of these kernels gives the sum over paths $G_{\mathrm{prop}}=\int\mathcal{D}r_x\,\mathcal{D}r_y\,\mathcal{D}r_z\,\exp(iS[r_x,r_y,r_z]\frac{k_m}{m\,c})e_t$.
 
-The free kernel is $K_0=(\frac{k_m}{2\,c\,\pi\,i\,r'_{t}})^{3/2}\exp(im|r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z|^\frac{k_m}{m\,c\,r'_{t}})$, with the composition law verified on a two-packet superposition to a relative error of order $10^{-14}$. The harmonic-oscillator kernel is
+The free kernel is $K_0=(\frac{k_m}{2\,c\,\pi\,i\,r'_{t}})^{3/2}\exp(im|r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z|^\frac{k_m}{m\,r'_{t}})$, with the composition law verified on a two-packet superposition to a relative error of order $10^{-14}$. The harmonic-oscillator kernel is
 
 $$
 G_{\mathrm{osc},\omega}=\left(\frac{\omega\,k_m}{2\pi i c\sin\omega r'_t}\right)^{1/2}
@@ -353,7 +353,7 @@ The semiclassical limit of the path integral is the van Vleck kernel $K\approx(\
 | $G_{\\mathrm{prop},\\varepsilon}(r_{2x}\,\vec e_x+r_{2y}\,\vec e_y+r_{2z}\,\vec e_z,r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)$ | Short-time kernel; phase $=\frac{k_m\,i}{m\,c}(\mathrm{Lag}\varepsilon)$ |
 | $\mathcal{D}x\,\mathcal{D}y\,\mathcal{D}z$ | Path-integral measure; defined by the Trotter limit |
 | $S[r_x,r_y,r_z]=\int \mathrm{Lag}\,dr'_t$ | Action; real scalar |
-| $K_0=(\frac{k_m}{2\,c\,\pi\,i\,r'_{t}})^{3/2}\exp(im|r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z|^\frac{k_m}{m\,c\,r'_{t}})$ | Free kernel |
+| $K_0=(\frac{k_m}{2\,c\,\pi\,i\,r'_{t}})^{3/2}\exp(im|r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z|^\frac{k_m}{m\,r'_{t}})$ | Free kernel |
 | $G_{\mathrm{osc},\omega}$ | Oscillator kernel; poles at $\omega r'_t=n\pi$ |
 | $S_{\mathrm{cl}}=\frac{m\omega}{2\sin\omega r'_t}[(r_x^2+r_{0x}^2)\cos\omega r'_t-2r_xr_{0x}]$ | Oscillator classical action |
 | $G_{\mathrm{osc},\omega}^E$ | Mehler kernel; image of $G_{\mathrm{osc},\omega}$ under $r'_t\to-i\tau$ |

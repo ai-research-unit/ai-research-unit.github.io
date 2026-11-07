@@ -7,7 +7,7 @@ The companion article *Quantum Physics in Biquaternionic Form* identifies the He
 $$
 p=\frac{\langle\tilde{Ϛ}_{\Psi},\tilde R_\Psi\rangle_{*}}{\langle\tilde{Ϛ}_{\Psi},e_t\rangle_{*}}
  =\frac{\mathrm{Sc}(\tilde{Ϛ}_{\Psi}\tilde R_\Psi^{*})}{\mathrm{Sc}(\tilde{Ϛ}_{\Psi})}
- =c r_t+\vec r\cdot\vec r_\Psi,
+ =r_t+\vec r\cdot\vec r_\Psi,
 \qquad \langle\tilde{Ϛ}_{\Psi},e_t\rangle_{*}=\tfrac12,\quad \langle e_t\rangle_{*}=1.
 $$
 
@@ -83,38 +83,38 @@ The order is forced by what each level requires. The form needs only the algebra
 
 ### The Pairing and Its Naturalness
 
-An element of $\mathbb{B}_{\Psi}$ is $\tilde R_\Psi=c r_t\,e_t+i\vec r_\Psi$, with $c r_t\in\mathbb{R}$ and $\vec r_\Psi=(r'_x,r'_y,r'_z)\in\mathbb{R}^3$. The Hermitian form is
+An element of $\mathbb{B}_{\Psi}$ is $\tilde R_\Psi=r_t\,e_t+i\vec r_\Psi$, with $r_t\in\mathbb{R}$ and $\vec r_\Psi=(r'_x,r'_y,r'_z)\in\mathbb{R}^3$. The Hermitian form is
 
 $$
 \langle\tilde{R}_{\Psi,1},\tilde{R}_{\Psi,2}\rangle_{*}=\mathrm{Sc}(\tilde{R}_{\Psi,1}\tilde{R}_{\Psi,2}^{*})
-=c^2 r_{t,1}r_{t,2}+\vec r_{\Psi,1}\cdot\vec r_{\Psi,2},
+=r_{t,1}r_{t,2}+\vec r_{\Psi,1}\cdot\vec r_{\Psi,2},
 $$
 
-obtained from $\tilde{R}_{\Psi,1}\tilde{R}_{\Psi,2}=(c^2 r_{t,1}r_{t,2}+\vec r_{\Psi,1}\cdot\vec r_{\Psi,2})e_t+i(c r_{t,1}\vec r_{\Psi,2}+c r_{t,2}\vec r_{\Psi,1})-\vec r_{\Psi,1}\times\vec r_{\Psi,2}$ together with $\tilde{R}_{\Psi,1}^{*}=\tilde{R}_{\Psi,1}$ and $\tilde{R}_{\Psi,2}^{*}=\tilde{R}_{\Psi,2}$, and its diagonal is the Hermitian norm,
+obtained from $\tilde{R}_{\Psi,1}\tilde{R}_{\Psi,2}=(r_{t,1}r_{t,2}+\vec r_{\Psi,1}\cdot\vec r_{\Psi,2})e_t+i(c r_{t,1}\vec r_{\Psi,2}+c r_{t,2}\vec r_{\Psi,1})-\vec r_{\Psi,1}\times\vec r_{\Psi,2}$ together with $\tilde{R}_{\Psi,1}^{*}=\tilde{R}_{\Psi,1}$ and $\tilde{R}_{\Psi,2}^{*}=\tilde{R}_{\Psi,2}$, and its diagonal is the Hermitian norm,
 
 $$
-\langle\tilde R_\Psi\rangle_{*}=\langle\tilde R_\Psi,\tilde R_\Psi\rangle_{*}=c^2 r_t^2+|\vec r_\Psi|^2 .
+\langle\tilde R_\Psi\rangle_{*}=\langle\tilde R_\Psi,\tilde R_\Psi\rangle_{*}=r_t^2+|\vec r_\Psi|^2 .
 $$
 
 The unit is normalised by $\langle e_t\rangle_{*}=1$. In the basis $\{e_t,i\vec e_x,i\vec e_y,i\vec e_z\}$ the Gram matrix is the identity, so on $\mathbb{B}_{\Psi}$ the form is positive definite of signature $(4,0)$, the Euclidean inner product on $\mathbb{R}^4$; on the whole algebra it is positive definite of signature $(8,0)$.
 
-Two immediate consequences will be used repeatedly. First, for Hermitian arguments the form is real and symmetric: $\langle\tilde{R}_{\Psi,1},\tilde{R}_{\Psi,2}\rangle_{*}=\langle\tilde{R}_{\Psi,2},\tilde{R}_{\Psi,1}\rangle_{*}=c^2 r_{t,1}r_{t,2}+\vec r_{\Psi,1}\cdot\vec r_{\Psi,2}$. As a sesquilinear form it is $\mathbb{C}$-linear in the first argument and $\mathbb{C}$-antilinear in the second; on $\mathbb{B}_{\Psi}$ only real combinations of Hermitian elements occur, so the antilinearity is inert and the pairing is symmetric. Second, it is positive definite, since $\langle\tilde{R}_{\Psi,1}\rangle_{*}=c r_{t,1}^2+|\vec r_{\Psi,1}|^2\geq0$ with equality only for $\tilde{R}_{\Psi,1}=0$; the Hermitian form is therefore an inner product on the whole algebra, not merely a symmetric form on a sector.
+Two immediate consequences will be used repeatedly. First, for Hermitian arguments the form is real and symmetric: $\langle\tilde{R}_{\Psi,1},\tilde{R}_{\Psi,2}\rangle_{*}=\langle\tilde{R}_{\Psi,2},\tilde{R}_{\Psi,1}\rangle_{*}=r_{t,1}r_{t,2}+\vec r_{\Psi,1}\cdot\vec r_{\Psi,2}$. As a sesquilinear form it is $\mathbb{C}$-linear in the first argument and $\mathbb{C}$-antilinear in the second; on $\mathbb{B}_{\Psi}$ only real combinations of Hermitian elements occur, so the antilinearity is inert and the pairing is symmetric. Second, it is positive definite, since $\langle\tilde{R}_{\Psi,1}\rangle_{*}=c r_{t,1}^2+|\vec r_{\Psi,1}|^2\geq0$ with equality only for $\tilde{R}_{\Psi,1}=0$; the Hermitian form is therefore an inner product on the whole algebra, not merely a symmetric form on a sector.
 
-Three properties single it out. **Invariance:** under $*$-unitary conjugation $\tilde{R}_{\Psi,1}\mapsto\tilde{U}\tilde{R}_{\Psi,1}\tilde{U}^{*}$ the form is invariant; since the unit quaternions rotate $\vec r_{\Psi,1}$ and fix $c r_{t,1}$, an invariant symmetric bilinear form on $\mathbb{B}_{\Psi}$ must be $\mathcal{B}=\alpha c^2 r_{t,1}r_{t,2}+\beta\,\vec r_{\Psi,1}\cdot\vec r_{\Psi,2}$, so invariance alone leaves two parameters. **Product form:** requiring the form on $\mathbb{B}_{\Psi}$ to be the scalar part of the algebra's product, $\mathcal{B}(\tilde{R}_{\Psi,1},\tilde{R}_{\Psi,2})=f(\tilde{R}_{\Psi,1}\tilde{R}_{\Psi,2})$ with $f$ central and $f(e_t)=1$, forces $f=\mathrm{Sc}$ and hence $\alpha=\beta$; the Hermitian form agrees with that pairing on $\mathbb{B}_{\Psi}$ and extends it to $\mathbb{B}$ without losing positivity. **Positivity:** $\alpha,\beta>0$ makes the form on the sector positive definite; the Hermitian form is positive definite on the whole algebra, so no sector restriction is needed. The scale is fixed by $\langle e_t\rangle_{*}=1$, though the scale cancels in probabilities, which are ratios. Thus the pairing is unique once the associative product, positivity on the whole algebra and the unit normalisation are required — the product condition is a genuine assumption, not a consequence of symmetry.
+Three properties single it out. **Invariance:** under $*$-unitary conjugation $\tilde{R}_{\Psi,1}\mapsto\tilde{U}\tilde{R}_{\Psi,1}\tilde{U}^{*}$ the form is invariant; since the unit quaternions rotate $\vec r_{\Psi,1}$ and fix $c r_{t,1}$, an invariant symmetric bilinear form on $\mathbb{B}_{\Psi}$ must be $\mathcal{B}=\alpha r_{t,1}r_{t,2}+\beta\,\vec r_{\Psi,1}\cdot\vec r_{\Psi,2}$, so invariance alone leaves two parameters. **Product form:** requiring the form on $\mathbb{B}_{\Psi}$ to be the scalar part of the algebra's product, $\mathcal{B}(\tilde{R}_{\Psi,1},\tilde{R}_{\Psi,2})=f(\tilde{R}_{\Psi,1}\tilde{R}_{\Psi,2})$ with $f$ central and $f(e_t)=1$, forces $f=\mathrm{Sc}$ and hence $\alpha=\beta$; the Hermitian form agrees with that pairing on $\mathbb{B}_{\Psi}$ and extends it to $\mathbb{B}$ without losing positivity. **Positivity:** $\alpha,\beta>0$ makes the form on the sector positive definite; the Hermitian form is positive definite on the whole algebra, so no sector restriction is needed. The scale is fixed by $\langle e_t\rangle_{*}=1$, though the scale cancels in probabilities, which are ratios. Thus the pairing is unique once the associative product, positivity on the whole algebra and the unit normalisation are required — the product condition is a genuine assumption, not a consequence of symmetry.
 
 ### It Is Not the Biquaternion Norm
 
 The other natural quadratic form on $\mathbb{B}_{\Psi}$ is the **biquaternion norm**
 
 $$
-\langle\tilde R_\Psi\rangle_{\natural} = \langle\tilde R_\Psi,\tilde R_\Psi\rangle_{\natural}=\tilde R_\Psi\tilde R_\Psi^{\natural}=(c^2 r_t^2-|\vec r_\Psi|^2)e_t,
+\langle\tilde R_\Psi\rangle_{\natural} = \langle\tilde R_\Psi,\tilde R_\Psi\rangle_{\natural}=\tilde R_\Psi\tilde R_\Psi^{\natural}=(r_t^2-|\vec r_\Psi|^2)e_t,
 $$
 
 of signature $(1,3)$, whose future light cone is the positivity cone. The state space is the state slice of that cone, normalised by $\langle\tilde{Ϛ}_{\Psi},e_t\rangle_{*}=\tfrac12\langle e_t\rangle_{*}$; the Born rule is a statement about the Hermitian form. Positivity of a state is a biquaternion-norm condition, while Born probabilities are Hermitian-form quantities. The Born rule therefore does not follow from the light-cone structure of $\mathbb{B}_{\Psi}$; it follows from the Euclidean form, a different form on the same space.
 
-The two forms are complementary, and the idempotents show it clearly. For $\tilde\Pi_{1,2}(\vec u)$ one has $c r_t=\tfrac12$ and $|\vec r_\Psi|=\tfrac12$, so the biquaternion norm vanishes,
+The two forms are complementary, and the idempotents show it clearly. For $\tilde\Pi_{1,2}(\vec u)$ one has $r_t=\tfrac12$ and $|\vec r_\Psi|=\tfrac12$, so the biquaternion norm vanishes,
 $$
-\langle\tilde\Pi_{1,2}\rangle_{\natural}=\tilde\Pi_{1,2}\tilde\Pi_{1,2}^{\natural}=(c^2 r_t^2-|\vec r_\Psi|^2)e_t=0,
+\langle\tilde\Pi_{1,2}\rangle_{\natural}=\tilde\Pi_{1,2}\tilde\Pi_{1,2}^{\natural}=(r_t^2-|\vec r_\Psi|^2)e_t=0,
 $$
 placing the idempotents on the boundary of the light cone, while the Hermitian form gives $\langle\tilde\Pi_{1,2},e_t\rangle_{*}=\tfrac12\langle e_t\rangle_{*}$ and $\langle\tilde\Pi_{1,2}\rangle_{*}=\tfrac12$. The idempotents are null for the biquaternion norm and normalised for the Hermitian form; probabilities are read from the second, not the first.
 
@@ -126,7 +126,7 @@ $$
 e_t\mapsto I_2,\qquad \vec e_\mu\mapsto-i\sigma_\mu\quad(\mu=1,2,3),
 $$
 
-the convention of the companion article. It gives $\iota(\tilde R_\Psi)=c r_t\,I_2+\vec r_\Psi\cdot\boldsymbol{\sigma}$, so $\mathbb{B}_{\Psi}$ maps onto the Hermitian $2\times2$ matrices, and, the Pauli matrices being traceless,
+the convention of the companion article. It gives $\iota(\tilde R_\Psi)=r_t\,I_2+\vec r_\Psi\cdot\boldsymbol{\sigma}$, so $\mathbb{B}_{\Psi}$ maps onto the Hermitian $2\times2$ matrices, and, the Pauli matrices being traceless,
 
 $$
 \mathrm{tr}\,\iota(\tilde{Q})=2\,\mathrm{Sc}(\tilde{Q})=\mathrm{Tr}(\tilde{Q}),
@@ -158,12 +158,12 @@ mapping to the density matrix $\tfrac{1}{2}(I_2+\vec r\cdot\boldsymbol{\sigma})$
 
 ## Derivation of the Born Probability
 
-For $\tilde R_\Psi=c r_t\,e_t+i\vec r_\Psi$ and $\tilde{Ϛ}_{\Psi}=\tfrac{1}{2}(e_t+i\vec r)$, the state is normalised against the unit, $\langle\tilde{Ϛ}_{\Psi},e_t\rangle_{*}=\tfrac12\langle e_t\rangle_{*}$, and the expectation value is the Born weight
+For $\tilde R_\Psi=r_t\,e_t+i\vec r_\Psi$ and $\tilde{Ϛ}_{\Psi}=\tfrac{1}{2}(e_t+i\vec r)$, the state is normalised against the unit, $\langle\tilde{Ϛ}_{\Psi},e_t\rangle_{*}=\tfrac12\langle e_t\rangle_{*}$, and the expectation value is the Born weight
 
 $$
 \langle\tilde R_\Psi\rangle_{\tilde{Ϛ}_{\Psi},*}=\frac{\langle\tilde{Ϛ}_{\Psi},\tilde R_\Psi\rangle_{*}}{\langle\tilde{Ϛ}_{\Psi},e_t\rangle_{*}}
 =\frac{\mathrm{Sc}(\tilde{Ϛ}_{\Psi}\tilde R_\Psi^{*})}{\mathrm{Sc}(\tilde{Ϛ}_{\Psi})}
-=c r_t+\vec r\cdot\vec r_\Psi.
+=r_t+\vec r\cdot\vec r_\Psi.
 $$
 
 **The material element behind the reading.** Every Hermitian $\tilde R_\Psi$ is $\tilde R_\Psi=iA$ for a unique anti-Hermitian $A\in\mathbb{B}_{\Phi}$, the **material element** that is observed. Since $(iA)^{*}=iA$, the expectation is
@@ -175,13 +175,13 @@ $$
 
 and $\mathrm{Sc}(\tilde{Ϛ}_{\Psi}A)$ is purely imaginary, so the factor $i$ makes the reading real. The Born pairing thus pairs an $\mathbb{B}_{\Psi}$ state with an $\mathbb{B}_{\Phi}$ material element; the two senses of "observable" are the object $A$ and its representative $iA$.
 
-The spectral decomposition is likewise purely algebraic. Writing $\tilde R_\Psi=c r_t\,e_t+i|\vec r_\Psi|\vec u_\Psi$ and multiplying by $\tilde\Pi_{1,2}(\vec u_\Psi)$, using $(i\vec u_\Psi)(i\vec u_\Psi)=e_t$, gives
+The spectral decomposition is likewise purely algebraic. Writing $\tilde R_\Psi=r_t\,e_t+i|\vec r_\Psi|\vec u_\Psi$ and multiplying by $\tilde\Pi_{1,2}(\vec u_\Psi)$, using $(i\vec u_\Psi)(i\vec u_\Psi)=e_t$, gives
 $$
-\tilde R_\Psi\tilde\Pi_1(\vec u_\Psi)=(c r_t+|\vec r_\Psi|)\tilde\Pi_1(\vec u_\Psi),\qquad \tilde R_\Psi\tilde\Pi_2(\vec u_\Psi)=(c r_t-|\vec r_\Psi|)\tilde\Pi_2(\vec u_\Psi),
+\tilde R_\Psi\tilde\Pi_1(\vec u_\Psi)=(r_t+|\vec r_\Psi|)\tilde\Pi_1(\vec u_\Psi),\qquad \tilde R_\Psi\tilde\Pi_2(\vec u_\Psi)=(r_t-|\vec r_\Psi|)\tilde\Pi_2(\vec u_\Psi),
 $$
-so the eigenvalues are $\lambda_\pm=c r_t\pm|\vec r_\Psi|$ and the spectral projectors are the idempotents. The statement that the idempotents are complete, $\tilde\Pi_1+\tilde\Pi_2=e_t$, is the algebraic form of the spectral theorem for $\tilde R_\Psi\in\mathbb{B}_{\Psi}$.
+so the eigenvalues are $\lambda_\pm=r_t\pm|\vec r_\Psi|$ and the spectral projectors are the idempotents. The statement that the idempotents are complete, $\tilde\Pi_1+\tilde\Pi_2=e_t$, is the algebraic form of the spectral theorem for $\tilde R_\Psi\in\mathbb{B}_{\Psi}$.
 
-For a spectral decomposition $\tilde R_\Psi=\lambda_+\tilde\Pi_1(\vec u_\Psi)+\lambda_-\tilde\Pi_2(\vec u_\Psi)$, with $\vec u_\Psi=\vec r_\Psi/|\vec r_\Psi|$, $\lambda_\pm=c r_t\pm|\vec r_\Psi|$ and $\tilde\Pi_1+\tilde\Pi_2=e_t$, the probability of the $+$ outcome is $p_+=\langle\tilde\Pi_1(\vec u_\Psi),\tilde{Ϛ}_{\Psi}\rangle_{*}/\langle\tilde{Ϛ}_{\Psi},e_t\rangle_{*}$. Directly,
+For a spectral decomposition $\tilde R_\Psi=\lambda_+\tilde\Pi_1(\vec u_\Psi)+\lambda_-\tilde\Pi_2(\vec u_\Psi)$, with $\vec u_\Psi=\vec r_\Psi/|\vec r_\Psi|$, $\lambda_\pm=r_t\pm|\vec r_\Psi|$ and $\tilde\Pi_1+\tilde\Pi_2=e_t$, the probability of the $+$ outcome is $p_+=\langle\tilde\Pi_1(\vec u_\Psi),\tilde{Ϛ}_{\Psi}\rangle_{*}/\langle\tilde{Ϛ}_{\Psi},e_t\rangle_{*}$. Directly,
 
 $$
 \tilde\Pi_1(\vec u_\Psi)\tilde{Ϛ}_{\Psi}=\tfrac{1}{4}\bigl[(1+\vec u_\Psi\cdot\vec r)e_t+i(\vec u_\Psi+\vec r)-\vec u_\Psi\times\vec r\bigr],
@@ -193,9 +193,9 @@ $$
 \boxed{\;p_+=\tfrac{1}{2}(1+\vec u_\Psi\cdot\vec r),\qquad p_-=\tfrac{1}{2}(1-\vec u_\Psi\cdot\vec r)\;}.
 $$
 
-The pairing also reproduces the variance. From $\tilde{R}_\Psi^2=(c^2 r_t^2+|\vec r_\Psi|^2)e_t+2c r_t\,i\vec r_\Psi$,
+The pairing also reproduces the variance. From $\tilde{R}_\Psi^2=(r_t^2+|\vec r_\Psi|^2)e_t+2c r_t\,i\vec r_\Psi$,
 $$
-\langle\tilde{R}_\Psi^2\rangle_{\tilde{Ϛ}_{\Psi},*}=\frac{\langle\tilde{Ϛ}_{\Psi},\tilde{R}_\Psi^2\rangle_{*}}{\langle\tilde{Ϛ}_{\Psi},e_t\rangle_{*}}=c^2 r_t^2+|\vec r_\Psi|^2+2c r_t\,\vec r\cdot\vec r_\Psi,
+\langle\tilde{R}_\Psi^2\rangle_{\tilde{Ϛ}_{\Psi},*}=\frac{\langle\tilde{Ϛ}_{\Psi},\tilde{R}_\Psi^2\rangle_{*}}{\langle\tilde{Ϛ}_{\Psi},e_t\rangle_{*}}=r_t^2+|\vec r_\Psi|^2+2c r_t\,\vec r\cdot\vec r_\Psi,
 $$
 so
 $$
@@ -203,7 +203,7 @@ $$
 $$
 vanishing precisely when $\vec r=\pm\vec u_\Psi$, i.e. when the state is an eigenstate of the observable. This is a nontrivial check that the statistical content is carried by the Hermitian form and not by the biquaternion norm.
 
-Three algebraic properties make the pairing a probability assignment. **Reality:** for Hermitian $\tilde{R}_{\Psi,1},\tilde{R}_{\Psi,2}$, $\tilde{R}_{\Psi,2}^{*}=\tilde{R}_{\Psi,2}$, so $\langle\tilde{R}_{\Psi,1},\tilde{R}_{\Psi,2}\rangle_{*}=\mathrm{Sc}(\tilde{R}_{\Psi,1}\tilde{R}_{\Psi,2}^{*})=\mathrm{Sc}(\tilde{R}_{\Psi,1}\tilde{R}_{\Psi,2})=c^2 r_{t,1}r_{t,2}+\vec r_{\Psi,1}\cdot\vec r_{\Psi,2}\in\mathbb{R}$; the conjugation acts as the identity but the star is written. **Positivity:** for $\tilde{Q}_1\geq0$ and $\tilde{Ϛ}_{\Psi}\geq0$, $\langle\tilde{Q}_1,\tilde{Ϛ}_{\Psi}\rangle_{*}\geq0$, since under $\iota$, with $A=\iota(\tilde{Q}_1)$ and $B=\iota(\tilde{Ϛ}_{\Psi})$, this is $A,B\geq0\Rightarrow\mathrm{tr}(AB)=\mathrm{tr}(\sqrt{A}B\sqrt{A})\geq0$; with $|\vec r|\leq1$ it also gives $p_+\leq1$. Positivity is thus guaranteed twice: the form is positive definite on $\mathbb{B}$, and the pair is positive. **Normalization:** by completeness and symmetry,
+Three algebraic properties make the pairing a probability assignment. **Reality:** for Hermitian $\tilde{R}_{\Psi,1},\tilde{R}_{\Psi,2}$, $\tilde{R}_{\Psi,2}^{*}=\tilde{R}_{\Psi,2}$, so $\langle\tilde{R}_{\Psi,1},\tilde{R}_{\Psi,2}\rangle_{*}=\mathrm{Sc}(\tilde{R}_{\Psi,1}\tilde{R}_{\Psi,2}^{*})=\mathrm{Sc}(\tilde{R}_{\Psi,1}\tilde{R}_{\Psi,2})=r_{t,1}r_{t,2}+\vec r_{\Psi,1}\cdot\vec r_{\Psi,2}\in\mathbb{R}$; the conjugation acts as the identity but the star is written. **Positivity:** for $\tilde{Q}_1\geq0$ and $\tilde{Ϛ}_{\Psi}\geq0$, $\langle\tilde{Q}_1,\tilde{Ϛ}_{\Psi}\rangle_{*}\geq0$, since under $\iota$, with $A=\iota(\tilde{Q}_1)$ and $B=\iota(\tilde{Ϛ}_{\Psi})$, this is $A,B\geq0\Rightarrow\mathrm{tr}(AB)=\mathrm{tr}(\sqrt{A}B\sqrt{A})\geq0$; with $|\vec r|\leq1$ it also gives $p_+\leq1$. Positivity is thus guaranteed twice: the form is positive definite on $\mathbb{B}$, and the pair is positive. **Normalization:** by completeness and symmetry,
 
 $$
 p_++p_-=\frac{\langle\tilde\Pi_1+\tilde\Pi_2,\tilde{Ϛ}_{\Psi}\rangle_{*}}{\langle\tilde{Ϛ}_{\Psi},e_t\rangle_{*}}=\frac{\langle e_t,\tilde{Ϛ}_{\Psi}\rangle_{*}}{\langle\tilde{Ϛ}_{\Psi},e_t\rangle_{*}}=1.
@@ -285,24 +285,24 @@ The tracial reading of the weight uses the functional $f=\mathrm{Sc}$, normalise
 Uniqueness fails as soon as traciality is dropped. Keeping symmetry, invariance, and positivity leaves
 
 $$
-\mathcal{B}(\tilde{R}_{\Psi,1},\tilde{R}_{\Psi,2})=\alpha\,c^2 r_{t,1}r_{t,2}+\beta\,\vec r_{\Psi,1}\cdot\vec r_{\Psi,2},\qquad \alpha,\beta>0,
+\mathcal{B}(\tilde{R}_{\Psi,1},\tilde{R}_{\Psi,2})=\alpha\,r_{t,1}r_{t,2}+\beta\,\vec r_{\Psi,1}\cdot\vec r_{\Psi,2},\qquad \alpha,\beta>0,
 $$
 
 a genuine two-parameter family; traciality is the extra condition $\alpha=\beta$. Keeping positivity and normalization but dropping traciality, the normalized positive functionals on $\mathbb{B}_{\Psi}$ are exactly the states: for every $\vec q\in\mathbb{R}^3$ with $|\vec q|\leq1$,
 
 $$
-f_{\vec q}(\tilde R_\Psi)=c r_t+\vec q\cdot\vec r_\Psi
+f_{\vec q}(\tilde R_\Psi)=r_t+\vec q\cdot\vec r_\Psi
 $$
 
 is positive on the positive cone, being the pairing with the state $\tilde{Ϛ}_{\Psi,\vec q}=\tfrac12(e_t+i\vec q)$. Why is positivity restricted to $|\vec q|\leq1$? Under $\iota$ the functional is $f_{\vec q}(\tilde R_\Psi)=\mathrm{tr}(\rho_{\vec q}A)$ with $A=\iota(\tilde R_\Psi)$ and $\rho_{\vec q}=\tfrac12(I+\vec q\cdot\boldsymbol{\sigma})$; positivity of the functional is positivity of the density matrix, which holds exactly when $\vec q$ lies in the Bloch ball. The trace corresponds to $\vec q=0$, the maximally mixed state, which is the only point at which the functional is tracial. The trace is not the unique functional "chosen by nature"; it is the unique *tracial* functional. Concretely, extending $f_{\vec q}$ to $\mathbb{B}$ by $f_{\vec q}(\tilde{Q})=\mathrm{Re}(Q_t)+\vec q\cdot\vec v_i(\tilde{Q})$, where $\vec v_i$ is the coefficient of the imaginary vector part, one finds for $\tilde{Q}=\vec e_x$, $\tilde Q_y=i\vec e_y$ that $f_{\vec q}(\tilde{Q}\tilde Q_y)=+q_z$ while $f_{\vec q}(\tilde Q_y\tilde{Q})=-q_z$; the extension of $f_{\vec q}$ to $\mathbb{B}$ is not tracial unless $\vec q=0$.
 
 There is a further uniqueness question: is the trace form the only probability measure on the projection lattice? In dimension at least three, **Gleason's theorem** says yes. In dimension two it **fails**: the projection lattice of $\mathbb{C}^2$ is the Bloch sphere with $P$ and $I-P$ complementary, and assignments in $[0,1]$ with complementary projectors summing to one need not be of trace form — non-trace frame functions exist. Uniqueness is restored if the domain is enlarged from projections to all effects and additivity is required there: by **Busch's** effect-based version of Gleason's theorem, a normalized additive assignment on the full effect algebra is of trace form in every dimension, including two. For a qubit, then, uniqueness of the probability measure is not a consequence of the algebra alone; it requires the effect structure, i.e. the POVM framework. It is significant that the trace formula extends cleanly to effects, since that is precisely the statement whose uniqueness is a theorem.
 
-**Open question — the pairing at the other sector.** The weight is the Hermitian form $\langle\tilde{Ϛ}_{\Psi},\tilde R_\Psi\rangle_{*}$, positive definite on $\mathbb{B}$. On the material sector the physically relevant pairing is the indefinite Krein form $\langle\tilde Q_1,\tilde Q_2\rangle_{\natural*}$, of signature $(3,1)$ up to the $i c r'_t$ convention. **Whether the fundamental pairing of the framework is the Hermitian form at the informational sector or the Krein form at the material sector is open**, and the corpus's position is stated, not derived: the states are the informational ones and the pairing is the Hermitian form, with the trace as its $2\times2$ reading, and the material pairing is a calibration. The other side of the question is *The Physical Interpretation of the 12 Products*.
+**Open question — the pairing at the other sector.** The weight is the Hermitian form $\langle\tilde{Ϛ}_{\Psi},\tilde R_\Psi\rangle_{*}$, positive definite on $\mathbb{B}$. On the material sector the physically relevant pairing is the indefinite Krein form $\langle\tilde Q_1,\tilde Q_2\rangle_{\natural*}$, of signature $(3,1)$ up to the $i r'_t$ convention. **Whether the fundamental pairing of the framework is the Hermitian form at the informational sector or the Krein form at the material sector is open**, and the corpus's position is stated, not derived: the states are the informational ones and the pairing is the Hermitian form, with the trace as its $2\times2$ reading, and the material pairing is a calibration. The other side of the question is *The Physical Interpretation of the 12 Products*.
 
 ## What Is Derivation and What Is Restatement
 
-**Derived.** From the algebra and its Hermitian subspace: (1) a canonical positive pairing on the whole algebra, fixed up to scale by the product condition on $\mathbb{B}_{\Psi}$, positivity and the normalisation $\langle e_t\rangle_{*}=1$; (2) a canonical family of rank-one idempotents, exactly the rank-one projectors under the isomorphism; (3) reality, positivity, and normalization of the state–idempotent pairing, hence a probability distribution for a projective measurement; (4) the expectation value $\langle\tilde{Ϛ}_{\Psi},\tilde R_\Psi\rangle_{*}/\langle\tilde{Ϛ}_{\Psi},e_t\rangle_{*}=c r_t+\vec r\cdot\vec r_\Psi$ and the transition probability $\langle\tilde\Pi,\tilde\Pi_{\mathrm{p}}\rangle_{*}/\langle\tilde\Pi,e_t\rangle_{*}=\cos^2(\theta/2)$, with manifest symmetry; (5) the extension to effects and POVMs, with explicit non-projective examples; (6) exact agreement with the Hilbert-space formulas under $\mathbb{B}\cong M_2(\mathbb{C})$, a theorem about the algebra rather than an empirical coincidence.
+**Derived.** From the algebra and its Hermitian subspace: (1) a canonical positive pairing on the whole algebra, fixed up to scale by the product condition on $\mathbb{B}_{\Psi}$, positivity and the normalisation $\langle e_t\rangle_{*}=1$; (2) a canonical family of rank-one idempotents, exactly the rank-one projectors under the isomorphism; (3) reality, positivity, and normalization of the state–idempotent pairing, hence a probability distribution for a projective measurement; (4) the expectation value $\langle\tilde{Ϛ}_{\Psi},\tilde R_\Psi\rangle_{*}/\langle\tilde{Ϛ}_{\Psi},e_t\rangle_{*}=r_t+\vec r\cdot\vec r_\Psi$ and the transition probability $\langle\tilde\Pi,\tilde\Pi_{\mathrm{p}}\rangle_{*}/\langle\tilde\Pi,e_t\rangle_{*}=\cos^2(\theta/2)$, with manifest symmetry; (5) the extension to effects and POVMs, with explicit non-projective examples; (6) exact agreement with the Hilbert-space formulas under $\mathbb{B}\cong M_2(\mathbb{C})$, a theorem about the algebra rather than an empirical coincidence.
 
 **Restated.** Not derived from the algebra: (1) the identification of the pairing with **empirical frequency** — the algebra produces a canonical number in $[0,1]$, and reading it as a probability is the Born rule's empirical content, which no algebraic manipulation removes; (2) the choices of normalization and of the factor $2$, which are conventions, since the scale cancels in probabilities; (3) the general Hilbert-space statement $p=\mathrm{Tr}(E\rho)$, of which the biquaternion formula is a restatement for $n=2$, generalizing only the pure-vector statement $|\langle\xi_{\mathrm{alt}}|\tilde{Ξ}_{\mathrm{sp}}\rangle_{*}|^2$.
 
@@ -315,11 +315,11 @@ The Born rule in the biquaternion framework is the normalised Hermitian form
 $$
 p=\frac{\langle\tilde{Ϛ}_{\Psi},\tilde R_\Psi\rangle_{*}}{\langle\tilde{Ϛ}_{\Psi},e_t\rangle_{*}}
  =\frac{\mathrm{Sc}(\tilde{Ϛ}_{\Psi}\tilde R_\Psi^{*})}{\mathrm{Sc}(\tilde{Ϛ}_{\Psi})}
- =c r_t+\vec r\cdot\vec r_\Psi,
+ =r_t+\vec r\cdot\vec r_\Psi,
 \qquad \langle\tilde{Ϛ}_{\Psi},e_t\rangle_{*}=\tfrac12\langle e_t\rangle_{*},\quad \langle e_t\rangle_{*}=1,
 $$
 
-with $\langle\tilde Q_1,\tilde Q_2\rangle_{*}=\mathrm{Sc}(\tilde Q_1\tilde Q_2^{*})$ and $\langle\tilde Q\rangle_{*}=\sum_\mu\lvert Q_\mu\rvert^{2}$. The star is the Hermitian conjugation and it carries the positivity: $\langle\tilde Q\rangle_{*}$ is positive definite on the whole algebra, and for $\tilde{Ϛ}_{\Psi}\ge0$, $0\le\tilde R_\Psi\le e_t$ the weight is $2\,\mathrm{Sc}(\tilde{Ϛ}_{\Psi}^{1/2}\tilde R_\Psi\tilde{Ϛ}_{\Psi}^{1/2})\in[0,1]$. The plain form $\langle\tilde Q_1,\tilde Q_2\rangle=\mathrm{Sc}(\tilde Q_1\tilde Q_2)$ is the restriction of the Hermitian form to $\mathbb{B}_{\Psi}$, where $\tilde R_\Psi^{*}=\tilde R_\Psi$, so the same weight is $\mathrm{Sc}(\tilde{Ϛ}_{\Psi}\tilde R_\Psi)/\mathrm{Sc}(\tilde{Ϛ}_{\Psi})$; it is positive definite of signature $(4,0)$ there and negative definite on $\mathbb{B}_{\Phi}$. The biquaternion norm $\langle\tilde R_\Psi\rangle_{\natural}=c^2 r_t^2-|\vec r_\Psi|^2$ is a third object, whose future cone cuts out the state space.
+with $\langle\tilde Q_1,\tilde Q_2\rangle_{*}=\mathrm{Sc}(\tilde Q_1\tilde Q_2^{*})$ and $\langle\tilde Q\rangle_{*}=\sum_\mu\lvert Q_\mu\rvert^{2}$. The star is the Hermitian conjugation and it carries the positivity: $\langle\tilde Q\rangle_{*}$ is positive definite on the whole algebra, and for $\tilde{Ϛ}_{\Psi}\ge0$, $0\le\tilde R_\Psi\le e_t$ the weight is $2\,\mathrm{Sc}(\tilde{Ϛ}_{\Psi}^{1/2}\tilde R_\Psi\tilde{Ϛ}_{\Psi}^{1/2})\in[0,1]$. The plain form $\langle\tilde Q_1,\tilde Q_2\rangle=\mathrm{Sc}(\tilde Q_1\tilde Q_2)$ is the restriction of the Hermitian form to $\mathbb{B}_{\Psi}$, where $\tilde R_\Psi^{*}=\tilde R_\Psi$, so the same weight is $\mathrm{Sc}(\tilde{Ϛ}_{\Psi}\tilde R_\Psi)/\mathrm{Sc}(\tilde{Ϛ}_{\Psi})$; it is positive definite of signature $(4,0)$ there and negative definite on $\mathbb{B}_{\Phi}$. The biquaternion norm $\langle\tilde R_\Psi\rangle_{\natural}=r_t^2-|\vec r_\Psi|^2$ is a third object, whose future cone cuts out the state space.
 
 Under $\iota:\mathbb{B}\to M_2(\mathbb{C})$ the idempotents map to rank-one projectors, states to density matrices, and $\mathrm{tr}\circ\iota=\mathrm{Tr}$. The probability $p_+=\langle\tilde\Pi_1(\vec u_\Psi),\tilde{Ϛ}_{\Psi}\rangle_{*}/\langle\tilde{Ϛ}_{\Psi},e_t\rangle_{*}=\tfrac12(1+\vec u_\Psi\cdot\vec r)$ is real, in $[0,1]$, and normalized, all as consequences of the algebra. General measurements are effects $\tilde{E}_{\Psi}=ae_t+i\vec w$ with $|\vec w|\leq\min(a,1-a)$; POVMs are families of effects summing to $e_t$; the probabilities are $\langle\tilde E_{\Psi}_i,\tilde{Ϛ}_{\Psi}\rangle_{*}/\langle\tilde{Ϛ}_{\Psi},e_t\rangle_{*}=a_i+\vec w_i\cdot\vec r$, as the unsharp and trine examples show. Normalisation is the only place the trace is read: with $\operatorname{Tr}(e_t)=2$, the normalised state has $\operatorname{Tr}(\tilde{Ϛ}_{\Psi})=2\,\mathrm{Sc}(\tilde{Ϛ}_{\Psi})=1$, and the same weight is $p=\operatorname{Tr}(\tilde{Ϛ}_{\Psi}\tilde R_\Psi^{*})/\operatorname{Tr}(\tilde{Ϛ}_{\Psi})=\operatorname{Tr}(\tilde{Ϛ}_{\Psi}\tilde R_\Psi)/\operatorname{Tr}(\tilde{Ϛ}_{\Psi})$, the factor $2$ being the dimension of the image and the star in the numerator being inert on $\mathbb{B}_{\Psi}$.
 
@@ -334,13 +334,13 @@ The comparison with the standard statement is exact, because $\mathbb{B}\cong M_
 | $i$ | Scalar imaginary, $i^2 = -1$ |
 | $\mathbb{B}_{\Psi}$ | Hermitian subspace (states, observables, effects) |
 | $\mathbb{B}_{\Phi}$, $\mathbb{B} = \mathbb{B}_{\Psi}\oplus\mathbb{B}_{\Phi}$ | Anti-Hermitian subspace (generators) |
-| $\tilde R_\Psi = c r_t e_t + i\vec r_\Psi$ | General Hermitian element |
+| $\tilde R_\Psi = r_t e_t + i\vec r_\Psi$ | General Hermitian element |
 | $\langle\tilde{R}_{\Psi,1},\tilde{R}_{\Psi,2}\rangle_{*}=\mathrm{Sc}(\tilde{R}_{\Psi,1}\tilde{R}_{\Psi,2}^{*})$, $\langle\tilde R_\Psi\rangle_{*}=\langle\tilde R_\Psi,\tilde R_\Psi\rangle_{*}$ | Hermitian form and Hermitian norm; positive definite, $(8,0)$ on $\mathbb{B}$, $(4,0)$ on $\mathbb{B}_{\Psi}$ |
 | $\langle\tilde{R}_{\Psi,1},\tilde{R}_{\Psi,2}\rangle=\mathrm{Sc}(\tilde{R}_{\Psi,1}\tilde{R}_{\Psi,2})$, $\langle\tilde R_\Psi\rangle=\langle\tilde R_\Psi,\tilde R_\Psi\rangle$ | Plain form and plain norm: the restriction of the Hermitian form to $\mathbb{B}_{\Psi}$ |
 | $\langle e_t\rangle_{*}=1$, $\langle\tilde{Ϛ}_{\Psi},e_t\rangle_{*}=\tfrac12$ | Unit and state normalisation |
-| $\langle\tilde R_\Psi\rangle_{\tilde{Ϛ}_{\Psi},*}=\langle\tilde{Ϛ}_{\Psi},\tilde R_\Psi\rangle_{*}/\langle\tilde{Ϛ}_{\Psi},e_t\rangle_{*}=\mathrm{Sc}(\tilde{Ϛ}_{\Psi}\tilde R_\Psi^{*})/\mathrm{Sc}(\tilde{Ϛ}_{\Psi})=c r_t+\vec r\cdot\vec r_\Psi$ | Born weight |
+| $\langle\tilde R_\Psi\rangle_{\tilde{Ϛ}_{\Psi},*}=\langle\tilde{Ϛ}_{\Psi},\tilde R_\Psi\rangle_{*}/\langle\tilde{Ϛ}_{\Psi},e_t\rangle_{*}=\mathrm{Sc}(\tilde{Ϛ}_{\Psi}\tilde R_\Psi^{*})/\mathrm{Sc}(\tilde{Ϛ}_{\Psi})=r_t+\vec r\cdot\vec r_\Psi$ | Born weight |
 | $\mathrm{Tr}(\tilde R_\Psi)=2\,\mathrm{Sc}(\tilde R_\Psi)=2c r_t$, $\mathrm{Tr}(\tilde{R}_{\Psi,1}\tilde{R}_{\Psi,2}^{*})=2\,\mathrm{Sc}(\tilde{R}_{\Psi,1}\tilde{R}_{\Psi,2}^{*})$ | Trace, the $2\times2$ reading; stated once, at normalisation |
-| $\langle\tilde R_\Psi\rangle_{\natural} = \langle\tilde R_\Psi,\tilde R_\Psi\rangle_{\natural} = \tilde R_\Psi\tilde R_\Psi^{\natural} = (c^2 r_t^2 - |\vec r_\Psi|^2)e_t$ | Biquaternion norm, signature $(1,3)$ |
+| $\langle\tilde R_\Psi\rangle_{\natural} = \langle\tilde R_\Psi,\tilde R_\Psi\rangle_{\natural} = \tilde R_\Psi\tilde R_\Psi^{\natural} = (r_t^2 - |\vec r_\Psi|^2)e_t$ | Biquaternion norm, signature $(1,3)$ |
 | $\tilde{Ϛ}_{\Psi} = \tfrac{1}{2}(e_t + i\vec r)$, $|\vec r|\leq 1$ | State, $\langle\tilde{Ϛ}_{\Psi},e_t\rangle_{*}=\tfrac12$; Bloch vector $\vec r$ |
 | $\tilde\Pi_{1,2}(\vec u) = \tfrac{1}{2}(e_t \pm i\vec u)$, $|\vec u|=1$ | Idempotent (pure state) |
 | $\tilde{E}_{\Psi} = a e_t + i\vec w$, $|\vec w|\leq\min(a,1-a)$ | Effect |

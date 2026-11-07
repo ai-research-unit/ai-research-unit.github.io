@@ -124,7 +124,7 @@ $$
 \tilde{\nabla}\Gamma = e_t\,\partial/\partial R_t\,\Gamma + \sum_{k=1}^{3}\,\vec e_k\,\partial/\partial R_k\,\Gamma,
 $$
 
-and for real $\Gamma$ the scalar coefficient $\partial/\partial R_t\,\Gamma = -\frac{i}{c}\partial/\partial r'_t\Gamma$ is purely imaginary while the vector coefficients $\partial/\partial R_k\,\Gamma$ are real, which is exactly the membership condition of $\mathbb{B}_{\Phi}$. A $\Gamma$ whose imaginary part is not constant would move the potential out of the material sector. The gauge function of a real connection is real.
+and for real $\Gamma$ the scalar coefficient $\partial/\partial R_t\,\Gamma = -i\partial/\partial r'_t\Gamma$ is purely imaginary while the vector coefficients $\partial/\partial R_k\,\Gamma$ are real, which is exactly the membership condition of $\mathbb{B}_{\Phi}$. A $\Gamma$ whose imaginary part is not constant would move the potential out of the material sector. The gauge function of a real connection is real.
 
 **The coupling constant.** The number $ϙ$ is the charge of the field. It is introduced by the principle as a parameter; the algebra does not supply its value. Setting $ϙ = 0$ restores the global theory. The minimal-coupling form of the standard Dirac equation is recovered in this sense, as a biquaternionic statement whose representation conventions the Dirac article left open.
 
@@ -136,7 +136,7 @@ $$
 D\tilde{Ξ}_{\mathrm{sp}} = \sum_{\mu\in\{t,x,y,z\}}  e_\mu\,D_\mu\tilde{Ξ}_{\mathrm{sp}}, \qquad D_\mu = \partial/\partial R_\mu +\frac{k_m\,i\,ϙ}{m\,c}A_\mu,
 $$
 
-where $\partial/\partial R_t = \partial/\partial(i c r'_t)$ and $\partial/\partial R_k = \partial/\partial x_k$, and where $A_0:=A_t$ in the component displays below.
+where $\partial/\partial R_t = \partial/\partial(i r'_t)$ and $\partial/\partial R_k = \partial/\partial x_k$, and where $A_0:=A_t$ in the component displays below.
 
 The following properties are immediate from the definitions and are worth recording, because they are the properties that make $D$ a covariant derivative rather than an arbitrary operator.
 
@@ -229,7 +229,7 @@ It is worth separating the two, because they are easily conflated.
 - *A canonical abelian gauge group.* The gauge group is the $*$-unitary part of the centre, and the centre is the only place a *central* phase can live. The $\mathrm{U}(1)$ of the abelian gauge principle is therefore attached to the algebra without a choice of representation. This is a genuine structural feature, not a relabelling: it is the reason the abelian case is the natural first case in this framework.
 - *A home for the curvature.* The field strength is a 2-form, with six independent components in four dimensions, and the vector part of $\mathbb{B}$ has exactly six real dimensions. The identification "field strength $=$ curvature" is thus structural rather than accidental.
 - *Preservation of the material sector.* Real gauge functions keep the connection in $\mathbb{B}_{\Phi}$, so the gauge structure respects the sector decomposition that the framework is built on.
-- *The same scalar imaginary.* The phase $\exp(\frac{k_m\,i\,ϙ\,\Gamma}{m\,c})$ and the complex time coordinate $i c r'_t$ both use the single element $i$ of $\mathbb{B}$. In the standard formulation the $\mathrm{U}(1)$ of electromagnetism and the $i$ of the $i c r'_t$ device are unrelated; here they are the same element. This is stated as an *observation*. Because the phase is central it commutes with everything, and it is not yet established that the shared generator carries content rather than being an artifact of writing both structures in one algebra. It is flagged as a gap, not claimed as a result.
+- *The same scalar imaginary.* The phase $\exp(\frac{k_m\,i\,ϙ\,\Gamma}{m\,c})$ and the complex time coordinate $i r'_t$ both use the single element $i$ of $\mathbb{B}$. In the standard formulation the $\mathrm{U}(1)$ of electromagnetism and the $i$ of the $i r'_t$ device are unrelated; here they are the same element. This is stated as an *observation*. Because the phase is central it commutes with everything, and it is not yet established that the shared generator carries content rather than being an artifact of writing both structures in one algebra. It is flagged as a gap, not claimed as a result.
 
 **What it only transcribes.**
 
@@ -324,13 +324,13 @@ What the external construction gives this article is therefore not a new result 
 
 2. **The gauge-fixing principle.** The quantization article establishes that the framework cannot fix the gauge. Does the gauge principle, or any other algebraic structure, supply a principle of selection, or is the choice irreducibly extrinsic?
 
-3. **The meaning of the shared generator.** The internal phase and the $i c r'_t$ complex structure share the scalar imaginary $i$. Is this identification content-bearing, or vacuous because the phase is central and commutes with everything? An external frame-free construction, recorded in *An External Construction That Gets a Local U(1) Without Frames*, is one in which the identification is content-bearing; that does not settle the question for this framework.
+3. **The meaning of the shared generator.** The internal phase and the $i r'_t$ complex structure share the scalar imaginary $i$. Is this identification content-bearing, or vacuous because the phase is central and commutes with everything? An external frame-free construction, recorded in *An External Construction That Gets a Local U(1) Without Frames*, is one in which the identification is content-bearing; that does not settle the question for this framework.
 
 4. **The matter representation.** The covariant derivative derived here multiplies the field on the left and the abelian phase is central. For a non-abelian phase the two sides differ, and the choice of representation on the matter field must be specified. What fixes it?
 
 5. **The mass term, the axial symmetry, and the real structure.** The mass term is the linear chiral pair, so the continuously charged massive field is not obstructed: the abelian minimal coupling derived here applies to the massive Dirac field as well, and the $\mathrm{U}(1)$ is realized on the pair. The live question is the axial one — the mass breaks the symmetry that rotates the two values of the subscript, and whether that symmetry can be gauged, and with what consequences, is not settled here. Separately, the pairing built on the algebra's real structure $\flat = -{}^{*}$, which is $\mathbb{C}$-antilinear and order-reversing, is not the Dirac mass; whether it is a physical Majorana-type coupling or the real-form expression of an ordinary Dirac mass remains open. That question is carried by *The Dirac Equation in Biquaternionic Form*, whose open question 1 asks what the real structure means for the electroweak interaction and for the distinction between the neutrino and the charged fermions, and by *The Neutrino and Majorana Fermions in Biquaternionic Form*, where the Majorana-versus-Dirac reading belongs and where its consequences for fermion-number violation are examined.
 
-6. **The local complex structure and the connection.** The framework already makes the complex structure local — the speed of light $c = 1/\sqrt{\epsilon\mu}$ varies with the medium, and so does the $i c r'_t$ structure. Is that local *frame* related to the local *phase* of the gauge principle? Both are "local structures" in the same algebra, but no relation between them is established here, and the suggestion is recorded only as a question.
+6. **The local complex structure and the connection.** The framework already makes the complex structure local — the speed of light $c = 1/\sqrt{\epsilon\mu}$ varies with the medium, and so does the $i r'_t$ structure. Is that local *frame* related to the local *phase* of the gauge principle? Both are "local structures" in the same algebra, but no relation between them is established here, and the suggestion is recorded only as a question.
 
 7. **Empirical content.** As everywhere in the framework, the unresolved question is whether any of this yields a prediction distinguishing it from standard gauge theory. The gauge principle as presented is a reformulation; the framework-level question of empirical contact remains open.
 ## The Legacy Pauli Gamma Formulation

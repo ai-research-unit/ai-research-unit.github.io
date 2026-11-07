@@ -14,7 +14,7 @@ The article records the two parent actions and their four eliminations, and sepa
 $$
 \delta_{\mu\nu}=(1,1,1,1).
 $$
-Every contraction carries the plain weight, $V\cdot W=\sum_\mu\epsilon_\mu V_\mu W_\mu$, with the sign vector $\epsilon=(1,-1,-1,-1)$ used in every sum below. The weight is read from the multiplication, $\mathrm{Sc}(e_\mu e_\nu)=\epsilon_\mu\delta_{\mu\nu}$: its three minuses are the squares of the spatial units, $\vec e_k^2=-e_t$, and its one plus is the square of $e_t$. The four generators of the next paragraph obey $\{iC_\mu,iC_\nu\}=2\epsilon_\mu\delta_{\mu\nu}$ with no sum on $\mu$, so the weight sits inside the generator. The one minus of $\Box$ on the material coordinate has a different origin, the square of the $i$ in $Q_t=i c r'_t$. Every index the source raises is carried by an $\epsilon$ in the sums below. The Levi-Civita symbol $\varepsilon_{\mu\nu\lambda\rho}$ is totally antisymmetric with $\varepsilon_{0123}=1$; it is a different letter from $\epsilon$. Two neutral vectors are fixed by the structure constants, the timelike $k_\mu$ of $c_{\mu\nu\lambda}=(t'_{\mu\nu\lambda\rho}-i\varepsilon_{\mu\nu\lambda\rho})k_\rho$ and the spacelike $j_\mu$ of $\check c_{\mu\nu\lambda}=(t'_{\mu\nu\lambda\rho}-i\varepsilon_{\mu\nu\lambda\rho})j_\rho$, with $k\cdot k=-j\cdot j=1$ and $k\cdot j=0$. The source's point is that they are offshoots of the algebra and not extra structure. The projectors are
+Every contraction carries the plain weight, $V\cdot W=\sum_\mu\epsilon_\mu V_\mu W_\mu$, with the sign vector $\epsilon=(1,-1,-1,-1)$ used in every sum below. The weight is read from the multiplication, $\mathrm{Sc}(e_\mu e_\nu)=\epsilon_\mu\delta_{\mu\nu}$: its three minuses are the squares of the spatial units, $\vec e_k^2=-e_t$, and its one plus is the square of $e_t$. The four generators of the next paragraph obey $\{iC_\mu,iC_\nu\}=2\epsilon_\mu\delta_{\mu\nu}$ with no sum on $\mu$, so the weight sits inside the generator. The one minus of $\Box$ on the material coordinate has a different origin, the square of the $i$ in $Q_t=i r'_t$. Every index the source raises is carried by an $\epsilon$ in the sums below. The Levi-Civita symbol $\varepsilon_{\mu\nu\lambda\rho}$ is totally antisymmetric with $\varepsilon_{0123}=1$; it is a different letter from $\epsilon$. Two neutral vectors are fixed by the structure constants, the timelike $k_\mu$ of $c_{\mu\nu\lambda}=(t'_{\mu\nu\lambda\rho}-i\varepsilon_{\mu\nu\lambda\rho})k_\rho$ and the spacelike $j_\mu$ of $\check c_{\mu\nu\lambda}=(t'_{\mu\nu\lambda\rho}-i\varepsilon_{\mu\nu\lambda\rho})j_\rho$, with $k\cdot k=-j\cdot j=1$ and $k\cdot j=0$. The source's point is that they are offshoots of the algebra and not extra structure. The projectors are
 $$
 p^+_{\mu\nu}=\epsilon_\mu\delta_{\mu\nu}+j_\mu j_\nu,\qquad p^-_{\mu\nu}=-j_\mu j_\nu,\qquad p^+_{\mu\nu}+p^-_{\mu\nu}=\epsilon_\mu\delta_{\mu\nu},
 $$
@@ -36,9 +36,9 @@ $$
 \qquad
 \tilde\nabla^{\natural}=e_t\frac{\partial}{\partial R_t}-\vec e_x\frac{\partial}{\partial R_x}-\vec e_y\frac{\partial}{\partial R_y}-\vec e_z\frac{\partial}{\partial R_z},
 $$
-On the material sector the substitution is $Q_t=i c r'_t$ and $Q_k=x_k$, so $\partial/\partial R_t=\partial/\partial i c r'_t$. Its norm is the d'Alembertian $\Box$ of that article,
+On the material sector the substitution is $Q_t=i r'_t$ and $Q_k=x_k$, so $\partial/\partial R_t=\partial/\partial i r'_t$. Its norm is the d'Alembertian $\Box$ of that article,
 $$
-\Box=\Delta-\frac{1}{c^2}\frac{\partial^2}{\partial {r'_{t}}^2},
+\Box=\Delta-\frac{\partial^2}{\partial {r'_{t}}^2},
 $$
 with the one minus the square of the $i$.
 The gradient acts on the left. The free equation is first order in one field, $\tilde\nabla\tilde F=0$. The massive equation is not a one-field equation, because $\tilde\nabla^2$ is not scalar: the time unit $e_t$ is central and commutes with the three spatial units, so the time–space cross terms add instead of cancelling,
@@ -323,7 +323,7 @@ The parent actions and the eliminations are the source's; the algebraic identiti
 | $\omega=-\vec e_z$ | Pseudoscalar, $\omega^2=-e_t$; the source's $i$, kept distinct from the central unit |
 | $\tilde\nabla$, $\tilde\nabla^{\natural}$ | Biquaternionic gradient and its quaternion conjugate, elements acting on the left |
 | $\tilde\nabla^{ea}_\mu$, $\tilde\nabla^{a}_\mu$ | The same derivative with the electromagnetic and $a$ insertions; superscripts name insertions, not a second operator |
-| $\Box$ | The d'Alembertian, the norm of $\tilde\nabla$; on $Q_t=i c r'_t$ it is $\Delta-\frac{1}{c^2}\partial^2/\partial {r'_t}^2$ |
+| $\Box$ | The d'Alembertian, the norm of $\tilde\nabla$; on $Q_t=i r'_t$ it is $\Delta-\partial^2/\partial {r'_t}^2$ |
 | $c_5{}_{\mu\nu}$ | The source's array of the chirality on the four-vector carrier, written here as $-\epsilon_\mu\check c_{\mu\nu\lambda}k_\lambda$ with no sum on $\mu$; $(c_5)^2=1$, $\epsilon$-antisymmetric |
 | $\delta_{\mu\nu}=(1,1,1,1)$ | The unit metric of the index space; it pairs two slots as $\epsilon_\mu\delta_{\mu\nu}$, with no sum on $\mu$ |
 | $\epsilon=(1,-1,-1,-1)$ | The plain weight, read from the multiplication $\mathrm{Sc}(e_\mu e_\nu)=\epsilon_\mu\delta_{\mu\nu}$; the diagonal of the generator pairing; distinct from $\varepsilon$ |

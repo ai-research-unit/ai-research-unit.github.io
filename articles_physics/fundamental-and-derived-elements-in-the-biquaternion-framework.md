@@ -151,7 +151,7 @@ $$
 Comparing coefficients gives $Q_{1t}^{*}=Q_{1t}$ and $Q_k^{*}=-Q_k$ for $k=1,2,3$. Thus $Q_{1t}$ is real and the vector coefficients are purely imaginary, and
 
 $$
-\mathbb{B}_{\Psi}=\{c r_t\,e_t+i r'_x\vec e_x+i r'_y\vec e_y+i r'_z\vec e_z\ :\ r_t,r'_k\in\mathbb{R}\}.
+\mathbb{B}_{\Psi}=\{r_t\,e_t+i r'_x\vec e_x+i r'_y\vec e_y+i r'_z\vec e_z\ :\ r_t,r'_k\in\mathbb{R}\}.
 $$
 
 **Solving for $\mathbb{B}_{\Phi}$.** The condition $\tilde Q_1^{\flat}=\tilde Q_1$, that is $-\tilde Q_1^{*}=\tilde Q_1$, reads
@@ -163,7 +163,7 @@ $$
 so $Q_{1t}$ is purely imaginary and the vector coefficients are real:
 
 $$
-\mathbb{B}_{\Phi}=\{i c r'_t\,e_t+r_x\vec e_x+r_y\vec e_y+r_z\vec e_z\ :\ r'_t,r_k\in\mathbb{R}\}.
+\mathbb{B}_{\Phi}=\{i r'_t\,e_t+r_x\vec e_x+r_y\vec e_y+r_z\vec e_z\ :\ r'_t,r_k\in\mathbb{R}\}.
 $$
 
 Each is a real vector space of dimension $4$, and since ${}^{*}$ has eigenvalues $\pm1$ only,
@@ -186,7 +186,7 @@ since ${}^{*}$ is $\mathbb{C}$-antilinear: $(i\tilde Q_1)^{*}=-i\tilde Q_1^{*}$ 
 
 But the split is forced only *relative to the base*, and the real form the base fixes is a posit (it is the content of the complexification). If the algebra is regarded as a bare real algebra, its real structures include one whose fixed set is $M_2(\mathbb{R})$; that real form is not isomorphic to $\mathbb{B}_{H}$, since $M_2(\mathbb{R})$ has zero divisors and $\mathbb{B}_{H}$ does not, so no algebra automorphism carries it to the framework's real form. The Hermitian conjugation ${}^{*}$ is built from the real structure, so the sector decomposition inherits this dependence. The correct statement is therefore: **the two-sector split is a theorem about the algebra together with its real form, and the real form is an input.** The split is a consequence of the framework's posit of the quaternion real form, not a consequence of the algebra alone. This is the fact about the framework that the title of this section asks for.
 
-**The naming is not derived.** Which of the two sectors is called "material" and which "informational" is not decided by the algebra. Since $i$ exchanges the sectors and $i\mapsto-i$ is a presentation, the assignment of the temporal coordinate $i c r'_t$ to $\mathbb{B}_{\Phi}$ rather than to $\mathbb{B}_{\Psi}$ is a convention, pinned by the choice of sign of $i$. The physical identification of the four-vectors with $\mathbb{B}_{\Phi}$ and of the qubit operators with $\mathbb{B}_{\Psi}$ is an *interpretation* in the sense of the criterion: it is a separate posit, recorded in the companion articles, and not a derivation of this algebra.
+**The naming is not derived.** Which of the two sectors is called "material" and which "informational" is not decided by the algebra. Since $i$ exchanges the sectors and $i\mapsto-i$ is a presentation, the assignment of the temporal coordinate $i r'_t$ to $\mathbb{B}_{\Phi}$ rather than to $\mathbb{B}_{\Psi}$ is a convention, pinned by the choice of sign of $i$. The physical identification of the four-vectors with $\mathbb{B}_{\Phi}$ and of the qubit operators with $\mathbb{B}_{\Psi}$ is an *interpretation* in the sense of the criterion: it is a separate posit, recorded in the companion articles, and not a derivation of this algebra.
 
 ## Derived: The Trace Form
 
@@ -215,7 +215,7 @@ This is the trace formula of the framework, and it is derived, not assumed.
 **The trace form on the sectors.** Substituting the coordinate forms derived above gives the values of the bilinear trace form $\mathrm{Tr}(\tilde Q_1\tilde Q_2)$ on each sector. For $\tilde{R}_{\Psi,1}=c r_{t,1}\,e_t+i\vec r_{\Psi,1}$ and $\tilde{R}_{\Psi,2}=c r_{t,2}\,e_t+i\vec r_{\Psi,2}$ in $\mathbb{B}_{\Psi}$,
 
 $$
-\mathrm{Tr}(\tilde{R}_{\Psi,1}\tilde{R}_{\Psi,2}^{*})=2\bigl(c^2 r_{t,1}r_{t,2}+\vec r_{\Psi,1}\cdot\vec r_{\Psi,2}\bigr),
+\mathrm{Tr}(\tilde{R}_{\Psi,1}\tilde{R}_{\Psi,2}^{*})=2\bigl(r_{t,1}r_{t,2}+\vec r_{\Psi,1}\cdot\vec r_{\Psi,2}\bigr),
 $$
 
 which is real and positive definite; for $\tilde{R}_{\Phi,1}=i r_{1t}e_t+\vec r_1$ and $\tilde{R}_{\Phi,2}=i r_{2t}e_t+\vec r_2$ in $\mathbb{B}_{\Phi}$,
@@ -232,10 +232,10 @@ $$
 
 is an orthogonal decomposition of signature $(4,4)$ for $\mathrm{Re}\,\mathrm{Tr}$. This is a derived structural asymmetry between the two sectors: the operator sector carries a positive-definite form, the material sector a negative-definite one, and the sign is not put in by hand.
 
-**The expectation-value form.** For a state $\tilde{Ϛ}_{\Psi}=\tfrac12(e_t+\mu i)$ with $\mu$ a real unit pure quaternion and an observable $\tilde R_\Psi=c r_t\,e_t+i\vec r_\Psi$, the trace formula gives
+**The expectation-value form.** For a state $\tilde{Ϛ}_{\Psi}=\tfrac12(e_t+\mu i)$ with $\mu$ a real unit pure quaternion and an observable $\tilde R_\Psi=r_t\,e_t+i\vec r_\Psi$, the trace formula gives
 
 $$
-\mathrm{Tr}(\tilde{Ϛ}_{\Psi}\tilde R_\Psi^{*})=c r_t+\mu\cdot\vec r_\Psi,
+\mathrm{Tr}(\tilde{Ϛ}_{\Psi}\tilde R_\Psi^{*})=r_t+\mu\cdot\vec r_\Psi,
 $$
 
 the Born-rule expectation value. This is an application of the derived trace, not a new posit.

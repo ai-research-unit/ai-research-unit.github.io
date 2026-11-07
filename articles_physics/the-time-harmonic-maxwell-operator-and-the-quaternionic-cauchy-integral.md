@@ -247,7 +247,7 @@ so that the general solution of the Helmholtz system is the sum of two **rotated
 The time-dependent version of the same decomposition is stated in the book and makes the shape of $(16)$ clear:
 
 $$
-\ker\Bigl(\frac{1}{c^2}\partial^2/\partial {r'_{t}}^2-\Delta\Bigr)
+\ker\Bigl(\partial^2/\partial {r'_{t}}^2-\Delta\Bigr)
 =\ker\Bigl(\frac{1}{c}\partial/\partial r'_t+iD_3\Bigr)\oplus\ker\Bigl(\frac{1}{c}\partial/\partial r'_t-iD_3\Bigr),
 \tag{17}
 $$

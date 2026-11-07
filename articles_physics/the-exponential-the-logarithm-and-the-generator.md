@@ -108,7 +108,7 @@ The obstruction is the phase. A loop of units that winds once around the centre 
 A clock is a one-parameter group with a preferred parameter. The algebra supplies the subgroup and no preferred parameter.
 
 - The generator is defined up to the central kernel. If $\tilde L$ generates the process, so does $\tilde L+2\pi i e_t$; the two agree at $t=1$ and give different interpolations, because $\exp(r_t(\tilde L+2\pi ie_t))=e^{2\pi it}\exp(r_t\tilde L)$. The kernel is the ambiguity of the interpolation, not of the endpoint.
-- The parameter is defined up to a positive rescaling. $\exp(t(c\tilde L))=\exp((c r_t)\tilde L)$ for $c>0$: the subgroup is the same and the clock is read at a different rate.
+- The parameter is defined up to a positive rescaling. $\exp(t(c\tilde L))=\exp((r_t)\tilde L)$ for $c>0$: the subgroup is the same and the clock is read at a different rate.
 - A noncentral kernel element is not a clock ambiguity in general. A shift by $\pi i e_t+\pi\vec U$ changes the endpoint at $t=1$ unless it commutes with $\tilde L$, so it belongs to a different process rather than to a second reading of the same one.
 
 **The reading.** Time is a coordinate on a one-parameter subgroup, and the coordinate is not unique. The algebra gives the subgroup; the clock is a gauge choice. This is the generator-is-a-gauge statement read on the parameter instead of on the element.

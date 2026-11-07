@@ -32,7 +32,7 @@ $$
 \Box = \tilde{\nabla}\tilde{\nabla}^{\natural} = \tilde{\nabla}^{\natural}\tilde{\nabla} = \partial^2/\partial R_t^2 + \Delta ,
 $$
 
-with $Q_t = i c r'_t$, so that each time derivative carries the factor $(ic)^{-1} = -i/c$ when it is written in $r'_t$ and the time part is $-c^{-2}$ times the second derivative in $r'_t$. The imaginary unit satisfies $i^2 = -1$, and every product of two of them is reduced before a display is written: the collapse is what turns $(i\omega/c)^2$ into $-\omega^2/c^2$, and what makes $i\,\mathrm{Sc}(\tilde P_{\Phi}\tilde{R}_\Phi^{\natural})$ a purely imaginary exponent whose exponential has unit modulus. The mass parameter of the operator pair is measured in inverse-length units; restoring $\frac{m\,c}{k_m}$ and $c$, it is the inverse reduced Compton wavelength
+with $Q_t = i r'_t$, so that each time derivative carries the factor $(ic)^{-1} = -i/c$ when it is written in $r'_t$ and the time part is $-c^{-2}$ times the second derivative in $r'_t$. The imaginary unit satisfies $i^2 = -1$, and every product of two of them is reduced before a display is written: the collapse is what turns $(i\omega/c)^2$ into $-\omega^2/c^2$, and what makes $i\,\mathrm{Sc}(\tilde P_{\Phi}\tilde{R}_\Phi^{\natural})$ a purely imaginary exponent whose exponential has unit modulus. The mass parameter of the operator pair is measured in inverse-length units; restoring $\frac{m\,c}{k_m}$ and $c$, it is the inverse reduced Compton wavelength
 
 $$
 k_m=\dfrac{mc}{\hbar},
@@ -238,7 +238,7 @@ Write the four-wavevector and the four-position as
 $$
 \tilde P_{\Phi} = i\frac{\omega}{c}e_t + \vec k\in\mathbb{B}_{\Phi},
 \qquad
-\tilde R_\Phi = i c r'_t\,e_t + \vec r\in\mathbb{B}_{\Phi},
+\tilde R_\Phi = i r'_t\,e_t + \vec r\in\mathbb{B}_{\Phi},
 $$
 
 with $\vec k = k_1\vec e_x + k_2\vec e_y + k_3\vec e_z$ and $\vec r = r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z$. Here $\vec k^2$ abbreviates the sum $k_1^2+k_2^2+k_3^2$ of the squares of the components, not the quaternion product, which is its negative, $\vec k\,\vec k = -\vec k^2e_t$. The phase is $\mathrm{Sc}(\tilde P_{\Phi}\tilde{R}_\Phi^{\natural}) = \vec k\cdot\vec r - \omega r'_t$, the scalar part of the product with the conjugate four-position. The exponent $i\,\mathrm{Sc}(\tilde P_{\Phi}\tilde{R}_\Phi^{\natural})$ is a purely imaginary central element, so the exponential is central and differentiates as an ordinary exponential. On a plane wave,
@@ -426,7 +426,7 @@ The converse holds exactly for the free pair. Read the first member as a definit
 | $\Box = \tilde{\nabla}\tilde{\nabla}^{\natural} = \tilde{\nabla}^{\natural}\tilde{\nabla} = \partial^2/\partial R_t^2 + \Delta$ | d'Alembertian, series convention |
 | $\langle\tilde{Q}\rangle_{\natural} = \tilde{Q}\tilde{Q}^{\natural} = \sum_\mu Q_\mu^2$ | Biquaternion norm |
 | $\tilde P_{\Phi} =\frac{m\,c\,(i\omega/c\,e_t + \vec k)}{k_m}$ | Four-wavevector, $\tilde P_{\Phi}\tilde P_{\Phi}^{\natural} = -m^{2}\,c^{2}$ |
-| $\tilde R_\Phi = i c r'_t\,e_t + \vec r$, with $\vec r = r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z$ | Four-position, phase $\mathrm{Sc}(\tilde P_{\Phi}\tilde{R}_\Phi^{\natural}) = \vec k\cdot\vec r - \omega r'_t$ |
+| $\tilde R_\Phi = i r'_t\,e_t + \vec r$, with $\vec r = r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z$ | Four-position, phase $\mathrm{Sc}(\tilde P_{\Phi}\tilde{R}_\Phi^{\natural}) = \vec k\cdot\vec r - \omega r'_t$ |
 | $1/k_m$ | The mass length of the operator pair, $\hbar/(mc)$ (inverse reduced Compton wavelength) |
 | $\tilde{\nabla}\tilde{Ξ}_{\mathrm{sp},R} = k_m\tilde{Ξ}_{\mathrm{sp},L}$, $\tilde{\nabla}^{\natural}\tilde{Ξ}_{\mathrm{sp},L} = k_m\tilde{Ξ}_{\mathrm{sp},R}$ | The one-sided pair; linear, with the mass the same scalar in each half |
 | $\tilde{Ξ}_{\mathrm{sp},L} =\frac{1}{m}\tilde\nabla\tilde{Ξ}_{\mathrm{sp},R}$ | The second half as the gradient of the first; the pair's equivalent form, exact whenever $(\Box-k_m^{2})\tilde{Ξ}_{\mathrm{sp},R} = 0$ |

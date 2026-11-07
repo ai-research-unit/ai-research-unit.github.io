@@ -22,7 +22,7 @@ Every display below is an element, a product of elements, or a conjugation of on
 
 **The coordinates.** An element is written $\tilde Q=Q_te_t+\vec Q$, with $\vec Q=Q_x\vec e_x+Q_y\vec e_y+Q_z\vec e_z$ and complex coefficients $Q_\mu$; the scalar part is $\mathrm{Sc}(\tilde Q)=Q_t$ (*Algebra and Element Conventions*). The units satisfy $\vec e_x^{2}=\vec e_y^{2}=\vec e_z^{2}=-e_t$ and $\vec e_x\vec e_y=\vec e_z$, and $e_t$ is the unit of the algebra.
 
-**The frame.** Every display is written in the $\mathbb{B}_{\Phi}$ frame, where $Q_t=i c r'_t$ and $r'_t$ is the time in seconds; the metric coefficient is $g_{tt}=-c^{2}$ and the quadratic form is $\langle\tilde Q\rangle_{\natural}=-c^{2}r'_t^{2}+r_x^{2}+r_y^{2}+r_z^{2}$ (*Frame and Metric Conventions*). The factor $c$ is restored only where a dimensional statement needs it, and the displays below set $c=1$.
+**The frame.** Every display is written in the $\mathbb{B}_{\Phi}$ frame, where $Q_t=i r'_t$ and $r'_t$ is the time in seconds; the metric coefficient is $g_{tt}=-c^{2}$ and the quadratic form is $\langle\tilde Q\rangle_{\natural}=-r'_t^{2}+r_x^{2}+r_y^{2}+r_z^{2}$ (*Frame and Metric Conventions*). The factor $c$ is restored only where a dimensional statement needs it, and the displays below set $c=1$.
 
 **The two operators.** The gradient $\tilde\nabla$ and the d'Alembertian $\Box$ are the series operators (*Operator and Calculus Conventions*); the article names them and does not restate them. It uses one property, which the same article fixes: the product of the gradient with its natural conjugate is the d'Alembertian. That product is the sense in which the two first-order operators of the pair below are square roots of $\Box$, and it is a convention of the series, not a result of this article.
 
@@ -257,7 +257,7 @@ A field equal to its conjugate carries no continuous phase, and a continuous pha
 | $\bar\cdot$ | The coefficient conjugation: an automorphism, antilinear over $\mathbb{C}$, an involution |
 | ${}^{*}$ | The Hermitian conjugation: an anti-automorphism, antilinear, an involution |
 | $\tilde\nabla$, $\Box$ | The gradient and the d'Alembertian, as the series fixes them |
-| $\mathbb{B}_{\Phi}$ | The frame with $Q_t=i c r'_t$ and $g_{tt}=-c^{2}$ |
+| $\mathbb{B}_{\Phi}$ | The frame with $Q_t=i r'_t$ and $g_{tt}=-c^{2}$ |
 | $\theta$, $\tilde P_{\Phi}$ | The phase $\mathrm{Sc}(\tilde P_{\Phi}\tilde Q^{\natural})$ and the momentum element $ik_0e_t+\vec k$ |
 | $k_0e_t+i\vec k$ | The derivative of the display on $\exp(i\theta)$, as a left multiplication |
 | $\tilde{Ξ}_{\mathrm{sp},0}$, $\tilde{Ξ}_{\mathrm{sp},1}$ | The amplitudes of $\exp(i\theta)$ and $\exp(-i\theta)$ |

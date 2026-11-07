@@ -81,7 +81,7 @@ The plane-wave solutions are
 $$
 \tilde{Ξ}_{\mathrm{sp}}=\tilde{Ξ}_{\mathrm{sp},0}\exp\!\Big(i\,\mathrm{Sc}\big(\tilde P_{\Phi}\tilde{R}_\Phi^{\natural}\big)\frac{k_m}{m\,c}\Big),\frac{k_m\,\tilde{P}_{\Phi}}{m\,c}=\frac{k_m\,e_{t}\,i\,E}{m\,c^{2}}+\vec k,
 \qquad
-\tilde R_\Phi=e_t(i c r'_t)+\vec r,
+\tilde R_\Phi=e_t(i r'_t)+\vec r,
 $$
 
 with $\tilde{Ξ}_{\mathrm{sp},0}$ a constant element and $\vec r=r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z$. The single mass-shell condition is
@@ -149,7 +149,7 @@ There is a genuinely algebraic statement available, and it is the strongest posi
 **The rest-energy phase rotates the sectors into one another.** Factoring out the rest energy writes the free phase as
 
 $$
-\exp(-icr'_t\,k_m) = \cos\!\Big(c\,k_m\,r'_{t}\Big)e_t \;-\; \sin\!\Big(c\,k_m\,r'_{t}\Big)(ie_t),
+\exp(-i r'_t\,k_m) = \cos\!\Big(c\,k_m\,r'_{t}\Big)e_t \;-\; \sin\!\Big(c\,k_m\,r'_{t}\Big)(ie_t),
 $$
 
 and the two terms lie in different sectors: $e_t \in \mathbb{B}_{\Psi}$ and $ie_t \in \mathbb{B}_{\Phi}$ (an imaginary scalar is anti-Hermitian). The rest-energy phase is therefore a **rotation between the sectors**, at angular frequency $c\,k_m$: it takes the $\mathbb{B}_{\Psi}$ direction $e_t$ toward the $\mathbb{B}_{\Phi}$ direction $ie_t$ and back. This is the sense in which the complexification rotates one sector into the other; the rotation is the central phase, whose frequency the mass fixes through the mass shell.
@@ -160,7 +160,7 @@ $$
 \exp(\frac{2\,k_m\,iHr'_{t}}{m\,c})=\big(\exp(\frac{k_m\,iHr'_{t}}{m\,c})\big)^2.
 $$
 
-The rest-frame eigenvalues of the free-evolution phase are $\exp(\pm icr'_t\,k_m)$, one of which is the sector rotation above; the eigenvalues of the oscillating factor at general momentum are $\exp(\pm \frac{2\,k_m\,iEr'_{t}}{m\,c})$, the sign set by the energy branch, so only the magnitude of the frequency is physical. So the trembling is not the sector rotation itself; it is the second harmonic of it. The factor of two is the statement that the beat of two branches of opposite frequency is twice the frequency of either branch, and it is the same factor by which the rest-energy phase and the Zitterbewegung frequency differ.
+The rest-frame eigenvalues of the free-evolution phase are $\exp(\pm i r'_t\,k_m)$, one of which is the sector rotation above; the eigenvalues of the oscillating factor at general momentum are $\exp(\pm \frac{2\,k_m\,iEr'_{t}}{m\,c})$, the sign set by the energy branch, so only the magnitude of the frequency is physical. So the trembling is not the sector rotation itself; it is the second harmonic of it. The factor of two is the statement that the beat of two branches of opposite frequency is twice the frequency of either branch, and it is the same factor by which the rest-energy phase and the Zitterbewegung frequency differ.
 
 Two consequences deserve emphasis. First, since the rest-energy phase rotates the sectors and its rate is the mass, the scale of the trembling — the mass gap $2mc^2$ — is set by the same quantity that sets the sector rotation. That is the real content of the suggestion that the trembling and the complexification are related. Second, a relation of scale is not a relation of identity: the trembling is a beat of two energy branches, the sector rotation is a rotation in the algebra, and the following section shows these are different decompositions.
 
@@ -187,7 +187,7 @@ The following table separates the claims.
 | The trembling is an interference of $\pm$-frequency branches, frequency $2c\,k_E$ | Established; the standard result, recomputed here |
 | Rest-frame frequency $2c\,k_m$, amplitude $\dfrac{1}{2\,k_m}$ | Established; checked numerically above |
 | The real structure $\flat$ acts with opposite signs on $\mathbb{B}_{\Psi}$ and $\mathbb{B}_{\Phi}$ | Established; it is the sector action of the conjugation |
-| The rest-energy phase rotates the sectors at $c\,k_m$ | Established; with $\theta=cr'_t\,k_m$, $\exp(-i\theta) = \cos\theta\,e_t - \sin\theta\,(ie_t)$ |
+| The rest-energy phase rotates the sectors at $c\,k_m$ | Established; with $\theta=r'_t\,k_m$, $\exp(-i\theta) = \cos\theta\,e_t - \sin\theta\,(ie_t)$ |
 | The Zitterbewegung phase is the square of the free-evolution phase | Established; hence the frequency is doubled |
 | $\pm$-energy parts **are** the $\mathbb{B}_{\Phi}$ and $\mathbb{B}_{\Psi}$ sectors | False as an identity; the energy sign is fixed by a map that multiplies on the right, the sector by a conjugation of the value |
 | The $\mathbb{B}_{\Psi}/\mathbb{B}_{\Phi}$ split does work beyond relabelling the Hermitian decomposition | Not established; the interference is between energy branches, which are not the sectors |
@@ -238,7 +238,7 @@ The dictionary is complex-linear; over $\mathbb{R}$ the products span $\mathrm{C
 
 The Zitterbewegung was derived in the biquaternion notation of the series. The Heisenberg velocity satisfies the exact identity $\alpha_k(r'_t) = cp_k/H + \exp(\frac{k_m\,iHr'_{t}}{m\,c})(\alpha_k(0)-cp_k/H)\exp(-\frac{k_m\,iHr'_{t}}{m\,c})$, checked at momentum $|\vec p| = 0.374\,mc$ and three times, to machine precision (the largest coefficient of the difference below $10^{-15}$); the integrated position formula was checked against a direct integration on the same case, with the largest coefficient of the difference below $5\times10^{-16}$. The oscillating term has frequency $2c\,k_E$, equal to $2c\,k_m$ at rest, and the electron value $1.55269\times10^{21}\ \text{rad s}^{-1}$ and amplitude $\dfrac{1}{2\,k_m} = 193.1$ fm were confirmed.
 
-The genuinely algebraic content is that the mass is the linear coupling between the two values of the subscript, that the real structure $\flat$ acts with opposite signs on the two sectors, and that the rest-energy phase $\exp(-icr'_t\,k_m) = \cos(cr'_t\,k_m)e_t - \sin(cr'_t\,k_m)(ie_t)$ rotates the two sectors into one another at $c\,k_m$. The Zitterbewegung phase is the square of this evolution phase, so its frequency is exactly twice the sector-rotation frequency.
+The genuinely algebraic content is that the mass is the linear coupling between the two values of the subscript, that the real structure $\flat$ acts with opposite signs on the two sectors, and that the rest-energy phase $\exp(-i r'_t\,k_m) = \cos(r'_t\,k_m)e_t - \sin(r'_t\,k_m)(ie_t)$ rotates the two sectors into one another at $c\,k_m$. The Zitterbewegung phase is the square of this evolution phase, so its frequency is exactly twice the sector-rotation frequency.
 
 The structural claim that motivated the article fails. The positive- and negative-energy parts of the field are **not** its $\mathbb{B}_{\Phi}$ and $\mathbb{B}_{\Psi}$ parts. The energy sign is the sign of the eigenvalue of a Hamiltonian that multiplies the field on the right, and no element of the algebra does that by left multiplication, while the sectors are fixed by the conjugation of the value; the two are splits of different objects, a family of solutions and the values it takes; and on the dictionary the series supplies, both energy branches correspond to $\mathbb{B}_{\Psi}$ elements while the current lives in $\mathbb{B}_{\Phi}$. The relation between the trembling and the complexification is therefore one of phase and scale — the trembling is the second harmonic of the sector rotation — and not the identity the strong form of the claim requires.
 

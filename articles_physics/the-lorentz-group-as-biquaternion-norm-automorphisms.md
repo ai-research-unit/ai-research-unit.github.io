@@ -155,24 +155,24 @@ $$
 a four-**real**-dimensional subspace, with the real basis $\{ie_t, \vec e_x, \vec e_y, \vec e_z\}$. Writing
 
 $$
-\tilde R_\Phi = i c r'_t\,e_t + r_x\vec e_x + r_y\vec e_y + r_z\vec e_z,
+\tilde R_\Phi = i r'_t\,e_t + r_x\vec e_x + r_y\vec e_y + r_z\vec e_z,
 \qquad r'_t, r_k\in\mathbb{R},
 $$
 
 the biquaternion norm is real and indefinite:
 
 $$
-\boxed{\ \langle\tilde R_\Phi\rangle_{\natural} = (i c r'_t)^2 + r_x^2 + r_y^2 + r_z^2 = -c^2{r'_t}^2 +r_x^2+r_y^2+r_z^2\ }\ .
+\boxed{\ \langle\tilde R_\Phi\rangle_{\natural} = (i r'_t)^2 + r_x^2 + r_y^2 + r_z^2 = -{r'_t}^2 +r_x^2+r_y^2+r_z^2\ }\ .
 $$
 
-The restriction of $\langle\cdot\rangle_{\natural}$ to $\mathbb{B}_{\Phi}$, read in the real coordinates $R_t=i c r'_t$, $R_k=r_k$, is therefore the level-2 Minkowski interval of the series, of signature $(3,1)$. The same computation on the other distinguished slices gives the full picture of the form's real restrictions:
+The restriction of $\langle\cdot\rangle_{\natural}$ to $\mathbb{B}_{\Phi}$, read in the real coordinates $R_t=i r'_t$, $R_k=r_k$, is therefore the level-2 Minkowski interval of the series, of signature $(3,1)$. The same computation on the other distinguished slices gives the full picture of the form's real restrictions:
 
 | Slice | General element | $\langle\cdot\rangle_{\natural}$ | Signature |
 |---|---|---|---|
 | $\mathbb{B}_{H}$ | $a_0e_t + \vec a$, $a_\mu\in\mathbb{R}$ | $a_0^2+\vec a^2$ | $(4,0)$, positive definite |
 | $\mathbb{B}_{iH}$ | $i(a_0e_t+\vec a)$ | $-(a_0^2+\vec a^2)$ | $(0,4)$, negative definite |
-| $\mathbb{B}_{\Phi}$ | $i c r'_t\,e_t+r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z$ | $-c^2{r'_t}^2+r_x^2+r_y^2+r_z^2$ | $(3,1)$, timelike $r'_t$ direction |
-| $\mathbb{B}_{\Psi}$ | $c r_t\,e_t+i\vec r_\Psi$ | $c^2r_t^2-\vec r_\Psi^{2}$ | $(1,3)$, the mirror of $\mathbb{B}_{\Phi}$ |
+| $\mathbb{B}_{\Phi}$ | $i r'_t\,e_t+r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z$ | $-{r'_t}^2+r_x^2+r_y^2+r_z^2$ | $(3,1)$, timelike $r'_t$ direction |
+| $\mathbb{B}_{\Psi}$ | $r_t\,e_t+i\vec r_\Psi$ | $r_t^2-\vec r_\Psi^{2}$ | $(1,3)$, the mirror of $\mathbb{B}_{\Phi}$ |
 
 The complex form $\mathrm{diag}(+1,+1,+1,+1)$ has real forms of both signatures; the two Hermitian-type slices carry the Minkowski real form, the real-quaternion slice the Euclidean one, and the two are exchanged by multiplication by $i$. The physical slice is $\mathbb{B}_{\Phi}$.
 
@@ -506,7 +506,7 @@ $$
 realized by $\tilde{Q}\mapsto A\tilde{Q}B^{*}$ with $A,B\in SL(2,\mathbb{C})$. The algebra's real structure selects the anti-Hermitian slice $\mathbb{B}_{\Phi}$, on which the form restricts to
 
 $$
-\langle i c r'_t\,e_t+r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z\rangle_{\natural} = -c^2{r'_{t}}^2+r_x^2+r_y^2+r_z^2 ,
+\langle i r'_t\,e_t+r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z\rangle_{\natural} = -{r'_{t}}^2+r_x^2+r_y^2+r_z^2 ,
 $$
 
 so the automorphisms preserving the slice form $O(1,3)$, with identity component the restricted Lorentz group. That component is exactly the group of Hermitian sandwiches,
@@ -568,7 +568,7 @@ where $\sigma=z_1^2+z_2^2+z_3^2$. On that route the Minkowski form is induced fr
 | $\alpha=\arg\sigma$ | Lorentz-invariant geometric phase of the diagonal route |
 | $\mathbb{B}_{\Phi}$, $\mathbb{B}_{\Psi}$ | Material (anti-Hermitian) and informational (Hermitian) slices |
 | $\mathbb{B}_{H}$, $\mathbb{B}_{iH}$, $\mathbb{B}_{C}$ | Real-quaternion, imaginary-quaternion, complex scalar subalgebras |
-| $\langle\tilde Q\rangle_\natural$, $Q_t=i c r'_t$ | Level-2 Minkowski interval, the restriction of $\langle\cdot\rangle_{\natural}$ to $\mathbb{B}_{\Phi}$, signature $(3,1)$ |
+| $\langle\tilde Q\rangle_\natural$, $Q_t=i r'_t$ | Level-2 Minkowski interval, the restriction of $\langle\cdot\rangle_{\natural}$ to $\mathbb{B}_{\Phi}$, signature $(3,1)$ |
 | $O(1,3)$, $SO^+(1,3)$ | Lorentz group; restricted (proper orthochronous) Lorentz group |
 | $\tilde U_{\mathrm{lor}}$, $\langle\tilde U_{\mathrm{lor}}\rangle_{\natural}=1$ | Unit-norm biquaternion (Lorentz rotor) |
 | $\tilde{Q}\mapsto\tilde U_{\mathrm{lor}}\tilde{Q}\tilde U_{\mathrm{lor}}{}^{*}$ | Hermitian sandwich; the automorphism of the slice |

@@ -23,7 +23,7 @@ $$
 =e_t\frac{\partial}{\partial R_t}+\vec e_x\frac{\partial}{\partial R_x}+\vec e_y\frac{\partial}{\partial R_y}+\vec e_z\frac{\partial}{\partial R_z},
 $$
 
-with its quaternion conjugate $\tilde\nabla^{\natural}=\sum_\mu\varepsilon_\mu e_\mu\,\partial/\partial R_\mu$ and the d'Alembertian $\Box=\tilde\nabla\tilde\nabla^{\natural}=\tilde\nabla^{\natural}\tilde\nabla=\partial^2/\partial R_t^2+\Delta_Q$, which on the material sector reads $\Delta-c^{-2}\partial^2/\partial{r'_{t}}^2$. The gradient is an element with derivative coefficients. It acts by left multiplication, on one field, and it uses no matrix and no second side.
+with its quaternion conjugate $\tilde\nabla^{\natural}=\sum_\mu\varepsilon_\mu e_\mu\,\partial/\partial R_\mu$ and the d'Alembertian $\Box=\tilde\nabla\tilde\nabla^{\natural}=\tilde\nabla^{\natural}\tilde\nabla=\partial^2/\partial R_t^2+\Delta_Q$, which on the material sector reads $\Delta-\partial^2/\partial{r'_{t}}^2$. The gradient is an element with derivative coefficients. It acts by left multiplication, on one field, and it uses no matrix and no second side.
 
 The free field equation is the corpus's Maxwell equation of *Maxwell's Equations in the Biquaternionic Formulation*,
 
@@ -50,7 +50,7 @@ two first-order equations in two chiral halves, and the spinorial part below is 
 | $r'_t\vec e_x$ | $-i\vec e_x$ |
 | $\sin q_x\,\vec e_x$ | $-\cos q_x\,e_t$ |
 
-The time entry carries the $-i$ of $\partial/\partial R_t=-(i/c)\partial/\partial r'_t$; the spatial entries carry the multiplication table, $\vec e_x\vec e_y=\vec e_z$ and $\vec e_x\vec e_x=-e_t$. These are the values of the gradient, not of the source's own operator, and they are the only ones used below.
+The time entry carries the $-i$ of $\partial/\partial R_t=-i\,\partial/\partial r'_t$; the spatial entries carry the multiplication table, $\vec e_x\vec e_y=\vec e_z$ and $\vec e_x\vec e_x=-e_t$. These are the values of the gradient, not of the source's own operator, and they are the only ones used below.
 
 The source's **volume element** is the product of its four frame generators. In the algebra it acts on the field as right multiplication by $-\vec e_z$, so the element is
 
@@ -482,7 +482,7 @@ The programme of Rodrigues and Vaz works in a bundle of differential forms and p
 | $\omega=-\vec e_z$ | Volume element, the pseudoscalar; $\omega^2=-e_t$; the source's "$i$", its duality generator, not the corpus's central $i$ |
 | $-\vec e_z$ | Fixed spin-plane bivector; as the element $\omega$ it multiplies the spinor on the right |
 | $\tilde\nabla$ | The biquaternionic gradient, $e_t\partial/\partial R_t+\vec e_x\partial/\partial R_x+\vec e_y\partial/\partial R_y+\vec e_z\partial/\partial R_z$; an element with derivative coefficients, acting on the left |
-| $\tilde\nabla^{\natural}$, $\Box$ | The quaternion conjugate, $\sum_\mu\varepsilon_\mu e_\mu\partial/\partial R_\mu$, and the d'Alembertian $\Box=\tilde\nabla\tilde\nabla^{\natural}=\Delta-c^{-2}\partial^2/\partial{r'_{t}}^2$ |
+| $\tilde\nabla^{\natural}$, $\Box$ | The quaternion conjugate, $\sum_\mu\varepsilon_\mu e_\mu\partial/\partial R_\mu$, and the d'Alembertian $\Box=\tilde\nabla\tilde\nabla^{\natural}=\Delta-\partial^2/\partial{r'_{t}}^2$ |
 | $\tilde F$, $\tilde F_0$, $\tilde F_e$, $\tilde F_+$ | Field biquaternion; the stationary subluminal solution; the electron field; the field of the $+$ branch |
 | $\pi$, $A$ | Hertz potential; vector potential, $A=-\delta\pi$ |
 | $f$, $k$, $x$ | Constant 2-form; propagation vector ($k^2=0$); position |

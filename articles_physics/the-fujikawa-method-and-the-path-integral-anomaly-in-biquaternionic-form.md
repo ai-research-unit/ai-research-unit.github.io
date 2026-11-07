@@ -26,7 +26,7 @@ $$
 \qquad
 \tilde\nabla^{\natural}=e_t\frac{\partial}{\partial R_t}-\vec e_x\frac{\partial}{\partial R_x}-\vec e_y\frac{\partial}{\partial R_y}-\vec e_z\frac{\partial}{\partial R_z},
 $$
-and on $\mathbb{B}_{\Phi}$ the time derivative reads $\partial/\partial R_t=-\frac{i}{c}\,\partial/\partial r'_t$ (*Operator and Calculus Conventions*, §*The Gradient*). The d'Alembertian is the quaternionic norm of the gradient, $\Box=\tilde\nabla\tilde\nabla^{\natural}=\tilde\nabla^{\natural}\tilde\nabla=\partial^2/\partial R_t^2+\Delta_Q$, which on $\mathbb{B}_{\Phi}$ is $\Delta-c^{-2}\partial^2/\partial {r'_{t}}^2$. The pseudoscalar is $\omega=-\vec e_z$, with $\omega^2=-e_t$; it anticommutes with $\vec e_x$ and $\vec e_y$ and commutes with $\vec e_z$ (*Special Element Conventions*, §*The Chirality Convention*). A contraction of the derivative with a field is the quaternionic form $\langle\tilde\nabla,\tilde J_{\Phi}\rangle_{\natural}=\mathrm{Sc}(\tilde\nabla^{\natural}\tilde J_{\Phi})$, an explicit sum over the four coordinates. The pair operator is the corpus's own,
+and on $\mathbb{B}_{\Phi}$ the time derivative reads $\partial/\partial R_t=-i\partial/\partial r'_t$ (*Operator and Calculus Conventions*, §*The Gradient*). The d'Alembertian is the quaternionic norm of the gradient, $\Box=\tilde\nabla\tilde\nabla^{\natural}=\tilde\nabla^{\natural}\tilde\nabla=\partial^2/\partial R_t^2+\Delta_Q$, which on $\mathbb{B}_{\Phi}$ is $\Delta-\partial^2/\partial {r'_{t}}^2$. The pseudoscalar is $\omega=-\vec e_z$, with $\omega^2=-e_t$; it anticommutes with $\vec e_x$ and $\vec e_y$ and commutes with $\vec e_z$ (*Special Element Conventions*, §*The Chirality Convention*). A contraction of the derivative with a field is the quaternionic form $\langle\tilde\nabla,\tilde J_{\Phi}\rangle_{\natural}=\mathrm{Sc}(\tilde\nabla^{\natural}\tilde J_{\Phi})$, an explicit sum over the four coordinates. The pair operator is the corpus's own,
 $$
 \mathbb{D}(\tilde{Ξ}_{\mathrm{sp},L},\tilde{Ξ}_{\mathrm{sp},R})=\bigl(\tilde\nabla\tilde{Ξ}_{\mathrm{sp},R},\ \tilde\nabla^{\natural}\tilde{Ξ}_{\mathrm{sp},L}\bigr),
 \qquad
@@ -50,7 +50,7 @@ The framework results used here are those of the companion articles:
 $$
 \tilde\nabla\tilde{Ξ}_{\mathrm{sp}}=0 ,
 $$
-one operator, one field, first order. This is the source's own equation translated once. The source writes its derivative with one frame object per coordinate; the translation of the time term is the $e_t\,\partial/\partial R_t$ term of $\tilde\nabla$ with $\partial/\partial R_t=-\frac{i}{c}\,\partial/\partial r'_t$, and the translation of each spatial term is the corresponding $\vec e_k\,\partial/\partial R_k$. Nothing is added and nothing is dropped. The translated form is the only form used below.
+one operator, one field, first order. This is the source's own equation translated once. The source writes its derivative with one frame object per coordinate; the translation of the time term is the $e_t\,\partial/\partial R_t$ term of $\tilde\nabla$ with $\partial/\partial R_t=-i\partial/\partial r'_t$, and the translation of each spatial term is the corresponding $\vec e_k\,\partial/\partial R_k$. Nothing is added and nothing is dropped. The translated form is the only form used below.
 
 **The square of the gradient is not scalar.** The two products of the gradient with its conjugate are exact and scalar,
 $$
@@ -211,7 +211,7 @@ and it is quoted from the literature of §*Further Reading*, not re-derived here
 
 ## The Symbol, the Cone and the Null Bivectors
 
-**The symbol.** Replacing each derivative of the gradient by $ik_\mu$ turns the operator into an element, its *symbol*. On the material sector, where $\partial/\partial R_t=-\frac{i}{c}\partial/\partial r'_t$ and a plane wave carries $e^{i(k_0x_0-\vec k\cdot\vec q)}$ with $x_0=c r'_{t}$, the substitution gives
+**The symbol.** Replacing each derivative of the gradient by $ik_\mu$ turns the operator into an element, its *symbol*. On the material sector, where $\partial/\partial R_t=-i\partial/\partial r'_t$ and a plane wave carries $e^{i(k_0x_0-\vec k\cdot\vec q)}$ with $x_0=r'_{t}$, the substitution gives
 $$
 \tilde K=k_0-i\vec k=k_0-i\,(k_x\vec e_x+k_y\vec e_y+k_z\vec e_z),
 \qquad
@@ -373,7 +373,7 @@ the framework's own second invariant. The axial divergence is the ABJ form, with
 | $\tilde{Ξ}_{\mathrm{sp}}$ | The biquaternion fermion field, one element of $\mathbb{B}$, with $\tilde{Ξ}_{\mathrm{sp}}^{\dagger}$ its Dirac-conjugate bilinear |
 | $\mathbb{B}_{\Phi},\mathbb{B}_{\Psi}$ | Material and informational sectors (*Frame and Metric Conventions*) |
 | $\tilde\nabla,\tilde\nabla^{\natural}$ | The biquaternionic gradient and its quaternion conjugate (*Operator and Calculus Conventions*, §*The Gradient*) |
-| $\Box=\tilde\nabla\tilde\nabla^{\natural}$ | The d'Alembertian, $\partial^2/\partial R_t^2+\Delta_Q$; $\Delta-c^{-2}\partial^2/\partial {r'_{t}}^2$ on $\mathbb{B}_{\Phi}$ |
+| $\Box=\tilde\nabla\tilde\nabla^{\natural}$ | The d'Alembertian, $\partial^2/\partial R_t^2+\Delta_Q$; $\Delta-\partial^2/\partial {r'_{t}}^2$ on $\mathbb{B}_{\Phi}$ |
 | $\tilde K=k_0-i\vec k$ | The symbol of the gradient on a plane wave |
 | $\omega=-\vec e_z$ | The pseudoscalar, the volume element; $\omega^2=-e_t$, $\omega^{\natural}=-\omega$ |
 | $\tilde{Ξ}_{\mathrm{sp},L},\tilde{Ξ}_{\mathrm{sp},R}$ | The two values: the eigenspaces of right multiplication by $\vec e_z$ with eigenvalues $-i$ and $+i$, each of complex dimension two |

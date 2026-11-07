@@ -18,7 +18,7 @@ The treatment is classical and non-quantum throughout. The companion articles *T
 
 ### Where the World Is Placed
 
-The full worldline is the material-sector curve $\tilde R_\Phi(r'_t) = i c r'_{t}\,e_t + r_x(r'_t)\,\vec e_x+r_y(r'_t)\,\vec e_y+r_z(r'_t)\,\vec e_z$. In the non-relativistic limit the scalar direction $ie_t$ is inert — the Galilean shear of the first article leaves it fixed — so the configuration space of the non-relativistic particle is the direct sum
+The full worldline is the material-sector curve $\tilde R_\Phi(r'_t) = i r'_{t}\,e_t + r_x(r'_t)\,\vec e_x+r_y(r'_t)\,\vec e_y+r_z(r'_t)\,\vec e_z$. In the non-relativistic limit the scalar direction $ie_t$ is inert — the Galilean shear of the first article leaves it fixed — so the configuration space of the non-relativistic particle is the direct sum
 
 $$
 ie_t\mathbb{R} \;\oplus\; \operatorname{span}\{\vec e_x, \vec e_y, \vec e_z\} \;\subset\; \mathbb{B}_{\Phi} ,
@@ -26,7 +26,7 @@ $$
 
 that is, one scalar direction for time and three real vector directions for space. This is the algebra's realization of $\mathbb{R} \times \mathbb{R}^3$, and it is the setting of every classical problem in this subcategory.
 
-The scalar direction is the imaginary $ie_t$, so the time coordinate appears as the imaginary scalar $i c r'_{t}$; the spatial directions are the real $\vec e_\mu$, so the position is a real pure quaternion. The velocity, acceleration, momentum and force are then all real pure quaternions,
+The scalar direction is the imaginary $ie_t$, so the time coordinate appears as the imaginary scalar $i r'_{t}$; the spatial directions are the real $\vec e_\mu$, so the position is a real pure quaternion. The velocity, acceleration, momentum and force are then all real pure quaternions,
 
 $$
 \vec v = d(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)/dr'_t, \qquad \vec a = d^2(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)/d{r'_{t}}^2, \qquad \vec p = m\vec v, \qquad \vec F = m\vec a ,

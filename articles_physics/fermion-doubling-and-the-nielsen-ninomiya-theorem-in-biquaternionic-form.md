@@ -24,7 +24,7 @@ The next section sets up the naive discretization, its propagator and its double
 
 ### The field, the chirality and the lattice
 
-**The field.** The field is the biquaternion $\tilde{Ξ}_{\mathrm{sp}}$, an element of $\mathbb{B}$; $\tilde{Ξ}_{\mathrm{sp}}$ is its four-component coordinate column where a column is needed. Its coordinates are the four coordinates of the $\mathbb{B}$ frame, $Q_t,Q_x,Q_y,Q_z$, which on the material sector read $Q_t=i c r'_t$ and $Q_k=q_k$ (*Frame and Metric Conventions*). Here $i$ is the scalar imaginary, $i^2=-1$.
+**The field.** The field is the biquaternion $\tilde{Ξ}_{\mathrm{sp}}$, an element of $\mathbb{B}$; $\tilde{Ξ}_{\mathrm{sp}}$ is its four-component coordinate column where a column is needed. Its coordinates are the four coordinates of the $\mathbb{B}$ frame, $Q_t,Q_x,Q_y,Q_z$, which on the material sector read $Q_t=i r'_t$ and $Q_k=q_k$ (*Frame and Metric Conventions*). Here $i$ is the scalar imaginary, $i^2=-1$.
 
 **The dynamics is the chiral pair of the gradient**,
 
@@ -60,7 +60,7 @@ $$
 
 the action whose equation of motion is the massless limit of the pair. The mass is not a term of this one-field action: it is the second line of the pair, and its lattice form is the pair's. Each $D_\mu$ is anti-Hermitian up to the boundary term of summation by parts, exactly as $\partial/\partial R_\mu$ is, so the kinetic kernel meets the hermiticity hypothesis of §*The Nielsen–Ninomiya Theorem* in the same form as the standard discretization. The action reduces to $\int d^4r\,\mathrm{Sc}\bigl[\tilde{Ξ}_{\mathrm{sp}}^*\,\tilde\nabla\tilde{Ξ}_{\mathrm{sp}}\bigr]$ as $a\to0$. It therefore looks like a theory of a single fermion. It is not.
 
-**The coordinates are the frame's own.** The four $Q_\mu$ are the $\mathbb{B}$ frame's coordinates, and the frame's form is $\sum_\mu Q_\mu^2$ with all four coefficients equal: the lattice is imposed on a Euclidean coordinate, and nothing has to be rotated before discretizing. The fourth coordinate is $Q_t=ix_0$ with $x_0=c r'_{t}$, so a lattice momentum $p_t$ is read at $p_t=i\omega/c$ for a frequency $\omega$, and in lattice units $a=1$ at $p_t=i\omega$. The doubling count depends on $\sin(p_\mu a)$ alone and not on the signature.
+**The coordinates are the frame's own.** The four $Q_\mu$ are the $\mathbb{B}$ frame's coordinates, and the frame's form is $\sum_\mu Q_\mu^2$ with all four coefficients equal: the lattice is imposed on a Euclidean coordinate, and nothing has to be rotated before discretizing. The fourth coordinate is $Q_t=ix_0$ with $x_0=r'_{t}$, so a lattice momentum $p_t$ is read at $p_t=i\omega/c$ for a frequency $\omega$, and in lattice units $a=1$ at $p_t=i\omega$. The doubling count depends on $\sin(p_\mu a)$ alone and not on the signature.
 
 ### The propagator and the doubler poles
 
