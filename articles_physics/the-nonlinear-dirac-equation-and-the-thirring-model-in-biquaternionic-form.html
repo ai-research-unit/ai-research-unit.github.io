@@ -116,13 +116,13 @@ $$\tilde\nabla\tilde{Ξ}_{\mathrm{sp},R}=k_m\tilde{Ξ}_{\mathrm{sp},L},
 \tilde\nabla^{\natural}\tilde{Ξ}_{\mathrm{sp},L}=k_m\tilde{Ξ}_{\mathrm{sp},R},$$
 in which the gradient acts by left multiplication on the field and the mass relates the two parts. This is the <strong>one-sided</strong> writing. Here $k_m=mc/\hbar$ is the mass wave number, the inverse of the mass length.</p>
 <p>The <strong>two-sided</strong> writing is the action
-$$\tilde Q\longmapsto i\sum_\mu e_\mu\frac{\partial\tilde Q}{\partial x_\mu}\vec e_{\nu(\mu)},$$
+$$\tilde Q\longmapsto \sum_\mu e_\mu\frac{\partial\tilde Q}{\partial x_\mu}\vec e_{\nu(\mu)},$$
 and it is the one this article needs, because every bilinear above carries a right slot as well as a left one. The two writings describe one dynamics, and each is first order.</p>
-<p>The composition of the two-sided action is read slot by slot. Each slot action composed with itself multiplies the element by $+1$ on the time slot and by $-1$ on each spatial slot; two different slots composed in the two orders cancel in pairs, because the derivatives commute; so the action composed with itself is
+<p>The composition of the two-sided action is read slot by slot. The slot of this action is the unit $e_\mu$ on the left and $\vec e_{\nu(\mu)}$ on the right, with no factor $i$: the $i$ belongs to the <strong>slot action</strong> of the section above, which is what the bilinears are built from, and a sum that carried it in every slot would be the $\gamma$ display of the reference article, whose square is $-\Box$ and not $\Box$. Composed with itself, the unit slot multiplies the element by $-1$ on the time slot, because $e_t^2=+1$ and $\vec e_x^2=-1$, and by $+1$ on each spatial slot, because $\vec e_k^2=\vec e_y^2=-1$; two different slots composed in the two orders cancel in pairs, because the derivatives commute; so the action composed with itself is
 $$\tilde Q\longmapsto\Box\tilde Q,
 \qquad
-\Box=\frac{\partial^2}{\partial x_t^2}-\sum_k\frac{\partial^2}{\partial x_k^2},$$
-in this frame. The verification is exact: the six cross compositions sum to zero, and the four diagonal ones to the four signs above.</p>
+\Box=\sum_k\frac{\partial^2}{\partial x_k^2}-\frac{\partial^2}{\partial x_t^2}=\frac{\partial^2}{\partial R_t^2}+\Delta,$$
+which is the corpus's d'Alembertian: $R_t=i\,x_t$ is the imaginary time, so $\partial^2/\partial R_t^2=-\partial^2/\partial x_t^2$. The verification is exact: the six cross compositions sum to zero, and the four diagonal ones to the four signs above. With this $\Box$ the free equation $\sum_\mu e_\mu\frac{\partial\tilde{Ξ}_{\mathrm{sp}}}{\partial x_\mu}\vec e_{\nu(\mu)}=k_m\tilde{Ξ}_{\mathrm{sp}}$ squares to $(\Box-k_m^{2})\tilde{Ξ}_{\mathrm{sp}}=0$, the second-order equation of the reference article, and a plane wave obeys $k_{t}^{\prime2}=\lvert\vec k_\Phi\rvert^{2}+k_m^{2}$.</p>
 <h3 id="the-two-values-and-the-axial-bilinear">The Two Values and the Axial Bilinear</h3>
 <p>The subscript names one of two components: the element is $L$ when the test returns the minus one and $R$ when it returns the plus one, and only the zero element carries both values. The value is decided by the right slot: a left multiplication keeps the value, and a product takes the value of its right factor. These two facts are stated in words because every sentence below uses them and none computes them.</p>
 <p>The mass multiplies the scalar density, and the density is the object that pairs the two values: $S_{\mathrm d}$ pairs one value with the other and vanishes on an element of a single value, so a field of one value alone carries no mass term.</p>
@@ -131,7 +131,7 @@ in this frame. The verification is exact: the six cross compositions sum to zero
 <h3 id="self-interaction-and-the-cubic-form">Self-Interaction and the Cubic Form</h3>
 <p>The free equation is first order in space and in time, and every bilinear above is quadratic in the field. A Lagrangian term that is a product of two bilinears is therefore quartic in the field, and the field equation obtained from it is cubic: a bilinear coefficient multiplying one more power of the field. That is the whole origin of the name, and the alternative name <strong>cubic Dirac equation</strong> says the same thing.</p>
 <p>The generic equation is
-$$i\sum_\mu e_\mu\frac{\partial\tilde{Ξ}_{\mathrm{sp}}}{\partial x_\mu}\vec e_{\nu(\mu)}-k_m\tilde{Ξ}_{\mathrm{sp}}+g\,Ξ(\tilde{Ξ}_{\mathrm{sp}})=0,$$
+$$\sum_\mu e_\mu\frac{\partial\tilde{Ξ}_{\mathrm{sp}}}{\partial x_\mu}\vec e_{\nu(\mu)}-k_m\tilde{Ξ}_{\mathrm{sp}}+g\,Ξ(\tilde{Ξ}_{\mathrm{sp}})=0,$$
 with $Ξ$ cubic. The three standard models differ only in which bilinear builds $Ξ$, and a table is the clearest statement of the difference.</p>
 <div class="table-scroll"><table>
 <thead>
@@ -172,18 +172,18 @@ with $Ξ$ cubic. The three standard models differ only in which bilinear builds 
 <p>The models below are the two the literature names, and the article records them in the form the sources state, so that the coefficients can be checked against them.</p>
 <h3 id="the-thirring-model">The Thirring Model</h3>
 <p>The <strong>Thirring model</strong> (Thirring 1958) is the $1+1$-dimensional theory of a self-interacting fermion whose interaction is the square of the vector current. In the notation of this article the Lagrangian density is
-$$\mathcal{L}=\mathrm{Sc}\bigl(\tilde{Ξ}_{\mathrm{sp}}^*i\,(i\sum_\mu e_\mu\frac{\partial\tilde{Ξ}_{\mathrm{sp}}}{\partial x_\mu}\vec e_{\nu(\mu)})\vec e_x\bigr)-m\,\mathrm{Sc}\bigl(\tilde{Ξ}_{\mathrm{sp}}^*i\tilde{Ξ}_{\mathrm{sp}}\vec e_x\bigr)-\frac{g}{2}\sum_\mu\varepsilon_\mu V_\mu V_\mu,$$
+$$\mathcal{L}=\mathrm{Sc}\bigl(\tilde{Ξ}_{\mathrm{sp}}^*i\,(\sum_\mu e_\mu\frac{\partial\tilde{Ξ}_{\mathrm{sp}}}{\partial x_\mu}\vec e_{\nu(\mu)})\vec e_x\bigr)-m\,\mathrm{Sc}\bigl(\tilde{Ξ}_{\mathrm{sp}}^*i\tilde{Ξ}_{\mathrm{sp}}\vec e_x\bigr)-\frac{g}{2}\sum_\mu\varepsilon_\mu V_\mu V_\mu,$$
 with the sums running over the two indices $t$ and $x$ of the plane. The field is an element of $\mathbb{B}$; its two values $\tilde{Ξ}_{\mathrm{sp},L}$ and $\tilde{Ξ}_{\mathrm{sp},R}$ are the two components the two-dimensional dynamics uses, and the mass term is the scalar density $S_{\mathrm d}$, which pairs the two values and vanishes when only one is present.</p>
 <p>The integral $\int dt\,dx\,\mathcal{L}$ is the action, and the field equation is
-$$i\sum_\mu e_\mu\frac{\partial\tilde{Ξ}_{\mathrm{sp}}}{\partial x_\mu}\vec e_{\nu(\mu)}-k_m\tilde{Ξ}_{\mathrm{sp}}-g\sum_\mu\varepsilon_\mu V_\mu\,(ie_\mu\tilde{Ξ}_{\mathrm{sp}}\vec e_{\nu(\mu)})=0,$$
+$$\sum_\mu e_\mu\frac{\partial\tilde{Ξ}_{\mathrm{sp}}}{\partial x_\mu}\vec e_{\nu(\mu)}-k_m\tilde{Ξ}_{\mathrm{sp}}-g\sum_\mu\varepsilon_\mu V_\mu\,(ie_\mu\tilde{Ξ}_{\mathrm{sp}}\vec e_{\nu(\mu)})=0,$$
 with $\mu$ running over $t$ and $x$. The interaction is a <strong>current–current</strong> interaction: the field at a point multiplies the current at the same point.</p>
 <p><strong>The model is exactly solvable.</strong> The massless Thirring model was solved by Hagen (1964) and by Klaiber (1968): the spectrum is a free boson, and the fermion Green functions are explicit powers of the free ones. The model satisfies the Osterwalder–Schrader axioms with a suitable choice of the coupling (Carey and Ruijsenaars 1984), and the massive model is integrable by Bethe ansatz (Bergknoff and Thacker 1979). The exact solubility is the reason the model is used as a testing ground for approximation schemes: a method that cannot reproduce the Thirring model exactly is known to be wrong before it is applied to QCD.</p>
 <p><strong>Bosonisation.</strong> In $1+1$ dimensions the massless Thirring model is equivalent to a free massless scalar field. With a mass term the equivalence is the <strong>sine-Gordon</strong> correspondence, and the fermion mass is the cosine coupling (Coleman 1975, Mandelstam 1975). The correspondence is the prototype of the statement that a fermion in one space dimension can be traded for a boson, and it is the reason the model appears in the biquaternion literature beside the bosonisation article.</p>
 <h3 id="the-soler-model">The Soler Model</h3>
 <p>The <strong>Soler model</strong> (Soler 1970) is the $3+1$-dimensional theory whose interaction is the square of the scalar bilinear:
-$$\mathcal{L}=\mathrm{Sc}\bigl(\tilde{Ξ}_{\mathrm{sp}}^*i\,(i\sum_\mu e_\mu\frac{\partial\tilde{Ξ}_{\mathrm{sp}}}{\partial x_\mu}\vec e_{\nu(\mu)})\vec e_x\bigr)-m\,\mathrm{Sc}\bigl(\tilde{Ξ}_{\mathrm{sp}}^*i\tilde{Ξ}_{\mathrm{sp}}\vec e_x\bigr)+\frac{g}{2}\Bigl(\mathrm{Sc}\bigl(\tilde{Ξ}_{\mathrm{sp}}^*i\tilde{Ξ}_{\mathrm{sp}}\vec e_x\bigr)\Bigr)^{2},$$
+$$\mathcal{L}=\mathrm{Sc}\bigl(\tilde{Ξ}_{\mathrm{sp}}^*i\,(\sum_\mu e_\mu\frac{\partial\tilde{Ξ}_{\mathrm{sp}}}{\partial x_\mu}\vec e_{\nu(\mu)})\vec e_x\bigr)-m\,\mathrm{Sc}\bigl(\tilde{Ξ}_{\mathrm{sp}}^*i\tilde{Ξ}_{\mathrm{sp}}\vec e_x\bigr)+\frac{g}{2}\Bigl(\mathrm{Sc}\bigl(\tilde{Ξ}_{\mathrm{sp}}^*i\tilde{Ξ}_{\mathrm{sp}}\vec e_x\bigr)\Bigr)^{2},$$
 that is, with $S_{\mathrm d}$ for the scalar density, $\frac{g}{2}S_{\mathrm d}^2$. The interaction is a <strong>scalar–scalar</strong> interaction, and the field equation is
-$$i\sum_\mu e_\mu\frac{\partial\tilde{Ξ}_{\mathrm{sp}}}{\partial x_\mu}\vec e_{\nu(\mu)}-k_m\tilde{Ξ}_{\mathrm{sp}}+g\,S_{\mathrm d}\,\tilde{Ξ}_{\mathrm{sp}}=0,$$
+$$\sum_\mu e_\mu\frac{\partial\tilde{Ξ}_{\mathrm{sp}}}{\partial x_\mu}\vec e_{\nu(\mu)}-k_m\tilde{Ξ}_{\mathrm{sp}}+g\,S_{\mathrm d}\,\tilde{Ξ}_{\mathrm{sp}}=0,$$
 with the sum over the four indices $t,x,y,z$.</p>
 <p><strong>The pseudoscalar variant.</strong> The same construction with $P_5$ in place of $S_{\mathrm d}$ gives the pseudoscalar–pseudoscalar interaction $\frac{g}{2}P_5^2$. The two variants are not independent under the axial rotation $Q\mapsto Q\exp(\alpha\vec e_z)$: the pair $(S_{\mathrm d},P_5)$ rotates as a two-component object,
 $$S_{\mathrm d}\longmapsto \cos 2\alpha\,S_{\mathrm d}+\sin 2\alpha\,P_5,
@@ -194,12 +194,12 @@ so that $S_{\mathrm d}^2+P_5^2$ is invariant and $S_{\mathrm d}^2$ alone is not.
 <p><strong>Relation to Nambu–Jona-Lasinio.</strong> The scalar–scalar interaction is the mean-field approximation of the Nambu–Jona-Lasinio four-fermion interaction, and the closed-form solutions of the Soler model (Soler 1970; see also the review of Thaller 1992) are the standard testing ground for the mean-field treatment of dynamical mass generation. The scalar channel is the one the mass uses, so a scalar–scalar self-interaction is the self-consistent mass term.</p>
 <h2 id="the-hehldatta-interaction-from-torsion">The Hehl–Datta Interaction from Torsion</h2>
 <p>With the torsion eliminated, the equation of the field is the Dirac equation plus the axial term, and it is the one model of the three whose coefficient is not fitted but fixed:
-$$i\sum_\mu e_\mu\frac{\partial\tilde{Ξ}_{\mathrm{sp}}}{\partial x_\mu}\vec e_{\nu(\mu)}-k_m\tilde{Ξ}_{\mathrm{sp}}+\frac{3\kappa}{8}\sum_\mu\varepsilon_\mu A_\mu\,e_\mu\tilde{Ξ}_{\mathrm{sp}}\vec e_z\vec e_{\nu(\mu)}=0.$$
+$$\sum_\mu e_\mu\frac{\partial\tilde{Ξ}_{\mathrm{sp}}}{\partial x_\mu}\vec e_{\nu(\mu)}-k_m\tilde{Ξ}_{\mathrm{sp}}+\frac{3\kappa}{8}\sum_\mu\varepsilon_\mu A_\mu\,e_\mu\tilde{Ξ}_{\mathrm{sp}}\vec e_z\vec e_{\nu(\mu)}=0.$$
 The term is the axial current multiplying the axial slot action on the field. Its coefficient is $3\kappa/8$, twice the $3\kappa/16$ of the Lagrangian, and the factor of two is the one that varying a square supplies.</p>
 <p><strong>The spacelike case.</strong> Where only the spacelike components of the current are nonzero, the equation separates into a time part and a space part,
-$$i\Bigl((\nabla_t\tilde{Ξ}_{\mathrm{sp}})\vec e_x+\sum_k\vec e_k(\nabla_k\tilde{Ξ}_{\mathrm{sp}})\vec e_y\Bigr)+\frac{3\kappa}{8}\sum_k\varepsilon_k A_k\,\vec e_k\tilde{Ξ}_{\mathrm{sp}}\vec e_z\vec e_y=k_m\tilde{Ξ}_{\mathrm{sp}},$$
+$$\Bigl((\nabla_t\tilde{Ξ}_{\mathrm{sp}})\vec e_x+\sum_k\vec e_k(\nabla_k\tilde{Ξ}_{\mathrm{sp}})\vec e_y\Bigr)+\frac{3\kappa}{8}\sum_k\varepsilon_k A_k\,\vec e_k\tilde{Ξ}_{\mathrm{sp}}\vec e_z\vec e_y=k_m\tilde{Ξ}_{\mathrm{sp}},$$
 with $A_0=0$, and the two parts are read separately.</p>
-<p><strong>Why the square is the d'Alembertian.</strong> The three spatial slot actions composed with one another give $-\partial_k^2$ on each diagonal and cancel in pairs off it, so the square of the two-sided action restricted to the plane's space is $-\sum_k\partial_k^2$, the spatial part of $\Box$. The eliminated equation therefore has a square that is a wave operator, and no sign in it is chosen by hand.</p>
+<p><strong>Why the square is the d'Alembertian.</strong> The three spatial slots composed with one another give $+\partial_k^2$ on each diagonal and cancel in pairs off it, so the square of the two-sided action restricted to the plane's space is $+\sum_k\partial_k^2=\Delta$, the spatial part of $\Box$. The eliminated equation therefore has a square that is a wave operator, and no sign in it is chosen by hand.</p>
 <h2 id="the-local-channels-and-their-sectors">The Local Channels and Their Sectors</h2>
 <h3 id="the-bilinears">The Bilinears</h3>
 <p>The five bilinears, with the element at which the pairing is read, and with the Lorentz type and the parity behaviour the sources give them:</p>
@@ -298,7 +298,7 @@ with $A_0=0$, and the two parts are read separately.</p>
 <p>The identification above is a placement, not a derivation. A bilinear here is a pairing, and every pairing of this article carries the fixed element $i\vec e_x$; it is not a product of two elements of $\mathbb{B}$ alone, and the free equation of the framework contains no such fixed element. The consequence is the one recorded in the minimal-coupling article: a bilinear built only from $\tilde{Ξ}_{\mathrm{sp}}$ and $\tilde{Ξ}_{\mathrm{sp}}^*$ inside $\mathbb{B}$ cannot supply these objects on its own, and the self-interaction, like the current, is a statement about a pairing and not about a product. The framework transcribes the models, verifies the two-dimensional algebra of their channels, and locates each channel in its sectors. It supplies no coupling, no solution, no spectrum and no prediction.</p>
 <p>Two further limits are inherited from other gaps. The Einstein–Cartan route needs a torsionful connection with a field equation; the companion article on curved spacetime records that the framework can carry the connection as an object of its own Lie subspace but generates no dynamics for it, so a biquaternion torsion belongs to that agenda and not to the constructed part. And the exact solubility of the massless Thirring model is a property of two-dimensional quantum field theory with no biquaternion counterpart: the framework can write the two-dimensional reduction in its own objects, and it does not reproduce the solution.</p>
 <h2 id="verified-two-dimensional-relations">Verified Two-Dimensional Relations</h2>
-<p>The two-dimensional identities on which the Thirring model's one coupling rests were checked directly, in exact arithmetic on the algebra over the Gaussian integers, so every residual below is exactly $0$ and not merely small. The frame is the $\mathbb{B}_{\Phi}$ frame of the conventions article, whose metric has $g_{tt}=+1$ and $g_{xx}=-1$.</p>
+<p>The two-dimensional identities on which the Thirring model's one coupling rests were checked directly, in exact arithmetic on the algebra over the Gaussian integers, so every residual below is exactly $0$ and not merely small. The frame is the $\mathbb{B}_{\Phi}$ frame of the conventions article, whose metric is $g_{tt}=-c^{2}$ and $g_{xx}=+1$, so that $\varepsilon_t=-g_{tt}=+1$ on the time index and $\varepsilon_k=-g_{kk}=-1$ on the spatial ones.</p>
 <h3 id="the-two-slot-actions">The Two Slot Actions</h3>
 <p>The two-dimensional plane uses two slot actions,
 $$\tilde Q\longmapsto ie_t\tilde Q\vec e_x,
@@ -414,7 +414,7 @@ $$</p>
 <td>Slot action of the index $\mu$; $\nu(t)=x$, $\nu(k)=y$</td>
 </tr>
 <tr>
-<td>$i\sum_\mu e_\mu\frac{\partial\tilde Q}{\partial x_\mu}\vec e_{\nu(\mu)}$</td>
+<td>$\sum_\mu e_\mu\frac{\partial\tilde Q}{\partial x_\mu}\vec e_{\nu(\mu)}$</td>
 <td>Two-sided Dirac action; composed with itself it is $\Box$</td>
 </tr>
 <tr>
