@@ -12,7 +12,7 @@ The derivation has two facts and one regularisation.
 
 This article asks what the biquaternion framework supplies for this derivation. The answer is stated at the outset.
 
-- **Supplied, and recomputed below.** The massless equation is one first-order equation in one field, $\tilde\nabla\tilde{Ξ}_{\mathrm{sp}}=0$, and the massive equation is the chiral pair, because the square of the gradient with itself is not scalar. The two algebraic facts the derivation rests on are exact: $\tilde\nabla\tilde\nabla^{\natural}=\tilde\nabla^{\natural}\tilde\nabla=\Box$, and the chirality is the right multiplication by the pseudoscalar $\omega=-\vec e_z$, with $\omega^2=-e_t$, whose two values split the field into two halves of complex dimension two each. The symbol of the gradient is $\tilde K=k_0-i\vec k$, and on the null cone its left action on the six bivector components has rank four and a kernel of real dimension two, on which every bivector squares to zero. Those numbers are recomputed in §*The Symbol, the Cone and the Null Bivectors*, over five null wave vectors, with residual below $2\times10^{-14}$ at the level of the singular-value basis.
+- **Supplied, and recomputed below.** The massless equation is one first-order equation in one field, $\tilde\nabla\tilde{Ξ}_{\mathrm{sp}}=0$, and the massive equation is the chiral pair, because the square of the gradient with itself is not scalar. The two algebraic facts the derivation rests on are exact: $\tilde\nabla\tilde\nabla^{\natural}=\tilde\nabla^{\natural}\tilde\nabla=\Box$, and the chirality is the right multiplication by the pseudoscalar $\omega=-\vec e_z$, with $\omega^2=-e_t$, whose two values split the field into two halves of complex dimension two each. The symbol of the gradient is $\tilde K=k_{t}^{\prime}-i\vec k$, and on the null cone its left action on the six bivector components has rank four and a kernel of real dimension two, on which every bivector squares to zero. Those numbers are recomputed in §*The Symbol, the Cone and the Null Bivectors*, over five null wave vectors, with residual below $2\times10^{-14}$ at the level of the singular-value basis.
 - **Translated once from the source.** The source's own equation is written with a derivative that carries one frame object per coordinate. Translated once, every derivative in this article is $\tilde\nabla$, the chirality stands on the right as a factor $\omega$, and the contraction is the form $\langle\tilde\nabla,\tilde J_{\Phi}\rangle_{\natural}$. The translation is fixed in §*The Gradient, the Pseudoscalar and the Two Values* and is not repeated; the source's form is not displayed.
 - **Transcribed.** The measure, the Jacobian, the heat-kernel expansion, the Fujikawa coefficient and the index form of the integrated anomaly are standard. The measure is a functional-integral object and belongs to the corpus's general path-integral apparatus, which is cited and not rebuilt here.
 - **Not supplied, and proved not to be.** The four-index symbol is not an object of the algebra. The chirality-weighted trace of the algebra over its four dimensions vanishes for every element, identically, because the pseudoscalar is odd under the natural conjugation; the insertion is taken on the right, the side the rotation acts on, and all $24$ orders of four distinct units give exactly zero. The density is therefore transcribed and not computed from an algebra trace, and §*Why the Symbol Is Not an Algebra Trace* states the theorem and what follows from it. What the algebra supplies in its place is the identification of the density with its own invariant $I_2=\vec E\cdot\vec B$, through the contraction $\epsilon_{\mu\nu\rho\sigma}F_{\mu\nu}F_{\rho\sigma}=+8\,\vec E\cdot\vec B$.
@@ -112,7 +112,7 @@ and the integral is Gaussian: it evaluates to the determinant of the operator,
 $$
 Z[A] = \det\bigl(\mathbb{D}-k_m\bigr) .
 $$
-The bosonic and fermionic measures, the Gaussian integration and the determinant are the subject of the corpus's fermionic path-integral article; that article constructs them and this one takes them as given. What the algebra supplies here is the operator whose determinant is taken: the pair operator with its derivative made covariant, whose square is $\Box$, and whose determinant is the product over modes of $\det\ell_{\tilde K}=(k_0^2-\lvert\vec k\rvert^2)^2$ for one chiral value — the square of the symbol of the d'Alembertian, which is the Dirac determinant — and the square of that for the pair, one factor for each value. The mass is the coefficient that the condensate of the companion article fixes.
+The bosonic and fermionic measures, the Gaussian integration and the determinant are the subject of the corpus's fermionic path-integral article; that article constructs them and this one takes them as given. What the algebra supplies here is the operator whose determinant is taken: the pair operator with its derivative made covariant, whose square is $\Box$, and whose determinant is the product over modes of $\det\ell_{\tilde K}=(k_{t}^{\prime\,2}-\lvert\vec k\rvert^2)^2$ for one chiral value — the square of the symbol of the d'Alembertian, which is the Dirac determinant — and the square of that for the pair, one factor for each value. The mass is the coefficient that the condensate of the companion article fixes.
 
 **The chiral rotation.** Rotate the integration variables by an axial phase that is local,
 $$
@@ -211,17 +211,17 @@ and it is quoted from the literature of §*Further Reading*, not re-derived here
 
 ## The Symbol, the Cone and the Null Bivectors
 
-**The symbol.** Replacing each derivative of the gradient by $ik_\mu$ turns the operator into an element, its *symbol*. On the material sector, where $\partial/\partial R_t=-i\partial/\partial r'_t$ and a plane wave carries $e^{i(k_0x_0-\vec k\cdot\vec q)}$ with $x_0=r'_{t}$, the substitution gives
+**The symbol.** Replacing each derivative of the gradient by $ik_\mu$ turns the operator into an element, its *symbol*. On the material sector, where $\partial/\partial R_t=-i\partial/\partial r'_t$ and a plane wave carries $e^{i(k_{t}^{\prime}x_0-\vec k\cdot\vec q)}$ with $x_0=r'_{t}$, the substitution gives
 $$
-\tilde K=k_0-i\vec k=k_0-i\,(k_x\vec e_x+k_y\vec e_y+k_z\vec e_z),
+\tilde K=k_{t}^{\prime}-i\vec k=k_{t}^{\prime}-i\,(k_x\vec e_x+k_y\vec e_y+k_z\vec e_z),
 \qquad
-\tilde K^{\natural}\tilde K=k_0^2-\lvert\vec k\rvert^2 .
+\tilde K^{\natural}\tilde K=k_{t}^{\prime\,2}-\lvert\vec k\rvert^2 .
 $$
-The identity is the natural norm of the symbol, and it is the symbol of the d'Alembertian: recomputed, the product is $3$ at $k=(2,1,0,0)$ and $0$ at $k=(1,1,0,0)$, matching $k_0^2-\lvert\vec k\rvert^2$ in both cases.
+The identity is the natural norm of the symbol, and it is the symbol of the d'Alembertian: recomputed, the product is $3$ at $k=(2,1,0,0)$ and $0$ at $k=(1,1,0,0)$, matching $k_{t}^{\prime\,2}-\lvert\vec k\rvert^2$ in both cases.
 
 **The determinant of the gradient.** Left multiplication by $\tilde K$ is a complex-linear operator on the four coefficients, and its determinant is the square of the scalar symbol,
 $$
-\det \ell_{\tilde K}=\bigl(k_0^2-\lvert\vec k\rvert^2\bigr)^2 ,
+\det \ell_{\tilde K}=\bigl(k_{t}^{\prime\,2}-\lvert\vec k\rvert^2\bigr)^2 ,
 $$
 recomputed as $9$ at $k=(2,1,0,0)$. It is singular exactly when $k$ is null, and there its rank is two: at $k=(1,1,0,0)$, $(1,0,1,0)$, $(1,0,0,1)$ and $(3,1,2,2)$ the rank is $2$, and off the cone at $k=(2,1,0,0)$ it is $4$. A gradient plane wave is annihilated by the gradient exactly when the wave vector is null, which is the light cone and nothing else.
 
@@ -330,7 +330,7 @@ so the axial charge transported in a background is twice the index, the minus be
 | $\tilde\nabla\tilde\nabla^{\natural}=\tilde\nabla^{\natural}\tilde\nabla=\Box$ | **Supplied**; recomputed with residual $3\times10^{-6}$ |
 | The pseudoscalar $\omega=-\vec e_z$, with $\omega^2=-e_t$ | **Supplied** by the algebra |
 | The two values as the two eigenspaces of right multiplication by $\vec e_z$, of dimensions $2$ and $2$ | **Supplied**; recomputed |
-| The symbol $\tilde K=k_0-i\vec k$, with $\tilde K^{\natural}\tilde K=k_0^2-\lvert\vec k\rvert^2$ and $\det \ell_{\tilde K}=(k_0^2-\lvert\vec k\rvert^2)^2$ | **Supplied**; recomputed |
+| The symbol $\tilde K=k_{t}^{\prime}-i\vec k$, with $\tilde K^{\natural}\tilde K=k_{t}^{\prime\,2}-\lvert\vec k\rvert^2$ and $\det \ell_{\tilde K}=(k_{t}^{\prime\,2}-\lvert\vec k\rvert^2)^2$ | **Supplied**; recomputed |
 | Rank four and kernel two on the six bivectors, with $f^2=0$ on the kernel, for null $k$ | **Supplied**, recomputed over five null wave vectors |
 | The anomaly density, proportional to the framework's invariant $I_2$ | **Supplied** through the contraction $\epsilon_{\mu\nu\rho\sigma}F_{\mu\nu}F_{\rho\sigma}=+8\vec E\cdot\vec B$; the coefficient is standard |
 | The four-index symbol as a trace of the algebra | **Not supplied, and proved absent**: the chirality-weighted trace vanishes for every element |
@@ -358,7 +358,7 @@ The Fujikawa method derives the axial anomaly as the Jacobian of the fermion mea
 
 **The one thing the algebra does not give.** The regulated trace that produces the four-index symbol in the standard computation vanishes here identically: $\mathrm{tr}(\ell_h\rho_\omega)=0$ for every element, so all $24$ orders of four distinct units contribute exactly zero. The coefficient is therefore transcribed, $a=-(ϙ^2/32\pi^2)\epsilon_{\mu\nu\rho\sigma}F_{\mu\nu}F_{\rho\sigma}$, and the article states it as transcribed.
 
-**What the algebra gives in its place.** The symbol $\tilde K=k_0-i\vec k$, whose natural norm is $k_0^2-\lvert\vec k\rvert^2$ and whose left action on the six bivector components has rank four and a two-dimensional kernel on the null cone, with $f^2=0$ on the whole kernel — five null wave vectors, residual below $2\times10^{-14}$; and the contraction $\epsilon_{\mu\nu\rho\sigma}F_{\mu\nu}F_{\rho\sigma}=+8\vec E\cdot\vec B$, so that
+**What the algebra gives in its place.** The symbol $\tilde K=k_{t}^{\prime}-i\vec k$, whose natural norm is $k_{t}^{\prime\,2}-\lvert\vec k\rvert^2$ and whose left action on the six bivector components has rank four and a two-dimensional kernel on the null cone, with $f^2=0$ on the whole kernel — five null wave vectors, residual below $2\times10^{-14}$; and the contraction $\epsilon_{\mu\nu\rho\sigma}F_{\mu\nu}F_{\rho\sigma}=+8\vec E\cdot\vec B$, so that
 $$
 \boxed{\;A(x)=-\frac{ϙ^2}{16\pi^2}\,\epsilon_{\mu\nu\rho\sigma}F_{\mu\nu}F_{\rho\sigma}
 = -\frac{ϙ^2}{2\pi^2}\,\vec E\cdot\vec B=-\frac{ϙ^2}{2\pi^2}\,I_2\;},
@@ -374,7 +374,7 @@ the framework's own second invariant. The axial divergence is the ABJ form, with
 | $\mathbb{B}_{\Phi},\mathbb{B}_{\Psi}$ | Material and informational sectors (*Frame and Metric Conventions*) |
 | $\tilde\nabla,\tilde\nabla^{\natural}$ | The biquaternionic gradient and its quaternion conjugate (*Operator and Calculus Conventions*, §*The Gradient*) |
 | $\Box=\tilde\nabla\tilde\nabla^{\natural}$ | The d'Alembertian, $\partial^2/\partial R_t^2+\Delta_Q$; $\Delta-\partial^2/\partial {r'_{t}}^2$ on $\mathbb{B}_{\Phi}$ |
-| $\tilde K=k_0-i\vec k$ | The symbol of the gradient on a plane wave |
+| $\tilde K=k_{t}^{\prime}-i\vec k$ | The symbol of the gradient on a plane wave |
 | $\omega=-\vec e_z$ | The pseudoscalar, the volume element; $\omega^2=-e_t$, $\omega^{\natural}=-\omega$ |
 | $\tilde{Ξ}_{\mathrm{sp},L},\tilde{Ξ}_{\mathrm{sp},R}$ | The two values: the eigenspaces of right multiplication by $\vec e_z$ with eigenvalues $-i$ and $+i$, each of complex dimension two |
 | $\mathrm{tr}$ | The trace of a complex-linear operator on the four coefficients of the field |

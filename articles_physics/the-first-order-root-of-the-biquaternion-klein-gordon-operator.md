@@ -74,23 +74,23 @@ $$
 
 ### The symbol and the mass shell
 
-On a plane wave $e^{i(k_0x_0-\vec k\cdot\vec r)}$ every derivative is a multiple of the wave. The substitution is $\partial/\partial R_t\mapsto k_0$ and $\partial/\partial R_k\mapsto-ik_k$, so the gradient becomes one fixed element of the algebra,
+On a plane wave $e^{i(k_{t}^{\prime}x_0-\vec k\cdot\vec r)}$ every derivative is a multiple of the wave. The substitution is $\partial/\partial R_t\mapsto k_{t}^{\prime}$ and $\partial/\partial R_k\mapsto-ik_k$, so the gradient becomes one fixed element of the algebra,
 
 $$
-\tilde K=k_0-i\vec k=k_0-i\sum_k\vec e_k k_k,
+\tilde K=k_{t}^{\prime}-i\vec k=k_{t}^{\prime}-i\sum_k\vec e_k k_k,
 \qquad
-\tilde K^{\natural}\tilde K=\tilde K\tilde K^{\natural}=k_0^2-\lvert\vec k\rvert^2 ,
+\tilde K^{\natural}\tilde K=\tilde K\tilde K^{\natural}=k_{t}^{\prime\,2}-\lvert\vec k\rvert^2 ,
 $$
 
 and the second identity is the symbol of $\Box$. The mass shell is the level set
 
 $$
-k_0^2-\lvert\vec k\rvert^2=k_m^{2}
+k_{t}^{\prime\,2}-\lvert\vec k\rvert^2=k_m^{2}
 \quad\Longleftrightarrow\quad
 E^2=\vec p^{\,2}c^2+m^2c^4 ,
 $$
 
-with $k_0=k_{t}^{\prime}$ and $\vec k=\vec p\,\frac{k_m}{m\,c}$. Here $k_{\Phi}=\frac{k_m\,p}{m\,c}$ and $k_{t}^{\prime}=E/(\frac{m\,c^{2}}{k_m})$ are the momentum and energy wave numbers.
+with $\vec k=\vec p\,\frac{k_m}{m\,c}$. Here $k_{\Phi}=\frac{k_m\,p}{m\,c}$ and $k_{t}^{\prime}=E/(\frac{m\,c^{2}}{k_m})$ are the momentum and energy wave numbers.
 
 The symbol of $\Box$ is the interval of the wave covector, and the mass shell is that symbol set to $k_m^{2}$. The symbol of the gradient is a zero divisor on exactly the same set: left multiplication by $\tilde K$ is invertible off the cone and has rank two on it. The equation $\tilde\nabla\tilde{Ξ}=0$ therefore has a nonzero plane-wave solution exactly where the massless Klein–Gordon equation does, and it halves the solution space there, as §*What the Root Does Not Carry* records.
 
@@ -218,10 +218,10 @@ On a plane wave the symbol of $\mathbb{D}$, written $\mathbb{D}(\tilde K)$, is t
 
 $$
 \det\left(\mathbb{D}(\tilde K)-k_m\right)
-=\left(k_0^2-\lvert\vec k\rvert^2-k_m^{2}\right)^4 ,
+=\left(k_{t}^{\prime\,2}-\lvert\vec k\rvert^2-k_m^{2}\right)^4 ,
 $$
 
-the fourth power of the symbol of $\Box-k_m^{2}$: eliminating one block leaves the Schur complement $1/k_m\left(k_0^2-\lvert\vec k\rvert^2-k_m^{2}\right)$ times the four-dimensional identity.
+the fourth power of the symbol of $\Box-k_m^{2}$: eliminating one block leaves the Schur complement $1/k_m\left(k_{t}^{\prime\,2}-\lvert\vec k\rvert^2-k_m^{2}\right)$ times the four-dimensional identity.
 
 The determinant is a product of eigenvalues, and it is not a square root. A determinant identity says that a power of the scalar symbol is the determinant of a first-order operator; a root needs one first-order operator whose square is the scalar operator, and the power four is the evidence that this operator lives on the doubled carrier. The vanishing is a consistency check on the factorisation, and not a construction of a single root.
 
@@ -248,13 +248,13 @@ The identities were recomputed before they were written. The algebra multiplicat
 
 | Check | Result |
 |---|---|
-| $\tilde K^{\natural}\tilde K-(k_0^2-\lvert\vec k\rvert^2)e_t$ on $100$ random wave covectors | $8.9\times10^{-16}$ |
-| the symbol of the square, $\tilde K^2-\left(k_0^2+\lvert\vec k\rvert^2\right)e_t+2ik_0\vec k$, on $100$ random wave covectors | $1.8\times10^{-15}$ |
+| $\tilde K^{\natural}\tilde K-(k_{t}^{\prime\,2}-\lvert\vec k\rvert^2)e_t$ on $100$ random wave covectors | $8.9\times10^{-16}$ |
+| the symbol of the square, $\tilde K^2-\left(k_{t}^{\prime\,2}+\lvert\vec k\rvert^2\right)e_t+2ik_{t}^{\prime}\vec k$, on $100$ random wave covectors | $1.8\times10^{-15}$ |
 | the sixteen maps $\tilde{Ξ}_{\mathrm{sp}}\mapsto e_\mu\tilde{Ξ}_{\mathrm{sp}} e_\nu$ are independent | rank $16$ |
 | no element anticommutes with the three spatial units | kernel dimension $0$ |
 | no map anticommutes with the four left multiplications | dimension $0$ |
 | the same for a generic quaternionic triple, over $100$ conjugates | kernel dimension $0$ |
-| $\det\ell_{\tilde K}-(k_0^2-\lvert\vec k\rvert^2)^2$ on $100$ random wave covectors | $5.7\times10^{-14}$ |
+| $\det\ell_{\tilde K}-(k_{t}^{\prime\,2}-\lvert\vec k\rvert^2)^2$ on $100$ random wave covectors | $5.7\times10^{-14}$ |
 | rank and kernel of $\ell_{\tilde K}$ at five null wave covectors | rank $2$, kernel $2$ (exact) |
 | the same off the cone, at $k=(2,1,0,0)$ | rank $4$ |
 | the chirality on the null kernel, the eigenvalues of the right action by $\vec e_z$ | $\pm i$, one of each |
@@ -290,7 +290,7 @@ A field whose value is one complex number has no first-order equation: the four 
 | $1/k_m$ | The mass length, $\hbar/(mc)$; its reciprocal $k_m=mc/\hbar$ is the inverse reduced Compton wavelength |
 | $k_\mu$ | The wave covector of a plane wave |
 | $\omega=-\vec e_z$ | The pseudoscalar of the algebra, $\omega^2=-e_t$ |
-| $\tilde K=k_0-i\vec k$ | The symbol of the gradient, an element of $\mathbb{B}$ |
+| $\tilde K=k_{t}^{\prime}-i\vec k$ | The symbol of the gradient, an element of $\mathbb{B}$ |
 | $\ell_M$ | Left multiplication by $M$ |
 | $\tilde{Ξ}$ | The field of the Klein–Gordon equation, an element of $\mathbb{B}$ |
 | $\tilde{Ξ}_{\mathrm{sp},L},\tilde{Ξ}_{\mathrm{sp},R}$ | The two parts of an element, the two values of the label |

@@ -52,15 +52,15 @@ because $e_t$ commutes with the three spatial units while the spatial units anti
 
 $$
 i\tilde P_{\Phi}=-\tilde K,\qquad
-\tilde P_{\Phi}=i k_0e_t+k_1\vec e_x+k_2\vec e_y+k_3\vec e_z,\qquad
-\tilde K=k_0-i\vec k,
+\tilde P_{\Phi}=i p_{t}^{\prime}e_t+p_1\vec e_x+p_2\vec e_y+p_3\vec e_z,\qquad
+\tilde K=k_{t}^{\prime}-i\vec k,
 $$
 
-with $k_0=\omega/c$ the temporal wave number and $\vec k=\vec p/\hbar$ the vector wave number. The wave element is that of the material sector, imaginary scalar part and real vector part, and its two scalar squares are
+with $k_{t}^{\prime}=\omega/c$ the temporal wave number and $\vec k=\vec p/\hbar$ the vector wave number. The wave element is that of the material sector, imaginary scalar part and real vector part, and its two scalar squares are
 
 $$
-\tilde K^{\natural}\tilde K=k_0^2-\lvert\vec k\rvert^2=p^2,\qquad
-\tilde P_{\Phi}\tilde P_{\Phi}^{\natural}=-p^2,\qquad p^2=k_0^2-\lvert\vec k\rvert^2 .
+\tilde K^{\natural}\tilde K=k_{t}^{\prime\,2}-\lvert\vec k\rvert^2=p^2,\qquad
+\tilde P_{\Phi}\tilde P_{\Phi}^{\natural}=-p^2,\qquad p^2=p_{t}^{\prime\,2}-\lvert\vec p\rvert^2 .
 $$
 
 Each line is one use of $i^2=-1$ and one use of $\vec k^{\,2}=-\lvert\vec k\rvert^2$, and the two lines agree because $\tilde K=-i\tilde P_{\Phi}$. The symbol of the free equation is the left multiplication by $-\tilde K$, that is by $i\tilde P_{\Phi}$: the gradient and the wave element are the same object read twice. The two squares vanish together exactly when $p^2=0$, and that is the null wave element of Problem 4, where the symbol loses rank and the solutions of the free equation become the kernel.
@@ -232,10 +232,10 @@ $$
 The scalar square is the interval, and the collapse is two lines:
 
 $$
-\tilde K^{\natural}\tilde K=k_0^2-k_0i\vec k+i\vec kk_0-i^2\vec k^{\,2}=k_0^2+\vec k^{\,2}=k_0^2-\lvert\vec k\rvert^2=p^2,
+\tilde K^{\natural}\tilde K=k_{t}^{\prime\,2}-k_{t}^{\prime}i\vec k+i\vec kk_{t}^{\prime}-i^2\vec k^{\,2}=k_{t}^{\prime\,2}+\vec k^{\,2}=k_{t}^{\prime\,2}-\lvert\vec k\rvert^2=p^2,
 $$
 
-with the cross terms vanishing because $k_0$ is central and $\vec k$ is pure, and with the plus in front of $\vec k^{\,2}$ because the square of $i\vec k$ is $i^2\vec k^{\,2}=+\lvert\vec k\rvert^2$. On the mass shell $\tilde P_{\Phi}^{\natural}\tilde P_{\Phi}=-m^2$, so $\Box=m^2$ on the wave and the pair closes; the two branches then close the solution space, and no third condition is needed.
+with the cross terms vanishing because $k_{t}^{\prime}$ is central and $\vec k$ is pure, and with the plus in front of $\vec k^{\,2}$ because the square of $i\vec k$ is $i^2\vec k^{\,2}=+\lvert\vec k\rvert^2$. On the mass shell $\tilde P_{\Phi}^{\natural}\tilde P_{\Phi}=-m^2$, so $\Box=m^2$ on the wave and the pair closes; the two branches then close the solution space, and no third condition is needed.
 
 **No trace enters.** Each of the two sums is a product of elements and a scalar, and each of the two members is a left multiplication by an element. Neither line needs a trace, a basis or an index: the identity is an identity of the algebra, and the rank-two reading of its left side is the statement that the two helicity solutions span the part of value $R$.
 
@@ -331,7 +331,7 @@ $$
 \boxed{\;\tilde P_{\Phi}\tilde P_{\Phi}^{\natural}= -m^{2}\,c^{2}}.
 $$
 
-Equivalently, with $E=\frac{m\,c\,\omega}{k_m}$ and $\vec p=\frac{m\,c\,\vec k}{k_m}$, the norm is quadratic, so $\langle\tilde K_{\Phi}\rangle_{\natural}=\langle\tilde P_{\Phi}\rangle_{\natural}\frac{k_m^{2}}{m^{2}\,c^{2}}=-k_m^{2}$. The mass shell is not a new postulate: it is the statement that the four-wavevector is a timelike element of $\mathbb{B}_{\Phi}$ with the same quaternionic norm as the four-momentum. Here $k_m=mc/\hbar$ and $k_{\Phi}=\frac{k_m\,p}{m\,c}$ are the mass and momentum lengths.
+Equivalently, with $E=\frac{m\,c\,\omega}{k_m}$ and $\vec p=\frac{m\,c\,\vec k}{k_m}$, the norm is quadratic, so $\langle\tilde K_{\Phi}\rangle_{\natural}=\langle\tilde P_{\Phi}\rangle_{\natural}\frac{k_m^{2}}{m^{2}\,c^{2}}=-k_m^{2}$. The mass shell is not a new postulate: it is the statement that the four-wavevector is a timelike element of $\mathbb{B}_{\Phi}$ with the same quaternionic norm as the four-momentum. Here $k_m=mc/\hbar$ and $k_{\Phi}=\frac{k_m\,p}{m\,c}$ are the mass and momentum wave numbers.
 
 The two roots $\omega=\pm\sqrt{c^2\vec k^2+c^2k_m^{2}}$ are the two frequency branches, and they are the two families $\tilde w$ and $\tilde v$ constructed above; the two helicity values within each branch give the four-dimensional complex solution space. As a numerical check, for an electron ($mc^2=0.510998950\ \mathrm{MeV}$) at $\lvert\vec p\rvert=1\ \mathrm{MeV}/c$, the dispersion gives $E=1.122996\ \mathrm{MeV}$ and $E^2-\vec p^2c^2=0.261120\ \mathrm{MeV}^2=(mc^2)^2$; the wave biquaternion has $\langle\tilde K_{\Phi}\rangle_{\natural}=-6.706054\times10^{24}\ \mathrm{m}^{-2}$, agreeing with $-k_m^{2}$ to the digits shown.
 
@@ -407,8 +407,8 @@ Two objects are needed by the exercise and are not given in the parent: the nega
 | $\Box=\tilde\nabla\tilde\nabla^{\natural}=\tilde\nabla^{\natural}\tilde\nabla$ | The d'Alembertian, $\partial^2/\partial R_t^2+\Delta_Q$ |
 | $\tilde Q\mapsto-i\tilde Q\vec e_z$ | The action that reads the value; spectrum $+1,+1,-1,-1$ |
 | $\tilde{Ξ}_{\mathrm{sp}}=\tilde{Ξ}_{\mathrm{sp},L}+\tilde{Ξ}_{\mathrm{sp},R}$ | The Dirac field and its two parts, values $-1$ and $+1$ |
-| $\tilde P_{\Phi}=i k_0e_t+\vec k$ | Wave element of the plane wave, $k_0=E$, $\vec k=\vec p$ |
-| $\tilde K=k_0-i\vec k=-i\tilde P_{\Phi}$ | The same wave read by the gradient; $\tilde K^{\natural}\tilde K=p^2$ |
+| $\tilde P_{\Phi}=i p_{t}^{\prime}e_t+\vec p$ | Momentum element of the plane wave, $p_{t}^{\prime}=E/c$ |
+| $\tilde K=k_{t}^{\prime}-i\vec k=-i\tilde P_{\Phi}$ | The same wave read by the gradient; $\tilde K^{\natural}\tilde K=p^2$ |
 | $i\tilde P_{\Phi}\,\tilde{Ξ}_{\mathrm{sp},R}=m\tilde{Ξ}_{\mathrm{sp},L}$ and $i\tilde P_{\Phi}^{\natural}\tilde{Ξ}_{\mathrm{sp},L}=m\tilde{Ξ}_{\mathrm{sp},R}$ | The pair: the gradient and the mass, momentum space |
 | $\langle\tilde{Ξ}_{\mathrm{sp}},\tilde{Ξ}\rangle_{\mathrm D}=\mathrm{Tr}\bigl(\tilde{Ξ}_{\mathrm{sp}}^*\tilde{Ξ}\,i\vec e_x\bigr)$ | Dirac pairing, twisted by the timelike unit |
 | $\tilde Q_{\mathrm{disp}}=(e_t+\vec e_y)/\sqrt2$ | Change of the reading, $\vec e_z$ to $\vec e_x$ |

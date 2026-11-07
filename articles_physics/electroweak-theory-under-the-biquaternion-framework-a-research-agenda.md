@@ -153,15 +153,15 @@ $$
 
 and the massive equation stays the pair above. The second-order consequence is the d'Alembertian $\Box$ of *Operator and Calculus Conventions*, §*The Gradient*.
 
-The square of the gradient is not that operator. $e_t$ commutes with the three spatial units, so the mixed derivatives survive: on a plane wave, where the symbol of the gradient is $k_0e_t-i\vec k$ with $\vec k=\sum_k\vec e_kk_k$,
+The square of the gradient is not that operator. $e_t$ commutes with the three spatial units, so the mixed derivatives survive: on a plane wave, where the symbol of the gradient is $k_{t}^{\prime}e_t-i\vec k$ with $\vec k=\sum_k\vec e_kk_k$,
 
 $$
-(k_0e_t-i\vec k)^{2}=(k_0^{2}+\lvert\vec k\rvert^{2})e_t-2ik_0\vec k,
+(k_{t}^{\prime}e_t-i\vec k)^{2}=(k_{t}^{\prime\,2}{2}+\lvert\vec k\rvert^{2})e_t-2ik_{t}^{\prime}\vec k,
 \qquad
-(k_0e_t+i\vec k)(k_0e_t-i\vec k)=k_0^{2}-\lvert\vec k\rvert^{2},
+(k_{t}^{\prime}e_t+i\vec k)(k_{t}^{\prime}e_t-i\vec k)=k_{t}^{\prime\,2}{2}-\lvert\vec k\rvert^{2},
 $$
 
-the first carrying the vector part $-2ik_0\vec k$ — $(-4i,-6i,-8i)$ at $k_0=1$, $\vec k=(2,3,4)$ — and the second scalar. A one-field first-order massive equation would need a first-order operator with scalar square; the gradient has none, and the mass is therefore the chiral pair and not $\tilde\nabla\tilde{Ξ}_{\mathrm{sp}}=k_m\tilde{Ξ}_{\mathrm{sp}}$. The chirality is a right multiplier and neither member of the pair contains one, so it has no image under the left multiplication: it is a cell of the frame and a value of the subscript, not a term of the algebra's equation. The mass shell and the Klein–Gordon consequence are statements in the algebra, while chirality and the axial rotation are statements about the letters.
+the first carrying the vector part $-2ik_{t}^{\prime}\vec k$ — $(-4i,-6i,-8i)$ at $k_{t}^{\prime}=1$, $\vec k=(2,3,4)$ — and the second scalar. A one-field first-order massive equation would need a first-order operator with scalar square; the gradient has none, and the mass is therefore the chiral pair and not $\tilde\nabla\tilde{Ξ}_{\mathrm{sp}}=k_m\tilde{Ξ}_{\mathrm{sp}}$. The chirality is a right multiplier and neither member of the pair contains one, so it has no image under the left multiplication: it is a cell of the frame and a value of the subscript, not a term of the algebra's equation. The mass shell and the Klein–Gordon consequence are statements in the algebra, while chirality and the axial rotation are statements about the letters.
 
 **The axial current.** The mass is complex-linear in the field, so the continuous central phase passes through it and the vector $\mathrm{U}(1)$ — fermion number — is conserved for the massive field. What the mass breaks is the axial symmetry. The axial current is
 

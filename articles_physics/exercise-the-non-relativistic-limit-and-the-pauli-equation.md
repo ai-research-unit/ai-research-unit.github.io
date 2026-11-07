@@ -50,14 +50,14 @@ $$
 \sum_k\vec e_k\pi_k=-\frac{m\,c\,i\,D_{3}^{A}}{k_m},
 $$
 
-with $\pi_k=p_k-qA_k$ and $D_3^A=\sum_k\vec e_k(\partial/\partial r_k-\frac{k_m\,iqA_{k}}{m\,c})$ the pure part of the gauged gradient. The corpus names this family $\tilde\nabla_{\mathrm{gco}}$ in *The Covariant Derivative and the Gauge Connection in Biquaternionic Form*, where the potential is written $i\,a'_t\,e_t+\vec A$; the exercise keeps its own $\tilde A_{\Phi}=Ξ e_t-\vec A$ and writes the operator out rather than borrowing the name. A plane wave $\exp\!\bigl(i(k_0x_0-\vec k\cdot\vec q)\bigr)$, with $x_0=r'_{t}$, replaces the gradient by the element
+with $\pi_k=p_k-qA_k$ and $D_3^A=\sum_k\vec e_k(\partial/\partial r_k-\frac{k_m\,iqA_{k}}{m\,c})$ the pure part of the gauged gradient. The corpus names this family $\tilde\nabla_{\mathrm{gco}}$ in *The Covariant Derivative and the Gauge Connection in Biquaternionic Form*, where the potential is written $i\,a'_t\,e_t+\vec A$; the exercise keeps its own $\tilde A_{\Phi}=Ξ e_t-\vec A$ and writes the operator out rather than borrowing the name. A plane wave $\exp\!\bigl(i(k_{t}^{\prime}x_0-\vec k\cdot\vec q)\bigr)$, with $x_0=r'_{t}$, replaces the gradient by the element
 
 $$
-\tilde K=k_0-i\vec k,
+\tilde K=k_{t}^{\prime}-i\vec k,
 \qquad
 \tilde Kf=0\ \text{on the light cone},
 \qquad
-\tilde K^{\natural}\tilde K=k_0^2-\lvert\vec k\rvert^2 .
+\tilde K^{\natural}\tilde K=k_{t}^{\prime\,2}-\lvert\vec k\rvert^2 .
 $$
 
 **What the gradient can do, and what it cannot.** The massless equation is one first-order equation in one field,
@@ -549,7 +549,7 @@ Every term of the reduced Hamiltonian is Hermitian and therefore lies in $\mathb
 | $\Box=\tilde\nabla\tilde\nabla^{\natural}$ | The d'Alembertian |
 | $D_3=\sum_k\vec e_k\partial/\partial r_k$, $D_3^A$ | Pure part of the gradient, free and gauged |
 | $\tilde\nabla-\frac{k_m\,i\,q\,\tilde{A}_{\Phi}}{m\,c}$, $\tilde A_{\Phi}=Ξ e_t-\vec A$ | The gauged gradient; minimal substitution |
-| $\tilde K=k_0-i\vec k$ | Symbol of the gradient on a plane wave; $\tilde K^{\natural}\tilde K=k_0^2-\lvert\vec k\rvert^2$ |
+| $\tilde K=k_{t}^{\prime}-i\vec k$ | Symbol of the gradient on a plane wave; $\tilde K^{\natural}\tilde K=k_{t}^{\prime\,2}-\lvert\vec k\rvert^2$ |
 | $F=F_L+F_R$; $\Gamma F=-iF\vec e_z$ | The field and its chirality, values $\mp1$ |
 | $\beta F=iF\vec e_x$, $\beta^2=1$, $\beta\Gamma=-\Gamma\beta$ | The mass grading; $\beta O=-O\beta$ |
 | $O=c\sum_k\vec e_k\pi_k(\cdot)\vec e_y=-\frac{m\,c^{2}\,i\,D_{3}^{A}\,\vec e_{y}}{k_m}$ | The odd operator; $O^2=c^2(\vec\pi^2-\frac{m\,c\,i\,q\,\vec B}{k_m})$ |

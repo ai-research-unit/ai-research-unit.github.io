@@ -255,7 +255,7 @@ The standard minimum-uncertainty packet is the Gaussian. In one dimension, take 
 
 $$
 Ξ_0(x) = \left(\frac{1}{2\pi s_0^2}\right)^{1/4}
-\exp\!\left(-\frac{x^2}{4s_0^2} + ik_0 x\right),
+\exp\!\left(-\frac{x^2}{4s_0^2} + ik_{t}^{\prime} x\right),
 \qquad
 |Ξ_0(x)|^2 = \frac{1}{\sqrt{2\pi}\,s_0}\exp\!\left(-\frac{x^2}{2s_0^2}\right),
 $$
@@ -264,7 +264,7 @@ so that $s_0$ is the **density width** (the standard deviation of $|Ξ_0|^2$) an
 
 $$
 Ξ(r_x,r'_t) = \frac{(2\pi s_0^2)^{-1/4}}{\sqrt{A(r'_t)}}\,
-\exp\!\left[-\frac{(r_x - v_0 r'_t)^2}{4s_0^2 A(r'_t)} + ik_0r_x - \frac{i c k_0^2 r'_t}{2\,k_m}\right],
+\exp\!\left[-\frac{(r_x - v_0 r'_t)^2}{4s_0^2 A(r'_t)} + ik_{t}^{\prime}r_x - \frac{i c k_{t}^{\prime\,2} r'_t}{2\,k_m}\right],
 \qquad
 A(r'_t) = 1 + \frac{i r'_t}{2s_0^2\,k_m},
 \qquad
@@ -306,7 +306,7 @@ $$
 (r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z) = c\,\vec k/k_mr'_t = \vec v_g r'_t .
 $$
 
-The stationary wave vector is the one whose group velocity carries it to the observation point, so the stationary phase is the **classical free trajectory**: the packet centre moves uniformly at $\vec v_g = \vec p/m$. This is the free-particle case of the general semiclassical statement that the phase of the wave function at a point is the classical action accumulated along the trajectory reaching it. For a packet of mean momentum $\frac{m\,c\,k_{0}}{k_m}$, the phase at the centre is $\frac{c\,k_{0}^{2}\,r'_{t}}{2\,k_m}$ up to the $ik_0x$ term, which is the classical action $S_{\mathrm{cl}} = p_0^2r'_t/2m$; the exact Gaussian envelope above carries precisely this phase, as the term $-\frac{c\,i\,k_{0}^{2}\,r'_{t}}{2\,k_m}$ in $Ξ(r_x,r'_t)$ shows.
+The stationary wave vector is the one whose group velocity carries it to the observation point, so the stationary phase is the **classical free trajectory**: the packet centre moves uniformly at $\vec v_g = \vec p/m$. This is the free-particle case of the general semiclassical statement that the phase of the wave function at a point is the classical action accumulated along the trajectory reaching it. For a packet of mean momentum $\frac{m\,c\,k_{0}}{k_m}$, the phase at the centre is $\frac{c\,k_{0}^{2}\,r'_{t}}{2\,k_m}$ up to the $ik_{t}^{\prime}x$ term, which is the classical action $S_{\mathrm{cl}} = p_0^2r'_t/2m$; the exact Gaussian envelope above carries precisely this phase, as the term $-\frac{c\,i\,k_{0}^{2}\,r'_{t}}{2\,k_m}$ in $Ξ(r_x,r'_t)$ shows.
 
 ## The Free Propagator
 

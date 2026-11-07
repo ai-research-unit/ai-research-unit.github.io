@@ -71,19 +71,19 @@ The spinor $\tilde{Ξ}_{\mathrm{sp}}$ is an element of the biquaternion algebra 
 The free equation $\tilde\nabla\tilde F=0$ is solved by the plane wave
 
 $$
-\tilde F = f\,\exp(i\theta_{\mathrm{pha}}),\qquad \theta_{\mathrm{pha}}=k_0x_0-\vec k\cdot\vec q ,
+\tilde F = f\,\exp(i\theta_{\mathrm{pha}}),\qquad \theta_{\mathrm{pha}}=k_{t}^{\prime}x_0-\vec k\cdot\vec q ,
 $$
 
 with $f$ a constant element and $k$ the propagation vector. The gradient acts on the phase through the symbol
 
 $$
-\tilde K=k_0-i\vec k,\qquad \vec k=\sum_k\vec e_k k_k ,
+\tilde K=k_{t}^{\prime}-i\vec k,\qquad \vec k=\sum_k\vec e_k k_k ,
 $$
 
-so the equation is $\tilde Kf=0$. Applying $\tilde K^{\natural}$ on the left gives $\tilde K^{\natural}\tilde Kf=(k_0^2-|\vec k|^2)f=0$, and the propagation vector is **null**,
+so the equation is $\tilde Kf=0$. Applying $\tilde K^{\natural}$ on the left gives $\tilde K^{\natural}\tilde Kf=(k_{t}^{\prime\,2}-|\vec k|^2)f=0$, and the propagation vector is **null**,
 
 $$
-k^2=0\quad\Longleftrightarrow\quad k_0=\pm|\vec k| .
+k^2=0\quad\Longleftrightarrow\quad k_{t}^{\prime}=\pm|\vec k| .
 $$
 
 The condition $\tilde Kf=0$ is four independent complex conditions on the six complex components of $f$. On a null $k$ its kernel is two-dimensional, the two polarizations, and on the whole kernel $f^2=0$: the plane wave has **null invariants**. The step is not a cancellation, because a null $\tilde K$ has no inverse; it is the rank of left multiplication by a null element. Checked on the six components for several null $k$, the kernel is two-dimensional and $f^2=0$ on it. The invariant $\tilde F^2=f^2\exp(2i\theta_{\mathrm{pha}})$ vanishes with it.

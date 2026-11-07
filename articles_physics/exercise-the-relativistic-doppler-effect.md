@@ -18,7 +18,7 @@ Throughout, $c = 1/\sqrt{\epsilon\mu}$ is the speed of light in the medium and $
 
 **What is to be shown.** The problems are: (1) the four-wavevector, its null biquaternion norm, its invariant phase, and an invariant expression for the frequency an observer measures; (2) the boost of the four-wavevector and the general Doppler formula; (3) the longitudinal case; (4) the transverse case — which is in fact *two* inequivalent cases; (5) aberration and the forward cone; (6) a numerical instance and the non-relativistic limit. Each problem is stated and then solved in full; the value of an exercise article is in the solutions.
 
-**Notation for the problem.** A **source** is at rest in the *source frame* and emits monochromatic plane light of angular frequency $\omega_0$ and wavevector $\vec k_0 = (\omega_0/c)\vec {u_k}_0$. An **observer** is at rest in the *observer frame*, which moves with constant velocity $\vec v_b$ relative to the source frame; $v_b = |\vec v_b|$, $\beta = v_b/c$, $\gamma = (1-\beta^2)^{-1/2}$. The angle $\theta$ is measured **in the source frame** between $\vec v_b$ and the propagation direction $\vec {u_k}_0$. Quantities with subscript $2$ refer to the observer frame, $\mathcal O_2$. A receding observer has $\theta = 0$; an approaching one has $\theta = \pi$.
+**Notation for the problem.** A **source** is at rest in the *source frame* and emits monochromatic plane light of angular frequency $\omega_0$ and wavevector $\vec k_{t}^{\prime} = (\omega_0/c)\vec {u_k}_0$. An **observer** is at rest in the *observer frame*, which moves with constant velocity $\vec v_b$ relative to the source frame; $v_b = |\vec v_b|$, $\beta = v_b/c$, $\gamma = (1-\beta^2)^{-1/2}$. The angle $\theta$ is measured **in the source frame** between $\vec v_b$ and the propagation direction $\vec {u_k}_0$. Quantities with subscript $2$ refer to the observer frame, $\mathcal O_2$. A receding observer has $\theta = 0$; an approaching one has $\theta = \pi$.
 
 ## Problem 1: The Four-Wavevector, the Phase, and the Frequency Invariant
 
@@ -82,11 +82,11 @@ $$
 which is the frequency that frame assigns to the wave. In the source frame the same observer has four-velocity $\tilde{V}_{\Phi} = \gamma(ic\,e_t + \vec v_b)$ with $\tilde{V}_{\Phi}^{\natural} = \gamma(ic\,e_t - \vec v_b)$, and
 $$
 \mathrm{Sc}\!\left(\tilde P_{\Phi}\tilde{V}_{\Phi}^{\natural}\right)
-= \left(\frac{i\omega_0}{c}\right)(\gamma ic) - \vec k_0\cdot(-\gamma\vec v_b)
-= -\gamma\omega_0 + \gamma\vec k_0\cdot\vec v_b
+= \left(\frac{i\omega_0}{c}\right)(\gamma ic) - \vec k_{t}^{\prime}\cdot(-\gamma\vec v_b)
+= -\gamma\omega_0 + \gamma\vec k_{t}^{\prime}\cdot\vec v_b
 = -\gamma\omega_0\left(1 - \beta\cos\theta\right),
 $$
-using $\vec k_0\cdot\vec v_b = (\omega_0/c)v_b\cos\theta = \omega_0\beta\cos\theta$. Therefore
+using $\vec k_{t}^{\prime}\cdot\vec v_b = (\omega_0/c)v_b\cos\theta = \omega_0\beta\cos\theta$. Therefore
 $$
 \boxed{\;\omega_{\mathrm{obs}} = -\,\mathrm{Sc}\!\left(\tilde P_{\Phi}\tilde{V}_{\Phi}^{\natural}\right)
 = \gamma\,\omega_0\left(1 - \beta\cos\theta\right)\;}
@@ -134,7 +134,7 @@ $$
 $$
 since the scalar part of $\vec A\vec u$ is $-\vec A\cdot\vec u = -A_\parallel$. This is the first of the component equations; the remaining two are obtained from the same multiplication and reproduce the standard Lorentz boost.
 
-**Solution (b).** Apply the component action with $a = \omega_0/c$ and $\vec A = \vec k_0 = (\omega_0/c)\vec {u_k}_0$. With $A_\parallel = (\omega_0/c)\cos\theta$,
+**Solution (b).** Apply the component action with $a = \omega_0/c$ and $\vec A = \vec k_{t}^{\prime} = (\omega_0/c)\vec {u_k}_0$. With $A_\parallel = (\omega_0/c)\cos\theta$,
 $$
 \frac{\omega_2}{c} = \gamma\left(\frac{\omega_0}{c} - \beta\frac{\omega_0}{c}\cos\theta\right)
 \quad\Longrightarrow\quad

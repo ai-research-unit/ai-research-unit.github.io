@@ -404,10 +404,10 @@ The naturality of the envelope is an open question of the corpus, not a result. 
 
 A Dirac symbol in chiral form splits into two parts, one per value of the chirality, and the parts are carried into each other by the adjoint.
 
-At a node $k_0$ both parts vanish, and near it the part is linear in the displacement. In two dimensions,
+At a node $k_{t}^{\prime}$ both parts vanish, and near it the part is linear in the displacement. In two dimensions,
 
 $$
-h(k_0+\delta k)\approx c_1\,\delta k_x+c_2\,\delta k_y,
+h(k_{t}^{\prime}+\delta k)\approx c_1\,\delta k_x+c_2\,\delta k_y,
 $$
 
 with $c_1^2=c_2^2=I$ and $c_1c_2+c_2c_1=0$, where $I$ is the identity of the space the part acts on. The square is then the quadratic form, $h^2=(\delta k_x^2+\delta k_y^2)I$, and the two combinations
