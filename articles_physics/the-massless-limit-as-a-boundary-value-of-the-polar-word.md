@@ -7,9 +7,9 @@ The polar word is a parametrization of the group of units: every biquaternion of
 This article owns that limit. It states the boundary value of the four-factor word along a path of infinite rapidity, identifies the two strata on which the limit can land, and records what the limit does and does not inherit from the massive element. The boundary theorem, the two strata and the exponential convergence are those of *Exponential Polar Decomposition of Biquaternions*. The stratum table and the element-level reading of the cone are those of *The Zero-Divisor Cone and the Massless Spectrum* and *The Exponential Word and Its Boundary*. What is added here is the massless question: which massive family has which boundary value, where the mass enters, and why the answer is a boundary value rather than a value.
 
 $$
-\tilde Q=r\,e^{i\alpha}\,\tilde U_{\mathrm b}\,\tilde u_{\mathrm r},
+\tilde Q=r\,e^{i\alpha}\,\tilde U_{\Psi,\mathrm b}\,\tilde u_{\mathrm r},
 \qquad
-\tilde U_{\mathrm b}=\exp\left(i\frac{\theta_{\mathrm{rpd}}}{2}\vec u_{\mathrm b}\right),
+\tilde U_{\Psi,\mathrm b}=\exp\left(i\frac{\theta_{\mathrm{rpd}}}{2}\vec u_{\mathrm b}\right),
 \qquad
 \tilde u_{\mathrm r}=\exp\left(\frac{\theta}{2}\vec u_{\mathrm r}\right),
 $$
@@ -17,14 +17,14 @@ $$
 with $r>0$, $\alpha\in(-\pi/2,\pi/2]$, $\theta_{\mathrm{rpd}}\ge0$, $\theta\in[0,2\pi]$, and $\vec u_{\mathrm b},\vec u_{\mathrm r}$ unit real pure quaternions. The norm is $\langle\tilde Q\rangle_{\natural}=\sum_\mu Q_\mu^2$, and the element is a unit exactly when $r\neq0$. The material four-momentum is
 
 $$
-\tilde P=i\frac{E}{c}e_t+\vec p,
+\tilde P_{\Phi}=i\frac{E}{c}e_t+\vec p,
 \qquad
 E=mc^2\cosh\theta_{\mathrm{rpd}},
 \qquad
 \lvert\vec p\rvert=mc\sinh\theta_{\mathrm{rpd}},
 $$
 
-with $\vec u_p=\vec p/\lvert\vec p\rvert$ and $\langle\tilde P\rangle_{\natural}=-m^2c^2$.
+with $\vec u_p=\vec p/\lvert\vec p\rvert$ and $\langle\tilde P_{\Phi}\rangle_{\natural}=-m^2c^2$.
 
 ## The Results It Uses
 
@@ -46,7 +46,7 @@ The four factors carry the eight real parameters of the algebra.
 | --- | --- | --- | --- | --- | --- |
 | 1 | $r$ | scale | — | $r>0$ | $1$ |
 | 2 | $e^{i\alpha}$ | central phase | $i\alpha$ | $\alpha\in(-\pi/2,\pi/2]$ | $1$ |
-| 3 | $\tilde U_{\mathrm b}$ | boost | $i\frac{\theta_{\mathrm{rpd}}}{2}\vec u_{\mathrm b}$ | $\theta_{\mathrm{rpd}}\ge0$ | $3$ |
+| 3 | $\tilde U_{\Psi,\mathrm b}$ | boost | $i\frac{\theta_{\mathrm{rpd}}}{2}\vec u_{\mathrm b}$ | $\theta_{\mathrm{rpd}}\ge0$ | $3$ |
 | 4 | $\tilde u_{\mathrm r}$ | rotor | $\frac{\theta}{2}\vec u_{\mathrm r}$ | $\theta\in[0,2\pi]$ | $3$ |
 
 The norm of the word is
@@ -60,7 +60,7 @@ so the cone is the locus $r=0$ and the mass shell is the level set $r^2e^{2i\alp
 The boost grows with the rapidity,
 
 $$
-\tilde U_{\mathrm b}=\cosh\frac{\theta_{\mathrm{rpd}}}{2}\,e_t+i\sinh\frac{\theta_{\mathrm{rpd}}}{2}\,\vec u_{\mathrm b}
+\tilde U_{\Psi,\mathrm b}=\cosh\frac{\theta_{\mathrm{rpd}}}{2}\,e_t+i\sinh\frac{\theta_{\mathrm{rpd}}}{2}\,\vec u_{\mathrm b}
 =\frac{e^{\theta_{\mathrm{rpd}}/2}}{2}\left(e_t+i\vec u_{\mathrm b}\right)
 +\frac{e^{-\theta_{\mathrm{rpd}}/2}}{2}\left(e_t-i\vec u_{\mathrm b}\right),
 $$
@@ -72,7 +72,7 @@ so a collapsing scale and a diverging rapidity can compensate. That compensation
 Take a unit complex number $\varkappa_{\mathrm{phs}}$, a positive real $R$, and the family
 
 $$
-\tilde Q(\theta_{\mathrm{rpd}})=R\,e^{-\theta_{\mathrm{rpd}}/2}\,\varkappa_{\mathrm{phs}}\,\tilde U_{\mathrm b}(\vec u_{\mathrm b})\,\tilde u_{\mathrm r},
+\tilde Q(\theta_{\mathrm{rpd}})=R\,e^{-\theta_{\mathrm{rpd}}/2}\,\varkappa_{\mathrm{phs}}\,\tilde U_{\Psi,\mathrm b}(\vec u_{\mathrm b})\,\tilde u_{\mathrm r},
 \qquad
 \theta_{\mathrm{rpd}}>0.
 $$
@@ -170,13 +170,13 @@ r=mc,
 \theta_{\mathrm{rpd},w}=2\theta_{\mathrm{rpd}},
 $$
 
-where $\theta_{\mathrm{rpd}}$ is the rapidity of the momentum and $\theta_{\mathrm{rpd},w}$ is the rapidity parameter of the word. The factor two is the difference between multiplying once and acting twice: the word multiplies the element once, while the Lorentz boost carries the rest momentum $\tilde P_0=imc\,e_t$ to $\tilde P$ through the half-angle rotor $\tilde U_{\mathrm b}(\theta_{\mathrm{rpd}})$, $\tilde P=\tilde U_{\mathrm b}(\theta_{\mathrm{rpd}})\tilde P_0\tilde U_{\mathrm b}(\theta_{\mathrm{rpd}})^{*}=\tilde U_{\mathrm b}(\theta_{\mathrm{rpd}})^{2}\tilde P_0$. The word's boost factor is that square, $\tilde U_{\mathrm b}(\theta_{\mathrm{rpd},w})=\tilde U_{\mathrm b}(\theta_{\mathrm{rpd}})^{2}$, so $\theta_{\mathrm{rpd},w}=2\theta_{\mathrm{rpd}}$. With these data,
+where $\theta_{\mathrm{rpd}}$ is the rapidity of the momentum and $\theta_{\mathrm{rpd},w}$ is the rapidity parameter of the word. The factor two is the difference between multiplying once and acting twice: the word multiplies the element once, while the Lorentz boost carries the rest momentum $\tilde P_{\Phi,0}=imc\,e_t$ to $\tilde P_{\Phi}$ through the half-angle rotor $\tilde U_{\Psi,\mathrm b}(\theta_{\mathrm{rpd}})$, $\tilde P_{\Phi}=\tilde U_{\Psi,\mathrm b}(\theta_{\mathrm{rpd}})\tilde P_{\Phi,0}\tilde U_{\Psi,\mathrm b}(\theta_{\mathrm{rpd}})^{*}=\tilde U_{\Psi,\mathrm b}(\theta_{\mathrm{rpd}})^{2}\tilde P_{\Phi,0}$. The word's boost factor is that square, $\tilde U_{\Psi,\mathrm b}(\theta_{\mathrm{rpd},w})=\tilde U_{\Psi,\mathrm b}(\theta_{\mathrm{rpd}})^{2}$, so $\theta_{\mathrm{rpd},w}=2\theta_{\mathrm{rpd}}$. With these data,
 
 $$
-r\varkappa_{\mathrm{phs}}\,\tilde U_{\mathrm b}(\theta_{\mathrm{rpd},w})\tilde u_{\mathrm r}
+r\varkappa_{\mathrm{phs}}\,\tilde U_{\Psi,\mathrm b}(\theta_{\mathrm{rpd},w})\tilde u_{\mathrm r}
 =imc\left(\cosh\theta_{\mathrm{rpd}}\,e_t-i\sinh\theta_{\mathrm{rpd}}\,\vec u_p\right)
 =i\frac{E}{c}e_t+\vec p
-=\tilde P.
+=\tilde P_{\Phi}.
 $$
 
 The rate of the family is
@@ -200,14 +200,14 @@ with $\tilde\Pi(-\vec u_p)=\tfrac12(e_t-i\vec u_p)$ the Hermitian minimal idempo
 
 | Quantity | Massive | Massless limit |
 | --- | --- | --- |
-| element | $\tilde P$, a unit | $L$, a rank-one null element |
+| element | $\tilde P_{\Phi}$, a unit | $L$, a rank-one null element |
 | norm | $-m^2c^2$ | $0$ |
 | scale | $r=mc$ | $0$ |
 | rapidity | $\theta_{\mathrm{rpd}}<\infty$ | $+\infty$ |
 | rest frame | exists at $\theta_{\mathrm{rpd}}=0$ | does not exist |
 | logarithm | exists | does not exist |
 
-**The defect is of order $m^2$.** The approach to the boundary is $O(e^{-2\theta_{\mathrm{rpd}}})=O(m^2c^4/E^2)$ at fixed energy. The massive momentum itself carries the same order in its algebraic defect, $\tilde P^2=2P_t\tilde P+m^2c^2e_t$, so the massless relation $\tilde P^2=2P_t\tilde P$ is the boundary identity and the mass term is the defect. The two statements are of the same order in the mass; they are not the same statement, one being a defect of the element and the other a defect of the path.
+**The defect is of order $m^2$.** The approach to the boundary is $O(e^{-2\theta_{\mathrm{rpd}}})=O(m^2c^4/E^2)$ at fixed energy. The massive momentum itself carries the same order in its algebraic defect, $\tilde P_{\Phi}^2=2P_t\tilde P_{\Phi}+m^2c^2e_t$, so the massless relation $\tilde P_{\Phi}^2=2P_t\tilde P_{\Phi}$ is the boundary identity and the mass term is the defect. The two statements are of the same order in the mass; they are not the same statement, one being a defect of the element and the other a defect of the path.
 
 **The idempotent stratum is larger than the null momenta.** A general boundary value in the first row of the stratum table is a complex multiple of a minimal idempotent, not necessarily a Hermitian one. The physical null momenta are the anti-Hermitian slice of that stratum: for the Hermitian representative, $L^{*}=-L$ requires $\tau$ purely imaginary, which the data above satisfy. The identification of the stratum with the photon is therefore an identification of one slice, not of the whole stratum.
 
@@ -289,15 +289,15 @@ For the material momentum the data are $r=mc$, $\varkappa_{\mathrm{phs}}=i$, $\v
 
 | Symbol | Meaning |
 | --- | --- |
-| $\tilde Q=r e^{i\alpha}\tilde U_{\mathrm b}\tilde u_{\mathrm r}$ | the polar word |
+| $\tilde Q=r e^{i\alpha}\tilde U_{\Psi,\mathrm b}\tilde u_{\mathrm r}$ | the polar word |
 | $r>0$, $\varkappa_{\mathrm{phs}}=e^{i\alpha}$ | the scale and the central phase |
-| $\tilde U_{\mathrm b}=e^{i\theta_{\mathrm{rpd}}\vec u_{\mathrm b}/2}$ | the boost factor at word rapidity $\theta_{\mathrm{rpd}}$ and axis $\vec u_{\mathrm b}$ |
+| $\tilde U_{\Psi,\mathrm b}=e^{i\theta_{\mathrm{rpd}}\vec u_{\mathrm b}/2}$ | the boost factor at word rapidity $\theta_{\mathrm{rpd}}$ and axis $\vec u_{\mathrm b}$ |
 | $\tilde u_{\mathrm r}=e^{\theta\vec u_{\mathrm r}/2}$ | the rotor of angle $\theta$ |
 | $\langle\tilde Q\rangle_{\natural}=\sum_\mu Q_\mu^2$ | the biquaternion norm |
 | $L=\frac{R\varkappa_{\mathrm{phs}}}{2}(e_t+i\vec u_{\mathrm b})\tilde u_{\mathrm r}$ | the boundary value |
 | $\tilde u_{\mathrm r}=a e_t+b\vec u_{\mathrm b}+\tilde u_\perp$ | the rotor in the frame of the boost |
 | $\tau=2\operatorname{Sc}L=R\varkappa_{\mathrm{phs}}(a-ib)$ | the scale of the idempotent, $L^2=\tau L$ |
-| $\tilde P=i\frac{E}{c}e_t+\vec p$ | the material four-momentum |
+| $\tilde P_{\Phi}=i\frac{E}{c}e_t+\vec p$ | the material four-momentum |
 | $\tilde\Pi(-\vec u_p)=\tfrac12(e_t-i\vec u_p)$ | the Hermitian minimal idempotent opposite the motion |
 | $\theta_{\mathrm{rpd},w}=2\theta_{\mathrm{rpd}}$ | the word rapidity of the momentum against its Lorentz rapidity |
 

@@ -24,7 +24,7 @@ For a quantum system with Hamiltonian $\tilde R_\Psi$ at inverse temperature $\b
 
 $$
 Z(\beta)=2\,\mathrm{Sc}\big(\exp(-\beta H)\big),\qquad
-\tilde{Ϛ}=\frac{1}{Z}\,\exp(-\beta H),
+\tilde{Ϛ}_{\Psi}=\frac{1}{Z}\,\exp(-\beta H),
 $$
 
 with the trace reading $\operatorname{Tr}(\exp(-\beta H))=2\,\mathrm{Sc}(\exp(-\beta H))$ taken at normalisation.
@@ -33,11 +33,11 @@ The standard derived quantities are the free energy, the internal energy, and th
 
 $$
 F=-\frac{1}{\beta}\log Z,\qquad
-E=-\frac{\partial \log Z}{\partial \beta}=\frac{\langle\tilde{Ϛ},\tilde R_\Psi\rangle_{*}}{\langle\tilde{Ϛ},e_t\rangle_{*}}=2\,\mathrm{Sc}(\tilde{Ϛ}\,\tilde R_\Psi^{*}),\qquad
-S=-2\,\mathrm{Sc}(\tilde{Ϛ}\log\tilde{Ϛ}),
+E=-\frac{\partial \log Z}{\partial \beta}=\frac{\langle\tilde{Ϛ}_{\Psi},\tilde R_\Psi\rangle_{*}}{\langle\tilde{Ϛ}_{\Psi},e_t\rangle_{*}}=2\,\mathrm{Sc}(\tilde{Ϛ}_{\Psi}\,\tilde R_\Psi^{*}),\qquad
+S=-2\,\mathrm{Sc}(\tilde{Ϛ}_{\Psi}\log\tilde{Ϛ}_{\Psi}),
 $$
 
-and the expectation value of any observable $\tilde{R}_{\Psi,3}$ is $\langle\tilde{R}_{\Psi,3}\rangle=\langle\tilde{Ϛ},\tilde{R}_{\Psi,3}\rangle_{*}/\langle\tilde{Ϛ},e_t\rangle_{*}=\mathrm{Sc}(\tilde{Ϛ}\tilde{R}_{\Psi,3}^{*})/\mathrm{Sc}(\tilde{Ϛ})$, whose trace reading at normalisation is $\operatorname{Tr}(\tilde{Ϛ}\tilde{R}_{\Psi,3}^{*})=\operatorname{Tr}(\tilde{Ϛ}\tilde{R}_{\Psi,3})$, the star being inert on $\mathbb{B}_{\Psi}$ and the unstarred trace real; it is non-negative when $\tilde{R}_{\Psi,3}\ge0$.
+and the expectation value of any observable $\tilde{R}_{\Psi,3}$ is $\langle\tilde{R}_{\Psi,3}\rangle=\langle\tilde{Ϛ}_{\Psi},\tilde{R}_{\Psi,3}\rangle_{*}/\langle\tilde{Ϛ}_{\Psi},e_t\rangle_{*}=\mathrm{Sc}(\tilde{Ϛ}_{\Psi}\tilde{R}_{\Psi,3}^{*})/\mathrm{Sc}(\tilde{Ϛ}_{\Psi})$, whose trace reading at normalisation is $\operatorname{Tr}(\tilde{Ϛ}_{\Psi}\tilde{R}_{\Psi,3}^{*})=\operatorname{Tr}(\tilde{Ϛ}_{\Psi}\tilde{R}_{\Psi,3})$, the star being inert on $\mathbb{B}_{\Psi}$ and the unstarred trace real; it is non-negative when $\tilde{R}_{\Psi,3}\ge0$.
 
 Two elementary facts about $Z$ govern everything below. First, **$Z$ depends only on the spectrum of $\tilde R_\Psi$**: if $\tilde R_\Psi$ has eigenvalues $E_n$, then $Z=\sum_n \exp(-\beta E_n)$. Equivalently, it is invariant under any $*$-unitary change of basis. These are not features of the biquaternion framework; they are features of the trace, and the framework inherits them.
 
@@ -103,7 +103,7 @@ $$
 \qquad \vec u_\Psi=\frac{\vec r_\Psi}{|\vec r_\Psi|}\;}.
 $$
 
-This is the **thermal operator**. It is Hermitian, since $\tilde R_\Psi^{*}=\tilde R_\Psi$ implies $(\exp(-\beta H))^\dagger=\exp(-\beta H)$, so it is an element of $\mathbb{B}_{\Psi}$: its scalar part is real and its vector part is imaginary. Equivalently, it is $\exp(-\beta c r_t)$ times the unit-norm element $\tilde U_{\mathrm b}=\cosh(\beta|\vec r_\Psi|)e_t-i\sinh(\beta|\vec r_\Psi|)\vec u_\Psi$, which is a **boost biquaternion** in $\mathbb{B}_{\Psi}$ — the natural home of boosts, as the companion article on $\mathbb{B}_{\Psi}$ records. The boost rapidity is $2\beta|\vec r_\Psi|$ in the parametrization $\tilde U_{\mathrm b}=\cosh(\theta_{\mathrm{rpd}}/2)+i\sinh(\theta_{\mathrm{rpd}}/2)\vec u$, with $\vec u=-\vec u_\Psi$.
+This is the **thermal operator**. It is Hermitian, since $\tilde R_\Psi^{*}=\tilde R_\Psi$ implies $(\exp(-\beta H))^\dagger=\exp(-\beta H)$, so it is an element of $\mathbb{B}_{\Psi}$: its scalar part is real and its vector part is imaginary. Equivalently, it is $\exp(-\beta c r_t)$ times the unit-norm element $\tilde U_{\Psi,\mathrm b}=\cosh(\beta|\vec r_\Psi|)e_t-i\sinh(\beta|\vec r_\Psi|)\vec u_\Psi$, which is a **boost biquaternion** in $\mathbb{B}_{\Psi}$ — the natural home of boosts, as the companion article on $\mathbb{B}_{\Psi}$ records. The boost rapidity is $2\beta|\vec r_\Psi|$ in the parametrization $\tilde U_{\Psi,\mathrm b}=\cosh(\theta_{\mathrm{rpd}}/2)+i\sinh(\theta_{\mathrm{rpd}}/2)\vec u$, with $\vec u=-\vec u_\Psi$.
 
 Applying the Hermitian form, with its trace reading at normalisation, to $\tilde{R}_{\Psi,1}=e_t$ (the identity, which lies in $\mathbb{B}_{\Psi}$) and $\tilde{R}_{\Psi,2}=\exp(-\beta H)$, which also lies in $\mathbb{B}_{\Psi}$,
 
@@ -117,21 +117,21 @@ $$
 \exp(-\beta c r_t)\big(\exp(-\beta|\vec r_\Psi|)+\exp(+\beta|\vec r_\Psi|)\big)=2\exp(-\beta c r_t)\cosh(\beta|\vec r_\Psi|).
 $$
 
-The two expressions agree because the eigenvalues of $\tilde R_\Psi=c r_t\,e_t+i\vec r_\Psi$ are $c r_t\pm|\vec r_\Psi|$, in accordance with the matrix identification $\tilde R_\Psi\mapsto c r_t\,I+\vec r_\Psi\cdot\boldsymbol\sigma$. The state is $\tilde{Ϛ}=\exp(-\beta H)/Z$, whose scalar part is $\mathrm{Sc}(\tilde{Ϛ})=\tfrac12$, so it has the Bloch form
+The two expressions agree because the eigenvalues of $\tilde R_\Psi=c r_t\,e_t+i\vec r_\Psi$ are $c r_t\pm|\vec r_\Psi|$, in accordance with the matrix identification $\tilde R_\Psi\mapsto c r_t\,I+\vec r_\Psi\cdot\boldsymbol\sigma$. The state is $\tilde{Ϛ}_{\Psi}=\exp(-\beta H)/Z$, whose scalar part is $\mathrm{Sc}(\tilde{Ϛ}_{\Psi})=\tfrac12$, so it has the Bloch form
 
 $$
-\tilde{Ϛ}=\tfrac12\big(e_t+i\vec r\big),\qquad \vec r=-\tanh(\beta|\vec r_\Psi|)\,\vec u_\Psi,\qquad |\vec r|=\tanh(\beta|\vec r_\Psi|)\le 1.
+\tilde{Ϛ}_{\Psi}=\tfrac12\big(e_t+i\vec r\big),\qquad \vec r=-\tanh(\beta|\vec r_\Psi|)\,\vec u_\Psi,\qquad |\vec r|=\tanh(\beta|\vec r_\Psi|)\le 1.
 $$
 
 The thermal state is mixed for every finite $\beta$ and approaches the pure ground state $\tilde\Pi(-\vec u_\Psi)=\tfrac12(e_t-i\vec u_\Psi)$ only as $\beta\to\infty$. Its internal energy is
 
 $$
-E=\langle\tilde{Ϛ},\tilde R_\Psi\rangle_{*}/\langle\tilde{Ϛ},e_t\rangle_{*}=\mathrm{Sc}(\tilde{Ϛ}\tilde R_\Psi^{*})/\mathrm{Sc}(\tilde{Ϛ})=c r_t+\vec r\cdot\vec r_\Psi=c r_t-|\vec r_\Psi|\tanh(\beta|\vec r_\Psi|),\qquad\text{with trace reading } \operatorname{Tr}(\tilde{Ϛ}\tilde R_\Psi^{*})=E,
+E=\langle\tilde{Ϛ}_{\Psi},\tilde R_\Psi\rangle_{*}/\langle\tilde{Ϛ}_{\Psi},e_t\rangle_{*}=\mathrm{Sc}(\tilde{Ϛ}_{\Psi}\tilde R_\Psi^{*})/\mathrm{Sc}(\tilde{Ϛ}_{\Psi})=c r_t+\vec r\cdot\vec r_\Psi=c r_t-|\vec r_\Psi|\tanh(\beta|\vec r_\Psi|),\qquad\text{with trace reading } \operatorname{Tr}(\tilde{Ϛ}_{\Psi}\tilde R_\Psi^{*})=E,
 $$
 
 in agreement with $-\partial/\partial \beta\log Z=c r_t-|\vec r_\Psi|\tanh(\beta|\vec r_\Psi|)$, and its purity and entropy are the standard functions of $|\vec r|$.
 
-As a check on a case chosen independently of the derivation, take $c r_t=0.7$, $\vec r_\Psi=(0.3,-0.5,0.8)$, $\beta=1.2$, so that $|\vec r_\Psi|^2=0.98$ and $|\vec r_\Psi|=0.98995$. The formula gives $Z=2\exp(-0.84)\cosh(1.18794)=1.547753$, while summing the exponential of the eigenvalues $c r_t\pm|\vec r_\Psi|$ gives $\exp(-2.02794)+\exp(0.34794)=1.547753$; the matrix exponential of the corresponding $2\times2$ matrix agrees with the biquaternion form to machine precision. The Bloch modulus is $\tanh(1.18794)=0.829939$, and $E=c r_t-|\vec r_\Psi|\tanh(\beta|\vec r_\Psi|)=-0.121597$ equals $\mathrm{Tr}(\tilde{Ϛ}\tilde R_\Psi^{*})$.
+As a check on a case chosen independently of the derivation, take $c r_t=0.7$, $\vec r_\Psi=(0.3,-0.5,0.8)$, $\beta=1.2$, so that $|\vec r_\Psi|^2=0.98$ and $|\vec r_\Psi|=0.98995$. The formula gives $Z=2\exp(-0.84)\cosh(1.18794)=1.547753$, while summing the exponential of the eigenvalues $c r_t\pm|\vec r_\Psi|$ gives $\exp(-2.02794)+\exp(0.34794)=1.547753$; the matrix exponential of the corresponding $2\times2$ matrix agrees with the biquaternion form to machine precision. The Bloch modulus is $\tanh(1.18794)=0.829939$, and $E=c r_t-|\vec r_\Psi|\tanh(\beta|\vec r_\Psi|)=-0.121597$ equals $\mathrm{Tr}(\tilde{Ϛ}_{\Psi}\tilde R_\Psi^{*})$.
 
 ## What the Trace Discards
 
@@ -143,9 +143,9 @@ $$
 
 and the trace keeps the first and annihilates the second. Three consequences are worth stating explicitly.
 
-**The discarded part is the coherence.** The imaginary vector part of $\exp(-\beta H)$ points along $-\vec u_\Psi$, and it is fixed by the same combination $\beta|\vec r_\Psi|$ that fixes the Bloch vector $\vec r=-\tanh(\beta|\vec r_\Psi|)\vec u_\Psi$ of the thermal state. It encodes the **orientation** of the thermal polarization. The partition function is blind to that orientation. $Z$ depends on $c r_t$ and $|\vec r_\Psi|$ but not on the direction $\vec u_\Psi$; equivalently, $Z$ is invariant under the conjugation $\tilde R_\Psi\mapsto\tilde Q\tilde R_\Psi\tilde Q^{*}$ by any $*$-unitary biquaternion, which rotates $\vec u_\Psi$ while preserving the spectrum. The whole dependence of the thermal state on the axis of the Hamiltonian is invisible to $Z$ and appears only in $\tilde{Ϛ}$ and in expectation values.
+**The discarded part is the coherence.** The imaginary vector part of $\exp(-\beta H)$ points along $-\vec u_\Psi$, and it is fixed by the same combination $\beta|\vec r_\Psi|$ that fixes the Bloch vector $\vec r=-\tanh(\beta|\vec r_\Psi|)\vec u_\Psi$ of the thermal state. It encodes the **orientation** of the thermal polarization. The partition function is blind to that orientation. $Z$ depends on $c r_t$ and $|\vec r_\Psi|$ but not on the direction $\vec u_\Psi$; equivalently, $Z$ is invariant under the conjugation $\tilde R_\Psi\mapsto\tilde Q\tilde R_\Psi\tilde Q^{*}$ by any $*$-unitary biquaternion, which rotates $\vec u_\Psi$ while preserving the spectrum. The whole dependence of the thermal state on the axis of the Hamiltonian is invisible to $Z$ and appears only in $\tilde{Ϛ}_{\Psi}$ and in expectation values.
 
-**The discarded part is not lost.** The information the trace removes from $Z$ is retained by the **correlation functions**. The expectation value $2\,\mathrm{Sc}(\tilde{Ϛ}\tilde{R}_{\Psi,3})$, whose trace reading is $\operatorname{Tr}(\tilde{Ϛ}\tilde{R}_{\Psi,3}^{*})=\operatorname{Tr}(\tilde{Ϛ}\tilde{R}_{\Psi,3})=2\,\mathrm{Sc}(\tilde{Ϛ}\tilde{R}_{\Psi,3})$, the star being inert and the unstarred trace real, and, in the thermal field-theoretic setting, the KMS correlation functions of the companion article are sensitive to the imaginary vector part. The partition function is thus the crudest $*$-unitary invariant of the thermal operator: it is the piece invariant under the full $*$-unitary group, and everything else is delegated to the correlators.
+**The discarded part is not lost.** The information the trace removes from $Z$ is retained by the **correlation functions**. The expectation value $2\,\mathrm{Sc}(\tilde{Ϛ}_{\Psi}\tilde{R}_{\Psi,3})$, whose trace reading is $\operatorname{Tr}(\tilde{Ϛ}_{\Psi}\tilde{R}_{\Psi,3}^{*})=\operatorname{Tr}(\tilde{Ϛ}_{\Psi}\tilde{R}_{\Psi,3})=2\,\mathrm{Sc}(\tilde{Ϛ}_{\Psi}\tilde{R}_{\Psi,3})$, the star being inert and the unstarred trace real, and, in the thermal field-theoretic setting, the KMS correlation functions of the companion article are sensitive to the imaginary vector part. The partition function is thus the crudest $*$-unitary invariant of the thermal operator: it is the piece invariant under the full $*$-unitary group, and everything else is delegated to the correlators.
 
 **The discarded part is not the material sector.** It is tempting to say that the trace "projects away the $\mathbb{B}_{\Phi}$ sector". Read literally, that statement is not correct for a Hermitian Hamiltonian. Since $\tilde R_\Psi\in\mathbb{B}_{\Psi}$ implies $\exp(-\beta H)\in\mathbb{B}_{\Psi}$, the thermal operator has **no $\mathbb{B}_{\Phi}$ component at all**; the subspace $\mathbb{B}_{\Phi}$ does not appear in it. What the trace discards is the **imaginary vector part of $\mathbb{B}_{\Psi}$**, which is $i$ times a real spatial vector — the same three real spatial directions that, with real coefficients, are the spatial part of $\mathbb{B}_{\Phi}$. The correct division is therefore between the scalar (energy-like, spectral) content of the thermal operator, which $Z$ keeps, and its coherence content, which $Z$ discards. The material sector enters elsewhere, through imaginary time.
 
@@ -163,13 +163,13 @@ It is here that the material sector $\mathbb{B}_{\Phi}$ genuinely enters. The ma
 
 Two further facts tie the partition function to that structure, and both are consistent with the KMS article rather than additional to it.
 
-First, the **normalization of the thermal state** is what makes the modular Hamiltonian a Hermitian element. From $\tilde{Ϛ}=\exp(-\beta H)/Z$,
+First, the **normalization of the thermal state** is what makes the modular Hamiltonian a Hermitian element. From $\tilde{Ϛ}_{\Psi}=\exp(-\beta H)/Z$,
 
 $$
-H_{\mathrm{modular}}=-\log\tilde{Ϛ}=\beta\tilde R_\Psi+\big(\log Z\big)e_t,
+H_{\mathrm{modular}}=-\log\tilde{Ϛ}_{\Psi}=\beta\tilde R_\Psi+\big(\log Z\big)e_t,
 $$
 
-which is Hermitian, hence an element of $\mathbb{B}_{\Psi}$; the log-partition function $\log Z$ appears as the real scalar part of the modular Hamiltonian. The companion article records the general fact that $H_{\mathrm{modular}}=-\log\tilde{Ϛ}$ lies in $\mathbb{B}_{\Psi}$; the partition function is precisely the additive scalar that makes this true for the Gibbs state.
+which is Hermitian, hence an element of $\mathbb{B}_{\Psi}$; the log-partition function $\log Z$ appears as the real scalar part of the modular Hamiltonian. The companion article records the general fact that $H_{\mathrm{modular}}=-\log\tilde{Ϛ}_{\Psi}$ lies in $\mathbb{B}_{\Psi}$; the partition function is precisely the additive scalar that makes this true for the Gibbs state.
 
 Second, the **KMS boundary relation** $F_{AB}(r'_t+i\beta)=F_{BA}(-r'_t)$ of the companion article is the imaginary-time statement whose finite-dimensional shadow is the Gibbs form used here. The partition function is the normalization of the KMS state, and the strip width in that relation is the same $\beta$ that measures the imaginary-time displacement of the thermal trace. Nothing in the present article changes the KMS boundary relation; the partition function presupposes it.
 
@@ -235,9 +235,9 @@ $$
 \boxed{\;Z=2\,\mathrm{Sc}\big(\exp(-\beta H)\big)=2\exp(-\beta c r_t)\cosh(\beta|\vec r_\Psi|)\;},
 $$
 
-the ordinary two-level partition function with energies $c r_t\pm|\vec r_\Psi|$. The thermal state is $\tilde{Ϛ}=\tfrac12(e_t+i\vec r)$ with $\vec r=-\tanh(\beta|\vec r_\Psi|)\vec u_\Psi$, and the internal energy $E=c r_t-|\vec r_\Psi|\tanh(\beta|\vec r_\Psi|)$ agrees with $-\partial/\partial \beta\log Z$.
+the ordinary two-level partition function with energies $c r_t\pm|\vec r_\Psi|$. The thermal state is $\tilde{Ϛ}_{\Psi}=\tfrac12(e_t+i\vec r)$ with $\vec r=-\tanh(\beta|\vec r_\Psi|)\vec u_\Psi$, and the internal energy $E=c r_t-|\vec r_\Psi|\tanh(\beta|\vec r_\Psi|)$ agrees with $-\partial/\partial \beta\log Z$.
 
-The trace keeps the scalar part of the thermal operator and discards its imaginary vector part. That discarded part is the coherence — the orientation of the thermal polarization — and it is invisible to $Z$ but visible in expectation values and KMS correlation functions. It is not the material sector: for Hermitian $\tilde R_\Psi$ the thermal operator has no $\mathbb{B}_{\Phi}$ component. The material sector enters through imaginary time, since $Z=\mathrm{Tr}\,\tilde Q(-i\beta)$ is the trace of the evolution operator continued along the $i c r'_t$ direction, with the thermal circle of circumference $\beta$ lying along the $\mathbb{B}_{\Phi}$ time. The modular Hamiltonian $H_{\mathrm{modular}}=-\log\tilde{Ϛ}=\beta\tilde R_\Psi+(\log Z)e_t$ lies in $\mathbb{B}_{\Psi}$, with the log-partition function as its real scalar part, in agreement with the KMS article.
+The trace keeps the scalar part of the thermal operator and discards its imaginary vector part. That discarded part is the coherence — the orientation of the thermal polarization — and it is invisible to $Z$ but visible in expectation values and KMS correlation functions. It is not the material sector: for Hermitian $\tilde R_\Psi$ the thermal operator has no $\mathbb{B}_{\Phi}$ component. The material sector enters through imaginary time, since $Z=\mathrm{Tr}\,\tilde Q(-i\beta)$ is the trace of the evolution operator continued along the $i c r'_t$ direction, with the thermal circle of circumference $\beta$ lying along the $\mathbb{B}_{\Phi}$ time. The modular Hamiltonian $H_{\mathrm{modular}}=-\log\tilde{Ϛ}_{\Psi}=\beta\tilde R_\Psi+(\log Z)e_t$ lies in $\mathbb{B}_{\Psi}$, with the log-partition function as its real scalar part, in agreement with the KMS article.
 
 The algebra does not force a modification. A genuine modification appears only if the generator is permitted an $\mathbb{B}_{\Phi}$ component, in which case $Z$ can become complex, with the imaginary scalar part of the generator producing a phase and its real vector part an oscillatory modulus. That extension is possible, connects to complex temperature and imaginary chemical potential, and is not forced by the framework; it is left open.
 
@@ -255,11 +255,11 @@ The algebra does not force a modification. A genuine modification appears only i
 | $\mathrm{Tr}(\tilde Q)=2\,\mathrm{Sc}(\tilde Q)$ | Trace as $2\times2$ reading, twice the scalar part |
 | $\mathrm{Tr}(\tilde{R}_{\Psi,1}\tilde{R}_{\Psi,2}^{*})=2\,\mathrm{Sc}(\tilde{R}_{\Psi,1}\tilde{R}_{\Psi,2}^{*})=2(c^2 r_{t,1}r_{t,2}+\vec r_{\Psi,1}\cdot\vec r_{\Psi,2})$ | Trace formula on $\mathbb{B}_{\Psi}$ |
 | $Z=2\,\mathrm{Sc}(\exp(-\beta H))=\operatorname{Tr}(\exp(-\beta H))$ | Partition function (trace reading last) |
-| $\tilde{Ϛ}=\exp(-\beta H)/Z$ | Thermal state |
+| $\tilde{Ϛ}_{\Psi}=\exp(-\beta H)/Z$ | Thermal state |
 | $\exp(-\beta H)=\exp(-\beta c r_t)\big(\cosh(\beta|\vec r_\Psi|)e_t-i\sinh(\beta|\vec r_\Psi|)\vec u_\Psi\big)$ | Thermal operator |
 | $\vec r=-\tanh(\beta|\vec r_\Psi|)\vec u_\Psi$ | Bloch vector of the thermal state |
 | $F=-\beta^{-1}\log Z$, $E=-\partial/\partial \beta\log Z$ | Free energy, internal energy |
-| $H_{\mathrm{modular}}=-\log\tilde{Ϛ}=\beta\tilde R_\Psi+(\log Z)e_t$ | Modular Hamiltonian (in $\mathbb{B}_{\Psi}$) |
+| $H_{\mathrm{modular}}=-\log\tilde{Ϛ}_{\Psi}=\beta\tilde R_\Psi+(\log Z)e_t$ | Modular Hamiltonian (in $\mathbb{B}_{\Psi}$) |
 | $\langle\tilde Q\rangle_{\natural} = \langle\tilde Q,\tilde Q\rangle_{\natural}=\tilde Q\tilde Q^{\natural}$ | Biquaternion norm |
 | $\beta=1/(k_BT)$ ($\hbar=1$) | Inverse temperature |
 | $\langle\tilde{Q}_1,\tilde{Q}_2\rangle$ | the general plain bilinear form, the scalar part of the general plain bilinear product, $\mathrm{Sc}(\tilde{Q}_1\tilde{Q}_2)$ |

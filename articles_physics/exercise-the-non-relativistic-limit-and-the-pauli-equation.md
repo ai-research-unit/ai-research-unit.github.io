@@ -41,16 +41,16 @@ $$
 and the pure part of the gradient is written $D_3=\sum_k\vec e_k\partial/\partial r_k$. Minimal coupling shifts each derivative, $\partial/\partial R_\mu\to\partial/\partial R_\mu-\frac{k_m\,iqA_{\mu}}{m\,c}$, and with it the gradient:
 
 $$
-\tilde\nabla\longmapsto\tilde\nabla-\frac{k_m\,i\,q}{m\,c}\tilde A,
+\tilde\nabla\longmapsto\tilde\nabla-\frac{k_m\,i\,q}{m\,c}\tilde A_{\Phi},
 \qquad
-\tilde A=Ξ e_t-\vec A,
+\tilde A_{\Phi}=Ξ e_t-\vec A,
 \qquad
 \vec A=\sum_k A_k\vec e_k,
 \qquad
 \sum_k\vec e_k\pi_k=-\frac{m\,c\,i\,D_{3}^{A}}{k_m},
 $$
 
-with $\pi_k=p_k-qA_k$ and $D_3^A=\sum_k\vec e_k(\partial/\partial r_k-\frac{k_m\,iqA_{k}}{m\,c})$ the pure part of the gauged gradient. The corpus names this family $\tilde\nabla_{\mathrm{gco}}$ in *The Covariant Derivative and the Gauge Connection in Biquaternionic Form*, where the potential is written $i\,a'_t\,e_t+\vec A$; the exercise keeps its own $\tilde A=Ξ e_t-\vec A$ and writes the operator out rather than borrowing the name. A plane wave $\exp\!\bigl(i(k_0x_0-\vec k\cdot\vec q)\bigr)$, with $x_0=c r'_{t}$, replaces the gradient by the element
+with $\pi_k=p_k-qA_k$ and $D_3^A=\sum_k\vec e_k(\partial/\partial r_k-\frac{k_m\,iqA_{k}}{m\,c})$ the pure part of the gauged gradient. The corpus names this family $\tilde\nabla_{\mathrm{gco}}$ in *The Covariant Derivative and the Gauge Connection in Biquaternionic Form*, where the potential is written $i\,a'_t\,e_t+\vec A$; the exercise keeps its own $\tilde A_{\Phi}=Ξ e_t-\vec A$ and writes the operator out rather than borrowing the name. A plane wave $\exp\!\bigl(i(k_0x_0-\vec k\cdot\vec q)\bigr)$, with $x_0=c r'_{t}$, replaces the gradient by the element
 
 $$
 \tilde K=k_0-i\vec k,
@@ -271,7 +271,7 @@ which is the Pauli equation exactly as the parent reports it. The coefficient $1
 
 **Solution.**
 
-*Step 1: the substitution.* The minimal coupling of this exercise is a shift of every derivative, $\partial/\partial R_\mu\to\partial/\partial R_\mu-\frac{k_m\,iqA_{\mu}}{m\,c}$; on the gradient it is $\tilde\nabla\to\tilde\nabla-\frac{k_m\,i\,q\,\tilde{A}}{m\,c}$, with $A_\mu=(Ξ,-\vec A)$ in this mostly-minus metric, so that $\tilde A=Ξ e_t-\vec A$. The time component gives
+*Step 1: the substitution.* The minimal coupling of this exercise is a shift of every derivative, $\partial/\partial R_\mu\to\partial/\partial R_\mu-\frac{k_m\,iqA_{\mu}}{m\,c}$; on the gradient it is $\tilde\nabla\to\tilde\nabla-\frac{k_m\,i\,q\,\tilde{A}_{\Phi}}{m\,c}$, with $A_\mu=(Ξ,-\vec A)$ in this mostly-minus metric, so that $\tilde A_{\Phi}=Ξ e_t-\vec A$. The time component gives
 
 $$\frac{m\,c\,i}{k_m}\frac{\partial}{\partial  r'_t}\ \longrightarrow\ \frac{m\,c\,i}{k_m}\frac{\partial}{\partial  r'_t}-qΞ ,
 $$
@@ -337,7 +337,7 @@ whose magnitude at $S_z=\frac{m\,c}{2\,k_m}$ is one Bohr magneton $\mu_B=ec\dfra
 
 Here $1/k_{m_e}=\hbar/(m_ec)$ is the electron mass length.
 
-*Step 5: the biquaternion form.* Under the isomorphism $\mathsf M_2(\vec e_k)=-i\sigma_k$ the spin components are the elements $\tilde S_k=\frac{m\,c}{2\,k_m}i\vec e_k$, and a magnetic field written as the pure real quaternion $\vec B=\sum_kB_k\vec e_k$ maps the spin term to
+*Step 5: the biquaternion form.* Under the isomorphism $\mathsf M_2(\vec e_k)=-i\sigma_k$ the spin components are the elements $\tilde S_{\Psi,k}=\frac{m\,c}{2\,k_m}i\vec e_k$, and a magnetic field written as the pure real quaternion $\vec B=\sum_kB_k\vec e_k$ maps the spin term to
 
 $$
 -\frac{q c}{2\,k_m}\boldsymbol\sigma\cdot\vec B\ \longleftrightarrow\ -\frac{q c}{2\,k_m}\,i\vec B\ \in\ \mathbb{B}_{\Psi} ,
@@ -533,7 +533,7 @@ $$
 S_1=-\frac{i}{2\,m\,c^{2}}\beta O=-\frac{1}{2\,m\,c}\sum_k\vec e_k\pi_k\,(\cdot)\,\vec e_z=\frac{i}{2\,k_m}\bigl(D_3^A\cdot\bigr)\vec e_z ,
 $$
 
-produces the Pauli Hamiltonian $\frac{m\,c\,i}{k_m}\partial\tilde{Ξ}_{\mathrm{sp},\mathrm{evn}}/\partial r'_t=\bigl[\vec\pi^2 c/(2\,m\,c)+qΞ-(qc/k_m/2)\boldsymbol\sigma\cdot\vec B\bigr]\tilde{Ξ}_{\mathrm{sp},\mathrm{evn}}$, reproducing the parent article. The minimal substitution in the gradient, $\tilde\nabla\to\tilde\nabla-\frac{k_m\,i\,q\,\tilde{A}}{m\,c}$, gives $[\pi_i,\pi_j]=\frac{m\,c\,i\,q\,\epsilon_{ijk}\,B_{k}}{k_m}$ and $(\boldsymbol\sigma\cdot\vec\pi)^2=\vec\pi^2-\frac{m\,c\,q\,\boldsymbol{\sigma}\,\vec B}{k_m}$, and the coefficient $1/2m$ produced by the elimination fixes $g=2$ and $\vec\mu=(q/m)\vec S$, hence $\mu_B=ec\dfrac{1}{2\,k_{m_e}}$ for the electron. At the next order in $1/c$, the second-order term $-\tfrac12[S_1,[S_1,E]]$ of the first transformation gives the Darwin term $+\frac{m^{2}\,c^{2}}{k_m^{2}}\nabla^2 V/(8m^2c^2)=-(\frac{q}{8\,k_m^{2}})\nabla\cdot\vec E$ and the spin–orbit coupling $-(\frac{q}{4\,m\,c\,k_m})\boldsymbol\sigma\cdot(\vec E\times\vec\pi)=(\frac{1}{4\,m\,c\,k_m})r^{-1}(dV/dr)\boldsymbol\sigma\cdot\vec L$, while the expansion of the free large-part energy gives the relativistic kinetic correction $-(\boldsymbol\sigma\cdot\vec\pi)^4/(8m^3c^2)$. The second transformation removes the residual odd term $O_1$ and adds no even term at this order. Summed, these reproduce the exact Dirac fine structure of hydrogenic ions for 36 levels with $n\le6$, with difference exactly zero.
+produces the Pauli Hamiltonian $\frac{m\,c\,i}{k_m}\partial\tilde{Ξ}_{\mathrm{sp},\mathrm{evn}}/\partial r'_t=\bigl[\vec\pi^2 c/(2\,m\,c)+qΞ-(qc/k_m/2)\boldsymbol\sigma\cdot\vec B\bigr]\tilde{Ξ}_{\mathrm{sp},\mathrm{evn}}$, reproducing the parent article. The minimal substitution in the gradient, $\tilde\nabla\to\tilde\nabla-\frac{k_m\,i\,q\,\tilde{A}_{\Phi}}{m\,c}$, gives $[\pi_i,\pi_j]=\frac{m\,c\,i\,q\,\epsilon_{ijk}\,B_{k}}{k_m}$ and $(\boldsymbol\sigma\cdot\vec\pi)^2=\vec\pi^2-\frac{m\,c\,q\,\boldsymbol{\sigma}\,\vec B}{k_m}$, and the coefficient $1/2m$ produced by the elimination fixes $g=2$ and $\vec\mu=(q/m)\vec S$, hence $\mu_B=ec\dfrac{1}{2\,k_{m_e}}$ for the electron. At the next order in $1/c$, the second-order term $-\tfrac12[S_1,[S_1,E]]$ of the first transformation gives the Darwin term $+\frac{m^{2}\,c^{2}}{k_m^{2}}\nabla^2 V/(8m^2c^2)=-(\frac{q}{8\,k_m^{2}})\nabla\cdot\vec E$ and the spin–orbit coupling $-(\frac{q}{4\,m\,c\,k_m})\boldsymbol\sigma\cdot(\vec E\times\vec\pi)=(\frac{1}{4\,m\,c\,k_m})r^{-1}(dV/dr)\boldsymbol\sigma\cdot\vec L$, while the expansion of the free large-part energy gives the relativistic kinetic correction $-(\boldsymbol\sigma\cdot\vec\pi)^4/(8m^3c^2)$. The second transformation removes the residual odd term $O_1$ and adds no even term at this order. Summed, these reproduce the exact Dirac fine structure of hydrogenic ions for 36 levels with $n\le6$, with difference exactly zero.
 
 Every term of the reduced Hamiltonian is Hermitian and therefore lies in $\mathbb{B}_{\Psi}$. The objects that do not are the two-sided operators of the reduction — the mass term $\beta mc^2$ and the odd operator $O$, which end in right multiplications by $i\vec e_x$ and by $\vec e_y$ and so are not left multiplications by an element — together with the anti-Hermitian generator $iS_1$ and the rest-energy phase, which is not Hermitian and belongs to neither sector. The real structure $\flat$ — whose opposite-sign action on the sectors a Majorana-type coupling would carry — is not the parent's mass term, which is the linear coupling of the two chiralities. The Foldy–Wouthuysen grading by $\beta$ must not be confused with the $\mathbb{B}_{\Psi}/\mathbb{B}_{\Phi}$ grading by ${}^{*}$. All terms are energies, the three corrections carrying the expected $c^{-2}$.
 
@@ -548,7 +548,7 @@ Every term of the reduced Hamiltonian is Hermitian and therefore lies in $\mathb
 | $\tilde\nabla$, $\tilde\nabla^{\natural}$ | The gradient and its conjugate, $\varepsilon=(1,-1,-1,-1)$ |
 | $\Box=\tilde\nabla\tilde\nabla^{\natural}$ | The d'Alembertian |
 | $D_3=\sum_k\vec e_k\partial/\partial r_k$, $D_3^A$ | Pure part of the gradient, free and gauged |
-| $\tilde\nabla-\frac{k_m\,i\,q\,\tilde{A}}{m\,c}$, $\tilde A=Ξ e_t-\vec A$ | The gauged gradient; minimal substitution |
+| $\tilde\nabla-\frac{k_m\,i\,q\,\tilde{A}_{\Phi}}{m\,c}$, $\tilde A_{\Phi}=Ξ e_t-\vec A$ | The gauged gradient; minimal substitution |
 | $\tilde K=k_0-i\vec k$ | Symbol of the gradient on a plane wave; $\tilde K^{\natural}\tilde K=k_0^2-\lvert\vec k\rvert^2$ |
 | $F=F_L+F_R$; $\Gamma F=-iF\vec e_z$ | The field and its chirality, values $\mp1$ |
 | $\beta F=iF\vec e_x$, $\beta^2=1$, $\beta\Gamma=-\Gamma\beta$ | The mass grading; $\beta O=-O\beta$ |

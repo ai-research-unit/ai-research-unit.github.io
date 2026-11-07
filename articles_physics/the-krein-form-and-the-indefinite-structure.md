@@ -5,7 +5,7 @@
 The fourth form of the biquaternion algebra is Hermitian and indefinite. On two elements it is
 
 $$
-\boxed{\;\langle\tilde P,\tilde Q\rangle_{\natural*}=\sum_{\mu\in\{t,x,y,z\}}\varepsilon_\mu P_\mu\overline{Q_\mu},
+\boxed{\;\langle\tilde P_{\Phi},\tilde Q\rangle_{\natural*}=\sum_{\mu\in\{t,x,y,z\}}\varepsilon_\mu P_\mu\overline{Q_\mu},
 \qquad \varepsilon=(1,-1,-1,-1)\;},
 $$
 
@@ -33,7 +33,7 @@ $$
 E=\operatorname{diag}(1,-1,-1,-1),
 $$
 
-so that $\langle\tilde P,\tilde Q\rangle_{\natural*}=P^{\mathsf T}E\bar Q$ in the convention linear in the first argument. The matrix is Hermitian and invertible, with one positive and three negative eigenvalues. The form is therefore indefinite, and its **inertia** is $(1,3)$ over $\mathbb{C}$; after realification, the real form has signature $(2,6)$.
+so that $\langle\tilde P_{\Phi},\tilde Q\rangle_{\natural*}=P^{\mathsf T}E\bar Q$ in the convention linear in the first argument. The matrix is Hermitian and invertible, with one positive and three negative eigenvalues. The form is therefore indefinite, and its **inertia** is $(1,3)$ over $\mathbb{C}$; after realification, the real form has signature $(2,6)$.
 
 | Subspace | The restricted form | Signature |
 | --- | --- | --- |
@@ -53,9 +53,9 @@ The indefiniteness is what makes the form unable to normalise. A definite Hermit
 The indefinite form is a definite form in disguise. Let $J={}^{\natural}$ be the natural conjugation, fixing the central $i$ and negating the three vector units. Then
 
 $$
-\boxed{\;\langle\tilde P,\tilde Q\rangle_{\natural*}=\langle\tilde P,J\tilde Q\rangle_{*},
+\boxed{\;\langle\tilde P_{\Phi},\tilde Q\rangle_{\natural*}=\langle\tilde P_{\Phi},J\tilde Q\rangle_{*},
 \qquad
-\langle\tilde P,\tilde Q\rangle_{*}=\sum_\mu P_\mu\overline{Q_\mu}\;},
+\langle\tilde P_{\Phi},\tilde Q\rangle_{*}=\sum_\mu P_\mu\overline{Q_\mu}\;},
 $$
 
 and $J^2=\mathrm{id}$. The operator $J$ is the **fundamental symmetry** of the form: it is a $\mathbb{C}$-linear involution with eigenvalue $+1$ on the centre and $-1$ on the vector space, and it is an isometry of the Krein form.
@@ -262,13 +262,13 @@ The isometry group is not the Lorentz group. The Lorentz group is the subgroup t
 
 | Symbol | Meaning |
 | --- | --- |
-| $\langle\tilde P,\tilde Q\rangle_{\natural*}=\sum_\mu\varepsilon_\mu P_\mu\overline{Q_\mu}$ | the Krein form, the gauge form |
+| $\langle\tilde P_{\Phi},\tilde Q\rangle_{\natural*}=\sum_\mu\varepsilon_\mu P_\mu\overline{Q_\mu}$ | the Krein form, the gauge form |
 | $E=\operatorname{diag}(1,-1,-1,-1)$ | its Gram matrix in the coefficient basis |
 | $\lVert\cdot\rVert_E$ | the Euclidean norm of the coefficient vector |
 | $\varepsilon=(1,-1,-1,-1)$ | the sign vector, the gauge inside the product |
 | $J={}^{\natural}$ | the fundamental symmetry, $J^2=\mathrm{id}$ |
 | $T^{\dagger}=JT^{*}J$ | the Krein adjoint |
-| $\langle\tilde P,\tilde Q\rangle_{\natural*}=\langle\tilde P,J\tilde Q\rangle_{*}$ | the bridge to the definite Born form |
+| $\langle\tilde P_{\Phi},\tilde Q\rangle_{\natural*}=\langle\tilde P_{\Phi},J\tilde Q\rangle_{*}$ | the bridge to the definite Born form |
 | $\mathrm{U}(1,3)$ | the Krein isometry group |
 | $T_t$ | the boost of parameter $t$ |
 | $\mathbb{CH}^3$ | the complex hyperbolic space of positive lines |

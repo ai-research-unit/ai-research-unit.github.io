@@ -5,7 +5,7 @@
 Every biquaternion off the null cone is the ordered product of four factors: a positive scale, a central phase, a Hermitian boost and a real quaternion rotor,
 
 $$
-\boxed{\;\tilde Q=r\,\exp(i\alpha)\,\tilde U_{\mathrm b}\,\tilde u_{\mathrm r}
+\boxed{\;\tilde Q=r\,\exp(i\alpha)\,\tilde U_{\Psi,\mathrm b}\,\tilde u_{\mathrm r}
 =r\,\exp(i\alpha)\,\exp\Bigl(i\tfrac{\tilde{Ξ}_{\mathrm{sp},w}}{2}\vec u_{\mathrm b}\Bigr)\exp\Bigl(\tfrac{\theta}{2}\vec u_{\mathrm r}\Bigr)\;}.
 $$
 
@@ -35,7 +35,7 @@ Two distinctions organise the article and are worth naming at the start. A **pai
 | --- | --- | --- | --- | --- | --- | --- | --- |
 | 1 | $r$ | scale | — | — | $r>0$ | $1$ | dilation by $r^2$ |
 | 2 | $\exp(i\alpha)$ | central phase | $i\alpha$ | $i$ | $\alpha\in(-\tfrac{\pi}{2},\tfrac{\pi}{2}]$ | $1$ | multiplication by the scalar |
-| 3 | $\tilde U_{\mathrm b}=\exp(i\tfrac{\tilde{Ξ}_{\mathrm{sp},w}}{2}\vec u_{\mathrm b})$ | boost | $i\tfrac{\tilde{Ξ}_{\mathrm{sp},w}}{2}\vec u_{\mathrm b}$ | $i\vec u_{\mathrm b}$ | $\tilde{Ξ}_{\mathrm{sp},w}\ge0$, $\vec u_{\mathrm b}\in\mathcal{A}$ | $3$ | congruence $X\mapsto \tilde U_{\mathrm b}X\tilde U_{\mathrm b}^{*}$ |
+| 3 | $\tilde U_{\Psi,\mathrm b}=\exp(i\tfrac{\tilde{Ξ}_{\mathrm{sp},w}}{2}\vec u_{\mathrm b})$ | boost | $i\tfrac{\tilde{Ξ}_{\mathrm{sp},w}}{2}\vec u_{\mathrm b}$ | $i\vec u_{\mathrm b}$ | $\tilde{Ξ}_{\mathrm{sp},w}\ge0$, $\vec u_{\mathrm b}\in\mathcal{A}$ | $3$ | congruence $X\mapsto \tilde U_{\Psi,\mathrm b}X\tilde U_{\Psi,\mathrm b}^{*}$ |
 | 4 | $\tilde u_{\mathrm r}=\exp(\tfrac{\theta}{2}\vec u_{\mathrm r})$ | rotor | $\tfrac{\theta}{2}\vec u_{\mathrm r}$ | $\vec u_{\mathrm r}$ | $\theta\in[0,2\pi]$, $\vec u_{\mathrm r}\in\mathcal{A}$ | $3$ | conjugation $X\mapsto \tilde u_{\mathrm r}X\tilde u_{\mathrm r}^{*}$ |
 
 The axis sphere $\mathcal{A}$ is the set of unit real pure quaternions, the roots of $-e_t$. The phase is the only factor whose action is not a sandwich; its action is scalar multiplication.
@@ -81,7 +81,7 @@ The four-factor word is the reference. The three pairings are its three bracketi
 | --- | --- | --- | --- |
 | Quaternion | $\tilde q=r\tilde u_{\mathrm r}$ | $\exp(i\tilde{Ξ}_{\mathrm{sp}})$ | scale and rotor / phase and boost |
 | Hamilton | $\Rho=r\exp(i\alpha)$ | $\exp(\vec U\Theta)$ | scale and phase / boost and rotor |
-| Cartan | $\tilde Q_H=r\tilde U_{\mathrm b}$ | $\tilde Q_0=\exp(i\alpha)\tilde u_{\mathrm r}$ | scale and boost / phase and rotor |
+| Cartan | $\tilde Q_H=r\tilde U_{\Psi,\mathrm b}$ | $\tilde Q_0=\exp(i\alpha)\tilde u_{\mathrm r}$ | scale and boost / phase and rotor |
 
 ### The Quaternion Pairing
 
@@ -90,7 +90,7 @@ The quaternion pairing writes the element as a **real quaternion modulus** times
 $$
 \boxed{\;\tilde Q=\tilde q\,\exp(i\tilde{Ξ}_{\mathrm{sp}}), \qquad
 \tilde q=r\,\tilde u_{\mathrm r}, \qquad
-\exp(i\tilde{Ξ}_{\mathrm{sp}})=\exp(i\alpha)\,\tilde u_{\mathrm r}^{-1}\tilde U_{\mathrm b}\tilde u_{\mathrm r}\;}.
+\exp(i\tilde{Ξ}_{\mathrm{sp}})=\exp(i\alpha)\,\tilde u_{\mathrm r}^{-1}\tilde U_{\Psi,\mathrm b}\tilde u_{\mathrm r}\;}.
 $$
 
 The modulus is an ordinary quaternion in its polar form, and it is the spatial frame. The exponent has scalar part $\alpha$ and pure part $\tfrac{\tilde{Ξ}_{\mathrm{sp},w}}{2}\vec u_{\mathrm b,2}$, with the boost axis rotated by the rotor. The reading is the frame: the rotor carries the reference axes to the axes of the element, and $r$ is the scale at which the frame is taken. §*The Three Factors Compared* states it with the other two.
@@ -114,7 +114,7 @@ The Cartan pairing writes the element as a **Hermitian positive factor** times a
 
 $$
 \boxed{\;\tilde Q=\tilde Q_H\tilde Q_0, \qquad
-\tilde Q_H=\sqrt{\tilde Q\tilde Q^{*}}=r\tilde U_{\mathrm b}, \qquad
+\tilde Q_H=\sqrt{\tilde Q\tilde Q^{*}}=r\tilde U_{\Psi,\mathrm b}, \qquad
 \tilde Q_0=\tilde Q_H^{-1}\tilde Q=\exp(i\alpha)\tilde u_{\mathrm r}\;}.
 $$
 
@@ -130,7 +130,7 @@ The three pairings have three first factors, and the comparison is the synthesis
 | --- | --- | --- | --- | --- |
 | quaternion | $\tilde q=r\tilde u_{\mathrm r}$ | real quaternion, norm $r^{2}$ | $4$ | what is the spatial frame? |
 | Hamilton | $\Rho=r e^{i\alpha}$ | central complex scalar | $2$ | what is the invariant? |
-| Cartan | $\tilde Q_H=r\tilde U_{\mathrm b}$ | Hermitian positive, $\det=r^{2}$ | $4$ | what is the state amplitude? |
+| Cartan | $\tilde Q_H=r\tilde U_{\Psi,\mathrm b}$ | Hermitian positive, $\det=r^{2}$ | $4$ | what is the state amplitude? |
 
 The three factors have three different types. Two of them are not scalars. Only $\Rho$ is central. The real dimensions add to $10$, not to $8$:
 
@@ -144,7 +144,7 @@ The redundancy is exactly the scale $r$, which appears in all three factors. Eac
 | --- | --- | --- |
 | $\tilde q=r\tilde u_{\mathrm r}$ | $r$, the rotation angle and axis | the phase $\alpha$, the rapidity $\theta_{\mathrm{rpd},w}$, the boost axis |
 | $\Rho=r e^{i\alpha}$ | $r$, the phase | the rotation, the boost, both axes |
-| $\tilde Q_H=r\tilde U_{\mathrm b}$ | $r$, the rapidity, the boost axis | the phase, the rotation angle and axis |
+| $\tilde Q_H=r\tilde U_{\Psi,\mathrm b}$ | $r$, the rapidity, the boost axis | the phase, the rotation angle and axis |
 
 The factors are three **products**, not three terms:
 
@@ -162,7 +162,7 @@ The three questions and their readings are:
 | --- | --- | --- | --- |
 | what frame? | $\tilde q=r\tilde u_{\mathrm r}$ | the spatial orientation and the scale of the frame | a rotation, a rigid body, a polarization frame |
 | what invariant? | $\Rho=r e^{i\alpha}$ | the mass of a four-momentum, or the invariant amplitude | a particle, a scattering element |
-| what state? | $\tilde Q_H=r\tilde U_{\mathrm b}$ | the positive amplitude whose normalised square is the state | a Kraus operator, a Jones matrix, a state preparation |
+| what state? | $\tilde Q_H=r\tilde U_{\Psi,\mathrm b}$ | the positive amplitude whose normalised square is the state | a Kraus operator, a Jones matrix, a state preparation |
 
 The readings are compatible because they read one element. A scattering element has a Cartan factor that gives the state it prepares, a Hamilton modulus that gives its invariant size, and a quaternion factor that gives the frame in which its spin is described. The three descriptions are not three measurements and do not compete.
 
@@ -190,7 +190,7 @@ The four factors act by four different operations, and the table records which s
 | --- | --- | --- |
 | scale $r$ | dilation by $r^2$ | all six |
 | phase $\exp(i\alpha)$ | multiplication by the scalar | centre, vector space |
-| boost $\tilde U_{\mathrm b}$ | congruence | $\mathbb{B}_{\Psi}$, $\mathbb{B}_{\Phi}$ |
+| boost $\tilde U_{\Psi,\mathrm b}$ | congruence | $\mathbb{B}_{\Psi}$, $\mathbb{B}_{\Phi}$ |
 | rotor $\tilde u_{\mathrm r}$ | conjugation | all six |
 
 The six subspaces are the centre $\mathbb{B}_{C}$, the vector space $\mathbb{B}_{V}$, the real quaternion space $\mathbb{B}_{H}$, the imaginary quaternion space $\mathbb{B}_{iH}$, and the two sectors $\mathbb{B}_{\Psi}$ and $\mathbb{B}_{\Phi}$. No subspace is preserved by all four factors, and that is why no single subspace characterises the word.
@@ -208,7 +208,7 @@ The phase at $\alpha=\pi/2$ is multiplication by $i$: it exchanges the two secto
 
 ### The Normalised Bloch Action
 
-On the informational sector the congruence acts on the states $\tilde{Ϛ}=a e_t+i\vec b$ with $a=\tfrac12$ and $\vec b=\tfrac12\vec r$ of the Bloch ball, $|\vec r|\le1$.
+On the informational sector the congruence acts on the states $\tilde{Ϛ}_{\Psi}=a e_t+i\vec b$ with $a=\tfrac12$ and $\vec b=\tfrac12\vec r$ of the Bloch ball, $|\vec r|\le1$.
 
 The rotor conjugates and fixes the scalar part, so it rotates the ball by $\theta$ about $\vec u_{\mathrm r}$ and preserves the trace and the radius. The phase is central and cancels. The scale multiplies $(a,\vec b)$ by $r^{2}$, hence the trace by $r^{2}$, and leaves the radius unchanged. The boost mixes the scalar and the parallel parts and leaves the transverse part alone:
 
@@ -238,10 +238,10 @@ The word's third factor has one slot and two jobs.
 
 | element | third factor | exponent angle | relation to the kinematic rapidity |
 | --- | --- | --- | --- |
-| transformation | $\tilde U_{\mathrm b}(\theta_{\mathrm{rpd},w})=\exp(i\tfrac{\tilde{Ξ}_{\mathrm{sp},w}}{2}\vec u_{\mathrm b})$ | $\tilde{Ξ}_{\mathrm{sp},w}/2$ | $\tilde{Ξ}_{\mathrm{sp},w}=\tilde{Ξ}_{\mathrm{sp}}$ |
-| four-vector | $\mathcal B=\exp(-i\tilde{Ξ}_{\mathrm{sp}}\vec u_{\mathrm b})=\tilde U_{\mathrm b}(\theta_{\mathrm{rpd}})^{-2}$ | $-\tilde{Ξ}_{\mathrm{sp}}$ | $\tilde{Ξ}_{\mathrm{sp},w}=2\tilde{Ξ}_{\mathrm{sp}}$ |
+| transformation | $\tilde U_{\Psi,\mathrm b}(\theta_{\mathrm{rpd},w})=\exp(i\tfrac{\tilde{Ξ}_{\mathrm{sp},w}}{2}\vec u_{\mathrm b})$ | $\tilde{Ξ}_{\mathrm{sp},w}/2$ | $\tilde{Ξ}_{\mathrm{sp},w}=\tilde{Ξ}_{\mathrm{sp}}$ |
+| four-vector | $\mathcal B_{\Psi}=\exp(-i\tilde{Ξ}_{\mathrm{sp}}\vec u_{\mathrm b})=\tilde U_{\Psi,\mathrm b}(\theta_{\mathrm{rpd}})^{-2}$ | $-\tilde{Ξ}_{\mathrm{sp}}$ | $\tilde{Ξ}_{\mathrm{sp},w}=2\tilde{Ξ}_{\mathrm{sp}}$ |
 
-For a transformation the factor is the frame rotor, and its congruence is the boost of rapidity $\theta_{\mathrm{rpd},w}$. For a four-vector element the factor is the inverse square of the same rotor, and the element is $\tilde Q=r e^{i\alpha}\mathcal B$. The four-momentum is the case $r=mc$, $\alpha=\pi/2$, where $\tilde P=i mc\,\mathcal B$.
+For a transformation the factor is the frame rotor, and its congruence is the boost of rapidity $\theta_{\mathrm{rpd},w}$. For a four-vector element the factor is the inverse square of the same rotor, and the element is $\tilde Q=r e^{i\alpha}\mathcal B_{\Psi}$. The four-momentum is the case $r=mc$, $\alpha=\pi/2$, where $\tilde P_{\Phi}=i mc\,\mathcal B_{\Psi}$.
 
 The doubling is between the word parameter and the kinematic rapidity of a four-vector. With $\beta=v/c$ and $\beta=\tanh\theta_{\mathrm{rpd}}$,
 
@@ -254,7 +254,7 @@ $$
 Three errors follow, and each is a check.
 
 - Reading the word parameter $\theta_{\mathrm{rpd},w}$ of a four-vector element as its kinematic rapidity doubles the rapidity.
-- Using the frame rotor $\tilde U_{\mathrm b}(\theta_{\mathrm{rpd}})$ where the four-vector factor $\mathcal B=\tilde U_{\mathrm b}(\theta_{\mathrm{rpd}})^{-2}$ belongs halves the rapidity of the four-vector: $i mc\,\tilde U_{\mathrm b}(\theta_{\mathrm{rpd}})$ is a four-vector of rapidity $\theta_{\mathrm{rpd}}/2$.
+- Using the frame rotor $\tilde U_{\Psi,\mathrm b}(\theta_{\mathrm{rpd}})$ where the four-vector factor $\mathcal B_{\Psi}=\tilde U_{\Psi,\mathrm b}(\theta_{\mathrm{rpd}})^{-2}$ belongs halves the rapidity of the four-vector: $i mc\,\tilde U_{\Psi,\mathrm b}(\theta_{\mathrm{rpd}})$ is a four-vector of rapidity $\theta_{\mathrm{rpd}}/2$.
 - Identifying $\gamma$ with $\cosh\theta_{\mathrm{rpd},w}$ instead of $\cosh(\theta_{\mathrm{rpd},w}/2)$ overstates the energy.
 
 The four objects called a boost are separated in *Norm and Pairing Conventions*, §*The Four Objects Called a Boost*.
@@ -285,7 +285,7 @@ The pairings read the same data under different headings, and the readings are d
 
 ## Summary
 
-- Every biquaternion off the null cone is $r\exp(i\alpha)\tilde U_{\mathrm b}\tilde u_{\mathrm r}$, with $1+1+3+3=8$ real parameters.
+- Every biquaternion off the null cone is $r\exp(i\alpha)\tilde U_{\Psi,\mathrm b}\tilde u_{\mathrm r}$, with $1+1+3+3=8$ real parameters.
 - The scale is the modulus of the norm, the phase is half its argument, the boost is the Hermitian positive factor and the rotor is the real quaternion factor.
 - The word exists exactly off the zero-divisor cone; on the cone a lightlike four-vector has no rest frame and no boost split.
 - The quaternion pairing is $\tilde Q=\tilde q\exp(i\tilde{Ξ}_{\mathrm{sp}})$; the Hamilton pairing is $\tilde Q=\Rho(\cos\Theta+\vec{Ζ}\sin\Theta)$; the Cartan pairing is $\tilde Q=\tilde Q_H\tilde Q_0$.
@@ -305,16 +305,16 @@ The pairings read the same data under different headings, and the readings are d
 | --- | --- |
 | $r$ | the positive scale, $r=\lvert N\rvert^{1/2}$ |
 | $\alpha$ | the central phase, $\alpha=\tfrac12\arg N\in(-\pi/2,\pi/2]$ |
-| $\tilde U_{\mathrm b}=\exp(i\tfrac{\tilde{Ξ}_{\mathrm{sp},w}}{2}\vec u_{\mathrm b})$ | the frame rotor, the word's third factor for a transformation |
-| $\mathcal B=\tilde U_{\mathrm b}^{-2}=e^{-i\tilde{Ξ}_{\mathrm{sp},w}\vec u_{\mathrm b}}$ | the four-vector factor, the word's third factor for a four-vector element |
+| $\tilde U_{\Psi,\mathrm b}=\exp(i\tfrac{\tilde{Ξ}_{\mathrm{sp},w}}{2}\vec u_{\mathrm b})$ | the frame rotor, the word's third factor for a transformation |
+| $\mathcal B_{\Psi}=\tilde U_{\Psi,\mathrm b}^{-2}=e^{-i\tilde{Ξ}_{\mathrm{sp},w}\vec u_{\mathrm b}}$ | the four-vector factor, the word's third factor for a four-vector element |
 | $\tilde u_{\mathrm r}=\exp(\tfrac{\theta}{2}\vec u_{\mathrm r})$ | the unit real quaternion rotor |
 | $\tilde{Ξ}_{\mathrm{sp},w}$, $\theta$ | the word parameter and the rotation angle |
 | $\theta_{\mathrm{rpd}}$ | the kinematic rapidity; $\theta_{\mathrm{rpd},w}=\theta_{\mathrm{rpd}}$ for a transformation and $\theta_{\mathrm{rpd},w}=2\theta_{\mathrm{rpd}}$ for a four-vector element |
 | $\tilde q=r\tilde u_{\mathrm r}$ | the real quaternion modulus of the quaternion pairing |
 | $\tilde{Ξ}_{\mathrm{sp}}=\alpha+\tfrac{\tilde{Ξ}_{\mathrm{sp},w}}{2}\vec u_{\mathrm b,2}$ | the real quaternion angle of the quaternion pairing |
 | $\Rho=\sqrt N$, $\vec{Ζ}$, $\Theta$ | the modulus, axis and complex angle of the Hamilton pairing |
-| $B=\sqrt{\langle\vec Q,\vec Q\rangle_{\natural}}$ | the vector-part root, not the four-vector factor $\mathcal B$ |
-| $\tilde Q_H=r\tilde U_{\mathrm b}$, $\tilde Q_0=e^{i\alpha}\tilde u_{\mathrm r}$ | the Hermitian and $*$-unitary factors of the Cartan pairing |
+| $B=\sqrt{\langle\vec Q,\vec Q\rangle_{\natural}}$ | the vector-part root, not the four-vector factor $\mathcal B_{\Psi}$ |
+| $\tilde Q_H=r\tilde U_{\Psi,\mathrm b}$, $\tilde Q_0=e^{i\alpha}\tilde u_{\mathrm r}$ | the Hermitian and $*$-unitary factors of the Cartan pairing |
 | $\mathbb{B}_{\Psi}$ and $\mathbb{B}_{\Phi}$ | the Hermitian and anti-Hermitian sectors |
 
 ## Further Reading

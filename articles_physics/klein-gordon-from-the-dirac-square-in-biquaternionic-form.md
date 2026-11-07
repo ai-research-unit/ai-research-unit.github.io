@@ -32,13 +32,13 @@ $$
 \Box = \tilde{\nabla}\tilde{\nabla}^{\natural} = \tilde{\nabla}^{\natural}\tilde{\nabla} = \partial^2/\partial R_t^2 + \Delta ,
 $$
 
-with $Q_t = i c r'_t$, so that each time derivative carries the factor $(ic)^{-1} = -i/c$ when it is written in $r'_t$ and the time part is $-c^{-2}$ times the second derivative in $r'_t$. The imaginary unit satisfies $i^2 = -1$, and every product of two of them is reduced before a display is written: the collapse is what turns $(i\omega/c)^2$ into $-\omega^2/c^2$, and what makes $i\,\mathrm{Sc}(\tilde P\tilde{R}_\Phi^{\natural})$ a purely imaginary exponent whose exponential has unit modulus. The mass parameter of the operator pair is measured in inverse-length units; restoring $\frac{m\,c}{k_m}$ and $c$, it is the inverse reduced Compton wavelength
+with $Q_t = i c r'_t$, so that each time derivative carries the factor $(ic)^{-1} = -i/c$ when it is written in $r'_t$ and the time part is $-c^{-2}$ times the second derivative in $r'_t$. The imaginary unit satisfies $i^2 = -1$, and every product of two of them is reduced before a display is written: the collapse is what turns $(i\omega/c)^2$ into $-\omega^2/c^2$, and what makes $i\,\mathrm{Sc}(\tilde P_{\Phi}\tilde{R}_\Phi^{\natural})$ a purely imaginary exponent whose exponential has unit modulus. The mass parameter of the operator pair is measured in inverse-length units; restoring $\frac{m\,c}{k_m}$ and $c$, it is the inverse reduced Compton wavelength
 
 $$
 k_m=\dfrac{mc}{\hbar},
 $$
 
-so that the mass-shell condition reads $\tilde P\tilde P^{\natural} = -m^{2}\,c^{2}$ and the second-order equation reads $(\Box - k_m^{2})\tilde{Ξ} = 0$. The two symbols stand in the ratio $k_m=mc/\hbar$, so a display that writes $m$ where an inverse length is meant is writing $k_m$; the second-order operator is $\Box-k_m^{2}$ in the algebra and carries the same $k_m^{2}$ with the physical units restored. This is the length the Klein–Gordon article carries as $1/k_m$, and the sign of $\Box$ is the series sign, the one *Exercise: Chirality and the Weyl Spinors* reaches from the squares of the two chiral equations.
+so that the mass-shell condition reads $\tilde P_{\Phi}\tilde P_{\Phi}^{\natural} = -m^{2}\,c^{2}$ and the second-order equation reads $(\Box - k_m^{2})\tilde{Ξ} = 0$. The two symbols stand in the ratio $k_m=mc/\hbar$, so a display that writes $m$ where an inverse length is meant is writing $k_m$; the second-order operator is $\Box-k_m^{2}$ in the algebra and carries the same $k_m^{2}$ with the physical units restored. This is the length the Klein–Gordon article carries as $1/k_m$, and the sign of $\Box$ is the series sign, the one *Exercise: Chirality and the Weyl Spinors* reaches from the squares of the two chiral equations.
 
 ## The Gradient and Its Square
 
@@ -142,10 +142,10 @@ $$
 \Box = \partial^2/\partial R_t^2 + \partial^2/\partial R_x^2 .
 $$
 
-The chiral pair retains its form and the reduction gives $(\Box-k_m^{2})\tilde{Ξ}_{\mathrm{sp},L,R} = 0$ exactly as before. Each half is a whole biquaternion in the reduced theory as in the full one, so the chirality still splits the pair in two and the mass couples the halves exactly as before. The plane-wave substitution gives $\tilde P = i\omega/c\,e_t + k\vec e_x$ and
+The chiral pair retains its form and the reduction gives $(\Box-k_m^{2})\tilde{Ξ}_{\mathrm{sp},L,R} = 0$ exactly as before. Each half is a whole biquaternion in the reduced theory as in the full one, so the chirality still splits the pair in two and the mass couples the halves exactly as before. The plane-wave substitution gives $\tilde P_{\Phi} = i\omega/c\,e_t + k\vec e_x$ and
 
 $$
-\tilde P\tilde P^{\natural} = -\omega^2/c^2 + k^2 = -k_m^{2},
+\tilde P_{\Phi}\tilde P_{\Phi}^{\natural} = -\omega^2/c^2 + k^2 = -k_m^{2},
 \qquad\text{hence}\qquad
 \omega^2 = k^2c^2 + k_m^{2}c^2 ,
 $$
@@ -236,12 +236,12 @@ is the operator identity of the previous section, and both are the statement tha
 Write the four-wavevector and the four-position as
 
 $$
-\tilde P = i\frac{\omega}{c}e_t + \vec k\in\mathbb{B}_{\Phi},
+\tilde P_{\Phi} = i\frac{\omega}{c}e_t + \vec k\in\mathbb{B}_{\Phi},
 \qquad
 \tilde R_\Phi = i c r'_t\,e_t + \vec r\in\mathbb{B}_{\Phi},
 $$
 
-with $\vec k = k_1\vec e_x + k_2\vec e_y + k_3\vec e_z$ and $\vec r = r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z$. Here $\vec k^2$ abbreviates the sum $k_1^2+k_2^2+k_3^2$ of the squares of the components, not the quaternion product, which is its negative, $\vec k\,\vec k = -\vec k^2e_t$. The phase is $\mathrm{Sc}(\tilde P\tilde{R}_\Phi^{\natural}) = \vec k\cdot\vec r - \omega r'_t$, the scalar part of the product with the conjugate four-position. The exponent $i\,\mathrm{Sc}(\tilde P\tilde{R}_\Phi^{\natural})$ is a purely imaginary central element, so the exponential is central and differentiates as an ordinary exponential. On a plane wave,
+with $\vec k = k_1\vec e_x + k_2\vec e_y + k_3\vec e_z$ and $\vec r = r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z$. Here $\vec k^2$ abbreviates the sum $k_1^2+k_2^2+k_3^2$ of the squares of the components, not the quaternion product, which is its negative, $\vec k\,\vec k = -\vec k^2e_t$. The phase is $\mathrm{Sc}(\tilde P_{\Phi}\tilde{R}_\Phi^{\natural}) = \vec k\cdot\vec r - \omega r'_t$, the scalar part of the product with the conjugate four-position. The exponent $i\,\mathrm{Sc}(\tilde P_{\Phi}\tilde{R}_\Phi^{\natural})$ is a purely imaginary central element, so the exponential is central and differentiates as an ordinary exponential. On a plane wave,
 
 $$
 \partial/\partial r'_t \longmapsto -i\omega, \qquad \partial/\partial r_k\longmapsto ik_k, \qquad \partial/\partial R_t \longmapsto -\frac{\omega}{c},
@@ -258,13 +258,13 @@ $$
 The biquaternion norm of the wave biquaternion is
 
 $$
-\langle\tilde P\rangle_{\natural} = \tilde P\tilde P^{\natural} = \left(i\frac{\omega}{c}\right)^2 + k_1^2+k_2^2+k_3^2 = -\frac{\omega^2}{c^2} + \vec k^2 = -\Box ,
+\langle\tilde P_{\Phi}\rangle_{\natural} = \tilde P_{\Phi}\tilde P_{\Phi}^{\natural} = \left(i\frac{\omega}{c}\right)^2 + k_1^2+k_2^2+k_3^2 = -\frac{\omega^2}{c^2} + \vec k^2 = -\Box ,
 $$
 
 the last equality holding on the plane wave, so the second-order equation $(\Box - k_m^{2})\tilde{Ξ}_{\mathrm{sp}} = 0$ is the mass-shell condition
 
 $$
-\tilde P\tilde P^{\natural} = -m^{2}\,c^{2},
+\tilde P_{\Phi}\tilde P_{\Phi}^{\natural} = -m^{2}\,c^{2},
 \qquad\text{equivalently}\qquad
 \omega^2 = \vec k^2c^2 + k_m^{2}c^2,
 $$
@@ -301,7 +301,7 @@ The transfer from the first-order pair to the second-order equation can now be a
 
 There is a final structural remark. The passage from the pair to the square is the passage from an operator that exchanges the halves to one that acts in each. In the pair operator the gradient exchanges the halves and the mass acts in each; composing the two mass-shifted maps cancels the exchange and leaves $\Box-k_m^{2}$ in each half, so what has been traced out is exactly the exchange. The sign attached to each half is the one the supersymmetric structure of the first-order operator exploits, and *Supersymmetric Quantum Physics in the Biquaternion Framework* develops it. The Klein–Gordon equation is the bosonic shadow of the fermionic square root: it is what remains of a first-order operator once the exchange of the two halves is cancelled.
 
-In the algebra the only identities used are $\tilde\nabla\tilde\nabla^\natural = \tilde\nabla^\natural\tilde\nabla = \Box$, which is exact, and the mass-shell condition $\tilde P\tilde P^{\natural} = -m^{2}\,c^{2}$, which is the definition of the on-shell four-momentum; no array enters. The pair reading uses the same identity twice, once for each half: $\mathbb{D}^2$ is $\tilde\nabla\tilde\nabla^{\natural}$ on one half and $\tilde\nabla^{\natural}\tilde\nabla$ on the other. No array enters that reading either.
+In the algebra the only identities used are $\tilde\nabla\tilde\nabla^\natural = \tilde\nabla^\natural\tilde\nabla = \Box$, which is exact, and the mass-shell condition $\tilde P_{\Phi}\tilde P_{\Phi}^{\natural} = -m^{2}\,c^{2}$, which is the definition of the on-shell four-momentum; no array enters. The pair reading uses the same identity twice, once for each half: $\mathbb{D}^2$ is $\tilde\nabla\tilde\nabla^{\natural}$ on one half and $\tilde\nabla^{\natural}\tilde\nabla$ on the other. No array enters that reading either.
 
 ## The Converse Direction
 
@@ -392,7 +392,7 @@ positive everywhere, integrable at infinity, singular at the origin as $1/r^2$. 
 ### What the Correspondence Does Not Give
 
 1. **No new solutions, and no privileged half.** The bijection repackages the free solution space. It also does not make the first half the more fundamental object, because the split is symmetric: parity sends $\tilde\nabla$ to $\tilde\nabla^{\natural}$ and back, so if $(\tilde{Ξ}_{\mathrm{sp},R},\tilde{Ξ}_{\mathrm{sp},L})$ solves the pair then so does $(\tilde{Ξ}_{\mathrm{sp},L},\tilde{Ξ}_{\mathrm{sp},R})$ composed with $\vec r\mapsto-\vec r$, which was checked on the symbol of the pair at both frequency signs. Kassandrov records the same exchange in external fields, where the halves trade places for anti-self-dual backgrounds.
-2. **It fails under minimal coupling.** With $\tilde\nabla\mapsto\tilde\nabla - ie\tilde A$ the two generalized gradients stop commuting, $\tilde\nabla_{\mathrm{gco}}^{\natural}\tilde\nabla_{\mathrm{gco}}\neq\tilde\nabla_{\mathrm{gco}}\tilde\nabla_{\mathrm{gco}}^{\natural}$, and what their commutator carries is the field strength; the product is then no longer the central scalar and the substitution no longer closes. A reduction survives only in a background whose complex field is (anti)self-dual, which is the boundary the hydrogen article meets in its own open questions.
+2. **It fails under minimal coupling.** With $\tilde\nabla\mapsto\tilde\nabla - ie\tilde A_{\Phi}$ the two generalized gradients stop commuting, $\tilde\nabla_{\mathrm{gco}}^{\natural}\tilde\nabla_{\mathrm{gco}}\neq\tilde\nabla_{\mathrm{gco}}\tilde\nabla_{\mathrm{gco}}^{\natural}$, and what their commutator carries is the field strength; the product is then no longer the central scalar and the substitution no longer closes. A reduction survives only in a background whose complex field is (anti)self-dual, which is the boundary the hydrogen article meets in its own open questions.
 3. **No physical content is added.** The distribution of the free modes over the mass shell, the amplitude of each half, the chirality of each half: all unchanged. What the section adds is the sentence that can be said about the pair once it is read as one equation and one definition — the second half is the gradient of the first.
 
 The source builds infinite chains of solutions by feeding the generated half back as a new generator. In the algebra each step is one more application of the definition, and the corpus records the mechanism without reproducing the chains in the source's own arrangement of the components.
@@ -405,7 +405,7 @@ On the pair the same square is written as one operator. The pair operator $\math
 
 The square root is not scalar. The companion article on the Klein–Gordon equation proves that $\Box - k_m^{2}$ has no first-order scalar factorisation in $\mathbb{B}$, because a scalar coefficient would have to anticommute with all three quaternion units and none does. The Dirac square root escapes the obstruction by being operator-valued and by exchanging the halves: it is the conjugate pair $(\tilde{\nabla},\tilde{\nabla}^{\natural})$ acting on the two chiral halves, with the mass the same scalar in each. Written on the pair, the operator identity is $(\mathbb{D} - k_m)(\mathbb{D} + k_m) = \Box-k_m^{2}$ in each half; written as $\mathbb{D}\tilde{Ξ}_{\mathrm{sp}} = k_m\tilde{Ξ}_{\mathrm{sp}}$, it is $\mathbb{D}^2 = \Box$ in each half. The scalar no-go and the operator-valued square root are the same multiplication table seen from two sides.
 
-The square carries the mass shell $\tilde P\tilde P^{\natural} = -m^{2}\,c^{2}$, hence $E^2 = \vec p^2c^2 + m^2c^4$, and the mass-squared coefficient of the second-order operator; it does not carry the sign of the mass, the chirality of each half, or the relation between the halves that selects the first-order solution space from the larger second-order one. At fixed three-momentum the pair's second-order space has complex dimension sixteen and the first-order equation selects eight of them, so the square is a necessary and not a sufficient condition. The Klein–Gordon operator is the bosonic shadow of a first-order object that exchanges the two halves.
+The square carries the mass shell $\tilde P_{\Phi}\tilde P_{\Phi}^{\natural} = -m^{2}\,c^{2}$, hence $E^2 = \vec p^2c^2 + m^2c^4$, and the mass-squared coefficient of the second-order operator; it does not carry the sign of the mass, the chirality of each half, or the relation between the halves that selects the first-order solution space from the larger second-order one. At fixed three-momentum the pair's second-order space has complex dimension sixteen and the first-order equation selects eight of them, so the square is a necessary and not a sufficient condition. The Klein–Gordon operator is the bosonic shadow of a first-order object that exchanges the two halves.
 
 The converse holds exactly for the free pair. Read the first member as a definition, $\tilde{Ξ}_{\mathrm{sp},L} =\frac{1}{m}\tilde\nabla\tilde{Ξ}_{\mathrm{sp},R}$; the second member then becomes $(\Box-k_m^{2})\tilde{Ξ}_{\mathrm{sp},R} = 0$, so the free Dirac solutions stand in bijection with the free Klein–Gordon solutions of one chiral half, and the second half is the gradient of the first. In this two-term form there is no gauge freedom, because the only shift the gradient annihilates is the massless Weyl field, which takes the potential off the mass shell; the source's four-scalar form of the same construction does carry the residual gauge $\xi_{\mathrm{scl}}\mapsto\xi_{\mathrm{scl}}+\kappa$ with $D^*\kappa = 0$, and that is what earns the phrase *the Dirac field is a gauge field*. The correspondence is exact for the free field and stops at minimal coupling, where the commutator of the two generalized gradients is the field strength. Its smallest illustration is the static Yukawa pair, generator $e^{-mr}/r$ and second half $-(1+mr)e^{-mr}\vec r/(m r^3)$, on which the Dirac density is positive definite and the Klein–Gordon density vanishes.
 
@@ -425,8 +425,8 @@ The converse holds exactly for the free pair. Read the first member as a definit
 | $\tilde{\nabla}^2 = \left(\partial^2/\partial R_t^2 - \lvert\vec\nabla\rvert^2\right)e_t + 2\,\partial/\partial R_t\,\vec\nabla$ | Square of the gradient alone; non-central, with a vector remainder |
 | $\Box = \tilde{\nabla}\tilde{\nabla}^{\natural} = \tilde{\nabla}^{\natural}\tilde{\nabla} = \partial^2/\partial R_t^2 + \Delta$ | d'Alembertian, series convention |
 | $\langle\tilde{Q}\rangle_{\natural} = \tilde{Q}\tilde{Q}^{\natural} = \sum_\mu Q_\mu^2$ | Biquaternion norm |
-| $\tilde P =\frac{m\,c\,(i\omega/c\,e_t + \vec k)}{k_m}$ | Four-wavevector, $\tilde P\tilde P^{\natural} = -m^{2}\,c^{2}$ |
-| $\tilde R_\Phi = i c r'_t\,e_t + \vec r$, with $\vec r = r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z$ | Four-position, phase $\mathrm{Sc}(\tilde P\tilde{R}_\Phi^{\natural}) = \vec k\cdot\vec r - \omega r'_t$ |
+| $\tilde P_{\Phi} =\frac{m\,c\,(i\omega/c\,e_t + \vec k)}{k_m}$ | Four-wavevector, $\tilde P_{\Phi}\tilde P_{\Phi}^{\natural} = -m^{2}\,c^{2}$ |
+| $\tilde R_\Phi = i c r'_t\,e_t + \vec r$, with $\vec r = r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z$ | Four-position, phase $\mathrm{Sc}(\tilde P_{\Phi}\tilde{R}_\Phi^{\natural}) = \vec k\cdot\vec r - \omega r'_t$ |
 | $1/k_m$ | The mass length of the operator pair, $\hbar/(mc)$ (inverse reduced Compton wavelength) |
 | $\tilde{\nabla}\tilde{Ξ}_{\mathrm{sp},R} = k_m\tilde{Ξ}_{\mathrm{sp},L}$, $\tilde{\nabla}^{\natural}\tilde{Ξ}_{\mathrm{sp},L} = k_m\tilde{Ξ}_{\mathrm{sp},R}$ | The one-sided pair; linear, with the mass the same scalar in each half |
 | $\tilde{Ξ}_{\mathrm{sp},L} =\frac{1}{m}\tilde\nabla\tilde{Ξ}_{\mathrm{sp},R}$ | The second half as the gradient of the first; the pair's equivalent form, exact whenever $(\Box-k_m^{2})\tilde{Ξ}_{\mathrm{sp},R} = 0$ |

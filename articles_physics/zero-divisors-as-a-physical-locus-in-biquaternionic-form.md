@@ -6,7 +6,7 @@ The biquaternion algebra $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ is 
 
 The answer has three parts, and they are three images of one algebraic object under the three maps that the framework uses: the momentum-space image, the configuration-space image, and the state-space image.
 
-- **In momentum space** the locus is the mass shell of a massless particle, $E^2/c^2=p^2$, written as $\langle\tilde P\rangle_{\natural}=0$ for the momentum biquaternion $\tilde P=i\frac{E}{c}e_t+\vec p$. The non-relativistic free dispersion $E=p^2 c/(2\,m\,c)$ does **not** lie on it: the on-shell momentum satisfies $N=p^2(1-p^2/4m^2c^2)$ for a free particle, which is positive (spacelike) for every $p<2mc$, vanishes exactly at $p=2mc$, and is negative beyond. The zero divisor locus is therefore the boundary of the non-relativistic description in momentum space: the free spin-0 particle approaches the locus only at the scale $2mc$, where the non-relativistic approximation is already failing for other reasons.
+- **In momentum space** the locus is the mass shell of a massless particle, $E^2/c^2=p^2$, written as $\langle\tilde P_{\Phi}\rangle_{\natural}=0$ for the momentum biquaternion $\tilde P_{\Phi}=i\frac{E}{c}e_t+\vec p$. The non-relativistic free dispersion $E=p^2 c/(2\,m\,c)$ does **not** lie on it: the on-shell momentum satisfies $N=p^2(1-p^2/4m^2c^2)$ for a free particle, which is positive (spacelike) for every $p<2mc$, vanishes exactly at $p=2mc$, and is negative beyond. The zero divisor locus is therefore the boundary of the non-relativistic description in momentum space: the free spin-0 particle approaches the locus only at the scale $2mc$, where the non-relativistic approximation is already failing for other reasons.
 - **In configuration space** the locus is not reached by a real momentum, because a real pure momentum $p\,\vec e_\mu$ has $N=p^2$ and vanishes only at $p=0$. The image of $N\to0$ is the **turning surface** of the semiclassical treatment, $p(x)^2=2m(E-V(x))=0$, which is where the WKB amplitude $A\propto1/\sqrt{|p|}$ diverges and the eikonal momentum degenerates. The turning surface is the configuration-space shadow of the cone.
 - **In state space** the locus is the boundary of the pure-state manifold. The state space of the spin-0 problem is the trace-one slice of the future light cone of the informational sector, and the pure states are exactly the points on its boundary, where the density operator is a projector.
 
@@ -70,9 +70,9 @@ so $\tilde\Pi$ is a non-pure zero divisor and a **right** zero divisor with anni
 For a free particle the kinematic data are an energy $E$ and a momentum $\vec p$. In the material sector they combine into the momentum biquaternion
 
 $$
-\boxed{\;\tilde P=i\frac{E}{c}\,e_t+\vec p ,
+\boxed{\;\tilde P_{\Phi}=i\frac{E}{c}\,e_t+\vec p ,
 \qquad
-\langle\tilde P\rangle_{\natural}=\left(i\frac{E}{c}\right)^2+\vec p^2=-\frac{E^2}{c^2}+p^2\;},
+\langle\tilde P_{\Phi}\rangle_{\natural}=\left(i\frac{E}{c}\right)^2+\vec p^2=-\frac{E^2}{c^2}+p^2\;},
 $$
 
 whose biquaternion norm vanishes precisely on the massless shell. The zero divisor locus in momentum space is therefore the massless shell $E=|p|c$, the boundary between the spacelike and timelike regions. Whether a physical particle sits on it is a question about its dispersion relation, and that is where the non-relativistic and relativistic interpretations separate.
@@ -82,7 +82,7 @@ whose biquaternion norm vanishes precisely on the massless shell. The zero divis
 For the non-relativistic free particle $E=p^2 c/(2\,m\,c)$, so the on-shell momentum element has
 
 $$
-\boxed{\;\langle\tilde P\rangle_{\natural}=p^2-\frac{p^4}{4m^2c^2}=p^2\left(1-\frac{p^2}{4m^2c^2}\right)\;}.
+\boxed{\;\langle\tilde P_{\Phi}\rangle_{\natural}=p^2-\frac{p^4}{4m^2c^2}=p^2\left(1-\frac{p^2}{4m^2c^2}\right)\;}.
 $$
 
 This was verified numerically in explicit complex arithmetic with $c=m=1$: the values are $N=+0.234375,+0.750000,+0.984375$ at $p=0.5,1.0,1.5$; $N=+0.003995$ at $p=1.999$; $N=0$ at $p=2$; and $N=-0.004005,-11.250000$ at $p=2.001,3.0$. The dispersion curve is **spacelike** for all $p<2mc$, **null** at $p=2mc$, and **timelike** beyond. The non-relativistic free particle never sits on the zero divisor locus except at the single scale
@@ -98,7 +98,7 @@ which is the threshold at which the non-relativistic kinetic description meets t
 It is worth recording what the locus is **not**. A classically forbidden region has an imaginary momentum, $\vec p=i\kappa\vec u$ with $\kappa$ real and $E$ real, and the on-shell element has
 
 $$
-\langle\tilde P\rangle_{\natural}=-\frac{E^2}{c^2}+(i\kappa)^2=-\frac{E^2}{c^2}-\kappa^2<0 ,
+\langle\tilde P_{\Phi}\rangle_{\natural}=-\frac{E^2}{c^2}+(i\kappa)^2=-\frac{E^2}{c^2}-\kappa^2<0 ,
 $$
 
 which is strictly timelike, not null. Tunnelling therefore does not put the particle on the zero divisor locus; the evanescent region sits well inside the timelike cone. Genuinely null momenta require complex components in more than one direction: for example $p_1=\kappa$, $p_2=i\kappa$, $p_3=0$ with $E=0$ gives $N=p_1^2+p_2^2=\kappa^2-\kappa^2=0$. Such complex null momenta are algebraic zero divisors, and they are not realised by a simple evanescent wave; they belong to the complex-momentum constructions of scattering theory, where they are the momenta of the Regge and geometric-optics descriptions. The physical locus, in the non-relativistic setting, is the real null shell at $p=2mc$ and the complex null cone of the more elaborate constructions, not the tunnelling momentum.
@@ -243,7 +243,7 @@ The table is the article's content in one view. The locus is the meeting point o
 
 **1. Is there a natural measure on the cone?** The configuration-space points of the subcategory's problems are points of the material sector, whose null cone is the zero divisor cone. Whether that cone carries a distinguished measure for the path integral or the state space is open; the companion path-integral article of this subcategory raises the same question without answering it.
 
-**2. Does the non-relativistic locus have an observable signature?** The momentum-space locus is reached at $p=2mc$, which is far outside the non-relativistic regime; whether any non-relativistic experiment is sensitive to the proximity of the cone — through the sign of $\langle\tilde P\rangle_{\natural}$ or the complex null momenta of scattering theory — is not established.
+**2. Does the non-relativistic locus have an observable signature?** The momentum-space locus is reached at $p=2mc$, which is far outside the non-relativistic regime; whether any non-relativistic experiment is sensitive to the proximity of the cone — through the sign of $\langle\tilde P_{\Phi}\rangle_{\natural}$ or the complex null momenta of scattering theory — is not established.
 
 **3. Which real form carries the physics?** The complex null cone and the real cones of the material and informational sectors are different real forms of one locus. This article uses the real form for the state space and the momentum shell and the complex form for the algebraic solution space; whether a single interpretation covers both, and how the real structure $\flat$ relates them, is not settled here.
 
@@ -253,7 +253,7 @@ The table is the article's content in one view. The locus is the meeting point o
 
 The zero divisor set of $\mathbb{B}$ is $\mathcal{Z}=\{\tilde Q\ne0:\langle\tilde Q\rangle_{\natural}=0\}$, a complex cone of complex dimension $3$ minus the origin, split into the pure nilpotents ($Q_t=0$, $\tilde Q^2=0$) and the non-pure multiples of idempotents ($Q_t\ne0$, $\tilde Q^2=2Q_t\tilde Q$, $\tilde\Pi=\tilde Q/(2Q_t)$); both identities were verified exactly for $\tilde Q=\vec e_x+i\vec e_y$ and $\tilde Q=e_t+i\vec e_x$. The cone lies in $\mathbb{B}_{\Psi}$ and $\mathbb{B}_{\Phi}$ and is absent from $\mathbb{B}_{C}$ and $\mathbb{B}_{H}$; in $\mathbb{B}_{\Phi}$ with $\tilde R_\Phi=i c r'_t\,e_t+r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z$ it is the light cone.
 
-Physically the locus has three images. In **momentum space** it is the massless shell, and the non-relativistic free dispersion has $\langle\tilde P\rangle_{\natural}=p^2(1-p^2/4m^2c^2)$, spacelike for $p<2mc$, null at $p=2mc$ and timelike beyond, verified at $p=0.5,1,1.5,1.999,2,2.001,3$ with $c=m=1$. Tunnelling momenta are timelike, not null; genuine complex null momenta exist but are not evanescent waves. In **configuration space** it is the turning surface $E=V(x)$ and the caustic of the semiclassical propagator, where the WKB amplitude diverges. In **state space** it is the boundary of the trace-one slice of the future light cone, the pure states with $|\vec r|=1$ (verified to $10^{-16}$) at the boundary and the invertible mixed states inside.
+Physically the locus has three images. In **momentum space** it is the massless shell, and the non-relativistic free dispersion has $\langle\tilde P_{\Phi}\rangle_{\natural}=p^2(1-p^2/4m^2c^2)$, spacelike for $p<2mc$, null at $p=2mc$ and timelike beyond, verified at $p=0.5,1,1.5,1.999,2,2.001,3$ with $c=m=1$. Tunnelling momenta are timelike, not null; genuine complex null momenta exist but are not evanescent waves. In **configuration space** it is the turning surface $E=V(x)$ and the caustic of the semiclassical propagator, where the WKB amplitude diverges. In **state space** it is the boundary of the trace-one slice of the future light cone, the pure states with $|\vec r|=1$ (verified to $10^{-16}$) at the boundary and the invertible mixed states inside.
 
 The locus is kinematically inert: $\langle\tilde U_{\mathrm{lor}}\tilde Q\rangle_{\natural}=\langle\tilde Q\rangle_{\natural}$ for a unit rotor and $\langle\exp(i\theta_{\mathrm{pha}})\tilde Q\rangle_{\natural}=\exp(2i\theta_{\mathrm{pha}})\langle\tilde Q\rangle_{\natural}$ for a central phase, both verified to machine precision, so the $*$-unitary flow can neither create nor destroy a zero divisor. The idempotent that generates the state module is itself on the locus, $\langle\tilde\Pi\rangle_{\natural} = \langle\tilde\Pi,\tilde\Pi\rangle_{\natural}=0$ with $\tilde\Pi^2=\tilde\Pi$ and $\tilde\Pi\tilde\Pi^{\natural}=\tilde\Pi^{\natural}\tilde\Pi=0$ verified exactly, and the free solution space contains null multiples $\tilde{Ξ}_{\mathrm{sp}}=q\tilde Q$ of every solution, with $\langle \tilde{Ξ}_{\mathrm{sp}}\rangle_{\natural}=0$ identically, verified with a spreading Gaussian packet whose free-equation residual was $2\times10^{-9}$. The algebraic null cone is **not** the zero-probability locus: probabilities use the positive-definite Hermitian form $\sum_\mu|Q_\mu|^2$, which equals $2|q|^2$ for the null solution and does not vanish, so the complex cone of the algebra and the real cone of the state space and the momentum shell are different real forms of one locus and must not be identified. The locus is not a causal boundary in this subcategory, because the Schrödinger equation is parabolic and its signal cone is degenerate. The algebra's division boundary, the boundary of the non-relativistic dispersion, the boundary of the semiclassical expansion, and the boundary of the pure-state manifold are one algebraic locus read under its different real forms.
 
@@ -271,8 +271,8 @@ The locus is kinematically inert: $\langle\tilde U_{\mathrm{lor}}\tilde Q\rangle
 | $\mathbb{B}_{C}$, $\mathbb{B}_{H}$ | Division subalgebras; no zero divisors |
 | $\mathbb{B}_{\Psi}$, $\mathbb{B}_{\Phi}$ | Hermitian / anti-Hermitian sectors; each contains the cone |
 | $\tilde R_\Phi=i c r'_t\,e_t+r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z$ | Material coordinate; $\mathbb{B}_{\Phi}$ cone is the light cone |
-| $\tilde P=i\frac{E}{c}e_t+\vec p$ | Momentum biquaternion |
-| $\langle\tilde P\rangle_{\natural}=p^2-\frac{p^4}{4m^2c^2}$ | Non-relativistic on-shell biquaternion norm; null at $p=2mc$ |
+| $\tilde P_{\Phi}=i\frac{E}{c}e_t+\vec p$ | Momentum biquaternion |
+| $\langle\tilde P_{\Phi}\rangle_{\natural}=p^2-\frac{p^4}{4m^2c^2}$ | Non-relativistic on-shell biquaternion norm; null at $p=2mc$ |
 | $\tilde\Pi=\tfrac12(e_t+i\vec u)$, $\langle\tilde\Pi\rangle_{\natural}=0$ | Idempotent generating the state module; a zero divisor |
 | $\sum_\mu\lvert Q_\mu\rvert^2$ | Hermitian form (positive definite), equal to the plain form on the sector; the probability pairing, distinct from $\langle\cdot\rangle_{\natural}$ |
 | $\tilde{Ξ}_{\mathrm{sp}}=q\tilde Q$, $\langle \tilde{Ξ}_{\mathrm{sp}}\rangle_{\natural}=0$ | Null solution of the free equation for a nilpotent $\tilde Q$ |

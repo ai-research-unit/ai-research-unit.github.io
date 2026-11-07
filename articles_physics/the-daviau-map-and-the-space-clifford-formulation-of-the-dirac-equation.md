@@ -9,10 +9,10 @@ Daviau writes the Dirac equation as one equation for a general element of the bi
 **The equation.** For a general element $\tilde{Ξ}_{\mathrm{sp}}$ of $\mathbb{B}$ the equation is
 
 $$
-\boxed{\;\mathfrak D\,\tilde{Ξ}_{\mathrm{sp}}\,(-\vec e_x)=k_m\overline{\tilde{Ξ}_{\mathrm{sp}}}+q\,\tilde A\,\tilde{Ξ}_{\mathrm{sp}}\;}
+\boxed{\;\mathfrak D\,\tilde{Ξ}_{\mathrm{sp}}\,(-\vec e_x)=k_m\overline{\tilde{Ξ}_{\mathrm{sp}}}+q\,\tilde A_{\Phi}\,\tilde{Ξ}_{\mathrm{sp}}\;}
 $$
 
-with the elements $\mathfrak D$ and $\tilde A$ of §*The Daviau Equation*. The gradient multiplies on the left, the fixed bivector $-\vec e_x$ on the right, and the mass term is the complex conjugation of the field.
+with the elements $\mathfrak D$ and $\tilde A_{\Phi}$ of §*The Daviau Equation*. The gradient multiplies on the left, the fixed bivector $-\vec e_x$ on the right, and the mass term is the complex conjugation of the field.
 
 **What the article shows.** Three things, and each is exact. The eight real functions of the source's field are the eight real coordinates of an element of $\mathbb{B}$, and the assignment carries no free choice (§*The Daviau Map*). The star conjugation of the source is the corpus's complex conjugation $\bar{\cdot}$, and not the Hermitian conjugation ${}^{*}$; this is the article's main algebraic point (§*The Star Conjugation*). The equation is two-sided, but its right factor is a fixed bivector and not the chirality, which places it with the corpus's chiral pair and not with Kravchenko's equation (§*The Two Equations the Corpus Carries*).
 
@@ -123,10 +123,10 @@ with the coefficients $(a,d,b,c,-e,f,-g,h)$ on the units $(e_t,\,i\vec e_x,\,i\v
 
 ## The Daviau Equation
 
-**Definition.** With $\tilde{Ξ}_{\mathrm{sp}}$ a general element and $\mathfrak D$, $\tilde A$ the elements below, the equation is
+**Definition.** With $\tilde{Ξ}_{\mathrm{sp}}$ a general element and $\mathfrak D$, $\tilde A_{\Phi}$ the elements below, the equation is
 
 $$
-\boxed{\;\mathfrak D\,\tilde{Ξ}_{\mathrm{sp}}\,(-\vec e_x)=k_m\overline{\tilde{Ξ}_{\mathrm{sp}}}+q\,\tilde A\,\tilde{Ξ}_{\mathrm{sp}}\;}
+\boxed{\;\mathfrak D\,\tilde{Ξ}_{\mathrm{sp}}\,(-\vec e_x)=k_m\overline{\tilde{Ξ}_{\mathrm{sp}}}+q\,\tilde A_{\Phi}\,\tilde{Ξ}_{\mathrm{sp}}\;}
 $$
 
 with
@@ -134,7 +134,7 @@ with
 $$
 \mathfrak D=e_t\frac{\partial}{\partial R_t}+i\vec e_y\frac{\partial}{\partial R_x}+i\vec e_z\frac{\partial}{\partial R_y}+i\vec e_x\frac{\partial}{\partial R_z},
 \qquad
-\tilde A=A_t\,e_t+A_x\,i\vec e_y+A_y\,i\vec e_z+A_z\,i\vec e_x .
+\tilde A_{\Phi}=A_t\,e_t+A_x\,i\vec e_y+A_y\,i\vec e_z+A_z\,i\vec e_x .
 $$
 
 The derivatives are the four coordinate derivatives of the corpus (*Operator and Calculus Conventions*, §*The Gradient*), the coordinates are $Q_t,Q_x,Q_y,Q_z$, and on the material sector $Q_t=i c r'_t$.
@@ -178,7 +178,7 @@ where $r'_t$ is the physical time, related to the corpus's coordinate by $Q_t=i 
 
 | | Daviau equation | Corpus chiral pair | Kravchenko's equation |
 |---|---|---|---|
-| Equation | $\mathfrak D\tilde{Ξ}_{\mathrm{sp}}(-\vec e_x)=k_m\overline{\tilde{Ξ}_{\mathrm{sp}}}+q\tilde A\tilde{Ξ}_{\mathrm{sp}}$ | $\tilde\nabla\tilde{Ξ}_{\mathrm{sp},R}=k_m\tilde{Ξ}_{\mathrm{sp},L}$, $\tilde\nabla^{\natural}\tilde{Ξ}_{\mathrm{sp},L}=k_m\tilde{Ξ}_{\mathrm{sp},R}$ | $\mathcal NF=0$ |
+| Equation | $\mathfrak D\tilde{Ξ}_{\mathrm{sp}}(-\vec e_x)=k_m\overline{\tilde{Ξ}_{\mathrm{sp}}}+q\tilde A_{\Phi}\tilde{Ξ}_{\mathrm{sp}}$ | $\tilde\nabla\tilde{Ξ}_{\mathrm{sp},R}=k_m\tilde{Ξ}_{\mathrm{sp},L}$, $\tilde\nabla^{\natural}\tilde{Ξ}_{\mathrm{sp},L}=k_m\tilde{Ξ}_{\mathrm{sp},R}$ | $\mathcal NF=0$ |
 | Multiplication | left by $\mathfrak D$, right by $-\vec e_x$ | left by $\tilde\nabla$ and by $\tilde\nabla^{\natural}$ | left by $i\partial/\partial r'_t$ and by $D_3$, right by $\vec e_z$ |
 | Field | $\tilde{Ξ}_{\mathrm{sp}}\in\mathbb{B}$, a general element | $\tilde{Ξ}_{\mathrm{sp}}=\tilde{Ξ}_{\mathrm{sp},L}+\tilde{Ξ}_{\mathrm{sp},R}$ | $F\in\mathbb{B}$ |
 | Mass | $m\overline{\tilde{Ξ}_{\mathrm{sp}}}$, conjugate-linear | the pairing of the two values | $-k_mi\overline{F}\vec e_z$ |
@@ -279,8 +279,8 @@ The formulation is an equivalent rewriting and carries no new physics. Its value
 | $\tilde{Ξ}_{\mathrm{sp}}=a\,e_t+d\,i\vec e_x+b\,i\vec e_y+c\,i\vec e_z-e\,\vec e_x+f\,\vec e_y-g\,\vec e_z+h\,i$ | The Daviau map, on the eight real units |
 | $\overline{\tilde{Ξ}_{\mathrm{sp}}}$ | The star of the source: the corpus's complex conjugation, not ${}^{*}$ |
 | $\mathfrak D=e_t\partial/\partial R_t+i\vec e_y\partial/\partial R_x+i\vec e_z\partial/\partial R_y+i\vec e_x\partial/\partial R_z$ | The cyclically permuted gradient |
-| $\tilde A=A_t\,e_t+A_x\,i\vec e_y+A_y\,i\vec e_z+A_z\,i\vec e_x$ | The potential in the same basis |
-| $\mathfrak D\tilde{Ξ}_{\mathrm{sp}}(-\vec e_x)=k_m\overline{\tilde{Ξ}_{\mathrm{sp}}}+q\tilde A\tilde{Ξ}_{\mathrm{sp}}$ | The Daviau equation |
+| $\tilde A_{\Phi}=A_t\,e_t+A_x\,i\vec e_y+A_y\,i\vec e_z+A_z\,i\vec e_x$ | The potential in the same basis |
+| $\mathfrak D\tilde{Ξ}_{\mathrm{sp}}(-\vec e_x)=k_m\overline{\tilde{Ξ}_{\mathrm{sp}}}+q\tilde A_{\Phi}\tilde{Ξ}_{\mathrm{sp}}$ | The Daviau equation |
 | $-\vec e_x$ | The fixed right factor; a bivector, even in both parities |
 | $z$ | The cyclic relabelling of the three space directions, $z^3=\mathrm{id}$ |
 | $\mathbb{B}$ | The biquaternion algebra; the algebra of the formulation |

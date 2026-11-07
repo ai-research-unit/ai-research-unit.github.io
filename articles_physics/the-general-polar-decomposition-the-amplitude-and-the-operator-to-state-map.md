@@ -12,7 +12,7 @@ The name needs a warning at the start. The **operator-to-state map** is not the 
 
 **The two decompositions.** The general decomposition is not the Cartan pairing. The word $\tilde Q=\tilde Q_H\tilde Q_0$ with $\tilde Q_H\ge0$ and $\tilde Q_0$ a partial isometry is the general H-norm polar decomposition of *The Polar Decomposition of a Biquaternion*, defined on every nonzero element. The **Cartan pairing** is its N-regular restriction, where $\tilde Q_H$ is positive definite and $\tilde Q_0$ is $*$-unitary; it is defined only on $\langle\tilde Q\rangle_{\natural}\neq0$ and is owned by *The Cartan Hermitian Pairing of the Polar Decomposition of Biquaternions*. The two coincide off the null cone and differ on it, where the Cartan theorem does not apply. The physics articles that use the general form also call it the **generalized Cartan pairing**; the name is a usage, not a theorem, and this article reserves *Cartan* for the $*$-unitary case.
 
-The conventions are those of *Algebra and Element Conventions*. The algebra is $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}\cong M_2(\mathbb{C})$, the Hermitian form is $\langle\tilde Q_1,\tilde Q_2\rangle_{*}=\mathrm{Sc}(\tilde Q_1\tilde Q_2^{*})$, the trace is $\operatorname{Tr}\tilde Q=2\operatorname{Sc}\tilde Q=2Q_t$, and a state is $\tilde{Ϛ}\in\mathbb{B}_{\Psi}$ with $\operatorname{Tr}\tilde{Ϛ}=1$, that is, $\tilde{Ϛ}=\tfrac12(e_t+i\vec r)$ with $\lvert\vec r\rvert\le1$.
+The conventions are those of *Algebra and Element Conventions*. The algebra is $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}\cong M_2(\mathbb{C})$, the Hermitian form is $\langle\tilde Q_1,\tilde Q_2\rangle_{*}=\mathrm{Sc}(\tilde Q_1\tilde Q_2^{*})$, the trace is $\operatorname{Tr}\tilde Q=2\operatorname{Sc}\tilde Q=2Q_t$, and a state is $\tilde{Ϛ}_{\Psi}\in\mathbb{B}_{\Psi}$ with $\operatorname{Tr}\tilde{Ϛ}_{\Psi}=1$, that is, $\tilde{Ϛ}_{\Psi}=\tfrac12(e_t+i\vec r)$ with $\lvert\vec r\rvert\le1$.
 
 ## The Results It Uses
 
@@ -24,19 +24,19 @@ The conventions are those of *Algebra and Element Conventions*. The algebra is $
 | the rank-one case and the partial isometry on the null cone | [*The Polar Decomposition of a Biquaternion*](../articles_maths/the-polar-decomposition-of-a-biquaternion.html), §*The Isometry Factor*, §*Examples* | the cone case of the same general pair |
 | the state space, the Bloch ball and the Born rule | [*Quantum Physics in Biquaternionic Form*](quantum-physics-in-biquaternionic-form.html), §*States* | the normalisation and the trace-one condition |
 | the trace reading of the Born weight | [*The Born Rule from the Hermitian Form — Derivation and Comparison*](the-born-rule-from-the-hermitian-form-derivation-and-comparison.html), §*The Trace Reading and Normalisation* | $\operatorname{Tr}(\tilde Q\tilde Q^{*})=2\langle\tilde Q,\tilde Q\rangle_{*}$ |
-| the modular Hamiltonian of a faithful state | [*The Modular Hamiltonian in Biquaternionic Form*](the-modular-hamiltonian-in-biquaternionic-form.html), §*Definition from the Modular Operator* | $\tilde H_{\mathrm{modular}}=-\ln\tilde{Ϛ}$ |
+| the modular Hamiltonian of a faithful state | [*The Modular Hamiltonian in Biquaternionic Form*](the-modular-hamiltonian-in-biquaternionic-form.html), §*Definition from the Modular Operator* | $\tilde H_{\Psi,\mathrm{modular}}=-\ln\tilde{Ϛ}_{\Psi}$ |
 
 ## The Map
 
 For $\tilde Q\in\mathbb{B}$ with $\tilde Q\neq0$ define
 
 $$
-\boxed{\;\tilde{Ϛ}_Q=\frac{\tilde Q\tilde Q^{*}}{2\langle\tilde Q,\tilde Q\rangle_{*}},
+\boxed{\;\tilde{Ϛ}_{\Psi,Q}=\frac{\tilde Q\tilde Q^{*}}{2\langle\tilde Q,\tilde Q\rangle_{*}},
 \qquad
 \langle\tilde Q,\tilde Q\rangle_{*}=\mathrm{Sc}(\tilde Q\tilde Q^{*})=\sum_\mu\lvert Q_\mu\rvert^{2}>0\;}.
 $$
 
-The image is Hermitian, positive semidefinite and normalised by $\langle\tilde{Ϛ}_Q,e_t\rangle_{*}=\tfrac12$, so it is a state. The denominator is the Hermitian bracket and not a trace: the star names the form that is positive definite on the whole algebra, and the trace is its $2\times2$ reading, $\operatorname{Tr}=2\,\mathrm{Sc}$. The factor cancels in every probability, because a probability is a ratio of the same bracket.
+The image is Hermitian, positive semidefinite and normalised by $\langle\tilde{Ϛ}_{\Psi,Q},e_t\rangle_{*}=\tfrac12$, so it is a state. The denominator is the Hermitian bracket and not a trace: the star names the form that is positive definite on the whole algebra, and the trace is its $2\times2$ reading, $\operatorname{Tr}=2\,\mathrm{Sc}$. The factor cancels in every probability, because a probability is a ratio of the same bracket.
 
 The map is defined for every nonzero element, including the zero divisors. It is not defined at $\tilde Q=0$, where the numerator and the denominator vanish together. There is no limiting state at the origin: along different directions the limit depends on the direction, and the origin has no state.
 
@@ -44,8 +44,8 @@ Four elementary properties fix the map.
 
 - **Right invariance.** For $*$-unitary $\tilde W$, $\tilde Q\tilde W$ has the same image, because $(\tilde Q\tilde W)(\tilde Q\tilde W)^{*}=\tilde Q\tilde W\tilde W^{*}\tilde Q^{*}=\tilde Q\tilde Q^{*}$. The $*$-unitary right factor is the phase that the map forgets.
 - **Scale invariance.** For nonzero complex $\lambda$, $\lambda\tilde Q$ has the same image, because $(\lambda\tilde Q)(\lambda\tilde Q)^{*}=\lvert\lambda\rvert^{2}\tilde Q\tilde Q^{*}$ and the denominator carries the same factor. The overall scale is the second coordinate that the map forgets.
-- **Left covariance.** For $*$-unitary $\tilde V$, the image of $\tilde V\tilde Q$ is $\tilde V\tilde{Ϛ}_Q\tilde V^{*}$. A left $*$-unitary is a change of frame, and it rotates the state rather than leaving it fixed.
-- **Normalisation.** $\langle\tilde{Ϛ}_Q,e_t\rangle_{*}=\tfrac12$ and $\tilde{Ϛ}_Q\ge0$, so the image is a state and not merely a positive element.
+- **Left covariance.** For $*$-unitary $\tilde V_{\Phi}$, the image of $\tilde V_{\Phi}\tilde Q$ is $\tilde V_{\Phi}\tilde{Ϛ}_{\Psi,Q}\tilde V_{\Phi}^{*}$. A left $*$-unitary is a change of frame, and it rotates the state rather than leaving it fixed.
+- **Normalisation.** $\langle\tilde{Ϛ}_{\Psi,Q},e_t\rangle_{*}=\tfrac12$ and $\tilde{Ϛ}_{\Psi,Q}\ge0$, so the image is a state and not merely a positive element.
 
 The distinction between the two sides is the whole content of the general polar factorization. The right $*$-unitary and the scale are the fibre; the left $*$-unitary is the frame.
 
@@ -60,14 +60,14 @@ $$
 Off the null cone this is the Cartan pairing, with $\tilde Q_H>0$ and $\tilde Q_0=\tilde Q_H^{-1}\tilde Q$ $*$-unitary. Then
 
 $$
-\boxed{\;\tilde{Ϛ}_Q=\frac{\tilde Q_H^{2}}{2\langle\tilde Q_H,\tilde Q_H\rangle_{*}},
+\boxed{\;\tilde{Ϛ}_{\Psi,Q}=\frac{\tilde Q_H^{2}}{2\langle\tilde Q_H,\tilde Q_H\rangle_{*}},
 \qquad
 \tilde Q_{\mathrm n}=\frac{\tilde Q_H}{\sqrt{2\langle\tilde Q_H,\tilde Q_H\rangle_{*}}},
 \qquad
-\tilde{Ϛ}_Q=\tilde Q_{\mathrm n}^{2}\;}.
+\tilde{Ϛ}_{\Psi,Q}=\tilde Q_{\mathrm n}^{2}\;}.
 $$
 
-The **amplitude** is $\tilde Q_H$; the **normalised amplitude** is $\tilde Q_{\mathrm n}$; the **state** is the square of the normalised amplitude. The three objects are different. $\tilde Q_H$ carries the scale of the operator; $\tilde Q_{\mathrm n}$ is normalised in the Hilbert–Schmidt sense, $\langle\tilde Q_{\mathrm n},\tilde Q_{\mathrm n}\rangle_{*}=\tfrac12$, which is $\operatorname{Tr}\tilde Q_{\mathrm n}^{2}=1$ in the matrix image; $\tilde{Ϛ}_Q$ is the state, with $\langle\tilde{Ϛ}_Q,e_t\rangle_{*}=\tfrac12$.
+The **amplitude** is $\tilde Q_H$; the **normalised amplitude** is $\tilde Q_{\mathrm n}$; the **state** is the square of the normalised amplitude. The three objects are different. $\tilde Q_H$ carries the scale of the operator; $\tilde Q_{\mathrm n}$ is normalised in the Hilbert–Schmidt sense, $\langle\tilde Q_{\mathrm n},\tilde Q_{\mathrm n}\rangle_{*}=\tfrac12$, which is $\operatorname{Tr}\tilde Q_{\mathrm n}^{2}=1$ in the matrix image; $\tilde{Ϛ}_{\Psi,Q}$ is the state, with $\langle\tilde{Ϛ}_{\Psi,Q},e_t\rangle_{*}=\tfrac12$.
 
 The eigenvalues of $\tilde Q_H$ are the singular values $\sigma_1\ge\sigma_2\ge0$ of $\tilde Q$. The eigenvalues of the state are their normalised squares,
 
@@ -86,19 +86,19 @@ The amplitude is not the state, and the state is not the amplitude. Three distin
 - $\tilde Q_H^{2}$ is not a state either: it is positive but its bracket with the unit is $\langle\tilde Q,\tilde Q\rangle_{*}$, which is $\tfrac12$ only after normalisation.
 - $\tilde Q_{\mathrm n}$ is not a state: it is a positive operator of Hilbert–Schmidt norm one, and its square is the state.
 
-The chain is $\tilde Q\rightsquigarrow\tilde Q_H\rightsquigarrow\tilde Q_{\mathrm n}\rightsquigarrow\tilde{Ϛ}_Q$, and each arrow loses information: the first forgets $\tilde Q_0$, the second forgets the scale, the third squares.
+The chain is $\tilde Q\rightsquigarrow\tilde Q_H\rightsquigarrow\tilde Q_{\mathrm n}\rightsquigarrow\tilde{Ϛ}_{\Psi,Q}$, and each arrow loses information: the first forgets $\tilde Q_0$, the second forgets the scale, the third squares.
 
 ## Purity Is the Spread of the Singular Values
 
 The purity of the state is
 
 $$
-\boxed{\;\operatorname{Tr}\tilde{Ϛ}_Q^{2}
+\boxed{\;\operatorname{Tr}\tilde{Ϛ}_{\Psi,Q}^{2}
 =\frac{\sigma_1^{4}+\sigma_2^{4}}{(\sigma_1^{2}+\sigma_2^{2})^{2}}
 =\frac{1}{2}+\frac{(\sigma_1^{2}-\sigma_2^{2})^{2}}{2(\sigma_1^{2}+\sigma_2^{2})^{2}}\;}.
 $$
 
-The second form shows the range at once: $\tfrac12\le\operatorname{Tr}\tilde{Ϛ}_Q^{2}\le1$, with equality at the two ends.
+The second form shows the range at once: $\tfrac12\le\operatorname{Tr}\tilde{Ϛ}_{\Psi,Q}^{2}\le1$, with equality at the two ends.
 
 | case | singular values | purity | state | operator |
 |---|---|---|---|---|
@@ -108,7 +108,7 @@ The second form shows the range at once: $\tfrac12\le\operatorname{Tr}\tilde{Ϛ}
 
 The table is the stratigraphy of the map. It is worth reading against the intuition that reversible elements should correspond to pure states.
 
-- **The $*$-unitary group goes to the maximally mixed state.** If $\tilde Q=c\tilde Q_0$ with $\tilde Q_0$ $*$-unitary, then $\tilde Q\tilde Q^{*}=\lvert c\rvert^{2}e_t$ and $\tilde{Ϛ}_Q=\tfrac12 e_t$. The most reversible elements produce the least information-bearing state.
+- **The $*$-unitary group goes to the maximally mixed state.** If $\tilde Q=c\tilde Q_0$ with $\tilde Q_0$ $*$-unitary, then $\tilde Q\tilde Q^{*}=\lvert c\rvert^{2}e_t$ and $\tilde{Ϛ}_{\Psi,Q}=\tfrac12 e_t$. The most reversible elements produce the least information-bearing state.
 - **The null cone goes to the pure states.** If $\tilde Q\neq0$ and $N=\langle\tilde Q\rangle_{\natural}=0$, then $\det(\tilde Q\tilde Q^{*})=\lvert N\rvert^{2}=0$, so $\tilde Q\tilde Q^{*}$ has rank one and the state is pure. Conversely, a pure image forces $\operatorname{rank}\tilde Q=1$, hence $N=0$. **The nonzero zero divisors are exactly the operators that define pure states.**
 - **The interior goes to the mixed states.** An invertible element that is not a scalar $*$-unitary has two distinct singular values and a state strictly between pure and maximally mixed.
 
@@ -124,7 +124,7 @@ $$
 
 off the cone, a $\mathrm{U}(2)$ torsor times a positive scale when $\tilde Q_{\mathrm n}>0$, and on the cone the same set with $\tilde W$ a partial isometry with the same final projection. The phase is not a gauge field and not a physical field: it is one coordinate along the fibre, and the scale is the other. Choosing a representative of each fibre is choosing a section of the map, and the factorization is the canonical section $\tilde Q_0=\tilde Q_H^{-1}\tilde Q$ when $\tilde Q_H$ is invertible.
 
-This gives a clean statement of what a **gauge choice** is in this language. A gauge transformation acts on the right by a $*$-unitary, $\tilde Q\mapsto\tilde Q\tilde W$, and leaves the state fixed. A change of frame acts on the left by a $*$-unitary, $\tilde Q\mapsto\tilde V\tilde Q$, and rotates the state. The two are not the same operation, and confusing them is the common error. Gauge freedom is the $*$-unitary part of the fibre; the scale is the other fibre coordinate; frame freedom is the base.
+This gives a clean statement of what a **gauge choice** is in this language. A gauge transformation acts on the right by a $*$-unitary, $\tilde Q\mapsto\tilde Q\tilde W$, and leaves the state fixed. A change of frame acts on the left by a $*$-unitary, $\tilde Q\mapsto\tilde V_{\Phi}\tilde Q$, and rotates the state. The two are not the same operation, and confusing them is the common error. Gauge freedom is the $*$-unitary part of the fibre; the scale is the other fibre coordinate; frame freedom is the base.
 
 The fibre also shows why the map cannot be inverted. A state determines the normalised amplitude $\tilde Q_{\mathrm n}$ uniquely, because the positive square root is unique, but it determines neither $\tilde Q_0$ nor the scale of $\tilde Q_H$. Two operators whose singular values are proportional and whose $*$-unitary factors differ, or whose partial isometries on the cone differ, define the same state and the same normalised amplitude, with phases and scales that need not agree: the state is blind to the phase and to the overall scale.
 
@@ -136,14 +136,14 @@ $$
 \tilde Q^{*}=\tilde Q_0^{*}\tilde Q_H,
 $$
 
-which is the right polar decomposition. Written in the same left form as $\tilde Q$, it is $\tilde Q^{*}=(\tilde Q_0^{*}\tilde Q_H\tilde Q_0)\tilde Q_0^{*}$, with first factor $\tilde Q_0^{*}\tilde Q_H\tilde Q_0$, a rotation of $\tilde Q_H$, and second factor $\tilde Q_0^{*}$. The state of $\tilde Q^{*}$ is $\tilde Q_0^{*}\tilde{Ϛ}_Q\tilde Q_0$, a $*$-unitary rotation of the state of $\tilde Q$, because $\tilde Q^{*}(\tilde Q^{*})^{*}=\tilde Q^{*}\tilde Q=\tilde Q_0^{*}\tilde Q_H^{2}\tilde Q_0$, which has the same spectrum. The map is blind to the side on which the phase stands in the sense that the singular values and the purity survive; the state itself rotates with the phase.
+which is the right polar decomposition. Written in the same left form as $\tilde Q$, it is $\tilde Q^{*}=(\tilde Q_0^{*}\tilde Q_H\tilde Q_0)\tilde Q_0^{*}$, with first factor $\tilde Q_0^{*}\tilde Q_H\tilde Q_0$, a rotation of $\tilde Q_H$, and second factor $\tilde Q_0^{*}$. The state of $\tilde Q^{*}$ is $\tilde Q_0^{*}\tilde{Ϛ}_{\Psi,Q}\tilde Q_0$, a $*$-unitary rotation of the state of $\tilde Q$, because $\tilde Q^{*}(\tilde Q^{*})^{*}=\tilde Q^{*}\tilde Q=\tilde Q_0^{*}\tilde Q_H^{2}\tilde Q_0$, which has the same spectrum. The map is blind to the side on which the phase stands in the sense that the singular values and the purity survive; the state itself rotates with the phase.
 
 ## The Modular Reading
 
-For a faithful state, $\tilde{Ϛ}_Q>0$, the modular Hamiltonian is defined by
+For a faithful state, $\tilde{Ϛ}_{\Psi,Q}>0$, the modular Hamiltonian is defined by
 
 $$
-\tilde H_{\mathrm{modular}}=-\ln\tilde{Ϛ}_Q=-2\ln\tilde Q_{\mathrm n}
+\tilde H_{\Psi,\mathrm{modular}}=-\ln\tilde{Ϛ}_{\Psi,Q}=-2\ln\tilde Q_{\mathrm n}
 =-2\ln\tilde Q_H+\ln\!\bigl(2\langle\tilde Q_H,\tilde Q_H\rangle_{*}\bigr)e_t .
 $$
 
@@ -152,7 +152,7 @@ The last term is central and is the additive constant that a modular Hamiltonian
 Two boundaries must be kept.
 
 - The modular **conjugation** is anti-unitary and is not the polar phase $\tilde Q_0$. The Tomita–Takesaki conjugation depends on the state and on the algebra; the phase factor is the $*$-unitary quotient of the operator off the cone and the partial-isometry quotient on it. They are different objects and the notation must not identify them.
-- The modular reading needs $\tilde{Ϛ}_Q>0$, hence $\tilde Q_H>0$, hence $\tilde Q$ invertible. On the null cone the state is pure, the logarithm diverges and the modular Hamiltonian does not exist. The purity table and the modular table have the same boundary.
+- The modular reading needs $\tilde{Ϛ}_{\Psi,Q}>0$, hence $\tilde Q_H>0$, hence $\tilde Q$ invertible. On the null cone the state is pure, the logarithm diverges and the modular Hamiltonian does not exist. The purity table and the modular table have the same boundary.
 
 ## Where the Map Appears
 
@@ -160,14 +160,14 @@ The map is not an extra structure added to the theory; it is the common form of 
 
 | object | operator | state it defines | article |
 |---|---|---|---|
-| measurement outcome | Kraus operator $\tilde M_{\mathrm{kraus},y}$ | $\tilde M_{\mathrm{kraus},y}\tilde{Ϛ}\tilde M_{\mathrm{kraus},y}^{*}/p_y$ | [*The Polar Decomposition of a Kraus Operator: Effect, Backaction and the Measurement Boundary*](the-polar-decomposition-of-a-kraus-operator-effect-backaction-and-the-measurement-boundary.html) |
-| polarization | Jones matrix $\tilde J$ | the normalized $\tilde J\tilde J^{*}$, the output coherency | [*Pancharatnam's Phase and the Polarization Sphere in Biquaternionic Form*](pancharatnams-phase-and-the-polarization-sphere-in-biquaternionic-form.html) |
+| measurement outcome | Kraus operator $\tilde M_{\mathrm{kraus},y}$ | $\tilde M_{\mathrm{kraus},y}\tilde{Ϛ}_{\Psi}\tilde M_{\mathrm{kraus},y}^{*}/p_y$ | [*The Polar Decomposition of a Kraus Operator: Effect, Backaction and the Measurement Boundary*](the-polar-decomposition-of-a-kraus-operator-effect-backaction-and-the-measurement-boundary.html) |
+| polarization | Jones matrix $\tilde J_{\Phi}$ | the normalized $\tilde J_{\Phi}\tilde J_{\Phi}^{*}$, the output coherency | [*Pancharatnam's Phase and the Polarization Sphere in Biquaternionic Form*](pancharatnams-phase-and-the-polarization-sphere-in-biquaternionic-form.html) |
 | scattering | S-matrix element $\tilde S$ | the normalized $\tilde S\tilde S^{*}$ | [*The S-Matrix in Biquaternionic Form*](the-s-matrix-in-biquaternionic-form.html) |
 | field | field strength $\tilde F$ | the normalized $\tilde F\tilde F^{*}$; for a null field, an energy–momentum direction | [*The Field-Strength Biquaternion and Its Invariants*](the-field-strength-biquaternion-and-its-invariants.html) |
 
 In each row the map is the same and the physical name of the state is different. The measurement row adds a conditioning on the initial state; the polarization row reads the state as a coherency matrix; the scattering row reads it as the state produced by an interaction; the field row reads it as the field's state, which for a null field is an energy–momentum direction. The unity is algebraic, and the differences are in the interpretation of the operator.
 
-One caution about the measurement row. The map of this article takes an operator to a state without an input. The post-measurement state of an instrument takes an operator and an input state, $\tilde{Ϛ}\mapsto\tilde M_{\mathrm{kraus}}\tilde{Ϛ}\tilde M_{\mathrm{kraus}}^{*}/p$. The two coincide only when the input is the maximally mixed state, $\tilde{Ϛ}=\tfrac12 e_t$, in which case the output is proportional to $\tilde M_{\mathrm{kraus}}\tilde M_{\mathrm{kraus}}^{*}$. The operator-to-state map is the input-free shadow of the instrument, not the instrument itself.
+One caution about the measurement row. The map of this article takes an operator to a state without an input. The post-measurement state of an instrument takes an operator and an input state, $\tilde{Ϛ}_{\Psi}\mapsto\tilde M_{\mathrm{kraus}}\tilde{Ϛ}_{\Psi}\tilde M_{\mathrm{kraus}}^{*}/p$. The two coincide only when the input is the maximally mixed state, $\tilde{Ϛ}_{\Psi}=\tfrac12 e_t$, in which case the output is proportional to $\tilde M_{\mathrm{kraus}}\tilde M_{\mathrm{kraus}}^{*}$. The operator-to-state map is the input-free shadow of the instrument, not the instrument itself.
 
 ## The Name of the Map
 
@@ -194,14 +194,14 @@ Read as a whole, the table is a dictionary between the algebra's rank stratigrap
 
 - It does not claim the operator-state correspondence of a conformal field theory. There is no boundary, no radial quantisation and no isomorphism.
 - It does not claim that every state arises from a unique operator. The map is many-to-one; off the cone the fibre is the $*$-unitary right factor and the positive scale, and on the cone it is the partial isometry and the positive scale.
-- It does not claim that the amplitude $\tilde Q_H$ is a state, or that the state $\tilde{Ϛ}_Q$ is an amplitude. The chain is $\tilde Q\rightsquigarrow\tilde Q_H\rightsquigarrow\tilde Q_{\mathrm n}\rightsquigarrow\tilde{Ϛ}_Q$, and each step loses information.
+- It does not claim that the amplitude $\tilde Q_H$ is a state, or that the state $\tilde{Ϛ}_{\Psi,Q}$ is an amplitude. The chain is $\tilde Q\rightsquigarrow\tilde Q_H\rightsquigarrow\tilde Q_{\mathrm n}\rightsquigarrow\tilde{Ϛ}_{\Psi,Q}$, and each step loses information.
 - It does not claim a modular reading on the null cone. The modular Hamiltonian needs a faithful state and diverges at purity.
 - It does not claim that the map is a channel, an instrument or a dynamics. It is a map from operators to states, with no input state and no time.
 - It does not claim that the purity table is a classification of physical processes. It is a classification of operators, read through the map.
 
 ## Summary
 
-- Every nonzero biquaternion defines a state by $\tilde{Ϛ}_Q=\tilde Q\tilde Q^{*}/2\langle\tilde Q,\tilde Q\rangle_{*}$.
+- Every nonzero biquaternion defines a state by $\tilde{Ϛ}_{\Psi,Q}=\tilde Q\tilde Q^{*}/2\langle\tilde Q,\tilde Q\rangle_{*}$.
 - The amplitude $\tilde Q_H=\sqrt{\tilde Q\tilde Q^{*}}$ is the unnormalised square root of that state; the state is $\tilde Q_{\mathrm n}^{2}$ with $\tilde Q_{\mathrm n}$ the bracket-normalised amplitude.
 - The eigenvalues of $\tilde Q_H$ are the singular values of $\tilde Q$, and the state's eigenvalues are their normalised squares.
 - The purity is $\tfrac12+(\sigma_1^{2}-\sigma_2^{2})^{2}/2(\sigma_1^{2}+\sigma_2^{2})^{2}$, between $\tfrac12$ and $1$.
@@ -216,14 +216,14 @@ Read as a whole, the table is a dictionary between the algebra's rank stratigrap
 | symbol | meaning |
 |---|---|
 | $\tilde Q\tilde Q^{*}$ | the positive square whose normalisation is the state |
-| $\tilde{Ϛ}_Q$ | the state defined by $\tilde Q$, trace one |
+| $\tilde{Ϛ}_{\Psi,Q}$ | the state defined by $\tilde Q$, trace one |
 | $\tilde Q_H=\sqrt{\tilde Q\tilde Q^{*}}$ | the amplitude, Hermitian positive; the Cartan amplitude off the cone |
 | $\tilde Q_{\mathrm n}=\tilde Q_H/\sqrt{2\langle\tilde Q_H,\tilde Q_H\rangle_{*}}$ | the normalised amplitude, $\langle\tilde Q_{\mathrm n},\tilde Q_{\mathrm n}\rangle_{*}=\tfrac12$ |
 | $\sigma_1\ge\sigma_2\ge0$ | the singular values of $\tilde Q$, the eigenvalues of $\tilde Q_H$ |
 | $p_i=\sigma_i^{2}/(\sigma_1^{2}+\sigma_2^{2})$ | the state's eigenvalues |
-| $\operatorname{Tr}\tilde{Ϛ}_Q^{2}$ | the purity, between $\tfrac12$ and $1$ |
+| $\operatorname{Tr}\tilde{Ϛ}_{\Psi,Q}^{2}$ | the purity, between $\tfrac12$ and $1$ |
 | $\tilde Q_0=\tilde Q_H^{+}\tilde Q$ | the $*$-unitary phase off the cone, the partial isometry on it; the phase coordinate along the fibre |
-| $\tilde H_{\mathrm{modular}}=-\ln\tilde{Ϛ}_Q$ | the modular Hamiltonian of a faithful state |
+| $\tilde H_{\Psi,\mathrm{modular}}=-\ln\tilde{Ϛ}_{\Psi,Q}$ | the modular Hamiltonian of a faithful state |
 | $\operatorname{Tr}\tilde Q=2\operatorname{Sc}\tilde Q=2Q_t$ | the trace |
 | $\langle\tilde Q_1,\tilde Q_2\rangle_{*}=\mathrm{Sc}(\tilde Q_1\tilde Q_2^{*})$ | the Hermitian form |
 

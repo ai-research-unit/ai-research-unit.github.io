@@ -14,7 +14,7 @@ The article's findings are stated here in advance, so that the reader can hold t
 2. **The connection is a $\mathrm{U}(1)$ gauge connection on parameter space**, transforming as $\mathcal{A} \mapsto \mathcal{A} - d\alpha$ under a rephasing of the eigenstate, with curvature $\mathcal{F} = d\mathcal{A}$. Its structure group is the $*$-unitary part of the centre $\mathbb{B}_{C}$ — the same $\mathrm{U}(1)$ that *The Gauge Principle in Biquaternionic Form* attaches to the algebra.
 3. **The two routes agree** on spin-1/2 in a slowly rotating field: the line integral of the connection and the surface integral of the curvature both give $-\theta_{\mathrm{sol}}/2$, where $\theta_{\mathrm{sol}}$ is the solid angle subtended by the loop, for every loop in a one-parameter family.
 4. **The curvature is quantised only on a closed surface.** The cap flux $-\pi(1-\cos\theta_0)$ is continuous in the loop; only the integral over the closed Bloch sphere is quantised, giving the Chern number $\mp 1$ for the two bands, whose sum is zero. The closed surface must avoid the degeneracy point, which is where the gap closes.
-5. **The Berry connection is not the framework's spacetime connection.** It is literally the standard Berry connection, rewritten through the Hermitian form, read through the trace. Its relation to the abelian connection $\tilde{A}$ of the gauge-principle article is an **analogy**: same structure group, same transformation law, same curvature definition, but a different base space and a different kind of object. It is not claimed to be the same field.
+5. **The Berry connection is not the framework's spacetime connection.** It is literally the standard Berry connection, rewritten through the Hermitian form, read through the trace. Its relation to the abelian connection $\tilde{A}_{\Phi}$ of the gauge-principle article is an **analogy**: same structure group, same transformation law, same curvature definition, but a different base space and a different kind of object. It is not claimed to be the same field.
 
 **Which case.** Throughout the article the level is **non-degenerate** and the Berry phase is **abelian** (a $\mathrm{U}(1)$ number). For the two-level Hamiltonian the gap is $\Delta = 2|\vec r_\Psi|$, and it is required to stay bounded away from zero along the path; at $\vec r_\Psi = 0$ the two levels become degenerate, the gap closes, and the adiabatic theorem fails. The non-abelian (degenerate-level) case is not available in a single-qubit framework; the section *Degenerate Levels and the Abelian Case* states exactly why, and leaves it as a gap.
 
@@ -114,7 +114,7 @@ $$
 \tilde\Pi_1(\vec u_R) = \frac{\tilde{Ξ}_{\mathrm{sp},+}(\theta,\theta_{\mathrm{azm}})\,\tilde{Ξ}_{\mathrm{sp},+}(\theta,\theta_{\mathrm{azm}})^\dagger}{\mathrm{Tr}\!\left(\tilde{Ξ}_{\mathrm{sp},+}^{\dagger}\tilde{Ξ}_{\mathrm{sp},+}\right)} ,
 $$
 
-which is the parent article's $\tilde{Ϛ} = \tilde{Ξ}_{\mathrm{sp}}\tilde{Ξ}_{\mathrm{sp}}^{\dagger}/\mathrm{Tr}(\tilde{Ξ}_{\mathrm{sp}}^{\dagger}\tilde{Ξ}_{\mathrm{sp}})$. The density matrix forgets the phase of $\tilde{Ξ}_{\mathrm{sp},+}$; the lemma says precisely that this forgotten phase is what the Berry connection measures. So the Berry phase is a property of the **state module** of the framework, not of the Bloch ball.
+which is the parent article's $\tilde{Ϛ}_{\Psi} = \tilde{Ξ}_{\mathrm{sp}}\tilde{Ξ}_{\mathrm{sp}}^{\dagger}/\mathrm{Tr}(\tilde{Ξ}_{\mathrm{sp}}^{\dagger}\tilde{Ξ}_{\mathrm{sp}})$. The density matrix forgets the phase of $\tilde{Ξ}_{\mathrm{sp},+}$; the lemma says precisely that this forgotten phase is what the Berry connection measures. So the Berry phase is a property of the **state module** of the framework, not of the Bloch ball.
 
 ## The Berry Connection in Biquaternion Form
 
@@ -153,7 +153,7 @@ $$
 \qquad\text{for}\qquad \tilde{Ξ}_{\mathrm{sp},2} = \exp(i\alpha)\tilde{Ξ}_{\mathrm{sp}} .
 $$
 
-This is the transformation law of an **abelian gauge connection**. It is the same law as the electromagnetic gauge transformation $\tilde{A}_2 = \tilde{A} - \tilde{\nabla}\Gamma$ of *The Gauge Principle in Biquaternionic Form*, and the same law as the electromagnetic Berry connection of the standard theory. The rest of this section makes the analogy precise and states its limits.
+This is the transformation law of an **abelian gauge connection**. It is the same law as the electromagnetic gauge transformation $\tilde{A}_{\Phi,2} = \tilde{A}_{\Phi} - \tilde{\nabla}\Gamma$ of *The Gauge Principle in Biquaternionic Form*, and the same law as the electromagnetic Berry connection of the standard theory. The rest of this section makes the analogy precise and states its limits.
 
 ### Why the Analogy Is Structural and Not Decorative
 
@@ -165,16 +165,16 @@ $$
 
 and the same additive transformation law. In this precise sense the Berry connection is a gauge connection **of the same type** as the one the framework supplies for electromagnetism. What differs is everything else:
 
-| | Gauge-principle connection $\tilde{A}$ | Berry connection $\mathcal{A}$ |
+| | Gauge-principle connection $\tilde{A}_{\Phi}$ | Berry connection $\mathcal{A}$ |
 |---|---|---|
 | Base space | spacetime (the material sector) | parameter space $\mathcal{P} = S^2$ (the Bloch sphere) |
 | Kind of object | a biquaternion in $\mathbb{B}_{\Phi}$ | a real scalar one-form on $\mathcal{P}$ |
 | Structure group | $\mathrm{U}(1) = \mathrm{U}(\mathbb{B}_{C})$ | $\mathrm{U}(1) = \mathrm{U}(\mathbb{B}_{C})$ |
 | Origin | localizing the central phase symmetry of a field equation | the rephasing freedom of an instantaneous eigenstate |
-| Transformation | $\tilde{A}_2 = \tilde{A} - \tilde{\nabla}\Gamma$ | $\mathcal{A}_2 = \mathcal{A} - d\alpha$ |
-| Curvature | $\tilde{F} = \mathrm{Vect}\!\left(\tilde{\nabla}^{\natural}\tilde{A}\right)$, $F_{\mu\nu} = \partial/\partial R_\mu A_\nu - \partial/\partial R_\nu A_\mu$ | $\mathcal{F}_{\mu\nu} = \partial/\partial R_\mu\mathcal{A}_\nu - \partial/\partial R_\nu\mathcal{A}_\mu$ |
+| Transformation | $\tilde{A}_{\Phi,2} = \tilde{A}_{\Phi} - \tilde{\nabla}\Gamma$ | $\mathcal{A}_2 = \mathcal{A} - d\alpha$ |
+| Curvature | $\tilde{F} = \mathrm{Vect}\!\left(\tilde{\nabla}^{\natural}\tilde{A}_{\Phi}\right)$, $F_{\mu\nu} = \partial/\partial R_\mu A_\nu - \partial/\partial R_\nu A_\mu$ | $\mathcal{F}_{\mu\nu} = \partial/\partial R_\mu\mathcal{A}_\nu - \partial/\partial R_\nu\mathcal{A}_\mu$ |
 
-The two connections share their structure group, their transformation law, and their definition of curvature; they are not the same field. The Berry connection is not obtained from $\tilde{A}$, does not live on spacetime, and is not $\mathbb{B}_{\Phi}$-valued. It is literally the standard Berry connection, and its relation to the framework's electromagnetic connection is an analogy — an exact analogy of gauge-theoretic type, but an analogy nonetheless. The question is returned to in the section *What the Framework Supplements and What Is Only Analogy*.
+The two connections share their structure group, their transformation law, and their definition of curvature; they are not the same field. The Berry connection is not obtained from $\tilde{A}_{\Phi}$, does not live on spacetime, and is not $\mathbb{B}_{\Phi}$-valued. It is literally the standard Berry connection, and its relation to the framework's electromagnetic connection is an analogy — an exact analogy of gauge-theoretic type, but an analogy nonetheless. The question is returned to in the section *What the Framework Supplements and What Is Only Analogy*.
 
 ### The Integer Ambiguity
 
@@ -389,7 +389,7 @@ $$
 
 and under the isomorphism this is the standard expression $i\langle\tilde{Ξ}_{\mathrm{sp}}|\partial/\partial R_\mu\tilde{Ξ}_{\mathrm{sp}}\rangle/\langle\tilde{Ξ}_{\mathrm{sp}}|\tilde{Ξ}_{\mathrm{sp}}\rangle$ on $\mathbb{C}^2$. No new field is introduced and no new phase is predicted: the biquaternion article and the standard article compute the same numbers, as the two-route check on the rotating field demonstrates. The framework's contribution to the *object* is notational.
 
-**The relation to the framework's own connection is an analogy.** The abelian connection $\tilde{A}$ of *The Gauge Principle in Biquaternionic Form* is a biquaternion-valued field on spacetime, obtained from localizing the central phase symmetry of a field equation. The Berry connection is a real one-form on parameter space, obtained from the rephasing freedom of an instantaneous eigenstate. They are of the same *gauge type* — same structure group $\mathrm{U}(1) = \mathrm{U}(\mathbb{B}_{C})$, same transformation law, same curvature definition — but they are different objects on different base spaces, and the framework does not identify them. Anyone who reads the shared $\mathrm{U}(1)$ as an identity has read more than is there.
+**The relation to the framework's own connection is an analogy.** The abelian connection $\tilde{A}_{\Phi}$ of *The Gauge Principle in Biquaternionic Form* is a biquaternion-valued field on spacetime, obtained from localizing the central phase symmetry of a field equation. The Berry connection is a real one-form on parameter space, obtained from the rephasing freedom of an instantaneous eigenstate. They are of the same *gauge type* — same structure group $\mathrm{U}(1) = \mathrm{U}(\mathbb{B}_{C})$, same transformation law, same curvature definition — but they are different objects on different base spaces, and the framework does not identify them. Anyone who reads the shared $\mathrm{U}(1)$ as an identity has read more than is there.
 
 What the framework does supply, beyond the rewriting, is a set of structural placements.
 
@@ -438,7 +438,7 @@ $$
 \mathcal{F}_{\mu\nu} = \partial/\partial R_\mu\mathcal{A}_\nu - \partial/\partial R_\nu\mathcal{A}_\mu .
 $$
 
-The structure group is the $*$-unitary part of the centre $\mathbb{B}_{C}$, the same $\mathrm{U}(1)$ that the gauge-principle article attaches to the algebra, and the transformation law is the same additive law as $\tilde{A}_2 = \tilde{A} - \tilde{\nabla}\Gamma$. The relation between the two connections is an exact **analogy of gauge type**, not an identity: they live on different base spaces, are objects of different kinds, and the framework does not equate them.
+The structure group is the $*$-unitary part of the centre $\mathbb{B}_{C}$, the same $\mathrm{U}(1)$ that the gauge-principle article attaches to the algebra, and the transformation law is the same additive law as $\tilde{A}_{\Phi,2} = \tilde{A}_{\Phi} - \tilde{\nabla}\Gamma$. The relation between the two connections is an exact **analogy of gauge type**, not an identity: they live on different base spaces, are objects of different kinds, and the framework does not equate them.
 
 On spin-1/2 in a slowly rotating field with the loop at polar angle $\theta_0$, the connection is $\mathcal{A} = -\tfrac{1-\cos\theta}{2}d\theta_{\mathrm{azm}}$, the curvature is $\mathcal{F} = -\tfrac12\sin\theta\,d\theta\wedge d\theta_{\mathrm{azm}}$, and both routes give $\gamma_+ = -\theta_{\mathrm{sol}}/2$ for every $\theta_0$, where $\theta_{\mathrm{sol}} = 2\pi(1-\cos\theta_0)$ is the solid angle of the loop. The phase is independent of the speed of traversal, unlike the dynamical phase. The two spin branches have equal and opposite curvatures and Chern numbers $C_\pm = \mp 1$, summing to zero. Over a **closed** surface the flux is quantised as the Chern number and is robust under gap-preserving deformations; over an open cap it is the continuous solid angle, so the quantisation is specifically a closed-surface statement, and the surface must avoid the degeneracy point $\vec R = 0$ where the gap closes and the connection is singular. That point is a parameter-space degeneracy, and the flux it carries is quantised.
 
@@ -459,7 +459,7 @@ The level is non-degenerate throughout, so the phase is abelian; the non-abelian
 | $\mathrm{Tr}(\tilde Q_1\tilde Q_2^{*})=2\,\mathrm{Sc}(\tilde Q_1\tilde Q_2^{*})$ | Trace formula (Born rule and the pairing used for the connection) |
 | $\mathbb{B}\tilde\Pi$ | Minimal left ideal; the state module of spinors $\tilde{Ξ}_{\mathrm{sp}}$ |
 | $\tilde{Ξ}_{\mathrm{sp},\pm}$ | Normalized instantaneous eigen-spinor |
-| $\tilde{Ϛ} = \tilde{Ξ}_{\mathrm{sp}}\tilde{Ξ}_{\mathrm{sp}}^{\dagger}/\mathrm{Tr}(\tilde{Ξ}_{\mathrm{sp}}^{\dagger}\tilde{Ξ}_{\mathrm{sp}})$ | Density matrix associated to a spinor |
+| $\tilde{Ϛ}_{\Psi} = \tilde{Ξ}_{\mathrm{sp}}\tilde{Ξ}_{\mathrm{sp}}^{\dagger}/\mathrm{Tr}(\tilde{Ξ}_{\mathrm{sp}}^{\dagger}\tilde{Ξ}_{\mathrm{sp}})$ | Density matrix associated to a spinor |
 | $\vec R$, $R = \lvert\vec R\rvert$, $\vec u_R$ | Parameter vector, its magnitude, its direction; $\vec u_R \in S^2$ |
 | $\mathcal{P} = S^2$ | Parameter space = Bloch sphere of $\mathbb{B}_{\Psi}$ |
 | $\theta, \theta_{\mathrm{azm}}$ | Polar and azimuthal angles on the Bloch sphere |
@@ -473,7 +473,7 @@ The level is non-degenerate throughout, so the phase is abelian; the non-abelian
 | $B$, $Ξ : B \to \operatorname{End}(V)$, $V$ | Base (parameter) space, matrix field, fibre $V$ of dimension $n$ |
 | $L_1 \subset B\times K$, $L_2 \subset B\times K\times G_k(V)$, $L_3$ | Eigenvalue, eigenspace and eigenvector incidence spaces of the field |
 | $s_1, s_2, s_3$ | The three cross-sections: continuous eigenvalue branch, continuous $k$-plane selection, nowhere-zero eigenvector field |
-| $\tilde{A}_2 = \tilde{A} - \tilde{\nabla}\Gamma$ | Gauge-principle connection and its transformation (for contrast) |
+| $\tilde{A}_{\Phi,2} = \tilde{A}_{\Phi} - \tilde{\nabla}\Gamma$ | Gauge-principle connection and its transformation (for contrast) |
 
 ## Further Reading
 

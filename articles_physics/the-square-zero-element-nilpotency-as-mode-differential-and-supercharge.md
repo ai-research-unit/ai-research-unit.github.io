@@ -89,7 +89,7 @@ The pure condition is what separates the nilpotent from the rest of the zero-div
 | object | equation | where it lives | physical interpretation |
 |---|---|---|---|
 | nilpotent | $X^2=0$, $X\neq0$ | pure vector subspace, complex isotropic | one fermionic mode; null symbol; contraction limit |
-| physical null four-momentum | $\langle\tilde P\rangle_{\natural}=0$, $\tilde P^2\neq0$ | material sector $\mathbb{B}_{\Phi}$ | photon or other massless carrier |
+| physical null four-momentum | $\langle\tilde P_{\Phi}\rangle_{\natural}=0$, $\tilde P_{\Phi}^2\neq0$ | material sector $\mathbb{B}_{\Phi}$ | photon or other massless carrier |
 | state | $\tilde\Pi^2=\tilde\Pi$ | all of $\mathbb{B}$; the Hermitian ones in $\mathbb{B}_{\Psi}$ | rung, vacuum, occupied level |
 | Grassmann label | $\varkappa^2=0$ | outside $\mathbb{B}$ | odd label of a coherent state |
 
@@ -420,7 +420,7 @@ are the local ladder. The corner differs from the mode in three ways: the nilpot
 
 ## The Excluded Case: The Physical Null Momentum
 
-The object most often confused with the nilpotent is the physical null four-momentum. Write $\tilde P=iP_t e_t+\vec p$ with $P_t^2=\vec p^{\,2}$. Its quaternionic norm vanishes, $\langle\tilde P\rangle_{\natural}=0$, so it lies on the zero-divisor cone; its square does not vanish, $\tilde P^2=2iP_t\tilde P$, and its trace does not vanish, $\mathrm{Tr}\,\tilde P=2iP_t$. It is therefore a nonzero complex multiple of a state, not a nilpotent: dividing by $2iP_t$ gives an element that reproduces itself. The nilpotent is pure and traceless; the null momentum has trace $2iP_t\ne0$. The trace, or equivalently the scalar part, separates the two.
+The object most often confused with the nilpotent is the physical null four-momentum. Write $\tilde P_{\Phi}=iP_t e_t+\vec p$ with $P_t^2=\vec p^{\,2}$. Its quaternionic norm vanishes, $\langle\tilde P_{\Phi}\rangle_{\natural}=0$, so it lies on the zero-divisor cone; its square does not vanish, $\tilde P_{\Phi}^2=2iP_t\tilde P_{\Phi}$, and its trace does not vanish, $\mathrm{Tr}\,\tilde P_{\Phi}=2iP_t$. It is therefore a nonzero complex multiple of a state, not a nilpotent: dividing by $2iP_t$ gives an element that reproduces itself. The nilpotent is pure and traceless; the null momentum has trace $2iP_t\ne0$. The trace, or equivalently the scalar part, separates the two.
 
 The cone and the norms are §*The Nilpotent Cone*; the photon interpretation is that of *The Zero-Divisor Cone and the Massless Spectrum*. The taxonomy uses the distinction only as its negative boundary: the equation $X^2=0$ selects the nilpotent, and the cone alone does not.
 
@@ -478,7 +478,7 @@ In the classically allowed region this is positive, and the gradient is never a 
 
 ### The Dirac Point of Graphene Is a Null Momentum
 
-The effective Hamiltonian of graphene near a Dirac point is linear in the momentum, $h=v_F(c_1k_x+c_2k_y)$ in the notation of §*The Corner*, and its square is quadratic, $h^2=v_F^2|\vec k|^2I$. The linear branch is the square root of the quadratic symbol. The Dirac point is the apex of the cone, and the gapless excitations around it lie on the null cone $\langle\tilde P\rangle_{\natural}=0$.
+The effective Hamiltonian of graphene near a Dirac point is linear in the momentum, $h=v_F(c_1k_x+c_2k_y)$ in the notation of §*The Corner*, and its square is quadratic, $h^2=v_F^2|\vec k|^2I$. The linear branch is the square root of the quadratic symbol. The Dirac point is the apex of the cone, and the gapless excitations around it lie on the null cone $\langle\tilde P_{\Phi}\rangle_{\natural}=0$.
 
 In the biquaternion interpretation the physical branch is the **zero-divisor cone**: a null four-momentum is a zero divisor, and the node is its apex. The nilpotent appears in the **chiral part** of the symbol, where the two combinations $c_\pm$ are square-zero; it is the algebraic corner of the branch, not the four-momentum of a particle on it. The Dirac point itself is where the momentum vanishes, and the origin is not a nilpotent.
 
@@ -704,7 +704,7 @@ The biquaternion realization carries two forms of the Dirac equation. The one-si
 
 The Grassmann label multiplies rather than acts; it is an odd extension, adjoined in $\mathbb{B}\otimes\Lambda$, and two independent generators with a nonzero product have no faithful representation in $\mathbb{B}$. The chiral corner is the local ladder $c_\pm$ of a chiral symbol at a node; the node is a null point of the symbol, not a nilpotent momentum.
 
-The physical null momentum, $\tilde P=iP_t e_t+\vec p$ with $P_t^2=\vec p^{\,2}$, has $\langle\tilde P\rangle_{\natural}=0$ but $\tilde P^2=2iP_t\tilde P\ne0$ and trace $2iP_t\ne0$; it is a multiple of a state. The trace separates it from the nilpotent.
+The physical null momentum, $\tilde P_{\Phi}=iP_t e_t+\vec p$ with $P_t^2=\vec p^{\,2}$, has $\langle\tilde P_{\Phi}\rangle_{\natural}=0$ but $\tilde P_{\Phi}^2=2iP_t\tilde P_{\Phi}\ne0$ and trace $2iP_t\ne0$; it is a multiple of a state. The trace separates it from the nilpotent.
 
 The nine interpretations use the object as a mode, a lattice null point and a limit: the Dirac hole as a difference and not a nilpotent, Jordan–Wigner as a one-site square root with the string as its branch cut, the Grassmann coherent state as the minimal odd extension, the WKB phase gradient off the cone, the graphene Dirac point as a null momentum with the nilpotent as its chiral corner, Nielsen–Ninomiya as the topological pairing of lattice zeros, the exact one-mode Wick theorem, the two-rung cap that puts the qutrit outside the algebra, and squeezing as a contraction to the cone.
 
@@ -748,8 +748,8 @@ The classification is a map, not a derivation. It adds no physics, and it leaves
 | $\chi=i\tilde{Ζ}_{\mathrm{ad}}$, $\chi^2=e_t$ | the central chirality, not an element of $\mathbb{B}$; its cell is $\xi_{\mathrm{cell}}=-iL_{\mathrm{axf},e_t}R_{\mathrm{axf},\vec e_z}$ |
 | $F$ | the algebra-valued field of the two-sided Dirac equation |
 | $\tilde{Ξ}_{\mathrm{sp},L},\tilde{Ξ}_{\mathrm{sp},R}$ | the two chirality parts of the field element |
-| $\tilde P=iP_t e_t+\vec p$ | the physical four-momentum |
-| $\langle\tilde P\rangle_{\natural}$ | the quaternionic norm, the interval |
+| $\tilde P_{\Phi}=iP_t e_t+\vec p$ | the physical four-momentum |
+| $\langle\tilde P_{\Phi}\rangle_{\natural}$ | the quaternionic norm, the interval |
 | $h(k)$ | the chiral part of a symbol |
 | $c_\pm$ | the local ladder of a symbol at a node, $c_\pm^2=0$ |
 

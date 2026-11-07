@@ -33,7 +33,7 @@ $$
 +b_{\mathrm{fop},r}^{\dagger}(\vec p)\,\tilde{Ξ}_{\mathrm{sp},-}^{(r)}(\vec p)\,\exp(+ip\cdot x)\Big],
 $$
 
-with $E_{\vec p}=+\sqrt{\vec p^{\,2}c^2+m^{2}\,c^{4}}$, $x=(r'_t,\vec r)$ and $p\cdot x=E_{\vec p}r'_t-\vec p\cdot\vec r$. The amplitudes $\tilde{Ξ}_{\mathrm{sp},\pm}^{(r)}(\vec p)$ are elements of $\mathbb{B}$: they are the two branches of the biquaternion plane wave of the solutions article, the two $+$ amplitudes solving the amplitude equation there at the positive root of $\tilde P\tilde P^{\natural}= -m^{2}\,c^{2}$ and the two $-$ amplitudes at the negative root, with $r=1,2$ counting the two solutions at each root. The mode anticommutators are
+with $E_{\vec p}=+\sqrt{\vec p^{\,2}c^2+m^{2}\,c^{4}}$, $x=(r'_t,\vec r)$ and $p\cdot x=E_{\vec p}r'_t-\vec p\cdot\vec r$. The amplitudes $\tilde{Ξ}_{\mathrm{sp},\pm}^{(r)}(\vec p)$ are elements of $\mathbb{B}$: they are the two branches of the biquaternion plane wave of the solutions article, the two $+$ amplitudes solving the amplitude equation there at the positive root of $\tilde P_{\Phi}\tilde P_{\Phi}^{\natural}= -m^{2}\,c^{2}$ and the two $-$ amplitudes at the negative root, with $r=1,2$ counting the two solutions at each root. The mode anticommutators are
 
 $$
 \{a_{\mathrm{fop},r}(\vec p),a_{\mathrm{fop},s}^{\dagger}(\vec q)\}
@@ -139,11 +139,11 @@ The parity has three consequences that organize the rest of the article.
 The single-mode truncation of this structure lives *inside* $\mathbb{B}$. The spin–statistics companion computes the truncated ladder
 
 $$
-\boxed{\;\frac{k_m\,\tilde{S}_{+}}{m\,c}=\tfrac12(i\vec e_x-\vec e_y),\frac{k_m\,\tilde{S}_{-}}{m\,c}=\tfrac12(i\vec e_x+\vec e_y),
+\boxed{\;\frac{k_m\,\tilde{S}_{\Psi,+}}{m\,c}=\tfrac12(i\vec e_x-\vec e_y),\frac{k_m\,\tilde{S}_{\Psi,-}}{m\,c}=\tfrac12(i\vec e_x+\vec e_y),
 \qquad
-\Bigl(\frac{k_m\,\tilde{S}_{+}}{m\,c}\Bigr)^2=0,
+\Bigl(\frac{k_m\,\tilde{S}_{\Psi,+}}{m\,c}\Bigr)^2=0,
 \qquad
-\Bigl\{\frac{k_m\,\tilde{S}_{+}}{m\,c},\frac{k_m\,\tilde{S}_{-}}{m\,c}\Bigr\}=e_t,
+\Bigl\{\frac{k_m\,\tilde{S}_{\Psi,+}}{m\,c},\frac{k_m\,\tilde{S}_{\Psi,-}}{m\,c}\Bigr\}=e_t,
 \qquad
 (-1)^F=i\vec e_z\;},
 $$
@@ -207,16 +207,16 @@ was verified exactly, with spectra $\{-1,0,0,1\}$ for the left side and $\{0,1,1
 Because $i$ and the $\vec e_k$ are anti-Hermitian and $i$ is central, the four-momentum assembles into an operator-valued element of the material sector,
 
 $$
-\boxed{\;\tilde P_{\mathrm{fop}}=iH\,e_t+P_{\mathrm{fop},k}\,\vec e_k\in\mathcal{A}\otimes\mathbb{B}_{\Phi}\;},
+\boxed{\;\tilde P_{\Phi,\mathrm{fop}}=iH\,e_t+P_{\mathrm{fop},k}\,\vec e_k\in\mathcal{A}\otimes\mathbb{B}_{\Phi}\;},
 $$
 
 whose square is the operator mass shell
 
 $$
-\tilde P_{\mathrm{fop}}\tilde P_{\mathrm{fop}}^{\natural}=-\Big(H^2-\sum_kP_{\mathrm{fop},k}P_{\mathrm{fop},k}\Big)e_t,
+\tilde P_{\Phi,\mathrm{fop}}\tilde P_{\Phi,\mathrm{fop}}^{\natural}=-\Big(H^2-\sum_kP_{\mathrm{fop},k}P_{\mathrm{fop},k}\Big)e_t,
 $$
 
-the operator counterpart of the classical condition $\tilde P\tilde P^{\natural}= -m^{2}\,c^{2}$, where $\tilde P$ is the $c$-number wave biquaternion of the two-point function below. The charge is different in kind: $Ϙ_{\mathrm{fop}}$ is Hermitian and scalar in the algebra factor, hence central there,
+the operator counterpart of the classical condition $\tilde P_{\Phi}\tilde P_{\Phi}^{\natural}= -m^{2}\,c^{2}$, where $\tilde P_{\Phi}$ is the $c$-number wave biquaternion of the two-point function below. The charge is different in kind: $Ϙ_{\mathrm{fop}}$ is Hermitian and scalar in the algebra factor, hence central there,
 
 $$
 Ϙ_{\mathrm{fop}}=Ϙ_{\mathrm{fop}}^{\dagger}\in\mathcal{A}\otimes\mathbb{B}_{C},
@@ -237,10 +237,10 @@ $$
 
 normal-ordered, Hermitian for all four components, and even under fermion parity. Each component is the frame's bilinear reduced at the place of use. The spatial member carries $\vec e_k$ before the field and $\vec e_y$ after it; the timelike member carries no factor before the field. The fixed factor $i\vec e_x$ of the conjugate follows in both, so the right factors multiply as $\vec e_y\vec e_x=-\vec e_z$ for the spatial component and as $\vec e_x\vec e_x=-\vec e_t$ for the timelike one, and the two phases contribute $i^2=-1$; for the timelike component the minus of $i^2$ and the minus of $\vec e_x\vec e_x=-\vec e_t$ cancel and leave the density with a plus sign. The timelike component is the density, a Hermitian form of the field with itself; each spatial component is the same form with the unit $\vec e_k$ inserted before the field and the fixed unit $\vec e_z$ after it.
 
-Writing $\tilde J=iJ_t e_t+\sum_kJ_k\vec e_k\in\mathcal{A}\otimes\mathbb{B}_{\Phi}$, the conservation law is the operator equation
+Writing $\tilde J_{\Phi}=iJ_t e_t+\sum_kJ_k\vec e_k\in\mathcal{A}\otimes\mathbb{B}_{\Phi}$, the conservation law is the operator equation
 
 $$
-\langle\tilde\nabla,\tilde J\rangle_{\natural}(r_x)=0,
+\langle\tilde\nabla,\tilde J_{\Phi}\rangle_{\natural}(r_x)=0,
 $$
 
 on account of the field equation. The operator statement is inherited from the classical identity term by term, since each term of the normal-ordered bilinear is a $c$-number coefficient times a mode-operator monomial and the divergence acts on the coefficient only.
@@ -252,21 +252,21 @@ $$
 +d_1\tilde{Ξ}_{\mathrm{sp},-}^{(1)}(\vec p_2)\exp(+ip_2\cdot x),
 $$
 
-with $m=0.7$, $\vec p_1=(0.3,-0.9,1.1)$, $\vec p_2=(-0.5,0.2,0.45)$ and complex coefficients $c_1,c_2,d_1$, the four-divergence $\langle\tilde\nabla,\tilde J\rangle_{\natural}$ of the bilinear was evaluated by central differences at a generic spacetime point. It vanishes to $5.3\times10^{-10}$ at step $h=10^{-5}$, which is the discretization error of the difference, and the same check on the full superposition of both frequency branches of both momenta gives $1.2\times10^{-10}$; a single plane wave gives $1.2\times10^{-11}$, the same error floor. A single plane wave tests only the mass-shell condition; the superposition tests the cancellation between the branches, which is the content of conservation.
+with $m=0.7$, $\vec p_1=(0.3,-0.9,1.1)$, $\vec p_2=(-0.5,0.2,0.45)$ and complex coefficients $c_1,c_2,d_1$, the four-divergence $\langle\tilde\nabla,\tilde J_{\Phi}\rangle_{\natural}$ of the bilinear was evaluated by central differences at a generic spacetime point. It vanishes to $5.3\times10^{-10}$ at step $h=10^{-5}$, which is the discretization error of the difference, and the same check on the full superposition of both frequency branches of both momenta gives $1.2\times10^{-10}$; a single plane wave gives $1.2\times10^{-11}$, the same error floor. A single plane wave tests only the mass-shell condition; the superposition tests the cancellation between the branches, which is the content of conservation.
 
-In biquaternion terms the current is an element product read through the scalar part, and what keeps it conserved is the fixed frame element it carries. The minimal-coupling companion shows that the naive element-valued bilinear $i\tilde{Ξ}_{\mathrm{sp}}\tilde{Ξ}_{\mathrm{sp}}^*$ is gauge invariant and in $\mathbb{B}_{\Phi}$ but is *not* conserved — its divergence does not vanish — and that the physical current needs the fixed right factor that the collapse above leaves, $\vec e_z$. The quantized current inherits that: its conservation is the operator statement $\langle\tilde\nabla,\tilde J\rangle_{\natural}=0$ displayed above.
+In biquaternion terms the current is an element product read through the scalar part, and what keeps it conserved is the fixed frame element it carries. The minimal-coupling companion shows that the naive element-valued bilinear $i\tilde{Ξ}_{\mathrm{sp}}\tilde{Ξ}_{\mathrm{sp}}^*$ is gauge invariant and in $\mathbb{B}_{\Phi}$ but is *not* conserved — its divergence does not vanish — and that the physical current needs the fixed right factor that the collapse above leaves, $\vec e_z$. The quantized current inherits that: its conservation is the operator statement $\langle\tilde\nabla,\tilde J_{\Phi}\rangle_{\natural}=0$ displayed above.
 
 ### Spin
 
 The spin operator is the spatial integral of the bilinear with the informational-sector element multiplying the field from the left,
 
 $$
-S_k=\int  d^3r\,:\!\mathrm{Sc}\Bigl(\tilde{Ξ}_{\mathrm{fop}}^{\dagger}\,\tilde S_k\,\tilde{Ξ}_{\mathrm{fop}}\Bigr)\!:,
+S_k=\int  d^3r\,:\!\mathrm{Sc}\Bigl(\tilde{Ξ}_{\mathrm{fop}}^{\dagger}\,\tilde S_{\Psi,k}\,\tilde{Ξ}_{\mathrm{fop}}\Bigr)\!:,
 \qquad
-\tilde S_k=\frac{m\,c}{2\,k_m}i\vec e_k .
+\tilde S_{\Psi,k}=\frac{m\,c}{2\,k_m}i\vec e_k .
 $$
 
-It is Hermitian and even, and it is the operator whose classical limit is the spin three-vector of the one-particle theory. The generator is the informational-sector element $\tilde S_k$ itself, and the bilinear realizes it on the field; the sector interpretation is the one the electron companion records.
+It is Hermitian and even, and it is the operator whose classical limit is the spin three-vector of the one-particle theory. The generator is the informational-sector element $\tilde S_{\Psi,k}$ itself, and the bilinear realizes it on the field; the sector interpretation is the one the electron companion records.
 
 ## The Two-Point Function
 
@@ -308,11 +308,11 @@ $$
 
 a modified Bessel function of the second kind, nonzero for every $\vec\Delta\ne0$. The trailing $\vec e_x$ multiplies the whole bracket on the right, so every term is read with its sides in position: the mass term is a single right multiplication by $i\vec e_x$ once the outer $i$ is placed against it, with no factor on the left, and each spatial term, since $\vec e_y\vec e_x=-\vec e_z$, carries $\vec e_k$ on the left and $\vec e_z$ on the right — the same reduction the frame paragraph records. The mass term is the difference of the two spin sums of the solutions article, which is twice the mass, taken against the cosine. The gradient term is their sum, the spatial part of $\mathbb{D}$ read on the element with the derivative in place of the momentum; being odd in $\vec p$, it survives against the sine that the difference of the two phases leaves, and the integration is the companion's identity $\int\frac{d^3p}{(2\pi)^3}\frac{p_k\sin(\vec p\cdot\vec\Delta)}{E_{\vec p}}=-\partial F/\partial\Delta_k$. The anticommutator pairs equal phases instead, keeps only the cosine, and is a contact term at equal times. The quantized biquaternion Dirac field, like any field of spin $\tfrac12$, therefore has a local anticommutator and a nonlocal commutator; both are $c$-numbers, and microcausality is the statement about the anticommutator.
 
-**The biquaternion form.** Writing the wave biquaternion (the $c$-number symbol) $\tilde P=i(E_{\vec p}/c)\,e_t+\vec p$, with $p_0=E_{\vec p}/c$, so that $\tilde P\tilde P^{\natural}=-p^2$, the momentum-space two-point function of the propagator companion is the map
+**The biquaternion form.** Writing the wave biquaternion (the $c$-number symbol) $\tilde P_{\Phi}=i(E_{\vec p}/c)\,e_t+\vec p$, with $p_0=E_{\vec p}/c$, so that $\tilde P_{\Phi}\tilde P_{\Phi}^{\natural}=-p^2$, the momentum-space two-point function of the propagator companion is the map
 
 $$
 S_F(p):\ \tilde{X}\,\longmapsto\frac{i\bigl(i\tilde X\vec e_x p_{0}-\sum_k  i\vec e_k\tilde X\vec e_y p_{k}+m\,\tilde X\bigr)}{p^2-m^{2}\,c^{2}+i\epsilon}
-=-\frac{i\bigl(i\tilde X\vec e_x p_{0}-\sum_k  i\vec e_k\tilde X\vec e_y p_{k}+m\,\tilde X\bigr)}{\tilde P\tilde P^{\natural}+m^{2}\,c^{2}-i\epsilon}.
+=-\frac{i\bigl(i\tilde X\vec e_x p_{0}-\sum_k  i\vec e_k\tilde X\vec e_y p_{k}+m\,\tilde X\bigr)}{\tilde P_{\Phi}\tilde P_{\Phi}^{\natural}+m^{2}\,c^{2}-i\epsilon}.
 $$
 
 Distributing the outer $i$ of the first form with $i^2=-1$ gives the equivalent numerator $-\tilde X\vec e_x p_0+\sum_k\vec e_k\tilde X\vec e_y p_k+i m\tilde X$. The numerator is $(\mathbb{D}_p+m)\tilde X$, the momentum symbol of the display above together with the mass, the mass term being the multiplication by $m$ and not a separate operator. The denominator is the deformed mass-shell scalar, and the deformation $-i\epsilon\,e_t$ lies in the centre and along the $i c r'_t$ axis of the material sector. The two-point function of the operator field is thus an operator-valued distribution whose biquaternion form is the mass-shell condition with the Feynman shift; the companion article's finding — that the algebra supplies the axis of the deformation but not its orientation — is inherited unchanged, and this article adds nothing to it.
@@ -324,7 +324,7 @@ Distributing the outer $i$ of the first form with $i^2=-1$ gives the equivalent 
 **What the biquaternion structure supplies.**
 
 - *The sector assignment of the observables.* Energy–momentum is an operator-valued element of $\mathbb{B}_{\Phi}$; spin is built from the $\mathbb{B}_{\Psi}$ elements $i\vec e_k$; the charge is central. The classical sector interpretation survives quantization.
-- *The field as the odd generator, with the structure realized inside $\mathbb{B}$ for one mode.* The single-mode coincidence $\tilde S_+/\hbar=\tfrac12(i\vec e_x-\vec e_y)$, $(-1)^F=i\vec e_z$ is exact, and it is the one place where the fermionic structure and the algebra's own spin structure are the same elements.
+- *The field as the odd generator, with the structure realized inside $\mathbb{B}$ for one mode.* The single-mode coincidence $\tilde S_{\Psi,+}/\hbar=\tfrac12(i\vec e_x-\vec e_y)$, $(-1)^F=i\vec e_z$ is exact, and it is the one place where the fermionic structure and the algebra's own spin structure are the same elements.
 - *The biquaternion form of the two-point function*, inheriting the deformed mass-shell denominator.
 - *The separation of the four conjugations*, so that the particle–antiparticle exchange is Hermitian conjugation of the operator field and not the algebra's real structure.
 
@@ -355,11 +355,11 @@ $$
 (-1)^F\tilde{Ξ}_{\mathrm{fop}}(x)(-1)^F=-\tilde{Ξ}_{\mathrm{fop}}(x),
 $$
 
-so the observables are the even bilinears, the operator algebra is $\mathbb{Z}/2$-graded with the field in the odd part, and the grading agrees with the $2\pi$ rotation on the odd subspace. For one mode the entire structure is realized inside $\mathbb{B}$ through $\tilde S_+/\hbar=\tfrac12(i\vec e_x-\vec e_y)$ and $(-1)^F=i\vec e_z$; for the field it is external.
+so the observables are the even bilinears, the operator algebra is $\mathbb{Z}/2$-graded with the field in the odd part, and the grading agrees with the $2\pi$ rotation on the odd subspace. For one mode the entire structure is realized inside $\mathbb{B}$ through $\tilde S_{\Psi,+}/\hbar=\tfrac12(i\vec e_x-\vec e_y)$ and $(-1)^F=i\vec e_z$; for the field it is external.
 
-The observables are the normal-ordered energy–momentum, charge, current and spin. The Hamiltonian is $H=\sum_r\int\frac{d^3p}{(2\pi)^3}E_{\vec p}(a_{\mathrm{fop},r}^{\dagger}a_{\mathrm{fop},r}+b_{\mathrm{fop},r}^{\dagger}b_{\mathrm{fop},r})$ after normal ordering, with the constant $E_0=-2V\int\frac{d^3p}{(2\pi)^3}E_{\vec p}$; the sign flip of the antiparticle term is the anticommutator, verified on the two-mode truncation. The four-momentum assembles into the operator-valued material-sector element $\tilde P_{\mathrm{fop}}=iH e_t+P_{\mathrm{fop},k}\vec e_k\in\mathcal{A}\otimes\mathbb{B}_{\Phi}$, and the charge is central. The current is conserved as an operator equation, verified by finite differences on a superposition of two momenta and on both frequency branches, to $5.3\times10^{-10}$ and $1.2\times10^{-10}$ respectively.
+The observables are the normal-ordered energy–momentum, charge, current and spin. The Hamiltonian is $H=\sum_r\int\frac{d^3p}{(2\pi)^3}E_{\vec p}(a_{\mathrm{fop},r}^{\dagger}a_{\mathrm{fop},r}+b_{\mathrm{fop},r}^{\dagger}b_{\mathrm{fop},r})$ after normal ordering, with the constant $E_0=-2V\int\frac{d^3p}{(2\pi)^3}E_{\vec p}$; the sign flip of the antiparticle term is the anticommutator, verified on the two-mode truncation. The four-momentum assembles into the operator-valued material-sector element $\tilde P_{\Phi,\mathrm{fop}}=iH e_t+P_{\mathrm{fop},k}\vec e_k\in\mathcal{A}\otimes\mathbb{B}_{\Phi}$, and the charge is central. The current is conserved as an operator equation, verified by finite differences on a superposition of two momenta and on both frequency branches, to $5.3\times10^{-10}$ and $1.2\times10^{-10}$ respectively.
 
-The covariant anticommutator is a $c$-number and vanishes for spacelike separation; for every element $\tilde X$, $\{\tilde{Ξ}_{\mathrm{fop}}(x)\mathrm{Sc}(\tilde{Ξ}_{\mathrm{fop}}^{\dagger}(y)i\vec e_x\tilde X)\}=(\mathbb{D}+k_m)\Delta_{\mathrm{A}}(x-y)\tilde X$. The commutator is a $c$-number as well but has support outside the light cone. The momentum-space two-point function is the propagator companion's map $S_F(p):\tilde X\mapsto-i(i\tilde X\vec e_x p_0-\sum_k i\vec e_k\tilde X\vec e_y p_k+m\tilde X)/(\tilde P\tilde P^{\natural}+m^{2}\,c^{2}-i\epsilon)$, whose biquaternion form is the deformed mass-shell condition.
+The covariant anticommutator is a $c$-number and vanishes for spacelike separation; for every element $\tilde X$, $\{\tilde{Ξ}_{\mathrm{fop}}(x)\mathrm{Sc}(\tilde{Ξ}_{\mathrm{fop}}^{\dagger}(y)i\vec e_x\tilde X)\}=(\mathbb{D}+k_m)\Delta_{\mathrm{A}}(x-y)\tilde X$. The commutator is a $c$-number as well but has support outside the light cone. The momentum-space two-point function is the propagator companion's map $S_F(p):\tilde X\mapsto-i(i\tilde X\vec e_x p_0-\sum_k i\vec e_k\tilde X\vec e_y p_k+m\tilde X)/(\tilde P_{\Phi}\tilde P_{\Phi}^{\natural}+m^{2}\,c^{2}-i\epsilon)$, whose biquaternion form is the deformed mass-shell condition.
 
 ## Summary of Notation
 
@@ -387,17 +387,17 @@ The covariant anticommutator is a $c$-number and vanishes for spacelike separati
 | $\{a_{\mathrm{fop},r}(\vec p),a_{\mathrm{fop},s}^{\dagger}(\vec q)\}=(2\pi)^3\delta_{rs}\delta^{(3)}(\vec p-\vec q)$ | Mode anticommutator |
 | $(-1)^F$ | Fermion parity; $(-1)^F\tilde{Ξ}_{\mathrm{fop}}(-1)^F=-\tilde{Ξ}_{\mathrm{fop}}$ |
 | $H,P_{\mathrm{fop}},Ϙ_{\mathrm{fop}},J_\mu,S_k$ | Operator-valued energy, momentum, charge, current, spin |
-| $\tilde J=iJ_t e_t+\sum_kJ_k\vec e_k\in\mathcal{A}\otimes\mathbb{B}_{\Phi}$ | Operator current biquaternion |
+| $\tilde J_{\Phi}=iJ_t e_t+\sum_kJ_k\vec e_k\in\mathcal{A}\otimes\mathbb{B}_{\Phi}$ | Operator current biquaternion |
 | $E_0=-2V\int\frac{d^3p}{(2\pi)^3}E_{\vec p}$ | Normal-ordering constant |
-| $\tilde P_{\mathrm{fop}}=iHe_t+P_{\mathrm{fop},k}\vec e_k\in\mathcal{A}\otimes\mathbb{B}_{\Phi}$ | Operator four-momentum biquaternion |
-| $\tilde S_k=\frac{m\,c}{2\,k_m}i\vec e_k$, $\tilde S_\pm=\frac{m\,c}{2\,k_m}(i\vec e_x\mp \vec e_y)$ | Spin generators (informational sector) |
-| $\tilde S_+/\hbar=\tfrac12(i\vec e_x-\vec e_y)$, $\tilde S_-/\hbar=\tfrac12(i\vec e_x+\vec e_y)$, $(-1)^F=i\vec e_z$ | Single-mode ladder and parity inside $\mathbb{B}$ |
+| $\tilde P_{\Phi,\mathrm{fop}}=iHe_t+P_{\mathrm{fop},k}\vec e_k\in\mathcal{A}\otimes\mathbb{B}_{\Phi}$ | Operator four-momentum biquaternion |
+| $\tilde S_{\Psi,k}=\frac{m\,c}{2\,k_m}i\vec e_k$, $\tilde S_{\Psi,\pm}=\frac{m\,c}{2\,k_m}(i\vec e_x\mp \vec e_y)$ | Spin generators (informational sector) |
+| $\tilde S_{\Psi,+}/\hbar=\tfrac12(i\vec e_x-\vec e_y)$, $\tilde S_{\Psi,-}/\hbar=\tfrac12(i\vec e_x+\vec e_y)$, $(-1)^F=i\vec e_z$ | Single-mode ladder and parity inside $\mathbb{B}$ |
 | $\{\tilde{Ξ}_{\mathrm{fop}}(x)\mathrm{Sc}(\tilde{Ξ}_{\mathrm{fop}}^{\dagger}(y)i\vec e_x\tilde X)\}=(\mathbb{D}+k_m)\Delta_{\mathrm{A}}(x-y)\tilde X$ | Covariant anticommutator ($c$-number), for every element $\tilde X$ |
 | $\Delta_{\mathrm{A}}(x-y)$ | Antisymmetric Pauli–Jordan kernel; support inside the light cone |
 | $G_{\mathrm{S}}(x-y)$ | Symmetric kernel of the commutator's vacuum expectation |
 | $F(\vec\Delta)=\int\frac{d^3p}{(2\pi)^3}\frac{\cos(\vec p\cdot\vec\Delta)}{E_{\vec p}}=\frac{m}{2\pi^2\lvert\vec\Delta\rvert}\\mathrm{Ki}_{1}(m\lvert\vec\Delta\rvert)$ | Equal-time commutator kernel, nonzero at every spacelike separation |
-| $S_F(p):\tilde X\mapsto-\frac{i(i\tilde X\vec e_x p_0-\sum_k i\vec e_k\tilde X\vec e_y p_k+m\tilde X)}{\tilde P\tilde P^{\natural}+m^{2}\,c^{2}-i\epsilon}$ | Feynman propagator amplitude, as a map on elements |
-| $\tilde P=i(E_{\vec p}/c)\,e_t+\vec p$, $\tilde P\tilde P^{\natural}=-p^2$ | $c$-number wave biquaternion and mass shell |
+| $S_F(p):\tilde X\mapsto-\frac{i(i\tilde X\vec e_x p_0-\sum_k i\vec e_k\tilde X\vec e_y p_k+m\tilde X)}{\tilde P_{\Phi}\tilde P_{\Phi}^{\natural}+m^{2}\,c^{2}-i\epsilon}$ | Feynman propagator amplitude, as a map on elements |
+| $\tilde P_{\Phi}=i(E_{\vec p}/c)\,e_t+\vec p$, $\tilde P_{\Phi}\tilde P_{\Phi}^{\natural}=-p^2$ | $c$-number wave biquaternion and mass shell |
 
 Here $k_m=mc/\hbar$ is the mass wave number, the inverse of the mass length.
 

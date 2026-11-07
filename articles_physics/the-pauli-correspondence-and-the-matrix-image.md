@@ -189,19 +189,19 @@ An element $\tilde R_\Psi\in\mathbb{B}_{\Psi}$ has a Hermitian matrix, and a Her
 The identification is exact: $\mathbb{B}_{\Psi}$ is carried onto the Hermitian matrices, and the expectation is the trace of the product,
 
 $$
-\operatorname{Tr}\bigl(\mathsf M_2(\tilde{Ϛ})\mathsf M_2(\tilde R_\Psi)\bigr)=2\langle\tilde{Ϛ},\tilde R_\Psi\rangle_{*}=c r_t+\vec r\cdot\vec r_\Psi ,
+\operatorname{Tr}\bigl(\mathsf M_2(\tilde{Ϛ}_{\Psi})\mathsf M_2(\tilde R_\Psi)\bigr)=2\langle\tilde{Ϛ}_{\Psi},\tilde R_\Psi\rangle_{*}=c r_t+\vec r\cdot\vec r_\Psi ,
 $$
 
-for the state $\tilde{Ϛ}=\tfrac12(e_t+i\vec r)$ of trace one.
+for the state $\tilde{Ϛ}_{\Psi}=\tfrac12(e_t+i\vec r)$ of trace one.
 
 The boundary is that the word *observable* uses the involution ${}^{*}$, which belongs to the real structure of $\mathbb B$. The complex isomorphism alone does not single out $\mathbb{B}_{\Psi}$: it carries $\mathbb{B}_{\Psi}$ and $\mathbb{B}_{\Phi}$ to two complementary subspaces of the same complex algebra, and the choice between them is physical.
 
 ### The Three Directions Are the Three Spin Axes
 
-A traceless Hermitian element is $\tilde R_\Psi=i\vec r_\Psi$ with $\vec r_\Psi\in\mathbb R^3$, and its matrix is $\vec r_\Psi\cdot\vec\sigma$. The three coefficients are the components of a spatial vector, and the three Pauli matrices are the three components of the measurement. For the spin operators $\tilde S_k=\frac{m\,c}{2\,k_m}i\vec e_k$ the matrix is $\frac{m\,c}{2\,k_m}\sigma_k$, and the commutator
+A traceless Hermitian element is $\tilde R_\Psi=i\vec r_\Psi$ with $\vec r_\Psi\in\mathbb R^3$, and its matrix is $\vec r_\Psi\cdot\vec\sigma$. The three coefficients are the components of a spatial vector, and the three Pauli matrices are the three components of the measurement. For the spin operators $\tilde S_{\Psi,k}=\frac{m\,c}{2\,k_m}i\vec e_k$ the matrix is $\frac{m\,c}{2\,k_m}\sigma_k$, and the commutator
 
 $$
-[\tilde S_i,\tilde S_j]=\frac{m\,c\,i\,\epsilon_{ijk}\,\tilde{S}_{k}}{k_m}$$
+[\tilde S_{\Psi,i},\tilde S_{\Psi,j}]=\frac{m\,c\,i\,\epsilon_{ijk}\,\tilde{S}_{\Psi,k}}{k_m}$$
 
 is the angular-momentum algebra. The three directions close under the commutator into $\mathfrak{su}(2)$, and the exponentials are the rotations of the state space.
 
@@ -212,9 +212,9 @@ The boundary is that the naming of the three directions is a choice of basis, an
 A state is a Hermitian element of trace one whose matrix is positive semidefinite:
 
 $$
-\tilde{Ϛ}=\tfrac12(e_t+i\vec r),
+\tilde{Ϛ}_{\Psi}=\tfrac12(e_t+i\vec r),
 \qquad
-\rho=\mathsf M_2(\tilde{Ϛ})=\tfrac12\bigl(\mathrm I_2+\vec r\cdot\vec\sigma\bigr),
+\rho=\mathsf M_2(\tilde{Ϛ}_{\Psi})=\tfrac12\bigl(\mathrm I_2+\vec r\cdot\vec\sigma\bigr),
 \qquad
 \lvert\vec r\rvert\le1 .
 $$
@@ -224,7 +224,7 @@ The trace-one condition is the normalisation, the positivity is $\lvert\vec r\rv
 The determinant of the state matrix is
 
 $$
-\det\mathsf M_2(\tilde{Ϛ})=\tfrac14\bigl(1-\lvert\vec r\rvert^{2}\bigr),
+\det\mathsf M_2(\tilde{Ϛ}_{\Psi})=\tfrac14\bigl(1-\lvert\vec r\rvert^{2}\bigr),
 $$
 
 the product of the two eigenvalues $\tfrac12(1\pm\lvert\vec r\rvert)$. On the ball it is the radial gap to the pure boundary: it vanishes on the sphere and is maximal at the centre.
@@ -234,9 +234,9 @@ the product of the two eigenvalues $\tfrac12(1\pm\lvert\vec r\rvert)$. On the ba
 Three quantities read off the same determinant:
 
 $$
-\operatorname{Tr}(\tilde{Ϛ}^{2})=1-2\det\mathsf M_2(\tilde{Ϛ}),
+\operatorname{Tr}(\tilde{Ϛ}_{\Psi}^{2})=1-2\det\mathsf M_2(\tilde{Ϛ}_{\Psi}),
 \qquad
-S_L=1-\operatorname{Tr}(\tilde{Ϛ}^{2})=2\det\mathsf M_2(\tilde{Ϛ}).
+S_L=1-\operatorname{Tr}(\tilde{Ϛ}_{\Psi}^{2})=2\det\mathsf M_2(\tilde{Ϛ}_{\Psi}).
 $$
 
 The first is the purity; the second is the linear entropy. At the centre the determinant is $\tfrac14$, the purity $\tfrac12$ and the linear entropy $\tfrac12$. On the sphere the determinant vanishes, the purity is one and the entropy is zero.
@@ -266,7 +266,7 @@ $$
 The norm of an amplitude is real and non-negative. The state inherits the singular values and loses the phase: with $\tilde Q_{\mathrm n}=\tilde Q_H/\sqrt{\sigma_1^{2}+\sigma_2^{2}}$, the state is $\tilde Q_{\mathrm n}^{2}$, its eigenvalues are $p_i=\sigma_i^{2}/(\sigma_1^{2}+\sigma_2^{2})$, and its determinant is
 
 $$
-\det\mathsf M_2(\tilde{Ϛ}_Q)=\frac{\sigma_1^{2}\sigma_2^{2}}{(\sigma_1^{2}+\sigma_2^{2})^{2}}\in\left[0,\tfrac14\right].
+\det\mathsf M_2(\tilde{Ϛ}_{\Psi,Q})=\frac{\sigma_1^{2}\sigma_2^{2}}{(\sigma_1^{2}+\sigma_2^{2})^{2}}\in\left[0,\tfrac14\right].
 $$
 
 The mixedness is the spread of the singular values. The boundary is that the singular values are not the moduli of the eigenvalues for a non-normal element; only for a normal element do the two coincide.
@@ -323,7 +323,7 @@ A $2\times2$ matrix has two scalar invariants, its determinant and its trace, an
 
 | matrix | determinant | eigenvalue pair | reading |
 | --- | --- | --- | --- |
-| $\mathsf M_2(\tilde{Ϛ})$ | $\tfrac14(1-r^{2})$ | $\tfrac12(1\pm r)$ | mixedness; the purity is affine in the determinant |
+| $\mathsf M_2(\tilde{Ϛ}_{\Psi})$ | $\tfrac14(1-r^{2})$ | $\tfrac12(1\pm r)$ | mixedness; the purity is affine in the determinant |
 | $\mathsf M_2(\tilde B_\eta)$ | $1$ | $e^{\pm\eta/2}$ | half the rapidity |
 | $\mathsf M_2(\tilde R_\theta)$ | $1$ | $e^{\pm i\theta/2}$ | half the angle |
 | $\varsigma\varsigma^{\dagger}$ | $0$ | $1,0$ | a pure state; the fibre is the phase |
@@ -378,9 +378,9 @@ The correspondence does not say that nature is complex, and it does not derive t
 | $\mathsf M_2(\tilde Q)$ | the element image; $\det=N$, $\operatorname{Tr}=2Q_t$ |
 | $\mathsf M_{4L}(\tilde Q)$ | the left regular image; $\det=N^{2}$, $\operatorname{Tr}=4Q_t$ |
 | $\operatorname{H}_{\tilde Q}$ | the sandwich; $\det=\lvert N\rvert^{4}$, $\operatorname{Tr}=4\lvert Q_t\rvert^{2}$ |
-| $\tilde{Ϛ}=\tfrac12(e_t+i\vec r)$ | a trace-one state of the Bloch ball |
-| $\det\mathsf M_2(\tilde{Ϛ})=\tfrac14(1-r^{2})$ | the mixedness |
-| $S_L=2\det\mathsf M_2(\tilde{Ϛ})$ | the linear entropy |
+| $\tilde{Ϛ}_{\Psi}=\tfrac12(e_t+i\vec r)$ | a trace-one state of the Bloch ball |
+| $\det\mathsf M_2(\tilde{Ϛ}_{\Psi})=\tfrac14(1-r^{2})$ | the mixedness |
+| $S_L=2\det\mathsf M_2(\tilde{Ϛ}_{\Psi})$ | the linear entropy |
 | $\tilde B_\eta$ | the boost rotor of rapidity $\eta$ |
 | $\tilde R_\theta$ | the rotation rotor of angle $\theta$ |
 | $\varsigma$ | a unit spinor of $S\cong\mathbb C^2$ |

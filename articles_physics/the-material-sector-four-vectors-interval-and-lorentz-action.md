@@ -100,13 +100,13 @@ $$
 carries $\mathbb{B}_{\Phi}$ into itself and preserves the norm, $\langle\tilde Q_2\rangle_{\natural}=\langle\tilde Q\rangle_{\natural}$. It is a group action, $(\tilde U_{\mathrm{lor},2}\tilde U_{\mathrm{lor},1})\tilde Q(\tilde U_{\mathrm{lor},2}\tilde U_{\mathrm{lor},1})^{*}=\tilde U_{\mathrm{lor},2}(\tilde U_{\mathrm{lor},1}\tilde Q\tilde U_{\mathrm{lor},1}{}^{*})\tilde U_{\mathrm{lor},2}{}^{*}$. The unit-norm elements form $SL(2,\mathbb{C})$, the double cover of the proper orthochronous Lorentz group. Every unit-norm biquaternion is a boost times a rotation,
 
 $$
-\boxed{\;\tilde U_{\mathrm{lor}}=\tilde U_{\mathrm b}\,\tilde u_{\mathrm r}\;},
+\boxed{\;\tilde U_{\mathrm{lor}}=\tilde U_{\Psi,\mathrm b}\,\tilde u_{\mathrm r}\;},
 $$
 
 with the boost factor on the left. A pure boost is the Hermitian positive unit-norm element
 
 $$
-\tilde U_{\mathrm b}=\cosh\frac{\theta_{\mathrm{rpd}}}{2}+i\sinh\frac{\theta_{\mathrm{rpd}}}{2}\,\vec u_{\mathrm b},
+\tilde U_{\Psi,\mathrm b}=\cosh\frac{\theta_{\mathrm{rpd}}}{2}+i\sinh\frac{\theta_{\mathrm{rpd}}}{2}\,\vec u_{\mathrm b},
 $$
 
 and a pure spatial rotation is the real quaternion
@@ -115,7 +115,7 @@ $$
 \tilde u_{\mathrm r}=\cos\frac{\theta}{2}+\sin\frac{\theta}{2}\,\vec u_{\mathrm r}.
 $$
 
-The positivity of $\tilde U_{\mathrm b}$ removes the sign ambiguity: $\tilde U_{\mathrm b}$ and $-\tilde U_{\mathrm b}$ are both Hermitian of unit norm, and only the positive one is the boost factor. The letter $\tilde U_{\mathrm{lor}}$ names the general Lorentz rotor, $\tilde U_{\mathrm b}$ the boost factor and $\tilde u_{\mathrm r}$ the rotation factor. The sector is a **representation space** of the Lorentz group, and the rotor acts on it from outside: a boost rotor lies in $\mathbb{B}_{\Psi}$, a rotation rotor in $\mathbb{B}_{H}$, and only a general rotor uses the whole algebra.
+The positivity of $\tilde U_{\Psi,\mathrm b}$ removes the sign ambiguity: $\tilde U_{\Psi,\mathrm b}$ and $-\tilde U_{\Psi,\mathrm b}$ are both Hermitian of unit norm, and only the positive one is the boost factor. The letter $\tilde U_{\mathrm{lor}}$ names the general Lorentz rotor, $\tilde U_{\Psi,\mathrm b}$ the boost factor and $\tilde u_{\mathrm r}$ the rotation factor. The sector is a **representation space** of the Lorentz group, and the rotor acts on it from outside: a boost rotor lies in $\mathbb{B}_{\Psi}$, a rotation rotor in $\mathbb{B}_{H}$, and only a general rotor uses the whole algebra.
 
 ## Interpretations
 
@@ -147,7 +147,7 @@ The speed of light is local. In a material medium $c=1/\sqrt{\epsilon\mu}$ varie
 
 The interval is multiplicative, $\langle\tilde Q_1\tilde Q_2\rangle_{\natural}=\langle\tilde Q_1\rangle_{\natural}\langle\tilde Q_2\rangle_{\natural}$, so the sign of a product is the product of the signs of its factors. In the convention of this article a timelike element has $\langle\tilde Q\rangle_{\natural}<0$, so the product of two timelike elements is spacelike; a timelike and a spacelike element multiply to a timelike one; and a null factor makes the product null. The central generator reverses the norm, $\langle i\tilde Q\rangle_{\natural}=-\langle\tilde Q\rangle_{\natural}$, so the multiplication by $i$ that exchanges the sectors also flips the sign of the interval.
 
-The interval is therefore the form that a change of **local complex structure** moves. On a fixed real slice the algebra fixes the form; which element is timelike, null or spacelike is then a statement about the slice, not about the complex algebra alone. The mass is read off the modulus of the norm — the level set $\langle\tilde P\rangle_{\natural}=-m^2c^2$ is the mass shell — and the sector fixes the sign convention; the choice of slice is the third piece of the reading.
+The interval is therefore the form that a change of **local complex structure** moves. On a fixed real slice the algebra fixes the form; which element is timelike, null or spacelike is then a statement about the slice, not about the complex algebra alone. The mass is read off the modulus of the norm — the level set $\langle\tilde P_{\Phi}\rangle_{\natural}=-m^2c^2$ is the mass shell — and the sector fixes the sign convention; the choice of slice is the third piece of the reading.
 
 **The boundary.** The embedding here is the choice of real slice and of local complex structure, not an embedding of a curved manifold. No dynamical metric, no Einstein equation and no back-reaction are derived. The sign of the norm at a point is not an observable by itself; only the ratios and the level sets are.
 
@@ -158,22 +158,22 @@ The sector carries the standard four-vectors of relativistic physics. The table 
 | Four-vector | Element | Components | Norm |
 | --- | --- | --- | --- |
 | four-position | $\tilde R=\tilde R_\Phi=i c r'_t\,e_t+\vec r$ | $(c r'_{t},r_x,r_y,r_z)$ | $s^2=-c^2{r'_{t}}^2+\lvert\vec r\rvert^2$ |
-| four-velocity | $\tilde V=i\gamma c\,e_t+\gamma\vec v$ | $(\gamma c,\gamma\vec v)$ | $-c^2$ |
-| four-momentum | $\tilde P=i\frac{E}{c}\,e_t+\vec p$ | $(E/c,\vec p)$ | $-m^2c^2$ |
+| four-velocity | $\tilde V_{\Phi}=i\gamma c\,e_t+\gamma\vec v$ | $(\gamma c,\gamma\vec v)$ | $-c^2$ |
+| four-momentum | $\tilde P_{\Phi}=i\frac{E}{c}\,e_t+\vec p$ | $(E/c,\vec p)$ | $-m^2c^2$ |
 | four-wavevector | $\tilde K=i\frac{\omega}{c}\,e_t+\vec k$ | $(\omega/c,\vec k)$ | $0$ for light |
-| four-potential | $\tilde A=i\,a'_t\,e_t+\vec A$ | $(a'_t,\vec A)$ | gauge-dependent |
-| four-current | $\tilde J=i c\rho\,e_t+\vec j$ | $(c\rho,\vec j)$ | not fixed |
-| four-force | $\tilde{\mathcal F}_{\mathrm{frc}}=i\frac{\gamma\vec f\cdot\vec v}{c}\,e_t+\gamma\vec f$ | $(\gamma\vec f\cdot\vec v/c,\gamma\vec f)$ | not fixed |
+| four-potential | $\tilde A_{\Phi}=i\,a'_t\,e_t+\vec A$ | $(a'_t,\vec A)$ | gauge-dependent |
+| four-current | $\tilde J_{\Phi}=i c\rho\,e_t+\vec j$ | $(c\rho,\vec j)$ | not fixed |
+| four-force | $\tilde{\mathcal F}_{\Phi,\mathrm{frc}}=i\frac{\gamma\vec f\cdot\vec v}{c}\,e_t+\gamma\vec f$ | $(\gamma\vec f\cdot\vec v/c,\gamma\vec f)$ | not fixed |
 
 Every entry has the same structure: an imaginary scalar part, which is the time component, and a real vector part, which is the spatial one. Every entry transforms by rotor conjugation, with a boost rotor for a change of velocity and a rotation rotor for a change of spatial frame. The norm is the invariant of the entry: the interval for the position, $-c^2$ for the velocity, $-m^2c^2$ for the momentum, zero for the wavevector of light.
 
-The **mass shell** is the level set $\langle\tilde P\rangle_{\natural}=-m^2c^2$, that is $E^2/c^2-\lvert\vec p\rvert^2=m^2c^2$. A massive particle lies on a two-sheeted hyperboloid, one sheet for each sign of the energy; a massless particle lies on the cone. The **four-potential** is defined up to a gauge transformation $\tilde A\mapsto\tilde A+\partial\xi$, and its norm is not gauge invariant; the field strength built from it is. The **four-current** satisfies the continuity equation $\mathrm{Sc}(\tilde\nabla^{\natural}\tilde J)=0$, which in the sector is the statement that the divergence of the four-vector vanishes. The **four-force** of the table is orthogonal to the four-velocity, $\tilde{\mathcal F}_{\mathrm{frc}}\cdot\tilde V=0$, because its power is $\vec f\cdot\vec v$; this is the statement that the three-force $\vec f$ does not change the rest mass, and the norm $\langle\tilde V\rangle_{\natural}=-c^2$ is preserved. A four-force with a component along $\tilde V$, that is, one whose power differs from $\vec f\cdot\vec v$, changes the rest mass.
+The **mass shell** is the level set $\langle\tilde P_{\Phi}\rangle_{\natural}=-m^2c^2$, that is $E^2/c^2-\lvert\vec p\rvert^2=m^2c^2$. A massive particle lies on a two-sheeted hyperboloid, one sheet for each sign of the energy; a massless particle lies on the cone. The **four-potential** is defined up to a gauge transformation $\tilde A_{\Phi}\mapsto\tilde A_{\Phi}+\partial\xi$, and its norm is not gauge invariant; the field strength built from it is. The **four-current** satisfies the continuity equation $\mathrm{Sc}(\tilde\nabla^{\natural}\tilde J_{\Phi})=0$, which in the sector is the statement that the divergence of the four-vector vanishes. The **four-force** of the table is orthogonal to the four-velocity, $\tilde{\mathcal F}_{\Phi,\mathrm{frc}}\cdot\tilde V_{\Phi}=0$, because its power is $\vec f\cdot\vec v$; this is the statement that the three-force $\vec f$ does not change the rest mass, and the norm $\langle\tilde V_{\Phi}\rangle_{\natural}=-c^2$ is preserved. A four-force with a component along $\tilde V_{\Phi}$, that is, one whose power differs from $\vec f\cdot\vec v$, changes the rest mass.
 
 **The boundary.** The table is a dictionary, not a derivation. The field equations, the Lorentz force law and the Dirac equation are not results of the algebra; the algebra supplies the carrier space and the invariant. The identification of an algebraic element with a physical four-vector is the interpretive step, and it is the same step as in the standard four-vector formalism.
 
 ### The Eigenpair Is the Doppler Pair
 
-The eigenvalue decomposition of the element gives one more reading of the four-momentum. With $\tilde P=i\frac{E}{c}e_t+\vec p$ and $B=\lvert\vec p\rvert$, the two eigenvalues are
+The eigenvalue decomposition of the element gives one more reading of the four-momentum. With $\tilde P_{\Phi}=i\frac{E}{c}e_t+\vec p$ and $B=\lvert\vec p\rvert$, the two eigenvalues are
 
 $$
 \boxed{\;\lambda_\pm=i\left(\frac{E}{c}\pm\lvert\vec p\rvert\right)\;}.
@@ -185,7 +185,7 @@ $$
 \nu_+\nu_-=\frac{E^2}{c^2}-\lvert\vec p\rvert^2=m^2c^2,
 $$
 
-while the product of the eigenvalues is the biquaternion norm, $\lambda_+\lambda_-=-m^2c^2=\langle\tilde P\rangle_{\natural}$. The mass is therefore read from the product, not from either eigenvalue.
+while the product of the eigenvalues is the biquaternion norm, $\lambda_+\lambda_-=-m^2c^2=\langle\tilde P_{\Phi}\rangle_{\natural}$. The mass is therefore read from the product, not from either eigenvalue.
 
 The two eigenvalues are not two particles and not two energies. They are the one momentum written in the two idempotent coordinates of *The Biquaternion Eigenvalue Decomposition*, §*The Eigenprojectors*. The eigenprojections are idempotents, hence null elements, and they are the two spectral components of the momentum. The pair depends on the frame: a boost changes $\vec p$ and with it the two frequencies, while their product stays $-m^2c^2$.
 
@@ -205,7 +205,7 @@ The same cone is the boundary of the positive cone of the informational sector. 
 
 ### The Lorentz Group Acts by Rotor Conjugation
 
-The action $\tilde Q\mapsto\tilde U_{\mathrm{lor}}\tilde Q\tilde U_{\mathrm{lor}}{}^{*}$ is the Lorentz action on the sector. The boost factor $\tilde U_{\mathrm b}$ is Hermitian positive, the rotation factor $\tilde u_{\mathrm r}$ is a real quaternion, and a general rotor $\tilde U_{\mathrm{lor}}=\tilde U_{\mathrm b}\tilde u_{\mathrm r}$ is a unit-norm biquaternion. The action preserves the sector and the norm, and it is the reason the sector is a representation space rather than a group: the group acts on it from outside.
+The action $\tilde Q\mapsto\tilde U_{\mathrm{lor}}\tilde Q\tilde U_{\mathrm{lor}}{}^{*}$ is the Lorentz action on the sector. The boost factor $\tilde U_{\Psi,\mathrm b}$ is Hermitian positive, the rotation factor $\tilde u_{\mathrm r}$ is a real quaternion, and a general rotor $\tilde U_{\mathrm{lor}}=\tilde U_{\Psi,\mathrm b}\tilde u_{\mathrm r}$ is a unit-norm biquaternion. The action preserves the sector and the norm, and it is the reason the sector is a representation space rather than a group: the group acts on it from outside.
 
 The norm condition is $\tilde U_{\mathrm{lor}}\tilde U_{\mathrm{lor}}{}^{\natural}=e_t$, which is the condition of $SL(2,\mathbb{C})$. It is not the same as the matrix-unitary condition $\tilde U_{\mathrm{lor}}\tilde U_{\mathrm{lor}}{}^{*}=e_t$, which defines $U(2)$ and preserves the trace of a state. A boost satisfies the first and not the second; a rotation satisfies both. The distinction is the reason the Lorentz action on four-vectors and the evolution of states are two different actions of two different slices of the same algebra.
 
@@ -253,17 +253,17 @@ The action preserves the norm when the acting element has unit norm, and then it
 
 **A light ray.** Take $\tilde Q=i e_t+\vec e_x$. Then $\langle\tilde Q\rangle_{\natural}=-1+1=0$: the element is null and a zero divisor. The ray travels along $x$ at the speed of light.
 
-**A boost of a rest position.** Let $\tilde U_{\mathrm b}=\cosh(\theta_{\mathrm{rpd}}/2)+i\sinh(\theta_{\mathrm{rpd}}/2)\vec e_x$ and let $\tilde Q=i c\tau\,e_t$ be a position at rest. Then
+**A boost of a rest position.** Let $\tilde U_{\Psi,\mathrm b}=\cosh(\theta_{\mathrm{rpd}}/2)+i\sinh(\theta_{\mathrm{rpd}}/2)\vec e_x$ and let $\tilde Q=i c\tau\,e_t$ be a position at rest. Then
 
 $$
-\tilde Q_2=\tilde U_{\mathrm b}\tilde Q\tilde U_{\mathrm b}^{*}=i c\tau\cosh\theta_{\mathrm{rpd}}\,e_t-c\tau\sinh\theta_{\mathrm{rpd}}\,\vec e_x,
+\tilde Q_2=\tilde U_{\Psi,\mathrm b}\tilde Q\tilde U_{\Psi,\mathrm b}^{*}=i c\tau\cosh\theta_{\mathrm{rpd}}\,e_t-c\tau\sinh\theta_{\mathrm{rpd}}\,\vec e_x,
 $$
 
 the standard boost $r'_{t,2}=\tau\cosh\theta_{\mathrm{rpd}}$, $r_y=-\gamma v\tau=-c\tau\sinh\theta_{\mathrm{rpd}}$, and $\langle\tilde Q_2\rangle_{\natural}=-c^2\tau^2$ is unchanged.
 
-**A mass shell.** For $\tilde P=i(E/c)e_t+\vec p$, the norm is $\langle\tilde P\rangle_{\natural}=-E^2/c^2+\lvert\vec p\rvert^2=-m^2c^2$, the mass-shell relation. A massless particle has $E=\lvert\vec p\rvert c$ and lies on the cone.
+**A mass shell.** For $\tilde P_{\Phi}=i(E/c)e_t+\vec p$, the norm is $\langle\tilde P_{\Phi}\rangle_{\natural}=-E^2/c^2+\lvert\vec p\rvert^2=-m^2c^2$, the mass-shell relation. A massless particle has $E=\lvert\vec p\rvert c$ and lies on the cone.
 
-**A four-velocity.** For $\tilde V=i\gamma c\,e_t+\gamma\vec v$, the norm is $\langle\tilde V\rangle_{\natural}=-\gamma^2c^2+\gamma^2v^2=-c^2$, independent of the speed. The four-velocity is the tangent to the worldline, and its norm is the same for every inertial observer.
+**A four-velocity.** For $\tilde V_{\Phi}=i\gamma c\,e_t+\gamma\vec v$, the norm is $\langle\tilde V_{\Phi}\rangle_{\natural}=-\gamma^2c^2+\gamma^2v^2=-c^2$, independent of the speed. The four-velocity is the tangent to the worldline, and its norm is the same for every inertial observer.
 
 ## Limits
 
@@ -278,8 +278,8 @@ The article interprets the kinematics of the sector: the events, the four-vector
 - The four forms are real on the sector: the interval, its negative, the Euclidean square and its negative; the sector carries no scalar area pairing.
 - The seven four-vectors of relativistic physics are the elements of the sector, with the imaginary scalar part as the time component.
 - The two eigenvalues of the four-momentum are $i(E/c\pm\lvert\vec p\rvert)$; they are the Doppler pair, and their product is the norm $-m^2c^2$.
-- The Lorentz group acts by rotor conjugation, with the general rotor $\tilde U_{\mathrm{lor}}=\tilde U_{\mathrm b}\tilde u_{\mathrm r}$ a unit-norm biquaternion, the boost factor $\tilde U_{\mathrm b}$ Hermitian positive in $\mathbb{B}_{\Psi}$, and the rotation factor $\tilde u_{\mathrm r}$ a real quaternion in $\mathbb{B}_{H}$.
-- The boost factor is positive definite, so the word $\tilde U_{\mathrm{lor}}=\tilde U_{\mathrm b}\tilde u_{\mathrm r}$ is unique; the opposite order, $\tilde U_{\mathrm{lor}}=\tilde u_{\mathrm r}B_{\mathrm{right}}$, uses a different boost $B_{\mathrm{right}}=\tilde u_{\mathrm r}^{-1}\tilde U_{\mathrm b}\tilde u_{\mathrm r}$ and the same rotation.
+- The Lorentz group acts by rotor conjugation, with the general rotor $\tilde U_{\mathrm{lor}}=\tilde U_{\Psi,\mathrm b}\tilde u_{\mathrm r}$ a unit-norm biquaternion, the boost factor $\tilde U_{\Psi,\mathrm b}$ Hermitian positive in $\mathbb{B}_{\Psi}$, and the rotation factor $\tilde u_{\mathrm r}$ a real quaternion in $\mathbb{B}_{H}$.
+- The boost factor is positive definite, so the word $\tilde U_{\mathrm{lor}}=\tilde U_{\Psi,\mathrm b}\tilde u_{\mathrm r}$ is unique; the opposite order, $\tilde U_{\mathrm{lor}}=\tilde u_{\mathrm r}B_{\mathrm{right}}$, uses a different boost $B_{\mathrm{right}}=\tilde u_{\mathrm r}^{-1}\tilde U_{\Psi,\mathrm b}\tilde u_{\mathrm r}$ and the same rotation.
 - The commutator is twice the cross product of the spatial parts, with the time direction central; the sector is a Lie algebra for the compact part, the spatial rotations together with the central phase.
 - The sign of the interval is the product of the signs of the factors, and it is data of the embedding: a change of local complex structure moves it, while the mass is read off the modulus of the norm.
 - The sector is the acted-upon side of the action of the informational sector, and it owns no non-trivial idempotent.
@@ -293,10 +293,10 @@ The article interprets the kinematics of the sector: the events, the four-vector
 | $\tilde Q^{\flat}=-{}^{*}\tilde Q$ | the reversal, whose fixed space is $\mathbb{B}_{\Phi}$ |
 | $\langle\tilde Q\rangle_{\natural}=\tilde Q\tilde Q^{\natural}$ | the quaternionic norm, the interval |
 | $\tilde Q^{-1}=\tilde Q^{\natural}/\langle\tilde Q\rangle_{\natural}$ | the inverse, defined off the cone |
-| $\tilde U_{\mathrm{lor}}=\tilde U_{\mathrm b}\tilde u_{\mathrm r}$ | the general Lorentz rotor, $\tilde U_{\mathrm{lor}}\tilde U_{\mathrm{lor}}{}^{\natural}=e_t$ |
-| $\tilde U_{\mathrm b}$ | the Hermitian positive boost factor |
+| $\tilde U_{\mathrm{lor}}=\tilde U_{\Psi,\mathrm b}\tilde u_{\mathrm r}$ | the general Lorentz rotor, $\tilde U_{\mathrm{lor}}\tilde U_{\mathrm{lor}}{}^{\natural}=e_t$ |
+| $\tilde U_{\Psi,\mathrm b}$ | the Hermitian positive boost factor |
 | $\tilde u_{\mathrm r}$ | the unit real quaternion rotation factor |
-| $B_{\mathrm{right}}=\tilde u_{\mathrm r}^{-1}\tilde U_{\mathrm b}\tilde u_{\mathrm r}$ | the boost factor of the opposite, rotation-first, word |
+| $B_{\mathrm{right}}=\tilde u_{\mathrm r}^{-1}\tilde U_{\Psi,\mathrm b}\tilde u_{\mathrm r}$ | the boost factor of the opposite, rotation-first, word |
 | $\tilde Q_2=\tilde U_{\mathrm{lor}}\tilde Q\tilde U_{\mathrm{lor}}{}^{*}$ | the Lorentz action by rotor conjugation |
 | $[\tilde R_{\Phi,1},\tilde R_{\Phi,2}]=2\vec r_{\Phi,1}\times\vec r_{\Phi,2}$ | the commutator on the sector |
 | $\langle\cdot,\cdot\rangle_{\natural}$ | the quaternionic form, the interval |

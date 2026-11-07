@@ -4,20 +4,20 @@
 
 The **Klein paradox** is the failure of the Dirac equation, read as a one-particle theory, at a sufficiently steep electrostatic potential step. Oskar Klein found in 1929 that an electron incident on a step of height $ϙV$ greater than twice its rest energy is not exponentially reflected as the non-relativistic theory requires: the reflection coefficient stays bounded, a substantial fraction of the wave penetrates the strong-potential region, and in the limit $ϙV \to \infty$ the transmission does not vanish. The one-particle theory cannot describe what happens in the step, because the resolution requires particle–antiparticle creation, which only a quantized field provides. The effect is now called **Klein tunnelling**, and its massless-limit form is observed in graphene $p$–$n$ junctions.
 
-This article treats the Klein step in the biquaternion framework. The framework does not resolve the paradox — no one-particle equation can — but it locates the three structures the paradox involves. The electrostatic potential enters through the minimal coupling of the companion article and is **central**: it multiplies the field by a scalar times $e_t$ and does not act on the state module. The mass is the linear, chirality-off-diagonal term of the parent, and the mass shell $\frac{k_m^{2}\,\tilde{P}\,\tilde{P}^{\natural}}{m^{2}\,c^{2}}= -k_m^{2}$ has two roots, the two signs of frequency. The Klein region is exactly where the potential shifts the frequency past zero, so that the branch that is positive-frequency on the incident side continues into the negative-frequency root on the far side. That branch exchange, not any failure of the algebra, is what the paradox is about. Here $k_m=mc/\hbar$ is the mass wave number, the inverse of the mass length.
+This article treats the Klein step in the biquaternion framework. The framework does not resolve the paradox — no one-particle equation can — but it locates the three structures the paradox involves. The electrostatic potential enters through the minimal coupling of the companion article and is **central**: it multiplies the field by a scalar times $e_t$ and does not act on the state module. The mass is the linear, chirality-off-diagonal term of the parent, and the mass shell $\frac{k_m^{2}\,\tilde{P}_{\Phi}\,\tilde{P}_{\Phi}^{\natural}}{m^{2}\,c^{2}}= -k_m^{2}$ has two roots, the two signs of frequency. The Klein region is exactly where the potential shifts the frequency past zero, so that the branch that is positive-frequency on the incident side continues into the negative-frequency root on the far side. That branch exchange, not any failure of the algebra, is what the paradox is about. Here $k_m=mc/\hbar$ is the mass wave number, the inverse of the mass length.
 
 The article is organised as follows. The next section writes the Dirac equation at a step and reduces it along one axis. The third section does the standard matching and gives the reflection and transmission coefficients, with the exact current conservation checked. The fourth states the paradox and its quantum-field-theoretic resolution. The fifth gives the biquaternion interpretation and separates what the algebra supplies from what it only transcribes. The sixth reports a worked numerical case and the massless limit. The closing sections are the open questions, the summary, the notation table and the literature.
 
-The conventions are those of the companion articles. The algebra is $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ with units $e_t = 1, \vec e_x, \vec e_y, \vec e_z$, $\vec e_k^2 = -e_t$, central scalar imaginary $i$; $\mathbb{B}_{\Psi}$ is the Hermitian and $\mathbb{B}_{\Phi}$ the anti-Hermitian subspace; the gradient is $\tilde\nabla = e_t\partial/\partial R_t + \vec e_x\partial/\partial R_x + \vec e_y\partial/\partial R_y + \vec e_z\partial/\partial R_z$; the biquaternion Dirac equation is the linear chiral pair $\tilde\nabla\tilde{Ξ}_{\mathrm{sp},R} = k_m\tilde{Ξ}_{\mathrm{sp},L}$, $\tilde\nabla^{\natural}\tilde{Ξ}_{\mathrm{sp},L} = k_m\tilde{Ξ}_{\mathrm{sp},R}$; and the minimal coupling replaces $\tilde\nabla$ by $D = \tilde\nabla +\frac{k_m\,i\,ϙ}{m\,c}\tilde{A}$, acting by left multiplication.
+The conventions are those of the companion articles. The algebra is $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ with units $e_t = 1, \vec e_x, \vec e_y, \vec e_z$, $\vec e_k^2 = -e_t$, central scalar imaginary $i$; $\mathbb{B}_{\Psi}$ is the Hermitian and $\mathbb{B}_{\Phi}$ the anti-Hermitian subspace; the gradient is $\tilde\nabla = e_t\partial/\partial R_t + \vec e_x\partial/\partial R_x + \vec e_y\partial/\partial R_y + \vec e_z\partial/\partial R_z$; the biquaternion Dirac equation is the linear chiral pair $\tilde\nabla\tilde{Ξ}_{\mathrm{sp},R} = k_m\tilde{Ξ}_{\mathrm{sp},L}$, $\tilde\nabla^{\natural}\tilde{Ξ}_{\mathrm{sp},L} = k_m\tilde{Ξ}_{\mathrm{sp},R}$; and the minimal coupling replaces $\tilde\nabla$ by $D = \tilde\nabla +\frac{k_m\,i\,ϙ}{m\,c}\tilde{A}_{\Phi}$, acting by left multiplication.
 
 ## The Dirac Equation at a Potential Step
 
 ### Minimal coupling and the step
 
-A static electrostatic potential $\xi(x)$ is the time component of the four-potential, $\tilde{A} = i\,a'_te_t$ in the corpus's convention for the potential biquaternion, with no magnetic part. Inserted into the minimal-coupling prescription of the companion article, the covariant derivative is
+A static electrostatic potential $\xi(x)$ is the time component of the four-potential, $\tilde{A}_{\Phi} = i\,a'_te_t$ in the corpus's convention for the potential biquaternion, with no magnetic part. Inserted into the minimal-coupling prescription of the companion article, the covariant derivative is
 
 $$
-D = \tilde\nabla +\frac{k_m\,i\,ϙ}{m\,c}\tilde{A} = \tilde\nabla +\frac{k_m\,i\,ϙ}{m\,c}\cdoti\,a'_te_t = \tilde\nabla -\frac{k_m\,ϙ\,a'_{t}}{m\,c}e_t .
+D = \tilde\nabla +\frac{k_m\,i\,ϙ}{m\,c}\tilde{A}_{\Phi} = \tilde\nabla +\frac{k_m\,i\,ϙ}{m\,c}\cdoti\,a'_te_t = \tilde\nabla -\frac{k_m\,ϙ\,a'_{t}}{m\,c}e_t .
 $$
 
 The added term is a **central scalar multiple of $e_t$**. This is the algebraic statement that an electrostatic potential couples to the scalar slot and not to the state module: it cannot rotate, mix or relatively phase the two chiral components of the field. The one-dimensional-scattering article makes the same point for the Schrödinger case, and the mechanism is identical here.
@@ -121,9 +121,9 @@ Two algebraic facts organise the problem, and they were established in the compa
 The free mass shell is
 
 $$
-\tilde P\tilde P^{\natural}= -m^{2}\,c^{2},
+\tilde P_{\Phi}\tilde P_{\Phi}^{\natural}= -m^{2}\,c^{2},
 \qquad
-\tilde P\,k_{\mathrm{mo}} = i\frac{\omega}{c}e_t + \vec e_x k ,
+\tilde P_{\Phi}\,k_{\mathrm{mo}} = i\frac{\omega}{c}e_t + \vec e_x k ,
 $$
 
 whose two roots $\omega = \pm\sqrt{k^2c^2 +m^{2}\,c^{4}}\frac{k_m}{m\,c}$ are the two frequency branches of the parent: the particle and the antiparticle. Under the central shift the covariant wave biquaternion acquires the constant shift from the potential, and the on-shell condition reads, on each half-line, the same relation with the frequency measured from the local potential. On the incident side the incident wave lies on the positive root. On the far side of a Klein step the same wave has $E - V_0 < -mc^2$, so it lies on the **negative root** of the local mass shell. The step has taken the propagating branch and exchanged it with its conjugate:
@@ -136,7 +136,7 @@ This is the algebraic content of the phrase "the far side is reached by an antip
 
 ### The current lives in the material sector
 
-The conserved current of the framework is the material-sector object $\tilde J = ic\,j_0e_t + \vec j \in \mathbb{B}_{\Phi}$, as in the parent and the scattering articles. The matching problem solved here is the statement of the continuity of that current across the step. In the Klein region the sign of the transmitted current is not the sign of the incident charge current; the biquaternion current is conserved, and it is the identification of that current with the transport of one electron that fails. The algebra records the conservation faithfully and leaves the particle interpretation to the field theory.
+The conserved current of the framework is the material-sector object $\tilde J_{\Phi} = ic\,j_0e_t + \vec j \in \mathbb{B}_{\Phi}$, as in the parent and the scattering articles. The matching problem solved here is the statement of the continuity of that current across the step. In the Klein region the sign of the transmitted current is not the sign of the incident charge current; the biquaternion current is conserved, and it is the identification of that current with the transport of one electron that fails. The algebra records the conservation faithfully and leaves the particle interpretation to the field theory.
 
 ### What the biquaternion form does not supply
 
@@ -171,7 +171,7 @@ The reflection **decreases** as the step rises, from $0.177$ at $V_0 = 5m$ to $0
 
 The Klein step is the Dirac equation with a central potential $ϙ\xi(x) = V_0\mathrm{H}_{\mathrm{hvs}}(x)$, solved by matching two-component plane waves. The reflection coefficient is $R = ((\alpha\beta - 1)/(\alpha\beta + 1))^2$ and the transmission $T = 4\alpha\beta/(\alpha\beta + 1)^2$, with $\alpha = \sqrt{(E - mc^2)/(E + mc^2)}$ and $\beta = \sqrt{(V_0 - E - mc^2)/(V_0 - E + mc^2)}$; current conservation is an identity, checked on the cases tabulated. In the Klein region $V_0 - E > mc^2$ the transmitted wave is a negative-frequency state, and $R$ tends to the finite value $((\alpha - 1)/(\alpha + 1))^2$ as $V_0\to\infty$ rather than to one; in the massless limit $\alpha = \beta = 1$ and $T = 1$ for every step height.
 
-The biquaternion framework locates the three ingredients: the potential is central and shifts the mass shell without acting on the module; the mass is the linear chirality-off-diagonal term; and the mass shell $\tilde P\tilde P^{\natural} = -m^{2}\,c^{2}$ has two roots, which the step exchanges. The exchange of roots is the algebraic face of the passage to the antiparticle branch, and it is produced by a central shift rather than by a conjugation of the field. The framework does not resolve the paradox, because the resolution is pair creation, a second-quantized statement; the one-particle coefficients are the standard ones. What the framework supplies is the clean separation of a central potential, a chiral mass and a two-rooted mass shell, which is exactly the structure the paradox tests.
+The biquaternion framework locates the three ingredients: the potential is central and shifts the mass shell without acting on the module; the mass is the linear chirality-off-diagonal term; and the mass shell $\tilde P_{\Phi}\tilde P_{\Phi}^{\natural} = -m^{2}\,c^{2}$ has two roots, which the step exchanges. The exchange of roots is the algebraic face of the passage to the antiparticle branch, and it is produced by a central shift rather than by a conjugation of the field. The framework does not resolve the paradox, because the resolution is pair creation, a second-quantized statement; the one-particle coefficients are the standard ones. What the framework supplies is the clean separation of a central potential, a chiral mass and a two-rooted mass shell, which is exactly the structure the paradox tests.
 
 ## Summary of Notation
 
@@ -180,14 +180,14 @@ The biquaternion framework locates the three ingredients: the potential is centr
 | $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ | Biquaternion algebra |
 | $e_t = 1, \vec e_x, \vec e_y, \vec e_z$ | Quaternion basis, $\vec e_k^2 = -e_t$ |
 | $\tilde\nabla = e_t\partial/\partial R_t + \sum_{k=x,y,z}\vec e_k\,\partial/\partial R_k$ | Biquaternionic gradient |
-| $D = \tilde\nabla +\frac{k_m\,i\,ϙ}{m\,c}\tilde{A}$ | Covariant derivative (minimal coupling) |
-| $\tilde{A} = i\,a'_te_t$ | Electrostatic potential biquaternion |
+| $D = \tilde\nabla +\frac{k_m\,i\,ϙ}{m\,c}\tilde{A}_{\Phi}$ | Covariant derivative (minimal coupling) |
+| $\tilde{A}_{\Phi} = i\,a'_te_t$ | Electrostatic potential biquaternion |
 | $V_0$, $ϙ\xi(x) = V_0\mathrm{H}_{\mathrm{hvs}}(x)$ | Step height and potential energy |
 | $E$, $k$, $k_2$ | Energy, incident momentum, transmitted momentum |
 | $\alpha = \sqrt{(E - mc^2)/(E + mc^2)}$ | Incident-side spinor parameter |
 | $\beta = \sqrt{(V_0 - E - mc^2)/(V_0 - E + mc^2)}$ | Far-side spinor parameter |
 | $r$, $t$, $R$, $T$ | Reflection and transmission amplitudes and probabilities |
-| $\tilde P\,k_{\mathrm{mo}}$, $\tilde P\tilde P^{\natural} = -m^{2}\,c^{2}$ | Wave biquaternion and mass shell |
+| $\tilde P_{\Phi}\,k_{\mathrm{mo}}$, $\tilde P_{\Phi}\tilde P_{\Phi}^{\natural} = -m^{2}\,c^{2}$ | Wave biquaternion and mass shell |
 | $\mathbb{B}_{\Phi}$ | Anti-Hermitian (material) sector; home of the current |
 
 ## Further Reading

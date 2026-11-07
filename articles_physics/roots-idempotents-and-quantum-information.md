@@ -59,18 +59,18 @@ Each row and each column is a commuting triple. The product of every row is $e_t
 A **sharp effect** is an idempotent: a projection whose only values are $0$ and $1$. The sharp effects are the extreme points of the operator interval
 
 $$
-[\tilde 0,e_t]=\{\tilde E\in\mathbb{B}_{\Psi}:\tilde 0\le\tilde E\le e_t\},
+[\tilde 0,e_t]=\{\tilde E_{\Psi}\in\mathbb{B}_{\Psi}:\tilde 0\le\tilde E_{\Psi}\le e_t\},
 $$
 
-where the order is the positivity of $e_t-\tilde E$. The proposition that the extreme points are exactly the idempotents is the Jordan-algebra statement proved in the linked article.
+where the order is the positivity of $e_t-\tilde E_{\Psi}$. The proposition that the extreme points are exactly the idempotents is the Jordan-algebra statement proved in the linked article.
 
 A general effect of the qubit has a spectral resolution
 
 $$
-\tilde E=\lambda_1\tilde\Pi_1+\lambda_2\tilde\Pi_2,\qquad 0\le\lambda_1,\lambda_2\le 1,
+\tilde E_{\Psi}=\lambda_1\tilde\Pi_1+\lambda_2\tilde\Pi_2,\qquad 0\le\lambda_1,\lambda_2\le 1,
 $$
 
-in some idempotent basis, and it is soft when one eigenvalue lies strictly between $0$ and $1$. A **POVM** is a finite family $\{\tilde E_a\}$ of effects with $\sum_a\tilde E_a=e_t$, and the Born weight of an outcome is the normalised Hermitian form $\langle\tilde{Ϛ},\tilde E_a\rangle_{*}/\langle\tilde{Ϛ},e_t\rangle_{*}=\mathrm{Sc}(\tilde{Ϛ}\tilde E_a^{*})/\mathrm{Sc}(\tilde{Ϛ})$, whose trace reading at normalisation is $\operatorname{Tr}(\tilde{Ϛ}\tilde E_a^{*})=\operatorname{Tr}(\tilde{Ϛ}\tilde E_a)$, the star being inert on $\mathbb{B}_{\Psi}$ and the unstarred trace real and non-negative.
+in some idempotent basis, and it is soft when one eigenvalue lies strictly between $0$ and $1$. A **POVM** is a finite family $\{\tilde E_{\Psi}_a\}$ of effects with $\sum_a\tilde E_{\Psi}_a=e_t$, and the Born weight of an outcome is the normalised Hermitian form $\langle\tilde{Ϛ}_{\Psi},\tilde E_{\Psi}_a\rangle_{*}/\langle\tilde{Ϛ}_{\Psi},e_t\rangle_{*}=\mathrm{Sc}(\tilde{Ϛ}_{\Psi}\tilde E_{\Psi}_a^{*})/\mathrm{Sc}(\tilde{Ϛ}_{\Psi})$, whose trace reading at normalisation is $\operatorname{Tr}(\tilde{Ϛ}_{\Psi}\tilde E_{\Psi}_a^{*})=\operatorname{Tr}(\tilde{Ϛ}_{\Psi}\tilde E_{\Psi}_a)$, the star being inert on $\mathbb{B}_{\Psi}$ and the unstarred trace real and non-negative.
 
 **Interpretation.** A measurement is a resolution of the identity into effects. The sharp outcomes are the idempotents, the unsharp ones are their convex combinations, and the state space is the same in both cases. Naimark's dilation theorem makes every POVM a projective measurement on a larger module, so the sharp idempotent remains the primitive object and the soft effect is a shadow of a projection on an enlarged space.
 
@@ -86,10 +86,10 @@ $$
 
 For $\tilde U\in S$ one has $\tilde U\tilde\Pi_S=\tilde\Pi_S$, so $\tilde\Pi_S^2=\tilde\Pi_S$; and $\operatorname{Tr}\tilde\Pi_S=2^n/|S|$, because the trace of a nontrivial Pauli tensor vanishes and the trace of the identity is $2^n$. The code space is the image of $\tilde\Pi_S$ on the module $(\mathbb{C}^2)^{\otimes n}$, the common $+1$ eigenspace of $S$. On the algebra side, $\tilde\Pi_S\mathbb{B}^{\otimes n}\tilde\Pi_S$ is the Peirce corner and $\tilde\Pi_S\mathbb{B}^{\otimes n}$ the corresponding left ideal.
 
-The **Knill–Laflamme condition** for an error set $\{\tilde E_a\}$ is
+The **Knill–Laflamme condition** for an error set $\{\tilde E_{\Psi}_a\}$ is
 
 $$
-\boxed{\;\tilde\Pi_S\tilde E_a^{*}\tilde E_b\tilde\Pi_S=c_{ab}\tilde\Pi_S\;}
+\boxed{\;\tilde\Pi_S\tilde E_{\Psi}_a^{*}\tilde E_{\Psi}_b\tilde\Pi_S=c_{ab}\tilde\Pi_S\;}
 $$
 
 for all $a,b$. It says that the errors, compressed to the code, are scalar multiples of the code idempotent, so they can be detected and reversed without distinguishing the encoded states.

@@ -135,7 +135,7 @@ $$
 Using the brackets,
 
 $$
-\boxed{\;\{\tilde S^{+}_{\mathrm{tot},i}, \tilde S^{+}_{\mathrm{tot},j}\} = \epsilon_{ijk}\tilde S^{+}_{\mathrm{tot},k}, \qquad \{\tilde S^{-}_{\mathrm{tot},i}, \tilde S^{-}_{\mathrm{tot},j}\} = \epsilon_{ijk}\tilde S^{-}_{\mathrm{tot},k}, \qquad \{\tilde S^{+}_{\mathrm{tot},i}, \tilde S^{-}_{\mathrm{tot},j}\} = 0\;},
+\boxed{\;\{\tilde S_{\Psi}^{+}_{\mathrm{tot},i}, \tilde S_{\Psi}^{+}_{\mathrm{tot},j}\} = \epsilon_{ijk}\tilde S_{\Psi}^{+}_{\mathrm{tot},k}, \qquad \{\tilde S_{\Psi}^{-}_{\mathrm{tot},i}, \tilde S_{\Psi}^{-}_{\mathrm{tot},j}\} = \epsilon_{ijk}\tilde S_{\Psi}^{-}_{\mathrm{tot},k}, \qquad \{\tilde S_{\Psi}^{+}_{\mathrm{tot},i}, \tilde S_{\Psi}^{-}_{\mathrm{tot},j}\} = 0\;},
 $$
 
 so that $\mathrm{SO}(4) \cong \mathrm{SU}(2)\oplus\mathrm{SU}(2)$ with generators $\vec S^+_{\mathrm{tot}}$ and $\vec S^-_{\mathrm{tot}}$. The numerical check confirms all three relations, and the two Casimirs are equal:
@@ -168,7 +168,7 @@ The bound case is the one that bears on the hydrogen spectrum, and it is the cas
 
 ### Numerical Checks
 
-The bracket algebra was verified by central-difference evaluation of the Poisson brackets of the six generators at several representative bound phase-space points; the figures quoted are for the point with $m = \kappa = 1$ and $E = -0.446714$, and the identities reproduce at every bound point tested. The brackets $\{L_{\mathrm{orb},i},L_{\mathrm{orb},j}\} = \epsilon_{ijk}L_{\mathrm{orb},k}$, $\{L_{\mathrm{orb},i},A_j\} = \epsilon_{ijk}A_k$ and $\{A_i,A_j\} = -2mE\,\epsilon_{ijk}L_{\mathrm{orb},k}$ were all confirmed to a maximum deviation of order $10^{-11}$; the rescaled bracket $\{D_i,D_j\} = \epsilon_{ijk}L_{\mathrm{orb},k}$ was confirmed to the same accuracy; and the two $\mathrm{SU}(2)$ relations $\{\tilde S^{\pm}_{\mathrm{tot},i},\tilde S^{\pm}_{\mathrm{tot},j}\} = \epsilon_{ijk}\tilde S^{\pm}_{\mathrm{tot},k}$ and $\{\tilde S^{+}_{\mathrm{tot},i},\tilde S^{-}_{\mathrm{tot},j}\} = 0$ were confirmed to order $10^{-11}$. The two Casimirs were found equal to eight decimal places, both equal to $0.27982080$, in agreement with $m\kappa^2/(8|E|)$; and the identities $\vec L\cdot\vec A = 0$ and $|\vec A|^2 = m^2\kappa^2 + 2mEL^2$ were confirmed to machine precision.
+The bracket algebra was verified by central-difference evaluation of the Poisson brackets of the six generators at several representative bound phase-space points; the figures quoted are for the point with $m = \kappa = 1$ and $E = -0.446714$, and the identities reproduce at every bound point tested. The brackets $\{L_{\mathrm{orb},i},L_{\mathrm{orb},j}\} = \epsilon_{ijk}L_{\mathrm{orb},k}$, $\{L_{\mathrm{orb},i},A_j\} = \epsilon_{ijk}A_k$ and $\{A_i,A_j\} = -2mE\,\epsilon_{ijk}L_{\mathrm{orb},k}$ were all confirmed to a maximum deviation of order $10^{-11}$; the rescaled bracket $\{D_i,D_j\} = \epsilon_{ijk}L_{\mathrm{orb},k}$ was confirmed to the same accuracy; and the two $\mathrm{SU}(2)$ relations $\{\tilde S_{\Psi}^{\pm}_{\mathrm{tot},i},\tilde S_{\Psi}^{\pm}_{\mathrm{tot},j}\} = \epsilon_{ijk}\tilde S_{\Psi}^{\pm}_{\mathrm{tot},k}$ and $\{\tilde S_{\Psi}^{+}_{\mathrm{tot},i},\tilde S_{\Psi}^{-}_{\mathrm{tot},j}\} = 0$ were confirmed to order $10^{-11}$. The two Casimirs were found equal to eight decimal places, both equal to $0.27982080$, in agreement with $m\kappa^2/(8|E|)$; and the identities $\vec L\cdot\vec A = 0$ and $|\vec A|^2 = m^2\kappa^2 + 2mEL^2$ were confirmed to machine precision.
 
 The algebra statements of the closing section were checked at the same time on the elements themselves. The material sector was confirmed closed under the commutator, with $[\mathbb{B}_{\Psi},\mathbb{B}_{\Psi}] \subseteq \mathbb{B}_{\Phi}$ and every element of $[\mathbb{B}_{\Phi},\mathbb{B}_{\Phi}]$ again anti-Hermitian; the traceless part was confirmed to close exactly on
 
@@ -303,7 +303,7 @@ $$
 Rescaling by the energy produces the hidden symmetry: for $E<0$, with $\vec D = \vec A/\sqrt{-2mE}$ and $\vec S^\pm_{\mathrm{tot}} = \tfrac12(\vec L\pm\vec D)$, the generators satisfy
 
 $$
-\{\tilde S^{+}_{\mathrm{tot},i},\tilde S^{+}_{\mathrm{tot},j}\} = \epsilon_{ijk}\tilde S^{+}_{\mathrm{tot},k}, \qquad \{\tilde S^{-}_{\mathrm{tot},i},\tilde S^{-}_{\mathrm{tot},j}\} = \epsilon_{ijk}\tilde S^{-}_{\mathrm{tot},k}, \qquad \{\tilde S^{+}_{\mathrm{tot},i},\tilde S^{-}_{\mathrm{tot},j}\} = 0,
+\{\tilde S_{\Psi}^{+}_{\mathrm{tot},i},\tilde S_{\Psi}^{+}_{\mathrm{tot},j}\} = \epsilon_{ijk}\tilde S_{\Psi}^{+}_{\mathrm{tot},k}, \qquad \{\tilde S_{\Psi}^{-}_{\mathrm{tot},i},\tilde S_{\Psi}^{-}_{\mathrm{tot},j}\} = \epsilon_{ijk}\tilde S_{\Psi}^{-}_{\mathrm{tot},k}, \qquad \{\tilde S_{\Psi}^{+}_{\mathrm{tot},i},\tilde S_{\Psi}^{-}_{\mathrm{tot},j}\} = 0,
 $$
 
 so that the symmetry algebra is $\mathrm{SO}(4)\cong\mathrm{SU}(2)\oplus\mathrm{SU}(2)$, with equal Casimirs

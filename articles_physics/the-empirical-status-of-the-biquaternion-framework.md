@@ -40,8 +40,8 @@ The following table collects the quantitative results the series has obtained an
 
 | Domain | Framework result | Standard result reproduced |
 |---|---|---|
-| Single qubit | Bloch sphere and Bloch ball; $\operatorname{Tr}(\tilde{Ϛ}\tilde R_\Psi^{*})=\operatorname{Tr}(\tilde{Ϛ}\tilde R_\Psi)=c r_t+\vec r\cdot\vec r_\Psi$; sandwich update | States, observables, Born rule, projective measurement |
-| Relativistic point mechanics | $\langle d\tilde R_\Phi\rangle_{\natural}=-c^2d{r'_{t}}^2+dr_x^2+dr_y^2+dr_z^2$; four-momentum $\tilde{P}$ with $\tilde{P}\tilde{P}^{\natural}= -m^{2}\,c^{2}$; four-force $\tilde{\mathcal F}_{\mathrm{frc}}$ orthogonal to it, $\tilde{\mathcal F}_{\mathrm{frc}}\tilde{P}^{\natural}+\tilde{P}\tilde{\mathcal F}_{\mathrm{frc}}^{\natural}=0$ | Interval, mass shell, four-force orthogonality |
+| Single qubit | Bloch sphere and Bloch ball; $\operatorname{Tr}(\tilde{Ϛ}_{\Psi}\tilde R_\Psi^{*})=\operatorname{Tr}(\tilde{Ϛ}_{\Psi}\tilde R_\Psi)=c r_t+\vec r\cdot\vec r_\Psi$; sandwich update | States, observables, Born rule, projective measurement |
+| Relativistic point mechanics | $\langle d\tilde R_\Phi\rangle_{\natural}=-c^2d{r'_{t}}^2+dr_x^2+dr_y^2+dr_z^2$; four-momentum $\tilde{P}_{\Phi}$ with $\tilde{P}_{\Phi}\tilde{P}_{\Phi}^{\natural}= -m^{2}\,c^{2}$; four-force $\tilde{\mathcal F}_{\Phi,\mathrm{frc}}$ orthogonal to it, $\tilde{\mathcal F}_{\Phi,\mathrm{frc}}\tilde{P}_{\Phi}^{\natural}+\tilde{P}_{\Phi}\tilde{\mathcal F}_{\Phi,\mathrm{frc}}^{\natural}=0$ | Interval, mass shell, four-force orthogonality |
 | Maxwell field | $\Box=\tilde{\nabla}\tilde{\nabla}^{\natural}=\partial^2/\partial R_t^2+\Delta$; Riemann–Silberstein field; invariants | Maxwell's equations in a medium |
 | Dirac field | $\tilde{\nabla}\tilde{Ξ}_{\mathrm{sp},R}=k_m\tilde{Ξ}_{\mathrm{sp},L}$, $\tilde{\nabla}^{\natural}\tilde{Ξ}_{\mathrm{sp},L}=k_m\tilde{Ξ}_{\mathrm{sp},R}$; massless case $\tilde{\nabla}\tilde{Ξ}_{\mathrm{sp}}=0$ | Dirac equation, mass term |
 | Electron gyromagnetic ratio | $g=2$ at tree level; anomaly **absent** | Dirac's tree-level value; the anomaly is outside the framework |
@@ -169,9 +169,9 @@ Each candidate below is examined under the three questions of the Introduction a
 
 ### Unverified Framework Claims: the Entropy Functional
 
-**The candidate.** The corpus floats a small number of framework-specific proposals that are not yet verified. The clearest is an entropy functional on the states of $\mathbb{B}_{\Psi}$, written $S(\tilde{Ϛ})=-2\,\mathrm{Sc}(\tilde{Ϛ}\log\tilde{Ϛ})$ and recorded in the companion article as *needing verification*.
+**The candidate.** The corpus floats a small number of framework-specific proposals that are not yet verified. The clearest is an entropy functional on the states of $\mathbb{B}_{\Psi}$, written $S(\tilde{Ϛ}_{\Psi})=-2\,\mathrm{Sc}(\tilde{Ϛ}_{\Psi}\log\tilde{Ϛ}_{\Psi})$ and recorded in the companion article as *needing verification*.
 
-**The framework-specific quantity.** The functional $S(\tilde{Ϛ})$, if it were well defined.
+**The framework-specific quantity.** The functional $S(\tilde{Ϛ}_{\Psi})$, if it were well defined.
 
 **Derived or posited.** Posited, and not yet verified: the biquaternion logarithm is multivalued, and no article shows that the expression is real, concave, or additive on the states of $\mathbb{B}_{\Psi}$. Even if all of that were established, it is a transcription of the standard von Neumann entropy $S(\rho)=-\mathrm{Tr}(\rho\log\rho)$ and would agree with the standard theory rather than deviate from it.
 

@@ -109,7 +109,7 @@ The identity $L_{\vec Q}^2=-B^2\,\mathrm{id}$ is the algebraic core of the whole
 
 This is the sense in which $B$ is **operator-linked**. It is the coefficient of the complex structure of the operator, not the speed of a motion of the element. The word *clock* is a name for that structure: $J_{\tilde Q}$ has period $2\pi$ in the flow parameter, and the element's rate $B$ converts the period to $2\pi/B$. At $B=0$ the clock stops, and the flow becomes a unipotent translation.
 
-**Boundary.** The flow parameter $\theta$ is the parameter of the one-parameter group, not automatically a physical time. The identification $\theta=t$ is a separate, sector-dependent step: it is the Schrödinger evolution when the generator is $-i H$ in the convention $e^{-i\tilde R_\Psi t}$, and it is not a spacetime translation for a four-momentum — the translation is the central phase $e^{i\tilde P\cdot\tilde X}$, a different construction. The operator interpretation of $B$ is a statement about the spectrum and the invariant subspaces; it is not a dynamics. The complex structure $J_{\tilde Q}$ is internal: it is a root of $-\mathrm{id}$ on $\mathbb{B}$, not the local complex structure of the material sector, which is a choice of real slice and imaginary-time direction.
+**Boundary.** The flow parameter $\theta$ is the parameter of the one-parameter group, not automatically a physical time. The identification $\theta=t$ is a separate, sector-dependent step: it is the Schrödinger evolution when the generator is $-i H$ in the convention $e^{-i\tilde R_\Psi t}$, and it is not a spacetime translation for a four-momentum — the translation is the central phase $e^{i\tilde P_{\Phi}\cdot\tilde X}$, a different construction. The operator interpretation of $B$ is a statement about the spectrum and the invariant subspaces; it is not a dynamics. The complex structure $J_{\tilde Q}$ is internal: it is a root of $-\mathrm{id}$ on $\mathbb{B}$, not the local complex structure of the material sector, which is a choice of real slice and imaginary-time direction.
 
 ### The Four Sectors
 
@@ -266,7 +266,7 @@ $$
 each of complex dimension two. The two ideals are the two **mode spaces**. Any basis of each is an eigenbasis; the normalised Peirce basis
 
 $$
-\mathcal B(\tilde Q)=\left(\tilde\Pi_+,\ \vec\Upsilon_-,\ \vec\Upsilon_+,\ \tilde\Pi_-\right),
+\mathcal B_{\Psi}(\tilde Q)=\left(\tilde\Pi_+,\ \vec\Upsilon_-,\ \vec\Upsilon_+,\ \tilde\Pi_-\right),
 \qquad
 \vec\Upsilon_-\in\tilde\Pi_+\mathbb{B}\tilde\Pi_-,
 \qquad

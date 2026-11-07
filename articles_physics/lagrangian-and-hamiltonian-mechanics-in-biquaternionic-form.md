@@ -324,7 +324,7 @@ $$
 \Pi = \sum_n P_n + ϙ_n A(X_n), \qquad P_n = [E_n\,;\,-ic\vec p_n], \qquad A = [\xi_{\mathrm{scp}}\,;\,-i\vec A],
 $$
 
-in the source's notation, with $ϙ_n$ the charge of the $n$-th particle and $A$ the four-potential; the scalar part is the Hamiltonian $H=E+ϙ\xi_{\mathrm{scp}}$ and the vector part the canonical momentum $\vec\pi=\vec p+ϙ\vec A$. Up to the central factor $-i$ — the corpus's placement of the time component in the scalar slot — the four-momenta here are the corpus's four-momentum $\tilde P$, and the source's mass-shell statement $|P|^2=m^2$ (units with $c=1$) is the corpus's $\langle\tilde P\rangle_{\natural}=-m^2c^2$.
+in the source's notation, with $ϙ_n$ the charge of the $n$-th particle and $A$ the four-potential; the scalar part is the Hamiltonian $H=E+ϙ\xi_{\mathrm{scp}}$ and the vector part the canonical momentum $\vec\pi=\vec p+ϙ\vec A$. Up to the central factor $-i$ — the corpus's placement of the time component in the scalar slot — the four-momenta here are the corpus's four-momentum $\tilde P_{\Phi}$, and the source's mass-shell statement $|P|^2=m^2$ (units with $c=1$) is the corpus's $\langle\tilde P_{\Phi}\rangle_{\natural}=-m^2c^2$.
 
 The reason to introduce the object is the action. The source's **action postulate** is
 
@@ -342,7 +342,7 @@ which for two fixed endpoints is Hamilton's principle, $\delta\int_{X_1}^{X_2} d
 
 **Two packagings, two sectors.** The contrast with the previous section is exact. The phase-space biquaternion $\tilde Q_3$ pairs a material part with an informational part; the four-Hamiltonian $\Pi$ lies **entirely** in the Hermitian (informational) sector, its two halves being the Hamiltonian and the momentum rather than a position and a momentum. The corpus has both objects: $\tilde Q_3$ for the configuration–momentum split and $\Pi$ for the covariant energy–momentum-plus-potential object whose potential is the action.
 
-**The Hamilton–Jacobi rewriting.** With the four-Hamiltonian in hand the relativistic mass-shell identity converts the action postulate into the **relativistic Hamilton–Jacobi equation** for a charged particle in an electromagnetic field: the source's form sets the quaternion square of $i\tilde\nabla S+ϙ\tilde A$ equal to $m^2$, the sign of the $ϙ\tilde A$ term following the charge-sign convention. The non-relativistic Hamilton–Jacobi equation and its biquaternion-norm interpretation are the subject of the companion article *The WKB Approximation and the Hamilton–Jacobi Equation in Biquaternionic Form*; the four-Hamiltonian is the covariant object beneath that equation, and the corpus records it here.
+**The Hamilton–Jacobi rewriting.** With the four-Hamiltonian in hand the relativistic mass-shell identity converts the action postulate into the **relativistic Hamilton–Jacobi equation** for a charged particle in an electromagnetic field: the source's form sets the quaternion square of $i\tilde\nabla S+ϙ\tilde A_{\Phi}$ equal to $m^2$, the sign of the $ϙ\tilde A_{\Phi}$ term following the charge-sign convention. The non-relativistic Hamilton–Jacobi equation and its biquaternion-norm interpretation are the subject of the companion article *The WKB Approximation and the Hamilton–Jacobi Equation in Biquaternionic Form*; the four-Hamiltonian is the covariant object beneath that equation, and the corpus records it here.
 
 ## The Poisson Bracket
 
@@ -384,7 +384,7 @@ which for $f=q_\mu,p_\nu$ reproduces $dq_{\mu}/dr'_t=\partial H/\partial p_\mu$,
 
 ### Canonical Transformations
 
-A change of phase-space variables $(\tilde q,\tilde p)\to(\tilde Q,\tilde P)$ that preserves the form of Hamilton's equations is a **canonical transformation**, and the test is a statement about the bracket alone:
+A change of phase-space variables $(\tilde q,\tilde p)\to(\tilde Q,\tilde P_{\Phi})$ that preserves the form of Hamilton's equations is a **canonical transformation**, and the test is a statement about the bracket alone:
 
 $$
 \{Q_\mu,Q_\nu\}=0,\qquad \{P_\mu,P_\nu\}=0,\qquad \{Q_\mu,P_\nu\}=\delta_{\mu\nu},

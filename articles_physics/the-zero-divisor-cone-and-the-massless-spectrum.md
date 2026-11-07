@@ -4,7 +4,7 @@
 
 The biquaternion norm is $\langle\tilde Q\rangle_{\natural}=\sum_\mu Q_\mu^2$, and its vanishing set is the **zero-divisor cone**. Three sets live inside and around it, and the first job of this article is to keep them apart. The **roots of $0$** are the origin together with the elements of square zero. The **nilpotents** are the nonzero elements of square zero. The **cone** is strictly larger: it contains the non-pure zero divisors as well, the complex multiples of the non-trivial idempotents.
 
-The physical reading is the one the corpus has built. On the material sector the norm is the Minkowski interval, so the cone cut by the sector is the **light cone**, and the level set of the four-momentum norm, $\langle\tilde P\rangle_{\natural}=-m^2c^2$, is the **mass shell**. The massless shell is the cone itself, and the **massless spectrum** is what the cone does and does not fix: the shell, the rank and the direction, but not the spin.
+The physical reading is the one the corpus has built. On the material sector the norm is the Minkowski interval, so the cone cut by the sector is the **light cone**, and the level set of the four-momentum norm, $\langle\tilde P_{\Phi}\rangle_{\natural}=-m^2c^2$, is the **mass shell**. The massless shell is the cone itself, and the **massless spectrum** is what the cone does and does not fix: the shell, the rank and the direction, but not the spin.
 
 The article owns no theorem. It states the nesting, the invertibility criterion and the factorisation, each in the mathematics or physics article that proves it, and it reads them.
 
@@ -86,22 +86,22 @@ of signature $(-,+,+,+)$. The cone cut by $\mathbb{B}_{\Phi}$ is the **null cone
 The mass shell is a level set of the norm of the **four-momentum**, not of the position. With
 
 $$
-\tilde P=i\frac{E}{c}\,e_t+\vec p,
+\tilde P_{\Phi}=i\frac{E}{c}\,e_t+\vec p,
 \qquad
-\langle\tilde P\rangle_{\natural}=-\frac{E^2}{c^2}+\lvert\vec p\rvert^2,
+\langle\tilde P_{\Phi}\rangle_{\natural}=-\frac{E^2}{c^2}+\lvert\vec p\rvert^2,
 $$
 
 the level set
 
 $$
-\langle\tilde P\rangle_{\natural}=-m^2c^2
+\langle\tilde P_{\Phi}\rangle_{\natural}=-m^2c^2
 $$
 
 is the **mass shell**, $E^2/c^2-\lvert\vec p\rvert^2=m^2c^2$. The mass is the value of the momentum norm, up to the sign and the factor $c^2$, and the massless case is the value zero. The level sets of the position norm are the hyperboloids of constant interval; for a timelike displacement, $c^2{r'_{t}}^2-\lvert\vec r\rvert^2=c^2\tau^2$. They are not mass shells.
 
 Two facts about the cut carry the reading.
 
-- **Only the massless shell is a cone.** The norm is homogeneous of degree two, $\langle\lambda\tilde P\rangle_{\natural}=\lambda^2\langle\tilde P\rangle_{\natural}$, so a level set $\langle\tilde P\rangle_{\natural}=k$ is invariant under dilation only when $k=0$. The massless shell is the only shell that is a cone; a massive shell is a hyperboloid.
+- **Only the massless shell is a cone.** The norm is homogeneous of degree two, $\langle\lambda\tilde P_{\Phi}\rangle_{\natural}=\lambda^2\langle\tilde P_{\Phi}\rangle_{\natural}$, so a level set $\langle\tilde P_{\Phi}\rangle_{\natural}=k$ is invariant under dilation only when $k=0$. The massless shell is the only shell that is a cone; a massive shell is a hyperboloid.
 - **The cone is the characteristic cone of the wave operator.** On the material sector the d'Alembertian has the cone as its characteristic set, which is the standard statement that signals propagate on the light cone. The algebraic cone and the characteristic cone are one object, and *The Material Sector: Four-Vectors, Interval and Lorentz Action* develops the identification.
 
 The cone is three-real-dimensional inside the four real dimensions of the sector, and it has a single point at the origin. The interior of the future cone is the timelike region, the exterior the spacelike one, and the cone itself the lightlike boundary. The mass-shell reading uses the same norm and the same sign; the vector is the four-momentum and the value is $-m^2c^2$.
@@ -115,7 +115,7 @@ The **massless spectrum** is the set of massless one-particle states of the fram
 **What the cone fixes.** A massless element has $\langle\tilde Q\rangle_{\natural}=0$; its sesquilinear square $\tilde Q\star\tilde Q=\tilde Q\tilde Q^{*}$ is a positive element whose determinant is $\lvert\langle\tilde Q\rangle_{\natural}\rvert^2$, so it drops from rank two to rank one; and its direction is a point of the projective cone. The shell, the rank and the direction are therefore cone data. For a material null momentum the square is explicit:
 
 $$
-\boxed{\;\tilde P\star\tilde P=4\frac{E^2}{c^2}\,\tilde\Pi(-\vec u),\qquad
+\boxed{\;\tilde P_{\Phi}\star\tilde P_{\Phi}=4\frac{E^2}{c^2}\,\tilde\Pi(-\vec u),\qquad
 \tilde\Pi(-\vec u)=\tfrac12(e_t-i\vec u),\qquad \vec u=\frac{\vec p}{\lvert\vec p\rvert}\;},
 $$
 
@@ -130,10 +130,10 @@ The first factor has a name and a geometry. The directions of the cone are the *
 The factorisation is one line. A null element of the material sector, multiplied by $-i$, is a positive rank-one Hermitian element, and a positive rank-one element is a spinor times its conjugate:
 
 $$
-\tilde P=i\,\zeta\zeta^{\dagger},\qquad \zeta\in\mathbb{C}^2,\qquad \zeta\neq0.
+\tilde P_{\Phi}=i\,\zeta\zeta^{\dagger},\qquad \zeta\in\mathbb{C}^2,\qquad \zeta\neq0.
 $$
 
-The direction of $\tilde P$ depends on $\zeta$ only through its ray, so the phase of the spinor is not a cone datum. The helicity is the weight of that phase under the little group, and the two helicities of a massless field are the two weights. The cone therefore supplies the ray and the little group supplies the weight; the **value** of the spin is neither. It is a datum of the Lorentz type of the field, and the gauge symmetry is what removes the lower helicities of a higher-rank carrier, as the photon, graviton and Rarita–Schwinger articles show.
+The direction of $\tilde P_{\Phi}$ depends on $\zeta$ only through its ray, so the phase of the spinor is not a cone datum. The helicity is the weight of that phase under the little group, and the two helicities of a massless field are the two weights. The cone therefore supplies the ray and the little group supplies the weight; the **value** of the spin is neither. It is a datum of the Lorentz type of the field, and the gauge symmetry is what removes the lower helicities of a higher-rank carrier, as the photon, graviton and Rarita–Schwinger articles show.
 
 That division is the article's reading of the word *spectrum*. The cone is the part of the spectrum that the algebra derives; the spin and the gauge structure are the part it imports. The boundary is exact: **the cone derives no spin and no particle content.** It marks the massless shell and organises the directions, and every massless field of the corpus uses the same marking.
 
@@ -141,10 +141,10 @@ That division is the article's reading of the word *spectrum*. The cone is the p
 
 The distinction of §*Three Sets and One Nesting* deserves its own section, because the two objects are easy to identify and the identification is wrong.
 
-A physical null vector $\tilde P\in\mathbb{B}_{\Phi}$ has $\operatorname{Sc}\tilde P\neq0$ whenever the energy is nonzero, so it is not pure and cannot be a nilpotent. What it is, exactly, is an imaginary multiple of a Hermitian idempotent:
+A physical null vector $\tilde P_{\Phi}\in\mathbb{B}_{\Phi}$ has $\operatorname{Sc}\tilde P_{\Phi}\neq0$ whenever the energy is nonzero, so it is not pure and cannot be a nilpotent. What it is, exactly, is an imaginary multiple of a Hermitian idempotent:
 
 $$
-\tilde P=2i\frac{E}{c}\,\tilde\Pi(-\vec u),\qquad \vec u=\frac{\vec p}{\lvert\vec p\rvert},
+\tilde P_{\Phi}=2i\frac{E}{c}\,\tilde\Pi(-\vec u),\qquad \vec u=\frac{\vec p}{\lvert\vec p\rvert},
 $$
 
 with $\tilde\Pi(-\vec u)$ of square one, Hermitian, trace one and norm zero. The null momentum is therefore on the **non-pure** part of the cone, the part the nilpotents do not reach.
@@ -218,7 +218,7 @@ and the state $\tilde F\tilde F^{*}/2\langle\tilde F,\tilde F\rangle_{*}=\tilde\
 The contrast with the massless momentum is the point. A null momentum is an imaginary multiple of a Hermitian idempotent,
 
 $$
-\tilde P=2i\frac{E}{c}\tilde\Pi(-\vec u),
+\tilde P_{\Phi}=2i\frac{E}{c}\tilde\Pi(-\vec u),
 $$
 
 and it lies on the idempotent stratum. A null field is a nilpotent and lies on the nilpotent stratum. The two are on the same cone and are not the same kind of element: the momentum is a real null vector of $\mathbb{B}_{\Phi}$, the field is a pure isotropic vector of the whole algebra. The cone is the common locus, not a common object.
@@ -273,7 +273,7 @@ The massless limit of a massive family is the physical instance of the theorem; 
 
 The norm $\langle\tilde Q\rangle_{\natural}=\sum_\mu Q_\mu^2$ has three nested zero sets: the roots of $0$, which are the origin and the nilpotent cone; the nilpotents, which are the nonzero pure isotropic elements of index two; and the zero-divisor cone, which is strictly larger and contains the non-pure zero divisors, the complex multiples of the non-trivial idempotents. The cone is the wall of the group of units, closed under composition and the boundary of invertibility.
 
-Cut by the material sector, the cone is the Minkowski null cone, and the level set $\langle\tilde P\rangle_{\natural}=-m^2c^2$ of the four-momentum norm is the mass shell. Only the massless shell is a cone, because the norm is homogeneous. The **massless spectrum** is the cone plus a helicity: the cone fixes the shell, the rank and the direction, and it does not fix the spin. The photon, the graviton, the Rarita–Schwinger field and the chiral fermion all sit on the same cone; rank is a mass label and not a spin label. A null momentum is an imaginary multiple of a Hermitian idempotent, while a nilpotent is a pure lightlike displacement; the two are on the same cone and are not the same object. The polar word has no value on the cone but has boundary values there: a diverging boost with a collapsing scale reaches an idempotent multiple when the rotor has a component in the plane of $e_t$ and the boost axis, and a nilpotent when the rotor is orthogonal to both.
+Cut by the material sector, the cone is the Minkowski null cone, and the level set $\langle\tilde P_{\Phi}\rangle_{\natural}=-m^2c^2$ of the four-momentum norm is the mass shell. Only the massless shell is a cone, because the norm is homogeneous. The **massless spectrum** is the cone plus a helicity: the cone fixes the shell, the rank and the direction, and it does not fix the spin. The photon, the graviton, the Rarita–Schwinger field and the chiral fermion all sit on the same cone; rank is a mass label and not a spin label. A null momentum is an imaginary multiple of a Hermitian idempotent, while a nilpotent is a pure lightlike displacement; the two are on the same cone and are not the same object. The polar word has no value on the cone but has boundary values there: a diverging boost with a collapsing scale reaches an idempotent multiple when the rotor has a component in the plane of $e_t$ and the boost axis, and a nilpotent when the rotor is orthogonal to both.
 
 The cone also has a canonical two-factor decomposition, which the four-factor word cannot supply. Every element is $\tilde Q=\tilde Q_H\tilde Q_0$ with $\tilde Q_H$ positive semidefinite and $\tilde Q_0$ a partial isometry; on the cone $\tilde Q=\sigma\tilde Q_0$ and $\tilde Q_H=\sigma\tilde\Pi_{\mathrm f}$, a scaled pure state. The boundary value depends on the path; the generalized pair does not. The massless momentum and the null field sit on different strata of the same cone: the momentum is an imaginary multiple of an idempotent, the field is a pure nilpotent.
 
@@ -290,7 +290,7 @@ The cone also has a canonical two-factor decomposition, which the four-factor wo
 | $\langle\tilde R_\Phi\rangle_{\natural}=-c^2{r'_{t}}^2+\lvert\vec r\rvert^2$ | the Minkowski interval |
 | $-m^2c^2$ | the mass-shell level of the four-momentum norm |
 | $\mathbb{B}^{\times}=\{\langle\tilde Q\rangle_{\natural}\neq0\}$ | the group of units |
-| $\tilde P=i\frac{E}{c}\,e_t+\vec p$; $\tilde P=i\,\zeta\zeta^{\dagger}$ on the cone | the material four-momentum; a null momentum is an imaginary multiple of a rank-one projector |
+| $\tilde P_{\Phi}=i\frac{E}{c}\,e_t+\vec p$; $\tilde P_{\Phi}=i\,\zeta\zeta^{\dagger}$ on the cone | the material four-momentum; a null momentum is an imaginary multiple of a rank-one projector |
 | $\tilde Q_1\tilde Q_2$, $\tilde Q_1\tilde Q_2^{*}$ | the plain algebra and the plain sesqualgebra |
 
 ## Further Reading

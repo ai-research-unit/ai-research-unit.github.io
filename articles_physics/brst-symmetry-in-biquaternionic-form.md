@@ -22,15 +22,15 @@ The Faddeev–Popov procedure that produces the ghost Lagrangian from the path-i
 
 ### The Gauge-Fixed Lagrangian
 
-The Maxwell Lagrangian $\mathcal{L}_{\mathrm{M}}=-\tfrac14\sum_{\mu,\nu}\varepsilon_\mu\varepsilon_\nu F_{\mu\nu}F_{\mu\nu}$ is invariant under $\tilde{A}\mapsto\tilde{A}-\tilde{\nabla}\Gamma$, and the kinetic operator is therefore not invertible: the propagator of the companion article exists only after a gauge is chosen. The gauge is fixed by adding to the Lagrangian a term that is not gauge invariant but whose effect on physical quantities cancels, and the modern way to write that term introduces two auxiliary fields. The first is the Nakanishi–Lautrup field $B$, a Lorentz scalar of ghost number zero; the second is the pair of Faddeev–Popov ghosts $c$ and $\bar{c}$, anticommuting Lorentz scalars of opposite ghost number. For the abelian theory the gauge-fixing and ghost terms are
+The Maxwell Lagrangian $\mathcal{L}_{\mathrm{M}}=-\tfrac14\sum_{\mu,\nu}\varepsilon_\mu\varepsilon_\nu F_{\mu\nu}F_{\mu\nu}$ is invariant under $\tilde{A}_{\Phi}\mapsto\tilde{A}_{\Phi}-\tilde{\nabla}\Gamma$, and the kinetic operator is therefore not invertible: the propagator of the companion article exists only after a gauge is chosen. The gauge is fixed by adding to the Lagrangian a term that is not gauge invariant but whose effect on physical quantities cancels, and the modern way to write that term introduces two auxiliary fields. The first is the Nakanishi–Lautrup field $B$, a Lorentz scalar of ghost number zero; the second is the pair of Faddeev–Popov ghosts $c$ and $\bar{c}$, anticommuting Lorentz scalars of opposite ghost number. For the abelian theory the gauge-fixing and ghost terms are
 
 $$
-\mathcal{L}_{\mathrm{gf}} = B\,\langle\tilde\nabla,\tilde A\rangle_{\natural} + \tfrac12\zeta B^2,
+\mathcal{L}_{\mathrm{gf}} = B\,\langle\tilde\nabla,\tilde A_{\Phi}\rangle_{\natural} + \tfrac12\zeta B^2,
 \qquad
 \mathcal{L}_{\mathrm{gh}} = -\,\bar{c}\,\Box\,c,
 $$
 
-with $\zeta$ the gauge parameter. The field $B$ is auxiliary — its equation of motion is $B=-\zeta^{-1}\langle\tilde\nabla,\tilde A\rangle_{\natural}$, and eliminating it returns the familiar $-\tfrac{1}{2\zeta}(\partial\cdot A)^2$ gauge fixing — and the ghosts are the fields that the Faddeev–Popov determinant contributes. For the non-abelian theory the same structure holds with the gauge-fixing term $\sum_a B_a\sum_\mu\partial A_{\mu a}/\partial R_\mu+\tfrac12\zeta\sum_a B_aB_a$ and the ghost term $-\sum_a\bar{c}_a\sum_\mu\partial(D_\mu c)_a/\partial R_\mu$, with $D_\mu c_a=\partial/\partial R_\mu c_a+g\sum_{b,c}f_{abc}A_{\mu b} c_c$.
+with $\zeta$ the gauge parameter. The field $B$ is auxiliary — its equation of motion is $B=-\zeta^{-1}\langle\tilde\nabla,\tilde A_{\Phi}\rangle_{\natural}$, and eliminating it returns the familiar $-\tfrac{1}{2\zeta}(\partial\cdot A)^2$ gauge fixing — and the ghosts are the fields that the Faddeev–Popov determinant contributes. For the non-abelian theory the same structure holds with the gauge-fixing term $\sum_a B_a\sum_\mu\partial A_{\mu a}/\partial R_\mu+\tfrac12\zeta\sum_a B_aB_a$ and the ghost term $-\sum_a\bar{c}_a\sum_\mu\partial(D_\mu c)_a/\partial R_\mu$, with $D_\mu c_a=\partial/\partial R_\mu c_a+g\sum_{b,c}f_{abc}A_{\mu b} c_c$.
 
 The gauge-fixed Lagrangian $\mathcal{L}=\mathcal{L}_{\mathrm{gauge}}+\mathcal{L}_{\mathrm{gf}}+\mathcal{L}_{\mathrm{gh}}$ is no longer gauge invariant — the gauge invariance has been destroyed by the gauge-fixing term — but it carries a new invariance that replaces it.
 
@@ -158,7 +158,7 @@ Therefore, to the extent that the gauge algebra is realized inside the biquatern
 The gauge-fixing and ghost terms are not merely invariant under $s$; they are $s$-exact. Define the **gauge-fixing fermion**
 
 $$
-\tilde{Ξ}_{\mathrm{sp}} = \bar{c}\left(\langle\tilde\nabla,\tilde A\rangle_{\natural}+\tfrac{\zeta}{2}B\right)
+\tilde{Ξ}_{\mathrm{sp}} = \bar{c}\left(\langle\tilde\nabla,\tilde A_{\Phi}\rangle_{\natural}+\tfrac{\zeta}{2}B\right)
 \qquad\text{(abelian)},
 \qquad
 \tilde{Ξ}_{\mathrm{sp}} = \sum_a\bar{c}_a\left(\sum_\mu\partial A_{\mu a}/\partial R_\mu+\tfrac{\zeta}{2}B_a\right)
@@ -168,9 +168,9 @@ $$
 Then a direct computation with the graded Leibniz rule gives, in the abelian case,
 
 $$
-s\tilde{Ξ}_{\mathrm{sp}} = (s\bar{c})\left(\langle\tilde\nabla,\tilde A\rangle_{\natural}+\tfrac{\zeta}{2}B\right)
-- \bar{c}\,s\!\left(\langle\tilde\nabla,\tilde A\rangle_{\natural}+\tfrac{\zeta}{2}B\right)
-= B\,\langle\tilde\nabla,\tilde A\rangle_{\natural}+\tfrac{\zeta}{2}B^2-\bar{c}\,\Box\,c,
+s\tilde{Ξ}_{\mathrm{sp}} = (s\bar{c})\left(\langle\tilde\nabla,\tilde A_{\Phi}\rangle_{\natural}+\tfrac{\zeta}{2}B\right)
+- \bar{c}\,s\!\left(\langle\tilde\nabla,\tilde A_{\Phi}\rangle_{\natural}+\tfrac{\zeta}{2}B\right)
+= B\,\langle\tilde\nabla,\tilde A_{\Phi}\rangle_{\natural}+\tfrac{\zeta}{2}B^2-\bar{c}\,\Box\,c,
 $$
 
 where the minus sign on the second term is the sign $(-1)^{| \bar{c}|}=-1$ that the oddness of $\bar{c}$ requires. This is exactly $\mathcal{L}_{\mathrm{gf}}+\mathcal{L}_{\mathrm{gh}}$, so
@@ -196,7 +196,7 @@ The structure of the result is the reason BRST is the natural framework for gaug
 The ghost number is a grading of the field algebra, additive under products, defined by
 
 $$
-\mathrm{gh}(\tilde{A})=0,
+\mathrm{gh}(\tilde{A}_{\Phi})=0,
 \qquad
 \mathrm{gh}(c)=+1,
 \qquad
@@ -235,7 +235,7 @@ $$
 
 the cohomology of the BRST charge at ghost number zero. Equivalently, physical states satisfy $\mathcal{Q}|\mathrm{phys}\rangle=0$, with two such states identified if they differ by $\mathcal{Q}|\xi\rangle$. This is a sharper characterization than the Gupta–Bleuler subsidiary condition: it states that the unphysical content is exactly the image of a nilpotent operator, so that it decouples from every physical amplitude, and it makes the positivity of the physical norm a theorem rather than a prescription, provided the cohomology is positive.
 
-The two transverse polarizations of the massless vector field are the ghost-number-zero cohomology of the abelian BRST charge: the timelike and longitudinal components of $\tilde{A}$, together with the ghost and antighost, form the **quartet** of the Kugo–Ojima mechanism, a set of four states in two zero-norm pairs whose members are removed by the cohomology and which never appear in the physical subspace. In the biquaternion language the quartet is the non-transverse part of the material sector $\mathbb{B}_{\Phi}$ together with the odd envelope directions of the ghost pair: the algebra supplies the material quartet, and the envelope supplies the odd pair. The physical subspace is two-dimensional at each momentum, in agreement with the count reached by the Gupta–Bleuler route and by the constraint analysis.
+The two transverse polarizations of the massless vector field are the ghost-number-zero cohomology of the abelian BRST charge: the timelike and longitudinal components of $\tilde{A}_{\Phi}$, together with the ghost and antighost, form the **quartet** of the Kugo–Ojima mechanism, a set of four states in two zero-norm pairs whose members are removed by the cohomology and which never appear in the physical subspace. In the biquaternion language the quartet is the non-transverse part of the material sector $\mathbb{B}_{\Phi}$ together with the odd envelope directions of the ghost pair: the algebra supplies the material quartet, and the envelope supplies the odd pair. The physical subspace is two-dimensional at each momentum, in agreement with the count reached by the Gupta–Bleuler route and by the constraint analysis.
 
 ## The Massive Case as a Control
 
@@ -265,7 +265,7 @@ The Proca field of the preceding article has no gauge freedom, and the BRST cons
 
 ## Summary
 
-The BRST symmetry of a gauge theory promotes the gauge parameter to an anticommuting ghost field and introduces a nilpotent odd derivation $s$ under which the gauge field, the ghost, the antighost and the Nakanishi–Lautrup field transform. The gauge-fixed Lagrangian is BRST-exact, $\mathcal{L}=\mathcal{L}_{\mathrm{gauge}}+s\tilde{Ξ}_{\mathrm{sp}}$ with $\tilde{Ξ}_{\mathrm{sp}}=\bar{c}(\langle\tilde\nabla,\tilde A\rangle_{\natural}+\tfrac{\zeta}{2}B)$, and the physical states are the ghost-number-zero cohomology of the BRST charge, $\mathcal{H}_{\mathrm{phys}}=\ker \mathcal{Q}/\mathrm{im}\,\mathcal{Q}$. The unphysical content — the timelike and longitudinal components of the gauge field together with the ghost pair — forms the Kugo–Ojima quartet of zero-norm states.
+The BRST symmetry of a gauge theory promotes the gauge parameter to an anticommuting ghost field and introduces a nilpotent odd derivation $s$ under which the gauge field, the ghost, the antighost and the Nakanishi–Lautrup field transform. The gauge-fixed Lagrangian is BRST-exact, $\mathcal{L}=\mathcal{L}_{\mathrm{gauge}}+s\tilde{Ξ}_{\mathrm{sp}}$ with $\tilde{Ξ}_{\mathrm{sp}}=\bar{c}(\langle\tilde\nabla,\tilde A_{\Phi}\rangle_{\natural}+\tfrac{\zeta}{2}B)$, and the physical states are the ghost-number-zero cohomology of the BRST charge, $\mathcal{H}_{\mathrm{phys}}=\ker \mathcal{Q}/\mathrm{im}\,\mathcal{Q}$. The unphysical content — the timelike and longitudinal components of the gauge field together with the ghost pair — forms the Kugo–Ojima quartet of zero-norm states.
 
 In the biquaternion framework two things are added to the standard transcription. The first is the natural realization of the gauge algebra inside the algebra: the generators lie in the informational sector $\mathbb{B}_{\Psi}$, the gauge field in the material sector $\mathbb{B}_{\Phi}$, and the structure constants are those of the commutator. The second, and the substantive one, is the origin of nilpotency. The Jacobi identity that makes the non-abelian BRST transformation nilpotent is a consequence of the associativity of quaternion multiplication, so that $s^2=0$ is inherited from associativity and not postulated. The nilpotency was verified explicitly on the Grassmann envelope with $\mathrm{SU}(2)$ structure constants and random gauge fields, and the Jacobi combination was verified to vanish.
 
@@ -277,7 +277,7 @@ What the framework does not supply is the Grassmann envelope itself. The algebra
 |---|---|
 | $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ | Biquaternion algebra, $\cong M_2(\mathbb{C})$; has nilpotents, but is ungraded and has no odd elements |
 | $\mathbb{B}_{\Psi},\mathbb{B}_{\Phi}$ | Informational and material sectors; gauge field in $\mathbb{B}_{\Phi}$, generators in $\mathbb{B}_{\Psi}$ |
-| $\tilde{A}=iA_te_t+\vec A\in\mathbb{B}_{\Phi}$ | Gauge potential biquaternion |
+| $\tilde{A}_{\Phi}=iA_te_t+\vec A\in\mathbb{B}_{\Phi}$ | Gauge potential biquaternion |
 | $a,b,c$; $\mu,\nu$ | Internal colour and spacetime indices, both written low; every contraction over them is an explicit sum |
 | $T_a=i\vec e_a$, $[T_a,T_b]=2i\sum_c\varepsilon_{abc}T_c$ | $\mathrm{SU}(2)$ generators realized by the commutator |
 | $f_{abc}$ | Structure constants; Jacobi identity required for nilpotency |
@@ -290,7 +290,7 @@ What the framework does not supply is the Grassmann envelope itself. The algebra
 | $sA_{\mu a}=(D_\mu c)_a$, $sc_a=-\tfrac{g}{2}\sum_{b,c}f_{abc}c_bc_c$, $s\bar{c}_a=B_a$, $sB_a=0$ | Non-abelian BRST transformations |
 | $s^2=0$ | Nilpotency; from Jacobi, hence from associativity of $\mathbb{B}$ |
 | $\tilde{Ξ}_{\mathrm{sp}}=\sum_a\bar{c}_a(\sum_\mu\partial A_{\mu a}/\partial R_\mu+\tfrac{\zeta}{2}B_a)$ | Gauge-fixing fermion, $\mathcal{L}=\mathcal{L}_{\mathrm{gauge}}+s\tilde{Ξ}_{\mathrm{sp}}$ |
-| $\mathrm{gh}(\tilde{A})=0$, $\mathrm{gh}(c)=+1$, $\mathrm{gh}(\bar{c})=-1$, $\mathrm{gh}(B)=0$ | Ghost number |
+| $\mathrm{gh}(\tilde{A}_{\Phi})=0$, $\mathrm{gh}(c)=+1$, $\mathrm{gh}(\bar{c})=-1$, $\mathrm{gh}(B)=0$ | Ghost number |
 | $\mathcal{Q}$, $\mathcal{Q}^2=0$, $s\tilde{Q}_1=[i\mathcal{Q},\tilde{Q}_1]_\pm$ | BRST charge |
 | $\mathcal{H}_{\mathrm{phys}}=\ker \mathcal{Q}/\mathrm{im}\,\mathcal{Q}\big|_{\mathrm{gh}=0}$ | Physical states as BRST cohomology |
 | Kugo–Ojima quartet | $(A_t,A_z,c,\bar{c})$ zero-norm pairs removed by the cohomology |

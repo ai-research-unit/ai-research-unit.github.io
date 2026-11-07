@@ -68,10 +68,10 @@ $$
 
 and with $\frac{m\,c}{k_m}$ and $c$ restored the same statement is $(\Box - k_m^{2})\tilde{Ξ}_{\mathrm{sp}}=0$. The sign on the time term of $\Box$ is the series convention of the material sector, and the article uses that one operator and no second one. Thus the mass term, and only the mass term, couples the two values: when $m=0$ each part separately obeys a one-sided equation; for $m\neq0$ it obeys the Klein–Gordon equation. Here $k_m=mc/\hbar$ is the mass wave number, the inverse of the mass length.
 
-**Mass shell.** For a plane wave $\tilde{Ξ}_{\mathrm{sp}}\propto\exp(-ik_0x_0+i\vec k\cdot(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z))$ with $x_0 = c r'_{t}$, the Klein–Gordon equation gives $k_0^2 = \vec k^2 + k_m^{2}$. Equivalently, with the four-momentum $\tilde{P} = iE/c\,e_t + \vec p\in\mathbb{B}_{\Phi}$ and $k =\frac{k_m\,P}{m\,c}$, whose components are $(k_0,\vec k) = (k_E,\vec p\,k_{\mathrm{mo}})$,
+**Mass shell.** For a plane wave $\tilde{Ξ}_{\mathrm{sp}}\propto\exp(-ik_0x_0+i\vec k\cdot(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z))$ with $x_0 = c r'_{t}$, the Klein–Gordon equation gives $k_0^2 = \vec k^2 + k_m^{2}$. Equivalently, with the four-momentum $\tilde{P}_{\Phi} = iE/c\,e_t + \vec p\in\mathbb{B}_{\Phi}$ and $k =\frac{k_m\,P}{m\,c}$, whose components are $(k_0,\vec k) = (k_E,\vec p\,k_{\mathrm{mo}})$,
 
 $$
-\langle\tilde{P}\rangle_{\natural} = \tilde{P}\tilde{P}^{\natural} = -\frac{E^2}{c^2} + \vec p^2 = -m^2c^2 \qquad(\vec p^2=|\vec p|^2),
+\langle\tilde{P}_{\Phi}\rangle_{\natural} = \tilde{P}_{\Phi}\tilde{P}_{\Phi}^{\natural} = -\frac{E^2}{c^2} + \vec p^2 = -m^2c^2 \qquad(\vec p^2=|\vec p|^2),
 $$
 
 i.e. $E^2 = \vec p^2c^2 + m^2c^4$. Here $k_{\mathrm{mo}}=\frac{k_m\,p}{m\,c}$ and $k_E=E/(\frac{m\,c^{2}}{k_m})$ are the momentum and energy lengths.
@@ -88,15 +88,15 @@ Three conjugations must not be confused. The coefficient conjugation $\tilde{Ξ}
 
 ## Problem 3: A Boost and a Rotation of Each Half
 
-The two distinguished unit elements are the frame rotor of a boost, $\tilde U_{\mathrm b}$, and the rotor of a rotation, $\tilde u_{\mathrm r}$; their formulas are those of the notation table of *Algebra and Element Conventions*, §*Summary of Notation*, and the group they generate is that of *Norm and Unitary Conventions*, §*The Unitary Convention*. Two of their properties are used below: the boost rotor is Hermitian, with a real scalar part and an imaginary vector part, and the rotation rotor is a real quaternion. Both are of norm one.
+The two distinguished unit elements are the frame rotor of a boost, $\tilde U_{\Psi,\mathrm b}$, and the rotor of a rotation, $\tilde u_{\mathrm r}$; their formulas are those of the notation table of *Algebra and Element Conventions*, §*Summary of Notation*, and the group they generate is that of *Norm and Unitary Conventions*, §*The Unitary Convention*. Two of their properties are used below: the boost rotor is Hermitian, with a real scalar part and an imaginary vector part, and the rotation rotor is a real quaternion. Both are of norm one.
 
-**Boost.** A boost has a real scalar part and an imaginary vector part, so its coefficient conjugate negates the vector part: $\bar{\tilde U}_{\mathrm b} = \tilde U_{\mathrm b}^{\natural}$. Its norm is one, so $\tilde U_{\mathrm b}^{\natural} = \tilde U_{\mathrm b}^{-1}$. Hence
+**Boost.** A boost has a real scalar part and an imaginary vector part, so its coefficient conjugate negates the vector part: $\bar{\tilde U}_{\Psi,\mathrm b} = \tilde U_{\Psi,\mathrm b}^{\natural}$. Its norm is one, so $\tilde U_{\Psi,\mathrm b}^{\natural} = \tilde U_{\Psi,\mathrm b}^{-1}$. Hence
 
 $$
-\bar{\tilde U}_{\mathrm b} = \tilde U_{\mathrm b}^{-1},
+\bar{\tilde U}_{\Psi,\mathrm b} = \tilde U_{\Psi,\mathrm b}^{-1},
 $$
 
-at residual $9\times10^{-16}$ over $200$ rapidities, and the two parts transform by **inverse** elements: one by left multiplication with $\tilde U_{\mathrm b}$, the other by left multiplication with $\tilde U_{\mathrm b}^{-1}$. A boost stretches one part where it contracts the other. This opposition of the two parts under boosts is the representation-theoretic content of the labels left and right.
+at residual $9\times10^{-16}$ over $200$ rapidities, and the two parts transform by **inverse** elements: one by left multiplication with $\tilde U_{\Psi,\mathrm b}$, the other by left multiplication with $\tilde U_{\Psi,\mathrm b}^{-1}$. A boost stretches one part where it contracts the other. This opposition of the two parts under boosts is the representation-theoretic content of the labels left and right.
 
 **Rotation.** A rotation rotor is a real quaternion, so $\bar{\tilde u}_{\mathrm r} = \tilde u_{\mathrm r}$ and both parts transform by the **same** element. The two values are therefore isomorphic as modules of the compact subgroup, and they separate only under boosts, the defining representation of $SU(2)$ being self-conjugate and that of $SL(2,\mathbb{C})$ not.
 
@@ -343,7 +343,7 @@ The four contraction sums are fixed by the metric, because a cell's square is. W
 
 ## Summary
 
-Seven problems were solved. (1) The subscript takes two values and there are exactly two; every element is the sum of one part of each, and only the zero element is both; a product takes the letter of its right factor, and left multiplication keeps it, so the value of a part is Lorentz invariant. (2) The massless pair decouples into two independent one-sided equations, one per value; the mass term couples the values, and each part obeys $(\Box-k_m^{2})\tilde{Ξ}_{\mathrm{sp}} = 0$, with mass shell $k_0^2 = \vec k^2+k_m^{2}$. The one-sided chiral pair is one of the two Dirac equations of the corpus; the two-sided form carries the same chirality coupling in a single equation, with the mass term a conjugation together with a right multiplication by the declared unit. (3) Under a boost the two parts transform by inverse elements, because $\bar{\tilde U}_{\mathrm b}=\tilde U_{\mathrm b}^{-1}$; under a rotation they transform by the same element, because a rotation rotor is real; in general $\bar{\tilde U}=(\tilde U^{*})^{-1}$. (4) The quaternionic form is invariant, symmetric and nondegenerate, vanishes on each value and pairs one value with the other, so each value is self-dual without being self-conjugate. (5) The bilinear gives $V = i\cdot\tfrac12(wv^{*}+vw^{*})\in\mathbb{B}_{\Phi}$, transforming by the sandwich $UVU^{*}$; one element gives a null four-vector, and the vector action is the product of two field factors. (6) A $2\pi$ rotation acts as $-e_t$ on the field and as the identity on four-vectors, and a $4\pi$ rotation as the identity on both: the double cover $SO^{+}(1,3)\cong SL(2,\mathbb{C})/\{\pm e_t\}$. (7) The sandwich is the bilinear shadow of the one-sided action; the sign cancels in the former but not in the latter, and the Hermitian form on one value and the other is invariant.
+Seven problems were solved. (1) The subscript takes two values and there are exactly two; every element is the sum of one part of each, and only the zero element is both; a product takes the letter of its right factor, and left multiplication keeps it, so the value of a part is Lorentz invariant. (2) The massless pair decouples into two independent one-sided equations, one per value; the mass term couples the values, and each part obeys $(\Box-k_m^{2})\tilde{Ξ}_{\mathrm{sp}} = 0$, with mass shell $k_0^2 = \vec k^2+k_m^{2}$. The one-sided chiral pair is one of the two Dirac equations of the corpus; the two-sided form carries the same chirality coupling in a single equation, with the mass term a conjugation together with a right multiplication by the declared unit. (3) Under a boost the two parts transform by inverse elements, because $\bar{\tilde U}_{\Psi,\mathrm b}=\tilde U_{\Psi,\mathrm b}^{-1}$; under a rotation they transform by the same element, because a rotation rotor is real; in general $\bar{\tilde U}=(\tilde U^{*})^{-1}$. (4) The quaternionic form is invariant, symmetric and nondegenerate, vanishes on each value and pairs one value with the other, so each value is self-dual without being self-conjugate. (5) The bilinear gives $V = i\cdot\tfrac12(wv^{*}+vw^{*})\in\mathbb{B}_{\Phi}$, transforming by the sandwich $UVU^{*}$; one element gives a null four-vector, and the vector action is the product of two field factors. (6) A $2\pi$ rotation acts as $-e_t$ on the field and as the identity on four-vectors, and a $4\pi$ rotation as the identity on both: the double cover $SO^{+}(1,3)\cong SL(2,\mathbb{C})/\{\pm e_t\}$. (7) The sandwich is the bilinear shadow of the one-sided action; the sign cancels in the former but not in the latter, and the Hermitian form on one value and the other is invariant.
 
 ## Summary of Notation
 
@@ -361,7 +361,7 @@ Seven problems were solved. (1) The subscript takes two values and there are exa
 | $\tilde\nabla=\sum_\mu e_\mu\,\partial/\partial R_\mu$ | Biquaternionic gradient |
 | $\Box=\tilde\nabla\tilde\nabla^{\natural}$ | The d'Alembertian, the quaternionic norm of the gradient |
 | $D_3=\sum_k\vec e_k\,\partial/\partial R_k$ | Three-dimensional Cauchy–Riemann operator of the two-sided equation |
-| $\tilde U_{\mathrm b} = \cosh\frac{\theta_{\mathrm{rpd}}}{2}\,e_t+i\sinh\frac{\theta_{\mathrm{rpd}}}{2}\,\vec u_{\mathrm b}$ | Boost rotor ($\mathbb{B}_{\Psi}$) |
+| $\tilde U_{\Psi,\mathrm b} = \cosh\frac{\theta_{\mathrm{rpd}}}{2}\,e_t+i\sinh\frac{\theta_{\mathrm{rpd}}}{2}\,\vec u_{\mathrm b}$ | Boost rotor ($\mathbb{B}_{\Psi}$) |
 | $\tilde u_{\mathrm r} = \cos\frac{\theta}{2}\,e_t+\sin\frac{\theta}{2}\,\vec u_{\mathrm r}$ | Rotation rotor ($\mathbb{B}_{H}$) |
 | $\bar{\tilde U}=(\tilde U^{*})^{-1}$ | The conjugate action for a unit element |
 | $H = \tfrac12(wv^{*}+vw^{*})$, $V = iH$ | Hermitian part and four-vector from a pair of elements |

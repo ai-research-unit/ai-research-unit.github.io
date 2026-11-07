@@ -41,14 +41,14 @@ $$
 
 so $\rho(B_{\mathrm{boost},k})$ is Hermitian; skew-adjointness then forces $\rho(B_{\mathrm{boost},k})=0$. The boost generators and their brackets generate the whole Lie algebra, so $\rho=0$. Hence the only finite-dimensional $*$-unitary representation of $SL(2,\mathbb{C})$ is the trivial one, and the spinor representation is non-$*$-unitary.
 
-The obstruction is visible concretely on $S$. The standard Hermitian form $h(\tilde{Ξ}_{\mathrm{sp}},\xi_{\mathrm{alt}})=\tilde{Ξ}_{\mathrm{sp}}^{\dagger}\xi_{\mathrm{alt}}$ is invariant under the rotation subgroup $SU(2)$ but not under a boost $\tilde U_{\mathrm b}=\cosh\tfrac{\theta_{\mathrm{rpd}}}{2}+i\sinh\tfrac{\theta_{\mathrm{rpd}}}{2}\vec u$, because
+The obstruction is visible concretely on $S$. The standard Hermitian form $h(\tilde{Ξ}_{\mathrm{sp}},\xi_{\mathrm{alt}})=\tilde{Ξ}_{\mathrm{sp}}^{\dagger}\xi_{\mathrm{alt}}$ is invariant under the rotation subgroup $SU(2)$ but not under a boost $\tilde U_{\Psi,\mathrm b}=\cosh\tfrac{\theta_{\mathrm{rpd}}}{2}+i\sinh\tfrac{\theta_{\mathrm{rpd}}}{2}\vec u$, because
 
 $$
-h(\tilde U_{\mathrm b}\tilde{Ξ}_{\mathrm{sp}},\tilde U_{\mathrm b}\xi_{\mathrm{alt}})=\tilde{Ξ}_{\mathrm{sp}}^{\dagger}\tilde U_{\mathrm b}^{*}\tilde U_{\mathrm b}\,\xi_{\mathrm{alt}},
-\qquad \tilde U_{\mathrm b}^{*}\tilde U_{\mathrm b}=\tilde U_{\mathrm b}^{2}=\cosh\theta_{\mathrm{rpd}}+i\sinh\theta_{\mathrm{rpd}}\,\vec u\neq e_t .
+h(\tilde U_{\Psi,\mathrm b}\tilde{Ξ}_{\mathrm{sp}},\tilde U_{\Psi,\mathrm b}\xi_{\mathrm{alt}})=\tilde{Ξ}_{\mathrm{sp}}^{\dagger}\tilde U_{\Psi,\mathrm b}^{*}\tilde U_{\Psi,\mathrm b}\,\xi_{\mathrm{alt}},
+\qquad \tilde U_{\Psi,\mathrm b}^{*}\tilde U_{\Psi,\mathrm b}=\tilde U_{\Psi,\mathrm b}^{2}=\cosh\theta_{\mathrm{rpd}}+i\sinh\theta_{\mathrm{rpd}}\,\vec u\neq e_t .
 $$
 
-For example, on a boost along $\vec e_z$ the operator $\tilde U_{\mathrm b}^{*}\tilde U_{\mathrm b}$ is $\mathrm{diag}(\exp(\tilde{Ξ}_{\mathrm{sp}}),\exp(-\tilde{Ξ}_{\mathrm{sp}}))$, which differs from the identity for every $\tilde{Ξ}_{\mathrm{sp}}\neq0$. The invariant bilinear form on $S$ is instead the antisymmetric $\varepsilon(\tilde{Ξ}_{\mathrm{sp}},\xi_{\mathrm{alt}})=\tilde{Ξ}_{\mathrm{sp}}^T\epsilon\xi_{\mathrm{alt}}$, which is symplectic rather than Hermitian.
+For example, on a boost along $\vec e_z$ the operator $\tilde U_{\Psi,\mathrm b}^{*}\tilde U_{\Psi,\mathrm b}$ is $\mathrm{diag}(\exp(\tilde{Ξ}_{\mathrm{sp}}),\exp(-\tilde{Ξ}_{\mathrm{sp}}))$, which differs from the identity for every $\tilde{Ξ}_{\mathrm{sp}}\neq0$. The invariant bilinear form on $S$ is instead the antisymmetric $\varepsilon(\tilde{Ξ}_{\mathrm{sp}},\xi_{\mathrm{alt}})=\tilde{Ξ}_{\mathrm{sp}}^T\epsilon\xi_{\mathrm{alt}}$, which is symplectic rather than Hermitian.
 
 ## The Two Fundamental Representations Are the Two Chiralities
 
@@ -203,7 +203,7 @@ Two things should be kept apart here, because the construction can be misread as
 
 ## Summary
 
-The spinor representation is the action of the unit-norm biquaternions on the two-dimensional complex module $S=\mathbb{C}^2$, $\tilde{Ξ}_{\mathrm{sp}}\mapsto\mathsf{M}_2(\tilde U_{\mathrm{lor}})\tilde{Ξ}_{\mathrm{sp}}$. It is irreducible (the unique simple module of the simple algebra $\mathbb{B}\cong M_2(\mathbb{C})$), faithful ($-e_t$ acts as $-I_2$, so it does not descend to $SO^+(1,3)$), and non-$*$-unitary: the invariant Hermitian form is preserved only by $SU(2)$, and, for a boost $\tilde U_{\mathrm b}$, $\tilde U_{\mathrm b}^{*}\tilde U_{\mathrm b}=\tilde U_{\mathrm b}^2\neq e_t$.
+The spinor representation is the action of the unit-norm biquaternions on the two-dimensional complex module $S=\mathbb{C}^2$, $\tilde{Ξ}_{\mathrm{sp}}\mapsto\mathsf{M}_2(\tilde U_{\mathrm{lor}})\tilde{Ξ}_{\mathrm{sp}}$. It is irreducible (the unique simple module of the simple algebra $\mathbb{B}\cong M_2(\mathbb{C})$), faithful ($-e_t$ acts as $-I_2$, so it does not descend to $SO^+(1,3)$), and non-$*$-unitary: the invariant Hermitian form is preserved only by $SU(2)$, and, for a boost $\tilde U_{\Psi,\mathrm b}$, $\tilde U_{\Psi,\mathrm b}^{*}\tilde U_{\Psi,\mathrm b}=\tilde U_{\Psi,\mathrm b}^2\neq e_t$.
 
 Its complex conjugate $\bar{S}$ is the other chiral half. The chirality is the cell $\gamma_5=-iL_{\mathrm{axf},e_t}R_{\mathrm{axf},\vec e_z}$, whose two eigenspaces are the only two-dimensional irreducible representations, $(\tfrac12,0)$ and $(0,\tfrac12)$, and these are inequivalent: the two chiral Casimirs take the values $(0,-3)$ and $(-3,0)$ on them. They are not the two minimal left ideals (both carry $S$), and the second half is not reached by right multiplication, since $S^{*}\cong S$; it requires the real structure.
 

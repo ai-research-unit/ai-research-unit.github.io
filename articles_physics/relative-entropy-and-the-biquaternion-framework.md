@@ -10,11 +10,11 @@ and every information-theoretic inequality of consequence — monotonicity, the 
 
 The answer has three parts, and they should be separated at the outset.
 
-1. **The quantity is standard.** The states of the biquaternion algebra $\mathbb{B}\cong M_2(\mathbb{C})$ are, by the Hermitian GNS companion article, the elements $\tilde{Ϛ}\in\mathbb{B}_{\Psi}$ that are Hermitian, positive and of trace one, parametrized by the Bloch ball. Relative entropy on these states is Umegaki's. The framework does not modify it, and no new inequality is claimed for it.
+1. **The quantity is standard.** The states of the biquaternion algebra $\mathbb{B}\cong M_2(\mathbb{C})$ are, by the Hermitian GNS companion article, the elements $\tilde{Ϛ}_{\Psi}\in\mathbb{B}_{\Psi}$ that are Hermitian, positive and of trace one, parametrized by the Bloch ball. Relative entropy on these states is Umegaki's. The framework does not modify it, and no new inequality is claimed for it.
 
 2. **The quantity is exactly computable.** Because $\mathbb{B}$ is four-dimensional over $\mathbb{C}$, both the state and its logarithm are elements of the algebra, and the trace is the scalar pairing $\mathrm{Tr}(\tilde Q_1\tilde Q_2)=2\,\mathrm{Sc}(\tilde Q_1\tilde Q_2)$. The relative entropy of two biquaternion states therefore collapses to a closed expression in their Bloch vectors, which is derived and verified below.
 
-3. **The quantity has a framework-specific boundary.** The logarithm of a state is an element of $\mathbb{B}$ exactly when the state is faithful, that is, in the interior of the Bloch ball; on the pure boundary the state is a zero divisor and $\log\tilde{Ϛ}$ does not exist as an algebra element. The relative entropy nevertheless extends continuously to the boundary, and it diverges there only in the one standard way, when the support of the first state is not contained in the support of the second. The zero-divisor cone is the locus on which the algebra's own logarithm fails and the imported logarithm is required.
+3. **The quantity has a framework-specific boundary.** The logarithm of a state is an element of $\mathbb{B}$ exactly when the state is faithful, that is, in the interior of the Bloch ball; on the pure boundary the state is a zero divisor and $\log\tilde{Ϛ}_{\Psi}$ does not exist as an algebra element. The relative entropy nevertheless extends continuously to the boundary, and it diverges there only in the one standard way, when the support of the first state is not contained in the support of the second. The zero-divisor cone is the locus on which the algebra's own logarithm fails and the imported logarithm is required.
 
 The article proceeds as follows. Relative entropy is recalled with the properties that make it basic. The states of $\mathbb{B}$ and their logarithms are fixed. The closed form is derived. Positivity, asymmetry and monotonicity are read off in the Bloch geometry. Araki's relative modular operator is identified, because it is the object the modular companions generalize. The field-theoretic setting, in which relative entropy is the right quantity precisely where entanglement entropy is not, is recalled. The article closes with the established/interpretation/open split.
 
@@ -59,9 +59,9 @@ The von Neumann entropy $S(\rho)=-\mathrm{Tr}(\rho\log\rho)=\log\dim-S(\rho\|I/\
 
 ### Density Matrices in $\mathbb{B}_{\Psi}$
 
-By the Hermitian GNS companion article, every state on $\mathbb{B}$ is of the form $\omega(\tilde Q_2)=\mathrm{Tr}(\tilde{Ϛ}\tilde Q_2)$ with $\tilde{Ϛ}\in\mathbb{B}_{\Psi}$ positive and of trace one. Writing
+By the Hermitian GNS companion article, every state on $\mathbb{B}$ is of the form $\omega(\tilde Q_2)=\mathrm{Tr}(\tilde{Ϛ}_{\Psi}\tilde Q_2)$ with $\tilde{Ϛ}_{\Psi}\in\mathbb{B}_{\Psi}$ positive and of trace one. Writing
 $$
-\tilde{Ϛ}=\tfrac12\big(e_t+i\vec r\cdot\mathbf e\big),\qquad
+\tilde{Ϛ}_{\Psi}=\tfrac12\big(e_t+i\vec r\cdot\mathbf e\big),\qquad
 \vec r\in\mathbb{R}^3,\qquad \mathbf e=(\vec e_x,\vec e_y,\vec e_z),
 $$
 the eigenvalues are
@@ -70,9 +70,9 @@ $$
 $$
 and positivity plus the trace condition give exactly
 $$
-\tilde{Ϛ}\ \text{a state}\iff |\vec r|\le1 .
+\tilde{Ϛ}_{\Psi}\ \text{a state}\iff |\vec r|\le1 .
 $$
-The state is **pure** on the Bloch sphere $|\vec r|=1$, where $\tilde{Ϛ}=\tilde\Pi(\vec u_r)=\tfrac12(e_t+i\vec u_r)$ is a minimal idempotent and $\tilde{Ϛ}^2=\tilde{Ϛ}$; it is **faithful** on the open Bloch ball $|\vec r|<1$, where both eigenvalues are positive; and it is the **trace state** at $\vec r=0$, where $\tilde{Ϛ}=\tfrac12e_t$ and $\omega$ is the normalized algebra trace.
+The state is **pure** on the Bloch sphere $|\vec r|=1$, where $\tilde{Ϛ}_{\Psi}=\tilde\Pi(\vec u_r)=\tfrac12(e_t+i\vec u_r)$ is a minimal idempotent and $\tilde{Ϛ}_{\Psi}^2=\tilde{Ϛ}_{\Psi}$; it is **faithful** on the open Bloch ball $|\vec r|<1$, where both eigenvalues are positive; and it is the **trace state** at $\vec r=0$, where $\tilde{Ϛ}_{\Psi}=\tfrac12e_t$ and $\omega$ is the normalized algebra trace.
 
 The parameter is a genuine superposition coordinate: $\vec r$ is the Bloch vector of the state in the basis of the Pauli matrices, and a generic state has all three components nonzero. The computations below are performed on such generic vectors.
 
@@ -82,24 +82,24 @@ The logarithm of a positive element of $\mathbb{B}$ is again an element of $\mat
 $$
 \exp\big(\theta\,i\vec u_r\big)=\cosh\theta\,e_t+i\sinh\theta\,\vec u_r.
 $$
-Second, the determinant of the state, $\det\mathsf{M}_2(\tilde{Ϛ})=\lambda_+\lambda_-=\tfrac14(1-|\vec r|^2)=\langle\tilde{Ϛ}\rangle_{\natural}$, which vanishes exactly on the pure boundary. Writing the logarithm in the same form as the state,
+Second, the determinant of the state, $\det\mathsf{M}_2(\tilde{Ϛ}_{\Psi})=\lambda_+\lambda_-=\tfrac14(1-|\vec r|^2)=\langle\tilde{Ϛ}_{\Psi}\rangle_{\natural}$, which vanishes exactly on the pure boundary. Writing the logarithm in the same form as the state,
 $$
-\log\tilde{Ϛ}=b_0\,e_t+i\,\vec b\cdot\mathbf e,
+\log\tilde{Ϛ}_{\Psi}=b_0\,e_t+i\,\vec b\cdot\mathbf e,
 $$
 the scalar part is fixed by the product of eigenvalues and the vector part by their ratio,
 $$
-b_0=\tfrac12\log\det\tilde{Ϛ}=\tfrac12\log\frac{1-|\vec r|^2}{4},\qquad
+b_0=\tfrac12\log\det\tilde{Ϛ}_{\Psi}=\tfrac12\log\frac{1-|\vec r|^2}{4},\qquad
 \vec b=\mathrm{artanh}\big(|\vec r|\big)\,\vec u_r,
 $$
 so that
 $$
-\log\tilde{Ϛ}=\tfrac12\log\frac{1-|\vec r|^2}{4}\,e_t
+\log\tilde{Ϛ}_{\Psi}=\tfrac12\log\frac{1-|\vec r|^2}{4}\,e_t
 +i\,\mathrm{artanh}\big(|\vec r|\big)\,\vec u_r,
 \qquad |\vec r|<1 .
 $$
-The formula was checked by exponentiating it and recovering $\tilde{Ϛ}$ coefficient by coefficient: with $b_0=\tfrac12\log\frac{1-r^2}{4}$ and $|\vec b|=\mathrm{artanh}(r)$ one has $\exp(b_0)\cosh|\vec b|=\tfrac12$ and $\exp(b_0)\sinh|\vec b|=r/2$, which is the state. The logarithm is **real**: $\log\tilde{Ϛ}\in\mathbb{B}_{\Psi}$, as the modular-theory companion requires, since $b_0$ is real and the vector part is imaginary. Its scalar part is negative and tends to $-\infty$ as the state approaches the pure boundary, while its vector part has magnitude $\mathrm{artanh}(|\vec r|)$, which diverges on the boundary in every direction.
+The formula was checked by exponentiating it and recovering $\tilde{Ϛ}_{\Psi}$ coefficient by coefficient: with $b_0=\tfrac12\log\frac{1-r^2}{4}$ and $|\vec b|=\mathrm{artanh}(r)$ one has $\exp(b_0)\cosh|\vec b|=\tfrac12$ and $\exp(b_0)\sinh|\vec b|=r/2$, which is the state. The logarithm is **real**: $\log\tilde{Ϛ}_{\Psi}\in\mathbb{B}_{\Psi}$, as the modular-theory companion requires, since $b_0$ is real and the vector part is imaginary. Its scalar part is negative and tends to $-\infty$ as the state approaches the pure boundary, while its vector part has magnitude $\mathrm{artanh}(|\vec r|)$, which diverges on the boundary in every direction.
 
-The domain is the open Bloch ball. On the pure boundary the state is a **zero divisor**, $\langle\tilde{Ϛ}\rangle_{\natural}=0$, and $\log\tilde{Ϛ}$ does not exist as an element of $\mathbb{B}$; the formal expression above diverges. This is not a defect of the framework but its zero-divisor structure appearing in the logarithm, and it is the reason the relative entropy is handled in two steps below: first as a finite expression in the interior, then by its continuous extension to the boundary.
+The domain is the open Bloch ball. On the pure boundary the state is a **zero divisor**, $\langle\tilde{Ϛ}_{\Psi}\rangle_{\natural}=0$, and $\log\tilde{Ϛ}_{\Psi}$ does not exist as an element of $\mathbb{B}$; the formal expression above diverges. This is not a defect of the framework but its zero-divisor structure appearing in the logarithm, and it is the reason the relative entropy is handled in two steps below: first as a finite expression in the interior, then by its continuous extension to the boundary.
 
 ## The Relative Entropy of Two Biquaternion States
 
@@ -107,21 +107,21 @@ The domain is the open Bloch ball. On the pure boundary the state is a **zero di
 
 Let
 $$
-\tilde{Ϛ}_1=\tfrac12\big(e_t+i\vec r\cdot\mathbf e\big),\qquad
-\tilde{Ϛ}_2=\tfrac12\big(e_t+i\vec s\cdot\mathbf e\big)
+\tilde{Ϛ}_{\Psi,1}=\tfrac12\big(e_t+i\vec r\cdot\mathbf e\big),\qquad
+\tilde{Ϛ}_{\Psi,2}=\tfrac12\big(e_t+i\vec s\cdot\mathbf e\big)
 $$
-be two states, with $|\vec r|,|\vec s|\le1$ and $\log\tilde{Ϛ}_2$ existing, so that $|\vec s|<1$. The von Neumann entropy of a biquaternion state follows from the logarithm above and the trace formula,
+be two states, with $|\vec r|,|\vec s|\le1$ and $\log\tilde{Ϛ}_{\Psi,2}$ existing, so that $|\vec s|<1$. The von Neumann entropy of a biquaternion state follows from the logarithm above and the trace formula,
 $$
-2\,\mathrm{Sc}\big(\tilde{Ϛ}\log\tilde{Ϛ}\big)
+2\,\mathrm{Sc}\big(\tilde{Ϛ}_{\Psi}\log\tilde{Ϛ}_{\Psi}\big)
 =\tfrac12\log\frac{1-|\vec r|^2}{4}+|\vec r|\,\mathrm{artanh}|\vec r|,
 $$
 so that
 $$
-S(\tilde{Ϛ})=-\tfrac12\log\frac{1-|\vec r|^2}{4}-|\vec r|\,\mathrm{artanh}|\vec r| .
+S(\tilde{Ϛ}_{\Psi})=-\tfrac12\log\frac{1-|\vec r|^2}{4}-|\vec r|\,\mathrm{artanh}|\vec r| .
 $$
 At $\vec r=0$ this returns $\log2$, the entropy of the maximally mixed qubit state, and at $|\vec r|\to1$ it tends to $0$, the entropy of a pure state. For the cross term, the trace formula gives
 $$
-\mathrm{Tr}\big(\tilde{Ϛ}_1\log\tilde{Ϛ}_2\big)
+\mathrm{Tr}\big(\tilde{Ϛ}_{\Psi,1}\log\tilde{Ϛ}_{\Psi,2}\big)
 =\tfrac12\log\frac{1-|\vec s|^2}{4}
 +|\vec r|\,\mathrm{artanh}|\vec s|\,\cos\gamma,
 \qquad
@@ -129,7 +129,7 @@ $$
 $$
 and therefore
 $$
-\boxed{\,S(\tilde{Ϛ}_1\|\tilde{Ϛ}_2)
+\boxed{\,S(\tilde{Ϛ}_{\Psi,1}\|\tilde{Ϛ}_{\Psi,2})
 =\tfrac12\log\frac{1-|\vec r|^2}{1-|\vec s|^2}
 +|\vec r|\Big(\mathrm{artanh}|\vec r|
 -\mathrm{artanh}|\vec s|\,\cos\gamma\Big)}
@@ -138,18 +138,18 @@ for $|\vec r|,|\vec s|<1$. The derivation is the whole content of the section: t
 
 Two features are worth naming. First, the relative entropy of two biquaternion states is **not** a function of the Bloch distance $|\vec r-\vec s|$ alone; it depends on the two radii and the angle, and is therefore sensitive to the direction of the Bloch vectors and not only to their separation. Second, it is manifestly **asymmetric** in the exchange $\vec r\leftrightarrow\vec s$, because the coefficient in front of the bracket is $|\vec r|$ and the bracket is not symmetric.
 
-The limits are the expected ones. If $\tilde{Ϛ}_1=\tilde{Ϛ}_2$ the two radii and the angle give $\tfrac12\log1+|\vec r|(\mathrm{artanh}|\vec r|-\mathrm{artanh}|\vec r|)=0$. If $|\vec r|\to0$, then
+The limits are the expected ones. If $\tilde{Ϛ}_{\Psi,1}=\tilde{Ϛ}_{\Psi,2}$ the two radii and the angle give $\tfrac12\log1+|\vec r|(\mathrm{artanh}|\vec r|-\mathrm{artanh}|\vec r|)=0$. If $|\vec r|\to0$, then
 $$
-S\big(\tfrac12e_t\big\|\tilde{Ϛ}_2\big)=-\tfrac12\log\big(1-|\vec s|^2\big),
+S\big(\tfrac12e_t\big\|\tilde{Ϛ}_{\Psi,2}\big)=-\tfrac12\log\big(1-|\vec s|^2\big),
 $$
-the relative entropy of the trace state from $\tilde{Ϛ}_2$, which is finite for every faithful $\tilde{Ϛ}_2$ and tends to $+\infty$ only as $\tilde{Ϛ}_2$ itself approaches the pure boundary. If $|\vec r|\to1$ with $|\vec s|<1$ the expression tends to the finite limit
+the relative entropy of the trace state from $\tilde{Ϛ}_{\Psi,2}$, which is finite for every faithful $\tilde{Ϛ}_{\Psi,2}$ and tends to $+\infty$ only as $\tilde{Ϛ}_{\Psi,2}$ itself approaches the pure boundary. If $|\vec r|\to1$ with $|\vec s|<1$ the expression tends to the finite limit
 $$
-S\big(\tilde\Pi(\vec u_r)\big\|\tilde{Ϛ}_2\big)
+S\big(\tilde\Pi(\vec u_r)\big\|\tilde{Ϛ}_{\Psi,2}\big)
 =-\tfrac12\log\frac{1-|\vec s|^2}{4}
 -\mathrm{artanh}\big(|\vec s|\big)\cos\gamma_{rs},
 \qquad \cos\gamma_{rs}=\vec u_r\cdot\vec u_s,
 $$
-which is the direct computation $-\mathrm{Tr}(\tilde\Pi(\vec u_r)\log\tilde{Ϛ}_2)$ in the pure case: the entropy of a pure state vanishes, and the whole value is the cross term.
+which is the direct computation $-\mathrm{Tr}(\tilde\Pi(\vec u_r)\log\tilde{Ϛ}_{\Psi,2})$ in the pure case: the entropy of a pure state vanishes, and the whole value is the cross term.
 
 ### Verification on Generic Superpositions
 
@@ -160,8 +160,8 @@ $$
 $$
 with $|\vec r|^2=\tfrac{61}{100}$, $|\vec s|^2=\tfrac{3}{10}$ and $\cos\gamma=-0.163633\ldots$, is a generic superposition with no component vanishing. The results are
 $$
-S(\tilde{Ϛ}_1\|\tilde{Ϛ}_2)=0.6046559092,\qquad
-S(\tilde{Ϛ}_2\|\tilde{Ϛ}_1)=0.7233102495,
+S(\tilde{Ϛ}_{\Psi,1}\|\tilde{Ϛ}_{\Psi,2})=0.6046559092,\qquad
+S(\tilde{Ϛ}_{\Psi,2}\|\tilde{Ϛ}_{\Psi,1})=0.7233102495,
 $$
 the first from the boxed formula and the second by exchanging the arguments; both agree with the matrix computation to twelve decimal places, and the asymmetry is $0.118654\ldots$, nonzero as it must be. The same check was run at five further pairs, including pairs on the boundary of the Bloch ball and pairs with one argument at the centre: all agree, and all are non-negative.
 
@@ -169,7 +169,7 @@ the first from the boxed formula and the second by exchanging the arguments; bot
 
 Klein's inequality is not re-derived here; it is a theorem about density matrices, and the states of $\mathbb{B}$ are density matrices. What the framework adds is a geometric interpretation of where the inequality is tight. The boxed formula vanishes if and only if $|\vec r|=|\vec s|$ and $\cos\gamma=1$, that is, if and only if $\vec r=\vec s$, so the relative entropy separates the states of $\mathbb{B}$ as well as it separates arbitrary qubit states. Near coincidence $\vec s=\vec r+\delta\vec r$ the boxed formula has no linear term, as it must, and its quadratic term is the Kubo–Mori–Bogoliubov metric of the state. For a displacement that changes the purity, $\delta\vec r\parallel\vec r$, the coefficient is exact,
 $$
-S(\tilde{Ϛ}_1\|\tilde{Ϛ}_2)=\frac{|\delta\vec r|^2}{2\,(1-|\vec r|^2)}+O\big(|\delta\vec r|^3\big),
+S(\tilde{Ϛ}_{\Psi,1}\|\tilde{Ϛ}_{\Psi,2})=\frac{|\delta\vec r|^2}{2\,(1-|\vec r|^2)}+O\big(|\delta\vec r|^3\big),
 $$
 verified by recomputation at small displacements. The coefficient is finite throughout the interior of the Bloch ball and diverges as the pure boundary is approached, where the eigenvalue gap $1-|\vec r|^2$ closes. This is the framework's form of the statement that the purity of a nearly pure state is distinguished divergingly well.
 
@@ -186,22 +186,22 @@ $$
 $$
 where $\sigma^{(\xi_{\mathrm{alt}},\omega)}$ is the **Connes cocycle** flow relating the modular flows of the two states. Two facts connect this object to the rest of the subcategory: the relative modular operator of $\omega$ with itself is the modular operator $\Delta_\omega$ of the Tomita construction, and the modular Hamiltonian $H_{\mathrm{modular},\omega}=-\log\Delta_\omega$ of the modular companions is the $(\omega,\omega)$ case of the object defined here. The relative entropy is thus the expectation of the logarithm of the relative modular operator in the state's own GNS vector, and the modular Hamiltonian is its diagonal.
 
-Within the finite-dimensional algebra the relative modular operator is explicit. On the Hilbert–Schmidt space of the algebra, with the state $\omega$ fixing the vector $\Omega_\omega=\tilde{Ϛ}_\omega^{1/2}$, the relative Tomita operator is $\tilde Q_2\Omega_{\mathrm{alt},\xi}\mapsto\tilde Q_2^{*}\Omega_\omega$ and its polar decomposition gives
+Within the finite-dimensional algebra the relative modular operator is explicit. On the Hilbert–Schmidt space of the algebra, with the state $\omega$ fixing the vector $\Omega_\omega=\tilde{Ϛ}_{\Psi,\omega}^{1/2}$, the relative Tomita operator is $\tilde Q_2\Omega_{\mathrm{alt},\xi}\mapsto\tilde Q_2^{*}\Omega_\omega$ and its polar decomposition gives
 $$
 \Delta_{\omega,\xi_{\mathrm{alt}}}\big(\tilde Q_2\big)
-=e^{-\tilde H_{\mathrm{modular},\omega}}\,\tilde Q_2\,e^{\tilde H_{\mathrm{modular},\xi_{\mathrm{alt}}}},
+=e^{-\tilde H_{\Psi,\mathrm{modular},\omega}}\,\tilde Q_2\,e^{\tilde H_{\Psi,\mathrm{modular},\xi_{\mathrm{alt}}}},
 \qquad
 \log\Delta_{\omega,\xi_{\mathrm{alt}}}\big(\tilde Q_2\big)
-=\log\tilde{Ϛ}_\omega\,\tilde Q_2-\tilde Q_2\,\log\tilde{Ϛ}_{\mathrm{alt},\xi}
-=\tilde Q_2\,\tilde H_{\mathrm{modular},\xi_{\mathrm{alt}}}-\tilde H_{\mathrm{modular},\omega}\,\tilde Q_2,
+=\log\tilde{Ϛ}_{\Psi,\omega}\,\tilde Q_2-\tilde Q_2\,\log\tilde{Ϛ}_{\Psi,\mathrm{alt},\xi}
+=\tilde Q_2\,\tilde H_{\Psi,\mathrm{modular},\xi_{\mathrm{alt}}}-\tilde H_{\Psi,\mathrm{modular},\omega}\,\tilde Q_2,
 \qquad
-\tilde H_{\mathrm{modular},\omega}=-\log\tilde{Ϛ}_\omega\in\mathbb{B}_{\Psi},\qquad \tilde H_{\mathrm{modular},\xi_{\mathrm{alt}}}=-\log\tilde{Ϛ}_{\mathrm{alt},\xi}\in\mathbb{B}_{\Psi} .
+\tilde H_{\Psi,\mathrm{modular},\omega}=-\log\tilde{Ϛ}_{\Psi,\omega}\in\mathbb{B}_{\Psi},\qquad \tilde H_{\Psi,\mathrm{modular},\xi_{\mathrm{alt}}}=-\log\tilde{Ϛ}_{\Psi,\mathrm{alt},\xi}\in\mathbb{B}_{\Psi} .
 $$
-Araki's formula evaluated on $\Omega_\omega=\tilde{Ϛ}_\omega^{1/2}$ then returns
+Araki's formula evaluated on $\Omega_\omega=\tilde{Ϛ}_{\Psi,\omega}^{1/2}$ then returns
 $$
 S(\omega\|\xi_{\mathrm{alt}})
-=\mathrm{Tr}\Big[\tilde{Ϛ}_\omega^{1/2}\Big(\log\tilde{Ϛ}_\omega\,\tilde{Ϛ}_\omega^{1/2}-\tilde{Ϛ}_\omega^{1/2}\log\tilde{Ϛ}_{\mathrm{alt},\xi}\Big)\Big]
-=\mathrm{Tr}\big(\tilde{Ϛ}_\omega\log\tilde{Ϛ}_\omega\big)-\mathrm{Tr}\big(\tilde{Ϛ}_\omega\log\tilde{Ϛ}_{\mathrm{alt},\xi}\big),
+=\mathrm{Tr}\Big[\tilde{Ϛ}_{\Psi,\omega}^{1/2}\Big(\log\tilde{Ϛ}_{\Psi,\omega}\,\tilde{Ϛ}_{\Psi,\omega}^{1/2}-\tilde{Ϛ}_{\Psi,\omega}^{1/2}\log\tilde{Ϛ}_{\Psi,\mathrm{alt},\xi}\Big)\Big]
+=\mathrm{Tr}\big(\tilde{Ϛ}_{\Psi,\omega}\log\tilde{Ϛ}_{\Psi,\omega}\big)-\mathrm{Tr}\big(\tilde{Ϛ}_{\Psi,\omega}\log\tilde{Ϛ}_{\Psi,\mathrm{alt},\xi}\big),
 $$
 which is the boxed expression; the two were checked against each other on the generic pair above. The operator is the algebra-level form of the closed expression, and it is the object that survives when the finite-dimensional state is replaced by a state of a local algebra.
 
@@ -221,7 +221,7 @@ None of these facts is derived here; they are standard quantum field theory, and
 
 **Established (theorem, imported).** The Umegaki relative entropy and the properties of positivity, joint convexity, monotonicity and additivity; the Araki relative entropy and the relative modular operator for general von Neumann algebras; the finiteness of the relative entropy of a local excitation of the vacuum; the role of the relative modular operator in the Bisognano–Wichmann theorem. All of this is standard.
 
-**Established (recomputed here).** The states of $\mathbb{B}$ are the Bloch ball $|\vec r|\le1$; the logarithm of a faithful state is $\log\tilde{Ϛ}=\tfrac12\log\frac{1-|\vec r|^2}{4}e_t+i\,\mathrm{artanh}(|\vec r|)\vec u_r$; the entropy of a state is $-\tfrac12\log\frac{1-|\vec r|^2}{4}-|\vec r|\,\mathrm{artanh}|\vec r|$; and the relative entropy of two states is the boxed closed form, verified at twelve decimal places against the matrix computation on generic Bloch vectors and on states with one argument at the centre.
+**Established (recomputed here).** The states of $\mathbb{B}$ are the Bloch ball $|\vec r|\le1$; the logarithm of a faithful state is $\log\tilde{Ϛ}_{\Psi}=\tfrac12\log\frac{1-|\vec r|^2}{4}e_t+i\,\mathrm{artanh}(|\vec r|)\vec u_r$; the entropy of a state is $-\tfrac12\log\frac{1-|\vec r|^2}{4}-|\vec r|\,\mathrm{artanh}|\vec r|$; and the relative entropy of two states is the boxed closed form, verified at twelve decimal places against the matrix computation on generic Bloch vectors and on states with one argument at the centre.
 
 **Interpretation.** That the closed form, the identity of the trace, and the zero-divisor boundary give a biquaternion interpretation of relative entropy in which the algebra's own conjugation supplies the logarithm and the relative modular operator. The algebra houses the interpretation; it does not force it.
 
@@ -231,9 +231,9 @@ None of these facts is derived here; they are standard quantum field theory, and
 
 **1. The relative entropy of a field state.** The biquaternion module carries the one-mode truncation of a field. Is there a preferred modular structure on the module, in the sense of a faithful state of the module algebra, whose relative entropy reproduces the finite field-theoretic answer?
 
-**2. The boundary value.** The relative entropy extends continuously to the pure boundary only when the second state is faithful. Is there a framework interpretation of the divergent case, in which the supports fail to nest, in terms of the zero-divisor cone? The divergent case is the one in which the second state is pure and differs from the first: a pure $\tilde{Ϛ}_2$ has one-dimensional support, which contains the support of $\tilde{Ϛ}_1$ only when $\tilde{Ϛ}_1=\tilde{Ϛ}_2$, and the antipodal pair $\vec r=-\vec s$ on the sphere is its extreme instance.
+**2. The boundary value.** The relative entropy extends continuously to the pure boundary only when the second state is faithful. Is there a framework interpretation of the divergent case, in which the supports fail to nest, in terms of the zero-divisor cone? The divergent case is the one in which the second state is pure and differs from the first: a pure $\tilde{Ϛ}_{\Psi,2}$ has one-dimensional support, which contains the support of $\tilde{Ϛ}_{\Psi,1}$ only when $\tilde{Ϛ}_{\Psi,1}=\tilde{Ϛ}_{\Psi,2}$, and the antipodal pair $\vec r=-\vec s$ on the sphere is its extreme instance.
 
-**3. The cocycle.** The Connes cocycle flow, which governs the relative modular operator, has a finite-dimensional realization as the flow that multiplies by $\tilde{Ϛ}_\omega^{ir'_t}\tilde{Ϛ}_{\xi_{\mathrm{alt}}}^{-ir'_t}$. Whether that flow has an $\mathbb{B}_{\Psi}$-valued generator in the framework, as the modular flow does, is not worked out here.
+**3. The cocycle.** The Connes cocycle flow, which governs the relative modular operator, has a finite-dimensional realization as the flow that multiplies by $\tilde{Ϛ}_{\Psi,\omega}^{ir'_t}\tilde{Ϛ}_{\Psi,\xi_{\mathrm{alt}}}^{-ir'_t}$. Whether that flow has an $\mathbb{B}_{\Psi}$-valued generator in the framework, as the modular flow does, is not worked out here.
 
 **4. The relation to the first law.** The expansion of the relative entropy near coincidence, which is the quantum Fisher information, is the quadratic form whose vanishing controls the first law of entanglement. Whether the framework's closed form makes that law exact, rather than asymptotic, is the subject of the companion article on the modular Hamiltonian.
 
@@ -243,15 +243,15 @@ None of these facts is derived here; they are standard quantum field theory, and
 
 Relative entropy is Umegaki's $S(\rho\|\sigma)=\mathrm{Tr}(\rho\log\rho)-\mathrm{Tr}(\rho\log\sigma)$, extended to general von Neumann algebras by Araki's relative modular operator. It is the basic quantity of the information-theoretic interpretation of quantum theory because it is monotone under every physical process, and in quantum field theory it is the only one of the two entropic quantities that is defined, the local algebras being type III and carrying no density matrix.
 
-The states of the biquaternion algebra are the elements of $\mathbb{B}_{\Psi}$ of the form $\tilde{Ϛ}=\tfrac12(e_t+i\vec r\cdot\mathbf e)$ with $|\vec r|\le1$, and the logarithm of a faithful state is the biquaternion element $\log\tilde{Ϛ}=\tfrac12\log\frac{1-|\vec r|^2}{4}e_t+i\,\mathrm{artanh}(|\vec r|)\vec u_r$. The relative entropy of two biquaternion states is therefore a closed expression in their Bloch vectors,
+The states of the biquaternion algebra are the elements of $\mathbb{B}_{\Psi}$ of the form $\tilde{Ϛ}_{\Psi}=\tfrac12(e_t+i\vec r\cdot\mathbf e)$ with $|\vec r|\le1$, and the logarithm of a faithful state is the biquaternion element $\log\tilde{Ϛ}_{\Psi}=\tfrac12\log\frac{1-|\vec r|^2}{4}e_t+i\,\mathrm{artanh}(|\vec r|)\vec u_r$. The relative entropy of two biquaternion states is therefore a closed expression in their Bloch vectors,
 $$
-S(\tilde{Ϛ}_1\|\tilde{Ϛ}_2)
+S(\tilde{Ϛ}_{\Psi,1}\|\tilde{Ϛ}_{\Psi,2})
 =\tfrac12\log\frac{1-|\vec r|^2}{1-|\vec s|^2}
 +|\vec r|\Big(\mathrm{artanh}|\vec r|-\mathrm{artanh}|\vec s|\,\cos\gamma\Big),
 $$
 verified against the explicit matrix computation on generic superpositions and non-negative throughout the Bloch ball. The quantity is asymmetric, reduces to $-\tfrac12\log(1-|\vec s|^2)$ when the first argument is the trace state, tends to $-\tfrac12\log\frac{1-|\vec s|^2}{4}-\mathrm{artanh}(|\vec s|)\cos\gamma_{rs}$ when the first state becomes pure, and has the Kubo–Mori–Bogoliubov metric as its second-order expansion near coincidence.
 
-The framework-specific feature is the boundary. The logarithm is an element of $\mathbb{B}$ exactly on the faithful states; on the pure boundary the state is a zero divisor and $\log\tilde{Ϛ}$ is not an algebra element, while the relative entropy itself remains finite and continuous. Araki's relative modular operator, whose $(\omega,\omega)$ case is the modular operator of the Tomita–Takesaki companions, is the algebra-level object of which the boxed formula is the finite-dimensional value.
+The framework-specific feature is the boundary. The logarithm is an element of $\mathbb{B}$ exactly on the faithful states; on the pure boundary the state is a zero divisor and $\log\tilde{Ϛ}_{\Psi}$ is not an algebra element, while the relative entropy itself remains finite and continuous. Araki's relative modular operator, whose $(\omega,\omega)$ case is the modular operator of the Tomita–Takesaki companions, is the algebra-level object of which the boxed formula is the finite-dimensional value.
 
 ## Summary of Notation
 
@@ -263,13 +263,13 @@ The framework-specific feature is the boundary. The logarithm is an element of $
 | $\mathbb{B}_{\Psi},\mathbb{B}_{\Phi}$ | Informational (Hermitian) and material (anti-Hermitian) subspaces |
 | $\mathrm{Tr}(\tilde Q_1\tilde Q_2)=2\,\mathrm{Sc}(\tilde Q_1\tilde Q_2)$ | Trace reading of the plain form; $\mathrm{Tr}(e_t)=2$ |
 | $\mathsf{M}_2(\vec e_k)=-i\sigma_k$, $\mathsf{M}_2(i)=iI_2$ | Matrix isomorphism $\mathbb{B}\cong M_2(\mathbb{C})$ |
-| $\tilde{Ϛ}=\tfrac12(e_t+i\vec r\cdot\mathbf e)$ | State of $\mathbb{B}$; Bloch vector $\vec r$ |
+| $\tilde{Ϛ}_{\Psi}=\tfrac12(e_t+i\vec r\cdot\mathbf e)$ | State of $\mathbb{B}$; Bloch vector $\vec r$ |
 | $\lambda_\pm=\tfrac12(1\pm|\vec r|)$ | Eigenvalues of the state |
-| $S(\tilde{Ϛ})=-\tfrac12\log\frac{1-|\vec r|^2}{4}-|\vec r|\,\mathrm{artanh}|\vec r|$ | von Neumann entropy of a biquaternion state |
-| $S(\tilde{Ϛ}_1\|\tilde{Ϛ}_2)$ | Relative entropy; boxed closed form |
+| $S(\tilde{Ϛ}_{\Psi})=-\tfrac12\log\frac{1-|\vec r|^2}{4}-|\vec r|\,\mathrm{artanh}|\vec r|$ | von Neumann entropy of a biquaternion state |
+| $S(\tilde{Ϛ}_{\Psi,1}\|\tilde{Ϛ}_{\Psi,2})$ | Relative entropy; boxed closed form |
 | $\cos\gamma=\vec r\cdot\vec s/(|\vec r||\vec s|)$ | Bloch-vector angle |
 | $\Delta_{\omega,\xi_{\mathrm{alt}}}$ | Araki relative modular operator |
-| $\log\tilde{Ϛ}\in\mathbb{B}_{\Psi}$ | Biquaternion logarithm of a faithful state |
+| $\log\tilde{Ϛ}_{\Psi}\in\mathbb{B}_{\Psi}$ | Biquaternion logarithm of a faithful state |
 | $|0\rangle\langle0|=\tilde\Pi_1$ | Vacuum idempotent (pure state) |
 | $\tfrac12 e_t$ | Trace state (maximally mixed) |
 

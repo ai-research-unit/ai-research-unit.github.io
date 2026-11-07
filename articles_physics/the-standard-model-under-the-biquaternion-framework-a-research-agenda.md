@@ -6,7 +6,7 @@
 
 The starting position is stated at the outset, because the whole agenda depends on it and because it is easy to overstate.
 
-- **The framework has an abelian gauge principle.** The centre of the algebra is $\mathbb{B}_{C} = \mathrm{span}_{\mathbb{R}}\{e_t, ie_t\}$; its $*$-unitary part is $\mathrm{U}(1)$; localizing a central phase forces a connection with the transformation law $\tilde{A}_2 = \tilde{A} - \tilde{\nabla}\Gamma$, a covariant derivative, and a curvature. This is established in *The Gauge Principle in Biquaternionic Form* and is recalled in the next section.
+- **The framework has an abelian gauge principle.** The centre of the algebra is $\mathbb{B}_{C} = \mathrm{span}_{\mathbb{R}}\{e_t, ie_t\}$; its $*$-unitary part is $\mathrm{U}(1)$; localizing a central phase forces a connection with the transformation law $\tilde{A}_{\Phi,2} = \tilde{A}_{\Phi} - \tilde{\nabla}\Gamma$, a covariant derivative, and a curvature. This is established in *The Gauge Principle in Biquaternionic Form* and is recalled in the next section.
 - **The framework has a compact non-abelian gauge algebra inside the material sector.** The material sector decomposes as a Lie algebra, $\mathbb{B}_{\Phi} = \mathbb{R}(ie_t)\oplus\mathrm{SU}(2)$, and on the $\mathrm{SU}(2)$ factor the full non-abelian gauge construction — a connection transforming in the adjoint, a curvature containing the commutator term, the Bianchi identity, and a gauge-invariant Yang–Mills density — is built. This is established in *Non-Abelian Gauge Fields in Biquaternionic Form* and is recalled in the next section.
 - **The framework has not derived the Standard Model's gauge group, its chiral weak-isospin action, its hypercharge, or its scalar sector.** No source in the series derives a colour group or any three-valued internal structure. The $\mathrm{SU}(2)$ that is present acts vector-like on the field and is therefore not weak isospin. No source derives a hypercharge assignment; the word "hypercharge" does not occur in any of the sources this agenda builds on. The scalar and symmetry-breaking sector is not built.
 
@@ -37,14 +37,14 @@ $$
 Because $\lambda$ is central and constant, it passes through the gradient, so the massless biquaternion equation $\tilde{\nabla}\tilde{Ξ}_{\mathrm{sp}} = 0$ is invariant under the global phase $\tilde{Ξ}_{\mathrm{sp}}\mapsto \exp(i\theta)\tilde{Ξ}_{\mathrm{sp}}$. Making the phase local, $\lambda = \exp(\frac{k_m\,i\,ϙ\,\Gamma\,\tilde{Q}}{m\,c})$, forces a connection with the transformation law
 
 $$
-\tilde{A}_2 = \tilde{A} - \tilde{\nabla}\Gamma,
+\tilde{A}_{\Phi,2} = \tilde{A}_{\Phi} - \tilde{\nabla}\Gamma,
 \qquad
-D = \tilde{\nabla} +\frac{k_m\,i\,ϙ}{m\,c}\tilde{A},
+D = \tilde{\nabla} +\frac{k_m\,i\,ϙ}{m\,c}\tilde{A}_{\Phi},
 \qquad
 D_\mu = \partial/\partial R_\mu +\frac{k_m\,i\,ϙ}{m\,c}A_\mu,
 $$
 
-under which $D\tilde{Ξ}_{\mathrm{sp}}$ transforms by the phase factor. The field strength is the vector part of $\tilde{\nabla}^{\natural}\tilde{A}$ and satisfies the curvature identity $[D_\mu,D_\nu] =\frac{k_m\,i\,ϙ}{m\,c}F_{\mu\nu}$. The abelian gauge group is **canonically attached to the algebra**: the only phase that commutes with the whole algebra must lie in the centre, and the centre is one complex dimension, so no choice of representation is made in selecting it.
+under which $D\tilde{Ξ}_{\mathrm{sp}}$ transforms by the phase factor. The field strength is the vector part of $\tilde{\nabla}^{\natural}\tilde{A}_{\Phi}$ and satisfies the curvature identity $[D_\mu,D_\nu] =\frac{k_m\,i\,ϙ}{m\,c}F_{\mu\nu}$. The abelian gauge group is **canonically attached to the algebra**: the only phase that commutes with the whole algebra must lie in the centre, and the centre is one complex dimension, so no choice of representation is made in selecting it.
 
 Two properties of this factor are as important for the agenda as the factor itself. First, the charge $ϙ$ is a **parameter**; the algebra does not fix it. Second, a central element acts as a **scalar** on the algebra: left multiplication by $\lambda = \exp(i\theta)$ multiplies every element by the same factor. A gauge group drawn from the centre therefore assigns every element the same charge — it is **vector-like** and cannot distinguish left from right. This is established in *Chiral Fermions in the Biquaternion Framework*, and it is the reason the abelian factor as it stands cannot be weak hypercharge, which is chiral.
 
@@ -71,7 +71,7 @@ $$
 \mathcal{A}_{2,\mu} = \tilde U\,\mathcal{A}_\mu\,\tilde U^{-1} + \frac{i}{\kappa}\,(\partial/\partial R_\mu \tilde U)\,\tilde U^{-1},
 $$
 
-which reduces to the abelian law $\tilde{A}_2 = \tilde{A} - \tilde{\nabla}\Gamma$ when $\tilde U$ is central. The field strength
+which reduces to the abelian law $\tilde{A}_{\Phi,2} = \tilde{A}_{\Phi} - \tilde{\nabla}\Gamma$ when $\tilde U$ is central. The field strength
 
 $$
 F_{\mu\nu} = \partial/\partial R_\mu \mathcal{A}_\nu - \partial/\partial R_\nu \mathcal{A}_\mu + i\kappa\,[\mathcal{A}_\mu, \mathcal{A}_\nu],
@@ -154,7 +154,7 @@ through which the continuous central phase passes: the vector $\mathrm{U}(1)$ is
 
 **Source.** *The Gauge Principle in Biquaternionic Form*. **Status.** The gauge principle is established; the identification with weak hypercharge is not made and has no route yet.
 
-What is established is a single abelian gauge factor, canonical and vector-like: the $*$-unitary part of the centre, with connection law $\tilde{A}_2 = \tilde{A} - \tilde{\nabla}\Gamma$ and curvature $[D_\mu,D_\nu] =\frac{k_m\,i\,ϙ}{m\,c}F_{\mu\nu}$. What weak hypercharge requires is a factor that (i) carries a definite set of **assignments** — different eigenvalues on different Standard Model multiplets, the pattern that makes $Ϙ = T_3 + Y$ work and that cancels the anomalies — and (ii) acts **chirally**, with independent left and right charges on a single fermion, since the left- and right-handed components of the Standard Model fermions carry different hypercharge.
+What is established is a single abelian gauge factor, canonical and vector-like: the $*$-unitary part of the centre, with connection law $\tilde{A}_{\Phi,2} = \tilde{A}_{\Phi} - \tilde{\nabla}\Gamma$ and curvature $[D_\mu,D_\nu] =\frac{k_m\,i\,ϙ}{m\,c}F_{\mu\nu}$. What weak hypercharge requires is a factor that (i) carries a definite set of **assignments** — different eigenvalues on different Standard Model multiplets, the pattern that makes $Ϙ = T_3 + Y$ work and that cancels the anomalies — and (ii) acts **chirally**, with independent left and right charges on a single fermion, since the left- and right-handed components of the Standard Model fermions carry different hypercharge.
 
 The framework's abelian factor supplies neither. Its action is a scalar multiplication, so it gives every element the same charge; under the alternative real-structure interpretation it would be axial, but still a single one-dimensional charge with no room for independent left and right assignments. And the coupling $ϙ$ is one parameter, not a table. There is no object in the series from which the numbers $1/6$, $-1/2$, $2/3$, and so on could be read off. **An abelian gauge factor is established; weak hypercharge is not derived, and no computation in the series points toward it.** This item is classified **no route yet**.
 
@@ -230,7 +230,7 @@ The table collects the agenda's items and sorts each into the three-way classifi
 
 | Item | Status | Object or computation that would settle it |
 |---|---|---|
-| Abelian gauge principle: centre $\mathbb{B}_{C}$, $*$-unitary $\mathrm{U}(1)$, connection $\tilde{A}_2=\tilde{A}-\tilde{\nabla}\Gamma$, covariant derivative, curvature identity | Established (source 6) | — |
+| Abelian gauge principle: centre $\mathbb{B}_{C}$, $*$-unitary $\mathrm{U}(1)$, connection $\tilde{A}_{\Phi,2}=\tilde{A}_{\Phi}-\tilde{\nabla}\Gamma$, covariant derivative, curvature identity | Established (source 6) | — |
 | Compact algebra in the material sector: $[e_a,e_b]=2\varepsilon_{abc}e_c$, $\mathbb{B}_{\Phi}=\mathbb{R}(ie_t)\oplus\mathrm{SU}(2)=\mathrm{U}(2)$ | Established (source 5) | — |
 | Non-abelian machinery: adjoint connection law, commutator curvature, Bianchi identity, gauge-invariant Yang–Mills density | Established (source 5) | — |
 | Ceiling: compact subalgebra of $\mathbb{B}$ has dimension $\le 4$; every $\mathbb{B}$-module has complex dimension $2k$ | Established | — |
@@ -340,7 +340,7 @@ The dictionary is complex-linear; over $\mathbb{R}$ the products span $\mathrm{C
 
 This article is a research agenda for the Standard Model inside the biquaternion framework. Its finding is that the framework reaches the general machinery of an abelian and a non-abelian gauge theory, on the largest compact algebra the algebra admits, together with an exact chiral structure on its field — and that it stops before the Standard Model, whose gauge group, chiral action, hypercharge, and scalar sector it does not derive.
 
-What is established is recalled: the abelian gauge principle on the centre, with $\mathrm{U}(1)$ canonically attached and the connection law $\tilde{A}_2=\tilde{A}-\tilde{\nabla}\Gamma$; the compact algebra inside the material sector, $\mathbb{B}_{\Phi} = \mathbb{R}(ie_t)\oplus\mathrm{SU}(2)$, with the full non-abelian construction — adjoint connection, commutator curvature, Bianchi identity, gauge-invariant Yang–Mills density; the ceiling, that a compact subalgebra of $\mathbb{B}$ on the present construction has real dimension at most $4$ and every $\mathbb{B}$-module has even complex dimension; and the chiral structure on the field, with the two values of the subscript, the chirality-odd mass bilinear, and the selection rule $ϙ_L=ϙ_R$.
+What is established is recalled: the abelian gauge principle on the centre, with $\mathrm{U}(1)$ canonically attached and the connection law $\tilde{A}_{\Phi,2}=\tilde{A}_{\Phi}-\tilde{\nabla}\Gamma$; the compact algebra inside the material sector, $\mathbb{B}_{\Phi} = \mathbb{R}(ie_t)\oplus\mathrm{SU}(2)$, with the full non-abelian construction — adjoint connection, commutator curvature, Bianchi identity, gauge-invariant Yang–Mills density; the ceiling, that a compact subalgebra of $\mathbb{B}$ on the present construction has real dimension at most $4$ and every $\mathbb{B}$-module has even complex dimension; and the chiral structure on the field, with the two values of the subscript, the chirality-odd mass bilinear, and the selection rule $ϙ_L=ϙ_R$.
 
 What is not established is everything Standard-Model-specific.
 
@@ -367,9 +367,9 @@ The article commits throughout to the agenda's central discipline: no section as
 | $\mathbb{B}_{C} = \mathrm{span}_{\mathbb{R}}\{e_t, ie_t\}$ | Centre of the algebra; source of the abelian gauge group |
 | $\tilde{\nabla} = e_t\partial/\partial R_t+\sum_\mu\,\vec e_\mu\partial/\partial R_\mu$ | Biquaternionic gradient |
 | $\Box = \tilde{\nabla}\tilde{\nabla}^{\natural}$ | d'Alembertian |
-| $\tilde{A} = i\,a'_t\,e_t + \vec A$ | Abelian connection (in $\mathbb{B}_{\Phi}$) |
-| $\tilde{A}_2 = \tilde{A} - \tilde{\nabla}\Gamma$ | Abelian gauge transformation |
-| $D = \tilde{\nabla} +\frac{k_m\,i\,ϙ}{m\,c}\tilde{A}$ | Abelian covariant derivative |
+| $\tilde{A}_{\Phi} = i\,a'_t\,e_t + \vec A$ | Abelian connection (in $\mathbb{B}_{\Phi}$) |
+| $\tilde{A}_{\Phi,2} = \tilde{A}_{\Phi} - \tilde{\nabla}\Gamma$ | Abelian gauge transformation |
+| $D = \tilde{\nabla} +\frac{k_m\,i\,ϙ}{m\,c}\tilde{A}_{\Phi}$ | Abelian covariant derivative |
 | $[e_a,e_b]=2\varepsilon_{abc}e_c$, $T_a=\tfrac12 e_a$ | Commutator and normalized generators of $\mathrm{SU}(2)\subset\mathbb{B}_{\Phi}$ |
 | $\mathbb{B}_{\Phi} = \mathbb{R}(ie_t)\oplus\mathrm{SU}(2)=\mathrm{U}(2)$ | Material-sector Lie-algebra decomposition (dimension $4$) |
 | $\mathcal{A}_\mu\in\mathrm{SU}(2)$, $\kappa=\frac{k_m\,ϙ}{m\,c}$ | Non-abelian connection and coupling |

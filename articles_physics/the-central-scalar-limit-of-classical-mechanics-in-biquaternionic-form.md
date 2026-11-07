@@ -64,7 +64,7 @@ The conditions of the introduction can be stated as a restriction on the algebra
 - a real vector $\vec p(r'_t)$ for the momentum, equal to $md\vec r/dr'_t$;
 - a real vector $\vec F = d\vec p/dr'_t$ for the force;
 - a **central scalar** potential $\tilde{Ξ} = V(|\vec r|)e_t \in \mathbb{B}_{\Psi}$, depending on the position only through the rotation-invariant length $|\vec r| = \sqrt{\langle \vec r\rangle_{\natural}}$;
-- a central scalar energy $\tilde{E} = E e_t$.
+- a central scalar energy $\tilde{E}_{\Psi} = E e_t$.
 
 No element of this list has a nonzero vector part in $\mathbb{B}_{\Psi}$, and none has a noncentral scalar part. The vector part of the configuration is entirely in $\mathbb{B}_{\Phi}$; the scalar data are entirely in the central part of $\mathbb{B}_{\Psi}$.
 

@@ -8,7 +8,7 @@ This article develops the biquaternionic interpretation of both. The square of t
 
 Three boundaries are respected. The Klein–Gordon **path integral** and the scalar propagator belong to the spin-$0$ subcategory and are cited, not re-derived. The **spin-half path integral** and the **fermionic field path integral** are different objects: the former is the non-relativistic spinning path integral and the latter is the quantised-field integral belonging to *Biquaternion Quantum Fields*; neither is the single-particle Dirac path integral treated here. The general apparatus of the d'Alembertian and its Green's functions belongs to *the generalities*.
 
-**The conventions are the series conventions, and they are cited here and not developed.** The algebra, its four units and the central scalar imaginary are those of *Algebra and Element Conventions*, §*The Algebra and Its Basis* and §*The Base and Its Units*: $e_t$ is the unit of the algebra and $i$ is central. The gradient $\tilde{\nabla}$, its quaternion conjugate $\tilde{\nabla}^{\natural}$, the d'Alembertian $\Box$ and the pair operator $\mathbb{D}$ are those of *Operator and Calculus Conventions*, §*The Gradient*. The pair operator is the chiral pair written once, it satisfies $\mathbb{D}^2=\Box$ on the pair, and it is the pair itself and not an array of generators. The coordinates $x_\mu=(x_0,x_1,x_2,x_3)$, the material sector $\mathbb{B}_{\Phi}$ and its interval $-c^2{r'_{t}}^2+r_x^2+r_y^2+r_z^2$, whose one minus is the square of the $i$ in $Q_t=i c r'_t$, are those of *Frame and Metric Conventions*, §*The $\mathbb{B}_{\Phi}$ Frame*, and the four-momentum element $\tilde{P}$ is that of *Algebra and Element Conventions*, §*The Four-Vectors and the Currents*.
+**The conventions are the series conventions, and they are cited here and not developed.** The algebra, its four units and the central scalar imaginary are those of *Algebra and Element Conventions*, §*The Algebra and Its Basis* and §*The Base and Its Units*: $e_t$ is the unit of the algebra and $i$ is central. The gradient $\tilde{\nabla}$, its quaternion conjugate $\tilde{\nabla}^{\natural}$, the d'Alembertian $\Box$ and the pair operator $\mathbb{D}$ are those of *Operator and Calculus Conventions*, §*The Gradient*. The pair operator is the chiral pair written once, it satisfies $\mathbb{D}^2=\Box$ on the pair, and it is the pair itself and not an array of generators. The coordinates $x_\mu=(x_0,x_1,x_2,x_3)$, the material sector $\mathbb{B}_{\Phi}$ and its interval $-c^2{r'_{t}}^2+r_x^2+r_y^2+r_z^2$, whose one minus is the square of the $i$ in $Q_t=i c r'_t$, are those of *Frame and Metric Conventions*, §*The $\mathbb{B}_{\Phi}$ Frame*, and the four-momentum element $\tilde{P}_{\Phi}$ is that of *Algebra and Element Conventions*, §*The Four-Vectors and the Currents*.
 
 **The dynamics is the chiral pair.**
 
@@ -28,10 +28,10 @@ The worldline parameter is $\tau$ and the proper time $T$. The material position
 
 The object the path integral must compute is the Feynman propagator of the pair. Its two components are the amplitudes for the two values of the subscript, and each component is an element of the algebra: no array enters, and the pair is what the algebra's own product acts on.
 
-**The two symbols.** A plane wave of the pair is $\tilde{Ξ}_{\mathrm{sp}}(x) = \tilde{Ξ}_{\mathrm{sp},\mathrm{amp}}\exp(-ip\cdot x)$, with $p\cdot x = p_0x_0 - \vec p\cdot\vec r$ and $p_0 = E/c$ the contraction of the material frame. The momentum element is $\tilde{P}$, and its norm is the mass-shell scalar,
+**The two symbols.** A plane wave of the pair is $\tilde{Ξ}_{\mathrm{sp}}(x) = \tilde{Ξ}_{\mathrm{sp},\mathrm{amp}}\exp(-ip\cdot x)$, with $p\cdot x = p_0x_0 - \vec p\cdot\vec r$ and $p_0 = E/c$ the contraction of the material frame. The momentum element is $\tilde{P}_{\Phi}$, and its norm is the mass-shell scalar,
 
 $$
-\langle\tilde{P}\rangle_{\natural} = \tilde{P}\tilde{P}^{\natural} = -p^2,
+\langle\tilde{P}_{\Phi}\rangle_{\natural} = \tilde{P}_{\Phi}\tilde{P}_{\Phi}^{\natural} = -p^2,
 \qquad
 p^2 = p_0^2 - p_1^2 - p_2^2 - p_3^2 .
 $$
@@ -39,15 +39,15 @@ $$
 The gradient and its conjugate act on the plane wave by left multiplication by the two symbols,
 
 $$
-\tilde{\nabla}\,e^{-ip\cdot x} = i\tilde{P}\,e^{-ip\cdot x},
+\tilde{\nabla}\,e^{-ip\cdot x} = i\tilde{P}_{\Phi}\,e^{-ip\cdot x},
 \qquad
-\tilde{\nabla}^{\natural}\,e^{-ip\cdot x} = i\tilde{P}^{\natural}\,e^{-ip\cdot x},
+\tilde{\nabla}^{\natural}\,e^{-ip\cdot x} = i\tilde{P}_{\Phi}^{\natural}\,e^{-ip\cdot x},
 $$
 
 a derived form: the time derivative of the phase is $-ip_0$ and the spatial derivative $+ip_k$, and on the material sector the time derivative of the gradient is read with $\partial/\partial R_t = -i\,\partial/\partial x_0$ (*Operator and Calculus Conventions*, §*The Gradient*). The product of the two symbols is the symbol of the d'Alembertian,
 
 $$
-i\tilde{P}\,i\tilde{P}^{\natural} = -\langle\tilde{P}\rangle_{\natural} = p^2 .
+i\tilde{P}_{\Phi}\,i\tilde{P}_{\Phi}^{\natural} = -\langle\tilde{P}_{\Phi}\rangle_{\natural} = p^2 .
 $$
 
 The sign bookkeeping is the whole of that line. The two factors of $i$ multiply to $-1$ and the norm is $-p^2$, so the product of the two symbols is the mass-shell scalar itself. Either order gives the same product, because the norm of an element is central: the sign with which the momentum is contracted is a labelling convention and not something the square can see.
@@ -55,30 +55,30 @@ The sign bookkeeping is the whole of that line. The two factors of $i$ multiply 
 **The pair on a plane wave.** Substituting the symbols into the two lines gives
 
 $$
-i\tilde{P}\,\tilde{Ξ}_{\mathrm{sp},\mathrm{amp},R} = k_m\tilde{Ξ}_{\mathrm{sp},\mathrm{amp},L},
+i\tilde{P}_{\Phi}\,\tilde{Ξ}_{\mathrm{sp},\mathrm{amp},R} = k_m\tilde{Ξ}_{\mathrm{sp},\mathrm{amp},L},
 \qquad
-i\tilde{P}^{\natural}\,\tilde{Ξ}_{\mathrm{sp},\mathrm{amp},L} = k_m\tilde{Ξ}_{\mathrm{sp},\mathrm{amp},R} ,
+i\tilde{P}_{\Phi}^{\natural}\,\tilde{Ξ}_{\mathrm{sp},\mathrm{amp},L} = k_m\tilde{Ξ}_{\mathrm{sp},\mathrm{amp},R} ,
 $$
 
-and eliminating one part returns the mass shell, $p^2=m^{2}\,c^{2}$, since $\tilde{P}^{\natural}\tilde{P} = \langle\tilde{P}\rangle_{\natural}$.
+and eliminating one part returns the mass shell, $p^2=m^{2}\,c^{2}$, since $\tilde{P}_{\Phi}^{\natural}\tilde{P}_{\Phi} = \langle\tilde{P}_{\Phi}\rangle_{\natural}$.
 
 **The propagator.** The Green kernel of the pair is the inverse of $\mathbb{D}-k_m$, and on a plane wave its two components are
 
 $$
-\mathcal S_L = \frac{i\,k_m - \tilde{P}}{p^2 - k_m^{2}},
+\mathcal S_L = \frac{i\,k_m - \tilde{P}_{\Phi}}{p^2 - k_m^{2}},
 \qquad
-\mathcal S_R = \frac{i\,k_m - \tilde{P}^{\natural}}{p^2 - k_m^{2}} .
+\mathcal S_R = \frac{i\,k_m - \tilde{P}_{\Phi}^{\natural}}{p^2 - k_m^{2}} .
 $$
 
 The numerator of the $L$ component is the momentum element and the numerator of the $R$ component its conjugate; that assignment is the one that satisfies both lines, since
 
 $$
-i\tilde{P}\,\mathcal S_R - k_m\mathcal S_L = i,
+i\tilde{P}_{\Phi}\,\mathcal S_R - k_m\mathcal S_L = i,
 \qquad
-i\tilde{P}^{\natural}\,\mathcal S_L - k_m\mathcal S_R = i .
+i\tilde{P}_{\Phi}^{\natural}\,\mathcal S_L - k_m\mathcal S_R = i .
 $$
 
-Two factors of $i$ do different work and neither is redundant. The $i$ of the numerator is the normalisation of the Green's function, fixed by the right-hand side. The $i$ inside each symbol fixes the sign of the squared operator: the symbols are $i\tilde{P}$ and $i\tilde{P}^{\natural}$, their product is $p^2$, and without the two factors of $i$ the product would be the norm $-p^2$ and the denominator would be the negative of the mass-shell scalar.
+Two factors of $i$ do different work and neither is redundant. The $i$ of the numerator is the normalisation of the Green's function, fixed by the right-hand side. The $i$ inside each symbol fixes the sign of the squared operator: the symbols are $i\tilde{P}_{\Phi}$ and $i\tilde{P}_{\Phi}^{\natural}$, their product is $p^2$, and without the two factors of $i$ the product would be the norm $-p^2$ and the denominator would be the negative of the mass-shell scalar.
 
 The propagator satisfies
 
@@ -92,7 +92,7 @@ $$
 \mathbb{D}^2 = \Box ,
 $$
 
-the composition of two left multiplications by the two gradients, whose product is central (*Operator and Calculus Conventions*, §*The Gradient*). In symbols that is the identity $i\tilde{P}\,i\tilde{P}^{\natural} = p^2$; the operator is $\Box=\sum_\mu\partial^2/\partial R_\mu^2$, and on the material reading, $Q_t=i c r'_t$ and $Q_k=r_k$, it is $\Delta - \partial^2/\partial x_0^2$, with $\Delta$ the Laplacian in the three real spatial coordinates. The square is therefore the series' own scalar operator and not a second one, and that is what makes the first-order operator a square root.
+the composition of two left multiplications by the two gradients, whose product is central (*Operator and Calculus Conventions*, §*The Gradient*). In symbols that is the identity $i\tilde{P}_{\Phi}\,i\tilde{P}_{\Phi}^{\natural} = p^2$; the operator is $\Box=\sum_\mu\partial^2/\partial R_\mu^2$, and on the material reading, $Q_t=i c r'_t$ and $Q_k=r_k$, it is $\Delta - \partial^2/\partial x_0^2$, with $\Delta$ the Laplacian in the three real spatial coordinates. The square is therefore the series' own scalar operator and not a second one, and that is what makes the first-order operator a square root.
 
 This is standard relativistic quantum physics (see the Further Reading); the companion article *The Feynman Propagator in Biquaternionic Form* treats the same object in the biquaternion framework. Two structural facts are needed here.
 
@@ -235,11 +235,11 @@ $$
 and the odd kinetic term is unchanged. The coupling is through the pair of two units, contracted with the field strength. The six generators are written once, the three of a time index and a spatial one and the three of two spatial indices:
 
 $$
-\tilde\Sigma_{0k} = i\vec e_k,
+\tilde\Sigma_{\Psi,0k} = i\vec e_k,
 \qquad
-\tilde\Sigma_{jk} = \vec e_j\vec e_k,
+\tilde\Sigma_{\Psi,jk} = \vec e_j\vec e_k,
 \qquad
-\tilde\Sigma_{\nu\mu} = -\tilde\Sigma_{\mu\nu} .
+\tilde\Sigma_{\Psi,\nu\mu} = -\tilde\Sigma_{\Psi,\mu\nu} .
 $$
 
 **The six generators are the two labels of the Lorentz action.** On the field they act by left multiplication, and the six split by the index: with $\mu=t$ the element $i\vec e_k$ is a boost generator and lies in $\mathbb{B}_{\Psi}$, and with both indices spatial the element $\vec e_j\vec e_k$ is a rotation generator and lies in the real quaternion sector. The two families are the two labels of *Algebra and Element Conventions*, §*The Remarkable Subspaces of Biquaternions*, so a boost and a rotation are read on the same line with no second structure.
@@ -249,13 +249,13 @@ $$
 **The weight is the path-ordered exponential of an element.** The path integral over the odd variables produces the path-ordered exponential of the contraction:
 
 $$
-\boxed{\;Ξ[x] = \mathcal{P}\exp\left(-\frac{i}{2}\int_0^T d\tau\;\sum_{\mu\neq\nu}\tilde\Sigma_{\mu\nu}F_{\mu\nu}(x(\tau))\right)\;}
+\boxed{\;Ξ[x] = \mathcal{P}\exp\left(-\frac{i}{2}\int_0^T d\tau\;\sum_{\mu\neq\nu}\tilde\Sigma_{\Psi,\mu\nu}F_{\mu\nu}(x(\tau))\right)\;}
 $$
 
 for the open worldline that computes the propagator, and for the worldline closed into a loop it is the traced weight
 
 $$
-Ξ_{\mathrm{loop}}[x] = \mathrm{Tr}\,\mathcal{P}\exp\left(-\frac{i}{2}\int_0^T d\tau\;\sum_{\mu\neq\nu}\tilde\Sigma_{\mu\nu}F_{\mu\nu}(x(\tau))\right).
+Ξ_{\mathrm{loop}}[x] = \mathrm{Tr}\,\mathcal{P}\exp\left(-\frac{i}{2}\int_0^T d\tau\;\sum_{\mu\neq\nu}\tilde\Sigma_{\Psi,\mu\nu}F_{\mu\nu}(x(\tau))\right).
 $$
 
 Closing the worldline into a loop turns the weight into a trace, and that is the antiperiodic case of the odd integral above: the fermionic variables are antiperiodic around the circle, as every fermionic trace requires. The contractions pair the electric components with the boost generators and the magnetic components with the rotation generators, so the exponent carries both labels at once.
@@ -448,7 +448,7 @@ so that the four values are $-4I_4$, $+2\gamma_\alpha$, $0$ and $-2\gamma_\alpha
 
 The Dirac path integral is the sum over worldlines that computes the propagator $\mathcal S$, the pair of element-valued kernels satisfying $\left(\mathbb{D} - k_m\right)\mathcal S = i\delta^{(4)}$ with $k_m=mc/\hbar$. Because the Dirac operator is first order, the path integral is organised in one of two standard ways. In the **proper-time** way, the scalar Klein–Gordon kernel is written as a worldline sum over material curves in $\mathbb{B}_{\Phi}$ with central phase $S_0$, and the Dirac propagator is obtained by applying the conjugate first-order operator: $\mathcal S = \left(\mathbb{D} + k_m\right)\Delta_F$, the identity following from $\mathbb{D}^2 = \Box$. In the **spinning-worldline** way, an odd Grassmann variable $\tilde{Ξ}_{\mathrm{sp},\mu}$ is added at each point with kinetic term $\frac{i}{2}\sum_\mu\tilde{Ξ}_{\mathrm{sp},\mu}\frac{d\tilde{Ξ}_{\mathrm{sp},\mu}}{d\tau}$; a pair of odd variables is an element of the algebra with $\tilde{Ξ}_{\mathrm{sp},\mu}\tilde{Ξ}_{\mathrm{sp},\nu} + \tilde{Ξ}_{\mathrm{sp},\nu}\tilde{Ξ}_{\mathrm{sp},\mu} = -\frac12\varepsilon_\mu\delta_{\mu\nu}e_t$; the path integral over $\tilde{Ξ}_{\mathrm{sp}}$ is the algebra-valued spin factor $Ξ[x]$; and the full worldline integral reproduces the propagator (Berezin–Marinov, Brink–Di Vecchia–Howe).
 
-In the biquaternion framework, a single odd variable is not an element of the algebra and a pair is, because every product of two units is a unit up to sign; the spin factor is the path-ordered product of those elements, and squaring the first-order operator returns the central Klein–Gordon operator. In momentum space the two components of the propagator are $\mathcal S_L = (i\,k_m-\tilde{P})/(p^2-k_m^{2})$ and $\mathcal S_R = (i\,k_m-\tilde{P}^{\natural})/(p^2-k_m^{2})$, and the identity $\left(\mathbb{D}-k_m\right)\left(\mathbb{D}+k_m\right) = \mathbb{D}^2-k_m^{2}$ is the whole of the square. The scalar path integral of the companion subcategory is the kernel that the first-order factor acts on, a consequence of this identity rather than an independent construction. Feynman's checkerboard is the discrete realisation of the same structure in 1+1 dimensions: the two directions are the two values of the subscript, the corners carry the weight $i\epsilon\,k_m$ and are the off-diagonal mass insertions, and the continuum limit is the two-dimensional propagator.
+In the biquaternion framework, a single odd variable is not an element of the algebra and a pair is, because every product of two units is a unit up to sign; the spin factor is the path-ordered product of those elements, and squaring the first-order operator returns the central Klein–Gordon operator. In momentum space the two components of the propagator are $\mathcal S_L = (i\,k_m-\tilde{P}_{\Phi})/(p^2-k_m^{2})$ and $\mathcal S_R = (i\,k_m-\tilde{P}_{\Phi}^{\natural})/(p^2-k_m^{2})$, and the identity $\left(\mathbb{D}-k_m\right)\left(\mathbb{D}+k_m\right) = \mathbb{D}^2-k_m^{2}$ is the whole of the square. The scalar path integral of the companion subcategory is the kernel that the first-order factor acts on, a consequence of this identity rather than an independent construction. Feynman's checkerboard is the discrete realisation of the same structure in 1+1 dimensions: the two directions are the two values of the subscript, the corners carry the weight $i\epsilon\,k_m$ and are the off-diagonal mass insertions, and the continuum limit is the two-dimensional propagator.
 
 ## Summary of Notation
 
@@ -463,9 +463,9 @@ In the biquaternion framework, a single odd variable is not an element of the al
 | $\delta_{\mu\nu}=(1,1,1,1)$ | The unit metric on the four slots, the one metric of the series; the interval is $\sum_\mu Q_\mu^2$ |
 | $\varepsilon=(1,-1,-1,-1)$ | Plain weight, the sign of each squared unit: positive on the time slot, negative on the three spatial ones |
 | $x_\mu$ | Real coordinates of the material sector, $x_0 = c r'_{t}$ |
-| $\tilde{P} = ip_0e_t+\vec p$ | Four-momentum element, $\langle\tilde{P}\rangle_{\natural} = \tilde{P}\tilde{P}^{\natural} = -p^2$ |
+| $\tilde{P}_{\Phi} = ip_0e_t+\vec p$ | Four-momentum element, $\langle\tilde{P}_{\Phi}\rangle_{\natural} = \tilde{P}_{\Phi}\tilde{P}_{\Phi}^{\natural} = -p^2$ |
 | $p^2 = p_0^2-p_1^2-p_2^2-p_3^2$ | Mass-shell scalar of the momentum, with $p_0 = E/c$ |
-| $i\tilde{P}$, $i\tilde{P}^{\natural}$ | Symbols of $\tilde{\nabla}$ and $\tilde{\nabla}^{\natural}$ on a plane wave |
+| $i\tilde{P}_{\Phi}$, $i\tilde{P}_{\Phi}^{\natural}$ | Symbols of $\tilde{\nabla}$ and $\tilde{\nabla}^{\natural}$ on a plane wave |
 | $1/k_m$ | The mass length, $\hbar/(mc)$; its reciprocal $k_m=mc/\hbar$ is the mass parameter |
 | $\tilde{Ξ}_{\mathrm{sp}}$, $\tilde{Ξ}_{\mathrm{sp},L}$, $\tilde{Ξ}_{\mathrm{sp},R}$ | The field and its two parts, one per value of the subscript |
 | $\mathcal S$, $\mathcal S_L$, $\mathcal S_R$ | Dirac propagator and its two components, $\left(\mathbb{D}-k_m\right)\mathcal S = i\delta^{(4)}$ |
@@ -477,7 +477,7 @@ In the biquaternion framework, a single odd variable is not an element of the al
 | $\tilde{Ξ}_{\mathrm{sp},\mu}(\tau)$ | Odd (Grassmann) worldline variable; a single one is not an element of the algebra |
 | $\tilde{Ξ}_{\mathrm{sp},\mu}\tilde{Ξ}_{\mathrm{sp},\nu}+\tilde{Ξ}_{\mathrm{sp},\nu}\tilde{Ξ}_{\mathrm{sp},\mu} = -\tfrac12\varepsilon_\mu\delta_{\mu\nu}e_t$ | The pair of odd variables, an element of the algebra |
 | $Ξ[x]$ | Spin factor, the algebra-valued path-ordered weight |
-| $\tilde\Sigma_{0k}=i\vec e_k$, $\tilde\Sigma_{jk}=\vec e_j\vec e_k$ | The six Lorentz generators, boosts in $\mathbb{B}_{\Psi}$ and rotations in the real quaternion sector |
+| $\tilde\Sigma_{\Psi,0k}=i\vec e_k$, $\tilde\Sigma_{\Psi,jk}=\vec e_j\vec e_k$ | The six Lorentz generators, boosts in $\mathbb{B}_{\Psi}$ and rotations in the real quaternion sector |
 | $G_{\mathrm{ctp},++}$, $G_{\mathrm{ctp},+-}$, $G_{\mathrm{ctp},-+}$, $G_{\mathrm{ctp},--}$ | Checkerboard propagator amplitudes |
 | $i\epsilon\,k_m$ per corner | Checkerboard corner weight |
 | $A_+$, $A_-$ | Checkerboard amplitudes by direction of motion |

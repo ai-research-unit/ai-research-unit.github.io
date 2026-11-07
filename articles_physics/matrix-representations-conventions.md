@@ -32,15 +32,15 @@ The article assumes the base of *Algebra and Element Conventions*, the products 
 
 **Two kinds of matrix model read the algebra.** The **isomorphism** $\mathsf{M}_2:\mathbb{B}\to M_2(\mathbb{C})$ reads the element itself as a $2\times2$ complex matrix, of the algebra's own size. The **regular representation** reads multiplication as a linear map on the algebra taken as a complex vector space; its target is $\mathrm{End}_{\mathbb{C}}(\mathbb{B})=M_4(\mathbb{C})$, and its image is a four-dimensional subspace $\mathbb{B}_L$ of that ambient algebra, not the ambient algebra. The two are different representations, not two sizes of one, and only $\mathsf{M}_2$ is an isomorphism of the algebra onto matrices of its own size.
 
-**The matrices are the matrices of operators.** An array of this article is the matrix of a $\mathbb{C}$-linear operator of $\mathbb{B}$ read in a frame; the operator is the object, and the array is one display of it. The two elementary operators are the multiplications $L_{\tilde Q}$ and $R_{\tilde P}$ of *Operator and Calculus Conventions*, and their product is the **two-sided operator** of *Two-Sided Operators on the Biquaternion Algebra*,
+**The matrices are the matrices of operators.** An array of this article is the matrix of a $\mathbb{C}$-linear operator of $\mathbb{B}$ read in a frame; the operator is the object, and the array is one display of it. The two elementary operators are the multiplications $L_{\tilde Q}$ and $R_{\tilde P}_{\Phi}$ of *Operator and Calculus Conventions*, and their product is the **two-sided operator** of *Two-Sided Operators on the Biquaternion Algebra*,
 $$
-L_{\tilde Q}R_{\tilde P}:\mathbb{B}\longrightarrow\mathbb{B},
+L_{\tilde Q}R_{\tilde P}_{\Phi}:\mathbb{B}\longrightarrow\mathbb{B},
 \qquad
-L_{\tilde Q}R_{\tilde P}(X)=\tilde Q\,X\,\tilde P,
+L_{\tilde Q}R_{\tilde P}_{\Phi}(X)=\tilde Q\,X\,\tilde P_{\Phi},
 $$
 whose matrix in a frame is the product of the two regular matrices of that frame,
 $$
-\mathsf{M}_{4L}(\tilde Q)\,\mathsf{M}_{4R}(\tilde P).
+\mathsf{M}_{4L}(\tilde Q)\,\mathsf{M}_{4R}(\tilde P_{\Phi}).
 $$
 Both families and their products are written here because the object displayed is an operator of that family, and the matrix is what a computation multiplies.
 
@@ -48,9 +48,9 @@ Both families and their products are written here because the object displayed i
 
 **The coefficients of a two-sided operator are an outer product.** Expanding in the cells,
 $$
-L_{\tilde Q}R_{\tilde P}=\sum_{\mu,\nu}Q_\mu P_\nu\,L_{e_\mu}R_{e_\nu},
+L_{\tilde Q}R_{\tilde P}_{\Phi}=\sum_{\mu,\nu}Q_\mu P_\nu\,L_{e_\mu}R_{e_\nu},
 \qquad
-c\bigl(L_{\tilde Q}R_{\tilde P}\bigr)=QP^{\mathsf T},
+c\bigl(L_{\tilde Q}R_{\tilde P}_{\Phi}\bigr)=QP^{\mathsf T},
 $$
 so the coefficient array $c(T)$ of the operator, in the basis of the sixteen cells, has rank one and its length is $\ell(T)=\operatorname{rank}c(T)=1$. A general operator has $1\le\ell\le4$; a sum of two products is one product exactly when the two outer products add to a rank-one array; and the linear space of the sixteen coefficients is the enveloping algebra $\mathbb{B}\otimes_{\mathbb{C}}\mathbb{B}_{\mathrm{opp}}$, the cell $L_{e_\mu}R_{e_\nu}$ being the image of $e_\mu\otimes e_{\mathrm{opp},\nu}$.
 
@@ -816,7 +816,7 @@ $$
 $$
 The identity uses $\operatorname{Tr}(\tilde Q)=2\,\mathrm{Sc}(\tilde Q)$, which is the trace formula of §*The Isomorphism*. Both were checked on a general element with complex coefficients.
 
-**A matrix frame is a coordinate, not an object.** The Dirac, Weyl and Majorana matrices are three bases of the same algebra, related by $\mathsf X\,(iL_{e_\mu}R_{\vec e_{\nu(\mu)}})\,\mathsf X^{-1}$ with $\mathsf X$ invertible. A change of frame is a change of basis, and the normal forms are those of §*The Operator $L_{\tilde Q}R_{\tilde P}$* in *Two-Sided Operators on the Biquaternion Algebra*. No statement of the corpus depends on the basis written.
+**A matrix frame is a coordinate, not an object.** The Dirac, Weyl and Majorana matrices are three bases of the same algebra, related by $\mathsf X\,(iL_{e_\mu}R_{\vec e_{\nu(\mu)}})\,\mathsf X^{-1}$ with $\mathsf X$ invertible. A change of frame is a change of basis, and the normal forms are those of §*The Operator $L_{\tilde Q}R_{\tilde P}_{\Phi}$* in *Two-Sided Operators on the Biquaternion Algebra*. No statement of the corpus depends on the basis written.
 
 **The presentation is the stronger one for the corpus's purpose.** Four things are carried by the algebra and not by a chosen matrix frame. The state is an element of $\mathbb{B}$, and the left regular module is the Dirac spinor space, so no column and no minimal left ideal has to be chosen. The pairing $\operatorname{Tr}(\tilde Q_1\tilde Q_2^{*})$ and the three involutions are fixed by the algebra, whereas the Dirac adjoint needs a chosen time generator. The two real sectors $\mathbb{B}_{\Psi}$ and $\mathbb{B}_{\Phi}$ and the $i c r'_t$ metric are part of the data. The frame is internal: it is a set of cells, not an array of matrices carried from outside. The Clifford algebra is recovered from these data; the data are not recovered from the algebra.
 
@@ -1096,7 +1096,7 @@ Its eight unit matrices are real signed permutations, its stitch is $R_{\mathrm{
 | $\mathsf S$ | The exchange of $\vec\Upsilon_+$ and $\vec\Upsilon_-$ fixing $\tilde\Pi_\pm$; the swap of the second and third Peirce coordinates, $\operatorname{diag}(1,1,-1,1)$ in the coefficient basis |
 | $L_{\mathrm{axf},e_\mu}R_{\mathrm{axf},e_\nu}$, $L_{\mathrm{pau},e_\mu}R_{\mathrm{pau},e_\nu}$ | The sixteen cells in the two frames; their complex span is $M_4(\mathbb{C})\cong\mathrm{Cl}_{1,3}(\mathbb{C})$ |
 | $e_\mu[\,]e_\nu$, $L_{e_\mu}R_{e_\nu}$ | The basis two-sided operator $X\mapsto e_\mu Xe_\nu$ and its matrix, the cell |
-| $c(T)$, $\ell(T)=\operatorname{rank}c(T)$ | The coefficient array of an operator $T$ in the basis of the sixteen cells and its length; $c(L_{\tilde Q}R_{\tilde P})=QP^{\mathsf T}$ |
+| $c(T)$, $\ell(T)=\operatorname{rank}c(T)$ | The coefficient array of an operator $T$ in the basis of the sixteen cells and its length; $c(L_{\tilde Q}R_{\tilde P}_{\Phi})=QP^{\mathsf T}$ |
 | $C_{\Pi}$ | The change between the two displays, $L_{\mathrm{axf}}=C_{\Pi}L_{\mathrm{pau}}C_{\Pi}^{-1}$; $\det C_{\Pi}=-\tfrac14$, $C_{\Pi}^{-1}=2C_{\Pi}^{\dagger}$ |
 | $\tilde\Pi_\pm$, $\vec\Upsilon_\pm$ | The standard pair and its two mixed units, which fix the Peirce frame |
 | $iL_{\mathrm{axf},e_t}R_{\mathrm{axf},\vec e_x}$, $iL_{\mathrm{axf},\vec e_x}R_{\mathrm{axf},\vec e_y}$, $iL_{\mathrm{axf},\vec e_y}R_{\mathrm{axf},\vec e_y}$, $iL_{\mathrm{axf},\vec e_z}R_{\mathrm{axf},\vec e_y}$, $-iL_{\mathrm{axf},e_t}R_{\mathrm{axf},\vec e_z}$ | The five frame cells, timelike, three spatial, chirality; the gammas in the axis-free spelling |

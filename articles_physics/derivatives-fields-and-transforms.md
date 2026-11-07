@@ -192,7 +192,7 @@ and is positive definite exactly for the **degenerate** roots $\pm i$ and $\pm\v
 
 ## Physical Interpretations
 
-- **The derivative is the one-sided product.** Differentiation is multiplication of the field by the gradient on one side: $\tilde\nabla\tilde F$ holds the divergence, the gradient and the curl of $\tilde F$ in one biquaternion; the scalar part of the symmetric half is the plain form, and the antisymmetric half is the curl. For the field strength, $\tilde\nabla\tilde F=-g\tilde J$ is the Maxwell equation, with $g$ the coupling of the cited article. Boundary: the equation is a restatement of the cited Maxwell equation, not a derivation; the interpretation supplies no constitutive law, no dynamics and no prediction.
+- **The derivative is the one-sided product.** Differentiation is multiplication of the field by the gradient on one side: $\tilde\nabla\tilde F$ holds the divergence, the gradient and the curl of $\tilde F$ in one biquaternion; the scalar part of the symmetric half is the plain form, and the antisymmetric half is the curl. For the field strength, $\tilde\nabla\tilde F=-g\tilde J_{\Phi}$ is the Maxwell equation, with $g$ the coupling of the cited article. Boundary: the equation is a restatement of the cited Maxwell equation, not a derivation; the interpretation supplies no constitutive law, no dynamics and no prediction.
 
 - **The Hermitian form on two gradients is the kinetic density.** For a scalar field $\tilde{Ξ}=Ξ e_t$,
 

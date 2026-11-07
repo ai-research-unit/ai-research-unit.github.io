@@ -43,7 +43,7 @@ $$
 with $\tilde u_{\mathrm r}$ the spatial rotation and $B_{\mathrm{right}}$ the right polar boost factor,
 $$
 B_{\mathrm{right}}=\sqrt{\tilde U_{\mathrm{lor}}{}^{*}\tilde U_{\mathrm{lor}}}
-=\tilde u_{\mathrm r}^{-1}\tilde U_{\mathrm b}\tilde u_{\mathrm r}\neq\tilde U_{\mathrm b}.
+=\tilde u_{\mathrm r}^{-1}\tilde U_{\Psi,\mathrm b}\tilde u_{\mathrm r}\neq\tilde U_{\Psi,\mathrm b}.
 $$
 The two words are the left and the right polar decompositions of the same rotor. They share the rotation factor and differ in the boost: the rapidity magnitude is the same, the axis is $\tilde u_{\mathrm r}^{-1}\vec u\,\tilde u_{\mathrm r}$. Only the rotation factor and the Wigner angle are independent of the word. A **pure boost** of rapidity $\theta_{\mathrm{rpd}}$ along the unit real vector $\vec u$ is
 
@@ -118,7 +118,7 @@ $$
 B_{\mathrm{right}} = (\tilde U_{\mathrm{lor}}{}^{*}\tilde U_{\mathrm{lor}})^{1/2},
 $$
 
-using $\tilde u_{\mathrm r}^{*}\tilde u_{\mathrm r} = e_t$. The other ordering gives $\tilde U_{\mathrm{lor}}\tilde U_{\mathrm{lor}}{}^{*} = \tilde u_{\mathrm r}B_{\mathrm{right}}^2\tilde u_{\mathrm r}^{-1}$, whose square root is the corpus boost factor $\tilde U_{\mathrm b}=\tilde u_{\mathrm r}B_{\mathrm{right}}\tilde u_{\mathrm r}^{-1}$. It is a different boost whenever the rotation axis is not parallel to the boost axis, and it is the factor of the word $\tilde U_{\mathrm{lor}}=\tilde U_{\mathrm b}\tilde u_{\mathrm r}$, not of the word used here. With $\tilde u_{\mathrm r} = \tilde U_{\mathrm{lor}}B_{\mathrm{right}}^{-1}$ the factor $\tilde u_{\mathrm r}$ was $*$-unitary and lay in $\mathbb{B}_{H}$, the factor $B_{\mathrm{right}}$ was Hermitian positive with $\langle B_{\mathrm{right}}\rangle_{\natural}=e_t$, and the reconstruction $\tilde u_{\mathrm r}B_{\mathrm{right}}$ reproduced $\tilde U_{\mathrm{lor}}$ to machine precision. The eigenvalues of $B_{\mathrm{right}}$ were real and positive, as required for the positive square root.
+using $\tilde u_{\mathrm r}^{*}\tilde u_{\mathrm r} = e_t$. The other ordering gives $\tilde U_{\mathrm{lor}}\tilde U_{\mathrm{lor}}{}^{*} = \tilde u_{\mathrm r}B_{\mathrm{right}}^2\tilde u_{\mathrm r}^{-1}$, whose square root is the corpus boost factor $\tilde U_{\Psi,\mathrm b}=\tilde u_{\mathrm r}B_{\mathrm{right}}\tilde u_{\mathrm r}^{-1}$. It is a different boost whenever the rotation axis is not parallel to the boost axis, and it is the factor of the word $\tilde U_{\mathrm{lor}}=\tilde U_{\Psi,\mathrm b}\tilde u_{\mathrm r}$, not of the word used here. With $\tilde u_{\mathrm r} = \tilde U_{\mathrm{lor}}B_{\mathrm{right}}^{-1}$ the factor $\tilde u_{\mathrm r}$ was $*$-unitary and lay in $\mathbb{B}_{H}$, the factor $B_{\mathrm{right}}$ was Hermitian positive with $\langle B_{\mathrm{right}}\rangle_{\natural}=e_t$, and the reconstruction $\tilde u_{\mathrm r}B_{\mathrm{right}}$ reproduced $\tilde U_{\mathrm{lor}}$ to machine precision. The eigenvalues of $B_{\mathrm{right}}$ were real and positive, as required for the positive square root.
 
 ## The Two-Sheeted Cover
 
@@ -211,7 +211,7 @@ $$
 \mathcal{B}\cong SL(2,\mathbb{C})/SU(2)\cong\mathbb{H}^3,
 $$
 
-hyperbolic three-space: the coset of the covering group by its maximal compact subgroup. The rotation group acts on it by conjugation, $\tilde U_{\mathrm b}\mapsto\tilde u_{\mathrm r}\tilde U_{\mathrm b}\tilde u_{\mathrm r}^{*}$, and this action is transitive on directions. The same conjugation carries $B_{\mathrm{right}}$ to $\tilde U_{\mathrm b}$. Hyperbolic three-space is simply connected and contractible; the boost manifold inherits both properties.
+hyperbolic three-space: the coset of the covering group by its maximal compact subgroup. The rotation group acts on it by conjugation, $\tilde U_{\Psi,\mathrm b}\mapsto\tilde u_{\mathrm r}\tilde U_{\Psi,\mathrm b}\tilde u_{\mathrm r}^{*}$, and this action is transitive on directions. The same conjugation carries $B_{\mathrm{right}}$ to $\tilde U_{\Psi,\mathrm b}$. Hyperbolic three-space is simply connected and contractible; the boost manifold inherits both properties.
 
 **The topology lives in the rotations.** The polar decomposition and the coset description combine into the fiber bundle
 
@@ -241,7 +241,7 @@ $$
 B(\theta_{\mathrm{rpd},1},\vec u_x)\,B(\theta_{\mathrm{rpd},2},\vec u_y) = \tilde u_{\mathrm r}(\theta_{\mathrm{wgn}},\vec u_{\mathrm r2})\,B_{\mathrm{right}}(\theta_{\mathrm{rpd},\mathrm{eff}},\vec u_{\mathrm{eff}}),
 $$
 
-where $\tilde u_{\mathrm r}$ is the rotation factor and $B_{\mathrm{right}}$ is the right polar boost, the rotation-conjugate of the corpus boost $\tilde U_{\mathrm b}$; the angle $\theta_{\mathrm{wgn}}$ is the same in either word. The rotation factor is present whenever the two boost directions are not collinear. This rotation is the **Thomas–Wigner rotation**; it is the group-theoretic statement that the boost manifold is not a subgroup, and it is the physical face of the fact recorded above, that the topology and the non-closure both come from the rotation directions.
+where $\tilde u_{\mathrm r}$ is the rotation factor and $B_{\mathrm{right}}$ is the right polar boost, the rotation-conjugate of the corpus boost $\tilde U_{\Psi,\mathrm b}$; the angle $\theta_{\mathrm{wgn}}$ is the same in either word. The rotation factor is present whenever the two boost directions are not collinear. This rotation is the **Thomas–Wigner rotation**; it is the group-theoretic statement that the boost manifold is not a subgroup, and it is the physical face of the fact recorded above, that the topology and the non-closure both come from the rotation directions.
 
 For two boosts of equal rapidity $\theta_{\mathrm{rpd}}$ whose directions make an angle $\theta$, the Wigner rotation axis is the normal to the plane of the two directions and the Wigner angle $\theta_{\mathrm{wgn}}$ is given by
 
@@ -316,7 +316,7 @@ It is worth being precise about what is *not* claimed here. The sign that a roto
 
 ## What the Algebra Supplies and What Is Standard
 
-**Supplied by the algebra.** The explicit rotor parametrization of the cover, and therefore the concrete loop $R(\theta) = \cos(\theta/2)+\sin(\theta/2)\vec u_{\mathrm r}$ with $R(2\pi) = -e_t$; the identification of the two sheets with the sign $\pm e_t$; the boost rotor $\tilde U_{\mathrm b} = \exp(\tfrac{\theta_{\mathrm{rpd}}}{2}i\vec u)$ and the global exponential parametrization of the boost manifold by $\mathbb{R}^3$; and the derivation of the Wigner angle and its limits directly from the quaternion product and the polar decomposition.
+**Supplied by the algebra.** The explicit rotor parametrization of the cover, and therefore the concrete loop $R(\theta) = \cos(\theta/2)+\sin(\theta/2)\vec u_{\mathrm r}$ with $R(2\pi) = -e_t$; the identification of the two sheets with the sign $\pm e_t$; the boost rotor $\tilde U_{\Psi,\mathrm b} = \exp(\tfrac{\theta_{\mathrm{rpd}}}{2}i\vec u)$ and the global exponential parametrization of the boost manifold by $\mathbb{R}^3$; and the derivation of the Wigner angle and its limits directly from the quaternion product and the polar decomposition.
 
 **Standard topology transcribed.** The polar decomposition of $GL_2(\mathbb{C})$, the diffeomorphism $SL(2,\mathbb{C})\cong SU(2)\times\mathbb{R}^3$, the deformation retraction, the fibration $SO(3)\to SO^+(1,3)\to\mathbb{H}^3$, and the homotopy groups $\pi_1(SO(3)) = \mathbb{Z}/2$, $\pi_3(S^3) = \mathbb{Z}$ are standard Lie-group topology. The Thomas–Wigner rotation and its angle are standard relativistic kinematics. The algebra reproduces and unifies them; it does not replace them.
 
@@ -390,8 +390,8 @@ with $\theta_{\mathrm{wgn}}\approx\tfrac{(\theta_{\mathrm{rpd}})^{2}}{2}\sin\the
 | $\ker\pi = \{\pm e_t\}$, $\pi_1(SO^+(1,3))=\mathbb{Z}/2$ | Two-sheeted universal cover |
 | $SL(2,\mathbb{C}) = \{\tilde U_{\mathrm{lor}}:\langle\tilde U_{\mathrm{lor}}\rangle_{\natural}=e_t\}\cong SU(2)\times\mathbb{R}^3$ | Covering group manifold |
 | $R(\theta) = \cos\frac{\theta}{2} + \sin\frac{\theta}{2}\vec u_{\mathrm r}$ | Rotation rotor; $R(2\pi)=-e_t$, $R(4\pi)=e_t$ |
-| $B_{\mathrm{right}}(\theta_{\mathrm{rpd}},\vec u) = \cosh\frac{\theta_{\mathrm{rpd}}}{2} + i\sinh\frac{\theta_{\mathrm{rpd}}}{2}\vec u$ | Right polar boost, $B_{\mathrm{right}}=\sqrt{\tilde U_{\mathrm{lor}}{}^{*}\tilde U_{\mathrm{lor}}}=\tilde u_{\mathrm r}^{-1}\tilde U_{\mathrm b}\tilde u_{\mathrm r}$ |
-| $\tilde U_{\mathrm b}(\theta_{\mathrm{rpd}},\vec u) = \sqrt{\tilde U_{\mathrm{lor}}\tilde U_{\mathrm{lor}}{}^{*}}$ | Left polar boost of the corpus word $\tilde U_{\mathrm{lor}}=\tilde U_{\mathrm b}\tilde u_{\mathrm r}$; $\tilde U_{\mathrm b}\neq B_{\mathrm{right}}$ |
+| $B_{\mathrm{right}}(\theta_{\mathrm{rpd}},\vec u) = \cosh\frac{\theta_{\mathrm{rpd}}}{2} + i\sinh\frac{\theta_{\mathrm{rpd}}}{2}\vec u$ | Right polar boost, $B_{\mathrm{right}}=\sqrt{\tilde U_{\mathrm{lor}}{}^{*}\tilde U_{\mathrm{lor}}}=\tilde u_{\mathrm r}^{-1}\tilde U_{\Psi,\mathrm b}\tilde u_{\mathrm r}$ |
+| $\tilde U_{\Psi,\mathrm b}(\theta_{\mathrm{rpd}},\vec u) = \sqrt{\tilde U_{\mathrm{lor}}\tilde U_{\mathrm{lor}}{}^{*}}$ | Left polar boost of the corpus word $\tilde U_{\mathrm{lor}}=\tilde U_{\Psi,\mathrm b}\tilde u_{\mathrm r}$; $\tilde U_{\Psi,\mathrm b}\neq B_{\mathrm{right}}$ |
 | $\mathcal{B}\cong\mathbb{R}^3\cong\mathbb{H}^3\cong SL(2,\mathbb{C})/SU(2)$ | Boost manifold (hyperbolic three-space), contractible |
 | $SO(3)\to SO^+(1,3)\to\mathbb{H}^3$ | Fibration; topology carried by the rotation fiber |
 | $\tan\frac{\theta_{\mathrm{wgn}}}{2} = \frac{\sinh^2(\theta_{\mathrm{rpd}}/2)\sin\theta}{\cosh^2(\theta_{\mathrm{rpd}}/2)+\sinh^2(\theta_{\mathrm{rpd}}/2)\cos\theta}$ | Wigner angle for two equal-rapidity boosts |

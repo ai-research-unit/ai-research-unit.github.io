@@ -69,10 +69,10 @@ This is the framework's crispest statement about duality. The phase $\exp(-i\the
 With sources the rotation is promoted from a symmetry of the free equation to a symmetry of the sourced one when the source rotates with the field: the equation
 
 $$
-\tilde\nabla F_{\mathrm{dual}}=-\sqrt{\mu}\,\tilde J
+\tilde\nabla F_{\mathrm{dual}}=-\sqrt{\mu}\,\tilde J_{\Phi}
 $$
 
-is invariant under $F_{\mathrm{dual}}\mapsto \exp(-i\theta)F_{\mathrm{dual}}$ together with $\tilde J\mapsto \exp(-i\theta)\tilde J$, because the phase multiplies the single source term. At $\theta=\pi/2$ the rotated source is $i\sqrt{\mu}\,\tilde J$, a term of magnetic form proportional to the electric current. The continuous rotation therefore generates a magnetic term from the electric one, and it does not act on a second, independent current. The rotation is exact, internal and central; its parameter is continuous.
+is invariant under $F_{\mathrm{dual}}\mapsto \exp(-i\theta)F_{\mathrm{dual}}$ together with $\tilde J_{\Phi}\mapsto \exp(-i\theta)\tilde J_{\Phi}$, because the phase multiplies the single source term. At $\theta=\pi/2$ the rotated source is $i\sqrt{\mu}\,\tilde J_{\Phi}$, a term of magnetic form proportional to the electric current. The continuous rotation therefore generates a magnetic term from the electric one, and it does not act on a second, independent current. The rotation is exact, internal and central; its parameter is continuous.
 
 ## The Complex Coupling and the Modular Group
 
@@ -244,7 +244,7 @@ The framework supplies the continuous $\mathrm{U}(1)$ duality intrinsically, bec
 | $F_{\mathrm{dual}}=i\sqrt{\epsilon}\vec E-\sqrt{\mu}\vec H$ | Field-strength biquaternion |
 | $F_{\mathrm{dual},\star}=-iF_{\mathrm{dual}}$ | Hodge dual; duality rotation at $\theta=\pi/2$ |
 | $I_2=\vec E\cdot\vec B$ | Second invariant; CP-odd pseudoscalar |
-| $\tilde J$ | Electric four-current, entering as $\sqrt{\mu}\,\tilde J$ |
+| $\tilde J_{\Phi}$ | Electric four-current, entering as $\sqrt{\mu}\,\tilde J_{\Phi}$ |
 | $\theta$ | Theta angle; parameter of the internal rotation |
 | $\tau=\frac{\theta}{2\pi}+\frac{4\pi i}{g^2}$ | Complex coupling, upper half-plane |
 | $g$ | Gauge coupling |

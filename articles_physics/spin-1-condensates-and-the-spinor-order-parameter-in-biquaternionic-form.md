@@ -111,7 +111,7 @@ $$
 acting on the four-dimensional module $V\otimes V$ of $\mathbb{B}\otimes_\mathbb{C}\mathbb{B}\cong M_4(\mathbb{C})$. The spin-one operators are the symmetric combinations
 
 $$
-\tilde F_k=\tilde S_k^{(1)}+\tilde S_k^{(2)},
+\tilde F_k=\tilde S_{\Psi,k}^{(1)}+\tilde S_{\Psi,k}^{(2)},
 $$
 
 which act irreducibly on the triplet and annihilate the singlet, and whose restrictions reproduce the matrices $F_k$ above with matrix elements $\sqrt\frac{2\,m\,c}{k_m}$ in the standard normalisation. A condensate state is thus an element of $\mathbb{B}\otimes_\mathbb{C}\mathbb{B}$ of the form
@@ -249,7 +249,7 @@ The division of labour in the preceding sections can be tabulated.
 | Ingredient of the spin-one condensate | Status in the framework |
 |---|---|
 | Three-component spinor, unit normalisation | vector in $\mathrm{sym}^2V$; the triplet of $\mathbb{B}\otimes_\mathbb{C}\mathbb{B}$ |
-| Spin-one operators, $\vec F^2=2I$ | restrictions of $\tilde S_k^{(1)}+\tilde S_k^{(2)}$ |
+| Spin-one operators, $\vec F^2=2I$ | restrictions of $\tilde S_{\Psi,k}^{(1)}+\tilde S_{\Psi,k}^{(2)}$ |
 | Phase symmetry $\mathrm{U}(1)$ | multiplication by the centre $\exp(i\alpha)e_t$ of $\mathbb{B}$ |
 | Spin symmetry $SU(2)$ | the adjoint action on the triplet |
 | Magnetic order $\langle\vec F\rangle$ | linear (rank-one) tensor expectation |
@@ -286,7 +286,7 @@ The pattern is the one the subcategory has established throughout: the algebra s
 | $c_0,c_2$ | Spin-independent and spin-dependent contact couplings |
 | $p,q$ | Linear and quadratic Zeeman coefficients |
 | $\tilde\Pi_{\mathrm{sym}}$ | Symmetriser onto the triplet of $\mathbb{B}\otimes_\mathbb{C}\mathbb{B}$ |
-| $\tilde F_k=\tilde S_k^{(1)}+\tilde S_k^{(2)}$ | Triplet spin operators of the two-factor algebra |
+| $\tilde F_k=\tilde S_{\Psi,k}^{(1)}+\tilde S_{\Psi,k}^{(2)}$ | Triplet spin operators of the two-factor algebra |
 | $\tilde\Pi(\pm\vec u)$ | Fundamental idempotents of the informational sector |
 | $n_1,\dots,n_8$ | Bloch coordinates of the symmetric-sector state |
 | $M_{\mathrm{FM}},M_{\mathrm{polar}}$ | Order-parameter manifolds $S^2\times S^1$, $(S^2/\mathbb{Z}_2)\times S^1$ |

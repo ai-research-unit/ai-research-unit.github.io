@@ -405,7 +405,7 @@ so that $S=1-(-1)+1+1=4$; its single-party outcomes are unbiased, so it cannot t
 **Problem 1 (Werner states and the threshold for violation).** Consider the two-qubit Werner state
 
 $$
-\tilde{Ϛ}_p = p\,\tilde\Pi_{\mathrm{singlet}} + (1-p)\,\tfrac14\,e_t\otimes e_t,
+\tilde{Ϛ}_{\Psi,p} = p\,\tilde\Pi_{\mathrm{singlet}} + (1-p)\,\tfrac14\,e_t\otimes e_t,
 \qquad 0\le p\le1 .
 $$
 

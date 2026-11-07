@@ -281,14 +281,14 @@ one equation per value, coupled only by the mass; at $m=0$ they decouple into th
 In the isospin limit the divergence is the mass bilinear,
 
 $$
-\langle\tilde\nabla,\tilde J_{5k}\rangle_{\natural}
+\langle\tilde\nabla,\tilde J_{\Phi,5k}\rangle_{\natural}
 = \frac{m_u+m_d}{2}\,\bar q\,(i\xi)\,T_k\,q ,
 $$
 
 the cell $i\xi$ being the right multiplication by $\vec e_z$, the phase $i$ cancelling the $-i$ of the volume cell, and at the level of the chiral Lagrangian it is proportional to the pion field itself,
 
 $$
-\langle\tilde\nabla,\tilde J_{5k}\rangle_{\natural} = f_\pi m_\pi^2\,\pi_k + \cdots ,
+\langle\tilde\nabla,\tilde J_{\Phi,5k}\rangle_{\natural} = f_\pi m_\pi^2\,\pi_k + \cdots ,
 \qquad
 \langle 0|j_{5\mu k}(0)|\pi_l(p)\rangle = i f_\pi p_\mu\,\delta_{kl} ,
 $$
@@ -438,7 +438,7 @@ The framework supplies the pion's adjoint isovector assignment, the geometric ch
 | $C_\mu$, $\xi$ | Frame cell of the coordinate $x_\mu$, $\tilde Q\mapsto ie_\mu\tilde Q\vec e_{\nu(\mu)}$ with $\nu(t)=x$ and $\nu(k)=y$; and the volume cell, the right multiplication by $-i\vec e_z$, written $-iR_{\vec e_z}$ where the operator is the subject |
 | $\tilde\nabla\tilde{Ξ}_{\mathrm{sp},R}=k_m\tilde{Ξ}_{\mathrm{sp},L}$, $\tilde\nabla^{\natural}\tilde{Ξ}_{\mathrm{sp},L}=k_m\tilde{Ξ}_{\mathrm{sp},R}$ | Chiral pair of the Dirac equation; the two parts are coupled only by the mass |
 | $\langle0\vert j_{5\mu k}(0)\vert\pi_l(p)\rangle = if_\pi p_\mu\delta_{kl}$ | Defining matrix element of $f_\pi$ |
-| $\langle\tilde\nabla,\tilde J_{5k}\rangle_{\natural} = f_\pi m_\pi^2\pi_k$ | PCAC |
+| $\langle\tilde\nabla,\tilde J_{\Phi,5k}\rangle_{\natural} = f_\pi m_\pi^2\pi_k$ | PCAC |
 | $g_Am_N = f_\pi g_{\pi NN}$ | Goldberger–Treiman relation (spin-$\tfrac12$ companion) |
 | $\delta_{\mu\nu}=(1,1,1,1)$ | The metric, used for index contractions; the $\gamma$ identities of *The Legacy Pauli Gamma Formulation* use the weight with the opposite sign, $-\varepsilon_\mu\delta_{\mu\nu}$ |
 | $\mathrm{Tr}$ | The trace of the algebra, used in $\mathrm{Tr}(T_jT_k)=\tfrac12\delta_{jk}$ (§*Norm and Pairing Conventions*) |

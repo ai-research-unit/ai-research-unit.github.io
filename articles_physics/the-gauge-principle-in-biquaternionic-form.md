@@ -8,12 +8,12 @@ The **gauge principle** is the statement that a symmetry which holds *globally* 
 
 **Two Dirac equations, not one.** The corpus carries the one-sided chiral pair, two elements $\tilde{Ξ}_{\mathrm{sp},L}$ and $\tilde{Ξ}_{\mathrm{sp},R}$ with one equation each, and the two-sided single equation on the algebra. The pair writes the value of the subscript as a splitting of the field; the two-sided equation writes it as a multiplication on the right, and its mass term carries a coefficient conjugation. The subscript takes its two values from *Special Element Conventions*, §*The Chirality Convention*: $L$ for the value minus one of the chirality cell, $R$ for the value plus one. This article uses the pair for the gauging and records the two-sided form in the section on the mass term, where the two are set side by side. They are related by the real-linear dictionary $A$ of *The Dirac Equation in Biquaternionic Form* and are not the same operator.
 
-Two results in the corpus are the point of departure. *Maxwell's Equations in the Biquaternionic Formulation* already exhibits the gauge transformation $\tilde{A}_2 = \tilde{A} - \tilde{\nabla}\Gamma$ of the potential biquaternion and the gauge scalar $S = \mathrm{Sc}(\tilde{\nabla}^{\natural}\tilde{A})$, and states that $S$ "is a gauge artifact". *Canonical Quantization of the Biquaternion Maxwell Field* records the complementary negative fact: the framework "cannot fix the gauge". Neither article asks where the freedom comes from. This one does. The claim developed here is that the gauge freedom of the biquaternionic Maxwell field is the local form of a **global symmetry of the algebra's centre**, and that the connection it forces is the potential biquaternion $\tilde{A}$ itself.
+Two results in the corpus are the point of departure. *Maxwell's Equations in the Biquaternionic Formulation* already exhibits the gauge transformation $\tilde{A}_{\Phi,2} = \tilde{A}_{\Phi} - \tilde{\nabla}\Gamma$ of the potential biquaternion and the gauge scalar $S = \mathrm{Sc}(\tilde{\nabla}^{\natural}\tilde{A}_{\Phi})$, and states that $S$ "is a gauge artifact". *Canonical Quantization of the Biquaternion Maxwell Field* records the complementary negative fact: the framework "cannot fix the gauge". Neither article asks where the freedom comes from. This one does. The claim developed here is that the gauge freedom of the biquaternionic Maxwell field is the local form of a **global symmetry of the algebra's centre**, and that the connection it forces is the potential biquaternion $\tilde{A}_{\Phi}$ itself.
 
 The division between what is established and what is interpretation is stated at the outset and kept explicit throughout.
 
-- **Established, and recomputed below.** The centre of $\mathbb{B}$ is the complex scalar subspace $\mathbb{B}_{C}$ of *Algebra and Element Conventions*; its $*$-unitary part is $\mathrm{U}(1)$. The global phase is a symmetry of the one-sided chiral pair, massive or massless. Localizing it forces a connection $\tilde{A}$ with the transformation law $\tilde A_2=\tilde A-\tilde\nabla\Gamma$, and a covariant derivative whose action is $\tilde{Ξ}_{\mathrm{sp}}\mapsto\tilde\nabla\tilde{Ξ}_{\mathrm{sp}}+\frac{k_m\,i\,ϙ}{m\,c}\tilde{A}\tilde{Ξ}_{\mathrm{sp}}$, under which the field equation is gauge covariant. The element $\tilde{F} = \mathrm{Vect}(\tilde{\nabla}^{\natural}\tilde{A})$ is gauge invariant; it satisfies the exact identity $\tilde{F} = \tfrac{1}{2}\sum_{\mu\nu}F_{\mu\nu}\,\bar{e}_\mu e_\nu$ with $F_{\mu\nu} = \partial/\partial R_\mu A_\nu - \partial/\partial R_\nu A_\mu$; and in the abelian case $\tilde{F}$ is the commutator of the components of $D$, $[D_\mu, D_\nu] =\frac{k_m\,i\,ϙ}{m\,c}F_{\mu\nu}$.
-- **Interpretation.** Reading $\tilde{A}$ as a *connection* and $\tilde{F}$ as its *curvature* is a geometric interpretation of an algebraic construction. The algebra is consistent with the interpretation, and the commutator identity makes it precise, but the algebra does not by itself force the bundle-theoretic picture. This is labelled as interpretation, not derivation.
+- **Established, and recomputed below.** The centre of $\mathbb{B}$ is the complex scalar subspace $\mathbb{B}_{C}$ of *Algebra and Element Conventions*; its $*$-unitary part is $\mathrm{U}(1)$. The global phase is a symmetry of the one-sided chiral pair, massive or massless. Localizing it forces a connection $\tilde{A}_{\Phi}$ with the transformation law $\tilde A_{\Phi,2}=\tilde A_{\Phi}-\tilde\nabla\Gamma$, and a covariant derivative whose action is $\tilde{Ξ}_{\mathrm{sp}}\mapsto\tilde\nabla\tilde{Ξ}_{\mathrm{sp}}+\frac{k_m\,i\,ϙ}{m\,c}\tilde{A}_{\Phi}\tilde{Ξ}_{\mathrm{sp}}$, under which the field equation is gauge covariant. The element $\tilde{F} = \mathrm{Vect}(\tilde{\nabla}^{\natural}\tilde{A}_{\Phi})$ is gauge invariant; it satisfies the exact identity $\tilde{F} = \tfrac{1}{2}\sum_{\mu\nu}F_{\mu\nu}\,\bar{e}_\mu e_\nu$ with $F_{\mu\nu} = \partial/\partial R_\mu A_\nu - \partial/\partial R_\nu A_\mu$; and in the abelian case $\tilde{F}$ is the commutator of the components of $D$, $[D_\mu, D_\nu] =\frac{k_m\,i\,ϙ}{m\,c}F_{\mu\nu}$.
+- **Interpretation.** Reading $\tilde{A}_{\Phi}$ as a *connection* and $\tilde{F}$ as its *curvature* is a geometric interpretation of an algebraic construction. The algebra is consistent with the interpretation, and the commutator identity makes it precise, but the algebra does not by itself force the bundle-theoretic picture. This is labelled as interpretation, not derivation.
 - **Gap, left visible.** The extension to non-abelian gauge fields, and the question of whether the framework supplies a gauge-fixing principle, are not settled here. They are stated as gaps in the sections where they arise and collected in the open questions.
 
 The article is organized as follows. The next section identifies the global symmetry. The section after that localizes it and derives the connection. The following section names the connection and the covariant derivative and records their properties. The next section proves that the field strength is the curvature. A section connects the result to the Maxwell and quantization articles. A section separates what the algebra supplies from what it only transcribes. Two short sections treat the non-abelian extension and the axial question raised by the mass term, and one records an external, frame-free construction that reaches the same local $\mathrm{U}(1)$. The article closes with the open questions, the Gamma Formulation, the summary, the notation table and the literature.
@@ -88,37 +88,37 @@ $$
 
 The equation $\tilde{\nabla}\tilde{Ξ}_{\mathrm{sp}} = 0$ is **not** preserved by a local phase: the second term is exactly the cost of making the symmetry local. It is the term that forces a new field.
 
-Introduce a biquaternion-valued field $\tilde{A}$, and replace the gradient by the **covariant derivative**
+Introduce a biquaternion-valued field $\tilde{A}_{\Phi}$, and replace the gradient by the **covariant derivative**
 
 $$
-D\tilde{Ξ}_{\mathrm{sp}} := \tilde{\nabla}\tilde{Ξ}_{\mathrm{sp}}+\frac{k_m\,i\,ϙ}{m\,c}\,\tilde{A}\tilde{Ξ}_{\mathrm{sp}},
+D\tilde{Ξ}_{\mathrm{sp}} := \tilde{\nabla}\tilde{Ξ}_{\mathrm{sp}}+\frac{k_m\,i\,ϙ}{m\,c}\,\tilde{A}_{\Phi}\tilde{Ξ}_{\mathrm{sp}},
 $$
 
-the multiplication by $\tilde{A}$ being on the left. Let the new field transform as
+the multiplication by $\tilde{A}_{\Phi}$ being on the left. Let the new field transform as
 
 $$
-\boxed{\;\tilde{A}_2 = \tilde{A} - \tilde{\nabla}\Gamma\;}.
+\boxed{\;\tilde{A}_{\Phi,2} = \tilde{A}_{\Phi} - \tilde{\nabla}\Gamma\;}.
 $$
 
-Then the covariant derivative built from the transformed connection, applied to the transformed field, is the phase times the covariant derivative applied to the original field. Writing $D_2$ for the derivative built from $\tilde{A}_2$,
+Then the covariant derivative built from the transformed connection, applied to the transformed field, is the phase times the covariant derivative applied to the original field. Writing $D_2$ for the derivative built from $\tilde{A}_{\Phi,2}$,
 
 $$
 \begin{aligned}
 D_2(\lambda\tilde{Ξ}_{\mathrm{sp}})
-&=\tilde\nabla(\lambda\tilde{Ξ}_{\mathrm{sp}})+\frac{k_m\,i\,ϙ}{m\,c}\tilde A_2(\lambda\tilde{Ξ}_{\mathrm{sp}}) \\
+&=\tilde\nabla(\lambda\tilde{Ξ}_{\mathrm{sp}})+\frac{k_m\,i\,ϙ}{m\,c}\tilde A_{\Phi,2}(\lambda\tilde{Ξ}_{\mathrm{sp}}) \\
 &=\lambda\,\tilde\nabla\tilde{Ξ}_{\mathrm{sp}}+\frac{k_m\,i\,ϙ}{m\,c}\lambda(\tilde\nabla\Gamma)\tilde{Ξ}_{\mathrm{sp}}
- +\frac{k_m\,i\,ϙ}{m\,c}\tilde A\lambda\tilde{Ξ}_{\mathrm{sp}}
+ +\frac{k_m\,i\,ϙ}{m\,c}\tilde A_{\Phi}\lambda\tilde{Ξ}_{\mathrm{sp}}
  -\frac{k_m\,i\,ϙ}{m\,c}(\tilde\nabla\Gamma)\lambda\tilde{Ξ}_{\mathrm{sp}} \\
-&=\lambda\left(\tilde\nabla\tilde{Ξ}_{\mathrm{sp}}+\frac{k_m\,i\,ϙ}{m\,c}\tilde A\tilde{Ξ}_{\mathrm{sp}}\right)
+&=\lambda\left(\tilde\nabla\tilde{Ξ}_{\mathrm{sp}}+\frac{k_m\,i\,ϙ}{m\,c}\tilde A_{\Phi}\tilde{Ξ}_{\mathrm{sp}}\right)
  =\lambda\,D\tilde{Ξ}_{\mathrm{sp}} .
 \end{aligned}
 $$
 
-The two $\tilde{\nabla}\Gamma$ terms cancel, and the centrality of $\lambda$ moves it to the left. The equation $D\tilde{Ξ}_{\mathrm{sp}} = 0$ is therefore **gauge covariant**: it holds in every gauge when it holds in one. The symmetry has been localized, and the price is the field $\tilde{A}$ and the derivative $D$.
+The two $\tilde{\nabla}\Gamma$ terms cancel, and the centrality of $\lambda$ moves it to the left. The equation $D\tilde{Ξ}_{\mathrm{sp}} = 0$ is therefore **gauge covariant**: it holds in every gauge when it holds in one. The symmetry has been localized, and the price is the field $\tilde{A}_{\Phi}$ and the derivative $D$.
 
-**The transformation law is the one already in the corpus.** The law $\tilde{A}_2 = \tilde{A} - \tilde{\nabla}\Gamma$ is exactly the gauge transformation of *Maxwell's Equations in the Biquaternionic Formulation*. The Maxwell gauge freedom is thus not an extra assumption laid on the theory: it is the local form of the global central phase symmetry, and the potential biquaternion is the connection that the localization forces.
+**The transformation law is the one already in the corpus.** The law $\tilde{A}_{\Phi,2} = \tilde{A}_{\Phi} - \tilde{\nabla}\Gamma$ is exactly the gauge transformation of *Maxwell's Equations in the Biquaternionic Formulation*. The Maxwell gauge freedom is thus not an extra assumption laid on the theory: it is the local form of the global central phase symmetry, and the potential biquaternion is the connection that the localization forces.
 
-**The gauge function must have constant imaginary part to preserve $\mathbb{B}_{\Phi}$.** If $\tilde{A} \in \mathbb{B}_{\Phi}$ — the parent's assignment, with $A_0 = i\,a'_t$ purely imaginary and $\vec A$ real — then $\tilde{A}_2$ is again in $\mathbb{B}_{\Phi}$ precisely when $\mathrm{Im}\,\Gamma$ is constant. Indeed
+**The gauge function must have constant imaginary part to preserve $\mathbb{B}_{\Phi}$.** If $\tilde{A}_{\Phi} \in \mathbb{B}_{\Phi}$ — the parent's assignment, with $A_0 = i\,a'_t$ purely imaginary and $\vec A$ real — then $\tilde{A}_{\Phi,2}$ is again in $\mathbb{B}_{\Phi}$ precisely when $\mathrm{Im}\,\Gamma$ is constant. Indeed
 
 $$
 \tilde{\nabla}\Gamma = e_t\,\partial/\partial R_t\,\Gamma + \sum_{k=1}^{3}\,\vec e_k\,\partial/\partial R_k\,\Gamma,
@@ -130,7 +130,7 @@ and for real $\Gamma$ the scalar coefficient $\partial/\partial R_t\,\Gamma = -\
 
 ## The Connection and the Covariant Derivative
 
-The field $\tilde{A}$ is the **connection**, and $D$ is the **covariant derivative**. Writing $\tilde{A} = \sum_\mu A_\mu e_\mu$ with complex scalar coefficients $A_\mu$, the action of $D$ on a field separates into components,
+The field $\tilde{A}_{\Phi}$ is the **connection**, and $D$ is the **covariant derivative**. Writing $\tilde{A}_{\Phi} = \sum_\mu A_\mu e_\mu$ with complex scalar coefficients $A_\mu$, the action of $D$ on a field separates into components,
 
 $$
 D\tilde{Ξ}_{\mathrm{sp}} = \sum_{\mu\in\{t,x,y,z\}}  e_\mu\,D_\mu\tilde{Ξ}_{\mathrm{sp}}, \qquad D_\mu = \partial/\partial R_\mu +\frac{k_m\,i\,ϙ}{m\,c}A_\mu,
@@ -152,22 +152,22 @@ which is the Leibniz rule of the gradient corrected by the connection. This is t
 
 **3. Its gauge group is the $*$-unitary part of the centre, so the theory is abelian.** The phase $\lambda = \exp(\frac{k_m\,i\,ϙ\,\Gamma}{m\,c})$ is central, so multiplication by it on the left and on the right agree and there is no ordering ambiguity anywhere in the derivation above. This is what makes the construction abelian, and it is a consequence of selecting the gauge group from the centre.
 
-**4. Gauge transformations preserve the material sector.** As shown in the preceding section, a real $\Gamma$ keeps $\tilde{A}$ in $\mathbb{B}_{\Phi}$; the connection is a material-sector object.
+**4. Gauge transformations preserve the material sector.** As shown in the preceding section, a real $\Gamma$ keeps $\tilde{A}_{\Phi}$ in $\mathbb{B}_{\Phi}$; the connection is a material-sector object.
 
-**A preview of the non-abelian case, and its gap.** If the phase is allowed to be a *non-central* invertible biquaternion $\lambda$, then the covariance of the field equation forces $\tilde{A}$ to be algebra-valued, and order matters: the product $\tilde{A}\tilde{Ξ}_{\mathrm{sp}}$ no longer equals $\tilde{Ξ}_{\mathrm{sp}}\tilde{A}$, so the transformation law of $\tilde{A}$ acquires the conjugated $\lambda\tilde{A}\lambda^{-1}$ term rather than remaining additive. The full treatment belongs to the planned companion articles. What can already be said, and is verified below, is that the curvature then acquires a commutator term, and that the algebra already contains the non-commutativity needed for it. The gap is not the non-commutativity; it is the *reality condition* that would select a compact gauge algebra, and that is taken up at the end.
+**A preview of the non-abelian case, and its gap.** If the phase is allowed to be a *non-central* invertible biquaternion $\lambda$, then the covariance of the field equation forces $\tilde{A}_{\Phi}$ to be algebra-valued, and order matters: the product $\tilde{A}_{\Phi}\tilde{Ξ}_{\mathrm{sp}}$ no longer equals $\tilde{Ξ}_{\mathrm{sp}}\tilde{A}_{\Phi}$, so the transformation law of $\tilde{A}_{\Phi}$ acquires the conjugated $\lambda\tilde{A}_{\Phi}\lambda^{-1}$ term rather than remaining additive. The full treatment belongs to the planned companion articles. What can already be said, and is verified below, is that the curvature then acquires a commutator term, and that the algebra already contains the non-commutativity needed for it. The gap is not the non-commutativity; it is the *reality condition* that would select a compact gauge algebra, and that is taken up at the end.
 
 ## The Field Strength as the Curvature
 
-The covariant derivative packages the connection. The curvature is built from the connection by differentiation. In the biquaternion algebra the natural first derivative of the connection is the product $\tilde{\nabla}^{\natural}\tilde{A}$, and its scalar and vector parts separate cleanly. A direct computation gives
+The covariant derivative packages the connection. The curvature is built from the connection by differentiation. In the biquaternion algebra the natural first derivative of the connection is the product $\tilde{\nabla}^{\natural}\tilde{A}_{\Phi}$, and its scalar and vector parts separate cleanly. A direct computation gives
 
 $$
-\tilde{\nabla}^{\natural}\tilde{A} = \underbrace{\left(\partial/\partial R_t\,A_0 + \mathrm{div}\,\vec A\right)}_{=\,S}e_t + \sum_{k=1}^{3}\left(\partial/\partial R_t\,A_k - \partial/\partial R_k A_0\right)\vec e_k - \mathrm{rot}\,\vec A.
+\tilde{\nabla}^{\natural}\tilde{A}_{\Phi} = \underbrace{\left(\partial/\partial R_t\,A_0 + \mathrm{div}\,\vec A\right)}_{=\,S}e_t + \sum_{k=1}^{3}\left(\partial/\partial R_t\,A_k - \partial/\partial R_k A_0\right)\vec e_k - \mathrm{rot}\,\vec A.
 $$
 
-The scalar part is the **gauge scalar** $S = \mathrm{Sc}(\tilde{\nabla}^{\natural}\tilde{A})$ of the Maxwell article, which transforms as $S_2 = S - \Box\Gamma$ and is therefore pure gauge. The vector part is gauge invariant. Define the **field-strength biquaternion** as the vector part,
+The scalar part is the **gauge scalar** $S = \mathrm{Sc}(\tilde{\nabla}^{\natural}\tilde{A}_{\Phi})$ of the Maxwell article, which transforms as $S_2 = S - \Box\Gamma$ and is therefore pure gauge. The vector part is gauge invariant. Define the **field-strength biquaternion** as the vector part,
 
 $$
-\tilde{F} = \mathrm{Vect}\!\left(\tilde{\nabla}^{\natural}\tilde{A}\right) = \tilde{\nabla}^{\natural}\tilde{A} - S .
+\tilde{F} = \mathrm{Vect}\!\left(\tilde{\nabla}^{\natural}\tilde{A}_{\Phi}\right) = \tilde{\nabla}^{\natural}\tilde{A}_{\Phi} - S .
 $$
 
 With the parent's conventions this is the field strength $\tilde{F} = i\sqrt{\epsilon}\,\vec E - \sqrt{\mu}\,\vec H$ up to the overall normalization that the parent's construction also carries; the parent flags exactly this normalization freedom, and it does not affect anything below.
@@ -177,16 +177,16 @@ With the parent's conventions this is the field strength $\tilde{F} = i\sqrt{\ep
 Write $F_{\mu\nu} = \partial/\partial R_\mu A_\nu - \partial/\partial R_\nu A_\mu$ for the components of the field strength, and let $\bar{e}_t = e_t$, $\bar{e}_k = -\vec e_k$ be the conjugate basis of *Algebra and Element Conventions*. Then
 
 $$
-\boxed{\ \tilde{F} = \mathrm{Vect}\!\left(\tilde{\nabla}^{\natural}\tilde{A}\right) = \frac{1}{2}\sum_{\mu,\nu\in\{t,x,y,z\}} F_{\mu\nu}\,\bar{e}_\mu e_\nu\ }
+\boxed{\ \tilde{F} = \mathrm{Vect}\!\left(\tilde{\nabla}^{\natural}\tilde{A}_{\Phi}\right) = \frac{1}{2}\sum_{\mu,\nu\in\{t,x,y,z\}} F_{\mu\nu}\,\bar{e}_\mu e_\nu\ }
 $$
 
-The identity is exact. The proof is the multiplication table. Since $\tilde{\nabla}^{\natural}\tilde{A} = \sum_{\mu\nu}(\partial/\partial R_\mu A_\nu)\,\bar{e}_\mu e_\nu$, and since
+The identity is exact. The proof is the multiplication table. Since $\tilde{\nabla}^{\natural}\tilde{A}_{\Phi} = \sum_{\mu\nu}(\partial/\partial R_\mu A_\nu)\,\bar{e}_\mu e_\nu$, and since
 
 $$
 \mathrm{Sc}\!\left(\bar{e}_\mu e_\nu\right) = \delta_{\mu\nu}, \qquad \mathrm{Vect}\!\left(\bar{e}_\mu e_\nu\right) = -\,\mathrm{Vect}\!\left(\bar{e}_\nu e_\mu\right),
 $$
 
-the scalar part of $\tilde{\nabla}^{\natural}\tilde{A}$ is the divergence $\sum_\mu \partial/\partial R_\mu A_\mu$ and sees only the symmetric part of $\partial/\partial R_\mu A_\nu$, while the vector part is antisymmetric in $\mu,\nu$ and sees only $F_{\mu\nu}$. Replacing $\partial/\partial R_\mu A_\nu$ by $\tfrac{1}{2}(\partial/\partial R_\mu A_\nu - \partial/\partial R_\nu A_\mu)$ in the vector part gives the boxed identity. The interpretation is direct: **the right-hand side is the curvature 2-form $F = \tfrac{1}{2}\sum_{\mu,\nu}F_{\mu\nu}\,dx_\mu\wedge dx_\nu$, with the basis 1-forms replaced by the algebra elements $\bar{e}_\mu$ and $e_\nu$.** The field strength is the curvature.
+the scalar part of $\tilde{\nabla}^{\natural}\tilde{A}_{\Phi}$ is the divergence $\sum_\mu \partial/\partial R_\mu A_\mu$ and sees only the symmetric part of $\partial/\partial R_\mu A_\nu$, while the vector part is antisymmetric in $\mu,\nu$ and sees only $F_{\mu\nu}$. Replacing $\partial/\partial R_\mu A_\nu$ by $\tfrac{1}{2}(\partial/\partial R_\mu A_\nu - \partial/\partial R_\nu A_\mu)$ in the vector part gives the boxed identity. The interpretation is direct: **the right-hand side is the curvature 2-form $F = \tfrac{1}{2}\sum_{\mu,\nu}F_{\mu\nu}\,dx_\mu\wedge dx_\nu$, with the basis 1-forms replaced by the algebra elements $\bar{e}_\mu$ and $e_\nu$.** The field strength is the curvature.
 
 This also explains, structurally, why the field strength is not a four-vector. The vector part of $\mathbb{B}$ has six real dimensions, the number of independent components of a 2-form, and the field strength has a vanishing scalar part, so its six real components sit in the vector part. It is a bivector of the algebra, not a four-vector, exactly as *The Material Sector: Four-Vectors, Interval and Lorentz Action* states when it notes that the field strength is not in $\mathbb{B}_{\Phi}$.
 
@@ -204,19 +204,19 @@ $$
 \tilde{F} =\frac{m\,c}{2\,k_m\,i\,ϙ}\sum_{\mu,\nu\in\{t,x,y,z\}}[D_\mu, D_\nu]\,\bar{e}_\mu e_\nu .
 $$
 
-The field strength is the **commutator of two covariant derivatives**, contracted with the biquaternion basis. This is the precise sense in which "the field strength is the curvature": the curvature measures the failure of covariant derivatives to commute, and in the algebra that failure is packaged into the vector part of $\tilde{\nabla}^{\natural}\tilde{A}$. The overall constant in the two boxed formulas depends on the convention for $ϙ$ and on the normalization of $\tilde{A}$; the structural content is the identity of the objects, not the numerical factor.
+The field strength is the **commutator of two covariant derivatives**, contracted with the biquaternion basis. This is the precise sense in which "the field strength is the curvature": the curvature measures the failure of covariant derivatives to commute, and in the algebra that failure is packaged into the vector part of $\tilde{\nabla}^{\natural}\tilde{A}_{\Phi}$. The overall constant in the two boxed formulas depends on the convention for $ϙ$ and on the normalization of $\tilde{A}_{\Phi}$; the structural content is the identity of the objects, not the numerical factor.
 
 ### The homogeneous equations are an identity, not an equation of motion
 
-Because $\tilde{F}$ is *constructed* from $\tilde{A}$ — its electric components are $F_{0k} = \partial/\partial R_t\,A_k - \partial/\partial R_k A_0$ and its magnetic components are $-(\mathrm{rot}\,\vec A)_k$ — the two homogeneous Maxwell equations hold identically. The magnetic field is $\vec B = \mathrm{rot}\,\vec A$, so $\mathrm{div}\,\vec B = 0$; and $\vec E = -\partial/\partial r'_t\vec A - \nabla\xi_{\mathrm{scp}}$, so Faraday's law holds. In the language of forms this is $dF = d^2A = 0$: the homogeneous pair is the **Bianchi identity** of the connection, and it is automatic. The detailed biquaternionic form of the Bianchi identity, and the sense in which a single biquaternion equation carries it, are the subject of the planned companion *Gauge Curvature and the Bianchi Identity*; this article does not claim a one-line form for it. What is established here is the weaker and safer statement: given the potential representation $\tilde{F} = \mathrm{Vect}(\tilde{\nabla}^{\natural}\tilde{A})$, the homogeneous equations are not independent.
+Because $\tilde{F}$ is *constructed* from $\tilde{A}_{\Phi}$ — its electric components are $F_{0k} = \partial/\partial R_t\,A_k - \partial/\partial R_k A_0$ and its magnetic components are $-(\mathrm{rot}\,\vec A)_k$ — the two homogeneous Maxwell equations hold identically. The magnetic field is $\vec B = \mathrm{rot}\,\vec A$, so $\mathrm{div}\,\vec B = 0$; and $\vec E = -\partial/\partial r'_t\vec A - \nabla\xi_{\mathrm{scp}}$, so Faraday's law holds. In the language of forms this is $dF = d^2A = 0$: the homogeneous pair is the **Bianchi identity** of the connection, and it is automatic. The detailed biquaternionic form of the Bianchi identity, and the sense in which a single biquaternion equation carries it, are the subject of the planned companion *Gauge Curvature and the Bianchi Identity*; this article does not claim a one-line form for it. What is established here is the weaker and safer statement: given the potential representation $\tilde{F} = \mathrm{Vect}(\tilde{\nabla}^{\natural}\tilde{A}_{\Phi})$, the homogeneous equations are not independent.
 
 ## The Gauge Principle and the Maxwell Field
 
 The construction now meets the two parent articles.
 
-**The Maxwell field is the gauge field of the central phase.** The connection $\tilde{A}$, its transformation law $\tilde{A}_2=\tilde{A}-\tilde{\nabla}\Gamma$, the gauge scalar $S$, and the field strength $\tilde{F}$ are exactly the objects of *Maxwell's Equations in the Biquaternionic Formulation*. The single Maxwell equation $\tilde{\nabla}\tilde{F} = -\sqrt{\mu}\,\tilde{J}$ is then the **sourced curvature equation** of the abelian connection. The source is expressed in terms of the potential, and the integrability condition $\mathrm{Sc}\!\left(\tilde{\nabla}^{\natural}(\sqrt{\mu}\,\tilde{J})\right) = 0$ — the biquaternionic form of charge conservation — is the consistency condition of the sourced equation. With the obstruction of the dynamical question removed by deriving the gauge freedom from a symmetry, the Maxwell structure is seen to be one instantiation of the gauge principle rather than a separate fact about electromagnetism.
+**The Maxwell field is the gauge field of the central phase.** The connection $\tilde{A}_{\Phi}$, its transformation law $\tilde{A}_{\Phi,2}=\tilde{A}_{\Phi}-\tilde{\nabla}\Gamma$, the gauge scalar $S$, and the field strength $\tilde{F}$ are exactly the objects of *Maxwell's Equations in the Biquaternionic Formulation*. The single Maxwell equation $\tilde{\nabla}\tilde{F} = -\sqrt{\mu}\,\tilde{J}_{\Phi}$ is then the **sourced curvature equation** of the abelian connection. The source is expressed in terms of the potential, and the integrability condition $\mathrm{Sc}\!\left(\tilde{\nabla}^{\natural}(\sqrt{\mu}\,\tilde{J}_{\Phi})\right) = 0$ — the biquaternionic form of charge conservation — is the consistency condition of the sourced equation. With the obstruction of the dynamical question removed by deriving the gauge freedom from a symmetry, the Maxwell structure is seen to be one instantiation of the gauge principle rather than a separate fact about electromagnetism.
 
-**The gauge redundancy is not removed by the principle.** The Lorenz gauge $S = 0$ is a *choice*: it sets the scalar part of $\tilde{\nabla}^{\natural}\tilde{A}$ to zero, and the parent states plainly that $S$ is not physical. The gauge principle produces the connection but does not select a representative. Here the second parent enters. *Canonical Quantization of the Biquaternion Maxwell Field* finds that the framework **cannot fix the gauge**: the Legendre transform is singular, the conjugate momenta give the primary constraint $\mathrm{Sc}(\tilde{\pi}) \approx 0$ and the secondary Gauss-law constraint $\mathrm{Sc}(\tilde{\nabla}^{\natural}\tilde{\pi}) \approx 0$, both first class, and the first-class constraints *generate* the gauge transformations. The freedom derived here from a global symmetry is the same freedom that the quantization article finds the algebra unable to remove. The two results are consistent and complementary: the gauge principle explains the *origin* of the connection and of its redundancy; the quantization article shows that the redundancy is not an artifact that the algebra can eliminate. Neither supplies a gauge-fixing principle, and that remains a gap.
+**The gauge redundancy is not removed by the principle.** The Lorenz gauge $S = 0$ is a *choice*: it sets the scalar part of $\tilde{\nabla}^{\natural}\tilde{A}_{\Phi}$ to zero, and the parent states plainly that $S$ is not physical. The gauge principle produces the connection but does not select a representative. Here the second parent enters. *Canonical Quantization of the Biquaternion Maxwell Field* finds that the framework **cannot fix the gauge**: the Legendre transform is singular, the conjugate momenta give the primary constraint $\mathrm{Sc}(\tilde{\pi}) \approx 0$ and the secondary Gauss-law constraint $\mathrm{Sc}(\tilde{\nabla}^{\natural}\tilde{\pi}) \approx 0$, both first class, and the first-class constraints *generate* the gauge transformations. The freedom derived here from a global symmetry is the same freedom that the quantization article finds the algebra unable to remove. The two results are consistent and complementary: the gauge principle explains the *origin* of the connection and of its redundancy; the quantization article shows that the redundancy is not an artifact that the algebra can eliminate. Neither supplies a gauge-fixing principle, and that remains a gap.
 
 **The sector question is not resolved here.** The quantization article records a "sector straddle": the potential sits in $\mathbb{B}_{\Phi}$ while the canonical momentum biquaternion $\tilde{\pi}$ sits in $\mathbb{B}_{\Psi}$, and it leaves undecided whether this has algebraic content. The present derivation locates the *connection* in $\mathbb{B}_{\Phi}$ (for a real gauge function) and the *phase* in the centre, which is shared by both sectors and therefore does not resolve the straddle. The asymmetry — a material connection and an informational momentum — is inherited as an open question, not explained.
 
@@ -237,7 +237,7 @@ It is worth separating the two, because they are easily conflated.
 - *The value of the coupling.* The charge $ϙ$ is a parameter. The algebra does not fix it.
 - *The gauge-fixing principle.* As the quantization article establishes, the algebra does not select a gauge.
 
-**What is interpretation.** Reading $\tilde{A}$ as a connection on a bundle and $\tilde{F}$ as its curvature is a geometric interpretation. The algebraic content is the transformation law, the covariance, and the curvature identities; the bundle picture is a consistent interpretation of that content, and the commutator identity above is what makes the interpretation precise. The article does not claim that the algebra forces the geometric picture.
+**What is interpretation.** Reading $\tilde{A}_{\Phi}$ as a connection on a bundle and $\tilde{F}$ as its curvature is a geometric interpretation. The algebraic content is the transformation law, the covariance, and the curvature identities; the bundle picture is a consistent interpretation of that content, and the commutator identity above is what makes the interpretation precise. The article does not claim that the algebra forces the geometric picture.
 
 ## The Non-Abelian Extension, and Where the Gap Is
 
@@ -310,7 +310,7 @@ $$
 \tilde{Ξ}_{\mathrm{sp},R,2} = \exp(-i\theta_{\mathrm{pha}})\tilde{Ξ}_{\mathrm{sp},R}, \qquad \xi_{\mathrm{gau}} = \xi_{\mathrm{gau}}(x_\mu) \in \mathbb{R},
 $$
 
-and it leaves the covariant derivatives covariant, $(D_{2,\mu}\tilde{Ξ}_{\mathrm{sp},L,2}) = \exp(+i\theta_{\mathrm{pha}})D_\mu\tilde{Ξ}_{\mathrm{sp},L}$ and $(D_{2,\mu}\tilde{Ξ}_{\mathrm{sp},R,2}) = \exp(-i\theta_{\mathrm{pha}})D_\mu\tilde{Ξ}_{\mathrm{sp},R}$, exactly as the local phase $\lambda = \exp(\frac{k_m\,i\,ϙ\,\Gamma}{m\,c})$ of this article leaves $D_\mu\tilde{Ξ}_{\mathrm{sp}}$ covariant. With the central phase identified as $\xi_{\mathrm{gau}} =\frac{k_m\,ϙ\,\Gamma}{m\,c}$ and the dictionary $\omega_\mu = i(\frac{k_m\,ϙ}{m\,c})A_\mu$ — so that $-i\omega_\mu = (\frac{k_m\,ϙ}{m\,c})A_\mu$ is the potential, and the shift $-i\partial/\partial R_\mu\,\xi_{\mathrm{gau}}$ is the gradient term — the source's transformation is this article's $\tilde A_2 = \tilde A - \tilde\nabla\Gamma$, component by component. The source's $\mathrm{U}(1)$ is thus the central direction of $\mathbb{B}$, its generator the same scalar imaginary $i$, and the phase on $\tilde{Ξ}_{\mathrm{sp},L}$ carries the same sign as the multiplication on the left that this article's parent uses for the charged massive field. The opposite phase on $\tilde{Ξ}_{\mathrm{sp},R}$ is consistent with $\tilde{Ξ}_{\mathrm{sp},R}$ being the conjugate half of the pair: a central phase read through the algebra's real structure is $\lambda^{\flat}=-\bar\lambda$, the antilinear half recorded in §*The Mass Term and the Axial Symmetry*. In that reading the source's pair of phases is one central phase, not two symmetries.
+and it leaves the covariant derivatives covariant, $(D_{2,\mu}\tilde{Ξ}_{\mathrm{sp},L,2}) = \exp(+i\theta_{\mathrm{pha}})D_\mu\tilde{Ξ}_{\mathrm{sp},L}$ and $(D_{2,\mu}\tilde{Ξ}_{\mathrm{sp},R,2}) = \exp(-i\theta_{\mathrm{pha}})D_\mu\tilde{Ξ}_{\mathrm{sp},R}$, exactly as the local phase $\lambda = \exp(\frac{k_m\,i\,ϙ\,\Gamma}{m\,c})$ of this article leaves $D_\mu\tilde{Ξ}_{\mathrm{sp}}$ covariant. With the central phase identified as $\xi_{\mathrm{gau}} =\frac{k_m\,ϙ\,\Gamma}{m\,c}$ and the dictionary $\omega_\mu = i(\frac{k_m\,ϙ}{m\,c})A_\mu$ — so that $-i\omega_\mu = (\frac{k_m\,ϙ}{m\,c})A_\mu$ is the potential, and the shift $-i\partial/\partial R_\mu\,\xi_{\mathrm{gau}}$ is the gradient term — the source's transformation is this article's $\tilde A_{\Phi,2} = \tilde A_{\Phi} - \tilde\nabla\Gamma$, component by component. The source's $\mathrm{U}(1)$ is thus the central direction of $\mathbb{B}$, its generator the same scalar imaginary $i$, and the phase on $\tilde{Ξ}_{\mathrm{sp},L}$ carries the same sign as the multiplication on the left that this article's parent uses for the charged massive field. The opposite phase on $\tilde{Ξ}_{\mathrm{sp},R}$ is consistent with $\tilde{Ξ}_{\mathrm{sp},R}$ being the conjugate half of the pair: a central phase read through the algebra's real structure is $\lambda^{\flat}=-\bar\lambda$, the antilinear half recorded in §*The Mass Term and the Axial Symmetry*. In that reading the source's pair of phases is one central phase, not two symmetries.
 
 The construction bears on Open Question 3. In the source, the shared generator $i$ is **content-bearing rather than vacuous**: the imaginary-scalar direction of $\omega_\mu$ *is* the $\mathrm{U}(1)$ direction, and the same $i$ is what lets the two-sided vector derivative $\partial/\partial R_\mu V + \omega_\mu V + V\bar\omega_\mu^\ast$ reduce to a one-sided one on the central piece. The source makes the point explicitly in a note added to the paper: the local Lorentz transformations, which obey $\bar\Lambda = \Lambda^{-1}$, and the local $\mathrm{U}(1)$ transformations, $\Lambda = \exp(i\xi_{\mathrm{gau}})$, are two cases of the single law $\omega_{2,\mu} = \Lambda\omega_\mu\Lambda^{-1} - (\partial/\partial R_\mu\,\Lambda)\Lambda^{-1}$. So there the internal phase and the local frame are not merely neighbours in one algebra; they are two subgroups of one local symmetry, and the connection is one object.
 
@@ -384,24 +384,24 @@ The correspondence with the matrix algebra is complex-linear. Over $\mathbb{R}$ 
 
 The gauge principle in biquaternionic form begins with the **centre** of the biquaternion algebra. The centre is the complex scalar subspace $\mathbb{B}_{C}$, whose $*$-unitary part is $\mathrm{U}(1)$. A constant central phase $\tilde{Ξ}_{\mathrm{sp}} \mapsto \lambda\tilde{Ξ}_{\mathrm{sp}}$ is a symmetry of the one-sided chiral pair, massive or massless, because a central constant passes through the gradient and through the linear mass term.
 
-Making the phase local, $\lambda = \exp(\frac{k_m\,i\,ϙ\,\Gamma\,\tilde{Q}}{m\,c})$, adds the term $\frac{k_m\,i\,ϙ}{m\,c}\lambda(\tilde{\nabla}\Gamma)\tilde{Ξ}_{\mathrm{sp}}$, and cancelling it forces a connection $\tilde{A}$ with the transformation law
+Making the phase local, $\lambda = \exp(\frac{k_m\,i\,ϙ\,\Gamma\,\tilde{Q}}{m\,c})$, adds the term $\frac{k_m\,i\,ϙ}{m\,c}\lambda(\tilde{\nabla}\Gamma)\tilde{Ξ}_{\mathrm{sp}}$, and cancelling it forces a connection $\tilde{A}_{\Phi}$ with the transformation law
 
 $$
-\boxed{\;\tilde{A}_2 = \tilde{A} - \tilde{\nabla}\Gamma\;},
+\boxed{\;\tilde{A}_{\Phi,2} = \tilde{A}_{\Phi} - \tilde{\nabla}\Gamma\;},
 $$
 
 which is exactly the gauge transformation of the biquaternionic Maxwell article, together with a covariant derivative
 
 $$
-\boxed{\;D\tilde{Ξ}_{\mathrm{sp}} = \tilde{\nabla}\tilde{Ξ}_{\mathrm{sp}} +\frac{k_m\,i\,ϙ}{m\,c}\tilde{A}\tilde{Ξ}_{\mathrm{sp}}, \qquad D_\mu = \partial/\partial R_\mu +\frac{k_m\,i\,ϙ}{m\,c}A_\mu\;},
+\boxed{\;D\tilde{Ξ}_{\mathrm{sp}} = \tilde{\nabla}\tilde{Ξ}_{\mathrm{sp}} +\frac{k_m\,i\,ϙ}{m\,c}\tilde{A}_{\Phi}\tilde{Ξ}_{\mathrm{sp}}, \qquad D_\mu = \partial/\partial R_\mu +\frac{k_m\,i\,ϙ}{m\,c}A_\mu\;},
 $$
 
-under which $D\tilde{Ξ}_{\mathrm{sp}}$ transforms by the phase factor. The connection is a material-sector object: a real gauge function keeps $\tilde{A} \in \mathbb{B}_{\Phi}$.
+under which $D\tilde{Ξ}_{\mathrm{sp}}$ transforms by the phase factor. The connection is a material-sector object: a real gauge function keeps $\tilde{A}_{\Phi} \in \mathbb{B}_{\Phi}$.
 
-The field strength is the vector part of $\tilde{\nabla}^{\natural}\tilde{A}$, with the gauge scalar $S = \mathrm{Sc}(\tilde{\nabla}^{\natural}\tilde{A})$ as its pure-gauge scalar part, and it satisfies the exact **curvature identity**
+The field strength is the vector part of $\tilde{\nabla}^{\natural}\tilde{A}_{\Phi}$, with the gauge scalar $S = \mathrm{Sc}(\tilde{\nabla}^{\natural}\tilde{A}_{\Phi})$ as its pure-gauge scalar part, and it satisfies the exact **curvature identity**
 
 $$
-\tilde{F} = \mathrm{Vect}\!\left(\tilde{\nabla}^{\natural}\tilde{A}\right) = \frac{1}{2}\sum_{\mu,\nu}F_{\mu\nu}\,\bar{e}_\mu e_\nu,
+\tilde{F} = \mathrm{Vect}\!\left(\tilde{\nabla}^{\natural}\tilde{A}_{\Phi}\right) = \frac{1}{2}\sum_{\mu,\nu}F_{\mu\nu}\,\bar{e}_\mu e_\nu,
 $$
 
 the six real components of the curvature 2-form sitting in the vector part of the algebra, and the **commutator identity**
@@ -410,9 +410,9 @@ $$
 [D_\mu, D_\nu] =\frac{k_m\,i\,ϙ}{m\,c}F_{\mu\nu}, \qquad \tilde{F} =\frac{m\,c}{2\,k_m\,i\,ϙ}\sum_{\mu,\nu}[D_\mu, D_\nu]\,\bar{e}_\mu e_\nu .
 $$
 
-Because $\tilde{F}$ is constructed from $\tilde{A}$, the homogeneous Maxwell equations are an identity — the Bianchi identity of the connection — not equations of motion.
+Because $\tilde{F}$ is constructed from $\tilde{A}_{\Phi}$, the homogeneous Maxwell equations are an identity — the Bianchi identity of the connection — not equations of motion.
 
-The result connects directly to the two parents. The Maxwell field is the gauge field of the central phase, and its single equation $\tilde{\nabla}\tilde{F} = -\sqrt{\mu}\,\tilde{J}$ is the sourced curvature equation; the gauge redundancy derived here is the one that *Canonical Quantization of the Biquaternion Maxwell Field* finds the algebra unable to remove. The algebra supplies a canonical abelian gauge group, a six-dimensional home for the curvature, and preservation of the material sector; it does not supply the coupling constant, a gauge-fixing principle, or a derivation of the geometric interpretation, which is interpretation.
+The result connects directly to the two parents. The Maxwell field is the gauge field of the central phase, and its single equation $\tilde{\nabla}\tilde{F} = -\sqrt{\mu}\,\tilde{J}_{\Phi}$ is the sourced curvature equation; the gauge redundancy derived here is the one that *Canonical Quantization of the Biquaternion Maxwell Field* finds the algebra unable to remove. The algebra supplies a canonical abelian gauge group, a six-dimensional home for the curvature, and preservation of the material sector; it does not supply the coupling constant, a gauge-fixing principle, or a derivation of the geometric interpretation, which is interpretation.
 
 Two gaps are left visible. The non-abelian extension needs the algebra's non-commutativity, which is present, but also a reality condition selecting a compact gauge algebra, which is not derived. And the mass term, being linear in the one-sided pair, preserves the continuous phase symmetry, so the gauge principle as derived applies to the massive sector as well; what the mass breaks is the axial symmetry between the two values of the subscript, and whether that can be gauged is left open. The breaking is visible in the current: $j_{5\mu}=\bar{\tilde{Ξ}}_{\mathrm{sp}}\,(e_\mu\tilde{Ξ}_{\mathrm{sp}}\vec e_z\vec e_{\tau(\mu)})$ has divergence $2m\,\bar{\tilde{Ξ}}_{\mathrm{sp}}\,\tilde{Ξ}_{\mathrm{sp}}\,\vec e_z$, which is the mass times a non-zero bilinear. The two-sided form of the same mass is recorded only for the chirality link: its mass term is a multiplication on the right with a conjugation, and the pair is the representation on which the phase acts linearly.
 
@@ -434,19 +434,19 @@ Two gaps are left visible. The non-abelian extension needs the algebra's non-com
 | $\bar e_\mu$ | the conjugate basis, $\bar e_t = e_t$ and $\bar e_k = -\vec e_k$ |
 | $\lambda = \exp(\frac{k_m\,i\,ϙ\,\Gamma}{m\,c})$ | the local central phase; $\Gamma$ a real scalar |
 | $ϙ$ | the coupling constant (charge), not fixed by the algebra |
-| $\tilde{A} = \sum_\mu A_\mu e_\mu$ | the connection, the potential biquaternion of $\mathbb{B}_{\Phi}$ |
-| $\tilde{A}_2 = \tilde{A} - \tilde{\nabla}\Gamma$ | the gauge transformation of the connection |
-| $D\tilde{Ξ}_{\mathrm{sp}} = \tilde{\nabla}\tilde{Ξ}_{\mathrm{sp}} +\frac{k_m\,i\,ϙ}{m\,c}\tilde{A}\tilde{Ξ}_{\mathrm{sp}}$ | the covariant derivative, written as an action |
+| $\tilde{A}_{\Phi} = \sum_\mu A_\mu e_\mu$ | the connection, the potential biquaternion of $\mathbb{B}_{\Phi}$ |
+| $\tilde{A}_{\Phi,2} = \tilde{A}_{\Phi} - \tilde{\nabla}\Gamma$ | the gauge transformation of the connection |
+| $D\tilde{Ξ}_{\mathrm{sp}} = \tilde{\nabla}\tilde{Ξ}_{\mathrm{sp}} +\frac{k_m\,i\,ϙ}{m\,c}\tilde{A}_{\Phi}\tilde{Ξ}_{\mathrm{sp}}$ | the covariant derivative, written as an action |
 | $D_\mu = \partial/\partial R_\mu +\frac{k_m\,i\,ϙ}{m\,c}A_\mu$ | its components |
-| $S = \mathrm{Sc}(\tilde{\nabla}^{\natural}\tilde{A})$, $S_2 = S - \Box\Gamma$ | the gauge scalar; Lorenz gauge $S = 0$ |
-| $\tilde{F} = \mathrm{Vect}(\tilde{\nabla}^{\natural}\tilde{A})$ | the field strength, the curvature |
+| $S = \mathrm{Sc}(\tilde{\nabla}^{\natural}\tilde{A}_{\Phi})$, $S_2 = S - \Box\Gamma$ | the gauge scalar; Lorenz gauge $S = 0$ |
+| $\tilde{F} = \mathrm{Vect}(\tilde{\nabla}^{\natural}\tilde{A}_{\Phi})$ | the field strength, the curvature |
 | $F_{\mu\nu} = \partial/\partial R_\mu A_\nu - \partial/\partial R_\nu A_\mu$ | the abelian curvature components |
 | $\tilde\nabla\tilde{Ξ}_{\mathrm{sp},R} = k_m\tilde{Ξ}_{\mathrm{sp},L}$, $\tilde\nabla^\natural\tilde{Ξ}_{\mathrm{sp},L} = k_m\tilde{Ξ}_{\mathrm{sp},R}$ | the one-sided chiral pair; the mass is linear in the field |
 | $\tilde\nabla^\natural F = -im\bar F\vec e_z$ | the two-sided Dirac equation; $\bar F$ the coefficient conjugate, the mass term antilinear |
 | $F$ | the field of the two-sided equation, not the field strength $\tilde F$ |
 | $j_{5\mu} = \bar{\tilde{Ξ}}_{\mathrm{sp}}(e_\mu\tilde{Ξ}_{\mathrm{sp}}\vec e_z\vec e_{\tau(\mu)})$ | the axial current; $\tau(t) = x$, $\tau(k) = y$; its divergence is the plain sum |
-| $\tilde J = ic\rho\,e_t + \vec J$ | the four-current; the source of the Maxwell equation is $\sqrt{\mu}\,\tilde J$ |
-| $\tilde{\nabla}\tilde{F} = -\sqrt{\mu}\,\tilde{J}$ | the biquaternionic Maxwell equation |
+| $\tilde J_{\Phi} = ic\rho\,e_t + \vec J$ | the four-current; the source of the Maxwell equation is $\sqrt{\mu}\,\tilde J_{\Phi}$ |
+| $\tilde{\nabla}\tilde{F} = -\sqrt{\mu}\,\tilde{J}_{\Phi}$ | the biquaternionic Maxwell equation |
 | $c = 1/\sqrt{\epsilon\mu}$ | the speed of light in the medium |
 
 ## Further Reading

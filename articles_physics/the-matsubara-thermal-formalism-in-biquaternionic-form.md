@@ -13,17 +13,17 @@ $$
 is the strip swept when the material time is complexified, and the periodic identification $r'_t\sim r'_t+i\beta$ that makes it a cylinder is the compactification that defines the Matsubara sum.
 - **Established (algebra).** The thermal wave biquaternion stays in the material sector,
 $$
-\tilde P_E = i\omega_n e_t+\vec p \in \mathbb{B}_{\Phi} ,
+\tilde P_{\Phi,E} = i\omega_n e_t+\vec p \in \mathbb{B}_{\Phi} ,
 \qquad
-\langle\tilde P_E\rangle_{\natural}=-\omega_n^2+\vec p^2 ,
+\langle\tilde P_{\Phi,E}\rangle_{\natural}=-\omega_n^2+\vec p^2 ,
 \qquad
-\langle\tilde P_E,\tilde P_E\rangle_{*}=\omega_n^2+\vec p^2 = k_{\mathrm{eu}}^2 \ge 0 ,
+\langle\tilde P_{\Phi,E},\tilde P_{\Phi,E}\rangle_{*}=\omega_n^2+\vec p^2 = k_{\mathrm{eu}}^2 \ge 0 ,
 $$
 with the frequency along the imaginary scalar direction of $\mathbb{B}_{\Phi}$ and the momentum along its real spatial direction. The standard route reaches the same operator by the Wick rotation, $r'_t\to-i\tau$, which reads the element on the real scalar axis; the material-sector route reaches it without a rotation and names the form. The Euclidean mass-shell operator is the **Hermitian form** of that element,
 $$
-\mathcal{M}_E(\tilde P_E) = \langle\tilde P_E,\tilde P_E\rangle_{*}+m^2 = \omega_n^2+\vec p^2+m^2 = k_{\mathrm{eu}}^2+m^2 > 0 ,
+\mathcal{M}_E(\tilde P_{\Phi,E}) = \langle\tilde P_{\Phi,E},\tilde P_{\Phi,E}\rangle_{*}+m^2 = \omega_n^2+\vec p^2+m^2 = k_{\mathrm{eu}}^2+m^2 > 0 ,
 $$
-positive because the Hermitian form is positive definite of signature $(8,0)$ and not because the axes are rotated: the biquaternion norm of the same element, $\langle\tilde P_E\rangle_{\natural}=-\omega_n^2+\vec p^2$, is indefinite and cannot serve, being the interval and not the probability. So the Euclidean propagator $1/(k_{\mathrm{eu}}^2+m^2)$ has no real pole; the Lorentzian mass shell $\tilde P\tilde P^{\natural}= -m^{2}\,c^{2}$ maps to $k_{\mathrm{eu}}^2=-m^2$, which is reached only at complex momentum. This is the framework's statement that the thermal propagator's analytic structure is a statement about the complexification of a material direction.
+positive because the Hermitian form is positive definite of signature $(8,0)$ and not because the axes are rotated: the biquaternion norm of the same element, $\langle\tilde P_{\Phi,E}\rangle_{\natural}=-\omega_n^2+\vec p^2$, is indefinite and cannot serve, being the interval and not the probability. So the Euclidean propagator $1/(k_{\mathrm{eu}}^2+m^2)$ has no real pole; the Lorentzian mass shell $\tilde P_{\Phi}\tilde P_{\Phi}^{\natural}= -m^{2}\,c^{2}$ maps to $k_{\mathrm{eu}}^2=-m^2$, which is reached only at complex momentum. This is the framework's statement that the thermal propagator's analytic structure is a statement about the complexification of a material direction.
 - **Established (algebra).** The spin–statistics theorem of the companion article fixes the periodicity: bosonic fields are periodic and fermionic fields antiperiodic on the thermal circle, and the Matsubara frequencies are therefore
 $$
 \omega_n = \frac{2\pi n}{\beta}\ \ (\text{bosons}),
@@ -43,17 +43,17 @@ The Matsubara formalism is usually reached by a Wick rotation, and it is reached
 
 **The standard route: the Wick rotation, quoted.** The usual treatment continues the real time, $\tau=ir'_t$ with $r'_t=-i\tau$: the material-time coefficient $i c r'_t$ becomes the real $c\tau$, the material interval $-\varepsilon_\mu\delta_{\mu\nu}$ becomes the unit form $\delta_{\mu\nu}=(1,1,1,1)$, and the wave biquaternion is read on the real scalar axis,
 $$
-\tilde P_E = -\omega_n e_t+\vec p ,
+\tilde P_{\Phi,E} = -\omega_n e_t+\vec p ,
 \qquad
-\tilde P_E\tilde P_E^{\natural} = \omega_n^2+\vec p^2 = k_{\mathrm{eu}}^2 \ge 0 .
+\tilde P_{\Phi,E}\tilde P_{\Phi,E}^{\natural} = \omega_n^2+\vec p^2 = k_{\mathrm{eu}}^2 \ge 0 .
 $$
 This is the framework's level-2 to level-1 passage and it is standard (*Interpretation of the Wick Rotation in the Biquaternion Universe*; *The Functional Integral in Biquaternionic Form* uses the same identification). The norm of the rotated element is positive there, and the standard route takes the positivity from that rotated metric. It is correct, and it is what the literature does.
 
 **The alternative route: the material sector, no rotation.** The same result is obtained without leaving $\mathbb{B}_{\Phi}$, by complexifying the material time along its own imaginary direction instead of rotating the axes. The material-time coefficient is $i c r'_t$, along the imaginary scalar direction of $\mathbb{B}_{\Phi}$, and the physical time $r'_t$ is real while the coefficient carries the $i$. Thermal equilibrium complexifies this coordinate, $r'_t\mapsto r'_t+is$ with $0<s<\beta$ the KMS strip of the boundary relation above, and the periodic identification builds the circle out of that imaginary displacement itself. No coordinate leaves $\mathbb{B}_{\Phi}$, and the thermal frequency is the conjugate variable of the compactified material time, placed along the same imaginary scalar direction,
 $$
-\boxed{\;\tilde P_E = i\omega_n e_t+\vec p \in \mathbb{B}_{\Phi}\;}.
+\boxed{\;\tilde P_{\Phi,E} = i\omega_n e_t+\vec p \in \mathbb{B}_{\Phi}\;}.
 $$
-On this element the interval keeps its sign, $\langle\tilde P_E\rangle_{\natural}=-\omega_n^2+\vec p^2$, indefinite; the norm cannot supply the positivity the rotated route got from the metric. The definite form does, $\langle\tilde P_E,\tilde P_E\rangle_{*}=\omega_n^2+\vec p^2=k_{\mathrm{eu}}^2$, as the propagator below records. The two routes therefore agree on the propagator, $D_E=1/(k_{\mathrm{eu}}^2+m^2)$, and differ in what they change: the standard route rotates the metric and leaves the form implicit, the material-sector route keeps the metric and names the form. The second is used in this article because it needs no change of sector, and because the form it names is the same Hermitian form for which the Bochner theorem of the companion article is stated. Both routes are successful; the alternative is the one taken.
+On this element the interval keeps its sign, $\langle\tilde P_{\Phi,E}\rangle_{\natural}=-\omega_n^2+\vec p^2$, indefinite; the norm cannot supply the positivity the rotated route got from the metric. The definite form does, $\langle\tilde P_{\Phi,E},\tilde P_{\Phi,E}\rangle_{*}=\omega_n^2+\vec p^2=k_{\mathrm{eu}}^2$, as the propagator below records. The two routes therefore agree on the propagator, $D_E=1/(k_{\mathrm{eu}}^2+m^2)$, and differ in what they change: the standard route rotates the metric and leaves the form implicit, the material-sector route keeps the metric and names the form. The second is used in this article because it needs no change of sector, and because the form it names is the same Hermitian form for which the Bochner theorem of the companion article is stated. Both routes are successful; the alternative is the one taken.
 
 **The thermal circle.** The complexified material time is compactified,
 $$
@@ -90,19 +90,19 @@ which are the **bosonic** and **fermionic Matsubara frequencies**. The discrete 
 $$
 \int\frac{dp^0}{2\pi}\,f(p_0) \;\longrightarrow\; \frac{1}{\beta}\sum_{n\in\mathbb{Z}} f(i\omega_n),
 $$
-and the corresponding thermal wave biquaternion is the material element $\tilde P_E=i\omega_n e_t+\vec p$, whose Hermitian square is $\langle\tilde P_E,\tilde P_E\rangle_{*}=\omega_n^2+\vec p^2=k_{\mathrm{eu}}^2$.
+and the corresponding thermal wave biquaternion is the material element $\tilde P_{\Phi,E}=i\omega_n e_t+\vec p$, whose Hermitian square is $\langle\tilde P_{\Phi,E},\tilde P_{\Phi,E}\rangle_{*}=\omega_n^2+\vec p^2=k_{\mathrm{eu}}^2$.
 
-**The propagator in the material sector.** In the framework the Lorentzian propagator's denominator is the mass-shell operator $\mathcal{M}(\tilde P)=\tilde P\tilde P^{\natural}+m^{2}\,c^{2}=-p^2+m^2$ at the material wave biquaternion $\tilde P=i(E/c)e_t+\vec p\in\mathbb{B}_{\Phi}$. On the thermal grid the frequency sits along the imaginary scalar direction, $\tilde P_E=i\omega_n e_t+\vec p$, and the denominator is the Hermitian form of that element,
+**The propagator in the material sector.** In the framework the Lorentzian propagator's denominator is the mass-shell operator $\mathcal{M}(\tilde P_{\Phi})=\tilde P_{\Phi}\tilde P_{\Phi}^{\natural}+m^{2}\,c^{2}=-p^2+m^2$ at the material wave biquaternion $\tilde P_{\Phi}=i(E/c)e_t+\vec p\in\mathbb{B}_{\Phi}$. On the thermal grid the frequency sits along the imaginary scalar direction, $\tilde P_{\Phi,E}=i\omega_n e_t+\vec p$, and the denominator is the Hermitian form of that element,
 $$
-\boxed{\;\langle\tilde P_E,\tilde P_E\rangle_{*}=\lvert i\omega_n\rvert^2+\lvert\vec p\rvert^2=\omega_n^2+\vec p^2=k_{\mathrm{eu}}^2 ,
+\boxed{\;\langle\tilde P_{\Phi,E},\tilde P_{\Phi,E}\rangle_{*}=\lvert i\omega_n\rvert^2+\lvert\vec p\rvert^2=\omega_n^2+\vec p^2=k_{\mathrm{eu}}^2 ,
 \qquad
-\mathcal{M}_E(\tilde P_E)=\langle\tilde P_E,\tilde P_E\rangle_{*}+m^2=k_{\mathrm{eu}}^2+m^2\;},
+\mathcal{M}_E(\tilde P_{\Phi,E})=\langle\tilde P_{\Phi,E},\tilde P_{\Phi,E}\rangle_{*}+m^2=k_{\mathrm{eu}}^2+m^2\;},
 $$
 so that
 $$
-D_E(\tilde P_E) = \frac{1}{\mathcal{M}_E(\tilde P_E)} = \frac{1}{k_{\mathrm{eu}}^2+m^2} .
+D_E(\tilde P_{\Phi,E}) = \frac{1}{\mathcal{M}_E(\tilde P_{\Phi,E})} = \frac{1}{k_{\mathrm{eu}}^2+m^2} .
 $$
-The same element read with the norm gives $\langle\tilde P_E\rangle_{\natural}=-\omega_n^2+\vec p^2$, indefinite; the interval and the probability are two forms of one element, and it is the definite one that the thermal denominator needs. The operator is central and positive for real frequencies and momenta, $k_{\mathrm{eu}}^2+m^2>0$; hence $D_E$ is a bounded, real-analytic function on the Matsubara grid, and it has no pole there. The Lorentzian mass shell $\tilde P\tilde P^{\natural}= -m^{2}\,c^{2}$ becomes $k_{\mathrm{eu}}^2=-m^2$, reached only at complex momentum. This is the framework's statement of the standard fact that the propagator's singularities lie off the real axis, and it shows that the analytic structure of the thermal propagator is a statement about the complexified material direction: the circle is a material direction, and the pole is at complex momentum on that axis.
+The same element read with the norm gives $\langle\tilde P_{\Phi,E}\rangle_{\natural}=-\omega_n^2+\vec p^2$, indefinite; the interval and the probability are two forms of one element, and it is the definite one that the thermal denominator needs. The operator is central and positive for real frequencies and momenta, $k_{\mathrm{eu}}^2+m^2>0$; hence $D_E$ is a bounded, real-analytic function on the Matsubara grid, and it has no pole there. The Lorentzian mass shell $\tilde P_{\Phi}\tilde P_{\Phi}^{\natural}= -m^{2}\,c^{2}$ becomes $k_{\mathrm{eu}}^2=-m^2$, reached only at complex momentum. This is the framework's statement of the standard fact that the propagator's singularities lie off the real axis, and it shows that the analytic structure of the thermal propagator is a statement about the complexified material direction: the circle is a material direction, and the pole is at complex momentum on that axis.
 
 $$
 \frac{1}{\beta}\sum_{n\in\mathbb{Z}}\frac{1}{\omega_n^2+E^2} = \frac{1}{2E}\coth\frac{\beta E}{2}
@@ -159,7 +159,7 @@ Three statements are the framework's, and they are worth separating from the tra
 
 **The thermal circle is a material direction.** The imaginary direction of the KMS strip is the imaginary direction of the material sector, $\mathbb{B}_{\Phi}\oplus i\mathbb{B}_{\Phi}=\mathbb{B}$ in the sense of the Unruh article's complexified Rindler time; the Matsubara circle is the compactification of that direction. Hence the thermal circle is not an artifact of a convergence trick: it is a circle drawn in a direction the algebra already distinguishes. The framework's statement is that the KMS strip and the thermal circle are the same object read analytically and topologically.
 
-**The Euclidean operator is the Hermitian form on a material element.** $\mathcal{M}_E=\langle\tilde P_E,\tilde P_E\rangle_{*}+m^2$ is the positive form of the material wave biquaternion, central because the value of the form on one element is a real scalar, and identical in form to the Lorentzian operator. So the thermal propagator is the inverse of the probability form evaluated on a discrete momentum set, in the same sector the Lorentzian theory uses. All the algebra's structure — centrality, the module's dimension — passes to the thermal theory unchanged; the temperature enters only through the spacing of the mode set. The norm $\langle\tilde P_E\rangle_{\natural}=-\omega_n^2+\vec p^2$ is the interval of the same element and is indefinite, so the two forms are not interchangeable and it is that form that the thermal theory needs.
+**The Euclidean operator is the Hermitian form on a material element.** $\mathcal{M}_E=\langle\tilde P_{\Phi,E},\tilde P_{\Phi,E}\rangle_{*}+m^2$ is the positive form of the material wave biquaternion, central because the value of the form on one element is a real scalar, and identical in form to the Lorentzian operator. So the thermal propagator is the inverse of the probability form evaluated on a discrete momentum set, in the same sector the Lorentzian theory uses. All the algebra's structure — centrality, the module's dimension — passes to the thermal theory unchanged; the temperature enters only through the spacing of the mode set. The norm $\langle\tilde P_{\Phi,E}\rangle_{\natural}=-\omega_n^2+\vec p^2$ is the interval of the same element and is indefinite, so the two forms are not interchangeable and it is that form that the thermal theory needs.
 
 **Statistics is the grading.** The periodic/antiperiodic split of the thermal circle is the even/odd split of the algebra and of the spinor module. This is a consistency, not a derivation: the framework houses the spin–statistics theorem, as the companion article argues, and the Matsubara frequency sets are its Fourier expression.
 
@@ -215,7 +215,7 @@ and the passage from the discrete grid to the real axis is the **analytic contin
 
 The interaction theory is the vacuum perturbation theory with the discrete sums and the modified propagator, and the framework's conventions pass through unchanged.
 
-**The rules.** Each internal line is the Euclidean propagator $D_E(\tilde P_E)=1/(k_{\mathrm{eu}}^2+m^2)$ with $k_{\mathrm{eu},0}$ drawn from the appropriate frequency set; each internal frequency is summed as $(1/\beta)\sum_n$; each vertex is $-S_{\mathrm{int}}$ as in the vacuum theory, with the conservation of the discrete frequency imposed by the vertex; and the external legs are on the Matsubara grid, or continued to real frequency for a real-time response. The Euclidean theory is the analytic continuation of the real-time ones, and the retarded and advanced propagators are recovered by continuation from the discrete grid, as the propagator article notes for the thermal case.
+**The rules.** Each internal line is the Euclidean propagator $D_E(\tilde P_{\Phi,E})=1/(k_{\mathrm{eu}}^2+m^2)$ with $k_{\mathrm{eu},0}$ drawn from the appropriate frequency set; each internal frequency is summed as $(1/\beta)\sum_n$; each vertex is $-S_{\mathrm{int}}$ as in the vacuum theory, with the conservation of the discrete frequency imposed by the vertex; and the external legs are on the Matsubara grid, or continued to real frequency for a real-time response. The Euclidean theory is the analytic continuation of the real-time ones, and the retarded and advanced propagators are recovered by continuation from the discrete grid, as the propagator article notes for the thermal case.
 
 **The zero mode.** The $n=0$ bosonic mode, $\omega_0=0$, is special: it is static, its Euclidean propagator is $1/(\vec p^2+m^2)$, and for a massless field it contributes a non-analytic zero mode that is the origin of the infrared problems of thermal field theory and of the dimensional reduction of the high-temperature limit. In the framework the zero mode is the mode whose phase is independent of the material time, i.e. constant along the thermal circle; it is the material-sector analogue of a topological sector, and it is where the thermal circle's compactification is most visible.
 
@@ -225,7 +225,7 @@ The interaction theory is the vacuum perturbation theory with the discrete sums 
 
 **Established (framework).**
 - The Matsubara circle is a compactified material-sector direction; its circumference is the KMS width $\beta$, and the KMS strip and the circle are the same complexified material time.
-- The Euclidean mass-shell operator is the Hermitian form of the material wave biquaternion, $\mathcal{M}_E=\langle\tilde P_E,\tilde P_E\rangle_{*}+m^2=k_{\mathrm{eu}}^2+m^2$ with $\tilde P_E=i\omega_n e_t+\vec p\in\mathbb{B}_{\Phi}$, central and positive, with no real pole; the norm $\langle\tilde P_E\rangle_{\natural}=-\omega_n^2+\vec p^2$ is indefinite; the Lorentzian mass shell maps to complex momentum.
+- The Euclidean mass-shell operator is the Hermitian form of the material wave biquaternion, $\mathcal{M}_E=\langle\tilde P_{\Phi,E},\tilde P_{\Phi,E}\rangle_{*}+m^2=k_{\mathrm{eu}}^2+m^2$ with $\tilde P_{\Phi,E}=i\omega_n e_t+\vec p\in\mathbb{B}_{\Phi}$, central and positive, with no real pole; the norm $\langle\tilde P_{\Phi,E}\rangle_{\natural}=-\omega_n^2+\vec p^2$ is indefinite; the Lorentzian mass shell maps to complex momentum.
 - The thermal correlator's positivity is the Bochner theorem at the central root, $\rho=i$, the root of the kernel $\exp(i\omega_n\tau)$.
 - The two frequency sets are the two grading classes' Fourier spectra; the periodic/antiperiodic split is the even/odd split.
 - The free energy carries the multiplicity of the module trace; the one-loop free energy is $\log Z=-\tfrac12\mathrm{Tr}\log\mathcal{M}_E$.
@@ -250,15 +250,15 @@ This is why the article's computations are done in $\mathbb{B}_{\Phi}$ and not i
 
 The Matsubara formalism in biquaternionic form is thermal field theory with the compactified direction identified as the material direction $i c r'_t$. The standard route to it is the Wick rotation $r'_t\to-i\tau$, which reads the wave biquaternion as $-\omega_n e_t+\vec p$ on the real scalar axis with a definite norm; this article uses instead the material-sector route, in which the computation never leaves $\mathbb{B}_{\Phi}$ and the positivity is carried by the Hermitian form rather than by the rotated metric. The two routes give the same propagator and the same frequencies. The thermal circle $r'_t\sim r'_t+i\beta$ has circumference $\beta=\frac{m\,c}{k_m\,k_{B}\,T}$, which is the KMS strip width, because both are the complexification of that same material time; the wave biquaternion of the grid is material,
 $$
-\boxed{\;\tilde P_E = i\omega_n e_t+\vec p \in \mathbb{B}_{\Phi} ,
+\boxed{\;\tilde P_{\Phi,E} = i\omega_n e_t+\vec p \in \mathbb{B}_{\Phi} ,
 \qquad
-\langle\tilde P_E\rangle_{\natural}=-\omega_n^2+\vec p^2 ,
+\langle\tilde P_{\Phi,E}\rangle_{\natural}=-\omega_n^2+\vec p^2 ,
 \qquad
-\langle\tilde P_E,\tilde P_E\rangle_{*}=\omega_n^2+\vec p^2=k_{\mathrm{eu}}^2\;},
+\langle\tilde P_{\Phi,E},\tilde P_{\Phi,E}\rangle_{*}=\omega_n^2+\vec p^2=k_{\mathrm{eu}}^2\;},
 $$
 and the Euclidean mass-shell operator is the Hermitian form of that element,
 $$
-\mathcal{M}_E(\tilde P_E)=\langle\tilde P_E,\tilde P_E\rangle_{*}+m^2=\omega_n^2+\vec p^2+m^2=k_{\mathrm{eu}}^2+m^2>0 ,
+\mathcal{M}_E(\tilde P_{\Phi,E})=\langle\tilde P_{\Phi,E},\tilde P_{\Phi,E}\rangle_{*}+m^2=\omega_n^2+\vec p^2+m^2=k_{\mathrm{eu}}^2+m^2>0 ,
 $$
 positive because the Hermitian form is positive definite and not because the axes are rotated, so the propagator has no real pole and the Lorentzian mass shell maps to complex momentum. The positivity of the thermal correlator is the Bochner theorem at the central root, $\rho=i$, the root of the kernel $\exp(i\omega_n\tau)$. The frequencies are $\omega_n=2\pi n/\beta$ (bosonic) and $\omega_n=(2n+1)\pi/\beta$ (fermionic), the two grading classes' Fourier spectra. The sum rules
 $$
@@ -282,9 +282,9 @@ were checked numerically ($0.4463328$ and $0.3314319$ against $0.4463329$ and $0
 | $\tilde{Ξ}(\tau+\beta)=\pm\tilde{Ξ}(\tau)$ | Periodic (boson) / antiperiodic (fermion) |
 | $\omega_n=2\pi n/\beta$ | Bosonic Matsubara frequencies |
 | $\bar\omega_n=(2n+1)\pi/\beta$ | Fermionic Matsubara frequencies |
-| $\tilde P_E=i\omega_ne_t+\vec p\in\mathbb{B}_{\Phi}$ | material wave biquaternion of the thermal grid |
-| $\langle\tilde P_E\rangle_{\natural}=-\omega_n^2+\vec p^2$, $\langle\tilde P_E,\tilde P_E\rangle_{*}=k_{\mathrm{eu}}^2=\omega_n^2+\vec p^2$ | the interval (indefinite) and the probability form (positive) of the same element |
-| $\mathcal{M}_E=\langle\tilde P_E,\tilde P_E\rangle_{*}+m^2=k_{\mathrm{eu}}^2+m^2$ | Euclidean mass-shell operator (Hermitian form of the material element) |
+| $\tilde P_{\Phi,E}=i\omega_ne_t+\vec p\in\mathbb{B}_{\Phi}$ | material wave biquaternion of the thermal grid |
+| $\langle\tilde P_{\Phi,E}\rangle_{\natural}=-\omega_n^2+\vec p^2$, $\langle\tilde P_{\Phi,E},\tilde P_{\Phi,E}\rangle_{*}=k_{\mathrm{eu}}^2=\omega_n^2+\vec p^2$ | the interval (indefinite) and the probability form (positive) of the same element |
+| $\mathcal{M}_E=\langle\tilde P_{\Phi,E},\tilde P_{\Phi,E}\rangle_{*}+m^2=k_{\mathrm{eu}}^2+m^2$ | Euclidean mass-shell operator (Hermitian form of the material element) |
 | $D_E=1/(k_{\mathrm{eu}}^2+m^2)$ | Euclidean (thermal) propagator |
 | $(1/\beta)\sum_n$ | Matsubara sum replacing $\int dp^0/2\pi$ |
 | $Z=\mathrm{Tr}\,\exp(-\beta H)=\int_{\text{per}}\mathcal{D}\tilde{Ξ}\,\exp(-S_E)$ | Thermal partition function |

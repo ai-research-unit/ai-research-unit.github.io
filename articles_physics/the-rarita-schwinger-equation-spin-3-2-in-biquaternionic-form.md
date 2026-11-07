@@ -58,9 +58,9 @@ The equation is the Euler–Lagrange equation of the Rarita–Schwinger Lagrangi
 
 ### The constraint and the reduction
 
-**The massive equation implies the trace in two contractions**, and the same two contractions deliver the reduced dynamics. Write $\tilde S:=\tilde{Ξ}_{\mathrm{sp},0}+\sum_k\vec e_k\tilde{Ξ}_{\mathrm{sp},k}\vec e_z$ for the trace element of the family. The first contraction is the divergence of the equation: the kinetic structure is antisymmetric in its first and third indices, so the divergence kills it, and what survives is the divergence of the trace. The second is the contraction with the raised direction, which turns the equation into the trace element itself. In the algebra the two results are the two constraints of the framework, and for $m\neq0$ both hold as consequences and not as conditions:
+**The massive equation implies the trace in two contractions**, and the same two contractions deliver the reduced dynamics. Write $\tilde S_{\Psi}:=\tilde{Ξ}_{\mathrm{sp},0}+\sum_k\vec e_k\tilde{Ξ}_{\mathrm{sp},k}\vec e_z$ for the trace element of the family. The first contraction is the divergence of the equation: the kinetic structure is antisymmetric in its first and third indices, so the divergence kills it, and what survives is the divergence of the trace. The second is the contraction with the raised direction, which turns the equation into the trace element itself. In the algebra the two results are the two constraints of the framework, and for $m\neq0$ both hold as consequences and not as conditions:
 $$
-\tilde S=0,\qquad \sum_\mu\varepsilon_\mu\,\partial/\partial x_\mu\,\tilde{Ξ}_{\mathrm{sp},\mu}=0 ,
+\tilde S_{\Psi}=0,\qquad \sum_\mu\varepsilon_\mu\,\partial/\partial x_\mu\,\tilde{Ξ}_{\mathrm{sp},\mu}=0 ,
 $$
 the second following from the divergence of the equation once the first holds. The trace is therefore a consequence of the massive equation, and so is the divergence. Both were checked at generic on-shell momenta: the solution space of the equation is four-dimensional, the trace element and the divergence vanish on it to machine precision, and adjoining either condition does not lower the dimension.
 
@@ -68,11 +68,11 @@ the second following from the divergence of the equation once the first holds. T
 
 **The antisymmetrized equation is thus equivalent to the pair on each component together with the trace**, and, through them, the covariant divergence. The mass term regenerates the pair on each component, so that the reduced dynamics is the one the companion Dirac article supplies. The trace constraint removes one Dirac field's worth of components from the sixteen, and it is the part of the reduction that the algebra can state as a single element.
 
-**The massless case separates the constraints**, and the separation is what the gauge freedom is for. For $m=0$ the same two contractions no longer force the trace: $\tilde S=0$ is not contained in the equation, and adjoining it lowers the solution space from six dimensions to four. Both numbers were checked at generic lightlike momenta. The covariant divergence is a different matter, because its four components are linear combinations of the components of the equation: $\sum_\mu\varepsilon_\mu\partial/\partial x_\mu\tilde{Ξ}_{\mathrm{sp},\mu}=0$ remains a consequence of the equation even when the mass vanishes, and adjoining it lowers nothing. It is in the massless case that the **gauge freedom**
+**The massless case separates the constraints**, and the separation is what the gauge freedom is for. For $m=0$ the same two contractions no longer force the trace: $\tilde S_{\Psi}=0$ is not contained in the equation, and adjoining it lowers the solution space from six dimensions to four. Both numbers were checked at generic lightlike momenta. The covariant divergence is a different matter, because its four components are linear combinations of the components of the equation: $\sum_\mu\varepsilon_\mu\partial/\partial x_\mu\tilde{Ξ}_{\mathrm{sp},\mu}=0$ remains a consequence of the equation even when the mass vanishes, and adjoining it lowers nothing. It is in the massless case that the **gauge freedom**
 $$
 \tilde{Ξ}_{\mathrm{sp},\mu} \longrightarrow \tilde{Ξ}_{\mathrm{sp},\mu} + \partial/\partial x_\mu\,\epsilon,
 $$
-appears, with $\epsilon$ an arbitrary Dirac field: the antisymmetrized kinetic structure is built from the field strength $\partial/\partial x_\rho\,\tilde{Ξ}_{\mathrm{sp},\sigma}$, which changes by a symmetric derivative that the antisymmetrization discards. The gauge freedom is the spin-$\tfrac32$ analogue of the electromagnetic gauge freedom, it is what removes the spin-$\tfrac12$ branch that the vector index introduces, and it is also what makes the trace usable: the trace values that occur on the massless solution space span a space of dimension two, exactly the space of trace shifts a gauge transformation can produce, so the gauge $\tilde S=0$ is attainable and the trace is a complete gauge choice rather than a derived constraint.
+appears, with $\epsilon$ an arbitrary Dirac field: the antisymmetrized kinetic structure is built from the field strength $\partial/\partial x_\rho\,\tilde{Ξ}_{\mathrm{sp},\sigma}$, which changes by a symmetric derivative that the antisymmetrization discards. The gauge freedom is the spin-$\tfrac32$ analogue of the electromagnetic gauge freedom, it is what removes the spin-$\tfrac12$ branch that the vector index introduces, and it is also what makes the trace usable: the trace values that occur on the massless solution space span a space of dimension two, exactly the space of trace shifts a gauge transformation can produce, so the gauge $\tilde S_{\Psi}=0$ is attainable and the trace is a complete gauge choice rather than a derived constraint.
 
 ### Representation content
 
@@ -94,13 +94,13 @@ under $SU(2)$, of dimensions $2\cdot4 + 4\cdot2 = 16$. Two spin-$\tfrac32$ multi
 
 ### Counting the physical states
 
-**Two independent conditions remove the spin-$\tfrac12$ content**, and because they act on different structures their effects add on the component count. The **algebraic trace** $\tilde S=0$ removes one Dirac field's worth of components, which is two spin-$\tfrac12$ multiplets. The **gauge freedom** in the massless case removes another Dirac field's worth, another two spin-$\tfrac12$ multiplets. What is left is the two spin-$\tfrac32$ multiplets, of total dimension eight, and for each frequency sign that is the four-dimensional quartet of a spin-$\tfrac32$ particle. In the massive case the gauge freedom is absent, and the second pair of spin-$\tfrac12$ multiplets is removed instead by the subsidiary conditions that follow from the equation; the physical count is the same four states per charge.
+**Two independent conditions remove the spin-$\tfrac12$ content**, and because they act on different structures their effects add on the component count. The **algebraic trace** $\tilde S_{\Psi}=0$ removes one Dirac field's worth of components, which is two spin-$\tfrac12$ multiplets. The **gauge freedom** in the massless case removes another Dirac field's worth, another two spin-$\tfrac12$ multiplets. What is left is the two spin-$\tfrac32$ multiplets, of total dimension eight, and for each frequency sign that is the four-dimensional quartet of a spin-$\tfrac32$ particle. In the massive case the gauge freedom is absent, and the second pair of spin-$\tfrac12$ multiplets is removed instead by the subsidiary conditions that follow from the equation; the physical count is the same four states per charge.
 
 The counting is therefore representation-theoretic and does not depend on the detailed form of the antisymmetrizations: any first-order equation whose solutions are pure spin-$\tfrac32$ must remove exactly the four spin-$\tfrac12$ multiplets from the tensor product, and the trace constraint and the gauge freedom are the two mechanisms that do it. This is the reason the field is the minimal carrier of spin $\tfrac32$: the next tensor product that could carry it, the three-index object, would carry still more lower-spin admixture, and the two-index object is the smallest that contains $\tfrac32$ at all.
 
 ### The known difficulties
 
-In the massive case the constraint structure is rigid: the equation implies the trace $\tilde S=0$ and the covariant divergence $\sum_\mu\varepsilon_\mu\partial/\partial x_\mu\tilde{Ξ}_{\mathrm{sp},\mu}=0$, there is no gauge freedom to remove the remaining components, and the resulting theory has the right free-field content but is known to be inconsistent upon minimal coupling to an external electromagnetic field. The propagation becomes acausal for sufficiently strong backgrounds, the Velo–Zwanziger obstruction, and a consistent interacting spin-$\tfrac32$ theory requires a gravitational or gauge principle rather than a fixed background. This is the standard status of the field, and it is recorded here because the biquaternion formulation does not alter it: the algebra rewrites the free equation faithfully, and the difficulties belong to the coupling.
+In the massive case the constraint structure is rigid: the equation implies the trace $\tilde S_{\Psi}=0$ and the covariant divergence $\sum_\mu\varepsilon_\mu\partial/\partial x_\mu\tilde{Ξ}_{\mathrm{sp},\mu}=0$, there is no gauge freedom to remove the remaining components, and the resulting theory has the right free-field content but is known to be inconsistent upon minimal coupling to an external electromagnetic field. The propagation becomes acausal for sufficiently strong backgrounds, the Velo–Zwanziger obstruction, and a consistent interacting spin-$\tfrac32$ theory requires a gravitational or gauge principle rather than a fixed background. This is the standard status of the field, and it is recorded here because the biquaternion formulation does not alter it: the algebra rewrites the free equation faithfully, and the difficulties belong to the coupling.
 
 ## The Field in the Biquaternion Framework
 
@@ -153,9 +153,9 @@ where the first line of the second display is the algebra reading of the source'
 
 **The trace in the algebra.** The source's trace contracts the family with the four directions. Each of the three spatial components is multiplied by its direction on the left and by $\vec e_z$ on the right, the time component by neither, and the four results are added into one element of $\mathbb{B}$,
 $$
-\tilde S=\tilde{Ξ}_{\mathrm{sp},0}+\sum_k\vec e_k\tilde{Ξ}_{\mathrm{sp},k}\,\vec e_z ,
+\tilde S_{\Psi}=\tilde{Ξ}_{\mathrm{sp},0}+\sum_k\vec e_k\tilde{Ξ}_{\mathrm{sp},k}\,\vec e_z ,
 $$
-so the source's condition is equivalent to $\tilde S=0$. The two forms carry the same four complex conditions, and the map from the sixteen complex components to those four has rank four, checked exactly. The right multiplier $\vec e_z$ is what the three spatial directions leave behind, and it is not decoration: without it the condition is a different map of the same rank, with a different kernel, checked. The condition is frame-free: both sides are elements of $\mathbb{B}$, and no frame enters.
+so the source's condition is equivalent to $\tilde S_{\Psi}=0$. The two forms carry the same four complex conditions, and the map from the sixteen complex components to those four has rank four, checked exactly. The right multiplier $\vec e_z$ is what the three spatial directions leave behind, and it is not decoration: without it the condition is a different map of the same rank, with a different kernel, checked. The condition is frame-free: both sides are elements of $\mathbb{B}$, and no frame enters.
 
 **The mass term is frame-free.** With the entries read as above, the mass term of the $\mu$-th equation is left multiplication by the element $\Gamma_{\mu\nu}$ of $\mathbb{B}$, contracted with the corresponding component. No frame appears in the result, and the mass term is therefore a statement about the algebra and not about a display.
 
@@ -181,7 +181,7 @@ which is the algebraic form of the transverse condition on the three spatial amp
 
 **The constraint is diagonal in the two values.** The multiplier $\omega=-\vec e_z$ commutes with the $\vec e_z$ that closes every spatial term of the trace, so
 $$
-\tilde S(\tilde{Ξ}_{\mathrm{sp}}\omega)=\tilde S(\tilde{Ξ}_{\mathrm{sp}})\,\omega ,
+\tilde S_{\Psi}(\tilde{Ξ}_{\mathrm{sp}}\omega)=\tilde S_{\Psi}(\tilde{Ξ}_{\mathrm{sp}})\,\omega ,
 $$
 and the constraint therefore constrains each value on its own.
 
@@ -247,15 +247,15 @@ m\sum_\nu \Gamma_{\mu\nu}\,\tilde{Ξ}_{\mathrm{sp},\nu} ,
 $$
 left multiplication by the element of $\mathbb{B}$ tabulated in §*The Field in the Biquaternion Framework*, contracted with the corresponding component of the field. In the trace form of the equation it is simply the mass on each component, and the mass plays the same structural role as in the Proca and Dirac cases: it is linear in the field, it is what remains when the gauge freedom is absent, and it fixes the dispersion relation on the physical shell through the pair. In the rest frame the massive reduction above is the whole story: time component zero, the three spatial components transverse, four states.
 
-**The massive case is also where the known difficulty lives.** The constraint analysis that produces $\tilde S=0$ and $\sum_\mu\varepsilon_\mu\partial/\partial x_\mu\tilde{Ξ}_{\mathrm{sp},\mu}=0$ is rigid when $m\neq0$, and its consequences for the interacting theory are the Velo–Zwanziger obstruction: minimal coupling to a background electromagnetic field makes some modes propagate faster than light, and the theory is not causal as a fixed-background field theory. The biquaternion formulation reproduces the free constraint structure exactly and says nothing different about the coupling, because the coupling is an additional structure that no rewriting of the free equation can supply. This is the analogue, for spin $\tfrac32$, of the statement recorded for the Proca field: the algebra represents the free field faithfully, and what the free algebra cannot decide is the interaction.
+**The massive case is also where the known difficulty lives.** The constraint analysis that produces $\tilde S_{\Psi}=0$ and $\sum_\mu\varepsilon_\mu\partial/\partial x_\mu\tilde{Ξ}_{\mathrm{sp},\mu}=0$ is rigid when $m\neq0$, and its consequences for the interacting theory are the Velo–Zwanziger obstruction: minimal coupling to a background electromagnetic field makes some modes propagate faster than light, and the theory is not causal as a fixed-background field theory. The biquaternion formulation reproduces the free constraint structure exactly and says nothing different about the coupling, because the coupling is an additional structure that no rewriting of the free equation can supply. This is the analogue, for spin $\tfrac32$, of the statement recorded for the Proca field: the algebra represents the free field faithfully, and what the free algebra cannot decide is the interaction.
 
 ### The dispersion relation
 
 **Because each component satisfies the Dirac equation, each component satisfies the Klein–Gordon equation on squaring**, exactly as in the spin-$\tfrac12$ case. For a biquaternion plane wave of the component,
 $$
-\tilde{Ξ}_{\mathrm{sp},\mu} = \tilde{Ξ}_{\mathrm{sp},\mu,0}\,\exp(\,i\,\mathrm{Sc}\frac{k_m\,\tilde{P}\,\tilde{Q}^{\natural}}{m\,c}),
+\tilde{Ξ}_{\mathrm{sp},\mu} = \tilde{Ξ}_{\mathrm{sp},\mu,0}\,\exp(\,i\,\mathrm{Sc}\frac{k_m\,\tilde{P}_{\Phi}\,\tilde{Q}^{\natural}}{m\,c}),
 $$
-with $\tilde Q=x_0e_t+\sum_k x_k\vec e_k$ the coordinate element and $\tilde P=p_0e_t+\sum_k p_k\vec e_k$ its conjugate momentum, the Dirac equation on the component requires $\tilde P\tilde P^{\natural}= -m^{2}\,c^{2}$ in the normalization of the companion Dirac article, that is,
+with $\tilde Q=x_0e_t+\sum_k x_k\vec e_k$ the coordinate element and $\tilde P_{\Phi}=p_0e_t+\sum_k p_k\vec e_k$ its conjugate momentum, the Dirac equation on the component requires $\tilde P_{\Phi}\tilde P_{\Phi}^{\natural}= -m^{2}\,c^{2}$ in the normalization of the companion Dirac article, that is,
 $$
 \frac{\varpi^2}{c^2} - \vec k^2 = k_m^{2},
 \qquad\text{i.e.}\qquad
@@ -281,7 +281,7 @@ In each row the physical component count is $2s+1$ for the particle, and the equ
 
 **The standard part.** The vector-valued field, the antisymmetrized equation, the trace constraint, the gauge freedom, the reduction to the Dirac equation, the spin-$\tfrac32$ content, and the Velo–Zwanziger difficulty are all standard and are transcribed here. The representation-theory count $2\times\tfrac32\oplus4\times\tfrac12$ and the reduction $1\otimes\tfrac12=\tfrac32\oplus\tfrac12$ are standard.
 
-**The algebra's part.** Three statements are the framework's. First, the natural carrier of the field is the family of biquaternion-valued components $\tilde{Ξ}_{\mathrm{sp},\mu}$, and the two structural conditions of the free theory, the chiral pair on each component and the trace constraint $\tilde S=0$, are each single algebraic statements in $\mathbb{B}$ rather than lists of component equations. The antisymmetrized equation is a transcription of the pair, not a third condition. Second, the source's $i$ is the right multiplier $\omega=-\vec e_z$, whose square is $-e_t$; it commutes with the trace map and with the pair, so the structure of the field's two values needs no operator beyond the units the algebra already has. Third, the condition $\sum_k\vec e_k\tilde\xi_k=0$ gives the transverse map $T$ by elementary algebra, and its boosted form is the rotor conjugate of the rest-frame map, so the covariant condition is available without a separate construction.
+**The algebra's part.** Three statements are the framework's. First, the natural carrier of the field is the family of biquaternion-valued components $\tilde{Ξ}_{\mathrm{sp},\mu}$, and the two structural conditions of the free theory, the chiral pair on each component and the trace constraint $\tilde S_{\Psi}=0$, are each single algebraic statements in $\mathbb{B}$ rather than lists of component equations. The antisymmetrized equation is a transcription of the pair, not a third condition. Second, the source's $i$ is the right multiplier $\omega=-\vec e_z$, whose square is $-e_t$; it commutes with the trace map and with the pair, so the structure of the field's two values needs no operator beyond the units the algebra already has. Third, the condition $\sum_k\vec e_k\tilde\xi_k=0$ gives the transverse map $T$ by elementary algebra, and its boosted form is the rotor conjugate of the rest-frame map, so the covariant condition is available without a separate construction.
 
 **What is imported.** The identification of the field with a spin-$\tfrac32$ particle, the value of the mass, the existence of a consistent interaction, and the resolution of the Velo–Zwanziger problem are inputs beyond the free algebra. The canonical quantisation of the field and its propagator belong to the field-theoretic companion subcategory.
 
@@ -329,7 +329,7 @@ The field is a tensor product of the algebra's four-vector structure and its Dir
 | $\epsilon$ | Dirac-field parameter of the massless shift symmetry |
 | $\Gamma_{0k}=i\vec e_k$, $\Gamma_{k0}=-i\vec e_k$, $\Gamma_{jk}=\pm\vec e_l$ | Mass-term coefficients in $\mathbb{B}$; the mass term is left multiplication by $\Gamma_{\mu\nu}$ |
 | $\varepsilon_\mu=-g_{\mu\mu}=(1,-1,-1,-1)$ | Sign vector of the frame; the metric weight of a contracted low index |
-| $\tilde S=\tilde{Ξ}_{\mathrm{sp},0}+\sum_k\vec e_k\tilde{Ξ}_{\mathrm{sp},k}\vec e_z$ | Trace element; the source's trace, four complex conditions of rank four |
+| $\tilde S_{\Psi}=\tilde{Ξ}_{\mathrm{sp},0}+\sum_k\vec e_k\tilde{Ξ}_{\mathrm{sp},k}\vec e_z$ | Trace element; the source's trace, four complex conditions of rank four |
 | $\operatorname{div}\tilde{Ξ}_{\mathrm{sp}}=\sum_\mu\varepsilon_\mu\partial/\partial x_\mu\tilde{Ξ}_{\mathrm{sp},\mu}$ | Covariant divergence; a consequence of the equation for every $m$ |
 | $\tilde\nabla\tilde{Ξ}_{\mathrm{sp},\mu,R}=k_m\tilde{Ξ}_{\mathrm{sp},\mu,L}$, $\tilde\nabla^{\natural}\tilde{Ξ}_{\mathrm{sp},\mu,L}=k_m\tilde{Ξ}_{\mathrm{sp},\mu,R}$ | Chiral pair on each component; the dynamics |
 | $\tilde\xi_k$ | The three spatial components at rest |
@@ -337,7 +337,7 @@ The field is a tensor product of the algebra's four-vector structure and its Dir
 | $T_{\mu\nu\rho}$, $h_{\mu\nu}$ | The source's antisymmetrized triple and pair, objects of one display; kinetic and mass structures |
 | $E_\mu$ | The source's generator with index $\mu$, an object of the display and not an element of $\mathbb{B}$ |
 | $\varpi$ | Angular frequency of a plane wave; not $\omega$ |
-| $\tilde Q$, $\tilde P$ | Coordinate and momentum elements of a plane wave, $\tilde Q=x_0e_t+\sum_kx_k\vec e_k$ |
+| $\tilde Q$, $\tilde P_{\Phi}$ | Coordinate and momentum elements of a plane wave, $\tilde Q=x_0e_t+\sum_kx_k\vec e_k$ |
 | $2\times\tfrac32\oplus4\times\tfrac12$ | $SU(2)$ content of the field |
 
 ## Further Reading

@@ -56,7 +56,7 @@ $$
 \boxed{\;\rho_1 = \mathrm{Tr}_2(\tilde\Pi_{\mathrm{singlet}}) = \tfrac{1}{2}e_t\;}.
 $$
 
-This is the maximally mixed state of a qubit, at the centre of the Bloch ball. Its purity is $\mathrm{Tr}(\tilde{Ϛ}_1^2) = \tfrac{1}{2}$ and its von Neumann entropy is $\log 2$. In the biquaternion formulation, this mixedness is read off directly. The singlet contains no terms of the form $\vec e_\mu\otimes e_t$ with $\mu \in \{x,y,z\}$, and the entangled terms $\vec e_\mu\otimes \vec e_\mu$ with $\mu \in \{x,y,z\}$ are traceless in the second factor: $\mathrm{Tr}_2(\vec e_\mu\otimes \vec e_\mu) = \vec e_\mu\,\mathrm{Tr}_\mathbb{B}(\vec e_\mu) = 0$. So the partial trace keeps only the $e_t\otimes e_t$ term and produces the scalar-only element $\tfrac{1}{2}e_t$, which is not idempotent. The mixedness of the reduced state is the algebraic trace of the entanglement of the joint state.
+This is the maximally mixed state of a qubit, at the centre of the Bloch ball. Its purity is $\mathrm{Tr}(\tilde{Ϛ}_{\Psi,1}^2) = \tfrac{1}{2}$ and its von Neumann entropy is $\log 2$. In the biquaternion formulation, this mixedness is read off directly. The singlet contains no terms of the form $\vec e_\mu\otimes e_t$ with $\mu \in \{x,y,z\}$, and the entangled terms $\vec e_\mu\otimes \vec e_\mu$ with $\mu \in \{x,y,z\}$ are traceless in the second factor: $\mathrm{Tr}_2(\vec e_\mu\otimes \vec e_\mu) = \vec e_\mu\,\mathrm{Tr}_\mathbb{B}(\vec e_\mu) = 0$. So the partial trace keeps only the $e_t\otimes e_t$ term and produces the scalar-only element $\tfrac{1}{2}e_t$, which is not idempotent. The mixedness of the reduced state is the algebraic trace of the entanglement of the joint state.
 
 ### The correlation function as a bilinear pairing
 
@@ -97,13 +97,13 @@ This is the biquaternion expression of EPR steering. The collapse of the joint s
 The last observation is the algebraic content of the no-communication theorem. If Alice applies a local $*$-unitary operation $\tilde Q\otimes e_t$ to the joint state, the reduced state of particle 2 is unchanged:
 
 $$
-\mathrm{Tr}_1\!\left((\tilde{U}\otimes e_t)\,\tilde{Ϛ}\,(\tilde{U}^{*}\otimes e_t)\right) = \mathrm{Tr}_1(\tilde{Ϛ}),
+\mathrm{Tr}_1\!\left((\tilde{U}\otimes e_t)\,\tilde{Ϛ}_{\Psi}\,(\tilde{U}^{*}\otimes e_t)\right) = \mathrm{Tr}_1(\tilde{Ϛ}_{\Psi}),
 $$
 
-where $\mathrm{Tr}_1$ denotes the partial trace over particle 1. This is a direct consequence of the cyclicity of the trace: for any element $\tilde{Ϛ} = \sum_i a_i\otimes b_i$ of the tensor product,
+where $\mathrm{Tr}_1$ denotes the partial trace over particle 1. This is a direct consequence of the cyclicity of the trace: for any element $\tilde{Ϛ}_{\Psi} = \sum_i a_i\otimes b_i$ of the tensor product,
 
 $$
-\mathrm{Tr}_1\!\left((\tilde{U}\otimes e_t)\,\tilde{Ϛ}\,(\tilde{U}^{*}\otimes e_t)\right) = \sum_i \mathrm{Tr}_\mathbb{B}(\tilde{U}a_i\tilde{U}^{*})\,b_i = \sum_i \mathrm{Tr}_\mathbb{B}(a_i)\,b_i = \mathrm{Tr}_1(\tilde{Ϛ}).
+\mathrm{Tr}_1\!\left((\tilde{U}\otimes e_t)\,\tilde{Ϛ}_{\Psi}\,(\tilde{U}^{*}\otimes e_t)\right) = \sum_i \mathrm{Tr}_\mathbb{B}(\tilde{U}a_i\tilde{U}^{*})\,b_i = \sum_i \mathrm{Tr}_\mathbb{B}(a_i)\,b_i = \mathrm{Tr}_1(\tilde{Ϛ}_{\Psi}).
 $$
 
 No-signaling is not a dynamical theorem in this interpretation; it is the cyclicity of the trace, applied to the partial trace. It says that correlations are real, that they are a property of the joint state, and that no local operation on one factor can be detected by measurements on the other.
@@ -263,7 +263,7 @@ The honest position is this. The framework makes certain structural features of 
 | $\tilde\Pi_{\mathrm{singlet}} = \tfrac{1}{4}(e_t\otimes e_t + \sum_\mu \vec e_\mu\otimes \vec e_\mu)$ | Singlet idempotent |
 | $\tilde\Pi(\pm\vec u_a) = \tfrac{1}{2}(e_t \pm i\vec u_a)$ | Single-qubit idempotents along $\vec u_a$ |
 | $\mathrm{Tr}_2(a\otimes b) = a\,\mathrm{Tr}_\mathbb{B}(b)$ | Partial trace over the second factor |
-| $\tilde{Ϛ}_1 = \mathrm{Tr}_2(\tilde\Pi_{\mathrm{singlet}}) = \tfrac{1}{2}e_t$ | Reduced state of particle 1 |
+| $\tilde{Ϛ}_{\Psi,1} = \mathrm{Tr}_2(\tilde\Pi_{\mathrm{singlet}}) = \tfrac{1}{2}e_t$ | Reduced state of particle 1 |
 | $E(\vec u_a, \vec u_b) = \langle\tilde\Pi_{\mathrm{singlet}},(i\vec u_a)\otimes(i\vec u_b)\rangle_{*}/\langle\tilde\Pi_{\mathrm{singlet}},e_t\otimes e_t\rangle_{*} = \operatorname{Tr}(\cdots)$ | Correlation function (trace at normalisation) |
 | $\tilde Q\tilde Q^{*} = e_t$ | $*$-Unitary element (reversible evolution) |
 | $\tilde\Pi^2 = \tilde\Pi$ | Idempotent element (irreversible projection) |

@@ -238,10 +238,10 @@ Both sit inside the central grade, since both have a real central coefficient; t
 
 ### The Two Norms on the State Slice
 
-Let $\tilde{Ϛ}$ be a trace-one positive element of the informational sector, written in the Bloch form
+Let $\tilde{Ϛ}_{\Psi}$ be a trace-one positive element of the informational sector, written in the Bloch form
 
 $$
-\tilde{Ϛ}=\tfrac{1}{2}\bigl(e_t+i\vec r\bigr),
+\tilde{Ϛ}_{\Psi}=\tfrac{1}{2}\bigl(e_t+i\vec r\bigr),
 \qquad
 \lvert\vec r\rvert\leq1 .
 $$
@@ -249,16 +249,16 @@ $$
 The two norms give two different numbers on this one element. The probability norm is the Hermitian norm,
 
 $$
-P(\tilde{Ϛ})=\langle\tilde{Ϛ}\rangle_{*}
-=\mathrm{Sc}\bigl(\tilde{Ϛ}\tilde{Ϛ}^{*}\bigr)
+P(\tilde{Ϛ}_{\Psi})=\langle\tilde{Ϛ}_{\Psi}\rangle_{*}
+=\mathrm{Sc}\bigl(\tilde{Ϛ}_{\Psi}\tilde{Ϛ}_{\Psi}^{*}\bigr)
 =\tfrac{1}{4}\bigl(1+\lvert\vec r\rvert^{2}\bigr),
 $$
 
 and the interval norm is the quaternionic norm,
 
 $$
-I(\tilde{Ϛ})=\langle\tilde{Ϛ}\rangle_{\natural}
-=\mathrm{Sc}\bigl(\tilde{Ϛ}^{\natural}\tilde{Ϛ}\bigr)
+I(\tilde{Ϛ}_{\Psi})=\langle\tilde{Ϛ}_{\Psi}\rangle_{\natural}
+=\mathrm{Sc}\bigl(\tilde{Ϛ}_{\Psi}^{\natural}\tilde{Ϛ}_{\Psi}\bigr)
 =\tfrac{1}{4}\bigl(1-\lvert\vec r\rvert^{2}\bigr).
 $$
 
@@ -285,7 +285,7 @@ $$
 The gap is maximal on the pure states, where the interval vanishes and the probability is one half; it vanishes at the maximally mixed element, where the two metrics agree. The gap is the **purity gap** and the interval is the mixedness. On the trace-one slice the gap is the trace purity shifted by one half,
 
 $$
-P-I=\operatorname{Tr}\bigl(\tilde{Ϛ}^{2}\bigr)-\tfrac12 ,
+P-I=\operatorname{Tr}\bigl(\tilde{Ϛ}_{\Psi}^{2}\bigr)-\tfrac12 ,
 $$
 
 while the trace purity is $2P=\tfrac12(1+\lvert\vec r\rvert^{2})$. The two differ by a constant on the slice: the gap is a monotone of purity, not the trace purity itself.
@@ -295,9 +295,9 @@ while the trace purity is $2P=\tfrac12(1+\lvert\vec r\rvert^{2})$. The two diffe
 The trace of the square and the linear entropy are the same two numbers read from the other side:
 
 $$
-\mathrm{Tr}\bigl(\tilde{Ϛ}^{2}\bigr)=\tfrac{1}{2}\bigl(1+\lvert\vec r\rvert^{2}\bigr)=2P,
+\mathrm{Tr}\bigl(\tilde{Ϛ}_{\Psi}^{2}\bigr)=\tfrac{1}{2}\bigl(1+\lvert\vec r\rvert^{2}\bigr)=2P,
 \qquad
-S_{\mathrm{lin}}\bigl(\tilde{Ϛ}\bigr)=1-\mathrm{Tr}\bigl(\tilde{Ϛ}^{2}\bigr)
+S_{\mathrm{lin}}\bigl(\tilde{Ϛ}_{\Psi}\bigr)=1-\mathrm{Tr}\bigl(\tilde{Ϛ}_{\Psi}^{2}\bigr)
 =\tfrac{1}{2}\bigl(1-\lvert\vec r\rvert^{2}\bigr)=2I .
 $$
 
@@ -462,7 +462,7 @@ The band has no clock element, and the phase is not one: the phase is the argume
 - **No clock element.** The band has no root of $-e_t$; the clock is imported as the parameter of a $*$-unitary family whose generator is material.
 - **No derivation of the Born rule.** The pairing and the trace formula supply the weight; the identification with a frequency is the hypothesis of the informational sector.
 - **The trichotomy is a grading.** The algebra fixes the three grades; the particle identification is a hypothesis, and no mass, charge or coupling is derived.
-- **The purity gap is a reading.** The identity $\mathrm{Tr}(\tilde{Ϛ}^{2})=2P$ is exact on the trace-one slice, and the gap is $P-I=\mathrm{Tr}(\tilde{Ϛ}^{2})-\tfrac12$; it is the trace purity shifted by a constant, and the name information content is the interpretation.
+- **The purity gap is a reading.** The identity $\mathrm{Tr}(\tilde{Ϛ}_{\Psi}^{2})=2P$ is exact on the trace-one slice, and the gap is $P-I=\mathrm{Tr}(\tilde{Ϛ}_{\Psi}^{2})-\tfrac12$; it is the trace purity shifted by a constant, and the name information content is the interpretation.
 - **The square is minimal, not unique.** Every even power crosses, and the Hermitian square crosses for every element; the square is the lowest crossing.
 - **The phase is cited.** The amplitude's argument is the local phase; the gauge-invariant Pancharatnam phase is the loop holonomy, and the connection and curvature belong to their owners.
 
@@ -486,7 +486,7 @@ The three grades of coefficient reality are the complex, central and real specie
 | $\mathbb{B}_{\Phi}$, $\mathbb{B}_{\Psi}$ | the anti-Hermitian and Hermitian sectors |
 | $\tilde\Upsilon$ | a nilpotent of the probability band |
 | $\{Q_1,Q_2,Q_3\}=Q_1Q_2^{*}Q_3$ | the ternary product of the band |
-| $\tilde{Ϛ}=\tfrac{1}{2}(e_t+i\vec r)$ | a trace-one state in the Bloch form |
+| $\tilde{Ϛ}_{\Psi}=\tfrac{1}{2}(e_t+i\vec r)$ | a trace-one state in the Bloch form |
 | $P$, $I$ | the probability norm and the interval norm on the state slice |
 | $A=\langle\tilde{Ξ}_{\mathrm{sp},1},\tilde{Ξ}_{\mathrm{sp},2}\rangle_{*}$ | the amplitude |
 | $\Gamma$ | the Pancharatnam phase of a closed circuit |

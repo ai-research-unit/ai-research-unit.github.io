@@ -238,12 +238,12 @@ $$
 The first three terms are scalars in the position and in the orbital variables, while $S$ is diagonal in the basis of states of definite oscillator number $N$, definite $l$ and definite total angular momentum, and takes the two values above. The total angular momentum is the Hermitian element
 
 $$
-\tilde S_{\mathrm{tot},k}=L_{\mathrm{orb},k}e_t+\tilde S_k,
+\tilde S_{\Psi,\mathrm{tot},k}=L_{\mathrm{orb},k}e_t+\tilde S_{\Psi,k},
 \qquad
-\tilde S_k=\frac{m\,c}{2\,k_m}i\vec e_k ,
+\tilde S_{\Psi,k}=\frac{m\,c}{2\,k_m}i\vec e_k ,
 $$
 
-acting by left multiplication, and the contraction obeys $\sum_k(L_{\mathrm{orb},k}e_t)\tilde S_k=\tfrac12(\tilde S_{\mathrm{tot}}^2-\vec L^{\,2}-\tfrac34\frac{m^{2}\,c^{2}\,e_{t}}{k_m^{2}})$, so the two values of $S$ are read from the Casimir alone: $+\frac{m\,c\,l}{k_m}$ for $s_{\mathrm{tot}}=l+\tfrac12$ and $-\frac{m\,c\,(l+1)}{k_m}$ for $s_{\mathrm{tot}}=l-\tfrac12$. With $\vec p^{\,2} + m^2\omega^2\vec r^{\,2} -\frac{3\,m^{2}\,c\,\omega}{k_m} =\frac{2\,m^{2}\,c\,\omega}{k_m} N$ and $N = 2n_r + l$, and writing $\mathcal{S}=\frac{k_m\,S}{m\,c}$ for the dimensionless value,
+acting by left multiplication, and the contraction obeys $\sum_k(L_{\mathrm{orb},k}e_t)\tilde S_{\Psi,k}=\tfrac12(\tilde S_{\Psi,\mathrm{tot}}^2-\vec L^{\,2}-\tfrac34\frac{m^{2}\,c^{2}\,e_{t}}{k_m^{2}})$, so the two values of $S$ are read from the Casimir alone: $+\frac{m\,c\,l}{k_m}$ for $s_{\mathrm{tot}}=l+\tfrac12$ and $-\frac{m\,c\,(l+1)}{k_m}$ for $s_{\mathrm{tot}}=l-\tfrac12$. With $\vec p^{\,2} + m^2\omega^2\vec r^{\,2} -\frac{3\,m^{2}\,c\,\omega}{k_m} =\frac{2\,m^{2}\,c\,\omega}{k_m} N$ and $N = 2n_r + l$, and writing $\mathcal{S}=\frac{k_m\,S}{m\,c}$ for the dimensionless value,
 
 $$
 \boxed{\;E^2 = m^2c^4 +\frac{2\,m^{2}\,c\,\omega}{k_m} c^2\left(N - \mathcal{S}\right)
@@ -325,12 +325,12 @@ Three structural statements can now be made in the algebra.
 $$
 -2m\omega\,S=-2m\omega\sum_k  L_{\mathrm{orb},k}\,i\vec e_k
 \;\longleftrightarrow\;
--\dfrac{4\omega\,k_m}{c}\sum_k\bigl(L_{\mathrm{orb},k}e_t\bigr)\tilde S_k ,
+-\dfrac{4\omega\,k_m}{c}\sum_k\bigl(L_{\mathrm{orb},k}e_t\bigr)\tilde S_{\Psi,k} ,
 \qquad
-\tilde S_k=\frac{m\,c}{2\,k_m}i\vec e_k ,
+\tilde S_{\Psi,k}=\frac{m\,c}{2\,k_m}i\vec e_k ,
 $$
 
-a Hermitian element of $\mathbb{B}_{\Psi}$: $i\vec e_k$ is Hermitian, $L_{\mathrm{orb},k}$ is Hermitian, and the two commute. The spin is the Hermitian element $i\vec e_k$, the orbital angular momentum is the scalar operator $L_{\mathrm{orb},k}$, and the coupling is their contraction, which is the operator $\sum_kL_{\mathrm{orb},k}\tilde S_k$ of the hydrogen article up to the factor $-\frac{4\,k_m\,\omega}{c}$. That the remainder is Hermitian and not central is the algebraic statement that the oscillator's product is not the Klein–Gordon operator: the non-minimal term, unlike the mass, does not merely shift the eigenvalue, it adds a Hermitian element to the product.
+a Hermitian element of $\mathbb{B}_{\Psi}$: $i\vec e_k$ is Hermitian, $L_{\mathrm{orb},k}$ is Hermitian, and the two commute. The spin is the Hermitian element $i\vec e_k$, the orbital angular momentum is the scalar operator $L_{\mathrm{orb},k}$, and the coupling is their contraction, which is the operator $\sum_kL_{\mathrm{orb},k}\tilde S_{\Psi,k}$ of the hydrogen article up to the factor $-\frac{4\,k_m\,\omega}{c}$. That the remainder is Hermitian and not central is the algebraic statement that the oscillator's product is not the Klein–Gordon operator: the non-minimal term, unlike the mass, does not merely shift the eigenvalue, it adds a Hermitian element to the product.
 
 **The zero point is a commutator.** The constant $-\frac{3\,m^{2}\,c\,\omega}{k_m}$ comes from the commutator of position and momentum. The shift carries $\vec e_k\,(Q_k\tilde{Ξ}_{\mathrm{sp}})\,\vec e_y$ against the momentum $p_k$, and the two do not commute: their commutator is the central scalar $[Q_k,p_k]=\frac{m\,c\,i}{k_m}$, and the sum over the three directions is $\frac{3\,m\,c\,i}{k_m}$. The factor $im\omega$ of the substitution turns it into $-\frac{3\,m^{2}\,c\,\omega}{k_m}$ through one use of $i^2=-1$. This is why the aligned ground state sits at the mass gap: the commutator has removed the zero-point energy exactly, and the cancellation counts the number of spatial directions rather than any particular representation.
 
@@ -368,7 +368,7 @@ $$
 
 with the aligned branch independent of $l$ and hence an infinitely degenerate level at $E = \pm mc^2$. In one dimension the spin–orbit term is absent and the spectrum is $E^2 = m^2c^4 +\frac{2\,m^{2}\,c\,\omega}{k_m} c^2 n$, $n = 0,1,2,\dots$.
 
-In the biquaternion framework the substitution shifts the frame-odd part of the gradient, and in the actions its imaginary coefficient is spent on the action: the added term is $\tilde{Ξ}_{\mathrm{sp}}\mapsto-cm\omega\sum_k\vec e_k\,(Q_k\tilde{Ξ}_{\mathrm{sp}})\,\vec e_y$, a real coefficient times a Hermitian, frame-odd action. The product is central except for the Hermitian remainder $-2m\omega\sum_kL_{\mathrm{orb},k}i\vec e_k$, which in the elements is $-\dfrac{4\omega\,k_m}{c}\sum_k(L_{\mathrm{orb},k}e_t)\tilde S_k$. The zero-point cancellation is the sum of the commutator $[Q_k,p_k]=\frac{m\,c\,i}{k_m}$ over the three spatial directions, converted to $-\frac{3\,m^{2}\,c\,\omega}{k_m}$ by one factor $i^2=-1$. The zero modes of the shifted operator are the supersymmetric partner structure that the companion article develops. One field never carries the mass: the mass needs the pair, because $\tilde\nabla^2$ is not scalar, and the whole derivation uses the one gradient and its two shifts, with no matrix, no array and no Clifford generator.
+In the biquaternion framework the substitution shifts the frame-odd part of the gradient, and in the actions its imaginary coefficient is spent on the action: the added term is $\tilde{Ξ}_{\mathrm{sp}}\mapsto-cm\omega\sum_k\vec e_k\,(Q_k\tilde{Ξ}_{\mathrm{sp}})\,\vec e_y$, a real coefficient times a Hermitian, frame-odd action. The product is central except for the Hermitian remainder $-2m\omega\sum_kL_{\mathrm{orb},k}i\vec e_k$, which in the elements is $-\dfrac{4\omega\,k_m}{c}\sum_k(L_{\mathrm{orb},k}e_t)\tilde S_{\Psi,k}$. The zero-point cancellation is the sum of the commutator $[Q_k,p_k]=\frac{m\,c\,i}{k_m}$ over the three spatial directions, converted to $-\frac{3\,m^{2}\,c\,\omega}{k_m}$ by one factor $i^2=-1$. The zero modes of the shifted operator are the supersymmetric partner structure that the companion article develops. One field never carries the mass: the mass needs the pair, because $\tilde\nabla^2$ is not scalar, and the whole derivation uses the one gradient and its two shifts, with no matrix, no array and no Clifford generator.
 
 ## Summary of Notation
 
@@ -398,7 +398,7 @@ In the biquaternion framework the substitution shifts the frame-odd part of the 
 | $\mathcal{Q}_\pm:\ \tilde{Ξ}_{\mathrm{sp}}\mapsto \frac{m\,c\,i\,\vec \nabla_{\mp}\,\tilde{Ξ}_{\mathrm{sp}}\,\omega}{k_m}$ | Factorised conjugate actions; $\mathcal{Q}_+\mathcal{Q}_-=\frac{m^{2}\,c^{2}\,\vec \nabla_{-}\,\vec \nabla_{+}}{k_m^{2}}$ |
 | $\mathcal{Q}_+\mathcal{Q}_- = \vec p^{\,2}+m^2\omega^2\vec r^{\,2}-\frac{3\,m^{2}\,c\,\omega}{k_m}-2m\omega S$ | Operator identity |
 | $S = \sum_k L_{\mathrm{orb},k}\,i\vec e_k$ | Spin–orbit element, Hermitian; $S^2=\vec L^{\,2}-\frac{m\,c\,S}{k_m}$ |
-| $\tilde S_k =\frac{m\,c}{2\,k_m}i\vec e_k$, $\tilde S_{\mathrm{tot},k}=L_{\mathrm{orb},k}e_t+\tilde S_k$ | Spin and total angular momentum elements |
+| $\tilde S_{\Psi,k} =\frac{m\,c}{2\,k_m}i\vec e_k$, $\tilde S_{\Psi,\mathrm{tot},k}=L_{\mathrm{orb},k}e_t+\tilde S_{\Psi,k}$ | Spin and total angular momentum elements |
 | $\mathcal  S =\frac{k_m\,S}{m\,c}$ | Dimensionless value of the spin–orbit element |
 | $\vec L = \vec r\times\vec p$, $L_{\mathrm{orb},k}=\sum_{a,b}\epsilon_{kab}Q_ap_b$ | Orbital angular momentum |
 | $N = 2n_r + l$ | Total oscillator quantum number |

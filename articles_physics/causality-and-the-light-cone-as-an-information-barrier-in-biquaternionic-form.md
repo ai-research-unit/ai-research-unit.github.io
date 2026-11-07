@@ -102,7 +102,7 @@ $$
 
 so every nonzero displacement is invertible except the null ones.
 
-**The cone is the propagation locus.** The d'Alembertian of the algebra is the biquaternion norm of the gradient, $\Box = \tilde{\nabla}\tilde{\nabla}^{\natural}$, and a four-wavevector $\tilde P$ solves the massless dispersion relation $\langle\tilde P\rangle_{\natural} = 0$ exactly when it is null. For a null $\tilde P$ every function of the phase $\mathrm{Sc}(\tilde P\tilde{R}_\Phi^{\natural})$ solves the wave equation, so the null directions are the directions in which the algebra propagates without dispersion.
+**The cone is the propagation locus.** The d'Alembertian of the algebra is the biquaternion norm of the gradient, $\Box = \tilde{\nabla}\tilde{\nabla}^{\natural}$, and a four-wavevector $\tilde P_{\Phi}$ solves the massless dispersion relation $\langle\tilde P_{\Phi}\rangle_{\natural} = 0$ exactly when it is null. For a null $\tilde P_{\Phi}$ every function of the phase $\mathrm{Sc}(\tilde P_{\Phi}\tilde{R}_\Phi^{\natural})$ solves the wave equation, so the null directions are the directions in which the algebra propagates without dispersion.
 
 Two features of $\mathcal{Z}$ are used below. First, it is the common boundary of the three regions of the classification: $\langle\cdot\rangle_{\natural}$ is a continuous real function on $\mathbb{B}_{\Phi}$, its sign is locally constant off $\mathcal{Z}$, and a continuous path can change the sign only by passing through $\mathcal{Z}$. Second, the complement of $\mathcal{Z} \cup \{0\}$ has exactly three connected components: the spacelike region $N > 0$, and the two components of the timelike region $N < 0$, distinguished by the sign of $r'_t$, called the **future** and the **past**. This is the standard three-component structure of Minkowski space; it is what makes the cone a separating surface and not merely a level set.
 
@@ -110,7 +110,7 @@ Two features of $\mathcal{Z}$ are used below. First, it is the common boundary o
 
 ### Invariance of the Biquaternion Norm
 
-The Lorentz group acts on the material sector by rotor conjugation with the Lorentz rotor $\tilde U_{\mathrm{lor}}=\tilde U_{\mathrm b}\tilde u_{\mathrm r}$, where $\tilde U_{\mathrm b}$ is the Hermitian positive boost and $\tilde u_{\mathrm r}$ the rotation,
+The Lorentz group acts on the material sector by rotor conjugation with the Lorentz rotor $\tilde U_{\mathrm{lor}}=\tilde U_{\Psi,\mathrm b}\tilde u_{\mathrm r}$, where $\tilde U_{\Psi,\mathrm b}$ is the Hermitian positive boost and $\tilde u_{\mathrm r}$ the rotation,
 
 $$
 \tilde R_\Phi \;\longmapsto\; \tilde{R}_{\Phi,2} = \tilde U_{\mathrm{lor}}\,\tilde R_\Phi\,\tilde U_{\mathrm{lor}}{}^{*},
@@ -177,23 +177,23 @@ The order is also antisymmetric. If $p \preceq q$ and $q \preceq p$ then $\Delta
 The causal order is between events. A second barrier stands between observers, and it is expressed by the four-velocity biquaternion. For an observer with velocity $\vec v$, the four-velocity is
 
 $$
-\tilde{V} = \gamma\left(ic\,e_t + \vec v\right),
+\tilde{V}_{\Phi} = \gamma\left(ic\,e_t + \vec v\right),
 \qquad
 \gamma = \left(1 - \frac{\vec v^2}{c^2}\right)^{-1/2},
 \qquad
-\langle\tilde{V}\rangle_{\natural} = -c^2,
+\langle\tilde{V}_{\Phi}\rangle_{\natural} = -c^2,
 $$
 
-as in the companion article *Relativistic Mechanics in Biquaternionic Form*. For two observers with four-velocities $\tilde{V}_1, \tilde{V}_2$, the contraction
+as in the companion article *Relativistic Mechanics in Biquaternionic Form*. For two observers with four-velocities $\tilde{V}_{\Phi,1}, \tilde{V}_{\Phi,2}$, the contraction
 
 $$
-\boxed{\;-\,\frac{1}{c^2}\,\mathrm{Sc}\!\left(\tilde{V}_1\tilde{V}^{\natural}_2\right)
+\boxed{\;-\,\frac{1}{c^2}\,\mathrm{Sc}\!\left(\tilde{V}_{\Phi,1}\tilde{V}_{\Phi}^{\natural}_2\right)
 = \gamma_1\gamma_2\left(1 - \frac{\vec v_1\cdot\vec v_2}{c^2}\right)
 = \gamma_1\gamma_2\left(1 - \beta_1\beta_2\cos\theta\right)
 \equiv \gamma_{\mathrm{rel}}\;}
 $$
 
-is the Lorentz factor of their relative motion, where $\beta_i = |\vec v_i|/c$ and $\theta$ is the angle between the two velocities. The computation is the direct product of the two four-velocities in the coefficient representation; it uses $\tilde{V}^{\natural}_2 = \gamma_2(ic\,e_t - \vec v_2)$ and $\mathrm{Sc}((ic\,e_t+\vec v_1)\cdot(ic\,e_t-\vec v_2)) = -c^2 + \vec v_1\cdot\vec v_2$. The result is frame-independent because it is built from the invariant biquaternion norm, as it must be.
+is the Lorentz factor of their relative motion, where $\beta_i = |\vec v_i|/c$ and $\theta$ is the angle between the two velocities. The computation is the direct product of the two four-velocities in the coefficient representation; it uses $\tilde{V}_{\Phi}^{\natural}_2 = \gamma_2(ic\,e_t - \vec v_2)$ and $\mathrm{Sc}((ic\,e_t+\vec v_1)\cdot(ic\,e_t-\vec v_2)) = -c^2 + \vec v_1\cdot\vec v_2$. The result is frame-independent because it is built from the invariant biquaternion norm, as it must be.
 
 ### The Inequality That Makes the Barrier
 
@@ -254,7 +254,7 @@ This is the equal-rapidity orthogonal instance worked in the companion article *
 The barrier at $v = c$ has a second, group-theoretic expression, and it is the one that shows why the speed of light is unreachable rather than merely unexceeded. A boost is generated by the Hermitian unit-norm biquaternion
 
 $$
-\tilde U_{\mathrm b} = \cosh\frac{\theta_{\mathrm{rpd}}}{2} + i\sinh\frac{\theta_{\mathrm{rpd}}}{2}\,\vec u,
+\tilde U_{\Psi,\mathrm b} = \cosh\frac{\theta_{\mathrm{rpd}}}{2} + i\sinh\frac{\theta_{\mathrm{rpd}}}{2}\,\vec u,
 \qquad
 \tanh\theta_{\mathrm{rpd}} = \frac{v}{c},
 \qquad
@@ -291,7 +291,7 @@ $$
 
 A finite composition of boosts has a finite total rapidity $\theta_{\mathrm{rpd},1}+\cdots+\theta_{\mathrm{rpd},n}$, hence a speed strictly below $c$; to reach the cone one would need an infinite rapidity, and no finite sequence of subluminal operations supplies it. This is the sense in which the light cone lies at infinity in the group parameter. The barrier is not a ceiling that a process approaches and stops at; it is a limit that is approached but never attained, and the group is non-compact precisely because its boost parameter is unbounded. The check is elementary: composing the subluminal speed $\beta = 0.9$ with itself $n$ times in the hyperbolic sense gives $\beta_n = \tanh(n\,\mathrm{atanh}\,0.9)$, for which $1-\beta_n \approx 2\exp(-2n\,\mathrm{atanh}\,0.9)$; at $n = 5$ the deficit is $8.08\times10^{-7}$, at $n = 10$ it is $3.26\times10^{-13}$, and it remains positive for every finite $n$, becoming indistinguishable from zero in double precision only when the deficit falls below the representable range, near $n = 13$.
 
-The same bound appears in the contraction of a null wavevector with an observer, treated in the companion article *Exercise: The Relativistic Doppler Effect*: the measured frequency $-\mathrm{Sc}(\tilde P\tilde{V}^{\natural})$ is strictly positive for every future timelike $\tilde{V}$ and every future null $\tilde P$, so a light signal cannot be brought to zero frequency by a change of observer. The impossibility of bringing that contraction to zero, the impossibility of closing the relative-velocity deficit, and the vanishing of $\langle\tilde P\rangle_{\natural}$ are three faces of the same cone.
+The same bound appears in the contraction of a null wavevector with an observer, treated in the companion article *Exercise: The Relativistic Doppler Effect*: the measured frequency $-\mathrm{Sc}(\tilde P_{\Phi}\tilde{V}_{\Phi}^{\natural})$ is strictly positive for every future timelike $\tilde{V}_{\Phi}$ and every future null $\tilde P_{\Phi}$, so a light signal cannot be brought to zero frequency by a change of observer. The impossibility of bringing that contraction to zero, the impossibility of closing the relative-velocity deficit, and the vanishing of $\langle\tilde P_{\Phi}\rangle_{\natural}$ are three faces of the same cone.
 
 ### The Boundary of the Theorem: a Constant Rapidity
 
@@ -309,15 +309,15 @@ $$
 \Box = \tilde{\nabla}\tilde{\nabla}^{\natural} = \partial^2/\partial R_{1t}^2 + \Delta = \Delta + \partial^2/\partial R_{1t}^2,
 $$
 
-the series' d'Alembertian. For a wave whose phase is the scalar $s = \mathrm{Sc}(\tilde P\tilde{R}_\Phi^{\natural}) = -\omega r'_t + \vec k\cdot(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)$, the chain rule gives the corpus identity
+the series' d'Alembertian. For a wave whose phase is the scalar $s = \mathrm{Sc}(\tilde P_{\Phi}\tilde{R}_\Phi^{\natural}) = -\omega r'_t + \vec k\cdot(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)$, the chain rule gives the corpus identity
 
 $$
-\Box f(s) = \langle\tilde P\rangle_{\natural}\,\frac{d^2f}{ds^2}(s),
+\Box f(s) = \langle\tilde P_{\Phi}\rangle_{\natural}\,\frac{d^2f}{ds^2}(s),
 \qquad
-\langle\tilde P\rangle_{\natural} = -\frac{\omega^2}{c^2} + |\vec k|^2,
+\langle\tilde P_{\Phi}\rangle_{\natural} = -\frac{\omega^2}{c^2} + |\vec k|^2,
 $$
 
-because $s$ is linear and $\Box s = 0$. The exponential $\exp(s)$ is therefore an eigenfunction with eigenvalue $\langle\tilde P\rangle_{\natural}$, and the oscillatory positive-frequency wave $\exp(is)$ has eigenvalue $-\langle\tilde P\rangle_{\natural}$, the two differing by the overall sign that leaves the kernel unchanged. In either case the characteristic variety, the set on which the symbol vanishes, is exactly the null cone $\mathcal{Z}$. The cone is therefore the characteristic cone of the algebra's own wave operator, and the companion article *The Light Cone as the Biquaternion Zero-Divisor Cone* records the equivalent zero-divisor statement.
+because $s$ is linear and $\Box s = 0$. The exponential $\exp(s)$ is therefore an eigenfunction with eigenvalue $\langle\tilde P_{\Phi}\rangle_{\natural}$, and the oscillatory positive-frequency wave $\exp(is)$ has eigenvalue $-\langle\tilde P_{\Phi}\rangle_{\natural}$, the two differing by the overall sign that leaves the kernel unchanged. In either case the characteristic variety, the set on which the symbol vanishes, is exactly the null cone $\mathcal{Z}$. The cone is therefore the characteristic cone of the algebra's own wave operator, and the companion article *The Light Cone as the Biquaternion Zero-Divisor Cone* records the equivalent zero-divisor statement.
 
 The standard theory of hyperbolic operators now supplies the propagation bound. A second-order linear hyperbolic equation with the characteristic cone $\mathcal{Z}$ has finite propagation speed: if a source $\tilde{S}$ is supported in a compact set $K$ at time $r'_t = 0$, then the solution of $\Box\tilde{Ξ} = \tilde{S}$ is supported at time $r'_t$ inside the set of points that lie within distance $c r'_{t}$ of $K$, that is, inside the union of the light cones erected on $K$. This is a theorem of the classical theory of partial differential equations, not a property of the biquaternion formulation, and it is cited as standard. Its content here is that the barrier is not imposed on the algebra from outside: the wave operator that the algebra naturally carries has the cone as its characteristic surface, so a field generated in a bounded region propagates only into that region's causal future. The algebraic zero-divisor cone, the geometric light cone and the analytic characteristic cone are the same set.
 
@@ -389,7 +389,7 @@ The causal structure of the material sector $\mathbb{B}_{\Phi}$ is the structure
 
 4. **The topological barrier.** The complement of the cone has three connected components, and $\langle\cdot\rangle_{\natural}$ can change sign along a continuous path only at the cone. A continuous causal process therefore reaches the elsewhere only by leaving the cone.
 
-5. **The relative-velocity barrier.** The invariant contraction of two future timelike four-velocities satisfies $-\mathrm{Sc}(\tilde{V}_1\tilde{V}^{\natural}_2)/c^2 = \gamma_1\gamma_2(1-\beta_1\beta_2\cos\theta) = \gamma_{\mathrm{rel}} \ge 1$, with equality only for equal velocities; the relative speed is strictly below $c$.
+5. **The relative-velocity barrier.** The invariant contraction of two future timelike four-velocities satisfies $-\mathrm{Sc}(\tilde{V}_{\Phi,1}\tilde{V}_{\Phi}^{\natural}_2)/c^2 = \gamma_1\gamma_2(1-\beta_1\beta_2\cos\theta) = \gamma_{\mathrm{rel}} \ge 1$, with equality only for equal velocities; the relative speed is strictly below $c$.
 
 6. **The rapidity barrier.** Boosts compose additively in rapidity, $\beta = \tanh\theta_{\mathrm{rpd}}$, so the barrier $\beta = 1$ lies at $\theta_{\mathrm{rpd}} = \infty$ and is attained by no finite composition.
 
@@ -418,12 +418,12 @@ The information-theoretic interpretation is that $J^+(p)$ is the set of events t
 | $\mathcal{Z}$ | Light cone: the $N=0$ locus of $\mathbb{B}_{\Phi}$, the material-sector part of the zero-divisor set of $\mathbb{B}$ |
 | $p \preceq q$ | Causal order: $\langle\tilde{Q}_{qp}\rangle_{\natural}\le 0$ and $\Delta r'_t\ge 0$ |
 | $J^+(p)$, $J^-(p)$, $E(p)$ | Causal future, causal past, and elsewhere of $p$ |
-| $\tilde U_{\mathrm b} = \cosh\frac{\theta_{\mathrm{rpd}}}{2} + i\sinh\frac{\theta_{\mathrm{rpd}}}{2}\vec u$, $\langle\tilde U_{\mathrm b}\rangle_{\natural}=e_t$ | Boost rotor (unit-norm biquaternion) |
+| $\tilde U_{\Psi,\mathrm b} = \cosh\frac{\theta_{\mathrm{rpd}}}{2} + i\sinh\frac{\theta_{\mathrm{rpd}}}{2}\vec u$, $\langle\tilde U_{\Psi,\mathrm b}\rangle_{\natural}=e_t$ | Boost rotor (unit-norm biquaternion) |
 | $\tilde R_\Phi\mapsto\tilde U_{\mathrm{lor}}\tilde R_\Phi\tilde U_{\mathrm{lor}}{}^{*}$ | Rotor conjugation |
-| $\tilde{V} = \gamma(ic\,e_t+\vec v)$, $\langle\tilde{V}\rangle_{\natural}=-c^2$ | Four-velocity |
+| $\tilde{V}_{\Phi} = \gamma(ic\,e_t+\vec v)$, $\langle\tilde{V}_{\Phi}\rangle_{\natural}=-c^2$ | Four-velocity |
 | $\beta = |\vec v|/c$, $\gamma = (1-\beta^2)^{-1/2}$ | Dimensionless speed and Lorentz factor |
 | $\theta_{\mathrm{rpd}}$, $\tanh\theta_{\mathrm{rpd}}=\beta$ | Rapidity |
-| $\gamma_{\mathrm{rel}} = \gamma_1\gamma_2(1-\beta_1\beta_2\cos\theta)$ | Relative Lorentz factor, $= -\mathrm{Sc}(\tilde{V}_1\tilde{V}^{\natural}_2)/c^2$ |
+| $\gamma_{\mathrm{rel}} = \gamma_1\gamma_2(1-\beta_1\beta_2\cos\theta)$ | Relative Lorentz factor, $= -\mathrm{Sc}(\tilde{V}_{\Phi,1}\tilde{V}_{\Phi}^{\natural}_2)/c^2$ |
 | $\tilde{\nabla}, \tilde{\nabla}^{\natural}$ | Biquaternionic gradient and its conjugate |
 | $\Box = \tilde{\nabla}\tilde{\nabla}^{\natural} = \partial^2/\partial R_{1t}^2+\Delta$ | d'Alembertian, series convention |
 | $SO^+(1,3)\cong SL(2,\mathbb{C})/\{\pm e_t\}$ | Restricted Lorentz group |

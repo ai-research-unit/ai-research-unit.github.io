@@ -18,7 +18,7 @@ The thesis is one sentence. **The Hamilton modulus $\Rho$ is the invariant of th
 
 The article is a synthesis. The pairing, its theorem and its domain are owned by *The Hamilton Root Pairing of the Polar Decomposition of Biquaternions*; the eigenvalue decomposition and the mass shell by *The Biquaternion Eigenvalue Decomposition* and *The Spectral Reading of a Four-Vector*; the branch of the modulus by *The Polar Decomposition of an N-Regular Biquaternion*. What is added here is the physical reading of the first factor, the anatomy of the complex angle, and the boundaries of the mass identification.
 
-The conventions are those of *Norm and Pairing Conventions*, §*The Polar Word and the Three Pairings*, including its warning on the four objects called a boost. The norm is $\langle\tilde Q\rangle_{\natural}=Q_t^{2}+Q_x^{2}+Q_y^{2}+Q_z^{2}$, the Hermitian form is $\langle\tilde Q_1,\tilde Q_2\rangle_{*}=\mathrm{Sc}(\tilde Q_1\tilde Q_2^{*})$, the trace is $\operatorname{Tr}\tilde Q=2\operatorname{Sc}\tilde Q=2Q_t$, and the state glyph is $\tilde{Ϛ}$. The symbol $B$ here is the square root of the vector-part square, not the four-vector boost factor $\mathcal B$.
+The conventions are those of *Norm and Pairing Conventions*, §*The Polar Word and the Three Pairings*, including its warning on the four objects called a boost. The norm is $\langle\tilde Q\rangle_{\natural}=Q_t^{2}+Q_x^{2}+Q_y^{2}+Q_z^{2}$, the Hermitian form is $\langle\tilde Q_1,\tilde Q_2\rangle_{*}=\mathrm{Sc}(\tilde Q_1\tilde Q_2^{*})$, the trace is $\operatorname{Tr}\tilde Q=2\operatorname{Sc}\tilde Q=2Q_t$, and the state glyph is $\tilde{Ϛ}_{\Psi}$. The symbol $B$ here is the square root of the vector-part square, not the four-vector boost factor $\mathcal B_{\Psi}$.
 
 ## The Results It Uses
 
@@ -41,7 +41,7 @@ $$
 \qquad
 \Rho=r\,e^{i\alpha},
 \qquad
-\exp(\vec U\Theta)=\tilde U_{\mathrm b}\,\tilde u_{\mathrm r}.
+\exp(\vec U\Theta)=\tilde U_{\Psi,\mathrm b}\,\tilde u_{\mathrm r}.
 $$
 
 The modulus is central and complex. The second factor is a unit-norm element, and the unit-norm subgroup of $\mathbb{B}$ is $SL(2,\mathbb{C})$, the double cover of the proper orthochronous Lorentz group $SO^{+}(1,3)$. The exponent is a complex multiple of a root of $-e_t$: the axis $\vec U$ is a unit pure element with $\vec U^{2}=-e_t$, and $\Theta$ is complex.
@@ -66,7 +66,7 @@ $$
 \Rho=\sqrt{\langle\tilde Q\rangle_{\natural}}=r\,e^{i\alpha},\qquad \alpha\in(-\tfrac{\pi}{2},\tfrac{\pi}{2}] .
 $$
 
-It is central, so it commutes with every element and is unchanged by a change of frame implemented by conjugation. It is the only one of the three first factors with that property. The quaternion factor $r\tilde u_{\mathrm r}$ and the Cartan factor $r\tilde U_{\mathrm b}$ both carry frame data and both change under conjugation; $\Rho$ does not.
+It is central, so it commutes with every element and is unchanged by a change of frame implemented by conjugation. It is the only one of the three first factors with that property. The quaternion factor $r\tilde u_{\mathrm r}$ and the Cartan factor $r\tilde U_{\Psi,\mathrm b}$ both carry frame data and both change under conjugation; $\Rho$ does not.
 
 The phase of $\Rho$ carries the causal character when the norm is real.
 
@@ -77,7 +77,7 @@ The phase of $\Rho$ carries the causal character when the norm is real.
 | $\langle\tilde Q\rangle_{\natural}=0$ | $\Rho=0$ | undefined | null element |
 | $\langle\tilde Q\rangle_{\natural}\in\mathbb{C}$ general | $\Rho=\lvert\langle\tilde Q\rangle_{\natural}\rvert^{1/2}e^{i\arg\langle\tilde Q\rangle_{\natural}/2}$ | $\tfrac12\arg\langle\tilde Q\rangle_{\natural}$ | general element |
 
-For a four-momentum the norm is $\langle\tilde P\rangle_{\natural}=-m^{2}c^{2}$ and the modulus is $\Rho=i mc$ on the principal branch. The two eigenvalues are
+For a four-momentum the norm is $\langle\tilde P_{\Phi}\rangle_{\natural}=-m^{2}c^{2}$ and the modulus is $\Rho=i mc$ on the principal branch. The two eigenvalues are
 
 $$
 \boxed{\;\lambda_\pm=i mc\,e^{\pm\theta_{\mathrm{rpd}}}=i\left(\frac{E}{c}\pm\lvert\vec p\rvert\right)\;},
@@ -89,7 +89,7 @@ the two light-cone combinations, and their product is $-m^{2}c^{2}$. The mass sh
 
 The word "mass" is licensed by the object, not by the algebra.
 
-- For a **four-momentum** $\tilde P=i(E/c)e_t+\vec p$, the modulus is $i mc$ and the invariant is the mass. This is the only case in which the reading is forced by the corpus's identification of $\tilde P$ with the four-momentum.
+- For a **four-momentum** $\tilde P_{\Phi}=i(E/c)e_t+\vec p$, the modulus is $i mc$ and the invariant is the mass. This is the only case in which the reading is forced by the corpus's identification of $\tilde P_{\Phi}$ with the four-momentum.
 - For a **general element**, $\Rho$ is the invariant complex amplitude. Calling it a mass is an extra identification, and the article must say so. A field strength, a Jones matrix and a scattering element all have a Hamilton modulus; none of them has a mass unless a dynamics supplies one.
 
 The distinction is not pedantic. The modulus is multiplicative under composition, while mass is not additive under the addition of four-momenta, and conflating the two produces false conservation statements. The next section makes the point exactly.
@@ -117,8 +117,8 @@ The classification is of the angle, not of $B$. The ratio $B/\Rho$ is what enter
 
 The angle depends on which factor of the word the element carries, and the factor of two is the most common error in the corpus.
 
-- The **spinor word** of a transformation carries the frame rotor $\tilde U_{\mathrm b}=\exp(i\tfrac{\theta_{\mathrm{rpd}}}{2}\vec u_{\mathrm b})$, whose exponent is $\theta_{\mathrm{rpd}}/2$, the half rapidity. On an aligned word with a rotation, $\Theta=\tfrac{\theta}{2}+\epsilon i\tfrac{\theta_{\mathrm{rpd}}}{2}$.
-- The **four-vector factor** is $\mathcal B=\tilde U_{\mathrm b}^{-2}=\exp(-i\theta_{\mathrm{rpd}}\vec u_p)$, whose exponent is $-\theta_{\mathrm{rpd}}$, the rapidity. A four-momentum carries this factor, and its Hamilton angle is $\Theta=-i\theta_{\mathrm{rpd}}$, not $-i\theta_{\mathrm{rpd}}/2$.
+- The **spinor word** of a transformation carries the frame rotor $\tilde U_{\Psi,\mathrm b}=\exp(i\tfrac{\theta_{\mathrm{rpd}}}{2}\vec u_{\mathrm b})$, whose exponent is $\theta_{\mathrm{rpd}}/2$, the half rapidity. On an aligned word with a rotation, $\Theta=\tfrac{\theta}{2}+\epsilon i\tfrac{\theta_{\mathrm{rpd}}}{2}$.
+- The **four-vector factor** is $\mathcal B_{\Psi}=\tilde U_{\Psi,\mathrm b}^{-2}=\exp(-i\theta_{\mathrm{rpd}}\vec u_p)$, whose exponent is $-\theta_{\mathrm{rpd}}$, the rapidity. A four-momentum carries this factor, and its Hamilton angle is $\Theta=-i\theta_{\mathrm{rpd}}$, not $-i\theta_{\mathrm{rpd}}/2$.
 - The **word parameter** of a four-vector element is $\theta_{\mathrm{rpd},w}=2\theta_{\mathrm{rpd}}$, because the word stores the boost twice.
 
 Three statements follow, and each is a check. Do not write $\Theta=i\theta_{\mathrm{rpd}}$ for a four-momentum; the sign is negative for the axis along the momentum. Do not write $\theta_{\mathrm{rpd}}/2$ for the angle of a four-momentum; the four-vector factor carries the full rapidity. Do not identify the exponent of the spinor word with the exponent of the four-vector word; they differ by a factor of two and a sign.
@@ -136,7 +136,7 @@ The second factor is a unit-norm element, and it is the frame. Its action depend
 - On a **spinor**, the unit factor acts by left multiplication, $\xi\mapsto\tilde U\xi$. This is the linear action and it carries the double cover and the sign of the spinor.
 - On a **four-vector**, it acts by congruence, $X\mapsto\tilde U X\tilde U^{*}$. This is the bilinear action, and the four-vector element carries the inverse square of the spinor factor.
 
-For a four-momentum the frame factor is $\mathcal B=e^{-i\theta_{\mathrm{rpd}}\vec u_p}$ and the congruence by $\mathcal B$ is the boost of rapidity $\theta_{\mathrm{rpd}}$ about $-\vec u_p$. The Hamilton axis $\vec U=\vec Q/B$ points along the momentum; the word's axis in $\mathcal B$ points opposite it. Both statements describe the same boost, and the sign is bookkeeping.
+For a four-momentum the frame factor is $\mathcal B_{\Psi}=e^{-i\theta_{\mathrm{rpd}}\vec u_p}$ and the congruence by $\mathcal B_{\Psi}$ is the boost of rapidity $\theta_{\mathrm{rpd}}$ about $-\vec u_p$. The Hamilton axis $\vec U=\vec Q/B$ points along the momentum; the word's axis in $\mathcal B_{\Psi}$ points opposite it. Both statements describe the same boost, and the sign is bookkeeping.
 
 The rapidity is fixed by the ratio of the two invariants,
 
@@ -168,7 +168,7 @@ The third boundary is the null cone, $\langle\tilde Q\rangle_{\natural}=0$, wher
 The modulus is the invariant and the energy is not. For a four-momentum,
 
 $$
-E=mc^{2}\cosh\theta_{\mathrm{rpd}},\qquad \lvert\vec p\rvert=mc\sinh\theta_{\mathrm{rpd}},\qquad \langle\tilde P\rangle_{\natural}=-m^{2}c^{2}.
+E=mc^{2}\cosh\theta_{\mathrm{rpd}},\qquad \lvert\vec p\rvert=mc\sinh\theta_{\mathrm{rpd}},\qquad \langle\tilde P_{\Phi}\rangle_{\natural}=-m^{2}c^{2}.
 $$
 
 The energy depends on the frame through $\theta_{\mathrm{rpd}}$; the modulus does not. The trace $2Q_t=2iE/c$ is the frame-dependent sum of the eigenvalues; the norm is their frame-independent product. A change of frame moves $\theta_{\mathrm{rpd}}$ and hence $E$, and leaves $\Rho$ fixed. This is the algebraic content of "mass is invariant, energy is a component".
@@ -179,10 +179,10 @@ $$
 \langle\tilde Q\tilde Q'\rangle_{\natural}=\langle\tilde Q\rangle_{\natural}\langle\tilde Q'\rangle_{\natural},
 $$
 
-so the modulus of a product is the product of the moduli up to the branch. This is a statement about multiplying operators, not about adding four-momenta. Four-momenta compose by addition, $\tilde P_{\mathrm{tot}}=\tilde P_1+\tilde P_2$, and the mass of a sum is not the sum or the product of the masses: it is the modulus of the sum, which depends on the angle between the momenta. The invariant mass of a two-particle system is
+so the modulus of a product is the product of the moduli up to the branch. This is a statement about multiplying operators, not about adding four-momenta. Four-momenta compose by addition, $\tilde P_{\Phi,\mathrm{tot}}=\tilde P_{\Phi,1}+\tilde P_{\Phi,2}$, and the mass of a sum is not the sum or the product of the masses: it is the modulus of the sum, which depends on the angle between the momenta. The invariant mass of a two-particle system is
 
 $$
-\langle\tilde P_1+\tilde P_2\rangle_{\natural}=\langle\tilde P_1\rangle_{\natural}+\langle\tilde P_2\rangle_{\natural}+2\langle\tilde P_1,\tilde P_2\rangle_{\natural},
+\langle\tilde P_{\Phi,1}+\tilde P_{\Phi,2}\rangle_{\natural}=\langle\tilde P_{\Phi,1}\rangle_{\natural}+\langle\tilde P_{\Phi,2}\rangle_{\natural}+2\langle\tilde P_{\Phi,1},\tilde P_{\Phi,2}\rangle_{\natural},
 $$
 
 and the cross term is what makes the mass of a system differ from the sum of its parts. The multiplicativity of the algebra and the additivity of the four-momentum are different operations. The mass shell is the level set of the norm, a property of one element, not of the sum.
@@ -234,13 +234,13 @@ The reading that changes the theory most is the identification of the modulus wi
 | $\Rho=\sqrt{\langle\tilde Q\rangle_{\natural}}=r e^{i\alpha}$ | the Hamilton modulus, central and complex |
 | $r$, $\alpha$ | the scale and the central phase, $\alpha\in(-\pi/2,\pi/2]$ |
 | $\vec U=\vec Q/B$ | the Hamilton axis, a unit pure element, $\vec U^{2}=-e_t$ |
-| $B=\sqrt{\langle\vec Q,\vec Q\rangle_{\natural}}$ | the vector-part square root (not the boost factor $\mathcal B$) |
+| $B=\sqrt{\langle\vec Q,\vec Q\rangle_{\natural}}$ | the vector-part square root (not the boost factor $\mathcal B_{\Psi}$) |
 | $\Theta$ | the complex angle, $\cos\Theta=Q_t/\Rho$, $\sin\Theta=B/\Rho$ |
 | $\lambda_\pm=Q_t\pm iB$ | the eigenvalues, $\lambda_\pm=\Rho e^{\pm i\Theta}$ |
 | $\theta_{\mathrm{rpd}}$ | the kinematic rapidity of a four-momentum |
-| $\tilde U_{\mathrm b}(\theta_{\mathrm{rpd}})$ | the frame rotor, exponent $\theta_{\mathrm{rpd}}/2$ |
-| $\mathcal B=\tilde U_{\mathrm b}^{-2}$ | the four-vector boost factor, exponent $-\theta_{\mathrm{rpd}}$ |
-| $\tilde P=i(E/c)e_t+\vec p$ | the four-momentum, $\Rho=i mc$ |
+| $\tilde U_{\Psi,\mathrm b}(\theta_{\mathrm{rpd}})$ | the frame rotor, exponent $\theta_{\mathrm{rpd}}/2$ |
+| $\mathcal B_{\Psi}=\tilde U_{\Psi,\mathrm b}^{-2}$ | the four-vector boost factor, exponent $-\theta_{\mathrm{rpd}}$ |
+| $\tilde P_{\Phi}=i(E/c)e_t+\vec p$ | the four-momentum, $\Rho=i mc$ |
 | $\langle\tilde Q_1,\tilde Q_2\rangle_{*}=\mathrm{Sc}(\tilde Q_1\tilde Q_2^{*})$ | the Hermitian form |
 | $\operatorname{Tr}\tilde Q=2\operatorname{Sc}\tilde Q=2Q_t$ | the trace |
 

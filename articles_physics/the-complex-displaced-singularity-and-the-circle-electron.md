@@ -15,7 +15,7 @@ The article is in three steps. It fixes the singular set of the displaced potent
 In the stationary sector the field is carried by the scalar potential alone, and the four-potential is a material element with a purely imaginary scalar part,
 
 $$
-\tilde{A} = i\,a'_t\,e_t \in \mathbb{B}_{\Phi}, \qquad Ξ(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z) = \frac{ϙ}{4\pi\epsilon}\,\frac{1}{\|r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z-\vec r_0\|},
+\tilde{A}_{\Phi} = i\,a'_t\,e_t \in \mathbb{B}_{\Phi}, \qquad Ξ(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z) = \frac{ϙ}{4\pi\epsilon}\,\frac{1}{\|r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z-\vec r_0\|},
 $$
 
 where $\vec r_0$ is the position of the point charge, $\epsilon$ is the permittivity of the medium, and $\|(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)\|$ is the ordinary Euclidean length of the vector part. The potential is singular on the set $r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z=\vec r_0$, a single point, and it is the kernel $1/\|r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z-\vec r_0\|$ whose geometry the construction uses; the charge and the permittivity enter only as the overall factor $ϙ/4\pi\epsilon$ and are set aside below.

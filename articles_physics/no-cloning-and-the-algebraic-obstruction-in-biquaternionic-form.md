@@ -18,7 +18,7 @@ $$
 
 which forces the pairing to be $0$ or $1$: **cloning is possible exactly for sets of mutually orthogonal states, and for no others.** The two states are then perfectly distinguishable, and copying them is a classical operation.
 
-A second, equivalent interpretation is that the cloning map on states is quadratic, $\tilde{Ϛ}\mapsto\tilde{Ϛ}\otimes\tilde{Ϛ}$, while every physical evolution is affine on the state space. This is the algebraic statement that the obstruction is the linearity of quantum dynamics, and it is the version that extends to mixed states and to channels.
+A second, equivalent interpretation is that the cloning map on states is quadratic, $\tilde{Ϛ}_{\Psi}\mapsto\tilde{Ϛ}_{\Psi}\otimes\tilde{Ϛ}_{\Psi}$, while every physical evolution is affine on the state space. This is the algebraic statement that the obstruction is the linearity of quantum dynamics, and it is the version that extends to mixed states and to channels.
 
 The article develops both interpretations, then treats approximate cloning, where the obstruction is quantified: the optimal universal qubit cloner achieves a fidelity of $5/6$, and the measurement-based alternative achieves only $2/3$. The universal cloner is constructed in explicit tensor-product form and its fidelity verified on a family of superposition states. The related no-go theorems — no-deleting, no-broadcasting, and the failure of cloning for mixed states — are stated in the framework's terms. The article closes by separating what is algebraic from what is standard.
 
@@ -26,25 +26,25 @@ The article develops both interpretations, then treats approximate cloning, wher
 
 ### Cloning as a map on states
 
-A **cloning machine** for a family of states $\{\tilde{Ϛ}_x\}$ is a physical process, described in the framework by a completely positive trace-preserving map
+A **cloning machine** for a family of states $\{\tilde{Ϛ}_{\Psi,x}\}$ is a physical process, described in the framework by a completely positive trace-preserving map
 
 $$
 Ξ : \mathbb{B}_{\Psi} \otimes \mathbb{B}_{\Psi} \longrightarrow \mathbb{B}_{\Psi} \otimes \mathbb{B}_{\Psi} ,
 \qquad
-Ξ\bigl(\tilde{Ϛ}_x \otimes \tilde{Ϛ}_0\bigr) = \tilde{Ϛ}_x \otimes \tilde{Ϛ}_x
+Ξ\bigl(\tilde{Ϛ}_{\Psi,x} \otimes \tilde{Ϛ}_{\Psi,0}\bigr) = \tilde{Ϛ}_{\Psi,x} \otimes \tilde{Ϛ}_{\Psi,x}
 \ \text{ for all } x,
 $$
 
-where $\tilde{Ϛ}_0$ is a fixed blank state. The process is required to be **universal** if it works for every state of the defining module, and **state-independent** in the sense that the same $Ξ$ and the same blank serve every input.
+where $\tilde{Ϛ}_{\Psi,0}$ is a fixed blank state. The process is required to be **universal** if it works for every state of the defining module, and **state-independent** in the sense that the same $Ξ$ and the same blank serve every input.
 
 Two features of $Ξ$ are immediate from the framework. It is **affine on the state space**: a convex combination of inputs maps to the corresponding convex combination of outputs, because a channel is linear on the cone and preserves the trace,
 
 $$
-Ξ\bigl((t\tilde{Ϛ}_1+(1-t)\tilde{Ϛ}_2)\otimes\tilde{Ϛ}_0\bigr)
-= t\,Ξ(\tilde{Ϛ}_1\otimes\tilde{Ϛ}_0) + (1-t)\,Ξ(\tilde{Ϛ}_2\otimes\tilde{Ϛ}_0).
+Ξ\bigl((t\tilde{Ϛ}_{\Psi,1}+(1-t)\tilde{Ϛ}_{\Psi,2})\otimes\tilde{Ϛ}_{\Psi,0}\bigr)
+= t\,Ξ(\tilde{Ϛ}_{\Psi,1}\otimes\tilde{Ϛ}_{\Psi,0}) + (1-t)\,Ξ(\tilde{Ϛ}_{\Psi,2}\otimes\tilde{Ϛ}_{\Psi,0}).
 $$
 
-And the target map $\tilde{Ϛ}_x\mapsto\tilde{Ϛ}_x\otimes\tilde{Ϛ}_x$ is **quadratic**: doubling the deviation of $\tilde{Ϛ}_x$ from the maximally mixed state quadruples it in the tensor product, since the Bloch vector of the product is $\vec r\otimes\vec r$. The two requirements cannot both hold for a set of states that includes a non-orthogonal pair.
+And the target map $\tilde{Ϛ}_{\Psi,x}\mapsto\tilde{Ϛ}_{\Psi,x}\otimes\tilde{Ϛ}_{\Psi,x}$ is **quadratic**: doubling the deviation of $\tilde{Ϛ}_{\Psi,x}$ from the maximally mixed state quadruples it in the tensor product, since the Bloch vector of the product is $\vec r\otimes\vec r$. The two requirements cannot both hold for a set of states that includes a non-orthogonal pair.
 
 ### The $*$-unitary form of the requirement
 
@@ -123,18 +123,18 @@ The $*$-unitary argument applies to pure states and to a single input. There is 
 A channel is affine on the state space. If a channel $Ξ$ cloned all pure states,
 
 $$
-Ξ\bigl(\tilde{Ϛ}\otimes\tilde{Ϛ}_0\bigr) = \tilde{Ϛ}\otimes\tilde{Ϛ}
-\qquad \text{for all pure } \tilde{Ϛ},
+Ξ\bigl(\tilde{Ϛ}_{\Psi}\otimes\tilde{Ϛ}_{\Psi,0}\bigr) = \tilde{Ϛ}_{\Psi}\otimes\tilde{Ϛ}_{\Psi}
+\qquad \text{for all pure } \tilde{Ϛ}_{\Psi},
 $$
 
-then by affinity it would clone every state, pure or mixed, with the same formula; but the map $\tilde{Ϛ}\mapsto\tilde{Ϛ}\otimes\tilde{Ϛ}$ is not affine. For two states and $0<t<1$,
+then by affinity it would clone every state, pure or mixed, with the same formula; but the map $\tilde{Ϛ}_{\Psi}\mapsto\tilde{Ϛ}_{\Psi}\otimes\tilde{Ϛ}_{\Psi}$ is not affine. For two states and $0<t<1$,
 
 $$
-\bigl(t\tilde{Ϛ}_1+(1-t)\tilde{Ϛ}_2\bigr)\otimes\bigl(t\tilde{Ϛ}_1+(1-t)\tilde{Ϛ}_2\bigr)
-\neq t\,\tilde{Ϛ}_1\otimes\tilde{Ϛ}_1 + (1-t)\,\tilde{Ϛ}_2\otimes\tilde{Ϛ}_2
+\bigl(t\tilde{Ϛ}_{\Psi,1}+(1-t)\tilde{Ϛ}_{\Psi,2}\bigr)\otimes\bigl(t\tilde{Ϛ}_{\Psi,1}+(1-t)\tilde{Ϛ}_{\Psi,2}\bigr)
+\neq t\,\tilde{Ϛ}_{\Psi,1}\otimes\tilde{Ϛ}_{\Psi,1} + (1-t)\,\tilde{Ϛ}_{\Psi,2}\otimes\tilde{Ϛ}_{\Psi,2}
 $$
 
-whenever the cross terms do not cancel, i.e. whenever the states are not orthogonal. The two sides agree only if $t(1-t)(\tilde{Ϛ}_1\otimes\tilde{Ϛ}_2+\tilde{Ϛ}_2\otimes\tilde{Ϛ}_1 - \tilde{Ϛ}_1\otimes\tilde{Ϛ}_1-\tilde{Ϛ}_2\otimes\tilde{Ϛ}_2) = 0$, which for non-commuting or non-orthogonal states fails. Hence no affine map clones a non-orthogonal family.
+whenever the cross terms do not cancel, i.e. whenever the states are not orthogonal. The two sides agree only if $t(1-t)(\tilde{Ϛ}_{\Psi,1}\otimes\tilde{Ϛ}_{\Psi,2}+\tilde{Ϛ}_{\Psi,2}\otimes\tilde{Ϛ}_{\Psi,1} - \tilde{Ϛ}_{\Psi,1}\otimes\tilde{Ϛ}_{\Psi,1}-\tilde{Ϛ}_{\Psi,2}\otimes\tilde{Ϛ}_{\Psi,2}) = 0$, which for non-commuting or non-orthogonal states fails. Hence no affine map clones a non-orthogonal family.
 
 **Linearity is the algebraic content of no-cloning.** The state space of the framework is a convex set, the cone slice of $\mathbb{B}_{\Psi}$; physical evolution is affine on it; and the cloning target is quadratic. The obstruction is the mismatch of degrees: an affine map is determined by its values on the extreme points with a linearity constraint, while the cloning target imposes a quadratic relation among those values.
 
@@ -143,7 +143,7 @@ whenever the cross terms do not cancel, i.e. whenever the states are not orthogo
 The obstruction is absolute for perfect cloning, so the useful question is how well one can do. For the qubit the optimal universal cloner is known: it takes one copy of an arbitrary state and produces two, each with fidelity
 
 $$
-\boxed{\;F = \langle\tilde{Ξ}_{\mathrm{sp}}|\tilde{Ϛ}_{\text{out},1}|\tilde{Ξ}_{\mathrm{sp}}\rangle = \frac{5}{6} = 0.8333\ldots\;} ,
+\boxed{\;F = \langle\tilde{Ξ}_{\mathrm{sp}}|\tilde{Ϛ}_{\Psi,\text{out},1}|\tilde{Ξ}_{\mathrm{sp}}\rangle = \frac{5}{6} = 0.8333\ldots\;} ,
 $$
 
 uniformly in $|\tilde{Ξ}_{\mathrm{sp}}\rangle$, and no cloner does better. This is the **Bužek–Hillery bound**, and the machine that attains it is the Bužek–Hillery cloner.
@@ -169,7 +169,7 @@ $$
 |\tilde{Ξ}_{\mathrm{sp}}(\theta,\theta_{\mathrm{azm}})\rangle = \cos\tfrac{\theta}{2}\,|0\rangle + \exp(i\theta_{\mathrm{azm}})\sin\tfrac{\theta}{2}\,|1\rangle ,
 $$
 
-gives $\langle\tilde{Ξ}_{\mathrm{sp}}|\tilde{Ϛ}_{\text{out},1}|\tilde{Ξ}_{\mathrm{sp}}\rangle = 5/6$ for every $\theta$ and $\theta_{\mathrm{azm}}$, to machine precision. This was verified numerically on a sample of twenty superpositions; the fidelity was constant at $0.833333$.
+gives $\langle\tilde{Ξ}_{\mathrm{sp}}|\tilde{Ϛ}_{\Psi,\text{out},1}|\tilde{Ξ}_{\mathrm{sp}}\rangle = 5/6$ for every $\theta$ and $\theta_{\mathrm{azm}}$, to machine precision. This was verified numerically on a sample of twenty superpositions; the fidelity was constant at $0.833333$.
 
 ### Comparison with measurement and preparation
 
@@ -177,10 +177,10 @@ A classical strategy is to measure the input and prepare two copies of the best 
 
 ### The fidelity as the normalised Hermitian form, read through the trace
 
-The fidelity is the normalised Hermitian form, read through the trace: for a pure target state $\tilde\Pi(\tilde{Ξ}_{\mathrm{sp}})$ and an output state $\tilde{Ϛ}_{\text{out}}$,
+The fidelity is the normalised Hermitian form, read through the trace: for a pure target state $\tilde\Pi(\tilde{Ξ}_{\mathrm{sp}})$ and an output state $\tilde{Ϛ}_{\Psi,\text{out}}$,
 
 $$
-F = \langle\tilde{Ξ}_{\mathrm{sp}}|\tilde{Ϛ}_{\text{out}}|\tilde{Ξ}_{\mathrm{sp}}\rangle = \mathrm{Tr}\bigl(\tilde\Pi(\tilde{Ξ}_{\mathrm{sp}})\,\tilde{Ϛ}_{\text{out}}\bigr) = 2\,\mathrm{Sc}\bigl(\tilde\Pi(\tilde{Ξ}_{\mathrm{sp}})\tilde{Ϛ}_{\text{out}}\bigr),
+F = \langle\tilde{Ξ}_{\mathrm{sp}}|\tilde{Ϛ}_{\Psi,\text{out}}|\tilde{Ξ}_{\mathrm{sp}}\rangle = \mathrm{Tr}\bigl(\tilde\Pi(\tilde{Ξ}_{\mathrm{sp}})\,\tilde{Ϛ}_{\Psi,\text{out}}\bigr) = 2\,\mathrm{Sc}\bigl(\tilde\Pi(\tilde{Ξ}_{\mathrm{sp}})\tilde{Ϛ}_{\Psi,\text{out}}\bigr),
 $$
 
 the same pairing that gives the Born rule. The no-cloning obstruction and its approximate version are therefore both statements about this pairing: perfect cloning would require the pairing of input and clone to attain its maximum $1$ for every input, while the optimal cloner attains $5/6$ uniformly.
@@ -245,9 +245,9 @@ $$
 \mathrm{Tr}\bigl(\tilde\Pi(\tilde{Ξ}_{\mathrm{sp}})\tilde\Pi(\xi_{\mathrm{alt}})\bigr)\in\{0,1\}.
 $$
 
-Perfect universal cloning is therefore possible exactly for pairwise orthogonal families, where the states are classical alternatives; for any two non-orthogonal rays of the defining module it is impossible. Equivalently, the cloning target $\tilde{Ϛ}\mapsto\tilde{Ϛ}\otimes\tilde{Ϛ}$ is quadratic while every physical evolution is affine on the cone slice of $\mathbb{B}_{\Psi}$, and the mismatch is the obstruction.
+Perfect universal cloning is therefore possible exactly for pairwise orthogonal families, where the states are classical alternatives; for any two non-orthogonal rays of the defining module it is impossible. Equivalently, the cloning target $\tilde{Ϛ}_{\Psi}\mapsto\tilde{Ϛ}_{\Psi}\otimes\tilde{Ϛ}_{\Psi}$ is quadratic while every physical evolution is affine on the cone slice of $\mathbb{B}_{\Psi}$, and the mismatch is the obstruction.
 
-Approximate cloning quantifies the failure. The optimal universal qubit cloner — the Bužek–Hillery machine, transcribed into the tensor-product algebra and verified here — clones every state with fidelity $5/6$, above the best measurement-and-preparation fidelity $2/3$; the fidelity is the normalised Hermitian form, read through the trace $\mathrm{Tr}(\tilde\Pi(\tilde{Ξ}_{\mathrm{sp}})\tilde{Ϛ}_{\text{out}}^{*})$ of input and output. The companion no-go theorems (no-deleting, no-broadcasting) are the same obstruction in the mirror or in the mixed-state setting.
+Approximate cloning quantifies the failure. The optimal universal qubit cloner — the Bužek–Hillery machine, transcribed into the tensor-product algebra and verified here — clones every state with fidelity $5/6$, above the best measurement-and-preparation fidelity $2/3$; the fidelity is the normalised Hermitian form, read through the trace $\mathrm{Tr}(\tilde\Pi(\tilde{Ξ}_{\mathrm{sp}})\tilde{Ϛ}_{\Psi,\text{out}}^{*})$ of input and output. The companion no-go theorems (no-deleting, no-broadcasting) are the same obstruction in the mirror or in the mixed-state setting.
 
 ## Summary of Notation
 
@@ -260,9 +260,9 @@ Approximate cloning quantifies the failure. The optimal universal qubit cloner �
 | $\mathrm{Tr}(\tilde\Pi(\tilde{Ξ}_{\mathrm{sp}})\tilde\Pi(\xi_{\mathrm{alt}})^{*}) = |\langle\tilde{Ξ}_{\mathrm{sp}}|\xi_{\mathrm{alt}}\rangle|^2$ | Trace reading of the Hermitian form (distinguishability) |
 | $\tilde Q$ | Cloning $*$-unitary, $\tilde Q\tilde Q^{*} = e_t\otimes e_t$ |
 | $Ξ$ | Cloning channel, completely positive trace preserving |
-| $Ξ(\tilde{Ϛ}\otimes\tilde{Ϛ}_0) = \tilde{Ϛ}\otimes\tilde{Ϛ}$ | Cloning requirement |
+| $Ξ(\tilde{Ϛ}_{\Psi}\otimes\tilde{Ϛ}_{\Psi,0}) = \tilde{Ϛ}_{\Psi}\otimes\tilde{Ϛ}_{\Psi}$ | Cloning requirement |
 | $\mathrm{Tr}(\tilde\Pi(\tilde{Ξ}_{\mathrm{sp}})\tilde\Pi(\xi_{\mathrm{alt}})^{*}) = (\mathrm{Tr}(\tilde\Pi(\tilde{Ξ}_{\mathrm{sp}})\tilde\Pi(\xi_{\mathrm{alt}})^{*}))^2$ | Algebraic obstruction |
-| $F = \mathrm{Tr}(\tilde\Pi(\tilde{Ξ}_{\mathrm{sp}})\tilde{Ϛ}_{\text{out}}^{*})$ | Cloning fidelity |
+| $F = \mathrm{Tr}(\tilde\Pi(\tilde{Ξ}_{\mathrm{sp}})\tilde{Ϛ}_{\Psi,\text{out}}^{*})$ | Cloning fidelity |
 | $F = 5/6$ | Bužek–Hillery optimal universal fidelity |
 | $F = 2/3$ | Measurement-and-preparation fidelity |
 | $|\tilde{Ξ}_{\mathrm{sp}}(\theta,\theta_{\mathrm{azm}})\rangle$ | Test superposition family |

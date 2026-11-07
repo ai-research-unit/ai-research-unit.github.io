@@ -105,8 +105,8 @@ The centre of the algebra is $\mathbb{B}_{C}=\mathbb{C}e_t$, two real dimensions
 On the material side the central scalar is the **mass**. For a timelike four-momentum the quaternionic norm is negative and its square root is imaginary. The Hamilton pairing writes
 
 $$
-\tilde P=\Rho\,e^{\vec U\Theta},\qquad
-\Rho=\sqrt{\langle\tilde P\rangle_\natural}=imc,
+\tilde P_{\Phi}=\Rho\,e^{\vec U\Theta},\qquad
+\Rho=\sqrt{\langle\tilde P_{\Phi}\rangle_\natural}=imc,
 $$
 
 so the mass sits on the imaginary central line. Of the three factorisations of a four-vector — quaternion, Hamilton and Cartan — this is the only one whose first factor is central. That factor commutes with every element and is unchanged by every unit-norm congruence.
@@ -114,16 +114,16 @@ so the mass sits on the imaginary central line. Of the three factorisations of a
 On the informational side the central scalar is the **normalisation**. A state is normalised by its pairing with the identity,
 
 $$
-\langle\tilde{Ϛ},e_t\rangle_*=\mathrm{Sc}\,\tilde{Ϛ}=\tfrac12,\qquad
-\operatorname{Tr}\tilde{Ϛ}=1,
+\langle\tilde{Ϛ}_{\Psi},e_t\rangle_*=\mathrm{Sc}\,\tilde{Ϛ}_{\Psi}=\tfrac12,\qquad
+\operatorname{Tr}\tilde{Ϛ}_{\Psi}=1,
 $$
 
 so the scalar part is $\tfrac12$ on the real central line, and the trace is one. The trace is the central projection of the state, and the Born rule is the ratio of two such projections.
 
 | sector | central line | central scalar | value on the standard object |
 | --- | --- | --- | --- |
-| $\mathbb{B}_{\Phi}$ | $i\mathbb{R}e_t$ | mass $\Rho=imc$ | $\sqrt{\langle\tilde P\rangle_\natural}$ |
-| $\mathbb{B}_{\Psi}$ | $\mathbb{R}e_t$ | normalisation $\mathrm{Sc}\,\tilde{Ϛ}$ | $\tfrac12$, trace one |
+| $\mathbb{B}_{\Phi}$ | $i\mathbb{R}e_t$ | mass $\Rho=imc$ | $\sqrt{\langle\tilde P_{\Phi}\rangle_\natural}$ |
+| $\mathbb{B}_{\Psi}$ | $\mathbb{R}e_t$ | normalisation $\mathrm{Sc}\,\tilde{Ϛ}_{\Psi}$ | $\tfrac12$, trace one |
 
 The placement depends on the regime, and the dependence is a single $i$. In the non-relativistic central-scalar limit the mass and the energy are real central scalars in $\mathbb{B}_{\Psi}$, and the material time is the parameter multiplying $ie_t$. Relativistically the four-momentum is in $\mathbb{B}_{\Phi}$ and its trace is imaginary. The two statements are the two ends of the same substitution $Q_t=ict'$: the non-relativistic limit drops the $i$, and with it the distinction between the real and the imaginary central lines. The limit is a contraction of the relativistic structure, not a second convention.
 
@@ -307,13 +307,13 @@ The shorthand must not be read as a new element of the algebra. It is the reduce
 **A full open system, and where the probability goes.** If the environment is neither measured nor discarded but averaged over, the description is a map, and *Quantum Channels and the Reversible–Irreversible Dichotomy* writes it as
 
 $$
-\frac{d\tilde{Ϛ}}{dr'_t}
-=-\frac{k_m\,i}{m\,c}\,[\tilde R_\Psi,\tilde{Ϛ}]
-+\sum_k\left(\tilde M_{\mathrm{kraus},k}\,\tilde{Ϛ}\,\tilde M_{\mathrm{kraus},k}^{*}
--\tfrac12\{\tilde M_{\mathrm{kraus},k}^{*}\tilde M_{\mathrm{kraus},k},\tilde{Ϛ}\}\right).
+\frac{d\tilde{Ϛ}_{\Psi}}{dr'_t}
+=-\frac{k_m\,i}{m\,c}\,[\tilde R_\Psi,\tilde{Ϛ}_{\Psi}]
++\sum_k\left(\tilde M_{\mathrm{kraus},k}\,\tilde{Ϛ}_{\Psi}\,\tilde M_{\mathrm{kraus},k}^{*}
+-\tfrac12\{\tilde M_{\mathrm{kraus},k}^{*}\tilde M_{\mathrm{kraus},k},\tilde{Ϛ}_{\Psi}\}\right).
 $$
 
-The trace is preserved, $\frac{d}{dr'_t}\operatorname{Tr}\tilde{Ϛ}=0$ by cyclicity, checked to $1.8\times10^{-15}$; the purity is not, and that fall is the whole effect. Nothing leaves the ensemble. The effective Hamiltonian with the anti-Hermitian part describes the branch on which no jump has occurred, whose unnormalised state obeys
+The trace is preserved, $\frac{d}{dr'_t}\operatorname{Tr}\tilde{Ϛ}_{\Psi}=0$ by cyclicity, checked to $1.8\times10^{-15}$; the purity is not, and that fall is the whole effect. Nothing leaves the ensemble. The effective Hamiltonian with the anti-Hermitian part describes the branch on which no jump has occurred, whose unnormalised state obeys
 
 $$
 i\,\partial_{r'_t}\tilde{Ξ}_{\mathrm{nj}}
@@ -335,7 +335,7 @@ $$
 
 The Hermitian part of $G$ is $-\frac12\tilde\Gamma$ and the anti-Hermitian part is $-i\tilde R_\Psi$. For the central pole, $G_\star=-iz_\star=-\frac{\Gamma}{2}e_t-iE_Re_t$, and the shrinkage is again the Hermitian part. A stable state has $\tilde\Gamma=0$, its generator is anti-Hermitian, and its evolution is unitary.
 
-The norm used in this section is the Hermitian norm $\langle\cdot\rangle_*$, the Hilbert-space norm of the evolving element, not the quaternionic norm: on $\tilde{Ϛ}$ the Hermitian norm measures purity, and the quaternionic norm is the impurity that the informational side reads as information.
+The norm used in this section is the Hermitian norm $\langle\cdot\rangle_*$, the Hilbert-space norm of the evolving element, not the quaternionic norm: on $\tilde{Ϛ}_{\Psi}$ the Hermitian norm measures purity, and the quaternionic norm is the impurity that the informational side reads as information.
 
 | object | sector | property | dynamical role |
 | --- | --- | --- | --- |
@@ -357,15 +357,15 @@ The ledger is unaffected, and its vocabulary is now fixed. Energy is the trace o
 The four-momentum of a particle of mass $m$ is the material element
 
 $$
-\tilde P=i\frac{E}{c}\,e_t+\vec p,\qquad \vec p=p_x\vec e_x+p_y\vec e_y+p_z\vec e_z .
+\tilde P_{\Phi}=i\frac{E}{c}\,e_t+\vec p,\qquad \vec p=p_x\vec e_x+p_y\vec e_y+p_z\vec e_z .
 $$
 
 Its trace is
 
 $$
-\operatorname{Tr}\tilde P=2i\frac{E}{c},
+\operatorname{Tr}\tilde P_{\Phi}=2i\frac{E}{c},
 \qquad\text{hence}\qquad
-E=\frac{c}{2i}\operatorname{Tr}\tilde P .
+E=\frac{c}{2i}\operatorname{Tr}\tilde P_{\Phi} .
 $$
 
 Energy is the trace of the four-momentum, up to the factor $c/(2i)$. The factor is bookkeeping: the trace is twice the scalar coefficient, and the scalar coefficient of a material element is imaginary. The statement is exact and was checked on a hundred random four-momenta. It is the algebraic content of "energy is the time component of the four-momentum": the time component is the scalar slot, and the trace is the scalar slot read twice.
@@ -383,7 +383,7 @@ the two light-cone combinations. Their sum is $2iE/c$ and their difference is $2
 The quaternionic norm of the same element is
 
 $$
-\langle\tilde P\rangle_\natural=-\frac{E^2}{c^2}+\lvert\vec p\rvert^2=-m^2c^2 .
+\langle\tilde P_{\Phi}\rangle_\natural=-\frac{E^2}{c^2}+\lvert\vec p\rvert^2=-m^2c^2 .
 $$
 
 Mass is the norm, and the mass shell is the level set of the norm. The eigenvalues are the two branches of the square root,
@@ -407,7 +407,7 @@ This is the corpus's spectral reading of a four-vector, and the article only rec
 The two readings combine in the Hamilton pairing,
 
 $$
-\tilde P=\Rho\,e^{\vec U\Theta},\qquad
+\tilde P_{\Phi}=\Rho\,e^{\vec U\Theta},\qquad
 \Rho=imc,\qquad
 \Theta=-i\theta_{\mathrm{rpd}},\qquad
 \vec U=\vec u_p,
@@ -416,7 +416,7 @@ $$
 where $\vec u_p$ is the unit along the momentum. Expanding the exponential gives
 
 $$
-\tilde P=imc\bigl(\cosh\theta_{\mathrm{rpd}}-i\sinh\theta_{\mathrm{rpd}}\,\vec u_p\bigr)
+\tilde P_{\Phi}=imc\bigl(\cosh\theta_{\mathrm{rpd}}-i\sinh\theta_{\mathrm{rpd}}\,\vec u_p\bigr)
 =i\,mc\cosh\theta_{\mathrm{rpd}}\,e_t+mc\sinh\theta_{\mathrm{rpd}}\,\vec u_p,
 $$
 
@@ -453,24 +453,24 @@ The mass is the invariant coefficient and the frame factor is the conversion bet
 Mass is not conserved particle by particle, and the algebra says why. The norm is multiplicative under composition, the four-momenta add, and the two operations do not agree. For two four-momenta,
 
 $$
-\langle\tilde P_1+\tilde P_2\rangle_\natural
-=\langle\tilde P_1\rangle_\natural+\langle\tilde P_2\rangle_\natural
-+2\langle\tilde P_1,\tilde P_2\rangle_\natural,
+\langle\tilde P_{\Phi,1}+\tilde P_{\Phi,2}\rangle_\natural
+=\langle\tilde P_{\Phi,1}\rangle_\natural+\langle\tilde P_{\Phi,2}\rangle_\natural
++2\langle\tilde P_{\Phi,1},\tilde P_{\Phi,2}\rangle_\natural,
 \qquad
-\langle\tilde P_1,\tilde P_2\rangle_\natural
+\langle\tilde P_{\Phi,1},\tilde P_{\Phi,2}\rangle_\natural
 =-\frac{E_1E_2}{c^2}+\vec p_1\cdot\vec p_2 .
 $$
 
 The cross term is what makes the mass of a system differ from the sum of the masses. At rest the sum gives $-(m_1+m_2)^2c^2$, the expected additivity. In general the norm of the total is the invariant mass of the pair, which exceeds $m_1+m_2$ when the particles move relative to one another. Mass is not additive, and a statement of mass conservation that adds masses is false.
 
-What is conserved is the total four-momentum of an isolated system, and with it the norm of the total. The conservation of $\tilde P_{\mathrm{tot}}$ is the Noether charge of translation invariance, and the conservation of the total invariant mass is a corollary: the norm of a conserved element is constant. This is the precise content of "mass conservation" in the framework. It is a statement about the total, not about the parts, and it follows from energy–momentum conservation rather than standing beside it.
+What is conserved is the total four-momentum of an isolated system, and with it the norm of the total. The conservation of $\tilde P_{\Phi,\mathrm{tot}}$ is the Noether charge of translation invariance, and the conservation of the total invariant mass is a corollary: the norm of a conserved element is constant. This is the precise content of "mass conservation" in the framework. It is a statement about the total, not about the parts, and it follows from energy–momentum conservation rather than standing beside it.
 
 The invariance is a separate statement from the conservation. The norm is preserved by every unit-norm rotor,
 
 $$
-\langle\tilde U\tilde P\tilde U^*\rangle_\natural
-=\det\tilde U\,\det\tilde P\,\det\tilde U^*
-=\langle\tilde P\rangle_\natural
+\langle\tilde U\tilde P_{\Phi}\tilde U^*\rangle_\natural
+=\det\tilde U\,\det\tilde P_{\Phi}\,\det\tilde U^*
+=\langle\tilde P_{\Phi}\rangle_\natural
 \qquad\text{when}\qquad
 \langle\tilde U\rangle_\natural=1,
 $$
@@ -479,10 +479,10 @@ because a unit-norm element has determinant one and its star has determinant one
 
 | statement | object | operation | result |
 | --- | --- | --- | --- |
-| energy conservation | $\tilde P_{\mathrm{tot}}$ | addition of four-momenta | energy of the total is constant |
-| mass conservation | $\tilde P_{\mathrm{tot}}$ | norm of the total | invariant mass of the total is constant |
-| mass invariance | one $\tilde P$ | unit-norm congruence | norm unchanged |
-| energy frame dependence | one $\tilde P$ | unit-norm congruence | trace changes |
+| energy conservation | $\tilde P_{\Phi,\mathrm{tot}}$ | addition of four-momenta | energy of the total is constant |
+| mass conservation | $\tilde P_{\Phi,\mathrm{tot}}$ | norm of the total | invariant mass of the total is constant |
+| mass invariance | one $\tilde P_{\Phi}$ | unit-norm congruence | norm unchanged |
+| energy frame dependence | one $\tilde P_{\Phi}$ | unit-norm congruence | trace changes |
 
 ## The Informational Side: Normalisation Is the Trace, Information Is the Norm
 
@@ -491,7 +491,7 @@ because a unit-norm element has determinant one and its star has determinant one
 A state of the informational sector is the Hermitian element
 
 $$
-\tilde{Ϛ}=\tfrac12\bigl(e_t+i\vec r\bigr),\qquad
+\tilde{Ϛ}_{\Psi}=\tfrac12\bigl(e_t+i\vec r\bigr),\qquad
 \vec r=r_1\vec e_x+r_2\vec e_y+r_3\vec e_z,\qquad
 \lvert\vec r\rvert\le1 .
 $$
@@ -499,15 +499,15 @@ $$
 Its trace is one,
 
 $$
-\operatorname{Tr}\tilde{Ϛ}=2\,\mathrm{Sc}\,\tilde{Ϛ}=1,
+\operatorname{Tr}\tilde{Ϛ}_{\Psi}=2\,\mathrm{Sc}\,\tilde{Ϛ}_{\Psi}=1,
 $$
 
 and its scalar part is $\tfrac12$. The trace is the total probability, and the Born weight is the ratio of two traces,
 
 $$
-p=\frac{\operatorname{Tr}(\tilde{Ϛ}\tilde R_\Psi)}{\operatorname{Tr}\tilde{Ϛ}},
+p=\frac{\operatorname{Tr}(\tilde{Ϛ}_{\Psi}\tilde R_\Psi)}{\operatorname{Tr}\tilde{Ϛ}_{\Psi}},
 \qquad
-\operatorname{Tr}\tilde{Ϛ}=1 .
+\operatorname{Tr}\tilde{Ϛ}_{\Psi}=1 .
 $$
 
 The trace is fixed by the normalisation and says nothing about which state the system is in. Every state shares it, and the dynamics preserves it.
@@ -517,34 +517,34 @@ The trace is fixed by the normalisation and says nothing about which state the s
 The quaternionic norm of the state is
 
 $$
-\langle\tilde{Ϛ}\rangle_\natural=\tfrac14\bigl(1-\lvert\vec r\rvert^2\bigr)e_t,
+\langle\tilde{Ϛ}_{\Psi}\rangle_\natural=\tfrac14\bigl(1-\lvert\vec r\rvert^2\bigr)e_t,
 $$
 
 a central element whose coefficient runs from $\tfrac14$ at the maximally mixed state to $0$ on the pure states. The Hermitian norm is a different number,
 
 $$
-\langle\tilde{Ϛ}\rangle_*=\tfrac14\bigl(1+\lvert\vec r\rvert^2\bigr),
+\langle\tilde{Ϛ}_{\Psi}\rangle_*=\tfrac14\bigl(1+\lvert\vec r\rvert^2\bigr),
 $$
 
 and the two are related by the purity,
 
 $$
-P(\tilde{Ϛ})=2\langle\tilde{Ϛ},\tilde{Ϛ}\rangle_*=\tfrac12\bigl(1+\lvert\vec r\rvert^2\bigr),
+P(\tilde{Ϛ}_{\Psi})=2\langle\tilde{Ϛ}_{\Psi},\tilde{Ϛ}_{\Psi}\rangle_*=\tfrac12\bigl(1+\lvert\vec r\rvert^2\bigr),
 \qquad
-P+2\langle\tilde{Ϛ}\rangle_\natural=1 .
+P+2\langle\tilde{Ϛ}_{\Psi}\rangle_\natural=1 .
 $$
 
 The entropy is a function of the quaternionic norm and of nothing else:
 
 $$
-S(\tilde{Ϛ})=-2\,\mathrm{Sc}\bigl(\tilde{Ϛ}\log\tilde{Ϛ}\bigr)
+S(\tilde{Ϛ}_{\Psi})=-2\,\mathrm{Sc}\bigl(\tilde{Ϛ}_{\Psi}\log\tilde{Ϛ}_{\Psi}\bigr)
 =h\!\left(\frac{1+\lvert\vec r\rvert}{2}\right)
-=H\!\left(\langle\tilde{Ϛ}\rangle_\natural\right),
+=H\!\left(\langle\tilde{Ϛ}_{\Psi}\rangle_\natural\right),
 $$
 
 with $h$ the binary entropy and $H(N)=h\bigl((1+\sqrt{1-4N})/2\bigr)$. The function is increasing on $[0,\tfrac14]$, vanishes on the pure states and reaches $\log 2$ at the maximally mixed state. This is the corpus's identification: the natural invariant of the algebra and the entropy of the state are one quantity in two readings. The norm is the information in that precise sense: it fixes the entropy, and the entropy is the information the state fails to hold.
 
-| state | $\lvert\vec r\rvert$ | $\langle\tilde{Ϛ}\rangle_\natural$ | $S$ |
+| state | $\lvert\vec r\rvert$ | $\langle\tilde{Ϛ}_{\Psi}\rangle_\natural$ | $S$ |
 | --- | --- | --- | --- |
 | pure | $1$ | $0$ | $0$ |
 | mixed | $0<\lvert\vec r\rvert<1$ | $0<\tfrac14(1-r^2)<\tfrac14$ | $0\lt S\lt\log2$ |
@@ -554,18 +554,18 @@ There is a direction to the identification, and it is easy to get backwards. The
 
 ### Information Conservation and Invariance
 
-The reversible evolution of a state is a conjugation by a $*$-unitary element, $\tilde{Ϛ}\mapsto\tilde U\tilde{Ϛ}\tilde U^*$ with $\tilde U\tilde U^*=e_t$. Two identities hold:
+The reversible evolution of a state is a conjugation by a $*$-unitary element, $\tilde{Ϛ}_{\Psi}\mapsto\tilde U\tilde{Ϛ}_{\Psi}\tilde U^*$ with $\tilde U\tilde U^*=e_t$. Two identities hold:
 
 $$
-\operatorname{Tr}\bigl(\tilde U\tilde{Ϛ}\tilde U^*\bigr)=\operatorname{Tr}\tilde{Ϛ},
+\operatorname{Tr}\bigl(\tilde U\tilde{Ϛ}_{\Psi}\tilde U^*\bigr)=\operatorname{Tr}\tilde{Ϛ}_{\Psi},
 \qquad
-\langle\tilde U\tilde{Ϛ}\tilde U^*\rangle_\natural=\langle\tilde{Ϛ}\rangle_\natural .
+\langle\tilde U\tilde{Ϛ}_{\Psi}\tilde U^*\rangle_\natural=\langle\tilde{Ϛ}_{\Psi}\rangle_\natural .
 $$
 
 The first follows from cyclicity of the trace and from $\tilde U^*\tilde U=e_t$. The second follows from multiplicativity of the determinant and from $\lvert\det\tilde U\rvert^{2}=1$. Both were checked on a hundred random $*$-unitary elements. Since the entropy is a function of the quaternionic norm, it is invariant:
 
 $$
-S\bigl(\tilde U\tilde{Ϛ}\tilde U^*\bigr)=S(\tilde{Ϛ}).
+S\bigl(\tilde U\tilde{Ϛ}_{\Psi}\tilde U^*\bigr)=S(\tilde{Ϛ}_{\Psi}).
 $$
 
 This is the precise sense in which information is conserved. Conservation here is the invariance of the spectrum under a similarity, and the trace and the norm are the two symmetric functions of the spectrum that the algebra reads.
@@ -573,11 +573,11 @@ This is the precise sense in which information is conserved. Conservation here i
 The conservation fails as soon as the dynamics is not reversible. A coarse-graining is a unital completely positive map that contracts the Bloch ball, $\lvert\vec r_Ξ\rvert\le\lvert\vec r\rvert$. The trace survives, because the map preserves it, and the quaternionic norm increases, because the radius falls:
 
 $$
-\operatorname{Tr}Ξ(\tilde{Ϛ})=\operatorname{Tr}\tilde{Ϛ},
+\operatorname{Tr}Ξ(\tilde{Ϛ}_{\Psi})=\operatorname{Tr}\tilde{Ϛ}_{\Psi},
 \qquad
-\langleΞ(\tilde{Ϛ})\rangle_\natural\ge\langle\tilde{Ϛ}\rangle_\natural,
+\langleΞ(\tilde{Ϛ}_{\Psi})\rangle_\natural\ge\langle\tilde{Ϛ}_{\Psi}\rangle_\natural,
 \qquad
-S\bigl(Ξ(\tilde{Ϛ})\bigr)\ge S(\tilde{Ϛ}).
+S\bigl(Ξ(\tilde{Ϛ}_{\Psi})\bigr)\ge S(\tilde{Ϛ}_{\Psi}).
 $$
 
 Coarse-graining never creates information. It can only fail to retain it. The fine-grained entropy is the conserved reference, and the increase appears when a reversible flow and a contraction are composed. The second law of the sector is a statement about the pair, not about the flow alone.
@@ -594,7 +594,7 @@ The two sectors use the same two operations in opposite roles. The table is the 
 
 | | material side, $\mathbb{B}_{\Phi}$ | informational side, $\mathbb{B}_{\Psi}$ |
 | --- | --- | --- |
-| standard object | four-momentum $\tilde P$ | state $\tilde{Ϛ}$ |
+| standard object | four-momentum $\tilde P_{\Phi}$ | state $\tilde{Ϛ}_{\Psi}$ |
 | trace | energy, $2iE/c$ | normalisation, one |
 | quaternionic norm | mass squared, $-m^2c^2$ | impurity, $\tfrac14(1-r^2)$ |
 | scalar product | $\langle\cdot,\cdot\rangle_\natural$, indefinite | $\langle\cdot,\cdot\rangle_*$, positive definite |
@@ -627,7 +627,7 @@ The fixed number is the one that two observers agree on. The free number is the 
 
 ### The Informational Ledger: The Norm Is a State Label
 
-**One trace, four states.** Every state has trace one. Take the family $\tilde{Ϛ}=\frac12(e_t+i\vec r)$ at $\lvert\vec r\rvert=1$, $0.8$, $0.5$ and $0$. The norms are $0$, $0.09$, $0.1875$ and $0.25$. The entropies are $0$, $0.47$, $0.81$ and $1$ bit.
+**One trace, four states.** Every state has trace one. Take the family $\tilde{Ϛ}_{\Psi}=\frac12(e_t+i\vec r)$ at $\lvert\vec r\rvert=1$, $0.8$, $0.5$ and $0$. The norms are $0$, $0.09$, $0.1875$ and $0.25$. The entropies are $0$, $0.47$, $0.81$ and $1$ bit.
 
 The trace is the same four times. The norm separates the four states without error, and the entropy is a monotone function of it. So on this side the trace identifies nothing and the norm identifies everything.
 
@@ -705,13 +705,13 @@ $$
 \Delta=(\operatorname{Tr}\tilde Q)^2-4\langle\tilde Q\rangle_\natural .
 $$
 
-On a four-momentum, with $\operatorname{Tr}\tilde P=2iE/c$ and $\langle\tilde P\rangle_\natural=-m^2c^2$,
+On a four-momentum, with $\operatorname{Tr}\tilde P_{\Phi}=2iE/c$ and $\langle\tilde P_{\Phi}\rangle_\natural=-m^2c^2$,
 
 $$
 \Delta=-4\frac{E^2}{c^2}+4m^2c^2=-4\lvert\vec p\rvert^2\le0 .
 $$
 
-The eigenvalues are imaginary, and the mass shell is the statement $E\ge mc^2$ with equality at rest. On a state, with $\operatorname{Tr}\tilde{Ϛ}=1$ and $\langle\tilde{Ϛ}\rangle_\natural=\tfrac14(1-r^2)$,
+The eigenvalues are imaginary, and the mass shell is the statement $E\ge mc^2$ with equality at rest. On a state, with $\operatorname{Tr}\tilde{Ϛ}_{\Psi}=1$ and $\langle\tilde{Ϛ}_{\Psi}\rangle_\natural=\tfrac14(1-r^2)$,
 
 $$
 \Delta=1-(1-r^2)=r^2\ge0 .
@@ -760,8 +760,8 @@ What would fix $h_0$ is a derivation of $\frac{m\,c}{k_m}$ from the algebra. The
 | statement | status | warrant |
 | --- | --- | --- |
 | the trace is the sum of the eigenvalues and the norm their product | established | the characteristic polynomial; checked on 100 elements |
-| energy is the trace of the four-momentum | established | $\operatorname{Tr}\tilde P=2iE/c$; checked |
-| mass is the modulus, $\Rho=imc$ | established | $\langle\tilde P\rangle_\natural=-m^2c^2$; checked |
+| energy is the trace of the four-momentum | established | $\operatorname{Tr}\tilde P_{\Phi}=2iE/c$; checked |
+| mass is the modulus, $\Rho=imc$ | established | $\langle\tilde P_{\Phi}\rangle_\natural=-m^2c^2$; checked |
 | $E=mc^2\cosh\theta_{\mathrm{rpd}}$ | established | the Hamilton pairing; checked |
 | the norm is preserved by unit-norm congruence | established | determinant multiplicativity; checked |
 | the trace is preserved by $*$-unitary conjugation | established | cyclicity and $\tilde U^*\tilde U=e_t$; checked |
@@ -799,11 +799,11 @@ What would fix $h_0$ is a derivation of $\frac{m\,c}{k_m}$ from the algebra. The
 
 - Conjugation by a $*$-unitary element fixes the trace and the determinant of every element it acts on. That is one identity, and it is the whole warrant of the four conservation laws: read on $\mathbb{B}_{\Phi}$ it says that energy is conserved and that mass is conserved, and read on $\mathbb{B}_{\Psi}$ it says that normalisation is conserved and that information is conserved. Each number lands in the sector where it is defined.
 - The algebra attaches two numbers to an element: the trace, which is the sum of the two eigenvalues, and the quaternionic norm, which is their product and the determinant of the $2\times2$ image. A similarity fixes both because a similarity fixes the spectrum.
-- On $\mathbb{B}_{\Phi}$ the trace is energy, $E=\frac{c}{2i}\operatorname{Tr}\tilde P$, and the norm is mass, $\langle\tilde P\rangle_\natural=-m^2c^2$; the mass is the central modulus $\Rho=imc$.
+- On $\mathbb{B}_{\Phi}$ the trace is energy, $E=\frac{c}{2i}\operatorname{Tr}\tilde P_{\Phi}$, and the norm is mass, $\langle\tilde P_{\Phi}\rangle_\natural=-m^2c^2$; the mass is the central modulus $\Rho=imc$.
 - The anti-Hermitian sector carries the generators, and no element of either sector carries a rate. For $\tilde Q=-\tilde Q^{*}$, $\exp(r'_t\tilde Q)$ is $*$-unitary, and the energy generator $-i\tilde R_\Psi$ is anti-Hermitian. A survival probability can fall: the width is the imaginary part of the central self-energy, the pole is a second-sheet zero of a Hermitian resolvent, and the probability removed from one slot is the probability in the eliminated one. The exponential is a fit over an intermediate window; the exact curve starts quadratically and ends as a power law.
-- The material split is a factorisation, not a sum: $\tilde P=\Rho e^{\vec U\Theta}$ with $\Rho=imc$, $\Theta=-i\theta_{\mathrm{rpd}}$, $\vec U=\vec u_p$, hence $E=mc^2\cosh\theta_{\mathrm{rpd}}$.
-- Mass conservation is the norm conservation of the total four-momentum. Mass is not additive; the mass of a sum carries the cross term $2\langle\tilde P_1,\tilde P_2\rangle_\natural$.
-- On $\mathbb{B}_{\Psi}$ the trace is the normalisation, $\operatorname{Tr}\tilde{Ϛ}=1$, and the quaternionic norm is the information, $\langle\tilde{Ϛ}\rangle_\natural=\tfrac14(1-r^2)$; the entropy is a function of that norm alone.
+- The material split is a factorisation, not a sum: $\tilde P_{\Phi}=\Rho e^{\vec U\Theta}$ with $\Rho=imc$, $\Theta=-i\theta_{\mathrm{rpd}}$, $\vec U=\vec u_p$, hence $E=mc^2\cosh\theta_{\mathrm{rpd}}$.
+- Mass conservation is the norm conservation of the total four-momentum. Mass is not additive; the mass of a sum carries the cross term $2\langle\tilde P_{\Phi,1},\tilde P_{\Phi,2}\rangle_\natural$.
+- On $\mathbb{B}_{\Psi}$ the trace is the normalisation, $\operatorname{Tr}\tilde{Ϛ}_{\Psi}=1$, and the quaternionic norm is the information, $\langle\tilde{Ϛ}_{\Psi}\rangle_\natural=\tfrac14(1-r^2)$; the entropy is a function of that norm alone.
 - Information is conserved only in the reversible sense: $*$-unitary conjugation preserves the trace and the norm, and hence the entropy. Coarse-graining preserves the trace, increases the norm and increases the entropy.
 - Conservation is not invariance. The trace is fixed by the $*$-unitary flow and moved by a boost, so energy is conserved and frame-dependent; the determinant is fixed by both, so mass is conserved and frame-independent.
 - The duality is the thesis: the norm is fixed and the trace free on the material side, the trace fixed and the norm free on the informational side.
@@ -823,12 +823,12 @@ What would fix $h_0$ is a derivation of $\frac{m\,c}{k_m}$ from the algebra. The
 | $\langle\tilde Q\rangle_\natural=\tilde Q\tilde Q^\natural$ | the quaternionic norm, the determinant, the interval |
 | $\langle\tilde Q_1,\tilde Q_2\rangle_\natural=\mathrm{Sc}(\tilde Q_1^\natural\tilde Q_2)$ | the quaternionic form |
 | $\langle\tilde Q_1,\tilde Q_2\rangle_*=\mathrm{Sc}(\tilde Q_1\tilde Q_2^*)$ | the Hermitian form |
-| $\tilde P=i(E/c)e_t+\vec p$ | the four-momentum |
+| $\tilde P_{\Phi}=i(E/c)e_t+\vec p$ | the four-momentum |
 | $\Rho=imc$ | the mass modulus, the central scalar of the material side |
 | $\theta_{\mathrm{rpd}}$ | the rapidity, $\cosh\theta_{\mathrm{rpd}}=E/(mc^{2})$, $\sinh\theta_{\mathrm{rpd}}=\lvert\vec p\rvert/(mc)$ |
-| $\tilde{Ϛ}=\tfrac12(e_t+i\vec r)$ | the state, $\lvert\vec r\rvert\le1$ |
-| $S(\tilde{Ϛ})=h((1+\lvert\vec r\rvert)/2)$ | the von Neumann entropy |
-| $P=2\langle\tilde{Ϛ},\tilde{Ϛ}\rangle_*$ | the purity, $P+2\langle\tilde{Ϛ}\rangle_\natural=1$ |
+| $\tilde{Ϛ}_{\Psi}=\tfrac12(e_t+i\vec r)$ | the state, $\lvert\vec r\rvert\le1$ |
+| $S(\tilde{Ϛ}_{\Psi})=h((1+\lvert\vec r\rvert)/2)$ | the von Neumann entropy |
+| $P=2\langle\tilde{Ϛ}_{\Psi},\tilde{Ϛ}_{\Psi}\rangle_*$ | the purity, $P+2\langle\tilde{Ϛ}_{\Psi}\rangle_\natural=1$ |
 | $\tilde R_\Psi$ | the Hermitian Hamiltonian or observable, $\tilde R_\Psi=\tilde R_\Psi^{*}$ |
 | $\tilde\Gamma$ | the Hermitian width element, $\tilde\Gamma=\tilde\Gamma^{*}\ge0$, of the eliminated channel |
 | $\tilde R_{\Psi,\mathrm{eff}}=\tilde R_\Psi-\frac{i}{2}\tilde\Gamma$ | the effective Hamiltonian of the reduced slot, a shorthand, not an element of the algebra |

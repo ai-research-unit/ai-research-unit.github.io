@@ -28,16 +28,16 @@ $$
 so that $\mathrm{Tr}(e_t\otimes e_t)=4$. Two elements act on different slots,
 
 $$
-\tilde S_k^{(1)}=\tilde S_k\otimes e_t,\qquad \tilde S_k^{(2)}=e_t\otimes\tilde S_k ,
+\tilde S_{\Psi,k}^{(1)}=\tilde S_{\Psi,k}\otimes e_t,\qquad \tilde S_{\Psi,k}^{(2)}=e_t\otimes\tilde S_{\Psi,k} ,
 $$
 
 and therefore commute with one another,
 
 $$
-[\tilde S_i^{(1)},\tilde S_j^{(2)}]=0 .
+[\tilde S_{\Psi,i}^{(1)},\tilde S_{\Psi,j}^{(2)}]=0 .
 $$
 
-The isomorphism used throughout sends $e_\mu\otimes e_\nu$ to $\mathsf{M}_2(e_\mu)\otimes\mathsf{M}_2(e_\nu)$ with $\mathsf{M}_2(e_t)=I_2$ and $\mathsf{M}_2(\vec e_k)=-i\sigma_k$; under it $\tilde S_k^{(a)}$ maps to $\frac{m\,c}{2\,k_m}\sigma_k$ acting on the $a$-th factor, and the algebra $\mathbb{B}\otimes\mathbb{B}$ maps onto all of $M_4(\mathbb{C})$.
+The isomorphism used throughout sends $e_\mu\otimes e_\nu$ to $\mathsf{M}_2(e_\mu)\otimes\mathsf{M}_2(e_\nu)$ with $\mathsf{M}_2(e_t)=I_2$ and $\mathsf{M}_2(\vec e_k)=-i\sigma_k$; under it $\tilde S_{\Psi,k}^{(a)}$ maps to $\frac{m\,c}{2\,k_m}\sigma_k$ acting on the $a$-th factor, and the algebra $\mathbb{B}\otimes\mathbb{B}$ maps onto all of $M_4(\mathbb{C})$.
 
 A state of the pair is a Hermitian, positive element of $\mathbb{B}\otimes\mathbb{B}$ with $\mathrm{Sc}=2^{-2}$ (trace one in the $4\times4$ image), and an observable is a Hermitian element. The pure product states are the idempotents
 
@@ -61,31 +61,31 @@ One structural remark belongs here. The tensor product is the composition rule t
 The total spin of the pair is the sum of the one-particle spins,
 
 $$
-\tilde S_{\mathrm{tot},k}=\tilde S_k^{(1)}+\tilde S_k^{(2)}=\frac{m\,c}{2\,k_m}\left(i\vec e_k\otimes e_t+e_t\otimes i\vec e_k\right),
+\tilde S_{\Psi,\mathrm{tot},k}=\tilde S_{\Psi,k}^{(1)}+\tilde S_{\Psi,k}^{(2)}=\frac{m\,c}{2\,k_m}\left(i\vec e_k\otimes e_t+e_t\otimes i\vec e_k\right),
 $$
 
 which is a Hermitian element of $\mathbb{B}_{\Psi}\otimes\mathbb{B}_{\Psi}$. Because the cross-commutators vanish, the total operators close on the same algebra as one-particle spin:
 
 $$
-[\tilde S_{\mathrm{tot},i},\tilde S_{\mathrm{tot},j}]=\frac{m^{2}\,c^{2}}{4\,k_m^{2}}\left([ie_i,ie_j]\otimes e_t+e_t\otimes[ie_i,ie_j]\right)=\frac{m\,c\,i\,\epsilon_{ijk}\,\tilde{S}_{\mathrm{tot},k}}{k_m},
+[\tilde S_{\Psi,\mathrm{tot},i},\tilde S_{\Psi,\mathrm{tot},j}]=\frac{m^{2}\,c^{2}}{4\,k_m^{2}}\left([ie_i,ie_j]\otimes e_t+e_t\otimes[ie_i,ie_j]\right)=\frac{m\,c\,i\,\epsilon_{ijk}\,\tilde{S}_{\Psi,\mathrm{tot},k}}{k_m},
 $$
 
 using $[ie_i,ie_j]=2i\epsilon_{ijk}\,i\vec e_k$, which follows from the quaternion product rule. The total ladder operators are
 
 $$
-\tilde S_{\mathrm{tot},\pm}=\tilde S_{\mathrm{tot},1}\pm  i\tilde S_{\mathrm{tot},2}=\tilde S_\pm^{(1)}+\tilde S_\pm^{(2)},
+\tilde S_{\Psi,\mathrm{tot},\pm}=\tilde S_{\Psi,\mathrm{tot},1}\pm  i\tilde S_{\Psi,\mathrm{tot},2}=\tilde S_{\Psi,\pm}^{(1)}+\tilde S_{\Psi,\pm}^{(2)},
 \qquad
-\tilde S_\pm^{(a)}=\frac{m\,c}{2\,k_m}\left(i\vec e_x\mp  \vec e_y\right)\ \text{on the }a\text{-th slot},
+\tilde S_{\Psi,\pm}^{(a)}=\frac{m\,c}{2\,k_m}\left(i\vec e_x\mp  \vec e_y\right)\ \text{on the }a\text{-th slot},
 $$
 
 and the total Casimir is
 
 $$
-\tilde S_{\mathrm{tot}}^2=\sum_{k=1}^{3}\tilde S_{\mathrm{tot},k}^2
-=\left(\tilde S^{(1)}\right)^2+\left(\tilde S^{(2)}\right)^2+2\sum_{k=1}^{3}\tilde S_k^{(1)}\tilde S_k^{(2)} .
+\tilde S_{\Psi,\mathrm{tot}}^2=\sum_{k=1}^{3}\tilde S_{\Psi,\mathrm{tot},k}^2
+=\left(\tilde S_{\Psi}^{(1)}\right)^2+\left(\tilde S_{\Psi}^{(2)}\right)^2+2\sum_{k=1}^{3}\tilde S_{\Psi,k}^{(1)}\tilde S_{\Psi,k}^{(2)} .
 $$
 
-The first two terms are central and known: $\left(\tilde S^{(a)}\right)^2=\frac{3\,m^{2}\,c^{2}}{4\,k_m^{2}}e_t\otimes e_t$. The third is the **coupling term**, and it is the only part of $\tilde S_{\mathrm{tot}}^2$ that is not a sum of one-particle operators. It is evaluated in closed form in the next section; it turns out to be a linear combination of the identity and the exchange operator, which is what makes the two-spin system exactly solvable inside the algebra.
+The first two terms are central and known: $\left(\tilde S_{\Psi}^{(a)}\right)^2=\frac{3\,m^{2}\,c^{2}}{4\,k_m^{2}}e_t\otimes e_t$. The third is the **coupling term**, and it is the only part of $\tilde S_{\Psi,\mathrm{tot}}^2$ that is not a sum of one-particle operators. It is evaluated in closed form in the next section; it turns out to be a linear combination of the identity and the exchange operator, which is what makes the two-spin system exactly solvable inside the algebra.
 
 ## The Coupling Term and the Coupled Idempotents
 
@@ -94,13 +94,13 @@ The first two terms are central and known: $\left(\tilde S^{(a)}\right)^2=\frac{
 Each summand of the coupling term factorises in the tensor product,
 
 $$
-\tilde S_k^{(1)}\tilde S_k^{(2)}=\frac{m^{2}\,c^{2}}{4\,k_m^{2}}\,(i\vec e_k)\otimes(i\vec e_k)=-\frac{m^{2}\,c^{2}}{4\,k_m^{2}}\,\vec e_k\otimes \vec e_k ,
+\tilde S_{\Psi,k}^{(1)}\tilde S_{\Psi,k}^{(2)}=\frac{m^{2}\,c^{2}}{4\,k_m^{2}}\,(i\vec e_k)\otimes(i\vec e_k)=-\frac{m^{2}\,c^{2}}{4\,k_m^{2}}\,\vec e_k\otimes \vec e_k ,
 $$
 
 with no sum over $k$ on the right, because $i^2=-1$ implies $(i\vec e_k)\otimes(i\vec e_k)=i^2\,\vec e_k\otimes \vec e_k=-\vec e_k\otimes \vec e_k$. Summing,
 
 $$
-\sum_{k=1}^{3}\tilde S_k^{(1)}\tilde S_k^{(2)}=-\frac{m^{2}\,c^{2}}{4\,k_m^{2}}\sum_{k=1}^{3}\vec e_k\otimes \vec e_k .
+\sum_{k=1}^{3}\tilde S_{\Psi,k}^{(1)}\tilde S_{\Psi,k}^{(2)}=-\frac{m^{2}\,c^{2}}{4\,k_m^{2}}\sum_{k=1}^{3}\vec e_k\otimes \vec e_k .
 $$
 
 The sum $\sum_k \vec e_k\otimes \vec e_k$ is an element of the algebra that is not central but is diagonal in the tensor basis. Defining the **exchange operator**
@@ -112,7 +112,7 @@ $$
 so that $\sum_k \vec e_k\otimes \vec e_k=e_t\otimes e_t-2F$, the coupling term becomes
 
 $$
-\boxed{\;\sum_{k=1}^{3}\tilde S_k^{(1)}\tilde S_k^{(2)}=\frac{m^{2}\,c^{2}}{2\,k_m^{2}}\,F-\frac{m^{2}\,c^{2}}{4\,k_m^{2}}\,e_t\otimes e_t\;}.
+\boxed{\;\sum_{k=1}^{3}\tilde S_{\Psi,k}^{(1)}\tilde S_{\Psi,k}^{(2)}=\frac{m^{2}\,c^{2}}{2\,k_m^{2}}\,F-\frac{m^{2}\,c^{2}}{4\,k_m^{2}}\,e_t\otimes e_t\;}.
 $$
 
 The exchange operator is therefore the algebraic carrier of the interaction. Its properties are immediate:
@@ -147,21 +147,21 @@ with traces $3$ and $1$ and trace-orthonormality $\mathrm{Tr}(\tilde\Pi_{\mathrm
 The total Casimir now follows in closed form. Substituting the coupling term,
 
 $$
-\boxed{\;\tilde S_{\mathrm{tot}}^2=\frac{3\,m^{2}\,c^{2}}{2\,k_m^{2}}\,e_t\otimes e_t+2\left(\frac{m^{2}\,c^{2}}{2\,k_m^{2}}F-\frac{m^{2}\,c^{2}}{4\,k_m^{2}}e_t\otimes e_t\right)
+\boxed{\;\tilde S_{\Psi,\mathrm{tot}}^2=\frac{3\,m^{2}\,c^{2}}{2\,k_m^{2}}\,e_t\otimes e_t+2\left(\frac{m^{2}\,c^{2}}{2\,k_m^{2}}F-\frac{m^{2}\,c^{2}}{4\,k_m^{2}}e_t\otimes e_t\right)
 =\frac{m^{2}\,c^{2}}{k_m^{2}}\left(e_t\otimes e_t+F\right)\;},
 $$
 
-the central term being the sum of the two one-factor Casimirs $\left(\tilde S^{(a)}\right)^2=\frac{3\,m^{2}\,c^{2}}{4\,k_m^{2}}e_t\otimes e_t$; equivalently, since $e_t\otimes e_t+F=2\tilde\Pi_{\mathrm{sym}}$,
+the central term being the sum of the two one-factor Casimirs $\left(\tilde S_{\Psi}^{(a)}\right)^2=\frac{3\,m^{2}\,c^{2}}{4\,k_m^{2}}e_t\otimes e_t$; equivalently, since $e_t\otimes e_t+F=2\tilde\Pi_{\mathrm{sym}}$,
 
 $$
-\tilde S_{\mathrm{tot}}^2=\frac{2\,m^{2}\,c^{2}\,\tilde{\Pi}_{\mathrm{sym}}}{k_m^{2}}+0\cdot \tilde\Pi_{\mathrm{asym}} .
+\tilde S_{\Psi,\mathrm{tot}}^2=\frac{2\,m^{2}\,c^{2}\,\tilde{\Pi}_{\mathrm{sym}}}{k_m^{2}}+0\cdot \tilde\Pi_{\mathrm{asym}} .
 $$
 
 The coupled idempotents are exactly the spectral projectors of the total Casimir. This is why the coupling problem of two fundamental modules closes algebraically: the interaction term, the Casimir, and the idempotents are all functions of the single element $F$.
 
 ## The Four Coupled States as Idempotents
 
-The spectral decomposition of $F$ has two eigenvalues, $+1$ on the triplet and $-1$ on the singlet. To separate the triplet into its three states one diagonalises $\tilde S_{\mathrm{tot},3}$ within the symmetric subspace, whose spectral projectors are $\tilde\Pi_+\otimes \tilde\Pi_+$, $\tilde\Pi_-\otimes \tilde\Pi_-$, and their complement in $\tilde\Pi_{\mathrm{sym}}$. Here $i\vec e_z$ is a root of $+1$, $(i\vec e_z)^2=e_t$, and $\tilde\Pi_+$ and $\tilde\Pi_-$ are its two associated idempotents. With
+The spectral decomposition of $F$ has two eigenvalues, $+1$ on the triplet and $-1$ on the singlet. To separate the triplet into its three states one diagonalises $\tilde S_{\Psi,\mathrm{tot},3}$ within the symmetric subspace, whose spectral projectors are $\tilde\Pi_+\otimes \tilde\Pi_+$, $\tilde\Pi_-\otimes \tilde\Pi_-$, and their complement in $\tilde\Pi_{\mathrm{sym}}$. Here $i\vec e_z$ is a root of $+1$, $(i\vec e_z)^2=e_t$, and $\tilde\Pi_+$ and $\tilde\Pi_-$ are its two associated idempotents. With
 
 $$
 \tilde\Pi_\pm=\tfrac{1}{2}\left(e_t\pm i\vec e_z\right),
@@ -214,18 +214,18 @@ is a unit of the Hurwitz order and has order six, with $Q^2=-Q^*$ and $Q^3=-e_t$
 The action of the total spin operators is the expected one. On the idempotents the diagonal operators act by multiplication,
 
 $$
-\tilde S_{\mathrm{tot},3}\tilde\Pi_{s_{\mathrm{tot}},s_{\mathrm{tot},z}}=\frac{m\,c\,s_{\mathrm{tot},z}\,\tilde{\Pi}_{s_{\mathrm{tot}},s_{\mathrm{tot},z}}}{k_m},\qquad
-\tilde S_{\mathrm{tot}}^2\tilde\Pi_{s_{\mathrm{tot}},s_{\mathrm{tot},z}}=\frac{m^{2}\,c^{2}\,s_{\mathrm{tot}}\,(s_{\mathrm{tot}}+1)\,\tilde{\Pi}_{s_{\mathrm{tot}},s_{\mathrm{tot},z}}}{k_m^{2}},\qquad
-\tilde S_{\mathrm{tot},\pm} \tilde\Pi_{\mathrm{asym}}=0 ,
+\tilde S_{\Psi,\mathrm{tot},3}\tilde\Pi_{s_{\mathrm{tot}},s_{\mathrm{tot},z}}=\frac{m\,c\,s_{\mathrm{tot},z}\,\tilde{\Pi}_{s_{\mathrm{tot}},s_{\mathrm{tot},z}}}{k_m},\qquad
+\tilde S_{\Psi,\mathrm{tot}}^2\tilde\Pi_{s_{\mathrm{tot}},s_{\mathrm{tot},z}}=\frac{m^{2}\,c^{2}\,s_{\mathrm{tot}}\,(s_{\mathrm{tot}}+1)\,\tilde{\Pi}_{s_{\mathrm{tot}},s_{\mathrm{tot},z}}}{k_m^{2}},\qquad
+\tilde S_{\Psi,\mathrm{tot},\pm} \tilde\Pi_{\mathrm{asym}}=0 ,
 $$
 
 while the ladder operators move between the states, $\tilde\Pi_{s_{\mathrm{tot}},s_{\mathrm{tot},z}}$ being the idempotent of $|s_{\mathrm{tot}},s_{\mathrm{tot},z}\rangle$:
 
 $$
-\tilde S_+|1,-1\rangle=\frac{m\,c}{k_m}\sqrt2\,|1,0\rangle,\qquad
-\tilde S_+|1,0\rangle=\frac{m\,c}{k_m}\sqrt2\,|1,1\rangle,\qquad
-\tilde S_+|1,1\rangle=0,\qquad
-\tilde S_{\mathrm{tot},\pm}|0,0\rangle=0 ,
+\tilde S_{\Psi,+}|1,-1\rangle=\frac{m\,c}{k_m}\sqrt2\,|1,0\rangle,\qquad
+\tilde S_{\Psi,+}|1,0\rangle=\frac{m\,c}{k_m}\sqrt2\,|1,1\rangle,\qquad
+\tilde S_{\Psi,+}|1,1\rangle=0,\qquad
+\tilde S_{\Psi,\mathrm{tot},\pm}|0,0\rangle=0 ,
 $$
 
 which is the standard triplet ladder in algebraic form. The last relation is the algebraic statement that the singlet is annihilated by the total ladder operators.
@@ -241,10 +241,10 @@ $$
 and on the product basis vectors, under $\mathsf{M}_2\otimes\mathsf{M}_2$, it acts as the swap $|a\rangle|b\rangle\mapsto|b\rangle|a\rangle$. It therefore commutes with the total spin operators,
 
 $$
-[F,\tilde S_{\mathrm{tot},k}]=0,\qquad k=1,2,3 ,
+[F,\tilde S_{\Psi,\mathrm{tot},k}]=0,\qquad k=1,2,3 ,
 $$
 
-which is immediate from the closed form of the coupling term and which can also be verified directly from $F=\tfrac12(e_t\otimes e_t-\sum_k\vec e_k\otimes \vec e_k)$ using the quaternion product rule. The exchange operator is thus a **central element of the coupled rotation algebra**: it commutes with $\tilde S_{\mathrm{tot},1},\tilde S_{\mathrm{tot},2},\tilde S_{\mathrm{tot},3}$ and hence with every function of them, in particular with $\tilde S_{\mathrm{tot}}^2$. The commutation is the algebraic reason that the exchange quantum number and the total spin are simultaneously diagonal.
+which is immediate from the closed form of the coupling term and which can also be verified directly from $F=\tfrac12(e_t\otimes e_t-\sum_k\vec e_k\otimes \vec e_k)$ using the quaternion product rule. The exchange operator is thus a **central element of the coupled rotation algebra**: it commutes with $\tilde S_{\Psi,\mathrm{tot},1},\tilde S_{\Psi,\mathrm{tot},2},\tilde S_{\Psi,\mathrm{tot},3}$ and hence with every function of them, in particular with $\tilde S_{\Psi,\mathrm{tot}}^2$. The commutation is the algebraic reason that the exchange quantum number and the total spin are simultaneously diagonal.
 
 The singlet is antisymmetric under exchange and the triplet members are symmetric:
 
@@ -262,7 +262,7 @@ Two further algebraic properties of the coupled idempotents are worth recording,
 The exchange structure determines the spectrum of any two-particle interaction built from the total spin. The **Heisenberg coupling** is
 
 $$
-\tilde R_\Psi=-J_{\mathrm{ex}}\sum_{k=1}^{3}\tilde S_k^{(1)}\tilde S_k^{(2)},
+\tilde R_\Psi=-J_{\mathrm{ex}}\sum_{k=1}^{3}\tilde S_{\Psi,k}^{(1)}\tilde S_{\Psi,k}^{(2)},
 \qquad J_{\mathrm{ex}}\ \text{the exchange constant},
 $$
 
@@ -298,11 +298,11 @@ For $J_{\mathrm{ex}}>0$ the ferromagnetic case the triplet lies lower; for $J_{\
 The result can be checked without the idempotent machinery. The eigenvector equation in the form
 
 $$
-\tilde S_{\mathrm{tot}}^2=\left(\tilde S^{(1)}+\tilde S^{(2)}\right)^2
-=2\sum_k\tilde S_k^{(1)}\tilde S_k^{(2)}+\frac{3\,m^{2}\,c^{2}}{2\,k_m^{2}}e_t\otimes e_t
+\tilde S_{\Psi,\mathrm{tot}}^2=\left(\tilde S_{\Psi}^{(1)}+\tilde S_{\Psi}^{(2)}\right)^2
+=2\sum_k\tilde S_{\Psi,k}^{(1)}\tilde S_{\Psi,k}^{(2)}+\frac{3\,m^{2}\,c^{2}}{2\,k_m^{2}}e_t\otimes e_t
 $$
 
-gives $\sum_k\tilde S_k^{(1)}\tilde S_k^{(2)}=\tfrac12\left(\tilde S_{\mathrm{tot}}^2-\frac{3\,m^{2}\,c^{2}}{2\,k_m^{2}}e_t\otimes e_t\right)$, so that $\tilde R_\Psi=-\tfrac{J_{\mathrm{ex}}}{2}\left(\tilde S_{\mathrm{tot}}^2-\frac{3\,m^{2}\,c^{2}}{2\,k_m^{2}}e_t\otimes e_t\right)$ and the eigenvalues are $-\tfrac{J_{\mathrm{ex}}}{2}\left(\frac{2\,m^{2}\,c^{2}}{k_m^{2}}-\frac{3\,m^{2}\,c^{2}}{2\,k_m^{2}}\right)=-\frac{m^{2}\,c^{2}\,J_{\mathrm{ex}}}{4\,k_m^{2}}$ on the triplet and $-\tfrac{J_{\mathrm{ex}}}{2}\left(0-\frac{3\,m^{2}\,c^{2}}{2\,k_m^{2}}\right)=+\frac{3\,m^{2}\,c^{2}\,J_{\mathrm{ex}}}{4\,k_m^{2}}$ on the singlet. The two routes agree.
+gives $\sum_k\tilde S_{\Psi,k}^{(1)}\tilde S_{\Psi,k}^{(2)}=\tfrac12\left(\tilde S_{\Psi,\mathrm{tot}}^2-\frac{3\,m^{2}\,c^{2}}{2\,k_m^{2}}e_t\otimes e_t\right)$, so that $\tilde R_\Psi=-\tfrac{J_{\mathrm{ex}}}{2}\left(\tilde S_{\Psi,\mathrm{tot}}^2-\frac{3\,m^{2}\,c^{2}}{2\,k_m^{2}}e_t\otimes e_t\right)$ and the eigenvalues are $-\tfrac{J_{\mathrm{ex}}}{2}\left(\frac{2\,m^{2}\,c^{2}}{k_m^{2}}-\frac{3\,m^{2}\,c^{2}}{2\,k_m^{2}}\right)=-\frac{m^{2}\,c^{2}\,J_{\mathrm{ex}}}{4\,k_m^{2}}$ on the triplet and $-\tfrac{J_{\mathrm{ex}}}{2}\left(0-\frac{3\,m^{2}\,c^{2}}{2\,k_m^{2}}\right)=+\frac{3\,m^{2}\,c^{2}\,J_{\mathrm{ex}}}{4\,k_m^{2}}$ on the singlet. The two routes agree.
 
 ## Partial Traces and the Reduced States
 
@@ -334,7 +334,7 @@ The coupled idempotents and the four Bell idempotents are two orthogonal familie
 
 The singlet belongs to both bases: $\tilde\Pi_{0,0}=\tilde\Pi_{\epsilon}$ with $\epsilon=(+1,+1,+1)$, which is the singlet idempotent $\tilde\Pi_{\mathrm{singlet}}$ of the companion articles. The middle triplet member $\tilde\Pi_{1,0}$ is the Bell idempotent with $\epsilon=(-1,-1,+1)$, the state $|\tilde{Ξ}_{\mathrm{sp}}^+\rangle$. The two remaining Bell idempotents are the idempotents associated with the states $\tfrac{1}{\sqrt2}\left(|\!\uparrow\uparrow\rangle\pm|\!\downarrow\downarrow\rangle\right)$, they involve off-diagonal matrix units linking the extreme product states, and are not members of the coupled multiplet.
 
-The two bases are distinguished by what they diagonalise. The coupled basis diagonalises the total Casimir $\tilde S_{\mathrm{tot}}^2$ and the total $\tilde S_{\mathrm{tot},3}$. The Bell basis diagonalises the two commuting involutions
+The two bases are distinguished by what they diagonalise. The coupled basis diagonalises the total Casimir $\tilde S_{\Psi,\mathrm{tot}}^2$ and the total $\tilde S_{\Psi,\mathrm{tot},3}$. The Bell basis diagonalises the two commuting involutions
 
 $$
 \sigma_1\otimes\sigma_1,\qquad \sigma_3\otimes\sigma_3 ,
@@ -360,18 +360,18 @@ as one particle of a singlet, reading the pair $\{Q,Q^*\}$ as one singlet and $\
 
 ## Summary
 
-Two spin-$\tfrac12$ particles in the biquaternion framework are described by the tensor-product algebra $\mathbb{B}\otimes_\mathbb{C}\mathbb{B}\cong M_4(\mathbb{C})$, with total spin operators $\tilde S_{\mathrm{tot},k}=\tilde S_k^{(1)}+\tilde S_k^{(2)}$ and partial traces $\mathrm{Tr}_1,\mathrm{Tr}_2$.
+Two spin-$\tfrac12$ particles in the biquaternion framework are described by the tensor-product algebra $\mathbb{B}\otimes_\mathbb{C}\mathbb{B}\cong M_4(\mathbb{C})$, with total spin operators $\tilde S_{\Psi,\mathrm{tot},k}=\tilde S_{\Psi,k}^{(1)}+\tilde S_{\Psi,k}^{(2)}$ and partial traces $\mathrm{Tr}_1,\mathrm{Tr}_2$.
 
 The article established the following.
 
-- **Total spin and its Casimir.** $[\tilde S_{\mathrm{tot},i},\tilde S_{\mathrm{tot},j}]=\frac{m\,c\,i\,\epsilon_{ijk}\,\tilde{S}_{\mathrm{tot},k}}{k_m}$, and
-  $$\tilde S_{\mathrm{tot}}^2=\frac{m^{2}\,c^{2}}{k_m^{2}}\left(e_t\otimes e_t+F\right)=\frac{2\,m^{2}\,c^{2}\,\tilde{\Pi}_{\mathrm{sym}}}{k_m^{2}},$$
+- **Total spin and its Casimir.** $[\tilde S_{\Psi,\mathrm{tot},i},\tilde S_{\Psi,\mathrm{tot},j}]=\frac{m\,c\,i\,\epsilon_{ijk}\,\tilde{S}_{\Psi,\mathrm{tot},k}}{k_m}$, and
+  $$\tilde S_{\Psi,\mathrm{tot}}^2=\frac{m^{2}\,c^{2}}{k_m^{2}}\left(e_t\otimes e_t+F\right)=\frac{2\,m^{2}\,c^{2}\,\tilde{\Pi}_{\mathrm{sym}}}{k_m^{2}},$$
   where $F=\tfrac12(e_t\otimes e_t-\sum_k \vec e_k\otimes \vec e_k)$ is the exchange operator.
-- **The coupling term.** $\sum_k\tilde S_k^{(1)}\tilde S_k^{(2)}=\frac{m^{2}\,c^{2}}{2\,k_m^{2}}F-\frac{m^{2}\,c^{2}}{4\,k_m^{2}}e_t\otimes e_t$, so the interaction between the two spins is carried by the exchange operator; equivalently $[F,\tilde S_{\mathrm{tot},k}]=0$, whence $F$ is central in the coupled rotation algebra.
-- **The coupled idempotents.** $\tilde\Pi_{\mathrm{sym}}=\tfrac14(3e_t\otimes e_t-\sum_k \vec e_k\otimes \vec e_k)$ of trace $3$ and $\tilde\Pi_{\mathrm{asym}}=\tfrac14(e_t\otimes e_t+\sum_k \vec e_k\otimes \vec e_k)$ of trace $1$, Hermitian, orthogonal, complete; they are the $\pm1$ spectral projectors of $F$ and the spectral projectors of $\tilde S_{\mathrm{tot}}^2$, with $\tilde S_{\mathrm{tot}}^2=\frac{2\,m^{2}\,c^{2}\,\tilde{\Pi}_{\mathrm{sym}}}{k_m^{2}}$.
-- **The four coupled idempotents.** $\tilde\Pi_{1,\pm1}=\tilde\Pi_\pm\otimes \tilde\Pi_\pm$, $\tilde\Pi_{1,0}=\tilde\Pi_{\mathrm{sym}}-\tilde\Pi_{1,1}-\tilde\Pi_{1,-1}$, $\tilde\Pi_{0,0}=\tilde\Pi_{\mathrm{asym}}$; they are minimal Hermitian idempotents of trace one resolving the identity, and the total spin acts on them by $\tilde S_{\mathrm{tot},3}\tilde\Pi_{s_{\mathrm{tot}},s_{\mathrm{tot},z}}=\frac{m\,c\,s_{\mathrm{tot},z}\,\tilde{\Pi}_{s_{\mathrm{tot}},s_{\mathrm{tot},z}}}{k_m}$, $\tilde S_{\mathrm{tot}}^2\tilde\Pi_{s_{\mathrm{tot}},s_{\mathrm{tot},z}}=\frac{m^{2}\,c^{2}\,s_{\mathrm{tot}}\,(s_{\mathrm{tot}}+1)\,\tilde{\Pi}_{s_{\mathrm{tot}},s_{\mathrm{tot},z}}}{k_m^{2}}$, $\tilde S_{\mathrm{tot},\pm} \tilde\Pi_{s_{\mathrm{tot}},s_{\mathrm{tot},z}}=\frac{m\,c}{k_m}\sqrt{(s_{\mathrm{tot}}\mp s_{\mathrm{tot},z})(s_{\mathrm{tot}}\pm s_{\mathrm{tot},z}+1)}\,|s_{\mathrm{tot}},s_{\mathrm{tot},z}\pm1\rangle\langle  s_{\mathrm{tot}},s_{\mathrm{tot},z}|$.
+- **The coupling term.** $\sum_k\tilde S_{\Psi,k}^{(1)}\tilde S_{\Psi,k}^{(2)}=\frac{m^{2}\,c^{2}}{2\,k_m^{2}}F-\frac{m^{2}\,c^{2}}{4\,k_m^{2}}e_t\otimes e_t$, so the interaction between the two spins is carried by the exchange operator; equivalently $[F,\tilde S_{\Psi,\mathrm{tot},k}]=0$, whence $F$ is central in the coupled rotation algebra.
+- **The coupled idempotents.** $\tilde\Pi_{\mathrm{sym}}=\tfrac14(3e_t\otimes e_t-\sum_k \vec e_k\otimes \vec e_k)$ of trace $3$ and $\tilde\Pi_{\mathrm{asym}}=\tfrac14(e_t\otimes e_t+\sum_k \vec e_k\otimes \vec e_k)$ of trace $1$, Hermitian, orthogonal, complete; they are the $\pm1$ spectral projectors of $F$ and the spectral projectors of $\tilde S_{\Psi,\mathrm{tot}}^2$, with $\tilde S_{\Psi,\mathrm{tot}}^2=\frac{2\,m^{2}\,c^{2}\,\tilde{\Pi}_{\mathrm{sym}}}{k_m^{2}}$.
+- **The four coupled idempotents.** $\tilde\Pi_{1,\pm1}=\tilde\Pi_\pm\otimes \tilde\Pi_\pm$, $\tilde\Pi_{1,0}=\tilde\Pi_{\mathrm{sym}}-\tilde\Pi_{1,1}-\tilde\Pi_{1,-1}$, $\tilde\Pi_{0,0}=\tilde\Pi_{\mathrm{asym}}$; they are minimal Hermitian idempotents of trace one resolving the identity, and the total spin acts on them by $\tilde S_{\Psi,\mathrm{tot},3}\tilde\Pi_{s_{\mathrm{tot}},s_{\mathrm{tot},z}}=\frac{m\,c\,s_{\mathrm{tot},z}\,\tilde{\Pi}_{s_{\mathrm{tot}},s_{\mathrm{tot},z}}}{k_m}$, $\tilde S_{\Psi,\mathrm{tot}}^2\tilde\Pi_{s_{\mathrm{tot}},s_{\mathrm{tot},z}}=\frac{m^{2}\,c^{2}\,s_{\mathrm{tot}}\,(s_{\mathrm{tot}}+1)\,\tilde{\Pi}_{s_{\mathrm{tot}},s_{\mathrm{tot},z}}}{k_m^{2}}$, $\tilde S_{\Psi,\mathrm{tot},\pm} \tilde\Pi_{s_{\mathrm{tot}},s_{\mathrm{tot},z}}=\frac{m\,c}{k_m}\sqrt{(s_{\mathrm{tot}}\mp s_{\mathrm{tot},z})(s_{\mathrm{tot}}\pm s_{\mathrm{tot},z}+1)}\,|s_{\mathrm{tot}},s_{\mathrm{tot},z}\pm1\rangle\langle  s_{\mathrm{tot}},s_{\mathrm{tot},z}|$.
 - **Exchange symmetry.** $F \tilde\Pi_{s_{\mathrm{tot}},s_{\mathrm{tot},z}}=(-1)^{1-s_{\mathrm{tot}}}\tilde\Pi_{s_{\mathrm{tot}},s_{\mathrm{tot},z}}$: the singlet is antisymmetric, the triplet symmetric; the singlet is annihilated by the total ladder operators and is a zero divisor of the two-qubit algebra.
-- **The Heisenberg coupling.** For $\tilde R_\Psi=-J_{\mathrm{ex}}\sum_k\tilde S_k^{(1)}\tilde S_k^{(2)}$, the eigenvalues are $-\frac{m^{2}\,c^{2}\,J_{\mathrm{ex}}}{4\,k_m^{2}}$ on the triplet and $+\frac{3\,m^{2}\,c^{2}\,J_{\mathrm{ex}}}{4\,k_m^{2}}$ on the singlet, with splitting $\frac{m^{2}\,c^{2}\,J_{\mathrm{ex}}}{k_m^{2}}$; the Hamiltonian is the algebra element $\tilde R_\Psi=-\frac{m^{2}\,c^{2}\,J_{\mathrm{ex}}}{2\,k_m^{2}}F+\frac{m^{2}\,c^{2}\,J_{\mathrm{ex}}}{4\,k_m^{2}}e_t\otimes e_t$.
+- **The Heisenberg coupling.** For $\tilde R_\Psi=-J_{\mathrm{ex}}\sum_k\tilde S_{\Psi,k}^{(1)}\tilde S_{\Psi,k}^{(2)}$, the eigenvalues are $-\frac{m^{2}\,c^{2}\,J_{\mathrm{ex}}}{4\,k_m^{2}}$ on the triplet and $+\frac{3\,m^{2}\,c^{2}\,J_{\mathrm{ex}}}{4\,k_m^{2}}$ on the singlet, with splitting $\frac{m^{2}\,c^{2}\,J_{\mathrm{ex}}}{k_m^{2}}$; the Hamiltonian is the algebra element $\tilde R_\Psi=-\frac{m^{2}\,c^{2}\,J_{\mathrm{ex}}}{2\,k_m^{2}}F+\frac{m^{2}\,c^{2}\,J_{\mathrm{ex}}}{4\,k_m^{2}}e_t\otimes e_t$.
 - **Reduced states.** $\mathrm{Tr}_2(\tilde\Pi_{1,\pm1})=\tilde\Pi_\pm$ are pure; $\mathrm{Tr}_2(\tilde\Pi_{1,0})=\mathrm{Tr}_2(\tilde\Pi_{0,0})=\tfrac12 e_t$ are maximally mixed. The middle triplet member and the singlet are indistinguishable by their reduced states.
 - **Two idempotent bases.** The coupled basis and the Bell basis are two orthogonal families of minimal idempotents of the same algebra, sharing the singlet and related by a Hadamard rotation.
 
@@ -384,15 +384,15 @@ All of this is a statement about $\mathbb{B}\otimes\mathbb{B}$; it presupposes t
 | $\mathbb{B}\otimes_\mathbb{C}\mathbb{B}\cong M_4(\mathbb{C})$ | Two-qubit algebra |
 | $\mathrm{Tr}(x\otimes y)=\mathrm{Tr}_\mathbb{B}(x)\mathrm{Tr}_\mathbb{B}(y)$ | Trace on the tensor product |
 | $\mathrm{Tr}_1,\mathrm{Tr}_2$ | Partial traces |
-| $\tilde S_k=\frac{m\,c}{2\,k_m}i\vec e_k$ | One-particle spin operators |
-| $\tilde S_k^{(1)}=\tilde S_k\otimes e_t,\ \tilde S_k^{(2)}=e_t\otimes\tilde S_k$ | Factor spin operators |
-| $\tilde S_{\mathrm{tot},k}=\tilde S_k^{(1)}+\tilde S_k^{(2)}$ | Total spin |
-| $\tilde S_{\mathrm{tot},\pm}=\tilde S_{\mathrm{tot},1}\pm i\tilde S_{\mathrm{tot},2}$ | Total ladder operators |
+| $\tilde S_{\Psi,k}=\frac{m\,c}{2\,k_m}i\vec e_k$ | One-particle spin operators |
+| $\tilde S_{\Psi,k}^{(1)}=\tilde S_{\Psi,k}\otimes e_t,\ \tilde S_{\Psi,k}^{(2)}=e_t\otimes\tilde S_{\Psi,k}$ | Factor spin operators |
+| $\tilde S_{\Psi,\mathrm{tot},k}=\tilde S_{\Psi,k}^{(1)}+\tilde S_{\Psi,k}^{(2)}$ | Total spin |
+| $\tilde S_{\Psi,\mathrm{tot},\pm}=\tilde S_{\Psi,\mathrm{tot},1}\pm i\tilde S_{\Psi,\mathrm{tot},2}$ | Total ladder operators |
 | $\tilde\Pi_\pm=\tfrac12(e_t\pm i\vec e_z)$ | One-particle idempotents |
 | $F=\tfrac12(e_t\otimes e_t-\sum_k \vec e_k\otimes \vec e_k)$ | Exchange operator |
 | $\tilde\Pi_{\mathrm{sym}},\tilde\Pi_{\mathrm{asym}}$ | Triplet and singlet idempotents |
 | $\tilde\Pi_{s_{\mathrm{tot}},s_{\mathrm{tot},z}}$ | Coupled idempotents, $s_{\mathrm{tot}}\in\{1,0\}$ |
-| $\tilde R_\Psi=-J_{\mathrm{ex}}\sum_k\tilde S_k^{(1)}\tilde S_k^{(2)}$ | Heisenberg coupling |
+| $\tilde R_\Psi=-J_{\mathrm{ex}}\sum_k\tilde S_{\Psi,k}^{(1)}\tilde S_{\Psi,k}^{(2)}$ | Heisenberg coupling |
 | $J_{\mathrm{ex}}$ | Exchange constant (ferromagnetic $J_{\mathrm{ex}}>0$) |
 | $\mathsf{M}_2(e_t)=I_2,\ \mathsf{M}_2(\vec e_k)=-i\sigma_k$ | Matrix isomorphism |
 

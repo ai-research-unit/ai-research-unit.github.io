@@ -36,9 +36,9 @@ A second, less comfortable point belongs in the introduction. Almost every state
 | Free equation | $\tilde{\nabla}\tilde{Ξ}_{\mathrm{sp},R} = k_{m_e}\tilde{Ξ}_{\mathrm{sp},L}$, $\tilde{\nabla}^{\natural}\tilde{Ξ}_{\mathrm{sp},L} = k_{m_e}\tilde{Ξ}_{\mathrm{sp},R}$ |
 | Mass | the coefficient $m_e$ of the chirality-off-diagonal pair |
 | Charge | the coupling $ϙ=-e$ in the gauge-covariant derivative (see below) |
-| Spin state | the state $\tilde{Ϛ}(\vec u)\in\mathbb{B}_{\Psi}$ along a declared unit direction $\vec u$ |
+| Spin state | the state $\tilde{Ϛ}_{\Psi}(\vec u)\in\mathbb{B}_{\Psi}$ along a declared unit direction $\vec u$ |
 | Spin observables | Hermitian elements $\tilde R_\Psi = i \sum_k h_k\vec e_k\in\mathbb{B}_{\Psi}$ |
-| Conserved current | $\tilde{J} = ic\,j_0 e_t + \vec j\in\mathbb{B}_{\Phi}$, with $j_0\ge0$ |
+| Conserved current | $\tilde{J}_{\Phi} = ic\,j_0 e_t + \vec j\in\mathbb{B}_{\Phi}$, with $j_0\ge0$ |
 | Chirality parts | the parts $\tilde{Ξ}_{\mathrm{sp},L}$ and $\tilde{Ξ}_{\mathrm{sp},R}$, the two values of the subscript |
 
 The placement of these objects already contains the article's main structural observation: the electron's state-like data (its spin) and its field-strength-like data (its Coulomb field) are $\mathbb{B}_{\Psi}$ objects, its current is an $\mathbb{B}_{\Phi}$ object, the algebra's real structure $\flat$ acts on the two sectors with opposite signs while the mass term couples the two values of the chirality, and it is the rest-energy phase that rotates one sector into the other. There is no single sector of the algebra in which "the electron" lives.
@@ -79,13 +79,13 @@ where the right-hand side uses only $i^2=-1$ and $e_t=1$: expanding the exponent
 
 ## Charge: A Coupling Constant in the Gradient
 
-The free biquaternion Dirac equation contains no charge. Charge enters only through the coupling of the field to the four-potential $\tilde{A} = i\,a'_t\,e_t + \vec A\in\mathbb{B}_{\Phi}$. In the intrinsic form this is the minimal substitution
+The free biquaternion Dirac equation contains no charge. Charge enters only through the coupling of the field to the four-potential $\tilde{A}_{\Phi} = i\,a'_t\,e_t + \vec A\in\mathbb{B}_{\Phi}$. In the intrinsic form this is the minimal substitution
 
 $$
-\tilde P \to \tilde P - ϙ\tilde A, \qquad\text{equivalently}\qquad p_\mu \to p_\mu - ϙA_\mu,
+\tilde P_{\Phi} \to \tilde P_{\Phi} - ϙ\tilde A_{\Phi}, \qquad\text{equivalently}\qquad p_\mu \to p_\mu - ϙA_\mu,
 $$
 
-with $ϙ$ the particle's charge; for the electron $ϙ = -e$. The precise biquaternion form of this coupling is set out in the companion article *The Minimal Coupling of the Biquaternion Dirac Field to Electromagnetism*, which replaces $\tilde\nabla$ and $\tilde\nabla^{\natural}$ by the gauge-covariant derivative $\tilde\nabla_{\mathrm{gco}}$ of *Operator and Calculus Conventions* and its conjugate $\tilde\nabla_{\mathrm{gco}}^{\natural}$, both carrying $+\frac{k_m\,i\,ϙ}{m\,c}\tilde{A}$, and derives the coupled equation
+with $ϙ$ the particle's charge; for the electron $ϙ = -e$. The precise biquaternion form of this coupling is set out in the companion article *The Minimal Coupling of the Biquaternion Dirac Field to Electromagnetism*, which replaces $\tilde\nabla$ and $\tilde\nabla^{\natural}$ by the gauge-covariant derivative $\tilde\nabla_{\mathrm{gco}}$ of *Operator and Calculus Conventions* and its conjugate $\tilde\nabla_{\mathrm{gco}}^{\natural}$, both carrying $+\frac{k_m\,i\,ϙ}{m\,c}\tilde{A}_{\Phi}$, and derives the coupled equation
 
 $$
 \tilde\nabla_{\mathrm{gco}}\tilde{Ξ}_{\mathrm{sp},R} = k_{m_e}\tilde{Ξ}_{\mathrm{sp},L}, \qquad
@@ -96,9 +96,9 @@ and shows that it is exactly gauge covariant in the massive case as well as the 
 
 Four statements are worth separating.
 
-**The conservation law is derived.** Given the equation, a four-current is conserved. The current is the material-sector element $\tilde{J} = ic\,j_0 e_t + \vec j$, with $j_0\ge0$, and its conservation is the vanishing of the scalar part of $\tilde\nabla^{\natural}\tilde{J}$, that is $\partial j_0/\partial r'_t + \nabla\cdot\vec j = 0$. That the electron's conserved current is a material-sector object is a structural consequence of the equation, not an added assumption. What is not derived is the bilinear itself: it is not a product of the field with its own conjugate inside the algebra, because it carries an adjoint read through a form, and a pairing of two elements is not an element. It is displayed, once and in the older formulation, in the closing section of the companion article on minimal coupling, where it is also shown that no bilinear of the field alone takes its place. No step of this article uses it: the conservation law just stated is all that the sections below need.
+**The conservation law is derived.** Given the equation, a four-current is conserved. The current is the material-sector element $\tilde{J}_{\Phi} = ic\,j_0 e_t + \vec j$, with $j_0\ge0$, and its conservation is the vanishing of the scalar part of $\tilde\nabla^{\natural}\tilde{J}_{\Phi}$, that is $\partial j_0/\partial r'_t + \nabla\cdot\vec j = 0$. That the electron's conserved current is a material-sector object is a structural consequence of the equation, not an added assumption. What is not derived is the bilinear itself: it is not a product of the field with its own conjugate inside the algebra, because it carries an adjoint read through a form, and a pairing of two elements is not an element. It is displayed, once and in the older formulation, in the closing section of the companion article on minimal coupling, where it is also shown that no bilinear of the field alone takes its place. No step of this article uses it: the conservation law just stated is all that the sections below need.
 
-**The value and sign of the charge are inserted.** Nothing in the algebra fixes $e$, explains why charge is quantised, or explains why the electron and the proton have equal and opposite charge. The equation with $ϙ = -e$ and the equation with $ϙ = +e$ have the same form, related by $\tilde{A}\to-\tilde{A}$; the labelling of which branch is the electron is a convention. Charge conjugation makes this explicit: the equation admits a symmetry that exchanges the two frequency branches and reverses the sign of the current, and the operator that realises it is displayed in the closing section. The framework represents both signs of charge on the same footing.
+**The value and sign of the charge are inserted.** Nothing in the algebra fixes $e$, explains why charge is quantised, or explains why the electron and the proton have equal and opposite charge. The equation with $ϙ = -e$ and the equation with $ϙ = +e$ have the same form, related by $\tilde{A}_{\Phi}\to-\tilde{A}_{\Phi}$; the labelling of which branch is the electron is a convention. Charge conjugation makes this explicit: the equation admits a symmetry that exchanges the two frequency branches and reverses the sign of the current, and the operator that realises it is displayed in the closing section. The framework represents both signs of charge on the same footing.
 
 **The electron's Coulomb field is an $\mathbb{B}_{\Psi}$ object.** For a point charge $ϙ$ at rest the field-strength biquaternion is, from the companion article on Maxwell's equations,
 
@@ -116,9 +116,9 @@ The electron's spin is where the framework is strongest and where the distinctio
 
 **Derived: the representation.** The algebra $\mathbb{B}\cong M_2(\mathbb{C})$ has a unique irreducible left action, on a complex space of dimension two, and the group of unit elements of the quaternionic norm is $SL(2,\mathbb{C})$, the double cover of the proper orthochronous Lorentz group (*Norm and Pairing Conventions*). A field in that space carries the representation $(\tfrac12,0)$; the field of this article splits by the chirality into two such parts and carries $(\tfrac12,0)\oplus(0,\tfrac12)$. In either case the spin is $\tfrac12$: a rotation by $2\pi$ acts as $-e_t$ on the two-dimensional space and as $+e_t$ on the four-vectors of $\mathbb{B}_{\Phi}$. The twofold, double-valued character of electron spin is therefore a consequence of where the field lives, not an independent postulate. The spin rotations are the real unit quaternions, forming $SU(2)$.
 
-**Derived: the state and observable structure.** The electron's spin state along a declared unit direction $\vec u$ is the state $\tilde{Ϛ}(\vec u)\in\mathbb{B}_{\Psi}$ of *Algebra and Element Conventions*, and its spin observables are the Hermitian elements $i \sum_k h_k\vec e_k\in\mathbb{B}_{\Psi}$. With the Born pairing of *Norm and Pairing Conventions* the state along $\vec u$ returns the weight $n_\nu h_\nu$ on $\tilde R_\Psi = i\sum_k h_k\vec e_k$; in particular the state along $\vec e_z$ returns $1$ on $i\vec e_z$ and $0$ on $i\vec e_x$, the values the spin along $z$ requires.
+**Derived: the state and observable structure.** The electron's spin state along a declared unit direction $\vec u$ is the state $\tilde{Ϛ}_{\Psi}(\vec u)\in\mathbb{B}_{\Psi}$ of *Algebra and Element Conventions*, and its spin observables are the Hermitian elements $i \sum_k h_k\vec e_k\in\mathbb{B}_{\Psi}$. With the Born pairing of *Norm and Pairing Conventions* the state along $\vec u$ returns the weight $n_\nu h_\nu$ on $\tilde R_\Psi = i\sum_k h_k\vec e_k$; in particular the state along $\vec e_z$ returns $1$ on $i\vec e_z$ and $0$ on $i\vec e_x$, the values the spin along $z$ requires.
 
-**Inserted: the magnitude.** The spin element is $\tilde S_k =\frac{m\,c}{2\,k_m}(i\vec e_k)$. The element $i\vec e_k$ is Hermitian and squares to $+e_t$, so it is the algebra's spin component and has the two eigenvalues $\pm1$. The factor $\frac{m\,c}{2\,k_m}$ is a normalisation, not a prediction: the algebra fixes that spin is two-valued and that its observables close under $SU(2)$, but it does not fix the unit in which spin is measured. The number $\tfrac{1}{2}$ in "spin-$\tfrac{1}{2}$" is algebra; the number $\frac{m\,c}{k_m}$ is physics inserted from outside.
+**Inserted: the magnitude.** The spin element is $\tilde S_{\Psi,k} =\frac{m\,c}{2\,k_m}(i\vec e_k)$. The element $i\vec e_k$ is Hermitian and squares to $+e_t$, so it is the algebra's spin component and has the two eigenvalues $\pm1$. The factor $\frac{m\,c}{2\,k_m}$ is a normalisation, not a prediction: the algebra fixes that spin is two-valued and that its observables close under $SU(2)$, but it does not fix the unit in which spin is measured. The number $\tfrac{1}{2}$ in "spin-$\tfrac{1}{2}$" is algebra; the number $\frac{m\,c}{k_m}$ is physics inserted from outside.
 
 ## The Dirac Description of the Electron
 
@@ -127,8 +127,8 @@ The electron's relativistic dynamics is the chirality pair $\tilde{\nabla}\tilde
 **A note on the wave biquaternion.** The mass-shell condition is written in the corpus convention, in which the four-wavevector has the imaginary time component of the $i c r'_t$ convention,
 
 $$
-\tilde P\,k_{\mathrm{mo}} = i\,\frac{\omega}{c}\,e_t + \vec k, \qquad
-\langle\tilde P\,k_{\mathrm{mo}}\rangle_{\natural} = \tilde P\tilde P^{\natural}\,k_{\mathrm{mo}}^{2} = -\frac{\omega^2}{c^2} + \vec k^2 = -k_{m_e}^{2},
+\tilde P_{\Phi}\,k_{\mathrm{mo}} = i\,\frac{\omega}{c}\,e_t + \vec k, \qquad
+\langle\tilde P_{\Phi}\,k_{\mathrm{mo}}\rangle_{\natural} = \tilde P_{\Phi}\tilde P_{\Phi}^{\natural}\,k_{\mathrm{mo}}^{2} = -\frac{\omega^2}{c^2} + \vec k^2 = -k_{m_e}^{2},
 $$
 
 with $\vec k^2$ the Euclidean square $k_x^2+k_y^2+k_z^2$, which is what the norm of a vector part produces. This is $E^2 = \vec p^2c^2 + m_e^2c^4$ under $E =\frac{m\,c\,\omega}{k_m}$, $\vec p =\frac{m\,c\,\vec k}{k_m}$, and it is the form used by the companion solutions article and by the parent Dirac article. Here $k_{\mathrm{mo}}=\frac{k_m\,p}{m\,c}$ is the momentum length.
@@ -177,7 +177,7 @@ $$
 -\frac{ϙ c1/k_{m_e}}{2}\,i\,\vec B \in \mathbb{B}_{\Psi} .
 $$
 
-Writing the coupling as $-\vec\mu\cdot\vec B$ identifies $\vec\mu = (ϙ/m_e)\vec S$, with the spin components $\tilde S_k =\frac{m\,c}{2\,k_m}i\vec e_k$, which is $\vec\mu = g\,(ϙ/2m_e)\vec S$ with
+Writing the coupling as $-\vec\mu\cdot\vec B$ identifies $\vec\mu = (ϙ/m_e)\vec S$, with the spin components $\tilde S_{\Psi,k} =\frac{m\,c}{2\,k_m}i\vec e_k$, which is $\vec\mu = g\,(ϙ/2m_e)\vec S$ with
 
 $$
 g = 2 .
@@ -232,9 +232,9 @@ Two facts about products carry the whole structure, and they are stated in words
 |---|---|---|
 | Spin-$\tfrac{1}{2}$ representation content | Derived | $\mathbb{B}\cong M_2(\mathbb{C})$, unique irreducible action on a space of dimension two; $SL(2,\mathbb{C})$ double cover |
 | Spin states, observables, expectation values | Derived | the state of $\mathbb{B}_{\Psi}$ and the Born pairing of *Norm and Pairing Conventions* |
-| Spin magnitude $\frac{m\,c}{2\,k_m}$ | Represented | normalisation of $\tilde S_k =\frac{m\,c}{2\,k_m}i\vec e_k$ |
+| Spin magnitude $\frac{m\,c}{2\,k_m}$ | Represented | normalisation of $\tilde S_{\Psi,k} =\frac{m\,c}{2\,k_m}i\vec e_k$ |
 | Tree-level $g=2$, $\vec\mu_e = -(e/m_e)\vec S$ | Derived (conditional) | $1/2m_e$ coefficient from the mass term plus minimal coupling |
-| Conservation of the current, $\tilde{J}\in\mathbb{B}_{\Phi}$ | Derived | the law $\mathrm{Sc}(\tilde\nabla^{\natural}\tilde{J}) = 0$; the bilinear itself is the older display's, in the companion article's closing section |
+| Conservation of the current, $\tilde{J}_{\Phi}\in\mathbb{B}_{\Phi}$ | Derived | the law $\mathrm{Sc}(\tilde\nabla^{\natural}\tilde{J}_{\Phi}) = 0$; the bilinear itself is the older display's, in the companion article's closing section |
 | Coulomb field $\tilde{F}\in\mathbb{B}_{\Psi}$ | Derived (from Maxwell) | point-charge solution; purely imaginary vector |
 | Mass term couples the two chirality values, off-diagonally | Derived | the two-value split; the off-diagonal pair |
 | Two-sided single-equation form | Derived (dictionary) | the real-linear dictionary $F\in\mathbb{B}$; a change of representation, not of physics |
@@ -322,13 +322,13 @@ The electron's data are not confined to either sector: state-like and field-stre
 | $\tilde{Ξ}_{\mathrm{sp}}$ | Biquaternion Dirac field |
 | $\tilde{Ξ}_{\mathrm{sp},L}$, $\tilde{Ξ}_{\mathrm{sp},R}$ | The parts of the field of value $L$ and of value $R$ |
 | $\tilde{Q}^\flat = -\tilde{Q}^{*}$ | The algebra's real structure (not the mass term) |
-| $\tilde{Ϛ}(\vec u)$ | Spin state along a declared unit direction, in $\mathbb{B}_{\Psi}$ |
+| $\tilde{Ϛ}_{\Psi}(\vec u)$ | Spin state along a declared unit direction, in $\mathbb{B}_{\Psi}$ |
 | $\mathrm{Sc}$, $\mathrm{Vect}$ | Scalar and vector parts of an algebra element |
 | $\langle\tilde Q\rangle_\natural = \tilde Q\tilde Q^\natural$ | Quaternionic norm |
 | $\mathrm{Tr}(\tilde Q_1\tilde Q_2)$ | Trace pairing, read as $2\,\mathrm{Sc}(\tilde Q_1\tilde Q_2)$ at normalisation |
-| $\tilde{J} = ic\,j_0 e_t + \vec j$ | Conserved four-current, in $\mathbb{B}_{\Phi}$ |
+| $\tilde{J}_{\Phi} = ic\,j_0 e_t + \vec j$ | Conserved four-current, in $\mathbb{B}_{\Phi}$ |
 | $\tilde{F} = iϙ\vec u_x/(4\pi\sqrt{\epsilon}\|(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)\|^2)$ | Coulomb field of a point charge, in $\mathbb{B}_{\Psi}$; $\vec u_x$ the radial unit vector |
-| $\tilde P\,k_{\mathrm{mo}} = i(\omega/c)\,e_t + \vec k$ | Four-wavevector |
+| $\tilde P_{\Phi}\,k_{\mathrm{mo}} = i(\omega/c)\,e_t + \vec k$ | Four-wavevector |
 | $\varepsilon=(1,-1,-1,-1)$ | Sign weights of the $\mathbb{B}_{\Phi}$ frame; metric in the closing section |
 | $m_e$, $e$, $\frac{m\,c}{k_m}$, $c$ | Electron mass, elementary charge, reduced Planck constant, speed of light |
 | $\mathcal{N}F = (i\partial/\partial r'_t+\vec\nabla)F - k_{m_e}i\,\overline{F}\,\vec e_z$, $\vec\nabla=\sum_k\vec e_k\partial/\partial R_k$ | Two-sided Dirac equation of the dictionary form |

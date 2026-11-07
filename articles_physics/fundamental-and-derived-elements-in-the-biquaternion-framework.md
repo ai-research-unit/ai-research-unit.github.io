@@ -232,10 +232,10 @@ $$
 
 is an orthogonal decomposition of signature $(4,4)$ for $\mathrm{Re}\,\mathrm{Tr}$. This is a derived structural asymmetry between the two sectors: the operator sector carries a positive-definite form, the material sector a negative-definite one, and the sign is not put in by hand.
 
-**The expectation-value form.** For a state $\tilde{Ϛ}=\tfrac12(e_t+\mu i)$ with $\mu$ a real unit pure quaternion and an observable $\tilde R_\Psi=c r_t\,e_t+i\vec r_\Psi$, the trace formula gives
+**The expectation-value form.** For a state $\tilde{Ϛ}_{\Psi}=\tfrac12(e_t+\mu i)$ with $\mu$ a real unit pure quaternion and an observable $\tilde R_\Psi=c r_t\,e_t+i\vec r_\Psi$, the trace formula gives
 
 $$
-\mathrm{Tr}(\tilde{Ϛ}\tilde R_\Psi^{*})=c r_t+\mu\cdot\vec r_\Psi,
+\mathrm{Tr}(\tilde{Ϛ}_{\Psi}\tilde R_\Psi^{*})=c r_t+\mu\cdot\vec r_\Psi,
 $$
 
 the Born-rule expectation value. This is an application of the derived trace, not a new posit.

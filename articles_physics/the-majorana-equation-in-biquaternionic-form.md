@@ -139,7 +139,7 @@ so $e^{i\alpha}\tilde{Ξ}_{\mathrm{sp}}$ lies in the fixed space only when $\alp
 
 ## Solutions and the Counting of States
 
-**A single plane wave is never a solution.** The corpus's ansatz is $\tilde{Ξ}_{\mathrm{sp}}=\tilde{Ξ}_{\mathrm{sp},0}\exp(i\theta)$ with $\theta=\mathrm{Sc}(\tilde P\tilde Q^{\natural})$ and $\tilde P=ik_0e_t+\vec k$ (*The Dirac Equation in Biquaternionic Form*). On it the derivative of the display is the left multiplication by the element $k_0e_t+i\vec k$, and the coefficient conjugation conjugates the phase, so the two sides of an antilinear equation carry $\exp(+i\theta)$ and $\exp(-i\theta)$ and cannot match. The solutions are therefore two-frequency superpositions,
+**A single plane wave is never a solution.** The corpus's ansatz is $\tilde{Ξ}_{\mathrm{sp}}=\tilde{Ξ}_{\mathrm{sp},0}\exp(i\theta)$ with $\theta=\mathrm{Sc}(\tilde P_{\Phi}\tilde Q^{\natural})$ and $\tilde P_{\Phi}=ik_0e_t+\vec k$ (*The Dirac Equation in Biquaternionic Form*). On it the derivative of the display is the left multiplication by the element $k_0e_t+i\vec k$, and the coefficient conjugation conjugates the phase, so the two sides of an antilinear equation carry $\exp(+i\theta)$ and $\exp(-i\theta)$ and cannot match. The solutions are therefore two-frequency superpositions,
 
 $$
 \tilde{Ξ}_{\mathrm{sp}}=\tilde{Ξ}_{\mathrm{sp},0}\exp(i\theta)+\tilde{Ξ}_{\mathrm{sp},1}\exp(-i\theta) ,
@@ -258,7 +258,7 @@ A field equal to its conjugate carries no continuous phase, and a continuous pha
 | ${}^{*}$ | The Hermitian conjugation: an anti-automorphism, antilinear, an involution |
 | $\tilde\nabla$, $\Box$ | The gradient and the d'Alembertian, as the series fixes them |
 | $\mathbb{B}_{\Phi}$ | The frame with $Q_t=i c r'_t$ and $g_{tt}=-c^{2}$ |
-| $\theta$, $\tilde P$ | The phase $\mathrm{Sc}(\tilde P\tilde Q^{\natural})$ and the momentum element $ik_0e_t+\vec k$ |
+| $\theta$, $\tilde P_{\Phi}$ | The phase $\mathrm{Sc}(\tilde P_{\Phi}\tilde Q^{\natural})$ and the momentum element $ik_0e_t+\vec k$ |
 | $k_0e_t+i\vec k$ | The derivative of the display on $\exp(i\theta)$, as a left multiplication |
 | $\tilde{Ξ}_{\mathrm{sp},0}$, $\tilde{Ξ}_{\mathrm{sp},1}$ | The amplitudes of $\exp(i\theta)$ and $\exp(-i\theta)$ |
 | $\mathcal{C}(\tilde{Ξ}_{\mathrm{sp}})=\bar{\tilde{Ξ}}_{\mathrm{sp}}\vec e_z$ | The conjugation of the mass term; $\mathcal{C}^{2}=-1$ |

@@ -46,22 +46,22 @@ a **symmetric rank-two tensor** of ten independent components. The framework's r
 
 ### The FLRW metric is carried by a frame, and nothing selects it
 
-The frame route of *Curved Spacetime and the Biquaternion Framework* carries an arbitrary Lorentzian metric: four fields $\tilde{E}_\mu \in \mathbb{B}_{\Phi}$ with
+The frame route of *Curved Spacetime and the Biquaternion Framework* carries an arbitrary Lorentzian metric: four fields $\tilde{E}_{\Phi}_\mu \in \mathbb{B}_{\Phi}$ with
 
 $$
-g_{\mu\nu} = \langle\tilde{E}_\mu,\tilde{E}_\nu\rangle_{\natural},
+g_{\mu\nu} = \langle\tilde{E}_{\Phi}_\mu,\tilde{E}_{\Phi}_\nu\rangle_{\natural},
 $$
 
 and any Lorentzian metric is representable locally, because a $g$-orthonormal frame can be mapped into $\mathbb{B}_{\Phi}$ by a pointwise linear isometry of quadratic spaces of the same signature. An FLRW metric is a Lorentzian metric, so it is representable. The representation is explicit for the flat-slice case. With a lapse $N(r'_t)$ and scale $a(r'_t)$,
 
 $$
-\tilde{E}_0 = i\,N(r'_t)\,e_t, \qquad \tilde{E}_i = a(r'_t)\,\sigma_i(r_x),
+\tilde{E}_{\Phi}_0 = i\,N(r'_t)\,e_t, \qquad \tilde{E}_{\Phi}_i = a(r'_t)\,\sigma_i(r_x),
 $$
 
-where $\sigma_i$ spans $\mathrm{span}_{\mathbb{R}}\{\vec e_x,\vec e_y,\vec e_z\}$ with $\langle\sigma_i,\sigma_j\rangle_{\natural} = \gamma_{ij}$, one has $g_{\mu\nu} = \mathrm{diag}(-N^2, a^2\gamma_{ij})$. For the flat spatial slice $\gamma_{ij} = \delta_{ij}$ and the choice $\tilde{E}_0 = ie_t$, $\tilde{E}_i = a\,\vec e_i$, the Gram matrix is exactly
+where $\sigma_i$ spans $\mathrm{span}_{\mathbb{R}}\{\vec e_x,\vec e_y,\vec e_z\}$ with $\langle\sigma_i,\sigma_j\rangle_{\natural} = \gamma_{ij}$, one has $g_{\mu\nu} = \mathrm{diag}(-N^2, a^2\gamma_{ij})$. For the flat spatial slice $\gamma_{ij} = \delta_{ij}$ and the choice $\tilde{E}_{\Phi}_0 = ie_t$, $\tilde{E}_{\Phi}_i = a\,\vec e_i$, the Gram matrix is exactly
 
 $$
-\boxed{\;\langle\tilde{E}_\mu,\tilde{E}_\nu\rangle_{\natural} = \mathrm{diag}\left(-1, a^2, a^2, a^2\right)\;},
+\boxed{\;\langle\tilde{E}_{\Phi}_\mu,\tilde{E}_{\Phi}_\nu\rangle_{\natural} = \mathrm{diag}\left(-1, a^2, a^2, a^2\right)\;},
 $$
 
 recomputed here from the inherited bilinear form. This is the FLRW metric with $k=0$ and arbitrary scale factor, carried in the algebra's own operations.
@@ -69,14 +69,14 @@ recomputed here from the inherited bilinear form. This is the FLRW metric with $
 Three qualifications belong to the statement, and they are the whole of its content.
 
 - **Carrying is not deriving.** The scale factor $a(r'_t)$ is a function the frame is *given*; the algebra produces no value for it, no equation for it, and no reason to prefer the FLRW form over any other metric. Every Lorentzian metric is representable, so the construction excludes nothing and selects nothing.
-- **The scale factor is not computed.** The verified identity $\langle\tilde{E}_\mu,\tilde{E}_\nu\rangle_{\natural} = \mathrm{diag}(-1,a^2,a^2,a^2)$ is a consistency check on the carrier. It is a statement about the algebra's bilinear form, not a cosmological prediction.
+- **The scale factor is not computed.** The verified identity $\langle\tilde{E}_{\Phi}_\mu,\tilde{E}_{\Phi}_\nu\rangle_{\natural} = \mathrm{diag}(-1,a^2,a^2,a^2)$ is a consistency check on the carrier. It is a statement about the algebra's bilinear form, not a cosmological prediction.
 - **The curved spatial slice is a separate step.** For $k \neq 0$ the spatial metric $a^2\gamma_{ij}$ is not flat, and the frame $\sigma_i$ with $\langle\sigma_i,\sigma_j\rangle_{\natural} = \gamma_{ij}$ must be built pointwise by a linear isometry from the constant-curvature tangent space into $\mathrm{span}_{\mathbb{R}}\{\vec e_x,\vec e_y,\vec e_z\}$. This is a finite-dimensional linear-algebra construction at each point, and it is the first item of the next section.
 
 ### Isotropy has a home in the algebra; homogeneity does not
 
 The FLRW assumptions are imposed symmetries, and the two of them have different status in the framework.
 
-**Isotropy is available.** The isotropy group about a point is $SO(3)$, and the algebra contains its double cover: the unit real quaternions in $\mathbb{B}_{H} \subset \mathbb{B}$. A unit real quaternion $\tilde U$ acts on $\mathbb{B}_{\Phi}$ by rotor conjugation $\tilde{Q} \mapsto \tilde U\tilde{Q}\tilde U^{*}$ and preserves $\langle\cdot,\cdot\rangle_{\natural}$. The isotropy hypothesis therefore has an exact algebraic form: it is the statement that the spatial frame $\tilde{E}_i$ is equivariant under that action, so that the spatial metric it induces is the invariant $\gamma_{ij}$. This is a real, if modest, piece of framework content.
+**Isotropy is available.** The isotropy group about a point is $SO(3)$, and the algebra contains its double cover: the unit real quaternions in $\mathbb{B}_{H} \subset \mathbb{B}$. A unit real quaternion $\tilde U$ acts on $\mathbb{B}_{\Phi}$ by rotor conjugation $\tilde{Q} \mapsto \tilde U\tilde{Q}\tilde U^{*}$ and preserves $\langle\cdot,\cdot\rangle_{\natural}$. The isotropy hypothesis therefore has an exact algebraic form: it is the statement that the spatial frame $\tilde{E}_{\Phi}_i$ is equivariant under that action, so that the spatial metric it induces is the invariant $\gamma_{ij}$. This is a real, if modest, piece of framework content.
 
 **Homogeneity is not available.** Homogeneity is a statement about the three-parameter translation group acting transitively on the spatial slices, and it is a statement about the manifold, not about the tangent space at a point. The algebra is pointwise — it has no notion of two distinct points, and separation enters only as a difference $\tilde{Q}_1 - \tilde{Q}_2$ — so it contains no translation group and, like $\mathrm{Diff}(M)$, no counterpart of homogeneity. The FLRW assumption therefore divides cleanly: isotropy can be expressed, homogeneity has no algebraic home. This asymmetry is a structural finding, not a technical gap.
 
@@ -125,7 +125,7 @@ Each obstacle is stated with what is known, what is open, and the computation th
 
 ### Obstacle with a known route: the spatial-curvature frame
 
-*Known:* the frame carries the $k=0$ FLRW metric exactly, and the pointwise linear-algebra construction of a frame for a constant-curvature slice is standard. *Open:* an explicit $\mathbb{B}_{\Phi}$-valued frame $\tilde{E}_i$ with $\langle\tilde{E}_i,\tilde{E}_j\rangle_{\natural}$ equal to a constant-curvature $a^2\gamma_{ij}$, and its consistency in the two steps the route needs. *Would settle it:* the object is a pointwise linear isometry from the tangent space of a constant-curvature three-manifold, with its form of signature $(3,0)$, into $\mathrm{span}_{\mathbb{R}}\{\vec e_x,\vec e_y,\vec e_z\}$ with the restricted form $\mathrm{diag}(1,1,1)$; the computation is to build it and verify the Gram matrix for $k=\pm1$. This is a finite-dimensional construction at each point and should close promptly. A negative result — that the pointwise isometry exists but cannot be glued into a frame with the required differentiability — would itself be a finding about the carrier, not a failure of the arithmetic.
+*Known:* the frame carries the $k=0$ FLRW metric exactly, and the pointwise linear-algebra construction of a frame for a constant-curvature slice is standard. *Open:* an explicit $\mathbb{B}_{\Phi}$-valued frame $\tilde{E}_{\Phi}_i$ with $\langle\tilde{E}_{\Phi}_i,\tilde{E}_{\Phi}_j\rangle_{\natural}$ equal to a constant-curvature $a^2\gamma_{ij}$, and its consistency in the two steps the route needs. *Would settle it:* the object is a pointwise linear isometry from the tangent space of a constant-curvature three-manifold, with its form of signature $(3,0)$, into $\mathrm{span}_{\mathbb{R}}\{\vec e_x,\vec e_y,\vec e_z\}$ with the restricted form $\mathrm{diag}(1,1,1)$; the computation is to build it and verify the Gram matrix for $k=\pm1$. This is a finite-dimensional construction at each point and should close promptly. A negative result — that the pointwise isometry exists but cannot be glued into a frame with the required differentiability — would itself be a finding about the carrier, not a failure of the arithmetic.
 
 ### Obstacle with a known route: transcribing the Friedmann equations
 
@@ -209,7 +209,7 @@ Two disciplines apply to every item. First, each candidate result must be recomp
 
 This agenda asked what it would take for the biquaternion framework to carry a cosmology, and it has recorded what the framework reaches and what it does not.
 
-**What is established.** The frame route carries the FLRW metric exactly: with $\tilde{E}_0 = ie_t$ and $\tilde{E}_i = a\,\vec e_i$ the Gram matrix is $\mathrm{diag}(-1,a^2,a^2,a^2)$ for an arbitrary supplied scale factor, recomputed here from the inherited bilinear form. Isotropy has an exact algebraic home, as the invariance of the spatial metric under the unit real quaternions in $\mathbb{B}_{H}$. The two-sector decomposition survives pointwise on any background. The framework's thermodynamics is the qubit thermodynamics of *The Partition Function in Biquaternionic Form*: $Z = 2\exp(-\beta c r_t)\cosh(\beta|\vec r_\Psi|)$, an entropy bounded by $\log 2$, and a temperature that measures imaginary-time displacement.
+**What is established.** The frame route carries the FLRW metric exactly: with $\tilde{E}_{\Phi}_0 = ie_t$ and $\tilde{E}_{\Phi}_i = a\,\vec e_i$ the Gram matrix is $\mathrm{diag}(-1,a^2,a^2,a^2)$ for an arbitrary supplied scale factor, recomputed here from the inherited bilinear form. Isotropy has an exact algebraic home, as the invariance of the spatial metric under the unit real quaternions in $\mathbb{B}_{H}$. The two-sector decomposition survives pointwise on any background. The framework's thermodynamics is the qubit thermodynamics of *The Partition Function in Biquaternionic Form*: $Z = 2\exp(-\beta c r_t)\cosh(\beta|\vec r_\Psi|)$, an entropy bounded by $\log 2$, and a temperature that measures imaginary-time displacement.
 
 **What is only carried, and is not a derived cosmology.** The scale factor, the spatial-curvature parameter, the Friedmann equations, the perfect-fluid source, and the cosmological constant are all **standard cosmology used as targets**. No scale factor, no Hubble rate, and no equation of state is derived here or in the framework. The framework's own locality device is not the route: a time-dependent local $c$ gives a flat metric and cannot produce an expansion, and a spatially varying local $c$ gives curvature but only on flat spatial slices.
 
@@ -241,7 +241,7 @@ The speculations are labelled as such. One sector sourcing the other at cosmolog
 | $\langle\tilde{Q}_1,\tilde{Q}_2\rangle_{\natural}$ | the general quaternionic bilinear form $\mathrm{Sc}(\tilde{Q}_1^{\natural}\tilde{Q}_2)$, $\langle\varepsilon_\mu,\varepsilon_\nu\rangle_{\natural} = -\varepsilon_\mu\delta_{\mu\nu}$, the material tuple $(-1,+1,+1,+1)$ | inherited |
 | $\tilde{\nabla}$, $\tilde{\nabla}^{\natural}$, $\Box$ | biquaternionic gradient, its conjugate, and $\Box = \tilde{\nabla}\tilde{\nabla}^{\natural}$ | inherited |
 | $\mathrm{Tr}(\tilde Q_1\tilde Q_2)=2\,\mathrm{Sc}(\tilde Q_1\tilde Q_2)$ | trace reading, a **fibre** trace over $\mathbb{C}^2$ | inherited |
-| $\tilde{E}_\mu \in \mathbb{B}_{\Phi}$, $g_{\mu\nu} = \langle\tilde{E}_\mu,\tilde{E}_\nu\rangle_{\natural}$ | frame field and the metric it carries | inherited |
+| $\tilde{E}_{\Phi}_\mu \in \mathbb{B}_{\Phi}$, $g_{\mu\nu} = \langle\tilde{E}_{\Phi}_\mu,\tilde{E}_{\Phi}_\nu\rangle_{\natural}$ | frame field and the metric it carries | inherited |
 | $a(r'_t)$, $k$ | scale factor and spatial-curvature parameter — **standard cosmology, carried not derived** | standard notation |
 | $H = \left(da/dr'_t\right)/a$, $\rho$, $p$, $w$, $\Lambda$ | Hubble rate, density, pressure, equation-of-state parameter, cosmological constant — **standard cosmology, no framework interpretation** | standard notation |
 | $\sum_{\mu\nu}T_{\mu\nu}\varepsilon_\mu\bar{\varepsilon}_\nu=(\sum_{\mu}T_{\mu\mu})e_t$ | the bilinear collapses a rank-two tensor to its trace | recomputed here from an inherited identity |

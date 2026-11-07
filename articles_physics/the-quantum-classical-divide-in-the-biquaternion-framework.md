@@ -20,7 +20,7 @@ The conventions are those of the companion articles. The biquaternion algebra is
 
 The criterion of Korolkova, Sánchez-Soto, and Leuchs can be stated concisely.
 
-Consider a bipartite non-separable state $\tilde{Ϛ}$ on the tensor product $\mathcal{H}_A \otimes \mathcal{H}_B$, with partitions $A$ and $B$ chosen in some physically meaningful way. The question is whether the non-separability of $\tilde{Ϛ}$ is quantum or classical in nature. The criterion does not look at $\tilde{Ϛ}$. It looks at the operations performed on the two partitions.
+Consider a bipartite non-separable state $\tilde{Ϛ}_{\Psi}$ on the tensor product $\mathcal{H}_A \otimes \mathcal{H}_B$, with partitions $A$ and $B$ chosen in some physically meaningful way. The question is whether the non-separability of $\tilde{Ϛ}_{\Psi}$ is quantum or classical in nature. The criterion does not look at $\tilde{Ϛ}_{\Psi}$. It looks at the operations performed on the two partitions.
 
 **Quantum entanglement.** Both partitions support **projective measurements**. A measurement is performed on partition $A$ and a measurement is performed on partition $B$. The two outcomes are correlated statistically, and the correlation function requires an ensemble of runs to be measured. The prototypical example is the singlet state with spin measurements on the two particles: two idempotents, one on each factor, joint statistics from the Hermitian form, read through the trace.
 
@@ -57,39 +57,39 @@ The biquaternion framework has a structural feature that maps directly onto this
 
 - **$*$-Unitary elements** $\tilde Q \in \mathbb{B}$ satisfy $\tilde Q\tilde Q^{*} = e_t$ and act on states by **rotor conjugation**:
 $$
-\tilde{Ϛ} \;\longmapsto\; \tilde{U}\,\tilde{Ϛ}\,\tilde{U}^{*}.
+\tilde{Ϛ}_{\Psi} \;\longmapsto\; \tilde{U}\,\tilde{Ϛ}_{\Psi}\,\tilde{U}^{*}.
 $$
 The action is reversible. The $*$-unitary element is a rotor in the sense of geometric algebra, and its conjugation action is the algebraic form of a basis change, a mode rotation, a filter, or a sorter.
 
 - **Idempotent elements** $\tilde\Pi \in \mathbb{B}_{\Psi}$ satisfy $\tilde\Pi^2 = \tilde\Pi$ and act on states by the **sandwich**:
 $$
-\tilde{Ϛ} \;\longmapsto\; \tilde\Pi\,\tilde{Ϛ}\,\tilde\Pi.
+\tilde{Ϛ}_{\Psi} \;\longmapsto\; \tilde\Pi\,\tilde{Ϛ}_{\Psi}\,\tilde\Pi.
 $$
 The action is irreversible. The idempotent represents a pure state, and its sandwich action is the algebraic form of a projective measurement.
 
 In the companion articles, this dichotomy is presented as a *structural* feature of the algebra: $*$-unitary and idempotent elements are the two classes of acting elements, and the reversible/irreversible distinction is read off from the algebra rather than postulated. In the specific setting of non-separability, the dichotomy acquires a direct operational meaning.
 
-**Quantum entanglement: two idempotents.** A bipartite state $\tilde{Ϛ}$ on $\mathbb{B}\otimes\mathbb{B}$ undergoes two projective measurements, one on each partition. The joint probability of outcomes $i,j$ is
+**Quantum entanglement: two idempotents.** A bipartite state $\tilde{Ϛ}_{\Psi}$ on $\mathbb{B}\otimes\mathbb{B}$ undergoes two projective measurements, one on each partition. The joint probability of outcomes $i,j$ is
 
 $$
-p(i,j) = \mathrm{Tr}\!\left(\bigl(\tilde\Pi_A^{(i)}\otimes \tilde\Pi_B^{(j)}\bigr)\circ \tilde{Ϛ}\right),
+p(i,j) = \mathrm{Tr}\!\left(\bigl(\tilde\Pi_A^{(i)}\otimes \tilde\Pi_B^{(j)}\bigr)\circ \tilde{Ϛ}_{\Psi}\right),
 $$
 
 where $\tilde\Pi_A^{(i)}$ and $\tilde\Pi_B^{(j)}$ are the idempotents corresponding to the measurement outcomes. The joint distribution is the normalised Hermitian form of the state with a **product of two idempotents**, read as the trace pairing. The pattern is exactly the one used in *Exercise: The CHSH Inequality and Tsirelson's Bound*, question 4: the Born rule applied twice, with the joint probability being the tensor-product Hermitian form of the state with the joint idempotent, read as the trace pairing. The result is a **statistical correlation** between the two outcomes.
 
-**Classical non-separability: one idempotent, one $*$-unitary.** A bipartite state $\tilde{Ϛ}$ on $\mathbb{B}\otimes\mathbb{B}$ undergoes one $*$-unitary filtering operation on partition $A$ and one projective measurement on partition $B$. The conditional probability of outcome $j$ given filter setting $k$ is
+**Classical non-separability: one idempotent, one $*$-unitary.** A bipartite state $\tilde{Ϛ}_{\Psi}$ on $\mathbb{B}\otimes\mathbb{B}$ undergoes one $*$-unitary filtering operation on partition $A$ and one projective measurement on partition $B$. The conditional probability of outcome $j$ given filter setting $k$ is
 
 $$
-p(j\mid k) = \mathrm{Tr}\!\left(\bigl(e_t\otimes \tilde\Pi_B^{(j)}\bigr)\circ\bigl(\tilde Q_A^{(k)}\otimes e_t\bigr)\circ \tilde{Ϛ}\circ\bigl(\tilde Q_A^{(k){}^{*}}\otimes e_t\bigr)\right),
+p(j\mid k) = \mathrm{Tr}\!\left(\bigl(e_t\otimes \tilde\Pi_B^{(j)}\bigr)\circ\bigl(\tilde Q_A^{(k)}\otimes e_t\bigr)\circ \tilde{Ϛ}_{\Psi}\circ\bigl(\tilde Q_A^{(k){}^{*}}\otimes e_t\bigr)\right),
 $$
 
 using the cyclicity of the trace. This is a **single trace formula**, preceded by a $*$-unitary conjugation. For the classical non-separable states of interest — those in which the excitation is not attached to either partition — the trace over partition $A$ collapses, because $\tilde Q_A^{(k)}$ acts only on $A$ and the trace is cyclic:
 
 $$
-p(j\mid k) = \mathrm{Tr}_{\mathbb{B}}\!\left(\tilde\Pi_B^{(j)}\,\tilde{Ϛ}_B\right), \qquad \tilde{Ϛ}_B = \mathrm{Tr}_A \tilde{Ϛ}.
+p(j\mid k) = \mathrm{Tr}_{\mathbb{B}}\!\left(\tilde\Pi_B^{(j)}\,\tilde{Ϛ}_{\Psi,B}\right), \qquad \tilde{Ϛ}_{\Psi,B} = \mathrm{Tr}_A \tilde{Ϛ}_{\Psi}.
 $$
 
-The conditional probability is therefore **independent of the filter setting** $k$, and it equals $1$ only when the reduced state $\tilde{Ϛ}_B$ is pure — which makes $\tilde{Ϛ}$ separable. The general formula above gives the conditional probability for any state and any pair of operations, but it does not by itself reproduce the deterministic filter-outcome correlation of the classical configuration: that correlation is a feature of the one-idempotent-one-$*$-unitary setup itself, not a consequence of this trace formula.
+The conditional probability is therefore **independent of the filter setting** $k$, and it equals $1$ only when the reduced state $\tilde{Ϛ}_{\Psi,B}$ is pure — which makes $\tilde{Ϛ}_{\Psi}$ separable. The general formula above gives the conditional probability for any state and any pair of operations, but it does not by itself reproduce the deterministic filter-outcome correlation of the classical configuration: that correlation is a feature of the one-idempotent-one-$*$-unitary setup itself, not a consequence of this trace formula.
 
 The distinction in the framework's notation is therefore:
 
@@ -149,7 +149,7 @@ The paper's distinction between "mode functions" and "excitations" is thus given
 
 The operational criterion, as Korolkova, Sánchez-Soto, and Leuchs present it, is a criterion about *operations*: count the idempotents. It does not require any commitment to the *role* of the state in the algebra. The framework suggests a refinement, which the paper's criterion does not require, and which is the place where the framework goes beyond the operational criterion.
 
-**Quantum entanglement lives in a fundamental element.** In the quantum case, the non-separable joint state $\tilde{Ϛ}$ is a *fundamental* element of $\mathbb{B}_{\Psi}^{(A)}\otimes \mathbb{B}_{\Psi}^{(B)}$. It is the state. It is what measurements act on, and there is no deeper description of the joint system that the state is derived from. The two idempotents act directly on the state, and the joint probability is the normalised Hermitian form, read through the trace.
+**Quantum entanglement lives in a fundamental element.** In the quantum case, the non-separable joint state $\tilde{Ϛ}_{\Psi}$ is a *fundamental* element of $\mathbb{B}_{\Psi}^{(A)}\otimes \mathbb{B}_{\Psi}^{(B)}$. It is the state. It is what measurements act on, and there is no deeper description of the joint system that the state is derived from. The two idempotents act directly on the state, and the joint probability is the normalised Hermitian form, read through the trace.
 
 **Classical non-separability lives in a derived element.** In the classical case, the non-separable object — say, the coherence matrix $W_{ij}$ of a vector light beam — is a *derived* element of $\mathbb{B}_{\Psi}^{\otimes 2}$ (after the appropriate reduction to a 2×2 problem). It is obtained as a second-order correlation of a classical field configuration:
 
@@ -210,8 +210,8 @@ The paper and the framework are complementary. The paper tells us what to look f
 | $i$ | Scalar imaginary, $i^2 = -1$ |
 | $\tilde\Pi_A^{(i)}, \tilde\Pi_B^{(j)}$ | Idempotents on partitions $A,B$ (measurements) |
 | $\tilde Q_A^{(k)}$ | $*$-Unitary on partition $A$ (filter, sorter, basis choice) |
-| $p(i,j) = \operatorname{Tr}((\tilde\Pi_A^{(i)}\otimes \tilde\Pi_B^{(j)})\circ \tilde{Ϛ})$ | Joint probability, quantum case (trace reading at normalisation) |
-| $p(j\mid k) = \mathrm{Tr}((e_t\otimes \tilde\Pi_B^{(j)})\circ(\tilde Q_A^{(k)}\otimes e_t)\circ \tilde{Ϛ}\circ(\tilde Q_A^{(k){}^{*}}\otimes e_t))$ | Conditional probability, classical case |
+| $p(i,j) = \operatorname{Tr}((\tilde\Pi_A^{(i)}\otimes \tilde\Pi_B^{(j)})\circ \tilde{Ϛ}_{\Psi})$ | Joint probability, quantum case (trace reading at normalisation) |
+| $p(j\mid k) = \mathrm{Tr}((e_t\otimes \tilde\Pi_B^{(j)})\circ(\tilde Q_A^{(k)}\otimes e_t)\circ \tilde{Ϛ}_{\Psi}\circ(\tilde Q_A^{(k){}^{*}}\otimes e_t))$ | Conditional probability, classical case |
 | $\tilde\Pi_A \otimes \tilde\Pi_B$ | Quantum: two idempotents, statistical correlation |
 | $\tilde Q_A \otimes \tilde\Pi_B$ | Classical: one idempotent, one $*$-unitary |
 | $W_{ij} = \langle E_i^* E_j\rangle$ | Coherence matrix (derived element) |

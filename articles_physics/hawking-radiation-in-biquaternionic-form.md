@@ -51,7 +51,7 @@ f(r) = 1-\frac{r_s}{r},
 r_s = \frac{2GM}{c^2}.
 $$
 
-The metric is **imported**: nothing in the biquaternion algebra produces it. *Curved Spacetime and the Biquaternion Framework* records that the framework's own local-scale route is too rigid to contain black-hole exteriors (within its metric class Ricci-flatness forces flatness), and that a general metric can be carried only by a frame field $\tilde E_\mu(x)\in\mathbb{B}_{\Phi}$, with $g_{\mu\nu}=\langle\tilde E_\mu,\tilde E_\nu\rangle_{\natural}$, which the algebra accepts but does not determine. What the algebra carries at each point is the local tangent structure — the light cone of $\mathbb{B}_{\Phi}$ in that point's frame, the zero-divisor cone — and the four-vector kinematics of the field. It does not carry the global horizon.
+The metric is **imported**: nothing in the biquaternion algebra produces it. *Curved Spacetime and the Biquaternion Framework* records that the framework's own local-scale route is too rigid to contain black-hole exteriors (within its metric class Ricci-flatness forces flatness), and that a general metric can be carried only by a frame field $\tilde E_{\Phi}_\mu(x)\in\mathbb{B}_{\Phi}$, with $g_{\mu\nu}=\langle\tilde E_{\Phi}_\mu,\tilde E_{\Phi}_\nu\rangle_{\natural}$, which the algebra accepts but does not determine. What the algebra carries at each point is the local tangent structure — the light cone of $\mathbb{B}_{\Phi}$ in that point's frame, the zero-divisor cone — and the four-vector kinematics of the field. It does not carry the global horizon.
 
 The horizon is the surface
 
@@ -260,17 +260,17 @@ The in-vacuum $|0_{\mathrm{in}}\rangle$ is defined by $a_i|0_{\mathrm{in}}\rangl
 The Bogoliubov transformation is a canonical transformation, and the requirement that the out operators satisfy the canonical brackets fixes the coefficients. Two relations follow, and they are the only algebraic input of this section:
 
 $$
-[b_j,b_k^\dagger]=\sum_i\left(\alpha_{ji}\alpha^*_{ki}-\mathcal B_{ji}\mathcal B^*_{ki}\right)=\delta_{jk},
+[b_j,b_k^\dagger]=\sum_i\left(\alpha_{ji}\alpha^*_{ki}-\mathcal B_{ji}\mathcal B_{\Psi}^*_{ki}\right)=\delta_{jk},
 \qquad
 [b_j,b_k]=\sum_i\left(\mathcal B_{ji}\alpha_{ki}-\alpha_{ji}\mathcal B_{ki}\right)=0 .
 $$
 
-In matrix form, with $\alpha=(\alpha_{ji})$ and $\mathcal B=(\mathcal B_{ji})$,
+In matrix form, with $\alpha=(\alpha_{ji})$ and $\mathcal B_{\Psi}=(\mathcal B_{ji})$,
 
 $$
-\alpha\,\alpha^\dagger-\mathcal B\,\mathcal B^\dagger=I,
+\alpha\,\alpha^\dagger-\mathcal B_{\Psi}\,\mathcal B_{\Psi}^\dagger=I,
 \qquad
-\mathcal B\,\alpha^{\mathsf T}-\alpha\,\mathcal B^{\mathsf T}=0 .
+\mathcal B_{\Psi}\,\alpha^{\mathsf T}-\alpha\,\mathcal B_{\Psi}^{\mathsf T}=0 .
 $$
 
 Both were checked on an exact finite model with two in modes and two out modes and Gaussian-rational coefficients. They are the statement that the transformation preserves the canonical algebra; they do not by themselves contain any thermality.
@@ -286,8 +286,8 @@ $$
 
 because only the $a_i a_k^\dagger$ contraction survives. The total number of out quanta produced in the in-vacuum is $\sum_j\sum_i|\mathcal B_{ji}|^2$. This was verified on the same finite model. Two consequences are worth separating.
 
-- **The vacua coincide if and only if $\mathcal B=0$.** A nonzero negative-frequency coefficient is exactly the obstruction to the in and out mode systems defining the same vacuum. Particle creation is the failure of the two vacua to agree, not a property of either one.
-- **Thermality is a property of the distribution of the $\mathcal B_{ji}$, not of their existence.** A general $\mathcal B$ produces some spectrum; only a specific exponential distribution produces a Planckian one. The next subsection isolates it.
+- **The vacua coincide if and only if $\mathcal B_{\Psi}=0$.** A nonzero negative-frequency coefficient is exactly the obstruction to the in and out mode systems defining the same vacuum. Particle creation is the failure of the two vacua to agree, not a property of either one.
+- **Thermality is a property of the distribution of the $\mathcal B_{ji}$, not of their existence.** A general $\mathcal B_{\Psi}$ produces some spectrum; only a specific exponential distribution produces a Planckian one. The next subsection isolates it.
 
 ### Where the Exponential Comes From
 
@@ -313,18 +313,18 @@ $$
 The two branches of the continuation differ by the factor $\exp(2\pi\omega/\kappa)$, and the combination that is positive-frequency with respect to Kruskal time — the one that defines the vacuum — has its negative-frequency component suppressed relative to its positive-frequency component by
 
 $$
-\boxed{\;\frac{|\mathcal B|}{|\alpha|}=\exp(-\pi\omega/\kappa)\;}.
+\boxed{\;\frac{|\mathcal B_{\Psi}|}{|\alpha|}=\exp(-\pi\omega/\kappa)\;}.
 $$
 
 This is the exponential that makes the spectrum thermal, and its origin is the branch point where the horizon is. In the mode-mixing language it is a statement about the analyticity of the modes across the horizon; in the two-point-function language it is exactly the sibling article's statement that the two-point function is periodic under a shift of $2\pi/\kappa$ in imaginary time, equivalently the detailed-balance factor $\exp(-2\pi\omega/\kappa)$. The two are the same analytic fact written in the mode basis and in the correlator basis. The branch-point factor was checked directly: with $\kappa=1.3$, $\omega=0.7$, the continuation multiplies the mode by $\exp(\pm\pi\omega/\kappa)=5.428$ in one half-plane and $\exp(-\pi\omega/\kappa)=0.1842$ in the other, and the two differ by $\exp(2\pi\omega/\kappa)$, as stated.
 
-The identification of $|\mathcal B/\alpha|$ with that branch-point factor, and the mode decomposition that makes it a Bogoliubov coefficient, are the standard Hawking calculation. What the article recomputes is the exponential and the route from it to the Planck distribution; what it does not do is derive the coefficient ratio from the biquaternion algebra, which the algebra does not produce.
+The identification of $|\mathcal B_{\Psi}/\alpha|$ with that branch-point factor, and the mode decomposition that makes it a Bogoliubov coefficient, are the standard Hawking calculation. What the article recomputes is the exponential and the route from it to the Planck distribution; what it does not do is derive the coefficient ratio from the biquaternion algebra, which the algebra does not produce.
 
 ## From Mode Mixing to the Planck Spectrum
 
 ### The Vacuum Is a Squeezed State
 
-The exponential ratio $\tanh r_\omega=|\mathcal B/\alpha|=\exp(-\pi\omega/\kappa)$ says that the in-vacuum is a **two-mode squeezed state** over the out modes: the out quantum of frequency $\omega$ on the exterior side is entangled with a partner mode of the same frequency on the other side of the horizon. Writing $|n\rangle_R|n\rangle_L$ for the occupation of the pair,
+The exponential ratio $\tanh r_\omega=|\mathcal B_{\Psi}/\alpha|=\exp(-\pi\omega/\kappa)$ says that the in-vacuum is a **two-mode squeezed state** over the out modes: the out quantum of frequency $\omega$ on the exterior side is entangled with a partner mode of the same frequency on the other side of the horizon. Writing $|n\rangle_R|n\rangle_L$ for the occupation of the pair,
 
 $$
 |0_{\mathrm{in}}\rangle
@@ -472,7 +472,7 @@ The framework reproduces $T_{\mathrm H}$ and supplies no correction to it. There
 - The Hawking temperature $T=\frac{m\,\kappa}{2\,k_m\,\pi\,k_{B}}$, with $\kappa$ the surface gravity of the horizon; for Schwarzschild $\kappa=c^4/(4GM)$ and $T=\frac{m\,c^{4}}{8\,k_m\,\pi\,G\,M\,k_{B}}$.
 - The near-horizon geometry of a non-extremal horizon is Rindler with acceleration equal to the surface gravity, and the Hawking temperature is the near-horizon Unruh temperature redshifted to infinity.
 - The Bogoliubov transformation between in and out modes, its consistency relations, and the particle number $\sum_i|\mathcal B_{ji}|^2$ in the in-vacuum.
-- The exponential ratio $|\mathcal B/\alpha|=\exp(-\pi\omega/\kappa)$ from the analyticity of the horizon modes, and the resulting Planck distribution; the Bose–Einstein and Fermi–Dirac forms at the same temperature.
+- The exponential ratio $|\mathcal B_{\Psi}/\alpha|=\exp(-\pi\omega/\kappa)$ from the analyticity of the horizon modes, and the resulting Planck distribution; the Bose–Einstein and Fermi–Dirac forms at the same temperature.
 - The Euclidean regularity condition, period $\beta=8\pi GM/c^3=2\pi c/\kappa$, independent of the surface-gravity computation.
 - The $M^{-1}$ scaling of $T_{\mathrm H}$.
 - The observational status: unobserved for gravitational black holes; analogue systems test the kinematic mechanism only.
@@ -520,7 +520,7 @@ The Unruh effect and Hawking radiation are the **same KMS statement seen in diff
 
 The trap of confusing the proper acceleration with the surface gravity is stated and avoided: the static observer's proper acceleration $a(r)=c^2\frac{df}{dr}/(2\sqrt f)$ diverges at the horizon, while the redshifted product $a(r)\sqrt f=c^2\frac{df}{dr}/2=GM/r^2$ is finite and equals $\kappa$ at the horizon. The local Unruh temperature diverges; the redshift cancels it; the surface gravity is what remains.
 
-The trap of asserting the thermal spectrum is avoided by deriving it. The in and out modes are related by a Bogoliubov transformation; the negative-frequency coefficient $\mathcal B_{ji}$ gives the particle number $\sum_i|\mathcal B_{ji}|^2$; the horizon's branch point at $U=0$ produces the logarithmic phase $\exp(-i\omega u)=(-U)^{i\omega/\kappa}$ and the exponential ratio $|\mathcal B/\alpha|=\exp(-\pi\omega/\kappa)$; the in-vacuum is a two-mode squeezed state with that squeeze parameter; and the resulting geometric sums are exactly the Bose–Einstein and Fermi–Dirac distributions at temperature $\frac{m\,\kappa}{2\,k_m\,\pi\,k_{B}}$. The temperature is checked independently against the Euclidean period $\beta=8\pi GM/c^3=2\pi c/\kappa$ and against the $M^{-1}$ scaling.
+The trap of asserting the thermal spectrum is avoided by deriving it. The in and out modes are related by a Bogoliubov transformation; the negative-frequency coefficient $\mathcal B_{ji}$ gives the particle number $\sum_i|\mathcal B_{ji}|^2$; the horizon's branch point at $U=0$ produces the logarithmic phase $\exp(-i\omega u)=(-U)^{i\omega/\kappa}$ and the exponential ratio $|\mathcal B_{\Psi}/\alpha|=\exp(-\pi\omega/\kappa)$; the in-vacuum is a two-mode squeezed state with that squeeze parameter; and the resulting geometric sums are exactly the Bose–Einstein and Fermi–Dirac distributions at temperature $\frac{m\,\kappa}{2\,k_m\,\pi\,k_{B}}$. The temperature is checked independently against the Euclidean period $\beta=8\pi GM/c^3=2\pi c/\kappa$ and against the $M^{-1}$ scaling.
 
 The biquaternion framework supplies the algebraic home for the effect — the material sector $\mathbb{B}_{\Phi}$ for the field and its intrinsic imaginary time, the informational sector $\mathbb{B}_{\Psi}$ for the Hermitian modular generator, the zero-divisor cone for the local light cone — and it transcribes the Hawking calculation rather than deriving it. It contains no black-hole geometry and no dynamics, and it gives no correction to the standard temperature. Hawking radiation has never been observed; no claim of observation is made.
 

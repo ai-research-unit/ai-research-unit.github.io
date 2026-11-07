@@ -2,7 +2,7 @@
 
 ## Introduction
 
-The biquaternion algebra is the algebra of a two-state system. Its defining module is two-dimensional, its observables are the Hermitian elements of $\mathbb{B}$, its states are the positive elements of $\mathbb{B}_{\Psi}$ normalised by $\langle\tilde{Ϛ},e_t\rangle_{*}=\tfrac12$ (trace one in the $2\times2$ image), and its state space is the Bloch ball, the state slice of the future light cone of the biquaternion norm. Every one of these statements rests on the same number: the module has two levels.
+The biquaternion algebra is the algebra of a two-state system. Its defining module is two-dimensional, its observables are the Hermitian elements of $\mathbb{B}$, its states are the positive elements of $\mathbb{B}_{\Psi}$ normalised by $\langle\tilde{Ϛ}_{\Psi},e_t\rangle_{*}=\tfrac12$ (trace one in the $2\times2$ image), and its state space is the Bloch ball, the state slice of the future light cone of the biquaternion norm. Every one of these statements rests on the same number: the module has two levels.
 
 Three-level systems are the next step, and they are physically unavoidable: a spin-one atom, a qutrit, a three-level ladder, the internal states of a nitrogen-vacancy centre. The question this article addresses is whether the biquaternion algebra can describe them, and if not, exactly where the obstruction lies. The answer has two halves, and both are useful.
 
@@ -80,7 +80,7 @@ $$
 \boxed{\;n^2-\mathrm{Tr}(n)\,n+\det(n)\,I=0\quad\Longrightarrow\quad n^2=0\;},
 $$
 
-so every nilpotent element of $\mathbb{B}$ has square zero. In the algebra itself the same identity reads $(i\vec e_x-\vec e_y)^2=0$ for the raising element of the fundamental module, and $(\tilde S_+)^2=0$ for the spin operator.
+so every nilpotent element of $\mathbb{B}$ has square zero. In the algebra itself the same identity reads $(i\vec e_x-\vec e_y)^2=0$ for the raising element of the fundamental module, and $(\tilde S_{\Psi,+})^2=0$ for the spin operator.
 
 A three-level ladder, by contrast, has two rungs and is nilpotent of index three: the spin-one raising operator satisfies
 
@@ -107,7 +107,7 @@ The statement is about *projective* measurements and should not be overstated. A
 There is a three-dimensional space in the framework that carries spin one: the traceless part $W=\operatorname{span}_\mathbb{C}\{i\vec e_x,i\vec e_y,i\vec e_z\}$ of $\mathbb{B}$, on which the adjoint action
 
 $$
-\mathrm{ad}_{\tilde S_k}(ie_l)=[\tilde S_k,ie_l]=\frac{m\,c\,i\,\epsilon_{klm}\,ie_{m}}{k_m}$$
+\mathrm{ad}_{\tilde S_{\Psi,k}}(ie_l)=[\tilde S_{\Psi,k},ie_l]=\frac{m\,c\,i\,\epsilon_{klm}\,ie_{m}}{k_m}$$
 
 is a spin-one angular momentum. Since a three-dimensional module of $\mathbb{B}$ does not exist, something must distinguish this action from a module action, and the difference is exactly the multiplicativity of the map $x\mapsto\mathrm{ad}_x$.
 
@@ -169,13 +169,13 @@ $$
 and the spin-one operators are the symmetric combinations
 
 $$
-\tilde F_k=\tilde S_k^{(1)}+\tilde S_k^{(2)}=\frac{m\,c}{2\,k_m}\left(i\vec e_k\otimes e_t+e_t\otimes i\vec e_k\right),
+\tilde F_k=\tilde S_{\Psi,k}^{(1)}+\tilde S_{\Psi,k}^{(2)}=\frac{m\,c}{2\,k_m}\left(i\vec e_k\otimes e_t+e_t\otimes i\vec e_k\right),
 $$
 
 which act on $\mathrm{sym}^2V$ irreducibly and annihilate $\Lambda^2V$. The ladder behaves as a three-level ladder should: the raising operator restricted to the symmetric sector is the spin-one raising operator,
 
 $$
-\left(\tilde S_+^{(1)}+\tilde S_+^{(2)}\right)\Big|_{\mathrm{sym}^2V}=\frac{m\,c\,J_{+}}{k_m}$$
+\left(\tilde S_{\Psi,+}^{(1)}+\tilde S_{\Psi,+}^{(2)}\right)\Big|_{\mathrm{sym}^2V}=\frac{m\,c\,J_{+}}{k_m}$$
 
 with the standard matrix elements $J_+|1,0\rangle=\sqrt\frac{2\,m\,c}{k_m}|1,1\rangle$ and $J_+|1,-1\rangle=\sqrt\frac{2\,m\,c}{k_m}|1,0\rangle$; this was verified by restricting the four-dimensional operator to the symmetric basis. The first obstruction is thus bypassed at the cost of one factor: the two-level algebra, applied twice.
 
@@ -199,7 +199,7 @@ The ledger between the algebra and the tensor square can be drawn item by item. 
 |---|---|
 | Three orthonormal levels | the triplet sector $\mathrm{sym}^2V\subset V\otimes V$ |
 | The three spectral projectors $E_{mm}$ | symmetric elements of $\mathbb{B}\otimes_\mathbb{C}\mathbb{B}$, selected by $P_{\mathrm{sym}}$ |
-| Raising and lowering $\tilde S_\pm$ ($\tilde S_+^3=0$) | $\tilde S_\pm^{(1)}+\tilde S_\pm^{(2)}$ restricted to the sector |
+| Raising and lowering $\tilde S_{\Psi,\pm}$ ($\tilde S_{\Psi,+}^3=0$) | $\tilde S_{\Psi,\pm}^{(1)}+\tilde S_{\Psi,\pm}^{(2)}$ restricted to the sector |
 | The spin vector $\langle\vec F\rangle$ | the adjoint action of $\mathbb{B}$ on the traceless part |
 | Coherent states | symmetrised products $P_{\mathrm{sym}}(\tilde\Pi_+\otimes \tilde\Pi_+)P_{\mathrm{sym}}$ |
 | Gell-Mann basis, structure constants | not in $\mathbb{B}$; reachable as polynomials in $I_3,F_1,F_2,F_3$ |
@@ -256,11 +256,11 @@ None of this argues that the framework is inapplicable to spin one. The operator
 Three-level systems are outside the biquaternion algebra as modules, and inside its tensor square as a sector. The article established the following.
 
 - **Level count.** $\mathbb{B}\cong M_2(\mathbb{C})$ has $V=\mathbb{C}^2$ as its only simple module, and every unital finite-dimensional module is $V^{\oplus k}$ of even dimension $2k$. A unital three-dimensional module does not exist; the only three-dimensional action is the block embedding into $M_2(\mathbb{C})\oplus0\subset M_3(\mathbb{C})$, in which the third level is annihilated by every algebra element, and the ten operators that involve it are absent.
-- **Nilpotency ceiling.** By Cayley–Hamilton every nilpotent element of $\mathbb{B}$ has square zero, $n^2=0$, and the algebra's raising element satisfies $(\tilde S_+)^2=0$ and $(i\vec e_x-\vec e_y)^2=0$. A three-level ladder has nilpotency index three, $J_+^3=0$ with $J_+^2\neq0$; no such element exists in $\mathbb{B}$. The index of nilpotency equals the number of levels.
+- **Nilpotency ceiling.** By Cayley–Hamilton every nilpotent element of $\mathbb{B}$ has square zero, $n^2=0$, and the algebra's raising element satisfies $(\tilde S_{\Psi,+})^2=0$ and $(i\vec e_x-\vec e_y)^2=0$. A three-level ladder has nilpotency index three, $J_+^3=0$ with $J_+^2\neq0$; no such element exists in $\mathbb{B}$. The index of nilpotency equals the number of levels.
 - **Idempotent ceiling.** At most two orthogonal idempotents of $\mathbb{B}$ can sum to the identity, so a three-outcome projective measurement is impossible in the algebra; three-outcome POVMs exist, but they are not sharp.
 - **The adjoint representation.** The traceless part $W$ carries spin one under the adjoint action, but $\mathrm{ad}_{xy}\neq\mathrm{ad}_x\mathrm{ad}_y$: explicitly $\mathrm{ad}_{i\vec e_x}^2(i\vec e_y)=+4i\vec e_y\neq0=\mathrm{ad}_{(i\vec e_x)^2}(i\vec e_y)$. The three-dimensional space is a module of the Lie algebra $\mathfrak{su}(2)$ and of the group $SU(2)$, not of the algebra $\mathbb{B}$; all derivations are inner and $\mathrm{Der}(\mathbb{B})\cong\mathfrak{sl}(2,\mathbb{C})$.
 - **The absent dynamical algebra.** $\dim_{\mathbb{R}}\mathbb{B}_{\Psi}=4$, $\dim_{\mathbb{R}}\mathbb{B}=8$ and $\dim_{\mathbb{R}}\mathrm{Der}(\mathbb{B})=6$ are all smaller than $\dim_{\mathbb{R}}\mathrm{U}(3)=9$ and $\dim_{\mathbb{R}}\mathrm{SU}(3)=8$; the framework supplies the spin subgroup $SU(2)$ of dimension three, and the rest of $\mathrm{U}(3)$ only through the tensor square.
-- **The construction.** $V\otimes V\cong\mathrm{sym}^2V\oplus\Lambda^2V$, $4=3+1$; the qutrit is $\mathrm{sym}^2V$, selected by $P_{\mathrm{sym}}$, on which $\tilde F_k=\tilde S_k^{(1)}+\tilde S_k^{(2)}$ acts irreducibly with $(\tilde S_+^{(1)}+\tilde S_+^{(2)})|_{\mathrm{sym}^2V}=\frac{m\,c\,J_{+}}{k_m}$; the products of $I_3,F_1,F_2,F_3$ generate $M_3(\mathbb{C})$, of real dimension $18$.
+- **The construction.** $V\otimes V\cong\mathrm{sym}^2V\oplus\Lambda^2V$, $4=3+1$; the qutrit is $\mathrm{sym}^2V$, selected by $P_{\mathrm{sym}}$, on which $\tilde F_k=\tilde S_{\Psi,k}^{(1)}+\tilde S_{\Psi,k}^{(2)}$ acts irreducibly with $(\tilde S_{\Psi,+}^{(1)}+\tilde S_{\Psi,+}^{(2)})|_{\mathrm{sym}^2V}=\frac{m\,c\,J_{+}}{k_m}$; the products of $I_3,F_1,F_2,F_3$ generate $M_3(\mathbb{C})$, of real dimension $18$.
 - **The cost.** One extra level that must be projected out, an algebra that grows from $M_2(\mathbb{C})$ to $M_4(\mathbb{C})$, and a state space whose positivity is no longer a quadratic cone condition.
 - **General counting.** $\mathrm{sym}^nV$ has dimension $n+1$; spin $s$ requires $2s$ factors, so the cost in factors is linear in the number of levels minus one.
 
@@ -274,12 +274,12 @@ Three-level systems are outside the biquaternion algebra as modules, and inside 
 | $S=\mathrm{Res}_{\mathbb{C}/\mathbb{R}}V$ | Simple real module, real dimension $4$ |
 | $W=\operatorname{span}_\mathbb{C}\{i\vec e_x,i\vec e_y,i\vec e_z\}$ | Traceless part, carries the adjoint (spin-one) action |
 | $\mathrm{ad}_x(y)=[x,y]$ | Adjoint action, a derivation |
-| $S_+$, $\tilde S_+$ | Raising operator; $S_+^2=0$ |
+| $S_+$, $\tilde S_{\Psi,+}$ | Raising operator; $S_+^2=0$ |
 | $J_+$ | Spin-one raising operator; $J_+^3=0$, $J_+^2\neq0$ |
 | $P_{\mathrm{sym}},P_{\mathrm{asym}}$ | Triplet and singlet projectors of $\mathbb{B}\otimes\mathbb{B}$ |
 | $\mathrm{sym}^2V$, $\Lambda^2V$ | Symmetric and antisymmetric squares; dimensions $3$ and $1$ |
 | $\mathrm{sym}^nV$ | Symmetric $n$-th power of the defining module, dimension $n+1$ |
-| $\tilde F_k=\tilde S_k^{(1)}+\tilde S_k^{(2)}$ | Spin-one operators of the tensor square |
+| $\tilde F_k=\tilde S_{\Psi,k}^{(1)}+\tilde S_{\Psi,k}^{(2)}$ | Spin-one operators of the tensor square |
 | $M_3(\mathbb{C})$ | Qutrit observable algebra, real dimension $18$ |
 
 ## Further Reading

@@ -4,7 +4,7 @@
 
 A classical system whose parameters are cycled slowly acquires, besides the phase it would have from its own dynamics, an extra angle that depends only on the cycle. This is **Hannay's angle**, found by Hannay in 1985 as the classical counterpart of Berry's adiabatic phase. The setting is a Hamiltonian written in action-angle variables, $H(\theta,I;R)$, in which $R$ is a set of parameters that vary slowly and return to their starting values. The action $I$ is an adiabatic invariant; the angle $\theta$ advances with the instantaneous frequency and, after a closed cycle of $R$, carries an additional shift that is a functional of the cycle alone. Hannay's angle is the **classical geometric phase**.
 
-This article develops the subject in the biquaternion algebra $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$. The algebra enters through the simplest nontrivial adiabatic classical system, the classical spin on its coadjoint orbit. Its state is a real pure quaternion $\tilde S$ with $\langle\tilde S\rangle_{\natural}=\vec S^2$, its dynamics is the rotor flow of the companion articles, and the adiabatic transport of the spin direction defines a rotor whose **holonomy** is the Hannay angle. The rotor description makes the geometry of the effect explicit:
+This article develops the subject in the biquaternion algebra $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$. The algebra enters through the simplest nontrivial adiabatic classical system, the classical spin on its coadjoint orbit. Its state is a real pure quaternion $\tilde S_{\Psi}$ with $\langle\tilde S_{\Psi}\rangle_{\natural}=\vec S^2$, its dynamics is the rotor flow of the companion articles, and the adiabatic transport of the spin direction defines a rotor whose **holonomy** is the Hannay angle. The rotor description makes the geometry of the effect explicit:
 
 1. The spin direction is the image of a fixed axis under a rotor, $\vec u_x=\tilde u\vec e_z\tilde u^{*}$.
 2. Adiabatic following chooses a rotor field over the sphere of directions; the Hannay angle is minus the accumulated twist of that rotor about the direction, equivalently the holonomy of the transport.
@@ -12,7 +12,7 @@ This article develops the subject in the biquaternion algebra $\mathbb{B}=\mathb
 
 The article is classical. The relation to the quantum Berry phase is used as the standard statement $-\partial\gamma/\partial I$ relating the two phases, and the Berry phase itself is not developed; the companion article on the Berry phase owns the quantum side. No state space, no measurement, and no commutator appear.
 
-The conventions are those of the read list. The algebra is $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, basis $e_t=1,\vec e_x,\vec e_y,\vec e_z$, $\vec e_\mu^2=-e_t$, $\vec e_\mu \vec e_\nu=-\delta_{\mu\nu}e_t+\varepsilon_{\mu\nu\lambda}\vec e_\lambda$; $i$ is central, $i^2=-1$; $\mathbb{B}_{\Phi}$ and $\mathbb{B}_{\Psi}$ are the anti-Hermitian and Hermitian sectors; $\mathbb{B}_{H}$ is the real-quaternion subspace. The rotor is $\tilde u\in\mathbb{B}_{H}$ with $\langle\tilde u\rangle_{\natural}=e_t$, acting by $\tilde{Q}\mapsto\tilde u\tilde{Q}\tilde u^{*}$; the body-frame angular velocity is $\vec\omega_b=+2\tilde u^{\natural}d\tilde u/dr'_t$, the logarithmic derivative that makes the body axes turn by $d\vec e_\mu/dr'_t=\vec\omega\times\vec e_\mu$ in the corpus rotation convention. The coadjoint orbit of the spin is the level set $\langle\tilde S\rangle_{\natural}=S^2$ of the biquaternion norm, with the Poisson bracket $\{S_\mu,S_\nu\}=\varepsilon_{\mu\nu\lambda}S_\lambda$.
+The conventions are those of the read list. The algebra is $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, basis $e_t=1,\vec e_x,\vec e_y,\vec e_z$, $\vec e_\mu^2=-e_t$, $\vec e_\mu \vec e_\nu=-\delta_{\mu\nu}e_t+\varepsilon_{\mu\nu\lambda}\vec e_\lambda$; $i$ is central, $i^2=-1$; $\mathbb{B}_{\Phi}$ and $\mathbb{B}_{\Psi}$ are the anti-Hermitian and Hermitian sectors; $\mathbb{B}_{H}$ is the real-quaternion subspace. The rotor is $\tilde u\in\mathbb{B}_{H}$ with $\langle\tilde u\rangle_{\natural}=e_t$, acting by $\tilde{Q}\mapsto\tilde u\tilde{Q}\tilde u^{*}$; the body-frame angular velocity is $\vec\omega_b=+2\tilde u^{\natural}d\tilde u/dr'_t$, the logarithmic derivative that makes the body axes turn by $d\vec e_\mu/dr'_t=\vec\omega\times\vec e_\mu$ in the corpus rotation convention. The coadjoint orbit of the spin is the level set $\langle\tilde S_{\Psi}\rangle_{\natural}=S^2$ of the biquaternion norm, with the Poisson bracket $\{S_\mu,S_\nu\}=\varepsilon_{\mu\nu\lambda}S_\lambda$.
 
 The companion articles are:
 - Companion article *Rigid-Body Dynamics and the Biquaternion Rotor*, for the rotor, the angular velocity, and the Euler-angle parametrisation.
@@ -84,22 +84,22 @@ For the special case in which the parameter space is a sphere of directions and 
 The classical spin vector is a point of the coadjoint orbit of the rotation group. In the algebra it is a real pure quaternion
 
 $$
-\tilde S\in\mathbb{B}_{H}\cap\mathbb{B}_{\Phi},\qquad \langle\tilde S\rangle_{\natural}=\vec S^2=S^2 ,
+\tilde S_{\Psi}\in\mathbb{B}_{H}\cap\mathbb{B}_{\Phi},\qquad \langle\tilde S_{\Psi}\rangle_{\natural}=\vec S^2=S^2 ,
 $$
 
-and the orbit is the level set $\langle\tilde S\rangle_{\natural}=S^2$, a sphere of radius $S$. The symplectic form is the Souriau form of the companion article, and the Poisson bracket is $\{S_\mu,S_\nu\}=\varepsilon_{\mu\nu\lambda}S_\lambda$. A Hamiltonian linear in the spin,
+and the orbit is the level set $\langle\tilde S_{\Psi}\rangle_{\natural}=S^2$, a sphere of radius $S$. The symplectic form is the Souriau form of the companion article, and the Poisson bracket is $\{S_\mu,S_\nu\}=\varepsilon_{\mu\nu\lambda}S_\lambda$. A Hamiltonian linear in the spin,
 
 $$
-H=\vec\omega\cdot\vec S=\tfrac12\,\mathrm{Sc}\!\left(\vec\omega^{\natural}\,\tilde S+\tilde S^{\natural}\,\vec\omega\right),
+H=\vec\omega\cdot\vec S=\tfrac12\,\mathrm{Sc}\!\left(\vec\omega^{\natural}\,\tilde S_{\Psi}+\tilde S_{\Psi}^{\natural}\,\vec\omega\right),
 $$
 
 generates the flow
 
 $$
-d\tilde S/dr'_t=\vec\omega\times\vec S ,
+d\tilde S_{\Psi}/dr'_t=\vec\omega\times\vec S ,
 $$
 
-the rigid rotation of the spin about the axis $\vec\omega$ at frequency $|\vec\omega|$. This is the rotor flow: for $H=2\vec G\cdot\vec S$ with $\vec G$ the generator, the flow is $\tilde S\mapsto \exp(r'_t\vec G)\tilde S \exp(-r'_t\vec G)$, and the angular velocity of the spin is $2\vec G$.
+the rigid rotation of the spin about the axis $\vec\omega$ at frequency $|\vec\omega|$. This is the rotor flow: for $H=2\vec G\cdot\vec S$ with $\vec G$ the generator, the flow is $\tilde S_{\Psi}\mapsto \exp(r'_t\vec G)\tilde S_{\Psi} \exp(-r'_t\vec G)$, and the angular velocity of the spin is $2\vec G$.
 
 ### The Slow Parameter and the Rotor
 
@@ -265,7 +265,7 @@ For $S=\tfrac12$ the Berry phase is $-\theta_{\mathrm{sol}}/2$, matching the com
 The adiabatic invariant of the spin is the biquaternion norm. The magnitude $S$ is
 
 $$
-S=\sqrt{\langle\tilde S\rangle_{\natural}}=\sqrt{\vec S^2},
+S=\sqrt{\langle\tilde S_{\Psi}\rangle_{\natural}}=\sqrt{\vec S^2},
 $$
 
 and it is conserved not only in the adiabatic limit but exactly, because it is the Casimir of the bracket $\{S_\mu,S_\nu\}=\varepsilon_{\mu\nu\lambda}S_\lambda$ and is therefore a constant of motion for every Hamiltonian on the orbit. For a general action-angle system the adiabatic invariant $I_k$ is the action $\oint p_k\,dq_k$; for the spin on its orbit, the distinguished invariant is the biquaternion norm, and it is the action with respect to which the Hannay angle is differentiated. The statement "the Hannay angle is the derivative of the phase with respect to the action" therefore reads, in the algebra, "differentiate with respect to the square root of the biquaternion norm".
@@ -283,12 +283,12 @@ The one place where the quantum counterpart enters the discussion is the formula
 Hannay's angle is the classical geometric phase of an adiabatically cycled system, and in the biquaternion algebra it is the holonomy of the rotor that carries a fixed axis to the slowly varying direction.
 
 - Action-angle variables $(\theta,I)$ with slowly cycled parameters $R$ have an adiabatic invariant $I$ and an angle $\theta$ that acquires, after a closed cycle, the Hannay angle $\Delta\theta_k=-\partial/\partial I_k\,\oint\sum_\mu\mathcal A_\mu dR_\mu$, the action-derivative of the Berry phase.
-- The classical spin vector is a point of the coadjoint orbit $\langle\tilde S\rangle_{\natural}=S^2$, with $H=\vec\omega\cdot\vec S$ generating the rotor flow $d\vec S/dr'_t=\vec\omega\times\vec S$.
+- The classical spin vector is a point of the coadjoint orbit $\langle\tilde S_{\Psi}\rangle_{\natural}=S^2$, with $H=\vec\omega\cdot\vec S$ generating the rotor flow $d\vec S/dr'_t=\vec\omega\times\vec S$.
 - The direction $\vec u_x=\tilde u\vec e_z\tilde u^{*}$ defines a rotor field; the geodesic (shortest) rotor is $\tilde u_g=\cos\frac{\theta_0}{2}+\sin\frac{\theta_0}{2}\vec u_y$ with $\vec u_y$ in the plane perpendicular to $\vec e_z$, and its body-frame twist about the direction is $\omega_b^{\parallel}=-(1-\cos\theta_0)d\theta_{\mathrm{azm}}/dr'_t$, so that the Hannay angle is $-\oint\omega_b^{\parallel}dr'_t=\theta_{\mathrm{sol}}$.
 - Integrating the twist around a cycle of solid angle $\theta_{\mathrm{sol}}$ gives Hannay's angle $\Delta\theta_{\mathrm{Hannay}}=\theta_{\mathrm{sol}}$, the holonomy of the connection $\mathcal A=(1-\cos\theta)d\theta_{\mathrm{azm}}$ with curvature $\sin\theta\,d\theta\wedge d\theta_{\mathrm{azm}}$.
 - The exact rotating-frame solution of the uniformly precessing field gives the same $\theta_{\mathrm{sol}}$.
 - The spinor phase is half the classical angle, $\gamma=-\theta_{\mathrm{sol}}/2$ for spin-$\tfrac12$, the factor $2$ being the double cover $\tilde u\to-\tilde u$; the general relation is $\gamma=-S\theta_{\mathrm{sol}}$ and $\Delta\theta=-\partial/\partial S\,\gamma=\theta_{\mathrm{sol}}$.
-- The adiabatic invariant is the biquaternion norm, $S=\sqrt{\langle\tilde S\rangle_{\natural}}$; the Hannay angle is the derivative of the phase with respect to it.
+- The adiabatic invariant is the biquaternion norm, $S=\sqrt{\langle\tilde S_{\Psi}\rangle_{\natural}}$; the Hannay angle is the derivative of the phase with respect to it.
 
 The phase is classical: it is the holonomy of a transport on the space of directions, computed from the classical trajectory, and it needs no quantum postulate.
 
@@ -302,7 +302,7 @@ The phase is classical: it is the holonomy of a transport on the space of direct
 | $\Delta\theta_k=-\partial/\partial I_k\,\oint\sum_\mu\mathcal A_\mu dR_\mu$ | Hannay's angle |
 | $\mathcal A_\mu$ | Berry connection of the quantised problem |
 | $\gamma=\oint\sum_\mu\mathcal A_\mu dR_\mu$ | Berry phase (quantum counterpart) |
-| $\tilde S\in\mathbb{B}_{H}\cap\mathbb{B}_{\Phi}$, $\langle\tilde S\rangle_{\natural}=S^2$ | Classical spin on its coadjoint orbit |
+| $\tilde S_{\Psi}\in\mathbb{B}_{H}\cap\mathbb{B}_{\Phi}$, $\langle\tilde S_{\Psi}\rangle_{\natural}=S^2$ | Classical spin on its coadjoint orbit |
 | $\vec u_x=\tilde u\vec e_z\tilde u^{*}$ | Slowly varying direction |
 | $\tilde u_g$ | Geodesic (untwisted) rotor field |
 | $\vec\omega_b=+2\tilde u^{\natural}d\tilde u/dr'_t$ | Body-frame angular velocity (twist) |

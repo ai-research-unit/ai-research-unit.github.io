@@ -21,7 +21,7 @@ observation.
 The task is the corpus's usual one: record what is derived, mark what is chosen, and state the cost.
 The conventions are the corpus's. The field is the companion article's dual field strength
 $-i\tilde F = \sqrt{\epsilon}\,\vec E + i\sqrt{\mu}\,\vec H$, and the paper's
-biquaternion of *tension*, $\tilde{A} = i\alpha - i\tilde F$, is that field with the
+biquaternion of *tension*, $\tilde{A}_{\Phi} = i\alpha - i\tilde F$, is that field with the
 scalar part the paper calls the density of the ether. The paper's conjugation — the vector part
 negated and the coefficients complex-conjugated, the paper's **mutual** biquaternion and the
 conjugation it uses for the energy–momentum — is the corpus's ${}^{*}$ throughout. The symbol
@@ -35,14 +35,14 @@ The programme's postulate is the companion article's, and the first thing this p
 to read it as an ontology. The postulate is
 
 $$
-\nabla^{+}\tilde{A} = \tilde J_{\mathrm{eg}},
+\nabla^{+}\tilde{A}_{\Phi} = \tilde J_{\Phi,\mathrm{eg}},
 \qquad
 \nabla^{\pm} = \partial/\partial \tau \pm i\nabla ,
 \qquad
-\tilde J_{\mathrm{eg}} = i\rho + \vec J ,
+\tilde J_{\Phi,\mathrm{eg}} = i\rho + \vec J ,
 $$
 
-with $\tilde{A}$ the tension biquaternion and $\tilde J_{\mathrm{eg}}$ the charge–current biquaternion. On its
+with $\tilde{A}_{\Phi}$ the tension biquaternion and $\tilde J_{\Phi,\mathrm{eg}}$ the charge–current biquaternion. On its
 left is the field, on its right the charges and currents, and the relation says that the sources are
 the bigradient of the field.
 
@@ -82,7 +82,7 @@ Two things must be said about the name, and the corpus says them rather than let
 A **monochromatic** field is one whose time dependence is a single exponential,
 
 $$
-\tilde{A}(\tau,r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z) = \tilde{Ξ}(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z,\omega)\,\exp(-i\omega\tau),
+\tilde{A}_{\Phi}(\tau,r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z) = \tilde{Ξ}(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z,\omega)\,\exp(-i\omega\tau),
 \qquad \omega > 0 ,
 $$
 
@@ -90,7 +90,7 @@ so that $\partial/\partial \tau \to -i\omega$. Substituting into the postulate g
 equation**,
 
 $$
-\boxed{\;\nabla^{-}_{\omega}\tilde{Ξ} = i\,\tilde J_{\mathrm{eg}}(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z,\omega),
+\boxed{\;\nabla^{-}_{\omega}\tilde{Ξ} = i\,\tilde J_{\Phi,\mathrm{eg}}(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z,\omega),
 \qquad
 \nabla^{\pm}_{\omega} = \omega \pm \nabla\;}
 $$
@@ -145,14 +145,14 @@ monochromatic source,
 
 $$
 \tilde{Ξ}(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z,\omega)
-= i\,\nabla^{+}_{\omega}\left\{\tilde J_{\mathrm{eg}}(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z,\omega) * \tilde{Ξ}_{\mathrm{sp}}(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z,\omega)\right\},
+= i\,\nabla^{+}_{\omega}\left\{\tilde J_{\Phi,\mathrm{eg}}(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z,\omega) * \tilde{Ξ}_{\mathrm{sp}}(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z,\omega)\right\},
 $$
 
 so that a source distribution is an emitter whose field is the $\omega$-gradient of a Helmholtz
 potential. The class of solutions the paper works in is the biquaternions whose components are
 generalized functions of slow growth — tempered distributions — which is what makes the convolved
 sources here and the layered sources of the light section below legitimate rather than formal. For a
-**concentrated charge**, $\tilde J_{\mathrm{eg}} = -i\,\delta(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)$, the kernel is
+**concentrated charge**, $\tilde J_{\Phi,\mathrm{eg}} = -i\,\delta(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)$, the kernel is
 evaluated at once and the result is the **elementary photon**: a spherical EGM wave whose scalar and
 vector amplitudes are
 
@@ -245,7 +245,7 @@ Because the source enters linearly, the representations compose. Every emitted m
 a superposition of elementary photons weighted by the source,
 
 $$
-\tilde{Ξ}(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z,\omega) = i\,\tilde J_{\mathrm{eg}}(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z,\omega) * \tilde{Ξ}^{0}(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z,\omega),
+\tilde{Ξ}(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z,\omega) = i\,\tilde J_{\Phi,\mathrm{eg}}(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z,\omega) * \tilde{Ξ}^{0}(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z,\omega),
 $$
 
 the convolution being over the spatial variables, so the elementary photon is the kernel of the map
@@ -255,7 +255,7 @@ contributions into what it calls light,
 $$
 \Lambda(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z,\tau) = \int_{\omega_{1}}^{\omega_{2}} \tilde{Ξ}(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z,\omega)\,\exp(-i\omega\tau)\,d\omega ,
 \qquad
-\tilde{\Sigma}_{\Lambda} = \Lambda\Lambda^{*} ,
+\tilde{\Sigma}_{\Psi,\Lambda} = \Lambda\Lambda^{*} ,
 $$
 
 and the free-photon cloud is the same construction with the four plane modes weighted and summed,
@@ -265,7 +265,7 @@ $$
 \left\{\Omega_{j}(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z,\omega) * \int_{\|\vec k\|=\omega} b_{j}(\vec k,\omega)\,
 \tilde{Ξ}_{\vec kj}(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z,\omega)\,dS(\vec k)\right\} d\omega ,
 \qquad
-\tilde{\Sigma}_{\mathrm{O}} = \tfrac12\,\mathrm{O}\,\mathrm{O}^{*} ,
+\tilde{\Sigma}_{\Psi,\mathrm{O}} = \tfrac12\,\mathrm{O}\,\mathrm{O}^{*} ,
 $$
 
 with $b_{j}$ and $\Omega_{j}$ arbitrary regular functions and biquaternions that admit the
@@ -373,8 +373,8 @@ reads its monochromatic solutions as **photons**. The programme's own statement 
 line: take the classical biquaternion form of Maxwell's equations, whose field biquaternion is
 required to have no scalar part, and **drop that restriction**; the returned scalar part is the ether
 density and the vector part carries the electric and gravimagnetic fields. The algebra is the
-companion articles': the postulate $\nabla^{+}\tilde{A} = \tilde J_{\mathrm{eg}}$, the monochromatic reduction
-$\nabla^{-}_{\omega}\tilde{Ξ} = i\tilde J_{\mathrm{eg}}$ with
+companion articles': the postulate $\nabla^{+}\tilde{A}_{\Phi} = \tilde J_{\Phi,\mathrm{eg}}$, the monochromatic reduction
+$\nabla^{-}_{\omega}\tilde{Ξ} = i\tilde J_{\Phi,\mathrm{eg}}$ with
 $\nabla^{\pm}_{\omega} = \omega \pm \nabla$, and the factorisation
 $\nabla^{-}_{\omega}\circ\nabla^{+}_{\omega} = \omega^{2} + \Delta$, which makes the first-order
 photon equation invertible by the outgoing Helmholtz kernel
@@ -405,15 +405,15 @@ clearest statement of what the programme assumes.
 
 | Symbol | Meaning |
 |---|---|
-| $\tilde{A} = i\alpha - i\tilde F$ | Biquaternion of tension; $\alpha$ is the density of the ether |
+| $\tilde{A}_{\Phi} = i\alpha - i\tilde F$ | Biquaternion of tension; $\alpha$ is the density of the ether |
 | $\alpha$ | Scalar part of the tension, named the density of the ether |
-| $\tilde J_{\mathrm{eg}} = i\rho + \vec J$ | Charge–current biquaternion of the programme; not the corpus four-current |
+| $\tilde J_{\Phi,\mathrm{eg}} = i\rho + \vec J$ | Charge–current biquaternion of the programme; not the corpus four-current |
 | $\nabla^{\pm} = \partial/\partial \tau \pm i\nabla$ | Mutual complex gradients of the postulate |
 | $\nabla = \vec e_x\,\partial/\partial r_x+\vec e_y\,\partial/\partial r_y+\vec e_z\,\partial/\partial r_z$ | Pure-vector gradient, left quaternion multiplication |
 | $\nabla\circ\nabla = -\Delta$ | The square of $\nabla$ |
 | $\nabla^{\pm}_{\omega} = \omega \pm \nabla$ | The paper's $\omega$-gradients; $\nabla^{\pm}_{\omega} = iD_{\mp}$ at fixed frequency |
-| $\tilde{Ξ}(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z,\omega)$ | Biamplitude, $\tilde{A}(\tau,r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z) = \tilde{Ξ}(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z,\omega)\exp(-i\omega\tau)$ |
-| $\nabla^{-}_{\omega}\tilde{Ξ} = i\tilde J_{\mathrm{eg}}$ | The photon equation |
+| $\tilde{Ξ}(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z,\omega)$ | Biamplitude, $\tilde{A}_{\Phi}(\tau,r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z) = \tilde{Ξ}(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z,\omega)\exp(-i\omega\tau)$ |
+| $\nabla^{-}_{\omega}\tilde{Ξ} = i\tilde J_{\Phi,\mathrm{eg}}$ | The photon equation |
 | $\nabla^{-}_{\omega}\circ\nabla^{+}_{\omega} = \omega^{2} + \Delta$ | Helmholtz factorisation of the photon equation |
 | $\tilde{Ξ}_{\mathrm{sp}} = -\exp(\,i\omega r)/(4\pi r)$ | Outgoing Helmholtz kernel, radiation condition, $(\Delta+\omega^{2})\tilde{Ξ}_{\mathrm{sp}} = \delta$ |
 | $\tilde{Ξ}^{0}$ | Elementary photon, the kernel of the source-to-field map |
@@ -423,8 +423,8 @@ clearest statement of what the programme assumes.
 | $\xi = \exp(\,i(\vec k,r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z))$ | Plane Helmholtz potential |
 | $\alpha = -k_{j}\xi$ | Ether-density amplitude of the $j$-th mode; zero iff $\vec e_{j}\perp\vec k$ |
 | $\vec u_x = (r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)/r$ | Radial unit vector |
-| $\Lambda$, $\tilde{\Sigma}_{\Lambda}$ | Light and its energy–momentum, a spectral integral over the band |
-| $\mathrm{O}$, $\tilde{\Sigma}_{\mathrm{O}}$ | Free-photon cloud and its energy–momentum (the paper writes omicron) |
+| $\Lambda$, $\tilde{\Sigma}_{\Psi,\Lambda}$ | Light and its energy–momentum, a spectral integral over the band |
+| $\mathrm{O}$, $\tilde{\Sigma}_{\Psi,\mathrm{O}}$ | Free-photon cloud and its energy–momentum (the paper writes omicron) |
 | $b_{j}$, $\Omega_{j}$ | Arbitrary angular weight and structural biquaternion of the $j$-th free-photon type |
 | $\tilde{Ξ}^{*} = \bar{s} - \bar{\vec V}$ | Vector-negating, coefficient-conjugating conjugation |
 
@@ -434,7 +434,7 @@ clearest statement of what the programme assumes.
   Applied Physics* **7**(1) (2020) 96–101, doi:10.14445/23500301/IJAP-V7I1P114, the paper recorded
   here.
 - [The Electro-Gravimagnetic Field and the Magnetic-Charge–Mass Hypothesis](the-electro-gravimagnetic-field-and-the-magnetic-charge-mass-hypothesis.html), for the programme's field
-  theory, its postulate $\nabla^{+}\tilde{A} = \tilde J_{\mathrm{eg}}$, the magnetic-charge–mass hypothesis, its
+  theory, its postulate $\nabla^{+}\tilde{A}_{\Phi} = \tilde J_{\Phi,\mathrm{eg}}$, the magnetic-charge–mass hypothesis, its
   Newton-law analogues and its empirical claims.
 - [Harmonic Elementary Particles and the Periodic System of Atoms](harmonic-elementary-particles-and-the-periodic-system-of-atoms.html), for the same factorisation applied
   to the charge–current field, the Helmholtz potentials and the place of a free frequency in the

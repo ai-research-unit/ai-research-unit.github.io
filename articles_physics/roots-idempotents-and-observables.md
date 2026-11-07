@@ -87,7 +87,7 @@ $$
 
 which is the **Bloch sphere** of the pure states. The normalisation is $2\operatorname{Sc}\tilde\Pi=1$, which the $2\times2$ reading calls trace one, and the norm vanishes, so the state is on the boundary of the positive cone. The trivial cases $e_t$ and $0$ are the degenerate endpoints of the halving map, not states of the trace-one slice.
 
-The same element carries the other state readings. The von Neumann entropy of a state $\tilde{Ϛ}$ is a monotone function of the deviation $\operatorname{Sc}(\tilde{Ϛ}^2-\tilde{Ϛ})$, which vanishes exactly on the idempotent states, and the Fisher information with respect to the Bloch radius diverges on them. The **pure state**, the **zero-entropy state**, the **zero-divisor state** and the **perfectly resolvable state** are four names for one element.
+The same element carries the other state readings. The von Neumann entropy of a state $\tilde{Ϛ}_{\Psi}$ is a monotone function of the deviation $\operatorname{Sc}(\tilde{Ϛ}_{\Psi}^2-\tilde{Ϛ}_{\Psi})$, which vanishes exactly on the idempotent states, and the Fisher information with respect to the Bloch radius diverges on them. The **pure state**, the **zero-entropy state**, the **zero-divisor state** and the **perfectly resolvable state** are four names for one element.
 
 > **The nontrivial Hermitian idempotents are the pure states** of the informational sector, and the two idempotents of a nontrivial Hermitian root are the two eigenstates of the observable.
 
@@ -161,7 +161,7 @@ The Hermitian roots are read as the involutive observables, the nontrivial Hermi
 | --- | --- |
 | $\tilde{Ζ}$ | a root of a central value |
 | $\tilde\Pi$, $\tilde\Pi_\pm$ | an idempotent and the two members of a complete pair |
-| $\tilde{Ϛ}$ | a general state |
+| $\tilde{Ϛ}_{\Psi}$ | a general state |
 | $\tilde\Pi_\pm(\tilde{Ζ})=\tfrac12(e_t\pm\tilde{Ζ})$ | the halving map and its two branches |
 | $\mathbb{B}_{\Psi}$ and $\mathbb{B}_{\Phi}$ | the informational (Hermitian) and material (anti-Hermitian) sectors |
 | $\operatorname{Sc}$, $\operatorname{Tr}=2\operatorname{Sc}$ | the scalar part and the trace |
@@ -182,7 +182,7 @@ The Hermitian roots are read as the involutive observables, the nontrivial Hermi
 - [Element and Operator Representations: The Three Actions](element-and-operator-representations-the-three-actions.html), for the three actions and the operator reading of the multiplication.
 - [The Roots of a General Element: Mass, Frames and the Mass Shell](the-roots-of-a-general-element-mass-frames-and-the-mass-shell.html), for the general value and the failure of the square-root formula off the cone.
 - [The Local Complex Structure and the Speed of Light](the-local-complex-structure-and-the-speed-of-light.html), for the local complex structure of the material sector and the speed of light.
-- [The S-Matrix in Biquaternionic Form](the-s-matrix-in-biquaternionic-form.html), for the $*$-unitary root $\tilde S\tilde S^{*}=e_t$ of a single mode.
+- [The S-Matrix in Biquaternionic Form](the-s-matrix-in-biquaternionic-form.html), for the $*$-unitary root $\tilde S_{\Psi}\tilde S_{\Psi}^{*}=e_t$ of a single mode.
 - [The Two-Sheeted Cover and the Topology of Boosts in Biquaternionic Form](the-two-sheeted-cover-and-the-topology-of-boosts-in-biquaternionic-form.html), for $R(2\pi)=-e_t$ and the double cover.
 - [Von Neumann Entropy and the Biquaternion Norm](von-neumann-entropy-and-the-biquaternion-norm.html) and [Fisher Information and the Biquaternion Norm](fisher-information-and-the-biquaternion-norm.html), for the zero-entropy and perfectly resolvable readings of the idempotent.
 - [The Physical Interpretation of the 12 Products](the-physical-interpretation-of-the-12-products.html), for the full comparison of the twelve root sets.

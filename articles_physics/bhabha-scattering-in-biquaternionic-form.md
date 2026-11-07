@@ -267,7 +267,7 @@ The two processes are therefore not merely analogous; they are one amplitude rea
 
 ### The amplitude as material-sector currents
 
-As in the Møller case, each current is the set of components of the framework's conserved **material-sector current** $\tilde J\in\mathbb{B}_{\Phi}$ of the minimal-coupling article, and the propagators $1/s$ and $1/t$ come from the framework's quantized Maxwell field. The scattering term contracts two currents through a spacelike photon; the annihilation term contracts a single pair–current through a timelike photon. The full amplitude is again the framework's current, with the framework's photon, in the two possible channels.
+As in the Møller case, each current is the set of components of the framework's conserved **material-sector current** $\tilde J_{\Phi}\in\mathbb{B}_{\Phi}$ of the minimal-coupling article, and the propagators $1/s$ and $1/t$ come from the framework's quantized Maxwell field. The scattering term contracts two currents through a spacelike photon; the annihilation term contracts a single pair–current through a timelike photon. The full amplitude is again the framework's current, with the framework's photon, in the two possible channels.
 
 ### The relative sign is the antisymmetry of the mode algebra
 
@@ -388,7 +388,7 @@ In the biquaternion framework the amplitude is the contraction of material-secto
 | $\overline{|\mathcal M|^2}$ | Spin-averaged squared matrix element, factor $\tfrac14$ included |
 | $T_t,T_s,T_{ts}$ | Trace combinations of the spin sum |
 | $\mathrm{Tr}$ | Trace of the action on the four-dimensional complex space $\mathbb{B}$ |
-| $\tilde J\in\mathbb{B}_{\Phi}$ | Framework's material-sector current |
+| $\tilde J_{\Phi}\in\mathbb{B}_{\Phi}$ | Framework's material-sector current |
 | $\mathcal C$ | Charge-conjugation real structure, pairing an element with its conjugate |
 | $\varepsilon=(1,-1,-1,-1)$ | Sign vector of the frame |
 | $i^2=-1$ | Central imaginary of $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ |

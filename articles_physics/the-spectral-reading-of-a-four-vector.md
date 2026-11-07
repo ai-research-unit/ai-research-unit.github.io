@@ -19,7 +19,7 @@ The statement is a reading, not a theorem. The spectrum, the eigenprojections an
 
 ## The Eigenpair
 
-With $\tilde P=i\frac{E}{c}e_t+\vec p$ and $B=\lvert\vec p\rvert$, the two eigenvalues are
+With $\tilde P_{\Phi}=i\frac{E}{c}e_t+\vec p$ and $B=\lvert\vec p\rvert$, the two eigenvalues are
 
 $$
 \boxed{\;\lambda_\pm=i\left(\frac{E}{c}\pm B\right)
@@ -59,7 +59,7 @@ This is the **Doppler pair**: the two frequencies are the rest frequency $mc$ sc
 | sum | $\nu_++\nu_-=2E/c$ | twice the energy |
 | difference | $\nu_+-\nu_-=2\lvert\vec p\rvert$ | twice the momentum |
 | product | $\nu_+\nu_-=m^2c^2$ | the mass squared |
-| norm | $\lambda_+\lambda_-=\langle\tilde P\rangle_{\natural}=-m^2c^2$ | the interval |
+| norm | $\lambda_+\lambda_-=\langle\tilde P_{\Phi}\rangle_{\natural}=-m^2c^2$ | the interval |
 | ratio | $\nu_+/\nu_-=e^{2\theta_{\mathrm{rpd}}}$ | the squared Doppler factor |
 
 The product is the invariant. It does not depend on the frame and it does not depend on the direction of $\vec p$; it is the mass shell. The two factors separately do depend on the frame, and their dependence is exactly the Doppler rescaling.
@@ -83,21 +83,21 @@ $$
 and the decomposition is
 
 $$
-\boxed{\;\tilde P=\lambda_+\tilde\Pi_++\lambda_-\tilde\Pi_-
+\boxed{\;\tilde P_{\Phi}=\lambda_+\tilde\Pi_++\lambda_-\tilde\Pi_-
 =i\,mc\left(e^{\theta_{\mathrm{rpd}}}\tilde\Pi_++e^{-\theta_{\mathrm{rpd}}}\tilde\Pi_-\right)\;}.
 $$
 
 Each term is an imaginary multiple of a minimal idempotent, hence a null element. The two terms are the two **lightlike components** of the momentum, and the coefficients are the Doppler-scaled rest frequencies. In light-cone coordinates the writing is the standard split of a timelike vector into two null vectors,
 
 $$
-\tilde P=k_++k_-,
+\tilde P_{\Phi}=k_++k_-,
 \qquad
 k_\pm=i\,mc\,e^{\pm\theta_{\mathrm{rpd}}}\,\tilde\Pi_\pm,
 \qquad
 \langle k_\pm\rangle_{\natural}=0.
 $$
 
-The decomposition is unique up to the exchange of the two labels, $(\lambda_+,\tilde\Pi_+)\leftrightarrow(\lambda_-,\tilde\Pi_-)$, which leaves $\tilde P$ unchanged. No physical statement may depend on which term is called $+$.
+The decomposition is unique up to the exchange of the two labels, $(\lambda_+,\tilde\Pi_+)\leftrightarrow(\lambda_-,\tilde\Pi_-)$, which leaves $\tilde P_{\Phi}$ unchanged. No physical statement may depend on which term is called $+$.
 
 The two idempotents are the pure states along $-\vec u_p$ and $+\vec u_p$ respectively: $\tilde\Pi_+$ has Bloch vector $-\vec u_p$ and $\tilde\Pi_-$ has Bloch vector $+\vec u_p$. The momentum therefore selects an axis, and the two null components are the two states on that axis. The axis is the direction of motion, and the pair of states is the pair of lightlike directions along it.
 
@@ -160,7 +160,7 @@ $$
 The eigenvalues are still distinct, because $B=\lvert\vec p\rvert=E/c\neq0$. The element is a zero divisor with distinct eigenvalues, and the spectral writing survives with one term,
 
 $$
-\tilde P=\lambda_+\tilde\Pi_+=2i\frac{E}{c}\tilde\Pi_+.
+\tilde P_{\Phi}=\lambda_+\tilde\Pi_+=2i\frac{E}{c}\tilde\Pi_+.
 $$
 
 The one-term writing is the spectral form of a null momentum, and it is the zero-divisor regime of the eigenvalue decomposition, not the exceptional regime. The massless limit of the pair is a limit of the coefficients, not a failure of the decomposition.
@@ -170,7 +170,7 @@ The one-term writing is the spectral form of a null momentum, and it is the zero
 The Hamilton pairing writes the four-momentum as a central modulus times a unit:
 
 $$
-\tilde P=\Rho\exp(\vec U\Theta),
+\tilde P_{\Phi}=\Rho\exp(\vec U\Theta),
 \qquad
 \Rho=imc,
 \qquad
@@ -222,7 +222,7 @@ The third row is the degeneracy. When the eigenvalues coincide, the eigenproject
 The element is the spectrum plus the eigenprojections,
 
 $$
-\tilde P=\lambda_+\tilde\Pi_++\lambda_-\tilde\Pi_-,
+\tilde P_{\Phi}=\lambda_+\tilde\Pi_++\lambda_-\tilde\Pi_-,
 $$
 
 and the two objects play different roles. The eigenvalues are the coefficients; the idempotents are the frame. A spectral measurement reads the coefficients and leaves the frame.
@@ -255,15 +255,15 @@ No dynamics is supplied. The article reads one element at one instant; it does n
 
 ## Summary
 
-- The four-momentum $\tilde P=i\frac{E}{c}e_t+\vec p$ has eigenvalues $\lambda_\pm=i(E/c\pm\lvert\vec p\rvert)=i\,mc\,e^{\pm\theta_{\mathrm{rpd}}}$.
+- The four-momentum $\tilde P_{\Phi}=i\frac{E}{c}e_t+\vec p$ has eigenvalues $\lambda_\pm=i(E/c\pm\lvert\vec p\rvert)=i\,mc\,e^{\pm\theta_{\mathrm{rpd}}}$.
 - The pair $\nu_\pm=mc\,e^{\pm\theta_{\mathrm{rpd}}}$ is the Doppler pair; its ratio is $e^{2\theta_{\mathrm{rpd}}}$ and its product is $m^2c^2$.
 - The norm is $\lambda_+\lambda_-=-m^2c^2$; the mass is read from the product, not from either eigenvalue.
 - The eigenprojections are the Hermitian idempotents $\tilde\Pi_\pm=\tfrac12(e_t\mp i\vec u_p)$, the two pure states along the direction of motion.
-- The two-term writing is $\tilde P=i\,mc(e^{\theta_{\mathrm{rpd}}}\tilde\Pi_++e^{-\theta_{\mathrm{rpd}}}\tilde\Pi_-)$; the two terms are the two null components of one momentum.
+- The two-term writing is $\tilde P_{\Phi}=i\,mc(e^{\theta_{\mathrm{rpd}}}\tilde\Pi_++e^{-\theta_{\mathrm{rpd}}}\tilde\Pi_-)$; the two terms are the two null components of one momentum.
 - The terms are not two particles and not two energies; their sum is twice the energy and their difference is twice the momentum.
 - A boost along $\vec p$ rescales the pair reciprocally; the product is invariant. A rotation leaves the pair unchanged and rotates the axis.
 - At rest the pair coalesces and the two-term writing is not unique; at $m=0$ one coefficient vanishes and the writing has one term.
-- The Hamilton reading is $\tilde P=\Rho e^{\vec U\Theta}$ with $\Rho=imc$, $\Theta=-i\theta_{\mathrm{rpd}}$ and $\vec U=\vec u_p$: the mass is the modulus, the rapidity is the angle and the direction is the axis.
+- The Hamilton reading is $\tilde P_{\Phi}=\Rho e^{\vec U\Theta}$ with $\Rho=imc$, $\Theta=-i\theta_{\mathrm{rpd}}$ and $\vec U=\vec u_p$: the mass is the modulus, the rapidity is the angle and the direction is the axis.
 - The spectrum fixes the energy and the magnitude of the momentum, not the direction; it is blind to rotations and to the reality of the vector part, and it leaves the eigenprojections free at a degeneracy.
 - The algebra gives the frequencies, not a particle count, a numerical mass, a dynamics or a mass spectrum.
 
@@ -271,7 +271,7 @@ No dynamics is supplied. The article reads one element at one instant; it does n
 
 | Symbol | Meaning |
 | --- | --- |
-| $\tilde P=i\frac{E}{c}e_t+\vec p$ | the four-momentum of the material sector |
+| $\tilde P_{\Phi}=i\frac{E}{c}e_t+\vec p$ | the four-momentum of the material sector |
 | $E$, $\vec p$, $m$ | energy, spatial momentum and mass |
 | $B=\lvert\vec p\rvert$ | the modulus of the spatial momentum |
 | $\vec u_p=\vec p/B$ | the direction of motion, a real unit vector |
@@ -280,8 +280,8 @@ No dynamics is supplied. The article reads one element at one instant; it does n
 | $\nu_\pm=\lambda_\pm/i=mc\,e^{\pm\theta_{\mathrm{rpd}}}$ | the Doppler pair |
 | $\vec{Ζ}=-i\vec u_p$ | the pure root of $+1$ of the momentum |
 | $\tilde\Pi_\pm=\tfrac12(e_t\pm\vec{Ζ})=\tfrac12(e_t\mp i\vec u_p)$ | the eigenprojections, Hermitian idempotents |
-| $\langle\tilde P\rangle_{\natural}=-m^2c^2$ | the biquaternion norm, the interval |
-| $k_\pm=i\,mc\,e^{\pm\theta_{\mathrm{rpd}}}\tilde\Pi_\pm$ | the two null components of $\tilde P$ |
+| $\langle\tilde P_{\Phi}\rangle_{\natural}=-m^2c^2$ | the biquaternion norm, the interval |
+| $k_\pm=i\,mc\,e^{\pm\theta_{\mathrm{rpd}}}\tilde\Pi_\pm$ | the two null components of $\tilde P_{\Phi}$ |
 
 ## Further Reading
 

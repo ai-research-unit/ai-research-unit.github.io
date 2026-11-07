@@ -10,7 +10,7 @@ The article is careful about what is derived and what is imported. The value $g=
 
 Here $1/k_{m_e}=\hbar/(m_ec)$ is the electron mass length.
 
-The conventions are those of the foundational articles and of the two companion articles of this subcategory. The biquaternion algebra is $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, with quaternion basis $e_t = 1, \vec e_x, \vec e_y, \vec e_z$, $\vec e_k^2 = -e_t$, $\vec e_\mu \vec e_\nu=\epsilon_{\mu\nu\lambda}\vec e_\lambda$ for $\mu\neq\nu$, and central imaginary $i$. The material sector is the anti-Hermitian subspace $\mathbb{B}_{\Phi}$, the informational sector the Hermitian subspace $\mathbb{B}_{\Psi}$, and $\mathbb{B}_{H}$ is the real-quaternion subspace of the rotation rotors. The magnetic moment and the angular momentum are material axial vectors, $\vec\mu = \sum_k \mu_k\vec e_k$ and $\vec S = \sum_k S_k\vec e_k$ in $\mathbb{B}_{H}$; the intrinsic spin observable is the $\mathbb{B}_{\Psi}$ element $\tilde{S}_k =\frac{m\,c}{2\,k_m}i\vec e_k$.
+The conventions are those of the foundational articles and of the two companion articles of this subcategory. The biquaternion algebra is $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, with quaternion basis $e_t = 1, \vec e_x, \vec e_y, \vec e_z$, $\vec e_k^2 = -e_t$, $\vec e_\mu \vec e_\nu=\epsilon_{\mu\nu\lambda}\vec e_\lambda$ for $\mu\neq\nu$, and central imaginary $i$. The material sector is the anti-Hermitian subspace $\mathbb{B}_{\Phi}$, the informational sector the Hermitian subspace $\mathbb{B}_{\Psi}$, and $\mathbb{B}_{H}$ is the real-quaternion subspace of the rotation rotors. The magnetic moment and the angular momentum are material axial vectors, $\vec\mu = \sum_k \mu_k\vec e_k$ and $\vec S = \sum_k S_k\vec e_k$ in $\mathbb{B}_{H}$; the intrinsic spin observable is the $\mathbb{B}_{\Psi}$ element $\tilde{S}_{\Psi,k} =\frac{m\,c}{2\,k_m}i\vec e_k$.
 
 ## The Gyromagnetic Factor
 
@@ -161,9 +161,9 @@ $$
 A rotation through the angle $\theta$ about $\vec u$ is the exponential $\tilde u = \exp(\tfrac{\theta}{2}\sum_k \vec u_k\vec e_k) = \exp(-\theta\,\vec u_kg_k)$, in which the coefficient of the rotation generator $\tfrac{1}{2}\sum_k \vec u_k\vec e_k$ is $\theta/2$ while the *rotation angle* is $\theta$. The observable intrinsic angular momentum is obtained from the generator by the same central $i$ that exchanges the sectors,
 
 $$
-\tilde{S}_k = -\,\frac{m\,c\,i\,g_{k}}{k_m}=\frac{m\,c}{2\,k_m}\,i \vec e_k \in  \mathbb{B}_{\Psi} ,
+\tilde{S}_{\Psi,k} = -\,\frac{m\,c\,i\,g_{k}}{k_m}=\frac{m\,c}{2\,k_m}\,i \vec e_k \in  \mathbb{B}_{\Psi} ,
 \qquad
-[\,\tilde{S}_i,\tilde{S}_j\,] =\frac{m\,c\,i\,\epsilon_{ijk}\,\tilde{S}_{k}}{k_m},
+[\,\tilde{S}_{\Psi,i},\tilde{S}_{\Psi,j}\,] =\frac{m\,c\,i\,\epsilon_{ijk}\,\tilde{S}_{\Psi,k}}{k_m},
 $$
 
 and its eigenvalues are $\pm\frac{m\,c}{2\,k_m}$. The half in the angular-momentum generator $g_k = -\tfrac{1}{2}\vec e_k$ is the half-integer weight of the spin; the same half is the reason the intrinsic angular momentum of a spin comes in units of $\frac{m\,c}{2\,k_m}$ and not $\frac{m\,c}{k_m}$.
@@ -211,10 +211,10 @@ The factor two is therefore not a dynamical coincidence of a particular distribu
 
 ### The Intrinsic Coupling
 
-The same factor appears in the coupling of the intrinsic moment to the field. With the spin observable $\tilde{S}_k =\frac{m\,c}{2\,k_m}i\vec e_k$ and the magnetic induction $\vec B = \sum_k B_k\vec e_k$, the spin–field coupling is
+The same factor appears in the coupling of the intrinsic moment to the field. With the spin observable $\tilde{S}_{\Psi,k} =\frac{m\,c}{2\,k_m}i\vec e_k$ and the magnetic induction $\vec B = \sum_k B_k\vec e_k$, the spin–field coupling is
 
 $$
-\tilde{S}_kB_k =\frac{m\,c}{2\,k_m}\,i\vec B \in  \mathbb{B}_{\Psi} ,
+\tilde{S}_{\Psi,k}B_k =\frac{m\,c}{2\,k_m}\,i\vec B \in  \mathbb{B}_{\Psi} ,
 $$
 
 the Hermitian element that the companion article on the Dirac non-relativistic limit identifies with the Pauli spin term $-\tfrac{ϙ c/k_m}{2}\boldsymbol{\sigma}\cdot\vec B$. Writing it as $-\vec\mu\cdot\vec B$ with $\vec\mu = (ϙ/m)\vec S$ gives the intrinsic gyromagnetic ratio $ϙ/m$, and the factor two relative to the convective ratio $ϙ/2m$ is the same half-weight of the spin: the field couples to the full vector slot $i\vec e_k$ with weight one, while the angular momentum of the spin is generated through the half-unit $g_k = -\tfrac{1}{2}\vec e_k$. The mismatch of the whole against the half is the factor two.
@@ -227,12 +227,12 @@ It is worth stating precisely what this argument does and does not fix. It fixes
 
 ### The Commutator Algebra
 
-The factor two is visible in the commutation relations, and this is the sharpest algebraic check. With the generator $g_k = -\tfrac{1}{2}\vec e_k$ and the observable $\tilde{S}_k = -\frac{m\,c\,i\,g_{k}}{k_m}$,
+The factor two is visible in the commutation relations, and this is the sharpest algebraic check. With the generator $g_k = -\tfrac{1}{2}\vec e_k$ and the observable $\tilde{S}_{\Psi,k} = -\frac{m\,c\,i\,g_{k}}{k_m}$,
 
 $$
 [\,g_i,g_j\,] = -\,\epsilon_{ijk}\,g_k,
 \qquad
-[\,\tilde{S}_i,\tilde{S}_j\,] =\frac{m\,c\,i\,\epsilon_{ijk}\,\tilde{S}_{k}}{k_m},
+[\,\tilde{S}_{\Psi,i},\tilde{S}_{\Psi,j}\,] =\frac{m\,c\,i\,\epsilon_{ijk}\,\tilde{S}_{\Psi,k}}{k_m},
 $$
 
 which are the same relation transported across the sector exchange. The numerical check is immediate: in the quaternion basis $\vec e_\mu \vec e_\nu=\epsilon_{\mu\nu\lambda}\vec e_\lambda$ for $\mu\neq\nu$, so $[g_\mu,g_\nu] = \tfrac{1}{4}[\vec e_\mu,\vec e_\nu] = \tfrac{1}{2}\epsilon_{\mu\nu\lambda}\vec e_\lambda = -\epsilon_{\mu\nu\lambda}g_\lambda$, and the multiplication by $-\frac{m\,c\,i}{k_m}$ converts the structure constant $-\epsilon_{ijk}$ into the $\frac{m\,c\,i\,\epsilon_{ijk}}{k_m}$ of the spin algebra. The structure constants agree, and their sign and magnitude are precisely what the half-unit produces; a full-unit generator would have given a commutator twice as large and an angular momentum in units of $\frac{m\,c}{k_m}$ rather than $\frac{m\,c}{2\,k_m}$.
@@ -295,7 +295,7 @@ g_k = -\frac{1}{2}\,\vec e_k,
 [\,g_i,g_j\,] = -\epsilon_{ijk}\,g_k,
 $$
 
-with observable $\tilde{S}_k = -\frac{m\,c\,i\,g_{k}}{k_m}=\frac{m\,c}{2\,k_m}i\vec e_k$, and the rotation rotor $\tilde u = \exp(\tfrac{\theta}{2}\sum_k \vec u_k\vec e_k)$ is a double cover, $\tilde u(\theta+2\pi) = -\tilde u(\theta)$. A material vector transforms with weight one under the rotation and returns after $2\pi$; an intrinsic state transforms with weight one half and returns only after $4\pi$. The electromagnetic coupling is the central $\mathrm{U}(1)$ phase and acts with weight one on both. The gyromagnetic ratio is the ratio of the two weights,
+with observable $\tilde{S}_{\Psi,k} = -\frac{m\,c\,i\,g_{k}}{k_m}=\frac{m\,c}{2\,k_m}i\vec e_k$, and the rotation rotor $\tilde u = \exp(\tfrac{\theta}{2}\sum_k \vec u_k\vec e_k)$ is a double cover, $\tilde u(\theta+2\pi) = -\tilde u(\theta)$. A material vector transforms with weight one under the rotation and returns after $2\pi$; an intrinsic state transforms with weight one half and returns only after $4\pi$. The electromagnetic coupling is the central $\mathrm{U}(1)$ phase and acts with weight one on both. The gyromagnetic ratio is the ratio of the two weights,
 
 $$
 \frac{\mu}{S} = \frac{ϙ}{2m}\cdot\frac{w_{\mathrm{U}(1)}}{w_{\rm rot}},
@@ -323,9 +323,9 @@ The factor two is thus the double-cover factor of the biquaternion rotor, an alg
 | $\rho_c$, $\rho_m$ | Charge and mass densities |
 | $\tfrac{1}{2}\sum_k \vec u_k\vec e_k$ | Rotation generator; the rotor $\tilde u$ is its exponential |
 | $g_k = -\tfrac{1}{2}\vec e_k$ | Intrinsic angular-momentum generator (half-unit) |
-| $\tilde{S}_k = -\frac{m\,c\,i\,g_{k}}{k_m}=\frac{m\,c}{2\,k_m}i\vec e_k$ | Spin observable in $\mathbb{B}_{\Psi}$ |
+| $\tilde{S}_{\Psi,k} = -\frac{m\,c\,i\,g_{k}}{k_m}=\frac{m\,c}{2\,k_m}i\vec e_k$ | Spin observable in $\mathbb{B}_{\Psi}$ |
 | $[g_i,g_j] = -\epsilon_{ijk}g_k$ | Generator algebra |
-| $[\tilde{S}_i,\tilde{S}_j] =\frac{m\,c\,i\,\epsilon_{ijk}\,\tilde{S}_{k}}{k_m}$ | Spin algebra |
+| $[\tilde{S}_{\Psi,i},\tilde{S}_{\Psi,j}] =\frac{m\,c\,i\,\epsilon_{ijk}\,\tilde{S}_{\Psi,k}}{k_m}$ | Spin algebra |
 | $\tilde u(\theta,\vec u) = \cos\tfrac{\theta}{2}e_t + \sin\tfrac{\theta}{2}\sum_k \vec u_k\vec e_k$ | Rotation rotor (unit real quaternion) |
 | $\tilde u(\theta+2\pi) = -\tilde u(\theta)$ | Double cover |
 | $w_{\mathrm{U}(1)}$, $w_{\rm rot}$ | Central phase weight (one); rotation weight (one or one half) |

@@ -99,12 +99,12 @@ the two gradients of the pair above, and its square is the d'Alembertian on each
 **The symbol.** On the plane wave $\tilde{Ξ}_{\mathrm{sp}}=\tilde{Ξ}_{\mathrm{sp},0}\exp(-iEr'_t+i\vec p\cdot\vec r)$ the gradient acts as left multiplication by the momentum element
 
 $$
-\tilde K=i\tilde P=-E\,e_t+i\vec p ,
+\tilde K=i\tilde P_{\Phi}=-E\,e_t+i\vec p ,
 \qquad
 \tilde K\tilde K^{\natural}=E^2-|\vec p|^{2}=p^{2} ,
 $$
 
-with $\tilde P=i(E/c)\,e_t+\vec p$ the wave biquaternion. The derivatives bring $-E$ from the time coordinate, through $\partial/\partial R_t=-i\partial/\partial r'_t$ followed by $\partial/\partial r'_t\to-iE$, and $+ip_k$ from each spatial one. The symbol of the pair is therefore
+with $\tilde P_{\Phi}=i(E/c)\,e_t+\vec p$ the wave biquaternion. The derivatives bring $-E$ from the time coordinate, through $\partial/\partial R_t=-i\partial/\partial r'_t$ followed by $\partial/\partial r'_t\to-iE$, and $+ip_k$ from each spatial one. The symbol of the pair is therefore
 
 $$
 \mathbb{D}_p:\ (w_L,w_R)\longmapsto\big(\tilde K\,w_R,\ \tilde K^{\natural}w_L\big),
@@ -217,16 +217,16 @@ to machine precision (ratio $1+0i$), and the four two-point amplitudes divided b
 
 ### The Biquaternion Form of the Kernel
 
-Write the wave biquaternion $\tilde P=i(E/c)\,e_t+\vec p$, so that $\tilde P\tilde P^{\natural}=-p^2$. The symbol of the pair on the plane wave $\exp(-iEr'_t+i\vec p\cdot\vec r)$ is the left multiplication by $\tilde K=i\tilde P$ of §*The Pair Operator on the Algebra*, with $\tilde K\tilde K^{\natural}=p^2$, so the symbol squares to $p^2$ times the identity, $(\mathbb{D}_p-m)(\mathbb{D}_p+m)=(p^2-m^{2}\,c^{2})I$, and the kernel of $\mathbb{D}-k_m$ at momentum $p$ is $(\mathbb{D}_p+m)/(p^2-m^{2}\,c^{2})$. The Gaussian weight of the finite-mode section carries $M=-i(\mathbb{D}-k_m)$, so the free two-point amplitude is
+Write the wave biquaternion $\tilde P_{\Phi}=i(E/c)\,e_t+\vec p$, so that $\tilde P_{\Phi}\tilde P_{\Phi}^{\natural}=-p^2$. The symbol of the pair on the plane wave $\exp(-iEr'_t+i\vec p\cdot\vec r)$ is the left multiplication by $\tilde K=i\tilde P_{\Phi}$ of §*The Pair Operator on the Algebra*, with $\tilde K\tilde K^{\natural}=p^2$, so the symbol squares to $p^2$ times the identity, $(\mathbb{D}_p-m)(\mathbb{D}_p+m)=(p^2-m^{2}\,c^{2})I$, and the kernel of $\mathbb{D}-k_m$ at momentum $p$ is $(\mathbb{D}_p+m)/(p^2-m^{2}\,c^{2})$. The Gaussian weight of the finite-mode section carries $M=-i(\mathbb{D}-k_m)$, so the free two-point amplitude is
 
 $$
-S_F(p)=\frac{i(\mathbb{D}_p+m)}{p^2-m^{2}\,c^{2}+i\epsilon}=-\frac{i(\mathbb{D}_p+m)}{\tilde P\tilde P^{\natural}+m^{2}\,c^{2}-i\epsilon}.
+S_F(p)=\frac{i(\mathbb{D}_p+m)}{p^2-m^{2}\,c^{2}+i\epsilon}=-\frac{i(\mathbb{D}_p+m)}{\tilde P_{\Phi}\tilde P_{\Phi}^{\natural}+m^{2}\,c^{2}-i\epsilon}.
 $$
 
 The propagator companion writes its own amplitude as $\mathcal{A}_p+m$ over the same denominator, with $\mathcal{A}_p$ an action whose energy term multiplies $\vec e_x$ on the right and whose momentum terms multiply $\vec e_k$ on the left and $\vec e_y$ on the right, and the symbol here is the left action of the gradient on each part of the pair. The two are not the same map, and they share the pole set because the square of each is multiplication by $p^2$. Written with the units, the numerator $-i(\mathbb{D}_p+m)(w_L,w_R)$ has its two imaginary units multiplied to $-1$ and becomes
 
 $$
-S_F(p):\ (w_L,w_R)\,\longmapsto\frac{\big(\tilde P\,w_R-im\,w_L,\ \tilde P^{\natural}w_L-im\,w_R\big)}{\tilde P\tilde P^{\natural}+m^{2}\,c^{2}-i\epsilon},
+S_F(p):\ (w_L,w_R)\,\longmapsto\frac{\big(\tilde P_{\Phi}\,w_R-im\,w_L,\ \tilde P_{\Phi}^{\natural}w_L-im\,w_R\big)}{\tilde P_{\Phi}\tilde P_{\Phi}^{\natural}+m^{2}\,c^{2}-i\epsilon},
 $$
 
 its denominator being $-p^2+m^2-i\epsilon$; multiplying numerator and denominator by $-1$ returns the preceding form.
@@ -235,7 +235,7 @@ The determinant is therefore that of the operator whose inverse is $S_F$ up to t
 
 $$
 \det\big(\mathbb{D}-k_m\big)=\big(p^2-m^{2}\,c^{2}\big)^4=\det\big(\Box-k_m^{2}\big)
-=\exp\Big[4\!\int\frac{d^4p}{(2\pi)^4}\,\ln\big(\tilde P\tilde P^{\natural}+m^{2}\,c^{2}-i\epsilon\big)\Big],
+=\exp\Big[4\!\int\frac{d^4p}{(2\pi)^4}\,\ln\big(\tilde P_{\Phi}\tilde P_{\Phi}^{\natural}+m^{2}\,c^{2}-i\epsilon\big)\Big],
 $$
 
 formally, up to a field-independent constant and with the standard subtractions understood; the fourth power is a count of the four pairs of opposite eigenvalues, not of any decomposition of the field. The generalities companion's finding is inherited: the algebra names the axis of the deformation, the boundary condition chooses its orientation, and the determinant does not distinguish them.
@@ -347,7 +347,7 @@ The fermionic path integral of the biquaternion spin-$\tfrac12$ field is the Ber
 The Gaussian is the determinant, verified exactly for a general complex $2\times2$ matrix in the convention $\int d\varkappa^*d\varkappa\,\varkappa\varkappa^*=1$; the two-point function is the inverse kernel in the stated index order, $\langle\tilde{Ξ}_{\mathrm{sp},a}\tilde{Ξ}_{\mathrm{sp},b}^{\dagger}\rangle=(M^{-1})_{ab}$, verified to nine decimals; the generating functional is $Z[\eta,\bar\eta]=\det M\exp[-\bar\eta M^{-1}\eta]$ in the Minkowski weight, with the plus sign in the Euclidean one; and for the field the kernel is the companion's amplitude carried on the two parts of the field
 
 $$
-S_F(p):\ (w_L,w_R)\,\longmapsto\frac{\big(\tilde P\,w_R-im\,w_L,\ \tilde P^{\natural}w_L-im\,w_R\big)}{\tilde P\tilde P^{\natural}+m^{2}\,c^{2}-i\epsilon},
+S_F(p):\ (w_L,w_R)\,\longmapsto\frac{\big(\tilde P_{\Phi}\,w_R-im\,w_L,\ \tilde P_{\Phi}^{\natural}w_L-im\,w_R\big)}{\tilde P_{\Phi}\tilde P_{\Phi}^{\natural}+m^{2}\,c^{2}-i\epsilon},
 $$
 
 with the two imaginary units of $-i(\mathbb{D}_p+m)$ multiplied to $-1$. The determinant of the pair operator is $(p^2-m^{2}\,c^{2})^4$, which is $\det(\Box-k_m^{2})$ on the same carrier, because the pair squares to $p^2$, so its eigenvalues are $\pm\mu$ in four opposite pairs and each pair contributes $m^2-\mu^2$.
@@ -373,10 +373,10 @@ The algebra contributes the centrality of the phase, the sector location of the 
 | $\langle\tilde{Ξ}_{\mathrm{sp},a}\tilde{Ξ}_{\mathrm{sp},b}^{\dagger}\rangle=(M^{-1})_{ab}$ | Two-point function (inverse kernel, stated index order); the adjoint's right multiplication cancels from the ratio |
 | $Z[\eta,\bar\eta]=\det M\,\exp[-\bar\eta M^{-1}\eta]$ | Free generating functional in the Minkowski weight; the Euclidean one carries $+\bar\eta M^{-1}\eta$ |
 | $Z_0[\eta,\bar\eta]=\det(\mathbb{D}-k_m)\exp[-\int\bar\eta S_F\eta]$ | Field-level free functional |
-| $\tilde K=i\tilde P=-E\,e_t+i\vec p$, $\tilde K\tilde K^{\natural}=p^2$ | Symbol of the gradient on a plane wave |
+| $\tilde K=i\tilde P_{\Phi}=-E\,e_t+i\vec p$, $\tilde K\tilde K^{\natural}=p^2$ | Symbol of the gradient on a plane wave |
 | $\mathbb{D}_p:\ (w_L,w_R)\mapsto(\tilde K\,w_R,\tilde K^{\natural}w_L)$ | Symbol of the pair operator; its square is $p^2$ times the identity, with $p^2=E^2-|\vec p|^{2}$ |
 | $\mathbb{D}:\ (\tilde{Ξ}_{\mathrm{sp},L},\tilde{Ξ}_{\mathrm{sp},R})\mapsto(\tilde\nabla\tilde{Ξ}_{\mathrm{sp},R},\tilde\nabla^{\natural}\tilde{Ξ}_{\mathrm{sp},L})$ | The pair operator on $\mathbb{B}\oplus\mathbb{B}$, that is $\mathbb{D}_{\tilde\nabla}$: the factor is the material gradient, which is why no subscript is written; $\mathbb{D}^2=\Box I$, and the same pair read at $r'_t=-i\tau$ is written $\mathbb{D}$ still |
-| $S_F(p):\ (w_L,w_R)\mapsto\frac{(\tilde P\,w_R-im\,w_L,\ \tilde P^{\natural}w_L-im\,w_R)}{\tilde P\tilde P^{\natural}+m^{2}\,c^{2}-i\epsilon}$ | Kernel; the two imaginary units of $-i(\mathbb{D}_p+m)$ multiply to $-1$ |
+| $S_F(p):\ (w_L,w_R)\mapsto\frac{(\tilde P_{\Phi}\,w_R-im\,w_L,\ \tilde P_{\Phi}^{\natural}w_L-im\,w_R)}{\tilde P_{\Phi}\tilde P_{\Phi}^{\natural}+m^{2}\,c^{2}-i\epsilon}$ | Kernel; the two imaginary units of $-i(\mathbb{D}_p+m)$ multiply to $-1$ |
 | $\det(\mathbb{D}-k_m)=(p^2-m^{2}\,c^{2})^4=\det(\Box-k_m^{2})$ | Determinant; the four opposite eigenvalue pairs of the pair give the fourth power of the scalar mode factor |
 | $\int d\tilde{Ξ}_{\mathrm{sp},2N}\cdots d\tilde{Ξ}_{\mathrm{sp},1}\,\exp(-\frac12\tilde{Ξ}_{\mathrm{sp}} A\tilde{Ξ}_{\mathrm{sp}})=\mathrm{Pf}(A)$, $\mathrm{Pf}^2=\det A$ | Pfaffian for an antisymmetric form |
 | $\flat=-{}^{*}$ | Real structure; makes the field-to-conjugate pairing available |

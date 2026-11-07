@@ -21,7 +21,7 @@ This article establishes:
 5. **The double cover is visible in the path integral.** The coherent-state integral is over the sphere of idempotents and loses the phase; the spinor integral is over the double cover and retains it. The Wess–Zumino term is the obstruction to writing the action purely in terms of the idempotent.
 6. **Topological consequences.** The Wess–Zumino term is a topological term whose coefficient is the spin; it controls spin tunnelling and the quenching of the tunnelling amplitude, and it is the same object as the curvature quantisation of the geometric-phase articles.
 
-The notation is that of the read-list articles: $\tilde{S}_k =\frac{m\,c}{2\,k_m}i\vec e_k$, $\tilde\Pi_{1,2}(\vec u) = \tfrac12(e_t\pm i\vec u)$, $\tilde{Ϛ} = \tfrac12(e_t+i\vec r)$, the trace formula $\mathrm{Tr}(\tilde Q_1\tilde Q_2)=2\,\mathrm{Sc}(\tilde Q_1\tilde Q_2)$, and the isomorphism $\mathsf{M}_2$ with $i\vec e_k\mapsto\sigma_k$.
+The notation is that of the read-list articles: $\tilde{S}_{\Psi,k} =\frac{m\,c}{2\,k_m}i\vec e_k$, $\tilde\Pi_{1,2}(\vec u) = \tfrac12(e_t\pm i\vec u)$, $\tilde{Ϛ}_{\Psi} = \tfrac12(e_t+i\vec r)$, the trace formula $\mathrm{Tr}(\tilde Q_1\tilde Q_2)=2\,\mathrm{Sc}(\tilde Q_1\tilde Q_2)$, and the isomorphism $\mathsf{M}_2$ with $i\vec e_k\mapsto\sigma_k$.
 
 The companion articles supply the pieces:
 - Companion article *The Path Integral in Biquaternionic Form*, for the path integral in the algebra and its classical limit.
@@ -132,7 +132,7 @@ For a spin in a magnetic field the Hamiltonian is
 
 $$
 \tilde R_\Psi = -\frac{m\,c\,\omega_{L}}{2\,k_m}\,i\,\vec u_t\cdot\mathbf{e}
-= -\gamma B\,\tilde{S}(\vec u_t),
+= -\gamma B\,\tilde{S}_{\Psi}(\vec u_t),
 $$
 
 and its coherent-state expectation is
@@ -273,7 +273,7 @@ In the biquaternion algebra the coherent-state integral is an integral over the 
 | $i$ | Central scalar imaginary |
 | $\mathbb{B}_{\Psi}$ | Hermitian (informational) subspace |
 | $\mathbb{B}_{H}$ | Unit real quaternions; the classical rotors |
-| $\tilde{S}_k =\frac{m\,c}{2\,k_m}i\vec e_k$ | Spin-1/2 operator |
+| $\tilde{S}_{\Psi,k} =\frac{m\,c}{2\,k_m}i\vec e_k$ | Spin-1/2 operator |
 | $|\varkappa_{\mathrm{stg}}\rangle$ | Spin coherent state with Bloch vector $\vec u(\varkappa_{\mathrm{stg}})$ |
 | $\varkappa_{\mathrm{stg}} = \tan\tfrac{\theta}{2}\exp(i\theta_{\mathrm{azm}}) = \tilde{Ξ}_{\mathrm{sp},2}/\tilde{Ξ}_{\mathrm{sp},1}$ | Stereographic coordinate |
 | $\langle z_2|z\rangle = \dfrac{1+\bar z_2 z}{\sqrt{(1+|z_2|^2)(1+|z|^2)}}$ | Coherent-state overlap |

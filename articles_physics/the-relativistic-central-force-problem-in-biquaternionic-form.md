@@ -80,7 +80,7 @@ with the proper time or the coordinate time giving the same vanishing because th
 
 ### The Mass-Shell Relation and the Radial Momentum
 
-The relativistic content enters through the mass-shell relation for the four-momentum. With $\tilde{P}=iE/c\,e_t+\vec p$ and the biquaternion norm $\langle\tilde{P}\rangle_{\natural}=\tilde{P}\tilde{P}^{\natural}=-E^2/c^2+\vec p^2$, the on-shell condition with the potential included is
+The relativistic content enters through the mass-shell relation for the four-momentum. With $\tilde{P}_{\Phi}=iE/c\,e_t+\vec p$ and the biquaternion norm $\langle\tilde{P}_{\Phi}\rangle_{\natural}=\tilde{P}_{\Phi}\tilde{P}_{\Phi}^{\natural}=-E^2/c^2+\vec p^2$, the on-shell condition with the potential included is
 
 $$
 (E-V)^2=\vec p^2c^2+m^2c^4 .

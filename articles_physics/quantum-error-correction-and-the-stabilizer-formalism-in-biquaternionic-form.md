@@ -27,10 +27,10 @@ $$
 
 which is an idempotent of the tensor-product algebra. The whole theory of stabilizer codes is thus a theory of **commutative subalgebras and their idempotents**, expressed in the algebra that this series uses throughout: the code space is a Peirce component of a commutative subalgebra, and the syndrome measurement projects onto its idempotents.
 
-The central result is the **Knill–Laflamme error-correction condition**. An error set $\{\tilde{E}_a\}$ is correctable by the code with idempotent $\tilde\Pi$ exactly when
+The central result is the **Knill–Laflamme error-correction condition**. An error set $\{\tilde{E}_{\Psi}_a\}$ is correctable by the code with idempotent $\tilde\Pi$ exactly when
 
 $$
-\tilde\Pi\,\tilde{E}_a^{*}\tilde{E}_b\,\tilde\Pi = c_{ab}\,\tilde\Pi
+\tilde\Pi\,\tilde{E}_{\Psi}_a^{*}\tilde{E}_{\Psi}_b\,\tilde\Pi = c_{ab}\,\tilde\Pi
 \qquad \text{for all } a,b ,
 $$
 
@@ -77,16 +77,16 @@ Thus the code space is the image of an idempotent of the algebra, and its dimens
 
 ### Errors
 
-An **error** is an element $\tilde{E}_a$ of the Pauli group, typically a tensor product with at most a few nontrivial factors. The action of the environment is a channel, and the channel's Kraus operators can be expanded in the Pauli group; if a code corrects a set of errors, it corrects any channel whose Kraus operators lie in the span of that set. This is the algebraic reduction of error correction to the finite list of Pauli errors, and it is why the analysis below can be carried out on the Pauli group alone. The channel formalism is that of the companion article *Quantum Channels and the Reversible/Irreversible Dichotomy*.
+An **error** is an element $\tilde{E}_{\Psi}_a$ of the Pauli group, typically a tensor product with at most a few nontrivial factors. The action of the environment is a channel, and the channel's Kraus operators can be expanded in the Pauli group; if a code corrects a set of errors, it corrects any channel whose Kraus operators lie in the span of that set. This is the algebraic reduction of error correction to the finite list of Pauli errors, and it is why the analysis below can be carried out on the Pauli group alone. The channel formalism is that of the companion article *Quantum Channels and the Reversible/Irreversible Dichotomy*.
 
 ## The Knill–Laflamme Condition
 
 ### Statement
 
-The code with idempotent $\tilde\Pi$ corrects the error set $\{\tilde{E}_a\}$ if and only if
+The code with idempotent $\tilde\Pi$ corrects the error set $\{\tilde{E}_{\Psi}_a\}$ if and only if
 
 $$
-\boxed{\;\tilde\Pi\,\tilde{E}_a^{*}\tilde{E}_b\,\tilde\Pi = c_{ab}\,\tilde\Pi
+\boxed{\;\tilde\Pi\,\tilde{E}_{\Psi}_a^{*}\tilde{E}_{\Psi}_b\,\tilde\Pi = c_{ab}\,\tilde\Pi
 \qquad \text{for all } a,b\;},
 $$
 
@@ -94,15 +94,15 @@ where $c = (c_{ab})$ is a Hermitian matrix of numbers, independent of the encode
 
 ### Why it is necessary
 
-Suppose the code can correct the errors $\{\tilde{E}_a\}$, so that there is a recovery map $\mathcal{R}$ with $\mathcal{R}(\tilde{E}_a\tilde{Ϛ}\tilde{E}_a^{*}) = p_a\tilde{Ϛ}$ for every encoded $\tilde{Ϛ} = \tilde\Pi\tilde{Ϛ}\tilde\Pi$ and some probability $p_a>0$. Linearity of the recovery forces the relation $c_{ab}$: the recovery must act identically on the images of the code under the different errors, and the only way it can do so on the whole code space is if the operators $\tilde\Pi\tilde{E}_a^{*}\tilde{E}_b\tilde\Pi$ are all proportional to $\tilde\Pi$. Equivalently: if two different errors had distinguishable effects on the code space, no single recovery could undo both.
+Suppose the code can correct the errors $\{\tilde{E}_{\Psi}_a\}$, so that there is a recovery map $\mathcal{R}$ with $\mathcal{R}(\tilde{E}_{\Psi}_a\tilde{Ϛ}_{\Psi}\tilde{E}_{\Psi}_a^{*}) = p_a\tilde{Ϛ}_{\Psi}$ for every encoded $\tilde{Ϛ}_{\Psi} = \tilde\Pi\tilde{Ϛ}_{\Psi}\tilde\Pi$ and some probability $p_a>0$. Linearity of the recovery forces the relation $c_{ab}$: the recovery must act identically on the images of the code under the different errors, and the only way it can do so on the whole code space is if the operators $\tilde\Pi\tilde{E}_{\Psi}_a^{*}\tilde{E}_{\Psi}_b\tilde\Pi$ are all proportional to $\tilde\Pi$. Equivalently: if two different errors had distinguishable effects on the code space, no single recovery could undo both.
 
 ### Why it is sufficient
 
-If the condition holds, diagonalize the Hermitian matrix $c = u\,d\,u^\dagger$ with $d$ diagonal. Then the rotated error operators $\tilde{F}_\alpha = \sum_a u_{a\alpha}\tilde{E}_a$ satisfy $\tilde\Pi\tilde{F}_\alpha^{*}\tilde{F}_\beta\tilde\Pi = d_\alpha\delta_{\alpha\beta}\tilde\Pi$. The errors $\{\tilde{F}_\alpha\}$ therefore map the code space to mutually orthogonal subspaces, $\tilde{F}_\alpha\tilde\Pi\tilde{F}_\beta^{*} = 0$ for $\alpha\neq\beta$, and each acts within its subspace in a way that depends only on $\alpha$. A measurement that identifies which subspace the state fell into — the **syndrome measurement** — followed by an operation that reverses $\tilde{F}_\alpha$ on that subspace restores the encoded state. This is the standard construction, and it is a statement about the algebra: the condition says that the error operators, restricted to the Peirce component $\tilde\Pi$, form a set of "orthogonal" block actions.
+If the condition holds, diagonalize the Hermitian matrix $c = u\,d\,u^\dagger$ with $d$ diagonal. Then the rotated error operators $\tilde{F}_\alpha = \sum_a u_{a\alpha}\tilde{E}_{\Psi}_a$ satisfy $\tilde\Pi\tilde{F}_\alpha^{*}\tilde{F}_\beta\tilde\Pi = d_\alpha\delta_{\alpha\beta}\tilde\Pi$. The errors $\{\tilde{F}_\alpha\}$ therefore map the code space to mutually orthogonal subspaces, $\tilde{F}_\alpha\tilde\Pi\tilde{F}_\beta^{*} = 0$ for $\alpha\neq\beta$, and each acts within its subspace in a way that depends only on $\alpha$. A measurement that identifies which subspace the state fell into — the **syndrome measurement** — followed by an operation that reverses $\tilde{F}_\alpha$ on that subspace restores the encoded state. This is the standard construction, and it is a statement about the algebra: the condition says that the error operators, restricted to the Peirce component $\tilde\Pi$, form a set of "orthogonal" block actions.
 
 ### The condition in the algebra
 
-The condition is naturally stated in the tensor-product algebra. $\tilde\Pi$ is an idempotent of $\mathbb{B}_{\Psi}^{\otimes n}$; the errors are elements of the Pauli group; the sandwich $\tilde\Pi\tilde{E}_a^{*}\tilde{E}_b\tilde\Pi$ is an element of the algebra, and the condition says it is scalar on the code. The numbers $c_{ab}$ form the **Gram matrix** of the error operators restricted to the code space, and correcting the errors means that this Gram matrix is all the code sees of the errors: the encoded state is not resolved.
+The condition is naturally stated in the tensor-product algebra. $\tilde\Pi$ is an idempotent of $\mathbb{B}_{\Psi}^{\otimes n}$; the errors are elements of the Pauli group; the sandwich $\tilde\Pi\tilde{E}_{\Psi}_a^{*}\tilde{E}_{\Psi}_b\tilde\Pi$ is an element of the algebra, and the condition says it is scalar on the code. The numbers $c_{ab}$ form the **Gram matrix** of the error operators restricted to the code space, and correcting the errors means that this Gram matrix is all the code sees of the errors: the encoded state is not resolved.
 
 ## The Three-Qubit Bit-Flip Code
 
@@ -175,7 +175,7 @@ The following were verified by explicit computation with the $32\times32$ matric
 
 - **Commutativity and independence.** All four generators commute pairwise, so $S$ is abelian; the group has order $16$ and the idempotent has trace $2$.
 - **Idempotency.** $\tilde\Pi^2 = \tilde\Pi$, with spectrum in $\{0,1\}$ and $\mathrm{Tr}(\tilde\Pi) = 2$, so the code space is two-dimensional.
-- **Knill–Laflamme for every single-qubit error.** The error set $\{e_t^{\otimes5}\}\cup\{X_i,Y_i,Z_i\}_{i=1}^{5}$ has sixteen elements. For every pair $a,b$ of these sixteen, the sandwich $\tilde\Pi\tilde{E}_a^{*}\tilde{E}_b\tilde\Pi$ was found to be a multiple of $\tilde\Pi$, to machine precision. The five-qubit code therefore corrects **an arbitrary single-qubit error**.
+- **Knill–Laflamme for every single-qubit error.** The error set $\{e_t^{\otimes5}\}\cup\{X_i,Y_i,Z_i\}_{i=1}^{5}$ has sixteen elements. For every pair $a,b$ of these sixteen, the sandwich $\tilde\Pi\tilde{E}_{\Psi}_a^{*}\tilde{E}_{\Psi}_b\tilde\Pi$ was found to be a multiple of $\tilde\Pi$, to machine precision. The five-qubit code therefore corrects **an arbitrary single-qubit error**.
 - **Perfection.** The fifteen errors $X_i,Y_i,Z_i$ ($i=1,\dots,5$) have fifteen distinct nonzero syndromes in $\{0,1\}^4\setminus\{0\}$, so the syndrome measurement identifies the error uniquely. This is the sense in which the code is **perfect**: the $32$-dimensional space decomposes exactly into the code space and the fifteen orthogonal error subspaces, with no room to spare. The counting is $1 + 15 = 16 = 2^{5-1}$, the size of the syndrome space.
 
 ### The code as an idempotent
@@ -205,7 +205,7 @@ and the other $|S|-1$ idempotents $\tilde\Pi_\xi$ have the syndrome subspaces as
 **What it does.**
 
 - It identifies the code space with the image of an idempotent $\tilde\Pi = |S|^{-1}\sum_{\tilde U\in S}\tilde U$ of the tensor-product algebra $\mathbb{B}_{\Psi}^{\otimes n}$, where $S$ is a finite commutative group of involutions; the code idempotent is a Peirce component of a commutative subalgebra.
-- It states the Knill–Laflamme condition as a condition on the sandwich $\tilde\Pi\tilde{E}_a^{*}\tilde{E}_b\tilde\Pi$, i.e. on the Gram matrix of the errors restricted to the code.
+- It states the Knill–Laflamme condition as a condition on the sandwich $\tilde\Pi\tilde{E}_{\Psi}_a^{*}\tilde{E}_{\Psi}_b\tilde\Pi$, i.e. on the Gram matrix of the errors restricted to the code.
 - It identifies the syndrome measurement with the projection onto the joint eigen-idempotents of the generators, a Peirce decomposition of the commutative subalgebra.
 - It verifies idempotency, trace, Knill–Laflamme, and syndrome distinctness for the three-qubit bit-flip code and the five-qubit perfect code by explicit computation.
 
@@ -237,10 +237,10 @@ $$
 \qquad \tilde\Pi^2 = \tilde\Pi, \qquad \mathrm{Tr}(\tilde\Pi) = 2^k .
 $$
 
-An error set $\{\tilde{E}_a\}$ is correctable if and only if the **Knill–Laflamme condition**
+An error set $\{\tilde{E}_{\Psi}_a\}$ is correctable if and only if the **Knill–Laflamme condition**
 
 $$
-\boxed{\;\tilde\Pi\tilde{E}_a^{*}\tilde{E}_b\tilde\Pi = c_{ab}\tilde\Pi\;}
+\boxed{\;\tilde\Pi\tilde{E}_{\Psi}_a^{*}\tilde{E}_{\Psi}_b\tilde\Pi = c_{ab}\tilde\Pi\;}
 $$
 
 holds for all $a,b$: the error operators, restricted to the code, have a scalar Gram matrix and cannot resolve the encoded state. The syndrome measurement is the joint measurement of the commuting generators, i.e. the projection onto the joint eigen-idempotents of a commutative subalgebra.
@@ -258,8 +258,8 @@ Two codes were constructed and verified. The three-qubit bit-flip code has $S$ g
 | $S$, $[S,S]=0$, $-e_t^{\otimes n}\notin S$ | Stabilizer group, $\lvert S\rvert = 2^{n-k}$ |
 | $\tilde\Pi = \lvert S\rvert^{-1}\sum_{\tilde U\in S}\tilde U$ | Code idempotent |
 | $\tilde\Pi^2=\tilde\Pi$, $\mathrm{Tr}(\tilde\Pi) = 2^k$ | Code properties ($k$ logical qubits) |
-| $\tilde{E}_a$ | Error operator (Pauli group element) |
-| $\tilde\Pi\tilde{E}_a^{*}\tilde{E}_b\tilde\Pi = c_{ab}\tilde\Pi$ | Knill–Laflamme condition |
+| $\tilde{E}_{\Psi}_a$ | Error operator (Pauli group element) |
+| $\tilde\Pi\tilde{E}_{\Psi}_a^{*}\tilde{E}_{\Psi}_b\tilde\Pi = c_{ab}\tilde\Pi$ | Knill–Laflamme condition |
 | $\tilde U_i$ | Stabilizer generators (measured for syndromes) |
 | $Z_1Z_2=(i\vec e_z)\otimes(i\vec e_z)\otimes e_t$ | Generator of the three-qubit code |
 | $XZZXe_t,\ e_tXZZX,\ Xe_tXZZ,\ ZXe_tXZ$ | Five-qubit code generators |

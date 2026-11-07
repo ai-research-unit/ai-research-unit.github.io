@@ -65,7 +65,7 @@ and both coefficients are non-zero. This is the only cell in which the spectral 
 
 ### The Doppler Pair
 
-On the material slice, with $\tilde P=i\frac{E}{c}e_t+\vec p$ and $B=\lvert\vec p\rvert$,
+On the material slice, with $\tilde P_{\Phi}=i\frac{E}{c}e_t+\vec p$ and $B=\lvert\vec p\rvert$,
 
 $$
 \lambda_\pm=i\left(\frac{E}{c}\pm\lvert\vec p\rvert\right)
@@ -172,7 +172,7 @@ $$
 and the inverse lies in the cell. The polar word
 
 $$
-\tilde Q=r\,e^{i\alpha}\,\tilde U_{\mathrm b}\,\tilde u_{\mathrm r}
+\tilde Q=r\,e^{i\alpha}\,\tilde U_{\Psi,\mathrm b}\,\tilde u_{\mathrm r}
 $$
 
 exists on the whole cell, with $r=\lvert N\rvert^{1/2}$ and the three factors a scale, a central phase, a Hermitian boost and a real rotor. The cell is therefore contained in the domain of the polar decomposition: every element of the cell has a frame, an amplitude and a phase.
@@ -228,7 +228,7 @@ No dynamics is supplied. The cell is a property of one element at one instant; t
 | $\tilde\Pi_\pm,\vec\Upsilon_\pm$ | the normalised Peirce basis |
 | $S_\pm=\mathbb{B}\tilde\Pi_\pm$ | the two spinor spaces |
 | $\theta_{\mathrm{rpd}}$ | the rapidity, $\cosh\theta_{\mathrm{rpd}}=E/(mc^{2})$ |
-| $r,\alpha,\tilde U_{\mathrm b},\tilde u_{\mathrm r}$ | the polar factors |
+| $r,\alpha,\tilde U_{\Psi,\mathrm b},\tilde u_{\mathrm r}$ | the polar factors |
 
 ## Further Reading
 

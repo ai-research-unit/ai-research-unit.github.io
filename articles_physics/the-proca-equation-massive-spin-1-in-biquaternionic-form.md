@@ -4,11 +4,11 @@
 
 The Maxwell field is massless, and its masslessness is what reduces four potential components to two physical transverse polarizations: the gauge freedom removes one combination and the field equation removes another. Give the vector field a mass and the gauge freedom disappears. The equation of motion then becomes the **Proca equation**, and the third, longitudinal polarization becomes physical, with the two helicities no longer Lorentz-invariant labels. The Proca field is the prototype of a massive spin-one field, and it is the first field equation that the self-dual split of the material sector supports.
 
-The purpose of this article is to write the Proca system in biquaternionic form and to read its content from the algebra. The equation is a single biquaternion equation for the four-potential $\tilde{A}\in\mathbb{B}_{\Phi}$ and its field strength $\tilde{F}\in\mathbb{B}_{V}$. Two structural facts organise everything. First, the equation is **homogeneous but not gauge invariant**: the source that the companion Maxwell equation attributes to an external current is supplied here by the potential itself, so the equation is linear in $\tilde{A}$ and the gauge freedom of the massless theory is absent. Second, the divergence of the equation is not an identity: applying the conjugate gradient to the equation and taking its scalar part forces the **Lorenz condition** $S = \mathrm{Sc}(\tilde{\nabla}^{\natural}\tilde{A}) = 0$, exactly as taking the divergence of the standard Proca equation forces $\langle\tilde\nabla,\tilde A\rangle_{\natural} = 0$. The Lorenz condition is a consequence of the equation, not a gauge choice, and that is the algebraic statement of the disappearance of the gauge freedom.
+The purpose of this article is to write the Proca system in biquaternionic form and to read its content from the algebra. The equation is a single biquaternion equation for the four-potential $\tilde{A}_{\Phi}\in\mathbb{B}_{\Phi}$ and its field strength $\tilde{F}\in\mathbb{B}_{V}$. Two structural facts organise everything. First, the equation is **homogeneous but not gauge invariant**: the source that the companion Maxwell equation attributes to an external current is supplied here by the potential itself, so the equation is linear in $\tilde{A}_{\Phi}$ and the gauge freedom of the massless theory is absent. Second, the divergence of the equation is not an identity: applying the conjugate gradient to the equation and taking its scalar part forces the **Lorenz condition** $S = \mathrm{Sc}(\tilde{\nabla}^{\natural}\tilde{A}_{\Phi}) = 0$, exactly as taking the divergence of the standard Proca equation forces $\langle\tilde\nabla,\tilde A_{\Phi}\rangle_{\natural} = 0$. The Lorenz condition is a consequence of the equation, not a gauge choice, and that is the algebraic statement of the disappearance of the gauge freedom.
 
 Once the Lorenz condition is available, the Proca equation collapses to the Klein–Gordon equation for each component, and the physical content is transparent: three real polarization directions at each wavevector — two transverse and one longitudinal — with the dispersion relation $\omega^2 = c^2\vec k^2 + c^2k_m^{2}$. The counting is done here explicitly, and it is contrasted with the massless case, where the same calculation leaves two real directions because a residual gauge transformation removes the third. The article closes by locating the massive field relative to the self-dual split of the companion article: the field strength remains a pure vector of the algebra and so keeps its self-dual and anti-self-dual coordinates, but it is no longer harmonic, and the mass term is precisely what the biquaternion Maxwell equation calls a source. Here $k_m=mc/\hbar$ is the mass wave number, the inverse of the mass length.
 
-The conventions are those of the companion articles. The algebra is $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ with basis $e_t=1,\vec e_x,\vec e_y,\vec e_z$, $\vec e_\mu^2=-e_t$, and central scalar imaginary $i$; the gradient is $\tilde{\nabla}=e_t\partial/\partial R_t+\vec e_x\partial/\partial R_x+\vec e_y\partial/\partial R_y+\vec e_z\partial/\partial R_z$ with $\tilde{\nabla}^{\natural}$ its quaternion conjugate and $\Box=\tilde{\nabla}\tilde{\nabla}^{\natural}=\partial^2/\partial R_t^2+\Delta$; the potential and field strength are $\tilde{A}=i\,a'_t\,e_t+\vec A$ and $\tilde{F}=\tilde{\nabla}^{\natural}\tilde{A}-\mathrm{Sc}(\tilde{\nabla}^{\natural}\tilde{A})=i\sqrt{\epsilon}\,\vec E-\sqrt{\mu}\,\vec H$, with $c=1/\sqrt{\epsilon\mu}$ and the normalization of the potential fixed so that the two expressions for $\tilde{F}$ agree; and the mass enters as the length $k_m=mc/\hbar$, whose reciprocal $k_m=mc/\hbar$ is the coefficient written where the dimensions have to be displayed. The mass parameter is $m=m$, written through the mass length $1/k_m$.
+The conventions are those of the companion articles. The algebra is $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ with basis $e_t=1,\vec e_x,\vec e_y,\vec e_z$, $\vec e_\mu^2=-e_t$, and central scalar imaginary $i$; the gradient is $\tilde{\nabla}=e_t\partial/\partial R_t+\vec e_x\partial/\partial R_x+\vec e_y\partial/\partial R_y+\vec e_z\partial/\partial R_z$ with $\tilde{\nabla}^{\natural}$ its quaternion conjugate and $\Box=\tilde{\nabla}\tilde{\nabla}^{\natural}=\partial^2/\partial R_t^2+\Delta$; the potential and field strength are $\tilde{A}_{\Phi}=i\,a'_t\,e_t+\vec A$ and $\tilde{F}=\tilde{\nabla}^{\natural}\tilde{A}_{\Phi}-\mathrm{Sc}(\tilde{\nabla}^{\natural}\tilde{A}_{\Phi})=i\sqrt{\epsilon}\,\vec E-\sqrt{\mu}\,\vec H$, with $c=1/\sqrt{\epsilon\mu}$ and the normalization of the potential fixed so that the two expressions for $\tilde{F}$ agree; and the mass enters as the length $k_m=mc/\hbar$, whose reciprocal $k_m=mc/\hbar$ is the coefficient written where the dimensions have to be displayed. The mass parameter is $m=m$, written through the mass length $1/k_m$.
 
 ## The Standard Proca Theory
 
@@ -23,7 +23,7 @@ $$
 where $1/k_m$ is the mass length and $k_m=mc/\hbar$ is its reciprocal, and the sign of the mass term is the one that makes the energy positive. Variation with respect to $A_\nu$ gives the **Proca equation**
 
 $$
-\tilde\nabla\tilde F-k_m^{2}\tilde A=0 .
+\tilde\nabla\tilde F-k_m^{2}\tilde A_{\Phi}=0 .
 $$
 
 The equation differs from the source-free Maxwell equation by the mass term alone, and that term is what breaks the gauge symmetry: under $A_\mu \to A_\mu - \partial/\partial R_\mu\,\Gamma$ the field strength is unchanged but the mass term is not, since $\sum_\mu A_\mu A_\mu$ is not invariant. A massive vector field has no gauge freedom.
@@ -35,9 +35,9 @@ The mass term also changes the constraint structure. Contracting the equation wi
 $$
 \sum_{\mu,\nu}\partial^2/\partial R_\mu\partial R_\nu\,F_{\mu\nu} = 0
 \qquad\Longrightarrow\qquad
-k_m^{2}\langle\tilde\nabla,\tilde A\rangle_{\natural}=0
+k_m^{2}\langle\tilde\nabla,\tilde A_{\Phi}\rangle_{\natural}=0
 \qquad\Longrightarrow\qquad
-\langle\tilde\nabla,\tilde A\rangle_{\natural}=0 ,
+\langle\tilde\nabla,\tilde A_{\Phi}\rangle_{\natural}=0 ,
 $$
 
 for a finite mass, $k_m\neq0$. The **Lorenz condition** is therefore a consequence of the equation of motion and not a choice of gauge: it is one of the equations of the system. This is the sharpest structural difference from the Maxwell case, where the same condition can be imposed but not derived, and where it is preserved as a gauge choice rather than fixed.
@@ -47,7 +47,7 @@ for a finite mass, $k_m\neq0$. The **Lorenz condition** is therefore a consequen
 With the Lorenz condition in hand, the field strength contracts to a d'Alembertian,
 
 $$
-\tilde\nabla\tilde F = \Box\tilde A-\tilde\nabla\langle\tilde\nabla,\tilde A\rangle_{\natural} = \Box\tilde A,
+\tilde\nabla\tilde F = \Box\tilde A_{\Phi}-\tilde\nabla\langle\tilde\nabla,\tilde A_{\Phi}\rangle_{\natural} = \Box\tilde A_{\Phi},
 $$
 
 so that the Proca equation becomes
@@ -59,10 +59,10 @@ $$
 in the mostly-minus convention. In the series convention, whose d'Alembertian is $\Box = \partial^2/\partial R_t^2 + \Delta$ and therefore the negative of the mostly-minus operator, the same statement is
 
 $$
-\left(\Box - k_m^{2}\right)\tilde{A} = 0 ,
+\left(\Box - k_m^{2}\right)\tilde{A}_{\Phi} = 0 ,
 $$
 
-the Klein–Gordon equation with the physical mass shell $\omega^2 = c^2\vec k^2 + c^2k_m^{2}$. The field of a massive vector particle is thus a four-vector each of whose components satisfies the Klein–Gordon equation, subject to the single constraint $\langle\tilde\nabla,\tilde A\rangle_{\natural} = 0$. Four components minus one constraint leaves three. This count is standard and is checked below on the explicit plane waves.
+the Klein–Gordon equation with the physical mass shell $\omega^2 = c^2\vec k^2 + c^2k_m^{2}$. The field of a massive vector particle is thus a four-vector each of whose components satisfies the Klein–Gordon equation, subject to the single constraint $\langle\tilde\nabla,\tilde A_{\Phi}\rangle_{\natural} = 0$. Four components minus one constraint leaves three. This count is standard and is checked below on the explicit plane waves.
 
 ### The rest frame and the three states
 
@@ -75,18 +75,18 @@ The three polarizations are easiest to see in the rest frame, $\vec k = \mathbf{
 The Proca system is transcribed into the framework by replacing the four-vector by the material-sector biquaternion and the gradient by the biquaternionic gradient. The single equation is
 
 $$
-\boxed{\;\tilde{\nabla}\tilde{F} = k_m^{2}\,\tilde{A},
+\boxed{\;\tilde{\nabla}\tilde{F} = k_m^{2}\,\tilde{A}_{\Phi},
 \qquad
-\tilde{F} = \tilde{\nabla}^{\natural}\tilde{A} - \mathrm{Sc}\!\left(\tilde{\nabla}^{\natural}\tilde{A}\right)\;},
+\tilde{F} = \tilde{\nabla}^{\natural}\tilde{A}_{\Phi} - \mathrm{Sc}\!\left(\tilde{\nabla}^{\natural}\tilde{A}_{\Phi}\right)\;},
 $$
 
 or, with the mass carried by the mass length,
 
 $$
-\tilde{\nabla}\tilde{F} = m^2\,\tilde{A}.
+\tilde{\nabla}\tilde{F} = m^2\,\tilde{A}_{\Phi}.
 $$
 
-The left-hand side is $\tilde\nabla\tilde F$; the right-hand side is the mass term. The equation is the massive analogue of the companion Maxwell equation $\tilde{\nabla}\tilde{F} = -\sqrt{\mu}\,\tilde{J}$, with the external source $\sqrt{\mu}\,\tilde{J}$ replaced by a current proportional to the potential itself.
+The left-hand side is $\tilde\nabla\tilde F$; the right-hand side is the mass term. The equation is the massive analogue of the companion Maxwell equation $\tilde{\nabla}\tilde{F} = -\sqrt{\mu}\,\tilde{J}_{\Phi}$, with the external source $\sqrt{\mu}\,\tilde{J}_{\Phi}$ replaced by a current proportional to the potential itself.
 
 ### Why the equation is the right one
 
@@ -94,11 +94,11 @@ The transcription is not a guess. It is fixed by two requirements: the equation 
 
 ### The failure of gauge invariance, explicitly
 
-The massless companion equation is invariant under the gauge transformation $\tilde{A}\to\tilde{A}-\tilde{\nabla}\Gamma$ of the companion Maxwell article, because the field strength is built from $\tilde{\nabla}^{\natural}\tilde{A}$ and $\tilde{\nabla}^{\natural}\tilde{\nabla}\Gamma = \Box\Gamma$ is a central scalar, which the projection to the vector part discards. For the Proca equation the same transformation changes the right-hand side alone,
+The massless companion equation is invariant under the gauge transformation $\tilde{A}_{\Phi}\to\tilde{A}_{\Phi}-\tilde{\nabla}\Gamma$ of the companion Maxwell article, because the field strength is built from $\tilde{\nabla}^{\natural}\tilde{A}_{\Phi}$ and $\tilde{\nabla}^{\natural}\tilde{\nabla}\Gamma = \Box\Gamma$ is a central scalar, which the projection to the vector part discards. For the Proca equation the same transformation changes the right-hand side alone,
 
 $$
 \tilde{\nabla}\tilde{F} \;\longmapsto\; \tilde{\nabla}\tilde{F}, \qquad
-k_m^{2}\,\tilde{A} \;\longmapsto\; k_m^{2}\left(\tilde{A}-\tilde{\nabla}\Gamma\right),
+k_m^{2}\,\tilde{A}_{\Phi} \;\longmapsto\; k_m^{2}\left(\tilde{A}_{\Phi}-\tilde{\nabla}\Gamma\right),
 $$
 
 so the equation is preserved only if $\tilde{\nabla}\Gamma = 0$, that is, only for a constant $\Gamma$. The transformation is therefore not a symmetry, and there is no gauge orbit to quotient by. The algebraic reason is that the mass term is the only term in the equation that is not built from the field strength: it is a term in the potential, and the potential is not gauge invariant. This is the biquaternion statement of the standard fact that the Proca Lagrangian's mass term $\sum_\mu A_\mu A_\mu$ breaks the gauge symmetry.
@@ -110,15 +110,15 @@ The biquaternion form of the divergence argument is short, and it is the cleanes
 Apply the conjugate gradient $\tilde{\nabla}^{\natural}$ to both sides of the Proca equation and use that the gradient has constant coefficients, so that $\tilde{\nabla}^{\natural}(\tilde{\nabla}\tilde{F}) = (\tilde{\nabla}^{\natural}\tilde{\nabla})\tilde{F} = \Box\tilde{F}$:
 
 $$
-\Box\tilde{F} = k_m^{2}\,\tilde{\nabla}^{\natural}\tilde{A}.
+\Box\tilde{F} = k_m^{2}\,\tilde{\nabla}^{\natural}\tilde{A}_{\Phi}.
 $$
 
-Now take the scalar part of both sides. The d'Alembertian $\Box$ is a central scalar differential operator, so it preserves the scalar–vector decomposition and $\mathrm{Sc}(\Box\tilde{F}) = \Box\,\mathrm{Sc}(\tilde{F})$. The field strength $\tilde{F} = \mathrm{Vect}(\tilde{\nabla}^{\natural}\tilde{A})$ is a **pure vector**, so $\mathrm{Sc}(\tilde{F}) = 0$, and the left-hand side vanishes identically. Hence
+Now take the scalar part of both sides. The d'Alembertian $\Box$ is a central scalar differential operator, so it preserves the scalar–vector decomposition and $\mathrm{Sc}(\Box\tilde{F}) = \Box\,\mathrm{Sc}(\tilde{F})$. The field strength $\tilde{F} = \mathrm{Vect}(\tilde{\nabla}^{\natural}\tilde{A}_{\Phi})$ is a **pure vector**, so $\mathrm{Sc}(\tilde{F}) = 0$, and the left-hand side vanishes identically. Hence
 
 $$
-\boxed{\;0 = k_m^{2}\,\mathrm{Sc}\!\left(\tilde{\nabla}^{\natural}\tilde{A}\right)
+\boxed{\;0 = k_m^{2}\,\mathrm{Sc}\!\left(\tilde{\nabla}^{\natural}\tilde{A}_{\Phi}\right)
 \qquad\Longrightarrow\qquad
-S := \mathrm{Sc}\!\left(\tilde{\nabla}^{\natural}\tilde{A}\right) = 0\;},
+S := \mathrm{Sc}\!\left(\tilde{\nabla}^{\natural}\tilde{A}_{\Phi}\right) = 0\;},
 $$
 
 which is the **Lorenz condition** of the companion Maxwell article, whose components are $\partial/\partial R_t\,A_t + \mathrm{div}\,\vec A = 0$. The derivation uses only three facts: the field strength is a pure vector, the d'Alembertian is central and scalar, and the mass parameter is nonzero. In the massless case the same computation gives $0 = 0$ and no constraint, which is exactly why the gauge freedom survives there and is absent here.
@@ -128,32 +128,32 @@ which is the **Lorenz condition** of the companion Maxwell article, whose compon
 With the Lorenz condition the field strength is simply the conjugate gradient of the potential,
 
 $$
-S = 0 \qquad\Longrightarrow\qquad \tilde{F} = \tilde{\nabla}^{\natural}\tilde{A},
+S = 0 \qquad\Longrightarrow\qquad \tilde{F} = \tilde{\nabla}^{\natural}\tilde{A}_{\Phi},
 $$
 
 and the Proca equation becomes
 
 $$
-\tilde{\nabla}\tilde{F} = \tilde{\nabla}\tilde{\nabla}^{\natural}\tilde{A} = \Box\tilde{A} = k_m^{2}\,\tilde{A}.
+\tilde{\nabla}\tilde{F} = \tilde{\nabla}\tilde{\nabla}^{\natural}\tilde{A}_{\Phi} = \Box\tilde{A}_{\Phi} = k_m^{2}\,\tilde{A}_{\Phi}.
 $$
 
 Hence
 
 $$
-\left(\Box - k_m^{2}\right)\tilde{A} = 0 ,
+\left(\Box - k_m^{2}\right)\tilde{A}_{\Phi} = 0 ,
 $$
 
-the Klein–Gordon equation for the biquaternion-valued potential. Because $\Box$ is central and scalar, it acts on the four coefficients of $\tilde{A}$ separately, and the equation is the statement that each coefficient of the potential satisfies the scalar Klein–Gordon equation. The reduction is therefore exact and reversible: the Proca equation for $\tilde{A}$ and the pair
+the Klein–Gordon equation for the biquaternion-valued potential. Because $\Box$ is central and scalar, it acts on the four coefficients of $\tilde{A}_{\Phi}$ separately, and the equation is the statement that each coefficient of the potential satisfies the scalar Klein–Gordon equation. The reduction is therefore exact and reversible: the Proca equation for $\tilde{A}_{\Phi}$ and the pair
 
 $$
-\boxed{\;\left(\Box - k_m^{2}\right)\tilde{A} = 0, \qquad \mathrm{Sc}\!\left(\tilde{\nabla}^{\natural}\tilde{A}\right) = 0\;}
+\boxed{\;\left(\Box - k_m^{2}\right)\tilde{A}_{\Phi} = 0, \qquad \mathrm{Sc}\!\left(\tilde{\nabla}^{\natural}\tilde{A}_{\Phi}\right) = 0\;}
 $$
 
 are equivalent. This is the biquaternion transcription of the standard statement that the Proca equation is equivalent to the Klein–Gordon equation together with the Lorenz condition.
 
 ### The component form
 
-The same reduction can be followed component by component, which shows that nothing is hidden in the biquaternion product. Write $\tilde{A} = A_te_t + \vec a$ and compute the scalar and vector parts of $\tilde{\nabla}\tilde{F}$ with $\tilde{F}$ a pure vector of components $(F_x,F_y,F_z)$ obtained from $\tilde{\nabla}^{\natural}\tilde{A}$. The scalar part is
+The same reduction can be followed component by component, which shows that nothing is hidden in the biquaternion product. Write $\tilde{A}_{\Phi} = A_te_t + \vec a$ and compute the scalar and vector parts of $\tilde{\nabla}\tilde{F}$ with $\tilde{F}$ a pure vector of components $(F_x,F_y,F_z)$ obtained from $\tilde{\nabla}^{\natural}\tilde{A}_{\Phi}$. The scalar part is
 
 $$
 \mathrm{Sc}\!\left(\tilde{\nabla}\tilde{F}\right) = \Delta A_t - \partial/\partial R_t\,\mathrm{div}\,\vec a,
@@ -174,15 +174,15 @@ The Proca equation equates the first to $k_m^{2}A_t$ and the second to $k_m^{2}\
 Write a plane-wave potential
 
 $$
-\tilde{A} = \tilde{A}_0\,\exp(\,i\,\mathrm{Sc}(\tilde P\tilde{Q}^{\natural})), \qquad
-\tilde{A}_0 = A_te_t + \vec a, \qquad
-\tilde P = i\frac{\omega}{c}\,e_t + \vec k,
+\tilde{A}_{\Phi} = \tilde{A}_{\Phi,0}\,\exp(\,i\,\mathrm{Sc}(\tilde P_{\Phi}\tilde{Q}^{\natural})), \qquad
+\tilde{A}_{\Phi,0} = A_te_t + \vec a, \qquad
+\tilde P_{\Phi} = i\frac{\omega}{c}\,e_t + \vec k,
 $$
 
-where $\mathrm{Sc}(\tilde P\tilde{Q}^{\natural}) = \vec k\cdot(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z) - \omega r'_t$ and $\tilde{A}_0$ is a constant biquaternion of the material sector, so that $A_t$ is purely imaginary and $\vec a$ is real. Differentiation gives $\tilde{\nabla}\tilde{A} = i\tilde P\tilde{A}$ and $\tilde{\nabla}^{\natural}\tilde{A} = i\tilde P^{\natural}\tilde{A}$, and the Klein–Gordon operator acts as
+where $\mathrm{Sc}(\tilde P_{\Phi}\tilde{Q}^{\natural}) = \vec k\cdot(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z) - \omega r'_t$ and $\tilde{A}_{\Phi,0}$ is a constant biquaternion of the material sector, so that $A_t$ is purely imaginary and $\vec a$ is real. Differentiation gives $\tilde{\nabla}\tilde{A}_{\Phi} = i\tilde P_{\Phi}\tilde{A}_{\Phi}$ and $\tilde{\nabla}^{\natural}\tilde{A}_{\Phi} = i\tilde P_{\Phi}^{\natural}\tilde{A}_{\Phi}$, and the Klein–Gordon operator acts as
 
 $$
-\Box\,\exp(\,i\,\mathrm{Sc}(\tilde P\tilde{Q}^{\natural})) = \left(\frac{\omega^2}{c^2} - \vec k^2\right)\exp(\,i\,\mathrm{Sc}(\tilde P\tilde{Q}^{\natural})),
+\Box\,\exp(\,i\,\mathrm{Sc}(\tilde P_{\Phi}\tilde{Q}^{\natural})) = \left(\frac{\omega^2}{c^2} - \vec k^2\right)\exp(\,i\,\mathrm{Sc}(\tilde P_{\Phi}\tilde{Q}^{\natural})),
 $$
 
 as in the companion Klein–Gordon article. The Klein–Gordon equation therefore requires
@@ -197,10 +197,10 @@ the physical relativistic dispersion relation.
 
 ### The Lorenz condition on a plane wave
 
-The scalar part of $\tilde{\nabla}^{\natural}\tilde{A}$ is the scalar part of $i\tilde P^{\natural}\tilde{A}_0$. Splitting $\tilde P^{\natural} = i(\omega/c)e_t - \vec k$ and using $\vec k\vec a = -\vec k\cdot\vec a + \vec k\times\vec a$,
+The scalar part of $\tilde{\nabla}^{\natural}\tilde{A}_{\Phi}$ is the scalar part of $i\tilde P_{\Phi}^{\natural}\tilde{A}_{\Phi,0}$. Splitting $\tilde P_{\Phi}^{\natural} = i(\omega/c)e_t - \vec k$ and using $\vec k\vec a = -\vec k\cdot\vec a + \vec k\times\vec a$,
 
 $$
-\mathrm{Sc}\!\left(i\tilde P^{\natural}\tilde{A}_0\right)
+\mathrm{Sc}\!\left(i\tilde P_{\Phi}^{\natural}\tilde{A}_{\Phi,0}\right)
 = -\frac{\omega}{c}\,A_t + i\,\vec k\cdot\vec a,
 $$
 
@@ -219,22 +219,22 @@ The amplitude data are the three real components of $\vec a$. The time component
 - two directions in the plane orthogonal to $\vec k$, the transverse polarizations; and
 - one direction along $\vec k$, the **longitudinal** polarization.
 
-The counting is linear in the field, so it is enough to test it on a general superposition. It is satisfied on a superposition of two independent plane waves with different wavevectors and amplitudes: the Proca equation $\tilde{\nabla}\tilde{F}=m^2\tilde{A}$ holds to round-off (residual at the level of $10^{-16}$ in units of the field amplitude), the Lorenz scalar vanishes to round-off for each component of the superposition, and the mass shell holds for each wavevector. A wave whose time component violates the Lorenz condition fails the equation by an amount of order the amplitude, as a separate substitution shows: the constraint is not optional.
+The counting is linear in the field, so it is enough to test it on a general superposition. It is satisfied on a superposition of two independent plane waves with different wavevectors and amplitudes: the Proca equation $\tilde{\nabla}\tilde{F}=m^2\tilde{A}_{\Phi}$ holds to round-off (residual at the level of $10^{-16}$ in units of the field amplitude), the Lorenz scalar vanishes to round-off for each component of the superposition, and the mass shell holds for each wavevector. A wave whose time component violates the Lorenz condition fails the equation by an amount of order the amplitude, as a separate substitution shows: the constraint is not optional.
 
 ### Contrast with the massless case
 
-For $m = 0$ the dispersion relation becomes $\omega^2 = c^2\vec k^2$ and the Lorenz condition still fixes $A_t = i(c/\omega)\vec k\cdot\vec a$, but now the system has the residual gauge freedom $\tilde{A}\to\tilde{A}-\tilde{\nabla}\Gamma$ with $\Box\Gamma=0$. On a plane wave this freedom shifts the amplitude by a multiple of the four-wavevector, $\vec a\to\vec a+\lambda\vec k$ and $A_t\to A_t+\lambda\,i\omega/c$, which removes exactly the longitudinal direction together with the time component; two real transverse directions remain. The massless field therefore has two real polarizations, and the massive field three. The third polarization is physical for the Proca field precisely because there is no gauge transformation to remove it, and the algebra exhibits this: the Lorenz condition is a consequence of the equation in the massive case and a choice in the massless one.
+For $m = 0$ the dispersion relation becomes $\omega^2 = c^2\vec k^2$ and the Lorenz condition still fixes $A_t = i(c/\omega)\vec k\cdot\vec a$, but now the system has the residual gauge freedom $\tilde{A}_{\Phi}\to\tilde{A}_{\Phi}-\tilde{\nabla}\Gamma$ with $\Box\Gamma=0$. On a plane wave this freedom shifts the amplitude by a multiple of the four-wavevector, $\vec a\to\vec a+\lambda\vec k$ and $A_t\to A_t+\lambda\,i\omega/c$, which removes exactly the longitudinal direction together with the time component; two real transverse directions remain. The massless field therefore has two real polarizations, and the massive field three. The third polarization is physical for the Proca field precisely because there is no gauge transformation to remove it, and the algebra exhibits this: the Lorenz condition is a consequence of the equation in the massive case and a choice in the massless one.
 
 ### The massless limit and the Stueckelberg form
 
-The limit $m\to0$ is discontinuous in the degrees of freedom: three states fall to two, and no sequence of Proca fields converges to a Maxwell field with a smooth third state. The standard device that makes the limit continuous is the **Stueckelberg form**, which restores the gauge freedom by extending the field with a scalar $\xi$ and building the mass term from the combination $\tilde{A}+\tilde{\nabla}\xi$ (up to the normalization of $\xi$) rather than from $\tilde{A}$ alone. Under the simultaneous transformations
+The limit $m\to0$ is discontinuous in the degrees of freedom: three states fall to two, and no sequence of Proca fields converges to a Maxwell field with a smooth third state. The standard device that makes the limit continuous is the **Stueckelberg form**, which restores the gauge freedom by extending the field with a scalar $\xi$ and building the mass term from the combination $\tilde{A}_{\Phi}+\tilde{\nabla}\xi$ (up to the normalization of $\xi$) rather than from $\tilde{A}_{\Phi}$ alone. Under the simultaneous transformations
 
 $$
-\tilde{A} \,\longrightarrow\, \tilde{A} - \tilde{\nabla}\lambda, \qquad
+\tilde{A}_{\Phi} \,\longrightarrow\, \tilde{A}_{\Phi} - \tilde{\nabla}\lambda, \qquad
 \xi \,\longrightarrow\, \xi + \lambda,
 $$
 
-the combination $\tilde{A}+\tilde{\nabla}\xi$ is invariant, so the mass term is gauge invariant and the symmetry is restored. On a plane wave the scalar $\xi$ contributes a piece along the wavevector, and the longitudinal state is carried by that piece; as $m\to0$ it decouples, carrying the third polarization away with it. The Stueckelberg form is a rewriting of the Proca system by a field redefinition, not a different theory, and it is mentioned here only to record that the algebra accommodates it without a change of structure.
+the combination $\tilde{A}_{\Phi}+\tilde{\nabla}\xi$ is invariant, so the mass term is gauge invariant and the symmetry is restored. On a plane wave the scalar $\xi$ contributes a piece along the wavevector, and the longitudinal state is carried by that piece; as $m\to0$ it decouples, carrying the third polarization away with it. The Stueckelberg form is a rewriting of the Proca system by a field redefinition, not a different theory, and it is mentioned here only to record that the algebra accommodates it without a change of structure.
 
 ## The Massive Field Strength and the Self-Dual Split
 
@@ -243,7 +243,7 @@ The companion article of this subcategory shows that the field-strength biquater
 What the mass changes is not the split but the equation that the field strength satisfies. In the Maxwell case the source-free equation $\tilde{\nabla}\tilde{F}=0$ makes the field strength harmonic, and the two helicities are the two halves. In the Proca case the equation is
 
 $$
-\tilde{\nabla}\tilde{F} = k_m^{2}\,\tilde{A},
+\tilde{\nabla}\tilde{F} = k_m^{2}\,\tilde{A}_{\Phi},
 $$
 
 so the field strength is not harmonic, and the potential — a material-sector four-vector, not a pure vector — appears on the right. The mass term is exactly a source term in the biquaternion Maxwell equation: it is the current that the massive field generates for itself. This is the algebraic form of the standard statement that the Proca field strength is not divergence-free and that the longitudinal mode is sourced by the mass.
@@ -255,9 +255,9 @@ The two helicities of the massless field are the labels of the two self-dual hal
 The massive field carries a conserved current and an energy–momentum tensor, and the review writes both in the same closed form in terms of the field strength and the potential:
 
 $$
-2\tilde{J} = \tilde{A}^{+}\tilde{F} + \tilde{F}^{+}\tilde{A} + (\cdots)^{\sim},
+2\tilde{J}_{\Phi} = \tilde{A}_{\Phi}^{+}\tilde{F} + \tilde{F}^{+}\tilde{A}_{\Phi} + (\cdots)^{\sim},
 \qquad
-8\pi\,\mathcal{T}(\;) = \tilde{F}^{+}[\;]\tilde{F} + k_m^{2}\,\tilde{A}^{+}[\;]\tilde{A} + (\cdots)^{\sim},
+8\pi\,\mathcal{T}(\;) = \tilde{F}^{+}[\;]\tilde{F} + k_m^{2}\,\tilde{A}_{\Phi}^{+}[\;]\tilde{A}_{\Phi} + (\cdots)^{\sim},
 $$
 
 where the slot in $\mathcal{T}$ takes an arbitrary biquaternion argument — marked by $[\;]$ inside the operator, as in the companion article on Maxwell's equations — the source's $+$ is the Hermitian conjugation, and $(\cdots)^{\sim}$ means that the expression is completed by adding the **reverse** of the part on the left. The completion is not decoration: it is what gives each object a definite order parity, since any part added to its own reversal is reversal-even by construction, and the source's conclusion is that the current and the energy–momentum are then "bireal and ordinal invariant four-vectors, as it should be". This is the same reversal-evenness that selects the Proca combination from the Lanczos parent below, and it is the object catalogued in *Comparison of the Remarkable Subspaces*.
@@ -271,7 +271,7 @@ The source adds one further statement, which the corpus records without re-deriv
 The Proca equation is one of four relativistic field equations that descend from a **single** first-order system. Lanczos's coupled system $\tilde{\nabla}\tilde Q_1=m\tilde Q_2$, $\tilde{\nabla}\tilde Q_2=m\tilde Q_1$ sits beneath the classical layer, and its descendants are reached by four different algebraic operations:
 
 - the **Dirac** equation, by the idempotent superposition $D=\tilde Q_1\sigma+\tilde Q_2^{*}\bar{\sigma}$ of the standard-model agenda article, whose combined form is strictly equivalent to Dirac's equation;
-- the **Proca** equation, by combining the second Lanczos equation with its **order reverse** (its ordinal conjugate), the potential being ordinal-invariant, $\tilde{A}=\tilde{A}^{\sim}$;
+- the **Proca** equation, by combining the second Lanczos equation with its **order reverse** (its ordinal conjugate), the potential being ordinal-invariant, $\tilde{A}_{\Phi}=\tilde{A}_{\Phi}^{\sim}$;
 - the **Maxwell** equation, as the massless limit of Proca;
 - the **Klein–Gordon** equation, as the spin-0 member, by restricting the pair to scalar fields (see *The Klein–Gordon Equation in Biquaternionic Form*: one-dimensional in its first-order form, the four-dimensional free scalar equation after the elimination).
 
@@ -287,7 +287,7 @@ The **reversal-even** combination is Proca's equation; the **reversal-odd** comb
 
 ### The two parities and the two massive particles
 
-The reversal split also classifies the massive particles, and it does so in the same breath as the classification of the massless ones. The source's assumption for Proca is that the potential is reversal-**even**, $\tilde{A}=+\tilde{A}^{\sim}$, which is the corpus's statement that $\tilde{A}$ is a genuine four-vector. Taking instead $\tilde{A}=-\tilde{A}^{\sim}$ — a reversal-odd potential, the pseudovector case — gives another fully covariant equation differing from Proca's only in the **sign of the mass term**. The massive vector and the massive pseudovector are the two reversal parities of one descendant, exactly as their massless counterparts are.
+The reversal split also classifies the massive particles, and it does so in the same breath as the classification of the massless ones. The source's assumption for Proca is that the potential is reversal-**even**, $\tilde{A}_{\Phi}=+\tilde{A}_{\Phi}^{\sim}$, which is the corpus's statement that $\tilde{A}_{\Phi}$ is a genuine four-vector. Taking instead $\tilde{A}_{\Phi}=-\tilde{A}_{\Phi}^{\sim}$ — a reversal-odd potential, the pseudovector case — gives another fully covariant equation differing from Proca's only in the **sign of the mass term**. The massive vector and the massive pseudovector are the two reversal parities of one descendant, exactly as their massless counterparts are.
 
 This is Gürsey's theorem, restated: the wave equations of **all** scalar and vector particles, and of all pseudo-scalar and pseudo-vector particles, are degenerate cases of Lanczos's fundamental equation. The framework does not need a separate first-order system for each spin-and-parity assignment; the one system contains them, distinguished by the reversal parity of the potential and by which superposition of the two fields is taken.
 
@@ -322,14 +322,14 @@ The conventions are those of three companion articles:
 The Proca equation for a massive spin-one field is written in the biquaternion framework as the single equation
 
 $$
-\tilde{\nabla}\tilde{F} = k_m^{2}\,\tilde{A},
+\tilde{\nabla}\tilde{F} = k_m^{2}\,\tilde{A}_{\Phi},
 \qquad
-\tilde{F} = \tilde{\nabla}^{\natural}\tilde{A} - \mathrm{Sc}\!\left(\tilde{\nabla}^{\natural}\tilde{A}\right),
+\tilde{F} = \tilde{\nabla}^{\natural}\tilde{A}_{\Phi} - \mathrm{Sc}\!\left(\tilde{\nabla}^{\natural}\tilde{A}_{\Phi}\right),
 $$
 
-with $\tilde{A}\in\mathbb{B}_{\Phi}$ and $\tilde{F}\in\mathbb{B}_{V}$. Unlike the massless Maxwell equation, it is not gauge invariant: the mass term couples the potential to itself, and the gauge freedom of the massless theory is absent.
+with $\tilde{A}_{\Phi}\in\mathbb{B}_{\Phi}$ and $\tilde{F}\in\mathbb{B}_{V}$. Unlike the massless Maxwell equation, it is not gauge invariant: the mass term couples the potential to itself, and the gauge freedom of the massless theory is absent.
 
-The divergence of the equation is not an identity. Applying $\tilde{\nabla}^{\natural}$ and taking the scalar part, the d'Alembertian is central and scalar, the field strength is a pure vector, and the left-hand side vanishes identically; the mass then forces the **Lorenz condition** $S=\mathrm{Sc}(\tilde{\nabla}^{\natural}\tilde{A})=0$ as a consequence of the equation of motion. With the constraint in hand, the field strength is the conjugate gradient of the potential and the equation reduces to the Klein–Gordon equation $(\Box - k_m^{2})\tilde{A}=0$ for each component. The two together — Klein–Gordon and Lorenz — are equivalent to the Proca equation.
+The divergence of the equation is not an identity. Applying $\tilde{\nabla}^{\natural}$ and taking the scalar part, the d'Alembertian is central and scalar, the field strength is a pure vector, and the left-hand side vanishes identically; the mass then forces the **Lorenz condition** $S=\mathrm{Sc}(\tilde{\nabla}^{\natural}\tilde{A}_{\Phi})=0$ as a consequence of the equation of motion. With the constraint in hand, the field strength is the conjugate gradient of the potential and the equation reduces to the Klein–Gordon equation $(\Box - k_m^{2})\tilde{A}_{\Phi}=0$ for each component. The two together — Klein–Gordon and Lorenz — are equivalent to the Proca equation.
 
 The plane-wave solutions carry a real spatial amplitude and a time component fixed by the Lorenz condition, with the dispersion relation $\omega^2 = c^2\vec k^2 + c^2k_m^{2}$. The three real components of the spatial amplitude are the three polarizations: two transverse and one longitudinal. The longitudinal mode is physical because there is no gauge freedom to remove it; in the massless limit the residual gauge transformation removes exactly that mode and leaves the two transverse polarizations. The field strength remains a pure vector of the algebra and so retains the self-dual split of the companion article — it carries the self-dual coordinate $\vec N=\vec E+ic\vec B$ of the real field — but it is not harmonic, and the mass term is precisely the source that the biquaternion Maxwell equation requires.
 
@@ -343,11 +343,11 @@ The plane-wave solutions carry a real spatial amplitude and a time component fix
 | $\mathbb{B}_{\Phi}$, $\mathbb{B}_{\Psi}$ | Material (anti-Hermitian) and informational (Hermitian) sectors |
 | $\mathbb{B}_{V}$ | Complex three-dimensional vector part |
 | $\tilde{\nabla}, \tilde{\nabla}^{\natural}$ | Biquaternionic gradient and conjugate, $\Box=\tilde{\nabla}\tilde{\nabla}^{\natural}=\partial^2/\partial R_t^2+\Delta$ |
-| $\tilde{A} = i\,a'_t\,e_t + \vec A$ | Four-potential biquaternion in $\mathbb{B}_{\Phi}$ |
-| $\tilde{F} = \tilde{\nabla}^{\natural}\tilde{A}-\mathrm{Sc}(\tilde{\nabla}^{\natural}\tilde{A})$ | Field-strength biquaternion, pure vector |
-| $S = \mathrm{Sc}(\tilde{\nabla}^{\natural}\tilde{A})$ | Gauge scalar; the Proca equation forces $S=0$ (Lorenz condition) |
+| $\tilde{A}_{\Phi} = i\,a'_t\,e_t + \vec A$ | Four-potential biquaternion in $\mathbb{B}_{\Phi}$ |
+| $\tilde{F} = \tilde{\nabla}^{\natural}\tilde{A}_{\Phi}-\mathrm{Sc}(\tilde{\nabla}^{\natural}\tilde{A}_{\Phi})$ | Field-strength biquaternion, pure vector |
+| $S = \mathrm{Sc}(\tilde{\nabla}^{\natural}\tilde{A}_{\Phi})$ | Gauge scalar; the Proca equation forces $S=0$ (Lorenz condition) |
 | $1/k_m$ | The mass length, $\hbar/(mc)$; its reciprocal is the inverse Compton wave vector, $k_m=mc/\hbar$, and the squared coefficient is $k_m^{2}=k_m^{2}$ |
-| $\tilde P =\frac{m\,c\,(i\omega/c\,e_t + \vec k)}{k_m}$ | Four-wavevector biquaternion |
+| $\tilde P_{\Phi} =\frac{m\,c\,(i\omega/c\,e_t + \vec k)}{k_m}$ | Four-wavevector biquaternion |
 | $\omega^2 = c^2\vec k^2 + c^2k_m^{2}$ | Massive dispersion relation |
 | $\vec a$, $A_t$ | Spatial amplitude (three real components) and time component fixed by Lorenz |
 | $\star\tilde{F} = -i\tilde{F}$ | Hodge dual on the field strength (companion article) |

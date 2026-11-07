@@ -79,7 +79,7 @@ The conjugation $\flat$ is the algebra's real structure, not the mass term (§*T
 The plane-wave solutions are
 
 $$
-\tilde{Ξ}_{\mathrm{sp}}=\tilde{Ξ}_{\mathrm{sp},0}\exp\!\Big(i\,\mathrm{Sc}\big(\tilde P\tilde{R}_\Phi^{\natural}\big)\frac{k_m}{m\,c}\Big),\frac{k_m\,\tilde{P}}{m\,c}=\frac{k_m\,e_{t}\,i\,E}{m\,c^{2}}+\vec k,
+\tilde{Ξ}_{\mathrm{sp}}=\tilde{Ξ}_{\mathrm{sp},0}\exp\!\Big(i\,\mathrm{Sc}\big(\tilde P_{\Phi}\tilde{R}_\Phi^{\natural}\big)\frac{k_m}{m\,c}\Big),\frac{k_m\,\tilde{P}_{\Phi}}{m\,c}=\frac{k_m\,e_{t}\,i\,E}{m\,c^{2}}+\vec k,
 \qquad
 \tilde R_\Phi=e_t(i c r'_t)+\vec r,
 $$
@@ -87,7 +87,7 @@ $$
 with $\tilde{Ξ}_{\mathrm{sp},0}$ a constant element and $\vec r=r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z$. The single mass-shell condition is
 
 $$
-\tilde P\tilde P^{\natural}= -m^{2}\,c^{2}.
+\tilde P_{\Phi}\tilde P_{\Phi}^{\natural}= -m^{2}\,c^{2}.
 $$
 
 The two roots of that condition — positive and negative frequency — are the two branches
@@ -174,7 +174,7 @@ The claim to test is: *the positive- and negative-energy parts of the field are 
 
 **A momentum argument reinforces this.** The sector split is momentum-independent: whether an element is Hermitian is a property of the element, not of any wave it carries. The energy sign is momentum-dependent through the $\vec p$ of the kinetic term. A momentum-independent split cannot be a momentum-dependent one except at $\vec p = 0$, and even there the two rest branches land in the same sector, as the next paragraph shows.
 
-**The natural dictionary the corpus supplies points the other way.** The parent's state construction reads an amplitude as the pure state $\tfrac12\big(e_t + i\vec u\big) \in \mathbb{B}_{\Psi}$, with $\vec u$ the direction the amplitude carries; the direction comes from the amplitude and not from the energy sign. Each of the two rest branches of the parent gives such an element, and neither gives an element of $\mathbb{B}_{\Phi}$. The sector $\mathbb{B}_{\Phi}$ is where the *current* lives, $\tilde J = ic\,j_0e_t + \vec j \in \mathbb{B}_{\Phi}$, not where the negative-frequency branch lives. So on the dictionary actually available, the sector split tracks the state–current distinction, not the energy sign, and both energy signs land in the same sector.
+**The natural dictionary the corpus supplies points the other way.** The parent's state construction reads an amplitude as the pure state $\tfrac12\big(e_t + i\vec u\big) \in \mathbb{B}_{\Psi}$, with $\vec u$ the direction the amplitude carries; the direction comes from the amplitude and not from the energy sign. Each of the two rest branches of the parent gives such an element, and neither gives an element of $\mathbb{B}_{\Phi}$. The sector $\mathbb{B}_{\Phi}$ is where the *current* lives, $\tilde J_{\Phi} = ic\,j_0e_t + \vec j \in \mathbb{B}_{\Phi}$, not where the negative-frequency branch lives. So on the dictionary actually available, the sector split tracks the state–current distinction, not the energy sign, and both energy signs land in the same sector.
 
 The honest conclusion, then, is that the $\mathbb{B}_{\Psi}/\mathbb{B}_{\Phi}$ split **renames the Hermitian decomposition of the algebra and not the $\pm$-energy decomposition of the field**. It is not obviously "doing work": the two splittings share the mass scale, but the interference that produces the trembling is between energy branches, and the energy branches are not the sectors. The natural candidate for a splitting that does carry the interference is the value subscript. The pair carries it: the derivative multiplies on the left and keeps it, and the mass is the term that carries it across, so at $m=0$ each equation stands alone with one value, and in the massless limit the value is locked to the helicity. But each of the two equations has solutions of both frequency signs, since the massless dispersion relation admits both, so the value does not coincide with the energy sign either: it is a splitting of the field by the equation it obeys, not a splitting of the algebra into $\mathbb{B}_{\Psi}$ and $\mathbb{B}_{\Phi}$. What is settled is that the $\pm$-energy split is neither the $\mathbb{B}_{\Psi}/\mathbb{B}_{\Phi}$ split nor the split by value, for the reasons above.
 
@@ -253,8 +253,8 @@ The structural claim that motivated the article fails. The positive- and negativ
 | $\tilde{Ξ}_{\mathrm{sp}}$, $\tilde{Ξ}_{\mathrm{sp},L}$, $\tilde{Ξ}_{\mathrm{sp},R}$ | The field, one element of $\mathbb{B}$, and its two parts, one per value of the subscript |
 | $\tilde{Ξ}_{\mathrm{sp}}^{(+)}, \tilde{Ξ}_{\mathrm{sp}}^{(-)}$ | The two frequency branches; $\tilde{Ξ}_{\mathrm{sp},0}^{(\pm)}$ their constant elements |
 | $\tilde R_\Phi$ | The four-position biquaternion of the parent |
-| $\tilde P\,k_{\mathrm{mo}}$ | The wave biquaternion of the parent, $\vec k=\vec p\,k_{\mathrm{mo}}$ |
-| $\tilde P\tilde P^{\natural} = -m^{2}\,c^{2}$ | Biquaternionic mass-shell condition |
+| $\tilde P_{\Phi}\,k_{\mathrm{mo}}$ | The wave biquaternion of the parent, $\vec k=\vec p\,k_{\mathrm{mo}}$ |
+| $\tilde P_{\Phi}\tilde P_{\Phi}^{\natural} = -m^{2}\,c^{2}$ | Biquaternionic mass-shell condition |
 | $\flat$ | The anti-Hermitian conjugation (the algebra's real structure, not the mass term), *Algebra and Element Conventions* |
 | $\tilde\nabla$ | The biquaternionic gradient (Dirac operator), *Operator and Calculus Conventions* |
 | $L_{a}R_{b}$ | A two-sided cell; its action and its composition are *Operator and Calculus Conventions* and *Operator Family Conventions* |

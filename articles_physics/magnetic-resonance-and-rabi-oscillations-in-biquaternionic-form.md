@@ -6,7 +6,7 @@ A spin-1/2 placed in a static magnetic field $B_0\vec u_z$ precesses at the Larm
 
 This article presents the driven spin-1/2 in the biquaternion algebra $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ of the companion articles. The physical content is standard and is reproduced here exactly. What the article establishes is **where** the driven problem lives in the algebra and which of the framework's structures the resonance condition and the Rabi formula expose:
 
-1. **The drive is a pair of Hermitian elements with time-dependent real coefficients.** The transverse coupling is built from $\tilde{S}_1 =\frac{m\,c}{2\,k_m}i\vec e_x$ and $\tilde{S}_2 =\frac{m\,c}{2\,k_m}i\vec e_y$, both in $\mathbb{B}_{\Psi}$; the total Hamiltonian remains in $\mathbb{B}_{\Psi}$ for all times. No element of the material sector enters the spin dynamics.
+1. **The drive is a pair of Hermitian elements with time-dependent real coefficients.** The transverse coupling is built from $\tilde{S}_{\Psi,1} =\frac{m\,c}{2\,k_m}i\vec e_x$ and $\tilde{S}_{\Psi,2} =\frac{m\,c}{2\,k_m}i\vec e_y$, both in $\mathbb{B}_{\Psi}$; the total Hamiltonian remains in $\mathbb{B}_{\Psi}$ for all times. No element of the material sector enters the spin dynamics.
 2. **The rotating frame is a rotor.** The transformation that removes the Larmor precession is conjugation by the unit real quaternion $\tilde u_{\mathrm r}(r'_t) = \exp(-\tfrac{\omega r'_t}{2}\vec e_z)\in\mathbb{B}_{H}$, the same one-parameter rotor that the spin-precession exercise uses. The frame is not an approximation; it is an exact change of description.
 3. **The effective Hamiltonian is static and traceless**,
    $$
@@ -14,9 +14,9 @@ This article presents the driven spin-1/2 in the biquaternion algebra $\mathbb{B
    $$
    and the generalized Rabi frequency is its spectral gap, $\Omega = \sqrt{(\omega_0-\omega)^2+\omega_1^2}$.
 4. **Resonance is the vanishing of the longitudinal component.** At $\omega = \omega_0$ the effective field is purely transverse, the effective Hamiltonian is $\propto i\vec e_x$, and the spin precesses about the transverse axis, so the two eigenstates exchange with unit amplitude after a $\pi$-pulse.
-5. **The transition probability is the normalised Hermitian form, read through the trace**, $P_\downarrow(r'_t) = \mathrm{Tr}(\tilde\Pi_2(\vec u_z)\tilde{Ϛ}(r'_t)^{*})$, and it equals the standard Rabi expression. The whole Rabi problem is thus a single rotor acting on an idempotent, read by the trace formula.
+5. **The transition probability is the normalised Hermitian form, read through the trace**, $P_\downarrow(r'_t) = \mathrm{Tr}(\tilde\Pi_2(\vec u_z)\tilde{Ϛ}_{\Psi}(r'_t)^{*})$, and it equals the standard Rabi expression. The whole Rabi problem is thus a single rotor acting on an idempotent, read by the trace formula.
 
-The notation is that of the read-list articles: $\tilde{S}_k =\frac{m\,c}{2\,k_m}i\vec e_k$, $\tilde\Pi_{1,2}(\vec u) = \tfrac12(e_t\pm i\vec u)$, $\tilde{Ϛ} = \tfrac12(e_t+i\vec r)$, $\mathrm{Tr}(\tilde Q_1\tilde Q_2)=2\,\mathrm{Sc}(\tilde Q_1\tilde Q_2)$, and the isomorphism $\mathsf{M}_2$ sends $e_t\mapsto I_2$, $i\vec e_k\mapsto\sigma_k$.
+The notation is that of the read-list articles: $\tilde{S}_{\Psi,k} =\frac{m\,c}{2\,k_m}i\vec e_k$, $\tilde\Pi_{1,2}(\vec u) = \tfrac12(e_t\pm i\vec u)$, $\tilde{Ϛ}_{\Psi} = \tfrac12(e_t+i\vec r)$, $\mathrm{Tr}(\tilde Q_1\tilde Q_2)=2\,\mathrm{Sc}(\tilde Q_1\tilde Q_2)$, and the isomorphism $\mathsf{M}_2$ sends $e_t\mapsto I_2$, $i\vec e_k\mapsto\sigma_k$.
 
 The companion articles supply the pieces:
 - Companion article *Spin-1/2 Quantum Physics in Biquaternionic Form*, for the spin operators and the two-level Hamiltonian.
@@ -34,7 +34,7 @@ $$
 \vec B(r'_t) = B_0\,\vec u_z + B_1\left(\cos\omega r'_t\,\vec u_x - \sin\omega r'_t\,\vec u_y\right)
 $$
 
-has the Hamiltonian $H(r'_t) = -\vec\mu\cdot\vec B(r'_t)$ with $\vec\mu = \gamma\vec S$. In the biquaternion algebra the spin operator is $\tilde S =\frac{m\,c}{2\,k_m}i \vec e_k$ along $\vec e_k$, and the Hamiltonian is the Hermitian element
+has the Hamiltonian $H(r'_t) = -\vec\mu\cdot\vec B(r'_t)$ with $\vec\mu = \gamma\vec S$. In the biquaternion algebra the spin operator is $\tilde S_{\Psi} =\frac{m\,c}{2\,k_m}i \vec e_k$ along $\vec e_k$, and the Hamiltonian is the Hermitian element
 
 $$
 \tilde R_\Psi(r'_t) = -\frac{m\,c\,\omega_{0}}{2\,k_m}\,i\vec e_z
@@ -135,10 +135,10 @@ a purely transverse effective Hamiltonian: the longitudinal component of the eff
 
 ### The Transition Probability
 
-Prepare the spin in the upper eigenstate of the static field, $\tilde{Ϛ}(0) = \tilde\Pi_1(\vec u_z)$, and ask for the probability of finding it in the lower eigenstate $\tilde\Pi_2(\vec u_z)$ at time $r'_t$. In the rotating frame the state evolves by the static Hamiltonian, so
+Prepare the spin in the upper eigenstate of the static field, $\tilde{Ϛ}_{\Psi}(0) = \tilde\Pi_1(\vec u_z)$, and ask for the probability of finding it in the lower eigenstate $\tilde\Pi_2(\vec u_z)$ at time $r'_t$. In the rotating frame the state evolves by the static Hamiltonian, so
 
 $$
-\tilde{Ϛ}_R(r'_t) = \tilde u_H(r'_t)\,\tilde{Ϛ}(0)\,\tilde u_H(r'_t)^{*},
+\tilde{Ϛ}_{\Psi,R}(r'_t) = \tilde u_H(r'_t)\,\tilde{Ϛ}_{\Psi}(0)\,\tilde u_H(r'_t)^{*},
 \qquad
 \tilde u_H(r'_t) = \exp\!\left(-\frac{k_m\,i\,\tilde{R}_{\Psi,R}\,r'_{t}}{m\,c}\right).
 $$
@@ -150,10 +150,10 @@ $$
 = \cos\frac{\Omega r'_t}{2}\,e_t - \sin\frac{\Omega r'_t}{2}\;\frac{\omega_1 \vec e_x + \Delta \vec e_z}{\Omega} .
 $$
 
-The exponent is a real quaternion, so $\tilde u_H\in\mathbb{B}_{H}$ is a rotor and the rotation it generates is a spatial rotation of the Bloch vector about $\vec u_R$ at the rate $\Omega$. The state in the laboratory frame is $\tilde{Ϛ}(r'_t) = \tilde u_{\mathrm r}(r'_t)\tilde{Ϛ}_R(r'_t)\tilde u_{\mathrm r}(r'_t)^{*}$, and the transition probability is the normalised Hermitian form, read through the trace with the fixed idempotent $\tilde\Pi_2(\vec u_z)$. Restoring the frame rotor and evaluating the trace gives the standard result
+The exponent is a real quaternion, so $\tilde u_H\in\mathbb{B}_{H}$ is a rotor and the rotation it generates is a spatial rotation of the Bloch vector about $\vec u_R$ at the rate $\Omega$. The state in the laboratory frame is $\tilde{Ϛ}_{\Psi}(r'_t) = \tilde u_{\mathrm r}(r'_t)\tilde{Ϛ}_{\Psi,R}(r'_t)\tilde u_{\mathrm r}(r'_t)^{*}$, and the transition probability is the normalised Hermitian form, read through the trace with the fixed idempotent $\tilde\Pi_2(\vec u_z)$. Restoring the frame rotor and evaluating the trace gives the standard result
 
 $$
-\boxed{\;P_{\downarrow}(r'_t) = \mathrm{Tr}\!\left(\tilde\Pi_2(\vec u_z)\,\tilde{Ϛ}(r'_t)\right)
+\boxed{\;P_{\downarrow}(r'_t) = \mathrm{Tr}\!\left(\tilde\Pi_2(\vec u_z)\,\tilde{Ϛ}_{\Psi}(r'_t)\right)
 = \frac{\omega_1^2}{\omega_1^2+\Delta^2}\,\sin^2\!\left(\frac{\sqrt{\omega_1^2+\Delta^2}}{2}\,r'_t\right)\;}.
 $$
 
@@ -191,7 +191,7 @@ The first is a $\pi$-pulse: it inverts the spin, carrying $\tilde\Pi_1(\vec u_z)
 
 ## The Bloch Picture
 
-The state at any time can be written $\tilde{Ϛ}(r'_t) = \tfrac12(e_t + i\vec r(r'_t))$, with $\vec r(r'_t)$ the Bloch vector. Substituting into the Schrödinger equation and using the commutator identity $[\tilde{R}_{\Psi,1},\tilde{R}_{\Psi,2}] = -2(\vec r_{\Psi,1}\times\vec r_{\Psi,2})$ of the companion article *Quantum Physics in Biquaternionic Form*, the Bloch vector obeys
+The state at any time can be written $\tilde{Ϛ}_{\Psi}(r'_t) = \tfrac12(e_t + i\vec r(r'_t))$, with $\vec r(r'_t)$ the Bloch vector. Substituting into the Schrödinger equation and using the commutator identity $[\tilde{R}_{\Psi,1},\tilde{R}_{\Psi,2}] = -2(\vec r_{\Psi,1}\times\vec r_{\Psi,2})$ of the companion article *Quantum Physics in Biquaternionic Form*, the Bloch vector obeys
 
 $$
 \boxed{\;d\vec r/dr'_t = \vec\omega_{\mathrm{eff}}\times\vec r\;},
@@ -249,7 +249,7 @@ $$
 
 The effective Hamiltonian is a spin observable along the unit vector $\vec u_R = (\omega_1 \vec e_x + \Delta \vec e_z)/\Omega$, with $\Delta = \omega_0-\omega$ the detuning and $\Omega = \sqrt{\omega_1^2+\Delta^2}$ the generalized Rabi frequency equal to its spectral gap. Resonance $\omega = \omega_0$ makes $\tilde{R}_{\Psi,R} = -\frac{m\,c\,\omega_{1}}{2\,k_m}i\vec e_x$ purely transverse, and then the spin precesses about the transverse axis.
 
-The transition probability is the normalised Hermitian form, read through the trace $P_\downarrow(r'_t) = \mathrm{Tr}(\tilde\Pi_2(\vec u_z)\tilde{Ϛ}(r'_t)^{*})$, and it equals the Rabi formula
+The transition probability is the normalised Hermitian form, read through the trace $P_\downarrow(r'_t) = \mathrm{Tr}(\tilde\Pi_2(\vec u_z)\tilde{Ϛ}_{\Psi}(r'_t)^{*})$, and it equals the Rabi formula
 
 $$
 P_\downarrow(r'_t) = \frac{\omega_1^2}{\omega_1^2+\Delta^2}\,\sin^2\!\left(\frac{\Omega r'_t}{2}\right),
@@ -266,7 +266,7 @@ which reduces to $\sin^2(\omega_1r'_t/2)$ on resonance. The $\pi$-pulse $r'_t = 
 | $i$ | Central scalar imaginary |
 | $\mathbb{B}_{\Psi}$ | Hermitian (informational) subspace; home of all Hamiltonians here |
 | $\mathbb{B}_{H}$ | Real-quaternion subspace; home of the frame rotor |
-| $\tilde{S}_k =\frac{m\,c}{2\,k_m}i\vec e_k$ | Spin observable along $\vec e_k$ |
+| $\tilde{S}_{\Psi,k} =\frac{m\,c}{2\,k_m}i\vec e_k$ | Spin observable along $\vec e_k$ |
 | $\vec B(r'_t) = B_0\vec u_z+B_1(\cos\omega r'_t\,\vec u_x-\sin\omega r'_t\,\vec u_y)$ | Static field plus corotating drive |
 | $\omega_0 = \gamma B_0$ | Larmor frequency |
 | $\omega_1 = \gamma B_1$ | Rabi frequency |

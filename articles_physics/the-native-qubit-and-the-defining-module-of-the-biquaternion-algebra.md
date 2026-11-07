@@ -121,7 +121,7 @@ $$
 
 the two summands being the minimal left ideals spanned by the first and second columns. Both are isomorphic to $S$; they are the two Peirce components of any complete set of matrix units. This is the algebraic origin of the framework's two-component spinor structure, and it is the reason the algebra, not the module, is four-complex-dimensional. The qubit's state vectors occupy one copy of $S$; the algebra is *two* copies of the same module, which is what allows an operator to mix the two components.
 
-It is worth separating the two uses of the word "state" that this structure produces. A **state vector** is an element of $S$; a **state**, in the quantum-mechanical sense of a statistical description, is a positive element of $\mathbb{B}_{\Psi}$ normalised by $\langle\tilde{Ϛ},e_t\rangle_{*}=\tfrac12$ (trace one in the $2\times2$ image), which is an operator on $S$. The vector and the operator are related by the rank-one correspondence of the next section. The framework keeps both, and the distinction is the same one that ordinary quantum physics draws between a ket and a density operator.
+It is worth separating the two uses of the word "state" that this structure produces. A **state vector** is an element of $S$; a **state**, in the quantum-mechanical sense of a statistical description, is a positive element of $\mathbb{B}_{\Psi}$ normalised by $\langle\tilde{Ϛ}_{\Psi},e_t\rangle_{*}=\tfrac12$ (trace one in the $2\times2$ image), which is an operator on $S$. The vector and the operator are related by the rank-one correspondence of the next section. The framework keeps both, and the distinction is the same one that ordinary quantum physics draws between a ket and a density operator.
 
 ## States on the Module
 
@@ -151,19 +151,19 @@ the two antipodal idempotents of the direction $\vec u$. Each satisfies $\tilde\
 
 ### The general state and the Hermitian form
 
-A general state is a positive element of $\mathbb{B}_{\Psi}$ normalised by $\langle\tilde{Ϛ},e_t\rangle_{*}=\tfrac12\langle e_t\rangle_{*}$,
+A general state is a positive element of $\mathbb{B}_{\Psi}$ normalised by $\langle\tilde{Ϛ}_{\Psi},e_t\rangle_{*}=\tfrac12\langle e_t\rangle_{*}$,
 
 $$
-\tilde{Ϛ} = \tfrac{1}{2}\bigl(e_t + i\vec r\bigr), \qquad \vec r\in\mathbb{R}^3,
+\tilde{Ϛ}_{\Psi} = \tfrac{1}{2}\bigl(e_t + i\vec r\bigr), \qquad \vec r\in\mathbb{R}^3,
 $$
 
 positive exactly when $|\vec r|\leq1$. It is the operator on $S$ with matrix $\tfrac12(I_2 + \vec r\cdot\boldsymbol{\sigma})$. The **Hermitian form** between a state and an observable $\tilde R_\Psi\in\mathbb{B}_{\Psi}$ is
 
 $$
-\langle\tilde{Ϛ},\tilde R_\Psi\rangle_{*} = \mathrm{Sc}(\tilde{Ϛ}\tilde R_\Psi^{*}),
+\langle\tilde{Ϛ}_{\Psi},\tilde R_\Psi\rangle_{*} = \mathrm{Sc}(\tilde{Ϛ}_{\Psi}\tilde R_\Psi^{*}),
 $$
 
-and the Born weight is $\langle\tilde{Ϛ},\tilde R_\Psi\rangle_{*}/\langle\tilde{Ϛ},e_t\rangle_{*}$. For a pure state $\tilde\Pi = |u\rangle\langle u|$ it reproduces the module inner product,
+and the Born weight is $\langle\tilde{Ϛ}_{\Psi},\tilde R_\Psi\rangle_{*}/\langle\tilde{Ϛ}_{\Psi},e_t\rangle_{*}$. For a pure state $\tilde\Pi = |u\rangle\langle u|$ it reproduces the module inner product,
 
 $$
 \boxed{\;\frac{\langle\tilde\Pi,\tilde R_\Psi\rangle_{*}}{\langle\tilde\Pi,e_t\rangle_{*}} = \langle u|H|u\rangle\;},
@@ -173,10 +173,10 @@ where $H$ is the matrix image of $\tilde R_\Psi$. On $\mathbb{B}_{\Psi}$ the sta
 
 ### Mixed states and the density-operator correspondence
 
-A general state $\tilde{Ϛ}$ is a convex combination of pure states,
+A general state $\tilde{Ϛ}_{\Psi}$ is a convex combination of pure states,
 
 $$
-\tilde{Ϛ} = \lambda_+\,\tilde\Pi_1(\vec u_r) + \lambda_-\,\tilde\Pi_2(\vec u_r),
+\tilde{Ϛ}_{\Psi} = \lambda_+\,\tilde\Pi_1(\vec u_r) + \lambda_-\,\tilde\Pi_2(\vec u_r),
 \qquad \lambda_\pm = \tfrac{1}{2}\bigl(1\pm|\vec r|\bigr),
 $$
 
@@ -201,7 +201,7 @@ $$
 which is a real scalar. Positivity of the operator is the non-negativity of the biquaternion norm together with $c r_t\geq0$: the biquaternion norm is the determinant of the matrix image, $\langle\tilde R_\Psi\rangle_{\natural} = \det M(\tilde R_\Psi)\,e_t$, so it vanishes on the boundary of the positive cone as well as outside it, and only the sign of $c r_t$ selects the future cone. For a state
 
 $$
-\boxed{\;\langle\tilde{Ϛ}\rangle_{\natural} = \tfrac{1}{4}\bigl(1 - |\vec r|^2\bigr)e_t\;}.
+\boxed{\;\langle\tilde{Ϛ}_{\Psi}\rangle_{\natural} = \tfrac{1}{4}\bigl(1 - |\vec r|^2\bigr)e_t\;}.
 $$
 
 The biquaternion norm therefore measures the departure of a state from the boundary of the Bloch ball, and it vanishes precisely on the rank-one idempotents — the rays of the module. On the pure states the algebra's biquaternion norm has a nonzero kernel; that degenerate cone is the module's set of rays, and it is the geometric reason the rank-one idempotents are the zero divisors of $\mathbb{B}_{\Psi}$.
@@ -211,16 +211,16 @@ The biquaternion norm therefore measures the departure of a state from the bound
 The module's state is fixed by the three expectations of the coordinate observables $i\vec e_k$, $k=1,2,3$:
 
 $$
-r_k = \frac{\langle\tilde{Ϛ},i\vec e_k\rangle_{*}}{\langle\tilde{Ϛ},e_t\rangle_{*}} = \langle \sigma_k\rangle_{*} ,
+r_k = \frac{\langle\tilde{Ϛ}_{\Psi},i\vec e_k\rangle_{*}}{\langle\tilde{Ϛ}_{\Psi},e_t\rangle_{*}} = \langle \sigma_k\rangle_{*} ,
 $$
 
 so the state is reconstructed from three real numbers obtained by measuring the three Pauli observables. Equivalently, since
 
 $$
-p_k^{\pm} = \frac{\langle\tilde{Ϛ},\tilde\Pi_{1,2}(\vec u_k)\rangle_{*}}{\langle\tilde{Ϛ},e_t\rangle_{*}} = 2\,\mathrm{Sc}\bigl(\tilde{Ϛ}\,\tilde\Pi_{1,2}(\vec u_k)^{*}\bigr) = \tfrac12\bigl(1 \pm r_k\bigr),
+p_k^{\pm} = \frac{\langle\tilde{Ϛ}_{\Psi},\tilde\Pi_{1,2}(\vec u_k)\rangle_{*}}{\langle\tilde{Ϛ}_{\Psi},e_t\rangle_{*}} = 2\,\mathrm{Sc}\bigl(\tilde{Ϛ}_{\Psi}\,\tilde\Pi_{1,2}(\vec u_k)^{*}\bigr) = \tfrac12\bigl(1 \pm r_k\bigr),
 $$
 
-the three pairs of outcome probabilities determine $\vec r$ and hence the state; the trace form $\mathrm{Tr}(\tilde{Ϛ}\,\tilde\Pi_{1,2}(\vec u_k)^{*})=\mathrm{Tr}(\tilde{Ϛ}\,\tilde\Pi_{1,2}(\vec u_k))$ is the $2\times2$ reading, with $\operatorname{Tr}(\tilde{Ϛ})=1$; the star is inert and the unstarred trace is real and non-negative. This is the elementary tomographic completeness of the three coordinate measurements, and it is the module-level content of the mutually unbiased bases of a qubit. The module carries no further state parameters: it has complex dimension two, its rays are parametrized by two real angles, and its states by three real numbers.
+the three pairs of outcome probabilities determine $\vec r$ and hence the state; the trace form $\mathrm{Tr}(\tilde{Ϛ}_{\Psi}\,\tilde\Pi_{1,2}(\vec u_k)^{*})=\mathrm{Tr}(\tilde{Ϛ}_{\Psi}\,\tilde\Pi_{1,2}(\vec u_k))$ is the $2\times2$ reading, with $\operatorname{Tr}(\tilde{Ϛ}_{\Psi})=1$; the star is inert and the unstarred trace is real and non-negative. This is the elementary tomographic completeness of the three coordinate measurements, and it is the module-level content of the mutually unbiased bases of a qubit. The module carries no further state parameters: it has complex dimension two, its rays are parametrized by two real angles, and its states by three real numbers.
 
 ## What the Module Supplies and What It Does Not
 
@@ -315,7 +315,7 @@ The module question is settled by the algebra; the composition question is not. 
 
 The elementary informational unit of the biquaternion framework is the defining module of the algebra. Because $\mathbb{B}\cong M_2(\mathbb{C})$ is a simple finite-dimensional complex algebra, it has a unique simple left module $S=\mathbb{C}^2$, the column space, and every irreducible representation is equivalent to the action on $S$. The qubit is therefore native to the algebra: it is what the algebra is a matrix algebra of, not a Hilbert space adjoined to it.
 
-On the module, the elements of $\mathbb{B}_{\Psi}$ act as Hermitian operators; the rank-one idempotents $\tilde\Pi_{1,2}(\vec u) = \tfrac12(e_t\pm i\vec u)$ correspond bijectively to the rays of $S$, and are exactly the pure states; the normalised Hermitian form $\langle\tilde\Pi,\tilde R_\Psi\rangle_{*}/\langle\tilde\Pi,e_t\rangle_{*}=2\,\mathrm{Sc}(\tilde\Pi\tilde R_\Psi^{*})=2\langle\tilde\Pi,\tilde R_\Psi\rangle_{*}$ is the Born rule and coincides with the module expectation value $\langle u|H|u\rangle$; its $2\times2$ reading is the trace formula. A general state $\tilde{Ϛ} = \tfrac12(e_t+i\vec r)$ is a positive element normalised by $\langle\tilde{Ϛ},e_t\rangle_{*}=\tfrac12$ (trace one in the image) with spectral decomposition into two rays, and the biquaternion norm $\langle\tilde{Ϛ}\rangle_{\natural} = \tfrac14(1-|\vec r|^2)e_t$ vanishes exactly on the rays, so that the pure states are the zero divisors of $\mathbb{B}_{\Psi}$ and the Bloch ball is the state slice of the positive cone. The left regular module is $\mathbb{B}\cong S\oplus S$, an algebraic doubling whose informational content is left open.
+On the module, the elements of $\mathbb{B}_{\Psi}$ act as Hermitian operators; the rank-one idempotents $\tilde\Pi_{1,2}(\vec u) = \tfrac12(e_t\pm i\vec u)$ correspond bijectively to the rays of $S$, and are exactly the pure states; the normalised Hermitian form $\langle\tilde\Pi,\tilde R_\Psi\rangle_{*}/\langle\tilde\Pi,e_t\rangle_{*}=2\,\mathrm{Sc}(\tilde\Pi\tilde R_\Psi^{*})=2\langle\tilde\Pi,\tilde R_\Psi\rangle_{*}$ is the Born rule and coincides with the module expectation value $\langle u|H|u\rangle$; its $2\times2$ reading is the trace formula. A general state $\tilde{Ϛ}_{\Psi} = \tfrac12(e_t+i\vec r)$ is a positive element normalised by $\langle\tilde{Ϛ}_{\Psi},e_t\rangle_{*}=\tfrac12$ (trace one in the image) with spectral decomposition into two rays, and the biquaternion norm $\langle\tilde{Ϛ}_{\Psi}\rangle_{\natural} = \tfrac14(1-|\vec r|^2)e_t$ vanishes exactly on the rays, so that the pure states are the zero divisors of $\mathbb{B}_{\Psi}$ and the Bloch ball is the state slice of the positive cone. The left regular module is $\mathbb{B}\cong S\oplus S$, an algebraic doubling whose informational content is left open.
 
 What the module does not supply is the composition rule for several qubits: the tensor product $\mathbb{B}\otimes\mathbb{B}$ and its four-dimensional module are an additional structure. That, and not the definition of the unit, is where the framework's informational assumptions become substantive. The composition can be tested, and the test is negative in a precise sense. The array of amplitudes of a two-qubit state is a $2\times2$ matrix whose hyperdeterminant $\mathrm{Det}(\mathbf c)=c_{00}c_{11}-c_{01}c_{10}$ vanishes exactly on the product states and whose modulus, normalised, is the concurrence; the product states are the Segre quadric $\mathbb{P}^1\times\mathbb{P}^1\subset\mathbb{P}^3$, and the maximally entangled states are a copy of $\mathbb{RP}^3$. The hyperdeterminant is not the biquaternion norm of anything, the two quadratic forms on the four coefficients are not related by an automorphism of the algebra, and the rank and the determinant of $\mathsf M_2$ do not track separability at all: the matrix image of $|00\rangle$ is the identity. The carrier is native, the composition is not, and the difference is a named invariant rather than a vague reservation.
 
@@ -334,10 +334,10 @@ What the module does not supply is the composition rule for several qubits: the 
 | $\tilde{Q}^{*}$ | Hermitian conjugate (anti-linear involution) |
 | $\langle\tilde{Q}\rangle_{\natural} = \tilde{Q}\tilde{Q}^{\natural} = \sum_\mu Q_\mu^2$ | Biquaternion norm |
 | $\tilde\Pi_{1,2}(\vec u) = \tfrac12(e_t\pm i\vec u)$ | Rank-one idempotents (pure states) |
-| $\tilde{Ϛ} = \tfrac12(e_t + i\vec r)$ | State with Bloch vector $\vec r$, $|\vec r|\le1$ |
+| $\tilde{Ϛ}_{\Psi} = \tfrac12(e_t + i\vec r)$ | State with Bloch vector $\vec r$, $|\vec r|\le1$ |
 | $\operatorname{Tr}(\tilde\Pi\tilde R_\Psi^{*})=\operatorname{Tr}(\tilde\Pi\tilde R_\Psi)=2\langle\tilde\Pi,\tilde R_\Psi\rangle_{*}=2\,\mathrm{Sc}(\tilde\Pi\tilde R_\Psi^{*}) = \langle u|H|u\rangle_{*}$ | Trace reading of the Hermitian form; the $2\times2$ reading of the Born rule |
-| $r_k = 2\langle\tilde{Ϛ},i\vec e_k\rangle_{*} = \mathrm{Tr}(\tilde{Ϛ}\,(i\vec e_k)^{*})$ | Bloch components (tomography) |
-| $\langle\tilde{Ϛ}\rangle_{\natural} = \tfrac14(1-|\vec r|^2)e_t$ | Biquaternion norm of a state |
+| $r_k = 2\langle\tilde{Ϛ}_{\Psi},i\vec e_k\rangle_{*} = \mathrm{Tr}(\tilde{Ϛ}_{\Psi}\,(i\vec e_k)^{*})$ | Bloch components (tomography) |
+| $\langle\tilde{Ϛ}_{\Psi}\rangle_{\natural} = \tfrac14(1-|\vec r|^2)e_t$ | Biquaternion norm of a state |
 | $\mathbf c=(c_{A_1A_2})$ | Amplitude array of a two-qubit state, the $2\times2$ matrix of the four amplitudes |
 | $\mathrm{Det}(\mathbf c)=c_{00}c_{11}-c_{01}c_{10}$ | Hyperdeterminant of format $2\times2$; it vanishes exactly on the product states |
 

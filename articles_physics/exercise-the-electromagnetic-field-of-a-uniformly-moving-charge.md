@@ -4,7 +4,7 @@
 
 This is an exercise in the electromagnetism series. It is the exactly solvable special case of its direct parent, *Exercise: The Electromagnetic Field of a Moving Charge*, which performs the Liénard–Wiechert differentiation for a charge on an arbitrary subluminal worldline and verifies the velocity–acceleration split; that exercise is in turn the downstream case declared by *Radiation from Accelerated Charges in Biquaternionic Form*, the theory article that supplies the retarded solution. The special case treated here is **uniform motion**, $d\vec v/dr'_{\mathrm{ret},t} \equiv 0$. Then the acceleration field vanishes identically, the field reduces to the Lorentz-boosted Coulomb field, and — this is the point of singling the case out — the retarded position can be written in **closed form**, so the entire field is available in closed form in terms of the *present* position of the charge. Nothing in the parent is changed; every object used below is inherited from it and from its own parents, and no new formalism is introduced.
 
-**What is assumed.** The algebra, the sectors, the conjugations, the gradient and the d'Alembertian are those of *Algebra and Element Conventions*, *Operator and Calculus Conventions* and *Frame and Metric Conventions*, and none is restated here. The field-strength biquaternion $\tilde{F} = i\sqrt{\epsilon}\,\vec E - \sqrt{\mu}\,\vec H$ (pure vector), the potential $\tilde{A} = i\,a'_te_t + \vec A$, and the source $\sqrt{\mu}\,\tilde{J} = \frac{i\rho}{\sqrt{\epsilon}}e_t + \sqrt{\mu}\,\vec J$ (here $\rho$ is the charge density, not a distance). The permittivity and permeability $\epsilon,\mu$ with $c = 1/\sqrt{\epsilon\mu}$, and $\vec H = \vec B/\mu$. No object of the informational sector arises below; the boost rotor is invoked only in Problem 5.
+**What is assumed.** The algebra, the sectors, the conjugations, the gradient and the d'Alembertian are those of *Algebra and Element Conventions*, *Operator and Calculus Conventions* and *Frame and Metric Conventions*, and none is restated here. The field-strength biquaternion $\tilde{F} = i\sqrt{\epsilon}\,\vec E - \sqrt{\mu}\,\vec H$ (pure vector), the potential $\tilde{A}_{\Phi} = i\,a'_te_t + \vec A$, and the source $\sqrt{\mu}\,\tilde{J}_{\Phi} = \frac{i\rho}{\sqrt{\epsilon}}e_t + \sqrt{\mu}\,\vec J$ (here $\rho$ is the charge density, not a distance). The permittivity and permeability $\epsilon,\mu$ with $c = 1/\sqrt{\epsilon\mu}$, and $\vec H = \vec B/\mu$. No object of the informational sector arises below; the boost rotor is invoked only in Problem 5.
 
 **What is inherited from the parent.** The charge $ϙ$ moves on the worldline $x_q(r'_t)\,\vec e_x+y_q(r'_t)\,\vec e_y+z_q(r'_t)\,\vec e_z$ with coordinate velocity $\vec v(r'_t)$ and $\vec\beta = \vec v/c$. The retarded time is defined implicitly by
 $$
@@ -20,7 +20,7 @@ $$
 \qquad
 D = R\kappa,
 $$
-the Liénard–Wiechert potential is $\tilde{A} = \frac{\mu ϙ}{4\pi D}\tilde{V}$ with $\tilde{V} = ic\,e_t + \vec v(r'_{\mathrm{ret},t})$. The field splits exactly into a velocity part and an acceleration part, and for the velocity part the parent's closed component formula is
+the Liénard–Wiechert potential is $\tilde{A}_{\Phi} = \frac{\mu ϙ}{4\pi D}\tilde{V}_{\Phi}$ with $\tilde{V}_{\Phi} = ic\,e_t + \vec v(r'_{\mathrm{ret},t})$. The field splits exactly into a velocity part and an acceleration part, and for the velocity part the parent's closed component formula is
 $$
 \vec E_v = \frac{ϙ}{4\pi\epsilon}\,\frac{(1-\beta^2)\left(\vec u_R-\vec\beta\right)}{\kappa^3 R^2},
 \qquad
@@ -271,9 +271,9 @@ $$
 \qquad
 \tanh\theta_{\mathrm{rpd},b} = \frac{v_b}{c},
 $$
-**carries the laboratory to the frame moving with $+\vec v_b$**. On the rest four-velocity $\tilde{V}_0 = ic\,e_t$, using $\tilde U_{\vec v_b}^{*} = \tilde U_{\vec v_b}$ (a pure boost is Hermitian),
+**carries the laboratory to the frame moving with $+\vec v_b$**. On the rest four-velocity $\tilde{V}_{\Phi,0} = ic\,e_t$, using $\tilde U_{\vec v_b}^{*} = \tilde U_{\vec v_b}$ (a pure boost is Hermitian),
 $$
-\tilde U_{\vec v_b}\,\tilde{V}_0\,\tilde U_{\vec v_b}^{*}
+\tilde U_{\vec v_b}\,\tilde{V}_{\Phi,0}\,\tilde U_{\vec v_b}^{*}
 = ic\,\tilde U_{\vec v_b}^2
 = ic\left(\cosh\theta_{\mathrm{rpd},b} + i\sinh\theta_{\mathrm{rpd},b}\,\vec u\right)
 = ic\cosh\theta_{\mathrm{rpd},b} - c\sinh\theta_{\mathrm{rpd},b}\,\vec u,
@@ -363,7 +363,7 @@ The field is of electric type, is **not** null, and is not a zero divisor: $\lan
 2. **Strictly uniform motion only.** The exact reduction to the boosted Coulomb field requires $d\vec v/dr'_{\mathrm{ret},t}\equiv0$, so that the charge's rest frame is inertial for all time. A charge that is only *instantaneously* unaccelerated at the emission event still carries the parent's acceleration field $\vec E_a$ at that event; the uniform-motion result is the limit in which that field is absent everywhere, and we did not attempt to bound the "almost uniform" correction.
 3. **The $\beta\to1$ behaviour of the closed-form retarded position.** The coefficient of $R^2$ in the quadratic degenerates as $\beta\to1$: for a field point ahead of the charge along the motion ($d_\parallel>0$) the closed form gives $R\sim2d_\parallel\gamma^2\to\infty$, while for one behind it ($d_\parallel<0$) $R\to(d_\parallel^2+d_\perp^2)/(2|d_\parallel|)$, finitely (checked numerically at $\beta$ up to $0.99999$). The present-position field is finite throughout, so the limit $\beta\to1$ does not commute with reading $R$ off the quadratic. We did not pursue the caustic $\kappa\to0$ or superluminal worldlines; that remains the parent's gap 3.
 4. **The similarity law is used, not derived.** We inherited $\tilde{F}_2 = \tilde U^{\natural}_{\vec v_b}\tilde{F}\tilde U_{\vec v_b}$ from the parent and verified it numerically against the standard boost, but did not derive it from the biquaternion representation of the rank-two field. That derivation remains the parent's Further Problem 3.
-5. **The overall normalization of $\tilde{F} = \tilde{\nabla}^{\natural}\tilde{A}$.** The Maxwell article records a normalization caveat for this identification; we used the parent's fixed normalization and did not re-examine it.
+5. **The overall normalization of $\tilde{F} = \tilde{\nabla}^{\natural}\tilde{A}_{\Phi}$.** The Maxwell article records a normalization caveat for this identification; we used the parent's fixed normalization and did not re-examine it.
 
 ## Summary
 
@@ -400,8 +400,8 @@ Two things are recorded rather than closed. The first is a clarification: "purel
 | $\tilde{\nabla}, \tilde{\nabla}^{\natural}, \Box = \tilde{\nabla}\tilde{\nabla}^{\natural}$ | Biquaternionic gradient, its quaternion conjugate, d'Alembertian |
 | $\partial/\partial R_t = -\frac{i}{c}\partial/\partial r'_t$ | Temporal component of the gradient |
 | $\tilde{F} = i\sqrt{\epsilon}\,\vec E - \sqrt{\mu}\,\vec H$ | Field-strength biquaternion (pure vector) |
-| $\tilde{A} = i\,a'_te_t + \vec A$ | Potential biquaternion |
-| $\tilde J = ic\rho\,e_t + \vec J$ | Four-current; the source is $\sqrt{\mu}\,\tilde J$, with $\rho$ the charge density |
+| $\tilde{A}_{\Phi} = i\,a'_te_t + \vec A$ | Potential biquaternion |
+| $\tilde J_{\Phi} = ic\rho\,e_t + \vec J$ | Four-current; the source is $\sqrt{\mu}\,\tilde J_{\Phi}$, with $\rho$ the charge density |
 | $\epsilon, \mu$, $c = 1/\sqrt{\epsilon\mu}$ | Permittivity, permeability, speed of light in the medium |
 | $\vec H = \vec B/\mu$ | Magnetic field; $\vec B$ the magnetic induction |
 | $ϙ$, $x_q(r'_t)\,\vec e_x+y_q(r'_t)\,\vec e_y+z_q(r'_t)\,\vec e_z$, $\vec v(r'_t)$ | Charge, worldline, coordinate velocity |

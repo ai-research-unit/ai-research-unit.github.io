@@ -9,7 +9,7 @@ The two themes are one. A signal is a null displacement, and a null displacement
 The article develops the following.
 
 - **Signals are null displacements.** Two events are joined by a light signal exactly when their displacement is a zero divisor. Writing the signal direction as $\vec u_{\mathrm s}$, the null condition is $\Delta(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z) = \pm c\,\Delta r'_t\,\vec u_{\mathrm s}$, and the retarded and advanced combinations $r'_{\mathrm{ret},t} = r'_t - \vec u_{\mathrm s}\cdot(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)/c$, $r'_{\mathrm{adv},t} = r'_t + \vec u_{\mathrm s}\cdot(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)/c$ are constant along the outgoing and incoming rays.
-- **Clocks read proper time.** The proper time of a worldline is the integral of $\sqrt{-\langle d\tilde R_\Phi\rangle_{\natural}}/c$, and the clock four-velocity is $\tilde{V} = d\tilde R_\Phi/d\tau$ with $\langle\tilde{V}\rangle_{\natural} = -c^2$.
+- **Clocks read proper time.** The proper time of a worldline is the integral of $\sqrt{-\langle d\tilde R_\Phi\rangle_{\natural}}/c$, and the clock four-velocity is $\tilde{V}_{\Phi} = d\tilde R_\Phi/d\tau$ with $\langle\tilde{V}_{\Phi}\rangle_{\natural} = -c^2$.
 - **Einstein synchronisation is the round trip.** The reflection event is assigned the mid-time, $r'_{t,2} = (r'_{t,1}+r'_{t,3})/2$, and the distance is $L = c(r'_{t,3}-r'_{t,1})/2$. The assignment fixes the one-way speed of light by convention; only the round-trip speed is directly measured.
 - **The exchange of frequency is the k-factor.** The ratio of received to emitted intervals between two relatively moving observers is Bondi's $k = \sqrt{(1+\beta)/(1-\beta)}$, the reciprocal of the longitudinal Doppler factor of the companion article *Exercise: The Relativistic Doppler Effect*, and $k$-factors multiply under composition.
 - **Simultaneity is frame-dependent.** Under a boost the scalar component of a displacement transforms so that a set of clocks synchronised in one frame is desynchronised in another by $\Delta r'_t = \gamma v_b\,\Delta x_2/c^2$.
@@ -71,17 +71,17 @@ $$
 \langle\tilde{Q}_{BA}\rangle_{\natural} = -c^2\,\Delta r'_{\mathrm{ret},t}\,\Delta r'_t_{\mathrm{adv}} .
 $$
 
-A signal therefore satisfies $\Delta r'_{\mathrm{ret},t} = 0$ or $\Delta r'_t_{\mathrm{adv}} = 0$, and a null plane wave has a phase proportional to one of them. For a wave of four-wavevector $\tilde P =\frac{m\,c\,(i\omega/c\,e_t + \vec k)}{k_m}$ propagating along $\vec u_k$, the phase of the companion article *Exercise: The Relativistic Doppler Effect*,
+A signal therefore satisfies $\Delta r'_{\mathrm{ret},t} = 0$ or $\Delta r'_t_{\mathrm{adv}} = 0$, and a null plane wave has a phase proportional to one of them. For a wave of four-wavevector $\tilde P_{\Phi} =\frac{m\,c\,(i\omega/c\,e_t + \vec k)}{k_m}$ propagating along $\vec u_k$, the phase of the companion article *Exercise: The Relativistic Doppler Effect*,
 
 $$
-Ξ = \mathrm{Sc}\!\left(\tilde P\tilde{Q}^{\natural}\right) = \vec k\cdot(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z) - \omega r'_t = -\omega\left(r'_t - \frac{\vec u_k\cdot(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)}{c}\right) = -\omega\,r'_{\mathrm{ret},t},
+Ξ = \mathrm{Sc}\!\left(\tilde P_{\Phi}\tilde{Q}^{\natural}\right) = \vec k\cdot(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z) - \omega r'_t = -\omega\left(r'_t - \frac{\vec u_k\cdot(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)}{c}\right) = -\omega\,r'_{\mathrm{ret},t},
 $$
 
 is the retarded coordinate multiplied by the frequency. The algebra's phase invariant is thus the statement that an exchange is labelled by a single null coordinate, and it is this coordinate that the signal carries from emitter to receiver.
 
 ### Relays and Superpositions
 
-If $A \rightsquigarrow B$ and $B \rightsquigarrow C$ are two light exchanges, the sum $\tilde{Q}_{BA}+\tilde{Q}_{CB}$ is the displacement from $A$ to $C$ by a relay, and by the transitivity result of the companion article it is future-directed nonspacelike. It is strictly timelike unless the two legs are collinear and in the same direction, in which case it is null; a bent light path through $B$ no longer covers its ends at speed $c$, which is why a relay of two signals can carry information from $A$ to $C$ only within the cone. The linearity of the wave operator makes the same point for superpositions: since the transformation $\tilde P \mapsto \tilde U\tilde P\tilde U^{*}$ is linear, a superposition of two wavevectors transforms componentwise, and each component carries its own Doppler factor. A numerical check on a two-component superposition confirms that the transformed superposition is the sum of the transformed components, so the frequency exchange below applies to each monochromatic component of a general signal independently.
+If $A \rightsquigarrow B$ and $B \rightsquigarrow C$ are two light exchanges, the sum $\tilde{Q}_{BA}+\tilde{Q}_{CB}$ is the displacement from $A$ to $C$ by a relay, and by the transitivity result of the companion article it is future-directed nonspacelike. It is strictly timelike unless the two legs are collinear and in the same direction, in which case it is null; a bent light path through $B$ no longer covers its ends at speed $c$, which is why a relay of two signals can carry information from $A$ to $C$ only within the cone. The linearity of the wave operator makes the same point for superpositions: since the transformation $\tilde P_{\Phi} \mapsto \tilde U\tilde P_{\Phi}\tilde U^{*}$ is linear, a superposition of two wavevectors transforms componentwise, and each component carries its own Doppler factor. A numerical check on a two-component superposition confirms that the transformed superposition is the sum of the transformed components, so the frequency exchange below applies to each monochromatic component of a general signal independently.
 
 ## Clocks and Proper Time
 
@@ -119,7 +119,7 @@ The biquaternion form has one structural advantage over the component form: the 
 Differentiating the worldline with respect to proper time gives the **four-velocity**
 
 $$
-\tilde{V} = \frac{d\tilde R_\Phi}{d\tau}
+\tilde{V}_{\Phi} = \frac{d\tilde R_\Phi}{d\tau}
 = \frac{d\tilde R_\Phi}{dr'_t}\frac{dr'_t}{d\tau}
 = \gamma\left(ic\,e_t + \vec v\right),
 $$
@@ -127,10 +127,10 @@ $$
 an element of $\mathbb{B}_{\Phi}$ whose biquaternion norm is fixed:
 
 $$
-\langle\tilde{V}\rangle_{\natural} = \gamma^2\left((ic)^2 + \vec v^2\right) = \gamma^2\left(-c^2+\vec v^2\right) = -c^2 .
+\langle\tilde{V}_{\Phi}\rangle_{\natural} = \gamma^2\left((ic)^2 + \vec v^2\right) = \gamma^2\left(-c^2+\vec v^2\right) = -c^2 .
 $$
 
-Every clock, whatever its state of motion, carries a four-velocity of the same biquaternion norm $-c^2$. This normalization is the algebraic statement that proper time is the parameter with respect to which the four-velocity is a unit vector of $\mathbb{B}_{\Phi}$, and it is the object in terms of which the frequency exchange of the next sections is written. A clock at rest has $\tilde{V} = ic\,e_t$; a clock moving with velocity $\vec v$ has the four-velocity above. The two are related by the boost rotor, and the relation between their interpretations is the content of the twins' effect below.
+Every clock, whatever its state of motion, carries a four-velocity of the same biquaternion norm $-c^2$. This normalization is the algebraic statement that proper time is the parameter with respect to which the four-velocity is a unit vector of $\mathbb{B}_{\Phi}$, and it is the object in terms of which the frequency exchange of the next sections is written. A clock at rest has $\tilde{V}_{\Phi} = ic\,e_t$; a clock moving with velocity $\vec v$ has the four-velocity above. The two are related by the boost rotor, and the relation between their interpretations is the content of the twins' effect below.
 
 ## The Radar Method and Einstein Synchronisation
 
@@ -248,7 +248,7 @@ $$
 \tanh\theta_{\mathrm{rpd}} = \frac{v_b}{c},
 $$
 
-of the companion article *The Lorentz Transformation as a Biquaternionic Rotation*. For a displacement $\tilde{A} = i a\,e_t + \vec A$ of $\mathbb{B}_{\Phi}$, with $a = c\,\Delta r'_t$ and $\vec A = \Delta(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)$, the scalar component transforms by the component action verified in the companion article *Exercise: Boosting a Four-Velocity and Rapidity Composition*:
+of the companion article *The Lorentz Transformation as a Biquaternionic Rotation*. For a displacement $\tilde{A}_{\Phi} = i a\,e_t + \vec A$ of $\mathbb{B}_{\Phi}$, with $a = c\,\Delta r'_t$ and $\vec A = \Delta(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)$, the scalar component transforms by the component action verified in the companion article *Exercise: Boosting a Four-Velocity and Rapidity Composition*:
 
 $$
 a = \gamma\left(a_2 + \beta A_{2,\parallel}\right),
@@ -343,7 +343,7 @@ The exchange of information and the synchronisation of clocks are built from the
 
 1. **Signals are null displacements.** Two events are joined by a light signal exactly when their displacement is null, $|\Delta(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)| = c\,\Delta r'_t$, that is, when it is a zero divisor of $\mathbb{B}$. The signal direction satisfies $\Delta(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z) = \pm c\,\Delta r'_t\,\vec u_{\mathrm s}$, and the retarded coordinate $r'_{\mathrm{ret},t} = r'_t-\vec u_{\mathrm s}\cdot(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)/c$ is constant along an outgoing ray. A null plane wave has phase $Ξ = -\omega r'_{\mathrm{ret},t}$.
 
-2. **Clocks read proper time.** The proper time is $\Delta\tau = \int\sqrt{-\langle d\tilde R_\Phi\rangle_{\natural}}/c = \int\sqrt{1-\vec v^2/c^2}\,dr'_t$, and the clock four-velocity is $\tilde{V} = d\tilde R_\Phi/d\tau = \gamma(ic\,e_t+\vec v)$ with $\langle\tilde{V}\rangle_{\natural} = -c^2$.
+2. **Clocks read proper time.** The proper time is $\Delta\tau = \int\sqrt{-\langle d\tilde R_\Phi\rangle_{\natural}}/c = \int\sqrt{1-\vec v^2/c^2}\,dr'_t$, and the clock four-velocity is $\tilde{V}_{\Phi} = d\tilde R_\Phi/d\tau = \gamma(ic\,e_t+\vec v)$ with $\langle\tilde{V}_{\Phi}\rangle_{\natural} = -c^2$.
 
 3. **Einstein synchronisation is the round trip.** For emission at $r'_{t,1}$, reflection at $r'_{t,2}$, reception at $r'_{t,3}$, the null conditions give $r'_{t,2} = (r'_{t,1}+r'_{t,3})/2$ and the distance $L = c(r'_{t,3}-r'_{t,1})/2$. The split of the round trip into one-way times is fixed by the convention $r'_{t,2} = r'_{t,1}+\varepsilon(r'_{t,3}-r'_{t,1})$; the round-trip time is independent of $\varepsilon$, and only the two-way speed of light is measured.
 
@@ -371,10 +371,10 @@ The exchange of information and the synchronisation of clocks are built from the
 | $\mathrm{Sc}$ | Scalar projection |
 | $\vec u_{\mathrm s}$ | Propagation direction |
 | $r'_{\mathrm{ret},t} = r'_t-\vec u_{\mathrm s}\cdot(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)/c$, $r'_{\mathrm{adv},t} = r'_t+\vec u_{\mathrm s}\cdot(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)/c$ | Retarded and advanced radar coordinates |
-| $\tilde P = i\omega/c\,e_t+\vec k$ | Four-wavevector |
-| $Ξ = \mathrm{Sc}(\tilde P\tilde{Q}^{\natural}) = -\omega r'_{\mathrm{ret},t}$ | Plane-wave phase |
+| $\tilde P_{\Phi} = i\omega/c\,e_t+\vec k$ | Four-wavevector |
+| $Ξ = \mathrm{Sc}(\tilde P_{\Phi}\tilde{Q}^{\natural}) = -\omega r'_{\mathrm{ret},t}$ | Plane-wave phase |
 | $\tau$, $\Delta\tau$ | Proper time |
-| $\tilde{V} = \gamma(ic\,e_t+\vec v)$, $\langle\tilde{V}\rangle_{\natural}=-c^2$ | Clock four-velocity |
+| $\tilde{V}_{\Phi} = \gamma(ic\,e_t+\vec v)$, $\langle\tilde{V}_{\Phi}\rangle_{\natural}=-c^2$ | Clock four-velocity |
 | $\beta = v_b/c$, $\gamma = (1-\beta^2)^{-1/2}$ | Dimensionless speed and Lorentz factor |
 | $\tilde U = \cosh\frac{\theta_{\mathrm{rpd}}}{2}+i\sinh\frac{\theta_{\mathrm{rpd}}}{2}\vec u_{\mathrm b}$ | Boost rotor, $\tanh\theta_{\mathrm{rpd}}=\beta$ |
 | $r'_{t,1},r'_{t,2},r'_{t,3}$ | Emission, reflection and reception times of the radar round trip |

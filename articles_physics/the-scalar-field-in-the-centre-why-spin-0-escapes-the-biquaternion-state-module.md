@@ -40,10 +40,10 @@ Two features are used constantly. First, a state that carries a pure state is a 
 
 ### The Left Action Carries Spin One-Half
 
-The rotation subgroup acts on a state by left multiplication, $\tilde{Ξ}_{\mathrm{sp}}\mapsto\tilde r\tilde{Ξ}_{\mathrm{sp}}$, with $\tilde r$ a unit real quaternion. Its generators are $\tilde S_k$, and the sum of their squares in the algebra is
+The rotation subgroup acts on a state by left multiplication, $\tilde{Ξ}_{\mathrm{sp}}\mapsto\tilde r\tilde{Ξ}_{\mathrm{sp}}$, with $\tilde r$ a unit real quaternion. Its generators are $\tilde S_{\Psi,k}$, and the sum of their squares in the algebra is
 
 $$
-\tilde S_1^2+\tilde S_2^2+\tilde S_3^2=\frac{3\,m^{2}\,c^{2}}{4\,k_m^{2}}\,e_t .
+\tilde S_{\Psi,1}^2+\tilde S_{\Psi,2}^2+\tilde S_{\Psi,3}^2=\frac{3\,m^{2}\,c^{2}}{4\,k_m^{2}}\,e_t .
 $$
 
 The computation is one line from the squares of the generators, $\vec e_k^2=-e_t$; the value was checked by recomputation and is exact.
@@ -203,17 +203,17 @@ $$
 
 with the biquaternion writing carrying no additional content. This is the honest verdict of the companion article, and the algebra of the present article says why it must be so: there is no axis in the field for any non-central algebraic structure to act on. Here $k_m=mc/\hbar$ is the mass wave number, the inverse of the mass length.
 
-The plane-wave solutions exhibit the same point. With the four-position $\tilde R_\Phi$ and the four-wavevector $\tilde P\,k_{\mathrm{mo}}$ in the material sector, the phase is the real scalar $\mathrm{Sc}(\tilde P\tilde{R}_\Phi^{\natural})/\hbar=\vec k\cdot\vec r-\omega r'_t$, and the positive-frequency solution is
+The plane-wave solutions exhibit the same point. With the four-position $\tilde R_\Phi$ and the four-wavevector $\tilde P_{\Phi}\,k_{\mathrm{mo}}$ in the material sector, the phase is the real scalar $\mathrm{Sc}(\tilde P_{\Phi}\tilde{R}_\Phi^{\natural})/\hbar=\vec k\cdot\vec r-\omega r'_t$, and the positive-frequency solution is
 
 $$
-\tilde{Ξ}=\xi_{\mathrm{scl},0}\,\exp\!\left(i\,\mathrm{Sc}\frac{k_m\,\tilde{P}\,\tilde{R}_{\Phi}^{\natural}}{m\,c}\right)e_t
+\tilde{Ξ}=\xi_{\mathrm{scl},0}\,\exp\!\left(i\,\mathrm{Sc}\frac{k_m\,\tilde{P}_{\Phi}\,\tilde{R}_{\Phi}^{\natural}}{m\,c}\right)e_t
 =\xi_{\mathrm{scl},0}\,\exp\!\left(i(\vec k\cdot\vec r-\omega r'_t)\right)e_t .
 $$
 
 The exponential is central. The mass-shell condition is the biquaternion norm of the four-wavevector,
 
 $$
-\langle\tilde P\,k_{\mathrm{mo}}\rangle_{\natural}=-\frac{\omega^2}{c^2}+k_x^2+k_y^2+k_z^2 ,
+\langle\tilde P_{\Phi}\,k_{\mathrm{mo}}\rangle_{\natural}=-\frac{\omega^2}{c^2}+k_x^2+k_y^2+k_z^2 ,
 $$
 
 and setting it to the negative constant $-k_m^{2}$ gives the dispersion relation
@@ -224,7 +224,7 @@ $$
 \omega^2=c^2\left(k_x^2+k_y^2+k_z^2\right)+c^2k_m^{2},
 $$
 
-which is the standard relativistic dispersion relation. It is reproduced here only to record that the scalar field's entire algebraic content is the biquaternion norm of a four-vector, not the action of the algebra on a state. The conserved current $\tilde{J}$ lies in $\mathbb{B}_{\Phi}$, its scalar component being the imaginary scalar direction, exactly as for the four-current of relativistic mechanics. Here $k_{\mathrm{mo}}=\frac{k_m\,p}{m\,c}$ is the momentum length.
+which is the standard relativistic dispersion relation. It is reproduced here only to record that the scalar field's entire algebraic content is the biquaternion norm of a four-vector, not the action of the algebra on a state. The conserved current $\tilde{J}_{\Phi}$ lies in $\mathbb{B}_{\Phi}$, its scalar component being the imaginary scalar direction, exactly as for the four-current of relativistic mechanics. Here $k_{\mathrm{mo}}=\frac{k_m\,p}{m\,c}$ is the momentum length.
 
 One structural remark belongs with the equation. The first-order operators of the framework act on states and change their content. The scalar field has no such action. The only operator the scalar equation uses is the central scalar $\Box$, whose square-root structure is a statement about the *operator*, not about the field it acts on. A scalar field is annihilated by a composite of state operators without ever being a state; it is the trivial channel appearing in the composition, not an element of the carrier.
 
@@ -296,7 +296,7 @@ The dictionary is complex-linear; over $\mathbb{R}$ the products span $\mathrm{C
 
 ## Summary
 
-A scalar field carries the trivial action of the Lorentz group: the transformation moves the argument and leaves the value alone. The carrier of states in the biquaternion framework is an element of $\mathbb{B}$, split into an L part and an R part by a label that takes two values; left multiplication keeps the label, and the L part is a carrier of the left action. The left action of the rotation generators $\tilde S_k$ has Casimir $\frac{3\,m^{2}\,c^{2}}{4\,k_m^{2}}e_t$ on every element, so every irreducible piece of the left action carries spin $\tfrac{1}{2}$. No nonzero state is rotation-invariant: the rotation by $-e_t$ negates it.
+A scalar field carries the trivial action of the Lorentz group: the transformation moves the argument and leaves the value alone. The carrier of states in the biquaternion framework is an element of $\mathbb{B}$, split into an L part and an R part by a label that takes two values; left multiplication keeps the label, and the L part is a carrier of the left action. The left action of the rotation generators $\tilde S_{\Psi,k}$ has Casimir $\frac{3\,m^{2}\,c^{2}}{4\,k_m^{2}}e_t$ on every element, so every irreducible piece of the left action carries spin $\tfrac{1}{2}$. No nonzero state is rotation-invariant: the rotation by $-e_t$ negates it.
 
 The rotationally invariant subspace of largest dimension in $\mathbb{B}$ is the centre $\mathbb{B}_{C}$, obtained as the centralizer of the quaternion units: $[\vec e_\nu,\tilde{Q}]=0$ for $\nu\in\{x,y,z\}$ forces $\tilde{Q}=Q_te_t$. The centre is a subalgebra isomorphic to $\mathbb{C}$, it is not stable under left multiplication, and it meets the states only at zero. This gives three reasons why the spin-$0$ value escapes the carrier of states. No one-dimensional subspace is carried into itself by every left multiplication, so the trivial action has no carrier. The rotationally invariant elements are exactly the central ones, so the scalar's value space is forced to be the centre. And the trivial action is not a part of either label: under the rotation subgroup it appears in the product of the two labels, while the Lorentz-scalar channels are the antisymmetric pairing of two states of one label and the mixed pairing of two states of opposite labels. A scalar is a product of two states, not a value of the state action.
 
@@ -314,13 +314,13 @@ For the sector split, the centre meets each sector in one real direction: the re
 | $\mathbb{B}_{C}$ | Centre of $\mathbb{B}$; the scalar field's value space |
 | $\tilde{Ξ}_{\mathrm{sp}}$, $\tilde{Ξ}_{\mathrm{sp},L}$, $\tilde{Ξ}_{\mathrm{sp},R}$ | A state and its two labelled parts |
 | $\tilde\Pi(\vec u)$ | Pure state carrying the unit direction $\vec u$ |
-| $\tilde S_k$ | Rotation generator; the left action has Casimir $\frac{3\,m^{2}\,c^{2}}{4\,k_m^{2}}e_t$ |
+| $\tilde S_{\Psi,k}$ | Rotation generator; the left action has Casimir $\frac{3\,m^{2}\,c^{2}}{4\,k_m^{2}}e_t$ |
 | $\tilde{Ξ}=\xi_{\mathrm{scl}} e_t$ | Scalar (spin-$0$) field, valued in the centre |
 | $\xi_{\mathrm{scl}}=\xi_{\mathrm{scl},1}+i\xi_{\mathrm{scl},2}$ | Complex scalar coefficient |
 | $H=\tfrac12(\tilde{Ξ}_{\mathrm{sp}}\tilde\xi^{*}+\tilde\xi\tilde{Ξ}_{\mathrm{sp}}^*)$ | Hermitian product of two states, in $\mathbb{B}_{\Psi}$ |
 | $\sigma=\mathrm{Sc}\,H$ | Scalar part of $H$; the time coefficient of $iH$, not a Lorentz scalar |
 | $\mathfrak{b}(\tilde{Ξ}_{\mathrm{sp}},\tilde\xi)=2\,\mathrm{Sc}(\tilde{Ξ}_{\mathrm{sp}}^*\tilde\xi)$ | Mixed pairing of two states of opposite labels |
-| $\tilde R_\Phi$, $\tilde P\,k_{\mathrm{mo}}$ | Four-position and four-wavevector, in $\mathbb{B}_{\Phi}$ (cited) |
+| $\tilde R_\Phi$, $\tilde P_{\Phi}\,k_{\mathrm{mo}}$ | Four-position and four-wavevector, in $\mathbb{B}_{\Phi}$ (cited) |
 | $\langle\tilde{Q}\rangle_{\natural}$ | Biquaternion norm (cited) |
 | $\Box$ | d'Alembertian, central and scalar (cited) |
 | $c$, $\frac{m\,c}{k_m}$, $m$ | Speed of light in the medium, reduced Planck constant, mass |

@@ -97,10 +97,10 @@ so the operator in the exponent is exactly the Klein–Gordon operator whose Gre
 $$
 \frac{\omega^2}{c^2}-\vec k^2-k_m^{2}=0
 \qquad\Longleftrightarrow\qquad
-\langle\tilde P\rangle_{\natural}=\tilde P\tilde P^{\natural}= -m^{2}\,c^{2},
+\langle\tilde P_{\Phi}\rangle_{\natural}=\tilde P_{\Phi}\tilde P_{\Phi}^{\natural}= -m^{2}\,c^{2},
 $$
 
-a level set of the biquaternion norm on the material four-wavevector $\tilde P=\frac{m\,c\,(i\omega/c\,e_t+\vec k)}{k_m}$. The quadratic form of the path integral is thus the biquaternion norm of $\mathbb{B}_{\Phi}$, shifted by the mass: the exponent's saddle is the biquaternion norm's level set, and the Gaussian's width is the operator whose symbol is that biquaternion norm minus the mass. This is the sense in which the framework's contribution to the scalar path integral is geometry rather than a new mechanism.
+a level set of the biquaternion norm on the material four-wavevector $\tilde P_{\Phi}=\frac{m\,c\,(i\omega/c\,e_t+\vec k)}{k_m}$. The quadratic form of the path integral is thus the biquaternion norm of $\mathbb{B}_{\Phi}$, shifted by the mass: the exponent's saddle is the biquaternion norm's level set, and the Gaussian's width is the operator whose symbol is that biquaternion norm minus the mass. This is the sense in which the framework's contribution to the scalar path integral is geometry rather than a new mechanism.
 
 ## The Generating Functional and the Free Gaussian
 
@@ -109,10 +109,10 @@ a level set of the biquaternion norm on the material four-wavevector $\tilde P=\
 The generating functional is
 
 $$
-Z[J]=\int\mathcal{D}\tilde{Ξ}\;\exp\left(iS[\tilde{Ξ}]+i\int d^4r\;\mathrm{Sc}\!\left(\tilde{J}^{*}\tilde{Ξ}\right)\right),
+Z[J]=\int\mathcal{D}\tilde{Ξ}\;\exp\left(iS[\tilde{Ξ}]+i\int d^4r\;\mathrm{Sc}\!\left(\tilde{J}_{\Phi}^{*}\tilde{Ξ}\right)\right),
 $$
 
-with a central source $\tilde{J}=J\,e_t$ and a measure $\mathcal{D}\tilde{Ξ}$ on the central-valued configuration space. The correlation functions are the functional derivatives with respect to the source; the normalisation $Z[0]$ is fixed by the requirement that the vacuum expectation of the identity be one. The phase factor is the central $*$-unitary element analysed in the companion article *The Path Integral in Biquaternionic Form*, and the measure is a measure on a space of complex functions, i.e. on a space of pairs of real functions.
+with a central source $\tilde{J}_{\Phi}=J\,e_t$ and a measure $\mathcal{D}\tilde{Ξ}$ on the central-valued configuration space. The correlation functions are the functional derivatives with respect to the source; the normalisation $Z[0]$ is fixed by the requirement that the vacuum expectation of the identity be one. The phase factor is the central $*$-unitary element analysed in the companion article *The Path Integral in Biquaternionic Form*, and the measure is a measure on a space of complex functions, i.e. on a space of pairs of real functions.
 
 ### The finite-dimensional Gaussian, exactly
 
@@ -211,7 +211,7 @@ $$
 \left(\frac{\omega^2}{c^2}-\vec k^2-k_m^{2}\right)\xi_{\mathrm{cl}}(\omega,\vec k)=-J(\omega,\vec k),
 $$
 
-so that the propagator is the inverse of the biquaternion norm shifted by the mass. In the framework's terms, the saddle condition is that the four-wavevector of a free mode lies on the level set $\langle\tilde P\rangle_{\natural}=-k_m^{2}$ of the biquaternion norm of $\mathbb{B}_{\Phi}$, and the source moves the field off the shell by an amount measured by the biquaternion norm through the kernel. This is the third formulation's version of the same biquaternion-norm geometry that the equation and the propagator exhibit.
+so that the propagator is the inverse of the biquaternion norm shifted by the mass. In the framework's terms, the saddle condition is that the four-wavevector of a free mode lies on the level set $\langle\tilde P_{\Phi}\rangle_{\natural}=-k_m^{2}$ of the biquaternion norm of $\mathbb{B}_{\Phi}$, and the source moves the field off the shell by an amount measured by the biquaternion norm through the kernel. This is the third formulation's version of the same biquaternion-norm geometry that the equation and the propagator exhibit.
 
 ## The Wick Rotation and the Euclidean Functional
 
@@ -245,7 +245,7 @@ The Euclidean quadratic form $-\Delta_E+k_m^{2}$ is positive definite for $k_m^{
 
 ### The positivity question and the tachyon
 
-The Euclidean quadratic form is positive definite precisely when $k_m^{2}\ge0$. For a negative mass squared, $k_m^{2}<0$, the Euclidean operator $-\Delta_E+k_m^{2}$ has a negative eigenvalue in the long-wavelength mode, the Gaussian weight $\exp(-S_E)$ grows in that direction, and the functional integral diverges. In the biquaternion-norm interpretation this is the statement that the level set $\langle\tilde P\rangle_{\natural}=-k_m^{2}$ becomes spacelike rather than timelike: for $k_m^{2}<0$ the "mass shell" is a spacelike hyperboloid, the mode with $\vec k=0$ has $\Omega^2=k_m^{2}<0$, and the saddle is not a minimum of the Euclidean action. The instability is a property of the biquaternion norm's signature, and the framework exhibits it as such rather than as an accident of a potential. The oscillatory Minkowski integral is formally defined in either case, but only for $k_m^{2}\ge0$ is the analytic continuation to Euclidean space a convergent Gaussian.
+The Euclidean quadratic form is positive definite precisely when $k_m^{2}\ge0$. For a negative mass squared, $k_m^{2}<0$, the Euclidean operator $-\Delta_E+k_m^{2}$ has a negative eigenvalue in the long-wavelength mode, the Gaussian weight $\exp(-S_E)$ grows in that direction, and the functional integral diverges. In the biquaternion-norm interpretation this is the statement that the level set $\langle\tilde P_{\Phi}\rangle_{\natural}=-k_m^{2}$ becomes spacelike rather than timelike: for $k_m^{2}<0$ the "mass shell" is a spacelike hyperboloid, the mode with $\vec k=0$ has $\Omega^2=k_m^{2}<0$, and the saddle is not a minimum of the Euclidean action. The instability is a property of the biquaternion norm's signature, and the framework exhibits it as such rather than as an accident of a potential. The oscillatory Minkowski integral is formally defined in either case, but only for $k_m^{2}\ge0$ is the analytic continuation to Euclidean space a convergent Gaussian.
 
 ### The Euclidean two-point function and its relation to the propagator
 
@@ -257,7 +257,7 @@ Four statements summarise what the framework contributes to the Klein–Gordon p
 
 **The configuration space is the centre.** The field is central-valued and the measure is a measure on central-valued functions; the complex scalar is two real scalars, one in each sector's scalar direction. This is the path-integral form of the structural article's verdict that spin $0$ lives in the centre, and it is why the theory's functional integral is an ordinary complex scalar functional integral rather than an integral over a module.
 
-**The quadratic form is the biquaternion norm.** The momentum-space symbol of the exponent is the biquaternion norm of the material four-wavevector shifted by the mass, and the mass shell is the level set $\langle\tilde P\rangle_{\natural}=-k_m^{2}$. The Gaussian's width and the shell's location are the same algebraic object.
+**The quadratic form is the biquaternion norm.** The momentum-space symbol of the exponent is the biquaternion norm of the material four-wavevector shifted by the mass, and the mass shell is the level set $\langle\tilde P_{\Phi}\rangle_{\natural}=-k_m^{2}$. The Gaussian's width and the shell's location are the same algebraic object.
 
 **The Wick rotation is the sector relabelling.** The passage to imaginary time is the identification of $\mathbb{B}_{\Phi}$ with $\mathbb{B}_{H}$, and the Euclidean quadratic form is positive definite because the biquaternion norm is positive definite on the quaternion subspace. Convergence of the Euclidean functional and the tachyon instability for $k_m^{2}<0$ are both statements about that signature.
 
@@ -296,7 +296,7 @@ $$
 
 verified by direct quadrature (relative error $4.8\times10^{-13}$) and by the lattice inverse ($A A^{-1}-I$ bounded by $5.6\times10^{-16}$). The free two-point function is the inverse of the Klein–Gordon quadratic form, i.e. the Green's function whose Minkowski continuation is the Feynman propagator of the companion article. In the continuum the same completion of the square gives a Gaussian in the source with the Green's function as its kernel, and the determinant is the free vacuum amplitude.
 
-The semiclassical expansion about a source has the classical Klein–Gordon equation as its saddle, a central scalar classical action as its leading phase, and a central scalar determinant as its one-loop factor; every order of the loop expansion is central and the state module is a spectator. The Wick rotation is the identification of the material sector $\mathbb{B}_{\Phi}$ with the quaternion subspace $\mathbb{B}_{H}$, with the imaginary time coefficient relabelled as real; the Euclidean quadratic form $-\Delta_E+k_m^{2}$ is positive definite for $k_m^{2}\ge0$, which is the positivity of the biquaternion norm on $\mathbb{B}_{H}$, and for $k_m^{2}<0$ the Euclidean Gaussian diverges, the tachyon being the statement that the biquaternion-norm level set has turned spacelike. The quadratic form's symbol is the biquaternion norm of the material four-wavevector shifted by the mass, so the mass shell is the level set $\langle\tilde P\rangle_{\natural}=-k_m^{2}$; the shell's geometry, the Gaussian's width and the convergence of the Euclidean integral are three interpretations of one algebraic object, and no part of the algebra beyond the centre and the biquaternion norm enters.
+The semiclassical expansion about a source has the classical Klein–Gordon equation as its saddle, a central scalar classical action as its leading phase, and a central scalar determinant as its one-loop factor; every order of the loop expansion is central and the state module is a spectator. The Wick rotation is the identification of the material sector $\mathbb{B}_{\Phi}$ with the quaternion subspace $\mathbb{B}_{H}$, with the imaginary time coefficient relabelled as real; the Euclidean quadratic form $-\Delta_E+k_m^{2}$ is positive definite for $k_m^{2}\ge0$, which is the positivity of the biquaternion norm on $\mathbb{B}_{H}$, and for $k_m^{2}<0$ the Euclidean Gaussian diverges, the tachyon being the statement that the biquaternion-norm level set has turned spacelike. The quadratic form's symbol is the biquaternion norm of the material four-wavevector shifted by the mass, so the mass shell is the level set $\langle\tilde P_{\Phi}\rangle_{\natural}=-k_m^{2}$; the shell's geometry, the Gaussian's width and the convergence of the Euclidean integral are three interpretations of one algebraic object, and no part of the algebra beyond the centre and the biquaternion norm enters.
 
 ## Summary of Notation
 
@@ -311,14 +311,14 @@ The semiclassical expansion about a source has the classical Klein–Gordon equa
 | $\tilde R_\Phi=i c r'_t\,e_t+r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z$ | Material coordinate, $\in\mathbb{B}_{\Phi}$ |
 | $\tilde{Q}_E=c\tau\,e_t+r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z$ | Euclidean coordinate, $\in\mathbb{B}_{H}$ |
 | $\tilde{Ξ}=\xi e_t$ | Scalar (spin-$0$) field, valued in the centre |
-| $\tilde P=\frac{m\,c\,(i\omega/c\,e_t+\vec k)}{k_m}$ | Material four-wavevector, $\in\mathbb{B}_{\Phi}$ |
-| $\langle\tilde{Q}\rangle_{\natural}=\tilde{Q}\tilde{Q}^{\natural}$ | Biquaternion norm; $\langle\tilde P\rangle_{\natural}=-k_m^{2}$ is the mass shell |
+| $\tilde P_{\Phi}=\frac{m\,c\,(i\omega/c\,e_t+\vec k)}{k_m}$ | Material four-wavevector, $\in\mathbb{B}_{\Phi}$ |
+| $\langle\tilde{Q}\rangle_{\natural}=\tilde{Q}\tilde{Q}^{\natural}$ | Biquaternion norm; $\langle\tilde P_{\Phi}\rangle_{\natural}=-k_m^{2}$ is the mass shell |
 | $\Box=\tilde{\nabla}\tilde{\nabla}^{\natural}=\partial^2/\partial R_t^2+\Delta$ | d'Alembertian, series convention |
 | $1/k_m$ | The mass length, $\hbar/(mc)$; its reciprocal $k_m=mc/\hbar$ is the mass parameter ($k_m=m$ in natural units) |
 | $\Omega_{\vec k}=\sqrt{\vec k^2+k_m^{2}}$ | On-shell frequency, natural units |
 | $S[\tilde{Ξ}]$ | Klein–Gordon action, central scalar |
 | $S_E[\tilde{Ξ}]$ | Euclidean action, $\ge0$ for $k_m^{2}\ge0$ |
-| $Z[J]$ | Generating functional; $\tilde{J}=Je_t$ a central source |
+| $Z[J]$ | Generating functional; $\tilde{J}_{\Phi}=Je_t$ a central source |
 | $G$, $G_E$ | Two-point kernels, $(\Box-k_m^{2})G=-\delta^{(4)}$ and $(-\Delta_E+k_m^{2})G_E=\delta^{(4)}$ |
 | $A$, $A^{-1}$ | Lattice quadratic form and its inverse (lattice propagator) |
 | $\delta_{\mu\nu}=(1,1,1,1)$ | The metric, the identity matrix; with $Q_t=i c r'_t$ the material interval is $-c^2{r'_{t}}^2+r_x^2+r_y^2+r_z^2$ |

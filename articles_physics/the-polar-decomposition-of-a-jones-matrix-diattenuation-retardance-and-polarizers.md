@@ -182,13 +182,13 @@ The Jones matrix acts on the Jones vector, which describes a fully polarized bea
 
 For a non-depolarizing element the Mueller matrix is the real image of the same element acting by congruence on the coherency matrix, and it is determined by the Jones matrix up to the global phase. It carries no additional information: the diattenuation and the retardance are read from it, and the polar decomposition is the factorisation of the Jones matrix that makes them separate. The Mueller matrix of a depolarizing element is not the image of any single Jones matrix; it is a sum of conjugations, and the polar decomposition of one term does not describe the whole.
 
-The operator-to-state map is the bridge between the two readings. For an input state $\tilde{Ϛ}_{\mathrm{in}}$, the output is
+The operator-to-state map is the bridge between the two readings. For an input state $\tilde{Ϛ}_{\Psi,\mathrm{in}}$, the output is
 
 $$
-\tilde{Ϛ}_{\mathrm{out}}=\frac{\tilde J\tilde{Ϛ}_{\mathrm{in}}\tilde J^{*}}{2\langle\tilde J\tilde{Ϛ}_{\mathrm{in}},\tilde J\rangle_{*}}.
+\tilde{Ϛ}_{\Psi,\mathrm{out}}=\frac{\tilde J\tilde{Ϛ}_{\Psi,\mathrm{in}}\tilde J^{*}}{2\langle\tilde J\tilde{Ϛ}_{\Psi,\mathrm{in}},\tilde J\rangle_{*}}.
 $$
 
-For unpolarized input, $\tilde{Ϛ}_{\mathrm{in}}=\tfrac12e_t$, the output is $\tilde J\tilde J^{*}/2\langle\tilde J,\tilde J\rangle_{*}$, which is exactly the state that the operator defines. Diattenuation is the anisotropy of that state; retardance cancels from it.
+For unpolarized input, $\tilde{Ϛ}_{\Psi,\mathrm{in}}=\tfrac12e_t$, the output is $\tilde J\tilde J^{*}/2\langle\tilde J,\tilde J\rangle_{*}$, which is exactly the state that the operator defines. Diattenuation is the anisotropy of that state; retardance cancels from it.
 
 ## Worked Example
 
@@ -218,7 +218,7 @@ The check $D=\tanh\theta_{\mathrm{rpd}}=\tanh 0.693147181=0.6$ holds. The $*$-un
 For unpolarized input the output state is
 
 $$
-\tilde{Ϛ}_{\mathrm{out}}=\frac{\mathsf{J}\mathsf{J}^{\dagger}}{2\langle\tilde J,\tilde J\rangle_{*}}
+\tilde{Ϛ}_{\Psi,\mathrm{out}}=\frac{\mathsf{J}\mathsf{J}^{\dagger}}{2\langle\tilde J,\tilde J\rangle_{*}}
 =\begin{pmatrix}0.8&0\\0&0.2\end{pmatrix},
 $$
 

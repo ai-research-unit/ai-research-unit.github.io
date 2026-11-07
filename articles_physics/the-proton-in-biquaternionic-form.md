@@ -69,17 +69,17 @@ The operator is a single object acting on the element: it is the pair written on
 | Chirality | the value carried by each part | the same values |
 | Use | the definition, the mass term, the mass shell | the charge, the charge value, the bilinears |
 
-**The spin-$\tfrac12$ content follows from the algebra and not from the proton.** The elements of norm one, $\tilde U\tilde U^{\natural}=e_t$, form $\mathrm{SL}(2,\mathbb{C})$, the double cover of the proper orthochronous Lorentz group; the left multiplications act on each value with weights $\pm\tfrac12$, and a rotation by $2\pi$ is the element $-e_t$. Left multiplication by $-e_t$ carries the field to $-\tilde{Ξ}_{\mathrm{sp}}$, while the conjugation action of the same element on the four-vectors of $\mathbb{B}_{\Phi}$, $\tilde V\mapsto\tilde U\tilde V\tilde U^{-1}$, returns $+\tilde V$. The half-integral, double-valued character of the proton's spin is therefore a consequence of where the field lives, and *not* of anything proton-specific. What the framework does **not** derive is why this composite object has spin $\tfrac12$: that is angular-momentum addition among constituents in standard physics, and the framework has no constituent structure to add. The correct statement is the conditional one — *if* the proton is modelled as an element of $\mathbb{B}$, its spin is $\tfrac12$.
+**The spin-$\tfrac12$ content follows from the algebra and not from the proton.** The elements of norm one, $\tilde U\tilde U^{\natural}=e_t$, form $\mathrm{SL}(2,\mathbb{C})$, the double cover of the proper orthochronous Lorentz group; the left multiplications act on each value with weights $\pm\tfrac12$, and a rotation by $2\pi$ is the element $-e_t$. Left multiplication by $-e_t$ carries the field to $-\tilde{Ξ}_{\mathrm{sp}}$, while the conjugation action of the same element on the four-vectors of $\mathbb{B}_{\Phi}$, $\tilde V_{\Phi}\mapsto\tilde U\tilde V_{\Phi}\tilde U^{-1}$, returns $+\tilde V_{\Phi}$. The half-integral, double-valued character of the proton's spin is therefore a consequence of where the field lives, and *not* of anything proton-specific. What the framework does **not** derive is why this composite object has spin $\tfrac12$: that is angular-momentum addition among constituents in standard physics, and the framework has no constituent structure to add. The correct statement is the conditional one — *if* the proton is modelled as an element of $\mathbb{B}$, its spin is $\tfrac12$.
 
 **The mass term is structural; the mass value is not.** The proton mass appears exactly once, as the reciprocal length $k_{m_p}$ in the linear term that couples the two values, $\tilde{\nabla}\tilde{Ξ}_{\mathrm{sp},R}=k_{m_p}\tilde{Ξ}_{\mathrm{sp},L}$, $\tilde{\nabla}^{\natural}\tilde{Ξ}_{\mathrm{sp},L}=k_{m_p}\tilde{Ξ}_{\mathrm{sp},R}$; it is the only mass term in the free equation. The algebra's real structure $\flat=-{}^{*}$ is a different object: for $\tilde{Ξ}_{\mathrm{sp}}=\tilde{Ξ}_{\mathrm{sp},+}+\tilde{Ξ}_{\mathrm{sp},-}$ with $\tilde{Ξ}_{\mathrm{sp},\pm}\in\mathbb{B}_{\Psi}\cup\mathbb{B}_{\Phi}$ one has $\tilde{Ξ}_{\mathrm{sp}}^{\flat}=-\tilde{Ξ}_{\mathrm{sp},+}+\tilde{Ξ}_{\mathrm{sp},-}$, so $\flat$ acts as $+1$ on the material part and $-1$ on the informational part.
 
 The value $m_p=938.272$ MeV, or $1.6726\times10^{-27}$ kg, is not a consequence of the algebra or of the equation. It is a parameter, and the framework is scale-free until it is supplied. Equivalently, the free field lies on the mass shell
 
 $$
-\tilde{P}\tilde{P}^{\natural}=-m_p^2c^2,
+\tilde{P}_{\Phi}\tilde{P}_{\Phi}^{\natural}=-m_p^2c^2,
 $$
 
-in the corpus's four-momentum convention $\tilde{P}=iE/c\,e_t+\vec p$, where the product is $-E^2/c^2+|\vec p|^2$ and the relation is $E^2=|\vec p|^2c^2+m_p^2c^4$: the *form* of the mass shell is structural, the number in it is an import.
+in the corpus's four-momentum convention $\tilde{P}_{\Phi}=iE/c\,e_t+\vec p$, where the product is $-E^2/c^2+|\vec p|^2$ and the relation is $E^2=|\vec p|^2c^2+m_p^2c^4$: the *form* of the mass shell is structural, the number in it is an import.
 
 **The free equation contains no charge.** Neither the one-sided pair nor the two-sided equation $(\mathbb{D}-k_{m_p})\tilde{Ξ}_{\mathrm{sp}}=0$ contains a coupling. The mass length $1/k_{m_p}$ is the only parameter, and it is central.
 
@@ -235,7 +235,7 @@ The table sorts the proton's properties by the status they have in the framework
 | Spin states, observables, Born rule | Derived | the states of $\mathbb{B}_{\Psi}$; $\mathrm{Tr}(\tilde Q_1\tilde Q_2^{*})=2\,\mathrm{Sc}(\tilde Q_1\tilde Q_2^{*})$ |
 | Mass term is off-diagonal in the two values; real structure acts $+1/-1$ on $\mathbb{B}_{\Phi}$ and $\mathbb{B}_{\Psi}$ | Derived | the linear pair of the two values; $\tilde{Ξ}_{\mathrm{sp}}^{\flat}=-\tilde{Ξ}_{\mathrm{sp},+}+\tilde{Ξ}_{\mathrm{sp},-}$ |
 | Vector-like charge element $Ϙ=ϙ\,e_t$ for a massive field | Derived | mass selection rule $ϙ_L=ϙ_R$, from the covariance of the mass term |
-| Conserved current, an element of $\mathbb{B}_{\Phi}$ | Quoted (framework) | the sesquilinear commutator of *Product and Form Conventions*, §*The Twelve Products and Their Names*: $\tilde J=i[\tilde{Ξ}_{\mathrm{sp}}^*(\tilde\nabla\tilde{Ξ}_{\mathrm{sp}})-(\tilde\nabla\tilde{Ξ}_{\mathrm{sp}}^*)\tilde{Ξ}_{\mathrm{sp}}]$ |
+| Conserved current, an element of $\mathbb{B}_{\Phi}$ | Quoted (framework) | the sesquilinear commutator of *Product and Form Conventions*, §*The Twelve Products and Their Names*: $\tilde J_{\Phi}=i[\tilde{Ξ}_{\mathrm{sp}}^*(\tilde\nabla\tilde{Ξ}_{\mathrm{sp}})-(\tilde\nabla\tilde{Ξ}_{\mathrm{sp}}^*)\tilde{Ξ}_{\mathrm{sp}}]$ |
 | Electric charge generator is the central $\mathrm{U}(1)$ | Derived | $\mathbb{B}_{C}$ central; the $\mathrm{SU}(2)$ generators have imaginary or half-integer values |
 | Charge value $ϙ_p=+1$ | Represented (parameter) | inserted coupling; not selected by the algebra |
 | $\lvert ϙ_p\rvert=\lvert ϙ_e\rvert$, opposite signs | Outside | no framework structure; independent parameters |
@@ -360,10 +360,10 @@ What the framework does not supply is everything that makes the proton a proton.
 | $ϙ_L, ϙ_R$ | Chiral couplings (real parameters); a massive field forces $ϙ_L=ϙ_R$ |
 | $Ϙ=ϙ\,e_t$, $ϙ_p=+1$ | Vector-like charge element; the proton's value (inserted, not derived) |
 | $m_p$ | Proton mass (a parameter) |
-| $\tilde{P}=iE/c\,e_t+\vec p$ | Four-momentum; the mass shell is $\tilde{P}\tilde{P}^{\natural}=-m_p^2c^2$, that is $E^2=\lvert\vec p\rvert^2c^2+m_p^2c^4$ |
+| $\tilde{P}_{\Phi}=iE/c\,e_t+\vec p$ | Four-momentum; the mass shell is $\tilde{P}_{\Phi}\tilde{P}_{\Phi}^{\natural}=-m_p^2c^2$, that is $E^2=\lvert\vec p\rvert^2c^2+m_p^2c^4$ |
 | $\mathbb{D}$, $\mathbb{D}^2=\Box$ | The pair operator of the two-sided equation $(\mathbb{D}-k_{m_p})\tilde{Ξ}_{\mathrm{sp}}=0$; it carries the L value by $\tilde\nabla^{\natural}$ and the R value by $\tilde\nabla$ |
 | $\Gamma=-iR_{\vec e_z}$ | The chirality cell, the cell that reads the two values; the legacy section writes it $\gamma_5$ |
-| $\tilde J=i[\tilde{Ξ}_{\mathrm{sp}}^*(\tilde\nabla\tilde{Ξ}_{\mathrm{sp}})-(\tilde\nabla\tilde{Ξ}_{\mathrm{sp}}^*)\tilde{Ξ}_{\mathrm{sp}}]$ | The sesquilinear current of the field, an element of $\mathbb{B}_{\Phi}$ (*Product and Form Conventions*) |
+| $\tilde J_{\Phi}=i[\tilde{Ξ}_{\mathrm{sp}}^*(\tilde\nabla\tilde{Ξ}_{\mathrm{sp}})-(\tilde\nabla\tilde{Ξ}_{\mathrm{sp}}^*)\tilde{Ξ}_{\mathrm{sp}}]$ | The sesquilinear current of the field, an element of $\mathbb{B}_{\Phi}$ (*Product and Form Conventions*) |
 | $T_a=\tfrac12 e_a$ | Generators of $\mathfrak{su}(2)=\mathrm{span}_\mathbb{R}\{\vec e_x,\vec e_y,\vec e_z\}\subset\mathbb{B}_{\Phi}$; $T_a^2=-\tfrac14e_t$, values $\pm\tfrac i2$ |
 | $iT_a=\tfrac12 i e_a\in\mathbb{B}_{\Psi}$ | $(iT_a)^2=+\tfrac14e_t$, values $\pm\tfrac12$; neither is the electric charge |
 | $\mathrm{Tr}(\tilde Q_1\tilde Q_2^{*})=2\,\mathrm{Sc}(\tilde Q_1\tilde Q_2^{*})$ | Inherited informational trace reading |
@@ -381,7 +381,7 @@ What the framework does not supply is everything that makes the proton a proton.
 - [The Spin–Statistics Theorem in Biquaternionic Form](the-spin-statistics-theorem-in-biquaternionic-form.html) — half-integer weights as native to the algebra, and the sense in which the spin–statistics theorem is transcribed rather than derived.
 - [The Spinor Module in Biquaternionic Form and Its Lorentz Action](the-spinor-module-in-biquaternionic-form-and-its-lorentz-action.html) — the two values of the field and the Lorentz action that fixes the spin-$\tfrac12$ content.
 - [The Gauge Principle in Biquaternionic Form](the-gauge-principle-in-biquaternionic-form.html) — the abelian gauge group as the $*$-unitary part of the centre, on which the electric-charge identification rests.
-- [Angular Momentum and Spin in Biquaternionic Form](angular-momentum-and-spin-in-biquaternionic-form.html) — the spin operators $\tilde{S}_\mu=\frac{m\,c}{2\,k_m} i\vec e_\mu$ and the state structure used implicitly here.
+- [Angular Momentum and Spin in Biquaternionic Form](angular-momentum-and-spin-in-biquaternionic-form.html) — the spin operators $\tilde{S}_{\Psi,\mu}=\frac{m\,c}{2\,k_m} i\vec e_\mu$ and the state structure used implicitly here.
 - [The Neutrino and Majorana Fermions in Biquaternionic Form](the-neutrino-and-majorana-fermions-in-biquaternionic-form.html) — the real structure and the Majorana-versus-Dirac interpretation that bears on charge conservation.
 - [The Material Sector: Four-Vectors, Interval and Lorentz Action](the-material-sector-four-vectors-interval-and-lorentz-action.html) and [The Informational Sector: States, Observables and Probability](the-informational-sector-states-observables-and-probability.html) — the two sectors, their bases and the normalised Hermitian form, with its trace reading, inherited unchanged.
 - [Operator and Calculus Conventions](operator-and-calculus-conventions.html) — the pair operator $\mathbb{D}$, the square $\mathbb{D}^2=\Box$, and the one-operator reading of the massive equation, taken over unchanged.

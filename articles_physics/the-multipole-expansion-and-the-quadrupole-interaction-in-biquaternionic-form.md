@@ -136,7 +136,7 @@ Two comments fix the interpretation. First, the tower is infinite because the sp
 In the $i c r'_t$ convention the four-potential is an element of the material sector,
 
 $$
-\tilde{A} = i\,a'_t\,e_t + \vec A \in \mathbb{B}_{\Phi} ,
+\tilde{A}_{\Phi} = i\,a'_t\,e_t + \vec A \in \mathbb{B}_{\Phi} ,
 \qquad \vec A = A_1\vec e_x + A_2\vec e_y + A_3\vec e_z ,
 $$
 
@@ -180,7 +180,7 @@ $$
 $$
 
 a pure-vector biquaternion with vanishing scalar part, whose imaginary half carries the electric field and whose real half carries the magnetic field. In the electrostatic limit $\tilde{F} = i\sqrt{\epsilon}\,\vec E$. The conventions and the derivation are those of
-- Companion article *Maxwell's Equations in the Biquaternionic Formulation*, for the definition of $\tilde{F}$ and the single field equation $\tilde{\nabla}\tilde{F} = -\sqrt{\mu}\,\tilde{J}$.
+- Companion article *Maxwell's Equations in the Biquaternionic Formulation*, for the definition of $\tilde{F}$ and the single field equation $\tilde{\nabla}\tilde{F} = -\sqrt{\mu}\,\tilde{J}_{\Phi}$.
 
 For the multipole problem it is convenient to work with the real vector $\vec E$ itself, since the medium factors and the factor of $i$ play no role in the non-relativistic statics. The two objects are elements of the same kind: a real spatial vector is an element of the vector part, and the vector part is a faithful copy of $\mathbb{R}^3$ inside $\mathbb{B}_{H}$.
 
@@ -208,13 +208,13 @@ $$
 
 because $\mathrm{Sc}(\tilde{p}\vec u) = -\vec p\cdot\vec u$ for pure real vectors.
 
-**The dipole interaction.** The energy of a dipole in an external electric field is $-\vec p\cdot\vec E$, and this is an algebraic pairing of two vector elements. For pure real vectors $\tilde{p}, \tilde E$ one has $\tilde{p}\tilde E = -\vec p\cdot\vec E + \vec p\times\vec E$, so
+**The dipole interaction.** The energy of a dipole in an external electric field is $-\vec p\cdot\vec E$, and this is an algebraic pairing of two vector elements. For pure real vectors $\tilde{p}, \tilde E_{\Psi}$ one has $\tilde{p}\tilde E_{\Psi} = -\vec p\cdot\vec E + \vec p\times\vec E$, so
 
 $$
--\vec p\cdot\vec E\,e_t = \mathrm{Sc}\!\left(\tilde{p}\tilde E\right)e_t = \tfrac12\left(\tilde{p}\tilde E + \tilde E\tilde{p}\right).
+-\vec p\cdot\vec E\,e_t = \mathrm{Sc}\!\left(\tilde{p}\tilde E_{\Psi}\right)e_t = \tfrac12\left(\tilde{p}\tilde E_{\Psi} + \tilde E_{\Psi}\tilde{p}\right).
 $$
 
-The pairing is the **symmetrized product** of the two vectors, and its value is a central scalar. The dipole interaction is therefore fully internal to the algebra: both the moment and the field are elements, and their interaction is the scalar part of their product. The sign has been checked: $-\mathrm{Sc}(\tilde{p}\tilde E) = \vec p\cdot\vec E$ for real vectors, so $-\vec p\cdot\vec E = \mathrm{Sc}(\tilde{p}\tilde E)$.
+The pairing is the **symmetrized product** of the two vectors, and its value is a central scalar. The dipole interaction is therefore fully internal to the algebra: both the moment and the field are elements, and their interaction is the scalar part of their product. The sign has been checked: $-\mathrm{Sc}(\tilde{p}\tilde E_{\Psi}) = \vec p\cdot\vec E$ for real vectors, so $-\vec p\cdot\vec E = \mathrm{Sc}(\tilde{p}\tilde E_{\Psi})$.
 
 The dipole is thus the first non-trivial multipole for which the moment is an algebra element and the moment–field coupling is an algebra product — the monopole is the trivial case, a scalar whose coupling $ϙΞ(0) = (qe_t)(Ξ e_t)$ is an algebra product too. The dipole is the model for what the algebra can do; the quadrupole is where that stops.
 
@@ -317,7 +317,7 @@ $$
 \qquad 1 + 3 = 4 .
 $$
 
-The weight spectrum confirms that nothing else can be present. For a rotation about the axis $\vec e_z$, the centre is fixed, $\vec e_z$ is fixed, and the combinations $\vec e_x\pm i\vec e_y$ are eigenvectors with phases $\exp(\mp i\theta)$. The algebra therefore contains states only of weights $0$ and $\pm1$, and a $D^{(2)}$ representation would require a state of weight $\pm2$. There is none. The character of the conjugation action has been computed directly and equals $2 + 2\cos\theta = \xi_0(\theta) + \xi_1(\theta)$, the sum of the spin-$0$ and spin-$1$ characters, with no $D^{(2)}$ term $\xi_2 = 1 + 2\cos\theta + 2\cos2\theta$. Since $-\tilde{U}$ acts on a vector exactly as $\tilde{U}$ does, the conjugation action factors through $SO(3)$ and can carry only integral angular momentum. In the normalisation in which the vector part carries weights $\pm1$ — that is, with the generator $-\tilde S_{\mathrm{adj},3} = -i\tfrac12\mathrm{ad}_{\vec e_z}$ — the generator has the eigenvalue spectrum $\{0, 0, +1, -1\}$ on $\mathbb{B}$: a doubly degenerate zero, together with a single $+1$ and a single $-1$. A quadrupole, which would carry weight $\pm2$, has no place to sit.
+The weight spectrum confirms that nothing else can be present. For a rotation about the axis $\vec e_z$, the centre is fixed, $\vec e_z$ is fixed, and the combinations $\vec e_x\pm i\vec e_y$ are eigenvectors with phases $\exp(\mp i\theta)$. The algebra therefore contains states only of weights $0$ and $\pm1$, and a $D^{(2)}$ representation would require a state of weight $\pm2$. There is none. The character of the conjugation action has been computed directly and equals $2 + 2\cos\theta = \xi_0(\theta) + \xi_1(\theta)$, the sum of the spin-$0$ and spin-$1$ characters, with no $D^{(2)}$ term $\xi_2 = 1 + 2\cos\theta + 2\cos2\theta$. Since $-\tilde{U}$ acts on a vector exactly as $\tilde{U}$ does, the conjugation action factors through $SO(3)$ and can carry only integral angular momentum. In the normalisation in which the vector part carries weights $\pm1$ — that is, with the generator $-\tilde S_{\Psi,\mathrm{adj},3} = -i\tfrac12\mathrm{ad}_{\vec e_z}$ — the generator has the eigenvalue spectrum $\{0, 0, +1, -1\}$ on $\mathbb{B}$: a doubly degenerate zero, together with a single $+1$ and a single $-1$. A quadrupole, which would carry weight $\pm2$, has no place to sit.
 
 ### Where the Quadrupole Does Live
 
@@ -343,9 +343,9 @@ The algebra is a **value algebra** of finite dimension, and it carries exactly t
 
 ## Summary
 
-The static field of a bounded source is expanded in multipole moments, one order for each irreducible representation $D^{(l)}$ of the rotation group, with $2l+1$ moments per order. In the biquaternion framework the fields are elements of the algebra: the four-potential is $\tilde{A} = i\,a'_t\,e_t + \vec A\in\mathbb{B}_{\Phi}$ with an imaginary scalar coefficient, the scalar potential is obtained from its scalar part, the spatial gradient is the vector operator $\vec\nabla$, and the electrostatic field is a real vector.
+The static field of a bounded source is expanded in multipole moments, one order for each irreducible representation $D^{(l)}$ of the rotation group, with $2l+1$ moments per order. In the biquaternion framework the fields are elements of the algebra: the four-potential is $\tilde{A}_{\Phi} = i\,a'_t\,e_t + \vec A\in\mathbb{B}_{\Phi}$ with an imaginary scalar coefficient, the scalar potential is obtained from its scalar part, the spatial gradient is the vector operator $\vec\nabla$, and the electrostatic field is a real vector.
 
-The moments fall into two classes. The monopole is a central scalar and the dipole is a vector, so both are **elements of the algebra**, and the dipole interaction $-\vec p\cdot\vec E = \mathrm{Sc}(\tilde{p}\tilde E)$ is an algebra product. The quadrupole is a symmetric traceless rank-two tensor, the representation $D^{(2)}$, and it is **not** an algebra element: the quaternion product of two vectors, $\vec q\vec v = -\vec q\cdot\vec v + \vec q\times\vec v$, projects $D^{(1)}\otimes D^{(1)} = D^{(0)}\oplus D^{(1)}\oplus D^{(2)}$ onto $D^{(0)}\oplus D^{(1)}$ and discards the symmetric traceless part. The algebra, as a rotation representation, is $\mathbb{B} = D^{(0)}\oplus D^{(1)}$ and contains no weight-$\pm2$ state. The quadrupole's home is the symmetric traceless square $\operatorname{sym}^2_0(D^{(1)})\cong D^{(2)}$, a subspace of $\mathbb{B}\otimes\mathbb{B}$.
+The moments fall into two classes. The monopole is a central scalar and the dipole is a vector, so both are **elements of the algebra**, and the dipole interaction $-\vec p\cdot\vec E = \mathrm{Sc}(\tilde{p}\tilde E_{\Psi})$ is an algebra product. The quadrupole is a symmetric traceless rank-two tensor, the representation $D^{(2)}$, and it is **not** an algebra element: the quaternion product of two vectors, $\vec q\vec v = -\vec q\cdot\vec v + \vec q\times\vec v$, projects $D^{(1)}\otimes D^{(1)} = D^{(0)}\oplus D^{(1)}\oplus D^{(2)}$ onto $D^{(0)}\oplus D^{(1)}$ and discards the symmetric traceless part. The algebra, as a rotation representation, is $\mathbb{B} = D^{(0)}\oplus D^{(1)}$ and contains no weight-$\pm2$ state. The quadrupole's home is the symmetric traceless square $\operatorname{sym}^2_0(D^{(1)})\cong D^{(2)}$, a subspace of $\mathbb{B}\otimes\mathbb{B}$.
 
 The quadrupole **interaction** is a scalar and therefore lies in the centre: with the external field source-free at the source, $W_{quad} = -\frac16 \mathcal{Q}_{ij}T_{ij} = \frac16 \mathcal{Q}_{ij}\partial^2/\partial R_i\partial R_j\,Ξ(0)$, the contraction of two $D^{(2)}$ objects. The interaction energy is an element of the algebra even though the moment is not.
 
@@ -365,7 +365,7 @@ The multipole tower is infinite because the angular structure of a field on the 
 | $\tilde{\nabla} = e_t\,\partial/\partial R_t + \vec\nabla$ | Biquaternionic gradient |
 | $\vec\nabla = \vec e_x\partial/\partial R_x + \vec e_y\partial/\partial R_y + \vec e_z\partial/\partial R_z$ | Spatial vector gradient |
 | $\Box = \tilde{\nabla}\tilde{\nabla}^{\natural} = \partial^2/\partial R_t^2 + \Delta$ | d'Alembertian (series convention) |
-| $\tilde{A} = i\,a'_t\,e_t + \vec A$ | Four-potential, an element of $\mathbb{B}_{\Phi}$ |
+| $\tilde{A}_{\Phi} = i\,a'_t\,e_t + \vec A$ | Four-potential, an element of $\mathbb{B}_{\Phi}$ |
 | $\tilde{F} = i\sqrt{\epsilon}\,\vec E - \sqrt{\mu}\,\vec H$ | Field-strength biquaternion |
 | $\vec u = (r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)/r$ | Unit radial quaternion, $\vec u^2 = -e_t$ |
 | $\mathrm{Sc}(\cdot)$ | Scalar (central) part |

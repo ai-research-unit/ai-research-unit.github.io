@@ -16,7 +16,7 @@ Three threads are developed below.
 
 - **The algebraic criterion.** A nonzero biquaternion has vanishing biquaternion norm if and only if it is a zero divisor, and the zero divisors split into two families — the **nilpotents**, whose scalar part vanishes and whose square is zero, written $\tilde\Upsilon$ where the nilpotency is the point (§*The Nilpotent Convention* of *Special Element Conventions*), and the **idempotent multiples**, whose scalar part does not. The cone of the material sector is made of the second family, and that is the family that generates the algebra's minimal ideals.
 - **The cone in the remarkable subspaces.** The complex scalar line and the real-quaternion subspace are division algebras and contain no zero divisors. The two Hermitian-type subspaces $\mathbb{B}_{\Phi}$ and $\mathbb{B}_{\Psi}$ each contain a cone, and the $\mathbb{B}_{\Phi}$ cone is the physical light cone.
-- **The cone as the locus of propagation.** The d'Alembertian is the biquaternion norm of the gradient, $\Box = \tilde{\nabla}\tilde{\nabla}^{\natural}$, and a four-wavevector $\tilde P$ is null exactly when $\langle\tilde P\rangle_{\natural} = \langle\tilde P,\tilde P\rangle_{\natural} = 0$. For such a $\tilde P$ every function of the phase $\mathrm{Sc}(\tilde P\tilde{Q}^{\natural}) = \langle\tilde P,\tilde{Q}\rangle_{\natural}$ solves the wave equation, so the null directions are the directions in which the algebra propagates without dispersion. The light cone is where the biquaternion norm degenerates, the wave operator factorizes, and signals travel at $c$.
+- **The cone as the locus of propagation.** The d'Alembertian is the biquaternion norm of the gradient, $\Box = \tilde{\nabla}\tilde{\nabla}^{\natural}$, and a four-wavevector $\tilde P_{\Phi}$ is null exactly when $\langle\tilde P_{\Phi}\rangle_{\natural} = \langle\tilde P_{\Phi},\tilde P_{\Phi}\rangle_{\natural} = 0$. For such a $\tilde P_{\Phi}$ every function of the phase $\mathrm{Sc}(\tilde P_{\Phi}\tilde{Q}^{\natural}) = \langle\tilde P_{\Phi},\tilde{Q}\rangle_{\natural}$ solves the wave equation, so the null directions are the directions in which the algebra propagates without dispersion. The light cone is where the biquaternion norm degenerates, the wave operator factorizes, and signals travel at $c$.
 
 ## The Biquaternion Norm and Its Vanishing Set
 
@@ -161,15 +161,15 @@ $$
 
 because the cross terms cancel and the spatial part gives $+\sum_{\mu\in\{x,r_y,r_z\}}\partial^2/\partial R_\mu^2$, the minus sign in $\tilde{\nabla}^{\natural}$ combining with $\vec e_\mu^2 = -e_t$. The wave operator is thus the biquaternion norm of the gradient biquaternion, exactly as $\langle\tilde{Q}\rangle_{\natural} = \langle\tilde{Q},\tilde{Q}\rangle_{\natural} = \tilde{Q}\tilde{Q}^{\natural}$ is the biquaternion norm of $\tilde{Q}$. The factorization $\Box = \tilde{\nabla}\tilde{\nabla}^{\natural}$ is available in the algebra and is not available in a scalar wave operator; it is the algebraic statement that the second-order operator is a product of first-order ones.
 
-Now let $\tilde P$ be a four-wavevector, meaning an element of $\mathbb{B}_{\Phi}$ written as
+Now let $\tilde P_{\Phi}$ be a four-wavevector, meaning an element of $\mathbb{B}_{\Phi}$ written as
 
 $$
-\tilde P = i\,\frac{\omega}{c}\,e_t + \vec k,
+\tilde P_{\Phi} = i\,\frac{\omega}{c}\,e_t + \vec k,
 \qquad
-\langle\tilde P\rangle_{\natural} = -\frac{\omega^2}{c^2} + \vec k^2 .
+\langle\tilde P_{\Phi}\rangle_{\natural} = -\frac{\omega^2}{c^2} + \vec k^2 .
 $$
 
-For a plane wave $Ξ = f(s)$ with $s = \mathrm{Sc}(\tilde P\tilde{Q}^{\natural}) = -\omega r'_t + \vec k\cdot(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)$, the chain rule gives
+For a plane wave $Ξ = f(s)$ with $s = \mathrm{Sc}(\tilde P_{\Phi}\tilde{Q}^{\natural}) = -\omega r'_t + \vec k\cdot(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)$, the chain rule gives
 
 $$
 \partial/\partial R_t\,s = \frac{-\omega}{ic} = \frac{i\omega}{c} = K_0,
@@ -183,7 +183,7 @@ $$
 \Box f(s) = \left[(\partial/\partial R_t\,s)^2 + \sum_{\mu\in\{x,r_y,r_z\}}(\partial/\partial R_\mu s)^2\right] \frac{d^2f}{ds^2}(s)
 + \bigl(\Box s\bigr) \frac{df}{ds}(s)
 = \left[-\frac{\omega^2}{c^2} + \vec k^2\right] \frac{d^2f}{ds^2}(s)
-= \langle\tilde P\rangle_{\natural}\,\frac{d^2f}{ds^2}(s),
+= \langle\tilde P_{\Phi}\rangle_{\natural}\,\frac{d^2f}{ds^2}(s),
 $$
 
 since $s$ is linear and $\Box s = 0$. Hence
@@ -191,10 +191,10 @@ since $s$ is linear and $\Box s = 0$. Hence
 $$
 \boxed{\; \Box f(s) = 0 \ \text{ for every smooth } f \;}
 \qquad\Longleftrightarrow\qquad
-\langle\tilde P\rangle_{\natural} = 0 .
+\langle\tilde P_{\Phi}\rangle_{\natural} = 0 .
 $$
 
-A four-wavevector supports a dispersionless wave precisely when it is null, and the null condition is the zero-divisor condition: $\tilde P\in\mathcal{Z}$. The wave travels at the speed $c$ because $\langle\tilde P\rangle_{\natural} = 0$ reads $\omega = c|\vec k|$, and it is the biquaternion norm of the wavevector, not a separate postulate, that fixes $c$ as the propagation speed. Equivalently, the lightlike $\tilde P = i(\omega/c)e_t + \vec k$ with $\omega = c|\vec k|$ has the form $i(\omega/c)(e_t - i\vec u_k) = 2i(\omega/c)\tilde\Pi(-\vec u_k)$, an idempotent multiple, so the null wavevectors are exactly the non-pure zero divisors of the material sector, in parallel with the null positions of the previous section.
+A four-wavevector supports a dispersionless wave precisely when it is null, and the null condition is the zero-divisor condition: $\tilde P_{\Phi}\in\mathcal{Z}$. The wave travels at the speed $c$ because $\langle\tilde P_{\Phi}\rangle_{\natural} = 0$ reads $\omega = c|\vec k|$, and it is the biquaternion norm of the wavevector, not a separate postulate, that fixes $c$ as the propagation speed. Equivalently, the lightlike $\tilde P_{\Phi} = i(\omega/c)e_t + \vec k$ with $\omega = c|\vec k|$ has the form $i(\omega/c)(e_t - i\vec u_k) = 2i(\omega/c)\tilde\Pi(-\vec u_k)$, an idempotent multiple, so the null wavevectors are exactly the non-pure zero divisors of the material sector, in parallel with the null positions of the previous section.
 
 A superposition of three such modes checks the cancellation explicitly. Let
 $$
@@ -203,9 +203,9 @@ $$
 \vec k_1 = (1,0,0),\quad \vec k_2 = (0,1,0),\quad \vec k_3 = (0.6,0.8,0),
 $$
 
-with $\omega_i = c|\vec k_i|$ and $c = 1$, so that each $\langle\tilde P_i\rangle_{\natural} = 0$. Evaluating $\BoxΞ = \partial^2/\partial R_t^2Ξ + \DeltaΞ$ numerically at a generic event gives $|\BoxΞ| \sim 10^{-8}$ at the finite-difference resolution used, i.e. zero. The cross terms between different modes, which the single-mode test cannot see, are the content of the check and they cancel because each mode is separately in the kernel of $\Box$.
+with $\omega_i = c|\vec k_i|$ and $c = 1$, so that each $\langle\tilde P_{\Phi,i}\rangle_{\natural} = 0$. Evaluating $\BoxΞ = \partial^2/\partial R_t^2Ξ + \DeltaΞ$ numerically at a generic event gives $|\BoxΞ| \sim 10^{-8}$ at the finite-difference resolution used, i.e. zero. The cross terms between different modes, which the single-mode test cannot see, are the content of the check and they cancel because each mode is separately in the kernel of $\Box$.
 
-The factorization has a second face. Because $\Box = \tilde{\nabla}\tilde{\nabla}^{\natural}$ and the two factors commute, the wave equation is also $\tilde{\nabla}(\tilde{\nabla}^{\natural}Ξ) = 0$, and the cone is the set of directions in which the first-order operator $\tilde{\nabla}^{\natural}$ has a nontrivial kernel of the special form $f(\mathrm{Sc}(\tilde P\tilde{Q}^{\natural}))$. The light cone is the characteristic cone of the operator, and it is the same object as the zero set of the biquaternion norm.
+The factorization has a second face. Because $\Box = \tilde{\nabla}\tilde{\nabla}^{\natural}$ and the two factors commute, the wave equation is also $\tilde{\nabla}(\tilde{\nabla}^{\natural}Ξ) = 0$, and the cone is the set of directions in which the first-order operator $\tilde{\nabla}^{\natural}$ has a nontrivial kernel of the special form $f(\mathrm{Sc}(\tilde P_{\Phi}\tilde{Q}^{\natural}))$. The light cone is the characteristic cone of the operator, and it is the same object as the zero set of the biquaternion norm.
 
 ## Invariance of the Cone
 
@@ -225,15 +225,15 @@ $$
 
 using the multiplicativity of the biquaternion norm and $\langle\tilde{U}\rangle_{\natural} = 1$, $\langle\tilde{U}^{*}\rangle_{\natural} = 1$, the action carries a null element to a null element and a timelike (or spacelike) element to one of the same type. The rotor also maps $\mathbb{B}_{\Phi}$ to itself, because $(\tilde{U}\tilde{Q}\tilde{U}^{*})^{*} = \tilde{U}\tilde{Q}^{*}\tilde{U}^{*} = -\tilde{U}\tilde{Q}\tilde{U}^{*}$ for $\tilde{Q}\in\mathbb{B}_{\Phi}$. The cone is therefore a Lorentz-invariant set, and the causal classification is frame-independent. Conversely, the cone determines the causal structure, and the group that preserves the cone is the group generated by the rotors together with the discrete transformations that do not preserve the arrows of time and space; the identity component is exactly the connected Lorentz group.
 
-Two consequences are worth stating because they are the reason the cone is a physical object and not a coordinate artefact. First, the cone has an intrinsic characterization: it is the set where the algebra's biquaternion norm degenerates, and this characterization is invariant under every algebra automorphism, not merely under the rotors. Second, the cone is the boundary of the region in which the free particle of the companion article *The Relativistic Particle in Biquaternionic Form* can move: its timelike worldline stays strictly inside, and the mass-shell hyperboloid $\langle\tilde{P}\rangle_{\natural} = -m^2c^2$ approaches the cone as $m\to 0$. In this precise sense the zero-divisor cone is the boundary of the massive, invertible, subluminal sector of the algebra.
+Two consequences are worth stating because they are the reason the cone is a physical object and not a coordinate artefact. First, the cone has an intrinsic characterization: it is the set where the algebra's biquaternion norm degenerates, and this characterization is invariant under every algebra automorphism, not merely under the rotors. Second, the cone is the boundary of the region in which the free particle of the companion article *The Relativistic Particle in Biquaternionic Form* can move: its timelike worldline stays strictly inside, and the mass-shell hyperboloid $\langle\tilde{P}_{\Phi}\rangle_{\natural} = -m^2c^2$ approaches the cone as $m\to 0$. In this precise sense the zero-divisor cone is the boundary of the massive, invertible, subluminal sector of the algebra.
 
 ## The Cone in the Algebra's Other Guises
 
 The same set appears wherever the biquaternion norm is evaluated, and three guises are worth naming, because they show that the cone is one object seen in different variables.
 
-- **Momentum space.** The four-momentum $\tilde{P} = iE/c\,e_t + \vec p$ is null when $E = c|\vec p|$: the massless shell. The zero-divisor condition on momentum is the statement that the particle is massless, and for a massive particle $\langle\tilde{P}\rangle_{\natural} = -m^2c^2 < 0$ keeps the momentum strictly timelike.
+- **Momentum space.** The four-momentum $\tilde{P}_{\Phi} = iE/c\,e_t + \vec p$ is null when $E = c|\vec p|$: the massless shell. The zero-divisor condition on momentum is the statement that the particle is massless, and for a massive particle $\langle\tilde{P}_{\Phi}\rangle_{\natural} = -m^2c^2 < 0$ keeps the momentum strictly timelike.
 - **Field space.** The field-strength biquaternion $\tilde{F} = i\sqrt{\epsilon}\,\vec E - \sqrt{\mu}\,\vec H$ is a pure vector $(F_0 = 0)$, so its biquaternion norm is $\langle\tilde{F}\rangle_{\natural} = \langle\tilde{F},\tilde{F}\rangle_{\natural} = \tilde{F}\tilde{F}^{\natural} = \sum_k F_k^2$, and it vanishes exactly for a **null (radiative) field**: $\vec E\perp\vec H$ and $|\vec E| = c|\vec B|$. This is the zero-divisor cone realized inside the six-dimensional complex vector space of the field strength, and it is developed in the companion article *The Field-Strength Biquaternion and Its Invariants*. The energy–momentum tensor of such a field has rank one, as the companion exercise *Exercise: The Electromagnetic Energy–Momentum Tensor* shows.
-- **Wave space.** The four-wavevector $\tilde P$ is null when the plane wave is dispersionless, as derived above.
+- **Wave space.** The four-wavevector $\tilde P_{\Phi}$ is null when the plane wave is dispersionless, as derived above.
 
 In each case the statement is the same: a physically distinguished class of objects — massless particles, radiative fields, dispersionless waves — is exactly the class on which the algebra's biquaternion norm vanishes, and the class is closed under the Lorentz group.
 
@@ -249,7 +249,7 @@ $$
 
 and the corresponding right inverse is the same expression. Off the cone the biquaternion norm is a nonzero complex number, the inverse exists, and the element is a unit that generates the whole algebra as a two-sided ideal. On the cone the inverse does not exist, and the failure is not a limit that can be repaired: $\langle\tilde{Q}\rangle_{\natural} = \langle\tilde{Q},\tilde{Q}\rangle_{\natural} = 0$ makes every candidate inverse of the form $\tilde{Q}^{\natural}/\langle\tilde{Q}\rangle_{\natural}$ undefined, and the existence of a nonzero annihilator is exactly the statement that multiplication by $\tilde{Q}$ has a nontrivial kernel.
 
-The **physical interpretation** of this algebraic boundary is the content of the preceding sections. A massive particle has $\langle\tilde{P}\rangle_{\natural} = -m^2c^2 \neq 0$, so its momentum is invertible and its worldline lies in the interior of the cone; a massless particle has $\langle\tilde{P}\rangle_{\natural} = 0$, so its momentum is a zero divisor and lies on the boundary. A timelike worldline can be continuously deformed into a lightlike one only at the cost of sending $m\to 0$, where the invertibility of the momentum is lost. The cone is therefore not merely the set of paths that light follows; it is the locus where the algebra's multiplication loses invertibility, and the two statements are the same statement in this framework.
+The **physical interpretation** of this algebraic boundary is the content of the preceding sections. A massive particle has $\langle\tilde{P}_{\Phi}\rangle_{\natural} = -m^2c^2 \neq 0$, so its momentum is invertible and its worldline lies in the interior of the cone; a massless particle has $\langle\tilde{P}_{\Phi}\rangle_{\natural} = 0$, so its momentum is a zero divisor and lies on the boundary. A timelike worldline can be continuously deformed into a lightlike one only at the cost of sending $m\to 0$, where the invertibility of the momentum is lost. The cone is therefore not merely the set of paths that light follows; it is the locus where the algebra's multiplication loses invertibility, and the two statements are the same statement in this framework.
 
 ## What the Algebra Supplies and What It Is Standard
 
@@ -263,7 +263,7 @@ The **physical interpretation** of this algebraic boundary is the content of the
 
 1. **The cone and the manifold structure of $\mathcal{Z}$.** The zero-divisor set is a complex cone with a singularity at the origin and a stratification by the scalar part. Does the physical state space, restricted to the material real slice, inherit a natural stratification, and does the apex play any role in the classical theory?
 
-2. **Complexified spacetime.** The Maxwell article complexifies $\tilde{A}$ and $\tilde{F}$. In the fully complexified theory the cone of the algebra and the real light cone of the material slice are different subsets — the complex null cone is larger. Which of the two is the causal cone of the complexified theory is not settled by the algebra alone.
+2. **Complexified spacetime.** The Maxwell article complexifies $\tilde{A}_{\Phi}$ and $\tilde{F}$. In the fully complexified theory the cone of the algebra and the real light cone of the material slice are different subsets — the complex null cone is larger. Which of the two is the causal cone of the complexified theory is not settled by the algebra alone.
 
 3. **The cone and the medium.** The propagation speed is $c = 1/\sqrt{\epsilon\mu}$, so the biquaternion norm and the cone it defines are local in a medium. Does a spatially varying medium deform the cone into a field of cones, and can this be written as a position-dependent biquaternion norm on $\mathbb{B}_{\Phi}$ without leaving the algebra?
 
@@ -290,7 +290,7 @@ $$
 
 so $\mathcal{Z}$ meets the material sector exactly in the light cone $|r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z| = c|r'_t|$, and every nonzero real null point is a real multiple of an idempotent $\tilde\Pi(-\vec u_x) = \tfrac12(e_t - i\vec u_x)$. The division subalgebras $\mathbb{B}_{C}$ and $\mathbb{B}_{H}$ contain no zero divisors; the cones in the two Hermitian-type sectors $\mathbb{B}_{\Phi}$ and $\mathbb{B}_{\Psi}$ are the two real faces of $\mathcal{Z}$, of which the material one is the physical light cone.
 
-The cone is also the locus of propagation. Because $\Box = \tilde{\nabla}\tilde{\nabla}^{\natural}$ is the biquaternion norm of the gradient, a four-wavevector $\tilde P$ satisfies $\Box f(\mathrm{Sc}(\tilde P\tilde{Q}^{\natural})) = \langle\tilde P\rangle_{\natural}\frac{d^2f}{ds^2}$ for every smooth $f$; the wave equation holds for every such phase precisely when $\langle\tilde P\rangle_{\natural} = 0$, which is $\omega = c|\vec k|$ and the zero-divisor condition on $\tilde P$. The cone is invariant under rotor conjugation because the biquaternion norm is multiplicative, and its three physical guises — the massless shell in momentum space, the null field in field space, and the dispersionless wavevector in wave space — are one algebraic locus.
+The cone is also the locus of propagation. Because $\Box = \tilde{\nabla}\tilde{\nabla}^{\natural}$ is the biquaternion norm of the gradient, a four-wavevector $\tilde P_{\Phi}$ satisfies $\Box f(\mathrm{Sc}(\tilde P_{\Phi}\tilde{Q}^{\natural})) = \langle\tilde P_{\Phi}\rangle_{\natural}\frac{d^2f}{ds^2}$ for every smooth $f$; the wave equation holds for every such phase precisely when $\langle\tilde P_{\Phi}\rangle_{\natural} = 0$, which is $\omega = c|\vec k|$ and the zero-divisor condition on $\tilde P_{\Phi}$. The cone is invariant under rotor conjugation because the biquaternion norm is multiplicative, and its three physical guises — the massless shell in momentum space, the null field in field space, and the dispersionless wavevector in wave space — are one algebraic locus.
 
 The light cone is the set on which elements of the biquaternion algebra cease to be invertible; the algebra's failure of division is the algebraic form of the existence of lightlike propagation.
 
@@ -309,8 +309,8 @@ The light cone is the set on which elements of the biquaternion algebra cease to
 | $\tilde\Pi(\vec u) = \tfrac12(e_t + i\vec u)$ | Idempotent; $N=0$, $\tilde\Pi^2=\tilde\Pi$ |
 | $\tilde{Q}^2 = 2Q_t\tilde{Q}$ | Non-pure zero-divisor identity |
 | $\tilde{\nabla}, \tilde{\nabla}^{\natural}$, $\Box = \tilde{\nabla}\tilde{\nabla}^{\natural} = \partial^2/\partial R_t^2+\Delta$ | Gradient, conjugate gradient, d'Alembertian |
-| $\tilde P = i\frac{\omega}{c}e_t + \vec k$ | Four-wavevector, $\mathbb{B}_{\Phi}$ |
-| $\langle\tilde P\rangle_{\natural} = -\omega^2/c^2 + \vec k^2$ | Null condition $\Leftrightarrow$ dispersionless wave |
+| $\tilde P_{\Phi} = i\frac{\omega}{c}e_t + \vec k$ | Four-wavevector, $\mathbb{B}_{\Phi}$ |
+| $\langle\tilde P_{\Phi}\rangle_{\natural} = -\omega^2/c^2 + \vec k^2$ | Null condition $\Leftrightarrow$ dispersionless wave |
 | $\tilde{U}\tilde{U}^{\natural} = e_t$ | Lorentz rotor (unit norm) |
 | $\tilde{Q}\mapsto\tilde{U}\tilde{Q}\tilde{U}^{*}$ | Rotor conjugation; preserves the cone |
 | $c = 1/\sqrt{\epsilon\mu}$, $c_0$ | Speed of light in the medium; in vacuum |

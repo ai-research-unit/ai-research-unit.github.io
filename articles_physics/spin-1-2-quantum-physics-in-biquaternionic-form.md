@@ -321,7 +321,7 @@ The Dirac equation is the equation of motion for a single spin-1/2 field. Its so
 
 The biquaternionic Dirac equation contains:
 
-- The **kinematics** of a relativistic spin-1/2 particle: the mass-shell condition $\tilde P\tilde P^{\natural}= -m^{2}\,c^{2}$ for plane-wave solutions.
+- The **kinematics** of a relativistic spin-1/2 particle: the mass-shell condition $\tilde P_{\Phi}\tilde P_{\Phi}^{\natural}= -m^{2}\,c^{2}$ for plane-wave solutions.
 - The **spin structure**: the polarization biquaternion $\tilde{Ξ}_{\mathrm{sp},0}$ in the plane-wave solution has two independent components, corresponding to the two spin states.
 - The **mass term**: the linear, chirality-off-diagonal mass term $k_m\tilde{Ξ}_{\mathrm{sp},L,R}$, which couples the two chiral components of the spinor.
 
@@ -352,7 +352,7 @@ We can now make a precise statement about what the biquaternion framework contai
 
 6. **The Dirac equation.** The biquaternionic Dirac equation is the equation of motion for a relativistic spin-1/2 field, expressed in terms of a pair of Weyl spinors.
 
-7. **Maxwell's equations.** The biquaternion framework contains Maxwell's equations in the form $\tilde{\nabla}\tilde{F} = -\sqrt{\mu}\,\tilde{J}$ (companion article). The coupling of the spinor field to the electromagnetic field — the analogue of the standard minimal coupling $\partial/\partial R_\mu \to \partial/\partial R_\mu -\frac{k_m\,iqA_{\mu}}{m\,c}$ — has a natural biquaternion form, but the precise expression depends on the representation conventions and is not developed in this article.
+7. **Maxwell's equations.** The biquaternion framework contains Maxwell's equations in the form $\tilde{\nabla}\tilde{F} = -\sqrt{\mu}\,\tilde{J}_{\Phi}$ (companion article). The coupling of the spinor field to the electromagnetic field — the analogue of the standard minimal coupling $\partial/\partial R_\mu \to \partial/\partial R_\mu -\frac{k_m\,iqA_{\mu}}{m\,c}$ — has a natural biquaternion form, but the precise expression depends on the representation conventions and is not developed in this article.
 
 ### Does Not Contain
 

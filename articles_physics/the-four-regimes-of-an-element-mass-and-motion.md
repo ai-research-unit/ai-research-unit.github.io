@@ -48,7 +48,7 @@ p_{\tilde Q}(X)=X^2-2Q_tX+N,
 \qquad N=Q_t^2+B^2 .
 $$
 
-It is multiplicative, $\langle\tilde P\tilde Q\rangle_{\natural}=\langle\tilde P\rangle_{\natural}\langle\tilde Q\rangle_{\natural}$, and its vanishing set is the null cone $\mathcal N$, the set of zero divisors. On the material sector, with $\tilde P=i\frac{E}{c}e_t+\vec p$,
+It is multiplicative, $\langle\tilde P_{\Phi}\tilde Q\rangle_{\natural}=\langle\tilde P_{\Phi}\rangle_{\natural}\langle\tilde Q\rangle_{\natural}$, and its vanishing set is the null cone $\mathcal N$, the set of zero divisors. On the material sector, with $\tilde P_{\Phi}=i\frac{E}{c}e_t+\vec p$,
 
 $$
 N=-\frac{E^2}{c^2}+\lvert\vec p\rvert^2=-m^2c^2 .
@@ -247,7 +247,7 @@ The cells are not phases and not basins of attraction. No dynamics, no order par
 | $\Sigma_{ij}$ | the cell with $N=0$ iff $i=0$ and $B^2=0$ iff $j=0$ |
 | $\mathbb{B}_{\Phi}$ | the material slice, $Q_t=i c r'_t$, $\vec Q$ real |
 | $\mathbb{B}_{\Psi}$ | the informational slice, $Q_t=c r_t$, $\vec Q$ imaginary |
-| $\tilde P=i\frac{E}{c}e_t+\vec p$ | the four-momentum chart |
+| $\tilde P_{\Phi}=i\frac{E}{c}e_t+\vec p$ | the four-momentum chart |
 | $m$, $\vec p$, $\theta_{\mathrm{rpd}}$ | mass, momentum, rapidity |
 
 ## Further Reading

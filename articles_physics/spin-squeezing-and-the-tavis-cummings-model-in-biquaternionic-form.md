@@ -2,18 +2,18 @@
 
 ## Introduction
 
-A single spin-1/2 is the smallest quantum system with an orientation, and its noise is the smallest quantum noise: a coherent spin state has fluctuations $\Delta \tilde S_{\mathrm{tot},\perp} =\frac{m\,c}{2\,k_m}\sqrt{N}$ distributed isotropically in the plane transverse to the mean spin. This is the **standard quantum limit**. When $N$ spin-1/2 particles are coupled collectively — to one another or to a common field — the noise can be redistributed: one transverse component can be squeezed below the standard quantum limit at the expense of the conjugate component. This is **spin squeezing**, and it is the resource of quantum metrology.
+A single spin-1/2 is the smallest quantum system with an orientation, and its noise is the smallest quantum noise: a coherent spin state has fluctuations $\Delta \tilde S_{\Psi,\mathrm{tot},\perp} =\frac{m\,c}{2\,k_m}\sqrt{N}$ distributed isotropically in the plane transverse to the mean spin. This is the **standard quantum limit**. When $N$ spin-1/2 particles are coupled collectively — to one another or to a common field — the noise can be redistributed: one transverse component can be squeezed below the standard quantum limit at the expense of the conjugate component. This is **spin squeezing**, and it is the resource of quantum metrology.
 
 The model in which the collective coupling is cleanest is the **Tavis–Cummings model**: $N$ two-level systems (the spins) coupled with a common strength $g$ to a single bosonic mode. It is the $N$-atom generalisation of the Jaynes–Cummings model, and it exhibits the collective enhancement $g\sqrt{N}$ that underlies superradiance and the collective Rabi splitting. It is a driven multi-spin-1/2 system, and it is the subject of this article, in the biquaternion algebra $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ of the read-list articles.
 
 The article establishes:
 
-1. **The collective spin.** The operators $\tilde S_{\mathrm{tot},\alpha} = \sum_{i=1}^N\tilde{S}_\alpha^{(i)}$ are Hermitian elements of $\mathbb{B}_{\Psi}$ on the $N$-spin space; the symmetric states are the Dicke states, and the collective coherent state is the highest-weight state of a rotor.
-2. **The Tavis–Cummings Hamiltonian and its collective coupling.** In the rotating-wave approximation the interaction is $g(a^\dagger \tilde S_{\mathrm{tot},-} + a\tilde S_{\mathrm{tot},+})$, and in the single-excitation sector the collective coupling is $\frac{m\,c\,g}{k_m}\sqrt{N}$, giving the collective Rabi splitting $\frac{2\,m\,c\,g}{k_m}\sqrt{N}$. Both statements are verified below.
-3. **Spin squeezing.** The Wineland parameter $\zeta_R^2 = N(\Delta \tilde S_{\mathrm{tot},\perp})^2/|\langle\vec S_{\mathrm{tot}}\rangle|^2$ defines the noise relative to the standard quantum limit; the one-axis twisting Hamiltonian $\frac{k_m\,\xi}{m\,c}\tilde S_{\mathrm{tot},3}^2$ drives $\zeta_R^2$ below $1$. The exact diagonalisation in the Dicke basis gives $\zeta^2_{\min}$ decreasing with $N$, consistent with the standard $N^{-2/3}$ scaling.
+1. **The collective spin.** The operators $\tilde S_{\Psi,\mathrm{tot},\alpha} = \sum_{i=1}^N\tilde{S}_{\Psi,\alpha}^{(i)}$ are Hermitian elements of $\mathbb{B}_{\Psi}$ on the $N$-spin space; the symmetric states are the Dicke states, and the collective coherent state is the highest-weight state of a rotor.
+2. **The Tavis–Cummings Hamiltonian and its collective coupling.** In the rotating-wave approximation the interaction is $g(a^\dagger \tilde S_{\Psi,\mathrm{tot},-} + a\tilde S_{\Psi,\mathrm{tot},+})$, and in the single-excitation sector the collective coupling is $\frac{m\,c\,g}{k_m}\sqrt{N}$, giving the collective Rabi splitting $\frac{2\,m\,c\,g}{k_m}\sqrt{N}$. Both statements are verified below.
+3. **Spin squeezing.** The Wineland parameter $\zeta_R^2 = N(\Delta \tilde S_{\Psi,\mathrm{tot},\perp})^2/|\langle\vec S_{\mathrm{tot}}\rangle|^2$ defines the noise relative to the standard quantum limit; the one-axis twisting Hamiltonian $\frac{k_m\,\xi}{m\,c}\tilde S_{\Psi,\mathrm{tot},3}^2$ drives $\zeta_R^2$ below $1$. The exact diagonalisation in the Dicke basis gives $\zeta^2_{\min}$ decreasing with $N$, consistent with the standard $N^{-2/3}$ scaling.
 4. **The algebra's interpretation.** The collective observables are elements of $\mathbb{B}_{\Psi}$, the mean spin and the covariance are readings of the Hermitian form, the squeezing ellipsoid is the image of the coherent-state noise ball under the non-uniform rotor that implements the twist — a shear, not a rigid rotation — and the Tavis–Cummings interaction is an $\mathbb{B}_{\Psi}$ coupling between the spin and the mode.
 
-The notation is that of the read-list articles: $\tilde{S}_k =\frac{m\,c}{2\,k_m}i\vec e_k$, $\tilde\Pi_{1,2}(\vec u) = \tfrac12(e_t\pm i\vec u)$, $\tilde{Ϛ} = \tfrac12(e_t+i\vec r)$, the trace formula $\mathrm{Tr}(\tilde Q_1\tilde Q_2)=2\,\mathrm{Sc}(\tilde Q_1\tilde Q_2)$, and the isomorphism $\mathsf{M}_2$ with $i\vec e_k\mapsto\sigma_k$.
+The notation is that of the read-list articles: $\tilde{S}_{\Psi,k} =\frac{m\,c}{2\,k_m}i\vec e_k$, $\tilde\Pi_{1,2}(\vec u) = \tfrac12(e_t\pm i\vec u)$, $\tilde{Ϛ}_{\Psi} = \tfrac12(e_t+i\vec r)$, the trace formula $\mathrm{Tr}(\tilde Q_1\tilde Q_2)=2\,\mathrm{Sc}(\tilde Q_1\tilde Q_2)$, and the isomorphism $\mathsf{M}_2$ with $i\vec e_k\mapsto\sigma_k$.
 
 The companion articles supply the pieces:
 - Companion article *Angular Momentum and Spin in Biquaternionic Form*, for the collective spin, the ladder operators and the Dicke states.
@@ -27,29 +27,29 @@ The companion articles supply the pieces:
 For $N$ spin-1/2 particles label the spin operators by particle and component,
 
 $$
-\tilde{S}_\alpha^{(i)} =\frac{m\,c}{2\,k_m}ie_\alpha^{(i)},
+\tilde{S}_{\Psi,\alpha}^{(i)} =\frac{m\,c}{2\,k_m}ie_\alpha^{(i)},
 \qquad \alpha = 1,2,3,
 $$
 
-with $[\tilde{S}_\alpha^{(i)},\tilde{S}_\beta^{(j)}] =\frac{m\,c\,i\,\delta_{ij}\,\epsilon_{\alpha\beta\gamma}\,\tilde{S}_{\gamma(i)}}{k_m}$. The **collective spin** is the sum over the particles,
+with $[\tilde{S}_{\Psi,\alpha}^{(i)},\tilde{S}_{\Psi,\beta}^{(j)}] =\frac{m\,c\,i\,\delta_{ij}\,\epsilon_{\alpha\beta\gamma}\,\tilde{S}_{\Psi,\gamma(i)}}{k_m}$. The **collective spin** is the sum over the particles,
 
 $$
-\tilde S_{\mathrm{tot},\alpha} = \sum_{i=1}^N \tilde{S}_\alpha^{(i)},
+\tilde S_{\Psi,\mathrm{tot},\alpha} = \sum_{i=1}^N \tilde{S}_{\Psi,\alpha}^{(i)},
 $$
 
-so that $\tilde S_{\mathrm{tot},\alpha}$ is again an element of $\mathbb{B}_{\Psi}$ and the collective algebra is the same $su(2)$ algebra with $s_{\mathrm{tot}} = N/2$. The raising and lowering combinations $\tilde S_{\mathrm{tot},\pm} = \tilde S_{\mathrm{tot},1}\pm i\tilde S_{\mathrm{tot},2}$ shift the collective magnetic quantum number by $\pm1$. These are the standard collective operators of the Dicke model; the representation theory of the resulting total angular momentum $s_{\mathrm{tot}} = N/2$ is treated in the companion article *Angular Momentum and Spin in Biquaternionic Form*, and here the emphasis is on the spin-1/2 constituents and their collective noise.
+so that $\tilde S_{\Psi,\mathrm{tot},\alpha}$ is again an element of $\mathbb{B}_{\Psi}$ and the collective algebra is the same $su(2)$ algebra with $s_{\mathrm{tot}} = N/2$. The raising and lowering combinations $\tilde S_{\Psi,\mathrm{tot},\pm} = \tilde S_{\Psi,\mathrm{tot},1}\pm i\tilde S_{\Psi,\mathrm{tot},2}$ shift the collective magnetic quantum number by $\pm1$. These are the standard collective operators of the Dicke model; the representation theory of the resulting total angular momentum $s_{\mathrm{tot}} = N/2$ is treated in the companion article *Angular Momentum and Spin in Biquaternionic Form*, and here the emphasis is on the spin-1/2 constituents and their collective noise.
 
 ### The Dicke States
 
 The symmetric subspace is spanned by the **Dicke states** $|s_{\mathrm{tot}} = N/2,\,s_{\mathrm{tot},z}\rangle$, $s_{\mathrm{tot},z} = -N/2,\dots,N/2$, in which $s_{\mathrm{tot}}+s_{\mathrm{tot},z}$ particles are up and $s_{\mathrm{tot}}-s_{\mathrm{tot},z}$ are down, in the fully symmetric combination. They satisfy
 
 $$
-\tilde S_{\mathrm{tot},3}|s_{\mathrm{tot}},s_{\mathrm{tot},z}\rangle  =\frac{m\,c\,s_{\mathrm{tot},z}}{k_m}|s_{\mathrm{tot}},s_{\mathrm{tot},z}\rangle,
+\tilde S_{\Psi,\mathrm{tot},3}|s_{\mathrm{tot}},s_{\mathrm{tot},z}\rangle  =\frac{m\,c\,s_{\mathrm{tot},z}}{k_m}|s_{\mathrm{tot}},s_{\mathrm{tot},z}\rangle,
 \qquad
-\tilde S_{\mathrm{tot},\pm}|s_{\mathrm{tot}},s_{\mathrm{tot},z}\rangle  =\frac{m\,c}{k_m}\sqrt{s_{\mathrm{tot}}(s_{\mathrm{tot}}+1)-s_{\mathrm{tot},z}(s_{\mathrm{tot},z}\pm1)}\,|s_{\mathrm{tot}},s_{\mathrm{tot},z}\pm1\rangle  .
+\tilde S_{\Psi,\mathrm{tot},\pm}|s_{\mathrm{tot}},s_{\mathrm{tot},z}\rangle  =\frac{m\,c}{k_m}\sqrt{s_{\mathrm{tot}}(s_{\mathrm{tot}}+1)-s_{\mathrm{tot},z}(s_{\mathrm{tot},z}\pm1)}\,|s_{\mathrm{tot}},s_{\mathrm{tot},z}\pm1\rangle  .
 $$
 
-The subspace has dimension $N+1$, while the full $N$-spin space has dimension $2^N$; the non-symmetric states carry total angular momentum $s_{\mathrm{tot}} < N/2$ and are not reached by the collective operators. The collective dynamics generated by $\tilde S_{\mathrm{tot},\alpha}$ — and in particular the Tavis–Cummings interaction and the twisting Hamiltonians below — stays within the symmetric subspace if the initial state is symmetric.
+The subspace has dimension $N+1$, while the full $N$-spin space has dimension $2^N$; the non-symmetric states carry total angular momentum $s_{\mathrm{tot}} < N/2$ and are not reached by the collective operators. The collective dynamics generated by $\tilde S_{\Psi,\mathrm{tot},\alpha}$ — and in particular the Tavis–Cummings interaction and the twisting Hamiltonians below — stays within the symmetric subspace if the initial state is symmetric.
 
 ### The Coherent Spin State
 
@@ -62,9 +62,9 @@ $$
 which equals the highest-weight state of the collective spin rotated to the direction $(\theta,\theta_{\mathrm{azm}})$. Its mean spin is $\langle\vec S_{\mathrm{tot}}\rangle  =\frac{m\,c\,N}{2\,k_m}\vec u(\theta,\theta_{\mathrm{azm}})$, and its transverse variance is isotropic,
 
 $$
-\langle  \tilde S_{\mathrm{tot},\perp}^2\rangle  =\frac{m^{2}\,c^{2}\,N}{4\,k_m^{2}},
+\langle  \tilde S_{\Psi,\mathrm{tot},\perp}^2\rangle  =\frac{m^{2}\,c^{2}\,N}{4\,k_m^{2}},
 \qquad
-\Delta \tilde S_{\mathrm{tot},\perp} =\frac{\frac{m\,c}{k_m}\sqrt{N}}{2}.
+\Delta \tilde S_{\Psi,\mathrm{tot},\perp} =\frac{\frac{m\,c}{k_m}\sqrt{N}}{2}.
 $$
 
 This is the standard quantum limit: the noise is the quantum noise of $N$ independent spins, and it is the reference against which squeezing is measured.
@@ -80,30 +80,30 @@ The collective state space, restricted to the symmetric subspace, is the spin-$N
 The Tavis–Cummings model couples $N$ two-level systems to a single bosonic mode with the Hamiltonian
 
 $$
-\tilde R_\Psi =\frac{m\,c\,\omega_{c}\,a^{\dagger}\,a}{k_m}+ \omega_a\,\tilde S_{\mathrm{tot},3} + g\left(a^\dagger \tilde S_{\mathrm{tot},-} + a\,\tilde S_{\mathrm{tot},+}\right),
+\tilde R_\Psi =\frac{m\,c\,\omega_{c}\,a^{\dagger}\,a}{k_m}+ \omega_a\,\tilde S_{\Psi,\mathrm{tot},3} + g\left(a^\dagger \tilde S_{\Psi,\mathrm{tot},-} + a\,\tilde S_{\Psi,\mathrm{tot},+}\right),
 $$
 
 where $a,a^\dagger$ are the mode operators, $\omega_c$ the mode frequency, $\omega_a$ the atomic transition frequency, and $g$ the single-spin coupling. The interaction conserves the total excitation number
 
 $$
-N_{\mathrm{fop},\mathrm{exc}} = a^\dagger a +\frac{k_m\,\tilde{S}_{\mathrm{tot},3}}{m\,c} + \frac{N}{2},
+N_{\mathrm{fop},\mathrm{exc}} = a^\dagger a +\frac{k_m\,\tilde{S}_{\Psi,\mathrm{tot},3}}{m\,c} + \frac{N}{2},
 $$
 
 which counts the photons plus the number of excited spins; this is the collective version of the Jaynes–Cummings excitation number. The model is integrable in each excitation sector.
 
 ### The Rotating-Wave Approximation
 
-The interaction kept is the **rotating-wave** term: the mode annihilates a photon while a spin is raised ($a\tilde S_{\mathrm{tot},+}$), and creates one while a spin is lowered ($a^\dagger\tilde S_{\mathrm{tot},-}$). The neglected counter-rotating terms $a^\dagger\tilde S_{\mathrm{tot},+}$ and $a\tilde S_{\mathrm{tot},-}$ oscillate at the sum frequency $\omega_a+\omega_c$ in the interaction picture and average to zero when $g\ll\omega_a,\omega_c$; this is the rotating-wave approximation, the same approximation as in the single-spin Rabi problem. In the algebra both terms are elements of $\mathbb{B}_{\Psi}$; the approximation selects the slowly varying combination.
+The interaction kept is the **rotating-wave** term: the mode annihilates a photon while a spin is raised ($a\tilde S_{\Psi,\mathrm{tot},+}$), and creates one while a spin is lowered ($a^\dagger\tilde S_{\Psi,\mathrm{tot},-}$). The neglected counter-rotating terms $a^\dagger\tilde S_{\Psi,\mathrm{tot},+}$ and $a\tilde S_{\Psi,\mathrm{tot},-}$ oscillate at the sum frequency $\omega_a+\omega_c$ in the interaction picture and average to zero when $g\ll\omega_a,\omega_c$; this is the rotating-wave approximation, the same approximation as in the single-spin Rabi problem. In the algebra both terms are elements of $\mathbb{B}_{\Psi}$; the approximation selects the slowly varying combination.
 
 ### The Single-Excitation Sector and the Collective Rabi Splitting
 
 Restrict to the manifold with one excitation, spanned by the states $|1,\text{all down}\rangle$ (one photon, no excited spin) and $|0,\text{one excited}\rangle$ (no photon, one spin excited, in the symmetric combination). On resonance $\omega_a = \omega_c = \omega$ the two states are degenerate at energy $\frac{m\,c\,\omega\,(1-N/2)}{k_m}$, and the interaction couples them with the matrix element
 
 $$
-\langle  1,\text{all down}|g\,a\,\tilde S_{\mathrm{tot},+}^{\vphantom{}^{*}}|0,\text{one excited}\rangle  =\frac{m\,c\,g}{k_m}\sqrt{N},
+\langle  1,\text{all down}|g\,a\,\tilde S_{\Psi,\mathrm{tot},+}^{\vphantom{}^{*}}|0,\text{one excited}\rangle  =\frac{m\,c\,g}{k_m}\sqrt{N},
 $$
 
-because $\tilde S_{\mathrm{tot},+}|s_{\mathrm{tot}},-s_{\mathrm{tot}}\rangle  =\frac{m\,c}{k_m}\sqrt{N}\,|s_{\mathrm{tot}},-s_{\mathrm{tot}}+1\rangle$ with $s_{\mathrm{tot}} = N/2$. The two eigenvalues are therefore separated by
+because $\tilde S_{\Psi,\mathrm{tot},+}|s_{\mathrm{tot}},-s_{\mathrm{tot}}\rangle  =\frac{m\,c}{k_m}\sqrt{N}\,|s_{\mathrm{tot}},-s_{\mathrm{tot}}+1\rangle$ with $s_{\mathrm{tot}} = N/2$. The two eigenvalues are therefore separated by
 
 $$
 \boxed{\;\Delta E =\frac{2\,m\,c\,g}{k_m}\sqrt{N}\;}
@@ -120,11 +120,11 @@ The eigenstates of the block are the **polaritons**, the symmetric and antisymme
 Near the fully polarised state $|s_{\mathrm{tot}},\,s_{\mathrm{tot}}\rangle$ (all spins up) the collective operators can be represented by a single bosonic mode,
 
 $$
-\tilde S_{\mathrm{tot},3} =\frac{m\,c}{k_m}\left(\frac{N}{2} - b^\dagger b\right) + O(1/N),
+\tilde S_{\Psi,\mathrm{tot},3} =\frac{m\,c}{k_m}\left(\frac{N}{2} - b^\dagger b\right) + O(1/N),
 \qquad
-\tilde S_{\mathrm{tot},+} \approx \frac{m\,c}{k_m}\sqrt{N}\,b^\dagger,
+\tilde S_{\Psi,\mathrm{tot},+} \approx \frac{m\,c}{k_m}\sqrt{N}\,b^\dagger,
 \qquad
-\tilde S_{\mathrm{tot},-} \approx \frac{m\,c}{k_m}\sqrt{N}\,b,
+\tilde S_{\Psi,\mathrm{tot},-} \approx \frac{m\,c}{k_m}\sqrt{N}\,b,
 $$
 
 the **Holstein–Primakoff** transformation truncated at leading order. Substituting into the Tavis–Cummings Hamiltonian gives a quadratic two-mode problem,
@@ -138,26 +138,26 @@ whose normal modes are obtained by diagonalising the $2\times2$ coupling. On res
 
 ### Superradiance and the $\sqrt{N}$ Enhancement
 
-The same collective enhancement governs the coupling of the spins to a radiating field. The emission amplitude of a collective state carries the factor $\sqrt{N}$, so the coupling to a cavity mode is $g\sqrt{N}$ and the radiated intensity carries $N$: compared with the same number of independently radiating dipoles, whose amplitudes add incoherently, the emission is cooperatively enhanced — **superradiance**. For the Dicke state $|s_{\mathrm{tot}},0\rangle$ the enhancement of the rate is quadratic in $N$. In the algebra these are statements about the collective raising and lowering operators $\tilde S_{\mathrm{tot},\pm}$ and their matrix elements in the Dicke states; the enhancement factors are the $\sqrt{N}$ of the collective algebra.
+The same collective enhancement governs the coupling of the spins to a radiating field. The emission amplitude of a collective state carries the factor $\sqrt{N}$, so the coupling to a cavity mode is $g\sqrt{N}$ and the radiated intensity carries $N$: compared with the same number of independently radiating dipoles, whose amplitudes add incoherently, the emission is cooperatively enhanced — **superradiance**. For the Dicke state $|s_{\mathrm{tot}},0\rangle$ the enhancement of the rate is quadratic in $N$. In the algebra these are statements about the collective raising and lowering operators $\tilde S_{\Psi,\mathrm{tot},\pm}$ and their matrix elements in the Dicke states; the enhancement factors are the $\sqrt{N}$ of the collective algebra.
 
 ## Spin Squeezing
 
 ### The Standard Quantum Limit
 
-For a coherent spin state the transverse variance is $(\Delta \tilde S_{\mathrm{tot},\perp})^2 =\frac{m^{2}\,c^{2}\,N}{4\,k_m^{2}}$ and the mean spin is $|\langle\vec S_{\mathrm{tot}}\rangle| =\frac{m\,c\,N}{2\,k_m}$. The **Wineland squeezing parameter** is
+For a coherent spin state the transverse variance is $(\Delta \tilde S_{\Psi,\mathrm{tot},\perp})^2 =\frac{m^{2}\,c^{2}\,N}{4\,k_m^{2}}$ and the mean spin is $|\langle\vec S_{\mathrm{tot}}\rangle| =\frac{m\,c\,N}{2\,k_m}$. The **Wineland squeezing parameter** is
 
 $$
-\boxed{\;\zeta_R^2 = \frac{N\,(\Delta \tilde S_{\mathrm{tot},\perp})^2_{\min}}{|\langle\vec S_{\mathrm{tot}}\rangle|^2}\;},
+\boxed{\;\zeta_R^2 = \frac{N\,(\Delta \tilde S_{\Psi,\mathrm{tot},\perp})^2_{\min}}{|\langle\vec S_{\mathrm{tot}}\rangle|^2}\;},
 $$
 
-where $(\Delta \tilde S_{\mathrm{tot},\perp})^2_{\min}$ is the smallest variance in the plane perpendicular to the mean spin. The numerator is $N$ times the squeezed variance, the denominator the squared mean spin; for a coherent state $\zeta_R^2 = 1$, a state with $\zeta_R^2 < 1$ is **spin squeezed**, and the metrological phase sensitivity is improved by the factor $\zeta_R$ below the standard quantum limit.
+where $(\Delta \tilde S_{\Psi,\mathrm{tot},\perp})^2_{\min}$ is the smallest variance in the plane perpendicular to the mean spin. The numerator is $N$ times the squeezed variance, the denominator the squared mean spin; for a coherent state $\zeta_R^2 = 1$, a state with $\zeta_R^2 < 1$ is **spin squeezed**, and the metrological phase sensitivity is improved by the factor $\zeta_R$ below the standard quantum limit.
 
 ### The Squeezing Ellipse
 
 The covariance of the collective spin is the symmetric $3\times3$ matrix
 
 $$
-\mathrm{Cov}(\tilde S_{\mathrm{tot},\alpha},\tilde S_{\mathrm{tot},\beta}) = \tfrac{1}{2}\langle \tilde S_{\mathrm{tot},\alpha}\tilde S_{\mathrm{tot},\beta} + \tilde S_{\mathrm{tot},\beta}\tilde S_{\mathrm{tot},\alpha}\rangle - \langle\tilde S_{\mathrm{tot},\alpha}\rangle\langle\tilde S_{\mathrm{tot},\beta}\rangle ,
+\mathrm{Cov}(\tilde S_{\Psi,\mathrm{tot},\alpha},\tilde S_{\Psi,\mathrm{tot},\beta}) = \tfrac{1}{2}\langle \tilde S_{\Psi,\mathrm{tot},\alpha}\tilde S_{\Psi,\mathrm{tot},\beta} + \tilde S_{\Psi,\mathrm{tot},\beta}\tilde S_{\Psi,\mathrm{tot},\alpha}\rangle - \langle\tilde S_{\Psi,\mathrm{tot},\alpha}\rangle\langle\tilde S_{\Psi,\mathrm{tot},\beta}\rangle ,
 $$
 
 whose eigenvalues are the variances along the principal axes. In the plane perpendicular to the mean spin the covariance reduces to a $2\times2$ matrix $\begin{pmatrix}\langle\Delta J_a^2\rangle & C\\ C & \langle\Delta J_b^2\rangle\end{pmatrix}$, and the **squeezing ellipse** is the error ellipse of the two quadratures. The smaller eigenvalue is the squeezed variance; the larger is the anti-squeezed one. The product of the two principal variances obeys the uncertainty relation, so squeezing is a redistribution and never a reduction of the total noise.
@@ -167,13 +167,13 @@ whose eigenvalues are the variances along the principal axes. In the plane perpe
 The simplest generator of squeezing is the **one-axis twisting** Hamiltonian
 
 $$
-\tilde{R}_{\Psi,OAT} =\frac{k_m\,\xi}{m\,c}\,\tilde S_{\mathrm{tot},3}^2 ,
+\tilde{R}_{\Psi,OAT} =\frac{k_m\,\xi}{m\,c}\,\tilde S_{\Psi,\mathrm{tot},3}^2 ,
 $$
 
 which is diagonal in the Dicke basis and therefore exactly solvable. Starting from the coherent state along $+x$, the evolution
 
 $$
-|\tilde{Ξ}_{\mathrm{sp}}(\xi r'_t)\rangle  = \exp(-\frac{k_m^{2}\,i\,\xi\,r'_{t}\,\tilde{S}_{\mathrm{tot},3}^{2}}{m^{2}\,c^{2}})|\theta=\tfrac{\pi}{2},\theta_{\mathrm{azm}}=0\rangle
+|\tilde{Ξ}_{\mathrm{sp}}(\xi r'_t)\rangle  = \exp(-\frac{k_m^{2}\,i\,\xi\,r'_{t}\,\tilde{S}_{\Psi,\mathrm{tot},3}^{2}}{m^{2}\,c^{2}})|\theta=\tfrac{\pi}{2},\theta_{\mathrm{azm}}=0\rangle
 $$
 
 shears the noise ellipse: the variance in the $y$–$z$ plane develops an off-diagonal covariance, the smaller principal variance drops below $\frac{m^{2}\,c^{2}\,N}{4\,k_m^{2}}$, and $\zeta_R^2$ falls below $1$. The mean spin also decreases, since the twisting rotates different Dicke components at different rates; the competition between the shrinking variance and the shrinking mean spin fixes an optimal twisting time.
@@ -191,31 +191,31 @@ The optimal time decreases and the noise decreases with $N$, consistent with the
 
 ### Two-Axis Twisting
 
-The **two-axis countertwisting** Hamiltonian $\frac{k_m\,\xi}{m\,c}(\tilde S_{\mathrm{tot},+}^2 + \tilde S_{\mathrm{tot},-}^2)$ — or equivalently a squeezing generator with two orthogonal axes — reaches the Heisenberg scaling $\zeta^2\propto N^{-1}$ in the ideal case, faster than one-axis twisting. It is harder to realise physically because it requires a nonlinear coupling with two non-commuting axes, but it is the standard benchmark for the best achievable squeezing from a nonlinear collective Hamiltonian. The framework describes it in the same language: a Hermitian element of $\mathbb{B}_{\Psi}$ that is quadratic in the collective spin.
+The **two-axis countertwisting** Hamiltonian $\frac{k_m\,\xi}{m\,c}(\tilde S_{\Psi,\mathrm{tot},+}^2 + \tilde S_{\Psi,\mathrm{tot},-}^2)$ — or equivalently a squeezing generator with two orthogonal axes — reaches the Heisenberg scaling $\zeta^2\propto N^{-1}$ in the ideal case, faster than one-axis twisting. It is harder to realise physically because it requires a nonlinear coupling with two non-commuting axes, but it is the standard benchmark for the best achievable squeezing from a nonlinear collective Hamiltonian. The framework describes it in the same language: a Hermitian element of $\mathbb{B}_{\Psi}$ that is quadratic in the collective spin.
 
 ## The Biquaternion Reading
 
 ### Collective Observables in $\mathbb{B}_{\Psi}$
 
-Each $\tilde S_{\mathrm{tot},\alpha}$ is a sum of the Hermitian elements $\tilde{S}_\alpha^{(i)}=\frac{m\,c}{2\,k_m}i\vec e_\alpha^{(i)}$ and is Hermitian; the mean spin is the normalised Hermitian form, whose trace reading at normalisation is
+Each $\tilde S_{\Psi,\mathrm{tot},\alpha}$ is a sum of the Hermitian elements $\tilde{S}_{\Psi,\alpha}^{(i)}=\frac{m\,c}{2\,k_m}i\vec e_\alpha^{(i)}$ and is Hermitian; the mean spin is the normalised Hermitian form, whose trace reading at normalisation is
 
 $$
-\boxed{\;\langle \tilde S_{\mathrm{tot},\alpha}\rangle = \frac{\langle\tilde{Ϛ},\tilde S_{\mathrm{tot},\alpha}\rangle_{*}}{\langle\tilde{Ϛ},e_t\rangle_{*}}
-= \frac{\mathrm{Sc}(\tilde{Ϛ}\,\tilde S_{\mathrm{tot},\alpha}^{*})}{\mathrm{Sc}(\tilde{Ϛ})}
-= \frac{\operatorname{Tr}(\tilde{Ϛ}\,\tilde S_{\mathrm{tot},\alpha})}{\operatorname{Tr}(\tilde{Ϛ})}\;},
+\boxed{\;\langle \tilde S_{\Psi,\mathrm{tot},\alpha}\rangle = \frac{\langle\tilde{Ϛ}_{\Psi},\tilde S_{\Psi,\mathrm{tot},\alpha}\rangle_{*}}{\langle\tilde{Ϛ}_{\Psi},e_t\rangle_{*}}
+= \frac{\mathrm{Sc}(\tilde{Ϛ}_{\Psi}\,\tilde S_{\Psi,\mathrm{tot},\alpha}^{*})}{\mathrm{Sc}(\tilde{Ϛ}_{\Psi})}
+= \frac{\operatorname{Tr}(\tilde{Ϛ}_{\Psi}\,\tilde S_{\Psi,\mathrm{tot},\alpha})}{\operatorname{Tr}(\tilde{Ϛ}_{\Psi})}\;},
 \qquad
-\tilde{Ϛ} = \text{the collective state},
+\tilde{Ϛ}_{\Psi} = \text{the collective state},
 $$
 
-and the covariance is the trace reading of the symmetrised plain form of $\tilde S_{\mathrm{tot},\alpha}\tilde S_{\mathrm{tot},\beta}$. Squeezing is thus a statement about the readings of the plain form for the collective $\mathbb{B}_{\Psi}$ elements and their products: it is the anisotropy of a quadratic pairing, not of a linear one. The mean spin is a vector, the covariance is a symmetric tensor, and the physics of squeezing lives entirely in the tensor.
+and the covariance is the trace reading of the symmetrised plain form of $\tilde S_{\Psi,\mathrm{tot},\alpha}\tilde S_{\Psi,\mathrm{tot},\beta}$. Squeezing is thus a statement about the readings of the plain form for the collective $\mathbb{B}_{\Psi}$ elements and their products: it is the anisotropy of a quadratic pairing, not of a linear one. The mean spin is a vector, the covariance is a symmetric tensor, and the physics of squeezing lives entirely in the tensor.
 
 ### The Twisting as a Rotor
 
-One-axis twisting is conjugation by a **non-uniform** rotor. In the Dicke basis the evolution operator $\exp(-\frac{k_m^{2}\,i\,\xi\,r'_{t}\,\tilde{S}_{\mathrm{tot},3}^{2}}{m^{2}\,c^{2}})$ acts on each $|s_{\mathrm{tot}},s_{\mathrm{tot},z}\rangle$ with a phase depending on $s_{\mathrm{tot},z}^2$; written on the spinor it is a diagonal rotor whose angle is proportional to $s_{\mathrm{tot},z}^2$. It is not a rigid rotation of the collective Bloch ball — rigid rotations are generated by the linear $\tilde S_{\mathrm{tot},\alpha}$ and are the unit quaternions of $\mathbb{B}_{H}$ — but a **shear** of the ball, generated by the quadratic $\tilde S_{\mathrm{tot},3}^2$. The distinction is the algebraic content of the difference between a rotation (which preserves the noise ellipse) and a squeezing (which shears it). The squeezing ellipsoid is the image of the coherent-state noise ball under this shear.
+One-axis twisting is conjugation by a **non-uniform** rotor. In the Dicke basis the evolution operator $\exp(-\frac{k_m^{2}\,i\,\xi\,r'_{t}\,\tilde{S}_{\Psi,\mathrm{tot},3}^{2}}{m^{2}\,c^{2}})$ acts on each $|s_{\mathrm{tot}},s_{\mathrm{tot},z}\rangle$ with a phase depending on $s_{\mathrm{tot},z}^2$; written on the spinor it is a diagonal rotor whose angle is proportional to $s_{\mathrm{tot},z}^2$. It is not a rigid rotation of the collective Bloch ball — rigid rotations are generated by the linear $\tilde S_{\Psi,\mathrm{tot},\alpha}$ and are the unit quaternions of $\mathbb{B}_{H}$ — but a **shear** of the ball, generated by the quadratic $\tilde S_{\Psi,\mathrm{tot},3}^2$. The distinction is the algebraic content of the difference between a rotation (which preserves the noise ellipse) and a squeezing (which shears it). The squeezing ellipsoid is the image of the coherent-state noise ball under this shear.
 
 ### The Tavis–Cummings Coupling
 
-The interaction term $g(a^\dagger\tilde S_{\mathrm{tot},-} + a\tilde S_{\mathrm{tot},+})$ is an $\mathbb{B}_{\Psi}$ coupling between the spin sector and the mode: $a^\dagger\tilde S_{\mathrm{tot},-}$ and its adjoint are conjugate elements, and their sum is Hermitian. Its matrix element in the single-excitation sector, $\frac{m\,c\,g}{k_m}\sqrt{N}$, is the plain form evaluated between the two collective idempotents, read as the trace pairing, and the collective Rabi splitting $\frac{2\,m\,c\,g}{k_m}\sqrt{N}$ is the associated spectral gap. The algebra thus places the collective coupling on the same footing as the single-spin Rabi coupling of the magnetic-resonance problem, with the collective operator replacing the single spin.
+The interaction term $g(a^\dagger\tilde S_{\Psi,\mathrm{tot},-} + a\tilde S_{\Psi,\mathrm{tot},+})$ is an $\mathbb{B}_{\Psi}$ coupling between the spin sector and the mode: $a^\dagger\tilde S_{\Psi,\mathrm{tot},-}$ and its adjoint are conjugate elements, and their sum is Hermitian. Its matrix element in the single-excitation sector, $\frac{m\,c\,g}{k_m}\sqrt{N}$, is the plain form evaluated between the two collective idempotents, read as the trace pairing, and the collective Rabi splitting $\frac{2\,m\,c\,g}{k_m}\sqrt{N}$ is the associated spectral gap. The algebra thus places the collective coupling on the same footing as the single-spin Rabi coupling of the magnetic-resonance problem, with the collective operator replacing the single spin.
 
 ## What the Algebra Adds and What It Does Not
 
@@ -225,7 +225,7 @@ The interaction term $g(a^\dagger\tilde S_{\mathrm{tot},-} + a\tilde S_{\mathrm{
 
 - **Collective observables are elements of one algebra.** The $N$-spin collective operators are sums of $\mathbb{B}_{\Psi}$ elements and remain in $\mathbb{B}_{\Psi}$; the collective dynamics is described by the same readings of the plain form as the single-spin dynamics.
 - **Squeezing is a tensor property.** The mean spin is a linear reading of the plain form and the covariance a quadratic one; squeezing is the anisotropy of the quadratic pairing, and the algebra's trace formula expresses both.
-- **Rotation versus shear.** Rigid rotations of the collective state are rotors in $\mathbb{B}_{H}$; squeezing is generated by the quadratic $\tilde S_{\mathrm{tot},3}^2$ and is a shear, not a rotation. The algebraic distinction matches the physical one.
+- **Rotation versus shear.** Rigid rotations of the collective state are rotors in $\mathbb{B}_{H}$; squeezing is generated by the quadratic $\tilde S_{\Psi,\mathrm{tot},3}^2$ and is a shear, not a rotation. The algebraic distinction matches the physical one.
 - **The collective coupling is a reading of the plain form.** The $\frac{m\,c\,g}{k_m}\sqrt{N}$ matrix element and the $\frac{2\,m\,c\,g}{k_m}\sqrt{N}$ splitting are the same spectral structure as in the single-spin case, with the collective operator in place of the spin.
 
 **What the algebra does not supply.** The number of spins $N$, the coupling $g$, the frequencies and the initial state are external data. The algebra supplies the collective structure and the pairings; it does not select the Hamiltonian.
@@ -244,15 +244,15 @@ The interaction term $g(a^\dagger\tilde S_{\mathrm{tot},-} + a\tilde S_{\mathrm{
 
 ## Summary
 
-For $N$ spin-1/2 particles the collective operators $\tilde S_{\mathrm{tot},\alpha} = \sum_i\tilde{S}_\alpha^{(i)}$ are Hermitian elements of $\mathbb{B}_{\Psi}$ obeying the same $su(2)$ algebra with $s_{\mathrm{tot}} = N/2$. The symmetric states are the Dicke states $|s_{\mathrm{tot}},s_{\mathrm{tot},z}\rangle$, and the collective coherent state is the product of $N$ identical coherent states with mean spin $\frac{m\,c\,N}{2\,k_m}\vec u$ and transverse variance $\frac{m^{2}\,c^{2}\,N}{4\,k_m^{2}}$ — the standard quantum limit.
+For $N$ spin-1/2 particles the collective operators $\tilde S_{\Psi,\mathrm{tot},\alpha} = \sum_i\tilde{S}_{\Psi,\alpha}^{(i)}$ are Hermitian elements of $\mathbb{B}_{\Psi}$ obeying the same $su(2)$ algebra with $s_{\mathrm{tot}} = N/2$. The symmetric states are the Dicke states $|s_{\mathrm{tot}},s_{\mathrm{tot},z}\rangle$, and the collective coherent state is the product of $N$ identical coherent states with mean spin $\frac{m\,c\,N}{2\,k_m}\vec u$ and transverse variance $\frac{m^{2}\,c^{2}\,N}{4\,k_m^{2}}$ — the standard quantum limit.
 
 The **Tavis–Cummings model**,
 
 $$
-\tilde R_\Psi =\frac{m\,c\,\omega_{c}\,a^{\dagger}\,a}{k_m}+ \omega_a\,\tilde S_{\mathrm{tot},3} + g\left(a^\dagger\tilde S_{\mathrm{tot},-} + a\tilde S_{\mathrm{tot},+}\right),
+\tilde R_\Psi =\frac{m\,c\,\omega_{c}\,a^{\dagger}\,a}{k_m}+ \omega_a\,\tilde S_{\Psi,\mathrm{tot},3} + g\left(a^\dagger\tilde S_{\Psi,\mathrm{tot},-} + a\tilde S_{\Psi,\mathrm{tot},+}\right),
 $$
 
-conserves the excitation number $a^\dagger a +\frac{k_m\,\tilde{S}_{\mathrm{tot},3}}{m\,c}+ N/2$. In its single-excitation sector the collective coupling is $\frac{m\,c\,g}{k_m}\sqrt{N}$ and the collective Rabi splitting is
+conserves the excitation number $a^\dagger a +\frac{k_m\,\tilde{S}_{\Psi,\mathrm{tot},3}}{m\,c}+ N/2$. In its single-excitation sector the collective coupling is $\frac{m\,c\,g}{k_m}\sqrt{N}$ and the collective Rabi splitting is
 
 $$
 \Delta E =\frac{2\,m\,c\,g}{k_m}\sqrt{N},
@@ -263,12 +263,12 @@ verified numerically for $N = 1,4,16,100$. The Holstein–Primakoff linearisatio
 **Spin squeezing** is measured by the Wineland parameter
 
 $$
-\zeta_R^2 = \frac{N\,(\Delta \tilde S_{\mathrm{tot},\perp})^2_{\min}}{|\langle\vec S_{\mathrm{tot}}\rangle|^2},
+\zeta_R^2 = \frac{N\,(\Delta \tilde S_{\Psi,\mathrm{tot},\perp})^2_{\min}}{|\langle\vec S_{\mathrm{tot}}\rangle|^2},
 $$
 
-equal to $1$ for a coherent state and below $1$ for a squeezed state. One-axis twisting, $\tilde{R}_{\Psi,OAT} =\frac{k_m\,\xi}{m\,c}\tilde S_{\mathrm{tot},3}^2$, is diagonal in the Dicke basis and exactly solvable; minimising $\zeta_R^2$ over the twisting time gives $0.354,0.230,0.143,0.087$ for $N = 8,16,32,64$, consistent with the standard $N^{-2/3}$ scaling and with $\zeta_R^2 = 1$ at $\xi r'_t = 0$. Two-axis countertwisting reaches the ideal Heisenberg scaling $\zeta^2\propto N^{-1}$.
+equal to $1$ for a coherent state and below $1$ for a squeezed state. One-axis twisting, $\tilde{R}_{\Psi,OAT} =\frac{k_m\,\xi}{m\,c}\tilde S_{\Psi,\mathrm{tot},3}^2$, is diagonal in the Dicke basis and exactly solvable; minimising $\zeta_R^2$ over the twisting time gives $0.354,0.230,0.143,0.087$ for $N = 8,16,32,64$, consistent with the standard $N^{-2/3}$ scaling and with $\zeta_R^2 = 1$ at $\xi r'_t = 0$. Two-axis countertwisting reaches the ideal Heisenberg scaling $\zeta^2\propto N^{-1}$.
 
-In the algebra the mean spin is a linear reading of the plain form $\mathrm{Tr}(\tilde{Ϛ}\tilde S_{\mathrm{tot},\alpha}^{*})=\mathrm{Tr}(\tilde{Ϛ}\tilde S_{\mathrm{tot},\alpha})$, the star being inert and the unstarred trace real, and the covariance a quadratic one; squeezing is the anisotropy of the quadratic pairing. Rigid rotations of the collective state are rotors in $\mathbb{B}_{H}$, while the twisting generator $\tilde S_{\mathrm{tot},3}^2$ is a shear; the Tavis–Cummings coupling $g(a^\dagger\tilde S_{\mathrm{tot},-} + a\tilde S_{\mathrm{tot},+})$ is an $\mathbb{B}_{\Psi}$ coupling whose single-excitation gap is the collective Rabi splitting.
+In the algebra the mean spin is a linear reading of the plain form $\mathrm{Tr}(\tilde{Ϛ}_{\Psi}\tilde S_{\Psi,\mathrm{tot},\alpha}^{*})=\mathrm{Tr}(\tilde{Ϛ}_{\Psi}\tilde S_{\Psi,\mathrm{tot},\alpha})$, the star being inert and the unstarred trace real, and the covariance a quadratic one; squeezing is the anisotropy of the quadratic pairing. Rigid rotations of the collective state are rotors in $\mathbb{B}_{H}$, while the twisting generator $\tilde S_{\Psi,\mathrm{tot},3}^2$ is a shear; the Tavis–Cummings coupling $g(a^\dagger\tilde S_{\Psi,\mathrm{tot},-} + a\tilde S_{\Psi,\mathrm{tot},+})$ is an $\mathbb{B}_{\Psi}$ coupling whose single-excitation gap is the collective Rabi splitting.
 
 ## Summary of Notation
 
@@ -279,19 +279,19 @@ In the algebra the mean spin is a linear reading of the plain form $\mathrm{Tr}(
 | $i$ | Central scalar imaginary |
 | $\mathbb{B}_{\Psi}$ | Hermitian (informational) subspace |
 | $\mathbb{B}_{H}$ | Unit real quaternions; rigid rotations |
-| $\tilde{S}_\alpha^{(i)} =\frac{m\,c}{2\,k_m}ie_\alpha^{(i)}$ | Spin operator of particle $i$ |
-| $\tilde S_{\mathrm{tot},\alpha} = \sum_i\tilde{S}_\alpha^{(i)}$ | Collective spin |
-| $\tilde S_{\mathrm{tot},\pm} = \tilde S_{\mathrm{tot},1}\pm i\tilde S_{\mathrm{tot},2}$ | Collective raising/lowering operators |
+| $\tilde{S}_{\Psi,\alpha}^{(i)} =\frac{m\,c}{2\,k_m}ie_\alpha^{(i)}$ | Spin operator of particle $i$ |
+| $\tilde S_{\Psi,\mathrm{tot},\alpha} = \sum_i\tilde{S}_{\Psi,\alpha}^{(i)}$ | Collective spin |
+| $\tilde S_{\Psi,\mathrm{tot},\pm} = \tilde S_{\Psi,\mathrm{tot},1}\pm i\tilde S_{\Psi,\mathrm{tot},2}$ | Collective raising/lowering operators |
 | $|s_{\mathrm{tot}},s_{\mathrm{tot},z}\rangle$, $s_{\mathrm{tot}} = N/2$ | Dicke states |
 | $\vec u(\theta,\theta_{\mathrm{azm}})$ | Direction of the collective mean spin |
 | $a, a^\dagger$ | Bosonic mode operators |
 | $g$ | Single-spin coupling to the mode |
-| $\tilde R_\Psi =\frac{m\,c\,\omega_{c}\,a^{\dagger}\,a}{k_m}+ \omega_a\tilde S_{\mathrm{tot},3} + g(a^\dagger\tilde S_{\mathrm{tot},-}+a\tilde S_{\mathrm{tot},+})$ | Tavis–Cummings Hamiltonian |
-| $a^\dagger a +\frac{k_m\,\tilde{S}_{\mathrm{tot},3}}{m\,c}+ N/2$ | Conserved excitation number |
+| $\tilde R_\Psi =\frac{m\,c\,\omega_{c}\,a^{\dagger}\,a}{k_m}+ \omega_a\tilde S_{\Psi,\mathrm{tot},3} + g(a^\dagger\tilde S_{\Psi,\mathrm{tot},-}+a\tilde S_{\Psi,\mathrm{tot},+})$ | Tavis–Cummings Hamiltonian |
+| $a^\dagger a +\frac{k_m\,\tilde{S}_{\Psi,\mathrm{tot},3}}{m\,c}+ N/2$ | Conserved excitation number |
 | $\Delta E =\frac{2\,m\,c\,g}{k_m}\sqrt{N}$ | Collective Rabi splitting |
-| $\zeta_R^2 = N(\Delta \tilde S_{\mathrm{tot},\perp})^2_{\min}/|\langle\vec S_{\mathrm{tot}}\rangle|^2$ | Wineland squeezing parameter |
-| $\tilde{R}_{\Psi,OAT} =\frac{k_m\,\xi}{m\,c}\tilde S_{\mathrm{tot},3}^2$ | One-axis twisting Hamiltonian |
-| $\mathrm{Cov}(\tilde S_{\mathrm{tot},\alpha},\tilde S_{\mathrm{tot},\beta})$ | Collective covariance; the squeezing ellipse |
+| $\zeta_R^2 = N(\Delta \tilde S_{\Psi,\mathrm{tot},\perp})^2_{\min}/|\langle\vec S_{\mathrm{tot}}\rangle|^2$ | Wineland squeezing parameter |
+| $\tilde{R}_{\Psi,OAT} =\frac{k_m\,\xi}{m\,c}\tilde S_{\Psi,\mathrm{tot},3}^2$ | One-axis twisting Hamiltonian |
+| $\mathrm{Cov}(\tilde S_{\Psi,\mathrm{tot},\alpha},\tilde S_{\Psi,\mathrm{tot},\beta})$ | Collective covariance; the squeezing ellipse |
 
 ## Further Reading
 

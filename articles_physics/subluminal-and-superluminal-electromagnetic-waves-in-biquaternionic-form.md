@@ -150,7 +150,7 @@ That relation is what the word "subluminal" means here. Since $\varpi^2-q^2>0$, 
 
 ### Purely electromagnetic particles
 
-The subluminal solutions bear on a question older than the formalism. Einstein, following Poincaré and Ehrenfest, asked whether a **purely electromagnetic particle** can exist: a field configuration $F_p$ with current $J_p$ obeying $\tilde\nabla\tilde F_p=\tilde J_p$ — the source's own equation — and the subsidiary condition $J_p\cdot F_p=0$. The contraction $J_p\cdot F_p$ is a vector. With the field written $F_p=\vec E_p+\omega\vec B_p$ and the current split into charge density and spatial current, its vanishing has one time component and three spatial ones:
+The subluminal solutions bear on a question older than the formalism. Einstein, following Poincaré and Ehrenfest, asked whether a **purely electromagnetic particle** can exist: a field configuration $F_p$ with current $J_p$ obeying $\tilde\nabla\tilde F_p=\tilde J_{\Phi,p}$ — the source's own equation — and the subsidiary condition $J_p\cdot F_p=0$. The contraction $J_p\cdot F_p$ is a vector. With the field written $F_p=\vec E_p+\omega\vec B_p$ and the current split into charge density and spatial current, its vanishing has one time component and three spatial ones:
 
 $$
 J_p\cdot F_p=0
@@ -166,11 +166,11 @@ $$
 \rho_p\vec E_p=0,\qquad \vec j_p\cdot\vec E_p=0,\qquad \vec j_p\times\vec B_p=0,
 $$
 
-the first being the electric force density, the second the power density, and the third the magnetic force density on the current. The triple implies the pair above, but not conversely, so the source's implication runs the wrong way; the two forms coincide in each of the frames the argument goes on to use. For a **time-like** $J_p$ the frame is the rest frame, $\vec j_p=0$, where the condition reduces to $\rho_p\vec E_p=0$ and hence $\vec E_p=0$; then the time component of $\tilde\nabla\tilde F_p=\tilde J_p$, which is $\operatorname{div}\vec E_p=\rho_p$, forces $\rho_p=0$. No time-like configuration survives, and that is Einstein's conclusion. What carries the argument is the rest-frame form, not the printed triple.
+the first being the electric force density, the second the power density, and the third the magnetic force density on the current. The triple implies the pair above, but not conversely, so the source's implication runs the wrong way; the two forms coincide in each of the frames the argument goes on to use. For a **time-like** $J_p$ the frame is the rest frame, $\vec j_p=0$, where the condition reduces to $\rho_p\vec E_p=0$ and hence $\vec E_p=0$; then the time component of $\tilde\nabla\tilde F_p=\tilde J_{\Phi,p}$, which is $\operatorname{div}\vec E_p=\rho_p$, forces $\rho_p=0$. No time-like configuration survives, and that is Einstein's conclusion. What carries the argument is the rest-frame form, not the printed triple.
 
 For a **space-like** $J_p$ there is a frame with $\rho_p=0$ and $\vec j_p\ne0$, and the condition reduces to the remaining two components. A current parallel to the magnetic field, $\vec j_p=kC\,\vec B_p$ with $k=\pm1$ a sign and $C$ real, satisfies both: $\vec j_p\times\vec B_p=0$ because $\vec B_p$ is parallel to itself, and $\vec j_p\cdot\vec E_p=0$ provided $\vec E_p\cdot\vec B_p=0$.
 
-The connection with the subluminal family is that the free stationary field $F_0$ can be **split** as a field plus a current, $\tilde\nabla\tilde F_0=0$ being equivalent to $\tilde\nabla\tilde F_p=\tilde J_p$ for a suitable space-like $J_p$; the free equation then models a standing purely electromagnetic particle. This is the source's route into the older programme of Waite, Barut and Zeni, which it cites; it is recorded here as a programme item, not as an established particle model.
+The connection with the subluminal family is that the free stationary field $F_0$ can be **split** as a field plus a current, $\tilde\nabla\tilde F_0=0$ being equivalent to $\tilde\nabla\tilde F_p=\tilde J_{\Phi,p}$ for a suitable space-like $J_p$; the free equation then models a standing purely electromagnetic particle. This is the source's route into the older programme of Waite, Barut and Zeni, which it cites; it is recorded here as a programme item, not as an established particle model.
 
 ## Superluminal Solutions: the X-Wave
 
@@ -202,7 +202,7 @@ $$
 
 where $\tilde{Ξ}_{\mathrm{sp}}^{\natural}$ is the **reverse** of $\tilde{Ξ}_{\mathrm{sp}}$: the corpus's natural conjugation $\natural$, which the source writes $\tilde{Ξ}_{\mathrm{sp}}$. The counting matters: a general $\tilde{Ξ}_{\mathrm{sp}}$ has **eight** real degrees of freedom, while the field $F$ has **six**, so two constraints must be imposed on $\tilde{Ξ}_{\mathrm{sp}}$ for the correspondence to be one-to-one up to a normalisation. The source chooses them as $\langle\tilde\nabla,\tilde j\rangle=0$ and $\langle\tilde\nabla,\tilde g\rangle=0$, where $j$ and $g$ are the vector and axial-vector currents it builds from the derivative of $\tilde{Ξ}_{\mathrm{sp}}$. This is the same eight-versus-six counting the corpus records in its Dirac–Hestenes article, which reaches it through the parameters of the rotor decomposition; the constraints are the source's extra data.
 
-Substituting $F=-\tilde{Ξ}_{\mathrm{sp}}\vec e_z\tilde{Ξ}_{\mathrm{sp}}^{\natural}$ into the generalised Maxwell equation $\tilde\nabla\tilde F=\tilde J$ — the source's own equation — and using the canonical decomposition $\tilde{Ξ}_{\mathrm{sp}}=\rho^{1/2}\exp(\omega\theta_{\mathrm{dua}}/2)R$ — the rotor $R$, the density $\rho$, and the **Takabayasi angle** $\theta_{\mathrm{dua}}$ — turns the field equation into a spinorial equation for $\tilde{Ξ}_{\mathrm{sp}}$, with two scalar coefficients:
+Substituting $F=-\tilde{Ξ}_{\mathrm{sp}}\vec e_z\tilde{Ξ}_{\mathrm{sp}}^{\natural}$ into the generalised Maxwell equation $\tilde\nabla\tilde F=\tilde J_{\Phi}$ — the source's own equation — and using the canonical decomposition $\tilde{Ξ}_{\mathrm{sp}}=\rho^{1/2}\exp(\omega\theta_{\mathrm{dua}}/2)R$ — the rotor $R$, the density $\rho$, and the **Takabayasi angle** $\theta_{\mathrm{dua}}$ — turns the field equation into a spinorial equation for $\tilde{Ξ}_{\mathrm{sp}}$, with two scalar coefficients:
 
 $$
 (\tilde\nabla\tilde{Ξ}_{\mathrm{sp}})(-\vec e_z)
@@ -238,7 +238,7 @@ which has the shape of the Dirac–Hestenes equation but with a coefficient that
 
 The equation above is non-linear because its coefficients depend on the field: $\Lambda$ and $\\mathcal{Q}_{\\mathrm{sig}}$ are built from the spin bivector $S$, which is a function of $\tilde{Ξ}_{\mathrm{sp}}$, and $\theta_{\mathrm{dua}}$ is a function of $x$ as well. Two steps reduce it, and they give the two displays of the same equation. A third condition is needed for the reduction to end in a **mass**, and it is stated separately below.
 
-**The constraint step.** The currents are $j=\lambda\rho v$ and $g=\kappa\rho v$ with $v=J/\rho$ the four-velocity, so the two constraints read $\rho\dot\lambda+\lambda\,\langle\tilde\nabla,\tilde J\rangle=0$ and $\rho\dot\kappa+\kappa\,\langle\tilde\nabla,\tilde J\rangle=0$, the dot being the derivative along the velocity, $\dot\lambda$ the derivative of $\lambda$ along the velocity. Eliminating $\langle\tilde\nabla,\tilde J\rangle$ between them leaves $\kappa\dot\lambda=\lambda\dot\kappa$, so the ratio of the coefficients is constant,
+**The constraint step.** The currents are $j=\lambda\rho v$ and $g=\kappa\rho v$ with $v=J/\rho$ the four-velocity, so the two constraints read $\rho\dot\lambda+\lambda\,\langle\tilde\nabla,\tilde J_{\Phi}\rangle=0$ and $\rho\dot\kappa+\kappa\,\langle\tilde\nabla,\tilde J_{\Phi}\rangle=0$, the dot being the derivative along the velocity, $\dot\lambda$ the derivative of $\lambda$ along the velocity. Eliminating $\langle\tilde\nabla,\tilde J_{\Phi}\rangle$ between them leaves $\kappa\dot\lambda=\lambda\dot\kappa$, so the ratio of the coefficients is constant,
 $$
 \frac{\kappa}{\lambda}=-\tan\theta_{\mathrm{dua},0}
 \qquad\Longleftrightarrow\qquad
@@ -256,13 +256,13 @@ $$
 $$
 which has the **shape** of the Dirac–Hestenes equation, with a single real coefficient $\lambda$ — in units of inverse length, since restoring $\frac{m\,c}{k_m}$ and $c$ gives $\lambda=k_m$. The coefficient has become real; whether it is a **mass** is the next question. In the unrotated pair the same coefficient reads $\Lambda+\omega\,\mathcal{Q}_{\mathrm{sig}}=\lambda\exp(\omega\theta_{\mathrm{dua}})$, the real coefficient times the duality phase, which is why the phase-carrying display and this one are one equation.
 
-**The mass is a constant only for a conserved current.** Nothing so far makes $\lambda=\Lambda/\cos\theta_{\mathrm{dua}}$ constant, and neither factor need be. What the first constraint does give is $\rho\dot\lambda+\lambda\,\langle\tilde\nabla,\tilde J\rangle=0$, so that
+**The mass is a constant only for a conserved current.** Nothing so far makes $\lambda=\Lambda/\cos\theta_{\mathrm{dua}}$ constant, and neither factor need be. What the first constraint does give is $\rho\dot\lambda+\lambda\,\langle\tilde\nabla,\tilde J_{\Phi}\rangle=0$, so that
 
 $$
-\langle\tilde\nabla,\tilde J\rangle=0\quad\Longleftrightarrow\quad \lambda=\text{const}.
+\langle\tilde\nabla,\tilde J_{\Phi}\rangle=0\quad\Longleftrightarrow\quad \lambda=\text{const}.
 $$
 
-The source states it that way round: the current $J$ is not conserved unless $\lambda$ is constant, so it assumes $\langle\tilde\nabla,\tilde J\rangle=0$ explicitly. That assumption is the third condition, and it is the one that turns a Dirac–Hestenes-shaped equation into a Dirac–Hestenes equation with a mass. Without it the display above is exact but its coefficient drifts from point to point.
+The source states it that way round: the current $J$ is not conserved unless $\lambda$ is constant, so it assumes $\langle\tilde\nabla,\tilde J_{\Phi}\rangle=0$ explicitly. That assumption is the third condition, and it is the one that turns a Dirac–Hestenes-shaped equation into a Dirac–Hestenes equation with a mass. Without it the display above is exact but its coefficient drifts from point to point.
 
 **The rescaling step.** The same content reads as a statement about the spinor. Put $\tilde{Ξ}_{\mathrm{sp}}=\xi\exp(\omega\theta_{\mathrm{dua}}/2)$ with $\xi=\sqrt\rho\,R$ and $\theta_{\mathrm{dua}}$ constant. The rotation $\exp(\omega\theta_{\mathrm{dua}}/2)$ does not depend on $x$, so it passes through the derivative on the left side, and the anticommutation with $i\vec e_x$ merges the two phases on the right side into the same half rotation:
 $$
@@ -417,16 +417,16 @@ Two entries of the table are unreadable rather than wrong, and the table carries
 
 ## Maxwell and the Massless Dirac Equation
 
-The equivalence runs in the other direction as well, and that direction carries the axial current. The **massless** Dirac equation $\tilde\nabla\tilde{Ξ}_{\mathrm{sp}}=0$ for an element $\tilde{Ξ}_{\mathrm{sp}}$ of $\mathbb{B}$ is equivalent to a **generalised Maxwell equation**, $\tilde\nabla\tilde F=\tilde J$ with the current written out:
+The equivalence runs in the other direction as well, and that direction carries the axial current. The **massless** Dirac equation $\tilde\nabla\tilde{Ξ}_{\mathrm{sp}}=0$ for an element $\tilde{Ξ}_{\mathrm{sp}}$ of $\mathbb{B}$ is equivalent to a **generalised Maxwell equation**, $\tilde\nabla\tilde F=\tilde J_{\Phi}$ with the current written out:
 
 $$
-\tilde\nabla\tilde F = \tilde J_{\mathrm{e}} - \omega \tilde J_{\mathrm{m}} = \tilde J ,
+\tilde\nabla\tilde F = \tilde J_{\Phi,\mathrm{e}} - \omega \tilde J_{\Phi,\mathrm{m}} = \tilde J_{\Phi} ,
 $$
 
 with both an electric current $J_{\mathrm{e}}$ and an **axial (magnetic) current** $-\omega J_{\mathrm{m}}$. For $\tilde{Ξ}_{\mathrm{sp},+}$, the $+$ branch of the split by $i\vec e_x$, the electric current vanishes, $j_{\mathrm{e}}=0$, and the equivalent Maxwell equation reads
 
 $$
-\boxed{\;\tilde\nabla\tilde F_+ = -\omega\tilde J_{\mathrm{m}}\;}
+\boxed{\;\tilde\nabla\tilde F_+ = -\omega\tilde J_{\Phi,\mathrm{m}}\;}
 $$
 
 that is, a **massless Dirac field is a Maxwell field with a magnetic current and no electric current**. The current is not external. It is read off the spinor's own components: writing the $L$ value of the $+$ branch as $s+F-\omega p$, with $s$ and $p$ real and $F$ the field bivector, the source finds $\tilde\nabla\tilde F_+=-\omega\,\tilde\nabla p$, so $J_{\mathrm{m}}=\tilde\nabla p$ and the Maxwell equation is **self-sourced**. The mechanism is the split by $i\vec e_x$: the source shows that $\tilde{Ξ}_{\mathrm{sp},+}$ decouples into a pair of Weyl fields of opposite charge, $\tilde\nabla\tilde{Ξ}_{\mathrm{sp},+R}+g\omega B\tilde{Ξ}_{\mathrm{sp},+R}=0$ and $\tilde\nabla\tilde{Ξ}_{\mathrm{sp},+L}-g\omega B\tilde{Ξ}_{\mathrm{sp},+L}=0$ — the spin-plane factor absorbed in each by the Weyl condition, and the subscript naming the value, $L$ the minus value and $R$ the plus one — so that a single $\tilde{Ξ}_{\mathrm{sp},+}$ coupled to a potential carries a particle of charge $+g$ and a particle of charge $-g$ at once. This is a further route in the corpus by which a magnetic current appears in a spinorial or quaternionic reformulation of Maxwell's equations.
@@ -502,7 +502,7 @@ The programme of Rodrigues and Vaz works in a bundle of differential forms and p
 | $\tilde{Ξ}_{\mathrm{sp},\mathrm{dua},\theta}$ | The family of the source, $\tfrac12(\tilde{Ξ}_{\mathrm{sp}}+e^{\omega\theta_{\mathrm{dua}}}i\vec e_x\,\tilde{Ξ}_{\mathrm{sp}}\,i\vec e_x)$, which is the projection at $\theta_{\mathrm{dua}}$ in a duality-rotated frame; $\tilde{Ξ}_{\mathrm{sp},\mathrm{dua},\theta}+\tilde{Ξ}_{\mathrm{sp},\theta_{\mathrm{dua}}+\pi}=\tilde{Ξ}_{\mathrm{sp}}$ replaces the printed $\Lambda_{\mathrm{dua},\theta}=\Lambda_{\theta_{\mathrm{dua}}+\pi}$ |
 | $S=-\tfrac12\tilde{Ξ}_{\mathrm{sp}}\vec e_z\tilde{Ξ}_{\mathrm{sp}}^{-1}$ | Bivector of the canonical analysis; $S_\mu=\tfrac12\,i\,Fe_\mu F\vec e_{\nu(\mu)}$ the Maxwell energy–momentum one-form, $e_\mu$ the unit of the coordinate $x_\mu$ |
 | $\\Lambda,\\ \\mathcal{Q}_{\\mathrm{sig}}$ | The two scalars of the spinorial Maxwell equation, $\Lambda=\Omega\cdot S$ and $\\mathcal{Q}_{\\mathrm{sig}}=\Omega\cdot(\omega S)$, projections of $\Omega$ on the spin bivector; they add into the single coefficient $\Lambda+\omega\,\mathcal{Q}_{\mathrm{sig}}=\lambda e^{\omega\theta_{\mathrm{dua}}}$ |
-| $\lambda,\ \kappa$ | The source's rotated pair, $\lambda=\Lambda\cos\theta_{\mathrm{dua}}+\\mathcal{Q}_{\\mathrm{sig}}\\sin\theta_{\mathrm{dua}}$ and $\kappa=\\mathcal{Q}_{\\mathrm{sig}}\\cos\theta_{\mathrm{dua}}-\Lambda\sin\theta_{\mathrm{dua}}$, with $\lambda+\omega\kappa=(\Lambda+\\omega\\,\\mathcal{Q}_{\\mathrm{sig}})e^{-\omega\theta_{\mathrm{dua}}}$; the constraints force $\kappa=0$ and $\lambda=\Lambda/\cos\theta_{\mathrm{dua}}$ real, and $\langle\tilde\nabla,\tilde J\rangle=0$ then makes $\lambda$ a constant mass |
+| $\lambda,\ \kappa$ | The source's rotated pair, $\lambda=\Lambda\cos\theta_{\mathrm{dua}}+\\mathcal{Q}_{\\mathrm{sig}}\\sin\theta_{\mathrm{dua}}$ and $\kappa=\\mathcal{Q}_{\\mathrm{sig}}\\cos\theta_{\mathrm{dua}}-\Lambda\sin\theta_{\mathrm{dua}}$, with $\lambda+\omega\kappa=(\Lambda+\\omega\\,\\mathcal{Q}_{\\mathrm{sig}})e^{-\omega\theta_{\mathrm{dua}}}$; the constraints force $\kappa=0$ and $\lambda=\Lambda/\cos\theta_{\mathrm{dua}}$ real, and $\langle\tilde\nabla,\tilde J_{\Phi}\rangle=0$ then makes $\lambda$ a constant mass |
 
 ## Further Reading
 

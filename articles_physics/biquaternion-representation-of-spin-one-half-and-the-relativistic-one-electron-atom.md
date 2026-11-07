@@ -94,7 +94,7 @@ $$
 
 **Their commutation relations were recomputed and hold exactly.** $[S_x,S_y] =\frac{m\,c\,i\,S_{z}}{k_m}$, $[S_y,S_z] =\frac{m\,c\,i\,S_{x}}{k_m}$ and $[S_z,S_x] =\frac{m\,c\,i\,S_{y}}{k_m}$, with no residual term. So the three elements satisfy the angular-momentum algebra of spin $\tfrac12$ in the algebra's own product, and that part of the source needs no correction.
 
-**The corpus's operators are $\tilde S_k =\frac{m\,c}{2\,k_m}i\vec e_k$, and the source's are the corpus's in another labelling**: $S_x = -\tilde S_3$, $S_y = -\tilde S_2$ and $S_z = -\tilde S_1$. The two triples are equal as algebras and different as identifications of the three directions, and the exchange is the one the table of the four values shows. Neither is wrong; what the page does not say is which of the two it uses.
+**The corpus's operators are $\tilde S_{\Psi,k} =\frac{m\,c}{2\,k_m}i\vec e_k$, and the source's are the corpus's in another labelling**: $S_x = -\tilde S_{\Psi,3}$, $S_y = -\tilde S_{\Psi,2}$ and $S_z = -\tilde S_{\Psi,1}$. The two triples are equal as algebras and different as identifications of the three directions, and the exchange is the one the table of the four values shows. Neither is wrong; what the page does not say is which of the two it uses.
 
 ### The States
 
@@ -129,9 +129,9 @@ $$
 | $q_+$ | $1$ | $0$ | $\tfrac12\left(e_t - i\vec e_x\right)$ | its own square, Hermitian, scalar part $\tfrac12$ |
 | $q_-$ | $1$ | $0$ | $\tfrac12\left(-\vec e_y - i\vec e_z\right)$ | zero |
 
-**The first of the two is a pure state and the second is not.** $\tfrac12(e_t - i\vec e_x)$ is Hermitian and equal to its own square, so by *Spin-1/2 Quantum Physics in Biquaternionic Form* it is a pure state, and by the operators above it is the state of eigenvalue $-\frac{m\,c}{2\,k_m}$ of the corpus's $\tilde S_x$. The element $\tfrac12(-\vec e_y - i\vec e_z)$ squares to zero, and the two products between them are $\tfrac12(-\vec e_y - i\vec e_z)\cdot\tfrac12(e_t - i\vec e_x) = \tfrac12(-\vec e_y - i\vec e_z)$ and $\tfrac12(e_t - i\vec e_x)\cdot\tfrac12(-\vec e_y - i\vec e_z) = 0$. The complementary pure state along $\vec e_x$ is $\tfrac12(e_t + i\vec e_x)$.
+**The first of the two is a pure state and the second is not.** $\tfrac12(e_t - i\vec e_x)$ is Hermitian and equal to its own square, so by *Spin-1/2 Quantum Physics in Biquaternionic Form* it is a pure state, and by the operators above it is the state of eigenvalue $-\frac{m\,c}{2\,k_m}$ of the corpus's $\tilde S_{\Psi,x}$. The element $\tfrac12(-\vec e_y - i\vec e_z)$ squares to zero, and the two products between them are $\tfrac12(-\vec e_y - i\vec e_z)\cdot\tfrac12(e_t - i\vec e_x) = \tfrac12(-\vec e_y - i\vec e_z)$ and $\tfrac12(e_t - i\vec e_x)\cdot\tfrac12(-\vec e_y - i\vec e_z) = 0$. The complementary pure state along $\vec e_x$ is $\tfrac12(e_t + i\vec e_x)$.
 
-**So the source's up state is a pure state up to the factor $\sqrt2$, and its down state is not an element of that kind at all.** The source's square cannot see the difference, since it is $1$ on both, and the algebra norm cannot see it either, since it is $0$ on both; the difference is visible only in the square. The source calls the first of the two its up state because its own $S_z$ is $-\tilde S_x$, so the state of eigenvalue $-\frac{m\,c}{2\,k_m}$ of $\tilde S_x$ is the state of eigenvalue $+\frac{m\,c}{2\,k_m}$ of its own $S_z$.
+**So the source's up state is a pure state up to the factor $\sqrt2$, and its down state is not an element of that kind at all.** The source's square cannot see the difference, since it is $1$ on both, and the algebra norm cannot see it either, since it is $0$ on both; the difference is visible only in the square. The source calls the first of the two its up state because its own $S_z$ is $-\tilde S_{\Psi,x}$, so the state of eigenvalue $-\frac{m\,c}{2\,k_m}$ of $\tilde S_{\Psi,x}$ is the state of eigenvalue $+\frac{m\,c}{2\,k_m}$ of its own $S_z$.
 
 ## The Rotation Operators
 
@@ -402,8 +402,8 @@ The dictionary is complex-linear; over $\mathbb{R}$ the products span $\mathrm{C
 | $z, w$ | $z = q_t + iq_1$ and $w = q_y + iq_3$ in the classical assignment $q = z + w\vec e_y$ |
 | $\lvert q\rvert^2 = \sum_\mu\lvert q_\mu\rvert^2$ | The source's square, the Hermitian norm $H$; $1$ on both states |
 | $q_1, q_3$ | The source's coefficient labels, $q_x$ and $q_z$ |
-| $S_x, S_y, S_z$ | The source's spin operators; equal to $-\tilde S_3, -\tilde S_2, -\tilde S_1$ |
-| $\tilde S_k =\frac{m\,c}{2\,k_m}i\vec e_k$ | The corpus's spin operators |
+| $S_x, S_y, S_z$ | The source's spin operators; equal to $-\tilde S_{\Psi,3}, -\tilde S_{\Psi,2}, -\tilde S_{\Psi,1}$ |
+| $\tilde S_{\Psi,k} =\frac{m\,c}{2\,k_m}i\vec e_k$ | The corpus's spin operators |
 | $q_+ = \tfrac{1}{\sqrt2}(e_t - i\vec e_x)$, $q_- = \tfrac{1}{\sqrt2}(-\vec e_y - i\vec e_z)$ | The source's two states |
 | $\tfrac12(e_t \pm i\vec e_x)$ | The two pure states along $\vec e_x$; the minus member is $q_+/\sqrt2$ |
 | $\tfrac12(-\vec e_y - i\vec e_z)$ | The square-zero element $q_-/\sqrt2$ |

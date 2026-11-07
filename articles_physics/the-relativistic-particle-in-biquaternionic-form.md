@@ -66,7 +66,7 @@ The curve is **causal** if $\langle d\tilde R_\Phi\rangle_{\natural} \leq 0$ eve
 The **four-velocity** is the tangent with respect to proper time,
 
 $$
-\boxed{\ \tilde{V} = \frac{d\tilde R_\Phi}{d\tau}
+\boxed{\ \tilde{V}_{\Phi} = \frac{d\tilde R_\Phi}{d\tau}
 = \frac{dr'_t}{d\tau}\left(ic\,e_t + \frac{d(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)}{dr'_t}\right)
 = \gamma\left(ic\,e_t + \vec v\right)\ },
 \qquad
@@ -76,18 +76,18 @@ $$
 It lies in $\mathbb{B}_{\Phi}$ because both terms do: $ic\,e_t$ is the imaginary scalar direction of the material sector and $\vec v$ is a real vector. Its biquaternion norm is the defining normalization of the parameter:
 
 $$
-\langle\tilde{V}\rangle_{\natural} = \tilde{V}\,\tilde{V}^{\natural}
+\langle\tilde{V}_{\Phi}\rangle_{\natural} = \tilde{V}_{\Phi}\,\tilde{V}_{\Phi}^{\natural}
 = \gamma^2\left[(ic)^2 + \vec v^2\right]
 = \gamma^2\left(-c^2 + \vec v^2\right)
 = -c^2\gamma^2\left(1 - \frac{\vec v^2}{c^2}\right) = -c^2 .
 $$
 
-The four-velocity is therefore a **unit timelike vector**: its tip runs over the future sheet of the hyperboloid $\langle\tilde{V}\rangle_{\natural} = -c^2$ inside $\mathbb{B}_{\Phi}$.
+The four-velocity is therefore a **unit timelike vector**: its tip runs over the future sheet of the hyperboloid $\langle\tilde{V}_{\Phi}\rangle_{\natural} = -c^2$ inside $\mathbb{B}_{\Phi}$.
 
 The relation between the four-velocity and the ordinary velocity is worth reading as a statement about the algebra rather than about motion. The two real data $\gamma$ and $\vec v$ combine into one element of $\mathbb{B}_{\Phi}$; the constraint $N = -c^2$ removes one real degree of freedom, leaving the three components of $\vec v$ as the independent data, exactly as it must. The time component is then not independent: it is fixed by the three-velocity through
 
 $$
-\mathrm{Sc}(\tilde{V}) = ic\,\gamma = ic\,\frac{1}{\sqrt{1-\vec v^2/c^2}} .
+\mathrm{Sc}(\tilde{V}_{\Phi}) = ic\,\gamma = ic\,\frac{1}{\sqrt{1-\vec v^2/c^2}} .
 $$
 
 It is convenient to parametrize the hyperboloid by the **rapidity** $\theta_{\mathrm{rpd}}$, defined by
@@ -103,11 +103,11 @@ $$
 so that
 
 $$
-\tilde{V} = \cosh\theta_{\mathrm{rpd}}\,(ic\,e_t) + \sinh\theta_{\mathrm{rpd}}\,(c\,\vec u)
+\tilde{V}_{\Phi} = \cosh\theta_{\mathrm{rpd}}\,(ic\,e_t) + \sinh\theta_{\mathrm{rpd}}\,(c\,\vec u)
 = ic\cosh\theta_{\mathrm{rpd}}\,e_t + c\sinh\theta_{\mathrm{rpd}}\,\vec u,
 $$
 
-with $\vec u = \vec v/v$ the unit direction of motion. In this parametrization the normalization $\langle\tilde{V}\rangle_{\natural} = -c^2$ reads $c^2(-\cosh^2\theta_{\mathrm{rpd}} + \sinh^2\theta_{\mathrm{rpd}}) = -c^2$, which is an identity. The rapidity is the additive parametrization of the velocity: for motion along a fixed direction the composition of two velocities corresponds to the sum of their rapidities,
+with $\vec u = \vec v/v$ the unit direction of motion. In this parametrization the normalization $\langle\tilde{V}_{\Phi}\rangle_{\natural} = -c^2$ reads $c^2(-\cosh^2\theta_{\mathrm{rpd}} + \sinh^2\theta_{\mathrm{rpd}}) = -c^2$, which is an identity. The rapidity is the additive parametrization of the velocity: for motion along a fixed direction the composition of two velocities corresponds to the sum of their rapidities,
 
 $$
 \theta_{\mathrm{rpd},\mathrm{tot}} = \theta_{\mathrm{rpd},1} + \theta_{\mathrm{rpd},2},
@@ -122,7 +122,7 @@ which is the standard velocity-addition law and is reproduced by the rotor compo
 The **four-momentum** of a particle of rest mass $m$ is the four-velocity scaled by the mass,
 
 $$
-\tilde{P} = m\tilde{V} = \gamma m\left(ic\,e_t + \vec v\right)
+\tilde{P}_{\Phi} = m\tilde{V}_{\Phi} = \gamma m\left(ic\,e_t + \vec v\right)
 = i\,\frac{E}{c}\,e_t + \vec p,
 \qquad
 E = \gamma mc^2,
@@ -130,26 +130,26 @@ E = \gamma mc^2,
 \vec p = \gamma m\vec v,
 $$
 
-so that the energy is the imaginary scalar part multiplied by $-ic$ — equivalently, the physical energy is $E = -ic\,\mathrm{Sc}(\tilde{P})$ — and the momentum is the real vector part. The four-momentum lies in $\mathbb{B}_{\Phi}$. Its biquaternion norm is the **mass-shell relation**:
+so that the energy is the imaginary scalar part multiplied by $-ic$ — equivalently, the physical energy is $E = -ic\,\mathrm{Sc}(\tilde{P}_{\Phi})$ — and the momentum is the real vector part. The four-momentum lies in $\mathbb{B}_{\Phi}$. Its biquaternion norm is the **mass-shell relation**:
 
 $$
-\boxed{\; \langle\tilde{P}\rangle_{\natural} = \tilde{P}\,\tilde{P}^{\natural} = -\frac{E^2}{c^2} + \vec p^2 = -m^2c^2 \;}
+\boxed{\; \langle\tilde{P}_{\Phi}\rangle_{\natural} = \tilde{P}_{\Phi}\,\tilde{P}_{\Phi}^{\natural} = -\frac{E^2}{c^2} + \vec p^2 = -m^2c^2 \;}
 \qquad\Longleftrightarrow\qquad
 E^2 = \vec p^2c^2 + m^2c^4 .
 $$
 
-This is one of the few places in the framework where an equation of physics is *identical* to an algebraic statement about the biquaternion norm: the mass shell is the level set $\langle\tilde{P}\rangle_{\natural} = -m^2c^2$, and the dispersion relation is its coordinate form. The rest mass is, up to the factor $-c^2$, the biquaternion norm of the four-momentum; the massless case is where the biquaternion norm vanishes, which is the zero-divisor cone.
+This is one of the few places in the framework where an equation of physics is *identical* to an algebraic statement about the biquaternion norm: the mass shell is the level set $\langle\tilde{P}_{\Phi}\rangle_{\natural} = -m^2c^2$, and the dispersion relation is its coordinate form. The rest mass is, up to the factor $-c^2$, the biquaternion norm of the four-momentum; the massless case is where the biquaternion norm vanishes, which is the zero-divisor cone.
 
 The geometric content is worth drawing out. In the four real coordinates $(E/c, p_x, p_y, p_z)$ the relation $E^2 = \vec p^2c^2 + m^2c^4$ is a two-sheeted hyperboloid, and only the future sheet $E \geq mc^2$ is the particle's. The four-momentum is future-directed and timelike:
 
 $$
-\langle\tilde{P}\rangle_{\natural} = -m^2c^2 < 0
+\langle\tilde{P}_{\Phi}\rangle_{\natural} = -m^2c^2 < 0
 \qquad (m > 0),
 $$
 
-and the invariant $\langle\tilde{P}\rangle_{\natural}$ is what the Lorentz group preserves, so the classification of a particle as massive is frame-independent. The relation between the two energy equations is worth recording: in the rest frame $\vec p = 0$ and $E = mc^2$, so the imaginary scalar part of the four-momentum at rest is $i mc$, which is the rest energy in the $i c r'_t$ convention.
+and the invariant $\langle\tilde{P}_{\Phi}\rangle_{\natural}$ is what the Lorentz group preserves, so the classification of a particle as massive is frame-independent. The relation between the two energy equations is worth recording: in the rest frame $\vec p = 0$ and $E = mc^2$, so the imaginary scalar part of the four-momentum at rest is $i mc$, which is the rest energy in the $i c r'_t$ convention.
 
-Two limits fix the picture. As $m\to 0$ with $\vec p$ held fixed the mass shell collapses onto the null cone $\langle\tilde{P}\rangle_{\natural} = 0$, and the particle becomes the zero divisor of the companion article *The Light Cone as the Biquaternion Zero-Divisor Cone*. As $v\ll c$ the energy separates into the rest energy and the kinetic term,
+Two limits fix the picture. As $m\to 0$ with $\vec p$ held fixed the mass shell collapses onto the null cone $\langle\tilde{P}_{\Phi}\rangle_{\natural} = 0$, and the particle becomes the zero divisor of the companion article *The Light Cone as the Biquaternion Zero-Divisor Cone*. As $v\ll c$ the energy separates into the rest energy and the kinetic term,
 
 $$
 E = \gamma mc^2 = mc^2 + \tfrac12 m\vec v^2 + O(\vec v^4/c^2),
@@ -169,15 +169,15 @@ $$
 \tilde U_{\mathrm{lor}}\tilde U_{\mathrm{lor}}{}^{\natural} = e_t,
 $$
 
-with $\tilde U_{\mathrm{lor}}=\tilde U_{\mathrm b}\tilde u_{\mathrm r}$ the Lorentz rotor, a unit-norm biquaternion. Since the action is linear and preserves $\langle\cdot\rangle_{\natural}$, it maps a four-velocity to a four-velocity, and it maps the mass shell to itself; it is the framework's implementation of a change of inertial frame. For a **pure boost** the rotor is Hermitian and lives in $\mathbb{B}_{\Psi}$,
+with $\tilde U_{\mathrm{lor}}=\tilde U_{\Psi,\mathrm b}\tilde u_{\mathrm r}$ the Lorentz rotor, a unit-norm biquaternion. Since the action is linear and preserves $\langle\cdot\rangle_{\natural}$, it maps a four-velocity to a four-velocity, and it maps the mass shell to itself; it is the framework's implementation of a change of inertial frame. For a **pure boost** the rotor is Hermitian and lives in $\mathbb{B}_{\Psi}$,
 
 $$
-\tilde U_{\mathrm b}(\theta_{\mathrm{rpd}},\vec u) = \cosh\frac{\theta_{\mathrm{rpd}}}{2} + i\sinh\frac{\theta_{\mathrm{rpd}}}{2}\,\vec u,
+\tilde U_{\Psi,\mathrm b}(\theta_{\mathrm{rpd}},\vec u) = \cosh\frac{\theta_{\mathrm{rpd}}}{2} + i\sinh\frac{\theta_{\mathrm{rpd}}}{2}\,\vec u,
 \qquad
-\tilde U_{\mathrm b}^{*} = \tilde U_{\mathrm b} ,
+\tilde U_{\Psi,\mathrm b}^{*} = \tilde U_{\Psi,\mathrm b} ,
 $$
 
-with $\theta_{\mathrm{rpd}}$ the rapidity and $\vec u$ the boost direction. The convention for which rotor carries which frame is fixed by the companion article *The Lorentz Transformation as a Biquaternionic Rotation*, whose rotor for a particle of four-velocity $\tilde{V}$ is $\tilde U_{\mathrm b} = \sqrt{-\tfrac{i}{c}\tilde{V}^{\natural}}$, with the boost direction aligned with the particle velocity. With that rotor, the transformation $\tilde R_\Phi\mapsto\tilde U_{\mathrm b}\tilde R_\Phi\tilde U_{\mathrm b}^{*}$ carries the four-velocity $\gamma(ic\,e_t+\vec v)$ of a particle moving with velocity $\vec v = c\tanh\theta_{\mathrm{rpd}}\,\vec u$ to the rest four-velocity $ic\,e_t$.
+with $\theta_{\mathrm{rpd}}$ the rapidity and $\vec u$ the boost direction. The convention for which rotor carries which frame is fixed by the companion article *The Lorentz Transformation as a Biquaternionic Rotation*, whose rotor for a particle of four-velocity $\tilde{V}_{\Phi}$ is $\tilde U_{\Psi,\mathrm b} = \sqrt{-\tfrac{i}{c}\tilde{V}_{\Phi}^{\natural}}$, with the boost direction aligned with the particle velocity. With that rotor, the transformation $\tilde R_\Phi\mapsto\tilde U_{\Psi,\mathrm b}\tilde R_\Phi\tilde U_{\Psi,\mathrm b}^{*}$ carries the four-velocity $\gamma(ic\,e_t+\vec v)$ of a particle moving with velocity $\vec v = c\tanh\theta_{\mathrm{rpd}}\,\vec u$ to the rest four-velocity $ic\,e_t$.
 
 Composition of two boosts is composition of their rotors. For two **collinear** boosts the rotors commute and their rapidities add: if the first has rapidity $\theta_{\mathrm{rpd},1}$ and the second $\theta_{\mathrm{rpd},2}$ along the same direction, the product is the boost of rapidity $\theta_{\mathrm{rpd},1}+\theta_{\mathrm{rpd},2}$, and the composed velocity is
 
@@ -188,14 +188,14 @@ $$
 which is the standard addition law. The verification is elementary in the quaternion algebra: the boost rotor of rapidity $\theta_{\mathrm{rpd}}$ along $\vec u$ acts on the rest four-velocity as
 
 $$
-\tilde U_{\mathrm b}\,\bigl(ic\,e_t\bigr)\,\tilde U_{\mathrm b}^{*}
-= ic\,e_t\,\tilde U_{\mathrm b}^2
+\tilde U_{\Psi,\mathrm b}\,\bigl(ic\,e_t\bigr)\,\tilde U_{\Psi,\mathrm b}^{*}
+= ic\,e_t\,\tilde U_{\Psi,\mathrm b}^2
 = ic\left(\cosh\theta_{\mathrm{rpd}}\,e_t + i\sinh\theta_{\mathrm{rpd}}\,\vec u\right)
 = ic\cosh\theta_{\mathrm{rpd}}\,e_t - c\sinh\theta_{\mathrm{rpd}}\,\vec u
 = \gamma\left(ic\,e_t - \vec v\right),
 $$
 
-using that $ic\,e_t$ is central, that $\tilde U_{\mathrm b}^{*} = \tilde U_{\mathrm b}$ for a pure boost, and that $\tilde U_{\mathrm b}^2 = \cosh\theta_{\mathrm{rpd}} + i\sinh\theta_{\mathrm{rpd}}\,\vec u$. The quaternion-conjugate rotor $\tilde U_{\mathrm b}^{\natural} = \cosh\frac{\theta_{\mathrm{rpd}}}{2} - i\sinh\frac{\theta_{\mathrm{rpd}}}{2}\vec u$, which is the boost of rapidity $-\theta_{\mathrm{rpd}}$, carries the rest four-velocity to $\gamma(ic\,e_t+\vec v)$ instead. Composing two such rotors and reading off the resulting rapidity gives the addition law above. The rapidity is additive because it is half the logarithm of the ratio of the light-cone coordinates, and that additivity is exactly what the hyperbolic parametrization was built to display.
+using that $ic\,e_t$ is central, that $\tilde U_{\Psi,\mathrm b}^{*} = \tilde U_{\Psi,\mathrm b}$ for a pure boost, and that $\tilde U_{\Psi,\mathrm b}^2 = \cosh\theta_{\mathrm{rpd}} + i\sinh\theta_{\mathrm{rpd}}\,\vec u$. The quaternion-conjugate rotor $\tilde U_{\Psi,\mathrm b}^{\natural} = \cosh\frac{\theta_{\mathrm{rpd}}}{2} - i\sinh\frac{\theta_{\mathrm{rpd}}}{2}\vec u$, which is the boost of rapidity $-\theta_{\mathrm{rpd}}$, carries the rest four-velocity to $\gamma(ic\,e_t+\vec v)$ instead. Composing two such rotors and reading off the resulting rapidity gives the addition law above. The rapidity is additive because it is half the logarithm of the ratio of the light-cone coordinates, and that additivity is exactly what the hyperbolic parametrization was built to display.
 
 For **non-collinear** boosts the rotors do not commute, and their product is not a pure boost: it is a boost together with a rotation. The rotation is the Thomas–Wigner rotation, and it is the group-theoretic statement that the boosts do not form a subgroup. It is not needed for the free particle's kinematics, and it is treated in its own right in the companion article *The Two-Sheeted Cover and the Topology of Boosts in Biquaternionic Form*; here it is enough to record that the free four-velocity composes by rotor multiplication, and that the composition is associative while the velocity addition it induces is not.
 
@@ -229,10 +229,10 @@ $$
 \frac{d}{dr'_t}\frac{\partial \mathrm{Lag}}{\partial\vec v} - \left(\frac{\partial \mathrm{Lag}}{\partial r_x}\vec e_x+\frac{\partial \mathrm{Lag}}{\partial r_y}\vec e_y+\frac{\partial \mathrm{Lag}}{\partial r_z}\vec e_z\right) = \frac{d\vec p}{dr'_t} = 0 ,
 $$
 
-so the free four-momentum $\tilde{P} = m\tilde{V}$ is constant. The same statement in the four-dimensional language is that the free worldline is the straight timelike line,
+so the free four-momentum $\tilde{P}_{\Phi} = m\tilde{V}_{\Phi}$ is constant. The same statement in the four-dimensional language is that the free worldline is the straight timelike line,
 
 $$
-\frac{d\tilde{P}}{d\tau} = m\frac{d^2\tilde R_\Phi}{d\tau^2} = 0 ,
+\frac{d\tilde{P}_{\Phi}}{d\tau} = m\frac{d^2\tilde R_\Phi}{d\tau^2} = 0 ,
 $$
 
 the geodesic of flat $\mathbb{B}_{\Phi}$. In the algebra the action is exactly the length functional of the biquaternion norm, and the four-momentum is exactly its Noether charge under translations; the companion article *Noether's Theorem in Biquaternionic Form* derives the charge from the translation invariance of this action.
@@ -244,14 +244,14 @@ The action has the two properties that make it the starting point of the theory.
 Expanding the four-velocity and the energy in powers of $\vec v^2/c^2$ recovers the non-relativistic description as the leading term of the algebra. The spatial part of the four-velocity is
 
 $$
-\tilde{V} = \gamma\left(ic\,e_t + \vec v\right)
+\tilde{V}_{\Phi} = \gamma\left(ic\,e_t + \vec v\right)
 = ic\,e_t + \vec v + O(\vec v^3/c^2),
 $$
 
 so the imaginary scalar component becomes the constant $ic$ and the vector component becomes the ordinary velocity. The four-momentum becomes
 
 $$
-\tilde{P} = i\,\frac{E}{c}\,e_t + \vec p
+\tilde{P}_{\Phi} = i\,\frac{E}{c}\,e_t + \vec p
 = i\,mc\,e_t + m\vec v + O(\vec v^3/c^2),
 $$
 
@@ -274,14 +274,14 @@ $$
 so that
 
 $$
-\langle\tilde{P}\rangle_{\natural} = -\frac{E^2}{c^2} + \vec p^2 = -m^2c^2 + O(v^4/c^2).
+\langle\tilde{P}_{\Phi}\rangle_{\natural} = -\frac{E^2}{c^2} + \vec p^2 = -m^2c^2 + O(v^4/c^2).
 $$
 
 The leading corrections cancel because the mass shell is an exact relation: the kinetic energy $\tfrac12 m\vec v^2$ in $E$ and the momentum $\vec p = m\vec v$ are the two halves of the same invariant. The biquaternion norm does not vanish in the non-relativistic limit — the particle stays well inside the cone, at an invariant distance $m^2c^2$ from the apex — and the non-relativistic theory is in this sense the interior approximation of the relativistic one. It is the same comparison the companion article *The Light Cone as the Biquaternion Zero-Divisor Cone* draws from the momentum-space side.
 
 ## What the Algebra Supplies and What It Transcribes
 
-**Supplied by the algebra.** The identification of the interval with the biquaternion norm, and therefore the identity of the causal trichotomy with the sign of $\langle\cdot\rangle_{\natural}$; the placement of the worldline, the four-velocity and the four-momentum in the material sector $\mathbb{B}_{\Phi}$; the normalization $\langle\tilde{V}\rangle_{\natural} = -c^2$ as an algebraic unit condition rather than a separate postulate; and the packaging of the velocity and the frame transformation in a single rotor. The mass shell $\langle\tilde{P}\rangle_{\natural} = -m^2c^2$ is a level set of the algebra's own form.
+**Supplied by the algebra.** The identification of the interval with the biquaternion norm, and therefore the identity of the causal trichotomy with the sign of $\langle\cdot\rangle_{\natural}$; the placement of the worldline, the four-velocity and the four-momentum in the material sector $\mathbb{B}_{\Phi}$; the normalization $\langle\tilde{V}_{\Phi}\rangle_{\natural} = -c^2$ as an algebraic unit condition rather than a separate postulate; and the packaging of the velocity and the frame transformation in a single rotor. The mass shell $\langle\tilde{P}_{\Phi}\rangle_{\natural} = -m^2c^2$ is a level set of the algebra's own form.
 
 **Transcribed from standard physics.** The proper-time definition, the Lorentz factor, the velocity-addition law, the Lagrangian $\mathrm{Lag} = -mc^2/\gamma$, the canonical momentum, the dispersion relation and the non-relativistic expansion are standard relativistic mechanics, and the biquaternion formulation reproduces them rather than replacing them. The parameter $c$ and the mass $m$ are inputs; the algebra supplies the home of each object but not its value.
 
@@ -295,7 +295,7 @@ The leading corrections cancel because the mass shell is an exact relation: the 
 
 3. **The many-particle problem.** The four-velocity and four-momentum here are those of a single particle. The proper-time normalization does not sum across particles with different Lorentz factors; the multi-particle conservation statement requires the coordinate-time form of the companion article *Exercise: Four-Momentum Conservation in a Collision*, and a clean biquaternion many-body kinematics is not developed here.
 
-4. **Rest mass as a norm.** The identity $\langle\tilde{P}\rangle_{\natural} = -m^2c^2$ makes the rest mass the biquaternion norm of the momentum. Does the framework constrain the possible mass spectrum in any way, or is $m$ an arbitrary parameter of the same kind as in the standard theory?
+4. **Rest mass as a norm.** The identity $\langle\tilde{P}_{\Phi}\rangle_{\natural} = -m^2c^2$ makes the rest mass the biquaternion norm of the momentum. Does the framework constrain the possible mass spectrum in any way, or is $m$ an arbitrary parameter of the same kind as in the standard theory?
 
 5. **Coupling to the informational sector.** The particle is described entirely in $\mathbb{B}_{\Phi}$. Whether there is a kinematical coupling between a worldline and the informational sector $\mathbb{B}_{\Psi}$ — beyond the Lorentz action of the rotor — is not addressed here; it is the central open question of the foundational article *The Informational Sector: States, Observables and Probability*, and it is outside the scope of a classical kinematic account.
 
@@ -322,22 +322,22 @@ $$
 along which the four-velocity
 
 $$
-\tilde{V} = \frac{d\tilde R_\Phi}{d\tau} = \gamma\left(ic\,e_t + \vec v\right),
+\tilde{V}_{\Phi} = \frac{d\tilde R_\Phi}{d\tau} = \gamma\left(ic\,e_t + \vec v\right),
 \qquad
 \gamma = \frac{1}{\sqrt{1-\vec v^2/c^2}},
 $$
 
-satisfies the unit-norm condition $\langle\tilde{V}\rangle_{\natural} = -c^2$. The four-momentum
+satisfies the unit-norm condition $\langle\tilde{V}_{\Phi}\rangle_{\natural} = -c^2$. The four-momentum
 
 $$
-\tilde{P} = m\tilde{V} = i\,\frac{E}{c}\,e_t + \vec p,
+\tilde{P}_{\Phi} = m\tilde{V}_{\Phi} = i\,\frac{E}{c}\,e_t + \vec p,
 \qquad
 E = \gamma mc^2,
 \quad
 \vec p = \gamma m\vec v,
 $$
 
-satisfies the mass-shell relation $\langle\tilde{P}\rangle_{\natural} = -m^2c^2$, equivalently $E^2 = \vec p^2c^2 + m^2c^4$. The rapidity $\theta_{\mathrm{rpd}}$, with $v = c\tanh\theta_{\mathrm{rpd}}$ and $\gamma = \cosh\theta_{\mathrm{rpd}}$, makes the four-velocity $\tilde{V} = ic\cosh\theta_{\mathrm{rpd}}\,e_t + c\sinh\theta_{\mathrm{rpd}}\,\vec u$ and makes collinear velocity addition the sum of rapidities. The free action is the invariant length
+satisfies the mass-shell relation $\langle\tilde{P}_{\Phi}\rangle_{\natural} = -m^2c^2$, equivalently $E^2 = \vec p^2c^2 + m^2c^4$. The rapidity $\theta_{\mathrm{rpd}}$, with $v = c\tanh\theta_{\mathrm{rpd}}$ and $\gamma = \cosh\theta_{\mathrm{rpd}}$, makes the four-velocity $\tilde{V}_{\Phi} = ic\cosh\theta_{\mathrm{rpd}}\,e_t + c\sinh\theta_{\mathrm{rpd}}\,\vec u$ and makes collinear velocity addition the sum of rapidities. The free action is the invariant length
 
 $$
 S[\tilde R_\Phi] = -mc\int\sqrt{-\,d\tilde R_\Phi\,d\tilde{R}_\Phi^{\natural}}
@@ -346,7 +346,7 @@ S[\tilde R_\Phi] = -mc\int\sqrt{-\,d\tilde R_\Phi\,d\tilde{R}_\Phi^{\natural}}
 \mathrm{Lag}(\vec v) = -\frac{mc^2}{\gamma},
 $$
 
-whose canonical momentum is $\vec p = \gamma m\vec v$ and whose equation of motion is $\tilde{P} = \mathrm{const}$. The non-relativistic limit gives $\tilde{V} = ic\,e_t + \vec v$, $E = mc^2 + \vec p^2/2m$ and $\langle\tilde{P}\rangle_{\natural} = -m^2c^2 + O(v^4/c^2)$.
+whose canonical momentum is $\vec p = \gamma m\vec v$ and whose equation of motion is $\tilde{P}_{\Phi} = \mathrm{const}$. The non-relativistic limit gives $\tilde{V}_{\Phi} = ic\,e_t + \vec v$, $E = mc^2 + \vec p^2/2m$ and $\langle\tilde{P}_{\Phi}\rangle_{\natural} = -m^2c^2 + O(v^4/c^2)$.
 
 The interval is the biquaternion norm, the mass shell is its level set, the causal trichotomy is its sign, and the frame transformation is a rotor conjugation; the rest is standard relativistic mechanics transcribed into the algebra.
 
@@ -362,13 +362,13 @@ The interval is the biquaternion norm, the mass shell is its level set, the caus
 | $\langle\tilde{Q}\rangle_{\natural} = \tilde{Q}\tilde{Q}^{\natural} = \sum_\mu Q_\mu^2$ | Biquaternion norm (level 1: identity on $\mathbb{C}$) |
 | $\tilde R_\Phi = i c r'_t\,e_t + r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z$ | Four-position, in $\mathbb{B}_{\Phi}$ |
 | $d\tau^2 = -\langle d\tilde R_\Phi\rangle_{\natural}/c^2$ | Proper time |
-| $\tilde{V} = \gamma(ic\,e_t + \vec v)$, $\langle\tilde{V}\rangle_{\natural} = -c^2$ | Four-velocity, unit timelike |
+| $\tilde{V}_{\Phi} = \gamma(ic\,e_t + \vec v)$, $\langle\tilde{V}_{\Phi}\rangle_{\natural} = -c^2$ | Four-velocity, unit timelike |
 | $\gamma = 1/\sqrt{1-\vec v^2/c^2}$ | Lorentz factor |
 | $\theta_{\mathrm{rpd}}$, $v = c\tanh\theta_{\mathrm{rpd}}$, $\gamma=\cosh\theta_{\mathrm{rpd}}$ | Rapidity |
-| $\tilde{P} = m\tilde{V} = iE/c\,e_t + \vec p$ | Four-momentum |
+| $\tilde{P}_{\Phi} = m\tilde{V}_{\Phi} = iE/c\,e_t + \vec p$ | Four-momentum |
 | $E = \gamma mc^2$, $\vec p = \gamma m\vec v$ | Energy and momentum |
-| $\langle\tilde{P}\rangle_{\natural} = -m^2c^2$ | Mass-shell relation |
-| $\tilde U_{\mathrm b} = \cosh\frac{\theta_{\mathrm{rpd}}}{2} + i\sinh\frac{\theta_{\mathrm{rpd}}}{2}\vec u$, $\tilde U_{\mathrm b}\tilde U_{\mathrm b}^{\natural}=e_t$ | Boost rotor, in $\mathbb{B}_{\Psi}$ |
+| $\langle\tilde{P}_{\Phi}\rangle_{\natural} = -m^2c^2$ | Mass-shell relation |
+| $\tilde U_{\Psi,\mathrm b} = \cosh\frac{\theta_{\mathrm{rpd}}}{2} + i\sinh\frac{\theta_{\mathrm{rpd}}}{2}\vec u$, $\tilde U_{\Psi,\mathrm b}\tilde U_{\Psi,\mathrm b}^{\natural}=e_t$ | Boost rotor, in $\mathbb{B}_{\Psi}$ |
 | $\tilde R_\Phi\mapsto\tilde U_{\mathrm{lor}}\tilde R_\Phi\tilde U_{\mathrm{lor}}{}^{*}$ | Rotor conjugation on $\mathbb{B}_{\Phi}$ |
 | $S = -mc\int\sqrt{-d\tilde R_\Phi\,d\tilde{R}_\Phi^{\natural}}$, $\mathrm{Lag} = -mc^2/\gamma$ | Free action and Lagrangian |
 | $c = 1/\sqrt{\epsilon\mu}$, $c_0$ | Speed of light in the medium; in vacuum |

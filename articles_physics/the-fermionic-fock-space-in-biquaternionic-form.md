@@ -132,7 +132,7 @@ $$
 
 where $\Lambda^n\rho$ denotes the induced action on $\Lambda^nS$, and the reason this is the natural action is that the exterior algebra is a functor: it converts each one-particle representation into the sequence of its antisymmetric powers, preserving direct sums and duals. (It does not turn a tensor product into a tensor product; only the direct sum has the tensor-product rule.)
 
-The decomposition is computed by symmetry. On $S$ the spin generators are the algebra elements $\tilde S_i=\frac{m\,c}{2\,k_m}i\vec e_i$, whose action is $\zeta\mapsto\tilde S_i\zeta$, and the induced operator $\tilde S_{\mathrm{fop},i}=\Gamma(\tilde S_i)$ acts as $0$ on the vacuum, as that same action on $\Lambda^1S=S$, and as the induced scalar action on $\Lambda^2S$. The top power is annihilated by every $\tilde S_{\mathrm{fop},i}$: the rotor $\exp(\theta\,\vec u\cdot\tilde S)$ is a unit element at every $\theta$, so by the antisymmetric-product identity of §*The Lorentz Action and the Covering Sign* it carries $\zeta\wedge\eta$ to itself, and differentiating at $\theta=0$ gives $\tilde S_{\mathrm{fop},i}(\zeta\wedge\eta)=0$. The top power is therefore a Lorentz **singlet**, and the vacuum is the other. On $\Lambda^1S$ the quadratic Casimir is the one-particle Casimir, $s(s+1)=\tfrac34$ in units $\hbar=1$. The eigenvalues of $\tilde S_{\mathrm{fop}}^{2}=\sum_i\tilde S_{\mathrm{fop},i}^{2}$ on $\mathcal{F}$, in the occupation basis, are
+The decomposition is computed by symmetry. On $S$ the spin generators are the algebra elements $\tilde S_{\Psi,i}=\frac{m\,c}{2\,k_m}i\vec e_i$, whose action is $\zeta\mapsto\tilde S_{\Psi,i}\zeta$, and the induced operator $\tilde S_{\Psi,\mathrm{fop},i}=\Gamma(\tilde S_{\Psi,i})$ acts as $0$ on the vacuum, as that same action on $\Lambda^1S=S$, and as the induced scalar action on $\Lambda^2S$. The top power is annihilated by every $\tilde S_{\Psi,\mathrm{fop},i}$: the rotor $\exp(\theta\,\vec u\cdot\tilde S_{\Psi})$ is a unit element at every $\theta$, so by the antisymmetric-product identity of §*The Lorentz Action and the Covering Sign* it carries $\zeta\wedge\eta$ to itself, and differentiating at $\theta=0$ gives $\tilde S_{\Psi,\mathrm{fop},i}(\zeta\wedge\eta)=0$. The top power is therefore a Lorentz **singlet**, and the vacuum is the other. On $\Lambda^1S$ the quadratic Casimir is the one-particle Casimir, $s(s+1)=\tfrac34$ in units $\hbar=1$. The eigenvalues of $\tilde S_{\Psi,\mathrm{fop}}^{2}=\sum_i\tilde S_{\Psi,\mathrm{fop},i}^{2}$ on $\mathcal{F}$, in the occupation basis, are
 
 $$
 \{0,\tfrac34,\tfrac34,0\},
@@ -146,7 +146,7 @@ $$
 0\oplus\tfrac12\oplus 0\;}.
 $$
 
-They were recomputed on the four-dimensional space $\Lambda S$ by building the mode representation explicitly: diagonalising $\tilde S_{\mathrm{fop}}^{2}$ returns the spectrum $\{0,\tfrac34,\tfrac34,0\}$, with $N_{\mathrm{fop}}$ eigenvalues $\{0,1,1,2\}$ and the projection of the spin along the declared direction with eigenvalues $\{0,\tfrac12,-\tfrac12,0\}$. The singlets are the vacuum and the antisymmetric pair; the doublet is the one-particle space. This is the same $\Lambda S$ of the previous section, now read as a representation.
+They were recomputed on the four-dimensional space $\Lambda S$ by building the mode representation explicitly: diagonalising $\tilde S_{\Psi,\mathrm{fop}}^{2}$ returns the spectrum $\{0,\tfrac34,\tfrac34,0\}$, with $N_{\mathrm{fop}}$ eigenvalues $\{0,1,1,2\}$ and the projection of the spin along the declared direction with eigenvalues $\{0,\tfrac12,-\tfrac12,0\}$. The singlets are the vacuum and the antisymmetric pair; the doublet is the one-particle space. This is the same $\Lambda S$ of the previous section, now read as a representation.
 
 The same decomposition follows without diagonalising, and the derivation shows why the top power must be a singlet. On $\Lambda^1S=S$ the induced action is the one-particle action, whose Casimir is $s(s+1)=\tfrac34$. On $\Lambda^2S$, which is one-dimensional, every generator vanishes by the antisymmetric-product identity, so the top power is a singlet; the vacuum is the other. The Casimir spectrum is therefore $\{0,\tfrac34,\tfrac34,0\}$ with no further computation, and the invariant two-particle state is the line of pure L parts, which is the reason the antisymmetric-product identity appears in the same role.
 
@@ -189,7 +189,7 @@ The one-mode identity $(-1)^{N_{\mathrm{mode}}}=i\vec u$ is the parents' stateme
 
 **The parity and the field.** The field operator, being a sum of one-mode operators, is odd under $\Gamma(-I)$; a bilinear is even. The observable algebra of the field is therefore the even part of the Fock space's operator algebra, and the state space splits into an even and an odd sector that never mix under observables. This is the state-space statement of the field's $\mathbb{Z}/2$ grading.
 
-**The sign convention.** With $N_{\mathrm{mode}}$ the number operator of a mode, $(-1)^{N_{\mathrm{mode}}}$ is the parent's one-mode parity, multiplication by $i\vec u$ at the direction the mode declares, which is $\frac{2\,k_m\,\vec u\,\tilde{S}}{m\,c}$. The parity is thus both a state-space grading and an element of the algebra's informational sector, for one mode and at a declared direction; for the field, the tensor product over modes is not an element of $\mathbb{B}$, and the grading is external, the open item recorded by the companion article *The Spin–Statistics Theorem in Biquaternionic Form*.
+**The sign convention.** With $N_{\mathrm{mode}}$ the number operator of a mode, $(-1)^{N_{\mathrm{mode}}}$ is the parent's one-mode parity, multiplication by $i\vec u$ at the direction the mode declares, which is $\frac{2\,k_m\,\vec u\,\tilde{S}_{\Psi}}{m\,c}$. The parity is thus both a state-space grading and an element of the algebra's informational sector, for one mode and at a declared direction; for the field, the tensor product over modes is not an element of $\mathbb{B}$, and the grading is external, the open item recorded by the companion article *The Spin–Statistics Theorem in Biquaternionic Form*.
 
 ## The Inner Product, States and the Trace Pairing
 
@@ -198,17 +198,17 @@ The Fock space is a Hilbert space under the Hermitian form induced from $S$: the
 The biquaternion content enters through the description of states, and it enters mode by mode. A pure state of the **one-mode** Fock space is a ray, and its state element is the Hermitian idempotent of trace one
 
 $$
-\tilde{Ϛ}^2=\tilde{Ϛ},
+\tilde{Ϛ}_{\Psi}^2=\tilde{Ϛ}_{\Psi},
 \qquad
-\tilde{Ϛ}^{*}=\tilde{Ϛ},
+\tilde{Ϛ}_{\Psi}^{*}=\tilde{Ϛ}_{\Psi},
 \qquad
-\operatorname{Tr}\tilde{Ϛ}=1 ,
+\operatorname{Tr}\tilde{Ϛ}_{\Psi}=1 ,
 $$
 
-the Bloch element $\tilde{Ϛ}=\tfrac12(e_t+i\vec r)$ at $\lvert\vec r\rvert=1$, where the direction $\vec r$ is the one the state itself supplies; it is an element of $\mathbb{B}_{\Psi}$. The four-dimensional $\Lambda S$ of the two spin states is not an element of $\mathbb{B}$ and has no state element of the algebra; only its one-mode restrictions do. For one mode, the Born rule is the normalised Hermitian form of the framework, read at normalisation through the trace (*Norm and Pairing Conventions*, §*The Trace and the Normalised State*),
+the Bloch element $\tilde{Ϛ}_{\Psi}=\tfrac12(e_t+i\vec r)$ at $\lvert\vec r\rvert=1$, where the direction $\vec r$ is the one the state itself supplies; it is an element of $\mathbb{B}_{\Psi}$. The four-dimensional $\Lambda S$ of the two spin states is not an element of $\mathbb{B}$ and has no state element of the algebra; only its one-mode restrictions do. For one mode, the Born rule is the normalised Hermitian form of the framework, read at normalisation through the trace (*Norm and Pairing Conventions*, §*The Trace and the Normalised State*),
 
 $$
-\langle H_{\mathrm{fop}}\rangle_{\tilde{Ϛ}}=\frac{\langle\tilde{Ϛ},H_{\mathrm{fop}}\rangle_{*}}{\langle\tilde{Ϛ},e_t\rangle_{*}} ,
+\langle H_{\mathrm{fop}}\rangle_{\tilde{Ϛ}_{\Psi}}=\frac{\langle\tilde{Ϛ}_{\Psi},H_{\mathrm{fop}}\rangle_{*}}{\langle\tilde{Ϛ}_{\Psi},e_t\rangle_{*}} ,
 $$
 
 and the trace reading of the same ratio is the one the conventions fix, since the scalar part and the trace are one reading of the form; the number is a probability, by the positivity of the form. Two remarks fix the interpretation.
@@ -307,7 +307,7 @@ $$
 0\oplus\tfrac12\oplus0,
 $$
 
-with $\tilde S_{\mathrm{fop}}^{2}$ eigenvalues $\{0,\tfrac34,\tfrac34,0\}$ recomputed on the four-dimensional space; the antisymmetric pair is a singlet because a Lorentz rotor — every Lorentz transformation, not only the rotations — has quaternionic norm one, so it carries the two-particle state to itself, with the residual of the antisymmetric-product identity checked on random rotors. The covering element acts as the degree parity, $\Gamma(-e_t)=(-1)^{N_{\mathrm{fop}}}$, recomputed in both constructions. For one mode the parity is the parent's one-mode parity, multiplication by $i\vec u$ at the direction $\vec u$ the mode declares; for the field it is the tensor product over modes and external to $\mathbb{B}$.
+with $\tilde S_{\Psi,\mathrm{fop}}^{2}$ eigenvalues $\{0,\tfrac34,\tfrac34,0\}$ recomputed on the four-dimensional space; the antisymmetric pair is a singlet because a Lorentz rotor — every Lorentz transformation, not only the rotations — has quaternionic norm one, so it carries the two-particle state to itself, with the residual of the antisymmetric-product identity checked on random rotors. The covering element acts as the degree parity, $\Gamma(-e_t)=(-1)^{N_{\mathrm{fop}}}$, recomputed in both constructions. For one mode the parity is the parent's one-mode parity, multiplication by $i\vec u$ at the direction $\vec u$ the mode declares; for the field it is the tensor product over modes and external to $\mathbb{B}$.
 
 The operators generated by the mode operators fill the matrix algebra of the Fock space, $\mathcal{A}_N\cong M_{2^N}(\mathbb{C})$, verified by dimension for $N=1$ (dimension $4$) and $N=2$ (dimension $16$). Pure one-mode states are Hermitian idempotents of $\mathbb{B}_{\Psi}$, the four-dimensional $\Lambda S$ is not an element of $\mathbb{B}$, the observables are even, and the Born rule is the normalised Hermitian form, read through the trace.
 
@@ -326,12 +326,12 @@ The operators generated by the mode operators fill the matrix algebra of the Foc
 | $N_{\mathrm{fop}}$, $a_{\mathrm{fop}},a_{\mathrm{fop}}^{\dagger}$ | Number operator; one-mode ladder |
 | $\Gamma(\rho)=\bigoplus_n\Lambda^n\rho$ | Exterior-power (Fock) functor |
 | $\Lambda S=\mathbb{C}\oplus S\oplus\mathbb{C}$ | Lorentz content of the two spin states of one momentum: $0\oplus\tfrac12\oplus0$ |
-| $\tilde S_{\mathrm{fop},i}=\Gamma(\tilde S_i)$ | Spin operators on $\Lambda S$, the images of $\tilde S_i=\frac{m\,c}{2\,k_m}i\vec e_i$, in units $\hbar=1$ |
+| $\tilde S_{\Psi,\mathrm{fop},i}=\Gamma(\tilde S_{\Psi,i})$ | Spin operators on $\Lambda S$, the images of $\tilde S_{\Psi,i}=\frac{m\,c}{2\,k_m}i\vec e_i$, in units $\hbar=1$ |
 | $\Gamma(-I)=(-1)^{N_{\mathrm{fop}}}$ | Degree parity; $2\pi$ rotation on the Fock space |
 | $(-1)^{N_{\mathrm{mode}}}=i\vec u$ (one mode) | Parity as the element $i\vec u$ at the declared direction, acting by $Q\mapsto i\vec uQ$ |
 | $\mathcal{A}_N\cong M_{2^N}(\mathbb{C})$ | Mode algebra of $N$ fermionic modes |
-| $\tilde{Ϛ}^2=\tilde{Ϛ}=\tilde{Ϛ}^{*}$, $\operatorname{Tr}\tilde{Ϛ}=1$ | One-mode pure state, the Bloch element $\tfrac12(e_t+i\vec r)$ at $\lvert\vec r\rvert=1$; the four-dimensional $\Lambda S$ has no state element of the algebra |
-| $\langle H_{\mathrm{fop}}\rangle_{\tilde{Ϛ}}=\langle\tilde{Ϛ},H_{\mathrm{fop}}\rangle_{*}/\langle\tilde{Ϛ},e_t\rangle_{*}$ | Born rule for one mode: form first, trace at normalisation last |
+| $\tilde{Ϛ}_{\Psi}^2=\tilde{Ϛ}_{\Psi}=\tilde{Ϛ}_{\Psi}^{*}$, $\operatorname{Tr}\tilde{Ϛ}_{\Psi}=1$ | One-mode pure state, the Bloch element $\tfrac12(e_t+i\vec r)$ at $\lvert\vec r\rvert=1$; the four-dimensional $\Lambda S$ has no state element of the algebra |
+| $\langle H_{\mathrm{fop}}\rangle_{\tilde{Ϛ}_{\Psi}}=\langle\tilde{Ϛ}_{\Psi},H_{\mathrm{fop}}\rangle_{*}/\langle\tilde{Ϛ}_{\Psi},e_t\rangle_{*}$ | Born rule for one mode: form first, trace at normalisation last |
 
 ## Further Reading
 

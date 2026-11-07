@@ -79,7 +79,7 @@ The effective potential is a restriction of the effective action, and the restri
 The effective action is the Legendre transform of the connected generating functional of the central scalar,
 
 $$
-\Gamma[\tilde{Ξ}_{\mathrm{cl}}] = \langle \tilde{J},\tilde{Ξ}_{\mathrm{cl}}\rangle - W[\tilde{J}], \qquad \tilde{Ξ}_{\mathrm{cl}} = \frac{\delta W}{\delta \tilde{J}} ,
+\Gamma[\tilde{Ξ}_{\mathrm{cl}}] = \langle \tilde{J}_{\Phi},\tilde{Ξ}_{\mathrm{cl}}\rangle - W[\tilde{J}_{\Phi}], \qquad \tilde{Ξ}_{\mathrm{cl}} = \frac{\delta W}{\delta \tilde{J}_{\Phi}} ,
 $$
 
 and it has the loop expansion $\Gamma = S +\frac{m\,c\,\Gamma_{1}}{k_m}+ \cdots$, with $\Gamma_1 = \tfrac12\mathrm{Tr}\log S^{(2)}[\tilde{Ξ}_{\mathrm{cl}}]$ the logarithm of the determinant of the second variation. These are the conventions of the companion article on the generating functional and the effective action; the classical field is written $\tilde{Ξ}_{\mathrm{cl}}$. The one structural fact imported from it is that a central action has a **central** second variation: the fluctuation operator of a central background has coefficients that commute with the central phase and mixes neither the material nor the informational sector, so its logarithm depends on the background only through the invariant $\rho$, and the one-loop term is the sum of the contributions of the two real components, one from each sector, each with its own field-dependent mass.
@@ -304,7 +304,7 @@ The loop integral, its regularization and its renormalization are standard and a
 | $\mathbb{B}_{\Phi}, \mathbb{B}_{\Psi}$ | Material (anti-Hermitian) and informational (Hermitian) sectors |
 | $\tilde{\nabla} = e_t\,\partial/\partial R_t + \sum_k\,\vec e_k\,\partial/\partial R_k$, $\Box = \tilde{\nabla}\tilde{\nabla}^{\natural} = \partial^2/\partial R_t^2 + \Delta$ | Biquaternionic gradient; d'Alembertian |
 | $\tilde{Ξ} = \xi\,e_t \in \mathbb{B}_{C}$ | Complex central scalar |
-| $\tilde{Ξ}_{\mathrm{cl}} = \delta W/\delta\tilde J$ | Classical field; $\tilde{Ξ}_{\mathrm{cl}}=\xi_c\,e_t$ for a constant background |
+| $\tilde{Ξ}_{\mathrm{cl}} = \delta W/\delta\tilde J_{\Phi}$ | Classical field; $\tilde{Ξ}_{\mathrm{cl}}=\xi_c\,e_t$ for a constant background |
 | $\delta\tilde{Ξ}$ | Fluctuation about the background, $\tilde{Ξ}_{\mathrm{cl}}+\delta\tilde{Ξ}$ |
 | $\rho = \mathrm{Sc}(\tilde{Ξ}^{*}\tilde{Ξ}) = \lvert\xi\rvert^2$ | Central invariant; the potential's argument |
 | $V_0(\rho) = \frac{\lambda}{4}(\rho - v_0^2)^2$ | Tree-level invariant potential |
@@ -312,7 +312,7 @@ The loop integral, its regularization and its renormalization are standard and a
 | $m_h^2 = \lambda v_0^2$, $m_\theta^2 = 0$ | Radial and angular (Goldstone) masses at tree level |
 | $D_\mu = \partial/\partial R_\mu + i\kappa A_\mu$, $\kappa =\frac{k_m\,ϙ}{m\,c}$ | Covariant derivative of the central phase |
 | $ϙ$ | Gauge charge (parameter) |
-| $\Gamma[\tilde{Ξ}_{\mathrm{cl}}] = \langle\tilde{J},\tilde{Ξ}_{\mathrm{cl}}\rangle - W[\tilde{J}]$ | Effective action (Legendre transform) |
+| $\Gamma[\tilde{Ξ}_{\mathrm{cl}}] = \langle\tilde{J}_{\Phi},\tilde{Ξ}_{\mathrm{cl}}\rangle - W[\tilde{J}_{\Phi}]$ | Effective action (Legendre transform) |
 | $\Gamma_1 = \tfrac12\mathrm{Tr}\log S^{(2)}[\tilde{Ξ}_{\mathrm{cl}}]$ | One-loop effective action (determinant) |
 | $V_\text{eff} = -\Gamma/\text{vol}$, $\mathcal{V}_\text{eff}(\rho)$ | Effective potential; its restriction to the invariant |
 | $S^{(2)}[\xi_c] = -\Box + \mathcal{H}(\rho_c)$ | Central fluctuation operator; $\mathcal{H}$ the scalar Hessian |

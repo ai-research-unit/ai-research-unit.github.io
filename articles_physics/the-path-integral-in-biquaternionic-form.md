@@ -120,13 +120,13 @@ a complex number times the identity. It is not a general biquaternion.
 
 2. **The phase multiplies every spinor component equally.** In the state module $\mathbb{B}\tilde\Pi\cong\mathbb{C}^2$ of the Schrödinger article, a central phase acts as the same scalar on both components, $\exp(\frac{k_m\,i\,S}{m\,c})\tilde{Ξ}_{\mathrm{sp}}$. A non-central phase would mix or relatively phase the components; a central one does not.
 
-3. **The overall phase cancels in the state.** With $\tilde{Ξ}_{\mathrm{sp}}\mapsto  \exp(\frac{k_m\,i\,S}{m\,c})\tilde{Ξ}_{\mathrm{sp}}$ and $\tilde{Ϛ}=\tilde{Ξ}_{\mathrm{sp}}\tilde{Ξ}_{\mathrm{sp}}^{\dagger}/\mathrm{Tr}(\tilde{Ξ}_{\mathrm{sp}}^{\dagger}\tilde{Ξ}_{\mathrm{sp}})\in\mathbb{B}_{\Psi}$, centrality gives
-$$\tilde{Ϛ}\,\longmapsto\frac{\exp(\frac{k_m\,i\,S}{m\,c})\tilde{Ξ}_{\mathrm{sp}}\,\tilde{Ξ}_{\mathrm{sp}}^{\dagger} \exp(-\frac{k_m\,i\,S}{m\,c})}{\mathrm{Tr}(\tilde{Ξ}_{\mathrm{sp}}^{\dagger}\tilde{Ξ}_{\mathrm{sp}})}=\tilde{Ϛ},$$
+3. **The overall phase cancels in the state.** With $\tilde{Ξ}_{\mathrm{sp}}\mapsto  \exp(\frac{k_m\,i\,S}{m\,c})\tilde{Ξ}_{\mathrm{sp}}$ and $\tilde{Ϛ}_{\Psi}=\tilde{Ξ}_{\mathrm{sp}}\tilde{Ξ}_{\mathrm{sp}}^{\dagger}/\mathrm{Tr}(\tilde{Ξ}_{\mathrm{sp}}^{\dagger}\tilde{Ξ}_{\mathrm{sp}})\in\mathbb{B}_{\Psi}$, centrality gives
+$$\tilde{Ϛ}_{\Psi}\,\longmapsto\frac{\exp(\frac{k_m\,i\,S}{m\,c})\tilde{Ξ}_{\mathrm{sp}}\,\tilde{Ξ}_{\mathrm{sp}}^{\dagger} \exp(-\frac{k_m\,i\,S}{m\,c})}{\mathrm{Tr}(\tilde{Ξ}_{\mathrm{sp}}^{\dagger}\tilde{Ξ}_{\mathrm{sp}})}=\tilde{Ϛ}_{\Psi},$$
 so the global phase of a single path is unobservable, and the Born probabilities $\operatorname{Tr}(\tilde\Pi\tilde R_\Psi^{*})=\operatorname{Tr}(\tilde\Pi\tilde R_\Psi)=2\,\mathrm{Sc}(\tilde\Pi\tilde R_\Psi^{*}) = 2\langle\tilde\Pi,\tilde R_\Psi\rangle_{*}$ are unchanged, the star being inert and the unstarred trace real, and non-negative when $\tilde R_\Psi\ge0$. Only **relative** phases — differences of actions between paths — are observable, which is exactly what the interference formula of the previous section says.
 
 ### The sector chain
 
-The three facts above arrange themselves into a chain that is worth stating separately, and labelling for what it is. The exponent of the phase is an element of the **material sector** $\mathbb{B}_{\Phi}$; the phase itself is an element of the **centre** $\mathbb{B}_{C}$; the amplitude it produces is central; and the state built from the amplitude, $\tilde{Ϛ}=\tilde{Ξ}_{\mathrm{sp}}\tilde{Ξ}_{\mathrm{sp}}^{\dagger}$, is an element of the **informational sector** $\mathbb{B}_{\Psi}$. The path integral's phase is thus the point at which a quantity defined along a material-sector trajectory (the action, $\int \mathrm{Lag}\,dr'_t$) is converted, through the central complex structure, into an amplitude that yields an informational-sector state.
+The three facts above arrange themselves into a chain that is worth stating separately, and labelling for what it is. The exponent of the phase is an element of the **material sector** $\mathbb{B}_{\Phi}$; the phase itself is an element of the **centre** $\mathbb{B}_{C}$; the amplitude it produces is central; and the state built from the amplitude, $\tilde{Ϛ}_{\Psi}=\tilde{Ξ}_{\mathrm{sp}}\tilde{Ξ}_{\mathrm{sp}}^{\dagger}$, is an element of the **informational sector** $\mathbb{B}_{\Psi}$. The path integral's phase is thus the point at which a quantity defined along a material-sector trajectory (the action, $\int \mathrm{Lag}\,dr'_t$) is converted, through the central complex structure, into an amplitude that yields an informational-sector state.
 
 That chain is a structural interpretation of the algebra, not a derivation of anything. The algebra does not say that the action *must* be a real scalar; it says that if the action is a real scalar, its phase is central and its exponent lies in $\mathbb{B}_{\Phi}$.
 
@@ -337,7 +337,7 @@ one factor of the square root of the metric determinant per spatial slice. This 
 
 The path integral $K=\int\mathcal{D}x\,\exp(iS[x]\frac{k_m}{m\,c})$ is a sum over paths weighted by the phase $\exp(\frac{k_m\,i\,S}{m\,c})$. In the biquaternion framework the symbol $i$ in that phase is the **central scalar imaginary**, the unique central root of $-1$ in $\mathbb{B}$ up to sign; the phase exponent $\frac{k_m\,i\,S}{m\,c}$ is a purely imaginary scalar and therefore lies in the **material sector** $\mathbb{B}_{\Phi}$, along the $i c r'_t$ direction; and the phase factor $\exp(\frac{k_m\,i\,S}{m\,c})$ is a **central $*$-unitary** element of $\mathbb{B}_{C}$, satisfying $(\exp(\frac{k_m\,i\,S}{m\,c}))(\exp(\frac{k_m\,i\,S}{m\,c}))^\dagger=e_t$ but not the unit-norm condition of the Lorentz group, since $\exp(\frac{k_m\,i\,S}{m\,c})\overline{\exp(iS/\hbar)}=\exp(\frac{2\,k_m\,i\,S}{m\,c})$.
 
-Centrality has three consequences: the amplitude is a complex scalar times $e_t$; the phase multiplies every spinor component of the state module equally; and the global phase cancels in the density matrix $\tilde{Ϛ}=\tilde{Ξ}_{\mathrm{sp}}\tilde{Ξ}_{\mathrm{sp}}^{\dagger}$, so only relative phases — the differences of actions between paths — are observable. These relative phases produce the standard interference, $|\exp(\frac{k_m\,iS_{1}}{m\,c})+\exp(\frac{k_m\,iS_{2}}{m\,c})|=2|\cos(\frac{k_m\,\Delta\,S}{2\,m\,c})|$, with nodes at $\Delta S=\frac{m\,c\,(2n+1)\,\pi}{k_m}$.
+Centrality has three consequences: the amplitude is a complex scalar times $e_t$; the phase multiplies every spinor component of the state module equally; and the global phase cancels in the density matrix $\tilde{Ϛ}_{\Psi}=\tilde{Ξ}_{\mathrm{sp}}\tilde{Ξ}_{\mathrm{sp}}^{\dagger}$, so only relative phases — the differences of actions between paths — are observable. These relative phases produce the standard interference, $|\exp(\frac{k_m\,iS_{1}}{m\,c})+\exp(\frac{k_m\,iS_{2}}{m\,c})|=2|\cos(\frac{k_m\,\Delta\,S}{2\,m\,c})|$, with nodes at $\Delta S=\frac{m\,c\,(2n+1)\,\pi}{k_m}$.
 
 A non-central root $J$ fails as the phase's imaginary unit for the same reasons it fails in the Schrödinger equation: the generator $-\frac{k_m\,J\,\tilde{R}_{\Psi}}{m\,c}$ need not be anti-Hermitian (for $J=\vec e_z$, $\tilde R_\Psi=i\vec e_x$ one has $J\tilde R_\Psi=i\vec e_y$, Hermitian), and even a fixed $*$-unitary $J$ gives the two spin components opposite phases, $\exp(\vec e_z\theta)\mapsto\operatorname{diag}(\exp(-i\theta),\exp(+i\theta))$, so it is a spin rotation rather than a global phase. A fixed non-central root still interferes, but it requires choosing a preferred spin axis, which the algebra does not supply.
 
@@ -356,7 +356,7 @@ The canonical commutator is not visible in the commuting sum over paths, but its
 | $i$ | Scalar imaginary, central, $i^2=-e_t$ |
 | $\mathbb{B}_{C}=\operatorname{span}_\mathbb{R}\{e_t,ie_t\}$ | Centre of $\mathbb{B}$; home of the path-integral phase |
 | $\mathbb{B}_{\Phi}$ | Anti-Hermitian (material) sector; home of the phase exponent $\frac{k_m\,i\,S}{m\,c}$ |
-| $\mathbb{B}_{\Psi}$ | Hermitian (informational) sector; home of the state $\tilde{Ϛ}=\tilde{Ξ}_{\mathrm{sp}}\tilde{Ξ}_{\mathrm{sp}}^{\dagger}$ |
+| $\mathbb{B}_{\Psi}$ | Hermitian (informational) sector; home of the state $\tilde{Ϛ}_{\Psi}=\tilde{Ξ}_{\mathrm{sp}}\tilde{Ξ}_{\mathrm{sp}}^{\dagger}$ |
 | $\mathbb{B}_{H}$ | Quaternion subspace; image of the Wick rotation |
 | $G_{\mathrm{prop}}(x_f,r'_{t,f};x_i,r'_{t,i})$ | Transition amplitude (propagator), central: $K=\mathcal{K}e_t$ |
 | $S[r_x]=\int \mathrm{Lag}\,dr'_t$ | Action; real scalar |
@@ -372,7 +372,7 @@ The canonical commutator is not visible in the commuting sum over paths, but its
 | $[x,p]=\frac{m\,c\,i}{k_m}$ | Canonical commutator; the value $\frac{m\,c\,i}{k_m}$ is central and in $\mathbb{B}_{\Phi}$ |
 | $[p,[p,g]]=-\frac{m^{2}\,c^{2}\,d\,g}{k_m^{2}\,x^{2}}$ | Operator-ordering ambiguity; proportional to the curvature |
 | $\prod_x\sqrt{g(x)}$ | Curved-space measure factor; one volume element per slice |
-| $\tilde{Ϛ}=\tilde{Ξ}_{\mathrm{sp}}\tilde{Ξ}_{\mathrm{sp}}^{\dagger}/\mathrm{Tr}(\tilde{Ξ}_{\mathrm{sp}}^{\dagger}\tilde{Ξ}_{\mathrm{sp}})$ | State from a spinor; global phase cancels |
+| $\tilde{Ϛ}_{\Psi}=\tilde{Ξ}_{\mathrm{sp}}\tilde{Ξ}_{\mathrm{sp}}^{\dagger}/\mathrm{Tr}(\tilde{Ξ}_{\mathrm{sp}}^{\dagger}\tilde{Ξ}_{\mathrm{sp}})$ | State from a spinor; global phase cancels |
 | $\operatorname{Tr}(\tilde\Pi\tilde R_\Psi^{*})=\operatorname{Tr}(\tilde\Pi\tilde R_\Psi)=2\,\mathrm{Sc}(\tilde\Pi\tilde R_\Psi^{*}) = 2\langle\tilde\Pi,\tilde R_\Psi\rangle_{*}$ | Trace reading at normalisation (Born rule) |
 | $r'_t\mapsto-i\tau$ | Wick rotation |
 | $S=iS_E$ | Action under the Wick rotation |

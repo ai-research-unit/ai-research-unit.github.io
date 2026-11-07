@@ -136,7 +136,7 @@ $$
 \tilde K_{\mathrm{wk}}\tilde K_{\mathrm{wk}}^{\natural} = -k_E^{2}+\vec k^{\,2} = -k_m^{2},
 $$
 
-which is the box with the sign of the Minkowski form. The four-momentum is $\frac{m\,c}{k_m}$ times the same element, $\tilde P=i(E/c)e_t+\vec p=\frac{m\,c\,\tilde{K}_{\mathrm{wk}}}{k_m}$, and its norm is $\tilde P\tilde P^{\natural}=-m^{2}\,c^{2}$, which is the statement $p^2=\frac{m^{2}\,c^{2}}{k_m^{2}\,\lambda_{m}^{2}}$ of the canonical convention. The two elements differ by one multiplication by $\frac{m\,c}{k_m}$, and that multiplication is the whole of the dictionary between them.
+which is the box with the sign of the Minkowski form. The four-momentum is $\frac{m\,c}{k_m}$ times the same element, $\tilde P_{\Phi}=i(E/c)e_t+\vec p=\frac{m\,c\,\tilde{K}_{\mathrm{wk}}}{k_m}$, and its norm is $\tilde P_{\Phi}\tilde P_{\Phi}^{\natural}=-m^{2}\,c^{2}$, which is the statement $p^2=\frac{m^{2}\,c^{2}}{k_m^{2}\,\lambda_{m}^{2}}$ of the canonical convention. The two elements differ by one multiplication by $\frac{m\,c}{k_m}$, and that multiplication is the whole of the dictionary between them.
 
 ## The Values
 

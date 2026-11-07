@@ -15,12 +15,12 @@ The article fixes what spin is, gives the two lists, interprets each carrier phy
 **The label.** Spin is the highest weight $s$ of the rotation action on a carrier, defined by the Casimir:
 
 $$
-\tilde S^2=\frac{m^{2}\,c^{2}\,s\,(s+1)\,e_{t}}{k_m^{2}}.
+\tilde S_{\Psi}^2=\frac{m^{2}\,c^{2}\,s\,(s+1)\,e_{t}}{k_m^{2}}.
 $$
 
 On an irreducible carrier the Casimir is a scalar, so $s$ is one number for the whole carrier. The number of states is $2s+1$. The spin is a real number, $s\in\tfrac12\mathbb{Z}_{\ge0}$; it is a scalar label, not a vector and not a complex number.
 
-**The direction is a state label.** The component along an axis needs an axis: $\tilde S_3=\frac{m\,c\,s_{z}}{k_m}$ on the state $|s,s_z\rangle$. The axis is a measurement setting. At $s=0$ the axis labels nothing, so a direction cannot be the definition of spin.
+**The direction is a state label.** The component along an axis needs an axis: $\tilde S_{\Psi,3}=\frac{m\,c\,s_{z}}{k_m}$ on the state $|s,s_z\rangle$. The axis is a measurement setting. At $s=0$ the axis labels nothing, so a direction cannot be the definition of spin.
 
 **The classical picture.** A coherent state $|\vec u\rangle$ of maximal spin along $\vec u$ has
 
@@ -59,7 +59,7 @@ The spin-half carrier occurs twice, as the two Peirce planes; it is one isomorph
 
 **The carrier.** The centre $Z=\mathbb{C}e_t$ is fixed by conjugation: $u(z e_t)u^{-1}=z e_t$. The Casimir vanishes, the spin is $0$, and the carrier has one state.
 
-**The generator.** $\tilde S_k e_t=0$ for all $k$. There is no axis to choose and no ladder: the representation is trivial.
+**The generator.** $\tilde S_{\Psi,k} e_t=0$ for all $k$. There is no axis to choose and no ladder: the representation is trivial.
 
 **The physical interpretation.** A scalar field. The carrier $Z=\mathbb{C}e_t$ is a complex line, two real dimensions; its real form $\mathbb{R}e_t$ is the real scalar of one degree of freedom. The Higgs is the observed spin-zero instance; its internal components are extra data, not a larger spin.
 
@@ -69,12 +69,12 @@ The spin-half carrier occurs twice, as the two Peirce planes; it is one isomorph
 
 **The carrier.** The Peirce plane $S_+=\mathbb{B}\tilde\Pi_+$ has complex dimension two, with basis $(\tilde\Pi_+,\vec\Upsilon_{-+})$. The second plane $S_-$ is a second copy, module-isomorphic and Hilbert-orthogonal.
 
-**The operators.** With $\tilde S_k=\frac{m\,c}{2\,k_m}i\vec e_k$,
+**The operators.** With $\tilde S_{\Psi,k}=\frac{m\,c}{2\,k_m}i\vec e_k$,
 
 $$
-\tilde S^2=\tfrac34\frac{m^{2}\,c^{2}\,e_{t}}{k_m^{2}},\qquad
-\tilde S_3\tilde\Pi_+=\frac{m\,c}{2\,k_m}\tilde\Pi_+,\qquad
-\tilde S_3\vec\Upsilon_{-+}=-\frac{m\,c}{2\,k_m}\vec\Upsilon_{-+}.
+\tilde S_{\Psi}^2=\tfrac34\frac{m^{2}\,c^{2}\,e_{t}}{k_m^{2}},\qquad
+\tilde S_{\Psi,3}\tilde\Pi_+=\frac{m\,c}{2\,k_m}\tilde\Pi_+,\qquad
+\tilde S_{\Psi,3}\vec\Upsilon_{-+}=-\frac{m\,c}{2\,k_m}\vec\Upsilon_{-+}.
 $$
 
 The ladder operators are the nilpotent mixed units
@@ -84,7 +84,7 @@ $$
 \vec\Upsilon_{-+}=\tfrac12(i\vec e_x+\vec e_y),
 $$
 
-with $\tilde S_+=\frac{m\,c\,\vec \Upsilon_{+-}}{k_m}$, $\tilde S_-=\frac{m\,c\,\vec \Upsilon_{-+}}{k_m}$ and $\tilde S_\pm^2=0$. In *Spin and the Three Elementary Carriers* the same units are written $\vec\Upsilon_{+-}=\vec\Upsilon_x$ and $\vec\Upsilon_{-+}=\vec\Upsilon_y$.
+with $\tilde S_{\Psi,+}=\frac{m\,c\,\vec \Upsilon_{+-}}{k_m}$, $\tilde S_{\Psi,-}=\frac{m\,c\,\vec \Upsilon_{-+}}{k_m}$ and $\tilde S_{\Psi,\pm}^2=0$. In *Spin and the Three Elementary Carriers* the same units are written $\vec\Upsilon_{+-}=\vec\Upsilon_x$ and $\vec\Upsilon_{-+}=\vec\Upsilon_y$.
 
 **The copies at an axis.** For a unit real pure quaternion $\vec u$, the idempotents
 
@@ -97,7 +97,7 @@ generate the minimal left ideals $S_\pm(\vec u)=\mathbb{B}\tilde\Pi_\pm(\vec u)$
 **The states in a copy.** In the left action, $\tilde\Pi_+(\vec u)$ is the state of weight $+\frac{m\,c}{2\,k_m}$ in $S_+(\vec u)$,
 
 $$
-(\vec u\cdot\tilde S)\,\tilde\Pi_+(\vec u)=+\frac{m\,c}{2\,k_m}\,\tilde\Pi_+(\vec u),
+(\vec u\cdot\tilde S_{\Psi})\,\tilde\Pi_+(\vec u)=+\frac{m\,c}{2\,k_m}\,\tilde\Pi_+(\vec u),
 $$
 
 and $\tilde\Pi_-(\vec u)$ is the state of weight $-\frac{m\,c}{2\,k_m}$ in $S_-(\vec u)$. The state of weight $-\frac{m\,c}{2\,k_m}$ in $S_+$ is its nilpotent basis vector, not an idempotent.
@@ -118,21 +118,21 @@ $$
 
 the signs being the Condon–Shortley phase, chosen so that the ladder coefficients are positive.
 
-**The operators.** With $\tilde S_{\mathrm{adj},k}=\frac{m\,c}{2\,k_m}\mathrm{ad}_{i\vec e_k}$,
+**The operators.** With $\tilde S_{\Psi,\mathrm{adj},k}=\frac{m\,c}{2\,k_m}\mathrm{ad}_{i\vec e_k}$,
 
 $$
-\tilde S_{\mathrm{adj}}\,2}=2\hbar^2\operatorname{id}_V,\qquad
-\tilde S_{\mathrm{adj},3}\varepsilon_\pm=\pm\hbar\,\varepsilon_\pm,\qquad
-\tilde S_{\mathrm{adj},3}\varepsilon_0=0 .
+\tilde S_{\Psi,\mathrm{adj}}\,2}=2\hbar^2\operatorname{id}_V,\qquad
+\tilde S_{\Psi,\mathrm{adj},3}\varepsilon_\pm=\pm\hbar\,\varepsilon_\pm,\qquad
+\tilde S_{\Psi,\mathrm{adj},3}\varepsilon_0=0 .
 $$
 
-The Casimir follows from $C=(\tilde S_{\mathrm{adj},3})^2+\tfrac12(\tilde S_{\mathrm{adj},+}\tilde S_{\mathrm{adj},-}+\tilde S_{\mathrm{adj},-}\tilde S_{\mathrm{adj},+})$ and the ladder actions
+The Casimir follows from $C=(\tilde S_{\Psi,\mathrm{adj},3})^2+\tfrac12(\tilde S_{\Psi,\mathrm{adj},+}\tilde S_{\Psi,\mathrm{adj},-}+\tilde S_{\Psi,\mathrm{adj},-}\tilde S_{\Psi,\mathrm{adj},+})$ and the ladder actions
 
 $$
-\tilde S_{\mathrm{adj},+}\varepsilon_-=\sqrt\frac{2\,m\,c\,\varepsilon_{0}}{k_m},\qquad
-\tilde S_{\mathrm{adj},+}\varepsilon_0=\sqrt\frac{2\,m\,c\,\varepsilon_{+}}{k_m},\qquad
-\tilde S_{\mathrm{adj},-}\varepsilon_+=\sqrt\frac{2\,m\,c\,\varepsilon_{0}}{k_m},\qquad
-\tilde S_{\mathrm{adj},-}\varepsilon_0=\sqrt\frac{2\,m\,c\,\varepsilon_{-}}{k_m},
+\tilde S_{\Psi,\mathrm{adj},+}\varepsilon_-=\sqrt\frac{2\,m\,c\,\varepsilon_{0}}{k_m},\qquad
+\tilde S_{\Psi,\mathrm{adj},+}\varepsilon_0=\sqrt\frac{2\,m\,c\,\varepsilon_{+}}{k_m},\qquad
+\tilde S_{\Psi,\mathrm{adj},-}\varepsilon_+=\sqrt\frac{2\,m\,c\,\varepsilon_{0}}{k_m},\qquad
+\tilde S_{\Psi,\mathrm{adj},-}\varepsilon_0=\sqrt\frac{2\,m\,c\,\varepsilon_{-}}{k_m},
 $$
 
 which give $C=\frac{2\,m^{2}\,c^{2}}{k_m^{2}}$ on all three states. The value is $\frac{m^{2}\,c^{2}\,s\,(s+1)}{k_m^{2}}$ at $s=1$. There are three states.
@@ -141,7 +141,7 @@ which give $C=\frac{2\,m^{2}\,c^{2}}{k_m^{2}}$ on all three states. The value is
 
 **The massless count and the cone.** The two helicities are the self-dual and the anti-self-dual halves of the field strength, $\vec E+i c\vec B$ and $\vec E-i c\vec B$. The removed state is the longitudinal direction $\vec u_k$, the unit vector along the momentum, which is the helicity-zero eigenvector. The algebra exhibits the third eigenvector; it does not remove it. The removal is a gauge condition, and the gauge-fixing principle is imported.
 
-**Masslessness, the cone and $N=0$.** The mass shell is the level set $N=-m^2c^2$ of the norm $N=\langle\tilde P\rangle_\natural$ of the four-momentum. The massless case is $N=0$, the zero-divisor cone. On that cone the little group is the double cover of $E(2)$. The algebra marks the cone: among the level sets of $N$ on the material sector, $N=0$ is the only one that is a cone, the only one on which the four-momentum is not invertible, and the only one invariant under rescaling. It does not choose $m=0$: the norm is homogeneous, so the algebra carries no preferred mass. The choice $m=0$ is an input.
+**Masslessness, the cone and $N=0$.** The mass shell is the level set $N=-m^2c^2$ of the norm $N=\langle\tilde P_{\Phi}\rangle_\natural$ of the four-momentum. The massless case is $N=0$, the zero-divisor cone. On that cone the little group is the double cover of $E(2)$. The algebra marks the cone: among the level sets of $N$ on the material sector, $N=0$ is the only one that is a cone, the only one on which the four-momentum is not invertible, and the only one invariant under rescaling. It does not choose $m=0$: the norm is homogeneous, so the algebra carries no preferred mass. The choice $m=0$ is an input.
 
 ## Why There Is No Fourth
 
@@ -155,13 +155,13 @@ which give $C=\frac{2\,m^{2}\,c^{2}}{k_m^{2}}$ on all three states. The value is
 
 ## Mass, the Little Group and Helicity
 
-**The little group.** For a particle of four-momentum $\tilde P$, the little group is the stabiliser
+**The little group.** For a particle of four-momentum $\tilde P_{\Phi}$, the little group is the stabiliser
 
 $$
-G_{\tilde P}=\{\tilde U\in SL(2,\mathbb{C}):\tilde U\tilde P\tilde U^{*}=\tilde P\}.
+G_{\tilde P}_{\Phi}=\{\tilde U\in SL(2,\mathbb{C}):\tilde U\tilde P_{\Phi}\tilde U^{*}=\tilde P_{\Phi}\}.
 $$
 
-For a massive particle $\tilde P$ is timelike and $G_{\tilde P}\cong SU(2)$; its irreducible representations are the spin representations, labelled by $s$, and the rest-frame carrier has $2s+1$ states. For a massless particle $\tilde P$ is null and $G_{\tilde P}$ is the double cover of $E(2)$; each finite-dimensional irreducible unitary representation carries a single helicity $h$, and a massless particle of spin $s$ uses the two representations $h=\pm s$ (at $s=0$, only $h=0$). The reduction from $2s+1$ to two is the gauge condition, not the little group.
+For a massive particle $\tilde P_{\Phi}$ is timelike and $G_{\tilde P}_{\Phi}\cong SU(2)$; its irreducible representations are the spin representations, labelled by $s$, and the rest-frame carrier has $2s+1$ states. For a massless particle $\tilde P_{\Phi}$ is null and $G_{\tilde P}_{\Phi}$ is the double cover of $E(2)$; each finite-dimensional irreducible unitary representation carries a single helicity $h$, and a massless particle of spin $s$ uses the two representations $h=\pm s$ (at $s=0$, only $h=0$). The reduction from $2s+1$ to two is the gauge condition, not the little group.
 
 The passage from $SU(2)$ to the double cover of $E(2)$ is the reason the massless count is two and not three. It is a property of the momentum, not of the carrier.
 
@@ -230,12 +230,12 @@ The physical interpretation is the scalar, the spinor and the vector, and the ob
 | $\tilde\Pi_\pm(\vec u)$ | The idempotents along the axis $\vec u$ |
 | $S_\pm(\vec u)=\mathbb{B}\tilde\Pi_\pm(\vec u)$ | The copy of the carrier at the axis $\vec u$ |
 | $\vec\Upsilon_{+-},\vec\Upsilon_{-+}$ | The nilpotent mixed units |
-| $\tilde S_k=\frac{m\,c}{2\,k_m}i\vec e_k$ | The spin-half operators |
-| $\tilde S_{\mathrm{adj},k}=\frac{m\,c}{2\,k_m}\mathrm{ad}_{i\vec e_k}$ | The spin-one generators |
-| $C=\tilde S_{\mathrm{adj}}\,2}$ | The Casimir, $\sum_k(\tilde S_{\mathrm{adj},k})^2$ |
+| $\tilde S_{\Psi,k}=\frac{m\,c}{2\,k_m}i\vec e_k$ | The spin-half operators |
+| $\tilde S_{\Psi,\mathrm{adj},k}=\frac{m\,c}{2\,k_m}\mathrm{ad}_{i\vec e_k}$ | The spin-one generators |
+| $C=\tilde S_{\Psi,\mathrm{adj}}\,2}$ | The Casimir, $\sum_k(\tilde S_{\Psi,\mathrm{adj},k})^2$ |
 | $s$ | The spin label |
 | $\vec u$ | A unit real pure quaternion, an axis |
-| $N=\langle\tilde P\rangle_\natural$ | The biquaternion norm of the four-momentum; $N=-m^2c^2$ |
+| $N=\langle\tilde P_{\Phi}\rangle_\natural$ | The biquaternion norm of the four-momentum; $N=-m^2c^2$ |
 | $W_\mu$ | The Pauli–Lubanski vector |
 
 ## Further Reading

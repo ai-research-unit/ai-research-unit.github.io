@@ -4,9 +4,9 @@
 
 This is one of the exercises in the relativity series. It is a set of worked problems in the relativistic Doppler effect, using the framework and the notation of the companion articles *Relativistic Mechanics in Biquaternionic Form* and *The Lorentz Transformation as a Biquaternionic Rotation*. Those two articles are the parents of this exercise: they set up the four-vectors of $\mathbb{B}_{\Phi}$ and the boost rotor that acts on them, and what follows applies them to the light of a moving source. Nothing new is introduced, and every result below is obtained from the tools already defined there.
 
-**What is assumed.** The algebra, the sectors and the biquaternion norm are those of *Algebra and Element Conventions* and *Norm and Pairing Conventions*, and none is restated here. The four-wavevector $\tilde P =\frac{m\,c\,(i\omega/c\,e_t + \vec k)}{k_m}$ from the table of four-vectors in *The Material Sector: Four-Vectors, Interval and Lorentz Action*. The rotor conjugation $\tilde{Q} \mapsto \tilde U_{\mathrm b}\tilde{Q}\tilde U_{\mathrm b}^{*}$ by the Lorentz rotor $\tilde U_{\mathrm b}$, with $\tilde U_{\mathrm b}\tilde U_{\mathrm b}^{\natural} = e_t$, and the boost biquaternion
+**What is assumed.** The algebra, the sectors and the biquaternion norm are those of *Algebra and Element Conventions* and *Norm and Pairing Conventions*, and none is restated here. The four-wavevector $\tilde P_{\Phi} =\frac{m\,c\,(i\omega/c\,e_t + \vec k)}{k_m}$ from the table of four-vectors in *The Material Sector: Four-Vectors, Interval and Lorentz Action*. The rotor conjugation $\tilde{Q} \mapsto \tilde U_{\Psi,\mathrm b}\tilde{Q}\tilde U_{\Psi,\mathrm b}^{*}$ by the Lorentz rotor $\tilde U_{\Psi,\mathrm b}$, with $\tilde U_{\Psi,\mathrm b}\tilde U_{\Psi,\mathrm b}^{\natural} = e_t$, and the boost biquaternion
 $$
-\tilde U_{\mathrm b} = \cosh\frac{\theta_{\mathrm{rpd}}}{2} + i\sinh\frac{\theta_{\mathrm{rpd}}}{2}\,\vec u,
+\tilde U_{\Psi,\mathrm b} = \cosh\frac{\theta_{\mathrm{rpd}}}{2} + i\sinh\frac{\theta_{\mathrm{rpd}}}{2}\,\vec u,
 \qquad
 \tanh\theta_{\mathrm{rpd}} = \frac{v_b}{c},
 \qquad
@@ -22,15 +22,15 @@ Throughout, $c = 1/\sqrt{\epsilon\mu}$ is the speed of light in the medium and $
 
 ## Problem 1: The Four-Wavevector, the Phase, and the Frequency Invariant
 
-**Statement.** (a) Write $\tilde P$ and show that light has $\langle\tilde P\rangle_{\natural} = 0$. (b) Define the phase of the plane wave and show that it is invariant under a rotor conjugation. (c) Show that an observer of four-velocity $\tilde{V}$ measures the frequency
+**Statement.** (a) Write $\tilde P_{\Phi}$ and show that light has $\langle\tilde P_{\Phi}\rangle_{\natural} = 0$. (b) Define the phase of the plane wave and show that it is invariant under a rotor conjugation. (c) Show that an observer of four-velocity $\tilde{V}_{\Phi}$ measures the frequency
 $$
-\omega_{\mathrm{obs}} = -\,\mathrm{Sc}\!\left(\tilde P\tilde{V}^{\natural}\right),
+\omega_{\mathrm{obs}} = -\,\mathrm{Sc}\!\left(\tilde P_{\Phi}\tilde{V}_{\Phi}^{\natural}\right),
 $$
 and check the formula both in the observer's rest frame and in the source frame.
 
 **Solution (a).** The four-wavevector is the element of $\mathbb{B}_{\Phi}$
 $$
-\tilde P = \frac{i\omega}{c}\,e_t + \vec k,
+\tilde P_{\Phi} = \frac{i\omega}{c}\,e_t + \vec k,
 \qquad
 \vec k = k_1\vec e_x + k_2\vec e_y + k_3\vec e_z,
 \qquad
@@ -38,66 +38,66 @@ k = |\vec k| .
 $$
 Its biquaternion norm is
 $$
-\langle\tilde P\rangle_{\natural} = \tilde P\tilde P^{\natural} = \left(\frac{i\omega}{c}\right)^2 + \vec k^2 = -\frac{\omega^2}{c^2} + k^2 .
+\langle\tilde P_{\Phi}\rangle_{\natural} = \tilde P_{\Phi}\tilde P_{\Phi}^{\natural} = \left(\frac{i\omega}{c}\right)^2 + \vec k^2 = -\frac{\omega^2}{c^2} + k^2 .
 $$
 For light in a medium of local speed $c = 1/\sqrt{\epsilon\mu}$ the dispersion relation is $k = \omega/c$, so
 $$
-\langle\tilde P\rangle_{\natural} = 0 :
+\langle\tilde P_{\Phi}\rangle_{\natural} = 0 :
 $$
-the four-wavevector of light is a **null** element of $\mathbb{B}_{\Phi}$, i.e. a zero divisor of the algebra, exactly as the light cone of Minkowski space is the zero-divisor cone (see *The Material Sector: Four-Vectors, Interval and Lorentz Action* and the mass-shell relation of *Relativistic Mechanics in Biquaternionic Form*). The contrast with matter is instructive: a massive de Broglie wave has $\langle\tilde P\rangle_{\natural}  = -(k_m)^{2}$, a fixed negative biquaternion norm, whereas for light the biquaternion norm vanishes. The null condition is what makes the Doppler problem a one-parameter problem in each direction: the shift depends only on the direction of $\vec k$, through the angle $\theta$, and on $\beta$ — not on the magnitude $k$. Here $\hbar/(mc)$ is the mass length.
+the four-wavevector of light is a **null** element of $\mathbb{B}_{\Phi}$, i.e. a zero divisor of the algebra, exactly as the light cone of Minkowski space is the zero-divisor cone (see *The Material Sector: Four-Vectors, Interval and Lorentz Action* and the mass-shell relation of *Relativistic Mechanics in Biquaternionic Form*). The contrast with matter is instructive: a massive de Broglie wave has $\langle\tilde P_{\Phi}\rangle_{\natural}  = -(k_m)^{2}$, a fixed negative biquaternion norm, whereas for light the biquaternion norm vanishes. The null condition is what makes the Doppler problem a one-parameter problem in each direction: the shift depends only on the direction of $\vec k$, through the angle $\theta$, and on $\beta$ — not on the magnitude $k$. Here $\hbar/(mc)$ is the mass length.
 
 **Solution (b).** Fix the plane-wave convention $\propto \exp(iΞ)$ with
 $$
-Ξ = \mathrm{Sc}\!\left(\tilde P\tilde{R}_\Phi^{\natural}\right)
+Ξ = \mathrm{Sc}\!\left(\tilde P_{\Phi}\tilde{R}_\Phi^{\natural}\right)
 = \left(\frac{i\omega}{c}\right)(i c r'_{t}) + \vec k\cdot(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)
 = \vec k\cdot(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z) - \omega r'_t ,
 \qquad
 \tilde R_\Phi = i c r'_{t}\,e_t + (r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z) .
 $$
-Let $\tilde U$ be any unit-norm biquaternion and let $\tilde P_2 = \tilde U\tilde P\tilde U^{*}$, $\tilde{R}_{\Phi,2} = \tilde U\tilde R_\Phi\tilde U^{*}$. Then
+Let $\tilde U$ be any unit-norm biquaternion and let $\tilde P_{\Phi,2} = \tilde U\tilde P_{\Phi}\tilde U^{*}$, $\tilde{R}_{\Phi,2} = \tilde U\tilde R_\Phi\tilde U^{*}$. Then
 $$
-\tilde P_2{\tilde{R}_{\Phi,2}^{\natural}}
-= \tilde U\tilde P\tilde U^{*}\;\bigl(\tilde U\tilde R_\Phi\tilde U^{*}\bigr)^{\natural}
-= \tilde U\tilde P\tilde U^{*}\,\bigl(\tilde U^{*}\bigr)^{\natural}\,\tilde{R}_\Phi^{\natural}\,\tilde U^{\natural} .
+\tilde P_{\Phi,2}{\tilde{R}_{\Phi,2}^{\natural}}
+= \tilde U\tilde P_{\Phi}\tilde U^{*}\;\bigl(\tilde U\tilde R_\Phi\tilde U^{*}\bigr)^{\natural}
+= \tilde U\tilde P_{\Phi}\tilde U^{*}\,\bigl(\tilde U^{*}\bigr)^{\natural}\,\tilde{R}_\Phi^{\natural}\,\tilde U^{\natural} .
 $$
 Since $\tilde U^{*} = \overline{\tilde U^{\natural}}$ and quaternion and complex conjugation commute, $\bigl(\tilde U^{*}\bigr)^{\natural} = \overline{\bigl(\tilde U^{\natural}\bigr)^{*}} = \bar{\tilde U}$; hence the inner pair collapses,
 $$
 \tilde U^{*}\bigl(\tilde U^{*}\bigr)^{\natural} = \overline{\tilde U^{\natural}}\,\bar{\tilde U} = \overline{\tilde U^{\natural}\tilde U} = \tilde U^{\natural}\tilde U = e_t ,
 $$
-so $\tilde P_2{\tilde{R}_{\Phi,2}^{\natural}} = \tilde U(\tilde P\tilde{R}_\Phi^{\natural})\tilde U^{\natural}$. The scalar projection is cyclic, $\mathrm{Sc}(PAP) = \mathrm{Sc}(AP^2)$, and with $P\bar{P} = e_t$,
+so $\tilde P_{\Phi,2}{\tilde{R}_{\Phi,2}^{\natural}} = \tilde U(\tilde P_{\Phi}\tilde{R}_\Phi^{\natural})\tilde U^{\natural}$. The scalar projection is cyclic, $\mathrm{Sc}(PAP) = \mathrm{Sc}(AP^2)$, and with $P\bar{P} = e_t$,
 $$
-\mathrm{Sc}\!\left(\tilde U\,(\tilde P\tilde{R}_\Phi^{\natural})\,\tilde U^{\natural}\right)
-= \mathrm{Sc}\!\left((\tilde P\tilde{R}_\Phi^{\natural})\,\tilde U^{\natural}\tilde U\right)
-= \mathrm{Sc}\!\left(\tilde P\tilde{R}_\Phi^{\natural}\right) .
+\mathrm{Sc}\!\left(\tilde U\,(\tilde P_{\Phi}\tilde{R}_\Phi^{\natural})\,\tilde U^{\natural}\right)
+= \mathrm{Sc}\!\left((\tilde P_{\Phi}\tilde{R}_\Phi^{\natural})\,\tilde U^{\natural}\tilde U\right)
+= \mathrm{Sc}\!\left(\tilde P_{\Phi}\tilde{R}_\Phi^{\natural}\right) .
 $$
 Hence $Ξ_2 = Ξ$: the phase is a scalar of the algebra and of the Lorentz group. This is the biquaternion form of the statement that the phase of a plane wave is an invariant, and it is what makes the transformation of the frequency a transformation of the four-wavevector alone.
 
-**Solution (c).** Let the observer carry the timelike four-velocity $\tilde{V} = \gamma_b(ic\,e_t + \vec v_{\mathrm{obs},b})$, normalized by $\langle\tilde{V}\rangle_{\natural} = -c^2$. In the observer's rest frame $\tilde{V} = ic\,e_t$ and $\tilde{V}^{\natural} = ic\,e_t$, so
+**Solution (c).** Let the observer carry the timelike four-velocity $\tilde{V}_{\Phi} = \gamma_b(ic\,e_t + \vec v_{\mathrm{obs},b})$, normalized by $\langle\tilde{V}_{\Phi}\rangle_{\natural} = -c^2$. In the observer's rest frame $\tilde{V}_{\Phi} = ic\,e_t$ and $\tilde{V}_{\Phi}^{\natural} = ic\,e_t$, so
 $$
--\,\mathrm{Sc}\!\left(\tilde P\tilde{V}^{\natural}\right)
+-\,\mathrm{Sc}\!\left(\tilde P_{\Phi}\tilde{V}_{\Phi}^{\natural}\right)
 = -\,\mathrm{Sc}\!\left(\left(\frac{i\omega}{c}e_t + \vec k\right)(ic\,e_t)\right)
 = -\,\mathrm{Sc}\!\left(-\,\omega\,e_t + ic\,\vec k\right)
 = \omega ,
 $$
-which is the frequency that frame assigns to the wave. In the source frame the same observer has four-velocity $\tilde{V} = \gamma(ic\,e_t + \vec v_b)$ with $\tilde{V}^{\natural} = \gamma(ic\,e_t - \vec v_b)$, and
+which is the frequency that frame assigns to the wave. In the source frame the same observer has four-velocity $\tilde{V}_{\Phi} = \gamma(ic\,e_t + \vec v_b)$ with $\tilde{V}_{\Phi}^{\natural} = \gamma(ic\,e_t - \vec v_b)$, and
 $$
-\mathrm{Sc}\!\left(\tilde P\tilde{V}^{\natural}\right)
+\mathrm{Sc}\!\left(\tilde P_{\Phi}\tilde{V}_{\Phi}^{\natural}\right)
 = \left(\frac{i\omega_0}{c}\right)(\gamma ic) - \vec k_0\cdot(-\gamma\vec v_b)
 = -\gamma\omega_0 + \gamma\vec k_0\cdot\vec v_b
 = -\gamma\omega_0\left(1 - \beta\cos\theta\right),
 $$
 using $\vec k_0\cdot\vec v_b = (\omega_0/c)v_b\cos\theta = \omega_0\beta\cos\theta$. Therefore
 $$
-\boxed{\;\omega_{\mathrm{obs}} = -\,\mathrm{Sc}\!\left(\tilde P\tilde{V}^{\natural}\right)
+\boxed{\;\omega_{\mathrm{obs}} = -\,\mathrm{Sc}\!\left(\tilde P_{\Phi}\tilde{V}_{\Phi}^{\natural}\right)
 = \gamma\,\omega_0\left(1 - \beta\cos\theta\right)\;}
 $$
 The frequency measured by an observer is thus an invariant contraction of the wave four-vector with the observer's four-velocity. This is the general Doppler formula, obtained without choosing a frame and without composing a boost; Problem 2 obtains the same result from the rotor, and the agreement is a check on the boost-direction convention.
 
 ## Problem 2: The Boost of the Four-Wavevector and the General Formula
 
-**Statement.** (a) State the rotor conjugation for a boost and the component action it induces on a general element of $\mathbb{B}_{\Phi}$. (b) Apply it to $\tilde P$ and derive the frequency and wavevector in the observer frame. (c) Show that the transformed wavevector is again null. (d) Verify the result against the invariant formula of Problem 1.
+**Statement.** (a) State the rotor conjugation for a boost and the component action it induces on a general element of $\mathbb{B}_{\Phi}$. (b) Apply it to $\tilde P_{\Phi}$ and derive the frequency and wavevector in the observer frame. (c) Show that the transformed wavevector is again null. (d) Verify the result against the invariant formula of Problem 1.
 
-**Solution (a).** The boost with velocity $\vec v_b$ is generated by the Hermitian unit-norm biquaternion of the Introduction, $\tilde U_{\mathrm b}^{*} = \tilde U_{\mathrm b}$, so the rotor conjugation is $\tilde Q_2 = \tilde U_{\mathrm b}\tilde Q_1\tilde U_{\mathrm b}^{*} = \tilde U_{\mathrm b}\tilde Q_1\tilde U_{\mathrm b}$. Write a general element of $\mathbb{B}_{\Phi}$ as $\tilde Q_1 = ia\,e_t + \vec A$ with $a$ real and $\vec A$ real, and split
+**Solution (a).** The boost with velocity $\vec v_b$ is generated by the Hermitian unit-norm biquaternion of the Introduction, $\tilde U_{\Psi,\mathrm b}^{*} = \tilde U_{\Psi,\mathrm b}$, so the rotor conjugation is $\tilde Q_2 = \tilde U_{\Psi,\mathrm b}\tilde Q_1\tilde U_{\Psi,\mathrm b}^{*} = \tilde U_{\Psi,\mathrm b}\tilde Q_1\tilde U_{\Psi,\mathrm b}$. Write a general element of $\mathbb{B}_{\Phi}$ as $\tilde Q_1 = ia\,e_t + \vec A$ with $a$ real and $\vec A$ real, and split
 $$
 A_\parallel = \vec u\cdot\vec A,
 \qquad
@@ -123,9 +123,9 @@ For the four-potential ($a = a'_t = \xi_{\mathrm{scp}}/c$, $\vec A$ the vector p
 
 The scalar component is easily checked directly. Because $\mathrm{Sc}$ is cyclic,
 $$
-\mathrm{Sc}(\tilde Q_2) = \mathrm{Sc}\!\left(\tilde U_{\mathrm b}\tilde Q_1\tilde U_{\mathrm b}\right) = \mathrm{Sc}\!\left(\tilde Q_1\tilde U_{\mathrm b}^2\right),
+\mathrm{Sc}(\tilde Q_2) = \mathrm{Sc}\!\left(\tilde U_{\Psi,\mathrm b}\tilde Q_1\tilde U_{\Psi,\mathrm b}\right) = \mathrm{Sc}\!\left(\tilde Q_1\tilde U_{\Psi,\mathrm b}^2\right),
 $$
-and $\tilde U_{\mathrm b}^2 = \cosh\theta_{\mathrm{rpd}} + i\sinh\theta_{\mathrm{rpd}}\,\vec u = \gamma + i\gamma\beta\vec u$. Hence
+and $\tilde U_{\Psi,\mathrm b}^2 = \cosh\theta_{\mathrm{rpd}} + i\sinh\theta_{\mathrm{rpd}}\,\vec u = \gamma + i\gamma\beta\vec u$. Hence
 $$
 \mathrm{Sc}\!\left((ia + \vec A)(\gamma + i\gamma\beta\vec u)\right)
 = i\gamma a + i\gamma\beta\,\mathrm{Sc}\!\left(\vec A\vec u\right)
@@ -149,21 +149,21 @@ k_{2,\parallel} = \gamma\left(\frac{\omega_0}{c}\cos\theta - \beta\frac{\omega_0
 $$
 In the longitudinal case $\theta = 0$ or $\pi$ the transverse part vanishes; in general a ray that is transverse in one frame acquires a longitudinal component in the other, which is the aberration of Problem 5.
 
-**Solution (c).** The biquaternion norm is preserved because $\tilde U_{\mathrm b}\tilde U_{\mathrm b}^{\natural} = e_t$:
+**Solution (c).** The biquaternion norm is preserved because $\tilde U_{\Psi,\mathrm b}\tilde U_{\Psi,\mathrm b}^{\natural} = e_t$:
 $$
-\langle\tilde P_2\rangle_{\natural} = \tilde U_{\mathrm b}\tilde P\tilde U_{\mathrm b}^{*}\overline{\tilde U_{\mathrm b}\tilde P\tilde U_{\mathrm b}^{*}}
-= \tilde P\tilde P^{\natural} = 0 .
+\langle\tilde P_{\Phi,2}\rangle_{\natural} = \tilde U_{\Psi,\mathrm b}\tilde P_{\Phi}\tilde U_{\Psi,\mathrm b}^{*}\overline{\tilde U_{\Psi,\mathrm b}\tilde P_{\Phi}\tilde U_{\Psi,\mathrm b}^{*}}
+= \tilde P_{\Phi}\tilde P_{\Phi}^{\natural} = 0 .
 $$
 One may also check it in components, using $\gamma^2(\cos\theta-\beta)^2 + \sin^2\theta = \gamma^2(1-\beta\cos\theta)^2$, which follows from $1-\beta^2 = \gamma^{-2}$. Hence $k_2 = \omega_2/c$: the observer sees a light wave propagating with the same local speed $c$, as required.
 
-**Solution (d).** The observer's four-velocity in the source frame is $\tilde{V} = \gamma(ic\,e_t + \vec v_b)$, and Problem 1 gives
+**Solution (d).** The observer's four-velocity in the source frame is $\tilde{V}_{\Phi} = \gamma(ic\,e_t + \vec v_b)$, and Problem 1 gives
 $$
--\,\mathrm{Sc}\!\left(\tilde P\tilde{V}^{\natural}\right)
+-\,\mathrm{Sc}\!\left(\tilde P_{\Phi}\tilde{V}_{\Phi}^{\natural}\right)
 = \gamma\,\omega_0\left(1 - \beta\cos\theta\right) = \omega_2 ,
 $$
 in agreement with (b).
 
-> **Remark on the boost-direction convention.** The rotor with vector part $+\sinh\frac{\theta_{\mathrm{rpd}}}{2}\vec u$ carries the frame in which the four-vector components are given *to the frame moving with velocity $+\vec v_b$* relative to it. This is fixed by the parent's verification against the four-potential components, and it is the convention used throughout. Reversing it — using the inverse rotor $\tilde U_{\mathrm b}^{\natural} = \cosh\frac{\theta_{\mathrm{rpd}}}{2} - i\sinh\frac{\theta_{\mathrm{rpd}}}{2}\vec u$ in place of $\tilde U_{\mathrm b}$ — interchanges emission and reception: it flips the sign of the Doppler term, giving $\omega_2 = \gamma\omega_0(1+\beta\cos\theta)$ in place of $\omega_2 = \gamma\omega_0(1-\beta\cos\theta)$, so that a receding observer ($\theta = 0$) is blueshifted rather than redshifted. Reversing the rotor therefore turns every receding observer into an approaching one. A sibling exercise in this series has found a parent article applying a boost rotor in the inverse direction in exactly this way; the present exercise pins the direction down before using it.
+> **Remark on the boost-direction convention.** The rotor with vector part $+\sinh\frac{\theta_{\mathrm{rpd}}}{2}\vec u$ carries the frame in which the four-vector components are given *to the frame moving with velocity $+\vec v_b$* relative to it. This is fixed by the parent's verification against the four-potential components, and it is the convention used throughout. Reversing it — using the inverse rotor $\tilde U_{\Psi,\mathrm b}^{\natural} = \cosh\frac{\theta_{\mathrm{rpd}}}{2} - i\sinh\frac{\theta_{\mathrm{rpd}}}{2}\vec u$ in place of $\tilde U_{\Psi,\mathrm b}$ — interchanges emission and reception: it flips the sign of the Doppler term, giving $\omega_2 = \gamma\omega_0(1+\beta\cos\theta)$ in place of $\omega_2 = \gamma\omega_0(1-\beta\cos\theta)$, so that a receding observer ($\theta = 0$) is blueshifted rather than redshifted. Reversing the rotor therefore turns every receding observer into an approaching one. A sibling exercise in this series has found a parent article applying a boost rotor in the inverse direction in exactly this way; the present exercise pins the direction down before using it.
 
 ## Problem 3: Longitudinal Doppler — The Two Factors
 
@@ -196,7 +196,7 @@ $$
 $$
 There is no transverse term here: the longitudinal result is exact at every $\beta$ and involves only the line-of-sight component of the relative velocity.
 
-> **Remark (the same factor as an eigenvector transport factor).** The factor $\sqrt{(1-\beta)/(1+\beta)}$ of part (a) occurs a second time, in a different problem, in the mathematics literature on fields of Lorentz transformations. There an eigenvector of the transformation field at a point is followed from one observer to another, and the eigenvector seen by the observer of four-velocity $\tilde{V}$ is multiplied by a factor built from the two observers and the field. In the case where the field is null and the relative velocity $\vec w$ points along the propagation direction, the factor reduces to
+> **Remark (the same factor as an eigenvector transport factor).** The factor $\sqrt{(1-\beta)/(1+\beta)}$ of part (a) occurs a second time, in a different problem, in the mathematics literature on fields of Lorentz transformations. There an eigenvector of the transformation field at a point is followed from one observer to another, and the eigenvector seen by the observer of four-velocity $\tilde{V}_{\Phi}$ is multiplied by a factor built from the two observers and the field. In the case where the field is null and the relative velocity $\vec w$ points along the propagation direction, the factor reduces to
 > $$
 > s_{u_2} = \sqrt{\frac{1-w_r}{1+w_r}}\,s_u , \qquad w_r = \vec w\cdot\vec u_r ,
 > $$
@@ -296,11 +296,11 @@ The first-order term $-\beta\cos\theta$ is the classical Doppler shift. The lead
 
 The following are left to the reader; none is fully worked out above, and the last four are applications that the parents do not treat.
 
-1. **The invariant formula for arbitrary direction.** Verify $\omega_{\mathrm{obs}} = -\mathrm{Sc}(\tilde P\tilde{V}^{\natural})$ directly for $\theta$ chosen so that $\cos\theta = \beta$, and show that it reproduces $\omega_0/\gamma$. Then verify it is invariant under a second boost applied to both $\tilde P$ and $\tilde{V}$.
+1. **The invariant formula for arbitrary direction.** Verify $\omega_{\mathrm{obs}} = -\mathrm{Sc}(\tilde P_{\Phi}\tilde{V}_{\Phi}^{\natural})$ directly for $\theta$ chosen so that $\cos\theta = \beta$, and show that it reproduces $\omega_0/\gamma$. Then verify it is invariant under a second boost applied to both $\tilde P_{\Phi}$ and $\tilde{V}_{\Phi}$.
 
 2. **Closest approach and the retarded time.** A source moves uniformly with velocity $v\vec u_x$ past an observer at the origin, at impact parameter $b$. The light received at the moment the source is at the point of closest approach was emitted earlier, from a retarded position; the light emitted from the point of closest approach is received later. Show that the two reception conventions give the two transverse results: the light received when the source is at the point of closest approach is *blueshifted* by $\omega_2 = \gamma\omega_0$ (case A), while the light showing the source at its apparent closest position is *redshifted* by $\omega_2 = \omega_0/\gamma$ (case B). This is the retarded-time resolution of the apparent paradox of Problem 4(c), and it is the reason the Ives–Stilwell source is placed on a circle rather than in linear motion.
 
-3. **Dispersion.** In a medium with frequency-dependent $c(\omega) = 1/\sqrt{\epsilon(\omega)\mu(\omega)}$, the null condition $\langle\tilde P\rangle_{\natural} = 0$ uses the phase speed at the received frequency, and the boost of Problem 2 changes the frequency. Does the transformation remain internally consistent when the medium is dispersive, and does it matter whether the medium is at rest in the source frame or in the observer frame? The parents take the complex structure to be local but do not combine it with a moving dispersive medium; this is open here.
+3. **Dispersion.** In a medium with frequency-dependent $c(\omega) = 1/\sqrt{\epsilon(\omega)\mu(\omega)}$, the null condition $\langle\tilde P_{\Phi}\rangle_{\natural} = 0$ uses the phase speed at the received frequency, and the boost of Problem 2 changes the frequency. Does the transformation remain internally consistent when the medium is dispersive, and does it matter whether the medium is at rest in the source frame or in the observer frame? The parents take the complex structure to be local but do not combine it with a moving dispersive medium; this is open here.
 
 4. **Apparent superluminal motion.** Show that a source moving at small angle $\Theta$ to the line of sight — $\Theta$ the angle between the source velocity and the direction from the source to the observer, the same line-of-sight angle as in further problem 5 — has apparent transverse speed
 $$
@@ -314,11 +314,11 @@ and find the angle that maximises it. (For $\beta = 0.99$ and $\Theta = 0.1$ rad
 
 ## Summary
 
-1. **Four-wavevector.** $\tilde P =\frac{m\,c\,(i\omega/c\,e_t + \vec k)}{k_m}$ is an element of $\mathbb{B}_{\Phi}$ with $\langle\tilde P\rangle_{\natural} = -\omega^2/c^2 + k^2$; for light $k = \omega/c$ and $\langle\tilde P\rangle_{\natural} = 0$, so light is a null element (zero divisor) of the algebra. The phase $Ξ = \mathrm{Sc}(\tilde P\tilde{R}_\Phi^{\natural}) = \vec k\cdot(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)-\omega r'_t$ is invariant under rotor conjugation.
+1. **Four-wavevector.** $\tilde P_{\Phi} =\frac{m\,c\,(i\omega/c\,e_t + \vec k)}{k_m}$ is an element of $\mathbb{B}_{\Phi}$ with $\langle\tilde P_{\Phi}\rangle_{\natural} = -\omega^2/c^2 + k^2$; for light $k = \omega/c$ and $\langle\tilde P_{\Phi}\rangle_{\natural} = 0$, so light is a null element (zero divisor) of the algebra. The phase $Ξ = \mathrm{Sc}(\tilde P_{\Phi}\tilde{R}_\Phi^{\natural}) = \vec k\cdot(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)-\omega r'_t$ is invariant under rotor conjugation.
 
-2. **Frequency invariant.** An observer of four-velocity $\tilde{V}$ measures $\omega_{\mathrm{obs}} = -\mathrm{Sc}(\tilde P\tilde{V}^{\natural})$; in the source frame this is $\gamma\omega_0(1-\beta\cos\theta)$.
+2. **Frequency invariant.** An observer of four-velocity $\tilde{V}_{\Phi}$ measures $\omega_{\mathrm{obs}} = -\mathrm{Sc}(\tilde P_{\Phi}\tilde{V}_{\Phi}^{\natural})$; in the source frame this is $\gamma\omega_0(1-\beta\cos\theta)$.
 
-3. **General Doppler formula.** Under the boost rotor $\tilde U_{\mathrm b} = \cosh\frac{\theta_{\mathrm{rpd}}}{2}+i\sinh\frac{\theta_{\mathrm{rpd}}}{2}\vec u$, with $\tanh\theta_{\mathrm{rpd}} = v_b/c$, the four-wavevector transforms by $\tilde P_2 = \tilde U_{\mathrm b}\tilde P\tilde U_{\mathrm b}^{*}$ and $\omega_2 = \gamma\omega_0(1-\beta\cos\theta)$, where $\theta$ is the source-frame angle between $\vec v_b$ and the propagation direction. The transformed wavevector is again null.
+3. **General Doppler formula.** Under the boost rotor $\tilde U_{\Psi,\mathrm b} = \cosh\frac{\theta_{\mathrm{rpd}}}{2}+i\sinh\frac{\theta_{\mathrm{rpd}}}{2}\vec u$, with $\tanh\theta_{\mathrm{rpd}} = v_b/c$, the four-wavevector transforms by $\tilde P_{\Phi,2} = \tilde U_{\Psi,\mathrm b}\tilde P_{\Phi}\tilde U_{\Psi,\mathrm b}^{*}$ and $\omega_2 = \gamma\omega_0(1-\beta\cos\theta)$, where $\theta$ is the source-frame angle between $\vec v_b$ and the propagation direction. The transformed wavevector is again null.
 
 4. **Longitudinal.** $\omega_2 = \omega_0\sqrt{(1-\beta)/(1+\beta)}$ receding and $\omega_0\sqrt{(1+\beta)/(1-\beta)}$ approaching; the two factors are reciprocals, and $1+z = \sqrt{(1+\beta)/(1-\beta)}$.
 
@@ -341,9 +341,9 @@ and find the angle that maximises it. (For $\beta = 0.99$ and $\Theta = 0.1$ rad
 | $\langle\tilde{Q}\rangle_{\natural} = \tilde{Q}\tilde{Q}^{\natural}$ | Biquaternion norm |
 | $c$, $c_0$ | Speed of light in the medium, and in vacuum |
 | $\tilde R_\Phi = i c r'_t\,e_t + r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z$ | Four-position |
-| $\tilde P =\frac{m\,c\,(i\omega/c\,e_t + \vec k)}{k_m}$ | Four-wavevector, $\langle\tilde P\rangle_{\natural} = 0$ for light |
-| $\tilde{V} = \gamma_b(ic\,e_t + \vec v_b)$ | Observer four-velocity, $\langle\tilde{V}\rangle_{\natural} = -c^2$ |
-| $\tilde U_{\mathrm b} = \cosh\frac{\theta_{\mathrm{rpd}}}{2} + i\sinh\frac{\theta_{\mathrm{rpd}}}{2}\vec u$ | Boost biquaternion (Hermitian, unit norm) |
+| $\tilde P_{\Phi} =\frac{m\,c\,(i\omega/c\,e_t + \vec k)}{k_m}$ | Four-wavevector, $\langle\tilde P_{\Phi}\rangle_{\natural} = 0$ for light |
+| $\tilde{V}_{\Phi} = \gamma_b(ic\,e_t + \vec v_b)$ | Observer four-velocity, $\langle\tilde{V}_{\Phi}\rangle_{\natural} = -c^2$ |
+| $\tilde U_{\Psi,\mathrm b} = \cosh\frac{\theta_{\mathrm{rpd}}}{2} + i\sinh\frac{\theta_{\mathrm{rpd}}}{2}\vec u$ | Boost biquaternion (Hermitian, unit norm) |
 | $\theta_{\mathrm{rpd}}$ | Rapidity, $\tanh\theta_{\mathrm{rpd}} = v_b/c$ |
 | $\beta = v_b/c$, $\gamma = (1-\beta^2)^{-1/2}$ | Dimensionless speed and Lorentz factor |
 | $\vec v_b$ | Observer-frame velocity relative to the source frame |

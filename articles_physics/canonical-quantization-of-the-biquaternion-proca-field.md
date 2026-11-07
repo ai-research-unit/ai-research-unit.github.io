@@ -5,16 +5,16 @@
 The massive vector field is the simplest field that carries spin one without a gauge redundancy. Its classical theory is the Proca theory: the Maxwell Lagrangian augmented by a mass term, with the field equation
 
 $$
-\tilde\nabla\tilde F-\mu^2\tilde A=0,
+\tilde\nabla\tilde F-\mu^2\tilde A_{\Phi}=0,
 $$
 
 whose divergence is no longer empty, and with a longitudinal polarization that is physical rather than removable. Its quantization differs from that of the Maxwell field in one structural way and in one only: the two constraints that the electromagnetic field carries as **first-class** constraints, and that generate its gauge freedom, become **second-class** when the mass term is present, and the gauge freedom disappears. The phase-space count changes from two to three, and no indefinite metric and no subsidiary condition are needed.
 
-The companion article *Canonical Quantization of the Biquaternion Maxwell Field* establishes the massless case inside the biquaternion framework: the potential $\tilde{A}\in\mathbb{B}_{\Phi}$, the field strength $\tilde{F}=\tilde{\nabla}^{\natural}\tilde{A}-\mathrm{Sc}(\tilde{\nabla}^{\natural}\tilde{A})$, the Legendre transform with $\pi_\mu=-F_{t\mu}$ and the primary constraint $\pi_0\approx0$, Gauss's law as the secondary constraint, the first-class character of both, the Gupta–Bleuler mode expansion with the indefinite metric $\sigma_{\mathrm{met}}=(-1,+1,+1,+1)$, and the two transverse physical polarizations. It records, at the point where the constraint count is made, that *if the gauge field is given a mass the gauge freedom is absent, the constraint structure changes, and a third polarization becomes physical*. The present article takes that sentence as its programme and works it out.
+The companion article *Canonical Quantization of the Biquaternion Maxwell Field* establishes the massless case inside the biquaternion framework: the potential $\tilde{A}_{\Phi}\in\mathbb{B}_{\Phi}$, the field strength $\tilde{F}=\tilde{\nabla}^{\natural}\tilde{A}_{\Phi}-\mathrm{Sc}(\tilde{\nabla}^{\natural}\tilde{A}_{\Phi})$, the Legendre transform with $\pi_\mu=-F_{t\mu}$ and the primary constraint $\pi_0\approx0$, Gauss's law as the secondary constraint, the first-class character of both, the Gupta–Bleuler mode expansion with the indefinite metric $\sigma_{\mathrm{met}}=(-1,+1,+1,+1)$, and the two transverse physical polarizations. It records, at the point where the constraint count is made, that *if the gauge field is given a mass the gauge freedom is absent, the constraint structure changes, and a third polarization becomes physical*. The present article takes that sentence as its programme and works it out.
 
 The Proca equation in biquaternionic form is the classical parent of this article; its conventions are those of the Maxwell companions, and the reader is referred to the series conventions for the algebra. The results established here are the following.
 
-- **Established, and recomputed below.** The Proca Lagrangian in the series $i c r'_t$ convention is $\mathcal{L}=-\tfrac14\sum_{\mu,\nu}F_{\mu\nu}F_{\mu\nu}-\tfrac12\mu^2\sum_\mu A_\mu A_\mu$, the mass term sign being fixed so that the equation is $(\Box-\mu^2)\tilde{A}=0$ in the Lorenz gauge, the same sign as the Klein–Gordon equation of the companion article *The Klein–Gordon Equation in Biquaternionic Form*. The Lorenz condition $S=\mathrm{Sc}(\tilde{\nabla}^{\natural}\tilde{A})=0$ is **not** a gauge choice in the massive theory: it follows from the field equation by taking the divergence, and the algebra reproduces this as $\mathrm{Sc}(\tilde{\nabla}^{\natural}\tilde{\nabla}\tilde{F})=\Box\,\mathrm{Sc}(\tilde{F})=0$ on one side and $\mu^2 S$ on the other. The Legendre transform gives $\pi_\mu=-F_{t\mu}$, unchanged from Maxwell, so that $\pi_0\approx0$ is still primary; the secondary constraint is Gauss's law deformed to $\sum_i \partial/\partial R_i\,\pi_i+\mu^2A_0\approx0$; and the two constraints are second class because $\{\pi_0(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z),\sum_i \partial/\partial R_i\,\pi_i(\vec y)+\mu^2A_0(\vec y)\}=-\mu^2\delta^{(3)}(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z-\vec y)$. The phase-space count $(8-2)/2=3$ gives three field degrees of freedom. The three on-shell polarizations satisfy the completeness relation $\sum_{r=1}^3\varepsilon_{r\mu}\varepsilon_{r\nu}=\delta_{\mu\nu}+p_\mu p_\nu/\mu^2$, whose right-hand side is an idempotent of trace three that annihilates $p$; the same object is the numerator of the Proca propagator, so the propagator's residue is the three-polarization projector.
+- **Established, and recomputed below.** The Proca Lagrangian in the series $i c r'_t$ convention is $\mathcal{L}=-\tfrac14\sum_{\mu,\nu}F_{\mu\nu}F_{\mu\nu}-\tfrac12\mu^2\sum_\mu A_\mu A_\mu$, the mass term sign being fixed so that the equation is $(\Box-\mu^2)\tilde{A}_{\Phi}=0$ in the Lorenz gauge, the same sign as the Klein–Gordon equation of the companion article *The Klein–Gordon Equation in Biquaternionic Form*. The Lorenz condition $S=\mathrm{Sc}(\tilde{\nabla}^{\natural}\tilde{A}_{\Phi})=0$ is **not** a gauge choice in the massive theory: it follows from the field equation by taking the divergence, and the algebra reproduces this as $\mathrm{Sc}(\tilde{\nabla}^{\natural}\tilde{\nabla}\tilde{F})=\Box\,\mathrm{Sc}(\tilde{F})=0$ on one side and $\mu^2 S$ on the other. The Legendre transform gives $\pi_\mu=-F_{t\mu}$, unchanged from Maxwell, so that $\pi_0\approx0$ is still primary; the secondary constraint is Gauss's law deformed to $\sum_i \partial/\partial R_i\,\pi_i+\mu^2A_0\approx0$; and the two constraints are second class because $\{\pi_0(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z),\sum_i \partial/\partial R_i\,\pi_i(\vec y)+\mu^2A_0(\vec y)\}=-\mu^2\delta^{(3)}(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z-\vec y)$. The phase-space count $(8-2)/2=3$ gives three field degrees of freedom. The three on-shell polarizations satisfy the completeness relation $\sum_{r=1}^3\varepsilon_{r\mu}\varepsilon_{r\nu}=\delta_{\mu\nu}+p_\mu p_\nu/\mu^2$, whose right-hand side is an idempotent of trace three that annihilates $p$; the same object is the numerator of the Proca propagator, so the propagator's residue is the three-polarization projector.
 - **The framework's contribution.** The algebra supplies the material sector in which the massive potential lives, the field strength and its zero scalar part, the d'Alembertian, and the divergence operation that turns the field equation into the Lorenz condition. It supplies the statement that the Lorenz condition is a consequence rather than a choice, because $\mathrm{Sc}(\tilde{F})=0$ is an algebraic property of the field strength and $\Box$ is central and scalar. It does not supply the mass term: the value of $\mu$ is a parameter, and the algebra fixes neither its existence nor its magnitude.
 - **Imported, and left visible.** The Legendre transform, the Dirac bracket for the second-class system, the mode algebra $[a_{\mathrm{fop},r}(\vec p),a_{\mathrm{fop},s}^{\dagger}(\vec k)]=\delta_{rs}(2\pi)^3\delta^{(3)}(\vec p-\vec k)$, the normal-ordering convention, and the propagator's $i\epsilon$ prescription are standard quantum field theory transcribed into the framework's notation. As in the Maxwell and Dirac companions, the bosonic ladder algebra is not native to the finite-dimensional algebra: the Fock companion proves that no pair of elements of $\mathbb{B}$ satisfies a canonical commutator, so the algebra supplies the module on which the ladder acts and not the ladder.
 
@@ -30,7 +30,7 @@ The Proca equation in biquaternionic form is the classical parent of this articl
 
 ### The Lagrangian and the Field Equation
 
-The Maxwell Lagrangian in the series convention is $\mathcal{L}_{\mathrm{M}}=-\tfrac14\sum_{\mu,\nu}F_{\mu\nu}F_{\mu\nu}=\tfrac12(\vec E^2-\vec B^2)$, with the potential $\tilde{A}\in\mathbb{B}_{\Phi}$ and $\vec E$, $\vec B$ the electric and magnetic fields. The Proca field adds the only invariant available at this order that contains no derivative and is quadratic in the field, the biquaternion norm of the potential:
+The Maxwell Lagrangian in the series convention is $\mathcal{L}_{\mathrm{M}}=-\tfrac14\sum_{\mu,\nu}F_{\mu\nu}F_{\mu\nu}=\tfrac12(\vec E^2-\vec B^2)$, with the potential $\tilde{A}_{\Phi}\in\mathbb{B}_{\Phi}$ and $\vec E$, $\vec B$ the electric and magnetic fields. The Proca field adds the only invariant available at this order that contains no derivative and is quadratic in the field, the biquaternion norm of the potential:
 
 $$
 \mathcal{L} = -\tfrac14\sum_{\mu,\nu}F_{\mu\nu}F_{\mu\nu} - \tfrac12\mu^2 \sum_\mu A_\mu A_\mu
@@ -42,32 +42,32 @@ The sign of the mass term is fixed by the requirement that the equation reduce, 
 The Euler–Lagrange equation is
 
 $$
-\tilde\nabla\tilde F-\mu^2\tilde A=0,
+\tilde\nabla\tilde F-\mu^2\tilde A_{\Phi}=0,
 \qquad F_{\mu\nu}=\partial/\partial R_\mu A_\nu-\partial/\partial R_\nu A_\mu .
 $$
 
 This is the Maxwell equation with a mass term, and it is the component form of the single biquaternion equation
 
 $$
-\boxed{\;\tilde{\nabla}\tilde{F} = \mu^2\tilde{A}\;},
+\boxed{\;\tilde{\nabla}\tilde{F} = \mu^2\tilde{A}_{\Phi}\;},
 $$
 
-whose massless case $\tilde{\nabla}\tilde{F}=0$ is the source-free Maxwell equation of the companion article. The right-hand side $\mu^2\tilde{A}$ lies in the material sector, as does the left-hand side, so the biquaternion equation is sector-consistent: the algebra does not mix $\mathbb{B}_{\Phi}$ with $\mathbb{B}_{\Psi}$.
+whose massless case $\tilde{\nabla}\tilde{F}=0$ is the source-free Maxwell equation of the companion article. The right-hand side $\mu^2\tilde{A}_{\Phi}$ lies in the material sector, as does the left-hand side, so the biquaternion equation is sector-consistent: the algebra does not mix $\mathbb{B}_{\Phi}$ with $\mathbb{B}_{\Psi}$.
 
 ### The Lorenz Condition Is a Consequence
 
-For the Maxwell field the Lorenz condition $S=\mathrm{Sc}(\tilde{\nabla}^{\natural}\tilde{A})=0$ is one gauge among many, and the whole difficulty of the massless quantization is that the algebra does not select it. For the Proca field it is not a gauge choice at all. Take the divergence of the field equation:
+For the Maxwell field the Lorenz condition $S=\mathrm{Sc}(\tilde{\nabla}^{\natural}\tilde{A}_{\Phi})=0$ is one gauge among many, and the whole difficulty of the massless quantization is that the algebra does not select it. For the Proca field it is not a gauge choice at all. Take the divergence of the field equation:
 
 $$
-\bigl\langle\tilde\nabla,\ \tilde\nabla\tilde F-\mu^2\tilde A\bigr\rangle_{\natural}
-= \bigl\langle\tilde\nabla,\tilde\nabla\tilde F\bigr\rangle_{\natural}-\mu^2\langle\tilde\nabla,\tilde A\rangle_{\natural}
-= 0-\mu^2\langle\tilde\nabla,\tilde A\rangle_{\natural} .
+\bigl\langle\tilde\nabla,\ \tilde\nabla\tilde F-\mu^2\tilde A_{\Phi}\bigr\rangle_{\natural}
+= \bigl\langle\tilde\nabla,\tilde\nabla\tilde F\bigr\rangle_{\natural}-\mu^2\langle\tilde\nabla,\tilde A_{\Phi}\rangle_{\natural}
+= 0-\mu^2\langle\tilde\nabla,\tilde A_{\Phi}\rangle_{\natural} .
 $$
 
 The first term vanishes because it contracts the symmetric derivative $\partial^2/\partial R_\nu\partial R_\mu$ with the antisymmetric $F_{\mu\nu}$, and the second gives the Lorenz condition
 
 $$
-\langle\tilde\nabla,\tilde A\rangle_{\natural}=0 .
+\langle\tilde\nabla,\tilde A_{\Phi}\rangle_{\natural}=0 .
 $$
 
 In the framework's notation the same step reads
@@ -76,7 +76,7 @@ $$
 \mathrm{Sc}\!\left(\tilde{\nabla}^{\natural}\tilde{\nabla}\tilde{F}\right)
 = \Box\,\mathrm{Sc}\!\left(\tilde{F}\right) = 0,
 \qquad
-\mathrm{Sc}\!\left(\tilde{\nabla}^{\natural}\left(\mu^2\tilde{A}\right)\right)
+\mathrm{Sc}\!\left(\tilde{\nabla}^{\natural}\left(\mu^2\tilde{A}_{\Phi}\right)\right)
 = \mu^2 S,
 $$
 
@@ -85,7 +85,7 @@ so that operating on the biquaternion equation with $\tilde{\nabla}^{\natural}$ 
 With $S=0$ the field equation reduces to the componentwise massive wave equation
 
 $$
-\left(\Box-\mu^2\right)\tilde{A} = 0,
+\left(\Box-\mu^2\right)\tilde{A}_{\Phi} = 0,
 $$
 
 three copies of the Klein–Gordon equation, one for each independent polarization. The fourth component $A_0$ is not independent: the Lorenz condition and the spatial equations determine it, which is the field-theoretic face of the constraint analysis below.
@@ -100,7 +100,7 @@ A_\mu(x) = \varepsilon_\mu(\vec p)\,\exp(-ip\cdot x),
 \qquad \sum_\mu p_\mu\varepsilon_\mu = 0,
 $$
 
-with $\omega_{\vec p}=\sqrt{\vec p^2+\mu^2}$ and the invariant phase $\sum_\mu p_\mu x_\mu=\omega_{\vec p}r'_t-\vec p\cdot(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)$ of the series convention, the material four-wavevector being $\tilde P=i\omega_{\vec p}e_t+\vec p$, with $p_t^2=-\omega_{\vec p}^2$, and its biquaternion norm $\langle\tilde P\rangle_{\natural}=(\vec p^2-\omega_{\vec p}^2)e_t$, so that $p^2=-\langle\tilde P\rangle_{\natural}$ as in the scalar companion. The Lorenz condition is the transversality condition $\sum_\mu p_\mu\varepsilon_\mu=0$ — the plain contraction $\omega_{\vec p}\varepsilon_0+\vec p\cdot\vec\varepsilon$ of the four components — one complex linear condition on the four components of $\varepsilon_\mu$, leaving three independent polarizations. These are the two transverse polarizations, with $\varepsilon_\mu=(0,\vec\varepsilon_T)$ and $\vec p\cdot\vec\varepsilon_T=0$, and the longitudinal one,
+with $\omega_{\vec p}=\sqrt{\vec p^2+\mu^2}$ and the invariant phase $\sum_\mu p_\mu x_\mu=\omega_{\vec p}r'_t-\vec p\cdot(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)$ of the series convention, the material four-wavevector being $\tilde P_{\Phi}=i\omega_{\vec p}e_t+\vec p$, with $p_t^2=-\omega_{\vec p}^2$, and its biquaternion norm $\langle\tilde P_{\Phi}\rangle_{\natural}=(\vec p^2-\omega_{\vec p}^2)e_t$, so that $p^2=-\langle\tilde P_{\Phi}\rangle_{\natural}$ as in the scalar companion. The Lorenz condition is the transversality condition $\sum_\mu p_\mu\varepsilon_\mu=0$ — the plain contraction $\omega_{\vec p}\varepsilon_0+\vec p\cdot\vec\varepsilon$ of the four components — one complex linear condition on the four components of $\varepsilon_\mu$, leaving three independent polarizations. These are the two transverse polarizations, with $\varepsilon_\mu=(0,\vec\varepsilon_T)$ and $\vec p\cdot\vec\varepsilon_T=0$, and the longitudinal one,
 
 $$
 \varepsilon_{\mathrm{L}\mu} = \frac{1}{\mu}\left(-|\vec p|,\,0,\,0,\,\omega_{\vec p}\right)
@@ -237,7 +237,7 @@ three half-quanta per mode, one for each polarization. It is quartically diverge
 
 ## The Propagator and the Polarization Projector
 
-The two-point function is the inverse of the momentum-space kinetic operator. With the field equation written $\sum_\sigma\left[(p^2-\mu^2)\delta_{\nu\sigma}+p_\nu p_\sigma\right]\tilde{A}_\sigma=0$ in the series momentum convention $p^2=\omega^2-\vec p^2$, the inverse is
+The two-point function is the inverse of the momentum-space kinetic operator. With the field equation written $\sum_\sigma\left[(p^2-\mu^2)\delta_{\nu\sigma}+p_\nu p_\sigma\right]\tilde{A}_{\Phi,\sigma}=0$ in the series momentum convention $p^2=\omega^2-\vec p^2$, the inverse is
 
 $$
 D_{\nu\sigma}(p) = \frac{\delta_{\nu\sigma} + p_\nu p_\sigma/\mu^2}{p^2-\mu^2},
@@ -262,12 +262,12 @@ The massless limit is where the article's structural point is sharpest, so it is
 At $\mu\neq0$ the two constraints $\xi_1=\pi_0$ and $\xi_2=\sum_i \partial/\partial R_i\,\pi_i+\mu^2A_0$ are second class, with $\{\xi_1,\xi_2\}=-\mu^2\delta^{(3)}\neq0$. As $\mu\to0$ the bracket vanishes, the constraints become **first class**, and the constraint pair no longer removes a physical direction but generates a gauge transformation. The gauge transformation it generates is the Maxwell one,
 
 $$
-\tilde{A}\;\longmapsto\;\tilde{A}-\tilde{\nabla}\Gamma,
+\tilde{A}_{\Phi}\;\longmapsto\;\tilde{A}_{\Phi}-\tilde{\nabla}\Gamma,
 \qquad
 S\;\longmapsto\;S-\Box\Gamma,
 $$
 
-with $S=\mathrm{Sc}(\tilde{\nabla}^{\natural}\tilde{A})$. The Lorenz condition, which for $\mu\neq0$ was a consequence of the equation, becomes for $\mu=0$ a gauge choice — and the freedom to make it, and to make residual gauge transformations afterwards, is exactly the freedom that the mass term had removed. The picture is continuous in the count and discontinuous in the structure: three degrees of freedom for any $\mu\neq0$ however small, two at $\mu=0$ exactly.
+with $S=\mathrm{Sc}(\tilde{\nabla}^{\natural}\tilde{A}_{\Phi})$. The Lorenz condition, which for $\mu\neq0$ was a consequence of the equation, becomes for $\mu=0$ a gauge choice — and the freedom to make it, and to make residual gauge transformations afterwards, is exactly the freedom that the mass term had removed. The picture is continuous in the count and discontinuous in the structure: three degrees of freedom for any $\mu\neq0$ however small, two at $\mu=0$ exactly.
 
 The longitudinal polarization makes the point concretely. At $\mu\neq0$ its norm is positive and it is physical; its creation operator appears in the mode expansion with no counterpart in the massless theory. At $\mu=0$ the mode expansion acquires the timelike polarization of negative norm and the longitudinal polarization of positive norm, and the two combine into the zero-norm pair that the subsidiary condition removes. The massless theory does not have two polarizations because two of four are unphysical in a bookkeeping sense; it has two because a gauge symmetry identifies directions in field space, and the identification is exact only at $\mu=0$. The Maxwell companion records this asymmetry as the reason its gauge fixing cannot be supplied by the algebra; the Proca theory is the control case in which no gauge fixing is needed at all, and the price is that the fourth polarization is physical and the count is three.
 
@@ -295,15 +295,15 @@ The longitudinal polarization makes the point concretely. At $\mu\neq0$ its norm
 
 ## Summary
 
-The Proca field in biquaternionic form is the massive vector field, a material-sector four-vector $\tilde{A}\in\mathbb{B}_{\Phi}$ obeying $\tilde{\nabla}\tilde{F}=\mu^2\tilde{A}$, with the Lagrangian $-\tfrac14\sum_{\mu,\nu}F_{\mu\nu}F_{\mu\nu}-\tfrac12\mu^2\sum_\mu A_\mu A_\mu$ in the series $i c r'_t$ convention. The mass term is the central biquaternion norm of the potential, so it commutes with the algebra and does not mix the sectors, and its sign is fixed by the series convention of the Klein–Gordon equation.
+The Proca field in biquaternionic form is the massive vector field, a material-sector four-vector $\tilde{A}_{\Phi}\in\mathbb{B}_{\Phi}$ obeying $\tilde{\nabla}\tilde{F}=\mu^2\tilde{A}_{\Phi}$, with the Lagrangian $-\tfrac14\sum_{\mu,\nu}F_{\mu\nu}F_{\mu\nu}-\tfrac12\mu^2\sum_\mu A_\mu A_\mu$ in the series $i c r'_t$ convention. The mass term is the central biquaternion norm of the potential, so it commutes with the algebra and does not mix the sectors, and its sign is fixed by the series convention of the Klein–Gordon equation.
 
-The Lorenz condition is a **consequence** of the massive field equation and not a gauge choice. Its algebra-level derivation is the identity $\mathrm{Sc}(\tilde{\nabla}^{\natural}\tilde{\nabla}\tilde{F})=\Box\,\mathrm{Sc}(\tilde{F})=0$, which holds because the field strength has vanishing scalar part and the d'Alembertian is central, together with $\mathrm{Sc}(\tilde{\nabla}^{\natural}(\mu^2\tilde{A}))=\mu^2S$; hence $\mu^2S=0$. In the Lorenz gauge the equation is the componentwise massive wave equation $(\Box-\mu^2)\tilde{A}=0$.
+The Lorenz condition is a **consequence** of the massive field equation and not a gauge choice. Its algebra-level derivation is the identity $\mathrm{Sc}(\tilde{\nabla}^{\natural}\tilde{\nabla}\tilde{F})=\Box\,\mathrm{Sc}(\tilde{F})=0$, which holds because the field strength has vanishing scalar part and the d'Alembertian is central, together with $\mathrm{Sc}(\tilde{\nabla}^{\natural}(\mu^2\tilde{A}_{\Phi}))=\mu^2S$; hence $\mu^2S=0$. In the Lorenz gauge the equation is the componentwise massive wave equation $(\Box-\mu^2)\tilde{A}_{\Phi}=0$.
 
 The Legendre transform leaves the momenta unchanged from Maxwell, $\pi_\mu=-F_{t\mu}$, so $\pi_0\approx0$ is primary. The secondary constraint is Gauss's law deformed to $\sum_i \partial/\partial R_i\,\pi_i+\mu^2A_0\approx0$, and the two are **second class**, because $\{\pi_0,\xi_2\}=-\mu^2\delta^{(3)}\neq0$ and the constraint matrix $\Delta$ has determinant $\mu^4\neq0$. The phase-space count $(8-2)/2=3$ gives three field degrees of freedom, against two for the massless field. The quantization is by the Dirac bracket, with no indefinite metric and no subsidiary condition.
 
 The three on-shell polarizations satisfy $\sum_r\varepsilon_{r\mu}\varepsilon_{r\nu}=\delta_{\mu\nu}+p_\mu p_\nu/\mu^2$, an idempotent of trace three annihilating $p$, verified at several momenta. The same object is the numerator of the propagator $D_{\mu\nu}=i(\delta_{\mu\nu}+p_\mu p_\nu/\mu^2)/(p^2-\mu^2+i\epsilon)$, whose inverse property was verified off shell, so the propagator's residue is the three-polarization projector. The mode expansion carries three positive-norm modes with the standard bosonic commutators, and the normal-ordered Hamiltonian is the sum of three oscillator quanta per mode, the un-normal-ordered constant being three half-quanta per mode, one for each polarization.
 
-The massless limit is the limit in which the two constraints become first class, the gauge transformation $\tilde{A}\mapsto\tilde{A}-\tilde{\nabla}\Gamma$ reappears, and the count drops from three to two. The massless theory has two polarizations because a gauge symmetry identifies field directions, not because of any bookkeeping; the Proca theory is the control case in which no gauge fixing is needed and the fourth polarization is physical. What the algebra supplies is the carrier, the field strength, the operator that makes the Lorenz condition a consequence, and the central biquaternion norm that the mass term uses; what it does not supply is the mass itself, the ladder algebra, or any empirical content.
+The massless limit is the limit in which the two constraints become first class, the gauge transformation $\tilde{A}_{\Phi}\mapsto\tilde{A}_{\Phi}-\tilde{\nabla}\Gamma$ reappears, and the count drops from three to two. The massless theory has two polarizations because a gauge symmetry identifies field directions, not because of any bookkeeping; the Proca theory is the control case in which no gauge fixing is needed and the fourth polarization is physical. What the algebra supplies is the carrier, the field strength, the operator that makes the Lorenz condition a consequence, and the central biquaternion norm that the mass term uses; what it does not supply is the mass itself, the ladder algebra, or any empirical content.
 
 ## Summary of Notation
 
@@ -313,13 +313,13 @@ The massless limit is the limit in which the two constraints become first class,
 | $e_t=1,\vec e_x,\vec e_y,\vec e_z$ | Quaternion basis, $\vec e_k^2=-e_t$ |
 | $i$ | Central scalar imaginary, $i^2=-1$ |
 | $\mathbb{B}_{\Psi},\mathbb{B}_{\Phi}$ | Informational (Hermitian) and material (anti-Hermitian) sectors |
-| $\tilde{A}=iA_0e_t+\vec A\in\mathbb{B}_{\Phi}$ | Proca potential biquaternion |
-| $\tilde{F}=\tilde{\nabla}^{\natural}\tilde{A}-\mathrm{Sc}(\tilde{\nabla}^{\natural}\tilde{A})$ | Field-strength biquaternion, $\mathrm{Sc}(\tilde{F})=0$ |
+| $\tilde{A}_{\Phi}=iA_0e_t+\vec A\in\mathbb{B}_{\Phi}$ | Proca potential biquaternion |
+| $\tilde{F}=\tilde{\nabla}^{\natural}\tilde{A}_{\Phi}-\mathrm{Sc}(\tilde{\nabla}^{\natural}\tilde{A}_{\Phi})$ | Field-strength biquaternion, $\mathrm{Sc}(\tilde{F})=0$ |
 | $\tilde{\nabla},\tilde{\nabla}^{\natural},\Box=\partial^2/\partial R_t^2+\Delta$ | Gradient, conjugate, d'Alembertian |
 | $\mathcal{L}=-\tfrac14\sum_{\mu,\nu}F_{\mu\nu}F_{\mu\nu}-\tfrac12\mu^2\sum_\mu A_\mu A_\mu$ | Proca Lagrangian (series $i c r'_t$ convention) |
-| $\tilde\nabla\tilde F-\mu^2\tilde A=0$, quaternionic and plain biquaternion | Proca field equation, quaternionic and plain biquaternion forms |
-| $S=\mathrm{Sc}(\tilde{\nabla}^{\natural}\tilde{A})=0$ | Lorenz condition, a consequence of the equation |
-| $(\Box-\mu^2)\tilde{A}=0$ | Massive wave equation in the Lorenz gauge |
+| $\tilde\nabla\tilde F-\mu^2\tilde A_{\Phi}=0$, quaternionic and plain biquaternion | Proca field equation, quaternionic and plain biquaternion forms |
+| $S=\mathrm{Sc}(\tilde{\nabla}^{\natural}\tilde{A}_{\Phi})=0$ | Lorenz condition, a consequence of the equation |
+| $(\Box-\mu^2)\tilde{A}_{\Phi}=0$ | Massive wave equation in the Lorenz gauge |
 | $\delta_{\mu\nu}=(1,1,1,1)$ | The unit metric on the four $Q_\mu$: diagonal, all four coefficients $+1$ |
 | $\langle\tilde{Q}_1,\tilde{Q}_2\rangle_{\natural}=\mathrm{Sc}(\tilde{Q}_1\tilde{Q}_2^{\natural})$ | General quaternionic bilinear form on $\mathbb{B}_{\Phi}$, the interval |
 | $\pi_\mu=-F_{t\mu}$, $\pi_0\approx0$ | Conjugate momenta and primary constraint |

@@ -201,7 +201,7 @@ and
 $$
 A_\omega A_\omega^\dagger =\frac{2\,m^{2}\,c\,\omega}{k_m}\left(N + 3 +\frac{k_m\,S}{m\,c}\right),
 \qquad
-S=\sum_k  L_{\mathrm{orb},k}\,\tilde S_k ,
+S=\sum_k  L_{\mathrm{orb},k}\,\tilde S_{\Psi,k} ,
 $$
 
 where $N$ is the oscillator number operator and $S$ is the spin–orbit element. The constant terms differ, $-\frac{3\,m^{2}\,c\,\omega}{k_m}$ against $+\frac{3\,m^{2}\,c\,\omega}{k_m}$, and the two products differ by their commutator, which carries the constant and twice the spin–orbit term. The commutator is not central, and the two operators are nevertheless isospectral away from zero, because $A_\omega$ intertwines them: $A_\omega(A_\omega^\dagger A_\omega) = (A_\omega A_\omega^\dagger)A_\omega$. Both identities were checked on the truncated oscillator space of the states with $N\le4$ (thirty-five bosonic states, seventy with the spin), where they held to $10^{-15}$ in the bulk of the basis, that is for every state with $N\le2$; the deviation in the outermost shell is the expected artefact of a truncation that realises the commutator of the ladder only below its ceiling. $A_\omega$ annihilates the vacuum exactly.
@@ -332,7 +332,7 @@ The Dirac oscillator is the three-dimensional relativistic realisation: the pair
 | $\tilde{Q} = \vec e_y\partial/\partial R_x + iW\vec e_x$ | Reduced supercharge (1+1 dimensions) |
 | $\tilde{Q}^2 = (-\partial^2/\partial R_x^2+W^2)e_t - \frac{dW}{dx}(i\vec e_z)$ | Its square (central part plus $\mathbb{B}_{\Psi}$ remainder) |
 | $A_\omega$, $A_\omega^\dagger$ | Oscillator pair (written $\mathcal{Q}_\pm$ in the companion article) |
-| $S=\sum_k L_{\mathrm{orb},k}\tilde S_k$ | Spin–orbit element of the oscillator, with the two values $\frac{m\,c\,l}{k_m}$ and $-\frac{m\,c\,(l+1)}{k_m}$ |
+| $S=\sum_k L_{\mathrm{orb},k}\tilde S_{\Psi,k}$ | Spin–orbit element of the oscillator, with the two values $\frac{m\,c\,l}{k_m}$ and $-\frac{m\,c\,(l+1)}{k_m}$ |
 ## Further Reading
 
 - [Why AXF Matrices instead of Pauli and Gamma Matrices](why-axf-matrices-instead-of-pauli-and-gamma-matrices.html), for the reasons the AXF matrices replace the Pauli and gamma matrices.

@@ -31,7 +31,7 @@ with $r'_t,r'_{x},r'_{y},r'_{z}$ real, $\mathbb{B}=\mathbb{B}_{\Psi}\oplus\mathb
 
 ## The Photon as the Quantum of the Biquaternion Maxwell Field
 
-The classical theory is the single equation $\tilde{\nabla}\tilde{F}=-\sqrt{\mu}\,\tilde{J}$ for the field strength; the sources vanish for the free field, and the equation is then $\tilde{\nabla}\tilde{F}=0$. A plane-wave solution with four-wavevector $\tilde P=i\omega\,e_t+\vec k$ and complex amplitude $\vec F$ has
+The classical theory is the single equation $\tilde{\nabla}\tilde{F}=-\sqrt{\mu}\,\tilde{J}_{\Phi}$ for the field strength; the sources vanish for the free field, and the equation is then $\tilde{\nabla}\tilde{F}=0$. A plane-wave solution with four-wavevector $\tilde P_{\Phi}=i\omega\,e_t+\vec k$ and complex amplitude $\vec F$ has
 
 $$
 \omega = c|\vec k|, \qquad \vec k\cdot\vec F = 0,
@@ -45,12 +45,12 @@ The dictionary that places the photon's data in the algebra is the following.
 |---|---|
 | The field | $\tilde{F}=i\sqrt{\epsilon}\,\vec N\in\mathbb{B}$, vanishing scalar part, mixed real/imaginary vector part |
 | Free equation | $\tilde{\nabla}\tilde{F}=0$ |
-| Potential | $\tilde{A}=i\,a'_t\,e_t+\vec A\in\mathbb{B}_{\Phi}$ |
+| Potential | $\tilde{A}_{\Phi}=i\,a'_t\,e_t+\vec A\in\mathbb{B}_{\Phi}$ |
 | Polarization directions | the four directions $e_t,\vec e_x,\vec e_y,\vec e_z$ of $\mathbb{B}_{\Phi}$, the time coefficient carrying $Q_t=i c r'_t$ |
 | Physical polarizations | the plane in $\mathrm{Vect}(\mathbb{B}_{\Phi})$ orthogonal to $\vec u_k$ |
 | Helicity states | the $\pm1$ eigenvectors $\varepsilon_{\mathrm{fop},\pm}$ of the $\mathbb{B}_{\Psi}$ element $i\vec u_k$ |
 | Helicity observable | $\lambda=\tfrac{i}{2}\mathrm{ad}_{\vec u_k}$, represented by the $\mathbb{B}_{\Psi}$ element $i\vec u_k$ |
-| Conserved energy–momentum | $\tilde{W}=\tfrac12\tilde{F}\tilde{F}^{*}=W+\tfrac{i}{c}\vec S\in\mathbb{B}_{\Psi}$, with $\vec S$ the **Poynting vector** |
+| Conserved energy–momentum | $\tilde{W}_{\Psi}=\tfrac12\tilde{F}\tilde{F}^{*}=W+\tfrac{i}{c}\vec S\in\mathbb{B}_{\Psi}$, with $\vec S$ the **Poynting vector** |
 | Photon number | $N_\gamma$ (transverse sum) — **not** in $\mathbb{B}$ |
 
 Two structural observations follow from the table. The field-strength-like datum $\tilde{F}$ is in neither sector: it has vanishing scalar part and a vector part that is part electric (imaginary) and part magnetic (real), which is why it is not an element of $\mathbb{B}_{\Phi}$ even though it is built from the potentials. The polarization *directions*, by contrast, are real spatial vectors and do sit in the material sector; this is the observation that the quantization article invited, and the next section makes it precise.
@@ -178,7 +178,7 @@ Two things are conspicuously absent, and both were established by the parent art
 
 **The ladder.** The photon creation and annihilation operators satisfy $[a_{\mathrm{fop},r},a_{\mathrm{fop},s}^{\dagger}]=\sigma_{\mathrm{met},r}\delta_{rs}(2\pi)^3\delta^{(3)}(\vec k-\vec k_2)$, a bosonic canonical relation. The Fock article proves that no pair $a_{\mathrm{fop}},a_{\mathrm{fop}}^{\dagger}\in\mathbb{B}$ satisfies $[a_{\mathrm{fop}},a_{\mathrm{fop}}^{\dagger}]=e_t$: a commutator has vanishing trace, while $\mathrm{Tr}(e_t)=2$, so the only relation of the form $[a_{\mathrm{fop}},a_{\mathrm{fop}}^{\dagger}]=c\,e_t$ that can hold in $\mathbb{B}$ has $c=0$. The photon's ladder algebra is therefore not native. It is not even a finite-dimensional object: the physical photon number is the transverse sum $N_\gamma=\sum_{r=1}^{2}\int a_{\mathrm{fop},r}^{\dagger}a_{\mathrm{fop},r}$, acting on the symmetric algebra of the transverse polarization module, which is infinite-dimensional. What the algebra supplies here is the module — the transverse polarization plane of the previous sections — and nothing algebraic on top of it. This is a sharper negative than the spin-$\tfrac12$ case, where the algebra carries the one-mode fermionic relation exactly.
 
-**The gauge.** The canonical-quantization article proves that the algebra gives no reason to prefer the Lorenz gauge $S=\mathrm{Sc}(\tilde{\nabla}^{\natural}\tilde{A})=0$ to any other. The reduction from the four polarization directions of $\mathbb{B}_{\Phi}$ to the two transverse physical directions is performed by a subsidiary condition, and the subsidiary condition is imported. So the framework's role is asymmetric: it *owns* the space in which the reduction happens (the material sector and its indefinite norm), and it *does not own* the principle by which the reduction is made. I regard this as the central unclosed gap of the article, and it is not closed by the polarization results above.
+**The gauge.** The canonical-quantization article proves that the algebra gives no reason to prefer the Lorenz gauge $S=\mathrm{Sc}(\tilde{\nabla}^{\natural}\tilde{A}_{\Phi})=0$ to any other. The reduction from the four polarization directions of $\mathbb{B}_{\Phi}$ to the two transverse physical directions is performed by a subsidiary condition, and the subsidiary condition is imported. So the framework's role is asymmetric: it *owns* the space in which the reduction happens (the material sector and its indefinite norm), and it *does not own* the principle by which the reduction is made. I regard this as the central unclosed gap of the article, and it is not closed by the polarization results above.
 
 A third imported ingredient is the operator-valued character of the field. The parent articles leave undecided whether the quantized field should be $\mathbb{B}$-valued or valued in a complex-vector module; the polarization results here are indifferent to that choice, because they concern the classical polarization vectors, which are the same either way.
 
@@ -199,7 +199,7 @@ A third imported ingredient is the operator-valued character of the field. The p
 | Masslessness $m=0$ | Represented | an input; the Proca alternative is equally writable |
 | Unit $\frac{m\,c}{k_m}$ | Represented | normalisation of the mode operators |
 | Photon as the one-particle state | Represented | identification of the quantum, not derived |
-| Photon is its own antiparticle | Represented | neutrality (reality of $\tilde{A}$); not derived |
+| Photon is its own antiparticle | Represented | neutrality (reality of $\tilde{A}_{\Phi}$); not derived |
 | Helicity states related by parity, not by $C$ | Represented | standard discrete symmetries, transcribed |
 | Interactions, radiative corrections | Outside | free-field treatment only |
 | Any empirical discriminator | Outside | none is visible at this level |
@@ -221,7 +221,7 @@ The gaps are of three kinds, and none is closed by better notation.
 
 **Represented quantities.** Masslessness is the sharpest. The photon is defined by $m=0$, and $m=0$ is what makes helicity Lorentz invariant and what removes the helicity-zero state; the framework represents $m=0$ and $m\neq0$ on the same footing and does not prefer either. The reason is structural rather than bookkeeping: the norm is homogeneous, so the cone is scale-invariant and the algebra carries no preferred scale with which to fix $m$. *The Null Four-Momentum: What the Cone Derives and What It Does Not* gives that argument, and gathers what the cone nevertheless derives — the massless shell as the zero-divisor cone, the frame-independence of $c$ from the multiplicativity of the norm, the absence of a rest frame for a null four-momentum, and the motion at $c$ for every momentum. The neutrality that makes the photon its own antiparticle is likewise an input. The unit $\frac{m\,c}{k_m}$ and the identification of the one-particle states as photons are inputs.
 
-**Representation-theoretic caveats.** The spin-one representation appears as the adjoint action on the imaginary quaternions, not as a module over $\mathbb{B}$; the consequent separation of the photon's state space (material-sector vector part) from its observable space ($\mathbb{B}_{\Psi}$) is a real structural feature, but whether the state/observable pairing of the adjoint representation can be given a probability interpretation analogous to $\mathrm{Tr}(\tilde{Ϛ}\tilde R_\Psi^{*})=2\langle\tilde{Ϛ},\tilde R_\Psi\rangle_{*} = 2\,\mathrm{Sc}(\tilde{Ϛ}\tilde R_\Psi^{*})$ is not settled here. The transverse polarization states are not idempotents, so the Born rule of the informational sector does not apply to them directly.
+**Representation-theoretic caveats.** The spin-one representation appears as the adjoint action on the imaginary quaternions, not as a module over $\mathbb{B}$; the consequent separation of the photon's state space (material-sector vector part) from its observable space ($\mathbb{B}_{\Psi}$) is a real structural feature, but whether the state/observable pairing of the adjoint representation can be given a probability interpretation analogous to $\mathrm{Tr}(\tilde{Ϛ}_{\Psi}\tilde R_\Psi^{*})=2\langle\tilde{Ϛ}_{\Psi},\tilde R_\Psi\rangle_{*} = 2\,\mathrm{Sc}(\tilde{Ϛ}_{\Psi}\tilde R_\Psi^{*})$ is not settled here. The transverse polarization states are not idempotents, so the Born rule of the informational sector does not apply to them directly.
 
 **Empirical gap.** As with every article in this series, none of the framework's statements distinguishes it from standard electrodynamics. The photon is represented, not explained.
 
@@ -255,14 +255,14 @@ What the framework does not supply is the ladder and the gauge. There is no boso
 | $\mathbb{B}_{H}$ | Real quaternion subspace |
 | $\mathsf{M}_2(\vec e_\mu)=-i\sigma_\mu$, $\mathsf{M}_2(i\vec e_\mu)=\sigma_\mu$ | Isomorphism with $M_2(\mathbb{C})$ |
 | $\tilde{\nabla}=e_t\partial/\partial R_t+\sum_\mu\,\vec e_\mu\partial/\partial R_\mu$ | Biquaternionic gradient |
-| $\tilde{A}=i\,a'_t\,e_t+\vec A$ | Potential biquaternion, in $\mathbb{B}_{\Phi}$ |
+| $\tilde{A}_{\Phi}=i\,a'_t\,e_t+\vec A$ | Potential biquaternion, in $\mathbb{B}_{\Phi}$ |
 | $\tilde{F}=i\sqrt{\epsilon}\,\vec E-\sqrt{\mu}\,\vec H=i\sqrt{\epsilon}\,\vec N$ | Field-strength biquaternion (vanishing scalar part) |
 | $\vec N=\vec E+ic\vec B$, $\vec B=\mu\vec H$ | Riemann–Silberstein vector; $\tilde{F}=i\sqrt{\epsilon}\,\vec N$ |
 | $\vec u_k$ | Unit propagation direction (pure real quaternion) |
 | $\varepsilon_{\mathrm{fop},1},\varepsilon_{\mathrm{fop},2}$; $\varepsilon_{\mathrm{fop},\pm}$ | Linear and circular polarization vectors |
 | $\sigma_{\mathrm{met},0}=-1$, $\sigma_{\mathrm{met},k}=+1$ | Indefinite form of Gupta–Bleuler; the biquaternion norm of $\mathbb{B}_{\Phi}$, its one minus the square of the $i$ in $Q_t=i c r'_t$ |
 | $\lambda=\vec u_k\cdot\vec S=\tfrac{i}{2}\mathrm{ad}_{\vec u_k}$ | Helicity operator; representative $i\vec u_k\in\mathbb{B}_{\Psi}$ |
-| $\vec S$ (in $\tilde W=W+\tfrac{i}{c}\vec S$) | Poynting vector (Maxwell article) |
+| $\vec S$ (in $\tilde W_{\Psi}=W+\tfrac{i}{c}\vec S$) | Poynting vector (Maxwell article) |
 | $\vec S$ (in $\lambda=\vec u_k\cdot\vec S$) | Spin vector (angular-momentum article) |
 | $g_k=-\tfrac12 \vec e_k$ | Rotation generators in the angular-momentum article; this article writes the same generators as $\vec e_k$ |
 | $\epsilon^{(r)}_\mu$, $a_{\mathrm{fop},r},a_{\mathrm{fop},r}^{\dagger}$ | Polarization vectors and mode operators (imported) |

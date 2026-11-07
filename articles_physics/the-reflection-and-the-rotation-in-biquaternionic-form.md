@@ -26,7 +26,7 @@ A cell of a matrix algebra is at once a point and an operator, and the quaternio
 $$
 Q_2 = \tilde U_{\mathrm{lor}}\,Q\,\tilde U_{\mathrm{lor}}{}^{*},
 $$
-which is the Lorentz transformation of the material element $Q\in\mathbb{B}_{\Phi}$. For a pure boost the rotor is Hermitian, $\tilde U_{\mathrm b}^{*}=\tilde U_{\mathrm b}$, and the action collapses to $Q_2=\tilde U_{\mathrm b}Q\tilde U_{\mathrm b}$; a general element of $SL(2,\mathbb{C})$ needs the general form. Both facts are those of *The Lorentz Transformation as a Biquaternionic Rotation*.
+which is the Lorentz transformation of the material element $Q\in\mathbb{B}_{\Phi}$. For a pure boost the rotor is Hermitian, $\tilde U_{\Psi,\mathrm b}^{*}=\tilde U_{\Psi,\mathrm b}$, and the action collapses to $Q_2=\tilde U_{\Psi,\mathrm b}Q\tilde U_{\Psi,\mathrm b}$; a general element of $SL(2,\mathbb{C})$ needs the general form. Both facts are those of *The Lorentz Transformation as a Biquaternionic Rotation*.
 
 **The generators.** A generator cell is a vector and an operator at once: one of the four legs of spacetime, read as a cell. The four are
 $$
@@ -124,7 +124,7 @@ Two subfamilies are worth separating, because the series uses them differently:
 | subfamily | condition | biquaternion form | character |
 |---|---|---|---|
 | spatial rotations | $\tilde u_{\mathrm r}$ a real quaternion | $\cos\frac{\theta}{2} + \sin\frac{\theta}{2}\vec u_{jk}$ | the group $SU(2)$ |
-| pure boosts | $\tilde U_{\mathrm b}$ Hermitian, $\tilde U_{\mathrm b}^{*} = \tilde U_{\mathrm b}$ | $\cosh\frac{\theta_{\mathrm{rpd}}}{2} + i\sinh\frac{\theta_{\mathrm{rpd}}}{2}\vec u$ | a symmetric submanifold, not a group |
+| pure boosts | $\tilde U_{\Psi,\mathrm b}$ Hermitian, $\tilde U_{\Psi,\mathrm b}^{*} = \tilde U_{\Psi,\mathrm b}$ | $\cosh\frac{\theta_{\mathrm{rpd}}}{2} + i\sinh\frac{\theta_{\mathrm{rpd}}}{2}\vec u$ | a symmetric submanifold, not a group |
 
 The boosts do not close under multiplication — the product of two non-collinear boosts is a boost and a Thomas–Wigner rotation — so they form a submanifold of $SL(2,\mathbb{C})$ rather than a subgroup. The two families are the exponentials of the two sector algebras: the boosts of elements of $\mathbb{B}_{\Psi}$, namely the timelike bivectors $i\vec u$, and the spatial rotations of elements of $\mathbb{B}_{H}$, namely the spacelike bivectors $\vec u_{jk}$.
 
@@ -187,7 +187,7 @@ The rule the table obeys is geometric: the transformation is simple exactly when
 
 The factorisations are explicit. The image of a boost is the frame cell times a unit vector,
 $$
-\text{image of }\tilde U_{\mathrm b} = iR_{\mathrm{axf},\vec e_x}\,v ,
+\text{image of }\tilde U_{\Psi,\mathrm b} = iR_{\mathrm{axf},\vec e_x}\,v ,
 $$
 where $v$ is the unit vector cell whose coordinates in the generator basis $(iR_{\mathrm{axf},\vec e_x},iL_{\mathrm{axf},\vec e_x}R_{\mathrm{axf},\vec e_y},iL_{\mathrm{axf},\vec e_y}R_{\mathrm{axf},\vec e_y},iL_{\mathrm{axf},\vec e_z}R_{\mathrm{axf},\vec e_y})$ are
 $$

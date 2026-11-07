@@ -2,10 +2,10 @@
 
 ## Introduction
 
-For a two-state system the biquaternion framework gives a complete geometric picture of the state space: the states are the positive elements of the Hermitian subspace $\mathbb{B}_{\Psi}$ normalised by $\langle\tilde{Ϛ},e_t\rangle_{*}=\tfrac12$ (trace one in the $2\times2$ image), and that set is the intersection of the hyperplane $\{\mathrm{Sc}=\tfrac12\}$ with the future light cone of the biquaternion norm. The companion article *The Bloch Ball as the Normalised Slice of the Future Light Cone* establishes this as an exact statement: with
+For a two-state system the biquaternion framework gives a complete geometric picture of the state space: the states are the positive elements of the Hermitian subspace $\mathbb{B}_{\Psi}$ normalised by $\langle\tilde{Ϛ}_{\Psi},e_t\rangle_{*}=\tfrac12$ (trace one in the $2\times2$ image), and that set is the intersection of the hyperplane $\{\mathrm{Sc}=\tfrac12\}$ with the future light cone of the biquaternion norm. The companion article *The Bloch Ball as the Normalised Slice of the Future Light Cone* establishes this as an exact statement: with
 
 $$
-\tilde{Ϛ}=\tfrac{1}{2}\left(e_t+i\vec r\right),\qquad |\vec r|\le 1,
+\tilde{Ϛ}_{\Psi}=\tfrac{1}{2}\left(e_t+i\vec r\right),\qquad |\vec r|\le 1,
 $$
 
 the state space is the closed unit ball, purity is its boundary, and the pure states are at once the idempotents, the extreme rays of the positive cone, and the zero divisors at trace one. The Bloch ball is a canonical object of the algebra because the algebra supplies the cone.
@@ -29,10 +29,10 @@ $$
 of signature $(1,3)$, and the positive elements of $\mathbb{B}_{\Psi}$ are exactly the elements of the closed future cone, $\langle\tilde R_\Psi\rangle_{\natural}\ge0$ with $c r_t\ge0$. The normalisation hyperplane is $\mathrm{Sc}(\tilde R_\Psi)=\tfrac12$ — the trace-one hyperplane in the $2\times2$ image — and the states are the intersection of that hyperplane with the cone,
 
 $$
-\tilde{Ϛ}=\tfrac{1}{2}\left(e_t+i\vec r\right),\qquad \vec r=2\vec r_\Psi,\qquad |\vec r|^2\le1 ,
+\tilde{Ϛ}_{\Psi}=\tfrac{1}{2}\left(e_t+i\vec r\right),\qquad \vec r=2\vec r_\Psi,\qquad |\vec r|^2\le1 ,
 $$
 
-with eigenvalues $\lambda_\pm=\tfrac12(1\pm|\vec r|)$. Purity is the boundary condition $\langle\tilde{Ϛ}\rangle_{\natural}=\lambda_+\lambda_-=0$, equivalently $|\vec r|=1$, equivalently the idempotence of $\tilde{Ϛ}$. Three structures coincide on the boundary: the extreme rays of the cone, the rank-one projections, and the zero divisors of $\mathbb{B}$ at trace one.
+with eigenvalues $\lambda_\pm=\tfrac12(1\pm|\vec r|)$. Purity is the boundary condition $\langle\tilde{Ϛ}_{\Psi}\rangle_{\natural}=\lambda_+\lambda_-=0$, equivalently $|\vec r|=1$, equivalently the idempotence of $\tilde{Ϛ}_{\Psi}$. Three structures coincide on the boundary: the extreme rays of the cone, the rank-one projections, and the zero divisors of $\mathbb{B}$ at trace one.
 
 Three features of this account are the ones that must be examined for spin $1$:
 
@@ -49,10 +49,10 @@ For spin $1$ the first fails because there is no relevant four-dimensional cone,
 The spin-$1$ operators are constructed in the companion problem of the Wigner–Eckart theorem, by the adjoint action. On the traceless part $W=\operatorname{span}_\mathbb{C}\{i\vec e_x,i\vec e_y,i\vec e_z\}$ of $\mathbb{B}$,
 
 $$
-\mathrm{ad}_{\tilde S_k}(ie_l)=[\tilde S_k,ie_l]=\frac{m\,c\,i\,\epsilon_{klm}\,ie_{m}}{k_m},
+\mathrm{ad}_{\tilde S_{\Psi,k}}(ie_l)=[\tilde S_{\Psi,k},ie_l]=\frac{m\,c\,i\,\epsilon_{klm}\,ie_{m}}{k_m},
 $$
 
-so that $\tilde S_{\mathrm{adj},k}=\mathrm{ad}_{\tilde S_k}$ is an angular momentum in the three-dimensional representation. In the matrix realisation, with $\mathsf{M}_2(e_t)=I_2$ and $\mathsf{M}_2(\vec e_k)=-i\sigma_k$, this is a triple of $3\times3$ matrices acting on $W$ and satisfying
+so that $\tilde S_{\Psi,\mathrm{adj},k}=\mathrm{ad}_{\tilde S_{\Psi,k}}$ is an angular momentum in the three-dimensional representation. In the matrix realisation, with $\mathsf{M}_2(e_t)=I_2$ and $\mathsf{M}_2(\vec e_k)=-i\sigma_k$, this is a triple of $3\times3$ matrices acting on $W$ and satisfying
 
 $$
 [F_i,F_j]=\frac{m\,c\,i\,\epsilon_{ijk}\,F_{k}}{k_m},\qquad  F_1^2+F_2^2+F_3^2=\frac{2\,m^{2}\,c^{2}\,I_{3}}{k_m^{2}},
@@ -63,7 +63,7 @@ with eigenvalues of each $F_k$ equal to $\frac{m\,c}{k_m}$ times $\{+1,0,-1\}$.
 A second and equivalent construction uses two fundamental factors,
 
 $$
-\tilde F_k=\tilde S_k^{(1)}+\tilde S_k^{(2)}=\frac{m\,c}{2\,k_m}\left(i\vec e_k\otimes e_t+e_t\otimes i\vec e_k\right),
+\tilde F_k=\tilde S_{\Psi,k}^{(1)}+\tilde S_{\Psi,k}^{(2)}=\frac{m\,c}{2\,k_m}\left(i\vec e_k\otimes e_t+e_t\otimes i\vec e_k\right),
 $$
 
 which is the total spin operator of the two-spin problem. On the three-dimensional symmetric subspace — the range of $\tilde\Pi_{\mathrm{sym}}=\tfrac14(3e_t\otimes e_t-\sum_k\vec e_k\otimes \vec e_k)$ — it acts irreducibly as the spin-$1$ operators above, and on the one-dimensional antisymmetric subspace it acts as zero. The two constructions agree; the first exhibits the spin-$1$ operators as the algebra's own inner derivations, the second as a composite of two fundamental systems.
@@ -73,10 +73,10 @@ which is the total spin operator of the two-spin problem. On the three-dimension
 A state of spin $1$ is a positive, unit-trace element of the symmetric sector. In the two-qubit language,
 
 $$
-\tilde{Ϛ}\ge0,\qquad \mathrm{Tr}_{2Q}(\tilde{Ϛ})=1,\qquad \tilde\Pi_{\mathrm{asym}}\,\tilde{Ϛ}\,\tilde\Pi_{\mathrm{asym}}=0 ,
+\tilde{Ϛ}_{\Psi}\ge0,\qquad \mathrm{Tr}_{2Q}(\tilde{Ϛ}_{\Psi})=1,\qquad \tilde\Pi_{\mathrm{asym}}\,\tilde{Ϛ}_{\Psi}\,\tilde\Pi_{\mathrm{asym}}=0 ,
 $$
 
-where $\mathrm{Tr}_{2Q}$ is the trace on $\mathbb{B}\otimes\mathbb{B}$ and $\tilde\Pi_{\mathrm{asym}}=\tfrac14(e_t\otimes e_t+\sum_k\vec e_k\otimes \vec e_k)$ is the singlet idempotent. The last condition says that the support of $\tilde{Ϛ}$ lies in the symmetric subspace; the spin-$1$ state space is therefore **the face of the two-qubit state space orthogonal to the antisymmetric idempotent**. This is the precise sense in which spin-$1$ states are two-qubit states with no singlet component.
+where $\mathrm{Tr}_{2Q}$ is the trace on $\mathbb{B}\otimes\mathbb{B}$ and $\tilde\Pi_{\mathrm{asym}}=\tfrac14(e_t\otimes e_t+\sum_k\vec e_k\otimes \vec e_k)$ is the singlet idempotent. The last condition says that the support of $\tilde{Ϛ}_{\Psi}$ lies in the symmetric subspace; the spin-$1$ state space is therefore **the face of the two-qubit state space orthogonal to the antisymmetric idempotent**. This is the precise sense in which spin-$1$ states are two-qubit states with no singlet component.
 
 For the geometry it is convenient to work in the three-dimensional matrix realisation that $\mathsf{M}_2\otimes\mathsf{M}_2$ provides on the symmetric sector. There the states are the $3\times3$ Hermitian, positive, unit-trace matrices. The framework's Born rule reduces on the sector to $\mathrm{tr}(\rho P)$ for the projector $P$ of a pure state, and observables are the Hermitian $3\times3$ matrices obtained from the symmetric elements of $\mathbb{B}\otimes\mathbb{B}$.
 
@@ -138,7 +138,7 @@ $$
 
 The state space is therefore the intersection of the eight-dimensional unit ball with the region $\det\rho\ge0$, whose boundary is the cubic hypersurface $\det\rho=0$. A numerical scan confirms the structure: along the $\lambda_8$ axis the boundary is at $|\vec b|=\tfrac12$ exactly, and the states with $|\vec b|>1$ are excluded everywhere.
 
-The cubic is not cosmetic. For the qubit the determinant was a quadratic form, $\langle\tilde{Ϛ}\rangle_{\natural}=\lambda_+\lambda_-$, and positivity was the single inequality of a Lorentzian cone. For the qutrit the determinant is a cubic and positivity is the conjunction of a quadratic and a cubic inequality; no single quadratic form has the state space as its positivity region. This is the precise sense in which the cone picture does not generalise.
+The cubic is not cosmetic. For the qubit the determinant was a quadratic form, $\langle\tilde{Ϛ}_{\Psi}\rangle_{\natural}=\lambda_+\lambda_-$, and positivity was the single inequality of a Lorentzian cone. For the qutrit the determinant is a cubic and positivity is the conjunction of a quadratic and a cubic inequality; no single quadratic form has the state space as its positivity region. This is the precise sense in which the cone picture does not generalise.
 
 ### The spin directions and the quadrupole directions
 
@@ -274,8 +274,8 @@ The generalized Bloch ball for spin $1$ is the largest ball of states inside the
 
 The article established the following.
 
-- **Spin-one operators.** The adjoint action on the traceless part of $\mathbb{B}$, $\mathrm{ad}_{\tilde S_k}(ie_l)=\frac{m\,c\,i\,\epsilon_{klm}\,ie_{m}}{k_m}$, and the symmetric combination $\tilde F_k=\tilde S_k^{(1)}+\tilde S_k^{(2)}$ of two fundamental factors give the same spin-$1$ operators, with $[F_i,F_j]=\frac{m\,c\,i\,\epsilon_{ijk}\,F_{k}}{k_m}$ and $\sum_k F_k^2=\frac{2\,m^{2}\,c^{2}\,I_{3}}{k_m^{2}}$.
-- **The state space.** Spin-$1$ states are the positive unit-trace elements of the symmetric sector; in the two-qubit language they are the states whose support lies in the symmetric subspace, $\tilde\Pi_{\mathrm{asym}}\tilde{Ϛ}\tilde\Pi_{\mathrm{asym}}=0$, that is, the face of the two-qubit state space orthogonal to the antisymmetric idempotent.
+- **Spin-one operators.** The adjoint action on the traceless part of $\mathbb{B}$, $\mathrm{ad}_{\tilde S_{\Psi,k}}(ie_l)=\frac{m\,c\,i\,\epsilon_{klm}\,ie_{m}}{k_m}$, and the symmetric combination $\tilde F_k=\tilde S_{\Psi,k}^{(1)}+\tilde S_{\Psi,k}^{(2)}$ of two fundamental factors give the same spin-$1$ operators, with $[F_i,F_j]=\frac{m\,c\,i\,\epsilon_{ijk}\,F_{k}}{k_m}$ and $\sum_k F_k^2=\frac{2\,m^{2}\,c^{2}\,I_{3}}{k_m^{2}}$.
+- **The state space.** Spin-$1$ states are the positive unit-trace elements of the symmetric sector; in the two-qubit language they are the states whose support lies in the symmetric subspace, $\tilde\Pi_{\mathrm{asym}}\tilde{Ϛ}_{\Psi}\tilde\Pi_{\mathrm{asym}}=0$, that is, the face of the two-qubit state space orthogonal to the antisymmetric idempotent.
 - **Bloch coordinates.** $\rho=\tfrac13 I_3+\tfrac{1}{\sqrt3}b_a\lambda_a$ with a real eight-vector $\vec b$ normalised so that the pure states have $|\vec b|=1$; the spectrum is determined by $\mathrm{Tr}(\rho^2)=\tfrac13(1+2|\vec b|^2)$ and $\det\rho$ through the characteristic cubic.
 - **The positivity condition.** $\rho$ is a state if and only if $|\vec b|\le1$ and $\det\rho\ge0$; the unit ball is necessary, the cubic inequality is what cuts it down, and positivity is no longer a single quadratic condition.
 - **The spin directions.** $F_1=\tfrac{1}{\sqrt2}(\lambda_1+\lambda_6)$, $F_2=\tfrac{1}{\sqrt2}(\lambda_2+\lambda_7)$, $F_3=\tfrac12\lambda_3+\tfrac{\sqrt3}{2}\lambda_8$, so the spin vector mixes Bloch coordinates: $s_1=\sqrt{2/3}(b_1+b_6)$, $s_2=\sqrt{2/3}(b_2+b_7)$, $s_3=\tfrac{1}{\sqrt3}b_3+b_8$.
@@ -291,10 +291,10 @@ The article established the following.
 | $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ | Biquaternion algebra |
 | $\mathbb{B}_{\Psi}$ | Hermitian subspace; positive cone $=$ future cone of the biquaternion norm |
 | $\langle\tilde R_\Psi\rangle_{\natural}=c^2 r_t^2-\lvert\vec r_\Psi\rvert^2$ | Biquaternion norm, signature $(1,3)$ |
-| $\tilde{Ϛ}=\tfrac12(e_t+i\vec r)$ | Qubit state, Bloch ball $\lvert\vec r\rvert\le1$ |
+| $\tilde{Ϛ}_{\Psi}=\tfrac12(e_t+i\vec r)$ | Qubit state, Bloch ball $\lvert\vec r\rvert\le1$ |
 | $\tilde\Pi_{\mathrm{sym}},\tilde\Pi_{\mathrm{asym}}$ | Triplet and singlet idempotents of $\mathbb{B}\otimes\mathbb{B}$ |
 | $F_k$ | Spin-$1$ operators, $[F_i,F_j]=\frac{m\,c\,i\,\epsilon_{ijk}\,F_{k}}{k_m}$ |
-| $\mathrm{ad}_{\tilde S_k}$ | Adjoint action on the traceless part $W$ |
+| $\mathrm{ad}_{\tilde S_{\Psi,k}}$ | Adjoint action on the traceless part $W$ |
 | $\lambda_a$, $a=1,\dots,8$ | Gell-Mann basis, $\mathrm{Tr}(\lambda_a\lambda_b)=2\delta_{ab}$ |
 | $\rho=\tfrac13I+\tfrac{1}{\sqrt3}b_a\lambda_a$ | Qutrit state, generalized Bloch vector $\vec b$ |
 | $\mathrm{Tr}(\rho^2)=\tfrac13(1+2\lvert\vec b\rvert^2)$ | Purity invariant |

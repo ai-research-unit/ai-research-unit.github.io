@@ -74,18 +74,18 @@ $$
 The root set of a central value $\lambda e_t$ is the level set $\langle\tilde{Ζ}\rangle_{\natural}=\lambda$. On the material sector $\mathbb{B}_{\Phi}$, write the four-momentum as
 
 $$
-\tilde P=i\frac{E}{c}e_t+\vec p .
+\tilde P_{\Phi}=i\frac{E}{c}e_t+\vec p .
 $$
 
 Its norm is
 
 $$
-\langle\tilde P\rangle_{\natural}
+\langle\tilde P_{\Phi}\rangle_{\natural}
 =\left(\frac{iE}{c}\right)^2+(\vec p,\vec p)
 =-\frac{E^2}{c^2}+(\vec p,\vec p),
 $$
 
-and the level set $\langle\tilde P\rangle_{\natural}=-m^2c^2$ is the mass shell,
+and the level set $\langle\tilde P_{\Phi}\rangle_{\natural}=-m^2c^2$ is the mass shell,
 
 $$
 E^2=(\vec p,\vec p)c^2+m^2c^4 .
@@ -107,7 +107,7 @@ a positive semidefinite element of $\mathbb{B}_{\Psi}$, with non-negative eigenv
 
 ## The Sign and the Causal Class
 
-On the material slice the sign of a real central value is the causal class of its natural level set. The value $-m^2c^2$ is negative and its level set is the timelike region; the value $0$ is null and its level set is the cone; the value $+m^2c^2$ is positive and its level set is the spacelike region. The magnitude sets the size of the shell: if the reference shell is $\langle\tilde P\rangle_{\natural}=-1$, the shell of mass $m$ is its image under multiplication by $mc$, because the norm is quadratic in the scale.
+On the material slice the sign of a real central value is the causal class of its natural level set. The value $-m^2c^2$ is negative and its level set is the timelike region; the value $0$ is null and its level set is the cone; the value $+m^2c^2$ is positive and its level set is the spacelike region. The magnitude sets the size of the shell: if the reference shell is $\langle\tilde P_{\Phi}\rangle_{\natural}=-1$, the shell of mass $m$ is its image under multiplication by $mc$, because the norm is quadratic in the scale.
 
 Invertibility divides the same way. A root of a nonzero central value is a unit, so a tachyon is invertible; among the central values, only $0$ has non-invertible roots. The cone is the wall of the units, and the mass shell never touches it for $m\neq0$.
 
@@ -118,7 +118,7 @@ The sign is not decoration. A mass term built with the wrong conjugation uses th
 The natural root set is the level set of the norm; the Hamilton pairing names the invariant that the level set carries. For a four-momentum,
 
 $$
-\boxed{\;\tilde P=\Rho e^{\vec U\Theta}\;},
+\boxed{\;\tilde P_{\Phi}=\Rho e^{\vec U\Theta}\;},
 $$
 
 with the data of *Norm and Pairing Conventions*, §*The Four-Momentum*: $\Rho=imc$, $\vec U=\vec u_p$ and $\Theta=-i\tilde{Ξ}_{\mathrm{sp}}$, where $\vec u_p=\vec p/\lvert\vec p\rvert$ for $\vec p\neq0$; at rest the direction drops out, because $\sinh\theta_{\mathrm{rpd}}=0$ there. Since $\vec u_p^2=-e_t$ while $(\vec u_p,\vec u_p)=1$, the exponential is trigonometric,
@@ -130,7 +130,7 @@ $$
 and the imaginary angle $\Theta=-i\tilde{Ξ}_{\mathrm{sp}}$ turns it into $\cosh\theta_{\mathrm{rpd}}-i\vec u_p\sinh\theta_{\mathrm{rpd}}$. Multiplying by $\Rho=imc$ and reducing $i^2=-1$,
 
 $$
-\tilde P=imc\cosh\theta_{\mathrm{rpd}}+mc\,\vec u_p\sinh\theta_{\mathrm{rpd}} .
+\tilde P_{\Phi}=imc\cosh\theta_{\mathrm{rpd}}+mc\,\vec u_p\sinh\theta_{\mathrm{rpd}} .
 $$
 
 The mass is $m=\lvert\Rho\rvert/c$. The root set of the value $-m^{2}c^{2}$ is the union of the two sheets of the shell, the two orbits of the restricted Lorentz group: the orbit of $\Rho e^{\vec U\Theta}$ and the orbit of its central negative. Every point of the shell has the same $\lvert\Rho\rvert$ and its own pair $(\vec U,\Theta)$: the same modulus, a different direction and rapidity.
@@ -163,7 +163,7 @@ The degenerate case splits. At $B=0$ the eigenvalues coincide at $Q_t$, and the 
 The two-point function of a scalar of mass $m$ has the momentum-space denominator
 
 $$
-\langle\tilde P\rangle_{\natural}+m^2c^2 ,
+\langle\tilde P_{\Phi}\rangle_{\natural}+m^2c^2 ,
 $$
 
 up to a sign and a normalisation. The propagator is singular where the denominator vanishes, and that locus is the mass shell. The root set of the natural band and the pole set of the propagator are the same set, seen once as an algebraic level set and once as an analytic singularity.
@@ -180,19 +180,19 @@ and the deformation is a displacement into the complex plane. The algebra suppli
 
 ## The Mass Can Be a Field
 
-The scalar mass can be promoted to a biquaternion field. In the Einstein–Mayer promotion of the Lanczos system the mass $m$ becomes $\tilde E$, and the second-order equations for the two field components $\tilde Q_1,\tilde Q_2$ become eigenvalue equations,
+The scalar mass can be promoted to a biquaternion field. In the Einstein–Mayer promotion of the Lanczos system the mass $m$ becomes $\tilde E_{\Psi}$, and the second-order equations for the two field components $\tilde Q_1,\tilde Q_2$ become eigenvalue equations,
 
 $$
-\Box\tilde Q_1=\tilde Q_1\bigl(\tilde E\tilde E^{*}\bigr),
+\Box\tilde Q_1=\tilde Q_1\bigl(\tilde E_{\Psi}\tilde E_{\Psi}^{*}\bigr),
 \qquad
-\Box\tilde Q_2=\tilde Q_2\bigl(\tilde E^{*}\tilde E\bigr).
+\Box\tilde Q_2=\tilde Q_2\bigl(\tilde E_{\Psi}^{*}\tilde E_{\Psi}\bigr).
 $$
 
-The two mass-squareds of the doublet are the eigenvalues of $\tilde E\tilde E^{*}$, equivalently of $\tilde E^{*}\tilde E$ for the nonzero spectrum. The mass is no longer a number multiplying the field; it is the element $\tilde E\tilde E^{*}$ multiplying the field from the right.
+The two mass-squareds of the doublet are the eigenvalues of $\tilde E_{\Psi}\tilde E_{\Psi}^{*}$, equivalently of $\tilde E_{\Psi}^{*}\tilde E_{\Psi}$ for the nonzero spectrum. The mass is no longer a number multiplying the field; it is the element $\tilde E_{\Psi}\tilde E_{\Psi}^{*}$ multiplying the field from the right.
 
-Three cases show the range the corpus uses. A real scalar $\tilde E=s e_t$ gives $\tilde E\tilde E^{*}=s^2e_t$, a degenerate doublet of mass $|s|$. A Hermitian mass field of unit square, $\tilde E=\tfrac12(e_t+i\vec u_n)$ with $\vec u_n$ a real vector of unit square, gives $\tilde E\tilde E^{*}=\tilde E$, with eigenvalues $1$ and $0$: one massive mode and one massless mode. A singular mass field leaves a massless mode whatever else it does: the two mass-squareds multiply to $\bigl|\langle\tilde E\rangle_{\natural}\bigr|^2$, because the natural norm is multiplicative and $\langle\tilde E^{*}\rangle_{\natural}=\overline{\langle\tilde E\rangle_{\natural}}$, and for the Hermitian element $\tilde E\tilde E^{*}$ that product is the product of its two eigenvalues; a vanishing norm therefore forces a zero eigenvalue. The example $\tilde E=\vec e_x+i\vec e_y$ is singular, with mass-squareds $4$ and $0$. A general mass field gives two distinct nonzero mass-squareds; the three cases above do not.
+Three cases show the range the corpus uses. A real scalar $\tilde E_{\Psi}=s e_t$ gives $\tilde E_{\Psi}\tilde E_{\Psi}^{*}=s^2e_t$, a degenerate doublet of mass $|s|$. A Hermitian mass field of unit square, $\tilde E_{\Psi}=\tfrac12(e_t+i\vec u_n)$ with $\vec u_n$ a real vector of unit square, gives $\tilde E_{\Psi}\tilde E_{\Psi}^{*}=\tilde E_{\Psi}$, with eigenvalues $1$ and $0$: one massive mode and one massless mode. A singular mass field leaves a massless mode whatever else it does: the two mass-squareds multiply to $\bigl|\langle\tilde E_{\Psi}\rangle_{\natural}\bigr|^2$, because the natural norm is multiplicative and $\langle\tilde E_{\Psi}^{*}\rangle_{\natural}=\overline{\langle\tilde E_{\Psi}\rangle_{\natural}}$, and for the Hermitian element $\tilde E_{\Psi}\tilde E_{\Psi}^{*}$ that product is the product of its two eigenvalues; a vanishing norm therefore forces a zero eigenvalue. The example $\tilde E_{\Psi}=\vec e_x+i\vec e_y$ is singular, with mass-squareds $4$ and $0$. A general mass field gives two distinct nonzero mass-squareds; the three cases above do not.
 
-**The boundary.** The framework derives no numerical mass. The algebra is scale-free, and the mass field is put in by hand in the Einstein–Mayer system; the Petiau system closes it by giving the mass field its own equation, at the cost of nonlinearity. The construction shows that the algebra can carry a mass that is a field with its own equation, and that the mass-squareds of a doublet are the eigenvalues of the element $\tilde E\tilde E^{*}$. It does not produce the electron mass or any other.
+**The boundary.** The framework derives no numerical mass. The algebra is scale-free, and the mass field is put in by hand in the Einstein–Mayer system; the Petiau system closes it by giving the mass field its own equation, at the cost of nonlinearity. The construction shows that the algebra can carry a mass that is a field with its own equation, and that the mass-squareds of a doublet are the eigenvalues of the element $\tilde E_{\Psi}\tilde E_{\Psi}^{*}$. It does not produce the electron mass or any other.
 
 ## The Mass Can Be Generated by a Condensate
 
@@ -203,7 +203,7 @@ $$
 \tilde\nabla^{\natural}\tilde{Ξ}_{\mathrm{sp},L}=\frac{k_m}{\tilde{Ξ}_{\mathrm{sp},R}},
 $$
 
-with $\tilde\nabla$ the biquaternionic gradient. Every derivative acts by left multiplication, so no right multiplication is among its terms and no chirality operator can appear. On a plane wave $\tilde\nabla$ acts as left multiplication by $\frac{k_m\,i\,\tilde{P}\,p}{m\,c}$, so the mass shell above is the level set of $\langle\tilde P\rangle_{\natural}$. Here $\frac{m\,c}{k_m\,p}$ is the momentum length. Here $\hbar/(mc)$ is the mass length.
+with $\tilde\nabla$ the biquaternionic gradient. Every derivative acts by left multiplication, so no right multiplication is among its terms and no chirality operator can appear. On a plane wave $\tilde\nabla$ acts as left multiplication by $\frac{k_m\,i\,\tilde{P}_{\Phi}\,p}{m\,c}$, so the mass shell above is the level set of $\langle\tilde P_{\Phi}\rangle_{\natural}$. Here $\frac{m\,c}{k_m\,p}$ is the momentum length. Here $\hbar/(mc)$ is the mass length.
 
 The **pair equation** is the same dynamics written once on the pair of fields,
 
@@ -312,12 +312,12 @@ The mass shell is a statement of the gradient equation; the chirality, the axial
 | $B$ | the square root of the vector-part square, $B^2=(\vec Q,\vec Q)$ |
 | $*,\natural$ | the Hermitian and natural conjugations of *Algebra and Element Conventions* |
 | $\langle\tilde Q\rangle_{\natural}$ | the natural norm of *Norm and Pairing Conventions* |
-| $\tilde P$ | a material four-momentum |
+| $\tilde P_{\Phi}$ | a material four-momentum |
 | $(\vec v,\vec v)$ | the vector-part square $v_x^2+v_y^2+v_z^2$; the element $\vec v$ squares to $-(\vec v,\vec v)e_t$ |
 | $\vec u_p$ | the direction of $\vec p$, $\vec u_p=\vec p/\lvert\vec p\rvert$ |
 | $\mathbb{B}_{\Phi}$ | the material sector, the anti-Hermitian subspace |
 | $\mathbb{B}_{\Psi}$ | the informational sector, the Hermitian subspace |
-| $\tilde E$ | the mass field, a biquaternion |
+| $\tilde E_{\Psi}$ | the mass field, a biquaternion |
 | $\tilde\nabla$ | the biquaternionic gradient, with d'Alembertian $\Box$, of *Operator and Calculus Conventions* |
 | $\tilde{Ξ}_{\mathrm{sp},L,R}$ | the two chiral components of the gradient equation |
 | $\tilde{Ξ}_{\mathrm{sp}}$ | the Dirac field; its bilinear is $\tilde{Ξ}_{\mathrm{sp}}^*i\tilde{Ξ}_{\mathrm{sp}}\vec e_x$ |

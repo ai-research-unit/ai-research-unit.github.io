@@ -187,17 +187,17 @@ $$
 is even. An even operator in the finite Fock space is an element of the observable algebra, and its biquaternion transcription is a **state** in the framework's sense: the density matrices of the two-dimensional one-mode space are the two-by-two Hermitian matrices, a real four-dimensional space, and $\mathbb{B}_{\Psi}$ is four-real-dimensional, so the identification is by dimension and by the trace,
 
 $$
-\tilde{Ϛ}_\varkappa\in\mathbb{B}_{\Psi} ,
+\tilde{Ϛ}_{\Psi,\varkappa}\in\mathbb{B}_{\Psi} ,
 \qquad
-\tilde{Ϛ}_\varkappa=\tilde{Ϛ}_\varkappa^{*} ,
+\tilde{Ϛ}_{\Psi,\varkappa}=\tilde{Ϛ}_{\Psi,\varkappa}^{*} ,
 \qquad
-\mathrm{Tr}\,\tilde{Ϛ}_\varkappa=1 ,
+\mathrm{Tr}\,\tilde{Ϛ}_{\Psi,\varkappa}=1 ,
 $$
 
 where the trace is the algebraic trace $\mathrm{Tr}=2\,\mathrm{Sc}$. The operator $|\varkappa\rangle_{*}\langle\varkappa|$ is a rank-one projector, but it is not a pure state of the *algebra* unless the identification carried the operator product to the biquaternion product, which a linear identification of the two spaces does not do; what the framework uses is the state's trace and its pairing, not its idempotence. The expectation of an observable is the normalised Hermitian form, read through the trace
 
 $$
-\langle O\rangle_\varkappa=\mathrm{Tr}(\tilde{Ϛ}_\varkappa O^{*})=2\,\mathrm{Sc}(\tilde{Ϛ}_\varkappa O) .
+\langle O\rangle_\varkappa=\mathrm{Tr}(\tilde{Ϛ}_{\Psi,\varkappa} O^{*})=2\,\mathrm{Sc}(\tilde{Ϛ}_{\Psi,\varkappa} O) .
 $$
 
 This is the coherent-state content of the sector assignment used throughout: the field and the generators are in $\mathbb{B}_{\Phi}$, the states and the observables in $\mathbb{B}_{\Psi}$, and the Grassmann label rides outside the algebra entirely.
@@ -266,7 +266,7 @@ and the trace formula is $\mathrm{Tr}\,O=\int d\varkappa^*d\varkappa\,\exp(-\var
 
 In the analytic representation the Fock space becomes polynomials of degree at most one in the odd variable, with $a_{\mathrm{fop}}=\partial/\partial\varkappa^*$, $a_{\mathrm{fop}}^{\dagger}=\varkappa^*\times$, the anticommutator $\{\partial/\partial\varkappa^*,\varkappa^*\}=\mathrm{id}$ verified on the general polynomial, and the inner product given by the Berezin integral with $\exp(-\varkappa^*\varkappa)$.
 
-The biquaternion interpretation is that the label is odd while the density matrix $\rho_\varkappa=|\varkappa\rangle\langle\varkappa|$ is even, hence an element of $\mathbb{B}_{\Psi}$, with trace one and, for Hermitian $O$, expectations given by $\operatorname{Tr}(\tilde{Ϛ}_\varkappa O^{*})=\operatorname{Tr}(\tilde{Ϛ}_\varkappa O)=2\,\mathrm{Sc}(\tilde{Ϛ}_\varkappa O)$, the star being inert and the unstarred trace real; the parity is the label reflection $|\varkappa\rangle_{*}\mapsto|-\varkappa\rangle$; and the field's grading is carried by the extension rather than by $\mathbb{B}$ itself. At finite temperature the coherent-state trace formula gives $\mathrm{Tr}\,\exp(-\beta H)=1+\exp(-\beta\varepsilon)$ for one mode and the antiperiodic Matsubara frequencies $\omega_n=(2n+1)\pi/\beta$, the antiperiodicity verified to nine decimal places.
+The biquaternion interpretation is that the label is odd while the density matrix $\rho_\varkappa=|\varkappa\rangle\langle\varkappa|$ is even, hence an element of $\mathbb{B}_{\Psi}$, with trace one and, for Hermitian $O$, expectations given by $\operatorname{Tr}(\tilde{Ϛ}_{\Psi,\varkappa} O^{*})=\operatorname{Tr}(\tilde{Ϛ}_{\Psi,\varkappa} O)=2\,\mathrm{Sc}(\tilde{Ϛ}_{\Psi,\varkappa} O)$, the star being inert and the unstarred trace real; the parity is the label reflection $|\varkappa\rangle_{*}\mapsto|-\varkappa\rangle$; and the field's grading is carried by the extension rather than by $\mathbb{B}$ itself. At finite temperature the coherent-state trace formula gives $\mathrm{Tr}\,\exp(-\beta H)=1+\exp(-\beta\varepsilon)$ for one mode and the antiperiodic Matsubara frequencies $\omega_n=(2n+1)\pi/\beta$, the antiperiodicity verified to nine decimal places.
 
 ## Summary of Notation
 
@@ -286,7 +286,7 @@ The biquaternion interpretation is that the label is odd while the density matri
 | $\{\partial/\partial\varkappa^*,\varkappa^*\}=\mathrm{id}$ | Canonical anticommutator in the representation |
 | $\langle\varkappa|O|\varkappa\rangle$ | Normal symbol (Grassmann valued) |
 | $\rho_\varkappa=|\varkappa\rangle\langle\varkappa|\in\mathbb{B}_{\Psi}$ | State as an even algebra element |
-| $\langle O\rangle_\varkappa=2\,\mathrm{Sc}(\tilde{Ϛ}_\varkappa O)$ | Expectation as the trace reading of the Hermitian form |
+| $\langle O\rangle_\varkappa=2\,\mathrm{Sc}(\tilde{Ϛ}_{\Psi,\varkappa} O)$ | Expectation as the trace reading of the Hermitian form |
 | $(-1)^{N}|\varkappa\rangle_{*}=|-\varkappa\rangle$ | Parity as the label reflection |
 | $\tilde{Ξ}_{\mathrm{sp}}(\tau+\beta)=-\tilde{Ξ}_{\mathrm{sp}}(\tau)$, $\omega_n=(2n+1)\pi/\beta$ | Antiperiodic Matsubara boundary condition |
 

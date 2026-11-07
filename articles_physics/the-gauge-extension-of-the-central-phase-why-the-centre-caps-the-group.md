@@ -30,8 +30,8 @@ properties are the whole of its relevance.
   one-dimensional and every uniform continuous symmetry must be central.
 
 The gauge principle asks for the local version: a phase $\theta(x)$ that depends on the point, and a
-connection $\tilde{A}_\mu$ that transforms so that the covariant derivative
-$\partial/\partial x_\mu - iϙ\tilde{A}_\mu$ is phase-covariant. **The framework has the phase and not the connection**,
+connection $\tilde{A}_{\Phi,\mu}$ that transforms so that the covariant derivative
+$\partial/\partial x_\mu - iϙ\tilde{A}_{\Phi,\mu}$ is phase-covariant. **The framework has the phase and not the connection**,
 and the reason is structural rather than technical: a connection is a field valued in the Lie algebra of the
 group, and the Lie algebra of the central phase is the one-dimensional span of $ie_t$, which is central. A
 central generator produces a field that commutes with everything, so the "connection" it generates cannot

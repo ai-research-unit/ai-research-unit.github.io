@@ -2,15 +2,15 @@
 
 ## Introduction
 
-The generating functional $Z[\tilde J]$ of the previous article is a bookkeeping device: its functional derivatives with respect to the source $\tilde J$ produce the correlation functions. Two derived objects carry almost all of the quantum content of a field theory. The first is its logarithm,
+The generating functional $Z[\tilde J_{\Phi}]$ of the previous article is a bookkeeping device: its functional derivatives with respect to the source $\tilde J_{\Phi}$ produce the correlation functions. Two derived objects carry almost all of the quantum content of a field theory. The first is its logarithm,
 $$
-W[\tilde J] = \log Z[\tilde J],
+W[\tilde J_{\Phi}] = \log Z[\tilde J_{\Phi}],
 $$
 the **connected generating functional**, whose derivatives give the connected correlation functions. The second is its Legendre transform,
 $$
-\Gamma[\tilde{Ξ}_{\mathrm{cl}}] = \sup_{\tilde J}\Big(\langle \tilde J,\tilde{Ξ}_{\mathrm{cl}}\rangle - W[\tilde J]\Big),
+\Gamma[\tilde{Ξ}_{\mathrm{cl}}] = \sup_{\tilde J}_{\Phi}\Big(\langle \tilde J_{\Phi},\tilde{Ξ}_{\mathrm{cl}}\rangle - W[\tilde J_{\Phi}]\Big),
 \qquad
-\tilde{Ξ}_{\mathrm{cl}} = \frac{\delta W}{\delta \tilde J},
+\tilde{Ξ}_{\mathrm{cl}} = \frac{\delta W}{\delta \tilde J}_{\Phi},
 $$
 the **effective action**, whose derivatives give the one-particle-irreducible (1PI) correlation functions, and whose expansion in powers of $\frac{m\,c}{k_m}$ is the loop expansion. This article asks what the biquaternion algebra $\mathbb{B}$ contributes to that pair of objects.
 
@@ -18,12 +18,12 @@ The answer is a factorization statement and a convexity statement, both inherite
 
 - **Established, and recomputed below.** For a free theory with central kinetic operator $W_{\mathrm{kinetic}}$ the connected and effective functionals are the quadratic forms
 $$
-\boxed{\;W[\tilde J] = \tfrac12\big\langle \tilde J,W_{\mathrm{kinetic}}{}^{-1}\tilde J\big\rangle ,
+\boxed{\;W[\tilde J_{\Phi}] = \tfrac12\big\langle \tilde J_{\Phi},W_{\mathrm{kinetic}}{}^{-1}\tilde J_{\Phi}\big\rangle ,
 \qquad
 \Gamma[\tilde{Ξ}_{\mathrm{cl}}] = \tfrac12\big\langle \tilde{Ξ}_{\mathrm{cl}},W_{\mathrm{kinetic}}\tilde{Ξ}_{\mathrm{cl}}\big\rangle\;},
 $$
-built from the real bilinear form $\langle \tilde{Q},\tilde{Q}_1\rangle=\mathrm{Re}\,\mathrm{Tr}(\tilde{Q}^{*}\tilde{Q}_1)$ of the previous article, with the inverse-Hessian relation $\Gamma^{(2)}W^{(2)}=I$ and the Legendre identity $W[\tilde J]+\Gamma[\tilde{Ξ}_{\mathrm{cl}}]=\langle \tilde J,\tilde{Ξ}_{\mathrm{cl}}\rangle$ at $\tilde{Ξ}_{\mathrm{cl}}=\delta W/\delta\tilde J$. These were checked in finite dimension with explicit matrices.
-- **Established (algebra).** Because the source $\tilde J$, the classical field $\tilde{Ξ}_{\mathrm{cl}}=\delta W/\delta\tilde J$, and the fluctuations all live in the same module, the effective action is a functional **on the module**, and its convexity is convexity with respect to the real form of the algebra — the positive-definite Hilbert–Schmidt form; the sector signature belongs to the biquaternion norm, not to this form. For a central kinetic operator the effective action **factorizes** over the sectors,
+built from the real bilinear form $\langle \tilde{Q},\tilde{Q}_1\rangle=\mathrm{Re}\,\mathrm{Tr}(\tilde{Q}^{*}\tilde{Q}_1)$ of the previous article, with the inverse-Hessian relation $\Gamma^{(2)}W^{(2)}=I$ and the Legendre identity $W[\tilde J_{\Phi}]+\Gamma[\tilde{Ξ}_{\mathrm{cl}}]=\langle \tilde J_{\Phi},\tilde{Ξ}_{\mathrm{cl}}\rangle$ at $\tilde{Ξ}_{\mathrm{cl}}=\delta W/\delta\tilde J_{\Phi}$. These were checked in finite dimension with explicit matrices.
+- **Established (algebra).** Because the source $\tilde J_{\Phi}$, the classical field $\tilde{Ξ}_{\mathrm{cl}}=\delta W/\delta\tilde J_{\Phi}$, and the fluctuations all live in the same module, the effective action is a functional **on the module**, and its convexity is convexity with respect to the real form of the algebra — the positive-definite Hilbert–Schmidt form; the sector signature belongs to the biquaternion norm, not to this form. For a central kinetic operator the effective action **factorizes** over the sectors,
 $$
 \Gamma[\tilde{Ξ}_{\mathrm{cl}}] = \Gamma_-[\tilde{Ξ}_{\mathrm{cl},-}]+\Gamma_+[\tilde{Ξ}_{\mathrm{cl},+}] ,
 $$
@@ -41,45 +41,45 @@ The article proceeds as follows. The next section defines the connected function
 
 Write the functional integral with a source as in the previous article,
 $$
-Z[\tilde J] = \int\mathcal{D}\tilde{Ξ}\; \exp(\,iS[\tilde{Ξ}]\frac{k_m}{m\,c}+ \langle  \tilde J,\tilde{Ξ}\rangle),
+Z[\tilde J_{\Phi}] = \int\mathcal{D}\tilde{Ξ}\; \exp(\,iS[\tilde{Ξ}]\frac{k_m}{m\,c}+ \langle  \tilde J_{\Phi},\tilde{Ξ}\rangle),
 $$
-with $\tilde J$ valued in the module and the pairing as above. The connected functional is
+with $\tilde J_{\Phi}$ valued in the module and the pairing as above. The connected functional is
 $$
-W[\tilde J] = -\frac{m\,c\,i}{k_m}\log  Z[\tilde J].
+W[\tilde J_{\Phi}] = -\frac{m\,c\,i}{k_m}\log  Z[\tilde J_{\Phi}].
 $$
 
 **Derivatives give correlators.** The *n*-point connected correlation functions are the functional derivatives
 $$
 \big\langle \tilde{Ξ}(x_1)\cdots\tilde{Ξ}(x_n)\big\rangle_{\!c}
-= \frac{\delta^n W}{\delta\tilde J(x_1)\cdots\delta\tilde J(x_n)}\Big|_{\tilde J=0} ,
+= \frac{\delta^n W}{\delta\tilde J_{\Phi}(x_1)\cdots\delta\tilde J_{\Phi}(x_n)}\Big|_{\tilde J_{\Phi}=0} ,
 $$
 and the full correlators are the derivatives of $Z$ itself. The formalism is the standard one; the biquaternion content is that the source is a module-valued function and the derivative is taken with respect to that function, so the correlation functions take values in tensor powers of the module.
 
 **The free case.** For the Gaussian integral of *The Functional Integral in Biquaternionic Form* the connected functional is exact:
 $$
-W[\tilde J] = \tfrac12\big\langle \tilde J,W_{\mathrm{kinetic}}{}^{-1}\tilde J\big\rangle ,
+W[\tilde J_{\Phi}] = \tfrac12\big\langle \tilde J_{\Phi},W_{\mathrm{kinetic}}{}^{-1}\tilde J_{\Phi}\big\rangle ,
 \qquad\text{equivalently}\qquad
-W[\tilde J] = \tfrac12\int\frac{d^4k}{(2\pi)^4}\,\frac{\langle\tilde J(-k),\tilde J(k)\rangle}{\tilde P\tilde P^{\natural}+m^{2}c^{2}},
+W[\tilde J_{\Phi}] = \tfrac12\int\frac{d^4k}{(2\pi)^4}\,\frac{\langle\tilde J_{\Phi}(-k),\tilde J_{\Phi}(k)\rangle}{\tilde P_{\Phi}\tilde P_{\Phi}^{\natural}+m^{2}c^{2}},
 $$
-using the wave biquaternion $\tilde P=i(E/c)e_t+\vec p$ and $\tilde P\tilde P^{\natural}=-p^2$. The kernel displayed is that of the kinetic operator $-\Box+k_m^{2}$, whose symbol is the central mass-shell operator $\mathcal{M}(\tilde P)=\tilde P\tilde P^{\natural}+m^{2}\,c^{2}$; the action's operator is $W_{\mathrm{kinetic}}=\Box-k_m^{2}$, whose symbol is $-\mathcal{M}$, so the kernel of $W_{\mathrm{kinetic}}{}^{-1}$ is its negative, $-1/\mathcal{M}$. Recording this once fixes the relative sign of the source kernel and of the classical field below. Its second derivative is the propagator $D_F$, the object of *The Feynman Propagator in Biquaternionic Form*; the framework's contribution is the central scalar kinetic operator $\mathcal{M}(\tilde P)=\tilde P\tilde P^{\natural}+m^{2}\,c^{2}$, as before. Here $k_m=mc/\hbar$ is the mass wave number, the inverse of the mass length.
+using the wave biquaternion $\tilde P_{\Phi}=i(E/c)e_t+\vec p$ and $\tilde P_{\Phi}\tilde P_{\Phi}^{\natural}=-p^2$. The kernel displayed is that of the kinetic operator $-\Box+k_m^{2}$, whose symbol is the central mass-shell operator $\mathcal{M}(\tilde P_{\Phi})=\tilde P_{\Phi}\tilde P_{\Phi}^{\natural}+m^{2}\,c^{2}$; the action's operator is $W_{\mathrm{kinetic}}=\Box-k_m^{2}$, whose symbol is $-\mathcal{M}$, so the kernel of $W_{\mathrm{kinetic}}{}^{-1}$ is its negative, $-1/\mathcal{M}$. Recording this once fixes the relative sign of the source kernel and of the classical field below. Its second derivative is the propagator $D_F$, the object of *The Feynman Propagator in Biquaternionic Form*; the framework's contribution is the central scalar kinetic operator $\mathcal{M}(\tilde P_{\Phi})=\tilde P_{\Phi}\tilde P_{\Phi}^{\natural}+m^{2}\,c^{2}$, as before. Here $k_m=mc/\hbar$ is the mass wave number, the inverse of the mass length.
 
-**A remark on the trace.** The derivative $\delta W/\delta\tilde J$ is defined through the pairing, and because the pairing is a real bilinear form on the module, it takes a module-valued source to a module-valued classical field. No privileged matrix basis is needed; the derivative is the module's own gradient. This will matter in the next section, where the Legendre transform is taken on the module and not on a coordinate vector space.
+**A remark on the trace.** The derivative $\delta W/\delta\tilde J_{\Phi}$ is defined through the pairing, and because the pairing is a real bilinear form on the module, it takes a module-valued source to a module-valued classical field. No privileged matrix basis is needed; the derivative is the module's own gradient. This will matter in the next section, where the Legendre transform is taken on the module and not on a coordinate vector space.
 
 ## The Classical Field and the Legendre Transform
 
 The **classical field** is the source-derivative of the connected functional,
 $$
-\tilde{Ξ}_{\mathrm{cl}}(x) = \frac{\delta W}{\delta\tilde J(x)} ,
+\tilde{Ξ}_{\mathrm{cl}}(x) = \frac{\delta W}{\delta\tilde J_{\Phi}(x)} ,
 $$
-a module-valued function. It is the one-point function in the presence of the source, $\tilde{Ξ}_{\mathrm{cl}}=\langle\tilde{Ξ}\rangle_{\tilde J}$.
+a module-valued function. It is the one-point function in the presence of the source, $\tilde{Ξ}_{\mathrm{cl}}=\langle\tilde{Ξ}\rangle_{\tilde J}_{\Phi}$.
 
 **The effective action** is the Legendre transform
 $$
-\Gamma[\tilde{Ξ}_{\mathrm{cl}}] = \Big\langle \tilde J,\tilde{Ξ}_{\mathrm{cl}}\Big\rangle - W[\tilde J]\Big|_{\tilde J=\tilde J[\tilde{Ξ}_{\mathrm{cl}}]} ,
+\Gamma[\tilde{Ξ}_{\mathrm{cl}}] = \Big\langle \tilde J_{\Phi},\tilde{Ξ}_{\mathrm{cl}}\Big\rangle - W[\tilde J_{\Phi}]\Big|_{\tilde J_{\Phi}=\tilde J_{\Phi}[\tilde{Ξ}_{\mathrm{cl}}]} ,
 \qquad
-\frac{\delta\Gamma}{\delta\tilde{Ξ}_{\mathrm{cl}}} = \tilde J .
+\frac{\delta\Gamma}{\delta\tilde{Ξ}_{\mathrm{cl}}} = \tilde J_{\Phi} .
 $$
-The two functionals $\Gamma$ and $W$ differ by the product of the conjugate variables, and the map $\tilde J\leftrightarrow\tilde{Ξ}_{\mathrm{cl}}$ is inverted by the second relation. The Legendre transform is defined by a supremum over $\tilde J$, and it is finite exactly when $W$ is convex.
+The two functionals $\Gamma$ and $W$ differ by the product of the conjugate variables, and the map $\tilde J_{\Phi}\leftrightarrow\tilde{Ξ}_{\mathrm{cl}}$ is inverted by the second relation. The Legendre transform is defined by a supremum over $\tilde J_{\Phi}$, and it is finite exactly when $W$ is convex.
 
 **Convexity is convexity in the real form.** In this framework the appropriate notion of convexity is with respect to the real bilinear form $\langle\cdot,\cdot\rangle$: a functional $F[\tilde{Ξ}_{\mathrm{cl}}]$ is convex if, on the module,
 $$
@@ -90,13 +90,13 @@ with the comparison of the two module elements understood through the positive-d
 
 **The inverse-Hessian relation.** The second derivatives satisfy
 $$
-\Gamma^{(2)}[\tilde{Ξ}_{\mathrm{cl}}]\;W^{(2)}[\tilde J]\Big|_{Ξ_{\mathrm{cl}}=\delta W/\delta\tilde J} = I ,
+\Gamma^{(2)}[\tilde{Ξ}_{\mathrm{cl}}]\;W^{(2)}[\tilde J_{\Phi}]\Big|_{Ξ_{\mathrm{cl}}=\delta W/\delta\tilde J}_{\Phi} = I ,
 $$
 the module identity, and the Legendre identity
 $$
-W[\tilde J]+\Gamma[\tilde{Ξ}_{\mathrm{cl}}] = \langle \tilde J,\tilde{Ξ}_{\mathrm{cl}}\rangle
+W[\tilde J_{\Phi}]+\Gamma[\tilde{Ξ}_{\mathrm{cl}}] = \langle \tilde J_{\Phi},\tilde{Ξ}_{\mathrm{cl}}\rangle
 \qquad\text{at}\qquad
-\tilde{Ξ}_{\mathrm{cl}}=\frac{\delta W}{\delta\tilde J}
+\tilde{Ξ}_{\mathrm{cl}}=\frac{\delta W}{\delta\tilde J}_{\Phi}
 $$
 holds exactly. These are the two standard identities of the Legendre transform; they are recorded here because they are what the finite-dimensional verification checks.
 
@@ -136,9 +136,9 @@ evaluated on the module, with $S^{(2)}[\tilde{Ξ}_{\mathrm{cl}}]$ the operator o
 
 The sector factorization of the functional integral implies the same factorization of the effective action, and the implication is a property of the Legendre transform rather than a new computation.
 
-Suppose the classical field splits as $\tilde{Ξ}_{\mathrm{cl}}=\tilde{Ξ}_{\mathrm{cl},-}+\tilde{Ξ}_{\mathrm{cl},+}$ and the action as $S[\tilde{Ξ}_{\mathrm{cl}}]=S_-[\tilde{Ξ}_{\mathrm{cl},-}]+S_+[\tilde{Ξ}_{\mathrm{cl},+}]$; then the source splits as $\tilde J=\tilde J_-+\tilde J_+$ with $\tilde J_\pm=\delta S_\pm/\delta\tilde{Ξ}_{\mathrm{cl},\pm}$, and
+Suppose the classical field splits as $\tilde{Ξ}_{\mathrm{cl}}=\tilde{Ξ}_{\mathrm{cl},-}+\tilde{Ξ}_{\mathrm{cl},+}$ and the action as $S[\tilde{Ξ}_{\mathrm{cl}}]=S_-[\tilde{Ξ}_{\mathrm{cl},-}]+S_+[\tilde{Ξ}_{\mathrm{cl},+}]$; then the source splits as $\tilde J_{\Phi}=\tilde J_{\Phi,-}+\tilde J_{\Phi,+}$ with $\tilde J_{\Phi,\pm}=\delta S_\pm/\delta\tilde{Ξ}_{\mathrm{cl},\pm}$, and
 $$
-W[\tilde J] = W_-[J_-]+W_+[J_+] ,
+W[\tilde J_{\Phi}] = W_-[J_-]+W_+[J_+] ,
 $$
 because $\log$ of a product is a sum. The Legendre transform of a sum of independent functionals is the sum of the Legendre transforms, so
 $$
@@ -193,7 +193,7 @@ S[\tilde{Ξ}_{\mathrm{cl}}+\delta\tilde{Ξ}] = S[\tilde{Ξ}_{\mathrm{cl}}] + \tf
 $$
 where the linear term vanishes by the classical equation of motion, $\delta S/\delta\tilde{Ξ}_{\mathrm{cl}}=0$. The Gaussian integral over the fluctuation $\delta\tilde{Ξ}$ gives
 $$
-W[\tilde J] = S[\tilde{Ξ}_{\mathrm{cl}}] + \tfrac12\big\langle  \tilde J,\tilde{Ξ}_{\mathrm{cl}}\big\rangle  -\frac{m\,c\,i}{2\,k_m}\,\mathrm{Tr}\log  S^{(2)}[\tilde{Ξ}_{\mathrm{cl}}] + O(\frac{m^{2}\,c^{2}}{k_m^{2}}) ,
+W[\tilde J_{\Phi}] = S[\tilde{Ξ}_{\mathrm{cl}}] + \tfrac12\big\langle  \tilde J_{\Phi},\tilde{Ξ}_{\mathrm{cl}}\big\rangle  -\frac{m\,c\,i}{2\,k_m}\,\mathrm{Tr}\log  S^{(2)}[\tilde{Ξ}_{\mathrm{cl}}] + O(\frac{m^{2}\,c^{2}}{k_m^{2}}) ,
 $$
 so that
 $$
@@ -224,7 +224,7 @@ has coefficients $a_n$ built from the curvature of $S^{(2)}$ and the geometry of
 ## What Is Established and What Is Interpretation
 
 **Established (algebra and functional analysis of the module).**
-- The connected and effective functionals are the quadratic forms $W=\tfrac12\langle\tilde J,W_{\mathrm{kinetic}}{}^{-1}\tilde J\rangle$ and $\Gamma=\tfrac12\langle\tilde{Ξ}_{\mathrm{cl}},W_{\mathrm{kinetic}}\tilde{Ξ}_{\mathrm{cl}}\rangle$ for a free theory, with the inverse-Hessian relation and the Legendre identity; verified in finite dimension.
+- The connected and effective functionals are the quadratic forms $W=\tfrac12\langle\tilde J_{\Phi},W_{\mathrm{kinetic}}{}^{-1}\tilde J_{\Phi}\rangle$ and $\Gamma=\tfrac12\langle\tilde{Ξ}_{\mathrm{cl}},W_{\mathrm{kinetic}}\tilde{Ξ}_{\mathrm{cl}}\rangle$ for a free theory, with the inverse-Hessian relation and the Legendre identity; verified in finite dimension.
 - The Legendre transform is taken on the module, and its convexity is convexity in the real form $\langle\tilde{Q},\tilde{Q}_1\rangle=\mathrm{Re}\,\mathrm{Tr}(\tilde{Q}^{*}\tilde{Q}_1)$, which is positive definite on the algebra; the sector split enters through the orthogonality of the sectors.
 - For a sector-diagonal action the effective action factorizes, $\Gamma=\Gamma_-+\Gamma_+$, at tree level and at one loop, with the determinant factorizing.
 - The one-loop effective action is $\Gamma_1=\tfrac12\mathrm{Tr}\log S^{(2)}[\tilde{Ξ}_{\mathrm{cl}}]$, the logarithm of a module determinant.
@@ -241,7 +241,7 @@ has coefficients $a_n$ built from the curvature of $S^{(2)}$ and the geometry of
 
 ## Summary
 
-The connected functional and the effective action of a biquaternion field are functionals on the module, built from the real form $\langle\tilde{Q},\tilde{Q}_1\rangle=\mathrm{Re}\,\mathrm{Tr}(\tilde{Q}^{*}\tilde{Q}_1)$. For a free theory they are the quadratics $W[\tilde J]=\tfrac12\langle\tilde J,W_{\mathrm{kinetic}}{}^{-1}\tilde J\rangle$ and $\Gamma[\tilde{Ξ}_{\mathrm{cl}}]=\tfrac12\langle\tilde{Ξ}_{\mathrm{cl}},W_{\mathrm{kinetic}}\tilde{Ξ}_{\mathrm{cl}}\rangle$, with $W_{\mathrm{kinetic}}=\Box-k_m^{2}$, the inverse-Hessian relation $\Gamma^{(2)}W^{(2)}=I$, and the Legendre identity $W+\Gamma=\langle\tilde J,\tilde{Ξ}_{\mathrm{cl}}\rangle$ at $\tilde{Ξ}_{\mathrm{cl}}=\delta W/\delta\tilde J$ — all verified in finite dimension. The one-loop effective action is the logarithm of the module determinant of the second variation, $\Gamma_1=\tfrac12\mathrm{Tr}\log S^{(2)}[\tilde{Ξ}_{\mathrm{cl}}]$, which the next article computes and regularizes.
+The connected functional and the effective action of a biquaternion field are functionals on the module, built from the real form $\langle\tilde{Q},\tilde{Q}_1\rangle=\mathrm{Re}\,\mathrm{Tr}(\tilde{Q}^{*}\tilde{Q}_1)$. For a free theory they are the quadratics $W[\tilde J_{\Phi}]=\tfrac12\langle\tilde J_{\Phi},W_{\mathrm{kinetic}}{}^{-1}\tilde J_{\Phi}\rangle$ and $\Gamma[\tilde{Ξ}_{\mathrm{cl}}]=\tfrac12\langle\tilde{Ξ}_{\mathrm{cl}},W_{\mathrm{kinetic}}\tilde{Ξ}_{\mathrm{cl}}\rangle$, with $W_{\mathrm{kinetic}}=\Box-k_m^{2}$, the inverse-Hessian relation $\Gamma^{(2)}W^{(2)}=I$, and the Legendre identity $W+\Gamma=\langle\tilde J_{\Phi},\tilde{Ξ}_{\mathrm{cl}}\rangle$ at $\tilde{Ξ}_{\mathrm{cl}}=\delta W/\delta\tilde J_{\Phi}$ — all verified in finite dimension. The one-loop effective action is the logarithm of the module determinant of the second variation, $\Gamma_1=\tfrac12\mathrm{Tr}\log S^{(2)}[\tilde{Ξ}_{\mathrm{cl}}]$, which the next article computes and regularizes.
 
 Because a central kinetic operator does not mix the material and informational sectors, the effective action factorizes, $\Gamma=\Gamma_-+\Gamma_+$, at tree level and at one loop, with the determinant factorizing with it; any non-central term — an interaction, a non-central kinetic operator, or the chirality-off-diagonal Dirac mass — breaks the factorization. The tree-level effective potential $V=\tfrac12 m^2\langle\tilde{Ξ}_{\mathrm{cl}},\tilde{Ξ}_{\mathrm{cl}}\rangle$ has its minimum at the symmetric point $\tilde{Ξ}_{\mathrm{cl}}=0$; in a one-mode truncation the ground state is a minimal idempotent of $\mathbb{B}_{\Psi}$, the field-theoretic counterpart of the vacuum-selection rule of *The Biquaternion Vacuum as a Minimal Idempotent*.
 
@@ -252,12 +252,12 @@ Because a central kinetic operator does not mix the material and informational s
 | $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ | Biquaternion algebra, $\cong M_2(\mathbb{C})$ |
 | $\mathbb{B}_{\Phi},\mathbb{B}_{\Psi}$ | Material (anti-Hermitian) and informational (Hermitian) sectors |
 | $\langle\tilde{Q},\tilde{Q}_1\rangle=\mathrm{Re}\,\mathrm{Tr}(\tilde{Q}^{*}\tilde{Q}_1)$ | Real bilinear form; positive definite on the algebra, with the sectors orthogonal |
-| $Z[\tilde J]=\int\mathcal{D}\tilde{Ξ}\,\exp(\frac{k_m\,i\,S}{m\,c}+\langle\tilde J,\tilde{Ξ}\rangle)$ | Generating functional |
-| $W[\tilde J]=-\frac{m\,c\,i}{k_m}\log  Z[\tilde J]$ | Connected generating functional |
-| $\tilde{Ξ}_{\mathrm{cl}}=\delta W/\delta\tilde J$ | Classical field (module-valued) |
+| $Z[\tilde J_{\Phi}]=\int\mathcal{D}\tilde{Ξ}\,\exp(\frac{k_m\,i\,S}{m\,c}+\langle\tilde J_{\Phi},\tilde{Ξ}\rangle)$ | Generating functional |
+| $W[\tilde J_{\Phi}]=-\frac{m\,c\,i}{k_m}\log  Z[\tilde J_{\Phi}]$ | Connected generating functional |
+| $\tilde{Ξ}_{\mathrm{cl}}=\delta W/\delta\tilde J_{\Phi}$ | Classical field (module-valued) |
 | $\delta\tilde{Ξ}$ | Fluctuation about the classical field, $\tilde{Ξ}_{\mathrm{cl}}+\delta\tilde{Ξ}$ |
-| $\Gamma[\tilde{Ξ}_{\mathrm{cl}}]=\langle\tilde J,\tilde{Ξ}_{\mathrm{cl}}\rangle-W[\tilde J]$ | Effective action (Legendre transform) |
-| $\Gamma^{(2)}W^{(2)}=I$, $W+\Gamma=\langle\tilde J,\tilde{Ξ}_{\mathrm{cl}}\rangle$ | Inverse-Hessian relation; Legendre identity |
+| $\Gamma[\tilde{Ξ}_{\mathrm{cl}}]=\langle\tilde J_{\Phi},\tilde{Ξ}_{\mathrm{cl}}\rangle-W[\tilde J_{\Phi}]$ | Effective action (Legendre transform) |
+| $\Gamma^{(2)}W^{(2)}=I$, $W+\Gamma=\langle\tilde J_{\Phi},\tilde{Ξ}_{\mathrm{cl}}\rangle$ | Inverse-Hessian relation; Legendre identity |
 | $\Gamma=S+\frac{m\,c\,\Gamma_{1}}{k_m}+\cdots$ | Loop expansion |
 | $\Gamma_1=\tfrac12\mathrm{Tr}\log S^{(2)}[\tilde{Ξ}_{\mathrm{cl}}]$ | One-loop effective action |
 | $S^{(2)}[\tilde{Ξ}_{\mathrm{cl}}]$ | Second variation of the action on the module |
@@ -265,7 +265,7 @@ Because a central kinetic operator does not mix the material and informational s
 | $V_{\mathrm{eff}}(\tilde{Ξ}_{\mathrm{cl}})=-\Gamma/\text{vol}$ | Effective potential |
 | $\delta V_{\mathrm{eff}}/\delta\tilde{Ξ}_{\mathrm{cl}}=0$, $\delta^2V_{\mathrm{eff}}/\delta\tilde{Ξ}^{2}_{\mathrm{cl}}\ge0$ | Vacuum condition; stability (convexity) |
 | $W_{\mathrm{kinetic}}=\Box-k_m^{2}$, $\Box=\partial^2/\partial R_t^2+\Delta$ | Central kinetic operator |
-| $\tilde P=i(E/c)e_t+\vec p$, $\tilde P\tilde P^{\natural}=-p^2$ | Wave biquaternion |
+| $\tilde P_{\Phi}=i(E/c)e_t+\vec p$, $\tilde P_{\Phi}\tilde P_{\Phi}^{\natural}=-p^2$ | Wave biquaternion |
 
 ## Further Reading
 
@@ -282,4 +282,4 @@ Because a central kinetic operator does not mix the material and informational s
 - P. B. Gilkey, *Invariance Theory, the Heat Equation, and the Atiyah–Singer Index Theorem* (Publish or Perish, 1984), for the Seeley–DeWitt coefficients and their geometric content.
 - J. S. Schwinger, "On gauge invariance and vacuum polarization," *Physical Review* **82** (1951) 664–679, for the proper-time representation of the one-loop determinant.
 - P. Lounesto, *Clifford Algebras and Spinors* (Cambridge, 2001), for the module on which the fluctuation operator and its determinant are taken.
-- Companion articles: [The Functional Integral in Biquaternionic Form](the-functional-integral-in-biquaternionic-form.html), for $Z[\tilde J]$, the real form, and the sector factorization; [The Functional Determinant in Biquaternionic Form](the-functional-determinant-in-biquaternionic-form.html), for the computation and regularization of $\mathrm{Tr}\log S^{(2)}$; [The Trace Anomaly in Biquaternionic Form](the-trace-anomaly-in-biquaternionic-form.html), for the anomalous part of the one-loop effective action; [The Biquaternion Vacuum as a Minimal Idempotent](the-biquaternion-vacuum-as-a-minimal-idempotent.html), for the vacuum as a minimal idempotent and the one-mode two-level structure; [The Hermitian GNS Construction in the Biquaternion Framework](the-hermitian-gns-construction-in-the-biquaternion-framework.html), for the state space on which the vacuum expectation is taken; [The Feynman Propagator in Biquaternionic Form](the-feynman-propagator-in-biquaternionic-form.html) and [The S-Matrix in Biquaternionic Form](the-s-matrix-in-biquaternionic-form.html), for the propagator and the trace conventions.
+- Companion articles: [The Functional Integral in Biquaternionic Form](the-functional-integral-in-biquaternionic-form.html), for $Z[\tilde J_{\Phi}]$, the real form, and the sector factorization; [The Functional Determinant in Biquaternionic Form](the-functional-determinant-in-biquaternionic-form.html), for the computation and regularization of $\mathrm{Tr}\log S^{(2)}$; [The Trace Anomaly in Biquaternionic Form](the-trace-anomaly-in-biquaternionic-form.html), for the anomalous part of the one-loop effective action; [The Biquaternion Vacuum as a Minimal Idempotent](the-biquaternion-vacuum-as-a-minimal-idempotent.html), for the vacuum as a minimal idempotent and the one-mode two-level structure; [The Hermitian GNS Construction in the Biquaternion Framework](the-hermitian-gns-construction-in-the-biquaternion-framework.html), for the state space on which the vacuum expectation is taken; [The Feynman Propagator in Biquaternionic Form](the-feynman-propagator-in-biquaternionic-form.html) and [The S-Matrix in Biquaternionic Form](the-s-matrix-in-biquaternionic-form.html), for the propagator and the trace conventions.

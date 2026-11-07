@@ -29,7 +29,7 @@ Here $k_m=mc/\hbar$ is the mass wave number, the inverse of the mass length.
 
 **The failure.** For $V(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)=-\kappa/r$ the potential term is $+\kappa\varepsilon/r$ in the exponent, so for a path that passes within a distance $\lesssim\frac{k_m\,\kappa\,\varepsilon}{m\,c}$ of the origin the phase is not small, and the expansion of the potential to first order in $\varepsilon$ — the step that produces the Schrödinger equation in *The Schrödinger Path Integral in Biquaternionic Form* — is not controlled. The Gaussian in the kinetic term has width $\sqrt{\frac{c\,\varepsilon}{k_m}}$, so the slices that approach the origin are precisely the ones the kinetic term does not suppress, and the naive limit is not a well-defined kernel. This is the reason the source states that the time-sliced approximation "does not exist" for the Coulomb potential.
 
-**The interpretation in the algebra is immediate, and it is negative.** The potential is $\tilde V(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)=-(\kappa/r)e_t$: a central scalar, whose value is a function of $r$ only, with no vector part and no dependence on the sector. The singularity is therefore a singularity of a **central scalar function** — of the real number $r$ — and nothing in the two-sector structure of $\mathbb{B}$ intervenes. The algebra neither causes the failure nor cures it: it is finite-dimensional and supplies no measure, no short-time kernel, and no slicing. The failure is analytic, in the real configuration space, and the remedy below is analytic too, with the algebra entering only in the interpretation of the coordinate transformation and the axis of the pseudo-time.
+**The interpretation in the algebra is immediate, and it is negative.** The potential is $\tilde V_{\Phi}(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)=-(\kappa/r)e_t$: a central scalar, whose value is a function of $r$ only, with no vector part and no dependence on the sector. The singularity is therefore a singularity of a **central scalar function** — of the real number $r$ — and nothing in the two-sector structure of $\mathbb{B}$ intervenes. The algebra neither causes the failure nor cures it: it is finite-dimensional and supplies no measure, no short-time kernel, and no slicing. The failure is analytic, in the real configuration space, and the remedy below is analytic too, with the algebra entering only in the interpretation of the coordinate transformation and the axis of the pseudo-time.
 
 ## The Pseudo-Time
 
@@ -155,7 +155,7 @@ The algebra's contribution is an interpretation. The Coulomb potential is a **ce
 | $e_t=1,\vec e_x,\vec e_y,\vec e_z$ | Quaternion basis, $\vec e_k^2=-e_t$ |
 | $\tilde R_\Phi=i c r'_t\,e_t+r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z$ | Material coordinate; $r=\lvert r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z\rvert$ |
 | $\kappa=Ze^2/(4\pi\epsilon_0)$ | Coulomb parameter |
-| $\tilde V=-(\kappa/r)e_t\in\mathbb{B}_{C}$ | Coulomb potential; a central scalar |
+| $\tilde V_{\Phi}=-(\kappa/r)e_t\in\mathbb{B}_{C}$ | Coulomb potential; a central scalar |
 | $E_n=-m\kappa^2/(\frac{2\,m^{2}\,c^{2}\,n^{2}}{k_m^{2}})$ | Bound-state spectrum (from the hydrogen article) |
 | $dr'_t=r\,ds$, $ds=dr'_t/r$ | Duru–Kleinert pseudo-time; path-dependent, along $i c r'_t$ |
 | $\varsigma=(\varsigma_1,\varsigma_2,\varsigma_3,\varsigma_0)\in\mathbb{R}^4$ | Kustaanheimo–Stiefel coordinates |

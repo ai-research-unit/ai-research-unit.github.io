@@ -138,14 +138,14 @@ The absence of central projections is therefore a genuine algebraic limitation, 
 
 The limitations of the preceding section are structural, and they do not diminish the sense in which the centre **is** the classical sector. That sense is made precise by four properties of central elements, each of which is a classical marker.
 
-**1. Central observables have no dispersion and no state dependence.** Let $\tilde Q_3=\lambda e_t$ with $\lambda\in\mathbb{R}$ be a Hermitian central element and let $\tilde{Ϛ}$ be any state. The trace formula gives
+**1. Central observables have no dispersion and no state dependence.** Let $\tilde Q_3=\lambda e_t$ with $\lambda\in\mathbb{R}$ be a Hermitian central element and let $\tilde{Ϛ}_{\Psi}$ be any state. The trace formula gives
 $$
-\langle\tilde Q_3\rangle_{\tilde{Ϛ}}=\mathrm{Tr}\bigl(\tilde{Ϛ}\lambda e_t\bigr)=\lambda\,\mathrm{Tr}\bigl(\tilde{Ϛ}\bigr)=\lambda ,
+\langle\tilde Q_3\rangle_{\tilde{Ϛ}_{\Psi}}=\mathrm{Tr}\bigl(\tilde{Ϛ}_{\Psi}\lambda e_t\bigr)=\lambda\,\mathrm{Tr}\bigl(\tilde{Ϛ}_{\Psi}\bigr)=\lambda ,
 $$
 independently of the state. The variance vanishes in every state,
 $$
-\bigl\langle(\tilde Q_3-\lambda e_t)^2\bigr\rangle_{\tilde{Ϛ}}
-=\mathrm{Tr}\Bigl(\tilde{Ϛ}\,(\tilde Q_3-\lambda e_t)^2\Bigr)=0 .
+\bigl\langle(\tilde Q_3-\lambda e_t)^2\bigr\rangle_{\tilde{Ϛ}_{\Psi}}
+=\mathrm{Tr}\Bigl(\tilde{Ϛ}_{\Psi}\,(\tilde Q_3-\lambda e_t)^2\Bigr)=0 .
 $$
 A quantity whose expectation value is the same in every state and whose uncertainty is zero is not a quantum observable in any operational sense; it is a **parameter**. The centre is exactly the set of such quantities, and this is the sharpest algebraic expression of the statement that its elements are classical.
 
@@ -223,11 +223,11 @@ because every element commutes with the scalars. The two statements together ide
 
 **2. Trivial action on the projective state space.** A central element acts on the state module by scalar multiplication, $\tilde Q_3\tilde{Ξ}_{\mathrm{sp}}=(\lambda e_t)\tilde{Ξ}_{\mathrm{sp}}=\lambda\tilde{Ξ}_{\mathrm{sp}}$. On a ray $[\tilde{Ξ}_{\mathrm{sp}}]$ this is invisible, since $[\lambda\tilde{Ξ}_{\mathrm{sp}}]=[\tilde{Ξ}_{\mathrm{sp}}]$ for $\lambda\neq0$. The centre is therefore the **kernel of the action of $\mathbb{B}^\times$ on the projective state space**: its $*$-unitary part $\mathrm{U}(1)=\{\lambda e_t:|\lambda|=1\}$ acts trivially on rays, and conversely an element that fixes every ray is a scalar and hence central, so the Hopf fibration $S^3\to S^2$ is precisely the quotient by the central $*$-unitary action. The unobservability of the global phase is thus the statement that the centre acts trivially at the level of rays, and the same fact upgrades to mixed states because a central conjugation is a scalar multiple of the identity,
 $$
-\Gamma_{\tilde Q_3}(\tilde{Ϛ})=(\lambda e_t)\,\tilde{Ϛ}\,(\lambda e_t)^{*}=|\lambda|^2\tilde{Ϛ},
+\Gamma_{\tilde Q_3}(\tilde{Ϛ}_{\Psi})=(\lambda e_t)\,\tilde{Ϛ}_{\Psi}\,(\lambda e_t)^{*}=|\lambda|^2\tilde{Ϛ}_{\Psi},
 $$
-It is a positive multiple of $\tilde{Ϛ}$, hence the same state after normalization, and it is the identity on trace-one states exactly for the $*$-unitary central scalars, $|\lambda|=1$. The centre is the part of the algebra that the state space cannot see.
+It is a positive multiple of $\tilde{Ϛ}_{\Psi}$, hence the same state after normalization, and it is the identity on trace-one states exactly for the $*$-unitary central scalars, $|\lambda|=1$. The centre is the part of the algebra that the state space cannot see.
 
-**3. The central normalizations.** The two normalizations that the framework imposes on its states are central conditions. The trace-one condition is $\mathrm{Tr}(\tilde{Ϛ})=1$ — the left side is a central scalar, so the condition is a statement about the centre — and the normalization of a spinor is $\mathrm{Tr}(\tilde{Ξ}_{\mathrm{sp}}^{\dagger}\tilde{Ξ}_{\mathrm{sp}})=1$, again a central value. Scale, phase, and the unit of measurement are classical data, and the centre is where they are stored. This is the operational counterpart of the parameter statement of the previous section: the framework does not merely contain $c$-numbers, it normalizes its states by them.
+**3. The central normalizations.** The two normalizations that the framework imposes on its states are central conditions. The trace-one condition is $\mathrm{Tr}(\tilde{Ϛ}_{\Psi})=1$ — the left side is a central scalar, so the condition is a statement about the centre — and the normalization of a spinor is $\mathrm{Tr}(\tilde{Ξ}_{\mathrm{sp}}^{\dagger}\tilde{Ξ}_{\mathrm{sp}})=1$, again a central value. Scale, phase, and the unit of measurement are classical data, and the centre is where they are stored. This is the operational counterpart of the parameter statement of the previous section: the framework does not merely contain $c$-numbers, it normalizes its states by them.
 
 **4. The centre through the passage $\mathbb{R}\to\mathbb{C}\to\mathbb{H}$.** The three division algebras have centres $\mathbb{R}$, $\mathbb{R}$, and $\mathbb{C}$ respectively:
 $$

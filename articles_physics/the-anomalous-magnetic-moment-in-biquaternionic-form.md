@@ -32,7 +32,7 @@ Two minus signs cancel in the second display, one from $i^2$ and one from $\vec 
 
 **The propagator.** The conventions of the internal fermion line are those of the companion *The Feynman Propagator in Biquaternionic Form*, and there it is written as an action on a state,
 $$S_F(p):\quad w\,\longmapsto\frac{-p_0\,w\,\vec e_x+\sum_k  p_k\,\vec e_k\,w\,\vec e_y+im\,w}{p^2-m^{2}\,c^{2}+i\epsilon} ,$$
-with $p^2=p_0^2-\sum_kp_k^2$. The factor $i$ of the numerator is what shortens it: distributing the outer $i$ of the companion's display turns $i\cdot i$ into $-1$ in each of the first two terms and leaves $i\,m$ in the third. The denominator $p^2-m^{2}\,c^{2}$ is $-\tilde P\tilde P^{\natural}-m^2$ for the wave biquaternion $\tilde P=ip_0e_t+\vec p$ of that companion, whose norm is $\tilde P\tilde P^{\natural}=-p^2$.
+with $p^2=p_0^2-\sum_kp_k^2$. The factor $i$ of the numerator is what shortens it: distributing the outer $i$ of the companion's display turns $i\cdot i$ into $-1$ in each of the first two terms and leaves $i\,m$ in the third. The denominator $p^2-m^{2}\,c^{2}$ is $-\tilde P_{\Phi}\tilde P_{\Phi}^{\natural}-m^2$ for the wave biquaternion $\tilde P_{\Phi}=ip_0e_t+\vec p$ of that companion, whose norm is $\tilde P_{\Phi}\tilde P_{\Phi}^{\natural}=-p^2$.
 
 **The traces.** Two traces are used, and they are not the same one. On the algebra the trace of a product is twice the scalar part, $\mathrm{Tr}_2(\tilde Q_1\tilde Q_2)=2\mathrm{Sc}(\tilde Q_1\tilde Q_2)$, the plain form. On the operators the trace is four-by-four and factorizes, $\mathrm{tr}(L_aR_b)=4\mathrm{Sc}(a)\mathrm{Sc}(b)$, the two multipliers contributing separately; both are conventions of *Matrix Representations Conventions* and are cited, not derived. The fine-structure constant is $\alpha=e^2/(\frac{4\,m\,c^{2}\,\pi\,\epsilon_{0}}{k_m})$, and every mass enters through the mass wave number $k_m=mc/\hbar$.
 
@@ -85,9 +85,9 @@ $$\boxed{\;\text{magnetic: }i\vec e_m\in\mathbb{B}_{\Psi}\ \text{(Hermitian, inf
 \text{electric: }i\vec e_k(\cdot)\vec e_z\in\mathbb{B}_{\Phi}\ \text{(anti-Hermitian, material)}\;}.$$
 Both classes were verified: $(i\vec e_m)^{*}=i\vec e_m$ and $\vec e_z^{*}=-\vec e_z$, and the products of the two classes come out opposite.
 
-The magnetic coupling to an external field is a rotation-type structure, and its direction $i\vec e_m$ is the very object that carries the spin, $\tilde S_m=\frac{m\,c}{2\,k_m}i\vec e_m$, in the companion *Angular Momentum and Spin in Biquaternionic Form*. The anomaly, being a correction to the magnetic structure, is an $\mathbb{B}_{\Psi}$ effect: the same sector as the observable it corrects. The electric (boost-type) structure is the material-sector one, and the convection (metric) part is central, in neither sector.
+The magnetic coupling to an external field is a rotation-type structure, and its direction $i\vec e_m$ is the very object that carries the spin, $\tilde S_{\Psi,m}=\frac{m\,c}{2\,k_m}i\vec e_m$, in the companion *Angular Momentum and Spin in Biquaternionic Form*. The anomaly, being a correction to the magnetic structure, is an $\mathbb{B}_{\Psi}$ effect: the same sector as the observable it corrects. The electric (boost-type) structure is the material-sector one, and the convection (metric) part is central, in neither sector.
 
-**The spin.** The rotation bivector acts on a state as a left multiplication by $i\vec e_m$, which is twice the spin generator, $\frac{2\,k_m\,\tilde{S}_{m}}{m\,c}$. At the first direction, $\mathcal G_{12}$ acts as multiplication by $i\vec e_z=\frac{2\,k_m\,\tilde{S}_{3}}{m\,c}$. Two sectors, one bivector algebra, and the anomaly's structure is the informational one.
+**The spin.** The rotation bivector acts on a state as a left multiplication by $i\vec e_m$, which is twice the spin generator, $\frac{2\,k_m\,\tilde{S}_{\Psi,m}}{m\,c}$. At the first direction, $\mathcal G_{12}$ acts as multiplication by $i\vec e_z=\frac{2\,k_m\,\tilde{S}_{\Psi,3}}{m\,c}$. Two sectors, one bivector algebra, and the anomaly's structure is the informational one.
 
 **The bivector algebra.** The Lorentz generator of the pair is half the operator of the pair, and the closure of the six on the Lorentz algebra is a statement about the operators and not about the elements. It is therefore stated where the operators are written out, in §*The Reduction of a Numerator*; what the objects show without the operators is the Hermiticity split just read: the three rotations are single elements and their class is read off them, and the three timelike pairs are two-sided and their class is read off the two multipliers.
 
@@ -152,7 +152,7 @@ against the measured $1.15965218073\times10^{-3}$: agreement to $5\times10^{-11}
 
 **The algebra's own.**
 
-- *The sector placement of the two vertex structures.* The magnetic (bivector, rotation-type) structure is the $\mathbb{B}_{\Psi}$ direction $i\vec e_m$, the same sector as the spin generators $\tilde S_m=\frac{m\,c}{2\,k_m}i\vec e_m$; the electric (timelike-pair) structure is the two-sided insertion $i\vec e_k(\cdot)\vec e_z$, anti-Hermitian, in $\mathbb{B}_{\Phi}$; the convection (metric) structure is central.
+- *The sector placement of the two vertex structures.* The magnetic (bivector, rotation-type) structure is the $\mathbb{B}_{\Psi}$ direction $i\vec e_m$, the same sector as the spin generators $\tilde S_{\Psi,m}=\frac{m\,c}{2\,k_m}i\vec e_m$; the electric (timelike-pair) structure is the two-sided insertion $i\vec e_k(\cdot)\vec e_z$, anti-Hermitian, in $\mathbb{B}_{\Phi}$; the convection (metric) structure is central.
 - *The Gordon split as the symmetric/antisymmetric split of a product of two directions*, done in the algebra's own objects.
 - *The six bivectors.* Three are single elements, $i\vec e_m$, and three are two-sided; the class of each names its sector.
 
@@ -240,7 +240,7 @@ The algebra supplies the tensor structure, the sector placement and the conventi
 | $S_{\mu\nu}=\tfrac12\mathcal G_{\mu\nu}=-i\sigma_{\mu\nu}$ | Lorentz generator of the pair, half the bivector; the six close on the Lorentz algebra |
 | Product of two directions | the metric $\varepsilon_\mu$ on the diagonal and nothing off it, plus the bivector |
 | $\mathbb{B}_{\Psi}$, $\mathbb{B}_{\Phi}$ | The two sectors, and $i\,\mathbb{B}_{\Psi}=\mathbb{B}_{\Phi}$ |
-| $\tilde S_m=\frac{m\,c}{2\,k_m}i\vec e_m$ | Spin generator; $\mathcal G_{12}$ acts as $\frac{2\,k_m\,\tilde{S}_{3}}{m\,c}$ |
+| $\tilde S_{\Psi,m}=\frac{m\,c}{2\,k_m}i\vec e_m$ | Spin generator; $\mathcal G_{12}$ acts as $\frac{2\,k_m\,\tilde{S}_{\Psi,3}}{m\,c}$ |
 | $L_aR_b$, $L_aR_bX=aXb$ | The operator of the two multipliers, used in §*The Reduction of a Numerator* only |
 | $iL_{e_\mu}R_{\vec e_{\nu(\mu)}}$, $\nu(t)=x$, $\nu(k)=y$ | The operator of the direction $\mu$ |
 | $\mathrm{tr}(L_aR_b)=4\mathrm{Sc}(a)\mathrm{Sc}(b)$ | Operator trace, factorized into the two multipliers |

@@ -146,7 +146,7 @@ The structure is the algebraic form of a **light ray**:
 On the material slice, the massless momentum is
 
 $$
-\tilde P=i\frac{E}{c}e_t+\frac{E}{c}\,\vec u_p,
+\tilde P_{\Phi}=i\frac{E}{c}e_t+\frac{E}{c}\,\vec u_p,
 \qquad
 B=\frac{E}{c},
 \qquad
@@ -170,14 +170,14 @@ $$
 and the non-zero term of the spectral writing is
 
 $$
-\tilde P=2i\frac{E}{c}\,\tilde\Pi,
+\tilde P_{\Phi}=2i\frac{E}{c}\,\tilde\Pi,
 $$
 
 with the other coefficient zero.
 
 The massless limit of the Doppler pair is a limit of the eigenvalues, not a failure of the decomposition: $\lambda_-\to0$ and $\lambda_+\to2iE/c$. The cell is the boundary of the two-mode cell at $N=0$, and the limit is continuous in the element.
 
-On the material slice the idempotent is Hermitian: $\tilde\Pi=\tfrac12(e_t-i\vec u_p)$ satisfies $\tilde\Pi^*=\tilde\Pi$, and it is rank one and trace one. It is a pure boundary state of the informational sector: a rank-one Hermitian density matrix of zero norm. The element $\tilde P=2iE/c\,\tilde\Pi$ is anti-Hermitian, so the momentum is not a state; the state is the idempotent, and the momentum is an imaginary multiple of it.
+On the material slice the idempotent is Hermitian: $\tilde\Pi=\tfrac12(e_t-i\vec u_p)$ satisfies $\tilde\Pi^*=\tilde\Pi$, and it is rank one and trace one. It is a pure boundary state of the informational sector: a rank-one Hermitian density matrix of zero norm. The element $\tilde P_{\Phi}=2iE/c\,\tilde\Pi$ is anti-Hermitian, so the momentum is not a state; the state is the idempotent, and the momentum is an imaginary multiple of it.
 
 ## The Zero Divisor
 

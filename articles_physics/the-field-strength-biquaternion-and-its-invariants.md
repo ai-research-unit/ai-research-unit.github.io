@@ -8,9 +8,9 @@ $$
 \tilde{F} = \vec F = i\sqrt{\epsilon}\,\vec E - \sqrt{\mu}\,\vec H
 $$
 
-as the single biquaternionic object that carries the electromagnetic field, and showed that, in a medium with permittivity $\epsilon$ and permeability $\mu$, the four Maxwell equations collapse into a single equation $\tilde{\nabla}\tilde{F} = -\sqrt{\mu}\,\tilde{J}$. In that article $\tilde{F}$ appears as a means to an end: the compact rewriting of the field equations. This article studies $\tilde{F}$ for its own sake.
+as the single biquaternionic object that carries the electromagnetic field, and showed that, in a medium with permittivity $\epsilon$ and permeability $\mu$, the four Maxwell equations collapse into a single equation $\tilde{\nabla}\tilde{F} = -\sqrt{\mu}\,\tilde{J}_{\Phi}$. In that article $\tilde{F}$ appears as a means to an end: the compact rewriting of the field equations. This article studies $\tilde{F}$ for its own sake.
 
-Two features make the field strength worth treating separately. First, $\tilde{F}$ is *not* a four-vector. Unlike the four-potential $\tilde{A}$, whose scalar part is imaginary and whose vector part is real, the field-strength biquaternion has **vanishing scalar part** and a **mixed real/imaginary vector part**: its imaginary half carries the electric field and its real half the magnetic field. The field strength is therefore a different kind of object from the kinematic four-vectors that live in the material subspace $\mathbb{B}_{\Phi}$, and its Lorentz transformation law is correspondingly different. Second, the **biquaternion norm** (the quaternionic norm of the conventions) evaluated on $\tilde{F}$ is a complex scalar whose real and imaginary parts are the two classical Lorentz invariants, $\vec E^2 - c^2\vec B^2$ and $\vec E\cdot\vec B$, up to the medium factors $-\epsilon$ and $-2\epsilon c$. The algebraic apparatus built to describe the Minkowski metric thus delivers the electromagnetic invariants as well.
+Two features make the field strength worth treating separately. First, $\tilde{F}$ is *not* a four-vector. Unlike the four-potential $\tilde{A}_{\Phi}$, whose scalar part is imaginary and whose vector part is real, the field-strength biquaternion has **vanishing scalar part** and a **mixed real/imaginary vector part**: its imaginary half carries the electric field and its real half the magnetic field. The field strength is therefore a different kind of object from the kinematic four-vectors that live in the material subspace $\mathbb{B}_{\Phi}$, and its Lorentz transformation law is correspondingly different. Second, the **biquaternion norm** (the quaternionic norm of the conventions) evaluated on $\tilde{F}$ is a complex scalar whose real and imaginary parts are the two classical Lorentz invariants, $\vec E^2 - c^2\vec B^2$ and $\vec E\cdot\vec B$, up to the medium factors $-\epsilon$ and $-2\epsilon c$. The algebraic apparatus built to describe the Minkowski metric thus delivers the electromagnetic invariants as well.
 
 This article is the declared foundation for three later articles on electromagnetism in media, on the Lorentz force, and on radiation from accelerated charges. It therefore fixes the field-strength notation once and for all. The **canonical objects** are: the field-strength biquaternion $\tilde{F} = i\sqrt{\epsilon}\,\vec E - \sqrt{\mu}\,\vec H$; the electric and magnetic fields $\vec E$ and $\vec H$, together with the magnetic induction $\vec B = \mu\vec H$; the medium speed of light $c = 1/\sqrt{\epsilon\mu}$; the Riemann–Silberstein vector $\vec N = \vec E + ic\vec B$; the two invariants $I_1 = \vec E^2 - c^2\vec B^2$ and $I_2 = \vec E\cdot\vec B$; and the energy density $W$ and Poynting vector $\vec S$. Nothing in this list is new notation; the first three come unchanged from the Maxwell article, and the rest are assembled from them.
 
@@ -37,13 +37,13 @@ so $\tilde{F}$ is a **pure-vector** biquaternion. Its three complex components $
 
 The normalization factors $\sqrt{\epsilon}$ and $\sqrt{\mu}$ are the natural ones for a medium. Each term has the dimension of the square root of an energy density, since $\epsilon E^2$ and $\mu H^2$ are both energy densities; consequently $\tilde{F}$ has dimension $\sqrt{\text{energy density}}$, and the biquaternion norm calculated below has the dimension of an energy density. With the constitutive relation $\vec B = \mu\vec H$ the magnetic term may also be written $\sqrt{\mu}\,\vec H = \vec B/\sqrt{\mu}$, so the field strength can equally be regarded as the pair $(\sqrt{\epsilon}\,\vec E, \vec B/\sqrt{\mu})$.
 
-The field strength is not an independent object: it is obtained from the potential biquaternion $\tilde{A} = i\,a'_t + \vec A$ by differentiation with the gradient $\tilde{\nabla}$ of *Operator and Calculus Conventions*, §*The Gradient*, whose conjugate is $\tilde{\nabla}^{\natural}$ and whose d'Alembertian is $\Box=\tilde{\nabla}\tilde{\nabla}^{\natural}=\partial^2/\partial R_t^2+\Delta_Q$. The construction is
+The field strength is not an independent object: it is obtained from the potential biquaternion $\tilde{A}_{\Phi} = i\,a'_t + \vec A$ by differentiation with the gradient $\tilde{\nabla}$ of *Operator and Calculus Conventions*, §*The Gradient*, whose conjugate is $\tilde{\nabla}^{\natural}$ and whose d'Alembertian is $\Box=\tilde{\nabla}\tilde{\nabla}^{\natural}=\partial^2/\partial R_t^2+\Delta_Q$. The construction is
 
 $$
-\tilde{F} = \frac{1}{\sqrt{\mu}}\Bigl(\tilde{\nabla}^{\natural}\tilde{A} - \mathrm{Sc}\!\left(\tilde{\nabla}^{\natural}\tilde{A}\right)\Bigr).
+\tilde{F} = \frac{1}{\sqrt{\mu}}\Bigl(\tilde{\nabla}^{\natural}\tilde{A}_{\Phi} - \mathrm{Sc}\!\left(\tilde{\nabla}^{\natural}\tilde{A}_{\Phi}\right)\Bigr).
 $$
 
-This is the vector part of $\tilde{\nabla}^{\natural}\tilde{A}$ divided by $\sqrt\mu$. The gradient stands to the left of the potential. The product is the algebra product, and no operator beyond the gradient and its conjugate enters. In Heaviside–Lorentz units, where the two medium parameters are $1$, this is the familiar $\tilde{F}=\tilde{\nabla}^{\natural}\tilde{A}-\mathrm{Sc}(\tilde{\nabla}^{\natural}\tilde{A})$ of the companion articles. In a medium with $\sqrt\mu\ne1$ the division is not optional, because $\tilde{F}$ and $\mathrm{Vect}(\tilde{\nabla}^{\natural}\tilde{A})$ then differ in dimension.
+This is the vector part of $\tilde{\nabla}^{\natural}\tilde{A}_{\Phi}$ divided by $\sqrt\mu$. The gradient stands to the left of the potential. The product is the algebra product, and no operator beyond the gradient and its conjugate enters. In Heaviside–Lorentz units, where the two medium parameters are $1$, this is the familiar $\tilde{F}=\tilde{\nabla}^{\natural}\tilde{A}_{\Phi}-\mathrm{Sc}(\tilde{\nabla}^{\natural}\tilde{A}_{\Phi})$ of the companion articles. In a medium with $\sqrt\mu\ne1$ the division is not optional, because $\tilde{F}$ and $\mathrm{Vect}(\tilde{\nabla}^{\natural}\tilde{A}_{\Phi})$ then differ in dimension.
 
 In tensor language the same object is the antisymmetric rank-two tensor
 
@@ -55,7 +55,7 @@ F_{0k} = \frac{iE_k}{c},
 F_{jk} = \epsilon_{jkl}B_l .
 $$
 
-It has six independent components — three electric and three magnetic — which is exactly the information carried by the three complex components $F_k$ of the pure-vector biquaternion. The six components are the six planes of the next section, each a product of two units: the three $F_{0k}$ sit on the planes that contain the time direction and the three $F_{jk}$ on the purely spatial planes. The identification is exact, with one constant: $\mathrm{Vect}(\tilde{\nabla}^{\natural}\tilde{A})=\sqrt{\mu}\,\tilde{F}$ identically. Indeed, $\partial/\partial R_t=-(i/c)\partial/\partial r'_t$ and $A_0=+i\,a'_t$ give $\mathrm{Vect}(\tilde{\nabla}^{\natural}\tilde{A})=(i/c)\vec E-\vec B$, and $\sqrt{\mu}/c=\mu\sqrt{\epsilon}$. The component formulas above and the combination $F_k = i\sqrt{\epsilon}E_k - \sqrt{\mu}H_k$ are then the same statement read component by component.
+It has six independent components — three electric and three magnetic — which is exactly the information carried by the three complex components $F_k$ of the pure-vector biquaternion. The six components are the six planes of the next section, each a product of two units: the three $F_{0k}$ sit on the planes that contain the time direction and the three $F_{jk}$ on the purely spatial planes. The identification is exact, with one constant: $\mathrm{Vect}(\tilde{\nabla}^{\natural}\tilde{A}_{\Phi})=\sqrt{\mu}\,\tilde{F}$ identically. Indeed, $\partial/\partial R_t=-(i/c)\partial/\partial r'_t$ and $A_0=+i\,a'_t$ give $\mathrm{Vect}(\tilde{\nabla}^{\natural}\tilde{A}_{\Phi})=(i/c)\vec E-\vec B$, and $\sqrt{\mu}/c=\mu\sqrt{\epsilon}$. The component formulas above and the combination $F_k = i\sqrt{\epsilon}E_k - \sqrt{\mu}H_k$ are then the same statement read component by component.
 
 ## The Place of the Field Strength in the Algebra
 
@@ -264,7 +264,7 @@ $$
 \vec E_2\cdot\vec B_2 = \vec E\cdot\vec B.
 $$
 
-Both invariants are therefore unchanged. This is consistent with the rotor-conjugation transformation of the four-potential established in the Maxwell article. The field strength is built from $\tilde{A}$ by differentiation. Differentiating a quantity that transforms by rotor conjugation produces a field that transforms in the antisymmetric-tensor representation, whose two independent scalar contractions are exactly $I_1$ and $I_2$.
+Both invariants are therefore unchanged. This is consistent with the rotor-conjugation transformation of the four-potential established in the Maxwell article. The field strength is built from $\tilde{A}_{\Phi}$ by differentiation. Differentiating a quantity that transforms by rotor conjugation produces a field that transforms in the antisymmetric-tensor representation, whose two independent scalar contractions are exactly $I_1$ and $I_2$.
 
 **Scope of the invariance.** A material medium selects a rest frame, and a boost changes the medium. The transformation above is the formal Lorentz transformation of the field tensor with $c$ the medium speed. In vacuum it is the physical Lorentz group and the invariance is exact. In a homogeneous medium it is the covariance of the field tensor at fixed $\epsilon$ and $\mu$, and the phrase *Lorentz invariant* is used in that formal sense. The classification below has the same scope.
 
@@ -454,16 +454,16 @@ The scalar part of $\tilde{F}\tilde{F}^{*}$ is $2W$, twice the (non-negative) en
 **The energy–momentum biquaternion, and the second route to the invariants.** Half the Hermitian form is itself an element of the algebra, and it is the object the electro-gravimagnetic programme calls the **energy–momentum biquaternion**:
 
 $$
-\tilde{\Sigma} = \tfrac{1}{2}\,\tilde{F}\tilde{F}^{*} = W\,e_t + \frac{i}{c}\,\vec S .
+\tilde{\Sigma}_{\Psi} = \tfrac{1}{2}\,\tilde{F}\tilde{F}^{*} = W\,e_t + \frac{i}{c}\,\vec S .
 $$
 
-It is Hermitian, $\tilde{\Sigma}^{*} = \tilde{\Sigma}$, with real scalar part $W$ and imaginary vector part $(i/c)\vec S$. For an element of that shape the biquaternion norm is real — and indefinite — and
+It is Hermitian, $\tilde{\Sigma}_{\Psi}^{*} = \tilde{\Sigma}_{\Psi}$, with real scalar part $W$ and imaginary vector part $(i/c)\vec S$. For an element of that shape the biquaternion norm is real — and indefinite — and
 
 $$
-\langle\tilde{\Sigma}\rangle_{\natural} = \mathrm{Sc}\bigl(\tilde{\Sigma}\tilde{\Sigma}^{\natural}\bigr) = W^2 - \frac{\|\vec S\|^2}{c^2} = \frac{\epsilon^2}{4}\,I_1^2 + \frac{\epsilon}{\mu}\,I_2^2 .
+\langle\tilde{\Sigma}_{\Psi}\rangle_{\natural} = \mathrm{Sc}\bigl(\tilde{\Sigma}_{\Psi}\tilde{\Sigma}_{\Psi}^{\natural}\bigr) = W^2 - \frac{\|\vec S\|^2}{c^2} = \frac{\epsilon^2}{4}\,I_1^2 + \frac{\epsilon}{\mu}\,I_2^2 .
 $$
 
-The last equality is the point of the paragraph: the Hermitian form is not a scalar under Lorentz transformations, but its contraction **is**, and the contraction returns the two invariants. The energy density and the Poynting vector are therefore tied to the same pair $(I_1, I_2)$ that classifies the field. The programme states the same relation with its pseudonorm; on a Hermitian element that pseudonorm and the corpus's norm $\langle\cdot\rangle_{\natural}$ agree, so the two forms are one statement, and in vacuum ($\epsilon = \mu = 1$) it reads $\langle\tilde{\Sigma}\rangle_{\natural} = \tfrac14 I_1^2 + I_2^2$.
+The last equality is the point of the paragraph: the Hermitian form is not a scalar under Lorentz transformations, but its contraction **is**, and the contraction returns the two invariants. The energy density and the Poynting vector are therefore tied to the same pair $(I_1, I_2)$ that classifies the field. The programme states the same relation with its pseudonorm; on a Hermitian element that pseudonorm and the corpus's norm $\langle\cdot\rangle_{\natural}$ agree, so the two forms are one statement, and in vacuum ($\epsilon = \mu = 1$) it reads $\langle\tilde{\Sigma}_{\Psi}\rangle_{\natural} = \tfrac14 I_1^2 + I_2^2$.
 
 ### The Flow the Field Generates: The Four Types
 
@@ -585,7 +585,7 @@ Finally, the invariants classify the field into null, electric, magnetic, and ge
 | $\star$ | Hodge dual, $\star(\vec E,\vec B) = (c\vec B, -\vec E/c)$, $\star^2 = -1$ |
 | $W = \tfrac{1}{2}(\epsilon\vec E^2 + \mu\vec H^2)$ | Electromagnetic energy density |
 | $\vec S = \vec E\times\vec H$ | Poynting vector |
-| $\tilde{\Sigma} = \tfrac{1}{2}\tilde{F}\tilde{F}^{*} = W e_t + \tfrac{i}{c}\vec S$ | Energy–momentum biquaternion (Hermitian); $\langle\tilde{\Sigma}\rangle_{\natural} = W^2 - \|\vec S\|^2/c^2$ |
+| $\tilde{\Sigma}_{\Psi} = \tfrac{1}{2}\tilde{F}\tilde{F}^{*} = W e_t + \tfrac{i}{c}\vec S$ | Energy–momentum biquaternion (Hermitian); $\langle\tilde{\Sigma}_{\Psi}\rangle_{\natural} = W^2 - \|\vec S\|^2/c^2$ |
 | $\tilde F_H, \tilde F_0$ | Amplitude and phase of the general polar decomposition, $\tilde F=\tilde F_H\tilde F_0$ |
 | $\tilde u_{\mathrm r}$ | Unit factor of the phase $\tilde F_0$, the polarization rotor |
 | $\gamma = 1/\sqrt{1-v^2/c^2}$ | Lorentz factor (a number, not an element of the algebra) |
@@ -605,7 +605,7 @@ Finally, the invariants classify the field into null, electric, magnetic, and ge
 - Roger Penrose and Wolfgang Rindler, *Spinors and Space-Time* (Cambridge, 1984), for the self-dual and anti-self-dual decomposition of the field tensor.
 - Pertti Lounesto, *Clifford Algebras and Spinors* (Cambridge, 2001), for the representation theory of the Lorentz group and its two three-dimensional complex representations.
 - L. A. Alexeyeva, "Maxwell Equations, Their Hamiltonian and Biquaternionic Forms and Properties of Their Solutions" (2016), for the biquaternionic formulation of the field equations.
-- L. A. Alexeyeva, "Biquaternions algebra and its applications by solving of some theoretical physics equations", *Clifford Analysis, Clifford Algebras and Their Applications* **7**(1) (2012) 19–39 (arXiv:1302.0523), for the energy–momentum biquaternion $\tilde{\Sigma}$, its pseudonorm and its identification with the two field invariants.
+- L. A. Alexeyeva, "Biquaternions algebra and its applications by solving of some theoretical physics equations", *Clifford Analysis, Clifford Algebras and Their Applications* **7**(1) (2012) 19–39 (arXiv:1302.0523), for the energy–momentum biquaternion $\tilde{\Sigma}_{\Psi}$, its pseudonorm and its identification with the two field invariants.
 - A. Waser, "Application of Bi-Quaternions in Physics" (2000, updated 2007), for the biquaternionic treatment of the field and its energy–momentum.
 - Arkadiusz Jadczyk and Jerzy Szulga, "A Comment on 'On the Rotation Matrix in Minkowski Space-time' by Özdemir and Erdoğdu", arXiv:1412.5581 [physics.gen-ph] (2014), for the exponential of a Lorentz generator in closed form in terms of the two field invariants, its two regimes and its null limit, and the identification of the four field types with the four types of the one-parameter flow; the identities of §*The Flow the Field Generates* were recomputed here, and the identification of the field-strength biquaternion with the generator is the corpus's, not the source's.
 - E. Minguzzi, "Relativistic Chasles' Theorem and the Conjugacy Classes of the Inhomogeneous Lorentz Group", arXiv:1205.4131 [gr-qc] (2013), for the classification of Lorentz generators into standard forms up to conjugacy, which §*The Flow the Field Generates* cites and does not derive.

@@ -145,13 +145,13 @@ $$
 In the framework's interpretation, a plane wave carries a wave **four-vector** in the material sector,
 
 $$
-\tilde P\,k_{\mathrm{mo}} = \frac{i\omega}{c}\,e_t + \vec k \in \mathbb{B}_{\Phi},
+\tilde P_{\Phi}\,k_{\mathrm{mo}} = \frac{i\omega}{c}\,e_t + \vec k \in \mathbb{B}_{\Phi},
 $$
 
 whose biquaternion norm is
 
 $$
-\langle\tilde P\,k_{\mathrm{mo}}\rangle_{\natural}  = \langle\tilde P,\tilde P\rangle_{\natural}\frac{k_m^{2}}{m^{2}\,c^{2}}=\frac{k_m^{2}\,\tilde{P}\,\tilde{P}^{\natural}}{m^{2}\,c^{2}}= -\frac{\omega^2}{c^2} + k^2
+\langle\tilde P_{\Phi}\,k_{\mathrm{mo}}\rangle_{\natural}  = \langle\tilde P_{\Phi},\tilde P_{\Phi}\rangle_{\natural}\frac{k_m^{2}}{m^{2}\,c^{2}}=\frac{k_m^{2}\,\tilde{P}_{\Phi}\,\tilde{P}_{\Phi}^{\natural}}{m^{2}\,c^{2}}= -\frac{\omega^2}{c^2} + k^2
 = k^2\left(1 - \frac{k^2}{4\,k_m^{2}}\right).
 $$
 
@@ -324,7 +324,7 @@ $$
 the last equality being the standard Fresnel (Gaussian) integral in three dimensions. The result is a complex scalar times $e_t$:
 
 $$
-\tilde P_0(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z, r'_t) = G_{\mathrm{prop},0}(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z,r'_t)\,e_t \in \mathbb{B}_{C}.
+\tilde P_{\Phi,0}(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z, r'_t) = G_{\mathrm{prop},0}(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z,r'_t)\,e_t \in \mathbb{B}_{C}.
 $$
 
 The kernel is **central**, its phase is the classical action $S_{\mathrm{cl}} = m|r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z|^2/2r'_t$ divided by $\frac{m\,c}{k_m}$, and its prefactor is a function of the central $i$ and of the central real numbers $m,\frac{m\,c}{k_m},r'_t$. The square root $\sqrt{i}$ appearing in the prefactor is taken inside the centre, since the centre is a copy of $\mathbb{C}$; the measure factor does not leave the centre.
@@ -375,7 +375,7 @@ It is not a unit-norm element of the Lorentz group: the Lorentz rotor $\tilde U_
 
 The free problem displays the subcategory's central convention most clearly, so it is worth stating in full.
 
-The framework's state module $\mathbb{B}\tilde\Pi \cong \mathbb{C}^2$ is the algebra's generic two-state module. The free Hamiltonian is central, so the free dynamics acts on it as the identity; the two components are exactly degenerate and no relative phase accumulates. For a spin-0 problem the module factor can therefore be fixed once and for all, and the physical content is carried by the scalar envelope. The vector-slot elements $\tilde S_k =\frac{m\,c}{2\,k_m}i\vec e_k$, which the companion articles on angular momentum and on the hydrogen atom use as the algebra's spin operators, are conserved by the free evolution and generate no motion; a spin orientation, if one is attached to the module, is a spectator of the free dynamics. The genuinely spinorial effects — precession in a magnetic field, Stern–Gerlach splitting, resonance — require a Hamiltonian that is **not** central, and they belong to the sibling spin subcategories, not here.
+The framework's state module $\mathbb{B}\tilde\Pi \cong \mathbb{C}^2$ is the algebra's generic two-state module. The free Hamiltonian is central, so the free dynamics acts on it as the identity; the two components are exactly degenerate and no relative phase accumulates. For a spin-0 problem the module factor can therefore be fixed once and for all, and the physical content is carried by the scalar envelope. The vector-slot elements $\tilde S_{\Psi,k} =\frac{m\,c}{2\,k_m}i\vec e_k$, which the companion articles on angular momentum and on the hydrogen atom use as the algebra's spin operators, are conserved by the free evolution and generate no motion; a spin orientation, if one is attached to the module, is a spectator of the free dynamics. The genuinely spinorial effects — precession in a magnetic field, Stern–Gerlach splitting, resonance — require a Hamiltonian that is **not** central, and they belong to the sibling spin subcategories, not here.
 
 Two further structural points belong to this section.
 
@@ -392,7 +392,7 @@ Two further structural points belong to this section.
 - **Centrality of the free Hamiltonian, made manifest.** The free Hamiltonian is literally a scalar multiple of $e_t$: $H = c r_t e_t \in \mathbb{B}_{C}$. The free evolution is therefore a central phase, the free propagator is a central element, and the module factor is frozen. In a representation in which the two components were written as an arbitrary pair, this would have to be checked by hand; here it is a one-line consequence of $H \in \mathbb{B}_{C}$.
 - **The kinetic term as a biquaternion norm.** $T = -\tilde p^2 c/(2\,m\,c) = \tilde p\tilde p^{\natural}/2m$. The sign that makes the kinetic energy positive is the sign of the biquaternion norm on the Hermitian subspace, and the reality of the kinetic term is the statement that $\tilde p$ is Hermitian.
 - **A canonical complex structure.** The phase $\exp(i(\vec k\cdot(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)-\omega r'_t))$ uses the central scalar imaginary, which the algebra supplies; it is not a chosen complex structure. This is the free-particle instance of the property that the path-integral phase is central and canonical.
-- **A material-sector location for the dispersion.** The wave four-vector $\tilde P\,k_{\mathrm{mo}} = i\omega/c\,e_t + \vec k$ is an element of $\mathbb{B}_{\Phi}$, and its biquaternion norm $\langle\tilde P\,k_{\mathrm{mo}}\rangle_{\natural}  = k^2(1 -\frac{k^{2}}{4\,k_m^{2}})$ shows that the free non-relativistic solutions are spacelike and off the null cone — the cone that the last article of the subcategory treats as a physical locus.
+- **A material-sector location for the dispersion.** The wave four-vector $\tilde P_{\Phi}\,k_{\mathrm{mo}} = i\omega/c\,e_t + \vec k$ is an element of $\mathbb{B}_{\Phi}$, and its biquaternion norm $\langle\tilde P_{\Phi}\,k_{\mathrm{mo}}\rangle_{\natural}  = k^2(1 -\frac{k^{2}}{4\,k_m^{2}})$ shows that the free non-relativistic solutions are spacelike and off the null cone — the cone that the last article of the subcategory treats as a physical locus.
 - **The probability from the trace, not from the biquaternion norm.** The positivity of $\rho = \mathrm{Tr}(\tilde{Ξ}_{\mathrm{sp}}^{\dagger}\tilde{Ξ}_{\mathrm{sp}})$ is a property of the Hermitian form on $\mathbb{B}_{\Psi}$, read through the trace, while the biquaternion norm of the same spinor vanishes identically because the state module lies on the zero divisor cone. The two quadratic structures of the algebra play distinct roles, and the free problem exhibits both at once.
 
 **What remains open.**
@@ -424,7 +424,7 @@ $$
 
 and the kinetic energy is the **biquaternion norm of the momentum**. Because $H$ is central, the free dynamics is a scalar dynamics: plane waves $\tilde{Ξ}_{\mathrm{sp},\vec k} = \xi \exp(i(\vec k\cdot(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)-\omega r'_t))$ have the dispersion $\omega =\frac{c\,k^{2}}{2\,k_m}$ for every constant module element $\xi$, the two components are exactly degenerate, the phase is central, and the module orientation is frozen for all time. The generator $-\frac{k_m\,i\,H}{m\,c}$ lies in the material sector $\mathbb{B}_{\Phi}$.
 
-The wave four-vector $\tilde P\,k_{\mathrm{mo}} = i\omega/c\,e_t + \vec k$ has biquaternion norm $\langle\tilde P\,k_{\mathrm{mo}}\rangle_{\natural}  = k^2(1-\frac{k^{2}}{4\,k_m^{2}})$, so the free non-relativistic solutions are spacelike and strictly off the null (zero divisor) cone. The probability density is $\rho = \mathrm{Tr}(\tilde{Ξ}_{\mathrm{sp}}^{\dagger}\tilde{Ξ}_{\mathrm{sp}})$, positive definite, while the biquaternion norm of the same spinor vanishes identically because the state module consists of zero divisors; probabilities come from the normalised Hermitian form, read through the trace, not from $\langle\cdot\rangle_{\natural}$. The continuity equation $\partial/\partial r'_t\,\rho + \nabla\cdot\vec J = 0$ holds with $J_k =\frac{c}{2\,k_m\,i}\mathrm{Tr}(\tilde{Ξ}_{\mathrm{sp}}^{\dagger}\partial/\partial R_k\,\tilde{Ξ}_{\mathrm{sp}} - (\partial/\partial R_k\,\tilde{Ξ}_{\mathrm{sp}})^\dagger\tilde{Ξ}_{\mathrm{sp}})$, pairing an $\mathbb{B}_{\Psi}$ density with an $\mathbb{B}_{\Phi}$ current.
+The wave four-vector $\tilde P_{\Phi}\,k_{\mathrm{mo}} = i\omega/c\,e_t + \vec k$ has biquaternion norm $\langle\tilde P_{\Phi}\,k_{\mathrm{mo}}\rangle_{\natural}  = k^2(1-\frac{k^{2}}{4\,k_m^{2}})$, so the free non-relativistic solutions are spacelike and strictly off the null (zero divisor) cone. The probability density is $\rho = \mathrm{Tr}(\tilde{Ξ}_{\mathrm{sp}}^{\dagger}\tilde{Ξ}_{\mathrm{sp}})$, positive definite, while the biquaternion norm of the same spinor vanishes identically because the state module consists of zero divisors; probabilities come from the normalised Hermitian form, read through the trace, not from $\langle\cdot\rangle_{\natural}$. The continuity equation $\partial/\partial r'_t\,\rho + \nabla\cdot\vec J = 0$ holds with $J_k =\frac{c}{2\,k_m\,i}\mathrm{Tr}(\tilde{Ξ}_{\mathrm{sp}}^{\dagger}\partial/\partial R_k\,\tilde{Ξ}_{\mathrm{sp}} - (\partial/\partial R_k\,\tilde{Ξ}_{\mathrm{sp}})^\dagger\tilde{Ξ}_{\mathrm{sp}})$, pairing an $\mathbb{B}_{\Psi}$ density with an $\mathbb{B}_{\Phi}$ current.
 
 A Gaussian packet of initial density width $s_0$ evolves to a Gaussian of width $s(r'_t) = s_0\sqrt{1+(\frac{m\,c\,r'_{t}}{2\,k_m\,ms_{0}^{2}})^2}$ whose centre moves at the group velocity $\frac{c\,k_{0}}{k_m}$, with spreading time $\tau = 2s_0^2/(c/k_m)$; the closed forms were verified against direct momentum-space quadrature to relative errors below $10^{-13}$, and the density, mean, and variance to machine precision, on a superposition rather than a single plane wave. The free kernel
 
@@ -453,8 +453,8 @@ is central, is a complex scalar times $e_t$, and satisfies the composition law, 
 | $\tilde{Ξ}_{\mathrm{sp},\vec k} = \xi \exp(i(\vec k\cdot(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)-\omega r'_t))$ | Plane wave; $\xi \in \mathbb{B}\tilde\Pi$ constant |
 | $\omega(\vec k) =\frac{c\,k^{2}}{2\,k_m}$ | Dispersion relation |
 | $\vec v_g = \partial\omega/\partial\vec k =\frac{c\,\vec k}{k_m}$ | Group velocity; classical velocity |
-| $\tilde P\,k_{\mathrm{mo}} = i\omega/c\,e_t + \vec k$ | Wave four-vector in $\mathbb{B}_{\Phi}$ |
-| $\langle\tilde P\,k_{\mathrm{mo}}\rangle_{\natural} = -\omega^2/c^2 + k^2$ | Biquaternion norm of the wave four-vector; spacelike |
+| $\tilde P_{\Phi}\,k_{\mathrm{mo}} = i\omega/c\,e_t + \vec k$ | Wave four-vector in $\mathbb{B}_{\Phi}$ |
+| $\langle\tilde P_{\Phi}\,k_{\mathrm{mo}}\rangle_{\natural} = -\omega^2/c^2 + k^2$ | Biquaternion norm of the wave four-vector; spacelike |
 | $\rho = \mathrm{Tr}(\tilde{Ξ}_{\mathrm{sp}}^{\dagger}\tilde{Ξ}_{\mathrm{sp}})$ | Probability density, from the trace reading of the Hermitian form |
 | $J_k =\frac{c}{2\,k_m\,i}\mathrm{Tr}(\tilde{Ξ}_{\mathrm{sp}}^{\dagger}\partial/\partial R_k\,\tilde{Ξ}_{\mathrm{sp}} - (\partial/\partial R_k\,\tilde{Ξ}_{\mathrm{sp}})^\dagger\tilde{Ξ}_{\mathrm{sp}})$ | Probability current |
 | $Ξ(r_x,r'_t)$ | Scalar envelope; module factor frozen |

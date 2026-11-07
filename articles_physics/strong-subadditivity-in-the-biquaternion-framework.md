@@ -94,13 +94,13 @@ $$
 $$
 and a state is an element
 $$
-\tilde{Ϛ}_n\in\big(\mathbb{B}_{\Psi}^{\otimes n}\big),\qquad
-\tilde{Ϛ}_n\ge0,\qquad
-\mathrm{Tr}(\tilde{Ϛ}_n)=1 .
+\tilde{Ϛ}_{\Psi,n}\in\big(\mathbb{B}_{\Psi}^{\otimes n}\big),\qquad
+\tilde{Ϛ}_{\Psi,n}\ge0,\qquad
+\mathrm{Tr}(\tilde{Ϛ}_{\Psi,n})=1 .
 $$
 For $n=1$ this is the Bloch ball of the Hermitian GNS companion article; for $n\ge2$ it is the set of $2^n\times2^n$ density matrices, and the entropy functional is
 $$
-S(\tilde{Ϛ}_n)=-\mathrm{Tr}\big(\tilde{Ϛ}_n\log\tilde{Ϛ}_n\big),
+S(\tilde{Ϛ}_{\Psi,n})=-\mathrm{Tr}\big(\tilde{Ϛ}_{\Psi,n}\log\tilde{Ϛ}_{\Psi,n}\big),
 $$
 the ordinary von Neumann entropy with the product trace. Every state of the tensor power is a density matrix, so every theorem about density matrices applies to it. This is the sense in which the framework inherits strong subadditivity.
 
@@ -132,24 +132,24 @@ $$
 $$
 The three elements do not commute in general — $\tilde Q_{\mathrm{AB}}$ is nontrivial on $AB$, $\tilde Q_{\mathrm{BC}}$ on $BC$, and the two share $B$ — so $\log\tilde Q_{\mathrm{AB}}+\log\tilde Q_{\mathrm{BC}}-\log\tilde Q_{\mathrm B}$ is not the logarithm of $\tilde Q_{\mathrm{AB}}\tilde Q_{\mathrm{BC}}\tilde Q_{\mathrm B}^{-1}$. It is the logarithm of $\tilde Q_{ABC}$ by construction: the exponential of a Hermitian algebra element is positive and nonsingular, and its logarithm is that element. Hence
 $$
-\mathrm{Tr}\big[\tilde{Ϛ}_{ABC}\log\tilde Q_{ABC}\big]
-=\mathrm{Tr}\big[\tilde{Ϛ}_{ABC}\log\tilde Q_{\mathrm{AB}}\big]
-+\mathrm{Tr}\big[\tilde{Ϛ}_{ABC}\log\tilde Q_{\mathrm{BC}}\big]
--\mathrm{Tr}\big[\tilde{Ϛ}_{ABC}\log\tilde Q_{\mathrm B}\big],
+\mathrm{Tr}\big[\tilde{Ϛ}_{\Psi,ABC}\log\tilde Q_{ABC}\big]
+=\mathrm{Tr}\big[\tilde{Ϛ}_{\Psi,ABC}\log\tilde Q_{\mathrm{AB}}\big]
++\mathrm{Tr}\big[\tilde{Ϛ}_{\Psi,ABC}\log\tilde Q_{\mathrm{BC}}\big]
+-\mathrm{Tr}\big[\tilde{Ϛ}_{\Psi,ABC}\log\tilde Q_{\mathrm B}\big],
 $$
 and each term is a marginal identity,
 $$
-\mathrm{Tr}\big[\tilde{Ϛ}_{ABC}\log\tilde Q_{\mathrm{AB}}\big]
+\mathrm{Tr}\big[\tilde{Ϛ}_{\Psi,ABC}\log\tilde Q_{\mathrm{AB}}\big]
 =\mathrm{Tr}_{AB}\big[\rho_{AB}\log\rho_{AB}\big]=-S(\rho_{AB}),
 $$
 and its analogues, which use only that the $AB$ marginal of $\rho_{ABC}$ is $\rho_{AB}$ and that $\log\tilde Q_{\mathrm{AB}}$ acts trivially on $C$. With these,
 $$
-\boxed{\;S(\tilde{Ϛ}_{ABC}\|\tilde Q_{ABC})
-=\mathrm{Tr}\big[\tilde{Ϛ}_{ABC}\log\tilde{Ϛ}_{ABC}\big]
--\mathrm{Tr}\big[\tilde{Ϛ}_{ABC}\log\tilde Q_{ABC}\big]
+\boxed{\;S(\tilde{Ϛ}_{\Psi,ABC}\|\tilde Q_{ABC})
+=\mathrm{Tr}\big[\tilde{Ϛ}_{\Psi,ABC}\log\tilde{Ϛ}_{\Psi,ABC}\big]
+-\mathrm{Tr}\big[\tilde{Ϛ}_{\Psi,ABC}\log\tilde Q_{ABC}\big]
 =-S(\rho_{ABC})+S(\rho_{AB})+S(\rho_{BC})-S(\rho_B)\;}.
 $$
-The right-hand side is the deficit itself, so the third form is exactly equivalent to the inequality rather than an independent route to it: $S(\tilde{Ϛ}_{ABC}\|\tilde Q_{ABC})\ge0$ **is** strong subadditivity. The operator $\tilde Q_{ABC}$ is subnormalized rather than normalized, $\mathrm{Tr}\,\tilde Q_{ABC}\le1$ — the value one is attained on the classical states diagonal in the product basis, where the construction is the classical conditional product $p_{AB}p_{BC}/p_B$, and it is strictly below one on the non-commuting states tested here — so the quantity is not the relative entropy of a pair of states, and Klein's inequality is not what makes it non-negative.
+The right-hand side is the deficit itself, so the third form is exactly equivalent to the inequality rather than an independent route to it: $S(\tilde{Ϛ}_{\Psi,ABC}\|\tilde Q_{ABC})\ge0$ **is** strong subadditivity. The operator $\tilde Q_{ABC}$ is subnormalized rather than normalized, $\mathrm{Tr}\,\tilde Q_{ABC}\le1$ — the value one is attained on the classical states diagonal in the product basis, where the construction is the classical conditional product $p_{AB}p_{BC}/p_B$, and it is strictly below one on the non-commuting states tested here — so the quantity is not the relative entropy of a pair of states, and Klein's inequality is not what makes it non-negative.
 
 The proof is cleanest in the form in which both reference states are products. Partial trace is a completely positive trace-preserving map, so by the monotonicity of relative entropy the pair $(\rho_{ABC},\rho_{AB}\otimes\rho_C)$ dominates its image $(\rho_{BC},\rho_B\otimes\rho_C)$ under $\mathrm{Tr}_A$:
 $$

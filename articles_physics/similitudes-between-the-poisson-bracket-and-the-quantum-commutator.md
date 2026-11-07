@@ -304,14 +304,14 @@ a pure real quaternion lying in $\mathbb{B}_{\Phi}\cap\mathbb{H}_\mathbb{B}=\mat
 
 **The angular-momentum resemblance, made exact.** The spin observables are the Hermitian elements
 $$
-\tilde S_k =\frac{m\,c}{2\,k_m}\,i\,\vec e_k \in  \mathbb{B}_{\Psi} \quad(\text{spin-}\tfrac12),
+\tilde S_{\Psi,k} =\frac{m\,c}{2\,k_m}\,i\,\vec e_k \in  \mathbb{B}_{\Psi} \quad(\text{spin-}\tfrac12),
 $$
 whose matrix images under $\vec e_k\mapsto-i\sigma_k$ are $S_k=(\frac{m\,c}{2\,k_m})\sigma_k$. Direct computation from the commutator of two Hermitian elements gives
 $$
-[\tilde S_i,\tilde S_j] =\frac{m\,c\,i\,\epsilon_{ijk}\,\tilde{S}_{k}}{k_m},
-\qquad\text{so}\qquad\frac{k_m}{m\,c\,i}[\tilde S_i,\tilde S_j] = \epsilon_{ijk}\,\tilde S_k,
+[\tilde S_{\Psi,i},\tilde S_{\Psi,j}] =\frac{m\,c\,i\,\epsilon_{ijk}\,\tilde{S}_{\Psi,k}}{k_m},
+\qquad\text{so}\qquad\frac{k_m}{m\,c\,i}[\tilde S_{\Psi,i},\tilde S_{\Psi,j}] = \epsilon_{ijk}\,\tilde S_{\Psi,k},
 $$
-which is term for term the operator image of the classical bracket $\{L_{\mathrm{orb},i},L_{\mathrm{orb},j}\}=\epsilon_{ijk}L_{\mathrm{orb},k}$. The parallel is exact here: after the factor $1/(\frac{m\,c\,i}{k_m})$ is extracted, the spin bracket and the classical bracket have the same structure constants $\epsilon_{ijk}$. The $\frac{m\,c}{k_m}$-free algebraic bracket $[\tilde{R}_{\Psi,1},\tilde{R}_{\Psi,2}]=-2(\vec r_{\Psi,1}\times\vec r_{\Psi,2})$ is their common source — the quaternion cross product is the algebraic expression of the same $\mathrm{SU}(2)$ structure — and $\frac{m\,c}{k_m}$ enters only as the scale that converts the dimensionless algebraic direction $i\vec e_k$ into a physical spin. In this realization the normalization factor $1/(\frac{m\,c\,i}{k_m})$ of the correspondence is not a numerical accident to be checked; it is the unit conversion implied by the identification $\tilde S_k=(\frac{m\,c}{2\,k_m})i\vec e_k$, and the sign is fixed by the orientation of the cross product.
+which is term for term the operator image of the classical bracket $\{L_{\mathrm{orb},i},L_{\mathrm{orb},j}\}=\epsilon_{ijk}L_{\mathrm{orb},k}$. The parallel is exact here: after the factor $1/(\frac{m\,c\,i}{k_m})$ is extracted, the spin bracket and the classical bracket have the same structure constants $\epsilon_{ijk}$. The $\frac{m\,c}{k_m}$-free algebraic bracket $[\tilde{R}_{\Psi,1},\tilde{R}_{\Psi,2}]=-2(\vec r_{\Psi,1}\times\vec r_{\Psi,2})$ is their common source — the quaternion cross product is the algebraic expression of the same $\mathrm{SU}(2)$ structure — and $\frac{m\,c}{k_m}$ enters only as the scale that converts the dimensionless algebraic direction $i\vec e_k$ into a physical spin. In this realization the normalization factor $1/(\frac{m\,c\,i}{k_m})$ of the correspondence is not a numerical accident to be checked; it is the unit conversion implied by the identification $\tilde S_{\Psi,k}=(\frac{m\,c}{2\,k_m})i\vec e_k$, and the sign is fixed by the orientation of the cross product.
 
 **Where the framework breaks the correspondence.** The canonical pair cannot be realized this way. The relation
 $$
@@ -338,7 +338,7 @@ $$
 $$
 so that the sum over the three components lies $\tfrac32\frac{m^{2}\,c^{2}}{k_m^{2}}$ below the Weyl image of $L^2$; no bracket detects the shift, because a constant has zero bracket with everything. The $\hbar\to0$ limit is formal, dimensionful, and singular as an algebra statement: the Poisson algebra is the leading term of a deformation, not the $\hbar=0$ fibre of an isomorphism, and recovering the quantum algebra from it requires choosing an ordering.
 
-In the biquaternion framework, the observables are the Hermitian elements of $\mathbb{B}_{\Psi}$ and the commutator is the $\frac{m\,c}{k_m}$-free algebraic bracket $[\tilde{R}_{\Psi,1},\tilde{R}_{\Psi,2}]=-2(\vec r_{\Psi,1}\times\vec r_{\Psi,2})$. The framework realizes the angular-momentum correspondence exactly, with $\frac{m\,c}{k_m}$ entering through the identification $\tilde S_k=(\frac{m\,c}{2\,k_m})i\vec e_k$, and it cannot realize the canonical one, because the relation $[\tilde{R}_{\Psi,1},\tilde{R}_{\Psi,2}]=\frac{m\,c\,i\,e_{t}}{k_m}$ has no solution in $\mathbb{B}_{\Psi}$. The resemblance is real on the compact sector and absent on the sector that carries the deformation.
+In the biquaternion framework, the observables are the Hermitian elements of $\mathbb{B}_{\Psi}$ and the commutator is the $\frac{m\,c}{k_m}$-free algebraic bracket $[\tilde{R}_{\Psi,1},\tilde{R}_{\Psi,2}]=-2(\vec r_{\Psi,1}\times\vec r_{\Psi,2})$. The framework realizes the angular-momentum correspondence exactly, with $\frac{m\,c}{k_m}$ entering through the identification $\tilde S_{\Psi,k}=(\frac{m\,c}{2\,k_m})i\vec e_k$, and it cannot realize the canonical one, because the relation $[\tilde{R}_{\Psi,1},\tilde{R}_{\Psi,2}]=\frac{m\,c\,i\,e_{t}}{k_m}$ has no solution in $\mathbb{B}_{\Psi}$. The resemblance is real on the compact sector and absent on the sector that carries the deformation.
 
 ## Summary of Notation
 
@@ -364,12 +364,12 @@ In the biquaternion framework, the observables are the Hermitian elements of $\m
 | $\mathbb{B}_{H}$ | Real-quaternion subspace |
 | $\tilde R_\Psi=c r_t\,e_t+i\vec r_\Psi$ | Hermitian observable |
 | $[\tilde{R}_{\Psi,1},\tilde{R}_{\Psi,2}]=-2(\vec r_{\Psi,1}\times\vec r_{\Psi,2})$ | Biquaternion commutator ($\frac{m\,c}{k_m}$-free) |
-| $\tilde S_k=(\frac{m\,c}{2\,k_m})i\vec e_k$ | Spin-$\tfrac12$ observables |
+| $\tilde S_{\Psi,k}=(\frac{m\,c}{2\,k_m})i\vec e_k$ | Spin-$\tfrac12$ observables |
 | $\mathrm{Tr}(\tilde Q\tilde R_\Psi)=2\,\mathrm{Sc}(\tilde Q\tilde R_\Psi)$ | Trace formula |
 
 ## Further Reading
 
-- [Angular Momentum and Spin in Biquaternionic Form](angular-momentum-and-spin-in-biquaternionic-form.html), for the commutator $[\tilde{R}_{\Psi,1},\tilde{R}_{\Psi,2}]=-2(\vec r_{\Psi,1}\times\vec r_{\Psi,2})$ and the spin relations $[\tilde S_i,\tilde S_j]=\frac{m\,c\,i\,\epsilon_{ijk}\,\tilde{S}_{k}}{k_m}$ used in the framework section.
+- [Angular Momentum and Spin in Biquaternionic Form](angular-momentum-and-spin-in-biquaternionic-form.html), for the commutator $[\tilde{R}_{\Psi,1},\tilde{R}_{\Psi,2}]=-2(\vec r_{\Psi,1}\times\vec r_{\Psi,2})$ and the spin relations $[\tilde S_{\Psi,i},\tilde S_{\Psi,j}]=\frac{m\,c\,i\,\epsilon_{ijk}\,\tilde{S}_{\Psi,k}}{k_m}$ used in the framework section.
 - [Quantum Physics in Biquaternionic Form](quantum-physics-in-biquaternionic-form.html), for the observables in $\mathbb{B}_{\Psi}$, the trace formula, and the dynamics that supply the quantum side of the correspondence.
 - [Spin-1/2 Quantum Physics in Biquaternionic Form](spin-1-2-quantum-physics-in-biquaternionic-form.html), for the identification of $\mathbb{B}_{\Psi}$ with the qubit observables and the isomorphism $\vec e_k\mapsto-i\sigma_k$ used throughout the framework section.
 - [The Harmonic Oscillator in Biquaternionic Form](the-harmonic-oscillator-in-biquaternionic-form.html), for the proof that $[\tilde{R}_{\Psi,1},\tilde{R}_{\Psi,2}]=\frac{m\,c\,i\,e_{t}}{k_m}$ has no solution in $\mathbb{B}_{\Psi}$ — the trace obstruction that blocks the canonical sector inside $\mathbb{B}$.

@@ -100,10 +100,10 @@ $$
 
 ### Step 2: The Hamiltonian
 
-The spin observable along $z$ is $\tilde{S}_z =\frac{m\,c}{2\,k_m}\,i \vec e_z$. The Hamiltonian is therefore the Hermitian element of $\mathbb{B}_{\Psi}$
+The spin observable along $z$ is $\tilde{S}_{\Psi,z} =\frac{m\,c}{2\,k_m}\,i \vec e_z$. The Hamiltonian is therefore the Hermitian element of $\mathbb{B}_{\Psi}$
 
 $$
-\tilde R_\Psi = -\gamma B_0 \tilde{S}_z = -\frac{m\,c\,\omega_{L}}{2\,k_m}\,i \vec e_z,
+\tilde R_\Psi = -\gamma B_0 \tilde{S}_{\Psi,z} = -\frac{m\,c\,\omega_{L}}{2\,k_m}\,i \vec e_z,
 $$
 
 with $\omega_L = \gamma B_0$.
@@ -121,13 +121,13 @@ where we have used the identity $\exp(\theta\,\vec e_z) = \cos\theta\,e_t + \sin
 The evolved state is
 
 $$
-\tilde{Ϛ}(r'_t) = \tilde{U}(r'_t)\,\tilde\Pi_x\,\tilde{U}(r'_t)^{*}.
+\tilde{Ϛ}_{\Psi}(r'_t) = \tilde{U}(r'_t)\,\tilde\Pi_x\,\tilde{U}(r'_t)^{*}.
 $$
 
 Computing the product, using $\tilde{U}(r'_t)^{*} = \tilde{U}^{\natural}(r'_t) = \cos(\omega_L r'_t/2)\,e_t + \sin(\omega_L r'_t/2)\,\vec e_z$ (since $\tilde{U}$ is a real quaternion), gives
 
 $$
-\tilde{Ϛ}(r'_t) = \tfrac{1}{2}\left(e_t + i\cos(\omega_L r'_t)\,\vec e_x - i\sin(\omega_L r'_t)\,\vec e_y\right).
+\tilde{Ϛ}_{\Psi}(r'_t) = \tfrac{1}{2}\left(e_t + i\cos(\omega_L r'_t)\,\vec e_x - i\sin(\omega_L r'_t)\,\vec e_y\right).
 $$
 
 ### Step 4: The expectation value
@@ -135,21 +135,21 @@ $$
 The expectation value of the spin along $x$ is given by the normalised Hermitian form
 
 $$
-\langle\tilde{S}_x\rangle(r'_t) = \frac{\langle\tilde{Ϛ}(r'_t),\tilde{S}_x\rangle_{*}}{\langle\tilde{Ϛ}(r'_t),e_t\rangle_{*}}
-= \frac{\mathrm{Sc}\bigl(\tilde{Ϛ}(r'_t)\,\tilde{S}_x^{*}\bigr)}{\mathrm{Sc}\bigl(\tilde{Ϛ}(r'_t)\bigr)}
-= 2\,\mathrm{Sc}\!\left(\tilde{Ϛ}(r'_t)\,\tilde{S}_x\right),
+\langle\tilde{S}_{\Psi,x}\rangle(r'_t) = \frac{\langle\tilde{Ϛ}_{\Psi}(r'_t),\tilde{S}_{\Psi,x}\rangle_{*}}{\langle\tilde{Ϛ}_{\Psi}(r'_t),e_t\rangle_{*}}
+= \frac{\mathrm{Sc}\bigl(\tilde{Ϛ}_{\Psi}(r'_t)\,\tilde{S}_{\Psi,x}^{*}\bigr)}{\mathrm{Sc}\bigl(\tilde{Ϛ}_{\Psi}(r'_t)\bigr)}
+= 2\,\mathrm{Sc}\!\left(\tilde{Ϛ}_{\Psi}(r'_t)\,\tilde{S}_{\Psi,x}\right),
 $$
 
-whose trace reading at normalisation is $\operatorname{Tr}(\tilde{Ϛ}(r'_t)\tilde{S}_x)=2\,\mathrm{Sc}(\tilde{Ϛ}(r'_t)\tilde{S}_x)$, with $\tilde{S}_x =\frac{m\,c}{2\,k_m}\,i \vec e_x$. Computing the product
+whose trace reading at normalisation is $\operatorname{Tr}(\tilde{Ϛ}_{\Psi}(r'_t)\tilde{S}_{\Psi,x})=2\,\mathrm{Sc}(\tilde{Ϛ}_{\Psi}(r'_t)\tilde{S}_{\Psi,x})$, with $\tilde{S}_{\Psi,x} =\frac{m\,c}{2\,k_m}\,i \vec e_x$. Computing the product
 
 $$
-\tilde{Ϛ}(r'_t)\,\tilde{S}_x =\frac{m\,c}{4\,k_m}\left(i \vec e_x + \cos(\omega_L r'_t)\,e_t - \sin(\omega_L r'_t)\,\vec e_z\right),
+\tilde{Ϛ}_{\Psi}(r'_t)\,\tilde{S}_{\Psi,x} =\frac{m\,c}{4\,k_m}\left(i \vec e_x + \cos(\omega_L r'_t)\,e_t - \sin(\omega_L r'_t)\,\vec e_z\right),
 $$
 
 the scalar part is $\frac{m\,c}{4\,k_m}\cos(\omega_L r'_t)$. Applying the Hermitian form, with the trace reading last,
 
 $$
-\boxed{\;\langle\tilde{S}_x\rangle(r'_t) =\frac{m\,c}{2\,k_m}\cos(\omega_L r'_t)\;}.
+\boxed{\;\langle\tilde{S}_{\Psi,x}\rangle(r'_t) =\frac{m\,c}{2\,k_m}\cos(\omega_L r'_t)\;}.
 $$
 
 ## Limiting Cases
@@ -165,13 +165,13 @@ The spin precesses in the $xy$-plane with angular frequency $\omega_L$, as expec
 
 ## What the Biquaternion Solution Illustrates
 
-**1. The Hamiltonian is a Hermitian element of $\mathbb{B}_{\Psi}$.** The observable $\tilde{S}_z =\frac{m\,c}{2\,k_m}i \vec e_z$ is an element of $\mathbb{B}_{\Psi}$, and the Hamiltonian $\tilde R_\Psi = -\gamma B_0 \tilde{S}_z$ inherits this property. The Hamiltonian is a **Hermitian element of the same subspace** as the observables and the states.
+**1. The Hamiltonian is a Hermitian element of $\mathbb{B}_{\Psi}$.** The observable $\tilde{S}_{\Psi,z} =\frac{m\,c}{2\,k_m}i \vec e_z$ is an element of $\mathbb{B}_{\Psi}$, and the Hamiltonian $\tilde R_\Psi = -\gamma B_0 \tilde{S}_{\Psi,z}$ inherits this property. The Hamiltonian is a **Hermitian element of the same subspace** as the observables and the states.
 
 **2. The evolution operator is a unit-norm biquaternion.** The exponential $\tilde{U}(r'_t) = \exp(-\frac{k_m\,i\,Hr'_{t}}{m\,c})$ is a unit-norm element of $\mathbb{B}$, lying in the real quaternion subspace $\mathbb{H}_\mathbb{B}$ for this particular Hamiltonian (because $\tilde R_\Psi$ is proportional to $i \vec e_z$, and the exponential of $\vec e_z$ is a real quaternion). The evolution is a **rotor** in the sense of geometric algebra.
 
-**3. The state evolves by rotor conjugation.** The evolved state is $\tilde{Ϛ}(r'_t) = \tilde Q(r'_t)\tilde{Ϛ}(0)\tilde Q(r'_t)^{*}$. This is the standard form of the von Neumann evolution, expressed as a **rotor conjugation** on the algebra. The evolution is automatically $*$-unitary: $\tilde Q\tilde Q^{*} = e_t$ is preserved by the exponential form.
+**3. The state evolves by rotor conjugation.** The evolved state is $\tilde{Ϛ}_{\Psi}(r'_t) = \tilde Q(r'_t)\tilde{Ϛ}_{\Psi}(0)\tilde Q(r'_t)^{*}$. This is the standard form of the von Neumann evolution, expressed as a **rotor conjugation** on the algebra. The evolution is automatically $*$-unitary: $\tilde Q\tilde Q^{*} = e_t$ is preserved by the exponential form.
 
-**4. The precession is a rotation of the Bloch vector.** The evolved state has the form $\tilde{Ϛ}(r'_t) = \frac{1}{2}(e_t + i\vec r(r'_t))$ with
+**4. The precession is a rotation of the Bloch vector.** The evolved state has the form $\tilde{Ϛ}_{\Psi}(r'_t) = \frac{1}{2}(e_t + i\vec r(r'_t))$ with
 
 $$
 \boxed{\;\vec r(r'_t) = \cos(\omega_L r'_t)\,\vec e_x - \sin(\omega_L r'_t)\,\vec e_y\;}.
@@ -182,10 +182,10 @@ This is a **unit vector rotating** in the $xy$-plane with angular frequency $\om
 **5. The expectation value is the normalised Hermitian form, read through the trace last.** As in Exercise: Measuring Spin Along an Arbitrary Direction, the expectation value is
 
 $$
-\langle\tilde{S}_x\rangle(r'_t) = \frac{\langle\tilde{Ϛ}(r'_t),\tilde{S}_x\rangle_{*}}{\langle\tilde{Ϛ}(r'_t),e_t\rangle_{*}} = 2\,\mathrm{Sc}\!\left(\tilde{Ϛ}(r'_t)\,\tilde{S}_x\right),
+\langle\tilde{S}_{\Psi,x}\rangle(r'_t) = \frac{\langle\tilde{Ϛ}_{\Psi}(r'_t),\tilde{S}_{\Psi,x}\rangle_{*}}{\langle\tilde{Ϛ}_{\Psi}(r'_t),e_t\rangle_{*}} = 2\,\mathrm{Sc}\!\left(\tilde{Ϛ}_{\Psi}(r'_t)\,\tilde{S}_{\Psi,x}\right),
 $$
 
-whose trace reading is $\operatorname{Tr}(\tilde{Ϛ}(r'_t)\tilde{S}_x)$, the same Hermitian form that gives the Born probabilities. Both the Born rule and the expectation values of observables are instances of the same Hermitian form on $\mathbb{B}_{\Psi}$.
+whose trace reading is $\operatorname{Tr}(\tilde{Ϛ}_{\Psi}(r'_t)\tilde{S}_{\Psi,x})$, the same Hermitian form that gives the Born probabilities. Both the Born rule and the expectation values of observables are instances of the same Hermitian form on $\mathbb{B}_{\Psi}$.
 
 **6. The result agrees with the standard formulation.** This is not surprising, because the two formulations are the same mathematics in different notation: $\mathbb{B} \cong M_2(\mathbb{C})$, and the biquaternion evolution $\tilde{U}(r'_t) = \exp(-\frac{k_m\,i\,Hr'_{t}}{m\,c})$ corresponds exactly to the standard matrix evolution $T(r'_t) = \exp(-\frac{k_m\,iHr'_{t}}{m\,c})$ under the isomorphism. But seeing the same result emerge from the algebra is a useful sanity check on the framework, and it illustrates the structural claim of the companion articles: **the dynamics of a qubit is contained in the Hermitian subspace $\mathbb{B}_{\Psi}$, with the evolution given by rotor conjugation by a unit-norm biquaternion.**
 
@@ -206,7 +206,7 @@ We have solved a second exercise in quantum physics — the Larmor precession of
 
 In the **standard formulation**, the solution proceeds through ket vectors, Pauli matrices, the Hamiltonian, the evolution operator, and the expectation value, giving $\langle  S_x\rangle(r'_t) =\frac{m\,c}{2\,k_m}\cos(\omega_L r'_t)$.
 
-In the **biquaternion formulation**, the solution proceeds through the idempotent $\tilde\Pi_x$, the Hermitian Hamiltonian $\tilde R_\Psi$, the unit-norm evolution biquaternion $\tilde{U}(r'_t)$, the evolved state $\tilde{Ϛ}(r'_t)$, and the trace formula, giving the same result.
+In the **biquaternion formulation**, the solution proceeds through the idempotent $\tilde\Pi_x$, the Hermitian Hamiltonian $\tilde R_\Psi$, the unit-norm evolution biquaternion $\tilde{U}(r'_t)$, the evolved state $\tilde{Ϛ}_{\Psi}(r'_t)$, and the trace formula, giving the same result.
 
 The two formulations agree, as they must. The biquaternion formulation makes explicit the algebraic structure of the evolution: the Hamiltonian is a Hermitian element of $\mathbb{B}_{\Psi}$, the evolution operator is a unit-norm biquaternion, the evolved state is the rotor conjugate of the initial state, and the expectation value is the normalised Hermitian form, read through the trace.
 
@@ -223,11 +223,11 @@ The two formulations agree, as they must. The biquaternion formulation makes exp
 | $\gamma$ | Gyromagnetic ratio |
 | $\omega_L = \gamma B_0$ | Larmor frequency |
 | $\tilde\Pi_x = \tfrac{1}{2}(e_t + i\vec e_x)$ | Spin-up state along $x$ |
-| $\tilde{S}_x =\frac{m\,c}{2\,k_m} i\vec e_x$ | Spin observable along $x$ |
+| $\tilde{S}_{\Psi,x} =\frac{m\,c}{2\,k_m} i\vec e_x$ | Spin observable along $x$ |
 | $\tilde R_\Psi = -\frac{m\,c\,\omega_{L}}{2\,k_m} i\vec e_z$ | Hamiltonian |
 | $\tilde{U}(r'_t) = \exp(-\frac{k_m\,i\,Hr'_{t}}{m\,c})$ | Evolution biquaternion |
-| $\tilde{Ϛ}(r'_t) = \tilde{U}(r'_t)\tilde{Ϛ}(0)\tilde{U}(r'_t)^{*}$ | Evolved state |
-| $\langle\tilde{S}_x\rangle(r'_t) = \mathrm{Tr}(\tilde{Ϛ}(r'_t)\tilde{S}_x)$ | Expectation value |
+| $\tilde{Ϛ}_{\Psi}(r'_t) = \tilde{U}(r'_t)\tilde{Ϛ}_{\Psi}(0)\tilde{U}(r'_t)^{*}$ | Evolved state |
+| $\langle\tilde{S}_{\Psi,x}\rangle(r'_t) = \mathrm{Tr}(\tilde{Ϛ}_{\Psi}(r'_t)\tilde{S}_{\Psi,x})$ | Expectation value |
 | $\langle\tilde{Q}_1,\tilde{Q}_2\rangle_{\natural}$ | the general quaternionic bilinear form, $\mathrm{Sc}(\tilde{Q}_1^{\natural}\tilde{Q}_2)$; on the diagonal $\langle\tilde{Q}_2,\tilde{Q}_2\rangle_{\natural}=\langle\tilde{Q}_2\rangle_{\natural}$ |
 | $\langle\tilde{Q}_1,\tilde{Q}_2\rangle_{*}$ | the general plain sesquilinear form, $\mathrm{Sc}(\tilde{Q}_1\tilde{Q}_2^{*})$; on the diagonal $\langle\tilde{Q}_2,\tilde{Q}_2\rangle_{*}=\sum_\mu\lvert Q_{2\mu}\rvert^{2}$ |
 | $\langle\tilde{Q}_1,\tilde{Q}_2\rangle$ | the general plain bilinear form, the scalar part of the general plain bilinear product, $\mathrm{Sc}(\tilde{Q}_1\tilde{Q}_2)$ |

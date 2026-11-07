@@ -53,34 +53,34 @@ The theorem is not an isolated statement; its consequences are the reasons it is
 
 ### Cyclicity Is Automatic
 
-The Hermitian GNS construction of the companion article associates to every state $\tilde{Ϛ}\in\mathbb{B}_{\Psi}$ a Hilbert space
+The Hermitian GNS construction of the companion article associates to every state $\tilde{Ϛ}_{\Psi}\in\mathbb{B}_{\Psi}$ a Hilbert space
 $$
-\mathcal H_{\tilde{Ϛ}}=\mathbb{B}\big/\mathcal{N}_{\tilde{Ϛ}},
+\mathcal H_{\tilde{Ϛ}_{\Psi}}=\mathbb{B}\big/\mathcal{N}_{\tilde{Ϛ}_{\Psi}},
 \qquad
-\mathcal{N}_{\tilde{Ϛ}}=\big\{\tilde Q_3:\mathrm{Tr}(\tilde{Ϛ}\,\tilde Q_3^{*}\tilde Q_3)=0\big\},
+\mathcal{N}_{\tilde{Ϛ}_{\Psi}}=\big\{\tilde Q_3:\mathrm{Tr}(\tilde{Ϛ}_{\Psi}\,\tilde Q_3^{*}\tilde Q_3)=0\big\},
 \qquad
-\langle\tilde Q_3,\tilde Q_1\rangle_{\tilde{Ϛ}}=\mathrm{Tr}\big(\tilde{Ϛ}\,\tilde Q_3^{*}\tilde Q_1\big),
+\langle\tilde Q_3,\tilde Q_1\rangle_{\tilde{Ϛ}_{\Psi}}=\mathrm{Tr}\big(\tilde{Ϛ}_{\Psi}\,\tilde Q_3^{*}\tilde Q_1\big),
 $$
-with representation $\pi_{\tilde{Ϛ}}(\tilde Q_3)[\tilde Q_1]=[\tilde Q_3\tilde Q_1]$ and cyclic vector $\Omega_{\tilde{Ϛ}}=[e_t]$. The vector is cyclic by construction: the classes $[\tilde Q_3]=\pi_{\tilde{Ϛ}}(\tilde Q_3)\Omega_{\tilde{Ϛ}}$ run over every element of the quotient, so $\pi_{\tilde{Ϛ}}(\mathbb{B})\Omega_{\tilde{Ϛ}}=\mathcal H_{\tilde{Ϛ}}$ exactly, not merely densely.
+with representation $\pi_{\tilde{Ϛ}_{\Psi}}(\tilde Q_3)[\tilde Q_1]=[\tilde Q_3\tilde Q_1]$ and cyclic vector $\Omega_{\tilde{Ϛ}_{\Psi}}=[e_t]$. The vector is cyclic by construction: the classes $[\tilde Q_3]=\pi_{\tilde{Ϛ}_{\Psi}}(\tilde Q_3)\Omega_{\tilde{Ϛ}_{\Psi}}$ run over every element of the quotient, so $\pi_{\tilde{Ϛ}_{\Psi}}(\mathbb{B})\Omega_{\tilde{Ϛ}_{\Psi}}=\mathcal H_{\tilde{Ϛ}_{\Psi}}$ exactly, not merely densely.
 
 This is the finite-dimensional form of the cyclic half of the theorem, and in the finite-dimensional setting it is stronger than the field statement: the span is the whole space, not a dense subspace. The reason is that $\mathbb{B}$ is finite-dimensional and the quotient is a closed subspace; there is no room for a topological closure to differ from the algebraic span.
 
 ### Separating and the Radical
 
-The vector $\Omega_{\tilde{Ϛ}}$ is separating for $\pi_{\tilde{Ϛ}}(\mathbb{B})$ if and only if
+The vector $\Omega_{\tilde{Ϛ}_{\Psi}}$ is separating for $\pi_{\tilde{Ϛ}_{\Psi}}(\mathbb{B})$ if and only if
 $$
-\pi_{\tilde{Ϛ}}(\tilde Q_3)\Omega_{\tilde{Ϛ}}=0\ \Longrightarrow\ \tilde Q_3=0,
+\pi_{\tilde{Ϛ}_{\Psi}}(\tilde Q_3)\Omega_{\tilde{Ϛ}_{\Psi}}=0\ \Longrightarrow\ \tilde Q_3=0,
 $$
-that is, if and only if the radical $\mathcal{N}_{\tilde{Ϛ}}$ is trivial. But $\pi_{\tilde{Ϛ}}(\tilde Q_3)\Omega_{\tilde{Ϛ}}=[\tilde Q_3]$, so this is exactly the statement that the quotient map is injective, that is, that the GNS representation is faithful.
+that is, if and only if the radical $\mathcal{N}_{\tilde{Ϛ}_{\Psi}}$ is trivial. But $\pi_{\tilde{Ϛ}_{\Psi}}(\tilde Q_3)\Omega_{\tilde{Ϛ}_{\Psi}}=[\tilde Q_3]$, so this is exactly the statement that the quotient map is injective, that is, that the GNS representation is faithful.
 
-> **Proposition.** For a state $\tilde{Ϛ}$ of $\mathbb{B}$, the GNS vector $\Omega_{\tilde{Ϛ}}$ is separating for $\pi_{\tilde{Ϛ}}(\mathbb{B})$ if and only if $\tilde{Ϛ}$ is faithful, that is, if and only if $\tilde{Ϛ}$ has full rank.
+> **Proposition.** For a state $\tilde{Ϛ}_{\Psi}$ of $\mathbb{B}$, the GNS vector $\Omega_{\tilde{Ϛ}_{\Psi}}$ is separating for $\pi_{\tilde{Ϛ}_{\Psi}}(\mathbb{B})$ if and only if $\tilde{Ϛ}_{\Psi}$ is faithful, that is, if and only if $\tilde{Ϛ}_{\Psi}$ has full rank.
 
-The proof is the dimension count of the Hermitian GNS companion article. Writing $\tilde{Ϛ}=\sum_i\lambda_i\tilde\Pi_i$ in its spectral projectors, the radical is
+The proof is the dimension count of the Hermitian GNS companion article. Writing $\tilde{Ϛ}_{\Psi}=\sum_i\lambda_i\tilde\Pi_i$ in its spectral projectors, the radical is
 $$
-\boxed{\;\mathcal{N}_{\tilde{Ϛ}}=\big\{\tilde Q_3:\tilde Q_3\,\tilde{Ϛ}=0\big\}
-=\big\{\tilde Q_3:\tilde Q_3\,\mathrm{range}(\tilde{Ϛ})=0\big\}\;},
+\boxed{\;\mathcal{N}_{\tilde{Ϛ}_{\Psi}}=\big\{\tilde Q_3:\tilde Q_3\,\tilde{Ϛ}_{\Psi}=0\big\}
+=\big\{\tilde Q_3:\tilde Q_3\,\mathrm{range}(\tilde{Ϛ}_{\Psi})=0\big\}\;},
 $$
-of complex dimension $2(2-r)$ with $r=\mathrm{rank}\,\tilde{Ϛ}$. It is trivial exactly when $r=2$, that is, when $\tilde{Ϛ}$ is faithful, which for a biquaternion state means $\det\mathsf{M}_2(\tilde{Ϛ})=\tfrac14(1-|\vec r|^2)>0$, the open Bloch ball. On the pure boundary $|\vec r|=1$ the radical is two-dimensional and the vector is not separating.
+of complex dimension $2(2-r)$ with $r=\mathrm{rank}\,\tilde{Ϛ}_{\Psi}$. It is trivial exactly when $r=2$, that is, when $\tilde{Ϛ}_{\Psi}$ is faithful, which for a biquaternion state means $\det\mathsf{M}_2(\tilde{Ϛ}_{\Psi})=\tfrac14(1-|\vec r|^2)>0$, the open Bloch ball. On the pure boundary $|\vec r|=1$ the radical is two-dimensional and the vector is not separating.
 
 The two halves therefore have sharply different finite-dimensional characters: cyclicity holds for every state, and separating holds exactly for the faithful ones.
 
@@ -88,7 +88,7 @@ The two halves therefore have sharply different finite-dimensional characters: c
 
 ### The Vacuum Module Is Cyclically Generated
 
-Take the vacuum state $\tilde{Ϛ}=\tilde\Pi_+=\tfrac12(e_t+i\vec e_z)$. Here $i\vec e_z$ is a root of $+1$, $(i\vec e_z)^2=e_t$, and $\tilde\Pi_+$ and $\tilde\Pi_-$ are its two associated idempotents. Its GNS space is the Peirce carrier $\mathbb{B}\tilde\Pi_+$, the minimal left ideal here,
+Take the vacuum state $\tilde{Ϛ}_{\Psi}=\tilde\Pi_+=\tfrac12(e_t+i\vec e_z)$. Here $i\vec e_z$ is a root of $+1$, $(i\vec e_z)^2=e_t$, and $\tilde\Pi_+$ and $\tilde\Pi_-$ are its two associated idempotents. Its GNS space is the Peirce carrier $\mathbb{B}\tilde\Pi_+$, the minimal left ideal here,
 $$
 \mathcal H_{\tilde\Pi_+}\cong\mathbb{B}\,\tilde\Pi_+\cong\mathbb{C}^2,
 $$
@@ -104,11 +104,11 @@ the classes $\Omega=[e_t]$ and $\vec\Upsilon_y\Omega=[\vec\Upsilon_y]$ are ortho
 
 The GNS radical of the vacuum is not trivial, and an explicit element of it is the annihilation operator. Using $\vec\Upsilon_y\vec\Upsilon_x=\tilde\Pi_-=\tfrac12(e_t-i\vec e_z)$ and $\tilde\Pi_+\tilde\Pi_-=0$,
 $$
-\boxed{\;\big\langle\Omega_{\tilde{Ϛ}}\big|\pi_{\tilde{Ϛ}}(\vec\Upsilon_x)^\dagger\pi_{\tilde{Ϛ}}(\vec\Upsilon_x)\big|\Omega_{\tilde{Ϛ}}\big\rangle
+\boxed{\;\big\langle\Omega_{\tilde{Ϛ}_{\Psi}}\big|\pi_{\tilde{Ϛ}_{\Psi}}(\vec\Upsilon_x)^\dagger\pi_{\tilde{Ϛ}_{\Psi}}(\vec\Upsilon_x)\big|\Omega_{\tilde{Ϛ}_{\Psi}}\big\rangle
 =\mathrm{Tr}\big(\tilde\Pi_+\,\vec\Upsilon_y\vec\Upsilon_x\big)
 =\mathrm{Tr}\big(\tilde\Pi_+\tilde\Pi_-\big)=0\;}.
 $$
-So $\pi_{\tilde{Ϛ}}(\vec\Upsilon_x)\Omega_{\tilde{Ϛ}}=0$ with $\vec\Upsilon_x\ne0$: the vacuum fails to be separating, and the witness is the annihilation operator. Equivalently, the vacuum idempotent is a **zero divisor** — $\langle\tilde\Pi_+\rangle_{\natural}=0$ — and the zero-divisor direction is the state's failure of faithfulness. The two facts are the same fact.
+So $\pi_{\tilde{Ϛ}_{\Psi}}(\vec\Upsilon_x)\Omega_{\tilde{Ϛ}_{\Psi}}=0$ with $\vec\Upsilon_x\ne0$: the vacuum fails to be separating, and the witness is the annihilation operator. Equivalently, the vacuum idempotent is a **zero divisor** — $\langle\tilde\Pi_+\rangle_{\natural}=0$ — and the zero-divisor direction is the state's failure of faithfulness. The two facts are the same fact.
 
 This is the framework's honest statement of the difficulty: the pure vacuum of a single mode cannot be separating for the finite algebra, because a nonzero element of the algebra annihilates it. In the field theory the vacuum is separating because the local algebra is infinite-dimensional, and the annihilation operators that would be the witnesses are not elements of $\mathcal A(O)$ in the required sense — the local algebra is type III, its operators are not bounded functions of finitely many modes, and the spectral condition forbids the witness.
 
@@ -122,33 +122,33 @@ The finite algebra does have a state that is separating, namely any faithful sta
 
 ### The Faithful State Is Cyclic and Separating
 
-Take $\tilde{Ϛ}$ in the open Bloch ball, $|\vec r|<1$, so that $\tilde{Ϛ}$ is faithful. Then the GNS radical is trivial, the GNS space is the whole algebra,
+Take $\tilde{Ϛ}_{\Psi}$ in the open Bloch ball, $|\vec r|<1$, so that $\tilde{Ϛ}_{\Psi}$ is faithful. Then the GNS radical is trivial, the GNS space is the whole algebra,
 $$
-\mathcal H_{\tilde{Ϛ}}\cong\mathbb{B}\cong\mathbb{C}^4,
+\mathcal H_{\tilde{Ϛ}_{\Psi}}\cong\mathbb{B}\cong\mathbb{C}^4,
 \qquad
-\pi_{\tilde{Ϛ}}=\text{left multiplication (regular representation)},
+\pi_{\tilde{Ϛ}_{\Psi}}=\text{left multiplication (regular representation)},
 $$
-and the cyclic vector $\Omega_{\tilde{Ϛ}}=[e_t]$ is separating as well. The Tomita–Takesaki theorem therefore applies in finite dimension, and the framework has an exact model of the Reeh–Schlieder hypothesis in which the distinguished vector is the GNS vector of a **mixed** state. The modular data are those of the modular-theory companion article, written for the state:
+and the cyclic vector $\Omega_{\tilde{Ϛ}_{\Psi}}=[e_t]$ is separating as well. The Tomita–Takesaki theorem therefore applies in finite dimension, and the framework has an exact model of the Reeh–Schlieder hypothesis in which the distinguished vector is the GNS vector of a **mixed** state. The modular data are those of the modular-theory companion article, written for the state:
 $$
-\Delta\big(\tilde Q_3\big)=e^{-\tilde H_{\mathrm{modular}}}\,\tilde Q_3\,e^{\tilde H_{\mathrm{modular}}},
+\Delta\big(\tilde Q_3\big)=e^{-\tilde H_{\Psi,\mathrm{modular}}}\,\tilde Q_3\,e^{\tilde H_{\Psi,\mathrm{modular}}},
 \qquad
-J\big(\tilde Q_3\big)=e^{-\tilde H_{\mathrm{modular}}/2}\tilde Q_3^{*}e^{\tilde H_{\mathrm{modular}}/2},
+J\big(\tilde Q_3\big)=e^{-\tilde H_{\Psi,\mathrm{modular}}/2}\tilde Q_3^{*}e^{\tilde H_{\Psi,\mathrm{modular}}/2},
 \qquad
 \Delta=S^*S,
 $$
 with $J\Delta J\Delta=1$ and $\Delta>0$, and with the modular Hamiltonian
 $$
-\tilde H_{\mathrm{modular}}=-\log\tilde{Ϛ}
+\tilde H_{\Psi,\mathrm{modular}}=-\log\tilde{Ϛ}_{\Psi}
 =-\tfrac12\log\frac{1-|\vec r|^2}{4}\,e_t-i\,\mathrm{artanh}\big(|\vec r|\big)\vec u_r
 \in\mathbb{B}_{\Psi} .
 $$
 The modular flow and its generator are
 $$
-\sigma_{r'_{t}}\big(\tilde Q_3\big)=\tilde{Ϛ}^{\,ir'_t}\tilde Q_3\,\tilde{Ϛ}^{-ir'_t},
+\sigma_{r'_{t}}\big(\tilde Q_3\big)=\tilde{Ϛ}_{\Psi}^{\,ir'_t}\tilde Q_3\,\tilde{Ϛ}_{\Psi}^{-ir'_t},
 \qquad
 \frac{d}{dr'_t}\sigma_{r'_{t}}\big(\tilde Q_3\big)\Big|_{r'_t=0}
-=i\big[\log\tilde{Ϛ},\tilde Q_3\big]
-=-i\big[\tilde H_{\mathrm{modular}},\tilde Q_3\big].
+=i\big[\log\tilde{Ϛ}_{\Psi},\tilde Q_3\big]
+=-i\big[\tilde H_{\Psi,\mathrm{modular}},\tilde Q_3\big].
 $$
 The generator is the commutator with the modular Hamiltonian, which is the finite-dimensional form of the statement that the modular flow is generated by $K$ and which the article on thermal time takes as its starting point.
 
@@ -156,9 +156,9 @@ The generator is the commutator with the modular Hamiltonian, which is the finit
 
 A cyclic and separating vector of a modular algebra is a KMS state, at inverse temperature one in the modular parameter, for the inverse of the modular flow — the orientation convention of the KMS and Tomita–Takesaki companion articles, in which it is $\sigma_{-r'_t}$ that carries the boundary relation. In the finite model this is a computation rather than an assertion. Let $\tilde Q_3,\tilde Q_1\in\mathbb{B}$ and let
 $$
-F_{\tilde Q_3\tilde Q_1}(r'_t)=\mathrm{Tr}\big(\tilde{Ϛ}\,\tilde Q_3\,\alpha_{r'_{t}}(\tilde Q_1)\big),
+F_{\tilde Q_3\tilde Q_1}(r'_t)=\mathrm{Tr}\big(\tilde{Ϛ}_{\Psi}\,\tilde Q_3\,\alpha_{r'_{t}}(\tilde Q_1)\big),
 \qquad
-\alpha_{r'_{t}}\big(\tilde Q_1\big)=\tilde{Ϛ}^{-ir'_t}\tilde Q_1\,\tilde{Ϛ}^{\,ir'_t},
+\alpha_{r'_{t}}\big(\tilde Q_1\big)=\tilde{Ϛ}_{\Psi}^{-ir'_t}\tilde Q_1\,\tilde{Ϛ}_{\Psi}^{\,ir'_t},
 $$
 the orientation convention of the KMS companion article, in which the correlation function is analytic in $0<\mathrm{Im}\,r'_t<1$ and its boundary values obey
 $$
@@ -250,9 +250,9 @@ The separating property is recovered where the theorem actually lives: on the in
 | $\mathrm{Tr}(\tilde Q_1\tilde Q_2)=2\,\mathrm{Sc}(\tilde Q_1\tilde Q_2) = 2\langle\tilde Q_1,\tilde Q_2\rangle$ | Trace reading of the plain form; $\mathrm{Tr}(e_t)=2$ |
 | $\mathcal A(O)$ | Local algebra of the region $O$ |
 | $\Omega$ | Vacuum vector; cyclic and separating |
-| $\mathcal H_{\tilde{Ϛ}},\pi_{\tilde{Ϛ}},\Omega_{\tilde{Ϛ}}$ | GNS Hilbert space, representation, cyclic vector |
-| $\mathcal N_{\tilde{Ϛ}}$ | GNS radical; nontrivial iff $\tilde{Ϛ}$ is not faithful |
-| $\tilde{Ϛ}=\tilde\Pi_+=\tfrac12(e_t+i\vec e_z)$ | Single-mode vacuum state (minimal idempotent) |
+| $\mathcal H_{\tilde{Ϛ}_{\Psi}},\pi_{\tilde{Ϛ}_{\Psi}},\Omega_{\tilde{Ϛ}_{\Psi}}$ | GNS Hilbert space, representation, cyclic vector |
+| $\mathcal N_{\tilde{Ϛ}_{\Psi}}$ | GNS radical; nontrivial iff $\tilde{Ϛ}_{\Psi}$ is not faithful |
+| $\tilde{Ϛ}_{\Psi}=\tilde\Pi_+=\tfrac12(e_t+i\vec e_z)$ | Single-mode vacuum state (minimal idempotent) |
 | $\mathbb{B}\tilde\Pi(\vec u)\cong\mathbb{C}^2$ | One-particle module; vacuum GNS space |
 | $\vec\Upsilon_x=\tfrac12(i\vec e_x-\vec e_y)$, $\vec\Upsilon_y=\tfrac12(i\vec e_x+\vec e_y)$ | Single-mode ladder |
 | $\tilde\Pi_-=\vec\Upsilon_y\vec\Upsilon_x$ | Number operator (occupied idempotent) |

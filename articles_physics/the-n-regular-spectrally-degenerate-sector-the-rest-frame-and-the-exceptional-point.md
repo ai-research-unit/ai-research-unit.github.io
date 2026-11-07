@@ -89,7 +89,7 @@ with the same coefficient on both terms, and the pair is not determined by $\til
 On the material slice, a four-momentum at rest is
 
 $$
-\tilde P=i\frac{E}{c}e_t=i\,mc\,e_t,
+\tilde P_{\Phi}=i\frac{E}{c}e_t=i\,mc\,e_t,
 \qquad
 \vec p=0,
 \qquad

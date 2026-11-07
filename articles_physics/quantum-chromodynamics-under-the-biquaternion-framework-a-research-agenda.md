@@ -39,7 +39,7 @@ $$
 \mathcal{A}_{2,\mu} = \tilde U\,\mathcal{A}_\mu\,\tilde U^{-1} + \frac{i}{\kappa}\,(\partial/\partial R_\mu \tilde U)\,\tilde U^{-1},
 $$
 
-which reduces to the abelian law $\tilde{A}_2 = \tilde{A} - \tilde{\nabla}\Lambda$ when $\tilde U=e^{i\kappa\Lambda}$ is central. The field strength
+which reduces to the abelian law $\tilde{A}_{\Phi,2} = \tilde{A}_{\Phi} - \tilde{\nabla}\Lambda$ when $\tilde U=e^{i\kappa\Lambda}$ is central. The field strength
 
 $$
 F_{\mu\nu} = \partial/\partial R_\mu \mathcal{A}_\nu - \partial/\partial R_\nu \mathcal{A}_\mu + i\kappa\,[\mathcal{A}_\mu, \mathcal{A}_\nu],
@@ -199,7 +199,7 @@ The question for this agenda is how much of that is a *QCD* obstacle. The answer
 The **anomaly** is now partly supplied, and the position has to be stated carefully because it has moved. The chiral-fermion article attempted no biquaternion formulation of it; the companion *Anomalies and Anomaly Cancellation in Biquaternionic Form* does. It writes the Adler–Bell–Jackiw divergence in the framework's own objects,
 
 $$
-\langle\tilde\nabla,\tilde J_5\rangle_{\natural}=\sum_\mu\frac{\partial j_{5\mu}}{\partial R_\mu}
+\langle\tilde\nabla,\tilde J_{\Phi,5}\rangle_{\natural}=\sum_\mu\frac{\partial j_{5\mu}}{\partial R_\mu}
 =2im\,\mathrm{Sc}\bigl(\tilde{Ξ}_{\mathrm{sp}}^*\tilde{Ξ}_{\mathrm{sp}}\,\vec e_y\bigr)-\frac{e^2}{16\pi^2}\,\epsilon_{\mu\nu\rho\sigma}F_{\mu\nu}F_{\rho\sigma},
 $$
 

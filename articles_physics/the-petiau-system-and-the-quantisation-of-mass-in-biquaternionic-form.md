@@ -8,7 +8,7 @@ The biquaternion framework does not by itself derive a single mass value — an 
 
 The position is stated at the outset, and the article defends it section by section.
 
-- **Established.** The algebra carries the whole chain. Lanczos's coupled system $\tilde{\nabla}\tilde Q_1=m\tilde Q_2$, $\tilde{\nabla}\tilde Q_2=m\tilde Q_1$ is the massless Maxwell equation with a feedback; promoting the scalar $m$ to a biquaternion $\tilde{E}$ turns the second-order equations into **eigenvalue equations for the mass**, whose two eigenvalues are those of $\tilde{E}\tilde{E}^{*}$; the reduction of Petiau's closed system to Lanczos's, for a constant spin-0 field, is exact. These are algebra, and they are checked here.
+- **Established.** The algebra carries the whole chain. Lanczos's coupled system $\tilde{\nabla}\tilde Q_1=m\tilde Q_2$, $\tilde{\nabla}\tilde Q_2=m\tilde Q_1$ is the massless Maxwell equation with a feedback; promoting the scalar $m$ to a biquaternion $\tilde{E}_{\Psi}$ turns the second-order equations into **eigenvalue equations for the mass**, whose two eigenvalues are those of $\tilde{E}_{\Psi}\tilde{E}_{\Psi}^{*}$; the reduction of Petiau's closed system to Lanczos's, for a constant spin-0 field, is exact. These are algebra, and they are checked here.
 - **Transcribed.** Petiau's double-periodic waves, the quartic Hamiltonian $H=C_0\mu^4k^2$, and the quantisation of the amplitude and the proper mass are taken from Petiau through the review of Gsponer and Hurni. They are not re-derived here, and their status is that of the source, not of the framework.
 - **Empirical.** Barut's leptonic mass formula is an external numerical fit. Its agreement with the lepton data is a fact about the formula and the data, not a framework result, and the ratio $7.46$ of the two singular moduli is offered by the source as a plausible numerical coincidence, not as a derivation.
 - **Not supplied.** No mass value is derived from $\mathbb{B}$. The algebra is scale-free, the standard-model agenda's ledger is unchanged, and the article's contribution is to place the Lanczos–Einstein–Mayer–Petiau construction in the corpus with its verified content and its labelled speculation separated.
@@ -28,7 +28,7 @@ The framework results used here are those of the companion articles:
 
 ### The Lanczos Feedback System
 
-Maxwell's source-free equation in biquaternionic form is $\tilde{\nabla}\tilde{F}=0$, the complex-vector equation of Conway and Silberstein, and its inhomogeneous companion is $\tilde{\nabla}\tilde{F}=-\sqrt{\mu}\,\tilde{J}$ for a four-current $\tilde J$. Lanczos's observation, in 1929, was that the same two-slot equation with a **feedback** on the right-hand side describes a massive particle of spin $\frac{1}{2}$:
+Maxwell's source-free equation in biquaternionic form is $\tilde{\nabla}\tilde{F}=0$, the complex-vector equation of Conway and Silberstein, and its inhomogeneous companion is $\tilde{\nabla}\tilde{F}=-\sqrt{\mu}\,\tilde{J}_{\Phi}$ for a four-current $\tilde J_{\Phi}$. Lanczos's observation, in 1929, was that the same two-slot equation with a **feedback** on the right-hand side describes a massive particle of spin $\frac{1}{2}$:
 
 $$
 \tilde{\nabla}\tilde Q_1 = m\tilde Q_2,
@@ -50,52 +50,52 @@ The mass is a number, the same for both fields, and this is the Standard Model's
 
 ### The Einstein–Mayer Mass Biquaternion
 
-Einstein and Mayer, in 1933, took the step that makes the construction a theory of mass rather than a rewriting of Dirac's. The scalar $m$ is promoted to a biquaternion $\tilde{E}$, the **mass field**, and the system becomes
+Einstein and Mayer, in 1933, took the step that makes the construction a theory of mass rather than a rewriting of Dirac's. The scalar $m$ is promoted to a biquaternion $\tilde{E}_{\Psi}$, the **mass field**, and the system becomes
 
 $$
-\tilde{\nabla}\tilde Q_1 = \tilde Q_2\tilde{E}^{*},
+\tilde{\nabla}\tilde Q_1 = \tilde Q_2\tilde{E}_{\Psi}^{*},
 \qquad
-\tilde{\nabla}\tilde Q_2 = \tilde Q_1\tilde{E}.
+\tilde{\nabla}\tilde Q_2 = \tilde Q_1\tilde{E}_{\Psi}.
 $$
 
-For a constant central $\tilde{E}=m e_t$ the equations reduce to the Lanczos system above, since a central element commutes with everything: $\tilde Q_2\tilde{E}^{*}=\tilde Q_2m=m\tilde Q_2$ and $\tilde Q_1\tilde{E}=m\tilde Q_1$. This reduction is exact and is checked here. So the Einstein–Mayer system is the Lanczos system with a **field-valued** mass, and the mass parameter has become a dynamical object.
+For a constant central $\tilde{E}_{\Psi}=m e_t$ the equations reduce to the Lanczos system above, since a central element commutes with everything: $\tilde Q_2\tilde{E}_{\Psi}^{*}=\tilde Q_2m=m\tilde Q_2$ and $\tilde Q_1\tilde{E}_{\Psi}=m\tilde Q_1$. This reduction is exact and is checked here. So the Einstein–Mayer system is the Lanczos system with a **field-valued** mass, and the mass parameter has become a dynamical object.
 
-The reduction is not the point; the eigenvalue is. Applying the conjugate gradient to the first-order pair, and taking $\tilde{E}$ constant so that the derivatives do not act on it, gives
+The reduction is not the point; the eigenvalue is. Applying the conjugate gradient to the first-order pair, and taking $\tilde{E}_{\Psi}$ constant so that the derivatives do not act on it, gives
 
 $$
-\boxed{\;\Box\tilde Q_1 = \tilde Q_1\,\bigl(\tilde{E}\tilde{E}^{*}\bigr),
+\boxed{\;\Box\tilde Q_1 = \tilde Q_1\,\bigl(\tilde{E}_{\Psi}\tilde{E}_{\Psi}^{*}\bigr),
 \qquad
-\Box\tilde Q_2 = \tilde Q_2\,\bigl(\tilde{E}^{*}\tilde{E}\bigr)\;}.
+\Box\tilde Q_2 = \tilde Q_2\,\bigl(\tilde{E}_{\Psi}^{*}\tilde{E}_{\Psi}\bigr)\;}.
 $$
 
-The mass is no longer a number multiplying the field; it is an **operator** acting on the field from the right, and the mass-squareds of the two fields are the eigenvalues of $\tilde{E}\tilde{E}^{*}$ (equivalently of $\tilde{E}^{*}\tilde{E}$, which has the same nonzero spectrum). The mass field $\tilde{E}$ has become the object that **determines** the masses, and the two masses of a doublet are read off from one biquaternion.
+The mass is no longer a number multiplying the field; it is an **operator** acting on the field from the right, and the mass-squareds of the two fields are the eigenvalues of $\tilde{E}_{\Psi}\tilde{E}_{\Psi}^{*}$ (equivalently of $\tilde{E}_{\Psi}^{*}\tilde{E}_{\Psi}$, which has the same nonzero spectrum). The mass field $\tilde{E}_{\Psi}$ has become the object that **determines** the masses, and the two masses of a doublet are read off from one biquaternion.
 
 ### The Two Masses and the Two-Mode Structure
 
-The two eigenvalues of $\tilde{E}\tilde{E}^{*}$ are the two mass-squareds, and everything depends on which kind of biquaternion $\tilde{E}$ is. Three cases exhaust the structure the corpus uses, and each is checked here on random elements.
+The two eigenvalues of $\tilde{E}_{\Psi}\tilde{E}_{\Psi}^{*}$ are the two mass-squareds, and everything depends on which kind of biquaternion $\tilde{E}_{\Psi}$ is. Three cases exhaust the structure the corpus uses, and each is checked here on random elements.
 
-**A real scalar, $\tilde{E}=s e_t$.** Then $\tilde{E}\tilde{E}^{*}=s^2 e_t$, a central element, and both eigenvalues equal $s^2$: the doublet is **degenerate**, the two particles have equal mass $|s|$, and the operator $\tilde{E}$ is a scalar in disguise. This is the case the source reads as the **proton–neutron** doublet, with the equal-mass pair of the isospin multiplet.
+**A real scalar, $\tilde{E}_{\Psi}=s e_t$.** Then $\tilde{E}_{\Psi}\tilde{E}_{\Psi}^{*}=s^2 e_t$, a central element, and both eigenvalues equal $s^2$: the doublet is **degenerate**, the two particles have equal mass $|s|$, and the operator $\tilde{E}_{\Psi}$ is a scalar in disguise. This is the case the source reads as the **proton–neutron** doublet, with the equal-mass pair of the isospin multiplet.
 
-**A Hermitian idempotent, $\tilde{E}=\tilde{\Pi}$.** Then $\tilde{E}^{*}=\tilde{E}$ and $\tilde{E}^2=\tilde{E}$, so $\tilde{E}\tilde{E}^{*}=\tilde{E}$, an idempotent of rank one: its eigenvalues are $1$ and $0$. The doublet is **split**, one mode massive and one massless. This is the case the source reads as the **electron–neutrino** doublet — the charged fermion and its massless partner.
+**A Hermitian idempotent, $\tilde{E}_{\Psi}=\tilde{\Pi}$.** Then $\tilde{E}_{\Psi}^{*}=\tilde{E}_{\Psi}$ and $\tilde{E}_{\Psi}^2=\tilde{E}_{\Psi}$, so $\tilde{E}_{\Psi}\tilde{E}_{\Psi}^{*}=\tilde{E}_{\Psi}$, an idempotent of rank one: its eigenvalues are $1$ and $0$. The doublet is **split**, one mode massive and one massless. This is the case the source reads as the **electron–neutrino** doublet — the charged fermion and its massless partner.
 
-**A singular biquaternion, $\langle\tilde{E}\rangle_{\natural} = \langle\tilde{E},\tilde{E}\rangle_{\natural}=0$.** Then $\det\mathsf{M}_2(\tilde{E}\tilde{E}^{*})=|\langle\tilde{E}\rangle_{\natural}|^2=0$, so at least one eigenvalue vanishes: **a singular mass field always leaves a massless mode**, whatever else it does. The identity $\det\mathsf{M}_2(\tilde{E}\tilde{E}^{*})=|\langle\tilde{E}\rangle_{\natural}|^2$ is the determinant of the matrix of the mass operator, and it is verified here; the vanishing of the norm is exactly the condition the idempotent case realises. The corpus's example $\tilde{E}=\vec e_x+i\vec e_y$ is singular, $\langle \vec e_x+i\vec e_y\rangle_{\natural}=1+i^2=0$, and its two mass-squareds are $4$ and $0$ — one massive mode and the electron–neutrino skeleton, checked directly.
+**A singular biquaternion, $\langle\tilde{E}_{\Psi}\rangle_{\natural} = \langle\tilde{E}_{\Psi},\tilde{E}_{\Psi}\rangle_{\natural}=0$.** Then $\det\mathsf{M}_2(\tilde{E}_{\Psi}\tilde{E}_{\Psi}^{*})=|\langle\tilde{E}_{\Psi}\rangle_{\natural}|^2=0$, so at least one eigenvalue vanishes: **a singular mass field always leaves a massless mode**, whatever else it does. The identity $\det\mathsf{M}_2(\tilde{E}_{\Psi}\tilde{E}_{\Psi}^{*})=|\langle\tilde{E}_{\Psi}\rangle_{\natural}|^2$ is the determinant of the matrix of the mass operator, and it is verified here; the vanishing of the norm is exactly the condition the idempotent case realises. The corpus's example $\tilde{E}_{\Psi}=\vec e_x+i\vec e_y$ is singular, $\langle \vec e_x+i\vec e_y\rangle_{\natural}=1+i^2=0$, and its two mass-squareds are $4$ and $0$ — one massive mode and the electron–neutrino skeleton, checked directly.
 
 The three cases are collected in one table.
 
-| mass field $\tilde{E}$ | $\tilde{E}\tilde{E}^{*}$ | mass-squareds | reading |
+| mass field $\tilde{E}_{\Psi}$ | $\tilde{E}_{\Psi}\tilde{E}_{\Psi}^{*}$ | mass-squareds | reading |
 |---|---|---|---|
 | real scalar $s e_t$ | $s^2 e_t$ | $s^2,\ s^2$ | degenerate doublet (proton–neutron) |
 | Hermitian idempotent $\tilde{\Pi}$ | $\tilde{\Pi}$ | $1,\ 0$ | split doublet (electron–neutrino) |
-| singular, $\langle\tilde{E}\rangle_{\natural}=0$ | rank-deficient | $\lambda,\ 0$ | one massless mode |
+| singular, $\langle\tilde{E}_{\Psi}\rangle_{\natural}=0$ | rank-deficient | $\lambda,\ 0$ | one massless mode |
 | general | Hermitian, positive | $m_1^2,\ m_2^2$ | a massive doublet |
 
-The **content of the construction, in one sentence**: the mass of a spin-$\frac{1}{2}$ doublet is not a number in this framework but a biquaternion, and the two masses of the doublet are the two eigenvalues of $\tilde{E}\tilde{E}^{*}$. That is a genuine structural statement, and it is the framework's own, not the Standard Model's.
+The **content of the construction, in one sentence**: the mass of a spin-$\frac{1}{2}$ doublet is not a number in this framework but a biquaternion, and the two masses of the doublet are the two eigenvalues of $\tilde{E}_{\Psi}\tilde{E}_{\Psi}^{*}$. That is a genuine structural statement, and it is the framework's own, not the Standard Model's.
 
 ## The Petiau Closure
 
 ### The Third Equation
 
-The Einstein–Mayer system has a mass field $\tilde{E}$ that is put in by hand. Petiau's 1965 step, in the same feedback spirit, is to give $\tilde{E}$ an equation of its own and so **close** the system. Adding a spin-0 field $\tilde Q_3$, in place of $\tilde{E}$, gives the closed system
+The Einstein–Mayer system has a mass field $\tilde{E}_{\Psi}$ that is put in by hand. Petiau's 1965 step, in the same feedback spirit, is to give $\tilde{E}_{\Psi}$ an equation of its own and so **close** the system. Adding a spin-0 field $\tilde Q_3$, in place of $\tilde{E}_{\Psi}$, gives the closed system
 
 $$
 \boxed{\;\begin{aligned}
@@ -197,7 +197,7 @@ What none of the three does is derive a mass from the algebra. The formula's inp
 
 The article's accounting, collected.
 
-**Supplied by the algebra, and verified here.** The Lanczos feedback system and its equivalence to a massive spin-$\frac{1}{2}$ equation; the promotion of the scalar mass to a biquaternion $\tilde{E}$ and the consequent eigenvalue equation $\Box\tilde Q_1=\tilde Q_1(\tilde{E}\tilde{E}^{*})$, $\Box\tilde Q_2=\tilde Q_2(\tilde{E}^{*}\tilde{E})$, whose two eigenvalues are the two masses of the doublet; the identity $\det\mathsf{M}_2(\tilde{E}\tilde{E}^{*})=|\langle\tilde{E}\rangle_{\natural}|^2$, so that a singular mass field always leaves a massless mode; and the exact reduction of the closed Petiau system to Lanczos for a constant spin-0 field. These are statements about $\mathbb{B}$ and its modules, they are independent of any empirical input, and each was checked on random elements.
+**Supplied by the algebra, and verified here.** The Lanczos feedback system and its equivalence to a massive spin-$\frac{1}{2}$ equation; the promotion of the scalar mass to a biquaternion $\tilde{E}_{\Psi}$ and the consequent eigenvalue equation $\Box\tilde Q_1=\tilde Q_1(\tilde{E}_{\Psi}\tilde{E}_{\Psi}^{*})$, $\Box\tilde Q_2=\tilde Q_2(\tilde{E}_{\Psi}^{*}\tilde{E}_{\Psi})$, whose two eigenvalues are the two masses of the doublet; the identity $\det\mathsf{M}_2(\tilde{E}_{\Psi}\tilde{E}_{\Psi}^{*})=|\langle\tilde{E}_{\Psi}\rangle_{\natural}|^2$, so that a singular mass field always leaves a massless mode; and the exact reduction of the closed Petiau system to Lanczos for a constant spin-0 field. These are statements about $\mathbb{B}$ and its modules, they are independent of any empirical input, and each was checked on random elements.
 
 **Transcribed from the source.** The nonlinear character of the closed system; the double-periodic Petiau waves, their interpolation between de Broglie waves at $k=0$ and solitons at $k=1$, and the quantisation of the amplitude and the proper mass; and the Hamiltonian $H=C_0\mu^4k^2$. These are Petiau's results, reached in his non-linear wave mechanics, and the corpus records them with their provenance and without re-derivation.
 
@@ -207,7 +207,7 @@ The article's accounting, collected.
 
 ## Open Questions
 
-1. **The second-order form of the closed system.** The eigenvalued form $\Box\tilde Q_1=\tilde Q_1(\tilde{E}\tilde{E}^{*})$ is the constant-$\tilde{E}$ reduction. For a field-valued $\tilde{E}$ or $\tilde Q_3$ the derivatives act on the mass field as well, and the second-order system acquires terms the corpus has not written. The two-sided derivative the closed system needs is the subject of the companion articles on the covariant derivative and on the curvature; whether one biquaternion equation can carry it is open.
+1. **The second-order form of the closed system.** The eigenvalued form $\Box\tilde Q_1=\tilde Q_1(\tilde{E}_{\Psi}\tilde{E}_{\Psi}^{*})$ is the constant-$\tilde{E}_{\Psi}$ reduction. For a field-valued $\tilde{E}_{\Psi}$ or $\tilde Q_3$ the derivatives act on the mass field as well, and the second-order system acquires terms the corpus has not written. The two-sided derivative the closed system needs is the subject of the companion articles on the covariant derivative and on the curvature; whether one biquaternion equation can carry it is open.
 
 2. **The quantisation of $\mu$.** Petiau's quantisation of the proper mass comes from the periodic-orbit structure of the nonlinear system. Whether that structure can be stated inside $\mathbb{B}$ — as a condition on the elliptic modulus, on an idempotent, or on a topological invariant of the solution — is not settled, and the corpus records only the shape of the result.
 
@@ -219,7 +219,7 @@ The article's accounting, collected.
 
 ## Summary
 
-The biquaternion framework carries a definite line of work on mass, and this article states it with its parts separated. The **Lanczos** system $\tilde{\nabla}\tilde Q_1=m\tilde Q_2$, $\tilde{\nabla}\tilde Q_2=m\tilde Q_1$ is Maxwell's equation with a feedback, and it is strictly equivalent to a massive spin-$\frac{1}{2}$ equation; the **Einstein–Mayer** system $\tilde{\nabla}\tilde Q_1=\tilde Q_2\tilde{E}^{*}$, $\tilde{\nabla}\tilde Q_2=\tilde Q_1\tilde{E}$ promotes the scalar mass to a biquaternion $\tilde{E}$, so that the second-order equations become eigenvalue equations for the mass, with mass-squared operators $\tilde{E}\tilde{E}^{*}$ for $\tilde Q_1$ and $\tilde{E}^{*}\tilde{E}$ for $\tilde Q_2$; the two eigenvalues are the two masses of a doublet, equal when $\tilde{E}$ is a real scalar (the proton–neutron case), split with one massless mode when $\tilde{E}$ is a Hermitian idempotent or, more generally, a singular biquaternion (the electron–neutrino skeleton), the general case being controlled by $\det\mathsf{M}_2(\tilde{E}\tilde{E}^{*})=|\langle\tilde{E}\rangle_{\natural}|^2$. The **Petiau** system $\tilde{\nabla}\tilde Q_1=\tilde Q_2\tilde Q_3$, $\tilde{\nabla}\tilde Q_2=\tilde Q_1\tilde Q_3$, $\tilde{\nabla}\tilde Q_3=\tilde Q_1\tilde Q_2$ closes the system by giving the mass field its own equation, at the cost of nonlinearity, and reduces exactly to Lanczos when $\tilde Q_3$ is constant. Its solutions are the **double-periodic Petiau waves**, built from elliptic functions, interpolating between de Broglie waves at modulus $k=0$ and solitons at $k=1$, with quantised amplitude and proper mass and with the quartic Hamiltonian $H=C_0\mu^4k^2$.
+The biquaternion framework carries a definite line of work on mass, and this article states it with its parts separated. The **Lanczos** system $\tilde{\nabla}\tilde Q_1=m\tilde Q_2$, $\tilde{\nabla}\tilde Q_2=m\tilde Q_1$ is Maxwell's equation with a feedback, and it is strictly equivalent to a massive spin-$\frac{1}{2}$ equation; the **Einstein–Mayer** system $\tilde{\nabla}\tilde Q_1=\tilde Q_2\tilde{E}_{\Psi}^{*}$, $\tilde{\nabla}\tilde Q_2=\tilde Q_1\tilde{E}_{\Psi}$ promotes the scalar mass to a biquaternion $\tilde{E}_{\Psi}$, so that the second-order equations become eigenvalue equations for the mass, with mass-squared operators $\tilde{E}_{\Psi}\tilde{E}_{\Psi}^{*}$ for $\tilde Q_1$ and $\tilde{E}_{\Psi}^{*}\tilde{E}_{\Psi}$ for $\tilde Q_2$; the two eigenvalues are the two masses of a doublet, equal when $\tilde{E}_{\Psi}$ is a real scalar (the proton–neutron case), split with one massless mode when $\tilde{E}_{\Psi}$ is a Hermitian idempotent or, more generally, a singular biquaternion (the electron–neutrino skeleton), the general case being controlled by $\det\mathsf{M}_2(\tilde{E}_{\Psi}\tilde{E}_{\Psi}^{*})=|\langle\tilde{E}_{\Psi}\rangle_{\natural}|^2$. The **Petiau** system $\tilde{\nabla}\tilde Q_1=\tilde Q_2\tilde Q_3$, $\tilde{\nabla}\tilde Q_2=\tilde Q_1\tilde Q_3$, $\tilde{\nabla}\tilde Q_3=\tilde Q_1\tilde Q_2$ closes the system by giving the mass field its own equation, at the cost of nonlinearity, and reduces exactly to Lanczos when $\tilde Q_3$ is constant. Its solutions are the **double-periodic Petiau waves**, built from elliptic functions, interpolating between de Broglie waves at modulus $k=0$ and solitons at $k=1$, with quantised amplitude and proper mass and with the quartic Hamiltonian $H=C_0\mu^4k^2$.
 
 The empirical side is kept separate: **Barut's** formula $M(N)=M_e\bigl(1+\tfrac{3}{2}\alpha^{-1}\sum_{n=0}^{N}n^4\bigr)$ fits the lepton data to a few parts in $10^3$, matches the quartically-scaling Petiau Hamiltonian in shape, and is explained by the source as a moduli ratio $[\sin(\pi/4)/\sin(\pi/12)]^2=7.464$ between the harmonic and equianharmonic elliptic cases — a speculation the source itself labels as such, and one that predicts a fourth lepton the data exclude. The framework derives no mass value; what it supplies is a structure in which the mass is a field with an equation, the masses of a doublet are the eigenvalues of a biquaternion, and the spectrum problem becomes a nonlinear one. That is the article's result, and the mass values remain, as before, outside the algebra.
 
@@ -234,12 +234,12 @@ The empirical side is kept separate: **Barut's** formula $M(N)=M_e\bigl(1+\tfrac
 | $\Box=\tilde{\nabla}\tilde{\nabla}^{\natural}=\tilde{\nabla}^{\natural}\tilde{\nabla}$ | d'Alembertian, $\partial^2/\partial R_t^2+\Delta$ (series convention) |
 | $\tilde Q_1,\ \tilde Q_2$ | Lanczos spin-$\frac{1}{2}$ fields |
 | $m=k_m$ | Scalar mass parameter, inverse-length units |
-| $\tilde{E}$ | Einstein–Mayer mass biquaternion |
+| $\tilde{E}_{\Psi}$ | Einstein–Mayer mass biquaternion |
 | $\tilde Q_3$ | Petiau spin-0 field, closing the system |
 | $\langle\tilde{Q}\rangle_{\natural} = \langle\tilde{Q},\tilde{Q}\rangle_{\natural}=\tilde{Q}\tilde{Q}^{\natural}=\sum_\mu Q_\mu^2$ | Biquaternion norm; $N=0$ defines the singular elements |
 | $\tilde{Q}^{*}=\overline{\tilde{Q}^{\natural}}$ | Hermitian conjugation (the source's biconjugation) |
-| $\tilde{E}\tilde{E}^{*},\ \tilde{E}^{*}\tilde{E}$ | Mass-squared operators of $\tilde Q_1$ and $\tilde Q_2$ |
-| $\det\mathsf{M}_2(\tilde{E}\tilde{E}^{*})=|\langle\tilde{E}\rangle_{\natural}|^2$ | Determinant identity; vanishing forces a massless mode |
+| $\tilde{E}_{\Psi}\tilde{E}_{\Psi}^{*},\ \tilde{E}_{\Psi}^{*}\tilde{E}_{\Psi}$ | Mass-squared operators of $\tilde Q_1$ and $\tilde Q_2$ |
+| $\det\mathsf{M}_2(\tilde{E}_{\Psi}\tilde{E}_{\Psi}^{*})=|\langle\tilde{E}_{\Psi}\rangle_{\natural}|^2$ | Determinant identity; vanishing forces a massless mode |
 | $\sigma=\tfrac12(e_t+i\vec u_\nu)$ | Idempotent (nullquat), $\sigma^2=\sigma$, $\langle \sigma\rangle_{\natural}=0$ |
 | $\tilde\Pi_{1,2}(\vec u)=\tfrac12(e_t\pm i\vec u)$ | Hermitian idempotents; mass eigenvalues $1,0$ |
 | $\vec e_x+i\vec e_y$ | Singular mass field; mass-squareds $4,0$ |

@@ -116,7 +116,7 @@ $$
 [\tilde Q_1,\tilde Q_2]_\varsigma=\tilde Q_1\tilde Q_2^{*}-\tilde Q_2\tilde Q_1^{*},
 $$
 
-whose values lie in the skew-Hermitian part. **The full dot $\bullet$ and the wedge $\wedge$ are reserved for the exchange that keeps the class of the product, so neither names the objects of this paragraph.** The two are not the same operation (*Symmetric and Antisymmetric Decomposition of the Four General Products*; *The Sesquilinear Commutator and the Symmetrised Product on the Biquaternion*), and the current of a scalar field is the commutator, $\tilde J=i[\tilde{Ξ}^{*}(\tilde\nabla\tilde{Ξ})-(\tilde\nabla\tilde{Ξ}^{*})\tilde{Ξ}]$.
+whose values lie in the skew-Hermitian part. **The full dot $\bullet$ and the wedge $\wedge$ are reserved for the exchange that keeps the class of the product, so neither names the objects of this paragraph.** The two are not the same operation (*Symmetric and Antisymmetric Decomposition of the Four General Products*; *The Sesquilinear Commutator and the Symmetrised Product on the Biquaternion*), and the current of a scalar field is the commutator, $\tilde J_{\Phi}=i[\tilde{Ξ}^{*}(\tilde\nabla\tilde{Ξ})-(\tilde\nabla\tilde{Ξ}^{*})\tilde{Ξ}]$.
 
 The products themselves — their coordinates, their laws, their units and their images — are *Symmetric and Antisymmetric Decomposition of the Four General Products*, and the grid of the four general products is *The Four General Products: Composition, Probability, Causality, Gauge*.
 
@@ -250,19 +250,19 @@ $$
 of signature $(4,0)$ there, and its restriction to $\mathbb{B}_{\Phi}$ is minus the plain form, of signature $(0,4)$. A state is normalised by the form against the unit,
 
 $$
-\langle\tilde{Ϛ},e_t\rangle_{*} = \tfrac12\langle e_t\rangle_{*},
+\langle\tilde{Ϛ}_{\Psi},e_t\rangle_{*} = \tfrac12\langle e_t\rangle_{*},
 \qquad \langle e_t\rangle_{*}=1 .
 $$
 
 and the Born weight of an observable is the normalised Hermitian form,
 
 $$
-p=\frac{\langle\tilde{Ϛ},\tilde R_\Psi\rangle_{*}}{\langle\tilde{Ϛ},e_t\rangle_{*}}
- =\frac{\mathrm{Sc}(\tilde{Ϛ}\tilde R_\Psi^{*})}{\mathrm{Sc}(\tilde{Ϛ})}
+p=\frac{\langle\tilde{Ϛ}_{\Psi},\tilde R_\Psi\rangle_{*}}{\langle\tilde{Ϛ}_{\Psi},e_t\rangle_{*}}
+ =\frac{\mathrm{Sc}(\tilde{Ϛ}_{\Psi}\tilde R_\Psi^{*})}{\mathrm{Sc}(\tilde{Ϛ}_{\Psi})}
  =c r_t+\vec r\cdot\vec r_\Psi .
 $$
 
-The star is the Hermitian conjugation, and it is what makes the pairing positive definite on the whole algebra. On $\mathbb{B}_{\Psi}$ it is inert, since both arguments are Hermitian, and the weight is positive there by the sector's own definiteness. The weight is written with the star on $\mathbb{B}_{\Psi}$ and on $\mathbb{B}$ alike. On $\mathbb{B}_{\Psi}$ both arguments are Hermitian, so $\tilde R_\Psi^{*}=\tilde R_\Psi$ and the star acts as the identity on them, but it is not omitted: it names the form that is positive definite everywhere. The same weight is therefore also $\mathrm{Sc}(\tilde{Ϛ}\tilde R_\Psi)/\mathrm{Sc}(\tilde{Ϛ})$, the plain scalar. The plain form is the restriction of the Hermitian form to the sector, not a second definition of the weight. The Hermitian norm is the only one of the four that is positive definite on the whole algebra; the plain form is definite only on a sector, with opposite signs on the two. For a state $\tilde{Ϛ}\ge0$ and an effect $0\le\tilde R_\Psi\le e_t$ the weight lies in $[0,1]$, manifestly non-negative because the form is positive definite on the whole algebra. The trace is the final reading, at normalisation: the unstarred trace is real, because $(AB)^{\dagger}=BA$ for Hermitian $A,B$ gives $\overline{\mathrm{tr}(AB)}=\mathrm{tr}(AB)$; it is non-negative here because $\mathrm{tr}(AB)=\mathrm{tr}(A^{1/2}BA^{1/2})\ge0$ for the positive state and effect. The weight is therefore also $p=\operatorname{Tr}(\tilde{Ϛ}\tilde R_\Psi)/\operatorname{Tr}(\tilde{Ϛ})\in[0,1]$.
+The star is the Hermitian conjugation, and it is what makes the pairing positive definite on the whole algebra. On $\mathbb{B}_{\Psi}$ it is inert, since both arguments are Hermitian, and the weight is positive there by the sector's own definiteness. The weight is written with the star on $\mathbb{B}_{\Psi}$ and on $\mathbb{B}$ alike. On $\mathbb{B}_{\Psi}$ both arguments are Hermitian, so $\tilde R_\Psi^{*}=\tilde R_\Psi$ and the star acts as the identity on them, but it is not omitted: it names the form that is positive definite everywhere. The same weight is therefore also $\mathrm{Sc}(\tilde{Ϛ}_{\Psi}\tilde R_\Psi)/\mathrm{Sc}(\tilde{Ϛ}_{\Psi})$, the plain scalar. The plain form is the restriction of the Hermitian form to the sector, not a second definition of the weight. The Hermitian norm is the only one of the four that is positive definite on the whole algebra; the plain form is definite only on a sector, with opposite signs on the two. For a state $\tilde{Ϛ}_{\Psi}\ge0$ and an effect $0\le\tilde R_\Psi\le e_t$ the weight lies in $[0,1]$, manifestly non-negative because the form is positive definite on the whole algebra. The trace is the final reading, at normalisation: the unstarred trace is real, because $(AB)^{\dagger}=BA$ for Hermitian $A,B$ gives $\overline{\mathrm{tr}(AB)}=\mathrm{tr}(AB)$; it is non-negative here because $\mathrm{tr}(AB)=\mathrm{tr}(A^{1/2}BA^{1/2})\ge0$ for the positive state and effect. The weight is therefore also $p=\operatorname{Tr}(\tilde{Ϛ}_{\Psi}\tilde R_\Psi)/\operatorname{Tr}(\tilde{Ϛ}_{\Psi})\in[0,1]$.
 
 The scalar part is then a reading of the form against the unit, $\mathrm{Sc}(\tilde Q)=\langle\tilde Q,e_t\rangle_{*}$, and the trace is the reading in the $2\times2$ image, once and last,
 
@@ -271,7 +271,7 @@ $$
 \qquad 2\,\mathrm{Sc}(\tilde Q)=\operatorname{Tr}(\tilde Q).
 $$
 
-The factor $2$ is the dimension of that image, not a property of the form. The order of the readings is fixed once for the series — form with star, scalar with star, plain scalar on $\mathbb{B}_{\Psi}$, trace at normalisation last — and is explained in *The Born Rule from the Hermitian Form — Derivation and Comparison*. The Hermitian norm is not the normalising functional: on a state it reads $\langle\tilde{Ϛ}\rangle_{*}=\tfrac14(1+|\vec r|^2)$, which varies from $\tfrac14$ to $\tfrac12$ across the Bloch ball.
+The factor $2$ is the dimension of that image, not a property of the form. The order of the readings is fixed once for the series — form with star, scalar with star, plain scalar on $\mathbb{B}_{\Psi}$, trace at normalisation last — and is explained in *The Born Rule from the Hermitian Form — Derivation and Comparison*. The Hermitian norm is not the normalising functional: on a state it reads $\langle\tilde{Ϛ}_{\Psi}\rangle_{*}=\tfrac14(1+|\vec r|^2)$, which varies from $\tfrac14$ to $\tfrac12$ across the Bloch ball.
 
 **In the $2\times2$ image.** The four forms are the traces of their products up to that factor,
 
@@ -311,7 +311,7 @@ The twelve products are one construction. Two slots, each read plain or through 
 
 The four forms are the four maps read on two arguments. The identity gives the plain bilinear form $B$, the natural sign the quaternionic form $N$, the star the Hermitian form $H$ and the flat sign the Krein form $\mathrm{Kr}$, with the signature convention and the pairwise sign rule that make the table consistent. Each lower layer has its own table, and where a mark degenerates the brackets collapse two and two rather than becoming a different convention.
 
-The Hermitian form is the one that carries probability: $\langle e_t,e_t\rangle_*=1$, a normalised state has $\langle\tilde{Ϛ},e_t\rangle_*=\tfrac12$, and the Born weight is a ratio of pairings. Its type is decided by the second argument. The article closes by separating the conventions that are chosen from the assignments that are forced by the algebra.
+The Hermitian form is the one that carries probability: $\langle e_t,e_t\rangle_*=1$, a normalised state has $\langle\tilde{Ϛ}_{\Psi},e_t\rangle_*=\tfrac12$, and the Born weight is a ratio of pairings. Its type is decided by the second argument. The article closes by separating the conventions that are chosen from the assignments that are forced by the algebra.
 
 ## Summary of Notation
 

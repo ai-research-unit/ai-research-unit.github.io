@@ -278,7 +278,7 @@ j_\mu=\mathrm{Sc}\bigl(\tilde{Ξ}_{\mathrm{sp}}^*i\vec e_x\,Ξ_\mu\tilde{Ξ}_{\m
 \bar{\tilde{Ξ}}_{\mathrm{sp}}=\tilde{Ξ}_{\mathrm{sp}}^*i\vec e_x,
 $$
 
-where $Ξ_\mu$ are the four insertions of §*Kinematics*. The current is the material-sector four-current $\tilde J\in\mathbb{B}_{\Phi}$ of *Algebra and Element Conventions*, but its Dirac adjoint uses the fixed element $i\vec e_x$, which lies outside $\mathbb{B}$; the naive product $i\tilde{Ξ}_{\mathrm{sp}}\tilde{Ξ}_{\mathrm{sp}}^*$ is in $\mathbb{B}_{\Phi}$ and is not conserved. The Møller amplitude is the second-quantized version of that structure. Each vertex $J_\mu(p_{\mathrm{out}},p_{\mathrm{in}})$ is one electron current, and the two currents are contracted by the photon propagator $1/t$ or $1/u$. The framework's Maxwell field supplies the photon line: its canonical-quantization article constructs the quantized Maxwell field, and the photon propagator $1/t$ or $1/u$ is the standard two-point function of that field. The amplitude is the framework's current, twice, joined by the framework's photon. Nothing in this is a new prediction; it is the identification of the components.
+where $Ξ_\mu$ are the four insertions of §*Kinematics*. The current is the material-sector four-current $\tilde J_{\Phi}\in\mathbb{B}_{\Phi}$ of *Algebra and Element Conventions*, but its Dirac adjoint uses the fixed element $i\vec e_x$, which lies outside $\mathbb{B}$; the naive product $i\tilde{Ξ}_{\mathrm{sp}}\tilde{Ξ}_{\mathrm{sp}}^*$ is in $\mathbb{B}_{\Phi}$ and is not conserved. The Møller amplitude is the second-quantized version of that structure. Each vertex $J_\mu(p_{\mathrm{out}},p_{\mathrm{in}})$ is one electron current, and the two currents are contracted by the photon propagator $1/t$ or $1/u$. The framework's Maxwell field supplies the photon line: its canonical-quantization article constructs the quantized Maxwell field, and the photon propagator $1/t$ or $1/u$ is the standard two-point function of that field. The amplitude is the framework's current, twice, joined by the framework's photon. Nothing in this is a new prediction; it is the identification of the components.
 
 ### The relative minus sign is the mode algebra's antisymmetry
 
@@ -412,7 +412,7 @@ In the biquaternion framework the amplitude is the contraction of two material-s
 | $G_{\mathrm F}$ | Fermi constant |
 | $g_V^e=-\tfrac12Q_W^e$, $g_A^e=-\tfrac12$ | Vector and axial $Z$ couplings of the electron |
 | $Q_W^e=1-4\sin^2\theta_{\mathrm W}$ | Weak charge of the electron |
-| $\tilde J\in\mathbb{B}_{\Phi}$ | Framework's conserved material-sector current |
+| $\tilde J_{\Phi}\in\mathbb{B}_{\Phi}$ | Framework's conserved material-sector current |
 | $\mathcal C$ | Charge-conjugation real structure on $\Delta=S\oplus\bar S$ |
 | $\varepsilon=(1,-1,-1,-1)$ | Sign vector of the insertions |
 

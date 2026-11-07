@@ -142,17 +142,17 @@ The pattern — identity blocks on the diagonal, constant blocks off it — is t
 
 ### The reconstruction formula
 
-Let $\mathcal{B}_1,\dots,\mathcal{B}_{d+1}$ be a complete set of mutually unbiased bases of a state space of dimension $d$, with idempotents $\tilde\Pi_i^{(b)}$ and outcome probabilities $p_i^{(b)}=\langle\tilde{Ϛ},\tilde\Pi_i^{(b)}\rangle_{*}/\langle\tilde{Ϛ},e_t\rangle_{*}=\mathrm{Sc}(\tilde{Ϛ}{\tilde\Pi_i^{(b)}}^{*})/\mathrm{Sc}(\tilde{Ϛ})$, whose trace reading at normalisation is $\operatorname{Tr}(\tilde{Ϛ}{\tilde\Pi_i^{(b)}}^{*})=\operatorname{Tr}(\tilde{Ϛ}{\tilde\Pi_i^{(b)}})$, the star being inert on $\mathbb{B}_{\Psi}$ and the unstarred trace real and non-negative. Then
+Let $\mathcal{B}_1,\dots,\mathcal{B}_{d+1}$ be a complete set of mutually unbiased bases of a state space of dimension $d$, with idempotents $\tilde\Pi_i^{(b)}$ and outcome probabilities $p_i^{(b)}=\langle\tilde{Ϛ}_{\Psi},\tilde\Pi_i^{(b)}\rangle_{*}/\langle\tilde{Ϛ}_{\Psi},e_t\rangle_{*}=\mathrm{Sc}(\tilde{Ϛ}_{\Psi}{\tilde\Pi_i^{(b)}}^{*})/\mathrm{Sc}(\tilde{Ϛ}_{\Psi})$, whose trace reading at normalisation is $\operatorname{Tr}(\tilde{Ϛ}_{\Psi}{\tilde\Pi_i^{(b)}}^{*})=\operatorname{Tr}(\tilde{Ϛ}_{\Psi}{\tilde\Pi_i^{(b)}})$, the star being inert on $\mathbb{B}_{\Psi}$ and the unstarred trace real and non-negative. Then
 
 $$
-\boxed{\;\tilde{Ϛ} = \sum_{b=1}^{d+1}\sum_{i=1}^{d} p_i^{(b)}\,\tilde\Pi_i^{(b)} - e_t\;},
+\boxed{\;\tilde{Ϛ}_{\Psi} = \sum_{b=1}^{d+1}\sum_{i=1}^{d} p_i^{(b)}\,\tilde\Pi_i^{(b)} - e_t\;},
 $$
 
-for a state of unit trace (the matrix normalisation; for the qubit this is $\langle\tilde{Ϛ},e_t\rangle_{*}=\tfrac12$), so the $d(d+1)$ probabilities determine the state linearly. For the qubit this is the statement that three measurements, each with two outcomes, fix the three Bloch components: the six probabilities determine $\tilde{Ϛ}$, and the formula above reconstructs it.
+for a state of unit trace (the matrix normalisation; for the qubit this is $\langle\tilde{Ϛ}_{\Psi},e_t\rangle_{*}=\tfrac12$), so the $d(d+1)$ probabilities determine the state linearly. For the qubit this is the statement that three measurements, each with two outcomes, fix the three Bloch components: the six probabilities determine $\tilde{Ϛ}_{\Psi}$, and the formula above reconstructs it.
 
 ### Verification for the qubit
 
-Let $\tilde{Ϛ} = \tfrac12(e_t+i\vec r)$ and let $r_k = \vec r\cdot\vec u_k$. In basis $\mathcal{B}_k$ the two outcome probabilities are $p_\pm^{(k)} = \tfrac12(1\pm r_k)$. The contribution of basis $k$ to the sum is
+Let $\tilde{Ϛ}_{\Psi} = \tfrac12(e_t+i\vec r)$ and let $r_k = \vec r\cdot\vec u_k$. In basis $\mathcal{B}_k$ the two outcome probabilities are $p_\pm^{(k)} = \tfrac12(1\pm r_k)$. The contribution of basis $k$ to the sum is
 
 $$
 p_+^{(k)}\tilde\Pi_1(\vec u_k) + p_-^{(k)}\tilde\Pi_2(\vec u_k)
@@ -165,7 +165,7 @@ $$
 \sum_{k=1}^{3}\tfrac12\bigl(e_t + i r_k\vec u_k\bigr)
 = \tfrac{3}{2}e_t + \tfrac12 i\vec r
 = e_t + \tfrac12\bigl(e_t + i\vec r\bigr)
-= e_t + \tilde{Ϛ} ,
+= e_t + \tilde{Ϛ}_{\Psi} ,
 $$
 
 which rearranges to the reconstruction formula. Every step was verified numerically on a generic state with all three Bloch components non-zero; the reconstruction returned the input state to machine precision. The identity is the tomographic statement anticipated in the article on the native qubit: the three coordinate measurements determine the state, and no fourth measurement is needed.
@@ -229,7 +229,7 @@ not $\tfrac14$. For example $|\langleΞ^{+}|\tilde{Ξ}_{\mathrm{sp}}\rangle\otim
 - It identifies a basis of the defining module with an idempotent basis $\{\tilde\Pi_i\}$, $\tilde\Pi_i\tilde\Pi_j = \delta_{ij}\tilde\Pi_i$, $\sum_i\tilde\Pi_i = e_t$, and the overlap between rays with the normalised Hermitian form of idempotents, read as the trace pairing.
 - It derives mutual unbiasedness of the three qubit bases directly from the pairwise orthogonality of the imaginary units, giving $\mathrm{Tr}(\tilde\Pi_s(\vec u_j)\tilde\Pi_{s_2}(\vec u_k)^{*}) = \tfrac12$ for $j\neq k$.
 - It exhibits the maximal set: three bases for the qubit, with the explicit block-form overlap matrix.
-- It gives the reconstruction formula $\tilde{Ϛ} = \sum_b\sum_i p_i^{(b)}\tilde\Pi_i^{(b)} - e_t$ and verifies it for the qubit.
+- It gives the reconstruction formula $\tilde{Ϛ}_{\Psi} = \sum_b\sum_i p_i^{(b)}\tilde\Pi_i^{(b)} - e_t$ and verifies it for the qubit.
 - It shows that the tensor product does not preserve maximality of MUB sets, and that the Bell basis is not unbiased with respect to the product basis.
 
 **What it does not.**
@@ -266,7 +266,7 @@ $$
 \mathrm{Tr}\bigl(\tilde\Pi_s(\vec u_k)\tilde\Pi_{s_2}(\vec u_k)\bigr) = \delta_{ss_2} .
 $$
 
-The overlap matrix of the six pure states has identity blocks on the diagonal and constant blocks $\tfrac12 J_2$ off it. The three measurements are tomographically complete: $\tilde{Ϛ} = \sum_{k=1}^{3}\sum_{s=\pm} p_s^{(k)}\tilde\Pi_s(\vec u_k) - e_t$, verified on a generic state. For two qubits the maximum is $d+1=5$ bases; the tensor product of qubit MUB sets supplies only three, and the Bell basis is not unbiased with respect to the product basis, its overlap being $\tfrac12$ rather than $\tfrac14$. The framework thus supplies the qubit's complete MUB set natively, from the three imaginary units, and exhibits the failure of naive tensoring.
+The overlap matrix of the six pure states has identity blocks on the diagonal and constant blocks $\tfrac12 J_2$ off it. The three measurements are tomographically complete: $\tilde{Ϛ}_{\Psi} = \sum_{k=1}^{3}\sum_{s=\pm} p_s^{(k)}\tilde\Pi_s(\vec u_k) - e_t$, verified on a generic state. For two qubits the maximum is $d+1=5$ bases; the tensor product of qubit MUB sets supplies only three, and the Bell basis is not unbiased with respect to the product basis, its overlap being $\tfrac12$ rather than $\tfrac14$. The framework thus supplies the qubit's complete MUB set natively, from the three imaginary units, and exhibits the failure of naive tensoring.
 
 ## Summary of Notation
 
@@ -282,7 +282,7 @@ The overlap matrix of the six pure states has identity blocks on the diagonal an
 | $\mathcal{B}_k = \{\tilde\Pi_{1,2}(\vec u_k)\}$ | The three coordinate bases |
 | $\tilde Q_x=i\vec e_x,\ \tilde Q_y=i\vec e_y,\ \tilde Q_z=i\vec e_z$ | Hermitian involutions defining the bases |
 | $\mathrm{Tr}(\tilde\Pi_s(\vec u_j)\tilde\Pi_{s_2}(\vec u_k)^{*}) = \tfrac12$ ($j\neq k$) | Unbiasedness of the coordinate bases |
-| $\tilde{Ϛ} = \sum_b\sum_i p_i^{(b)}\tilde\Pi_i^{(b)} - e_t$ | Reconstruction from a complete MUB set |
+| $\tilde{Ϛ}_{\Psi} = \sum_b\sum_i p_i^{(b)}\tilde\Pi_i^{(b)} - e_t$ | Reconstruction from a complete MUB set |
 | $\tilde\Pi_\epsilon$ | Bell idempotents (maximally entangled basis) |
 | $\mathrm{Tr}(\tilde\Pi_\epsilon \tilde\Pi_{\mathrm{prod}}) = \tfrac12$ | Bell basis is biased relative to the product basis |
 

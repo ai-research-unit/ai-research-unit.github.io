@@ -184,7 +184,7 @@ The reading is a two-level system: two rungs, two raising and lowering operators
 The nilpotent is not a physical null four-momentum. A massless momentum has $N=0$ but $B^2\neq0$, and its square is
 
 $$
-\tilde P^2=2P_t\tilde P\neq0.
+\tilde P_{\Phi}^2=2P_t\tilde P_{\Phi}\neq0.
 $$
 
 The photon is a zero divisor of the light-ray cell $\Sigma_{01}$, not a nilpotent. The nilpotent is the pure lightlike displacement, the element whose composition with itself is nothing. The distinction is the distinction between the two degenerate cells.

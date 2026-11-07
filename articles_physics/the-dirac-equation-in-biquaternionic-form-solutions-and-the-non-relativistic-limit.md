@@ -147,7 +147,7 @@ $$
 
 Each sum is an operator written as an element times a scalar: the symbol $\tilde w\langle\tilde w,\cdot\rangle_{\mathrm D}$ is the action sending $\tilde{Ξ}$ to $\tilde w\,\langle\tilde w,\tilde{Ξ}\rangle_{\mathrm D}$, a product of an element with a number, and no matrix enters it. The two identities are the algebraic statement that the four solutions at fixed momentum span the amplitude space, and they are what a sum over spins uses.
 
-**The conserved current.** The vector bilinear of the next section is the conserved current, $j_0=\mathrm{Tr}(\tilde{Ξ}_{\mathrm{sp}}^*\tilde{Ξ}_{\mathrm{sp}})$ and $j_k=\mathrm{Tr}(\tilde{Ξ}_{\mathrm{sp}}^*\vec e_k\tilde{Ξ}_{\mathrm{sp}}\vec e_z)$, and the continuity equation of the companion article reads $\partial j_0/\partial r'_t+\nabla\cdot\vec j=0$ on the material sector. The current is the four-vector $\tilde J=ic\,j_0e_t+\vec j$ of $\mathbb{B}_{\Phi}$, with imaginary scalar part and real vector part: the Dirac current is a material-sector object, as a four-vector must be.
+**The conserved current.** The vector bilinear of the next section is the conserved current, $j_0=\mathrm{Tr}(\tilde{Ξ}_{\mathrm{sp}}^*\tilde{Ξ}_{\mathrm{sp}})$ and $j_k=\mathrm{Tr}(\tilde{Ξ}_{\mathrm{sp}}^*\vec e_k\tilde{Ξ}_{\mathrm{sp}}\vec e_z)$, and the continuity equation of the companion article reads $\partial j_0/\partial r'_t+\nabla\cdot\vec j=0$ on the material sector. The current is the four-vector $\tilde J_{\Phi}=ic\,j_0e_t+\vec j$ of $\mathbb{B}_{\Phi}$, with imaginary scalar part and real vector part: the Dirac current is a material-sector object, as a four-vector must be.
 
 ## The bilinears
 
@@ -168,7 +168,7 @@ j_0=\mathrm{Tr}\!\left(\tilde{Ξ}_{\mathrm{sp}}^*\tilde{Ξ}_{\mathrm{sp}}\right)
 j_k=\mathrm{Tr}\!\left(\tilde{Ξ}_{\mathrm{sp}}^*\vec e_k\tilde{Ξ}_{\mathrm{sp}}\,\vec e_z\right)=2p_k
 $$
 
-on a normalized positive-frequency solution: the first is positive, since $\mathrm{Tr}(\tilde{Ξ}_{\mathrm{sp}}^*\tilde{Ξ}_{\mathrm{sp}})$ is a sum of squared moduli of the four coefficients, and the three spatial components are real and equal to twice the momentum. The second equality is the reason the current is the four-velocity of the field, and on the material sector the four components assemble into $\tilde J=ic\,j_0e_t+\vec j\in\mathbb{B}_{\Phi}$.
+on a normalized positive-frequency solution: the first is positive, since $\mathrm{Tr}(\tilde{Ξ}_{\mathrm{sp}}^*\tilde{Ξ}_{\mathrm{sp}})$ is a sum of squared moduli of the four coefficients, and the three spatial components are real and equal to twice the momentum. The second equality is the reason the current is the four-velocity of the field, and on the material sector the four components assemble into $\tilde J_{\Phi}=ic\,j_0e_t+\vec j\in\mathbb{B}_{\Phi}$.
 
 **The spin bilinear and the informational sector.** There is a second bilinear, of a different kind: the spin state of one part. With $\vec u$ a unit vector, the element
 
@@ -332,7 +332,7 @@ $$
 
 with $E=+\sqrt{\vec p^{\,2}c^2+m^{2}\,c^{4}}$. Each branch is two-dimensional over $\mathbb{C}$, the four dimensions the companion article counts. The normalization is covariant, $\langle\tilde w,\tilde w\rangle_{\mathrm D}=2m$ and $\langle\tilde v,\tilde v\rangle_{\mathrm D}=-2m$, with $\langle\tilde w,\tilde v\rangle_{\mathrm D}=0$, and the spin sums $\sum_\pm\tilde w_\pm\langle\tilde w_\pm,\cdot\rangle_{\mathrm D}=\mathcal{D}+m$ and $\sum_\pm\tilde v_\pm\langle\tilde v_\pm,\cdot\rangle_{\mathrm D}=\mathcal{D}-m$ close the set.
 
-The bilinears are traces of products. The scalar and the pseudoscalar are the real and the imaginary part of the one pairing that mixes the two values, so a field of one value has no Dirac mass; the vector current is $j_0=2E$ and $\vec j=2\vec p$ on a normalized solution, and it assembles into the material-sector four-vector $\tilde J=ic\,j_0e_t+\vec j$ of $\mathbb{B}_{\Phi}$; the spin is the pure state $\frac12(e_t+i\vec u)$ of the informational sector $\mathbb{B}_{\Psi}$, with $\mathrm{Tr}(\tilde\rho\,i\vec e_k)=u_k$.
+The bilinears are traces of products. The scalar and the pseudoscalar are the real and the imaginary part of the one pairing that mixes the two values, so a field of one value has no Dirac mass; the vector current is $j_0=2E$ and $\vec j=2\vec p$ on a normalized solution, and it assembles into the material-sector four-vector $\tilde J_{\Phi}=ic\,j_0e_t+\vec j$ of $\mathbb{B}_{\Phi}$; the spin is the pure state $\frac12(e_t+i\vec u)$ of the informational sector $\mathbb{B}_{\Psi}$, with $\mathrm{Tr}(\tilde\rho\,i\vec e_k)=u_k$.
 
 In the non-relativistic limit the split by the timelike unit separates the large and the small part, the elimination of the small part is exact to the order kept, and the square of the odd part of the action produces the Pauli equation
 
@@ -364,7 +364,7 @@ on one element. The coefficient $1/2m$ of the spin term is the one that $\vec\mu
 | $\tilde{Ξ},\ \tilde{Ξ}_{\mathrm{sp}}$ | Large and small part, the values plus one and minus one under right multiplication by $i\vec e_x$ |
 | $\tilde\rho=\tfrac12(e_t+i\vec u)$ | Pure state of $\mathbb{B}_{\Psi}$; $\vec u$ the Bloch vector |
 | $S,\ P$ | Scalar and pseudoscalar bilinears |
-| $j_0,\ \vec j$, $\tilde J=ic\,j_0e_t+\vec j$ | Vector current and its material-sector form |
+| $j_0,\ \vec j$, $\tilde J_{\Phi}=ic\,j_0e_t+\vec j$ | Vector current and its material-sector form |
 | $\vec S=\frac{m\,c}{2\,k_m}i\vec e_k$, $\vec\mu=g\frac{ϙ}{2m}\vec S$ | Spin and magnetic moment |
 | $ϙ$ | Charge of the field under minimal coupling |
 | $\vec\pi=\vec p-ϙ\vec A$, $\vec B=\nabla\times\vec A$ | Kinetic momentum and magnetic field |

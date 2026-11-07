@@ -61,7 +61,7 @@ so that $S_\theta=\theta\,Ϙ$ with the charge normalisation used here, since $\i
 
 $$
 \sum_{\mu,\nu,a}F_{\mu\nu a}F_{\mathrm{dual},\mu\nu a}
-=\langle\tilde\nabla,\tilde J_{\mathrm{CS}}\rangle_{\natural} ,
+=\langle\tilde\nabla,\tilde J_{\Phi,\mathrm{CS}}\rangle_{\natural} ,
 \qquad
 J_{\mathrm{CS},\mu}=\sum_{\nu,\rho,\sigma}\sum_a\epsilon_{\mu\nu\rho\sigma}\Bigl(A_{\nu a}F_{\rho\sigma a}
 -\tfrac{g}{3}\sum_{b,c}f_{abc}A_{\nu a}A_{\rho b}A_{\sigma c}\Bigr),
@@ -207,7 +207,7 @@ The field content is carried by the gradient and by the chirality subscript: the
 | $S_\theta=\frac{\theta}{32\pi^2}\int\sum_{\mu,\nu}F_{\mu\nu}F_{\mathrm{dual},\mu\nu}$ | Theta term of the action |
 | $F_{\mathrm{dual},\mu\nu}=\frac12\sum_{\rho,\sigma}\epsilon_{\mu\nu\rho\sigma}F_{\rho\sigma}$ | Hodge dual field strength |
 | $Ϙ=\frac{1}{8\pi^2}\int\mathrm{Tr}(F\wedge F)$ | Topological charge, $Ϙ\in\mathbb Z$ |
-| $J_{\mathrm{CS},\mu}$ | Chern–Simons current, $\sum_{\mu,\nu}F_{\mu\nu}F_{\mathrm{dual},\mu\nu}=\langle\tilde\nabla,\tilde J_{\mathrm{CS}}\rangle_{\natural}$ |
+| $J_{\mathrm{CS},\mu}$ | Chern–Simons current, $\sum_{\mu,\nu}F_{\mu\nu}F_{\mathrm{dual},\mu\nu}=\langle\tilde\nabla,\tilde J_{\Phi,\mathrm{CS}}\rangle_{\natural}$ |
 | $Z(\theta)=\sum_Ϙ \exp(iϘ\theta)Z_Ϙ$ | Theta-dependent partition function, period $2\pi$ |
 | $\bar\theta=\theta+\arg\det M_q$ | Physical CP-violating parameter |
 | $M_q$ | Quark mass matrix in flavour space (imported); not a display of the algebra |

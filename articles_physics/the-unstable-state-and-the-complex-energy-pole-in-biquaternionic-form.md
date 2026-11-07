@@ -15,7 +15,7 @@ $$
 \tilde R_\Psi = c r_t\,e_t + i\,\vec r_\Psi, \qquad c r_t\in\mathbb{R},\quad \vec r_\Psi\in\mathbb{R}^3,
 $$
 
-and the centre is $\mathbb{B}_{C}=\mathbb{C}e_t$. The state module is $S=\mathbb{B}\tilde\Pi\cong\mathbb{C}^2$ with the dictionary $\mathsf{M}_2(\vec e_\mu)=-i\sigma_\mu$ and $\mathsf{M}_2(i\vec e_\mu)=\sigma_\mu$; a pure state is the idempotent $\tilde\Pi=\tfrac12(e_t+i\vec u)$ with $\vec u$ a unit vector along the $\vec e_\mu$, and $\mathrm{Tr}(\tilde\Pi)=1$. The trace convention is $\mathrm{Tr}=2\,\mathrm{Sc}$. The dynamics is $\tilde Q(r'_t)=\exp(-\frac{k_m\,i\,Hr'_{t}}{m\,c})$ with the state evolving by conjugation, $\tilde{Ϛ}(r'_t)=\tilde Q(r'_t)\tilde{Ϛ}(0)\tilde Q(r'_t)^{*}$; the evolution is $*$-unitary, $\tilde Q\tilde Q^{*}=e_t$, and the scalar part $c r_t$ of the Hamiltonian contributes only a global phase to the conjugated state. Energies are measured in the same units as $\frac{m\,c\,\omega}{k_m}$.
+and the centre is $\mathbb{B}_{C}=\mathbb{C}e_t$. The state module is $S=\mathbb{B}\tilde\Pi\cong\mathbb{C}^2$ with the dictionary $\mathsf{M}_2(\vec e_\mu)=-i\sigma_\mu$ and $\mathsf{M}_2(i\vec e_\mu)=\sigma_\mu$; a pure state is the idempotent $\tilde\Pi=\tfrac12(e_t+i\vec u)$ with $\vec u$ a unit vector along the $\vec e_\mu$, and $\mathrm{Tr}(\tilde\Pi)=1$. The trace convention is $\mathrm{Tr}=2\,\mathrm{Sc}$. The dynamics is $\tilde Q(r'_t)=\exp(-\frac{k_m\,i\,Hr'_{t}}{m\,c})$ with the state evolving by conjugation, $\tilde{Ϛ}_{\Psi}(r'_t)=\tilde Q(r'_t)\tilde{Ϛ}_{\Psi}(0)\tilde Q(r'_t)^{*}$; the evolution is $*$-unitary, $\tilde Q\tilde Q^{*}=e_t$, and the scalar part $c r_t$ of the Hamiltonian contributes only a global phase to the conjugated state. Energies are measured in the same units as $\frac{m\,c\,\omega}{k_m}$.
 
 The convention for the resolvent follows *The Resolvent Operator*, which writes $R(\lambda)=(L-\lambda)^{-1}$; this article writes the Green's function $G(z)=(z-\tilde R_\Psi)^{-1}$, so the two are related by $G(z)=-R(z)$, and the poles are the eigenvalues in both.
 
@@ -23,10 +23,10 @@ The convention for the resolvent follows *The Resolvent Operator*, which writes 
 
 ### The survival amplitude and the survival probability
 
-Let $\tilde\Pi_0\in\mathbb{B}_{\Psi}$ be the idempotent of the state prepared at $r'_t=0$, and let $\tilde{Ϛ}(r'_t)=\tilde Q(r'_t)\tilde\Pi_0\tilde Q(r'_t)^{*}$ be its evolution. The probability that the system is found in the initial state at time $r'_t$ is the pairing of the evolved state with the initial idempotent,
+Let $\tilde\Pi_0\in\mathbb{B}_{\Psi}$ be the idempotent of the state prepared at $r'_t=0$, and let $\tilde{Ϛ}_{\Psi}(r'_t)=\tilde Q(r'_t)\tilde\Pi_0\tilde Q(r'_t)^{*}$ be its evolution. The probability that the system is found in the initial state at time $r'_t$ is the pairing of the evolved state with the initial idempotent,
 
 $$
-P(r'_t) = \mathrm{Tr}\bigl(\tilde\Pi_0\,\tilde{Ϛ}(r'_t)\bigr)
+P(r'_t) = \mathrm{Tr}\bigl(\tilde\Pi_0\,\tilde{Ϛ}_{\Psi}(r'_t)\bigr)
 = \mathrm{Tr}\bigl(\tilde\Pi_0\,\tilde Q(r'_t)\,\tilde\Pi_0\,\tilde Q(r'_t)^{*}\bigr).
 $$
 
@@ -92,7 +92,7 @@ which is the matrix form of the reflective symmetry of the resolvent in the real
 
 ### The self-energy
 
-Split the Hamiltonian into a solvable part and a coupling, $\tilde R_\Psi=\tilde{R}_{\Psi,0}+\tilde V$, and let $\tilde\Pi_0$ project on the state of interest with $\tilde{R}_{\Psi,0}\tilde\Pi_0=E_0\tilde\Pi_0$. Write $\tilde\Pi_\perp=e_t-\tilde\Pi_0$ for the complementary projection and $\tilde\Pi_\perp\tilde R_\Psi\tilde\Pi_\perp$ for the Hamiltonian restricted to it. The scalar Green's function of the distinguished state is the **reduced resolvent**
+Split the Hamiltonian into a solvable part and a coupling, $\tilde R_\Psi=\tilde{R}_{\Psi,0}+\tilde V_{\Phi}$, and let $\tilde\Pi_0$ project on the state of interest with $\tilde{R}_{\Psi,0}\tilde\Pi_0=E_0\tilde\Pi_0$. Write $\tilde\Pi_\perp=e_t-\tilde\Pi_0$ for the complementary projection and $\tilde\Pi_\perp\tilde R_\Psi\tilde\Pi_\perp$ for the Hamiltonian restricted to it. The scalar Green's function of the distinguished state is the **reduced resolvent**
 
 $$
 G_{00}(z) = \mathrm{Tr}\bigl(\tilde\Pi_0\,G(z)\bigr) = \mathrm{Tr}\bigl(\tilde\Pi_0\,G(z)\,\tilde\Pi_0\bigr),
@@ -103,16 +103,16 @@ and the block identity of *The Resolvent Operator* gives it the closed form
 $$
 G_{00}(z) = \frac{1}{z-E_0-\Sigma(z)},
 \qquad
-\Sigma(z) = \mathrm{Tr}\bigl(\tilde\Pi_0\tilde V\tilde\Pi_0\bigr)
-+ \mathrm{Tr}\Bigl(\tilde\Pi_0\tilde V\,\tilde\Pi_\perp\frac{1}{z-\tilde\Pi_\perp\tilde R_\Psi\tilde\Pi_\perp}\tilde\Pi_\perp\,\tilde V\tilde\Pi_0\Bigr).
+\Sigma(z) = \mathrm{Tr}\bigl(\tilde\Pi_0\tilde V_{\Phi}\tilde\Pi_0\bigr)
++ \mathrm{Tr}\Bigl(\tilde\Pi_0\tilde V_{\Phi}\,\tilde\Pi_\perp\frac{1}{z-\tilde\Pi_\perp\tilde R_\Psi\tilde\Pi_\perp}\tilde\Pi_\perp\,\tilde V_{\Phi}\tilde\Pi_0\Bigr).
 $$
 
-The quantity $\Sigma(z)$ is the **self-energy**. It is a scalar function of the central variable $z$ — a complex number of the centre — and it collects the entire effect of the coupling on the distinguished state. To second order in $\tilde V$, with $\lvert 0\rangle$ the state and $\lvert n\rangle$ a complete set spanning the complement, it is
+The quantity $\Sigma(z)$ is the **self-energy**. It is a scalar function of the central variable $z$ — a complex number of the centre — and it collects the entire effect of the coupling on the distinguished state. To second order in $\tilde V_{\Phi}$, with $\lvert 0\rangle$ the state and $\lvert n\rangle$ a complete set spanning the complement, it is
 
 $$
-\Sigma(z) = \langle 0\lvert\tilde V\rvert 0\rangle
-+ \sum_{n\neq0}\frac{\lvert\langle 0\lvert\tilde V\rvert n\rangle\rvert^{2}}{z-E_n}
-+ O(\tilde V^{3}).
+\Sigma(z) = \langle 0\lvert\tilde V_{\Phi}\rvert 0\rangle
++ \sum_{n\neq0}\frac{\lvert\langle 0\lvert\tilde V_{\Phi}\rvert n\rangle\rvert^{2}}{z-E_n}
++ O(\tilde V_{\Phi}^{3}).
 $$
 
 The sum is over the states the coupling reaches. When those states form a discrete set the sum is a finite or countable sum of simple poles on the real axis; when the Hamiltonian has a **continuum** the sum becomes an integral and its limit at the real axis is a **branch cut**. The distinction is the whole content of the unstable state.
@@ -128,7 +128,7 @@ $$
 with $\Delta$ and $\Gamma$ real. The sum representation identifies them: the real part is the **level shift**, present even without a continuum, and the imaginary part is produced by the on-shell states only, through the delta contribution of each pole as it is pushed onto the axis,
 
 $$
-\Gamma(E) = 2\pi\sum_{n}\lvert\langle 0\lvert\tilde V\rvert n\rangle\rvert^{2}\,\delta(E-E_n)
+\Gamma(E) = 2\pi\sum_{n}\lvert\langle 0\lvert\tilde V_{\Phi}\rvert n\rangle\rvert^{2}\,\delta(E-E_n)
 = 2\pi\,\lvert V_0(E)\rvert^{2}\,\rho(E),
 $$
 
@@ -178,7 +178,7 @@ The same element carries five descriptions, and they are worth setting side by s
 | --- | --- | --- | --- |
 | word | $r\,e^{i\alpha}$ | $r=e^{-\frac{k_m\,\Gamma\,r'_{t}}{2\,m\,c}}$, $\alpha=-\frac{k_m\,E_{R}\,r'_{t}}{m\,c}$ | the scale is the survival amplitude, the phase the oscillation |
 | central exponent | $e^{\Theta}$ | $\Theta=-\frac{k_m\,iz_{\star}\,r'_{t}}{m\,c}$ | the complex angle |
-| Cartan | $\tilde A\tilde Q$ | $\tilde A=e^{-\frac{k_m\,\Gamma\,r'_{t}}{2\,m\,c}}\,e_{t}$, $\tilde Q=e^{-\frac{k_m\,iE_{R}\,r'_{t}}{m\,c}}\,e_{t}$ | the amplitude and the phase |
+| Cartan | $\tilde A_{\Phi}\tilde Q$ | $\tilde A_{\Phi}=e^{-\frac{k_m\,\Gamma\,r'_{t}}{2\,m\,c}}\,e_{t}$, $\tilde Q=e^{-\frac{k_m\,iE_{R}\,r'_{t}}{m\,c}}\,e_{t}$ | the amplitude and the phase |
 | generator | $-iz_\star$ | $-\tfrac{\Gamma}{2}e_t-iE_Re_t$ | Hermitian damping plus anti-Hermitian energy |
 | mass-unit angle | $\theta_\star=z_\star/(mc^2)$ | $\epsilon_\star-i\gamma_\star$, $\epsilon_\star=E_R/(mc^2)$, $\gamma_\star=\Gamma/(2mc^2)$ | the half-width is $\gamma_\star$ |
 
@@ -201,7 +201,7 @@ so $\theta_\star$ is the complex angle per unit of the mass time. Its imaginary 
 **The Cartan reading is the cleanest.** The positive factor of the pole term is the survival amplitude in the pole approximation,
 
 $$
-\tilde A(r'_t)=\sqrt{\tilde U_\star(r'_t)\tilde U_\star(r'_t)^{*}}=e^{-\frac{k_m\,\Gamma\,r'_{t}}{2\,m\,c}}\,e_{t},
+\tilde A_{\Phi}(r'_t)=\sqrt{\tilde U_\star(r'_t)\tilde U_\star(r'_t)^{*}}=e^{-\frac{k_m\,\Gamma\,r'_{t}}{2\,m\,c}}\,e_{t},
 $$
 
 and the $*$-unitary factor is the phase $e^{-\frac{k_m\,iE_{R}\,r'_{t}}{m\,c}}\,e_{t}$. The survival probability is the square of the amplitude, $\langle\tilde U_\star(r'_t)\rangle_{*}=e^{-\frac{k_m\,\Gamma\,r'_{t}}{m\,c}}$, which is the Hermitian norm of the element. The quaternionic norm is the complex number $\langle\tilde U_\star(r'_t)\rangle_{\natural}=e^{-\frac{2\,k_m\,iE_{R}\,r'_{t}}{m\,c}}\,e^{-\frac{k_m\,\Gamma\,r'_{t}}{m\,c}}$: it multiplies the survival probability by the doubled phase, and it is the reason the amplitude and the probability must not be read from the same bracket.
@@ -266,7 +266,7 @@ $$
 z - E_0 - v - \int dE\,\frac{\lvert V(E)\rvert^{2}\rho(E)}{z-E} = 0
 $$
 
-is one scalar equation, not an integral equation, and it determines the pole in closed form once the continuum coupling and density are specified. The diagonal element $v=\langle 0\rvert\tilde V\lvert 0\rangle$ is the discrete level shift, and the integral is the continuum part. For a band of constant density $\rho$ on $[-B,B]$ the integral is elementary,
+is one scalar equation, not an integral equation, and it determines the pole in closed form once the continuum coupling and density are specified. The diagonal element $v=\langle 0\rvert\tilde V_{\Phi}\lvert 0\rangle$ is the discrete level shift, and the integral is the continuum part. For a band of constant density $\rho$ on $[-B,B]$ the integral is elementary,
 
 $$
 \int_{-B}^{B}\frac{\rho\,dE}{z-E} = \rho\ln\frac{z+B}{z-B},
@@ -335,7 +335,7 @@ The article therefore states an approximation with its window, not a law. It mak
 
 The unstable state is the state that is not an eigenstate of the Hamiltonian. Its survival amplitude is the scalar reduction of the evolution, $A(r'_t)=\mathrm{Tr}(\tilde\Pi_0\tilde Q(r'_t))$, and its survival probability is $P(r'_t)=\lvert A(r'_t)\rvert^{2}$, unitarity bounding it by one. The exact short-time law is $P(r'_t)=1-(\Delta\tilde R_\Psi)^{2}{r'_{t}}^{2}\frac{k_m^{2}}{m^{2}\,c^{2}}+O({r'_{t}}^{4})$, with the variance of the Hamiltonian in the initial state as coefficient, and no pure exponential satisfies it.
 
-The coupling of the state to a continuum displaces the pole of the reduced resolvent, $G_{00}(z)=[z-E_0-\Sigma(z)]^{-1}$, where the self-energy is $\Sigma(z)=\langle 0\rvert\tilde V\lvert 0\rangle+\sum_{n\neq0}\lvert V_{0n}\rvert^{2}/(z-E_n)+\cdots$ to second order. Its boundary value from above is $\Delta(E)-\tfrac{i}{2}\Gamma(E)$, with the level shift $\Delta$ real and the width non-negative, $\Gamma(E)=2\pi\lvert V_0(E)\rvert^{2}\rho(E)$ at the Golden Rule. The pole is at $z_\star=E_0+\Delta-\tfrac{i}{2}\Gamma$, and it lies on the second sheet, reached by continuing across the cut that the continuum opens, with the jump $\Sigma(E+i0^{+})-\Sigma(E-i0^{+})=-i\Gamma$; the first sheet carries no complex zero, only the real eigenvalues and the cut.
+The coupling of the state to a continuum displaces the pole of the reduced resolvent, $G_{00}(z)=[z-E_0-\Sigma(z)]^{-1}$, where the self-energy is $\Sigma(z)=\langle 0\rvert\tilde V_{\Phi}\lvert 0\rangle+\sum_{n\neq0}\lvert V_{0n}\rvert^{2}/(z-E_n)+\cdots$ to second order. Its boundary value from above is $\Delta(E)-\tfrac{i}{2}\Gamma(E)$, with the level shift $\Delta$ real and the width non-negative, $\Gamma(E)=2\pi\lvert V_0(E)\rvert^{2}\rho(E)$ at the Golden Rule. The pole is at $z_\star=E_0+\Delta-\tfrac{i}{2}\Gamma$, and it lies on the second sheet, reached by continuing across the cut that the continuum opens, with the jump $\Sigma(E+i0^{+})-\Sigma(E-i0^{+})=-i\Gamma$; the first sheet carries no complex zero, only the real eigenvalues and the cut.
 
 The pole is a **complex number of the centre**. Hermiticity gives $G(\bar z)=G(z)^{\dagger}$ and its scalar reduction $G_{00}(\bar z)=\overline{G_{00}(z)}$, so a complex pole cannot sit on the first sheet; the decaying number at $E_0+\Delta-\tfrac{i}{2}\Gamma$ and its mirror at $E_0+\Delta+\tfrac{i}{2}\Gamma$ are the two second sheets, and the retarded boundary condition keeps the decaying one — the Krein-space pairing of *Spectral Theory on Krein Spaces*, split here across the sheets of the energy plane. The self-energy is a scalar function of the central variable, and the level shift, the width, the pole and the lifetime $\tau=\frac{m\,c}{k_m\,\Gamma}$ are all central, whatever non-central part the Hamiltonian carries. This is the theorem behind the fifth limit — the norm-preserving unit is central — read at the level of a displaced pole.
 
@@ -363,7 +363,7 @@ What the algebra adds is that the pole is central, that a non-central coupling r
 | $\Gamma=2\pi\lvert V_0\rvert^{2}\rho$ | Golden Rule width |
 | $z_\star=E_0+\Delta-\tfrac{i}{2}\Gamma$ | Pole on the second sheet |
 | $\mathrm{H}_{\mathrm{hvs}}(r'_t)=-\frac{k_m\,iz_{\star}\,r'_{t}}{m\,c}$ | Complex angle of the resonance; $\mathrm{Re}\,\Theta$ is the decay exponent, $\mathrm{Im}\,\Theta$ the phase |
-| $\tilde A(r'_t)=e^{-\frac{k_m\,\Gamma\,r'_{t}}{2\,m\,c}}\,e_{t}$ | Cartan amplitude of the pole term, the survival amplitude in the pole approximation |
+| $\tilde A_{\Phi}(r'_t)=e^{-\frac{k_m\,\Gamma\,r'_{t}}{2\,m\,c}}\,e_{t}$ | Cartan amplitude of the pole term, the survival amplitude in the pole approximation |
 | $\tilde U_\star(r'_t)=\exp(-\frac{k_m\,iz_{\star}\,r'_{t}}{m\,c})$ | Pole term of the evolution; not $*$-unitary, $\tilde U_\star\tilde U_\star^{*}\neq e_t$ |
 | $\tau=\frac{m\,c}{k_m\,\Gamma}$ | Lifetime |
 | $\Sigma_{\mathrm{nc}}(z)=V(z-H_{\mathrm{nc}})^{-1}V^{*}$ | Effective self-energy of an eliminated slot |
