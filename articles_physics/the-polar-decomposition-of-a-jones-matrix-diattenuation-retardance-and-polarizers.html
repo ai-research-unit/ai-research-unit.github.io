@@ -259,11 +259,11 @@ $$</p>
 <h2 id="relation-to-the-mueller-matrix">Relation to the Mueller Matrix</h2>
 <p>The Jones matrix acts on the Jones vector, which describes a fully polarized beam. A partially polarized or depolarized beam is described by a coherency matrix, and a linear element acting on it by a $4\times4$ real Mueller matrix acting on the Stokes vector. The two descriptions are not independent.</p>
 <p>For a non-depolarizing element the Mueller matrix is the real image of the same element acting by congruence on the coherency matrix, and it is determined by the Jones matrix up to the global phase. It carries no additional information: the diattenuation and the retardance are read from it, and the polar decomposition is the factorisation of the Jones matrix that makes them separate. The Mueller matrix of a depolarizing element is not the image of any single Jones matrix; it is a sum of conjugations, and the polar decomposition of one term does not describe the whole.</p>
-<p>The operator-to-state map is the bridge between the two readings. For an input state $\tilde{Ϛ}_{\mathrm{in}}$, the output is</p>
+<p>The operator-to-state map is the bridge between the two readings. For an input state $\tilde{Ϛ}_{\Psi,\mathrm{in}}$, the output is</p>
 <p>$$
-\tilde{Ϛ}_{\mathrm{out}}=\frac{\tilde J\tilde{Ϛ}_{\mathrm{in}}\tilde J^{*}}{2\langle\tilde J\tilde{Ϛ}_{\mathrm{in}},\tilde J\rangle_{*}}.
+\tilde{Ϛ}_{\Psi,\mathrm{out}}=\frac{\tilde J\tilde{Ϛ}_{\Psi,\mathrm{in}}\tilde J^{*}}{2\langle\tilde J\tilde{Ϛ}_{\Psi,\mathrm{in}},\tilde J\rangle_{*}}.
 $$</p>
-<p>For unpolarized input, $\tilde{Ϛ}_{\mathrm{in}}=\tfrac12e_t$, the output is $\tilde J\tilde J^{*}/2\langle\tilde J,\tilde J\rangle_{*}$, which is exactly the state that the operator defines. Diattenuation is the anisotropy of that state; retardance cancels from it.</p>
+<p>For unpolarized input, $\tilde{Ϛ}_{\Psi,\mathrm{in}}=\tfrac12e_t$, the output is $\tilde J\tilde J^{*}/2\langle\tilde J,\tilde J\rangle_{*}$, which is exactly the state that the operator defines. Diattenuation is the anisotropy of that state; retardance cancels from it.</p>
 <h2 id="worked-example">Worked Example</h2>
 <p>Take the Jones matrix</p>
 <p>$$
@@ -283,7 +283,7 @@ $$</p>
 <p>The check $D=\tanh\theta_{\mathrm{rpd}}=\tanh 0.693147181=0.6$ holds. The $*$-unitary factor has eigenvalues $1$ and $i$, so its retardance is $\theta=\pi/2$, its central phase is $\alpha=\pi/4$, and its rotor has exponent angle $\pi/4$. The norm is $\langle\tilde J\rangle_{\natural}=\det\mathsf{J}=i/2$, with modulus $\tfrac12$, which equals $\langle\tilde J_H\rangle_{\natural}=\det\mathsf{H}$.</p>
 <p>For unpolarized input the output state is</p>
 <p>$$
-\tilde{Ϛ}_{\mathrm{out}}=\frac{\mathsf{J}\mathsf{J}^{\dagger}}{2\langle\tilde J,\tilde J\rangle_{*}}
+\tilde{Ϛ}_{\Psi,\mathrm{out}}=\frac{\mathsf{J}\mathsf{J}^{\dagger}}{2\langle\tilde J,\tilde J\rangle_{*}}
 =\begin{pmatrix}0.8&0\\0&0.2\end{pmatrix},
 $$</p>
 <p>with Bloch vector length $0.6$ and purity $\tfrac12(1+0.6^{2})=0.68$. The Bloch length equals the diattenuation, and the purity is fixed by it: the element prepares a state whose degree of polarization is its diattenuation.</p>

@@ -85,13 +85,13 @@ U(C) = \mathcal{P}\exp\!\left(i\oint_C \sum_\mu\varepsilon_\mu A_\mu\,dx_\mu\rig
 \qquad
 W(C) = \mathrm{Tr}\,U(C),
 $$</p>
-<p>with $\varepsilon$ the corpus's plain weight, $\mathcal{P}$ the path ordering and the trace over the informational realization. The units are the series' natural units $\hbar=c=1$ and the transported charge is set to $ϙ=1$, so that this exponent is a pure number; the factors $\frac{k_m\,ϙ}{m\,c}$ return by multiplying it. The state of the informational sector is the corpus's $\tilde{Ϛ}$, of trace one and parametrized by the Bloch vector $\vec r$, and the relative entropy of two states is $S(\tilde{Ϛ}_1\|\tilde{Ϛ}_2)$; the trace, twice the scalar part, is the one of <em>Norm and Pairing Conventions</em>. The symbols $SU(3)$, $N_c$, $N_f$, $\alpha_s$, and the colour labels $\mathbf{3}$, $\mathbf{8}$ are <strong>standard QCD notation, not framework objects</strong>; they are used only where standard results are quoted or where an object is named as missing. Throughout, $i$ is the central scalar imaginary, so $i^2=-1$; wherever two imaginary factors meet, the display below simplifies them explicitly.</p>
+<p>with $\varepsilon$ the corpus's plain weight, $\mathcal{P}$ the path ordering and the trace over the informational realization. The units are the series' natural units $\hbar=c=1$ and the transported charge is set to $ϙ=1$, so that this exponent is a pure number; the factors $\frac{k_m\,ϙ}{m\,c}$ return by multiplying it. The state of the informational sector is the corpus's $\tilde{Ϛ}_{\Psi}$, of trace one and parametrized by the Bloch vector $\vec r$, and the relative entropy of two states is $S(\tilde{Ϛ}_{\Psi,1}\|\tilde{Ϛ}_{\Psi,2})$; the trace, twice the scalar part, is the one of <em>Norm and Pairing Conventions</em>. The symbols $SU(3)$, $N_c$, $N_f$, $\alpha_s$, and the colour labels $\mathbf{3}$, $\mathbf{8}$ are <strong>standard QCD notation, not framework objects</strong>; they are used only where standard results are quoted or where an object is named as missing. Throughout, $i$ is the central scalar imaginary, so $i^2=-1$; wherever two imaginary factors meet, the display below simplifies them explicitly.</p>
 <p>The derivative of this article is the corpus's gradient $\tilde\nabla$, with its quaternion conjugate $\tilde\nabla^\natural$ and the d'Alembertian $\Box$, fixed in <em>Operator and Calculus Conventions</em>, where the material-sector reading of the time derivative is stated as well. Every other first-order operator here is written from these, by a shift or by the central imaginary. No other first-order operator is introduced, and no letter stands for a side: an action that is not a multiplication by an element is written out as one, in the form $f\mapsto fb$.</p>
 <h2 id="confinement-and-the-order-parameter">Confinement and the Order Parameter</h2>
 <h3 id="the-wilson-loop-as-the-criterion">The Wilson Loop as the Criterion</h3>
 <p>The order parameter of the gauge theory is the expectation of the Wilson loop in the gauge-field path integral,</p>
 <p>$$
-\langle W(C)\rangle = \frac{\displaystyle\int\mathcal{D}\tilde{A}\;W(C)\,\exp(iS[\tilde{A}])}{\displaystyle\int\mathcal{D}\tilde{A}\;\exp(iS[\tilde{A}])} .
+\langle W(C)\rangle = \frac{\displaystyle\int\mathcal{D}\tilde{A}_{\Phi}\;W(C)\,\exp(iS[\tilde{A}_{\Phi}])}{\displaystyle\int\mathcal{D}\tilde{A}_{\Phi}\;\exp(iS[\tilde{A}_{\Phi}])} .
 $$</p>
 <p>Its asymptotic behaviour for large loops is the standard criterion of the phase. In the biquaternion framework the three operations of which the loop is built are provided by the algebra: the integration of a material one-form along the curve, the exponentiation into the informational realization of the group, and the trace as twice the scalar part. The average is over material-sector configurations and the trace is over the informational realization, so the order parameter is a two-sector bilinear. This construction is that of the companion article on Wilson loops, and it is recalled rather than re-derived.</p>
 <h3 id="the-two-laws-and-the-static-potential">The Two Laws and the Static Potential</h3>
@@ -153,9 +153,9 @@ $$</p>
 <h3 id="the-restricted-state-and-the-vanishing-relative-entropy">The Restricted State and the Vanishing Relative Entropy</h3>
 <p>The superselection statement can be made exact without a colour group, on the framework's own state space, by using the commutant structure that any charge superselection rule produces. Let the charge along the axis $\vec u$ be the Hermitian element $\vec u\cdot\vec S$ of $\mathbb{B}_{\Psi}$, the generator of <em>Special Element Conventions</em>, in the units $\hbar=c=1$ used throughout, so that the charge rotation is rotor conjugation,</p>
 <p>$$
-\tilde{Ϛ}\;\longmapsto\;U\tilde{Ϛ}\,U^{*},
+\tilde{Ϛ}_{\Psi}\;\longmapsto\;U\tilde{Ϛ}_{\Psi}\,U^{*},
 $$</p>
-<p>with $U$ the corpus's rotation rotor about $\vec u$ by $\theta$, a real unit quaternion with $U^{*}=U^{-1}$. The <strong>accessible</strong> state is the restriction of $\tilde{Ϛ}$ to the algebra of observables commuting with the charge; in the quaternion realization this restriction is the dephasing of the Bloch vector along the charge axis,</p>
+<p>with $U$ the corpus's rotation rotor about $\vec u$ by $\theta$, a real unit quaternion with $U^{*}=U^{-1}$. The <strong>accessible</strong> state is the restriction of $\tilde{Ϛ}_{\Psi}$ to the algebra of observables commuting with the charge; in the quaternion realization this restriction is the dephasing of the Bloch vector along the charge axis,</p>
 <p>$$
 \vec r \;\longmapsto\; (\vec r\cdot\vec u)\,\vec u,
 $$</p>
@@ -163,11 +163,11 @@ $$</p>
 <p>$$
 \boxed{\;\vec r\cdot\vec u = (\mathsf{R}_{\vec u}(\theta)\vec r)\cdot\vec u\;},
 $$</p>
-<p>because the rotation $\mathsf{R}_{\vec u}(\theta)$ of the Bloch vector induced by conjugation with $U$ preserves the component along $\vec u$. Their full relative entropy is generally positive, but the relative entropy of their accessible restrictions vanishes. The relative entropy is $S(\tilde{Ϛ}_1\|\tilde{Ϛ}_2)=\mathrm{Tr}\,\tilde{Ϛ}_1(\log\tilde{Ϛ}_1-\log\tilde{Ϛ}_2)$, and it was evaluated on explicit states: with $\vec r = (0.5,-0.3,0.4)$ and a charge rotation about $\vec u = (0,0,1)$ by $1.1$ radians, the full relative entropy was $S(\tilde{Ϛ}\|\tilde{Ϛ}_{\mathrm{rot}}) = 0.231562$, while the accessible relative entropy vanished identically, and the two accessible Bloch vectors agreed exactly, both $(0,0,0.4)$.</p>
+<p>because the rotation $\mathsf{R}_{\vec u}(\theta)$ of the Bloch vector induced by conjugation with $U$ preserves the component along $\vec u$. Their full relative entropy is generally positive, but the relative entropy of their accessible restrictions vanishes. The relative entropy is $S(\tilde{Ϛ}_{\Psi,1}\|\tilde{Ϛ}_{\Psi,2})=\mathrm{Tr}\,\tilde{Ϛ}_{\Psi,1}(\log\tilde{Ϛ}_{\Psi,1}-\log\tilde{Ϛ}_{\Psi,2})$, and it was evaluated on explicit states: with $\vec r = (0.5,-0.3,0.4)$ and a charge rotation about $\vec u = (0,0,1)$ by $1.1$ radians, the full relative entropy was $S(\tilde{Ϛ}_{\Psi}\|\tilde{Ϛ}_{\Psi,\mathrm{rot}}) = 0.231562$, while the accessible relative entropy vanished identically, and the two accessible Bloch vectors agreed exactly, both $(0,0,0.4)$.</p>
 <p>The lesson is the article's thesis in its sharpest form. A rotation by the framework's charge is not a gauge transformation: it changes the state, and the full relative entropy detects the change. But the change is invisible to the accessible algebra, and the accessible algebra is the whole of what survives to asymptotic observation. The information lost is exactly the component of the state along the unobservable charge directions, and no re-description recovers it.</p>
 <h3 id="why-this-is-loss-and-not-redundancy">Why This Is Loss and Not Redundancy</h3>
 <p>The contrast with the companion article on gauge redundancy is now exact.</p>
-<p>A gauge transformation is implemented by the central phase, which for the framework's gauge group is central and of unit modulus: it therefore fixes the state itself, $\tilde{Ϛ}\mapsto\lambda\tilde{Ϛ}\lambda^{*} = \tilde{Ϛ}$, and not merely its restriction. The two descriptions are two ways of writing one state, and the coincidence is exact rather than a projection. A charge rotation also acts by a $*$-unitary, but the accessible algebra is a <strong>proper subalgebra</strong> — the commutant of the charge — so the rotated state restricts to the same accessible state only because the distinction has been projected out by the restriction, not because it was never there. The map from states to accessible states is many-to-one on a non-trivial fibre, and the fibre is the set of states with the same charge-axis component. That is the structure of a lossy channel, and it is developed in section <em>Confinement as an Effectively Lossy Channel</em>.</p>
+<p>A gauge transformation is implemented by the central phase, which for the framework's gauge group is central and of unit modulus: it therefore fixes the state itself, $\tilde{Ϛ}_{\Psi}\mapsto\lambda\tilde{Ϛ}_{\Psi}\lambda^{*} = \tilde{Ϛ}_{\Psi}$, and not merely its restriction. The two descriptions are two ways of writing one state, and the coincidence is exact rather than a projection. A charge rotation also acts by a $*$-unitary, but the accessible algebra is a <strong>proper subalgebra</strong> — the commutant of the charge — so the rotated state restricts to the same accessible state only because the distinction has been projected out by the restriction, not because it was never there. The map from states to accessible states is many-to-one on a non-trivial fibre, and the fibre is the set of states with the same charge-axis component. That is the structure of a lossy channel, and it is developed in section <em>Confinement as an Effectively Lossy Channel</em>.</p>
 <p>One more distinction is worth recording. In the gauge case the fibre is a group orbit and a representative recovers the configuration; the locality of the gauge choice is the only obstruction. In the confinement case the fibre contains partonic configurations that no asymptotic operation distinguishes, and the obstruction is the spectrum itself. Redundancy is a property of the description; loss is a property of the theory.</p>
 <h2 id="the-parton-picture-is-an-ultraviolet-description">The Parton Picture Is an Ultraviolet Description</h2>
 <h3 id="resolution-and-scale">Resolution and Scale</h3>
@@ -178,11 +178,11 @@ $$</p>
 \qquad
 b_0 = \frac{11}{3}C_2(G) - \frac{2}{3}\sum_{\text{Weyl}}T(r),
 $$</p>
-<p>with $C_2(G) = N$ and the QCD coefficient $b_0 = 11 - \tfrac{2}{3}N_f$ for $SU(3)$. But the article states plainly that the gauge group, the matter content, the action, the measure, and the regulator are <strong>inputs</strong>, and that the beta functions are transcriptions. The flow acts on central scalars, and the algebraically natural sharp cutoff is imposed on the central biquaternion norm $\tilde{P}\tilde{P}^{\natural}$. So the framework houses the form of the flow, and the flow is the coarse-graining that degrades the partonic information, but the group and the matter that give the flow its meaning are the missing objects.</p>
+<p>with $C_2(G) = N$ and the QCD coefficient $b_0 = 11 - \tfrac{2}{3}N_f$ for $SU(3)$. But the article states plainly that the gauge group, the matter content, the action, the measure, and the regulator are <strong>inputs</strong>, and that the beta functions are transcriptions. The flow acts on central scalars, and the algebraically natural sharp cutoff is imposed on the central biquaternion norm $\tilde{P}_{\Phi}\tilde{P}_{\Phi}^{\natural}$. So the framework houses the form of the flow, and the flow is the coarse-graining that degrades the partonic information, but the group and the matter that give the flow its meaning are the missing objects.</p>
 <h3 id="coarse-graining-as-a-channel">Coarse-Graining as a Channel</h3>
 <p>On general grounds the flow from an ultraviolet description to an infrared description is a <strong>completely positive trace-preserving map</strong> between state spaces, and relative entropy is monotone under it:</p>
 <p>$$
-S\bigl(Ξ(\tilde{Ϛ}_1)\,\big\|\,Ξ(\tilde{Ϛ}_2)\bigr) \;\leq\; S(\tilde{Ϛ}_1\|\tilde{Ϛ}_2).
+S\bigl(Ξ(\tilde{Ϛ}_{\Psi,1})\,\big\|\,Ξ(\tilde{Ϛ}_{\Psi,2})\bigr) \;\leq\; S(\tilde{Ϛ}_{\Psi,1}\|\tilde{Ϛ}_{\Psi,2}).
 $$</p>
 <p>The inequality is the precise sense in which the flow loses information: two partonic states that were distinguishable at the ultraviolet scale become less distinguishable, or indistinguishable, at the infrared scale. When the image of the map is a proper subalgebra — when distinct states are identified by it, as for the colour-singlet expectation of the next section — the inequality can be strict, and the left side vanishes identically whenever the two states share an image, however distinguishable they were under the full algebra. The restricted relative entropy computed above is exactly that case, and there the loss is total.</p>
 <p>The framework's own relative-entropy companion supplies the monotonicity statement; the flow supplies the map; and the confinement statement is that the infrared map has the colour directions in its kernel. What the framework cannot supply is the map itself, because it has no colour and no non-perturbative action.</p>
@@ -196,7 +196,7 @@ E(\tilde{Q}) = \int_{G} dU\;U \tilde{Q} U^{-1},
 $$</p>
 <p>averaging over the colour group with its normalized Haar measure, is a completely positive unital map that fixes its image: $E\circ E = E$. It is the colour-singlet projection, and it is the natural model of what the asymptotic description retains. Applied to a state, it discards exactly the off-diagonal colour coherences and keeps the colour-neutral content, so that</p>
 <p>$$
-S\bigl(E(\tilde{Ϛ}_1)\,\big\|\,E(\tilde{Ϛ}_2)\bigr) \;\leq\; S(\tilde{Ϛ}_1\|\tilde{Ϛ}_2),
+S\bigl(E(\tilde{Ϛ}_{\Psi,1})\,\big\|\,E(\tilde{Ϛ}_{\Psi,2})\bigr) \;\leq\; S(\tilde{Ϛ}_{\Psi,1}\|\tilde{Ϛ}_{\Psi,2}),
 $$</p>
 <p>and the left side vanishes whenever the two states have the same image, so the inequality is strict for any two distinct states that the averaging identifies — in particular for two states related by a colour rotation and not equal. The model has the same screening structure that the companion article on decoherence develops in the informational sector; there, the projection is onto the pointer basis selected by an environment, and here it is onto the colour singlets selected by the spectrum.</p>
 <h3 id="comparison-with-decoherence">Comparison with Decoherence</h3>
@@ -225,7 +225,7 @@ $$</p>
 <p>It is worth being exact about what is not claimed. Whether the relative entropy between two configurations differing in a distant colour measurement inherits precisely the scale $\zeta$ is a question this article does not settle. Pinsker's bound, $S(\rho\|\sigma)\ge\tfrac12\|\rho-\sigma\|_1^{2}$, runs from the relative entropy down to the trace distance: a small relative entropy forces the two states to be close in trace distance, hence hard to distinguish by any observable. It says nothing about which observable distinguishes two states whose relative entropy is large, and in particular nothing about locality. It is the converse direction — small local correlators forcing a small relative entropy — that the scale statement would need, and that direction holds only with a bound running the other way, under regularity conditions on the states that the framework does not supply. What is safe, and is the sharpest form of the loss available here, is the qualitative contrast: in the confined phase the correlations that could carry a colour distinction die off exponentially and the label is absent from the spectrum altogether, whereas in an unconfined phase whose gauge field stays massless — the Coulomb phase of QED is the standard instance — the long-range field does carry the charge to infinity, and the correlations decay only as a power. The framework has no mass gap and no derived correlation length; the statement is carried as standard physics.</p>
 <h2 id="the-biquaternion-framework-what-it-can-and-cannot-state">The Biquaternion Framework: What It Can and Cannot State</h2>
 <h3 id="the-loop-in-the-two-sectors">The Loop in the Two Sectors</h3>
-<p>The order parameter is the framework's own construction. The connection integrated along the curve is a material one-form, $\tilde{A}\in\mathbb{B}_{\Phi}$; the group element it exponentiates into is an element of the informational realization of the gauge group; and the trace is twice the scalar part. The loop is therefore an $\mathbb{B}_{\Psi}$ trace of an object whose logarithm lies in $\mathbb{B}_{\Phi}$, and its gauge invariance is the invariance of the scalar part under the adjoint action. The small-loop expansion, $W = 1 + i\ell^2F_{\mu\nu} + O(\ell^4)$ for a loop of area $\ell^2$ in the $\mu\nu$ plane, and the centrality of $\tilde{F}^2$, whose two scalar parts are the two Lorentz invariants of the field strength, are established in the Wilson-loop companion and are not repeated. What this gives the present article is a place to put the order parameter and, consequently, a place to put the information-theoretic interpretation of its two laws.</p>
+<p>The order parameter is the framework's own construction. The connection integrated along the curve is a material one-form, $\tilde{A}_{\Phi}\in\mathbb{B}_{\Phi}$; the group element it exponentiates into is an element of the informational realization of the gauge group; and the trace is twice the scalar part. The loop is therefore an $\mathbb{B}_{\Psi}$ trace of an object whose logarithm lies in $\mathbb{B}_{\Phi}$, and its gauge invariance is the invariance of the scalar part under the adjoint action. The small-loop expansion, $W = 1 + i\ell^2F_{\mu\nu} + O(\ell^4)$ for a loop of area $\ell^2$ in the $\mu\nu$ plane, and the centrality of $\tilde{F}^2$, whose two scalar parts are the two Lorentz invariants of the field strength, are established in the Wilson-loop companion and are not repeated. What this gives the present article is a place to put the order parameter and, consequently, a place to put the information-theoretic interpretation of its two laws.</p>
 <h3 id="the-ceiling-no-colour">The Ceiling: No Colour</h3>
 <p>What the framework cannot supply is the colour theory whose order parameter the loop is supposed to be. The compact group available inside $\mathbb{B}$ is the maximal compact subgroup of $\mathrm{GL}(2,\mathbb{C})$, namely</p>
 <p>$$
@@ -415,7 +415,7 @@ $$</p>
 <td>Informational and material sectors</td>
 </tr>
 <tr>
-<td>$\tilde{A} = \sum_\mu A_\mu e_\mu\in\mathbb{B}_{\Phi}$</td>
+<td>$\tilde{A}_{\Phi} = \sum_\mu A_\mu e_\mu\in\mathbb{B}_{\Phi}$</td>
 <td>Gauge connection (material sector)</td>
 </tr>
 <tr>
@@ -455,7 +455,7 @@ $$</p>
 <td>Information cost of the loop</td>
 </tr>
 <tr>
-<td>$\tilde{Ϛ}$, $\vec r$</td>
+<td>$\tilde{Ϛ}_{\Psi}$, $\vec r$</td>
 <td>State of the informational sector and its Bloch vector, <em>Algebra and Element Conventions</em></td>
 </tr>
 <tr>
@@ -467,7 +467,7 @@ $$</p>
 <td>Charge along the axis $\vec u$ and its rotation rotor, $U^{*}=U^{-1}$</td>
 </tr>
 <tr>
-<td>$S(\tilde{Ϛ}_1\|\tilde{Ϛ}_2)$</td>
+<td>$S(\tilde{Ϛ}_{\Psi,1}\|\tilde{Ϛ}_{\Psi,2})$</td>
 <td>Relative entropy; monotone under channels</td>
 </tr>
 <tr>

@@ -89,11 +89,11 @@ The <strong>geodesic distance</strong> is $d_{\mathrm{FS}}(\tilde\Pi_1,\tilde\Pi
 <h2 id="the-state-space-and-its-two-forms">The State Space and Its Two Forms</h2>
 <p>An element of the Hermitian subspace is $\tilde R_\Psi=c r_t\,e_t+i\vec r_\Psi$ with $c r_t\in\mathbb{R}$ and $\vec r_\Psi\in\mathbb{R}^3$, and the state space is the normalised hyperplane of the future cone,
 $$
-\{\text{states}\}=\left\{\tilde{Ϛ}\in\mathbb{B}_{\Psi}:\ \langle\tilde{Ϛ},e_t\rangle_{*}=\tfrac12,\ \langle\tilde{Ϛ}\rangle_{\natural}\geq0\right\},
+\{\text{states}\}=\left\{\tilde{Ϛ}_{\Psi}\in\mathbb{B}_{\Psi}:\ \langle\tilde{Ϛ}_{\Psi},e_t\rangle_{*}=\tfrac12,\ \langle\tilde{Ϛ}_{\Psi}\rangle_{\natural}\geq0\right\},
 \qquad
-\tilde{Ϛ}=\tfrac12(e_t+i\vec r),\quad |\vec r|\leq1 ,
+\tilde{Ϛ}_{\Psi}=\tfrac12(e_t+i\vec r),\quad |\vec r|\leq1 ,
 $$
-whose $2\times2$ reading is $\mathrm{Tr}(\tilde{Ϛ})=2\langle\tilde{Ϛ},e_t\rangle_{*}=1$.</p>
+whose $2\times2$ reading is $\mathrm{Tr}(\tilde{Ϛ}_{\Psi})=2\langle\tilde{Ϛ}_{\Psi},e_t\rangle_{*}=1$.</p>
 <p>Two symmetric forms live on the same four-dimensional real space, and the whole geometry of this article rests on keeping them apart.</p>
 <p><strong>The plain form.</strong> For two Hermitian elements $\tilde{R}_{\Psi,1}=c r_{t,1}\,e_t+i\vec r_{\Psi,1}$ and $\tilde{R}_{\Psi,2}=c r_{t,2}\,e_t+i\vec r_{\Psi,2}$,
 $$
@@ -112,7 +112,7 @@ is indefinite, of signature $(1,3)$; its future cone is the positivity cone of t
 <h2 id="pure-states-and-the-projective-line">Pure States and the Projective Line</h2>
 <p>The boundary of the ball is the sphere $|\vec r|=1$. On it the biquaternion norm vanishes and the deviation from idempotency vanishes,
 $$
-\langle\tilde{Ϛ}\rangle_{\natural}=0,\qquad \tilde{Ϛ}^2-\tilde{Ϛ}=\tfrac14\bigl(|\vec r|^2-1\bigr)e_t=0 ,
+\langle\tilde{Ϛ}_{\Psi}\rangle_{\natural}=0,\qquad \tilde{Ϛ}_{\Psi}^2-\tilde{Ϛ}_{\Psi}=\tfrac14\bigl(|\vec r|^2-1\bigr)e_t=0 ,
 $$
 so a boundary state is an idempotent with $2\,\mathrm{Sc}=1$ (trace one in the $2\times2$ image) and, in the matrix model, a rank-one projection. Writing it as
 $$
@@ -306,11 +306,11 @@ The first is the plain form, the second the trace distance of the companion arti
 <p><strong>Units.</strong> The line element has been written so that $\vec{u}$ is a unit vector, i.e. the Bloch vector is measured in units in which the ball has radius one. If the physical Bloch vector is measured with a radius $r_0$ — for instance $r_0=\frac{m\,c}{2\,k_m}$ for a spin — then the metric is multiplied by $r_0^2$ and the distance by $r_0$; the dimensionless statements above are the ones fixed by the algebra, and the physical conversion is a separate posit, like the identification of $\vec{u}$ with a direction in space.</p>
 <h2 id="the-ball-the-bures-metric-and-what-the-biquaternion-norm-does-not-give">The Ball: the Bures Metric and What the Biquaternion Norm Does Not Give</h2>
 <p>The pure states are the boundary; the mixed states are the interior. The metric of the interior is not determined by the boundary metric alone, and the algebra's own favourite quadratic form does not supply it. This section states what the algebra supplies, what is standard, and where the two part company.</p>
-<p><strong>What the biquaternion norm supplies in the interior.</strong> For a state $\tilde{Ϛ}=\tfrac12(e_t+i\vec r)$ and a displacement $\delta\tilde{Ϛ}=\tfrac12 i\,\delta\vec r$, the computation of the Hermitian idempotent variation goes through unchanged,
+<p><strong>What the biquaternion norm supplies in the interior.</strong> For a state $\tilde{Ϛ}_{\Psi}=\tfrac12(e_t+i\vec r)$ and a displacement $\delta\tilde{Ϛ}_{\Psi}=\tfrac12 i\,\delta\vec r$, the computation of the Hermitian idempotent variation goes through unchanged,
 $$
-\langle\delta\tilde{Ϛ}\rangle_{\natural}=-\tfrac14\,|\delta\vec r|^2\,e_t,
+\langle\delta\tilde{Ϛ}_{\Psi}\rangle_{\natural}=-\tfrac14\,|\delta\vec r|^2\,e_t,
 \qquad
--\langle\delta\tilde{Ϛ}\rangle_{\natural}=\tfrac14\,|d\vec r|^2 ,
+-\langle\delta\tilde{Ϛ}_{\Psi}\rangle_{\natural}=\tfrac14\,|d\vec r|^2 ,
 $$
 but now for <strong>all</strong> displacements, radial as well as tangential. So the biquaternion norm supplies the flat Euclidean metric $\tfrac14|d\vec r|^2$ on the whole ball. On the boundary, where the radial component of a tangential displacement vanishes, this flat form restricted to the boundary is the Fubini–Study metric; in the interior it is the flat metric, not the Bures metric.</p>
 <p><strong>What standard physics supplies.</strong> The metrically and statistically distinguished metric of the mixed-state space is the <strong>Bures metric</strong>, equivalently the quantum Fisher information. In the convention in which the Bures distance of two pure states equals their Fubini–Study distance — so that the Uhlmann transition probability of two pure states is $\lvert\langle\tilde{Ξ}_{\mathrm{sp}}|\xi_{\mathrm{alt}}\rangle_{*}\rvert^2$, as in the companion article <em>The Bloch Ball as the Normalised Slice of the Future Light Cone</em> — the qubit Bures line element is
@@ -347,7 +347,7 @@ This is a standard result, not an algebraic one: it is the infinitesimal form of
 \boxed{\;ds^2_{\mathrm{FS}}=-\langle\delta\tilde\Pi\rangle_{\natural}\Big|_{\text{tangential}}=\tfrac14\left(d\theta^2+\sin^2\theta\,d{\theta_{\mathrm{azm}}}^2\right)\;},
 $$</p>
 <p>one quarter of the round metric of the Bloch sphere. The factor $\tfrac14$ is the square of the double-cover ratio $SU(2)\to SO(3)$. The metric is Kähler, with complex structure $J(v)=\vec{u}\times v$ supplied by the algebra commutator and symplectic form $\omega=-\,i\,\mathrm{Sc}(\tilde\Pi[\delta_1\tilde\Pi,\delta_2\tilde\Pi])=\tfrac14\mu\cdot(\delta_1\mu\times\delta_2\mu)$, whose $2\times2$ reading is $-\tfrac12 i\,\mathrm{Tr}(\cdots)$; the Kähler potential is $\log(1+|w|^2)$ in the stereographic coordinate. The geodesic distance is $d_{\mathrm{FS}}=\theta/2=\arccos\lvert\langle\tilde{Ξ}_{\mathrm{sp}}|\xi_{\mathrm{alt}}\rangle\rvert$, so that the transition probability is $\cos^2 d_{\mathrm{FS}}$ and the trace distance of the companion article <em>Exercise: The Bloch Ball and the Geometry of Mixed States</em> is $\sin d_{\mathrm{FS}}$.</p>
-<p>The interior of the ball carries the standard Bures metric, whose boundary restriction is the Fubini–Study metric and whose value at the maximally mixed state agrees with the flat metric $-\langle\delta\tilde{Ϛ}\rangle_{\natural}=\tfrac14|d\vec r|^2$ that the biquaternion norm supplies everywhere. The biquaternion norm therefore gives the pure-state geometry exactly, and the flat geometry everywhere, but not the interpolating mixed-state metric; that interpolation is a standard statistical import, and the article says so rather than claiming it. What the algebra determines — the probability, the metric on the boundary, the Kähler structure, and the boundary metric's uniqueness up to a scale fixed by the normalisation — it determines completely; what it does not determine it leaves named.</p>
+<p>The interior of the ball carries the standard Bures metric, whose boundary restriction is the Fubini–Study metric and whose value at the maximally mixed state agrees with the flat metric $-\langle\delta\tilde{Ϛ}_{\Psi}\rangle_{\natural}=\tfrac14|d\vec r|^2$ that the biquaternion norm supplies everywhere. The biquaternion norm therefore gives the pure-state geometry exactly, and the flat geometry everywhere, but not the interpolating mixed-state metric; that interpolation is a standard statistical import, and the article says so rather than claiming it. What the algebra determines — the probability, the metric on the boundary, the Kähler structure, and the boundary metric's uniqueness up to a scale fixed by the normalisation — it determines completely; what it does not determine it leaves named.</p>
 <h2 id="summary-of-notation">Summary of Notation</h2>
 <div class="table-scroll"><table>
 <thead>
@@ -390,7 +390,7 @@ $$</p>
 <td>Biquaternion norm</td>
 </tr>
 <tr>
-<td>$\tilde{Ϛ}=\tfrac12(e_t+i\vec r)$</td>
+<td>$\tilde{Ϛ}_{\Psi}=\tfrac12(e_t+i\vec r)$</td>
 <td>State, $|\vec r|\leq1$</td>
 </tr>
 <tr>

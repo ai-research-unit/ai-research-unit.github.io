@@ -101,44 +101,44 @@ d\tau = \frac{dr'_t}{\gamma}, \qquad \gamma = \frac{1}{\sqrt{1 - \vec v^2/c^2}},
 $$</p>
 <p>The four-velocity is the derivative of the four-position with respect to proper time,</p>
 <p>$$
-\tilde{V} = \frac{d\tilde R_\Phi}{d\tau} = \gamma\left(ic\,e_t + \vec v\right) = ic\,\gamma\,e_t + \gamma\vec v \in \mathbb{B}_{\Phi} ,
+\tilde{V}_{\Phi} = \frac{d\tilde R_\Phi}{d\tau} = \gamma\left(ic\,e_t + \vec v\right) = ic\,\gamma\,e_t + \gamma\vec v \in \mathbb{B}_{\Phi} ,
 $$</p>
 <p>again an element of the material sector: imaginary scalar part $i\gamma c$, real vector part $\gamma\vec v$. Its biquaternion norm is fixed,</p>
 <p>$$
-\boxed{\;\tilde{V}\tilde{V}^{\natural} = \gamma^2\left(-c^2 + \vec v^2\right) = -c^2\;},
+\boxed{\;\tilde{V}_{\Phi}\tilde{V}_{\Phi}^{\natural} = \gamma^2\left(-c^2 + \vec v^2\right) = -c^2\;},
 $$</p>
 <p>which is the biquaternion form of the relativistic normalization $\sum_\mu\varepsilon_\mu v_\mu v_\mu = -c^2$. The normalization is a <strong>constraint</strong>, not an identity: it selects the four-velocities of physical particles from among all elements of $\mathbb{B}_{\Phi}$.</p>
 <p>The four-momentum is the mass times the four-velocity,</p>
 <p>$$
-\tilde{P} = m\tilde{V} = i\frac{E}{c}\,e_t + \vec p, \qquad E = \gamma m c^2, \qquad \vec p = \gamma m\vec v,
+\tilde{P}_{\Phi} = m\tilde{V}_{\Phi} = i\frac{E}{c}\,e_t + \vec p, \qquad E = \gamma m c^2, \qquad \vec p = \gamma m\vec v,
 $$</p>
 <p>and it too lies in $\mathbb{B}_{\Phi}$. Its biquaternion norm is the mass-shell relation,</p>
 <p>$$
-\boxed{\;\tilde{P}\tilde{P}^{\natural} = m^2\,\tilde{V}\tilde{V}^{\natural} = -m^2 c^2\;}.
+\boxed{\;\tilde{P}_{\Phi}\tilde{P}_{\Phi}^{\natural} = m^2\,\tilde{V}_{\Phi}\tilde{V}_{\Phi}^{\natural} = -m^2 c^2\;}.
 $$</p>
 <p>The four-vectors of relativistic kinematics, and the constraints they satisfy, are those of the companion article <em>Relativistic Mechanics in Biquaternionic Form</em>; they are recalled here only so that the free particle can be located within them.</p>
 <h3 id="the-straight-line">The Straight Line</h3>
 <p>The free particle is defined by the vanishing of the four-force,</p>
 <p>$$
-\tilde{\mathcal F}_{\mathrm{frc}} = \frac{d\tilde{P}}{d\tau} = 0 .
+\tilde{\mathcal F}_{\Phi,\mathrm{frc}} = \frac{d\tilde{P}_{\Phi}}{d\tau} = 0 .
 $$</p>
-<p>Since $\tilde{P} = m\tilde{V}$ and $m$ is constant, this says that the four-velocity is constant, $\tilde{V} = \tilde{V}_0$, and integrating once gives the straight worldline</p>
+<p>Since $\tilde{P}_{\Phi} = m\tilde{V}_{\Phi}$ and $m$ is constant, this says that the four-velocity is constant, $\tilde{V}_{\Phi} = \tilde{V}_{\Phi,0}$, and integrating once gives the straight worldline</p>
 <p>$$
-\tilde R_\Phi(r'_t) = \tilde{R}_{\Phi,0} + \tilde{V}_0\,\tau(r'_t), \qquad (r_x(r'_t)\,\vec e_x+r_y(r'_t)\,\vec e_y+r_z(r'_t)\,\vec e_z) = r_{0x}\,\vec e_x+r_{0y}\,\vec e_y+r_{0z}\,\vec e_z + \vec v\,r'_t ,
+\tilde R_\Phi(r'_t) = \tilde{R}_{\Phi,0} + \tilde{V}_{\Phi,0}\,\tau(r'_t), \qquad (r_x(r'_t)\,\vec e_x+r_y(r'_t)\,\vec e_y+r_z(r'_t)\,\vec e_z) = r_{0x}\,\vec e_x+r_{0y}\,\vec e_y+r_{0z}\,\vec e_z + \vec v\,r'_t ,
 $$</p>
 <p>with $\vec v$ a constant real vector. In words: the free particle moves with constant velocity along a straight line, which is Newton's first law transcribed into the algebra. The scalar part of $\tilde R_\Phi$ carries the time, the vector part carries the uniform motion, and the two are related by the constraint that the four-velocity have norm $-c^2$.</p>
 <p>Differentiating the constraint along the worldline expresses the orthogonality of the four-force to the four-momentum,</p>
 <p>$$
-\tilde{\mathcal F}_{\mathrm{frc}}\,\tilde{P}^{\natural} + \tilde{P}\,\tilde{\mathcal F}_{\mathrm{frc}}^{\natural} = 0 ,
+\tilde{\mathcal F}_{\Phi,\mathrm{frc}}\,\tilde{P}_{\Phi}^{\natural} + \tilde{P}_{\Phi}\,\tilde{\mathcal F}_{\Phi,\mathrm{frc}}^{\natural} = 0 ,
 $$</p>
 <p>which is the biquaternion form of $\sum_\mu\varepsilon_\mu f_\mu p_\mu = 0$. For the free particle both terms vanish separately; for a forced particle the identity says that a four-force can turn the four-momentum but cannot change its norm, and hence cannot change the rest mass.</p>
 <h3 id="the-causal-character-of-the-free-worldline">The Causal Character of the Free Worldline</h3>
-<p>The biquaternion norm classifies the free worldline, and the classification is preserved by every rotor conjugation. A massive free particle has $\tilde{V}\tilde{V}^{\natural} = -c^2 < 0$ and traces a <strong>timelike</strong> straight line, staying inside the light cone of every event on it. A massless free particle has $\langle\tilde{V}\rangle_{\natural} = 0$ and traces a <strong>null</strong> straight line, lying on the cone. In the algebra the null four-velocities are precisely the zero divisors of $\mathbb{B}$: $\tilde{V}\tilde{V}^{\natural} = 0$ with $\tilde{V} \neq 0$, so a massless free particle's four-velocity is a nonzero element that annihilates on the right. The null direction of a zero divisor is a genuine feature of the complexified algebra, and it is the algebraic home of the light cone rather than an added structure.</p>
+<p>The biquaternion norm classifies the free worldline, and the classification is preserved by every rotor conjugation. A massive free particle has $\tilde{V}_{\Phi}\tilde{V}_{\Phi}^{\natural} = -c^2 < 0$ and traces a <strong>timelike</strong> straight line, staying inside the light cone of every event on it. A massless free particle has $\langle\tilde{V}_{\Phi}\rangle_{\natural} = 0$ and traces a <strong>null</strong> straight line, lying on the cone. In the algebra the null four-velocities are precisely the zero divisors of $\mathbb{B}$: $\tilde{V}_{\Phi}\tilde{V}_{\Phi}^{\natural} = 0$ with $\tilde{V}_{\Phi} \neq 0$, so a massless free particle's four-velocity is a nonzero element that annihilates on the right. The null direction of a zero divisor is a genuine feature of the complexified algebra, and it is the algebraic home of the light cone rather than an added structure.</p>
 <p>The three cases are invariant under frame changes because the rotor action preserves the biquaternion norm. A boost cannot turn a timelike worldline into a spacelike one, and it cannot create or destroy a zero divisor. The free particle's causal character is therefore a frame-independent property, which is the Minkowski statement that the interval's sign is a Lorentz invariant.</p>
 <p>For the non-relativistic limit the classification degenerates along with the boost. Since the Galilean shear does not preserve the biquaternion norm, it does not preserve the sign of $\langle\tilde R_\Phi\rangle_{\natural}$; and since it leaves the scalar direction untouched, a vector that was timelike can be sheared into one whose biquaternion norm has either sign. The non-relativistic world has no light cone in the algebraic sense, only the simultaneity foliation $r'_t = \text{const}$ that the shear respects. The cone reappears only as the limit of a sequence of cones that flatten with $c \to \infty$, which is the same degeneration seen from the other side.</p>
 <h2 id="inertial-frames-as-rotors">Inertial Frames as Rotors</h2>
 <h3 id="frames-and-the-lorentz-transformation">Frames and the Lorentz Transformation</h3>
-<p>An inertial frame is a choice of how to split the four-position into a time coordinate and a space coordinate. In the biquaternion framework such a choice is implemented by a <strong>rotor</strong>, that is, by the Lorentz rotor $\tilde U_{\mathrm{lor}}=\tilde U_{\mathrm b}\tilde u_{\mathrm r}$, a unit-norm biquaternion</p>
+<p>An inertial frame is a choice of how to split the four-position into a time coordinate and a space coordinate. In the biquaternion framework such a choice is implemented by a <strong>rotor</strong>, that is, by the Lorentz rotor $\tilde U_{\mathrm{lor}}=\tilde U_{\Psi,\mathrm b}\tilde u_{\mathrm r}$, a unit-norm biquaternion</p>
 <p>$$
 \tilde U_{\mathrm{lor}} \in \mathbb{B}, \qquad \tilde U_{\mathrm{lor}}\tilde U_{\mathrm{lor}}{}^{\natural} = e_t ,
 $$</p>
@@ -149,9 +149,9 @@ $$</p>
 <p>The set of such rotors is the group $SL(2,\mathbb{C})$, the double cover of the restricted Lorentz group, and the action preserves $\mathbb{B}_{\Phi}$ and the biquaternion norm: if $\tilde R_\Phi \in \mathbb{B}_{\Phi}$ then $\tilde{R}_{\Phi,2} \in \mathbb{B}_{\Phi}$, and $\langle\tilde{R}_{\Phi,2}\rangle_{\natural} = \langle\tilde R_\Phi\rangle_{\natural}$. The group lives in the full algebra $\mathbb{B}$ — neither sector is closed under multiplication — and it acts on the material sector, which is a module rather than an algebra.</p>
 <p>The different Lorentz transformations have rotors in different subspaces. A <strong>pure boost</strong> along the unit direction $\vec u_{\mathrm b}$ has the rotor</p>
 <p>$$
-\tilde U_{\mathrm b} = \cosh\frac{\theta_{\mathrm{rpd}}}{2} + i\sinh\frac{\theta_{\mathrm{rpd}}}{2}\,\vec u_{\mathrm b} \in \mathbb{B}_{\Psi} ,
+\tilde U_{\Psi,\mathrm b} = \cosh\frac{\theta_{\mathrm{rpd}}}{2} + i\sinh\frac{\theta_{\mathrm{rpd}}}{2}\,\vec u_{\mathrm b} \in \mathbb{B}_{\Psi} ,
 $$</p>
-<p>which is Hermitian, $\tilde U_{\mathrm b}^{*} = \tilde U_{\mathrm b}$, and hence acts by $\tilde R_\Phi \mapsto \tilde U_{\mathrm b}\tilde R_\Phi\tilde U_{\mathrm b}$. The rapidity $\theta_{\mathrm{rpd}}$ is related to the frame velocity $V = V\vec u_{\mathrm b}$ by</p>
+<p>which is Hermitian, $\tilde U_{\Psi,\mathrm b}^{*} = \tilde U_{\Psi,\mathrm b}$, and hence acts by $\tilde R_\Phi \mapsto \tilde U_{\Psi,\mathrm b}\tilde R_\Phi\tilde U_{\Psi,\mathrm b}$. The rapidity $\theta_{\mathrm{rpd}}$ is related to the frame velocity $V = V\vec u_{\mathrm b}$ by</p>
 <p>$$
 \cosh\theta_{\mathrm{rpd}} = \gamma_V, \qquad \sinh\theta_{\mathrm{rpd}} = \gamma_V\frac{V}{c}, \qquad \tanh\theta_{\mathrm{rpd}} = \frac{V}{c}, \qquad \gamma_V = \frac{1}{\sqrt{1 - V^2/c^2}} .
 $$</p>
@@ -163,9 +163,9 @@ $$</p>
 <h3 id="the-relativity-principle">The Relativity Principle</h3>
 <p>The principle of relativity is the statement that the free-particle equation is form-invariant under the rotor action. If $\tilde R_\Phi(\tau)$ is a straight worldline in one inertial frame, then $\tilde{R}_{\Phi,2}(\tau) = \tilde U_{\mathrm{lor}}\tilde R_\Phi(\tau)\tilde U_{\mathrm{lor}}{}^{*}$ is a straight worldline in another, because the action is linear and commutes with the derivative with respect to $\tau$:</p>
 <p>$$
-\frac{d\tilde{R}_{\Phi,2}}{d\tau} = \tilde U_{\mathrm{lor}}\frac{d\tilde R_\Phi}{d\tau}\tilde U_{\mathrm{lor}}{}^{*} = \tilde U_{\mathrm{lor}}\tilde{V}\tilde U_{\mathrm{lor}}{}^{*} = \tilde{V}_2 .
+\frac{d\tilde{R}_{\Phi,2}}{d\tau} = \tilde U_{\mathrm{lor}}\frac{d\tilde R_\Phi}{d\tau}\tilde U_{\mathrm{lor}}{}^{*} = \tilde U_{\mathrm{lor}}\tilde{V}_{\Phi}\tilde U_{\mathrm{lor}}{}^{*} = \tilde{V}_{\Phi,2} .
 $$</p>
-<p>The four-velocity of the transformed worldline is the rotor conjugate of the original four-velocity, its norm is unchanged by the preceding section, and the mass-shell constraint therefore reads the same in every inertial frame. This is the algebraic content of the statement that the free particle cannot distinguish inertial frames: the equation $\tilde{V} = \text{const}$ is the same equation after the transformation, with the transformed constant.</p>
+<p>The four-velocity of the transformed worldline is the rotor conjugate of the original four-velocity, its norm is unchanged by the preceding section, and the mass-shell constraint therefore reads the same in every inertial frame. This is the algebraic content of the statement that the free particle cannot distinguish inertial frames: the equation $\tilde{V}_{\Phi} = \text{const}$ is the same equation after the transformation, with the transformed constant.</p>
 <p>The composition of frames is the composition of rotors. Two successive rotor conjugations compose as</p>
 <p>$$
 \tilde U_2\left(\tilde U_1\tilde R_\Phi\tilde U_1^{*}\right)\tilde U_2^{*} = (\tilde U_2\tilde U_1)\,\tilde R_\Phi\,(\tilde U_2\tilde U_1)^{*} ,
@@ -176,9 +176,9 @@ $$</p>
 <h3 id="expanding-the-boost-rotor">Expanding the Boost Rotor</h3>
 <p>Let the frame move with small velocity $V \ll c$ along $\vec u_{\mathrm b}$, so that the rapidity is small, $\theta_{\mathrm{rpd}} \approx V/c$. Expanding the boost rotor,</p>
 <p>$$
-\tilde U_{\mathrm b} = \cosh\frac{\theta_{\mathrm{rpd}}}{2} + i\sinh\frac{\theta_{\mathrm{rpd}}}{2}\,\vec u_{\mathrm b} = e_t + \frac{iV}{2c}\,\vec u_{\mathrm b} + O\!\left(\frac{V^2}{c^2}\right) .
+\tilde U_{\Psi,\mathrm b} = \cosh\frac{\theta_{\mathrm{rpd}}}{2} + i\sinh\frac{\theta_{\mathrm{rpd}}}{2}\,\vec u_{\mathrm b} = e_t + \frac{iV}{2c}\,\vec u_{\mathrm b} + O\!\left(\frac{V^2}{c^2}\right) .
 $$</p>
-<p>To first order in $V/c$ the rotor is Hermitian, $\tilde U_{\mathrm b}^{*} = \tilde U_{\mathrm b}$, so the action on a material vector is $\tilde R_\Phi \mapsto \tilde U_{\mathrm b}\tilde R_\Phi\tilde U_{\mathrm b}$, and hence</p>
+<p>To first order in $V/c$ the rotor is Hermitian, $\tilde U_{\Psi,\mathrm b}^{*} = \tilde U_{\Psi,\mathrm b}$, so the action on a material vector is $\tilde R_\Phi \mapsto \tilde U_{\Psi,\mathrm b}\tilde R_\Phi\tilde U_{\Psi,\mathrm b}$, and hence</p>
 <p>$$
 \tilde{R}_{\Phi,2} = \tilde R_\Phi + \frac{iV}{2c}\left(\vec u_{\mathrm b}\tilde R_\Phi + \tilde R_\Phi\vec u_{\mathrm b}\right) + O\!\left(\frac{V^2}{c^2}\right) .
 $$</p>
@@ -241,22 +241,22 @@ $$</p>
 </tr>
 <tr>
 <td>Four-velocity $v_\mu$</td>
-<td>$\tilde{V} = \gamma(ic\,e_t + \vec v)$</td>
+<td>$\tilde{V}_{\Phi} = \gamma(ic\,e_t + \vec v)$</td>
 <td>$\mathbb{B}_{\Phi}$</td>
 </tr>
 <tr>
 <td>Mass shell $\sum_\mu\varepsilon_\mu v_\mu v_\mu = -c^2$</td>
-<td>$\tilde{V}\tilde{V}^{\natural} = -c^2$</td>
+<td>$\tilde{V}_{\Phi}\tilde{V}_{\Phi}^{\natural} = -c^2$</td>
 <td>constraint in $\mathbb{B}_{\Phi}$</td>
 </tr>
 <tr>
 <td>Four-momentum $p_\mu = (E/c, \vec p)$</td>
-<td>$\tilde{P} = i(E/c)e_t + \vec p$</td>
+<td>$\tilde{P}_{\Phi} = i(E/c)e_t + \vec p$</td>
 <td>$\mathbb{B}_{\Phi}$</td>
 </tr>
 <tr>
 <td>Four-force $f_\mu$</td>
-<td>$\tilde{\mathcal F}_{\mathrm{frc}} = d\tilde{P}/d\tau$</td>
+<td>$\tilde{\mathcal F}_{\Phi,\mathrm{frc}} = d\tilde{P}_{\Phi}/d\tau$</td>
 <td>$\mathbb{B}_{\Phi}$</td>
 </tr>
 <tr>
@@ -266,7 +266,7 @@ $$</p>
 </tr>
 <tr>
 <td>Boost</td>
-<td>$\tilde U_{\mathrm b} = \cosh\frac{\theta_{\mathrm{rpd}}}{2} + i\sinh\frac{\theta_{\mathrm{rpd}}}{2}\vec u_{\mathrm b}$</td>
+<td>$\tilde U_{\Psi,\mathrm b} = \cosh\frac{\theta_{\mathrm{rpd}}}{2} + i\sinh\frac{\theta_{\mathrm{rpd}}}{2}\vec u_{\mathrm b}$</td>
 <td>$\mathbb{B}_{\Psi}$</td>
 </tr>
 <tr>
@@ -287,9 +287,9 @@ $$</p>
 <p>$$
 \tilde R_\Phi(r'_t) = i c r'_{t}\,e_t + r_{0x}\,\vec e_x+r_{0y}\,\vec e_y+r_{0z}\,\vec e_z + \vec v\,r'_t \in \mathbb{B}_{\Phi} ,
 $$</p>
-<p>with four-velocity $\tilde{V} = \gamma(ic\,e_t + \vec v)$ and four-momentum $\tilde{P} = m\tilde{V} = i(E/c)e_t + \vec p$, both in $\mathbb{B}_{\Phi}$, and constrained by the mass-shell relation $\tilde{P}\tilde{P}^{\natural} = -m^2c^2$. The free particle satisfies $\tilde{\mathcal F}_{\mathrm{frc}} = d\tilde{P}/d\tau = 0$, which is Newton's first law.</p>
+<p>with four-velocity $\tilde{V}_{\Phi} = \gamma(ic\,e_t + \vec v)$ and four-momentum $\tilde{P}_{\Phi} = m\tilde{V}_{\Phi} = i(E/c)e_t + \vec p$, both in $\mathbb{B}_{\Phi}$, and constrained by the mass-shell relation $\tilde{P}_{\Phi}\tilde{P}_{\Phi}^{\natural} = -m^2c^2$. The free particle satisfies $\tilde{\mathcal F}_{\Phi,\mathrm{frc}} = d\tilde{P}_{\Phi}/d\tau = 0$, which is Newton's first law.</p>
 <p>Inertial frames are the unit-norm biquaternions $\tilde U_{\mathrm{lor}} \in SL(2,\mathbb{C})$, acting on the material sector by rotor conjugation $\tilde R_\Phi \mapsto \tilde U_{\mathrm{lor}}\tilde R_\Phi\tilde U_{\mathrm{lor}}{}^{*}$. The action is linear, preserves $\mathbb{B}_{\Phi}$ and preserves the biquaternion norm, and it commutes with the proper-time derivative, so the free-particle equation is form-invariant: this is the relativity principle. Compositions of frames compose as rotor products.</p>
-<p>The non-relativistic limit of a boost is a <strong>shear</strong>, not a rotation. Expanding the boost rotor to first order in $V/c$ gives $\tilde U_{\mathrm b} = e_t + \tfrac{iV}{2c}\vec u_{\mathrm b}$, and acting on $\tilde R_\Phi = i c r'_t\,e_t + r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z$ produces the Galilean transformation $r_{2x}\,\vec e_x+r_{2y}\,\vec e_y+r_{2z}\,\vec e_z - \vec Vr'_t$, $r'_{t,2} = r'_t$. The shear does not preserve the biquaternion norm, $\langle\tilde{R}_{\Phi,2}\rangle_{\natural} = \langle\tilde R_\Phi\rangle_{\natural} - 2r'_t\,\vec V\cdot(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z) + {r'_{t}}^2\vec V^2$, so no unit-norm biquaternion implements it. The Galilean group is therefore a contraction of the rotor group, not a subgroup: the rotations survive exactly, the time coordinate becomes an inert scalar parameter, and the centrality of $i$ is untouched.</p>
+<p>The non-relativistic limit of a boost is a <strong>shear</strong>, not a rotation. Expanding the boost rotor to first order in $V/c$ gives $\tilde U_{\Psi,\mathrm b} = e_t + \tfrac{iV}{2c}\vec u_{\mathrm b}$, and acting on $\tilde R_\Phi = i c r'_t\,e_t + r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z$ produces the Galilean transformation $r_{2x}\,\vec e_x+r_{2y}\,\vec e_y+r_{2z}\,\vec e_z - \vec Vr'_t$, $r'_{t,2} = r'_t$. The shear does not preserve the biquaternion norm, $\langle\tilde{R}_{\Phi,2}\rangle_{\natural} = \langle\tilde R_\Phi\rangle_{\natural} - 2r'_t\,\vec V\cdot(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z) + {r'_{t}}^2\vec V^2$, so no unit-norm biquaternion implements it. The Galilean group is therefore a contraction of the rotor group, not a subgroup: the rotations survive exactly, the time coordinate becomes an inert scalar parameter, and the centrality of $i$ is untouched.</p>
 <p>The free particle occupies only the material sector, carries no internal vector, and is the spin-zero benchmark for the subcategory: its effects are those of a structureless point particle, with no intrinsic angular momentum and hence no intrinsic magnetism.</p>
 <h2 id="summary-of-notation">Summary of Notation</h2>
 <div class="table-scroll"><table>
@@ -337,16 +337,16 @@ $$</p>
 <td>Particle velocity; frame velocity</td>
 </tr>
 <tr>
-<td>$\tilde{V} = \gamma(ic\,e_t + \vec v)$</td>
-<td>Four-velocity, in $\mathbb{B}_{\Phi}$; $\tilde{V}\tilde{V}^{\natural} = -c^2$</td>
+<td>$\tilde{V}_{\Phi} = \gamma(ic\,e_t + \vec v)$</td>
+<td>Four-velocity, in $\mathbb{B}_{\Phi}$; $\tilde{V}_{\Phi}\tilde{V}_{\Phi}^{\natural} = -c^2$</td>
 </tr>
 <tr>
-<td>$\tilde{P} = m\tilde{V} = i(E/c)e_t + \vec p$</td>
-<td>Four-momentum; $\tilde{P}\tilde{P}^{\natural} = -m^2c^2$</td>
+<td>$\tilde{P}_{\Phi} = m\tilde{V}_{\Phi} = i(E/c)e_t + \vec p$</td>
+<td>Four-momentum; $\tilde{P}_{\Phi}\tilde{P}_{\Phi}^{\natural} = -m^2c^2$</td>
 </tr>
 <tr>
-<td>$\tilde{\mathcal F}_{\mathrm{frc}} = d\tilde{P}/d\tau$</td>
-<td>Four-force; $\tilde{\mathcal F}_{\mathrm{frc}} = 0$ for the free particle</td>
+<td>$\tilde{\mathcal F}_{\Phi,\mathrm{frc}} = d\tilde{P}_{\Phi}/d\tau$</td>
+<td>Four-force; $\tilde{\mathcal F}_{\Phi,\mathrm{frc}} = 0$ for the free particle</td>
 </tr>
 <tr>
 <td>$\tilde U_{\mathrm{lor}} \in \mathbb{B}$, $\tilde U_{\mathrm{lor}}\tilde U_{\mathrm{lor}}{}^{\natural} = e_t$</td>
@@ -357,7 +357,7 @@ $$</p>
 <td>Rotor conjugation (frame change)</td>
 </tr>
 <tr>
-<td>$\tilde U_{\mathrm b} = \cosh\frac{\theta_{\mathrm{rpd}}}{2} + i\sinh\frac{\theta_{\mathrm{rpd}}}{2}\vec u_{\mathrm b}$</td>
+<td>$\tilde U_{\Psi,\mathrm b} = \cosh\frac{\theta_{\mathrm{rpd}}}{2} + i\sinh\frac{\theta_{\mathrm{rpd}}}{2}\vec u_{\mathrm b}$</td>
 <td>Boost rotor, in $\mathbb{B}_{\Psi}$; $\tanh\theta_{\mathrm{rpd}} = V/c$</td>
 </tr>
 <tr>

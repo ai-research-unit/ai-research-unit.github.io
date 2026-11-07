@@ -73,12 +73,12 @@
 <p>If an atom is placed in a static magnetic field, its energy levels split; the splitting is the <strong>Zeeman effect</strong>. If it is placed in a static electric field, its levels shift and split; this is the <strong>Stark effect</strong>. The two effects are the elementary static responses of a quantum system to the two classical fields, and together they fix the form of the field couplings that the rest of non-relativistic spin-1/2 physics uses. Magnetic resonance, the Stern–Gerlach deflection and the spin precession all use the Zeeman coupling; the atomic polarizability and Rydberg spectroscopy use the Stark coupling.</p>
 <p>This article treats both effects in the biquaternion algebra $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ of the read-list articles. The effects themselves are standard and are reproduced exactly. What the article establishes is the algebraic structure of the two couplings and the reason their leading behaviours differ:</p>
 <ol>
-<li><strong>Both couplings are Hermitian elements of $\mathbb{B}_{\Psi}$.</strong> The Zeeman coupling is $\tilde{R}_{\Psi,Z} = -\gamma B\,\tilde{S}_3 = -\frac{m\,c\,\omega_{L}}{2\,k_m}i\vec e_z$; the Stark coupling in a two-level truncation is $\tilde{R}_{\Psi,S} = -dE\,i\vec e_x$. Both are of the form $c r_t\,e_t + i\vec r_\Psi$ with a real vector part, and both are traceless when the permanent diagonal moment vanishes.</li>
+<li><strong>Both couplings are Hermitian elements of $\mathbb{B}_{\Psi}$.</strong> The Zeeman coupling is $\tilde{R}_{\Psi,Z} = -\gamma B\,\tilde{S}_{\Psi,3} = -\frac{m\,c\,\omega_{L}}{2\,k_m}i\vec e_z$; the Stark coupling in a two-level truncation is $\tilde{R}_{\Psi,S} = -dE\,i\vec e_x$. Both are of the form $c r_t\,e_t + i\vec r_\Psi$ with a real vector part, and both are traceless when the permanent diagonal moment vanishes.</li>
 <li><strong>The Zeeman splitting is linear and isotropic.</strong> A spin-1/2 in a field $\vec B = B\vec u$ has energies $\pm\frac{m\,c\,\omega_{L}}{2\,k_m}$ for every direction $\vec u$; the splitting $\frac{m\,c\,\omega_{L}}{k_m}$ depends on $|\vec B|$ only, and the field direction selects the eigenbasis, not the eigenvalues.</li>
 <li><strong>The Stark effect is linear for degenerate levels and quadratic otherwise.</strong> The linear Stark effect is the spectrum of $-dE\,i\vec e_x$ at an exact degeneracy, $\pm dE$; the quadratic Stark effect is the second-order shift of a non-degenerate pair, $\Delta E = -\frac{k_m\,d^{2}\,E^{2}}{m\,c\,\omega_{0}}= -\tfrac12\alpha E^2$, with $\alpha =\frac{2\,k_m\,d^{2}}{m\,c\,\omega_{0}}$.</li>
 <li><strong>The difference is diagonal versus off-diagonal coupling.</strong> The magnetic coupling is diagonal in the energy basis because a spin-1/2 carries a permanent magnetic dipole; the electric coupling is off-diagonal because a state of definite parity has no permanent electric dipole. The first gives a first-order (linear) shift; the second gives a second-order (quadratic) shift or, at a degeneracy, a first-order splitting between the two mixed states.</li>
 </ol>
-<p>The notation is the series notation: $\tilde{S}_k =\frac{m\,c}{2\,k_m}i\vec e_k$, $\tilde\Pi_{1,2}(\vec u) = \tfrac12(e_t\pm i\vec u)$, $\tilde{Ϛ} = \tfrac12(e_t+i\vec r)$, $\tilde R_\Psi = c r_t\,e_t + i\vec r_\Psi$ with eigenvalues $c r_t\pm|\vec r_\Psi|$, and $\mathrm{Tr}(\tilde Q_1\tilde Q_2)=2\,\mathrm{Sc}(\tilde Q_1\tilde Q_2)$.</p>
+<p>The notation is the series notation: $\tilde{S}_{\Psi,k} =\frac{m\,c}{2\,k_m}i\vec e_k$, $\tilde\Pi_{1,2}(\vec u) = \tfrac12(e_t\pm i\vec u)$, $\tilde{Ϛ}_{\Psi} = \tfrac12(e_t+i\vec r)$, $\tilde R_\Psi = c r_t\,e_t + i\vec r_\Psi$ with eigenvalues $c r_t\pm|\vec r_\Psi|$, and $\mathrm{Tr}(\tilde Q_1\tilde Q_2)=2\,\mathrm{Sc}(\tilde Q_1\tilde Q_2)$.</p>
 <p>The companion articles supply the pieces:
 - Companion article <em>Angular Momentum and Spin in Biquaternionic Form</em>, for the spin observable and its coupling to a field.
 - Companion article <em>Quantum Physics in Biquaternionic Form</em>, for the two-level algebra and the plain form.
@@ -88,22 +88,22 @@
 <h3 id="the-magnetic-coupling">The Magnetic Coupling</h3>
 <p>A magnetic dipole $\vec\mu$ in a field $\vec B$ has energy $V_{\mathrm{pot}} = -\vec\mu\cdot\vec B$. For a spin-1/2 with $\vec\mu = \gamma\vec S$, the coupling is the Hermitian element</p>
 <p>$$
-\tilde{R}_{\Psi,Z} = -\gamma\,\vec B\cdot\tilde S = -\gamma B\,\tilde{S}(\vec u)
+\tilde{R}_{\Psi,Z} = -\gamma\,\vec B\cdot\tilde S_{\Psi} = -\gamma B\,\tilde{S}_{\Psi}(\vec u)
 = -\frac{m\,c\,\omega_{L}}{2\,k_m}\,i\vec u,
 \qquad
-\tilde{S}(\vec u) = \sum_k  u_k\tilde{S}_k =\frac{m\,c}{2\,k_m}\,i\vec u,
+\tilde{S}_{\Psi}(\vec u) = \sum_k  u_k\tilde{S}_{\Psi,k} =\frac{m\,c}{2\,k_m}\,i\vec u,
 $$</p>
 <p>where $\vec u = \vec B/B$ and</p>
 <p>$$
 \omega_L = \gamma B
 $$</p>
-<p>is the Larmor frequency. In the series convention $\tilde{S}_k =\frac{m\,c}{2\,k_m}i\vec e_k$ and the isomorphism $\mathsf{M}_2$ sends $i\vec e_k\mapsto\sigma_k$, so $\tilde{R}_{\Psi,Z}\mapsto  -\frac{m\,c\,\omega_{L}}{2\,k_m}(\vec u\cdot\boldsymbol{\sigma})$. The coupling is a Hermitian element of $\mathbb{B}_{\Psi}$ with $c r_t = 0$ and $\vec r_\Psi = -\frac{m\,c\,\omega_{L}}{2\,k_m}\vec u$.</p>
+<p>is the Larmor frequency. In the series convention $\tilde{S}_{\Psi,k} =\frac{m\,c}{2\,k_m}i\vec e_k$ and the isomorphism $\mathsf{M}_2$ sends $i\vec e_k\mapsto\sigma_k$, so $\tilde{R}_{\Psi,Z}\mapsto  -\frac{m\,c\,\omega_{L}}{2\,k_m}(\vec u\cdot\boldsymbol{\sigma})$. The coupling is a Hermitian element of $\mathbb{B}_{\Psi}$ with $c r_t = 0$ and $\vec r_\Psi = -\frac{m\,c\,\omega_{L}}{2\,k_m}\vec u$.</p>
 <h3 id="the-spin-12-splitting">The Spin-1/2 Splitting</h3>
 <p>The observable $\tilde{R}_{\Psi,Z}$ has the spectral decomposition</p>
 <p>$$
 \tilde{R}_{\Psi,Z} = -\frac{m\,c\,\omega_{L}}{2\,k_m}\,\tilde\Pi_1(\vec u) +\frac{m\,c\,\omega_{L}}{2\,k_m}\,\tilde\Pi_2(\vec u),
 $$</p>
-<p>because $\sum_k  u_k\tilde{S}_k\tilde\Pi_{1,2}(\vec u) = \pm\frac{m\,c}{2\,k_m}\tilde\Pi_{1,2}(\vec u)$ and $\tilde{R}_{\Psi,Z}\propto \sum_k u_k\tilde{S}_k$. The two eigenvalues are</p>
+<p>because $\sum_k  u_k\tilde{S}_{\Psi,k}\tilde\Pi_{1,2}(\vec u) = \pm\frac{m\,c}{2\,k_m}\tilde\Pi_{1,2}(\vec u)$ and $\tilde{R}_{\Psi,Z}\propto \sum_k u_k\tilde{S}_{\Psi,k}$. The two eigenvalues are</p>
 <p>$$
 E_\pm = \pm\frac{m\,c\,\omega_{L}}{2\,k_m},
 $$</p>
@@ -116,13 +116,13 @@ $$</p>
 <h3 id="the-g-tensor-and-anisotropy">The g-Tensor and Anisotropy</h3>
 <p>For a spin in a crystal or on a molecule, the magnetic coupling need not be isotropic: the response of the moment to the field is a tensor rather than a number. The most general linear coupling of a spin-1/2 to a magnetic field is</p>
 <p>$$
-\tilde{R}_{\Psi,Z} =\frac{k_m\,\mu_{B}}{m\,c}\,B_i\, g_{ij}\tilde{S}_j,
+\tilde{R}_{\Psi,Z} =\frac{k_m\,\mu_{B}}{m\,c}\,B_i\, g_{ij}\tilde{S}_{\Psi,j},
 $$</p>
 <p>where $g_{ij}$ is the <strong>g-tensor</strong>, a real $3\times3$ matrix whose isotropic value is the g-factor $g_e$ of the preceding paragraph. This is still a Hermitian element of $\mathbb{B}_{\Psi}$, of the form $i h_j\vec e_j$ with</p>
 <p>$$
 h_j = \frac{\mu_B}{2}\,g_{ij}B_i,
 $$</p>
-<p>so the spectrum is $\pm\tfrac12\mu_B|g\vec B|$ and the Zeeman splitting is $\mu_B|g\vec B|$: the splitting depends on the angle between the field and the principal axes of the g-tensor. In the algebra the anisotropy is the statement that the vector part $\vec r_\Psi$ of the observable is a linear image of the field, and the eigenvalues are still $\pm|\vec r_\Psi|$. The isotropic case $g_{ij} = g_e\delta_{ij}$ reduces to the preceding subsection, where $\tilde{R}_{\Psi,Z} =\frac{k_m\,\mu_{B}\,g_{e}\,B\,\tilde{S}_{3}}{m\,c}= -\gamma B\tilde{S}_3$ for $\gamma = -\frac{k_m\,g_{e}\,\mu_{B}}{m\,c}$. The g-tensor is measured by electron paramagnetic resonance; the framework supplies the two-dimensional spectral structure and the vector-part formula, and takes the tensor itself as external data.</p>
+<p>so the spectrum is $\pm\tfrac12\mu_B|g\vec B|$ and the Zeeman splitting is $\mu_B|g\vec B|$: the splitting depends on the angle between the field and the principal axes of the g-tensor. In the algebra the anisotropy is the statement that the vector part $\vec r_\Psi$ of the observable is a linear image of the field, and the eigenvalues are still $\pm|\vec r_\Psi|$. The isotropic case $g_{ij} = g_e\delta_{ij}$ reduces to the preceding subsection, where $\tilde{R}_{\Psi,Z} =\frac{k_m\,\mu_{B}\,g_{e}\,B\,\tilde{S}_{\Psi,3}}{m\,c}= -\gamma B\tilde{S}_{\Psi,3}$ for $\gamma = -\frac{k_m\,g_{e}\,\mu_{B}}{m\,c}$. The g-tensor is measured by electron paramagnetic resonance; the framework supplies the two-dimensional spectral structure and the vector-part formula, and takes the tensor itself as external data.</p>
 <h3 id="level-crossings-and-the-field-axis">Level Crossings and the Field Axis</h3>
 <p>Because the two Zeeman levels are non-degenerate for $B>0$ and their splitting is proportional to $B$, a spin-1/2 in a field has a single crossing at $B = 0$, where the two idempotents become degenerate and any axis is an eigenbasis. The Zeeman spectrum contains no accidental degeneracy and no level repulsion; the field cannot mix the two states because the coupling is diagonal in the basis it defines. This is in sharp contrast to the Stark case below, where the coupling is off-diagonal and produces an avoided crossing. The reason is algebraic: the Zeeman coupling is proportional to the same element $i\vec u$ whose idempotents it diagonalises, so it is a function of the observable being measured.</p>
 <h3 id="the-selection-rule-as-a-commutator">The Selection Rule as a Commutator</h3>
@@ -247,7 +247,7 @@ $$</p>
 </table></div>
 <p>The reason the magnetic coupling is diagonal is that the two spin states carry definite, opposite magnetic moments; the reason the electric coupling is off-diagonal is that they carry no definite electric dipole moment. In the algebra the first is the statement that $\tilde{R}_{\Psi,Z}$ is a function of the same element $i\vec e_z$ that defines the eigenbasis, and the second is the statement that $\tilde{R}_{\Psi,S}$ is built from $i\vec e_x$, which anticommutes with $i\vec e_z$: $i\vec e_x\,i\vec e_z = -i\vec e_z\,i\vec e_x = \vec e_y$. The commutator $[\tilde{R}_{\Psi,Z},\tilde{R}_{\Psi,S}] = -2(\vec r_{\Psi,Z}\times\vec r_{\Psi,S})$ is non-zero, so the two couplings are incompatible observables when the fields are not parallel; this is the algebraic statement of the fact that a magnetic field and a transverse electric field cannot be simultaneously diagonalised.</p>
 <h3 id="conventions-of-sign">Conventions of Sign</h3>
-<p>The signs in the two couplings follow from $V_{\mathrm{pot}} = -\vec\mu\cdot\vec B$ and $V_{\mathrm{pot}} = -\vec d\cdot\vec E$. In the convention of the companion exercise <em>Exercise: Spin Precession in a Magnetic Field</em>, the spin magnetic moment is taken along the spin, $\vec\mu = \gamma\vec S$, so that $\tilde{R}_{\Psi,Z} = -\gamma B\tilde{S}_3 = -\frac{m\,c\,\omega_{L}}{2\,k_m}i\vec e_z$ with $\omega_L = \gamma B$. A negative gyromagnetic ratio (the electron) reverses the ordering of the two levels but not the structure; the algebra treats the sign of $\gamma$ as external data.</p>
+<p>The signs in the two couplings follow from $V_{\mathrm{pot}} = -\vec\mu\cdot\vec B$ and $V_{\mathrm{pot}} = -\vec d\cdot\vec E$. In the convention of the companion exercise <em>Exercise: Spin Precession in a Magnetic Field</em>, the spin magnetic moment is taken along the spin, $\vec\mu = \gamma\vec S$, so that $\tilde{R}_{\Psi,Z} = -\gamma B\tilde{S}_{\Psi,3} = -\frac{m\,c\,\omega_{L}}{2\,k_m}i\vec e_z$ with $\omega_L = \gamma B$. A negative gyromagnetic ratio (the electron) reverses the ordering of the two levels but not the structure; the algebra treats the sign of $\gamma$ as external data.</p>
 <h2 id="what-the-algebra-adds-and-what-it-does-not">What the Algebra Adds and What It Does Not</h2>
 <p><strong>Standard physics, transcribed.</strong> The Zeeman Hamiltonian, the linear Zeeman splitting, the g-factor, the linear and quadratic Stark effects, the polarizability formula $\alpha =\frac{2\,k_m\,d^{2}}{m\,c\,\omega_{0}}$, and the avoided crossing are all standard. The article adds no predictions.</p>
 <p><strong>What the algebra organises.</strong></p>
@@ -279,7 +279,7 @@ $$</p>
 <h2 id="summary">Summary</h2>
 <p>The two elementary static field couplings of a spin-1/2 are Hermitian elements of the informational sector. The <strong>Zeeman coupling</strong> in a field $\vec B = B\vec u$ is</p>
 <p>$$
-\tilde{R}_{\Psi,Z} = -\gamma B\,\tilde{S}(\vec u) = -\frac{m\,c\,\omega_{L}}{2\,k_m}\,i\vec u,
+\tilde{R}_{\Psi,Z} = -\gamma B\,\tilde{S}_{\Psi}(\vec u) = -\frac{m\,c\,\omega_{L}}{2\,k_m}\,i\vec u,
 \qquad \omega_L = \gamma B,
 $$</p>
 <p>with the spectral decomposition $\tilde{R}_{\Psi,Z} = -\frac{m\,c\,\omega_{L}}{2\,k_m}\tilde\Pi_1(\vec u) +\frac{m\,c\,\omega_{L}}{2\,k_m}\tilde\Pi_2(\vec u)$ and linear, isotropic splitting $\Delta E =\frac{m\,c}{k_m}|\omega_L| =\frac{m\,c}{k_m}|\gamma|B$. The field direction selects the eigenbasis $\tilde\Pi_{1,2}(\vec u)$ and not the eigenvalues.</p>
@@ -317,11 +317,11 @@ $$</p>
 <td>Hermitian (informational) subspace; home of both couplings</td>
 </tr>
 <tr>
-<td>$\tilde{S}(\vec u) =\frac{m\,c}{2\,k_m}i\vec u$</td>
+<td>$\tilde{S}_{\Psi}(\vec u) =\frac{m\,c}{2\,k_m}i\vec u$</td>
 <td>Spin observable along $\vec u$</td>
 </tr>
 <tr>
-<td>$\tilde{R}_{\Psi,Z} = -\gamma B\tilde{S}(\vec u) = -\frac{m\,c\,\omega_{L}}{2\,k_m}i\vec u$</td>
+<td>$\tilde{R}_{\Psi,Z} = -\gamma B\tilde{S}_{\Psi}(\vec u) = -\frac{m\,c\,\omega_{L}}{2\,k_m}i\vec u$</td>
 <td>Zeeman coupling</td>
 </tr>
 <tr>

@@ -103,7 +103,7 @@ U_{\mathrm{fop},\alpha}\,\tilde{Ξ}_{\mathrm{fop}}\,U_{\mathrm{fop},\alpha}{}^{-
 \qquad
 U_{\mathrm{fop},\alpha}\,\tilde{Ξ}_{\mathrm{fop}}^{{*}}\,U_{\mathrm{fop},\alpha}{}^{-1}=\exp(+i\alpha)\,\tilde{Ξ}_{\mathrm{fop}}^{{*}} ,
 $$</p>
-<p>with $Ϙ_{\mathrm{fop}}$ the conserved charge of the Noether current $\tilde J\in\mathbb{B}_{\Phi}$. The transformation is an internal symmetry: it commutes with the Poincaré action, it does not rotate any spinor index, and its parameter multiplies the field by a <strong>central</strong> $*$-unitary. The group is $\mathrm{U}(1)$, one generator, one phase.</p>
+<p>with $Ϙ_{\mathrm{fop}}$ the conserved charge of the Noether current $\tilde J_{\Phi}\in\mathbb{B}_{\Phi}$. The transformation is an internal symmetry: it commutes with the Poincaré action, it does not rotate any spinor index, and its parameter multiplies the field by a <strong>central</strong> $*$-unitary. The group is $\mathrm{U}(1)$, one generator, one phase.</p>
 <p>A symmetry is <strong>spontaneously broken</strong> when it is a symmetry of the action but not of the vacuum. For a $\mathrm{U}(1)$ acting on a complex scalar, breaking means that the vacuum expectation value</p>
 <p>$$
 \langle0|\,\tilde{Ξ}_{\mathrm{fop}}\,|0\rangle=v\,\exp(i\alpha_0)\,e_t
@@ -167,28 +167,28 @@ $$</p>
 <h2 id="the-goldstone-current-and-the-decay-constant">The Goldstone Current and the Decay Constant</h2>
 <p>The broken symmetry's current is the Noether current of the companion article. On the classical field,</p>
 <p>$$
-\tilde J=i\left(\xi^*\tilde\nabla\xi-\xi\,\tilde\nabla\xi^*\right),
+\tilde J_{\Phi}=i\left(\xi^*\tilde\nabla\xi-\xi\,\tilde\nabla\xi^*\right),
 \qquad
 Ϙ=\int d^3r\,J_0 ,
 $$</p>
 <p>which in the real components is</p>
 <p>$$
-\tilde J=-\left(\xi_1\tilde\nabla\xi_2-\xi_2\tilde\nabla\xi_1\right)
+\tilde J_{\Phi}=-\left(\xi_1\tilde\nabla\xi_2-\xi_2\tilde\nabla\xi_1\right)
 \;\xrightarrow{\ \text{expansion}\ } \;
-\tilde J=-\sqrt2\,v\,\tilde\nabla\vartheta_{\mathrm{fld}}+\vartheta_{\mathrm{fld}}\,\tilde\nabla h-h\,\tilde\nabla\vartheta_{\mathrm{fld}} ,
+\tilde J_{\Phi}=-\sqrt2\,v\,\tilde\nabla\vartheta_{\mathrm{fld}}+\vartheta_{\mathrm{fld}}\,\tilde\nabla h-h\,\tilde\nabla\vartheta_{\mathrm{fld}} ,
 $$</p>
 <p>where the second line is the expansion about the minimum with $\xi_1=\sqrt2v+h$, $\xi_2=\vartheta_{\mathrm{fld}}$. To leading order in the fluctuations,</p>
 <p>$$
-\boxed{\;\tilde J=-f\,\tilde\nabla\vartheta_{\mathrm{fld}}+O(\text{two fields}),
+\boxed{\;\tilde J_{\Phi}=-f\,\tilde\nabla\vartheta_{\mathrm{fld}}+O(\text{two fields}),
 \qquad
 f=\sqrt2\,v\;},
 $$</p>
 <p>so the current is the derivative of the Goldstone field times the <strong>decay constant</strong> $f$. The charge is the spatial integral, $Ϙ=-f\int d^3r\,d\vartheta_{\mathrm{fld}}/dr'_t$ to leading order, and it is conserved because the current is. The matrix element that defines $f$ is the standard one,</p>
 <p>$$
-\boxed{\;\langle0|\tilde J(0)|\vartheta_{\mathrm{fld}}(p)\rangle=i f\,p_\mu\;},
+\boxed{\;\langle0|\tilde J_{\Phi}(0)|\vartheta_{\mathrm{fld}}(p)\rangle=i f\,p_\mu\;},
 $$</p>
 <p>which is the statement that the current interpolates the Goldstone boson with strength $f$ and that no massive state contributes at zero momentum.</p>
-<p>The framework's contribution to these expressions is only that the current lies in the material sector, $\tilde J\in\mathbb{B}_{\Phi}$, as the companion Noether article records, and that both the order parameter and the Goldstone field are central-valued. The normalization of $f$ depends on the normalization of the order parameter and is fixed once the potential's normalization is fixed; the physical statement is that $f$ is nonzero whenever the symmetry is broken, $f\propto\langle\xi_{\mathrm{fop}}\rangle$, and that it vanishes continuously as the order parameter is turned off. The decay constant is thus the order parameter in the units fixed by the kinetic term, and the Goldstone boson's couplings are all proportional to derivatives divided by $f$.</p>
+<p>The framework's contribution to these expressions is only that the current lies in the material sector, $\tilde J_{\Phi}\in\mathbb{B}_{\Phi}$, as the companion Noether article records, and that both the order parameter and the Goldstone field are central-valued. The normalization of $f$ depends on the normalization of the order parameter and is fixed once the potential's normalization is fixed; the physical statement is that $f$ is nonzero whenever the symmetry is broken, $f\propto\langle\xi_{\mathrm{fop}}\rangle$, and that it vanishes continuously as the order parameter is turned off. The decay constant is thus the order parameter in the units fixed by the kinetic term, and the Goldstone boson's couplings are all proportional to derivatives divided by $f$.</p>
 <p>$$
 -(\xi_1d\xi_{2}/dr'_t-\xi_2d\xi_{1}/dr'_t)=-fd\vartheta_{\mathrm{fld}}/dr'_t-\big(h\,d\vartheta_{\mathrm{fld}}/dr'_t-\vartheta_{\mathrm{fld}}\,dh/dr'_t\big),
 \qquad
@@ -203,7 +203,7 @@ so the leading term is $-fd\vartheta_{\mathrm{fld}}/dr'_t$ and the remainder is 
 $$</p>
 <p>and since $Ϙ_{\mathrm{fop}}=\int d^3r\,J_0$, the current–field commutator cannot vanish identically. Define the matrix element</p>
 <p>$$
-F(x-y)=\langle0|\big[\tilde J(x),\xi_{\mathrm{fop}}(y)\big]|0\rangle ,
+F(x-y)=\langle0|\big[\tilde J_{\Phi}(x),\xi_{\mathrm{fop}}(y)\big]|0\rangle ,
 $$</p>
 <p>which by translation invariance depends on the difference, and by Lorentz covariance is a sum of terms proportional to $p_\mu$ with Lorentz-invariant coefficients. Its Fourier transform carries a spectral weight $\rho(p^2)$, and the conservation of the current, $\sum_\mu\partial F_\mu/\partial R_\mu=0$, requires $p^2\rho(p^2)=0$: the spectral weight is supported at $p^2=0$, that is, on the massless shell. A massive intermediate state would give a pole at $p^2=m^2\ne0$, which conservation forbids; only a massless state can saturate the non-vanishing commutator. The particle so forced into the spectrum is the Goldstone boson, and it couples to the current with the strength measured by the matrix element $\langle0|J_\mu(0)|\vartheta_{\mathrm{fld}}(p)\rangle=ifp_\mu$ discussed below. This is the standard spectral argument and is transcribed rather than re-derived.</p>
 <p><strong>The effective-potential form.</strong> If the symmetry is broken, the order parameter is a nonzero minimum of the effective potential. The effective potential is a function of the fields invariant under the symmetry, hence of $|\xi|^2$ alone at the renormalizable level; along the symmetry orbit it is constant, so the second derivative along the orbit vanishes. The second derivative of the effective potential is the mass-squared matrix at zero momentum, so the mode along the orbit has zero mass. This is the version verified numerically above, and it is the version that the framework's central-valued potential most directly supports: the potential is a function of the central invariant $\mathrm{Sc}(\tilde{Ξ}^{*}\tilde{Ξ})$, the orbit is the central circle of phases, and the flatness is exact.</p>
@@ -239,7 +239,7 @@ $$</p>
 <p>the second relation being a statement about the vacuum expectation value, since the full commutator is $[Ϙ_{\mathrm{fop}},{\vartheta_{\mathrm{fld}}}_{\mathrm{fop}}]=i(\sqrt2 v+h)$ and the fluctuation has vanishing expectation. The generator thus shifts the Goldstone field by a constant, which is the non-linear realization of the broken symmetry; $f$ is the order parameter in the normalization of the kinetic term. In the framework's terms the charge is the central $\mathrm{U}(1)$ generator of the companion articles, the Goldstone field is central-valued, and the c-number $if$ multiplies the central unit $e_t$; the non-linear realization and the soft limit are standard and are imported with the rest of the broken-symmetry apparatus.</p>
 <h2 id="the-biquaternion-reading">The Biquaternion Reading</h2>
 <p>Four statements summarise what the framework contributes to Goldstone's theorem.</p>
-<p><strong>The symmetry is the central phase.</strong> The broken symmetry is the $\mathrm{U}(1)$ generated by the charge of the current $\tilde J\in\mathbb{B}_{\Phi}$; its parameter multiplies the field by a central $*$-unitary, and it commutes with the Poincaré action. The Goldstone boson is therefore the scalar that moves along the orbit of the central phase, and it is central-valued like every other scalar of the sector.</p>
+<p><strong>The symmetry is the central phase.</strong> The broken symmetry is the $\mathrm{U}(1)$ generated by the charge of the current $\tilde J_{\Phi}\in\mathbb{B}_{\Phi}$; its parameter multiplies the field by a central $*$-unitary, and it commutes with the Poincaré action. The Goldstone boson is therefore the scalar that moves along the orbit of the central phase, and it is central-valued like every other scalar of the sector.</p>
 <p><strong>The order parameter is a central condensate.</strong> The vacuum expectation value $\langle\tilde{Ξ}_{\mathrm{fop}}\rangle=v\exp(i\alpha_0)e_t$ lies in the centre and commutes with the algebra; it carries no spinor index, and the breaking is a breaking of a symmetry acting on the centre. The Goldstone field inherits this: it is a scalar, not a spinor, and the framework's state module is not involved in the breaking.</p>
 <p><strong>The flatness is the flatness of the biquaternion norm on the phase orbit.</strong> The potential is a function of the central invariant $\mathrm{Sc}(\tilde{Ξ}^{*}\tilde{Ξ})$, and the vacuum manifold is its level set, a circle. The radial and angular directions of the central field space are, respectively, the massive and massless directions, and the masslessness is the exact flatness of the potential along the orbit.</p>
 <p><strong>The algebra supplies no new mechanism.</strong> The theorem, its proof, the decay constant and the counting are standard, and the framework contributes the centrality of the symmetry, the order parameter and the Goldstone mode, plus the biquaternion-norm geometry of the invariant. The scalar sector's usual structural result persists: no native ladder in $\mathbb{B}$, and the Goldstone boson is a standard scalar constructed on the imported formalism.</p>
@@ -255,8 +255,8 @@ $$</p>
 <li><strong>Empirical content.</strong> Whether the broken-symmetry scalar sector of the framework yields a prediction distinguishing it from standard scalar field theory is open; the Goldstone mode's couplings are the standard ones.</li>
 </ul>
 <h2 id="summary">Summary</h2>
-<p>The scalar sector's canonical continuous symmetry is the central phase $\mathrm{U}(1)$ generated by the Noether charge of the current $\tilde J\in\mathbb{B}_{\Phi}$, acting on the central-valued field by $\xi_{\mathrm{fop}}\to \exp(-i\alpha)\xi_{\mathrm{fop}}$. Taking the renormalizable invariant potential $V=\frac{\lambda}{4}(\mathrm{Sc}(\tilde{Ξ}^{*}\tilde{Ξ})-v^2)^2$, the vacuum manifold is the circle $\mathrm{Sc}(\tilde{Ξ}^{*}\tilde{Ξ})=v^2$, the order parameter $\langle\tilde{Ξ}_{\mathrm{fop}}\rangle=v\exp(i\alpha_0)e_t$ is a central condensate, and the symmetry breaks as $\mathrm{U}(1)\to\{1\}$. Expanding in the two real components, $\xi_1=\sqrt2v+h$ and $\xi_2=\vartheta_{\mathrm{fld}}$, the kinetic term is canonical, the mass matrix is diagonal with entries $(m_h^2,m_G^2)=(\lambda v^2,0)$, and the Goldstone boson $\vartheta_{\mathrm{fld}}$ is exactly massless: the potential depends only on the modulus, so the angular direction is exactly flat. The values were verified numerically — radial curvature $\lambda v^2$ in the modulus coordinate, angular curvature the numerical zero of a second difference, mixed derivative identically zero.</p>
-<p>The Goldstone field's current is $\tilde J=-f\tilde\nabla\vartheta_{\mathrm{fld}}+O(\text{two fields})$ with decay constant $f=\sqrt2v\propto\langle\xi_{\mathrm{fop}}\rangle$, and its defining matrix element is $\langle0|\tilde J(0)|\vartheta_{\mathrm{fld}}(p)\rangle=ifp_\mu$; the low-energy couplings of $\vartheta_{\mathrm{fld}}$ are of derivative type. Goldstone's theorem — one massless scalar per broken generator — holds, with the spectral proof and the effective-potential proof both applying, and the counting rule $n_{\mathrm{NG}}=\dim(G/H)$ giving one for $\mathrm{U}(1)\to\{1\}$, none for $\mathrm{U}(1)\to \mathrm{U}(1)$, and $N-1$ for $O(N)\to O(N-1)$. The framework's contribution is the centrality of the symmetry, the order parameter and the Goldstone mode, and the biquaternion-norm geometry of the invariant potential; the theorem and its consequences are standard, and the scalar sector supplies no new mechanism, as its absence of a native ladder in $\mathbb{B}$ requires.</p>
+<p>The scalar sector's canonical continuous symmetry is the central phase $\mathrm{U}(1)$ generated by the Noether charge of the current $\tilde J_{\Phi}\in\mathbb{B}_{\Phi}$, acting on the central-valued field by $\xi_{\mathrm{fop}}\to \exp(-i\alpha)\xi_{\mathrm{fop}}$. Taking the renormalizable invariant potential $V=\frac{\lambda}{4}(\mathrm{Sc}(\tilde{Ξ}^{*}\tilde{Ξ})-v^2)^2$, the vacuum manifold is the circle $\mathrm{Sc}(\tilde{Ξ}^{*}\tilde{Ξ})=v^2$, the order parameter $\langle\tilde{Ξ}_{\mathrm{fop}}\rangle=v\exp(i\alpha_0)e_t$ is a central condensate, and the symmetry breaks as $\mathrm{U}(1)\to\{1\}$. Expanding in the two real components, $\xi_1=\sqrt2v+h$ and $\xi_2=\vartheta_{\mathrm{fld}}$, the kinetic term is canonical, the mass matrix is diagonal with entries $(m_h^2,m_G^2)=(\lambda v^2,0)$, and the Goldstone boson $\vartheta_{\mathrm{fld}}$ is exactly massless: the potential depends only on the modulus, so the angular direction is exactly flat. The values were verified numerically — radial curvature $\lambda v^2$ in the modulus coordinate, angular curvature the numerical zero of a second difference, mixed derivative identically zero.</p>
+<p>The Goldstone field's current is $\tilde J_{\Phi}=-f\tilde\nabla\vartheta_{\mathrm{fld}}+O(\text{two fields})$ with decay constant $f=\sqrt2v\propto\langle\xi_{\mathrm{fop}}\rangle$, and its defining matrix element is $\langle0|\tilde J_{\Phi}(0)|\vartheta_{\mathrm{fld}}(p)\rangle=ifp_\mu$; the low-energy couplings of $\vartheta_{\mathrm{fld}}$ are of derivative type. Goldstone's theorem — one massless scalar per broken generator — holds, with the spectral proof and the effective-potential proof both applying, and the counting rule $n_{\mathrm{NG}}=\dim(G/H)$ giving one for $\mathrm{U}(1)\to\{1\}$, none for $\mathrm{U}(1)\to \mathrm{U}(1)$, and $N-1$ for $O(N)\to O(N-1)$. The framework's contribution is the centrality of the symmetry, the order parameter and the Goldstone mode, and the biquaternion-norm geometry of the invariant potential; the theorem and its consequences are standard, and the scalar sector supplies no new mechanism, as its absence of a native ladder in $\mathbb{B}$ requires.</p>
 <h2 id="summary-of-notation">Summary of Notation</h2>
 <div class="table-scroll"><table>
 <thead>
@@ -307,15 +307,15 @@ $$</p>
 <td>Mass matrix entries; Goldstone exactly massless</td>
 </tr>
 <tr>
-<td>$\tilde J\in\mathbb{B}_{\Phi}$, $\tilde J=i(\xi^*\tilde\nabla\xi-\xi\tilde\nabla\xi^*)$</td>
+<td>$\tilde J_{\Phi}\in\mathbb{B}_{\Phi}$, $\tilde J_{\Phi}=i(\xi^*\tilde\nabla\xi-\xi\tilde\nabla\xi^*)$</td>
 <td>Noether current, in the material sector</td>
 </tr>
 <tr>
-<td>$\tilde J=-f\tilde\nabla\vartheta_{\mathrm{fld}}+\ldots$, $f=\sqrt2v$</td>
+<td>$\tilde J_{\Phi}=-f\tilde\nabla\vartheta_{\mathrm{fld}}+\ldots$, $f=\sqrt2v$</td>
 <td>Current and decay constant</td>
 </tr>
 <tr>
-<td>$\langle0\vert\tilde J(0)\vert\vartheta_{\mathrm{fld}}(p)\rangle=ifp_\mu$</td>
+<td>$\langle0\vert\tilde J_{\Phi}(0)\vert\vartheta_{\mathrm{fld}}(p)\rangle=ifp_\mu$</td>
 <td>Defining matrix element of the decay constant</td>
 </tr>
 <tr>

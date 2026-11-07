@@ -107,58 +107,58 @@ $$</p>
 <h2 id="the-four-velocity">The Four-Velocity</h2>
 <p>The <strong>four-velocity biquaternion</strong> of a particle with velocity $\vec v$ is</p>
 <p>$$
-\tilde{V} = \gamma\left(ic\,e_t + \vec v\right),
+\tilde{V}_{\Phi} = \gamma\left(ic\,e_t + \vec v\right),
 $$</p>
 <p>where</p>
 <p>$$
 \gamma = \frac{1}{\sqrt{1 - \vec v^2/c^2}}
 $$</p>
-<p>is the Lorentz factor. The scalar part of $\tilde{V}$ is <strong>imaginary</strong> ($i\gamma c$) and the vector part is <strong>real</strong> ($\gamma\vec v$), so $\tilde{V}$ lies in the anti-Hermitian subspace $\mathbb{B}_{\Phi}$, like the four-position. In compact form,</p>
+<p>is the Lorentz factor. The scalar part of $\tilde{V}_{\Phi}$ is <strong>imaginary</strong> ($i\gamma c$) and the vector part is <strong>real</strong> ($\gamma\vec v$), so $\tilde{V}_{\Phi}$ lies in the anti-Hermitian subspace $\mathbb{B}_{\Phi}$, like the four-position. In compact form,</p>
 <p>$$
-\tilde{V} = ic\,\gamma\,e_t + \gamma\vec v.
+\tilde{V}_{\Phi} = ic\,\gamma\,e_t + \gamma\vec v.
 $$</p>
 <p>The four-velocity satisfies the <strong>normalization condition</strong></p>
 <p>$$
-\tilde{V}\tilde{V}^{\natural} = \gamma^2\left(-c^2 + \vec v^2\right) = -c^2,
+\tilde{V}_{\Phi}\tilde{V}_{\Phi}^{\natural} = \gamma^2\left(-c^2 + \vec v^2\right) = -c^2,
 $$</p>
 <p>which is the biquaternion form of the standard relativistic normalization $v_\mu v_\mu = -c^2$. The normalization is the statement that the four-velocity has a <strong>fixed negative norm</strong> determined by the speed of light. It is a <strong>constraint</strong>, not an identity: not every biquaternion satisfies it, only the four-velocities of physical particles.</p>
 <h2 id="the-four-momentum">The Four-Momentum</h2>
 <p>The <strong>four-momentum biquaternion</strong> is</p>
 <p>$$
-\tilde{P} = m\tilde{V} = \gamma m\left(ic\,e_t + \vec v\right) = i\frac{E}{c}\,e_t + \vec p,
+\tilde{P}_{\Phi} = m\tilde{V}_{\Phi} = \gamma m\left(ic\,e_t + \vec v\right) = i\frac{E}{c}\,e_t + \vec p,
 $$</p>
-<p>where $m$ is the rest mass, $E = \gamma m c^2$ is the relativistic energy, and $\vec p = \gamma m\vec v$ is the relativistic three-momentum. The scalar part of $\tilde{P}$ is $iE/c$ and the vector part is $\vec p$, so $\tilde{P}$ also lies in the anti-Hermitian subspace $\mathbb{B}_{\Phi}$.</p>
+<p>where $m$ is the rest mass, $E = \gamma m c^2$ is the relativistic energy, and $\vec p = \gamma m\vec v$ is the relativistic three-momentum. The scalar part of $\tilde{P}_{\Phi}$ is $iE/c$ and the vector part is $\vec p$, so $\tilde{P}_{\Phi}$ also lies in the anti-Hermitian subspace $\mathbb{B}_{\Phi}$.</p>
 <h2 id="the-mass-shell-relation">The Mass-Shell Relation</h2>
 <p>The four-momentum satisfies the <strong>mass-shell relation</strong></p>
 <p>$$
-\boxed{\;\tilde{P}\tilde{P}^{\natural} = m^2 \tilde{V}\tilde{V}^{\natural} = -m^2 c^2\;}
+\boxed{\;\tilde{P}_{\Phi}\tilde{P}_{\Phi}^{\natural} = m^2 \tilde{V}_{\Phi}\tilde{V}_{\Phi}^{\natural} = -m^2 c^2\;}
 $$</p>
 <p>Expanding in components,</p>
 <p>$$
-\tilde{P}\tilde{P}^{\natural} = \left(i\frac{E}{c}\right)^2 + \vec p^2 = -\frac{E^2}{c^2} + \vec p^2 = -m^2 c^2,
+\tilde{P}_{\Phi}\tilde{P}_{\Phi}^{\natural} = \left(i\frac{E}{c}\right)^2 + \vec p^2 = -\frac{E^2}{c^2} + \vec p^2 = -m^2 c^2,
 $$</p>
 <p>which is the standard relativistic energy–momentum relation</p>
 <p>$$
 E^2 = \vec p^2 c^2 + m^2 c^4.
 $$</p>
-<p>The mass-shell relation is the <strong>constraint that defines the physical four-momenta</strong>. In the biquaternion language, it is the statement that the <strong>biquaternion norm of the four-momentum is a fixed negative constant</strong>, determined by the rest mass and the speed of light. Particles of different masses lie on different shells (different values of $\tilde{P}\tilde{P}^{\natural}$); massless particles lie on the <strong>null shell</strong> $\tilde{P}\tilde{P}^{\natural} = 0$, corresponding to the light cone.</p>
+<p>The mass-shell relation is the <strong>constraint that defines the physical four-momenta</strong>. In the biquaternion language, it is the statement that the <strong>biquaternion norm of the four-momentum is a fixed negative constant</strong>, determined by the rest mass and the speed of light. Particles of different masses lie on different shells (different values of $\tilde{P}_{\Phi}\tilde{P}_{\Phi}^{\natural}$); massless particles lie on the <strong>null shell</strong> $\tilde{P}_{\Phi}\tilde{P}_{\Phi}^{\natural} = 0$, corresponding to the light cone.</p>
 <h2 id="the-four-force">The Four-Force</h2>
 <p>The <strong>four-force biquaternion</strong> is the proper-time derivative of the four-momentum:</p>
 <p>$$
-\tilde{\mathcal F}_{\mathrm{frc}} = \frac{d\tilde{P}}{d\tau},
+\tilde{\mathcal F}_{\Phi,\mathrm{frc}} = \frac{d\tilde{P}_{\Phi}}{d\tau},
 $$</p>
-<p>where $\tau$ is the <strong>proper time</strong> of the particle, defined by $d\tau = dr'_t/\gamma$. The four-force biquaternion lies in the anti-Hermitian subspace $\mathbb{B}_{\Phi}$, like $\tilde{P}$.</p>
-<p>Since $\tilde{P}\tilde{P}^{\natural} = -m^2c^2$ is constant along the worldline, differentiating gives</p>
+<p>where $\tau$ is the <strong>proper time</strong> of the particle, defined by $d\tau = dr'_t/\gamma$. The four-force biquaternion lies in the anti-Hermitian subspace $\mathbb{B}_{\Phi}$, like $\tilde{P}_{\Phi}$.</p>
+<p>Since $\tilde{P}_{\Phi}\tilde{P}_{\Phi}^{\natural} = -m^2c^2$ is constant along the worldline, differentiating gives</p>
 <p>$$
-\tilde{\mathcal F}_{\mathrm{frc}}\tilde{P}^{\natural} + \tilde{P}\tilde{\mathcal F}_{\mathrm{frc}}^{\natural} = 0,
+\tilde{\mathcal F}_{\Phi,\mathrm{frc}}\tilde{P}_{\Phi}^{\natural} + \tilde{P}_{\Phi}\tilde{\mathcal F}_{\Phi,\mathrm{frc}}^{\natural} = 0,
 $$</p>
 <p>which is the biquaternion form of the standard orthogonality condition $f_\mu p_\mu = 0$: the four-force is orthogonal to the four-momentum. This is the reason the four-force can change the direction of the four-momentum but not its norm, and hence not the rest mass.</p>
 <p>For a charged particle in an electromagnetic field, the four-force in component form is</p>
 <p>$$
-\tilde{\mathcal F}_{\mathrm{frc}} = i\gamma\frac{ϙ}{c}\left(\vec E\cdot\vec v\right)e_t + \gamma ϙ\left(\vec E + \vec v\times\vec B\right),
+\tilde{\mathcal F}_{\Phi,\mathrm{frc}} = i\gamma\frac{ϙ}{c}\left(\vec E\cdot\vec v\right)e_t + \gamma ϙ\left(\vec E + \vec v\times\vec B\right),
 $$</p>
 <p>where $ϙ$ is the charge, $\vec E$ and $\vec B$ are the electric and magnetic fields, and $\vec v$ is the particle velocity. The scalar part is the <strong>power</strong> delivered to the particle (imaginary, as required by the $i c r'_t$ convention for a four-vector), and the vector part is the <strong>relativistic three-force</strong> $\gamma ϙ(\vec E + \vec v\times\vec B)$.</p>
-<p><strong>Note on the biquaternion expression.</strong> The component formula above is standard and unambiguous. The expression of the same four-force as a <strong>biquaternion product</strong> of the field-strength biquaternion $\tilde F$ and the four-velocity $\tilde{V}$ is <strong>not</strong> simply the real part of $\tilde F\circ\tilde{V}$; the correct expression involves the representation theory of $\mathbb{B}$ in the even subalgebra of $\mathrm{Cl}_{1,3}$, and it needs to be worked out carefully. This is left as an open question, to be addressed when the relevant literature on the biquaternion formulation of the Lorentz force is reviewed. The structural fact — that the four-force is an element of $\mathbb{B}_{\Phi}$ built from the field strength and the four-velocity — is correct; the explicit formula in terms of $\tilde F$ and $\tilde{V}$ is deferred.</p>
+<p><strong>Note on the biquaternion expression.</strong> The component formula above is standard and unambiguous. The expression of the same four-force as a <strong>biquaternion product</strong> of the field-strength biquaternion $\tilde F$ and the four-velocity $\tilde{V}_{\Phi}$ is <strong>not</strong> simply the real part of $\tilde F\circ\tilde{V}_{\Phi}$; the correct expression involves the representation theory of $\mathbb{B}$ in the even subalgebra of $\mathrm{Cl}_{1,3}$, and it needs to be worked out carefully. This is left as an open question, to be addressed when the relevant literature on the biquaternion formulation of the Lorentz force is reviewed. The structural fact — that the four-force is an element of $\mathbb{B}_{\Phi}$ built from the field strength and the four-velocity — is correct; the explicit formula in terms of $\tilde F$ and $\tilde{V}_{\Phi}$ is deferred.</p>
 <h2 id="the-action">The Action</h2>
 <p>The <strong>relativistic action</strong> for a free particle of rest mass $m$ is</p>
 <p>$$
@@ -172,21 +172,21 @@ $$</p>
 <h2 id="the-conserved-current">The Conserved Current</h2>
 <p>The <strong>four-current biquaternion</strong> is</p>
 <p>$$
-\tilde{J} = ic\,\rho\,e_t + \vec j,
+\tilde{J}_{\Phi} = ic\,\rho\,e_t + \vec j,
 $$</p>
 <p>where $\rho$ is the charge density and $\vec j$ is the current density. The current biquaternion lies in $\mathbb{B}_{\Phi}$ (imaginary scalar part, real vector part). The <strong>conservation of charge</strong> is expressed by the biquaternion equation</p>
 <p>$$
-\boxed{\;\mathrm{Sc}\!\left(\tilde{\nabla}^{\natural}\tilde{J}\right) = 0\;}
+\boxed{\;\mathrm{Sc}\!\left(\tilde{\nabla}^{\natural}\tilde{J}_{\Phi}\right) = 0\;}
 $$</p>
 <p>where $\tilde{\nabla}^{\natural} = e_t\partial/\partial R_t - \vec e_x\partial/\partial R_x - \vec e_y\partial/\partial R_y - \vec e_z\partial/\partial R_z$ is the quaternion conjugate of the biquaternionic gradient. Expanding the scalar part,</p>
 <p>$$
-\mathrm{Sc}\!\left(\tilde{\nabla}^{\natural}\tilde{J}\right) = \partial/\partial R_t(ic\rho) + \mathrm{div}\,\vec j = \frac{\partial \rho}{\partial r'_t} + \mathrm{div}\,\vec j,
+\mathrm{Sc}\!\left(\tilde{\nabla}^{\natural}\tilde{J}_{\Phi}\right) = \partial/\partial R_t(ic\rho) + \mathrm{div}\,\vec j = \frac{\partial \rho}{\partial r'_t} + \mathrm{div}\,\vec j,
 $$</p>
 <p>so the condition is the standard continuity equation</p>
 <p>$$
 \frac{\partial \rho}{\partial r'_t} + \mathrm{div}\,\vec j = 0.
 $$</p>
-<p>The condition is the <strong>scalar part</strong> of $\tilde{\nabla}^{\natural}\tilde{J} = 0$. The full equation $\tilde{\nabla}^{\natural}\tilde{J} = 0$ is stronger, because the vector part of $\tilde{\nabla}^{\natural}\tilde{J}$ does not vanish in general: it involves the spatial derivatives of $\rho$ and $\vec j$, and it does not correspond to a standard physical conservation law. So the continuity equation is the scalar projection of the biquaternion conservation law.</p>
+<p>The condition is the <strong>scalar part</strong> of $\tilde{\nabla}^{\natural}\tilde{J}_{\Phi} = 0$. The full equation $\tilde{\nabla}^{\natural}\tilde{J}_{\Phi} = 0$ is stronger, because the vector part of $\tilde{\nabla}^{\natural}\tilde{J}_{\Phi}$ does not vanish in general: it involves the spatial derivatives of $\rho$ and $\vec j$, and it does not correspond to a standard physical conservation law. So the continuity equation is the scalar projection of the biquaternion conservation law.</p>
 <h2 id="the-kleingordon-equation">The Klein–Gordon Equation</h2>
 <p>The <strong>Klein–Gordon equation</strong> for a relativistic scalar field $\tilde{Ξ}$ of mass $m$ is</p>
 <p>$$
@@ -229,23 +229,23 @@ $$</p>
 </tr>
 <tr>
 <td>Four-velocity</td>
-<td>$\tilde{V} = \gamma(ic\,e_t + \vec v)$</td>
-<td>$\tilde{V}\tilde{V}^{\natural} = -c^2$</td>
+<td>$\tilde{V}_{\Phi} = \gamma(ic\,e_t + \vec v)$</td>
+<td>$\tilde{V}_{\Phi}\tilde{V}_{\Phi}^{\natural} = -c^2$</td>
 </tr>
 <tr>
 <td>Four-momentum</td>
-<td>$\tilde{P} = m\tilde{V}$</td>
-<td>$\tilde{P}\tilde{P}^{\natural} = -m^2c^2$</td>
+<td>$\tilde{P}_{\Phi} = m\tilde{V}_{\Phi}$</td>
+<td>$\tilde{P}_{\Phi}\tilde{P}_{\Phi}^{\natural} = -m^2c^2$</td>
 </tr>
 <tr>
 <td>Mass-shell relation</td>
-<td>$\tilde{P}\tilde{P}^{\natural} = -m^2c^2$</td>
+<td>$\tilde{P}_{\Phi}\tilde{P}_{\Phi}^{\natural} = -m^2c^2$</td>
 <td>—</td>
 </tr>
 <tr>
 <td>Four-force</td>
-<td>$\tilde{\mathcal F}_{\mathrm{frc}} = d\tilde{P}/d\tau$</td>
-<td>$\tilde{\mathcal F}_{\mathrm{frc}}\tilde{P}^{\natural} + \tilde{P}\tilde{\mathcal F}_{\mathrm{frc}}^{\natural} = 0$</td>
+<td>$\tilde{\mathcal F}_{\Phi,\mathrm{frc}} = d\tilde{P}_{\Phi}/d\tau$</td>
+<td>$\tilde{\mathcal F}_{\Phi,\mathrm{frc}}\tilde{P}_{\Phi}^{\natural} + \tilde{P}_{\Phi}\tilde{\mathcal F}_{\Phi,\mathrm{frc}}^{\natural} = 0$</td>
 </tr>
 <tr>
 <td>Action</td>
@@ -254,8 +254,8 @@ $$</p>
 </tr>
 <tr>
 <td>Current</td>
-<td>$\tilde{J} = ic\rho\,e_t + \vec j$</td>
-<td>$\mathrm{Sc}(\tilde{\nabla}^{\natural}\tilde{J}) = 0$</td>
+<td>$\tilde{J}_{\Phi} = ic\rho\,e_t + \vec j$</td>
+<td>$\mathrm{Sc}(\tilde{\nabla}^{\natural}\tilde{J}_{\Phi}) = 0$</td>
 </tr>
 <tr>
 <td>Klein–Gordon</td>
@@ -272,26 +272,26 @@ $$</p>
 <p>Here $\hbar/(mc)$ is the mass length.</p>
 <h2 id="structural-observations">Structural Observations</h2>
 <p><strong>The four-vectors live in $\mathbb{B}_{\Phi}$.</strong> The four-position, four-velocity, four-momentum, four-force, four-potential, and four-current all lie in the anti-Hermitian subspace $\mathbb{B}_{\Phi}$ (imaginary scalar part, real vector part). This subspace is the biquaternion image of the Minkowski four-vector space, and it is closed under the natural Lorentz-covariant operations (addition, scalar multiplication by real numbers, and rotor conjugation).</p>
-<p><strong>The mass-shell relation is a norm condition.</strong> The statement $\tilde{P}\tilde{P}^{\natural} = -m^2c^2$ is the statement that the <strong>biquaternion norm</strong> of the four-momentum is a fixed negative constant. Massless particles satisfy $\tilde{P}\tilde{P}^{\natural} = 0$, which is the condition that the four-momentum lies on the <strong>zero divisor cone</strong> of the algebra (see the companion article on biquaternion zero divisors). So the light cone of Minkowski space is, in the biquaternion language, the <strong>zero divisor set</strong> of the algebra.</p>
-<p><strong>The conserved current is a scalar projection of the biquaternion conservation law.</strong> The continuity equation is the scalar part of $\tilde{\nabla}^{\natural}\tilde{J} = 0$. The full biquaternion equation is stronger, and the vector part of $\tilde{\nabla}^{\natural}\tilde{J}$ does not have an independent <strong>physical interpretation</strong> as a conservation law.</p>
+<p><strong>The mass-shell relation is a norm condition.</strong> The statement $\tilde{P}_{\Phi}\tilde{P}_{\Phi}^{\natural} = -m^2c^2$ is the statement that the <strong>biquaternion norm</strong> of the four-momentum is a fixed negative constant. Massless particles satisfy $\tilde{P}_{\Phi}\tilde{P}_{\Phi}^{\natural} = 0$, which is the condition that the four-momentum lies on the <strong>zero divisor cone</strong> of the algebra (see the companion article on biquaternion zero divisors). So the light cone of Minkowski space is, in the biquaternion language, the <strong>zero divisor set</strong> of the algebra.</p>
+<p><strong>The conserved current is a scalar projection of the biquaternion conservation law.</strong> The continuity equation is the scalar part of $\tilde{\nabla}^{\natural}\tilde{J}_{\Phi} = 0$. The full biquaternion equation is stronger, and the vector part of $\tilde{\nabla}^{\natural}\tilde{J}_{\Phi}$ does not have an independent <strong>physical interpretation</strong> as a conservation law.</p>
 <p><strong>The wave equations are factorization.</strong> The Klein–Gordon and Dirac equations are related by the factorization $\tilde{\nabla}\tilde{\nabla}^{\natural} = \Box$. The Dirac equation is the <strong>first-order factor</strong> of the Klein–Gordon equation, and the mass term is the term that distinguishes the massive case from the massless one. This factorization is the biquaternion form of the standard Dirac factorization of the Klein–Gordon operator.</p>
 <h2 id="the-tensor-dynamics-reading-and-the-question-of-extra-terms">The Tensor-Dynamics Reading, and the Question of Extra Terms</h2>
 <p>A later formulation puts the same relativistic mechanics into a biquaternion <strong>tensor</strong> language, and its interest for this article is a claim about the algebra itself. E. P. J. de Haas, <em>Biquaternion Formulation of Relativistic Tensor Dynamics</em> (arXiv:1401.4470v1 [physics.gen-ph], 2013), builds what he calls a biquaternion tensor calculus whose stated goal is to fuse the <strong>antisymmetric</strong> tensor dynamics of relativistic electrodynamics and the <strong>symmetric</strong> tensor dynamics of relativity into one formalism, in a language he describes as "very akin to the standard relativistic space-time language". He positions the work in the programme A. P. Yefremov sketched for quaternionic relativity (arXiv:math-ph/0501055), and the paper is deliberately mathematical physics: the Lorentz force law and the Lagrange equation are presented in a new formalism, not derived anew. It is recorded here as a representational result, not as a prediction.</p>
-<p>The objects are those of this article, with a tensor index carried by the biquaternion. The mechanical stress–energy density is $T_{\nu\mu} = \tilde V_\nu G_\mu$, the product of the four-velocity biquaternion and the momentum-density biquaternion; the stress–energy density of a charged particle in a potential field adds a current–potential term; the Lagrangian density is given as its trace; and the conservation statement is written as a <strong>general force equation</strong>,</p>
+<p>The objects are those of this article, with a tensor index carried by the biquaternion. The mechanical stress–energy density is $T_{\nu\mu} = \tilde V_{\Phi,\nu} G_\mu$, the product of the four-velocity biquaternion and the momentum-density biquaternion; the stress–energy density of a charged particle in a potential field adds a current–potential term; the Lagrangian density is given as its trace; and the conservation statement is written as a <strong>general force equation</strong>,</p>
 <p>$$
 \partial/\partial R_\nu T_{\nu\mu} + \partial/\partial R_\mu \mathrm{Lag} = 0,
 $$</p>
 <p>which reduces to the Lorentz force law under continuity conditions on the four-current and the four-velocity. The tensor of this article and the tensor of that paper are the same object reached by different routes, and the companion exercise on the electromagnetic energy–momentum tensor takes the force equation up as a problem.</p>
 <p><strong>The claim that matters here is negative.</strong> The paper's conclusion is that this formulation "lacks the extra terms that usually arise in biquaternionic electrodynamics". The condition is stated in the body and is worth carrying exactly: the electromagnetic force biquaternion matches the standard force field only if the <strong>Lorenz gauge condition</strong> $F_0 = \partial/\partial R_\nu A_\nu = 0$ holds; if $F_0 \neq 0$, then the usual biquaternion expressions for the Lorentz force and the two inhomogeneous Maxwell equations carry extra terms, and the calculus of this paper does not. The paper's own account of where those terms come from is equally explicit: they arise when the tensor indices are rearranged "according to their biquaternion affiliation", an operation the author calls external to his system and alien to it, because it destroys the tensor arrangement of the terms.</p>
 <p><strong>This is a counterweight to a recurring theme of the corpus, and the two must be read together.</strong> In the electro-gravimagnetic programme the biquaternion formulation is said to <strong>require</strong> an added scalar — the field $a(\tau,r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)$, or $\alpha$ in the later papers — precisely because the reduction to the standard equations is held to fail without it (<em>The Electro-Gravimagnetic Field and the Magnetic-Charge–Mass Hypothesis</em>, and the modification recorded in <em>Maxwell's Equations in Biquaternionic Form</em>). de Haas reports the opposite outcome for a formulation arranged differently, and ties it to the gauge. The corpus's question then becomes a precise one: do the extra terms come from the <strong>algebra</strong>, or from the way the tensors are <strong>mapped onto</strong> it together with the gauge one imposes? The answer the two sources jointly suggest is the second — that the extra terms are an artefact of the mapping and the gauge rather than of the algebra — and that sits with the corpus's own line that the algebra supplies the home and not the object. The corpus records the two claims side by side and adopts neither.</p>
-<p><strong>Two cautions.</strong> The claim is relative to this particular calculus and must not be generalised to all biquaternionic electrodynamics; the paper says as much by calling the rearrangement external. And the paper's own bookkeeping is not internally consistent in the places this article would use it: its canonical-Lagrangian section prints $T_{\nu\mu} = \tilde V_\nu G_\mu - \tilde J_\nu A_\mu$ together with $\mathrm{Lag} = -\tilde V_\nu G_\nu + \tilde J_\nu A_\nu$, so that $\mathrm{Lag} = -T_\nu{}_\nu$, while its conclusion prints $T_{\nu\mu} = \tilde V_\nu G_\nu + \tilde J_\nu A_\nu$ with $\mathrm{Lag}$ "as its trace". The sign and the index placement of the two displays differ and the source is not corrected here: a reader using the force equation should take the shapes and re-derive the signs. The extraction of the paper's tensor layouts is also unreliable, so the displays above are the printed ones and not a reconstruction.</p>
+<p><strong>Two cautions.</strong> The claim is relative to this particular calculus and must not be generalised to all biquaternionic electrodynamics; the paper says as much by calling the rearrangement external. And the paper's own bookkeeping is not internally consistent in the places this article would use it: its canonical-Lagrangian section prints $T_{\nu\mu} = \tilde V_{\Phi,\nu} G_\mu - \tilde J_{\Phi,\nu} A_\mu$ together with $\mathrm{Lag} = -\tilde V_{\Phi,\nu} G_\nu + \tilde J_{\Phi,\nu} A_\nu$, so that $\mathrm{Lag} = -T_\nu{}_\nu$, while its conclusion prints $T_{\nu\mu} = \tilde V_{\Phi,\nu} G_\nu + \tilde J_{\Phi,\nu} A_\nu$ with $\mathrm{Lag}$ "as its trace". The sign and the index placement of the two displays differ and the source is not corrected here: a reader using the force equation should take the shapes and re-derive the signs. The extraction of the paper's tensor layouts is also unreliable, so the displays above are the printed ones and not a reconstruction.</p>
 <h2 id="open-questions">Open Questions</h2>
 <ol>
 <li>
 <p><strong>The Lorentz transformation of four-vectors.</strong> The four-vectors in $\mathbb{B}_{\Phi}$ transform under the Lorentz group by a <strong>rotor conjugation</strong> involving the boost biquaternion. The precise form of this transformation, and its relation to the standard four-vector transformation, is the subject of the companion article on the Lorentz transformation.</p>
 </li>
 <li>
-<p><strong>The Lorentz force in biquaternion form.</strong> The four-force in component form is standard: $\tilde{\mathcal F}_{\mathrm{frc}} = i\gamma ϙ(\vec E\cdot\vec v)/c\,e_t + \gamma ϙ(\vec E + \vec v\times\vec B)$. Its expression as a biquaternion product of the field-strength biquaternion $\tilde F$ and the four-velocity $\tilde{V}$ is <strong>not</strong> simply the real part of $\tilde F\circ\tilde{V}$; the correct expression involves the representation theory of $\mathbb{B}$ in the even subalgebra of $\mathrm{Cl}_{1,3}$, and it remains to be worked out cleanly. This is left for a future revision, and it may be addressed by the scientific literature on the biquaternion formulation of the Lorentz force.</p>
+<p><strong>The Lorentz force in biquaternion form.</strong> The four-force in component form is standard: $\tilde{\mathcal F}_{\Phi,\mathrm{frc}} = i\gamma ϙ(\vec E\cdot\vec v)/c\,e_t + \gamma ϙ(\vec E + \vec v\times\vec B)$. Its expression as a biquaternion product of the field-strength biquaternion $\tilde F$ and the four-velocity $\tilde{V}_{\Phi}$ is <strong>not</strong> simply the real part of $\tilde F\circ\tilde{V}_{\Phi}$; the correct expression involves the representation theory of $\mathbb{B}$ in the even subalgebra of $\mathrm{Cl}_{1,3}$, and it remains to be worked out cleanly. This is left for a future revision, and it may be addressed by the scientific literature on the biquaternion formulation of the Lorentz force.</p>
 </li>
 <li>
 <p><strong>The Lagrangian formulation.</strong> The biquaternion action $S = -mc\int\sqrt{-d\tilde R_\Phi\,\overline{d\tilde R_\Phi}}$ is a real Lorentz scalar. Can the full Lagrangian formulation of relativistic mechanics (including interactions) be expressed in biquaternion form? A later tensor-dynamics formulation (de Haas, arXiv:1401.4470v1) gives one: the Lagrangian density as the trace of the stress–energy tensor, and the conservation law as the general force equation $\partial/\partial R_\nu T_{\nu\mu} + \partial/\partial R_\mu \mathrm{Lag} = 0$. It is recorded, with its signs and its cautions, in <em>The Tensor-Dynamics Reading, and the Question of Extra Terms</em> above.</p>
@@ -312,7 +312,7 @@ $$</p>
 <ul>
 <li>The invariant interval is the biquaternion norm of the four-position displacement biquaternion.</li>
 <li>The four-velocity, four-momentum, four-force, four-potential, and four-current lie in the anti-Hermitian subspace $\mathbb{B}_{\Phi}$.</li>
-<li>The mass-shell relation is the biquaternion-norm condition $\tilde{P}\tilde{P}^{\natural} = -m^2c^2$.</li>
+<li>The mass-shell relation is the biquaternion-norm condition $\tilde{P}_{\Phi}\tilde{P}_{\Phi}^{\natural} = -m^2c^2$.</li>
 <li>The light cone is the zero divisor set of the algebra.</li>
 <li>The conserved current is characterized by the scalar part of the quaternion-conjugate gradient vanishing.</li>
 <li>The wave equations are the factorization of the d'Alembertian.</li>
@@ -356,19 +356,19 @@ $$</p>
 <td>Four-position biquaternion</td>
 </tr>
 <tr>
-<td>$\tilde{V} = \gamma(ic\,e_t + \vec v)$</td>
+<td>$\tilde{V}_{\Phi} = \gamma(ic\,e_t + \vec v)$</td>
 <td>Four-velocity biquaternion</td>
 </tr>
 <tr>
-<td>$\tilde{P} = m\tilde{V}$</td>
+<td>$\tilde{P}_{\Phi} = m\tilde{V}_{\Phi}$</td>
 <td>Four-momentum biquaternion</td>
 </tr>
 <tr>
-<td>$\tilde{\mathcal F}_{\mathrm{frc}} = d\tilde{P}/d\tau$</td>
+<td>$\tilde{\mathcal F}_{\Phi,\mathrm{frc}} = d\tilde{P}_{\Phi}/d\tau$</td>
 <td>Four-force biquaternion</td>
 </tr>
 <tr>
-<td>$\tilde{J} = ic\rho\,e_t + \vec j$</td>
+<td>$\tilde{J}_{\Phi} = ic\rho\,e_t + \vec j$</td>
 <td>Four-current biquaternion</td>
 </tr>
 <tr>
@@ -407,7 +407,7 @@ $$</p>
 <li>Chris Doran and Anthony Lasenby, <em>Geometric Algebra for Physicists</em> (Cambridge, 2003), for the modern geometric algebra treatment.</li>
 <li>Pertti Lounesto, <em>Clifford Algebras and Spinors</em> (Cambridge, 2001), for the connection to Clifford algebras.</li>
 <li>L. A. Alexeyeva, "Differential algebra of biquaternions. Dirac equation and its generalized solutions," <em>Progress in Analysis, Proceedings of the 8th Congress of the ISAAC</em> (Moscow, 2013), pp. 153–161, for the biquaternion formulation of relativistic wave equations.</li>
-<li>E. P. J. de Haas, "Biquaternion Formulation of Relativistic Tensor Dynamics," arXiv:1401.4470v1 [physics.gen-ph] (2013), for the biquaternion tensor calculus that fuses antisymmetric and symmetric relativistic tensor dynamics, the stress–energy density $T_{\nu\mu} = \tilde V_\nu G_\mu$, the general force equation $\partial/\partial R_\nu T_{\nu\mu} + \partial/\partial R_\mu L = 0$ with the Lagrangian density as its trace, and the claim that the formulation carries no extra terms relative to the standard relativistic language when the Lorenz gauge condition holds. Recorded in <em>The Tensor-Dynamics Reading, and the Question of Extra Terms</em>.</li>
+<li>E. P. J. de Haas, "Biquaternion Formulation of Relativistic Tensor Dynamics," arXiv:1401.4470v1 [physics.gen-ph] (2013), for the biquaternion tensor calculus that fuses antisymmetric and symmetric relativistic tensor dynamics, the stress–energy density $T_{\nu\mu} = \tilde V_{\Phi,\nu} G_\mu$, the general force equation $\partial/\partial R_\nu T_{\nu\mu} + \partial/\partial R_\mu L = 0$ with the Lagrangian density as its trace, and the claim that the formulation carries no extra terms relative to the standard relativistic language when the Lorenz gauge condition holds. Recorded in <em>The Tensor-Dynamics Reading, and the Question of Extra Terms</em>.</li>
 <li>A. P. Yefremov, "Quaternions and Biquaternions: Algebra, Geometry, and Physical Theories," arXiv:math-ph/0501055 (2005), for the programme of quaternionic relativity in which the tensor-dynamics formulation situates itself.</li>
 </ul>
       </div>

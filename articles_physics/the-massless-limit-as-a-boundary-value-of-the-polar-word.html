@@ -73,21 +73,21 @@
 <p>The polar word is a parametrization of the group of units: every biquaternion off the zero-divisor cone is an ordered product of a scale, a central phase, a boost and a rotor. The massless shell is the cone. The massless limit is therefore not an interior limit of the word's parameters; it is the limit in which the element reaches the boundary of the group, where the word has no value.</p>
 <p>This article owns that limit. It states the boundary value of the four-factor word along a path of infinite rapidity, identifies the two strata on which the limit can land, and records what the limit does and does not inherit from the massive element. The boundary theorem, the two strata and the exponential convergence are those of <em>Exponential Polar Decomposition of Biquaternions</em>. The stratum table and the element-level reading of the cone are those of <em>The Zero-Divisor Cone and the Massless Spectrum</em> and <em>The Exponential Word and Its Boundary</em>. What is added here is the massless question: which massive family has which boundary value, where the mass enters, and why the answer is a boundary value rather than a value.</p>
 <p>$$
-\tilde Q=r\,e^{i\alpha}\,\tilde U_{\mathrm b}\,\tilde u_{\mathrm r},
+\tilde Q=r\,e^{i\alpha}\,\tilde U_{\Psi,\mathrm b}\,\tilde u_{\mathrm r},
 \qquad
-\tilde U_{\mathrm b}=\exp\left(i\frac{\theta_{\mathrm{rpd}}}{2}\vec u_{\mathrm b}\right),
+\tilde U_{\Psi,\mathrm b}=\exp\left(i\frac{\theta_{\mathrm{rpd}}}{2}\vec u_{\mathrm b}\right),
 \qquad
 \tilde u_{\mathrm r}=\exp\left(\frac{\theta}{2}\vec u_{\mathrm r}\right),
 $$</p>
 <p>with $r>0$, $\alpha\in(-\pi/2,\pi/2]$, $\theta_{\mathrm{rpd}}\ge0$, $\theta\in[0,2\pi]$, and $\vec u_{\mathrm b},\vec u_{\mathrm r}$ unit real pure quaternions. The norm is $\langle\tilde Q\rangle_{\natural}=\sum_\mu Q_\mu^2$, and the element is a unit exactly when $r\neq0$. The material four-momentum is</p>
 <p>$$
-\tilde P=i\frac{E}{c}e_t+\vec p,
+\tilde P_{\Phi}=i\frac{E}{c}e_t+\vec p,
 \qquad
 E=mc^2\cosh\theta_{\mathrm{rpd}},
 \qquad
 \lvert\vec p\rvert=mc\sinh\theta_{\mathrm{rpd}},
 $$</p>
-<p>with $\vec u_p=\vec p/\lvert\vec p\rvert$ and $\langle\tilde P\rangle_{\natural}=-m^2c^2$.</p>
+<p>with $\vec u_p=\vec p/\lvert\vec p\rvert$ and $\langle\tilde P_{\Phi}\rangle_{\natural}=-m^2c^2$.</p>
 <h2 id="the-results-it-uses">The Results It Uses</h2>
 <div class="table-scroll"><table>
 <thead>
@@ -159,7 +159,7 @@ $$</p>
 </tr>
 <tr>
 <td>3</td>
-<td>$\tilde U_{\mathrm b}$</td>
+<td>$\tilde U_{\Psi,\mathrm b}$</td>
 <td>boost</td>
 <td>$i\frac{\theta_{\mathrm{rpd}}}{2}\vec u_{\mathrm b}$</td>
 <td>$\theta_{\mathrm{rpd}}\ge0$</td>
@@ -182,7 +182,7 @@ $$</p>
 <p>so the cone is the locus $r=0$ and the mass shell is the level set $r^2e^{2i\alpha}=-m^2c^2$. The mass is a radial coordinate of the word, not one of its angles. The word is defined exactly on the complement of the cone, and the massless limit is the limit $r\to0$, which is not a point of the domain.</p>
 <p>The boost grows with the rapidity,</p>
 <p>$$
-\tilde U_{\mathrm b}=\cosh\frac{\theta_{\mathrm{rpd}}}{2}\,e_t+i\sinh\frac{\theta_{\mathrm{rpd}}}{2}\,\vec u_{\mathrm b}
+\tilde U_{\Psi,\mathrm b}=\cosh\frac{\theta_{\mathrm{rpd}}}{2}\,e_t+i\sinh\frac{\theta_{\mathrm{rpd}}}{2}\,\vec u_{\mathrm b}
 =\frac{e^{\theta_{\mathrm{rpd}}/2}}{2}\left(e_t+i\vec u_{\mathrm b}\right)
 +\frac{e^{-\theta_{\mathrm{rpd}}/2}}{2}\left(e_t-i\vec u_{\mathrm b}\right),
 $$</p>
@@ -190,7 +190,7 @@ $$</p>
 <h2 id="the-limit-at-infinite-rapidity">The Limit at Infinite Rapidity</h2>
 <p>Take a unit complex number $\varkappa_{\mathrm{phs}}$, a positive real $R$, and the family</p>
 <p>$$
-\tilde Q(\theta_{\mathrm{rpd}})=R\,e^{-\theta_{\mathrm{rpd}}/2}\,\varkappa_{\mathrm{phs}}\,\tilde U_{\mathrm b}(\vec u_{\mathrm b})\,\tilde u_{\mathrm r},
+\tilde Q(\theta_{\mathrm{rpd}})=R\,e^{-\theta_{\mathrm{rpd}}/2}\,\varkappa_{\mathrm{phs}}\,\tilde U_{\Psi,\mathrm b}(\vec u_{\mathrm b})\,\tilde u_{\mathrm r},
 \qquad
 \theta_{\mathrm{rpd}}>0.
 $$</p>
@@ -283,12 +283,12 @@ r=mc,
 \qquad
 \theta_{\mathrm{rpd},w}=2\theta_{\mathrm{rpd}},
 $$</p>
-<p>where $\theta_{\mathrm{rpd}}$ is the rapidity of the momentum and $\theta_{\mathrm{rpd},w}$ is the rapidity parameter of the word. The factor two is the difference between multiplying once and acting twice: the word multiplies the element once, while the Lorentz boost carries the rest momentum $\tilde P_0=imc\,e_t$ to $\tilde P$ through the half-angle rotor $\tilde U_{\mathrm b}(\theta_{\mathrm{rpd}})$, $\tilde P=\tilde U_{\mathrm b}(\theta_{\mathrm{rpd}})\tilde P_0\tilde U_{\mathrm b}(\theta_{\mathrm{rpd}})^{*}=\tilde U_{\mathrm b}(\theta_{\mathrm{rpd}})^{2}\tilde P_0$. The word's boost factor is that square, $\tilde U_{\mathrm b}(\theta_{\mathrm{rpd},w})=\tilde U_{\mathrm b}(\theta_{\mathrm{rpd}})^{2}$, so $\theta_{\mathrm{rpd},w}=2\theta_{\mathrm{rpd}}$. With these data,</p>
+<p>where $\theta_{\mathrm{rpd}}$ is the rapidity of the momentum and $\theta_{\mathrm{rpd},w}$ is the rapidity parameter of the word. The factor two is the difference between multiplying once and acting twice: the word multiplies the element once, while the Lorentz boost carries the rest momentum $\tilde P_{\Phi,0}=imc\,e_t$ to $\tilde P_{\Phi}$ through the half-angle rotor $\tilde U_{\Psi,\mathrm b}(\theta_{\mathrm{rpd}})$, $\tilde P_{\Phi}=\tilde U_{\Psi,\mathrm b}(\theta_{\mathrm{rpd}})\tilde P_{\Phi,0}\tilde U_{\Psi,\mathrm b}(\theta_{\mathrm{rpd}})^{*}=\tilde U_{\Psi,\mathrm b}(\theta_{\mathrm{rpd}})^{2}\tilde P_{\Phi,0}$. The word's boost factor is that square, $\tilde U_{\Psi,\mathrm b}(\theta_{\mathrm{rpd},w})=\tilde U_{\Psi,\mathrm b}(\theta_{\mathrm{rpd}})^{2}$, so $\theta_{\mathrm{rpd},w}=2\theta_{\mathrm{rpd}}$. With these data,</p>
 <p>$$
-r\varkappa_{\mathrm{phs}}\,\tilde U_{\mathrm b}(\theta_{\mathrm{rpd},w})\tilde u_{\mathrm r}
+r\varkappa_{\mathrm{phs}}\,\tilde U_{\Psi,\mathrm b}(\theta_{\mathrm{rpd},w})\tilde u_{\mathrm r}
 =imc\left(\cosh\theta_{\mathrm{rpd}}\,e_t-i\sinh\theta_{\mathrm{rpd}}\,\vec u_p\right)
 =i\frac{E}{c}e_t+\vec p
-=\tilde P.
+=\tilde P_{\Phi}.
 $$</p>
 <p>The rate of the family is</p>
 <p>$$
@@ -314,7 +314,7 @@ $$</p>
 <tbody>
 <tr>
 <td>element</td>
-<td>$\tilde P$, a unit</td>
+<td>$\tilde P_{\Phi}$, a unit</td>
 <td>$L$, a rank-one null element</td>
 </tr>
 <tr>
@@ -344,7 +344,7 @@ $$</p>
 </tr>
 </tbody>
 </table></div>
-<p><strong>The defect is of order $m^2$.</strong> The approach to the boundary is $O(e^{-2\theta_{\mathrm{rpd}}})=O(m^2c^4/E^2)$ at fixed energy. The massive momentum itself carries the same order in its algebraic defect, $\tilde P^2=2P_t\tilde P+m^2c^2e_t$, so the massless relation $\tilde P^2=2P_t\tilde P$ is the boundary identity and the mass term is the defect. The two statements are of the same order in the mass; they are not the same statement, one being a defect of the element and the other a defect of the path.</p>
+<p><strong>The defect is of order $m^2$.</strong> The approach to the boundary is $O(e^{-2\theta_{\mathrm{rpd}}})=O(m^2c^4/E^2)$ at fixed energy. The massive momentum itself carries the same order in its algebraic defect, $\tilde P_{\Phi}^2=2P_t\tilde P_{\Phi}+m^2c^2e_t$, so the massless relation $\tilde P_{\Phi}^2=2P_t\tilde P_{\Phi}$ is the boundary identity and the mass term is the defect. The two statements are of the same order in the mass; they are not the same statement, one being a defect of the element and the other a defect of the path.</p>
 <p><strong>The idempotent stratum is larger than the null momenta.</strong> A general boundary value in the first row of the stratum table is a complex multiple of a minimal idempotent, not necessarily a Hermitian one. The physical null momenta are the anti-Hermitian slice of that stratum: for the Hermitian representative, $L^{*}=-L$ requires $\tau$ purely imaginary, which the data above satisfy. The identification of the stratum with the photon is therefore an identification of one slice, not of the whole stratum.</p>
 <h2 id="the-path-dependence">The Path Dependence</h2>
 <p>The limit depends on the path, and the dependence is not a technicality. Two families with the same scale $R$ and the same phase $\varkappa_{\mathrm{phs}}$ but different asymptotic rotors reach different points of the cone for generic rotors:</p>
@@ -441,7 +441,7 @@ $$</p>
 </thead>
 <tbody>
 <tr>
-<td>$\tilde Q=r e^{i\alpha}\tilde U_{\mathrm b}\tilde u_{\mathrm r}$</td>
+<td>$\tilde Q=r e^{i\alpha}\tilde U_{\Psi,\mathrm b}\tilde u_{\mathrm r}$</td>
 <td>the polar word</td>
 </tr>
 <tr>
@@ -449,7 +449,7 @@ $$</p>
 <td>the scale and the central phase</td>
 </tr>
 <tr>
-<td>$\tilde U_{\mathrm b}=e^{i\theta_{\mathrm{rpd}}\vec u_{\mathrm b}/2}$</td>
+<td>$\tilde U_{\Psi,\mathrm b}=e^{i\theta_{\mathrm{rpd}}\vec u_{\mathrm b}/2}$</td>
 <td>the boost factor at word rapidity $\theta_{\mathrm{rpd}}$ and axis $\vec u_{\mathrm b}$</td>
 </tr>
 <tr>
@@ -473,7 +473,7 @@ $$</p>
 <td>the scale of the idempotent, $L^2=\tau L$</td>
 </tr>
 <tr>
-<td>$\tilde P=i\frac{E}{c}e_t+\vec p$</td>
+<td>$\tilde P_{\Phi}=i\frac{E}{c}e_t+\vec p$</td>
 <td>the material four-momentum</td>
 </tr>
 <tr>

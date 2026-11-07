@@ -100,7 +100,7 @@ $$</p>
 <p>$$
 \boxed{\;\rho_1 = \mathrm{Tr}_2(\tilde\Pi_{\mathrm{singlet}}) = \tfrac{1}{2}e_t\;}.
 $$</p>
-<p>This is the maximally mixed state of a qubit, at the centre of the Bloch ball. Its purity is $\mathrm{Tr}(\tilde{Ϛ}_1^2) = \tfrac{1}{2}$ and its von Neumann entropy is $\log 2$. In the biquaternion formulation, this mixedness is read off directly. The singlet contains no terms of the form $\vec e_\mu\otimes e_t$ with $\mu \in \{x,y,z\}$, and the entangled terms $\vec e_\mu\otimes \vec e_\mu$ with $\mu \in \{x,y,z\}$ are traceless in the second factor: $\mathrm{Tr}_2(\vec e_\mu\otimes \vec e_\mu) = \vec e_\mu\,\mathrm{Tr}_\mathbb{B}(\vec e_\mu) = 0$. So the partial trace keeps only the $e_t\otimes e_t$ term and produces the scalar-only element $\tfrac{1}{2}e_t$, which is not idempotent. The mixedness of the reduced state is the algebraic trace of the entanglement of the joint state.</p>
+<p>This is the maximally mixed state of a qubit, at the centre of the Bloch ball. Its purity is $\mathrm{Tr}(\tilde{Ϛ}_{\Psi,1}^2) = \tfrac{1}{2}$ and its von Neumann entropy is $\log 2$. In the biquaternion formulation, this mixedness is read off directly. The singlet contains no terms of the form $\vec e_\mu\otimes e_t$ with $\mu \in \{x,y,z\}$, and the entangled terms $\vec e_\mu\otimes \vec e_\mu$ with $\mu \in \{x,y,z\}$ are traceless in the second factor: $\mathrm{Tr}_2(\vec e_\mu\otimes \vec e_\mu) = \vec e_\mu\,\mathrm{Tr}_\mathbb{B}(\vec e_\mu) = 0$. So the partial trace keeps only the $e_t\otimes e_t$ term and produces the scalar-only element $\tfrac{1}{2}e_t$, which is not idempotent. The mixedness of the reduced state is the algebraic trace of the entanglement of the joint state.</p>
 <h3 id="the-correlation-function-as-a-bilinear-pairing">The correlation function as a bilinear pairing</h3>
 <p>The spin correlation function, computed in full in <em>Exercise: The Correlation Function of the Bell States</em>, is</p>
 <p>$$
@@ -125,11 +125,11 @@ $$</p>
 <h3 id="no-signaling-as-a-partial-trace-identity">No-signaling as a partial-trace identity</h3>
 <p>The last observation is the algebraic content of the no-communication theorem. If Alice applies a local $*$-unitary operation $\tilde Q\otimes e_t$ to the joint state, the reduced state of particle 2 is unchanged:</p>
 <p>$$
-\mathrm{Tr}_1\!\left((\tilde{U}\otimes e_t)\,\tilde{Ϛ}\,(\tilde{U}^{*}\otimes e_t)\right) = \mathrm{Tr}_1(\tilde{Ϛ}),
+\mathrm{Tr}_1\!\left((\tilde{U}\otimes e_t)\,\tilde{Ϛ}_{\Psi}\,(\tilde{U}^{*}\otimes e_t)\right) = \mathrm{Tr}_1(\tilde{Ϛ}_{\Psi}),
 $$</p>
-<p>where $\mathrm{Tr}_1$ denotes the partial trace over particle 1. This is a direct consequence of the cyclicity of the trace: for any element $\tilde{Ϛ} = \sum_i a_i\otimes b_i$ of the tensor product,</p>
+<p>where $\mathrm{Tr}_1$ denotes the partial trace over particle 1. This is a direct consequence of the cyclicity of the trace: for any element $\tilde{Ϛ}_{\Psi} = \sum_i a_i\otimes b_i$ of the tensor product,</p>
 <p>$$
-\mathrm{Tr}_1\!\left((\tilde{U}\otimes e_t)\,\tilde{Ϛ}\,(\tilde{U}^{*}\otimes e_t)\right) = \sum_i \mathrm{Tr}_\mathbb{B}(\tilde{U}a_i\tilde{U}^{*})\,b_i = \sum_i \mathrm{Tr}_\mathbb{B}(a_i)\,b_i = \mathrm{Tr}_1(\tilde{Ϛ}).
+\mathrm{Tr}_1\!\left((\tilde{U}\otimes e_t)\,\tilde{Ϛ}_{\Psi}\,(\tilde{U}^{*}\otimes e_t)\right) = \sum_i \mathrm{Tr}_\mathbb{B}(\tilde{U}a_i\tilde{U}^{*})\,b_i = \sum_i \mathrm{Tr}_\mathbb{B}(a_i)\,b_i = \mathrm{Tr}_1(\tilde{Ϛ}_{\Psi}).
 $$</p>
 <p>No-signaling is not a dynamical theorem in this interpretation; it is the cyclicity of the trace, applied to the partial trace. It says that correlations are real, that they are a property of the joint state, and that no local operation on one factor can be detected by measurements on the other.</p>
 <h2 id="the-five-debates-revisited">The Five Debates, Revisited</h2>
@@ -279,7 +279,7 @@ $$</p>
 <td>Partial trace over the second factor</td>
 </tr>
 <tr>
-<td>$\tilde{Ϛ}_1 = \mathrm{Tr}_2(\tilde\Pi_{\mathrm{singlet}}) = \tfrac{1}{2}e_t$</td>
+<td>$\tilde{Ϛ}_{\Psi,1} = \mathrm{Tr}_2(\tilde\Pi_{\mathrm{singlet}}) = \tfrac{1}{2}e_t$</td>
 <td>Reduced state of particle 1</td>
 </tr>
 <tr>

@@ -77,10 +77,10 @@
 <h2 id="spin-is-the-casimir-label">Spin Is the Casimir Label</h2>
 <p><strong>The label.</strong> Spin is the highest weight $s$ of the rotation action on a carrier, defined by the Casimir:</p>
 <p>$$
-\tilde S^2=\frac{m^{2}\,c^{2}\,s\,(s+1)\,e_{t}}{k_m^{2}}.
+\tilde S_{\Psi}^2=\frac{m^{2}\,c^{2}\,s\,(s+1)\,e_{t}}{k_m^{2}}.
 $$</p>
 <p>On an irreducible carrier the Casimir is a scalar, so $s$ is one number for the whole carrier. The number of states is $2s+1$. The spin is a real number, $s\in\tfrac12\mathbb{Z}_{\ge0}$; it is a scalar label, not a vector and not a complex number.</p>
-<p><strong>The direction is a state label.</strong> The component along an axis needs an axis: $\tilde S_3=\frac{m\,c\,s_{z}}{k_m}$ on the state $|s,s_z\rangle$. The axis is a measurement setting. At $s=0$ the axis labels nothing, so a direction cannot be the definition of spin.</p>
+<p><strong>The direction is a state label.</strong> The component along an axis needs an axis: $\tilde S_{\Psi,3}=\frac{m\,c\,s_{z}}{k_m}$ on the state $|s,s_z\rangle$. The axis is a measurement setting. At $s=0$ the axis labels nothing, so a direction cannot be the definition of spin.</p>
 <p><strong>The classical picture.</strong> A coherent state $|\vec u\rangle$ of maximal spin along $\vec u$ has</p>
 <p>$$
 \langle\vec S\rangle=\frac{m\,c\,s\,\vec u}{k_m},\qquad
@@ -128,23 +128,23 @@ $$</p>
 <p><strong>Why these two and not another pair.</strong> These are the two actions the product supplies without a choice: left multiplication and conjugation. The right action is the mirror of the left and gives the same list. Other actions require extra data, such as a form or a grading, and are not carried by the product alone.</p>
 <h2 id="the-scalar-spin-zero">The Scalar: Spin Zero</h2>
 <p><strong>The carrier.</strong> The centre $Z=\mathbb{C}e_t$ is fixed by conjugation: $u(z e_t)u^{-1}=z e_t$. The Casimir vanishes, the spin is $0$, and the carrier has one state.</p>
-<p><strong>The generator.</strong> $\tilde S_k e_t=0$ for all $k$. There is no axis to choose and no ladder: the representation is trivial.</p>
+<p><strong>The generator.</strong> $\tilde S_{\Psi,k} e_t=0$ for all $k$. There is no axis to choose and no ladder: the representation is trivial.</p>
 <p><strong>The physical interpretation.</strong> A scalar field. The carrier $Z=\mathbb{C}e_t$ is a complex line, two real dimensions; its real form $\mathbb{R}e_t$ is the real scalar of one degree of freedom. The Higgs is the observed spin-zero instance; its internal components are extra data, not a larger spin.</p>
 <p><strong>What the carrier does not carry.</strong> No direction, no polarization, no double-cover sign: a $2\pi$ rotation acts as the identity on $Z$.</p>
 <h2 id="the-spinor-spin-one-half">The Spinor: Spin One Half</h2>
 <p><strong>The carrier.</strong> The Peirce plane $S_+=\mathbb{B}\tilde\Pi_+$ has complex dimension two, with basis $(\tilde\Pi_+,\vec\Upsilon_{-+})$. The second plane $S_-$ is a second copy, module-isomorphic and Hilbert-orthogonal.</p>
-<p><strong>The operators.</strong> With $\tilde S_k=\frac{m\,c}{2\,k_m}i\vec e_k$,</p>
+<p><strong>The operators.</strong> With $\tilde S_{\Psi,k}=\frac{m\,c}{2\,k_m}i\vec e_k$,</p>
 <p>$$
-\tilde S^2=\tfrac34\frac{m^{2}\,c^{2}\,e_{t}}{k_m^{2}},\qquad
-\tilde S_3\tilde\Pi_+=\frac{m\,c}{2\,k_m}\tilde\Pi_+,\qquad
-\tilde S_3\vec\Upsilon_{-+}=-\frac{m\,c}{2\,k_m}\vec\Upsilon_{-+}.
+\tilde S_{\Psi}^2=\tfrac34\frac{m^{2}\,c^{2}\,e_{t}}{k_m^{2}},\qquad
+\tilde S_{\Psi,3}\tilde\Pi_+=\frac{m\,c}{2\,k_m}\tilde\Pi_+,\qquad
+\tilde S_{\Psi,3}\vec\Upsilon_{-+}=-\frac{m\,c}{2\,k_m}\vec\Upsilon_{-+}.
 $$</p>
 <p>The ladder operators are the nilpotent mixed units</p>
 <p>$$
 \vec\Upsilon_{+-}=\tfrac12(i\vec e_x-\vec e_y),\qquad
 \vec\Upsilon_{-+}=\tfrac12(i\vec e_x+\vec e_y),
 $$</p>
-<p>with $\tilde S_+=\frac{m\,c\,\vec \Upsilon_{+-}}{k_m}$, $\tilde S_-=\frac{m\,c\,\vec \Upsilon_{-+}}{k_m}$ and $\tilde S_\pm^2=0$. In <em>Spin and the Three Elementary Carriers</em> the same units are written $\vec\Upsilon_{+-}=\vec\Upsilon_x$ and $\vec\Upsilon_{-+}=\vec\Upsilon_y$.</p>
+<p>with $\tilde S_{\Psi,+}=\frac{m\,c\,\vec \Upsilon_{+-}}{k_m}$, $\tilde S_{\Psi,-}=\frac{m\,c\,\vec \Upsilon_{-+}}{k_m}$ and $\tilde S_{\Psi,\pm}^2=0$. In <em>Spin and the Three Elementary Carriers</em> the same units are written $\vec\Upsilon_{+-}=\vec\Upsilon_x$ and $\vec\Upsilon_{-+}=\vec\Upsilon_y$.</p>
 <p><strong>The copies at an axis.</strong> For a unit real pure quaternion $\vec u$, the idempotents</p>
 <p>$$
 \tilde\Pi_\pm(\vec u)=\tfrac12(e_t\pm i\vec u)
@@ -152,7 +152,7 @@ $$</p>
 <p>generate the minimal left ideals $S_\pm(\vec u)=\mathbb{B}\tilde\Pi_\pm(\vec u)$, each a copy of the carrier. The planes $S_\pm$ above are the case $\vec u=\vec e_z$.</p>
 <p><strong>The states in a copy.</strong> In the left action, $\tilde\Pi_+(\vec u)$ is the state of weight $+\frac{m\,c}{2\,k_m}$ in $S_+(\vec u)$,</p>
 <p>$$
-(\vec u\cdot\tilde S)\,\tilde\Pi_+(\vec u)=+\frac{m\,c}{2\,k_m}\,\tilde\Pi_+(\vec u),
+(\vec u\cdot\tilde S_{\Psi})\,\tilde\Pi_+(\vec u)=+\frac{m\,c}{2\,k_m}\,\tilde\Pi_+(\vec u),
 $$</p>
 <p>and $\tilde\Pi_-(\vec u)$ is the state of weight $-\frac{m\,c}{2\,k_m}$ in $S_-(\vec u)$. The state of weight $-\frac{m\,c}{2\,k_m}$ in $S_+$ is its nilpotent basis vector, not an idempotent.</p>
 <p><strong>The two outcomes.</strong> The two idempotents are the two outcomes of a measurement along $\vec u$: pure states of the algebra, not two vectors of one module. The axis is the measurement direction, and the two outcomes are its two signs.</p>
@@ -164,34 +164,34 @@ $$</p>
 \varepsilon_\pm=\mp\tfrac{1}{\sqrt2}(\vec e_x\pm i\vec e_y),\qquad\varepsilon_0=\vec e_z ,
 $$</p>
 <p>the signs being the Condon–Shortley phase, chosen so that the ladder coefficients are positive.</p>
-<p><strong>The operators.</strong> With $\tilde S_{\mathrm{adj},k}=\frac{m\,c}{2\,k_m}\mathrm{ad}_{i\vec e_k}$,</p>
+<p><strong>The operators.</strong> With $\tilde S_{\Psi,\mathrm{adj},k}=\frac{m\,c}{2\,k_m}\mathrm{ad}_{i\vec e_k}$,</p>
 <p>$$
-\tilde S_{\mathrm{adj}}\,2}=2\hbar^2\operatorname{id}_V,\qquad
-\tilde S_{\mathrm{adj},3}\varepsilon_\pm=\pm\hbar\,\varepsilon_\pm,\qquad
-\tilde S_{\mathrm{adj},3}\varepsilon_0=0 .
+\tilde S_{\Psi,\mathrm{adj}}\,2}=2\hbar^2\operatorname{id}_V,\qquad
+\tilde S_{\Psi,\mathrm{adj},3}\varepsilon_\pm=\pm\hbar\,\varepsilon_\pm,\qquad
+\tilde S_{\Psi,\mathrm{adj},3}\varepsilon_0=0 .
 $$</p>
-<p>The Casimir follows from $C=(\tilde S_{\mathrm{adj},3})^2+\tfrac12(\tilde S_{\mathrm{adj},+}\tilde S_{\mathrm{adj},-}+\tilde S_{\mathrm{adj},-}\tilde S_{\mathrm{adj},+})$ and the ladder actions</p>
+<p>The Casimir follows from $C=(\tilde S_{\Psi,\mathrm{adj},3})^2+\tfrac12(\tilde S_{\Psi,\mathrm{adj},+}\tilde S_{\Psi,\mathrm{adj},-}+\tilde S_{\Psi,\mathrm{adj},-}\tilde S_{\Psi,\mathrm{adj},+})$ and the ladder actions</p>
 <p>$$
-\tilde S_{\mathrm{adj},+}\varepsilon_-=\sqrt\frac{2\,m\,c\,\varepsilon_{0}}{k_m},\qquad
-\tilde S_{\mathrm{adj},+}\varepsilon_0=\sqrt\frac{2\,m\,c\,\varepsilon_{+}}{k_m},\qquad
-\tilde S_{\mathrm{adj},-}\varepsilon_+=\sqrt\frac{2\,m\,c\,\varepsilon_{0}}{k_m},\qquad
-\tilde S_{\mathrm{adj},-}\varepsilon_0=\sqrt\frac{2\,m\,c\,\varepsilon_{-}}{k_m},
+\tilde S_{\Psi,\mathrm{adj},+}\varepsilon_-=\sqrt\frac{2\,m\,c\,\varepsilon_{0}}{k_m},\qquad
+\tilde S_{\Psi,\mathrm{adj},+}\varepsilon_0=\sqrt\frac{2\,m\,c\,\varepsilon_{+}}{k_m},\qquad
+\tilde S_{\Psi,\mathrm{adj},-}\varepsilon_+=\sqrt\frac{2\,m\,c\,\varepsilon_{0}}{k_m},\qquad
+\tilde S_{\Psi,\mathrm{adj},-}\varepsilon_0=\sqrt\frac{2\,m\,c\,\varepsilon_{-}}{k_m},
 $$</p>
 <p>which give $C=\frac{2\,m^{2}\,c^{2}}{k_m^{2}}$ on all three states. The value is $\frac{m^{2}\,c^{2}\,s\,(s+1)}{k_m^{2}}$ at $s=1$. There are three states.</p>
 <p><strong>The physical interpretation.</strong> A vector field. In the rest frame of a massive vector the three weights are the three polarizations. For a massless one the longitudinal state is removed and two helicities remain. The photon, the $W^\pm$, the $Z$ and the gluons are the observed instances.</p>
 <p><strong>The massless count and the cone.</strong> The two helicities are the self-dual and the anti-self-dual halves of the field strength, $\vec E+i c\vec B$ and $\vec E-i c\vec B$. The removed state is the longitudinal direction $\vec u_k$, the unit vector along the momentum, which is the helicity-zero eigenvector. The algebra exhibits the third eigenvector; it does not remove it. The removal is a gauge condition, and the gauge-fixing principle is imported.</p>
-<p><strong>Masslessness, the cone and $N=0$.</strong> The mass shell is the level set $N=-m^2c^2$ of the norm $N=\langle\tilde P\rangle_\natural$ of the four-momentum. The massless case is $N=0$, the zero-divisor cone. On that cone the little group is the double cover of $E(2)$. The algebra marks the cone: among the level sets of $N$ on the material sector, $N=0$ is the only one that is a cone, the only one on which the four-momentum is not invertible, and the only one invariant under rescaling. It does not choose $m=0$: the norm is homogeneous, so the algebra carries no preferred mass. The choice $m=0$ is an input.</p>
+<p><strong>Masslessness, the cone and $N=0$.</strong> The mass shell is the level set $N=-m^2c^2$ of the norm $N=\langle\tilde P_{\Phi}\rangle_\natural$ of the four-momentum. The massless case is $N=0$, the zero-divisor cone. On that cone the little group is the double cover of $E(2)$. The algebra marks the cone: among the level sets of $N$ on the material sector, $N=0$ is the only one that is a cone, the only one on which the four-momentum is not invertible, and the only one invariant under rescaling. It does not choose $m=0$: the norm is homogeneous, so the algebra carries no preferred mass. The choice $m=0$ is an input.</p>
 <h2 id="why-there-is-no-fourth">Why There Is No Fourth</h2>
 <p><strong>The counting.</strong> An irreducible carrier of spin $s$ has $2s+1$ states. The irreducible subcarriers of $\mathbb{B}$ have dimensions $1$, $2$ and $3$. A fourth value would need an irreducible subcarrier of dimension $4$ or more.</p>
 <p><strong>No such carrier exists.</strong> Under the left action the invariant subspaces have dimensions $0$, $2$ and $4$; under conjugation they have dimensions $0$, $1$, $3$ and $4$. The only four-dimensional one is $\mathbb{B}$ itself, and it is reducible in both structures: $S_+\oplus S_-$ on the left, $Z\oplus V$ under conjugation. There is therefore no irreducible subcarrier above dimension $3$.</p>
 <p><strong>What lies beyond.</strong> Spin $\tfrac32$ would need dimension $4$, and spin $2$ would need dimension $5$. Neither is a subcarrier of $\mathbb{B}$. The graviton is spin $2$ and lives in the traceless symmetric square of $V$, the $\mathcal{V}_4$ summand of $V\odot V$, which is not a subspace of $\mathbb{B}$. The higher-spin hadrons are composites, not elementary states.</p>
 <p><strong>What the match says.</strong> The three values are the spins of all observed elementary particles. The match is a match of labels. The algebra does not say which particle carries which label, and it does not derive the particle content of the Standard Model.</p>
 <h2 id="mass-the-little-group-and-helicity">Mass, the Little Group and Helicity</h2>
-<p><strong>The little group.</strong> For a particle of four-momentum $\tilde P$, the little group is the stabiliser</p>
+<p><strong>The little group.</strong> For a particle of four-momentum $\tilde P_{\Phi}$, the little group is the stabiliser</p>
 <p>$$
-G_{\tilde P}=\{\tilde U\in SL(2,\mathbb{C}):\tilde U\tilde P\tilde U^{*}=\tilde P\}.
+G_{\tilde P}_{\Phi}=\{\tilde U\in SL(2,\mathbb{C}):\tilde U\tilde P_{\Phi}\tilde U^{*}=\tilde P_{\Phi}\}.
 $$</p>
-<p>For a massive particle $\tilde P$ is timelike and $G_{\tilde P}\cong SU(2)$; its irreducible representations are the spin representations, labelled by $s$, and the rest-frame carrier has $2s+1$ states. For a massless particle $\tilde P$ is null and $G_{\tilde P}$ is the double cover of $E(2)$; each finite-dimensional irreducible unitary representation carries a single helicity $h$, and a massless particle of spin $s$ uses the two representations $h=\pm s$ (at $s=0$, only $h=0$). The reduction from $2s+1$ to two is the gauge condition, not the little group.</p>
+<p>For a massive particle $\tilde P_{\Phi}$ is timelike and $G_{\tilde P}_{\Phi}\cong SU(2)$; its irreducible representations are the spin representations, labelled by $s$, and the rest-frame carrier has $2s+1$ states. For a massless particle $\tilde P_{\Phi}$ is null and $G_{\tilde P}_{\Phi}$ is the double cover of $E(2)$; each finite-dimensional irreducible unitary representation carries a single helicity $h$, and a massless particle of spin $s$ uses the two representations $h=\pm s$ (at $s=0$, only $h=0$). The reduction from $2s+1$ to two is the gauge condition, not the little group.</p>
 <p>The passage from $SU(2)$ to the double cover of $E(2)$ is the reason the massless count is two and not three. It is a property of the momentum, not of the carrier.</p>
 <p><strong>The covariant label.</strong> The Pauli–Lubanski vector is</p>
 <p>$$
@@ -260,16 +260,16 @@ $$</p>
 <td>The nilpotent mixed units</td>
 </tr>
 <tr>
-<td>$\tilde S_k=\frac{m\,c}{2\,k_m}i\vec e_k$</td>
+<td>$\tilde S_{\Psi,k}=\frac{m\,c}{2\,k_m}i\vec e_k$</td>
 <td>The spin-half operators</td>
 </tr>
 <tr>
-<td>$\tilde S_{\mathrm{adj},k}=\frac{m\,c}{2\,k_m}\mathrm{ad}_{i\vec e_k}$</td>
+<td>$\tilde S_{\Psi,\mathrm{adj},k}=\frac{m\,c}{2\,k_m}\mathrm{ad}_{i\vec e_k}$</td>
 <td>The spin-one generators</td>
 </tr>
 <tr>
-<td>$C=\tilde S_{\mathrm{adj}}\,2}$</td>
-<td>The Casimir, $\sum_k(\tilde S_{\mathrm{adj},k})^2$</td>
+<td>$C=\tilde S_{\Psi,\mathrm{adj}}\,2}$</td>
+<td>The Casimir, $\sum_k(\tilde S_{\Psi,\mathrm{adj},k})^2$</td>
 </tr>
 <tr>
 <td>$s$</td>
@@ -280,7 +280,7 @@ $$</p>
 <td>A unit real pure quaternion, an axis</td>
 </tr>
 <tr>
-<td>$N=\langle\tilde P\rangle_\natural$</td>
+<td>$N=\langle\tilde P_{\Phi}\rangle_\natural$</td>
 <td>The biquaternion norm of the four-momentum; $N=-m^2c^2$</td>
 </tr>
 <tr>
