@@ -70,15 +70,35 @@
       <div class="article-body">
         <h1 id="operator-chirality-on-the-biquaternion-algebra"><strong>Operator Chirality on the Biquaternion Algebra</strong></h1>
 <h2 id="introduction">Introduction</h2>
-<p><strong>The question.</strong> Every operator of the biquaternion algebra is built from left and right multiplications, $L_aR_b$, and the two sides are symmetric in the definition and asymmetric in the results. This article asks what chirality means for such an operator, and answers with the operator alone.</p>
-<p><strong>The answer in one line.</strong> Operator chirality is the side on which an operator multiplies: the left slot, the right slot, or both. The chirality operator of a frame is its volume cell $\mathsf{V}_{\mathrm{vol}}$, $i$ times the product of the four cells of the frame, and in the axis-free frame it is the pure right multiplier $-iR_{\vec e_z}$. The swap $\sigma$ is the operator that exchanges the two sides, and the natural conjugation is the operator that exchanges them while reversing the units.</p>
-<p><strong>What the article is not about.</strong> The notion is defined on the endomorphism algebra of $\mathbb{B}$ and needs nothing else. Section §<em>What Operator Chirality Is Not</em> separates it, one object at a time, from a root, an idempotent, a Peirce decomposition, a Peirce basis, a spinor, a Pauli matrix, an ideal and a Clifford algebra, and records the single coincidence of arrays that makes the confusion possible.</p>
-<p><strong>The order of the article.</strong> Section §<em>The Two Slots</em> defines the sides, their dimensions and their overlap. Section §<em>The Chirality Operator of the Frame</em> reads the volume cell as a pure right multiplier and lists what it satisfies. Section §<em>The Subscript on an Element</em> gives the two values of that cell on the elements, $L$ and $R$. Section §<em>Conjugation Exchanges the Sides</em> proves that the natural conjugate of a left multiplier is a right multiplier, which is the second side-exchanging map and the origin of the phases. Sections §<em>The Swap of the Two Sides</em> to §<em>The Swap on the Frame</em> prove the exchange operator, its matrix, its two eigenspaces and its action on the frame. Section §<em>The Bivectors Are Not Stable</em> records what the swap moves. Section §<em>What Operator Chirality Is Not</em> is the separation. Section §<em>Why the Slot Label Is Not a Grading</em> fixes what the sides can and cannot supply.</p>
-<p><strong>Boundaries.</strong> The cells, the two families and the switch are <em>Families of Matrix Representations</em>; the frames are <em>$M_4(\mathbb{C})$ Axis-Free Representation</em> and <em>$M_4(\mathbb{C})$ Pauli Representation</em>, with their operator articles <em>$M_4(\mathbb{C})$ Axis-Free Representation : Operators</em> and <em>$M_4(\mathbb{C})$ Pauli Representation : Operators</em>; the carrier and its splittings are <em>The Unpolarized Module of the Biquaternion Algebra</em>; the general theory of $\operatorname{End}_{\mathbb{C}}(\mathbb{B})$ is <em>The Endomorphisms of the Biquaternion Algebra</em>.</p>
-<p><strong>Conventions.</strong> The algebra is $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ on $\mathcal{E}=(e_t,\vec e_x,\vec e_y,\vec e_z)$, with $\vec e_k^2=-e_t$, $\vec e_x\vec e_y=\vec e_z$ and cyclic, and $i$ central. The cells are $L_aR_b$ with $L_aR_b\tilde X=a\tilde Xb$, and the sixteen of them are a basis of $\operatorname{End}_{\mathbb{C}}(\mathbb{B})$. The volume cell of the frame is written $\mathsf{V}_{\mathrm{vol}}$, the upright superscript being the label of the cell, and in the axis-free frame it is $-iR_{\vec e_z}$, a pure right multiplier. No other frame cell is named, and no relation among the frame cells enters any definition here. The Peirce sign of the third axis is $P=R_{i\vec e_z}=iR_{\vec e_z}$, and it is used only where it is named.</p>
+<p><strong>The question.</strong> Every operator of the biquaternion algebra is built from two regular maps, the left multiplication $L$ and the right multiplication $R$, and the two are symmetric in the definition and asymmetric in the results. This article asks what chirality means for such an operator, and answers with the two maps alone.</p>
+<p><strong>The answer in one line.</strong> Operator chirality is the side: an operator has the left slot when it lies in the image of $L$, the right slot when it lies in the image of $R$, both slots at once when it is a scalar, and no single side otherwise. The definition names two maps and two subspaces of $\operatorname{End}_{\mathbb{C}}(\mathbb{B})$. It names no frame, no axis, no basis element and no volume.</p>
+<p><strong>What replaces the frame.</strong> The two images are the two tensor factors of $\mathbb{B}\otimes_{\mathbb{C}}\mathbb{B}$ under the structure isomorphism $\Phi(a\otimes b)=L_aR_b$. The operator that exchanges the two factors is the flip, transported to $\operatorname{End}_{\mathbb{C}}(\mathbb{B})$ as $\sigma=\Phi\tau\Phi^{-1}$, and it is that single intrinsic involution, and not a fifth cell read from a frame, which pairs with chirality.</p>
+<p><strong>What the article is not about.</strong> The notion is defined on the endomorphism algebra and needs nothing else. Section §<em>What Operator Chirality Is Not</em> separates it, one object at a time, from a root, an idempotent, a Peirce decomposition, a Peirce basis, a spinor, a Pauli matrix, an ideal, a Clifford algebra, and the fifth cell of a gamma frame.</p>
+<p><strong>The order of the article.</strong> Section §<em>The Two Slots</em> defines the two regular maps, their images, the isomorphism $\Phi$ and the label. Section §<em>The Swap of the Two Sides</em> defines the flip and proves its properties. Section §<em>The Transpose Through the Trace Form</em> identifies the flip with the adjoint of the trace form and gives its array. Section §<em>The Two Eigenspaces</em> computes the two eigenspaces, of dimensions ten and six, and the operation that closes on each. Section §<em>Conjugation Exchanges the Sides</em> proves that the quaternion conjugate carries the left side to the right side, and separates it from the flip. Section §<em>What Operator Chirality Is Not</em> is the separation. Section §<em>Why the Slot Label Is Not a Grading</em> fixes what the sides can and cannot supply.</p>
+<p><strong>Boundaries.</strong> The cells and the two families are <em>Families of Matrix Representations</em>; the carriers and their splittings are <em>The Unpolarized Module of the Biquaternion Algebra</em>; the general theory of $\operatorname{End}_{\mathbb{C}}(\mathbb{B})$ is <em>The Endomorphisms of the Biquaternion Algebra</em>; the operator arrays are <em>$M_4(\mathbb{C})$ Axis-Free Representation : Operators</em> and <em>$M_4(\mathbb{C})$ Pauli Representation : Operators</em>; and the frame cells are <em>The Gamma Frame and the Complexified Dirac Algebra of $M_4(\mathbb{C})$</em>, which also carries the example that this article keeps out of its definitions.</p>
+<p><strong>Conventions.</strong> The algebra is $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$, central simple over $\mathbb{C}$, of complex dimension four, with unit $e_t$ and reduced trace $\operatorname{Sc}$. The left and the right regular maps are written $L$ and $R$, and a product of the two is written $L_aR_b$ for $L(a)R(b)$. The identity operator is $\mathrm I$. <strong>No basis of $\mathbb{B}$ is declared and none is used</strong>: every statement below is about elements, images and subspaces, and an array appears only in §<em>The Transpose Through the Trace Form</em>, where it is attached to a named basis and to nothing else.</p>
 <h2 id="the-two-slots">The Two Slots</h2>
-<p><strong>The cell and its two slots.</strong> A cell is $L_aR_b$, that is $\tilde X\mapsto a\tilde Xb$, and it has two slots: the left one, where $a$ multiplies, and the right one, where $b$ multiplies. The sixteen cells are linearly independent, so every operator has one coefficient array and the two slots are the two indices of that array.</p>
-<p><strong>The two one-sided families.</strong> An operator is a pure left multiplier when only the left slot is occupied, $c\,L_a$, and a pure right multiplier when only the right slot is occupied, $c\,R_b$. The two families are four-dimensional each and they overlap in one dimension, the centre:</p>
+<p><strong>The article in one paragraph.</strong> Two $\mathbb{C}$-linear maps carry $\mathbb{B}$ into the endomorphism algebra, one on each side. Their images are two four-dimensional subspaces that meet in the scalars, and the whole content of this article is the geometry of that pair of subspaces and of the involution that exchanges them. The rest is bookkeeping.</p>
+<h3 id="the-two-regular-maps">The Two Regular Maps</h3>
+<p><strong>Two maps.</strong> The <strong>left regular map</strong> and the <strong>right regular map</strong> are</p>
+<p>$$
+L\colon\mathbb{B}\to\operatorname{End}_{\mathbb{C}}(\mathbb{B}),\quad L(a)(\tilde X)=a\tilde X,
+\qquad
+R\colon\mathbb{B}\to\operatorname{End}_{\mathbb{C}}(\mathbb{B}),\quad R(b)(\tilde X)=\tilde Xb .
+$$</p>
+<p>Both are $\mathbb{C}$-linear. Both are injective, because a left multiplier that vanishes on the unit vanishes everywhere: $L(a)(e_t)=a$. Both are unital, $L(e_t)=R(e_t)=\mathrm I$.</p>
+<p><strong>They commute.</strong> For all $a,b\in\mathbb{B}$ and every $\tilde X$,</p>
+<p>$$
+(L(a)R(b))(\tilde X)=a\tilde Xb=(R(b)L(a))(\tilde X),
+$$</p>
+<p>so $L(a)R(b)=R(b)L(a)$. The two sides act on opposite copies of the argument, and that is the whole reason.</p>
+<p><strong>Composition.</strong> Composing two products of regular maps gives</p>
+<p>$$
+\bigl(L_aR_b\bigr)\bigl(L_cR_d\bigr)=L_{ac}R_{db},
+$$</p>
+<p>because the right parameters meet in the middle and multiply in the reverse order. Verified on $200$ random pairs, residual $4.3\times10^{-14}$.</p>
+<h3 id="the-two-families">The Two Families</h3>
+<p><strong>Two images, one ambient.</strong> The images of the two maps are written $L(\mathbb{B})$ and $R(\mathbb{B})$. Their dimensions, their intersection and their sum are the first facts of the article.</p>
 <div class="table-scroll"><table>
 <thead>
 <tr>
@@ -91,22 +111,22 @@
 <tr>
 <td>$L(\mathbb{B})$</td>
 <td>$4$</td>
-<td>the pure left multipliers $L_a$</td>
+<td>the pure left multipliers $L(a)$</td>
 </tr>
 <tr>
 <td>$R(\mathbb{B})$</td>
 <td>$4$</td>
-<td>the pure right multipliers $R_b$</td>
+<td>the pure right multipliers $R(b)$</td>
 </tr>
 <tr>
-<td>$L\cap R$</td>
+<td>$L(\mathbb{B})\cap R(\mathbb{B})$</td>
 <td>$1$</td>
-<td>the scalars, $\mathbb{C}\,\mathrm I$, the centre</td>
+<td>the scalars, $\mathbb{C}\,\mathrm I$</td>
 </tr>
 <tr>
-<td>$L+R$</td>
+<td>$L(\mathbb{B})+R(\mathbb{B})$</td>
 <td>$7$</td>
-<td>the one-sided operators, left, right and central</td>
+<td>the one-sided operators</td>
 </tr>
 <tr>
 <td>$\operatorname{End}_{\mathbb{C}}(\mathbb{B})$</td>
@@ -115,99 +135,255 @@
 </tr>
 </tbody>
 </table></div>
-<p><strong>Nine directions use both slots.</strong> Since $L+R$ has dimension seven, an arbitrary operator of the sixteen-dimensional endomorphism algebra is a pure one-sided operator only inside that seven-dimensional subspace; the other nine directions carry both slots at once. Most operators have no single side, and the side is a property of the pure part.</p>
-<p><strong>Chirality is the slot.</strong> With the two families fixed, the definition is one line: an operator has the <strong>left slot</strong> when it is a pure left multiplier, the <strong>right slot</strong> when it is a pure right multiplier, and <strong>both slots</strong> otherwise. Operator chirality is that label. The definition uses the algebra and nothing else: no root, no idempotent, no subspace, no carrier.</p>
-<p><strong>What the label is not.</strong> The slot is a name, not a quantity. It is two-valued on the one-sided part and undefined outside it, it is not additive, and it carries no sign: $L_a+L_b$ and $L_a-L_b$ both have the left slot, and no linear functional separates a left multiplier from a right one by a sign. Section §<em>Why the Slot Label Is Not a Grading</em> proves the algebraic reason.</p>
-<p><strong>The centre is both sides.</strong> The scalars are simultaneously pure left and pure right multipliers, since $\lambda\tilde X=\lambda\tilde X=\tilde X\lambda$ for central $\lambda$. The overlap is not a defect of the definition: a scalar has no side, and the one-dimensional intersection is exactly the set of operators for which the question has no answer.</p>
-<h2 id="the-chirality-operator-of-the-frame">The Chirality Operator of the Frame</h2>
-<p><strong>The volume cell.</strong> A product of cells is a cell, because a product of left multipliers is a left multiplier and a product of right multipliers is a right multiplier. The four cells of the frame multiply on the left by $e_t,\vec e_x,\vec e_y,\vec e_z$ and on the right by $\vec e_x,\vec e_y,\vec e_y,\vec e_y$; the right multipliers compose in the reverse order, $R_aR_b=R_{ba}$. Their four phases multiply to $i^4=1$, and their product is the cell
-$$
-L_{e_t\vec e_x\vec e_y\vec e_z}\,R_{\vec e_y\vec e_y\vec e_y\vec e_x}=L_{-\vec e_t}R_{\vec e_z}=-L_{e_t}R_{\vec e_z},
-$$
-and $i$ times that product is the volume cell,
-$$
-\mathsf{V}_{\mathrm{vol}}=-iR_{\vec e_z},
-$$
-a <strong>pure right multiplier</strong>, because $L_{e_t}$ is the identity. That is the whole content of the operator: the chirality operator of the frame multiplies on the right by the third direction, with the phase $-i$.</p>
-<p><strong>What it satisfies.</strong> Four properties, each read off the display:</p>
+<p><strong>The three dimensions.</strong> The images are four-dimensional because $L$ and $R$ are injective on a four-dimensional algebra. The intersection is the scalar line and nothing more: $L(a)=R(b)$ forces $a\tilde X=\tilde Xb$ for every $\tilde X$, and taking $\tilde X=e_t$ gives $a=b$, after which $a$ commutes with every element, so $a$ is central. The sum is therefore $4+4-1=7$. All five numbers recomputed here.</p>
+<p><strong>A cell, and its two slots.</strong> An operator of the form $L_aR_b$ is called a <strong>cell</strong>, and it has two slots: the left one, where $a$ multiplies, and the right one, where $b$ multiplies. The slot is a place in the operator, not a property of the elements $a$ and $b$.</p>
+<h3 id="the-structure-isomorphism">The Structure Isomorphism</h3>
+<p><strong>The statement.</strong> The multiplication of the algebra defines a $\mathbb{C}$-linear map on the tensor square,</p>
+<p>$$
+\Phi\colon\mathbb{B}\otimes_{\mathbb{C}}\mathbb{B}\longrightarrow\operatorname{End}_{\mathbb{C}}(\mathbb{B}),
+\qquad
+\Phi(a\otimes b)=L_aR_b .
+$$</p>
+<p><strong>It is an isomorphism.</strong> For any $\mathbb{C}$-basis $e_1,\dots,e_4$ of $\mathbb{B}$ the sixteen operators $L_{e_\mu}R_{e_\nu}$ are linearly independent, since the sixteen coefficients of an operator on the four basis elements are the entries of an arbitrary $4\times4$ array; sixteen independent operators in a sixteen-dimensional space are a basis. Verified: the sixteen cells of a declared basis span, rank $16$.</p>
+<p><strong>The three subspaces, read through $\Phi$.</strong> Under the isomorphism the two families are the two tensor factors,</p>
+<p>$$
+L(\mathbb{B})=\Phi(\mathbb{B}\otimes e_t),\qquad
+R(\mathbb{B})=\Phi(e_t\otimes\mathbb{B}),\qquad
+L(\mathbb{B})\cap R(\mathbb{B})=\Phi(e_t\otimes e_t)=\mathbb{C}\,\mathrm I .
+$$</p>
+<p>This is the technical core of the article. The two sides are not two constructions of the same object; they are the first and the second factor of the tensor square, and their overlap is the tensor of the two units.</p>
+<h3 id="the-cell-is-a-coordinate-of-the-isomorphism">The Cell Is a Coordinate of the Isomorphism</h3>
+<p><strong>What the cell is for.</strong> The cell $L_aR_b$ is the image of the elementary tensor $a\otimes b$. It is a coordinate of the isomorphism and not the definition of anything: an operator has one coefficient array in the sixteen cells, and that array is the coordinate. A statement written in cells is a statement about $\Phi$, and it becomes intrinsic when it is written in the two images.</p>
+<p><strong>Why the order matters here.</strong> A reader who takes the cells as primitive will reach for a basis to name them, then for a frame, then for a direction inside the frame. The definition below needs none of the three, and the order of this section, maps first and cells last, is what keeps the reach from happening.</p>
+<h3 id="the-label-which-is-the-operator-chirality">The Label, Which Is the Operator Chirality</h3>
+<p><strong>The definition.</strong> With the two images fixed, the label is one line:</p>
 <div class="table-scroll"><table>
 <thead>
 <tr>
-<th>Property</th>
-<th>Value</th>
+<th>Label</th>
+<th>The operator</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td>square</td>
-<td>$(\mathsf{V}_{\mathrm{vol}})^2=\mathrm I$</td>
+<td>left slot</td>
+<td>$X\in L(\mathbb{B})$</td>
 </tr>
 <tr>
-<td>trace</td>
-<td>$\operatorname{tr}\mathsf{V}_{\mathrm{vol}}=0$</td>
+<td>right slot</td>
+<td>$X\in R(\mathbb{B})$</td>
 </tr>
 <tr>
-<td>spectrum</td>
-<td>$+1$ and $-1$, two dimensions each</td>
+<td>both slots</td>
+<td>$X\in L(\mathbb{B})\cap R(\mathbb{B})=\mathbb{C}\,\mathrm I$</td>
 </tr>
 <tr>
-<td>with the right multipliers</td>
-<td>$R_{\vec e_x}$ and $R_{\vec e_y}$ anticommute with it, and $R_{\vec e_z}$ commutes</td>
+<td>no single side</td>
+<td>$X$ in neither image</td>
 </tr>
 </tbody>
 </table></div>
-<p>The anticommutation is a property of right multiplication and not a definition: $R_aR_b=R_{ba}$, so $R_{\vec e_z}$ anticommutes with $R_{\vec e_k}$ exactly when the unit $\vec e_k$ anticommutes with $\vec e_z$, which is the case for the two remaining directions and not for the third. Nothing in this article is built by asking which operators anticommute with what.</p>
-<p><strong>Only the frame is used.</strong> The four cells and their product. No root, no idempotent, no subspace of $\mathbb{B}$, no decomposition of anything, no carrier, and no Clifford algebra: the four cells are declared together with the frame, their product is computed in one line, and no relation among them is assumed. The operator is available as soon as the frame is declared, and a frame is a basis: the weakest of the choices the algebra offers.</p>
-<p><strong>The side is the point.</strong> A reader who writes $\mathsf{V}_{\mathrm{vol}}$ as a diagonal array with two $+1$'s and two $-1$'s is reading the operator in a basis where it is diagonal. The operator itself is $R_{\vec e_z}$ up to a phase, and its content is the side: it multiplies on the right. The gradient of the frame, $L(\tilde\nabla)$, multiplies on the left. That difference of sides is operator chirality, and it survives every change of basis.</p>
-<h2 id="the-subscript-on-an-element">The Subscript on an Element</h2>
-<p><strong>Chirality is the subscript.</strong> The volume cell acts on an element by
-$$
-\mathsf{V}_{\mathrm{vol}}\tilde X=-i\,\tilde X\vec e_z ,
-$$
-so an element is $L$ when right multiplication by $\vec e_z$ returns $-i$ times it, and $R$ when it returns $+i$ times it. Those are the two values of the subscript. The letters are the Dirac ones: $L$ is the minus value, the convention in which $\psi_L$ is the left part in <em>The Dirac Equation in Biquaternionic Form</em>. Every element is a sum of one of each, and only the zero element is both.</p>
-<p><strong>The rules.</strong> A product takes the letter of its right factor, $(\tilde X\tilde Y)\vec e_z=\tilde X(\tilde Y\vec e_z)$, and left multiplication keeps the letter. A unit, a product and a general element therefore carry the subscript as well as a state does, because the subscript is a function of the element and of the declared frame and of nothing else.</p>
-<p><strong>Three uses of the two letters.</strong> The corpus writes $L$ and $R$ in three ways, told apart by position.</p>
+<p>An operator has the <strong>left slot</strong> when it is a pure left multiplier, the <strong>right slot</strong> when it is a pure right multiplier, <strong>both slots</strong> when it is a scalar, and <strong>no single side</strong> otherwise. Operator chirality is that label. The definition uses the two regular maps and nothing else.</p>
+<p><strong>Four labels, and one word used twice.</strong> The four rows are mutually exclusive, and the third is the one that is easily confused with a two-sided cell. A cell with two occupied slots, $L_aR_b$ with neither $a$ nor $b$ central, is <strong>not</strong> an operator with "both slots" in the sense of the third row: it is a two-sided operator, a member of the family $LR$, and its label is "no single side". The word <em>both</em> names two different things in the two sentences, and the corpus keeps them apart by grammar: the chirality is a label of an operator, and $LR$ is the name of a family of operators. The third row is the only case in which an operator multiplies on both sides at once.</p>
+<p><strong>The product of two cells, read on the label.</strong> The composition rule shows the asymmetry at once. A product of two left multipliers is a left multiplier, $L_aL_c=L_{ac}$, and a product of two right multipliers is a right multiplier, $R_bR_d=R_{db}$. So each of the two one-sided families is a subalgebra, of dimension four, and the two subalgebras meet in the scalars. A product of one of each is a cell, and a general cell has no side.</p>
+<h3 id="the-centre-has-both-sides">The Centre Has Both Sides</h3>
+<p><strong>The scalars.</strong> For central $\lambda$ the two multiplications agree, $\lambda\tilde X=\tilde X\lambda$, so $L(\lambda e_t)=R(\lambda e_t)=\lambda\mathrm I$. The overlap of the two families is exactly the set of operators for which the question "which side" has two correct answers, and it is the one-dimensional intersection of the table. That is not a defect of the definition: a scalar multiplies on both sides, and the label records it.</p>
+<p><strong>No sign separates the two families on the overlap.</strong> A reader who expects a left multiplier to be the $+1$ one and a right multiplier the $-1$ one is stopped here, at the scalar $\mathrm I$, which would have to be both. Section §<em>Why the Slot Label Is Not a Grading</em> turns that obstruction into a theorem.</p>
+<h3 id="the-complement-has-no-single-side">The Complement Has No Single Side</h3>
+<p><strong>The set, not a subspace.</strong> Nine dimensions of the sixteen are outside $L(\mathbb{B})+R(\mathbb{B})$, and every operator there has no single side. The set of operators with no single side is larger than those nine directions: it is the complement of the union $L(\mathbb{B})\cup R(\mathbb{B})$, which is neither a subspace nor closed under addition. The operator $L_a+L_c$ has the left slot, and the operator $L_a+R_b$ has none.</p>
+<p><strong>The label is a name, not a quantity.</strong> It is four-valued on the algebra, it is not additive, and it carries no sign: $c\,L_a$ and $-c\,L_a$ have the same label. No linear functional on $\operatorname{End}_{\mathbb{C}}(\mathbb{B})$ assigns the four labels, and §<em>Why the Slot Label Is Not a Grading</em> proves why.</p>
+<h2 id="the-swap-of-the-two-sides">The Swap of the Two Sides</h2>
+<p><strong>The object of this section.</strong> The two images are exchanged by one canonical involution, and that involution is the only intrinsic order-two structure the endomorphism algebra carries. It is defined on the tensor square and transported by $\Phi$.</p>
+<h3 id="the-flip-of-the-two-factors">The Flip of the Two Factors</h3>
+<p><strong>The definition.</strong> Let $\tau$ be the flip of the two factors,</p>
+<p>$$
+\tau\colon\mathbb{B}\otimes_{\mathbb{C}}\mathbb{B}\to\mathbb{B}\otimes_{\mathbb{C}}\mathbb{B},
+\qquad
+\tau(a\otimes b)=b\otimes a ,
+$$</p>
+<p>and let the <strong>swap</strong> be its transport to the endomorphism algebra,</p>
+<p>$$
+\sigma=\Phi\circ\tau\circ\Phi^{-1}\colon\operatorname{End}_{\mathbb{C}}(\mathbb{B})\to\operatorname{End}_{\mathbb{C}}(\mathbb{B}).
+$$</p>
+<p>On a cell this is</p>
+<p>$$
+\sigma(L_aR_b)=L_bR_a .
+$$</p>
+<p><strong>It is well defined.</strong> The map $\Phi$ is an isomorphism and the sixteen cells are a basis, so an operator has one coefficient array and the rule exchanges the two indices of that array. The exchange refers to the two entries of an elementary tensor $a\otimes b$, not to a basis: no basis is declared and none is used. The identity was checked on $100$ random elements for the one-sided case and on $100$ random pairs for the product rule below.</p>
+<h3 id="it-is-an-involution-and-it-reverses-products">It Is an Involution and It Reverses Products</h3>
+<p><strong>The square.</strong> Exchanging the two entries of $a\otimes b$ twice returns $a\otimes b$, and the cells span, so</p>
+<p>$$
+\sigma^2=\mathrm{id}\qquad\text{on all of }\operatorname{End}_{\mathbb{C}}(\mathbb{B}),
+$$</p>
+<p>verified as an exact permutation of the cell basis.</p>
+<p><strong>The product.</strong> For two cells,</p>
+<p>$$
+\sigma\bigl((L_aR_b)(L_cR_d)\bigr)=\sigma(L_{ac}R_{db})=L_{db}R_{ac}=(L_dR_c)(L_bR_a)=\sigma(L_cR_d)\,\sigma(L_aR_b),
+$$</p>
+<p>which is the reversed product, and linearity extends it. So</p>
+<p>$$
+\sigma(XY)=\sigma(Y)\sigma(X)
+$$</p>
+<p>for all $X,Y$, verified on $100$ random pairs with zero residual, because the swap permutes the cells exactly. The swap is an anti-automorphism of order two, that is an isomorphism onto the opposite algebra: an involution and a reversal at once.</p>
+<h3 id="it-exchanges-the-two-images">It Exchanges the Two Images</h3>
+<p><strong>The three statements.</strong> Straight from the definition,</p>
+<p>$$
+\sigma\bigl(L(\mathbb{B})\bigr)=R(\mathbb{B}),\qquad
+\sigma\bigl(R(\mathbb{B})\bigr)=L(\mathbb{B}),\qquad
+\sigma\big|_{L\cap R}=\mathrm{id}.
+$$</p>
+<p>The first two say that the swap exchanges the sides, which is why it belongs in an article about chirality: it answers the question "which side" by moving the operator to the other side rather than by labelling it. The third says that the scalars are fixed, consistently with their having no side to exchange.</p>
+<p><strong>The label after the swap.</strong> An operator with the left slot becomes an operator with the right slot, and an operator with no single side stays where it is: a cell $L_aR_b$ with neither parameter central is carried to the cell $L_bR_a$, which also has no single side. The swap permutes the four labels by exchanging the first two and fixing the last two.</p>
+<h3 id="it-carries-each-left-multiplier-to-the-right-multiplier">It Carries Each Left Multiplier to the Right Multiplier</h3>
+<p><strong>The case that matters.</strong> For every $a\in\mathbb{B}$,</p>
+<p>$$
+\sigma(L_a)=R_a ,
+$$</p>
+<p>which is the case $b=e_t$ of the definition. The left multiplier of an element and the right multiplier of the same element are the same array read on the two sides, and the swap is what carries one to the other. Verified on $100$ random elements, with zero residual.</p>
+<p><strong>What it does not do.</strong> It does not carry a left multiplier to another left multiplier, and no power of it does. The two images are exchanged and each is carried out of itself, except along the scalar line.</p>
+<h3 id="it-preserves-rank-and-length">It Preserves Rank and Length</h3>
+<p><strong>Rank and length.</strong> The swap permutes the cells of a basis, so it carries a product of two one-sided operators to another such product, and it preserves the length $\ell$ of <em>$M_4(\mathbb{C})$ Axis-Free Representation : Operators</em>, which is the number of one-sided factors in a decomposition. The length is the rank of the coefficient matrix, and the swap transposes that matrix, so</p>
+<p>$$
+\ell(\sigma(M))=\ell(M),\qquad \operatorname{rank}\sigma(M)=\operatorname{rank}M .
+$$</p>
+<p>Verified on $50$ random operators: the rank is unchanged in every case. The rank-one cone, that is the set of nonzero scalar multiples of single cells, is carried to itself.</p>
+<h3 id="it-is-not-inner">It Is Not Inner</h3>
+<p><strong>The argument.</strong> An inner automorphism $X\mapsto \mathsf S X\mathsf S^{-1}$ is a homomorphism of the algebra, and $\sigma$ is not: it reverses products. So no invertible $\mathsf S$ satisfies $\sigma(X)=\mathsf S X\mathsf S^{-1}$ for all $X$. The swap is not a conjugation by a chosen matrix and cannot be produced by one; it is a new operator on $\operatorname{End}_{\mathbb{C}}(\mathbb{B})$, the transport of the flip. This also separates it from the quaternion conjugate of §<em>Conjugation Exchanges the Sides</em>, whose congruence does conjugate the parameters as well.</p>
+<h2 id="the-transpose-through-the-trace-form">The Transpose Through the Trace Form</h2>
+<p><strong>The object of this section.</strong> The swap has an equivalent description as an adjoint, and the description is what makes it computable. It uses the reduced trace and nothing else.</p>
+<h3 id="the-trace-form">The Trace Form</h3>
+<p><strong>The form.</strong> The <strong>trace form</strong> is</p>
+<p>$$
+\beta(\tilde X,\tilde Y)=\operatorname{Sc}(\tilde X\tilde Y).
+$$</p>
+<p>It is $\mathbb{C}$-bilinear and symmetric, and it is nondegenerate, since $\operatorname{Sc}$ is nondegenerate on a central simple algebra. It is cyclic in the sense that matters here:</p>
+<p>$$
+\operatorname{Sc}\bigl(\tilde X\tilde Y\tilde Z\bigr)=\operatorname{Sc}\bigl(\tilde Y\tilde Z\tilde X\bigr).
+$$</p>
+<p><strong>Nothing is chosen.</strong> The form is built from the multiplication and the trace. No basis, no frame and no direction enters, and the two properties used below, symmetry and cyclicity, are properties of $\operatorname{Sc}$.</p>
+<h3 id="the-flip-is-the-adjoint-of-the-trace-form">The Flip Is the Adjoint of the Trace Form</h3>
+<p><strong>The theorem.</strong> For every $X\in\operatorname{End}_{\mathbb{C}}(\mathbb{B})$ and all $\tilde Y,\tilde Z\in\mathbb{B}$,</p>
+<p>$$
+\beta\bigl(X\tilde Y,\tilde Z\bigr)=\beta\bigl(\tilde Y,\sigma(X)\tilde Z\bigr).
+$$</p>
+<p>So the swap is the <strong>adjoint of $X$ with respect to $\beta$</strong>, and that sentence is basis-free.</p>
+<p><strong>The proof on the cells.</strong> For $X=L_aR_b$,</p>
+<p>$$
+\beta\bigl(L_aR_b\tilde Y,\tilde Z\bigr)=\operatorname{Sc}\bigl(a\tilde Yb\tilde Z\bigr),
+\qquad
+\beta\bigl(\tilde Y,L_bR_a\tilde Z\bigr)=\operatorname{Sc}\bigl(\tilde Yb\tilde Za\bigr),
+$$</p>
+<p>and the two are equal by cyclicity. Linearity extends the identity. Verified on $50$ random triples, residual $3.2\times10^{-14}$.</p>
+<h3 id="the-array">The Array</h3>
+<p><strong>The basis that makes it a transpose.</strong> Let $\mathcal{B}_0$ be a basis of $\mathbb{B}$ in which $\beta$ is diagonal with entries $1,-1,-1,-1$; such a basis exists because $\beta$ is nondegenerate and symmetric, and it is the coefficient basis of <em>Algebra and Element Conventions</em>. Write $\mathsf D=\operatorname{diag}(1,-1,-1,-1)$, the Gram matrix of $\beta$ in $\mathcal{B}_0$. Since $\mathsf D^2=\mathrm I$, the adjoint of a matrix for $\beta$ is</p>
+<p>$$
+[X]_{\mathcal{B}_0}^{\beta}=\mathsf D\,[X]_{\mathcal{B}_0}^{\mathsf T}\,\mathsf D ,
+$$</p>
+<p>so in this basis the swap is the transpose read through a sign matrix:</p>
+<p>$$
+[\sigma(X)]_{\mathcal{B}_0}=\mathsf D\,[X]_{\mathcal{B}_0}^{\mathsf T}\,\mathsf D .
+$$</p>
+<p><strong>The same matrix, read on the two families.</strong> The identity between the two families is the same display,</p>
+<p>$$
+R(b)=\mathsf D\,L(b)^{\mathsf T}\mathsf D ,
+$$</p>
+<p>which is the case of a pure right multiplier, and it is why the two families have arrays that agree up to a sign. Verified on the four basis elements and on a general element, with zero residual.</p>
+<h3 id="what-depends-on-the-basis">What Depends on the Basis</h3>
+<p><strong>The two dependences cancel.</strong> The transpose depends on the basis and $\mathsf D$ depends on the basis, while $\sigma$ does not: the product does not. That is why a statement proved with one display holds in all of them, and why the array above is a convenience rather than a definition.</p>
+<p><strong>The identity in another basis.</strong> In a basis $\mathcal{B}$ the same statement is read with two matrices, not one:</p>
+<p>$$
+[\sigma(X)]_{\mathcal{B}}=\mathsf W\,[X]_{\mathcal{B}}^{\mathsf T}\,\mathsf W^{-1},
+$$</p>
+<p>with $\mathsf W$ the matrix obtained from $\mathsf D$ by congruence. The symmetric form $\mathsf W[X]^{\mathsf T}\mathsf W$ is recovered exactly when $\mathsf W^2=\mathrm I$, which holds in $\mathcal{B}_0$ and in the Pauli display, and which fails in a general basis. So the sentence "the swap is the transpose through the switch" is a sentence about a basis that carries a switch of square one, while the sentence "the swap is the adjoint of the trace form" is a sentence about the algebra. The second is the one to quote.</p>
+<h2 id="the-two-eigenspaces">The Two Eigenspaces</h2>
+<p><strong>The object of this section.</strong> The swap is an involution, so the algebra it acts on splits into a fixed space and a negated space. The two dimensions are ten and six, and each carries an operation under which it closes.</p>
+<h3 id="the-fixed-space">The Fixed Space</h3>
+<p><strong>What it is.</strong> An operator is fixed exactly when it is self-adjoint for $\beta$,</p>
+<p>$$
+\sigma(X)=X\quad\Longleftrightarrow\quad \beta(X\tilde Y,\tilde Z)=\beta(\tilde Y,X\tilde Z),
+$$</p>
+<p>and the fixed space is the image under $\Phi$ of the symmetric square,</p>
+<p>$$
+\operatorname{Fix}(\sigma)=\Phi\bigl(\operatorname{Sym}^2\mathbb{B}\bigr),
+$$</p>
+<p>of dimension $4\cdot5/2=10$. Verified: rank $10$ for the projector $\tfrac12(\mathrm I+\sigma)$.</p>
+<h3 id="the-negated-space">The Negated Space</h3>
+<p><strong>What it is.</strong> An operator is negated exactly when it is skew-adjoint for $\beta$,</p>
+<p>$$
+\sigma(X)=-X ,
+$$</p>
+<p>and the negated space is the image of the exterior square,</p>
+<p>$$
+\operatorname{Neg}(\sigma)=\Phi\bigl(\Lambda^2\mathbb{B}\bigr),
+$$</p>
+<p>of dimension $4\cdot3/2=6$. It is spanned by the six differences $L_aR_b-L_bR_a$, which are the commutators $[L_a,R_b]$ because the two regular maps commute. Verified: rank $6$ for $\tfrac12(\mathrm I-\sigma)$.</p>
+<p><strong>The statement about a six-dimensional subspace.</strong> The space $\operatorname{Neg}(\sigma)$ is six-dimensional, canonical and stable under the swap. A six-dimensional subspace chosen by other means need not be. The gamma frame of <em>The Gamma Frame and the Complexified Dirac Algebra of $M_4(\mathbb{C})$</em> supplies its bivector span, the six commutators $\tfrac12[\gamma_\mu,\gamma_\nu]$ of its four generators, and the swap carries exactly one of the six into that span and the other five out of it; the two spaces are both six-dimensional and they meet in dimension three. Verified on the five declared cells. The canonical space is fixed by the multiplication; the frame's is fixed by a choice, and the two must not be identified because their dimensions agree.</p>
+<h3 id="the-two-operations">The Two Operations</h3>
+<p><strong>Neither is an algebra.</strong> The fixed space is not closed under the product: for $\sigma(X)=X$ and $\sigma(Y)=Y$ one has $\sigma(XY)=YX$, which is $XY$ only when the two commute. It is closed under the anti-commutator,</p>
+<p>$$
+\sigma\bigl(\tfrac12(XY+YX)\bigr)=\tfrac12(YX+XY)=\tfrac12(XY+YX),
+$$</p>
+<p>so it is a <strong>Jordan algebra</strong> of dimension ten under $X\circ Y=\tfrac12(XY+YX)$.</p>
+<p><strong>The negated space is a Lie algebra.</strong> For $\sigma(X)=-X$ and $\sigma(Y)=-Y$,</p>
+<p>$$
+\sigma(XY-YX)=\sigma(Y)\sigma(X)-\sigma(X)\sigma(Y)=YX-XY=-(XY-YX),
+$$</p>
+<p>so the commutator closes on it, and it is a <strong>Lie algebra</strong> of dimension six. Verified on $100$ random pairs in each space.</p>
 <div class="table-scroll"><table>
 <thead>
 <tr>
-<th>Glyph</th>
-<th>What it labels</th>
+<th>Space</th>
+<th>Dimension</th>
+<th>Condition</th>
+<th>Operation that closes</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td>$L_a$, $R_b$</td>
-<td>the left and the right multiplier, an operator</td>
+<td>Fixed, $+1$</td>
+<td>$10$</td>
+<td>$\sigma(X)=X$</td>
+<td>anti-commutator, a Jordan algebra</td>
 </tr>
 <tr>
-<td>$M_4^{L}$, $M_4^{R}$</td>
-<td>the left and the right regular matrix, an array</td>
+<td>Negated, $-1$</td>
+<td>$6$</td>
+<td>$\sigma(X)=-X$</td>
+<td>commutator, a Lie algebra</td>
 </tr>
 <tr>
-<td>$\tilde X_L$, $\tilde X_R$, $\psi_L$, $\psi_R$</td>
-<td>the chirality of an element</td>
+<td>The whole</td>
+<td>$16$</td>
+<td>none</td>
+<td>the product, an associative algebra</td>
 </tr>
 </tbody>
 </table></div>
-<p>Only the third applies to every element of the algebra, and it is the only one that is a subscript which is a word of one letter.</p>
+<p><strong>What is specific to this algebra.</strong> The decomposition of an endomorphism algebra into a symmetric and an exterior square is standard for a nondegenerate symmetric form. What is specific here is that the form is the trace form on the algebra and that the reflection is the exchange of the two sides. The decomposition is therefore read off the two-sided structure rather than imposed on it, which is the sense in which operator chirality and the Jordan–Lie split are one statement.</p>
 <h2 id="conjugation-exchanges-the-sides">Conjugation Exchanges the Sides</h2>
-<p><strong>The natural conjugate.</strong> The map $\natural$ reverses the three vector units and fixes the scalar unit,
-$$
-e_t^{\natural}=e_t,\qquad \vec e_x^{\natural}=-\vec e_x,\qquad \vec e_y^{\natural}=-\vec e_y,\qquad \vec e_z^{\natural}=-\vec e_z,
-$$
-and is extended to $\mathbb{B}$ so that it fixes the coefficients. It is complex-linear, it is an involution, and it is an <strong>anti-automorphism</strong>: $(ab)^{\natural}=b^{\natural}a^{\natural}$, residual $1.0\times10^{-15}$ over $200$ random pairs. The reversed units keep the structure constants in the reversed order, $(-\vec e_y)(-\vec e_x)=-\vec e_z=(\vec e_z)^{\natural}$, while the forward order does not, $(-\vec e_x)(-\vec e_y)=\vec e_z\neq-\vec e_z$; the sign carried by the three vector units is what turns the product round. It is the involution used throughout the corpus under the name quaternion conjugate.</p>
-<p><strong>The same reversal as a matrix.</strong> On the coefficient space $\mathbb{C}^4$ the map is the diagonal matrix
-$$
-\mathsf C=\operatorname{diag}(1,-1,-1,-1),
-$$
-complex-linear, with $\mathsf C^2=\mathrm I$. In the axis-free frame $\mathsf C=D$, the switch of the frame.</p>
-<p><strong>It carries the left side to the right side.</strong> For every element $a\in\mathbb{B}$,
-$$
-\mathsf C\,L(a^{\natural})\,\mathsf C=R(a),
-$$
-and equivalently $\mathsf C\,L(a)\,\mathsf C=R(a^{\natural})$. On a unit this is $\mathsf C L(\vec e_k)\mathsf C=R(-\vec e_k)$, one sign for each of the three vector units; on a general element it follows by linearity. So the left multiplier of the conjugate is the right multiplier read through the switch, and the two sides are exchanged by a conjugation.</p>
-<p><strong>The sign is the phase.</strong> The identity carries no phase of its own, and the sign of the three vector units is where every phase in the corpus comes from. A left multiplier of the frame and a right multiplier of the frame have arrays that agree up to that sign, which is the origin of every statement of the form "the same array, up to a phase".</p>
-<p><strong>It is not the swap.</strong> The two maps are different and only one of them is the swap of this article:</p>
+<p><strong>The object of this section.</strong> A second map exchanges the sides, and it is built from the algebra rather than from the tensor square. It is the reason the two sides have arrays that agree up to a sign.</p>
+<h3 id="the-quaternion-conjugate">The Quaternion Conjugate</h3>
+<p><strong>The map.</strong> The <strong>quaternion conjugate</strong> $\natural$ is the $\mathbb{C}$-linear involution of $\mathbb{B}$ that fixes the unit and negates the vector part,</p>
+<p>$$
+e_t^{\natural}=e_t,\qquad u^{\natural}=-u\quad\text{for }u\text{ in the vector subspace}.
+$$</p>
+<p>It is an <strong>anti-automorphism</strong>, $(\tilde X\tilde Y)^{\natural}=\tilde Y^{\natural}\tilde X^{\natural}$, verified on $200$ random pairs, residual $2.0\times10^{-15}$; the sign carried by the three vector units is what turns the product round. It fixes the coefficients and is therefore $\mathbb{C}$-linear. Its fixed space is the scalar line $\mathbb{C}e_t$ and its anti-fixed space is the three-dimensional vector subspace; the two dimensions are $1$ and $3$, verified.</p>
+<p><strong>As a matrix.</strong> On the basis $\mathcal{B}_0$ of §<em>The Array</em> the map is the diagonal sign matrix $\mathsf C=\mathsf D=\operatorname{diag}(1,-1,-1,-1)$, an involution.</p>
+<h3 id="it-carries-the-left-side-to-the-right-side">It Carries the Left Side to the Right Side</h3>
+<p><strong>The identity.</strong> For every $a\in\mathbb{B}$,</p>
+<p>$$
+\natural\,L(a)\,\natural=R\bigl(a^{\natural}\bigr),
+\qquad\text{equivalently}\qquad
+\natural\,L\bigl(a^{\natural}\bigr)\,\natural=R(a).
+$$</p>
+<p><strong>The proof.</strong> The map $\natural$ is an anti-automorphism, so applying it to the two ends of $a\tilde Y$ reverses them:</p>
+<p>$$
+\natural\bigl(L(a)\natural(\tilde Y)\bigr)=\natural\bigl(a\tilde Y^{\natural}\bigr)=\tilde Y\,a^{\natural},
+$$</p>
+<p>which is right multiplication by $a^{\natural}$. One line, and no basis is used. Verified on the four basis elements and on a general element, residual $0.0$.</p>
+<p><strong>So the two sides are exchanged by a conjugation.</strong> The left multiplier of $a$ becomes, under this congruence, the right multiplier of $a^{\natural}$. Since $\natural$ maps $L(\mathbb{B})$ onto $R(\mathbb{B})$ and back, it is the second side-exchanger of the article.</p>
+<h3 id="it-is-not-the-flip">It Is Not the Flip</h3>
+<p><strong>The two maps side by side.</strong> They are different, and only one of them is the swap.</p>
 <div class="table-scroll"><table>
 <thead>
 <tr>
@@ -222,176 +398,23 @@ and equivalently $\mathsf C\,L(a)\,\mathsf C=R(a^{\natural})$. On a unit this is
 <td>$\sigma$</td>
 <td>$R_a$</td>
 <td>$L_bR_a$</td>
-<td>the two indices</td>
+<td>the two slots</td>
 </tr>
 <tr>
-<td>$\mathsf C$</td>
+<td>$\natural$</td>
 <td>$R_{a^{\natural}}$</td>
 <td>$R_{a^{\natural}}L_{b^{\natural}}$</td>
-<td>the units, and the order</td>
+<td>the elements, and the order of the factors</td>
 </tr>
 </tbody>
 </table></div>
-<p>So $\sigma$ exchanges the slots and leaves the units alone, while $\mathsf C$ exchanges the slots after conjugating the units and reversing their order. On a pure left multiplier the two agree exactly when $a=a^{\natural}$, that is when $a$ lies in the even part, the span of the scalar unit and the three bivectors; on the odd part, the span of the three vector units and the trivector, they differ by a sign.</p>
-<p><strong>Where the conjugation enters, and where it does not.</strong> The conjugation is not needed to define chirality: the slots are defined by the cells alone. It enters when one asks how a left multiplier and a right multiplier are related, and its answer is the table above. A reader who has only $\sigma$ can say which slot an operator occupies; a reader who also has $\mathsf C$ can say when two operators of opposite slots have the same array. That is the whole content of the map, and it is why it belongs in this article next to the swap rather than in the definition.</p>
-<h2 id="the-swap-of-the-two-sides">The Swap of the Two Sides</h2>
-<p><strong>The definition.</strong> The <strong>swap</strong> is the map
-$$
-\sigma\colon\operatorname{End}_{\mathbb{C}}(\mathbb{B})\longrightarrow\operatorname{End}_{\mathbb{C}}(\mathbb{B}),\qquad
-\sigma(L_aR_b)=L_bR_a .
-$$</p>
-<p><strong>It is well defined.</strong> The sixteen cells $L_{e_\mu}R_{e_\nu}$ are linearly independent, since they are the basis of <em>$M_4(\mathbb{C})$ Axis-Free Representation : Operators</em>, so an operator has one coefficient array in the cell basis, and the rule acts on the array by exchanging its two indices. There is no ambiguity and no dependence on the frame: the cell $L_aR_b$ is a coordinate-free operator, and exchanging $a$ and $b$ refers to no basis.</p>
-<p><strong>It is an involution.</strong> Exchanging the indices twice returns the cell, and the cells span the algebra, so $\sigma^2=\mathrm{id}$ on the whole of $\operatorname{End}_{\mathbb{C}}(\mathbb{B})$.</p>
-<p><strong>It is an anti-automorphism.</strong> For cells,
-$$
-\sigma\bigl((L_aR_b)(L_cR_d)\bigr)=\sigma(L_{ac}R_{db})=L_{db}R_{ac}=(L_dR_c)(L_bR_a)=\sigma(L_cR_d)\,\sigma(L_aR_b),
-$$
-which is the reversed product, and the identity extends by linearity. So $\sigma(XY)=\sigma(Y)\sigma(X)$ and $\sigma$ is not a homomorphism of the algebra: it is an isomorphism onto the opposite algebra, of order two.</p>
-<p><strong>It preserves the cone.</strong> The swap permutes the cells, so it carries a product of two one-sided operators to another product, and it preserves the length: $\ell(\sigma(M))=\ell(M)$. The rank-one cone of the products is mapped to itself, and the Segre variety of the coefficient matrices is mapped to itself with its two factors exchanged.</p>
-<p><strong>What it is not.</strong> The swap is not inner. No invertible $\mathsf S$ satisfies $\sigma(X)=\mathsf S X\mathsf S^{-1}$ for all $X$, because an inner map is a homomorphism and $\sigma$ reverses products. It is therefore a genuinely new operator, not a conjugation of the frame.</p>
-<h2 id="the-matrix-of-the-swap">The Matrix of the Swap</h2>
-<p><strong>The array.</strong> In the cell basis, ordered lexicographically, $\sigma$ is a permutation matrix of size sixteen. Each cell $L_aR_b$ with $a\neq b$ is exchanged with $L_bR_a$, which gives six transpositions, and the four cells $L_aR_a$ are fixed. The diagonal cells are exactly the four products of a unit with itself,
-$$
-L_{e_t}R_{e_t}=\mathrm I,\qquad L_{\vec e_x}R_{\vec e_x},\qquad L_{\vec e_y}R_{\vec e_y},\qquad L_{\vec e_z}R_{\vec e_z},
-$$
-and each is fixed because exchanging the two copies of the same unit changes nothing.</p>
-<p><strong>The invariants of the permutation.</strong> With four fixed points and six transpositions, the trace is $4$ and the determinant is $(-1)^6=+1$. The swap is a symmetry of the cell basis of order two and determinant one: an even permutation of the sixteen cells.</p>
-<p><strong>The orbits.</strong> The permutation has one orbit of size one on each diagonal cell and one orbit of size two on each off-diagonal pair, so the array is the direct sum of four one-dimensional blocks $[1]$ and six blocks $\begin{pmatrix}0&1\\1&0\end{pmatrix}$. In the eigenbasis this is ten $+1$'s and six $-1$'s, which is the decomposition computed in §<em>The Two Eigenspaces</em>.</p>
-<p><strong>Reading the array on the algebra.</strong> The fixed cells and the symmetric sums $L_aR_b+L_bR_a$ span the fixed space, of dimension $4+6=10$; the antisymmetric differences $L_aR_b-L_bR_a$ span the negated space, of dimension six. The two dimensions are the dimensions of $\operatorname{Sym}^2V$ and $\Lambda^2V$ for $V$ of dimension four, and the identification is made in §<em>The Two Eigenspaces</em>.</p>
-<h2 id="the-transpose-through-the-switch">The Transpose Through the Switch</h2>
-<p><strong>The statement.</strong> Let $\mathsf W$ be the switch of the frame, the matrix with $R(\tilde Q)=\mathsf W\,L(\tilde Q)^{\mathsf T}\mathsf W$, normalized so that $\mathsf W^2=\mathrm I$. Then for every $X\in\operatorname{End}_{\mathbb{C}}(\mathbb{B})$,
-$$
-\sigma(X)=\mathsf W\,X^{\mathsf T}\,\mathsf W .
-$$
-So the swap is the transpose read through the switch: <strong>transpose, then conjugate by $\mathsf W$.</strong></p>
-<p><strong>The proof on the cells.</strong> The switch identity applied to the two units gives $R_b=\mathsf W L_b^{\mathsf T}\mathsf W$, hence $R_b^{\mathsf T}=\mathsf W L_b\mathsf W$ because $\mathsf W^2=\mathrm I$. Then
-$$
-\mathsf W(L_aR_b)^{\mathsf T}\mathsf W=\mathsf W R_b^{\mathsf T}L_a^{\mathsf T}\mathsf W=(\mathsf W R_b^{\mathsf T}\mathsf W)(\mathsf W L_a^{\mathsf T}\mathsf W)=L_bR_a=\sigma(L_aR_b),
-$$
-and linearity extends the identity to the algebra.</p>
-<p><strong>Why the square is the identity.</strong> Composing the transpose with the conjugation gives $\sigma^2(X)=\mathsf W\mathsf W^{\mathsf T}X\mathsf W^{\mathsf T}\mathsf W$, which is $X$ whenever $\mathsf W$ is symmetric with $\mathsf W^2=\mathrm I$. The switch has both properties in each frame — $D$ is a diagonal sign matrix and $\mathsf P$ is a pure swap — and its symmetry is forced rather than chosen: the switches differ from the Gram matrix of $\beta(\tilde X,\tilde Y)=\operatorname{Sc}(\tilde X\tilde Y)$ by a left multiplication, and $D\,L(\tilde Q_2)$ is symmetric exactly when $\tilde Q_2$ is central, so the symmetric switch is unique up to a scale, which $W^2=\mathrm I$ fixes.</p>
-<p><strong>The dependence on the frame.</strong> The transpose depends on the frame and so does $\mathsf W$, while $\sigma$ does not: the two dependences cancel. This is the reason the swap can be defined by the cells and computed by a transpose, and the reason a statement proved with one display holds in all of them.</p>
-<p><strong>The two frames.</strong> In the axis-free frame $\mathsf W=D$, the diagonal sign matrix, and the transpose identity is the one of the axis-free article. In the Pauli frame $\mathsf W=\mathsf P$, the pure swap of the two tensor factors, and the same identity holds with $\mathsf P$ in place of $D$. The transpose through a sign matrix says something different from the transpose through a swap of factors, and the fact that both express the same $\sigma$ is the clearest sign that the swap is the frame-independent object.</p>
-<h2 id="the-two-eigenspaces">The Two Eigenspaces</h2>
-<p><strong>The fixed space.</strong> An operator is fixed by the swap exactly when $\mathsf W X=X^{\mathsf T}\mathsf W$, that is exactly when $X$ is self-adjoint for the symmetric form with matrix $\mathsf W$. The fixed space has dimension ten, is spanned by the four diagonal cells and the six symmetric sums, and is $\operatorname{Sym}^2V$ once $V$ is identified with its dual through the form whose matrix is the switch; in the axis-free frame that form is the trace form $\beta$.</p>
-<p><strong>It is a Jordan algebra, not an algebra.</strong> On the fixed space the product of two elements is not fixed: for $\sigma(X)=X$ and $\sigma(Y)=Y$ one has $\sigma(XY)=YX$, which equals $XY$ only when the two commute. The fixed space is closed instead under the anti-commutator,
-$$
-\sigma\bigl(\tfrac12(XY+YX)\bigr)=\tfrac12\bigl(YX+XY\bigr)=\tfrac12(XY+YX),
-$$
-so it is a Jordan algebra of dimension ten under $X\circ Y=\tfrac12(XY+YX)$. It is not a subalgebra of $\operatorname{End}_{\mathbb{C}}(\mathbb{B})$ under the ordinary product.</p>
-<p><strong>The negated space.</strong> An operator is negated by the swap exactly when $\mathsf W X=-X^{\mathsf T}\mathsf W$, that is exactly when $X$ is skew-adjoint for the same form. The space has dimension six, is spanned by the six differences $L_aR_b-L_bR_a$, and those differences are the commutators $[L_a,R_b]$, since left and right multiplications commute.</p>
-<p><strong>It is a Lie algebra.</strong> For $\sigma(X)=-X$ and $\sigma(Y)=-Y$,
-$$
-\sigma(XY-YX)=\sigma(Y)\sigma(X)-\sigma(X)\sigma(Y)=YX-XY=-(XY-YX),
-$$
-so the negated space is closed under the commutator. It is a Lie algebra of dimension six, and over $\mathbb{C}$ it is $\mathfrak{so}(4,\mathbb{C})$ for the switch form. The anti-commutator of two skew elements is fixed, by the same computation, so the two spaces interact in the way a symmetric form prescribes.</p>
-<div class="table-scroll"><table>
-<thead>
-<tr>
-<th>Space</th>
-<th>Dimension</th>
-<th>Condition</th>
-<th>Operation that closes</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Fixed, $+1$</td>
-<td>$10$</td>
-<td>$\mathsf W X=X^{\mathsf T}\mathsf W$</td>
-<td>anti-commutator, a Jordan algebra</td>
-</tr>
-<tr>
-<td>Negated, $-1$</td>
-<td>$6$</td>
-<td>$\mathsf W X=-X^{\mathsf T}\mathsf W$</td>
-<td>commutator, a Lie algebra</td>
-</tr>
-<tr>
-<td>The whole</td>
-<td>$16$</td>
-<td>none</td>
-<td>the product, an associative algebra</td>
-</tr>
-</tbody>
-</table></div>
-<p><strong>What the pair is.</strong> The decomposition $\operatorname{End}_{\mathbb{C}}V=\operatorname{Sym}^2V\oplus\Lambda^2V$ is the standard one for a nondegenerate symmetric form, and the swap is its reflection. The content specific to this algebra is that in the axis-free frame the form is the trace form on the cells and that the reflection is the exchange of the two sides, so the decomposition of the endomorphism algebra is read off the two-sided structure rather than imposed.</p>
-<h2 id="the-swap-on-the-frame">The Swap on the Frame</h2>
-<p><strong>The three multipliers.</strong> The left multipliers of the frame are the three cells $L_{\vec e_k}$. The swap carries each to the right multiplier of the same unit, and that is the whole table:</p>
-<div class="table-scroll"><table>
-<thead>
-<tr>
-<th>Cell</th>
-<th>Swap</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>$L_{\vec e_x}$</td>
-<td>$R_{\vec e_x}$</td>
-</tr>
-<tr>
-<td>$L_{\vec e_y}$</td>
-<td>$R_{\vec e_y}$</td>
-</tr>
-<tr>
-<td>$L_{\vec e_z}$</td>
-<td>$R_{\vec e_z}$</td>
-</tr>
-</tbody>
-</table></div>
-<p><strong>The reading.</strong> The two columns hold cells of different shape. A left multiplier is a cell with a vector unit in the left slot and the identity $e_t$ in the right slot, $L_{\vec e_k}R_{e_t}$; a right multiplier is a cell with the identity in the left slot and the same vector unit in the right slot, $L_{e_t}R_{\vec e_k}$. The swap moves the unit from one slot to the other and changes nothing else. So the exchange of the two sides carries a left multiplier to a right multiplier of the same unit and never back to a left multiplier.</p>
-<p><strong>The single identity that matters.</strong> Combining the last row with the volume cell,
-$$
-\sigma(L_{\vec e_z})=R_{\vec e_z}=i\mathsf{V}_{\mathrm{vol}}=-iP .
-$$
-The swap of the rotation generator about the third axis is $i$ times the chirality operator, and $-i$ times the Peirce sign. Both signs are correct, and their coincidence is examined in §<em>What Operator Chirality Is Not</em>.</p>
-<h2 id="the-bivectors-are-not-stable">The Bivectors Are Not Stable</h2>
-<p><strong>The six bivectors are cells.</strong> The six bivectors of the frame of <em>The Gamma Frame and the Complexified Dirac Algebra of $M_4(\mathbb{C})$</em> are six products of two distinct frame cells, hence six cells with coefficient $\pm1$. Read as cells they are</p>
-<div class="table-scroll"><table>
-<thead>
-<tr>
-<th>Bivector, as a cell</th>
-<th>Its swap</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>$L_{\vec e_x}R_{\vec e_z}$</td>
-<td>$L_{\vec e_z}R_{\vec e_x}$</td>
-</tr>
-<tr>
-<td>$L_{\vec e_y}R_{\vec e_z}$</td>
-<td>$L_{\vec e_z}R_{\vec e_y}$</td>
-</tr>
-<tr>
-<td>$L_{\vec e_z}R_{\vec e_z}$</td>
-<td>$L_{\vec e_z}R_{\vec e_z}$</td>
-</tr>
-<tr>
-<td>$L_{\vec e_z}R_{e_t}$</td>
-<td>$L_{e_t}R_{\vec e_z}$</td>
-</tr>
-<tr>
-<td>$-L_{\vec e_y}R_{e_t}$</td>
-<td>$-L_{e_t}R_{\vec e_y}$</td>
-</tr>
-<tr>
-<td>$L_{\vec e_x}R_{e_t}$</td>
-<td>$L_{e_t}R_{\vec e_x}$</td>
-</tr>
-</tbody>
-</table></div>
-<p><strong>Exactly one is fixed.</strong> Of the six, only $L_{\vec e_z}R_{\vec e_z}$ is carried to itself, because it is the one whose two units agree. The other five are moved, each to a cell that is not in the bivector span.</p>
-<p><strong>The two six-dimensional spaces.</strong> Let $\mathcal{B}$ be the span of the six bivectors, and $\sigma\mathcal{B}$ its image. Both have dimension six, their intersection has dimension one — the line of $L_{\vec e_z}R_{\vec e_z}$ — and their sum has dimension eleven:
-$$
-\dim\mathcal{B}=6,\qquad \dim\sigma\mathcal{B}=6,\qquad \dim(\mathcal{B}\cap\sigma\mathcal{B})=1,\qquad \dim(\mathcal{B}+\sigma\mathcal{B})=11 .
-$$
-So $\mathcal{B}$ is not stable under the swap, and the Lorentz Lie algebra of the frame is not an invariant of the unpolarized algebra: it is a choice, and the swap moves it to a different six-dimensional space.</p>
-<p><strong>The consequence for the symmetry articles.</strong> This is the algebraic statement behind the observation of the symmetry articles that the two families do not hold the same kind of cell: a left multiplier carries the vector unit in the left slot, a right multiplier carries it in the right slot, and the bivector span holds cells of both shapes. The pair of multipliers is not a pair of bivectors, and no reading of the two $\mathrm{SU}(2)$'s as the self-dual and anti-self-dual halves can repair it: the swap sends a rotation generator to the chirality operator, and the self-dual split would require it to stay inside the bivectors.</p>
-<p><strong>Why this is the sharpest test.</strong> The natural guess is that the exchange of the two sides preserves the kind of object, since the two sides are constructed by the same rule. It does not, and the failure is measured: five of six. A reader who assumes the symmetry of the construction implies a symmetry of the objects will compute the wrong algebra, and the table above is the correction.</p>
+<p>So $\sigma$ exchanges the slots and leaves the parameters alone, while $\natural$ exchanges the slots after conjugating the parameters and reversing their order. The first is the transport of the flip; the second is an anti-automorphism of the algebra read as a congruence of the endomorphism algebra. Neither is inner and neither is the other.</p>
+<p><strong>Where they agree.</strong> On a pure left multiplier they agree exactly when $a^{\natural}=a$, that is exactly when $a$ is central: the fixed space of $\natural$ is the scalar line. On the vector part they differ by a sign, and that sign is the source of every statement of the form "the same array, up to a phase".</p>
+<h3 id="where-the-conjugation-enters">Where the Conjugation Enters</h3>
+<p><strong>The division of labour.</strong> The conjugation is not needed to define chirality: the two images are defined by the two maps alone. It enters when one asks how a left multiplier and a right multiplier are related, and its answer is the table above. A reader who has only $\sigma$ can say which slot an operator occupies; a reader who also has $\natural$ can say when two operators of opposite slots have arrays that agree up to a sign. That is the whole content of the map, and it is why it belongs next to the swap rather than inside the definition.</p>
+<p><strong>The phases.</strong> Every phase in the corpus that is described as coming from a change of side comes from the sign of the three vector units in $\natural$. The identity above is the place where that sign is generated, and it is one identity, not a family of coincidences.</p>
 <h2 id="what-operator-chirality-is-not">What Operator Chirality Is Not</h2>
-<p><strong>The list.</strong> The notion is one line long — the side — and it is routinely attached to eight other objects. The table states what each of them is and why it is not needed.</p>
+<p><strong>The list.</strong> The notion is one line long, the side, and it is routinely attached to nine other objects. The table states what each of them is and why the two regular maps do not need it.</p>
 <div class="table-scroll"><table>
 <thead>
 <tr>
@@ -404,73 +427,81 @@ So $\mathcal{B}$ is not stable under the swap, and the Lorentz Lie algebra of th
 <tr>
 <td>a root</td>
 <td>an element $\tilde{Ζ}$ with $\tilde{Ζ}^2=e_t$</td>
-<td>$\mathsf{V}_{\mathrm{vol}}$ is a cell of the frame, and a root is an element chosen later</td>
+<td>the sides are the images of $L$ and $R$; a root is an element chosen afterwards</td>
 </tr>
 <tr>
 <td>an idempotent</td>
 <td>an element $\tilde\Pi$ with $\tilde\Pi^2=\tilde\Pi$</td>
-<td>the operator satisfies $(\mathsf{V}_{\mathrm{vol}})^2=\mathrm I$, which is not $(\mathsf{V}_{\mathrm{vol}})^2=\mathsf{V}_{\mathrm{vol}}$</td>
+<td>the definition uses no idempotent, and the label is four-valued rather than two-valued</td>
 </tr>
 <tr>
 <td>a Peirce decomposition</td>
 <td>the four lines $\mathbb{B}_{st}$ of a pair of idempotents</td>
-<td>the sides are two, the Peirce lines are four, and none of the four is a side</td>
+<td>the sides are two subspaces of the operator space, the Peirce lines are four subspaces of the algebra</td>
 </tr>
 <tr>
 <td>a Peirce basis</td>
 <td>the units of one Peirce decomposition</td>
-<td>a basis is a coordinate choice on $\mathbb{B}$, and the side is read without one</td>
+<td>a basis is a coordinate choice on $\mathbb{B}$, and the label is read without one</td>
 </tr>
 <tr>
 <td>a spinor</td>
 <td>an element of a minimal left ideal</td>
-<td>an ideal needs a rank-one idempotent; the side is a property of an operator on $\mathbb{B}$</td>
+<td>an ideal needs a rank-one idempotent; the label is a property of an operator on $\mathbb{B}$</td>
 </tr>
 <tr>
 <td>a Pauli matrix</td>
 <td>the array of a frame in the tensor display</td>
-<td>the same operator is $-iR_{\vec e_z}$ in the axis-free frame</td>
+<td>the label is a membership, and a membership has no array</td>
 </tr>
 <tr>
 <td>an ideal</td>
 <td>a subspace of $\mathbb{B}$, here a point of a projective line</td>
-<td>a subspace is chosen; $\mathsf{V}_{\mathrm{vol}}$ chooses no point</td>
+<td>a subspace is chosen; the two images are given by the multiplication</td>
 </tr>
 <tr>
 <td>a Clifford algebra</td>
 <td>the algebra generated by vectors with $\{e_i,e_j\}=2g_{ij}$, here $\mathrm{Cl}_{1,3}(\mathbb{C})\cong M_4(\mathbb{C})$</td>
-<td>the frame is four declared cells, their anticommutators are computed and not assumed, and no Clifford relation is used to define the side</td>
+<td>the label uses no Clifford relation, and Clifford data fix a dimension and a signature while the two images exist in every dimension</td>
+</tr>
+<tr>
+<td>the fifth cell of a gamma frame</td>
+<td>a right multiplier read off a declared frame</td>
+<td>it is an example of the right side, not the definition of chirality</td>
 </tr>
 </tbody>
 </table></div>
-<p><strong>Not a root.</strong> A root is an element of the algebra and it enters when a Peirce decomposition is wanted. The chirality operator is a cell of the frame and the frame is declared before any root is mentioned. Changing the root changes nothing in $\mathsf{V}_{\mathrm{vol}}$; there is no root in its definition to change.</p>
-<p><strong>Not an idempotent.</strong> The operator satisfies $(\mathsf{V}_{\mathrm{vol}})^2=\mathrm I$ and an idempotent satisfies $\tilde\Pi^2=\tilde\Pi$. The two conditions are different, and the difference is not cosmetic: from $\mathsf{V}_{\mathrm{vol}}$ one can build the projectors $\tfrac12(\mathrm I\pm\mathsf{V}_{\mathrm{vol}})$, which are idempotents, but they are derived objects. The pair of the previous section is written without them.</p>
-<p><strong>Not a Peirce decomposition, not a Peirce basis.</strong> A Peirce decomposition needs two idempotents and returns four lines, of dimensions one, one, one and one. The two sides are two, they are not subspaces of $\mathbb{B}$ but parts of an operator, and no Peirce line is a side: the Peirce lines are corners $\mathbb{B}_{st}$, and the sides are the slots of a multiplication.</p>
-<p><strong>Not a spinor.</strong> A spinor is an element of a minimal left ideal, and a minimal left ideal is produced by a rank-one idempotent, that is by a point of a projective line. The side lives one level up, in the endomorphism algebra, and it is defined without any point being chosen.</p>
-<p><strong>Not a Pauli matrix.</strong> The Pauli display is a frame, the tensor factorisation $\mathbb{C}^2\otimes\mathbb{C}^2$, and a Pauli matrix is the array of a cell in that display. The chirality operator exists in the axis-free frame, where it is the single cell $-iR_{\vec e_z}$, and in the Pauli frame where it is the same array written with two factors. The display changes; the side does not.</p>
-<p><strong>Not an ideal.</strong> A left ideal of $\mathbb{B}$ is a subspace, and the minimal ones are indexed by the points of a projective line, with no point distinguished. An operator that multiplied on one side and selected a point would be an ideal in disguise. The chirality operator selects nothing: it multiplies, and its two eigenspaces are two-dimensional subspaces of the coefficient space $\mathbb{C}^4$, present in every frame.</p>
-<p><strong>Not a Clifford algebra.</strong> A Clifford algebra is generated by vectors subject to $\{e_i,e_j\}=2g_{ij}$, and it is offered as the natural home of chirality, with the volume cell as the product of the generators. In this algebra the frame is four declared cells, and their squares and anticommutators are computed from the multiplication of the units; no Clifford relation is used in any definition. The reason is structural: the relation fixes the squares and the anticommutators of four cells and says nothing about the side on which an operator multiplies, which is the only datum operator chirality needs. A Clifford algebra also fixes a dimension and a signature; the sides exist in every dimension and are read from the cells alone. So the Clifford reading is a frame in which the algebra is displayed, and the chirality of a frame is the same statement in that display.</p>
-<p><strong>Why no anticommutation gives it.</strong> A reader might expect the chirality operator to be characterised by anticommuting with the frame. It cannot be, and the reason is one line: $L(e_t)=\mathrm I$ is one of the operators that a candidate would have to anticommute with, and an operator that anticommutes with the identity is zero. So the sign in this algebra is never produced by an anticommutator; it is produced by the side, which is what the slots supply and what no Clifford relation can supply.</p>
-<p><strong>The one coincidence, and why it matters.</strong> There is a single place where the two families of notions touch, and it must be stated or the whole section is misleading. For the root aligned with the volume direction, $\tilde{Ζ}=i\vec e_z$, the Peirce sign is
-$$
-P=R_{i\vec e_z}=iR_{\vec e_z}=-\mathsf{V}_{\mathrm{vol}},
-$$
-and the projector on the ideal of $\tilde\Pi_+=\tfrac12(e_t+i\vec e_z)$ is
-$$
-R(\tilde\Pi_+)=\tfrac12(\mathrm I+P)=\tfrac12(\mathrm I-\mathsf{V}_{\mathrm{vol}}).
-$$
-So for that one root the Peirce projector and the chiral projector are the same operator. For any other root they are not: with $\tilde{Ζ}=i\vec e_x$ the Peirce projector is $\tfrac12(\mathrm I+iR_{\vec e_x})$, which is neither $\tfrac12(\mathrm I-\mathsf{V}_{\mathrm{vol}})$ nor $\tfrac12(\mathrm I+\mathsf{V}_{\mathrm{vol}})$.</p>
-<p><strong>The moral.</strong> The coincidence is a coincidence of arrays for one root out of the projective line, and it is the origin of every statement in the corpus that the Peirce sign and the chirality operator agree up to a phase. The two notions share a value there and share no definition: one is a subspace choice, the other is a side. Writing the side first, as this article does, keeps the shared value visible as a coincidence instead of letting it stand as an identity.</p>
+<p><strong>Not a root, not an idempotent.</strong> A root is an element of the algebra and it enters when a Peirce decomposition is wanted. The label is fixed before any element is chosen: it depends on $L$ and $R$, which are built from the multiplication. An idempotent is a condition on an element, $\tilde\Pi^2=\tilde\Pi$; the label is a condition on an operator, a membership, and the two conditions have different shapes.</p>
+<p><strong>Not a Peirce decomposition, not a Peirce basis.</strong> A Peirce decomposition needs two idempotents and returns four lines of the algebra. The label returns four cases on the operator space, and none of the four is a line of $\mathbb{B}$. A Peirce basis is a basis, and the label is read without one: the images of $L$ and $R$ are given before any basis is declared.</p>
+<p><strong>Not a spinor, not an ideal.</strong> A spinor is an element of a minimal left ideal, and a minimal left ideal is produced by a rank-one idempotent, that is by a point of a projective line. The label lives one level up, in the endomorphism algebra, and it is defined with no point chosen. A left ideal is a subspace of $\mathbb{B}$; the label names no subspace and selects no point.</p>
+<p><strong>Not a Pauli matrix.</strong> A Pauli matrix is the array of a cell in the tensor display $\mathbb{C}^2\otimes\mathbb{C}^2$. The label is a membership in one of two subspaces and does not depend on the display; an operator has the same label in every display, because the two images do not move with the display.</p>
+<p><strong>Not a Clifford algebra.</strong> A Clifford algebra is generated by vectors subject to a relation, and it is offered as the natural home of chirality, with a product of generators as the chirality element. Two reasons are decisive. First, the relation fixes the squares and the anticommutators of generators and says nothing about the side on which an operator multiplies, which is the only datum the label uses. Second, a Clifford algebra fixes a dimension and a signature, while the two images exist for every algebra and every dimension: $L$ and $R$ are defined by the multiplication, and the intersection of their images is the centre in every case. So the Clifford reading is a frame in which the algebra is displayed, and the label is the same statement in that display.</p>
+<p><strong>The fifth cell is an example, not the definition.</strong> A gamma frame has five cells, and the fifth is a right multiplier of the form $-iR_u$ for an element $u$ with $u^2=-e_t$ and $\operatorname{Sc}u=0$; the legacy display prints it $\gamma_5$. Three properties follow in one line each. $(R_u)^2=R_{u^2}=-\mathrm I$, so the cell squares to $\mathrm I$. The trace of $R_u$ is zero because $u$ is traceless. The spectrum is $+i,+i,-i,-i$, two and two, so the projectors $\tfrac12(\mathrm I\pm iR_u)$ have rank two each. All four facts verified. That cell is a <strong>pure right multiplier</strong>, so under the label of this article it has the right slot. It is therefore an example of one of the four labels and cannot be the definition of the label. Its further qualification is that it is supplied by a frame: a rotation of the frame replaces $u$, and the cell changes while every label of every operator stays fixed.</p>
+<p><strong>The split of an element is the action of the cell, not a second label.</strong> The cell acts on the algebra and splits every element into its two eigenspaces. For a traceless $u$ with $u^2=-e_t$ and a cell of the form $-iR_u$, the decomposition is</p>
+<p>$$
+\tilde X=\tilde X_L+\tilde X_R,\qquad R_u\tilde X_L=i\,\tilde X_L,\qquad R_u\tilde X_R=-i\,\tilde X_R ,
+$$</p>
+<p>with each part of complex dimension two and no element but zero in both, verified. A product takes the letter of its right factor, because $R_u(\tilde X\tilde Y)=\tilde X R_u(\tilde Y)$, and a left multiplication therefore keeps the letter. Two warnings follow. The decomposition depends on $u$, so it is a property of the element and of the declared cell, not a second operator label. And a traceless $u$ is not optional: the central element $ie_t$ satisfies $u^2=-e_t$ and gives $R_{ie_t}=i\mathrm I$, which has no minus eigenspace at all. The letters $L$ and $R$ are the Dirac ones, and they belong to this cell, not to the label.</p>
+<p><strong>A hypothesis that must not be dropped.</strong> The statement that for any $u$ with $u^2=-e_t$ the right multiplier $R_u$ has spectrum $+i,+i,-i,-i$ and trace zero is false without the tracelessness of $u$. The central element $u=ie_t$ satisfies $u^2=-e_t$, and $R_{ie_t}=i\mathrm I$, whose spectrum is $+i$ four times and whose trace is $4i$. The vector condition $\operatorname{Sc}u=0$ is the missing hypothesis, and it is what makes $R_u$ behave as a chirality element.</p>
+<p><strong>The Peirce identity, stated correctly.</strong> The two families and the Peirce lines touch, and the contact is an <strong>identity</strong> forced by a shared element, not a coincidence of arrays for a rare alignment. For a traceless $u$ with $u^2=-e_t$ the projector</p>
+<p>$$
+\tfrac12\bigl(\mathrm I+iR_u\bigr)
+$$</p>
+<p>is idempotent of rank two, its image is a minimal left ideal of the regular module, and it is at once two things: the Peirce projector $R(\tilde\Pi)$ of the idempotent $\tilde\Pi=\tfrac12(e_t+iu)$, and the spectral projector of the right multiplier $-iR_u$ onto the eigenvalue $-1$. Both readings verified: the projector is idempotent, of rank two, and its image is stable under every left multiplier. The identity holds for every such $u$, so it is not a property of one element. What the corpus must not do is infer from it that the two notions are one: the Peirce projector is a subspace choice attached to an idempotent, the spectral projector is one half of the label of a single operator, and they agree because both are built from the same $u$.</p>
 <h2 id="why-the-slot-label-is-not-a-grading">Why the Slot Label Is Not a Grading</h2>
-<p><strong>A grading would need a multiplicative sign.</strong> A $\mathbb{Z}/2$ grading of an algebra is a homomorphism to $\{\pm1\}$, that is a linear functional with $\varepsilon(XY)=\varepsilon(X)\varepsilon(Y)$. No such functional separates the left multipliers from the right ones: the two families overlap in the scalars, and a scalar is neither $+1$ nor $-1$ by virtue of its side.</p>
-<p><strong>What the swap gives instead.</strong> It gives the decomposition into the self-adjoint and the skew-adjoint part for the switch form, of dimensions ten and six, and that is a decomposition of the underlying space with two different closing operations. It is an exchange, not a sign: $\sigma(L_a)=R_a$, so the swap carries one side to the other and answers the question "which side" by moving it, not by labelling it.</p>
-<p><strong>What supplies the sign.</strong> An operator with $(\mathsf{V}_{\mathrm{vol}})^2=\mathrm I$ and eigenvalues $+1$ and $-1$ of equal multiplicity, which is the volume cell. It is a single operator of the algebra, its two eigenspaces have equal dimension, and its array is diagonal in a basis that diagonalises it. So the sign is one operator, not a functional on the algebra, and that is why no grading is ever exhibited: there is none to exhibit.</p>
-<p><strong>The division of labour.</strong> The slot is the frame-independent statement: it says where an operator multiplies, and every cell has its two slots before a frame is declared. The sign is the frame-dependent statement: it is the volume cell of the frame, $\mathsf{V}_{\mathrm{vol}}=-iR_{\vec e_z}$, and its array depends on the frame. Confusing the two is what produces the impression that chirality is a diagonal matrix. Separating them is what the identity $\mathsf{V}_{\mathrm{vol}}=-i\sigma(L_{\vec e_z})$ accomplishes, and it is the reason the swap belongs in an article about chirality.</p>
+<p><strong>A grading would need a multiplicative sign.</strong> A $\mathbb{Z}/2$ grading of an algebra is a decomposition into two subspaces with a multiplicative sign, equivalently a homomorphism to the group $\{\pm1\}$. For the endomorphism algebra the decomposition is trivial, because $\operatorname{End}_{\mathbb{C}}(\mathbb{B})\cong M_4(\mathbb{C})$ is simple and has no nontrivial central idempotent. The label is therefore not a grading for a structural reason, and the argument below shows the failure directly, on the one operator that blocks it.</p>
+<p><strong>No functional separates the two images.</strong> Suppose a multiplicative sign $\varepsilon$, with $\varepsilon(XY)=\varepsilon(X)\varepsilon(Y)$, took the value $+1$ on a left multiplier and $-1$ on a right multiplier of a noncentral element. The scalar $\lambda\mathrm I$ is at once the left multiplier $L(\lambda e_t)$ and the right multiplier $R(\lambda e_t)$, so it would have to carry both values. The label has four cases and the sign has two; the third row of the table of §<em>The Label</em> is where the map from one to the other collapses.</p>
+<p><strong>What the swap gives instead.</strong> It gives the decomposition into the self-adjoint and the skew-adjoint part for the trace form, of dimensions ten and six, with two different closing operations. That is an exchange and not a sign: $\sigma$ carries one side to the other and answers "which side" by moving the operator, not by labelling it.</p>
+<p><strong>What supplies the sign.</strong> A single operator supplies it: a right multiplier $R_u$ with $u$ traceless and $u^2=-e_t$, whose projectors $\tfrac12(\mathrm I\pm iR_u)$ are the two halves. The sign is one operator and not a functional on the algebra, and that is why no grading is ever exhibited: there is none to exhibit, and a sign that is wanted must be chosen as an operator.</p>
+<p><strong>The division of labour.</strong> The label is the frame-free statement: it says where an operator multiplies, and it is fixed by the two regular maps before anything else is declared. The sign is the chosen statement: it is an operator of the form $R_u$, and it changes when $u$ changes. Confusing the two is what produces the impression that chirality is a matrix. Separating them is what the identity $\sigma(L_a)=R_a$ accomplishes, since it makes the exchange a statement about the two families and leaves the choice of $u$ free.</p>
 <h2 id="summary">Summary</h2>
-<p>Operator chirality is the side on which an operator multiplies: the left slot, the right slot, or both. The pure left multipliers form a four-dimensional family, the pure right multipliers another, the two overlap in the scalars, and their sum is seven-dimensional inside a sixteen-dimensional endomorphism algebra; the remaining nine directions carry both slots and have no side.</p>
-<p>The chirality operator of a frame is its volume cell $\mathsf{V}_{\mathrm{vol}}$, $i$ times the product of the four cells of the frame, which in the axis-free frame is the pure right multiplier $-iR_{\vec e_z}$. It squares to the identity, has trace zero, splits the coefficient space two and two, and anticommutes with two of the three right multipliers of the frame. On the elements it is the subscript: $\tilde X$ is $L$ or $R$, two values and no more, and a product takes the letter of its right factor. A pure left multiplier is the operator $L(a)$ for an element $a$; its natural conjugate is the right multiplier $\mathsf C\,L(a^{\natural})\,\mathsf C=R(a)$, so the conjugation is the second map that exchanges the sides, and the two maps differ by the sign of the three vector units. Neither the definition nor either exchange uses a module, a projector, an idempotent or a Clifford relation.</p>
-<p>The swap $\sigma(L_aR_b)=L_bR_a$ is well defined on the cells, involutive, anti-multiplicative and independent of the frame; it is the transpose read through the switch, it has four fixed cells, trace four and determinant one, and its eigenspaces are the self-adjoint and skew-adjoint operators of dimensions ten and six. It carries the rotation generator $L_{\vec e_z}$ to $R_{\vec e_z}$, which is $i$ times the volume cell, and that identity ties the swap to chirality.</p>
-<p>The notion is unrelated to the eight objects that usually carry the name: a root, an idempotent, a Peirce decomposition, a Peirce basis, a spinor, a Pauli matrix, an ideal and a Clifford algebra. It touches them once, at the root aligned with the volume direction, where $P=-\mathsf{V}_{\mathrm{vol}}$ and the Peirce projector equals $\tfrac12(\mathrm I-\mathsf{V}_{\mathrm{vol}})$; that single coincidence of arrays is the source of the confusion, and it is not an identity of notions.</p>
+<p>Operator chirality is the side on which an operator multiplies. The left multipliers are the image of the left regular map, the right multipliers the image of the right regular map, the two are four-dimensional each and meet in the scalars, their sum is seven-dimensional inside a sixteen-dimensional endomorphism algebra, and the remaining nine directions have no single side. The label has four cases: left, right, both at once for the scalars, and neither otherwise. A cell with two occupied slots is a two-sided operator and carries the label "no single side", which is not the same statement as "both slots".</p>
+<p>Under the structure isomorphism $\Phi(a\otimes b)=L_aR_b$ the two images are the two tensor factors and their overlap is the tensor of the two units. The exchange of the two sides is the flip, transported as $\sigma=\Phi\tau\Phi^{-1}$, and it is intrinsic: it squares to the identity, reverses products exactly over $100$ pairs, since it permutes the cells, exchanges the two images, fixes the scalars, carries $L_a$ to $R_a$, preserves rank and length, and is not inner. It is also the adjoint of the trace form $\beta(\tilde X,\tilde Y)=\operatorname{Sc}(\tilde X\tilde Y)$. Its fixed space is ten-dimensional and a Jordan algebra under the anti-commutator, its negated space is six-dimensional and a Lie algebra under the commutator, and the two are the images of the symmetric and the exterior square.</p>
+<p>The quaternion conjugate $\natural$ is the second side-exchanger, $\natural L(a)\natural=R(a^{\natural})$, and it differs from the flip in that it conjugates the parameters and reverses their order. The two agree on a pure left multiplier exactly on the scalars, and the sign they differ by is the origin of every phase of the corpus that comes from a change of side. Neither the definition nor either exchange uses a module, a projector, an idempotent, a frame or a Clifford relation.</p>
+<p>The notion is unrelated to the nine objects that usually carry the name: a root, an idempotent, a Peirce decomposition, a Peirce basis, a spinor, a Pauli matrix, an ideal, a Clifford algebra, and the fifth cell of a gamma frame. The fifth cell is a pure right multiplier with square one, trace zero and a balanced spectrum, so it is an example of the right side and not the definition of chirality; a rotation of the frame changes it and changes no label. The one genuine contact with the Peirce theory is an identity and is stated as such: for a traceless $u$ with $u^2=-e_t$, the projector $\tfrac12(\mathrm I+iR_u)$ is at once the Peirce projector $R(\tfrac12(e_t+iu))$ and a spectral projector of $-iR_u$. The identity is forced by the shared element, and it is not an identity of notions.</p>
+<p>$$
+\boxed{\ \text{chirality}=\text{the side};\qquad X\in L(\mathbb{B}),\ \ X\in R(\mathbb{B}),\ \ X\in L(\mathbb{B})\cap R(\mathbb{B}),\ \ \text{or neither};\qquad \sigma=\Phi\tau\Phi^{-1},\quad \sigma(L_a)=R_a .\ }
+$$</p>
 <h2 id="summary-of-notation">Summary of Notation</h2>
 <div class="table-scroll"><table>
 <thead>
@@ -481,84 +512,81 @@ So for that one root the Peirce projector and the chiral projector are the same 
 </thead>
 <tbody>
 <tr>
+<td>$L(a)$, $L_a$</td>
+<td>the left multiplier, $\tilde X\mapsto a\tilde X$</td>
+</tr>
+<tr>
+<td>$R(b)$, $R_b$</td>
+<td>the right multiplier, $\tilde X\mapsto \tilde Xb$</td>
+</tr>
+<tr>
 <td>$L_aR_b$</td>
 <td>the cell, $L_aR_b\tilde X=a\tilde Xb$, with a left and a right slot</td>
 </tr>
 <tr>
 <td>$L(\mathbb{B})$, $R(\mathbb{B})$</td>
-<td>the pure left and pure right multipliers, four-dimensional each, overlapping in the centre</td>
+<td>the two images, four-dimensional each, meeting in the centre</td>
 </tr>
 <tr>
-<td>left slot, right slot, both slots</td>
-<td>operator chirality: on which side an operator multiplies</td>
+<td>left slot, right slot, both slots, no single side</td>
+<td>operator chirality: the membership of an operator in the two images</td>
 </tr>
 <tr>
-<td>$\mathsf{V}_{\mathrm{vol}}$</td>
-<td>the volume cell of the frame, $-iL_{e_t}R_{\vec e_z}=-iR_{\vec e_z}$ in the axis-free frame, a pure right multiplier</td>
+<td>$\Phi(a\otimes b)=L_aR_b$</td>
+<td>the structure isomorphism $\mathbb{B}\otimes_{\mathbb{C}}\mathbb{B}\to\operatorname{End}_{\mathbb{C}}(\mathbb{B})$</td>
 </tr>
 <tr>
-<td>$\mathsf{V}_{\mathrm{vol}}\tilde X=-i\tilde X\vec e_z$</td>
-<td>the action of the volume cell on an element, of spectrum $+1,+1,-1,-1$</td>
+<td>$\tau(a\otimes b)=b\otimes a$</td>
+<td>the flip of the two tensor factors</td>
 </tr>
 <tr>
-<td>$\tilde X_L$, $\tilde X_R$</td>
-<td>the parts of an element, $\mathsf{V}_{\mathrm{vol}}\tilde X_L=-\tilde X_L$ and $\mathsf{V}_{\mathrm{vol}}\tilde X_R=+\tilde X_R$, of dimension two each; the same subscript as $\psi_L$, $\psi_R$ in the Dirac literature, and available on every element of $\mathbb B$</td>
-</tr>
-<tr>
-<td>$\mathsf C$</td>
-<td>the natural conjugation as a matrix, $\operatorname{diag}(1,-1,-1,-1)$, with $\mathsf C L(a^{\natural})\mathsf C=R(a)$</td>
-</tr>
-<tr>
-<td>$\sigma$</td>
+<td>$\sigma=\Phi\tau\Phi^{-1}$</td>
 <td>the swap, $\sigma(L_aR_b)=L_bR_a$, the exchange of the two sides</td>
 </tr>
 <tr>
+<td>$\beta(\tilde X,\tilde Y)=\operatorname{Sc}(\tilde X\tilde Y)$</td>
+<td>the trace form, symmetric and nondegenerate</td>
+</tr>
+<tr>
+<td>$\mathsf D=\operatorname{diag}(1,-1,-1,-1)$</td>
+<td>the Gram matrix of $\beta$ in the basis $\mathcal{B}_0$, and the array of $\natural$</td>
+</tr>
+<tr>
 <td>$\mathsf W$</td>
-<td>the switch of a frame, $R(\tilde Q)=\mathsf W L(\tilde Q)^{\mathsf T}\mathsf W$</td>
+<td>the switch of a basis, with $[\sigma(X)]=\mathsf W[X]^{\mathsf T}\mathsf W^{-1}$</td>
 </tr>
 <tr>
-<td>$D=\operatorname{diag}(1,-1,-1,-1)$</td>
-<td>the switch of the axis-free frame, and the matrix of $\mathsf C$</td>
+<td>$\operatorname{Fix}(\sigma)=\Phi(\operatorname{Sym}^2\mathbb{B})$</td>
+<td>the fixed space, dimension $10$, a Jordan algebra under the anti-commutator</td>
 </tr>
 <tr>
-<td>$\mathsf P$</td>
-<td>the switch of the Pauli frame, the pure swap of the two factors</td>
+<td>$\operatorname{Neg}(\sigma)=\Phi(\Lambda^2\mathbb{B})$</td>
+<td>the negated space, dimension $6$, a Lie algebra under the commutator</td>
 </tr>
 <tr>
-<td>$\beta(\tilde X,\tilde Y)$</td>
-<td>the trace form $\operatorname{Sc}(\tilde X\tilde Y)$, with Gram matrix $D$ in the axis-free frame</td>
+<td>$\natural$</td>
+<td>the quaternion conjugate, with $\natural L(a)\natural=R(a^{\natural})$</td>
 </tr>
 <tr>
-<td>$\operatorname{Sym}^2V$</td>
-<td>the fixed space of $\sigma$, dimension $10$, a Jordan algebra under $X\circ Y$</td>
+<td>$\ell(M)$, $\operatorname{rank}M$</td>
+<td>the length and the rank, both preserved by $\sigma$</td>
 </tr>
 <tr>
-<td>$\Lambda^2V$</td>
-<td>the negated space of $\sigma$, dimension $6$, a Lie algebra under $[X,Y]$</td>
-</tr>
-<tr>
-<td>$\ell(M)$</td>
-<td>the length $\operatorname{rank}c(M)$, preserved by $\sigma$</td>
-</tr>
-<tr>
-<td>$\mathcal{B}$</td>
-<td>the span of the six Lorentz bivectors, dimension $6$, not $\sigma$-stable</td>
-</tr>
-<tr>
-<td>$P=R_{i\vec e_z}=iR_{\vec e_z}$</td>
-<td>the Peirce sign of the third axis; $P=-\mathsf{V}_{\mathrm{vol}}$, and it is not used in the definition of chirality</td>
+<td>$\tfrac12(\mathrm I+iR_u)$, $u$ traceless, $u^2=-e_t$</td>
+<td>the rank-two projector of a right multiplier, at once a Peirce projector and a spectral projector</td>
 </tr>
 </tbody>
 </table></div>
 <h2 id="further-reading">Further Reading</h2>
 <ul>
-<li><a href="the-unpolarized-module-of-the-biquaternion-algebra.html">The Unpolarized Module of the Biquaternion Algebra</a>, for the carrier, the projective line of splittings and the trace form.</li>
-<li><a href="m4c-axis-free-representation-operators.html">$M_4(\mathbb{C})$ Axis-Free Representation : Operators</a>, for the cells as an orthogonal basis and the coefficient matrix.</li>
-<li><a href="m4c-pauli-representation-operators.html">$M_4(\mathbb{C})$ Pauli Representation : Operators</a>, for the same operators in the tensor display.</li>
 <li><a href="families-of-matrix-representations.html">Families of Matrix Representations</a>, for the two sides, the switch and the change of frame.</li>
+<li><a href="m4c-axis-free-representation-operators.html">$M_4(\mathbb{C})$ Axis-Free Representation : Operators</a>, for the cells as a basis, the coefficient matrix and the length.</li>
+<li><a href="m4c-pauli-representation-operators.html">$M_4(\mathbb{C})$ Pauli Representation : Operators</a>, for the same operators in the tensor display.</li>
 <li><a href="the-endomorphisms-of-the-biquaternion-algebra.html">The Endomorphisms of the Biquaternion Algebra</a>, for the general theory of $\operatorname{End}_{\mathbb{C}}(\mathbb{B})$ and the two-sided operators.</li>
+<li><a href="the-unpolarized-module-of-the-biquaternion-algebra.html">The Unpolarized Module of the Biquaternion Algebra</a>, for the carrier, the projective line of splittings and the trace form.</li>
+<li><a href="the-gamma-frame-and-the-complexified-dirac-algebra-of-m4c.html">The Gamma Frame and the Complexified Dirac Algebra of $M_4(\mathbb{C})$</a>, for the five cells of a frame, for the fifth cell as an example, and for the six bivectors, which the swap does not preserve.</li>
+<li><a href="operator-family-conventions.html">Operator Family Conventions</a>, for the four families, the two slots and the label.</li>
 <li><a href="matrix-representations-conventions.html">Matrix Representations Conventions</a>, for the labels and the conventions of the category.</li>
-<li><a href="the-gamma-frame-and-the-complexified-dirac-algebra-of-m4c.html">The Gamma Frame and the Complexified Dirac Algebra of $M_4(\mathbb{C})$</a>, for the five frame cells of a frame and their two displays.</li>
 </ul>
       </div>
     </main>

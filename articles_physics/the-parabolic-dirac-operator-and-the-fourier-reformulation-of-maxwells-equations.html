@@ -101,7 +101,7 @@ $$</p>
 <p>$$
 \Box = \tilde{\nabla}\tilde{\nabla}^{\natural} = \tilde{\nabla}^{\natural}\tilde{\nabla} = \partial^2/\partial R_t^2 + \Delta
 $$</p>
-<p>(<em>Biquaternion Analysis</em>, <em>The d'Alembertian</em>). With $c = 1$ one has $\partial/\partial R_t = -i\partial/\partial r'_t$, hence</p>
+<p>(<em>Biquaternion Analysis</em>, <em>The d'Alembertian</em>). On the material sector $\partial/\partial R_t = -i\partial/\partial r'_t$ is a change of coordinate and not a choice of units, hence</p>
 <p>$$
 \tilde{\nabla} = D - i\partial/\partial r'_t, \qquad -\tilde{\nabla}^{\natural} = D + i\partial/\partial r'_t,
 $$</p>
@@ -206,7 +206,7 @@ $$</p>
 <p>so the scalar part of $L_{\mathcal{C}}R_{\pm}[\mp i w]$ solves the homogeneous wave equation if and only if the scalar part of $(D \mp i\partial/\partial r'_t)w$ vanishes, that is if and only if $\mathrm{div}\,\vec{w} \pm i\partial/\partial r'_t w_0 = 0$. In the time-independent case this is exactly the condition that the vector field be solenoidal, which is the class the heterogeneous div-curl literature requires. The vector part of the right-hand side need not vanish, so it is only the scalar part of the transform that is a wave solution without further correction; the correction itself is the completion (7) of the previous section.</p>
 <h2 id="explicit-vectorial-solutions-of-the-maxwell-system">Explicit Vectorial Solutions of the Maxwell System</h2>
 <h3 id="maxwells-equations-and-the-single-biquaternionic-equation">Maxwell's Equations and the Single Biquaternionic Equation</h3>
-<p>The source takes Maxwell's equations in <strong>Gaussian units</strong> with $c = 1$,</p>
+<p>The source takes Maxwell's equations in <strong>Gaussian units</strong>; its time is read here as the corpus's $r'_t=c\,t'$, which is why the curls carry $\partial/\partial r'_t$ and no factor $1/c$,</p>
 <p>$$
 \mathrm{div}\,\vec{E} = 4\pi\rho, \qquad
 \mathrm{div}\,\vec{B} = 0, \qquad
@@ -219,7 +219,7 @@ $$</p>
 (D - i\partial/\partial r'_t)\vec{\xi} = -4\pi(\rho - i\vec{\jmath}).
 \tag{13}
 $$</p>
-<p>This is the corpus's single equation, and the identification is exact. The corpus's field-strength biquaternion is $\tilde{F} = i\sqrt{\epsilon}\,\vec E - \sqrt{\mu}\,\vec H$, which in vacuum with $c = 1$ reads $\tilde{F} = i\vec E - \vec B = i(\vec E + i\vec B)$; the corpus's dual field strength is $-i\tilde{F} = \vec E + i\vec B$ (<em>Maxwell's Equations in the Biquaternionic Formulation</em>, Summary of Notation), so the source's $\vec{\xi}$ is the corpus's dual field strength. With $\tilde{\nabla} = D - i\partial/\partial r'_t$ and $\sqrt{\mu}\,\tilde{J}_{\Phi} = i\rho + \vec{\jmath}$ in vacuum, the corpus's equation $\tilde{\nabla}\tilde{F} = -\sqrt{\mu}\,\tilde{J}_{\Phi}$ becomes</p>
+<p>This is the corpus's single equation, and the identification is exact. The corpus's field-strength biquaternion is $\tilde{F} = i\sqrt{\epsilon}\,\vec E - \sqrt{\mu}\,\vec H$, which in vacuum is $\tilde{F} = i\sqrt{\epsilon_0}\,\vec E - \sqrt{\mu_0}\,\vec H$; with the magnetic field quoted in units of $\vec E/c$, a change of unit for one quantity and not a setting of $c$, it reads $\tilde{F} = \sqrt{\epsilon_0}\,(i\vec E - \vec B) = i\sqrt{\epsilon_0}\,(\vec E + i\vec B)$. The corpus's dual field strength (<em>Maxwell's Equations in the Biquaternionic Formulation</em>, Summary of Notation) is therefore $-i\tilde{F} = \sqrt{\epsilon_0}\,(\vec E + i\vec B)$, so the source's $\vec{\xi}$ is the corpus's dual field strength up to the constant $\sqrt{\epsilon_0}$, which drops out of the comparison of (13) and (14). With $\tilde{\nabla} = D - i\partial/\partial r'_t$ and $\sqrt{\mu}\,\tilde{J}_{\Phi} = i\rho + \vec{\jmath}$ in vacuum, the corpus's equation $\tilde{\nabla}\tilde{F} = -\sqrt{\mu}\,\tilde{J}_{\Phi}$ becomes</p>
 <p>$$
 -i\,\tilde{\nabla}\tilde F = -(\rho - i\vec{\jmath}), \qquad \text{that is} \qquad (D - i\partial/\partial r'_t)\tilde F = -i(\rho - i\vec{\jmath}).
 \tag{14}
@@ -236,7 +236,7 @@ $$</p>
 \tag{15}
 $$</p>
 <p>a <strong>purely vectorial</strong> solution of (13), whose real part is the electric field $\vec{E}$ and whose imaginary part is the magnetic field $\vec{B}$. This is the source's Theorem 13, and its structure — solve by the right inverse, then kill the scalar part by adding a kernel element from the harmonic-conjugate construction — is a route complementary to the retarded-convolution solution the corpus records: the same equation, but a constructive family of purely vectorial solutions in place of the single causal convolution.</p>
-<h3 id="the-homogeneous-medium-and-the-parameter-math171">The Homogeneous Medium and the Parameter $\lambda$</h3>
+<h3 id="the-homogeneous-medium-and-the-parameter-math175">The Homogeneous Medium and the Parameter $\lambda$</h3>
 <p>The source repeats the analysis for the slightly perturbed operator $D \pm i\lambda\partial/\partial r'_t$ with $\lambda \in \mathbb{R}$, whose kernel is characterised by (4) with $\partial/\partial r'_t$ replaced by $\lambda\partial/\partial r'_t$ (its Corollary 14) and whose right inverse is the $\lambda$-scaled transform</p>
 <p>$$
 L_{\mathcal{C}}R_{\pm,\lambda}[w](r_x,r'_t) := \int_0^{r'_{t}}\int_{\mathbb{R}^3} \exp\bigl(2\pi i\langle r_x,k\rangle\bigr) \exp\bigl(\mp 2\pi\lambda^{-1}(r'_t-s)k\bigr) \mathcal{F}(w)(k,s)\,dk\,ds,
@@ -287,7 +287,7 @@ $$</p>
 </tr>
 <tr>
 <td>$D \pm i\partial/\partial r'_t$</td>
-<td>The parabolic Dirac operators of the source; $D - i\partial/\partial r'_t = \tilde{\nabla}$ and $D + i\partial/\partial r'_t = -\tilde{\nabla}^{\natural}$ at $c = 1$</td>
+<td>The parabolic Dirac operators of the source; $D - i\partial/\partial r'_t = \tilde{\nabla}$ and $D + i\partial/\partial r'_t = -\tilde{\nabla}^{\natural}$, a sector identity that carries no $c$</td>
 </tr>
 <tr>
 <td>$\Delta = \partial^2/\partial R_x^2 + \partial^2/\partial R_y^2 + \partial^2/\partial R_z^2$</td>

@@ -272,7 +272,7 @@ $$</p>
 <p>with the Bessel term restricted to the interior of the cone by $\mathrm{H}_{\mathrm{hvs}}(-x^2)$. The delta term is the massless kernel, and the Bessel term is the massive correction; the correction does not vanish on the cone but tends there to the finite value $-k_m^{2}/(8\pi)\,\mathrm{H}_{\mathrm{hvs}}(r'_t)$, since $J_1(z)\sim z/2$ as $z\to0$ makes $k_m J_1(k_m\sqrt{-x^2})/(2\sqrt{-x^2})\to\,k_m^{2}/4$. The kernel's only singular part is therefore the delta on the cone, and the volume term is bounded on it.</p>
 <p>Three checks were carried out on this closed form.</p>
 <ol>
-<li><strong>Massless limit.</strong> As $k_m\to0$ the Bessel term vanishes and only $\frac{\mathrm{H}_{\mathrm{hvs}}(r'_t)}{2\pi}\delta(r_x^2)$ remains. Converting the invariant delta to a radial delta by the light-cone Jacobian below gives $\frac{1}{4\pi r}\delta(r'_t-r)$, which is exactly the retarded kernel $\frac{1}{4\pi R}\delta(r'_t-R)$ of the electromagnetism exercise at $c=1$. The limit was verified numerically for $k_m=10^{-3}$.</li>
+<li><strong>Massless limit.</strong> As $k_m\to0$ the Bessel term vanishes and only $\frac{\mathrm{H}_{\mathrm{hvs}}(r'_t)}{2\pi}\delta(r_x^2)$ remains. Converting the invariant delta to a radial delta by the light-cone Jacobian below gives $\frac{1}{4\pi r}\delta(r'_t-r)$, which is exactly the retarded kernel $\frac{1}{4\pi R}\delta(r'_t-R)$ of the electromagnetism exercise, in the same time coordinate $r'_t$. The limit was verified numerically for $k_m=10^{-3}$.</li>
 <li><strong>The homogeneous equation.</strong> Inside the cone the Bessel form must satisfy $(\Box-k_m^{2})G_{\mathrm{rgs},R}=0$, because the only source is at the origin. Evaluating the radial d'Alembertian $-\partial^2/\partial {r'_{t}}^2+\partial^2/\partial r^2+\frac{2}{r}\partial/\partial r-k_m^{2}$ by finite differences at six random interior points with $r'_t\in[2.5,4]$, $r/r'_t\in[0.2,0.85]$ and $k_m\in[0.4,1.5]$, the greatest residual was $1.1\times 10^{-9}$, against an amplitude of order $10^{-2}$.</li>
 <li><strong>The Bessel function.</strong> The series evaluation of $J_1$ reproduces the reference values $J_1(1)=0.4400505857$ and $J_1(2)=0.5767248078$ to ten digits, so the Bessel factor in the kernel is not a source of error.</li>
 </ol>
@@ -287,7 +287,7 @@ $$</p>
 <p>$$
 \frac{1}{2\pi}\delta(r_x^2)=\frac{1}{4\pi r}\delta(r'_t-r).
 $$</p>
-<p>The coefficient was checked numerically to twelve digits, and it is the c-explicit exercise's Jacobian with $c=1$. This is the step at which a derivation of the retarded kernel most often goes wrong: dropping the factor $2r$ gives a kernel whose coefficient has the wrong power of $r$, and the kernel then fails to reduce to the Newton kernel in the static limit. The invariant form and the radial form are used interchangeably below.</p>
+<p>The coefficient was checked numerically to twelve digits, and it is the Jacobian of the c-explicit electromagnetism exercise, read in the same coordinate $r'_t$. This is the step at which a derivation of the retarded kernel most often goes wrong: dropping the factor $2r$ gives a kernel whose coefficient has the wrong power of $r$, and the kernel then fails to reduce to the Newton kernel in the static limit. The invariant form and the radial form are used interchangeably below.</p>
 <h2 id="the-advanced-kernel-and-the-boundary-condition">The Advanced Kernel and the Boundary Condition</h2>
 <p>The advanced displacement reverses both pole shifts and produces the mirror kernel</p>
 <p>$$
