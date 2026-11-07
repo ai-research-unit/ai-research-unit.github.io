@@ -102,7 +102,7 @@ $$
 \left(d^2a_{lm}/d{r'_{t}}^2\right)(r'_t) + \omega_l^2\,a_{lm}(r'_t) = 0 ,
 $$
 
-with a frequency $\omega_l$ that depends on the order $l$ and on the body's constitution. For the **spherical** equilibrium the frequency is independent of the azimuthal index $m$, so the $2l+1$ modes of order $l$ are degenerate and the solution is $a_{lm}(r'_t) = A_{lm}\cos(\omega_l r'_t + \theta_{\mathrm{pha},lm})$; a non-spherical equilibrium lifts that degeneracy, and the frequency then acquires an $m$-dependence of order the ellipticity. That splitting is the mechanism the rotating-ellipsoid section below makes use of.
+with a frequency $\omega_l$ that depends on the order $l$ and on the body's constitution. For the **spherical** equilibrium the frequency is independent of the azimuthal index $m$, so the $2l+1$ modes of order $l$ are degenerate and the solution is $a_{lm}(r'_t) = A_{lm}\cos(\omega_l r'_t/c + \theta_{\mathrm{pha},lm})$; a non-spherical equilibrium lifts that degeneracy, and the frequency then acquires an $m$-dependence of order the ellipticity. That splitting is the mechanism the rotating-ellipsoid section below makes use of.
 
 The classic and exactly solvable case is **Rayleigh's vibrating liquid drop**, for which the restoring force is surface tension. The frequency of the $l$-th mode is the standard result
 
@@ -158,10 +158,10 @@ on the principal axes, with $\epsilon_{ij}$ the traceless symmetric strain. The 
 
 ### A Vibrating Mode Is an Oscillating Moment
 
-Combining the two results, a single quadrupole mode $a_2(r'_t) = A\cos\omega_2 r'_t$ produces a strain $\epsilon_{ij}(r'_t)\propto a_2(r'_t)$ and hence a quadrupole moment
+Combining the two results, a single quadrupole mode $a_2(r'_t) = A\cos(\omega_2 r'_t/c)$ produces a strain $\epsilon_{ij}(r'_t)\propto a_2(r'_t)$ and hence a quadrupole moment
 
 $$
-\boxed{\;\mathrm{Sd}_{ij}(r'_t) = \mathcal{Q}^{(0)}_{ij}\cos\omega_2 r'_t\;},
+\boxed{\;\mathrm{Sd}_{ij}(r'_t) = \mathcal{Q}^{(0)}_{ij}\cos(\omega_2 r'_t/c)\;},
 $$
 
 oscillating at the **mode frequency** $\omega_2$. The body's quadrupole moment is thus a harmonic oscillator. A general vibration is a superposition of modes $l = 2, 3, \dots$, and its multipole moments oscillate at the corresponding mode frequencies — the tower of oscillation frequencies is the same tower as the multipole series.
@@ -190,16 +190,16 @@ $$
 
 ### The $2\Omega$ Frequency
 
-Carrying out the rotation about $\vec e_z$ gives, with the rotation matrix $R = R_3(\Omega r'_t)$ and $\mathcal{Q}^{(lab)} = R\mathcal{Q}^{(b)}R^{\mathsf{T}}$,
+Carrying out the rotation about $\vec e_z$ gives, with the rotation matrix $R = R_3(\Omega r'_t/c)$ and $\mathcal{Q}^{(lab)} = R\mathcal{Q}^{(b)}R^{\mathsf{T}}$,
 
 $$
 \begin{aligned}
-\mathcal{Q}^{(lab)}_{xx}(r'_t) &= \lambda_1\cos^2(\Omega r'_t) + \lambda_2\sin^2(\Omega r'_t)
-= \frac{\lambda_1+\lambda_2}{2} + \frac{\lambda_1-\lambda_2}{2}\cos 2\Omega r'_t ,\\
-\mathcal{Q}^{(lab)}_{yy}(r'_t) &= \lambda_1\sin^2(\Omega r'_t) + \lambda_2\cos^2(\Omega r'_t)
-= \frac{\lambda_1+\lambda_2}{2} - \frac{\lambda_1-\lambda_2}{2}\cos 2\Omega r'_t ,\\
-\mathcal{Q}^{(lab)}_{xy}(r'_t) &= (\lambda_1-\lambda_2)\sin(\Omega r'_t)\cos(\Omega r'_t)
-= \frac{\lambda_1-\lambda_2}{2}\sin 2\Omega r'_t ,\\
+\mathcal{Q}^{(lab)}_{xx}(r'_t) &= \lambda_1\cos^2(\Omega r'_t/c) + \lambda_2\sin^2(\Omega r'_t/c)
+= \frac{\lambda_1+\lambda_2}{2} + \frac{\lambda_1-\lambda_2}{2}\cos(2\Omega r'_t/c) ,\\
+\mathcal{Q}^{(lab)}_{yy}(r'_t) &= \lambda_1\sin^2(\Omega r'_t/c) + \lambda_2\cos^2(\Omega r'_t/c)
+= \frac{\lambda_1+\lambda_2}{2} - \frac{\lambda_1-\lambda_2}{2}\cos(2\Omega r'_t/c) ,\\
+\mathcal{Q}^{(lab)}_{xy}(r'_t) &= (\lambda_1-\lambda_2)\sin(\Omega r'_t/c)\cos(\Omega r'_t/c)
+= \frac{\lambda_1-\lambda_2}{2}\sin(2\Omega r'_t/c) ,\\
 \mathcal{Q}^{(lab)}_{zz}(r'_t) &= \lambda_3 , \qquad \mathcal{Q}^{(lab)}_{xz} = \mathcal{Q}^{(lab)}_{yz} = 0 .
 \end{aligned}
 $$
@@ -210,7 +210,7 @@ $$
 \boxed{\;\omega_{quad} = 2\Omega\;},
 $$
 
-not at the rotation frequency itself. The reason is visible in the angular decomposition: the body-frame quadrupole $\mathcal{Q}^{(b)}$ has azimuthal components $m_2 = 0$ and $m_2 = \pm 2$ about the rotation axis, and a body-frame component of azimuthal index $m_2$ appears in the lab frame with the time dependence $\exp(im_2\Omega r'_t)$. The $m_2 = \pm 2$ components therefore carry $2\Omega$, and the $m_2 = 0$ component is time-independent.
+not at the rotation frequency itself. The reason is visible in the angular decomposition: the body-frame quadrupole $\mathcal{Q}^{(b)}$ has azimuthal components $m_2 = 0$ and $m_2 = \pm 2$ about the rotation axis, and a body-frame component of azimuthal index $m_2$ appears in the lab frame with the time dependence $\exp(i m_2\Omega r'_t/c)$. The $m_2 = \pm 2$ components therefore carry $2\Omega$, and the $m_2 = 0$ component is time-independent.
 
 ### The Axisymmetric Case
 
@@ -275,13 +275,13 @@ The moments $\mathrm{Sd}_{ij}(r'_t)$, $\mathrm{Sd}_{ijk}(r'_t), \dots$ are the s
 
 ### Power Scaling
 
-The radiated power from a time-varying multipole of order $l$ scales with the frequency as a high power. For an electric quadrupole, the standard long-wavelength result gives $P\propto|d^3Q/d{r'_{t}}^3|^2$; for a moment oscillating as $\mathcal{Q}\propto\cos\omega r'_t$ this gives $d^3Q/d{r'_{t}}^3\propto\omega^3$ and
+The radiated power from a time-varying multipole of order $l$ scales with the frequency as a high power. For an electric quadrupole, the standard long-wavelength result gives $P\propto|d^3Q/d{r'_{t}}^3|^2$; for a moment oscillating as $\mathcal{Q}\propto\cos(\omega r'_t/c)$ this gives $d^3Q/d{r'_{t}}^3\propto\omega^3$ and
 
 $$
 P \;\propto\; \omega^6 .
 $$
 
-This has been verified by direct numerical differentiation at a step $\delta = 10^{-3}$: the amplitude of the third time derivative of $A\cos\omega r'_t$ equals $A\omega^3$ to five digits at $\omega = 1, 2, 3$, so its square scales as $\omega^6$. The rapid power law is why the lowest available multipole dominates: for a rotating triaxial body, whose lowest oscillating moment is the quadrupole at $2\Omega$, the radiated power grows as $(2\Omega)^6$. The result is standard and is quoted for the quadrupole; the corresponding formulas for the higher multipoles carry the same structure with a faster power of $\omega$, and they are not needed here.
+This has been verified by direct numerical differentiation at a step $\delta = 10^{-3}$: the amplitude of the third time derivative of $A\cos(\omega r'_t/c)$ equals $A\omega^3$ to five digits at $\omega = 1, 2, 3$, so its square scales as $\omega^6$. The rapid power law is why the lowest available multipole dominates: for a rotating triaxial body, whose lowest oscillating moment is the quadrupole at $2\Omega$, the radiated power grows as $(2\Omega)^6$. The result is standard and is quoted for the quadrupole; the corresponding formulas for the higher multipoles carry the same structure with a faster power of $\omega$, and they are not needed here.
 
 ### The Biquaternion Reading
 

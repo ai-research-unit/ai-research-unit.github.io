@@ -30,7 +30,7 @@ Seven problems are worked below, one per section.
 
 ## Problem 2: The Two Weyl Halves and the Mass Term
 
-This problem writes every mass through $k_m=m\,c/\hbar$ and every phase through $\omega r'_t/c$; the mass-shell paragraph gathers the two factors.
+This problem writes every mass through $k_m=m\,c/\hbar$ and every phase through one element, the four-momentum divided by $\hbar$; the mass-shell paragraph divides once and reads the two coordinates off the quotient.
 
 **The gradient.** The biquaternionic gradient $\tilde\nabla$ is one element and acts by left multiplication (*Operator and Calculus Conventions*, §*The Operators*). It therefore keeps each letter (Problem 1), and its quaternion conjugate $\tilde\nabla^{\natural}$ is a conjugation of the same operator and not a second derivative.
 
@@ -54,6 +54,8 @@ $$
 
 Each is a one-sided equation for one value, and neither contains the other part. Each is a **Weyl equation**, one per value, and the massless field is two independent one-sided fields.
 
+In the wave-number language of the mass-shell paragraph below, $m=0$ is the single condition $\langle\tilde K_{\Phi}\rangle_{\natural}=0$: the element is a zero divisor of $\mathbb{B}$, and $k_{t}^{\prime}=k_{\Phi}$, which is the vacuum null-wave relation $\omega=c\,|\vec k_{\Phi}|$. The decoupling of the two values and the vanishing of the norm are the same fact about the same element, seen once on the field and once on its exponent. Nothing in the massless case singles out either value, which is why the two Weyl equations can be imposed separately.
+
 **The massive case.** Apply $\tilde\nabla^{\natural}$ to the first equation and use the second:
 
 $$
@@ -68,13 +70,31 @@ $$
 
 and with $\frac{m\,c}{k_m}$ and $c$ restored the same statement is $(\Box - k_m^{2})\tilde{Ξ}_{\mathrm{sp}}=0$. The sign on the time term of $\Box$ is the series convention of the material sector, and the article uses that one operator and no second one. Thus the mass term, and only the mass term, couples the two values: when $m=0$ each part separately obeys a one-sided equation; for $m\neq0$ it obeys the Klein–Gordon equation. Here $k_m=mc/\hbar$ is the mass wave number, the inverse of the mass length.
 
-**Mass shell.** For a plane wave $\tilde{Ξ}_{\mathrm{sp}}\propto\exp(-ik_0x_0+i\vec k\cdot(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z))$ with $x_0 = r'_{t}$, the Klein–Gordon equation gives $k_0^2 = \vec k^2 + k_m^{2}$. Equivalently, with the four-momentum $\tilde{P}_{\Phi} = iE/c\,e_t + \vec p\in\mathbb{B}_{\Phi}$ and $k =\frac{k_m\,P}{m\,c}$, whose components are $(k_0,\vec k) = (k_E,\vec p\,k_{\mathrm{mo}})$,
+**Mass shell.** The phase of every plane wave in this exercise is one real number, the scalar part of a product of two elements. The four-momentum is $\tilde{P}_{\Phi} = i\,\frac{E}{c}\,e_t + \vec p\in\mathbb{B}_{\Phi}$, and it is divided once by $\hbar=\frac{m\,c}{k_m}$, which is real and central, to give the wave-number biquaternion
 
 $$
-\langle\tilde{P}_{\Phi}\rangle_{\natural} = \tilde{P}_{\Phi}\tilde{P}_{\Phi}^{\natural} = -\frac{E^2}{c^2} + \vec p^2 = -m^2c^2 \qquad(\vec p^2=|\vec p|^2),
+\tilde K_{\Phi}=\frac{\tilde P_{\Phi}}{\hbar}=\frac{1}{\hbar}\left(i\,\frac{E}{c}\,e_t+\vec p\right)=i\,k_{t}^{\prime}e_t+\vec k_{\Phi}\ \in\mathbb{B}_{\Phi},
+\qquad
+k_{t}^{\prime}=\frac{E}{\hbar\,c}=\frac{\omega}{c},
+\qquad
+\vec k_{\Phi}=\frac{\vec p}{\hbar},
 $$
 
-i.e. $E^2 = \vec p^2c^2 + m^2c^4$. Here $k_{\mathrm{mo}}=\frac{k_m\,p}{m\,c}$ and $k_E=E/(\frac{m\,c^{2}}{k_m})$ are the momentum and energy lengths.
+so a plane wave is $\tilde{Ξ}_{\mathrm{sp}}\propto\exp\!\big(i\,\mathrm{Sc}(\tilde K_{\Phi}\tilde R_\Phi^{\natural})\big)$ with $\mathrm{Sc}(\tilde K_{\Phi}\tilde R_\Phi^{\natural})=\vec k_{\Phi}\cdot\vec r-k_{t}^{\prime}r'_{t}$, and the exponent is an inverse length against a length, dimensionless by construction with no factor of $c$ left to place by hand.
+
+The division acts on the norm as a division by $\hbar^{2}$, and the mass shell is the statement that the quotient's norm is the mass wave number squared:
+
+$$
+\langle\tilde K_{\Phi}\rangle_{\natural}=\frac{\tilde{P}_{\Phi}\tilde{P}_{\Phi}^{\natural}}{\hbar^{2}}=-\frac{E^2}{\hbar^{2}c^{2}}+\frac{\vec p^{\,2}}{\hbar^{2}}=-k_{t}^{\prime\,2}+k_{\Phi}^{2}=-k_m^{2},
+\qquad
+-k_{t}^{\prime\,2}+k_{\Phi}^{2}=\frac{1}{\hbar^{2}}\left(-\frac{E^2}{c^2}+\vec p^{\,2}\right)=-\frac{m^2c^2}{\hbar^{2}},
+$$
+
+and $-\frac{E^2}{c^2}+\vec p^{\,2}=-m^2c^2$ is the four-momentum line the article already had, i.e. $E^2 = \vec p^2c^2 + m^2c^4$. The three statements are one shell, written on the momentum, on the coordinates and in the mass wave number. The Klein–Gordon equation returns the identical condition without any further input: the d'Alembertian acts on the plane wave as multiplication by $-k_{t}^{\prime\,2}+k_{\Phi}^{2}=\langle\tilde K_{\Phi}\rangle_{\natural}$, so $(\Box-k_m^{2})\tilde{Ξ}_{\mathrm{sp}}=0$ is $\langle\tilde K_{\Phi}\rangle_{\natural}-k_m^{2}=0$, that is $k_{t}^{\prime\,2}=k_{\Phi}^{2}+k_m^{2}$. The operator and the element carry the same norm, which is why the shell can be read off either.
+
+**What the earlier display of this paragraph did.** It wrote the plane wave as $\exp(-ik_0x_0+i\vec k\cdot(r_x\vec e_x+r_y\vec e_y+r_z\vec e_z))$ with $x_0=r'_t$, and the quotient as $k=\frac{k_m P}{m\,c}$ with components $(k_0,\vec k)=(k_E,\vec p\,k_{\mathrm{mo}})$, naming $k_{\mathrm{mo}}=\frac{k_m p}{m\,c}$ and $k_E=E/(\frac{m\,c^{2}}{k_m})$ the *momentum* and *energy lengths*. The ratio $\frac{k_m}{m\,c}$ is $\frac{1}{\hbar}$, so the number in each entry was right; what was wrong is everything about the reading. The two symbols are inverse lengths, not lengths — their reciprocals are lengths — so the names were the opposite of the content. Neither is a third object: $\frac{k_m p}{m\,c}=\frac{p}{\hbar}=|\vec k_{\Phi}|$ is the modulus of the spatial coordinate, and $E/(\frac{m\,c^{2}}{k_m})=\frac{E}{\hbar\,c}=k_{t}^{\prime}$ is the temporal one, so the two named quantities were the two coordinates of $\tilde K_{\Phi}$ under other letters. And $k_0$ and $\vec k$ were the same coordinates written without the element that produces them, which left the reader to check the exponent $k_0x_0-\vec k\cdot\vec r$ for dimensionlessness on his own. With the element written, the check is not needed: $\mathrm{Sc}(\tilde K_{\Phi}\tilde R_\Phi^{\natural})$ is an inverse length times a length by construction.
+
+**The numbers.** For the electron, $k_m=\frac{m_ec}{\hbar}=2.589605\times10^{12}\ \mathrm{m^{-1}}$ and $1/k_m=386.159$ fm; at $|\vec p|/(m_ec)=0.37417$ the coordinates are $k_{t}^{\prime}=2.764945\times10^{12}\ \mathrm{m^{-1}}$ and $k_{\Phi}=9.689525\times10^{11}\ \mathrm{m^{-1}}$, and $-k_{t}^{\prime\,2}+k_{\Phi}^{2}=-6.706054\times10^{24}\ \mathrm{m^{-2}}$ agrees with $-k_m^{2}$ to $1.6\times10^{-16}$ relative. The ratio $k_{\Phi}/k_m=0.37417$ returns the momentum fraction, and $\omega=ck_{t}^{\prime}=8.289\times10^{20}\ \mathrm{s^{-1}}$, so the exponent $\vec k_{\Phi}\cdot\vec r-k_{t}^{\prime}r'_t$ is a number for any lengths in metres.
 
 **The second Dirac equation.** Two equations carry the name, and they must not be read as one. The pair above is the **one-sided** form of the equation: both gradients act by left multiplication, the field is one element, and the mass is the coupling between the two values. The **two-sided** form of the equation is a single field equation on $F\in\mathbb{B}$, Kravchenko's form,
 
@@ -343,7 +363,7 @@ The four contraction sums are fixed by the metric, because a cell's square is. W
 
 ## Summary
 
-Seven problems were solved. (1) The subscript takes two values and there are exactly two; every element is the sum of one part of each, and only the zero element is both; a product takes the letter of its right factor, and left multiplication keeps it, so the value of a part is Lorentz invariant. (2) The massless pair decouples into two independent one-sided equations, one per value; the mass term couples the values, and each part obeys $(\Box-k_m^{2})\tilde{Ξ}_{\mathrm{sp}} = 0$, with mass shell $k_0^2 = \vec k^2+k_m^{2}$. The one-sided chiral pair is one of the two Dirac equations of the corpus; the two-sided form carries the same chirality coupling in a single equation, with the mass term a conjugation together with a right multiplication by the declared unit. (3) Under a boost the two parts transform by inverse elements, because $\bar{\tilde U}_{\Psi,\mathrm b}=\tilde U_{\Psi,\mathrm b}^{-1}$; under a rotation they transform by the same element, because a rotation rotor is real; in general $\bar{\tilde U}=(\tilde U^{*})^{-1}$. (4) The quaternionic form is invariant, symmetric and nondegenerate, vanishes on each value and pairs one value with the other, so each value is self-dual without being self-conjugate. (5) The bilinear gives $V = i\cdot\tfrac12(wv^{*}+vw^{*})\in\mathbb{B}_{\Phi}$, transforming by the sandwich $UVU^{*}$; one element gives a null four-vector, and the vector action is the product of two field factors. (6) A $2\pi$ rotation acts as $-e_t$ on the field and as the identity on four-vectors, and a $4\pi$ rotation as the identity on both: the double cover $SO^{+}(1,3)\cong SL(2,\mathbb{C})/\{\pm e_t\}$. (7) The sandwich is the bilinear shadow of the one-sided action; the sign cancels in the former but not in the latter, and the Hermitian form on one value and the other is invariant.
+Seven problems were solved. (1) The subscript takes two values and there are exactly two; every element is the sum of one part of each, and only the zero element is both; a product takes the letter of its right factor, and left multiplication keeps it, so the value of a part is Lorentz invariant. (2) The massless pair decouples into two independent one-sided equations, one per value; the mass term couples the values, and each part obeys $(\Box-k_m^{2})\tilde{Ξ}_{\mathrm{sp}} = 0$. Every phase is $\mathrm{Sc}(\tilde K_{\Phi}\tilde R_\Phi^{\natural})$ with $\tilde K_{\Phi}=\tilde P_{\Phi}/\hbar=i k_{t}^{\prime}e_t+\vec k_{\Phi}$, and the mass shell is one line on its coordinates, $\langle\tilde K_{\Phi}\rangle_{\natural}=-k_{t}^{\prime\,2}+k_{\Phi}^{2}=-k_m^{2}$; at $m=0$ the same line reads $k_{t}^{\prime}=k_{\Phi}$, the null element of the two decoupled Weyl equations. The one-sided chiral pair is one of the two Dirac equations of the corpus; the two-sided form carries the same chirality coupling in a single equation, with the mass term a conjugation together with a right multiplication by the declared unit. (3) Under a boost the two parts transform by inverse elements, because $\bar{\tilde U}_{\Psi,\mathrm b}=\tilde U_{\Psi,\mathrm b}^{-1}$; under a rotation they transform by the same element, because a rotation rotor is real; in general $\bar{\tilde U}=(\tilde U^{*})^{-1}$. (4) The quaternionic form is invariant, symmetric and nondegenerate, vanishes on each value and pairs one value with the other, so each value is self-dual without being self-conjugate. (5) The bilinear gives $V = i\cdot\tfrac12(wv^{*}+vw^{*})\in\mathbb{B}_{\Phi}$, transforming by the sandwich $UVU^{*}$; one element gives a null four-vector, and the vector action is the product of two field factors. (6) A $2\pi$ rotation acts as $-e_t$ on the field and as the identity on four-vectors, and a $4\pi$ rotation as the identity on both: the double cover $SO^{+}(1,3)\cong SL(2,\mathbb{C})/\{\pm e_t\}$. (7) The sandwich is the bilinear shadow of the one-sided action; the sign cancels in the former but not in the latter, and the Hermitian form on one value and the other is invariant.
 
 ## Summary of Notation
 
@@ -361,6 +381,8 @@ Seven problems were solved. (1) The subscript takes two values and there are exa
 | $\tilde\nabla=\sum_\mu e_\mu\,\partial/\partial R_\mu$ | Biquaternionic gradient |
 | $\Box=\tilde\nabla\tilde\nabla^{\natural}$ | The d'Alembertian, the quaternionic norm of the gradient |
 | $D_3=\sum_k\vec e_k\,\partial/\partial R_k$ | Three-dimensional Cauchy–Riemann operator of the two-sided equation |
+| $\tilde K_{\Phi}=\frac{\tilde P_{\Phi}}{\hbar}=i\,k_{t}^{\prime}e_t+\vec k_{\Phi}$ | Wave-number biquaternion of Problem 2; $k_{t}^{\prime}=E/(\hbar c)=\omega/c$, $\vec k_{\Phi}=\vec p/\hbar$ |
+| $\langle\tilde K_{\Phi}\rangle_{\natural}=-k_{t}^{\prime\,2}+k_{\Phi}^{2}=-k_m^{2}$ | The mass shell read on the coordinates of $\tilde K_{\Phi}$; $0$ at $m=0$ |
 | $\tilde U_{\Psi,\mathrm b} = \cosh\frac{\theta_{\mathrm{rpd}}}{2}\,e_t+i\sinh\frac{\theta_{\mathrm{rpd}}}{2}\,\vec u_{\mathrm b}$ | Boost rotor ($\mathbb{B}_{\Psi}$) |
 | $\tilde u_{\mathrm r} = \cos\frac{\theta}{2}\,e_t+\sin\frac{\theta}{2}\,\vec u_{\mathrm r}$ | Rotation rotor ($\mathbb{B}_{H}$) |
 | $\bar{\tilde U}=(\tilde U^{*})^{-1}$ | The conjugate action for a unit element |

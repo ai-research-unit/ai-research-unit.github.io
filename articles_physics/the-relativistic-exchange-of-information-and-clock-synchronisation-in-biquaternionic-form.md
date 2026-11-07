@@ -74,7 +74,7 @@ $$
 A signal therefore satisfies $\Delta r'_{\mathrm{ret},t} = 0$ or $\Delta r'_t_{\mathrm{adv}} = 0$, and a null plane wave has a phase proportional to one of them. For a wave of four-wavevector $\tilde P_{\Phi} =\frac{m\,c\,(i\omega/c\,e_t + \vec k)}{k_m}$ propagating along $\vec u_k$, the phase of the companion article *Exercise: The Relativistic Doppler Effect*,
 
 $$
-Ξ = \mathrm{Sc}\!\left(\tilde P_{\Phi}\tilde{Q}^{\natural}\right) = \vec k\cdot(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z) - \omega r'_t/c = -\omega\left(r'_t - \frac{\vec u_k\cdot(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)}{c}\right) = -\omega\,r'_{\mathrm{ret},t},
+Ξ = \mathrm{Sc}\!\left(\tilde P_{\Phi}\tilde{Q}^{\natural}\right) = \vec k\cdot(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z) - \omega r'_t/c = -\omega\left(r'_t - \frac{\vec u_k\cdot(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)}{c}\right) = -\omega\,r'_{\mathrm{ret},t}/c,
 $$
 
 is the retarded coordinate multiplied by the frequency. The algebra's phase invariant is thus the statement that an exchange is labelled by a single null coordinate, and it is this coordinate that the signal carries from emitter to receiver.
@@ -341,7 +341,7 @@ The conventions and the results taken over from the relativity series are those 
 
 The exchange of information and the synchronisation of clocks are built from the same objects: the null displacements of the material sector and the biquaternion norm along worldlines.
 
-1. **Signals are null displacements.** Two events are joined by a light signal exactly when their displacement is null, $|\Delta(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)| = c\,\Delta r'_t$, that is, when it is a zero divisor of $\mathbb{B}$. The signal direction satisfies $\Delta(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z) = \pm c\,\Delta r'_t\,\vec u_{\mathrm s}$, and the retarded coordinate $r'_{\mathrm{ret},t} = r'_t-\vec u_{\mathrm s}\cdot(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)/c$ is constant along an outgoing ray. A null plane wave has phase $Ξ = -\omega r'_{\mathrm{ret},t}$.
+1. **Signals are null displacements.** Two events are joined by a light signal exactly when their displacement is null, $|\Delta(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)| = c\,\Delta r'_t$, that is, when it is a zero divisor of $\mathbb{B}$. The signal direction satisfies $\Delta(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z) = \pm c\,\Delta r'_t\,\vec u_{\mathrm s}$, and the retarded coordinate $r'_{\mathrm{ret},t} = r'_t-\vec u_{\mathrm s}\cdot(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)/c$ is constant along an outgoing ray. A null plane wave has phase $Ξ = -\omega r'_{\mathrm{ret},t}/c$.
 
 2. **Clocks read proper time.** The proper time is $\Delta\tau = \int\sqrt{-\langle d\tilde R_\Phi\rangle_{\natural}}/c = \int\sqrt{1-\vec v^2/c^2}\,dr'_t$, and the clock four-velocity is $\tilde{V}_{\Phi} = d\tilde R_\Phi/d\tau = \gamma(ic\,e_t+\vec v)$ with $\langle\tilde{V}_{\Phi}\rangle_{\natural} = -c^2$.
 
@@ -372,7 +372,7 @@ The exchange of information and the synchronisation of clocks are built from the
 | $\vec u_{\mathrm s}$ | Propagation direction |
 | $r'_{\mathrm{ret},t} = r'_t-\vec u_{\mathrm s}\cdot(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)/c$, $r'_{\mathrm{adv},t} = r'_t+\vec u_{\mathrm s}\cdot(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)/c$ | Retarded and advanced radar coordinates |
 | $\tilde P_{\Phi} = i\omega/c\,e_t+\vec k$ | Four-wavevector |
-| $Ξ = \mathrm{Sc}(\tilde P_{\Phi}\tilde{Q}^{\natural}) = -\omega r'_{\mathrm{ret},t}$ | Plane-wave phase |
+| $Ξ = \mathrm{Sc}(\tilde P_{\Phi}\tilde{Q}^{\natural}) = -\omega r'_{\mathrm{ret},t}/c$ | Plane-wave phase |
 | $\tau$, $\Delta\tau$ | Proper time |
 | $\tilde{V}_{\Phi} = \gamma(ic\,e_t+\vec v)$, $\langle\tilde{V}_{\Phi}\rangle_{\natural}=-c^2$ | Clock four-velocity |
 | $\beta = v_b/c$, $\gamma = (1-\beta^2)^{-1/2}$ | Dimensionless speed and Lorentz factor |

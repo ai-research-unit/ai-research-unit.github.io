@@ -230,7 +230,7 @@ $$
 the transverse components satisfy $d\omega_{1}/dr'_t=-\Omega\omega_2$, $d\omega_{2}/dr'_t=\Omega\omega_1$; equivalently
 
 $$
-\omega_1+i\omega_2=\left(\omega_1(0)+i\omega_2(0)\right)\exp(\,i\Omega r'_t).
+\omega_1+i\omega_2=\left(\omega_1(0)+i\omega_2(0)\right)\exp(\,i\Omega r'_t/c).
 $$
 
 The body-frame angular velocity has constant component along the symmetry axis and rotates in the transverse plane at rate $\Omega$; the body-frame angular momentum does the same with the same rate, and the polhode is a circle about the symmetry axis.

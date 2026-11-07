@@ -18,7 +18,17 @@ $$
 k_m=\dfrac{mc}{\hbar}.
 $$
 
-That wave number is the reciprocal of the reduced Compton wavelength of the field, and it is the only one the article needs. It is defined in *The Three Wavenumbers of a Particle*, where it is written $k_m=mc/\hbar$. Below, the mass coefficient is always written $k_m$ and the mass-squared term always $k_m^{2}$. Since $mc=\hbar\,k_m$, the rest energy is $m\,c^{2}$ and the mass shell is $\tilde{P}_{\Phi}\tilde{P}_{\Phi}^{\natural}=-m^{2}\,c^{2}$, so every mass statement is read in this one length. At $m=0$ the pair decouples into the two one-sided equations $\tilde{\nabla}\tilde{Ξ}_{\mathrm{sp},R}=0$ and $\tilde{\nabla}^{\natural}\tilde{Ξ}_{\mathrm{sp},L}=0$, one for each value. No matrix, no column and no array enters either line. A frame is declared once, because the value of a part is read by the frame's third direction, and no further choice is made.
+That wave number is the reciprocal of the reduced Compton wavelength of the field. It is defined in *The Three Wavenumbers of a Particle*, where it is written $k_m=mc/\hbar$, and so are the other two, which are the coordinates of the one element this article's plane waves are built from,
+
+$$
+\tilde K_{\Phi}=\frac{\tilde P_{\Phi}}{\hbar}=i\,k_{t}^{\prime}e_t+\vec k_{\Phi},
+\qquad
+k_{t}^{\prime}=\frac{E}{\hbar\,c}=\frac{\omega}{c},
+\qquad
+\vec k_{\Phi}=\frac{\vec p}{\hbar},
+$$
+
+so that the mass shell is the single line $\langle\tilde K_{\Phi}\rangle_{\natural}=-k_m^{2}$. The three are not independent and none is a length: $k_m$ carries the mass, $k_{t}^{\prime}$ the energy and $\vec k_{\Phi}$ the momentum, each as an inverse length, and the lengths are their reciprocals. Below, the mass coefficient is always written $k_m$ and the mass-squared term always $k_m^{2}$. Since $mc=\hbar\,k_m$, the rest energy is $m\,c^{2}$ and the mass shell is $\tilde{P}_{\Phi}\tilde{P}_{\Phi}^{\natural}=-m^{2}\,c^{2}$, so every mass statement is read in this one wave number. At $m=0$ the pair decouples into the two one-sided equations $\tilde{\nabla}\tilde{Ξ}_{\mathrm{sp},R}=0$ and $\tilde{\nabla}^{\natural}\tilde{Ξ}_{\mathrm{sp},L}=0$, one for each value. No matrix, no column and no array enters either line. A frame is declared once, because the value of a part is read by the frame's third direction, and no further choice is made.
 
 This article develops the biquaternionic formulation of the Dirac equation. The gradient $\tilde{\nabla}$ is the Dirac operator of the algebra: it is first order, it acts by left multiplication, and it squares to the scalar d'Alembertian through its conjugate. The equation is the chiral pair on the two values of the subscript, and each half obeys the Klein–Gordon equation. A second, **two-sided** form of the same equation — Kravchenko's dictionary, in which the spatial derivative acts from the left and the mass term from the right — is developed in *An Explicit Dictionary with Conjugation in the Mass Term*; the two forms are compared in *The One-Sided and the Two-Sided Equation*.
 
@@ -45,7 +55,7 @@ $$
 \;}
 $$
 
-for a field of mass $m$. The gradient differentiates with respect to the coordinates $R_\mu$ and carries the unit of an inverse length, so the term it is equated to carries that unit as well: $m$ alone carries a mass, and $k_m$ carries the inverse length. Since $\hbar=m\,c/k_m$, the length $1/k_m=\hbar/(m\,c)$ is the Compton length of the mass. The parameter $\alpha$ of the harmonic amplitude equation is an inverse length in both entries, and it writes them as $k_E$ and $k_m$. Here $k_E=E/(\frac{m\,c^{2}}{k_m})$ is the energy length.
+for a field of mass $m$. The gradient differentiates with respect to the coordinates $R_\mu$ and carries the unit of an inverse length, so the term it is equated to carries that unit as well: $m$ alone carries a mass, and $k_m$ carries the inverse length. Since $\hbar=m\,c/k_m$, the length $1/k_m=\hbar/(m\,c)$ is the Compton length of the mass. The parameter $\alpha$ of the harmonic amplitude equation is an inverse length in both entries, and the two inverse lengths it uses are the coordinates of $\tilde K_{\Phi}=\tilde P_{\Phi}/\hbar$: the temporal one $k_{t}^{\prime}=E/(\hbar\,c)$ and the mass one $k_m=m\,c/\hbar$. The earlier version of this article printed the temporal one as $k_E=E/(\frac{m\,c^{2}}{k_m})$ and called it *the energy length*; the expression is the same number, since $\frac{m\,c^{2}}{k_m}=\hbar\,c$, but it is a wave number and not a length — the length is its reciprocal $\hbar\,c/E$ — and it is not a second object introduced beside the momentum. The symbol $k_E$ is retired here in favour of $k_{t}^{\prime}$, and $k_m$ remains the only scale in the article that is named after the mass.
 
 The field is one element $\tilde{Ξ}_{\mathrm{sp}}=\tilde{Ξ}_{\mathrm{sp},L}+\tilde{Ξ}_{\mathrm{sp},R}$ of $\mathbb{B}$, and its two parts carry the two values of the subscript. Each line multiplies the part with one value by the gradient and pairs it with the part with the other value; the mass is the term that carries the value across, and it is the only such term in the equation.
 
@@ -233,7 +243,7 @@ $$
 F = \tfrac12\,f\,\bigl(e_t+\alpha/\sqrt{\alpha^2}\bigr)\exp(i\omega r'_t/c) + \tfrac12\,f\,\bigl(e_t-\alpha/\sqrt{\alpha^2}\bigr)\exp(-i\omega r'_t/c),
 $$
 
-where the two factors $\tfrac12(e_t\pm\alpha/\sqrt{\alpha^2})$ are complementary projections built from the unit in the direction of the parameter, and they multiply the field on the right; and $f$ is a solution of the shifted amplitude equation $\vec\nabla f+f\alpha=0$. The pair of signs of the frequency and the pair of right multiplications are one pairing: each half of the field is a projected shifted equation.
+where the two factors $\tfrac12(e_t\pm\alpha/\sqrt{\alpha^2})$ are complementary projections built from the unit in the direction of the parameter, and they multiply the field on the right; and $f$ is a solution of the shifted amplitude equation $\vec\nabla f+f\alpha=0$. Each exponent is $\pm i\,\omega r'_t/c$ with $\omega/c$ an inverse length, that is $\pm i\,k_{t}^{\prime}r'_t$ with $k_{t}^{\prime}=\omega/c$ the temporal coordinate of $\tilde K_{\Phi}$: the two signs of the frequency are the two signs of that one coordinate, and the two projections of the amplitude are the corresponding right multiplications. The pair of signs of the frequency and the pair of right multiplications are one pairing: each half of the field is a projected shifted equation.
 
 **The interpretation the source attaches to it.** The source states that its two projections are *closely related to particle helicity*, and on that interpretation the two halves of the harmonic field are the two helicity components, the half with the plus sign of the frequency being the **neutrino** and the other the **antineutrino**. In the massless case the equation they come from is
 
@@ -253,7 +263,7 @@ $$
 \vec\nabla f + f\alpha = 0,\qquad \alpha=-i\omega\,\vec e_x ,
 $$
 
-which is the shifted equation in the source's normalization, at $c=1$. The parameter is an inverse length, as $\vec\nabla$ is, so the frequency enters it as $\omega/c$: the general-units form of this $\alpha$ is $-i\frac{\omega}{c}\vec e_x$, the inverse length that §*The Mass Shell as the Condition on the Dirac–Maxwell Correspondence* prints as $k_E$. The corpus's *Biquaternion Regular Functions* writes it with $D=i\vec\nabla$, where the same equation reads $Df+f(i\alpha)=0$. The source writes the same amplitude equation in its matrix form, with an operator it calls $D_\omega$; that operator and $\vec\nabla+\cdot\,\alpha$ carry the same kernel, so the analysis is the same. The source derives its results in this massless case — the case it calls the neutrino — while the massive parameter $\alpha = -\bigl(i\omega \vec e_x + k_m \vec e_y\bigr)$, in the same $c=1$ units, is the one carried by the boundary-value treatment of the bag in *Confinement and the Loss of Partonic Information in Biquaternionic Form*.
+which is the shifted equation in the source's normalization, at $c=1$. The parameter is an inverse length, as $\vec\nabla$ is, so the frequency enters it as $\omega/c$: the general-units form of this $\alpha$ is $-i\frac{\omega}{c}\vec e_x$, the inverse length that is the temporal coordinate $k_{t}^{\prime}=\omega/c$ of $\tilde K_{\Phi}$ and that §*The Mass Shell as the Condition on the Dirac–Maxwell Correspondence* uses as the temporal half of $\alpha$. The corpus's *Biquaternion Regular Functions* writes it with $D=i\vec\nabla$, where the same equation reads $Df+f(i\alpha)=0$. The source writes the same amplitude equation in its matrix form, with an operator it calls $D_\omega$; that operator and $\vec\nabla+\cdot\,\alpha$ carry the same kernel, so the analysis is the same. The source derives its results in this massless case — the case it calls the neutrino — while the massive parameter $\alpha = -\bigl(i\omega \vec e_x + k_m \vec e_y\bigr)$, in the same $c=1$ units, is the one carried by the boundary-value treatment of the bag in *Confinement and the Loss of Partonic Information in Biquaternionic Form*.
 
 With that one remark the three theorems of the hyperholomorphic theory hold for the harmonic field in the same shape as for the electromagnetic field of the companion *The Time-Harmonic Maxwell Operator and the Quaternionic Cauchy Integral*: a **Cauchy integral formula**, with the Cauchy-type operator $\mathcal{C}_{\mathrm{cau},\omega}$ of the amplitude equation acting as the identity on a field of the kernel that is continuous up to the boundary; the **Plemelj–Sokhotski formulas**, which express the one-sided boundary limits of $\mathcal{C}_{\mathrm{cau},\omega} f$ for Hölder data through the principal-value integral; and a **boundary-value criterion**, that a Hölder function on the boundary is the boundary value of a solution of the amplitude equation if and only if it is its own $\mathcal{C}_{\mathrm{cau},\omega}$ image. This is the refund of the price recorded in *An Explicit Dictionary with Conjugation in the Mass Term*: the conjugation obstructs the Cauchy kernel on the two-sided image, and changing the variable back hands the kernel over. It is also the whole content of the second half of the source's title, and it is the Dirac half of the source's thesis — the same parametric equation, at one value of its parameter, is the time-harmonic Maxwell system and, at another, the time-harmonic Dirac system, so that one Cauchy theory serves both. The Dirac case is an instance of the general boundary-value criterion $P_\alpha f = f$ of *Biquaternion Regular Functions*; what the physics register adds to the general statement is the identification of the parameter and the fields.
 
@@ -422,19 +432,45 @@ in agreement with the companion article on the Klein–Gordon equation. This is 
 
 ## Plane-Wave Solutions
 
+Every phase in this article is built from one element, the four-momentum divided by $\hbar$,
+
+$$
+\tilde K_{\Phi}=\frac{\tilde P_{\Phi}}{\hbar}=\frac{1}{\hbar}\left(i\,p'_{t}\,e_t+\vec p_{\Phi}\right)=i\,k_{t}^{\prime}e_t+\vec k_{\Phi}\ \in\mathbb{B}_{\Phi},
+\qquad
+k_{t}^{\prime}=\frac{E}{\hbar\,c}=\frac{\omega}{c},
+\qquad
+\vec k_{\Phi}=\frac{\vec p}{\hbar},
+$$
+
+and its coordinates — one temporal, three spatial — are read off the quotient instead of being postulated beside it. The division is term by term because $\hbar$ is real and central: it changes the unit of every coefficient and nothing else, so the element stays in $\mathbb{B}_{\Phi}$ and its norm is the mass shell divided by $\hbar^{2}$,
+
+$$
+\langle\tilde K_{\Phi}\rangle_{\natural}=\frac{\tilde P_{\Phi}\tilde P_{\Phi}^{\natural}}{\hbar^{2}}=-k_{t}^{\prime\,2}+k_{\Phi}^{2}=-\frac{m^{2}c^{2}}{\hbar^{2}}=-k_m^{2},
+$$
+
+where $k_m=m\,c/\hbar$ is the third wave number, the one scale in inverse lengths that the shell needs. It is the coordinates of this single element that the momentum-space equations below act on, and their two independent conditions are the two statements the shell allows: null, $\langle\tilde K_{\Phi}\rangle_{\natural}=0$, for the massless case, and $-k_m^{2}$ for the massive.
+
+The product form $\frac{k_m\,\tilde P_{\Phi}}{m\,c}$, which earlier versions of this article used for the same element, is the same number because the ratio $k_m/(m\,c)$ is $1/\hbar$; it is a correct display and it is not used below. What it costs is the reading: it leaves the three coordinates of $\tilde K_{\Phi}$ unnamed, it presents an inverse length as a wave number multiplied by a momentum and divided by a mass, and it asks the reader to check the exponent for dimensionlessness term by term. Written as a quotient the same element gives its coordinates at sight and gives the derivative once for the whole article,
+
+$$
+\tilde\nabla\,e^{i\,\mathrm{Sc}(\tilde K_{\Phi}\tilde R_\Phi^{\natural})}=i\,\tilde K_{\Phi}\,e^{i\,\mathrm{Sc}(\tilde K_{\Phi}\tilde R_\Phi^{\natural})},
+\qquad
+\tilde\nabla^{\natural}\,e^{i\,\mathrm{Sc}(\tilde K_{\Phi}\tilde R_\Phi^{\natural})}=i\,\tilde K_{\Phi}^{\natural}\,e^{i\,\mathrm{Sc}(\tilde K_{\Phi}\tilde R_\Phi^{\natural})}.
+$$
+
 ### Massless Plane Waves
 
 Plane-wave solutions of the right-handed massless equation are
 
 $$
-\boxed{\;\tilde{Ξ}_{\mathrm{sp}}(\tilde R_\Phi) = \tilde{Ξ}_{\mathrm{sp},0} \exp\!\left(i\,\mathrm{Sc}\!\left(\tilde{P}_{\Phi}\tilde{R}_\Phi^{\natural}\right)\frac{k_m}{m\,c}\right)
-= \tilde{Ξ}_{\mathrm{sp},0}\,\exp(\,i(\vec k\cdot(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)-\omega r'_t/c))\;},
+\boxed{\;\tilde{Ξ}_{\mathrm{sp}}(\tilde R_\Phi) = \tilde{Ξ}_{\mathrm{sp},0} \exp\!\left(i\,\mathrm{Sc}\!\left(\tilde K_{\Phi}\tilde{R}_\Phi^{\natural}\right)\right)
+= \tilde{Ξ}_{\mathrm{sp},0}\,\exp\!\left(i\left(\vec k_{\Phi}\cdot(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)-k_{t}^{\prime}r'_t\right)\right)\;},
 $$
 
-where $\tilde{Ξ}_{\mathrm{sp},0} \in \mathbb{B}$ is a constant biquaternion, $\frac{k_m\,\tilde{P}_{\Phi}}{m\,c}= i k_0 e_t + \vec e_x k_1 + \vec e_y k_2 + \vec e_z k_3$ (with $k_0 = \omega/c$) is the wave biquaternion, and $\tilde R_\Phi = e_t (i r'_t) + \vec e_x r_x + \vec e_y r_y + \vec e_z r_z$ is the four-position biquaternion. The scalar part $\mathrm{Sc}(\tilde{P}_{\Phi}\tilde{R}_\Phi^{\natural})/\hbar = \vec k\cdot(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z) - \omega r'_t/c$ is real, so the exponent $i\,\mathrm{Sc}\frac{k_m\,\tilde{P}_{\Phi}\,\tilde{R}_{\Phi}^{\natural}}{m\,c}$ is a purely imaginary central element; the exponential therefore commutes with $\tilde{Ξ}_{\mathrm{sp},0}$ and differentiates to left multiplication by $\frac{k_m\,i\,\tilde{P}_{\Phi}}{m\,c}$,
+where $\tilde{Ξ}_{\mathrm{sp},0} \in \mathbb{B}$ is a constant biquaternion, $\tilde K_{\Phi}= i k_{t}^{\prime}e_t + \vec e_x k_1 + \vec e_y k_2 + \vec e_z k_3$ is the wave-number biquaternion, with $k_{t}^{\prime}=\omega/c$ and $\vec k_{\Phi}=k_1\vec e_x+k_2\vec e_y+k_3\vec e_z=\vec p/\hbar$, and $\tilde R_\Phi = e_t (i r'_t) + \vec e_x r_x + \vec e_y r_y + \vec e_z r_z$ is the four-position biquaternion. The scalar part $\mathrm{Sc}(\tilde K_{\Phi}\tilde{R}_\Phi^{\natural}) = \vec k_{\Phi}\cdot(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z) - k_{t}^{\prime}r'_t$ is real and dimensionless, an inverse length against a length, so the exponent $i\,\mathrm{Sc}(\tilde K_{\Phi}\tilde{R}_{\Phi}^{\natural})$ is a purely imaginary central element; the exponential therefore commutes with $\tilde{Ξ}_{\mathrm{sp},0}$ and differentiates to left multiplication by $i\,\tilde K_{\Phi}$,
 
 $$
-\tilde{\nabla}\tilde{Ξ}_{\mathrm{sp}} =\frac{k_m\,i\,\tilde{P}_{\Phi}\,\tilde{Ξ}_{\mathrm{sp}}}{m\,c},
+\tilde{\nabla}\tilde{Ξ}_{\mathrm{sp}} =i\,\tilde K_{\Phi}\,\tilde{Ξ}_{\mathrm{sp}},
 $$
 
 so the equation $\tilde{\nabla}\tilde{Ξ}_{\mathrm{sp}} = 0$ becomes
@@ -443,34 +479,41 @@ $$
 \tilde{P}_{\Phi}\tilde{Ξ}_{\mathrm{sp},0}/\hbar = 0,
 $$
 
-i.e., the polarization biquaternion $\tilde{Ξ}_{\mathrm{sp},0}$ is annihilated by the wave biquaternion $\frac{k_m\,\tilde{P}_{\Phi}}{m\,c}$. This is the momentum-space massless equation in the algebra; its kernel has complex dimension two, the two spin states of the field with this value. The two values are the two helicities, so the full massless field is the pair of this equation and its conjugate.
+i.e., the polarization biquaternion $\tilde{Ξ}_{\mathrm{sp},0}$ is annihilated by the wave-number biquaternion $\tilde K_{\Phi}$. This is the momentum-space massless equation in the algebra; its kernel has complex dimension two, the two spin states of the field with this value. The two values are the two helicities, so the full massless field is the pair of this equation and its conjugate.
 
-Nonzero solutions of $\tilde{P}_{\Phi}\tilde{Ξ}_{\mathrm{sp},0}/\hbar = 0$ exist only when $\frac{k_m\,\tilde{P}_{\Phi}}{m\,c}$ is a zero divisor in $\mathbb{B}$, that is, when $\frac{k_m\,\tilde{P}_{\Phi}}{m\,c}$ is null: $\frac{k_m^{2}\,\tilde{P}_{\Phi}\,\tilde{P}_{\Phi}^{\natural}}{m^{2}\,c^{2}}= 0$, equivalently $k_0^2 = \|\vec k\|^2$, the massless dispersion relation. In that case the kernel is a two-dimensional complex vector space, the two spin states; for non-null $\frac{k_m\,\tilde{P}_{\Phi}}{m\,c}$ the kernel is trivial.
+Nonzero solutions of $\tilde K_{\Phi}\tilde{Ξ}_{\mathrm{sp},0} = 0$ exist only when $\tilde K_{\Phi}$ is a zero divisor in $\mathbb{B}$, that is, when it is null: $\langle\tilde K_{\Phi}\rangle_{\natural}=\tilde K_{\Phi}\tilde K_{\Phi}^{\natural}= -k_{t}^{\prime\,2}+k_{\Phi}^{2}= 0$, equivalently $k_{t}^{\prime} = k_{\Phi}$, the massless dispersion relation. In that case the kernel is a two-dimensional complex vector space, the two spin states; for non-null $\tilde K_{\Phi}$ the kernel is trivial.
 
 ### Massive Plane Waves
 
 For the massive equation a single central-phase plane wave,
 
 $$
-\tilde{Ξ}_{\mathrm{sp}}(\tilde R_\Phi) = \tilde{Ξ}_{\mathrm{sp},0} \exp\!\left(i\,\mathrm{Sc}\!\left(\tilde{P}_{\Phi}\tilde{R}_\Phi^{\natural}\right)\frac{k_m}{m\,c}\right) = \tilde{Ξ}_{\mathrm{sp},0}\,\exp(i\theta), \qquad \theta = \vec k\cdot(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z) - \omega r'_t/c,
+\tilde{Ξ}_{\mathrm{sp}}(\tilde R_\Phi) = \tilde{Ξ}_{\mathrm{sp},0} \exp\!\left(i\,\mathrm{Sc}\!\left(\tilde K_{\Phi}\tilde{R}_\Phi^{\natural}\right)\right) = \tilde{Ξ}_{\mathrm{sp},0}\,\exp(i\theta), \qquad \theta = \vec k_{\Phi}\cdot(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z) - k_{t}^{\prime}r'_t,
 $$
 
-does solve the pair, with one polarization biquaternion per value, $\tilde{Ξ}_{\mathrm{sp},0} = \tilde{Ξ}_{\mathrm{sp},0}^L + \tilde{Ξ}_{\mathrm{sp},0}^R$. Differentiating as in the massless case, $\tilde{\nabla}$ acts on $\exp(i\theta)$ as left multiplication by $\frac{k_m\,i\,\tilde{P}_{\Phi}}{m\,c}$ and $\tilde{\nabla}^{\natural}$ acts on it as left multiplication by $\frac{k_m\,i\,\tilde{P}_{\Phi}^{\natural}}{m\,c}$, so the chiral pair becomes the momentum-space system
+does solve the pair, with one polarization biquaternion per value, $\tilde{Ξ}_{\mathrm{sp},0} = \tilde{Ξ}_{\mathrm{sp},0}^L + \tilde{Ξ}_{\mathrm{sp},0}^R$. Differentiating as in the massless case, $\tilde{\nabla}$ acts on $\exp(i\theta)$ as left multiplication by $i\,\tilde K_{\Phi}$ and $\tilde{\nabla}^{\natural}$ acts on it as left multiplication by $i\,\tilde K_{\Phi}^{\natural}$, so the chiral pair becomes the momentum-space system
 
-$$\frac{k_m\,i\,\tilde{P}_{\Phi}\,\tilde{Ξ}_{\mathrm{sp},0}^{R}}{m\,c}= k_m\,\tilde{Ξ}_{\mathrm{sp},0}^L,\frac{k_m\,i\,\tilde{P}_{\Phi}^{\natural}\,\tilde{Ξ}_{\mathrm{sp},0}^{L}}{m\,c}= k_m\,\tilde{Ξ}_{\mathrm{sp},0}^R .
+$$
+i\,\tilde K_{\Phi}\,\tilde{Ξ}_{\mathrm{sp},0}^{R}= k_m\,\tilde{Ξ}_{\mathrm{sp},0}^L,
+\qquad
+i\,\tilde K_{\Phi}^{\natural}\,\tilde{Ξ}_{\mathrm{sp},0}^{L}= k_m\,\tilde{Ξ}_{\mathrm{sp},0}^R .
 $$
 
 Eliminating $\tilde{Ξ}_{\mathrm{sp},0}^L$ gives
 
-$$\frac{k_m^{2}\,\tilde{P}_{\Phi}\,\tilde{P}_{\Phi}^{\natural}}{m^{2}\,c^{2}}\,\tilde{Ξ}_{\mathrm{sp},0}^R = -k_m^{2}\,\tilde{Ξ}_{\mathrm{sp},0}^R ,
+$$
+-\tilde K_{\Phi}\tilde K_{\Phi}^{\natural}\,\tilde{Ξ}_{\mathrm{sp},0}^R = -k_m^{2}\,\tilde{Ξ}_{\mathrm{sp},0}^R ,
+\qquad\text{that is}\qquad
+\langle\tilde K_{\Phi}\rangle_{\natural}\,\tilde{Ξ}_{\mathrm{sp},0}^R = k_m^{2}\,\tilde{Ξ}_{\mathrm{sp},0}^R ,
 $$
 
 so a nonzero solution requires the **mass-shell condition**
 
-$$\frac{k_m^{2}\,\tilde{P}_{\Phi}\,\tilde{P}_{\Phi}^{\natural}}{m^{2}\,c^{2}}=-k_m^{2},
+$$
+\boxed{\;\langle\tilde K_{\Phi}\rangle_{\natural}=\frac{\tilde P_{\Phi}\tilde P_{\Phi}^{\natural}}{\hbar^{2}}=-k_{t}^{\prime\,2}+k_{\Phi}^{2}=-k_m^{2}\;}
 $$
 
-i.e., $-k_0^2 + \|\vec k\|^2 = -k_m^{2}$, which is the standard mass-shell relation $k_0^2 = \|\vec k\|^2 + k_m^{2}$ (with $k_0 = c\,k_E c$). This is the biquaternion form of the standard relativistic energy-momentum relation $E^2 = \vec p^2 c^2 +m^{2}\,c^{4}$ (with $\vec p =\frac{m\,c\,\vec k}{k_m}$), the same shell as the four-momentum kinematics of the preceding section. The two signs of $k_0$ are the two frequency branches — the particle and the antiparticle — and with the two spin states they give the four solutions that the field carries.
+i.e., $k_{t}^{\prime\,2} = k_{\Phi}^{2} + k_m^{2}$, the standard mass-shell relation written in the coordinates of the element, with $k_{t}^{\prime}=\omega/c=E/(\hbar c)$ and $k_{\Phi}=|\vec p|/\hbar$. This is the biquaternion form of the standard relativistic energy-momentum relation $E^2 = \vec p^2 c^2 +m^{2}\,c^{4}$, the same shell as the four-momentum kinematics of the preceding section. The two signs of $k_{t}^{\prime}$ are the two frequency branches — the particle and the antiparticle — and with the two spin states they give the four solutions that the field carries. With the electron's constants the three numbers are $k_m=2.589605\times10^{12}\ \mathrm{m^{-1}}$, $k_{t}^{\prime}=2.764945\times10^{12}\ \mathrm{m^{-1}}$ and $k_{\Phi}=9.689525\times10^{11}\ \mathrm{m^{-1}}$ at $|\vec p|/(mc)=0.37417$, and $-k_{t}^{\prime\,2}+k_{\Phi}^{2}=-6.706054\times10^{24}\ \mathrm{m^{-2}}$ agrees with $-k_m^{2}$ to machine precision.
 
 ### The Field as the Gradient of a Scalar Potential
 
@@ -486,14 +529,15 @@ $$
 $$
 and the field is the shifted conjugate gradient of a potential: one element of $\mathbb{B}$ built from another by differentiation, with no column and no second carrier. At $\kappa = 0$ it is the completion $\tilde{Ξ}_{\mathrm{sp}}\mapsto\tilde{\nabla}^{\natural}\tilde{Ξ}_{\mathrm{sp}}$ of the next section, and for $\kappa \neq 0$ it is its shifted form. The source calls the scalar generator a **C-field** and takes the field to be the convolution of $\tilde{\nabla}^{\natural}_\kappa\tilde{Ξ}_{\mathrm{sp},0}$ with it, which is how the same construction produces extended rather than only elementary solutions; the convolution is the one developed in the companion article on distributions.
 
-**Why the elementary field is null.** For the elementary case the potential is a plane wave, $\xi_{\mathrm{scl}}=\exp(i(\vec k\cdot(r_x\vec e_x+r_y\vec e_y+r_z\vec e_z)-\omega r'_t/c))$, and the field is read off by differentiating it. In the coordinate $Q_t=i r'_t$ the time derivative is $\partial\xi_{\mathrm{scl}}/\partial R_t=-\omega\xi_{\mathrm{scl}}$ and the three spatial ones are $\partial_k\xi_{\mathrm{scl}}=ik_k\xi_{\mathrm{scl}}$, so
+**Why the elementary field is null.** For the elementary case the potential is a plane wave, $\xi_{\mathrm{scl}}=\exp(i(\vec k\cdot(r_x\vec e_x+r_y\vec e_y+r_z\vec e_z)-\omega r'_t/c))$, and the field is read off by differentiating it. Here $\vec k$ is the wave vector of the scalar potential, an element of the corpus distinct from the spinor of the preceding subsections, so its spatial components $k_x,k_y,k_z$ are written with the plain letter and are not the $\vec k_{\Phi}$ of $\tilde K_{\Phi}$; both are inverse lengths. In the coordinate $Q_t=i r'_t$ the time derivative is $\partial\xi_{\mathrm{scl}}/\partial R_t=-\frac{\omega}{c}\xi_{\mathrm{scl}}$ and the three spatial ones are $\partial_k\xi_{\mathrm{scl}}=ik_k\xi_{\mathrm{scl}}$, so every coefficient below is an inverse length,
 $$
-\tilde{\nabla}^{\natural}_\kappa\,\xi_{\mathrm{scl}} = \bigl((\kappa-\omega)\,e_t - i k_x\vec e_x - i k_y\vec e_y - i k_z\vec e_z\bigr)\xi_{\mathrm{scl}} ,
+\tilde{\nabla}^{\natural}_\kappa\,\xi_{\mathrm{scl}} = \Bigl(\bigl(\kappa-\tfrac{\omega}{c}\bigr)\,e_t - i k_x\vec e_x - i k_y\vec e_y - i k_z\vec e_z\Bigr)\xi_{\mathrm{scl}} ,
 $$
 and its quaternion norm is the shifted symbol of the operator,
 $$
-\left\langle\tilde{\nabla}^{\natural}_\kappa\,\xi_{\mathrm{scl}}\right\rangle_{\natural} = (\omega-\kappa)^2 - \|\vec k\|^2 .
+\left\langle\tilde{\nabla}^{\natural}_\kappa\,\xi_{\mathrm{scl}}\right\rangle_{\natural} = \Bigl(\tfrac{\omega}{c}-\kappa\Bigr)^{2} - \|\vec k\|^{2} = \bigl(k_{t}^{\prime}-\kappa\bigr)^{2}-k^{2},
 $$
+with $k_{t}^{\prime}=\omega/c$ and $k=|\vec k|$, so the temporal entry that $\kappa$ shifts is the same coordinate that $\tilde K_{\Phi}$ carries. Without the $\omega/c$ the two displays would add a frequency to an inverse length and the norm would not be an inverse length squared.
 The two lines are one statement in two languages: the norm of the field vanishes exactly when the potential solves the shifted scalar equation, so the field is a zero divisor on the shifted cone, as the massless plane-wave fields of the preceding subsection are on the light cone. The zero-divisor cone of the algebra is the light cone, and the shifted cone is the norm-zero set of the shifted operator. The source normalises its representatives and records separate norm and pseudonorm values for them; the corpus keeps the invariant statement, that the element is null, and the dictionary between the source's mass $m$ and the corpus shift $\kappa$ — $\kappa = -i\,k_m$, so that the source's imaginary mass is a real shift — is the one recorded in the d'Alembertian companion.
 
 **The completion is exhaustive, and the mass takes the place of the shift.** The construction above is not only a way to manufacture examples. In the massive chiral pair the second half is the completion of the first,
@@ -627,9 +671,9 @@ $$
 E^2 =\frac{m^{2}\,c^{2}\,\omega^{2}}{k_m^{2}}+m^{2}\,c^{4}},
 $$
 
-which, with the de Broglie relation $\frac{m\,c\,\omega}{k_m}=pc$ for the Maxwell wave number, is the relativistic dispersion relation $E^2=p^2c^2+m^{2}\,c^{4}$. With the constants carried it reads $k_{t}^{\prime\,2}=k_{\Phi}^{2}+k_m^{2}$, the same statement in the three wave numbers. The paper draws attention to the agreement — the condition on which its Dirac–Maxwell equivalence rests is the same relation that defines the particle's mass — and the corpus records it as what ties the parametric statements together: the parameter that makes the shifted equation solvable is the parameter that puts the field on shell.
+which, with the de Broglie relation $\frac{m\,c\,\omega}{k_m}=pc$ for the Maxwell wave number, is the relativistic dispersion relation $E^2=p^2c^2+m^{2}\,c^{4}$. With the constants carried it reads $k_{t}^{\prime\,2}=k_{\Phi}^{2}+k_m^{2}$, the same statement in the three wave numbers, and the condition $k^2=\alpha^2$ says something even sharper: since $\alpha^2=k_{t}^{\prime\,2}-k_m^{2}$ and the shell gives $k_{t}^{\prime\,2}-k_m^{2}=k_{\Phi}^{2}$, the Maxwell wave number of the equivalent medium equals the spatial coordinate of $\tilde K_{\Phi}$, $k=k_{\Phi}=\frac{|\vec p|}{\hbar}$. At $|\vec p|/(mc)=0.37417$ for the electron that is a single number, $k=\alpha=9.689525\times10^{11}\ \mathrm{m^{-1}}$, computed both ways from $k_{t}^{\prime}=2.764945\times10^{12}$ and $k_m=2.589605\times10^{12}\ \mathrm{m^{-1}}$; the two routes agree to $8\times10^{-16}$ relative. The paper draws attention to the agreement — the condition on which its Dirac–Maxwell equivalence rests is the same relation that defines the particle's mass — and the corpus records it as what ties the parametric statements together: the parameter that makes the shifted equation solvable is the parameter that puts the field on shell.
 
-The same interpretation is why the massless (neutrino) case of the section *The Harmonic Field: Two Projections, and the Helicity Reading* needs no condition at all: at $m=0$, that is $k_m=0$, the parameter is $\alpha=-(i\,k_E)\,\vec e_x$ with $\alpha^2=E^2/(\frac{m^{2}\,c^{4}}{k_m^{2}})$, and $k^2=\alpha^2$ becomes $\omega^2=\frac{k_m^{2}\,E^{2}}{m^{2}\,c^{2}}$, i.e., $\omega=\omega_D$ — the two frequencies coincide, the vacuum null-wave relation $\omega=k$, the case the source calls the neutrino, and the one the corpus records as Imaeda's vacuum Maxwell equation.
+The same interpretation is why the massless (neutrino) case of the section *The Harmonic Field: Two Projections, and the Helicity Reading* needs no condition at all: at $m=0$, that is $k_m=0$, the parameter is $\alpha=-(i\,k_{t}^{\prime})\,\vec e_x$, since $k_{t}^{\prime}=\omega/c$, with $\alpha^2=k_{t}^{\prime\,2}=E^2/(\frac{m^{2}\,c^{4}}{k_m^{2}})$ — the denominator is $(\hbar\,c)^{2}$, so the quotient is an inverse length squared, and it is the norm of the temporal coordinate of $\tilde K_{\Phi}$. Then $k^2=\alpha^2$ becomes $\omega^2=\frac{k_m^{2}\,E^{2}}{m^{2}\,c^{2}}$, i.e., $\omega=\omega_D$ — the two frequencies coincide, the vacuum null-wave relation $\omega=c\,k$, the case the source calls the neutrino, and the one the corpus records as Imaeda's vacuum Maxwell equation.
 
 **What is quoted.** The source's intermediate equations, which restore $c$ and $\frac{m\,c}{k_m}$ at a different point of the reduction, are quoted as its own; the printed power of $c$ in them could not be read from the scan. The two statements used above — the condition $k^2=\alpha^2$ and the central value of $\alpha^2$ in terms of the energy and the mass — are legible, and the mass-shell interpretation follows from them.
 
@@ -703,7 +747,7 @@ The biquaternion formulation adds three things:
 
 **2. A compact notation for the value.** The value of the field is a letter, $L$ or $R$. No index is written: the field is one element, its two parts are named by the letter they carry, and the mass is the pairing between them.
 
-**3. A natural language for relativistic kinematics.** The four-velocity $\tilde{V}_{\Phi}$, the four-momentum $\tilde{P}_{\Phi}$, and the mass-shell relation $\tilde{P}_{\Phi}\tilde{P}_{\Phi}^{\natural} = -m^{2}\,c^{2}$ are all natural objects in the biquaternion algebra. The Dirac equation is naturally stated in terms of these objects, and the plane-wave solutions are naturally written in terms of the wave biquaternion $\frac{k_m\,\tilde{P}_{\Phi}}{m\,c}$ and the four-position $\tilde R_\Phi$.
+**3. A natural language for relativistic kinematics.** The four-velocity $\tilde{V}_{\Phi}$, the four-momentum $\tilde{P}_{\Phi}$, and the mass-shell relation $\tilde{P}_{\Phi}\tilde{P}_{\Phi}^{\natural} = -m^{2}\,c^{2}$ are all natural objects in the biquaternion algebra. The Dirac equation is naturally stated in terms of these objects, and the plane-wave solutions are naturally written in terms of the wave-number biquaternion $\tilde K_{\Phi}=\tilde P_{\Phi}/\hbar=i k_{t}^{\prime}e_t+\vec k_{\Phi}$ and the four-position $\tilde R_\Phi$.
 
 ### The Mass as a Non-Integrable Phase
 
@@ -793,7 +837,7 @@ one for each value; the single equation $\tilde{\nabla}\tilde{Ξ}_{\mathrm{sp}}=
 
 The relativistic kinematic relations are expressed in the same language: the four-velocity $\tilde{V}_{\Phi} = \gamma(ic\, e_t + \vec v)$ satisfies $\tilde{V}_{\Phi}\tilde{V}_{\Phi}^{\natural} = -c^2$, the four-momentum $\tilde{P}_{\Phi} =m\,\tilde{V}_{\Phi}$ satisfies the mass-shell relation $\tilde{P}_{\Phi}\tilde{P}_{\Phi}^{\natural} = -m^{2}\,c^{2}$, and the four-position $\tilde R_\Phi = i r'_t\, e_t + r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z$ gives the invariant interval $ds^2 = \langle d\tilde R_\Phi\rangle_{\natural} = d\tilde R_\Phi\,d\tilde{R}_\Phi^{\natural}$.
 
-The plane-wave solutions of the massless equation with the plus value are $\tilde{Ξ}_{\mathrm{sp}} = \tilde{Ξ}_{\mathrm{sp},0}\exp\!\left(i\,\mathrm{Sc}\frac{k_m\,\tilde{P}_{\Phi}\,\tilde{R}_{\Phi}^{\natural}}{m\,c}\right) = \tilde{Ξ}_{\mathrm{sp},0}\,\exp(\,i(\vec k\cdot(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)-\omega r'_t/c))$ with $\tilde{P}_{\Phi}\tilde{Ξ}_{\mathrm{sp},0}/\hbar = 0$, nonzero only for null $\frac{k_m\,\tilde{P}_{\Phi}}{m\,c}$, giving the two spin states of that value; the other value has the conjugate plane waves, and the two are the two helicities, which a massless plane wave fixes to $-\tfrac12$ and $+\tfrac12$. The massive plane waves satisfy the mass-shell condition $\tilde{P}_{\Phi}\tilde{P}_{\Phi}^{\natural}=-m^{2}\,c^{2}$; the two frequency branches are the particle and the antiparticle, and with the two spin states they give the four solutions the field carries.
+The plane-wave solutions of the massless equation with the plus value are $\tilde{Ξ}_{\mathrm{sp}} = \tilde{Ξ}_{\mathrm{sp},0}\exp\!\left(i\,\mathrm{Sc}(\tilde K_{\Phi}\tilde{R}_{\Phi}^{\natural})\right) = \tilde{Ξ}_{\mathrm{sp},0}\,\exp\!\left(i(\vec k_{\Phi}\cdot(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)-k_{t}^{\prime}r'_t)\right)$ with $\tilde K_{\Phi}\tilde{Ξ}_{\mathrm{sp},0} = 0$, nonzero only for null $\tilde K_{\Phi}$, giving the two spin states of that value; the other value has the conjugate plane waves, and the two are the two helicities, which a massless plane wave fixes to $-\tfrac12$ and $+\tfrac12$. The massive plane waves satisfy the mass-shell condition $\tilde{P}_{\Phi}\tilde{P}_{\Phi}^{\natural}=-m^{2}\,c^{2}$; the two frequency branches are the particle and the antiparticle, and with the two spin states they give the four solutions the field carries.
 
 The spherical and cylindrical solutions are constructed from harmonic functions by the completion $\tilde{Ξ}_{\mathrm{sp}}\mapsto\tilde{\nabla}^{\natural}\tilde{Ξ}_{\mathrm{sp}}$, and they describe the angular momentum states of the fermion field and the waveguide modes.
 
@@ -846,7 +890,8 @@ The biquaternion framework provides a compact and unified language for the Maxwe
 | $\xi_{\mathrm{scl}}$ | Scalar (pseudoscalar-potential) coefficient of the shifted Dirac operator |
 | $\tfrac12(e_t\pm\alpha/\sqrt{\alpha^2})$ | The two complementary projections of the harmonic field, multiplying on the right; they split it into the two signs of the frequency, and in the source's reading the two helicities |
 | $\mathcal{C}_{\mathrm{cau},\omega}$ | The Cauchy-type operator of the amplitude equation; the Cauchy integral formula, the Plemelj–Sokhotski formulas and the boundary-value criterion $\tilde{Ξ}_{\mathrm{sp}} = \mathcal{C}_{\mathrm{cau},\omega}\tilde{Ξ}_{\mathrm{sp}}$ on $\Gamma$ hold for it |
-| $\frac{k_m\,\tilde{P}_{\Phi}}{m\,c}$ | Wave biquaternion |
+| $\tilde K_{\Phi}=\frac{\tilde P_{\Phi}}{\hbar}=i k_{t}^{\prime}e_t+\vec k_{\Phi}$ | Wave-number biquaternion; $k_{t}^{\prime}=E/(\hbar c)=\omega/c$, $\vec k_{\Phi}=\vec p/\hbar$ |
+| $\langle\tilde K_{\Phi}\rangle_{\natural}=-k_{t}^{\prime\,2}+k_{\Phi}^{2}=-k_m^{2}$ | The mass shell, read on the coordinates of $\tilde K_{\Phi}$ |
 | $U_{\mathrm{vec},\mu}$ | Unit complex four-vector carrying the mass term, $k_m\tilde{Ξ}_{\mathrm{sp}}^{\dagger}iR_{\mathrm{axf},\vec e_x}\tilde{Ξ}_{\mathrm{sp}}=\tilde{Ξ}_{\mathrm{sp}}^{\dagger}iR_{\mathrm{axf},\vec e_x}(iK_t\,e_t\tilde{Ξ}_{\mathrm{sp}} \vec e_x+i\sum_k B_{\mathrm{boost},k}\,\vec e_k\tilde{Ξ}_{\mathrm{sp}} \vec e_y)$; $U_{\mathrm{vec},\mu}=\frac{p_{\mu}}{m}$ on shell, $\sum_\mu\varepsilon_\mu U_{\mathrm{vec},\mu} U_{\mathrm{vec},\mu}=1$ |
 | $iR_{\mathrm{axf},\vec e_x}$ | The timelike cell, the Dirac adjoint in the bilinear covariants |
 | $\lvert F\rvert^2 = \langle F\rangle_{*} = \sum_\mu\lvert F_\mu\rvert^2$ | Hermitian norm of the biquaternion field, the definite one; the probability density of a complex field |
@@ -854,7 +899,7 @@ The biquaternion framework provides a compact and unified language for the Maxwe
 ## Further Reading
 
 - [Why AXF Matrices instead of Pauli and Gamma Matrices](why-axf-matrices-instead-of-pauli-and-gamma-matrices.html), for the reasons the AXF matrices replace the Pauli and gamma matrices.
-- [The Three Wavenumbers of a Particle](the-three-wavenumbers-of-a-particle.html), for the definition of the wave number $k_m=mc/\hbar$ and of the two state wave numbers $k_{\mathrm{mo}}$ and $k_E$, their values for the electron, the proton and the other particles, and the unit argument that fixes the coefficient of the mass term.
+- [The Three Wavenumbers of a Particle](the-three-wavenumbers-of-a-particle.html), for the element $\tilde K_{\Phi}=\tilde P_{\Phi}/\hbar$ and the coordinates read off it — the temporal $k_{t}^{\prime}=E/(\hbar c)$, the spatial $\vec k_{\Phi}=\vec p/\hbar$ and its modulus, the mass wave number $k_m=mc/\hbar$ — their values for the electron, the proton and the other particles, and the unit argument that fixes the coefficient of the mass term.
 - P. A. M. Dirac, "The quantum theory of the electron," *Proceedings of the Royal Society A* **117** (1928) 610–624, for the original Dirac equation.
 - P. A. M. Dirac, *The Principles of Quantum Mechanics* (Oxford, 1930), for the foundational treatment of the Dirac equation.
 - J. D. Bjorken and S. D. Drell, *Relativistic Quantum Mechanics* (McGraw-Hill, 1964), for the standard physics treatment.

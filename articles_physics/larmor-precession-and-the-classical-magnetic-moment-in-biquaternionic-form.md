@@ -264,7 +264,7 @@ The rotor $\tilde u_L(r'_t)$ rotates by the angle $-\gamma B r'_t$ about $\vec u
 
 ### The Rotating Frame
 
-The precession law has a second interpretation, which is the content of the **Larmor theorem**. Consider a frame rotating with angular velocity $\vec\Omega$ with respect to the laboratory, and let $\vec\mu_{\rm rot}$ be the moment as seen in that frame. The moment in the laboratory is obtained by the rotor of the frame, $\vec\mu = \tilde u_\Omega\,\vec\mu_{\rm rot}\,\tilde u_\Omega^{*}$ with $\tilde u_\Omega = \exp(\tfrac{1}{2}\Omega r'_t\,\vec u_{\Omega,k} \vec e_k)$, and the derivative separates into the frame's own rotation and the additional motion seen in the frame,
+The precession law has a second interpretation, which is the content of the **Larmor theorem**. Consider a frame rotating with angular velocity $\vec\Omega$ with respect to the laboratory, and let $\vec\mu_{\rm rot}$ be the moment as seen in that frame. The moment in the laboratory is obtained by the rotor of the frame, $\vec\mu = \tilde u_\Omega\,\vec\mu_{\rm rot}\,\tilde u_\Omega^{*}$ with $\tilde u_\Omega = \exp(\tfrac{\Omega r'_t}{2\,c}\,\vec u_{\Omega,k} \vec e_k)$, and the derivative separates into the frame's own rotation and the additional motion seen in the frame,
 
 $$
 d\vec\mu/dr'_t = \tfrac{1}{2}\left[\vec\Omega,\vec\mu\right]

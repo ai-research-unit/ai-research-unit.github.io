@@ -165,7 +165,7 @@ $$
 
 the elementary sinusoidal oscillation between the two levels at the Rabi frequency.
 
-The derivation contains one geometric fact worth isolating. In the rotating frame the evolution is a rotation of the Bloch vector about the fixed axis $\vec u_R$; the laboratory measurement axis $\vec u_z$ is itself carried by the rotor $\tilde u_{\mathrm r}(r'_t)$ in the laboratory frame, and the overlap of the two rotations is what produces the factor $\omega_1^2/\Omega^2$ and the argument $\Omega r'_t/2$. Both factors are the standard ones; the biquaternion setting writes each rotation as a rotor and the probability as a trace.
+The derivation contains one geometric fact worth isolating. In the rotating frame the evolution is a rotation of the Bloch vector about the fixed axis $\vec u_R$; the laboratory measurement axis $\vec u_z$ is itself carried by the rotor $\tilde u_{\mathrm r}(r'_t)$ in the laboratory frame, and the overlap of the two rotations is what produces the factor $\omega_1^2/\Omega^2$ and the argument $\Omega r'_t/(2c)$. Both factors are the standard ones; the biquaternion setting writes each rotation as a rotor and the probability as a trace.
 
 ### The Rotating-Wave Approximation
 
@@ -276,7 +276,7 @@ which reduces to $\sin^2(\omega_1r'_t/c/2)$ on resonance. The $\pi$-pulse $r'_t 
 | $\tilde{R}_{\Psi,R} = -\frac{m\,c}{2\,k_m}[(\omega_0-\omega)i\vec e_z+\omega_1i\vec e_x]$ | Effective Hamiltonian in the rotating frame |
 | $\Omega = \sqrt{\omega_1^2+\Delta^2}$ | Generalized Rabi frequency (spectral gap) |
 | $\vec u_R = (\omega_1\vec e_x+\Delta \vec e_z)/\Omega$ | Effective rotation axis |
-| $P_\downarrow(r'_t) = \tfrac{\omega_1^2}{\omega_1^2+\Delta^2}\sin^2(\Omega r'_t/2)$ | Rabi transition probability |
+| $P_\downarrow(r'_t) = \tfrac{\omega_1^2}{\omega_1^2+\Delta^2}\sin^2\!\left(\Omega r'_t/(2c)\right)$ | Rabi transition probability |
 | $\pi/\omega_1$, $\pi/(2\omega_1)$ | $\pi$-pulse, $\pi/2$-pulse durations |
 | $d\vec r/dr'_t = \vec\omega_{\mathrm{eff}}\times\vec r$ | Bloch equation in the rotating frame |
 
