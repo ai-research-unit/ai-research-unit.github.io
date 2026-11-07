@@ -91,15 +91,15 @@ $$</p>
 <p>which is the algebraic statement that evolution is reversible and composable.</p>
 <p>In the position representation the kernel is the matrix element</p>
 <p>$$
-K(x_f\,\vec e_x+y_f\,\vec e_y+z_f\,\vec e_z,r'_{t,f};x_i\,\vec e_x+y_i\,\vec e_y+z_i\,\vec e_z,r'_{t,i}) = \langle x_f\,\vec e_x+y_f\,\vec e_y+z_f\,\vec e_z|\,\tilde Q(r'_{t,f}-r'_{t,i})\,|x_i\,\vec e_x+y_i\,\vec e_y+z_i\,\vec e_z\rangle ,
+G_{\mathrm{prop}}(x_f\,\vec e_x+y_f\,\vec e_y+z_f\,\vec e_z,r'_{t,f};x_i\,\vec e_x+y_i\,\vec e_y+z_i\,\vec e_z,r'_{t,i}) = \langle x_f\,\vec e_x+y_f\,\vec e_y+z_f\,\vec e_z|\,\tilde Q(r'_{t,f}-r'_{t,i})\,|x_i\,\vec e_x+y_i\,\vec e_y+z_i\,\vec e_z\rangle ,
 $$</p>
 <p>a field on pairs of points taking values in the state module's endomorphism algebra; since $\tilde Q$ is central, the kernel is a complex scalar times $e_t$, $K\,e_t$, with</p>
 <p>$$
-K(x_f\,\vec e_x+y_f\,\vec e_y+z_f\,\vec e_z,r'_{t,f};x_i\,\vec e_x+y_i\,\vec e_y+z_i\,\vec e_z,r'_{t,i})\in\mathbb{C},
+G_{\mathrm{prop}}(x_f\,\vec e_x+y_f\,\vec e_y+z_f\,\vec e_z,r'_{t,f};x_i\,\vec e_x+y_i\,\vec e_y+z_i\,\vec e_z,r'_{t,i})\in\mathbb{C},
 $$</p>
 <p>and the state at time $r'_{t,f}$ is obtained by the scalar convolution</p>
 <p>$$
-\tilde{Ξ}_{\mathrm{sp}}(x_f\,\vec e_x+y_f\,\vec e_y+z_f\,\vec e_z,r'_{t,f}) = \int d^3r_i\;K(x_f\,\vec e_x+y_f\,\vec e_y+z_f\,\vec e_z,r'_{t,f};x_i\,\vec e_x+y_i\,\vec e_y+z_i\,\vec e_z,r'_{t,i})\,\tilde{Ξ}_{\mathrm{sp}}(x_i\,\vec e_x+y_i\,\vec e_y+z_i\,\vec e_z,r'_{t,i}),
+\tilde{Ξ}_{\mathrm{sp}}(x_f\,\vec e_x+y_f\,\vec e_y+z_f\,\vec e_z,r'_{t,f}) = \int d^3r_i\;G_{\mathrm{prop}}(x_f\,\vec e_x+y_f\,\vec e_y+z_f\,\vec e_z,r'_{t,f};x_i\,\vec e_x+y_i\,\vec e_y+z_i\,\vec e_z,r'_{t,i})\,\tilde{Ξ}_{\mathrm{sp}}(x_i\,\vec e_x+y_i\,\vec e_y+z_i\,\vec e_z,r'_{t,i}),
 $$</p>
 <p>in which the kernel multiplies the module factor by a scalar. Whatever the initial module orientation, it is propagated unchanged. This is the same statement as in the free-particle article, now promoted to the general kernel of any central Hamiltonian.</p>
 <h3 id="the-short-time-kernel">The short-time kernel</h3>
@@ -253,7 +253,7 @@ S[(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)_{\mathrm{cl}}+\delta(r_x\,\vec e_x
 $$</p>
 <p>the quadratic fluctuation integral is Gaussian and gives the <strong>van Vleck kernel</strong></p>
 <p>$$
-\boxed{\;K(x_f\,\vec e_x+y_f\,\vec e_y+z_f\,\vec e_z,r'_{t,f};x_i\,\vec e_x+y_i\,\vec e_y+z_i\,\vec e_z,r'_{t,i})
+\boxed{\;G_{\mathrm{prop}}(x_f\,\vec e_x+y_f\,\vec e_y+z_f\,\vec e_z,r'_{t,f};x_i\,\vec e_x+y_i\,\vec e_y+z_i\,\vec e_z,r'_{t,i})
 \ \approx\
 \left(\frac{k_m}{2\,m\,c\,\pi\,i}\right)^{3/2}
 \left|\det\left(\frac{\partial^2 S_{\mathrm{cl}}}{\partial x_{i,k}\,\partial x_{f,l}}\right)_{k,l=1}^{3}\right|^{1/2}
@@ -341,7 +341,7 @@ $$</p>
 <td>Evolution operator; central $*$-unitary, semigroup</td>
 </tr>
 <tr>
-<td>$K(x_f\,\vec e_x+y_f\,\vec e_y+z_f\,\vec e_z,r'_{t,f};x_i\,\vec e_x+y_i\,\vec e_y+z_i\,\vec e_z,r'_{t,i})=Ke_t$</td>
+<td>$G_{\mathrm{prop}}(x_f\,\vec e_x+y_f\,\vec e_y+z_f\,\vec e_z,r'_{t,f};x_i\,\vec e_x+y_i\,\vec e_y+z_i\,\vec e_z,r'_{t,i})=Ke_t$</td>
 <td>Position kernel; central</td>
 </tr>
 <tr>

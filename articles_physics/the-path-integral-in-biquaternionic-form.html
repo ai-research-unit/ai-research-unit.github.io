@@ -72,7 +72,7 @@
 <h2 id="introduction">Introduction</h2>
 <p>The Feynman path integral writes the transition amplitude of a quantum system as a sum over histories,</p>
 <p>$$
-K(x_f,r'_{t,f};x_i,r'_{t,i})=\int\mathcal{D}r_x(r'_t)\;\exp(iS[r_x]\frac{k_m}{m\,c}),
+G_{\mathrm{prop}}(x_f,r'_{t,f};x_i,r'_{t,i})=\int\mathcal{D}r_x(r'_t)\;\exp(iS[r_x]\frac{k_m}{m\,c}),
 \qquad
 S[r_x]=\int_{r'_{t,i}}^{r'_{t,f}}\mathrm{Lag}(r_x,dr_x/dr'_t)\,dr'_t,
 $$</p>
@@ -94,7 +94,7 @@ $$</p>
 <h2 id="the-sum-over-paths">The Sum over Paths</h2>
 <p>For a non-relativistic particle of mass $m$ in a potential $V$, the path integral is the continuum limit of a product of short-time kernels. Over a time $T=r'_{t,f}-r'_{t,i}$ divided into $N$ steps of length $\varepsilon=T/N$,</p>
 <p>$$
-K(x_f,r'_{t,f};x_i,r'_{t,i})
+G_{\mathrm{prop}}(x_f,r'_{t,f};x_i,r'_{t,i})
 =\lim_{N\to\infty}\int\prod_{k=1}^{N-1}dx_k\;\prod_{k=0}^{N-1}K_\varepsilon(x_{k+1},x_k),
 $$</p>
 <p>with the single-step kernel</p>
@@ -105,7 +105,7 @@ $$</p>
 <p>Here $k_m=mc/\hbar$ is the mass wave number, the inverse of the mass length.</p>
 <p>Two structural properties follow directly from this definition and are the ones the biquaternion interpretation has to respect.</p>
 <p><strong>Composition.</strong> The kernel is a semigroup in time:
-$$K(x_f,r'_{t,f};x_i,r'_{t,i})=\int dx\;K(x_f,r'_{t,f};r_x,r'_t)\,K(r_x,r'_t;x_i,r'_{t,i}).$$
+$$G_{\mathrm{prop}}(x_f,r'_{t,f};x_i,r'_{t,i})=\int dx\;G_{\mathrm{prop}}(x_f,r'_{t,f};r_x,r'_t)\,K(r_x,r'_t;x_i,r'_{t,i}).$$
 This is the statement that the sum over paths is a sum over the intermediate point at which a path crosses time $r'_t$; it is the same completeness relation that any representation of the evolution operator must satisfy.</p>
 <p><strong>Interference.</strong> Two classes of paths whose actions differ by $\Delta S$ contribute
 $$\exp(\frac{k_m\,iS_{1}}{m\,c})+\exp(\frac{k_m\,iS_{2}}{m\,c})=2\cos\!\Big(\frac{k_m\,\Delta\,S}{2\,m\,c}\Big)\exp(\frac{k_m\,i\,\bar{S}}{m\,c}),
@@ -144,7 +144,7 @@ $$</p>
 <ol>
 <li>
 <p><strong>The amplitude is a complex scalar.</strong> The integral of central elements is central, so the full kernel is
-$$K(x_f,r'_{t,f};x_i,r'_{t,i})=\mathcal{K}\,e_t,\qquad \mathcal{K}\in\mathbb{C},$$
+$$G_{\mathrm{prop}}(x_f,r'_{t,f};x_i,r'_{t,i})=\mathcal{K}\,e_t,\qquad \mathcal{K}\in\mathbb{C},$$
 a complex number times the identity. It is not a general biquaternion.</p>
 </li>
 <li>
@@ -222,7 +222,7 @@ S[x_{\mathrm{cl}}+\delta x]=S_{\mathrm{cl}}+\tfrac12\,\delta^2S+O(\delta^3),
 $$</p>
 <p>where the linear term vanishes because $x_{\mathrm{cl}}$ is stationary. The leading contribution to the integral is the phase $\exp(\frac{k_m\,iS_{\mathrm{cl}}}{m\,c})$ times the Gaussian integral over the fluctuations, giving the <strong>van Vleck determinant</strong> formula</p>
 <p>$$
-\boxed{\;K(x_f,r'_{t,f};x_i,r'_{t,i})\;\approx\;\frac{1}{\sqrt{\frac{2\,m\,c\,\pi\,i}{k_m}}}\,
+\boxed{\;G_{\mathrm{prop}}(x_f,r'_{t,f};x_i,r'_{t,i})\;\approx\;\frac{1}{\sqrt{\frac{2\,m\,c\,\pi\,i}{k_m}}}\,
 \sqrt{\Big|\det\frac{\partial^2 S_{\mathrm{cl}}}{\partial x_i\,\partial x_f}\Big|}\;
 \exp(\frac{k_m\,iS_{\mathrm{cl}}}{m\,c})\;},
 $$</p>
@@ -343,7 +343,7 @@ one factor of the square root of the metric determinant per spatial slice. This 
 <td>Quaternion subspace; image of the Wick rotation</td>
 </tr>
 <tr>
-<td>$K(x_f,r'_{t,f};x_i,r'_{t,i})$</td>
+<td>$G_{\mathrm{prop}}(x_f,r'_{t,f};x_i,r'_{t,i})$</td>
 <td>Transition amplitude (propagator), central: $K=\mathcal{K}e_t$</td>
 </tr>
 <tr>
