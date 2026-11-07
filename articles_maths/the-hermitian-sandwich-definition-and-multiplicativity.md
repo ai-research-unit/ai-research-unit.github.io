@@ -10,9 +10,9 @@ $$
 
 It is the two-sided operator $L_{\tilde Q}R_{\tilde Q^{*}}$: the second slot is tied to the first by the involution. The two-sided family is a complex cone of complex dimension seven; the sandwich is the graph of the involution inside it, a **real** cone of real dimension seven. The phase of the parameter cancels, $\mathrm{Sd}_{\omega\tilde Q}=\mathrm{Sd}_{\tilde Q}$ for $|\omega|=1$, and the square of the modulus is the only scale. The image is not a complex subspace: the sandwich is quadratic in $\tilde Q$, and a complex rescaling of $\tilde Q$ rescales the operator by the square of the modulus, a positive real number.
 
-**The results.** The article states five things. The sandwich is multiplicative up to the order of the factors, $\mathrm{Sd}_{\tilde Q}\mathrm{Sd}_{\tilde Q_2}=\mathrm{Sd}_{\tilde Q\tilde Q_2}$, and its defect from an algebra automorphism is the operator $e_t-\tilde Q^{*}\tilde Q$. It preserves the Hermitian and anti-Hermitian halves for every parameter, and it preserves the finer subspace structure exactly when the parameter is a central multiple of a real unit quaternion. It scales the norm by $|\langle\tilde Q\rangle_{\natural}|^{2}$. Its parameter is defined modulo the central phase, which gives the real dimension seven. It meets each one-sided family in the closed ray of nonnegative multiples of the identity, and its spectrum is the four products of the eigenvalues of the $2\times2$ model with their conjugates. On the unit-norm slice the parameter map is the twofold cover $SL_2(\mathbb{C})\to SO^{+}(1,3)$; on the full unit group it has kernel $U(1)$ and image $CO^{+}(1,3)$.
+**The results.** The article states the following. The sandwich is multiplicative up to the order of the factors, $\mathrm{Sd}_{\tilde Q}\mathrm{Sd}_{\tilde Q_2}=\mathrm{Sd}_{\tilde Q\tilde Q_2}$, and its defect from an algebra automorphism is the operator $e_t-\tilde Q^{*}\tilde Q$. It preserves the Hermitian and anti-Hermitian halves for every parameter, and it preserves the finer subspace structure exactly when the parameter is a central multiple of a real unit quaternion. It is characterised by the preservation of the halves: inside the two-sided family the sector-preserving operators are exactly the real multiples of the sandwiches, so the sector condition forces the shape of the operator and the parameter of the operator is the element itself, up to the central phase. It scales the norm by $|\langle\tilde Q\rangle_{\natural}|^{2}$. Its parameter is defined modulo the central phase, which gives the real dimension seven. It meets each one-sided family in the closed ray of nonnegative multiples of the identity, and its spectrum is the four products of the eigenvalues of the $2\times2$ model with their conjugates. The family spans the whole sixteen-dimensional sector-preserving space: sixteen sandwiches are a real basis, exactly as sixteen two-sided operators are a complex basis of the endomorphism algebra. On the unit-norm slice the parameter map is the twofold cover $SL_2(\mathbb{C})\to SO^{+}(1,3)$; on the full unit group it has kernel $U(1)$ and image $CO^{+}(1,3)$.
 
-**Verification.** The matrix verification of the spectrum and of the Lorentz action is in *The Hermitian Sandwich: Definition and Multiplicativity* and *The Hermitian Sandwich: Definition and Multiplicativity*. The present article states the operator results and sketches the proofs; no case study is cited as proof. The notation of the families is that of *Operator Family Conventions*: $\mathrm{Sd}_{\tilde Q}$ is the sandwich, $L_{\tilde Q}R_{\tilde Q_2}$ the two-sided operator, $L(\mathbb{B})$ and $R(\mathbb{B})$ the two regular families, $\mathbb{B}_{\Psi}$ and $\mathbb{B}_{\Phi}$ the Hermitian and anti-Hermitian halves, $\langle\tilde Q\rangle_{\natural}$ the quaternionic norm, and $\operatorname{End}_{LR\ast}(\mathbb{B})$ the set of sandwiches. The involution is the algebra's conjugation, the one whose matrix is the dagger in the matrix models.
+**Verification.** The matrix verification of the spectrum and of the Lorentz action is in *The Polar Decomposition and Remarkable Subspaces*, §*The Anti-Hermitian Half as Four-Vectors* and §*The Two Halves Are One Action*. The present article states the operator results and sketches the proofs; no case study is cited as proof. The notation of the families is that of *Operator Family Conventions*: $\mathrm{Sd}_{\tilde Q}$ is the sandwich, $L_{\tilde Q}R_{\tilde Q_2}$ the two-sided operator, $L(\mathbb{B})$ and $R(\mathbb{B})$ the two regular families, $\mathbb{B}_{\Psi}$ and $\mathbb{B}_{\Phi}$ the Hermitian and anti-Hermitian halves, $\langle\tilde Q\rangle_{\natural}$ the quaternionic norm, and $\operatorname{End}_{LR\ast}(\mathbb{B})$ the set of sandwiches. The involution is the algebra's conjugation, the one whose matrix is the dagger in the matrix models.
 
 **The real cone.** The set $\operatorname{End}_{LR\ast}(\mathbb{B})=\{\mathrm{Sd}_{\tilde Q}:\tilde Q\in\mathbb{B}\}$ is a cone: it is closed under multiplication by nonnegative real numbers, and it is not closed under addition. It is a real cone of real dimension seven, not a complex cone. The two-sided cone $\operatorname{End}_{LR}(\mathbb{B})$ is complex of complex dimension seven, and the sandwich is a real slice of it, a proper subset, the slice on which the two parameters are conjugate.
 
@@ -149,9 +149,256 @@ For a general element the same equivalences hold with $\tilde Q$ replaced by its
 
 *Sketch.* $(2)\Rightarrow(3)$: a real unit quaternion satisfies $\tilde u\tilde u^{*}=e_t$, so $\tilde Q\tilde Q^{*}=|\tilde A|^{2}e_t$. $(3)\Rightarrow(2)$: if $\tilde Q\tilde Q^{*}=\lambda e_t$ with $\lambda>0$, the principal square root of $\lambda$ normalises $\tilde Q$ to a unit element with $\tilde U\tilde U^{*}=e_t$; a unit element with $\tilde U\tilde U^{*}=e_t$ is a central phase times a real unit quaternion, by the polar decomposition. $(2)\Rightarrow(1)$: the central factor is a dilation, the real unit quaternion is a rotation of the vector space, and both preserve the six subspaces. $(1)\Rightarrow(3)$: if the centre is preserved, $\tilde Q\tilde Q^{*}$ is central; it is Hermitian positive, and a central Hermitian positive element of the algebra is a positive real multiple of $e_t$. The full proof is *The Polar Decomposition and Remarkable Subspaces*, §*Which Subspaces the Sandwich Preserves*.
 
-**The group.** On the unit-norm slice the parameters are the real unit quaternions modulo sign, and they form $SO(3)$, of real dimension three. With the central dilations admitted they form $\mathbb{R}_{>0}\times SO(3)$, of real dimension four. The rotation group sits inside the six-dimensional operator group as the rotations sit inside the Lorentz group; the remaining three dimensions are the boosts, which move the centre and the vector subspace. The criterion is weaker than the vanishing of the defect: it allows a central scale, and the defect vanishes exactly on the unit-norm part of the set, the $*$-unitary group. The central multiples of real unit quaternions with a nontrivial scale are dilations composed with rotations; they preserve the subspaces but are not algebra automorphisms.
+**The group.** On the unit-norm slice the parameters are the real unit quaternions modulo sign, and they form $SO(3)$, of real dimension three. With the central dilations admitted they form $\mathbb{R}_{>0}\times SO(3)$, of real dimension four. The rotation group sits inside the six-dimensional operator group as the rotations sit inside the Lorentz group; the remaining three dimensions are the boosts, which move the centre and the vector subspace. The criterion is weaker than the vanishing of the defect: it allows a central scale, and the defect vanishes exactly on the $*$-unitary part of the set. The central multiples of real unit quaternions with a nontrivial scale are dilations composed with rotations; they preserve the subspaces but are not algebra automorphisms.
 
-**The matrix check.** The matrix verification is in *The Hermitian Sandwich: Definition and Multiplicativity*, §*The Congruence*, and in *The Hermitian Sandwich: Definition and Multiplicativity*, §*Which Subspaces the Sandwich Preserves*.
+**The matrix check.** The matrix verification is in *The Polar Decomposition and Remarkable Subspaces*, §*The Hermitian Half as a Congruence*, and §*Which Subspaces the Sandwich Preserves* of the same article.
+
+## The Two Halves Characterise the Sandwich
+
+### The Condition Is Empty
+
+The preservation of $\mathbb{B}_{\Psi}$ and $\mathbb{B}_{\Phi}$ holds for every parameter, by §*Preservation of $\mathbb{B}_{\Psi}$ and $\mathbb{B}_{\Phi}$*. No hypothesis on $\tilde Q$ enters: the proof uses only that the star reverses the product and that $\tilde X^{*}=\pm\tilde X$. Preservation is a property of the star, not a constraint on the parameter.
+
+**Proposition (the three equivalent forms).** For a $\mathbb{C}$-linear $T:\mathbb{B}\to\mathbb{B}$ the following are equivalent:
+
+1. $T(\mathbb{B}_{\Phi})\subseteq\mathbb{B}_{\Phi}$;
+2. $T(\mathbb{B}_{\Psi})\subseteq\mathbb{B}_{\Psi}$ and $T(\mathbb{B}_{\Phi})\subseteq\mathbb{B}_{\Phi}$;
+3. $T(\tilde X^{*})=T(\tilde X)^{*}$ for every $\tilde X\in\mathbb{B}$.
+
+*Proof.* $(3)\Rightarrow(1)$ and $(3)\Rightarrow(2)$: if $\tilde X^{*}=\pm\tilde X$, then $T(\tilde X)^{*}=T(\tilde X^{*})=\pm T(\tilde X)$. $(2)\Rightarrow(1)$ by truncation. $(1)\Rightarrow(2)$: the central $i$ exchanges the halves and $T$ is $\mathbb{C}$-linear, so $T(i\tilde X)=iT(\tilde X)$ carries $T(\mathbb{B}_{\Phi})$ onto $T(\mathbb{B}_{\Psi})$. $(1)\Rightarrow(3)$: write $\tilde X=\tilde X_{\Phi}+i\tilde Y$ with $\tilde X_{\Phi},\tilde Y\in\mathbb{B}_{\Phi}$; then $\tilde X^{*}=-\tilde X_{\Phi}+i\tilde Y$ and
+
+$$
+T(\tilde X)^{*}=T(\tilde X_{\Phi})^{*}+\bigl(i\,T(\tilde Y)\bigr)^{*}=-T(\tilde X_{\Phi})+i\,T(\tilde Y)=T(\tilde X^{*}).
+$$
+
+**The commutation form.** Write $J(\tilde X)=\tilde X^{*}$ for the real structure. Condition 3 is $TJ=JT$, and the sandwich satisfies it at every parameter:
+
+$$
+J\,\mathrm{Sd}_{\tilde Q}\,J=\mathrm{Sd}_{\tilde Q}.
+$$
+
+The sandwich is invariant under conjugation by the real structure. That is the operator form of §*Preservation of $\mathbb{B}_{\Psi}$ and $\mathbb{B}_{\Phi}$*: the star on the arguments and the star on the two slots cancel pairwise.
+
+**Into, not onto.** The sector condition says "into", and it must not be read as "onto". On the null cone $\operatorname{rank}\mathrm{Sd}_{\tilde Q}=\operatorname{rank}(\tilde Q)^{2}=1$, so the image of $\mathbb{B}_{\Phi}$ is a real plane inside the four-dimensional $\mathbb{B}_{\Phi}$. Surjectivity on the halves is equivalent to the invertibility of the operator, that is, to $\tilde Q$ being a unit.
+
+### The Rigidity
+
+**Theorem (the sector condition forces the sandwich).** Let $\tilde A,\tilde B\in\mathbb{B}$ be nonzero. Then $L_{\tilde A}R_{\tilde B}$ maps $\mathbb{B}_{\Phi}$ into itself if and only if
+
+$$
+\tilde B=\lambda\tilde A^{*}
+$$
+
+for some real $\lambda$.
+
+*Proof.* For $\tilde X\in\mathbb{B}_{\Phi}$ the image has star
+
+$$
+\bigl(\tilde A\tilde X\tilde B\bigr)^{*}=\tilde B^{*}\tilde X^{*}\tilde A^{*}=-\tilde B^{*}\tilde X\tilde A^{*},
+$$
+
+so the condition is $\tilde B^{*}\tilde X\tilde A^{*}=\tilde A\tilde X\tilde B$ for every $\tilde X\in\mathbb{B}_{\Phi}$. Both sides are $\mathbb{C}$-linear in $\tilde X$, and $\mathbb{B}_{\Phi}$ spans $\mathbb{B}$ over $\mathbb{C}$ because $i\mathbb{B}_{\Phi}=\mathbb{B}_{\Psi}$; the identity therefore holds for every $\tilde X$. It is the operator identity
+
+$$
+L_{\tilde B^{*}}R_{\tilde A^{*}}=L_{\tilde A}R_{\tilde B}.
+$$
+
+By *Two-Sided Operators on the Biquaternion Algebra*, §*The Scaling Orbit*, the two parameter pairs lie on one orbit, so $(\tilde B^{*},\tilde A^{*})=(\mu\tilde A,\mu^{-1}\tilde B)$ for some $\mu\in\mathbb{C}^{\times}$, that is,
+
+$$
+\tilde B^{*}=\mu\tilde A,\qquad \tilde A^{*}=\mu^{-1}\tilde B.
+$$
+
+Daggering the second relation and substituting the first gives $\tilde A=\bar\mu^{-1}\tilde B^{*}=(\mu/\bar\mu)\tilde A$, so $\mu$ is real. Daggering the first relation then gives $\tilde B=\mu\tilde A^{*}$. Conversely, if $\tilde B=\lambda\tilde A^{*}$ with $\lambda$ real, then
+
+$$
+\bigl(\tilde A\tilde X\tilde B\bigr)^{*}=\lambda\tilde A\tilde X^{*}\tilde A^{*}=-\lambda\tilde A\tilde X\tilde A^{*}.
+$$
+
+The zero operator is the case $\tilde A=0$ or $\tilde B=0$, and it preserves the halves trivially.
+
+**Corollary (the characterisation).** Inside the two-sided family the sector-preserving operators are exactly the real multiples of the sandwiches:
+
+$$
+\{T\in\operatorname{End}_{LR}(\mathbb{B}):T(\mathbb{B}_{\Phi})\subseteq\mathbb{B}_{\Phi}\}=\mathbb{R}\cdot\operatorname{End}_{LR\ast}(\mathbb{B}).
+$$
+
+The sandwich is not one choice among the two-sided operators. It is the only shape that preserves the sectors, up to a real scalar.
+
+**The reading: the operator is the element.** The corollary determines the operator from the property, and §*The Parameter Modulo $\mathrm{U}(1)$* determines the parameter from the operator. The two directions are inverse, so the cone of sandwiches is the biquaternion algebra read modulo the central phase,
+
+$$
+\operatorname{End}_{LR\ast}(\mathbb{B})\;\longleftrightarrow\;\mathbb{B}/\mathrm{U}(1),
+$$
+
+a bijection of sets and a homeomorphism, with the quadratic parametrisation $Q\mapsto\mathrm{Sd}_Q$; it is not linear, because $\mathrm{Sd}$ is quadratic in $Q$. The sector-preserving two-sided operators are that copy together with its negative. The family is $\mathbb{B}$ modulo the phase, not $\mathbb{B}$ itself: the phase is the only thing the correspondence forgets.
+
+**The sign.** The real scalar $\lambda$ of the corollary may be negative, and a negative multiple is not a sandwich. For a unit $\tilde A$ the value at the identity is $\mathrm{Sd}_{\tilde A}(e_t)=\tilde A\tilde A^{*}$, of norm $|\langle\tilde A\rangle_{\natural}|^{2}\ge0$, while $-\tilde A\tilde A^{*}$ has norm $-|\langle\tilde A\rangle_{\natural}|^{2}\le0$; the two agree only if both vanish. The sandwich cone is therefore one half of the sector-preserving set, and the sign is the part of the real scalar that the sandwich cannot produce.
+
+### Both Halves Give One Condition
+
+**Theorem (one condition, two halves).** Let $\tilde A,\tilde B\in\mathbb{B}$ be nonzero. The following are equivalent:
+
+1. $L_{\tilde A}R_{\tilde B}$ maps $\mathbb{B}_{\Phi}$ into itself;
+2. $L_{\tilde A}R_{\tilde B}$ maps $\mathbb{B}_{\Psi}$ into itself;
+3. $\tilde B=\lambda\tilde A^{*}$ for some real $\lambda$.
+
+*Proof.* The equivalence of 1 and 3 is the theorem of §*The Rigidity*. For 2, let $\tilde X\in\mathbb{B}_{\Psi}$, so $\tilde X^{*}=\tilde X$. The image is Hermitian exactly when
+
+$$
+\bigl(\tilde A\tilde X\tilde B\bigr)^{*}=\tilde B^{*}\tilde X\tilde A^{*}=\tilde A\tilde X\tilde B .
+$$
+
+This is the operator identity $L_{\tilde B^{*}}R_{\tilde A^{*}}=L_{\tilde A}R_{\tilde B}$, the same identity as in the $\mathbb{B}_{\Phi}$ case, because the sign of the involution cancels on both sides. It involves no representative of $\mathbb{B}_{\Psi}$ in particular: it is an identity of operators, so the derivation that follows applies word for word and gives $\tilde B=\mu\tilde A^{*}$ with $\mu$ real. Conversely, $\tilde B=\lambda\tilde A^{*}$ with $\lambda$ real gives
+
+$$
+\bigl(\tilde A\tilde X\tilde B\bigr)^{*}=\lambda\tilde A\tilde X^{*}\tilde A^{*}=\pm\lambda\tilde A\tilde X\tilde A^{*},
+$$
+
+which is the image with the same sign as $\tilde X^{*}=\pm\tilde X$. So one real scalar serves both halves at once.
+
+**Nothing is gained by asking for both.** The conditions 1 and 2 are the same condition, so the two sets coincide:
+
+$$
+\{T\in\operatorname{End}_{LR}(\mathbb{B}):T(\mathbb{B}_{\Psi})\subseteq\mathbb{B}_{\Psi}\}
+=\{T\in\operatorname{End}_{LR}(\mathbb{B}):T(\mathbb{B}_{\Phi})\subseteq\mathbb{B}_{\Phi}\}
+=\mathbb{R}\cdot\operatorname{End}_{LR\ast}(\mathbb{B}).
+$$
+
+The reason is that each half already spans the algebra over $\mathbb{C}$: $i\mathbb{B}_{\Psi}=\mathbb{B}_{\Phi}$ and $i\mathbb{B}_{\Phi}=\mathbb{B}_{\Psi}$. A two-sided operator that keeps one half inside itself therefore keeps the other inside itself too, and no operator tests the halves separately.
+
+**The sandwich is the case $\lambda=1$.** The theorem is a statement about the shape of the operator, not about the size of the parameter. The sandwich is $\tilde B=\tilde A^{*}$, that is $\lambda=1$, the positive end of the ray. It preserves both halves with no hypothesis on $\tilde Q$ because $1$ is real. The hypothesis that does the work in §*The Condition Is Empty* is exactly this: the sandwich sits at a real $\lambda$.
+
+**The direction of $\lambda$.** Write $\lambda=\rho e^{i\theta}$ with $\rho>0$. Then
+
+$$
+L_{\tilde A}R_{\lambda\tilde A^{*}}=\lambda\,\mathrm{Sd}_{\tilde A},
+$$
+
+the sandwich composed with the scalar $\lambda$. Multiplication by a scalar acts on the halves according to its argument:
+
+| $\lambda$ | effect on $\mathbb{B}_{\Psi}$ | effect on $\mathbb{B}_{\Phi}$ |
+|---|---|---|
+| $\lambda$ real, $\lambda>0$ | into itself | into itself |
+| $\lambda$ real, $\lambda<0$ | into itself | into itself |
+| $\lambda$ purely imaginary | into $\mathbb{B}_{\Phi}$ | into $\mathbb{B}_{\Psi}$ |
+| $\lambda$ complex, both parts nonzero | into neither | into neither |
+
+A real $\lambda$, of either sign, keeps each half; the sign is invisible to the halves because it is real. A purely imaginary $\lambda$ swaps them, since $i\mathbb{B}_{\Psi}=\mathbb{B}_{\Phi}$; that is the exchange of §*Preservation of $\mathbb{B}_{\Psi}$ and $\mathbb{B}_{\Phi}$*, read as a scalar. A $\lambda$ with both parts nonzero sends a Hermitian element to an element that is neither Hermitian nor anti-Hermitian, so neither half survives. The real line is therefore not a detail of the proof: it is the set of scalars that preserve the sector structure, and the sandwich lies on it.
+
+### The One-Sided Contrast
+
+**Proposition (the one-sided case).** $L_{\tilde A}$ maps $\mathbb{B}_{\Phi}$ into itself exactly when $\tilde A$ is a real scalar, and the same holds for $R_{\tilde A}$.
+
+*Proof.* For $\tilde X\in\mathbb{B}_{\Phi}$, $(\tilde A\tilde X)^{*}=\tilde X^{*}\tilde A^{*}=-\tilde X\tilde A^{*}$, so the condition is $\tilde X\tilde A^{*}=\tilde A\tilde X$ for every $\tilde X\in\mathbb{B}_{\Phi}$, hence for every $\tilde X$, that is $R_{\tilde A^{*}}=L_{\tilde A}$. The intersection $L(\mathbb{B})\cap R(\mathbb{B})$ is the line $\mathbb{C}\cdot\mathrm{I}$, so $\tilde A^{*}$ is central and $\tilde A=\lambda e_t$; the identity then reads $\bar\lambda=\lambda$, so $\lambda$ is real. The right case is the mirror, with the two slots exchanged.
+
+**The reading.** The star is conjugate-linear, so a complex scalar $\lambda e_t$ sends $\tilde X$ to $\lambda\tilde X$, of star $\bar\lambda\tilde X^{*}$: the real part of $\lambda$ keeps the sector and the imaginary part turns it into the other sector. The sandwich is the two-slot combination in which the conjugate-linearity occurs twice and cancels, and by §*The Rigidity* it is the only one, up to a real scalar. That is the structural reason the sandwich, and not the one-sided multiplication, is the operator of the two halves.
+
+### The Ambient Space
+
+**The space.** The sector-preserving $\mathbb{C}$-linear maps form the real space $\operatorname{End}_{\mathbb{R}}(\mathbb{B}_{\Psi})$, of real dimension sixteen. A $\mathbb{C}$-linear $T$ is determined by its restriction to $\mathbb{B}_{\Psi}$, and every real endomorphism of $\mathbb{B}_{\Psi}$ extends uniquely, because $T(i\tilde X)=iT(\tilde X)$ then fixes $T$ on $\mathbb{B}_{\Phi}$. Without $\mathbb{C}$-linearity the sector-preserving real-linear maps form a space of real dimension forty-eight inside the sixty-four-dimensional $\operatorname{End}_{\mathbb{R}}(\mathbb{B})$.
+
+**The polarization.** The sandwich cone is quadratic in its parameter, and its polarization is
+
+$$
+\mathrm{Sd}_{\tilde A+\tilde B}-\mathrm{Sd}_{\tilde A}-\mathrm{Sd}_{\tilde B}=L_{\tilde A}R_{\tilde B^{*}}+L_{\tilde B}R_{\tilde A^{*}}.
+$$
+
+At $\tilde B=e_t$ the right side is $L_{\tilde A}+R_{\tilde A^{*}}$, the sum of a left multiplication and a mirrored right multiplication; at $\tilde A=i e_t$ it is $i(R_{\tilde B^{*}}-L_{\tilde B})$. Every such sum is sector-preserving, and the check is one line: for $\tilde X\in\mathbb{B}_{\Phi}$,
+
+$$
+\bigl(\tilde A\tilde X\tilde B^{*}+\tilde B\tilde X\tilde A^{*}\bigr)^{*}
+=\tilde B\tilde X^{*}\tilde A^{*}+\tilde A\tilde X^{*}\tilde B^{*}
+=-\tilde B\tilde X\tilde A^{*}-\tilde A\tilde X\tilde B^{*}.
+$$
+
+The two terms are exchanged by the star, so neither needs to be sector-preserving on its own. That is precisely what §*The Rigidity* forbids for a single two-sided operator: $L_{\tilde A}R_{\tilde B^{*}}$ preserves the halves only when $\tilde B=\lambda\tilde A$, and the sum of two such operators is not of the two-sided shape at all. The polarization is therefore the mechanism by which the sector-preserving set outgrows the cone: two sandwiches combine into an operator of the ambient space that the cone does not contain.
+
+**The dimensions.**
+
+| space | real dimension |
+|---|---|
+| $\operatorname{End}_{\mathbb{R}}(\mathbb{B})$ | $64$ |
+| sector-preserving real-linear maps | $48$ |
+| $\operatorname{End}_{\mathbb{C}}(\mathbb{B})$ | $32$ |
+| sector-preserving $\mathbb{C}$-linear maps, $\operatorname{End}_{\mathbb{R}}(\mathbb{B}_{\Psi})$ | $16$ |
+| sandwich cone $\operatorname{End}_{LR\ast}(\mathbb{B})$ | $7$ |
+
+The rows are nested. The sector condition halves the complex endomorphisms, from thirty-two to sixteen, and the sandwich cone is a seven-dimensional cone inside that half. The corollary of §*The Rigidity* says that the cone is the part of the two-sided family that survives, and the table says how small that part is: seven dimensions of a sixteen-dimensional space, cut out of a complex seven-dimensional cone by a reality condition.
+
+## The Span of the Sandwich Family
+
+### The Hermitian Coefficient Matrix
+
+**The expansion.** Write $\tilde Q=\sum_\mu a_\mu e_\mu$ in the units $e_t,\vec e_x,\vec e_y,\vec e_z$, with $a_\mu\in\mathbb{C}$, and put
+
+$$
+M_{\mu\nu}=L_{e_\mu}R_{e_\nu^{*}},\qquad \mu,\nu\in\{t,x,y,z\}.
+$$
+
+Expanding the two slots of the sandwich gives
+
+$$
+\mathrm{Sd}_{\tilde Q}=\sum_{\mu,\nu}a_\mu\bar a_\nu\,M_{\mu\nu}.
+$$
+
+The coefficient matrix $c_{\mu\nu}=a_\mu\bar a_\nu$ is Hermitian of rank one: $c=aa^{\dagger}$ with $a$ the column of coordinates. A single sandwich therefore carries a rank-one Hermitian coefficient matrix, exactly as a single two-sided operator carries a rank-one complex matrix in the expansion $L_{\tilde A}R_{\tilde B}=\sum a_\mu b_\nu M_{\mu\nu}$.
+
+**The sixteen operators are independent.** The map $c\mapsto\sum c_{\mu\nu}M_{\mu\nu}$ is injective on Hermitian $c$. The check is a finite rank computation in the $2\times2$ model, where $M_{\mu\nu}$ acts by $\tilde X\mapsto\mathsf M_2(e_\mu)\tilde X\mathsf M_2(e_\nu)^{\dagger}$; the images of the eight basis elements $e_\mu$ and $ie_\mu$ give a $32\times16$ matrix of rank sixteen. Sixteen Hermitian parameters, sixteen independent operators.
+
+**Proposition (the span).** The real span of the sandwich family is the whole sector-preserving space:
+
+$$
+\operatorname{span}_{\mathbb{R}}\{\mathrm{Sd}_{\tilde Q}:\tilde Q\in\mathbb{B}\}=\operatorname{End}_{\mathbb{R}}(\mathbb{B}_{\Psi}).
+$$
+
+*Proof.* Each $\mathrm{Sd}_{\tilde Q}$ is sector-preserving, by §*Preservation of $\mathbb{B}_{\Psi}$ and $\mathbb{B}_{\Phi}$*, so the span is contained in the right side. Conversely, as $\tilde Q$ ranges over $\mathbb{B}$ the coefficient matrix $aa^{\dagger}$ ranges over the rank-one Hermitian matrices, and the real span of those is all of $\mathrm{Herm}_{4}(\mathbb{C})$, of real dimension sixteen. By the independence the image has real dimension sixteen, which is the dimension of $\operatorname{End}_{\mathbb{R}}(\mathbb{B}_{\Psi})$; hence the inclusion is an equality.
+
+**Corollary (sixteen sandwiches are a basis).** Every sector-preserving $\mathbb{C}$-linear endomorphism of $\mathbb{B}$ is a real linear combination of the sixteen sandwiches
+
+$$
+\mathrm{Sd}_{e_\mu},\qquad \mathrm{Sd}_{e_\mu+e_\nu},\qquad \mathrm{Sd}_{e_\mu+i e_\nu},\qquad \mu<\nu,
+$$
+
+and sixteen is the least number that works, because the target space has real dimension sixteen. The corresponding coefficient matrices are $E_{\mu\mu}$, $E_{\mu\mu}+E_{\mu\nu}+E_{\nu\mu}+E_{\nu\nu}$ and $E_{\mu\mu}+E_{\nu\nu}+i(E_{\nu\mu}-E_{\mu\nu})$, which are the four diagonal, the six real off-diagonal and the six imaginary off-diagonal Hermitian matrices: a basis of $\mathrm{Herm}_{4}(\mathbb{C})$.
+
+**The sharpness with real parameters.** If the parameter is restricted to $\mathbb{B}_{\Psi}$ the span drops to ten, and no more is gained from the anti-Hermitian parameters, because $\mathrm{Sd}_{i\tilde Q}=\mathrm{Sd}_{\tilde Q}$ by the phase cancellation. The ten are the four $\mathrm{Sd}_{e_\mu}$ and the six $\mathrm{Sd}_{e_\mu+e_\nu}$, indexed by the symmetric square of the coordinate space. The six mixed sandwiches $\mathrm{Sd}_{e_\mu+i e_\nu}$ are what the imaginary part of the parameter adds, and they are the reason the span reaches sixteen.
+
+### The Parallel with the Two-Sided Basis
+
+**The two bases.**
+
+| family | indexed by | coefficients | space spanned | dimension |
+|---|---|---|---|---|
+| $L_{\tilde A}R_{\tilde B}$ | pairs $(\tilde A,\tilde B)\in\mathbb{B}\times\mathbb{B}$ | all $4\times4$ complex matrices | $\operatorname{End}_{\mathbb{C}}(\mathbb{B})$ | $16$ complex, $32$ real |
+| $\mathrm{Sd}_{\tilde Q}$ | pairs, tied by the star | Hermitian $4\times4$ matrices | $\operatorname{End}_{\mathbb{R}}(\mathbb{B}_{\Psi})$ | $16$ real |
+
+The two rows are the same computation read at two levels. A two-sided operator is a rank-one tensor, and the sixteen $U_{ij}[\,]U_{kl}$ of *Two-Sided Operators on the Biquaternion Algebra* are the matrix units of the complex endomorphism space; a sandwich is a rank-one tensor with the two slots conjugate to each other, and the sixteen sandwiches are a real basis of the sector-preserving space. The number sixteen is the same in both rows because both families are indexed by pairs; the conjugation in the sandwich imposes the Hermiticity of the coefficient matrix, and Hermiticity is what halves the thirty-two real dimensions of $\operatorname{End}_{\mathbb{C}}(\mathbb{B})$ to the sixteen of $\operatorname{End}_{\mathbb{R}}(\mathbb{B}_{\Psi})$.
+
+**The length is a different question.** The spanning statement says nothing about how many terms a given operator needs. It gives an upper bound of sixteen with unrestricted real coefficients. The number of terms with coefficient one — that is, the length of an operator as a sum of sandwiches — is a different invariant, and it is governed by positivity: by Choi's theorem the sums of sandwiches are exactly the completely positive maps, the coefficient matrix is then positive semidefinite, and the shortest such sum has as many terms as the rank of the Choi matrix, at most four. The two statements are compatible and neither implies the other: the time reflection below needs four terms with a negative coefficient, and it is not a sum of sandwiches at all.
+
+### The Identity, the Reflection, and the General Case
+
+**The identity.** $\mathrm{Sd}_{e_t}$ is the identity operator, so the identity is a single sandwich; this is the case $\lambda=1$ of §*Both Halves Give One Condition*.
+
+**The time reflection.** In the $2\times2$ model the map $\tilde X\mapsto(\operatorname{tr}\tilde X)\mathrm{I}_2-\tilde X$ fixes the centre and reverses the vector part; it is $\mathbb{C}$-linear and sector-preserving. The Pauli identity $\sum_\mu\sigma_\mu\tilde X\sigma_\mu^{\dagger}=2(\operatorname{tr}\tilde X)\mathrm{I}_2$ gives
+
+$$
+\tilde X\longmapsto(\operatorname{tr}\tilde X)\mathrm{I}_2-\tilde X
+=-\tfrac12\mathrm{Sd}_{e_t}+\tfrac12\bigl(\mathrm{Sd}_{\vec e_x}+\mathrm{Sd}_{\vec e_y}+\mathrm{Sd}_{\vec e_z}\bigr),
+$$
+
+four sandwiches, one coefficient negative. In the basis of the corollary above the coefficient vector is $(-\tfrac12,\tfrac12,\tfrac12,\tfrac12,0,\dots,0)$: the four diagonal sandwiches, with the twelve mixed ones unused.
+
+**It is not a sum of sandwiches.** The Choi matrix of the reflection has the eigenvalues $(-1,1,1,1)$, so it is not positive semidefinite, and no sum of sandwiches of any length equals it. The negative coefficient is therefore not an artefact of the chosen expansion: it is forced, and it is the visible sign of the operator's failure to be completely positive.
+
+**The general case.** A generic sector-preserving map uses all sixteen basis sandwiches, and several coefficients are negative. The identity uses one, the reflection four, and the count rises with the departure from the sandwich shape.
+
+### The Cone and the Span
+
+**The sandwiches are the extreme rays.** The completely positive maps of $\mathbb{B}$ are the sums of sandwiches, by *Completely Positive Maps of a Hermitian Algebra with Hermitian Adjoint*, §*Choi's Theorem and the Kraus Form*, and a sum of sandwiches with coefficient one is a nonnegative real combination, because a nonnegative scalar is absorbed into the parameter, $\mu\,\mathrm{Sd}_{\tilde Q}=\mathrm{Sd}_{\sqrt{\mu}\tilde Q}$. The cone of completely positive maps is therefore exactly the cone generated by the sandwich family, and its extreme rays are the rank-one coefficient matrices, that is, the sandwiches themselves.
+
+**Two objects, one family.** The cone and the span are two readings of the same sixteen-parameter family. The cone is proper and has real dimension sixteen; the span is the linear space it generates, also of real dimension sixteen, and it contains operators outside the cone. A completely positive map is a sum of at most four sandwiches with positive coefficients; a sector-preserving map is a real combination of at most sixteen. The two numbers answer different questions, and the second is not a bound on the first.
 
 ## The Norm
 
@@ -220,7 +467,7 @@ $$
 
 The ray is the closed ray of nonnegative multiples of the identity; the identity is the point $t=1$, and the zero operator is the point $t=0$.
 
-**The proof.** Write $\mathrm{Sd}_{\tilde Q}=L_{\tilde Q}R_{\tilde Q^{*}}$. If $\mathrm{Sd}_{\tilde Q}=L_{\tilde A}$, then $R_{\tilde Q^{*}}=L_{\tilde A}L_{\tilde Q}^{-1}$ when $\tilde Q$ is a unit, so $R_{\tilde Q^{*}}$ lies in $L(\mathbb{B})\cap R(\mathbb{B})$. The intersection of the two one-sided families is the scalars, by *The One-Sided Operators on the Biquaternion Algebra*, so $R_{\tilde Q^{*}}$ is a scalar; hence $\tilde Q^{*}$ is central and $\tilde Q$ is central. If $\tilde Q$ is not a unit and $\mathrm{Sd}_{\tilde Q}=L_{\tilde A}$, evaluating at $e_t$ gives $\tilde A=\tilde Q\tilde Q^{*}=\langle\tilde Q\rangle_{\natural}e_t$; if $\tilde Q$ is a null element this is zero, and then $\mathrm{Sd}_{\tilde Q}=0$, which forces $\tilde Q=0$. In every case $\tilde Q=\lambda e_t$, and $\mathrm{Sd}_{\tilde Q}=|\lambda|^{2}\mathrm{I}$ is a nonnegative multiple of the identity. The same argument with the roles exchanged gives the intersection with $R(\mathbb{B})$.
+**The proof.** Write $\mathrm{Sd}_{\tilde Q}=L_{\tilde Q}R_{\tilde Q^{*}}$. If $\mathrm{Sd}_{\tilde Q}=L_{\tilde A}$, then $R_{\tilde Q^{*}}=L_{\tilde A}L_{\tilde Q}^{-1}$ when $\tilde Q$ is a unit, so $R_{\tilde Q^{*}}$ lies in $L(\mathbb{B})\cap R(\mathbb{B})$. The intersection of the two one-sided families is the scalars, by *The One-Sided Operators on the Biquaternion Algebra*, so $R_{\tilde Q^{*}}$ is a scalar; hence $\tilde Q^{*}$ is central and $\tilde Q$ is central. If $\tilde Q$ is a zero divisor, it has $2\times2$ rank one, and then $\tilde Q\tilde X\tilde Q^{*}$ lies in the complex line through $\tilde Q\tilde Q^{*}$ for every $\tilde X$, so $\mathrm{Sd}_{\tilde Q}$ has complex rank at most one, while a nonzero $L_{\tilde A}$ has complex rank two or four. Hence $\tilde A=0$ and $\mathrm{Sd}_{\tilde Q}=0$; evaluating at $e_t$ gives $\tilde Q\tilde Q^{*}=0$, which forces $\tilde Q=0$. In every case $\tilde Q=\lambda e_t$, and $\mathrm{Sd}_{\tilde Q}=|\lambda|^{2}\mathrm{I}$ is a nonnegative multiple of the identity. The same argument with the roles exchanged gives the intersection with $R(\mathbb{B})$.
 
 **The ray is not a subspace.** The ray is a half-line, not a line: the negative multiples of the identity are not in the cone, because they would require $|\lambda|^{2}<0$. The ray is a boundary face of the cone along the central direction; it is the only part of the sandwich cone that is one-sided. The two intersections are the same ray.
 
@@ -245,7 +492,7 @@ $$
 
 **The reading.** The diagonal products $\lambda_i\bar\lambda_i=|\lambda_i|^{2}$ are nonnegative real; the two off-diagonal products are conjugate to each other. The spectrum is invariant under the phase of $\tilde Q$, and it depends only on the eigenvalues of the $2\times2$ model. If $\tilde Q$ is a unit, all four products are nonzero; if $\tilde Q$ is a null element, at least one eigenvalue is zero, and at least two products vanish. If $\tilde Q$ is central, $\lambda_1=\lambda_2=\lambda$, and all four products are $|\lambda|^{2}$; the sandwich is the scalar $|\lambda|^{2}\mathrm{I}$.
 
-**The verification.** The matrix verification is in *The Polar Decomposition and Remarkable Subspaces*, §*The Anti-Hermitian Half as Four-Vectors*, and §*The Two Halves Are One Action*, of the same article. In the $2\times2$ model the sandwich is the congruence $X\mapsto MXM^{\dagger}$; its eigenvalues are the products of an eigenvalue of $M$ with the conjugate of an eigenvalue of $M$, which is the display. The abstract statement is the same computation read in the $2\times2$ model of the algebra; the spectrum is a similarity invariant, so the choice of model does not change it.
+**The verification.** The matrix verification is in *The Polar Decomposition and Remarkable Subspaces*, §*The Anti-Hermitian Half as Four-Vectors* and §*The Two Halves Are One Action*, both in that article. In the $2\times2$ model the sandwich is the congruence $X\mapsto MXM^{\dagger}$; its eigenvalues are the products of an eigenvalue of $M$ with the conjugate of an eigenvalue of $M$, which is the display. The abstract statement is the same computation read in the $2\times2$ model of the algebra; the spectrum is a similarity invariant, so the choice of model does not change it.
 
 **The trace.** The trace is $|\operatorname{Tr}\mathsf M_2(\tilde Q)|^{2}=4|Q_t|^{2}$, the squared modulus of the trace of the model matrix. The determinant is the fourth power of the modulus of the norm, $|\langle\tilde Q\rangle_{\natural}|^{4}$, which is also the determinant of the sandwich as a linear operator on the complex four-dimensional algebra. The two invariants are real and nonnegative; the spectrum carries the phase information in its off-diagonal pair.
 
@@ -270,7 +517,7 @@ of real dimension seven. The general element $\tilde Q=r\omega\tilde U$ with $r>
 
 **The kernel of the linear map.** The kernel of the linear map $\mathrm{Sd}_{\tilde Q}$ for a fixed $\tilde Q$ is a different object. It is $\{0\}$ exactly when $\tilde Q$ is a unit; if $\tilde Q$ is a null element, the kernel is nonzero. The kernel of the parameter map is the $\mathrm{U}(1)$ orbit; the kernel of the linear map is $\{\tilde X:\tilde Q\tilde X\tilde Q^{*}=0\}$. The two kernels are stated separately, and neither is the other.
 
-**The image of the linear map.** For a unit $\tilde Q$, $\mathrm{Sd}_{\tilde Q}$ is a linear isomorphism of $\mathbb{B}$; for a null element it has a nonzero kernel and a proper image. The image of the parameter map is the cone of §*The Real Cone*; the image of the linear map is the whole algebra or a proper subspace, according to the rank of $\tilde Q$. The rank of $\mathrm{Sd}_{\tilde Q}$ is the square of the rank of $\tilde Q$: the image is $\tilde Q\mathbb{B}\tilde Q^{*}$, of complex dimension $\operatorname{rank}(\tilde Q)^{2}$.
+**The image of the linear map.** For a unit $\tilde Q$, $\mathrm{Sd}_{\tilde Q}$ is a linear isomorphism of $\mathbb{B}$; for a null element it has a nonzero kernel and a proper image. The image of the parameter map is the sandwich cone of the Introduction; the image of the linear map is the whole algebra or a proper subspace, according to the rank of $\tilde Q$. The rank of $\mathrm{Sd}_{\tilde Q}$ is the square of the rank of $\tilde Q$: the image is $\tilde Q\mathbb{B}\tilde Q^{*}$, of complex dimension $\operatorname{rank}(\tilde Q)^{2}$.
 
 ### $SL_2(\mathbb{C})\to SO^{+}(1,3)$ on the Norm-One Slice
 
@@ -283,13 +530,13 @@ $$
 
 a twofold cover. The kernel is $\{\pm e_t\}$; the image is the identity component of the Lorentz group; both groups have real dimension six. The kernel and the image are stated per slice: on $\mathbb{B}^{\times}$ the kernel is $\mathrm{U}(1)$ and the image is $CO^{+}(1,3)$; on $\mathbb{B}_1^{\times}$ the kernel is $\{\pm e_t\}$ and the image is $SO^{+}(1,3)$.
 
-**The Lorentz action.** The anti-Hermitian half is a real four-dimensional space with the Minkowski form of signature $(3,1)$. A unit-norm sandwich preserves the form, because the norm scales by $|\langle\tilde Q\rangle_{\natural}|^{2}=1$. The map is continuous, $SL_2(\mathbb{C})$ is connected, and the kernel is $\{\pm e_t\}$; hence the image is the identity component $SO^{+}(1,3)$. The Hermitian half carries the same action composed with the exchange by $i$, with the opposite sign of the form. The matrix verification is in the two model articles cited in §*The Spectrum*.
+**The Lorentz action.** The anti-Hermitian half is a real four-dimensional space with the Minkowski form of signature $(3,1)$. A unit-norm sandwich preserves the form, because the norm scales by $|\langle\tilde Q\rangle_{\natural}|^{2}=1$. The map is continuous, $SL_2(\mathbb{C})$ is connected, and the kernel is $\{\pm e_t\}$; hence the image is the identity component $SO^{+}(1,3)$. The Hermitian half carries the same action composed with the exchange by $i$, with the opposite sign of the form. The matrix verification is in *The Polar Decomposition and Remarkable Subspaces*, §*The Anti-Hermitian Half as Four-Vectors* and §*The Two Halves Are One Action*.
 
 **The conformal extension.** For a general unit $\tilde Q=r\omega\tilde U$, the sandwich is $r^{2}\mathrm{Sd}_{\tilde U}$: a Lorentz transformation composed with the dilation of ratio $r^{2}$ on the algebra, $r^{4}$ on the norm and $r^{8}$ on the $4\times4$ determinant. The image is the conformal group $CO^{+}(1,3)$; the kernel remains the central $\mathrm{U}(1)$, and the scale is the positive real factor. The unit-norm slice is the subgroup on which the dilation is one; the general unit group adds the dilation and the phase, and the phase is the kernel.
 
 ## Summary
 
-The Hermitian sandwich is $\mathrm{Sd}_{\tilde Q}(\tilde X)=\tilde Q\tilde X\tilde Q^{*}$, the member $L_{\tilde Q}R_{\tilde Q^{*}}$ of the two-sided family. It is a real cone of real dimension seven, the graph of the involution inside the complex two-sided cone; the phase of the parameter cancels, and complex rescaling acts by the square of the modulus. It is multiplicative up to the order of the factors, $\mathrm{Sd}_{\tilde Q}\mathrm{Sd}_{\tilde Q_2}=\mathrm{Sd}_{\tilde Q\tilde Q_2}$, and its defect from an algebra automorphism is $e_t-\tilde Q^{*}\tilde Q$; the defect vanishes exactly on the central multiples of real unit quaternions. It preserves the Hermitian and anti-Hermitian halves for every parameter, and the finer subspace structure exactly on that same set. It scales the norm by $|\langle\tilde Q\rangle_{\natural}|^{2}$, preserves the null cone and the sign of the norm, and sees only the modulus of the norm. The parameter is defined modulo the central $\mathrm{U}(1)$, which gives the real dimension seven. The sandwich meets each one-sided family in the closed ray of nonnegative multiples of the identity. Its spectrum is the four products $\lambda_i\bar\lambda_j$ of the eigenvalues of the $2\times2$ model with their conjugates; the trace is $4|Q_t|^{2}$ and the determinant is $|\langle\tilde Q\rangle_{\natural}|^{4}$. On the unit group the parameter map has kernel $\mathrm{U}(1)$ and image $CO^{+}(1,3)$; on the norm-one slice it is the twofold cover $SL_2(\mathbb{C})\to SO^{+}(1,3)$ with kernel $\{\pm e_t\}$.
+The Hermitian sandwich is $\mathrm{Sd}_{\tilde Q}(\tilde X)=\tilde Q\tilde X\tilde Q^{*}$, the member $L_{\tilde Q}R_{\tilde Q^{*}}$ of the two-sided family. It is a real cone of real dimension seven, the graph of the involution inside the complex two-sided cone; the phase of the parameter cancels, and complex rescaling acts by the square of the modulus. It is multiplicative up to the order of the factors, $\mathrm{Sd}_{\tilde Q}\mathrm{Sd}_{\tilde Q_2}=\mathrm{Sd}_{\tilde Q\tilde Q_2}$, and its defect from an algebra automorphism is $e_t-\tilde Q^{*}\tilde Q$; the defect vanishes exactly on the central multiples of real unit quaternions. It preserves the Hermitian and anti-Hermitian halves for every parameter, and the finer subspace structure exactly on that same set. The preservation is not a constraint on the parameter but a property of the involution: the three conditions $T(\mathbb{B}_{\Phi})\subseteq\mathbb{B}_{\Phi}$, preservation of both halves, and $TJ=JT$ with $J(\tilde X)=\tilde X^{*}$ are equivalent, and $\mathrm{Sd}_{\tilde Q}$ satisfies all three for every $\tilde Q$. Conversely, inside the two-sided family the sector condition forces the shape: $L_{\tilde A}R_{\tilde B}$ preserves $\mathbb{B}_{\Phi}$ into itself exactly when $\tilde B=\lambda\tilde A^{*}$ with $\lambda$ real, and the same condition, with the same $\lambda$, is what preserves $\mathbb{B}_{\Psi}$ into itself; the two conditions are one condition, and the sector-preserving two-sided operators are the real multiples of the sandwiches, with the cone itself corresponding one-to-one to $\mathbb{B}/\mathrm{U}(1)$ and the cone being one half of that set, the negative multiples being no sandwiches. The argument of $\lambda$ decides the fate of the halves: real keeps both, purely imaginary swaps them, and a $\lambda$ with both parts nonzero destroys both. The sandwich is the case $\lambda=1$, which is why it needs no hypothesis on its parameter. The one-sided multiplications preserve the halves only at a real scalar, because the star is conjugate-linear and the sandwich is the combination in which the conjugate-linearity occurs twice. The sector-preserving $\mathbb{C}$-linear maps form a real space of dimension sixteen, $\operatorname{End}_{\mathbb{R}}(\mathbb{B}_{\Psi})$, and forty-eight without $\mathbb{C}$-linearity; the cone is seven-dimensional inside the sixteen. The sandwich family spans that sixteen-dimensional space: writing $\mathrm{Sd}_{\tilde Q}=\sum_{\mu\nu}a_\mu\bar a_\nu M_{\mu\nu}$ with $M_{\mu\nu}=L_{e_\mu}R_{e_\nu^{*}}$, the coefficient matrix $aa^{\dagger}$ is Hermitian of rank one, the sixteen Hermitian coefficients are independent, and the sixteen sandwiches $\mathrm{Sd}_{e_\mu}$, $\mathrm{Sd}_{e_\mu+e_\nu}$ and $\mathrm{Sd}_{e_\mu+i e_\nu}$ are a real basis. Every sector-preserving map is therefore a real combination of sixteen sandwiches, the identity being one sandwich and the time reflection four with one negative coefficient, while the completely positive maps are the sums and have Kraus length at most four: the sixteen is a spanning number, the four a length, and the time reflection, whose Choi matrix has eigenvalue $-1$, shows that the two are different. It scales the norm by $|\langle\tilde Q\rangle_{\natural}|^{2}$, preserves the null cone and the sign of the norm, and sees only the modulus of the norm. The parameter is defined modulo the central $\mathrm{U}(1)$, which gives the real dimension seven. The sandwich meets each one-sided family in the closed ray of nonnegative multiples of the identity. Its spectrum is the four products $\lambda_i\bar\lambda_j$ of the eigenvalues of the $2\times2$ model with their conjugates; the trace is $4|Q_t|^{2}$ and the determinant is $|\langle\tilde Q\rangle_{\natural}|^{4}$. On the unit group the parameter map has kernel $\mathrm{U}(1)$ and image $CO^{+}(1,3)$; on the norm-one slice it is the twofold cover $SL_2(\mathbb{C})\to SO^{+}(1,3)$ with kernel $\{\pm e_t\}$.
 
 ## Summary of Notation
 
@@ -301,6 +548,11 @@ The Hermitian sandwich is $\mathrm{Sd}_{\tilde Q}(\tilde X)=\tilde Q\tilde X\til
 | $\langle\tilde Q\rangle_{\natural}$ | the quaternionic norm; $\langle\mathrm{Sd}_{\tilde Q}(\tilde X)\rangle_{\natural}=|\langle\tilde Q\rangle_{\natural}|^{2}\langle\tilde X\rangle_{\natural}$ |
 | $\mathrm{U}(1)$ | the central phase $\{\omega e_t:|\omega|=1\}$ |
 | $\operatorname{End}_{LR\ast}(\mathbb{B})$ | the real cone of sandwiches, real dimension seven |
+| $J(\tilde X)=\tilde X^{*}$ | the real structure; the sector condition is $TJ=JT$ |
+| $\operatorname{End}_{\mathbb{R}}(\mathbb{B}_{\Psi})$ | the sector-preserving $\mathbb{C}$-linear endomorphisms, real dimension sixteen |
+| $M_{\mu\nu}=L_{e_\mu}R_{e_\nu^{*}}$ | the sixteen elementary operators; $\mathrm{Sd}_{\tilde Q}=\sum_{\mu\nu}a_\mu\bar a_\nu M_{\mu\nu}$ |
+| $aa^{\dagger}$ | the Hermitian rank-one coefficient matrix of the sandwich $\mathrm{Sd}_{\tilde Q}$, with $a$ the coordinates of $\tilde Q$ |
+| $\lambda$ in $\tilde B=\lambda\tilde A^{*}$ | the real scalar of the sector-preserving two-sided operators |
 | $L(\mathbb{B}),R(\mathbb{B})$ | the left and right regular families |
 | $\lambda_1,\lambda_2$ | the eigenvalues of the $2\times2$ model $\mathsf M_2(\tilde Q)$ |
 | $CO^{+}(1,3)$ | the conformal proper orthochronous Lorentz group |
@@ -310,8 +562,7 @@ The Hermitian sandwich is $\mathrm{Sd}_{\tilde Q}(\tilde X)=\tilde Q\tilde X\til
 ## Further Reading
 
 - [Two-Sided Operators on the Biquaternion Algebra](two-sided-operators-on-the-biquaternion-algebra.html), for the two-sided family, the scaling orbit and the composition.
-- [The Hermitian Sandwich: Definition and Multiplicativity](the-hermitian-sandwich-definition-and-multiplicativity.html), for the matrix verification in the $2\times2$ model.
-- [The Hermitian Sandwich: Definition and Multiplicativity](the-hermitian-sandwich-definition-and-multiplicativity.html), for the matrix verification in the regular model.
 - [The Four Adjoints of the Biquaternion Algebra in Examples](the-four-adjoints-of-the-biquaternion-algebra-in-examples.html), for the adjoints of the sandwich.
-- [The Polar Decomposition and Remarkable Subspaces](the-polar-decomposition-and-remarkable-subspaces.html), for the criterion on the parameter and the action on the six subspaces.
+- [The Polar Decomposition and Remarkable Subspaces](the-polar-decomposition-and-remarkable-subspaces.html), for the criterion on the parameter, the congruence in the $2\times2$ model, and the action on the six subspaces.
 - [Operator Family Conventions](operator-family-conventions.html), for the names of the families and the sets.
+- [Completely Positive Maps of a Hermitian Algebra with Hermitian Adjoint](completely-positive-maps-of-a-hermitian-algebra-with-hermitian-adjoint.html), for Choi's theorem, the Kraus form, and the sums of sandwiches.
