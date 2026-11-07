@@ -102,7 +102,7 @@ $$
 so a free plane wave in a medium is $N$-degenerate, a zero divisor of $\mathbb{B}$, exactly as the parent states.</p>
 <p>An exercise built on parents tests them. The parent states the conditions above and the nullness without deriving them, so the exercise derives them from $\tilde{\nabla}\tilde{F}=0$ and then checks them on cases the parent did not use: oblique propagation, elliptical polarisation, and media with $\epsilon \neq \mu$. The parent's plane-wave results survive all of them. The exercise also records what the parent leaves open: a restricted real normalisation, an energy expression that is non-dispersive, and a label — "Lorentz invariants" — that the parent's own medium setting does not establish. These are collected in the section <em>Where the Parent Leaves a Gap</em>, and none of them is smoothed over.</p>
 <h2 id="the-problem">The Problem</h2>
-<p>The parent's plane-wave section fixes the conventions and quotes the consequences. The problem here is to <em>apply</em> them: to take the single biquaternionic Maxwell equation with no source, substitute the plane-wave ansatz, and obtain every downstream statement by computation rather than by quotation. The natural objects are the ones the parent fixes — the field-strength biquaternion $\tilde{F}$, the medium speed $c$, the impedance $Z$, the Riemann–Silberstein vector $\vec N$ — and the natural operator is $\tilde{\nabla}$ with its medium entry $\partial/\partial R_t = -\frac{i}{c}\partial/\partial r'_t$.</p>
+<p>The parent's plane-wave section fixes the conventions and quotes the consequences. The problem here is to <em>apply</em> them: to take the single biquaternionic Maxwell equation with no source, substitute the plane-wave ansatz, and obtain every downstream statement by computation rather than by quotation. The natural objects are the ones the parent fixes — the field-strength biquaternion $\tilde{F}$, the medium speed $c$, the impedance $Z$, the Riemann–Silberstein vector $\vec N$ — and the natural operator is $\tilde{\nabla}$ with its medium entry $\partial/\partial R_t = -i\partial/\partial r'_t$.</p>
 <p>The calculation is an eigenvalue problem. A plane wave is an eigenfunction of every $\partial/\partial R_\mu$, so $\tilde{\nabla}$ acts on it by left multiplication by a constant biquaternion, and $\tilde{\nabla}\tilde{F} = 0$ becomes a purely algebraic annihilation condition. That condition is what the exercise solves, and the four conditions and the dispersion relation fall out of its scalar and vector parts.</p>
 <p>Two points of discipline are kept in view. First, the field strength is a pure vector with <strong>complex</strong> amplitude components, so every condition must be read as a complex equation and every amplitude relation as a modulus relation; checking only a linearly polarised real wave would test a case narrower than the algebra. Second, the parent is treated as a source of assertions until the computation has been done, and the computation is run on a case other than the one that suggested the statement.</p>
 <h2 id="problem-1-the-plane-wave-conditions-and-the-dispersion-relation">Problem 1: The Plane-Wave Conditions and the Dispersion Relation</h2>
@@ -113,7 +113,7 @@ $$
 \qquad
 \partial/\partial R_j\,\exp(\,i(\vec k\cdot(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)-\omega r'_t)) = i k_j\,\exp(\,i(\vec k\cdot(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)-\omega r'_t)),
 $$
-using $\partial/\partial R_t = -\frac{i}{c}\partial/\partial r'_t$ and $\partial/\partial r'_t \to -i\omega$. Hence
+using $\partial/\partial R_t = -i\partial/\partial r'_t$ and $\partial/\partial r'_t \to -i\omega$. Hence
 $$
 \tilde{\nabla}\tilde{F} = \left(-\frac{\omega}{c}\,e_t + i\vec k\right)\tilde{F}_0\,\exp(\,i(\vec k\cdot(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)-\omega r'_t)),
 \qquad
@@ -295,7 +295,7 @@ So the energy–momentum biquaternion of the wave is itself a <strong>zero divis
 $$
 \partial/\partial R_t = -\frac{i}{c(\omega)}\,\partial/\partial r'_t \;\longrightarrow\; -\frac{i}{c(\omega)}\,(-i\omega) = -\frac{\omega}{c(\omega)},
 $$
-a <strong>real</strong> eigenvalue, so that the operator eigenvalue is $-\frac{\omega}{c(\omega)}e_t + i\vec k$. The imaginary time axis $i c r'_t = i\,c(\omega)\,r'_t$ is scaled by $c(\omega)$, which is different at each frequency; the algebra $\mathbb{B}$ and the scalar $i$ are fixed, and only the embedding of physical time into the imaginary direction changes. This is the precise sense in which the local complex structure is spectral as well as spatial, and it is why the dispersion relation must be imposed frequency by frequency.</p>
+a <strong>real</strong> eigenvalue, so that the operator eigenvalue is $-\frac{\omega}{c(\omega)}e_t + i\vec k$. The imaginary time axis $i r'_t = i\,c(\omega)\,r'_t$ is scaled by $c(\omega)$, which is different at each frequency; the algebra $\mathbb{B}$ and the scalar $i$ are fixed, and only the embedding of physical time into the imaginary direction changes. This is the precise sense in which the local complex structure is spectral as well as spatial, and it is why the dispersion relation must be imposed frequency by frequency.</p>
 <p><strong>Solution (b).</strong> With $n(\omega) = c_0/c(\omega)$ and $k = \frac{n(\omega)\omega}{c_0}$, the phase velocity is
 $$
 v_p = \frac{\omega}{k} = \frac{c_0}{n(\omega)} = c(\omega),
@@ -314,7 +314,7 @@ an envelope $\cos(\Delta k\,r_z-\Delta\omega\,r'_t)$ modulating the carrier. The
 <p><strong>Solution (c).</strong> In vacuum $\epsilon = \epsilon_0$, $\mu = \mu_0$, so $c = c_0$, $Z = Z_0$, $n = 1$, and $dn/d\omega = 0$. Then the dispersion relation becomes $k^2 = \omega^2/c_0^2$, the impedance relation becomes $\vec H_0 = Z_0^{-1}\vec u_k\times\vec E_0$, the amplitude relation becomes $|\vec E_0| = Z_0|\vec H_0| = c_0|\vec B_0|$, the nullness $\langle\tilde{F}_0\rangle_{\natural} = 0$ is unchanged, $v_p = v_g = c_0$, and the gradient's temporal eigenvalue becomes $-\omega/c_0$. Every relation reduces to the vacuum statement of the parent articles by the substitution $c\to c_0$, $Z\to Z_0$, as it must.</p>
 <h2 id="problem-5-the-monochromatic-and-stationary-field">Problem 5: The Monochromatic and Stationary Field</h2>
 <p><strong>Statement.</strong> (a) With the harmonic time dependence $\tilde F = \tilde F_0(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)\exp(-i\omega r'_t)$ and wave number $k = \omega/c$, derive the equation satisfied by the complex amplitude and its radiating solution. (b) Take the time-independent limit, recover the Poisson equation and the Newton-potential solution, and exhibit the scalar and vector potentials of the stationary field.</p>
-<p><strong>Solution (a).</strong> In the corpus's three-vector form the field satisfies $\partial/\partial R_t\tilde F+\mathrm{rot}\,\tilde F=-\vec j$, with $\vec j = \sqrt{\mu}\,\vec J_{\mathrm{e}} - i\sqrt{\epsilon}\,\vec J_{\mathrm{m}}$ and $\partial/\partial R_t=-c^{-1}\partial/\partial r'_t$. For the harmonic dependence $\partial/\partial R_t=-k$, so</p>
+<p><strong>Solution (a).</strong> In the corpus's three-vector form the field satisfies $\partial/\partial R_t\tilde F+\mathrm{rot}\,\tilde F=-\vec j$, with $\vec j = \sqrt{\mu}\,\vec J_{\mathrm{e}} - i\sqrt{\epsilon}\,\vec J_{\mathrm{m}}$ and $\partial/\partial R_t=-i\partial/\partial r'_t$. For the harmonic dependence $\partial/\partial R_t=-k$, so</p>
 <p>$$
 \mathrm{rot}\,\tilde F - k\,\tilde F = -\vec j,
 \qquad k = \frac{\omega}{c}.
@@ -397,7 +397,7 @@ from which the transversality conditions $\vec k\cdot\vec E_0 = \vec k\cdot\vec 
 <td>Biquaternionic gradient, its quaternion conjugate, d'Alembertian</td>
 </tr>
 <tr>
-<td>$\partial/\partial R_t = -\frac{i}{c}\partial/\partial r'_t$</td>
+<td>$\partial/\partial R_t = -i\partial/\partial r'_t$</td>
 <td>Temporal component of the gradient (medium)</td>
 </tr>
 <tr>

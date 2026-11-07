@@ -99,7 +99,7 @@
 <p>Cosmology is a specific application of gravity, and it is worth stating the application precisely so that the gaps can be located. The standard constructions are three, and each is a target here rather than a framework result.</p>
 <p><strong>The FLRW line element and its two functions.</strong> A homogeneous and isotropic universe is described by the Friedmann–Lemaître–Robertson–Walker line element</p>
 <p>$$
-ds^2 = -c^2\,d{r'_{t}}^2 + a(r'_t)^2\left[\frac{dr^2}{1-kr^2} + r^2\,d\Omega^2\right],
+ds^2 = -d{r'_{t}}^2 + a(r'_t)^2\left[\frac{dr^2}{1-kr^2} + r^2\,d\Omega^2\right],
 $$</p>
 <p>with a function and a parameter: the <strong>scale factor</strong> $a(r'_t)$, which carries the expansion, and the <strong>spatial-curvature parameter</strong> $k \in \{-1,0,+1\}$, which selects the open, flat, or closed spatial geometry. This is standard cosmology, not framework content. It is the metric the framework's carrier would have to be able to write.</p>
 <p><strong>The Friedmann equations, and what closes them.</strong> Evaluating the Einstein equations on that metric gives</p>
@@ -152,11 +152,11 @@ $$</p>
 <p>The decomposition $\mathbb{B} = \mathbb{B}_{\Psi}\oplus\mathbb{B}_{\Phi}$ is a pointwise decomposition and survives on any background; the informational sector's elements become fields of Hermitian operators without difficulty. What does not survive is the trace: the trace in $\mathrm{Tr}(\tilde Q_1\tilde Q_2)=2\,\mathrm{Sc}(\tilde Q_1\tilde Q_2)$ is a $2\times2$ fibre trace, with no volume element and no measure. This is the structural reason the informational sector has no curved-space field theory, and it is where the cosmological thermodynamics fails; it is stated in <em>Curved Spacetime and the Biquaternion Framework</em> and inherited here unchanged.</p>
 <h3 id="the-frameworks-thermodynamics-is-rank-two">The framework's thermodynamics is rank-two</h3>
 <p><em>The Partition Function in Biquaternionic Form</em> reaches a definite and honest set of results, and its boundary is exactly where cosmology needs it to continue.</p>
-<p>For a Hermitian Hamiltonian $\tilde R_\Psi = c r_t\,e_t + i\vec r_\Psi \in \mathbb{B}_{\Psi}$, the thermal operator is a scalar Boltzmann weight times a boost biquaternion, and the Hermitian form gives, with the trace reading at normalisation last,</p>
+<p>For a Hermitian Hamiltonian $\tilde R_\Psi = r_t\,e_t + i\vec r_\Psi \in \mathbb{B}_{\Psi}$, the thermal operator is a scalar Boltzmann weight times a boost biquaternion, and the Hermitian form gives, with the trace reading at normalisation last,</p>
 <p>$$
-Z = 2\,\mathrm{Sc}\left(\exp(-\beta H)\right) = 2\exp(-\beta c r_t)\cosh\left(\beta|\vec r_\Psi|\right),\qquad\text{with trace reading } \operatorname{Tr}\left(\exp(-\beta H)\right)=Z,
+Z = 2\,\mathrm{Sc}\left(\exp(-\beta H)\right) = 2\exp(-\beta r_t)\cosh\left(\beta|\vec r_\Psi|\right),\qquad\text{with trace reading } \operatorname{Tr}\left(\exp(-\beta H)\right)=Z,
 $$</p>
-<p>the ordinary partition function of a <strong>two-level system</strong> with energies $c r_t \pm |\vec r_\Psi|$. That maximum is the entropy of a two-state system. It is not the entropy of a field, and it cannot become one: the number of states is the rank of the $2\times2$ fibre, which is two.</p>
+<p>the ordinary partition function of a <strong>two-level system</strong> with energies $r_t \pm |\vec r_\Psi|$. That maximum is the entropy of a two-state system. It is not the entropy of a field, and it cannot become one: the number of states is the rank of the $2\times2$ fibre, which is two.</p>
 <p>This is the <strong>rank-two limitation</strong> in its first sense. The framework's thermal invariants are invariants of a finite, two-dimensional operator algebra: a state, an observable, a partition function, an entropy, and a heat capacity, all of a single qubit. They are not the thermodynamic quantities cosmology uses.</p>
 <ul>
 <li>There is no field-theoretic partition function. A cosmology needs the thermodynamics of a continuum — a radiation bath with a density of states growing with energy, an entropy density proportional to $T^3$, an energy density proportional to $T^4$ — and a finite two-level system has none of these. The framework's entropy saturates where a field's diverges.</li>
@@ -228,7 +228,7 @@ $$</p>
 <p>Two disciplines apply to every item. First, each candidate result must be recomputed on a case chosen independently of the one that suggested it — a second spatial-curvature sign, a second equation of state, a second frame — because a carrier that works for $k=0$ or for dust has not been shown to work in general. Second, a carried or transcribed cosmological statement must not be reported as a framework result. That distinction is the standing content of this agenda, and the easiest way to lose it is to write one sentence too many.</p>
 <h2 id="summary">Summary</h2>
 <p>This agenda asked what it would take for the biquaternion framework to carry a cosmology, and it has recorded what the framework reaches and what it does not.</p>
-<p><strong>What is established.</strong> The frame route carries the FLRW metric exactly: with $\tilde{E}_{\Phi}_0 = ie_t$ and $\tilde{E}_{\Phi}_i = a\,\vec e_i$ the Gram matrix is $\mathrm{diag}(-1,a^2,a^2,a^2)$ for an arbitrary supplied scale factor, recomputed here from the inherited bilinear form. Isotropy has an exact algebraic home, as the invariance of the spatial metric under the unit real quaternions in $\mathbb{B}_{H}$. The two-sector decomposition survives pointwise on any background. The framework's thermodynamics is the qubit thermodynamics of <em>The Partition Function in Biquaternionic Form</em>: $Z = 2\exp(-\beta c r_t)\cosh(\beta|\vec r_\Psi|)$, an entropy bounded by $\log 2$, and a temperature that measures imaginary-time displacement.</p>
+<p><strong>What is established.</strong> The frame route carries the FLRW metric exactly: with $\tilde{E}_{\Phi}_0 = ie_t$ and $\tilde{E}_{\Phi}_i = a\,\vec e_i$ the Gram matrix is $\mathrm{diag}(-1,a^2,a^2,a^2)$ for an arbitrary supplied scale factor, recomputed here from the inherited bilinear form. Isotropy has an exact algebraic home, as the invariance of the spatial metric under the unit real quaternions in $\mathbb{B}_{H}$. The two-sector decomposition survives pointwise on any background. The framework's thermodynamics is the qubit thermodynamics of <em>The Partition Function in Biquaternionic Form</em>: $Z = 2\exp(-\beta r_t)\cosh(\beta|\vec r_\Psi|)$, an entropy bounded by $\log 2$, and a temperature that measures imaginary-time displacement.</p>
 <p><strong>What is only carried, and is not a derived cosmology.</strong> The scale factor, the spatial-curvature parameter, the Friedmann equations, the perfect-fluid source, and the cosmological constant are all <strong>standard cosmology used as targets</strong>. No scale factor, no Hubble rate, and no equation of state is derived here or in the framework. The framework's own locality device is not the route: a time-dependent local $c$ gives a flat metric and cannot produce an expansion, and a spatially varying local $c$ gives curvature but only on flat spatial slices.</p>
 <p><strong>The obstacles, and the computation that would close each.</strong></p>
 <div class="table-scroll"><table>
@@ -350,7 +350,7 @@ $$</p>
 <td>recomputed here from an inherited identity</td>
 </tr>
 <tr>
-<td>$Z = 2\exp(-\beta c r_t)\cosh(\beta|\vec r_\Psi|)$</td>
+<td>$Z = 2\exp(-\beta r_t)\cosh(\beta|\vec r_\Psi|)$</td>
 <td>qubit partition function; entropy bounded by $\log 2$</td>
 <td>inherited from the partition-function article</td>
 </tr>

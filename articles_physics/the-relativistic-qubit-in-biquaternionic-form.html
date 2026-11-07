@@ -99,7 +99,7 @@ so the state space is the Bloch ball $|\vec r|\leq1$, and the pure states are it
 $$
 \tilde\Pi_{1,2}(\vec u) = \tfrac12\bigl(e_t \pm i\vec u\bigr), \qquad |\vec u| = 1,
 $$
-and for a Hermitian observable $\tilde R_\Psi = c r_t e_t + i\vec r_\Psi$ the Born pairing is $\langle\tilde{Ϛ}_{\Psi},\tilde R_\Psi\rangle_{*}/\langle\tilde{Ϛ}_{\Psi},e_t\rangle_{*}=\mathrm{Sc}(\tilde{Ϛ}_{\Psi}\tilde R_\Psi^{*})/\mathrm{Sc}(\tilde{Ϛ}_{\Psi}) = c r_t + \vec r\cdot\vec r_\Psi$, whose trace reading at normalisation is $\operatorname{Tr}(\tilde{Ϛ}_{\Psi}\tilde R_\Psi^{*})/\operatorname{Tr}(\tilde{Ϛ}_{\Psi})=\operatorname{Tr}(\tilde{Ϛ}_{\Psi}\tilde R_\Psi)/\operatorname{Tr}(\tilde{Ϛ}_{\Psi})$, the star being inert on $\mathbb{B}_{\Psi}$ and the unstarred trace real, and non-negative when $\tilde R_\Psi\ge0$. None of this uses relativity; it is the content of the quantum-mechanical companion, recalled here because the relativistic qubit is a structure imposed on this state space.</p>
+and for a Hermitian observable $\tilde R_\Psi = r_t e_t + i\vec r_\Psi$ the Born pairing is $\langle\tilde{Ϛ}_{\Psi},\tilde R_\Psi\rangle_{*}/\langle\tilde{Ϛ}_{\Psi},e_t\rangle_{*}=\mathrm{Sc}(\tilde{Ϛ}_{\Psi}\tilde R_\Psi^{*})/\mathrm{Sc}(\tilde{Ϛ}_{\Psi}) = r_t + \vec r\cdot\vec r_\Psi$, whose trace reading at normalisation is $\operatorname{Tr}(\tilde{Ϛ}_{\Psi}\tilde R_\Psi^{*})/\operatorname{Tr}(\tilde{Ϛ}_{\Psi})=\operatorname{Tr}(\tilde{Ϛ}_{\Psi}\tilde R_\Psi)/\operatorname{Tr}(\tilde{Ϛ}_{\Psi})$, the star being inert on $\mathbb{B}_{\Psi}$ and the unstarred trace real, and non-negative when $\tilde R_\Psi\ge0$. None of this uses relativity; it is the content of the quantum-mechanical companion, recalled here because the relativistic qubit is a structure imposed on this state space.</p>
 <h3 id="why-the-carrier-is-forced">Why the carrier is forced</h3>
 <p>The statement is exact and is worth one paragraph, because it is what makes the relativistic qubit a question about the algebra rather than about a choice. The algebra is simple and central, so by the classification of modules over a full matrix algebra it has exactly one irreducible representation, and that representation is on the column space $S$. There is no second two-dimensional carrier, no one-dimensional carrier, and no three-dimensional one. The qubit is therefore the elementary carrier the algebra has, and any relativistic structure the framework can carry must be an action on this carrier rather than a replacement for it. The remainder of the article is the study of that action.</p>
 <h2 id="the-lorentz-action-on-the-carrier">The Lorentz Action on the Carrier</h2>
@@ -189,7 +189,7 @@ $$</p>
 $$
 \tilde{\mathcal L}_{\Phi}(u) = \tfrac{i}{2}\,e_t - \tfrac12\,\vec r ,
 $$
-so in the four-vector coordinates $\tilde R_\Phi = i c r'_t\,e_t + r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z$ its time component is $c r'_{t} = \tfrac12 > 0$ and its spatial direction is
+so in the four-vector coordinates $\tilde R_\Phi = i r'_t\,e_t + r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z$ its time component is $r'_{t} = \tfrac12 > 0$ and its spatial direction is
 $$
 \vec u_p = -\vec u_r .
 $$
@@ -286,7 +286,7 @@ $$
 which preserves the trace, the Hermiticity, the positivity, and — because it is a rotation — the Bloch radius. The maximally mixed state is fixed. The observable spin transformation at definite momentum is therefore a Bloch-sphere rotation by the Wigner angle, and not the non-$*$-unitary congruence of the previous subsection; the two agree only when $\tilde U_{\mathrm{lor}}$ is itself a rotation, in which case the standard boosts can be chosen so that $\tilde U_{\mathrm{Wig}} = \tilde U_{\mathrm{lor}}$.</p>
 <p>The frame dependence of everything that follows enters through the momentum argument of $\tilde U_{\mathrm{Wig}}$. For a particle with a sharp four-velocity the boost applies the single $*$-unitary $\tilde U_{\mathrm{Wig}}(\tilde U_{\mathrm{lor}},\tilde{V}_{\Phi})$ to the spin state and no entanglement with momentum can appear; for a momentum superposition the operator $\tilde U_{\mathrm{Wig}}$ depends on the branch, and the boost acts as a momentum-controlled rotation, correlating spin with momentum. That mechanism — the momentum dependence of a $*$-unitary little-group element — is the content of the next three articles, and it is worth naming here as the reason the relativistic qubit is a <em>family</em> of qubits labelled by momentum rather than a single two-state system with an enlarged symmetry group.</p>
 <h2 id="observables-generators-and-the-two-sectors">Observables, Generators, and the Two Sectors</h2>
-<p><strong>Observables.</strong> The observables of the qubit are the Hermitian elements $\tilde R_\Psi = c r_t\,e_t + i\vec r_\Psi$, with the spin operators
+<p><strong>Observables.</strong> The observables of the qubit are the Hermitian elements $\tilde R_\Psi = r_t\,e_t + i\vec r_\Psi$, with the spin operators
 $$
 \tilde{S}_{\Psi,k} =\frac{m\,c}{2\,k_m}\,i \vec e_k , \qquad [\tilde{S}_{\Psi,j},\tilde{S}_{\Psi,k}] =\frac{m\,c\,i\,\epsilon_{jkl}\,\tilde{S}_{\Psi,l}}{k_m},
 $$

@@ -103,7 +103,7 @@ $$</li>
   = \sum_{\mu\in\{t,x,y,z\}}  e_\mu\left(\partial/\partial R_\mu +\frac{k_m\,i\,ϙ}{m\,c}A_\mu\right)
   =: \sum_{\mu\in\{t,x,y,z\}}  e_\mu\, \tilde\nabla_{\mathrm{gco},\mu},
 $$</p>
-<p>where the coordinate is that of the material frame of <em>Frame and Metric Conventions</em>, $Q_t = i c r'_t$ and $Q_k = r_k$. Its action on a biquaternion-valued field $\tilde{Ξ}_{\mathrm{sp}}(\tilde{Q})$ is left multiplication by that operator,</p>
+<p>where the coordinate is that of the material frame of <em>Frame and Metric Conventions</em>, $Q_t = i r'_t$ and $Q_k = r_k$. Its action on a biquaternion-valued field $\tilde{Ξ}_{\mathrm{sp}}(\tilde{Q})$ is left multiplication by that operator,</p>
 <p>$$
 \tilde\nabla_{\mathrm{gco}}\tilde{Ξ}_{\mathrm{sp}} = \tilde{\nabla}\tilde{Ξ}_{\mathrm{sp}} +\frac{k_m\,i\,ϙ}{m\,c}\tilde{A}_{\Phi}\tilde{Ξ}_{\mathrm{sp}},
 \qquad
@@ -225,11 +225,11 @@ $$</p>
 <p><strong>The curvature is the obstruction to doing this on a neighbourhood.</strong> A connection with $\tilde{F} = 0$ satisfies $F_{\mu\nu} = \partial/\partial R_\mu A_\nu - \partial/\partial R_\nu A_\mu = 0$, and the Poincaré lemma applied to the one-form $\sum_\mu A_\mu\,dx_\mu$ then supplies a local $\Gamma$ with $\tilde{A}_{\Phi} = \tilde{\nabla}\Gamma$. The step from a closed one-form to an exact one is the Poincaré lemma; it is <em>invoked</em> here, not recomputed. The conclusion is that $\tilde{F}$ measures exactly what cannot be removed by a gauge transformation.</p>
 <p><strong>The connection one-form is a real quaternion.</strong> One observation about the connection is worth recording. Pairing the connection with a coordinate displacement gives</p>
 <p>$$
-\sum_\mu A_\mu\,dx_\mu = A_t\,d(i c r'_t) + \sum_k A_k\,dr_k = -\xi\,dr'_t + \vec A\cdot d\vec r ,
+\sum_\mu A_\mu\,dx_\mu = A_t\,d(i r'_t) + \sum_k A_k\,dr_k = -\xi\,dr'_t + \vec A\cdot d\vec r ,
 \qquad
 d\vec r = \vec e_x\,dr_x + \vec e_y\,dr_y + \vec e_z\,dr_z ,
 $$</p>
-<p>which is real. The time term is real because its two imaginary units cancel, $d(i c r'_t) = ic\,dr'_t$ and $A_t = i\,a'_t$ giving $-\xi\,dr'_t$; the spatial terms are real because $A_k$ and $dr_k$ are separately real. In the algebra this says $\sum_\mu A_\mu\,dx_\mu \in \mathbb{B}_{H}$, the real-quaternion subspace. Around a closed path the integral is gauge invariant, because $\sum_\mu A_\mu\,dx_\mu \mapsto \sum_\mu A_\mu\,dx_\mu - d\Gamma$ and $\oint d\Gamma = 0$. Reading the exponential of this integral as a <strong>holonomy</strong> is a geometric interpretation of the algebraic fact; whether the real-quaternion character of the one-form carries content beyond this bookkeeping is not established here and is recorded as an open question.</p>
+<p>which is real. The time term is real because its two imaginary units cancel, $d(i r'_t) = ic\,dr'_t$ and $A_t = i\,a'_t$ giving $-\xi\,dr'_t$; the spatial terms are real because $A_k$ and $dr_k$ are separately real. In the algebra this says $\sum_\mu A_\mu\,dx_\mu \in \mathbb{B}_{H}$, the real-quaternion subspace. Around a closed path the integral is gauge invariant, because $\sum_\mu A_\mu\,dx_\mu \mapsto \sum_\mu A_\mu\,dx_\mu - d\Gamma$ and $\oint d\Gamma = 0$. Reading the exponential of this integral as a <strong>holonomy</strong> is a geometric interpretation of the algebraic fact; whether the real-quaternion character of the one-form carries content beyond this bookkeeping is not established here and is recorded as an open question.</p>
 <h2 id="the-curvature-as-the-commutator-of-covariant-derivatives">The Curvature as the Commutator of Covariant Derivatives</h2>
 <p>The curvature is the part of the covariant derivative that survives antisymmetrization. In the abelian case the connection coefficients commute, and the general commutator formula collapses to the curl:</p>
 <p>$$
@@ -331,7 +331,7 @@ $$</p>
 <p><strong>Dynamical content of the covariant square.</strong> The curvature term $\frac{k_m\,i\,ϙ}{m\,c}\tilde{F}$ in $\tilde\nabla_{\mathrm{gco}}^{\natural} \tilde\nabla_{\mathrm{gco}}$ is structurally the biquaternion analogue of the curvature term in the square of a Dirac operator. Does it carry observable content — a magnetic-moment coupling — or is it a rewriting of the commutator identity with no independent consequence?</p>
 </li>
 <li>
-<p><strong>The one-form and the holonomy.</strong> The connection one-form $\sum_\mu A_\mu\,dx_\mu$ is a real quaternion, the loop integral is gauge invariant, and the curvature measures its infinitesimal holonomy. Is the real-quaternion character content-bearing, or is it the $i c r'_t$ convention in disguise? No answer is offered here.</p>
+<p><strong>The one-form and the holonomy.</strong> The connection one-form $\sum_\mu A_\mu\,dx_\mu$ is a real quaternion, the loop integral is gauge invariant, and the curvature measures its infinitesimal holonomy. Is the real-quaternion character content-bearing, or is it the $i r'_t$ convention in disguise? No answer is offered here.</p>
 </li>
 <li>
 <p><strong>Gauge fixing.</strong> The canonical-quantization article establishes that the framework cannot fix the gauge. The present article does not supply a selection principle either; the gauge orbit of the connection is exactly as large as the local phases allow.</p>
@@ -440,7 +440,7 @@ $$</p>
 </tr>
 <tr>
 <td>$\tilde\nabla_{\mathrm{gco},\mu} = \partial/\partial R_\mu +\frac{k_m\,i\,ϙ}{m\,c}A_\mu$</td>
-<td>Components; $\partial/\partial R_t = \partial/\partial(i c r'_t)$</td>
+<td>Components; $\partial/\partial R_t = \partial/\partial(i r'_t)$</td>
 </tr>
 <tr>
 <td>$\tilde\nabla_{\mathrm{gco}}^{\natural} = \tilde{\nabla}^{\natural} +\frac{k_m\,i\,ϙ}{m\,c}\tilde{A}_{\Phi}^{\natural}$</td>

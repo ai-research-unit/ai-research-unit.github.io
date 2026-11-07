@@ -92,7 +92,7 @@ $$
 \qquad
 \tilde\nabla^{\natural}=e_t\frac{\partial}{\partial R_t}-\vec e_x\frac{\partial}{\partial R_x}-\vec e_y\frac{\partial}{\partial R_y}-\vec e_z\frac{\partial}{\partial R_z},
 $$
-and on $\mathbb{B}_{\Phi}$ the time derivative reads $\partial/\partial R_t=-\frac{i}{c}\,\partial/\partial r'_t$ (<em>Operator and Calculus Conventions</em>, §<em>The Gradient</em>). The d'Alembertian is the quaternionic norm of the gradient, $\Box=\tilde\nabla\tilde\nabla^{\natural}=\tilde\nabla^{\natural}\tilde\nabla=\partial^2/\partial R_t^2+\Delta_Q$, which on $\mathbb{B}_{\Phi}$ is $\Delta-c^{-2}\partial^2/\partial {r'_{t}}^2$. The pseudoscalar is $\omega=-\vec e_z$, with $\omega^2=-e_t$; it anticommutes with $\vec e_x$ and $\vec e_y$ and commutes with $\vec e_z$ (<em>Special Element Conventions</em>, §<em>The Chirality Convention</em>). A contraction of the derivative with a field is the quaternionic form $\langle\tilde\nabla,\tilde J_{\Phi}\rangle_{\natural}=\mathrm{Sc}(\tilde\nabla^{\natural}\tilde J_{\Phi})$, an explicit sum over the four coordinates. The pair operator is the corpus's own,
+and on $\mathbb{B}_{\Phi}$ the time derivative reads $\partial/\partial R_t=-i\partial/\partial r'_t$ (<em>Operator and Calculus Conventions</em>, §<em>The Gradient</em>). The d'Alembertian is the quaternionic norm of the gradient, $\Box=\tilde\nabla\tilde\nabla^{\natural}=\tilde\nabla^{\natural}\tilde\nabla=\partial^2/\partial R_t^2+\Delta_Q$, which on $\mathbb{B}_{\Phi}$ is $\Delta-\partial^2/\partial {r'_{t}}^2$. The pseudoscalar is $\omega=-\vec e_z$, with $\omega^2=-e_t$; it anticommutes with $\vec e_x$ and $\vec e_y$ and commutes with $\vec e_z$ (<em>Special Element Conventions</em>, §<em>The Chirality Convention</em>). A contraction of the derivative with a field is the quaternionic form $\langle\tilde\nabla,\tilde J_{\Phi}\rangle_{\natural}=\mathrm{Sc}(\tilde\nabla^{\natural}\tilde J_{\Phi})$, an explicit sum over the four coordinates. The pair operator is the corpus's own,
 $$
 \mathbb{D}(\tilde{Ξ}_{\mathrm{sp},L},\tilde{Ξ}_{\mathrm{sp},R})=\bigl(\tilde\nabla\tilde{Ξ}_{\mathrm{sp},R},\ \tilde\nabla^{\natural}\tilde{Ξ}_{\mathrm{sp},L}\bigr),
 \qquad
@@ -113,7 +113,7 @@ on $\mathbb{B}\oplus\mathbb{B}$ (<em>Operator and Calculus Conventions</em>, §<
 $$
 \tilde\nabla\tilde{Ξ}_{\mathrm{sp}}=0 ,
 $$
-one operator, one field, first order. This is the source's own equation translated once. The source writes its derivative with one frame object per coordinate; the translation of the time term is the $e_t\,\partial/\partial R_t$ term of $\tilde\nabla$ with $\partial/\partial R_t=-\frac{i}{c}\,\partial/\partial r'_t$, and the translation of each spatial term is the corresponding $\vec e_k\,\partial/\partial R_k$. Nothing is added and nothing is dropped. The translated form is the only form used below.</p>
+one operator, one field, first order. This is the source's own equation translated once. The source writes its derivative with one frame object per coordinate; the translation of the time term is the $e_t\,\partial/\partial R_t$ term of $\tilde\nabla$ with $\partial/\partial R_t=-i\partial/\partial r'_t$, and the translation of each spatial term is the corresponding $\vec e_k\,\partial/\partial R_k$. Nothing is added and nothing is dropped. The translated form is the only form used below.</p>
 <p><strong>The square of the gradient is not scalar.</strong> The two products of the gradient with its conjugate are exact and scalar,
 $$
 \tilde\nabla\tilde\nabla^{\natural}=\sum_{\mu,\nu\in\{t,x,y,z\}}\varepsilon_\nu\,e_\mu e_\nu\frac{\partial^2}{\partial R_\mu\partial R_\nu}=\Box,
@@ -250,7 +250,7 @@ a(x)=-\frac{ϙ^2}{32\pi^2}\,\epsilon_{\mu\nu\rho\sigma}F_{\mu\nu}F_{\rho\sigma},
 $$
 and it is quoted from the literature of §<em>Further Reading</em>, not re-derived here. The minus is the orientation bookkeeping of the all-low-index symbol that the corpus writes, and the companion article states the same minus at its result. The framework's own statement is the one in §<em>The Coefficient, the Density, and the Framework</em>: that the contraction is $+8$ times its invariant $I_2$ and the density minus that, up to the same bookkeeping, and that the index density is the second Chern character of the gauge field whose biquaternion form the instanton article computes. The article says plainly which of the two it is doing at each step, and it does not present a transcribed coefficient as an algebra result.</p>
 <h2 id="the-symbol-the-cone-and-the-null-bivectors">The Symbol, the Cone and the Null Bivectors</h2>
-<p><strong>The symbol.</strong> Replacing each derivative of the gradient by $ik_\mu$ turns the operator into an element, its <em>symbol</em>. On the material sector, where $\partial/\partial R_t=-\frac{i}{c}\partial/\partial r'_t$ and a plane wave carries $e^{i(k_0x_0-\vec k\cdot\vec q)}$ with $x_0=c r'_{t}$, the substitution gives
+<p><strong>The symbol.</strong> Replacing each derivative of the gradient by $ik_\mu$ turns the operator into an element, its <em>symbol</em>. On the material sector, where $\partial/\partial R_t=-i\partial/\partial r'_t$ and a plane wave carries $e^{i(k_0x_0-\vec k\cdot\vec q)}$ with $x_0=r'_{t}$, the substitution gives
 $$
 \tilde K=k_0-i\vec k=k_0-i\,(k_x\vec e_x+k_y\vec e_y+k_z\vec e_z),
 \qquad
@@ -451,7 +451,7 @@ the framework's own second invariant. The axial divergence is the ABJ form, with
 </tr>
 <tr>
 <td>$\Box=\tilde\nabla\tilde\nabla^{\natural}$</td>
-<td>The d'Alembertian, $\partial^2/\partial R_t^2+\Delta_Q$; $\Delta-c^{-2}\partial^2/\partial {r'_{t}}^2$ on $\mathbb{B}_{\Phi}$</td>
+<td>The d'Alembertian, $\partial^2/\partial R_t^2+\Delta_Q$; $\Delta-\partial^2/\partial {r'_{t}}^2$ on $\mathbb{B}_{\Phi}$</td>
 </tr>
 <tr>
 <td>$\tilde K=k_0-i\vec k$</td>

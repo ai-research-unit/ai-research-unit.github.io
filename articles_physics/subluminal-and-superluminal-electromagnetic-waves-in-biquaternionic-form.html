@@ -83,7 +83,7 @@ $$</p>
 \tilde\nabla=\sum_{\mu\in\{t,x,y,z\}}e_\mu\frac{\partial}{\partial R_\mu}
 =e_t\frac{\partial}{\partial R_t}+\vec e_x\frac{\partial}{\partial R_x}+\vec e_y\frac{\partial}{\partial R_y}+\vec e_z\frac{\partial}{\partial R_z},
 $$</p>
-<p>with its quaternion conjugate $\tilde\nabla^{\natural}=\sum_\mu\varepsilon_\mu e_\mu\,\partial/\partial R_\mu$ and the d'Alembertian $\Box=\tilde\nabla\tilde\nabla^{\natural}=\tilde\nabla^{\natural}\tilde\nabla=\partial^2/\partial R_t^2+\Delta_Q$, which on the material sector reads $\Delta-c^{-2}\partial^2/\partial{r'_{t}}^2$. The gradient is an element with derivative coefficients. It acts by left multiplication, on one field, and it uses no matrix and no second side.</p>
+<p>with its quaternion conjugate $\tilde\nabla^{\natural}=\sum_\mu\varepsilon_\mu e_\mu\,\partial/\partial R_\mu$ and the d'Alembertian $\Box=\tilde\nabla\tilde\nabla^{\natural}=\tilde\nabla^{\natural}\tilde\nabla=\partial^2/\partial R_t^2+\Delta_Q$, which on the material sector reads $\Delta-\partial^2/\partial{r'_{t}}^2$. The gradient is an element with derivative coefficients. It acts by left multiplication, on one field, and it uses no matrix and no second side.</p>
 <p>The free field equation is the corpus's Maxwell equation of <em>Maxwell's Equations in the Biquaternionic Formulation</em>,</p>
 <p>$$
 \tilde\nabla\tilde F=0,\qquad \tilde F=i\sqrt\epsilon\,\vec E-\sqrt\mu\,\vec H ,
@@ -121,7 +121,7 @@ $$</p>
 </tr>
 </tbody>
 </table></div>
-<p>The time entry carries the $-i$ of $\partial/\partial R_t=-(i/c)\partial/\partial r'_t$; the spatial entries carry the multiplication table, $\vec e_x\vec e_y=\vec e_z$ and $\vec e_x\vec e_x=-e_t$. These are the values of the gradient, not of the source's own operator, and they are the only ones used below.</p>
+<p>The time entry carries the $-i$ of $\partial/\partial R_t=-i\,\partial/\partial r'_t$; the spatial entries carry the multiplication table, $\vec e_x\vec e_y=\vec e_z$ and $\vec e_x\vec e_x=-e_t$. These are the values of the gradient, not of the source's own operator, and they are the only ones used below.</p>
 <p>The source's <strong>volume element</strong> is the product of its four frame generators. In the algebra it acts on the field as right multiplication by $-\vec e_z$, so the element is</p>
 <p>$$
 \omega=-\vec e_z,\qquad \omega^2=\vec e_z^2=-e_t,
@@ -465,7 +465,7 @@ $$</p>
 </tr>
 <tr>
 <td>$\tilde\nabla^{\natural}$, $\Box$</td>
-<td>The quaternion conjugate, $\sum_\mu\varepsilon_\mu e_\mu\partial/\partial R_\mu$, and the d'Alembertian $\Box=\tilde\nabla\tilde\nabla^{\natural}=\Delta-c^{-2}\partial^2/\partial{r'_{t}}^2$</td>
+<td>The quaternion conjugate, $\sum_\mu\varepsilon_\mu e_\mu\partial/\partial R_\mu$, and the d'Alembertian $\Box=\tilde\nabla\tilde\nabla^{\natural}=\Delta-\partial^2/\partial{r'_{t}}^2$</td>
 </tr>
 <tr>
 <td>$\tilde F$, $\tilde F_0$, $\tilde F_e$, $\tilde F_+$</td>

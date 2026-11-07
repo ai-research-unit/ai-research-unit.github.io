@@ -77,11 +77,11 @@
 $$</p>
 <p>is a <strong>central scalar</strong> element of the algebra: the d'Alembertian $\Box=\tilde{\nabla}\tilde{\nabla}^{\natural}$ is central because it is built from the gradient in a symmetric way, and the mass term is a multiple of $e_t$. Consequently every Green's function of the Klein–Gordon operator is a complex scalar times $e_t$, every propagator commutes with every element of $\mathbb{B}$, and the state module — the two-dimensional complex left ideal, of four real dimensions, on which the spinor fields live — is a spectator. The whole Green's-function structure of a spin-$0$ field is the scalar structure tensored with the identity on the module. What the algebra adds is the identification of the places where the kernel is singular: the <strong>light cone</strong> on which the massless kernel is supported is the zero-divisor cone of the material sector $\mathbb{B}_{\Phi}$, the set of four-vectors of vanishing biquaternion norm, and the <strong>mass shell</strong> is the locus of constant biquaternion norm $\langle\tilde P_{\Phi}\rangle_{\natural}=-k_m^{2}$, a hyperboloid in $\mathbb{B}_{\Phi}$. The analytic structure of the propagator is the geometry of the biquaternion norm, and that is the framework's own contribution rather than a transcription of standard results. Here $k_m=mc/\hbar$ is the mass wave number, the inverse of the mass length.</p>
 <p>The article is organized as follows. The operator, its convention and its defining equation are stated first, together with the momentum-space amplitude and the sign conventions. The poles and the four standard prescriptions are then identified. The retarded Green's function is derived in position space from its Fourier representation: the frequency contour is done exactly, the angular integral is reduced by a hyperbolic rotation to a Bessel function, and the closed form is exhibited and checked against the homogeneous equation. The light-cone Jacobian that converts the invariant kernel into the retarded-time kernel is exhibited, and the massless limit is compared with the retarded kernel of the electromagnetism exercise. The advanced kernel, the boundary condition that selects the retarded one, and the Pauli–Jordan function are then treated, with microcausality verified. The Feynman propagator, its contour, its time-ordered interpretation and its Euclidean form are given. A closing section states the biquaternion interpretation of the whole construction, and open questions are recorded.</p>
-<p>Throughout, the series conventions are used: $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ with $e_t=1,\vec e_x,\vec e_y,\vec e_z$, $\vec e_k^2=-e_t$, $\vec e_j \vec e_k=-\delta_{jk}e_t+\varepsilon_{jkl}\vec e_l$; central $i$; $\tilde R_\Phi=i c r'_t\,e_t+r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z\in\mathbb{B}_{\Phi}$; $\tilde{\nabla}=e_t\partial/\partial R_t+\sum_k \vec e_k\partial/\partial R_k$; and the series d'Alembertian</p>
+<p>Throughout, the series conventions are used: $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ with $e_t=1,\vec e_x,\vec e_y,\vec e_z$, $\vec e_k^2=-e_t$, $\vec e_j \vec e_k=-\delta_{jk}e_t+\varepsilon_{jkl}\vec e_l$; central $i$; $\tilde R_\Phi=i r'_t\,e_t+r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z\in\mathbb{B}_{\Phi}$; $\tilde{\nabla}=e_t\partial/\partial R_t+\sum_k \vec e_k\partial/\partial R_k$; and the series d'Alembertian</p>
 <p>$$
 \Box=\tilde{\nabla}\tilde{\nabla}^{\natural}=\tilde{\nabla}^{\natural}\tilde{\nabla}=\partial^2/\partial R_t^2+\Delta=\Delta+ \partial^2/\partial R_t^2 .
 $$</p>
-<p>The mass parameter is $k_m=mc/\hbar$, so that $k_m^{2}=k_m^{2}$ is the quantity that multiplies the field in the c-explicit equation; as the companion article <em>The Feynman Propagator in Biquaternionic Form</em> does, the kernels are quoted with $c$ restored. The signature conventions are level 1 and level 2 only: the biquaternion norm on $\mathbb{C}$ and its material reading, $Q_t=i c r'_t$. No second metric is used anywhere in this article.</p>
+<p>The mass parameter is $k_m=mc/\hbar$, so that $k_m^{2}=k_m^{2}$ is the quantity that multiplies the field in the c-explicit equation; as the companion article <em>The Feynman Propagator in Biquaternionic Form</em> does, the kernels are quoted with $c$ restored. The signature conventions are level 1 and level 2 only: the biquaternion norm on $\mathbb{C}$ and its material reading, $Q_t=i r'_t$. No second metric is used anywhere in this article.</p>
 <ul>
 <li>Companion article <em>The Klein–Gordon Equation in Biquaternionic Form</em>, for the equation, its mass term, and the central scalar d'Alembertian.</li>
 <li>Companion article <em>The Scalar Field in the Centre: Why Spin 0 Escapes the Biquaternion State Module</em>, for the field's central value space and the exclusion of the state module.</li>
@@ -102,7 +102,7 @@ $$</p>
 <p>$$
 \tilde P_{\Phi}=i\frac{\omega}{c}e_t+\vec k\in\mathbb{B}_{\Phi},
 \qquad
-\tilde R_\Phi=i c r'_t\,e_t+r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z,
+\tilde R_\Phi=i r'_t\,e_t+r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z,
 \qquad
 \mathrm{Sc}(\tilde P_{\Phi}\tilde{R}_\Phi^{\natural})=\vec k\cdot(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)-\omega r'_t,
 $$</p>
@@ -124,7 +124,7 @@ $$</p>
 \qquad
 \delta^{(4)}(\tilde R_\Phi)=\delta(r'_t)\,\delta^{(3)}(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)\;}
 $$</p>
-<p>with the physical measure $d^3y\,dr'_{t,2}$ over the source point $\tilde{R}_{\Phi,2}$ for the convolution, exactly as the companion exercise <em>The Retarded Potentials and the Green's Function</em> fixes it for the massless operator. The sign is not physical: reversing it, $(\Box-k_m^{2})G=+\delta^{(4)}$, is compensated by a minus in the convolution, and an overall constant factor in $G$ never changes the pole structure or the support. It is fixed here so that at $k_m=0$ the retarded kernel is the exercise's $G_{\mathrm{ret}}=\frac{1}{4\pi R}\delta(r'_t-R/c)$ with no extra sign, and so that the mass term enters with the same sign as in the equation.</p>
+<p>with the physical measure $d^3y\,dr'_{t,2}$ over the source point $\tilde{R}_{\Phi,2}$ for the convolution, exactly as the companion exercise <em>The Retarded Potentials and the Green's Function</em> fixes it for the massless operator. The sign is not physical: reversing it, $(\Box-k_m^{2})G=+\delta^{(4)}$, is compensated by a minus in the convolution, and an overall constant factor in $G$ never changes the pole structure or the support. It is fixed here so that at $k_m=0$ the retarded kernel is the exercise's $G_{\mathrm{ret}}=\frac{1}{4\pi R}\delta(r'_t-R)$ with no extra sign, and so that the mass term enters with the same sign as in the equation.</p>
 <p>A second convention is fixed at the same time: the whole article works with the operator $\Box-k_m^{2}$ and never with $-\Box+k_m^{2}$, so that the momentum-space amplitude carries no compensating minus. With the measure $d^4p=d^3p\,d\omega$ and the phase $\exp(i(\vec p\cdot(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)-\omega r'_t))$, the defining equation becomes</p>
 <p>$$
 \int\frac{d^4p}{(2\pi)^4}\left(\omega^2-\vec p^2-k_m^{2}\right)G(\omega,\vec p)\,\exp(i(\vec p\cdot(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)-\omega r'_t))
@@ -272,7 +272,7 @@ $$</p>
 <p>in natural units, with the Bessel term restricted to the interior of the cone by $\mathrm{H}_{\mathrm{hvs}}(-x^2)$. The delta term is the massless kernel, and the Bessel term is the massive correction; the correction does not vanish on the cone but tends there to the finite value $-k_m^{2}/(8\pi)\,\mathrm{H}_{\mathrm{hvs}}(r'_t)$, since $J_1(z)\sim z/2$ as $z\to0$ makes $k_m J_1(k_m\sqrt{-x^2})/(2\sqrt{-x^2})\to\,k_m^{2}/4$. The kernel's only singular part is therefore the delta on the cone, and the volume term is bounded on it.</p>
 <p>Three checks were carried out on this closed form.</p>
 <ol>
-<li><strong>Massless limit.</strong> As $k_m\to0$ the Bessel term vanishes and only $\frac{\mathrm{H}_{\mathrm{hvs}}(r'_t)}{2\pi}\delta(r_x^2)$ remains. Converting the invariant delta to a radial delta by the light-cone Jacobian below gives $\frac{1}{4\pi r}\delta(r'_t-r)$, which is exactly the retarded kernel $\frac{1}{4\pi R}\delta(r'_t-R/c)$ of the electromagnetism exercise at $c=1$. The limit was verified numerically for $k_m=10^{-3}$.</li>
+<li><strong>Massless limit.</strong> As $k_m\to0$ the Bessel term vanishes and only $\frac{\mathrm{H}_{\mathrm{hvs}}(r'_t)}{2\pi}\delta(r_x^2)$ remains. Converting the invariant delta to a radial delta by the light-cone Jacobian below gives $\frac{1}{4\pi r}\delta(r'_t-r)$, which is exactly the retarded kernel $\frac{1}{4\pi R}\delta(r'_t-R)$ of the electromagnetism exercise at $c=1$. The limit was verified numerically for $k_m=10^{-3}$.</li>
 <li><strong>The homogeneous equation.</strong> Inside the cone the Bessel form must satisfy $(\Box-k_m^{2})G_{\mathrm{rgs},R}=0$, because the only source is at the origin. Evaluating the radial d'Alembertian $-\partial^2/\partial {r'_{t}}^2+\partial^2/\partial r^2+\frac{2}{r}\partial/\partial r-k_m^{2}$ by finite differences at six random interior points with $r'_t\in[2.5,4]$, $r/r'_t\in[0.2,0.85]$ and $k_m\in[0.4,1.5]$, the greatest residual was $1.1\times 10^{-9}$, against an amplitude of order $10^{-2}$.</li>
 <li><strong>The Bessel function.</strong> The series evaluation of $J_1$ reproduces the reference values $J_1(1)=0.4400505857$ and $J_1(2)=0.5767248078$ to ten digits, so the Bessel factor in the kernel is not a source of error.</li>
 </ol>
@@ -369,7 +369,7 @@ $$</p>
 <p>Three facts summarize what the framework does and does not contribute to the Klein–Gordon propagator.</p>
 <p><strong>The kernel is central, and the module is a spectator.</strong> The operator $\Box-k_m^{2}$ is a central scalar, so every Green's function is a central scalar times $e_t$, and the whole construction is the scalar construction tensored with the identity on the state module. This is not a deficiency but the exact statement of spin $0$: a scalar field has no internal index for a non-central kernel to act on. The companion article <em>The Scalar Field in the Centre: Why Spin 0 Escapes the Biquaternion State Module</em> shows why this must be so, and the present article exhibits it at the level of the kernel.</p>
 <p><strong>The singular loci are the biquaternion norm's geometry.</strong> The light cone is the zero-divisor cone $\langle\tilde R_\Phi\rangle_{\natural}=0$ of the material sector; the mass shell is the level set $\langle\tilde P_{\Phi}\rangle_{\natural}=-k_m^{2}$. The Fourier kernel's poles, the support of the retarded kernel, the vanishing of the commutator, and the exponential range of the Euclidean kernel are all faces of one algebraic object, the biquaternion norm of $\mathbb{B}$ read on $\mathbb{B}_{\Phi}$. This is genuinely the algebra's contribution: the framework does not postulate the light cone, it identifies it as the zero set of the biquaternion norm, and the propagation of a spin-$0$ field follows.</p>
-<p><strong>The causal boundary condition is physical, not algebraic.</strong> The defining equation admits both the retarded and the advanced kernel, and the algebra is indifferent between them; the retarded choice is the no-incoming-radiation condition, a physical input. The framework locates the choice in the direction of the $i\epsilon$ displacement along the imaginary-scalar axis $i c r'_t$, exactly as the companion article on the Feynman propagator argues; it does not derive the choice.</p>
+<p><strong>The causal boundary condition is physical, not algebraic.</strong> The defining equation admits both the retarded and the advanced kernel, and the algebra is indifferent between them; the retarded choice is the no-incoming-radiation condition, a physical input. The framework locates the choice in the direction of the $i\epsilon$ displacement along the imaginary-scalar axis $i r'_t$, exactly as the companion article on the Feynman propagator argues; it does not derive the choice.</p>
 <p>The derivation of the retarded kernel given above is a transcription of the standard scalar field theory into the framework's notation, with the biquaternion-norm identifications supplying the interpretation. The genuinely biquaternionic content lies in the identification of the cone and the shell with the biquaternion norm, and in the proof that nothing else of the algebra enters.</p>
 <h2 id="open-questions">Open Questions</h2>
 <ol>
@@ -434,7 +434,7 @@ $$</p>
 <td>Centre of $\mathbb{B}$; the scalar field's value space</td>
 </tr>
 <tr>
-<td>$\tilde R_\Phi=i c r'_t\,e_t+r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z$</td>
+<td>$\tilde R_\Phi=i r'_t\,e_t+r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z$</td>
 <td>Material coordinate, $\in\mathbb{B}_{\Phi}$</td>
 </tr>
 <tr>
@@ -507,7 +507,7 @@ $$</p>
 </tr>
 <tr>
 <td>$\delta_{\mu\nu}=(1,1,1,1)$</td>
-<td>The metric, the identity matrix; with $Q_t=i c r'_t$ the material interval is $-c^2{r'_{t}}^2+r_x^2+r_y^2+r_z^2$</td>
+<td>The metric, the identity matrix; with $Q_t=i r'_t$ the material interval is $-{r'_{t}}^2+r_x^2+r_y^2+r_z^2$</td>
 </tr>
 <tr>
 <td>$\mathrm{Tr}(\tilde Q_1\tilde Q_2)=2\,\mathrm{Sc}(\tilde Q_1\tilde Q_2)$</td>

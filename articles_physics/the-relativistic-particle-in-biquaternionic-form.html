@@ -72,9 +72,9 @@
 <h2 id="introduction">Introduction</h2>
 <p>The relativistic particle is the simplest physical object the biquaternion framework has to describe: a single point mass with no structure, moving on a worldline. Everything about it is kinematic. It has a position, a four-velocity, a four-momentum and a mass-shell relation; it has no spin, no internal coordinates, and no field of its own. This makes it the natural first object of the non-quantum theory, and it is the object against which every later construction is calibrated.</p>
 <p>Two facts from the algebra organize the whole account, and they are worth stating at the outset.</p>
-<p><strong>The interval is the biquaternion norm.</strong> The material coordinate is the anti-Hermitian biquaternion $\tilde R_\Phi = i c r'_t\,e_t + r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z \in \mathbb{B}_{\Phi}$, and the Minkowski interval of a displacement is the biquaternion norm</p>
+<p><strong>The interval is the biquaternion norm.</strong> The material coordinate is the anti-Hermitian biquaternion $\tilde R_\Phi = i r'_t\,e_t + r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z \in \mathbb{B}_{\Phi}$, and the Minkowski interval of a displacement is the biquaternion norm</p>
 <p>$$
-\langle d\tilde R_\Phi\rangle_{\natural} = d\tilde R_\Phi\,d\tilde{R}_\Phi^{\natural} = (ic\,dr'_t)^2 +dr_x^2+dr_y^2+dr_z^2 = -c^2d{r'_{t}}^2 +dr_x^2+dr_y^2+dr_z^2 .
+\langle d\tilde R_\Phi\rangle_{\natural} = d\tilde R_\Phi\,d\tilde{R}_\Phi^{\natural} = (i\,dr'_t)^2 +dr_x^2+dr_y^2+dr_z^2 = -d{r'_{t}}^2 +dr_x^2+dr_y^2+dr_z^2 .
 $$</p>
 <p>The algebra therefore does not carry a metric that has to be attached to spacetime from outside; its own biquaternion norm, restricted to the real four-dimensional subspace $\mathbb{B}_{\Phi}$, <em>is</em> the Minkowski form. This is the level-1 identity form $\mathrm{diag}(+1,+1,+1,+1)$ on $\mathbb{B}$, whose restriction to the real material slice is the level-2 Minkowski interval, tuple $(-1,+1,+1,+1)$; both levels are fixed by the companion article <em>Algebra and Element Conventions</em>, and no metric is introduced here beyond them.</p>
 <p><strong>The three causal types are the three signs of the biquaternion norm.</strong> A displacement is timelike, null or spacelike according to whether $\langle\cdot\rangle_{\natural}$ is negative, zero or positive. The particle of this article is the timelike case: its tangent stays strictly inside the null cone, and the biquaternion norm of its tangent is a fixed negative constant. The null case, and the cone that separates the two, is the subject of the companion article <em>The Light Cone as the Biquaternion Zero-Divisor Cone</em>.</p>
@@ -82,7 +82,7 @@ $$</p>
 <h2 id="the-worldline-and-the-biquaternion-norm">The Worldline and the Biquaternion Norm</h2>
 <p>A relativistic particle is described by a curve in the material sector,</p>
 <p>$$
-\tilde R_\Phi(\lambda) : \lambda \longmapsto \tilde R_\Phi(\lambda) = i c r'_{t}(\lambda)\,e_t + (r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)(\lambda) \in \mathbb{B}_{\Phi} ,
+\tilde R_\Phi(\lambda) : \lambda \longmapsto \tilde R_\Phi(\lambda) = i r'_{t}(\lambda)\,e_t + (r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)(\lambda) \in \mathbb{B}_{\Phi} ,
 $$</p>
 <p>with $\lambda$ an arbitrary parameter. The physical content of the curve is not the arbitrary parametrization but the displacement one-form</p>
 <p>$$
@@ -90,7 +90,7 @@ d\tilde R_\Phi = ic\,dr'_t\,e_t + d(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z),
 $$</p>
 <p>whose biquaternion norm is</p>
 <p>$$
-\langle d\tilde R_\Phi\rangle_{\natural} = d\tilde R_\Phi\,d\tilde{R}_\Phi^{\natural} = -c^2d{r'_{t}}^2 +dr_x^2+dr_y^2+dr_z^2 .
+\langle d\tilde R_\Phi\rangle_{\natural} = d\tilde R_\Phi\,d\tilde{R}_\Phi^{\natural} = -d{r'_{t}}^2 +dr_x^2+dr_y^2+dr_z^2 .
 $$</p>
 <p>Off the null set, $\langle d\tilde R_\Phi\rangle_{\natural}$ has the sign of $-d\tau^2$ for a real number $d\tau$, and the <strong>proper time</strong> is defined by</p>
 <p>$$
@@ -172,7 +172,7 @@ $$</p>
 \langle\tilde{P}_{\Phi}\rangle_{\natural} = -m^2c^2 < 0
 \qquad (m > 0),
 $$</p>
-<p>and the invariant $\langle\tilde{P}_{\Phi}\rangle_{\natural}$ is what the Lorentz group preserves, so the classification of a particle as massive is frame-independent. The relation between the two energy equations is worth recording: in the rest frame $\vec p = 0$ and $E = mc^2$, so the imaginary scalar part of the four-momentum at rest is $i mc$, which is the rest energy in the $i c r'_t$ convention.</p>
+<p>and the invariant $\langle\tilde{P}_{\Phi}\rangle_{\natural}$ is what the Lorentz group preserves, so the classification of a particle as massive is frame-independent. The relation between the two energy equations is worth recording: in the rest frame $\vec p = 0$ and $E = mc^2$, so the imaginary scalar part of the four-momentum at rest is $i mc$, which is the rest energy in the $i r'_t$ convention.</p>
 <p>Two limits fix the picture. As $m\to 0$ with $\vec p$ held fixed the mass shell collapses onto the null cone $\langle\tilde{P}_{\Phi}\rangle_{\natural} = 0$, and the particle becomes the zero divisor of the companion article <em>The Light Cone as the Biquaternion Zero-Divisor Cone</em>. As $v\ll c$ the energy separates into the rest energy and the kinetic term,</p>
 <p>$$
 E = \gamma mc^2 = mc^2 + \tfrac12 m\vec v^2 + O(\vec v^4/c^2),
@@ -298,7 +298,7 @@ $$</p>
 <h2 id="summary">Summary</h2>
 <p>The relativistic particle is a timelike worldline in the material sector $\mathbb{B}_{\Phi}$,</p>
 <p>$$
-\tilde R_\Phi(\tau) = i c r'_{t}\,e_t + r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z,
+\tilde R_\Phi(\tau) = i r'_{t}\,e_t + r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z,
 \qquad
 d\tau^2 = -\frac{1}{c^2}\langle d\tilde R_\Phi\rangle_{\natural} = d{r'_{t}}^2 - \frac{dr_x^2+dr_y^2+dr_z^2}{c^2},
 $$</p>
@@ -359,7 +359,7 @@ $$</p>
 <td>Biquaternion norm (level 1: identity on $\mathbb{C}$)</td>
 </tr>
 <tr>
-<td>$\tilde R_\Phi = i c r'_t\,e_t + r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z$</td>
+<td>$\tilde R_\Phi = i r'_t\,e_t + r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z$</td>
 <td>Four-position, in $\mathbb{B}_{\Phi}$</td>
 </tr>
 <tr>
