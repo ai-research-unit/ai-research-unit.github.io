@@ -330,7 +330,7 @@ What the framework establishes is that the two pairings which survive the theore
 | $\theta=\vec p\cdot\vec\Delta$, $\vec\Delta=X-Y$, $X=r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z$ | Phase and spatial separation in the equal-time brackets |
 | $\{\tilde{Ξ}_{\mathrm{fop},\mu},\tilde{Ξ}_{\mathrm{fop},\nu}^{\dagger}\}=\delta_{\mu\nu}\delta^{(3)}(\vec\Delta)$ | Local equal-time anticommutator |
 | $[\tilde{Ξ}_{\mathrm{fop}},\tilde{Ξ}_{\mathrm{fop}}^{\dagger}]\,\tilde{Ξ}=i\,mF\,\tilde{Ξ}\vec e_x-i\sum_k\vec e_k\,\tilde{Ξ}\vec e_z\,\nabla_kF$ | Nonlocal equal-time commutator acting on a test element $\tilde{Ξ}$ |
-| $F(\vec\Delta)=\frac{m}{2\pi^2|\vec\Delta|}K_1(m|\vec\Delta|)$ | Surviving commutator kernel ($m>0$) |
+| $F(\vec\Delta)=\frac{m}{2\pi^2|\vec\Delta|}\\mathrm{Ki}_{1}(m|\vec\Delta|)$ | Surviving commutator kernel ($m>0$) |
 | $\Delta_{\mathrm{A}}(x-y)$, $G_{\mathrm{S}}(x-y)$ | Antisymmetric (Pauli–Jordan-type) and symmetric two-point kernels |
 | $H=\sum_r\int\frac{d^3p}{(2\pi)^3}E_{\vec p}(a_{\mathrm{fop},r}^{\dagger}a_{\mathrm{fop},r}+b_{\mathrm{fop},r}^{\dagger}b_{\mathrm{fop},r})+E_0$ | Normal-ordered Hamiltonian (Fermi choice) |
 | $\langle\tilde{Q}_1,\tilde{Q}_2\rangle$ | the general plain bilinear form, $\mathrm{Sc}(\tilde{Q}_1\tilde{Q}_2)$ |

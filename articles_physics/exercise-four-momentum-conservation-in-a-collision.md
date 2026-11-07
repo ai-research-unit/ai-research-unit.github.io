@@ -238,23 +238,23 @@ which follows from $s = (m_1^2+m_2^2)c^4 - 2c^2\langle\tilde{P}_1,\tilde{P}_2\ra
 $$
 E_1^{\rm thr} = \frac{\left(\sum_{f\ge3}m_f\right)^2 - m_1^2 - m_2^2}{2m_2}\,c^2,
 \qquad
-K_1^{\rm thr} = E_1^{\rm thr} - m_1c^2 .
+T_{\mathrm{kin},1}^{\rm thr} = E_1^{\rm thr} - m_1c^2 .
 $$
 For $p+p\to p+p+\pi^0$, with $m_p = 938.272$ MeV$/c^2$ and $m_\pi = 134.977$ MeV$/c^2$, the final mass sum is $2m_p+m_\pi = 2011.521$ MeV$/c^2$, so
 $$
 E_1^{\rm thr} = 1217.935\ \text{MeV},
 \qquad
-K_1^{\rm thr} = 279.663\ \text{MeV}.
+T_{\mathrm{kin},1}^{\rm thr} = 279.663\ \text{MeV}.
 $$
-A projectile kinetic energy of $200$ MeV is below threshold ($\sqrt{s} = 1974.0$ MeV $< 2011.5$ MeV), and one of $300$ MeV is above it ($\sqrt{s} = 2021.0$ MeV); the threshold lies at the computed $279.66$ MeV, as a direct evaluation of $s(K_1)$ confirms.
+A projectile kinetic energy of $200$ MeV is below threshold ($\sqrt{s} = 1974.0$ MeV $< 2011.5$ MeV), and one of $300$ MeV is above it ($\sqrt{s} = 2021.0$ MeV); the threshold lies at the computed $279.66$ MeV, as a direct evaluation of $s(T_{\mathrm{kin},1})$ confirms.
 
 **Solution (c).** In a symmetric collider the two initial bodies have equal and opposite momenta, so the laboratory *is* the COM frame and $s = (2E)^2 = 4E^2$, $E$ being the total energy of each beam. The threshold is therefore
 $$
 E_{\rm beam}^{\rm thr} = \tfrac{1}{2}\left(\sum_{f\ge3}m_f\right)c^2,
 \qquad
-K_{\rm beam}^{\rm thr} = \tfrac{1}{2}\left(\sum_{f\ge3}m_f\right)c^2 - m_1c^2 .
+T_{\mathrm{kin},\mathrm{beam}}^{\rm thr} = \tfrac{1}{2}\left(\sum_{f\ge3}m_f\right)c^2 - m_1c^2 .
 $$
-For $p+p\to p+p+\pi^0$ this is $E_{\rm beam}^{\rm thr} = 1005.761$ MeV and $K_{\rm beam}^{\rm thr} = 67.489$ MeV. The collider threshold is lower by the factor
+For $p+p\to p+p+\pi^0$ this is $E_{\rm beam}^{\rm thr} = 1005.761$ MeV and $T_{\mathrm{kin},\mathrm{beam}}^{\rm thr} = 67.489$ MeV. The collider threshold is lower by the factor
 $$
 \boxed{\;\frac{K_1^{\rm thr}}{K_{\rm beam}^{\rm thr}} = \frac{279.663}{67.489} = 4.14\;},
 $$
@@ -330,7 +330,7 @@ $$
 $$
 as the sum rule requires.
 
-**Solution (d).** In the non-relativistic limit $E_1\to m$ and $V\to0$, so $\gamma\to1$ and the two final particles emerge at $90^\circ$ to one another. Here $\gamma=\sqrt{2}=1.414$, appreciably above $1$, and the opening angle is $70.53^\circ$, well below $90^\circ$: the relativistic contraction of the opening angle is already large at a projectile kinetic energy of $K_1 = E_1 - m = 2m$, which is twice the rest energy. Problem 6 quantifies the limit.
+**Solution (d).** In the non-relativistic limit $E_1\to m$ and $V\to0$, so $\gamma\to1$ and the two final particles emerge at $90^\circ$ to one another. Here $\gamma=\sqrt{2}=1.414$, appreciably above $1$, and the opening angle is $70.53^\circ$, well below $90^\circ$: the relativistic contraction of the opening angle is already large at a projectile kinetic energy of $T_{\mathrm{kin},1} = E_1 - m = 2m$, which is twice the rest energy. Problem 6 quantifies the limit.
 
 ## Problem 6: The Non-Relativistic Limit
 
@@ -342,11 +342,11 @@ $$
 $$
 The scalar part is $i/c$ times (rest energy + kinetic energy), and the vector part is the Newtonian momentum. Four-momentum conservation therefore splits into the separate conservation of total rest-plus-kinetic energy and of total Newtonian momentum. Because the rest masses are separately conserved in a non-relativistic collision, this is the Newtonian conservation of kinetic energy and momentum. The single biquaternion equation reproduces both, with the $i c r'_t$ convention packing them into one element of $\mathbb{B}_{\Phi}$.
 
-**Solution (b).** In the fixed-target expression $s = (m_1^2+m_2^2)c^4 + 2E_1m_2c^2$, writing $E_1 = m_1c^2+K_1$ gives $s = (m_1+m_2)^2c^4 + 2K_1m_2c^2$. At the production threshold $s = (M_{\rm out})^2c^4$, so
+**Solution (b).** In the fixed-target expression $s = (m_1^2+m_2^2)c^4 + 2E_1m_2c^2$, writing $E_1 = m_1c^2+T_{\mathrm{kin},1}$ gives $s = (m_1+m_2)^2c^4 + 2T_{\mathrm{kin},1}m_2c^2$. At the production threshold $s = (M_{\rm out})^2c^4$, so
 $$
-K_1^{\rm thr} = \frac{M_{\rm out}^2 - (m_1+m_2)^2}{2m_2}\,c^2,
+T_{\mathrm{kin},1}^{\rm thr} = \frac{M_{\rm out}^2 - (m_1+m_2)^2}{2m_2}\,c^2,
 $$
-which for $M_{\rm out} = m_1+m_2+\Delta m$ becomes $K_1^{\rm thr}\approx \frac{(m_1+m_2)\Delta m}{m_2}c^2$: the projectile must supply the mass excess, diluted by the recoil of the heavy target. For $p+p\to p+p+\pi^0$ this gives $K_1^{\rm thr}\approx\frac{2m_p\,m_\pi}{m_p}c^2 = 2m_\pi c^2 = 270.0$ MeV, within $3.5\%$ of the exact $279.66$ MeV, the correction being the target's recoil kinetic energy, which the approximation neglects by setting $M_{\rm out}\approx m_1+m_2$ before expanding.
+which for $M_{\rm out} = m_1+m_2+\Delta m$ becomes $T_{\mathrm{kin},1}^{\rm thr}\approx \frac{(m_1+m_2)\Delta m}{m_2}c^2$: the projectile must supply the mass excess, diluted by the recoil of the heavy target. For $p+p\to p+p+\pi^0$ this gives $T_{\mathrm{kin},1}^{\rm thr}\approx\frac{2m_p\,m_\pi}{m_p}c^2 = 2m_\pi c^2 = 270.0$ MeV, within $3.5\%$ of the exact $279.66$ MeV, the correction being the target's recoil kinetic energy, which the approximation neglects by setting $M_{\rm out}\approx m_1+m_2$ before expanding.
 
 **Solution (c).** For elastic equal-mass scattering, expand the laboratory angle relations of Problem 3(c). With $V\ll c$, $\gamma\to1$, and the COM relations $p^* = mV + O(V^3/c^2)$,
 $$
@@ -354,7 +354,7 @@ $$
 \qquad
 \tan\theta_4 = \frac{\sin\theta^*}{\gamma(1-\cos\theta^*)} \to \cot\frac{\theta^*}{2}\;},
 $$
-so $\theta_3+\theta_4\to\theta^*/2+(\pi-\theta^*)/2 = \pi/2$. The two final particles emerge at right angles in the laboratory, the standard Newtonian result for equal masses; the relativistic opening angle is always less than $\pi/2$, the deficit growing with $\gamma$. Problem 5 makes this concrete: at $K_1 = 2mc^2$ the opening angle is $70.53^\circ$, $19.5^\circ$ below the Newtonian value, so the non-relativistic limit is nowhere near valid at twice the rest energy. For $K_1\ll mc^2$ the expansion is accurate, with relative corrections of order $V^2/c^2\sim K_1/(mc^2)$.
+so $\theta_3+\theta_4\to\theta^*/2+(\pi-\theta^*)/2 = \pi/2$. The two final particles emerge at right angles in the laboratory, the standard Newtonian result for equal masses; the relativistic opening angle is always less than $\pi/2$, the deficit growing with $\gamma$. Problem 5 makes this concrete: at $T_{\mathrm{kin},1} = 2mc^2$ the opening angle is $70.53^\circ$, $19.5^\circ$ below the Newtonian value, so the non-relativistic limit is nowhere near valid at twice the rest energy. For $T_{\mathrm{kin},1}\ll mc^2$ the expansion is accurate, with relative corrections of order $V^2/c^2\sim T_{\mathrm{kin},1}/(mc^2)$.
 
 ## Where the Parents Fall Short
 
@@ -376,11 +376,11 @@ We have worked four-momentum conservation for a collision as an application of t
 
 3. **COM frame.** The rotor $\tilde U_{\rm CM} = \sqrt{-\frac{ic}{W}\tilde{P}^{\natural}}$ carries the laboratory to the centre-of-momentum frame, rotating $\tilde{P}$ to $iW/c\,e_t$; the conjugate rotor carries the data back. The COM energies and momentum magnitudes are $E_a^* = (s+m_a^2c^4-m_b^2c^4)/(2\sqrt{s})$ and $p^{*2}c^2 = [s-(m_1+m_2)^2c^4][s-(m_1-m_2)^2c^4]/(4s)$, and conservation leaves the COM scattering angle free.
 
-4. **Threshold.** Production requires $\sqrt{s}\ge\left(\sum_f m_f\right)c^2$. For a fixed target $s = (m_1^2+m_2^2)c^4+2E_1m_2c^2$, giving $K_1^{\rm thr} = 279.663$ MeV for $p+p\to p+p+\pi^0$; a symmetric collider has $s=4E^2$ and needs only $67.489$ MeV per beam, the ratio $4.14$ reflecting the linear versus quadratic growth of $s$.
+4. **Threshold.** Production requires $\sqrt{s}\ge\left(\sum_f m_f\right)c^2$. For a fixed target $s = (m_1^2+m_2^2)c^4+2E_1m_2c^2$, giving $T_{\mathrm{kin},1}^{\rm thr} = 279.663$ MeV for $p+p\to p+p+\pi^0$; a symmetric collider has $s=4E^2$ and needs only $67.489$ MeV per beam, the ratio $4.14$ reflecting the linear versus quadratic growth of $s$.
 
 5. **Numbers.** For equal masses with $E_1=3mc^2$ and $\theta^*=90^\circ$: $s=8m^2$, $W=2\sqrt{2}m$, $E^*=\sqrt{2}m$, $p^*=m$, $V=1/\sqrt{2}$, $\gamma=\sqrt{2}$; the laboratory four-momenta are $i\,2m\,e_t \pm m\,\vec e_x + \sqrt{2}\,m\,\vec e_z$, the laboratory angles are $35.2644^\circ$ each, the opening angle is $70.5288^\circ$, and $s+t+u=4m^2$.
 
-6. **Limits.** The non-relativistic limit recovers Galilean energy and momentum conservation, the right-angle emergence for equal-mass elastic scattering, and the mass-excess threshold formula $K_1^{\rm thr}\approx\frac{(m_1+m_2)\Delta m}{m_2}c^2$.
+6. **Limits.** The non-relativistic limit recovers Galilean energy and momentum conservation, the right-angle emergence for equal-mass elastic scattering, and the mass-excess threshold formula $T_{\mathrm{kin},1}^{\rm thr}\approx\frac{(m_1+m_2)\Delta m}{m_2}c^2$.
 
 ## Summary of Notation
 
@@ -410,7 +410,7 @@ We have worked four-momentum conservation for a collision as an application of t
 | $\theta^*$ | COM scattering angle |
 | $\vec V = \vec Pc^2/E$, $\gamma = E/W$ | Laboratory velocity and Lorentz factor of the COM frame |
 | $\Theta$ | Laboratory opening angle |
-| $K_1 = E_1 - m_1c^2$ | Projectile kinetic energy |
+| $T_{\mathrm{kin},1} = E_1 - m_1c^2$ | Projectile kinetic energy |
 | $c=1/\sqrt{\epsilon\mu}$, $c_0$ | Speed of light in the medium; in vacuum |
 | $\mathrm{Tr}(\tilde Q_1\tilde Q_2)=2\,\mathrm{Sc}(\tilde Q_1\tilde Q_2)$ | Plain trace reading on the informational sector |
 

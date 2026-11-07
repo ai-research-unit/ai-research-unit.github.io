@@ -270,18 +270,18 @@ $$
 the kernel already used by the chiral article, with the branch fixed by the radiation condition. The fundamental solutions of the two conjugate Cauchy–Riemann operators are then obtained from it by one application of the operator itself:
 
 $$
-\mathcal{K}_{\pm\alpha}=-(D_3\mp\alpha)\mathrm{Sd}_\alpha ,
+\mathcal{V}_{\mathrm{vek},\pm\alpha}=-(D_3\mp\alpha)\mathrm{Sd}_\alpha ,
 \qquad
-(D_3\pm\alpha)\mathcal{K}_{\pm\alpha}=\delta ,
+(D_3\pm\alpha)\mathcal{V}_{\mathrm{vek},\pm\alpha}=\delta ,
 \tag{19}
 $$
 
-the identity following from $(13)$, since $(D_3\pm\alpha)\mathcal{K}_{\pm\alpha}=-(D_3\pm\alpha)(D_3\mp\alpha)\mathrm{Sd}_\alpha=(\Delta+\alpha^2)\mathrm{Sd}_\alpha=\delta$. The sign is the one verified in the sibling articles; the choice $\operatorname{Im}\alpha\ge0$ makes the kernel outgoing, and at $\alpha=0$ it degenerates to the classical spatial Cauchy kernel $-(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)/(4\pi\lvert r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z\rvert^3)$ of the unshifted $D_3$.
+the identity following from $(13)$, since $(D_3\pm\alpha)\mathcal{V}_{\mathrm{vek},\pm\alpha}=-(D_3\pm\alpha)(D_3\mp\alpha)\mathrm{Sd}_\alpha=(\Delta+\alpha^2)\mathrm{Sd}_\alpha=\delta$. The sign is the one verified in the sibling articles; the choice $\operatorname{Im}\alpha\ge0$ makes the kernel outgoing, and at $\alpha=0$ it degenerates to the classical spatial Cauchy kernel $-(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)/(4\pi\lvert r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z\rvert^3)$ of the unshifted $D_3$.
 
 The kernel of the Maxwell operator is the same object carried through the rotation $(11)$. Conjugating the diagonal kernel by $C$,
 
 $$
-\mathcal M_{\mathrm{maxw}}:=C^{-1}\begin{pmatrix} \mathcal{K}_{-\alpha} & 0 \\[2pt] 0 & \mathcal{K}_{\alpha}\end{pmatrix}C ,
+\mathcal M_{\mathrm{maxw}}:=C^{-1}\begin{pmatrix} \mathcal{V}_{\mathrm{vek},-\alpha} & 0 \\[2pt] 0 & \mathcal{V}_{\mathrm{vek},\alpha}\end{pmatrix}C ,
 \qquad
 N\,\mathcal M_{\mathrm{maxw}}=\delta\, I_2 ,
 \tag{20}
@@ -290,18 +290,18 @@ $$
 which is the fundamental solution of the quaternionic Maxwell operator recorded by the source, expressed here in the book's arrangement: it is built from the hyperholomorphic Cauchy kernels by the two rotations $A_i,B_i$ of $(15)$, and — because all the factors except $N$ are scalar — the same kernel serves the left and the right theories. From it the two integral operators of the Maxwell theory are formed in the usual way,
 
 $$
-\mathcal{K}_N[f](x)=-\int_\Gamma \mathcal M_{\mathrm{maxw}}(x-y)\,\vec u(y)\,f(y)\,d\Gamma_y ,
+\mathcal{V}_{\mathrm{vek},N}[f](x)=-\int_\Gamma \mathcal M_{\mathrm{maxw}}(x-y)\,\vec u(y)\,f(y)\,d\Gamma_y ,
 \qquad
 \mathcal{T}_N[f](x)=\int_\Omega \mathcal M_{\mathrm{maxw}}(x-y)\,f(y)\,dy ,
 \tag{21}
 $$
 
-the **Cauchy-type** and **Teodorescu-type** operators associated with Maxwell's equations; the defining difference from the operators $\mathcal{K}_\alpha,\mathcal{T}_\alpha$ of the hyperholomorphic theory of the sibling articles is only the replacement of the kernel $\mathcal K_\alpha$ by the Maxwell kernel $\mathcal M_{\mathrm{maxw}}$, and the boundary integrals are taken over the Liapunov boundary $\Gamma=\partial\Omega$ of a bounded domain with outward normal $\vec u$. Three theorems then hold, the analogues of the three of the hyperholomorphic theory and proved from them by the same rotation.
+the **Cauchy-type** and **Teodorescu-type** operators associated with Maxwell's equations; the defining difference from the operators $\mathcal{V}_{\mathrm{vek},\alpha},\mathcal{T}_\alpha$ of the hyperholomorphic theory of the sibling articles is only the replacement of the kernel $\mathcal V_{\mathrm{vek},\alpha}$ by the Maxwell kernel $\mathcal M_{\mathrm{maxw}}$, and the boundary integrals are taken over the Liapunov boundary $\Gamma=\partial\Omega$ of a bounded domain with outward normal $\vec u$. Three theorems then hold, the analogues of the three of the hyperholomorphic theory and proved from them by the same rotation.
 
 **Theorem (Borel–Pompeiu for the Maxwell operator).** For a pair $f\in C^1(\Omega;\mathbb{B}^2)\cap C(\bar\Omega;\mathbb{B}^2)$,
 
 $$
-f=\mathcal{K}_N[f]+\mathcal{T}_N\,N[f]
+f=\mathcal{V}_{\mathrm{vek},N}[f]+\mathcal{T}_N\,N[f]
 \qquad\text{in }\Omega .
 \tag{22}
 $$
@@ -311,12 +311,12 @@ $$
 **Theorem (Cauchy integral formula).** If in addition $N[f]=0$ in $\Omega$, then
 
 $$
-\boxed{\;f=\mathcal{K}_N[f]\;}
+\boxed{\;f=\mathcal{V}_{\mathrm{vek},N}[f]\;}
 \qquad\text{in }\Omega ,
 \tag{23}
 $$
 
-so the boundary values determine a quaternionic monochromatic function, and the operator $\mathcal{K}_N$ reproduces it. The Plemelj–Sokhotski formulas, the Morera theorem and the boundary-value criterion of the hyperholomorphic theory pass to the Maxwell theory by the same rotation, and the two-sidedness of $\mathcal M_{\mathrm{maxw}}$ makes the left and the right versions coincide.
+so the boundary values determine a quaternionic monochromatic function, and the operator $\mathcal{V}_{\mathrm{vek},N}$ reproduces it. The Plemelj–Sokhotski formulas, the Morera theorem and the boundary-value criterion of the hyperholomorphic theory pass to the Maxwell theory by the same rotation, and the two-sidedness of $\mathcal M_{\mathrm{maxw}}$ makes the left and the right versions coincide.
 
 ## The Integral Representations of the Field
 
@@ -379,7 +379,7 @@ The ordinary time-harmonic Maxwell system in a homogeneous isotropic medium, pos
 
 The diagonalisation $(11)$ by the matrix $C$, with the coherence factor $b=i\omega\mu/\alpha$, turns $N$ into the direct sum of the two mutually conjugate Cauchy–Riemann operators $D_3\mp\alpha$, whose squares are the scalar Helmholtz operators of $(13)$. Consequently the time-harmonic fields are in one-to-one correspondence with pairs of mutually conjugate hyperholomorphic functions, $\ker N\cong\ker(D_3-\alpha)\times\ker(D_3+\alpha)$; in the lossless normalised variables the two combinations are the circularly polarised $\tilde E\pm i\tilde H$ of the chiral reduction at $\beta=0$; and the Helmholtz null-set itself is the direct sum of the two rotated copies of $\ker N$ of $(16)$, which is the time-harmonic analogue of the splitting of the wave operator into its two first-order factors.
 
-The kernel of the theory is the outgoing Helmholtz kernel $\mathrm{Sd}_\alpha$ of $(18)$ and its two Cauchy–Riemann descendants $\mathcal{K}_{\pm\alpha}=-(D_3\mp\alpha)\mathrm{Sd}_\alpha$; the Maxwell kernel $\mathcal M_{\mathrm{maxw}}$ of $(20)$ is the same object carried through the diagonalising rotation, and the Cauchy-type and Teodorescu-type operators built from it satisfy the Borel–Pompeiu formula, the right-inverse formula and the Cauchy integral formula $(22,23)$. Translated back to the fields, the Cauchy formula is the integral representation $(24)$, whose vector form is the classical **Stratton–Chu formula**: the Stratton–Chu kernel is the fundamental solution of the first-order quaternionic Maxwell operator, and the Stratton–Chu representation is a Cauchy integral formula for the electromagnetic field. The Dirichlet problem is solved by the same theory, its solvability governed by the two Plemelj conditions $(25)$, whose quaternionic form carries the scalar component that the vector formulation drops, and the exterior problem is closed by the Silver–Müller condition $(26)$. The parametric system of the source is not specific to the electromagnetic field: at another value of its parameter it is the time-harmonic **Dirac** system, and the same Cauchy integral formula, the same Plemelj–Sokhotski formulas and the same boundary-value criterion then hold for the harmonic spinor field. That statement of the source's announcement, and the spinor half of the theory, are recorded in *The Dirac Equation in Biquaternionic Form*.
+The kernel of the theory is the outgoing Helmholtz kernel $\mathrm{Sd}_\alpha$ of $(18)$ and its two Cauchy–Riemann descendants $\mathcal{V}_{\mathrm{vek},\pm\alpha}=-(D_3\mp\alpha)\mathrm{Sd}_\alpha$; the Maxwell kernel $\mathcal M_{\mathrm{maxw}}$ of $(20)$ is the same object carried through the diagonalising rotation, and the Cauchy-type and Teodorescu-type operators built from it satisfy the Borel–Pompeiu formula, the right-inverse formula and the Cauchy integral formula $(22,23)$. Translated back to the fields, the Cauchy formula is the integral representation $(24)$, whose vector form is the classical **Stratton–Chu formula**: the Stratton–Chu kernel is the fundamental solution of the first-order quaternionic Maxwell operator, and the Stratton–Chu representation is a Cauchy integral formula for the electromagnetic field. The Dirichlet problem is solved by the same theory, its solvability governed by the two Plemelj conditions $(25)$, whose quaternionic form carries the scalar component that the vector formulation drops, and the exterior problem is closed by the Silver–Müller condition $(26)$. The parametric system of the source is not specific to the electromagnetic field: at another value of its parameter it is the time-harmonic **Dirac** system, and the same Cauchy integral formula, the same Plemelj–Sokhotski formulas and the same boundary-value criterion then hold for the harmonic spinor field. That statement of the source's announcement, and the spinor half of the theory, are recorded in *The Dirac Equation in Biquaternionic Form*.
 
 ## Summary of Notation
 
@@ -402,9 +402,9 @@ The kernel of the theory is the outgoing Helmholtz kernel $\mathrm{Sd}_\alpha$ o
 | $\mathcal{R}_\lambda$ | Metaharmonic pairs $\ker((\Delta+\lambda)I_2)$ |
 | $Q_i=\tfrac{1}{2\alpha}A_iNB_i$ | The two complementary projections, $Q_x+Q_y=I$ |
 | $\mathrm{Sd}_\alpha=-\exp(\,i\alpha\lvert x\rvert)/(4\pi\lvert x\rvert)$ | Outgoing Helmholtz fundamental solution |
-| $\mathcal{K}_{\pm\alpha}=-(D_3\mp\alpha)\mathrm{Sd}_\alpha$ | Fundamental solution of $D_3\pm\alpha$ |
-| $\mathcal M_{\mathrm{maxw}}$ | Maxwell–Cauchy kernel, the rotation of $\mathrm{diag}(\mathcal{K}_\alpha,\mathcal{K}_{-\alpha})$ |
-| $\mathcal{K}_N,\mathcal{T}_N$ | Cauchy-type and Teodorescu-type operators of the Maxwell theory |
+| $\mathcal{V}_{\mathrm{vek},\pm\alpha}=-(D_3\mp\alpha)\mathrm{Sd}_\alpha$ | Fundamental solution of $D_3\pm\alpha$ |
+| $\mathcal M_{\mathrm{maxw}}$ | Maxwell–Cauchy kernel, the rotation of $\mathrm{diag}(\mathcal{V}_{\mathrm{vek},\alpha},\mathcal{V}_{\mathrm{vek},-\alpha})$ |
+| $\mathcal{V}_{\mathrm{vek},N},\mathcal{T}_N$ | Cauchy-type and Teodorescu-type operators of the Maxwell theory |
 | $P_\alpha=\tfrac12(I+S_\alpha)$, $Q_\alpha=I-P_\alpha$ | Plemelj projectors of the shifted theory |
 | $\Omega,\Gamma=\partial\Omega$ | Bounded domain and its Liapunov boundary; $\vec u$ the outward normal |
 | $\vec E_\Gamma,\vec H_\Gamma$ | Dirichlet boundary data of the field |

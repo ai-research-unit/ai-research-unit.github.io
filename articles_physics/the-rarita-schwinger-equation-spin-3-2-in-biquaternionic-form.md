@@ -15,9 +15,9 @@ The two subscripts take the two values $L$ and $R$ of *Special Element Conventio
 
 **The calculus is the corpus's and is cited, not restated.** The first-order operator is the biquaternionic gradient $\tilde\nabla$, its quaternion conjugate is $\tilde\nabla^{\natural}$, and the d'Alembertian $\Box$ is the quaternionic norm of the gradient, all three as fixed in *Operator and Calculus Conventions*, §*The Gradient* and §*The Quaternionic Bilinear Product, Its Form and Its Norm*. The pair operator $\mathbb{D}$ and its square are those of §*The Gradient* of the same article, under **The pair operator**. No other letter names a derivative below.
 
-**The gradient does not square to a scalar, and that is why the massive equation is a pair.** With $\tilde K=K_0e_t+K_x\vec e_x+K_y\vec e_y+K_z\vec e_z$ the symbol of the gradient, the time unit commutes with the three spatial units and the mixed derivatives are symmetric, so the square keeps a vector part,
+**The gradient does not square to a scalar, and that is why the massive equation is a pair.** With $\tilde K=\\tilde K_0e_t+\\tilde K_x\vec e_x+\\tilde K_y\vec e_y+\\tilde K_z\vec e_z$ the symbol of the gradient, the time unit commutes with the three spatial units and the mixed derivatives are symmetric, so the square keeps a vector part,
 $$
-\tilde K^2=\bigl(K_0^2-K_x^2-K_y^2-K_z^2\bigr)e_t+2K_0\bigl(K_x\vec e_x+K_y\vec e_y+K_z\vec e_z\bigr).
+\tilde K^2=\bigl(\\tilde K_0^2-\\tilde K_x^2-\\tilde K_y^2-\\tilde K_z^2\bigr)e_t+2\\tilde K_0\bigl(\\tilde K_x\vec e_x+\\tilde K_y\vec e_y+\\tilde K_z\vec e_z\bigr).
 $$
 The computation is a derived form of this article. It says that $\tilde\nabla^2$ is neither a scalar nor the d'Alembertian, so no first-order operator with scalar square exists in this algebra, and a single field carries no mass. The massless equation is one equation on one element, $\tilde\nabla\tilde{Ξ}_{\mathrm{sp}}=0$, and the massive equation is the pair above, whose scalar square is $\Box$.
 
@@ -205,7 +205,7 @@ and the vector condition removes exactly the spin-$\tfrac12$ piece of dimension 
 
 *At generic lightlike momenta*: the nullity is six, the four-dimensional space of pure-gauge modes $\tilde{Ξ}_{\mathrm{sp},\mu}\propto\partial/\partial x_\mu\epsilon$ is a subspace, the divergence vanishes on the whole solution space, the trace does not, and adjoining the trace leaves four. The trace values of the solutions span a space of dimension two, which is the space of trace shifts the gauge transformation produces.
 
-*In the algebra*: the trace map has rank four on the sixteen complex components. On a null momentum the symbol of the gradient, $\tilde K=K_0e_t+K_x\vec e_x+K_y\vec e_y+K_z\vec e_z$, is a zero divisor. The null condition is its quaternion norm, $\tilde K\tilde K^{\natural}=K_0^2+K_x^2+K_y^2+K_z^2=0$, which for $K_0=i\varpi$ and real $\vec k$ is $\varpi^2=\vec k^2$ and not $\varpi^2=-\vec k^2$. Then left multiplication by $\tilde K$ has rank two and a two-dimensional kernel, checked on four independent null momenta. On a non-null momentum the same left multiplication has rank four and no kernel. That kernel is where the two helicities live, and it is the algebraic reason the massless count is the count it is.
+*In the algebra*: the trace map has rank four on the sixteen complex components. On a null momentum the symbol of the gradient, $\tilde K=\\tilde K_0e_t+\\tilde K_x\vec e_x+\\tilde K_y\vec e_y+\\tilde K_z\vec e_z$, is a zero divisor. The null condition is its quaternion norm, $\tilde K\tilde K^{\natural}=\\tilde K_0^2+\\tilde K_x^2+\\tilde K_y^2+\\tilde K_z^2=0$, which for $\\tilde K_0=i\varpi$ and real $\vec k$ is $\varpi^2=\vec k^2$ and not $\varpi^2=-\vec k^2$. Then left multiplication by $\tilde K$ has rank two and a two-dimensional kernel, checked on four independent null momenta. On a non-null momentum the same left multiplication has rank four and no kernel. That kernel is where the two helicities live, and it is the algebraic reason the massless count is the count it is.
 
 *The transverse map.* The map $T$ of §*The Transverse Condition on the Vector Index* was checked on fifty generic families of three components: it is unchanged by a second application to $3\times10^{-16}$, it annihilates every longitudinal family $\tilde\xi_k=\vec e_k\tilde\zeta$, it fixes every family with $\sum_k\vec e_k\tilde\xi_k=0$, and its rank over the vector index is two.
 
@@ -321,7 +321,7 @@ The field is a tensor product of the algebra's four-vector structure and its Dir
 | $\tilde\nabla$, $\tilde\nabla^{\natural}$ | The gradient and its quaternion conjugate; the only first-order operators of the article |
 | $\Box$ | The d'Alembertian, the quaternionic norm of the gradient |
 | $\mathbb{D}$ | The pair operator of *Operator and Calculus Conventions*, §*The Pair Operator and Its Symbol* |
-| $\tilde K$ | Symbol of the gradient, $K_0e_t+K_x\vec e_x+K_y\vec e_y+K_z\vec e_z$ |
+| $\tilde K$ | Symbol of the gradient, $\\tilde K_0e_t+\\tilde K_x\vec e_x+\\tilde K_y\vec e_y+\\tilde K_z\vec e_z$ |
 | $\omega=-\vec e_z$, $\omega^2=-e_t$ | The right multiplier that carries the source's $i$; eigenvalue $+i$ on the $L$ value and $-i$ on the $R$ value |
 | $e_t$, $i\vec e_k$ | The four units that square to $+e_t$; the images of the source's four generators |
 | $\tilde{Ξ}_{\mathrm{sp},\mu}\in\mathbb{B}$ | Biquaternion-valued components of the field, $\mu=0,1,2,3$ |

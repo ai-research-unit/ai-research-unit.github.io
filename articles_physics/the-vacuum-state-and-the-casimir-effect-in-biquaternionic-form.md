@@ -168,13 +168,13 @@ The second route uses the heat kernel rather than the mode sum directly, and it 
 
 **The heat kernel.** For the Dirichlet-type problem the heat kernel per unit area is
 $$
-K(r'_t)=\sum_{n=1}^{\infty}\int\!\frac{d^{2}k_\perp}{(2\pi)^{2}}\,
+G_{\mathrm{prop}}(r'_t)=\sum_{n=1}^{\infty}\int\!\frac{d^{2}k_\perp}{(2\pi)^{2}}\,
 \exp(-r'_t(\vec k_\perp^{2}+(\pi n/a)^{2}))
 =\frac{1}{4\pi r'_t}\sum_{n=1}^{\infty}\exp(-(\pi n/a)^{2}r'_t),
 $$
 and the free-space heat kernel, which is its $a\to\infty$ limit, is
 $$
-K_\infty(r'_t)=\frac{1}{4\pi r'_t}\cdot\frac{a}{2\sqrt{\pi r'_t}}=\frac{a}{8\pi^{3/2}{r'_{t}}^{3/2}} .
+G_{\mathrm{prop},\infty}(r'_t)=\frac{1}{4\pi r'_t}\cdot\frac{a}{2\sqrt{\pi r'_t}}=\frac{a}{8\pi^{3/2}{r'_{t}}^{3/2}} .
 $$
 The **Jacobi modular relation** for the theta function,
 $$
@@ -182,14 +182,14 @@ $$
 $$
 with $\alpha=\pi^{2}r'_t/a^{2}$, gives the exact difference
 $$
-K(r'_t)-K_\infty(r'_t)=-\frac{1}{8\pi r'_t}
+G_{\mathrm{prop}}(r'_t)-G_{\mathrm{prop},\infty}(r'_t)=-\frac{1}{8\pi r'_t}
 +\frac{a}{4\pi^{3/2}{r'_{t}}^{3/2}}\sum_{m=1}^{\infty}\exp(-a^{2}m^{2}/r'_t).
 $$
 The first term is $a$-independent: it is a constant energy, contributes nothing to the force, and is the vestige of the surface divergence. The second term is the **Casimir part**: it is exponentially small as $r'_t\to0$, so its zeta integral converges without any subtraction, and it vanishes as $a\to\infty$, which is what a Casimir energy must do. Its appearance from a modular transformation is the precise sense in which the finite part comes from the "winding" of the free modes around the compact direction of size $a$, not from the divergent mode count.
 
 **The value.** The Casimir energy per unit area is
 $$
-\frac{E_{\mathrm{cas}}}{A}=\frac{m\,c^{2}}{2\,k_m}\,\frac{1}{\Gamma(-1/2)}\int_{0}^{\infty}{r'_{t}}^{-3/2}\big[K(r'_t)-K_\infty(r'_t)\big]_{\mathrm{cas}}dr'_t,
+\frac{E_{\mathrm{cas}}}{A}=\frac{m\,c^{2}}{2\,k_m}\,\frac{1}{\Gamma(-1/2)}\int_{0}^{\infty}{r'_{t}}^{-3/2}\big[G_{\mathrm{prop}}(r'_t)-G_{\mathrm{prop},\infty}(r'_t)\big]_{\mathrm{cas}}dr'_t,
 $$
 and with the Casimir part of the exact heat-kernel difference the $r'_t$-integral is elementary,
 $$
@@ -340,7 +340,7 @@ Two gaps are left visible. The algebra has no native bosonic ladder, so the phot
 | $\Lambda$ | Momentum cutoff (bare divergence) |
 | $\zeta_3(s)$ | Spectral zeta function of the Dirichlet-type problem |
 | $\zeta(s)$ | Riemann zeta; $\zeta(-3)=1/120$, $\zeta(-1)=-1/12$, $\zeta(4)=\pi^4/90$ |
-| $K(r'_t)$, $K_\infty(r'_t)$ | Heat kernel of the bounded and free problems |
+| $G_{\mathrm{prop}}(r'_t)$, $G_{\mathrm{prop},\infty}(r'_t)$ | Heat kernel of the bounded and free problems |
 | $E_{\mathrm{EM}}/A=-\frac{m\,c^{2}\,\pi^{2}}{720\,k_m\,a^{3}}$ | Electromagnetic Casimir energy per unit area (attractive) |
 | $F_{\mathrm{EM}}/A=-\frac{m\,c^{2}\,\pi^{2}}{240\,k_m\,a^{4}}$ | Electromagnetic Casimir force per unit area (attractive) |
 | $c=1/\sqrt{\epsilon\mu}$, $c_0$ | Speed of light in the medium; in vacuum |

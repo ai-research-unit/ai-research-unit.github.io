@@ -28,7 +28,7 @@ The article owns no new theorem. Each result is stated in a sentence, the mathem
 The four products are not four independent definitions. Each is the plain product with a conjugation inserted in one or both slots:
 
 $$
-\boxed{\;\tilde Q_1\star_{K_1K_2}\tilde Q_2=K_1(\tilde Q_1)\,K_2(\tilde Q_2),
+\boxed{\;\tilde Q_1\star_{K_1K_2}\tilde Q_2=\\mathrm{Ki}_{1}(\tilde Q_1)\,K_2(\tilde Q_2),
 \qquad
 K_1\in\{\mathrm{id},{}^{\natural}\},
 \qquad
@@ -234,7 +234,7 @@ The physical identification of the material sector with spacetime and of the inf
 
 | Symbol | Meaning |
 | --- | --- |
-| $\tilde Q_1\star_{K_1K_2}\tilde Q_2=K_1(\tilde Q_1)K_2(\tilde Q_2)$ | the one rule; $K_1\in\{\mathrm{id},{}^{\natural}\}$ and $K_2\in\{\mathrm{id},{}^{*}\}$ are the two slots |
+| $\tilde Q_1\star_{K_1K_2}\tilde Q_2=\\mathrm{Ki}_{1}(\tilde Q_1)K_2(\tilde Q_2)$ | the one rule; $K_1\in\{\mathrm{id},{}^{\natural}\}$ and $K_2\in\{\mathrm{id},{}^{*}\}$ are the two slots |
 | $\tilde Q_1\tilde Q_2$ | the general plain bilinear product, composition |
 | $\tilde Q_1\tilde Q_2^{*}$ | the general plain sesquilinear product, probability |
 | $\tilde Q_1^{\natural}\tilde Q_2$ | the general quaternionic bilinear product, causality |

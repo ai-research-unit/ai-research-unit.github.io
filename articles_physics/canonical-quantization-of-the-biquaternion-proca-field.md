@@ -245,7 +245,7 @@ D_{\nu\sigma}(p) = \frac{\delta_{\nu\sigma} + p_\nu p_\sigma/\mu^2}{p^2-\mu^2},
 D_{\mu\nu}(p) = \frac{\delta_{\mu\nu}+p_\mu p_\nu/\mu^2}{p^2-\mu^2},
 $$
 
-which was checked by direct inversion off the mass shell: the residual of $K D - I$ was $2\times10^{-16}$ at two independent off-shell momenta. The Feynman propagator is this with the $i\epsilon$ prescription,
+which was checked by direct inversion off the mass shell: the residual of $\mathcal A_{\mathrm{op}} D - I$ was $2\times10^{-16}$ at two independent off-shell momenta. The Feynman propagator is this with the $i\epsilon$ prescription,
 
 $$
 D_{\mu\nu}(p) = \frac{i\left(\delta_{\mu\nu}+p_\mu p_\nu/\mu^2\right)}{p^2-\mu^2+i\epsilon},

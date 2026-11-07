@@ -71,7 +71,7 @@ $$
 the propagator becomes
 
 $$
-K(z_f,T;z_i,0) = \lim_{N\to\infty}\left(\frac{2}{\pi}\right)^{\!N}\int\prod_{k=1}^{N-1}\frac{d^2z_k}{(1+|z_k|^2)^2}\prod_{k=0}^{N-1}\langle  z_{k+1}|z_k\rangle\,\exp(-\frac{k_m\,i\,\epsilon}{m\,c}\langle  z_k|\tilde R_\Psi|z_k\rangle),
+G_{\mathrm{prop}}(z_f,T;z_i,0) = \lim_{N\to\infty}\left(\frac{2}{\pi}\right)^{\!N}\int\prod_{k=1}^{N-1}\frac{d^2z_k}{(1+|z_k|^2)^2}\prod_{k=0}^{N-1}\langle  z_{k+1}|z_k\rangle\,\exp(-\frac{k_m\,i\,\epsilon}{m\,c}\langle  z_k|\tilde R_\Psi|z_k\rangle),
 $$
 
 with $z_0 = z_i$, $z_N = z_f$. This is the spin-1/2 path integral in its fully explicit form.
@@ -95,7 +95,7 @@ $$
 S[z] = \int_0^T\left(\frac{m\,c\,i}{k_m}\langle  z|\partial/\partial r'_t|z\rangle  - \langle  z|\tilde R_\Psi(r'_t)|z\rangle\right)dr'_t,
 $$
 
-and the propagator is $K = \int\mathcal{D}[z]\,\exp(iS[z]\frac{k_m}{m\,c})$ with the measure inherited from the resolution of the identity.
+and the propagator is $G_{\mathrm{prop}} = \int\mathcal{D}[z]\,\exp(iS[z]\frac{k_m}{m\,c})$ with the measure inherited from the resolution of the identity.
 
 ### The Wess–Zumino Term
 
@@ -179,7 +179,7 @@ The pair (symplectic form $\omega$, energy $\langle H\rangle$) makes the sphere 
 The same propagator admits a second path integral, over a two-component spinor with anticommuting (Grassmann) coefficients,
 
 $$
-K = \int\mathcal{D}\tilde{Ξ}_{\mathrm{sp}}^{\dagger}\,\mathcal{D}\tilde{Ξ}_{\mathrm{sp}}\; \exp(\frac{k_m\,i}{m\,c}S[\tilde{Ξ}_{\mathrm{sp}}^{\dagger}iR_{\mathrm{axf},\vec e_x},\tilde{Ξ}_{\mathrm{sp}}]),
+G_{\mathrm{prop}} = \int\mathcal{D}\tilde{Ξ}_{\mathrm{sp}}^{\dagger}\,\mathcal{D}\tilde{Ξ}_{\mathrm{sp}}\; \exp(\frac{k_m\,i}{m\,c}S[\tilde{Ξ}_{\mathrm{sp}}^{\dagger}iR_{\mathrm{axf},\vec e_x},\tilde{Ξ}_{\mathrm{sp}}]),
 \qquad
 S = \int\left(\frac{m\,c\,i\,\tilde{Ξ}_{\mathrm{sp}}^{\dagger}\,iR_{\mathrm{axf},\vec e_x}\,d\,\tilde{Ξ}_{\mathrm{sp}}}{k_m\,dr'_{t}}- \langle\tilde{Ξ}_{\mathrm{sp}}|\tilde R_\Psi|\tilde{Ξ}_{\mathrm{sp}}\rangle\right)dr'_t,
 $$
@@ -246,7 +246,7 @@ For a spin in a magnetic field with an easy-axis anisotropy the classical ground
 The path integral for a spin-1/2 is an integral over histories in the space of coherent states $|\varkappa_{\mathrm{stg}}\rangle$ on $\mathbb{CP}^1$:
 
 $$
-K = \int\mathcal{D}[z]\,\exp(\frac{k_m\,i}{m\,c}S[z]),
+G_{\mathrm{prop}} = \int\mathcal{D}[z]\,\exp(\frac{k_m\,i}{m\,c}S[z]),
 \qquad
 S[z] = \int_0^T\left(\frac{m\,c\,i}{k_m}\langle  z|\partial/\partial r'_t|z\rangle  - \langle  z|\tilde R_\Psi|z\rangle\right)dr'_t,
 $$

@@ -33,7 +33,7 @@ $$
 The total amplitude is the **sum of the two alternatives**,
 
 $$
-K(X) = K_1(X) + K_2(X) = \bigl(a_1 \exp(i\theta_{\mathrm{pha},1}) + a_2 \exp(i\theta_{\mathrm{pha},2})\bigr) e_t ,
+K(X) = \\mathrm{Ki}_{1}(X) + K_2(X) = \bigl(a_1 \exp(i\theta_{\mathrm{pha},1}) + a_2 \exp(i\theta_{\mathrm{pha},2})\bigr) e_t ,
 $$
 
 which is again central. The additivity is the superposition principle; in the algebra it is the linearity of the complex one-dimensional space $\mathbb{B}_{C}$ over $\mathbb{C}$ (equivalently, the additivity of the path integral, which the path-integral article takes as its starting point). The intensity is the scalar coefficient of the Hermitian norm of the amplitude:

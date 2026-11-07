@@ -268,12 +268,12 @@ This is the standard Berezin–Marinov spin factor, and the path ordering is req
 
 Before the continuum worldline there was a discrete model, and in 1+1 dimensions it exhibits the algebraic structure with unusual clarity. Feynman's checkerboard (1949) represents the Dirac particle as moving at the speed of light along the two null directions of two-dimensional spacetime, with the amplitude for a path built from two rules: a directed step carries a phase, and each **corner** (reversal of direction) carries a factor $i\epsilon\,k_m$, with $\epsilon$ the step length and $m$ the mass; the sign of the corner weight is conjugate to the naming of the two directions, and the recurrence below fixes the one used here. The propagator is the sum over all such paths, and in the continuum limit the sum satisfies the two-dimensional Dirac equation.
 
-The reason is the one on which this whole article turns. In 1+1 dimensions the field has two parts, and the two parts are exactly the amplitudes for the two directions of motion. Writing the propagator as the four amplitudes $K_{++}$, $K_{+-}$, $K_{-+}$, $K_{--}$, where the labels record the initial and final directions, the corner weight builds the mass mixing: the amplitudes that exchange the direction require an odd number of corners, so they are the ones proportional to $m$, and the ones that keep it require an even number.
+The reason is the one on which this whole article turns. In 1+1 dimensions the field has two parts, and the two parts are exactly the amplitudes for the two directions of motion. Writing the propagator as the four amplitudes $G_{\mathrm{ctp},++}$, $G_{\mathrm{ctp},+-}$, $G_{\mathrm{ctp},-+}$, $G_{\mathrm{ctp},--}$, where the labels record the initial and final directions, the corner weight builds the mass mixing: the amplitudes that exchange the direction require an odd number of corners, so they are the ones proportional to $m$, and the ones that keep it require an even number.
 
 | amplitude | corners | weight in $m$ | continuum role |
 |---|---|---|---|
-| $K_{++}$, $K_{--}$ | even number | $m^0$ | free propagation of one value of the subscript |
-| $K_{+-}$, $K_{-+}$ | odd number | $m^1$ | mass insertion between the two values |
+| $G_{\mathrm{ctp},++}$, $G_{\mathrm{ctp},--}$ | even number | $m^0$ | free propagation of one value of the subscript |
+| $G_{\mathrm{ctp},+-}$, $G_{\mathrm{ctp},-+}$ | odd number | $m^1$ | mass insertion between the two values |
 
 The continuum limit is the two-part Dirac propagator in 1+1 dimensions, whose small-$\epsilon$ expansion satisfies the two-dimensional Dirac equation with the corner weight as its mass term; the standard derivations of the checkerboard (see the Further Reading) give the explicit form. The two directions are the two parts, and the mass is the corner that exchanges them.
 
@@ -478,7 +478,7 @@ In the biquaternion framework, a single odd variable is not an element of the al
 | $\tilde{Ξ}_{\mathrm{sp},\mu}\tilde{Ξ}_{\mathrm{sp},\nu}+\tilde{Ξ}_{\mathrm{sp},\nu}\tilde{Ξ}_{\mathrm{sp},\mu} = -\tfrac12\varepsilon_\mu\delta_{\mu\nu}e_t$ | The pair of odd variables, an element of the algebra |
 | $Ξ[x]$ | Spin factor, the algebra-valued path-ordered weight |
 | $\tilde\Sigma_{0k}=i\vec e_k$, $\tilde\Sigma_{jk}=\vec e_j\vec e_k$ | The six Lorentz generators, boosts in $\mathbb{B}_{\Psi}$ and rotations in the real quaternion sector |
-| $K_{++}$, $K_{+-}$, $K_{-+}$, $K_{--}$ | Checkerboard propagator amplitudes |
+| $G_{\mathrm{ctp},++}$, $G_{\mathrm{ctp},+-}$, $G_{\mathrm{ctp},-+}$, $G_{\mathrm{ctp},--}$ | Checkerboard propagator amplitudes |
 | $i\epsilon\,k_m$ per corner | Checkerboard corner weight |
 | $A_+$, $A_-$ | Checkerboard amplitudes by direction of motion |
 | $\tilde{\nabla}\tilde{Ξ}_{\mathrm{sp},R} = k_m\tilde{Ξ}_{\mathrm{sp},L}$, $\tilde{\nabla}^{\natural}\tilde{Ξ}_{\mathrm{sp},L} = k_m\tilde{Ξ}_{\mathrm{sp},R}$ | The chiral mass pair, the one-sided Dirac dynamics |

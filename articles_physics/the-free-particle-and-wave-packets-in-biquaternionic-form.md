@@ -315,7 +315,7 @@ The stationary wave vector is the one whose group velocity carries it to the obs
 The free propagator is the inverse Fourier transform of the free phase,
 
 $$
-\boxed{\;K_0(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z, r'_t) = \int  \frac{d^3k}{(2\pi)^3}\,
+\boxed{\;G_{\mathrm{prop},0}(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z, r'_t) = \int  \frac{d^3k}{(2\pi)^3}\,
 \exp(\,i\vec k\cdot(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z) -\frac{c\,i\,k^{2}\,r'_{t}}{2\,k_m})
 = \left(\frac{k_m}{2\pi i c r'_t}\right)^{3/2}
 \exp\!\left(\frac{im|r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z|^2}{\frac{2\,m\,c\,r'_{t}}{k_m}}\right)\;},
@@ -324,7 +324,7 @@ $$
 the last equality being the standard Fresnel (Gaussian) integral in three dimensions. The result is a complex scalar times $e_t$:
 
 $$
-\tilde P_0(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z, r'_t) = K_0(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z,r'_t)\,e_t \in \mathbb{B}_{C}.
+\tilde P_0(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z, r'_t) = G_{\mathrm{prop},0}(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z,r'_t)\,e_t \in \mathbb{B}_{C}.
 $$
 
 The kernel is **central**, its phase is the classical action $S_{\mathrm{cl}} = m|r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z|^2/2r'_t$ divided by $\frac{m\,c}{k_m}$, and its prefactor is a function of the central $i$ and of the central real numbers $m,\frac{m\,c}{k_m},r'_t$. The square root $\sqrt{i}$ appearing in the prefactor is taken inside the centre, since the centre is a copy of $\mathbb{C}$; the measure factor does not leave the centre.
@@ -334,8 +334,8 @@ The kernel is **central**, its phase is the classical action $S_{\mathrm{cl}} = 
 The free kernel is a semigroup in time,
 
 $$
-\int d^3y\;K_0(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z - \vec y, T_2)\,K_0(\vec y - (r_{0x}\,\vec e_x+r_{0y}\,\vec e_y+r_{0z}\,\vec e_z), T_1)
-= K_0(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z - (r_{0x}\,\vec e_x+r_{0y}\,\vec e_y+r_{0z}\,\vec e_z), T_1 + T_2),
+\int d^3y\;G_{\mathrm{prop},0}(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z - \vec y, T_2)\,G_{\mathrm{prop},0}(\vec y - (r_{0x}\,\vec e_x+r_{0y}\,\vec e_y+r_{0z}\,\vec e_z), T_1)
+= G_{\mathrm{prop},0}(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z - (r_{0x}\,\vec e_x+r_{0y}\,\vec e_y+r_{0z}\,\vec e_z), T_1 + T_2),
 $$
 
 which is the statement that a free flight of duration $T_1 + T_2$ is a free flight of duration $T_1$ followed by one of duration $T_2$, summed over the intermediate point. The identity follows from the standard Gaussian convolution
@@ -350,7 +350,7 @@ which gives $A + B =\frac{k_m\,i}{2\,c}\frac{T_1+T_2}{T_1T_2}$ and $\frac{AB}{A+
 Because the kernel is central, it commutes with every biquaternion. The evolution of an arbitrary initial spinor field is therefore
 
 $$
-\tilde{Ξ}_{\mathrm{sp}}(r'_t, r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z) = \int d^3r_0\;K_0(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z - (r_{0x}\,\vec e_x+r_{0y}\,\vec e_y+r_{0z}\,\vec e_z), r'_t)\,\tilde{Ξ}_{\mathrm{sp}}(0,r_{0x}\,\vec e_x+r_{0y}\,\vec e_y+r_{0z}\,\vec e_z),
+\tilde{Ξ}_{\mathrm{sp}}(r'_t, r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z) = \int d^3r_0\;G_{\mathrm{prop},0}(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z - (r_{0x}\,\vec e_x+r_{0y}\,\vec e_y+r_{0z}\,\vec e_z), r'_t)\,\tilde{Ξ}_{\mathrm{sp}}(0,r_{0x}\,\vec e_x+r_{0y}\,\vec e_y+r_{0z}\,\vec e_z),
 $$
 
 in which the kernel acts on the body of the field and multiplies the module factor by a scalar. The module orientation of the initial condition is propagated unchanged.
@@ -429,7 +429,7 @@ The wave four-vector $\tilde P\,k_{\mathrm{mo}} = i\omega/c\,e_t + \vec k$ has b
 A Gaussian packet of initial density width $s_0$ evolves to a Gaussian of width $s(r'_t) = s_0\sqrt{1+(\frac{m\,c\,r'_{t}}{2\,k_m\,ms_{0}^{2}})^2}$ whose centre moves at the group velocity $\frac{c\,k_{0}}{k_m}$, with spreading time $\tau = 2s_0^2/(c/k_m)$; the closed forms were verified against direct momentum-space quadrature to relative errors below $10^{-13}$, and the density, mean, and variance to machine precision, on a superposition rather than a single plane wave. The free kernel
 
 $$
-K_0(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z,r'_t) = \left(\frac{k_m}{2\pi i c r'_t}\right)^{3/2}\exp\!\left(\frac{im|r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z|^2}{\frac{2\,m\,c\,r'_{t}}{k_m}}\right)
+G_{\mathrm{prop},0}(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z,r'_t) = \left(\frac{k_m}{2\pi i c r'_t}\right)^{3/2}\exp\!\left(\frac{im|r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z|^2}{\frac{2\,m\,c\,r'_{t}}{k_m}}\right)
 $$
 
 is central, is a complex scalar times $e_t$, and satisfies the composition law, verified numerically on a two-packet superposition to a relative error of order $10^{-14}$. The free evolution operator $\tilde U = \exp(-\frac{k_m\,iHr'_{t}}{m\,c})$ is a central $*$-unitary, $\tilde U\tilde U^{*} = e_t$, but not a unit-norm rotor. The framework thus supplies the phase, its canonical imaginary unit, the sector location, and the trace-based probability; it does not supply the position operator, the module's dynamics, or any non-central correction, none of which the free problem requires.
@@ -460,7 +460,7 @@ is central, is a complex scalar times $e_t$, and satisfies the composition law, 
 | $Ξ(r_x,r'_t)$ | Scalar envelope; module factor frozen |
 | $s_0$, $s(r'_t) = s_0\sqrt{1+(\frac{m\,c\,r'_{t}}{2\,k_m\,ms_{0}^{2}})^2}$ | Initial and time-dependent density width |
 | $\tau = 2s_0^2/(c/k_m)$ | Spreading time |
-| $K_0(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z,r'_t) = (\frac{k_m}{2\,c\,\pi\,i\,r'_{t}})^{3/2}\exp(im|r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z|^\frac{k_m}{m\,c\,r'_{t}})$ | Free propagator; central |
+| $G_{\mathrm{prop},0}(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z,r'_t) = (\frac{k_m}{2\,c\,\pi\,i\,r'_{t}})^{3/2}\exp(im|r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z|^\frac{k_m}{m\,c\,r'_{t}})$ | Free propagator; central |
 | $\tilde Q(r'_t) = \exp(-\frac{k_m\,iHr'_{t}}{m\,c})$ | Free evolution; central $*$-unitary |
 | $\mathrm{Tr}(\tilde R_\Psi) = 2\,\mathrm{Sc}(\tilde R_\Psi)$ | Trace convention |
 | $\langle\tilde{Q}_1,\tilde{Q}_2\rangle_{\natural}$ | the general quaternionic bilinear form, $\mathrm{Sc}(\tilde{Q}_1^{\natural}\tilde{Q}_2)$; on the diagonal $\langle\tilde{Q}_2,\tilde{Q}_2\rangle_{\natural}=\langle\tilde{Q}_2\rangle_{\natural}$ |

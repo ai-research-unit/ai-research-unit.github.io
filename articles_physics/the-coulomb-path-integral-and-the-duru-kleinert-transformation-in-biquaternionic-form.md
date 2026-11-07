@@ -20,7 +20,7 @@ The article proceeds as follows. A section states why the time slicing fails, in
 
 The construction of the kernel is the one of *The Path Integral in Biquaternionic Form*: divide the time $T$ into $N$ steps of length $\varepsilon=T/N$, use the short-time kernel
 $$
-K_\varepsilon(r_{\mathrm{src},x}\,\vec e_x+r_{\mathrm{src},y}\,\vec e_y+r_{\mathrm{src},z}\,\vec e_z,r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)=\Big(\frac{k_m}{2\pi i c\varepsilon}\Big)^{3/2}
+G_{\mathrm{prop},\varepsilon}(r_{\mathrm{src},x}\,\vec e_x+r_{\mathrm{src},y}\,\vec e_y+r_{\mathrm{src},z}\,\vec e_z,r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)=\Big(\frac{k_m}{2\pi i c\varepsilon}\Big)^{3/2}
 \exp\Big[\frac{k_m\,i}{m\,c}\Big(\frac{m|r_{\mathrm{src},x}\,\vec e_x+r_{\mathrm{src},y}\,\vec e_y+r_{\mathrm{src},z}\,\vec e_z-(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)|^2}{2\varepsilon}-\varepsilon\,V(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)\Big)\Big]+O(\varepsilon^2),
 $$
 and take the limit $N\to\infty$ of the product with the intermediate positions integrated.

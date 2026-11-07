@@ -66,15 +66,15 @@ is non-negative.
 
 **Released energy.** The kinetic energies $K_a := E_a^* - m_ac^2$ satisfy
 $$
-K_1 + K_2 = (E_1^* + E_2^*) - (m_1 + m_2)c^2 = Q ,
+T_{\mathrm{kin},1} + T_{\mathrm{kin},2} = (E_1^* + E_2^*) - (m_1 + m_2)c^2 = Q ,
 $$
 so $Q$ is exactly the total kinetic energy of the daughters in the parent rest frame. An exact rearrangement used in Problem 6 is
 $$
-K_1 = \frac{Q\left(2m_2 + Q/c^2\right)}{2M},
+T_{\mathrm{kin},1} = \frac{Q\left(2m_2 + Q/c^2\right)}{2M},
 \qquad
-K_2 = \frac{Q\left(2m_1 + Q/c^2\right)}{2M},
+T_{\mathrm{kin},2} = \frac{Q\left(2m_1 + Q/c^2\right)}{2M},
 $$
-obtained from $K_1 = E_1^* - m_1c^2 = \left[(M-m_1)^2 - m_2^2\right]c^2/(2M)$ by writing $M - m_1 - m_2 = Q/c^2$ and $M - m_1 + m_2 = 2m_2 + Q/c^2$.
+obtained from $T_{\mathrm{kin},1} = E_1^* - m_1c^2 = \left[(M-m_1)^2 - m_2^2\right]c^2/(2M)$ by writing $M - m_1 - m_2 = Q/c^2$ and $M - m_1 + m_2 = 2m_2 + Q/c^2$.
 
 ## Problem 2: The Moving Parent and the Boost Biquaternion
 
@@ -294,13 +294,13 @@ v_{\pi^+}^*/c = 0.826783,
 \qquad
 v_{\pi^0}^*/c = 0.835384 .
 $$
-The kinetic energies are $K_{\pi^+} = 108.5454$ MeV and $K_{\pi^0} = 110.5844$ MeV, whose sum is $219.1298$ MeV $= Q$, as required; the mass-shell residual $E_{\pi^+}^{*2} - m_{\pi^+}^2c^4 - p^{*2}c^2$ vanishes to round-off.
+The kinetic energies are $T_{\mathrm{kin},\pi^{+}} = 108.5454$ MeV and $T_{\mathrm{kin},\pi^{0}} = 110.5844$ MeV, whose sum is $219.1298$ MeV $= Q$, as required; the mass-shell residual $E_{\pi^+}^{*2} - m_{\pi^+}^2c^4 - p^{*2}c^2$ vanishes to round-off.
 
 The non-relativistic approximation of Problem 6 gives, with $\mu = m_1m_2/(m_1+m_2) = 68.6176$ MeV,
 $$
 p^*_{\rm NR}c = \sqrt{2\mu Q} = 173.4137\ \text{MeV},
 $$
-which is low by $15.46\%$; and the partition $K_1/Q$ is $0.495348$ exactly, against the approximation $m_2/(m_1+m_2) = 0.491634$, an error of $0.75\%$. The momentum formula is poor here because $Q/(m_1+m_2) \approx 0.80$, far from the non-relativistic regime.
+which is low by $15.46\%$; and the partition $T_{\mathrm{kin},1}/Q$ is $0.495348$ exactly, against the approximation $m_2/(m_1+m_2) = 0.491634$, an error of $0.75\%$. The momentum formula is poor here because $Q/(m_1+m_2) \approx 0.80$, far from the non-relativistic regime.
 
 A decay with a smaller release, $\Lambda \to p\pi^-$ ($M = 1115.683$, $m_p = 938.2721$, $m_{\pi^-} = 139.5704$ MeV$/c^2$, so $Q = 37.8405$ MeV, only $3.51\%$ of the mass sum), illustrates the opposite regime:
 $$
@@ -336,7 +336,7 @@ p^*c = 29.7921\ \text{MeV},
 \qquad
 v_\mu^*/c = 0.271385,
 $$
-with $Q = 33.9120$ MeV and $K_\mu = 4.1199$ MeV. In this decay $\mu = 0$, so the non-relativistic momentum formula $\sqrt{2\mu Q}$ vanishes and fails completely: a massless, necessarily ultrarelativistic daughter lies outside the non-relativistic limit.
+with $Q = 33.9120$ MeV and $T_{\mathrm{kin},\mu} = 4.1199$ MeV. In this decay $\mu = 0$, so the non-relativistic momentum formula $\sqrt{2\mu Q}$ vanishes and fails completely: a massless, necessarily ultrarelativistic daughter lies outside the non-relativistic limit.
 
 ## Problem 6: The Non-Relativistic Limit
 
@@ -349,11 +349,11 @@ M = m_1 + m_2 + \frac{Q}{c^2},
 \mu = \frac{m_1m_2}{m_1+m_2} .
 $$
 
-**Energies.** From $K_1 = Q(2m_2 + Q/c^2)/(2M)$ and $2M = 2(m_1+m_2) + O(Q/c^2)$,
+**Energies.** From $T_{\mathrm{kin},1} = Q(2m_2 + Q/c^2)/(2M)$ and $2M = 2(m_1+m_2) + O(Q/c^2)$,
 $$
-K_1 = \frac{m_2}{m_1+m_2}\,Q + O\!\left(\frac{Q^2}{(m_1+m_2)c^2}\right),
+T_{\mathrm{kin},1} = \frac{m_2}{m_1+m_2}\,Q + O\!\left(\frac{Q^2}{(m_1+m_2)c^2}\right),
 \qquad
-K_2 = \frac{m_1}{m_1+m_2}\,Q + O\!\left(\frac{Q^2}{(m_1+m_2)c^2}\right),
+T_{\mathrm{kin},2} = \frac{m_1}{m_1+m_2}\,Q + O\!\left(\frac{Q^2}{(m_1+m_2)c^2}\right),
 $$
 so the light daughter carries the larger share of the released energy — the parent's non-relativistic decay result.
 
@@ -394,7 +394,7 @@ because $\vec p_1^* = -\vec p_2^*$ implies $m_1\vec v_1^* + m_2\vec v_2^* = 0$ a
 
 We have worked the relativistic kinematics of a two-body decay as an application of the two-body article.
 
-1. **COM frame ($A$ at rest).** The daughters are back to back with $E_1^* + E_2^* = Mc^2$, individual energies $E_a^* = (M^2 + m_a^2 - m_b^2)c^2/(2M)$, common momentum $p^* = \frac{c}{2M}\sqrt{[M^2-(m_1+m_2)^2][M^2-(m_1-m_2)^2]}$, speeds $v_a^* = p^*c^2/E_a^*$, and released energy $Q = (M-m_1-m_2)c^2 = K_1 + K_2$. The decay is allowed iff $M \ge m_1 + m_2$.
+1. **COM frame ($A$ at rest).** The daughters are back to back with $E_1^* + E_2^* = Mc^2$, individual energies $E_a^* = (M^2 + m_a^2 - m_b^2)c^2/(2M)$, common momentum $p^* = \frac{c}{2M}\sqrt{[M^2-(m_1+m_2)^2][M^2-(m_1-m_2)^2]}$, speeds $v_a^* = p^*c^2/E_a^*$, and released energy $Q = (M-m_1-m_2)c^2 = T_{\mathrm{kin},1} + T_{\mathrm{kin},2}$. The decay is allowed iff $M \ge m_1 + m_2$.
 
 2. **Moving parent.** The parent constructs $\tilde U_{\rm CM} = \sqrt{-i\tilde{P}^{\natural}_A/(Mc)} = \cosh\frac{\theta_{\mathrm{rpd}}}{2} + i\sinh\frac{\theta_{\mathrm{rpd}}}{2}\vec u_V$, which carries the lab to the COM frame; the inverse rotation, which carries the COM daughters to the lab, is generated by the quaternion conjugate $\tilde U^{\natural}_{\rm CM}$. It gives $E_a = \gamma(E_a^* + \vec V\cdot\vec p_a^*)$ and the standard momentum formula, with the lab energy of each daughter confined to $\gamma E_a^*(1 \pm Vv_a^*/c^2)$.
 
@@ -402,7 +402,7 @@ We have worked the relativistic kinematics of a two-body decay as an application
 
 4. **Threshold and opening angle.** The threshold is $M \ge m_1+m_2$; in the COM frame the opening angle is $\pi$, and for two massless daughters the lab opening angle has minimum $\Theta_{\min} = \arccos(1 - 2/\gamma^2) \approx 2/\gamma$ at symmetric emission.
 
-5. **Numbers.** For $K^+ \to \pi^+\pi^0$ the exact values are $p^*c = 205.1379$ MeV and $K_{\pi^+} = 108.5454$ MeV, $K_{\pi^0} = 110.5844$ MeV; for $\Lambda \to p\pi^-$, $p^*c = 100.5797$ MeV. The massless limits $\pi^0 \to \gamma\gamma$ and $\pi^+ \to \mu^+\nu_\mu$ reproduce $E_\gamma^* = Mc^2/2$ and the standard pion-decay energies.
+5. **Numbers.** For $K^+ \to \pi^+\pi^0$ the exact values are $p^*c = 205.1379$ MeV and $T_{\mathrm{kin},\pi^{+}} = 108.5454$ MeV, $T_{\mathrm{kin},\pi^{0}} = 110.5844$ MeV; for $\Lambda \to p\pi^-$, $p^*c = 100.5797$ MeV. The massless limits $\pi^0 \to \gamma\gamma$ and $\pi^+ \to \mu^+\nu_\mu$ reproduce $E_\gamma^* = Mc^2/2$ and the standard pion-decay energies.
 
 6. **Non-relativistic limit.** The exact formulas reduce to $K_a \approx (m_b/(m_1+m_2))Q$, $p^* \approx \sqrt{2\mu Q} = \mu v_{\rm rel}$, and Galilean velocity addition, with relative errors of order $Q/((m_1+m_2)c^2)$.
 

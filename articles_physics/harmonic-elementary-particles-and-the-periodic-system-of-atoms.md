@@ -223,7 +223,7 @@ So the pulsar and the spinor differ in exactly one respect, and it is a single t
 
 ## Monochromatic Structures and Crystals
 
-The paper's last construction widens the class of monochromatic solutions without solving anything new, and it is the one item of this paper that the corpus does not already have elsewhere. Take any biquaternion function $K(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)$ — the paper calls it a **structural biquaternion** — and convolve a solution with it. The operator is a differential operator with constant coefficients, and differentiation passes through a convolution, so the convolution of a solution with any $K$ is again a solution. The same device reappears in the programme's 2020 paper on the field side, where it weights the free-photon cloud; *The Ether and Photons in the Electro-Gravimagnetic Programme* records it there and cross-refers to this section. In components, for $\tilde J_{\mathrm{eg}} = i\rho + \vec J$ and $K = k + \vec K$,
+The paper's last construction widens the class of monochromatic solutions without solving anything new, and it is the one item of this paper that the corpus does not already have elsewhere. Take any biquaternion function $K(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)$ — the paper calls it a **structural biquaternion** — and convolve a solution with it. The operator is a differential operator with constant coefficients, and differentiation passes through a convolution, so the convolution of a solution with any $K$ is again a solution. The same device reappears in the programme's 2020 paper on the field side, where it weights the free-photon cloud; *The Ether and Photons in the Electro-Gravimagnetic Programme* records it there and cross-refers to this section. In components, for $\tilde J_{\mathrm{eg}} = i\rho + \vec J$ and $\mathcal{Q}_{\mathrm{h}} = k + \vec K$,
 
 $$
 \tilde J_{\mathrm{eg}} * K = i\,\rho * k - \sum_{j=1}^{3} \vec J_j * \vec K_j
@@ -358,7 +358,7 @@ The corpus's relation to this part of the programme is therefore the same as to 
 | $\nabla\circ\nabla = -\Delta$ | The square of $\nabla$; hence the factorisation below |
 | $(\omega+\nabla)(\omega-\nabla) = \omega^2+\Delta$ | Helmholtz factorisation of the monochromatic operator |
 | $D_\pm = \partial/\partial\tau \pm i\nabla$ | Mutual complex gradients; monochromatically $D_\pm \to -i(\omega \mp \nabla)$ |
-| $K = k + \vec K$ | Structural biquaternion; any biquaternion function used as a convolution kernel |
+| $\mathcal{Q}_{\mathrm{h}} = k + \vec K$ | Structural biquaternion; any biquaternion function used as a convolution kernel |
 | $\tilde J_{\mathrm{eg}} * K$ | Biquaternion convolution, with component convolutions; preserves solutions of the free equation |
 | $\delta(x_j - n h_j)$ | Lattice of shifted $\delta$-functions; the crystal structural biquaternion |
 | $\tilde J_{\mathrm{eg}}(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z,\omega)$ | Biamplitude, $\tilde J_{\mathrm{eg}}(\tau,r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z) = \tilde J_{\mathrm{eg}}(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z,\omega)\exp(-i\omega\tau)$ |

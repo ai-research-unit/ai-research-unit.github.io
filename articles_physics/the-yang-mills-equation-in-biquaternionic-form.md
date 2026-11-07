@@ -299,7 +299,7 @@ $$
 S^{\omega} = \left\{\vec\zeta : (\vec\zeta + i\vec F, \vec\zeta + i\vec F) = \omega^2\right\},
 $$
 
-with the same complex-bilinear pairing: the circle of radius $\sqrt{\omega^2 + \|A\|^2}$ centred at $B$ in the plane through $B$ perpendicular to $A$, where $\vec F = A + iB$ — a sphere of radius $|\omega|$ centred at $B$ when $A = 0$. Both characteristic surfaces are written here in the coefficient $\vec F$ itself, so they hold whatever identification it is given with the physical vectors. Letting $\omega \to 0$ gives the static solutions, and the elementary stationary potential is the plane wave of wave vector $K_F = H + \vec u_E\sqrt{\omega^2 + \|E\|^2}$ with $\vec u_E \perp E$, whose invariants are recorded in the twistor article.
+with the same complex-bilinear pairing: the circle of radius $\sqrt{\omega^2 + \|A\|^2}$ centred at $B$ in the plane through $B$ perpendicular to $A$, where $\vec F = A + iB$ — a sphere of radius $|\omega|$ centred at $B$ when $A = 0$. Both characteristic surfaces are written here in the coefficient $\vec F$ itself, so they hold whatever identification it is given with the physical vectors. Letting $\omega \to 0$ gives the static solutions, and the elementary stationary potential is the plane wave of wave vector $P_{\mathrm{pw}} = H + \vec u_E\sqrt{\omega^2 + \|E\|^2}$ with $\vec u_E \perp E$, whose invariants are recorded in the twistor article.
 
 **The stationary kernel and its Helmholtz provenance.** The stationary problem has a fundamental solution of its own, and its kernel is Helmholtz rather than d'Alembert, because a weight strips the directional term. For constant $\vec F$ the compensated operator satisfies the exact identity
 
@@ -398,7 +398,7 @@ A second, independent route to a biquaternion equation with a Yang–Mills-type 
 | $c = 1/\sqrt{\epsilon\mu}$, $c_0$ | Speed of light in the medium; in vacuum |
 | $\vec F = -E - iH$ | Constant complex-vector structural coefficient of the biwave equation (Alexeyeva); $E, H$ real vectors |
 | $\nabla^\pm = \partial/\partial \tau \pm i\nabla$, $\Box_A = \partial^2/\partial \tau^2 - \Delta$ | Mutual bigradients and wave operator of the biwave equation; $\Box_A$ is minus this article's $\Box$ |
-| $\tilde{Ξ}_{\mathrm{sp}}$, $K_F$ | Fundamental solution of the biwave equation; wave vector of its elementary stationary solution |
+| $\tilde{Ξ}_{\mathrm{sp}}$, $P_{\mathrm{pw}}$ | Fundamental solution of the biwave equation; wave vector of its elementary stationary solution |
 | $\nabla^\pm_\omega = \omega \pm \nabla$ | Mutual bigradients of the time-harmonic reduction |
 | $\tilde{Ξ}_{\mathrm{sp},\omega}$, $\xi$ | Stationary fundamental solution (Helmholtz kernel times the weight $\exp(-(\vec F,r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z))$); the source's Helmholtz Green function |
 | $T_\omega$ | Solution of the homogeneous stationary equation |

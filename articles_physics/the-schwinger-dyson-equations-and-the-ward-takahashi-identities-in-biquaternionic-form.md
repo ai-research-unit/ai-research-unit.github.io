@@ -90,7 +90,7 @@ $$
 K=\begin{pmatrix}2&0.3&0\\0.3&1.4&0.2\\0&0.2&1.1\end{pmatrix},
 \qquad J=(0.5,-0.4,0.9),
 $$
-For this matrix and source, $K^{-1}J=(0.322647,-0.484316,0.906239)$ and $K\,(K^{-1}J)=J$ to machine precision; the two-point contact term $W_{\mathrm{kinetic}}\langle\tilde{Ξ}\tilde{Ξ}^{\mathsf T}\rangle_{\!J}=I+\tilde J\langle\tilde{Ξ}\rangle^{\mathsf T}_{\!J}$ was checked on the same matrix and closed with the same accuracy. The sign recorded in the box is the one that makes the $J$-expansion reproduce the free propagator $W_{\mathrm{kinetic}}{}^{-1}$ and not its negative.
+For this matrix and source, $A_{\\mathrm{gau}}^{-1}J=(0.322647,-0.484316,0.906239)$ and $K\,(A_{\\mathrm{gau}}^{-1}J)=J$ to machine precision; the two-point contact term $W_{\mathrm{kinetic}}\langle\tilde{Ξ}\tilde{Ξ}^{\mathsf T}\rangle_{\!J}=I+\tilde J\langle\tilde{Ξ}\rangle^{\mathsf T}_{\!J}$ was checked on the same matrix and closed with the same accuracy. The sign recorded in the box is the one that makes the $J$-expansion reproduce the free propagator $W_{\mathrm{kinetic}}{}^{-1}$ and not its negative.
 
 ## The Equations in the Framework's Theories
 
