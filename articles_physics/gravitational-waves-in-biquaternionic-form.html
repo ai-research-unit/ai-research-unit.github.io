@@ -80,7 +80,7 @@
 </ul>
 <h2 id="the-trace-reversed-perturbation-and-the-wave-equation">The Trace-Reversed Perturbation and the Wave Equation</h2>
 <p>This section fixes the target. It is standard linearized gravity, written in the coordinate convention just fixed, and every formula displayed here was checked by direct computation.</p>
-<p>The framework's conventions are used here and are not restated. The material basis $\varepsilon_\mu$ of $\mathbb{B}_{\Phi}$ and the real coordinates $x_\mu=(r'_{t}, r_x, r_y, r_z)$ of the material frame are those of <em>Frame and Metric Conventions</em>, and the biquaternionic d'Alembertian $\Box$ is that of <em>Operator and Calculus Conventions</em>. There is one metric, the unit metric $\delta_{\mu\nu}=(1,1,1,1)$ on the four $Q_\mu$; the material interval is that form read on $Q_t=i r'_t$, $-{r'_{t}}^2+r_x^2+r_y^2+r_z^2$, and its one minus is the square of the $i$. The linearized metric is the flat interval plus the perturbation $h_{\mu\nu}$, with $|h_{\mu\nu}| \ll 1$, and every contraction below is written out in the real coordinates, where the minus on the time row is that one minus. A product $k_\lambda x_\lambda$ below is the invariant contraction $-k_0x_0+k_1x_1+k_2x_2+k_3x_3$, not a sum of like components. The <strong>trace-reversed</strong> perturbation is</p>
+<p>The framework's conventions are used here and are not restated. The material basis $\varepsilon_\mu$ of $\mathbb{B}_{\Phi}$ and the real coordinates $x_\mu=(r'_{t}, r_x, r_y, r_z)$ of the material frame are those of <em>Frame and Metric Conventions</em>, and the biquaternionic d'Alembertian $\Box$ is that of <em>Operator and Calculus Conventions</em>. There is one metric, the unit metric $\delta_{\mu\nu}=(1,1,1,1)$ on the four $Q_\mu$; the material interval is that form read on $Q_t=i r'_t$, $-{r'_{t}}^2+r_x^2+r_y^2+r_z^2$, and its one minus is the square of the $i$. The linearized metric is the flat interval plus the perturbation $h_{\mu\nu}$, with $|h_{\mu\nu}| \ll 1$, and every contraction below is written out in the real coordinates, where the minus on the time row is that one minus. A product $k_\lambda x_\lambda$ below is the invariant contraction $-k_{t}^{\prime}x_0+k_1x_1+k_2x_2+k_3x_3$, not a sum of like components. The <strong>trace-reversed</strong> perturbation is</p>
 <p>$$
 \bar{h}_{00} = h_{00} + \tfrac{1}{2}h, \qquad \bar{h}_{0k} = h_{0k}, \qquad \bar{h}_{kl} = h_{kl} - \tfrac{1}{2}h\,\delta_{kl}, \qquad \bar{h} = -\bar{h}_{00}+\bar{h}_{11}+\bar{h}_{22}+\bar{h}_{33} = -h,
 $$</p>
@@ -138,7 +138,7 @@ $$</p>
 \boxed{\;\Box\zeta_\nu = 0\,\;}.
 $$</p>
 <p>Four functions satisfy this, one for each coordinate direction, so the gauge freedom is <strong>not</strong> exhausted by the harmonic condition. It is a residual gauge freedom of the same kind that the Lorenz condition leaves in electromagnetism, where the condition is preserved by $\Box\Gamma = 0$. A count that imposes harmonic gauge and then declares the remaining six components physical has used the gauge freedom twice in the wrong order: the six components include the four that the residual freedom still moves.</p>
-<p>For a plane wave there is an instructive simplification. Writing $\zeta_\nu = a_\nu \exp\big(ik_\lambda x_\lambda\big)$, the preservation condition is $k^2a_\nu = 0$, and for a lightlike wave vector $k^2 = -k_0^2+k_1^2+k_2^2+k_3^2 = 0$ it holds for every $a_\nu$; every residual gauge function is available for a plane wave. This is the case on which the count below is computed.</p>
+<p>For a plane wave there is an instructive simplification. Writing $\zeta_\nu = a_\nu \exp\big(ik_\lambda x_\lambda\big)$, the preservation condition is $k^2a_\nu = 0$, and for a lightlike wave vector $k^2 = -k_{t}^{\prime\,2}+k_1^2+k_2^2+k_3^2 = 0$ it holds for every $a_\nu$; every residual gauge function is available for a plane wave. This is the case on which the count below is computed.</p>
 <h2 id="counting-the-physical-degrees-of-freedom">Counting the Physical Degrees of Freedom</h2>
 <p>The count is $10 \to 6 \to 2$, and it must be justified at each arrow. The first arrow is a gauge choice; the second is the division by the residual gauge freedom just exhibited.</p>
 <p><strong>Ten.</strong> The symmetric tensor $h_{\mu\nu}$ has $\tfrac{1}{2}\cdot4\cdot5 = 10$ independent components.</p>
@@ -155,11 +155,11 @@ $$</p>
 <h2 id="the-two-polarizations">The Two Polarizations</h2>
 <p>A vacuum plane wave is</p>
 <p>$$
-h_{\mu\nu} = A_{\mu\nu}\cos(k_\lambda x_\lambda), \qquad -k_0^2+k_1^2+k_2^2+k_3^2 = 0,
+h_{\mu\nu} = A_{\mu\nu}\cos(k_\lambda x_\lambda), \qquad -k_{t}^{\prime\,2}+k_1^2+k_2^2+k_3^2 = 0,
 $$</p>
 <p>with a constant symmetric amplitude $A_{\mu\nu}$. The residual gauge freedom of the previous section can be used to put it in <strong>transverse-traceless</strong> form, in which</p>
 <p>$$
--k_0A_{0\nu}+k_1A_{1\nu}+k_2A_{2\nu}+k_3A_{3\nu} = 0 \qquad\text{and}\qquad -A_{00}+A_{11}+A_{22}+A_{33} = 0 ,
+-k_{t}^{\prime}A_{0\nu}+k_1A_{1\nu}+k_2A_{2\nu}+k_3A_{3\nu} = 0 \qquad\text{and}\qquad -A_{00}+A_{11}+A_{22}+A_{33} = 0 ,
 $$</p>
 <p>and in which, in addition, the components with a timelike index vanish, $A_{t\mu} = 0$. For propagation in the $+z$ direction, $k_\mu = (\omega/c)(1,0,0,1)$ in the coordinates $x_\mu = (r'_{t}, r_x, r_y, r_z)$, so that the phase is $\omega(r_z/c - r'_t)$ and the plane transverse to the propagation is spanned by $x$ and $y$.</p>
 <p><strong>The transversality and tracelessness are checked, not assumed.</strong> For the two amplitudes</p>
@@ -167,7 +167,7 @@ $$</p>
 \text{plus:}\quad A_{xx} = -A_{yy} \ne 0, \qquad
 \text{cross:}\quad A_{xy} = A_{yx} \ne 0,
 $$</p>
-<p>with all other components zero, a direct check verifies $-k_0^2+k_1^2+k_2^2+k_3^2 = 0$, $-k_0A_{0\nu}+k_1A_{1\nu}+k_2A_{2\nu}+k_3A_{3\nu} = 0$, and $-A_{00}+A_{11}+A_{22}+A_{33} = 0$, for each amplitude and for the general transverse-traceless solution. Solving the conditions $A_{t\mu} = 0$, $-k_0A_{0\nu}+k_1A_{1\nu}+k_2A_{2\nu}+k_3A_{3\nu} = 0$, $-A_{00}+A_{11}+A_{22}+A_{33} = 0$ on a general symmetric $A_{\mu\nu}$ leaves</p>
+<p>with all other components zero, a direct check verifies $-k_{t}^{\prime\,2}+k_1^2+k_2^2+k_3^2 = 0$, $-k_{t}^{\prime}A_{0\nu}+k_1A_{1\nu}+k_2A_{2\nu}+k_3A_{3\nu} = 0$, and $-A_{00}+A_{11}+A_{22}+A_{33} = 0$, for each amplitude and for the general transverse-traceless solution. Solving the conditions $A_{t\mu} = 0$, $-k_{t}^{\prime}A_{0\nu}+k_1A_{1\nu}+k_2A_{2\nu}+k_3A_{3\nu} = 0$, $-A_{00}+A_{11}+A_{22}+A_{33} = 0$ on a general symmetric $A_{\mu\nu}$ leaves</p>
 <p>$$
 \boxed{\;A_{xx} = -A_{yy}, \qquad A_{xy} = A_{yx}, \qquad \text{all other components zero}\;},
 $$</p>
@@ -359,7 +359,7 @@ $$</p>
 <td>Plane-wave amplitude; the plus and cross polarizations</td>
 </tr>
 <tr>
-<td>$k_\mu = (\omega/c)(1,0,0,1)$, $-k_0^2+k_1^2+k_2^2+k_3^2 = 0$</td>
+<td>$k_\mu = (\omega/c)(1,0,0,1)$, $-k_{t}^{\prime\,2}+k_1^2+k_2^2+k_3^2 = 0$</td>
 <td>Wave vector along $+z$ and its null condition</td>
 </tr>
 <tr>

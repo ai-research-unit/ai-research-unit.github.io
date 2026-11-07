@@ -102,7 +102,7 @@ with $p^2=p_0^2-\sum_kp_k^2$. The factor $i$ of the numerator is what shortens i
 $$i\,p_0\,w\,\vec e_x-\sum_k i\,p_k\,\vec e_k\,w\,\vec e_y=m\,w ,$$
 the same condition carried by the adjoint, whose equation the companion writes with the mass on the other side, and the discrete symmetries reduce $\Gamma_\mu$ to two independent structures multiplied by functions of the single invariant $k^2$. The timelike and the spacelike components are written separately, because they act differently:
 $$\Gamma_0\,w=i\,w\,\vec e_x\,F_1(k^2)+\frac{1}{2\,m}\sum_k  k_k\,\vec e_k\,w\,\vec e_z\,F_2(k^2) ,$$
-$$\Gamma_j\,w=i\,\vec e_j\,w\,\vec e_y\,F_1(k^2)+\frac{1}{2\,m}\Big(k_0\,\vec e_j\,w\,\vec e_z+\sum_{k\ne j} k_k\,\vec e_j\vec e_k\,w\Big)F_2(k^2) .$$
+$$\Gamma_j\,w=i\,\vec e_j\,w\,\vec e_y\,F_1(k^2)+\frac{1}{2\,m}\Big(k_{t}^{\prime}\,\vec e_j\,w\,\vec e_z+\sum_{k\ne j} k_k\,\vec e_j\vec e_k\,w\Big)F_2(k^2) .$$
 The first term of each line is the direction $\mu$ acting on the state; the second is the bivector of the pair $(\mu,\nu)$, and its shape is the content of the Gordon decomposition below.</p>
 <p>Here $k_m=mc/\hbar$ is the mass wave number, the inverse of the mass length.</p>
 <p>$F_1(0)=1$ is the charge, and $F_2(0)$ is the anomaly. The gyromagnetic ratio is
@@ -119,7 +119,7 @@ $$\bar w_2\big(c_\mu w\big)=\frac{(p+p_2)_\mu}{2m}\,\bar w_2w+\frac{i}{2\,m}\sum
 the coefficient of the second term carrying the $i$ by which the bivector differs from the plain product of its two directions. Written out in the two families it reads, for the timelike component,
 $$\bar w_2\big(i\,w\,\vec e_x\big)=\frac{(p+p_2)_0}{2m}\,\bar w_2w+\frac{1}{2\,m}\sum_k  k_k\,\bar w_2\big(\vec e_k\,w\,\vec e_z\big),$$
 and for the spacelike component $j$,
-$$\bar w_2\big(i\,\vec e_j\,w\,\vec e_y\big)=\frac{(p+p_2)_j}{2m}\,\bar w_2w+\frac{1}{2\,m}\Big(k_0\,\bar w_2\big(\vec e_j\,w\,\vec e_z\big)+\sum_{k\ne j} k_k\,\bar w_2\big(\vec e_j\vec e_k\,w\big)\Big),$$
+$$\bar w_2\big(i\,\vec e_j\,w\,\vec e_y\big)=\frac{(p+p_2)_j}{2m}\,\bar w_2w+\frac{1}{2\,m}\Big(k_{t}^{\prime}\,\bar w_2\big(\vec e_j\,w\,\vec e_z\big)+\sum_{k\ne j} k_k\,\bar w_2\big(\vec e_j\vec e_k\,w\big)\Big),$$
 where the $i$ of the generic form has been absorbed: $\frac{i}{2\,m}\varepsilon_k\mathcal  G_{0k}=\frac{1}{2\,m}\vec e_k$ on the right, and $\frac{i}{2\,m}\varepsilon_k\mathcal  G_{jk}=\frac{1}{2\,m}\vec e_j\vec e_k$. The three were verified on random on-shell pairs at $m=0.7$, with a deviation of order $10^{-15}$.</p>
 <p>Read the right-hand sides. The first term is the convection: the momentum sum $(p+p_2)_\mu$ multiplies the central direction, and it is the term the charge multiplies. The second is the bivector: the momentum difference $k_\nu$ multiplies a product of two directions, and it is the term the magnetic moment multiplies. There is no third term, and the split is exact, not an approximation.</p>
 <p>The coefficient $1/2m$ is the same one that fixes $g=2$ at the tree level, and it is untouched by the renormalisation. The Ward identity $k_\mu\Gamma_\mu=0$ is gauge invariance at the vertex. It forces the divergent part of $\Gamma_\mu$ to be proportional to the first structure, so nothing divergent reaches the second, and the anomaly is finite: no counterterm is needed for it.</p>
@@ -299,7 +299,7 @@ against the measured $1.15965218073\times10^{-3}$: agreement to $5\times10^{-11}
 <h2 id="summary">Summary</h2>
 <p>The anomalous magnetic moment in biquaternion form is the coefficient $F_2(0)=a$ of the bivector structure of the electromagnetic vertex,
 $$\Gamma_0w=i\,w\,\vec e_xF_1+\frac{1}{2\,m}\sum_k k_k\,\vec e_k\,w\,\vec e_zF_2 ,\qquad
-\Gamma_jw=i\,\vec e_j\,w\,\vec e_yF_1+\frac{1}{2\,m}\Big(k_0\,\vec e_j\,w\,\vec e_z+\sum_{k\ne j} k_k\,\vec e_j\vec e_k\,w\Big)F_2 ,$$
+\Gamma_jw=i\,\vec e_j\,w\,\vec e_yF_1+\frac{1}{2\,m}\Big(k_{t}^{\prime}\,\vec e_j\,w\,\vec e_z+\sum_{k\ne j} k_k\,\vec e_j\vec e_k\,w\Big)F_2 ,$$
 $$g=2\big(1+F_2(0)\big),\qquad a=F_2(0)=\frac{g-2}{2} ,$$
 with the tree-level $g=2$ taken from the one-particle theory. The two vertex structures are the symmetric and antisymmetric parts of a product of two directions, the metric part and the bivector; the Gordon decomposition exhibits the split on shell and was verified with a deviation of order $10^{-15}$ on on-shell states. Of the six bivectors, the three rotations are the single elements $i\vec e_m$, in the informational sector $\mathbb{B}_{\Psi}$, the same sector as the spin, and the three timelike pairs are two-sided insertions, anti-Hermitian, in the material sector $\mathbb{B}_{\Phi}$. The convection structure is central.</p>
 <p>The one-loop representation of $F_2$ reduces at $k^2=0$ to $\int_0^12z\,dz=1$, giving Schwinger's value $a=\alpha/2\pi=1.1614097329\times10^{-3}$; the two-loop coefficient $A_2=197/144+\pi^2/12-(\pi^2/2)\ln2+(3/4)\zeta(3)=-0.328478965579$ was recomputed, and with $A_3=1.181241456$ the prediction $a_e=1.1596522320\times10^{-3}$ matches the measured $1.15965218073\times10^{-3}$ to $5\times10^{-11}$. The trace and contraction identities on which the reduction rests were verified, the contractions at residual $0$ and the trace identity to rounding at every word length from one to four.</p>

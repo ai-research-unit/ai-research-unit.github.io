@@ -172,7 +172,7 @@ $$</p>
 \langle\tilde K_{\Phi}\rangle_{\natural}  = \langle\tilde P_{\Phi},\tilde P_{\Phi}\rangle_{\natural}\frac{k_m^{2}}{m^{2}\,c^{2}}=\frac{k_m^{2}\,\tilde{P}_{\Phi}\,\tilde{P}_{\Phi}^{\natural}}{m^{2}\,c^{2}}= -\frac{\omega^2}{c^2} + k^2
 = k^2\left(1 - \frac{k^2}{4\,k_m^{2}}\right).
 $$</p>
-<p>For the non-relativistic dispersion the wave four-vector is <strong>spacelike</strong> for every $k < 2k_m$, so the free non-relativistic particle never sits on the light cone: its wave four-vector is not a zero divisor. It touches the null cone only at $k = 2k_m$, where $\frac{m\,c\,k}{k_m}= 2mc$ and the non-relativistic dispersion is already outside its domain. The free non-relativistic solutions therefore live strictly inside the invertible (spacelike) region of $\mathbb{B}_{\Phi}$; the null cone, which the last article of this subcategory treats as a physical locus, is reached only by genuinely massless propagation. This is the material-sector counterpart of the fact that the free particle has $E = p^2 c/(2\,m\,c)$ rather than $E = pc$. Here $k_{\Phi}=\frac{k_m\,p}{m\,c}$ is the momentum length.</p>
+<p>For the non-relativistic dispersion the wave four-vector is <strong>spacelike</strong> for every $k < 2k_m$, so the free non-relativistic particle never sits on the light cone: its wave four-vector is not a zero divisor. It touches the null cone only at $k = 2k_m$, where $\frac{m\,c\,k}{k_m}= 2mc$ and the non-relativistic dispersion is already outside its domain. The free non-relativistic solutions therefore live strictly inside the invertible (spacelike) region of $\mathbb{B}_{\Phi}$; the null cone, which the last article of this subcategory treats as a physical locus, is reached only by genuinely massless propagation. This is the material-sector counterpart of the fact that the free particle has $E = p^2 c/(2\,m\,c)$ rather than $E = pc$. Here $k_{\Phi}=\frac{k_m\,p}{m\,c}$ is the momentum wave number.</p>
 <h3 id="normalisation">Normalisation</h3>
 <p>On a box of side $L$ with periodic boundary conditions, the normalised plane waves are</p>
 <p>$$
@@ -239,14 +239,14 @@ $$</p>
 <p>The standard minimum-uncertainty packet is the Gaussian. In one dimension, take the initial amplitude</p>
 <p>$$
 Ξ_0(x) = \left(\frac{1}{2\pi s_0^2}\right)^{1/4}
-\exp\!\left(-\frac{x^2}{4s_0^2} + ik_0 x\right),
+\exp\!\left(-\frac{x^2}{4s_0^2} + ik_{t}^{\prime} x\right),
 \qquad
 |Ξ_0(x)|^2 = \frac{1}{\sqrt{2\pi}\,s_0}\exp\!\left(-\frac{x^2}{2s_0^2}\right),
 $$</p>
 <p>so that $s_0$ is the <strong>density width</strong> (the standard deviation of $|Ξ_0|^2$) and the initial uncertainty product is minimal. The exact free evolution of this packet is</p>
 <p>$$
 Ξ(r_x,r'_t) = \frac{(2\pi s_0^2)^{-1/4}}{\sqrt{A(r'_t)}}\,
-\exp\!\left[-\frac{(r_x - v_0 r'_t)^2}{4s_0^2 A(r'_t)} + ik_0r_x - \frac{i c k_0^2 r'_t}{2\,k_m}\right],
+\exp\!\left[-\frac{(r_x - v_0 r'_t)^2}{4s_0^2 A(r'_t)} + ik_{t}^{\prime}r_x - \frac{i c k_{t}^{\prime\,2} r'_t}{2\,k_m}\right],
 \qquad
 A(r'_t) = 1 + \frac{i r'_t}{2s_0^2\,k_m},
 \qquad
@@ -276,7 +276,7 @@ $$</p>
 \qquad\Longrightarrow\qquad
 (r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z) = c\,\vec k/k_mr'_t = \vec v_g r'_t .
 $$</p>
-<p>The stationary wave vector is the one whose group velocity carries it to the observation point, so the stationary phase is the <strong>classical free trajectory</strong>: the packet centre moves uniformly at $\vec v_g = \vec p/m$. This is the free-particle case of the general semiclassical statement that the phase of the wave function at a point is the classical action accumulated along the trajectory reaching it. For a packet of mean momentum $\frac{m\,c\,k_{0}}{k_m}$, the phase at the centre is $\frac{c\,k_{0}^{2}\,r'_{t}}{2\,k_m}$ up to the $ik_0x$ term, which is the classical action $S_{\mathrm{cl}} = p_0^2r'_t/2m$; the exact Gaussian envelope above carries precisely this phase, as the term $-\frac{c\,i\,k_{0}^{2}\,r'_{t}}{2\,k_m}$ in $Ξ(r_x,r'_t)$ shows.</p>
+<p>The stationary wave vector is the one whose group velocity carries it to the observation point, so the stationary phase is the <strong>classical free trajectory</strong>: the packet centre moves uniformly at $\vec v_g = \vec p/m$. This is the free-particle case of the general semiclassical statement that the phase of the wave function at a point is the classical action accumulated along the trajectory reaching it. For a packet of mean momentum $\frac{m\,c\,k_{0}}{k_m}$, the phase at the centre is $\frac{c\,k_{0}^{2}\,r'_{t}}{2\,k_m}$ up to the $ik_{t}^{\prime}x$ term, which is the classical action $S_{\mathrm{cl}} = p_0^2r'_t/2m$; the exact Gaussian envelope above carries precisely this phase, as the term $-\frac{c\,i\,k_{0}^{2}\,r'_{t}}{2\,k_m}$ in $Ξ(r_x,r'_t)$ shows.</p>
 <h2 id="the-free-propagator">The Free Propagator</h2>
 <h3 id="the-kernel-from-the-momentum-integral">The kernel from the momentum integral</h3>
 <p>The free propagator is the inverse Fourier transform of the free phase,</p>

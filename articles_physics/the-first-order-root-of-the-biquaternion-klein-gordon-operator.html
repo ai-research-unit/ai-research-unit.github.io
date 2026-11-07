@@ -118,19 +118,19 @@ $$</p>
 \tilde\nabla^{\natural}\tilde\nabla=\tilde\nabla\tilde\nabla^{\natural}=\Box .
 $$</p>
 <h3 id="the-symbol-and-the-mass-shell">The symbol and the mass shell</h3>
-<p>On a plane wave $e^{i(k_0x_0-\vec k\cdot\vec r)}$ every derivative is a multiple of the wave. The substitution is $\partial/\partial R_t\mapsto k_0$ and $\partial/\partial R_k\mapsto-ik_k$, so the gradient becomes one fixed element of the algebra,</p>
+<p>On a plane wave $e^{i(k_{t}^{\prime}x_0-\vec k\cdot\vec r)}$ every derivative is a multiple of the wave. The substitution is $\partial/\partial R_t\mapsto k_{t}^{\prime}$ and $\partial/\partial R_k\mapsto-ik_k$, so the gradient becomes one fixed element of the algebra,</p>
 <p>$$
-\tilde K=k_0-i\vec k=k_0-i\sum_k\vec e_k k_k,
+\tilde K=k_{t}^{\prime}-i\vec k=k_{t}^{\prime}-i\sum_k\vec e_k k_k,
 \qquad
-\tilde K^{\natural}\tilde K=\tilde K\tilde K^{\natural}=k_0^2-\lvert\vec k\rvert^2 ,
+\tilde K^{\natural}\tilde K=\tilde K\tilde K^{\natural}=k_{t}^{\prime\,2}-\lvert\vec k\rvert^2 ,
 $$</p>
 <p>and the second identity is the symbol of $\Box$. The mass shell is the level set</p>
 <p>$$
-k_0^2-\lvert\vec k\rvert^2=k_m^{2}
+k_{t}^{\prime\,2}-\lvert\vec k\rvert^2=k_m^{2}
 \quad\Longleftrightarrow\quad
 E^2=\vec p^{\,2}c^2+m^2c^4 ,
 $$</p>
-<p>with $k_0=k_{t}^{\prime}$ and $\vec k=\vec p\,\frac{k_m}{m\,c}$. Here $k_{\Phi}=\frac{k_m\,p}{m\,c}$ and $k_{t}^{\prime}=E/(\frac{m\,c^{2}}{k_m})$ are the momentum and energy lengths.</p>
+<p>with $\vec k=\vec p\,\frac{k_m}{m\,c}$. Here $k_{\Phi}=\frac{k_m\,p}{m\,c}$ and $k_{t}^{\prime}=E/(\frac{m\,c^{2}}{k_m})$ are the momentum and energy wave numbers.</p>
 <p>The symbol of $\Box$ is the interval of the wave covector, and the mass shell is that symbol set to $k_m^{2}$. The symbol of the gradient is a zero divisor on exactly the same set: left multiplication by $\tilde K$ is invertible off the cone and has rank two on it. The equation $\tilde\nabla\tilde{Ξ}=0$ therefore has a nonzero plane-wave solution exactly where the massless Klein–Gordon equation does, and it halves the solution space there, as §<em>What the Root Does Not Carry</em> records.</p>
 <h2 id="the-factorisation">The Factorisation</h2>
 <h3 id="the-two-factors">The two factors</h3>
@@ -229,9 +229,9 @@ $$</p>
 <p>On a plane wave the symbol of $\mathbb{D}$, written $\mathbb{D}(\tilde K)$, is the block matrix with $\ell_{\tilde K}$ and $\ell_{\tilde K^{\natural}}$ off the diagonal, where $\ell_M$ is left multiplication by $M$, and its determinant is</p>
 <p>$$
 \det\left(\mathbb{D}(\tilde K)-k_m\right)
-=\left(k_0^2-\lvert\vec k\rvert^2-k_m^{2}\right)^4 ,
+=\left(k_{t}^{\prime\,2}-\lvert\vec k\rvert^2-k_m^{2}\right)^4 ,
 $$</p>
-<p>the fourth power of the symbol of $\Box-k_m^{2}$: eliminating one block leaves the Schur complement $1/k_m\left(k_0^2-\lvert\vec k\rvert^2-k_m^{2}\right)$ times the four-dimensional identity.</p>
+<p>the fourth power of the symbol of $\Box-k_m^{2}$: eliminating one block leaves the Schur complement $1/k_m\left(k_{t}^{\prime\,2}-\lvert\vec k\rvert^2-k_m^{2}\right)$ times the four-dimensional identity.</p>
 <p>The determinant is a product of eigenvalues, and it is not a square root. A determinant identity says that a power of the scalar symbol is the determinant of a first-order operator; a root needs one first-order operator whose square is the scalar operator, and the power four is the evidence that this operator lives on the doubled carrier. The vanishing is a consistency check on the factorisation, and not a construction of a single root.</p>
 <h2 id="what-the-root-does-not-carry">What the Root Does Not Carry</h2>
 <p>The classification is a statement of form, and its boundaries are part of the result.</p>
@@ -256,11 +256,11 @@ $$</p>
 </thead>
 <tbody>
 <tr>
-<td>$\tilde K^{\natural}\tilde K-(k_0^2-\lvert\vec k\rvert^2)e_t$ on $100$ random wave covectors</td>
+<td>$\tilde K^{\natural}\tilde K-(k_{t}^{\prime\,2}-\lvert\vec k\rvert^2)e_t$ on $100$ random wave covectors</td>
 <td>$8.9\times10^{-16}$</td>
 </tr>
 <tr>
-<td>the symbol of the square, $\tilde K^2-\left(k_0^2+\lvert\vec k\rvert^2\right)e_t+2ik_0\vec k$, on $100$ random wave covectors</td>
+<td>the symbol of the square, $\tilde K^2-\left(k_{t}^{\prime\,2}+\lvert\vec k\rvert^2\right)e_t+2ik_{t}^{\prime}\vec k$, on $100$ random wave covectors</td>
 <td>$1.8\times10^{-15}$</td>
 </tr>
 <tr>
@@ -280,7 +280,7 @@ $$</p>
 <td>kernel dimension $0$</td>
 </tr>
 <tr>
-<td>$\det\ell_{\tilde K}-(k_0^2-\lvert\vec k\rvert^2)^2$ on $100$ random wave covectors</td>
+<td>$\det\ell_{\tilde K}-(k_{t}^{\prime\,2}-\lvert\vec k\rvert^2)^2$ on $100$ random wave covectors</td>
 <td>$5.7\times10^{-14}$</td>
 </tr>
 <tr>
@@ -373,7 +373,7 @@ $$</p>
 <td>The pseudoscalar of the algebra, $\omega^2=-e_t$</td>
 </tr>
 <tr>
-<td>$\tilde K=k_0-i\vec k$</td>
+<td>$\tilde K=k_{t}^{\prime}-i\vec k$</td>
 <td>The symbol of the gradient, an element of $\mathbb{B}$</td>
 </tr>
 <tr>
