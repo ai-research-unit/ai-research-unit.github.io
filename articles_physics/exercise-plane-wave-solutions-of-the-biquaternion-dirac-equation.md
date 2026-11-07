@@ -261,10 +261,10 @@ So the labels are locked to the members: **the field annihilated by $\tilde\nabl
 **The position-space reading.** On the material sector the free member reads
 
 $$
--\frac{i}{c}\,e_t\frac{\partial\tilde{Ξ}_{\mathrm{sp}}}{\partial r'_t}+\sum_k\vec e_k\frac{\partial\tilde{Ξ}_{\mathrm{sp}}}{\partial R_k}=0 .
+-i\,e_t\frac{\partial\tilde{Ξ}_{\mathrm{sp}}}{\partial r'_t}+\sum_k\vec e_k\frac{\partial\tilde{Ξ}_{\mathrm{sp}}}{\partial R_k}=0 .
 $$
 
-In natural units the same line is read for $\partial\tilde{Ξ}_{\mathrm{sp}}/\partial r'_t$: with $c=1$,
+The same line is read for $\partial\tilde{Ξ}_{\mathrm{sp}}/\partial r'_t$:
 
 $$
 \frac{\partial\tilde{Ξ}_{\mathrm{sp}}}{\partial r'_t}=-i\sum_k\vec e_k\frac{\partial\tilde{Ξ}_{\mathrm{sp}}}{\partial R_k},

@@ -380,7 +380,7 @@ $$
 **On the material sector** the product is read with $\partial/\partial R_t=-i\,\partial/\partial r'_t$ and the physical gradient, so the conjugated field keeps its coefficients and only the factors of the derivatives change:
 
 $$
-\tilde\nabla\tilde Q_{\mathrm f}^{*}\big|_{\mathbb{B}_{\Phi}}=\Bigl(-i\frac{\partial\bar Q_{\mathrm{f}t}}{\partial r'_t}+\nabla\cdot\overline{\vec Q_{\mathrm f}}\Bigr)e_t+\frac{i}{c}\frac{\partial\overline{\vec Q_{\mathrm f}}}{\partial r'_t}+\nabla\bar Q_{\mathrm{f}t}-\nabla\times\overline{\vec Q_{\mathrm f}} .
+\tilde\nabla\tilde Q_{\mathrm f}^{*}\big|_{\mathbb{B}_{\Phi}}=\Bigl(-i\frac{\partial\bar Q_{\mathrm{f}t}}{\partial r'_t}+\nabla\cdot\overline{\vec Q_{\mathrm f}}\Bigr)e_t+i\frac{\partial\overline{\vec Q_{\mathrm f}}}{\partial r'_t}+\nabla\bar Q_{\mathrm{f}t}-\nabla\times\overline{\vec Q_{\mathrm f}} .
 $$
 
 Two signs have moved relative to the plain product, and both for one reason: the conjugation reversed the sign of the vector part of the field before any derivative met it, so the vector term of the scalar slot carries a plus, and the time derivative of the vector slot carries a plus as well. **On the informational sector** the same product is read with $\partial/\partial R_t=\partial/\partial r_t$ and $-i$ on the three space derivatives:
@@ -444,7 +444,7 @@ $$
 **On the material sector** the product is read with $\partial/\partial R_t=-i\,\partial/\partial r'_t$ and the physical gradient, so that
 
 $$
-\tilde\nabla^{\natural}\tilde Q_{\mathrm f}^{*}\big|_{\mathbb{B}_{\Phi}}=\Bigl(-i\frac{\partial\bar Q_{\mathrm{f}t}}{\partial r'_t}-\nabla\cdot\overline{\vec Q_{\mathrm f}}\Bigr)e_t+\frac{i}{c}\frac{\partial\overline{\vec Q_{\mathrm f}}}{\partial r'_t}-\nabla\bar Q_{\mathrm{f}t}+\nabla\times\overline{\vec Q_{\mathrm f}} ,
+\tilde\nabla^{\natural}\tilde Q_{\mathrm f}^{*}\big|_{\mathbb{B}_{\Phi}}=\Bigl(-i\frac{\partial\bar Q_{\mathrm{f}t}}{\partial r'_t}-\nabla\cdot\overline{\vec Q_{\mathrm f}}\Bigr)e_t+i\frac{\partial\overline{\vec Q_{\mathrm f}}}{\partial r'_t}-\nabla\bar Q_{\mathrm{f}t}+\nabla\times\overline{\vec Q_{\mathrm f}} ,
 $$
 
 with the divergence and the gradient carrying a minus where the Hermitian product carries a plus. **On the informational sector** the same product is read with $\partial/\partial R_t=\partial/\partial r_t$ and $-i$ on the three space derivatives:

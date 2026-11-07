@@ -55,7 +55,7 @@ The local speed of light $c$ is the factor that controls propagation in the medi
 The source fields $\rho$ and $\vec J$ are not independent: they satisfy the **charge conservation law**
 
 $$
-\mathrm{div}\,\vec J + \frac{\partial \rho}{\partial r'_t} = 0,
+\mathrm{div}\,\vec J + c\,\frac{\partial \rho}{\partial r'_t} = 0,
 $$
 
 which follows from taking the divergence of the Ampère–Maxwell law and substituting Gauss's law. This constraint is the integrability condition for the Maxwell system, and it will reappear below as the constraint on the biquaternionic source $\sqrt{\mu}\,\tilde{J}_{\Phi}$.
@@ -175,7 +175,7 @@ $$
 F_{\mu\nu} = \partial/\partial R_\mu A_\nu - \partial/\partial R_\nu A_\mu ,
 $$
 
-antisymmetric, $F_{\mu\nu}=-F_{\nu\mu}$, with $F_{0k}=-(i/c)(\partial A_k/\partial r'_t+\partial \xi_{\mathrm{scp}}/\partial r_k)=iE_k/c$ and $F_{jk}=\epsilon_{jkl}B_l$. The six independent components are the six of $\vec F$: three in the imaginary electric part and three in the real magnetic part.
+antisymmetric, $F_{\mu\nu}=-F_{\nu\mu}$, with $F_{0k}=-(i/c)(c\,\partial A_k/\partial r'_t+\partial \xi_{\mathrm{scp}}/\partial r_k)=iE_k/c$ and $F_{jk}=\epsilon_{jkl}B_l$. The six independent components are the six of $\vec F$: three in the imaginary electric part and three in the real magnetic part.
 
 The complex combination $\vec F = i\sqrt{\epsilon}\,\vec E - \sqrt{\mu}\,\vec H$ has a long history. It was introduced by **Ludwik Silberstein** in 1907, in his work on the electromagnetic field as a complex three-vector, and is now known as the **Riemann–Silberstein vector** $\vec N = \vec E + ic\vec B$. The biquaternionic field strength is that vector with one constant phase and one normalisation,
 
@@ -201,21 +201,21 @@ $$
 
 The factor $\sqrt{\mu}$ is the whole difference between the four-current and the combination $i\rho/\sqrt{\epsilon}\,e_t+\sqrt{\mu}\,\vec J$ that the component equations require, since $\sqrt{\mu}\,ic = i/\sqrt{\epsilon}$ by $c=1/\sqrt{\epsilon\mu}$.
 
-The four-current is not arbitrary: the charge conservation law $\mathrm{div}\,\vec J + \partial/\partial r'_t \rho = 0$ becomes, in biquaternionic form,
+The four-current is not arbitrary: the charge conservation law $\mathrm{div}\,\vec J + c\,\partial/\partial r'_t \rho = 0$ becomes, in biquaternionic form,
 
 $$
 \mathrm{Sc}\!\left(\tilde{\nabla}^{\natural} \tilde J_{\Phi}\right) = 0,
 $$
 
-i.e., the scalar part of $\tilde{\nabla}^{\natural} \tilde J_{\Phi}$ vanishes. In components this is the statement $\partial\rho/\partial r'_t + \mathrm{div}\,\vec J = 0$, because
+i.e., the scalar part of $\tilde{\nabla}^{\natural} \tilde J_{\Phi}$ vanishes. In components this is the statement $c\,\partial\rho/\partial r'_t + \mathrm{div}\,\vec J = 0$, because
 
 $$
 \mathrm{Sc}\bigl(\tilde\nabla^\natural\tilde J_{\Phi}\bigr)=\frac{\partial J_0}{\partial R_t}+\mathrm{div}\,\vec J
 =-i\frac{\partial}{\partial r'_t}\bigl(ic\rho\bigr)+\mathrm{div}\,\vec J
-=\frac{\partial\rho}{\partial r'_t}+\mathrm{div}\,\vec J,
+=c\,\frac{\partial\rho}{\partial r'_t}+\mathrm{div}\,\vec J,
 $$
 
-where the two factors of $i$ again give $i^2=-1$. This is the **integrability condition** for the biquaternionic Maxwell equation $\tilde{\nabla} \tilde{F} = -\sqrt{\mu}\,\tilde J_{\Phi}$, and it is the biquaternionic expression of the conservation of electric charge. That the scalar part is the relevant one follows by applying $\tilde\nabla^\natural$ to the field equation:
+where the two factors of $i$ give $i^2=-1$, leaving the $c$ of the time component of $\tilde J_{\Phi}$ in place. This is the **integrability condition** for the biquaternionic Maxwell equation $\tilde{\nabla} \tilde{F} = -\sqrt{\mu}\,\tilde J_{\Phi}$, and it is the biquaternionic expression of the conservation of electric charge. That the scalar part is the relevant one follows by applying $\tilde\nabla^\natural$ to the field equation:
 
 $$
 \tilde\nabla^\natural\tilde\nabla\tilde F=\Box\tilde F=-\sqrt{\mu}\,\tilde\nabla^\natural\tilde J_{\Phi} .

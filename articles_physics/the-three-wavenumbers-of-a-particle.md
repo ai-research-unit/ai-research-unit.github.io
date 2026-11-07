@@ -2,47 +2,78 @@
 
 ## Introduction
 
-Every wave number in this series comes from one rule: divide a momentum by $\frac{m\,c}{k_m}$. A particle of mass $m$ supplies three momenta, and each gives a wave number:
+This article has one object and one operation. The object is the four-momentum of a particle of mass $m$,
 
 $$
-k_m = \dfrac{mc}{\hbar},
+\tilde P_{\Phi}=i\,p_{t}^{\prime}\,e_{t}+\vec p_{\Phi}=i\,\frac{E}{c}\,e_{t}+\gamma m\,\vec v,
+$$
+
+and the operation is its division by $\hbar$. Define
+
+$$
+\tilde K_{\Phi}:=\frac{\tilde P_{\Phi}}{\hbar}.
+$$
+
+Nothing else is assumed. The three wave numbers of the title are the coordinates of $\tilde K_{\Phi}$, and they are deduced from that division rather than postulated beside it.
+
+**The deduction.** $\hbar$ is a real central scalar, so it divides every coefficient of the element and touches no basis unit. Distributing it over the four units gives
+
+$$
+\tilde K_{\Phi}=\frac{1}{\hbar}\left(i\,p_{t}^{\prime}\,e_{t}+\vec p_{\Phi}\right)
+=i\,\frac{p_{t}^{\prime}}{\hbar}\,e_{t}+\frac{\vec p_{\Phi}}{\hbar},
+$$
+
+and writing the same element as $\tilde K_{\Phi}=i\,k_{t}^{\prime}e_{t}+\vec k_{\Phi}$ makes the coefficients of the two displays equal term by term:
+
+$$
+\hbar\,k_{t}^{\prime}=p_{t}^{\prime},
 \qquad
-k_{\Phi} = \dfrac{p}{\hbar},
+\hbar\,\vec k_{\Phi}=\vec p_{\Phi},
+\qquad\text{that is}\qquad
+k_{t}^{\prime}=\frac{p_{t}^{\prime}}{\hbar}=\frac{E}{\hbar\,c},
 \qquad
-k_{t}^{\prime} = \dfrac{E}{\hbar c}.
+\vec k_{\Phi}=\frac{\vec p_{\Phi}}{\hbar}=\frac{\gamma m}{\hbar}\,\vec v .
 $$
 
-The first belongs to the particle alone: it holds at rest, in every state, and in every frame, because $m$, $\frac{m\,c}{k_m}$ and $c$ are fixed. The other two belong to the state, and they move when the particle moves.
+That matching is the whole deduction: the coordinates of the quotient are the coordinates of the momentum, divided by $\hbar$, in the same slot. The vector part has a modulus, $k_{\Phi}:=\lvert\vec k_{\Phi}\rvert$, and the element has a natural norm, $-\langle\tilde K_{\Phi}\rangle_{\natural}=k_m^{2}$ with $k_m=m\,c/\hbar$ — so the third number is read off the quotient too, as the value its two coordinates must satisfy.
 
-The three are not independent. The mass shell relates the three momenta, and one division turns that relation into a relation among the three wave numbers:
+**The division changes the unit and nothing else.** $\hbar$ commutes with every coefficient, is fixed by all four involutions, and moves no element from one sector into another. The momentum is anti-Hermitian, so the quotient is anti-Hermitian, and $\tilde K_{\Phi}$ stays in $\mathbb{B}_{\Phi}$ where $\tilde P_{\Phi}$ was. What changes is the dimension, from $\mathsf{M}\,\mathsf{L}\,\mathsf{T}^{-1}$ to $\mathsf{L}^{-1}$.
+
+The two coordinates belong to the state and move when the particle moves. The norm does not: it is built from $m$, $\hbar$ and $c$ alone, so it holds at rest, in every state and in every frame.
+
+The three are not independent. The momentum is on shell, $\tilde P_{\Phi}\tilde P_{\Phi}^{\natural}=-m^{2}c^{2}$, and dividing that line by $\hbar^{2}$ turns it into the norm of $\tilde K_{\Phi}$, which read in coefficients is a relation among the three wave numbers:
 
 $$
-k_{t}^{\prime\,2} = k_{\Phi}^{2} + k_m^{2} .
+\tilde K_{\Phi}\tilde K_{\Phi}^{\natural}=-k_{t}^{\prime\,2}+\vec k_{\Phi}^{\,2}=-k_m^{2},
+\qquad\text{that is}\qquad
+k_{t}^{\prime\,2}=k_{\Phi}^{2}+k_m^{2}.
 $$
 
 That relation is the content of this article. The three wave numbers form a right triangle whose hypotenuse is $k_{t}^{\prime}$, the triangle is the energy–momentum triangle, and each of the three answers a different question about the same particle.
 
-**Why wave numbers rather than wavelengths.** A derivative carries an inverse length, so it multiplies by a wave number and divides by a wavelength. A biquaternionic gradient acts on a plane wave as multiplication by $k$, the mass term of the operator is a wave number, and the exponent of the field is a four-vector of wave numbers. In wavelengths every one of those statements has to be inverted before it can be written. The reciprocal length is the form in which the equations are already stated, which is why it is the form with names here.
+**Why wave numbers rather than wavelengths.** A derivative carries an inverse length, so it multiplies by a wave number and divides by a wavelength. A biquaternionic gradient acts on a plane wave as left multiplication by $i\tilde K_{\Phi}$, the mass term of the operator is a wave number, and the exponent of the field is the scalar part $\mathrm{Sc}(\tilde K_{\Phi}\tilde R_{\Phi}^{\natural})$. In wavelengths every one of those statements has to be inverted before it can be written. The reciprocal length is the form in which the equations are already stated, which is why it is the form with names here.
 
-**Conservation is a sum, and that settles it.** Energies and momenta add, so wave numbers add:
+**Conservation is a sum, and that settles it.** Energies and momenta add, so the coefficients add, and the element adds:
 
 $$
-k_{t}^{\prime} = \sum_i k_{t,i}^{\prime},
+\tilde K_{\Phi}=\sum_i\tilde K_{\Phi,i},
 \qquad
-\vec k_{\Phi} = \sum_i \vec k_{\Phi}_i ,
+k_{t}^{\prime}=\sum_i k_{t,i}^{\prime},
+\qquad
+\vec k_{\Phi}=\sum_i\vec k_{\Phi,i},
 $$
 
-for the parts of a state and for the products of a collision. Wavelengths do not add: the wavelength of a sum is the reciprocal of a sum of reciprocals. A conservation law written in wavelengths is a statement about harmonics, and a conservation law written in wave numbers is a statement about addition. That is the whole reason a quantum field is discussed in wave numbers.
+for the parts of a state and for the products of a collision. One sum replaces three, because the three coefficients travel in one element. Wavelengths do not add: the wavelength of a sum is the reciprocal of a sum of reciprocals. A conservation law written in wavelengths is a statement about harmonics, and a conservation law written in wave numbers is a statement about addition. That is the whole reason a quantum field is discussed in wave numbers.
 
-**The three questions.** The mass wave number answers *how close can the particle be brought to a point*. It is the wave number at which the rest energy is the energy of the probe, so it is where a one-particle description stops being possible and where the force the particle carries runs out. The momentum wave number answers *how fast does the state wind*. It is the angle of phase turned per unit distance, so it fixes the spacing of interference fringes, the width of the narrowest state of that momentum, and the circumference of a bound orbit in radians. The energy wave number answers *how fast does the clock run*. It is the temporal component of the wave four-vector, so it fixes the rate of every phase and the reach of any process that borrows a given energy.
+**The three questions.** The mass wave number answers *how close can the particle be brought to a point*. It is the wave number at which the rest energy is the energy of the probe, so it is where a one-particle description stops being possible and where the force the particle carries runs out. The momentum wave number answers *how fast does the state wind*. It is the modulus of the vector part of $\tilde K_{\Phi}$, the angle of phase turned per unit distance, so it fixes the spacing of interference fringes, the width of the narrowest state of that momentum, and the circumference of a bound orbit in radians. The energy wave number answers *how fast does the clock run*. It is the temporal coefficient of the same element, so it fixes the rate of every phase and the reach of any process that borrows a given energy.
 
 **What is new here and what is not.** The definitions, the triangle and the values are bookkeeping. The physical readings are the subject: the rest of the article takes each of the three in turn, and states what it measures, where it enters as a threshold, and which equation of the series carries it.
 
 The article is named for the three wave numbers together because no one of them is enough. The mass wave number alone is the only one the particle carries at rest; the Dirac article of the series writes the coefficient of a mass term and the temporal entry of a parameter as two wave numbers side by side, and a reader who has one of the three without the others cannot tell which of the two is which.
 
-## The Three Definitions
+## Naming the Coordinates
 
-**One rule, three times.** Each wave number is a momentum divided by $\frac{m\,c}{k_m}$. The mass supplies the momentum $mc$, the state supplies $p$, and the energy supplies $E/c$. The last is the one that is easy to miss: an energy over $c$ is a momentum, so $E/(\frac{m\,c^{2}}{k_m})$ is a wave number by the same rule as the other two and not by a second one.
+**Nothing is defined twice.** The deduction gave each number one source and no other. The temporal coefficient of $\tilde K_{\Phi}$ is the temporal coefficient of $\tilde P_{\Phi}$ divided by $\hbar$; the vector part of $\tilde K_{\Phi}$ is the vector part of $\tilde P_{\Phi}$ divided by $\hbar$; the mass wave number is the norm of $\tilde K_{\Phi}$. There is no second rule for the energy, and none is needed: $E/c$ is already a coordinate of the momentum, so $E/(\hbar\,c)$ is the corresponding coordinate of the quotient, obtained by the same division. An energy over $c$ is a momentum, and that is the whole of the step that is easy to miss.
 
 **The dimensions.** All three are inverse lengths, and the check is one line:
 
@@ -51,27 +82,94 @@ $$
 =\frac{\mathsf{M}\mathsf{L}\mathsf{T}^{-1}}{\mathsf{M}\mathsf{L}^2\mathsf{T}^{-1}}=\mathsf{L}^{-1},
 $$
 
-since a momentum carries $\mathsf{M}\mathsf{L}\mathsf{T}^{-1}$ and $\frac{m\,c}{k_m}$ carries $\mathsf{M}\mathsf{L}^2\mathsf{T}^{-1}$, the unit of an action.
+since a momentum carries $\mathsf{M}\mathsf{L}\mathsf{T}^{-1}$ and $\hbar$ carries $\mathsf{M}\mathsf{L}^2\mathsf{T}^{-1}$, the unit of an action.
 
-**Why $\frac{m\,c}{k_m}$ and not $h$.** The series uses the reduced wave number throughout, the number of radians per unit length. The ordinary wave number is $2\pi k$, and the ordinary de Broglie wavelength is $2\pi/k_{\Phi}$; the factor $2\pi$ is the whole difference. The reduced forms are the ones that enter the exponents, the derivatives and the operator coefficients, which is why they are the ones with names here. A text that quotes $h/p$ gives a wavelength, and that wavelength must be divided by $2\pi$ and inverted before it is compared with a wave number of this series.
+**Why $\hbar$ and not $h$.** The series uses the reduced wave number throughout, the number of radians per unit length. The ordinary wave number is $2\pi k_{\Phi}$, and the ordinary de Broglie wavelength is $2\pi/k_{\Phi}$; the factor $2\pi$ is the whole difference. The reduced forms are the ones that enter the exponents, the derivatives and the operator coefficients, which is why they are the ones with names here. A text that quotes $h/p$ gives a wavelength, and that wavelength must be divided by $2\pi$ and inverted before it is compared with a wave number of this series.
 
-**The reduced form is the angle per unit length.** That is what the missing $2\pi$ means, and it is why the readings below are phrased per radian rather than per turn: a phase advances by one radian over a distance $1/k$, and by a full turn over $2\pi/k$. Every comparison with a measured fringe spacing, a spectrometer reading or a quoted wavelength carries the $2\pi$ back.
+**The reduced form is the angle per unit length.** That is what the missing $2\pi$ means, and it is why the readings below are phrased per radian rather than per turn: a phase advances by one radian over a distance $1/k_{\Phi}$, and by a full turn over $2\pi/k_{\Phi}$. Every comparison with a measured fringe spacing, a spectrometer reading or a quoted wavelength carries the $2\pi$ back.
 
-**Which is which.** Three subscripts, three inputs, and no fourth symbol. The subscript names the quantity the wave number is computed from: $m$ for the mass, $\mathrm{mo}$ for the momentum, $E$ for the total energy. The label $\mathrm{mo}$ is written to keep the momentum apart from the spatial index $k$, which the corpus already uses for the direction of a basis vector; a bare $k$ is never a wave number.
+**Which is which.** Three labels, and no bare $k$. Two of the labels name the slot the coefficient fills in $\tilde K_{\Phi}$: the sector letter $\Phi$ on the vector part, $\vec k_{\Phi}$, and the primed $t$ on the temporal one, $k_{t}^{\prime}$. The third names the norm, $k_m$ from the mass. The sector letter is written rather than the letter of the quantity because the momentum already writes its components $p_k$, and $k_p$ beside $p_k$ would be one transposition apart in running text. The prime on the temporal coefficient is the mark the corpus puts on a temporal slot, as on $p_{t}^{\prime}$ and $r_{t}^{\prime}$, and it is kept because the division by $\hbar\,c$ converts a quantity and not a coordinate.
 
 **The particle enters through its mass.** A wave number is never labelled by the name of a particle. The species enters as a subscript on the mass itself, $k_{m_e}$ for the electron and $k_{m_p}$ for the proton, so that the family reads as one scheme: the subscript names the input, and the input of one species is the mass of that species.
 
 **One is invariant and two are not.** $k_m$ is built from three constants, so no boost and no change of state touches it. $k_{\Phi}$ and $k_{t}^{\prime}$ are built from the momentum and the energy of the state, so both move when the particle is accelerated. A statement about $k_m$ is a statement about the species; a statement about $k_{\Phi}$ or $k_{t}^{\prime}$ is a statement about one preparation of one particle.
 
+## The Wave-Number Biquaternion
+
+**The momentum, written as one element.** The four-momentum of a particle of mass $m$ is the mass times the four-velocity, $\tilde P_{\Phi}=m\tilde V_{\Phi}$, and in coefficients
+
+$$
+\tilde P_{\Phi}=i\,p_{t}^{\prime}\,e_{t}+\vec p_{\Phi}=i\,\frac{E}{c}\,e_{t}+\gamma m\,\vec v,
+\qquad
+p_{t}^{\prime}=\frac{E}{c},
+\qquad
+\vec p_{\Phi}=\gamma m\,\vec v .
+$$
+
+Its norm is the mass shell, $\langle\tilde P_{\Phi}\rangle_{\natural}=\tilde P_{\Phi}\tilde P_{\Phi}^{\natural}=-m^{2}c^{2}$, and it is the object the Dirac, Klein–Gordon and Maxwell articles of the series carry.
+
+**The quotient, in the coefficient the series carries.** The same division written with the coefficient of this corpus, since $\frac{k_m}{m\,c}=\frac{1}{\hbar}$ is one over an action:
+
+$$
+\tilde K_{\Phi}=\frac{\tilde P_{\Phi}}{\hbar}
+=\frac{k_m}{m\,c}\,\tilde P_{\Phi}
+=i\,k_{t}^{\prime}\,e_{t}+\vec k_{\Phi}.
+$$
+
+The division is legitimate term by term, and the reason is one line: $\hbar$ is real and central, so it passes unchanged through the coefficient bar, the natural involution and the star, and it therefore moves no element out of its subspace. The momentum is anti-Hermitian, $\tilde P_{\Phi}^{*}=-\tilde P_{\Phi}$; multiplying by the real central $1/\hbar$ preserves that, so $\tilde K_{\Phi}^{*}=-\tilde K_{\Phi}$ and $\tilde K_{\Phi}\in\mathbb{B}_{\Phi}$.
+
+**The check of the equality.** Two routes must agree, and they do. Divide the norm of the momentum:
+
+$$
+\frac{\langle\tilde P_{\Phi}\rangle_{\natural}}{\hbar^{2}}
+=\frac{-m^{2}c^{2}}{\hbar^{2}}
+=-\left(\frac{m\,c}{\hbar}\right)^{2}
+=-k_m^{2},
+$$
+
+and expand the norm of the wave-number element in its own coefficients, using $e_{t}^{2}=e_{t}$ and $\vec k_{\Phi}\vec k_{\Phi}^{\natural}=k_{\Phi}^{2}$:
+
+$$
+\tilde K_{\Phi}\tilde K_{\Phi}^{\natural}
+=\left(ik_{t}^{\prime}\right)^{2}e_{t}+\vec k_{\Phi}\vec k_{\Phi}^{\natural}
+=-k_{t}^{\prime\,2}+k_{\Phi}^{2}.
+$$
+
+The two routes are the same number because $\tilde K_{\Phi}=\tilde P_{\Phi}/\hbar$ and $\hbar$ is fixed by the bar, so
+
+$$
+-k_{t}^{\prime\,2}+k_{\Phi}^{2}=-k_m^{2},
+\qquad\text{that is}\qquad
+k_{t}^{\prime\,2}=k_{\Phi}^{2}+k_m^{2}.
+$$
+
+The first line is the norm of one element and the second is the mass shell divided by $\hbar^{2}c^{2}$; the two are one statement, and the equality is what the rest of the article reads.
+
+**The arithmetic, once.** For the electron at $1\ \mathrm{MeV}$ the three numbers of §*The Values* are $k_{t}^{\prime}=5.0677\times10^{12}$, $k_{\Phi}=4.3561\times10^{12}$ and $k_m=2.5896\times10^{12}\ \mathrm{m^{-1}}$, and in $\mathrm{m^{-2}}$
+
+$$
+-k_{t}^{\prime\,2}+k_{\Phi}^{2}=-2.568\times10^{25}+1.898\times10^{25}=-6.70\times10^{24}=-k_m^{2},
+$$
+
+which is the box, and it is the only numerical check the identity needs.
+
+**What the element is good for.** Three lines, each a place where the three wave numbers enter at once.
+
+- On the plane wave $\tilde{Ξ}_{\mathrm{sp}}=\tilde{Ξ}_{\mathrm{sp},0}\exp\bigl(i\,\mathrm{Sc}(\tilde K_{\Phi}\tilde R_{\Phi}^{\natural})\bigr)$ the exponent is $\mathrm{Sc}(\tilde K_{\Phi}\tilde R_{\Phi}^{\natural})=\vec k_{\Phi}\cdot\vec r_{\Phi}-k_{t}^{\prime}\,r_{t}^{\prime}$, the phase in inverse lengths and in no other unit.
+- The gradient acts by left multiplication by $i\tilde K_{\Phi}$, $\tilde\nabla\tilde{Ξ}_{\mathrm{sp}}=i\tilde K_{\Phi}\tilde{Ξ}_{\mathrm{sp}}$, and the d'Alembertian by $-\tilde K_{\Phi}\tilde K_{\Phi}^{\natural}$, $\Box\tilde{Ξ}_{\mathrm{sp}}=-\tilde K_{\Phi}\tilde K_{\Phi}^{\natural}\tilde{Ξ}_{\mathrm{sp}}=k_m^{2}\tilde{Ξ}_{\mathrm{sp}}$, which is why the massive operator of the series is written $\Box-k_m^{2}$.
+- On the null cone, where $k_m=0$ and $k_{t}^{\prime}=k_{\Phi}$, the element is null and therefore a zero divisor, and the equation $\tilde K_{\Phi}\tilde{Ξ}_{\mathrm{sp},0}=0$ has a two-dimensional kernel there. That is the massless case of §*The Massless Case*, and it exists because the norm has vanished, not because a limit was taken.
+
+**The two objects differ by a division.** $\tilde P_{\Phi}$ is the momentum, in the dimension of a momentum; $\tilde K_{\Phi}$ is the same element in inverse lengths. Every statement in one is a statement in the other after multiplication by $\hbar$, and both are kept because the dynamics is written in the first and the derivative returns the second.
+
 ## What a Wave Number Is
 
-**It is the gradient of the phase.** Write a plane wave as $e^{i(\vec k_{\Phi}\cdot\vec r-\omega t)}$. The spatial entry is the gradient of the phase, $\vec k_{\Phi}=\vec\nabla\phi$, and the temporal entry is the rate of the phase divided by the speed of light, $k_{t}^{\prime}=-(1/c)\,\partial\phi/\partial t$. The two are the same derivative read in space and in time, which is why one element $\tilde K_{\Phi}=ik_{t}^{\prime}e_t+\vec k_{\Phi}$ carries both and why neither entry needs a constant inside the equation.
+**It is the gradient of the phase.** Write a plane wave as $e^{i(\vec k_{\Phi}\cdot\vec r_{\Phi}-\omega\,t)}$. The spatial entry is the gradient of the phase, $\vec k_{\Phi}=\vec\nabla\phi$, and the temporal entry is the rate of the phase divided by the speed of light, $k_{t}^{\prime}=-(1/c)\,\partial\phi/\partial t$. The two are the same derivative read in space and in time, which is why the single element $\tilde K_{\Phi}=ik_{t}^{\prime}e_t+\vec k_{\Phi}$ carries both and why neither entry needs a constant inside the equation.
 
-**It counts radians per unit length.** The phase turns by one radian over a distance $1/k$ and by a full turn over $2\pi/k$. So $k$ is an angle per unit length, and the ordinary wave number, the count of turns per metre, is $k/(2\pi)$. The same counting gives the nodes: consecutive nodal surfaces are $\pi/k$ apart, so $k/\pi$ of them fit in a metre, and a wave of wave number $k$ crossing a chamber of length $L$ puts $kL/\pi$ nodes in it.
+**It counts radians per unit length.** The phase turns by one radian over a distance $1/k_{\Phi}$ and by a full turn over $2\pi/k_{\Phi}$. So a wave number is an angle per unit length, and the ordinary wave number, the count of turns per metre, is $k_{\Phi}/(2\pi)$. The same counting gives the nodes: consecutive nodal surfaces are $\pi/k_{\Phi}$ apart, so $k_{\Phi}/\pi$ of them fit in a metre, and a wave of wave number $k_{\Phi}$ crossing a chamber of length $L$ puts $k_{\Phi}L/\pi$ nodes in it.
 
-**It is a momentum measured in quanta of action.** Since $p=\frac{m\,c\,k}{k_m}$ and $E=\frac{m\,c^{2}\,k_{E}}{k_m}$, a wave number is the momentum, or the energy, with the unit of action divided out. The information is the same and the arithmetic is easier: a sum of momenta becomes a sum of inverse lengths, and no conversion stands between the derivative and its eigenvalue. That is what makes the wave number the natural variable of a quantum field, and the energy the natural variable of a classical one.
+**It is a momentum measured in quanta of action.** Since $\vec p_{\Phi}=\hbar\,\vec k_{\Phi}$ and $E=\hbar\,c\,k_{t}^{\prime}$, a wave number is the momentum, or the energy, with the unit of action divided out. The information is the same and the arithmetic is easier: a sum of momenta becomes a sum of inverse lengths, and no conversion stands between the derivative and its eigenvalue. That is what makes the wave number the natural variable of a quantum field, and the energy the natural variable of a classical one.
 
-**It is what a derivative returns.** The spatial gradient carries an inverse length, so on a plane wave it multiplies by $i\vec k_{\Phi}$; the biquaternionic gradient multiplies by $i\tilde K_{\Phi}$; the d'Alembertian multiplies by $-k_{t}^{\prime\,2}+\vec k_{\Phi}^{\,2}$. A wave number is the eigenvalue of an operator that differentiates, and every coefficient in the field equations of this series is one. A mass term $k_m$ in $\mathbb{D}-k_m$ is the statement that the operator carries the wave number of the particle at rest, and nothing else.
+**It is what a derivative returns.** The spatial gradient carries an inverse length, so on a plane wave it multiplies by $i\vec k_{\Phi}$; the biquaternionic gradient multiplies by $i\tilde K_{\Phi}$; the d'Alembertian multiplies by $-\tilde K_{\Phi}\tilde K_{\Phi}^{\natural}=k_{t}^{\prime\,2}-\vec k_{\Phi}^{\,2}$, which is $k_m^{2}$ on shell. A wave number is the eigenvalue of an operator that differentiates, and every coefficient in the field equations of this series is one. A mass term $k_m$ in $\mathbb{D}-k_m$ is the statement that the operator carries the wave number of the particle at rest, and nothing else.
 
 **Its inverse is a distance, and each of the three distances is a different fact.** A wave number and its reciprocal say the same thing in two ways: the wave number says how fast the phase turns per metre, and the distance says how many metres a radian takes. The inversion is the whole of the translation, and it is worth stating because the two readings are used in different places — the wave number in the equations, the distance in the laboratory. The three of this article invert to three distances, and each distance has a reading of its own: a scale of resolution, a spacing of fringes, and a length that light travels in a time.
 
@@ -88,22 +186,23 @@ since a momentum carries $\mathsf{M}\mathsf{L}\mathsf{T}^{-1}$ and $\frac{m\,c}{
 **The mass shell.** For a free particle,
 
 $$
-E^2 = \vec p^{\,2}c^2 + m^2c^4,
+E^2 = \vec p_{\Phi}^{\,2}c^2 + m^2c^4,
 $$
 
-with $E$ the total energy, the rest energy included, and $\vec p$ the three-momentum.
+with $E$ the total energy, the rest energy included, and $\vec p_{\Phi}$ the three-momentum.
 
-**Divide the temporal term by $\frac{m\,c^{2}}{k_m}$ and the spatial term by $\frac{m\,c}{k_m}$.** Every term is an energy squared, so every term becomes a squared momentum, and each becomes a squared wave number:
+**Divide by $\hbar^{2}c^{2}$.** Every term is an energy squared, so every term becomes a squared momentum and then a squared wave number:
 
-$$\frac{E^2}{(\frac{m\,c^{2}}{k_m})^2} =\frac{\vec p^{\,2}c^{2}}{(\frac{m\,c^{2}}{k_m})^2} +\frac{m^2c^{4}}{(\frac{m\,c^{2}}{k_m})^2},
+$$
+\frac{E^2}{\hbar^{2}c^{2}}=\frac{\vec p_{\Phi}^{\,2}c^{2}}{\hbar^{2}c^{2}}+\frac{m^{2}c^{4}}{\hbar^{2}c^{2}},
 \qquad\text{that is}\qquad
-\left(\frac{k_m\,E}{m\,c^{2}}\right)^{2} = \left(\frac{k_m\,p}{m\,c}\right)^{2} + \left(k_m\right)^{2} .
+k_{t}^{\prime\,2}=k_{\Phi}^{2}+k_m^{2}.
 $$
 
-**Read each bracket as a wave number.** Each is an inverse length, so the line becomes
+**The same line is the norm of $\tilde K_{\Phi}$.** The division is the one of §*The Wave-Number Biquaternion*, read coefficient by coefficient: the temporal term gives $-k_{t}^{\prime\,2}$, the spatial term $+\vec k_{\Phi}^{\,2}$, the mass term $-k_m^{2}$, and their sum is the norm. So
 
 $$
-\boxed{\;k_{t}^{\prime\,2} = k_{\Phi}^{2} + k_m^{2}\;}
+\boxed{\;\tilde K_{\Phi}\tilde K_{\Phi}^{\natural}=-k_{t}^{\prime\,2}+\vec k_{\Phi}^{\,2}=-k_m^{2}\;}
 $$
 
 That box is the whole geometry of the three wave numbers, and it is the mass shell itself in other units. It is the Pythagorean relation of the three, so the triangle it describes is right angled at the mass side.
@@ -130,13 +229,15 @@ The triangle is the energy–momentum triangle, whose side ratios are the kinema
 
 **Which of the two moving wave numbers is larger depends on the speed.** Their ratio is $k_{\Phi}/k_m=\gamma\beta$. They are equal at $\beta=1/\sqrt{2}$, the momentum wave number is the larger above that speed and the smaller below it. At the speeds of ordinary matter the momentum wave number is enormously the smaller, and at the energies of a collider it is comparable with the energy wave number and far above the mass one.
 
-**The same relation inside the four-vector.** Write the four-wave-number as $\tilde K_{\Phi}=i k_{t}^{\prime}e_t+\vec k_{\Phi}$, with $k_{t}^{\prime}=\omega/c$ and $\vec k_{\Phi}=\frac{k_m\,\vec p}{m\,c}$. Its natural norm is
+**The same relation, read on the four-momentum.** The element carries the whole statement once, and the two norms are one line apart. The norm of the momentum is $\tilde P_{\Phi}\tilde P_{\Phi}^{\natural}=-m^{2}c^{2}$; since $\tilde P_{\Phi}=\hbar\tilde K_{\Phi}$ and $\hbar$ is fixed by the bar, its norm is $\hbar^{2}\tilde K_{\Phi}\tilde K_{\Phi}^{\natural}$, so the two lines are the same statement divided by $\hbar^{2}$:
 
 $$
-\tilde K_{\Phi}\tilde K_{\Phi}^{\natural} = -k_{t}^{\prime\,2}+\vec k_{\Phi}^{\,2} = -k_m^{2},
+\tilde P_{\Phi}\tilde P_{\Phi}^{\natural}=-m^{2}c^{2}
+\qquad\Longleftrightarrow\qquad
+\tilde K_{\Phi}\tilde K_{\Phi}^{\natural}=-k_{t}^{\prime\,2}+\vec k_{\Phi}^{\,2}=-k_m^{2}.
 $$
 
-which is the box with the sign of the Minkowski form. The four-momentum is $\frac{m\,c}{k_m}$ times the same element, $\tilde P_{\Phi}=i(E/c)e_t+\vec p=\frac{m\,c\,\tilde{K}_{\mathrm{wk}}}{k_m}$, and its norm is $\tilde P_{\Phi}\tilde P_{\Phi}^{\natural}=-m^{2}\,c^{2}$, which is the statement $p^2=\frac{m^{2}\,c^{2}}{k_m^{2}\,\lambda_{m}^{2}}$ of the canonical convention. The two elements differ by one multiplication by $\frac{m\,c}{k_m}$, and that multiplication is the whole of the dictionary between them.
+The second is the box with the sign of the Minkowski form, and the multiplication by $\hbar=\frac{m\,c}{k_m}$ is the whole of the dictionary between the two objects: it is the same multiplication that turns the momentum $p$ into the wave number $k_{\Phi}$ and the energy $E$ into $k_{t}^{\prime}$.
 
 ## The Values
 
@@ -193,6 +294,7 @@ The rule of the series is that a coefficient of a differential operator is an in
 | the ordinary Compton wavelength | $2\pi/k_m$ | the mass |
 | interference and diffraction | $k_{\Phi}$ | the momentum |
 | the temporal phase of a plane wave | $k_{t}^{\prime}$ | the energy |
+| the plane-wave exponent | $\mathrm{Sc}(\tilde K_{\Phi}\tilde R_{\Phi}^{\natural})$ | the three together |
 
 **The identity behind the middle rows.** The harmonic parameter of *The Dirac Equation in Biquaternionic Form* is
 
@@ -396,10 +498,10 @@ to five figures, the two differing only in the fifth because the binding energy 
 
 **It is the wave number of the preparation.** Two electrons of the same mass, one at $1\ \mathrm{MeV}$ and one at $1\ \mathrm{TeV}$, have the same $k_m$ and momentum wave numbers that differ by six orders of magnitude. Nothing about $k_{\Phi}$ can be tabulated for a species. It is quoted for a beam, a trap, a thermal ensemble or a bound orbit, and it changes when any of those changes.
 
-**It is the reciprocal of the momentum wavelength, exactly.** A plane wave of momentum $p$ has the spatial phase $e^{\frac{k_m\,i\,\vec p\,\vec x}{m\,c}}$, so its wave vector is $\vec k_{\Phi}=\frac{k_m\,\vec p}{m\,c}$ and its magnitude is the momentum wave number:
+**It is the reciprocal of the momentum wavelength, exactly.** A plane wave of momentum $\vec p_{\Phi}$ has the spatial phase $e^{i\vec k_{\Phi}\cdot\vec r_{\Phi}}$, so its wave vector is the vector part of the element, $\vec k_{\Phi}=\frac{\vec p_{\Phi}}{\hbar}=\frac{k_m\,\vec p_{\Phi}}{m\,c}$, and its magnitude is the momentum wave number:
 
 $$
-k_{\Phi} =\frac{k_m\,p}{m\,c} .
+k_{\Phi} =\frac{p_{\Phi}}{\hbar}=\frac{k_m\,p_{\Phi}}{m\,c} .
 $$
 
 That is the definition, and it is the form in which the number enters every equation of the series: the spatial gradient $\vec\nabla$ carries an inverse length, and on a plane wave it returns $i\vec k_{\Phi}$. The biquaternionic gradient $\tilde\nabla$ does the same, and on a plane wave it returns $i$ times the four-wave-number.
@@ -417,7 +519,7 @@ That is the definition, and it is the form in which the number enters every equa
 **One radian of the spatial phase.** The distance over which the phase of the state turns by one radian is
 
 $$
-\frac{1}{k_{\Phi}}=\frac{m\,c}{k_m\,p}=\lambda_{\Phi} ,
+\frac{1}{k_{\Phi}}=\frac{m\,c}{k_m\,p_{\Phi}}=\lambda_{\Phi} ,
 $$
 
 the reduced de Broglie wavelength. It is not a property of the species but of the preparation: for the electron in the hydrogen ground state it is the Bohr radius, $52.9\ \mathrm{pm}$; for a $100\ \mathrm{eV}$ electron it is $19.5\ \mathrm{pm}$; for a thermal neutron it is $16.0\ \mathrm{pm}$.
@@ -531,7 +633,7 @@ At rest it vanishes; at $\beta=1/\sqrt{2}$ it equals the mass wave number; at $\
 **The cleanest reading of the third wave number.** A photon of energy $E$ has momentum $E/c$, so its momentum wave number and its energy wave number are the same number:
 
 $$
-k_{\Phi} =\frac{k_m\,E}{m\,c^{2}} =\frac{k_m\,E}{m\,c^{2}} = k_{t}^{\prime} .
+k_{\Phi} =\frac{k_m\,E}{m\,c^{2}} = k_{t}^{\prime} .
 $$
 
 For a massive particle the two differ, and their ratio is the speed:
@@ -544,13 +646,13 @@ So $k_{t}^{\prime}$ is the wave number the particle would have if all of its ene
 
 **The two limits read themselves.** At rest $\beta=0$ and $k_{t}^{\prime}$ is infinitely larger than $k_{\Phi}$, which has vanished: the particle has energy and no momentum, and no massless quantum imitates that. At $\beta\to1$ the two wave numbers merge, and the wave is indistinguishable from a light wave of the same energy. Every ultra-relativistic particle is photon-like in this precise sense, and the series uses that fact whenever it treats a fast fermion as a light-like field.
 
-**It is the temporal component of the wave four-vector.** The same number is the temporal entry of the four-wave-number:
+**It is the temporal coefficient of $\tilde K_{\Phi}$.** The same number is the temporal entry of the wave-number biquaternion, and it is the angular frequency in disguise:
 
 $$
 k_{t}^{\prime} = \dfrac{\omega}{c} .
 $$
 
-A wave whose spatial entry is $k_{\Phi}$ and whose temporal entry is $k_{t}^{\prime}$ moves at $\beta=k_{\Phi}/k_{t}^{\prime}$, which is the same statement again. In wave numbers the four-vector has no mixed units: both entries are inverse lengths, and both are wave numbers of the same kind.
+A wave whose spatial entry is $\vec k_{\Phi}$ and whose temporal entry is $k_{t}^{\prime}$ moves at $\beta=k_{\Phi}/k_{t}^{\prime}$, which is the same statement again. In the element there are no mixed units: both entries are inverse lengths, and both are coefficients of the same kind. The same number is $\tilde P_{\Phi}$ read in inverse lengths, and $\tilde K_{\Phi}$ is that momentum divided by $\hbar$, which is why the temporal entry can be written as an energy per unit of action or as a frequency over $c$ without a conversion inside the equation.
 
 ### The Clock
 
@@ -710,7 +812,7 @@ If the inverse mass wave number were the radius, the product would be one; it is
 
 **Why a subscript at all.** A bare $k$ is already taken in this corpus: it is the spatial index, $\vec e_k$ and $\sum_k\vec e_k$, which appears on the order of two thousand times and in every article of the series. A bare $k$ for a wave number would be ambiguous in every display that also carries a basis vector, so every wave number of this article carries a subscript.
 
-**Which subscripts.** The subscript names the quantity the wave number is computed from and never the particle: $k_m$ from the mass, $k_{\Phi}$ from the momentum, $k_{t}^{\prime}$ from the total energy. The label $\mathrm{mo}$ is written in two letters because a single $p$ would collide with the spatial index of the momentum, $p_k$, which the corpus writes for the components; $k_p$ and $p_k$ would be one transposition apart in running text, and that is the one ambiguity a notation of this kind cannot afford.
+**Which subscripts.** The labels come in two kinds, and neither names a particle. Two of them name a slot of $\tilde K_{\Phi}$: the sector letter $\Phi$ on the vector part, $\vec k_{\Phi}$ and its modulus $k_{\Phi}$, and the primed $t$ on the temporal coefficient, $k_{t}^{\prime}$, which is the corpus's mark for a temporal slot and matches $p_{t}^{\prime}$ of the four-momentum and $r_{t}^{\prime}$ of the four-position; the prime stays because the division by $\hbar\,c$ converts a quantity and not a coordinate. The third names the norm of the element, $k_m$, and with it the species, $k_{m_e}$ and $k_{m_p}$. The letter of the momentum is not used: the momentum already writes its components $p_k$, and $k_p$ beside $p_k$ would be one transposition apart in running text. The sector letter is not open to that confusion, and it carries a fact the letter of the quantity would not — it says to which subspace the element belongs.
 
 **The species enters on the mass.** A wave number of a named particle is written $k_{m_e}$ for the electron and $k_{m_p}$ for the proton, which is the rule of the series that the label names the input: the input of one species is the mass of that species. No wave number is ever labelled by the name of a particle alone.
 
@@ -722,7 +824,7 @@ If the inverse mass wave number were the radius, the product would be one; it is
 
 ## Summary
 
-Three wave numbers come from one rule, a momentum divided by $\hbar=\frac{m\,c}{k_m}$: $k_m=mc/\hbar$ from the mass, $k_{\Phi}=\frac{k_m\,p}{m\,c}$ from the momentum, $k_{t}^{\prime}=E/(\frac{m\,c^{2}}{k_m})$ from the total energy. The first belongs to the particle and the other two to the state, and the three are the norm and two coefficients of one element, $\tilde K_{\Phi}=\tilde P_{\Phi}/\hbar=ik_{t}^{\prime}e_t+\vec k_{\Phi}$.
+Three wave numbers come from one division, $\tilde K_{\Phi}=\tilde P_{\Phi}/\hbar$: the quotient's temporal coefficient is $k_{t}^{\prime}=E/(\hbar\,c)$, its vector part is $\vec k_{\Phi}=\vec p_{\Phi}/\hbar$ with modulus $k_{\Phi}$, and its norm is $k_m=m\,c/\hbar$. The first two belong to the state and the third to the particle, and all three are read off the one element $\tilde K_{\Phi}=ik_{t}^{\prime}e_t+\vec k_{\Phi}$.
 
 The mass shell, divided by $\frac{m^{2}\,c^{2}}{k_m^{2}}$ term by term, gives the box $k_{t}^{\prime\,2}=k_{\Phi}^{2}+k_m^{2}$. The three are the sides of a right triangle with the energy wave number the largest and the mass wave number the fixed side. The ratios of the sides are the kinematic parameters: $k_{t}^{\prime}/k_m=\gamma$, $k_{\Phi}/k_{t}^{\prime}=\beta$ and $k_{\Phi}/k_m=\gamma\beta$.
 

@@ -176,13 +176,13 @@ $$
 where $\tilde{\nabla}^{\natural} = e_t\partial/\partial R_t - \vec e_x\partial/\partial R_x - \vec e_y\partial/\partial R_y - \vec e_z\partial/\partial R_z$ is the quaternion conjugate of the biquaternionic gradient. Expanding the scalar part,
 
 $$
-\mathrm{Sc}\!\left(\tilde{\nabla}^{\natural}\tilde{J}_{\Phi}\right) = \partial/\partial R_t(ic\rho) + \mathrm{div}\,\vec j = \frac{\partial \rho}{\partial r'_t} + \mathrm{div}\,\vec j,
+\mathrm{Sc}\!\left(\tilde{\nabla}^{\natural}\tilde{J}_{\Phi}\right) = \partial/\partial R_t(ic\rho) + \mathrm{div}\,\vec j = c\,\frac{\partial \rho}{\partial r'_t} + \mathrm{div}\,\vec j,
 $$
 
 so the condition is the standard continuity equation
 
 $$
-\frac{\partial \rho}{\partial r'_t} + \mathrm{div}\,\vec j = 0.
+c\,\frac{\partial \rho}{\partial r'_t} + \mathrm{div}\,\vec j = 0.
 $$
 
 The condition is the **scalar part** of $\tilde{\nabla}^{\natural}\tilde{J}_{\Phi} = 0$. The full equation $\tilde{\nabla}^{\natural}\tilde{J}_{\Phi} = 0$ is stronger, because the vector part of $\tilde{\nabla}^{\natural}\tilde{J}_{\Phi}$ does not vanish in general: it involves the spatial derivatives of $\rho$ and $\vec j$, and it does not correspond to a standard physical conservation law. So the continuity equation is the scalar projection of the biquaternion conservation law.

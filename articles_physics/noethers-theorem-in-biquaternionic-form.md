@@ -168,7 +168,7 @@ $$
 \mathrm{Sc}\!\left(\tilde{\nabla}^{\natural}\tilde{J}_{\Phi}\right) = 0 \quad\text{on shell},
 $$
 
-which is the continuity equation $\partial/\partial r'_t\rho + \mathrm{div}\,\vec j = 0$. The reason the time component needs no separate sign is the same one met above: $\partial/\partial R_t=\partial/\partial i r'_t$ meets $J_t=ic\rho$, and the $ic$ of the variable cancels the $ic$ of the current, leaving the plain $\partial\rho/\partial r'_t$ of the continuity equation.
+which is the continuity equation $c\,\partial/\partial r'_t\rho + \mathrm{div}\,\vec j = 0$. The reason the time component needs no separate sign is the same one met above: $\partial/\partial R_t=-i\,\partial/\partial r'_t$ meets $J_t=ic\rho$, and the two central imaginaries cancel, $(-i)(i)=1$, leaving the factor $c$ of the current and the plain $\partial/\partial r'_t$ of the continuity equation.
 
 ### On What Case This Was Checked
 
@@ -365,10 +365,10 @@ A symmetric rank-two tensor in four dimensions has ten independent components, w
 For the electromagnetic field the four-component object is $\tilde{W}_{\Psi} = \tfrac12\tilde{F}\tilde{F}^{*} = W\,e_t + \frac{i}{c}\vec S\in\mathbb{B}_{\Psi}$, with $W$ the energy density and $\vec S = \vec E\times\vec H$ the Poynting vector. Its scalar divergence is the energy law,
 
 $$
-\mathrm{Sc}\!\left(\tilde{\nabla}\tilde{W}_{\Psi}\right) = -\frac{i}{c}\left(\frac{\partial W}{\partial r'_t}+\mathrm{div}\,\vec S\right) = \frac{i}{c}\,\vec J\cdot\vec E ,
+\mathrm{Sc}\!\left(\tilde{\nabla}\tilde{W}_{\Psi}\right) = -i\left(\frac{\partial W}{\partial r'_t}+\frac{1}{c}\,\mathrm{div}\,\vec S\right) = \frac{i}{c}\,\vec J\cdot\vec E ,
 $$
 
-the last equality being the Poynting theorem. The factor $i$ is uniform across the two terms, as a temporal component must be in the $i r'_t$ convention, and dividing it out recovers $\partial W/\partial r'_t + \mathrm{div}\,\vec S + \vec J\cdot\vec E = 0$. The real form $\tilde W_{\Psi} = W + \frac{1}{c}\vec S$ fails exactly this test: its scalar divergence carries the $i$ on the time term only, and on a free plane wave it equals $\frac{1-i}{c}\partial W/\partial r'_t$, which is not zero. What *Exercise: The Electromagnetic Energy–Momentum Tensor* isolates is that factor $i$ on the Poynting part, and the equation $\tilde{\nabla}\tilde{W}_{\Psi} = -\tilde{\mathcal F}$, taken as a biquaternion identity with a power–force density on the right, is not what the corpus establishes for either form: what it verifies is the scalar statement above, not the vector one. Read as a Noether statement, $\mathrm{Sc}(\tilde{\nabla}\tilde{W}_{\Psi}) = \frac{i}{c}\vec J\cdot\vec E$ says the translation current is conserved up to the work done on the charges — the source is present, so the field alone is not closed.
+the last equality being the Poynting theorem. The factor $i$ is uniform across the two terms, as a temporal component must be in the $i r'_t$ convention, and dividing it out recovers $c\,\partial W/\partial r'_t + \mathrm{div}\,\vec S + \vec J\cdot\vec E = 0$. The real form $\tilde W_{\Psi} = W + \frac{1}{c}\vec S$ fails exactly this test: its scalar divergence carries the $i$ on the time term only, and on a free plane wave it equals $\frac{1-i}{c}\partial W/\partial r'_t$, which is not zero. What *Exercise: The Electromagnetic Energy–Momentum Tensor* isolates is that factor $i$ on the Poynting part, and the equation $\tilde{\nabla}\tilde{W}_{\Psi} = -\tilde{\mathcal F}$, taken as a biquaternion identity with a power–force density on the right, is not what the corpus establishes for either form: what it verifies is the scalar statement above, not the vector one. Read as a Noether statement, $\mathrm{Sc}(\tilde{\nabla}\tilde{W}_{\Psi}) = \frac{i}{c}\vec J\cdot\vec E$ says the translation current is conserved up to the work done on the charges — the source is present, so the field alone is not closed.
 
 ### A Caution on the $i r'_t$ Convention
 

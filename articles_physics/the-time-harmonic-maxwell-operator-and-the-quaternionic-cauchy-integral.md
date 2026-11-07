@@ -248,11 +248,11 @@ The time-dependent version of the same decomposition is stated in the book and m
 
 $$
 \ker\Bigl(\partial^2/\partial {r'_{t}}^2-\Delta\Bigr)
-=\ker\Bigl(\frac{1}{c}\partial/\partial r'_t+iD_3\Bigr)\oplus\ker\Bigl(\frac{1}{c}\partial/\partial r'_t-iD_3\Bigr),
+=\ker\Bigl(\partial/\partial r'_t+iD_3\Bigr)\oplus\ker\Bigl(\partial/\partial r'_t-iD_3\Bigr),
 \tag{17}
 $$
 
-with the biquaternionic Maxwell operator $(1/c)\partial/\partial r'_t+iD_3$ of the time-dependent reduction. Every solution of the wave equation is the sum of a solution of the first-order operator and a solution of its conjugate, and the two summands are the two halves of the same diagonalisation. Equation $(16)$ is the time-harmonic analogue with $\alpha$ in place of the frequency and the rotated null-set of the generalised operator $N$ in place of the two first-order factors; in the lossless case, where the two chiral wavenumbers coincide, it is the statement that the Helmholtz field splits into the two circular polarisations.
+with the biquaternionic Maxwell operator $\partial/\partial r'_t+iD_3$ of the time-dependent reduction. Every solution of the wave equation is the sum of a solution of the first-order operator and a solution of its conjugate, and the two summands are the two halves of the same diagonalisation. Equation $(16)$ is the time-harmonic analogue with $\alpha$ in place of the frequency and the rotated null-set of the generalised operator $N$ in place of the two first-order factors; in the lossless case, where the two chiral wavenumbers coincide, it is the statement that the Helmholtz field splits into the two circular polarisations.
 
 ## The Maxwell–Cauchy Kernel and the Integral Operators
 

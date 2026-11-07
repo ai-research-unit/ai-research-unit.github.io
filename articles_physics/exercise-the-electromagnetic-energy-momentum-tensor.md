@@ -99,9 +99,9 @@ $$
 $$
 For it,
 $$
-\mathrm{Sc}\!\left(\tilde\nabla\tilde W_{\Psi,\mathrm{corr}}\right) = -i\partial/\partial r'_t\,W - \frac{i}{c}\,\mathrm{div}\,\vec S = -\frac{i}{c}\left(\partial/\partial r'_t\,W + \mathrm{div}\,\vec S\right) = \frac{i}{c}\,\vec J\cdot\vec E,
+\mathrm{Sc}\!\left(\tilde\nabla\tilde W_{\Psi,\mathrm{corr}}\right) = -i\partial/\partial r'_t\,W - \frac{i}{c}\,\mathrm{div}\,\vec S = -i\left(\partial/\partial r'_t\,W + \frac{1}{c}\,\mathrm{div}\,\vec S\right) = \frac{i}{c}\,\vec J\cdot\vec E,
 $$
-using the Poynting theorem for the last equality. The factor $i$ is now uniform, as it must be when the time coefficient is $Q_t=i r'_t$, and the real statement $\partial/\partial r'_t\,W + \mathrm{div}\,\vec S + \vec J\cdot\vec E = 0$ is recovered. So the four-component object whose scalar divergence gives the energy law is the Hermitian form $\tilde W_{\Psi,\mathrm{corr}} = \frac{1}{2}\tilde F\tilde F^{*}$, which is the object the parents state, and the real form differs from it by $\vec S\to i\vec S$. Even so, $\tilde W_{\Psi,\mathrm{corr}}$ has only four components and therefore carries only the energy density and the energy flux; the stress is not in it. That is the subject of the next problem.
+using the Poynting theorem for the last equality. The factor $i$ is now uniform, as it must be when the time coefficient is $Q_t=i r'_t$, and the real statement $c\,\partial/\partial r'_t\,W + \mathrm{div}\,\vec S + \vec J\cdot\vec E = 0$ is recovered. So the four-component object whose scalar divergence gives the energy law is the Hermitian form $\tilde W_{\Psi,\mathrm{corr}} = \frac{1}{2}\tilde F\tilde F^{*}$, which is the object the parents state, and the real form differs from it by $\vec S\to i\vec S$. Even so, $\tilde W_{\Psi,\mathrm{corr}}$ has only four components and therefore carries only the energy density and the energy flux; the stress is not in it. That is the subject of the next problem.
 
 ## Problem 2: The Tensor as a Bigeneral quaternionic Bilinear
 
@@ -203,14 +203,14 @@ $$
 whose upper time component is $+\frac{1}{c}\vec E\cdot\vec J$ (the sign is the square of the $i$ in $Q_t=i r'_t$, $i^2=-1$).
 In particular, for a source-free field, $\sum_\mu\partial/\partial x_\mu\Pi_{\mu\nu} = 0$.
 
-**Solution (energy component).** In the real chart $x_0=r'_{t}$, where $Q_t=ix_0$, the derivatives are $\partial/\partial x_0=\frac{1}{c}\partial/\partial r'_t$ and $\partial/\partial x_k=\partial/\partial q_k$. With $\Pi_{00}=-W$ and $\Pi_{k0}=-\frac{1}{c}S_k$,
+**Solution (energy component).** In the real chart $x_0=r'_{t}$, where $Q_t=ix_0$, the derivatives are $\partial/\partial x_0=\partial/\partial r'_t$ and $\partial/\partial x_k=\partial/\partial q_k$. With $\Pi_{00}=-W$ and $\Pi_{k0}=-\frac{1}{c}S_k$,
 $$
 \sum_\mu\frac{\partial\Pi_{\mu0}}{\partial x_\mu}
 = \frac{\partial}{\partial x_0}(-W)+\frac{\partial}{\partial x_k}\left(-\frac{1}{c}S_k\right)
-= -\frac{1}{c}\left(\frac{\partial W}{\partial r'_t}+\mathrm{div}\,\vec S\right)
+= -\left(\frac{\partial W}{\partial r'_t}+\frac{1}{c}\,\mathrm{div}\,\vec S\right)
 = \frac{1}{c}\,\vec E\cdot\vec J = -f_0,
 $$
-where the Poynting theorem $\partial W/\partial r'_t + \mathrm{div}\,\vec S = -\vec E\cdot\vec J$ was used in the last step. The energy component of the divergence is the work done by the field on the charges: the field loses energy at the rate $\vec E\cdot\vec J$.
+where the Poynting theorem $c\,\partial W/\partial r'_t + \mathrm{div}\,\vec S = -\vec E\cdot\vec J$ was used in the last step. The energy component of the divergence is the work done by the field on the charges: the field loses energy at the rate $\vec E\cdot\vec J$.
 
 **Solution (momentum component).** With $\Pi_{0k}=\frac{1}{c}S_k$ and $\Pi_{jk}=-\sigma_{jk}$,
 $$
@@ -228,7 +228,7 @@ Both component equations were checked by direct recomputation from the definitio
 
 **Source-free field.** When $\rho = 0$ and $\vec J = 0$, the divergence vanishes, $\sum_\mu\partial/\partial x_\mu\Pi_{\mu\nu} = 0$: energy and momentum are conserved. This is the standard statement, now with the tensor built from $\tilde F$ rather than quoted from the tensor calculus.
 
-**The coordinate of the tensor.** The components above belong to the real chart $x_\mu=(r'_{t}, r_x, r_y, r_z)$ of the material reading, where $Q_t=ix_0$, $\partial/\partial x_0=\frac{1}{c}\partial/\partial r'_t$ and $T_{00}=W$ is real. The chart and the complex coefficient are one reading written twice: the substitution $Q_t=i r'_t$ puts one factor $i$ on a time slot and $i^2=-1$ on two, and no sign is left for a metric to carry. The divergence is the **plain** one, $\sum_\mu\partial/\partial x_\mu\Pi_{\mu\nu}$, contracting the row index; the **natural** contraction with the conjugated gradient $\tilde\nabla^{\natural}$ is a different combination, and for a rank-two object it is not the conservation law.
+**The coordinate of the tensor.** The components above belong to the real chart $x_\mu=(r'_{t}, r_x, r_y, r_z)$ of the material reading, where $Q_t=ix_0$, $\partial/\partial x_0=\partial/\partial r'_t$ and $T_{00}=W$ is real. The chart and the complex coefficient are one reading written twice: the substitution $Q_t=i r'_t$ puts one factor $i$ on a time slot and $i^2=-1$ on two, and no sign is left for a metric to carry. The divergence is the **plain** one, $\sum_\mu\partial/\partial x_\mu\Pi_{\mu\nu}$, contracting the row index; the **natural** contraction with the conjugated gradient $\tilde\nabla^{\natural}$ is a different combination, and for a rank-two object it is not the conservation law.
 
 **Remark (the same balance in a matrix formulation).** The tensor of this problem has an independent life in the $4 \times 4$ complex matrix formulation of Maxwell's equations, where the single matrix
 
@@ -261,7 +261,7 @@ where $W = \epsilon E_0^2\cos^2(kz-\omega r'_t)$ for this wave and $1/(\mu c^2) 
 $$
 \boxed{\;T_{\mu\nu} = W\begin{pmatrix} 1 & 0 & 0 & 1 \\ 0 & 0 & 0 & 0 \\ 0 & 0 & 0 & 0 \\ 1 & 0 & 0 & 1 \end{pmatrix} = \frac{W}{(\omega/c)^2}\,k_\mu k_\nu\;}.
 $$
-The tensor is manifestly rank one: it has one nonzero eigenvalue $2W$, along the null direction $k$, and it annihilates every vector orthogonal to $k$. The trace vanishes, $-T_{00} + T_{33} = -W + W = 0$, the minus on the time slot being $i^2$, consistent with Problem 3. The divergence vanishes because the wave vector is null and $W$ depends on the phase alone: $\sum_\mu\partial/\partial x_\mu\Pi_{\mu\nu} \propto \sum_\mu(\partial/\partial x_\mu W)k_\mu k_\nu$ with $\sum_\mu(\partial/\partial x_\mu W)k_\mu = k\left(\frac{1}{c}\partial/\partial r'_t\,W + \partial/\partial r_z\,W\right) = 0$, using $\partial W/\partial r_z = -\frac{1}{c}\partial W/\partial r'_t$. The direct computation confirms $\sum_\mu\partial/\partial x_\mu\Pi_{\mu\nu} = 0$ and $\sum_\mu\Pi_{\mu\mu} = 0$ identically in $z$ and $r'_t$.
+The tensor is manifestly rank one: it has one nonzero eigenvalue $2W$, along the null direction $k$, and it annihilates every vector orthogonal to $k$. The trace vanishes, $-T_{00} + T_{33} = -W + W = 0$, the minus on the time slot being $i^2$, consistent with Problem 3. The divergence vanishes because the wave vector is null and $W$ depends on the phase alone: $\sum_\mu\partial/\partial x_\mu\Pi_{\mu\nu} \propto \sum_\mu(\partial/\partial x_\mu W)k_\mu k_\nu$ with $\sum_\mu(\partial/\partial x_\mu W)k_\mu = k\left(\partial/\partial r'_t\,W + \partial/\partial r_z\,W\right) = 0$, using $\partial W/\partial r_z = -\frac{1}{c}\partial W/\partial r'_t$. The direct computation confirms $\sum_\mu\partial/\partial x_\mu\Pi_{\mu\nu} = 0$ and $\sum_\mu\Pi_{\mu\mu} = 0$ identically in $z$ and $r'_t$.
 
 The rank-one character is the energy–momentum expression of the vanishing biquaternion norm. A null field, $\langle\tilde F\rangle_{\natural} = 0$, is $N$-degenerate, a zero divisor of $\mathbb{B}$, and its energy–momentum tensor is built from a single null direction. The plane wave is the model case; the general null field behaves the same way pointwise, which is the content of the first further problem below.
 
