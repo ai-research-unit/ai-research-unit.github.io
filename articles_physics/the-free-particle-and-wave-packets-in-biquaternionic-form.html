@@ -165,11 +165,11 @@ $$</p>
 $$</p>
 <p>In the framework's interpretation, a plane wave carries a wave <strong>four-vector</strong> in the material sector,</p>
 <p>$$
-\tilde P_{\Phi}\,k_{\Phi} = \frac{i\omega}{c}\,e_t + \vec k \in \mathbb{B}_{\Phi},
+\tilde K_{\Phi} = \frac{i\omega}{c}\,e_t + \vec k \in \mathbb{B}_{\Phi},
 $$</p>
 <p>whose biquaternion norm is</p>
 <p>$$
-\langle\tilde P_{\Phi}\,k_{\Phi}\rangle_{\natural}  = \langle\tilde P_{\Phi},\tilde P_{\Phi}\rangle_{\natural}\frac{k_m^{2}}{m^{2}\,c^{2}}=\frac{k_m^{2}\,\tilde{P}_{\Phi}\,\tilde{P}_{\Phi}^{\natural}}{m^{2}\,c^{2}}= -\frac{\omega^2}{c^2} + k^2
+\langle\tilde K_{\Phi}\rangle_{\natural}  = \langle\tilde P_{\Phi},\tilde P_{\Phi}\rangle_{\natural}\frac{k_m^{2}}{m^{2}\,c^{2}}=\frac{k_m^{2}\,\tilde{P}_{\Phi}\,\tilde{P}_{\Phi}^{\natural}}{m^{2}\,c^{2}}= -\frac{\omega^2}{c^2} + k^2
 = k^2\left(1 - \frac{k^2}{4\,k_m^{2}}\right).
 $$</p>
 <p>For the non-relativistic dispersion the wave four-vector is <strong>spacelike</strong> for every $k < 2k_m$, so the free non-relativistic particle never sits on the light cone: its wave four-vector is not a zero divisor. It touches the null cone only at $k = 2k_m$, where $\frac{m\,c\,k}{k_m}= 2mc$ and the non-relativistic dispersion is already outside its domain. The free non-relativistic solutions therefore live strictly inside the invertible (spacelike) region of $\mathbb{B}_{\Phi}$; the null cone, which the last article of this subcategory treats as a physical locus, is reached only by genuinely massless propagation. This is the material-sector counterpart of the fact that the free particle has $E = p^2 c/(2\,m\,c)$ rather than $E = pc$. Here $k_{\Phi}=\frac{k_m\,p}{m\,c}$ is the momentum length.</p>
@@ -331,7 +331,7 @@ $$</p>
 <li><strong>Centrality of the free Hamiltonian, made manifest.</strong> The free Hamiltonian is literally a scalar multiple of $e_t$: $H = r_t e_t \in \mathbb{B}_{C}$. The free evolution is therefore a central phase, the free propagator is a central element, and the module factor is frozen. In a representation in which the two components were written as an arbitrary pair, this would have to be checked by hand; here it is a one-line consequence of $H \in \mathbb{B}_{C}$.</li>
 <li><strong>The kinetic term as a biquaternion norm.</strong> $T = -\tilde p^2 c/(2\,m\,c) = \tilde p\tilde p^{\natural}/2m$. The sign that makes the kinetic energy positive is the sign of the biquaternion norm on the Hermitian subspace, and the reality of the kinetic term is the statement that $\tilde p$ is Hermitian.</li>
 <li><strong>A canonical complex structure.</strong> The phase $\exp(i(\vec k\cdot(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)-\omega r'_t))$ uses the central scalar imaginary, which the algebra supplies; it is not a chosen complex structure. This is the free-particle instance of the property that the path-integral phase is central and canonical.</li>
-<li><strong>A material-sector location for the dispersion.</strong> The wave four-vector $\tilde P_{\Phi}\,k_{\Phi} = i\omega/c\,e_t + \vec k$ is an element of $\mathbb{B}_{\Phi}$, and its biquaternion norm $\langle\tilde P_{\Phi}\,k_{\Phi}\rangle_{\natural}  = k^2(1 -\frac{k^{2}}{4\,k_m^{2}})$ shows that the free non-relativistic solutions are spacelike and off the null cone — the cone that the last article of the subcategory treats as a physical locus.</li>
+<li><strong>A material-sector location for the dispersion.</strong> The wave four-vector $\tilde K_{\Phi} = i\omega/c\,e_t + \vec k$ is an element of $\mathbb{B}_{\Phi}$, and its biquaternion norm $\langle\tilde K_{\Phi}\rangle_{\natural}  = k^2(1 -\frac{k^{2}}{4\,k_m^{2}})$ shows that the free non-relativistic solutions are spacelike and off the null cone — the cone that the last article of the subcategory treats as a physical locus.</li>
 <li><strong>The probability from the trace, not from the biquaternion norm.</strong> The positivity of $\rho = \mathrm{Tr}(\tilde{Ξ}_{\mathrm{sp}}^{\dagger}\tilde{Ξ}_{\mathrm{sp}})$ is a property of the Hermitian form on $\mathbb{B}_{\Psi}$, read through the trace, while the biquaternion norm of the same spinor vanishes identically because the state module lies on the zero divisor cone. The two quadratic structures of the algebra play distinct roles, and the free problem exhibits both at once.</li>
 </ul>
 <p><strong>What remains open.</strong></p>
@@ -354,7 +354,7 @@ H =\frac{p^{2}}{2\,m}\,e_t =\frac{\tilde{p}\,\tilde{p}^{\natural}}{2\,m} = -\fra
 \tilde p = -\frac{m\,c\,i}{k_m}\nabla,
 $$</p>
 <p>and the kinetic energy is the <strong>biquaternion norm of the momentum</strong>. Because $H$ is central, the free dynamics is a scalar dynamics: plane waves $\tilde{Ξ}_{\mathrm{sp},\vec k} = \xi \exp(i(\vec k\cdot(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)-\omega r'_t))$ have the dispersion $\omega =\frac{c\,k^{2}}{2\,k_m}$ for every constant module element $\xi$, the two components are exactly degenerate, the phase is central, and the module orientation is frozen for all time. The generator $-\frac{k_m\,i\,H}{m\,c}$ lies in the material sector $\mathbb{B}_{\Phi}$.</p>
-<p>The wave four-vector $\tilde P_{\Phi}\,k_{\Phi} = i\omega/c\,e_t + \vec k$ has biquaternion norm $\langle\tilde P_{\Phi}\,k_{\Phi}\rangle_{\natural}  = k^2(1-\frac{k^{2}}{4\,k_m^{2}})$, so the free non-relativistic solutions are spacelike and strictly off the null (zero divisor) cone. The probability density is $\rho = \mathrm{Tr}(\tilde{Ξ}_{\mathrm{sp}}^{\dagger}\tilde{Ξ}_{\mathrm{sp}})$, positive definite, while the biquaternion norm of the same spinor vanishes identically because the state module consists of zero divisors; probabilities come from the normalised Hermitian form, read through the trace, not from $\langle\cdot\rangle_{\natural}$. The continuity equation $\partial/\partial r'_t\,\rho + \nabla\cdot\vec J = 0$ holds with $J_k =\frac{c}{2\,k_m\,i}\mathrm{Tr}(\tilde{Ξ}_{\mathrm{sp}}^{\dagger}\partial/\partial R_k\,\tilde{Ξ}_{\mathrm{sp}} - (\partial/\partial R_k\,\tilde{Ξ}_{\mathrm{sp}})^\dagger\tilde{Ξ}_{\mathrm{sp}})$, pairing an $\mathbb{B}_{\Psi}$ density with an $\mathbb{B}_{\Phi}$ current.</p>
+<p>The wave four-vector $\tilde K_{\Phi} = i\omega/c\,e_t + \vec k$ has biquaternion norm $\langle\tilde K_{\Phi}\rangle_{\natural}  = k^2(1-\frac{k^{2}}{4\,k_m^{2}})$, so the free non-relativistic solutions are spacelike and strictly off the null (zero divisor) cone. The probability density is $\rho = \mathrm{Tr}(\tilde{Ξ}_{\mathrm{sp}}^{\dagger}\tilde{Ξ}_{\mathrm{sp}})$, positive definite, while the biquaternion norm of the same spinor vanishes identically because the state module consists of zero divisors; probabilities come from the normalised Hermitian form, read through the trace, not from $\langle\cdot\rangle_{\natural}$. The continuity equation $\partial/\partial r'_t\,\rho + \nabla\cdot\vec J = 0$ holds with $J_k =\frac{c}{2\,k_m\,i}\mathrm{Tr}(\tilde{Ξ}_{\mathrm{sp}}^{\dagger}\partial/\partial R_k\,\tilde{Ξ}_{\mathrm{sp}} - (\partial/\partial R_k\,\tilde{Ξ}_{\mathrm{sp}})^\dagger\tilde{Ξ}_{\mathrm{sp}})$, pairing an $\mathbb{B}_{\Psi}$ density with an $\mathbb{B}_{\Phi}$ current.</p>
 <p>A Gaussian packet of initial density width $s_0$ evolves to a Gaussian of width $s(r'_t) = s_0\sqrt{1+(\frac{m\,r'_{t}}{2\,k_m\,ms_{0}^{2}})^2}$ whose centre moves at the group velocity $\frac{c\,k_{0}}{k_m}$, with spreading time $\tau = 2s_0^2/(c/k_m)$; the closed forms were verified against direct momentum-space quadrature to relative errors below $10^{-13}$, and the density, mean, and variance to machine precision, on a superposition rather than a single plane wave. The free kernel</p>
 <p>$$
 G_{\mathrm{prop},0}(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z,r'_t) = \left(\frac{k_m}{2\pi i r'_t}\right)^{3/2}\exp\!\left(\frac{im|r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z|^2}{\frac{2\,m\,r'_{t}}{k_m}}\right)
@@ -430,11 +430,11 @@ $$</p>
 <td>Group velocity; classical velocity</td>
 </tr>
 <tr>
-<td>$\tilde P_{\Phi}\,k_{\Phi} = i\omega/c\,e_t + \vec k$</td>
+<td>$\tilde K_{\Phi} = i\omega/c\,e_t + \vec k$</td>
 <td>Wave four-vector in $\mathbb{B}_{\Phi}$</td>
 </tr>
 <tr>
-<td>$\langle\tilde P_{\Phi}\,k_{\Phi}\rangle_{\natural} = -\omega^2/c^2 + k^2$</td>
+<td>$\langle\tilde K_{\Phi}\rangle_{\natural} = -\omega^2/c^2 + k^2$</td>
 <td>Biquaternion norm of the wave four-vector; spacelike</td>
 </tr>
 <tr>
