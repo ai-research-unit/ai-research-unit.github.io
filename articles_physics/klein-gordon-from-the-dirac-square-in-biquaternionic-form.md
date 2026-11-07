@@ -2,13 +2,13 @@
 
 ## Introduction
 
-The biquaternionic Dirac equation is first order. Its mass term is the central scalar $m$, and the equation is the pair
+The biquaternionic Dirac equation is first order. Its mass term is the central scalar $k_m=mc/\hbar$, the mass in inverse lengths, and the equation is the pair
 
 $$
 \tilde{\nabla}\tilde{Ξ}_{\mathrm{sp},R} = k_m\tilde{Ξ}_{\mathrm{sp},L}, \qquad \tilde{\nabla}^{\natural}\tilde{Ξ}_{\mathrm{sp},L} = k_m\tilde{Ξ}_{\mathrm{sp},R},
 $$
 
-in which each member sets the gradient of one chiral half equal to $m$ times the other. The companion article *The Dirac Equation in Biquaternionic Form* records, in a single paragraph, that applying $\tilde{\nabla}^{\natural}$ to the first member and substituting the second gives $\Box\tilde{Ξ}_{\mathrm{sp},R} = k_m^{2}\tilde{Ξ}_{\mathrm{sp},R}$, so that each chiral component satisfies the Klein–Gordon equation. That paragraph is the hinge between the two halves of this category: it is where the relativistic quantum theory of spin $0$ and the relativistic quantum theory of spin $\tfrac12$ meet. This article reconstructs the passage in full, once in the algebra and once on the chiral pair, settles what the passage carries and what it drops, and then runs the passage the other way, where the second chiral half turns out to be the gradient of the first.
+in which each member sets the gradient of one chiral half equal to $k_m$ times the other. The companion article *The Dirac Equation in Biquaternionic Form* records, in a single paragraph, that applying $\tilde{\nabla}^{\natural}$ to the first member and substituting the second gives $\Box\tilde{Ξ}_{\mathrm{sp},R} = k_m^{2}\tilde{Ξ}_{\mathrm{sp},R}$, so that each chiral component satisfies the Klein–Gordon equation. That paragraph is the hinge between the two halves of this category: it is where the relativistic quantum theory of spin $0$ and the relativistic quantum theory of spin $\tfrac12$ meet. This article reconstructs the passage in full, once in the algebra and once on the chiral pair, settles what the passage carries and what it drops, and then runs the passage the other way, where the second chiral half turns out to be the gradient of the first.
 
 Two operators carry the name *Dirac operator* in this corpus, and they are the two faces of one square. The **one-sided** operator is the gradient $\tilde\nabla$, which acts by multiplication on the algebra, and the equations it obeys are the chiral pair above. The second operator is the **pair** operator, the same two gradients acting on an ordered pair of elements,
 
@@ -38,7 +38,17 @@ $$
 k_m=\dfrac{mc}{\hbar},
 $$
 
-so that the mass-shell condition reads $\tilde P_{\Phi}\tilde P_{\Phi}^{\natural} = -m^{2}\,c^{2}$ and the second-order equation reads $(\Box - k_m^{2})\tilde{Ξ} = 0$. The two symbols stand in the ratio $k_m=mc/\hbar$, so a display that writes $m$ where an inverse length is meant is writing $k_m$; the second-order operator is $\Box-k_m^{2}$ in the algebra and carries the same $k_m^{2}$ with the physical units restored. This is the length the Klein–Gordon article carries as $1/k_m$, and the sign of $\Box$ is the series sign, the one *Exercise: Chirality and the Weyl Spinors* reaches from the squares of the two chiral equations.
+so that the mass-shell condition reads $\langle\tilde K_{\Phi}\rangle_{\natural} = -k_m^{2}$ and the second-order equation reads $(\Box - k_m^{2})\tilde{Ξ} = 0$. The element the shell is written on is the four-momentum one division of $\hbar$ deep, and the division is the whole of its definition,
+
+$$
+\tilde K_{\Phi}=\frac{\tilde P_{\Phi}}{\hbar}=ik_{t}^{\prime}e_t+\vec k_{\Phi}\in\mathbb{B}_{\Phi},
+\qquad
+k_{t}^{\prime}=\frac{\omega}{c}=\frac{E}{\hbar\,c},
+\qquad
+\vec k_{\Phi}=\frac{\vec p}{\hbar},
+$$
+
+so that both coordinates are inverse lengths, the unit of $\Box$ and of $k_m$. Multiplying the shell by $\hbar^{2}$ gives $\tilde P_{\Phi}\tilde P_{\Phi}^{\natural} = -m^{2}\,c^{2}$ back, since $\hbar\,k_m=mc$, and the property that makes $\tilde K_{\Phi}$ the right element to display is that everything below — the dispersion, the phase, the norm, the mass shell — is read off it with no further factor. The two symbols stand in the ratio $k_m=mc/\hbar$, so a display that writes $m$ where an inverse length is meant is writing $k_m$; the second-order operator is $\Box-k_m^{2}$ in the algebra and carries the same $k_m^{2}$ with the physical units restored. This is the length the Klein–Gordon article carries as $1/k_m$, and the sign of $\Box$ is the series sign, the one *Exercise: Chirality and the Weyl Spinors* reaches from the squares of the two chiral equations.
 
 ## The Gradient and Its Square
 
@@ -73,7 +83,7 @@ $$
 \tilde{\nabla}^{\natural}\tilde{\nabla}\tilde{Ξ}_{\mathrm{sp},R} = \tilde{\nabla}^{\natural}\!\left(k_m\tilde{Ξ}_{\mathrm{sp},L}\right) = k_m\tilde{\nabla}^{\natural}\tilde{Ξ}_{\mathrm{sp},L} = k_m^{2}\tilde{Ξ}_{\mathrm{sp},R},
 $$
 
-where the middle equality uses that $m$ is a scalar and the last uses the second member. Since $\tilde{\nabla}^{\natural}\tilde{\nabla} = \Box$ is central,
+where the middle equality uses that $k_m$ is a scalar and the last uses the second member. Since $\tilde{\nabla}^{\natural}\tilde{\nabla} = \Box$ is central,
 
 $$
 \boxed{\;\left(\Box-k_m^{2}\right)\tilde{Ξ}_{\mathrm{sp},R} = 0\;}.
@@ -91,7 +101,7 @@ First, the reduction uses the **two different gradients**. It is the passage fro
 
 Second, the reduction eliminates **both** members of the pair at once. It is not that one chiral half obeys Klein–Gordon and the other does not; the mass couples them, so that squaring forces each half onto the same second-order shell. A mass that acted within each half alone would leave two separate first-order equations, each of which squares to a mass term beside a non-central $\tilde\nabla^2$; the coupling is what puts $\tilde\nabla$ on one half and $\tilde\nabla^{\natural}$ on the other, so that the second member converts the first-order left-hand side into the central $\Box$.
 
-Third, the reduction is **linear in the mass squared**. The second-order equation knows only $m^2$. It has no memory of the sign of $m$ and no memory of the chirality that carried it. That loss is the subject of *What the Square Carries and What It Does Not*.
+Third, the reduction is **linear in the mass squared**. The second-order equation knows only $k_m^{2}$. It has no memory of the sign of $k_m$ and no memory of the chirality that carried it. That loss is the subject of *What the Square Carries and What It Does Not*.
 
 ## The Square in the Biquaternion Algebra
 
@@ -121,7 +131,7 @@ $$
 
 with no mixing of components. The spin-$0$ article records this as the reason its equation decouples into four complex scalars; here the same centrality is what lets the square of the Dirac pair produce a single second-order equation rather than a system.
 
-The mass is a **central scalar** too: $m$ commutes with $\Box$ and with the chirality of each half alike, and that is exactly why it passes through the gradient and lets the substitution above go through. Its coupling is not a property of $m$ but of the pair: the mass multiplies within a chiral half, the gradient maps one half into the other, and it is that mismatch that makes the pair two coupled equations rather than two separate ones. Squaring moves the mass across one gradient, and because $m$ is central the two orders agree. What the square then loses is the coupling — which half the mass connects — not its value, which survives as $m^2$. In the algebra the reduction is therefore
+The mass is a **central scalar** too: $k_m$ commutes with $\Box$ and with the chirality of each half alike, and that is exactly why it passes through the gradient and lets the substitution above go through. Its coupling is not a property of $k_m$ but of the pair: the mass multiplies within a chiral half, the gradient maps one half into the other, and it is that mismatch that makes the pair two coupled equations rather than two separate ones. Squaring moves the mass across one gradient, and because $k_m$ is central the two orders agree. What the square then loses is the coupling — which half the mass connects — not its value, which survives as $k_m^{2}$. In the algebra the reduction is therefore
 
 $$
 \tilde{\nabla}^{\natural}\!\left(\tilde{\nabla}\tilde{Ξ}_{\mathrm{sp},R}\right) = \tilde{\nabla}^{\natural}\tilde{\nabla}\tilde{Ξ}_{\mathrm{sp},R} = \Box\tilde{Ξ}_{\mathrm{sp},R} ,
@@ -142,10 +152,10 @@ $$
 \Box = \partial^2/\partial R_t^2 + \partial^2/\partial R_x^2 .
 $$
 
-The chiral pair retains its form and the reduction gives $(\Box-k_m^{2})\tilde{Ξ}_{\mathrm{sp},L,R} = 0$ exactly as before. Each half is a whole biquaternion in the reduced theory as in the full one, so the chirality still splits the pair in two and the mass couples the halves exactly as before. The plane-wave substitution gives $\tilde P_{\Phi} = i\omega/c\,e_t + k\vec e_x$ and
+The chiral pair retains its form and the reduction gives $(\Box-k_m^{2})\tilde{Ξ}_{\mathrm{sp},L,R} = 0$ exactly as before. Each half is a whole biquaternion in the reduced theory as in the full one, so the chirality still splits the pair in two and the mass couples the halves exactly as before. The plane-wave substitution gives $\tilde K_{\Phi} = i\omega/c\,e_t + k\,\vec e_x$, whose two coordinates are the temporal one $k_{t}^{\prime}=\omega/c$ and the single spatial one $k$, and
 
 $$
-\tilde P_{\Phi}\tilde P_{\Phi}^{\natural} = -\omega^2/c^2 + k^2 = -k_m^{2},
+\langle\tilde K_{\Phi}\rangle_{\natural} = -\omega^2/c^2 + k^2 = -k_m^{2},
 \qquad\text{hence}\qquad
 \omega^2 = k^2c^2 + k_m^{2}c^2 ,
 $$
@@ -171,7 +181,7 @@ $$
 (\mathbb{D} - k_m)(\tilde{Ξ}_{\mathrm{sp},L},\tilde{Ξ}_{\mathrm{sp},R}) = (0,0),
 $$
 
-and its opposite-mass partner is the map $\mathbb{D} + k_m$. *Operator and Calculus Conventions* writes the same pair as one operator on $\mathbb{B}\oplus\mathbb{B}$, $\mathbb{D}\tilde{Ξ}_{\mathrm{sp}} = (\tilde\nabla\tilde{Ξ}_{\mathrm{sp},R},\tilde\nabla^{\natural}\tilde{Ξ}_{\mathrm{sp},L})$, with $\mathbb{D}^2$ equal to $\Box$ on each half and the massive equation $(\mathbb{D} - k_m)\tilde{Ξ}_{\mathrm{sp}} = 0$; the letter names one object in the two articles. Because $m$ is central, the two mass-shifted maps compose cleanly, and applying $\mathbb{D} + k_m$ and then $\mathbb{D} - k_m$ gives
+and its opposite-mass partner is the map $\mathbb{D} + k_m$. *Operator and Calculus Conventions* writes the same pair as one operator on $\mathbb{B}\oplus\mathbb{B}$, $\mathbb{D}\tilde{Ξ}_{\mathrm{sp}} = (\tilde\nabla\tilde{Ξ}_{\mathrm{sp},R},\tilde\nabla^{\natural}\tilde{Ξ}_{\mathrm{sp},L})$, with $\mathbb{D}^2$ equal to $\Box$ on each half and the massive equation $(\mathbb{D} - k_m)\tilde{Ξ}_{\mathrm{sp}} = 0$; the letter names one object in the two articles. Because $k_m$ is central, the two mass-shifted maps compose cleanly, and applying $\mathbb{D} + k_m$ and then $\mathbb{D} - k_m$ gives
 
 $$
 \boxed{\;(\mathbb{D} - k_m)(\mathbb{D} + k_m)(\tilde{Ξ}_{\mathrm{sp},L},\tilde{Ξ}_{\mathrm{sp},R})
@@ -208,7 +218,7 @@ $$
 \tilde\nabla^{\natural}\tilde{Ξ}_{\mathrm{sp},L} = k_m\tilde{Ξ}_{\mathrm{sp},R} .
 $$
 
-**The chirality.** The two halves carry the signs $-1$ and $+1$, one sign per half; only the difference of the two signs carries content. The pair operator **exchanges** the halves, because each of its two members carries one half into the other, and the mass **keeps** them, because it multiplies each half by the same scalar. That is the precise content of the phrase *a coupling between the halves*: no term carries $m$ from one half to the other; the gradient does the carrying, and the mass, the same in both halves, is what the carried field is set equal to. The two signs are the image on the pair of the central grading $i\tilde{Ζ}_{\mathrm{ad}}$ of the complexified algebra, outside $\mathbb{B}$ itself, which squares to the unit $e_t$; no element of $\mathbb{B}$ supplies it. The subscripts $L$ and $R$ are the letters the Dirac article gives the two chiral halves; here they label the two members of the pair, and nothing in this section computes them. Squaring is what removes the exchange: $\mathbb{D}^2$ gives $\Box\tilde{Ξ}_{\mathrm{sp},L}$ in the first member and $\Box\tilde{Ξ}_{\mathrm{sp},R}$ in the second, and no half is carried into the other.
+**The chirality.** The two halves carry the signs $-1$ and $+1$, one sign per half; only the difference of the two signs carries content. The pair operator **exchanges** the halves, because each of its two members carries one half into the other, and the mass **keeps** them, because it multiplies each half by the same scalar. That is the precise content of the phrase *a coupling between the halves*: no term carries $k_m$ from one half to the other; the gradient does the carrying, and the mass, the same in both halves, is what the carried field is set equal to. The two signs are the image on the pair of the central grading $i\tilde{Ζ}_{\mathrm{ad}}$ of the complexified algebra, outside $\mathbb{B}$ itself, which squares to the unit $e_t$; no element of $\mathbb{B}$ supplies it. The subscripts $L$ and $R$ are the letters the Dirac article gives the two chiral halves; here they label the two members of the pair, and nothing in this section computes them. Squaring is what removes the exchange: $\mathbb{D}^2$ gives $\Box\tilde{Ξ}_{\mathrm{sp},L}$ in the first member and $\Box\tilde{Ξ}_{\mathrm{sp},R}$ in the second, and no half is carried into the other.
 
 **The two equations, side by side.** The name now covers two statements, and they must not be read as one. The **element** equation is the pair
 
@@ -225,7 +235,7 @@ $$
 with one operator on the two halves, the signs naming them. The second is the compact form of the first: the two members are the same two gradients, the exchange of halves is what turns one equation into two, and the mass, the same in both, is what couples them. The identity
 
 $$
-\left(\mathbb{D} - k_m\right)\left(\mathbb{D} + k_m\right) = \mathbb{D}^2 - m^2 ,
+\left(\mathbb{D} - k_m\right)\left(\mathbb{D} + k_m\right) = \mathbb{D}^2 - k_m^{2} ,
 \qquad\text{which is}\qquad \Box-k_m^{2} \ \text{on each half},
 $$
 
@@ -233,15 +243,22 @@ is the operator identity of the previous section, and both are the statement tha
 
 ## The Kernel and the Solution Space
 
-Write the four-wavevector and the four-position as
+Write the two elements of the phase as
 
 $$
-\tilde P_{\Phi} = i\frac{\omega}{c}e_t + \vec k\in\mathbb{B}_{\Phi},
+\tilde K_{\Phi} = i\frac{\omega}{c}e_t + \vec k_{\Phi}\in\mathbb{B}_{\Phi},
 \qquad
 \tilde R_\Phi = i r'_t\,e_t + \vec r\in\mathbb{B}_{\Phi},
 $$
 
-with $\vec k = k_1\vec e_x + k_2\vec e_y + k_3\vec e_z$ and $\vec r = r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z$. Here $\vec k^2$ abbreviates the sum $k_1^2+k_2^2+k_3^2$ of the squares of the components, not the quaternion product, which is its negative, $\vec k\,\vec k = -\vec k^2e_t$. The phase is $\mathrm{Sc}(\tilde P_{\Phi}\tilde{R}_\Phi^{\natural}) = \vec k\cdot\vec r - \omega r'_t/c$, the scalar part of the product with the conjugate four-position. The exponent $i\,\mathrm{Sc}(\tilde P_{\Phi}\tilde{R}_\Phi^{\natural})$ is a purely imaginary central element, so the exponential is central and differentiates as an ordinary exponential. On a plane wave,
+with $\vec k_{\Phi} = k_1\vec e_x + k_2\vec e_y + k_3\vec e_z$, written $\vec k$ in the displays below, and $\vec r = r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z$. Here $\vec k^2$ abbreviates the sum $k_1^2+k_2^2+k_3^2$ of the squares of the components, not the quaternion product, which is its negative, $\vec k\,\vec k = -\vec k^2e_t$. The phase is read off the same element, an inverse length against a length,
+
+$$
+\mathrm{Sc}\!\left(\tilde K_{\Phi}\tilde{R}_\Phi^{\natural}\right)
+= -\frac{\omega}{c}r'_t + \vec k\cdot\vec r ,
+$$
+
+the scalar part of the product with the conjugate four-position, and no factor in front is needed because the product is already dimensionless. The exponent $i\,\mathrm{Sc}(\tilde K_{\Phi}\tilde{R}_\Phi^{\natural})$ is a purely imaginary central element, so the exponential is central and differentiates as an ordinary exponential. On a plane wave,
 
 $$
 \partial/\partial r'_t \longmapsto -i\omega/c, \qquad \partial/\partial r_k\longmapsto ik_k, \qquad \partial/\partial R_t \longmapsto -\frac{\omega}{c},
@@ -255,25 +272,25 @@ $$
 \Box \longmapsto \frac{\omega^2}{c^2} - \vec k^2 .
 $$
 
-The biquaternion norm of the wave biquaternion is
+The biquaternion norm of the wave-number element is
 
 $$
-\langle\tilde P_{\Phi}\rangle_{\natural} = \tilde P_{\Phi}\tilde P_{\Phi}^{\natural} = \left(i\frac{\omega}{c}\right)^2 + k_1^2+k_2^2+k_3^2 = -\frac{\omega^2}{c^2} + \vec k^2 = -\Box ,
+\langle\tilde K_{\Phi}\rangle_{\natural} = \tilde K_{\Phi}\tilde K_{\Phi}^{\natural} = \left(i\frac{\omega}{c}\right)^2 + k_1^2+k_2^2+k_3^2 = -\frac{\omega^2}{c^2} + \vec k^2 = -\Box ,
 $$
 
-the last equality holding on the plane wave, so the second-order equation $(\Box - k_m^{2})\tilde{Ξ}_{\mathrm{sp}} = 0$ is the mass-shell condition
+the last equality holding on the plane wave, so the second-order equation $(\Box - k_m^{2})\tilde{Ξ}_{\mathrm{sp}} = 0$ is the mass-shell condition, and the mass shell is one scalar line on the wave-number element rather than a condition on a separate four-vector
 
 $$
-\tilde P_{\Phi}\tilde P_{\Phi}^{\natural} = -m^{2}\,c^{2},
+\langle\tilde K_{\Phi}\rangle_{\natural} = -k_m^{2},
 \qquad\text{equivalently}\qquad
 \omega^2 = \vec k^2c^2 + k_m^{2}c^2,
 $$
 
-which is $E^2 = \vec p^2c^2 + m^2c^4$ under $E =\frac{m\,c\,\omega}{k_m}$, $\vec p =\frac{m\,c\,\vec k}{k_m}$ and $k_m=mc/\hbar$. The sign is the series sign and is consistent with the Klein–Gordon article: the operator $\Box - k_m^{2}$ vanishes on the same shell on which the biquaternion norm equals $-k_m^{2}$.
+which is $E^2 = \vec p^2c^2 + m^2c^4$ under $E =\hbar\,\omega=\frac{m\,c\,\omega}{k_m}$, $\vec p =\hbar\,\vec k=\frac{m\,c\,\vec k}{k_m}$ and $k_m=mc/\hbar$: the multiplications by $\hbar$ undo the one division, term by term. The sign is the series sign and is consistent with the Klein–Gordon article: the operator $\Box - k_m^{2}$ vanishes on the same shell on which the biquaternion norm equals $-k_m^{2}$.
 
 The kernel of the square is larger than the kernel of the pair, and the difference is the information the square discards. For a fixed three-momentum $\vec p$, a **scalar** field obeying the Klein–Gordon equation has a two-dimensional complex solution space, spanned by the positive- and negative-frequency modes $\exp(\mp i(Er'_t-\vec p\cdot\vec r))$. A biquaternion field has four complex coefficients, and $(\Box - k_m^{2})$ acts coefficient by coefficient without mixing them, so the same pair of modes occurs once for each coefficient: an eight-dimensional complex solution space at fixed $\vec p$. The pair carries two such fields, so its second-order solution space at fixed $\vec p$ is sixteen-dimensional.
 
-The first-order equation selects **half** of that space, and its solution is fixed by one half alone. Given $\tilde{Ξ}_{\mathrm{sp},R}$, the first member defines $\tilde{Ξ}_{\mathrm{sp},L} = m^{-1}\tilde\nabla\tilde{Ξ}_{\mathrm{sp},R}$, and the second member then holds exactly when $(\Box - k_m^{2})\tilde{Ξ}_{\mathrm{sp},R} = 0$. On the mass shell at fixed $\vec p$, $\tilde{Ξ}_{\mathrm{sp},R}$ is an arbitrary element of $\mathbb{B}$ at each frequency sign — four complex coefficients at $\exp(-i(Er'_t-\vec p\cdot\vec r))$ and four at $\exp(+i(Er'_t-\vec p\cdot\vec r))$ — so the pair's solution space is eight-dimensional, half of the sixteen. Each of the eight modes is annihilated by $\Box - k_m^{2}$, because that operator acts on each coefficient separately and the plane wave is its eigenfunction, but the converse fails: a general second-order solution of the pair is a combination of **sixteen** independent modes with arbitrary coefficients, and the two members cut that space down to eight by relating the halves at each frequency. The square therefore has a kernel twice as large as the pair's; it is a necessary condition, not a sufficient one.
+The first-order equation selects **half** of that space, and its solution is fixed by one half alone. Given $\tilde{Ξ}_{\mathrm{sp},R}$, the first member defines $\tilde{Ξ}_{\mathrm{sp},L} = k_m^{-1}\tilde\nabla\tilde{Ξ}_{\mathrm{sp},R}$, and the second member then holds exactly when $(\Box - k_m^{2})\tilde{Ξ}_{\mathrm{sp},R} = 0$. On the mass shell at fixed $\vec p$, $\tilde{Ξ}_{\mathrm{sp},R}$ is an arbitrary element of $\mathbb{B}$ at each frequency sign — four complex coefficients at $\exp(-i(Er'_t-\vec p\cdot\vec r))$ and four at $\exp(+i(Er'_t-\vec p\cdot\vec r))$ — so the pair's solution space is eight-dimensional, half of the sixteen. Each of the eight modes is annihilated by $\Box - k_m^{2}$, because that operator acts on each coefficient separately and the plane wave is its eigenfunction, but the converse fails: a general second-order solution of the pair is a combination of **sixteen** independent modes with arbitrary coefficients, and the two members cut that space down to eight by relating the halves at each frequency. The square therefore has a kernel twice as large as the pair's; it is a necessary condition, not a sufficient one.
 
 The same count can be read off the algebra. The square is $\Box - k_m^{2}$ acting in each half separately, and it annihilates each half independently; the first-order pair is the same operator with the two gradients exchanged between the halves and set equal to $k_m\tilde{Ξ}_{\mathrm{sp}}$, which locks the two halves together. The square forgets the lock, and the lost information is exactly the relation that the lock imposes.
 
@@ -295,13 +312,13 @@ The transfer from the first-order pair to the second-order equation can now be a
 
 **Carried.** The mass shell, with the relativistic dispersion $E^2 = \vec p^2c^2 + m^2c^4$; the mass-squared coefficient of the second-order operator, produced by the coupling rather than inserted; the decoupling of the four coefficient fields, a consequence of the centrality of $\Box$; the exchange of the two halves by the pair operator, which is what makes it carry one chiral half into the other in the first-order equation; and the statement that both chiral halves obey the same second-order equation, which is the pair identity $(\mathbb{D} - k_m)(\mathbb{D} + k_m) = \Box-k_m^{2}$ read on each half.
 
-**Not carried.** The sign of the mass, the chirality of each half, the amplitude carried by each half, and the relation between the halves at each frequency branch. The square is even in $m$ and chirality-blind; it cannot distinguish a solution of the pair from a second-order solution that violates the pair. The passage is therefore one-way: every solution of the first-order pair is a solution of the second-order equation, and not conversely.
+**Not carried.** The sign of the mass, the chirality of each half, the amplitude carried by each half, and the relation between the halves at each frequency branch. The square is even in $k_m$ and chirality-blind; it cannot distinguish a solution of the pair from a second-order solution that violates the pair. The passage is therefore one-way: every solution of the first-order pair is a solution of the second-order equation, and not conversely.
 
 **Not claimed.** The square does not turn the spin-$\tfrac12$ field into a spin-$0$ field. The Klein–Gordon equation is obeyed by each **component**, but the object that obeys it is a pair of biquaternion fields: the reduction is a statement about the operator, not about what the field is. The genuine spin-$0$ field of the companion article lives in the centre $\mathbb{B}_{C}$, where the Klein–Gordon equation is the whole of the dynamics; the spin-$\tfrac12$ field lives in the pair, where the Klein–Gordon equation is the square's shadow and the first-order pair is the dynamics. The two share the operator and the mass shell, and nothing else. That is the precise sense in which this subcategory closes the loop to the spin-$0$ subcategory without absorbing it: the second-order equation is recovered, and what is recovered is exactly the part of the spin-$\tfrac12$ theory that the spin-$0$ theory already contained.
 
 There is a final structural remark. The passage from the pair to the square is the passage from an operator that exchanges the halves to one that acts in each. In the pair operator the gradient exchanges the halves and the mass acts in each; composing the two mass-shifted maps cancels the exchange and leaves $\Box-k_m^{2}$ in each half, so what has been traced out is exactly the exchange. The sign attached to each half is the one the supersymmetric structure of the first-order operator exploits, and *Supersymmetric Quantum Physics in the Biquaternion Framework* develops it. The Klein–Gordon equation is the bosonic shadow of the fermionic square root: it is what remains of a first-order operator once the exchange of the two halves is cancelled.
 
-In the algebra the only identities used are $\tilde\nabla\tilde\nabla^\natural = \tilde\nabla^\natural\tilde\nabla = \Box$, which is exact, and the mass-shell condition $\tilde P_{\Phi}\tilde P_{\Phi}^{\natural} = -m^{2}\,c^{2}$, which is the definition of the on-shell four-momentum; no array enters. The pair reading uses the same identity twice, once for each half: $\mathbb{D}^2$ is $\tilde\nabla\tilde\nabla^{\natural}$ on one half and $\tilde\nabla^{\natural}\tilde\nabla$ on the other. No array enters that reading either.
+In the algebra the only identities used are $\tilde\nabla\tilde\nabla^\natural = \tilde\nabla^\natural\tilde\nabla = \Box$, which is exact, and the mass-shell condition $\langle\tilde K_{\Phi}\rangle_{\natural} = -k_m^{2}$, which is the definition of the on-shell wave-number element, equivalently $\tilde P_{\Phi}\tilde P_{\Phi}^{\natural} = -m^{2}c^{2}$ after the one multiplication by $\hbar^{2}$; no array enters. The pair reading uses the same identity twice, once for each half: $\mathbb{D}^2$ is $\tilde\nabla\tilde\nabla^{\natural}$ on one half and $\tilde\nabla^{\natural}\tilde\nabla$ on the other. No array enters that reading either.
 
 ## The Converse Direction
 
@@ -340,7 +357,7 @@ The device is older than this algebra. The second-order form of the Dirac equati
 
 Nothing in the display is a property of plane waves; the only identity used is $\tilde\nabla^{\natural}\tilde\nabla = \Box$, which is central. The equivalence was checked on plane waves at both frequency signs, with residual at the floating-point floor, and **off** the mass shell the same substitution leaves exactly
 
-$$\frac{1}{m}\tilde\nabla^{\natural}\tilde\nabla\tilde{Ξ}_{\mathrm{sp},R} - k_m\tilde{Ξ}_{\mathrm{sp},R} =\frac{1}{m}\left(\Box-k_m^{2}\right)\tilde{Ξ}_{\mathrm{sp},R} ,
+$$\frac{1}{k_m}\tilde\nabla^{\natural}\tilde\nabla\tilde{Ξ}_{\mathrm{sp},R} - k_m\tilde{Ξ}_{\mathrm{sp},R} =\frac{1}{k_m}\left(\Box-k_m^{2}\right)\tilde{Ξ}_{\mathrm{sp},R} ,
 $$
 
 which is the second member's defect, so the mass shell is the exact condition and not an approximation.
@@ -405,9 +422,9 @@ On the pair the same square is written as one operator. The pair operator $\math
 
 The square root is not scalar. The companion article on the Klein–Gordon equation proves that $\Box - k_m^{2}$ has no first-order scalar factorisation in $\mathbb{B}$, because a scalar coefficient would have to anticommute with all three quaternion units and none does. The Dirac square root escapes the obstruction by being operator-valued and by exchanging the halves: it is the conjugate pair $(\tilde{\nabla},\tilde{\nabla}^{\natural})$ acting on the two chiral halves, with the mass the same scalar in each. Written on the pair, the operator identity is $(\mathbb{D} - k_m)(\mathbb{D} + k_m) = \Box-k_m^{2}$ in each half; written as $\mathbb{D}\tilde{Ξ}_{\mathrm{sp}} = k_m\tilde{Ξ}_{\mathrm{sp}}$, it is $\mathbb{D}^2 = \Box$ in each half. The scalar no-go and the operator-valued square root are the same multiplication table seen from two sides.
 
-The square carries the mass shell $\tilde P_{\Phi}\tilde P_{\Phi}^{\natural} = -m^{2}\,c^{2}$, hence $E^2 = \vec p^2c^2 + m^2c^4$, and the mass-squared coefficient of the second-order operator; it does not carry the sign of the mass, the chirality of each half, or the relation between the halves that selects the first-order solution space from the larger second-order one. At fixed three-momentum the pair's second-order space has complex dimension sixteen and the first-order equation selects eight of them, so the square is a necessary and not a sufficient condition. The Klein–Gordon operator is the bosonic shadow of a first-order object that exchanges the two halves.
+The square carries the mass shell $\langle\tilde K_{\Phi}\rangle_{\natural} = -k_m^{2}$, hence $E^2 = \vec p^2c^2 + m^2c^4$, and the mass-squared coefficient of the second-order operator; it does not carry the sign of the mass, the chirality of each half, or the relation between the halves that selects the first-order solution space from the larger second-order one. At fixed three-momentum the pair's second-order space has complex dimension sixteen and the first-order equation selects eight of them, so the square is a necessary and not a sufficient condition. The Klein–Gordon operator is the bosonic shadow of a first-order object that exchanges the two halves.
 
-The converse holds exactly for the free pair. Read the first member as a definition, $\tilde{Ξ}_{\mathrm{sp},L} =\frac{1}{m}\tilde\nabla\tilde{Ξ}_{\mathrm{sp},R}$; the second member then becomes $(\Box-k_m^{2})\tilde{Ξ}_{\mathrm{sp},R} = 0$, so the free Dirac solutions stand in bijection with the free Klein–Gordon solutions of one chiral half, and the second half is the gradient of the first. In this two-term form there is no gauge freedom, because the only shift the gradient annihilates is the massless Weyl field, which takes the potential off the mass shell; the source's four-scalar form of the same construction does carry the residual gauge $\xi_{\mathrm{scl}}\mapsto\xi_{\mathrm{scl}}+\kappa$ with $D^*\kappa = 0$, and that is what earns the phrase *the Dirac field is a gauge field*. The correspondence is exact for the free field and stops at minimal coupling, where the commutator of the two generalized gradients is the field strength. Its smallest illustration is the static Yukawa pair, generator $e^{-mr}/r$ and second half $-(1+mr)e^{-mr}\vec r/(m r^3)$, on which the Dirac density is positive definite and the Klein–Gordon density vanishes.
+The converse holds exactly for the free pair. Read the first member as a definition, $\tilde{Ξ}_{\mathrm{sp},L} =\frac{1}{k_m}\tilde\nabla\tilde{Ξ}_{\mathrm{sp},R}$; the second member then becomes $(\Box-k_m^{2})\tilde{Ξ}_{\mathrm{sp},R} = 0$, so the free Dirac solutions stand in bijection with the free Klein–Gordon solutions of one chiral half, and the second half is the gradient of the first. In this two-term form there is no gauge freedom, because the only shift the gradient annihilates is the massless Weyl field, which takes the potential off the mass shell; the source's four-scalar form of the same construction does carry the residual gauge $\xi_{\mathrm{scl}}\mapsto\xi_{\mathrm{scl}}+\kappa$ with $D^*\kappa = 0$, and that is what earns the phrase *the Dirac field is a gauge field*. The correspondence is exact for the free field and stops at minimal coupling, where the commutator of the two generalized gradients is the field strength. Its smallest illustration is the static Yukawa pair, generator $e^{-mr}/r$ and second half $-(1+mr)e^{-mr}\vec r/(m r^3)$, on which the Dirac density is positive definite and the Klein–Gordon density vanishes.
 
 ## Summary of Notation
 
@@ -425,17 +442,20 @@ The converse holds exactly for the free pair. Read the first member as a definit
 | $\tilde{\nabla}^2 = \left(\partial^2/\partial R_t^2 - \lvert\vec\nabla\rvert^2\right)e_t + 2\,\partial/\partial R_t\,\vec\nabla$ | Square of the gradient alone; non-central, with a vector remainder |
 | $\Box = \tilde{\nabla}\tilde{\nabla}^{\natural} = \tilde{\nabla}^{\natural}\tilde{\nabla} = \partial^2/\partial R_t^2 + \Delta$ | d'Alembertian, series convention |
 | $\langle\tilde{Q}\rangle_{\natural} = \tilde{Q}\tilde{Q}^{\natural} = \sum_\mu Q_\mu^2$ | Biquaternion norm |
-| $\tilde P_{\Phi} =\frac{m\,c\,(i\omega/c\,e_t + \vec k)}{k_m}$ | Four-wavevector, $\tilde P_{\Phi}\tilde P_{\Phi}^{\natural} = -m^{2}\,c^{2}$ |
-| $\tilde R_\Phi = i r'_t\,e_t + \vec r$, with $\vec r = r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z$ | Four-position, phase $\mathrm{Sc}(\tilde P_{\Phi}\tilde{R}_\Phi^{\natural}) = \vec k\cdot\vec r - \omega r'_t/c$ |
+| $\tilde K_{\Phi} =\frac{\tilde P_{\Phi}}{\hbar}=i k_{t}^{\prime}e_t+\vec k_{\Phi}$, with $k_{t}^{\prime}=\omega/c=E/(\hbar c)$ and $\vec k_{\Phi}=\vec p/\hbar$ | Wave-number biquaternion; both coordinates inverse lengths, the unit of $\Box$ and $k_m$ |
+| $\tilde P_{\Phi} =\frac{m\,c\,(i\omega/c\,e_t + \vec k)}{k_m}$ | Four-wavevector, $\tilde P_{\Phi}=\hbar\tilde K_{\Phi}$ and $\tilde P_{\Phi}\tilde P_{\Phi}^{\natural} = -m^{2}\,c^{2}$ |
+| $\tilde R_\Phi = i r'_t\,e_t + \vec r$, with $\vec r = r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z$ | Four-position, phase $\mathrm{Sc}(\tilde K_{\Phi}\tilde{R}_\Phi^{\natural}) = \vec k\cdot\vec r - \omega r'_t/c$ |
+| $\langle\tilde K_{\Phi}\rangle_{\natural} = -k_m^{2}$ | Mass shell on the wave-number element, equivalently $\omega^2=\vec k^2c^2+k_m^{2}c^2$ |
 | $1/k_m$ | The mass length of the operator pair, $\hbar/(mc)$ (inverse reduced Compton wavelength) |
 | $\tilde{\nabla}\tilde{Ξ}_{\mathrm{sp},R} = k_m\tilde{Ξ}_{\mathrm{sp},L}$, $\tilde{\nabla}^{\natural}\tilde{Ξ}_{\mathrm{sp},L} = k_m\tilde{Ξ}_{\mathrm{sp},R}$ | The one-sided pair; linear, with the mass the same scalar in each half |
-| $\tilde{Ξ}_{\mathrm{sp},L} =\frac{1}{m}\tilde\nabla\tilde{Ξ}_{\mathrm{sp},R}$ | The second half as the gradient of the first; the pair's equivalent form, exact whenever $(\Box-k_m^{2})\tilde{Ξ}_{\mathrm{sp},R} = 0$ |
+| $\tilde{Ξ}_{\mathrm{sp},L} =\frac{1}{k_m}\tilde\nabla\tilde{Ξ}_{\mathrm{sp},R}$ | The second half as the gradient of the first, the division by $k_m$ being the one that makes a gradient an element of the same kind; the pair's equivalent form, exact whenever $(\Box-k_m^{2})\tilde{Ξ}_{\mathrm{sp},R} = 0$ |
 | $\langle\tilde{Ξ}_{\mathrm{sp}}\rangle_{*} = \sum_\mu\lvert\tilde{Ξ}_{\mathrm{sp},\mu}\rvert^2$ | Hermitian norm of a field, positive definite; the Dirac density of the pair |
 | $\tilde{Ξ}_{\mathrm{sp}} = (\tilde{Ξ}_{\mathrm{sp},L},\tilde{Ξ}_{\mathrm{sp},R})$ | The chiral pair as an ordered pair of elements |
 | $E^2 = \vec p^2c^2 + m^2c^4$ | Dispersion relation |
 
 ## Further Reading
 
+- [The Three Wavenumbers of a Particle](the-three-wavenumbers-of-a-particle.html), for the element $\tilde K_{\Phi}=\tilde P_{\Phi}/\hbar$ whose two coordinates are read in this article.
 - P. A. M. Dirac, "The quantum theory of the electron," *Proceedings of the Royal Society A* **117** (1928) 610–624, for the original first-order equation and its second-order consequence.
 - O. Klein, "Elektrodynamik und Wellenmechanik vom Standpunkt des Korrespondenzprinzips," *Zeitschrift für Physik* **41** (1927) 407–442, and W. Gordon, "Der Comptoneffekt nach der Schrödingerschen Theorie," *Zeitschrift für Physik* **40** (1926) 117–133, for the second-order relativistic wave equation.
 - J. D. Bjorken and S. D. Drell, *Relativistic Quantum Mechanics* (McGraw-Hill, 1964), for the first-order equation, its second-order square and the plane-wave solutions.
