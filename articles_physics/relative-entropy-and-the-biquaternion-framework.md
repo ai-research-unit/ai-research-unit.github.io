@@ -184,7 +184,7 @@ $$
 (r'_t,\tilde Q_2,\tilde Q_1)\longmapsto
 \omega\big(\tilde Q_2\,\sigma_{r'_{t}}^{\xi_{\mathrm{alt}},\omega}(\tilde Q_1)\big),
 $$
-where $\sigma^{(\xi_{\mathrm{alt}},\omega)}$ is the **Connes cocycle** flow relating the modular flows of the two states. Two facts connect this object to the rest of the subcategory: the relative modular operator of $\omega$ with itself is the modular operator $\Delta_\omega$ of the Tomita construction, and the modular Hamiltonian $K_\omega=-\log\Delta_\omega$ of the modular companions is the $(\omega,\omega)$ case of the object defined here. The relative entropy is thus the expectation of the logarithm of the relative modular operator in the state's own GNS vector, and the modular Hamiltonian is its diagonal.
+where $\sigma^{(\xi_{\mathrm{alt}},\omega)}$ is the **Connes cocycle** flow relating the modular flows of the two states. Two facts connect this object to the rest of the subcategory: the relative modular operator of $\omega$ with itself is the modular operator $\Delta_\omega$ of the Tomita construction, and the modular Hamiltonian $H_{\mathrm{modular},\omega}=-\log\Delta_\omega$ of the modular companions is the $(\omega,\omega)$ case of the object defined here. The relative entropy is thus the expectation of the logarithm of the relative modular operator in the state's own GNS vector, and the modular Hamiltonian is its diagonal.
 
 Within the finite-dimensional algebra the relative modular operator is explicit. On the Hilbert–Schmidt space of the algebra, with the state $\omega$ fixing the vector $\Omega_\omega=\tilde{Ϛ}_\omega^{1/2}$, the relative Tomita operator is $\tilde Q_2\Omega_{\mathrm{alt},\xi}\mapsto\tilde Q_2^{*}\Omega_\omega$ and its polar decomposition gives
 $$

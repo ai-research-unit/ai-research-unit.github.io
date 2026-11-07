@@ -142,10 +142,10 @@ The map is linear, completely positive, trace-preserving and idempotent, but it 
 The map is **rank two**: it has a Kraus representation with two operators. In the pointer basis they are
 
 $$
-K_1 = |0\rangle_{*}\langle 0|, \qquad K_2 = |0\rangle\langle 1| ,
+M_{\mathrm{kraus},1} = |0\rangle_{*}\langle 0|, \qquad M_{\mathrm{kraus},2} = |0\rangle\langle 1| ,
 $$
 
-where $K_1$ is $\tilde\Pi_1(\vec u)$ itself and $K_2$ is its raising companion, the off-diagonal element that carries the second logical state into the first. They satisfy $\sum_a K_a^\dagger K_a = e_t$ and $\sum_a K_a\,\tilde{Ϛ}\,K_a^\dagger = \tilde\Pi_1(\vec u)\,\mathrm{Tr}(\tilde{Ϛ})$, which is $\tilde\Pi_1(\vec u)$ on every state. The completeness and the reset property are elementary matrix identities; they were checked explicitly in the $2\times2$ representation, where $\sum_a K_a^\dagger K_a = I$ and the image of an arbitrary state $\tilde{Ϛ}$ is $\tilde\Pi_1$ independent of $\tilde{Ϛ}$. The minimal Kraus rank of the reset channel is two.
+where $M_{\mathrm{kraus},1}$ is $\tilde\Pi_1(\vec u)$ itself and $M_{\mathrm{kraus},2}$ is its raising companion, the off-diagonal element that carries the second logical state into the first. They satisfy $\sum_a K_a^\dagger K_a = e_t$ and $\sum_a K_a\,\tilde{Ϛ}\,K_a^\dagger = \tilde\Pi_1(\vec u)\,\mathrm{Tr}(\tilde{Ϛ})$, which is $\tilde\Pi_1(\vec u)$ on every state. The completeness and the reset property are elementary matrix identities; they were checked explicitly in the $2\times2$ representation, where $\sum_a K_a^\dagger K_a = I$ and the image of an arbitrary state $\tilde{Ϛ}$ is $\tilde\Pi_1$ independent of $\tilde{Ϛ}$. The minimal Kraus rank of the reset channel is two.
 
 ### The Entropy Change
 
@@ -290,7 +290,7 @@ Reversible operations — rotor conjugations — preserve the biquaternion norm,
 | $\mathcal{S}(\tilde{Ϛ}) = -2\,\mathrm{Sc}(\tilde{Ϛ}\log\tilde{Ϛ}) = h(|\vec r|)$ | Entropy functional (nats) |
 | $h(x) = -\tfrac{1+x}{2}\log\tfrac{1+x}{2} - \tfrac{1-x}{2}\log\tfrac{1-x}{2}$ | Binary entropy, bias argument: $h(0)=\log 2$, $h(1)=0$ |
 | $\mathcal{E}_{\vec u}(\tilde{Ϛ}) = \tilde\Pi_1(\vec u)\,\mathrm{Tr}(\tilde{Ϛ})$ | Erasure map (non-unital reset) |
-| $K_1, K_2$ | Kraus operators of erasure, $\sum_a K_a^\dagger K_a = e_t$ |
+| $M_{\mathrm{kraus},1}, M_{\mathrm{kraus},2}$ | Kraus operators of erasure, $\sum_a K_a^\dagger K_a = e_t$ |
 | $\Delta\mathcal{S} = -\mathcal{S}(\tilde{Ϛ})$ | Entropy debit of erasure |
 | $\tilde{P} = i(E/c)e_t + \vec p$ | Material four-momentum (energy-momentum) |
 | $E = -i\,c\,\mathrm{Sc}(\tilde{P})$ | Energy (timelike component) |
