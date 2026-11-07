@@ -123,7 +123,7 @@ The free mass shell is
 $$
 \tilde P_{\Phi}\tilde P_{\Phi}^{\natural}= -m^{2}\,c^{2},
 \qquad
-\tilde P_{\Phi}\,k_{\mathrm{mo}} = i\frac{\omega}{c}e_t + \vec e_x k ,
+\tilde P_{\Phi}\,k_{\Phi} = i\frac{\omega}{c}e_t + \vec e_x k ,
 $$
 
 whose two roots $\omega = \pm\sqrt{k^2c^2 +m^{2}\,c^{4}}\frac{k_m}{m\,c}$ are the two frequency branches of the parent: the particle and the antiparticle. Under the central shift the covariant wave biquaternion acquires the constant shift from the potential, and the on-shell condition reads, on each half-line, the same relation with the frequency measured from the local potential. On the incident side the incident wave lies on the positive root. On the far side of a Klein step the same wave has $E - V_0 < -mc^2$, so it lies on the **negative root** of the local mass shell. The step has taken the propagating branch and exchanged it with its conjugate:
@@ -132,7 +132,7 @@ $$
 \boxed{\;\omega \;\longmapsto\; \omega -\frac{k_m\,ϙ\,\xi}{m\,c} \quad\text{with}\quad  \omega -\frac{k_m\,ϙ\,\xi}{m\,c} < 0\;}.
 $$
 
-This is the algebraic content of the phrase "the far side is reached by an antiparticle". The exchange of the two roots is the same operation that the corpus's conjugation articles study as charge conjugation and the real structure $\flat$; here it is produced not by conjugation of the field but by a central shift of the momentum, which is why the framework can describe it without leaving the algebra. What the framework cannot do is change the particle number; that is the second-quantized statement, and it belongs to the companion articles on the Dirac sea and on pair creation. Here $k_{\mathrm{mo}}=\frac{k_m\,p}{m\,c}$ is the momentum length.
+This is the algebraic content of the phrase "the far side is reached by an antiparticle". The exchange of the two roots is the same operation that the corpus's conjugation articles study as charge conjugation and the real structure $\flat$; here it is produced not by conjugation of the field but by a central shift of the momentum, which is why the framework can describe it without leaving the algebra. What the framework cannot do is change the particle number; that is the second-quantized statement, and it belongs to the companion articles on the Dirac sea and on pair creation. Here $k_{\Phi}=\frac{k_m\,p}{m\,c}$ is the momentum length.
 
 ### The current lives in the material sector
 
@@ -187,7 +187,7 @@ The biquaternion framework locates the three ingredients: the potential is centr
 | $\alpha = \sqrt{(E - mc^2)/(E + mc^2)}$ | Incident-side spinor parameter |
 | $\beta = \sqrt{(V_0 - E - mc^2)/(V_0 - E + mc^2)}$ | Far-side spinor parameter |
 | $r$, $t$, $R$, $T$ | Reflection and transmission amplitudes and probabilities |
-| $\tilde P_{\Phi}\,k_{\mathrm{mo}}$, $\tilde P_{\Phi}\tilde P_{\Phi}^{\natural} = -m^{2}\,c^{2}$ | Wave biquaternion and mass shell |
+| $\tilde P_{\Phi}\,k_{\Phi}$, $\tilde P_{\Phi}\tilde P_{\Phi}^{\natural} = -m^{2}\,c^{2}$ | Wave biquaternion and mass shell |
 | $\mathbb{B}_{\Phi}$ | Anti-Hermitian (material) sector; home of the current |
 
 ## Further Reading

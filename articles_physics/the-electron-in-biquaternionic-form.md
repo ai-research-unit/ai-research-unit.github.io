@@ -127,11 +127,11 @@ The electron's relativistic dynamics is the chirality pair $\tilde{\nabla}\tilde
 **A note on the wave biquaternion.** The mass-shell condition is written in the corpus convention, in which the four-wavevector has the imaginary time component of the $i r'_t$ convention,
 
 $$
-\tilde P_{\Phi}\,k_{\mathrm{mo}} = i\,\frac{\omega}{c}\,e_t + \vec k, \qquad
-\langle\tilde P_{\Phi}\,k_{\mathrm{mo}}\rangle_{\natural} = \tilde P_{\Phi}\tilde P_{\Phi}^{\natural}\,k_{\mathrm{mo}}^{2} = -\frac{\omega^2}{c^2} + \vec k^2 = -k_{m_e}^{2},
+\tilde P_{\Phi}\,k_{\Phi} = i\,\frac{\omega}{c}\,e_t + \vec k, \qquad
+\langle\tilde P_{\Phi}\,k_{\Phi}\rangle_{\natural} = \tilde P_{\Phi}\tilde P_{\Phi}^{\natural}\,k_{\Phi}^{2} = -\frac{\omega^2}{c^2} + \vec k^2 = -k_{m_e}^{2},
 $$
 
-with $\vec k^2$ the Euclidean square $k_x^2+k_y^2+k_z^2$, which is what the norm of a vector part produces. This is $E^2 = \vec p^2c^2 + m_e^2c^4$ under $E =\frac{m\,c\,\omega}{k_m}$, $\vec p =\frac{m\,c\,\vec k}{k_m}$, and it is the form used by the companion solutions article and by the parent Dirac article. Here $k_{\mathrm{mo}}=\frac{k_m\,p}{m\,c}$ is the momentum length.
+with $\vec k^2$ the Euclidean square $k_x^2+k_y^2+k_z^2$, which is what the norm of a vector part produces. This is $E^2 = \vec p^2c^2 + m_e^2c^4$ under $E =\frac{m\,c\,\omega}{k_m}$, $\vec p =\frac{m\,c\,\vec k}{k_m}$, and it is the form used by the companion solutions article and by the parent Dirac article. Here $k_{\Phi}=\frac{k_m\,p}{m\,c}$ is the momentum length.
 
 **Antiparticle.** The two frequency branches are exchanged by charge conjugation, and in the quantized interpretation the negative-frequency branch describes the positron. The framework represents the electron and the positron on the same algebraic footing; which branch is called the electron is fixed by the charge convention of the previous section, not by the algebra.
 
@@ -197,14 +197,14 @@ Two qualifications belong with the result. First, the derivation is the standard
 
 ## Zitterbewegung: The Scale of the Mass, Not a Signature of a Sector
 
-The electron is the particle on which the Zitterbewegung was found. In the framework's own terms, the trembling is the interference of the two frequency branches, with angular frequency $2c\,k_E$ and amplitude of order $\dfrac{1}{2\,k_{m_e}}$. For the electron at rest these are
+The electron is the particle on which the Zitterbewegung was found. In the framework's own terms, the trembling is the interference of the two frequency branches, with angular frequency $2c\,k_{t}^{\prime}$ and amplitude of order $\dfrac{1}{2\,k_{m_e}}$. For the electron at rest these are
 
 $$
 \omega_Z = 2c\,k_{m_e} = 1.55269\times10^{21}\ \text{rad s}^{-1},
 \qquad \frac{1/k_{m_e}}{2} = 193.1\ \text{fm},
 $$
 
-half the reduced Compton wavelength $386.2$ fm. These are the standard values, reconfirmed numerically in the companion article on the Zitterbewegung. Here $k_E=E/(\frac{m\,c^{2}}{k_m})$ is the energy length.
+half the reduced Compton wavelength $386.2$ fm. These are the standard values, reconfirmed numerically in the companion article on the Zitterbewegung. Here $k_{t}^{\prime}=E/(\frac{m\,c^{2}}{k_m})$ is the energy length.
 
 The framework's temptation is to read the trembling as the observable face of the complexification — positive- and negative-energy branches being the two sectors. The companion article tests that identification and refutes it. The energy sign is the sign of the eigenvalue of a Hamiltonian whose terms multiply the field on the right, through the action $\tilde Q\mapsto i\tilde Q\vec e_x$, and no element of $\mathbb{B}$ does that by left multiplication, while the sectors are the two signs of the star. The two are also splits of different objects: a family of solutions and the values it takes. What survives is a relation of scale and phase: at rest the trembling frequency is exactly twice the rest-energy sector-rotation frequency $ck_{m_e}$, because the trembling phase is the square of the free-evolution phase. For the electron this means that its rest energy sets both the rate at which the sectors rotate into one another and the frequency of the trembling, without the trembling being an informational-sector effect.
 
@@ -239,7 +239,7 @@ Two facts about products carry the whole structure, and they are stated in words
 | Mass term couples the two chirality values, off-diagonally | Derived | the two-value split; the off-diagonal pair |
 | Two-sided single-equation form | Derived (dictionary) | the real-linear dictionary $F\in\mathbb{B}$; a change of representation, not of physics |
 | Rest-energy phase rotates sectors at $ck_{m_e}$ | Derived | $\exp(-i\theta) = \cos\theta\,e_t - \sin\theta\,(ie_t)$ |
-| Zitterbewegung frequency and amplitude | Derived | two-branch interference; $2c\,k_E$, $\dfrac{1}{2\,k_{m_e}}$ |
+| Zitterbewegung frequency and amplitude | Derived | two-branch interference; $2c\,k_{t}^{\prime}$, $\dfrac{1}{2\,k_{m_e}}$ |
 | Mass value $m_e$ | Represented | parameter of the equation |
 | Charge value $e$, sign convention, quantisation | Represented | minimal coupling; no derivation in the framework |
 | Electron/positron labelling | Represented | charge convention; charge conjugation is a symmetry |
@@ -328,7 +328,7 @@ The electron's data are not confined to either sector: state-like and field-stre
 | $\mathrm{Tr}(\tilde Q_1\tilde Q_2)$ | Trace pairing, read as $2\,\mathrm{Sc}(\tilde Q_1\tilde Q_2)$ at normalisation |
 | $\tilde{J}_{\Phi} = ic\,j_0 e_t + \vec j$ | Conserved four-current, in $\mathbb{B}_{\Phi}$ |
 | $\tilde{F} = iϙ\vec u_x/(4\pi\sqrt{\epsilon}\|(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)\|^2)$ | Coulomb field of a point charge, in $\mathbb{B}_{\Psi}$; $\vec u_x$ the radial unit vector |
-| $\tilde P_{\Phi}\,k_{\mathrm{mo}} = i(\omega/c)\,e_t + \vec k$ | Four-wavevector |
+| $\tilde P_{\Phi}\,k_{\Phi} = i(\omega/c)\,e_t + \vec k$ | Four-wavevector |
 | $\varepsilon=(1,-1,-1,-1)$ | Sign weights of the $\mathbb{B}_{\Phi}$ frame; metric in the closing section |
 | $m_e$, $e$, $\frac{m\,c}{k_m}$, $c$ | Electron mass, elementary charge, reduced Planck constant, speed of light |
 | $\mathcal{N}F = (i\partial/\partial r'_t+\vec\nabla)F - k_{m_e}i\,\overline{F}\,\vec e_z$, $\vec\nabla=\sum_k\vec e_k\partial/\partial R_k$ | Two-sided Dirac equation of the dictionary form |
