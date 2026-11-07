@@ -37,13 +37,13 @@ $$
 and Hamilton's equations are
 
 $$
-dI_{k}/dr'_t=-\frac{\partial H_0}{\partial\theta_k},\qquad \,d\theta_{k}/dr'_t=\omega_k(I,R).
+c\,dI_{k}/dr'_t=-\frac{\partial H_0}{\partial\theta_k},\qquad \,d\theta_{k}/dr'_t=\frac{1}{c}\,\omega_k(I,R).
 $$
 
 Now let the parameters vary slowly and periodically: $R=R(\epsilon r'_t)$ with $\epsilon\ll1$ and $R(T)=R(0)$ after a period $T$. For a time-independent $H_0$, $I$ is exactly conserved; for slowly varying parameters, the **adiabatic theorem for classical systems** states that $I$ is conserved to all orders in $\epsilon$, and the angle evolves as
 
 $$
-\theta_k(r'_t)=\theta_k(0)+\int_0^{r'_{t}}\omega_k\!\left(I,R(\epsilon\tau)\right)d\tau+\Delta\theta_k .
+\theta_k(r'_t)=\theta_k(0)+\int_0^{r'_{t}}\frac{\omega_k\!\left(I,R(\epsilon\tau)\right)}{c}\,d\tau+\Delta\theta_k .
 $$
 
 The first two terms are dynamical: they are the phase accumulated at the instantaneous frequency. The third term is the **Hannay angle**. It is independent of the speed of the cycle to leading order, depends only on the geometric cycle of $R$, and is the classical geometric phase. Its general expression, derived by Hannay and confirmed in the examples, is
@@ -67,10 +67,10 @@ $$
 I=I^{(0)}+\epsilon\,I^{(1)}+\cdots .
 $$
 
-At order $\epsilon^0$, $\left(d\theta/dr'_t\right)^{(0)}=\omega(I^{(0)},R)$ and $I^{(0)}$ is constant: the adiabatic invariant. The correction $I^{(1)}$ is determined by integrating $-\partial H_0/\partial\theta$ along the fast motion, averaged over the fast angle. Substituting $R(\epsilon r'_t)$ and expanding $\omega(I,R)$ about $I^{(0)}$, so that $\omega=\omega(I^{(0)},R)+\epsilon\,(\partial\omega/\partial I)\,I^{(1)}+\cdots$, the first-order angle obeys
+At order $\epsilon^0$, $\left(d\theta/dr'_t\right)^{(0)}=\frac{1}{c}\omega(I^{(0)},R)$ and $I^{(0)}$ is constant: the adiabatic invariant. The correction $I^{(1)}$ is determined by integrating $-\partial H_0/\partial\theta$ along the fast motion, averaged over the fast angle. Substituting $R(\epsilon r'_t)$ and expanding $\omega(I,R)$ about $I^{(0)}$, so that $\omega=\omega(I^{(0)},R)+\epsilon\,(\partial\omega/\partial I)\,I^{(1)}+\cdots$, the first-order angle obeys
 
 $$
-\frac{d\theta^{(1)}}{dr'_t}=\frac{\partial\omega}{\partial I}\,I^{(1)}+\cdots,
+\frac{d\theta^{(1)}}{dr'_t}=\frac{1}{c}\frac{\partial\omega}{\partial I}\,I^{(1)}+\cdots,
 $$
 
 with the sum over the components of $I$, and its average over the cycle produces the Hannay angle. The result is the one stated: the integral around the cycle of the connection, differentiated with respect to the action. Two features of the derivation are worth emphasising. First, the angle is a geometric object because the leading contribution is a closed line integral in parameter space; a change of the speed of the cycle changes the dynamical part $\int\omega\,dr'_t$ but not the closed integral. Second, the same connection appears in the quantum problem, which is why the classical angle is the action-derivative of the quantum phase; the derivation can be carried out either from the classical adiabatic perturbation theory or from the stationary-phase evaluation of the quantum propagator, and the two agree.
@@ -96,10 +96,10 @@ $$
 generates the flow
 
 $$
-d\tilde S_{\Psi}/dr'_t=\vec\omega\times\vec S ,
+d\tilde S_{\Psi}/dr'_t=\frac{1}{c}\,\vec\omega\times\vec S ,
 $$
 
-the rigid rotation of the spin about the axis $\vec\omega$ at frequency $|\vec\omega|$. This is the rotor flow: for $H=2\vec G\cdot\vec S$ with $\vec G$ the generator, the flow is $\tilde S_{\Psi}\mapsto \exp(r'_t\vec G)\tilde S_{\Psi} \exp(-r'_t\vec G)$, and the angular velocity of the spin is $2\vec G$.
+the rigid rotation of the spin about the axis $\vec\omega$ at frequency $|\vec\omega|$. This is the rotor flow: for $H=2\vec G\cdot\vec S$ with $\vec G$ the generator, the flow is $\tilde S_{\Psi}\mapsto \exp(\tfrac{r'_t}{c}\vec G)\tilde S_{\Psi} \exp(-\tfrac{r'_t}{c}\vec G)$, and the angular velocity of the spin is $2\vec G$, an angular frequency because $\vec G$ is one.
 
 ### The Slow Parameter and the Rotor
 
@@ -159,7 +159,7 @@ around the loop. The curvature of this connection is $d\mathcal A=\sin\theta\,d\
 
 ### The Body-Frame Reading of the Connection
 
-The connection one-form is visible in the rotor itself. For a rotor field $\tilde u(r'_t)$ with body-frame angular velocity $\vec\omega_b=+2\tilde u^{\natural}d\tilde u/dr'_t$, the algebra-valued one-form
+The connection one-form is visible in the rotor itself. The clock here is the material length $r'_t=c\,t$, so $\vec\omega_b$ is a **twist per unit material length**, an inverse length, while the precession rate $\vec\omega$ that multiplies an action is an angular frequency; the two differ by $c$, and the Hannay integral $\oint\vec\omega_b^{\parallel}\,dr'_t$ is dimensionless for that reason. For a rotor field $\tilde u(r'_t)$ with body-frame twist $\vec\omega_b=+2\tilde u^{\natural}d\tilde u/dr'_t$, the algebra-valued one-form
 
 $$
 \tilde u^{\natural}\,d\tilde u=+\tfrac12\,\vec\omega_b\,dr'_t
@@ -221,7 +221,7 @@ $$
 \vec\omega=\omega_0\vec u_x(r'_t).
 $$
 
-In the frame rotating about $\vec e_z$ at rate $\epsilon$, the field is static and the effective angular velocity is
+In the frame rotating about $\vec e_z$ at the material twist $\epsilon$, that is at the angular frequency $c\,\epsilon$, the field is static and the effective angular velocity is
 
 $$
 \vec\omega_{\mathrm{eff}}=\omega_0\vec u_x(0)-\epsilon\,\vec e_z ,
@@ -283,7 +283,7 @@ The one place where the quantum counterpart enters the discussion is the formula
 Hannay's angle is the classical geometric phase of an adiabatically cycled system, and in the biquaternion algebra it is the holonomy of the rotor that carries a fixed axis to the slowly varying direction.
 
 - Action-angle variables $(\theta,I)$ with slowly cycled parameters $R$ have an adiabatic invariant $I$ and an angle $\theta$ that acquires, after a closed cycle, the Hannay angle $\Delta\theta_k=-\partial/\partial I_k\,\oint\sum_\mu\mathcal A_\mu dR_\mu$, the action-derivative of the Berry phase.
-- The classical spin vector is a point of the coadjoint orbit $\langle\tilde S_{\Psi}\rangle_{\natural}=S^2$, with $H=\vec\omega\cdot\vec S$ generating the rotor flow $d\vec S/dr'_t=\vec\omega\times\vec S$.
+- The classical spin vector is a point of the coadjoint orbit $\langle\tilde S_{\Psi}\rangle_{\natural}=S^2$, with $H=\vec\omega\cdot\vec S$ generating the rotor flow $d\vec S/dr'_t=\frac{1}{c}\,\vec\omega\times\vec S$.
 - The direction $\vec u_x=\tilde u\vec e_z\tilde u^{*}$ defines a rotor field; the geodesic (shortest) rotor is $\tilde u_g=\cos\frac{\theta_0}{2}+\sin\frac{\theta_0}{2}\vec u_y$ with $\vec u_y$ in the plane perpendicular to $\vec e_z$, and its body-frame twist about the direction is $\omega_b^{\parallel}=-(1-\cos\theta_0)d\theta_{\mathrm{azm}}/dr'_t$, so that the Hannay angle is $-\oint\omega_b^{\parallel}dr'_t=\theta_{\mathrm{sol}}$.
 - Integrating the twist around a cycle of solid angle $\theta_{\mathrm{sol}}$ gives Hannay's angle $\Delta\theta_{\mathrm{Hannay}}=\theta_{\mathrm{sol}}$, the holonomy of the connection $\mathcal A=(1-\cos\theta)d\theta_{\mathrm{azm}}$ with curvature $\sin\theta\,d\theta\wedge d\theta_{\mathrm{azm}}$.
 - The exact rotating-frame solution of the uniformly precessing field gives the same $\theta_{\mathrm{sol}}$.

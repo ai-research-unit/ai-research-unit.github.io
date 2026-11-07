@@ -8,7 +8,7 @@ This article treats the magnetic moment and its precession as **classical** and 
 
 The biquaternion algebra contributes three things to the classical subject, and they are the reason the article is in this framework rather than in three-vector notation. First, the moment and the field are both pure real quaternions, and a **single quaternion product** yields the two bilinears of the magnetic coupling at once: its scalar part is the energy $-\vec\mu\cdot\vec B$, and its vector part is the torque $\vec\mu\times\vec B$. Second, the precession equation acquires the form of a **commutator**, $d\vec\mu/dr'_t = \tfrac{1}{2}[\vec\mu,\vec\omega_G]$, which is the classical Poisson-bracket evolution realized inside the algebra. Third, the solution is a **rotor conjugation**, $\vec\mu(r'_t) = \tilde u(r'_t)\,\vec\mu(0)\,\tilde u(r'_t)^{*}$, with a unit real quaternion whose half-angle is the same half-angle that appears throughout the series. The third point is what ties this article to the two that follow it: the rotor is the same object in the classical and in the spin-$\tfrac{1}{2}$ description, which is why the classical moment and the intrinsic moment obey the same precession law.
 
-The conventions are those of the foundational articles. The biquaternion algebra is $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, the quaternion basis is $e_t = 1, \vec e_x, \vec e_y, \vec e_z$ with $\vec e_\mu^2 = -e_t$, and the scalar imaginary is $i$ (central, $i^2 = -1$). The material sector is the anti-Hermitian subspace $\mathbb{B}_{\Phi}$ and the informational sector is the Hermitian subspace $\mathbb{B}_{\Psi}$, with $\mathbb{B} = \mathbb{B}_{\Phi} \oplus \mathbb{B}_{\Psi}$. The real-quaternion subspace $\mathbb{B}_{H}$ is the fixed space of complex conjugation, the home of the rotation rotors. The magnetic induction is $\vec B = \mu\vec H$, and the field strength is written in the canonical form $\tilde{F} = i\sqrt{\epsilon}\,\vec E - \sqrt{\mu}\,\vec H$ of the article *The Field-Strength Biquaternion and Its Invariants*.
+The conventions are those of the foundational articles. The clock is the material length $r'_t=c\,t$, so a precession equation reads $d\vec\mu/dr'_t=c^{-1}\gamma\,\vec\mu\times\vec B$ and the rotor's phase is $\gamma B r'_t/(2c)$; $\vec\omega_L=-\gamma\vec B$ and $\vec\omega_G$ are angular frequencies in $\mathrm{rad\,s^{-1}}$. The biquaternion algebra is $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, the quaternion basis is $e_t = 1, \vec e_x, \vec e_y, \vec e_z$ with $\vec e_\mu^2 = -e_t$, and the scalar imaginary is $i$ (central, $i^2 = -1$). The material sector is the anti-Hermitian subspace $\mathbb{B}_{\Phi}$ and the informational sector is the Hermitian subspace $\mathbb{B}_{\Psi}$, with $\mathbb{B} = \mathbb{B}_{\Phi} \oplus \mathbb{B}_{\Psi}$. The real-quaternion subspace $\mathbb{B}_{H}$ is the fixed space of complex conjugation, the home of the rotation rotors. The magnetic induction is $\vec B = \mu\vec H$, and the field strength is written in the canonical form $\tilde{F} = i\sqrt{\epsilon}\,\vec E - \sqrt{\mu}\,\vec H$ of the article *The Field-Strength Biquaternion and Its Invariants*.
 
 ## The Magnetic Moment of a Current Distribution
 
@@ -139,16 +139,16 @@ The magnitude of the moment is likewise conserved, since the equation of motion 
 
 ### Derivation from the Torque
 
-The angular momentum of the system is $\vec S$, and the moment is tied to it by $\vec\mu = \gamma\vec S$. The torque equation $d\vec S/dr'_t = \vec\tau$ becomes
+The angular momentum of the system is $\vec S$, and the moment is tied to it by $\vec\mu = \gamma\vec S$. The torque equation $d\vec S/dr'_t = \frac{1}{c}\vec\tau$ becomes
 
 $$
-d\vec S/dr'_t = \vec\mu\times\vec B = \gamma\,\vec S\times\vec B,
+d\vec S/dr'_t = \frac{1}{c}\,\vec\mu\times\vec B = \frac{\gamma}{c}\,\vec S\times\vec B,
 $$
 
 and multiplying by $\gamma$ gives the equation for the moment itself:
 
 $$
-\boxed{\;d\vec\mu/dr'_t = \gamma\,\vec\mu\times\vec B = \vec\mu\times\left(\gamma\vec B\right)\;}.
+\boxed{\;d\vec\mu/dr'_t = \frac{\gamma}{c}\,\vec\mu\times\vec B = \frac{1}{c}\,\vec\mu\times\left(\gamma\vec B\right)\;}.
 $$
 
 This is the **Larmor equation**. Its content is that the moment precesses about the field direction with angular velocity
@@ -176,15 +176,15 @@ $$
 the Larmor equation reads
 
 $$
-\boxed{\;d\vec\mu/dr'_t = \tfrac{1}{2}\left[\,\vec\mu,\;\vec\omega_G\,\right]\;}.
+\boxed{\;d\vec\mu/dr'_t = \tfrac{1}{2c}\left[\,\vec\mu,\;\vec\omega_G\,\right]\;}.
 $$
 
-The equation of motion is thus an **inner derivation** of the algebra, $d\vec\mu/dr'_t = -\mathrm{ad}_{\vec\omega_G/2}(\vec\mu) = \mathrm{ad}_{\vec\omega_L/2}(\vec\mu)$. The Larmor generator $\vec\omega_G$ is the negative of the angular velocity $\vec\omega_L = -\gamma\vec B$ of the precession: the first is the element written in the bracket, the second generates the derivation, and the two are listed separately in the notation table. Its antisymmetry is manifest — a commutator changes sign when its arguments are exchanged — and its trace vanishes, $\mathrm{Tr}[\vec\mu,\vec\omega_G] = 0$, which is the algebraic statement that the rotation preserves the biquaternion norm.
+The equation of motion is thus an **inner derivation** of the algebra, $d\vec\mu/dr'_t = -\mathrm{ad}_{\vec\omega_G/(2c)}(\vec\mu) = \mathrm{ad}_{\vec\omega_L/(2c)}(\vec\mu)$. The Larmor generator $\vec\omega_G$ is the negative of the angular velocity $\vec\omega_L = -\gamma\vec B$ of the precession: the first is the element written in the bracket, the second generates the derivation, and the two are listed separately in the notation table. Its antisymmetry is manifest — a commutator changes sign when its arguments are exchanged — and its trace vanishes, $\mathrm{Tr}[\vec\mu,\vec\omega_G] = 0$, which is the algebraic statement that the rotation preserves the biquaternion norm.
 
-This is the classical bracket form of the dynamics. The Hamiltonian of the moment in the field is $H = -\gamma\,\vec S\cdot\vec B$, and the classical evolution of any observable is $df/dr'_t = \{f,H\}$; the companion article *Similitudes Between the Poisson Bracket and the Quantum Commutator* shows that the components of angular momentum satisfy $\{S_i,S_j\} = \epsilon_{ijk}S_k$, from which
+This is the classical bracket form of the dynamics. The Hamiltonian of the moment in the field is $H = -\gamma\,\vec S\cdot\vec B$, and the classical evolution of any observable is $c\,df/dr'_t = \{f,H\}$; the companion article *Similitudes Between the Poisson Bracket and the Quantum Commutator* shows that the components of angular momentum satisfy $\{S_i,S_j\} = \epsilon_{ijk}S_k$, from which
 
 $$
-dS_{i}/dr'_t = \{S_i,H\} = -\gamma B_j\,\{S_i,S_j\} = -\gamma B_j\,\epsilon_{ijk}S_k = \gamma\,(\vec S\times\vec B)_i,
+c\,dS_{i}/dr'_t = \{S_i,H\} = -\gamma B_j\,\{S_i,S_j\} = -\gamma B_j\,\epsilon_{ijk}S_k = \gamma\,(\vec S\times\vec B)_i,
 $$
 
 which is the Larmor equation again. The biquaternion commutator $\tfrac{1}{2}[\vec\mu,\vec\omega_G]$ is that Poisson bracket written in the algebra, and it is the same bracket that the quantum article realizes as $[\tilde{S}_{\Psi,i},\tilde{S}_{\Psi,j}] =\frac{m\,c\,i\,\epsilon_{ijk}\,\tilde{S}_{\Psi,k}}{k_m}$.
@@ -233,13 +233,13 @@ The Larmor precession is the rotor conjugation
 $$
 \boxed{\;\vec\mu(r'_t) = \tilde u_L(r'_t)\,\vec\mu(0)\,\tilde u_L(r'_t)^{*},
 \qquad
-\tilde u_L(r'_t) = \exp\!\left(-\,\frac{\gamma B r'_t}{2}\,\vec u_{B,k} \vec e_k\right)\;},
+\tilde u_L(r'_t) = \exp\!\left(-\,\frac{\gamma B r'_t}{2\,c}\,\vec u_{B,k} \vec e_k\right)\;},
 $$
 
 with $\vec u_B = \vec B/B$ the field direction. Differentiating the rotor gives
 
 $$
-d\tilde u_L/dr'_t = -\,\frac{\gamma B}{2}\,\vec u_{B,k} \vec e_k\,\tilde u_L
+c\,d\tilde u_L/dr'_t = -\,\frac{\gamma B}{2}\,\vec u_{B,k} \vec e_k\,\tilde u_L
 = -\,\frac{1}{2}\,\vec\omega_G\,\tilde u_L,
 \qquad \vec\omega_G = \gamma\,\vec B,
 $$
@@ -267,12 +267,12 @@ The rotor $\tilde u_L(r'_t)$ rotates by the angle $-\gamma B r'_t$ about $\vec u
 The precession law has a second interpretation, which is the content of the **Larmor theorem**. Consider a frame rotating with angular velocity $\vec\Omega$ with respect to the laboratory, and let $\vec\mu_{\rm rot}$ be the moment as seen in that frame. The moment in the laboratory is obtained by the rotor of the frame, $\vec\mu = \tilde u_\Omega\,\vec\mu_{\rm rot}\,\tilde u_\Omega^{*}$ with $\tilde u_\Omega = \exp(\tfrac{\Omega r'_t}{2\,c}\,\vec u_{\Omega,k} \vec e_k)$, and the derivative separates into the frame's own rotation and the additional motion seen in the frame,
 
 $$
-d\vec\mu/dr'_t = \tfrac{1}{2}\left[\vec\Omega,\vec\mu\right]
+d\vec\mu/dr'_t = \tfrac{1}{2c}\left[\vec\Omega,\vec\mu\right]
 + \tilde u_\Omega\left(d\vec\mu_{\rm rot}/dr'_t\right)\tilde u_\Omega^{*} ,
 \qquad \vec\Omega = \sum_k \Omega_k \vec e_k .
 $$
 
-Substituting the Larmor equation $d\vec\mu/dr'_t = \tfrac{1}{2}[\vec\mu,\vec\omega_G]$ and collecting the generator of the frame's own motion gives
+Substituting the Larmor equation $d\vec\mu/dr'_t = \tfrac{1}{2c}[\vec\mu,\vec\omega_G]$ and collecting the generator of the frame's own motion gives
 
 $$
 \tilde u_\Omega\,d\vec\mu_{\rm rot}/dr'_t\,\tilde u_\Omega^{*}
@@ -344,14 +344,14 @@ so that the energy is $E = \mathrm{Sc}(\vec\mu\vec B) = -\vec\mu\cdot\vec B$ and
 The torque equation for a moment tied to an angular momentum by $\vec\mu = \gamma\vec S$ is the **Larmor equation**
 
 $$
-\boxed{\;d\vec\mu/dr'_t = \gamma\,\vec\mu\times\vec B,
+\boxed{\;d\vec\mu/dr'_t = \frac{\gamma}{c}\,\vec\mu\times\vec B,
 \qquad \vec\omega_L = -\,\gamma\,\vec B\;},
 $$
 
 which in the algebra is the commutator
 
 $$
-d\vec\mu/dr'_t = \tfrac{1}{2}\left[\vec\mu,\vec\omega_G\right],
+d\vec\mu/dr'_t = \tfrac{1}{2c}\left[\vec\mu,\vec\omega_G\right],
 \qquad \vec\omega_G = \gamma\,\vec B.
 $$
 
@@ -360,7 +360,7 @@ The equation is solved by the **rotor conjugation**
 $$
 \vec\mu(r'_t) = \tilde u_L(r'_t)\,\vec\mu(0)\,\tilde u_L(r'_t)^{*},
 \qquad
-\tilde u_L(r'_t) = \exp\!\left(-\,\frac{\gamma B r'_t}{2}\,\vec u_{B,k} \vec e_k\right),
+\tilde u_L(r'_t) = \exp\!\left(-\,\frac{\gamma B r'_t}{2\,c}\,\vec u_{B,k} \vec e_k\right),
 $$
 
 with $\tilde u_L$ a unit real quaternion; the moment turns through $\gamma B r'_t$ while the rotor turns through half that angle, the double-cover half-angle of the algebra. The biquaternion norm $\langle\vec\mu\rangle_{\natural}$ and the energy $E$ are conserved, so the moment precesses on a cone about the field at the Larmor frequency $\omega_L = |\gamma|B$. The **Larmor theorem** states that in a frame rotating at $\vec\Omega = -\gamma\vec B$ the moment is at rest; the generator of the motion in that frame is the sum $\vec\omega_G + \vec\Omega$ of the Larmor and frame generators, whose corresponding angular velocity is the difference $\vec\omega_L - \vec\Omega$, and the theorem is exact for a single moment in a uniform field.
