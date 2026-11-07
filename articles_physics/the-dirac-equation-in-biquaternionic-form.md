@@ -22,7 +22,7 @@ That wave number is the reciprocal of the reduced Compton wavelength of the fiel
 
 This article develops the biquaternionic formulation of the Dirac equation. The gradient $\tilde{\nabla}$ is the Dirac operator of the algebra: it is first order, it acts by left multiplication, and it squares to the scalar d'Alembertian through its conjugate. The equation is the chiral pair on the two values of the subscript, and each half obeys the Klein–Gordon equation. A second, **two-sided** form of the same equation — Kravchenko's dictionary, in which the spatial derivative acts from the left and the mass term from the right — is developed in *An Explicit Dictionary with Conjugation in the Mass Term*; the two forms are compared in *The One-Sided and the Two-Sided Equation*.
 
-The article is organized as follows. First the gradient and the equation are stated, then the algebra and the two values of the subscript. The equation is solved, first for plane waves and then in spherical and cylindrical coordinates, and the relation to the Maxwell equation follows. The two-sided form, the potentials and the algebra discussion close the body, and *The Legacy Pauli Gamma Formulation* prints the older display for the reader who has to compare with it.
+The article is organized as follows. First the gradient and the equation are stated, then the algebra and the two values of the subscript, the value being read as a rule on elements and not as a space. The equation is solved, first for plane waves and then in spherical and cylindrical coordinates, and the relation to the Maxwell equation follows. The two-sided form, the potentials and the algebra discussion follow, and a closing section states which constructions the literature carries beside a Dirac equation and which of them the equation does not need. *The Legacy Pauli Gamma Formulation* prints the older display for the reader who has to compare with it.
 
 The conventions are those of the companion articles: the algebra and its units are those of *Algebra and Element Conventions*, the coordinates, the metric and the frame those of *Frame and Metric Conventions*, and the units and the two writings of the temporal slot those of *Physics Units and Common Elements Conventions*. No formula of theirs is repeated here. Two points are this article's own. The symbol $c$ is the speed of light **in the medium** and $c_0$ the vacuum speed, so that $c=c_0$ only in vacuum and a result quoted with $c$ is a result in the medium. A squared three-vector such as $\vec v^2$ or $\vec p^2$ is the Euclidean square, not the quaternion square, which is its negative; the symbol $v$ is kept for particle and frame velocities.
 
@@ -82,6 +82,22 @@ A single element of $\mathbb{B}$ carries four complex numbers, which is the coun
 **The physical interpretation.** The two parts are the left-handed and the right-handed parts of the fermion field. At $m=0$ each part carries one helicity: a plane wave of one value has one helicity, a plane wave of the other has the other, and the mass is the term that couples the two. That interpretation is used in §*Plane-Wave Solutions* and again in §*The Harmonic Field: Two Projections, and the Helicity Reading*, both below.
 
 **A limit, stated once.** Left multiplication cannot tell the two parts apart. For any element $\tilde a$ the product $\tilde a\tilde{Ξ}_{\mathrm{sp},L}$ carries the value $L$ and $\tilde a\tilde{Ξ}_{\mathrm{sp},R}$ carries the value $R$, so a gauge action by left multiplication acts on the two parts in the same way, and the two parts are two copies of one object. The inequivalence of a left-handed field and its conjugate is a fact about a larger object and not about this algebra, and nothing in this article asserts it.
+
+### The Value Is a Rule
+
+**The reading.** The value of an element is fixed by one multiplication, applied to the element itself:
+$$
+\tilde X\vec e_z=-i\tilde X\ \Longrightarrow\ \tilde X\text{ carries the value }L,
+\qquad
+\tilde X\vec e_z=+i\tilde X\ \Longrightarrow\ \tilde X\text{ carries the value }R .
+$$
+The test is made on the coefficients of the element and returns a letter. Two values, and no element carries both but zero. Nothing is chosen in order to make the test: the frame supplies $\vec e_z$, and the element supplies the answer.
+
+**The calculus.** Three rules follow from that line, and they are the whole of the arithmetic the equation needs. A product takes the value of its right factor, since $(\tilde X\tilde Y)\vec e_z=\tilde X(\tilde Y\vec e_z)$. Left multiplication keeps the value, because it acts before the test is applied. Right multiplication keeps the value for $e_t$, for $\vec e_z$ and for a central scalar, reverses it for $\vec e_x$ and for $\vec e_y$, and returns no value at all for a general element, in which the keeping and the reversing parts arrive together. Each case is one line of multiplication of units, and none of them expands the element.
+
+**The equation read with them.** The gradient is an element and multiplies on the left, so it keeps the value of whatever it meets; a central scalar is a left multiplier as well and keeps the value too; the members of the chiral pair of §*The Biquaternion Dirac Equation* therefore remain within one value each, and the only term that crosses from one to the other is the mass. Two operations cross, and only two. The first is a right multiplication by an element of the plane of $\vec e_x$ and $\vec e_y$, which reverses the value. The second is the coefficient conjugation, which reverses it because it sends the central $i$ to $-i$ and leaves the units alone. The dictionary of §*An Explicit Dictionary with Conjugation in the Mass Term* uses both at once, the conjugation for the reversal and the right multiplication by $\vec e_z$ to carry a direction, and the pair written in the Introduction names the crossing without naming its realisation. What no left multiplication and no central scalar can do is cross, and that is the whole content of the mass in the algebra.
+
+**What the reading does not use.** No column, no basis, no frame beyond the one already declared, no ideal, no idempotent, no projector and no state space. The field is the element that is tested, the value is the letter returned, and the three rules are read from the multiplication of the algebra.
 
 ## The Algebra and the Gradient
 
@@ -728,6 +744,37 @@ satisfies $\sum_\mu\varepsilon_\mu U_{\mathrm{vec},\mu} U_{\mathrm{vec},\mu} = 1
 
 This interpretation is the origin of the *triality construction* recorded in the companion articles. The two parts of the field, the vector they combine into, and the unit vector $K$ are the three objects that the order-three map permutes; the mass term is the coupling that the order-three (cubic) form expresses. The reader who wants the construction itself is referred to *The s-Vector Representation of the Dirac Spinor in Biquaternionic Form*, *Triality and the Ding Construction for the Dirac Spinor in Biquaternionic Form*, and *Dual Equivalence of the Dirac and Topologically Massive Gauge Fields*. The present article records only the origin: the mass is a unit vector, a non-integrable phase, and it is the object the triality construction is built on.
 
+## The Approaches the Equation Does Not Need
+
+**The position.** The equation of this article is one element acting on one element by left multiplication, the only term that crosses the two values being the mass. Every other object that the literature carries beside a Dirac equation is either a display of that action or a construction that pays a choice the equation does not make. The section states the list once, because the cost of each is not a matter of taste: a construction that adjoins an object also adjoins the choice that selects the object, and the choice is then mistaken for physics.
+
+| Object | What it would supply | Why the equation does not need it |
+| --- | --- | --- |
+| a column of four numbers | the field as a list | the field is the element itself; a column is the element read in a basis and multiplied from outside |
+| four anticommuting arrays | the factors of the operator | the anticommutation is a product of the units of the algebra |
+| a separate state space | somewhere for the field to live | the algebra acts on itself by left multiplication, and the field is an element of it |
+| a minimal left ideal | a two-component object called a spinor | an ideal is chosen by an idempotent, that is by a point of a projective line, and the field is in no chosen subspace |
+| a Peirce decomposition | the two parts of the field | the value is a letter returned by a test on the element |
+| a chiral projector | one of the two parts | the test returns the value; a projector is derived from the cell when one is wanted |
+| a Clifford algebra | the sign the mass needs | the sign is the side on which an operator multiplies |
+| a second-order equation | the dynamics | it follows from the gradient being an element, with no matrix square |
+
+**No column.** A column needs a basis in order to be written and a matrix in order to be multiplied, and both are displays. The equation says what an element does to an element and the answer is another element; four coefficients appear when numbers are wanted, and they appear as coefficients of the element and not as entries of a column. The arrays printed in §*The Legacy Pauli Gamma Formulation* are printed there for comparison and are not the equation.
+
+**No anticommuting arrays.** The four arrays of the traditional display anticommute in pairs and multiply a column. In the algebra the same anticommutators are products of units, computed from the multiplication of the frame rather than imposed as relations. The algebra is then free of the two quantities that the arrays carry in from outside, a dimension and a signature.
+
+**No separate state space, and no space of spinors.** The phrase "the Dirac equation acts on a spinor" survives because a bispinor is a spinor in the older vocabulary, and the field of this article is a bispinor in that sense. What does not survive is the inference drawn from the phrase, that the equation needs a space of spinors to act on. The operator is an element of the algebra, the field is an element of the algebra, and the multiplication is the algebra's own: nothing is adjoined, and nothing has to be.
+
+**No minimal left ideal.** A minimal left ideal is a subspace chosen by an idempotent, and the idempotent is a point of a projective line. To place the field in one is to choose that point, and a choice the equation does not make has to be justified by something outside the equation. Here the field is the whole element, and the two values are read from the element and not selected from it.
+
+**No Peirce decomposition and no chiral projector.** A Peirce decomposition returns four corners of two idempotents, and a projector onto one part returns a part. Neither is used: the test returns the letter, the letter is the whole of what §*Chirality* needs, and the mass reverses the letter rather than exchanging two subspaces. A projector can be built from the cell whenever a projection is wanted, since the cell is an involution, and it is then a derived object.
+
+**No Clifford algebra.** A Clifford algebra is generated by vectors with a stated anticommutator, and it fixes a dimension and a signature. The frame here is four declared units whose products are computed, and the anticommutation of the three spatial ones is a fact about them and not an axiom. Nothing in the equation is derived from a Clifford relation that the multiplication of the algebra does not already give.
+
+**No second-order equation.** The product of the operator with its natural conjugate is the wave operator, $\tilde\nabla^{\natural}\tilde\nabla=\Box$, so each part of the field obeys $\Box\tilde{Ξ}=k_m^{2}\tilde{Ξ}$. That is a consequence, used in §*The Biquaternion Dirac Equation* to check the pair, and not a starting point: nothing is squared in order to reach the first-order equation, and no matrix square is taken.
+
+**The criterion.** One test separates the two families of approach. If a construction needs an object chosen that the equation does not otherwise use — a basis for a column, an idempotent for an ideal, a frame for an array, a signature for a Clifford algebra — then the object belongs to the display and not to the equation, and whatever physics is attached to it is attached to the choice. The equation of this article needs the algebra, the field, and the frame that supplies $\vec e_z$ in the test. It needs nothing else.
+
 ## Open Questions
 
 1. **The real structure $\flat$ and the electroweak interaction.** The conjugation $\flat = -{}^{*}$, whose fixed space is the anti-Hermitian sector $\mathbb{B}_{\Phi}$ and which is the algebra's real structure, has the shape of a Majorana-type pairing. Does that real structure have a natural interpretation in terms of the electroweak interaction — in particular, does it supply the real form in which the neutrino is distinguished from the charged fermions?
@@ -792,7 +839,7 @@ $$
 \tilde{\nabla}\tilde{Ξ}_{\mathrm{sp},R}=0, \qquad \tilde{\nabla}^{\natural}\tilde{Ξ}_{\mathrm{sp},L}=0,
 $$
 
-one for each value; the single equation $\tilde{\nabla}\tilde{Ξ}_{\mathrm{sp}}=0$ is the one with the plus value. The two values are the letters $L$ and $R$ that every element carries; the value of a product is the value of its right factor, left multiplication keeps it, and the mass is the only term that carries the field from one value to the other. In the massless limit each part carries one helicity. The equation with the plus value has the same form as the source-free biquaternion Maxwell equation, and the other is its conjugate. The structural identity is the statement that both fields are read in the same algebra — no matrix, no column and no separate space. Each part satisfies the Klein–Gordon equation $(\Box - k_m^{2})\tilde{Ξ}_{\mathrm{sp},L,R} = 0$.
+one for each value; the single equation $\tilde{\nabla}\tilde{Ξ}_{\mathrm{sp}}=0$ is the one with the plus value. The two values are the letters $L$ and $R$ that every element carries; the value of a product is the value of its right factor, left multiplication keeps it, and the mass is the only term that carries the field from one value to the other. The value is read by one test on the element, $\tilde X\vec e_z=-i\tilde X$ for $L$ and $\tilde X\vec e_z=+i\tilde X$ for $R$, so no column, no basis, no ideal, no idempotent, no projector and no space of spinors is needed anywhere; §*The Approaches the Equation Does Not Need* states for each of them what it would supply and why the equation does without it. In the massless limit each part carries one helicity. The equation with the plus value has the same form as the source-free biquaternion Maxwell equation, and the other is its conjugate. The structural identity is the statement that both fields are read in the same algebra — no matrix, no column and no separate space. Each part satisfies the Klein–Gordon equation $(\Box - k_m^{2})\tilde{Ξ}_{\mathrm{sp},L,R} = 0$.
 
 The relativistic kinematic relations are expressed in the same language: the four-velocity $\tilde{V}_{\Phi} = \gamma(ic\, e_t + \vec v)$ satisfies $\tilde{V}_{\Phi}\tilde{V}_{\Phi}^{\natural} = -c^2$, the four-momentum $\tilde{P}_{\Phi} =m\,\tilde{V}_{\Phi}$ satisfies the mass-shell relation $\tilde{P}_{\Phi}\tilde{P}_{\Phi}^{\natural} = -m^{2}\,c^{2}$, and the four-position $\tilde R_\Phi = i r'_t\, e_t + r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z$ gives the invariant interval $ds^2 = \langle d\tilde R_\Phi\rangle_{\natural} = d\tilde R_\Phi\,d\tilde{R}_\Phi^{\natural}$.
 
