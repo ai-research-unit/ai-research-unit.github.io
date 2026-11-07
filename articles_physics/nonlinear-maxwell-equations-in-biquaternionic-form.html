@@ -213,7 +213,7 @@ $$</p>
 <h3 id="every-plane-wave-null-or-not">Every Plane Wave, Null or Not</h3>
 <p>The free directions have a visible consequence.</p>
 <p>$$
-F = \vec A\,\exp(i(\omega r'_t - \vec k\cdot\vec r)), \qquad \vec A \in \mathbb{C}^3, \quad \omega \in \mathbb{R}, \quad \vec k \in \mathbb{R}^3,
+F = \vec A\,\exp(i(\omega r'_t/c - \vec k\cdot\vec r)), \qquad \vec A \in \mathbb{C}^3, \quad \omega \in \mathbb{R}, \quad \vec k \in \mathbb{R}^3,
 $$</p>
 <p>solves the nonlinear equation for <strong>every</strong> $(\omega, \vec k)$, to $5.3 \times 10^{-15}$, and $99$ of the $100$ samplings were <strong>non-null</strong>, $|\vec k|^2 \ne \omega^2$. This is the constant-background case of the paper's section 9 theorem, which is stated and verified in <em>Associated Fields</em> below, and it is a genuine and clean statement: the equation is so weak that a constant-amplitude plane wave of any frequency and direction is a solution. But it is the opposite of a dispersion relation. The paper's section 10 supplies $\omega^2 = k^2$ by a separate argument, from the requirement that the phase speed be the speed of light, and that argument is external to the field equation. A reader who takes the abstract literally will be misled; a reader who takes section 10 will not. The paper's own conclusions read the same fact positively, and consistently: the nonlinear free-field equations admit plane waves with a <strong>longitudinal</strong> component, the criterion being a non-zero regular current, and the paper suggests that this can account for light's angular momentum without a purely transverse wave. That interpretation is the one the computation supports — the amplitude is free, hence not forced transverse — and it is the abstract's promise of a <em>dispersion relation</em> that the computation does not support.</p>
 <h3 id="superposition">Superposition</h3>
@@ -235,7 +235,7 @@ $$</p>
 <h3 id="associated-fields">Associated Fields</h3>
 <p>The paper's section 9 gives the general way to make solutions, and it is the strongest positive result in the paper. Its statement: if $F_0$ is any solution of the <strong>linear</strong> Maxwell system, and $f$ is the phase factor of a plane wave,</p>
 <p>$$
-f(r'_t,\vec r) = \exp(i(\omega_1 r'_t - \vec k_1\cdot\vec r)),
+f(r'_t,\vec r) = \exp(i(\omega_1 r'_t/c - \vec k_1\cdot\vec r)),
 \tag{9.1}
 $$</p>
 <p>then the product</p>
@@ -256,7 +256,7 @@ $$</p>
 \boxed{\;F = \frac{\alpha\,\vec r}{r^3}\,\exp(i\theta_{\mathrm{pha}}(r'_t))\;},
 \tag{12.10}
 $$</p>
-<p>where the modulus is the ordinary Coulomb field and the phase is a function of time alone. It solves the nonlinear equation to $1.2 \times 10^{-12}$ over $100$ random points and phases, and it does so for <strong>any</strong> phase function, not only a linear one: with $\theta_{\mathrm{pha}}(r'_t) = \cos(\omega r'_t)$ the residual was $1.7 \times 10^{-13}$. The derivation in the paper says why. Writing $f = s\,\exp(i\theta_{\mathrm{pha}})$ as its (12.5), the first of its (12.3) gives $\mathrm{Re}\{f^{*}\partial/\partial r'_tf\} = s\,\partial/\partial r'_ts = 0$, so the modulus is static; the second reduces, through its (12.4) and (12.6), to $\theta_{\mathrm{pha},r} = 0$ and $s = \alpha/r^3$. The <strong>phase is therefore left completely free</strong> — the equations fix the spatial profile and the static modulus, never $\theta_{\mathrm{pha}}(r'_t)$ — and the paper's reading, that the charge is complex and the phase measures how much of it is electric and how much magnetic, is a reading of that freedom rather than a consequence of it. The corpus records the reading as the paper's, and notes that <em>Exercise: Duality Rotation and the Riemann–Silberstein Vector</em> supplies exactly the internal rotation that a complex amplitude implements, so the identification of the phase with the electric–magnetic mix is the corpus's duality rotation and is not new to the paper.</p>
+<p>where the modulus is the ordinary Coulomb field and the phase is a function of time alone. It solves the nonlinear equation to $1.2 \times 10^{-12}$ over $100$ random points and phases, and it does so for <strong>any</strong> phase function, not only a linear one: with $\theta_{\mathrm{pha}}(r'_t) = \cos(\omega r'_t/c)$ the residual was $1.7 \times 10^{-13}$. The derivation in the paper says why. Writing $f = s\,\exp(i\theta_{\mathrm{pha}})$ as its (12.5), the first of its (12.3) gives $\mathrm{Re}\{f^{*}\partial/\partial r'_tf\} = s\,\partial/\partial r'_ts = 0$, so the modulus is static; the second reduces, through its (12.4) and (12.6), to $\theta_{\mathrm{pha},r} = 0$ and $s = \alpha/r^3$. The <strong>phase is therefore left completely free</strong> — the equations fix the spatial profile and the static modulus, never $\theta_{\mathrm{pha}}(r'_t)$ — and the paper's reading, that the charge is complex and the phase measures how much of it is electric and how much magnetic, is a reading of that freedom rather than a consequence of it. The corpus records the reading as the paper's, and notes that <em>Exercise: Duality Rotation and the Riemann–Silberstein Vector</em> supplies exactly the internal rotation that a complex amplitude implements, so the identification of the phase with the electric–magnetic mix is the corpus's duality rotation and is not new to the paper.</p>
 <p>The paper also gives the covariant form, its (12.11): $F = F_0\exp(iΞ)$ with $F_0$ the Coulomb field transformed to the frame and $Ξ$ a Lorentz invariant; and it observes in its (12.12) that the Coulomb wave "is a solution associated the usual Coulomb field in the sense we defined above in (9.2)". That is exactly right, and it places the section-12 solution inside the section-9 theorem: the Coulomb wave is the theorem with $F_0$ the Coulomb field and $f$ a phase factor, which is why the phase is free.</p>
 <p>The paper also derives the charge from the singularity. Applying the gradient to the Coulomb field (12.10) in the rest frame gives its (13.16),</p>
 <p>$$
@@ -398,7 +398,7 @@ $$</p>
 </tr>
 <tr>
 <td>(12.10) Coulomb field with running phase</td>
-<td>Solves the equation, $1.2 \times 10^{-12}$; the phase is left free by the equation, and an arbitrary nonlinear phase $\theta_{\mathrm{pha}}(r'_t) = \cos(\omega r'_t)$ gives $1.7 \times 10^{-13}$</td>
+<td>Solves the equation, $1.2 \times 10^{-12}$; the phase is left free by the equation, and an arbitrary nonlinear phase $\theta_{\mathrm{pha}}(r'_t) = \cos(\omega r'_t/c)$ gives $1.7 \times 10^{-13}$</td>
 </tr>
 <tr>
 <td>(7.6) second line, $\partial/\partial r'_tg_0 - \nabla\cdot\vec I_0 = 0$</td>

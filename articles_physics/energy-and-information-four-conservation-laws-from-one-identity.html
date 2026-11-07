@@ -359,7 +359,7 @@ $$</p>
 </tr>
 <tr>
 <td>intermediate</td>
-<td>$\exp(-\frac{k_m\,\Gamma\,r'_{t}}{m\,c})$, as a fit</td>
+<td>$\exp(-\frac{k_m\,\Gamma\,r'_{t}}{m\,c^{2}})$, as a fit</td>
 <td>long against the inverse spectral width of the continuum, short against the onset of the long-time deviation</td>
 </tr>
 <tr>
@@ -369,7 +369,7 @@ $$</p>
 </tr>
 </tbody>
 </table></div>
-<p>The exponential $\exp(-\frac{k_m\,\Gamma\,r'_{t}}{m\,c})$ is therefore a fit over an intermediate window, not the law. In the band model the quadratic coefficient is $(1-P)/{r'_{t}}^{2}=0.800$ against the predicted $g^{2}N=0.8$; at ${r'_t}=10^{-4}$ the exact deficit is $8.0\times10^{-9}$ against the exponential's $5.0\times10^{-5}$, a factor of $6287$. A band truncated to sixty levels shows partial revivals, from $0.032$ back to $0.65$ at the times set by the level spacing, which is why the continuum is a limit and not a large band. The decay has a shape. The exponential is the part of it that is quoted, and the word "monotonic" does not describe the shape either.</p>
+<p>The exponential $\exp(-\frac{k_m\,\Gamma\,r'_{t}}{m\,c^{2}})$ is therefore a fit over an intermediate window, not the law. In the band model the quadratic coefficient is $(1-P)/{r'_{t}}^{2}=0.800$ against the predicted $g^{2}N=0.8$; at ${r'_t}=10^{-4}$ the exact deficit is $8.0\times10^{-9}$ against the exponential's $5.0\times10^{-5}$, a factor of $6287$. A band truncated to sixty levels shows partial revivals, from $0.032$ back to $0.65$ at the times set by the level spacing, which is why the continuum is a limit and not a large band. The decay has a shape. The exponential is the part of it that is quoted, and the word "monotonic" does not describe the shape either.</p>
 <p><strong>An anti-Hermitian element does not make a probability fall.</strong> Take $\tilde Q=-\tilde Q^{*}$. Its spectrum is purely imaginary, and for real $r'_t$</p>
 <p>$$
 \bigl(\exp(r'_t\tilde Q)\bigr)^{*}\exp(r'_t\tilde Q)
@@ -419,7 +419,7 @@ $$</p>
 \frac{d}{dr'_t}\langle\tilde{Ξ}\rangle_*
 =-\langle\tilde{Ξ},\tilde\Gamma\tilde{Ξ}\rangle_*\le0,
 $$</p>
-<p>which follows from $\frac{d}{dr'_t}\langle\tilde{Ξ}\rangle_*=\langle\tilde{Ξ},(G^{*}+G)\tilde{Ξ}\rangle_*$ with $G=-i\tilde R_{\Psi,\mathrm{eff}}$ and $G^{*}+G=-\tilde\Gamma$; checked on a hundred random pairs, the finite-difference residual staying below $10^{-9}$. An indefinite $\tilde\Gamma$ with negative eigenvalues gives growth, so the anti-Hermitian part records loss, gain, or both, and the sign of $\tilde\Gamma$ decides which. The coefficient is a convention: carrying the term as $-i\tilde\Gamma'$ with $\frac{m\,c}{k_m}$ restored gives $-\frac{2\,k_m}{m\,c}\langle\tilde{Ξ},\tilde\Gamma'\tilde{Ξ}\rangle_*$, the same statement with the rate rescaled; the corpus takes $\hbar=1$ and the coefficient $\frac12$, which is what puts the pole at $z_\star=E_R-\frac{i}{2}\Gamma$ and the amplitude decay at $\exp(-\Gamma r'_t/2)$.</p>
+<p>which follows from $\frac{d}{dr'_t}\langle\tilde{Ξ}\rangle_*=\langle\tilde{Ξ},(G^{*}+G)\tilde{Ξ}\rangle_*$ with $G=-i\tilde R_{\Psi,\mathrm{eff}}$ and $G^{*}+G=-\tilde\Gamma$; checked on a hundred random pairs, the finite-difference residual staying below $10^{-9}$. An indefinite $\tilde\Gamma$ with negative eigenvalues gives growth, so the anti-Hermitian part records loss, gain, or both, and the sign of $\tilde\Gamma$ decides which. The coefficient is a convention: carrying the term as $-i\tilde\Gamma'$ with $\frac{m\,c}{k_m}$ restored gives $-\frac{2\,k_m}{m\,c}\langle\tilde{Ξ},\tilde\Gamma'\tilde{Ξ}\rangle_*$, the same statement with the rate rescaled; the corpus measures the action in units of $\hbar$ and the coefficient $\frac12$, which is what puts the pole at $z_\star=E_R-\frac{i}{2}\Gamma$ and the amplitude decay at $\exp(-\Gamma r'_t/2)$.</p>
 <p>The shorthand must not be read as a new element of the algebra. It is the reduced description of one slot, valid on the branch where the eliminated channel has been dropped, and its complex coefficient carries the width of that branch. The pole it produces is the second-sheet pole, not a physical-sheet eigenvalue.</p>
 <p><strong>The rates are the poles.</strong> A mode of eigenvalue $w$ evolves by $\exp(-iwr'_t)$, so its squared norm grows as $\exp(2\operatorname{Im}(w)\,r'_t)$: the mode falls when $\operatorname{Im}w<0$, at rate $-2\operatorname{Im}w$ on the squared norm and $-\operatorname{Im}w$ on the amplitude, which at $z_\star$ is $\frac{\Gamma}{2}$. Checked to $7.8\times10^{-16}$.</p>
 <p><strong>A full open system, and where the probability goes.</strong> If the environment is neither measured nor discarded but averaged over, the description is a map, and <em>Quantum Channels and the Reversible–Irreversible Dichotomy</em> writes it as</p>

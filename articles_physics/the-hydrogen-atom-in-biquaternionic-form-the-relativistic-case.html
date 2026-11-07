@@ -96,7 +96,7 @@ $$</p>
 <p>which enters the spectrum as a parameter.</p>
 <h3 id="the-algebra-equation-and-its-cell-frame-reading">The algebra equation and its cell-frame reading</h3>
 <p>The framework's field is an element $\tilde{Ξ}_{\mathrm{sp}}$ of $\mathbb{B}$, and the position dependence is carried by its argument rather than by the finite-dimensional algebra. The internal two-valued index of the older literature is that element read in a frame fixed by a declared unit vector; it is a reading of the field and not the field. The standard equation carries four entries because the element carries four coefficients, and the two halves of that four are the chirality labels $L$ and $R$.</p>
-<p>The coordinates are the corpus's, $Q_t = i r'_t$ and $Q_k = x_k$, with $r'_t$ the real time of the material sector. With that choice $\partial/\partial R_t = -i\partial/\partial r'_t$, so $\tilde\nabla\tilde\nabla^{\natural} = \partial^2/\partial R_t^2 + \nabla^2 = -\tfrac{1}{c^2}\partial^2/\partial {r'_t}^2 + \nabla^2$ is the d'Alembertian with no metric factor to put in by hand.</p>
+<p>The coordinates are the corpus's, $Q_t = i r'_t$ and $Q_k = x_k$, with $r'_t$ the material temporal coordinate, a length. With that choice $\partial/\partial R_t = -i\partial/\partial r'_t$, so $\tilde\nabla\tilde\nabla^{\natural} = \partial^2/\partial R_t^2 + \nabla^2 = -\partial^2/\partial {r'_t}^2 + \nabla^2$ is the d'Alembertian with no metric factor to put in by hand.</p>
 <p>The free biquaternion Dirac equation is the one-sided chiral pair</p>
 <p>$$
 \tilde\nabla\tilde{Ξ}_{\mathrm{sp},R} = k_m\tilde{Ξ}_{\mathrm{sp},L} ,
@@ -106,7 +106,7 @@ $$</p>
 <p>It is a pair, not one equation, and the two-sided operator structure is why. The gradients act by left multiplication, and a left multiplication preserves each chiral half. The mass term must mix the halves, so it cannot be a left multiplication; it is the off-diagonal pairing $\tilde{Ξ}_{\mathrm{sp},R}\leftrightarrow\tilde{Ξ}_{\mathrm{sp},L}$, with the central scalar $m e_t$ as its coefficient. Chirality itself is the right multiplication $-iR_{\mathrm{axf},\vec e_z}$. The mass coefficient is central and does not disturb it, but the pairing is odd under it: the mass is off-diagonal in the chiral grading, and that oddness is what the axial current later measures. That is the algebraic content of the pair: at $m=0$ it decouples into two Weyl equations, one for each chirality.</p>
 <p>A second form, Kravchenko's two-sided equation, is a change of representation rather than a second definition — the derivatives act from the left and the mass from the right through a conjugation — and it is not used here because it carries no continuous central phase to gauge (<em>The Dirac Equation in Biquaternionic Form</em>, §<em>The One-Sided and the Two-Sided Equation</em>).</p>
 <p>Read in the cell frame, where a cell acts on the element as $\tilde Q\mapsto a\tilde Qb$, the pair becomes the standard Dirac–Coulomb equation. Write $\beta$ for the cell $\tilde Q\mapsto i\tilde Q\vec e_x$ and $\alpha_k$ for the cell $\tilde Q\mapsto\vec e_k\tilde Q\vec e_z$. Then</p>
-<p>$$\frac{m\,c\,i}{k_m}\frac{\partial\tilde{Ξ}_{\mathrm{sp}}}{\partial  r'_t}
+<p>$$\frac{m\,c^{2}\,i}{k_m}\frac{\partial\tilde{Ξ}_{\mathrm{sp}}}{\partial  r'_t}
 = -\frac{m\,c^{2}\,i}{k_m}\sum_k  \vec e_k\,\frac{\partial\tilde{Ξ}_{\mathrm{sp}}}{\partial x_k}\,\vec e_z
 + i mc^2\,\tilde{Ξ}_{\mathrm{sp}}\,\vec e_x + V(r)\,\tilde{Ξ}_{\mathrm{sp}} ,
 $$</p>
@@ -261,7 +261,7 @@ $$</p>
 \sum_\mu\epsilon_\mu\,\frac{\partial j_{5\mu}}{\partial R_\mu} = 2im\,\tilde{Ξ}_{\mathrm{sp}}^{\natural}\bigl(-iR_{\mathrm{axf},\vec e_z}\bigr)\tilde{Ξ}_{\mathrm{sp}} ,
 $$</p>
 <p>with $\epsilon=(1,-1,-1,-1)$ the sign vector, $-iR_{\mathrm{axf},\vec e_z}$ the chirality cell — the representative on the field of the central grading $\chi=i\tilde{Ζ}_{\mathrm{ad}}$, $\chi^2=e_t$ — and $j_{5\mu}=\tilde{Ξ}_{\mathrm{sp}}^{\natural}G_\mu(-iR_{\mathrm{axf},\vec e_z})\tilde{Ξ}_{\mathrm{sp}}$, where $G_\mu$ are the four cell generators of <em>Noether's Theorem in Biquaternionic Form</em>: $G_t$ acts as $\tilde Q\mapsto i\tilde Q\vec e_x$ and $G_k$ as $\tilde Q\mapsto i\vec e_k\tilde Q\vec e_y$. These are the frame elements of <em>The Legacy Pauli Gamma Formulation</em>: $G_t$ is the $\beta$ of the Hamiltonian above, and $G_k$ is $\beta\alpha_k$, the Hamiltonian's $\alpha_k$ preceded by $\beta$ — so the two frames differ by that one factor and by nothing else. The vector current is the same expression with the chirality factor omitted. The right-hand side is proportional to $m$, so the axial current is conserved only in the massless limit, while the vector current is conserved for the massive field. This was verified numerically in the Noether article on a superposition of two on-shell plane waves (axial ratio $1.000000$, vector divergence $5.3\times10^{-10}$, both currents conserved at $m = 0$).</p>
-<p>The consequences should be stated plainly. The Coulomb potential can be inserted into the algebra-level equation $\tilde\nabla_{\mathrm{gco}}\tilde{Ξ}_{\mathrm{sp},R} = k_m\tilde{Ξ}_{\mathrm{sp},L}$, $\tilde\nabla_{\mathrm{gco}}^{\natural}\tilde{Ξ}_{\mathrm{sp},L} = k_m\tilde{Ξ}_{\mathrm{sp},R}$ by the standard minimal coupling, and in the algebra reading the central phase passes through the mass term; the charge is carried by the massive sector. The precise algebra-level transcription of the electromagnetic coupling — the biquaternion form of $\vec p \to \vec p - ϙ\vec A$ and $\frac{m\,c\,i}{k_m}\partial\frac{k_m}{m\,c\,\partial^{3}\,{r'_{t}}^{2}\,\to\,i}- ϙ\xi_{\mathrm{scl}}$ — is set out in the companion article <em>The Minimal Coupling of the Biquaternion Dirac Field to Electromagnetism</em>, which derives the coupled equation and proves it gauge covariant. What the corpus does not supply is the radial Dirac–Coulomb solution inside the algebra. Until it is supplied, the relativistic hydrogen atom in biquaternionic form is a transcription of the standard solution into the framework's algebra, not a derivation from the framework's own field equation.</p>
+<p>The consequences should be stated plainly. The Coulomb potential can be inserted into the algebra-level equation $\tilde\nabla_{\mathrm{gco}}\tilde{Ξ}_{\mathrm{sp},R} = k_m\tilde{Ξ}_{\mathrm{sp},L}$, $\tilde\nabla_{\mathrm{gco}}^{\natural}\tilde{Ξ}_{\mathrm{sp},L} = k_m\tilde{Ξ}_{\mathrm{sp},R}$ by the standard minimal coupling, and in the algebra reading the central phase passes through the mass term; the charge is carried by the massive sector. The precise algebra-level transcription of the electromagnetic coupling — the biquaternion form of $\vec p \to \vec p - ϙ\vec A$ and $\frac{m\,c^{2}\,i}{k_m}\partial/\partial r'_t\to\frac{m\,c^{2}\,i}{k_m}\partial/\partial r'_t-ϙ\xi_{\mathrm{scl}}$ — is set out in the companion article <em>The Minimal Coupling of the Biquaternion Dirac Field to Electromagnetism</em>, which derives the coupled equation and proves it gauge covariant. What the corpus does not supply is the radial Dirac–Coulomb solution inside the algebra. Until it is supplied, the relativistic hydrogen atom in biquaternionic form is a transcription of the standard solution into the framework's algebra, not a derivation from the framework's own field equation.</p>
 <h2 id="the-finite-basis-and-the-balance-of-the-two-parts">The Finite Basis and the Balance of the Two Parts</h2>
 <p>The transcription above is written for continuous fields, and a numerical realization of it needs an object the corpus does not carry: a <strong>finite basis</strong>. The field is expanded in a finite set of functions, the equation is assembled from them, and the levels are read from it. This section states the one condition the framework puts on the choice of basis, says which part of the condition is the framework's and which is input, and records what the condition does not give.</p>
 <h3 id="the-two-expansions">The two expansions</h3>
@@ -271,10 +271,10 @@ $$</p>
 \bigl(\tilde{Ξ}_{\mathrm{sp},\mathrm{lar}}+\tilde{Ξ}_{\mathrm{sp},\mathrm{sml}}\bigr).
 $$</p>
 <p>Substituting, cancelling the common phase and projecting onto the two eigenspaces gives the coupled pair; the projection is what puts the momentum term off-diagonal, since $\alpha_k$ carries one eigenspace into the other by $\alpha_k\beta=-\beta\alpha_k$,</p>
-<p>$$\frac{m\,c\,i}{k_m}\frac{\partial\tilde{Ξ}_{\mathrm{sp},\mathrm{lar}}}{\partial  r'_t}
+<p>$$\frac{m\,c^{2}\,i}{k_m}\frac{\partial\tilde{Ξ}_{\mathrm{sp},\mathrm{lar}}}{\partial  r'_t}
 = c\sum_k  \pi_k\,\vec e_k\tilde{Ξ}_{\mathrm{sp},\mathrm{sml}}\,\vec e_z + V\tilde{Ξ}_{\mathrm{sp},\mathrm{lar}} ,
 $$</p>
-<p>$$\frac{m\,c\,i}{k_m}\frac{\partial\tilde{Ξ}_{\mathrm{sp},\mathrm{sml}}}{\partial  r'_t}
+<p>$$\frac{m\,c^{2}\,i}{k_m}\frac{\partial\tilde{Ξ}_{\mathrm{sp},\mathrm{sml}}}{\partial  r'_t}
 = c\sum_k  \pi_k\,\vec e_k\tilde{Ξ}_{\mathrm{sp},\mathrm{lar}}\,\vec e_z - 2mc^2\tilde{Ξ}_{\mathrm{sp},\mathrm{sml}} + V\tilde{Ξ}_{\mathrm{sp},\mathrm{sml}} ,
 $$</p>
 <p>with $V(r) = ϙ\xi_{\mathrm{scl}} = -\kappa/r$ and the kinetic momentum $\vec\pi = \vec p-ϙ\vec A$. The Coulomb problem has $\vec A = 0$, so that $\vec\pi = \vec p$ there. A finite basis chooses an expansion for each of the two parts — functions $\{f_\mu\}$ for the large part, and a set of its own for the small — and the two choices are independent unless a further condition is imposed.</p>
@@ -541,7 +541,7 @@ $$</p>
 </tr>
 <tr>
 <td>$Q_t = i r'_t$, $Q_k = x_k$</td>
-<td>Coordinates; $r'_t$ the real time of the material sector</td>
+<td>Coordinates; $r'_t$ the material temporal coordinate, a length</td>
 </tr>
 <tr>
 <td>$\tilde\nabla = e_t\partial/\partial R_t + \sum_{k=x,y,z}\vec e_k\partial/\partial R_k$</td>

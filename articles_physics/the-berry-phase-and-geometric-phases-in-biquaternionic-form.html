@@ -91,7 +91,7 @@ $$</p>
 <p>$$
 |\tilde{Ξ}_{\mathrm{sp}}(r'_t)\rangle  = \exp(i\gamma_n(r'_t))\,\exp(-\frac{k_m\,i}{m\,c}\int_0^{r'_{t}}  E_n(R(r'_{t,2}))dr'_{t,2})\,|n(R(r'_t))\rangle  .
 $$</p>
-<p>Substituting into the Schrödinger equation $\frac{m\,c\,i}{k_m}\partial/\partial r'_t|\tilde{Ξ}_{\mathrm{sp}}\rangle  = \tilde R_\Psi|\tilde{Ξ}_{\mathrm{sp}}\rangle$, the dynamical factor cancels, and what remains is</p>
+<p>Substituting into the Schrödinger equation $\frac{m\,c^{2}\,i}{k_m}\partial/\partial r'_t|\tilde{Ξ}_{\mathrm{sp}}\rangle  = \tilde R_\Psi|\tilde{Ξ}_{\mathrm{sp}}\rangle$, the dynamical factor cancels, and what remains is</p>
 <p>$$
 d\gamma_{n}/dr'_t = i\,\langle n(R(r'_t))|\frac{d}{dr'_t}|n(R(r'_t))\rangle ,
 \qquad\text{so}\qquad
@@ -251,9 +251,9 @@ $$</p>
 <p>Take a spin-1/2 in a magnetic field whose direction rotates at a fixed polar angle, so that in the biquaternion framework</p>
 <p>$$
 \tilde R_\Psi(r'_t) = \tfrac12\,i\,\vec R(r'_t) , \qquad
-\vec R(r'_t) = R\bigl(\sin\theta_0\cos\omega r'_t,\ \sin\theta_0\sin\omega r'_t,\ \cos\theta_0\bigr) ,
+\vec R(r'_t) = R\bigl(\sin\theta_0\cos(\omega r'_t/c),\ \sin\theta_0\sin(\omega r'_t/c),\ \cos\theta_0\bigr) ,
 $$</p>
-<p>with $R > 0$ and $\theta_0 \in (0,\pi)$ fixed. The path is the circle $\theta = \theta_0$ on the Bloch sphere, traversed once per period $T = 2\pi/\omega$, and the gap is $\Delta = R$ everywhere on the path, so the adiabatic theorem applies provided the rotation is slow compared with the gap, $\frac{m\,c\,\omega}{k_m}\ll  R$. The parameter $\theta_{\mathrm{azm}} = \omega r'_t$ runs from $0$ to $2\pi$.</p>
+<p>with $R > 0$ and $\theta_0 \in (0,\pi)$ fixed. The path is the circle $\theta = \theta_0$ on the Bloch sphere, traversed once per period $T = 2\pi/\omega$, and the gap is $\Delta = R$ everywhere on the path, so the adiabatic theorem applies provided the rotation is slow compared with the gap, $\frac{m\,c\,\omega}{k_m}\ll  R$. The parameter $\theta_{\mathrm{azm}} = \omega r'_t/c$ runs from $0$ to $2\pi$.</p>
 <p>The spin-up spinor is $\tilde{Ξ}_{\mathrm{sp},+}$ of the previous section with $\theta = \theta_0$. Its connection is computed by direct application of the definition, and the result is</p>
 <p>$$
 \mathcal{A}_\theta = 0 , \qquad
@@ -317,7 +317,7 @@ $$</p>
 </tbody>
 </table></div>
 <p>The equator, $\theta_0 = \pi/2$, is the case $\gamma_+ = -\pi$; the half-angle form $-\theta_{\mathrm{sol}}/2$ is the standard spin-1/2 result, with the sign convention that the spin-up branch is the one followed.</p>
-<p><strong>Speed independence.</strong> Replacing the uniform rotation $\theta_{\mathrm{azm}} = \omega r'_t$ by a non-uniform $\theta_{\mathrm{azm}}(r'_t) = 2\pi(r'_t/T)^3$ with the same endpoints changes nothing in either route: the line integral is $\int_0^{2\pi}\mathcal{A}_{\theta_{\mathrm{azm}}}\,d\theta_{\mathrm{azm}}$ once the substitution is made, and the numerical value is again $-\pi$ at the equator and $-\theta_{\mathrm{sol}}/2$ generally. The dynamical phase over the same period is $-\frac{k_m}{m\,c}\int_0^T  \frac{R}{2}\,dr'_t = -\frac{k_m\,R\,T}{2\,m\,c}$, which scales with $T$; the geometric phase does not. The contrast is the definition of the word "geometric".</p>
+<p><strong>Speed independence.</strong> Replacing the uniform rotation $\theta_{\mathrm{azm}} = \omega r'_t/c$ by a non-uniform $\theta_{\mathrm{azm}}(r'_t) = 2\pi(r'_t/T)^3$ with the same endpoints changes nothing in either route: the line integral is $\int_0^{2\pi}\mathcal{A}_{\theta_{\mathrm{azm}}}\,d\theta_{\mathrm{azm}}$ once the substitution is made, and the numerical value is again $-\pi$ at the equator and $-\theta_{\mathrm{sol}}/2$ generally. The dynamical phase over the same period is $-\frac{k_m}{m\,c}\int_0^T  \frac{R}{2}\,dr'_t = -\frac{k_m\,R\,T}{2\,m\,c}$, which scales with $T$; the geometric phase does not. The contrast is the definition of the word "geometric".</p>
 <p><strong>The $2\pi$ ambiguity, exhibited.</strong> The spin-down branch makes the patch structure visible. In the gauge adapted to the north pole the spin-down connection is</p>
 <p>$$
 \mathcal{A}_{\theta_{\mathrm{azm}}}^{(-)} = +\frac{1-\cos\theta}{2} ,

@@ -104,7 +104,7 @@ $$</p>
 \qquad
 \tilde R_\Phi=i r'_t\,e_t+r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z,
 \qquad
-\mathrm{Sc}(\tilde P_{\Phi}\tilde{R}_\Phi^{\natural})=\vec k\cdot(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)-\omega r'_t,
+\mathrm{Sc}(\tilde P_{\Phi}\tilde{R}_\Phi^{\natural})=\vec k\cdot(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)-\omega r'_t/c,
 $$</p>
 <p>the operator has the symbol obtained from $\partial/\partial r'_t\,\to-i\omega$, so that $\partial/\partial R_t\,\to-\omega/c$, together with $\partial/\partial R_k\,\to ik_k$:</p>
 <p>$$
@@ -116,7 +116,7 @@ $$</p>
 <p>$$
 \omega^2=c^2\vec k^2+c^2k_m^{2},
 $$</p>
-<p>which is the biquaternion-norm statement of the relativistic dispersion relation: the mass shell is the level set of the biquaternion norm at the fixed negative value $-k_m^{2}$, a two-sheeted hyperboloid in the material sector. In natural units it reads $\omega^2=\vec k^2+k_m^{2}$. The zero level set $\langle\tilde P_{\Phi}\rangle_{\natural}=0$ is the <strong>zero-divisor cone</strong>, the light cone; it is the set of four-wavevectors that are nilpotent in the algebra, and the massless kernel will be supported on its position-space image.</p>
+<p>which is the biquaternion-norm statement of the relativistic dispersion relation: the mass shell is the level set of the biquaternion norm at the fixed negative value $-k_m^{2}$, a two-sheeted hyperboloid in the material sector. With the constants carried it reads $\omega^2/c^2=\vec k^2+k_m^{2}$. The zero level set $\langle\tilde P_{\Phi}\rangle_{\natural}=0$ is the <strong>zero-divisor cone</strong>, the light cone; it is the set of four-wavevectors that are nilpotent in the algebra, and the massless kernel will be supported on its position-space image.</p>
 <h3 id="greens-functions-and-the-sign-convention">Green's functions and the sign convention</h3>
 <p>A Green's function of the Klein–Gordon operator is a distributional inverse. This article fixes the defining equation once,</p>
 <p>$$
@@ -125,10 +125,10 @@ $$</p>
 \delta^{(4)}(\tilde R_\Phi)=\delta(r'_t)\,\delta^{(3)}(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)\;}
 $$</p>
 <p>with the physical measure $d^3y\,dr'_{t,2}$ over the source point $\tilde{R}_{\Phi,2}$ for the convolution, exactly as the companion exercise <em>The Retarded Potentials and the Green's Function</em> fixes it for the massless operator. The sign is not physical: reversing it, $(\Box-k_m^{2})G=+\delta^{(4)}$, is compensated by a minus in the convolution, and an overall constant factor in $G$ never changes the pole structure or the support. It is fixed here so that at $k_m=0$ the retarded kernel is the exercise's $G_{\mathrm{ret}}=\frac{1}{4\pi R}\delta(r'_t-R)$ with no extra sign, and so that the mass term enters with the same sign as in the equation.</p>
-<p>A second convention is fixed at the same time: the whole article works with the operator $\Box-k_m^{2}$ and never with $-\Box+k_m^{2}$, so that the momentum-space amplitude carries no compensating minus. With the measure $d^4p=d^3p\,d\omega$ and the phase $\exp(i(\vec p\cdot(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)-\omega r'_t))$, the defining equation becomes</p>
+<p>A second convention is fixed at the same time: the whole article works with the operator $\Box-k_m^{2}$ and never with $-\Box+k_m^{2}$, so that the momentum-space amplitude carries no compensating minus. With the measure $d^4p=d^3p\,d\omega$ and the phase $\exp(i(\vec p\cdot(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)-\omega r'_t/c))$, the defining equation becomes</p>
 <p>$$
-\int\frac{d^4p}{(2\pi)^4}\left(\omega^2-\vec p^2-k_m^{2}\right)G(\omega,\vec p)\,\exp(i(\vec p\cdot(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)-\omega r'_t))
-=-\int\frac{d^4p}{(2\pi)^4}\exp(i(\vec p\cdot(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)-\omega r'_t)),
+\int\frac{d^4p}{(2\pi)^4}\left(\omega^2-\vec p^2-k_m^{2}\right)G(\omega,\vec p)\,\exp(i(\vec p\cdot(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)-\omega r'_t/c))
+=-\int\frac{d^4p}{(2\pi)^4}\exp(i(\vec p\cdot(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)-\omega r'_t/c)),
 $$</p>
 <p>so the amplitude is</p>
 <p>$$
@@ -137,14 +137,14 @@ G(\omega,\vec p)=\frac{1}{\vec p^2+k_m^{2}-\omega^2}
 \qquad
 p^2\equiv\omega^2-\vec p^2 .
 $$</p>
-<p>The prescription that deforms the real axis is the whole of the difference between the four kernels. The c-explicit amplitude differs only by the replacement $\omega\to\omega/c$ in the measure and is recorded where it is used; in natural units the amplitude above reduces at $k_m=0$ to $\frac{1}{\vec p^2-\omega^2}$, whose contour integral is the exercise's retarded kernel.</p>
+<p>The prescription that deforms the real axis is the whole of the difference between the four kernels. The c-explicit amplitude differs only by the replacement $\omega\to\omega/c$ in the measure and is recorded where it is used; with the constants carried the amplitude above reduces at $k_m=0$ to $\frac{1}{\vec p^2-\omega^2/c^2}$, whose contour integral is the exercise's retarded kernel.</p>
 <h2 id="the-poles-and-the-four-prescriptions">The Poles and the Four Prescriptions</h2>
 <h3 id="the-pole-structure">The pole structure</h3>
 <p>The denominator vanishes at $\omega=\pm\Omega_{\vec p}$ with the relativistic frequency</p>
 <p>$$
 \Omega_{\vec p}=\sqrt{\vec p^2+k_m^{2}}.
 $$</p>
-<p>In natural units this is the on-shell energy; with $c$ restored it is $\frac{m\,c\,\Omega_{\vec p}}{k_m}=\sqrt{\frac{m^{2}\,c^{4}\,\vec p^{2}}{k_m^{2}}+m^2c^4}$, the usual relativistic energy. The two poles sit on the real axis in the distributional sense, and the four standard prescriptions displace them into the complex plane in four ways. Each prescription defines a Green's function with a definite support and a definite interpretation.</p>
+<p>The on-shell energy is $\frac{m\,c^{2}\,\Omega_{\vec p}}{k_m}=\sqrt{\frac{m^{2}\,c^{2}\,\vec p^{2}}{k_m^{2}}+m^{2}c^{4}}$, the usual relativistic energy. The two poles sit on the real axis in the distributional sense, and the four standard prescriptions displace them into the complex plane in four ways. Each prescription defines a Green's function with a definite support and a definite interpretation.</p>
 <div class="table-scroll"><table>
 <thead>
 <tr>
@@ -183,10 +183,10 @@ $$</p>
 </table></div>
 <p>The displacement was checked explicitly. Writing $\delta=\epsilon/(2\Omega_{\vec p})$ for the imaginary part of the retarded pole, the four displacements are: both poles at $\mathrm{Im}\,\omega=-\epsilon$ (retarded), both at $+\epsilon$ (advanced), and one on each side with imaginary parts $\pm\delta$ (Feynman). The Feynman prescription is the only one that treats the two poles asymmetrically, and it is exactly this asymmetry that makes the resulting kernel a boundary value rather than a solution selected by a cone support.</p>
 <h3 id="the-contour-integral">The contour integral</h3>
-<p>The frequency integral is elementary and is used repeatedly. For the retarded displacement $\omega\to\omega+i\epsilon$, the poles lie in the lower half-plane. For $r'_t>0$ the exponential $\exp(-i\omega r'_t)$ forces the contour to close below, and the two residues combine into</p>
+<p>The frequency integral is elementary and is used repeatedly. For the retarded displacement $\omega\to\omega+i\epsilon$, the poles lie in the lower half-plane. For $r'_t>0$ the exponential $\exp(-i\omega r'_t/c)$ forces the contour to close below, and the two residues combine into</p>
 <p>$$
 \frac{1}{2\pi}\int_{-\infty}^{\infty}d\omega\,
-\frac{\exp(-i\omega r'_t)}{\vec p^2+k_m^{2}-(\omega+i\epsilon)^2}
+\frac{\exp(-i\omega r'_t/c)}{\vec p^2+k_m^{2}-(\omega+i\epsilon)^2}
 =\mathrm{H}_{\mathrm{hvs}}(r'_t)\,\frac{\sin(\Omega_{\vec p}r'_t)}{\Omega_{\vec p}},
 \qquad
 \Omega_{\vec p}=\sqrt{\vec p^2+k_m^{2}},
@@ -194,7 +194,7 @@ $$</p>
 <p>while for $r'_t<0$ the contour closes above and the integral vanishes. The result is the statement that the retarded kernel has support only in the future. For the advanced displacement the same computation with $r'_t\to-r'_t$ gives $-\mathrm{H}_{\mathrm{hvs}}(-r'_t)\sin(\Omega_{\vec p}r'_t)/\Omega_{\vec p}$, supported only in the past. For the Feynman displacement the two poles sit on opposite sides, both contribute at $r'_t>0$ and at $r'_t<0$, and the result is the symmetric combination</p>
 <p>$$
 \frac{1}{2\pi}\int_{-\infty}^{\infty}d\omega\,
-\frac{\exp(-i\omega r'_t)}{\vec p^2+k_m^{2}-\omega^2-i\epsilon}
+\frac{\exp(-i\omega r'_t/c)}{\vec p^2+k_m^{2}-\omega^2-i\epsilon}
 =\frac{i}{2\Omega_{\vec p}}\,\exp(-i\Omega_{\vec p}|r'_t|),
 $$</p>
 <p>which is the frequency-space form of the time-ordered two-point function: the two poles are displaced to opposite sides, both contribute, and the result is even in $r'_t$ and built from the positive-frequency phase $\exp(-i\Omega_{\vec p}|r'_t|)$. The three results were confirmed by evaluating the contour sums directly.</p>
@@ -246,7 +246,7 @@ $$</p>
 =\int_0^\infty dv\,\sin(R\cosh v)
 =\frac{\pi}{2}J_0\!\left(\sqrt{a^2-b^2}\right).
 $$</p>
-<p>This is the standard integral representation $J_0(z)=\frac{2}{\pi}\int_0^\infty\sin(z\cosh v)\,dv$ together with the hyperbolic rotation; it is valid for $a>b>0$, which is precisely the interior of the future light cone in natural units.</p>
+<p>This is the standard integral representation $J_0(z)=\frac{2}{\pi}\int_0^\infty\sin(z\cosh v)\,dv$ together with the hyperbolic rotation; it is valid for $a>b>0$, which is precisely the interior of the future light cone.</p>
 <h3 id="the-closed-form-its-massless-limit-and-its-support">The closed form, its massless limit, and its support</h3>
 <p>Differentiating the Bessel integral with respect to $r$ and using $\frac{dJ_0}{dz}(z)=-J_1(z)$ gives</p>
 <p>$$
@@ -269,7 +269,7 @@ G_R(\tilde R_\Phi)
 \qquad
 r_x^2=-{r'_{t}}^2+\vec r^2,
 $$</p>
-<p>in natural units, with the Bessel term restricted to the interior of the cone by $\mathrm{H}_{\mathrm{hvs}}(-x^2)$. The delta term is the massless kernel, and the Bessel term is the massive correction; the correction does not vanish on the cone but tends there to the finite value $-k_m^{2}/(8\pi)\,\mathrm{H}_{\mathrm{hvs}}(r'_t)$, since $J_1(z)\sim z/2$ as $z\to0$ makes $k_m J_1(k_m\sqrt{-x^2})/(2\sqrt{-x^2})\to\,k_m^{2}/4$. The kernel's only singular part is therefore the delta on the cone, and the volume term is bounded on it.</p>
+<p>with the Bessel term restricted to the interior of the cone by $\mathrm{H}_{\mathrm{hvs}}(-x^2)$. The delta term is the massless kernel, and the Bessel term is the massive correction; the correction does not vanish on the cone but tends there to the finite value $-k_m^{2}/(8\pi)\,\mathrm{H}_{\mathrm{hvs}}(r'_t)$, since $J_1(z)\sim z/2$ as $z\to0$ makes $k_m J_1(k_m\sqrt{-x^2})/(2\sqrt{-x^2})\to\,k_m^{2}/4$. The kernel's only singular part is therefore the delta on the cone, and the volume term is bounded on it.</p>
 <p>Three checks were carried out on this closed form.</p>
 <ol>
 <li><strong>Massless limit.</strong> As $k_m\to0$ the Bessel term vanishes and only $\frac{\mathrm{H}_{\mathrm{hvs}}(r'_t)}{2\pi}\delta(r_x^2)$ remains. Converting the invariant delta to a radial delta by the light-cone Jacobian below gives $\frac{1}{4\pi r}\delta(r'_t-r)$, which is exactly the retarded kernel $\frac{1}{4\pi R}\delta(r'_t-R)$ of the electromagnetism exercise at $c=1$. The limit was verified numerically for $k_m=10^{-3}$.</li>
@@ -331,7 +331,7 @@ $$</p>
 G_F(\omega,\vec p)=\frac{1}{\vec p^2+k_m^{2}-\omega^2-i\epsilon}
 =\frac{-1}{p^2-k_m^{2}+i\epsilon},
 \qquad
-G_F(\tilde R_\Phi)=\int\frac{d^4p}{(2\pi)^4}\,G_F(\omega,\vec p)\,\exp(i(\vec p\cdot(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)-\omega r'_t)) .
+G_F(\tilde R_\Phi)=\int\frac{d^4p}{(2\pi)^4}\,G_F(\omega,\vec p)\,\exp(i(\vec p\cdot(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)-\omega r'_t/c)) .
 $$</p>
 <p>Its frequency integral was given above; its position-space content is the time-ordered correlation function,</p>
 <p>$$
@@ -401,7 +401,7 @@ G_R(\tilde R_\Phi)
 \qquad
 r_x^2=-{r'_{t}}^2+\vec r^2,
 $$</p>
-<p>in natural units. The delta term is the massless retarded kernel, whose invariant form converts to $\frac{1}{4\pi r}\delta(r'_t-r)$ by the light-cone Jacobian $\delta(r_x^2)=\frac{1}{2r}\delta(r'_t-r)$; the Bessel term is the massive volume contribution, verified to satisfy the homogeneous Klein–Gordon equation inside the cone and to vanish as $k_m\to0$. The advanced kernel is the time reverse, and the defining equation does not select between them: the retarded kernel is fixed by the no-incoming-radiation boundary condition, which is physical.</p>
+<p>The delta term is the massless retarded kernel, whose invariant form converts to $\frac{1}{4\pi r}\delta(r'_t-r)$ by the light-cone Jacobian $\delta(r_x^2)=\frac{1}{2r}\delta(r'_t-r)$; the Bessel term is the massive volume contribution, verified to satisfy the homogeneous Klein–Gordon equation inside the cone and to vanish as $k_m\to0$. The advanced kernel is the time reverse, and the defining equation does not select between them: the retarded kernel is fixed by the no-incoming-radiation boundary condition, which is physical.</p>
 <p>The Pauli–Jordan function $G_C=G_R-G_A$ is supported on the closed cone and vanishes for spacelike separations, which is microcausality; the commutator is $[\tilde{Ξ},\tilde{Ξ}^{*}]=G_C e_t$ in the normalization used here, and it is nonzero inside the cone. The Feynman propagator is the opposite-pole displacement, equal to the time-ordered two-point function $\langle0|T\tilde{Ξ}(r_x)\tilde{Ξ}^{*}(r_y)|0\rangle=G_F(r_x-r_y)e_t$; its spacelike tail is the Euclidean Yukawa kernel $\frac{k_m}{4\pi^2\sqrt{\rho_E^2}}\\mathrm{Ki}_{1}(k_m\sqrt{\rho_E^2})$, of range the Compton wavelength, and its inverse in momentum space is the quadratic form of the action used in the companion path-integral article.</p>
 <p>The algebra's contribution is the identification of the singular loci with the biquaternion norm: the light cone is the zero-divisor cone $\langle\tilde R_\Phi\rangle_{\natural}=0$ of the material sector and the mass shell is the level set $\langle\tilde P_{\Phi}\rangle_{\natural}=-k_m^{2}$. The kernel is central, the module is a spectator, and the causal boundary condition is a physical input. The retarded, advanced, commutator and Feynman kernels are the standard scalar kernels, written in the framework's notation and interpreted through its biquaternion norm.</p>
 <h2 id="summary-of-notation">Summary of Notation</h2>
@@ -463,11 +463,11 @@ $$</p>
 </tr>
 <tr>
 <td>$1/k_m$</td>
-<td>The mass length, $\hbar/(mc)$; its reciprocal $k_m=mc/\hbar$ is the inverse Compton wave number ($k_m=m$ in natural units)</td>
+<td>The mass length, $\hbar/(mc)$; its reciprocal $k_m=mc/\hbar$ is the inverse Compton wave number</td>
 </tr>
 <tr>
 <td>$\Omega_{\vec p}=\sqrt{\vec p^2+k_m^{2}}$</td>
-<td>On-shell frequency, natural units</td>
+<td>On-shell frequency, an inverse length</td>
 </tr>
 <tr>
 <td>$G(\omega,\vec p)=(\vec p^2+k_m^{2}-\omega^2)^{-1}$</td>
@@ -487,7 +487,7 @@ $$</p>
 </tr>
 <tr>
 <td>$r_x^2=-{r'_{t}}^2+\vec r^2$</td>
-<td>Invariant separation, natural units</td>
+<td>Invariant separation</td>
 </tr>
 <tr>
 <td>$\langle\tilde R_\Phi\rangle_{\natural}=0$</td>
