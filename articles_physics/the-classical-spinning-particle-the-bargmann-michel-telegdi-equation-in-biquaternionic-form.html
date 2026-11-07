@@ -112,7 +112,7 @@ F_{jk}=\epsilon_{jkl}B_l
 \qquad\text{(real components)},
 $$</p>
 <p>and the charge contraction is $\tilde{\mathcal F}_{\Phi,\mathrm{frc}}=ϙ\,\mathrm{F}(\tilde{V}_{\Phi})$, the biquaternion form of the Lorentz force of Companion article <em>The Lorentz Force in Biquaternion Form</em>, for the four-force as an anti-Hermitian projection.</p>
-<p>Here $\tau$ is proper time, $r'_t$ laboratory time, $\vec v$ the velocity, $\gamma$ the Lorentz factor, $\vec E$ and $\vec B$ the electric field and magnetic induction, and $ϙ,m,g$ the charge, mass, and gyromagnetic factor. The projection is $P_{\mathbb{B}_{\Phi}}(\tilde{Q})=\tfrac12(\tilde{Q}-\tilde{Q}^{*})$, and the Hermitian form on $\mathbb{B}_{\Psi}$, read through the trace, is $\mathrm{Tr}(\tilde Q_1\tilde Q_2)=2\,\mathrm{Sc}(\tilde Q_1\tilde Q_2)$.</p>
+<p>Here $\tau$ is proper time, $r'_t=c\,t'$ the temporal coefficient of the four-position, a length in metres, so the laboratory clock is $t'=r'_t/c$ and $d/d\tau\to d/dt'=c\,d/dr'_t$ in the limit taken below, $\vec v$ the velocity, $\gamma$ the Lorentz factor, $\vec E$ and $\vec B$ the electric field and magnetic induction, and $ϙ,m,g$ the charge, mass, and gyromagnetic factor. The projection is $P_{\mathbb{B}_{\Phi}}(\tilde{Q})=\tfrac12(\tilde{Q}-\tilde{Q}^{*})$, and the Hermitian form on $\mathbb{B}_{\Psi}$, read through the trace, is $\mathrm{Tr}(\tilde Q_1\tilde Q_2)=2\,\mathrm{Sc}(\tilde Q_1\tilde Q_2)$.</p>
 <h2 id="the-spin-four-vector">The Spin Four-Vector</h2>
 <p>The <strong>spin vector</strong> of a classical particle is a four-vector $\tilde{S}_{\Psi}\in\mathbb{B}_{\Phi}$ subject to the <strong>orthogonality condition</strong></p>
 <p>$$
@@ -239,7 +239,7 @@ $$</p>
 $$</p>
 <p>in which every object is an element of $\mathbb{B}_{\Phi}$ or a real scalar, and the equation is manifestly a statement inside the material sector. The transcription is verified by recomputation: for random configurations of $\vec E$, $\vec B$, $\vec v$ and $\vec s$, with an arbitrary $g$, the biquaternion right-hand side equals the component right-hand side to machine precision, with residuals of order $10^{-15}$. Two elementary checks of the component equation confirm its physical content and were carried out on the same random configurations: the orthogonality $\langle\tilde{S}_{\Psi},\tilde{V}_{\Phi}\rangle=0$ is preserved to machine precision, and in the rest frame the spatial equation is the gyromagnetic torque $d\vec s/d\tau=(gq/2m)\,\vec s\times\vec B$ while the time equation is $dS_{0}/d\tau=(ϙ/m)\,\vec E\cdot\vec s/c$, which is exactly the rate required by the orthogonality condition rather than an independent statement.</p>
 <p>The transcription is a statement about the <strong>structure</strong> of the equation, and it is worth saying what it does and does not claim. It does not claim that the BMT equation is novel; it is the standard result of Bargmann, Michel and Telegdi. It does not claim to determine $g$; the gyromagnetic factor is an input, and at the tree level of the relativistic quantum theory it equals $2$. What it claims is that the equation's two-term form is the complete list of covariant structures available to a material four-vector, that the field coupling is a projection of an algebra product, and that the orthogonality constraint is the invariant pairing. These are algebraic facts about $\mathbb{B}$ and $\mathbb{B}_{\Phi}$.</p>
-<h2 id="the-rest-frame-and-the-meaning-of-math166">The Rest Frame and the Meaning of $g$</h2>
+<h2 id="the-rest-frame-and-the-meaning-of-math168">The Rest Frame and the Meaning of $g$</h2>
 <p>The coefficient $\alpha=g/2$ was fixed by the rest-frame torque, and it is instructive to see the rest-frame reduction in full. At $\vec v=\mathbf{0}$ we have $v_\mu=(c,\mathbf{0})$, $S_{0}=0$, and $\tilde{S}_{\Psi}=(0,\vec s)$. The field action on the spin is</p>
 <p>$$
 \mathrm{F}(\tilde{S}_{\Psi})\Big|_{\rm rest}
@@ -260,7 +260,7 @@ $$</p>
 $$</p>
 <p>in which the two contributions combine to the single value required to keep $\langle\tilde{S}_{\Psi},\tilde{V}_{\Phi}\rangle=0$ as the velocity begins to change: the time equation is not a second dynamical law but the statement that the rest-frame spin remains purely spatial in the momentary rest frame. Thus <strong>$g$ and only $g$ is the dynamical input</strong>; everything else in the equation is fixed by covariance and orthogonality.</p>
 <p>The gyromagnetic factor is not determined by the classical model. The relativistic quantum theory of a spin-$\tfrac12$ particle gives the tree-level value $g=2$, and the classical spinning particle with $g=2$ reproduces the corresponding classical limit. The small departure of the measured electronic and muonic moments from $2$, the <strong>anomalous moment</strong> $a=(g-2)/2$, is a quantum-field-theoretic effect and lies outside the classical framework; Companion article <em>The Classical Origin of g = 2 in Biquaternionic Form</em>, for the algebraic origin of the factor two, and Companion article <em>The Empirical Status of the Biquaternion Framework</em>, for the position on the measured anomaly, record the standing treatment. The classical equation itself is agnostic: any $g$ defines a consistent classical spinning particle, and the value of $g$ must be supplied from outside.</p>
-<h2 id="the-degenerate-case-math192-and-the-spin-follows-velocity-property">The Degenerate Case $g=2$ and the Spin-Follows-Velocity Property</h2>
+<h2 id="the-degenerate-case-math194-and-the-spin-follows-velocity-property">The Degenerate Case $g=2$ and the Spin-Follows-Velocity Property</h2>
 <p>At $g=2$ the second term of the BMT equation vanishes identically, and the equation collapses to</p>
 <p>$$
 \boxed{\ \frac{dS_\mu}{d\tau}=\frac{ϙ}{m}\,\sum_\nu F_{\mu\nu}S_\nu\ } ,
@@ -281,9 +281,9 @@ $$</p>
 $$</p>
 <p>shows that the departure from spin-follows-velocity is governed by $(g/2-1)$ and by the invariant $B$. This is the term whose non-relativistic limit is the anomalous precession measured in the $g-2$ experiments, and it is the covariant home of the Thomas term discussed for the free field in the companion article of this subcategory.</p>
 <h2 id="the-laboratory-frame-limit-larmor-and-thomas">The Laboratory-Frame Limit: Larmor and Thomas</h2>
-<p>The non-relativistic limit of the BMT equation reproduces the <strong>Larmor precession</strong> of a magnetic moment by the usual argument. Let $\vec v\to\mathbf{0}$, so that $\gamma\to1$, $S_{0}\to0$, and $d/d\tau\to d/dr'_t$. Then</p>
+<p>The non-relativistic limit of the BMT equation reproduces the <strong>Larmor precession</strong> of a magnetic moment by the usual argument. Let $\vec v\to\mathbf{0}$, so that $\gamma\to1$, $S_{0}\to0$, and $d/d\tau\to d/dt'=c\,d/dr'_t$, the proper time becoming the laboratory clock. Then</p>
 <p>$$
-\frac{d\vec S_{\rm vec}}{dr'_t}
+c\,\frac{d\vec S_{\rm vec}}{dr'_t}
 \;\longrightarrow\;
 \frac{ϙ}{m}\frac{g}{2}\,\vec S_{\rm vec}\times\vec B
 =\vec\mu\times\vec B,

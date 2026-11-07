@@ -1,0 +1,527 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chirality Migration — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="chirality-migration"><strong>Chirality Migration</strong></h1>
+<h2 id="scope">Scope</h2>
+<p>This file is an <strong>inventory and a work order</strong>, not an article and not an entry of a menu. It lists every article of the two published corpora whose statement about chirality contradicts the notion that <em>Operator Chirality on the Biquaternion Algebra</em> now states, gives a direct link to each, and records for each the false sentence and the sentence that replaces it.</p>
+<p>The notion itself is fixed in one place and is not re-derived here. Chirality is the <strong>slot</strong> of an operator of $\operatorname{End}_{\mathbb{C}}(\mathbb{B})$: membership in $\operatorname{im}L$, in $\operatorname{im}R$, in $L\cap R=\mathbb{C}\mathrm I$, or in none of the three. The proofs are the mathematics article's; this file takes them as settled and spends its length on the corpus.</p>
+<p><strong>What is counted.</strong> A row is owed to an article when the article defines chirality — or a word standing in for it, <em>the chirality operator</em>, <em>the chiral projector</em>, <em>the chiral splitting</em>, <em>the value of the chirality</em> — by an object that is not a slot: a frame, an axis, a volume cell, a fifth cell, an ordered product of four generators, a root, an idempotent, a Peirce corner, a $\gamma_5$ array, an anticommutator. A row is <strong>not</strong> owed for a mention of a cell, a root or an idempotent that does not carry the word.</p>
+<p><strong>What is exempt.</strong> The mathematics article and <em>Biquaternion Physical Interpretation of Operator Chirality</em>, both migrated. Legacy sections, which are allowed to print arrays. The general mathematics of the same folders, where <em>chirality</em> names the symmetry of a knot or the grading of a Clifford module and no biquaternion operator is in play; those are named once, in §<em>No Patch — Vocabulary Collisions</em>, and are patched nowhere.</p>
+<h2 id="the-test">The Test</h2>
+<p>A patched sentence passes when it satisfies four conditions. They are cheap to check and they are the whole of the review.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>#</th>
+<th>Condition</th>
+<th>Why</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>The subject of <em>is</em> is the <strong>side</strong>, not the cell</td>
+<td><em>the chirality is the cell</em> is the defect; <em>the cell is an example of the right slot</em> is the repair</td>
+</tr>
+<tr>
+<td>2</td>
+<td>No axis, no <em>frame</em>, no <em>declared</em> enters the sentence that defines</td>
+<td>the label is fixed by the two families $L(\mathbb{B})$ and $R(\mathbb{B})$ and by nothing else</td>
+</tr>
+<tr>
+<td>3</td>
+<td>A cell, when named, is named as <strong>one</strong> cell, and the article says what replaces it</td>
+<td>a rotation of the frame replaces it, and every label of every operator stays where it was</td>
+</tr>
+<tr>
+<td>4</td>
+<td>No anticommutator stands as the criterion</td>
+<td>it would have to be an anticommutator with $L(e_t)=\mathrm I$, and no nonzero operator has one</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="the-six-defect-classes">The Six Defect Classes</h2>
+<p><strong>D1 — The frame names the chirality.</strong> The form is <em>the chirality is the volume cell of the frame</em>, <em>the frame supplies it</em>, <em>the chirality cell</em>. It is the family defect and it produces most of the rows. False because the cell is one operator, built from one chosen element, while the label of an operator is fixed without it; and because it writes a frame into a definition that the algebra states without one. The repair keeps the cell and moves it one word to the right: the cell is an example of the right slot, and the label is the membership.</p>
+<p><strong>D2 — Anticommutation as the definition.</strong> The form is <em>a chirality must anticommute with the generators and square to the identity</em>, <em>it anticommutes with each $C_\mu$, so it separates the halves</em>. False in the algebra, not merely loose: the criterion demands an anticommutator with $L(e_t)$, which is the identity, and an operator anticommuting with the identity is zero. What is true is narrower and worth keeping: the cell of one frame anticommutes with that frame's four cells, for the quaternion product rule and no other reason. The repair deletes the criterion and states the true fact as a fact.</p>
+<p><strong>D3 — A root, an idempotent or a Peirce corner carries the word.</strong> The form is <em>the chirality is the root $H=\operatorname{diag}(1,-1)$</em>, <em>both statements are read off the one idempotent</em>, <em>the chiral split is the representative adapted to the root</em>. False on dimension and on role. A Peirce corner is one-dimensional and its projector is built from an element that must be chosen; the chiral halves are two-dimensional left modules and the chiral projector $\tfrac12(\mathrm I\pm\mathsf V)$ is derived from a cell. The two projectors agree when they are built from the same element, which is a coincidence of one choice and not an identity of two objects.</p>
+<p><strong>D4 — Chirality as a grading or a sign detached from an operator.</strong> The form is <em>chirality is a $\mathbb{Z}_2$ grading</em>, <em>a two-valued label on the field</em>. Half true: the split is a grading of the carrier once an operator supplies it. False as a definition, because it hides which operator, and an article that hides it then has to reach for a frame. The repair names the operator first and the grading after.</p>
+<p><strong>D5 — The two chiralities declared inequivalent by construction.</strong> The form is <em>its two eigenspaces are the only two-dimensional irreducibles, $(\tfrac12,0)$ and $(0,\tfrac12)$, and these are inequivalent</em>. True on the Dirac module, false on the algebra. Both halves of $\mathbb{B}$ are copies of the one simple left module $S$; the inequivalence belongs to $\Delta=S\oplus S^{\mathrm c}$, which needs a real structure to be built at all. The repair keeps both sentences and never in one breath: the copy sentence on $\mathbb{B}$, the inequivalence sentence on $\Delta$.</p>
+<p><strong>D6 — $\gamma_5$ as the name of the notion.</strong> The form is <em>$\gamma_5$ is the reference-frame cell of the chirality</em>, <em>the chirality is the ordered product of the four generators up to $i$</em>. It is an array token standing for a cell of one frame, so it is neither the notion nor a frame-free name, and it drags the Pauli and gamma vocabulary back into a body text that is supposed to be free of it. The repair is one sentence in a legacy paragraph; the body writes $\mathsf{V}_{\mathrm{vol}}$.</p>
+<h2 id="tier-0-the-convention-source">Tier 0 — The Convention Source</h2>
+<p>One article states the convention that the others quote, so it is patched first: fifteen of the rows below cite it by section.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Article</th>
+<th>Class</th>
+<th>The false statement</th>
+<th>The patch</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="../articles_physics/special-element-conventions.html">Special Element Conventions</a>, §<em>The Chirality Convention</em></td>
+<td>D1</td>
+<td>The paragraph opens <em>The chirality operator of a frame is its volume cell, the product of the four frame cells with the phase $i$</em>, and the summary opens <em>The chirality is the cell of a frame and not an element of the algebra.</em></td>
+<td>The same section already opens with the true sentence, <em>operator chirality is the side on which an operator multiplies</em>. Keep that, retitle the second paragraph <em>One Cell That Realises the Split</em>, and rewrite the summary as: the chirality is the slot; one cell of a frame realises it; a rotation of the frame replaces the cell, and every label of every operator stays where it was.</td>
+</tr>
+</tbody>
+</table></div>
+<p>That is the source, and it is patched first because the citations are what carry the defect outward. <strong>Twenty-nine published articles</strong> cite the section by name. Fifteen of them are rows in the tiers below; the other fourteen inherit the repair and need a read and not an edit:</p>
+<ul>
+<li><a href="../articles_physics/confinement-and-the-loss-of-partonic-information-in-biquaternionic-form.html">Confinement and the Loss of Partonic Information</a> — cites the section for the two-valued subscript only.</li>
+<li><a href="../articles_physics/exercise-plane-wave-solutions-of-the-biquaternion-dirac-equation.html">Exercise: Plane-Wave Solutions of the Biquaternion Dirac Equation</a></li>
+<li><a href="../articles_physics/fermion-doubling-and-the-nielsen-ninomiya-theorem-in-biquaternionic-form.html">Fermion Doubling and the Nielsen–Ninomiya Theorem</a></li>
+<li><a href="../articles_physics/the-fermionic-fock-space-in-biquaternionic-form.html">The Fermionic Fock Space</a></li>
+<li><a href="../articles_physics/the-feynman-propagator-in-biquaternionic-form.html">The Feynman Propagator</a></li>
+<li><a href="../articles_physics/the-gauge-principle-in-biquaternionic-form.html">The Gauge Principle</a></li>
+<li><a href="../articles_physics/the-majorana-equation-in-biquaternionic-form.html">The Majorana Equation</a></li>
+<li><a href="../articles_physics/the-minimal-coupling-of-the-biquaternion-dirac-field-to-electromagnetism.html">The Minimal Coupling of the Biquaternion Dirac Field to Electromagnetism</a></li>
+<li><a href="../articles_physics/the-neutron-in-biquaternionic-form.html">The Neutron in Biquaternionic Form</a></li>
+<li><a href="../articles_physics/the-rarita-schwinger-equation-spin-3-2-in-biquaternionic-form.html">The Rarita–Schwinger Equation, Spin 3/2</a></li>
+<li><a href="../articles_physics/the-theta-parameter-and-strong-cp-in-biquaternionic-form.html">The Theta Parameter and Strong CP</a></li>
+<li><a href="../articles_physics/quantum-chromodynamics-under-the-biquaternion-framework-a-research-agenda.html">Quantum Chromodynamics under the Biquaternion Framework: A Research Agenda</a></li>
+<li><a href="../articles_maths/matrix-representations-conventions.html">Matrix Representations Conventions</a> — states the arrays and is exempt from the wording rule.</li>
+<li><a href="../articles_maths/operator-and-calculus-conventions.html">Operator and Calculus Conventions</a> — same.</li>
+</ul>
+<h2 id="tier-1-the-articles-that-define-chirality-by-the-frame">Tier 1 — The Articles That Define Chirality By The Frame</h2>
+<p>Twenty-eight articles. Each row quotes the sentence that has to go.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Article</th>
+<th>Class</th>
+<th>The false statement</th>
+<th>The patch</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="../articles_physics/the-dirac-equation-in-biquaternionic-form.html">The Dirac Equation in Biquaternionic Form</a></td>
+<td>D1</td>
+<td>The section opens <em>The notion is a side, and the frame supplies it.</em></td>
+<td>The frame supplies an example, not the notion. <em>The notion is a side; one cell of the frame realises it, and the cell is a right multiplier.</em></td>
+</tr>
+<tr>
+<td><a href="../articles_physics/paravectors-and-the-geometry-of-spacetime.html">Paravectors and the Geometry of Spacetime</a></td>
+<td>D2, D4</td>
+<td><em>A chirality is a grading: it must separate the module into two halves, so it must be an operator that anticommutes with the generators and squares to the identity.</em></td>
+<td>The criterion is unsatisfiable, since one generator is the identity. <em>The two halves are the eigenspaces of one cell; the cell is a right multiplier, so it commutes with every left multiplier and no anticommutator is involved.</em></td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-s-vector-representation-of-the-dirac-spinor-in-biquaternionic-form.html">The S-Vector Representation of the Dirac Spinor</a></td>
+<td>D2, D6</td>
+<td><em>The chirality is the ordered product of the four generators up to the factor $i$ … and it anticommutes with each $C_\mu$, so it separates the two values of every field.</em></td>
+<td>Two defects in one sentence. Drop <em>ordered product of the four generators</em> as the definition and drop the anticommutation as the reason it separates. <em>The cell is the right multiplier $-iR_{\vec e_z}$; its two eigenspaces are the two values.</em> The product of the four cells is then a theorem about that cell, stated once.</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-fujikawa-method-and-the-path-integral-anomaly-in-biquaternionic-form.html">The Fujikawa Method and the Path-Integral Anomaly</a></td>
+<td>D1, D6</td>
+<td><em>The identity that makes the computation a statement about the algebra is that the chirality is the volume element.</em></td>
+<td>The identity is about the pseudoscalar, not about chirality. <em>The computation turns on the product of the three vector units, $\vec e_x\vec e_y=\vec e_z=-\omega$; the cell that carries the split is $-iR_{\vec e_z}$, one right multiplication by that pseudoscalar.</em></td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-spinor-representation-of-the-lorentz-group-in-biquaternionic-form.html">The Spinor Representation of the Lorentz Group</a></td>
+<td>D5, D1</td>
+<td><em>The chirality is the cell $\gamma_5=-iL_{\mathrm{axf},e_t}R_{\mathrm{axf},\vec e_z}$, whose two eigenspaces are the only two-dimensional irreducible representations, $(\tfrac12,0)$ and $(0,\tfrac12)$, and these are inequivalent.</em></td>
+<td>The article already writes the correction one clause later, <em>they are not the two minimal left ideals (both carry $S$)</em>. Move that clause to the front and split the sentence: on $\mathbb{B}$ the halves are copies of $S$; on $\Delta=S\oplus S^{\mathrm c}$ the eigenspaces are inequivalent, and the real structure is what builds the second.</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/dual-equivalence-of-the-dirac-and-topologically-massive-gauge-fields.html">Dual Equivalence of the Dirac and Topologically Massive Gauge Fields</a></td>
+<td>D1</td>
+<td><em>The chirality is the volume cell of the frame, $-iR_{\vec e_z}$ at the declared axis $\vec u=\vec e_z$.</em></td>
+<td><em>The cell that realises the split is $-iR_{\vec e_z}$; its side is the right slot, and that side is what the equation reads.</em></td>
+</tr>
+<tr>
+<td><a href="../articles_physics/bosonization-in-biquaternionic-form.html">Bosonization in Biquaternionic Form</a></td>
+<td>D1</td>
+<td><em>In the full four-slot frame the chirality is the action $Q\mapsto-iQ\vec e_z$, the volume cell with its phase.</em></td>
+<td><em>In the full four-slot frame one cell realises the split, the right multiplication $Q\mapsto-iQ\vec e_z$; being a right multiplication, it carries the right slot.</em></td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-standard-model-under-the-biquaternion-framework-a-research-agenda.html">The Standard Model under the Biquaternion Framework: A Research Agenda</a></td>
+<td>D1</td>
+<td><em>Its chirality is the volume cell of the frame, $\mathsf V_{\mathrm{vol}}=-iR_{\mathrm{axf},\vec e_z}$, a pure right multiplier.</em></td>
+<td>The trailing clause is the true statement. Lead with it: <em>its chirality is the right slot, and one cell realises the split, $\mathsf V_{\mathrm{vol}}=-iR_{\mathrm{axf},\vec e_z}$.</em></td>
+</tr>
+<tr>
+<td><a href="../articles_physics/electroweak-theory-under-the-biquaternion-framework-a-research-agenda.html">Electroweak Theory under the Biquaternion Framework: A Research Agenda</a></td>
+<td>D1</td>
+<td><em>Chirality is the volume cell of the frame, a pure right multiplier</em> — three times, in three sections.</td>
+<td>Three times the same repair: <em>chirality is the side; the cell is a pure right multiplier and therefore one member of the right side.</em></td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-chiral-condensate-and-dynamical-symmetry-breaking-in-biquaternionic-form.html">The Chiral Condensate and Dynamical Symmetry Breaking</a></td>
+<td>D1</td>
+<td><em>The chirality is the frame's fifth cell $\xi:Q\mapsto-iQ\vec e_z$, and that cell multiplies on the </em><em>right</em><em>, which is what makes it a chirality.</em></td>
+<td>The causal clause is backwards: the side is not conferred by the frame, it is read by it. <em>The cell $\xi$ multiplies on the right; that right multiplication is the side, and the frame's role is only to name which cell.</em> <em>Fifth cell</em> also goes: the count is of cells, not of chirality.</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-dirac-hestenes-equation-and-spacetime-algebra-in-biquaternionic-form.html">The Dirac–Hestenes Equation and Spacetime Algebra</a></td>
+<td>D1</td>
+<td><em>The chirality is the volume element read with the central $i$, that is $i\omega=-i\vec e_z$, and it is the frame's volume cell …</em></td>
+<td><em>One cell realises the split, $-i\vec e_z$; the source's volume element is the same operator up to the central phase.</em></td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-jordan-wigner-transformation-in-biquaternionic-form.html">The Jordan–Wigner Transformation in Biquaternionic Form</a></td>
+<td>D6</td>
+<td><em>The chirality is the cell $\gamma_5=-iR_{\mathrm{axf},\vec e_z}$, whose central form is the sign $\chi=i\tilde{Ζ}_{\mathrm{ad}}$.</em></td>
+<td>Exchange the array name for the cell and say the side: <em>the cell is $-iR_{\mathrm{axf},\vec e_z}$, a pure right multiplier; its central form is the sign $\chi$.</em></td>
+</tr>
+<tr>
+<td><a href="../articles_physics/thomson-and-compton-scattering-the-biquaternion-polarization-algebra.html">Thomson and Compton Scattering: The Biquaternion Polarization Algebra</a></td>
+<td>D6, D1</td>
+<td><em>its chirality is the chirality cell $\gamma_5=i\omega$, with $\omega=-L_{\mathrm{pau},e_t}R_{\mathrm{pau},\vec e_z}$ the volume cell.</em></td>
+<td><em>its chirality is the right slot; the cell that realises the split is $i\omega$, a pure right multiplier.</em></td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-neutrino-and-majorana-fermions-in-biquaternionic-form.html">The Neutrino and Majorana Fermions in Biquaternionic Form</a></td>
+<td>D1</td>
+<td><em>The chirality operator of the frame is $\xi=-iR_{\mathrm{axf},\vec e_z}$, $\xi Q=-iQ\vec e_z$, $\xi^2=1$, a pure right multiplier.</em></td>
+<td><em>One chirality cell is $\xi=-iR_{\mathrm{axf},\vec e_z}$; it is a pure right multiplier, so it carries the right slot.</em> The three properties stay.</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-foldy-wouthuysen-transformation-in-biquaternionic-form.html">The Foldy–Wouthuysen Transformation in Biquaternionic Form</a></td>
+<td>D2, D1</td>
+<td><em>The chirality is $\Gamma F=-iF\vec e_z$, and it anticommutes with $\beta$.</em></td>
+<td>The anticommutation is a fact about two cells of one frame and is not what makes the operator a chirality. <em>The cell is the right multiplication $-iF\vec e_z$, a pure right multiplier; it anticommutes with $\beta$, and that anticommutation is a property of the pair of cells.</em></td>
+</tr>
+<tr>
+<td><a href="../articles_physics/exercise-the-non-relativistic-limit-and-the-pauli-equation.html">Exercise: The Non-Relativistic Limit and the Pauli Equation</a></td>
+<td>D1</td>
+<td><em>Fixing the frame, the chirality is the operator that multiplies on the right by $-i\vec e_z$ and takes the two values $\mp1$.</em></td>
+<td>Two words carry the defect and both go: <em>fixing the frame</em> and the implication that the operator is the notion. <em>The cell that realises the split is the right multiplication by $-i\vec e_z$; it takes the two values $\mp1$, and its side is the right slot.</em></td>
+</tr>
+<tr>
+<td><a href="../articles_physics/left-right-symmetric-fermions-from-complex-split-biquaternions-and-bioctonions.html">Left–Right Symmetric Fermions from Complex Split Biquaternions</a></td>
+<td>D1, D4</td>
+<td><em>it is a side, the eigenspace of the frame's volume cell</em>; and later <em>chirality is a side, read from the frame.</em></td>
+<td>Two errors. A side is a slot and not an eigenspace, and it is not read from the frame. <em>A side is the slot of an operator; a state has a chirality only as the eigenvalue of a cell, and the cell is one example of that side.</em></td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-square-zero-element-nilpotency-as-mode-differential-and-supercharge.html">The Square-Zero Element: Nilpotency as Mode Differential and Supercharge</a></td>
+<td>D6</td>
+<td><em>$\gamma_5$ is the reference-frame cell of the chirality.</em></td>
+<td>Nearly right, and one word wrong: $\gamma_5$ is an array, not a cell. <em>The cell is $-iL_{\mathrm{pau},e_t}R_{\mathrm{pau},\vec e_z}$, which the display writes $\gamma_5$.</em></td>
+</tr>
+<tr>
+<td><a href="../articles_physics/torsion-contorsion-and-the-spin-connection-in-biquaternionic-form.html">Torsion, Contorsion and the Spin Connection</a></td>
+<td>D1</td>
+<td><em>The chirality cell is the volume cell of the frame, the corpus's glyph $\mathsf V_{\mathrm{vol}}$.</em></td>
+<td>Two names are given to one object and neither is the notion. <em>The cell $\mathsf V_{\mathrm{vol}}$ realises the split; it is a pure right multiplier, and that is its side.</em></td>
+</tr>
+<tr>
+<td><a href="../articles_physics/canonical-quantization-of-the-biquaternion-rarita-schwinger-field.html">Canonical Quantization of the Biquaternion Rarita–Schwinger Field</a></td>
+<td>D6</td>
+<td><em>$\gamma_5$ is the reference-frame cell of the chirality operator.</em></td>
+<td>Same repair as the square-zero row: name the cell, then say which display writes $\gamma_5$.</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-biquaternion-basis-of-a-unified-field-fibre-bundle.html">The Biquaternion Basis of a Unified Field Fibre Bundle</a></td>
+<td>D1</td>
+<td><em>Chirality is the side, not an operator. … the cell that separates them is the volume cell of the frame.</em></td>
+<td>The heading sentence is already the right one and is kept. The second clause only needs the definite article changed to <em>one</em>: <em>one cell of the frame separates them.</em></td>
+</tr>
+<tr>
+<td><a href="../articles_physics/spin-and-the-three-elementary-carriers.html">Spin and the Three Elementary Carriers</a></td>
+<td>D1, D3</td>
+<td><em>the chirality is the cell, whose eigenspaces are $S$ and $S^{\mathrm c}$.</em></td>
+<td>The eigenspaces are right; the first half is not. <em>Chirality is the side; the cell that realises the split has $S$ and $S^{\mathrm c}$ as its eigenspaces.</em></td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-weak-interaction-in-biquaternionic-form.html">The Weak Interaction in Biquaternionic Form</a></td>
+<td>D3</td>
+<td><em>A field of definite chirality is therefore massless and its weak vertex is null, and both statements are read off the one idempotent.</em></td>
+<td>The idempotent gives the state; the chirality is a value of a cell on it. <em>Both statements are read off one cell and its eigenvalue on the state the idempotent prepares.</em></td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-chiral-algebra-of-biquaternions-and-the-cyclic-representation-of-the-dirac-equation.html">The Chiral Algebra of Biquaternions and the Cyclic Representation</a></td>
+<td>D1</td>
+<td><em>The carrier of the value is the cell $\mathsf V_{\mathrm{vol}}=-iR_{\vec u}$ of the frame along $\vec u$.</em></td>
+<td>Keep the cell; drop <em>of the frame</em> where it defines. <em>The carrier of the value is the cell $-iR_{\vec u}$; it is a pure right multiplier, and a rotation of the frame replaces it.</em></td>
+</tr>
+<tr>
+<td><a href="../articles_physics/bhabha-scattering-in-biquaternionic-form.html">Bhabha Scattering in Biquaternionic Form</a></td>
+<td>D1</td>
+<td><em>the fifth, the </em><em>volume cell</em><em>, acts by …</em>; and <em>The fifth cell is not independent …</em></td>
+<td>The count is a property of a frame's cell list, not of the notion. <em>The cell that realises the split is the right multiplication by $\vec e_z$; it is the fifth member of the frame's list of cells, and it is not independent of the four.</em></td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-dirac-path-integral-in-biquaternionic-form.html">The Dirac Path Integral in Biquaternionic Form</a></td>
+<td>D1, D6</td>
+<td><em>The volume cell is $\gamma_0\gamma_1\gamma_2\gamma_3=-i\gamma_5=-R_{\mathrm{pau},\vec e_z}=\cdots$</em></td>
+<td>An identity between an array product and a cell; correct as arithmetic, wrong as a name for chirality. <em>The cell is $-R_{\mathrm{pau},\vec e_z}$, and the display's product of the four arrays returns it.</em></td>
+</tr>
+<tr>
+<td><a href="../articles_physics/curved-spacetime-and-the-biquaternion-framework.html">Curved Spacetime and the Biquaternion Framework</a></td>
+<td>D1</td>
+<td><em>the fifth, $\gamma_5$, is the chirality cell $\mathsf V_{\mathrm{vol}}$ …</em></td>
+<td>Same as the Bhabha row, plus the array name.</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-ckm-matrix-and-cp-violation-in-biquaternionic-form.html">The CKM Matrix and CP Violation in Biquaternionic Form</a></td>
+<td>D6</td>
+<td><em>$\gamma_5$ is the older notation's name for the fifth generator, the one it calls the chirality cell.</em></td>
+<td>The sentence is a statement about the older notation and is allowed in a legacy paragraph; in the body, <em>the cell is one right multiplication, and the older notation calls it $\gamma_5$.</em></td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="tier-2-the-articles-whose-mechanism-rests-on-the-frame">Tier 2 — The Articles Whose Mechanism Rests On The Frame</h2>
+<p>Seven articles. The sentence is not a definition, so the defect is quieter, but a mechanism is derived from it and the derivation moves when the sentence is repaired.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Article</th>
+<th>Class</th>
+<th>The false statement</th>
+<th>The patch</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="../articles_physics/chiral-fermions-in-the-biquaternion-framework.html">Chiral Fermions in the Biquaternion Framework</a></td>
+<td>D1</td>
+<td><em>The two values are read from one operator, the chirality operator of the frame $\xi=-iR_{\mathrm{axf},\vec e_z}$.</em></td>
+<td>The article is otherwise the best-aligned of the physics set: it already says <em>that difference of sides is the operator statement of chirality</em>. Only the naming changes, to <em>one chirality cell</em>, and the line that calls $\gamma_5$ the <em>reference-frame representative</em> becomes a legacy sentence.</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/anomalies-and-anomaly-cancellation-in-biquaternionic-form.html">Anomalies and Anomaly Cancellation in Biquaternionic Form</a></td>
+<td>D1</td>
+<td>The axial density is attributed to <em>the chirality cell</em> and the frame's cells, with the gamma names in the legacy section.</td>
+<td>The computation is correct and stays. Replace <em>the chirality cell</em> by <em>the cell</em>, and state once that the axial rotation is the one-parameter group of that cell, so the density is a density of an operator and not of a frame.</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-proton-in-biquaternionic-form.html">The Proton in Biquaternionic Form</a></td>
+<td>D4</td>
+<td><em>whose two parts carry the two values of the chirality … at the declared [frame]</em>.</td>
+<td>The declared frame belongs to the cell's choice and not to the values. <em>The two parts are the two eigenvalues of one cell; the cell is a choice, the values are not.</em></td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-w-and-z-bosons-in-biquaternionic-form.html">The W and Z Bosons in Biquaternionic Form</a></td>
+<td>D1</td>
+<td><em>The chirality of a field is its subscript: a field is $L$ or $R$, $L$ is the $-1$ value of the volume cell $\mathsf V_{\mathrm{vol}}=-iR_{\vec e_z}$ of the frame …</em></td>
+<td><em>The chirality of a field is the slot its cell occupies; the two values are the eigenvalues of $-iR_{\vec e_z}$, and the cell is one example of the right slot.</em></td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-lsz-reduction-formula-in-biquaternionic-form.html">The LSZ Reduction Formula in Biquaternionic Form</a></td>
+<td>D4</td>
+<td><em>The chirality is the value of the subscript, $L$ or $R$.</em></td>
+<td>Half right: the value belongs to a state, the chirality to an operator. <em>A state carries the value $L$ or $R$; the chirality is the side of the cell that assigns it.</em></td>
+</tr>
+<tr>
+<td><a href="../articles_physics/supersymmetric-quantum-physics-in-the-biquaternion-framework.html">Supersymmetric Quantum Physics in the Biquaternion Framework</a></td>
+<td>D4, D1</td>
+<td><em>Chirality here is the subscript on an element and nothing else</em>; and the notation table carries <em>the chirality cell of the frame</em>.</td>
+<td>The first sentence is D4 exactly: the subscript is a value, not the notion. <em>The chirality is the side; the subscript is the value one cell takes on an element.</em> The table entry drops <em>of the frame</em>.</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-grading-fermion-parity-and-the-two-sectors-in-biquaternionic-form.html">The Grading, Fermion Parity and the Two Sectors</a></td>
+<td>D4</td>
+<td><em>chirality (left/right) … the label of the element, $\tilde Q_L$ or $\tilde Q_R$</em></td>
+<td>The table is nearly right and mislabels the row. <em>chirality: the side of the operator; the element carries a value of one cell.</em></td>
+</tr>
+</tbody>
+</table></div>
+<p>One article needs a naming pass and no rewrite: <a href="../articles_physics/the-pion-and-the-chiral-lagrangian-in-biquaternionic-form.html">The Pion and the Chiral Lagrangian in Biquaternionic Form</a> calls the cell <em>the volume cell</em> throughout and uses <em>chirality</em> in the physics sense of the chiral group and the chiral Lagrangian. It defines neither, so no sentence in it is false; the pass replaces the name and stops.</p>
+<h2 id="tier-3-the-maths-corpus-chirality-as-a-root-or-a-corner">Tier 3 — The Maths Corpus: Chirality As A Root Or A Corner</h2>
+<p>Seven articles. In $M_n(\mathbb{C})$ the slot of the biquaternion algebra has no analogue, so the defect here is not a wrong statement about $\mathbb{B}$ but a word used for a different object without a scope note. The repair is one paragraph per article, not a rewrite.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Article</th>
+<th>Class</th>
+<th>The false statement</th>
+<th>The patch</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="../articles_maths/the-two-chiralities-of-m4c.html">The Two Chiralities of $M_4(\mathbb{C})$</a></td>
+<td>D3, D6</td>
+<td><em>The chirality involution $\Gamma=H^2$ splits the carrier</em>; <em>The chirality is an involution, not a grading by the root.</em></td>
+<td>The second sentence is a true distinction between two objects of the matrix algebra and is kept. What is missing is the scope note: the slot notion lives on $\mathbb{B}$; here the word names an involution of the carrier, and an involution is a display-level object.</td>
+</tr>
+<tr>
+<td><a href="../articles_maths/the-two-chiralities-of-m6c.html">The Two Chiralities of $M_6(\mathbb{C})$</a></td>
+<td>D4</td>
+<td><em>the involution is a $\mathbb{Z}/2$ grading, and the word records that</em>; and <em>the biquaternion chirality is the separate central sign $\chi=i\tilde{Ζ}_{\mathrm{ad}}$ … which grades $S$ against $S^{\mathrm{c}}$.</em></td>
+<td>The article is careful — it already denies that the involution produces chiral spinors — and it names the central <em>form</em> in place of the notion. One sentence repairs it: the biquaternion chirality is the slot, of which $\chi$ is the central form and $\mathsf V_{\mathrm{vol}}$ is one cell.</td>
+</tr>
+<tr>
+<td><a href="../articles_maths/the-mass-block-and-the-chiral-polar-decomposition-of-m4c.html">The Mass Block and the Chiral Polar Decomposition of $M_4(\mathbb{C})$</a></td>
+<td>D3</td>
+<td><em>For $M_2(\mathbb{C})$, the chirality is the root $H=\operatorname{diag}(1,-1)$.</em></td>
+<td>Same scope note. The mass block is a corner and stays; the word for the root does not.</td>
+</tr>
+<tr>
+<td><a href="../articles_maths/the-peirce-su2-and-the-chiral-su2-su2-of-m4c.html">The Peirce $\mathfrak{su}_2$ and the Chiral $\mathfrak{su}_2\times\mathfrak{su}_2$ of $M_4(\mathbb{C})$</a></td>
+<td>D3</td>
+<td><em>The chirality is the root $H=\operatorname{diag}(1,-1)$.</em></td>
+<td>The article's whole subject is the contrast between two algebras, and that contrast is right. Only the naming of the object changes: the chiral algebra is the commutant of the involution, and the involution is determined by the root.</td>
+</tr>
+<tr>
+<td><a href="../articles_maths/the-rank-two-and-rank-three-splits-of-m6c.html">The Rank-Two and Rank-Three Splits of $M_6(\mathbb{C})$</a></td>
+<td>D3</td>
+<td><em>the chiral split is the representative adapted to the root.</em></td>
+<td><em>the split adapted to the root</em>, and the word <em>chiral</em> is left to the article that defines it.</td>
+</tr>
+<tr>
+<td><a href="../articles_maths/roots-of-unity-and-the-lagrange-idempotents-of-m4c.html">Roots of Unity and the Lagrange Idempotents of $M_4(\mathbb{C})$</a></td>
+<td>D3</td>
+<td><em>The </em><em>chirality involution</em><em> of the root is …</em> — the word is attached to the involution that a chosen root determines.</td>
+<td>The involution is real and its spectral projectors are the Lagrange idempotents, so nothing computed is wrong. The scope note is the repair, plus one conditional: the projector of $\tilde\Pi(u)$ equals the spectral projector of $-iR_u$ when the element is the same, and that is a coincidence of one element and not a definition.</td>
+</tr>
+<tr>
+<td><a href="../articles_maths/the-pauli-module-of-the-biquaternion-algebra.html">The Pauli Module of the Biquaternion Algebra</a></td>
+<td>D1</td>
+<td><em>chirality is a cell, and a cell is named, not displayed.</em></td>
+<td>The second half is the good half. <em>The chirality is the slot; the cell that realises it is named, and no frame is free of the choice.</em></td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="no-patch-the-articles-already-aligned">No Patch — The Articles Already Aligned</h2>
+<p>These state the notion correctly and must not be touched by a global search and replace. They are the models the patched rows are rewritten towards.</p>
+<ul>
+<li><a href="../articles_maths/operator-chirality-on-the-biquaternion-algebra.html">Operator Chirality on the Biquaternion Algebra</a> — the source.</li>
+<li><a href="../articles_physics/biquaternion-physical-interpretation-of-operator-chirality.html">Biquaternion Physical Interpretation of Operator Chirality</a> — migrated.</li>
+<li><a href="../articles_maths/operator-family-conventions.html">Operator Family Conventions</a> — <em>the cell is an example of the right slot and not the definition of chirality</em>.</li>
+<li><a href="../articles_maths/special-element-and-peirce-conventions.html">Special Element and Peirce Conventions</a> — <em>nor is a chirality a Peirce notion</em>.</li>
+<li><a href="../articles_physics/conceptual-conventions.html">Conceptual Conventions</a> — <em>a slot and not a gamma subscript, a Clifford product, a projector, a Peirce sign or an idempotent</em>.</li>
+<li><a href="../articles_maths/the-unpolarized-module-of-the-biquaternion-algebra.html">The Unpolarized Module of the Biquaternion Algebra</a> — <em>a frame cannot manufacture chirality</em>.</li>
+<li><a href="../articles_physics/the-cpt-theorem-in-biquaternionic-form.html">The CPT Theorem in Biquaternionic Form</a> — <em>one right multiplication, not a product of cells</em>.</li>
+<li><a href="../articles_physics/the-index-theorem-and-the-zero-mode-count-in-biquaternionic-form.html">The Index Theorem and the Zero-Mode Count</a> — the cell is even on the operator and does not grade it.</li>
+<li><a href="../articles_physics/helicity-in-biquaternionic-form.html">Helicity in Biquaternionic Form</a> — <em>chirality is a fixed side, the same in every frame</em>.</li>
+</ul>
+<h2 id="no-patch-vocabulary-collisions">No Patch — Vocabulary Collisions</h2>
+<p>Five articles use the word for another object and owe nothing to this migration. They are listed once so that a later scan does not re-open them.</p>
+<ul>
+<li><a href="../articles_maths/amphichiral-knots-and-the-orientation-reversing-involution.html">Amphichiral Knots and the Orientation-Reversing Involution</a> — the chirality of a knot.</li>
+<li><a href="../articles_maths/hermitian-clifford-structures.html">Hermitian Clifford Structures</a> — <em>the chirality is the product of an orthonormal basis in even dimension</em>; a Clifford volume element, correct there.</li>
+<li><a href="../articles_maths/the-clifford-multiplication-operator.html">The Clifford Multiplication Operator</a> and <a href="../articles_maths/the-graded-action-on-a-module-over-a-clifford-algebra.html">The Graded Action on a Module over a Clifford Algebra</a> — the grading of a Clifford module.</li>
+<li><a href="../articles_maths/m4r-h-l-regular-representation-operators.html">$M_4(\mathbb{R})$, $\mathbb{H}$, $\mathbb{L}$: Regular Representation Operators</a> — <em>the Peirce frame and the chirality are both absent</em>, a division-algebra statement.</li>
+</ul>
+<h2 id="the-order-of-work">The Order of Work</h2>
+<ol>
+<li><strong>Tier 0.</strong> One article, one section, two sentences. Nothing else can be settled until the section the others cite says the right thing.</li>
+<li><strong>Tier 1, in the order of the table.</strong> These are definitions; the citation chain is short and each row is one or two sentences.</li>
+<li><strong>Tier 2.</strong> The mechanisms. Each patch is a naming change plus one sentence that says what the mechanism was always using.</li>
+<li><strong>Tier 3, last.</strong> The maths corpus needs a scope note repeated in a few places, and a scope note is best written once the physics wording has stopped moving.</li>
+</ol>
+<h2 id="the-ledger">The Ledger</h2>
+<p>Counted over the two published corpora, all occurrences, no legacy exclusion.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Token</th>
+<th>Occurrences</th>
+<th>Articles</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><em>chirality</em>, <em>chiral</em></td>
+<td>4065</td>
+<td>309</td>
+</tr>
+<tr>
+<td><em>volume cell</em>, <em>volume element</em></td>
+<td>503</td>
+<td>134</td>
+</tr>
+<tr>
+<td><em>fifth cell</em>, <em>fifth generator</em></td>
+<td>30</td>
+<td>16</td>
+</tr>
+<tr>
+<td>$\gamma_5$, <em>gamma_5</em></td>
+<td>595</td>
+<td>90</td>
+</tr>
+<tr>
+<td><em>Peirce</em></td>
+<td>3826</td>
+<td>443</td>
+</tr>
+<tr>
+<td><em>idempotent</em></td>
+<td>10370</td>
+<td>979</td>
+</tr>
+</tbody>
+</table></div>
+<p>The first two rows are the size of the exposure; the last four are the size of the ambiguity. Most of those occurrences are legitimate: $\gamma_5$ in a legacy section, a Peirce corner discussed as a corner, an idempotent that prepares a state. The rows of this file count only the articles where one of them is made to carry the word <em>chirality</em>, and that is <strong>43 articles</strong>: one in Tier 0, twenty-eight in Tier 1, seven in Tier 2 and seven in Tier 3.</p>
+<h2 id="summary">Summary</h2>
+<p>Chirality is the slot of an operator and not a cell, so the migration is not a renaming. Every row above moves the word one step away from the object that has been carrying it: from the cell to the side, from the frame to the algebra, from the root and the idempotent to the slot, from the array to the operator. The mathematics is untouched, because the mathematics was already right; what changes is the grammar of the sentences that state it, and the grammar is what a reader carries away.</p>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

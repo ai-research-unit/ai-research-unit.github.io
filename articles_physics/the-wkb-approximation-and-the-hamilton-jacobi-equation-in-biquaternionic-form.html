@@ -143,11 +143,12 @@ $$</p>
 <h3 id="rays-trajectories-and-the-eikonal">Rays, trajectories, and the eikonal</h3>
 <p>The Hamilton–Jacobi equation is solved by the method of characteristics, and the characteristics are the classical trajectories. Writing $\vec p = \nabla S$ for the classical momentum, the equation reads $|\vec p|^2/2m+V=E$, and its characteristic system is</p>
 <p>$$
-d(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)/dr'_t = \frac{\vec p}{m},
+d(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)/dt' = \frac{\vec p}{m},
 \qquad
-\,d\vec p/dr'_t = -\nabla V .
-$$</p>
-<p>The phase gradient therefore defines a congruence of trajectories along which $S$ is constant along the wave fronts and increases at the rate $dS/dr'_t = \vec p\cdot\,d(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)/dr'_t = |\vec p|^2/m$, which recovers the classical action. This is the optical–mechanical analogy in its algebraic form: the wave fronts $S=\text{const}$ are the surfaces of constant phase, the rays are the trajectories, and the phase gradient is the ray direction. In the biquaternion interpretation the ray direction per point is an element of the real-quaternion subspace $\mathbb{B}_{H}$, the algebra's copy of three-dimensional space, and the phase accumulated along a ray is a central element of $\mathbb{B}_{C}$.</p>
+\,d\vec p/dt' = -\nabla V ,
+$$
+written against the clock $t'=r'_t/c$, because a characteristic velocity is a velocity and not a dimensionless ratio.</p>
+<p>The phase gradient therefore defines a congruence of trajectories along which $S$ is constant along the wave fronts and increases at the rate $dS/dt' = \vec p\cdot\,d(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)/dt' = |\vec p|^2/m$, an energy and not an energy per metre, which recovers the classical action. This is the optical–mechanical analogy in its algebraic form: the wave fronts $S=\text{const}$ are the surfaces of constant phase, the rays are the trajectories, and the phase gradient is the ray direction. In the biquaternion interpretation the ray direction per point is an element of the real-quaternion subspace $\mathbb{B}_{H}$, the algebra's copy of three-dimensional space, and the phase accumulated along a ray is a central element of $\mathbb{B}_{C}$.</p>
 <h3 id="the-free-and-separable-cases">The free and separable cases</h3>
 <p>For the free particle the Hamilton–Jacobi equation has the complete integral</p>
 <p>$$
@@ -330,8 +331,8 @@ $$</p>
 <td>Hamilton–Jacobi equation as a biquaternion norm</td>
 </tr>
 <tr>
-<td>$\vec p=\nabla S$, $d(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)/dr'_t=\vec p/m$, $d\vec p/dr'_t=-\nabla V$</td>
-<td>Characteristics; classical trajectories</td>
+<td>$\vec p=\nabla S$, $d(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)/dt'=\vec p/m$, $d\vec p/dt'=-\nabla V$</td>
+<td>Characteristics; classical trajectories, against $t'=r'_t/c$</td>
 </tr>
 <tr>
 <td>$\nabla\cdot(A^2\nabla S)=0$</td>
