@@ -45,7 +45,7 @@ $$
 
 It is linear, it is an automorphism, and its square is the identity: the two factors multiply to $e_y^2=-e_t$ on the left and on the right, and the two signs cancel. The conjugation is that multiplier preceded by the coefficient conjugation, and the two behave differently on the two components of the pair.
 
-### The Two Values of the Subscript
+### The Two Values of the Field
 
 An element is written $Q=Q_L+Q_R$. The part $Q_L$ is the part of value $L$, the minus one, and $Q_R$ the part of value $R$, the plus one. That is the whole definition, and the values are exactly two. Every element is a sum of one part of each, only the zero element has both parts zero, a product takes the value of its right factor, and left multiplication keeps the value.
 

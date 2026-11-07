@@ -40,7 +40,7 @@ The article is the ninth of the ten and the index of the notation: the table bel
 
 **No label stands in the caret.** A variant of an object is a name, and every name stands in the subscript (§*The Labels*). Italic is a power and upright is a name, and the slot agrees with the face: $L_{\mathrm{axf},\vec e_x}$ is the matrix of $\vec e_x$ in the axis-free frame, and it is not the $x$-th power of an operator.
 
-**No index is raised, and the caret never carries one.** Every coordinate, component, basis vector, frame basis operator and sign symbol is written low — $x_\mu$, $A_\mu$, $\vec e_i$, $\gamma_i$, $\varepsilon_{ijk}$ (§*The Upper and Low Marks*). A contraction is written as an explicit sum with the sign vector or as the quaternionic product that carries it: the form $\langle\tilde\nabla,\tilde Q_{\mathrm f}\rangle_{\natural}$ for a derivative with a field, and $\langle\tilde\nabla\rangle_{\natural}=\Box$ for two derivatives (*Operator and Differential Calculus Conventions*, §*The Krein Product, Its Form and Its Norm*). Where a contraction is written with indices, the sum names the summed index — $\sum_\mu e_\mu\partial/\partial Q_\mu$, $\sum_k\vec e_kA_k$ — and is never a repeated index left to the summation convention. The rule is the one of the physical corpus (*Operator and Calculus Conventions*, §*Conventions for Derivation*).
+**No index is raised, and the caret never carries one.** Every coordinate, component, basis vector, frame operator and sign symbol is written low — $x_\mu$, $A_\mu$, $\vec e_i$, $\gamma_i$, $\varepsilon_{ijk}$ (§*The Upper and Low Marks*). A contraction is written as an explicit sum with the sign vector or as the quaternionic product that carries it: the form $\langle\tilde\nabla,\tilde Q_{\mathrm f}\rangle_{\natural}$ for a derivative with a field, and $\langle\tilde\nabla\rangle_{\natural}=\Box$ for two derivatives (*Operator and Differential Calculus Conventions*, §*The Krein Product, Its Form and Its Norm*). Where a contraction is written with indices, the sum names the summed index — $\sum_\mu e_\mu\partial/\partial Q_\mu$, $\sum_k\vec e_kA_k$ — and is never a repeated index left to the summation convention. The rule is the one of the physical corpus (*Operator and Calculus Conventions*, §*Conventions for Derivation*).
 
 ## The Labels
 
@@ -219,7 +219,7 @@ The table is an index of labels and not a list of tokens: a label names an objec
 | $\mathrm{top}$ | the top exterior power |
 | $\mathrm{tot}$ | the total tensor |
 | $\mathrm{tpl}$ | the topological entropy and susceptibility, $h_{\mathrm{tpl}}$ |
-| $\mathrm{vol}$ | the fifth basis operator of a frame, $\mathsf{V}_{\mathrm{vol}}$, the chirality operator of the frame |
+| $\mathrm{vol}$ | the fifth frame operator of a frame, $\mathsf{V}_{\mathrm{vol}}$, the chirality operator of the frame |
 | $\mathrm{wkb}$ | the WKB approximation |
 
 **The second table is the angle family.** Each row is a role that a second angle plays in one formula, and the glyph is the same in every row: the label is what tells one angle from another. The table reads alphabetically by the label, and no angle label names an object — the object is the element and the angle is one of its coordinates.

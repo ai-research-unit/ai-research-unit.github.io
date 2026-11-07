@@ -67,7 +67,7 @@ $$
 
 the Klein–Gordon operator in this normalization. The same holds for $\tilde{Ξ}_{\mathrm{sp},L}$. So each part obeys the Klein–Gordon equation. The factorization is the one the algebra supplies; no matrix square is used and no second metric enters.
 
-### The Two Values of the Subscript
+### The Subscript and the Two Parts
 
 The subscript that names the part, and the two letters $L$ and $R$, are fixed in *Matrix Representations Conventions*, §*The Legacy Pauli Gamma Formulation*; the side that reads it is *Operator Chirality on the Biquaternion Algebra*, §*What Operator Chirality Is Not*. The field of this article is one element that carries both parts, and nothing is introduced to hold them.
 

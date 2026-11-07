@@ -74,7 +74,7 @@ It is alternating, so it vanishes at the two equal arguments, $\tilde q\wedge\ti
 
 ### The Three Annihilating Sets
 
-**Read the cells.** The annihilating set of a structure is the set of elements that the product kills at every partner, and the table records the three sets with the reason each one is what it is. The vector part of $\tilde q_1$ is $\vec q_1$, and §*The Annihilating Set of a Product* carries the criterion, the coordinates and the two algebraic norms. Every set can be checked by multiplying a candidate into the four units.
+**Read the cases.** The annihilating set of a structure is the set of elements that the product kills at every partner, and the table records the three sets with the reason each one is what it is. The vector part of $\tilde q_1$ is $\vec q_1$, and §*The Annihilating Set of a Product* carries the criterion, the coordinates and the two algebraic norms. Every set can be checked by multiplying a candidate into the four units.
 
 | structure | the product | the annihilating set, and why |
 |---|---|---|

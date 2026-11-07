@@ -48,10 +48,10 @@ The definition, the countable stability, the product rules and the comparison wi
 
 ## The Bowen Equation for Hyperbolic Julia Sets
 
-**Definition.** Let $J = J(f)$ be a **hyperbolic** Julia set of a polynomial of degree $d \geq 2$, so that $f$ is expanding on $J$: there are $C > 0$ and $\rho > 1$ with $|\\frac{d}{dz}(f^n)(z)| \geq C\rho^n$ for all $z \in J$ and $n \geq 1$. The **pressure function** of the potential $-t\log|\frac{df}{dz}|$ is
+**Definition.** Let $J = J(f)$ be a **hyperbolic** Julia set of a polynomial of degree $d \geq 2$, so that $f$ is expanding on $J$: there are $C > 0$ and $\rho > 1$ with $|\frac{d}{dz}(f^n)(z)| \geq C\rho^n$ for all $z \in J$ and $n \geq 1$. The **pressure function** of the potential $-t\log|\frac{df}{dz}|$ is
 
 $$
-P(t) = \lim_{n \to \infty} \frac{1}{n} \log \sum_{f^n(w) = w} |\\frac{d}{dz}(f^n)(w)|^{-t} ,
+P(t) = \lim_{n \to \infty} \frac{1}{n} \log \sum_{f^n(w) = w} |\frac{d}{dz}(f^n)(w)|^{-t} ,
 $$
 
 the sum being over the fixed points of $f^n$ or, equivalently, over any conformal partition of $J$ into pieces of diameter tending to zero.
@@ -66,7 +66,7 @@ $$\boxed{\;\dim_H J(f) = s\;}.$$
 
 The equilibrium state $\mu_s$ of the potential $-s\log|\frac{df}{dz}|$ is the invariant measure of **full dimension**: it is ergodic, its measure-theoretic entropy is $h_{\mu_s} = s\,\chi_{\mu_s}$ with $\chi_{\mu_s} = \int\log|\frac{df}{dz}|\,d\mu_s$, and its Hausdorff dimension is $s$, so that $\dim_H \mu_s = \dim_H J(f)$.
 
-**Proof sketch.** The pressure is finite and real-analytic for $t$ real, because the potential $-t\log|\frac{df}{dz}|$ is Hölder and the map is uniformly expanding; convexity is the general convexity of the pressure for a real potential, and monotonicity follows from $\log|\frac{df}{dz}| > 0$ on the hyperbolic Julia set. The Bowen equation has a unique root because $P(0) = \log d > 0$ and $P(t) \to -\infty$. The root equals the dimension because the level sets of the partition of $J$ into pieces of diameter $|\\frac{d}{dz}(f^n)|^{-1}$ obey the Moran covering bound: the sum $\sum|\\frac{d}{dz}(f^n)|^{-t}$ is comparable to the $t$-dimensional content of the $n$-th level, and its exponential growth rate passes through $0$ exactly at $t = \dim_H J$. The equilibrium state has dimension $s$ by the dimension formula of Ledrappier and Young, and it is the measure of maximal dimension by the same covering estimate. The pressure, the equilibrium states and the dimension formula are those of *Ergodic Theory* and of *The Julia Sets of a Complex Polynomial*.
+**Proof sketch.** The pressure is finite and real-analytic for $t$ real, because the potential $-t\log|\frac{df}{dz}|$ is Hölder and the map is uniformly expanding; convexity is the general convexity of the pressure for a real potential, and monotonicity follows from $\log|\frac{df}{dz}| > 0$ on the hyperbolic Julia set. The Bowen equation has a unique root because $P(0) = \log d > 0$ and $P(t) \to -\infty$. The root equals the dimension because the level sets of the partition of $J$ into pieces of diameter $|\frac{d}{dz}(f^n)|^{-1}$ obey the Moran covering bound: the sum $\sum|\frac{d}{dz}(f^n)|^{-t}$ is comparable to the $t$-dimensional content of the $n$-th level, and its exponential growth rate passes through $0$ exactly at $t = \dim_H J$. The equilibrium state has dimension $s$ by the dimension formula of Ledrappier and Young, and it is the measure of maximal dimension by the same covering estimate. The pressure, the equilibrium states and the dimension formula are those of *Ergodic Theory* and of *The Julia Sets of a Complex Polynomial*.
 
 **Example.** For $c = 0$ the Julia set is the circle, and the equations are solved by $s = 1$: the partition of the circle into the $2^n$ arcs carries the weight $2^{-n}$ each, the sum in the pressure is $2^n \cdot 2^{-nt} = 2^{n(1-t)}$, and its growth rate is $(1-t)\log 2$, which vanishes at $t = 1$. The Bowen value is $1$, in agreement with the direct computation.
 

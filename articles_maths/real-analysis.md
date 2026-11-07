@@ -245,18 +245,18 @@ provided the limit exists. If it does, $f$ is **differentiable** at $c_0$.
 
 ### Rules of Differentiation
 
-**Linearity.** $\\frac{d}{dx}(af + bg) = a \frac{df}{dx} + b \frac{dg}{dx}$.
+**Linearity.** $\frac{d}{dx}(af + bg) = a \frac{df}{dx} + b \frac{dg}{dx}$.
 
-**Product rule.** $\\frac{d}{dx}(fg) = \frac{df}{dx} g + f \frac{dg}{dx}$.
+**Product rule.** $\frac{d}{dx}(fg) = \frac{df}{dx} g + f \frac{dg}{dx}$.
 
-**Quotient rule.** $\\frac{d}{dx}(f/g) = (\frac{df}{dx} g - f \frac{dg}{dx})/g^2$ where $g \neq 0$.
+**Quotient rule.** $\frac{d}{dx}(f/g) = (\frac{df}{dx} g - f \frac{dg}{dx})/g^2$ where $g \neq 0$.
 
-**Chain rule.** $\\frac{d}{dx}(f \circ g)(a) = \frac{df}{dx}(g(a)) \frac{dg}{dx}(a)$.
+**Chain rule.** $\frac{d}{dx}(f \circ g)(a) = \frac{df}{dx}(g(a)) \frac{dg}{dx}(a)$.
 
 **Inverse function rule.** If $f$ is differentiable at $c_0$ with $\frac{df}{dx}(c_0) \neq 0$ and $f^{-1}$ is defined near $f(c_0)$, then
 
 $$
-\\frac{d}{dx}(f^{-1})(f(c_0)) = \frac{1}{\frac{df}{dx}(c_0)}.
+\frac{d}{dx}(f^{-1})(f(c_0)) = \frac{1}{\frac{df}{dx}(c_0)}.
 $$
 
 ### The Mean Value Theorem

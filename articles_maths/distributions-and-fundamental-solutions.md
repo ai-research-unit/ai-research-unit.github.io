@@ -174,7 +174,7 @@ are strict.
 **Definition.** The **Fourier transform** of $w \in \mathcal S'(\mathbb{R}^n)$ is defined by transposition,
 
 $$
-\langle\mathcal F w,\varphi\rangle=\langle w,\\mathcal F\\varphi\rangle, \qquad \varphi \in \mathcal S(\mathbb{R}^n),
+\langle\mathcal F w,\varphi\rangle=\langle w,\mathcal F\\varphi\rangle, \qquad \varphi \in \mathcal S(\mathbb{R}^n),
 $$
 
 and is again tempered. The transform is a linear isomorphism of $\mathcal S'$ with itself, and it intertwines differentiation with multiplication:
@@ -185,7 +185,7 @@ $$
 
 for $w \in \mathcal S'$ and $v \in \mathcal E'$, the convolution being defined in the next section.
 
-**Example.** $\hat\delta=1$ and $\hat1=(2\pi)^n\delta$, since $\langle\hat\delta,\varphi\rangle=\langle\delta,\\mathcal F\\varphi\rangle=\\mathcal F\\varphi(0)=\int\varphi$; the transform of a Gaussian $\exp(-|x|^2/2)$ is $(2\pi)^{n/2}\exp(-|\zeta|^2/2)$; and the transform of a function of compact support is smooth (indeed entire) with at most polynomial growth of all derivatives, which is why the two dual spaces differ.
+**Example.** $\hat\delta=1$ and $\hat1=(2\pi)^n\delta$, since $\langle\hat\delta,\varphi\rangle=\langle\delta,\mathcal F\\varphi\rangle=\mathcal F\\varphi(0)=\int\varphi$; the transform of a Gaussian $\exp(-|x|^2/2)$ is $(2\pi)^{n/2}\exp(-|\zeta|^2/2)$; and the transform of a function of compact support is smooth (indeed entire) with at most polynomial growth of all derivatives, which is why the two dual spaces differ.
 
 ## Convolution
 

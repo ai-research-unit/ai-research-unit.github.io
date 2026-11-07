@@ -2,7 +2,7 @@
 
 ## Introduction
 
-The algebra is read in matrices in three ways, and the three answer different questions. The **axis-free representation** reads multiplication in the basis the algebra already carries, and writes the two operators $L_{\mathrm{axf}}(\tilde Q)$ and $R_{\mathrm{axf}}(\tilde Q)$; it needs no frame, its entries are the structure constants, and it is the display a computation uses when no direction is to be singled out. The **Pauli representation** reads the same two operators in the Peirce frame of the standard pair; it costs the choice of a frame and buys the $2\times2$ block, the five-cell Clifford frame and the gamma matrices. The **$2\times2$ isomorphism** $\mathsf{M}_2:\mathbb{B}\to M_2(\mathbb{C})$ reads the element itself as a complex matrix of the algebra's own size; it is not a regular representation at all, and it is the block from which the Pauli display is built.
+The algebra is read in matrices in three ways, and the three answer different questions. The **axis-free representation** reads multiplication in the basis the algebra already carries, and writes the two operators $L_{\mathrm{axf}}(\tilde Q)$ and $R_{\mathrm{axf}}(\tilde Q)$; it needs no frame, its entries are the structure constants, and it is the display a computation uses when no direction is to be singled out. The **Pauli representation** reads the same two operators in the Peirce frame of the standard pair; it costs the choice of a frame and buys the $2\times2$ block, the five-operator Clifford frame and the gamma matrices. The **$2\times2$ isomorphism** $\mathsf{M}_2:\mathbb{B}\to M_2(\mathbb{C})$ reads the element itself as a complex matrix of the algebra's own size; it is not a regular representation at all, and it is the block from which the Pauli display is built.
 
 The order of the article is that order. The axis-free display comes first because it follows from the multiplication table alone, with nothing chosen. The Pauli display comes second because it needs the standard pair, and once it is written the switch between the two frames is one matrix and its inverse, §*The Switch Between the Two Frames*. The $2\times2$ isomorphism comes last because it is the algebra and not an operator on it, and it is read best after both $4\times4$ displays have shown what a matrix of an operator is. The rule that keeps the two legacy formulations out of every body section is stated before all three, in §*The Rule on Pauli and Gamma Matrices*.
 
@@ -44,7 +44,7 @@ $$
 $$
 This is the whole reason the article writes both families and their products: the object displayed is an operator of the two-sided family, and the matrix is what a computation can multiply.
 
-**The sixteen basis operators are the sixteen basis operators.** The pair $(\mu,\nu)$ names the basis two-sided operator $e_\mu[\,]e_\nu$, $X\mapsto e_\mu Xe_\nu$, and its matrix is the basis operator $L_{e_\mu}R_{e_\nu}$. The sixteen basis operators are therefore the matrices of a basis: by the generation theorem of that article, §*The Sixteen Products as a Basis*, they are linearly independent and they span the ambient $\operatorname{End}_{\mathbb{C}}(\mathbb{B})=M_4(\mathbb{C})$, of complex dimension sixteen. Every operator of $\mathbb{B}$ is a complex combination of the sixteen basis operators, and the sixteen coefficients are its coordinates in that basis.
+**The sixteen basis operators are the sixteen two-sided products.** The pair $(\mu,\nu)$ names the basis two-sided operator $e_\mu[\,]e_\nu$, $X\mapsto e_\mu Xe_\nu$, and its matrix is the basis operator $L_{e_\mu}R_{e_\nu}$. The sixteen basis operators are therefore the matrices of a basis: by the generation theorem of that article, §*The Sixteen Products as a Basis*, they are linearly independent and they span the ambient $\operatorname{End}_{\mathbb{C}}(\mathbb{B})=M_4(\mathbb{C})$, of complex dimension sixteen. Every operator of $\mathbb{B}$ is a complex combination of the sixteen basis operators, and the sixteen coefficients are its coordinates in that basis.
 
 **The coefficients of a two-sided operator are an outer product.** Expanding in the operator basis,
 $$
@@ -701,9 +701,9 @@ the result is again a left multiplication and a right multiplication, so the ass
 $$
 \mathbb{B}\otimes_{\mathbb{C}}\mathbb{B}_{\mathrm{opp}}\longrightarrow M_4(\mathbb{C})\cong\mathrm{Cl}_{1,3}(\mathbb{C}).
 $$
-The sixteen products of the five frame basis operators span over $\mathbb{R}$ the algebra $\mathrm{Cl}_{1,3}(\mathbb{R})\cong M_2(\mathbb{H})$, of real dimension $16$, and the sixteen basis operators span $\mathrm{Cl}_{3,1}(\mathbb{R})\cong M_4(\mathbb{R})$, the opposite real form. The Dirac, Weyl and Majorana matrices are three presentations of the same complex algebra, related by a change of frame; a change of frame is a change of basis, not a change of object.
+The sixteen products of the five frame operators span over $\mathbb{R}$ the algebra $\mathrm{Cl}_{1,3}(\mathbb{R})\cong M_2(\mathbb{H})$, of real dimension $16$, and the sixteen basis operators span $\mathrm{Cl}_{3,1}(\mathbb{R})\cong M_4(\mathbb{R})$, the opposite real form. The Dirac, Weyl and Majorana matrices are three presentations of the same complex algebra, related by a change of frame; a change of frame is a change of basis, not a change of object.
 
-**The five basis operators of the frame.** The five frame basis operators are
+**The five basis operators of the frame.** The five frame operators are
 $$
 \boxed{\;iL_{\mathrm{pau},e_t}R_{\mathrm{pau},\vec e_x},\qquad
 iL_{\mathrm{pau},\vec e_x}R_{\mathrm{pau},\vec e_y},\qquad
@@ -723,7 +723,7 @@ $$
 $$
 with $\varepsilon=(1,-1,-1,-1)$ the plain weight. No index is raised or lowered: the metric is the unit metric $\delta_{\mu\nu}=(1,1,1,1)$, which is the identity, and the sign is carried by the weight inside the product.
 
-**The sixteen products are the sixteen basis operators.** The five frame basis operators are five basis operators up to a factor $i$, and the sixteen products of the five are the sixteen basis operators:
+**The sixteen products are the sixteen basis operators.** The five frame operators are five basis operators up to a factor $i$, and the sixteen products of the five are the sixteen basis operators:
 
 | grade | basis operators |
 |---|---|
@@ -750,9 +750,9 @@ so the frame is visible in the formula.
 
 The Pauli and gamma formulation is legacy: the reasons are explained in the article *Why AXF Matrices instead of Pauli and Gamma Matrices*. The generators carry no frame label: $\gamma_\mu$ is one set of matrices, $\gamma_0^2=I_4$ and $\gamma_k^2=-I_4$. The frame belongs to the coordinate, $Q_\mu$ or $x_\mu$, not to the array. The fifth is written $\gamma_5$ with no bracket and no frame, because it is the product of the four and not the image of a direction.
 
-**The gammas are the five-cell frame as matrices.** The body writes the basis operators; this section writes the arrays, in both frames.
+**The gammas are the five-operator frame as matrices.** The body writes the basis operators; this section writes the arrays, in both frames.
 
-**The five gammas.** The five Dirac matrices are two-sided operators of the frame. The fifth is the fifth basis operator of the frame, written $\mathsf{V}_{\mathrm{vol}}$ where the basis operator and not its array is meant, with the frame named in the sentence; the articles on the sides use that glyph and cite the gamma display for the arrays.
+**The five gammas.** The five Dirac matrices are two-sided operators of the frame. The fifth is the fifth frame operator, written $\mathsf{V}_{\mathrm{vol}}$ where the operator and not its array is meant, with the frame named in the sentence; the articles on the sides use that glyph and cite the gamma display for the arrays.
 $$
 \boxed{\;\gamma_0=iR_{\mathrm{pau},\vec e_x}=iL_{\mathrm{pau},e_t}R_{\mathrm{pau},\vec e_x},\qquad
 \gamma_1=iL_{\mathrm{pau},\vec e_x}R_{\mathrm{pau},\vec e_y},\qquad
@@ -790,7 +790,7 @@ $$
 $$
 The entries are $\pm i$ or $0$ in both frames, and the axis-free arrays are exactly the basis operators $iR_{\mathrm{axf},\vec e_x}$, $iL_{\mathrm{axf},\vec e_x}R_{\mathrm{axf},\vec e_y}$, $iL_{\mathrm{axf},\vec e_y}R_{\mathrm{axf},\vec e_y}$, $iL_{\mathrm{axf},\vec e_z}R_{\mathrm{axf},\vec e_y}$ and $-iR_{\mathrm{axf},\vec e_z}$: the same five basis operators, drawn in the other frame.
 
-**The sixteen products.** The five frame basis operators are five of the sixteen products up to a factor $i$, and their products in increasing grade are the sixteen basis operators:
+**The sixteen products.** The five frame operators are five of the sixteen products up to a factor $i$, and their products in increasing grade are the sixteen basis operators:
 
 | grade | $\gamma$-product | basis operator | equality |
 |---|---|---|---|
@@ -919,7 +919,7 @@ Q_z&Q_y&-Q_x&Q_t
 $$
 Its eight unit matrices are real signed permutations, its stitch is $R_{\mathrm{axf}}=D(L_{\mathrm{axf}})^{\mathsf T}D$ with $D=\operatorname{diag}(1,-1,-1,-1)$, its transpose is the conjugation, and its sixteen products are real. Nothing is chosen but the basis the algebra already carries.
 
-**The Pauli representation comes second.** Its frame is the Peirce basis $(\tilde\Pi_+,\vec\Upsilon_+,\vec\Upsilon_-,\tilde\Pi_-)$ of the standard pair, and in it the left matrix is $I_2\otimes\mathsf{M}_2(\tilde Q)$ and the right one $\mathsf{M}_2(\tilde Q)^{\mathsf T}\otimes I_2=\mathsf P L(\tilde Q)^{\mathsf T}\mathsf P^{-1}$. The four left matrices $L_{\mathrm{pau},e_\mu}$, the four right matrices $R_{\mathrm{pau},e_\nu}$ and the sixteen basis operators $L_{\mathrm{pau},e_\mu}R_{\mathrm{pau},e_\nu}$ are written out, and the basis operators are the Clifford algebra: $e_\mu\otimes e_{\mathrm{opp},\nu}\mapsto L_{\mathrm{pau},e_\mu}R_{\mathrm{pau},e_\nu}$ is an isomorphism onto $M_4(\mathbb{C})\cong\mathrm{Cl}_{1,3}(\mathbb{C})$, the sixteen products of the five frame basis operators span $\mathrm{Cl}_{1,3}(\mathbb{R})$ and the sixteen basis operators span $\mathrm{Cl}_{3,1}(\mathbb{R})$. Five basis operators are the gamma matrices, written in this frame and in the axis-free one. The basis operators are the matrices of the sixteen basis two-sided operators $e_\mu[\,]e_\nu$, so one table of them serves the two-sided family, the enveloping algebra and the Clifford algebra at once.
+**The Pauli representation comes second.** Its frame is the Peirce basis $(\tilde\Pi_+,\vec\Upsilon_+,\vec\Upsilon_-,\tilde\Pi_-)$ of the standard pair, and in it the left matrix is $I_2\otimes\mathsf{M}_2(\tilde Q)$ and the right one $\mathsf{M}_2(\tilde Q)^{\mathsf T}\otimes I_2=\mathsf P L(\tilde Q)^{\mathsf T}\mathsf P^{-1}$. The four left matrices $L_{\mathrm{pau},e_\mu}$, the four right matrices $R_{\mathrm{pau},e_\nu}$ and the sixteen basis operators $L_{\mathrm{pau},e_\mu}R_{\mathrm{pau},e_\nu}$ are written out, and the basis operators are the Clifford algebra: $e_\mu\otimes e_{\mathrm{opp},\nu}\mapsto L_{\mathrm{pau},e_\mu}R_{\mathrm{pau},e_\nu}$ is an isomorphism onto $M_4(\mathbb{C})\cong\mathrm{Cl}_{1,3}(\mathbb{C})$, the sixteen products of the five frame operators span $\mathrm{Cl}_{1,3}(\mathbb{R})$ and the sixteen basis operators span $\mathrm{Cl}_{3,1}(\mathbb{R})$. Five basis operators are the gamma matrices, written in this frame and in the axis-free one. The basis operators are the matrices of the sixteen basis two-sided operators $e_\mu[\,]e_\nu$, so one table of them serves the two-sided family, the enveloping algebra and the Clifford algebra at once.
 
 **The switch comes between them, and belongs to both.** It is $C_{\Pi}$ and its inverse, of determinant $-\tfrac14$ and normalisation $C_{\Pi}^{\dagger}C_{\Pi}=\tfrac12\mathrm I_4$, with $L_{\mathrm{axf}}=C_{\Pi}LC_{\Pi}^{-1}$ and $R_{\mathrm{axf}}=C_{\Pi}RC_{\Pi}^{-1}$. It is two $2\times2$ blocks, it carries the eight unit matrices and the sixteen basis operators, and it leaves the trace $4Q_t$ and the determinant $\langle\tilde Q\rangle_{\natural}^2$ alone.
 

@@ -93,7 +93,7 @@ $\hat\mu(x)=\int \exp(-2\pi ix\cdot\zeta)d\mu(\zeta)$ is a tempered distribution
 **Theorem (Bochner–Schwartz).** A distribution $T\in\mathcal D'(\mathbb R^n)$ is positive definite if and
 only if there is a unique positive tempered measure $\mu$ with $T=\hat\mu$; that is,
 $$
-\boxed{\;\langle T,\varphi\rangle=\int_{\mathbb R^n}\\mathcal F\\varphi(\zeta)\,d\mu(\zeta)
+\boxed{\;\langle T,\varphi\rangle=\int_{\mathbb R^n}\mathcal F\\varphi(\zeta)\,d\mu(\zeta)
 =\int_{\mathbb R^n}\Bigl(\int_{\mathbb R^n}\varphi(x)\exp(-2\pi ix\cdot\zeta)dx\Bigr)d\mu(\zeta)\;} .
 $$
 Equivalently, the Fourier transform is a bijection between the positive definite distributions and the
@@ -105,9 +105,9 @@ image of the positive cone of the measures.
 **Proof sketch.** Suppose first that $T=\hat\mu$ with $\mu\geq0$ tempered. Then for
 $\varphi\in C_c^\infty$,
 $$
-\langle T,\varphi*\varphi^{*}\rangle=\int\lvert\\mathcal F\\varphi(\zeta)\rvert^2\,d\mu(\zeta)\geq0 ,
+\langle T,\varphi*\varphi^{*}\rangle=\int\lvert\mathcal F\\varphi(\zeta)\rvert^2\,d\mu(\zeta)\geq0 ,
 $$
-because $\widehat{\varphi*\varphi^{*}}=\lvert\\mathcal F\\varphi\rvert^2$ by the convolution and involution
+because $\widehat{\varphi*\varphi^{*}}=\lvert\mathcal F\\varphi\rvert^2$ by the convolution and involution
 identities of the Fourier article; so $T$ is positive definite. Conversely let $T$ be positive definite, and
 let $\rho_\epsilon(x)=\epsilon^{-n}\rho(x/\epsilon)$ be a nonnegative even approximate identity with
 $\rho\in C_c^\infty$ real and even, so that $\rho_\epsilon^{*}=\rho_\epsilon$ and
@@ -154,7 +154,7 @@ finite (Bochner's theorem in the function case).
 
 **Proof.** The order of a distribution is the least $N$ with $\lvert\langle T,\varphi\rangle\rvert\leq
 C\sum_{\lvert\alpha\rvert\leq N}\sup\lvert\partial^\alpha\varphi\rvert$, and the transformed pairing
-$\int\\mathcal F\\varphi\,d\mu$ shows that the growth of $\mu$ is controlled by the seminorms of $\varphi$ used;
+$\int\mathcal F\\varphi\,d\mu$ shows that the growth of $\mu$ is controlled by the seminorms of $\varphi$ used;
 the finite-measure case is Bochner's theorem for bounded continuous functions.
 
 ### Examples

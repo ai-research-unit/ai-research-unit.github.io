@@ -75,7 +75,7 @@ A ring is **semisimple** when its regular module is a direct sum of simples, equ
 
 ## The Two Conditions Compared
 
-The two conditions are not symmetric: DCC implies ACC by Akizuki–Hopkins–Levitzki, but not conversely, and the examples separate the cells. The table records where each standard ring sits.
+The two conditions are not symmetric: DCC implies ACC by Akizuki–Hopkins–Levitzki, but not conversely, and the examples separate the cases. The table records where each standard ring sits.
 
 | Ring | ACC (Noetherian) | DCC (Artinian) | The invariant that shows it | Introduced in |
 |---|---|---|---|---|

@@ -26,9 +26,9 @@ extended to $\hat{\mathbb{C}}$ by $f(\infty) = \infty$. The **iterates** are $f^
 
 ### Periodic Points and Their Multipliers
 
-**Definition.** A point $z$ is **periodic** of period $p \geq 1$ if $f^p(z) = z$ and $p$ is the least such integer; it is **fixed** if $p = 1$. The **multiplier** of the cycle is $\lambda = \\frac{d}{dz}(f^p)(z)$. The cycle is **attracting** if $|\lambda| < 1$, **superattracting** if $\lambda = 0$, **repelling** if $|\lambda| > 1$, and **indifferent** if $|\lambda| = 1$, the indifferent case being **rationally indifferent** when $\lambda$ is a root of unity and **irrationally indifferent** otherwise. A point is **preperiodic** if some iterate of it is periodic.
+**Definition.** A point $z$ is **periodic** of period $p \geq 1$ if $f^p(z) = z$ and $p$ is the least such integer; it is **fixed** if $p = 1$. The **multiplier** of the cycle is $\lambda = \frac{d}{dz}(f^p)(z)$. The cycle is **attracting** if $|\lambda| < 1$, **superattracting** if $\lambda = 0$, **repelling** if $|\lambda| > 1$, and **indifferent** if $|\lambda| = 1$, the indifferent case being **rationally indifferent** when $\lambda$ is a root of unity and **irrationally indifferent** otherwise. A point is **preperiodic** if some iterate of it is periodic.
 
-**Proposition.** The multiplier is the same at every point of the cycle, and it is independent of the point chosen on the cycle; the chain rule gives $\\frac{d}{dz}(f^p)(z) = \prod_{k=0}^{p-1} \frac{df}{dz}(f^k(z))$, a product invariant under cyclic permutation.
+**Proposition.** The multiplier is the same at every point of the cycle, and it is independent of the point chosen on the cycle; the chain rule gives $\frac{d}{dz}(f^p)(z) = \prod_{k=0}^{p-1} \frac{df}{dz}(f^k(z))$, a product invariant under cyclic permutation.
 
 **Definition.** A **critical point** of $f$ is a point at which $\frac{df}{dz}$ vanishes; the finite critical points are the $d-1$ roots of $\frac{df}{dz}$ counted with multiplicity, and $\infty$ is a critical point of multiplicity $d-1$. The **critical orbit** is the orbit of the critical points, and $f$ is **post-critically finite** if every critical orbit is finite.
 
@@ -110,9 +110,9 @@ a compact subset of $\mathbb{C}$; the **basin of infinity** is $A(\infty) = \hat
 
 ## Self-Similarity and Coding
 
-**Theorem (the inverse branches).** Let $z$ be a point of $J(f)$ at which $\\frac{d}{dz}(f^n)(z) \neq 0$ for all $n$. Then for every neighbourhood $V$ of $z$ and every sufficiently large $n$ there is a branch $g_n$ of $f^{-n}$ defined on a disk about $f^n(z)$ with $g_n(f^n(z)) = z$; the branches are contractions by the factor $|\\frac{d}{dz}(f^n)(z)|^{-1}$, and the Julia set is the attractor of the resulting system of inverse branches on the repelling side.
+**Theorem (the inverse branches).** Let $z$ be a point of $J(f)$ at which $\frac{d}{dz}(f^n)(z) \neq 0$ for all $n$. Then for every neighbourhood $V$ of $z$ and every sufficiently large $n$ there is a branch $g_n$ of $f^{-n}$ defined on a disk about $f^n(z)$ with $g_n(f^n(z)) = z$; the branches are contractions by the factor $|\frac{d}{dz}(f^n)(z)|^{-1}$, and the Julia set is the attractor of the resulting system of inverse branches on the repelling side.
 
-**Proof sketch.** The inverse function theorem gives a local branch of $f^{-n}$ near $f^n(z)$, and its derivative at $f^n(z)$ is $1/\\frac{d}{dz}(f^n)(z)$; since $|\\frac{d}{dz}(f^n)(z)|$ grows exponentially along the repelling directions, the branch contracts. The branch maps a neighbourhood of $f^n(z)$ into a neighbourhood of $z$, and the union of the branches over $n$ generates $J$, by the density of the backward orbit stated above.
+**Proof sketch.** The inverse function theorem gives a local branch of $f^{-n}$ near $f^n(z)$, and its derivative at $f^n(z)$ is $1/\frac{d}{dz}(f^n)(z)$; since $|\frac{d}{dz}(f^n)(z)|$ grows exponentially along the repelling directions, the branch contracts. The branch maps a neighbourhood of $f^n(z)$ into a neighbourhood of $z$, and the union of the branches over $n$ generates $J$, by the density of the backward orbit stated above.
 
 **Remark (the sense of self-similarity).** The Julia set is **invariant**, $J = f^{-1}(J)$, and it is covered by the $d^n$ preimages of any of its neighbourhoods; exact self-similarity, in the sense of the iterated function systems of *Fractal Geometry* with finitely many contracting similarities, holds only in the special cases of $z \mapsto z^d$, whose Julia set is the unit circle with $d$ rotational symmetries, and of the Chebyshev and Lattès examples constructed from a group action. For a general polynomial the self-similarity is **conformal**: the inverse branches are conformal contractions whose ratios vary, and it is the invariant measure, not a finite system of similitudes, that records the balance of the pieces. The iterated function systems proper are the subject of *Iterated Function Systems in the Complex Plane*, and the general self-similar construction is the subject of *Fractal Geometry*.
 
@@ -140,7 +140,7 @@ of Ledrappier and Young, where $h$ is the measure-theoretic entropy. For a polyn
 
 **Definition.** A polynomial $f$ is **hyperbolic** if every critical point lies in the basin of an attracting (or superattracting) cycle; it is **parabolic** if it has a rationally indifferent periodic point, so that a cycle of multiplier a root of unity attracts some critical orbit; and it is **subhyperbolic** if every critical orbit either converges to an attracting cycle or is eventually repelled, with no critical orbit in the Julia set.
 
-**Theorem (the expanding characterisation).** A polynomial is hyperbolic if and only if its Julia set is **expanding**: there are constants $C > 0$ and $\rho > 1$ with $|\\frac{d}{dz}(f^n)(z)| \geq C\rho^n$ for every $z \in J(f)$ and every $n \geq 1$. Equivalently, a hyperbolic Julia set contains no critical point and the critical orbits stay a positive distance from it.
+**Theorem (the expanding characterisation).** A polynomial is hyperbolic if and only if its Julia set is **expanding**: there are constants $C > 0$ and $\rho > 1$ with $|\frac{d}{dz}(f^n)(z)| \geq C\rho^n$ for every $z \in J(f)$ and every $n \geq 1$. Equivalently, a hyperbolic Julia set contains no critical point and the critical orbits stay a positive distance from it.
 
 **Proof sketch.** If the Julia set is expanding then the iterates of a neighbourhood of it are controlled and the critical orbits cannot accumulate on $J$, so they fall into attracting basins, which is hyperbolicity; conversely hyperbolicity makes the critical orbits avoid $J$ and the expanding inequality follows from the compactness of $J$ and the absence of critical points on it. The statement is the Koebe-distortion argument of the doubling theory of *The Geometry of the Julia Sets*.
 
@@ -167,7 +167,7 @@ The dynamics is hyperbolic when every critical point lies in an attracting basin
 | $F(f)$, $J(f)$ | Fatou set, Julia set; $J(f) = \hat{\mathbb{C}} \setminus F(f)$ |
 | $K(f)$ | Filled Julia set, the points with bounded orbit |
 | $A(\infty)$ | Basin of infinity, $\hat{\mathbb{C}} \setminus K(f)$ |
-| $\lambda = \\frac{d}{dz}(f^p)(z)$ | Multiplier of a $p$-periodic cycle |
+| $\lambda = \frac{d}{dz}(f^p)(z)$ | Multiplier of a $p$-periodic cycle |
 | attracting, repelling, indifferent | $|\lambda| < 1$, $|\lambda| > 1$, $|\lambda| = 1$ |
 | $\mu$ | Brolin measure, $f$-invariant of maximal entropy $\log d$ |
 | $\mu_s$, $s = \dim_H J(f)$ | Equilibrium state of $-s\log|\frac{df}{dz}|$, measure of full dimension |

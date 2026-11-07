@@ -235,7 +235,7 @@ $$
 (-i\tilde K_{\Phi})^{\natural}(-i\tilde K_{\Phi})=k_{t}^{\prime\,2}-k_{t}^{\prime}i\vec k_\Phi+i\vec kk_{t}^{\prime}-i^2\vec k_\Phi^{\,2}=k_{t}^{\prime\,2}+\vec k_\Phi^{\,2}=k_{t}^{\prime\,2}-\lvert\vec k_\Phi\rvert^2=\frac{p^{2}}{\hbar^{2}},
 $$
 
-with the cross terms vanishing because $k_{t}^{\prime}$ is central and $\vec k_\Phi$ is pure, and with the plus in front of $\vec k_\Phi^{\,2}$ because the square of $i\vec k_\Phi$ is $i^2\vec k_\Phi^{\,2}=+\lvert\vec k_\Phi\rvert^2$. On the mass shell $\tilde P_{\Phi}^{\natural}\tilde P_{\Phi}=-m^{2}c^{2}=\hbar^{2}k_m^{2}$, so $\Box=k_m^{2}$ on the wave and the pair closes; the two branches then close the solution space, and no third condition is needed.
+with the cross terms vanishing because $k_{t}^{\prime}$ is central and $\vec k_\Phi$ is pure, and with the plus in front of $\vec k_\Phi^{\,2}$ because the square of $i\vec k_\Phi$ is $i^2\vec k_\Phi^{\,2}=+\lvert\vec k_\Phi\rvert^2$. On the mass shell $\tilde P_{\Phi}^{\natural}\tilde P_{\Phi}=-m^{2}c^{2}=-\hbar^{2}k_m^{2}$, so $\Box=k_m^{2}$ on the wave and the pair closes; the two branches then close the solution space, and no third condition is needed.
 
 **No trace enters.** Each of the two sums is a product of elements and a scalar, and each of the two members is a left multiplication by an element. Neither line needs a trace, a basis or an index: the identity is an identity of the algebra, and the rank-two reading of its left side is the statement that the two helicity solutions span the part of value $R$.
 

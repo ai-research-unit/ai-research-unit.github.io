@@ -27,7 +27,7 @@ the series converging for $|x|_p < R$ and diverging for $|x|_p > R$; the value a
 
 **Proof sketch.** The radius formula and the convergence criterion are the standard properties of the $p$-adic absolute value and its non-archimedean triangle inequality $|a+b|_p \leq \max(|a|_p,|b|_p)$, under which a series converges exactly when its terms tend to $0$; the details are in *Metric, Uniform and Complete Spaces* for the metric part and in the standard literature for the $p$-adic part.
 
-**Definition (the formal derivative).** The **derivative** of a convergent power series $f(x) = \sum_na_nx^n$ is the series $\frac{df}{dx} = \sum_nna_nx^{n-1}$, defined by the termwise rule; it has the same radius of convergence as $f$, and the product and composition of analytic functions are analytic with the formal rules $\\frac{d}{dx}(fg) = \frac{df}{dx}g+f\frac{dg}{dx}$ and $\\frac{d}{dx}(f\circ g) = (\frac{df}{dx}\circ g)\frac{dg}{dx}$. This is a formal-algebraic definition; the analytic theory of the derivative, the mean value theorems and the differential equations are Part III.
+**Definition (the formal derivative).** The **derivative** of a convergent power series $f(x) = \sum_na_nx^n$ is the series $\frac{df}{dx} = \sum_nna_nx^{n-1}$, defined by the termwise rule; it has the same radius of convergence as $f$, and the product and composition of analytic functions are analytic with the formal rules $\frac{d}{dx}(fg) = \frac{df}{dx}g+f\frac{dg}{dx}$ and $\frac{d}{dx}(f\circ g) = (\frac{df}{dx}\circ g)\frac{dg}{dx}$. This is a formal-algebraic definition; the analytic theory of the derivative, the mean value theorems and the differential equations are Part III.
 
 ### The Exponential and the Logarithm
 

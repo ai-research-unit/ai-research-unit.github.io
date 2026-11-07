@@ -259,7 +259,7 @@ $$
 
 Indeed $\exp(a e_t+\vec\Upsilon)=e^a(e_t+\vec\Upsilon)$ for $\vec\Upsilon^2=0$, and every element of $\Sigma_{10}$ is of that form (*Biquaternion Elementary Functions*, §*The Logarithm*).
 
-**Remark (why the split is not a second sector).** The norm split is multiplicative and inversion-stable, and it is the partition that the group law follows. The spectral split is inversion-stable but not multiplicative: a product of two spectrally degenerate units can be spectrally regular, and a product of two spectrally regular units can be degenerate. It is therefore a stratification of the sector, not a second partition of the algebra at the same level. The four-cell grid is the simultaneous refinement, and its two regular sectors are the two halves above.
+**Remark (why the split is not a second sector).** The norm split is multiplicative and inversion-stable, and it is the partition that the group law follows. The spectral split is inversion-stable but not multiplicative: a product of two spectrally degenerate units can be spectrally regular, and a product of two spectrally regular units can be degenerate. It is therefore a stratification of the sector, not a second partition of the algebra at the same level. The four-sector grid is the simultaneous refinement, and its two regular sectors are the two halves above.
 
 ## Comparison with the N-Degenerate Sector
 

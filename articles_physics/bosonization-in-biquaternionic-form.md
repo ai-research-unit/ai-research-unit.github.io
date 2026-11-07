@@ -130,7 +130,7 @@ The framework's mass convention is used here rather than merely cited, because i
 
 **The series mass term.** As *The Dirac Equation in Biquaternionic Form* fixes, the Dirac mass is linear and sits on the other side of the element,
 $$
-\tilde\nabla^{\natural}\tilde{Ξ}_{\mathrm{sp}}=m\,\Gamma\,\overline{\tilde{Ξ}_{\mathrm{sp}}} ,
+\tilde\nabla^{\natural}\tilde{Ξ}_{\mathrm{sp}}=k_m\,\Gamma\,\overline{\tilde{Ξ}_{\mathrm{sp}}} ,
 $$
 with $\Gamma$ the chirality and $\overline{\tilde{Ξ}_{\mathrm{sp}}}$ the coefficient conjugate. The gradient left-multiplies, and the mass is the **exchange of the two values**: the map that carries one value into the other, scaled by $m$. The scaling cannot supply the exchange — a central scalar multiplies the two values by the same number and stays diagonal — so the exchange is a separate structure, and the display shows it on the other side of the field.
 

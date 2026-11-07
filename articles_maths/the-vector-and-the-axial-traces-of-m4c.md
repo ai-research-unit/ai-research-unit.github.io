@@ -18,7 +18,7 @@ This article computes the two traces, proves the identity
 $$
 \operatorname{Tr}_{\mathrm{reg}}=\operatorname{Tr}_{\Delta}+\operatorname{Tr}_{\Delta,5},
 $$
-identifies the two coordinates of the two-sided basis that carry them, and states the vanishing on the odd sector. The five frame basis operators $iL_{\mathrm{pau},e_t}R_{\mathrm{pau},\vec e_x},iL_{\mathrm{pau},\vec e_x}R_{\mathrm{pau},\vec e_y},iL_{\mathrm{pau},\vec e_y}R_{\mathrm{pau},\vec e_y},iL_{\mathrm{pau},\vec e_z}R_{\mathrm{pau},\vec e_y}$ and the pseudoscalar basis operator $-iL_{\mathrm{pau},e_t}R_{\mathrm{pau},\vec e_z}$, and the $\mathsf{M}_4$ map, are those of *The Gamma Frame and the Complexified Dirac Algebra of $M_4(\mathbb{C})$* and *Matrix Representations Conventions*; the two-sided basis is *The Two-Sided Operators Method to Build $M_4(\mathbb{C})$*; the chirality is *The Two Chiralities of $M_4(\mathbb{C})$*.
+identifies the two coordinates of the two-sided basis that carry them, and states the vanishing on the odd sector. The five frame operators $iL_{\mathrm{pau},e_t}R_{\mathrm{pau},\vec e_x},iL_{\mathrm{pau},\vec e_x}R_{\mathrm{pau},\vec e_y},iL_{\mathrm{pau},\vec e_y}R_{\mathrm{pau},\vec e_y},iL_{\mathrm{pau},\vec e_z}R_{\mathrm{pau},\vec e_y}$ and the pseudoscalar basis operator $-iL_{\mathrm{pau},e_t}R_{\mathrm{pau},\vec e_z}$, and the $\mathsf{M}_4$ map, are those of *The Gamma Frame and the Complexified Dirac Algebra of $M_4(\mathbb{C})$* and *Matrix Representations Conventions*; the two-sided basis is *The Two-Sided Operators Method to Build $M_4(\mathbb{C})$*; the chirality is *The Two Chiralities of $M_4(\mathbb{C})$*.
 
 ## The Real-Linear Embedding
 
@@ -200,7 +200,7 @@ $$
 
 A single product is a pure tensor; the products form the seven-dimensional cone $\operatorname{rank}c(M)\le1$, and a general element is a sum of at most four, with $\ell(M)=\operatorname{rank}c(M)$.
 
-$\gamma_5$ is the reference-frame basis operator of the chirality $\Gamma$; the central grading $\chi=i\tilde{Ζ}_{\mathrm{ad}}$ — the difference of the two central idempotents of the complexified algebra, so $\chi^2=e_t$ — is a different object, represented by $\gamma_5$ on the Dirac module.
+$\gamma_5$ is the reference-frame operator of the chirality $\Gamma$; the central grading $\chi=i\tilde{Ζ}_{\mathrm{ad}}$ — the difference of the two central idempotents of the complexified algebra, so $\chi^2=e_t$ — is a different object, represented by $\gamma_5$ on the Dirac module.
 
 The dictionary is complex-linear; over $\mathbb{R}$ the products span $\mathrm{Cl}_{1,3}(\mathbb{R})\cong M_2(\mathbb{H})$ and the basis operators span $\mathrm{Cl}_{3,1}(\mathbb{R})\cong M_4(\mathbb{R})$.
 
@@ -239,7 +239,7 @@ Their sum is the regular trace $4b_0$. The chiral traces are $2b_0$ and $2\bar b
 ## Further Reading
 
 - [Why AXF Matrices instead of Pauli and Gamma Matrices](../articles_physics/why-axf-matrices-instead-of-pauli-and-gamma-matrices.html), for the reasons the AXF matrices replace the Pauli and gamma matrices.
-- [The Gamma Frame and the Complexified Dirac Algebra of $M_4(\mathbb{C})$](the-gamma-frame-and-the-complexified-dirac-algebra-of-m4c.html), for the five frame basis operators and the Clifford basis.
+- [The Gamma Frame and the Complexified Dirac Algebra of $M_4(\mathbb{C})$](the-gamma-frame-and-the-complexified-dirac-algebra-of-m4c.html), for the five frame operators and the Clifford basis.
 - [The Two-Sided Operators Method to Build $M_4(\mathbb{C})$](the-two-sided-operators-method-to-build-m4c.html), for the sixteen $L_{\mathrm{pau},e_\mu}R_{\mathrm{pau},e_\nu}$ and their product table.
 - [The $\mathbb{Z}$-Grading and the Odd Slot of $M_4(\mathbb{C})$](the-z-grading-and-the-odd-slot-of-m4c.html), for the table $L_{\mathrm{pau},e_t}R_{\mathrm{pau},e_t}=I$, the pseudoscalar basis operator $L_{\mathrm{pau},e_t}R_{\mathrm{pau},\vec e_z}$ and the grades of the other fourteen.
 - [The Two Chiralities of $M_4(\mathbb{C})$](the-two-chiralities-of-m4c.html), for the projectors $P_\pm$ and the chiral blocks.

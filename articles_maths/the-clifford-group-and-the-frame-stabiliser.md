@@ -2,7 +2,7 @@
 
 ## Introduction
 
-A frame is a choice. The anticommutation relations fix the algebra, not the five frame basis operators (the four generators and their product): any conjugate $U\,iL_{e_\mu}R_{\vec e_{\nu(\mu)}}\,U^{-1}$ by an invertible $U$ is another frame, and the frames form a homogeneous space. Two subgroups of $GL_4(\mathbb{C})$ measure the freedom. The **stabiliser of the frame** is the set of $U$ that fix each of the five basis operators; it is the group of scalars $\mathbb{C}^{\times}I$. The **Clifford group** is the set of $U$ that preserve the span of the four generators up to a Lorentz transformation; it is larger, of dimension seven, and its even part is the scalars times the spin group. The quotient of the Clifford group by the scalars is the orthogonal group $O(4,\mathbb{C})$.
+A frame is a choice. The anticommutation relations fix the algebra, not the five frame operators (the four generators and their product): any conjugate $U\,iL_{e_\mu}R_{\vec e_{\nu(\mu)}}\,U^{-1}$ by an invertible $U$ is another frame, and the frames form a homogeneous space. Two subgroups of $GL_4(\mathbb{C})$ measure the freedom. The **stabiliser of the frame** is the set of $U$ that fix each of the five basis operators; it is the group of scalars $\mathbb{C}^{\times}I$. The **Clifford group** is the set of $U$ that preserve the span of the four generators up to a Lorentz transformation; it is larger, of dimension seven, and its even part is the scalars times the spin group. The quotient of the Clifford group by the scalars is the orthogonal group $O(4,\mathbb{C})$.
 
 The distinction is the exact content of the phrase "the frame is not canonical". The anticommutation relations are invariant under the Clifford group; the five-element subset is invariant only under the scalars. The spin group is the even part of Pin and the double cover of $SO(4,\mathbb{C})$; in the biquaternion picture its two factors are the left and right copies of $\mathbb{B}$ inside $M_4(\mathbb{C})$. The finite group of the two-sided matrices is a discrete subgroup of the Clifford group, of order $32$, and its image in the orthogonal group is the group of sign changes of the frame.
 
@@ -23,14 +23,14 @@ $$
 $$
 where $\operatorname{Stab}(\mathsf C)$ is the stabiliser of the ordered tuple.
 
-**The stabiliser of the tuple.** The five frame basis operators generate $M_4(\mathbb{C})$: the sixteen antisymmetrised products are a basis. If $U$ commutes with all five, it commutes with the whole algebra, hence lies in its centre:
+**The stabiliser of the tuple.** The five frame operators generate $M_4(\mathbb{C})$: the sixteen antisymmetrised products are a basis. If $U$ commutes with all five, it commutes with the whole algebra, hence lies in its centre:
 $$
 \operatorname{Stab}(iR_{\vec e_x},\dots,iL_{\vec e_z}R_{\vec e_y})
 =\mathbb{C}^{\times}I .
 $$
 This is the exact stabiliser. It has complex dimension one, and the frame space has dimension $16-1=15$.
 
-**The reading.** The scalars are the only freedom that fixes the frame pointwise. A scalar multiple of all the frame basis operators is the same frame in the projective sense; the phase is the kernel of the action. The frame is a section of a bundle whose fibre is the Clifford group modulo the scalars.
+**The reading.** The scalars are the only freedom that fixes the frame pointwise. A scalar multiple of all the frame operators is the same frame in the projective sense; the phase is the kernel of the action. The frame is a section of a bundle whose fibre is the Clifford group modulo the scalars.
 
 ## The Clifford Group
 
@@ -157,7 +157,7 @@ $$
 \operatorname{Stab}(\mathsf C)=\mathbb{C}^{\times}I,\qquad
 \operatorname{Stab}(V)=\Gamma .
 $$
-The first fixes the five frame basis operators; the second fixes their span up to an orthogonal transformation; the third fixes nothing.
+The first fixes the five frame operators; the second fixes their span up to an orthogonal transformation; the third fixes nothing.
 
 **The dimensions.**
 
@@ -179,7 +179,7 @@ of dimension six. The projective frame stabiliser is trivial: a frame is a point
 $$
 G\subset\Gamma,\qquad |G|=32,
 $$
-extraspecial $Q_8\circ Q_8$. Its image in $O(4,\mathbb{C})$ is the group of sign changes of the four frame basis operators,
+extraspecial $Q_8\circ Q_8$. Its image in $O(4,\mathbb{C})$ is the group of sign changes of the four frame operators,
 $$
 \pi(G)\cong(\mathbb{Z}/2)^{4},\qquad |\pi(G)|=16,
 $$
@@ -189,7 +189,7 @@ and its kernel is $\{\pm I\}$. Every element has determinant $1$, so $G\subset S
 
 ## The Physical Reading
 
-**The frame is a choice.** The anticommutation relations are the invariant object; the five frame basis operators are a section. A change of frame is a conjugation by $GL_4(\mathbb{C})$, and the physics that depends only on the anticommutation relations is invariant under the Clifford group. The five-element subset is invariant only under the scalars.
+**The frame is a choice.** The anticommutation relations are the invariant object; the five frame operators are a section. A change of frame is a conjugation by $GL_4(\mathbb{C})$, and the physics that depends only on the anticommutation relations is invariant under the Clifford group. The five-element subset is invariant only under the scalars.
 
 **The symmetry groups.** The Clifford group is the symmetry of the anticommutation relations; the spin group is the Lorentz symmetry of the spinor; the scalars are the phase freedom of the frame. The three have different dimensions and different actions, and conflating them is the common error.
 
@@ -211,7 +211,7 @@ $$
 
 A single product is a pure tensor; the products form the seven-dimensional cone $\operatorname{rank}c(M)\le1$, and a general element is a sum of at most four, with $\ell(M)=\operatorname{rank}c(M)$.
 
-$\gamma_5$ is the reference-frame basis operator of the chirality operator; the central grading $\chi=i\tilde{Ζ}_{\mathrm{ad}}$ — the difference of the two central idempotents of the complexified algebra, so $\chi^2=e_t$ — is a different object, represented by $\gamma_5$ on the Dirac module.
+$\gamma_5$ is the reference-frame representative of the chirality operator; the central grading $\chi=i\tilde{Ζ}_{\mathrm{ad}}$ — the difference of the two central idempotents of the complexified algebra, so $\chi^2=e_t$ — is a different object, represented by $\gamma_5$ on the Dirac module.
 
 The dictionary is complex-linear; over $\mathbb{R}$ the products span $\mathrm{Cl}_{1,3}(\mathbb{R})\cong M_2(\mathbb{H})$ and the basis operators span $\mathrm{Cl}_{3,1}(\mathbb{R})\cong M_4(\mathbb{R})$.
 
@@ -240,7 +240,7 @@ $$
 The contraction sums follow from the squares. With one index raised, $\gamma^\mu=-\varepsilon_\mu\gamma_\mu$, so that $\sum_\mu\gamma^\mu\gamma_\mu=-4I_4$, $\sum_\mu\gamma^\mu\gamma_\alpha\gamma_\mu=2\gamma_\alpha$, $\sum_\mu\gamma^\mu\gamma_\alpha\gamma_\beta\gamma_\mu=-4\varepsilon_\alpha\delta_{\alpha\beta}I_4$ and $\sum_\mu\gamma^\mu\gamma_\gamma\gamma_\beta\gamma_\alpha\gamma_\mu=-2\gamma_\gamma\gamma_\beta\gamma_\alpha$.
 ## Summary
 
-The frame is a single orbit of $GL_4(\mathbb{C})$ with stabiliser $\mathbb{C}^{\times}I$, of dimension one. The Clifford group $\Gamma$, the stabiliser of the span of the frame basis operators, fits in the exact sequence
+The frame is a single orbit of $GL_4(\mathbb{C})$ with stabiliser $\mathbb{C}^{\times}I$, of dimension one. The Clifford group $\Gamma$, the stabiliser of the span of the frame operators, fits in the exact sequence
 $$
 1\longrightarrow\mathbb{C}^{\times}\longrightarrow\Gamma\longrightarrow O(4,\mathbb{C})\longrightarrow1,
 $$
@@ -265,9 +265,9 @@ has dimension seven, and has Lie algebra $\mathbb{C}I\oplus\Lambda^{2}V$. Its ev
 
 | Symbol | Meaning |
 |---|---|
-| $iR_{\vec e_x},\dots,iL_{\vec e_z}R_{\vec e_y}$ | the four frame basis operators, $\{iL_{e_\mu}R_{\vec e_{\nu(\mu)}},iL_{e_\nu}R_{\vec e_{\nu(\nu)}}\}=2\varepsilon_\mu\delta_{\mu\nu}I$ |
+| $iR_{\vec e_x},\dots,iL_{\vec e_z}R_{\vec e_y}$ | the four frame operators, $\{iL_{e_\mu}R_{\vec e_{\nu(\mu)}},iL_{e_\nu}R_{\vec e_{\nu(\nu)}}\}=2\varepsilon_\mu\delta_{\mu\nu}I$ |
 | $\sigma_{\mu\nu}$ | the bivector products $\tfrac12[iL_{e_\mu}R_{\vec e_{\nu(\mu)}},iL_{e_\nu}R_{\vec e_{\nu(\nu)}}]$ |
-| $V$ | the span of the four frame basis operators, $\Lambda^{2}V\cong\mathfrak{so}(4,\mathbb{C})$ |
+| $V$ | the span of the four frame operators, $\Lambda^{2}V\cong\mathfrak{so}(4,\mathbb{C})$ |
 | $\Gamma$ | the Clifford group of the frame |
 | $\Gamma^{+}$ | its even part |
 | $\mathrm{Spin}(4,\mathbb{C})$ | the spin group, the even part of Pin |
@@ -287,4 +287,4 @@ has dimension seven, and has Lie algebra $\mathbb{C}I\oplus\Lambda^{2}V$. Its ev
 - [The Star and the Conjugate-Linear Operators of $M_4(\mathbb{C})$](the-star-and-the-conjugate-linear-operators-of-m4c.html), for the two Clifford dictionaries.
 - [The Kronecker Factorisation $M_4(\mathbb{C})\cong M_2(\mathbb{C})\otimes M_2(\mathbb{C})$](the-kronecker-factorisation-of-m4c-into-m2c-tensor-m2c.html), for the left and right copies of $\mathbb{B}$.
 - [The Rank-Two Split of $M_4(\mathbb{C})$](the-rank-two-split-of-m4c.html), for the chiral blocks and the mass block.
-- [The $\mathbb{Z}$-Grading and the Odd Slot of $M_4(\mathbb{C})$](the-z-grading-and-the-odd-slot-of-m4c.html), for the five frame basis operators inside the two-sided basis.
+- [The $\mathbb{Z}$-Grading and the Odd Slot of $M_4(\mathbb{C})$](the-z-grading-and-the-odd-slot-of-m4c.html), for the five frame operators inside the two-sided basis.

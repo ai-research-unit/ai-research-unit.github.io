@@ -253,7 +253,7 @@ The operator depends on the vector part alone and only through its conjugate, so
 
 ## Results
 
-The twelve are tabulated with the annihilator of a general element, the case split written out case by case, and the two theorems that hold across them are stated below.
+The twelve are tabulated with the annihilator of a general element, the case split written out in full, and the two theorems that hold across them are stated below.
 
 ### The Twelve Annihilators
 

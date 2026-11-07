@@ -99,7 +99,7 @@ a **real** vector: the value lies in the real vector triple of $\mathbb{B}_{H}$ 
 
 *Proof.* Substitute the imaginary coordinates in the coordinate rule; $\overline{\vec Q_2}=-i\vec q$ and $\overline{Q_{2t}}=-iq_t$, the products of the two imaginary units being real, and the cross product of two real vectors being real.
 
-**Corollary (the diagonal vanishes there too).** At a purely imaginary element the display with $\tilde Q_1=\tilde Q_2$ gives $p_t=q_t=p$, $\vec p=\vec q$, hence $-p_t\vec p+p_t\vec p-\vec p\times\vec p=0$. So the anti-quaternion subspace, like the quaternion one, is wholly contained in the set of the elements of square zero, and it is the second cell of the quadric cone of *The Vector Part of the Square and the Jacobi Failure of the Antisymmetric Plain Sesqualgebra*. The closure fails while the vanishing holds; the two facts are the two halves of the same conjugation.
+**Corollary (the diagonal vanishes there too).** At a purely imaginary element the display with $\tilde Q_1=\tilde Q_2$ gives $p_t=q_t=p$, $\vec p=\vec q$, hence $-p_t\vec p+p_t\vec p-\vec p\times\vec p=0$. So the anti-quaternion subspace, like the quaternion one, is wholly contained in the set of the elements of square zero, and it is the second sector of the quadric cone of *The Vector Part of the Square and the Jacobi Failure of the Antisymmetric Plain Sesqualgebra*. The closure fails while the vanishing holds; the two facts are the two halves of the same conjugation.
 
 ## The Hermitian Subspace
 
@@ -176,7 +176,7 @@ On the remarkable subspaces the block is read as follows. It is central-free: no
 ## Further Reading
 
 - [Introduction to the Antisymmetric Plain Sesqualgebra](introduction-to-the-antisymmetric-plain-sesqualgebra.html), for the operation, the basis table and the pure-vector image
-- [The Vector Part of the Square and the Jacobi Failure of the Antisymmetric Plain Sesqualgebra](the-vector-part-of-the-square-and-the-jacobi-failure-of-the-antisymmetric-plain-sesqualgebra.html), for the quadric cone of the square-zero elements, whose cells the two quaternion subspaces are
+- [The Vector Part of the Square and the Jacobi Failure of the Antisymmetric Plain Sesqualgebra](the-vector-part-of-the-square-and-the-jacobi-failure-of-the-antisymmetric-plain-sesqualgebra.html), for the quadric cone of the square-zero elements, whose sectors the two quaternion subspaces are
 - [The Sesquilinear Pairing of the Antisymmetric Plain Sesqualgebra](the-sesquilinear-pairing-of-the-antisymmetric-plain-sesqualgebra.html), for the form reading of the same six
 - [Subspaces and Decompositions](subspaces-and-decompositions-of-the-biquaternion-algebra.html), for the subspaces and their bases
 - [Remarkable Subspaces under the General Plain Sesqualgebra](remarkable-subspaces-under-the-general-plain-sesqualgebra.html), for the pattern of the reading and the indefinite sesquilinear form

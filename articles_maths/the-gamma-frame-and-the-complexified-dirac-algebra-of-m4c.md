@@ -8,7 +8,7 @@ $$
 \mathrm{Cl}(1,3)\otimes_\mathbb{R}\mathbb{C}\cong\mathrm{Cl}(4,\mathbb{C})\cong M_4(\mathbb{C}),
 $$
 
-of complex dimension $16$. The five frame basis operators $iR_{\vec e_x},iL_{\vec e_x}R_{\vec e_y},iL_{\vec e_y}R_{\vec e_y},iL_{\vec e_z}R_{\vec e_y}$ and $-iR_{\vec e_z}$, defined in §*The Frame Basis Operators*, are a set of generators of this algebra, and the sixteen graded products
+of complex dimension $16$. The five frame operators $iR_{\vec e_x},iL_{\vec e_x}R_{\vec e_y},iL_{\vec e_y}R_{\vec e_y},iL_{\vec e_z}R_{\vec e_y}$ and $-iR_{\vec e_z}$, defined in §*The Frame Operators*, are a set of generators of this algebra, and the sixteen graded products
 
 $$
 I,\quad iR_{\vec e_x},\quad iL_{\vec e_k}R_{\vec e_y},\quad \sigma_{\mu\nu},\quad \sigma_{\mu\nu\rho},\quad -iR_{\vec e_z}
@@ -16,7 +16,7 @@ $$
 
 are a basis of it, each of them a two-sided basis operator up to a nonzero scalar. The frame is a choice **inside** the algebra of this category, not a different algebra: four elements of $M_4(\mathbb{C})$ satisfying the anticommutation relations, together with their product $-iR_{\vec e_z}$, from which the whole sixteen-dimensional algebra is generated. It is a generating set, not a basis: four elements span four dimensions, and the basis is the sixteen graded products.
 
-This article states the Clifford algebra, its complexification, the frame relations and the chirality, the basis theorem for the graded products, the place of the five frame basis operators among the sixteen two-sided operators $L_{e_\mu} R_{e_\nu}$, the non-canonicity of the frame, and the comparison with the biquaternion algebra. The inventory of the Clifford layer of the corpus is *The Clifford Layer of the Physics Corpus: Inventory and the Odd Sector*, in the reserve; the two-sided operators are *The Two-Sided Operators Method to Build $M_4(\mathbb{C})$*; the even slot and the versors are *Biquaternion Versors and the Orthogonal Group*.
+This article states the Clifford algebra, its complexification, the frame relations and the chirality, the basis theorem for the graded products, the place of the five frame operators among the sixteen two-sided operators $L_{e_\mu} R_{e_\nu}$, the non-canonicity of the frame, and the comparison with the biquaternion algebra. The inventory of the Clifford layer of the corpus is *The Clifford Layer of the Physics Corpus: Inventory and the Odd Sector*, in the reserve; the two-sided operators are *The Two-Sided Operators Method to Build $M_4(\mathbb{C})$*; the even slot and the versors are *Biquaternion Versors and the Orthogonal Group*.
 
 ## The Clifford Algebra
 
@@ -78,17 +78,17 @@ $$
 
 of complex dimension $8$, the even part of $M_4(\mathbb{C})$ under the Clifford grading. The biquaternion algebra $\mathbb{B}\cong M_2(\mathbb{C})$ is the even part over $\mathbb{R}$; its complexification is $\mathbb{B}\otimes_\mathbb{R}\mathbb{C}\cong M_2(\mathbb{C})\oplus M_2(\mathbb{C})$, the same algebra. Its left regular image in $M_4(\mathbb{C})$ is the left factor $M_2\otimes I$, of complex dimension $4$: a subalgebra, not the complexified even part.
 
-## The Frame Basis Operators
+## The Frame Operators
 
-**Definition.** Put $L_aR_b$ for the two-sided basis operators of the biquaternion algebra, with $a,b$ in the units $e_t,\vec e_x,\vec e_y,\vec e_z$. The frame basis operators are the five elements
+**Definition.** Put $L_aR_b$ for the two-sided basis operators of the biquaternion algebra, with $a,b$ in the units $e_t,\vec e_x,\vec e_y,\vec e_z$. The frame operators are the five elements
 
 $$
 iR_{\vec e_x}=iL_{e_t}R_{\vec e_x},\qquad iL_{\vec e_x}R_{\vec e_y}=iL_{\vec e_x}R_{\vec e_y},\qquad iL_{\vec e_y}R_{\vec e_y}=iL_{\vec e_y}R_{\vec e_y},\qquad iL_{\vec e_z}R_{\vec e_y}=iL_{\vec e_z}R_{\vec e_y},\qquad -iR_{\vec e_z}=-iL_{e_t}R_{\vec e_z}
 $$
 
-of $M_4(\mathbb{C})$. The four basis operators $iR_{\vec e_x}$ and $iL_{\vec e_k}R_{\vec e_y}$ carry the basis operator relation of $\varepsilon=(1,-1,-1,-1)$; see the Gamma section.
+of $M_4(\mathbb{C})$. The four frame operators $iR_{\vec e_x}$ and $iL_{\vec e_k}R_{\vec e_y}$ carry the operator relation of $\varepsilon=(1,-1,-1,-1)$; see the Gamma section.
 
-**The existence.** The basis operators exist: the product rule $L_aR_bL_{ac}R_{db}$ makes each the generator basis operator an explicit element of the two-sided basis, the anticommutation relations hold, and the four basis operators generate $M_4(\mathbb{C})$. Some $S\in GL_4(\mathbb{C})$ carries the frame to the block matrices of the chiral representation, whose blocks are built from the Pauli matrices $\sigma_i$: the first with $I_2$ in its off-diagonal blocks and the other three with $\sigma_i$ there. Both frames satisfy the same relations, and this is the non-canonicity of §*The Non-Canonicity of the Frame* in its simplest form.
+**The existence.** The frame operators exist: the product rule $L_aR_bL_{ac}R_{db}$ makes each generator an explicit element of the two-sided basis, the anticommutation relations hold, and the four frame operators generate $M_4(\mathbb{C})$. Some $S\in GL_4(\mathbb{C})$ carries the frame to the block matrices of the chiral representation, whose blocks are built from the Pauli matrices $\sigma_i$: the first with $I_2$ in its off-diagonal blocks and the other three with $\sigma_i$ there. Both frames satisfy the same relations, and this is the non-canonicity of §*The Non-Canonicity of the Frame* in its simplest form.
 
 **The chirality.** Put
 
@@ -108,9 +108,9 @@ $$
 P_{\pm}=\tfrac12(I\pm -iR_{\vec e_z})=\tfrac12(I\mp iL_{e_t}R_{\vec e_z})
 $$
 
-are the chiral projectors. The square makes $-iR_{\vec e_z}$ diagonalisable with eigenvalues $\pm1$; the vanishing trace makes the two eigenspaces equal in dimension, so $\operatorname{rank}P_{\pm}=2$. Both facts are algebraic: neither invokes a Hermitian structure, which the frame does not supply. The label $5$ is the historical one; in four dimensions the fifth basis operator is the product of the four vector basis operators, and it is the pseudoscalar of the Clifford algebra, the reference-frame basis operator of the chirality.
+are the chiral projectors. The square makes $-iR_{\vec e_z}$ diagonalisable with eigenvalues $\pm1$; the vanishing trace makes the two eigenspaces equal in dimension, so $\operatorname{rank}P_{\pm}=2$. Both facts are algebraic: neither invokes a Hermitian structure, which the frame does not supply. The label $5$ is the historical one; in four dimensions the fifth frame operator is the product of the four vector basis operators, and it is the pseudoscalar of the Clifford algebra, the reference-frame operator of the chirality.
 
-**The trace orthogonality.** The sixteen two-sided basis operators $L_{e_\mu} R_{e_\nu}$, up to nonzero scalars, are the sixteen graded products: the identity $L_{e_t}R_{e_t}=I$, the four vector basis operators the generator basis operator, the six bivector products $\sigma_{\mu\nu}=\tfrac12$ times the commutator of the $\mu$-th and $\nu$-th generators, the four trivector products $\sigma_{\mu\nu\rho}=\tfrac16$ times the antisymmetrised triple product of the three generators and the pseudoscalar $-iR_{\vec e_z}$. They satisfy
+**The trace orthogonality.** The sixteen two-sided basis operators $L_{e_\mu} R_{e_\nu}$, up to nonzero scalars, are the sixteen graded products: the identity $L_{e_t}R_{e_t}=I$, the four vector operators, the generators, the six bivector products $\sigma_{\mu\nu}=\tfrac12$ times the commutator of the $\mu$-th and $\nu$-th generators, the four trivector products $\sigma_{\mu\nu\rho}=\tfrac16$ times the antisymmetrised triple product of the three generators and the pseudoscalar $-iR_{\vec e_z}$. They satisfy
 
 $$
 \operatorname{tr}(L_{e_\mu} R_{e_\nu} L_{e_\rho}R_{e_\sigma})=4\,\eta_{\mu\nu,\rho\sigma},
@@ -128,7 +128,7 @@ The expansion is the Clifford analogue of the Fourier expansion in a basis; the 
 
 **The dimension count.** The basis has $1+4+6+4+1=16$ elements, matching $\dim M_4(\mathbb{C})=16$. The five grades are the scalar, the vector, the bivector, the trivector and the pseudoscalar.
 
-## The Five Frame Basis Operators Among the Sixteen Operators
+## The Five Frame Operators Among the Sixteen Operators
 
 **The two-sided operators.** The algebra of this category is generated by the two-sided operators
 
@@ -138,13 +138,13 @@ $$
 
 acting on the biquaternion algebra, and the sixteen of them are a basis of $M_4(\mathbb{C})$ by *The Two-Sided Operators Method to Build $M_4(\mathbb{C})$*. The frame is a generating set of a different shape: four generators, their product $-iR_{\vec e_z}$, and their graded products, against the sixteen two-sided operators.
 
-**The dictionary.** In the coefficient frame of the method article, the five frame basis operators are unit-modulus scalar multiples of five of the sixteen $L_{e_\mu} R_{e_\nu}$: the four vector basis operators $iL_{e_t}R_{\vec e_x}$, $iL_{\vec e_x}R_{\vec e_y}$, $iL_{\vec e_y}R_{\vec e_y}$, $iL_{\vec e_z}R_{\vec e_y}$ and the pseudoscalar $-iL_{e_t}R_{\vec e_z}$. The remaining eleven two-sided operators are the bivector products, the trivector products and the scalar of the Clifford basis; the bivectors are the six products $\sigma_{\mu\nu}$, the trivectors the four $\sigma_{\mu\nu\rho}$, and the scalar is the identity basis operator $L_{e_t}R_{e_t}=I$. The two bases are related by a permutation and scalars, not by a general linear change: each element of one basis is a scalar multiple of one element of the other.
+**The dictionary.** In the coefficient frame of the method article, the five frame operators are unit-modulus scalar multiples of five of the sixteen $L_{e_\mu} R_{e_\nu}$: the four vector basis operators $iL_{e_t}R_{\vec e_x}$, $iL_{\vec e_x}R_{\vec e_y}$, $iL_{\vec e_y}R_{\vec e_y}$, $iL_{\vec e_z}R_{\vec e_y}$ and the pseudoscalar $-iL_{e_t}R_{\vec e_z}$. The remaining eleven two-sided operators are the bivector products, the trivector products and the scalar of the Clifford basis; the bivectors are the six products $\sigma_{\mu\nu}$, the trivectors the four $\sigma_{\mu\nu\rho}$, and the scalar is the identity basis operator $L_{e_t}R_{e_t}=I$. The two bases are related by a permutation and scalars, not by a general linear change: each element of one basis is a scalar multiple of one element of the other.
 
-**The warning.** The identification of the five frame basis operators with five of the $L_{e_\mu} R_{e_\nu}$ is a statement about a particular coefficient frame, not a canonical identity. A different choice of the biquaternion units, or a different normalisation of the $L_{e_\mu} R_{e_\nu}$, changes the five basis operators and their scalar multiples. The anticommutation relations are invariant under the change; the five-element subset is not.
+**The warning.** The identification of the five frame operators with five of the $L_{e_\mu} R_{e_\nu}$ is a statement about a particular coefficient frame, not a canonical identity. A different choice of the biquaternion units, or a different normalisation of the $L_{e_\mu} R_{e_\nu}$, changes the five basis operators and their scalar multiples. The anticommutation relations are invariant under the change; the five-element subset is not.
 
 ## The Non-Canonicity of the Frame
 
-**The similarity.** If the generator basis operator satisfy the anticommutation relations and $S\in GL_4(\mathbb{C})$, then
+**The similarity.** If the generators satisfy the anticommutation relations and $S\in GL_4(\mathbb{C})$, then
 
 $$
 \tilde C=S\,C\,S^{-1}\qquad (\text{the transformed generator}),
@@ -161,7 +161,7 @@ $$
 
 **The frames are a bundle.** Over a fixed metric the frames form the homogeneous space $GL_4(\mathbb{C})/\mathbb{C}^{\times}$, because $S$ and $\lambda S$ induce the same conjugation. Over the space of metrics of signature $(1,3)$ they form a fibre bundle with that fibre; the space of metrics is an open convex cone and is contractible, so the bundle is trivial, and a frame still has to be chosen. The Clifford group is the subgroup that preserves the span of the generators, not the whole fibre; the physics chooses a frame, and the choice is not part of the algebra.
 
-**What a frame does not determine.** The frame determines the metric through the anticommutator, but it does not determine a Hermitian structure, a real structure or a charge conjugation. Those are extra data: an antilinear involution for the real structure, a unitary structure for the Hermitian form, and a charge conjugation. The basis operator frame supplies the last as a basis operator, $C=L_{e_t}R_{\vec e_x}$ with $C^{2}=-1$ and $C\,(iR_{\vec e_x})^{\mathsf T}C^{-1}=-\,iR_{\vec e_x}$ and $C\,(iL_{\vec e_k}R_{\vec e_y})^{\mathsf T}C^{-1}=-\,iL_{\vec e_k}R_{\vec e_y}$; that one basis operator serves is a fact of the frame, which basis operator is a choice. The frame is the Clifford layer; the other structures are layers above it.
+**What a frame does not determine.** The frame determines the metric through the anticommutator, but it does not determine a Hermitian structure, a real structure or a charge conjugation. Those are extra data: an antilinear involution for the real structure, a unitary structure for the Hermitian form, and a charge conjugation. The frame supplies the last as an operator, $C=L_{e_t}R_{\vec e_x}$ with $C^{2}=-1$ and $C\,(iR_{\vec e_x})^{\mathsf T}C^{-1}=-\,iR_{\vec e_x}$ and $C\,(iL_{\vec e_k}R_{\vec e_y})^{\mathsf T}C^{-1}=-\,iL_{\vec e_k}R_{\vec e_y}$; that one operator can serve is a fact of the frame; which operator serves is a choice. The frame is the Clifford layer; the other structures are layers above it.
 
 ## The Biquaternion Comparison
 
@@ -187,7 +187,7 @@ with the signs fixed by $u^{2}=1$. The conjugation $\theta$ is not the identity:
 
 **The terminology.** $M_4(\mathbb{C})$ is the matrix representation of the algebra generated by the two-sided operators on $\mathbb{B}$; it is the endomorphism algebra $\operatorname{End}_\mathbb{C}(\mathbb{B})$, not $\mathbb{B}$. The biquaternion algebra is a four-dimensional subalgebra, the left factor; the Clifford algebra is the sixteen-dimensional ambient algebra, generated by five elements of it. The phrase "the Clifford layer" names the choice of those five elements and their antisymmetrised products, not a different algebra.
 
-**The physical interpretation.** The Dirac spinor is a vector of the four-dimensional module of $M_4(\mathbb{C})$, not of the biquaternion algebra. The biquaternion algebra carries the even part of the Clifford action, which is the Lorentz transformation of the spinor; the odd part, the frame basis operators themselves, is what the Dirac equation uses. The biquaternion alone does not carry the Dirac spinor as a Clifford module: its simple left module is two-dimensional over $\mathbb{C}$, while the Dirac spinor is four-dimensional and splits into two copies of it, with the odd basis operators supplying the maps between the copies. This is the point of the odd sector of the inventory: the missing half is the odd slot, and it is a copy of the biquaternion algebra, not a second algebra.
+**The physical interpretation.** The Dirac spinor is a vector of the four-dimensional module of $M_4(\mathbb{C})$, not of the biquaternion algebra. The biquaternion algebra carries the even part of the Clifford action, which is the Lorentz transformation of the spinor; the odd part, the frame operators themselves, is what the Dirac equation uses. The biquaternion alone does not carry the Dirac spinor as a Clifford module: its simple left module is two-dimensional over $\mathbb{C}$, while the Dirac spinor is four-dimensional and splits into two copies of it, with the odd basis operators supplying the maps between the copies. This is the point of the odd sector of the inventory: the missing half is the odd slot, and it is a copy of the biquaternion algebra, not a second algebra.
 
 ## The Legacy Pauli Gamma Formulation
 
@@ -203,7 +203,7 @@ $$
 
 A single product is a pure tensor; the products form the seven-dimensional cone $\operatorname{rank}c(M)\le1$, and a general element is a sum of at most four, with $\ell(M)=\operatorname{rank}c(M)$.
 
-$\gamma_5$ is the reference-frame basis operator of the chirality operator; the central grading $\chi=i\tilde{Ζ}_{\mathrm{ad}}$ — the difference of the two central idempotents of the complexified algebra, so $\chi^2=e_t$ — is a different object, represented by $\gamma_5$ on the Dirac module.
+$\gamma_5$ is the reference-frame representative of the chirality operator; the central grading $\chi=i\tilde{Ζ}_{\mathrm{ad}}$ — the difference of the two central idempotents of the complexified algebra, so $\chi^2=e_t$ — is a different object, represented by $\gamma_5$ on the Dirac module.
 
 The dictionary is complex-linear; over $\mathbb{R}$ the products span $\mathrm{Cl}_{1,3}(\mathbb{R})\cong M_2(\mathbb{H})$ and the basis operators span $\mathrm{Cl}_{3,1}(\mathbb{R})\cong M_4(\mathbb{R})$.
 
@@ -232,7 +232,7 @@ $$
 The contraction sums follow from the squares. With one index raised, $\gamma^\mu=-\varepsilon_\mu\gamma_\mu$, so that $\sum_\mu\gamma^\mu\gamma_\mu=-4I_4$, $\sum_\mu\gamma^\mu\gamma_\alpha\gamma_\mu=2\gamma_\alpha$, $\sum_\mu\gamma^\mu\gamma_\alpha\gamma_\beta\gamma_\mu=-4\varepsilon_\alpha\delta_{\alpha\beta}I_4$ and $\sum_\mu\gamma^\mu\gamma_\gamma\gamma_\beta\gamma_\alpha\gamma_\mu=-2\gamma_\gamma\gamma_\beta\gamma_\alpha$.
 ## Summary
 
-The Dirac algebra is $\mathrm{Cl}(1,3)$, of real dimension $16$, isomorphic to $M_2(\mathbb{H})$, with even part $\mathrm{Cl}^{+}(1,3)\cong M_2(\mathbb{C})=\mathbb{B}$. Its complexification is $\mathrm{Cl}(4,\mathbb{C})\cong M_4(\mathbb{C})$. The five frame basis operators satisfy $iR_{\vec e_x}$ and $iL_{\vec e_k}R_{\vec e_y}$ carry the basis operator relation of $g$, the fifth $-iL_{e_t}R_{\vec e_z}$ squares to $I$ and anticommutes with the four, and the sixteen graded products form a basis of $M_4(\mathbb{C})$, with the trace orthogonality and the expansion formula. The five basis operators are five elements of the sixteen two-sided operators in a chosen coefficient frame, not a canonical subset. The frames form a homogeneous space under $GL_4$; the Clifford group is the stabiliser of the span of the generators, and its even part is the scalars times the spin group. The biquaternion algebra is the even slot over $\mathbb{R}$ and the left factor over $\mathbb{C}$; the ambient algebra is the endomorphism algebra of $\mathbb{B}$, not $\mathbb{B}$.
+The Dirac algebra is $\mathrm{Cl}(1,3)$, of real dimension $16$, isomorphic to $M_2(\mathbb{H})$, with even part $\mathrm{Cl}^{+}(1,3)\cong M_2(\mathbb{C})=\mathbb{B}$. Its complexification is $\mathrm{Cl}(4,\mathbb{C})\cong M_4(\mathbb{C})$. The five frame operators satisfy $iR_{\vec e_x}$ and $iL_{\vec e_k}R_{\vec e_y}$ carry the operator relation of $g$, the fifth $-iL_{e_t}R_{\vec e_z}$ squares to $I$ and anticommutes with the four, and the sixteen graded products form a basis of $M_4(\mathbb{C})$, with the trace orthogonality and the expansion formula. The five basis operators are five elements of the sixteen two-sided operators in a chosen coefficient frame, not a canonical subset. The frames form a homogeneous space under $GL_4$; the Clifford group is the stabiliser of the span of the generators, and its even part is the scalars times the spin group. The biquaternion algebra is the even slot over $\mathbb{R}$ and the left factor over $\mathbb{C}$; the ambient algebra is the endomorphism algebra of $\mathbb{B}$, not $\mathbb{B}$.
 
 | Quantity | Value |
 |---|---|
@@ -253,7 +253,7 @@ The Dirac algebra is $\mathrm{Cl}(1,3)$, of real dimension $16$, isomorphic to $
 | $\mathrm{Cl}(V,q)$ | the Clifford algebra of the quadratic form $q$ |
 | $\mathrm{Cl}(1,3)$ | the Dirac algebra of the Minkowski form |
 | $\mathrm{Cl}^{+}(1,3)$ | its even part, isomorphic to $M_2(\mathbb{C})$ |
-| $iR_{\vec e_x},\dots,iL_{\vec e_z}R_{\vec e_y},-iR_{\vec e_z}$ | the five frame basis operators, $iR_{\vec e_x}=iL_{e_t}R_{\vec e_x}$, $iL_{\vec e_x}R_{\vec e_y}=iL_{\vec e_x}R_{\vec e_y}$, $iL_{\vec e_y}R_{\vec e_y}=iL_{\vec e_y}R_{\vec e_y}$, $iL_{\vec e_z}R_{\vec e_y}=iL_{\vec e_z}R_{\vec e_y}$, $-iR_{\vec e_z}=-iL_{e_t}R_{\vec e_z}=i\,iR_{\vec e_x}\,iL_{\vec e_x}R_{\vec e_y}\,iL_{\vec e_y}R_{\vec e_y}\,iL_{\vec e_z}R_{\vec e_y}$; $iR_{\vec e_x}$ and $iL_{\vec e_k}R_{\vec e_y}$ carry the basis operator relation of $g$ |
+| $iR_{\vec e_x},\dots,iL_{\vec e_z}R_{\vec e_y},-iR_{\vec e_z}$ | the five frame operators, $iR_{\vec e_x}=iL_{e_t}R_{\vec e_x}$, $iL_{\vec e_x}R_{\vec e_y}=iL_{\vec e_x}R_{\vec e_y}$, $iL_{\vec e_y}R_{\vec e_y}=iL_{\vec e_y}R_{\vec e_y}$, $iL_{\vec e_z}R_{\vec e_y}=iL_{\vec e_z}R_{\vec e_y}$, $-iR_{\vec e_z}=-iL_{e_t}R_{\vec e_z}=i\,iR_{\vec e_x}\,iL_{\vec e_x}R_{\vec e_y}\,iL_{\vec e_y}R_{\vec e_y}\,iL_{\vec e_z}R_{\vec e_y}$; $iR_{\vec e_x}$ and $iL_{\vec e_k}R_{\vec e_y}$ carry the operator relation of $g$ |
 | $\sigma_{\mu\nu}$, $\sigma_{\mu\nu\rho}$ | the bivector and trivector products |
 | $P_{\pm}$ | the chiral projectors $\tfrac12(I\pm -iR_{\vec e_z})=\tfrac12(I\mp iL_{e_t}R_{\vec e_z})$ |
 | $\Gamma$ | the Clifford group |
@@ -263,7 +263,7 @@ The Dirac algebra is $\mathrm{Cl}(1,3)$, of real dimension $16$, isomorphic to $
 
 - [Why AXF Matrices instead of Pauli and Gamma Matrices](../articles_physics/why-axf-matrices-instead-of-pauli-and-gamma-matrices.html), for the comparison of the two notations, the worked Dirac operator and the length table.
 - [The Two-Sided Operators Method to Build $M_4(\mathbb{C})$](the-two-sided-operators-method-to-build-m4c.html), for the sixteen operators $L_{e_\mu} R_{e_\nu}$ and their product rule.
-- [Matrix Representations Conventions](matrix-representations-conventions.html), for the basis operator symbols the generator basis operator and the frame in the canonical frame, §*The Clifford Structure and the Frame*.
+- [Matrix Representations Conventions](matrix-representations-conventions.html), for the operator symbols, the generator and the frame, in the canonical frame, §*The Clifford Structure and the Frame*.
 - [Biquaternion Versors and the Orthogonal Group](biquaternion-versors-and-the-orthogonal-group.html), for the even slot and the versors.
 - [The Kronecker Factorisation $M_4(\mathbb{C})\cong M_2(\mathbb{C})\otimes M_2(\mathbb{C})$](the-kronecker-factorisation-of-m4c-into-m2c-tensor-m2c.html), for the two commuting copies of $\mathbb{B}$.
 - [The Antisymmetric Sector, the Pfaffian and the Klein Quadric of $M_4(\mathbb{C})$](the-antisymmetric-sector-the-pfaffian-and-the-klein-quadric-of-m4c.html), for the bivectors and the Lie algebra $\mathfrak{so}(4,\mathbb{C})$.

@@ -707,7 +707,7 @@ The Pauli and gamma formulation is legacy: the reasons are explained in the arti
 
 The gammas are a frame of $\mathrm{Cl}_{1,3}(\mathbb{C})=M_4(\mathbb{C})$, not a separate algebra; the body writes the basis operators.
 
-### The five basis operators
+### The five frame operators
 
 **The reference frame.** Define
 $$
@@ -751,7 +751,7 @@ $$
 \gamma_0=iL(e_t)R(\delta),\qquad
 \gamma_k=iL(\vec e_k)R(\beta),\qquad k=x,y,z.
 $$
-For the reference frame $(\beta,\delta)=(\vec e_y,\vec e_x)$, the five are the basis operators of §*The Five Basis Operators*; in that frame $\beta\delta=-\vec e_z$ and $\gamma_5=iL_{\mathrm{pau},e_t}R_{\mathrm{pau},\beta\delta}$.
+For the reference frame $(\beta,\delta)=(\vec e_y,\vec e_x)$, the five are the basis operators of §*The five frame operators*; in that frame $\beta\delta=-\vec e_z$ and $\gamma_5=iL_{\mathrm{pau},e_t}R_{\mathrm{pau},\beta\delta}$.
 
 **The normal form.** Every pair $(\beta,\delta)$ gives a frame with the anticommutation relations of §*The Clifford Relations*, and the five operators determine the pair: $\delta$ is the right factor of $\gamma_0$, and $\beta$ is the right factor of $\gamma_1$. Distinct pairs give distinct frames, not two descriptions of one frame.
 

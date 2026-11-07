@@ -34,7 +34,7 @@ $$
 which in vacuum reads $\tilde F=i\vec E-\vec B$. Its scalar part carries the two divergences and its vector part the two curls, so the one equation is the four Maxwell equations. It is first order in one field and needs no operator beyond the gradient. What it cannot do is carry a mass: the square of the gradient is not scalar, $\tilde\nabla^2\ne\Box$, because $e_t$ commutes with the spatial units and the mixed derivatives add instead of cancelling. The corpus's massive equation is therefore the chiral pair
 
 $$
-\tilde\nabla\tilde{Ξ}_{\mathrm{sp},R}=\frac{k_m}{\tilde{Ξ}_{\mathrm{sp},L}},\qquad  \tilde\nabla^{\natural}\tilde{Ξ}_{\mathrm{sp},L}=\frac{k_m}{\tilde{Ξ}_{\mathrm{sp},R}},
+\tilde\nabla\tilde{Ξ}_{\mathrm{sp},R}=k_m\tilde{Ξ}_{\mathrm{sp},L},\qquad  \tilde\nabla^{\natural}\tilde{Ξ}_{\mathrm{sp},L}=k_m\tilde{Ξ}_{\mathrm{sp},R},
 $$
 
 two first-order equations in two chiral halves, and the spinorial part below is read in that form. Here $\hbar/(mc)$ is the mass length.
@@ -210,13 +210,13 @@ $$
 +\frac{1}{2\rho}\exp(\omega\theta_{\mathrm{dua}})J\,\tilde{Ξ}_{\mathrm{sp}} ,
 $$
 
-with $\Lambda=\Omega\cdot S$ and $\\mathcal{Q}_{\\mathrm{sig}}=\Omega\cdot(\omega S)$ built from the bivector $\Omega=\sum_\mu g_{\mu\mu}v_\mu\Omega_\mu$ and the spin bivector $S=-\tfrac12\tilde{Ξ}_{\mathrm{sp}}\vec e_z\tilde{Ξ}_{\mathrm{sp}}^{-1}=-\tfrac12R\vec e_zR^{-1}$, in which the phase cancels. The bivectors $\Omega_\mu$ are those of the rotor's derivative, $\partial \tilde{Ξ}_{\mathrm{sp}}/\partial x_\mu=\tfrac12(\partial/\partial x_\mu\ln\rho+\omega\,\partial \theta_{\mathrm{dua}}/\partial x_\mu+\Omega_\mu)\tilde{Ξ}_{\mathrm{sp}}$ with $\Omega_\mu=2(\partial R/\partial x_\mu)R^{-1}$, so $\Omega$ is the directional derivative of the rotor along the four-velocity. The source prints the two scalar terms separately; they are one, because both multiply the same product on the right, and they add into the single coefficient $\Lambda+\\omega\\,\\mathcal{Q}_{\\mathrm{sig}}$, a complex number in $\omega$.
+with $\Lambda=\Omega\cdot S$ and $\mathcal{Q}_{\mathrm{sig}}=\Omega\cdot(\omega S)$ built from the bivector $\Omega=\sum_\mu g_{\mu\mu}v_\mu\Omega_\mu$ and the spin bivector $S=-\tfrac12\tilde{Ξ}_{\mathrm{sp}}\vec e_z\tilde{Ξ}_{\mathrm{sp}}^{-1}=-\tfrac12R\vec e_zR^{-1}$, in which the phase cancels. The bivectors $\Omega_\mu$ are those of the rotor's derivative, $\partial \tilde{Ξ}_{\mathrm{sp}}/\partial x_\mu=\tfrac12(\partial/\partial x_\mu\ln\rho+\omega\,\partial \theta_{\mathrm{dua}}/\partial x_\mu+\Omega_\mu)\tilde{Ξ}_{\mathrm{sp}}$ with $\Omega_\mu=2(\partial R/\partial x_\mu)R^{-1}$, so $\Omega$ is the directional derivative of the rotor along the four-velocity. The source prints the two scalar terms separately; they are one, because both multiply the same product on the right, and they add into the single coefficient $\Lambda+\omega\\,\mathcal{Q}_{\mathrm{sig}}$, a complex number in $\omega$.
 
-The source also carries the pair $(\lambda,\kappa)$, with $\lambda=\Lambda\cos\theta_{\mathrm{dua}}+\\mathcal{Q}_{\\mathrm{sig}}\\sin\theta_{\mathrm{dua}}$ and $\kappa=\\mathcal{Q}_{\\mathrm{sig}}\\cos\theta_{\mathrm{dua}}-\Lambda\sin\theta_{\mathrm{dua}}$, and writes the same equation with it and no phase in front: the phase-free display is the same equation, because
+The source also carries the pair $(\lambda,\kappa)$, with $\lambda=\Lambda\cos\theta_{\mathrm{dua}}+\mathcal{Q}_{\mathrm{sig}}\sin\theta_{\mathrm{dua}}$ and $\kappa=\mathcal{Q}_{\mathrm{sig}}\cos\theta_{\mathrm{dua}}-\Lambda\sin\theta_{\mathrm{dua}}$, and writes the same equation with it and no phase in front: the phase-free display is the same equation, because
 $$
 \lambda+\omega\kappa=\left(\Lambda+\omega\,\mathcal{Q}_{\mathrm{sig}}\right)\exp(-\omega\theta_{\mathrm{dua}}).
 $$
-Both spellings are used below; $(\\Lambda,\\mathcal{Q}_{\\mathrm{sig}})$ carries the geometry, since the two numbers are projections of $\Omega$ on the spin bivector, and $(\lambda,\kappa)$ is the pair that the free-field constraints act on.
+Both spellings are used below; $(\\Lambda,\mathcal{Q}_{\mathrm{sig}})$ carries the geometry, since the two numbers are projections of $\Omega$ on the spin bivector, and $(\lambda,\kappa)$ is the pair that the free-field constraints act on.
 
 The spin-plane factor needs a second look, because the source builds it as a product of two of its frame generators and the side is easy to mistake. Composed, that pair acts on the **left** by the fixed bivector $-\vec e_z$, that is $\tilde{Ξ}_{\mathrm{sp}}\mapsto-\vec e_z\tilde{Ξ}_{\mathrm{sp}}$. The equation applies the bivector on the **right**, $\tilde{Ξ}_{\mathrm{sp}}\mapsto-\tilde{Ξ}_{\mathrm{sp}}\vec e_z$, which is the volume element $\omega$ of the introduction. The two are different: one bivector on opposite sides, and only the right one is used below, because it is the one that anticommutes with $\vec e_x$.
 
@@ -236,7 +236,7 @@ which has the shape of the Dirac–Hestenes equation but with a coefficient that
 
 ### Linearisation: the two Dirac equations
 
-The equation above is non-linear because its coefficients depend on the field: $\Lambda$ and $\\mathcal{Q}_{\\mathrm{sig}}$ are built from the spin bivector $S$, which is a function of $\tilde{Ξ}_{\mathrm{sp}}$, and $\theta_{\mathrm{dua}}$ is a function of $x$ as well. Two steps reduce it, and they give the two displays of the same equation. A third condition is needed for the reduction to end in a **mass**, and it is stated separately below.
+The equation above is non-linear because its coefficients depend on the field: $\Lambda$ and $\mathcal{Q}_{\mathrm{sig}}$ are built from the spin bivector $S$, which is a function of $\tilde{Ξ}_{\mathrm{sp}}$, and $\theta_{\mathrm{dua}}$ is a function of $x$ as well. Two steps reduce it, and they give the two displays of the same equation. A third condition is needed for the reduction to end in a **mass**, and it is stated separately below.
 
 **The constraint step.** The currents are $j=\lambda\rho v$ and $g=\kappa\rho v$ with $v=J/\rho$ the four-velocity, so the two constraints read $\rho\dot\lambda+\lambda\,\langle\tilde\nabla,\tilde J_{\Phi}\rangle=0$ and $\rho\dot\kappa+\kappa\,\langle\tilde\nabla,\tilde J_{\Phi}\rangle=0$, the dot being the derivative along the velocity, $\dot\lambda$ the derivative of $\lambda$ along the velocity. Eliminating $\langle\tilde\nabla,\tilde J_{\Phi}\rangle$ between them leaves $\kappa\dot\lambda=\lambda\dot\kappa$, so the ratio of the coefficients is constant,
 $$
@@ -278,7 +278,7 @@ $$
 (\tilde\nabla\xi)(-\vec e_z)=\lambda\,\xi\,i\vec e_x,
 $$
 
-with $\Lambda$ and $\\mathcal{Q}_{\\mathrm{sig}}$ unchanged, since the phase cancels in the spin bivector. A constant angle is thus not a parameter of the dynamics but a phase carried by the spinor, and solutions with different constant $\theta_{\mathrm{dua}}$ are the same solution multiplied on the right.
+with $\Lambda$ and $\mathcal{Q}_{\mathrm{sig}}$ unchanged, since the phase cancels in the spin bivector. A constant angle is thus not a parameter of the dynamics but a phase carried by the spinor, and solutions with different constant $\theta_{\mathrm{dua}}$ are the same solution multiplied on the right.
 
 The half angle is not a convention. The source prints the full one in one place, where its (5.15) is said to follow from $\tilde{Ξ}_{\mathrm{sp}}=\xi\exp(\theta_{\mathrm{dua}}\omega)$. With that exponent the phase does not cancel: the left side of the source's (5.7) carries one power of it, the right side none. The reason is that on the right the phase enters twice — once from $\tilde{Ξ}_{\mathrm{sp}}$ and once from the equation itself — and the two annihilate after the inner one passes the odd factor, $\exp(\omega\theta_{\mathrm{dua}})\,i\vec e_x=i\vec e_x\exp(-\omega\theta_{\mathrm{dua}})$. What follows with the full exponent is $(\tilde\nabla\xi)(-\vec e_z)=m\xi\,i\vec e_x\exp(-\omega\theta_{\mathrm{dua}})$, with the phase moved to the other side rather than removed. The rest of the paper uses the half angle: the solutions (5.16) and (5.17) carry $\exp(\theta_{\mathrm{dua}}\omega/2)$, and the mass-spectrum decomposition (6.6) is $\tilde{Ξ}_{\mathrm{sp}}=\exp(\omega\theta_{\mathrm{dua}}/2)\xi$.
 
@@ -342,13 +342,13 @@ $$
 
 because $\omega$ anticommutes with $\vec e_x$; and the two half phases add into the full $\exp(\omega\theta_{\mathrm{dua}})$, both being powers of the one element $\omega$. That is the source's (5.28) as printed.
 
-**The family projects for every $\theta_{\mathrm{dua}}$.** The conjugating element of the family is $\\mathcal{Q}_{\\mathrm{sig}}=\exp(\omega\theta_{\mathrm{dua}})\,i\vec e_x$, and
+**The family projects for every $\theta_{\mathrm{dua}}$.** The conjugating element of the family is $\mathcal{Q}_{\mathrm{sig}}=\exp(\omega\theta_{\mathrm{dua}})\,i\vec e_x$, and
 
 $$
 K^2=\exp(\omega\theta_{\mathrm{dua}})\,i\vec e_x\,\exp(\omega\theta_{\mathrm{dua}})\,i\vec e_x=(i\vec e_x)^2=+1 .
 $$
 
-The inner $\exp(\omega\theta_{\mathrm{dua}})$ passes $\vec e_x$ with a change of sign and cancels the outer one. So conjugating twice by $\\mathcal{Q}_{\\mathrm{sig}}$ returns every element, and every member of the family is a projection, not only the two ends.
+The inner $\exp(\omega\theta_{\mathrm{dua}})$ passes $\vec e_x$ with a change of sign and cancels the outer one. So conjugating twice by $\mathcal{Q}_{\mathrm{sig}}$ returns every element, and every member of the family is a projection, not only the two ends.
 
 The list the source prints is then read on the values. The value at $\theta_{\mathrm{dua}}$ put through the map at $\theta_{\mathrm{dua}}$ again is the same value; the map at $\theta_{\mathrm{dua}}+\pi$ complements it, so $\tilde{Ξ}_{\mathrm{sp},\mathrm{dua},\theta}+\tilde{Ξ}_{\mathrm{sp},\theta_{\mathrm{dua}}+\pi}=\tilde{Ξ}_{\mathrm{sp}}$ and the map at $\theta_{\mathrm{dua}}+\pi$ applied to $\tilde{Ξ}_{\mathrm{sp},\mathrm{dua},\theta}$ gives zero; and $\tilde{Ξ}_{\mathrm{sp},\mathrm{dua},\theta}$ is $\tilde{Ξ}_{\mathrm{sp},+}$ for every element only at $\theta_{\mathrm{dua}}\equiv0$ modulo $2\pi$. On the two values of the split the family reads
 
@@ -435,13 +435,13 @@ that is, a **massless Dirac field is a Maxwell field with a magnetic current and
 
 The corpus has two spellings of the massive Dirac equation, and the source's equation is the second of them.
 
-**The one-sided pair.** Two equations, one per value of the subscript, both gradients acting from the left:
+**The one-sided pair.** Two equations, one per value read by the test, both gradients acting from the left:
 
 $$
-\tilde\nabla\tilde{Ξ}_{\mathrm{sp},R}=\frac{k_m}{\tilde{Ξ}_{\mathrm{sp},L}}$$
+\tilde\nabla\tilde{Ξ}_{\mathrm{sp},R}=k_m\tilde{Ξ}_{\mathrm{sp},L}$$
 
 $$
-\tilde\nabla^{\natural}\tilde{Ξ}_{\mathrm{sp},L}=\frac{k_m}{\tilde{Ξ}_{\mathrm{sp},R}}.
+\tilde\nabla^{\natural}\tilde{Ξ}_{\mathrm{sp},L}=k_m\tilde{Ξ}_{\mathrm{sp},R}.
 $$
 
 The second gradient is the quaternion conjugate of the first, and it is the conjugation, not a side, that distinguishes them. The mass is the only term that relates the two parts, and at $m=0$ the pair splits into $\tilde\nabla\tilde{Ξ}_{\mathrm{sp},R}=0$ and $\tilde\nabla^{\natural}\tilde{Ξ}_{\mathrm{sp},L}=0$, one Weyl equation per value.
@@ -457,7 +457,7 @@ with the derivative on the left and the mass on the right as the element $i\omeg
 **The source's equation has that shape.** Its Dirac–Hestenes equation
 
 $$
-(\tilde\nabla\tilde{Ξ}_{\mathrm{sp}})(-\vec e_z)=\frac{k_m}{\tilde{Ξ}_{\mathrm{sp}}\,i\,\vec e_{x}}$$
+(\tilde\nabla\tilde{Ξ}_{\mathrm{sp}})(-\vec e_z)=k_m\tilde{Ξ}_{\mathrm{sp}}\,i\,\vec e_{x}$$
 
 acts with the derivative on the left and multiplies on the right by the fixed bivector and by the mass — a left action and two right factors, no second field. That is the shape of the corpus's own Dirac–Hestenes equation too, in which the mass also multiplies on the right, at a fixed bivector; the pair of values is a different spelling of the same physics, and the two-sided form is the one both the corpus's equation and the source's take. What it does not have is a second equation for the other value. The two values are the two halves of the one spinor under the source's **Weyl conditions**, which pair the volume element on one side with the fixed bivector on the other. Written as a condition on the one spinor it is $\tilde{Ξ}_{\mathrm{sp},L}\omega=-\omega\tilde{Ξ}_{\mathrm{sp},L}$ and $\tilde{Ξ}_{\mathrm{sp},R}\omega=+\omega\tilde{Ξ}_{\mathrm{sp},R}$, that is $\tilde{Ξ}_{\mathrm{sp},L}\vec e_z=-\vec e_z\tilde{Ξ}_{\mathrm{sp},L}$ and $\tilde{Ξ}_{\mathrm{sp},R}\vec e_z=+\vec e_z\tilde{Ξ}_{\mathrm{sp},R}$: the bivector enters twice, once as a product on the right and once as a product on the left. The condition is therefore a genuine constraint, and its two branches are the two four-dimensional halves of the algebra — the spinor commuting with $\vec e_z$ and the one anticommuting. What effects the split is the **pseudoscalar**, not a second field; and because in this frame the volume element and the spin plane are written with the one bivector, the source needs the single symbol $i$ for both jobs. The symbols are those of *Special Element Conventions*.
 
@@ -501,8 +501,8 @@ The programme of Rodrigues and Vaz works in a bundle of differential forms and p
 | $j$, $g$, $J=J_{\mathrm{e}}-\omega J_{\mathrm{m}}$ | Vector current, axial current, total current with electric and magnetic parts; the contractions $\langle\tilde\nabla,\tilde j\rangle$ and $\langle\tilde\nabla,\tilde g\rangle$ are the series' contractions of the gradient with the two currents |
 | $\tilde{Ξ}_{\mathrm{sp},\mathrm{dua},\theta}$ | The family of the source, $\tfrac12(\tilde{Ξ}_{\mathrm{sp}}+e^{\omega\theta_{\mathrm{dua}}}i\vec e_x\,\tilde{Ξ}_{\mathrm{sp}}\,i\vec e_x)$, which is the projection at $\theta_{\mathrm{dua}}$ in a duality-rotated frame; $\tilde{Ξ}_{\mathrm{sp},\mathrm{dua},\theta}+\tilde{Ξ}_{\mathrm{sp},\theta_{\mathrm{dua}}+\pi}=\tilde{Ξ}_{\mathrm{sp}}$ replaces the printed $\Lambda_{\mathrm{dua},\theta}=\Lambda_{\theta_{\mathrm{dua}}+\pi}$ |
 | $S=-\tfrac12\tilde{Ξ}_{\mathrm{sp}}\vec e_z\tilde{Ξ}_{\mathrm{sp}}^{-1}$ | Bivector of the canonical analysis; $S_\mu=\tfrac12\,i\,Fe_\mu F\vec e_{\nu(\mu)}$ the Maxwell energy–momentum one-form, $e_\mu$ the unit of the coordinate $x_\mu$ |
-| $\\Lambda,\\ \\mathcal{Q}_{\\mathrm{sig}}$ | The two scalars of the spinorial Maxwell equation, $\Lambda=\Omega\cdot S$ and $\\mathcal{Q}_{\\mathrm{sig}}=\Omega\cdot(\omega S)$, projections of $\Omega$ on the spin bivector; they add into the single coefficient $\Lambda+\omega\,\mathcal{Q}_{\mathrm{sig}}=\lambda e^{\omega\theta_{\mathrm{dua}}}$ |
-| $\lambda,\ \kappa$ | The source's rotated pair, $\lambda=\Lambda\cos\theta_{\mathrm{dua}}+\\mathcal{Q}_{\\mathrm{sig}}\\sin\theta_{\mathrm{dua}}$ and $\kappa=\\mathcal{Q}_{\\mathrm{sig}}\\cos\theta_{\mathrm{dua}}-\Lambda\sin\theta_{\mathrm{dua}}$, with $\lambda+\omega\kappa=(\Lambda+\\omega\\,\\mathcal{Q}_{\\mathrm{sig}})e^{-\omega\theta_{\mathrm{dua}}}$; the constraints force $\kappa=0$ and $\lambda=\Lambda/\cos\theta_{\mathrm{dua}}$ real, and $\langle\tilde\nabla,\tilde J_{\Phi}\rangle=0$ then makes $\lambda$ a constant mass |
+| $\\Lambda,\\ \mathcal{Q}_{\mathrm{sig}}$ | The two scalars of the spinorial Maxwell equation, $\Lambda=\Omega\cdot S$ and $\mathcal{Q}_{\mathrm{sig}}=\Omega\cdot(\omega S)$, projections of $\Omega$ on the spin bivector; they add into the single coefficient $\Lambda+\omega\,\mathcal{Q}_{\mathrm{sig}}=\lambda e^{\omega\theta_{\mathrm{dua}}}$ |
+| $\lambda,\ \kappa$ | The source's rotated pair, $\lambda=\Lambda\cos\theta_{\mathrm{dua}}+\mathcal{Q}_{\mathrm{sig}}\sin\theta_{\mathrm{dua}}$ and $\kappa=\mathcal{Q}_{\mathrm{sig}}\cos\theta_{\mathrm{dua}}-\Lambda\sin\theta_{\mathrm{dua}}$, with $\lambda+\omega\kappa=(\Lambda+\omega\\,\mathcal{Q}_{\mathrm{sig}})e^{-\omega\theta_{\mathrm{dua}}}$; the constraints force $\kappa=0$ and $\lambda=\Lambda/\cos\theta_{\mathrm{dua}}$ real, and $\langle\tilde\nabla,\tilde J_{\Phi}\rangle=0$ then makes $\lambda$ a constant mass |
 
 ## Further Reading
 

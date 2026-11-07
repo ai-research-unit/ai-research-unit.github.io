@@ -85,7 +85,7 @@ Every subject article of this category keeps the following conventions, and this
 
 **The content.** Every entry is a restatement of a result already proved in one of the source articles of Table B of the category, and it is cited inline in italics with its section, in the corpus form "*Quaternion Norm and Invertibility*, §*The Quaternion Norm*". A statement that no source article contains is not made: it is left out.
 
-**The form.** Tables are Markdown, never a LaTeX `array` and never an image. Cell text is short enough that the row stays readable; where a cell needs more than a few words, the detail is carried by the explanation under the table. Display mathematics uses the double-dollar fences and stands outside the tables.
+**The form.** Tables are Markdown, never a LaTeX `array` and never an image. Entry text is short enough that the row stays readable; where an entry needs more than a few words, the detail is carried by the explanation under the table. Display mathematics uses the double-dollar fences and stands outside the tables.
 
 ## The Tables of the Category and Their Sources
 

@@ -66,14 +66,14 @@ $$\tilde\nabla\tilde{Ξ}_{\mathrm{sp},R}=k_m\tilde{Ξ}_{\mathrm{sp},L},
 in which the gradient acts by left multiplication on the field and the mass relates the two parts. This is the **one-sided** writing. Here $k_m=mc/\hbar$ is the mass wave number, the inverse of the mass length.
 
 The **two-sided** writing is the action
-$$\tilde Q\longmapsto i\sum_\mu e_\mu\frac{\partial\tilde Q}{\partial x_\mu}\vec e_{\nu(\mu)},$$
+$$\tilde Q\longmapsto \sum_\mu e_\mu\frac{\partial\tilde Q}{\partial x_\mu}\vec e_{\nu(\mu)},$$
 and it is the one this article needs, because every bilinear above carries a right slot as well as a left one. The two writings describe one dynamics, and each is first order.
 
-The composition of the two-sided action is read slot by slot. Each slot action composed with itself multiplies the element by $+1$ on the time slot and by $-1$ on each spatial slot; two different slots composed in the two orders cancel in pairs, because the derivatives commute; so the action composed with itself is
+The composition of the two-sided action is read slot by slot. The slot of this action is the unit $e_\mu$ on the left and $\vec e_{\nu(\mu)}$ on the right, with no factor $i$: the $i$ belongs to the **slot action** of the section above, which is what the bilinears are built from, and a sum that carried it in every slot would be the $\gamma$ display of the reference article, whose square is $-\Box$ and not $\Box$. Composed with itself, the unit slot multiplies the element by $-1$ on the time slot, because $e_t^2=+1$ and $\vec e_x^2=-1$, and by $+1$ on each spatial slot, because $\vec e_k^2=\vec e_y^2=-1$; two different slots composed in the two orders cancel in pairs, because the derivatives commute; so the action composed with itself is
 $$\tilde Q\longmapsto\Box\tilde Q,
 \qquad
-\Box=\frac{\partial^2}{\partial x_t^2}-\sum_k\frac{\partial^2}{\partial x_k^2},$$
-in this frame. The verification is exact: the six cross compositions sum to zero, and the four diagonal ones to the four signs above.
+\Box=\sum_k\frac{\partial^2}{\partial x_k^2}-\frac{\partial^2}{\partial x_t^2}=\frac{\partial^2}{\partial R_t^2}+\Delta,$$
+which is the corpus's d'Alembertian: $R_t=i\,x_t$ is the imaginary time, so $\partial^2/\partial R_t^2=-\partial^2/\partial x_t^2$. The verification is exact: the six cross compositions sum to zero, and the four diagonal ones to the four signs above. With this $\Box$ the free equation $\sum_\mu e_\mu\frac{\partial\tilde{Ξ}_{\mathrm{sp}}}{\partial x_\mu}\vec e_{\nu(\mu)}=k_m\tilde{Ξ}_{\mathrm{sp}}$ squares to $(\Box-k_m^{2})\tilde{Ξ}_{\mathrm{sp}}=0$, the second-order equation of the reference article, and a plane wave obeys $k_{t}^{\prime2}=\lvert\vec k_\Phi\rvert^{2}+k_m^{2}$.
 
 ### The Two Values and the Axial Bilinear
 
@@ -90,7 +90,7 @@ The axial bilinear carries $\vec e_z$ in the right slot, before the space unit, 
 The free equation is first order in space and in time, and every bilinear above is quadratic in the field. A Lagrangian term that is a product of two bilinears is therefore quartic in the field, and the field equation obtained from it is cubic: a bilinear coefficient multiplying one more power of the field. That is the whole origin of the name, and the alternative name **cubic Dirac equation** says the same thing.
 
 The generic equation is
-$$i\sum_\mu e_\mu\frac{\partial\tilde{Ξ}_{\mathrm{sp}}}{\partial x_\mu}\vec e_{\nu(\mu)}-k_m\tilde{Ξ}_{\mathrm{sp}}+g\,Ξ(\tilde{Ξ}_{\mathrm{sp}})=0,$$
+$$\sum_\mu e_\mu\frac{\partial\tilde{Ξ}_{\mathrm{sp}}}{\partial x_\mu}\vec e_{\nu(\mu)}-k_m\tilde{Ξ}_{\mathrm{sp}}+g\,Ξ(\tilde{Ξ}_{\mathrm{sp}})=0,$$
 with $Ξ$ cubic. The three standard models differ only in which bilinear builds $Ξ$, and a table is the clearest statement of the difference.
 
 | Model | The bilinear it squares | The interaction in the Lagrangian | The cubic self-term in the equation |
@@ -116,11 +116,11 @@ The models below are the two the literature names, and the article records them 
 ### The Thirring Model
 
 The **Thirring model** (Thirring 1958) is the $1+1$-dimensional theory of a self-interacting fermion whose interaction is the square of the vector current. In the notation of this article the Lagrangian density is
-$$\mathcal{L}=\mathrm{Sc}\bigl(\tilde{Ξ}_{\mathrm{sp}}^*i\,(i\sum_\mu e_\mu\frac{\partial\tilde{Ξ}_{\mathrm{sp}}}{\partial x_\mu}\vec e_{\nu(\mu)})\vec e_x\bigr)-m\,\mathrm{Sc}\bigl(\tilde{Ξ}_{\mathrm{sp}}^*i\tilde{Ξ}_{\mathrm{sp}}\vec e_x\bigr)-\frac{g}{2}\sum_\mu\varepsilon_\mu V_\mu V_\mu,$$
+$$\mathcal{L}=\mathrm{Sc}\bigl(\tilde{Ξ}_{\mathrm{sp}}^*i\,(\sum_\mu e_\mu\frac{\partial\tilde{Ξ}_{\mathrm{sp}}}{\partial x_\mu}\vec e_{\nu(\mu)})\vec e_x\bigr)-m\,\mathrm{Sc}\bigl(\tilde{Ξ}_{\mathrm{sp}}^*i\tilde{Ξ}_{\mathrm{sp}}\vec e_x\bigr)-\frac{g}{2}\sum_\mu\varepsilon_\mu V_\mu V_\mu,$$
 with the sums running over the two indices $t$ and $x$ of the plane. The field is an element of $\mathbb{B}$; its two values $\tilde{Ξ}_{\mathrm{sp},L}$ and $\tilde{Ξ}_{\mathrm{sp},R}$ are the two components the two-dimensional dynamics uses, and the mass term is the scalar density $S_{\mathrm d}$, which pairs the two values and vanishes when only one is present.
 
 The integral $\int dt\,dx\,\mathcal{L}$ is the action, and the field equation is
-$$i\sum_\mu e_\mu\frac{\partial\tilde{Ξ}_{\mathrm{sp}}}{\partial x_\mu}\vec e_{\nu(\mu)}-k_m\tilde{Ξ}_{\mathrm{sp}}-g\sum_\mu\varepsilon_\mu V_\mu\,(ie_\mu\tilde{Ξ}_{\mathrm{sp}}\vec e_{\nu(\mu)})=0,$$
+$$\sum_\mu e_\mu\frac{\partial\tilde{Ξ}_{\mathrm{sp}}}{\partial x_\mu}\vec e_{\nu(\mu)}-k_m\tilde{Ξ}_{\mathrm{sp}}-g\sum_\mu\varepsilon_\mu V_\mu\,(ie_\mu\tilde{Ξ}_{\mathrm{sp}}\vec e_{\nu(\mu)})=0,$$
 with $\mu$ running over $t$ and $x$. The interaction is a **current–current** interaction: the field at a point multiplies the current at the same point.
 
 **The model is exactly solvable.** The massless Thirring model was solved by Hagen (1964) and by Klaiber (1968): the spectrum is a free boson, and the fermion Green functions are explicit powers of the free ones. The model satisfies the Osterwalder–Schrader axioms with a suitable choice of the coupling (Carey and Ruijsenaars 1984), and the massive model is integrable by Bethe ansatz (Bergknoff and Thacker 1979). The exact solubility is the reason the model is used as a testing ground for approximation schemes: a method that cannot reproduce the Thirring model exactly is known to be wrong before it is applied to QCD.
@@ -130,9 +130,9 @@ with $\mu$ running over $t$ and $x$. The interaction is a **current–current** 
 ### The Soler Model
 
 The **Soler model** (Soler 1970) is the $3+1$-dimensional theory whose interaction is the square of the scalar bilinear:
-$$\mathcal{L}=\mathrm{Sc}\bigl(\tilde{Ξ}_{\mathrm{sp}}^*i\,(i\sum_\mu e_\mu\frac{\partial\tilde{Ξ}_{\mathrm{sp}}}{\partial x_\mu}\vec e_{\nu(\mu)})\vec e_x\bigr)-m\,\mathrm{Sc}\bigl(\tilde{Ξ}_{\mathrm{sp}}^*i\tilde{Ξ}_{\mathrm{sp}}\vec e_x\bigr)+\frac{g}{2}\Bigl(\mathrm{Sc}\bigl(\tilde{Ξ}_{\mathrm{sp}}^*i\tilde{Ξ}_{\mathrm{sp}}\vec e_x\bigr)\Bigr)^{2},$$
+$$\mathcal{L}=\mathrm{Sc}\bigl(\tilde{Ξ}_{\mathrm{sp}}^*i\,(\sum_\mu e_\mu\frac{\partial\tilde{Ξ}_{\mathrm{sp}}}{\partial x_\mu}\vec e_{\nu(\mu)})\vec e_x\bigr)-m\,\mathrm{Sc}\bigl(\tilde{Ξ}_{\mathrm{sp}}^*i\tilde{Ξ}_{\mathrm{sp}}\vec e_x\bigr)+\frac{g}{2}\Bigl(\mathrm{Sc}\bigl(\tilde{Ξ}_{\mathrm{sp}}^*i\tilde{Ξ}_{\mathrm{sp}}\vec e_x\bigr)\Bigr)^{2},$$
 that is, with $S_{\mathrm d}$ for the scalar density, $\frac{g}{2}S_{\mathrm d}^2$. The interaction is a **scalar–scalar** interaction, and the field equation is
-$$i\sum_\mu e_\mu\frac{\partial\tilde{Ξ}_{\mathrm{sp}}}{\partial x_\mu}\vec e_{\nu(\mu)}-k_m\tilde{Ξ}_{\mathrm{sp}}+g\,S_{\mathrm d}\,\tilde{Ξ}_{\mathrm{sp}}=0,$$
+$$\sum_\mu e_\mu\frac{\partial\tilde{Ξ}_{\mathrm{sp}}}{\partial x_\mu}\vec e_{\nu(\mu)}-k_m\tilde{Ξ}_{\mathrm{sp}}+g\,S_{\mathrm d}\,\tilde{Ξ}_{\mathrm{sp}}=0,$$
 with the sum over the four indices $t,x,y,z$.
 
 **The pseudoscalar variant.** The same construction with $P_5$ in place of $S_{\mathrm d}$ gives the pseudoscalar–pseudoscalar interaction $\frac{g}{2}P_5^2$. The two variants are not independent under the axial rotation $Q\mapsto Q\exp(\alpha\vec e_z)$: the pair $(S_{\mathrm d},P_5)$ rotates as a two-component object,
@@ -148,14 +148,14 @@ so that $S_{\mathrm d}^2+P_5^2$ is invariant and $S_{\mathrm d}^2$ alone is not.
 ## The Hehl–Datta Interaction from Torsion
 
 With the torsion eliminated, the equation of the field is the Dirac equation plus the axial term, and it is the one model of the three whose coefficient is not fitted but fixed:
-$$i\sum_\mu e_\mu\frac{\partial\tilde{Ξ}_{\mathrm{sp}}}{\partial x_\mu}\vec e_{\nu(\mu)}-k_m\tilde{Ξ}_{\mathrm{sp}}+\frac{3\kappa}{8}\sum_\mu\varepsilon_\mu A_\mu\,e_\mu\tilde{Ξ}_{\mathrm{sp}}\vec e_z\vec e_{\nu(\mu)}=0.$$
+$$\sum_\mu e_\mu\frac{\partial\tilde{Ξ}_{\mathrm{sp}}}{\partial x_\mu}\vec e_{\nu(\mu)}-k_m\tilde{Ξ}_{\mathrm{sp}}+\frac{3\kappa}{8}\sum_\mu\varepsilon_\mu A_\mu\,e_\mu\tilde{Ξ}_{\mathrm{sp}}\vec e_z\vec e_{\nu(\mu)}=0.$$
 The term is the axial current multiplying the axial slot action on the field. Its coefficient is $3\kappa/8$, twice the $3\kappa/16$ of the Lagrangian, and the factor of two is the one that varying a square supplies.
 
 **The spacelike case.** Where only the spacelike components of the current are nonzero, the equation separates into a time part and a space part,
-$$i\Bigl((\nabla_t\tilde{Ξ}_{\mathrm{sp}})\vec e_x+\sum_k\vec e_k(\nabla_k\tilde{Ξ}_{\mathrm{sp}})\vec e_y\Bigr)+\frac{3\kappa}{8}\sum_k\varepsilon_k A_k\,\vec e_k\tilde{Ξ}_{\mathrm{sp}}\vec e_z\vec e_y=k_m\tilde{Ξ}_{\mathrm{sp}},$$
+$$\Bigl((\nabla_t\tilde{Ξ}_{\mathrm{sp}})\vec e_x+\sum_k\vec e_k(\nabla_k\tilde{Ξ}_{\mathrm{sp}})\vec e_y\Bigr)+\frac{3\kappa}{8}\sum_k\varepsilon_k A_k\,\vec e_k\tilde{Ξ}_{\mathrm{sp}}\vec e_z\vec e_y=k_m\tilde{Ξ}_{\mathrm{sp}},$$
 with $A_0=0$, and the two parts are read separately.
 
-**Why the square is the d'Alembertian.** The three spatial slot actions composed with one another give $-\partial_k^2$ on each diagonal and cancel in pairs off it, so the square of the two-sided action restricted to the plane's space is $-\sum_k\partial_k^2$, the spatial part of $\Box$. The eliminated equation therefore has a square that is a wave operator, and no sign in it is chosen by hand.
+**Why the square is the d'Alembertian.** The three spatial slots composed with one another give $+\partial_k^2$ on each diagonal and cancel in pairs off it, so the square of the two-sided action restricted to the plane's space is $+\sum_k\partial_k^2=\Delta$, the spatial part of $\Box$. The eliminated equation therefore has a square that is a wave operator, and no sign in it is chosen by hand.
 
 ## The Local Channels and Their Sectors
 
@@ -212,7 +212,7 @@ Two further limits are inherited from other gaps. The Einstein–Cartan route ne
 
 ## Verified Two-Dimensional Relations
 
-The two-dimensional identities on which the Thirring model's one coupling rests were checked directly, in exact arithmetic on the algebra over the Gaussian integers, so every residual below is exactly $0$ and not merely small. The frame is the $\mathbb{B}_{\Phi}$ frame of the conventions article, whose metric has $g_{tt}=+1$ and $g_{xx}=-1$.
+The two-dimensional identities on which the Thirring model's one coupling rests were checked directly, in exact arithmetic on the algebra over the Gaussian integers, so every residual below is exactly $0$ and not merely small. The frame is the $\mathbb{B}_{\Phi}$ frame of the conventions article, whose metric is $g_{tt}=-c^{2}$ and $g_{xx}=+1$, so that $\varepsilon_t=-g_{tt}=+1$ on the time index and $\varepsilon_k=-g_{kk}=-1$ on the spatial ones.
 
 ### The Two Slot Actions
 
@@ -346,7 +346,7 @@ Each bilinear, however, is a pairing and not a product: it is the scalar part of
 |---|---|
 | $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ | Biquaternion algebra; $\vec e_k^2 = -e_t$, central $i$ |
 | $\tilde Q\mapsto ie_\mu\tilde Q\vec e_{\nu(\mu)}$ | Slot action of the index $\mu$; $\nu(t)=x$, $\nu(k)=y$ |
-| $i\sum_\mu e_\mu\frac{\partial\tilde Q}{\partial x_\mu}\vec e_{\nu(\mu)}$ | Two-sided Dirac action; composed with itself it is $\Box$ |
+| $\sum_\mu e_\mu\frac{\partial\tilde Q}{\partial x_\mu}\vec e_{\nu(\mu)}$ | Two-sided Dirac action; composed with itself it is $\Box$ |
 | $\mathrm{Sc}\bigl(\tilde{Ξ}_{\mathrm{sp}}^*iX\vec e_x\bigr)$ | The bilinear form; every density below is this scalar part read at one element $X$ |
 | $S_{\mathrm d}=\mathrm{Sc}(\tilde{Ξ}_{\mathrm{sp}}^*i\tilde{Ξ}_{\mathrm{sp}}\vec e_x)$ | Scalar density (mass channel) |
 | $P_5=\mathrm{Sc}(\tilde{Ξ}_{\mathrm{sp}}^*i\tilde{Ξ}_{\mathrm{sp}}\vec e_z\vec e_x)$ | Pseudoscalar density, the parity-odd partner of $S_{\mathrm d}$; the quaternion representative $P=S_{\mathrm d}\vec e_z$ has $P\cdot P=-S_{\mathrm d}^2$, a different object from the density square $P_5^2$ |

@@ -85,7 +85,7 @@ The two slots of the display are the two Peirce planes $S_\pm=\mathbb{B}\tilde\P
 | $\mathsf M_2(\tilde Q)$ | the $2\times2$ matrix of the element, of which $L_{\mathrm{pau}}$ is two copies |
 | $L_{\mathrm{pau}}(\tilde Q)=\mathrm I_2\otimes\mathsf M_2(\tilde Q)$ | the left action in the Pauli frame |
 | $S_\pm=\mathbb{B}\tilde\Pi_\pm$ | the two slots of the display, the two Peirce planes, both copies of $S$ |
-| $\mathsf{V}_{\mathrm{vol}}=-iR_{\vec e_z}$ | the chirality basis operator, $\operatorname{diag}(-I_2,I_2)$ in the display; on $V$ its eigenspaces are the two slots, on $\Delta$ they are $S$ and $S^{\mathrm{c}}$ |
+| $\mathsf{V}_{\mathrm{vol}}=-iR_{\vec e_z}$ | the chirality operator, $\operatorname{diag}(-I_2,I_2)$ in the display; on $V$ its eigenspaces are the two slots, on $\Delta$ they are $S$ and $S^{\mathrm{c}}$ |
 | $\mathsf P$ | the switch of the frame, the pure swap in the Pauli display |
 
 ## Further Reading

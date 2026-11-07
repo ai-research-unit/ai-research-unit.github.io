@@ -495,9 +495,9 @@ The field-strength biquaternion of this article is therefore $i$ times this pape
 
 The corpus's own equation is **one-sided**, the pair on the two halves $\tilde{Ξ}_{\mathrm{sp},L}$ and $\tilde{Ξ}_{\mathrm{sp},R}$ of a Dirac field,
 $$
-\tilde{\nabla}\tilde{Ξ}_{\mathrm{sp},R}=\frac{k_m}{\tilde{Ξ}_{\mathrm{sp},L}},
+\tilde{\nabla}\tilde{Ξ}_{\mathrm{sp},R}=k_m\tilde{Ξ}_{\mathrm{sp},L},
 \qquad
-\tilde{\nabla}^{\natural}\tilde{Ξ}_{\mathrm{sp},L}=\frac{k_m}{\tilde{Ξ}_{\mathrm{sp},R}}.
+\tilde{\nabla}^{\natural}\tilde{Ξ}_{\mathrm{sp},L}=k_m\tilde{Ξ}_{\mathrm{sp},R}.
 $$
 Both lines act from the left, the mass is the off-diagonal pairing of the two halves, and no term carries a right multiplication. The two halves are told apart by the subscript $L$ or $R$, and this is the equation whose dividing line is that label. Here $\hbar/(mc)$ is the mass length.
 

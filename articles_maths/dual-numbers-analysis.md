@@ -227,18 +227,18 @@ $$
 
 ### Rules of Differentiation
 
-**Linearity.** $\\frac{d}{dQ}(af + bg) = a \frac{df}{dQ} + b \frac{dg}{dQ}$.
+**Linearity.** $\frac{d}{dQ}(af + bg) = a \frac{df}{dQ} + b \frac{dg}{dQ}$.
 
-**Product rule.** $\\frac{d}{dQ}(fg) = \frac{df}{dQ} g + f \frac{dg}{dQ}$.
+**Product rule.** $\frac{d}{dQ}(fg) = \frac{df}{dQ} g + f \frac{dg}{dQ}$.
 
-**Quotient rule.** $\\frac{d}{dQ}(f/g) = (\frac{df}{dQ} g - f \frac{dg}{dQ})/g^2$ where $g$ is invertible.
+**Quotient rule.** $\frac{d}{dQ}(f/g) = (\frac{df}{dQ} g - f \frac{dg}{dQ})/g^2$ where $g$ is invertible.
 
-**Chain rule.** $\\frac{d}{dQ}(f \circ g)(Q) = \frac{df}{dQ}(g(Q)) \frac{dg}{dQ}$.
+**Chain rule.** $\frac{d}{dQ}(f \circ g)(Q) = \frac{df}{dQ}(g(Q)) \frac{dg}{dQ}$.
 
 **Inverse function rule.** If $f$ is dual differentiable at $Q_0$ with $\frac{df}{dQ}(Q_0)$ invertible and $f^{-1}$ is defined near $f(Q_0)$, then
 
 $$
-\\frac{d}{dQ}(f^{-1})(f(Q_0)) = \frac{1}{\frac{df}{dQ}(Q_0)}.
+\frac{d}{dQ}(f^{-1})(f(Q_0)) = \frac{1}{\frac{df}{dQ}(Q_0)}.
 $$
 
 ## The Infinitesimal Direction

@@ -199,8 +199,8 @@ Three cases show the range the corpus uses. A real scalar $\tilde E_{\Psi}=s e_t
 The corpus carries two first-order writings, and the condensate is a bilinear of the second. The **gradient equation** is the one-sided chiral pair
 
 $$
-\tilde\nabla\tilde{Ξ}_{\mathrm{sp},R}=\frac{k_m}{\tilde{Ξ}_{\mathrm{sp},L}},\qquad
-\tilde\nabla^{\natural}\tilde{Ξ}_{\mathrm{sp},L}=\frac{k_m}{\tilde{Ξ}_{\mathrm{sp},R}},
+\tilde\nabla\tilde{Ξ}_{\mathrm{sp},R}=k_m\tilde{Ξ}_{\mathrm{sp},L},\qquad
+\tilde\nabla^{\natural}\tilde{Ξ}_{\mathrm{sp},L}=k_m\tilde{Ξ}_{\mathrm{sp},R},
 $$
 
 with $\tilde\nabla$ the biquaternionic gradient. Every derivative acts by left multiplication, so no right multiplication is among its terms and no chirality operator can appear. On a plane wave $\tilde\nabla$ acts as left multiplication by $\frac{k_m\,i\,\tilde{P}_{\Phi}\,p}{m\,c}$, so the mass shell above is the level set of $\langle\tilde P_{\Phi}\rangle_{\natural}$. Here $\frac{m\,c}{k_m\,p}$ is the momentum length. Here $\hbar/(mc)$ is the mass length.

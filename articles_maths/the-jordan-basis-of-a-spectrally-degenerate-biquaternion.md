@@ -26,7 +26,7 @@ listed chain by chain, is then a basis of the algebra, a **Jordan basis**, in wh
 
 **Place among the Peirce decompositions.** This article is the degenerate particular case of *Peirce Decompositions of the Biquaternion Algebra*. That article attaches a Peirce basis to any complete orthogonal pair of idempotents, and shows that the four basis vectors split into the two couples $\mathcal{C}_+=(\tilde\Pi_+,\vec\Upsilon_+)$ and $\mathcal{C}_-=(\vec\Upsilon_-,\tilde\Pi_-)$, on which left multiplication acts by the same Peirce matrix. Here the pair is an adapted frame of §*The Frame on the Sector*: complete, orthogonal and primitive, so the four corners and the basis are the general Peirce data. What is special is the matrix of the element: $\mathsf M_{\tilde\Pi}(\tilde Q)=J_2(Q_t)$, so each couple is a Jordan chain rather than a pair of eigenvectors. The reciprocal $\mathbb{C}^\times$ of the general theory is fixed here by $\vec\Upsilon_-=\vec Q$, not by a normalisation convention.
 
-The sector is the union of two sectors of the four-cell arrangement,
+The sector is the union of two sectors of the four-sector arrangement,
 
 $$
 \mathcal S=\Sigma_{10}\sqcup\Sigma_{00},

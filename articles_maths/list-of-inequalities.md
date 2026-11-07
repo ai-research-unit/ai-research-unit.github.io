@@ -23,7 +23,7 @@ This article lists the inequalities the corpus states and uses. An inequality is
 | Hölder's inequality | $\int \lvert fg\rvert \leq \lVert f\rVert_p\lVert g\rVert_q$ for $1/n + 1/m=1$; the fundamental inequality of the $L^{n}$ spaces | *Measure Theory and Integration* |
 | Minkowski's inequality | $\lVert f+g\rVert_p \leq \lVert f\rVert_p + \lVert g\rVert_p$; the triangle inequality that makes $L^{n}$ a normed space | *Measure Theory and Integration* |
 | Young's convolution inequality | $\lVert f*g\rVert_r \leq \lVert f\rVert_p\lVert g\rVert_q$ for $1/n + 1/m = 1/r + 1$ | *Real Harmonic Analysis* |
-| Hausdorff–Young | $\lVert\\mathcal F f\rVert_q \leq \lVert f\rVert_p$ for $1 \leq p \leq 2$, $1/n + 1/m = 1$ | *Fourier Analysis on Euclidean Spaces* |
+| Hausdorff–Young | $\lVert\mathcal F f\rVert_q \leq \lVert f\rVert_p$ for $1 \leq p \leq 2$, $1/n + 1/m = 1$ | *Fourier Analysis on Euclidean Spaces* |
 | the Riesz–Thorin interpolation inequality | $\lVert T\rVert_{L^{n}\to L^{m}} \leq \lVert T\rVert_{L^{n_0}\to L^{m_0}}^{1-\theta}\lVert T\rVert_{L^{n_1}\to L^{m_1}}^{\theta}$ | *Interpolation Theory*; *Fourier Analysis on Euclidean Spaces* |
 | Chebyshev's inequality | $\mu(\lvert f\rvert \geq \lambda) \leq \lambda^{-p}\lVert f\rVert_p^p$; the bridge from $L^{n}$ convergence to convergence in measure | *Measure Theory and Integration* |
 | the Hardy–Littlewood maximal inequality | $\lVert Mf\rVert_p \leq C_p\lVert f\rVert_p$ for $1<p\leq\infty$, with the weak-type bound at $p=1$ | *Real Harmonic Analysis* |

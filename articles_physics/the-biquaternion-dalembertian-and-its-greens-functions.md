@@ -244,7 +244,7 @@ $$
 and the defining equation becomes $(\Box - k_m^{2})G = -\delta$. In the $i r'_t$ variables the shifted operator is Helmholtz's, $-\Delta_4 + k_m^{2}$, and its invariant fundamental solution is the four-dimensional Yukawa kernel
 $$
 \boxed{\;
-G^{(1/k_m)}_{\mathrm{inv}}(\tilde R_\Phi) = \frac{k_m}{4\pi^2\rho}\,\\mathrm{Ki}_{1}(\rho\,k_m) ,
+G^{(1/k_m)}_{\mathrm{inv}}(\tilde R_\Phi) = \frac{k_m}{4\pi^2\rho}\,\mathrm{Ki}_{1}(\rho\,k_m) ,
 \qquad
 \left(-\Delta_4 + k_m^{2}\right) G^{(1/k_m)}_{\mathrm{inv}} = \delta^{(4)}(\tilde R_\Phi)\;},
 $$
@@ -417,7 +417,7 @@ G_{\mathrm{adv}} = \frac{1}{4\pi R}\delta\!\left(r'_t + R\right) ,
 $$
 obtained from the light-cone delta with Jacobian $|dg/dr'_t| = 2R$ and selected by the time boundary condition; the Jacobian and the off-cone annihilation of the kernel were verified numerically, and their difference $\Delta_{\mathrm{PJ}} = G_{\mathrm{ret}} - G_{\mathrm{adv}}$ is the commutator function. The causal kernel is $G_F = (4\pi^2)^{-1}(\rho^2 - i\epsilon)^{-1}$, whose Wick rotation is $G_{\mathrm{inv}}$.
 
-The massive operator $\Box - k_m^{2}$ has the invariant kernel $\frac{k_m}{4\pi^2\rho}\\mathrm{Ki}_{1}(\rho\,k_m)$, with the massless kernel as its short-distance limit and exponential screening at large distance, and a causal kernel with support inside the cone. The first-order operator has a biquaternion-valued kernel,
+The massive operator $\Box - k_m^{2}$ has the invariant kernel $\frac{k_m}{4\pi^2\rho}\mathrm{Ki}_{1}(\rho\,k_m)$, with the massless kernel as its short-distance limit and exponential screening at large distance, and a causal kernel with support inside the cone. The first-order operator has a biquaternion-valued kernel,
 $$
 \tilde{G}_{\Phi,\tilde{\nabla}} = \tilde{\nabla}^{\natural}G_\Box \in \mathbb{B}_{\Phi} ,
 \qquad
@@ -447,7 +447,7 @@ so the scalar part of the coefficient acts as a mass and the vector part as a di
 | $G_{\mathrm{adv}} = \frac{1}{4\pi R}\delta(r'_t + R)$ | Advanced kernel; $\Box G_{\mathrm{adv}} = -\delta$ |
 | $\Delta_{\mathrm{PJ}} = G_{\mathrm{ret}} - G_{\mathrm{adv}}$ | Pauli–Jordan commutator function; $\Box\Delta_{\mathrm{PJ}} = 0$ |
 | $G_F = \frac{1}{4\pi^2}\frac{1}{\rho^2 - i\epsilon}$ | Causal (Feynman) kernel; Wick-rotates to $G_{\mathrm{inv}}$ |
-| $G^{(1/k_m)}_{\mathrm{inv}} = \frac{k_m}{4\pi^2\rho}\\mathrm{Ki}_{1}(\rho\,k_m)$ | Massive invariant kernel; the label $1/k_m$ names the massive case, whose coefficient is $k_m=\hbar/(mc)$ |
+| $G^{(1/k_m)}_{\mathrm{inv}} = \frac{k_m}{4\pi^2\rho}\mathrm{Ki}_{1}(\rho\,k_m)$ | Massive invariant kernel; the label $1/k_m$ names the massive case, whose coefficient is $k_m=\hbar/(mc)$ |
 | $\tilde{G}_{\Phi,\tilde{\nabla}} = \tilde{\nabla}^{\natural}G_\Box \in \mathbb{B}_{\Phi}$ | First-order kernel; $\tilde{\nabla}\tilde{G}_{\Phi,\tilde{\nabla}} = -\delta$ |
 | $\tilde{\nabla}_\kappa = \tilde{\nabla} + \kappa$, $\kappa \in \mathbb{C}$ | Shifted gradient (central shift) |
 | $\tilde{\nabla}_\kappa\tilde{\nabla}^{\natural}_\kappa = \Box + 2\kappa\partial/\partial R_t + \kappa^2$ | Square of the shifted gradient; symbol $(\omega/c - \kappa)^2 - \|\vec k_\Phi\|^2$ |

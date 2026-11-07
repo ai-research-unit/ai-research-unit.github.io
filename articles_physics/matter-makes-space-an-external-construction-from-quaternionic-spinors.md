@@ -20,7 +20,7 @@ $$
 \qquad
 \Box=\mathrm{Sc}\bigl(\tilde\nabla\tilde\nabla^{\natural}\bigr)=\frac{\partial^2}{\partial R_t^2}+\Delta_Q ,
 $$
-which on the material sector reads $\Box=\Delta-\partial^2/\partial {r'_{t}}^2$. The first-order dynamics is the one-sided pair $\tilde\nabla\tilde{Ξ}_{\mathrm{sp},R}=\frac{k_m}{\tilde{Ξ}_{\mathrm{sp},L}}$, $\tilde\nabla^{\natural}\tilde{Ξ}_{\mathrm{sp},L}=\frac{k_m}{\tilde{Ξ}_{\mathrm{sp},R}}$, and $\tilde\nabla^2$ is **not** $\Box$: the two differ because $e_t$ commutes with the three spatial units and the mixed derivatives then add, so no single field carries the mass at first order. Here $\hbar/(mc)$ is the mass length.
+which on the material sector reads $\Box=\Delta-\partial^2/\partial {r'_{t}}^2$. The first-order dynamics is the one-sided pair $\tilde\nabla\tilde{Ξ}_{\mathrm{sp},R}=k_m\tilde{Ξ}_{\mathrm{sp},L}$, $\tilde\nabla^{\natural}\tilde{Ξ}_{\mathrm{sp},L}=k_m\tilde{Ξ}_{\mathrm{sp},R}$, and $\tilde\nabla^2$ is **not** $\Box$: the two differ because $e_t$ commutes with the three spatial units and the mixed derivatives then add, so no single field carries the mass at first order. Here $\hbar/(mc)$ is the mass length.
 
 The source's four generators act on the field, and they are written here as the actions they are:
 $$
@@ -173,7 +173,7 @@ $$
 $$
 with the composite expressions of Section 4 on the right, and with the coefficient $c_A$ renamed from the source's $C_A$ so that it does not collide with the frame actions $C_\mu$. One remark on the printed form belongs before the variation. The index on the action is raised by the metric, $iC^a=i g^{ab}C_b$, so the kinetic term carries a minus sign on the three spatial derivatives and none on the time derivative.
 
-Variation with respect to the multipliers returns $e=e[\tilde{Ξ}_{\mathrm{sp}}]$ and $M_{\\mathrm{map}}=M_{\\mathrm{map}}[\tilde{Ξ}_{\mathrm{sp}}]$, which the source describes as enforcing "our composite ansätze once and for all". But those equations are the *definitions* of $e[\tilde{Ξ}_{\mathrm{sp}}]$ and $K[\tilde{Ξ}_{\mathrm{sp}}]$; a "constraint" that repeats a definition removes no degree of freedom, and substituting it back into the action replaces the tetrad by a first derivative of the field, making the gravitational term higher order in the field.
+Variation with respect to the multipliers returns $e=e[\tilde{Ξ}_{\mathrm{sp}}]$ and $M_{\mathrm{map}}=M_{\mathrm{map}}[\tilde{Ξ}_{\mathrm{sp}}]$, which the source describes as enforcing "our composite ansätze once and for all". But those equations are the *definitions* of $e[\tilde{Ξ}_{\mathrm{sp}}]$ and $K[\tilde{Ξ}_{\mathrm{sp}}]$; a "constraint" that repeats a definition removes no degree of freedom, and substituting it back into the action replaces the tetrad by a first derivative of the field, making the gravitational term higher order in the field.
 
 **The Dirac equation is not derived from the action either.** Section 5.5 varies with respect to the adjoint, $\tilde{Ξ}_{\mathrm{sp}}^{\dagger}$, writes the constraint's contribution as a sum over the sixteen graded products, $\Gamma_A$ built from the $G_\mu$ and read as arrays,
 $$
@@ -198,20 +198,20 @@ $$
 $$
 and on the solutions of the equation it is $m^2$, which is the Klein–Gordon shell the signature of $g$ requires. The square is scalar, and it is scalar for the source's operator and not for the gradient: on a generic wavevector the source's square departs from a multiple of the identity by $9\times10^{-16}$, while $\tilde\nabla^2$ departs from one by $0.9$. That $\tilde\nabla^2$ is not $\Box$ is why the corpus carries no one-field first-order massive equation and why its mass sits in the off-diagonal pair of the next display. The source's equation is
 $$
-iC^a\frac{\partial\tilde{Ξ}_{\mathrm{sp}}}{\partial x_a}=\frac{k_m}{\tilde{Ξ}_{\mathrm{sp}}}.
+iC^a\frac{\partial\tilde{Ξ}_{\mathrm{sp}}}{\partial x_a}=k_m\tilde{Ξ}_{\mathrm{sp}}.
 $$
 
 The corpus's equation is the **one-sided** pair
 $$
-\tilde\nabla\tilde{Ξ}_{\mathrm{sp},R}=\frac{k_m}{\tilde{Ξ}_{\mathrm{sp},L}},
+\tilde\nabla\tilde{Ξ}_{\mathrm{sp},R}=k_m\tilde{Ξ}_{\mathrm{sp},L},
 \qquad
-\tilde\nabla^{\natural}\tilde{Ξ}_{\mathrm{sp},L}=\frac{k_m}{\tilde{Ξ}_{\mathrm{sp},R}},
+\tilde\nabla^{\natural}\tilde{Ξ}_{\mathrm{sp},L}=k_m\tilde{Ξ}_{\mathrm{sp},R},
 \qquad
 \tilde\nabla=\sum_\mu  e_\mu\,\partial/\partial R_\mu ,
 $$
 in which the gradient is an element acting by left multiplication on the algebra, and the mass is the off-diagonal pairing, $L$ with $R$. The gradient is primary there and the source's operator is a frame-dependent contraction, as *The Dirac Equation in Biquaternionic Form* states; it is not obtainable by rewriting the gradient.
 
-The difference is one line, and it is a difference in side. The letter of an element is the value of the chirality action on it, written $L$ for the minus value and $R$ for the plus value, and two facts carry every display below: a product takes the letter of its right factor, and left multiplication keeps the letter. Right multiplication by $e_t$ and by $\vec e_z$ therefore keeps the letter, right multiplication by $\vec e_x$ and by $\vec e_y$ exchanges the two, and a left multiplier never changes it. Every term of the source's kinetic operator carries a right multiplier — $C_t$ by $\vec e_x$, $C_k$ by $\vec e_y$ — so the whole kinetic term exchanges $L$ and $R$, while the mass term $\frac{k_m}{\tilde{Ξ}_{\mathrm{sp}}}$ is left multiplication by a constant and keeps the letter. In the corpus's pair the gradient $\tilde\nabla$ is left multiplication and keeps the letter, while the mass is the off-diagonal pairing, which is the exchange: the gradient preserves and the mass is the flip. Neither display is a rewriting of the other: they differ in the operator, in the field it acts on and in the letter, and the two forms are kept side by side in the corpus's own Dirac article for exactly this reason.
+The difference is one line, and it is a difference in side. The letter of an element is the value of the chirality action on it, written $L$ for the minus value and $R$ for the plus value, and two facts carry every display below: a product takes the letter of its right factor, and left multiplication keeps the letter. Right multiplication by $e_t$ and by $\vec e_z$ therefore keeps the letter, right multiplication by $\vec e_x$ and by $\vec e_y$ exchanges the two, and a left multiplier never changes it. Every term of the source's kinetic operator carries a right multiplier — $C_t$ by $\vec e_x$, $C_k$ by $\vec e_y$ — so the whole kinetic term exchanges $L$ and $R$, while the mass term $k_m\tilde{Ξ}_{\mathrm{sp}}$ is left multiplication by a constant and keeps the letter. In the corpus's pair the gradient $\tilde\nabla$ is left multiplication and keeps the letter, while the mass is the off-diagonal pairing, which is the exchange: the gradient preserves and the mass is the flip. Neither display is a rewriting of the other: they differ in the operator, in the field it acts on and in the letter, and the two forms are kept side by side in the corpus's own Dirac article for exactly this reason.
 
 **The Einstein equation does not follow.** Variation with respect to the tetrad gives, in the source's own notation,
 $$

@@ -22,7 +22,7 @@ The difference is not a matter of notation. The element $-e_t$ acts trivially by
 
 **The conventions are cited, not restated.** The algebra, its units and its conjugations are *Algebra and Element Conventions*; the twelve products and the four forms are *Product and Form Conventions*; the values of the subscript, the frame and its metric are *Matrix Representations Conventions* and *Frame and Metric Conventions*; the group of unit-norm elements, written $SL(2,\mathbb{C})$, is *Norm and Pairing Conventions*; the derivative is *Operator and Calculus Conventions*. No formula of theirs is printed below. What the article adds is the module: its two values, the action on it, the forms it carries, and the map to the Hermitian sector.
 
-Two words are used in one sense each. **The module** is the module of the algebra, and the field is an element on which the algebra acts by left multiplication. **The value** is the value of the subscript, $L$ or $R$, fixed in *Matrix Representations Conventions*, §*The Subscript on an Element*.
+Two words are used in one sense each. **The module** is the module of the algebra, and the field is an element on which the algebra acts by left multiplication. **The value** is what the test returns, $L$ or $R$, fixed in *Matrix Representations Conventions*, §*The Subscript on an Element*.
 
 ## The Algebra and Its Module
 

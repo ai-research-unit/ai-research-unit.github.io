@@ -253,7 +253,7 @@ $$
 
 The theory above is the *structure* theory of abelian topological groups: it describes the objects, their duals and the correspondence between them, and it is complete without any integration. The next steps in the classical development use the Haar measure and the integration of Part III, and they are deliberately not taken here.
 
-- The **Fourier transform** $\\mathcal F f(\chi) = \int_G f(x)\overline{\chi(x)}\,dx$ requires the integral and the $L^{n}$ spaces; it is treated in Part III, together with the inversion theorem and the Plancherel theorem for a locally compact abelian group.
+- The **Fourier transform** $\mathcal F f(\chi) = \int_G f(x)\overline{\chi(x)}\,dx$ requires the integral and the $L^{n}$ spaces; it is treated in Part III, together with the inversion theorem and the Plancherel theorem for a locally compact abelian group.
 - The **convolution algebra** $L^1(G)$ and its relation to the dual is likewise Part III; the finite case, in which convolution is a finite sum and the transform is the discrete Fourier transform, is the content of *Representations of Groups* and is used here only as the motivating example.
 - **Positive definite functions**, the Gelfand–Raĭkov theorem and the construction of Haar measure itself are stated where they are needed from the standard literature; the measure and its invariance are the subject, and the analytic consequences are Part III.
 

@@ -145,7 +145,7 @@ with both factors nonzero; so $k[G]$ is a domain only when $G$ is trivial in the
 
 **Proof.** An integral domain is a commutative ring with $1 \neq 0$ and no zero divisors, which is exactly a commutative domain in the sense of this article.
 
-**Remark.** The corpus uses the two words deliberately: *domain* is the ring of this article, in which commutativity is not assumed, and *integral domain* is the cell of the intersection with the commutative chain, the base of *GCD Domains* and of the four rungs above it. Every theorem of *Integral Domains*, *GCD Domains*, *Bézout Domains*, *Unique Factorisation Domains*, *Principal Ideal Domains* and *Euclidean Domains*, above, is a theorem about commutative domains, and none of them survives the deletion of commutativity without a new hypothesis; the chain of this half of the category supplies those hypotheses, one rung at a time.
+**Remark.** The corpus uses the two words deliberately: *domain* is the ring of this article, in which commutativity is not assumed, and *integral domain* is the intersection with the commutative chain, the base of *GCD Domains* and of the four rungs above it. Every theorem of *Integral Domains*, *GCD Domains*, *Bézout Domains*, *Unique Factorisation Domains*, *Principal Ideal Domains* and *Euclidean Domains*, above, is a theorem about commutative domains, and none of them survives the deletion of commutativity without a new hypothesis; the chain of this half of the category supplies those hypotheses, one rung at a time.
 
 **Corollary.** The centre $Z(A)$ of a domain is an integral domain.
 

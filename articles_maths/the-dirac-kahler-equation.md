@@ -80,7 +80,7 @@ $$
 Z_{ab} = \sum_H (-1)^{h(h-1)/2}\,(c_H)^T_{ab}\, dx_H ,
 $$
 
-in which $c_H$ is the product of the generator basis operators indexed by $H$ and $h$ is the degree of $H$. The generator basis operators are $c_0=iL_{e_t}R_{\vec e_x}$ and $c_k=iL_{\vec e_k}R_{\vec e_y}$, with $L_{a}R_{b}\psi=a\psi b$, and $c_H$ is a single basis operator up to a phase in $\{1,-1,i,-i\}$. The matrix $Z$ is constructed so that
+in which $c_H$ is the product of the generators indexed by $H$ and $h$ is the degree of $H$. The generators are $c_0=iL_{e_t}R_{\vec e_x}$ and $c_k=iL_{\vec e_k}R_{\vec e_y}$, with $L_{a}R_{b}\psi=a\psi b$, and $c_H$ is a single basis operator up to a phase in $\{1,-1,i,-i\}$. The matrix $Z$ is constructed so that
 
 $$
 dx_\mu \vee Z = c_\mu^T Z ,
@@ -162,7 +162,7 @@ $$
 
 A single product is a pure tensor; the products form the seven-dimensional cone $\operatorname{rank}c(M)\le1$, and a general element is a sum of at most four, with $\ell(M)=\operatorname{rank}c(M)$.
 
-$\gamma_5$ is the reference-frame basis operator of the chirality $\Gamma$; the central grading $\chi=i\tilde{Ζ}_{\mathrm{ad}}$ — the difference of the two central idempotents of the complexified algebra, so $\chi^2=e_t$ — is a different object, represented by $\gamma_5$ on the Dirac module.
+$\gamma_5$ is the reference-frame operator of the chirality $\Gamma$; the central grading $\chi=i\tilde{Ζ}_{\mathrm{ad}}$ — the difference of the two central idempotents of the complexified algebra, so $\chi^2=e_t$ — is a different object, represented by $\gamma_5$ on the Dirac module.
 
 The dictionary is complex-linear; over $\mathbb{R}$ the products span $\mathrm{Cl}_{1,3}(\mathbb{R})\cong M_2(\mathbb{H})$ and the basis operators span $\mathrm{Cl}_{3,1}(\mathbb{R})\cong M_4(\mathbb{R})$.
 
@@ -182,8 +182,8 @@ In four-dimensional flat space the basis change $Z_{ab}=\sum_H(-1)^{h(h-1)/2}(c_
 | $\square$ | Laplace–de Rham (Laplace–Beltrami) operator |
 | $dx_\mu\vee dx_\nu = dx_\mu\wedge dx_\nu+\delta_{\mu\nu}$ | Clifford product on forms |
 | $Z_{ab}$ | Basis change to four Dirac copies |
-| $c_\mu$ | Generator basis operators $c_0=iL_{e_t}R_{\vec e_x}$, $c_k=iL_{\vec e_k}R_{\vec e_y}$, with $L_{a}R_{b}\psi=a\psi b$ |
-| $c_H$ | Product of the generator basis operators indexed by $H$; one basis operator up to a phase |
+| $c_\mu$ | Generators $c_0=iL_{e_t}R_{\vec e_x}$, $c_k=iL_{\vec e_k}R_{\vec e_y}$, with $L_{a}R_{b}\psi=a\psi b$ |
+| $c_H$ | Product of the generators indexed by $H$; one basis operator up to a phase |
 | $\mathrm{SO}(2,4)$ | Internal symmetry mixing the four copies |
 | $A = e\sum_\mu A_\mu dx_\mu$ | Abelian gauge potential, minimally coupled |
 | $\Delta,\nabla,\hat\Delta,\hat\nabla$ | Boundary, coboundary and their duals |

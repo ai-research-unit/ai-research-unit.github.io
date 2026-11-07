@@ -2,7 +2,7 @@
 
 ## Introduction
 
-The complex algebra carries two predicates on an element $z$: the **modulus predicate** $M(z)=|z|^2\neq0$, which decides invertibility, and the **spectral predicate** $B(z)=b^2\neq0$, which decides whether the two eigenvalues are distinct. The pair of truth values cuts the algebra into four sectors, the **sectors** $\Sigma_{ij}$. In $\mathbb{C}$ three of them are non-empty and the fourth is empty:
+The complex algebra carries two predicates on an element $z$: the **modulus predicate** $M(z)=|z|^2\neq0$, which decides invertibility, and the **spectral predicate** $B(z)=b^2\neq0$, which decides whether the two eigenvalues are distinct. The pair of truth values cuts the algebra into four parts, the **sectors** $\Sigma_{ij}$. In $\mathbb{C}$ three of them are non-empty and the fourth is empty:
 
 $$
 \Sigma_{11}=\mathbb{C}\setminus\mathbb{R},\qquad

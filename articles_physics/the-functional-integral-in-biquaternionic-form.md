@@ -33,7 +33,7 @@ each factor being a Gaussian integral on the sector's module.
 - **Established (algebra).** The Gaussian functional integral is evaluated exactly by the algebra's plain form, read as the trace pairing, and the determinant of $K$ on the module:
 $$
 \int \mathcal{D}\tilde{Ξ}\; \exp(-\frac12\langle \tilde{Ξ}, K\tilde{Ξ}\rangle + \langle \tilde J_{\Phi},\tilde{Ξ}\rangle)
-= \big(\det A_{\mathrm{gau}}\big)^{-1/2}\, \exp(\frac12\langle \tilde J_{\Phi}, A_{\\mathrm{gau}}^{-1}\tilde J_{\Phi}\rangle),
+= \big(\det A_{\mathrm{gau}}\big)^{-1/2}\, \exp(\frac12\langle \tilde J_{\Phi}, A_{\mathrm{gau}}^{-1}\tilde J_{\Phi}\rangle),
 $$
 where $\langle\cdot,\cdot\rangle$ is built from $\mathrm{Sc}$ and the determinant is taken on the spinor module. The finite-dimensional instance of this formula is verified below with explicit Hermitian matrices, and the dependence of $Z$ on the source reproduces the classical action of the free field up to the factor $\tfrac12$.
 - **Standard, and transcribed.** The measure $\mathcal{D}\tilde{Ξ}$, the action functional as a datum, the perturbative expansion in powers of the interaction, and the Grassmann integral for fermions. The algebra supplies none of these; the space of field configurations is infinite-dimensional, and $\mathbb{B}$ is finite-dimensional. The gap is stated rather than closed.
@@ -95,7 +95,7 @@ The exact evaluation of the Gaussian functional integral is the backbone of pert
 **Finite-dimensional statement.** Let $\xi\in\mathbb{C}^n$ and let $K$ be an $n\times n$ Hermitian positive-definite matrix. Then
 $$
 \int d^n\xi\; \exp(-\frac12 \xi^\dagger K\xi + J^\dagger\xi + \xi^\dagger J)
-= \frac{(2\pi)^n}{\det A_{\mathrm{gau}}}\, \exp(\,J^\dagger A_{\\mathrm{gau}}^{-1} J).
+= \frac{(2\pi)^n}{\det A_{\mathrm{gau}}}\, \exp(\,J^\dagger A_{\mathrm{gau}}^{-1} J).
 $$
 For a real field, $\xi\in\mathbb{R}^n$, the same integral is $(2\pi)^{n/2}(\det A_{\mathrm{gau}})^{-1/2}\exp(\frac12 J^T A_{\mathrm{gau}}^{-1}J)$; the difference of a factor $2$ in the exponent and a factor $2$ in the power of $2\pi$ is the standard real-versus-complex counting, and it is exactly the counting that a biquaternion field's two-complex-dimensional mode supplies. The **free energy** $W[J]=\log Z[J]$ is then
 $$
