@@ -164,9 +164,9 @@ $$
 $$</p>
 <p>The identities of (b) were verified numerically on accelerated worldlines: $|D - R\kappa| = 0$ by construction, $|D + \mathrm{Sc}((\tilde{V}/\gamma)(iR\,e_t+\vec R)^{\natural})/c| \le 4\times10^{-16}$, $|\langle iR\,e_t+\vec R\rangle_{\natural}| \le 2\times10^{-15}$, and $|\langle\tilde{V}/\gamma\rangle_{\natural} + c^2/\gamma^2| = 0$.</p>
 <h2 id="problem-2-the-field-strength-and-the-velocityacceleration-split">Problem 2: The Field Strength and the Velocity–Acceleration Split</h2>
-<p><strong>Statement.</strong> (a) Show that for a source quantity depending only on the retarded time, $\tilde{\nabla}^{\natural}\tilde{Q} = \tilde K_{\mathrm{ret}}d\tilde{Q}/dr'_{\mathrm{ret},t}$ with
+<p><strong>Statement.</strong> (a) Show that for a source quantity depending only on the retarded time, $\tilde{\nabla}^{\natural}\tilde{Q} = \tilde\Lambda_{\mathrm{ret}}d\tilde{Q}/dr'_{\mathrm{ret},t}$ with
 $$
-\tilde K_{\mathrm{ret}} \equiv \tilde{\nabla}^{\natural}r'_{\mathrm{ret},t} = \frac{1}{c\kappa}\left(-i\,e_t + \vec u_R\right),
+\tilde\Lambda_{\mathrm{ret}} \equiv \tilde{\nabla}^{\natural}r'_{\mathrm{ret},t} = \frac{1}{c\kappa}\left(-i\,e_t + \vec u_R\right),
 \qquad
 N\!\left(-i\,e_t + \vec u_R\right) = 0 .
 $$
@@ -182,16 +182,16 @@ $$
 \tilde{\nabla}^{\natural}\tilde{Q}
 = \left(\partial/\partial R_t\,r'_{\mathrm{ret},t}\,e_t - \sum_\mu \partial/\partial R_\mu\,r'_{\mathrm{ret},t}\,\vec e_\mu\right)d\tilde{Q}/dr'_{\mathrm{ret},t}
 = \left(-\frac{i}{c\kappa}e_t + \frac{\vec u_R}{c\kappa}\right)d\tilde{Q}/dr'_{\mathrm{ret},t}
-= \tilde K_{\mathrm{ret}}d\tilde{Q}/dr'_{\mathrm{ret},t} .
+= \tilde\Lambda_{\mathrm{ret}}d\tilde{Q}/dr'_{\mathrm{ret},t} .
 $$
-The scalar coefficient of $\tilde K_{\mathrm{ret}} = \frac{1}{c\kappa}\left(-ie_t+\vec u_R\right)$ is $-\frac{i}{c\kappa}$, so
+The scalar coefficient of $\tilde\Lambda_{\mathrm{ret}} = \frac{1}{c\kappa}\left(-ie_t+\vec u_R\right)$ is $-\frac{i}{c\kappa}$, so
 $$
 N\!\left(-ie_t+\vec u_R\right) = (-i)^2 + |\vec u_R|^2 = -1+1 = 0 .
 $$
-The gradient of the retarded time is a null biquaternion, hence a zero divisor: the light-cone structure enters the differentiation itself. This was checked against finite differences of $r'_{\mathrm{ret},t}$ ($\|\tilde K_{\mathrm{ret,FD}}-\tilde K_{\mathrm{ret}}\| \lesssim 6\times10^{-9}$, limited by the finite-difference step).</p>
+The gradient of the retarded time is a null biquaternion, hence a zero divisor: the light-cone structure enters the differentiation itself. This was checked against finite differences of $r'_{\mathrm{ret},t}$ ($\|\tilde\Lambda_{\mathrm{ret,FD}}-\tilde\Lambda_{\mathrm{ret}}\| \lesssim 6\times10^{-9}$, limited by the finite-difference step).</p>
 <p><strong>Solution (b).</strong> The denominator $D$ is <em>not</em> a function of $r'_{\mathrm{ret},t}$ alone: at fixed $r'_{\mathrm{ret},t}$ it still depends explicitly on $r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z$ through $R$ and $\vec u_R$. Splitting the gradient into its explicit action at fixed $r'_{\mathrm{ret},t}$ and its action through $r'_{\mathrm{ret},t}$,
 $$
-\tilde{\nabla}^{\natural}D = -\left(\vec u_R-\vec\beta\right) + \tilde K_{\mathrm{ret}}dD/dr'_{\mathrm{ret},t} ,
+\tilde{\nabla}^{\natural}D = -\left(\vec u_R-\vec\beta\right) + \tilde\Lambda_{\mathrm{ret}}dD/dr'_{\mathrm{ret},t} ,
 \qquad
 \,dD/dr'_{\mathrm{ret},t} = -c\,\vec u_R\cdot\vec\beta + c\beta^2 - \vec R\cdot\,d\vec\beta/dr'_{\mathrm{ret},t} .
 $$
@@ -200,7 +200,7 @@ $$
 \tilde{F} = \tilde{\nabla}^{\natural}\frac{g\tilde{V}/\gamma}{D}
 = \frac{g}{D^2}\left[D\,\tilde{\nabla}^{\natural}\!\left(\tilde{V}/\gamma\right) - \left(\tilde{\nabla}^{\natural}D\right)\tilde{V}/\gamma\right].
 $$
-Substituting $\tilde{\nabla}^{\natural}\!\left(\tilde{V}/\gamma\right) = \tilde K_{\mathrm{ret}}\,d\tilde{V}/\gamma/dr'_{\mathrm{ret},t}$ with $d\tilde{V}/\gamma/dr'_{\mathrm{ret},t} = cd\vec\beta/dr'_{\mathrm{ret},t}$, and using $D\tilde K_{\mathrm{ret}} = \frac{D}{c\kappa}(-ie_t+\vec u_R) = \frac{R}{c}(-ie_t+\vec u_R) = -2\frac{R}{c}\tilde{\mathcal L}_{\mathrm{ret}}$, where $\tilde{\mathcal L}_{\mathrm{ret}} \equiv \tilde{\mathcal L}(\vec u_R) = i\tilde\Pi(\vec u_R) = \tfrac{i}{2}e_t-\tfrac12\vec u_R$ is the future null four-vector of the retarded pure state (<em>The Relativistic Qubit in Biquaternionic Form</em>),
+Substituting $\tilde{\nabla}^{\natural}\!\left(\tilde{V}/\gamma\right) = \tilde\Lambda_{\mathrm{ret}}\,d\tilde{V}/\gamma/dr'_{\mathrm{ret},t}$ with $d\tilde{V}/\gamma/dr'_{\mathrm{ret},t} = cd\vec\beta/dr'_{\mathrm{ret},t}$, and using $D\tilde\Lambda_{\mathrm{ret}} = \frac{D}{c\kappa}(-ie_t+\vec u_R) = \frac{R}{c}(-ie_t+\vec u_R) = -2\frac{R}{c}\tilde{\mathcal L}_{\mathrm{ret}}$, where $\tilde{\mathcal L}_{\mathrm{ret}} \equiv \tilde{\mathcal L}(\vec u_R) = i\tilde\Pi(\vec u_R) = \tfrac{i}{2}e_t-\tfrac12\vec u_R$ is the future null four-vector of the retarded pure state (<em>The Relativistic Qubit in Biquaternionic Form</em>),
 $$
 \tilde{F} = \frac{g}{D^2}\left[-2R\,\tilde{\mathcal L}_{\mathrm{ret}}\,d\vec\beta/dr'_{\mathrm{ret},t}
 + \left(\vec u_R-\vec\beta\right)\tilde{V}/\gamma
@@ -474,12 +474,12 @@ with $\tilde{\mathcal L}_{\mathrm{ret}} = \tilde{\mathcal L}(\vec u_R) = i\tilde
 <td>Retarded null separation, in $\mathbb{B}_{\Phi}$</td>
 </tr>
 <tr>
-<td>$\tilde K_{\mathrm{ret}} = \tilde{\nabla}^{\natural}r'_{\mathrm{ret},t} = \frac{1}{c\kappa}(-ie_t+\vec u_R)$</td>
+<td>$\tilde\Lambda_{\mathrm{ret}} = \tilde{\nabla}^{\natural}r'_{\mathrm{ret},t} = \frac{1}{c\kappa}(-ie_t+\vec u_R)$</td>
 <td>Gradient of the retarded time (null, hence a zero divisor and not $*$-unitary)</td>
 </tr>
 <tr>
 <td>$\tilde{\mathcal L}_{\mathrm{ret}} = \tilde{\mathcal L}(\vec u_R) = i\tilde\Pi(\vec u_R) = \tfrac{i}{2}e_t-\tfrac12\vec u_R$</td>
-<td>Future null four-vector of the retarded pure state; the null factor of $\tilde K_{\mathrm{ret}}$ is $-2\tilde{\mathcal L}_{\mathrm{ret}}$</td>
+<td>Future null four-vector of the retarded pure state; the null factor of $\tilde\Lambda_{\mathrm{ret}}$ is $-2\tilde{\mathcal L}_{\mathrm{ret}}$</td>
 </tr>
 <tr>
 <td>$\tilde{F}_v, \tilde{F}_a$</td>
