@@ -75,12 +75,12 @@
 \mathcal{N}=\{\tilde Q\in\mathbb{B}:\langle\tilde Q\rangle_{\natural}=0\},
 $$</p>
 <p>the <strong>null cone</strong>. It contains the origin at its apex and the zero divisors at its punctured points. This article studies the sector as a set: its characterisation, its three strata, its geometry and link, its factorisation into a spinor and a co-spinor, its matrix picture, its multiplicative structure, the degeneration of the polar decomposition on it, and the way the spectral condition sits inside it. Its partner is <em>The N-Regular Sector</em>, the group of units.</p>
-<p>The cone is split by the scalar part into two strata, the <strong>pure</strong> stratum of nilpotents and the <strong>non-pure</strong> stratum of complex multiples of idempotents. On the cone this split coincides exactly with the spectral split: the pure stratum, with the origin adjoined, is the doubly degenerate cell $\Sigma_{00}$, and the non-pure stratum is the norm-degenerate, spectrally regular cell $\Sigma_{01}$. That coincidence is special to the cone and is the main structural link between the norm partition and the spectral partition.</p>
+<p>The cone is split by the scalar part into two strata, the <strong>pure</strong> stratum of nilpotents and the <strong>non-pure</strong> stratum of complex multiples of idempotents. On the cone this split coincides exactly with the spectral split: the pure stratum, with the origin adjoined, is the doubly degenerate sector $\Sigma_{00}$, and the non-pure stratum is the norm-degenerate, spectrally regular sector $\Sigma_{01}$. That coincidence is special to the cone and is the main structural link between the norm partition and the spectral partition.</p>
 <p><strong>Conventions.</strong> The algebra is $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ on the basis $e_t,\vec e_x,\vec e_y,\vec e_z$, of complex dimension four and real dimension eight, with $\vec e_x\vec e_y=\vec e_z$ and $\vec e_k^2=-e_t$. An element is $\tilde Q=Q_te_t+\vec Q$ with $Q_\mu\in\mathbb{C}$ and $\vec Q=Q_x\vec e_x+Q_y\vec e_y+Q_z\vec e_z$. The natural conjugation is $\tilde Q^{\natural}=Q_t-\vec Q$ and the Hermitian conjugation is $\tilde Q^{*}=\overline{Q_t}-\overline{\vec Q}$. The <strong>quaternionic norm</strong> is</p>
 <p>$$
 \langle\tilde Q\rangle_{\natural}=Q_t^2+B^2,\qquad B^2=Q_x^2+Q_y^2+Q_z^2,
 $$</p>
-<p>a complex scalar; it is multiplicative. The <strong>spectral-degenerate cone</strong> is $\mathcal{S}=\{B^2=0\}$. The product is the plain product, with unit $e_t$. A <strong>sector</strong> is one of the two halves selected by the norm; a <strong>cell</strong> is one of the four intersections $\Sigma_{ij}$ selected by the norm and the spectrum together. The <strong>pure stratum</strong> is written $\mathcal{N}_{\mathrm{p}}$ and the <strong>non-pure stratum</strong> $\mathcal{N}_{\mathrm{np}}$.</p>
+<p>a complex scalar; it is multiplicative. The <strong>spectral-degenerate cone</strong> is $\mathcal{S}=\{B^2=0\}$. The product is the plain product, with unit $e_t$. A <strong>sector</strong> is one of the two halves selected by the norm; a <strong>sector</strong> is one of the four intersections $\Sigma_{ij}$ selected by the norm and the spectrum together. The <strong>pure stratum</strong> is written $\mathcal{N}_{\mathrm{p}}$ and the <strong>non-pure stratum</strong> $\mathcal{N}_{\mathrm{np}}$.</p>
 <h2 id="definition-and-characterisation">Definition and Characterisation</h2>
 <p><strong>Definition.</strong> The <strong>$\natural$-degenerate sector</strong> is the null cone</p>
 <p>$$
@@ -299,14 +299,14 @@ $$</p>
 <p><strong>Remark (what degenerates).</strong> On the sector the Hermitian factor is positive definite and the isometry factor is $*$-unitary. On the cone the Hermitian factor drops to rank one and the isometry factor to a partial isometry; the two projections are rank-one and no longer the identity. The Hermitian factor is the continuous limit of the regular one; the isometry factor is not continuous at the cone.</p>
 <p><strong>Remark (the matrix reading).</strong> Under $\mathsf{M}_2$ the factor $\tilde Q_H$ is the positive semidefinite square root of $MM^{\dagger}$ and $\tilde Q_0$ is the isometry factor of the matrix polar decomposition, a partial isometry with rank-one initial and final projections. The matrix decomposition exists for every matrix and is unique; on the cone it is the degenerate case.</p>
 <h2 id="relation-to-the-spectral-partition">Relation to the Spectral Partition</h2>
-<p><strong>Theorem (the cone meets two cells).</strong> The cone is the disjoint union of the two cells</p>
+<p><strong>Theorem (the cone meets two sectors).</strong> The cone is the disjoint union of the two sectors</p>
 <p>$$
 \mathcal{N}=\Sigma_{01}\uplus\Sigma_{00},
 \qquad
 \Sigma_{01}=\{N=0,\ B^2\neq0\},\qquad
 \Sigma_{00}=\{N=0,\ B^2=0\}.
 $$</p>
-<p>The other two cells are disjoint from the cone: $\Sigma_{11}\cap\mathcal{N}=\Sigma_{10}\cap\mathcal{N}=\varnothing$. Moreover</p>
+<p>The other two sectors are disjoint from the cone: $\Sigma_{11}\cap\mathcal{N}=\Sigma_{10}\cap\mathcal{N}=\varnothing$. Moreover</p>
 <p>$$
 \Sigma_{01}=\mathcal{N}_{\mathrm{np}},\qquad
 \Sigma_{00}=\mathcal{N}_{\mathrm{p}}\cup\{0\}.
@@ -388,14 +388,14 @@ $$</p>
 <p>The cone is a complex algebraic hypersurface, of complex dimension three and real dimension six, smooth off its apex, with link $S^2\times S^3$ and projectivisation $S^2\times S^2$. It is contractible, and its apex is its only singular point.</p>
 <p>It is the determinantal variety of rank at most one. Its non-zero elements are the rank-one matrices; the pure stratum is the nilpotent part and the non-pure stratum the idempotent part. The three strata have real dimensions zero, four and six, and the non-pure stratum is open and dense in the punctured cone.</p>
 <p>The cone is a semigroup ideal, not a group. It contains no inverse, and the polar decomposition degenerates on it to a rank-one Hermitian factor and a partial isometry.</p>
-<p>The spectral condition does not refine the cone into four cells: it meets only two of them, and on the cone the algebraic split and the spectral split coincide. The pure stratum, with the origin adjoined, is the doubly degenerate cell $\Sigma_{00}$, and the non-pure stratum is the norm-degenerate, spectrally regular cell $\Sigma_{01}$. The detailed study of those cells is <em>The N-Degenerate, Spectrally Degenerate Sector</em> and <em>The N-Degenerate, Spectrally Regular Sector</em>.</p>
+<p>The spectral condition does not refine the cone into four sectors: it meets only two of them, and on the cone the algebraic split and the spectral split coincide. The pure stratum, with the origin adjoined, is the doubly degenerate sector $\Sigma_{00}$, and the non-pure stratum is the norm-degenerate, spectrally regular sector $\Sigma_{01}$. The detailed study of those sectors is <em>The N-Degenerate, Spectrally Degenerate Sector</em> and <em>The N-Degenerate, Spectrally Regular Sector</em>.</p>
 <p>The cone is the boundary of the group of units. The two articles together carry the norm partition: this one the zero half, <em>The N-Regular Sector</em> the invertible half.</p>
 <h2 id="summary">Summary</h2>
 <p>The $\natural$-degenerate sector is the null cone $\mathcal{N}=\{N=0\}$, the zero set of the quaternionic norm. It is a complex algebraic cone of complex dimension three and real dimension six, closed, of empty interior, contractible, smooth off its apex, with link $S^2\times S^3$ and projectivisation $S^2\times S^2$.</p>
 <p>It is the determinantal variety of rank at most one. The origin is the apex and the only singular point; the punctured cone is the zero-divisor set. The cone is a two-sided ideal of the multiplicative semigroup and contains no invertible element.</p>
 <p>Every point of the punctured cone is a product $\psi\chi$ of a spinor of $S_{+}=\mathbb{B}\tilde\Pi_{+}$ and a co-spinor of $S_{+}^{\vee}=\tilde\Pi_{+}\mathbb{B}$, the assignment $[Q]\mapsto([\psi],[\chi])$ is a bijection $\mathbb{P}(\mathcal{N})\cong\mathbb{P}(S_{+})\times\mathbb{P}(S_{+}^{\vee})$, and the scalar part is the contraction $2Q_t=\varepsilon(\chi,\psi)$ of the pair. The contraction vanishes, equivalently the spinor line lies in the kernel of the co-spinor, exactly on the pure stratum; the projectivised pure stratum is therefore the incidence variety $\mathrm{Fl}(1,2;\mathbb{C}^{2})$, a conic in $\mathbb{P}^{3}$, and the projectivised non-pure stratum is its complement, the idempotent surface. The two rulings of the quadric are the spinor line and the co-spinor line.</p>
 <p>The cone splits into the origin, the pure stratum of nilpotents of index two, and the non-pure stratum of complex multiples of non-trivial idempotents. The three have real dimensions zero, four and six; the non-pure stratum is open and dense in the punctured cone. Under similarity the pure stratum is one orbit and each idempotent multiple family $c\tilde\Pi$ is one orbit, separated by the scalar part $Q_t$.</p>
-<p>On the cone the algebraic split by $Q_t$ and the spectral split by $B^2$ coincide: the pure stratum, with the origin adjoined, is the doubly degenerate cell $\Sigma_{00}$, and the non-pure stratum is the cell $\Sigma_{01}$. The cone meets neither $\Sigma_{11}$ nor $\Sigma_{10}$. The norm is the product of the eigenvalues, and the cone is exactly the set on which at least one eigenvalue vanishes.</p>
+<p>On the cone the algebraic split by $Q_t$ and the spectral split by $B^2$ coincide: the pure stratum, with the origin adjoined, is the doubly degenerate sector $\Sigma_{00}$, and the non-pure stratum is the sector $\Sigma_{01}$. The cone meets neither $\Sigma_{11}$ nor $\Sigma_{10}$. The norm is the product of the eigenvalues, and the cone is exactly the set on which at least one eigenvalue vanishes.</p>
 <p>The polar decomposition survives on the cone in degenerate form: the Hermitian factor has rank one and the isometry factor is a partial isometry. The cone is the boundary of the group of units, and the two articles together carry the norm partition.</p>
 <h2 id="summary-of-notation">Summary of Notation</h2>
 <div class="table-scroll"><table>
@@ -452,11 +452,11 @@ $$</p>
 </tr>
 <tr>
 <td>$\Sigma_{01}=\{N=0,\ B^2\neq0\}$</td>
-<td>the norm-degenerate, spectrally regular cell</td>
+<td>the norm-degenerate, spectrally regular sector</td>
 </tr>
 <tr>
 <td>$\Sigma_{00}=\{N=0,\ B^2=0\}$</td>
-<td>the doubly degenerate cell</td>
+<td>the doubly degenerate sector</td>
 </tr>
 <tr>
 <td>$\tilde\Pi=\tilde Q/(2Q_t)$</td>
@@ -509,9 +509,9 @@ $$</p>
 <li><a href="n-regularity-and-n-degeneracy-in-the-biquaternion-algebra.html">N-Regularity and N-Degeneracy in the Biquaternion Algebra</a>, for the norm, the criterion, the zero divisors and the two strata</li>
 <li><a href="the-n-regular-sector.html">The N-Regular Sector</a>, for the partner article and the group of units</li>
 <li><a href="the-polar-decomposition-of-an-n-degenerate-biquaternion.html">The Polar Decomposition of an N-Degenerate Biquaternion</a>, for the two factors and the Hermitian factor on the cone</li>
-<li><a href="the-n-degenerate-spectrally-regular-sector.html">The N-Degenerate, Spectrally Regular Sector</a>, for the non-pure stratum as a cell</li>
-<li><a href="the-n-degenerate-spectrally-degenerate-sector.html">The N-Degenerate, Spectrally Degenerate Sector</a>, for the pure stratum as a cell</li>
-<li><a href="relations-between-the-n-norm-and-spectral-regularity-and-degeneracy.html">Relations between the N Norm and Spectral Regularity and Degeneracy</a>, for the four cells and the chain of invariants</li>
+<li><a href="the-n-degenerate-spectrally-regular-sector.html">The N-Degenerate, Spectrally Regular Sector</a>, for the non-pure stratum as a sector</li>
+<li><a href="the-n-degenerate-spectrally-degenerate-sector.html">The N-Degenerate, Spectrally Degenerate Sector</a>, for the pure stratum as a sector</li>
+<li><a href="relations-between-the-n-norm-and-spectral-regularity-and-degeneracy.html">Relations between the N Norm and Spectral Regularity and Degeneracy</a>, for the four sectors and the chain of invariants</li>
 <li><a href="the-topology-of-the-zero-divisor-cone.html">The Topology of the Zero-Divisor Cone</a>, for the link, the projectivisation and the singularity</li>
 <li><a href="the-peirce-decomposition-of-the-biquaternion-algebra.html">Peirce Decompositions of the Biquaternion Algebra</a>, for the idempotents and the Peirce corners</li>
 <li><a href="the-peirce-basis-of-the-biquaternion-algebra.html">The Peirce Basis of a Peirce Decomposition of the Biquaternion Algebra</a>, for the mixed units and the Peirce coordinates</li>

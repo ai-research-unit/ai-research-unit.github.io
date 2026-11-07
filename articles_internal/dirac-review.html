@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dirac Review — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="dirac-review"><strong>Dirac Review</strong></h1>
+<h2 id="scope">Scope</h2>
+<p>This file is an <strong>index</strong>, not an article and not an entry of a menu. It lists the articles of the physics corpus whose title names Dirac, gives a direct link to each, and states in one line what each carries.</p>
+<p><strong>What is counted.</strong> A row is owed to an article whose title names Dirac — that is, whose file name contains <code>dirac</code>. There are <strong>twenty-three</strong> of them among the 415 articles of <em>AI Physics</em>, and every one is in the physics menu. The test is mechanical, so the list can be rebuilt by listing <code>articles_physics/*dirac*.md</code>; nothing is included or excluded by judgement.</p>
+<p><strong>What is not counted.</strong> Articles that use the Dirac equation without naming it in the title are gathered in §<em>Neighbours</em> and are <strong>not</strong> part of the twenty-three. The mathematics corpus is out of scope; §<em>Off-Corpus</em> names the two articles there that the physics articles cite for the spinor and for the chirality.</p>
+<p><strong>What a row is not.</strong> The one-line content is the subject of the article's sections, not an assessment of it. A row is not a verdict, and no comparison between articles is intended. The review of substance recorded in §<em>Review State</em> covers one article only.</p>
+<h2 id="a-the-equation-and-its-algebra">A. The Equation and Its Algebra</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Article</th>
+<th>What it carries</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="../articles_physics/the-dirac-equation-in-biquaternionic-form.html">The Dirac Equation in Biquaternionic Form</a></td>
+<td><strong>The reference article.</strong> The gradient; the one-sided chiral pair; the value of the basis operator against the letters of the pair; plane waves; spherical and cylindrical solutions; the relation to the Maxwell equation; the operator with potentials.</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-dirac-equation-in-biquaternionic-form-solutions-and-the-non-relativistic-limit.html">The Dirac Equation in Biquaternionic Form — Solutions and the Non-Relativistic Limit</a></td>
+<td>The companion that computes with the pair: plane waves, orthogonality and normalisation, the bilinears, the Pauli limit, and the Weyl pair in the massless case.</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/klein-gordon-from-the-dirac-square-in-biquaternionic-form.html">Klein–Gordon from the Dirac Square in Biquaternionic Form</a></td>
+<td>The square of the gradient, its two reductions on the chiral pair, the kernel and the solution space, and what the square carries and what it does not.</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-gordon-decomposition-of-the-dirac-current-in-biquaternionic-form.html">The Gordon Decomposition of the Dirac Current in Biquaternionic Form</a></td>
+<td>The current split into convection and spin parts, in position and in momentum space, with the massless limit and the angular-momentum and stress-tensor relatives.</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-chiral-algebra-of-biquaternions-and-the-cyclic-representation-of-the-dirac-equation.html">The Chiral Algebra of Biquaternions and the Cyclic Representation of the Dirac Equation</a></td>
+<td>The chiral algebra, the cyclic representation, what is verified and what is not, and a legacy Pauli–gamma section kept for comparison.</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-s-vector-representation-of-the-dirac-spinor-in-biquaternionic-form.html">The s-Vector Representation of the Dirac Spinor in Biquaternionic Form</a></td>
+<td>The spinor as two real four-vectors: the trinomial basis, the bilinear dictionary, the bosonic form of the Lagrangian, and the self-dual form.</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="b-solutions-operators-and-scattering">B. Solutions, Operators and Scattering</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Article</th>
+<th>What it carries</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="../articles_physics/exercise-plane-wave-solutions-of-the-biquaternion-dirac-equation.html">Exercise: Plane-Wave Solutions of the Biquaternion Dirac Equation</a></td>
+<td>Six problems: rest and general momentum, covariant normalisation, the spin sums, the massless locking of helicity to the member, the change of the reading, the mass shell.</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-dirac-oscillator-in-biquaternionic-form.html">The Dirac Oscillator in Biquaternionic Form</a></td>
+<td>The non-minimal substitution, the frame split, the square of the coupled operator, the spectrum, and the pseudo-oscillator in the non-relativistic limit.</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-parabolic-dirac-operator-and-the-fourier-reformulation-of-maxwells-equations.html">The Parabolic Dirac Operator and the Fourier Reformulation of Maxwell's Equations</a></td>
+<td>The parabolic Dirac operators, the kernel as a div–curl system, the parabolic Teodorescu transform as a right inverse, and explicit vectorial solutions of the Maxwell system.</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/bispinor-fields-and-the-fundamental-solution-of-the-generalized-maxwell-dirac-equation.html">Bispinor Fields and the Fundamental Solution of the Generalized Maxwell–Dirac Equation</a></td>
+<td>The matrix form of the gradient, the two senses of "the square of the Dirac operator", the fundamental solution, and the inhomogeneous problem.</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/scattering-for-the-quaternionic-dirac-operator-the-lippmann-schwinger-equation-the-radiation-condition-and-faddeevs-greens-function.html">Scattering for the Quaternionic Dirac Operator: The Lippmann–Schwinger Equation, the Radiation Condition and Faddeev's Green's Function</a></td>
+<td>Maxwell's equations as a Dirac-type system, the two factorisations of the Helmholtz equation, the radiation condition, the Lippmann–Schwinger equation, uniqueness, and Faddeev's Green's function.</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="c-the-field-quantisation-and-interaction">C. The Field: Quantisation and Interaction</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Article</th>
+<th>What it carries</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="../articles_physics/canonical-quantization-of-the-biquaternion-dirac-field.html">Canonical Quantization of the Biquaternion Dirac Field</a></td>
+<td>The conjugate momentum, equal-time anticommutators, the mode expansion, the Hamiltonian and its normal-ordering constant, spin and statistics, and the relation to the KMS framework.</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-quantized-dirac-field-in-biquaternionic-form.html">The Quantized Dirac Field in Biquaternionic Form</a></td>
+<td>The operator-valued field as the odd generator, the operator-valued observables, the two-point function, and the split between what is standard and what is the algebra's.</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-minimal-coupling-of-the-biquaternion-dirac-field-to-electromagnetism.html">The Minimal Coupling of the Biquaternion Dirac Field to Electromagnetism</a></td>
+<td>The phase symmetry, the coupling prescription, gauge covariance of the coupled equation, the interaction current as a Maxwell source, and the mixed invariant.</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-nonlinear-dirac-equation-and-the-thirring-model-in-biquaternionic-form.html">The Nonlinear Dirac Equation and the Thirring Model in Biquaternionic Form</a></td>
+<td>Why the equation becomes nonlinear, the two standard models, the Hehl–Datta interaction from torsion, and the local channels with their sectors.</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-dirac-path-integral-in-biquaternionic-form.html">The Dirac Path Integral in Biquaternionic Form</a></td>
+<td>The propagator and its square, the free kernel, the spinning worldline and its spin factor, the checkerboard, the measure and the einbein, and the chiral pair on the worldline.</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="d-readings-dictionaries-and-other-objects">D. Readings, Dictionaries and Other Objects</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Article</th>
+<th>What it carries</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="../articles_physics/the-dirac-sea-hole-theory-and-antimatter-in-biquaternionic-form.html">The Dirac Sea, Hole Theory and Antimatter in Biquaternionic Form</a></td>
+<td>The negative-energy problem, the holes and their defects, the modern reinterpretation, vacuum polarisation as the sea's measurable response, and the sea in condensed matter.</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-daviau-map-and-the-space-clifford-formulation-of-the-dirac-equation.html">The Daviau Map and the Space Clifford Formulation of the Dirac Equation</a></td>
+<td>The three space vectors, the Daviau map, the star conjugation, the Daviau equation, its equivalence with the spacetime-algebra form, and the right action as a bi-module reading.</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-dirac-hestenes-equation-and-spacetime-algebra-in-biquaternionic-form.html">The Dirac–Hestenes Equation and Spacetime Algebra in Biquaternionic Form</a></td>
+<td>Spacetime algebra, the Dirac–Hestenes equation, the two equations the corpus carries, the symmetries, and the zitterbewegung interpretation.</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/parras-four-options-of-the-dirac-equation-and-the-discrete-symmetries.html">Parra's Four Options of the Dirac Equation and the Discrete Symmetries</a></td>
+<td>The four options, the two equations, the Klein four of the conjugations, why a formalism of components mixes the options, and the quaternion form of the Parra fields.</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/triality-and-the-ding-construction-for-the-dirac-spinor-in-biquaternionic-form.html">Triality and the Ding Construction for the Dirac Spinor in Biquaternionic Form</a></td>
+<td>The three spaces, the trilinear form, the cubic form and its dictionary, the Ding map, and what the Ding is and is not.</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/dirac-matter-graphene-dirac-cones-and-topological-insulators-in-biquaternionic-form.html">Dirac Matter: Graphene, Dirac Cones and Topological Insulators in Biquaternionic Form</a></td>
+<td>Why lattice electrons look relativistic, the two isospins against the two ideals, the gap as the framework's mass, topological insulators, and Klein tunnelling in graphene.</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/dual-equivalence-of-the-dirac-and-topologically-massive-gauge-fields.html">Dual Equivalence of the Dirac and Topologically Massive Gauge Fields</a></td>
+<td>The parent action, the mass as a topological term, the self-dual field strength, the two Dirac equations, the mass as a non-integrable phase, and the limits of the equivalence.</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="neighbours">Neighbours</h2>
+<p>Ten articles whose title does not name Dirac but whose subject is a Dirac object. They are listed so that the twenty-three above are not mistaken for the whole of the Dirac material, and they are <strong>not</strong> counted in it.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Article</th>
+<th>Why it is a neighbour</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="../articles_physics/the-electron-in-biquaternionic-form.html">The Electron in Biquaternionic Form</a></td>
+<td>The particle the equation describes: the mass, the spin, and the two parts of the field.</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/zitterbewegung-in-biquaternionic-form.html">Zitterbewegung in Biquaternionic Form</a></td>
+<td>The trembling motion that the Dirac position operator carries.</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-foldy-wouthuysen-transformation-in-biquaternionic-form.html">The Foldy–Wouthuysen Transformation in Biquaternionic Form</a></td>
+<td>The decoupling that produces the Pauli limit of the reference article's solutions companion.</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/charge-conjugation-and-the-division-ring-charged-neutral-and-truly-neutral-particles-in-biquaternionic-form.html">Charge Conjugation and the Division Ring: Charged, Neutral and Truly Neutral Particles in Biquaternionic Form</a></td>
+<td>The discrete symmetry of the Dirac field, read through the division ring.</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/helicity-in-biquaternionic-form.html">Helicity in Biquaternionic Form</a></td>
+<td>The helicity reading that the reference article keeps apart from the value, in §<em>The Algebra and the Gradient</em>.</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-klein-paradox-in-biquaternionic-form.html">The Klein Paradox in Biquaternionic Form</a></td>
+<td>The barrier problem of the Dirac equation, with the pair production it forces.</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-hydrogen-atom-in-biquaternionic-form-the-relativistic-case.html">The Hydrogen Atom in Biquaternionic Form: The Relativistic Case</a></td>
+<td>The Coulomb spectrum of the Dirac equation, which is the equation solved rather than described.</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-majorana-equation-in-biquaternionic-form.html">The Majorana Equation in Biquaternionic Form</a></td>
+<td>The reality condition imposed on the Dirac field.</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-neutrino-and-majorana-fermions-in-biquaternionic-form.html">The Neutrino and Majorana Fermions in Biquaternionic Form</a></td>
+<td>The two-component limit and the masses the corpus distinguishes there.</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/chiral-fermions-in-the-biquaternion-framework.html">Chiral Fermions in the Biquaternion Framework</a></td>
+<td>The Weyl fields, which are the massless members of the chiral pair taken on their own.</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="off-corpus">Off-Corpus</h2>
+<p>Two mathematics articles carry the notions that the physics articles cite, and neither is counted above.</p>
+<ul>
+<li><a href="../articles_maths/spinors-and-dirac-spinors-in-the-biquaternion-algebra.html">Spinors and Dirac Spinors in the Biquaternion Algebra</a> — the spinor module and its Lorentz action, in the mathematics corpus.</li>
+<li><a href="../articles_maths/operator-chirality-on-the-biquaternion-algebra.html">Operator Chirality on the Biquaternion Algebra</a> — the slot of an operator, which the reference article contrasts with the value and does not identify with it, in §<em>The Algebra and the Gradient</em> and §<em>The Dirac Equation and the Biquaternion Algebra</em>.</li>
+</ul>
+<h2 id="review-state">Review State</h2>
+<p>One article of the twenty-three has been read line by line for the pair and the mass: <a href="../articles_physics/the-dirac-equation-in-biquaternionic-form.html">The Dirac Equation in Biquaternionic Form</a>. The finding there was a defect of vocabulary and not of equation — the subscripts $L$ and $R$ were described as values carried across by the mass, while the mass is a central coefficient and the value is read by the basis operator — and the repair is recorded in that article's §<em>The Gradient and the Equation</em>, in the paragraph <em>The letters of the pair, and the values of the basis operator</em>.</p>
+<p>The same distinction appears under the name of chirality in several of the articles above. The article that fixes the notion is the mathematics one named in §<em>Off-Corpus</em>, and the wording is settled there and quoted from there. The migration file that tracked the rows article by article has been retired to <code>_reserve/others/chirality-migration.md.7z</code> and is no longer in the working tree, so no row here points at it.</p>
+<p>The remaining twenty-two rows of this file record subject only. No row here is a claim that the article behind it has been checked, and the list is not a ranking.</p>
+<p><strong>Batches one and two, applied.</strong> Fourteen articles of the family now use the reference article's vocabulary: the subscripts name the two components of the pair, the value is what the basis operator returns, and the mass is the central coefficient that relates the components and moves no value across. Eleven sentences that made the mass carry the value across were rewritten, and the phrase <em>the two values of the subscript</em> was retired throughout the family. Where an article uses a value-reversing operator — the action $\mathcal{D}$ of the solutions companion, the multiplier $\beta$ of the Hamiltonian form — the text now says so and says which coefficient the same mass is on the other side. The deeper question raised by that pass is recorded in §<em>Open Point</em> below.</p>
+<p><strong>Open point: the letters and the values cannot both be primitive.</strong> If the subscripts $L$ and $R$ denote the two values returned by the basis operator, then the printed pair $\tilde\nabla\tilde\Xi_{R}=k_m\tilde\Xi_{L}$ has no nonzero massive solution, because a left multiplier and a central coefficient each keep the value, so the two sides of a line carry different values and both must vanish. The dimension of the definite-value massive solution space is $0$; with a value-reversing crossing operator in place of the left gradient it is $2$, and at $m=0$ the kernel splits into one state of each value. So either the letters name components that are not value eigenstates, which is the reference article's reading, or the crossing operator must multiply on the right, which is the solutions companion's. Both readings are self-consistent; a text that mixes them is not, and the notation row of <em>Special Element Conventions</em> that reads $\tilde Q_L,\tilde Q_R$ as the two values of the subscript is the place where the mixing would have to be resolved.</p>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

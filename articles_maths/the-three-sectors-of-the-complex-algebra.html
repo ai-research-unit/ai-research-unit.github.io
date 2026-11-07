@@ -70,15 +70,15 @@
       <div class="article-body">
         <h1 id="the-three-sectors-of-the-complex-algebra"><strong>The Three Sectors of the Complex Algebra</strong></h1>
 <h2 id="introduction">Introduction</h2>
-<p>The complex algebra carries two predicates on an element $z$: the <strong>modulus predicate</strong> $M(z)=|z|^2\neq0$, which decides invertibility, and the <strong>spectral predicate</strong> $B(z)=b^2\neq0$, which decides whether the two eigenvalues are distinct. The pair of truth values cuts the algebra into four cells, the <strong>sectors</strong> $\Sigma_{ij}$. In $\mathbb{C}$ three of them are non-empty and the fourth is empty:</p>
+<p>The complex algebra carries two predicates on an element $z$: the <strong>modulus predicate</strong> $M(z)=|z|^2\neq0$, which decides invertibility, and the <strong>spectral predicate</strong> $B(z)=b^2\neq0$, which decides whether the two eigenvalues are distinct. The pair of truth values cuts the algebra into four sectors, the <strong>sectors</strong> $\Sigma_{ij}$. In $\mathbb{C}$ three of them are non-empty and the fourth is empty:</p>
 <p>$$
 \Sigma_{11}=\mathbb{C}\setminus\mathbb{R},\qquad
 \Sigma_{10}=\mathbb{R}^\times,\qquad
 \Sigma_{01}=\varnothing,\qquad
 \Sigma_{00}=\{0\}.
 $$</p>
-<p>The missing cell would consist of non-zero elements of vanishing modulus, and the complex algebra has none.</p>
-<p>This article defines the sectors, proves the partition and the identifications, describes each cell, computes the closures and the dimensions, and records the absence of a defective stratum. It accompanies <em>Spectral Regularity and Degeneracy in the Complex Algebra</em> and <em>Relations between the Modulus and Spectral Regularity and Degeneracy</em>.</p>
+<p>The missing sector would consist of non-zero elements of vanishing modulus, and the complex algebra has none.</p>
+<p>This article defines the sectors, proves the partition and the identifications, describes each sector, computes the closures and the dimensions, and records the absence of a defective stratum. It accompanies <em>Spectral Regularity and Degeneracy in the Complex Algebra</em> and <em>Relations between the Modulus and Spectral Regularity and Degeneracy</em>.</p>
 <p><strong>Conventions.</strong> The algebra is $\mathbb{C}=\mathbb{R}[i]/(i^2+1)$; the element is $z=t+bi$ with $t,b\in\mathbb{R}$, the conjugation is $\bar z=t-bi$, the modulus squared is $|z|^2=z\bar z=t^2+b^2$, and $b^2$ is the square of the imaginary part. The companion articles write $Q=q+iq'$ and $\langle Q\rangle_*=Q\bar Q$; the translation is $t=q$, $b=q'$, $|z|^2=\langle Q\rangle_*$. The eigenvalue criterion and the characteristic polynomial are those of <em>Spectral Regularity and Degeneracy in the Complex Algebra</em>; the comparison of the predicates is <em>Relations between the Modulus and Spectral Regularity and Degeneracy</em>.</p>
 <h2 id="the-definition-and-the-partition">The Definition and the Partition</h2>
 <p><strong>Definition (the sectors).</strong> For $i,j\in\{0,1\}$, let $\Sigma_{ij}$ be the set of elements that are modulus-regular if $i=1$ and modulus-degenerate if $i=0$, and spectrally regular if $j=1$ and spectrally degenerate if $j=0$. Explicitly,</p>
@@ -93,40 +93,40 @@ $$</p>
 \mathbb{C}=\Sigma_{11}\sqcup\Sigma_{10}\sqcup\Sigma_{01}\sqcup\Sigma_{00}.
 $$</p>
 <p><em>Proof.</em> Each element has exactly one truth value for $M\neq0$ and exactly one for $B\neq0$, hence lies in exactly one of the four combinations.</p>
-<p><strong>Remark (the index).</strong> The first index is the modulus and the second the spectrum, as in the biquaternion articles of the corpus. The cells are read in the order $\Sigma_{11},\Sigma_{10},\Sigma_{01},\Sigma_{00}$: the doubly regular first, the doubly degenerate last.</p>
-<h2 id="the-identification-of-the-cells">The Identification of the Cells</h2>
-<p><strong>Theorem (the three non-empty cells).</strong></p>
+<p><strong>Remark (the index).</strong> The first index is the modulus and the second the spectrum, as in the biquaternion articles of the corpus. The sectors are read in the order $\Sigma_{11},\Sigma_{10},\Sigma_{01},\Sigma_{00}$: the doubly regular first, the doubly degenerate last.</p>
+<h2 id="the-identification-of-the-sectors">The Identification of the Sectors</h2>
+<p><strong>Theorem (the three non-empty sectors).</strong></p>
 <p>$$
 \Sigma_{11}=\{b\neq0\}=\mathbb{C}\setminus\mathbb{R},\qquad
 \Sigma_{10}=\mathbb{R}^\times,\qquad
 \Sigma_{00}=\{0\},\qquad
 \Sigma_{01}=\varnothing.
 $$</p>
-<p><em>Proof.</em> For $\Sigma_{11}$: $B=b^2\neq0$ is $b\neq0$, and it implies $M=t^2+b^2\geq b^2>0$; hence the condition $M\neq0$ is automatic and the cell is the complement of the real axis. For $\Sigma_{10}$: $B=0$ is $b=0$, so $z=t$, and $M\neq0$ is $t^2\neq0$, that is $t\neq0$. For $\Sigma_{00}$: $M=0$ forces $t=b=0$, so $z=0$, and $B(0)=0$. For $\Sigma_{01}$: $M=0$ again forces $z=0$, and then $B=0$, so no element satisfies $M=0$ and $B\neq0$.</p>
-<p><strong>Corollary (three non-empty, one empty).</strong> The cells $\Sigma_{11}$, $\Sigma_{10}$ and $\Sigma_{00}$ are non-empty, with representatives $i$, $1$ and $0$; the cell $\Sigma_{01}$ is empty.</p>
+<p><em>Proof.</em> For $\Sigma_{11}$: $B=b^2\neq0$ is $b\neq0$, and it implies $M=t^2+b^2\geq b^2>0$; hence the condition $M\neq0$ is automatic and the sector is the complement of the real axis. For $\Sigma_{10}$: $B=0$ is $b=0$, so $z=t$, and $M\neq0$ is $t^2\neq0$, that is $t\neq0$. For $\Sigma_{00}$: $M=0$ forces $t=b=0$, so $z=0$, and $B(0)=0$. For $\Sigma_{01}$: $M=0$ again forces $z=0$, and then $B=0$, so no element satisfies $M=0$ and $B\neq0$.</p>
+<p><strong>Corollary (three non-empty, one empty).</strong> The sectors $\Sigma_{11}$, $\Sigma_{10}$ and $\Sigma_{00}$ are non-empty, with representatives $i$, $1$ and $0$; the sector $\Sigma_{01}$ is empty.</p>
 <p><em>Proof.</em> $M(i)=1$ and $B(i)=1$; $M(1)=1$ and $B(1)=0$; $M(0)=B(0)=0$. The emptiness of $\Sigma_{01}$ is the theorem.</p>
-<p><strong>Remark (the names).</strong> $\Sigma_{11}$ is the <strong>doubly regular</strong> cell, $\Sigma_{10}$ is the <strong>modulus-regular, spectrally degenerate</strong> cell, and $\Sigma_{00}$ is the <strong>doubly degenerate</strong> cell. The empty cell would be the modulus-degenerate, spectrally regular cell, the combination forbidden by definiteness.</p>
-<h2 id="the-doubly-regular-cell">The Doubly Regular Cell</h2>
+<p><strong>Remark (the names).</strong> $\Sigma_{11}$ is the <strong>doubly regular</strong> sector, $\Sigma_{10}$ is the <strong>modulus-regular, spectrally degenerate</strong> sector, and $\Sigma_{00}$ is the <strong>doubly degenerate</strong> sector. The empty sector would be the modulus-degenerate, spectrally regular sector, the combination forbidden by definiteness.</p>
+<h2 id="the-doubly-regular-sector">The Doubly Regular Sector</h2>
 <p><strong>Proposition (the description).</strong> $\Sigma_{11}=\mathbb{C}\setminus\mathbb{R}$ is the union of the upper half-plane $b>0$ and the lower half-plane $b<0$. It is open, dense, and disconnected, with exactly two connected components, each homeomorphic to an open disc. Its real dimension is $2$.</p>
 <p><em>Proof.</em> The complement of the real axis is the two open half-planes; each is open and homeomorphic to $\mathbb{R}^2$. The real axis is closed with empty interior, so its complement is open and dense. The two half-planes are separated by the real axis, so they are the two components.</p>
 <p><strong>Proposition (the properties of its elements).</strong> Every element of $\Sigma_{11}$ is a unit, has two distinct eigenvalues, and has a distinguished complex eigenbasis, the pair $(1,-i),(1,i)$.</p>
 <p><em>Proof.</em> $M\neq0$ gives invertibility, and $B\neq0$ gives distinct eigenvalues. The eigenbasis is that of <em>Eigenvalue Decomposition and Eigenbasis of a Complex Number</em>.</p>
-<h2 id="the-modulus-regular-spectrally-degenerate-cell">The Modulus-Regular, Spectrally Degenerate Cell</h2>
+<h2 id="the-modulus-regular-spectrally-degenerate-sector">The Modulus-Regular, Spectrally Degenerate Sector</h2>
 <p><strong>Proposition (the description).</strong> $\Sigma_{10}=\mathbb{R}^\times=(-\infty,0)\cup(0,\infty)$ is the punctured real axis. It is the union of two open rays, it has real dimension $1$, and it is not open in $\mathbb{C}$; it is open in the real axis and locally closed in the plane.</p>
 <p><em>Proof.</em> The set is the real axis with the origin removed. In the subspace topology of $\mathbb{R}$ it is open, and in $\mathbb{C}$ every neighbourhood of a point of $\Sigma_{10}$ meets $\Sigma_{11}$, so it is not open in the plane. It is the intersection of the closed real axis with the open set $\mathbb{C}\setminus\{0\}$, hence locally closed. Its dimension is one because it is an open subset of the line.</p>
 <p><strong>Proposition (the properties of its elements).</strong> Every element of $\Sigma_{10}$ is a unit and is real. Its spectrum is the singleton $\{t\}$, its minimal polynomial is $X-t$, and every basis of the complexified plane is an eigenbasis.</p>
 <p><em>Proof.</em> $M\neq0$ gives invertibility, and $B=0$ gives $b=0$, so $z=t\neq0$. The regular matrix is $tI$, so the spectrum is $\{t\}$, the minimal polynomial is $X-t$, and every vector is an eigenvector.</p>
-<p><strong>Remark (the scalar stratum).</strong> $\Sigma_{10}$ is the real axis minus the origin, the analogue of the scalar stratum of the biquaternion algebra: real scalars, central and semisimple. It differs from that stratum in one point, the origin, which is here the doubly degenerate cell. The spectral decomposition of an element of $\Sigma_{10}$ is the one-term writing $z=t\cdot1$.</p>
-<h2 id="the-doubly-degenerate-cell">The Doubly Degenerate Cell</h2>
+<p><strong>Remark (the scalar stratum).</strong> $\Sigma_{10}$ is the real axis minus the origin, the analogue of the scalar stratum of the biquaternion algebra: real scalars, central and semisimple. It differs from that stratum in one point, the origin, which is here the doubly degenerate sector. The spectral decomposition of an element of $\Sigma_{10}$ is the one-term writing $z=t\cdot1$.</p>
+<h2 id="the-doubly-degenerate-sector">The Doubly Degenerate Sector</h2>
 <p><strong>Proposition (the description).</strong> $\Sigma_{00}=\{0\}$ is a single point. It has real dimension $0$ and is closed. Its element is the only non-unit of the algebra, the only modulus-degenerate element, and the only element at which both predicates fail.</p>
 <p><em>Proof.</em> $M=0$ forces $z=0$; $B(0)=0$; every non-zero element has $M>0$ and is a unit.</p>
 <p><strong>Proposition (the spectral data at the origin).</strong> The regular matrix is the zero matrix, the spectrum is $\{0\}$, the minimal polynomial is $X$, and every basis of the complexified plane is an eigenbasis.</p>
 <p><em>Proof.</em> $L_0=0$, so every vector is an eigenvector with eigenvalue $0$, and $X$ is the minimal annihilating polynomial.</p>
-<p><strong>Remark (the closure).</strong> The origin lies in the closure of both other cells: it is the limit of the real sequence $1/n$ in $\Sigma_{10}$ and of the non-real sequence $i/n$ in $\Sigma_{11}$. It is the only point of the algebra with this property.</p>
-<h2 id="the-empty-cell">The Empty Cell</h2>
+<p><strong>Remark (the closure).</strong> The origin lies in the closure of both other sectors: it is the limit of the real sequence $1/n$ in $\Sigma_{10}$ and of the non-real sequence $i/n$ in $\Sigma_{11}$. It is the only point of the algebra with this property.</p>
+<h2 id="the-empty-sector">The Empty Sector</h2>
 <p><strong>Proposition (the emptiness).</strong> $\Sigma_{01}=\varnothing$.</p>
 <p><em>Proof.</em> $M=0$ forces $z=0$, and $B(0)=0$; hence no element has $M=0$ and $B\neq0$.</p>
-<p><strong>Remark (what the empty cell would be).</strong> The cell would consist of non-zero elements whose modulus vanishes and whose imaginary part does not. In the split-complex algebra such elements exist: the two null lines $t=\pm b$ away from the origin have $M=t^2-b^2=0$ and $B=b^2\neq0$. In the biquaternion algebra they also exist; see <em>The N-Degenerate, Spectrally Regular Sector</em>. The emptiness of $\Sigma_{01}$ is therefore the exact expression of the definiteness of the complex modulus.</p>
+<p><strong>Remark (what the empty sector would be).</strong> The sector would consist of non-zero elements whose modulus vanishes and whose imaginary part does not. In the split-complex algebra such elements exist: the two null lines $t=\pm b$ away from the origin have $M=t^2-b^2=0$ and $B=b^2\neq0$. In the biquaternion algebra they also exist; see <em>The N-Degenerate, Spectrally Regular Sector</em>. The emptiness of $\Sigma_{01}$ is therefore the exact expression of the definiteness of the complex modulus.</p>
 <h2 id="the-absence-of-a-defective-stratum">The Absence of a Defective Stratum</h2>
 <p><strong>Theorem (no defective element).</strong> Every element of $\mathbb{C}$ is semisimple. The minimal polynomial over $\mathbb{R}$ is $X-t$ on the real axis and $X^2-2tX+M$ off it, and it is squarefree in both cases.</p>
 <p><em>Proof.</em> This is the theorem of <em>Spectral Regularity and Degeneracy in the Complex Algebra</em>, §<em>Eigenspaces and Semisimplicity</em>.</p>
@@ -146,9 +146,9 @@ $$</p>
 <p>$$
 \overline{\Sigma_{00}}=\{0\}\subset\overline{\Sigma_{10}}=\mathbb{R}\subset\overline{\Sigma_{11}}=\mathbb{C},
 $$</p>
-<p>and each difference of consecutive closures is the union of the lower cells. The partition is a stratification of $\mathbb{C}$ into a two-dimensional open cell, a one-dimensional locally closed cell, and a zero-dimensional closed cell.</p>
+<p>and each difference of consecutive closures is the union of the lower sectors. The partition is a stratification of $\mathbb{C}$ into a two-dimensional open sector, a one-dimensional locally closed sector, and a zero-dimensional closed sector.</p>
 <p><em>Proof.</em> The inclusions are the theorem. The frontier condition is $\overline{\Sigma_{10}}\setminus\Sigma_{10}=\{0\}=\Sigma_{00}$ and $\overline{\Sigma_{11}}\setminus\Sigma_{11}=\mathbb{R}=\Sigma_{10}\cup\Sigma_{00}$.</p>
-<p><strong>Theorem (the dimensions).</strong> The real dimensions are $2$ for $\Sigma_{11}$, $1$ for $\Sigma_{10}$, $0$ for $\Sigma_{00}$; the empty cell has no dimension.</p>
+<p><strong>Theorem (the dimensions).</strong> The real dimensions are $2$ for $\Sigma_{11}$, $1$ for $\Sigma_{10}$, $0$ for $\Sigma_{00}$; the empty sector has no dimension.</p>
 <p><em>Proof.</em> $\Sigma_{11}$ is open in $\mathbb{C}\cong\mathbb{R}^2$; $\Sigma_{10}$ is open in $\mathbb{R}$; $\Sigma_{00}$ is a point.</p>
 <h2 id="summary-table">Summary Table</h2>
 <div class="table-scroll"><table>
@@ -188,8 +188,8 @@ $$</p>
 </tbody>
 </table></div>
 <h2 id="summary">Summary</h2>
-<p>The two predicates $M\neq0$ and $B\neq0$ cut the complex algebra into four sectors. Three are non-empty: $\Sigma_{11}=\mathbb{C}\setminus\mathbb{R}$, the doubly regular cell; $\Sigma_{10}=\mathbb{R}^\times$, the modulus-regular and spectrally degenerate cell; and $\Sigma_{00}=\{0\}$, the doubly degenerate cell. The fourth, $\Sigma_{01}$, is empty, because $M=0$ forces $z=0$ and $B(0)=0$.</p>
-<p>The doubly regular cell is the complement of the real axis, open and dense, with two connected components, the upper and lower half-planes. Every element is a unit with two distinct eigenvalues and the distinguished eigenbasis $(1,-i),(1,i)$. The cell $\Sigma_{10}$ is the punctured real axis, two open rays; every element is a real unit, its spectrum is a singleton, its minimal polynomial is $X-t$, and every basis is an eigenbasis. The cell $\Sigma_{00}$ is the origin, the only non-unit, the only modulus-degenerate element and the only point at which both predicates fail.</p>
+<p>The two predicates $M\neq0$ and $B\neq0$ cut the complex algebra into four sectors. Three are non-empty: $\Sigma_{11}=\mathbb{C}\setminus\mathbb{R}$, the doubly regular sector; $\Sigma_{10}=\mathbb{R}^\times$, the modulus-regular and spectrally degenerate sector; and $\Sigma_{00}=\{0\}$, the doubly degenerate sector. The fourth, $\Sigma_{01}$, is empty, because $M=0$ forces $z=0$ and $B(0)=0$.</p>
+<p>The doubly regular sector is the complement of the real axis, open and dense, with two connected components, the upper and lower half-planes. Every element is a unit with two distinct eigenvalues and the distinguished eigenbasis $(1,-i),(1,i)$. The sector $\Sigma_{10}$ is the punctured real axis, two open rays; every element is a real unit, its spectrum is a singleton, its minimal polynomial is $X-t$, and every basis is an eigenbasis. The sector $\Sigma_{00}$ is the origin, the only non-unit, the only modulus-degenerate element and the only point at which both predicates fail.</p>
 <p>The closures are $\overline{\Sigma_{11}}=\mathbb{C}$, $\overline{\Sigma_{10}}=\mathbb{R}$ and $\overline{\Sigma_{00}}=\{0\}$, and they are ordered by inclusion; the partition is a stratification of dimensions $2$, $1$ and $0$. There is no defective stratum: every element is semisimple, and the spectral-degenerate set, the real axis, consists of scalar semisimple elements. The absence of nilpotent and unipotent strata is the field property of $\mathbb{C}$, and it is the structural difference between this three-sector case and the four-sector biquaternion case.</p>
 <h2 id="summary-of-notation">Summary of Notation</h2>
 <div class="table-scroll"><table>
@@ -218,7 +218,7 @@ $$</p>
 </tr>
 <tr>
 <td>$\Sigma_{ij}$</td>
-<td>the cell with $M\neq0$ iff $i=1$ and $B\neq0$ iff $j=1$</td>
+<td>the sector with $M\neq0$ iff $i=1$ and $B\neq0$ iff $j=1$</td>
 </tr>
 <tr>
 <td>$\Sigma_{11}$</td>
@@ -241,14 +241,14 @@ $$</p>
 <h2 id="further-reading">Further Reading</h2>
 <ul>
 <li><a href="spectral-regularity-and-degeneracy-in-the-complex-algebra.html">Spectral Regularity and Degeneracy in the Complex Algebra</a>, for the spectral criterion, the discriminant and semisimplicity.</li>
-<li><a href="eigenvalue-decomposition-and-eigenbasis-of-a-complex-number.html">Eigenvalue Decomposition and Eigenbasis of a Complex Number</a>, for the eigenbasis and the spectral idempotents of the first cell.</li>
+<li><a href="eigenvalue-decomposition-and-eigenbasis-of-a-complex-number.html">Eigenvalue Decomposition and Eigenbasis of a Complex Number</a>, for the eigenbasis and the spectral idempotents of the first sector.</li>
 <li><a href="relations-between-the-modulus-and-spectral-regularity-and-degeneracy.html">Relations between the Modulus and Spectral Regularity and Degeneracy</a>, for the nesting of the two predicates and the comparison of the invariants.</li>
 <li><a href="complex-norm-and-invertibility.html">Complex Norm and Invertibility</a>, for the modulus, the units and the three-way classification.</li>
 <li><a href="complex-algebra.html">Complex Algebra</a>, for the algebra and the real and imaginary subspaces.</li>
 <li><a href="the-n-regular-spectrally-regular-sector.html">The N-Regular, Spectrally Regular Sector</a>, for the analogue of $\Sigma_{11}$ in the biquaternion algebra.</li>
 <li><a href="the-n-regular-spectrally-degenerate-sector.html">The N-Regular, Spectrally Degenerate Sector</a>, for the analogue of $\Sigma_{10}$ and its unipotent stratum.</li>
 <li><a href="the-n-degenerate-spectrally-degenerate-sector.html">The N-Degenerate, Spectrally Degenerate Sector</a>, for the analogue of $\Sigma_{00}$ and its nilpotent stratum.</li>
-<li><a href="the-n-degenerate-spectrally-regular-sector.html">The N-Degenerate, Spectrally Regular Sector</a>, for the non-empty analogue of the empty cell $\Sigma_{01}$.</li>
+<li><a href="the-n-degenerate-spectrally-regular-sector.html">The N-Degenerate, Spectrally Regular Sector</a>, for the non-empty analogue of the empty sector $\Sigma_{01}$.</li>
 </ul>
       </div>
     </main>
