@@ -118,7 +118,7 @@ $$
 \mathcal{L}_{\mathrm{gf}} = B\,\langle\tilde\nabla,\tilde A\rangle_{\natural} + \tfrac{\zeta}{2}B^2 ,
 $$
 
-the term of the BRST companion, and its elimination of $B$ returns $-\tfrac{1}{2\zeta}(\langle\tilde\nabla,\tilde A\rangle_{\natural})^2$, whose momentum-space quadratic form $K_{\mu\nu}=p^2\delta_{\mu\nu}+(1-\zeta^{-1})p_\mu p_\nu$ is the one inverted below. The two routes — the canonical subsidiary condition and the path-integral gauge fixing — therefore rejoin at the same Lagrangian.
+the term of the BRST companion, and its elimination of $B$ returns $-\tfrac{1}{2\zeta}(\langle\tilde\nabla,\tilde A\rangle_{\natural})^2$, whose momentum-space quadratic form $\mathcal F_{\mathrm{med},\mu\nu}=p^2\delta_{\mu\nu}+(1-\zeta^{-1})p_\mu p_\nu$ is the one inverted below. The two routes — the canonical subsidiary condition and the path-integral gauge fixing — therefore rejoin at the same Lagrangian.
 
 ### The Non-Abelian Determinant
 
@@ -146,10 +146,10 @@ With the gauge fixed, the action is quadratic in the potential, and the integral
 
 $$
 S_2 = \tfrac12\int\frac{d^4p}{(2\pi)^4}\;\tilde{A}_\mu(-p)\,
-K_{\mu\nu}(p)\,
+\mathcal F_{\mathrm{med},\mu\nu}(p)\,
 \tilde{A}_\nu(p),
 \qquad
-K_{\mu\nu}(p) = p^2\delta_{\mu\nu} + \left(1-\frac{1}{\zeta}\right)p_\mu p_\nu ,
+\mathcal F_{\mathrm{med},\mu\nu}(p) = p^2\delta_{\mu\nu} + \left(1-\frac{1}{\zeta}\right)p_\mu p_\nu ,
 $$
 
 with $\zeta$ the gauge parameter, the Gaussian integration gives
@@ -290,7 +290,7 @@ The gauge-fixed quadratic action is Gaussian, and its inverse is the propagator 
 | $B$ | Nakanishi–Lautrup field representing the delta functional |
 | $\zeta$ | Gauge parameter; multiplies the longitudinal projector |
 | $\delta_{\mu\nu}=(1,1,1,1)$, $p^2=-\sum_\mu p_\mu p_\mu$ | Unit metric on the units $e_t,\vec e_x,\vec e_y,\vec e_z$; invariant momentum scalar |
-| $K_{\mu\nu}=p^2\delta_{\mu\nu}+(1-1/\zeta)p_\mu p_\nu$ | Gauge-fixed quadratic form; $K=p^2(P+L/\zeta)$ |
+| $\mathcal F_{\mathrm{med},\mu\nu}=p^2\delta_{\mu\nu}+(1-1/\zeta)p_\mu p_\nu$ | Gauge-fixed quadratic form; $K=p^2(P+L/\zeta)$ |
 | $D_{\mu\nu}=p^{-2}(\delta_{\mu\nu}+(1-\zeta)p_\mu p_\nu/p^2)$ | Gauge-field propagator; $D=p^{-2}(P+\zeta L)$ |
 | $P_{\mu\nu}=\delta_{\mu\nu}+p_\mu p_\nu/p^2$, $P^2=P$, $\mathrm{tr}P=3$, $P_{\mu\nu}p_\nu=0$ | Transverse projector (verified) |
 | $L_{\mu\nu}=-p_\mu p_\nu/p^2$, $L^2=L$, $\mathrm{tr}L=1$, $P+L=\delta$, $PL=LP=0$ | Longitudinal projector; carries the gauge parameter |

@@ -188,7 +188,7 @@ $$
 \delta\tilde{E}_\mu \;\longmapsto\; \delta\tilde{E}_\mu + \vec G\varepsilon_\mu + \varepsilon_\mu\vec G^{*} .
 $$
 
-The unit-norm condition $\tilde{U}\tilde{U}^{\natural} = e_t$ linearizes to $\vec G + \vec G^{\natural} = 0$, which says that $\vec G$ is a **complex pure vector**, $\vec G \in \mathrm{span}_{\mathbb{R}}\{\vec e_x,\vec e_y,\vec e_z, i\vec e_x, i\vec e_y, i\vec e_z\}$. This is the six-dimensional traceless subspace that the parent article identifies with the Lorentz Lie algebra $\mathrm{SL}(2,\mathbb{C})_{\mathbb{R}}$, spanned by the rotation generators $J_k = \vec e_k$ and the boost generators $K_k = i\vec e_k$. Its elements leave the metric perturbation invariant:
+The unit-norm condition $\tilde{U}\tilde{U}^{\natural} = e_t$ linearizes to $\vec G + \vec G^{\natural} = 0$, which says that $\vec G$ is a **complex pure vector**, $\vec G \in \mathrm{span}_{\mathbb{R}}\{\vec e_x,\vec e_y,\vec e_z, i\vec e_x, i\vec e_y, i\vec e_z\}$. This is the six-dimensional traceless subspace that the parent article identifies with the Lorentz Lie algebra $\mathrm{SL}(2,\mathbb{C})_{\mathbb{R}}$, spanned by the rotation generators $J_k = \vec e_k$ and the boost generators $B_{\mathrm{boost},k} = i\vec e_k$. Its elements leave the metric perturbation invariant:
 
 $$
 \langle \varepsilon_\mu, \vec G\varepsilon_\nu + \varepsilon_\nu\vec G^{*}\rangle_{\natural}

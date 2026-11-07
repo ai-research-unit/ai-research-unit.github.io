@@ -5,7 +5,7 @@
 The Feynman path integral writes the transition amplitude of a quantum system as a sum over histories,
 
 $$
-K(x_f,r'_{t,f};x_i,r'_{t,i})=\int\mathcal{D}r_x(r'_t)\;\exp(iS[r_x]\frac{k_m}{m\,c}),
+G_{\mathrm{prop}}(x_f,r'_{t,f};x_i,r'_{t,i})=\int\mathcal{D}r_x(r'_t)\;\exp(iS[r_x]\frac{k_m}{m\,c}),
 \qquad
 S[r_x]=\int_{r'_{t,i}}^{r'_{t,f}}\mathrm{Lag}(r_x,dr_x/dr'_t)\,dr'_t,
 $$
@@ -41,7 +41,7 @@ The result for the phase follows when the two sets are the configurations at two
 For a non-relativistic particle of mass $m$ in a potential $V$, the path integral is the continuum limit of a product of short-time kernels. Over a time $T=r'_{t,f}-r'_{t,i}$ divided into $N$ steps of length $\varepsilon=T/N$,
 
 $$
-K(x_f,r'_{t,f};x_i,r'_{t,i})
+G_{\mathrm{prop}}(x_f,r'_{t,f};x_i,r'_{t,i})
 =\lim_{N\to\infty}\int\prod_{k=1}^{N-1}dx_k\;\prod_{k=0}^{N-1}K_\varepsilon(x_{k+1},x_k),
 $$
 
@@ -57,7 +57,7 @@ Here $k_m=mc/\hbar$ is the mass wave number, the inverse of the mass length.
 Two structural properties follow directly from this definition and are the ones the biquaternion interpretation has to respect.
 
 **Composition.** The kernel is a semigroup in time:
-$$K(x_f,r'_{t,f};x_i,r'_{t,i})=\int dx\;K(x_f,r'_{t,f};r_x,r'_t)\,K(r_x,r'_t;x_i,r'_{t,i}).$$
+$$G_{\mathrm{prop}}(x_f,r'_{t,f};x_i,r'_{t,i})=\int dx\;G_{\mathrm{prop}}(x_f,r'_{t,f};r_x,r'_t)\,K(r_x,r'_t;x_i,r'_{t,i}).$$
 This is the statement that the sum over paths is a sum over the intermediate point at which a path crosses time $r'_t$; it is the same completeness relation that any representation of the evolution operator must satisfy.
 
 **Interference.** Two classes of paths whose actions differ by $\Delta S$ contribute
@@ -115,7 +115,7 @@ So the phase is a $*$-unitary element and not a Lorentz rotor. The two notions o
 Because each phase factor is central, it commutes with every element of $\mathbb{B}$. Three consequences are immediate.
 
 1. **The amplitude is a complex scalar.** The integral of central elements is central, so the full kernel is
-$$K(x_f,r'_{t,f};x_i,r'_{t,i})=\mathcal{K}\,e_t,\qquad \mathcal{K}\in\mathbb{C},$$
+$$G_{\mathrm{prop}}(x_f,r'_{t,f};x_i,r'_{t,i})=\mathcal{K}\,e_t,\qquad \mathcal{K}\in\mathbb{C},$$
 a complex number times the identity. It is not a general biquaternion.
 
 2. **The phase multiplies every spinor component equally.** In the state module $\mathbb{B}\tilde\Pi\cong\mathbb{C}^2$ of the Schrödinger article, a central phase acts as the same scalar on both components, $\exp(\frac{k_m\,i\,S}{m\,c})\tilde{Ξ}_{\mathrm{sp}}$. A non-central phase would mix or relatively phase the components; a central one does not.
@@ -227,7 +227,7 @@ $$
 where the linear term vanishes because $x_{\mathrm{cl}}$ is stationary. The leading contribution to the integral is the phase $\exp(\frac{k_m\,iS_{\mathrm{cl}}}{m\,c})$ times the Gaussian integral over the fluctuations, giving the **van Vleck determinant** formula
 
 $$
-\boxed{\;K(x_f,r'_{t,f};x_i,r'_{t,i})\;\approx\;\frac{1}{\sqrt{\frac{2\,m\,c\,\pi\,i}{k_m}}}\,
+\boxed{\;G_{\mathrm{prop}}(x_f,r'_{t,f};x_i,r'_{t,i})\;\approx\;\frac{1}{\sqrt{\frac{2\,m\,c\,\pi\,i}{k_m}}}\,
 \sqrt{\Big|\det\frac{\partial^2 S_{\mathrm{cl}}}{\partial x_i\,\partial x_f}\Big|}\;
 \exp(\frac{k_m\,iS_{\mathrm{cl}}}{m\,c})\;},
 $$
@@ -358,7 +358,7 @@ The canonical commutator is not visible in the commuting sum over paths, but its
 | $\mathbb{B}_{\Phi}$ | Anti-Hermitian (material) sector; home of the phase exponent $\frac{k_m\,i\,S}{m\,c}$ |
 | $\mathbb{B}_{\Psi}$ | Hermitian (informational) sector; home of the state $\tilde{Ϛ}=\tilde{Ξ}_{\mathrm{sp}}\tilde{Ξ}_{\mathrm{sp}}^{\dagger}$ |
 | $\mathbb{B}_{H}$ | Quaternion subspace; image of the Wick rotation |
-| $K(x_f,r'_{t,f};x_i,r'_{t,i})$ | Transition amplitude (propagator), central: $K=\mathcal{K}e_t$ |
+| $G_{\mathrm{prop}}(x_f,r'_{t,f};x_i,r'_{t,i})$ | Transition amplitude (propagator), central: $K=\mathcal{K}e_t$ |
 | $S[r_x]=\int \mathrm{Lag}\,dr'_t$ | Action; real scalar |
 | $\exp(\frac{k_m\,i\,S}{m\,c})$ | Path phase; central $*$-unitary element of $\mathbb{B}_{C}$ |
 | $ie_t$ | Generator of the phase; exchanges the sectors, $i\,\mathbb{B}_{\Psi}=\mathbb{B}_{\Phi}$ |

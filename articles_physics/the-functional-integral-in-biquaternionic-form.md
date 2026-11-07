@@ -45,7 +45,7 @@ The article proceeds as follows. The next section distinguishes the functional i
 
 The distinction is worth making precisely, because the two share a notation and not a meaning.
 
-The **path integral** of *The Path Integral in Biquaternionic Form* has for its integration variable a map $r_x:r'_t\mapsto r_x(r'_t)$ from an interval to space, and its measure $\mathcal{D}r_x(r'_t)$ is a limit of finite-dimensional measures on the $N-1$ intermediate positions. The number of integration variables is finite at every stage, and the result is a kernel $K(x_f,r'_{t,f};x_i,r'_{t,i})$ — a function of two points.
+The **path integral** of *The Path Integral in Biquaternionic Form* has for its integration variable a map $r_x:r'_t\mapsto r_x(r'_t)$ from an interval to space, and its measure $\mathcal{D}r_x(r'_t)$ is a limit of finite-dimensional measures on the $N-1$ intermediate positions. The number of integration variables is finite at every stage, and the result is a kernel $G_{\mathrm{prop}}(x_f,r'_{t,f};x_i,r'_{t,i})$ — a function of two points.
 
 The **functional integral** has for its integration variable a field $\tilde{Ξ}:x\mapsto\tilde{Ξ}(x)$, a section of a bundle over spacetime, and its measure $\mathcal{D}\tilde{Ξ}$ is a limit of measures on the field values at finitely many spacetime points. The number of integration variables is finite at every stage too — a lattice regularization makes this explicit — but the limit is over an infinite-dimensional configuration space, and the result is a number $Z$ or a functional $Z[\tilde J]$.
 

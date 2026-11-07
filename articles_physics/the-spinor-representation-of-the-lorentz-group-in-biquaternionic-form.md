@@ -33,13 +33,13 @@ Three properties of the representation are worth stating at once, because they d
 
 **It is faithful.** The kernel of the action is trivial: $\mathsf{M}_2(-e_t)=-I_2$, so $\pm\tilde U_{\mathrm{lor}}$ act differently on every spinor. This is in contrast with the four-vector action $\tilde{Q}\mapsto\tilde U_{\mathrm{lor}}\tilde{Q}\tilde U_{\mathrm{lor}}{}^{*}$ on $\mathbb{B}_{\Phi}$, whose kernel is $\{\pm e_t\}$. The spinor representation is a representation of the double cover $SL(2,\mathbb{C})$ that does **not** descend to $SO^+(1,3)$.
 
-**It is not $*$-unitary.** A finite-dimensional $*$-unitary representation of a real Lie algebra $\mathrm{G}$ maps every generator to a skew-adjoint operator, because each one-parameter subgroup is $*$-unitary. Every finite-dimensional representation of $SL(2,\mathbb{C})$ is complex-linear, so the boost generator $K_k=i\vec e_k$ is represented by $\rho(K_k)=i\rho(\vec e_k)$. If $\rho(\vec e_k)$ is skew-adjoint then
+**It is not $*$-unitary.** A finite-dimensional $*$-unitary representation of a real Lie algebra $\mathrm{G}$ maps every generator to a skew-adjoint operator, because each one-parameter subgroup is $*$-unitary. Every finite-dimensional representation of $SL(2,\mathbb{C})$ is complex-linear, so the boost generator $B_{\mathrm{boost},k}=i\vec e_k$ is represented by $\rho(B_{\mathrm{boost},k})=i\rho(\vec e_k)$. If $\rho(\vec e_k)$ is skew-adjoint then
 
 $$
-\rho(K_k)^{\dagger}=(-i)\rho(\vec e_k)^{\dagger}=(-i)\bigl(-\rho(\vec e_k)\bigr)=i\rho(\vec e_k)=\rho(K_k),
+\rho(B_{\mathrm{boost},k})^{\dagger}=(-i)\rho(\vec e_k)^{\dagger}=(-i)\bigl(-\rho(\vec e_k)\bigr)=i\rho(\vec e_k)=\rho(B_{\mathrm{boost},k}),
 $$
 
-so $\rho(K_k)$ is Hermitian; skew-adjointness then forces $\rho(K_k)=0$. The boost generators and their brackets generate the whole Lie algebra, so $\rho=0$. Hence the only finite-dimensional $*$-unitary representation of $SL(2,\mathbb{C})$ is the trivial one, and the spinor representation is non-$*$-unitary.
+so $\rho(B_{\mathrm{boost},k})$ is Hermitian; skew-adjointness then forces $\rho(B_{\mathrm{boost},k})=0$. The boost generators and their brackets generate the whole Lie algebra, so $\rho=0$. Hence the only finite-dimensional $*$-unitary representation of $SL(2,\mathbb{C})$ is the trivial one, and the spinor representation is non-$*$-unitary.
 
 The obstruction is visible concretely on $S$. The standard Hermitian form $h(\tilde{Ξ}_{\mathrm{sp}},\xi_{\mathrm{alt}})=\tilde{Ξ}_{\mathrm{sp}}^{\dagger}\xi_{\mathrm{alt}}$ is invariant under the rotation subgroup $SU(2)$ but not under a boost $\tilde U_{\mathrm b}=\cosh\tfrac{\theta_{\mathrm{rpd}}}{2}+i\sinh\tfrac{\theta_{\mathrm{rpd}}}{2}\vec u$, because
 

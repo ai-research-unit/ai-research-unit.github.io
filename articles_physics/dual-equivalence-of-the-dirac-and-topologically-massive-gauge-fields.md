@@ -261,11 +261,11 @@ $$
 $$
 The conjugation on the first line is what makes the mass phase of $G^{\mathrm R}$ the conjugate of the mass phase of $G^{\mathrm L}$, and it is the reason the two parts carry opposite phases below.
 
-$K_\mu$ is built from the two chiral parts, as in the source's Eq. (100):
+$U_{\mathrm{vec},\mu}$ is built from the two chiral parts, as in the source's Eq. (100):
 $$
-K_\mu=\frac{\tilde{Ξ}_{\mathrm{sp},R}^{\dagger}iC_0\,iC_\mu\tilde{Ξ}_{\mathrm{sp},R}}{2\tilde{Ξ}_{\mathrm{sp},R}^{\dagger}iC_0\tilde{Ξ}_{\mathrm{sp},L}}+\frac{\tilde{Ξ}_{\mathrm{sp},L}^{\dagger}iC_0\,iC_\mu\tilde{Ξ}_{\mathrm{sp},L}}{2\tilde{Ξ}_{\mathrm{sp},L}^{\dagger}iC_0\tilde{Ξ}_{\mathrm{sp},R}},
+U_{\mathrm{vec},\mu}=\frac{\tilde{Ξ}_{\mathrm{sp},R}^{\dagger}iC_0\,iC_\mu\tilde{Ξ}_{\mathrm{sp},R}}{2\tilde{Ξ}_{\mathrm{sp},R}^{\dagger}iC_0\tilde{Ξ}_{\mathrm{sp},L}}+\frac{\tilde{Ξ}_{\mathrm{sp},L}^{\dagger}iC_0\,iC_\mu\tilde{Ξ}_{\mathrm{sp},L}}{2\tilde{Ξ}_{\mathrm{sp},L}^{\dagger}iC_0\tilde{Ξ}_{\mathrm{sp},R}},
 $$
-two currents weighted by the two chiral cross-norms. The source's normalisation is $K\cdot K=\sum_\mu\epsilon_\mu K_\mu K_\mu=1$ (Eq. 93), and its ground is the algebra's normed condition (Eq. 90), which equates the norm of the field to the norm of its current; a unit $K$ exists because the two are the same number. That normalisation is quoted here and not recomputed: the corpus's weights on the bilinears fix the direction of $K$ through the two terms of Eq. (100), and a numerical check of the normalisation in those weights did not reproduce the value one, so the statement is recorded as the source's.
+two currents weighted by the two chiral cross-norms. The source's normalisation is $K\cdot K=\sum_\mu\epsilon_\mu U_{\mathrm{vec},\mu} U_{\mathrm{vec},\mu}=1$ (Eq. 93), and its ground is the algebra's normed condition (Eq. 90), which equates the norm of the field to the norm of its current; a unit $K$ exists because the two are the same number. That normalisation is quoted here and not recomputed: the corpus's weights on the bilinears fix the direction of $K$ through the two terms of Eq. (100), and a numerical check of the normalisation in those weights did not reproduce the value one, so the statement is recorded as the source's.
 
 The structural role of $K$ is what the article uses: the *same* vector appears in the derivative shift, Eq. (94), and in the reconstruction of the field from the two-form, Eq. (92), so the mass is a direction in the complexified tangent space rather than a scalar, and the two chiral parts see it with conjugate signs.
 
@@ -342,7 +342,7 @@ The parent actions and the eliminations are the source's; the algebraic identiti
 | $\xi^*=G^*\cdot j$ | Trace of the two-form, $\xi^*=\sum_\mu\epsilon_\mu G^*_\mu j_\mu$; the complex scalar $\xi=G\cdot j$ with a star |
 | $F_{\mu\nu}=\partial B_\nu/\partial x_\mu-\partial B_\mu/\partial x_\nu+iaj_\mu B^*_\nu-iaj_\nu B^*_\mu$ | Field strength of the dual potential |
 | $\tilde{Ξ}_{\mathrm{sp}}^{\dagger}iC_0\tilde{Ξ}_{\mathrm{sp}}=\sum_\nu\epsilon_\nu(N_\nu N_\nu-B_\nu B_\nu)$ | Dirac bilinear |
-| $K_\mu$ | Complex vector of Eq. (100) carrying the mass as a non-integrable phase; normalised to $K\cdot K=1$ in the source |
+| $U_{\mathrm{vec},\mu}$ | Complex vector of Eq. (100) carrying the mass as a non-integrable phase; normalised to $K\cdot K=1$ in the source |
 | $\varepsilon_{\mu\nu\lambda\rho}$ | Totally antisymmetric symbol, $\varepsilon_{0123}=1$ |
 | $m$, $a$ | Fermion mass (equated to the topological gauge mass) and the auxiliary real constant $a\ne m$ |
 | $S_{GH}$, $S_{G\xi B}$ | The two parent actions, four- and three-dimensional |

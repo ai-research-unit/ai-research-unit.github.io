@@ -277,9 +277,9 @@ for every $\tilde{Ξ}_{\mathrm{sp}}$. It is the gradient of $-t$ and of nothing 
 
 The rest of that section is the retarded kernel and the bilocal action
 $$
-K(x-y)=\ell_c^{-2}\,\mathrm{H}_{\mathrm{hvs}}(x_0-y_0)\,\Delta_m(x-y),
+G_{\mathrm{prop}}(x-y)=\ell_c^{-2}\,\mathrm{H}_{\mathrm{hvs}}(x_0-y_0)\,\Delta_m(x-y),
 \qquad
-\Delta S_K=\tfrac12\int d^4r\,d^4y\;\frac{\partial\tau}{\partial x_\mu}(x)\,K(x-y)\,\frac{\partial\tau}{\partial x^\mu}(y),
+\Delta S_K=\tfrac12\int d^4r\,d^4y\;\frac{\partial\tau}{\partial x_\mu}(x)\,G_{\mathrm{prop}}(x-y)\,\frac{\partial\tau}{\partial x^\mu}(y),
 \qquad \frac{\partial}{\partial r_x^\mu}=\varepsilon_\mu\,\frac{\partial}{\partial x_\mu}\quad(\text{no sum}) .
 $$
 The kernel is the standard retarded Green's function combination; the source itself notes that its Lorentz invariance holds "modulo frame choice for $\Theta$", which is the standard qualification, and since $\tau$ is not the field claimed, the construction adds nothing testable. The source's own "Caveat" names Kozyrev's claims as "controversial and largely unreplicated". The corpus's route to causal asymmetry, in *Causality and the Light Cone as an Information Barrier in Biquaternionic Form* and *Thermal Time and the Modular Flow in the Biquaternion Framework*, does not use Kozyrev and does not depend on this section.

@@ -181,10 +181,10 @@ $$
 and it anticommutes with each $C_\mu$, so it separates the two values of every field. Its representative on the reference frame, written in §The Legacy Pauli Gamma Formulation, is the usual fifth generator. The source further rewrites the mass form as
 
 $$
-\tilde{Ξ}_{\mathrm{sp}}^{\dagger}C_0\tilde{Ξ}_{\mathrm{sp}} = \sum_\mu\epsilon_\mu\, K_\mu\,\tilde{Ξ}_{\mathrm{sp}}^{\dagger}C_0\, C_\mu\tilde{Ξ}_{\mathrm{sp}}
+\tilde{Ξ}_{\mathrm{sp}}^{\dagger}C_0\tilde{Ξ}_{\mathrm{sp}} = \sum_\mu\epsilon_\mu\, U_{\mathrm{vec},\mu}\,\tilde{Ξ}_{\mathrm{sp}}^{\dagger}C_0\, C_\mu\tilde{Ξ}_{\mathrm{sp}}
 $$
 
-for a unit complex vector $K_\mu$ built from $\tilde{Ξ}_{\mathrm{sp}}$; that interpretation — the mass as a unit vector, hence as a non-integrable phase — is recorded in *The Dirac Equation in Biquaternionic Form*, and this article takes it as the entry into the same construction.
+for a unit complex vector $U_{\mathrm{vec},\mu}$ built from $\tilde{Ξ}_{\mathrm{sp}}$; that interpretation — the mass as a unit vector, hence as a non-integrable phase — is recorded in *The Dirac Equation in Biquaternionic Form*, and this article takes it as the entry into the same construction.
 
 ### The Cubicity of the Interaction
 
@@ -510,4 +510,4 @@ What the construction supplies is a dictionary; what it does not supply is covar
 - J. F. Adams, *Lectures on Exceptional Lie Groups* (University of Chicago Press, Chicago, 1996), for the generalized notion of triality and the dimensions $1, 2, 4, 8$.
 - J. C. Baez, "The Octonions," *Bulletin of the American Mathematical Society* **39** (2002) 145–205 (arXiv:math.RA/0105155), for the triality of $\mathrm{Spin}(8)$ and the octonions, and for the Hurwitz theorem.
 - J. P. Ward, *Quaternions and Cayley Numbers* (Kluwer Academic Publishers, Dordrecht, 1997), for the algebra of complexified quaternions and the left- and right-multiplication transformations $S_1(q), S_2(q)$.
-- The companion corpus articles: [The Spinor Module in Biquaternionic Form and Its Lorentz Action](the-spinor-module-in-biquaternionic-form-and-its-lorentz-action.html), [The Dirac Equation in Biquaternionic Form](the-dirac-equation-in-biquaternionic-form.html) (for the non-integrable-phase interpretation of the mass and the unit vector $K_\mu$), [The Minimal Coupling of the Biquaternion Dirac Field to Electromagnetism](the-minimal-coupling-of-the-biquaternion-dirac-field-to-electromagnetism.html) (for the covariant derivative $\tilde\nabla_\mu$ away from the neutral-element form), and [Triality and Spin(8) with Inner Conjugation](../articles_maths/triality-and-spin8-with-inner-conjugation.html) (for the eight-dimensional case the construction generalizes).
+- The companion corpus articles: [The Spinor Module in Biquaternionic Form and Its Lorentz Action](the-spinor-module-in-biquaternionic-form-and-its-lorentz-action.html), [The Dirac Equation in Biquaternionic Form](the-dirac-equation-in-biquaternionic-form.html) (for the non-integrable-phase interpretation of the mass and the unit vector $U_{\mathrm{vec},\mu}$), [The Minimal Coupling of the Biquaternion Dirac Field to Electromagnetism](the-minimal-coupling-of-the-biquaternion-dirac-field-to-electromagnetism.html) (for the covariant derivative $\tilde\nabla_\mu$ away from the neutral-element form), and [Triality and Spin(8) with Inner Conjugation](../articles_maths/triality-and-spin8-with-inner-conjugation.html) (for the eight-dimensional case the construction generalizes).

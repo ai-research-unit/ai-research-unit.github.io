@@ -179,10 +179,10 @@ $$
 which the source judges "less than optimal", because it produces no quadratic term in the abelian field strength $F_{\mu\nu}$. The second is
 
 $$
-\frac{1}{\kappa}L = \mathrm{Re}\left\langle\Omega_{\mu\nu}, \Omega_{\mu\nu}\right\rangle = \mathrm{Re}\left\langle K_{\mu\nu}, K_{\mu\nu}\right\rangle - g^2 F_{\mu\nu}F_{\mu\nu},
+\frac{1}{\kappa}L = \mathrm{Re}\left\langle\Omega_{\mu\nu}, \Omega_{\mu\nu}\right\rangle = \mathrm{Re}\left\langle \mathcal F_{\mathrm{med},\mu\nu}, \mathcal F_{\mathrm{med},\mu\nu}\right\rangle - g^2 F_{\mu\nu}F_{\mu\nu},
 $$
 
-the split following from the source's identity $\langle x, y\rangle = 0$ for $x \in \mathbb{C}\otimes\mathrm{Scal}(\mathbb{H})$ and $y \in \mathbb{C}\otimes\mathrm{Vec}(\mathbb{H})$; this one does yield the quadratic Maxwell term, but introduces the entity $\mathrm{Re}\langle K_{\mu\nu}, K_{\mu\nu}\rangle$, whose interpretation as the gravitational force the source calls "completely unsettled". Both are recorded as the source's proposals; neither is varied here. They are instructive for the **shape** of the missing density rather than for its content, and in a way that sharpens this section's decisive question. The first shows that the curvature identity alone yields a real scalar of the Einstein–Hilbert type, but not one carrying the gauge-field dynamics; the second shows that the price of the quadratic gauge term is a second curvature invariant with no assigned meaning. That trade — a gravitational scalar or a gauge scalar, not obviously both from one density — is the selection problem of this agenda in miniature, and it is why Check (b), the non-linear identity, is the one that matters.
+the split following from the source's identity $\langle x, y\rangle = 0$ for $x \in \mathbb{C}\otimes\mathrm{Scal}(\mathbb{H})$ and $y \in \mathbb{C}\otimes\mathrm{Vec}(\mathbb{H})$; this one does yield the quadratic Maxwell term, but introduces the entity $\mathrm{Re}\langle \mathcal F_{\mathrm{med},\mu\nu}, \mathcal F_{\mathrm{med},\mu\nu}\rangle$, whose interpretation as the gravitational force the source calls "completely unsettled". Both are recorded as the source's proposals; neither is varied here. They are instructive for the **shape** of the missing density rather than for its content, and in a way that sharpens this section's decisive question. The first shows that the curvature identity alone yields a real scalar of the Einstein–Hilbert type, but not one carrying the gauge-field dynamics; the second shows that the price of the quadratic gauge term is a second curvature invariant with no assigned meaning. That trade — a gravitational scalar or a gauge scalar, not obviously both from one density — is the selection problem of this agenda in miniature, and it is why Check (b), the non-linear identity, is the one that matters.
 
 ## The Remaining Open Items, and What Would Settle Them
 
@@ -273,7 +273,7 @@ The honest position of the framework's gravity programme is therefore this. It c
 | $\delta_{\mu\nu}=(1,1,1,1)$ | the unit metric on the four $Q_\mu$: diagonal, all four coefficients $+1$, and the natural form on the units $e_t,\vec e_x,\vec e_y,\vec e_z$ | inherited |
 | $\tilde{\nabla}$, $\tilde{\nabla}^{\natural}$, $\Box$ | biquaternionic gradient, its conjugate, and $\Box = \tilde{\nabla}\tilde{\nabla}^{\natural} = \tilde{\nabla}^{\natural}\tilde{\nabla} = \sum_\mu\partial^2/\partial R_\mu^2$; on the material reading $Q_t=i c r'_t$ its time term is $-\frac{1}{c^2}\partial^2/\partial {r'_t}^2$ | inherited |
 | $\mathrm{Tr}(\tilde Q_1\tilde Q_2)=2\,\mathrm{Sc}(\tilde Q_1\tilde Q_2)$ | trace formula | inherited |
-| $\vec e_k$, $K_k = i\vec e_k$ | local-Lorentz generators, spanning the six-dimensional Lie subspace | inherited |
+| $\vec e_k$, $B_{\mathrm{boost},k} = i\vec e_k$ | local-Lorentz generators, spanning the six-dimensional Lie subspace | inherited |
 | $\tilde{E}_\mu$, $\vec\Gamma_\mu$ | frame field in $\mathbb{B}_{\Phi}$; Lie-subspace-valued connection one-form | inherited from the curved-spacetime and linearised articles |
 | $g_{\mu\nu} = \langle\tilde{E}_\mu,\tilde{E}_\nu\rangle_{\natural}$ | metric carried by the frame | inherited |
 | $\delta\tilde{E}_\mu$, $\bar{\delta\tilde{E}}_\mu$ | frame perturbation and its trace-reversed form | inherited |
