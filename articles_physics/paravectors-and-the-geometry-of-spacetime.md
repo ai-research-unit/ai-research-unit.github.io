@@ -366,15 +366,15 @@ The paravector calculus is therefore the calculus of *one-sided* cells of a thre
 **The two Dirac equations.** The corpus carries two, and the paravector reading sits against both. The first is **one-sided** and chiral,
 
 $$
-L_{\tilde\nabla}\tilde{Ξ}_{\mathrm{sp},R}=mc/\hbar\tilde{Ξ}_{\mathrm{sp},L},
+L_{\tilde\nabla}\tilde{Ξ}_{\mathrm{sp},R}=\frac{k_m}{\tilde{Ξ}_{\mathrm{sp},L}},
 \qquad
-L_{\tilde\nabla^{\natural}}\tilde{Ξ}_{\mathrm{sp},L}=mc/\hbar\tilde{Ξ}_{\mathrm{sp},R},
+L_{\tilde\nabla^{\natural}}\tilde{Ξ}_{\mathrm{sp},L}=\frac{k_m}{\tilde{Ξ}_{\mathrm{sp},R}},
 $$
 
 a pair of lines in which the gradient acts from the left on each chiral half and the mass is the off-diagonal pairing that mixes them. The second is **two-sided**,
 
 $$
-\Bigl(i\frac{\partial}{\partial r'_t}+D_3\Bigr)F=mc/\hbari\,\overline F\,\vec e_z ,
+\Bigl(i\frac{\partial}{\partial r'_t}+D_3\Bigr)F=k_m\,i\,\overline F\,\vec e_z ,
 \qquad
 D_3=\sum_{k=1}^{3}\vec e_k\frac{\partial}{\partial R_k},
 $$

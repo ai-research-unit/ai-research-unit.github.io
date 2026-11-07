@@ -192,23 +192,23 @@ The condition is the **scalar part** of $\tilde{\nabla}^{\natural}\tilde{J} = 0$
 The **Klein–Gordon equation** for a relativistic scalar field $\tilde{Ξ}$ of mass $m$ is
 
 $$
-\left(\tilde{\nabla}\tilde{\nabla}^{\natural} - (mc/\hbar)^{2}\right)\tilde{Ξ} = 0.
+\left(\tilde{\nabla}\tilde{\nabla}^{\natural} - (k_m)^{2}\right)\tilde{Ξ} = 0.
 $$
 
-Here $\tilde{\nabla}\tilde{\nabla}^{\natural} = \Box = \partial^2/\partial R_t^2 + \Delta$ is the d'Alembertian in the biquaternion form, and $\hbar$ is the reduced Planck constant. Expanding,
+Here $\tilde{\nabla}\tilde{\nabla}^{\natural} = \Box = \partial^2/\partial R_t^2 + \Delta$ is the d'Alembertian in the biquaternion form, and $\frac{m\,c}{k_m}$ is the reduced Planck constant. Expanding,
 
 $$
-\Box\tilde{Ξ} = (mc/\hbar)^{2}\tilde{Ξ},
+\Box\tilde{Ξ} = (k_m)^{2}\tilde{Ξ},
 $$
 
-which is the standard Klein–Gordon equation $(\Box-(mc/\hbar)^{2} c^2/\hbar^2)\xi = 0$ with $\Box = -c^{-2}\,\partial^2/\partial {r'_{t}}^2 + \Delta$. The biquaternion form is compact and manifestly Lorentz-covariant.
+which is the standard Klein–Gordon equation $(\Box-(k_m)^{2}\frac{k_m^{2}}{m^{2}})\xi = 0$ with $\Box = -c^{-2}\,\partial^2/\partial {r'_{t}}^2 + \Delta$. The biquaternion form is compact and manifestly Lorentz-covariant.
 
 ## The Dirac Equation
 
 The **Dirac equation** for a relativistic spinor field $\tilde{Ξ}_{\mathrm{sp}}$ of mass $m$ is the linear, chirality-off-diagonal pair
 
 $$
-\tilde{\nabla}\tilde{Ξ}_{\mathrm{sp},R} = mc/\hbar\tilde{Ξ}_{\mathrm{sp},L}, \qquad \tilde{\nabla}^{\natural}\tilde{Ξ}_{\mathrm{sp},L} = mc/\hbar\tilde{Ξ}_{\mathrm{sp},R},
+\tilde{\nabla}\tilde{Ξ}_{\mathrm{sp},R} =\frac{k_m}{\tilde{Ξ}_{\mathrm{sp},L}}, \qquad \tilde{\nabla}^{\natural}\tilde{Ξ}_{\mathrm{sp},L} =\frac{k_m}{\tilde{Ξ}_{\mathrm{sp},R}},
 $$
 
 where $\tilde{Ξ}_{\mathrm{sp}} = \tilde{Ξ}_{\mathrm{sp},L} + \tilde{Ξ}_{\mathrm{sp},R}$ carries one component per chirality. In the massless case ($m = 0$), the pair reduces to
@@ -217,7 +217,7 @@ $$
 \tilde{\nabla}\tilde{Ξ}_{\mathrm{sp}} = 0,
 $$
 
-which is identical in form to the source-free biquaternion Maxwell equation. The mass term $mc/\hbar\tilde{Ξ}_{\mathrm{sp},L,R}$ couples the two chiralities, and each chirality satisfies the Klein–Gordon equation; the anti-Hermitian conjugation $\tilde{Ξ}_{\mathrm{sp}}^{\flat} = -\tilde{Ξ}_{\mathrm{sp}}^*$ is the algebra's real structure, not the mass term, and the single-field equation $\tilde{\nabla}\tilde{Ξ}_{\mathrm{sp}} = mc/\hbar\tilde{Ξ}_{\mathrm{sp}}^{\flat}$ is a separate real-linear (Majorana-type) equation whose plane waves lie on the spacelike locus. The full treatment of the Dirac equation in biquaternionic form is given in the companion article.
+which is identical in form to the source-free biquaternion Maxwell equation. The mass term $\frac{k_m}{\tilde{Ξ}_{\mathrm{sp},L,R}}$ couples the two chiralities, and each chirality satisfies the Klein–Gordon equation; the anti-Hermitian conjugation $\tilde{Ξ}_{\mathrm{sp}}^{\flat} = -\tilde{Ξ}_{\mathrm{sp}}^*$ is the algebra's real structure, not the mass term, and the single-field equation $\tilde{\nabla}\tilde{Ξ}_{\mathrm{sp}} =\frac{k_m}{\tilde{Ξ}_{\mathrm{sp}}^{\flat}}$ is a separate real-linear (Majorana-type) equation whose plane waves lie on the spacelike locus. The full treatment of the Dirac equation in biquaternionic form is given in the companion article.
 
 ## Summary of the Ten Formulas
 
@@ -231,8 +231,8 @@ which is identical in form to the source-free biquaternion Maxwell equation. The
 | Four-force | $\tilde{K}_{\mathrm{f}} = d\tilde{P}/d\tau$ | $\tilde{K}_{\mathrm{f}}\tilde{P}^{\natural} + \tilde{P}\tilde{K}_{\mathrm{f}}^{\natural} = 0$ |
 | Action | $S = -mc\int\sqrt{-\,d\tilde R_\Phi\,\overline{d\tilde R_\Phi}}$ | — |
 | Current | $\tilde{J} = ic\rho\,e_t + \vec j$ | $\mathrm{Sc}(\tilde{\nabla}^{\natural}\tilde{J}) = 0$ |
-| Klein–Gordon | $(\tilde{\nabla}\tilde{\nabla}^{\natural} - (mc/\hbar)^{2})\tilde{Ξ} = 0$ | — |
-| Dirac | $\tilde{\nabla}\tilde{Ξ}_{\mathrm{sp},R} = mc/\hbar\tilde{Ξ}_{\mathrm{sp},L},\ \tilde{\nabla}^{\natural}\tilde{Ξ}_{\mathrm{sp},L} = mc/\hbar\tilde{Ξ}_{\mathrm{sp},R}$ | — |
+| Klein–Gordon | $(\tilde{\nabla}\tilde{\nabla}^{\natural} - (k_m)^{2})\tilde{Ξ} = 0$ | — |
+| Dirac | $\tilde{\nabla}\tilde{Ξ}_{\mathrm{sp},R} =\frac{k_m}{\tilde{Ξ}_{\mathrm{sp},L}},\ \tilde{\nabla}^{\natural}\tilde{Ξ}_{\mathrm{sp},L} =\frac{k_m}{\tilde{Ξ}_{\mathrm{sp},R}}$ | — |
 
 Here $\hbar/(mc)$ is the mass length.
 

@@ -6,7 +6,7 @@ The biquaternion algebra $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ is 
 
 The answer has three parts, and they are three images of one algebraic object under the three maps that the framework uses: the momentum-space image, the configuration-space image, and the state-space image.
 
-- **In momentum space** the locus is the mass shell of a massless particle, $E^2/c^2=p^2$, written as $\langle\tilde P\rangle_{\natural}=0$ for the momentum biquaternion $\tilde P=i\frac{E}{c}e_t+\vec p$. The non-relativistic free dispersion $E=p^2 c/(2\hbar\,k_m)$ does **not** lie on it: the on-shell momentum satisfies $N=p^2(1-p^2/4m^2c^2)$ for a free particle, which is positive (spacelike) for every $p<2mc$, vanishes exactly at $p=2mc$, and is negative beyond. The zero divisor locus is therefore the boundary of the non-relativistic description in momentum space: the free spin-0 particle approaches the locus only at the scale $2mc$, where the non-relativistic approximation is already failing for other reasons.
+- **In momentum space** the locus is the mass shell of a massless particle, $E^2/c^2=p^2$, written as $\langle\tilde P\rangle_{\natural}=0$ for the momentum biquaternion $\tilde P=i\frac{E}{c}e_t+\vec p$. The non-relativistic free dispersion $E=p^2 c/(2\,m\,c)$ does **not** lie on it: the on-shell momentum satisfies $N=p^2(1-p^2/4m^2c^2)$ for a free particle, which is positive (spacelike) for every $p<2mc$, vanishes exactly at $p=2mc$, and is negative beyond. The zero divisor locus is therefore the boundary of the non-relativistic description in momentum space: the free spin-0 particle approaches the locus only at the scale $2mc$, where the non-relativistic approximation is already failing for other reasons.
 - **In configuration space** the locus is not reached by a real momentum, because a real pure momentum $p\,\vec e_\mu$ has $N=p^2$ and vanishes only at $p=0$. The image of $N\to0$ is the **turning surface** of the semiclassical treatment, $p(x)^2=2m(E-V(x))=0$, which is where the WKB amplitude $A\propto1/\sqrt{|p|}$ diverges and the eikonal momentum degenerates. The turning surface is the configuration-space shadow of the cone.
 - **In state space** the locus is the boundary of the pure-state manifold. The state space of the spin-0 problem is the trace-one slice of the future light cone of the informational sector, and the pure states are exactly the points on its boundary, where the density operator is a projector.
 
@@ -79,7 +79,7 @@ whose biquaternion norm vanishes precisely on the massless shell. The zero divis
 
 ### The non-relativistic dispersion and the cone
 
-For the non-relativistic free particle $E=p^2 c/(2\hbar\,k_m)$, so the on-shell momentum element has
+For the non-relativistic free particle $E=p^2 c/(2\,m\,c)$, so the on-shell momentum element has
 
 $$
 \boxed{\;\langle\tilde P\rangle_{\natural}=p^2-\frac{p^4}{4m^2c^2}=p^2\left(1-\frac{p^2}{4m^2c^2}\right)\;}.
@@ -203,7 +203,7 @@ $$
 \langle \tilde{Ξ}_{\mathrm{sp}}\rangle_{\natural}=0 \quad \text{identically},
 $$
 
-a wave function whose biquaternion norm vanishes everywhere: a **null solution**. It is a genuine algebraic solution of the free dynamics, and it is the image of the algebraic null cone in the solution space. The construction was verified with a spreading Gaussian wave packet, that is, with a superposition of plane waves rather than a single one: in units $\hbar=m=k_0=1$ and with the initial density $|q(0,x)|^2=\exp(-x^2)$ (density width $s_0=1/\sqrt2$),
+a wave function whose biquaternion norm vanishes everywhere: a **null solution**. It is a genuine algebraic solution of the free dynamics, and it is the image of the algebraic null cone in the solution space. The construction was verified with a spreading Gaussian wave packet, that is, with a superposition of plane waves rather than a single one: in units $\frac{m\,c}{k_m}=m=k_0=1$ and with the initial density $|q(0,x)|^2=\exp(-x^2)$ (density width $s_0=1/\sqrt2$),
 
 $$
 q(r'_t,r_x)=(1+ir'_t)^{-1/2}\exp\left[-\frac{(r_x-k_0r'_t)^2}{2(1+ir'_t)}+i\left(k_0r_x-\tfrac12k_0^2r'_t\right)\right],

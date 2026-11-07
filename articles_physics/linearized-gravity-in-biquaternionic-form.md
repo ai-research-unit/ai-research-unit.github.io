@@ -489,14 +489,14 @@ For a product of $n$ distinct generators they are one rule, $\sum_\mu\gamma^\mu 
 **The two Dirac equations.** Two equations carry the name in this corpus: the one-sided chirality pair and Kravchenko's two-sided equation. They share the $\gamma$ frame and are related by the dictionary, but they are not the same equation and must not be read as one. The one-sided pair, which is the flat form of the equation meant in the body above, is
 
 $$
-\tilde\nabla\tilde{Ξ}_{\mathrm{sp},R}=mc/\hbar\tilde{Ξ}_{\mathrm{sp},L},\qquad
-\tilde\nabla^{\natural}\tilde{Ξ}_{\mathrm{sp},L}=mc/\hbar\tilde{Ξ}_{\mathrm{sp},R},
+\tilde\nabla\tilde{Ξ}_{\mathrm{sp},R}=\frac{k_m}{\tilde{Ξ}_{\mathrm{sp},L}},\qquad
+\tilde\nabla^{\natural}\tilde{Ξ}_{\mathrm{sp},L}=\frac{k_m}{\tilde{Ξ}_{\mathrm{sp},R}},
 $$
 
 with both gradients acting from the left and the mass term pairing the two chiral halves off-diagonally. Kravchenko's two-sided equation, for a biquaternion field $F$ (in the source's units $c=1$), is
 
 $$
-\bigl(i\partial/\partial r'_t+D_3\bigr)F-mc/\hbar\,i\,\overline{F}\,\vec e_z=0,
+\bigl(i\partial/\partial r'_t+D_3\bigr)F-\frac{k_m}{i\,\overline{F}\,\vec e_{z}}=0,
 \qquad
 D_3=\sum_k\vec e_k\frac{\partial}{\partial R_k},
 $$

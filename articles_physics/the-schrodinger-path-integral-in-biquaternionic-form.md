@@ -2,15 +2,15 @@
 
 ## Introduction
 
-The path integral is the third formulation of the same quantum dynamics, alongside the state-vector equation and the operator algebra. It represents the transition amplitude as a sum over histories weighted by the phase $\exp(iS/\hbar)$, and it makes the classical limit, the semiclassical expansion, and the fluctuation determinants visible in a way the operator formalism does not. This article derives the **Schrödinger path integral** from the biquaternion state-vector equation and evaluates the two kernels that can be computed exactly: the free particle and the harmonic oscillator.
+The path integral is the third formulation of the same quantum dynamics, alongside the state-vector equation and the operator algebra. It represents the transition amplitude as a sum over histories weighted by the phase $\exp(\frac{k_m\,i\,S}{m\,c})$, and it makes the classical limit, the semiclassical expansion, and the fluctuation determinants visible in a way the operator formalism does not. This article derives the **Schrödinger path integral** from the biquaternion state-vector equation and evaluates the two kernels that can be computed exactly: the free particle and the harmonic oscillator.
 
-The division of labour with the companion article *The Path Integral in Biquaternionic Form* should be stated at once. That article analyses the **algebraic status of the phase**: it shows that the imaginary unit in $\exp(iS/\hbar)$ is the central scalar imaginary, that the phase exponent lies in the material sector $\mathbb{B}_{\Phi}$, that the phase is a central $*$-unitary element, and that a non-central root would produce a spin rotation rather than a global phase. This article does not repeat that analysis. It takes the centrality of the phase as established, and does the complementary work: it derives the kernel from the evolution operator, constructs the short-time kernel and the Trotter product, and evaluates the free and oscillator propagators exactly, showing at every step that the kernel is a central element and that the module factor is a spectator.
+The division of labour with the companion article *The Path Integral in Biquaternionic Form* should be stated at once. That article analyses the **algebraic status of the phase**: it shows that the imaginary unit in $\exp(\frac{k_m\,i\,S}{m\,c})$ is the central scalar imaginary, that the phase exponent lies in the material sector $\mathbb{B}_{\Phi}$, that the phase is a central $*$-unitary element, and that a non-central root would produce a spin rotation rather than a global phase. This article does not repeat that analysis. It takes the centrality of the phase as established, and does the complementary work: it derives the kernel from the evolution operator, constructs the short-time kernel and the Trotter product, and evaluates the free and oscillator propagators exactly, showing at every step that the kernel is a central element and that the module factor is a spectator.
 
 The biquaternion content of the Schrödinger path integral is therefore a statement about the **kernel** rather than about the phase. The Hamiltonian is central, so the evolution operator is central, so the position kernel is a complex scalar times $e_t$, so the path integral acts on the state module as scalar multiplication. The entire path integral for a spin-0 particle is the scalar path integral tensored with the identity on $\mathbb{C}^2$. This article makes that precise and then computes with it.
 
 The article is organised as follows. The next section derives the transition kernel from the evolution operator, computes the short-time kernel, and takes the Trotter limit to the sum over paths. The third and fourth sections evaluate the free and oscillator kernels exactly and verify their composition. The fifth shows how the kernel reproduces the biquaternion Schrödinger equation in the infinitesimal-time limit. The sixth obtains the semiclassical kernel and its van Vleck determinant. The seventh states what the biquaternion form adds and what remains open, and the closing sections are the summary, the notation table, and the external literature.
 
-The conventions are those of the companion articles: $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ with $e_t=1,\vec e_x,\vec e_y,\vec e_z$, $\vec e_j^2=-e_t$, central $i$; $\mathbb{B}_{C}$ is the centre; $\mathbb{B}_{\Psi}$ and $\mathbb{B}_{\Phi}$ are the Hermitian and anti-Hermitian sectors; the state module is $\mathbb{B}\tilde\Pi\cong\mathbb{C}^2$; $\mathrm{Tr}(\tilde R_\Psi)=2\,\mathrm{Sc}(\tilde R_\Psi)$; and the Hamiltonian of a scalar particle is $H=[-\frac{\hbar c}{2\,k_m}\nabla^2+V(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)]e_t$, central. The coordinate $r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z$ is the argument of the field.
+The conventions are those of the companion articles: $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ with $e_t=1,\vec e_x,\vec e_y,\vec e_z$, $\vec e_j^2=-e_t$, central $i$; $\mathbb{B}_{C}$ is the centre; $\mathbb{B}_{\Psi}$ and $\mathbb{B}_{\Phi}$ are the Hermitian and anti-Hermitian sectors; the state module is $\mathbb{B}\tilde\Pi\cong\mathbb{C}^2$; $\mathrm{Tr}(\tilde R_\Psi)=2\,\mathrm{Sc}(\tilde R_\Psi)$; and the Hamiltonian of a scalar particle is $H=[-\frac{m\,c^{2}}{2\,k_m^{2}}\nabla^2+V(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)]e_t$, central. The coordinate $r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z$ is the argument of the field.
 
 Here $k_m=mc/\hbar$ is the mass wave number, the inverse of the mass length.
 
@@ -18,10 +18,10 @@ Here $k_m=mc/\hbar$ is the mass wave number, the inverse of the mass length.
 
 ### The evolution operator and the position kernel
 
-The biquaternion Schrödinger equation $i\hbar\partial/\partial r'_t\tilde{Ξ}_{\mathrm{sp}}=H\tilde{Ξ}_{\mathrm{sp}}$ is solved formally by
+The biquaternion Schrödinger equation $\frac{m\,c\,i}{k_m}\partial/\partial r'_t\tilde{Ξ}_{\mathrm{sp}}=H\tilde{Ξ}_{\mathrm{sp}}$ is solved formally by
 
 $$
-\tilde Q(r'_t) = \exp(-iH r'_t/\hbar),
+\tilde Q(r'_t) = \exp(-\frac{k_m\,i\,H\,r'_{t}}{m\,c}),
 \qquad
 \tilde{Ξ}_{\mathrm{sp}}(r'_t) = \tilde Q(r'_t)\,\tilde{Ξ}_{\mathrm{sp}}(0),
 $$
@@ -59,27 +59,27 @@ in which the kernel multiplies the module factor by a scalar. Whatever the initi
 For a small time $\varepsilon$ one computes the kernel directly. Splitting the Hamiltonian into kinetic and potential parts and using the lowest-order product formula,
 
 $$
-\exp(-i\varepsilon(p^2 c/(2\hbar\,k_m)+V)/\hbar)
-= \exp(-i\varepsilon p^2 c/(2\hbar^2\,k_m))\,\exp(-i\varepsilon V/\hbar) + O(\varepsilon^2),
+\exp(-i\varepsilon(p^2 c/(2\,m\,c)+V)\frac{k_m}{m\,c})
+= \exp(-i\varepsilon p^2 c/(\frac{2\,m^{2}\,c^{2}}{k_m}))\,\exp(-\frac{k_m\,i\,\varepsilon\,V}{m\,c}) + O(\varepsilon^2),
 $$
 
 the position matrix element is the momentum integral
 
 $$
 K_\varepsilon(r_{2x}\,\vec e_x+r_{2y}\,\vec e_y+r_{2z}\,\vec e_z,r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)
-= \int\frac{d^3p}{(2\pi\hbar)^3}\,
-\exp(\,i\vec p\cdot(r_{2x}\,\vec e_x+r_{2y}\,\vec e_y+r_{2z}\,\vec e_z-(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z))/\hbar)\,
-\exp(-i\varepsilon p^2 c/(2\hbar^2\,k_m))\,
-\exp(-i\varepsilon V(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)/\hbar)\,e_t
+= \int\frac{d^3p}{(\frac{2\,m\,c\,\pi}{k_m})^3}\,
+\exp(\,\frac{k_m\,i\,\vec p\,(r_{2x}\,\vec e_x+r_{2y}\,\vec e_y+r_{2z}\,\vec e_z-(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z))}{m\,c})\,
+\exp(-i\varepsilon p^2 c/(\frac{2\,m^{2}\,c^{2}}{k_m}))\,
+\exp(-\frac{k_m\,i\,\varepsilon\,V\,(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)}{m\,c})\,e_t
 + O(\varepsilon^2),
 $$
 
-where the potential factor is evaluated at the initial point because the commutator $[p^2,V]$ is itself of order $\hbar$ and contributes only at higher order. The momentum integral is the standard Fresnel integral
+where the potential factor is evaluated at the initial point because the commutator $[p^2,V]$ is itself of order $\frac{m\,c}{k_m}$ and contributes only at higher order. The momentum integral is the standard Fresnel integral
 
 $$
-\int\frac{d^3p}{(2\pi\hbar)^3}\exp\left[\frac{i}{\hbar}\left(\vec p\cdot\vec\Delta - \frac{\varepsilon p^2 c}{2\hbar\,k_m}\right)\right]
+\int\frac{d^3p}{(\frac{2\,m\,c\,\pi}{k_m})^3}\exp\left[\frac{k_m\,i}{m\,c}\left(\vec p\cdot\vec\Delta -\frac{\varepsilon\,p^{2}}{2\,m}\right)\right]
 = \left(\frac{k_m}{2\pi i c\varepsilon}\right)^{3/2}
-\exp\left(\frac{im|\vec\Delta|^2}{2\hbar\varepsilon}\right),
+\exp\left(\frac{im|\vec\Delta|^2}{\frac{2\,m\,c\,\varepsilon}{k_m}}\right),
 \qquad
 \vec\Delta = r_{2x}\,\vec e_x+r_{2y}\,\vec e_y+r_{2z}\,\vec e_z-(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z) ,
 $$
@@ -89,11 +89,11 @@ so that
 $$
 K_\varepsilon(r_{2x}\,\vec e_x+r_{2y}\,\vec e_y+r_{2z}\,\vec e_z,r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)
 = \left(\frac{k_m}{2\pi i c\varepsilon}\right)^{3/2}
-\exp\left[\frac{i}{\hbar}\left(\frac{m|r_{2x}\,\vec e_x+r_{2y}\,\vec e_y+r_{2z}\,\vec e_z-(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)|^2}{2\varepsilon} - \varepsilon V(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)\right)\right]e_t
+\exp\left[\frac{k_m\,i}{m\,c}\left(\frac{m|r_{2x}\,\vec e_x+r_{2y}\,\vec e_y+r_{2z}\,\vec e_z-(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)|^2}{2\varepsilon} - \varepsilon V(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)\right)\right]e_t
 + O(\varepsilon^2).
 $$
 
-The short-time kernel is central. Its phase is $(i/\hbar)$ times the short-time Lagrangian action $\mathrm{Lag}\varepsilon = \frac{m|\vec\Delta|^2}{2\varepsilon^2}\varepsilon - V\varepsilon$, and its prefactor is built from the central $i$, the central real numbers $m,\hbar,\varepsilon$, and $e_t$. The only non-central object in the construction is the displacement $\vec\Delta$, which is a real vector of configuration space rather than an element of the state module; the module factor does not appear in the kernel at all.
+The short-time kernel is central. Its phase is $(\frac{k_m\,i}{m\,c})$ times the short-time Lagrangian action $\mathrm{Lag}\varepsilon = \frac{m|\vec\Delta|^2}{2\varepsilon^2}\varepsilon - V\varepsilon$, and its prefactor is built from the central $i$, the central real numbers $m,\frac{m\,c}{k_m},\varepsilon$, and $e_t$. The only non-central object in the construction is the displacement $\vec\Delta$, which is a real vector of configuration space rather than an element of the state module; the module factor does not appear in the kernel at all.
 
 ### The Trotter product and the measure
 
@@ -101,7 +101,7 @@ Composing the short-time kernel $N$ times and using the semigroup property gives
 
 $$
 \tilde Q(r'_t)=\lim_{N\to\infty}\left(\tilde Q(r'_t/N)\right)^N
-=\lim_{N\to\infty}\left(\exp(-iHr'_t/N\hbar)\right)^N ,
+=\lim_{N\to\infty}\left(\exp(-\frac{k_m\,iHr'_{t}}{m\,c\,N})\right)^N ,
 $$
 
 and inserting a resolution of the identity between each pair of factors turns the matrix element into an integral over the intermediate positions:
@@ -110,15 +110,15 @@ $$
 K(\vec r_f,r'_t;\vec r_i,0)
 =\lim_{N\to\infty}
 \left(\frac{k_m}{2\pi i c\varepsilon}\right)^{3N/2}
-\int\prod_{k=1}^{N-1}d^3r_k\;
-\exp\left[\frac{i}{\hbar}\sum_{k=0}^{N-1}\left(\frac{m|\vec r_{k+1}-\vec r_k|^2}{2\varepsilon}-\varepsilon V(\vec r_k)\right)\right]e_t,
+\int\prod_{k=1}^{N-1} d^3r_k\;
+\exp\left[\frac{k_m\,i}{m\,c}\sum_{k=0}^{N-1}\left(\frac{m|\vec r_{k+1}-\vec r_k|^2}{2\varepsilon}-\varepsilon V(\vec r_k)\right)\right]e_t,
 $$
 
 with $\varepsilon=r'_t/N$, $\vec r_0=\vec r_i$, $\vec r_N=\vec r_f$. In the continuum limit the sum in the exponent becomes the action $S[\vec r]=\int_0^{r'_{t}} \mathrm{Lag}\,d\tau$ and the multiple integral becomes the formal path integral
 
 $$
 \boxed{\;K(\vec r_f,r'_t;\vec r_i,0)
-=\int\mathcal{D}r_x\,\mathcal{D}r_y\,\mathcal{D}r_z\;\exp(\,iS[\vec r]/\hbar)\,e_t\;}.
+=\int\mathcal{D}r_x\,\mathcal{D}r_y\,\mathcal{D}r_z\;\exp(\,iS[\vec r]\frac{k_m}{m\,c})\,e_t\;}.
 $$
 
 The measure $\mathcal{D}r_x\,\mathcal{D}r_y\,\mathcal{D}r_z$ is defined by the limit above; it is the product of the position integrations, including the Gaussian normalisation factors. The kernel is central term by term, hence in the limit: the path integral for a spin-0 particle is a complex scalar, and the module factor is untouched. The measure is not supplied by the algebra — the paths are trajectories in the material sector's configuration space, and the algebra labels their endpoints and supplies the phase — and this is one of the gaps the companion article records.
@@ -131,12 +131,12 @@ For $V=0$ the short-time kernel is exact for every $\varepsilon$, and the Trotte
 
 $$
 \boxed{\;K_0(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z,r'_t)
-= \int\frac{d^3p}{(2\pi\hbar)^3}\,\exp(\,i\vec p\cdot(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)/\hbar)\,\exp(-i\varepsilon p^2 c/(2\hbar^2\,k_m))\Big|_{\varepsilon\to r'_t}
+= \int\frac{d^3p}{(\frac{2\,m\,c\,\pi}{k_m})^3}\,\exp(\,\frac{k_m\,i\,\vec p\,(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)}{m\,c})\,\exp(-i\varepsilon p^2 c/(\frac{2\,m^{2}\,c^{2}}{k_m}))\Big|_{\varepsilon\to  r'_t}
 = \left(\frac{k_m}{2\pi i c r'_t}\right)^{3/2}
-\exp\left(\frac{im|r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z|^2}{2\hbar r'_t}\right)\;},
+\exp\left(\frac{im|r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z|^2}{\frac{2\,m\,c\,r'_{t}}{k_m}}\right)\;},
 $$
 
-which is the free kernel of the free-particle article. It is central, and its phase is the classical free action $S_{\mathrm{cl}}=m|r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z|^2/2r'_t$ over $\hbar$. The squared modulus is the spreading density $|K_0|^2=(m/2\pi\hbar r'_t)^3$, constant in space, which is the statement that a point source spreads uniformly in free space.
+which is the free kernel of the free-particle article. It is central, and its phase is the classical free action $S_{\mathrm{cl}}=m|r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z|^2/2r'_t$ over $\frac{m\,c}{k_m}$. The squared modulus is the spreading density $|K_0|^2=(\frac{k_m}{2\,c\,\pi\,r'_{t}})^3$, constant in space, which is the statement that a point source spreads uniformly in free space.
 
 ### Composition
 
@@ -150,9 +150,9 @@ $$
 which follows from the Gaussian convolution formula
 
 $$
-\int dy\;\exp(A(x-y)^2)\exp(By^2)=\sqrt{\frac{-\pi}{A+B}}\exp\left(\frac{AB}{A+B}x^2\right),
+\int  dy\;\exp(A(x-y)^2)\exp(By^2)=\sqrt{\frac{-\pi}{A+B}}\exp\left(\frac{AB}{A+B}x^2\right),
 \qquad
-A=\frac{im}{2\hbar T_2},\quad B=\frac{im}{2\hbar T_1},
+A=\frac{k_m\,i}{2\,c\,T_{2}},\quad  B=\frac{k_m\,i}{2\,c\,T_{1}},
 $$
 
 and which was verified numerically on a superposition of two Gaussian packets to a relative error of order $10^{-14}$ at three time pairs. The composition is the statement that the sum over paths factorises at an intermediate time, and in the biquaternion interpretation it is a statement about the centre: the product of two central kernels is central, and the classical action of the two flights adds.
@@ -166,18 +166,18 @@ For $V=\frac12m\omega^2x^2$ the kernel can still be computed exactly, and it is 
 $$
 \boxed{\;K_\omega(r_x,r'_t;r_{0x},0)
 =\left(\frac{\omega\,k_m}{2\pi i c\sin\omega r'_t}\right)^{1/2}
-\exp\left[\frac{im\omega}{2\hbar\sin\omega r'_t}
+\exp\left[\frac{im\omega}{\frac{2\,m\,c}{k_m}\sin\omega r'_t}
 \Big((r_x^2+r_{0x}^2)\cos\omega r'_t-2r_xr_{0x}\Big)\right]\;},
 $$
 
-a complex scalar times $e_t$. It is obtained by the Feynman–Hibbs ansatz: because the action is quadratic, the kernel has the form $K=F(r'_t)\exp(iS_{\mathrm{cl}}/\hbar)$ with
+a complex scalar times $e_t$. It is obtained by the Feynman–Hibbs ansatz: because the action is quadratic, the kernel has the form $K=F(r'_t)\exp(\frac{k_m\,iS_{\mathrm{cl}}}{m\,c})$ with
 
 $$
 S_{\mathrm{cl}}(r_x,r'_t;r_{0x},0)
 =\frac{m\omega}{2\sin\omega r'_t}\Big((r_x^2+r_{0x}^2)\cos\omega r'_t-2r_xr_{0x}\Big)
 $$
 
-the classical action of the oscillator evaluated between the endpoints, and with the fluctuation factor $F(r'_t)$ independent of the endpoints. Substituting this form into the Schrödinger equation gives $\frac{dF/dr'_t}{F}=-\frac{\omega}{2}\cot\omega r'_t$, hence $F(r'_t)=C/\sqrt{\sin\omega r'_t}$, and the constant $C$ is fixed by the short-time limit: as $r'_t\to0$, $\sin\omega r'_t\to\omega r'_t$ and the kernel must tend to the free short-time kernel $(m/2\pi i\hbar r'_t)^{1/2}$, which gives $C=\sqrt{m\omega/2\pi i\hbar}$. The biquaternion content of the construction is again the same: the kernel is $K_\omega\,e_t$ with $K_\omega$ the scalar amplitude, a central element, because the action is a real scalar and the fluctuation factor is a function of central quantities.
+the classical action of the oscillator evaluated between the endpoints, and with the fluctuation factor $F(r'_t)$ independent of the endpoints. Substituting this form into the Schrödinger equation gives $\frac{dF/dr'_t}{F}=-\frac{\omega}{2}\cot\omega r'_t$, hence $F(r'_t)=C/\sqrt{\sin\omega r'_t}$, and the constant $C$ is fixed by the short-time limit: as $r'_t\to0$, $\sin\omega r'_t\to\omega r'_t$ and the kernel must tend to the free short-time kernel $(\frac{k_m}{2\,c\,\pi\,i\,r'_{t}})^{1/2}$, which gives $C=\sqrt{\frac{k_m\,\omega}{2\,c\,\pi\,i}}$. The biquaternion content of the construction is again the same: the kernel is $K_\omega\,e_t$ with $K_\omega$ the scalar amplitude, a central element, because the action is a real scalar and the fluctuation factor is a function of central quantities.
 
 The kernel has poles at $\sin\omega r'_t=0$, i.e. at $\omega r'_t=n\pi$. These are the caustics of the oscillator: the classical trajectories refocus after a half period, the fluctuation factor diverges, and the simple form of the kernel breaks down. They are the same points at which the Maslov phases accumulate in the semiclassical expansion.
 
@@ -190,7 +190,7 @@ $$
 = K_\omega(r_x,r_{0x};T_1+T_2),
 $$
 
-for times at which no intermediate caustic is crossed. The kernel was also checked to solve the Schrödinger equation directly, at two sample points and times, by finite-difference evaluation of $i\hbar\partial/\partial r'_tK$ against $(-\frac{\hbar c}{2\,k_m}\partial^2/\partial R_x^2+\frac12m\omega^2x^2)K$, with agreement at the $10^{-8}$ level (limited by the finite-difference error).
+for times at which no intermediate caustic is crossed. The kernel was also checked to solve the Schrödinger equation directly, at two sample points and times, by finite-difference evaluation of $\frac{m\,c\,i}{k_m}\partial/\partial r'_tK$ against $(-\frac{m\,c^{2}}{2\,k_m^{2}}\partial^2/\partial R_x^2+\frac12m\omega^2x^2)K$, with agreement at the $10^{-8}$ level (limited by the finite-difference error).
 
 The free kernel is recovered as the $\omega\to0$ limit,
 
@@ -211,7 +211,7 @@ K_\omega^E(r_x,\tau;r_{0x},0)
 \Big((r_x^2+r_{0x}^2)\cosh\omega\tau-2r_xr_{0x}\Big)\right],
 $$
 
-which is the Boltzmann-weighted oscillator kernel at inverse temperature $\beta=\tau/\hbar$,
+which is the Boltzmann-weighted oscillator kernel at inverse temperature $\beta=\frac{k_m\,\tau}{m\,c}$,
 
 $$
 K_\omega^E(r_x,\tau;r_{0x},0) = \sum_n \tilde{Ξ}_{\mathrm{sp},n}(r_x)\tilde{Ξ}_{\mathrm{sp},n}(r_{0x})\,\exp(-\omega\tau(n+\frac12)) ,
@@ -232,30 +232,29 @@ and inserting the short-time kernel and expanding the smooth wave function about
 $$
 \tilde{Ξ}_{\mathrm{sp}}(r_x,r'_t+\varepsilon)
 =\left(\frac{k_m}{2\pi i c\varepsilon}\right)^{1/2}
-\int dy\;\exp(\,im(r_y-r_x)^2/2\hbar\varepsilon)
-\exp(-i\varepsilon V(r_y)/\hbar)
+\int  dy\;\exp(\,\frac{k_m\,i\,(r_y-r_x)^{2}}{2\,c\,\varepsilon})
+\exp(-\frac{k_m\,i\,\varepsilon\,V\,r_{y}}{m\,c})
 \left[\tilde{Ξ}_{\mathrm{sp}}(r_x)+(r_y-r_x)\frac{d\tilde{Ξ}_{\mathrm{sp}}}{dx}(r_x)+\tfrac12(r_y-r_x)^2\frac{\partial^2\tilde{Ξ}_{\mathrm{sp}}}{\partial r_x^2}(r_x)+\cdots\right].
 $$
 
 The Gaussian moments are
 
 $$
-\left(\frac{k_m}{2\pi i c\varepsilon}\right)^{1/2}\int dy\;\exp(\,im(y-x)^2/2\hbar\varepsilon)=1,
+\left(\frac{k_m}{2\pi i c\varepsilon}\right)^{1/2}\int  dy\;\exp(\,\frac{k_m\,i\,(y-x)^{2}}{2\,c\,\varepsilon})=1,
 \qquad
-\left(\frac{k_m}{2\pi i c\varepsilon}\right)^{1/2}\int dy\;(y-x)^2\exp(\,im(y-x)^2/2\hbar\varepsilon)=i c/k_m\varepsilon,
+\left(\frac{k_m}{2\pi i c\varepsilon}\right)^{1/2}\int  dy\;(y-x)^2\exp(\,\frac{k_m\,i\,(y-x)^{2}}{2\,c\,\varepsilon})=i c/k_m\varepsilon,
 $$
 
 and the linear term vanishes by symmetry. Collecting,
 
 $$
-\tilde{Ξ}_{\mathrm{sp}}(r_x,r'_t+\varepsilon)=\tilde{Ξ}_{\mathrm{sp}}(r_x)-\frac{i\varepsilon}{\hbar}V(r_x)\tilde{Ξ}_{\mathrm{sp}}(r_x)+\frac{i c\varepsilon}{2\,k_m}\frac{\partial^2\tilde{Ξ}_{\mathrm{sp}}}{\partial r_x^2}(r_x)+O(\varepsilon^2),
+\tilde{Ξ}_{\mathrm{sp}}(r_x,r'_t+\varepsilon)=\tilde{Ξ}_{\mathrm{sp}}(r_x)-\frac{k_m\,i\,\varepsilon}{m\,c}V(r_x)\tilde{Ξ}_{\mathrm{sp}}(r_x)+\frac{i c\varepsilon}{2\,k_m}\frac{\partial^2\tilde{Ξ}_{\mathrm{sp}}}{\partial r_x^2}(r_x)+O(\varepsilon^2),
 $$
 
 which rearranges to
 
-$$
-i\hbar\,\frac{\tilde{Ξ}_{\mathrm{sp}}(r_x,r'_t+\varepsilon)-\tilde{Ξ}_{\mathrm{sp}}(r_x,r'_t)}{\varepsilon}
-=\left(-\frac{\hbar c}{2\,k_m}\partial^2/\partial R_x^2+V(r_x)\right)\tilde{Ξ}_{\mathrm{sp}}+O(\varepsilon),
+$$\frac{m\,c\,i}{k_m}\frac{\tilde{Ξ}_{\mathrm{sp}}(r_x,r'_t+\varepsilon)-\tilde{Ξ}_{\mathrm{sp}}(r_x,r'_t)}{\varepsilon}
+=\left(-\frac{m\,c^{2}}{2\,k_m^{2}}\partial^2/\partial R_x^2+V(r_x)\right)\tilde{Ξ}_{\mathrm{sp}}+O(\varepsilon),
 $$
 
 that is, in the limit, the biquaternion Schrödinger equation for the envelope. The expansion was verified numerically on a superposition of two Gaussian packets: using the exact free evolution for a small time $\varepsilon=10^{-5}$, the evolved state agreed with $\tilde{Ξ}_{\mathrm{sp}}+\frac{i c\varepsilon}{2\,k_m}\frac{\partial^2\tilde{Ξ}_{\mathrm{sp}}}{\partial r_x^2}$ to a relative error of about $2\times10^{-11}$ at three sample points. The path integral and the state-vector equation are thus equivalent for the central Hamiltonian, and the equivalence is a statement about the scalar envelope alone.
@@ -264,7 +263,7 @@ that is, in the limit, the biquaternion Schrödinger equation for the envelope. 
 
 ### Stationary phase and the van Vleck determinant
 
-For small $\hbar$ the path integral is dominated by the stationary points of the action. The stationary path is the classical trajectory from $(x_i\,\vec e_x+y_i\,\vec e_y+z_i\,\vec e_z,r'_{t,i})$ to $(x_f\,\vec e_x+y_f\,\vec e_y+z_f\,\vec e_z,r'_{t,f})$, and expanding the action about it,
+For small $\frac{m\,c}{k_m}$ the path integral is dominated by the stationary points of the action. The stationary path is the classical trajectory from $(x_i\,\vec e_x+y_i\,\vec e_y+z_i\,\vec e_z,r'_{t,i})$ to $(x_f\,\vec e_x+y_f\,\vec e_y+z_f\,\vec e_z,r'_{t,f})$, and expanding the action about it,
 
 $$
 S[(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)_{\mathrm{cl}}+\delta(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)]=S_{\mathrm{cl}}+\tfrac12\,\delta(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)\cdot\frac{\delta^2S}{\delta(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)\,\delta(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)}\cdot\delta(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)+\cdots,
@@ -275,17 +274,17 @@ the quadratic fluctuation integral is Gaussian and gives the **van Vleck kernel*
 $$
 \boxed{\;K(x_f\,\vec e_x+y_f\,\vec e_y+z_f\,\vec e_z,r'_{t,f};x_i\,\vec e_x+y_i\,\vec e_y+z_i\,\vec e_z,r'_{t,i})
 \ \approx\
-\left(\frac{1}{2\pi i\hbar}\right)^{3/2}
+\left(\frac{k_m}{2\,m\,c\,\pi\,i}\right)^{3/2}
 \left|\det\left(\frac{\partial^2 S_{\mathrm{cl}}}{\partial x_{i,k}\,\partial x_{f,l}}\right)_{k,l=1}^{3}\right|^{1/2}
-\exp\left(\frac{i}{\hbar}S_{\mathrm{cl}}\right)
-\ =\ A_{\mathrm{wkb}}\,\exp(\,iS_{\mathrm{cl}}/\hbar)\;},
+\exp\left(\frac{k_m\,i}{m\,c}S_{\mathrm{cl}}\right)
+\ =\ A_{\mathrm{wkb}}\,\exp(\,\frac{k_m\,iS_{\mathrm{cl}}}{m\,c})\;},
 $$
 
-where the determinant is the van Vleck determinant, the same amplitude that the transport equation of the semiclassical wave-function method produces. In the biquaternion interpretation the semiclassical kernel is central for the same reason as the exact kernel: the action is a real scalar, the determinant is real, and the prefactor is a function of the central $i$ and $\hbar$. The square root $\sqrt{i}$ in $(2\pi i\hbar)^{-3/2}$ is taken inside the centre, which is where the Maslov phases $\pm\frac{\pi}{2}$ and $\pm\frac{\pi}{4}$ come from; the companion article on the path integral develops that point, and the free kernel and the oscillator kernel above are the exact cases in which the semiclassical form is exact (the free kernel everywhere, the oscillator kernel away from caustics).
+where the determinant is the van Vleck determinant, the same amplitude that the transport equation of the semiclassical wave-function method produces. In the biquaternion interpretation the semiclassical kernel is central for the same reason as the exact kernel: the action is a real scalar, the determinant is real, and the prefactor is a function of the central $i$ and $\frac{m\,c}{k_m}$. The square root $\sqrt{i}$ in $(\frac{2\,m\,c\,\pi\,i}{k_m})^{-3/2}$ is taken inside the centre, which is where the Maslov phases $\pm\frac{\pi}{2}$ and $\pm\frac{\pi}{4}$ come from; the companion article on the path integral develops that point, and the free kernel and the oscillator kernel above are the exact cases in which the semiclassical form is exact (the free kernel everywhere, the oscillator kernel away from caustics).
 
 ### Caustics and the higher orders
 
-The van Vleck form fails at the caustics, where the van Vleck determinant vanishes or diverges: the classical trajectories cross, the stationary points coalesce, and the Gaussian approximation to the fluctuation integral breaks down. The oscillator's poles at $\omega r'_t=n\pi$ are the model case. The repair is the standard one: a uniform approximation, or the inclusion of the higher-order fluctuation terms, which produce the Maslov phases and, at higher orders in $\hbar$, the loop corrections to the semiclassical kernel. The algebra plays no role in the repair beyond supplying the central $i$ under the square roots.
+The van Vleck form fails at the caustics, where the van Vleck determinant vanishes or diverges: the classical trajectories cross, the stationary points coalesce, and the Gaussian approximation to the fluctuation integral breaks down. The oscillator's poles at $\omega r'_t=n\pi$ are the model case. The repair is the standard one: a uniform approximation, or the inclusion of the higher-order fluctuation terms, which produce the Maslov phases and, at higher orders in $\frac{m\,c}{k_m}$, the loop corrections to the semiclassical kernel. The algebra plays no role in the repair beyond supplying the central $i$ under the square roots.
 
 ## What the Biquaternion Form Adds
 
@@ -296,7 +295,7 @@ The van Vleck form fails at the caustics, where the van Vleck determinant vanish
 - **A central kernel, made manifest.** The Hamiltonian is central, so the kernel is $K\,e_t$ and the path integral acts on the state module as scalar multiplication. The entire Schrödinger path integral for a spin-0 particle is the scalar path integral tensored with the identity on $\mathbb{C}^2$, and the module orientation of the initial state is propagated unchanged.
 - **The phase's status, delegated and used.** The centrality of the phase and the sector location of the exponent are established by the companion article *The Path Integral in Biquaternionic Form*; this article uses them without re-deriving them, and adds the kernel-theoretic consequences.
 - **The oscillator kernel as a central deformation.** The whole one-parameter family $K_\omega$ is central, and the free kernel is its $\omega\to0$ limit; the family contains the free kernel, the oscillator kernel, and (after Wick rotation) the Mehler kernel, all as central elements.
-- **The square root of the central $i$.** The fluctuation prefactor $(m/2\pi i\hbar\varepsilon)^{3/2}$ and the van Vleck factor $(2\pi i\hbar)^{-3/2}$ involve $\sqrt{i}$; the root is taken inside the centre, so the Maslov phases are phases of a central element rather than of a chosen complex structure.
+- **The square root of the central $i$.** The fluctuation prefactor $(\frac{k_m}{2\,c\,\pi\,i\,\varepsilon})^{3/2}$ and the van Vleck factor $(\frac{2\,m\,c\,\pi\,i}{k_m})^{-3/2}$ involve $\sqrt{i}$; the root is taken inside the centre, so the Maslov phases are phases of a central element rather than of a chosen complex structure.
 
 **What remains open.**
 
@@ -317,26 +316,26 @@ The van Vleck form fails at the caustics, where the van Vleck determinant vanish
 
 ## Summary
 
-The Schrödinger path integral in the biquaternion framework is derived from the central evolution operator $\tilde Q(r'_t)=\exp(-iHr'_t/\hbar)$ with $H=[-\frac{\hbar c}{2\,k_m}\nabla^2+V]e_t$. The position kernel is $K\,e_t$, a complex scalar times the identity, and the state is propagated by scalar convolution; the module factor is untouched. The short-time kernel is
+The Schrödinger path integral in the biquaternion framework is derived from the central evolution operator $\tilde Q(r'_t)=\exp(-\frac{k_m\,iHr'_{t}}{m\,c})$ with $H=[-\frac{m\,c^{2}}{2\,k_m^{2}}\nabla^2+V]e_t$. The position kernel is $K\,e_t$, a complex scalar times the identity, and the state is propagated by scalar convolution; the module factor is untouched. The short-time kernel is
 
 $$
 K_\varepsilon(r_{2x}\,\vec e_x+r_{2y}\,\vec e_y+r_{2z}\,\vec e_z,r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)
 =\left(\frac{k_m}{2\pi i c\varepsilon}\right)^{3/2}
-\exp\left[\frac{i}{\hbar}\left(\frac{m|r_{2x}\,\vec e_x+r_{2y}\,\vec e_y+r_{2z}\,\vec e_z-(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)|^2}{2\varepsilon}-\varepsilon V(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)\right)\right]e_t+O(\varepsilon^2),
+\exp\left[\frac{k_m\,i}{m\,c}\left(\frac{m|r_{2x}\,\vec e_x+r_{2y}\,\vec e_y+r_{2z}\,\vec e_z-(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)|^2}{2\varepsilon}-\varepsilon V(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)\right)\right]e_t+O(\varepsilon^2),
 $$
 
-and the Trotter product of these kernels gives the sum over paths $K=\int\mathcal{D}r_x\,\mathcal{D}r_y\,\mathcal{D}r_z\,\exp(iS[r_x,r_y,r_z]/\hbar)e_t$.
+and the Trotter product of these kernels gives the sum over paths $K=\int\mathcal{D}r_x\,\mathcal{D}r_y\,\mathcal{D}r_z\,\exp(iS[r_x,r_y,r_z]\frac{k_m}{m\,c})e_t$.
 
-The free kernel is $K_0=(m/2\pi i\hbar r'_t)^{3/2}\exp(im|r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z|^2/2\hbar r'_t)$, with the composition law verified on a two-packet superposition to a relative error of order $10^{-14}$. The harmonic-oscillator kernel is
+The free kernel is $K_0=(\frac{k_m}{2\,c\,\pi\,i\,r'_{t}})^{3/2}\exp(im|r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z|^\frac{k_m}{m\,c\,r'_{t}})$, with the composition law verified on a two-packet superposition to a relative error of order $10^{-14}$. The harmonic-oscillator kernel is
 
 $$
 K_\omega=\left(\frac{\omega\,k_m}{2\pi i c\sin\omega r'_t}\right)^{1/2}
-\exp\left[\frac{im\omega}{2\hbar\sin\omega r'_t}\Big((r_x^2+r_{0x}^2)\cos\omega r'_t-2r_xr_{0x}\Big)\right],
+\exp\left[\frac{im\omega}{\frac{2\,m\,c}{k_m}\sin\omega r'_t}\Big((r_x^2+r_{0x}^2)\cos\omega r'_t-2r_xr_{0x}\Big)\right],
 $$
 
-central, with caustic poles at $\omega r'_t=n\pi$; its composition law was verified to $10^{-14}$, its solution of the Schrödinger equation to the $10^{-8}$ level of the finite-difference check, and its $\omega\to0$ limit to the free kernel with a difference falling as $\omega^2$. After the Wick rotation it becomes the Mehler kernel. The kernel reproduces the Schrödinger equation through the infinitesimal expansion $\tilde{Ξ}_{\mathrm{sp}}(r_x,r'_t+\varepsilon)=\tilde{Ξ}_{\mathrm{sp}}-\frac{i\varepsilon}{\hbar}V\tilde{Ξ}_{\mathrm{sp}}+\frac{i c\varepsilon}{2\,k_m}\frac{\partial^2\tilde{Ξ}_{\mathrm{sp}}}{\partial r_x^2}+O(\varepsilon^2)$, verified on a two-Gaussian superposition to a relative error of about $2\times10^{-11}$.
+central, with caustic poles at $\omega r'_t=n\pi$; its composition law was verified to $10^{-14}$, its solution of the Schrödinger equation to the $10^{-8}$ level of the finite-difference check, and its $\omega\to0$ limit to the free kernel with a difference falling as $\omega^2$. After the Wick rotation it becomes the Mehler kernel. The kernel reproduces the Schrödinger equation through the infinitesimal expansion $\tilde{Ξ}_{\mathrm{sp}}(r_x,r'_t+\varepsilon)=\tilde{Ξ}_{\mathrm{sp}}-\frac{k_m\,i\,\varepsilon}{m\,c}V\tilde{Ξ}_{\mathrm{sp}}+\frac{i c\varepsilon}{2\,k_m}\frac{\partial^2\tilde{Ξ}_{\mathrm{sp}}}{\partial r_x^2}+O(\varepsilon^2)$, verified on a two-Gaussian superposition to a relative error of about $2\times10^{-11}$.
 
-The semiclassical limit of the path integral is the van Vleck kernel $K\approx(2\pi i\hbar)^{-3/2}|\det\partial^2S_{\mathrm{cl}}/\partial x_i\partial x_f|^{1/2}\exp(iS_{\mathrm{cl}}/\hbar)$, central, with the Maslov phases arising from the central square root of $i$; the free kernel is exact at all times and the oscillator kernel is exact away from its caustics. The framework thus supplies the centrality of the kernel, the scalar reduction of the path integral, and the central square roots; it does not supply the measure, the space of paths, or a dynamical module factor, and it adds no prediction distinguishing the reformulation from scalar path-integral quantum physics.
+The semiclassical limit of the path integral is the van Vleck kernel $K\approx(\frac{2\,m\,c\,\pi\,i}{k_m})^{-3/2}|\det\partial^2 S_{\mathrm{cl}}/\partial x_i\partial x_f|^{1/2}\exp(\frac{k_m\,iS_{\mathrm{cl}}}{m\,c})$, central, with the Maslov phases arising from the central square root of $i$; the free kernel is exact at all times and the oscillator kernel is exact away from its caustics. The framework thus supplies the centrality of the kernel, the scalar reduction of the path integral, and the central square roots; it does not supply the measure, the space of paths, or a dynamical module factor, and it adds no prediction distinguishing the reformulation from scalar path-integral quantum physics.
 
 ## Summary of Notation
 
@@ -348,13 +347,13 @@ The semiclassical limit of the path integral is the van Vleck kernel $K\approx(2
 | $\mathbb{B}_{C}$ | Centre; home of the phase and the kernel |
 | $\mathbb{B}_{\Psi}$, $\mathbb{B}_{\Phi}$ | Hermitian and anti-Hermitian sectors |
 | $\mathbb{B}\tilde\Pi\cong\mathbb{C}^2$ | State module |
-| $H=[-\frac{\hbar c}{2\,k_m}\nabla^2+V]e_t$ | Central Hamiltonian |
-| $\tilde Q(r'_t)=\exp(-iHr'_t/\hbar)$ | Evolution operator; central $*$-unitary, semigroup |
+| $H=[-\frac{m\,c^{2}}{2\,k_m^{2}}\nabla^2+V]e_t$ | Central Hamiltonian |
+| $\tilde Q(r'_t)=\exp(-\frac{k_m\,iHr'_{t}}{m\,c})$ | Evolution operator; central $*$-unitary, semigroup |
 | $K(x_f\,\vec e_x+y_f\,\vec e_y+z_f\,\vec e_z,r'_{t,f};x_i\,\vec e_x+y_i\,\vec e_y+z_i\,\vec e_z,r'_{t,i})=Ke_t$ | Position kernel; central |
-| $K_\varepsilon(r_{2x}\,\vec e_x+r_{2y}\,\vec e_y+r_{2z}\,\vec e_z,r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)$ | Short-time kernel; phase $=\frac{i}{\hbar}(\mathrm{Lag}\varepsilon)$ |
+| $K_\varepsilon(r_{2x}\,\vec e_x+r_{2y}\,\vec e_y+r_{2z}\,\vec e_z,r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)$ | Short-time kernel; phase $=\frac{k_m\,i}{m\,c}(\mathrm{Lag}\varepsilon)$ |
 | $\mathcal{D}x\,\mathcal{D}y\,\mathcal{D}z$ | Path-integral measure; defined by the Trotter limit |
 | $S[r_x,r_y,r_z]=\int \mathrm{Lag}\,dr'_t$ | Action; real scalar |
-| $K_0=(m/2\pi i\hbar r'_t)^{3/2}\exp(im|r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z|^2/2\hbar r'_t)$ | Free kernel |
+| $K_0=(\frac{k_m}{2\,c\,\pi\,i\,r'_{t}})^{3/2}\exp(im|r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z|^\frac{k_m}{m\,c\,r'_{t}})$ | Free kernel |
 | $K_\omega$ | Oscillator kernel; poles at $\omega r'_t=n\pi$ |
 | $S_{\mathrm{cl}}=\frac{m\omega}{2\sin\omega r'_t}[(r_x^2+r_{0x}^2)\cos\omega r'_t-2r_xr_{0x}]$ | Oscillator classical action |
 | $K_\omega^E$ | Mehler kernel; image of $K_\omega$ under $r'_t\to-i\tau$ |

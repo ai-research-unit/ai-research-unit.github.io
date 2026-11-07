@@ -4,7 +4,7 @@
 
 The Rarita–Schwinger field is the field of spin $\tfrac32$: a vector-spinor $\tilde{Ξ}_{\mathrm{sp},\mu}$, carrying one Lorentz vector index and one Dirac spinor index, subject to the constraint that its trace vanish. As a classical field equation the Rarita–Schwinger equation is the subject of the companion article *The Rarita–Schwinger Equation: Spin 3/2 in Biquaternionic Form*; the present article takes that equation as given and develops the **canonical quantization** of the field in the biquaternion framework: the constraint structure, the mode expansion, the anticommutators, the count of physical polarizations, and the gauge and ghost structure of the massless case.
 
-**Units.** Throughout, a four-momentum is $(p_0,\vec p)$ with $p_0=E/c$, the mass shell is $E^2=\vec p^{\,2}c^2+\hbar^2c^2k_m^2$, and every mass enters through the mass wave number $k_m=mc/\hbar$.
+**Units.** Throughout, a four-momentum is $(p_0,\vec p)$ with $p_0=E/c$, the mass shell is $E^2=\vec p^{\,2}c^2+m^{2}\,c^{4}$, and every mass enters through the mass wave number $k_m=mc/\hbar$.
 
 The biquaternion framework is well suited to this field, because the two indices of $\tilde{Ξ}_{\mathrm{sp},\mu}$ correspond to the two kinds of object the framework distinguishes. The vector index carries the **material** vector representation, which the article on integer-spin quantization identifies with the adjoint action on the vector part $V\subset\mathbb{B}_{\Phi}$; the spinor index carries the representation that the Dirac article identifies as the spin-$\tfrac12$ carrier. The Rarita–Schwinger field is therefore the tensor product of the two, and its decomposition is the framework's own:
 
@@ -43,7 +43,7 @@ $$
 \mathbb{D}_p\tilde{Ξ}_{\mathrm{sp}}:=\sum_\mu\varepsilon_\mu\,i\,e_\mu\,\tilde{Ξ}_{\mathrm{sp}}\,\vec e_{\nu(\mu)}\,p_\mu ,
 $$
 
-with $\mathbb{D}^2=\Box$ and $\mathbb{D}_p^2=p^2/\hbar^2$, which is $k_m^{2}$ on the mass shell; the minus sign of $\mathbb{D}$ is the product of the imaginary unit of the frame cell and the one the Dirac operator carries, $i\cdot i=-1$, and $\mathbb{D}_p$ keeps the single one of the cell. The second is the **trace spinor** of a vector-spinor, the metric contraction of its vector index with the frame cells,
+with $\mathbb{D}^2=\Box$ and $\mathbb{D}_p^2=\frac{k_m^{2}\,p^{2}}{m^{2}\,c^{2}}$, which is $k_m^{2}$ on the mass shell; the minus sign of $\mathbb{D}$ is the product of the imaginary unit of the frame cell and the one the Dirac operator carries, $i\cdot i=-1$, and $\mathbb{D}_p$ keeps the single one of the cell. The second is the **trace spinor** of a vector-spinor, the metric contraction of its vector index with the frame cells,
 
 $$
 \Sigma(\tilde{Ξ}_{\mathrm{sp}}):=\sum_\mu\varepsilon_\mu\,i\,e_\mu\,\tilde{Ξ}_{\mathrm{sp},\mu}\,\vec e_{\nu(\mu)} .

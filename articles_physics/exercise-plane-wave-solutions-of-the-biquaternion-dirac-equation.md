@@ -107,7 +107,7 @@ $$
 
 which is the mass shell of Problem 6 and the Klein–Gordon equation of the first part.
 
-**Conventions.** The solutions carry $\hbar$ and $c$ explicitly; Problem 6 collects the same expressions in the mass-length form. The frame is the $\mathbb{B}_{\Phi}$ frame of *Frame and Metric Conventions*, §*The $\mathbb{B}_{\Phi}$ Frame*, and the values are read on its third direction, $\vec e_z$. The helicity direction is $\vec u_p=\vec p/\lvert\vec p\rvert$, and the helicity element is $\tilde{Ζ}=i\vec u_p$, a root of the central value $+1$, $\tilde{Ζ}^2=e_t$. The Hermitian conjugation $^{*}$ is the one of *Algebra and Element Conventions*, §*The Conjugations*, and the contraction of the gradient with a momentum is written out rather than slashed, as *Index Notation and Corpus Conventions* requires: hence the element $i\tilde P$ for the symbol and no slash anywhere in the article.
+**Conventions.** The solutions carry $\frac{m\,c}{k_m}$ and $c$ explicitly; Problem 6 collects the same expressions in the mass-length form. The frame is the $\mathbb{B}_{\Phi}$ frame of *Frame and Metric Conventions*, §*The $\mathbb{B}_{\Phi}$ Frame*, and the values are read on its third direction, $\vec e_z$. The helicity direction is $\vec u_p=\vec p/\lvert\vec p\rvert$, and the helicity element is $\tilde{Ζ}=i\vec u_p$, a root of the central value $+1$, $\tilde{Ζ}^2=e_t$. The Hermitian conjugation $^{*}$ is the one of *Algebra and Element Conventions*, §*The Conjugations*, and the contraction of the gradient with a momentum is written out rather than slashed, as *Index Notation and Corpus Conventions* requires: hence the element $i\tilde P$ for the symbol and no slash anywhere in the article.
 
 ## Problem 1: The solutions at rest and at general momentum
 
@@ -328,10 +328,10 @@ $$
 which is the parent's condition
 
 $$
-\boxed{\;\tilde P\tilde P^{\natural}= -\hbar^2k_m^2\;}.
+\boxed{\;\tilde P\tilde P^{\natural}= -m^{2}\,c^{2}}.
 $$
 
-Equivalently, with $E=\hbar\omega$ and $\vec p=\hbar\vec k$, the norm is quadratic, so $\langle\tilde P\,k_{\mathrm{mo}}\rangle_{\natural}=\langle\tilde P\rangle_{\natural}/\hbar^2=-k_m^{2}$. The mass shell is not a new postulate: it is the statement that the four-wavevector is a timelike element of $\mathbb{B}_{\Phi}$ with the same quaternionic norm as the four-momentum. Here $k_m=mc/\hbar$ and $k_{\mathrm{mo}}=p/\hbar$ are the mass and momentum lengths.
+Equivalently, with $E=\frac{m\,c\,\omega}{k_m}$ and $\vec p=\frac{m\,c\,\vec k}{k_m}$, the norm is quadratic, so $\langle\tilde P\,k_{\mathrm{mo}}\rangle_{\natural}=\langle\tilde P\rangle_{\natural}\frac{k_m^{2}}{m^{2}\,c^{2}}=-k_m^{2}$. The mass shell is not a new postulate: it is the statement that the four-wavevector is a timelike element of $\mathbb{B}_{\Phi}$ with the same quaternionic norm as the four-momentum. Here $k_m=mc/\hbar$ and $k_{\mathrm{mo}}=\frac{k_m\,p}{m\,c}$ are the mass and momentum lengths.
 
 The two roots $\omega=\pm\sqrt{c^2\vec k^2+c^2k_m^{2}}$ are the two frequency branches, and they are the two families $\tilde w$ and $\tilde v$ constructed above; the two helicity values within each branch give the four-dimensional complex solution space. As a numerical check, for an electron ($mc^2=0.510998950\ \mathrm{MeV}$) at $\lvert\vec p\rvert=1\ \mathrm{MeV}/c$, the dispersion gives $E=1.122996\ \mathrm{MeV}$ and $E^2-\vec p^2c^2=0.261120\ \mathrm{MeV}^2=(mc^2)^2$; the wave biquaternion has $\langle\tilde P\,k_{\mathrm{mo}}\rangle_{\natural}=-6.706054\times10^{24}\ \mathrm{m}^{-2}$, agreeing with $-k_m^{2}$ to the digits shown.
 
@@ -354,7 +354,7 @@ so that left multiplication by $\tilde{Ζ}$ has eigenvalues $\pm1$, each twice, 
 **The piece determinant.** On a piece the pair, written on the two parts, has the two diagonal entries $-m$ and the two off-diagonal entries $i\tilde P$ and $i\tilde P^{\natural}$. The four are left multiplications by elements, and the elements commute, so the determinant of the pair is the determinant of the entries taken as numbers of that commutative algebra:
 
 $$
-\det=-m\cdot(-m)-(i\tilde P)(i\tilde P^{\natural})=m^2+\tilde P\tilde P^{\natural}=\hbar^2k_m^2-p^2 .
+\det=-m\cdot(-m)-(i\tilde P)(i\tilde P^{\natural})=m^2+\tilde P\tilde P^{\natural}=m^{2}\,c^{2}-p^2 .
 $$
 
 The same number comes from the spectrum. The off-diagonal block squares to $(i\tilde P)(i\tilde P^{\natural})=p^2$ times the identity, so for $p^2>0$ the two eigenvalues of the block on the piece are
@@ -363,21 +363,21 @@ $$
 -m+\sqrt{p^2},\qquad -m-\sqrt{p^2},
 $$
 
-and their product is $\hbar^2k_m^2-p^2$. The mass term is a multiple of the identity, so it shifts the two eigenvalues equally and enters the piece determinant once, and the determinant of the whole symbol is the product over the two pieces,
+and their product is $m^{2}\,c^{2}-p^2$. The mass term is a multiple of the identity, so it shifts the two eigenvalues equally and enters the piece determinant once, and the determinant of the whole symbol is the product over the two pieces,
 
 $$
-\boxed{\;\det_{\mathrm{pair}}=\bigl(\hbar^2k_m^2-p^2\bigr)^2\;}
+\boxed{\;\det_{\mathrm{pair}}=\bigl(m^{2}\,c^{2}-p^2\bigr)^2\;}
 $$
 
 the square of the Klein–Gordon symbol. The two pieces carry the same pair of eigenvalues: they are isospectral, and the common value of their determinants is the datum a single piece carries.
 
-**The mass shell is the vanishing of a piece determinant.** Each determinant is $\hbar^2k_m^2-p^2$, so the pair is singular exactly when $p^2=\hbar^2k_m^2$. At that momentum each piece has a one-dimensional kernel: two zero modes, one per helicity, and these are the two helicity states of the particle. Off the shell each piece is invertible and the propagator is the inverse of the pair.
+**The mass shell is the vanishing of a piece determinant.** Each determinant is $m^{2}\,c^{2}-p^2$, so the pair is singular exactly when $p^2=m^{2}\,c^{2}$. At that momentum each piece has a one-dimensional kernel: two zero modes, one per helicity, and these are the two helicity states of the particle. Off the shell each piece is invertible and the propagator is the inverse of the pair.
 
-**Worked case, $\vec p\parallel\vec e_z$.** With $B=\lvert\vec p\rvert$ and the mass $m$, the pieces are the two helicity eigenspaces. For $m=1.3$, $E=2$, $B=0.9$: $p^2=3.19$ and $\sqrt{p^2}=1.786057$, so each piece determinant is $\hbar^2k_m^2-p^2=-1.5$, each piece spectrum is $\{-3.086057,\,0.486057\}$, and the determinant of the pair is $2.25=(\hbar^2k_m^2-p^2)^2$.
+**Worked case, $\vec p\parallel\vec e_z$.** With $B=\lvert\vec p\rvert$ and the mass $m$, the pieces are the two helicity eigenspaces. For $m=1.3$, $E=2$, $B=0.9$: $p^2=3.19$ and $\sqrt{p^2}=1.786057$, so each piece determinant is $m^{2}\,c^{2}-p^2=-1.5$, each piece spectrum is $\{-3.086057,\,0.486057\}$, and the determinant of the pair is $2.25=(m^{2}\,c^{2}-p^2)^2$.
 
 **Worked case, on the shell.** For $m=1.3$ and $\vec p=(0.4,-0.7,0.9)$ the energy is $E=\sqrt{m^2+\vec p^{\,2}}=1.774824$. Each piece determinant is zero, each piece spectrum is $\{-2m,\,0\}=\{-2.6,\,0\}$, and the pair has rank two, with a one-dimensional kernel per helicity.
 
-**Numerical check.** The identities were recomputed on 100 random real four-momenta. The departure of the symbol from commuting with left multiplication by $\tilde{Ζ}$ was at most $5.4\times10^{-16}$; $\tilde K^{\natural}\tilde K$ and $\tilde P\tilde P^{\natural}$ departed from $\pm p^2$ by nothing to machine precision; $\tilde{Ζ}^2$ from $e_t$, $2.2\times10^{-16}$; the eigenvalues of the block from $-m\pm\sqrt{p^2}$, $8.0\times10^{-15}$; the product of the eight eigenvalues from $(\hbar^2k_m^2-p^2)^4$, $1.4\times10^{-57}$; and the amplitude ratio of Problem 1 from $(E\mp\lvert\vec p\rvert)/(E\pm\lvert\vec p\rvert)$ to $1.6\times10^{-14}$ relative. The two kernels of Problem 4 were recomputed on six null momenta: each of two complex dimensions, disjoint, and the helicity residual at most $6.5\times10^{-15}$.
+**Numerical check.** The identities were recomputed on 100 random real four-momenta. The departure of the symbol from commuting with left multiplication by $\tilde{Ζ}$ was at most $5.4\times10^{-16}$; $\tilde K^{\natural}\tilde K$ and $\tilde P\tilde P^{\natural}$ departed from $\pm p^2$ by nothing to machine precision; $\tilde{Ζ}^2$ from $e_t$, $2.2\times10^{-16}$; the eigenvalues of the block from $-m\pm\sqrt{p^2}$, $8.0\times10^{-15}$; the product of the eight eigenvalues from $(m^{2}\,c^{2}-p^2)^4$, $1.4\times10^{-57}$; and the amplitude ratio of Problem 1 from $(E\mp\lvert\vec p\rvert)/(E\pm\lvert\vec p\rvert)$ to $1.6\times10^{-14}$ relative. The two kernels of Problem 4 were recomputed on six null momenta: each of two complex dimensions, disjoint, and the helicity residual at most $6.5\times10^{-15}$.
 
 **What the splitting is, and what it is not.** It says that the mass does not see the helicity, and therefore that a massive state is a pair of helicity pieces with equal spectra and unequal contents. The numbers inside a piece depend on the choice of basis within an eigenspace and are not physical; the determinant and the spectrum are. Three boundaries belong with the statement. At $\vec p=0$ the element $\tilde{Ζ}$ is undefined: the wave element is $im\,e_t$ and the pair is $-\tilde{Ξ}_{\mathrm{sp},R}=k_m\tilde{Ξ}_{\mathrm{sp},L}$, so the split is the split into the two values, the rest-frame split of Problem 1, and the label is a rest-frame value and not the helicity. For a spacelike momentum $p^2<0$ the two eigenvalues are complex and the piece determinant $m^2+\lvert p^2\rvert$ does not vanish: that is the off-shell region, not a second shell. For a null momentum $p^2=0$ the identity still holds, the piece determinant vanishes, and the kernel is two-dimensional and entirely of one helicity: this is the massless case of Problem 4.
 
@@ -390,8 +390,8 @@ The seven problems test the parent's plane-wave solutions and confirm them in th
 3. **Spin sums.** For every element, $\sum_\pm\tilde w_\pm\langle\tilde w_\pm,\tilde{Ξ}\rangle_{\mathrm D}=(i\tilde P+m)\tilde{Ξ}$ and $\sum_\pm\tilde v_\pm\langle\tilde v_\pm,\tilde{Ξ}\rangle_{\mathrm D}=(i\tilde P-m)\tilde{Ξ}$ read as products of elements; the closure $\tilde\nabla^{\natural}\tilde\nabla=\Box$ gives $\Box=m^2$ on the shell, and $\tilde P^{\natural}\tilde P=-m^2$.
 4. **Massless limit.** The pair decouples, the field annihilated by $\tilde\nabla$ keeps one helicity and the field annihilated by $\tilde\nabla^{\natural}$ the other, and the two labels are locked: positive helicity with the first member and negative helicity with the second.
 5. **The two parts.** The value is read by $\tilde Q\mapsto-i\tilde Q\vec e_z$, of spectrum $+1,+1,-1,-1$; a left multiplication keeps it and a right multiplication by $\vec e_x$ or $\vec e_y$ exchanges it; the change of the reading is right multiplication by $\tilde Q_{\mathrm{disp}}=(e_t+\vec e_y)/\sqrt2$, which sends the reading from $\vec e_z$ to $\vec e_x$ and touches no derivative.
-6. **Mass shell.** The condition $\tilde P\tilde P^{\natural}= -\hbar^2k_m^2$ is the quaternionic-norm statement $\langle\tilde P\,k_{\mathrm{mo}}\rangle_{\natural}=-k_m^{2}$, and reproduces $E^2=\vec p^{\,2}c^2+m^4c^4$.
-7. **Helicity pieces.** The scalar square of the wave is $\tilde K^{\natural}\tilde K=p^2$; the symbol commutes with left multiplication by $\tilde{Ζ}=i\vec u_p$, so the carrier splits into two two-dimensional eigenspaces of piece determinant $\hbar^2k_m^2-p^2$; the pieces are isospectral, the determinant of the pair is $(\hbar^2k_m^2-p^2)^2$, and the mass shell is the vanishing of either piece determinant, with a one-dimensional kernel per helicity.
+6. **Mass shell.** The condition $\tilde P\tilde P^{\natural}= -m^{2}\,c^{2}$ is the quaternionic-norm statement $\langle\tilde P\,k_{\mathrm{mo}}\rangle_{\natural}=-k_m^{2}$, and reproduces $E^2=\vec p^{\,2}c^2+m^4c^4$.
+7. **Helicity pieces.** The scalar square of the wave is $\tilde K^{\natural}\tilde K=p^2$; the symbol commutes with left multiplication by $\tilde{Ζ}=i\vec u_p$, so the carrier splits into two two-dimensional eigenspaces of piece determinant $m^{2}\,c^{2}-p^2$; the pieces are isospectral, the determinant of the pair is $(m^{2}\,c^{2}-p^2)^2$, and the mass shell is the vanishing of either piece determinant, with a one-dimensional kernel per helicity.
 
 Two objects are needed by the exercise and are not given in the parent: the negative-frequency solutions $\tilde v$ (Problem 1) and the change-of-reading element $\tilde Q_{\mathrm{disp}}$ (Problem 5). The constructions above reproduce the parent's stated results.
 
@@ -412,9 +412,9 @@ Two objects are needed by the exercise and are not given in the parent: the nega
 | $i\tilde P\,\tilde{Ξ}_{\mathrm{sp},R}=m\tilde{Ξ}_{\mathrm{sp},L}$ and $i\tilde P^{\natural}\tilde{Ξ}_{\mathrm{sp},L}=m\tilde{Ξ}_{\mathrm{sp},R}$ | The pair: the gradient and the mass, momentum space |
 | $\langle\tilde{Ξ}_{\mathrm{sp}},\tilde{Ξ}\rangle_{\mathrm D}=\mathrm{Tr}\bigl(\tilde{Ξ}_{\mathrm{sp}}^*\tilde{Ξ}\,i\vec e_x\bigr)$ | Dirac pairing, twisted by the timelike unit |
 | $\tilde Q_{\mathrm{disp}}=(e_t+\vec e_y)/\sqrt2$ | Change of the reading, $\vec e_z$ to $\vec e_x$ |
-| $\tilde P\tilde P^{\natural}= -\hbar^2k_m^2$ | Mass-shell condition |
+| $\tilde P\tilde P^{\natural}= -m^{2}\,c^{2}$ | Mass-shell condition |
 | $p^2=E^2/c^2-\vec p^{\,2}$ | Interval of the four-momentum |
-| $\hbar^2k_m^2-p^2$ | Piece determinant, repeated on the two pieces |
+| $m^{2}\,c^{2}-p^2$ | Piece determinant, repeated on the two pieces |
 | $\tilde{Ζ}=i\vec u_p$, $\vec u_p=\vec p/\lvert\vec p\rvert$ | Helicity element, $\tilde{Ζ}^2=e_t$; its two values grade the carrier |
 | $-m\pm\sqrt{p^2}$ | Spectrum of the pair on a helicity piece |
 

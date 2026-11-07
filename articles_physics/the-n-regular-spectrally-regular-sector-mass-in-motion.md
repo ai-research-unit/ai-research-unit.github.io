@@ -71,7 +71,7 @@ $$
 \lambda_\pm=i\left(\frac{E}{c}\pm\lvert\vec p\rvert\right)
 =i\,mc\,e^{\pm\theta_{\mathrm{rpd}}},
 \qquad
-\cosh\theta_{\mathrm{rpd}}=\frac{E}{mc},
+\cosh\theta_{\mathrm{rpd}}=\frac{E}{mc^{2}},
 \qquad
 \sinh\theta_{\mathrm{rpd}}=\frac{\lvert\vec p\rvert}{mc}.
 $$
@@ -227,7 +227,7 @@ No dynamics is supplied. The cell is a property of one element at one instant; t
 | $e_\pm$ | the spectral idempotents |
 | $\tilde\Pi_\pm,\vec\Upsilon_\pm$ | the normalised Peirce basis |
 | $S_\pm=\mathbb{B}\tilde\Pi_\pm$ | the two spinor spaces |
-| $\theta_{\mathrm{rpd}}$ | the rapidity, $\cosh\theta_{\mathrm{rpd}}=E/(mc)$ |
+| $\theta_{\mathrm{rpd}}$ | the rapidity, $\cosh\theta_{\mathrm{rpd}}=E/(mc^{2})$ |
 | $r,\alpha,\tilde U_{\mathrm b},\tilde u_{\mathrm r}$ | the polar factors |
 
 ## Further Reading

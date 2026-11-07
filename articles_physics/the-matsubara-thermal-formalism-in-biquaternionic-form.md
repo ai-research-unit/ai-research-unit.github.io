@@ -2,7 +2,7 @@
 
 ## Introduction
 
-The **Matsubara formalism** is the Euclidean formulation of quantum field theory at finite temperature. The thermal partition function $Z=\mathrm{Tr}\,\exp(-\beta H)$ is written as a functional integral over fields living on a Euclidean space whose time direction is compactified to a circle of circumference $\beta=\hbar/(k_BT)$; the Fourier modes on that circle are the **Matsubara frequencies**, and the propagator becomes a discrete sum over them rather than a continuous integral. It is the standard machinery of thermal field theory, and it is the analytic continuation of the real-time formalisms.
+The **Matsubara formalism** is the Euclidean formulation of quantum field theory at finite temperature. The thermal partition function $Z=\mathrm{Tr}\,\exp(-\beta H)$ is written as a functional integral over fields living on a Euclidean space whose time direction is compactified to a circle of circumference $\beta=\frac{m\,c}{k_m\,k_{B}\,T}$; the Fourier modes on that circle are the **Matsubara frequencies**, and the propagator becomes a discrete sum over them rather than a continuous integral. It is the standard machinery of thermal field theory, and it is the analytic continuation of the real-time formalisms.
 
 This article asks what the biquaternion algebra $\mathbb{B}$ contributes. The answer is one structural identification and a set of transcriptions, stated at the outset.
 
@@ -23,7 +23,7 @@ with the frequency along the imaginary scalar direction of $\mathbb{B}_{\Phi}$ a
 $$
 \mathcal{M}_E(\tilde P_E) = \langle\tilde P_E,\tilde P_E\rangle_{*}+m^2 = \omega_n^2+\vec p^2+m^2 = k_{\mathrm{eu}}^2+m^2 > 0 ,
 $$
-positive because the Hermitian form is positive definite of signature $(8,0)$ and not because the axes are rotated: the biquaternion norm of the same element, $\langle\tilde P_E\rangle_{\natural}=-\omega_n^2+\vec p^2$, is indefinite and cannot serve, being the interval and not the probability. So the Euclidean propagator $1/(k_{\mathrm{eu}}^2+m^2)$ has no real pole; the Lorentzian mass shell $\tilde P\tilde P^{\natural}= -\hbar^2k_m^2$ maps to $k_{\mathrm{eu}}^2=-m^2$, which is reached only at complex momentum. This is the framework's statement that the thermal propagator's analytic structure is a statement about the complexification of a material direction.
+positive because the Hermitian form is positive definite of signature $(8,0)$ and not because the axes are rotated: the biquaternion norm of the same element, $\langle\tilde P_E\rangle_{\natural}=-\omega_n^2+\vec p^2$, is indefinite and cannot serve, being the interval and not the probability. So the Euclidean propagator $1/(k_{\mathrm{eu}}^2+m^2)$ has no real pole; the Lorentzian mass shell $\tilde P\tilde P^{\natural}= -m^{2}\,c^{2}$ maps to $k_{\mathrm{eu}}^2=-m^2$, which is reached only at complex momentum. This is the framework's statement that the thermal propagator's analytic structure is a statement about the complexification of a material direction.
 - **Established (algebra).** The spin–statistics theorem of the companion article fixes the periodicity: bosonic fields are periodic and fermionic fields antiperiodic on the thermal circle, and the Matsubara frequencies are therefore
 $$
 \omega_n = \frac{2\pi n}{\beta}\ \ (\text{bosons}),
@@ -57,9 +57,9 @@ On this element the interval keeps its sign, $\langle\tilde P_E\rangle_{\natural
 
 **The thermal circle.** The complexified material time is compactified,
 $$
-r'_t \sim r'_t+i\beta ,
+r'_t \sim  r'_t+i\beta ,
 \qquad
-\beta=\hbar/(k_BT),
+\beta=\frac{m\,c}{k_m\,k_{B}\,T},
 $$
 so the configuration manifold is $S^1_\beta\times\mathbb{R}^3$ with the circle of circumference $\beta$ drawn in the imaginary material direction; write $\tau$ for the real parameter along the circle. The compactification is the statement of thermal equilibrium: the partition function $Z=\mathrm{Tr}\,\exp(-\beta H)$ is the functional integral on that manifold, with the circle's circumference playing the role of the inverse temperature. This is standard (Matsubara 1955; Fetter–Walecka; Kapusta–Gale) and is transcribed.
 
@@ -92,7 +92,7 @@ $$
 $$
 and the corresponding thermal wave biquaternion is the material element $\tilde P_E=i\omega_n e_t+\vec p$, whose Hermitian square is $\langle\tilde P_E,\tilde P_E\rangle_{*}=\omega_n^2+\vec p^2=k_{\mathrm{eu}}^2$.
 
-**The propagator in the material sector.** In the framework the Lorentzian propagator's denominator is the mass-shell operator $\mathcal{M}(\tilde P)=\tilde P\tilde P^{\natural}+\hbar^2k_m^2=-p^2+m^2$ at the material wave biquaternion $\tilde P=i(E/c)e_t+\vec p\in\mathbb{B}_{\Phi}$. On the thermal grid the frequency sits along the imaginary scalar direction, $\tilde P_E=i\omega_n e_t+\vec p$, and the denominator is the Hermitian form of that element,
+**The propagator in the material sector.** In the framework the Lorentzian propagator's denominator is the mass-shell operator $\mathcal{M}(\tilde P)=\tilde P\tilde P^{\natural}+m^{2}\,c^{2}=-p^2+m^2$ at the material wave biquaternion $\tilde P=i(E/c)e_t+\vec p\in\mathbb{B}_{\Phi}$. On the thermal grid the frequency sits along the imaginary scalar direction, $\tilde P_E=i\omega_n e_t+\vec p$, and the denominator is the Hermitian form of that element,
 $$
 \boxed{\;\langle\tilde P_E,\tilde P_E\rangle_{*}=\lvert i\omega_n\rvert^2+\lvert\vec p\rvert^2=\omega_n^2+\vec p^2=k_{\mathrm{eu}}^2 ,
 \qquad
@@ -102,7 +102,7 @@ so that
 $$
 D_E(\tilde P_E) = \frac{1}{\mathcal{M}_E(\tilde P_E)} = \frac{1}{k_{\mathrm{eu}}^2+m^2} .
 $$
-The same element read with the norm gives $\langle\tilde P_E\rangle_{\natural}=-\omega_n^2+\vec p^2$, indefinite; the interval and the probability are two forms of one element, and it is the definite one that the thermal denominator needs. The operator is central and positive for real frequencies and momenta, $k_{\mathrm{eu}}^2+m^2>0$; hence $D_E$ is a bounded, real-analytic function on the Matsubara grid, and it has no pole there. The Lorentzian mass shell $\tilde P\tilde P^{\natural}= -\hbar^2k_m^2$ becomes $k_{\mathrm{eu}}^2=-m^2$, reached only at complex momentum. This is the framework's statement of the standard fact that the propagator's singularities lie off the real axis, and it shows that the analytic structure of the thermal propagator is a statement about the complexified material direction: the circle is a material direction, and the pole is at complex momentum on that axis.
+The same element read with the norm gives $\langle\tilde P_E\rangle_{\natural}=-\omega_n^2+\vec p^2$, indefinite; the interval and the probability are two forms of one element, and it is the definite one that the thermal denominator needs. The operator is central and positive for real frequencies and momenta, $k_{\mathrm{eu}}^2+m^2>0$; hence $D_E$ is a bounded, real-analytic function on the Matsubara grid, and it has no pole there. The Lorentzian mass shell $\tilde P\tilde P^{\natural}= -m^{2}\,c^{2}$ becomes $k_{\mathrm{eu}}^2=-m^2$, reached only at complex momentum. This is the framework's statement of the standard fact that the propagator's singularities lie off the real axis, and it shows that the analytic structure of the thermal propagator is a statement about the complexified material direction: the circle is a material direction, and the pole is at complex momentum on that axis.
 
 $$
 \frac{1}{\beta}\sum_{n\in\mathbb{Z}}\frac{1}{\omega_n^2+E^2} = \frac{1}{2E}\coth\frac{\beta E}{2}
@@ -248,7 +248,7 @@ This is why the article's computations are done in $\mathbb{B}_{\Phi}$ and not i
 
 ## Summary
 
-The Matsubara formalism in biquaternionic form is thermal field theory with the compactified direction identified as the material direction $i c r'_t$. The standard route to it is the Wick rotation $r'_t\to-i\tau$, which reads the wave biquaternion as $-\omega_n e_t+\vec p$ on the real scalar axis with a definite norm; this article uses instead the material-sector route, in which the computation never leaves $\mathbb{B}_{\Phi}$ and the positivity is carried by the Hermitian form rather than by the rotated metric. The two routes give the same propagator and the same frequencies. The thermal circle $r'_t\sim r'_t+i\beta$ has circumference $\beta=\hbar/(k_BT)$, which is the KMS strip width, because both are the complexification of that same material time; the wave biquaternion of the grid is material,
+The Matsubara formalism in biquaternionic form is thermal field theory with the compactified direction identified as the material direction $i c r'_t$. The standard route to it is the Wick rotation $r'_t\to-i\tau$, which reads the wave biquaternion as $-\omega_n e_t+\vec p$ on the real scalar axis with a definite norm; this article uses instead the material-sector route, in which the computation never leaves $\mathbb{B}_{\Phi}$ and the positivity is carried by the Hermitian form rather than by the rotated metric. The two routes give the same propagator and the same frequencies. The thermal circle $r'_t\sim r'_t+i\beta$ has circumference $\beta=\frac{m\,c}{k_m\,k_{B}\,T}$, which is the KMS strip width, because both are the complexification of that same material time; the wave biquaternion of the grid is material,
 $$
 \boxed{\;\tilde P_E = i\omega_n e_t+\vec p \in \mathbb{B}_{\Phi} ,
 \qquad
@@ -276,7 +276,7 @@ were checked numerically ($0.4463328$ and $0.3314319$ against $0.4463329$ and $0
 | $\mathbb{B}_{\Phi},\mathbb{B}_{\Psi}$ | Material (anti-Hermitian) and informational (Hermitian) sectors |
 | $\tilde R_\Phi=i c r'_t\,e_t+r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z$ | Material coordinate |
 | $r'_t\sim r'_t+i\beta$ | Thermal circle $S^1_\beta$: the complexified material time, compactified |
-| $\beta=\hbar/(k_BT)$ | Inverse temperature; circle circumference; KMS width |
+| $\beta=\frac{m\,c}{k_m\,k_{B}\,T}$ | Inverse temperature; circle circumference; KMS width |
 | $\tau$ | real parameter along the thermal circle |
 | $F_{\tilde Q_1\tilde Q_2}(r'_t+i\beta)=F_{\tilde Q_2\tilde Q_1}(-r'_t)$ | KMS boundary relation |
 | $\tilde{Ξ}(\tau+\beta)=\pm\tilde{Ξ}(\tau)$ | Periodic (boson) / antiperiodic (fermion) |

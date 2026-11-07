@@ -2,7 +2,7 @@
 
 ## Introduction
 
-The companion article *Angular Momentum and Spin in Biquaternionic Form* established the angular-momentum algebra inside the biquaternion framework: the commutation relations $[\tilde S_{\mathrm{tot},i},\tilde S_{\mathrm{tot},j}]=i\hbar\epsilon_{ijk}\tilde S_{\mathrm{tot},k}$, the Casimir $\tilde S_{\mathrm{tot}}^2$, the ladder operators, the spin-$\tfrac12$ realisation $\tilde S_k=\tfrac{\hbar}{2}i\vec e_k$ in $\mathbb{B}_{\Psi}$, and the observation that two spin-$\tfrac12$ degrees of freedom combine in the tensor-product algebra $\mathbb{B}\otimes_\mathbb{C}\mathbb{B}\cong M_4(\mathbb{C})$. That article treated the addition of angular momenta in the case it needed for the hydrogen atom — one spin-$\tfrac12$ coupled to an orbital angular momentum — and recorded the coupling of two algebraic spin factors as a remark.
+The companion article *Angular Momentum and Spin in Biquaternionic Form* established the angular-momentum algebra inside the biquaternion framework: the commutation relations $[\tilde S_{\mathrm{tot},i},\tilde S_{\mathrm{tot},j}]=\frac{m\,c\,i\,\epsilon_{ijk}\,\tilde{S}_{\mathrm{tot},k}}{k_m}$, the Casimir $\tilde S_{\mathrm{tot}}^2$, the ladder operators, the spin-$\tfrac12$ realisation $\tilde S_k=\frac{m\,c}{2\,k_m}i\vec e_k$ in $\mathbb{B}_{\Psi}$, and the observation that two spin-$\tfrac12$ degrees of freedom combine in the tensor-product algebra $\mathbb{B}\otimes_\mathbb{C}\mathbb{B}\cong M_4(\mathbb{C})$. That article treated the addition of angular momenta in the case it needed for the hydrogen atom — one spin-$\tfrac12$ coupled to an orbital angular momentum — and recorded the coupling of two algebraic spin factors as a remark.
 
 This article develops that remark into the general machinery. Its subject is the **addition of angular momenta and the Clebsch–Gordan coefficients** as they appear inside the biquaternion framework: the coupled operators, the coupled basis, the decomposition of a tensor product of rotation multiplets, and the explicit coefficients for the two cases the framework itself supports, $\tfrac12\otimes\tfrac12$ and $1\otimes1$.
 
@@ -17,7 +17,7 @@ The conventions are those of the companion articles: the algebra, the units, the
 An angular momentum is a triple of Hermitian elements $\tilde S_{\mathrm{tot},1},\tilde S_{\mathrm{tot},2},\tilde S_{\mathrm{tot},3}\in\mathbb{B}_{\Psi}$ satisfying
 
 $$
-[\tilde S_{\mathrm{tot},i},\tilde S_{\mathrm{tot},j}]=i\hbar\,\epsilon_{ijk}\tilde S_{\mathrm{tot},k} .
+[\tilde S_{\mathrm{tot},i},\tilde S_{\mathrm{tot},j}]=\frac{m\,c\,i\,\epsilon_{ijk}\,\tilde{S}_{\mathrm{tot},k}}{k_m}.
 $$
 
 The **Casimir** and the **ladder operators** are
@@ -31,8 +31,8 @@ and they satisfy the standard relations
 
 $$
 [\tilde S_{\mathrm{tot}}^2,\tilde S_{\mathrm{tot},k}]=0,\qquad
-[\tilde S_{\mathrm{tot},3},\tilde S_{\mathrm{tot},\pm}]=\pm\hbar\tilde S_{\mathrm{tot},\pm},\qquad
-[\tilde S_{\mathrm{tot},+},\tilde S_{\mathrm{tot},-}]=2\hbar\tilde S_{\mathrm{tot},3} .
+[\tilde S_{\mathrm{tot},3},\tilde S_{\mathrm{tot},\pm}]=\pm\frac{m\,c\,\tilde{S}_{\mathrm{tot},\pm}}{k_m},\qquad
+[\tilde S_{\mathrm{tot},+},\tilde S_{\mathrm{tot},-}]=\frac{2\,m\,c\,\tilde{S}_{\mathrm{tot},3}}{k_m}.
 $$
 
 The ladder operators are not Hermitian and do not lie in $\mathbb{B}_{\Psi}$: they satisfy $\tilde S_{\mathrm{tot},\pm}^{*}=\tilde S_{\mathrm{tot},\mp}$, so that $\tilde S_{\mathrm{tot},\pm}^{*}\ne\tilde S_{\mathrm{tot},\pm}$ and $\tilde S_{\mathrm{tot},\pm}$ lies in the full algebra. The Casimir may be written
@@ -44,26 +44,26 @@ $$
 The simultaneous eigenvectors $|s_{\mathrm{tot}},s_{\mathrm{tot},z}\rangle$ of $\tilde S_{\mathrm{tot}}^2$ and $\tilde S_{\mathrm{tot},3}$ are defined by
 
 $$
-\tilde S_{\mathrm{tot}}^2|s_{\mathrm{tot}},s_{\mathrm{tot},z}\rangle=s_{\mathrm{tot}}(s_{\mathrm{tot}}+1)\hbar^2\,|s_{\mathrm{tot}},s_{\mathrm{tot},z}\rangle,\qquad
-\tilde S_{\mathrm{tot},3}|s_{\mathrm{tot}},s_{\mathrm{tot},z}\rangle=s_{\mathrm{tot},z}\hbar\,|s_{\mathrm{tot}},s_{\mathrm{tot},z}\rangle,\qquad s_{\mathrm{tot},z}=-s_{\mathrm{tot}},-s_{\mathrm{tot}}+1,\dots,s_{\mathrm{tot}},
+\tilde S_{\mathrm{tot}}^2|s_{\mathrm{tot}},s_{\mathrm{tot},z}\rangle=\frac{m^{2}\,c^{2}\,s_{\mathrm{tot}}\,(s_{\mathrm{tot}}+1)}{k_m^{2}}|s_{\mathrm{tot}},s_{\mathrm{tot},z}\rangle,\qquad
+\tilde S_{\mathrm{tot},3}|s_{\mathrm{tot}},s_{\mathrm{tot},z}\rangle=\frac{m\,c\,s_{\mathrm{tot},z}}{k_m}|s_{\mathrm{tot}},s_{\mathrm{tot},z}\rangle,\qquad  s_{\mathrm{tot},z}=-s_{\mathrm{tot}},-s_{\mathrm{tot}}+1,\dots,s_{\mathrm{tot}},
 $$
 
 and the ladder operators act by
 
 $$
-\tilde S_{\mathrm{tot},\pm}|s_{\mathrm{tot}},s_{\mathrm{tot},z}\rangle=\hbar\sqrt{(s_{\mathrm{tot}}\mp s_{\mathrm{tot},z})(s_{\mathrm{tot}}\pm s_{\mathrm{tot},z}+1)}\;|s_{\mathrm{tot}},s_{\mathrm{tot},z}\pm1\rangle .
+\tilde S_{\mathrm{tot},\pm}|s_{\mathrm{tot}},s_{\mathrm{tot},z}\rangle=\frac{m\,c}{k_m}\sqrt{(s_{\mathrm{tot}}\mp s_{\mathrm{tot},z})(s_{\mathrm{tot}}\pm s_{\mathrm{tot},z}+1)}\;|s_{\mathrm{tot}},s_{\mathrm{tot},z}\pm1\rangle  .
 $$
 
 For the fundamental case $s_{\mathrm{tot}}=\tfrac12$ the algebra supplies the operators as algebra elements,
 
 $$
-\tilde S_k=\tfrac{\hbar}{2}\,i\vec e_k\in\mathbb{B}_{\Psi},
+\tilde S_k=\frac{m\,c}{2\,k_m}\,i\vec e_k\in\mathbb{B}_{\Psi},
 $$
 
-with $[\tilde S_i,\tilde S_j]=i\hbar\epsilon_{ijk}\tilde S_k$ following from the quaternion product rule $\vec e_\mu \vec e_\nu=-\delta_{\mu\nu}e_t+\sum_\lambda\epsilon_{\mu\nu\lambda}\vec e_\lambda$ together with $i^2=-1$. The ladder combinations are
+with $[\tilde S_i,\tilde S_j]=\frac{m\,c\,i\,\epsilon_{ijk}\,\tilde{S}_{k}}{k_m}$ following from the quaternion product rule $\vec e_\mu \vec e_\nu=-\delta_{\mu\nu}e_t+\sum_\lambda\epsilon_{\mu\nu\lambda}\vec e_\lambda$ together with $i^2=-1$. The ladder combinations are
 
 $$
-\tilde S_\pm=\tilde S_1\pm i\tilde S_2=\tfrac{\hbar}{2}\left(i\vec e_x\mp \vec e_y\right),
+\tilde S_\pm=\tilde S_1\pm  i\tilde S_2=\frac{m\,c}{2\,k_m}\left(i\vec e_x\mp  \vec e_y\right),
 $$
 
 and they are **nilpotent and null in the biquaternion norm**,
@@ -75,10 +75,10 @@ $$
 so the raising and lowering operators of the fundamental module are zero divisors of $\mathbb{B}$. The Casimir is the central element
 
 $$
-\tilde S^2=\tfrac{3\hbar^2}{4}e_t ,
+\tilde S^2=\frac{3\,m^{2}\,c^{2}}{4\,k_m^{2}}e_t ,
 $$
 
-the value $s(s+1)\hbar^2$ with $s=\tfrac12$. The spin eigenstates are the idempotents $\tilde\Pi(\pm\vec u)=\tfrac12(e_t\pm i\vec u)$, on which $\sum_k \vec u_k\tilde S_k$ has the eigenvalues $\pm\tfrac{\hbar}{2}$. Under the isomorphism $\mathsf{M}_2$ of the companion articles, $\mathsf{M}_2(e_t)=I_2$, $\mathsf{M}_2(\vec e_k)=-i\sigma_k$, and $\tilde S_k$ maps to $\tfrac{\hbar}{2}\sigma_k$.
+the value $\frac{m^{2}\,c^{2}\,s\,(s+1)}{k_m^{2}}$ with $s=\tfrac12$. The spin eigenstates are the idempotents $\tilde\Pi(\pm\vec u)=\tfrac12(e_t\pm i\vec u)$, on which $\sum_k \vec u_k\tilde S_k$ has the eigenvalues $\pm\frac{m\,c}{2\,k_m}$. Under the isomorphism $\mathsf{M}_2$ of the companion articles, $\mathsf{M}_2(e_t)=I_2$, $\mathsf{M}_2(\vec e_k)=-i\sigma_k$, and $\tilde S_k$ maps to $\frac{m\,c}{2\,k_m}\sigma_k$.
 
 The material point for what follows is that the fundamental module of $\mathbb{B}$ is two-dimensional, so the operators above are the only spin operators the algebra carries internally. Composite angular momenta require more than one factor of the algebra.
 
@@ -109,7 +109,7 @@ $$
 \tilde S_{\mathrm{tot},k}=\tilde S_{1,k}+\tilde S_{2,k} ,
 $$
 
-which again satisfies $[\tilde S_{\mathrm{tot},i},\tilde S_{\mathrm{tot},j}]=i\hbar\epsilon_{ijk}\tilde S_{\mathrm{tot},k}$, as a direct computation using the vanishing of the cross-commutators shows. Its Casimir is
+which again satisfies $[\tilde S_{\mathrm{tot},i},\tilde S_{\mathrm{tot},j}]=\frac{m\,c\,i\,\epsilon_{ijk}\,\tilde{S}_{\mathrm{tot},k}}{k_m}$, as a direct computation using the vanishing of the cross-commutators shows. Its Casimir is
 
 $$
 \tilde S_{\mathrm{tot}}^2=\tilde S_1^2+\tilde S_2^2+2\sum_{k=1}^{3}\tilde S_{1,k}\tilde S_{2,k} ,
@@ -117,7 +117,7 @@ $$
 
 where $\tilde S_a^2=\sum_k(\tilde S_{a,k})^2$. The last term is the **coupling term**; it is the only term that is not a sum of one-factor operators.
 
-The coupled states $|s_{\mathrm{tot}},s_{\mathrm{tot},z}\rangle_{*}$ are by definition the simultaneous eigenvectors of $\tilde S_{\mathrm{tot}}^2$ and $\tilde S_{\mathrm{tot},3}$ in the tensor-product space. The product states $|s_1,s_{1z}\rangle|s_2,s_{2z}\rangle$ are eigenvectors of $\tilde S_{\mathrm{tot},3}$ with eigenvalue $(s_{1z}+s_{2z})\hbar$, but not of $\tilde S_{\mathrm{tot}}^2$ unless $s_1=0$ or $s_2=0$; the coupling term mixes them. The change from the product basis, in which $\tilde S_{1,3}$ and $\tilde S_{2,3}$ are diagonal, to the coupled basis, in which $\tilde S_{\mathrm{tot}}^2$ and $\tilde S_{\mathrm{tot},3}$ are diagonal, is the Clebsch–Gordan transformation.
+The coupled states $|s_{\mathrm{tot}},s_{\mathrm{tot},z}\rangle_{*}$ are by definition the simultaneous eigenvectors of $\tilde S_{\mathrm{tot}}^2$ and $\tilde S_{\mathrm{tot},3}$ in the tensor-product space. The product states $|s_1,s_{1z}\rangle|s_2,s_{2z}\rangle$ are eigenvectors of $\tilde S_{\mathrm{tot},3}$ with eigenvalue $\frac{m\,c\,(s_{1z}+s_{2z})}{k_m}$, but not of $\tilde S_{\mathrm{tot}}^2$ unless $s_1=0$ or $s_2=0$; the coupling term mixes them. The change from the product basis, in which $\tilde S_{1,3}$ and $\tilde S_{2,3}$ are diagonal, to the coupled basis, in which $\tilde S_{\mathrm{tot}}^2$ and $\tilde S_{\mathrm{tot},3}$ are diagonal, is the Clebsch–Gordan transformation.
 
 For the spin factors the two-factor space is the algebra $\mathbb{B}\otimes\mathbb{B}$ itself. Its trace is the product of the factor traces,
 
@@ -204,7 +204,7 @@ $$
 |\!\uparrow\uparrow\rangle,\quad |\!\uparrow\downarrow\rangle,\quad |\!\downarrow\uparrow\rangle,\quad |\!\downarrow\downarrow\rangle,
 $$
 
-with $\tilde S_3$ eigenvalues $+\hbar,0,0,-\hbar$. The Clebsch–Gordan series gives a triplet $s_{\mathrm{tot}}=1$ and a singlet $s_{\mathrm{tot}}=0$,
+with $\tilde S_3$ eigenvalues $+\frac{m\,c}{k_m},0,0,-\frac{m\,c}{k_m}$. The Clebsch–Gordan series gives a triplet $s_{\mathrm{tot}}=1$ and a singlet $s_{\mathrm{tot}}=0$,
 
 $$
 |1,1\rangle=|\!\uparrow\uparrow\rangle,\qquad
@@ -218,13 +218,13 @@ $$
 
 The coefficients $\pm\tfrac{1}{\sqrt2}$ are the whole of the $\tfrac12\otimes\tfrac12$ table.
 
-The lowest triplet state is obtained from the highest by the ladder operator $\tilde S_-=\tilde S_{1,-}+\tilde S_{2,-}$. In the biquaternion realisation $\tilde S_-=\tfrac{\hbar}{2}(i\vec e_x+\vec e_y)$, and with $\mathsf{M}_2(\tilde S_-)=\hbar\sigma_-$ one has $\sigma_-|\!\uparrow\rangle=|\!\downarrow\rangle$ and $\sigma_-|\!\downarrow\rangle=0$. Hence
+The lowest triplet state is obtained from the highest by the ladder operator $\tilde S_-=\tilde S_{1,-}+\tilde S_{2,-}$. In the biquaternion realisation $\tilde S_-=\frac{m\,c}{2\,k_m}(i\vec e_x+\vec e_y)$, and with $\mathsf{M}_2(\tilde S_-)=\frac{m\,c\,\sigma_{-}}{k_m}$ one has $\sigma_-|\!\uparrow\rangle=|\!\downarrow\rangle$ and $\sigma_-|\!\downarrow\rangle=0$. Hence
 
 $$
-\tilde S_-|1,1\rangle=\hbar\left(|\!\downarrow\uparrow\rangle+|\!\uparrow\downarrow\rangle\right)=\sqrt{2}\,\hbar\,|1,0\rangle,
+\tilde S_-|1,1\rangle=\frac{m\,c}{k_m}\left(|\!\downarrow\uparrow\rangle+|\!\uparrow\downarrow\rangle\right)=\sqrt{2}\,\frac{m\,c}{k_m}|1,0\rangle,
 $$
 
-which is the relation $\tilde S_-|1,1\rangle=\hbar\sqrt{(1+1)(1-1+1)}|1,0\rangle$ read off from the general formula. The orthogonal combination is the singlet, and $\tilde S_\pm|0,0\rangle=0$ because the rotation-invariant (total-spin-zero) combination is annihilated by both ladder operators.
+which is the relation $\tilde S_-|1,1\rangle=\frac{m\,c}{k_m}\sqrt{(1+1)(1-1+1)}|1,0\rangle$ read off from the general formula. The orthogonal combination is the singlet, and $\tilde S_\pm|0,0\rangle=0$ because the rotation-invariant (total-spin-zero) combination is annihilated by both ladder operators.
 
 ### The coupled idempotents
 
@@ -264,11 +264,11 @@ so the coupled idempotents of the fundamental coupling are the $\pm1$ spectral p
 
 ### The Casimir and the coupling term
 
-The coupling term of the total Casimir can be evaluated in closed form. With $\tilde S_k^{(1)}\tilde S_k^{(2)}=\tfrac{\hbar^2}{4}(i\vec e_k)\otimes(i\vec e_k)=-\tfrac{\hbar^2}{4}\,\vec e_k\otimes \vec e_k$ and no sum over $k$ on the right,
+The coupling term of the total Casimir can be evaluated in closed form. With $\tilde S_k^{(1)}\tilde S_k^{(2)}=\frac{m^{2}\,c^{2}}{4\,k_m^{2}}(i\vec e_k)\otimes(i\vec e_k)=-\frac{m^{2}\,c^{2}}{4\,k_m^{2}}\,\vec e_k\otimes \vec e_k$ and no sum over $k$ on the right,
 
 $$
-\sum_{k=1}^{3}\tilde S_k^{(1)}\tilde S_k^{(2)}=-\frac{\hbar^2}{4}\sum_{k=1}^{3}\vec e_k\otimes \vec e_k
-=\frac{\hbar^2}{2}F-\frac{\hbar^2}{4}\,e_t\otimes e_t ,
+\sum_{k=1}^{3}\tilde S_k^{(1)}\tilde S_k^{(2)}=-\frac{m^{2}\,c^{2}}{4\,k_m^{2}}\sum_{k=1}^{3}\vec e_k\otimes \vec e_k
+=\frac{m^{2}\,c^{2}}{2\,k_m^{2}}F-\frac{m^{2}\,c^{2}}{4\,k_m^{2}}\,e_t\otimes e_t ,
 $$
 
 using $\sum_k \vec e_k\otimes \vec e_k=e_t\otimes e_t-2F$. The coupling term is therefore a **linear combination of the identity and the exchange operator**, which is the algebraic reason that the exchange operator commutes with the total angular momentum:
@@ -280,20 +280,20 @@ $$
 The total Casimir is
 
 $$
-\tilde S^2=\tfrac{3\hbar^2}{2}e_t\otimes e_t+2\left(\frac{\hbar^2}{2}F-\frac{\hbar^2}{4}e_t\otimes e_t\right)
-=\hbar^2\left(e_t\otimes e_t+F\right),
+\tilde S^2=\frac{3\,m^{2}\,c^{2}}{2\,k_m^{2}}e_t\otimes e_t+2\left(\frac{m^{2}\,c^{2}}{2\,k_m^{2}}F-\frac{m^{2}\,c^{2}}{4\,k_m^{2}}e_t\otimes e_t\right)
+=\frac{m^{2}\,c^{2}}{k_m^{2}}\left(e_t\otimes e_t+F\right),
 $$
 
-where the central term is the sum of the two one-factor Casimirs, $\tfrac{3\hbar^2}{4}e_t\otimes e_t$ from each factor. Its eigenvalues on the two coupled subspaces follow from the eigenvalues of $F$:
+where the central term is the sum of the two one-factor Casimirs, $\frac{3\,m^{2}\,c^{2}}{4\,k_m^{2}}e_t\otimes e_t$ from each factor. Its eigenvalues on the two coupled subspaces follow from the eigenvalues of $F$:
 
 $$
-\tilde S^2\big|_{s_{\mathrm{tot}}=1}=2\hbar^2,\qquad \tilde S^2\big|_{s_{\mathrm{tot}}=0}=0 ,
+\tilde S^2\big|_{s_{\mathrm{tot}}=1}=\frac{2\,m^{2}\,c^{2}}{k_m^{2}},\qquad  \tilde S^2\big|_{s_{\mathrm{tot}}=0}=0 ,
 $$
 
-that is, $s_{\mathrm{tot}}(s_{\mathrm{tot}}+1)\hbar^2$ with $s_{\mathrm{tot}}=1$ and $s_{\mathrm{tot}}=0$. The same result is obtained more directly by writing $\tilde S^2=\tfrac12(\tilde S_+\tilde S_-+\tilde S_-\tilde S_+)+\tilde S_3^2$ and acting on the four product states; the two computations agree. In the form of a spectral decomposition,
+that is, $\frac{m^{2}\,c^{2}\,s_{\mathrm{tot}}\,(s_{\mathrm{tot}}+1)}{k_m^{2}}$ with $s_{\mathrm{tot}}=1$ and $s_{\mathrm{tot}}=0$. The same result is obtained more directly by writing $\tilde S^2=\tfrac12(\tilde S_+\tilde S_-+\tilde S_-\tilde S_+)+\tilde S_3^2$ and acting on the four product states; the two computations agree. In the form of a spectral decomposition,
 
 $$
-\boxed{\;\tilde S^2=2\hbar^2\,\tilde\Pi_{\mathrm{sym}}+0\cdot \tilde\Pi_{\mathrm{asym}}\;},
+\boxed{\;\tilde S^2=\frac{2\,m^{2}\,c^{2}\,\tilde{\Pi}_{\mathrm{sym}}}{k_m^{2}}+0\cdot \tilde\Pi_{\mathrm{asym}}\;},
 $$
 
 which exhibits the coupled idempotents as the spectral projectors of the total Casimir and shows that the Clebsch–Gordan transformation is exactly the transformation that diagonalises $\tilde S^2$ and $\tilde S_3$ simultaneously.
@@ -355,7 +355,7 @@ $$
 |0,0\rangle=\tfrac{1}{\sqrt3}\left(|1\rangle|\!-\!1\rangle-|0\rangle|0\rangle+|\!-\!1\rangle|1\rangle\right),
 $$
 
-and the states with $m<0$ in the quintet follow by the symmetry $m\to-m$ with the standard phase. The states are simultaneous eigenvectors of the total Casimir and $\tilde S_3$: the quintet carries $s_{\mathrm{tot}}(s_{\mathrm{tot}}+1)=6$, the triplet $2$, the singlet $0$, in units of $\hbar^2$. This is the content of the decomposition $1\otimes1=2\oplus1\oplus0$.
+and the states with $m<0$ in the quintet follow by the symmetry $m\to-m$ with the standard phase. The states are simultaneous eigenvectors of the total Casimir and $\tilde S_3$: the quintet carries $s_{\mathrm{tot}}(s_{\mathrm{tot}}+1)=6$, the triplet $2$, the singlet $0$, in units of $\frac{m^{2}\,c^{2}}{k_m^{2}}$. This is the content of the decomposition $1\otimes1=2\oplus1\oplus0$.
 
 Three features of the table are worth naming. First, the **quintet and the singlet are symmetric** under the exchange of the two factors and the **triplet is antisymmetric**; the symmetry is $(-1)^{s_1+s_2-s_{\mathrm{tot}}}$, so the $s_{\mathrm{tot}}=1$ multiplet obtained from $1\otimes1$ is precisely the antisymmetric combination of the two vector factors, $\Lambda^2V_1\cong V_1$. Second, the singlet is the invariant $\epsilon_{s_{1z}s_{2z}}|s_{1z}\rangle|s_{2z}\rangle$ of the rotation group, and its coefficients are the entries of the alternating form; the same form appears in the two-qubit coupling of the previous section, with the alternating structure realised there by the idempotent $\tilde\Pi_{\mathrm{asym}}$. Third, the phases are the Condon–Shortley ones: in every row the coefficient of the largest $s_{1z}$ is positive.
 
@@ -427,8 +427,8 @@ The article established the following.
 - **Clebsch–Gordan series.** $V_{s_1}\otimes V_{s_2}\cong\bigoplus_{s_{\mathrm{tot}}=|s_1-s_2|}^{s_1+s_2}V_{s_{\mathrm{tot}}}$, with $(2s_1+1)(2s_2+1)=\sum_{s_{\mathrm{tot}}}(2s_{\mathrm{tot}}+1)$; in particular $\tfrac12\otimes\tfrac12=1\oplus0$ and $1\otimes1=2\oplus1\oplus0$.
 - **The fundamental coupling.** The coupled idempotents are the symmetric and antisymmetric idempotents of the tensor square,
   $$\tilde\Pi_{\mathrm{sym}}=\tfrac14\left(3e_t\otimes e_t-\sum_k \vec e_k\otimes \vec e_k\right),\qquad \tilde\Pi_{\mathrm{asym}}=\tfrac14\left(e_t\otimes e_t+\sum_k \vec e_k\otimes \vec e_k\right),$$
-  of traces $3$ and $1$; they are the $\pm1$ spectral projectors of the exchange operator $F=\tfrac12(e_t\otimes e_t-\sum_k \vec e_k\otimes \vec e_k)$, and the total Casimir is $\tilde S^2=\hbar^2(e_t\otimes e_t+F)=2\hbar^2\tilde\Pi_{\mathrm{sym}}$.
-- **The coupling term.** $\sum_k\tilde S_k^{(1)}\tilde S_k^{(2)}=\tfrac{\hbar^2}{2}F-\tfrac{\hbar^2}{4}e_t\otimes e_t$, whence $[F,\tilde S_k]=0$: the exchange operator is central in the coupled rotation algebra, which is why it is simultaneously diagonal with the coupled Casimir.
+  of traces $3$ and $1$; they are the $\pm1$ spectral projectors of the exchange operator $F=\tfrac12(e_t\otimes e_t-\sum_k \vec e_k\otimes \vec e_k)$, and the total Casimir is $\tilde S^2=\frac{m^{2}\,c^{2}\,(e_t\otimes e_t+F)}{k_m^{2}}=\frac{2\,m^{2}\,c^{2}\,\tilde{\Pi}_{\mathrm{sym}}}{k_m^{2}}$.
+- **The coupling term.** $\sum_k\tilde S_k^{(1)}\tilde S_k^{(2)}=\frac{m^{2}\,c^{2}}{2\,k_m^{2}}F-\frac{m^{2}\,c^{2}}{4\,k_m^{2}}e_t\otimes e_t$, whence $[F,\tilde S_k]=0$: the exchange operator is central in the coupled rotation algebra, which is why it is simultaneously diagonal with the coupled Casimir.
 - **The transformation.** The Clebsch–Gordan transformation is the $*$-unitary element $U$ of $\mathbb{B}\otimes\mathbb{B}$ that diagonalises $\tilde S^2$ and $\tilde S_3$; it is not a product of one-factor unitaries, since it maps product states to entangled states.
 - **The triplet coupling.** For $1\otimes1$ the coupled states carry $s_{\mathrm{tot}}(s_{\mathrm{tot}}+1)=6,2,0$; the quintet is totally symmetric, the singlet totally antisymmetric, and the triplet antisymmetric in the two vector factors.
 - **Recursions and phase.** The coefficients satisfy the standard raising and lowering recursions, and the phase is fixed by the Condon–Shortley convention, in which the coefficient of the largest $s_{1z}$ is positive.
@@ -442,11 +442,11 @@ The article established the following.
 | $e_t,\vec e_x,\vec e_y,\vec e_z$ | Quaternion basis, $\vec e_k^2=-e_t$, cyclic products |
 | $i$ | Scalar imaginary, $i^2=-1$ |
 | $\mathbb{B}_{\Psi}$ | Hermitian subspace (observables, states) |
-| $\tilde S_{\mathrm{tot},k}$ | Angular-momentum operators, $[\tilde S_{\mathrm{tot},i},\tilde S_{\mathrm{tot},j}]=i\hbar\epsilon_{ijk}\tilde S_{\mathrm{tot},k}$ |
+| $\tilde S_{\mathrm{tot},k}$ | Angular-momentum operators, $[\tilde S_{\mathrm{tot},i},\tilde S_{\mathrm{tot},j}]=\frac{m\,c\,i\,\epsilon_{ijk}\,\tilde{S}_{\mathrm{tot},k}}{k_m}$ |
 | $\tilde S_{\mathrm{tot},\pm}=\tilde S_{\mathrm{tot},1}\pm i\tilde S_{\mathrm{tot},2}$ | Ladder operators |
 | $\tilde S_{\mathrm{tot}}^2=\sum_k\tilde S_{\mathrm{tot},k}^2$ | Casimir |
-| $\tilde S_k=\tfrac{\hbar}{2}i\vec e_k$ | Spin-$\tfrac12$ operators in $\mathbb{B}_{\Psi}$ |
-| $\tilde S_\pm=\tfrac{\hbar}{2}(i\vec e_x\mp \vec e_y)$ | Spin ladder operators, $\tilde S_\pm^2=0$ |
+| $\tilde S_k=\frac{m\,c}{2\,k_m}i\vec e_k$ | Spin-$\tfrac12$ operators in $\mathbb{B}_{\Psi}$ |
+| $\tilde S_\pm=\frac{m\,c}{2\,k_m}(i\vec e_x\mp \vec e_y)$ | Spin ladder operators, $\tilde S_\pm^2=0$ |
 | $\mathbb{B}\otimes_\mathbb{C}\mathbb{B}\cong M_4(\mathbb{C})$ | Two-factor algebra |
 | $\tilde S_{1,k}=\tilde S_k\otimes e_t,\ \tilde S_{2,k}=e_t\otimes\tilde S_k$ | Factor operators |
 | $\mathrm{Tr}(x\otimes y)=\mathrm{Tr}_\mathbb{B}(x)\mathrm{Tr}_\mathbb{B}(y)$ | Trace on the tensor product |

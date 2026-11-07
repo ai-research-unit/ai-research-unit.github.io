@@ -46,7 +46,7 @@ $$
 
 because the substitution turns $\partial^2/\partial R_t^2$ into $-\partial^2/\partial x_0^2$ and leaves the three spatial derivatives alone. This is the form the rest of the article uses.
 
-Throughout, $c$ is the speed of light in the medium and $\hbar$ the reduced Planck constant. The mass enters as the length $k_m=mc/\hbar$, and its reciprocal $k_m=mc/\hbar$ is the coefficient of the pair.
+Throughout, $c$ is the speed of light in the medium and $\frac{m\,c}{k_m}$ the reduced Planck constant. The mass enters as the length $k_m=mc/\hbar$, and its reciprocal $k_m=mc/\hbar$ is the coefficient of the pair.
 
 ## The Operator and Its Symbol
 
@@ -90,7 +90,7 @@ k_0^2-\lvert\vec k\rvert^2=k_m^{2}
 E^2=\vec p^{\,2}c^2+m^2c^4 ,
 $$
 
-with $k_0=k_E$ and $\vec k=\vec p\,k_{\mathrm{mo}}$. Here $k_{\mathrm{mo}}=p/\hbar$ and $k_E=E/(\hbar c)$ are the momentum and energy lengths.
+with $k_0=k_E$ and $\vec k=\vec p\,k_{\mathrm{mo}}$. Here $k_{\mathrm{mo}}=\frac{k_m\,p}{m\,c}$ and $k_E=E/(\frac{m\,c^{2}}{k_m})$ are the momentum and energy lengths.
 
 The symbol of $\Box$ is the interval of the wave covector, and the mass shell is that symbol set to $k_m^{2}$. The symbol of the gradient is a zero divisor on exactly the same set: left multiplication by $\tilde K$ is invertible off the cone and has rank two on it. The equation $\tilde\nabla\tilde{Ξ}=0$ therefore has a nonzero plane-wave solution exactly where the massless Klein–Gordon equation does, and it halves the solution space there, as §*What the Root Does Not Carry* records.
 

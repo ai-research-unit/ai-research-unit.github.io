@@ -52,10 +52,10 @@ with $\nabla=\sum_k\vec e_k\,\partial/\partial R_k$ the spatial gradient, is a d
 The solutions article works on the elements themselves. An element of $\mathbb{B}$ has four complex coefficients, exactly the four components of the Dirac spinor, so the element is the carrier of the field and no separate module is introduced; the two chiral halves of the pair are the two parts $\tilde{Ξ}_{\mathrm{sp},L}$ and $\tilde{Ξ}_{\mathrm{sp},R}$ of that one element. There the pair is the single equation
 
 $$
-\Big(\mathbb{D}-\frac{mc}{\hbar}\Big)\tilde{Ξ}_{\mathrm{sp}}=0,
+\Big(\mathbb{D}-k_m\Big)\tilde{Ξ}_{\mathrm{sp}}=0,
 $$
 
-whose solutions, normalizations, and spin sums are established in the parent article and are used below without rederivation. Throughout, a mass enters only through the mass wave number $k_m=mc/\hbar$, so every $m$ below stands for $mc/\hbar$; the dimensionful constants are written out where a dimensional statement is at issue, in the inverse temperature $\beta=\hbar/(k_BT)$, in the plane-wave phase $\mathrm{Sc}(\tilde P\tilde{R}_\Phi^{\natural})/\hbar$, and in the mass-shell condition $\tilde P\tilde P^{\natural}=-\hbar^2k_m^2$.
+whose solutions, normalizations, and spin sums are established in the parent article and are used below without rederivation. Throughout, a mass enters only through the mass wave number $k_m=mc/\hbar$, so every $m$ below stands for $k_m$; the dimensionful constants are written out where a dimensional statement is at issue, in the inverse temperature $\beta=\frac{m\,c}{k_m\,k_{B}\,T}$, in the plane-wave phase $\mathrm{Sc}\frac{k_m\,\tilde{P}\,\tilde{R}_{\Phi}^{\natural}}{m\,c}$, and in the mass-shell condition $\tilde P\tilde P^{\natural}=-m^{2}\,c^{2}$.
 
 ### The Pair Operator and Its Symbol
 
@@ -89,11 +89,11 @@ with $Q_k$ running over the three spatial coordinates. The sides are the whole o
 Its symbol on a plane wave is the momentum form
 
 $$
-\mathbb{D}_p:\ \tilde X\longmapsto iE_{\vec p}\,\tilde X\vec e_x-i\sum_k p_k\,\vec e_k\tilde X\vec e_y,
-\qquad \mathbb{D}_p^2=\frac{p^2}{\hbar^2} ,
+\mathbb{D}_p:\ \tilde X\longmapsto iE_{\vec p}\,\tilde X\vec e_x-i\sum_k  p_k\,\vec e_k\tilde X\vec e_y,
+\qquad \mathbb{D}_p^2=\frac{k_m^{2}\,p^{2}}{m^{2}\,c^{2}} ,
 $$
 
-with $p_0=E_{\vec p}/c$ and $p_k$ the physical momentum components, so that $p^2=p_0^2-\vec p^2=\hbar^2k_m^2$. The lower index of $p_\mu$ is a label and not a metric contraction: the signs are carried by $\varepsilon$. That sign vector is what the plane wave produces. On $e^{-ip\cdot x}$ the time derivative gives $-iE_{\vec p}$ and the spatial derivatives $+ip_k$, so the time term contributes $iE_{\vec p}\tilde X\vec e_x$ and the spatial terms $-ip_k\vec e_k\tilde X\vec e_y$. On the material sector both objects satisfy $\mathbb{D}^2=\Box$ and $\mathbb{D}_p^2=p^2$, the second equal to $m^2$ on the mass shell.
+with $p_0=E_{\vec p}/c$ and $p_k$ the physical momentum components, so that $p^2=p_0^2-\vec p^2=m^{2}\,c^{2}$. The lower index of $p_\mu$ is a label and not a metric contraction: the signs are carried by $\varepsilon$. That sign vector is what the plane wave produces. On $e^{-ip\cdot x}$ the time derivative gives $-iE_{\vec p}$ and the spatial derivatives $+ip_k$, so the time term contributes $iE_{\vec p}\tilde X\vec e_x$ and the spatial terms $-ip_k\vec e_k\tilde X\vec e_y$. On the material sector both objects satisfy $\mathbb{D}^2=\Box$ and $\mathbb{D}_p^2=p^2$, the second equal to $m^2$ on the mass shell.
 
 ### The Lagrangian
 
@@ -209,7 +209,7 @@ The three reasons are aspects of one theorem. We note only that they all point t
 The classical equation is linear, so its general solution is a superposition of the plane waves constructed in the parent article. Those solutions come in two branches: the positive-frequency branch spanned by the amplitudes $\tilde{Ξ}_{\mathrm{sp},+}^{(r)}(\vec p)\exp(-ip\cdot x)$ and the negative-frequency branch spanned by $\tilde{Ξ}_{\mathrm{sp},-}^{(r)}(\vec p)\exp(+ip\cdot x)$, with $r=1,2$ and
 
 $$
-E_{\vec p}=+\sqrt{\vec p^{\,2}c^2+\hbar^2c^2k_m^2},\qquad p\cdot x:=E_{\vec p}r'_t-\vec p\cdot X,
+E_{\vec p}=+\sqrt{\vec p^{\,2}c^2+m^{2}\,c^{4}},\qquad  p\cdot x:=E_{\vec p}r'_t-\vec p\cdot X,
 $$
 
 for the point $x=(X,r'_t)$; each amplitude is an element of $\mathbb{B}$. The covariant normalizations, orthogonality, and spin sums established there are written with the Dirac pairing
@@ -256,10 +256,10 @@ $$
 
 with $k\cdot r_y:=E_{\vec k}r'_t-\vec k\cdot Y$, together define the operator-valued field. The **annihilation** operators $a_{\mathrm{fop},r}(\vec p)$ multiply the positive-frequency solutions, and the **creation** operators $b_{\mathrm{fop},r}^{\dagger}(\vec p)$ multiply the negative-frequency solutions. The attribution of a creation operator to the negative-frequency branch is the operator form of the reinterpretation of the Dirac sea: the modes of "negative frequency" are the antiparticles of positive energy.
 
-Two structural remarks belong here. First, $\tilde{Ξ}_{\mathrm{fop}}$ is **not Hermitian**, and it should not be: a complex Dirac field carries a conserved charge, and particle and antiparticle are distinct. Second, each amplitude is a biquaternion plane wave $\tilde{Ξ}_{\mathrm{sp},0}\exp\!\left(i\,\mathrm{Sc}(\tilde P\tilde{R}_\Phi^{\natural})/\hbar\right)$, with $\tilde P$ the wave biquaternion and $\tilde R_\Phi$ the four-position biquaternion of the parent article. The two branches are the two signs of the energy root of the single biquaternion mass-shell condition
+Two structural remarks belong here. First, $\tilde{Ξ}_{\mathrm{fop}}$ is **not Hermitian**, and it should not be: a complex Dirac field carries a conserved charge, and particle and antiparticle are distinct. Second, each amplitude is a biquaternion plane wave $\tilde{Ξ}_{\mathrm{sp},0}\exp\!\left(i\,\mathrm{Sc}\frac{k_m\,\tilde{P}\,\tilde{R}_{\Phi}^{\natural}}{m\,c}\right)$, with $\tilde P$ the wave biquaternion and $\tilde R_\Phi$ the four-position biquaternion of the parent article. The two branches are the two signs of the energy root of the single biquaternion mass-shell condition
 
 $$
-\tilde P\tilde P^{\natural}= -\hbar^2k_m^2 ,
+\tilde P\tilde P^{\natural}= -m^{2}\,c^{2},
 $$
 
 and the polarization equation $(\mathbb{D}_p-m)\tilde{Ξ}_{\mathrm{sp},0}=0$ is the algebraic form of the momentum-space equation. Promoting the coefficients to operators is thus a transcription of the standard mode expansion onto the parent article's biquaternion plane waves; it is not, by itself, a derivation of the expansion from the algebra.
@@ -378,7 +378,7 @@ E_0=-\sum_{r}\int\!\frac{d^3p}{(2\pi)^3}\,(2\pi)^3\delta^{(3)}(\vec 0)\,E_{\vec 
 =-\,2V\!\int\!\frac{d^3p}{(2\pi)^3}\,E_{\vec p}.
 $$
 
-Here $V$ is the volume in which the theory is placed, and $(2\pi)^3\delta^{(3)}(\vec 0)=V$ is the standard transcription of the continuum normalization. The constant is negative and quartically divergent, in contrast with the positive zero-point energy $\tfrac12\sum\hbar\omega$ of a scalar field, and it is a c-number: it commutes with everything and does not affect the operator equations of motion. Normal ordering is the convention that removes it. For fermions the normal-ordering prescription moves every creation operator to the left of every annihilation operator and inserts a minus sign for each transposition of two fermion operators; for example $:\!b_{\mathrm{fop},r}(\vec p)b_{\mathrm{fop},r}^{\dagger}(\vec k)\!:=-b_{\mathrm{fop},r}^{\dagger}(\vec k)b_{\mathrm{fop},r}(\vec p)$. With this definition the constant term in $H$ is removed by construction.
+Here $V$ is the volume in which the theory is placed, and $(2\pi)^3\delta^{(3)}(\vec 0)=V$ is the standard transcription of the continuum normalization. The constant is negative and quartically divergent, in contrast with the positive zero-point energy $\tfrac12\sum\frac{m\,c\,\omega}{k_m}$ of a scalar field, and it is a c-number: it commutes with everything and does not affect the operator equations of motion. Normal ordering is the convention that removes it. For fermions the normal-ordering prescription moves every creation operator to the left of every annihilation operator and inserts a minus sign for each transposition of two fermion operators; for example $:\!b_{\mathrm{fop},r}(\vec p)b_{\mathrm{fop},r}^{\dagger}(\vec k)\!:=-b_{\mathrm{fop},r}^{\dagger}(\vec k)b_{\mathrm{fop},r}(\vec p)$. With this definition the constant term in $H$ is removed by construction.
 
 The same mode algebra gives the other conserved charges. The normal-ordered four-momentum is
 
@@ -423,7 +423,7 @@ This article deliberately stops here. The full **spin–statistics theorem** —
 
 ## Relation to the KMS Thermal Framework
 
-The KMS article characterizes thermal equilibrium by an analytic property of correlation functions. For operators $A,B$ in the algebra and a state $\omega_\beta$ at inverse temperature $\beta=\hbar/(k_BT)$, the thermal correlation function is
+The KMS article characterizes thermal equilibrium by an analytic property of correlation functions. For operators $A,B$ in the algebra and a state $\omega_\beta$ at inverse temperature $\beta=\frac{m\,c}{k_m\,k_{B}\,T}$, the thermal correlation function is
 
 $$
 F_{A B}(r'_t)=\omega_\beta\big(A\,\alpha_{r'_{t}}(B)\big),
@@ -545,10 +545,10 @@ The extension is a transcription of standard canonical quantization onto the par
 | $\pi=\partial\mathcal{L}/\partial(\partial\tilde{Ξ}_{\mathrm{sp}}/\partial r'_t)=i\tilde{Ξ}_{\mathrm{sp}}^*$ | Conjugate momentum; $\pi-i\tilde{Ξ}_{\mathrm{sp}}^*\approx0$ is second class |
 | $\tilde{Ξ}_{\mathrm{sp},\pm}^{(r)}(\vec p)$ | Parent article's positive- and negative-frequency element amplitudes |
 | $X,Y,\vec\Delta=X-Y$ | Spatial points and their separation |
-| $p_\mu=(E_{\vec p},\vec p)$, $p^2=p_0^2-\vec p^2=\hbar^2k_m^2$ | Four-momentum, mass shell; the index labels, $\varepsilon$ carries the signs |
+| $p_\mu=(E_{\vec p},\vec p)$, $p^2=p_0^2-\vec p^2=m^{2}\,c^{2}$ | Four-momentum, mass shell; the index labels, $\varepsilon$ carries the signs |
 | $\varepsilon=(+1,-1,-1,-1)$ | Sign vector of the momentum label in $\mathbb{D}_p$ |
 | $\tilde P$, $\tilde R_\Phi$ | Wave biquaternion and four-position biquaternion of the parent article |
-| $\tilde P\tilde P^{\natural}= -\hbar^2k_m^2$ | Biquaternionic mass-shell condition |
+| $\tilde P\tilde P^{\natural}= -m^{2}\,c^{2}$ | Biquaternionic mass-shell condition |
 | $\tilde{Ξ}_{\mathrm{fop}}$, $a_{\mathrm{fop},r}(\vec p)$, $b_{\mathrm{fop},r}(\vec p)$ | Quantized field; particle and antiparticle annihilation operators |
 | $\{a_{\mathrm{fop},r}(\vec p),a_{\mathrm{fop},s}^{\dagger}(\vec k)\}=(2\pi)^3\delta_{rs}\delta^{(3)}(\vec p-\vec k)$ | Mode anticommutator |
 | $H$, $:\!H\!:$ | Hamiltonian and its normal-ordered form |
@@ -557,7 +557,7 @@ The extension is a transcription of standard canonical quantization onto the par
 | $(-1)^F$ | Fermion-parity grading |
 | $ϙ$, $Ϙ_{\mathrm{fop}}$ | Field charge unit, and the charge operator counting charge in those units |
 | $\mu$ | Chemical potential of the thermal state; elsewhere the same letter is an index, as in $p_\mu$ and $\vec e_\mu$ |
-| $\beta=\hbar/(k_BT)$, $\omega_\beta$, $\alpha_{r'_{t}}$ | Inverse temperature, thermal state, the evolution generated by the state's Hamiltonian |
+| $\beta=\frac{m\,c}{k_m\,k_{B}\,T}$, $\omega_\beta$, $\alpha_{r'_{t}}$ | Inverse temperature, thermal state, the evolution generated by the state's Hamiltonian |
 | $F_{A B}(r'_t+i\beta)=F_{B A}(-r'_t)$ | KMS condition |
 | $K=-\log\rho$ | Modular Hamiltonian (Hermitian, in $\mathbb{B}_{\Psi}$) |
 | $\omega_n=(2n+1)\pi/\beta$ | Fermionic Matsubara frequencies |

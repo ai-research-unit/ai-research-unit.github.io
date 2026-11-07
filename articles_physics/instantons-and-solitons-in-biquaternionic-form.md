@@ -388,7 +388,7 @@ This article has treated the localised finite-energy solutions of the biquaterni
 | $Ϙ$ | Topological (instanton) charge, $Ϙ\in\mathbb Z$ |
 | $Ϙ_m\propto\oint_{S^2}\vec B\cdot d\vec A$ | Magnetic (topological) charge |
 | $\epsilon_{\mu\nu\rho\sigma}$ | Totally antisymmetric symbol, $\epsilon_{0123}=+1$ |
-| $g,\ \kappa=ϙ/\hbar$ | Gauge coupling and the parent's coupling convention |
+| $g,\ \kappa=\frac{k_m\,ϙ}{m\,c}$ | Gauge coupling and the parent's coupling convention |
 | $\rho$ | Instanton radius (a modulus) |
 | $a$ | Colour index of $\mathrm{SU}(2)$, written low; every contraction over it is an explicit sum |
 

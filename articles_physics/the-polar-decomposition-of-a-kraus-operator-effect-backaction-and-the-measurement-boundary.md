@@ -118,7 +118,7 @@ and $\tilde K$ is $*$-unitary. Conversely, if $\tilde K_H=e_t$ and $\tilde K_0$ 
 
 > A one-Kraus channel is trace preserving if and only if its positive factor is trivial; the channel is then conjugation by a $*$-unitary biquaternion.
 
-This is the reversible case of *Quantum Channels and the Reversible/Irreversible Dichotomy*, read in the polar language. The Hamiltonian $\tilde{R}_{\Psi,R}\in\mathbb{B}_{\Psi}$ generates the $*$-unitary factor through $\tilde K_0=\exp(-i H_{R}r'_t/\hbar)$, and the generator $-i H_{R}/\hbar$ lies in $\mathbb{B}_{\Phi}$. The polar factor $\tilde K_0$ is the evolution itself; its logarithm is the material generator. The condition $\tilde K_H=e_t$ says that the evolution attenuates nothing.
+This is the reversible case of *Quantum Channels and the Reversible/Irreversible Dichotomy*, read in the polar language. The Hamiltonian $\tilde{R}_{\Psi,R}\in\mathbb{B}_{\Psi}$ generates the $*$-unitary factor through $\tilde K_0=\exp(-\frac{k_m\,i\,H_{R}\,r'_{t}}{m\,c})$, and the generator $-\frac{k_m\,i\,H_{R}}{m\,c}$ lies in $\mathbb{B}_{\Phi}$. The polar factor $\tilde K_0$ is the evolution itself; its logarithm is the material generator. The condition $\tilde K_H=e_t$ says that the evolution attenuates nothing.
 
 ### What Trace Preservation Does Not Say
 

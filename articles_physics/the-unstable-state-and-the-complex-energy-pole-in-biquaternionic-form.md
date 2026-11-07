@@ -6,7 +6,7 @@ An **unstable state** is a state that is not an eigenstate of the Hamiltonian th
 
 This article treats the unstable state in the biquaternion framework of this series. It answers two questions.
 
-- **How does a lifetime arise?** A state decays when the Hamiltonian couples it to a continuum of other states. The coupling displaces the pole of the resolvent off the real energy axis. The displacement is the **self-energy**; its real part is the **level shift** and its imaginary part is half the **width**, which fixes the lifetime by $\tau=\hbar/\Gamma$. The displaced pole lives on the second sheet of the energy plane, reached by continuing the self-energy across the cut that the continuum opens.
+- **How does a lifetime arise?** A state decays when the Hamiltonian couples it to a continuum of other states. The coupling displaces the pole of the resolvent off the real energy axis. The displacement is the **self-energy**; its real part is the **level shift** and its imaginary part is half the **width**, which fixes the lifetime by $\tau=\frac{m\,c}{k_m\,\Gamma}$. The displaced pole lives on the second sheet of the energy plane, reached by continuing the self-energy across the cut that the continuum opens.
 - **Where does the pole live in the algebra?** The answer is the article's principal structural finding. The pole is a **complex number of the centre** $\mathbb{B}_{C}$. The Hamiltonian may carry an arbitrary non-central part, spread over the algebra's imaginary directions and coupling the two slots of the state module; the number that fixes the lifetime does not. A non-central coupling reaches the lifetime only after being traded for an **effective central self-energy** of the same kind a coupling to a continuum produces.
 
 The article is organised as follows. A first section defines the survival amplitude and the survival probability in the module and records the exact short-time law, which is quadratic and which no pure exponential satisfies. A second writes the resolvent of the interacting Hamiltonian, defines the self-energy, and locates the pole on the second sheet. A third reads the pole in the algebra: its conjugate mirror, and its centrality. A fourth derives the effective central self-energy of a block that couples the two module slots, which is the framework's form of the statement that a state-dependent coupling can be eliminated into a complex central potential. A fifth treats the exactly soluble case and separates what is transcribed from the external literature from what is recomputed here. A sixth gives the decay law and its limits, and a seventh separates what the algebra adds from what it does not. The closing sections are the open questions, the summary, the notation table and the external reading.
@@ -15,7 +15,7 @@ $$
 \tilde R_\Psi = c r_t\,e_t + i\,\vec r_\Psi, \qquad c r_t\in\mathbb{R},\quad \vec r_\Psi\in\mathbb{R}^3,
 $$
 
-and the centre is $\mathbb{B}_{C}=\mathbb{C}e_t$. The state module is $S=\mathbb{B}\tilde\Pi\cong\mathbb{C}^2$ with the dictionary $\mathsf{M}_2(\vec e_\mu)=-i\sigma_\mu$ and $\mathsf{M}_2(i\vec e_\mu)=\sigma_\mu$; a pure state is the idempotent $\tilde\Pi=\tfrac12(e_t+i\vec u)$ with $\vec u$ a unit vector along the $\vec e_\mu$, and $\mathrm{Tr}(\tilde\Pi)=1$. The trace convention is $\mathrm{Tr}=2\,\mathrm{Sc}$. The dynamics is $\tilde Q(r'_t)=\exp(-i Hr'_t/\hbar)$ with the state evolving by conjugation, $\tilde{Ϛ}(r'_t)=\tilde Q(r'_t)\tilde{Ϛ}(0)\tilde Q(r'_t)^{*}$; the evolution is $*$-unitary, $\tilde Q\tilde Q^{*}=e_t$, and the scalar part $c r_t$ of the Hamiltonian contributes only a global phase to the conjugated state. Energies are measured in the same units as $\hbar\omega$.
+and the centre is $\mathbb{B}_{C}=\mathbb{C}e_t$. The state module is $S=\mathbb{B}\tilde\Pi\cong\mathbb{C}^2$ with the dictionary $\mathsf{M}_2(\vec e_\mu)=-i\sigma_\mu$ and $\mathsf{M}_2(i\vec e_\mu)=\sigma_\mu$; a pure state is the idempotent $\tilde\Pi=\tfrac12(e_t+i\vec u)$ with $\vec u$ a unit vector along the $\vec e_\mu$, and $\mathrm{Tr}(\tilde\Pi)=1$. The trace convention is $\mathrm{Tr}=2\,\mathrm{Sc}$. The dynamics is $\tilde Q(r'_t)=\exp(-\frac{k_m\,i\,Hr'_{t}}{m\,c})$ with the state evolving by conjugation, $\tilde{Ϛ}(r'_t)=\tilde Q(r'_t)\tilde{Ϛ}(0)\tilde Q(r'_t)^{*}$; the evolution is $*$-unitary, $\tilde Q\tilde Q^{*}=e_t$, and the scalar part $c r_t$ of the Hamiltonian contributes only a global phase to the conjugated state. Energies are measured in the same units as $\frac{m\,c\,\omega}{k_m}$.
 
 The convention for the resolvent follows *The Resolvent Operator*, which writes $R(\lambda)=(L-\lambda)^{-1}$; this article writes the Green's function $G(z)=(z-\tilde R_\Psi)^{-1}$, so the two are related by $G(z)=-R(z)$, and the poles are the eigenvalues in both.
 
@@ -33,7 +33,7 @@ $$
 Because $\tilde\Pi_0$ has rank one, $\tilde\Pi_0\tilde Q\tilde\Pi_0 = A(r'_t)\,\tilde\Pi_0$ with
 
 $$
-A(r'_t) = \mathrm{Tr}\bigl(\tilde\Pi_0\,\tilde Q(r'_t)\bigr) = \mathrm{Tr}\bigl(\tilde\Pi_0\,\exp(-i Hr'_t/\hbar)\bigr),
+A(r'_t) = \mathrm{Tr}\bigl(\tilde\Pi_0\,\tilde Q(r'_t)\bigr) = \mathrm{Tr}\bigl(\tilde\Pi_0\,\exp(-\frac{k_m\,i\,Hr'_{t}}{m\,c})\bigr),
 $$
 
 and the survival probability is the squared modulus of the **survival amplitude**,
@@ -61,7 +61,7 @@ $$
 one has
 
 $$
-P(r'_t) = 1 - \frac{(\Delta\tilde R_\Psi)^{2}}{\hbar^{2}}\,{r'_{t}}^{2} + O({r'_{t}}^{4}).
+P(r'_t) = 1 -\frac{k_m^{2}\,\Delta^{2}\,\tilde{R}_{\Psi}^{2}}{m^{2}\,c^{2}}\,{r'_{t}}^{2} + O({r'_{t}}^{4}).
 $$
 
 The odd powers are absent: at order $r'_t$ the two linear terms of $A(r'_t)$ and its conjugate combine into the quadratic term of the modulus, and the cubic term of $A(r'_t)$ is purely imaginary and does not reach the modulus at order ${r'_{t}}^{3}$. The variance is non-negative, so the survival probability leaves one from below, quadratically. This is the analytic content of the quantum Zeno effect, and it is a constraint that no pure exponential can meet: a function $\exp(-\gamma r'_t)$ has a linear slope $-\gamma$ at the origin, whereas the exact survival probability has vanishing slope there.
@@ -69,7 +69,7 @@ The odd powers are absent: at order $r'_t$ the two linear terms of $A(r'_t)$ and
 The consequences are worth stating together.
 
 - **The exact law is quadratic at the origin.** For every state with $(\Delta\tilde R_\Psi)^2>0$ the decay must begin as $1-O({r'_{t}}^2)$.
-- **The exponential is an intermediate-time approximation.** A decay law of the form $\exp(-\Gamma r'_t/\hbar)$ can hold only for times long compared with the inverse spectral width of the continuum and short compared with the onset of the long-time deviations, and it is the approximation, not the exact law.
+- **The exponential is an intermediate-time approximation.** A decay law of the form $\exp(-\frac{k_m\,\Gamma\,r'_{t}}{m\,c})$ can hold only for times long compared with the inverse spectral width of the continuum and short compared with the onset of the long-time deviations, and it is the approximation, not the exact law.
 - **The two statements do not conflict.** The measured exponential of an unstable state is a fit over an intermediate window; the quadratic start and the power-law tail are outside that window.
 
 ## The Resolvent, the Self-Energy, and the Pole
@@ -156,7 +156,7 @@ On the first sheet the denominator $z-E_0-\Sigma(z)$ inherits that symmetry: its
 
 ### The pole is central
 
-The self-energy $\Sigma(z)$ is a scalar function of the central variable $z$, and the equation that fixes the pole, $z-E_0-\Sigma(z)=0$, is an equation between complex numbers of the centre. The pole $z_\star$, the level shift $\Delta$, the width $\Gamma$ and the lifetime $\tau=\hbar/\Gamma$ are therefore **central**, whatever the direction of $\vec r_\Psi$ in the Hamiltonian and however the non-central part couples the slots of the module. This is the article's structural statement, and it is the theorem behind the fifth limit of *The Biquaternion Universe as an Improvement of the Quaternionic Quantum Theory* — a dynamics that preserves the Hermitian norm for every Hermitian generator forces its unit into the centre, *Unitarity from Centrality: The Biquaternion Norm-Preservation Theorem* — read here at the level of a displaced pole. The same centrality that fixes the norm-preserving unit fixes the pole.
+The self-energy $\Sigma(z)$ is a scalar function of the central variable $z$, and the equation that fixes the pole, $z-E_0-\Sigma(z)=0$, is an equation between complex numbers of the centre. The pole $z_\star$, the level shift $\Delta$, the width $\Gamma$ and the lifetime $\tau=\frac{m\,c}{k_m\,\Gamma}$ are therefore **central**, whatever the direction of $\vec r_\Psi$ in the Hamiltonian and however the non-central part couples the slots of the module. This is the article's structural statement, and it is the theorem behind the fifth limit of *The Biquaternion Universe as an Improvement of the Quaternionic Quantum Theory* — a dynamics that preserves the Hermitian norm for every Hermitian generator forces its unit into the centre, *Unitarity from Centrality: The Biquaternion Norm-Preservation Theorem* — read here at the level of a displaced pole. The same centrality that fixes the norm-preserving unit fixes the pole.
 
 The centrality is not a coincidence of the models treated below. It is a consequence of taking the trace over the module to reach the scalar Green's function: the trace of a module operator is central, and any quantity read from the trace is central with it.
 
@@ -167,8 +167,8 @@ The centrality is not a coincidence of the models treated below. It is a consequ
 The pole $z_\star=E_0+\Delta-\tfrac{i}{2}\Gamma$ is a complex energy, and the pole term of the evolution is the central element
 
 $$
-\tilde U_\star(r'_t)=\exp\!\Big(-\frac{i}{\hbar}z_\star r'_t\Big)
-=\exp\!\Big(-\frac{\Gamma r'_t}{2\hbar}\Big)\exp\!\Big(-\frac{iE_Rr'_t}{\hbar}\Big)e_t,
+\tilde U_\star(r'_t)=\exp\!\Big(-\frac{k_m\,i}{m\,c}z_\star r'_t\Big)
+=\exp\!\Big(-\frac{k_m\,\Gamma\,r'_{t}}{2\,m\,c}\Big)\exp\!\Big(-\frac{k_m\,iE_{R}\,r'_{t}}{m\,c}\Big)e_t,
 \qquad E_R=E_0+\Delta .
 $$
 
@@ -176,16 +176,16 @@ The same element carries five descriptions, and they are worth setting side by s
 
 | reading | form | value | what it carries |
 | --- | --- | --- | --- |
-| word | $r\,e^{i\alpha}$ | $r=e^{-\Gamma r'_t/2\hbar}$, $\alpha=-E_Rr'_t/\hbar$ | the scale is the survival amplitude, the phase the oscillation |
-| central exponent | $e^{\Theta}$ | $\Theta=-iz_\star r'_t/\hbar$ | the complex angle |
-| Cartan | $\tilde A\tilde Q$ | $\tilde A=e^{-\Gamma r'_t/2\hbar}e_t$, $\tilde Q=e^{-iE_Rr'_t/\hbar}e_t$ | the amplitude and the phase |
+| word | $r\,e^{i\alpha}$ | $r=e^{-\frac{k_m\,\Gamma\,r'_{t}}{2\,m\,c}}$, $\alpha=-\frac{k_m\,E_{R}\,r'_{t}}{m\,c}$ | the scale is the survival amplitude, the phase the oscillation |
+| central exponent | $e^{\Theta}$ | $\Theta=-\frac{k_m\,iz_{\star}\,r'_{t}}{m\,c}$ | the complex angle |
+| Cartan | $\tilde A\tilde Q$ | $\tilde A=e^{-\frac{k_m\,\Gamma\,r'_{t}}{2\,m\,c}}\,e_{t}$, $\tilde Q=e^{-\frac{k_m\,iE_{R}\,r'_{t}}{m\,c}}\,e_{t}$ | the amplitude and the phase |
 | generator | $-iz_\star$ | $-\tfrac{\Gamma}{2}e_t-iE_Re_t$ | Hermitian damping plus anti-Hermitian energy |
 | mass-unit angle | $\theta_\star=z_\star/(mc^2)$ | $\epsilon_\star-i\gamma_\star$, $\epsilon_\star=E_R/(mc^2)$, $\gamma_\star=\Gamma/(2mc^2)$ | the half-width is $\gamma_\star$ |
 
 **The complex angle.** The element is central, so the Hamilton pairing does not apply. Its vector part is zero, $B=0$, while the pairing's domain is $B\neq0$ (*The Hamilton Root Pairing of the Polar Decomposition of Biquaternions*, §*The Domain*); a central element has no axis and no Hamilton angle. The angle that remains is the exponent of the central evolution,
 
 $$
-\boxed{\;\mathrm{H}_{\mathrm{hvs}}(r'_t)=-\frac{i}{\hbar}z_\star r'_t=-\frac{\Gamma r'_t}{2\hbar}-\frac{iE_Rr'_t}{\hbar}\;}
+\boxed{\;\mathrm{H}_{\mathrm{hvs}}(r'_t)=-\frac{k_m\,i}{m\,c}z_\star r'_t=-\frac{k_m\,\Gamma\,r'_{t}}{2\,m\,c}-\frac{k_m\,iE_{R}\,r'_{t}}{m\,c}\;}
 $$
 
 a complex number of the centre rather than a pair $(\vec U,\Theta)$. Its imaginary part is the phase. Its real part is not an angle: it is the decay exponent, the logarithm of the scale. In the Hamilton chart a real angle gives a periodic exponential and a purely imaginary one gives a monotone exponential. The resonance's exponent is central and complex: its imaginary part is the phase, its real part the decay. This is the non-compact regime of *The Exponential Word and Its Boundary*, §*The Two Regimes*, read on the centre.
@@ -193,7 +193,7 @@ a complex number of the centre rather than a pair $(\vec U,\Theta)$. Its imagina
 **The mass scale.** The pole is an energy, so it becomes a dimensionless angle only after a scale is chosen. In units of the mass $m$ of the decaying state, $\theta_\star=z_\star/(mc^2)$ and
 
 $$
-\mathrm{H}_{\mathrm{hvs}}(r'_t)=-i\,\theta_\star\,\frac{mc^2r'_t}{\hbar},
+\mathrm{H}_{\mathrm{hvs}}(r'_t)=-c\,k_m\,i\,\theta_{\star}\,r'_{t},
 $$
 
 so $\theta_\star$ is the complex angle per unit of the mass time. Its imaginary part is $-\Gamma/(2mc^2)$, the half-width in mass units, and its real part is the energy in mass units. The half-width is therefore the imaginary part of the mass-unit angle, and it appears with a minus sign in the real part of the exponent $\Theta$; the factor $-i$ between them swaps the two readings. Neither part is a Lorentz scalar; both are central, as the pole is.
@@ -201,10 +201,10 @@ so $\theta_\star$ is the complex angle per unit of the mass time. Its imaginary 
 **The Cartan reading is the cleanest.** The positive factor of the pole term is the survival amplitude in the pole approximation,
 
 $$
-\tilde A(r'_t)=\sqrt{\tilde U_\star(r'_t)\tilde U_\star(r'_t)^{*}}=e^{-\Gamma r'_t/2\hbar}e_t,
+\tilde A(r'_t)=\sqrt{\tilde U_\star(r'_t)\tilde U_\star(r'_t)^{*}}=e^{-\frac{k_m\,\Gamma\,r'_{t}}{2\,m\,c}}\,e_{t},
 $$
 
-and the $*$-unitary factor is the phase $e^{-iE_Rr'_t/\hbar}e_t$. The survival probability is the square of the amplitude, $\langle\tilde U_\star(r'_t)\rangle_{*}=e^{-\Gamma r'_t/\hbar}$, which is the Hermitian norm of the element. The quaternionic norm is the complex number $\langle\tilde U_\star(r'_t)\rangle_{\natural}=e^{-2iE_Rr'_t/\hbar}e^{-\Gamma r'_t/\hbar}$: it multiplies the survival probability by the doubled phase, and it is the reason the amplitude and the probability must not be read from the same bracket.
+and the $*$-unitary factor is the phase $e^{-\frac{k_m\,iE_{R}\,r'_{t}}{m\,c}}\,e_{t}$. The survival probability is the square of the amplitude, $\langle\tilde U_\star(r'_t)\rangle_{*}=e^{-\frac{k_m\,\Gamma\,r'_{t}}{m\,c}}$, which is the Hermitian norm of the element. The quaternionic norm is the complex number $\langle\tilde U_\star(r'_t)\rangle_{\natural}=e^{-\frac{2\,k_m\,iE_{R}\,r'_{t}}{m\,c}}\,e^{-\frac{k_m\,\Gamma\,r'_{t}}{m\,c}}$: it multiplies the survival probability by the doubled phase, and it is the reason the amplitude and the probability must not be read from the same bracket.
 
 **The generator.** With $\hbar=1$, the generator $G_\star=-iz_\star$ splits into a Hermitian and an anti-Hermitian part,
 
@@ -220,9 +220,9 @@ The damping is the Hermitian part and the energy is the anti-Hermitian part. A s
 
 **The sheet.** The sign of $\mathrm{Im}\,z_\star$, equivalently of $\mathrm{Im}\,\theta_\star$, is the sheet. The retarded pole has $\mathrm{Im}\,z_\star=-\Gamma/2<0$ and decays; the advanced mirror has $\mathrm{Im}\,z_\star=+\Gamma/2>0$ and grows. In the word, the sign is the sign of $\mathrm{Re}\,\Theta$: a negative scale exponent is decay, a positive one is growth. The algebra does not select the sign; the retarded boundary condition does, as §*The Pole in the Algebra* established.
 
-**The reading.** The pole term is a central element of the non-compact regime: a complex angle whose real part is a scale and whose imaginary part is a phase, with the Cartan amplitude equal to the survival amplitude. The width is not a second energy and not a rapidity; it is the Hermitian part of one central generator, and the lifetime is $\hbar/\Gamma$.
+**The reading.** The pole term is a central element of the non-compact regime: a complex angle whose real part is a scale and whose imaginary part is a phase, with the Cartan amplitude equal to the survival amplitude. The width is not a second energy and not a rapidity; it is the Hermitian part of one central generator, and the lifetime is $\frac{m\,c}{k_m\,\Gamma}$.
 
-**The boundary.** The identification of the complex angle with the pole is exact for the central element $\exp(-iz_\star r'_t/\hbar)$; it does not make the resonance an eigenstate of a Hermitian Hamiltonian, and it does not give the pole a module vector. The element is central, so the Hamilton pairing is undefined and the complex angle is the exponent, not a Hamilton angle. If the pole is attached to a complex four-momentum, the complex rapidity $\theta_{\mathrm{rpd}}$ with $\Theta=-i\theta_{\mathrm{rpd}}$ is a model-dependent reading; the algebra supplies the central exponent exactly, and the rapidity only through that model. The decaying state is not normalisable, as §*Open Questions* records, and the word describes the evolution element, not the state that carries it.
+**The boundary.** The identification of the complex angle with the pole is exact for the central element $\exp(-\frac{k_m\,iz_{\star}\,r'_{t}}{m\,c})$; it does not make the resonance an eigenstate of a Hermitian Hamiltonian, and it does not give the pole a module vector. The element is central, so the Hamilton pairing is undefined and the complex angle is the exponent, not a Hamilton angle. If the pole is attached to a complex four-momentum, the complex rapidity $\theta_{\mathrm{rpd}}$ with $\Theta=-i\theta_{\mathrm{rpd}}$ is a model-dependent reading; the algebra supplies the central exponent exactly, and the rapidity only through that model. The decaying state is not normalisable, as §*Open Questions* records, and the word describes the evolution element, not the state that carries it.
 
 **A check.** For $E_R=2$, $\Gamma=0.5$ and $r'_t=1$ in units $\hbar=1$, the amplitude is $e^{-0.25}=0.778800783\ldots$, the survival probability $e^{-0.5}=0.606530660\ldots$, and $\Theta=-0.25-2i$; the generator's Hermitian and anti-Hermitian parts are $-0.25$ and $-2i$, and the two bracket readings reproduce the amplitude and the probability to machine precision.
 
@@ -287,20 +287,20 @@ and the whole analytic structure of the model is the logarithm: a cut on the ban
 The pole fixes the intermediate-time survival amplitude. Since the pole is at $z_\star=E_0+\Delta-\tfrac{i}{2}\Gamma$,
 
 $$
-A(r'_t)\simeq \exp(-iz_\star r'_t/\hbar) = \exp(-i(E_0+\Delta)r'_t/\hbar)\,\exp(-\Gamma r'_t/(2\hbar)),
+A(r'_t)\simeq  \exp(-\frac{k_m\,iz_{\star}\,r'_{t}}{m\,c}) = \exp(-\frac{k_m\,i\,(E_0+\Delta)\,r'_{t}}{m\,c})\,\exp(-\Gamma r'_t/(\frac{2\,m\,c}{k_m})),
 \qquad
-P(r'_t)\simeq \exp(-\Gamma r'_t/\hbar),
+P(r'_t)\simeq  \exp(-\frac{k_m\,\Gamma\,r'_{t}}{m\,c}),
 $$
 
 and the lifetime is
 
 $$
-\boxed{\;\tau = \frac{\hbar}{\Gamma}\;}.
+\boxed{\;\tau =\frac{m\,c}{k_m\,\Gamma}\;}.
 $$
 
 The approximation has a definite domain, and outside it the pole does not describe the decay.
 
-- **Very short times.** The exact law is $1-O({r'_{t}}^{2})$, and the exponential has a linear term. The pole sum cannot be correct at the origin; the full survival probability must be used there. For the model of this article the crossover is at times of order $\hbar/B$, the inverse bandwidth.
+- **Very short times.** The exact law is $1-O({r'_{t}}^{2})$, and the exponential has a linear term. The pole sum cannot be correct at the origin; the full survival probability must be used there. For the model of this article the crossover is at times of order $\frac{m\,c}{k_m\,B}$, the inverse bandwidth.
 - **Very long times.** The long-time survival probability is governed by the threshold of the continuum and falls more slowly than exponentially, with a power law set by the density of states at the band edge. The pole captures the intermediate window only.
 - **The residue.** The residue of $G_{00}$ at $z_\star$ is the squared overlap of the decaying state with the initial state, the quantity that in field theory is called the wave-function renormalization at the resonance, and it is less than one when the state is spread over the continuum. This is the same residue that *The LSZ Reduction Formula in Biquaternionic Form* reads as wave-function renormalization.
 
@@ -333,15 +333,15 @@ The article therefore states an approximation with its window, not a law. It mak
 
 ## Summary
 
-The unstable state is the state that is not an eigenstate of the Hamiltonian. Its survival amplitude is the scalar reduction of the evolution, $A(r'_t)=\mathrm{Tr}(\tilde\Pi_0\tilde Q(r'_t))$, and its survival probability is $P(r'_t)=\lvert A(r'_t)\rvert^{2}$, unitarity bounding it by one. The exact short-time law is $P(r'_t)=1-(\Delta\tilde R_\Psi)^{2}{r'_{t}}^{2}/\hbar^{2}+O({r'_{t}}^{4})$, with the variance of the Hamiltonian in the initial state as coefficient, and no pure exponential satisfies it.
+The unstable state is the state that is not an eigenstate of the Hamiltonian. Its survival amplitude is the scalar reduction of the evolution, $A(r'_t)=\mathrm{Tr}(\tilde\Pi_0\tilde Q(r'_t))$, and its survival probability is $P(r'_t)=\lvert A(r'_t)\rvert^{2}$, unitarity bounding it by one. The exact short-time law is $P(r'_t)=1-(\Delta\tilde R_\Psi)^{2}{r'_{t}}^{2}\frac{k_m^{2}}{m^{2}\,c^{2}}+O({r'_{t}}^{4})$, with the variance of the Hamiltonian in the initial state as coefficient, and no pure exponential satisfies it.
 
 The coupling of the state to a continuum displaces the pole of the reduced resolvent, $G_{00}(z)=[z-E_0-\Sigma(z)]^{-1}$, where the self-energy is $\Sigma(z)=\langle 0\rvert\tilde V\lvert 0\rangle+\sum_{n\neq0}\lvert V_{0n}\rvert^{2}/(z-E_n)+\cdots$ to second order. Its boundary value from above is $\Delta(E)-\tfrac{i}{2}\Gamma(E)$, with the level shift $\Delta$ real and the width non-negative, $\Gamma(E)=2\pi\lvert V_0(E)\rvert^{2}\rho(E)$ at the Golden Rule. The pole is at $z_\star=E_0+\Delta-\tfrac{i}{2}\Gamma$, and it lies on the second sheet, reached by continuing across the cut that the continuum opens, with the jump $\Sigma(E+i0^{+})-\Sigma(E-i0^{+})=-i\Gamma$; the first sheet carries no complex zero, only the real eigenvalues and the cut.
 
-The pole is a **complex number of the centre**. Hermiticity gives $G(\bar z)=G(z)^{\dagger}$ and its scalar reduction $G_{00}(\bar z)=\overline{G_{00}(z)}$, so a complex pole cannot sit on the first sheet; the decaying number at $E_0+\Delta-\tfrac{i}{2}\Gamma$ and its mirror at $E_0+\Delta+\tfrac{i}{2}\Gamma$ are the two second sheets, and the retarded boundary condition keeps the decaying one — the Krein-space pairing of *Spectral Theory on Krein Spaces*, split here across the sheets of the energy plane. The self-energy is a scalar function of the central variable, and the level shift, the width, the pole and the lifetime $\tau=\hbar/\Gamma$ are all central, whatever non-central part the Hamiltonian carries. This is the theorem behind the fifth limit — the norm-preserving unit is central — read at the level of a displaced pole.
+The pole is a **complex number of the centre**. Hermiticity gives $G(\bar z)=G(z)^{\dagger}$ and its scalar reduction $G_{00}(\bar z)=\overline{G_{00}(z)}$, so a complex pole cannot sit on the first sheet; the decaying number at $E_0+\Delta-\tfrac{i}{2}\Gamma$ and its mirror at $E_0+\Delta+\tfrac{i}{2}\Gamma$ are the two second sheets, and the retarded boundary condition keeps the decaying one — the Krein-space pairing of *Spectral Theory on Krein Spaces*, split here across the sheets of the energy plane. The self-energy is a scalar function of the central variable, and the level shift, the width, the pole and the lifetime $\tau=\frac{m\,c}{k_m\,\Gamma}$ are all central, whatever non-central part the Hamiltonian carries. This is the theorem behind the fifth limit — the norm-preserving unit is central — read at the level of a displaced pole.
 
 A coupling between the two slots of the module is eliminated by the block identity of *The Resolvent Operator*: relative to an orthogonal splitting $S=S_1\oplus S_2$ the Green's function of the first slot is $(z-H_{\mathrm{c}}-\Sigma_{\mathrm{nc}})^{-1}$ with $\Sigma_{\mathrm{nc}}(z)=V(z-H_{\mathrm{nc}})^{-1}V^{*}$. When the eliminated slot is discrete the addition is a real level shift; when it carries a continuum the addition is complex and the effective central potential is absorptive. This is the framework's form of the optical potential, and it explains why an effective potential must be allowed to be complex.
 
-The soluble case is the discrete state coupled to a continuum with no continuum–continuum coupling, whose reduced equation is one scalar equation with the band logarithm $\rho\ln((z+B)/(z-B))$ as its continuum term. The model, the width, the second-sheet placement and the intermediate-time exponential are transcribed from the external literature; the rules of this article were recomputed on the module image, and the checks are listed in the ledger above. The decay law $P(r'_t)\simeq \exp(-\Gamma r'_t/\hbar)$ holds over an intermediate window bounded below by the inverse bandwidth, where the exact quadratic start governs, and above by the continuum threshold, where a power law replaces it.
+The soluble case is the discrete state coupled to a continuum with no continuum–continuum coupling, whose reduced equation is one scalar equation with the band logarithm $\rho\ln((z+B)/(z-B))$ as its continuum term. The model, the width, the second-sheet placement and the intermediate-time exponential are transcribed from the external literature; the rules of this article were recomputed on the module image, and the checks are listed in the ledger above. The decay law $P(r'_t)\simeq  \exp(-\frac{k_m\,\Gamma\,r'_{t}}{m\,c})$ holds over an intermediate window bounded below by the inverse bandwidth, where the exact quadratic start governs, and above by the continuum threshold, where a power law replaces it.
 
 What the algebra adds is that the pole is central, that a non-central coupling reaches the lifetime only through an effective central self-energy, and that the conjugate symmetry and the choice of sheet are the two halves of one statement. What it does not add is a scale, a prediction, or a specific particle's lifetime; the coupling is always an input, and the framework's agreement with the standard treatment here is exact wherever the standard treatment applies.
 
@@ -353,7 +353,7 @@ What the algebra adds is that the pole is central, that a non-central coupling r
 | $\mathbb{B}_{\Psi}$, $\mathbb{B}_{\Phi}$ | Hermitian and anti-Hermitian subspaces |
 | $\tilde R_\Psi=c r_t\,e_t+i\vec r_\Psi$ | Hamiltonian, Hermitian, $c r_t\in\mathbb{R}$, $\vec r_\Psi\in\mathbb{R}^3$ |
 | $\tilde\Pi_0$ | Idempotent of the initial state, rank one, $\mathrm{Tr}=1$ |
-| $\tilde Q(r'_t)=\exp(-i Hr'_t/\hbar)$ | $*$-Unitary evolution, $\tilde Q\tilde Q^{*}=e_t$ |
+| $\tilde Q(r'_t)=\exp(-\frac{k_m\,i\,Hr'_{t}}{m\,c})$ | $*$-Unitary evolution, $\tilde Q\tilde Q^{*}=e_t$ |
 | $A(r'_t)=\mathrm{Tr}(\tilde\Pi_0\tilde Q(r'_t))$ | Survival amplitude; $P(r'_t)=\lvert A(r'_t)\rvert^{2}$ |
 | $(\Delta\tilde R_\Psi)^{2}$ | Variance of $\tilde R_\Psi$ in the initial state |
 | $G(z)=(z-\tilde R_\Psi)^{-1}$ | Green's function; $G(z)^{\dagger}=G(\bar z)$ |
@@ -362,10 +362,10 @@ What the algebra adds is that the pole is central, that a non-central coupling r
 | $\Delta(E)$, $\Gamma(E)$ | Level shift and width, $\Sigma(E+i0^{+})=\Delta-\tfrac{i}{2}\Gamma$ |
 | $\Gamma=2\pi\lvert V_0\rvert^{2}\rho$ | Golden Rule width |
 | $z_\star=E_0+\Delta-\tfrac{i}{2}\Gamma$ | Pole on the second sheet |
-| $\mathrm{H}_{\mathrm{hvs}}(r'_t)=-iz_\star r'_t/\hbar$ | Complex angle of the resonance; $\mathrm{Re}\,\Theta$ is the decay exponent, $\mathrm{Im}\,\Theta$ the phase |
-| $\tilde A(r'_t)=e^{-\Gamma r'_t/2\hbar}e_t$ | Cartan amplitude of the pole term, the survival amplitude in the pole approximation |
-| $\tilde U_\star(r'_t)=\exp(-iz_\star r'_t/\hbar)$ | Pole term of the evolution; not $*$-unitary, $\tilde U_\star\tilde U_\star^{*}\neq e_t$ |
-| $\tau=\hbar/\Gamma$ | Lifetime |
+| $\mathrm{H}_{\mathrm{hvs}}(r'_t)=-\frac{k_m\,iz_{\star}\,r'_{t}}{m\,c}$ | Complex angle of the resonance; $\mathrm{Re}\,\Theta$ is the decay exponent, $\mathrm{Im}\,\Theta$ the phase |
+| $\tilde A(r'_t)=e^{-\frac{k_m\,\Gamma\,r'_{t}}{2\,m\,c}}\,e_{t}$ | Cartan amplitude of the pole term, the survival amplitude in the pole approximation |
+| $\tilde U_\star(r'_t)=\exp(-\frac{k_m\,iz_{\star}\,r'_{t}}{m\,c})$ | Pole term of the evolution; not $*$-unitary, $\tilde U_\star\tilde U_\star^{*}\neq e_t$ |
+| $\tau=\frac{m\,c}{k_m\,\Gamma}$ | Lifetime |
 | $\Sigma_{\mathrm{nc}}(z)=V(z-H_{\mathrm{nc}})^{-1}V^{*}$ | Effective self-energy of an eliminated slot |
 | $H_{\mathrm{c}},H_{\mathrm{nc}},V$ | Entries of the slot block matrix; $V$ couples the two slots |
 | $\rho(E)$ | Density of continuum states |

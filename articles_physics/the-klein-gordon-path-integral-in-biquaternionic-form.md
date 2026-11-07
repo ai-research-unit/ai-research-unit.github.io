@@ -2,9 +2,9 @@
 
 ## Introduction
 
-The path integral is the third formulation of a quantum theory, alongside the equation of motion and the operator algebra. For a relativistic scalar field it is the **functional integral over field configurations**, weighted by the phase $\exp(iS[\xi]/\hbar)$, and it organises the whole of the free and perturbative theory: the generating functional is a Gaussian in the presence of a source, the free two-point function is the inverse of the quadratic form, the classical field is the stationary point, and the loop expansion is the expansion of the determinant about that point. This article derives the Klein–Gordon functional integral in biquaternionic form, evaluates the free Gaussian exactly, identifies its two-point function with the propagator of the companion article *The Klein–Gordon Propagator and Its Green's Functions in Biquaternionic Form*, and states what the algebra contributes.
+The path integral is the third formulation of a quantum theory, alongside the equation of motion and the operator algebra. For a relativistic scalar field it is the **functional integral over field configurations**, weighted by the phase $\exp(iS[\xi]\frac{k_m}{m\,c})$, and it organises the whole of the free and perturbative theory: the generating functional is a Gaussian in the presence of a source, the free two-point function is the inverse of the quadratic form, the classical field is the stationary point, and the loop expansion is the expansion of the determinant about that point. This article derives the Klein–Gordon functional integral in biquaternionic form, evaluates the free Gaussian exactly, identifies its two-point function with the propagator of the companion article *The Klein–Gordon Propagator and Its Green's Functions in Biquaternionic Form*, and states what the algebra contributes.
 
-The division of labour with the companion path-integral article must be stated at once. The companion article *The Path Integral in Biquaternionic Form* analyses the **algebraic status of the phase**: it shows that the $i$ of $\exp(iS/\hbar)$ is the central scalar imaginary, that the exponent lies in the material sector $\mathbb{B}_{\Phi}$, that the phase is a central $*$-unitary element, and that a non-central root would produce a spin rotation rather than a global phase. This article does not repeat that analysis; it takes the centrality of the phase as established and addresses the complementary case, the **relativistic field-theoretic** one: a functional integral over a field configuration space, not a single-particle sum over paths, with the Klein–Gordon quadratic form in the exponent. The non-relativistic single-particle scalar case, which is a sum over paths with a central kernel, belongs to the Schrödinger setting and is not treated here.
+The division of labour with the companion path-integral article must be stated at once. The companion article *The Path Integral in Biquaternionic Form* analyses the **algebraic status of the phase**: it shows that the $i$ of $\exp(\frac{k_m\,i\,S}{m\,c})$ is the central scalar imaginary, that the exponent lies in the material sector $\mathbb{B}_{\Phi}$, that the phase is a central $*$-unitary element, and that a non-central root would produce a spin rotation rather than a global phase. This article does not repeat that analysis; it takes the centrality of the phase as established and addresses the complementary case, the **relativistic field-theoretic** one: a functional integral over a field configuration space, not a single-particle sum over paths, with the Klein–Gordon quadratic form in the exponent. The non-relativistic single-particle scalar case, which is a sum over paths with a central kernel, belongs to the Schrödinger setting and is not treated here.
 
 The biquaternion content of the Klein–Gordon path integral is a statement about the **configuration space and the quadratic form** rather than about the phase. The field is a function into the centre $\mathbb{B}_{C}$, as the companion article *The Scalar Field in the Centre: Why Spin 0 Escapes the Biquaternion State Module* establishes; the action is therefore a central scalar functional; the measure is a measure on a space of central-valued functions; and every object built from the Gaussian — the two-point function, the determinant, the effective action — is central and acts on the state module as scalar multiplication. The two structural points that are genuinely the algebra's are the identification of the **mass shell** with a level set of the biquaternion norm, so that the quadratic form in the exponent is the biquaternion norm read on the material sector, and the identification of the **Wick rotation** with the passage from the material sector to the quaternion subspace, which is exactly the passage that makes the Euclidean quadratic form positive definite. The path integral's convergence, and its failure for a negative mass squared, are properties of the biquaternion norm.
 
@@ -97,10 +97,10 @@ so the operator in the exponent is exactly the Klein–Gordon operator whose Gre
 $$
 \frac{\omega^2}{c^2}-\vec k^2-k_m^{2}=0
 \qquad\Longleftrightarrow\qquad
-\langle\tilde P\rangle_{\natural}=\tilde P\tilde P^{\natural}= -\hbar^2k_m^2,
+\langle\tilde P\rangle_{\natural}=\tilde P\tilde P^{\natural}= -m^{2}\,c^{2},
 $$
 
-a level set of the biquaternion norm on the material four-wavevector $\tilde P=\hbar\,(i\omega/c\,e_t+\vec k)$. The quadratic form of the path integral is thus the biquaternion norm of $\mathbb{B}_{\Phi}$, shifted by the mass: the exponent's saddle is the biquaternion norm's level set, and the Gaussian's width is the operator whose symbol is that biquaternion norm minus the mass. This is the sense in which the framework's contribution to the scalar path integral is geometry rather than a new mechanism.
+a level set of the biquaternion norm on the material four-wavevector $\tilde P=\frac{m\,c\,(i\omega/c\,e_t+\vec k)}{k_m}$. The quadratic form of the path integral is thus the biquaternion norm of $\mathbb{B}_{\Phi}$, shifted by the mass: the exponent's saddle is the biquaternion norm's level set, and the Gaussian's width is the operator whose symbol is that biquaternion norm minus the mass. This is the sense in which the framework's contribution to the scalar path integral is geometry rather than a new mechanism.
 
 ## The Generating Functional and the Free Gaussian
 
@@ -236,9 +236,9 @@ $$
 and the phase factor becomes a decaying weight,
 
 $$
-\exp(\,iS/\hbar)\;\longmapsto\;\exp(-S_E/\hbar),
+\exp(\,\frac{k_m\,i\,S}{m\,c})\;\longmapsto\;\exp(-\frac{k_m\,S_{E}}{m\,c}),
 \qquad
-S_E\ge 0 .
+S_E\ge  0 .
 $$
 
 The Euclidean quadratic form $-\Delta_E+k_m^{2}$ is positive definite for $k_m^{2}\ge0$, which is the statement that the biquaternion norm on $\mathbb{B}_{H}$ is positive definite and the mass adds a positive constant. The Gaussian integral converges, the lattice verification above is a verification of the Euclidean integral, and the continuum object it defines is the Euclidean Green's function whose Yukawa form the propagator article gives. The Wick rotation's phase was checked algebraically: the symbol of the Minkowski operator at $\omega=i p_4$ is $-\left(p_4^2+\vec k^2+k_m^{2}\right)$, negative, so its negative is the positive Euclidean symbol.
@@ -311,7 +311,7 @@ The semiclassical expansion about a source has the classical Klein–Gordon equa
 | $\tilde R_\Phi=i c r'_t\,e_t+r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z$ | Material coordinate, $\in\mathbb{B}_{\Phi}$ |
 | $\tilde{Q}_E=c\tau\,e_t+r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z$ | Euclidean coordinate, $\in\mathbb{B}_{H}$ |
 | $\tilde{Ξ}=\xi e_t$ | Scalar (spin-$0$) field, valued in the centre |
-| $\tilde P=\hbar\,(i\omega/c\,e_t+\vec k)$ | Material four-wavevector, $\in\mathbb{B}_{\Phi}$ |
+| $\tilde P=\frac{m\,c\,(i\omega/c\,e_t+\vec k)}{k_m}$ | Material four-wavevector, $\in\mathbb{B}_{\Phi}$ |
 | $\langle\tilde{Q}\rangle_{\natural}=\tilde{Q}\tilde{Q}^{\natural}$ | Biquaternion norm; $\langle\tilde P\rangle_{\natural}=-k_m^{2}$ is the mass shell |
 | $\Box=\tilde{\nabla}\tilde{\nabla}^{\natural}=\partial^2/\partial R_t^2+\Delta$ | d'Alembertian, series convention |
 | $1/k_m$ | The mass length, $\hbar/(mc)$; its reciprocal $k_m=mc/\hbar$ is the mass parameter ($k_m=m$ in natural units) |

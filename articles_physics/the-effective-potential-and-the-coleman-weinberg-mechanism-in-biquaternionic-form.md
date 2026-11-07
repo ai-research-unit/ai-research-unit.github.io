@@ -82,7 +82,7 @@ $$
 \Gamma[\tilde{Ξ}_{\mathrm{cl}}] = \langle \tilde{J},\tilde{Ξ}_{\mathrm{cl}}\rangle - W[\tilde{J}], \qquad \tilde{Ξ}_{\mathrm{cl}} = \frac{\delta W}{\delta \tilde{J}} ,
 $$
 
-and it has the loop expansion $\Gamma = S + \hbar\Gamma_1 + \cdots$, with $\Gamma_1 = \tfrac12\mathrm{Tr}\log S^{(2)}[\tilde{Ξ}_{\mathrm{cl}}]$ the logarithm of the determinant of the second variation. These are the conventions of the companion article on the generating functional and the effective action; the classical field is written $\tilde{Ξ}_{\mathrm{cl}}$. The one structural fact imported from it is that a central action has a **central** second variation: the fluctuation operator of a central background has coefficients that commute with the central phase and mixes neither the material nor the informational sector, so its logarithm depends on the background only through the invariant $\rho$, and the one-loop term is the sum of the contributions of the two real components, one from each sector, each with its own field-dependent mass.
+and it has the loop expansion $\Gamma = S +\frac{m\,c\,\Gamma_{1}}{k_m}+ \cdots$, with $\Gamma_1 = \tfrac12\mathrm{Tr}\log S^{(2)}[\tilde{Ξ}_{\mathrm{cl}}]$ the logarithm of the determinant of the second variation. These are the conventions of the companion article on the generating functional and the effective action; the classical field is written $\tilde{Ξ}_{\mathrm{cl}}$. The one structural fact imported from it is that a central action has a **central** second variation: the fluctuation operator of a central background has coefficients that commute with the central phase and mixes neither the material nor the informational sector, so its logarithm depends on the background only through the invariant $\rho$, and the one-loop term is the sum of the contributions of the two real components, one from each sector, each with its own field-dependent mass.
 
 For a **constant** classical field $\tilde{Ξ}_{\mathrm{cl}} = \xi_c\,e_t$ the effective action is proportional to the spacetime volume, and the effective potential is defined by
 
@@ -153,7 +153,7 @@ m_1^2(\rho) = \frac{3\lambda}{2}\rho,
 m_2^2(\rho) = \frac{\lambda}{2}\rho ,
 $$
 so both contribute to the one-loop potential with $n = 1$ each.
-- **The central gauge field.** The kinetic term of the scalar evaluated at the constant background produces a Proca mass term, and the companion article on the Higgs mechanism gives $M_A^2 = 2ϙ^2\rho$ in units $\hbar = c = 1$ (it quotes $M_A^2 = ϙ^2v^2/\hbar^2$ with $\rho = v^2/2$, which is the same statement). The gauge field has three polarizations in four dimensions, so $n_A = 3$.
+- **The central gauge field.** The kinetic term of the scalar evaluated at the constant background produces a Proca mass term, and the companion article on the Higgs mechanism gives $M_A^2 = 2ϙ^2\rho$ in units $\hbar = c = 1$ (it quotes $M_A^2 =\frac{k_m^{2}\,ϙ^{2}\,v^{2}}{m^{2}\,c^{2}}$ with $\rho = v^2/2$, which is the same statement). The gauge field has three polarizations in four dimensions, so $n_A = 3$.
 
 Inserting these into the general form and retaining the terms that carry the logarithm of $\rho$,
 
@@ -310,7 +310,7 @@ The loop integral, its regularization and its renormalization are standard and a
 | $V_0(\rho) = \frac{\lambda}{4}(\rho - v_0^2)^2$ | Tree-level invariant potential |
 | $\lambda, v_0$ | Quartic coupling; tree-level vacuum parameter; $v_0 = v/\sqrt2$, $\lambda = 4\beta$ against the Higgs companion's $V = \beta(\rho-v^2/2)^2$ |
 | $m_h^2 = \lambda v_0^2$, $m_\theta^2 = 0$ | Radial and angular (Goldstone) masses at tree level |
-| $D_\mu = \partial/\partial R_\mu + i\kappa A_\mu$, $\kappa = ϙ/\hbar$ | Covariant derivative of the central phase |
+| $D_\mu = \partial/\partial R_\mu + i\kappa A_\mu$, $\kappa =\frac{k_m\,ϙ}{m\,c}$ | Covariant derivative of the central phase |
 | $ϙ$ | Gauge charge (parameter) |
 | $\Gamma[\tilde{Ξ}_{\mathrm{cl}}] = \langle\tilde{J},\tilde{Ξ}_{\mathrm{cl}}\rangle - W[\tilde{J}]$ | Effective action (Legendre transform) |
 | $\Gamma_1 = \tfrac12\mathrm{Tr}\log S^{(2)}[\tilde{Ξ}_{\mathrm{cl}}]$ | One-loop effective action (determinant) |

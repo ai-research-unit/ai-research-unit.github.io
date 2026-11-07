@@ -89,12 +89,12 @@ $$
 **The source's spin operators are its equations (9)–(11)**,
 
 $$
-S_x = \frac{\hbar}{2}(-i\vec e_z), \qquad S_y = \frac{\hbar}{2}(-i\vec e_y), \qquad S_z = \frac{\hbar}{2}(-i\vec e_x).
+S_x =\frac{m\,c}{2\,k_m}(-i\vec e_z), \qquad S_y =\frac{m\,c}{2\,k_m}(-i\vec e_y), \qquad S_z =\frac{m\,c}{2\,k_m}(-i\vec e_x).
 $$
 
-**Their commutation relations were recomputed and hold exactly.** $[S_x,S_y] = i\hbar S_z$, $[S_y,S_z] = i\hbar S_x$ and $[S_z,S_x] = i\hbar S_y$, with no residual term. So the three elements satisfy the angular-momentum algebra of spin $\tfrac12$ in the algebra's own product, and that part of the source needs no correction.
+**Their commutation relations were recomputed and hold exactly.** $[S_x,S_y] =\frac{m\,c\,i\,S_{z}}{k_m}$, $[S_y,S_z] =\frac{m\,c\,i\,S_{x}}{k_m}$ and $[S_z,S_x] =\frac{m\,c\,i\,S_{y}}{k_m}$, with no residual term. So the three elements satisfy the angular-momentum algebra of spin $\tfrac12$ in the algebra's own product, and that part of the source needs no correction.
 
-**The corpus's operators are $\tilde S_k = \tfrac{\hbar}{2}i\vec e_k$, and the source's are the corpus's in another labelling**: $S_x = -\tilde S_3$, $S_y = -\tilde S_2$ and $S_z = -\tilde S_1$. The two triples are equal as algebras and different as identifications of the three directions, and the exchange is the one the table of the four values shows. Neither is wrong; what the page does not say is which of the two it uses.
+**The corpus's operators are $\tilde S_k =\frac{m\,c}{2\,k_m}i\vec e_k$, and the source's are the corpus's in another labelling**: $S_x = -\tilde S_3$, $S_y = -\tilde S_2$ and $S_z = -\tilde S_1$. The two triples are equal as algebras and different as identifications of the three directions, and the exchange is the one the table of the four values shows. Neither is wrong; what the page does not say is which of the two it uses.
 
 ### The States
 
@@ -108,9 +108,9 @@ $$
 
 | | $q_+$ | $q_-$ |
 |---|---|---|
-| $S_x$ | $+\tfrac{\hbar}{2}q_-$ | $+\tfrac{\hbar}{2}q_+$ |
-| $S_y$ | $+i\tfrac{\hbar}{2}q_-$ | $-i\tfrac{\hbar}{2}q_+$ |
-| $S_z$ | $+\tfrac{\hbar}{2}q_+$ | $-\tfrac{\hbar}{2}q_-$ |
+| $S_x$ | $+\frac{m\,c}{2\,k_m}q_-$ | $+\frac{m\,c}{2\,k_m}q_+$ |
+| $S_y$ | $+\frac{m\,c\,i}{2\,k_m}q_-$ | $-\frac{m\,c\,i}{2\,k_m}q_+$ |
+| $S_z$ | $+\frac{m\,c}{2\,k_m}q_+$ | $-\frac{m\,c}{2\,k_m}q_-$ |
 
 **The entry worth pausing on is the one for $S_x$ on $q_-$.** The source displays that product and reads off $q_+$ with the positive sign, and that is what direct multiplication gives; the sign is right and the flipped sign would be wrong. The four orthogonality and normalisation statements that follow in the source were also recomputed: $q_+^{*}q_- = 0$, and the source's square is $1$ on both states. Its duals are $q_\pm^{*}$: $q_+^{*} = q_+$, since $q_+$ is Hermitian, while $q_-^{*} = \tfrac{1}{\sqrt2}\left(\vec e_y - i\vec e_z\right)$, which is neither $q_-$ nor $-q_-$, and which fails as a dual in the product, where $q_+^{*}q_+ = q_-^{*}q_- = e_t - i\vec e_x$ is the zero divisor computed below.
 
@@ -129,9 +129,9 @@ $$
 | $q_+$ | $1$ | $0$ | $\tfrac12\left(e_t - i\vec e_x\right)$ | its own square, Hermitian, scalar part $\tfrac12$ |
 | $q_-$ | $1$ | $0$ | $\tfrac12\left(-\vec e_y - i\vec e_z\right)$ | zero |
 
-**The first of the two is a pure state and the second is not.** $\tfrac12(e_t - i\vec e_x)$ is Hermitian and equal to its own square, so by *Spin-1/2 Quantum Physics in Biquaternionic Form* it is a pure state, and by the operators above it is the state of eigenvalue $-\tfrac{\hbar}{2}$ of the corpus's $\tilde S_x$. The element $\tfrac12(-\vec e_y - i\vec e_z)$ squares to zero, and the two products between them are $\tfrac12(-\vec e_y - i\vec e_z)\cdot\tfrac12(e_t - i\vec e_x) = \tfrac12(-\vec e_y - i\vec e_z)$ and $\tfrac12(e_t - i\vec e_x)\cdot\tfrac12(-\vec e_y - i\vec e_z) = 0$. The complementary pure state along $\vec e_x$ is $\tfrac12(e_t + i\vec e_x)$.
+**The first of the two is a pure state and the second is not.** $\tfrac12(e_t - i\vec e_x)$ is Hermitian and equal to its own square, so by *Spin-1/2 Quantum Physics in Biquaternionic Form* it is a pure state, and by the operators above it is the state of eigenvalue $-\frac{m\,c}{2\,k_m}$ of the corpus's $\tilde S_x$. The element $\tfrac12(-\vec e_y - i\vec e_z)$ squares to zero, and the two products between them are $\tfrac12(-\vec e_y - i\vec e_z)\cdot\tfrac12(e_t - i\vec e_x) = \tfrac12(-\vec e_y - i\vec e_z)$ and $\tfrac12(e_t - i\vec e_x)\cdot\tfrac12(-\vec e_y - i\vec e_z) = 0$. The complementary pure state along $\vec e_x$ is $\tfrac12(e_t + i\vec e_x)$.
 
-**So the source's up state is a pure state up to the factor $\sqrt2$, and its down state is not an element of that kind at all.** The source's square cannot see the difference, since it is $1$ on both, and the algebra norm cannot see it either, since it is $0$ on both; the difference is visible only in the square. The source calls the first of the two its up state because its own $S_z$ is $-\tilde S_x$, so the state of eigenvalue $-\tfrac{\hbar}{2}$ of $\tilde S_x$ is the state of eigenvalue $+\tfrac{\hbar}{2}$ of its own $S_z$.
+**So the source's up state is a pure state up to the factor $\sqrt2$, and its down state is not an element of that kind at all.** The source's square cannot see the difference, since it is $1$ on both, and the algebra norm cannot see it either, since it is $0$ on both; the difference is visible only in the square. The source calls the first of the two its up state because its own $S_z$ is $-\tilde S_x$, so the state of eigenvalue $-\frac{m\,c}{2\,k_m}$ of $\tilde S_x$ is the state of eigenvalue $+\frac{m\,c}{2\,k_m}$ of its own $S_z$.
 
 ## The Rotation Operators
 
@@ -177,7 +177,7 @@ $$
 **The component along the axis is invariant and the two transverse components rotate into one another** in the standard sense; the two remaining axes give the two remaining rotations of the same pattern. The source collects all three into the single formula (17),
 
 $$
-D^{*}(n_a,\theta)S_jD(n_a,\theta)=\frac{\hbar}{2}\left(q_j\cos\theta+q_k\sin\theta\right),
+D^{*}(n_a,\theta)S_jD(n_a,\theta)=\frac{m\,c}{2\,k_m}\left(q_j\cos\theta+q_k\sin\theta\right),
 $$
 
 where $q_j=-i\vec e_j$. The source does not state which pair belongs to which axis, so as printed the formula is under-determined: the plus sign belongs to $(j,k)=(z,y)$ about $x$, $(x,z)$ about $y$ and $(y,x)$ about $z$, the reverse pairing carries the opposite sign, and the component along the axis is not covered by the pattern at all.
@@ -187,11 +187,11 @@ where $q_j=-i\vec e_j$. The source does not state which pair belongs to which ax
 **The source prints $S_+ = \tfrac12(S_x + iS_y)$ and $S_- = \tfrac12(S_x - iS_y)$**; with its own $S_x,S_y$ from (9)–(10) the factor $\tfrac12$ is spurious, and the values it prints in (18)–(19) are those of $S_x\pm iS_y$ with $\hbar=1$. Indeed, using $i(-i)=+1$,
 
 $$
-S_+ = S_x+iS_y = \frac{\hbar}{2}\left(-i\vec e_z+\vec e_y\right)=\frac{\hbar}{2}\left(\vec e_y-i\vec e_z\right),
+S_+ = S_x+iS_y =\frac{m\,c}{2\,k_m}\left(-i\vec e_z+\vec e_y\right)=\frac{m\,c}{2\,k_m}\left(\vec e_y-i\vec e_z\right),
 $$
 
 $$
-S_- = S_x-iS_y = \frac{\hbar}{2}\left(-i\vec e_z-\vec e_y\right)=\frac{\hbar}{2}\left(-\vec e_y-i\vec e_z\right),
+S_- = S_x-iS_y =\frac{m\,c}{2\,k_m}\left(-i\vec e_z-\vec e_y\right)=\frac{m\,c}{2\,k_m}\left(-\vec e_y-i\vec e_z\right),
 $$
 
 so in units $\hbar=1$ the two elements are
@@ -238,14 +238,13 @@ whose two fixed elements are, up to the factor $\sqrt2$, the two states of the p
 
 $$
 \begin{aligned}
--c\hbar\frac{dG}{dr} - \frac{c\hbar k}{r}G + mc^2F - \frac{z\hbar ca_0}{r}F &= EF,\\
-c\hbar\frac{dF}{dr} - \frac{c\hbar k}{r}F - mc^2G - \frac{z\hbar ca_0}{r}G &= EG.
+-\frac{m\,c^{2}\,G}{k_m\,r} -\frac{m\,c^{2}\,k}{k_m\,r}G + mc^2F -\frac{m\,c\,z\,ca_{0}}{k_m\,r}F &= EF,\\\frac{m\,c^{2}\,F}{k_m\,r} -\frac{m\,c^{2}\,k}{k_m\,r}F - mc^2G -\frac{m\,c\,z\,ca_{0}}{k_m\,r}G &= EG.
 \end{aligned}
 $$
 
-**which is the same pair the source's matrix route prints**, $k$ the Dirac–Coulomb quantum number and $za_0$ the Coulomb coupling in units of $\hbar c$. The two displays were compared entrywise and are the same system; the system itself is the standard radial Dirac–Coulomb one, its $1/r$ terms, mass terms and coupling being those of the textbook problem in the source's conventions.
+**which is the same pair the source's matrix route prints**, $k$ the Dirac–Coulomb quantum number and $za_0$ the Coulomb coupling in units of $\frac{m\,c^{2}}{k_m}$. The two displays were compared entrywise and are the same system; the system itself is the standard radial Dirac–Coulomb one, its $1/r$ terms, mass terms and coupling being those of the textbook problem in the source's conventions.
 
-**Its closed-form solution is given by the source as Laguerre polynomials** in $\rho = Cr$ with $C = \sqrt{m^2c^4 - E^2}/(\hbar c)$ and $s = \sqrt{k^2 - z^2a_0^2}$, and its wave function is the pair of angular elements multiplied by $F(\rho)$ and $G(\rho)$, written first as an ordered pair and then as the single element of its equations (25) and (26), with the dual in (27). The scalar part of $\tilde{Ξ}_{\mathrm{sp}}^*\tilde{Ξ}_{\mathrm{sp}}$, its (28), is $1/r^2$ times the sum of the squared moduli of the two angular parts with $F^2$ and $G^2$ attached. Its (29) integrates that density over the angular variables, and the density is
+**Its closed-form solution is given by the source as Laguerre polynomials** in $\rho = Cr$ with $C = \sqrt{m^2c^4 - E^2}/(\frac{m\,c^{2}}{k_m})$ and $s = \sqrt{k^2 - z^2a_0^2}$, and its wave function is the pair of angular elements multiplied by $F(\rho)$ and $G(\rho)$, written first as an ordered pair and then as the single element of its equations (25) and (26), with the dual in (27). The scalar part of $\tilde{Ξ}_{\mathrm{sp}}^*\tilde{Ξ}_{\mathrm{sp}}$, its (28), is $1/r^2$ times the sum of the squared moduli of the two angular parts with $F^2$ and $G^2$ attached. Its (29) integrates that density over the angular variables, and the density is
 
 $$
 \begin{aligned}
@@ -404,7 +403,7 @@ The dictionary is complex-linear; over $\mathbb{R}$ the products span $\mathrm{C
 | $\lvert q\rvert^2 = \sum_\mu\lvert q_\mu\rvert^2$ | The source's square, the Hermitian norm $H$; $1$ on both states |
 | $q_1, q_3$ | The source's coefficient labels, $q_x$ and $q_z$ |
 | $S_x, S_y, S_z$ | The source's spin operators; equal to $-\tilde S_3, -\tilde S_2, -\tilde S_1$ |
-| $\tilde S_k = \tfrac{\hbar}{2}i\vec e_k$ | The corpus's spin operators |
+| $\tilde S_k =\frac{m\,c}{2\,k_m}i\vec e_k$ | The corpus's spin operators |
 | $q_+ = \tfrac{1}{\sqrt2}(e_t - i\vec e_x)$, $q_- = \tfrac{1}{\sqrt2}(-\vec e_y - i\vec e_z)$ | The source's two states |
 | $\tfrac12(e_t \pm i\vec e_x)$ | The two pure states along $\vec e_x$; the minus member is $q_+/\sqrt2$ |
 | $\tfrac12(-\vec e_y - i\vec e_z)$ | The square-zero element $q_-/\sqrt2$ |

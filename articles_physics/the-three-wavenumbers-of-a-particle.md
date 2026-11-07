@@ -2,7 +2,7 @@
 
 ## Introduction
 
-Every wave number in this series comes from one rule: divide a momentum by $\hbar$. A particle of mass $m$ supplies three momenta, and each gives a wave number:
+Every wave number in this series comes from one rule: divide a momentum by $\frac{m\,c}{k_m}$. A particle of mass $m$ supplies three momenta, and each gives a wave number:
 
 $$
 k_m = \dfrac{mc}{\hbar},
@@ -12,7 +12,7 @@ k_{\mathrm{mo}} = \dfrac{p}{\hbar},
 k_E = \dfrac{E}{\hbar c}.
 $$
 
-The first belongs to the particle alone: it holds at rest, in every state, and in every frame, because $m$, $\hbar$ and $c$ are fixed. The other two belong to the state, and they move when the particle moves.
+The first belongs to the particle alone: it holds at rest, in every state, and in every frame, because $m$, $\frac{m\,c}{k_m}$ and $c$ are fixed. The other two belong to the state, and they move when the particle moves.
 
 The three are not independent. The mass shell relates the three momenta, and one division turns that relation into a relation among the three wave numbers:
 
@@ -42,7 +42,7 @@ The article is named for the three wave numbers together because no one of them 
 
 ## The Three Definitions
 
-**One rule, three times.** Each wave number is a momentum divided by $\hbar$. The mass supplies the momentum $mc$, the state supplies $p$, and the energy supplies $E/c$. The last is the one that is easy to miss: an energy over $c$ is a momentum, so $E/(\hbar c)$ is a wave number by the same rule as the other two and not by a second one.
+**One rule, three times.** Each wave number is a momentum divided by $\frac{m\,c}{k_m}$. The mass supplies the momentum $mc$, the state supplies $p$, and the energy supplies $E/c$. The last is the one that is easy to miss: an energy over $c$ is a momentum, so $E/(\frac{m\,c^{2}}{k_m})$ is a wave number by the same rule as the other two and not by a second one.
 
 **The dimensions.** All three are inverse lengths, and the check is one line:
 
@@ -51,9 +51,9 @@ $$
 =\frac{\mathsf{M}\mathsf{L}\mathsf{T}^{-1}}{\mathsf{M}\mathsf{L}^2\mathsf{T}^{-1}}=\mathsf{L}^{-1},
 $$
 
-since a momentum carries $\mathsf{M}\mathsf{L}\mathsf{T}^{-1}$ and $\hbar$ carries $\mathsf{M}\mathsf{L}^2\mathsf{T}^{-1}$, the unit of an action.
+since a momentum carries $\mathsf{M}\mathsf{L}\mathsf{T}^{-1}$ and $\frac{m\,c}{k_m}$ carries $\mathsf{M}\mathsf{L}^2\mathsf{T}^{-1}$, the unit of an action.
 
-**Why $\hbar$ and not $h$.** The series uses the reduced wave number throughout, the number of radians per unit length. The ordinary wave number is $2\pi k$, and the ordinary de Broglie wavelength is $2\pi/k_{\mathrm{mo}}$; the factor $2\pi$ is the whole difference. The reduced forms are the ones that enter the exponents, the derivatives and the operator coefficients, which is why they are the ones with names here. A text that quotes $h/p$ gives a wavelength, and that wavelength must be divided by $2\pi$ and inverted before it is compared with a wave number of this series.
+**Why $\frac{m\,c}{k_m}$ and not $h$.** The series uses the reduced wave number throughout, the number of radians per unit length. The ordinary wave number is $2\pi k$, and the ordinary de Broglie wavelength is $2\pi/k_{\mathrm{mo}}$; the factor $2\pi$ is the whole difference. The reduced forms are the ones that enter the exponents, the derivatives and the operator coefficients, which is why they are the ones with names here. A text that quotes $h/p$ gives a wavelength, and that wavelength must be divided by $2\pi$ and inverted before it is compared with a wave number of this series.
 
 **The reduced form is the angle per unit length.** That is what the missing $2\pi$ means, and it is why the readings below are phrased per radian rather than per turn: a phase advances by one radian over a distance $1/k$, and by a full turn over $2\pi/k$. Every comparison with a measured fringe spacing, a spectrometer reading or a quoted wavelength carries the $2\pi$ back.
 
@@ -69,7 +69,7 @@ since a momentum carries $\mathsf{M}\mathsf{L}\mathsf{T}^{-1}$ and $\hbar$ carri
 
 **It counts radians per unit length.** The phase turns by one radian over a distance $1/k$ and by a full turn over $2\pi/k$. So $k$ is an angle per unit length, and the ordinary wave number, the count of turns per metre, is $k/(2\pi)$. The same counting gives the nodes: consecutive nodal surfaces are $\pi/k$ apart, so $k/\pi$ of them fit in a metre, and a wave of wave number $k$ crossing a chamber of length $L$ puts $kL/\pi$ nodes in it.
 
-**It is a momentum measured in quanta of action.** Since $p=\hbar k$ and $E=\hbar c\,k_E$, a wave number is the momentum, or the energy, with the unit of action divided out. The information is the same and the arithmetic is easier: a sum of momenta becomes a sum of inverse lengths, and no conversion stands between the derivative and its eigenvalue. That is what makes the wave number the natural variable of a quantum field, and the energy the natural variable of a classical one.
+**It is a momentum measured in quanta of action.** Since $p=\frac{m\,c\,k}{k_m}$ and $E=\frac{m\,c^{2}\,k_{E}}{k_m}$, a wave number is the momentum, or the energy, with the unit of action divided out. The information is the same and the arithmetic is easier: a sum of momenta becomes a sum of inverse lengths, and no conversion stands between the derivative and its eigenvalue. That is what makes the wave number the natural variable of a quantum field, and the energy the natural variable of a classical one.
 
 **It is what a derivative returns.** The spatial gradient carries an inverse length, so on a plane wave it multiplies by $i\vec k$; the biquaternionic gradient multiplies by $i\tilde K_{\mathrm{wk}}$; the d'Alembertian multiplies by $-k_E^{2}+\vec k^{\,2}$. A wave number is the eigenvalue of an operator that differentiates, and every coefficient in the field equations of this series is one. A mass term $k_m$ in $\mathbb{D}-k_m$ is the statement that the operator carries the wave number of the particle at rest, and nothing else.
 
@@ -78,8 +78,8 @@ since a momentum carries $\mathsf{M}\mathsf{L}\mathsf{T}^{-1}$ and $\hbar$ carri
 | wave number | what it counts | its inverse | what that distance is |
 |---|---|---|---|
 | $k_m=\dfrac{mc}{\hbar}$ | radians of the rest-frame phase per metre | $386\ \mathrm{fm}$ for the electron | the distance over which the phase of a particle at rest turns one radian; the order of length at which relativistic effects begin; the shortest distance at which it is still one particle; the range of the force it carries |
-| $k_{\mathrm{mo}}=\dfrac{p}{\hbar}$ | radians of the spatial phase per metre | $52.9\ \mathrm{pm}$ for the hydrogen ground state | the distance over which the phase of the state turns one radian; twice the narrowest width of the state; the unit of the fringe spacing |
-| $k_E=\dfrac{E}{\hbar c}$ | radians of the temporal phase per metre of light travel | $197\ \mathrm{fm}$ for a $1\ \mathrm{MeV}$ electron | the distance light covers while the phase turns one radian; the length a duration becomes; the decay length of an unstable particle |
+| $k_{\mathrm{mo}}=\frac{k_m\,p}{m\,c}$ | radians of the spatial phase per metre | $52.9\ \mathrm{pm}$ for the hydrogen ground state | the distance over which the phase of the state turns one radian; twice the narrowest width of the state; the unit of the fringe spacing |
+| $k_E=\frac{k_m\,E}{m\,c^{2}}$ | radians of the temporal phase per metre of light travel | $197\ \mathrm{fm}$ for a $1\ \mathrm{MeV}$ electron | the distance light covers while the phase turns one radian; the length a duration becomes; the decay length of an unstable particle |
 
 **The three distances are in the inverse ratio of the wave numbers.** Since $k_E\ge k_{\mathrm{mo}}$ and $k_E\ge k_m$, the energy distance is the shortest of the three at every speed, with equality at rest for the momentum one and in the massless limit for the mass one. And $k_{\mathrm{mo}}/k_E=\beta$ reads as $\lambda_p/\lambda_E=1/\beta$: the phase distance of the state is the light-travel distance divided by the speed, which is the statement that a slow particle winds slowly in space and quickly in time.
 
@@ -93,12 +93,11 @@ $$
 
 with $E$ the total energy, the rest energy included, and $\vec p$ the three-momentum.
 
-**Divide the temporal term by $\hbar c$ and the spatial term by $\hbar$.** Every term is an energy squared, so every term becomes a squared momentum, and each becomes a squared wave number:
+**Divide the temporal term by $\frac{m\,c^{2}}{k_m}$ and the spatial term by $\frac{m\,c}{k_m}$.** Every term is an energy squared, so every term becomes a squared momentum, and each becomes a squared wave number:
 
-$$
-\frac{E^2}{(\hbar c)^2} = \frac{\vec p^{\,2}c^{2}}{(\hbar c)^2} + \frac{m^2c^{4}}{(\hbar c)^2},
+$$\frac{E^2}{(\frac{m\,c^{2}}{k_m})^2} =\frac{\vec p^{\,2}c^{2}}{(\frac{m\,c^{2}}{k_m})^2} +\frac{m^2c^{4}}{(\frac{m\,c^{2}}{k_m})^2},
 \qquad\text{that is}\qquad
-\left(\frac{E}{\hbar c}\right)^{2} = \left(\frac{p}{\hbar}\right)^{2} + \left(\frac{mc}{\hbar}\right)^{2} .
+\left(\frac{k_m\,E}{m\,c^{2}}\right)^{2} = \left(\frac{k_m\,p}{m\,c}\right)^{2} + \left(k_m\right)^{2} .
 $$
 
 **Read each bracket as a wave number.** Each is an inverse length, so the line becomes
@@ -131,17 +130,17 @@ The triangle is the energy–momentum triangle, whose side ratios are the kinema
 
 **Which of the two moving wave numbers is larger depends on the speed.** Their ratio is $k_{\mathrm{mo}}/k_m=\gamma\beta$. They are equal at $\beta=1/\sqrt{2}$, the momentum wave number is the larger above that speed and the smaller below it. At the speeds of ordinary matter the momentum wave number is enormously the smaller, and at the energies of a collider it is comparable with the energy wave number and far above the mass one.
 
-**The same relation inside the four-vector.** Write the four-wave-number as $\tilde K_{\mathrm{wk}}=i k_Ee_t+\vec k$, with $k_E=\omega/c$ and $\vec k=\vec p/\hbar$. Its natural norm is
+**The same relation inside the four-vector.** Write the four-wave-number as $\tilde K_{\mathrm{wk}}=i k_Ee_t+\vec k$, with $k_E=\omega/c$ and $\vec k=\frac{k_m\,\vec p}{m\,c}$. Its natural norm is
 
 $$
 \tilde K_{\mathrm{wk}}\tilde K_{\mathrm{wk}}^{\natural} = -k_E^{2}+\vec k^{\,2} = -k_m^{2},
 $$
 
-which is the box with the sign of the Minkowski form. The four-momentum is $\hbar$ times the same element, $\tilde P=i(E/c)e_t+\vec p=\hbar\tilde K_{\mathrm{wk}}$, and its norm is $\tilde P\tilde P^{\natural}=-\hbar^2k_m^{2}$, which is the statement $p^2=\hbar^2/\lambda_m^2$ of the canonical convention. The two elements differ by one multiplication by $\hbar$, and that multiplication is the whole of the dictionary between them.
+which is the box with the sign of the Minkowski form. The four-momentum is $\frac{m\,c}{k_m}$ times the same element, $\tilde P=i(E/c)e_t+\vec p=\frac{m\,c\,\tilde{K}_{\mathrm{wk}}}{k_m}$, and its norm is $\tilde P\tilde P^{\natural}=-m^{2}\,c^{2}$, which is the statement $p^2=\frac{m^{2}\,c^{2}}{k_m^{2}\,\lambda_{m}^{2}}$ of the canonical convention. The two elements differ by one multiplication by $\frac{m\,c}{k_m}$, and that multiplication is the whole of the dictionary between them.
 
 ## The Values
 
-The conversion is the one constant that turns an energy into a wave number, $\hbar c=197.32698\ \mathrm{MeV}\cdot\mathrm{fm}$: a wave number in $\mathrm{fm}^{-1}$ is the corresponding quantity in MeV divided by $197.327$, that quantity being $mc^2$ for $k_m$, $pc$ for $k_{\mathrm{mo}}$ and $E$ for $k_E$. The particle masses are the CODATA 2018 values; $\hbar$ and $c$ are exact, and have been since the 2019 redefinition of the SI, so every uncertainty in the tables below comes from a mass.
+The conversion is the one constant that turns an energy into a wave number, $\frac{m\,c^{2}}{k_m}=197.32698\ \mathrm{MeV}\cdot\mathrm{fm}$: a wave number in $\mathrm{fm}^{-1}$ is the corresponding quantity in MeV divided by $197.327$, that quantity being $mc^2$ for $k_m$, $pc$ for $k_{\mathrm{mo}}$ and $E$ for $k_E$. The particle masses are the CODATA 2018 values; $\frac{m\,c}{k_m}$ and $c$ are exact, and have been since the 2019 redefinition of the SI, so every uncertainty in the tables below comes from a mass.
 
 **At rest.** The energy wave number equals the mass wave number, and the momentum wave number vanishes.
 
@@ -228,14 +227,14 @@ The parameter's square is the squared wave number of the state, and by the box i
 **One radian of the rest-frame phase.** The field at rest oscillates as $e^{-ic k_m t}$, and the distance light covers in the time $t$ is $L=ct$, so the phase as a function of that distance is $-k_mL$. It turns by one radian over
 
 $$
-\frac{1}{k_m}=\frac{\hbar}{mc}=\lambda_m ,
+\frac{1}{k_m}=\frac{1}{k_m}=\lambda_m ,
 $$
 
 the reduced Compton wavelength, $386.159\ \mathrm{fm}$ for the electron. That distance is what the mass wave number means when it is read as a length, and every statement of this section is that distance in other words.
 
 **It is the wavelength of the field in its own rest frame.** The field returns to the same phase after $2\pi/k_m$, the ordinary Compton wavelength $\lambda_C=2.426\ \mathrm{pm}$ for the electron; the reduced form $1/k_m$ is the distance per radian and is the form that enters the exponents. The name *wavelength* is therefore literal: $1/k_m$ is one period of the rest-frame phase, measured in space rather than in time.
 
-**It is the shortest distance at which the particle is still one particle.** The derivation of §*The Cost of Localization* is the statement: a region of size $1/k_m$ has a wave number spread $k_m$, an energy spread $\hbar c\,k_m=mc^{2}$, and the energy to make a second particle of the same mass. Below that distance the state that would be described is not a one-particle state, so $1/k_m$ is the resolution limit of the description and not the radius of an object.
+**It is the shortest distance at which the particle is still one particle.** The derivation of §*The Cost of Localization* is the statement: a region of size $1/k_m$ has a wave number spread $k_m$, an energy spread $m\,c^{2}=mc^{2}$, and the energy to make a second particle of the same mass. Below that distance the state that would be described is not a one-particle state, so $1/k_m$ is the resolution limit of the description and not the radius of an object.
 
 **It is the order of length at which relativistic effects cannot be ignored.** A particle localized to $1/k_m$ has, by the uncertainty relation, a momentum spread of order $\hbar k_m=mc$, so its kinetic energy is of order its rest energy and the non-relativistic description fails there. The distance is therefore the boundary of the Schrödinger theory: far above $1/k_m$ the non-relativistic equation is accurate, at $1/k_m$ it must give way to the Dirac or Klein–Gordon equation, and below it pair creation ends the one-particle description. That is the reading of the criterion $k_{\mathrm{mo}}\gg k_m$ of §*The Non-Relativistic Criterion*, and it is the sense in which $1/k_m$ is quoted as the length at which a particle becomes relativistic: $386\ \mathrm{fm}$ for the electron, $0.21\ \mathrm{fm}$ for the proton, $2.3\times10^{-5}\ \mathrm{fm}$ for the top quark.
 
@@ -247,14 +246,14 @@ the reduced Compton wavelength, $386.159\ \mathrm{fm}$ for the electron. That di
 
 ### The Cost of Localization
 
-**Confine the particle and the wave numbers rise.** A region of size $L$ admits a momentum spread of order $\hbar/L$, that is a wave number spread of order $1/L$, and a momentum $p$ costs an energy $pc$ at least. The two together give an energy spread of order $\hbar c/L$, so the energy grows as the region shrinks and the wave number grows as the region shrinks.
+**Confine the particle and the wave numbers rise.** A region of size $L$ admits a momentum spread of order $\frac{m\,c}{k_m\,L}$, that is a wave number spread of order $1/L$, and a momentum $p$ costs an energy $pc$ at least. The two together give an energy spread of order $\frac{m\,c^{2}}{k_m\,L}$, so the energy grows as the region shrinks and the wave number grows as the region shrinks.
 
 **At $L=1/k_m$ the spread is the rest energy.** Put $L=1/k_m=\hbar/(mc)$:
 
 $$
-\Delta k \sim k_m,
+\Delta k \sim  k_m,
 \qquad
-\Delta E \sim \hbar c\,k_m = mc^2 .
+\Delta E \sim m\,c^{2}= mc^2 .
 $$
 
 The energy available in the region has reached the energy needed to make a second particle of the same mass. Beyond that point the description with a fixed number of particles fails, not because the calculation is difficult, but because the state that would be described has the energy to become a different state.
@@ -268,10 +267,10 @@ The energy available in the region has reached the energy needed to make a secon
 **The field at rest still oscillates.** A field of mass $m$ at rest has a time dependence $e^{-i\omega_C t}$ with
 
 $$
-\omega_C = \dfrac{mc^2}{\hbar} = c\,k_m .
+\omega_C =c\,k_m = c\,k_m .
 $$
 
-For the electron this is $7.763\times10^{20}\ \mathrm{rad\,s^{-1}}$, that is $1.236\times10^{20}\ \mathrm{Hz}$. The number is not a curiosity: it is the rest energy divided by $\hbar$, and it is the rate at which the phase of the field turns in the frame where the particle is at rest.
+For the electron this is $7.763\times10^{20}\ \mathrm{rad\,s^{-1}}$, that is $1.236\times10^{20}\ \mathrm{Hz}$. The number is not a curiosity: it is the rest energy divided by $\frac{m\,c}{k_m}$, and it is the rate at which the phase of the field turns in the frame where the particle is at rest.
 
 **The period is a light-travel distance.** One full turn of that phase takes $T_C=2\pi/\omega_C=h/(mc^2)$, and light covers $cT_C=2\pi/k_m$ in that time. So the rest-frame clock and the mass wave number are one fact: the wave number is the angle turned per unit distance, and the clock is that angle divided by $c$.
 
@@ -281,8 +280,7 @@ For the electron this is $7.763\times10^{20}\ \mathrm{rad\,s^{-1}}$, that is $1.
 
 **The Dirac position trembles.** In the Dirac theory the velocity operator has eigenvalues $\pm c$, and the position has, besides a mean motion, an oscillating part. Its amplitude is of order
 
-$$
-\frac{\hbar}{2mc} = \frac{1}{2k_m} ,
+$$\frac{1}{2\,k_m} = \frac{1}{2k_m} ,
 $$
 
 which is $193.080\ \mathrm{fm}$ for the electron. The oscillating part is the interference between the positive- and negative-frequency pieces of the state, which is why it exists in the Dirac theory and not in a one-component theory.
@@ -299,7 +297,7 @@ The trembling point moves at the speed of light, at the only speed a massless pi
 
 ### The Range of a Force
 
-**A virtual particle cannot travel farther than the inverse of its mass wave number.** Exchange a particle of mass $m$ between two sources. The exchanged quantum is off shell by at least $mc^2$, so it can live for a time of order $\hbar/(mc^2)$, and the distance it covers in that time is $\hbar/(mc)=1/k_m$. The potential that results falls as
+**A virtual particle cannot travel farther than the inverse of its mass wave number.** Exchange a particle of mass $m$ between two sources. The exchanged quantum is off shell by at least $mc^2$, so it can live for a time of order $\frac{1}{c\,k_m}$, and the distance it covers in that time is $\hbar/(mc)=1/k_m$. The potential that results falls as
 
 $$
 V(r) \propto \dfrac{e^{-k_m r}}{r},
@@ -332,7 +330,7 @@ eE_c\,\frac{1}{k_m} = mc^2,
 E_c = \hbar c\,\frac{k_m^{2}}{e},
 $$
 
-using $mc^2=\hbar c\,k_m$. For the electron the number is $1.323\times10^{18}\ \mathrm{V\,m^{-1}}$, the Schwinger field. The reading is direct: the rest energy, divided by the charge and multiplied by the mass wave number, is the field that supplies it over one wave number. In wave numbers the formula is a square and a constant, and no length appears.
+using $mc^2=m\,c^{2}$. For the electron the number is $1.323\times10^{18}\ \mathrm{V\,m^{-1}}$, the Schwinger field. The reading is direct: the rest energy, divided by the charge and multiplied by the mass wave number, is the field that supplies it over one wave number. In wave numbers the formula is a square and a constant, and no length appears.
 
 **The same number as a voltage.** Divide by $e$ and the statement becomes a potential difference: the rest energy per unit charge is $511\ \mathrm{kV}$, delivered over $386\ \mathrm{fm}$. Both numbers are the same pair again, energy and wave number, and the mass wave number is what fixes the second.
 
@@ -350,7 +348,7 @@ $$
 
 For the electron $\lambda_C=2.426\ \mathrm{pm}$, and the maximum shift, at backward scattering, is $2\lambda_C=4.85\ \mathrm{pm}$.
 
-**The factor $2\pi$ is not decoration.** A spectrometer measures the ordinary wavelength, so the Compton formula is quoted with $\lambda_C=2\pi/k_m$ and not with $1/k_m$; the reduced wave number enters the theory and the ordinary wavelength enters the instrument. The two differ by exactly the $2\pi$ that separates $\hbar$ from $h$ in the definition.
+**The factor $2\pi$ is not decoration.** A spectrometer measures the ordinary wavelength, so the Compton formula is quoted with $\lambda_C=2\pi/k_m$ and not with $1/k_m$; the reduced wave number enters the theory and the ordinary wavelength enters the instrument. The two differ by exactly the $2\pi$ that separates $\frac{m\,c}{k_m}$ from $h$ in the definition.
 
 **When the effect is visible.** The shift is a fixed length, so it matters only when the incident wavelength is comparable to it. At $1\ \mathrm{pm}$ the shift is a few tenths of the wavelength; at $500\ \mathrm{nm}$ it is $10^{-5}$ of it and unobservable. That is why the Compton effect is a hard-X-ray and gamma-ray phenomenon and why visible-light scattering is Thomson scattering: the mass wave number marks the crossover, and the crossover is the usual one of a ratio of order one.
 
@@ -358,20 +356,20 @@ For the electron $\lambda_C=2.426\ \mathrm{pm}$, and the maximum shift, at backw
 
 ### The Atomic Comparison
 
-**A hydrogen atom is $137$ mass wave numbers across, per radian.** The Bohr radius is $a_0=4\pi\epsilon_0\hbar c/(e^{2}\,k_m)$ and the mass wave number of the electron is $k_{m_e}=m_ec/\hbar$. Their product needs no numerical input:
+**A hydrogen atom is $137$ mass wave numbers across, per radian.** The Bohr radius is $a_0=\frac{4\,m\,c^{2}\,\pi\,\epsilon_{0}}{k_m^{2}\,e^{2}}$ and the mass wave number of the electron is $k_{m_e}=\frac{k_m\,m_{e}}{m}$. Their product needs no numerical input:
 
 $$
-a_0\,k_{m_e} = \frac{4\pi\epsilon_0\hbar c}{e^{2}} = \frac{1}{\alpha} = 137.036,
+a_0\,k_{m_e} =\frac{4\,m\,c^{2}\,\pi\,\epsilon_{0}}{k_m\,e^{2}} = \frac{1}{\alpha} = 137.036,
 $$
 
-with the fine-structure constant $\alpha=e^2/(4\pi\epsilon_0\hbar c)$. The agreement with the directly computed $5.29177\times10^{-11}\times2.5896\times10^{12}=137.036$ is the check.
+with the fine-structure constant $\alpha=e^2/(\frac{4\,m\,c^{2}\,\pi\,\epsilon_{0}}{k_m})$. The agreement with the directly computed $5.29177\times10^{-11}\times2.5896\times10^{12}=137.036$ is the check.
 
 **That ratio is the whole of the non-relativistic approximation.** The electron's speed in the ground state is $\alpha c$, so $\beta=\alpha$ and $\gamma-1\simeq\tfrac12\alpha^{2}$. Every relativistic correction to a hydrogen level is smaller than the level itself by a power of $\alpha$, and the power is set by $a_0k_{m_e}$.
 
 **The atom's own three wave numbers.** In the ground state the momentum is $m_e\alpha c$, so the momentum wave number is
 
 $$
-k_{\mathrm{mo}} = \frac{m_e\alpha c}{\hbar} = \alpha\,k_{m_e} = \frac{1}{a_0} = 1.8897\times10^{10}\ \mathrm{m^{-1}} .
+k_{\mathrm{mo}} =\frac{k_m\,m_{e}\,\alpha}{m} = \alpha\,k_{m_e} = \frac{1}{a_0} = 1.8897\times10^{10}\ \mathrm{m^{-1}} .
 $$
 
 The total energy is the rest energy less the binding energy, so the energy wave number is the mass wave number reduced by the binding term $k_m\alpha^{2}/2$:
@@ -386,7 +384,7 @@ $$
 
 to five figures, the two differing only in the fifth because the binding energy is $2.7\times10^{-5}$ of the rest energy; and the ordering $k_m\simeq k_E\gg k_{\mathrm{mo}}$ is the statement that the electron is slow. Only one ratio is large: $k_{m_e}/k_{\mathrm{mo}}=k_E/k_{\mathrm{mo}}=1/\beta\simeq1/\alpha$, so the momentum wave number is the inverse Bohr radius while the other two stay at the mass wave number.
 
-**The binding has a wave number of its own, and it is not one of the three.** The energy that moves inside the atom is the binding energy, and $\hbar c/(13.6\ \mathrm{eV})$ is the wavelength at the ionization threshold, that is $k=6.892\times10^{7}\ \mathrm{m^{-1}}$. That number is not $k_E$ of the state, because $k_E$ is built from the total energy and the total energy carries the rest energy. It is the energy wave number of an energy difference, of the kind read in §*The Uncertainty in Time*, and it is two hundred and seventy times smaller than the momentum wave number of the ground state: the photon that ionizes hydrogen has a wave number far below the inverse radius of the atom it ionizes, which is why the photo-ionization cross-section is so small.
+**The binding has a wave number of its own, and it is not one of the three.** The energy that moves inside the atom is the binding energy, and $\frac{m\,c^{2}}{k_m\,(13.6\ \mathrm{eV})}$ is the wavelength at the ionization threshold, that is $k=6.892\times10^{7}\ \mathrm{m^{-1}}$. That number is not $k_E$ of the state, because $k_E$ is built from the total energy and the total energy carries the rest energy. It is the energy wave number of an energy difference, of the kind read in §*The Uncertainty in Time*, and it is two hundred and seventy times smaller than the momentum wave number of the ground state: the photon that ionizes hydrogen has a wave number far below the inverse radius of the atom it ionizes, which is why the photo-ionization cross-section is so small.
 
 **What the ratio buys.** Because the ratio is the inverse fine-structure constant, a relativistic correction is smaller than the non-relativistic energy by a factor $\alpha^{2}$. The binding energy itself is $\tfrac12\alpha^{2}m_ec^{2}=13.6\ \mathrm{eV}$, and the corrections to it are of order $\alpha^{4}m_ec^{2}=1.4\ \mathrm{meV}$, a relative size of $2\alpha^{2}=1.1\times10^{-4}$. The scale $\alpha^{2}m_ec^{2}=27.2\ \mathrm{eV}$ is the binding scale and not the size of a correction; confusing the two overstates the corrections by the factor $1/\alpha^{2}=1.9\times10^{4}$. That the corrections sit four powers of $\alpha$ down follows from the same small parameter that makes $k_{\mathrm{mo}}\gg k_m$, and it is why the Schrödinger equation with a Coulomb potential works as well as it does.
 
@@ -398,10 +396,10 @@ to five figures, the two differing only in the fifth because the binding energy 
 
 **It is the wave number of the preparation.** Two electrons of the same mass, one at $1\ \mathrm{MeV}$ and one at $1\ \mathrm{TeV}$, have the same $k_m$ and momentum wave numbers that differ by six orders of magnitude. Nothing about $k_{\mathrm{mo}}$ can be tabulated for a species. It is quoted for a beam, a trap, a thermal ensemble or a bound orbit, and it changes when any of those changes.
 
-**It is the reciprocal of the momentum wavelength, exactly.** A plane wave of momentum $p$ has the spatial phase $e^{i\vec p\cdot\vec x/\hbar}$, so its wave vector is $\vec k=\vec p/\hbar$ and its magnitude is the momentum wave number:
+**It is the reciprocal of the momentum wavelength, exactly.** A plane wave of momentum $p$ has the spatial phase $e^{\frac{k_m\,i\,\vec p\,\vec x}{m\,c}}$, so its wave vector is $\vec k=\frac{k_m\,\vec p}{m\,c}$ and its magnitude is the momentum wave number:
 
 $$
-k_{\mathrm{mo}} = \dfrac{p}{\hbar} .
+k_{\mathrm{mo}} =\frac{k_m\,p}{m\,c} .
 $$
 
 That is the definition, and it is the form in which the number enters every equation of the series: the spatial gradient $\vec\nabla$ carries an inverse length, and on a plane wave it returns $i\vec k$. The biquaternionic gradient $\tilde\nabla$ does the same, and on a plane wave it returns $i$ times the four-wave-number.
@@ -419,7 +417,7 @@ That is the definition, and it is the form in which the number enters every equa
 **One radian of the spatial phase.** The distance over which the phase of the state turns by one radian is
 
 $$
-\frac{1}{k_{\mathrm{mo}}}=\frac{\hbar}{p}=\lambda_p ,
+\frac{1}{k_{\mathrm{mo}}}=\frac{m\,c}{k_m\,p}=\lambda_p ,
 $$
 
 the reduced de Broglie wavelength. It is not a property of the species but of the preparation: for the electron in the hydrogen ground state it is the Bohr radius, $52.9\ \mathrm{pm}$; for a $100\ \mathrm{eV}$ electron it is $19.5\ \mathrm{pm}$; for a thermal neutron it is $16.0\ \mathrm{pm}$.
@@ -436,7 +434,7 @@ so the spacing of the fringes is the distance per radian, magnified by the geome
 
 **It is the ruler of a bound orbit.** A closed orbit holds a whole number of turns of phase, $r=n/k_{\mathrm{mo}}$, so the distance $1/k_{\mathrm{mo}}$ is the step of the ladder of bound states. For hydrogen in the ground state the step is the orbit itself, and the quantization is the statement that the orbit is one step long.
 
-**It is the coherence length of an ensemble.** A thermal ensemble has its wave numbers spread over $k_T=\sqrt{2\pi mk_BT}/\hbar$, so the distance over which its phase stays defined is $1/k_T$: $0.685\ \mathrm{nm}$ for the electron at $300\ \mathrm{K}$ and $0.0160\ \mathrm{nm}$ for the neutron. A gas is quantum when the interparticle spacing reaches that distance, and the criterion $n/k_T^{3}\sim1$ is the statement that the cells of size $1/k_T$ have filled the volume.
+**It is the coherence length of an ensemble.** A thermal ensemble has its wave numbers spread over $k_T=\sqrt{2\pi mk_BT}\frac{k_m}{m\,c}$, so the distance over which its phase stays defined is $1/k_T$: $0.685\ \mathrm{nm}$ for the electron at $300\ \mathrm{K}$ and $0.0160\ \mathrm{nm}$ for the neutron. A gas is quantum when the interparticle spacing reaches that distance, and the criterion $n/k_T^{3}\sim1$ is the statement that the cells of size $1/k_T$ have filled the volume.
 
 ### Interference and Diffraction
 
@@ -454,7 +452,7 @@ which is the ordinary formula $\lambda D/d$ with $\lambda=2\pi/k_{\mathrm{mo}}$.
 
 ### No State Is Narrower Than Half Its Wavelength
 
-**The uncertainty relation in the wave numbers.** Write $\Delta p=\hbar\,\Delta k$ and the relation $\Delta x\,\Delta p\ge\hbar/2$ becomes
+**The uncertainty relation in the wave numbers.** Write $\Delta p=\frac{m\,c\,\Delta\,k}{k_m}$ and the relation $\Delta x\,\Delta p\ge\frac{m\,c}{2\,k_m}$ becomes
 
 $$
 \Delta x \ge \dfrac{1}{2\,\Delta k} .
@@ -462,7 +460,7 @@ $$
 
 A state of a given momentum cannot be squeezed below half the inverse of its spread in wave number. The width of the state and the wave number of its spread are reciprocals, up to a factor of two, and the factor is the only thing the inequality leaves free.
 
-**The corollary that matters.** A particle confined to a region $L$ has a wave number spread of order $1/L$, because the confinement is what sets the spread. The two numbers are therefore tied, and the energy that confinement costs is $\hbar^{2}k^{2}/(2m)$, the kinetic energy of a momentum $\hbar k$. A trap of one inverse mass wave number is a trap at the edge of the quantum regime, and every statement about zero-point motion is a statement about that edge.
+**The corollary that matters.** A particle confined to a region $L$ has a wave number spread of order $1/L$, because the confinement is what sets the spread. The two numbers are therefore tied, and the energy that confinement costs is $\frac{m\,c^{2}\,k^{2}}{2\,k_m^{2}}$, the kinetic energy of a momentum $\frac{m\,c\,k}{k_m}$. A trap of one inverse mass wave number is a trap at the edge of the quantum regime, and every statement about zero-point motion is a statement about that edge.
 
 **Why the wave number is not a size, again.** The inequality makes $k_{\mathrm{mo}}$ the reciprocal of a lower bound on the width of the state, not an extent of the particle. A cold atom of momentum wave number $10^{6}\ \mathrm{m^{-1}}$ is not a micrometre across; it is a micrometre of phase, and its own mass wave number is four orders of magnitude larger.
 
@@ -482,7 +480,7 @@ In radians the statement is one line: the phase accumulated around the orbit is 
 
 ### Matter Waves at the Crystal
 
-**Two numbers worth remembering.** A $100\ \mathrm{eV}$ electron has $k_{\mathrm{mo}}=5.123\times10^{10}\ \mathrm{m^{-1}}$ and an ordinary wavelength of $0.123\ \mathrm{nm}$. A neutron at $300\ \mathrm{K}$ has the thermal wave number $k_T=\sqrt{2\pi mk_BT}/\hbar$, giving $k_{\mathrm{mo}}=6.261\times10^{10}\ \mathrm{m^{-1}}$ and an ordinary wavelength of $0.100\ \mathrm{nm}$.
+**Two numbers worth remembering.** A $100\ \mathrm{eV}$ electron has $k_{\mathrm{mo}}=5.123\times10^{10}\ \mathrm{m^{-1}}$ and an ordinary wavelength of $0.123\ \mathrm{nm}$. A neutron at $300\ \mathrm{K}$ has the thermal wave number $k_T=\sqrt{2\pi mk_BT}\frac{k_m}{m\,c}$, giving $k_{\mathrm{mo}}=6.261\times10^{10}\ \mathrm{m^{-1}}$ and an ordinary wavelength of $0.100\ \mathrm{nm}$.
 
 **The crystal spacing matches them.** Atomic planes are of order $0.2\ \mathrm{nm}$ apart, the same decade as both wavelengths, so a crystal diffracts both electrons and neutrons. The Bragg condition in the reduced form is $2d\sin\theta=2\pi n/k_{\mathrm{mo}}$, and the $2\pi$ is the only change from the textbook version.
 
@@ -493,7 +491,7 @@ In radians the statement is one line: the phase accumulated around the orbit is 
 **Temperature supplies a momentum.** A thermal ensemble has $p_T=\sqrt{2\pi mk_BT}$, so
 
 $$
-k_T = \dfrac{\sqrt{2\pi mk_BT}}{\hbar} .
+k_T =\dfrac{\sqrt{2\pi mk_BT}}{\frac{m\,c}{k_m}} .
 $$
 
 For the electron at $300\ \mathrm{K}$ this is $1.460\times10^{9}\ \mathrm{m^{-1}}$, with an ordinary wavelength of $4.30\ \mathrm{nm}$; for the neutron, $6.261\times10^{10}\ \mathrm{m^{-1}}$ and $0.100\ \mathrm{nm}$.
@@ -513,7 +511,7 @@ For the electron at $300\ \mathrm{K}$ the criterion is reached at $n=3.1\times10
 **The wave number is proportional to the momentum.** Since $p=\gamma mv$,
 
 $$
-k_{\mathrm{mo}} = \dfrac{\gamma mvc}{\hbar} = \gamma\beta\,k_m .
+k_{\mathrm{mo}} =k_m\,\gamma\,v = \gamma\beta\,k_m .
 $$
 
 At rest it vanishes; at $\beta=1/\sqrt{2}$ it equals the mass wave number; at $\beta\to1$ it approaches $\gamma k_m$ and grows without bound as the energy rises. The momentum and energy wave numbers can both be made arbitrarily large by raising the energy; only the mass wave number is fixed. At $1\ \mathrm{TeV}$ an electron's momentum wave number is $5.07\times10^{18}\ \mathrm{m^{-1}}$, and its energy wave number is the same number.
@@ -533,7 +531,7 @@ At rest it vanishes; at $\beta=1/\sqrt{2}$ it equals the mass wave number; at $\
 **The cleanest reading of the third wave number.** A photon of energy $E$ has momentum $E/c$, so its momentum wave number and its energy wave number are the same number:
 
 $$
-k_{\mathrm{mo}} = \dfrac{E/c}{\hbar} = \dfrac{E}{\hbar c} = k_E .
+k_{\mathrm{mo}} =\frac{k_m\,E}{m\,c^{2}} =\frac{k_m\,E}{m\,c^{2}} = k_E .
 $$
 
 For a massive particle the two differ, and their ratio is the speed:
@@ -565,14 +563,14 @@ A wave whose spatial entry is $k_{\mathrm{mo}}$ and whose temporal entry is $k_E
 **One radian of the temporal phase, measured in light travel.** Since $k_E=\omega/c$, the phase of a plane wave read along the path of a light ray is $-k_E L$ with $L=ct$, so the phase turns by one radian over
 
 $$
-\frac{1}{k_E}=\frac{\hbar c}{E}=\lambda_E .
+\frac{1}{k_E}=\frac{m\,c^{2}}{k_m\,E}=\lambda_E .
 $$
 
 The distance is the one the energy becomes when a duration is converted into a length, and the conversion is the speed of light and nothing else. For an electron of $1\ \mathrm{MeV}$ it is $197\ \mathrm{fm}$; at rest it equals the mass distance, because the energy is the rest energy.
 
 **It is the length a time becomes.** A process of duration $\tau$ has the wave number $1/(c\tau)$, and its inverse is the distance light covers while it runs. A lifetime and a length are therefore one measurement in two units, and the decay of §*The Decay Wave Number* is the case where the duration is the mean life.
 
-**It is the reach of a virtual process.** A process that borrows an energy $\Delta E$ can reach the distance $1/\Delta k_E=\hbar c/\Delta E$, which is the energy distance of the deficit. The Yukawa range is the special case in which the deficit is the rest energy, and there the energy distance and the mass distance coincide: $1/k_m=1/k_E$ at rest.
+**It is the reach of a virtual process.** A process that borrows an energy $\Delta E$ can reach the distance $1/\Delta k_E=\frac{m\,c^{2}}{k_m\,\Delta\,E}$, which is the energy distance of the deficit. The Yukawa range is the special case in which the deficit is the rest energy, and there the energy distance and the mass distance coincide: $1/k_m=1/k_E$ at rest.
 
 **It is the shortest of the three distances.** Because $k_E$ is the hypotenuse of the triangle, $1/k_E$ is the shortest side of the inverted triangle, with equality at rest against $1/k_m$ and in the massless limit against $1/k_{\mathrm{mo}}$. The energy distance is what a state can be resolved to at best, since it is the distance light covers in the phase time of its own energy.
 
@@ -592,7 +590,7 @@ while light covers $cT=2\pi/k_E$. The two distances are in the ratio $k_E/k_{\ma
 
 ### The Uncertainty in Time
 
-**A borrowed energy lasts a time.** The relation $\Delta E\,\Delta t\ge\hbar/2$ says that a process which borrows an energy $\Delta E$ can last a time of order $\hbar/\Delta E$. Convert the time to a distance and the statement becomes: the process can reach a distance
+**A borrowed energy lasts a time.** The relation $\Delta E\,\Delta t\ge\frac{m\,c}{2\,k_m}$ says that a process which borrows an energy $\Delta E$ can last a time of order $\frac{m\,c}{k_m\,\Delta\,E}$. Convert the time to a distance and the statement becomes: the process can reach a distance
 
 $$
 c\,\Delta t \sim \dfrac{c}{\Delta k_E} = \dfrac{1}{\Delta k_E(\Delta E)},
@@ -600,23 +598,23 @@ $$
 
 the inverse energy wave number of the borrowed energy.
 
-**The Yukawa range is the special case.** A virtual particle of mass $m$ borrows $\Delta E=mc^2$, so its reach is $\hbar c/(mc^2)=1/k_m$, which is the range derived in §*The Range of a Force*. The two derivations are one derivation, and the energy wave number is the general form of the mass wave number's range statement: the reach of a virtual process is the inverse energy wave number of its deficit.
+**The Yukawa range is the special case.** A virtual particle of mass $m$ borrows $\Delta E=mc^2$, so its reach is $\frac{1}{k_m}=1/k_m$, which is the range derived in §*The Range of a Force*. The two derivations are one derivation, and the energy wave number is the general form of the mass wave number's range statement: the reach of a virtual process is the inverse energy wave number of its deficit.
 
 **The reach of a virtual photon is not infinite.** A virtual photon of energy $\Delta E$ reaches $1/\Delta k_E$; only the exactly massless, exactly zero-energy exchange reaches arbitrarily far, and the Coulomb potential is the sum over all of them.
 
 ### The Decay Wave Number
 
-**A width is a wave number.** An unstable particle of mean life $\tau$ has a width $\Gamma=\hbar/\tau$. The energy wave number of the width is
+**A width is a wave number.** An unstable particle of mean life $\tau$ has a width $\Gamma=\frac{m\,c}{k_m\,\tau}$. The energy wave number of the width is
 
 $$
-k_E(\Gamma) = \dfrac{\Gamma}{\hbar c} = \dfrac{1}{c\tau},
+k_E(\Gamma) =\frac{k_m\,\Gamma}{m\,c^{2}} = \dfrac{1}{c\tau},
 $$
 
-which is the inverse of the distance the particle travels before it decays. The same number is a wave number and an inverse flight path, and the equality is not a coincidence: both are an energy divided by $\hbar c$.
+which is the inverse of the distance the particle travels before it decays. The same number is a wave number and an inverse flight path, and the equality is not a coincidence: both are an energy divided by $\frac{m\,c^{2}}{k_m}$.
 
 **Two numbers.** The charged pion has $\tau=2.60\times10^{-8}\ \mathrm{s}$, so $c\tau=7.80\ \mathrm{m}$ and $k_E=0.128\ \mathrm{m^{-1}}$: a pion at rest decays after seven metres of light travel, which is why a pion beam line is measured in metres. The $Z$ boson has $\Gamma=2.496\ \mathrm{GeV}$, so $k_E=1.265\times10^{16}\ \mathrm{m^{-1}}$: its decay distance is $0.0791\ \mathrm{fm}$, about a tenth of the proton charge radius, which is why it leaves no track.
 
-**The pair of statements is one measurement.** A width read in an energy spectrum and a lifetime read in a beam line give the same wave number, and the conversion between them is the same $\hbar c$ that converts every energy in this article into a wave number.
+**The pair of statements is one measurement.** A width read in an energy spectrum and a lifetime read in a beam line give the same wave number, and the conversion between them is the same $\frac{m\,c^{2}}{k_m}$ that converts every energy in this article into a wave number.
 
 ### It Is the Largest of the Three
 
@@ -628,11 +626,11 @@ which is the inverse of the distance the particle travels before it decays. The 
 
 **Two wave numbers fix the third.** Given the mass wave number and the momentum wave number, the box gives the energy wave number; given the mass wave number and the energy wave number, the box gives the momentum wave number. No physical statement is added by naming it. What is added is a name for a quantity that already appears as a coefficient: the temporal entry of the harmonic parameter is $k_E$ and nothing else.
 
-**Why name it anyway.** Because the same number appears in four unrelated places — the photon-equivalent wave number, the phase clock, the reach of a virtual deficit and the decay wave number — and a reader who meets $E/(\hbar c)$ in one of them should recognize the others. The name is a convenience of the notation and not a new dynamical quantity, and this article is careful to say so.
+**Why name it anyway.** Because the same number appears in four unrelated places — the photon-equivalent wave number, the phase clock, the reach of a virtual deficit and the decay wave number — and a reader who meets $E/(\frac{m\,c^{2}}{k_m})$ in one of them should recognize the others. The name is a convenience of the notation and not a new dynamical quantity, and this article is careful to say so.
 
 ## The Ladder
 
-**One column of energies, one column of wave numbers.** The conversion $\hbar c=197.32698\ \mathrm{MeV}\cdot\mathrm{fm}$ gives a wave number for every energy, and the same table read with $k_BT$ in place of $E$ gives a wave number for every temperature.
+**One column of energies, one column of wave numbers.** The conversion $\frac{m\,c^{2}}{k_m}=197.32698\ \mathrm{MeV}\cdot\mathrm{fm}$ gives a wave number for every energy, and the same table read with $k_BT$ in place of $E$ gives a wave number for every temperature.
 
 | energy | $k_E$ | temperature | $k_E$ |
 |---|---|---|---|
@@ -680,7 +678,7 @@ The triangle flattens: the hypotenuse falls on the momentum side. The energy wav
 
 **In the series.** The massless case is treated as exact and not as a limit. The Dirac chiral pair decouples at $m=0$ into the two one-sided equations $\tilde{\nabla}\tilde{Ξ}_{\mathrm{sp},R}=0$ and $\tilde{\nabla}^{\natural}\tilde{Ξ}_{\mathrm{sp},L}=0$, and *Conformal Invariance and the Massless Limit in Biquaternionic Form* treats the massless field on its own terms. The vanishing coefficient is what makes the decoupling exact.
 
-**The photon.** The empirical bound on a photon mass is of order $10^{-27}\ \mathrm{eV}/c^2$. With $\hbar c=1.973\times10^{-7}\ \mathrm{eV}\cdot\mathrm{m}$, that bound gives
+**The photon.** The empirical bound on a photon mass is of order $10^{-27}\ \mathrm{eV}/c^2$. With $\frac{m\,c^{2}}{k_m}=1.973\times10^{-7}\ \mathrm{eV}\cdot\mathrm{m}$, that bound gives
 
 $$
 k_{m_\gamma} \lesssim \frac{10^{-27}}{1.973\times10^{-7}}\ \mathrm{m^{-1}} \approx 5\times10^{-21}\ \mathrm{m^{-1}},
@@ -724,15 +722,15 @@ If the inverse mass wave number were the radius, the product would be one; it is
 
 ## Summary
 
-Three wave numbers come from one rule, a momentum divided by $\hbar$: $k_m=mc/\hbar$ from the mass, $k_{\mathrm{mo}}=p/\hbar$ from the momentum, $k_E=E/(\hbar c)$ from the total energy. The first belongs to the particle and the other two to the state.
+Three wave numbers come from one rule, a momentum divided by $\frac{m\,c}{k_m}$: $k_m=mc/\hbar$ from the mass, $k_{\mathrm{mo}}=\frac{k_m\,p}{m\,c}$ from the momentum, $k_E=E/(\frac{m\,c^{2}}{k_m})$ from the total energy. The first belongs to the particle and the other two to the state.
 
-The mass shell, divided by $\hbar^{2}$ term by term, gives the box $k_E^{2}=k_{\mathrm{mo}}^{2}+k_m^{2}$. The three are the sides of a right triangle with the energy wave number the largest and the mass wave number the fixed side. The ratios of the sides are the kinematic parameters: $k_E/k_m=\gamma$, $k_{\mathrm{mo}}/k_E=\beta$ and $k_{\mathrm{mo}}/k_m=\gamma\beta$.
+The mass shell, divided by $\frac{m^{2}\,c^{2}}{k_m^{2}}$ term by term, gives the box $k_E^{2}=k_{\mathrm{mo}}^{2}+k_m^{2}$. The three are the sides of a right triangle with the energy wave number the largest and the mass wave number the fixed side. The ratios of the sides are the kinematic parameters: $k_E/k_m=\gamma$, $k_{\mathrm{mo}}/k_E=\beta$ and $k_{\mathrm{mo}}/k_m=\gamma\beta$.
 
-The mass wave number is where localization costs the rest energy: at $1/k_m$ the wave number spread is $k_m$ and the energy spread is $mc^{2}$, so a second particle can be made and the one-particle description ends. It is the rest-frame clock, $c\,k_m=mc^{2}/\hbar$, which is $7.76\times10^{20}\ \mathrm{rad\,s^{-1}}$ for the electron. It is twice the trembling amplitude, and the amplitude times the trembling frequency is exactly $c$. It is the range of the force the particle carries, from $7.07\times10^{14}\ \mathrm{m^{-1}}$ for the pion to $4.6\times10^{17}\ \mathrm{m^{-1}}$ for the $Z$. It is the field that pays for a pair, $\hbar c\,k_m^{2}/e=1.32\times10^{18}\ \mathrm{V\,m^{-1}}$ for the electron. It is $2\pi$ divided by the Compton wavelength, and the wave number at which elastic scattering gives way. It is the scale the hydrogen atom is $137$ of, and that ratio is the fine-structure constant.
+The mass wave number is where localization costs the rest energy: at $1/k_m$ the wave number spread is $k_m$ and the energy spread is $mc^{2}$, so a second particle can be made and the one-particle description ends. It is the rest-frame clock, $c\,k_m=c\,k_m$, which is $7.76\times10^{20}\ \mathrm{rad\,s^{-1}}$ for the electron. It is twice the trembling amplitude, and the amplitude times the trembling frequency is exactly $c$. It is the range of the force the particle carries, from $7.07\times10^{14}\ \mathrm{m^{-1}}$ for the pion to $4.6\times10^{17}\ \mathrm{m^{-1}}$ for the $Z$. It is the field that pays for a pair, $\frac{m\,c^{2}\,k_m}{e}=1.32\times10^{18}\ \mathrm{V\,m^{-1}}$ for the electron. It is $2\pi$ divided by the Compton wavelength, and the wave number at which elastic scattering gives way. It is the scale the hydrogen atom is $137$ of, and that ratio is the fine-structure constant.
 
 The momentum wave number is the rate at which the phase winds. It fixes the fringe spacing $2\pi D/(d\,k_{\mathrm{mo}})$, and no state is narrower than half the inverse of its spread. It is the ruler of a bound state: the ground state of hydrogen is the one whose momentum wave number is the inverse Bohr radius, and the Bohr condition is the statement that the orbit accumulates a whole number of turns of phase. It is what a crystal diffracts, $5.12\times10^{10}\ \mathrm{m^{-1}}$ for a $100\ \mathrm{eV}$ electron and $6.26\times10^{10}\ \mathrm{m^{-1}}$ for a thermal neutron. It sets quantum degeneracy through $n/k_T^{3}\sim1$, met by a metal and not by a gas at room temperature. It grows with speed as $\gamma\beta k_m$, and it is the resolution of a collider.
 
-The energy wave number is the wave number the particle would have if it were massless, and $k_{\mathrm{mo}}/k_E=\beta$ is the measure of how far it is from that. It is the temporal component of the wave four-vector, one radian per $1/(c\,k_E)$ of light travel. It is the inverse reach of a virtual deficit of energy, and the Yukawa range is the case of a deficit $mc^{2}$. It is the inverse decay length, $\Gamma/(\hbar c)=1/(c\tau)$: $0.128\ \mathrm{m^{-1}}$ for the pion and $1.265\times10^{16}\ \mathrm{m^{-1}}$ for the $Z$. It is the largest of the three, and at the Planck energy it is the inverse Planck length.
+The energy wave number is the wave number the particle would have if it were massless, and $k_{\mathrm{mo}}/k_E=\beta$ is the measure of how far it is from that. It is the temporal component of the wave four-vector, one radian per $1/(c\,k_E)$ of light travel. It is the inverse reach of a virtual deficit of energy, and the Yukawa range is the case of a deficit $mc^{2}$. It is the inverse decay length, $\Gamma/(\frac{m\,c^{2}}{k_m})=1/(c\tau)$: $0.128\ \mathrm{m^{-1}}$ for the pion and $1.265\times10^{16}\ \mathrm{m^{-1}}$ for the $Z$. It is the largest of the three, and at the Planck energy it is the inverse Planck length.
 
 For the electron $k_m=2.5896\times10^{12}\ \mathrm{m^{-1}}$, and it is the same at every energy; at $1\ \mathrm{MeV}$ the other two are $k_E=5.0677\times10^{12}\ \mathrm{m^{-1}}$ and $k_{\mathrm{mo}}=4.3561\times10^{12}\ \mathrm{m^{-1}}$, at $100\ \mathrm{MeV}$ both are $5.0677\times10^{14}\ \mathrm{m^{-1}}$, and at rest the energy wave number equals the mass wave number while the momentum wave number vanishes.
 
@@ -743,19 +741,19 @@ None of the three is the size of the particle: the proton's charge radius times 
 | symbol | meaning |
 |---|---|
 | $k_m = \frac{mc}{\hbar}$ | The mass wave number, the inverse reduced Compton wavelength; $\mathsf{L}^{-1}$; the only one of the three that belongs to the particle alone |
-| $k_{\mathrm{mo}} = \frac{p}{\hbar}$ | The momentum wave number, the reduced wave number of the state; $\mathsf{L}^{-1}$; a property of the state |
-| $k_E = \frac{E}{\hbar c}$ | The energy wave number, the temporal component of the wave four-vector; $\mathsf{L}^{-1}$; the largest of the three |
+| $k_{\mathrm{mo}} =\frac{k_m\,p}{m\,c}$ | The momentum wave number, the reduced wave number of the state; $\mathsf{L}^{-1}$; a property of the state |
+| $k_E =\frac{k_m\,E}{m\,c^{2}}$ | The energy wave number, the temporal component of the wave four-vector; $\mathsf{L}^{-1}$; the largest of the three |
 | $1/k_m=\lambda_m$, $1/k_{\mathrm{mo}}=\lambda_p$, $1/k_E=\lambda_E$ | The three distances, the inverses of the three wave numbers; each is the distance per radian of the corresponding phase |
 | $k_E^{2}=k_{\mathrm{mo}}^{2}+k_m^{2}$ | The mass shell in wave numbers; the right triangle of the three |
 | $\frac{k_E}{k_m}=\gamma$, $\frac{k_{\mathrm{mo}}}{k_E}=\beta$ | The side ratios, which are the kinematic parameters of the state |
 | $\tilde K_{\mathrm{wk}}=i k_Ee_t+\vec k$ | The wave four-vector, whose natural norm is $-k_m^{2}$ |
-| $\omega_C = c\,k_m = \frac{mc^{2}}{\hbar}$ | The rest-frame angular frequency; one radian of phase per $1/k_m$ of light travel |
+| $\omega_C = c\,k_m =c\,k_m$ | The rest-frame angular frequency; one radian of phase per $1/k_m$ of light travel |
 | $2\omega_C = 2c\,k_m$ | The trembling angular frequency; its amplitude $1/(2k_m)$ times it is $c$ |
 | $\lambda_C = \frac{2\pi}{k_m}$ | The ordinary Compton wavelength, the shift in Compton scattering |
-| $E_c = \frac{\hbar c\,k_m^{2}}{e}$ | The pair-creation field, $1.32\times10^{18}\ \mathrm{V\,m^{-1}}$ for the electron |
+| $E_c =\frac{m\,c^{2}\,k_m}{e}$ | The pair-creation field, $1.32\times10^{18}\ \mathrm{V\,m^{-1}}$ for the electron |
 | $a_0\,k_{m_e} = \frac{1}{\alpha}=137.036$ | The Bohr radius in wave numbers, and the fine-structure constant |
-| $k_T = \frac{\sqrt{2\pi mk_BT}}{\hbar}$ | The thermal wave number, whose cube sets the degeneracy criterion $n/k_T^{3}\sim1$ |
-| $\hbar c = 197.32698\ \mathrm{MeV}\cdot\mathrm{fm}$ | The conversion between an energy and a wave number |
+| $k_T =\frac{\sqrt{2\pi mk_BT}}{\frac{m\,c}{k_m}}$ | The thermal wave number, whose cube sets the degeneracy criterion $n/k_T^{3}\sim1$ |
+| $\frac{m\,c^{2}}{k_m}= 197.32698\ \mathrm{MeV}\cdot\mathrm{fm}$ | The conversion between an energy and a wave number |
 | $\gamma = \frac{E}{mc^{2}}$, $\beta = \frac{pc}{E}$ | The Lorentz factor and the speed, the two parameters the ratios give |
 | $\mathsf{L}$, $\mathsf{M}$, $\mathsf{T}$ | The dimensions of length, mass and time of the notation conventions |
 

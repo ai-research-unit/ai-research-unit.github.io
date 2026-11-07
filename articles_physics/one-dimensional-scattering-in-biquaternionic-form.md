@@ -7,7 +7,7 @@ One-dimensional scattering is the simplest problem in which a quantum system mee
 The biquaternion content is again a consequence of centrality. For an external potential $V(x)$ the Hamiltonian is
 
 $$
-H = \left[-\frac{\hbar c}{2\,k_m}\partial^2/\partial R_x^2 + V(r_x)\right]e_t \in \mathbb{B}_{C},
+H = \left[-\frac{m\,c^{2}}{2\,k_m^{2}}\partial^2/\partial R_x^2 + V(r_x)\right]e_t \in  \mathbb{B}_{C},
 $$
 
 Here $k_m=mc/\hbar$ is the mass wave number, the inverse of the mass length.
@@ -27,13 +27,13 @@ For a particle of mass $m$ in a real potential $V(x)$, the stationary equation i
 $$
 H\,\tilde{Ξ}_{\mathrm{sp}} = E\,\tilde{Ξ}_{\mathrm{sp}},
 \qquad
-H = \left[-\frac{\hbar c}{2\,k_m}\frac{d^2}{dx^2} + V(r_x)\right]e_t = c r_t(r_x)\,e_t,
+H = \left[-\frac{m\,c^{2}}{2\,k_m^{2}}\frac{d^2}{dx^2} + V(r_x)\right]e_t = c r_t(r_x)\,e_t,
 $$
 
 with $\tilde{Ξ}_{\mathrm{sp}}$ a field taking values in the state module $\mathbb{B}\tilde\Pi$. Since $H$ is central, the equation is componentwise the scalar equation
 
 $$
--\frac{\hbar c}{2\,k_m}\frac{d^2\xi_{\mathrm{scl}}}{dx^2}(x) + V(x)\xi_{\mathrm{scl}}(x) = E\,\xi_{\mathrm{scl}}(x)
+-\frac{m\,c^{2}}{2\,k_m^{2}}\frac{d^2\xi_{\mathrm{scl}}}{dx^2}(x) + V(x)\xi_{\mathrm{scl}}(x) = E\,\xi_{\mathrm{scl}}(x)
 $$
 
 for the scalar envelope $\xi_{\mathrm{scl}}$, and every solution has the form $\tilde{Ξ}_{\mathrm{sp}} = \xi_{\mathrm{scl}}\,\xi$ with $\xi$ a constant module element, or more generally a finite sum of such terms. The potential does not mix the components; the module factor is a fixed vector in $\mathbb{C}^2$ throughout.
@@ -41,10 +41,10 @@ for the scalar envelope $\xi_{\mathrm{scl}}$, and every solution has the form $\
 Away from the points where $V$ jumps, the potential is constant on each interval, and the solutions are exponentials. Writing $V = V_j$ and
 
 $$
-k_j = \sqrt{\frac{2(E-V_j)\,k_m}{\hbar c}},
+k_j = \sqrt{\frac{2\,k_m^{2}\,(E-V_j)}{m\,c^{2}}},
 $$
 
-with the convention that $k_j$ is imaginary when $E < V_j$ (an evanescent wave, with decay constant $\kappa_j = \sqrt{2m(V_j-E)}/\hbar$), the general solution on the interval $j$ is
+with the convention that $k_j$ is imaginary when $E < V_j$ (an evanescent wave, with decay constant $\kappa_j = \sqrt{2m(V_j-E)}\frac{k_m}{m\,c}$), the general solution on the interval $j$ is
 
 $$
 \xi_{\mathrm{scl},j}(x) = A_j\,\exp(\,ik_j x) + B_j\,\exp(-ik_j x).
@@ -57,13 +57,13 @@ A potential that is piecewise constant is therefore solved by matching the coeff
 The one-dimensional current is the reduction of the general current of the free-particle article. For a stationary state it is
 
 $$
-J = \frac{\hbar}{2mi}\,\mathrm{Tr}\!\left(\tilde{Ξ}_{\mathrm{sp}}^{\dagger} \frac{d\tilde{Ξ}_{\mathrm{sp}}}{dx} - \left(\frac{d\tilde{Ξ}_{\mathrm{sp}}}{dx}\right)^\dagger \tilde{Ξ}_{\mathrm{sp}}\right),
+J =\frac{c}{2\,k_m\,i}\,\mathrm{Tr}\!\left(\tilde{Ξ}_{\mathrm{sp}}^{\dagger} \frac{d\tilde{Ξ}_{\mathrm{sp}}}{dx} - \left(\frac{d\tilde{Ξ}_{\mathrm{sp}}}{dx}\right)^\dagger \tilde{Ξ}_{\mathrm{sp}}\right),
 $$
 
 For a factorised field $\tilde{Ξ}_{\mathrm{sp}} = \xi_{\mathrm{scl}}\,\xi$ with $\mathrm{Tr}(\xi^\dagger\xi)=1$ this reduces to the familiar scalar expression
 
 $$
-J = \frac{\hbar}{2mi}\left({\xi_{\mathrm{scl}}}^*\frac{d\xi_{\mathrm{scl}}}{dx} - \left(\frac{d\xi_{\mathrm{scl}}}{dx}\right)^*\xi_{\mathrm{scl}}\right)
+J =\frac{c}{2\,k_m\,i}\left({\xi_{\mathrm{scl}}}^*\frac{d\xi_{\mathrm{scl}}}{dx} - \left(\frac{d\xi_{\mathrm{scl}}}{dx}\right)^*\xi_{\mathrm{scl}}\right)
 = c/k_m\,\mathrm{Im}\!\left({\xi_{\mathrm{scl}}}^*\frac{d\xi_{\mathrm{scl}}}{dx}\right).
 $$
 
@@ -91,7 +91,7 @@ The cancellation of the oscillatory terms is the algebraic content of the statem
 
 ### Amplitudes and the scattering matrix
 
-Consider a potential that vanishes outside a finite interval, $V(x)\to0$ as $|x|\to\infty$. A stationary state at energy $E = \hbar^2k^2/2m > 0$ has the asymptotic form
+Consider a potential that vanishes outside a finite interval, $V(x)\to0$ as $|x|\to\infty$. A stationary state at energy $E =\frac{m\,c^{2}\,k^{2}}{2\,k_m^{2}}> 0$ has the asymptotic form
 
 $$
 \xi_{\mathrm{scl}}(x) \longrightarrow
@@ -160,7 +160,7 @@ Unitarity of $S$ is thus the algebraic form of flux conservation. In the framewo
 
 ### The step
 
-Let $V(x) = 0$ for $x<0$ and $V(x) = V_0$ for $x>0$, with $E>V_0$. The wave vectors are $k_1 = \sqrt{2mE}/\hbar$ and $k_2 = \sqrt{2m(E-V_0)}/\hbar$. Continuity of $\xi_{\mathrm{scl}}$ and $\partial\xi_{\mathrm{scl}}/\partial r_x$ at the origin, with the ansatz $\xi_{\mathrm{scl}} = \exp(ik_1x)+r\exp(-ik_1x)$ on the left and $\xi_{\mathrm{scl}} = t\exp(ik_2x)$ on the right, gives
+Let $V(x) = 0$ for $x<0$ and $V(x) = V_0$ for $x>0$, with $E>V_0$. The wave vectors are $k_1 = \sqrt{2mE}\frac{k_m}{m\,c}$ and $k_2 = \sqrt{2m(E-V_0)}\frac{k_m}{m\,c}$. Continuity of $\xi_{\mathrm{scl}}$ and $\partial\xi_{\mathrm{scl}}/\partial r_x$ at the origin, with the ansatz $\xi_{\mathrm{scl}} = \exp(ik_1x)+r\exp(-ik_1x)$ on the left and $\xi_{\mathrm{scl}} = t\exp(ik_2x)$ on the right, gives
 
 $$
 1 + r = t,
@@ -191,7 +191,7 @@ The coefficients are those of a sudden change of impedance; the vanishing of $T$
 $$
 \xi_{\mathrm{scl}}(x) = t\,\exp(-\kappa x),
 \qquad
-\kappa = \sqrt{\frac{2(V_0-E)\,k_m}{\hbar c}},
+\kappa = \sqrt{\frac{2\,k_m^{2}\,(V_0-E)}{m\,c^{2}}},
 $$
 
 whose current vanishes identically. The flux is entirely reflected.
@@ -208,7 +208,7 @@ A\,\exp(\kappa x)+B\,\exp(-\kappa x), & 0<x<a,\\
 t\,\exp(ikx), & x>a,
 \end{cases}
 \qquad
-\kappa = \sqrt{\frac{2(V_0-E)\,k_m}{\hbar c}}.
+\kappa = \sqrt{\frac{2\,k_m^{2}\,(V_0-E)}{m\,c^{2}}}.
 $$
 
 Matching $\xi_{\mathrm{scl}}$ and $d\xi_{\mathrm{scl}}/dx$ at $0$ and $a$ gives, after eliminating the interior coefficients,
@@ -225,13 +225,13 @@ $$
 R = 1 - T\;}.
 $$
 
-For $E>V_0$ the interior wave is oscillatory with $k_2 = \sqrt{2m(E-V_0)}/\hbar$, and the same matching gives
+For $E>V_0$ the interior wave is oscillatory with $k_2 = \sqrt{2m(E-V_0)}\frac{k_m}{m\,c}$, and the same matching gives
 
 $$
 T = \left[1 + \frac{V_0^2\,\sin^2(k_2 a)}{4E\,(E-V_0)}\right]^{-1},
 $$
 
-which oscillates between one and the minimum value $[1+V_0^2/4E(E-V_0)]^{-1}$ reached at $k_2a = (n+\tfrac12)\pi$. These are the Ramsauer–Townsend resonances: the barrier becomes transparent at the energies for which it spans an integer number of half wavelengths, and it is most reflective for the half-integer values. The transmission never vanishes for $E>V_0$; at $E\to V_0^+$ the expression tends to the removable value $[1+mV_0a^2/2\hbar^2]^{-1}$, the same limit that the below-barrier formula approaches from the other side and that the matching computation reproduces numerically.
+which oscillates between one and the minimum value $[1+V_0^2/4E(E-V_0)]^{-1}$ reached at $k_2a = (n+\tfrac12)\pi$. These are the Ramsauer–Townsend resonances: the barrier becomes transparent at the energies for which it spans an integer number of half wavelengths, and it is most reflective for the half-integer values. The transmission never vanishes for $E>V_0$; at $E\to V_0^+$ the expression tends to the removable value $[1+\frac{k_m^{2}\,mV_{0}\,a^{2}}{2\,m^{2}\,c^{2}}]^{-1}$, the same limit that the below-barrier formula approaches from the other side and that the matching computation reproduces numerically.
 
 For a thick barrier, $\exp(\kappa a)\gg1$, the exact formula reduces to the exponential law
 
@@ -239,7 +239,7 @@ $$
 T \approx \frac{16\,E\,(V_0-E)}{V_0^2}\;\exp(-2\kappa a),
 $$
 
-whose exponent $2\kappa a = \frac{2}{\hbar}\int_0^a\sqrt{2m(V_0-E)}\,dx$ is the leading WKB tunnelling factor and whose prefactor is the standard connection amplitude. The formula and its asymptote were verified numerically: the transfer-matrix matching and the closed expression for $T$ agree to a relative error below $2\times10^{-14}$ at the sampled energies, $R+T=1$ holds to $10^{-12}$, the $E\to V_0$ limit of the matching reproduces the removable value $T = [1+mV_0a^2/2\hbar^2]^{-1}$, and the thick-barrier ratio (exact over asymptotic) at $E=0.4V_0$, $\kappa a = 6$ is $0.999989$. The checks used a stationary state that is itself a superposition of an incoming and a reflected wave, not a single plane wave, and were performed in explicit complex arithmetic with $m=\hbar=1$.
+whose exponent $2\kappa a =\frac{2\,k_m}{m\,c}\int_0^a\sqrt{2m(V_0-E)}\,dx$ is the leading WKB tunnelling factor and whose prefactor is the standard connection amplitude. The formula and its asymptote were verified numerically: the transfer-matrix matching and the closed expression for $T$ agree to a relative error below $2\times10^{-14}$ at the sampled energies, $R+T=1$ holds to $10^{-12}$, the $E\to V_0$ limit of the matching reproduces the removable value $T = [1+\frac{k_m^{2}\,mV_{0}\,a^{2}}{2\,m^{2}\,c^{2}}]^{-1}$, and the thick-barrier ratio (exact over asymptotic) at $E=0.4V_0$, $\kappa a = 6$ is $0.999989$. The checks used a stationary state that is itself a superposition of an incoming and a reflected wave, not a single plane wave, and were performed in explicit complex arithmetic with $m=\hbar=1$.
 
 ### The delta potential
 
@@ -248,13 +248,13 @@ Let $V(x) = \lambda\,\delta(x)$. The matching conditions are continuity of $\xi_
 $$
 \xi_{\mathrm{scl}}(0^+) = \xi_{\mathrm{scl}}(0^-),
 \qquad
-\frac{d\xi_{\mathrm{scl}}}{dx}(0^+)-\frac{d\xi_{\mathrm{scl}}}{dx}(0^-) = \frac{2\lambda\,k_m}{\hbar c}\,\xi_{\mathrm{scl}}(0),
+\frac{d\xi_{\mathrm{scl}}}{dx}(0^+)-\frac{d\xi_{\mathrm{scl}}}{dx}(0^-) =\frac{2\,k_m^{2}\,\lambda}{m\,c^{2}}\,\xi_{\mathrm{scl}}(0),
 $$
 
-the second obtained by integrating the equation across the origin. For $E>0$, with $\xi_{\mathrm{scl}} = \exp(ikx)+r\exp(-ikx)$ for $x<0$ and $\xi_{\mathrm{scl}} = t\exp(ikx)$ for $x>0$, continuity gives $1+r=t$ and the jump gives $2ik(t-1) = \frac{2\lambda\,k_m}{\hbar c}t$, so with the dimensionless coupling
+the second obtained by integrating the equation across the origin. For $E>0$, with $\xi_{\mathrm{scl}} = \exp(ikx)+r\exp(-ikx)$ for $x<0$ and $\xi_{\mathrm{scl}} = t\exp(ikx)$ for $x>0$, continuity gives $1+r=t$ and the jump gives $2ik(t-1) =\frac{2\,k_m^{2}\,\lambda}{m\,c^{2}}t$, so with the dimensionless coupling
 
 $$
-\beta = \frac{\lambda\,k_m}{\hbar c k},
+\beta =\frac{k_m^{2}\,\lambda}{m\,c^{2}\,k},
 $$
 
 one finds
@@ -272,16 +272,16 @@ $$
 with $R+T=1$ for every $\beta$. For an attractive delta well, $\lambda<0$, there is exactly one bound state, at
 
 $$
-E_b = -\frac{\lambda^2\,k_m}{2\hbar c} = -\frac{\hbar c\kappa_b^2}{2\,k_m},
+E_b = -\frac{k_m^{2}\,\lambda^{2}}{2\,m\,c^{2}} = -\frac{m\,c^{2}\,\kappa_{b}^{2}}{2\,k_m^{2}},
 \qquad
-\kappa_b = \frac{|\lambda|\,k_m}{\hbar c},
+\kappa_b =\frac{|\lambda|\,k_m}{\frac{m\,c^{2}}{k_m}},
 $$
 
 whose wave function $\exp(-\kappa_b|x|)$ decays in both directions. The bound state's energy is fixed by the same matching condition continued to purely imaginary $k = i\kappa_b$; it is the pole that the transmission amplitude acquires on the negative energy axis.
 
 ### The square well and resonances
 
-Let $V(x) = -V_0$ on $0<x<a$, $V_0>0$, and zero elsewhere, with $E>0$. The interior wave vector is $k_2 = \sqrt{2m(E+V_0)}/\hbar$. Matching as for the barrier gives
+Let $V(x) = -V_0$ on $0<x<a$, $V_0>0$, and zero elsewhere, with $E>0$. The interior wave vector is $k_2 = \sqrt{2m(E+V_0)}\frac{k_m}{m\,c}$. Matching as for the barrier gives
 
 $$
 T = \left[1 + \frac{V_0^2\sin^2(k_2a)}{4E(E+V_0)}\right]^{-1},
@@ -326,7 +326,7 @@ M_\delta(\beta) =
 -i\beta & 1 - i\beta
 \end{pmatrix},
 \qquad
-\beta = \frac{\lambda\,k_m}{\hbar c k},
+\beta =\frac{k_m^{2}\,\lambda}{m\,c^{2}\,k},
 $$
 
 as one verifies by eliminating $B_2$ with the outgoing condition $B_2=0$ and recovering $t = (1+i\beta)^{-1}$ and $r = -i\beta/(1+i\beta)$. With that convention the matrix has unit determinant, reflecting the flux preservation of the transfer relation, and its product with a propagation matrix carries the phase accumulated between two scatterers. The composition law also shows how resonances arise: a single barrier has a monotonically rising $T$, whereas two barriers separated by a well have a transmission with sharp peaks at the energies for which the round-trip phase is a multiple of $2\pi$. The algebra of the product, not any new input, produces the resonance structure.
@@ -350,7 +350,7 @@ $$
 and the scattering is invariant under the module's transformations. The amplitudes $r,r_2,t,t_2$ are scalar functions of $k$; the reflection and transmission phases are central; the Wigner time delay
 
 $$
-\tau_W = \hbar\,\frac{d}{dE}\arg t(E)
+\tau_W =\frac{m\,c}{k_m\,E}\arg t(E)
 $$
 
 is a scalar. In the same way that the free propagator is central and the free module factor is frozen, the scattering matrix is central and the module is scattered trivially. The whole dynamical content of one-dimensional scattering in this framework is the scalar envelope's matching problem.
@@ -383,12 +383,12 @@ $$
 \delta(0)-\delta(\infty) = \pi\left(n_b-\tfrac12\right),
 $$
 
-where the change is understood with the trivial winding contributed by the resonances removed; the half-unit term is the one-dimensional threshold remnant. For the attractive delta potential, $n_b=1$ and the phase is available in closed form: from $t=(1+i\beta)^{-1}$ with $\beta=m\lambda/\hbar^2k$ and $\lambda<0$,
+where the change is understood with the trivial winding contributed by the resonances removed; the half-unit term is the one-dimensional threshold remnant. For the attractive delta potential, $n_b=1$ and the phase is available in closed form: from $t=(1+i\beta)^{-1}$ with $\beta=\frac{k_m^{2}\,\lambda}{m\,c^{2}\,k}$ and $\lambda<0$,
 
 $$
 \arg t = \arctan\!\left(\frac{\kappa_b}{k}\right),
 \qquad
-\kappa_b = \frac{|\lambda|\,k_m}{\hbar c},
+\kappa_b =\frac{|\lambda|\,k_m}{\frac{m\,c^{2}}{k_m}},
 $$
 
 so the phase runs from $\pi/2$ at threshold to zero at infinite energy, a change of $\pi/2=\pi(1-\tfrac12)$ as the theorem requires. Each additional bound state shifts the threshold phase by $\pi$. The theorem is a useful bookkeeping check on any numerical solution of the matching problem, and the delta is the case in which it can be checked by hand.
@@ -400,7 +400,7 @@ so the phase runs from $\pi/2$ at threshold to zero at infinite energy, a change
 **What the biquaternion notation provides.**
 
 - **Centrality of the potential coupling, made manifest.** The potential multiplies $e_t$, so the Hamiltonian is central and the $S$-matrix factorises as $S\otimes I_2$. The absence of spin-flip and spin-dependent amplitudes is read off the algebra rather than assumed from rotational invariance.
-- **A flux from the plain form.** The one-dimensional current is $\frac{\hbar}{2mi}\mathrm{Tr}(\tilde{Ξ}_{\mathrm{sp}}^{\dagger}\frac{d\tilde{Ξ}_{\mathrm{sp}}}{dx} - \left(\frac{d\tilde{Ξ}_{\mathrm{sp}}}{dx}\right)^\dagger\tilde{Ξ}_{\mathrm{sp}})$, the reduction of the general current, and flux conservation is the unitarity $S^{*} S = I_2$. Density and current carry the two sectors of the algebra, as everywhere in the subcategory.
+- **A flux from the plain form.** The one-dimensional current is $\frac{c}{2\,k_m\,i}\mathrm{Tr}(\tilde{Ξ}_{\mathrm{sp}}^{\dagger}\frac{d\tilde{Ξ}_{\mathrm{sp}}}{dx} - \left(\frac{d\tilde{Ξ}_{\mathrm{sp}}}{dx}\right)^\dagger\tilde{Ξ}_{\mathrm{sp}})$, the reduction of the general current, and flux conservation is the unitarity $S^{*} S = I_2$. Density and current carry the two sectors of the algebra, as everywhere in the subcategory.
 - **One notion of unit resolved.** The $S$-matrix is $*$-unitary, $\tilde S\tilde S^{*} = e_t$, and is not a unit-norm rotor $\tilde U_{\mathrm{lor}}\tilde U_{\mathrm{lor}}{}^{\natural}=e_t$. The same distinction appears for the free evolution operator and the path-integral phase; scattering is the third place where it must be kept apart.
 - **A clean statement of what a scalar potential can do.** The potential can shape the envelope without touching the module; the framework exhibits the module as a spectator of every problem with a central Hamiltonian.
 
@@ -423,11 +423,11 @@ so the phase runs from $\pi/2$ at threshold to zero at infinite energy, a change
 
 ## Summary
 
-The one-dimensional biquaternion Schrödinger equation with a real potential is $(-\frac{\hbar c}{2\,k_m}\partial^2/\partial R_x^2 + V(r_x))e_t\,\tilde{Ξ}_{\mathrm{sp}} = E\tilde{Ξ}_{\mathrm{sp}}$. The Hamiltonian is central, so the equation reduces to a scalar equation for the envelope, $\tilde{Ξ}_{\mathrm{sp}} = \xi_{\mathrm{scl}}\xi$ with $\xi$ a constant module element, and no potential treated here acts on the module.
+The one-dimensional biquaternion Schrödinger equation with a real potential is $(-\frac{m\,c^{2}}{2\,k_m^{2}}\partial^2/\partial R_x^2 + V(r_x))e_t\,\tilde{Ξ}_{\mathrm{sp}} = E\tilde{Ξ}_{\mathrm{sp}}$. The Hamiltonian is central, so the equation reduces to a scalar equation for the envelope, $\tilde{Ξ}_{\mathrm{sp}} = \xi_{\mathrm{scl}}\xi$ with $\xi$ a constant module element, and no potential treated here acts on the module.
 
-The current is $J = \frac{\hbar}{2mi}\mathrm{Tr}(\tilde{Ξ}_{\mathrm{sp}}^{\dagger}\frac{d\tilde{Ξ}_{\mathrm{sp}}}{dx} - \left(\frac{d\tilde{Ξ}_{\mathrm{sp}}}{dx}\right)^\dagger\tilde{Ξ}_{\mathrm{sp}})$, which for a superposition $A\exp(ikx)+B\exp(-ikx)$ reduces to $J = c\,k/k_m(|A|^2-|B|^2)$: the oscillatory interference terms contribute nothing to the imaginary part. Flux conservation across the scattering region is $|A|^2+|D|^2 = |B|^2+|C|^2$, which is exactly the unitarity $S^{*} S = I_2$, and which for incidence from the left is $R+T=1$.
+The current is $J =\frac{c}{2\,k_m\,i}\mathrm{Tr}(\tilde{Ξ}_{\mathrm{sp}}^{\dagger}\frac{d\tilde{Ξ}_{\mathrm{sp}}}{dx} - \left(\frac{d\tilde{Ξ}_{\mathrm{sp}}}{dx}\right)^\dagger\tilde{Ξ}_{\mathrm{sp}})$, which for a superposition $A\exp(ikx)+B\exp(-ikx)$ reduces to $J = c\,k/k_m(|A|^2-|B|^2)$: the oscillatory interference terms contribute nothing to the imaginary part. Flux conservation across the scattering region is $|A|^2+|D|^2 = |B|^2+|C|^2$, which is exactly the unitarity $S^{*} S = I_2$, and which for incidence from the left is $R+T=1$.
 
-The step gives $T = 4k_1k_2/(k_1+k_2)^2$ with the flux factor $k_2/k_1$; the rectangular barrier gives $T = [1+V_0^2\sinh^2(\kappa a)/4E(V_0-E)]^{-1}$ below the barrier, with the thick-barrier limit $\frac{16E(V_0-E)}{V_0^2}\exp(-2\kappa a)$, and the oscillatory Ramsauer–Townsend form above it; the delta potential gives $t = (1+i\beta)^{-1}$, $T = (1+\beta^2)^{-1}$ with $\beta = m\lambda/\hbar^2k$, and a single bound state at $E_b = -m\lambda^2/2\hbar^2$ for the attractive case; the square well gives resonant transparency at $k_2a = n\pi$. The exact barrier and step formulas were checked against independent transfer-matrix matching to a relative error below $2\times10^{-14}$, with $R+T=1$ to $10^{-12}$, the thick-barrier ratio $0.999989$, and the $E\to V_0$ limit reproduced, all on a stationary superposition of an incoming and a reflected wave and in explicit complex arithmetic.
+The step gives $T = 4k_1k_2/(k_1+k_2)^2$ with the flux factor $k_2/k_1$; the rectangular barrier gives $T = [1+V_0^2\sinh^2(\kappa a)/4E(V_0-E)]^{-1}$ below the barrier, with the thick-barrier limit $\frac{16E(V_0-E)}{V_0^2}\exp(-2\kappa a)$, and the oscillatory Ramsauer–Townsend form above it; the delta potential gives $t = (1+i\beta)^{-1}$, $T = (1+\beta^2)^{-1}$ with $\beta =\frac{k_m^{2}\,\lambda}{m\,c^{2}\,k}$, and a single bound state at $E_b = -\frac{k_m^{2}\,\lambda^{2}}{2\,m\,c^{2}}$ for the attractive case; the square well gives resonant transparency at $k_2a = n\pi$. The exact barrier and step formulas were checked against independent transfer-matrix matching to a relative error below $2\times10^{-14}$, with $R+T=1$ to $10^{-12}$, the thick-barrier ratio $0.999989$, and the $E\to V_0$ limit reproduced, all on a stationary superposition of an incoming and a reflected wave and in explicit complex arithmetic.
 
 The biquaternion content is that the potential couples only to the scalar slot, so the $S$-matrix is central in the module, $S\otimes I_2$. It is a $*$-unitary element $\tilde S\tilde S^{*} = e_t$ and not a unit-norm rotor. There is no spin-flip or spin-dependent amplitude, because the operator that would produce one is not in the central Hamiltonian. The framework thus supplies the flux, the sector pairing, the unitarity, and the absence of module dynamics; it does not supply the matching conditions or the tunnelling law, which are scalar analysis, and it adds no prediction distinguishing the reformulation from scalar Schrödinger scattering.
 
@@ -441,19 +441,19 @@ The biquaternion content is that the potential couples only to the scalar slot, 
 | $\mathbb{B}_{C}$ | Centre; the Hamiltonian multiplies $e_t$ |
 | $\mathbb{B}_{\Psi}$, $\mathbb{B}_{\Phi}$ | Hermitian and anti-Hermitian sectors |
 | $\mathbb{B}\tilde\Pi\cong \mathbb{C}^2$ | State module |
-| $H = [-\frac{\hbar c}{2\,k_m}\partial^2/\partial R_x^2 + V(r_x)]e_t$ | Central Hamiltonian |
+| $H = [-\frac{m\,c^{2}}{2\,k_m^{2}}\partial^2/\partial R_x^2 + V(r_x)]e_t$ | Central Hamiltonian |
 | $\tilde{Ξ}_{\mathrm{sp}} = \xi_{\mathrm{scl}}\,\xi$ | Factorised stationary state |
-| $k_j = \sqrt{2m(E-V_j)}/\hbar$ | Wave vector in region $j$; imaginary when $E<V_j$ |
-| $\kappa_j = \sqrt{2m(V_j-E)}/\hbar$ | Decay constant in a forbidden region |
-| $J = \frac{\hbar}{2mi}\mathrm{Tr}(\tilde{Ξ}_{\mathrm{sp}}^{\dagger}\frac{d\tilde{Ξ}_{\mathrm{sp}}}{dx} - \left(\frac{d\tilde{Ξ}_{\mathrm{sp}}}{dx}\right)^\dagger\tilde{Ξ}_{\mathrm{sp}})$ | One-dimensional current |
+| $k_j = \sqrt{2m(E-V_j)}\frac{k_m}{m\,c}$ | Wave vector in region $j$; imaginary when $E<V_j$ |
+| $\kappa_j = \sqrt{2m(V_j-E)}\frac{k_m}{m\,c}$ | Decay constant in a forbidden region |
+| $J =\frac{c}{2\,k_m\,i}\mathrm{Tr}(\tilde{Ξ}_{\mathrm{sp}}^{\dagger}\frac{d\tilde{Ξ}_{\mathrm{sp}}}{dx} - \left(\frac{d\tilde{Ξ}_{\mathrm{sp}}}{dx}\right)^\dagger\tilde{Ξ}_{\mathrm{sp}})$ | One-dimensional current |
 | $J = c\,k/k_m(|A|^2-|B|^2)$ | Current for a two-exponential superposition |
 | $\rho = \mathrm{Tr}(\tilde{Ξ}_{\mathrm{sp}}^{\dagger}\tilde{Ξ}_{\mathrm{sp}}) = |\xi_{\mathrm{scl}}|^2$ | Density |
 | $S = \begin{pmatrix} t & r_2 \\ r & t_2\end{pmatrix}$ | Scattering matrix; $*$-unitary, $S^{*} S = I_2$ |
 | $R = |r|^2$, $T = |t|^2$ | Flux reflection and transmission |
-| $\beta = m\lambda/\hbar^2 k$ | Dimensionless delta-potential coupling |
-| $E_b = -m\lambda^2/2\hbar^2$ | Bound state of the attractive delta |
+| $\beta =\frac{k_m^{2}\,\lambda}{m\,c^{2}\,k}$ | Dimensionless delta-potential coupling |
+| $E_b = -\frac{k_m^{2}\,\lambda^{2}}{2\,m\,c^{2}}$ | Bound state of the attractive delta |
 | $M$ | Transfer matrix; preserves the flux form |
-| $\tau_W = \hbar\,d\arg t/dE$ | Wigner time delay; a scalar |
+| $\tau_W =\frac{m\,c\,\arg\,t}{k_m\,E}$ | Wigner time delay; a scalar |
 | $\tilde S = S\otimes I_2$ | Scattering matrix central in the module |
 | $\mathrm{Tr}(\tilde R_\Psi) = 2\,\mathrm{Sc}(\tilde R_\Psi)$ | Trace convention |
 | $\langle\tilde{Q}_1,\tilde{Q}_2\rangle_{*}$ | the general plain sesquilinear form, $\mathrm{Sc}(\tilde{Q}_1\tilde{Q}_2^{*})$; on the diagonal $\langle\tilde{Q}_2,\tilde{Q}_2\rangle_{*}=\sum_\mu\lvert Q_{2\mu}\rvert^{2}$ |

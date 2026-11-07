@@ -30,7 +30,7 @@ Third, the source's arithmetic convention is the corpus's, with the imaginary un
 
 ### The commutator, the bound, and the deformation
 
-The coordinates obey $[x_\mu,x_\nu]=i\kappa_{\mu\nu}$ with $\kappa_{\mu\nu}$ constant and antisymmetric, of dimension $(\text{length})^2$. Momentum commutes with itself and with position in the ordinary way, $[x_\mu,p_\nu]=i\hbar\delta_{\mu\nu}$, and the source parametrises the deformation by a scale,
+The coordinates obey $[x_\mu,x_\nu]=i\kappa_{\mu\nu}$ with $\kappa_{\mu\nu}$ constant and antisymmetric, of dimension $(\text{length})^2$. Momentum commutes with itself and with position in the ordinary way, $[x_\mu,p_\nu]=\frac{m\,c\,i\,\delta_{\mu\nu}}{k_m}$, and the source parametrises the deformation by a scale,
 
 $$
 \kappa_{\mu\nu} = \frac{1}{\Lambda_{NC}^2}\,\epsilon_{\mu\nu},
@@ -39,7 +39,7 @@ $$
 with $\epsilon_{\mu\nu}$ dimensionless and antisymmetric and $\Lambda_{NC}\ge 10^{3}$ GeV the bound the source quotes. Two consequences are stated at once, because they shape everything that follows. The tensor $\kappa_{\mu\nu}$ is **constant**, so it picks out a direction in the Lorentz group: **Lorentz invariance is broken** on the deformed arena. And because a constant $\kappa$ can be traded for a shift of the coordinates,
 
 $$
-\tilde q_i = x_i + \frac{1}{2\hbar}\kappa_{ij}p_j,
+\tilde q_i = x_i +\frac{k_m}{2\,m\,c}\kappa_{ij}p_j,
 $$
 
 the field theories on the arena are **non-local** — the same shift that removes the coordinate commutator introduces a derivative-dependent displacement.

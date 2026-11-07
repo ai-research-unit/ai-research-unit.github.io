@@ -192,33 +192,33 @@ $$
 Their products are the exact operator identities of that article,
 
 $$
-A_\omega^\dagger A_\omega = \vec p^2 + m^2\omega^2\vec r^2 - \dfrac{3\hbar^2\omega\,k_m}{c} - 2m\omega\,S
-= \dfrac{2\hbar^2\omega\,k_m}{c}\left(N - \frac{S}{\hbar}\right),
+A_\omega^\dagger A_\omega = \vec p^2 + m^2\omega^2\vec r^2 -\frac{3\,m^{2}\,c\,\omega}{k_m} - 2m\omega\,S
+=\frac{2\,m^{2}\,c\,\omega}{k_m}\left(N -\frac{k_m\,S}{m\,c}\right),
 $$
 
 and
 
 $$
-A_\omega A_\omega^\dagger = \dfrac{2\hbar^2\omega\,k_m}{c}\left(N + 3 + \frac{S}{\hbar}\right),
+A_\omega A_\omega^\dagger =\frac{2\,m^{2}\,c\,\omega}{k_m}\left(N + 3 +\frac{k_m\,S}{m\,c}\right),
 \qquad
-S=\sum_k L_{\mathrm{orb},k}\,\tilde S_k ,
+S=\sum_k  L_{\mathrm{orb},k}\,\tilde S_k ,
 $$
 
-where $N$ is the oscillator number operator and $S$ is the spin–orbit element. The constant terms differ, $-\dfrac{3\hbar^2\omega\,k_m}{c}$ against $+\dfrac{3\hbar^2\omega\,k_m}{c}$, and the two products differ by their commutator, which carries the constant and twice the spin–orbit term. The commutator is not central, and the two operators are nevertheless isospectral away from zero, because $A_\omega$ intertwines them: $A_\omega(A_\omega^\dagger A_\omega) = (A_\omega A_\omega^\dagger)A_\omega$. Both identities were checked on the truncated oscillator space of the states with $N\le4$ (thirty-five bosonic states, seventy with the spin), where they held to $10^{-15}$ in the bulk of the basis, that is for every state with $N\le2$; the deviation in the outermost shell is the expected artefact of a truncation that realises the commutator of the ladder only below its ceiling. $A_\omega$ annihilates the vacuum exactly.
+where $N$ is the oscillator number operator and $S$ is the spin–orbit element. The constant terms differ, $-\frac{3\,m^{2}\,c\,\omega}{k_m}$ against $+\frac{3\,m^{2}\,c\,\omega}{k_m}$, and the two products differ by their commutator, which carries the constant and twice the spin–orbit term. The commutator is not central, and the two operators are nevertheless isospectral away from zero, because $A_\omega$ intertwines them: $A_\omega(A_\omega^\dagger A_\omega) = (A_\omega A_\omega^\dagger)A_\omega$. Both identities were checked on the truncated oscillator space of the states with $N\le4$ (thirty-five bosonic states, seventy with the spin), where they held to $10^{-15}$ in the bulk of the basis, that is for every state with $N\le2$; the deviation in the outermost shell is the expected artefact of a truncation that realises the commutator of the ladder only below its ceiling. $A_\omega$ annihilates the vacuum exactly.
 
 The pair $(A_\omega,A_\omega^\dagger)$ is a supersymmetric pair in the sense of the first section: $H_+ = A_\omega^\dagger A_\omega$ and $H_- = A_\omega A_\omega^\dagger$ are partner Hamiltonians, and their non-zero spectra agree. The zero modes of $A_\omega$ are the aligned states with $n_r = 0$, and they exist for every orbital quantum number $l$, so $\dim\ker A_\omega = \infty$; the conjugate operator has no zero modes at all, because $A_\omega A_\omega^\dagger$ has strictly positive eigenvalues. The imbalance of zero modes is therefore infinite: the supersymmetry is unbroken, and the ground level of the Dirac oscillator is infinitely degenerate at $E = \pm mc^2$. The infinite degeneracy derived in the oscillator article is thus not an accident of that model; it is the zero-mode degeneracy that a factorised first-order operator with unbroken supersymmetry possesses.
 
 The oscillator's spectrum,
 
 $$
-E^2 = m^2c^4 + \dfrac{2\hbar^2\omega\,k_m}{c} c^2\left(N - \frac{S}{\hbar}\right),
+E^2 = m^2c^4 +\frac{2\,m^{2}\,c\,\omega}{k_m} c^2\left(N -\frac{k_m\,S}{m\,c}\right),
 \qquad
-E^2 = m^2c^4 + 4m\hbar\omega c^2\,n_r \ \ (s_{\mathrm{tot}} = l+\tfrac12),
+E^2 = m^2c^4 +\frac{4\,m^{2}\,c^{3}\,\omega\,n_{r}\,(s_{\mathrm{tot}} = l+\tfrac12)}{k_m},
 $$
 
-is the spectrum of $H_+ = A_\omega^\dagger A_\omega$. The first line is the general form, and the second is its aligned branch, $S/\hbar = l$, rewritten with $N = 2n_r+l$; that branch vanishes at $n_r = 0$, which is the infinitely degenerate level at $E = \pm mc^2$. The anti-aligned branch, $S/\hbar = -(l+1)$, gives $E^2 = m^2c^4 + \dfrac{2\hbar^2\omega\,k_m}{c} c^2(2n_r+2l+1)$.
+is the spectrum of $H_+ = A_\omega^\dagger A_\omega$. The first line is the general form, and the second is its aligned branch, $\frac{k_m\,S}{m\,c}= l$, rewritten with $N = 2n_r+l$; that branch vanishes at $n_r = 0$, which is the infinitely degenerate level at $E = \pm mc^2$. The anti-aligned branch, $\frac{k_m\,S}{m\,c}= -(l+1)$, gives $E^2 = m^2c^4 +\frac{2\,m^{2}\,c\,\omega}{k_m} c^2(2n_r+2l+1)$.
 
-The two branches are the two values of the spin–orbit element, not the two graded sectors. The partner $H_- = A_\omega A_\omega^\dagger$ has two towers as well, $\dfrac{2\hbar^2\omega\,k_m}{c}(2n_r+2l+3)$ aligned and $4m\hbar\omega(n_r+1)$ anti-aligned; these are the two towers of $H_+$ with the branches exchanged and $n_r$ advanced by one. At fixed excitation the statement is exact: the spectrum of $H_-$ on the states of $N$ excitations is the spectrum of $H_+$ on the states of $N+1$ excitations with the zero modes removed. The exchange of branches is forced by the intertwiner, since $A_\omega$ commutes with the total angular momentum, lowers $N$ by one and is graded, so it changes $l$ by one unit and cannot keep the branch label.
+The two branches are the two values of the spin–orbit element, not the two graded sectors. The partner $H_- = A_\omega A_\omega^\dagger$ has two towers as well, $\frac{2\,m^{2}\,c\,\omega}{k_m}(2n_r+2l+3)$ aligned and $\frac{4\,m^{2}\,c\,\omega\,(n_r+1)}{k_m}$ anti-aligned; these are the two towers of $H_+$ with the branches exchanged and $n_r$ advanced by one. At fixed excitation the statement is exact: the spectrum of $H_-$ on the states of $N$ excitations is the spectrum of $H_+$ on the states of $N+1$ excitations with the zero modes removed. The exchange of branches is forced by the intertwiner, since $A_\omega$ commutes with the total angular momentum, lowers $N$ by one and is graded, so it changes $l$ by one unit and cannot keep the branch label.
 
 The correspondence also clarifies what is and is not supersymmetric about the free theory. The free biquaternionic Dirac operator has $\mathbb{D}^2 = \Box$ with $H_+ = H_-$: the pair is degenerate, the index vanishes, and what remains of the supersymmetry is the exact degeneracy, not a protected zero mode. Adding the non-minimal oscillator term shifts the two partners by opposite constants and opposite spin–orbit terms, and produces the zero modes. The mass is what makes the grading physically meaningful, and the oscillator term is what makes the two partners differ.
 
@@ -303,7 +303,7 @@ The biquaternion framework supplies this structure natively. The biquaternionic 
 
 The correspondence is exact in the 1+1-dimensional reduction with a superpotential $W$: the operator $\tilde{Q} = \vec e_y\partial/\partial R_x + iW\vec e_x$ squares to the central part $(-\partial^2/\partial R_x^2+W^2)e_t$ plus the Hermitian remainder $-\frac{dW}{dx}(i\vec e_z)$, whose two values are the partner potentials. The identity was checked by finite-difference computation on $121$ points of $[-6,6]$ (step $h=0.1$) with the kink superpotential $W = \tanh x$: it held to $7\times10^{-15}$ on the whole grid, and the operator limit $[D,W]\to dW/dx$ converged at second order in $h$, the error falling by a factor close to four at each halving of the step.
 
-The Dirac oscillator is the three-dimensional relativistic realisation: the pair $A_\omega$, $A_\omega^\dagger$ of the companion article has infinitely many zero modes on one side and none on the other, $A_\omega A_\omega^\dagger = \dfrac{2\hbar^2\omega\,k_m}{c}(N+3+S/\hbar)$ has no zero mode, the supersymmetry is unbroken, and the infinite degeneracy of the ground level at $E = \pm mc^2$ is the zero-mode degeneracy of the factorisation. The Witten index is the imbalance of the zero modes between the two values, an invariant of the grading; and shape invariance, the algebraic origin of exact solvability, is the statement that the two values of the Hermitian remainder can be mapped into one another by a change of the mass profile.
+The Dirac oscillator is the three-dimensional relativistic realisation: the pair $A_\omega$, $A_\omega^\dagger$ of the companion article has infinitely many zero modes on one side and none on the other, $A_\omega A_\omega^\dagger =\frac{2\,m^{2}\,c\,\omega}{k_m}(N+3+\frac{k_m\,S}{m\,c})$ has no zero mode, the supersymmetry is unbroken, and the infinite degeneracy of the ground level at $E = \pm mc^2$ is the zero-mode degeneracy of the factorisation. The Witten index is the imbalance of the zero modes between the two values, an invariant of the grading; and shape invariance, the algebraic origin of exact solvability, is the statement that the two values of the Hermitian remainder can be mapped into one another by a change of the mass profile.
 
 ## Summary of Notation
 
@@ -332,7 +332,7 @@ The Dirac oscillator is the three-dimensional relativistic realisation: the pair
 | $\tilde{Q} = \vec e_y\partial/\partial R_x + iW\vec e_x$ | Reduced supercharge (1+1 dimensions) |
 | $\tilde{Q}^2 = (-\partial^2/\partial R_x^2+W^2)e_t - \frac{dW}{dx}(i\vec e_z)$ | Its square (central part plus $\mathbb{B}_{\Psi}$ remainder) |
 | $A_\omega$, $A_\omega^\dagger$ | Oscillator pair (written $\mathcal{Q}_\pm$ in the companion article) |
-| $S=\sum_k L_{\mathrm{orb},k}\tilde S_k$ | Spin–orbit element of the oscillator, with the two values $\hbar l$ and $-\hbar(l+1)$ |
+| $S=\sum_k L_{\mathrm{orb},k}\tilde S_k$ | Spin–orbit element of the oscillator, with the two values $\frac{m\,c\,l}{k_m}$ and $-\frac{m\,c\,(l+1)}{k_m}$ |
 ## Further Reading
 
 - [Why AXF Matrices instead of Pauli and Gamma Matrices](why-axf-matrices-instead-of-pauli-and-gamma-matrices.html), for the reasons the AXF matrices replace the Pauli and gamma matrices.

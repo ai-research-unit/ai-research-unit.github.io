@@ -89,7 +89,7 @@ $$
 \langle\tilde{S}\rangle_\natural=\vec s^{2},
 $$
 
-is a Lorentz invariant and is constant on any solution of the equations below; it is the classical counterpart of the fixed spin quantum number $\hbar/2$.
+is a Lorentz invariant and is constant on any solution of the equations below; it is the classical counterpart of the fixed spin quantum number $\frac{m\,c}{2\,k_m}$.
 
 The **intrinsic magnetic moment** is
 

@@ -107,8 +107,7 @@ The statement is about *projective* measurements and should not be overstated. A
 There is a three-dimensional space in the framework that carries spin one: the traceless part $W=\operatorname{span}_\mathbb{C}\{i\vec e_x,i\vec e_y,i\vec e_z\}$ of $\mathbb{B}$, on which the adjoint action
 
 $$
-\mathrm{ad}_{\tilde S_k}(ie_l)=[\tilde S_k,ie_l]=i\hbar\,\epsilon_{klm}\,(ie_m)
-$$
+\mathrm{ad}_{\tilde S_k}(ie_l)=[\tilde S_k,ie_l]=\frac{m\,c\,i\,\epsilon_{klm}\,ie_{m}}{k_m}$$
 
 is a spin-one angular momentum. Since a three-dimensional module of $\mathbb{B}$ does not exist, something must distinguish this action from a module action, and the difference is exactly the multiplicativity of the map $x\mapsto\mathrm{ad}_x$.
 
@@ -170,16 +169,15 @@ $$
 and the spin-one operators are the symmetric combinations
 
 $$
-\tilde F_k=\tilde S_k^{(1)}+\tilde S_k^{(2)}=\tfrac{\hbar}{2}\left(i\vec e_k\otimes e_t+e_t\otimes i\vec e_k\right),
+\tilde F_k=\tilde S_k^{(1)}+\tilde S_k^{(2)}=\frac{m\,c}{2\,k_m}\left(i\vec e_k\otimes e_t+e_t\otimes i\vec e_k\right),
 $$
 
 which act on $\mathrm{sym}^2V$ irreducibly and annihilate $\Lambda^2V$. The ladder behaves as a three-level ladder should: the raising operator restricted to the symmetric sector is the spin-one raising operator,
 
 $$
-\left(\tilde S_+^{(1)}+\tilde S_+^{(2)}\right)\Big|_{\mathrm{sym}^2V}=\hbar\, J_+
-$$
+\left(\tilde S_+^{(1)}+\tilde S_+^{(2)}\right)\Big|_{\mathrm{sym}^2V}=\frac{m\,c\,J_{+}}{k_m}$$
 
-with the standard matrix elements $J_+|1,0\rangle=\sqrt2\hbar\,|1,1\rangle$ and $J_+|1,-1\rangle=\sqrt2\hbar\,|1,0\rangle$; this was verified by restricting the four-dimensional operator to the symmetric basis. The first obstruction is thus bypassed at the cost of one factor: the two-level algebra, applied twice.
+with the standard matrix elements $J_+|1,0\rangle=\sqrt\frac{2\,m\,c}{k_m}|1,1\rangle$ and $J_+|1,-1\rangle=\sqrt\frac{2\,m\,c}{k_m}|1,0\rangle$; this was verified by restricting the four-dimensional operator to the symmetric basis. The first obstruction is thus bypassed at the cost of one factor: the two-level algebra, applied twice.
 
 The observables of the qutrit are equally available. The spin-one operators generate the full matrix algebra: the real span of the products of $I_3,F_1,F_2,F_3$ of length up to three has real dimension $18$, which is $\dim_{\mathbb{R}}M_3(\mathbb{C})$, as required by the density theorem for an irreducible representation. Every operator connecting the three levels — including the shifts whose absence was the obstruction — is therefore a polynomial in the spin-one operators of the tensor square.
 
@@ -262,7 +260,7 @@ Three-level systems are outside the biquaternion algebra as modules, and inside 
 - **Idempotent ceiling.** At most two orthogonal idempotents of $\mathbb{B}$ can sum to the identity, so a three-outcome projective measurement is impossible in the algebra; three-outcome POVMs exist, but they are not sharp.
 - **The adjoint representation.** The traceless part $W$ carries spin one under the adjoint action, but $\mathrm{ad}_{xy}\neq\mathrm{ad}_x\mathrm{ad}_y$: explicitly $\mathrm{ad}_{i\vec e_x}^2(i\vec e_y)=+4i\vec e_y\neq0=\mathrm{ad}_{(i\vec e_x)^2}(i\vec e_y)$. The three-dimensional space is a module of the Lie algebra $\mathfrak{su}(2)$ and of the group $SU(2)$, not of the algebra $\mathbb{B}$; all derivations are inner and $\mathrm{Der}(\mathbb{B})\cong\mathfrak{sl}(2,\mathbb{C})$.
 - **The absent dynamical algebra.** $\dim_{\mathbb{R}}\mathbb{B}_{\Psi}=4$, $\dim_{\mathbb{R}}\mathbb{B}=8$ and $\dim_{\mathbb{R}}\mathrm{Der}(\mathbb{B})=6$ are all smaller than $\dim_{\mathbb{R}}\mathrm{U}(3)=9$ and $\dim_{\mathbb{R}}\mathrm{SU}(3)=8$; the framework supplies the spin subgroup $SU(2)$ of dimension three, and the rest of $\mathrm{U}(3)$ only through the tensor square.
-- **The construction.** $V\otimes V\cong\mathrm{sym}^2V\oplus\Lambda^2V$, $4=3+1$; the qutrit is $\mathrm{sym}^2V$, selected by $P_{\mathrm{sym}}$, on which $\tilde F_k=\tilde S_k^{(1)}+\tilde S_k^{(2)}$ acts irreducibly with $(\tilde S_+^{(1)}+\tilde S_+^{(2)})|_{\mathrm{sym}^2V}=\hbar J_+$; the products of $I_3,F_1,F_2,F_3$ generate $M_3(\mathbb{C})$, of real dimension $18$.
+- **The construction.** $V\otimes V\cong\mathrm{sym}^2V\oplus\Lambda^2V$, $4=3+1$; the qutrit is $\mathrm{sym}^2V$, selected by $P_{\mathrm{sym}}$, on which $\tilde F_k=\tilde S_k^{(1)}+\tilde S_k^{(2)}$ acts irreducibly with $(\tilde S_+^{(1)}+\tilde S_+^{(2)})|_{\mathrm{sym}^2V}=\frac{m\,c\,J_{+}}{k_m}$; the products of $I_3,F_1,F_2,F_3$ generate $M_3(\mathbb{C})$, of real dimension $18$.
 - **The cost.** One extra level that must be projected out, an algebra that grows from $M_2(\mathbb{C})$ to $M_4(\mathbb{C})$, and a state space whose positivity is no longer a quadratic cone condition.
 - **General counting.** $\mathrm{sym}^nV$ has dimension $n+1$; spin $s$ requires $2s$ factors, so the cost in factors is linear in the number of levels minus one.
 

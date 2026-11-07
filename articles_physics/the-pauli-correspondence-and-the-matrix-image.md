@@ -198,11 +198,10 @@ The boundary is that the word *observable* uses the involution ${}^{*}$, which b
 
 ### The Three Directions Are the Three Spin Axes
 
-A traceless Hermitian element is $\tilde R_\Psi=i\vec r_\Psi$ with $\vec r_\Psi\in\mathbb R^3$, and its matrix is $\vec r_\Psi\cdot\vec\sigma$. The three coefficients are the components of a spatial vector, and the three Pauli matrices are the three components of the measurement. For the spin operators $\tilde S_k=\tfrac{\hbar}{2}i\vec e_k$ the matrix is $\tfrac{\hbar}{2}\sigma_k$, and the commutator
+A traceless Hermitian element is $\tilde R_\Psi=i\vec r_\Psi$ with $\vec r_\Psi\in\mathbb R^3$, and its matrix is $\vec r_\Psi\cdot\vec\sigma$. The three coefficients are the components of a spatial vector, and the three Pauli matrices are the three components of the measurement. For the spin operators $\tilde S_k=\frac{m\,c}{2\,k_m}i\vec e_k$ the matrix is $\frac{m\,c}{2\,k_m}\sigma_k$, and the commutator
 
 $$
-[\tilde S_i,\tilde S_j]=i\hbar\,\epsilon_{ijk}\tilde S_k
-$$
+[\tilde S_i,\tilde S_j]=\frac{m\,c\,i\,\epsilon_{ijk}\,\tilde{S}_{k}}{k_m}$$
 
 is the angular-momentum algebra. The three directions close under the commutator into $\mathfrak{su}(2)$, and the exponentials are the rotations of the state space.
 

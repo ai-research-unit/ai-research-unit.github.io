@@ -253,9 +253,9 @@ left multiplication by the element of $\mathbb{B}$ tabulated in §*The Field in 
 
 **Because each component satisfies the Dirac equation, each component satisfies the Klein–Gordon equation on squaring**, exactly as in the spin-$\tfrac12$ case. For a biquaternion plane wave of the component,
 $$
-\tilde{Ξ}_{\mathrm{sp},\mu} = \tilde{Ξ}_{\mathrm{sp},\mu,0}\,\exp(\,i\,\mathrm{Sc}(\tilde P\tilde Q^{\natural})/\hbar),
+\tilde{Ξ}_{\mathrm{sp},\mu} = \tilde{Ξ}_{\mathrm{sp},\mu,0}\,\exp(\,i\,\mathrm{Sc}\frac{k_m\,\tilde{P}\,\tilde{Q}^{\natural}}{m\,c}),
 $$
-with $\tilde Q=x_0e_t+\sum_k x_k\vec e_k$ the coordinate element and $\tilde P=p_0e_t+\sum_k p_k\vec e_k$ its conjugate momentum, the Dirac equation on the component requires $\tilde P\tilde P^{\natural}= -\hbar^2k_m^2$ in the normalization of the companion Dirac article, that is,
+with $\tilde Q=x_0e_t+\sum_k x_k\vec e_k$ the coordinate element and $\tilde P=p_0e_t+\sum_k p_k\vec e_k$ its conjugate momentum, the Dirac equation on the component requires $\tilde P\tilde P^{\natural}= -m^{2}\,c^{2}$ in the normalization of the companion Dirac article, that is,
 $$
 \frac{\varpi^2}{c^2} - \vec k^2 = k_m^{2},
 \qquad\text{i.e.}\qquad

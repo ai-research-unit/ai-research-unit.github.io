@@ -34,7 +34,7 @@ $$
 which in vacuum reads $\tilde F=i\vec E-\vec B$. Its scalar part carries the two divergences and its vector part the two curls, so the one equation is the four Maxwell equations. It is first order in one field and needs no operator beyond the gradient. What it cannot do is carry a mass: the square of the gradient is not scalar, $\tilde\nabla^2\ne\Box$, because $e_t$ commutes with the spatial units and the mixed derivatives add instead of cancelling. The corpus's massive equation is therefore the chiral pair
 
 $$
-\tilde\nabla\tilde{Ξ}_{\mathrm{sp},R}=mc/\hbar\tilde{Ξ}_{\mathrm{sp},L},\qquad \tilde\nabla^{\natural}\tilde{Ξ}_{\mathrm{sp},L}=mc/\hbar\tilde{Ξ}_{\mathrm{sp},R} ,
+\tilde\nabla\tilde{Ξ}_{\mathrm{sp},R}=\frac{k_m}{\tilde{Ξ}_{\mathrm{sp},L}},\qquad  \tilde\nabla^{\natural}\tilde{Ξ}_{\mathrm{sp},L}=\frac{k_m}{\tilde{Ξ}_{\mathrm{sp},R}},
 $$
 
 two first-order equations in two chiral halves, and the spinorial part below is read in that form. Here $\hbar/(mc)$ is the mass length.
@@ -254,7 +254,7 @@ The $\omega$-part is gone and the coefficient is a real scalar. For the free fie
 $$
 \boxed{\;(\tilde\nabla\tilde{Ξ}_{\mathrm{sp}})(-\vec e_z)=\lambda\,\tilde{Ξ}_{\mathrm{sp}}\,i\vec e_x\;}
 $$
-which has the **shape** of the Dirac–Hestenes equation, with a single real coefficient $\lambda$ — in units of inverse length, since restoring $\hbar$ and $c$ gives $\lambda=mc/\hbar$. The coefficient has become real; whether it is a **mass** is the next question. In the unrotated pair the same coefficient reads $\Lambda+\omega K=\lambda\exp(\omega\theta_{\mathrm{dua}})$, the real coefficient times the duality phase, which is why the phase-carrying display and this one are one equation.
+which has the **shape** of the Dirac–Hestenes equation, with a single real coefficient $\lambda$ — in units of inverse length, since restoring $\frac{m\,c}{k_m}$ and $c$ gives $\lambda=k_m$. The coefficient has become real; whether it is a **mass** is the next question. In the unrotated pair the same coefficient reads $\Lambda+\omega K=\lambda\exp(\omega\theta_{\mathrm{dua}})$, the real coefficient times the duality phase, which is why the phase-carrying display and this one are one equation.
 
 **The mass is a constant only for a conserved current.** Nothing so far makes $\lambda=\Lambda/\cos\theta_{\mathrm{dua}}$ constant, and neither factor need be. What the first constraint does give is $\rho\dot\lambda+\lambda\,\langle\tilde\nabla,\tilde J\rangle=0$, so that
 
@@ -371,16 +371,16 @@ That is the correction the corpus records: the printed $=$ is missing a $+$ and 
 
 The family of the previous section is introduced for the mass spectrum, and the construction is short. The **electron** is the free field, $\tilde\nabla\tilde F_e=0$ with $F_e^2\ne0$, written $F_e=-\tilde{Ξ}_{\mathrm{sp},e}\vec e_z\tilde{Ξ}_{\mathrm{sp},e}^{\natural}$; by the linearisation above, $\tilde{Ξ}_{\mathrm{sp},e}$ obeys the Dirac–Hestenes equation with the electron mass at $\theta_{\mathrm{dua}}=0$, and the positron sits at $\theta_{\mathrm{dua}}=\pi$. The source prints the spin plane in both terms of its (6.2); as printed that equation puts the spin plane on both terms and is not a Dirac–Hestenes equation; the mass term must carry the time vector, as in the linearised form above. The **muon** is taken to be that free field **plus the field of the $+$ branch**, $F=F_e+F_+$ — the field of a massless spinor with a magnetic current, the object of the next section.
 
-The magnetic current re-enters the sourced spinorial equation, and for the phase-free spinor the equation keeps the Dirac form with two coefficients — masses in inverse-length units, hence the $c/\hbar$:
+The magnetic current re-enters the sourced spinorial equation, and for the phase-free spinor the equation keeps the Dirac form with two coefficients — masses in inverse-length units, hence the $\frac{k_m}{m}$:
 
 $$
-(\tilde\nabla\xi)(-\vec e_z)=\frac{Mc}{\hbar}\,\xi\,i\vec e_x+\omega\,\frac{Nc}{\hbar}\,\xi\,i\vec e_x,
+(\tilde\nabla\xi)(-\vec e_z)=\frac{k_m\,M}{m}\,\xi\,i\vec e_x+\frac{k_m\,\omega\,N}{m}\,\xi\,i\vec e_x,
 \qquad
 M=m+3m\,\frac{q_{\mathrm{m}}}{e}\sin\theta_{\mathrm{dua}},\qquad
 N=-3m\,\frac{q_{\mathrm{m}}}{e}\cos\theta_{\mathrm{dua}} ,
 $$
 
-with $q_{\mathrm{m}}$ the magnetic charge. The $3$ carries the normalisation, and the source does not display the step: it fixes $F=-k\,(e\hbar/mc)\,\tilde{Ξ}_{\mathrm{sp}}\vec e_z\tilde{Ξ}_{\mathrm{sp}}^{\natural}$ with $k=2\pi/3$ and states only that (6.5) follows "as in section 4". The natural reading is the Gaussian $4\pi/c$ on the current, with the $\tfrac12$ of the spinorial Maxwell equation, against $k$: $4\pi/(2k)=3$. That reconstruction is not printed, so the coefficient stands or falls with (6.5) as it appears. What $k$ does **not** do is fix the dimensions — $[F]=QL^{-2}$ and $[e\hbar/mc]=QL$ already force $[\tilde{Ξ}_{\mathrm{sp}}]=L^{-3/2}$ — so its value is chosen for the spectrum. The equation is a Dirac–Hestenes equation exactly when $N=0$, that is at $\theta_{\mathrm{dua}}=\pi/2$ and $\theta_{\mathrm{dua}}=3\pi/2$ — the two angles of the family that the source assigns to the muon and the antimuon. Then $M=m+3mq_{\mathrm{m}}/e$, and the Dirac quantisation condition for a monopole, $eq_{\mathrm{m}}/\hbar c=n/2$, gives $q_{\mathrm{m}}=en/2\alpha$ with $\alpha=e^2/\hbar c$ the fine-structure constant, so
+with $q_{\mathrm{m}}$ the magnetic charge. The $3$ carries the normalisation, and the source does not display the step: it fixes $F=-k\,(\frac{e}{k_m})\,\tilde{Ξ}_{\mathrm{sp}}\vec e_z\tilde{Ξ}_{\mathrm{sp}}^{\natural}$ with $k=2\pi/3$ and states only that (6.5) follows "as in section 4". The natural reading is the Gaussian $4\pi/c$ on the current, with the $\tfrac12$ of the spinorial Maxwell equation, against $k$: $4\pi/(2k)=3$. That reconstruction is not printed, so the coefficient stands or falls with (6.5) as it appears. What $k$ does **not** do is fix the dimensions — $[F]=QL^{-2}$ and $[\frac{e}{k_m}]=QL$ already force $[\tilde{Ξ}_{\mathrm{sp}}]=L^{-3/2}$ — so its value is chosen for the spectrum. The equation is a Dirac–Hestenes equation exactly when $N=0$, that is at $\theta_{\mathrm{dua}}=\pi/2$ and $\theta_{\mathrm{dua}}=3\pi/2$ — the two angles of the family that the source assigns to the muon and the antimuon. Then $M=m+3mq_{\mathrm{m}}/e$, and the Dirac quantisation condition for a monopole, $\frac{k_m\,eq_{\mathrm{m}}}{m\,c^{2}}=n/2$, gives $q_{\mathrm{m}}=en/2\alpha$ with $\alpha=\frac{k_m\,e^{2}}{m\,c^{2}}$ the fine-structure constant, so
 
 $$
 M=m\left(1+\frac{3n}{2\alpha}\right),\qquad n=1:\quad M=206.55\,m_e=105.5\ \mathrm{MeV},
@@ -438,11 +438,10 @@ The corpus has two spellings of the massive Dirac equation, and the source's equ
 **The one-sided pair.** Two equations, one per value of the subscript, both gradients acting from the left:
 
 $$
-\tilde\nabla\tilde{Ξ}_{\mathrm{sp},R}=mc/\hbar\tilde{Ξ}_{\mathrm{sp},L}
-$$
+\tilde\nabla\tilde{Ξ}_{\mathrm{sp},R}=\frac{k_m}{\tilde{Ξ}_{\mathrm{sp},L}}$$
 
 $$
-\tilde\nabla^{\natural}\tilde{Ξ}_{\mathrm{sp},L}=mc/\hbar\tilde{Ξ}_{\mathrm{sp},R} .
+\tilde\nabla^{\natural}\tilde{Ξ}_{\mathrm{sp},L}=\frac{k_m}{\tilde{Ξ}_{\mathrm{sp},R}}.
 $$
 
 The second gradient is the quaternion conjugate of the first, and it is the conjugation, not a side, that distinguishes them. The mass is the only term that couples the two values, and at $m=0$ the pair splits into $\tilde\nabla\tilde{Ξ}_{\mathrm{sp},R}=0$ and $\tilde\nabla^{\natural}\tilde{Ξ}_{\mathrm{sp},L}=0$, one Weyl equation per value.
@@ -458,8 +457,7 @@ with the derivative on the left and the mass on the right through the element $i
 **The source's equation has that shape.** Its Dirac–Hestenes equation
 
 $$
-(\tilde\nabla\tilde{Ξ}_{\mathrm{sp}})(-\vec e_z)=mc/\hbar\,\tilde{Ξ}_{\mathrm{sp}}\,i\vec e_x
-$$
+(\tilde\nabla\tilde{Ξ}_{\mathrm{sp}})(-\vec e_z)=\frac{k_m}{\tilde{Ξ}_{\mathrm{sp}}\,i\,\vec e_{x}}$$
 
 acts with the derivative on the left and multiplies on the right by the fixed bivector and by the mass — a left action and two right factors, no second field. That is the shape of the corpus's own Dirac–Hestenes equation too, in which the mass also multiplies on the right, at a fixed bivector; the pair of values is a different spelling of the same physics, and the two-sided form is the one both the corpus's equation and the source's take. What it does not have is a second equation for the other value. The two values are the two halves of the one spinor under the source's **Weyl conditions**, which pair the volume element on one side with the fixed bivector on the other. Written as a condition on the one spinor it is $\tilde{Ξ}_{\mathrm{sp},L}\omega=-\omega\tilde{Ξ}_{\mathrm{sp},L}$ and $\tilde{Ξ}_{\mathrm{sp},R}\omega=+\omega\tilde{Ξ}_{\mathrm{sp},R}$, that is $\tilde{Ξ}_{\mathrm{sp},L}\vec e_z=-\vec e_z\tilde{Ξ}_{\mathrm{sp},L}$ and $\tilde{Ξ}_{\mathrm{sp},R}\vec e_z=+\vec e_z\tilde{Ξ}_{\mathrm{sp},R}$: the bivector enters twice, once as a product on the right and once as a product on the left. The condition is therefore a genuine constraint, and its two branches are the two four-dimensional halves of the algebra — the spinor commuting with $\vec e_z$ and the one anticommuting. What effects the split is the **pseudoscalar**, not a second field; and because in this frame the volume element and the spin plane are written with the one bivector, the source needs the single symbol $i$ for both jobs. The symbols are those of *Special Element Conventions*.
 
@@ -499,7 +497,7 @@ The programme of Rodrigues and Vaz works in a bundle of differential forms and p
 | $\theta_{\mathrm{dua}}$ | Takabayasi (Yvon–Takabayasi) angle; $0,\pi$ electron/positron, $\pi/2,3\pi/2$ muon/antimuon |
 | $\xi$ | Spinor with the phase divided out, $\tilde{Ξ}_{\mathrm{sp}}=\xi\exp(\omega\theta_{\mathrm{dua}}/2)$; the linear Dirac equation is for $\xi$ |
 | $m$, $M$, $N$ | Electron mass; the two coefficients of the sourced equation, $M=m+3mq_{\mathrm{m}}\sin\theta_{\mathrm{dua}}/e$ and $N=-3mq_{\mathrm{m}}\cos\theta_{\mathrm{dua}}/e$, the second vanishing at $\theta_{\mathrm{dua}}=\pi/2$ and $3\pi/2$; the letter $M$ is reused, as in the source, for the radial factor of the X-wave |
-| $q_{\mathrm{m}}$, $\alpha$ | Magnetic charge, $q_{\mathrm{m}}=en/2\alpha$ from the Dirac quantisation condition $eq_{\mathrm{m}}/\hbar c=n/2$; $\alpha=e^2/\hbar c$ the fine-structure constant |
+| $q_{\mathrm{m}}$, $\alpha$ | Magnetic charge, $q_{\mathrm{m}}=en/2\alpha$ from the Dirac quantisation condition $\frac{k_m\,eq_{\mathrm{m}}}{m\,c^{2}}=n/2$; $\alpha=\frac{k_m\,e^{2}}{m\,c^{2}}$ the fine-structure constant |
 | $j$, $g$, $J=J_{\mathrm{e}}-\omega J_{\mathrm{m}}$ | Vector current, axial current, total current with electric and magnetic parts; the contractions $\langle\tilde\nabla,\tilde j\rangle$ and $\langle\tilde\nabla,\tilde g\rangle$ are the series' contractions of the gradient with the two currents |
 | $\tilde{Ξ}_{\mathrm{sp},\mathrm{dua},\theta}$ | The family of the source, $\tfrac12(\tilde{Ξ}_{\mathrm{sp}}+e^{\omega\theta_{\mathrm{dua}}}i\vec e_x\,\tilde{Ξ}_{\mathrm{sp}}\,i\vec e_x)$, which is the projection at $\theta_{\mathrm{dua}}$ in a duality-rotated frame; $\tilde{Ξ}_{\mathrm{sp},\mathrm{dua},\theta}+\tilde{Ξ}_{\mathrm{sp},\theta_{\mathrm{dua}}+\pi}=\tilde{Ξ}_{\mathrm{sp}}$ replaces the printed $\Lambda_{\mathrm{dua},\theta}=\Lambda_{\theta_{\mathrm{dua}}+\pi}$ |
 | $S=-\tfrac12\tilde{Ξ}_{\mathrm{sp}}\vec e_z\tilde{Ξ}_{\mathrm{sp}}^{-1}$ | Bivector of the canonical analysis; $S_\mu=\tfrac12\,i\,Fe_\mu F\vec e_{\nu(\mu)}$ the Maxwell energy–momentum one-form, $e_\mu$ the unit of the coordinate $x_\mu$ |

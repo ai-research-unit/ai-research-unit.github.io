@@ -2,26 +2,26 @@
 
 ## Introduction
 
-The path integral expresses the propagator of a quantum system as a sum over histories, each weighted by $\exp(iS/\hbar)$. For a particle with position degrees of freedom the histories are trajectories, and the action is the integral of a Lagrangian. For a **spin**, there is no position; the histories must be built from the state space itself, and the natural choice is the space of **spin coherent states** — the sphere of directions of the spin. The resulting path integral is the subject of this article, in the biquaternion algebra $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ of the read-list articles.
+The path integral expresses the propagator of a quantum system as a sum over histories, each weighted by $\exp(\frac{k_m\,i\,S}{m\,c})$. For a particle with position degrees of freedom the histories are trajectories, and the action is the integral of a Lagrangian. For a **spin**, there is no position; the histories must be built from the state space itself, and the natural choice is the space of **spin coherent states** — the sphere of directions of the spin. The resulting path integral is the subject of this article, in the biquaternion algebra $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ of the read-list articles.
 
 The spin path integral has one feature that distinguishes it from the particle path integral and that ties it to the geometric phase: the kinetic term of the action is not a total derivative. It is the **Wess–Zumino term**
 
 $$
-S_{WZ} = i\hbar\int_0^T\langle z(r'_t)|\,\partial/\partial r'_t\,|z(r'_t)\rangle\,dr'_t,
+S_{WZ} =\frac{m\,c\,i}{k_m}\int_0^T\langle  z(r'_t)|\,\partial/\partial r'_t\,|z(r'_t)\rangle\,dr'_t,
 $$
 
-whose value over a closed loop is $-\hbar$ times one half the oriented solid angle, i.e. the geometric phase. The path integral thus contains the geometric phase as a piece of its action, and the classical equations of motion come from varying the whole action, Wess–Zumino term included.
+whose value over a closed loop is $-\frac{m\,c}{k_m}$ times one half the oriented solid angle, i.e. the geometric phase. The path integral thus contains the geometric phase as a piece of its action, and the classical equations of motion come from varying the whole action, Wess–Zumino term included.
 
 This article establishes:
 
-1. **The coherent-state path integral for spin-1/2.** The resolution of identity on $\mathbb{CP}^1$, the overlap, the action $S = \int(i\hbar\langle z|dz/dr'_t\rangle - \langle z|\tilde R_\Psi|z\rangle)dr'_t$, and the measure.
+1. **The coherent-state path integral for spin-1/2.** The resolution of identity on $\mathbb{CP}^1$, the overlap, the action $S = \int(\frac{m\,c\,i}{k_m}\langle  z|dz/dr'_t\rangle - \langle  z|\tilde R_\Psi|z\rangle)dr'_t$, and the measure.
 2. **The Wess–Zumino term is the geometric phase.** For a closed loop of the star, $\int i\langle z|dz/dr'_t\rangle\,dr'_t = -\theta_{\mathrm{sol}}{}_{\mathrm{sgn}}/2$, exactly the solid-angle phase of the spin-1/2 holonomy; verified below on a one-parameter family of loops.
 3. **The saddle point is Larmor precession.** Varying the action with the Wess–Zumino term included gives the classical equation $d\vec r/dr'_t = \gamma\,\vec r\times\vec B$ (the Bloch/Larmor equation), so the classical spin is the saddle point of the spin path integral.
 4. **The spinor (Grassmann) form.** The same propagator can be written as a path integral over a two-component spinor with the constraint $\tilde{Ξ}_{\mathrm{sp}}^{\dagger}iR_{\mathrm{axf},\vec e_x}\tilde{Ξ}_{\mathrm{sp}} = 1$; the two forms are related by the change of variables $\varkappa_{\mathrm{stg}} = \tilde{Ξ}_{\mathrm{sp},2}/\tilde{Ξ}_{\mathrm{sp},1}$.
 5. **The double cover is visible in the path integral.** The coherent-state integral is over the sphere of idempotents and loses the phase; the spinor integral is over the double cover and retains it. The Wess–Zumino term is the obstruction to writing the action purely in terms of the idempotent.
 6. **Topological consequences.** The Wess–Zumino term is a topological term whose coefficient is the spin; it controls spin tunnelling and the quenching of the tunnelling amplitude, and it is the same object as the curvature quantisation of the geometric-phase articles.
 
-The notation is that of the read-list articles: $\tilde{S}_k = \tfrac{\hbar}{2}i\vec e_k$, $\tilde\Pi_{1,2}(\vec u) = \tfrac12(e_t\pm i\vec u)$, $\tilde{Ϛ} = \tfrac12(e_t+i\vec r)$, the trace formula $\mathrm{Tr}(\tilde Q_1\tilde Q_2)=2\,\mathrm{Sc}(\tilde Q_1\tilde Q_2)$, and the isomorphism $\mathsf{M}_2$ with $i\vec e_k\mapsto\sigma_k$.
+The notation is that of the read-list articles: $\tilde{S}_k =\frac{m\,c}{2\,k_m}i\vec e_k$, $\tilde\Pi_{1,2}(\vec u) = \tfrac12(e_t\pm i\vec u)$, $\tilde{Ϛ} = \tfrac12(e_t+i\vec r)$, the trace formula $\mathrm{Tr}(\tilde Q_1\tilde Q_2)=2\,\mathrm{Sc}(\tilde Q_1\tilde Q_2)$, and the isomorphism $\mathsf{M}_2$ with $i\vec e_k\mapsto\sigma_k$.
 
 The companion articles supply the pieces:
 - Companion article *The Path Integral in Biquaternionic Form*, for the path integral in the algebra and its classical limit.
@@ -64,14 +64,14 @@ where $d^2z$ is the ordinary area element in the complex plane. The measure is t
 Discretise the time interval $[0,T]$ into $N$ slices of width $\epsilon = T/N$. Inserting $\mathbb{1}$ at each intermediate time and using the short-time limit of the propagator,
 
 $$
-\langle z_{k+1}|\exp(-i\epsilon\tilde R_\Psi/\hbar)|z_k\rangle
-\approx \langle z_{k+1}|z_k\rangle\,\exp(-i\epsilon\langle z_k|\tilde R_\Psi|z_k\rangle/\hbar),
+\langle  z_{k+1}|\exp(-\frac{k_m\,i\,\epsilon\,\tilde{R}_{\Psi}}{m\,c})|z_k\rangle
+\approx  \langle  z_{k+1}|z_k\rangle\,\exp(-i\epsilon\langle  z_k|\tilde R_\Psi|z_k\rangle\frac{k_m}{m\,c}),
 $$
 
 the propagator becomes
 
 $$
-K(z_f,T;z_i,0) = \lim_{N\to\infty}\left(\frac{2}{\pi}\right)^{\!N}\int\prod_{k=1}^{N-1}\frac{d^2z_k}{(1+|z_k|^2)^2}\prod_{k=0}^{N-1}\langle z_{k+1}|z_k\rangle\,\exp(-\frac{i\epsilon}{\hbar}\langle z_k|\tilde R_\Psi|z_k\rangle),
+K(z_f,T;z_i,0) = \lim_{N\to\infty}\left(\frac{2}{\pi}\right)^{\!N}\int\prod_{k=1}^{N-1}\frac{d^2z_k}{(1+|z_k|^2)^2}\prod_{k=0}^{N-1}\langle  z_{k+1}|z_k\rangle\,\exp(-\frac{k_m\,i\,\epsilon}{m\,c}\langle  z_k|\tilde R_\Psi|z_k\rangle),
 $$
 
 with $z_0 = z_i$, $z_N = z_f$. This is the spin-1/2 path integral in its fully explicit form.
@@ -83,19 +83,19 @@ with $z_0 = z_i$, $z_N = z_f$. This is the spin-1/2 path integral in its fully e
 In the continuum limit the product of overlaps contributes
 
 $$
-\prod_k\langle z_{k+1}|z_k\rangle
+\prod_k\langle  z_{k+1}|z_k\rangle
 \;\longrightarrow\;
-\exp\!\left(-\int_0^T\langle z|\partial/\partial r'_t|z\rangle\,dr'_t\right)
-= \exp\!\left(\frac{i}{\hbar}S_{WZ}\right),
+\exp\!\left(-\int_0^T\langle  z|\partial/\partial r'_t|z\rangle\,dr'_t\right)
+= \exp\!\left(\frac{k_m\,i}{m\,c}S_{WZ}\right),
 $$
 
 where the last equality defines the Wess–Zumino term of this article. The action is therefore
 
 $$
-S[z] = \int_0^T\left(i\hbar\,\langle z|\partial/\partial r'_t|z\rangle - \langle z|\tilde R_\Psi(r'_t)|z\rangle\right)dr'_t,
+S[z] = \int_0^T\left(\frac{m\,c\,i}{k_m}\langle  z|\partial/\partial r'_t|z\rangle  - \langle  z|\tilde R_\Psi(r'_t)|z\rangle\right)dr'_t,
 $$
 
-and the propagator is $K = \int\mathcal{D}[z]\,\exp(iS[z]/\hbar)$ with the measure inherited from the resolution of the identity.
+and the propagator is $K = \int\mathcal{D}[z]\,\exp(iS[z]\frac{k_m}{m\,c})$ with the measure inherited from the resolution of the identity.
 
 ### The Wess–Zumino Term
 
@@ -107,23 +107,22 @@ $$
 
 so that
 
-$$
-i\hbar\langle z|\partial/\partial r'_t|z\rangle
-= -\hbar\,\frac{r^2}{1+r^2}\,d\theta_{\mathrm{azm}}/dr'_t
-= -\hbar\,\sin^2\frac{\theta}{2}\,d\theta_{\mathrm{azm}}/dr'_t .
+$$\frac{m\,c\,i}{k_m}\langle  z|\partial/\partial r'_t|z\rangle
+= -\frac{m\,c}{k_m}\frac{r^2}{1+r^2}\,d\theta_{\mathrm{azm}}/dr'_t
+= -\frac{m\,c}{k_m}\sin^2\frac{\theta}{2}\,d\theta_{\mathrm{azm}}/dr'_t .
 $$
 
 Over a closed loop at fixed $\theta = \theta_0$, traversed once counterclockwise,
 
 $$
-\boxed{\;S_{WZ} = i\hbar\oint\langle z|\partial/\partial r'_t|z\rangle\,dr'_t
-= -\hbar\cdot 2\pi\sin^2\frac{\theta_0}{2}
-= -\hbar\cdot\frac{\theta_{\mathrm{sol}}}{2},
+\boxed{\;S_{WZ} =\frac{m\,c\,i\,\oint}{k_m}\langle  z|\partial/\partial r'_t|z\rangle\,dr'_t
+= -\frac{2\,m\,c\,\pi}{k_m}\sin^2\frac{\theta_0}{2}
+= -\frac{m\,c\,\theta_{\mathrm{sol}}}{2\,k_m},
 \qquad
 \theta_{\mathrm{sol}} = 2\pi(1-\cos\theta_0)\;}.
 $$
 
-The Wess–Zumino term is therefore $-\hbar$ times one half the solid angle: the geometric phase of the closed loop. The identification was verified numerically for $\theta_0 = 0.4,\,1.0,\,1.57,\,2.2,\,2.9$, where $\int i\langle z|dz/dr'_t\rangle dr'_t$ equals $-\theta_{\mathrm{sol}}/2$ for every value.
+The Wess–Zumino term is therefore $-\frac{m\,c}{k_m}$ times one half the solid angle: the geometric phase of the closed loop. The identification was verified numerically for $\theta_0 = 0.4,\,1.0,\,1.57,\,2.2,\,2.9$, where $\int i\langle z|dz/dr'_t\rangle dr'_t$ equals $-\theta_{\mathrm{sol}}/2$ for every value.
 
 This is the central structural fact of the spin path integral. The "kinetic" term of the action is not a total derivative and is not expressible in terms of the star $\vec u$ alone; it is the phase of the spinor. The path integral does not merely accommodate the geometric phase — it is built from it.
 
@@ -132,20 +131,20 @@ This is the central structural fact of the spin path integral. The "kinetic" ter
 For a spin in a magnetic field the Hamiltonian is
 
 $$
-\tilde R_\Psi = -\frac{\hbar\omega_L}{2}\,i\,\vec u_t\cdot\mathbf{e}
+\tilde R_\Psi = -\frac{m\,c\,\omega_{L}}{2\,k_m}\,i\,\vec u_t\cdot\mathbf{e}
 = -\gamma B\,\tilde{S}(\vec u_t),
 $$
 
 and its coherent-state expectation is
 
 $$
-\langle z|\tilde R_\Psi|z\rangle = -\frac{\hbar\omega_L}{2}\,\vec u(z)\cdot\vec u_t,
+\langle  z|\tilde R_\Psi|z\rangle  = -\frac{m\,c\,\omega_{L}}{2\,k_m}\,\vec u(z)\cdot\vec u_t,
 $$
 
 the classical Zeeman energy of a dipole along $\vec u(z)$. The action is thus
 
 $$
-S[z] = \int_0^T\left[-\hbar\sin^2\frac{\theta}{2}\,d\theta_{\mathrm{azm}}/dr'_t + \frac{\hbar\omega_L}{2}\,\vec u(z)\cdot\vec u_t\right]dr'_t,
+S[z] = \int_0^T\left[-\frac{m\,c}{k_m}\sin^2\frac{\theta}{2}\,d\theta_{\mathrm{azm}}/dr'_t +\frac{m\,c\,\omega_{L}}{2\,k_m}\,\vec u(z)\cdot\vec u_t\right]dr'_t,
 $$
 
 the first term geometric and the second dynamical.
@@ -157,10 +156,10 @@ the first term geometric and the second dynamical.
 Varying $S$ with respect to $\varkappa_{\mathrm{stg}}$ and $\bar\varkappa_{\mathrm{stg}}$ gives the classical equation of motion. The Wess–Zumino term supplies the symplectic structure: writing the geometric part as a one-form in the star coordinates, its exterior derivative is the area form of the sphere,
 
 $$
-\omega = -\frac{\hbar}{2}\,\sin\theta\; d\theta\wedge d\theta_{\mathrm{azm}} ,
+\omega = -\frac{m\,c}{2\,k_m}\,\sin\theta\; d\theta\wedge  d\theta_{\mathrm{azm}} ,
 $$
 
-which is $\hbar$ times the Berry curvature of the geometric-phase analysis. The Hamiltonian term supplies the energy. The resulting equation is the precession
+which is $\frac{m\,c}{k_m}$ times the Berry curvature of the geometric-phase analysis. The Hamiltonian term supplies the energy. The resulting equation is the precession
 
 $$
 \boxed{\;d\vec r/dr'_t = \gamma\,\vec r\times\vec B
@@ -171,7 +170,7 @@ the Larmor/Bloch equation for the classical spin vector, with $|\vec r| = 1$. Th
 
 ### The Classical Limit as a Phase-Space Problem
 
-The pair (symplectic form $\omega$, energy $\langle H\rangle$) makes the sphere a classical phase space of one degree of freedom, the spin; the path integral is its quantisation. This is the statement that a spin-1/2 is a one-degree-of-freedom phase space with a curved symplectic form, and the factor $\hbar$ in $\omega$ is the loop-counting parameter of the semiclassical expansion. The leading WKB approximation to the propagator is $\exp(iS_{\mathrm{cl}}/\hbar)$ with $S_{\mathrm{cl}}$ the action along the classical path, and the next-order fluctuation determinant is the van Vleck factor.
+The pair (symplectic form $\omega$, energy $\langle H\rangle$) makes the sphere a classical phase space of one degree of freedom, the spin; the path integral is its quantisation. This is the statement that a spin-1/2 is a one-degree-of-freedom phase space with a curved symplectic form, and the factor $\frac{m\,c}{k_m}$ in $\omega$ is the loop-counting parameter of the semiclassical expansion. The leading WKB approximation to the propagator is $\exp(\frac{k_m\,iS_{\mathrm{cl}}}{m\,c})$ with $S_{\mathrm{cl}}$ the action along the classical path, and the next-order fluctuation determinant is the van Vleck factor.
 
 ## The Spinor Path Integral
 
@@ -180,9 +179,9 @@ The pair (symplectic form $\omega$, energy $\langle H\rangle$) makes the sphere 
 The same propagator admits a second path integral, over a two-component spinor with anticommuting (Grassmann) coefficients,
 
 $$
-K = \int\mathcal{D}\tilde{Ξ}_{\mathrm{sp}}^{\dagger}\,\mathcal{D}\tilde{Ξ}_{\mathrm{sp}}\; \exp(\frac{i}{\hbar}S[\tilde{Ξ}_{\mathrm{sp}}^{\dagger}iR_{\mathrm{axf},\vec e_x},\tilde{Ξ}_{\mathrm{sp}}]),
+K = \int\mathcal{D}\tilde{Ξ}_{\mathrm{sp}}^{\dagger}\,\mathcal{D}\tilde{Ξ}_{\mathrm{sp}}\; \exp(\frac{k_m\,i}{m\,c}S[\tilde{Ξ}_{\mathrm{sp}}^{\dagger}iR_{\mathrm{axf},\vec e_x},\tilde{Ξ}_{\mathrm{sp}}]),
 \qquad
-S = \int\left(i\hbar\,\tilde{Ξ}_{\mathrm{sp}}^{\dagger}iR_{\mathrm{axf},\vec e_x}\,d\tilde{Ξ}_{\mathrm{sp}}/dr'_t - \langle\tilde{Ξ}_{\mathrm{sp}}|\tilde R_\Psi|\tilde{Ξ}_{\mathrm{sp}}\rangle\right)dr'_t,
+S = \int\left(\frac{m\,c\,i\,\tilde{Ξ}_{\mathrm{sp}}^{\dagger}\,iR_{\mathrm{axf},\vec e_x}\,d\,\tilde{Ξ}_{\mathrm{sp}}}{k_m\,dr'_{t}}- \langle\tilde{Ξ}_{\mathrm{sp}}|\tilde R_\Psi|\tilde{Ξ}_{\mathrm{sp}}\rangle\right)dr'_t,
 $$
 
 subject to the constraint $\tilde{Ξ}_{\mathrm{sp}}^{\dagger}iR_{\mathrm{axf},\vec e_x}\tilde{Ξ}_{\mathrm{sp}} = 1$, which fixes the norm of the spinor. The constraint is the statement that the state is pure; without it the integral would describe a mixed or a many-component system. The Grassmann variables are the algebraic expression of the spinor's anticommuting nature, and the integral over them is the standard fermionic path integral of a two-level system.
@@ -208,10 +207,10 @@ In the algebra the coherent state is the idempotent $\tilde\Pi_1(\vec u(z))$, so
 The Wess–Zumino term cannot be written as the integral of a local function of $\vec u$ alone, because the symplectic form of the sphere is not exact: its integral over the whole sphere has magnitude
 
 $$
-\left|\int_{S^2}\omega\right| = 2\pi\hbar,
+\left|\int_{S^2}\omega\right| =\frac{2\,m\,c\,\pi}{k_m},
 $$
 
-the flux of a unit charge, and the Chern number of the spin-1/2 band is non-zero. The Wess–Zumino term is therefore a **topological term** — a theta term — whose coefficient is the spin $s$ in units of $\hbar$; for spin-1/2 the coefficient gives the half-integer phase $\theta_{\mathrm{sol}}/2$. The quantisation problem of a spin is the quantisation of a phase space with a non-exact symplectic form, and the spin-1/2 phase is the simplest case.
+the flux of a unit charge, and the Chern number of the spin-1/2 band is non-zero. The Wess–Zumino term is therefore a **topological term** — a theta term — whose coefficient is the spin $s$ in units of $\frac{m\,c}{k_m}$; for spin-1/2 the coefficient gives the half-integer phase $\theta_{\mathrm{sol}}/2$. The quantisation problem of a spin is the quantisation of a phase space with a non-exact symplectic form, and the spin-1/2 phase is the simplest case.
 
 ### Spin Tunnelling and Its Quenching
 
@@ -247,23 +246,23 @@ For a spin in a magnetic field with an easy-axis anisotropy the classical ground
 The path integral for a spin-1/2 is an integral over histories in the space of coherent states $|\varkappa_{\mathrm{stg}}\rangle$ on $\mathbb{CP}^1$:
 
 $$
-K = \int\mathcal{D}[z]\,\exp(\frac{i}{\hbar}S[z]),
+K = \int\mathcal{D}[z]\,\exp(\frac{k_m\,i}{m\,c}S[z]),
 \qquad
-S[z] = \int_0^T\left(i\hbar\,\langle z|\partial/\partial r'_t|z\rangle - \langle z|\tilde R_\Psi|z\rangle\right)dr'_t,
+S[z] = \int_0^T\left(\frac{m\,c\,i}{k_m}\langle  z|\partial/\partial r'_t|z\rangle  - \langle  z|\tilde R_\Psi|z\rangle\right)dr'_t,
 $$
 
 with the invariant measure $\frac{2}{\pi}\frac{d^2z}{(1+|z|^2)^2}$ from the resolution of identity. The kinetic term is the **Wess–Zumino term**, and over a closed loop it equals
 
 $$
-\boxed{\;S_{WZ} = -\hbar\cdot\frac{\theta_{\mathrm{sol}}}{2},
+\boxed{\;S_{WZ} = -\frac{m\,c\,\theta_{\mathrm{sol}}}{2\,k_m},
 \qquad \theta_{\mathrm{sol}} = 2\pi(1-\cos\theta_0)\;},
 $$
 
 one half the oriented solid angle: the geometric phase. This was verified numerically for five values of $\theta_0$.
 
-The saddle point of $S$ is the classical Larmor precession $d\vec r/dr'_t = \gamma\,\vec r\times\vec B$, obtained from the symplectic form $\omega = -\tfrac{\hbar}{2}\sin\theta\,d\theta\wedge d\theta_{\mathrm{azm}}$ and the classical Zeeman energy $\langle\tilde R_\Psi\rangle = -\tfrac{\hbar\omega_L}{2}\vec u\cdot\vec u_t$. The same propagator can be written as a Grassmann integral over a two-component spinor with $\tilde{Ξ}_{\mathrm{sp}}^{\dagger}iR_{\mathrm{axf},\vec e_x}\tilde{Ξ}_{\mathrm{sp}}=1$, related to the coherent-state form by $\varkappa_{\mathrm{stg}} = \tilde{Ξ}_{\mathrm{sp},2}/\tilde{Ξ}_{\mathrm{sp},1}$.
+The saddle point of $S$ is the classical Larmor precession $d\vec r/dr'_t = \gamma\,\vec r\times\vec B$, obtained from the symplectic form $\omega = -\frac{m\,c}{2\,k_m}\sin\theta\,d\theta\wedge  d\theta_{\mathrm{azm}}$ and the classical Zeeman energy $\langle\tilde R_\Psi\rangle  = -\frac{m\,c\,\omega_{L}}{2\,k_m}\vec u\cdot\vec u_t$. The same propagator can be written as a Grassmann integral over a two-component spinor with $\tilde{Ξ}_{\mathrm{sp}}^{\dagger}iR_{\mathrm{axf},\vec e_x}\tilde{Ξ}_{\mathrm{sp}}=1$, related to the coherent-state form by $\varkappa_{\mathrm{stg}} = \tilde{Ξ}_{\mathrm{sp},2}/\tilde{Ξ}_{\mathrm{sp},1}$.
 
-In the biquaternion algebra the coherent-state integral is an integral over the sphere of idempotents $\tilde\Pi_1(\vec u)$ with energy $\mathrm{Tr}(\tilde\Pi\tilde R_\Psi^{*})$, and the spinor integral is its lift to the double cover; the Wess–Zumino term is the central phase of the rotor along the path. The term is topological: the symplectic form of the sphere is not exact, its total integral has magnitude $2\pi\hbar$, and the coefficient of the term is the spin. For a half-integer spin this makes the tunnelling instanton action imaginary by an odd multiple of $i\pi$, quenching the tunnelling between opposite classical states.
+In the biquaternion algebra the coherent-state integral is an integral over the sphere of idempotents $\tilde\Pi_1(\vec u)$ with energy $\mathrm{Tr}(\tilde\Pi\tilde R_\Psi^{*})$, and the spinor integral is its lift to the double cover; the Wess–Zumino term is the central phase of the rotor along the path. The term is topological: the symplectic form of the sphere is not exact, its total integral has magnitude $\frac{2\,m\,c\,\pi}{k_m}$, and the coefficient of the term is the spin. For a half-integer spin this makes the tunnelling instanton action imaginary by an odd multiple of $i\pi$, quenching the tunnelling between opposite classical states.
 
 ## Summary of Notation
 
@@ -274,16 +273,16 @@ In the biquaternion algebra the coherent-state integral is an integral over the 
 | $i$ | Central scalar imaginary |
 | $\mathbb{B}_{\Psi}$ | Hermitian (informational) subspace |
 | $\mathbb{B}_{H}$ | Unit real quaternions; the classical rotors |
-| $\tilde{S}_k = \tfrac{\hbar}{2}i\vec e_k$ | Spin-1/2 operator |
+| $\tilde{S}_k =\frac{m\,c}{2\,k_m}i\vec e_k$ | Spin-1/2 operator |
 | $|\varkappa_{\mathrm{stg}}\rangle$ | Spin coherent state with Bloch vector $\vec u(\varkappa_{\mathrm{stg}})$ |
 | $\varkappa_{\mathrm{stg}} = \tan\tfrac{\theta}{2}\exp(i\theta_{\mathrm{azm}}) = \tilde{Ξ}_{\mathrm{sp},2}/\tilde{Ξ}_{\mathrm{sp},1}$ | Stereographic coordinate |
 | $\langle z_2|z\rangle = \dfrac{1+\bar z_2 z}{\sqrt{(1+|z_2|^2)(1+|z|^2)}}$ | Coherent-state overlap |
 | $\mathbb{1} = \tfrac{2}{\pi}\int\tfrac{d^2z}{(1+|z|^2)^2}|z\rangle\langle z|$ | Resolution of identity (spin-1/2) |
-| $S_{WZ} = i\hbar\oint\langle z|\partial/\partial r'_t|z\rangle dr'_t = -\hbar\tfrac{\theta_{\mathrm{sol}}}{2}$ | Wess–Zumino term |
-| $\omega = -\tfrac{\hbar}{2}\sin\theta\,d\theta\wedge d\theta_{\mathrm{azm}}$ | Symplectic form of the sphere |
+| $S_{WZ} =\frac{m\,c\,i\,\oint}{k_m}\langle  z|\partial/\partial r'_t|z\rangle  dr'_t = -\frac{m\,c\,\theta_{\mathrm{sol}}}{2\,k_m}$ | Wess–Zumino term |
+| $\omega = -\frac{m\,c}{2\,k_m}\sin\theta\,d\theta\wedge  d\theta_{\mathrm{azm}}$ | Symplectic form of the sphere |
 | $d\vec r/dr'_t = \gamma\,\vec r\times\vec B$ | Classical Larmor precession |
 | $\tilde{Ξ}_{\mathrm{sp}}^{\dagger}iR_{\mathrm{axf},\vec e_x},\tilde{Ξ}_{\mathrm{sp}}$ | Grassmann spinor variables, $\tilde{Ξ}_{\mathrm{sp}}^{\dagger}iR_{\mathrm{axf},\vec e_x}\tilde{Ξ}_{\mathrm{sp}}=1$ |
-| $\left|\int_{S^2}\omega\right| = 2\pi\hbar$ | Unit-charge flux; non-exactness of $\omega$ |
+| $\left|\int_{S^2}\omega\right| =\frac{2\,m\,c\,\pi}{k_m}$ | Unit-charge flux; non-exactness of $\omega$ |
 
 ## Further Reading
 

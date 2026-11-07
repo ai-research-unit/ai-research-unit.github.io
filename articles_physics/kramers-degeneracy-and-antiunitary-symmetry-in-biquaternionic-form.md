@@ -239,7 +239,7 @@ a splitting of exactly $2b$ per pair and linear in the field, while a $\mathcal 
 ## Companion Articles
 
 - Companion article *Antilinear Structure and the Two Kinds of Mass in Biquaternionic Form*, for the three antilinear involutions, the real structure $\flat$, and the distinction between the algebra's and the module's real structures that this article inherits.
-- Companion article *Spin-1/2 Quantum Physics in Biquaternionic Form*, for the spin generators $\tilde S_k=\tfrac{\hbar}{2}i\vec e_k$ and the module action on which time reversal is constructed.
+- Companion article *Spin-1/2 Quantum Physics in Biquaternionic Form*, for the spin generators $\tilde S_k=\frac{m\,c}{2\,k_m}i\vec e_k$ and the module action on which time reversal is constructed.
 
 ## Summary
 

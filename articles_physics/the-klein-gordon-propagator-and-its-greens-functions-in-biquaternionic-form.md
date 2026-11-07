@@ -59,7 +59,7 @@ $$
 \left(\Box-k_m^{2}\right)\;\longmapsto\;\frac{\omega^2}{c^2}-\vec k^2-k_m^{2} .
 $$
 
-The symbol vanishes precisely on the **mass shell** $\langle\tilde P\rangle_{\natural}=\tilde P\tilde P^{\natural}= -\hbar^2k_m^2$, that is, on
+The symbol vanishes precisely on the **mass shell** $\langle\tilde P\rangle_{\natural}=\tilde P\tilde P^{\natural}= -m^{2}\,c^{2}$, that is, on
 
 $$
 \omega^2=c^2\vec k^2+c^2k_m^{2},
@@ -107,7 +107,7 @@ $$
 \Omega_{\vec p}=\sqrt{\vec p^2+k_m^{2}}.
 $$
 
-In natural units this is the on-shell energy; with $c$ restored it is $\hbar\Omega_{\vec p}=\sqrt{\hbar^2c^2\vec p^2+m^2c^4}$, the usual relativistic energy. The two poles sit on the real axis in the distributional sense, and the four standard prescriptions displace them into the complex plane in four ways. Each prescription defines a Green's function with a definite support and a definite interpretation.
+In natural units this is the on-shell energy; with $c$ restored it is $\frac{m\,c\,\Omega_{\vec p}}{k_m}=\sqrt{\frac{m^{2}\,c^{4}\,\vec p^{2}}{k_m^{2}}+m^2c^4}$, the usual relativistic energy. The two poles sit on the real axis in the distributional sense, and the four standard prescriptions displace them into the complex plane in four ways. Each prescription defines a Green's function with a definite support and a definite interpretation.
 
 | Prescription | Denominator | Poles | Support |
 |---|---|---|---|
@@ -179,7 +179,7 @@ p\,\frac{\sin(\Omega_p r'_t)}{\Omega_p}\,\sin(pr),
 \Omega_p=\sqrt{p^2+k_m^{2}}.
 $$
 
-The substitution $p=(\hbar\,k_m)\sinh u$, which is the hyperboloid parametrization of the mass shell, gives $\Omega_p=(\hbar\,k_m)\cosh u$, $dp=k_m\cosh u\,du$, and
+The substitution $p=(m\,c)\sinh u$, which is the hyperboloid parametrization of the mass shell, gives $\Omega_p=(m\,c)\cosh u$, $dp=k_m\cosh u\,du$, and
 
 $$
 \frac{p\,dp}{\Omega_p}=k_m\sinh u\,du,
@@ -410,7 +410,7 @@ The derivation of the retarded kernel given above is a transcription of the stan
 
 The Klein–Gordon operator $(\Box-k_m^{2})$ is a central scalar element of $\mathbb{B}$, and every Green's function of it is a central scalar times $e_t$. With the defining convention $(\Box-k_m^{2})G=-\delta^{(4)}$, matching the electromagnetism exercise at $k_m=0$, the momentum-space amplitude is $G=-(p^2-k_m^{2})^{-1}$ and the four standard prescriptions displace its two poles at $\omega=\pm\Omega_{\vec p}=\pm\sqrt{\vec p^2+k_m^{2}}$.
 
-The retarded Green's function is derived from its Fourier representation. The frequency contour gives $\mathrm{H}_{\mathrm{hvs}}(r'_t)\sin(\Omega_{\vec p}r'_t)/\Omega_{\vec p}$; the angular integral reduces the kernel to a radial Bessel integral; the substitution $p=(\hbar\,k_m)\sinh u$ and a hyperbolic rotation evaluate it as $\frac{\pi}{2}J_0(k_m\sqrt{{r'_{t}}^2-r^2})$; and differentiation gives the closed form
+The retarded Green's function is derived from its Fourier representation. The frequency contour gives $\mathrm{H}_{\mathrm{hvs}}(r'_t)\sin(\Omega_{\vec p}r'_t)/\Omega_{\vec p}$; the angular integral reduces the kernel to a radial Bessel integral; the substitution $p=(m\,c)\sinh u$ and a hyperbolic rotation evaluate it as $\frac{\pi}{2}J_0(k_m\sqrt{{r'_{t}}^2-r^2})$; and differentiation gives the closed form
 
 $$
 G_R(\tilde R_\Phi)
@@ -435,7 +435,7 @@ The algebra's contribution is the identification of the singular loci with the b
 | $\mathbb{B}_{\Phi},\mathbb{B}_{\Psi}$ | Material (anti-Hermitian) and informational (Hermitian) sectors |
 | $\mathbb{B}_{C}=\operatorname{span}_{\mathbb{R}}\{e_t,ie_t\}$ | Centre of $\mathbb{B}$; the scalar field's value space |
 | $\tilde R_\Phi=i c r'_t\,e_t+r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z$ | Material coordinate, $\in\mathbb{B}_{\Phi}$ |
-| $\tilde P=\hbar\,(i\omega/c\,e_t+\vec k)$ | Material four-wavevector, $\in\mathbb{B}_{\Phi}$ |
+| $\tilde P=\frac{m\,c\,(i\omega/c\,e_t+\vec k)}{k_m}$ | Material four-wavevector, $\in\mathbb{B}_{\Phi}$ |
 | $\langle\tilde R_\Phi\rangle_{\natural}=\tilde R_\Phi\tilde{R}_\Phi^{\natural}$ | Biquaternion norm |
 | $\langle\tilde{Q}_1,\tilde{Q}_2\rangle_{*}=\mathrm{Sc}(\tilde{Q}_1\tilde{Q}_2^{*})$ | Hermitian form; real, positive definite |
 | $\tilde{P}_E=ik_{\mathrm{eu},0}e_t+\vec p\in\mathbb{B}_{\Phi}$ | Euclidean material element; $\langle\tilde{P}_E,\tilde{P}_E\rangle_{*}=\vec p_E^2$ |

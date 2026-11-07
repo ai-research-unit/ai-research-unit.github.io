@@ -31,7 +31,7 @@ The article is organised as follows. The next section defines the eigenspinor an
 The four-momentum of a particle of rest mass $m$ is $\tilde{P} = m\tilde{V}$, with $\tilde{V} = \gamma(ic\,e_t + \vec v)$ the four-velocity. It lies in the material sector $\mathbb{B}_{\Phi}$ and its biquaternion norm is fixed,
 
 $$
-\tilde{P} \in \mathbb{B}_{\Phi}, \qquad \langle\tilde{P}\rangle_{\natural} = \langle\tilde{P},\tilde{P}\rangle_{\natural} = \tilde{P}\tilde{P}^{\natural} = -\hbar^2k_m^2 .
+\tilde{P} \in  \mathbb{B}_{\Phi}, \qquad \langle\tilde{P}\rangle_{\natural}  = \langle\tilde{P},\tilde{P}\rangle_{\natural}  = \tilde{P}\tilde{P}^{\natural} = -m^{2}\,c^{2}.
 $$
 
 **Definition.** The **eigenspinor** of the worldline is the rotor $\tilde U(\tau)$ that carries the rest four-momentum $imc\,e_t$ to the lab four-momentum,

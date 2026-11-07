@@ -5,16 +5,16 @@
 The Feynman path integral writes the transition amplitude of a quantum system as a sum over histories,
 
 $$
-K(x_f,r'_{t,f};x_i,r'_{t,i})=\int\mathcal{D}r_x(r'_t)\;\exp(iS[r_x]/\hbar),
+K(x_f,r'_{t,f};x_i,r'_{t,i})=\int\mathcal{D}r_x(r'_t)\;\exp(iS[r_x]\frac{k_m}{m\,c}),
 \qquad
 S[r_x]=\int_{r'_{t,i}}^{r'_{t,f}}\mathrm{Lag}(r_x,dr_x/dr'_t)\,dr'_t,
 $$
 
-in which every path from $(r_{ix},r'_{t,i})$ to $(r_{fx},r'_{t,f})$ contributes the phase $\exp(iS[x]/\hbar)$. The sum is formal: it is defined as a limit of finite-dimensional oscillatory integrals, and its convergence is governed by the same $i\epsilon$ prescription that the companion article *The Feynman Propagator in Biquaternionic Form* treats in momentum space.
+in which every path from $(r_{ix},r'_{t,i})$ to $(r_{fx},r'_{t,f})$ contributes the phase $\exp(iS[x]\frac{k_m}{m\,c})$. The sum is formal: it is defined as a limit of finite-dimensional oscillatory integrals, and its convergence is governed by the same $i\epsilon$ prescription that the companion article *The Feynman Propagator in Biquaternionic Form* treats in momentum space.
 
 This article asks of the phase the question that the read-list articles have already asked twice. The biquaternion algebra $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ contains a unique **central** root of $-1$ up to sign — the scalar imaginary $i$ — and it also contains **real non-central** roots: the unit pure real quaternions $\vec u$ that name spin directions, of which the quaternion units $\vec e_x,\vec e_y,\vec e_z$ are the coordinate cases. The companion article *The Schrödinger Equation in Biquaternionic Form* settled which of these is the $i$ of the state-vector equation, and showed that a non-central root breaks norm preservation. The companion article *The Feynman Propagator in Biquaternionic Form* settled where the $i\epsilon$ lives — along the $i c r'_t$ axis of the material sector $\mathbb{B}_{\Phi}$ — and argued that the algebra names that axis without choosing its orientation. The companion article *Interpretation of the Wick Rotation in the Biquaternion Universe* settled that $r'_t\mapsto-i\tau$ is, in this framework, the identification of the material sector $\mathbb{B}_{\Phi}$ with the quaternion subspace $\mathbb{B}_{H}$, obtained by relabeling the imaginary time coefficient as a real one. The path integral's phase is the object on which all three of these results bear at once.
 
-The finding is stated at the outset. **The algebra supplies a canonical complex structure for the phase — the central scalar imaginary — so the phase factors are central $*$-unitary elements of $\mathbb{B}_{C}$ rather than a choice of a preferred spin axis. It locates the phase exponent $iS/\hbar$ in the material sector $\mathbb{B}_{\Phi}$, along the same $i c r'_t$ direction as the propagator's $i\epsilon$ and the thermal analyticity strip. And it exhibits the Wick rotation as the transfer that turns the oscillatory sum over paths into a decaying one.** What it does not supply is the measure, the action, or the space of paths; the last is a gap the algebra cannot close, because $\mathbb{B}$ is finite-dimensional and the space of paths is not. The article reports the contributions and the gap.
+The finding is stated at the outset. **The algebra supplies a canonical complex structure for the phase — the central scalar imaginary — so the phase factors are central $*$-unitary elements of $\mathbb{B}_{C}$ rather than a choice of a preferred spin axis. It locates the phase exponent $\frac{k_m\,i\,S}{m\,c}$ in the material sector $\mathbb{B}_{\Phi}$, along the same $i c r'_t$ direction as the propagator's $i\epsilon$ and the thermal analyticity strip. And it exhibits the Wick rotation as the transfer that turns the oscillatory sum over paths into a decaying one.** What it does not supply is the measure, the action, or the space of paths; the last is a gap the algebra cannot close, because $\mathbb{B}$ is finite-dimensional and the space of paths is not. The article reports the contributions and the gap.
 
 ## The Transformation Function and the Origin of the Phase
 
@@ -24,9 +24,9 @@ $$
 p_r=\frac{\partial S}{\partial \zeta_r}, \qquad P_r=-\frac{\partial S}{\partial \eta_r},
 $$
 
-with $S=S(\zeta,\eta)$ the generator. In the quantum theory the two sets cannot be diagonal at once, but the two representations are connected by a **transformation function** $\langle \zeta_f|\eta_f\rangle$, and Dirac's observation is that this function is the quantum analogue of $\exp(iS/\hbar)$.
+with $S=S(\zeta,\eta)$ the generator. In the quantum theory the two sets cannot be diagonal at once, but the two representations are connected by a **transformation function** $\langle \zeta_f|\eta_f\rangle$, and Dirac's observation is that this function is the quantum analogue of $\exp(\frac{k_m\,i\,S}{m\,c})$.
 
-The mechanism is a change of basis, and it is exact in finite dimension. Write the transformation function as $\langle \zeta_f|\eta_f\rangle=\exp(iU/\hbar)$. For any function expressed as a well-ordered sum of products $f(\zeta)g(\eta)$ — every $\zeta$ to the left of every $\eta$ — the mixed matrix element is multiplicative,
+The mechanism is a change of basis, and it is exact in finite dimension. Write the transformation function as $\langle  \zeta_f|\eta_f\rangle=\exp(\frac{k_m\,i\,U}{m\,c})$. For any function expressed as a well-ordered sum of products $f(\zeta)g(\eta)$ — every $\zeta$ to the left of every $\eta$ — the mixed matrix element is multiplicative,
 
 $$
 \langle \zeta_f|f(\zeta)g(\eta)|\eta_f\rangle=f(\zeta_f)g(\eta_f)\,\langle \zeta_f|\eta_f\rangle ,
@@ -34,7 +34,7 @@ $$
 
 because $f(\zeta)$ is diagonal in the $\zeta$-representation, $g(\eta)$ is diagonal in the $\eta$-representation, and the two diagonalisations meet only in the transformation function. Applying this to the momentum gives $p_r=\partial U/\partial \zeta_r$ and $P_r=-\partial U/\partial \eta_r$ as equations between operators, **provided the derivatives are well-ordered**. The qualification is not removable: the only differentiation available on the dynamical variables is the Poisson bracket, and it is the step at which the quantum theory fails to reproduce the classical Lagrangian equations directly. The operator form of the relations, with that caveat, had been proved by Jordan by another method and is recovered in the paper as a by-product of the transformation function.
 
-The result for the phase follows when the two sets are the configurations at two times. The generator of the transformation between the configurations at $T$ and at $r'_t$ is the action over the interval, so $\langle x_t|x_T\rangle$ corresponds to $\exp(iS/\hbar)$, and for $T$ infinitesimally before $r'_t$ to $\exp(iL\,dr'_t/\hbar)$. The phase of the path integral is the action because the action generates the canonical transformation between the endpoints — not because it is an invariant that happens to be available. The field-theoretic counterpart of the transformation function, which is a functional of the field values on a boundary rather than a function of two configurations, is named in the companion article *The Functional Integral in Biquaternionic Form*. What that counterpart and this section fix between them is the **content** of the phase; what the algebra fixes is the imaginary unit that multiplies it, which is the question the rest of this article addresses.
+The result for the phase follows when the two sets are the configurations at two times. The generator of the transformation between the configurations at $T$ and at $r'_t$ is the action over the interval, so $\langle x_t|x_T\rangle$ corresponds to $\exp(\frac{k_m\,i\,S}{m\,c})$, and for $T$ infinitesimally before $r'_t$ to $\exp(\frac{k_m\,i\,L\,dr'_{t}}{m\,c})$. The phase of the path integral is the action because the action generates the canonical transformation between the endpoints — not because it is an invariant that happens to be available. The field-theoretic counterpart of the transformation function, which is a functional of the field values on a boundary rather than a function of two configurations, is named in the companion article *The Functional Integral in Biquaternionic Form*. What that counterpart and this section fix between them is the **content** of the phase; what the algebra fixes is the imaginary unit that multiplies it, which is the question the rest of this article addresses.
 
 ## The Sum over Paths
 
@@ -49,7 +49,7 @@ with the single-step kernel
 
 $$
 K_\varepsilon(x_{\mathrm f},x)=\Big(\frac{k_m}{2\pi i c\varepsilon}\Big)^{1/2}
-\exp\Big[\frac{i}{\hbar}\Big(\frac{m(x_{\mathrm f}-x)^2}{2\varepsilon}-\varepsilon\,V(x)\Big)\Big]+O(\varepsilon^2).
+\exp\Big[\frac{k_m\,i}{m\,c}\Big(\frac{m(x_{\mathrm f}-x)^2}{2\varepsilon}-\varepsilon\,V(x)\Big)\Big]+O(\varepsilon^2).
 $$
 
 Here $k_m=mc/\hbar$ is the mass wave number, the inverse of the mass length.
@@ -61,9 +61,9 @@ $$K(x_f,r'_{t,f};x_i,r'_{t,i})=\int dx\;K(x_f,r'_{t,f};r_x,r'_t)\,K(r_x,r'_t;x_i
 This is the statement that the sum over paths is a sum over the intermediate point at which a path crosses time $r'_t$; it is the same completeness relation that any representation of the evolution operator must satisfy.
 
 **Interference.** Two classes of paths whose actions differ by $\Delta S$ contribute
-$$\exp(iS_1/\hbar)+\exp(iS_2/\hbar)=2\cos\!\Big(\frac{\Delta S}{2\hbar}\Big)\exp(i\bar S/\hbar),
+$$\exp(\frac{k_m\,iS_{1}}{m\,c})+\exp(\frac{k_m\,iS_{2}}{m\,c})=2\cos\!\Big(\frac{k_m\,\Delta\,S}{2\,m\,c}\Big)\exp(\frac{k_m\,i\,\bar{S}}{m\,c}),
 \qquad \bar S=\tfrac12(S_1+S_2),$$
-so the intensity has fringes with complete destructive nodes at $\Delta S=(2n+1)\pi\hbar$. More generally, $N$ equal-amplitude paths with successive phase $\delta$ sum to
+so the intensity has fringes with complete destructive nodes at $\Delta S=\frac{m\,c\,(2n+1)\,\pi}{k_m}$. More generally, $N$ equal-amplitude paths with successive phase $\delta$ sum to
 $$\Big|\sum_{k=0}^{N-1}\exp(ik\delta)\Big|=\Big|\frac{\sin(N\delta/2)}{\sin(\delta/2)}\Big|.$$
 The phase is therefore the entire dynamical content of the sum: the measure counts paths, and the phase makes them interfere.
 
@@ -75,14 +75,12 @@ The phase is therefore the entire dynamical content of the sum: the measure coun
 
 The action $S[x]$ is a real scalar — a Lorentz scalar, in the covariant case. The exponent of the phase is therefore
 
-$$
-\frac{iS[r_x]}{\hbar}=\Big(\frac{S[r_x]}{\hbar}\Big)\,i\,e_t,
+$$\frac{iS[r_x]}{\frac{m\,c}{k_m}}=\Big(\frac{S[r_x]}{\frac{m\,c}{k_m}}\Big)\,i\,e_t,
 $$
 
 a purely imaginary scalar, with zero vector part. By the defining form of the two sectors — $\mathbb{B}_{\Phi}$ is the anti-Hermitian subspace, imaginary scalar part and real vector part; $\mathbb{B}_{\Psi}$ is the Hermitian subspace, real scalar part and imaginary vector part — this exponent is an element of $\mathbb{B}_{\Phi}$:
 
-$$
-\frac{iS}{\hbar}\in\mathbb{B}_{C}\cap\mathbb{B}_{\Phi}.
+$$\frac{k_m\,i\,S}{m\,c}\in\mathbb{B}_{C}\cap\mathbb{B}_{\Phi}.
 $$
 
 It lies along the imaginary-scalar direction that the framework writes as $i c r'_t$. This is the same direction in which the companion article on the Feynman propagator locates the deformation $-i\epsilon\,e_t$, and it is the direction the companion article on the Wick rotation relabels as real. The three are the same algebraic object seen in three problems.
@@ -94,20 +92,20 @@ The generator of the phase is thus $i e_t$, the central element that exchanges t
 Because the exponent is a complex scalar, the phase factor is a **central** element of $\mathbb{B}$:
 
 $$
-\boxed{\;\exp(iS/\hbar)=\cos\!\Big(\frac{S}{\hbar}\Big)e_t+\sin\!\Big(\frac{S}{\hbar}\Big)\,i e_t\;\in\;\mathbb{B}_{C}=\operatorname{span}_{\mathbb{R}}\{e_t,ie_t\}\;}.
+\boxed{\;\exp(\frac{k_m\,i\,S}{m\,c})=\cos\!\Big(\frac{k_m\,S}{m\,c}\Big)e_t+\sin\!\Big(\frac{k_m\,S}{m\,c}\Big)\,i e_t\;\in\;\mathbb{B}_{C}=\operatorname{span}_{\mathbb{R}}\{e_t,ie_t\}\;}.
 $$
 
-Its Hermitian conjugate is its inverse, $(\exp(iS/\hbar))^\dagger=\exp(-iS/\hbar)$, so it is **$*$-unitary** in the sense of the framework's $*$-unitary group $\mathrm{U}(2)$:
+Its Hermitian conjugate is its inverse, $(\exp(\frac{k_m\,i\,S}{m\,c}))^\dagger=\exp(-\frac{k_m\,i\,S}{m\,c})$, so it is **$*$-unitary** in the sense of the framework's $*$-unitary group $\mathrm{U}(2)$:
 
 $$
-\exp(iS/\hbar)\,\big(\exp(iS/\hbar)\big)^\dagger=e_t.
+\exp(\frac{k_m\,i\,S}{m\,c})\,\big(\exp(\frac{k_m\,i\,S}{m\,c})\big)^\dagger=e_t.
 $$
 
 It is **not**, however, a **unit-norm** element. The Lorentz rotors are the biquaternions with $\tilde U_{\mathrm{lor}}\tilde U_{\mathrm{lor}}{}^{\natural}=e_t$ (the group $SL(2,\mathbb{C})$), and for a central element $\lambda e_t$ this condition reads $\lambda^2=1$, so $\lambda=\pm1$. For the phase,
 
 $$
-\exp(iS/\hbar)\,\overline{\big(\exp(iS/\hbar)\big)}=\exp(2iS/\hbar)\neq e_t
-\qquad\text{unless } S/\hbar\in\pi\mathbb{Z}.
+\exp(\frac{k_m\,i\,S}{m\,c})\,\overline{\big(\exp(iS/\hbar)\big)}=\exp(\frac{2\,k_m\,i\,S}{m\,c})\neq  e_t
+\qquad\text{unless }\frac{k_m\,S}{m\,c\,\in\,\pi\,\mathbb{Z}}.
 $$
 
 So the phase is a $*$-unitary element and not a Lorentz rotor. The two notions of "unit" — $\tilde U\tilde U^{*}=e_t$ for $\mathrm{U}(2)$ and $\tilde U_{\mathrm{lor}}\tilde U_{\mathrm{lor}}{}^{\natural}=e_t$ for $SL(2,\mathbb{C})$ — must be kept apart here, and the path-integral phase belongs to the first.
@@ -120,10 +118,10 @@ Because each phase factor is central, it commutes with every element of $\mathbb
 $$K(x_f,r'_{t,f};x_i,r'_{t,i})=\mathcal{K}\,e_t,\qquad \mathcal{K}\in\mathbb{C},$$
 a complex number times the identity. It is not a general biquaternion.
 
-2. **The phase multiplies every spinor component equally.** In the state module $\mathbb{B}\tilde\Pi\cong\mathbb{C}^2$ of the Schrödinger article, a central phase acts as the same scalar on both components, $\exp(iS/\hbar)\tilde{Ξ}_{\mathrm{sp}}$. A non-central phase would mix or relatively phase the components; a central one does not.
+2. **The phase multiplies every spinor component equally.** In the state module $\mathbb{B}\tilde\Pi\cong\mathbb{C}^2$ of the Schrödinger article, a central phase acts as the same scalar on both components, $\exp(\frac{k_m\,i\,S}{m\,c})\tilde{Ξ}_{\mathrm{sp}}$. A non-central phase would mix or relatively phase the components; a central one does not.
 
-3. **The overall phase cancels in the state.** With $\tilde{Ξ}_{\mathrm{sp}}\mapsto \exp(iS/\hbar)\tilde{Ξ}_{\mathrm{sp}}$ and $\tilde{Ϛ}=\tilde{Ξ}_{\mathrm{sp}}\tilde{Ξ}_{\mathrm{sp}}^{\dagger}/\mathrm{Tr}(\tilde{Ξ}_{\mathrm{sp}}^{\dagger}\tilde{Ξ}_{\mathrm{sp}})\in\mathbb{B}_{\Psi}$, centrality gives
-$$\tilde{Ϛ}\;\longmapsto\;\frac{\exp(iS/\hbar)\tilde{Ξ}_{\mathrm{sp}}\,\tilde{Ξ}_{\mathrm{sp}}^{\dagger} \exp(-iS/\hbar)}{\mathrm{Tr}(\tilde{Ξ}_{\mathrm{sp}}^{\dagger}\tilde{Ξ}_{\mathrm{sp}})}=\tilde{Ϛ},$$
+3. **The overall phase cancels in the state.** With $\tilde{Ξ}_{\mathrm{sp}}\mapsto  \exp(\frac{k_m\,i\,S}{m\,c})\tilde{Ξ}_{\mathrm{sp}}$ and $\tilde{Ϛ}=\tilde{Ξ}_{\mathrm{sp}}\tilde{Ξ}_{\mathrm{sp}}^{\dagger}/\mathrm{Tr}(\tilde{Ξ}_{\mathrm{sp}}^{\dagger}\tilde{Ξ}_{\mathrm{sp}})\in\mathbb{B}_{\Psi}$, centrality gives
+$$\tilde{Ϛ}\,\longmapsto\frac{\exp(\frac{k_m\,i\,S}{m\,c})\tilde{Ξ}_{\mathrm{sp}}\,\tilde{Ξ}_{\mathrm{sp}}^{\dagger} \exp(-\frac{k_m\,i\,S}{m\,c})}{\mathrm{Tr}(\tilde{Ξ}_{\mathrm{sp}}^{\dagger}\tilde{Ξ}_{\mathrm{sp}})}=\tilde{Ϛ},$$
 so the global phase of a single path is unobservable, and the Born probabilities $\operatorname{Tr}(\tilde\Pi\tilde R_\Psi^{*})=\operatorname{Tr}(\tilde\Pi\tilde R_\Psi)=2\,\mathrm{Sc}(\tilde\Pi\tilde R_\Psi^{*}) = 2\langle\tilde\Pi,\tilde R_\Psi\rangle_{*}$ are unchanged, the star being inert and the unstarred trace real, and non-negative when $\tilde R_\Psi\ge0$. Only **relative** phases — differences of actions between paths — are observable, which is exactly what the interference formula of the previous section says.
 
 ### The sector chain
@@ -134,11 +132,11 @@ That chain is a structural interpretation of the algebra, not a derivation of an
 
 ## Why the Central Imaginary, and Not a Quaternion Unit
 
-The phase could be written with any root of $-1$ in place of $i$. The alternatives among the real roots are the non-central ones: the unit pure real quaternions $\vec u$, of which the quaternion units $\vec e_\mu$ are the coordinate cases. Writing the phase with such a root $J$ gives, per path, the element $\exp(JS/\hbar)$, a unit real quaternion when $J=\vec u$; and the three reasons the Schrödinger article gave for rejecting $J$ in the state-vector equation apply here as well.
+The phase could be written with any root of $-1$ in place of $i$. The alternatives among the real roots are the non-central ones: the unit pure real quaternions $\vec u$, of which the quaternion units $\vec e_\mu$ are the coordinate cases. Writing the phase with such a root $J$ gives, per path, the element $\exp(\frac{k_m\,J\,S}{m\,c})$, a unit real quaternion when $J=\vec u$; and the three reasons the Schrödinger article gave for rejecting $J$ in the state-vector equation apply here as well.
 
-**The generator need not be anti-Hermitian.** Taking $J\tilde R_\Psi$ in place of $i\tilde R_\Psi$ changes the generator of the flow from $-i H/\hbar$ (anti-Hermitian, hence norm-preserving) to $-J\tilde R_\Psi/\hbar$, which is anti-Hermitian only if $J$ commutes with $\tilde R_\Psi$. With $J=\vec e_z$ and $\tilde R_\Psi=i\vec e_x$ one has, using $\vec e_z \vec e_x=\vec e_y$,
+**The generator need not be anti-Hermitian.** Taking $J\tilde R_\Psi$ in place of $i\tilde R_\Psi$ changes the generator of the flow from $-\frac{k_m\,i\,H}{m\,c}$ (anti-Hermitian, hence norm-preserving) to $-\frac{k_m\,J\,\tilde{R}_{\Psi}}{m\,c}$, which is anti-Hermitian only if $J$ commutes with $\tilde R_\Psi$. With $J=\vec e_z$ and $\tilde R_\Psi=i\vec e_x$ one has, using $\vec e_z \vec e_x=\vec e_y$,
 $$J\tilde R_\Psi=\vec e_z(i\vec e_x)=i\,\vec e_y,$$
-which is Hermitian, not anti-Hermitian, since $(i\vec e_y)^{*}=i\vec e_y$. The flow $\exp(-r'_t J\tilde R_\Psi/\hbar)$ is then not $*$-unitary; at $r'_t=\pi\hbar/2$ its exponent is $-\tfrac{i\pi}{2}\vec e_y$ and
+which is Hermitian, not anti-Hermitian, since $(i\vec e_y)^{*}=i\vec e_y$. The flow $\exp(-\frac{k_m\,r'_{t}\,J\,\tilde{R}_{\Psi}}{m\,c})$ is then not $*$-unitary; at $r'_t=\frac{m\,c\,\pi}{2\,k_m}$ its exponent is $-\tfrac{i\pi}{2}\vec e_y$ and
 $$\tilde U_{\mathrm{lor}}{}^{*}\tilde U_{\mathrm{lor}}=\exp(-i\pi \vec e_y)=\cosh(\pi)\,e_t-i\sinh(\pi)\,\vec e_y\neq e_t,$$
 so the norm is not preserved. A path integral built on this phase would not reproduce a $*$-unitary evolution.
 
@@ -148,7 +146,7 @@ so it multiplies the two components by opposite phases. It is a **relative** pha
 
 **The choice is extra input.** The central imaginary is supplied by the algebra: $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ contains $\mathbb{C}$ by construction, and within the centre the roots of $-1$ are exactly $\pm i$. A real non-central root is a point of the Bloch sphere, and using one fixes a preferred spin axis that the algebra does not supply. The same observation is made by Adler's quaternionic quantum physics, where a complex structure must be chosen as additional input.
 
-**An honest qualification.** A *fixed* non-central root $J$ does not destroy interference: two paths with phases $\exp(J S_1/\hbar)$ and $\exp(J S_2/\hbar)$ still combine to $2\cos(\Delta S/2\hbar)$ times a unit element of the plane $\operatorname{span}\{e_t,J\}$. What fails is not interference but **canonicity and uniformity**: the phase lives in a chosen complex plane rather than the centre, the amplitude is a quaternion rather than a complex number, and the plane is an extra input. The Schrödinger article reaches the same verdict for the same reason, and this article inherits it rather than re-deriving it.
+**An honest qualification.** A *fixed* non-central root $J$ does not destroy interference: two paths with phases $\exp(\frac{k_m\,J\,S_{1}}{m\,c})$ and $\exp(\frac{k_m\,J\,S_{2}}{m\,c})$ still combine to $2\cos(\frac{k_m\,\Delta\,S}{2\,m\,c})$ times a unit element of the plane $\operatorname{span}\{e_t,J\}$. What fails is not interference but **canonicity and uniformity**: the phase lives in a chosen complex plane rather than the centre, the amplitude is a quaternion rather than a complex number, and the plane is an extra input. The Schrödinger article reaches the same verdict for the same reason, and this article inherits it rather than re-deriving it.
 
 ## The Propagator and Its Composition
 
@@ -158,28 +156,28 @@ The free kernel is
 
 $$
 \boxed{\;K_0(x_f,r'_{t,f};x_i,r'_{t,i})=\Big(\frac{k_m}{2\pi i c T}\Big)^{1/2}
-\exp\!\Big[\frac{i}{\hbar}\frac{m(x_f-x_i)^2}{2T}\Big],\qquad T=r'_{t,f}-r'_{t,i}\;},
+\exp\!\Big[\frac{k_m\,i}{m\,c}\frac{m(x_f-x_i)^2}{2T}\Big],\qquad  T=r'_{t,f}-r'_{t,i}\;},
 $$
 
-which is the stationary-phase result: the phase is the classical action $S_{\mathrm{cl}}=m(x_f-x_i)^2/(2T)$ divided by $\hbar$, and the prefactor is the Gaussian fluctuation determinant. In the biquaternion interpretation, both factors are central:
+which is the stationary-phase result: the phase is the classical action $S_{\mathrm{cl}}=m(x_f-x_i)^2/(2T)$ divided by $\frac{m\,c}{k_m}$, and the prefactor is the Gaussian fluctuation determinant. In the biquaternion interpretation, both factors are central:
 
-- the phase is $\exp(iS_{\mathrm{cl}}/\hbar)\in\mathbb{B}_{C}$, its exponent in $\mathbb{B}_{\Phi}$;
-- the prefactor $(m/2\pi i\hbar T)^{1/2}$ is a function of the central $i$ and is therefore central as well.
+- the phase is $\exp(\frac{k_m\,iS_{\mathrm{cl}}}{m\,c})\in\mathbb{B}_{C}$, its exponent in $\mathbb{B}_{\Phi}$;
+- the prefactor $(\frac{k_m}{2\,c\,\pi\,i\,T})^{1/2}$ is a function of the central $i$ and is therefore central as well.
 
 The kernel is thus of the form stated above, $K_0=\mathcal{K}_0\,e_t$ with $\mathcal{K}_0\in\mathbb{C}$, and its squared modulus is the classical spreading density,
 $$|K_0|^2=\frac{k_m}{2\pi c T}.$$
 
 **The measure factor.** The appearance of $\sqrt{i}$ in the prefactor is worth a remark. The square root of the central $i$ is central — it is $\pm \exp(i\pi/4)$, one of the two roots of $i$ in the complex line — so the measure factor does not leave the centre. It is two-valued, and the composition property below chooses its branch; the algebra itself does not. This is one instance of the general fact that the algebra supplies the phase and not the normalization.
 
-**Composition.** The semigroup property of $K_0$ is a Gaussian (Fresnel) convolution. With $A=im/(2\hbar T_2)$, $B=im/(2\hbar T_1)$, the standard Fresnel integral
+**Composition.** The semigroup property of $K_0$ is a Gaussian (Fresnel) convolution. With $A=im/(\frac{2\,m\,c\,T_{2}}{k_m})$, $B=im/(\frac{2\,m\,c\,T_{1}}{k_m})$, the standard Fresnel integral
 
 $$
 \int dy\;\exp(A(x-y)^2)\exp(By^2)=\sqrt{\frac{-\pi}{A+B}}\;\exp\!\Big(\frac{AB}{A+B}x^2\Big)
 $$
 
-gives $A+B=\frac{im}{2\hbar}\frac{T_1+T_2}{T_1T_2}$ and $\frac{AB}{A+B}=\frac{im}{2\hbar(T_1+T_2)}$, so the convolution of $K_0(\cdot,T_2)$ with $K_0(\cdot,T_1)$ is exactly $K_0(\cdot,T_1+T_2)$, prefactor included. The phase that survives is the classical action of the longer free flight, and the branch of every square root is fixed by the requirement that the product reproduce the single kernel. The composition was checked numerically on a case chosen for the purpose: with $m=\hbar=1$, $T_1=0.6$, $T_2=0.9$, $x=1.1$, the convolution and the single kernel agree to a relative $1.8\times10^{-16}$.
+gives $A+B=\frac{k_m\,i}{2\,c}\frac{T_1+T_2}{T_1T_2}$ and $\frac{AB}{A+B}=\frac{k_m\,i}{2\,c\,(T_1+T_2)}$, so the convolution of $K_0(\cdot,T_2)$ with $K_0(\cdot,T_1)$ is exactly $K_0(\cdot,T_1+T_2)$, prefactor included. The phase that survives is the classical action of the longer free flight, and the branch of every square root is fixed by the requirement that the product reproduce the single kernel. The composition was checked numerically on a case chosen for the purpose: with $m=\hbar=1$, $T_1=0.6$, $T_2=0.9$, $x=1.1$, the convolution and the single kernel agree to a relative $1.8\times10^{-16}$.
 
-**The single-step kernel and the Schrödinger equation.** Expanding $K_\varepsilon$ about $x$ and performing the Gaussian integral over the displacement returns the free Schrödinger equation $i\hbar\,\partial/\partial r'_t\,\tilde{Ξ}_{\mathrm{sp}}=-\frac{\hbar c}{2\,k_m}\partial^2/\partial R_x^2\tilde{Ξ}_{\mathrm{sp}}$, with the central $i$. The path integral therefore reproduces the state-vector equation of the Schrödinger article, and does not introduce a second imaginary unit: the $i$ of the exponent and the $i$ of the resulting equation are the same central element. The potential term enters through the factor $\exp(-i\varepsilon V/\hbar)$, again central.
+**The single-step kernel and the Schrödinger equation.** Expanding $K_\varepsilon$ about $x$ and performing the Gaussian integral over the displacement returns the free Schrödinger equation $\frac{m\,c\,i}{k_m}\partial/\partial r'_t\,\tilde{Ξ}_{\mathrm{sp}}=-\frac{m\,c^{2}}{2\,k_m^{2}}\partial^2/\partial R_x^2\tilde{Ξ}_{\mathrm{sp}}$, with the central $i$. The path integral therefore reproduces the state-vector equation of the Schrödinger article, and does not introduce a second imaginary unit: the $i$ of the exponent and the $i$ of the resulting equation are the same central element. The potential term enters through the factor $\exp(-\frac{k_m\,i\,\varepsilon\,V}{m\,c})$, again central.
 
 The distance between this and a genuinely biquaternionic path integral should be stated plainly. The kernel above is a complex scalar times $e_t$; the paths are real-valued trajectories; and the algebra has entered only through the identification of the phase's imaginary unit and the location of its exponent. No element of $\mathbb{B}_{\Psi}$ has been used to *define* the sum, and no non-central element appears at all.
 
@@ -203,7 +201,7 @@ $$
 where $S_E$ is the Euclidean action. The phase therefore becomes
 
 $$
-\boxed{\;\exp(iS/\hbar)=\exp(i(iS_E)/\hbar)=\exp(-S_E/\hbar)\;},
+\boxed{\;\exp(\frac{k_m\,i\,S}{m\,c})=\exp(\frac{k_m\,i\,iS_{E}}{m\,c})=\exp(-\frac{k_m\,S_{E}}{m\,c})\;},
 $$
 
 a decaying real exponential.
@@ -214,7 +212,7 @@ $$
 \mathbb{B}_{\Phi}\;\longrightarrow\;\mathbb{B}_{H},\qquad (i c r'_t,r_x,r_y,r_z)\longmapsto(c\tau,r_x,r_y,r_z),
 $$
 
-obtained by relabeling the imaginary time coefficient as a real one; it is real-linear, and it is not an isometry, since the quadratic form loses the sign reversal in the time direction. Applied to the path integral, the transfer does exactly one thing: it moves the phase exponent out of the imaginary-scalar direction of $\mathbb{B}_{\Phi}$ and into the real-scalar direction of $\mathbb{B}_{H}$. The unit circle of central phases $\mathrm{U}(1)\subset\mathbb{B}_{C}$ is replaced by the positive real axis of decaying weights. The oscillatory sum $\int\mathcal{D}x\,\exp(iS/\hbar)$ becomes the positive sum $\int\mathcal{D}x_E\,\exp(-S_E/\hbar)$, which is why the latter is the one that can be given a probabilistic (Wiener) interpretation.
+obtained by relabeling the imaginary time coefficient as a real one; it is real-linear, and it is not an isometry, since the quadratic form loses the sign reversal in the time direction. Applied to the path integral, the transfer does exactly one thing: it moves the phase exponent out of the imaginary-scalar direction of $\mathbb{B}_{\Phi}$ and into the real-scalar direction of $\mathbb{B}_{H}$. The unit circle of central phases $\mathrm{U}(1)\subset\mathbb{B}_{C}$ is replaced by the positive real axis of decaying weights. The oscillatory sum $\int\mathcal{D}x\,\exp(\frac{k_m\,i\,S}{m\,c})$ becomes the positive sum $\int\mathcal{D}x_E\,\exp(-\frac{k_m\,S_{E}}{m\,c})$, which is why the latter is the one that can be given a probabilistic (Wiener) interpretation.
 
 This is where the Wick-rotation article's classification meets the path integral. Its thesis is that the transfer is harmless for problems about equilibrium and correlation and fatal for problems about causality and dynamics, because $\mathbb{B}_{H}$ is better behaved precisely by having given up the Lorentzian structure. The path integral is the object in which both cases appear: its Euclidean form is the statistical weight of a Euclidean field theory or lattice model, and its Lorentzian form is the amplitude that encodes causal propagation. The transfer to $\mathbb{B}_{H}$ is what turns amplitudes into weights; it is also what discards the phase relations that carry the causal ordering. And, as the Feynman-propagator article argues for the $i\epsilon$, the direction of the rotation is a choice equivalent to the sign of $\epsilon$: the algebra names the $i c r'_t$ axis along which the phase lives, and does not choose the orientation of the continuation.
 
@@ -226,63 +224,62 @@ $$
 S[x_{\mathrm{cl}}+\delta x]=S_{\mathrm{cl}}+\tfrac12\,\delta^2S+O(\delta^3),
 $$
 
-where the linear term vanishes because $x_{\mathrm{cl}}$ is stationary. The leading contribution to the integral is the phase $\exp(iS_{\mathrm{cl}}/\hbar)$ times the Gaussian integral over the fluctuations, giving the **van Vleck determinant** formula
+where the linear term vanishes because $x_{\mathrm{cl}}$ is stationary. The leading contribution to the integral is the phase $\exp(\frac{k_m\,iS_{\mathrm{cl}}}{m\,c})$ times the Gaussian integral over the fluctuations, giving the **van Vleck determinant** formula
 
 $$
-\boxed{\;K(x_f,r'_{t,f};x_i,r'_{t,i})\;\approx\;\frac{1}{\sqrt{2\pi i\hbar}}\,
+\boxed{\;K(x_f,r'_{t,f};x_i,r'_{t,i})\;\approx\;\frac{1}{\sqrt{\frac{2\,m\,c\,\pi\,i}{k_m}}}\,
 \sqrt{\Big|\det\frac{\partial^2 S_{\mathrm{cl}}}{\partial x_i\,\partial x_f}\Big|}\;
-\exp(iS_{\mathrm{cl}}/\hbar)\;},
+\exp(\frac{k_m\,iS_{\mathrm{cl}}}{m\,c})\;},
 $$
 
-with the Maslov index supplying a phase $\exp(-i\pi\nu/2)$ at each conjugate point (caustic), where the determinant vanishes. The next correction comes from the cubic term in the expansion and is of order $\hbar$ relative to the leading term; it is the first term that feels the anharmonicity of the action, and it is not pursued here.
+with the Maslov index supplying a phase $\exp(-i\pi\nu/2)$ at each conjugate point (caustic), where the determinant vanishes. The next correction comes from the cubic term in the expansion and is of order $\frac{m\,c}{k_m}$ relative to the leading term; it is the first term that feels the anharmonicity of the action, and it is not pursued here.
 
-For the free particle $S_{\mathrm{cl}}=m(x_f-x_i)^2/2T$ and $\partial^2S_{\mathrm{cl}}/\partial x_i\partial x_f=-m/T$, so the prefactor is $(m/2\pi i\hbar T)^{1/2}$ and the semiclassical kernel is the exact kernel. A quadratic action is semiclassically exact; the free particle and the harmonic oscillator are the two elementary cases.
+For the free particle $S_{\mathrm{cl}}=m(x_f-x_i)^2/2T$ and $\partial^2S_{\mathrm{cl}}/\partial x_i\partial x_f=-m/T$, so the prefactor is $(\frac{k_m}{2\,c\,\pi\,i\,T})^{1/2}$ and the semiclassical kernel is the exact kernel. A quadratic action is semiclassically exact; the free particle and the harmonic oscillator are the two elementary cases.
 
-**The phase.** The stationary-phase factor $\exp(iS_{\mathrm{cl}}/\hbar)$ is a **central $*$-unitary** element of $\mathbb{B}_{C}$, for the same reason the phase of an individual path is: the classical action is still a real scalar, its exponent is still a purely imaginary scalar in $\mathbb{B}_{\Phi}$, and the phase is still central. The classical limit changes which paths contribute; it does not change the sector of the phase.
+**The phase.** The stationary-phase factor $\exp(\frac{k_m\,iS_{\mathrm{cl}}}{m\,c})$ is a **central $*$-unitary** element of $\mathbb{B}_{C}$, for the same reason the phase of an individual path is: the classical action is still a real scalar, its exponent is still a purely imaginary scalar in $\mathbb{B}_{\Phi}$, and the phase is still central. The classical limit changes which paths contribute; it does not change the sector of the phase.
 
 **The prefactor.** The determinant is built from the second variation $\delta^2S$, a real symmetric quadratic form — an ordinary real object, not an element of the algebra. Written out,
 
-$$
-\frac{1}{\sqrt{2\pi i\hbar}}\sqrt{\big|\det\nolimits\delta^2S\big|}
-=\frac{A_{\mathrm{wkb}}}{\sqrt{2\pi i\hbar}},
+$$\frac{1}{\sqrt{\frac{2\,m\,c\,\pi\,i}{k_m}}}\sqrt{\big|\det\nolimits\delta^2S\big|}
+=\frac{A_{\mathrm{wkb}}}{\sqrt{\frac{2\,m\,c\,\pi\,i}{k_m}}},
 \qquad
 A_{\mathrm{wkb}}=\sqrt{\big|\det\nolimits\delta^2S\big|},
 $$
 
-so the semiclassical prefactor is the **WKB amplitude** divided by the central $\sqrt{2\pi i\hbar}$. This is the amplitude that the companion article *The WKB Approximation and the Hamilton–Jacobi Equation in Biquaternionic Form* writes as the modulus of the wave function; the van Vleck determinant is its multidimensional transport, and the statement that it is the WKB amplitude is the content of that article's continuity equation.
+so the semiclassical prefactor is the **WKB amplitude** divided by the central $\sqrt{\frac{2\,m\,c\,\pi\,i}{k_m}}$. This is the amplitude that the companion article *The WKB Approximation and the Hamilton–Jacobi Equation in Biquaternionic Form* writes as the modulus of the wave function; the van Vleck determinant is its multidimensional transport, and the statement that it is the WKB amplitude is the content of that article's continuity equation.
 
-Both factors are central — the phase is central, and the prefactor is a real number over the central $\sqrt{2\pi i\hbar}$ — so the semiclassical kernel is central:
+Both factors are central — the phase is central, and the prefactor is a real number over the central $\sqrt{\frac{2\,m\,c\,\pi\,i}{k_m}}$ — so the semiclassical kernel is central:
 
 $$
 K\;\approx\;\mathcal{K}\,e_t,\qquad \mathcal{K}\in\mathbb{C},
 $$
 
-with no non-central element anywhere, exactly as for the full kernel. Under the Wick rotation of the previous section, $\sqrt{2\pi i\hbar}$ becomes $\sqrt{2\pi\hbar}$ and the prefactor becomes real and positive, while the unit-circle phase becomes the decaying weight.
+with no non-central element anywhere, exactly as for the full kernel. Under the Wick rotation of the previous section, $\sqrt{\frac{2\,m\,c\,\pi\,i}{k_m}}$ becomes $\sqrt{\frac{2\,m\,c\,\pi}{k_m}}$ and the prefactor becomes real and positive, while the unit-circle phase becomes the decaying weight.
 
-**What this adds, and where the gap remains.** The algebra supplies the square root $\sqrt{i}$ inside the centre, so the factor $1/\sqrt{2\pi i\hbar}$ — and with it the $\pm\pi/2$ phases of the Maslov index — is an operation performed on the central element rather than on a quantity whose imaginary unit has to be chosen. It also makes the reality of the prefactor structural. It does **not** supply the determinant: the second variation is the Hessian of an ordinary real action, and the fluctuations are real displacements in the material sector's configuration space. The fluctuation operator is therefore the same kind of external object as the measure, and the assessment of the next section applies to it unchanged.
+**What this adds, and where the gap remains.** The algebra supplies the square root $\sqrt{i}$ inside the centre, so the factor $\frac{1}{\sqrt{2\pi i\hbar}}$ — and with it the $\pm\pi/2$ phases of the Maslov index — is an operation performed on the central element rather than on a quantity whose imaginary unit has to be chosen. It also makes the reality of the prefactor structural. It does **not** supply the determinant: the second variation is the Hessian of an ordinary real action, and the fluctuations are real displacements in the material sector's configuration space. The fluctuation operator is therefore the same kind of external object as the measure, and the assessment of the next section applies to it unchanged.
 
 ## The Canonical Commutation Relations
 
-The sum over paths integrates over trajectories $r_x(r'_t)$ that are ordinary commuting numbers, and the momentum has no place in it: $r_x(r'_t)$ at each time is a separate integration variable, so there is nothing to order and nothing to commute. Yet the operators of the theory do not commute, $[x,p]=i\hbar$, and Feynman's observation is that the non-commutativity is present in the path integral even though the integration variables show no sign of it. The mechanism is the one the short-time kernel supplies, and it is worth exhibiting in the framework's terms.
+The sum over paths integrates over trajectories $r_x(r'_t)$ that are ordinary commuting numbers, and the momentum has no place in it: $r_x(r'_t)$ at each time is a separate integration variable, so there is nothing to order and nothing to commute. Yet the operators of the theory do not commute, $[x,p]=\frac{m\,c\,i}{k_m}$, and Feynman's observation is that the non-commutativity is present in the path integral even though the integration variables show no sign of it. The mechanism is the one the short-time kernel supplies, and it is worth exhibiting in the framework's terms.
 
-**The trajectories are not differentiable.** Over a time step $\varepsilon$ the free short-time kernel has width $\sqrt{\hbar\varepsilon/m}$, so a trajectory moves a distance of order $\sqrt{\varepsilon}$, not $\varepsilon$. The quantity
+**The trajectories are not differentiable.** Over a time step $\varepsilon$ the free short-time kernel has width $\sqrt{\frac{c\,\varepsilon}{k_m}}$, so a trajectory moves a distance of order $\sqrt{\varepsilon}$, not $\varepsilon$. The quantity
 $$
 r_x\,dr_x/dr'_t=\lim_{\varepsilon\to0}r_x(r'_t)\frac{r_x(r'_t)-r_x(r'_t-\varepsilon)}{\varepsilon}
 $$
-is therefore ambiguous: the two orderings of the numerator differ by a term that does not vanish as $\varepsilon\to0$. Writing the discrete two-point function of the free Euclidean particle as $\langle x_jx_k\rangle=(\hbar/m)\min(r'_{t,j},r'_{t,k})$, the two orderings are
+is therefore ambiguous: the two orderings of the numerator differ by a term that does not vanish as $\varepsilon\to0$. Writing the discrete two-point function of the free Euclidean particle as $\langle  x_jx_k\rangle=(\frac{c}{k_m})\min(r'_{t,j},r'_{t,k})$, the two orderings are
 $$
 \frac{1}{\varepsilon}\big\langle x_j(x_{j+1}-x_j)\big\rangle=0,
 \qquad
 \frac{1}{\varepsilon}\big\langle x_j(x_j-x_{j-1})\big\rangle=c/k_m,
 $$
-so the forward and backward derivatives of the two-point function differ by the **contact term** $\hbar/m$. This is the statement that the fluctuation of $r_x\,dr_x/dr'_t$ is a normalised Gaussian process which is $1$ in every expectation value — "equal to 1 as an operator identity" in physics, "weakly convergent to 1" in mathematics — and that its content is the **Itô lemma** of stochastic calculus. Defining the time order to be the operator order converts it to the Euclidean canonical relation, and the extra imaginary unit of the quantum action, $\exp(iS/\hbar)$ in place of the Euclidean weight, converts that to
+so the forward and backward derivatives of the two-point function differ by the **contact term** $\frac{c}{k_m}$. This is the statement that the fluctuation of $r_x\,dr_x/dr'_t$ is a normalised Gaussian process which is $1$ in every expectation value — "equal to 1 as an operator identity" in physics, "weakly convergent to 1" in mathematics — and that its content is the **Itô lemma** of stochastic calculus. Defining the time order to be the operator order converts it to the Euclidean canonical relation, and the extra imaginary unit of the quantum action, $\exp(\frac{k_m\,i\,S}{m\,c})$ in place of the Euclidean weight, converts that to
 $$
-[x,p]=i\hbar .
+[x,p]=\frac{m\,c\,i}{k_m}.
 $$
 
-**The interpretation in the algebra, and the limit of the interpretation.** The commutator's value $i\hbar$ is a **central** element of $\mathbb{B}$, and being purely imaginary and anti-Hermitian it lies in the **material sector** $\mathbb{B}_{\Phi}$, the same sector as the phase exponent $iS/\hbar$ of the preceding sections. So the algebra supplies two facts about the canonical commutator: that its right-hand side is central, and that the centre element it is — $i\hbar=i\hbar\,e_t$ — sits in the material sector rather than the informational one. This is the same location that *The Harmonic Oscillator in Biquaternionic Form* records when it states that the commutation relation is not in $\mathbb{B}_{\Psi}$, and it is consistent with the position and the momentum both being material-sector data: the configuration $x$ is a real vector of $\mathbb{B}_{\Phi}$ and the momentum is the module element conjugate to it.
+**The interpretation in the algebra, and the limit of the interpretation.** The commutator's value $\frac{m\,c\,i}{k_m}$ is a **central** element of $\mathbb{B}$, and being purely imaginary and anti-Hermitian it lies in the **material sector** $\mathbb{B}_{\Phi}$, the same sector as the phase exponent $\frac{k_m\,i\,S}{m\,c}$ of the preceding sections. So the algebra supplies two facts about the canonical commutator: that its right-hand side is central, and that the centre element it is — $\frac{m\,c\,i}{k_m}=\frac{m\,c\,i\,e_{t}}{k_m}$ — sits in the material sector rather than the informational one. This is the same location that *The Harmonic Oscillator in Biquaternionic Form* records when it states that the commutation relation is not in $\mathbb{B}_{\Psi}$, and it is consistent with the position and the momentum both being material-sector data: the configuration $x$ is a real vector of $\mathbb{B}_{\Phi}$ and the momentum is the module element conjugate to it.
 
-What the algebra does **not** supply is the commutator itself or the ordering that produces it. The path integral cannot exhibit $[x,p]=i\hbar$ because ordering is a property of the operator algebra — the algebra of operators on the state module, which the corpus's canonical-quantization articles construct — and not of the commuting measure over trajectories. The contact term is an analytic property of the non-differentiable trajectories; the equality of the time order with the operator order is the assumption that imports the operator algebra into the integral. The two are different objects, and the algebra's contribution is the value and the address of the right-hand side, not the construction of the left. The semiclassical fluctuation determinant of the previous section is the same non-commutativity seen in another place: the width $\sqrt{\hbar\varepsilon/m}$ that makes the trajectories non-differentiable is the width of the Gaussian whose second variation is the determinant.
+What the algebra does **not** supply is the commutator itself or the ordering that produces it. The path integral cannot exhibit $[x,p]=\frac{m\,c\,i}{k_m}$ because ordering is a property of the operator algebra — the algebra of operators on the state module, which the corpus's canonical-quantization articles construct — and not of the commuting measure over trajectories. The contact term is an analytic property of the non-differentiable trajectories; the equality of the time order with the operator order is the assumption that imports the operator algebra into the integral. The two are different objects, and the algebra's contribution is the value and the address of the right-hand side, not the construction of the left. The semiclassical fluctuation determinant of the previous section is the same non-commutativity seen in another place: the width $\sqrt{\frac{c\,\varepsilon}{k_m}}$ that makes the trajectories non-differentiable is the width of the Gaussian whose second variation is the determinant.
 
 ## Curved Space: Operator Ordering and the Measure
 
@@ -290,9 +287,9 @@ Both ambiguities that the flat time slicing conceals appear when the configurati
 
 **The operator-ordering problem.** If the kinetic term carries a position-dependent metric — for a particle on a curved manifold, $\tfrac12 m\sum_{i,j}g_{ij}(r_x)\,dx_i/dr'_t\,dx_j/dr'_t$, or in a general coordinate system — then the Hamiltonian contains a product of the momentum and a function of the position, and the two do not commute. The Schrödinger equation's kinetic operator must be an ordering of $p_i$ and $(g^{-1})_{ij}(x)$, and different orderings are not equivalent: they differ by terms involving the curvature of the configuration space. The smallest of these is the double commutator
 $$
-[p,[p,g]]=-\hbar^2\,\frac{d^2g}{dx^2} ,
+[p,[p,g]]=-\frac{m^{2}\,c^{2}\,d\,g}{k_m^{2}\,x^{2}} ,
 $$
-verified here numerically on $g(x)=1+x^2$ and a test function: with $\hbar=1$, the commutator reproduces $-\hbar^2\frac{d^2g}{dx^2}\tilde{Ξ}_{\mathrm{sp}}$ to six decimal places at $x=-0.7,0,0.4,1.2$. The identity shows that the ordering ambiguity is proportional to the curvature — the second derivative of the coefficient, which for a metric is the Riemann tensor — and cannot be removed by a normalisation of the path integral. The flat case escapes it only because $g$ is constant and the commutator vanishes.
+verified here numerically on $g(x)=1+x^2$ and a test function: with $\hbar=1$, the commutator reproduces $-\frac{m^{2}\,c^{2}\,d\,g}{k_m^{2}\,x^{2}}\tilde{Ξ}_{\mathrm{sp}}$ to six decimal places at $x=-0.7,0,0.4,1.2$. The identity shows that the ordering ambiguity is proportional to the curvature — the second derivative of the coefficient, which for a metric is the Riemann tensor — and cannot be removed by a normalisation of the path integral. The flat case escapes it only because $g$ is constant and the commutator vanishes.
 
 **The measure-theoretic factor.** The second ambiguity is in the measure. For a particle in curved space the functional integral carries, in addition to $\mathcal{D}x$, a factor
 $$
@@ -300,7 +297,7 @@ $$
 $$
 one factor of the square root of the metric determinant per spatial slice. This factor is **needed to restore unitarity** — the naive measure $\mathcal{D}x$ alone gives a non-$*$-unitary evolution once the metric is position-dependent — and it cannot be expressed as a functional multiplying $\mathcal{D}x$, because the two belong to different classes: $\mathcal{D}x$ is a measure on the space of paths, and $\prod_x\sqrt g$ is a measure-theoretic weight attached to each slice, not a function of a single path. For a Riemannian configuration space with $g=\det(g_{ij})$, each slice is multiplied by $\sqrt g$, and the factor is a property of the measure rather than of the action.
 
-**The interpretation in the algebra.** The algebra's contribution to both problems is limited to their ingredients, and the limit is the same measure gap as before. For the ordering problem, the algebra supplies the commutator structure — the same central $i\hbar$ of the previous section, whose double application produces the curvature term $-\hbar^2\frac{d^2g}{dx^2}$ — and the language in which a determinant of an operator is a trace, as *The Functional Determinant in Biquaternionic Form* develops. For the measure factor, $\sqrt g$ is the square root of a determinant, the same $\sqrt{\det}$ that the semiclassical prefactor and the functional determinant both use; but here it is a volume element on an infinite-dimensional configuration space, and that space is outside the algebra. The algebra is finite-dimensional and its own bilinear form gives a determinant on finite-dimensional modules, not a measure on a space of paths. Both the ordering and the measure factor are therefore **external**, of the same class as the measure and the fluctuation operator that the ledger already records: the algebra names the central imaginary under the square root and the sector of the commutator, and it does not supply the curvature, the ordering, or the volume element. The curved-space physics itself — the covariant derivative, the curvature, the coupling of the framework's fields to a background metric — is the subject of *Curved Spacetime and the Biquaternion Framework*, and the Euclidean rotation that makes the curved measure a positive weight is the Wick rotation of the preceding section.
+**The interpretation in the algebra.** The algebra's contribution to both problems is limited to their ingredients, and the limit is the same measure gap as before. For the ordering problem, the algebra supplies the commutator structure — the same central $\frac{m\,c\,i}{k_m}$ of the previous section, whose double application produces the curvature term $-\frac{m^{2}\,c^{2}\,d\,g}{k_m^{2}\,x^{2}}$ — and the language in which a determinant of an operator is a trace, as *The Functional Determinant in Biquaternionic Form* develops. For the measure factor, $\sqrt g$ is the square root of a determinant, the same $\sqrt{\det}$ that the semiclassical prefactor and the functional determinant both use; but here it is a volume element on an infinite-dimensional configuration space, and that space is outside the algebra. The algebra is finite-dimensional and its own bilinear form gives a determinant on finite-dimensional modules, not a measure on a space of paths. Both the ordering and the measure factor are therefore **external**, of the same class as the measure and the fluctuation operator that the ledger already records: the algebra names the central imaginary under the square root and the sector of the commutator, and it does not supply the curvature, the ordering, or the volume element. The curved-space physics itself — the covariant derivative, the curvature, the coupling of the framework's fields to a background metric — is the subject of *Curved Spacetime and the Biquaternion Framework*, and the Euclidean rotation that makes the curved measure a positive weight is the Wick rotation of the preceding section.
 
 ## What the Algebra Adds and What It Does Not
 
@@ -309,18 +306,18 @@ one factor of the square root of the metric determinant per spatial slice. This 
 **What the biquaternion notation provides.**
 
 - A **canonical complex structure**. The phase's $i$ is the central scalar imaginary, fixed by the algebra and not chosen; the phase is therefore a central $*$-unitary element of $\mathbb{B}_{C}$, and the amplitude is a complex number. A quaternionic formulation without a complexifying factor would have to choose a complex structure, as Adler's does.
-- A **location for the phase exponent**. The exponent $iS/\hbar$ lies in the material sector $\mathbb{B}_{\Phi}$, along the same $i c r'_t$ direction as the propagator's $i\epsilon$ and the thermal analyticity strip — the same direction the Wick rotation turns real.
+- A **location for the phase exponent**. The exponent $\frac{k_m\,i\,S}{m\,c}$ lies in the material sector $\mathbb{B}_{\Phi}$, along the same $i c r'_t$ direction as the propagator's $i\epsilon$ and the thermal analyticity strip — the same direction the Wick rotation turns real.
 - A **name for the phase generator**. The generator $ie_t$ is the central element that exchanges the two sectors, $i\,\mathbb{B}_{\Psi}=\mathbb{B}_{\Phi}$.
 - A **bridge**. The Wick rotation is exhibited as the transfer $\mathbb{B}_{\Phi}\to\mathbb{B}_{H}$, which is exactly the operation that converts the oscillatory phase into a decaying weight.
-- A **central square root**. The semiclassical prefactor contains $\sqrt{2\pi i\hbar}$; the square root is taken inside the centre, so the $\pm\tfrac{\pi}{2}$ phases of the Maslov index are operations on the central $i$ rather than on a quantity whose imaginary unit must first be chosen, and the reality of the prefactor after the Wick rotation is structural.
+- A **central square root**. The semiclassical prefactor contains $\sqrt{\frac{2\,m\,c\,\pi\,i}{k_m}}$; the square root is taken inside the centre, so the $\pm\tfrac{\pi}{2}$ phases of the Maslov index are operations on the central $i$ rather than on a quantity whose imaginary unit must first be chosen, and the reality of the prefactor after the Wick rotation is structural.
 
 **What remains open in the framework.**
 
 - **The measure.** The path-integral measure $\mathcal{D}x$ is not supplied by the algebra. The trajectories live in the material sector's configuration space, and the algebra labels points of that sector, but the measure on the space of paths is an analytic construction. The free-kernel normalization is fixed by the composition property, not read off the algebra.
 - **The fluctuation operator.** The determinant of the semiclassical kernel is the Hessian of a real action, $\delta^2S$, and the fluctuations are real displacements in the material sector's configuration space. Like the measure, it is an analytic object external to the algebra: the algebra supplies the central $i$ under its square root, not the determinant itself.
-- **The curvature and the curved-space measure.** For a particle on a curved configuration space the operator ordering and the measure factor $\prod_x\sqrt g$ are both external. The ordering ambiguity is proportional to the curvature — the double commutator is $[p,[p,g]]=-\hbar^2\frac{d^2g}{dx^2}$ — and the $\sqrt g$ factor is a volume element of the same class as $\mathcal{D}x$, needed to restore unitarity. The algebra supplies the central $i\hbar$ and the determinant language, not the curvature or the volume element.
+- **The curvature and the curved-space measure.** For a particle on a curved configuration space the operator ordering and the measure factor $\prod_x\sqrt g$ are both external. The ordering ambiguity is proportional to the curvature — the double commutator is $[p,[p,g]]=-\frac{m^{2}\,c^{2}\,d\,g}{k_m^{2}\,x^{2}}$ — and the $\sqrt g$ factor is a volume element of the same class as $\mathcal{D}x$, needed to restore unitarity. The algebra supplies the central $\frac{m\,c\,i}{k_m}$ and the determinant language, not the curvature or the volume element.
 - **The space of paths.** This is the sharpest gap. The biquaternion algebra is finite-dimensional ($\mathbb{B}\cong M_2(\mathbb{C})$ as a $\mathbb{C}$-algebra), whereas the space of paths is infinite-dimensional. As the harmonic-oscillator article records for the infinite ladder, $\mathbb{B}$ hosts the two-level truncation and does not contain an infinite-dimensional module. The sum over paths is therefore performed on a function space *outside* $\mathbb{B}$; the algebra acts fiberwise on the values of the field and supplies the phase, but it does not contain the integration domain.
-- **A biquaternion-valued action.** If the action were $\mathbb{B}$-valued rather than a real scalar — for instance if a Hermitian Lagrangian density were integrated to an $\mathbb{B}_{\Psi}$-valued action — then the exponent $iS/\hbar$ would lie in $\mathbb{B}_{\Phi}$ without being central, and the phase $\exp(iS/\hbar)$ would be a general $*$-unitary biquaternion rather than a central one. Whether such a theory is admissible in the framework, and what a matrix-valued phase would mean, is not addressed here.
+- **A biquaternion-valued action.** If the action were $\mathbb{B}$-valued rather than a real scalar — for instance if a Hermitian Lagrangian density were integrated to an $\mathbb{B}_{\Psi}$-valued action — then the exponent $\frac{k_m\,i\,S}{m\,c}$ would lie in $\mathbb{B}_{\Phi}$ without being central, and the phase $\exp(\frac{k_m\,i\,S}{m\,c})$ would be a general $*$-unitary biquaternion rather than a central one. Whether such a theory is admissible in the framework, and what a matrix-valued phase would mean, is not addressed here.
 
 ## Open Questions
 
@@ -338,17 +335,17 @@ one factor of the square root of the metric determinant per spatial slice. This 
 
 ## Summary
 
-The path integral $K=\int\mathcal{D}x\,\exp(iS[x]/\hbar)$ is a sum over paths weighted by the phase $\exp(iS/\hbar)$. In the biquaternion framework the symbol $i$ in that phase is the **central scalar imaginary**, the unique central root of $-1$ in $\mathbb{B}$ up to sign; the phase exponent $iS/\hbar$ is a purely imaginary scalar and therefore lies in the **material sector** $\mathbb{B}_{\Phi}$, along the $i c r'_t$ direction; and the phase factor $\exp(iS/\hbar)$ is a **central $*$-unitary** element of $\mathbb{B}_{C}$, satisfying $(\exp(iS/\hbar))(\exp(iS/\hbar))^\dagger=e_t$ but not the unit-norm condition of the Lorentz group, since $\exp(iS/\hbar)\overline{\exp(iS/\hbar)}=\exp(2iS/\hbar)$.
+The path integral $K=\int\mathcal{D}x\,\exp(iS[x]\frac{k_m}{m\,c})$ is a sum over paths weighted by the phase $\exp(\frac{k_m\,i\,S}{m\,c})$. In the biquaternion framework the symbol $i$ in that phase is the **central scalar imaginary**, the unique central root of $-1$ in $\mathbb{B}$ up to sign; the phase exponent $\frac{k_m\,i\,S}{m\,c}$ is a purely imaginary scalar and therefore lies in the **material sector** $\mathbb{B}_{\Phi}$, along the $i c r'_t$ direction; and the phase factor $\exp(\frac{k_m\,i\,S}{m\,c})$ is a **central $*$-unitary** element of $\mathbb{B}_{C}$, satisfying $(\exp(\frac{k_m\,i\,S}{m\,c}))(\exp(\frac{k_m\,i\,S}{m\,c}))^\dagger=e_t$ but not the unit-norm condition of the Lorentz group, since $\exp(\frac{k_m\,i\,S}{m\,c})\overline{\exp(iS/\hbar)}=\exp(\frac{2\,k_m\,i\,S}{m\,c})$.
 
-Centrality has three consequences: the amplitude is a complex scalar times $e_t$; the phase multiplies every spinor component of the state module equally; and the global phase cancels in the density matrix $\tilde{Ϛ}=\tilde{Ξ}_{\mathrm{sp}}\tilde{Ξ}_{\mathrm{sp}}^{\dagger}$, so only relative phases — the differences of actions between paths — are observable. These relative phases produce the standard interference, $|\exp(iS_1/\hbar)+\exp(iS_2/\hbar)|=2|\cos(\Delta S/2\hbar)|$, with nodes at $\Delta S=(2n+1)\pi\hbar$.
+Centrality has three consequences: the amplitude is a complex scalar times $e_t$; the phase multiplies every spinor component of the state module equally; and the global phase cancels in the density matrix $\tilde{Ϛ}=\tilde{Ξ}_{\mathrm{sp}}\tilde{Ξ}_{\mathrm{sp}}^{\dagger}$, so only relative phases — the differences of actions between paths — are observable. These relative phases produce the standard interference, $|\exp(\frac{k_m\,iS_{1}}{m\,c})+\exp(\frac{k_m\,iS_{2}}{m\,c})|=2|\cos(\frac{k_m\,\Delta\,S}{2\,m\,c})|$, with nodes at $\Delta S=\frac{m\,c\,(2n+1)\,\pi}{k_m}$.
 
-A non-central root $J$ fails as the phase's imaginary unit for the same reasons it fails in the Schrödinger equation: the generator $-J\tilde R_\Psi/\hbar$ need not be anti-Hermitian (for $J=\vec e_z$, $\tilde R_\Psi=i\vec e_x$ one has $J\tilde R_\Psi=i\vec e_y$, Hermitian), and even a fixed $*$-unitary $J$ gives the two spin components opposite phases, $\exp(\vec e_z\theta)\mapsto\operatorname{diag}(\exp(-i\theta),\exp(+i\theta))$, so it is a spin rotation rather than a global phase. A fixed non-central root still interferes, but it requires choosing a preferred spin axis, which the algebra does not supply.
+A non-central root $J$ fails as the phase's imaginary unit for the same reasons it fails in the Schrödinger equation: the generator $-\frac{k_m\,J\,\tilde{R}_{\Psi}}{m\,c}$ need not be anti-Hermitian (for $J=\vec e_z$, $\tilde R_\Psi=i\vec e_x$ one has $J\tilde R_\Psi=i\vec e_y$, Hermitian), and even a fixed $*$-unitary $J$ gives the two spin components opposite phases, $\exp(\vec e_z\theta)\mapsto\operatorname{diag}(\exp(-i\theta),\exp(+i\theta))$, so it is a spin rotation rather than a global phase. A fixed non-central root still interferes, but it requires choosing a preferred spin axis, which the algebra does not supply.
 
-The free kernel $K_0=(m/2\pi i\hbar T)^{1/2}\exp(im\Delta x^2/2\hbar T)$ is central, its phase the classical action over $\hbar$ and its prefactor a function of the central $i$; its composition law was verified to machine precision. The Wick rotation $r'_t\mapsto-i\tau$ gives $S=iS_E$ and hence $\exp(iS/\hbar)=\exp(-S_E/\hbar)$; in the interpretation of the companion article this is the identification $\mathbb{B}_{\Phi}\to\mathbb{B}_{H}$, which turns the unit circle of central phases into the positive real axis of decaying weights. The algebra thus supplies the phase, its sector, and the bridge to the Euclidean form; it does not supply the measure, the action, or the space of paths — the last being a gap it cannot close, because $\mathbb{B}$ is finite-dimensional.
+The free kernel $K_0=(\frac{k_m}{2\,c\,\pi\,i\,T})^{1/2}\exp(\frac{k_m\,i\,\Delta\,x^{2}}{2\,c\,T})$ is central, its phase the classical action over $\frac{m\,c}{k_m}$ and its prefactor a function of the central $i$; its composition law was verified to machine precision. The Wick rotation $r'_t\mapsto-i\tau$ gives $S=iS_E$ and hence $\exp(\frac{k_m\,i\,S}{m\,c})=\exp(-\frac{k_m\,S_{E}}{m\,c})$; in the interpretation of the companion article this is the identification $\mathbb{B}_{\Phi}\to\mathbb{B}_{H}$, which turns the unit circle of central phases into the positive real axis of decaying weights. The algebra thus supplies the phase, its sector, and the bridge to the Euclidean form; it does not supply the measure, the action, or the space of paths — the last being a gap it cannot close, because $\mathbb{B}$ is finite-dimensional.
 
-The classical limit by stationary phase is the van Vleck kernel, $K\approx(2\pi i\hbar)^{-1/2}\big|\det\partial^2S_{\mathrm{cl}}/\partial x_i\partial x_f\big|^{1/2}\exp(iS_{\mathrm{cl}}/\hbar)$. Its phase is the same central $*$-unitary element as before, and its prefactor is the WKB amplitude $A_{\mathrm{wkb}}=\sqrt{|\det\delta^2S|}$ divided by the central $\sqrt{2\pi i\hbar}$, so the semiclassical kernel is central as well. For the free particle it is the exact kernel, with the composition law and the prefactor verified to $8.3\times10^{-17}$ and $2.8\times10^{-17}$ respectively. The algebra supplies the square root of the central $i$ — and with it the Maslov phases — and makes the reality of the prefactor after the Wick rotation structural; the determinant, being the Hessian of an ordinary real action, is not supplied.
+The classical limit by stationary phase is the van Vleck kernel, $K\approx(\frac{2\,m\,c\,\pi\,i}{k_m})^{-1/2}\big|\det\partial^2 S_{\mathrm{cl}}/\partial x_i\partial x_f\big|^{1/2}\exp(\frac{k_m\,iS_{\mathrm{cl}}}{m\,c})$. Its phase is the same central $*$-unitary element as before, and its prefactor is the WKB amplitude $A_{\mathrm{wkb}}=\sqrt{|\det\delta^2S|}$ divided by the central $\sqrt{\frac{2\,m\,c\,\pi\,i}{k_m}}$, so the semiclassical kernel is central as well. For the free particle it is the exact kernel, with the composition law and the prefactor verified to $8.3\times10^{-17}$ and $2.8\times10^{-17}$ respectively. The algebra supplies the square root of the central $i$ — and with it the Maslov phases — and makes the reality of the prefactor after the Wick rotation structural; the determinant, being the Hessian of an ordinary real action, is not supplied.
 
-The canonical commutator is not visible in the commuting sum over paths, but its right-hand side is: the free trajectory is not differentiable, the forward and backward derivatives of its two-point function differ by the contact term $\hbar/m$ (checked to be exactly $1$ with $\hbar=m=1$, independent of the step), and the time order becomes the operator order, giving $[x,p]=i\hbar$. The algebra supplies $i\hbar$ as a **central** element of the **material sector** $\mathbb{B}_{\Phi}$ — the same sector as the phase exponent — and not the ordering, which belongs to the operator algebra on the state module. In curved space two further external objects appear: the **operator ordering**, whose ambiguity is the curvature, $[p,[p,g]]=-\hbar^2\frac{d^2g}{dx^2}$ (checked numerically), and the **measure factor** $\prod_x\sqrt g$, one volume element per slice, needed to restore unitarity and of the same class as $\mathcal{D}x$. The algebra supplies the central $i\hbar$ and the determinant language; it supplies neither the curvature, the ordering, nor the volume element.
+The canonical commutator is not visible in the commuting sum over paths, but its right-hand side is: the free trajectory is not differentiable, the forward and backward derivatives of its two-point function differ by the contact term $\frac{c}{k_m}$ (checked to be exactly $1$ with $\frac{m\,c}{k_m}=m=1$, independent of the step), and the time order becomes the operator order, giving $[x,p]=\frac{m\,c\,i}{k_m}$. The algebra supplies $\frac{m\,c\,i}{k_m}$ as a **central** element of the **material sector** $\mathbb{B}_{\Phi}$ — the same sector as the phase exponent — and not the ordering, which belongs to the operator algebra on the state module. In curved space two further external objects appear: the **operator ordering**, whose ambiguity is the curvature, $[p,[p,g]]=-\frac{m^{2}\,c^{2}\,d\,g}{k_m^{2}\,x^{2}}$ (checked numerically), and the **measure factor** $\prod_x\sqrt g$, one volume element per slice, needed to restore unitarity and of the same class as $\mathcal{D}x$. The algebra supplies the central $\frac{m\,c\,i}{k_m}$ and the determinant language; it supplies neither the curvature, the ordering, nor the volume element.
 
 ## Summary of Notation
 
@@ -358,28 +355,28 @@ The canonical commutator is not visible in the commuting sum over paths, but its
 | $e_t=1,\vec e_x,\vec e_y,\vec e_z$ | Quaternion basis, $\vec e_\mu^2=-e_t$ |
 | $i$ | Scalar imaginary, central, $i^2=-e_t$ |
 | $\mathbb{B}_{C}=\operatorname{span}_\mathbb{R}\{e_t,ie_t\}$ | Centre of $\mathbb{B}$; home of the path-integral phase |
-| $\mathbb{B}_{\Phi}$ | Anti-Hermitian (material) sector; home of the phase exponent $iS/\hbar$ |
+| $\mathbb{B}_{\Phi}$ | Anti-Hermitian (material) sector; home of the phase exponent $\frac{k_m\,i\,S}{m\,c}$ |
 | $\mathbb{B}_{\Psi}$ | Hermitian (informational) sector; home of the state $\tilde{Ϛ}=\tilde{Ξ}_{\mathrm{sp}}\tilde{Ξ}_{\mathrm{sp}}^{\dagger}$ |
 | $\mathbb{B}_{H}$ | Quaternion subspace; image of the Wick rotation |
 | $K(x_f,r'_{t,f};x_i,r'_{t,i})$ | Transition amplitude (propagator), central: $K=\mathcal{K}e_t$ |
 | $S[r_x]=\int \mathrm{Lag}\,dr'_t$ | Action; real scalar |
-| $\exp(iS/\hbar)$ | Path phase; central $*$-unitary element of $\mathbb{B}_{C}$ |
+| $\exp(\frac{k_m\,i\,S}{m\,c})$ | Path phase; central $*$-unitary element of $\mathbb{B}_{C}$ |
 | $ie_t$ | Generator of the phase; exchanges the sectors, $i\,\mathbb{B}_{\Psi}=\mathbb{B}_{\Phi}$ |
-| $K_\varepsilon(x_{\mathrm f},x)$ | Single-step kernel; phase $=\frac{i}{\hbar}\big(\frac{m(x_{\mathrm f}-x)^2}{2\varepsilon}-\varepsilon V\big)$ |
-| $K_0$ | Free kernel; $K_0=\mathcal{K}_0e_t$, $\lvert\mathcal{K}_0\rvert^2=m/2\pi\hbar T$ |
+| $K_\varepsilon(x_{\mathrm f},x)$ | Single-step kernel; phase $=\frac{k_m\,i}{m\,c}\big(\frac{m(x_{\mathrm f}-x)^2}{2\varepsilon}-\varepsilon V\big)$ |
+| $K_0$ | Free kernel; $K_0=\mathcal{K}_0e_t$, $\lvert\mathcal{K}_0\rvert^2=\frac{k_m}{2\,c\,\pi\,T}$ |
 | $S_{\mathrm{cl}}$ | Classical action; stationary point of $S[x]$; phase of the free kernel |
 | $\delta^2S$ | Second variation (Hessian) of the action about $x_{\mathrm{cl}}$ |
 | $\sqrt{\lvert\det\partial^2S_{\mathrm{cl}}/\partial x_i\partial x_f\rvert}$ | Van Vleck determinant; equals the WKB amplitude $A_{\mathrm{wkb}}$ |
 | $\exp(-i\pi\nu/2)$ | Maslov phase; $\nu$ the number of conjugate points (caustics) |
-| $\langle x_jx_k\rangle=(\hbar/m)\min(r'_{t,j},r'_{t,k})$ | Free Euclidean two-point function; contact term $\hbar/m$ |
-| $[x,p]=i\hbar$ | Canonical commutator; the value $i\hbar$ is central and in $\mathbb{B}_{\Phi}$ |
-| $[p,[p,g]]=-\hbar^2\frac{d^2g}{dx^2}$ | Operator-ordering ambiguity; proportional to the curvature |
+| $\langle  x_jx_k\rangle=(\frac{c}{k_m})\min(r'_{t,j},r'_{t,k})$ | Free Euclidean two-point function; contact term $\frac{c}{k_m}$ |
+| $[x,p]=\frac{m\,c\,i}{k_m}$ | Canonical commutator; the value $\frac{m\,c\,i}{k_m}$ is central and in $\mathbb{B}_{\Phi}$ |
+| $[p,[p,g]]=-\frac{m^{2}\,c^{2}\,d\,g}{k_m^{2}\,x^{2}}$ | Operator-ordering ambiguity; proportional to the curvature |
 | $\prod_x\sqrt{g(x)}$ | Curved-space measure factor; one volume element per slice |
 | $\tilde{Ϛ}=\tilde{Ξ}_{\mathrm{sp}}\tilde{Ξ}_{\mathrm{sp}}^{\dagger}/\mathrm{Tr}(\tilde{Ξ}_{\mathrm{sp}}^{\dagger}\tilde{Ξ}_{\mathrm{sp}})$ | State from a spinor; global phase cancels |
 | $\operatorname{Tr}(\tilde\Pi\tilde R_\Psi^{*})=\operatorname{Tr}(\tilde\Pi\tilde R_\Psi)=2\,\mathrm{Sc}(\tilde\Pi\tilde R_\Psi^{*}) = 2\langle\tilde\Pi,\tilde R_\Psi\rangle_{*}$ | Trace reading at normalisation (Born rule) |
 | $r'_t\mapsto-i\tau$ | Wick rotation |
 | $S=iS_E$ | Action under the Wick rotation |
-| $\exp(iS/\hbar)=\exp(-S_E/\hbar)$ | Oscillatory phase becomes decaying weight |
+| $\exp(\frac{k_m\,i\,S}{m\,c})=\exp(-\frac{k_m\,S_{E}}{m\,c})$ | Oscillatory phase becomes decaying weight |
 | $\mathbb{B}_{\Phi}\to\mathbb{B}_{H}$ | Wick rotation as identification of subspaces |
 | $\langle\tilde{Q}_1,\tilde{Q}_2\rangle$ | the general plain bilinear form, the scalar part of the general plain bilinear product, $\mathrm{Sc}(\tilde{Q}_1\tilde{Q}_2)$ |
 | $\langle\tilde{Q}_1,\tilde{Q}_2\rangle_{*}$ | the general plain sesquilinear form, $\mathrm{Sc}(\tilde{Q}_1\tilde{Q}_2^{*})$; on the diagonal $\langle\tilde{Q}_2,\tilde{Q}_2\rangle_{*}=\sum_\mu\lvert Q_{2\mu}\rvert^{2}$ |

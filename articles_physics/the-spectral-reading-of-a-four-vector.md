@@ -35,7 +35,7 @@ $$
 and it is the pair of light-cone frequencies of the momentum. Off the shell one of the two can be negative. For $m>0$ the rapidity $\theta_{\mathrm{rpd}}$ of the momentum is fixed by
 
 $$
-\cosh\theta_{\mathrm{rpd}}=\frac{E}{mc},
+\cosh\theta_{\mathrm{rpd}}=\frac{E}{mc^{2}},
 \qquad
 \sinh\theta_{\mathrm{rpd}}=\frac{\lvert\vec p\rvert}{mc},
 \qquad
@@ -243,7 +243,7 @@ and the two objects play different roles. The eigenvalues are the coefficients; 
 
 The algebra gives the frequencies, not a particle count. The two terms are null components of one element, not two particles, and the sum of the coefficients is twice the energy.
 
-The mass is read from the product, not from either eigenvalue. No numerical mass is derived; the mass is the input that fixes the rapidity through $\cosh\theta_{\mathrm{rpd}}=E/(mc)$.
+The mass is read from the product, not from either eigenvalue. No numerical mass is derived; the mass is the input that fixes the rapidity through $\cosh\theta_{\mathrm{rpd}}=E/(mc^{2})$.
 
 The pair is frame-dependent. Only the product is invariant, and a statement about one member of the pair is a statement about a frame.
 
@@ -275,7 +275,7 @@ No dynamics is supplied. The article reads one element at one instant; it does n
 | $E$, $\vec p$, $m$ | energy, spatial momentum and mass |
 | $B=\lvert\vec p\rvert$ | the modulus of the spatial momentum |
 | $\vec u_p=\vec p/B$ | the direction of motion, a real unit vector |
-| $\theta_{\mathrm{rpd}}$ | the rapidity of the momentum, $\cosh\theta_{\mathrm{rpd}}=E/(mc)$ |
+| $\theta_{\mathrm{rpd}}$ | the rapidity of the momentum, $\cosh\theta_{\mathrm{rpd}}=E/(mc^{2})$ |
 | $\lambda_\pm=Q_t\pm iB$ | the eigenvalues, $Q_t=iE/c$ |
 | $\nu_\pm=\lambda_\pm/i=mc\,e^{\pm\theta_{\mathrm{rpd}}}$ | the Doppler pair |
 | $\vec{Ζ}=-i\vec u_p$ | the pure root of $+1$ of the momentum |

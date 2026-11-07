@@ -16,7 +16,7 @@ The results are as follows. The state space of spin $1$ is the face of the two-q
 
 The article is organised as follows. The next section fixes the qubit result as the reference point. The spin-$1$ operators are then constructed in the framework, both by the adjoint action and by the symmetric combination of two fundamental factors, and the sector in which the states live is identified. The Bloch coordinates are introduced, together with the two invariants that determine the spectrum, and the state space is characterised by the unit ball and the cubic inequality. The inscribed ball of radius $\tfrac{1}{2}$ is then proved to be sharp, the pure states and the coherent states are described, and the two three-balls are compared. A closing section states what the algebra supplies and what it does not.
 
-Throughout, $\hbar=1$ in the geometric formulae, so that the spin-$1$ matrices have eigenvalues $+1,0,-1$; restoring $\hbar$ multiplies every matrix element by $\hbar$.
+Throughout, $\hbar=1$ in the geometric formulae, so that the spin-$1$ matrices have eigenvalues $+1,0,-1$; restoring $\frac{m\,c}{k_m}$ multiplies every matrix element by $\frac{m\,c}{k_m}$.
 
 ## The Qubit Bloch Ball as the Reference Point
 
@@ -49,21 +49,21 @@ For spin $1$ the first fails because there is no relevant four-dimensional cone,
 The spin-$1$ operators are constructed in the companion problem of the Wigner–Eckart theorem, by the adjoint action. On the traceless part $W=\operatorname{span}_\mathbb{C}\{i\vec e_x,i\vec e_y,i\vec e_z\}$ of $\mathbb{B}$,
 
 $$
-\mathrm{ad}_{\tilde S_k}(ie_l)=[\tilde S_k,ie_l]=i\hbar\,\epsilon_{klm}\,(ie_m),
+\mathrm{ad}_{\tilde S_k}(ie_l)=[\tilde S_k,ie_l]=\frac{m\,c\,i\,\epsilon_{klm}\,ie_{m}}{k_m},
 $$
 
 so that $\tilde S_{\mathrm{adj},k}=\mathrm{ad}_{\tilde S_k}$ is an angular momentum in the three-dimensional representation. In the matrix realisation, with $\mathsf{M}_2(e_t)=I_2$ and $\mathsf{M}_2(\vec e_k)=-i\sigma_k$, this is a triple of $3\times3$ matrices acting on $W$ and satisfying
 
 $$
-[F_i,F_j]=i\hbar\,\epsilon_{ijk}F_k,\qquad F_1^2+F_2^2+F_3^2=2\hbar^2 I_3 ,
+[F_i,F_j]=\frac{m\,c\,i\,\epsilon_{ijk}\,F_{k}}{k_m},\qquad  F_1^2+F_2^2+F_3^2=\frac{2\,m^{2}\,c^{2}\,I_{3}}{k_m^{2}},
 $$
 
-with eigenvalues of each $F_k$ equal to $\hbar$ times $\{+1,0,-1\}$.
+with eigenvalues of each $F_k$ equal to $\frac{m\,c}{k_m}$ times $\{+1,0,-1\}$.
 
 A second and equivalent construction uses two fundamental factors,
 
 $$
-\tilde F_k=\tilde S_k^{(1)}+\tilde S_k^{(2)}=\tfrac{\hbar}{2}\left(i\vec e_k\otimes e_t+e_t\otimes i\vec e_k\right),
+\tilde F_k=\tilde S_k^{(1)}+\tilde S_k^{(2)}=\frac{m\,c}{2\,k_m}\left(i\vec e_k\otimes e_t+e_t\otimes i\vec e_k\right),
 $$
 
 which is the total spin operator of the two-spin problem. On the three-dimensional symmetric subspace — the range of $\tilde\Pi_{\mathrm{sym}}=\tfrac14(3e_t\otimes e_t-\sum_k\vec e_k\otimes \vec e_k)$ — it acts irreducibly as the spin-$1$ operators above, and on the one-dimensional antisymmetric subspace it acts as zero. The two constructions agree; the first exhibits the spin-$1$ operators as the algebra's own inner derivations, the second as a composite of two fundamental systems.
@@ -274,7 +274,7 @@ The generalized Bloch ball for spin $1$ is the largest ball of states inside the
 
 The article established the following.
 
-- **Spin-one operators.** The adjoint action on the traceless part of $\mathbb{B}$, $\mathrm{ad}_{\tilde S_k}(ie_l)=i\hbar\epsilon_{klm}(ie_m)$, and the symmetric combination $\tilde F_k=\tilde S_k^{(1)}+\tilde S_k^{(2)}$ of two fundamental factors give the same spin-$1$ operators, with $[F_i,F_j]=i\hbar\epsilon_{ijk}F_k$ and $\sum_kF_k^2=2\hbar^2I_3$.
+- **Spin-one operators.** The adjoint action on the traceless part of $\mathbb{B}$, $\mathrm{ad}_{\tilde S_k}(ie_l)=\frac{m\,c\,i\,\epsilon_{klm}\,ie_{m}}{k_m}$, and the symmetric combination $\tilde F_k=\tilde S_k^{(1)}+\tilde S_k^{(2)}$ of two fundamental factors give the same spin-$1$ operators, with $[F_i,F_j]=\frac{m\,c\,i\,\epsilon_{ijk}\,F_{k}}{k_m}$ and $\sum_k F_k^2=\frac{2\,m^{2}\,c^{2}\,I_{3}}{k_m^{2}}$.
 - **The state space.** Spin-$1$ states are the positive unit-trace elements of the symmetric sector; in the two-qubit language they are the states whose support lies in the symmetric subspace, $\tilde\Pi_{\mathrm{asym}}\tilde{Ϛ}\tilde\Pi_{\mathrm{asym}}=0$, that is, the face of the two-qubit state space orthogonal to the antisymmetric idempotent.
 - **Bloch coordinates.** $\rho=\tfrac13 I_3+\tfrac{1}{\sqrt3}b_a\lambda_a$ with a real eight-vector $\vec b$ normalised so that the pure states have $|\vec b|=1$; the spectrum is determined by $\mathrm{Tr}(\rho^2)=\tfrac13(1+2|\vec b|^2)$ and $\det\rho$ through the characteristic cubic.
 - **The positivity condition.** $\rho$ is a state if and only if $|\vec b|\le1$ and $\det\rho\ge0$; the unit ball is necessary, the cubic inequality is what cuts it down, and positivity is no longer a single quadratic condition.
@@ -293,7 +293,7 @@ The article established the following.
 | $\langle\tilde R_\Psi\rangle_{\natural}=c^2 r_t^2-\lvert\vec r_\Psi\rvert^2$ | Biquaternion norm, signature $(1,3)$ |
 | $\tilde{Ϛ}=\tfrac12(e_t+i\vec r)$ | Qubit state, Bloch ball $\lvert\vec r\rvert\le1$ |
 | $\tilde\Pi_{\mathrm{sym}},\tilde\Pi_{\mathrm{asym}}$ | Triplet and singlet idempotents of $\mathbb{B}\otimes\mathbb{B}$ |
-| $F_k$ | Spin-$1$ operators, $[F_i,F_j]=i\hbar\epsilon_{ijk}F_k$ |
+| $F_k$ | Spin-$1$ operators, $[F_i,F_j]=\frac{m\,c\,i\,\epsilon_{ijk}\,F_{k}}{k_m}$ |
 | $\mathrm{ad}_{\tilde S_k}$ | Adjoint action on the traceless part $W$ |
 | $\lambda_a$, $a=1,\dots,8$ | Gell-Mann basis, $\mathrm{Tr}(\lambda_a\lambda_b)=2\delta_{ab}$ |
 | $\rho=\tfrac13I+\tfrac{1}{\sqrt3}b_a\lambda_a$ | Qutrit state, generalized Bloch vector $\vec b$ |

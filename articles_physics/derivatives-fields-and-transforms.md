@@ -165,7 +165,7 @@ $$
 \frac{\omega^2}{c^2}-\lvert\vec k\rvert^2,
 $$
 
-with the constant and the sign fixed by the transform convention. It vanishes on the light cone $\omega^2=c^2\lvert\vec k\rvert^2$, so the transform of a solution of $\Box\tilde F=0$ is supported on the cone. Its level sets are the mass shells: the zero level is the massless shell, and the level $(mc/\hbar)^{2}$ is the shell of mass $m$. Here $\hbar/(mc)$ is the mass length.
+with the constant and the sign fixed by the transform convention. It vanishes on the light cone $\omega^2=c^2\lvert\vec k\rvert^2$, so the transform of a solution of $\Box\tilde F=0$ is supported on the cone. Its level sets are the mass shells: the zero level is the massless shell, and the level $(k_m)^{2}$ is the shell of mass $m$. Here $\hbar/(mc)$ is the mass length.
 
 ### The Discrete Case
 
@@ -208,7 +208,7 @@ and is positive definite exactly for the **degenerate** roots $\pm i$ and $\pm\v
 
 - **The root is the clock.** The three root families give three transforms: the central root gives ordinary complex time–frequency analysis, a real pure-unit root gives the quaternion Fourier transform, and a non-trivial root gives the genuinely biquaternionic transform. For a general biquaternion signal the transform factorizes into four complex transforms. The root chooses which imaginary direction is the frequency axis, that is, which clock the analysis uses. Boundary: the algebra prefers no root; the central root is distinguished only by being central, and it is the framework's clock.
 
-- **Frequency is the rate of the clock.** With the central root the kernel is the one-parameter group $\exp(-2\pi i\omega r'_t)e_t$, and the angle is $2\pi\omega r'_t$ up to the sign of the exponent. The frequency is the rate of that group, and the spectrum is the group read parameter by parameter. Boundary: the interpretation supplies no $\hbar$ and no physical frequency until a time unit is chosen; it is a clock interpretation, not a measurement.
+- **Frequency is the rate of the clock.** With the central root the kernel is the one-parameter group $\exp(-2\pi i\omega r'_t)e_t$, and the angle is $2\pi\omega r'_t$ up to the sign of the exponent. The frequency is the rate of that group, and the spectrum is the group read parameter by parameter. Boundary: the interpretation supplies no $\frac{m\,c}{k_m}$ and no physical frequency until a time unit is chosen; it is a clock interpretation, not a measurement.
 
 - **The conjugate axis is an imaginary direction.** The variable conjugate to a material coordinate enters the kernel through a root of $-1$ and not through a real number: the derivative is mapped to the root times a real frequency, so the momentum operator is a root of $-1$ times a real frequency. An imaginary direction is a conjugate direction, not a direction of propagation; on the informational hypothesis it is informational rather than spatial. Boundary: the imaginary directions are not extra spatial dimensions; the informational sector is not the Fourier dual of the material one.
 

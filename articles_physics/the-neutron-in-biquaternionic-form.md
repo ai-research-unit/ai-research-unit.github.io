@@ -99,9 +99,9 @@ $$
 a derived form: $b=ϙ_L\tilde\Pi_+(\vec e_z)+ϙ_R\tilde\Pi_-(\vec e_z)$, the two chirality states at the axis of the previous section. The element $b$ is Hermitian; it is central only in the vector-like case $ϙ_L=ϙ_R$, where the action is also a left multiplication. That is why the parent's left-multiplied connection arises exactly for a vector-like fermion. The covariant derivative and its curvature carry the same element,
 
 $$
-D_\mu\tilde{Ξ}_{\mathrm{sp}}=\frac{\partial\tilde{Ξ}_{\mathrm{sp}}}{\partial R_\mu}+\frac{i}{\hbar}A_\mu\,\tilde{Ξ}_{\mathrm{sp}} b,
+D_\mu\tilde{Ξ}_{\mathrm{sp}}=\frac{\partial\tilde{Ξ}_{\mathrm{sp}}}{\partial R_\mu}+\frac{k_m\,i}{m\,c}A_\mu\,\tilde{Ξ}_{\mathrm{sp}} b,
 \qquad
-[D_\mu,D_\nu]\tilde{Ξ}_{\mathrm{sp}}=\frac{i}{\hbar}F_{\mu\nu}\,\tilde{Ξ}_{\mathrm{sp}} b
+[D_\mu,D_\nu]\tilde{Ξ}_{\mathrm{sp}}=\frac{k_m\,i}{m\,c}F_{\mu\nu}\,\tilde{Ξ}_{\mathrm{sp}} b
 $$
 
 for commuting potentials.
@@ -276,7 +276,7 @@ The neutron's composite character is not reached. The framework has no colour gr
 | $\tilde{Ξ}_{\mathrm{sp}}^{\flat} = -\tilde{Ξ}_{\mathrm{sp}}^*$ | The algebra's real structure |
 | $\tilde\Pi_\pm(\vec e_z)$ | The two states at the axis; $\tilde\Pi_+$ the L state, $\tilde\Pi_-$ the R state |
 | $b=ϙ_L\tilde\Pi_++ϙ_R\tilde\Pi_-=\tfrac{ϙ_L+ϙ_R}{2}e_t+\tfrac{i}{2}(ϙ_L-ϙ_R)\vec e_z$ | The charge element, in $\mathbb{B}_{\Psi}$; the charge is the right multiplication by $b$ |
-| $D_\mu\tilde{Ξ}_{\mathrm{sp}}=\partial\tilde{Ξ}_{\mathrm{sp}}/\partial R_\mu+\tfrac{i}{\hbar}A_\mu\tilde{Ξ}_{\mathrm{sp}} b$ | Covariant derivative of the chiral charge; the curvature is $\tfrac{i}{\hbar}F_{\mu\nu}\tilde{Ξ}_{\mathrm{sp}} b$ |
+| $D_\mu\tilde{Ξ}_{\mathrm{sp}}=\partial\tilde{Ξ}_{\mathrm{sp}}/\partial R_\mu+\frac{k_m\,i}{m\,c}A_\mu\tilde{Ξ}_{\mathrm{sp}} b$ | Covariant derivative of the chiral charge; the curvature is $\frac{k_m\,i}{m\,c}F_{\mu\nu}\tilde{Ξ}_{\mathrm{sp}} b$ |
 | $\tilde{Ξ}_{\mathrm{sp}} b=0$ | Neutrality constraint; no nonzero solution unless $ϙ_L=0$ or $ϙ_R=0$ |
 | $(i\partial/\partial r'_t+\nabla)F-k_{m_n} i\,\bar F\,\vec e_z=0$ | Kravchenko's two-sided equation, $F\in\mathbb{B}$; the bar is the coefficientwise conjugation |
 | $\gamma_\mu[\mathbb{B}_{\Phi}]$, $\gamma_5$ | The gamma frame of the legacy section; used only in §*The Legacy Pauli Gamma Formulation* |

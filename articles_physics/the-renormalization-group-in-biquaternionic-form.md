@@ -56,7 +56,7 @@ $$
 \langle\tilde{P}\rangle_{\natural} = \tilde{P}\tilde{P}^{\natural} = (iE/c)^2 + \vec p^2 = -E^2 + \vec p^2 = -p^2 .
 $$
 
-This is the object on which the mass shell is the single condition $\tilde{P}\tilde{P}^{\natural} = -\hbar^2k_m^2$, as the propagator article records. It has a property that matters here and is verified in the companion: for a general biquaternion $\tilde{Q} = k_0e_t + k_1\vec e_x + k_2\vec e_y + k_3\vec e_z$ with complex coefficients, the product $\tilde{Q}\tilde{Q}^{\natural} = k_0^2 + k_1^2 + k_2^2 + k_3^2$ is a **complex scalar times $e_t$** — it has no vector part — and therefore lies in the centre and commutes with every element of $\mathbb{B}$. The biquaternion norm is central.
+This is the object on which the mass shell is the single condition $\tilde{P}\tilde{P}^{\natural} = -m^{2}\,c^{2}$, as the propagator article records. It has a property that matters here and is verified in the companion: for a general biquaternion $\tilde{Q} = k_0e_t + k_1\vec e_x + k_2\vec e_y + k_3\vec e_z$ with complex coefficients, the product $\tilde{Q}\tilde{Q}^{\natural} = k_0^2 + k_1^2 + k_2^2 + k_3^2$ is a **complex scalar times $e_t$** — it has no vector part — and therefore lies in the centre and commutes with every element of $\mathbb{B}$. The biquaternion norm is central.
 
 **The standard route: the Wick rotation, quoted.** Under the Wick rotation $E \to i k_{\mathrm{eu},0}$ (equivalently the identification $\mathbb{B}_{\Phi} \to \mathbb{B}_{H}$ of the companion article), the biquaternion norm becomes
 

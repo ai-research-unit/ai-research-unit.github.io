@@ -36,7 +36,7 @@ $$
 \tilde{\nabla}\tilde Q_2 = m\tilde Q_1,
 $$
 
-where $\tilde Q_1$ and $\tilde Q_2$ are two biquaternion fields and $m=mc/\hbar$ is the mass in inverse-length units. The equation is Maxwell's with the source replaced by the other field, and this is what "feedback" means: the two fields source each other. Following Lanczos, that self-sourcing is the algebraic mark of a **massive** particle, as against the massless photon, whose field is its own source-free equation.
+where $\tilde Q_1$ and $\tilde Q_2$ are two biquaternion fields and $m=k_m$ is the mass in inverse-length units. The equation is Maxwell's with the source replaced by the other field, and this is what "feedback" means: the two fields source each other. Following Lanczos, that self-sourcing is the algebraic mark of a **massive** particle, as against the massless photon, whose field is its own source-free equation.
 
 The system is invariant under $\tilde Q_1\to\tilde Q_1G$, $\tilde Q_2\to\tilde Q_2G$ for a $*$-unitary biquaternion $G$, and its superposition $D=\tilde Q_1\sigma+\tilde Q_2^{*}\bar{\sigma}$, with $\sigma$ an idempotent of the algebra, is **strictly equivalent to Dirac's equation**. That equivalence, the spin axis it makes explicit, and the isospin reading of the doubled solution count are recorded in the standard-model agenda article and are not repeated here. What matters for the present article is one structural fact: **the mass enters as a single scalar parameter $m$ multiplying the other field**, and the two fields obey the same second-order equation, obtained by applying the conjugate gradient,
 
@@ -233,7 +233,7 @@ The empirical side is kept separate: **Barut's** formula $M(N)=M_e\bigl(1+\tfrac
 | $\tilde{\nabla},\ \tilde{\nabla}^{\natural}$ | Biquaternionic gradient and its quaternion conjugate |
 | $\Box=\tilde{\nabla}\tilde{\nabla}^{\natural}=\tilde{\nabla}^{\natural}\tilde{\nabla}$ | d'Alembertian, $\partial^2/\partial R_t^2+\Delta$ (series convention) |
 | $\tilde Q_1,\ \tilde Q_2$ | Lanczos spin-$\frac{1}{2}$ fields |
-| $m=mc/\hbar$ | Scalar mass parameter, inverse-length units |
+| $m=k_m$ | Scalar mass parameter, inverse-length units |
 | $\tilde{E}$ | Einstein–Mayer mass biquaternion |
 | $\tilde Q_3$ | Petiau spin-0 field, closing the system |
 | $\langle\tilde{Q}\rangle_{\natural} = \langle\tilde{Q},\tilde{Q}\rangle_{\natural}=\tilde{Q}\tilde{Q}^{\natural}=\sum_\mu Q_\mu^2$ | Biquaternion norm; $N=0$ defines the singular elements |

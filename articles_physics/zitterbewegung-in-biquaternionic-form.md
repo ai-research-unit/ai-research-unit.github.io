@@ -2,7 +2,7 @@
 
 ## Introduction
 
-The **Zitterbewegung** — the "trembling motion" — is the oscillatory part of the position of a Dirac particle. It was found by Schrödinger in 1930, in the course of solving the free Dirac equation. In the single-particle theory the velocity operator has eigenvalues $\pm c$, so a Dirac particle cannot have a sharp velocity; a wave packet assembled from positive- and negative-frequency plane waves has a mean position whose expectation value carries a rapid oscillation. Its angular frequency is $2c\,k_E$, which equals $2c\,k_m$ for a particle at rest, and its amplitude is of the order of half the reduced Compton wavelength $\dfrac{1}{2\,k_m}$. Here $k_m=mc/\hbar$ and $k_E=E/(\hbar c)$ are the mass and energy lengths.
+The **Zitterbewegung** — the "trembling motion" — is the oscillatory part of the position of a Dirac particle. It was found by Schrödinger in 1930, in the course of solving the free Dirac equation. In the single-particle theory the velocity operator has eigenvalues $\pm c$, so a Dirac particle cannot have a sharp velocity; a wave packet assembled from positive- and negative-frequency plane waves has a mean position whose expectation value carries a rapid oscillation. Its angular frequency is $2c\,k_E$, which equals $2c\,k_m$ for a particle at rest, and its amplitude is of the order of half the reduced Compton wavelength $\dfrac{1}{2\,k_m}$. Here $k_m=mc/\hbar$ and $k_E=E/(\frac{m\,c^{2}}{k_m})$ are the mass and energy lengths.
 
 The biquaternion framework of these articles splits $\mathbb{B}$ by Hermitian conjugation into two sectors, $\mathbb{B} = \mathbb{B}_{\Psi} \oplus \mathbb{B}_{\Phi}$, which multiplication by the central $i$ exchanges. The natural suggestion is that this is the same split the Zitterbewegung exploits: that the positive- and negative-energy parts of the field *are* its $\mathbb{B}_{\Phi}$ and $\mathbb{B}_{\Psi}$ parts, and that the trembling is therefore the observable face of the complexification.
 
@@ -20,11 +20,10 @@ $$
 
 (*The Dirac Equation in Biquaternionic Form*, §*Statement*). The standard picture, which this section follows, reads the equation first order in time,
 
-$$
-i\hbar\,\frac{\partial\tilde{Ξ}_{\mathrm{sp}}}{\partial r'_t} = H\tilde{Ξ}_{\mathrm{sp}}, \qquad H = c\sum_{k=x,y,z}p_k\,\alpha_k + \beta\,mc^2,
+$$\frac{m\,c\,i}{k_m}\frac{\partial\tilde{Ξ}_{\mathrm{sp}}}{\partial  r'_t} = H\tilde{Ξ}_{\mathrm{sp}}, \qquad H = c\sum_{k=x,y,z} p_k\,\alpha_k + \beta\,mc^2,
 $$
 
-with $p_k=-i\hbar\,\partial/\partial r_k$ and the two maps
+with $p_k=-\frac{m\,c\,i}{k_m}\partial/\partial r_k$ and the two maps
 
 $$
 \alpha_k:\ \tilde Q\mapsto\vec e_k\,\tilde Q\,\vec e_z, \qquad \beta:\ \tilde Q\mapsto i\,\tilde Q\,\vec e_x .
@@ -38,25 +37,25 @@ $$
 
 so the velocity $c\alpha_k$ has eigenvalues $\pm c$ and the Hamiltonian has eigenvalues $\pm E$ with $E = \sqrt{\vec p^2c^2 + m^2c^4}$.
 
-The oscillation follows from the Heisenberg equation. Because $\{\alpha_k,H\} = 2cp_k\,\mathrm{id}$, the velocity in the Heisenberg picture has the exact form, with $\hbar$ kept explicit
+The oscillation follows from the Heisenberg equation. Because $\{\alpha_k,H\} = 2cp_k\,\mathrm{id}$, the velocity in the Heisenberg picture has the exact form, with $\frac{m\,c}{k_m}$ kept explicit
 
 $$
-\boxed{\;\alpha_k(r'_t) = \frac{cp_k}{H} + \exp(iH r'_t/\hbar)\Big(\alpha_k(0) - \frac{cp_k}{H}\Big)\exp(-iH r'_t/\hbar)\;},
+\boxed{\;\alpha_k(r'_t) = \frac{cp_k}{H} + \exp(\frac{k_m\,i\,H\,r'_{t}}{m\,c})\Big(\alpha_k(0) - \frac{cp_k}{H}\Big)\exp(-\frac{k_m\,i\,H\,r'_{t}}{m\,c})\;},
 $$
 
 in which the first term is the constant drift velocity and the second is the *trembling* term; $cp_k/H$ is the operator $cp_kH^{-1} = cp_kH/E^2$. Write $A_k=\alpha_k(0)-cp_k/H$. Because $A_k$ anticommutes with $H$, the second term can be written in either of the equivalent forms
 
 $$
-\exp(iHr'_t/\hbar)\,A_k\,\exp(-iHr'_t/\hbar)=A_k\,\exp(-2iHr'_t/\hbar)=\exp(2iHr'_t/\hbar)\,A_k,
+\exp(\frac{k_m\,iHr'_{t}}{m\,c})\,A_k\,\exp(-\frac{k_m\,iHr'_{t}}{m\,c})=A_k\,\exp(-\frac{2\,k_m\,iHr'_{t}}{m\,c})=\exp(\frac{2\,k_m\,iHr'_{t}}{m\,c})\,A_k,
 $$
 
-and the last form is what makes the integration below elementary. On the two energy branches the eigenvalues of the oscillating factor are $\exp(\pm 2iEr'_t/\hbar)$, so the angular frequency is $2c\,k_E$, and integrating once gives the position
+and the last form is what makes the integration below elementary. On the two energy branches the eigenvalues of the oscillating factor are $\exp(\pm \frac{2\,k_m\,iEr'_{t}}{m\,c})$, so the angular frequency is $2c\,k_E$, and integrating once gives the position
 
 $$
-\boxed{\;r_k(r'_t) = r_k(0) + \frac{c^2p_k}{H}\,r'_t \;-\; \frac{i\hbar c}{2H}\Big(\exp(2iH r'_t/\hbar)-1\Big)A_k\;}.
+\boxed{\;r_k(r'_t) = r_k(0) + \frac{c^2p_k}{H}\,r'_t \;-\;\frac{m\,c^{2}\,i}{2\,k_m\,H}\Big(\exp(\frac{2\,k_m\,i\,H\,r'_{t}}{m\,c})-1\Big)A_k\;}.
 $$
 
-At rest, $H = \beta mc^2$ and the oscillating term has frequency $2c\,k_m$ and amplitude of order $\dfrac{1}{2\,k_m}$, half the reduced Compton wavelength. The interference interpretation is immediate: a positive-frequency component $\exp(-iEr'_t/\hbar)$ and a negative-frequency component $\exp(+iEr'_t/\hbar)$ beat at $2c\,k_E$, and the trembling term is exactly that beat.
+At rest, $H = \beta mc^2$ and the oscillating term has frequency $2c\,k_m$ and amplitude of order $\dfrac{1}{2\,k_m}$, half the reduced Compton wavelength. The interference interpretation is immediate: a positive-frequency component $\exp(-\frac{k_m\,iEr'_{t}}{m\,c})$ and a negative-frequency component $\exp(+\frac{k_m\,iEr'_{t}}{m\,c})$ beat at $2c\,k_E$, and the trembling term is exactly that beat.
 
 The interpretation of this result is contested, and the article does not settle it. Three positions are in the literature. First, the trembling is an artefact of forcing a single-particle interpretation on a theory whose solutions include both signs of energy: the Foldy–Wouthuysen mean position, the observable position for a positive-energy particle, has no trembling at leading order, so the oscillation is removed rather than seen. Second, the effect is not entirely empty: the same elimination of the negative-frequency part that produces the mean position leaves the **Darwin term** at the next order in $1/c$, and the Darwin term and the Zitterbewegung are two faces of the same admixture of the negative-frequency part — the [exercise on the non-relativistic limit](exercise-the-non-relativistic-limit-and-the-pauli-equation.html) derives that term, and the derivation is not repeated here. Third, in quantum field theory the position operator of a single particle is not fundamental, the free-field Zitterbewegung is not directly observable, and the effect is reinterpreted (in some treatments absorbed, in others associated with virtual pair creation and annihilation). None of these interpretations denies the algebra above; they disagree about what it describes.
 
@@ -80,9 +79,7 @@ The conjugation $\flat$ is the algebra's real structure, not the mass term (§*T
 The plane-wave solutions are
 
 $$
-\tilde{Ξ}_{\mathrm{sp}}=\tilde{Ξ}_{\mathrm{sp},0}\exp\!\Big(i\,\mathrm{Sc}\big(\tilde P\tilde{R}_\Phi^{\natural}\big)/\hbar\Big),
-\qquad
-\frac{\tilde P}{\hbar}=e_t\frac{iE}{\hbar c}+\vec k,
+\tilde{Ξ}_{\mathrm{sp}}=\tilde{Ξ}_{\mathrm{sp},0}\exp\!\Big(i\,\mathrm{Sc}\big(\tilde P\tilde{R}_\Phi^{\natural}\big)\frac{k_m}{m\,c}\Big),\frac{k_m\,\tilde{P}}{m\,c}=\frac{k_m\,e_{t}\,i\,E}{m\,c^{2}}+\vec k,
 \qquad
 \tilde R_\Phi=e_t(i c r'_t)+\vec r,
 $$
@@ -90,15 +87,15 @@ $$
 with $\tilde{Ξ}_{\mathrm{sp},0}$ a constant element and $\vec r=r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z$. The single mass-shell condition is
 
 $$
-\tilde P\tilde P^{\natural}= -\hbar^2k_m^2.
+\tilde P\tilde P^{\natural}= -m^{2}\,c^{2}.
 $$
 
 The two roots of that condition — positive and negative frequency — are the two branches
 
 $$
-\tilde{Ξ}_{\mathrm{sp}}^{(+)}=\tilde{Ξ}_{\mathrm{sp},0}^{(+)}\exp\!\Big(-i\frac{Er'_t-\vec p\cdot\vec r}{\hbar}\Big),
+\tilde{Ξ}_{\mathrm{sp}}^{(+)}=\tilde{Ξ}_{\mathrm{sp},0}^{(+)}\exp\!\Big(-i\frac{Er'_t-\vec p\cdot\vec r}{\frac{m\,c}{k_m}}\Big),
 \qquad
-\tilde{Ξ}_{\mathrm{sp}}^{(-)}=\tilde{Ξ}_{\mathrm{sp},0}^{(-)}\exp\!\Big(+i\frac{Er'_t-\vec p\cdot\vec r}{\hbar}\Big),
+\tilde{Ξ}_{\mathrm{sp}}^{(-)}=\tilde{Ξ}_{\mathrm{sp},0}^{(-)}\exp\!\Big(+i\frac{Er'_t-\vec p\cdot\vec r}{\frac{m\,c}{k_m}}\Big),
 $$
 
 constructed in the parent, with $E = +\sqrt{\vec p^2c^2 + m^2c^4}$ and constant elements $\tilde{Ξ}_{\mathrm{sp},0}^{(\pm)}$. The normalisation and the non-relativistic reduction belong to the parent; the present article uses only the branches and the mass shell.
@@ -128,9 +125,9 @@ because $\vec e_y\vec e_x=-\vec e_z$ and a cell is linear in its second multipli
 
 The identity boxed in *The Standard Picture* is exact, and $cp_k/H$ in it denotes the operator $cp_kH^{-1} = cp_kH/E^2$ — not a multiple of the identity, since $H$ is an operator and not a scalar. The three equivalent forms of that section rest on $\{\alpha_k-cp_k/H,\,H\}=0$, which the relations above give.
 
-The identity was checked by direct computation on a case chosen here rather than on the rest case that motivated it: momentum $\vec p/mc = (0.3,\,0.2,\,-0.1)$, so $|\vec p| = 0.374\,mc$ and $E = 1.0677\,mc^2$, at the three times $r'_t = 0.017, 0.05, 0.23$ in units of $1/k_m/c$. The left side $\exp(iHr'_t/\hbar)\alpha_k \exp(-iHr'_t/\hbar)$ and both equivalent forms on the right agreed to machine precision, the largest coefficient of the difference below $10^{-15}$ over all three components and all times. The integrated position formula was checked the same way, against a direct integration of $c\alpha_k(r'_t)$ from the eigen-decomposition of $H$; the largest coefficient of the difference was below $5\times10^{-16}$. The rest case is then a consequence, $E = mc^2$, not an input.
+The identity was checked by direct computation on a case chosen here rather than on the rest case that motivated it: momentum $\vec p/mc = (0.3,\,0.2,\,-0.1)$, so $|\vec p| = 0.374\,mc$ and $E = 1.0677\,mc^2$, at the three times $r'_t = 0.017, 0.05, 0.23$ in units of $1/k_m/c$. The left side $\exp(\frac{k_m\,iHr'_{t}}{m\,c})\alpha_k \exp(-\frac{k_m\,iHr'_{t}}{m\,c})$ and both equivalent forms on the right agreed to machine precision, the largest coefficient of the difference below $10^{-15}$ over all three components and all times. The integrated position formula was checked the same way, against a direct integration of $c\alpha_k(r'_t)$ from the eigen-decomposition of $H$; the largest coefficient of the difference was below $5\times10^{-16}$. The rest case is then a consequence, $E = mc^2$, not an input.
 
-The frequency is $2c\,k_E$ on general grounds and $2c\,k_m$ at rest. The numbers for the electron, $m_ec^2 = 0.510998950$ MeV and $\hbar = 6.582119569\times10^{-22}$ MeV s, are
+The frequency is $2c\,k_E$ on general grounds and $2c\,k_m$ at rest. The numbers for the electron, $m_ec^2 = 0.510998950$ MeV and $\frac{m\,c}{k_m}= 6.582119569\times10^{-22}$ MeV s, are
 
 $$
 \boxed{\;\omega_Z^{\text{rest}} = 2c\,k_{m_e} = 1.55269\times10^{21}\ \text{rad s}^{-1},
@@ -152,18 +149,18 @@ There is a genuinely algebraic statement available, and it is the strongest posi
 **The rest-energy phase rotates the sectors into one another.** Factoring out the rest energy writes the free phase as
 
 $$
-\exp(-icr'_t\,k_m) = \cos\!\Big(\frac{mc^2r'_t}{\hbar}\Big)e_t \;-\; \sin\!\Big(\frac{mc^2r'_t}{\hbar}\Big)(ie_t),
+\exp(-icr'_t\,k_m) = \cos\!\Big(c\,k_m\,r'_{t}\Big)e_t \;-\; \sin\!\Big(c\,k_m\,r'_{t}\Big)(ie_t),
 $$
 
 and the two terms lie in different sectors: $e_t \in \mathbb{B}_{\Psi}$ and $ie_t \in \mathbb{B}_{\Phi}$ (an imaginary scalar is anti-Hermitian). The rest-energy phase is therefore a **rotation between the sectors**, at angular frequency $c\,k_m$: it takes the $\mathbb{B}_{\Psi}$ direction $e_t$ toward the $\mathbb{B}_{\Phi}$ direction $ie_t$ and back. This is the sense in which the complexification rotates one sector into the other; the rotation is the central phase, whose frequency the mass fixes through the mass shell.
 
-The Zitterbewegung frequency is exactly twice this rate. That is not a coincidence of arithmetic but an algebraic relation: the oscillating factor of the velocity identity is $\exp(2iHr'_t/\hbar)$, the square of the free-evolution phase $\exp(iHr'_t/\hbar)$,
+The Zitterbewegung frequency is exactly twice this rate. That is not a coincidence of arithmetic but an algebraic relation: the oscillating factor of the velocity identity is $\exp(\frac{2\,k_m\,iHr'_{t}}{m\,c})$, the square of the free-evolution phase $\exp(\frac{k_m\,iHr'_{t}}{m\,c})$,
 
 $$
-\exp(2iHr'_t/\hbar)=\big(\exp(iHr'_t/\hbar)\big)^2.
+\exp(\frac{2\,k_m\,iHr'_{t}}{m\,c})=\big(\exp(\frac{k_m\,iHr'_{t}}{m\,c})\big)^2.
 $$
 
-The rest-frame eigenvalues of the free-evolution phase are $\exp(\pm icr'_t\,k_m)$, one of which is the sector rotation above; the eigenvalues of the oscillating factor at general momentum are $\exp(\pm 2iEr'_t/\hbar)$, the sign set by the energy branch, so only the magnitude of the frequency is physical. So the trembling is not the sector rotation itself; it is the second harmonic of it. The factor of two is the statement that the beat of two branches of opposite frequency is twice the frequency of either branch, and it is the same factor by which the rest-energy phase and the Zitterbewegung frequency differ.
+The rest-frame eigenvalues of the free-evolution phase are $\exp(\pm icr'_t\,k_m)$, one of which is the sector rotation above; the eigenvalues of the oscillating factor at general momentum are $\exp(\pm \frac{2\,k_m\,iEr'_{t}}{m\,c})$, the sign set by the energy branch, so only the magnitude of the frequency is physical. So the trembling is not the sector rotation itself; it is the second harmonic of it. The factor of two is the statement that the beat of two branches of opposite frequency is twice the frequency of either branch, and it is the same factor by which the rest-energy phase and the Zitterbewegung frequency differ.
 
 Two consequences deserve emphasis. First, since the rest-energy phase rotates the sectors and its rate is the mass, the scale of the trembling — the mass gap $2mc^2$ — is set by the same quantity that sets the sector rotation. That is the real content of the suggestion that the trembling and the complexification are related. Second, a relation of scale is not a relation of identity: the trembling is a beat of two energy branches, the sector rotation is a rotation in the algebra, and the following section shows these are different decompositions.
 
@@ -171,7 +168,7 @@ Two consequences deserve emphasis. First, since the rest-energy phase rotates th
 
 The claim to test is: *the positive- and negative-energy parts of the field are its $\mathbb{B}_{\Phi}$ and $\mathbb{B}_{\Psi}$ parts.* The test fails, and the reason is structural rather than numerical.
 
-**They are splits of different objects.** The energy sign separates two terms of a solution by their dependence on $r'_t$: a term of positive frequency carries the factor $\exp(-iEr'_t/\hbar)$ and one of negative frequency the factor $\exp(+iEr'_t/\hbar)$, and $E$ moves with the momentum. It is a split of the solutions of the pair. The sector split separates the value of one element at one point, by Hermitian conjugation; it is pointwise and knows nothing of $r'_t$ or of $\vec p$. A split of a family of functions and a split of the values the functions take are different objects, and no dictionary is stated that would identify them.
+**They are splits of different objects.** The energy sign separates two terms of a solution by their dependence on $r'_t$: a term of positive frequency carries the factor $\exp(-\frac{k_m\,iEr'_{t}}{m\,c})$ and one of negative frequency the factor $\exp(+\frac{k_m\,iEr'_{t}}{m\,c})$, and $E$ moves with the momentum. It is a split of the solutions of the pair. The sector split separates the value of one element at one point, by Hermitian conjugation; it is pointwise and knows nothing of $r'_t$ or of $\vec p$. A split of a family of functions and a split of the values the functions take are different objects, and no dictionary is stated that would identify them.
 
 **The energy sign is fixed by a multiplication on the right, the sector by an involution of the value.** The Hamiltonian contains the map $\beta$, which multiplies on the right by $\vec e_x$, and its kinetic terms multiply on the right by $\vec e_z$. No element of the algebra acts as $\beta$ by left multiplication, and two units already show it. If some $c$ gave $c\tilde Q=i\tilde Q\vec e_x$ for every $\tilde Q$, the value at $\tilde Q=e_t$ would force $c=i\vec e_x$; at $\tilde Q=\vec e_z$ that $c$ gives $c\vec e_z=i\vec e_x\vec e_z=-i\vec e_y$, while $\beta$ gives $i\vec e_z\vec e_x=+i\vec e_y$, and the two differ. A left multiplier that agrees with $\beta$ on one element fails on another. So the energy sign is decided by a map built from right multiplications, and the sector by the conjugation of the value, which is not a map at all. $\beta$ is a map on the algebra and not an element of it, so it lies in neither sector; the sectors are properties of elements.
 
@@ -239,7 +236,7 @@ The dictionary is complex-linear; over $\mathbb{R}$ the products span $\mathrm{C
 
 ## Summary
 
-The Zitterbewegung was derived in the biquaternion notation of the series. The Heisenberg velocity satisfies the exact identity $\alpha_k(r'_t) = cp_k/H + \exp(iHr'_t/\hbar)(\alpha_k(0)-cp_k/H)\exp(-iHr'_t/\hbar)$, checked at momentum $|\vec p| = 0.374\,mc$ and three times, to machine precision (the largest coefficient of the difference below $10^{-15}$); the integrated position formula was checked against a direct integration on the same case, with the largest coefficient of the difference below $5\times10^{-16}$. The oscillating term has frequency $2c\,k_E$, equal to $2c\,k_m$ at rest, and the electron value $1.55269\times10^{21}\ \text{rad s}^{-1}$ and amplitude $\dfrac{1}{2\,k_m} = 193.1$ fm were confirmed.
+The Zitterbewegung was derived in the biquaternion notation of the series. The Heisenberg velocity satisfies the exact identity $\alpha_k(r'_t) = cp_k/H + \exp(\frac{k_m\,iHr'_{t}}{m\,c})(\alpha_k(0)-cp_k/H)\exp(-\frac{k_m\,iHr'_{t}}{m\,c})$, checked at momentum $|\vec p| = 0.374\,mc$ and three times, to machine precision (the largest coefficient of the difference below $10^{-15}$); the integrated position formula was checked against a direct integration on the same case, with the largest coefficient of the difference below $5\times10^{-16}$. The oscillating term has frequency $2c\,k_E$, equal to $2c\,k_m$ at rest, and the electron value $1.55269\times10^{21}\ \text{rad s}^{-1}$ and amplitude $\dfrac{1}{2\,k_m} = 193.1$ fm were confirmed.
 
 The genuinely algebraic content is that the mass is the linear coupling between the two values of the subscript, that the real structure $\flat$ acts with opposite signs on the two sectors, and that the rest-energy phase $\exp(-icr'_t\,k_m) = \cos(cr'_t\,k_m)e_t - \sin(cr'_t\,k_m)(ie_t)$ rotates the two sectors into one another at $c\,k_m$. The Zitterbewegung phase is the square of this evolution phase, so its frequency is exactly twice the sector-rotation frequency.
 
@@ -257,7 +254,7 @@ The structural claim that motivated the article fails. The positive- and negativ
 | $\tilde{Ξ}_{\mathrm{sp}}^{(+)}, \tilde{Ξ}_{\mathrm{sp}}^{(-)}$ | The two frequency branches; $\tilde{Ξ}_{\mathrm{sp},0}^{(\pm)}$ their constant elements |
 | $\tilde R_\Phi$ | The four-position biquaternion of the parent |
 | $\tilde P\,k_{\mathrm{mo}}$ | The wave biquaternion of the parent, $\vec k=\vec p\,k_{\mathrm{mo}}$ |
-| $\tilde P\tilde P^{\natural} = -\hbar^2k_m^2$ | Biquaternionic mass-shell condition |
+| $\tilde P\tilde P^{\natural} = -m^{2}\,c^{2}$ | Biquaternionic mass-shell condition |
 | $\flat$ | The anti-Hermitian conjugation (the algebra's real structure, not the mass term), *Algebra and Element Conventions* |
 | $\tilde\nabla$ | The biquaternionic gradient (Dirac operator), *Operator and Calculus Conventions* |
 | $L_{a}R_{b}$ | A two-sided cell; its action and its composition are *Operator and Calculus Conventions* and *Operator Family Conventions* |
@@ -270,7 +267,7 @@ The structural claim that motivated the article fails. The positive- and negativ
 | $\dfrac{1}{2\,k_m}$ | Zitterbewegung amplitude (order) |
 | $c(M)$, $\ell(M)$ | Coefficient matrix of an element in the sixteen products, and its rank (length) |
 
-Here $k_{\mathrm{mo}}=p/\hbar$ is the momentum length.
+Here $k_{\mathrm{mo}}=\frac{k_m\,p}{m\,c}$ is the momentum length.
 
 ## Further Reading
 

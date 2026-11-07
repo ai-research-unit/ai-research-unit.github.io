@@ -2,11 +2,11 @@
 
 ## Introduction
 
-The companion article *The Dirac Equation in Biquaternionic Form* stated the biquaternionic Dirac equation as a chiral pair and fixed its setting: one element $\tilde{Ξ}_{\mathrm{sp}}$ of the biquaternion algebra $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$, split into a part of value $L$ and a part of value $R$, with the mass the one term of the equation that carries the value across. It fixed the plane-wave ansatz, $\tilde{Ξ}_{\mathrm{sp}}=\tilde{Ξ}_{\mathrm{sp},0}\exp\!\left(i\,\mathrm{Sc}(\tilde{\mathcal P}\tilde Q^{\natural})/\hbar\right)$, and the mass-shell condition $\tilde{\mathcal P}\tilde{\mathcal P}^{\natural}=-m^2c^2$, and it noted that the massive solution space is four-dimensional over $\mathbb{C}$.
+The companion article *The Dirac Equation in Biquaternionic Form* stated the biquaternionic Dirac equation as a chiral pair and fixed its setting: one element $\tilde{Ξ}_{\mathrm{sp}}$ of the biquaternion algebra $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$, split into a part of value $L$ and a part of value $R$, with the mass the one term of the equation that carries the value across. It fixed the plane-wave ansatz, $\tilde{Ξ}_{\mathrm{sp}}=\tilde{Ξ}_{\mathrm{sp},0}\exp\!\left(i\,\mathrm{Sc}\frac{k_m\,\tilde{\mathcal P}\,\tilde{Q}^{\natural}}{m\,c}\right)$, and the mass-shell condition $\tilde{\mathcal P}\tilde{\mathcal P}^{\natural}=-m^2c^2$, and it noted that the massive solution space is four-dimensional over $\mathbb{C}$.
 
 That article worked at a summary level. It named the solution classes but constructed no explicit solution, fixed no normalization, wrote no bilinear, and did not carry the equation into the non-relativistic regime. The present article supplies those four things, and it supplies them on one element: every quantity below is an element of $\mathbb{B}$, a product of elements, or the scalar part or the trace of such a product.
 
-The next section fixes the two values of the field and the action that carries one into the other. The section after that states the equation and the pairing, and the one after that constructs the plane-wave solutions of both branches. Orthogonality and the spin sums follow, then the bilinears, then the non-relativistic limit and its Pauli equation, then the massless case. A closing section prints the older gamma display for the reader who has to compare with it. Formulas are written with $\hbar$ and $c$ explicit.
+The next section fixes the two values of the field and the action that carries one into the other. The section after that states the equation and the pairing, and the one after that constructs the plane-wave solutions of both branches. Orthogonality and the spin sums follow, then the bilinears, then the non-relativistic limit and its Pauli equation, then the massless case. A closing section prints the older gamma display for the reader who has to compare with it. Formulas are written with $\frac{m\,c}{k_m}$ and $c$ explicit.
 
 ## The field, the two values and the action
 
@@ -38,7 +38,7 @@ $$
 \mathcal{D}\tilde{Ξ}_{\mathrm{sp},R}=k_m\tilde{Ξ}_{\mathrm{sp},L},\qquad \mathcal{D}\tilde{Ξ}_{\mathrm{sp},L}=k_m\tilde{Ξ}_{\mathrm{sp},R} .
 $$
 
-Each line is one equation inside one value: the left side of the first is the $L$ part of the action on the $R$ part, which is $L$-valued, and the right side is $m$ times the $L$ part of the field. Here $m$ is the mass in the units of this article, the inverse reduced Compton wavelength $mc/\hbar$; the parent writes that coefficient out because its gradient is an operator in inverse length, and the two are the same number. The mass is the only term of the equation that keeps the value, and $\mathcal{D}$ the only term that carries it. The two lines are not two dynamics. Applying $\mathcal{D}$ to the first and substituting the second gives $\mathcal{D}^2\tilde{Ξ}_{\mathrm{sp},R}=k_m^{2}\tilde{Ξ}_{\mathrm{sp},R}$, that is $(E^2-\vec p^2-\hbar^2k_m^2)\tilde{Ξ}_{\mathrm{sp},R}=0$, and the same for the other part: the mass shell $E^2-\vec p^2=\hbar^2k_m^2$ is the consistency condition of the pair, and each part obeys the Klein–Gordon equation of the companion article. With $\hbar$ and $c$ restored the condition reads $E^2-\vec p^2c^2=m^2c^4$.
+Each line is one equation inside one value: the left side of the first is the $L$ part of the action on the $R$ part, which is $L$-valued, and the right side is $m$ times the $L$ part of the field. Here $m$ is the mass in the units of this article, the inverse reduced Compton wavelength $k_m$; the parent writes that coefficient out because its gradient is an operator in inverse length, and the two are the same number. The mass is the only term of the equation that keeps the value, and $\mathcal{D}$ the only term that carries it. The two lines are not two dynamics. Applying $\mathcal{D}$ to the first and substituting the second gives $\mathcal{D}^2\tilde{Ξ}_{\mathrm{sp},R}=k_m^{2}\tilde{Ξ}_{\mathrm{sp},R}$, that is $(E^2-\vec p^2-m^{2}\,c^{2})\tilde{Ξ}_{\mathrm{sp},R}=0$, and the same for the other part: the mass shell $E^2-\vec p^2=m^{2}\,c^{2}$ is the consistency condition of the pair, and each part obeys the Klein–Gordon equation of the companion article. With $\frac{m\,c}{k_m}$ and $c$ restored the condition reads $E^2-\vec p^2c^2=m^2c^4$.
 
 **Why the action and not the gradient.** The companion article writes the pair with the gradient acting on the left, $\tilde\nabla\tilde{Ξ}_{\mathrm{sp},R}=k_m\tilde{Ξ}_{\mathrm{sp},L}$ and its conjugate. The gradient is a left multiplication, so at fixed momentum it is one fixed element acting on the left, and it keeps the value: the left side of the first line is $R$-valued while the right side is $L$-valued. The two sides can be equated only by reading the four coefficients of the two parts against one another, which is the column the corpus does not use. The operator the pair requires at fixed momentum is the one that carries the value across, and that operator is $\mathcal{D}$. The massless limit is unaffected, and it decouples in either reading: at $m=0$ the pair becomes $\mathcal{D}\tilde{Ξ}_{\mathrm{sp},R}=0$ and $\mathcal{D}\tilde{Ξ}_{\mathrm{sp},L}=0$, two equations of one value each. Here $k_m=mc/\hbar$ is the mass wave number, the inverse of the mass length.
 
@@ -56,7 +56,7 @@ the trace of a product twisted on the right by the timelike unit. It is conjugat
 
 ## Plane-wave solutions
 
-**The ansatz.** A solution of momentum $(E,\vec p)$ is $\tilde{Ξ}_{\mathrm{sp}}=\tilde w\exp\!\left(i\,\mathrm{Sc}(\tilde{\mathcal P}\tilde Q^{\natural})/\hbar\right)$ with $\tilde w$ an element that does not depend on the coordinates, and the equation for $\tilde w$ is $\mathcal{D}(\tilde{\mathcal P})\tilde w=m\tilde w$. The wave element obeys $\tilde{\mathcal P}\tilde{\mathcal P}^{\natural}=-(E^2-\vec p^2)$, so the mass shell of the equation is $\tilde{\mathcal P}\tilde{\mathcal P}^{\natural}=-m^2$: one condition, whose two roots are the two branches below.
+**The ansatz.** A solution of momentum $(E,\vec p)$ is $\tilde{Ξ}_{\mathrm{sp}}=\tilde w\exp\!\left(i\,\mathrm{Sc}\frac{k_m\,\tilde{\mathcal P}\,\tilde{Q}^{\natural}}{m\,c}\right)$ with $\tilde w$ an element that does not depend on the coordinates, and the equation for $\tilde w$ is $\mathcal{D}(\tilde{\mathcal P})\tilde w=m\tilde w$. The wave element obeys $\tilde{\mathcal P}\tilde{\mathcal P}^{\natural}=-(E^2-\vec p^2)$, so the mass shell of the equation is $\tilde{\mathcal P}\tilde{\mathcal P}^{\natural}=-m^2$: one condition, whose two roots are the two branches below.
 
 **The helicity and the two spin elements.** For $|\vec p|\neq0$ let $\vec u_p=\vec p/|\vec p|$ and
 
@@ -97,11 +97,11 @@ by the same two laws with one sign reversed. The relative minus sign is the stan
 **The solutions in full.** The fields are these elements multiplied by the phase,
 
 $$
-\tilde{Ξ}_{\mathrm{sp},\pm}^{(+)}=\tilde w_\pm(\vec p)\,e^{-i(Er'_t-\vec p\cdot\vec r)/\hbar},\qquad
-\tilde{Ξ}_{\mathrm{sp},\pm}^{(-)}=\tilde v_\pm(\vec p)\,e^{+i(Er'_t-\vec p\cdot\vec r)/\hbar},
+\tilde{Ξ}_{\mathrm{sp},\pm}^{(+)}=\tilde{w}_{\pm}\,\vec p\,e^{-\frac{k_m\,i\,(Er'_t-\vec p\cdot\vec r)}{m\,c}},\qquad
+\tilde{Ξ}_{\mathrm{sp},\pm}^{(-)}=\tilde{v}_{\pm}\,\vec p\,e^{+\frac{k_m\,i\,(Er'_t-\vec p\cdot\vec r)}{m\,c}},
 $$
 
-with $E=+\sqrt{\vec p^{\,2}c^2+\hbar^2c^2k_m^2}$ in both lines: the negative-frequency solution is the same construction with the opposite phase, not a different object. On the mass shell the solution space of $\mathcal{D}\tilde w=m\tilde w$ is two-dimensional over $\mathbb{C}$, spanned by $\tilde w_+$ and $\tilde w_-$, and that of $\mathcal{D}\tilde v=-m\tilde v$ is two-dimensional as well. Together they are the four complex dimensions the companion article counts.
+with $E=+\sqrt{\vec p^{\,2}c^2+m^{2}\,c^{4}}$ in both lines: the negative-frequency solution is the same construction with the opposite phase, not a different object. On the mass shell the solution space of $\mathcal{D}\tilde w=m\tilde w$ is two-dimensional over $\mathbb{C}$, spanned by $\tilde w_+$ and $\tilde w_-$, and that of $\mathcal{D}\tilde v=-m\tilde v$ is two-dimensional as well. Together they are the four complex dimensions the companion article counts.
 
 **The rest frame.** At $\vec p=0$ one has $E=m$ and the direction $\vec u_p$ is undefined, so the label is carried by any two orthonormal elements of the $R$ value; the two solutions are $\sqrt m\,(\tilde\zeta_{R+}\mathcal{D}\tilde\zeta_{R}/m)$ for such a pair. Nothing degenerates except the label: the solution space is still two-dimensional.
 
@@ -201,14 +201,14 @@ so that $\mathcal{O}$ is odd, $i(\mathcal{O}\tilde Q)\vec e_x=-\mathcal{O}(i\til
 **Minimal coupling.** Minimal coupling replaces the four-momentum by $p_\mu-ϙA_\mu$, with $A_\mu=(Ξ,-\vec A)$ and $ϙ$ the charge of the field: $E\to E-ϙΞ$ in the even term and $p_k\to\pi_k=p_k-ϙA_k$ in $\mathcal{O}$. The equation keeps its shape, and the pair reads, on the two parts,
 
 $$
-(E-ϙΞ-\hbar c\,k_m)\tilde{Ξ}=-\mathcal{O}\tilde{Ξ}_{\mathrm{sp}},\qquad
-(E-ϙΞ+\hbar c\,k_m)\tilde{Ξ}_{\mathrm{sp}}=\mathcal{O}\tilde{Ξ} .
+(E-ϙΞ-m\,c^{2})\tilde{Ξ}=-\mathcal{O}\tilde{Ξ}_{\mathrm{sp}},\qquad
+(E-ϙΞ+m\,c^{2})\tilde{Ξ}_{\mathrm{sp}}=\mathcal{O}\tilde{Ξ} .
 $$
 
 The second line is the one multiplied by the large rest energy, so the small part is generated from the large one:
 
 $$
-\tilde{Ξ}_{\mathrm{sp}}=\frac{1}{E-ϙΞ+\hbar c\,k_m}\,\mathcal{O}\tilde{Ξ}\;\approx\;\frac{c}{2\hbar\,k_m}\,\mathcal{O}\tilde{Ξ} ,
+\tilde{Ξ}_{\mathrm{sp}}=\frac{1}{E-ϙΞ+m\,c^{2}}\,\mathcal{O}\tilde{Ξ}\;\approx\;\frac{1}{2\,m}\,\mathcal{O}\tilde{Ξ} ,
 $$
 
 the approximation being the one in which the kinetic energy and the potential are small against the rest energy. This is the algebraic statement that the small part is the velocity acting on the large one, and it is the only step of the limit that discards anything.
@@ -216,7 +216,7 @@ the approximation being the one in which the kinetic energy and the potential ar
 **The Pauli equation.** Substituting the small part into the first line eliminates it and leaves an equation on the large part alone:
 
 $$
-(E-ϙΞ-\hbar c\,k_m)\tilde{Ξ}=-\frac{c}{2\hbar\,k_m}\,\mathcal{O}^2\tilde{Ξ} .
+(E-ϙΞ-m\,c^{2})\tilde{Ξ}=-\frac{1}{2\,m}\,\mathcal{O}^2\tilde{Ξ} .
 $$
 
 It remains to evaluate $\mathcal{O}^2$ on a large part. The sum over the two indices symmetrizes, and the symmetric part gives the kinetic square while the antisymmetric part gives the magnetic term:
@@ -227,10 +227,10 @@ $$
 
 with $\vec B=\nabla\times\vec A$. The first term is the symmetrized sum, $\tfrac12\sum_{j,k}\{\pi_j,\pi_k\}\vec e_j\vec e_k=-\vec\pi^2$, and the second is the commutator, $\sum_{j<k}[\pi_j,\pi_k]\vec e_j\vec e_k$, evaluated with $[\pi_j,\pi_k]=iϙ\epsilon_{jkl}B_l$ and $\sum_{j<k}\epsilon_{jkl}\vec e_j\vec e_k=\vec e_l$, which gives $iϙ\vec B$. The operator ordering is kept throughout, since $\vec p$ and $\vec A$ do not commute, and the magnetic term is exactly what survives it.
 
-With $E\to i\hbar\partial/\partial r'_t$ and the rest energy factored out by $\tilde{Ξ}=e^{-ir'_t/(c/k_m)}\tilde{Ξ}'$, the equation becomes the **Pauli equation** for the large part:
+With $E\to \frac{m\,c\,i}{k_m}\partial/\partial r'_t$ and the rest energy factored out by $\tilde{Ξ}=e^{-ir'_t/(c/k_m)}\tilde{Ξ}'$, the equation becomes the **Pauli equation** for the large part:
 
 $$
-\boxed{\;i\hbar\,\frac{\partial\tilde{Ξ}'}{\partial r'_t}=\left[\frac{(\vec p-ϙ\vec A)^2 c}{2\hbar\,k_m}+ϙΞ-\frac{ϙ c}{2\,k_m}\,i\vec B\right]\tilde{Ξ}'\;}
+\boxed{\;\frac{m\,c\,i}{k_m}\frac{\partial\tilde{Ξ}'}{\partial  r'_t}=\left[\frac{(\vec p-ϙ\vec A)^{2}}{2\,m}+ϙΞ-\frac{ϙ c}{2\,k_m}\,i\vec B\right]\tilde{Ξ}'\;}
 $$
 
 The first two terms are the ordinary non-relativistic Hamiltonian of a charged particle, and the third is the spin–magnetic coupling. The unknown is one element of two complex dimensions.
@@ -238,7 +238,7 @@ The first two terms are the ordinary non-relativistic Hamiltonian of a charged p
 **The $g$-factor.** The spin term is a magnetic dipole coupling. Writing it as $-\vec\mu\cdot\vec B$ and comparing with $\vec\mu=g\frac{ϙ}{2m}\vec S$, with the spin
 
 $$
-\vec S=\frac{\hbar}{2}\,i\vec e_k\ \text{per component},\qquad \vec\mu\cdot\vec B=\frac{ϙ}{m}\,\vec S\cdot\vec B=\frac{ϙ c}{2\,k_m}\,i\vec B ,
+\vec S=\frac{m\,c}{2\,k_m}\,i\vec e_k\ \text{per component},\qquad  \vec\mu\cdot\vec B=\frac{ϙ}{m}\,\vec S\cdot\vec B=\frac{ϙ c}{2\,k_m}\,i\vec B ,
 $$
 
 identifies
@@ -247,7 +247,7 @@ $$
 \boxed{\;g=2\;}
 $$
 
-The factor is not put in by hand: it is the coefficient $1/2m$ that the elimination produced, and the elimination is the one the mass term of the biquaternionic equation allows. For the electron $ϙ=-e$ and $\vec\mu_e=-\frac{e}{m_e}\vec S=-g\frac{e}{2m_e}\vec S$ with $g=2$, of magnitude one Bohr magneton $\mu_B=ec\dfrac{1}{2\,k_{m_e}}$ at $S_z=\hbar/2$. The observed value differs from $2$ by the anomalous part $a=(g-2)/2\approx\alpha/2\pi$, a radiative correction outside the classical equation treated here.
+The factor is not put in by hand: it is the coefficient $1/2m$ that the elimination produced, and the elimination is the one the mass term of the biquaternionic equation allows. For the electron $ϙ=-e$ and $\vec\mu_e=-\frac{e}{m_e}\vec S=-g\frac{e}{2m_e}\vec S$ with $g=2$, of magnitude one Bohr magneton $\mu_B=ec\dfrac{1}{2\,k_{m_e}}$ at $S_z=\frac{m\,c}{2\,k_m}$. The observed value differs from $2$ by the anomalous part $a=(g-2)/2\approx\alpha/2\pi$, a radiative correction outside the classical equation treated here.
 
 Here $1/k_{m_e}=\hbar/(m_ec)$ is the electron mass length.
 
@@ -321,7 +321,7 @@ The contraction sums follow from the squares. With one index raised, $\gamma^\mu
 
 ## Summary
 
-The biquaternionic Dirac equation is one equation on one element, $\mathcal{D}(\tilde{\mathcal P})\tilde{Ξ}_{\mathrm{sp}}=k_m\tilde{Ξ}_{\mathrm{sp}}$, with the action $iE\tilde{Ξ}_{\mathrm{sp}}\vec e_x-\sum_k ip_k\vec e_k\tilde{Ξ}_{\mathrm{sp}}\vec e_y$ written out in products of units. Read on the two values it is the chiral pair of the companion article, each line an equation of one value; the mass is the term that keeps the value and the action the term that carries it, and the mass shell $E^2-\vec p^2=\hbar^2k_m^2$ is the consistency condition of the pair. The action squares to the mass shell, exchanges the two values and is built of no object but the element, the units and the numbers $E$ and $\vec p$.
+The biquaternionic Dirac equation is one equation on one element, $\mathcal{D}(\tilde{\mathcal P})\tilde{Ξ}_{\mathrm{sp}}=k_m\tilde{Ξ}_{\mathrm{sp}}$, with the action $iE\tilde{Ξ}_{\mathrm{sp}}\vec e_x-\sum_k ip_k\vec e_k\tilde{Ξ}_{\mathrm{sp}}\vec e_y$ written out in products of units. Read on the two values it is the chiral pair of the companion article, each line an equation of one value; the mass is the term that keeps the value and the action the term that carries it, and the mass shell $E^2-\vec p^2=m^{2}\,c^{2}$ is the consistency condition of the pair. The action squares to the mass shell, exchanges the two values and is built of no object but the element, the units and the numbers $E$ and $\vec p$.
 
 The solutions are explicit. The two helicity elements of one value are the seed, the corresponding elements of the other value are their images under the action, and the two branches are
 
@@ -330,14 +330,13 @@ $$
 \tilde v_\pm=\sqrt{E\pm|\vec p|}\,\tilde\zeta_{R\pm}-\sqrt{E\mp|\vec p|}\,\tilde\zeta_{L\pm} ,
 $$
 
-with $E=+\sqrt{\vec p^{\,2}c^2+\hbar^2c^2k_m^2}$. Each branch is two-dimensional over $\mathbb{C}$, the four dimensions the companion article counts. The normalization is covariant, $\langle\tilde w,\tilde w\rangle_{\mathrm D}=2m$ and $\langle\tilde v,\tilde v\rangle_{\mathrm D}=-2m$, with $\langle\tilde w,\tilde v\rangle_{\mathrm D}=0$, and the spin sums $\sum_\pm\tilde w_\pm\langle\tilde w_\pm,\cdot\rangle_{\mathrm D}=\mathcal{D}+m$ and $\sum_\pm\tilde v_\pm\langle\tilde v_\pm,\cdot\rangle_{\mathrm D}=\mathcal{D}-m$ close the set.
+with $E=+\sqrt{\vec p^{\,2}c^2+m^{2}\,c^{4}}$. Each branch is two-dimensional over $\mathbb{C}$, the four dimensions the companion article counts. The normalization is covariant, $\langle\tilde w,\tilde w\rangle_{\mathrm D}=2m$ and $\langle\tilde v,\tilde v\rangle_{\mathrm D}=-2m$, with $\langle\tilde w,\tilde v\rangle_{\mathrm D}=0$, and the spin sums $\sum_\pm\tilde w_\pm\langle\tilde w_\pm,\cdot\rangle_{\mathrm D}=\mathcal{D}+m$ and $\sum_\pm\tilde v_\pm\langle\tilde v_\pm,\cdot\rangle_{\mathrm D}=\mathcal{D}-m$ close the set.
 
 The bilinears are traces of products. The scalar and the pseudoscalar are the real and the imaginary part of the one pairing that mixes the two values, so a field of one value has no Dirac mass; the vector current is $j_0=2E$ and $\vec j=2\vec p$ on a normalized solution, and it assembles into the material-sector four-vector $\tilde J=ic\,j_0e_t+\vec j$ of $\mathbb{B}_{\Phi}$; the spin is the pure state $\frac12(e_t+i\vec u)$ of the informational sector $\mathbb{B}_{\Psi}$, with $\mathrm{Tr}(\tilde\rho\,i\vec e_k)=u_k$.
 
 In the non-relativistic limit the split by the timelike unit separates the large and the small part, the elimination of the small part is exact to the order kept, and the square of the odd part of the action produces the Pauli equation
 
-$$
-i\hbar\,\frac{\partial\tilde{Ξ}'}{\partial r'_t}=\left[\frac{(\vec p-ϙ\vec A)^2 c}{2\hbar\,k_m}+ϙΞ-\frac{ϙ c}{2\,k_m}\,i\vec B\right]\tilde{Ξ}'
+$$\frac{m\,c\,i}{k_m}\frac{\partial\tilde{Ξ}'}{\partial  r'_t}=\left[\frac{(\vec p-ϙ\vec A)^{2}}{2\,m}+ϙΞ-\frac{ϙ c}{2\,k_m}\,i\vec B\right]\tilde{Ξ}'
 $$
 
 on one element. The coefficient $1/2m$ of the spin term is the one that $\vec\mu=g\frac{ϙ}{2m}\vec S$ requires with $g=2$, so the gyromagnetic factor and the spin–magnetic coupling are consequences of the mass term of the equation and not separate postulates. In the massless limit the pair decouples, each value keeps one helicity, and chirality is locked to helicity.
@@ -366,7 +365,7 @@ on one element. The coefficient $1/2m$ of the spin term is the one that $\vec\mu
 | $\tilde\rho=\tfrac12(e_t+i\vec u)$ | Pure state of $\mathbb{B}_{\Psi}$; $\vec u$ the Bloch vector |
 | $S,\ P$ | Scalar and pseudoscalar bilinears |
 | $j_0,\ \vec j$, $\tilde J=ic\,j_0e_t+\vec j$ | Vector current and its material-sector form |
-| $\vec S=\tfrac{\hbar}{2}i\vec e_k$, $\vec\mu=g\frac{ϙ}{2m}\vec S$ | Spin and magnetic moment |
+| $\vec S=\frac{m\,c}{2\,k_m}i\vec e_k$, $\vec\mu=g\frac{ϙ}{2m}\vec S$ | Spin and magnetic moment |
 | $ϙ$ | Charge of the field under minimal coupling |
 | $\vec\pi=\vec p-ϙ\vec A$, $\vec B=\nabla\times\vec A$ | Kinetic momentum and magnetic field |
 | $g=2$ | Gyromagnetic factor in the non-relativistic limit |

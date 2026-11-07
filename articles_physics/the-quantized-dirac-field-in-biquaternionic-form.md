@@ -4,7 +4,7 @@
 
 The companion article *Canonical Quantization of the Biquaternion Dirac Field* promotes the classical biquaternion Dirac field to an operator-valued field. It fixes the Lagrangian of the one-sided pair, the conjugate momentum with its second-class constraint, the equal-time anticommutators, the expansion in the parent's plane-wave solutions, the mode algebra, the normal-ordered Hamiltonian and its constant, and the $\mathbb{Z}/2$ grading of the mode algebra. It closes with an explicit list of what is standard and what is open, and it names the present article's subject as one of the open items: the quantized field was handled through a representative rather than as an object in its own right, and the question of what kind of object the operator-valued biquaternion field is was left standing.
 
-**Units.** Throughout, a four-momentum is $(p_0,\vec p)$ with $p_0=E/c$, the mass shell is $E^2=\vec p^{\,2}c^2+\hbar^2c^2k_m^2$, and every mass enters through the mass wave number $k_m=mc/\hbar$.
+**Units.** Throughout, a four-momentum is $(p_0,\vec p)$ with $p_0=E/c$, the mass shell is $E^2=\vec p^{\,2}c^2+m^{2}\,c^{4}$, and every mass enters through the mass wave number $k_m=mc/\hbar$.
 
 This article takes up that question. It does not repeat the quantization, which is the parent's; it asks what the resulting object *is* in the biquaternion framework, and it develops the four structures that make the operator field more than a rewrite:
 
@@ -13,7 +13,7 @@ This article takes up that question. It does not repeat the quantization, which 
 - **The operator-valued observables.** The energy–momentum, the charge and the current are operator-valued; the energy–momentum sits in the material sector $\mathbb{B}_{\Phi}$, the charge in the centre $\mathbb{B}_{C}$, and the current is a bilinear read as the scalar part of an element product, carrying fixed units of the frame. Their normal ordering has a definite sign.
 - **The two-point function as an operator-valued distribution.** The covariant anticommutator of the field is a $c$-number, and its biquaternion form is the deformed mass-shell scalar of the propagator article.
 
-The division between what is standard and what belongs to the algebra is kept explicit throughout, as in the parents. Throughout, $c=1$, $\hbar$ is kept explicit only in the spin operator, and every derivative of the field is the corpus gradient $\tilde\nabla$ with its natural conjugate $\tilde\nabla^{\natural}$; the only other derivative operator written is the one inside the source's own equation, quoted once below and not used.
+The division between what is standard and what belongs to the algebra is kept explicit throughout, as in the parents. Throughout, $c=1$, $\frac{m\,c}{k_m}$ is kept explicit only in the spin operator, and every derivative of the field is the corpus gradient $\tilde\nabla$ with its natural conjugate $\tilde\nabla^{\natural}$; the only other derivative operator written is the one inside the source's own equation, quoted once below and not used.
 
 ## The Operator-Valued Field
 
@@ -33,7 +33,7 @@ $$
 +b_{\mathrm{fop},r}^{\dagger}(\vec p)\,\tilde{Ξ}_{\mathrm{sp},-}^{(r)}(\vec p)\,\exp(+ip\cdot x)\Big],
 $$
 
-with $E_{\vec p}=+\sqrt{\vec p^{\,2}c^2+\hbar^2c^2k_m^2}$, $x=(r'_t,\vec r)$ and $p\cdot x=E_{\vec p}r'_t-\vec p\cdot\vec r$. The amplitudes $\tilde{Ξ}_{\mathrm{sp},\pm}^{(r)}(\vec p)$ are elements of $\mathbb{B}$: they are the two branches of the biquaternion plane wave of the solutions article, the two $+$ amplitudes solving the amplitude equation there at the positive root of $\tilde P\tilde P^{\natural}= -\hbar^2k_m^2$ and the two $-$ amplitudes at the negative root, with $r=1,2$ counting the two solutions at each root. The mode anticommutators are
+with $E_{\vec p}=+\sqrt{\vec p^{\,2}c^2+m^{2}\,c^{4}}$, $x=(r'_t,\vec r)$ and $p\cdot x=E_{\vec p}r'_t-\vec p\cdot\vec r$. The amplitudes $\tilde{Ξ}_{\mathrm{sp},\pm}^{(r)}(\vec p)$ are elements of $\mathbb{B}$: they are the two branches of the biquaternion plane wave of the solutions article, the two $+$ amplitudes solving the amplitude equation there at the positive root of $\tilde P\tilde P^{\natural}= -m^{2}\,c^{2}$ and the two $-$ amplitudes at the negative root, with $r=1,2$ counting the two solutions at each root. The mode anticommutators are
 
 $$
 \{a_{\mathrm{fop},r}(\vec p),a_{\mathrm{fop},s}^{\dagger}(\vec q)\}
@@ -139,13 +139,11 @@ The parity has three consequences that organize the rest of the article.
 The single-mode truncation of this structure lives *inside* $\mathbb{B}$. The spin–statistics companion computes the truncated ladder
 
 $$
-\boxed{\;\frac{\tilde S_+}{\hbar}=\tfrac12(i\vec e_x-\vec e_y),
+\boxed{\;\frac{k_m\,\tilde{S}_{+}}{m\,c}=\tfrac12(i\vec e_x-\vec e_y),\frac{k_m\,\tilde{S}_{-}}{m\,c}=\tfrac12(i\vec e_x+\vec e_y),
 \qquad
-\frac{\tilde S_-}{\hbar}=\tfrac12(i\vec e_x+\vec e_y),
+\Bigl(\frac{k_m\,\tilde{S}_{+}}{m\,c}\Bigr)^2=0,
 \qquad
-\Bigl(\frac{\tilde S_+}{\hbar}\Bigr)^2=0,
-\qquad
-\Bigl\{\frac{\tilde S_+}{\hbar},\frac{\tilde S_-}{\hbar}\Bigr\}=e_t,
+\Bigl\{\frac{k_m\,\tilde{S}_{+}}{m\,c},\frac{k_m\,\tilde{S}_{-}}{m\,c}\Bigr\}=e_t,
 \qquad
 (-1)^F=i\vec e_z\;},
 $$
@@ -218,7 +216,7 @@ $$
 \tilde P_{\mathrm{fop}}\tilde P_{\mathrm{fop}}^{\natural}=-\Big(H^2-\sum_kP_{\mathrm{fop},k}P_{\mathrm{fop},k}\Big)e_t,
 $$
 
-the operator counterpart of the classical condition $\tilde P\tilde P^{\natural}= -\hbar^2k_m^2$, where $\tilde P$ is the $c$-number wave biquaternion of the two-point function below. The charge is different in kind: $Ϙ_{\mathrm{fop}}$ is Hermitian and scalar in the algebra factor, hence central there,
+the operator counterpart of the classical condition $\tilde P\tilde P^{\natural}= -m^{2}\,c^{2}$, where $\tilde P$ is the $c$-number wave biquaternion of the two-point function below. The charge is different in kind: $Ϙ_{\mathrm{fop}}$ is Hermitian and scalar in the algebra factor, hence central there,
 
 $$
 Ϙ_{\mathrm{fop}}=Ϙ_{\mathrm{fop}}^{\dagger}\in\mathcal{A}\otimes\mathbb{B}_{C},
@@ -263,9 +261,9 @@ In biquaternion terms the current is an element product read through the scalar 
 The spin operator is the spatial integral of the bilinear with the informational-sector element multiplying the field from the left,
 
 $$
-S_k=\int d^3r\,:\!\mathrm{Sc}\Bigl(\tilde{Ξ}_{\mathrm{fop}}^{\dagger}\,\tilde S_k\,\tilde{Ξ}_{\mathrm{fop}}\Bigr)\!:,
+S_k=\int  d^3r\,:\!\mathrm{Sc}\Bigl(\tilde{Ξ}_{\mathrm{fop}}^{\dagger}\,\tilde S_k\,\tilde{Ξ}_{\mathrm{fop}}\Bigr)\!:,
 \qquad
-\tilde S_k=\tfrac{\hbar}{2}i\vec e_k .
+\tilde S_k=\frac{m\,c}{2\,k_m}i\vec e_k .
 $$
 
 It is Hermitian and even, and it is the operator whose classical limit is the spin three-vector of the one-particle theory. The generator is the informational-sector element $\tilde S_k$ itself, and the bilinear realizes it on the field; the sector interpretation is the one the electron companion records.
@@ -313,9 +311,8 @@ a modified Bessel function of the second kind, nonzero for every $\vec\Delta\ne0
 **The biquaternion form.** Writing the wave biquaternion (the $c$-number symbol) $\tilde P=i(E_{\vec p}/c)\,e_t+\vec p$, with $p_0=E_{\vec p}/c$, so that $\tilde P\tilde P^{\natural}=-p^2$, the momentum-space two-point function of the propagator companion is the map
 
 $$
-S_F(p):\ \tilde X\longmapsto
-\frac{i\bigl(i\tilde X\vec e_x p_{0}-\sum_k i\vec e_k\tilde X\vec e_y p_{k}+m\,\tilde X\bigr)}{p^2-\hbar^2k_m^2+i\epsilon}
-=-\frac{i\bigl(i\tilde X\vec e_x p_{0}-\sum_k i\vec e_k\tilde X\vec e_y p_{k}+m\,\tilde X\bigr)}{\tilde P\tilde P^{\natural}+\hbar^2k_m^2-i\epsilon}.
+S_F(p):\ \tilde{X}\,\longmapsto\frac{i\bigl(i\tilde X\vec e_x p_{0}-\sum_k  i\vec e_k\tilde X\vec e_y p_{k}+m\,\tilde X\bigr)}{p^2-m^{2}\,c^{2}+i\epsilon}
+=-\frac{i\bigl(i\tilde X\vec e_x p_{0}-\sum_k  i\vec e_k\tilde X\vec e_y p_{k}+m\,\tilde X\bigr)}{\tilde P\tilde P^{\natural}+m^{2}\,c^{2}-i\epsilon}.
 $$
 
 Distributing the outer $i$ of the first form with $i^2=-1$ gives the equivalent numerator $-\tilde X\vec e_x p_0+\sum_k\vec e_k\tilde X\vec e_y p_k+i m\tilde X$. The numerator is $(\mathbb{D}_p+m)\tilde X$, the momentum symbol of the display above together with the mass, the mass term being the multiplication by $m$ and not a separate operator. The denominator is the deformed mass-shell scalar, and the deformation $-i\epsilon\,e_t$ lies in the centre and along the $i c r'_t$ axis of the material sector. The two-point function of the operator field is thus an operator-valued distribution whose biquaternion form is the mass-shell condition with the Feynman shift; the companion article's finding — that the algebra supplies the axis of the deformation but not its orientation — is inherited unchanged, and this article adds nothing to it.
@@ -362,7 +359,7 @@ so the observables are the even bilinears, the operator algebra is $\mathbb{Z}/2
 
 The observables are the normal-ordered energy–momentum, charge, current and spin. The Hamiltonian is $H=\sum_r\int\frac{d^3p}{(2\pi)^3}E_{\vec p}(a_{\mathrm{fop},r}^{\dagger}a_{\mathrm{fop},r}+b_{\mathrm{fop},r}^{\dagger}b_{\mathrm{fop},r})$ after normal ordering, with the constant $E_0=-2V\int\frac{d^3p}{(2\pi)^3}E_{\vec p}$; the sign flip of the antiparticle term is the anticommutator, verified on the two-mode truncation. The four-momentum assembles into the operator-valued material-sector element $\tilde P_{\mathrm{fop}}=iH e_t+P_{\mathrm{fop},k}\vec e_k\in\mathcal{A}\otimes\mathbb{B}_{\Phi}$, and the charge is central. The current is conserved as an operator equation, verified by finite differences on a superposition of two momenta and on both frequency branches, to $5.3\times10^{-10}$ and $1.2\times10^{-10}$ respectively.
 
-The covariant anticommutator is a $c$-number and vanishes for spacelike separation; for every element $\tilde X$, $\{\tilde{Ξ}_{\mathrm{fop}}(x)\mathrm{Sc}(\tilde{Ξ}_{\mathrm{fop}}^{\dagger}(y)i\vec e_x\tilde X)\}=(\mathbb{D}+k_m)\Delta_{\mathrm{A}}(x-y)\tilde X$. The commutator is a $c$-number as well but has support outside the light cone. The momentum-space two-point function is the propagator companion's map $S_F(p):\tilde X\mapsto-i(i\tilde X\vec e_x p_0-\sum_k i\vec e_k\tilde X\vec e_y p_k+m\tilde X)/(\tilde P\tilde P^{\natural}+\hbar^2k_m^2-i\epsilon)$, whose biquaternion form is the deformed mass-shell condition.
+The covariant anticommutator is a $c$-number and vanishes for spacelike separation; for every element $\tilde X$, $\{\tilde{Ξ}_{\mathrm{fop}}(x)\mathrm{Sc}(\tilde{Ξ}_{\mathrm{fop}}^{\dagger}(y)i\vec e_x\tilde X)\}=(\mathbb{D}+k_m)\Delta_{\mathrm{A}}(x-y)\tilde X$. The commutator is a $c$-number as well but has support outside the light cone. The momentum-space two-point function is the propagator companion's map $S_F(p):\tilde X\mapsto-i(i\tilde X\vec e_x p_0-\sum_k i\vec e_k\tilde X\vec e_y p_k+m\tilde X)/(\tilde P\tilde P^{\natural}+m^{2}\,c^{2}-i\epsilon)$, whose biquaternion form is the deformed mass-shell condition.
 
 ## Summary of Notation
 
@@ -393,13 +390,13 @@ The covariant anticommutator is a $c$-number and vanishes for spacelike separati
 | $\tilde J=iJ_t e_t+\sum_kJ_k\vec e_k\in\mathcal{A}\otimes\mathbb{B}_{\Phi}$ | Operator current biquaternion |
 | $E_0=-2V\int\frac{d^3p}{(2\pi)^3}E_{\vec p}$ | Normal-ordering constant |
 | $\tilde P_{\mathrm{fop}}=iHe_t+P_{\mathrm{fop},k}\vec e_k\in\mathcal{A}\otimes\mathbb{B}_{\Phi}$ | Operator four-momentum biquaternion |
-| $\tilde S_k=\tfrac{\hbar}{2}i\vec e_k$, $\tilde S_\pm=\tfrac{\hbar}{2}(i\vec e_x\mp \vec e_y)$ | Spin generators (informational sector) |
+| $\tilde S_k=\frac{m\,c}{2\,k_m}i\vec e_k$, $\tilde S_\pm=\frac{m\,c}{2\,k_m}(i\vec e_x\mp \vec e_y)$ | Spin generators (informational sector) |
 | $\tilde S_+/\hbar=\tfrac12(i\vec e_x-\vec e_y)$, $\tilde S_-/\hbar=\tfrac12(i\vec e_x+\vec e_y)$, $(-1)^F=i\vec e_z$ | Single-mode ladder and parity inside $\mathbb{B}$ |
 | $\{\tilde{Ξ}_{\mathrm{fop}}(x)\mathrm{Sc}(\tilde{Ξ}_{\mathrm{fop}}^{\dagger}(y)i\vec e_x\tilde X)\}=(\mathbb{D}+k_m)\Delta_{\mathrm{A}}(x-y)\tilde X$ | Covariant anticommutator ($c$-number), for every element $\tilde X$ |
 | $\Delta_{\mathrm{A}}(x-y)$ | Antisymmetric Pauli–Jordan kernel; support inside the light cone |
 | $G_{\mathrm{S}}(x-y)$ | Symmetric kernel of the commutator's vacuum expectation |
 | $F(\vec\Delta)=\int\frac{d^3p}{(2\pi)^3}\frac{\cos(\vec p\cdot\vec\Delta)}{E_{\vec p}}=\frac{m}{2\pi^2\lvert\vec\Delta\rvert}K_1(m\lvert\vec\Delta\rvert)$ | Equal-time commutator kernel, nonzero at every spacelike separation |
-| $S_F(p):\tilde X\mapsto-\frac{i(i\tilde X\vec e_x p_0-\sum_k i\vec e_k\tilde X\vec e_y p_k+m\tilde X)}{\tilde P\tilde P^{\natural}+\hbar^2k_m^2-i\epsilon}$ | Feynman propagator amplitude, as a map on elements |
+| $S_F(p):\tilde X\mapsto-\frac{i(i\tilde X\vec e_x p_0-\sum_k i\vec e_k\tilde X\vec e_y p_k+m\tilde X)}{\tilde P\tilde P^{\natural}+m^{2}\,c^{2}-i\epsilon}$ | Feynman propagator amplitude, as a map on elements |
 | $\tilde P=i(E_{\vec p}/c)\,e_t+\vec p$, $\tilde P\tilde P^{\natural}=-p^2$ | $c$-number wave biquaternion and mass shell |
 
 Here $k_m=mc/\hbar$ is the mass wave number, the inverse of the mass length.

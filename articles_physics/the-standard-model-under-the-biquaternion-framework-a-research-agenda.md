@@ -34,17 +34,17 @@ $$
 \mathrm{U}(1) \;=\; \{\lambda = \exp(i\theta) : \theta \in \mathbb{R}\} \;\subset\; \mathbb{B}_{C} .
 $$
 
-Because $\lambda$ is central and constant, it passes through the gradient, so the massless biquaternion equation $\tilde{\nabla}\tilde{Ξ}_{\mathrm{sp}} = 0$ is invariant under the global phase $\tilde{Ξ}_{\mathrm{sp}}\mapsto \exp(i\theta)\tilde{Ξ}_{\mathrm{sp}}$. Making the phase local, $\lambda = \exp(iϙ\Gamma(\tilde{Q})/\hbar)$, forces a connection with the transformation law
+Because $\lambda$ is central and constant, it passes through the gradient, so the massless biquaternion equation $\tilde{\nabla}\tilde{Ξ}_{\mathrm{sp}} = 0$ is invariant under the global phase $\tilde{Ξ}_{\mathrm{sp}}\mapsto \exp(i\theta)\tilde{Ξ}_{\mathrm{sp}}$. Making the phase local, $\lambda = \exp(\frac{k_m\,i\,ϙ\,\Gamma\,\tilde{Q}}{m\,c})$, forces a connection with the transformation law
 
 $$
 \tilde{A}_2 = \tilde{A} - \tilde{\nabla}\Gamma,
 \qquad
-D = \tilde{\nabla} + \frac{iϙ}{\hbar}\tilde{A},
+D = \tilde{\nabla} +\frac{k_m\,i\,ϙ}{m\,c}\tilde{A},
 \qquad
-D_\mu = \partial/\partial R_\mu + \frac{iϙ}{\hbar}A_\mu,
+D_\mu = \partial/\partial R_\mu +\frac{k_m\,i\,ϙ}{m\,c}A_\mu,
 $$
 
-under which $D\tilde{Ξ}_{\mathrm{sp}}$ transforms by the phase factor. The field strength is the vector part of $\tilde{\nabla}^{\natural}\tilde{A}$ and satisfies the curvature identity $[D_\mu,D_\nu] = \tfrac{iϙ}{\hbar}F_{\mu\nu}$. The abelian gauge group is **canonically attached to the algebra**: the only phase that commutes with the whole algebra must lie in the centre, and the centre is one complex dimension, so no choice of representation is made in selecting it.
+under which $D\tilde{Ξ}_{\mathrm{sp}}$ transforms by the phase factor. The field strength is the vector part of $\tilde{\nabla}^{\natural}\tilde{A}$ and satisfies the curvature identity $[D_\mu,D_\nu] =\frac{k_m\,i\,ϙ}{m\,c}F_{\mu\nu}$. The abelian gauge group is **canonically attached to the algebra**: the only phase that commutes with the whole algebra must lie in the centre, and the centre is one complex dimension, so no choice of representation is made in selecting it.
 
 Two properties of this factor are as important for the agenda as the factor itself. First, the charge $ϙ$ is a **parameter**; the algebra does not fix it. Second, a central element acts as a **scalar** on the algebra: left multiplication by $\lambda = \exp(i\theta)$ multiplies every element by the same factor. A gauge group drawn from the centre therefore assigns every element the same charge — it is **vector-like** and cannot distinguish left from right. This is established in *Chiral Fermions in the Biquaternion Framework*, and it is the reason the abelian factor as it stands cannot be weak hypercharge, which is chiral.
 
@@ -129,9 +129,9 @@ $$
 so that $\tilde{Ξ}_{\mathrm{sp},L}b=ϙ_L\tilde{Ξ}_{\mathrm{sp},L}$ and $\tilde{Ξ}_{\mathrm{sp},R}b=ϙ_R\tilde{Ξ}_{\mathrm{sp},R}$, and the covariant derivative and its curvature are the maps
 
 $$
-\tilde{Ξ}_{\mathrm{sp}}\longmapsto\frac{\partial}{\partial R_\mu}\tilde{Ξ}_{\mathrm{sp}}+\frac{i}{\hbar}A_\mu\,(\tilde{Ξ}_{\mathrm{sp}} b),
+\tilde{Ξ}_{\mathrm{sp}}\longmapsto\frac{\partial}{\partial R_\mu}\tilde{Ξ}_{\mathrm{sp}}+\frac{k_m\,i}{m\,c}A_\mu\,(\tilde{Ξ}_{\mathrm{sp}} b),
 \qquad
-[D_\mu,D_\nu]:\ \tilde{Ξ}_{\mathrm{sp}}\longmapsto\frac{i}{\hbar}F_{\mu\nu}\,(\tilde{Ξ}_{\mathrm{sp}} b).
+[D_\mu,D_\nu]:\ \frac{k_m\,\tilde{Ξ}_{\mathrm{sp}}\,\longmapsto\,i}{m\,c}F_{\mu\nu}\,(\tilde{Ξ}_{\mathrm{sp}} b).
 $$
 
 The derivative is gauge covariant for arbitrary $ϙ_L,ϙ_R$, and the mass bilinear is gauge invariant **if and only if $ϙ_L = ϙ_R$**. This **mass selection rule** is the framework's form of the Standard Model's requirement that a chiral fermion acquire mass only through a compensating scalar. The maps are the chiral article's, written with the charge element $b$.
@@ -154,7 +154,7 @@ through which the continuous central phase passes: the vector $\mathrm{U}(1)$ is
 
 **Source.** *The Gauge Principle in Biquaternionic Form*. **Status.** The gauge principle is established; the identification with weak hypercharge is not made and has no route yet.
 
-What is established is a single abelian gauge factor, canonical and vector-like: the $*$-unitary part of the centre, with connection law $\tilde{A}_2 = \tilde{A} - \tilde{\nabla}\Gamma$ and curvature $[D_\mu,D_\nu] = \tfrac{iϙ}{\hbar}F_{\mu\nu}$. What weak hypercharge requires is a factor that (i) carries a definite set of **assignments** — different eigenvalues on different Standard Model multiplets, the pattern that makes $Ϙ = T_3 + Y$ work and that cancels the anomalies — and (ii) acts **chirally**, with independent left and right charges on a single fermion, since the left- and right-handed components of the Standard Model fermions carry different hypercharge.
+What is established is a single abelian gauge factor, canonical and vector-like: the $*$-unitary part of the centre, with connection law $\tilde{A}_2 = \tilde{A} - \tilde{\nabla}\Gamma$ and curvature $[D_\mu,D_\nu] =\frac{k_m\,i\,ϙ}{m\,c}F_{\mu\nu}$. What weak hypercharge requires is a factor that (i) carries a definite set of **assignments** — different eigenvalues on different Standard Model multiplets, the pattern that makes $Ϙ = T_3 + Y$ work and that cancels the anomalies — and (ii) acts **chirally**, with independent left and right charges on a single fermion, since the left- and right-handed components of the Standard Model fermions carry different hypercharge.
 
 The framework's abelian factor supplies neither. Its action is a scalar multiplication, so it gives every element the same charge; under the alternative real-structure interpretation it would be axial, but still a single one-dimensional charge with no room for independent left and right assignments. And the coupling $ϙ$ is one parameter, not a table. There is no object in the series from which the numbers $1/6$, $-1/2$, $2/3$, and so on could be read off. **An abelian gauge factor is established; weak hypercharge is not derived, and no computation in the series points toward it.** This item is classified **no route yet**.
 
@@ -369,10 +369,10 @@ The article commits throughout to the agenda's central discipline: no section as
 | $\Box = \tilde{\nabla}\tilde{\nabla}^{\natural}$ | d'Alembertian |
 | $\tilde{A} = i\,a'_t\,e_t + \vec A$ | Abelian connection (in $\mathbb{B}_{\Phi}$) |
 | $\tilde{A}_2 = \tilde{A} - \tilde{\nabla}\Gamma$ | Abelian gauge transformation |
-| $D = \tilde{\nabla} + \tfrac{iϙ}{\hbar}\tilde{A}$ | Abelian covariant derivative |
+| $D = \tilde{\nabla} +\frac{k_m\,i\,ϙ}{m\,c}\tilde{A}$ | Abelian covariant derivative |
 | $[e_a,e_b]=2\varepsilon_{abc}e_c$, $T_a=\tfrac12 e_a$ | Commutator and normalized generators of $\mathrm{SU}(2)\subset\mathbb{B}_{\Phi}$ |
 | $\mathbb{B}_{\Phi} = \mathbb{R}(ie_t)\oplus\mathrm{SU}(2)=\mathrm{U}(2)$ | Material-sector Lie-algebra decomposition (dimension $4$) |
-| $\mathcal{A}_\mu\in\mathrm{SU}(2)$, $\kappa=ϙ/\hbar$ | Non-abelian connection and coupling |
+| $\mathcal{A}_\mu\in\mathrm{SU}(2)$, $\kappa=\frac{k_m\,ϙ}{m\,c}$ | Non-abelian connection and coupling |
 | $F_{\mu\nu}=\partial/\partial R_\mu\,\mathcal{A}_\nu-\partial/\partial R_\nu\,\mathcal{A}_\mu+i\kappa[\mathcal{A}_\mu,\mathcal{A}_\nu]$ | Non-abelian field strength |
 | $F_{2,\mu\nu}=\tilde UF_{\mu\nu}\tilde U^{-1}$, $[D_\mu,D_\nu]=i\kappa F_{\mu\nu}$ | Adjoint transformation law and curvature identity |
 | $D_\lambda F_{\mu\nu}+\text{cyclic}=0$ | Bianchi identity |

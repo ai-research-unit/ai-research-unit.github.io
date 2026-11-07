@@ -15,7 +15,7 @@ $$
 \mathrm{SU}(2)=\mathrm{span}_\mathbb{R}\{\vec e_x,\vec e_y,\vec e_z\}\subset\mathbb{B}_{\Phi} ,
 $$
 of real dimension four, with the commutator $[e_a,e_b]$ read from the multiplication table of *Algebra and Element Conventions* and generators $T_a=\tfrac12 e_a$. The connection components are taken in the unnormalized basis $e_a$, in which the structure constants are $f_{abc}=2\varepsilon_{abc}$; in the normalized basis $T_a=\tfrac12e_a$ the same algebra reads $[T_a,T_b]=\sum_c\varepsilon_{abc}T_c$, with $f_{abc}=\varepsilon_{abc}$; and in the Hermitian-generator realization $T_a=ie_a\in\mathbb{B}_{\Psi}$ of the BRST companion it reads $[T_a,T_b]=2i\sum_c\varepsilon_{abc}T_c=i\sum_c f_{abc}T_c$, the central $i$ relating the two realizations. The Cartan generator of the compact factor is $T_3=\tfrac12\vec e_z$, whose Hermitian partner is $iT_3=\tfrac12i\vec e_z$; the charge operator is the adjoint action $\tilde S_{\mathrm{adj},3}=\tfrac12\mathrm{ad}_{i\vec e_z}=\mathrm{ad}_{\,iT_3}$, whose eigenvalues and eigenvectors on the material basis are derived below.
-Spacetime indices are written low and every contraction is an explicit sum, in the $i c r'_t$ device of *Unit, Index and Notation Conventions*; with that device the plain sum $\sum_\mu W_\mu W_\mu$ is already the invariant. The one metric a display needs is the unit metric $\delta_{\mu\nu}=(1,1,1,1)$ of *Frame and Metric Conventions*, the same in both frames, and the polarization sums below use it; the one minus of the interval is the square of the $i$ in $Q_t=i c r'_t$. Natural units $\hbar=c=1$ are used for the electroweak formulae, where the standard symbols $g,g_{\mathrm Y},v,\theta_W$ carry the standard normalization, while the framework's coupling is $\kappa=ϙ/\hbar$ where it appears in the algebra's expressions.
+Spacetime indices are written low and every contraction is an explicit sum, in the $i c r'_t$ device of *Unit, Index and Notation Conventions*; with that device the plain sum $\sum_\mu W_\mu W_\mu$ is already the invariant. The one metric a display needs is the unit metric $\delta_{\mu\nu}=(1,1,1,1)$ of *Frame and Metric Conventions*, the same in both frames, and the polarization sums below use it; the one minus of the interval is the square of the $i$ in $Q_t=i c r'_t$. Natural units $\hbar=c=1$ are used for the electroweak formulae, where the standard symbols $g,g_{\mathrm Y},v,\theta_W$ carry the standard normalization, while the framework's coupling is $\kappa=\frac{k_m\,ϙ}{m\,c}$ where it appears in the algebra's expressions.
 
 - Companion article *Electroweak Theory under the Biquaternion Framework — A Research Agenda*, for the boundary statement and the list of open problems.
 - Companion article *The Standard Model under the Biquaternion Framework — A Research Agenda*, for the placement of the electroweak sector in the larger structure.
@@ -100,7 +100,7 @@ which holds for a scalar multiplet of weak isospin $1/2$ and hypercharge $1/2$; 
 
 The framework's mass formula for an abelian charged scalar, $\mathcal{L}\supset-\sum_{\mu,\nu}g_{\mu\nu}(D_\mu\xi_{\mathrm{scl}})^*(D_\nu\xi_{\mathrm{scl}})$ with $D_\mu=\partial/\partial R_\mu+i\kappa A_\mu$ and $\langle|\xi_{\mathrm{scl}}|\rangle=v/\sqrt2$, is
 $$
-\boxed{\;M_A=\frac{ϙ v}{\hbar}=\kappa v\;},
+\boxed{\;M_A=\frac{k_m\,ϙ\,v}{m\,c}=\kappa v\;},
 $$
 as the Higgs companion derives; the standard $M_W=gv/2$ is the same formula with the effective charge $ϙ=g/2$, because the W couples to the doublet through $T_3=\pm1/2$. The factor of one-half is the isospin of the scalar, not of the W. This distinction is the crux of the third section.
 
@@ -389,7 +389,7 @@ The charged current is chiral, $J^{+}_\mu$ of §*The Currents and the Self-Coupl
 | $\mathrm{SU}(2)=\mathrm{span}_\mathbb{R}\{\vec e_x,\vec e_y,\vec e_z\}$ | Compact gauge algebra |
 | $T_a=\tfrac12e_a$, $[T_a,T_b]=\sum_c\varepsilon_{abc}T_c$ | The generators of the compact factor and their commutator |
 | $f_{abc}=2\varepsilon_{abc}$ | Structure constants of the compact factor, in the unnormalized basis $e_a$ ($f_{abc}=\varepsilon_{abc}$ in the normalized basis $T_a=\tfrac12e_a$) |
-| $\kappa=ϙ/\hbar$ | Framework gauge coupling |
+| $\kappa=\frac{k_m\,ϙ}{m\,c}$ | Framework gauge coupling |
 | $\tilde S_{\mathrm{adj},3}=\tfrac12\mathrm{ad}_{i\vec e_z}=\mathrm{ad}_{\,iT_3}$, $iT_3=\tfrac12i\vec e_z$ | Cartan generator of the adjoint action |
 | $W^\pm\leftrightarrow \vec e_x\pm i\vec e_y$, $\tilde S_{\mathrm{adj},3} W^\pm=\pm W^\pm$ | Charged directions and their eigenvalues |
 | $Z_\mu=\cos\theta_W W_{\mu 3}-\sin\theta_W B_\mu$, $A_\mu=\sin\theta_W W_{\mu 3}+\cos\theta_W B_\mu$ | Neutral mixing |
@@ -398,7 +398,7 @@ The charged current is chiral, $J^{+}_\mu$ of §*The Currents and the Self-Coupl
 | $\rho=M_W^2/(M_Z^2\cos^2\theta_W)=1$ | Tree-level relation for a doublet |
 | $e=g\sin\theta_W=g_{\mathrm Y}\cos\theta_W$ | Electromagnetic coupling |
 | $v=( \sqrt{2}G_F)^{-1/2}=246.22$ GeV | Electroweak scale |
-| $M_A=\kappa v=ϙ v/\hbar$ | Framework abelian mass from the central scalar |
+| $M_A=\kappa v=\frac{k_m\,ϙ\,v}{m\,c}$ | Framework abelian mass from the central scalar |
 | $J^{+}_\mu=\sum_{\text{doublets}}\mathrm{Sc}\big(\tilde{Ξ}_{\mathrm{sp},\mathrm u}^*\,i\,(i\vec e_\mu\tilde{Ξ}_{\mathrm{sp},\mathrm d,\mathrm L}\vec e_{\nu(\mu)})\vec e_x\big)$ | Charged current (chiral) |
 | $J_{Z\mu}=\sum_f\mathrm{Sc}\big(f^{*}\,i\,(i\vec e_\mu(T_{3f}f_{\mathrm L}-Q_f\sin^2\theta_Wf)\vec e_{\nu(\mu)})\vec e_x\big)$ | Neutral current |
 | $\mathcal{L}_3\sim\kappa\sum_{a,b,c}f_{abc}(\partial\mathcal{A}_{\nu a}/\partial R_\mu-\partial\mathcal{A}_{\mu a}/\partial R_\nu)\mathcal{A}_{\mu b}\mathcal{A}_{\nu c}$, $\mathcal{L}_4\sim\kappa^2\sum_{a,b,c,d}f_{abe}f_{cde}\mathcal{A}_{\mu a}\mathcal{A}_{\nu b}\mathcal{A}_{\mu c}\mathcal{A}_{\nu d}$ | Trilinear and quartic self-couplings, derivative pair antisymmetrized |

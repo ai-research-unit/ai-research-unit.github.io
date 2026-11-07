@@ -49,8 +49,8 @@ that is, under $G=\mathrm{U}(1)_{\mathrm{phase}}\times SU(2)_{\mathrm{spin}}$; t
 For a dilute gas in a uniform field the mean-field energy density of the condensate is, in the standard treatment,
 
 $$
-\boxed{\;\mathcal{E}=\frac{\hbar c}{2\,k_m}\lvert\nabla\tilde{Ξ}_{\mathrm{sp}}\rvert^2+Vn+\frac{c_0}{2}n^2+\frac{c_2}{2}n^2\,\lvert\langle\vec F\rangle\rvert^2
-+p\,\langle F_z\rangle+q\,\langle F_z^2\rangle\;},
+\boxed{\;\mathcal{E}=\frac{m\,c^{2}}{2\,k_m^{2}}\lvert\nabla\tilde{Ξ}_{\mathrm{sp}}\rvert^2+Vn+\frac{c_0}{2}n^2+\frac{c_2}{2}n^2\,\lvert\langle\vec F\rangle\rvert^2
++p\,\langle  F_z\rangle+q\,\langle  F_z^2\rangle\;},
 $$
 
 Here $k_m=mc/\hbar$ is the mass wave number, the inverse of the mass length.
@@ -58,9 +58,9 @@ Here $k_m=mc/\hbar$ is the mass wave number, the inverse of the mass length.
 with the spin-independent and spin-dependent contact couplings
 
 $$
-c_0=\frac{4\pi\hbar c}{3\,k_m}\left(2a_2+a_0\right),
+c_0=\frac{4\,m\,c^{2}\,\pi}{3\,k_m^{2}}\left(2a_2+a_0\right),
 \qquad
-c_2=\frac{4\pi\hbar c}{3\,k_m}\left(a_2-a_0\right),
+c_2=\frac{4\,m\,c^{2}\,\pi}{3\,k_m^{2}}\left(a_2-a_0\right),
 $$
 
 built from the two-body scattering lengths $a_0$ and $a_2$ in the total-spin-zero and total-spin-two channels, and with the linear and quadratic Zeeman terms $p\propto B$ and $q\propto B^2$. This energy is the standard mean-field functional of the spin-one condensate, and the following consequences of it are likewise standard.
@@ -114,7 +114,7 @@ $$
 \tilde F_k=\tilde S_k^{(1)}+\tilde S_k^{(2)},
 $$
 
-which act irreducibly on the triplet and annihilate the singlet, and whose restrictions reproduce the matrices $F_k$ above with matrix elements $\sqrt2\hbar$ in the standard normalisation. A condensate state is thus an element of $\mathbb{B}\otimes_\mathbb{C}\mathbb{B}$ of the form
+which act irreducibly on the triplet and annihilate the singlet, and whose restrictions reproduce the matrices $F_k$ above with matrix elements $\sqrt\frac{2\,m\,c}{k_m}$ in the standard normalisation. A condensate state is thus an element of $\mathbb{B}\otimes_\mathbb{C}\mathbb{B}$ of the form
 
 $$
 \rho=\tilde\Pi_{\mathrm{sym}}\,\rho\,\tilde\Pi_{\mathrm{sym}},\qquad \rho\ge0,\qquad \mathrm{Tr}\,\rho=1 ,

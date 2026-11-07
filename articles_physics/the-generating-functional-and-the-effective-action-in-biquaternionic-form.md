@@ -12,7 +12,7 @@ $$
 \qquad
 \tilde{Ξ}_{\mathrm{cl}} = \frac{\delta W}{\delta \tilde J},
 $$
-the **effective action**, whose derivatives give the one-particle-irreducible (1PI) correlation functions, and whose expansion in powers of $\hbar$ is the loop expansion. This article asks what the biquaternion algebra $\mathbb{B}$ contributes to that pair of objects.
+the **effective action**, whose derivatives give the one-particle-irreducible (1PI) correlation functions, and whose expansion in powers of $\frac{m\,c}{k_m}$ is the loop expansion. This article asks what the biquaternion algebra $\mathbb{B}$ contributes to that pair of objects.
 
 The answer is a factorization statement and a convexity statement, both inherited from the plain form, and both sharpened by the sector split.
 
@@ -30,7 +30,7 @@ $$
 since the Legendre transform of a sum of independent functionals is the sum of the Legendre transforms.
 - **The one-loop term.** The first quantum correction to the effective action is the functional determinant,
 $$
-\Gamma[\tilde{Ξ}_{\mathrm{cl}}] = S[\tilde{Ξ}_{\mathrm{cl}}] + \frac{\hbar}{2}\,\mathrm{Tr}\log S^{(2)}[\tilde{Ξ}_{\mathrm{cl}}] + O(\hbar^2),
+\Gamma[\tilde{Ξ}_{\mathrm{cl}}] = S[\tilde{Ξ}_{\mathrm{cl}}] +\frac{m\,c}{2\,k_m}\,\mathrm{Tr}\log  S^{(2)}[\tilde{Ξ}_{\mathrm{cl}}] + O(\frac{m^{2}\,c^{2}}{k_m^{2}}),
 $$
 where $S^{(2)}[\tilde{Ξ}_{\mathrm{cl}}]$ is the second variation of the action about the classical field. In the biquaternion framework $S^{(2)}[\tilde{Ξ}_{\mathrm{cl}}]$ is an operator on the module, and the trace is the trace pairing; the determinant is the subject of *The Functional Determinant in Biquaternionic Form*.
 - **The vacuum condition.** The classical field that extremizes $\Gamma$ is the theory's vacuum expectation value, and in the framework the tree-level vacuum is a **minimal idempotent** of $\mathbb{B}_{\Psi}$, selected by the sign of the quadratic term, as *The Biquaternion Vacuum as a Minimal Idempotent* establishes. The effective-action version of that statement is that the vacuum minimizes the effective potential on the manifold of normalizable states.
@@ -41,11 +41,11 @@ The article proceeds as follows. The next section defines the connected function
 
 Write the functional integral with a source as in the previous article,
 $$
-Z[\tilde J] = \int\mathcal{D}\tilde{Ξ}\; \exp(\,iS[\tilde{Ξ}]/\hbar + \langle \tilde J,\tilde{Ξ}\rangle),
+Z[\tilde J] = \int\mathcal{D}\tilde{Ξ}\; \exp(\,iS[\tilde{Ξ}]\frac{k_m}{m\,c}+ \langle  \tilde J,\tilde{Ξ}\rangle),
 $$
 with $\tilde J$ valued in the module and the pairing as above. The connected functional is
 $$
-W[\tilde J] = -i\hbar\,\log Z[\tilde J].
+W[\tilde J] = -\frac{m\,c\,i}{k_m}\log  Z[\tilde J].
 $$
 
 **Derivatives give correlators.** The *n*-point connected correlation functions are the functional derivatives
@@ -61,7 +61,7 @@ W[\tilde J] = \tfrac12\big\langle \tilde J,K_{\mathrm{kin}}{}^{-1}\tilde J\big\r
 \qquad\text{equivalently}\qquad
 W[\tilde J] = \tfrac12\int\frac{d^4k}{(2\pi)^4}\,\frac{\langle\tilde J(-k),\tilde J(k)\rangle}{\tilde P\tilde P^{\natural}+\hbar^2k_m^2,
 $$
-using the wave biquaternion $\tilde P=i(E/c)e_t+\vec p$ and $\tilde P\tilde P^{\natural}=-p^2$. The kernel displayed is that of the kinetic operator $-\Box+k_m^{2}$, whose symbol is the central mass-shell operator $\mathcal{M}(\tilde P)=\tilde P\tilde P^{\natural}+\hbar^2k_m^2$; the action's operator is $K_{\mathrm{kin}}=\Box-k_m^{2}$, whose symbol is $-\mathcal{M}$, so the kernel of $K_{\mathrm{kin}}{}^{-1}$ is its negative, $-1/\mathcal{M}$. Recording this once fixes the relative sign of the source kernel and of the classical field below. Its second derivative is the propagator $D_F$, the object of *The Feynman Propagator in Biquaternionic Form*; the framework's contribution is the central scalar kinetic operator $\mathcal{M}(\tilde P)=\tilde P\tilde P^{\natural}+\hbar^2k_m^2$, as before. Here $k_m=mc/\hbar$ is the mass wave number, the inverse of the mass length.
+using the wave biquaternion $\tilde P=i(E/c)e_t+\vec p$ and $\tilde P\tilde P^{\natural}=-p^2$. The kernel displayed is that of the kinetic operator $-\Box+k_m^{2}$, whose symbol is the central mass-shell operator $\mathcal{M}(\tilde P)=\tilde P\tilde P^{\natural}+m^{2}\,c^{2}$; the action's operator is $K_{\mathrm{kin}}=\Box-k_m^{2}$, whose symbol is $-\mathcal{M}$, so the kernel of $K_{\mathrm{kin}}{}^{-1}$ is its negative, $-1/\mathcal{M}$. Recording this once fixes the relative sign of the source kernel and of the classical field below. Its second derivative is the propagator $D_F$, the object of *The Feynman Propagator in Biquaternionic Form*; the framework's contribution is the central scalar kinetic operator $\mathcal{M}(\tilde P)=\tilde P\tilde P^{\natural}+m^{2}\,c^{2}$, as before. Here $k_m=mc/\hbar$ is the mass wave number, the inverse of the mass length.
 
 **A remark on the trace.** The derivative $\delta W/\delta\tilde J$ is defined through the pairing, and because the pairing is a real bilinear form on the module, it takes a module-valued source to a module-valued classical field. No privileged matrix basis is needed; the derivative is the module's own gradient. This will matter in the next section, where the Legendre transform is taken on the module and not on a coordinate vector space.
 
@@ -118,9 +118,9 @@ The effective action is the generating functional of the 1PI correlation functio
 $$
 \Gamma^{(n)}[\tilde{Ξ}_{\mathrm{cl}}=0] = \big\langle \tilde{Ξ}\cdots\tilde{Ξ}\big\rangle_{\!1\text{PI}} ,
 $$
-and it has a loop expansion in powers of $\hbar$,
+and it has a loop expansion in powers of $\frac{m\,c}{k_m}$,
 $$
-\Gamma[\tilde{Ξ}_{\mathrm{cl}}] = S[\tilde{Ξ}_{\mathrm{cl}}] + \hbar\,\Gamma_1[\tilde{Ξ}_{\mathrm{cl}}] + \hbar^2\,\Gamma_2[\tilde{Ξ}_{\mathrm{cl}}] + \cdots .
+\Gamma[\tilde{Ξ}_{\mathrm{cl}}] = S[\tilde{Ξ}_{\mathrm{cl}}] +\frac{m\,c\,\Gamma_{1}}{k_m}[\tilde{Ξ}_{\mathrm{cl}}] +\frac{m^{2}\,c^{2}\,\Gamma_{2}}{k_m^{2}}[\tilde{Ξ}_{\mathrm{cl}}] + \cdots .
 $$
 The tree term is the classical action. The one-loop term is the functional determinant of the second variation,
 $$
@@ -177,7 +177,7 @@ whose minimum is $\tilde{Ξ}_{\mathrm{cl}}=0$ for $m^2>0$, the symmetric vacuum.
 
 **The one-loop potential and convexity.** The one-loop correction
 $$
-V_{\mathrm{eff}}(\tilde{Ξ}_{\mathrm{cl}}) = V(\tilde{Ξ}_{\mathrm{cl}}) + \frac{\hbar}{2}\int\frac{d^4k}{(2\pi)^4}\log\big(k^2+\frac{\delta^2V}{\delta\tilde{Ξ}^{2}}(\tilde{Ξ}_{\mathrm{cl}})\big) + \cdots
+V_{\mathrm{eff}}(\tilde{Ξ}_{\mathrm{cl}}) = V(\tilde{Ξ}_{\mathrm{cl}}) +\frac{m\,c}{2\,k_m}\int\frac{d^4k}{(2\pi)^4}\log\big(k^2+\frac{\delta^2V}{\delta\tilde{Ξ}^{2}}(\tilde{Ξ}_{\mathrm{cl}})\big) + \cdots
 $$
 is the standard Coleman–Weinberg form, and it is manifestly convex in the region where $\frac{d^2V}{d\xi^2}>0$; where the tree potential is non-convex the one-loop potential is amended by the Maxwell construction, which is exactly the statement that the Legendre transform is the convex envelope of $W$. The framework's contribution is again the real form with respect to which the convexity is taken, and the orthogonality of the sectors. The standard results are transcribed and cited.
 
@@ -193,13 +193,13 @@ S[\tilde{Ξ}_{\mathrm{cl}}+\delta\tilde{Ξ}] = S[\tilde{Ξ}_{\mathrm{cl}}] + \tf
 $$
 where the linear term vanishes by the classical equation of motion, $\delta S/\delta\tilde{Ξ}_{\mathrm{cl}}=0$. The Gaussian integral over the fluctuation $\delta\tilde{Ξ}$ gives
 $$
-W[\tilde J] = S[\tilde{Ξ}_{\mathrm{cl}}] + \tfrac12\big\langle \tilde J,\tilde{Ξ}_{\mathrm{cl}}\big\rangle - \frac{i\hbar}{2}\,\mathrm{Tr}\log S^{(2)}[\tilde{Ξ}_{\mathrm{cl}}] + O(\hbar^2) ,
+W[\tilde J] = S[\tilde{Ξ}_{\mathrm{cl}}] + \tfrac12\big\langle  \tilde J,\tilde{Ξ}_{\mathrm{cl}}\big\rangle  -\frac{m\,c\,i}{2\,k_m}\,\mathrm{Tr}\log  S^{(2)}[\tilde{Ξ}_{\mathrm{cl}}] + O(\frac{m^{2}\,c^{2}}{k_m^{2}}) ,
 $$
 so that
 $$
-\Gamma[\tilde{Ξ}_{\mathrm{cl}}] = S[\tilde{Ξ}_{\mathrm{cl}}] - \frac{i\hbar}{2}\,\mathrm{Tr}\log S^{(2)}[\tilde{Ξ}_{\mathrm{cl}}] + O(\hbar^2)
+\Gamma[\tilde{Ξ}_{\mathrm{cl}}] = S[\tilde{Ξ}_{\mathrm{cl}}] -\frac{m\,c\,i}{2\,k_m}\,\mathrm{Tr}\log  S^{(2)}[\tilde{Ξ}_{\mathrm{cl}}] + O(\frac{m^{2}\,c^{2}}{k_m^{2}})
 \;\;\xrightarrow[\text{Euclidean}]{}\;\;
-S_E[\tilde{Ξ}_{\mathrm{cl}}] + \frac{\hbar}{2}\,\mathrm{Tr}\log S_E^{(2)}[\tilde{Ξ}_{\mathrm{cl}}] + O(\hbar^2),
+S_E[\tilde{Ξ}_{\mathrm{cl}}] +\frac{m\,c}{2\,k_m}\,\mathrm{Tr}\log  S_E^{(2)}[\tilde{Ξ}_{\mathrm{cl}}] + O(\frac{m^{2}\,c^{2}}{k_m^{2}}),
 $$
 the last form under the Wick rotation that turns $iS$ into $-S_E$. The logarithm of the fluctuation operator's determinant is thus the whole of the one-loop effective action, and its regularization is the source of the trace anomaly of *The Trace Anomaly in Biquaternionic Form*.
 
@@ -252,13 +252,13 @@ Because a central kinetic operator does not mix the material and informational s
 | $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ | Biquaternion algebra, $\cong M_2(\mathbb{C})$ |
 | $\mathbb{B}_{\Phi},\mathbb{B}_{\Psi}$ | Material (anti-Hermitian) and informational (Hermitian) sectors |
 | $\langle\tilde{Q},\tilde{Q}_1\rangle=\mathrm{Re}\,\mathrm{Tr}(\tilde{Q}^{*}\tilde{Q}_1)$ | Real bilinear form; positive definite on the algebra, with the sectors orthogonal |
-| $Z[\tilde J]=\int\mathcal{D}\tilde{Ξ}\,\exp(iS/\hbar+\langle\tilde J,\tilde{Ξ}\rangle)$ | Generating functional |
-| $W[\tilde J]=-i\hbar\log Z[\tilde J]$ | Connected generating functional |
+| $Z[\tilde J]=\int\mathcal{D}\tilde{Ξ}\,\exp(\frac{k_m\,i\,S}{m\,c}+\langle\tilde J,\tilde{Ξ}\rangle)$ | Generating functional |
+| $W[\tilde J]=-\frac{m\,c\,i}{k_m}\log  Z[\tilde J]$ | Connected generating functional |
 | $\tilde{Ξ}_{\mathrm{cl}}=\delta W/\delta\tilde J$ | Classical field (module-valued) |
 | $\delta\tilde{Ξ}$ | Fluctuation about the classical field, $\tilde{Ξ}_{\mathrm{cl}}+\delta\tilde{Ξ}$ |
 | $\Gamma[\tilde{Ξ}_{\mathrm{cl}}]=\langle\tilde J,\tilde{Ξ}_{\mathrm{cl}}\rangle-W[\tilde J]$ | Effective action (Legendre transform) |
 | $\Gamma^{(2)}W^{(2)}=I$, $W+\Gamma=\langle\tilde J,\tilde{Ξ}_{\mathrm{cl}}\rangle$ | Inverse-Hessian relation; Legendre identity |
-| $\Gamma=S+\hbar\Gamma_1+\cdots$ | Loop expansion |
+| $\Gamma=S+\frac{m\,c\,\Gamma_{1}}{k_m}+\cdots$ | Loop expansion |
 | $\Gamma_1=\tfrac12\mathrm{Tr}\log S^{(2)}[\tilde{Ξ}_{\mathrm{cl}}]$ | One-loop effective action |
 | $S^{(2)}[\tilde{Ξ}_{\mathrm{cl}}]$ | Second variation of the action on the module |
 | $\Gamma=\Gamma_-+\Gamma_+$ | Sector factorization for a central (sector-diagonal) action |

@@ -121,13 +121,13 @@ So the Wick rotation is a **square root of the reflection that separates the two
 The standard Wick rotation is used to convert oscillatory integrals into convergent ones. The Lorentzian path integral
 
 $$
-Z = \int \mathcal{D}\xi\; \exp(iS[\xi]/\hbar)
+Z = \int  \mathcal{D}\xi\; \exp(iS[\xi]\frac{k_m}{m\,c})
 $$
 
 has an oscillating integrand, and it is not absolutely convergent. After the Wick rotation, the path integral becomes
 
 $$
-Z_E = \int \mathcal{D}\xi\; \exp(-S_E[\xi]/\hbar),
+Z_E = \int  \mathcal{D}\xi\; \exp(-S_E[\xi]\frac{k_m}{m\,c}),
 $$
 
 with a decaying integrand, and it is convergent (at least formally). The basis of the procedure is that the wave operator of the Lorentzian formulation, $-c^{-2}\,\partial^2/\partial {r'_{t}}^2 + \Delta$, becomes the Euclidean Laplacian $\partial^2/\partial \tau^2/c^2 + \Delta$, which is elliptic and well behaved.
@@ -169,7 +169,7 @@ The passage from $\mathbb{B}_{\Phi}$ to $\mathbb{B}_{H}$ therefore replaces a pr
 
 ## Why the Change Sometimes Fails
 
-The same passage also removes part of the structure. The Lorentzian structure of $\mathbb{B}_{\Phi}$ — the light cone, the causal ordering of events, the phase $\exp(iS/\hbar)$ with its specific oscillation — is not preserved by the passage to $\mathbb{B}_{H}$. The signs are changed: the quadratic form becomes positive-definite, the hyperbolic operator becomes elliptic, the light cone disappears, because there are no zero divisors on $\mathbb{B}_{H}$.
+The same passage also removes part of the structure. The Lorentzian structure of $\mathbb{B}_{\Phi}$ — the light cone, the causal ordering of events, the phase $\exp(\frac{k_m\,i\,S}{m\,c})$ with its specific oscillation — is not preserved by the passage to $\mathbb{B}_{H}$. The signs are changed: the quadratic form becomes positive-definite, the hyperbolic operator becomes elliptic, the light cone disappears, because there are no zero divisors on $\mathbb{B}_{H}$.
 
 The two slices carry different reality conditions on one complexified quantity, so a quantity must be continued and not carried over. The continuation exists exactly when the deformation of the coefficient crosses no singularity of the continued quantity: no pole and no branch cut in the strip it sweeps. This is the reason the Wick rotation sometimes fails, and the failure is a statement about the analyticity of the quantity, not about the difficulty of the calculation. A free field is continued exactly, and interacting theories fail where the deformation meets the singularities of the continued Green function.
 
