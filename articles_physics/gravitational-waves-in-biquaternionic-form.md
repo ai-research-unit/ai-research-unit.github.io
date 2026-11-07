@@ -219,9 +219,9 @@ which reduces to the traceless form because $I_{ij} = \mathcal{Q}_{ij} + \tfrac1
 **The prefactor, verified on the binary.** The equal-mass circular binary is the standard check. Two masses $m$ in a circular orbit of radius $R$ (separation $d = 2R$) at angular frequency $\omega$ have the traceless quadrupole
 
 $$
-\mathcal{Q}_{xx} = \frac{mR^2}{3} + mR^2\cos 2\omega r'_t, \qquad
-\mathcal{Q}_{yy} = \frac{mR^2}{3} - mR^2\cos 2\omega r'_t, \qquad
-\mathcal{Q}_{xy} = mR^2\sin 2\omega r'_t,
+\mathcal{Q}_{xx} = \frac{mR^2}{3} + mR^2\cos 2\omega r'_t/c, \qquad
+\mathcal{Q}_{yy} = \frac{mR^2}{3} - mR^2\cos 2\omega r'_t/c, \qquad
+\mathcal{Q}_{xy} = mR^2\sin 2\omega r'_t/c,
 $$
 
 whose third derivatives give $d^3\mathcal{Q}_{ij}/d{r'_{t}}^3 d^3\mathcal{Q}_{ij}/d{r'_{t}}^3 = 128\,m^2R^4\omega^6$, a constant. Then

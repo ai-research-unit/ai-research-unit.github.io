@@ -76,7 +76,7 @@ so $\tilde\nabla^2\neq\Box$ and no scalar mass can be subtracted from the square
 
 **On the parent article.** The parent's non-relativistic section works only to leading order. It factors out the rest energy, eliminates the small component with the approximation $\partial/\partial r'_t\,\tilde{Ξ}_{\mathrm{sp},\mathrm{odd}}\approx 0$, and reads off the Pauli Hamiltonian; it stops there. It contains no spin–orbit and no Darwin term, and it does not perform a systematic Foldy–Wouthuysen transformation. It also does not state the sector ($\mathbb{B}_{\Psi}$ and $\mathbb{B}_{\Phi}$) status of the intermediate operators it uses. Problems 3 and 4 supply those orders and that status. Where the parent is silent this is stated explicitly and not silently filled in.
 
-All the derivatives below are $\tilde\nabla$, $\tilde\nabla^{\natural}$ and their pure part $D_3$, and no other differential operator appears. Natural units $\hbar=c=1$ are used while deriving; $\frac{m\,c}{k_m}$ and $c$ are restored wherever a physical statement is made. Fixing the frame, the chirality is the operator that multiplies on the right by $-i\vec e_z$ and takes the two values $\mp1$; the field is one element $F\in\mathbb B$ split into its two parts, $F=F_L+F_R$, of value $-1$ and $+1$. The side is position: the chirality acts as $F\mapsto-iF\vec e_z$, and the left action $F\mapsto-i\vec e_zF$ is a different element, never used here. Since $\vec e_z=-\omega$ with $\omega$ the pseudoscalar of the frame, $\omega^2=-e_t$, the chirality is also written $F\mapsto iF\omega$; the $i$ in front of it is the central scalar $i$ of the algebra and not $\omega$.
+All the derivatives below are $\tilde\nabla$, $\tilde\nabla^{\natural}$ and their pure part $D_3$, and no other differential operator appears. Every display carries $\frac{m\,c}{k_m}$ where a mass is meant and $c$ where a rate meets a length; nothing is set to one. Fixing the frame, the chirality is the operator that multiplies on the right by $-i\vec e_z$ and takes the two values $\mp1$; the field is one element $F\in\mathbb B$ split into its two parts, $F=F_L+F_R$, of value $-1$ and $+1$. The side is position: the chirality acts as $F\mapsto-iF\vec e_z$, and the left action $F\mapsto-i\vec e_zF$ is a different element, never used here. Since $\vec e_z=-\omega$ with $\omega$ the pseudoscalar of the frame, $\omega^2=-e_t$, the chirality is also written $F\mapsto iF\omega$; the $i$ in front of it is the central scalar $i$ of the algebra and not $\omega$.
 
 ### The two Dirac equations
 
@@ -94,10 +94,10 @@ $$
 
 Both gradients act on the left, and no right multiplication and no conjugation enters. On the Dirac module $\Delta=\mathbb B$ the pair is a four-component equation, and it is the equation reduced below.
 
-**The two-sided form.** Kravchenko's dictionary writes the same physics as a single equation on the whole algebra. The derivative acts on the left, the mass acts on the right through $\vec e_z=-\omega$, and a componentwise conjugation supplies the antilinear part. Here $D_3=\sum_k\vec e_k\,\partial/\partial R_k$ is the pure part of the gradient and $\mathcal N$ names the left-hand side. In natural units:
+**The two-sided form.** Kravchenko's dictionary writes the same physics as a single equation on the whole algebra. The derivative acts on the left, the mass acts on the right through $\vec e_z=-\omega$, and a componentwise conjugation supplies the antilinear part. Here $D_3=\sum_k\vec e_k\,\partial/\partial R_k$ is the pure part of the gradient and $\mathcal N$ names the left-hand side. The operator reads
 
 $$
-\mathcal N F=\Bigl(i\frac{\partial}{\partial r'_t}+D_3\Bigr)F-mi\,\overline F\,\vec e_z=0 .
+\mathcal N F=\Bigl(i\frac{\partial}{\partial r'_t}+D_3\Bigr)F-k_mi\,\overline F\,\vec e_z=0 .
 $$
 
 Equivalently,
@@ -128,7 +128,7 @@ The reduction below is of the one-sided pair, read on the Dirac module. The Fold
 
 **The Hamiltonian.** The pair, read on the module, is the equation of motion
 
-$$\frac{m\,c\,i}{k_m}\frac{\partial  F}{\partial  r'_t}=HF,
+$$\frac{m\,c^{2}\,i}{k_m}\frac{\partial  F}{\partial  r'_t}=HF,
 \qquad
 H=\beta mc^2+O+qΞ,
 \qquad
@@ -208,7 +208,7 @@ e^{iS_1}He^{-iS_1}
 =H+i[S_1,H]-\tfrac12[S_1,[S_1,H]]-\tfrac{i}{6}[S_1,[S_1,[S_1,H]]]+\cdots
 $$
 
-the full transformed operator being this expression minus $\frac{m\,c\,i}{k_m}\partial/\partial r'_t$. Using $\beta O=-O\beta$ and $\beta E=E\beta$, the three elementary commutators are
+the full transformed operator being this expression minus $\frac{m\,c^{2}\,i}{k_m}\partial/\partial r'_t$. Using $\beta O=-O\beta$ and $\beta E=E\beta$, the three elementary commutators are
 
 $$
 i[S_1,\beta mc^2]=-O,\qquad
@@ -273,7 +273,7 @@ which is the Pauli equation exactly as the parent reports it. The coefficient $1
 
 *Step 1: the substitution.* The minimal coupling of this exercise is a shift of every derivative, $\partial/\partial R_\mu\to\partial/\partial R_\mu-\frac{k_m\,iqA_{\mu}}{m\,c}$; on the gradient it is $\tilde\nabla\to\tilde\nabla-\frac{k_m\,i\,q\,\tilde{A}_{\Phi}}{m\,c}$, with $A_\mu=(Ξ,-\vec A)$ in this mostly-minus metric, so that $\tilde A_{\Phi}=Ξ e_t-\vec A$. The time component gives
 
-$$\frac{m\,c\,i}{k_m}\frac{\partial}{\partial  r'_t}\ \longrightarrow\ \frac{m\,c\,i}{k_m}\frac{\partial}{\partial  r'_t}-qΞ ,
+$$\frac{m\,c^{2}\,i}{k_m}\frac{\partial}{\partial  r'_t}\ \longrightarrow\ \frac{m\,c^{2}\,i}{k_m}\frac{\partial}{\partial  r'_t}-qΞ ,
 $$
 
 and the spatial components give $\vec\pi=p-q\vec A$, that is the pure part of the gradient becomes $D_3^A$ with $\sum_k\vec e_k\pi_k=-\frac{m\,c\,i\,D_{3}^{A}}{k_m}$. The electrostatic energy is collected in $V=qΞ$. The sign of the coupling is tied to the metric and to the convention for $A_\mu$; the mostly-plus convention often writes the opposite sign. Within this article the statement above is used throughout.
@@ -292,7 +292,7 @@ $$
 \vec\pi\times\vec\pi=\frac{m\,c\,i\,q\,\vec B}{k_m},\qquad  \vec B=\nabla\times\vec A .
 $$
 
-Equivalently, $p\times\vec A+\vec A\times p=-\frac{m\,c\,i\,\vec B}{k_m}$; the two terms are individually non-Hermitian but their sum is Hermitian. In natural units this is the parent's $\vec\pi\times\vec\pi=iq\vec B$. The curl here is the curl of the corpus's pure gradient: for $\vec A=\sum_kA_k\vec e_k$ the product $D_3\vec A$ is $-\nabla\cdot\vec A$ in its scalar part and $\nabla\times\vec A$ in its pure part, with no reversed sign, so $B_k=\epsilon_{kji}\partial/\partial r_jA_i$ is the Cartesian curl and no sign of this exercise had to be changed on that account.
+Equivalently, $p\times\vec A+\vec A\times p=-\frac{m\,c\,i\,\vec B}{k_m}$; the two terms are individually non-Hermitian but their sum is Hermitian. This is the parent's $\vec\pi\times\vec\pi=iq\vec B$, with $q$ the charge and the coupling $\frac{k_m\,ϙ}{m\,c}$ carried in $\vec\pi$. The curl here is the curl of the corpus's pure gradient: for $\vec A=\sum_kA_k\vec e_k$ the product $D_3\vec A$ is $-\nabla\cdot\vec A$ in its scalar part and $\nabla\times\vec A$ in its pure part, with no reversed sign, so $B_k=\epsilon_{kji}\partial/\partial r_jA_i$ is the Cartesian curl and no sign of this exercise had to be changed on that account.
 
 *Step 3: the square of the gradient's pure part.* The product identity of the algebra is the product of two pure elements,
 
@@ -345,7 +345,7 @@ $$
 
 the Hermitian element of the informational sector, exactly as the parent states: $(i\vec B)^{*}=i\vec B$, because $(\vec e_k)^{*}=-\vec e_k$ and the coefficient is imaginary. The kinetic and electrostatic terms are the scalar multiples $(\vec\pi^2 c/(2\,m\,c))e_t$ and $qΞ e_t$ of $\mathbb{B}_{\Psi}$.
 
-*Numerical check.* The commutator identity of Step 2 was verified by finite differences on a $41\times41$ grid with spacing $h=0.1$ on $[-2,2]^2$, with $\vec A=(-y,0,0)$, for which $\vec B=(0,0,1)$, and with the smooth test function $\tilde{Ξ}_{\mathrm{sp}}=\exp(-(x^2+y^2))\cos(2x)\sin(3y)$. With $q=\hbar=1$, the identity $[\pi_x,\pi_y]\tilde{Ξ}_{\mathrm{sp}}=iB_z\tilde{Ξ}_{\mathrm{sp}}$ was confirmed at the interior points with a maximum absolute error $4.8\times10^{-2}$; halving the spacing to $h=0.05$ gave $1.2\times10^{-2}$, the factor four of the second-order central difference.
+*Numerical check.* The commutator identity of Step 2 was verified by finite differences on a $41\times41$ grid with spacing $h=0.1$ on $[-2,2]^2$, with $\vec A=(-y,0,0)$, for which $\vec B=(0,0,1)$, and with the smooth test function $\tilde{Ξ}_{\mathrm{sp}}=\exp(-(x^2+y^2))\cos(2x)\sin(3y)$. With $q=1$ and the action in units of $\hbar$, the identity $[\pi_x,\pi_y]\tilde{Ξ}_{\mathrm{sp}}=iB_z\tilde{Ξ}_{\mathrm{sp}}$ was confirmed at the interior points with a maximum absolute error $4.8\times10^{-2}$; halving the spacing to $h=0.05$ gave $1.2\times10^{-2}$, the factor four of the second-order central difference.
 
 ## Problem 3: The spin–orbit and Darwin terms at the next order
 
@@ -431,18 +431,18 @@ $$
 
 to relative order $c^{-2}$. The first three terms are the Pauli Hamiltonian of Problem 1; the last three are the corrections that the parent article does not reach.
 
-*Step 6: numerical verification against the exact Dirac spectrum.* The three corrections are fixed by their coefficients; a single overall check is therefore decisive. In a hydrogenic atom with nuclear charge $\mathfrak{Z}$, the first-order shifts of the three corrections are, in natural units ($c=1$), the standard ones,
+*Step 6: numerical verification against the exact Dirac spectrum.* The three corrections are fixed by their coefficients; a single overall check is therefore decisive. In a hydrogenic atom with nuclear charge $\mathfrak{Z}$, the first-order shifts of the three corrections are the standard ones, each carrying the rest energy $m\,c^{2}$,
 
 $$
-\Delta E_{\rm kin}=-\frac{m(\mathfrak{Z}\alpha)^4}{2n^3}\!\left[\frac{1}{\ell+\tfrac12}-\frac{3}{4n}\right],
-$$
-
-$$
-\Delta E_{\rm SO}=\frac{m(\mathfrak{Z}\alpha)^4}{2n^3}\,\frac{j(j+1)-\ell(\ell+1)-\tfrac34}{2\ell(\ell+\tfrac12)(\ell+1)}\quad(\ell\neq0),
+\Delta E_{\rm kin}=-\frac{m\,c^{2}(\mathfrak{Z}\alpha)^4}{2n^3}\!\left[\frac{1}{\ell+\tfrac12}-\frac{3}{4n}\right],
 $$
 
 $$
-\Delta E_{\rm D}=\frac{m(\mathfrak{Z}\alpha)^4}{2n^3}\quad(\ell=0),
+\Delta E_{\rm SO}=\frac{m\,c^{2}(\mathfrak{Z}\alpha)^4}{2n^3}\,\frac{j(j+1)-\ell(\ell+1)-\tfrac34}{2\ell(\ell+\tfrac12)(\ell+1)}\quad(\ell\neq0),
+$$
+
+$$
+\Delta E_{\rm D}=\frac{m\,c^{2}(\mathfrak{Z}\alpha)^4}{2n^3}\quad(\ell=0),
 \qquad
 \Delta E_{\rm D}=0\quad(\ell\neq0),
 $$
@@ -533,7 +533,7 @@ $$
 S_1=-\frac{i}{2\,m\,c^{2}}\beta O=-\frac{1}{2\,m\,c}\sum_k\vec e_k\pi_k\,(\cdot)\,\vec e_z=\frac{i}{2\,k_m}\bigl(D_3^A\cdot\bigr)\vec e_z ,
 $$
 
-produces the Pauli Hamiltonian $\frac{m\,c\,i}{k_m}\partial\tilde{Ξ}_{\mathrm{sp},\mathrm{evn}}/\partial r'_t=\bigl[\vec\pi^2 c/(2\,m\,c)+qΞ-(qc/k_m/2)\boldsymbol\sigma\cdot\vec B\bigr]\tilde{Ξ}_{\mathrm{sp},\mathrm{evn}}$, reproducing the parent article. The minimal substitution in the gradient, $\tilde\nabla\to\tilde\nabla-\frac{k_m\,i\,q\,\tilde{A}_{\Phi}}{m\,c}$, gives $[\pi_i,\pi_j]=\frac{m\,c\,i\,q\,\epsilon_{ijk}\,B_{k}}{k_m}$ and $(\boldsymbol\sigma\cdot\vec\pi)^2=\vec\pi^2-\frac{m\,c\,q\,\boldsymbol{\sigma}\,\vec B}{k_m}$, and the coefficient $1/2m$ produced by the elimination fixes $g=2$ and $\vec\mu=(q/m)\vec S$, hence $\mu_B=ec\dfrac{1}{2\,k_{m_e}}$ for the electron. At the next order in $1/c$, the second-order term $-\tfrac12[S_1,[S_1,E]]$ of the first transformation gives the Darwin term $+\frac{m^{2}\,c^{2}}{k_m^{2}}\nabla^2 V/(8m^2c^2)=-(\frac{q}{8\,k_m^{2}})\nabla\cdot\vec E$ and the spin–orbit coupling $-(\frac{q}{4\,m\,c\,k_m})\boldsymbol\sigma\cdot(\vec E\times\vec\pi)=(\frac{1}{4\,m\,c\,k_m})r^{-1}(dV/dr)\boldsymbol\sigma\cdot\vec L$, while the expansion of the free large-part energy gives the relativistic kinetic correction $-(\boldsymbol\sigma\cdot\vec\pi)^4/(8m^3c^2)$. The second transformation removes the residual odd term $O_1$ and adds no even term at this order. Summed, these reproduce the exact Dirac fine structure of hydrogenic ions for 36 levels with $n\le6$, with difference exactly zero.
+produces the Pauli Hamiltonian $\frac{m\,c^{2}\,i}{k_m}\partial\tilde{Ξ}_{\mathrm{sp},\mathrm{evn}}/\partial r'_t=\bigl[\vec\pi^2 c/(2\,m\,c)+qΞ-(qc/k_m/2)\boldsymbol\sigma\cdot\vec B\bigr]\tilde{Ξ}_{\mathrm{sp},\mathrm{evn}}$, reproducing the parent article. The minimal substitution in the gradient, $\tilde\nabla\to\tilde\nabla-\frac{k_m\,i\,q\,\tilde{A}_{\Phi}}{m\,c}$, gives $[\pi_i,\pi_j]=\frac{m\,c\,i\,q\,\epsilon_{ijk}\,B_{k}}{k_m}$ and $(\boldsymbol\sigma\cdot\vec\pi)^2=\vec\pi^2-\frac{m\,c\,q\,\boldsymbol{\sigma}\,\vec B}{k_m}$, and the coefficient $1/2m$ produced by the elimination fixes $g=2$ and $\vec\mu=(q/m)\vec S$, hence $\mu_B=ec\dfrac{1}{2\,k_{m_e}}$ for the electron. At the next order in $1/c$, the second-order term $-\tfrac12[S_1,[S_1,E]]$ of the first transformation gives the Darwin term $+\frac{m^{2}\,c^{2}}{k_m^{2}}\nabla^2 V/(8m^2c^2)=-(\frac{q}{8\,k_m^{2}})\nabla\cdot\vec E$ and the spin–orbit coupling $-(\frac{q}{4\,m\,c\,k_m})\boldsymbol\sigma\cdot(\vec E\times\vec\pi)=(\frac{1}{4\,m\,c\,k_m})r^{-1}(dV/dr)\boldsymbol\sigma\cdot\vec L$, while the expansion of the free large-part energy gives the relativistic kinetic correction $-(\boldsymbol\sigma\cdot\vec\pi)^4/(8m^3c^2)$. The second transformation removes the residual odd term $O_1$ and adds no even term at this order. Summed, these reproduce the exact Dirac fine structure of hydrogenic ions for 36 levels with $n\le6$, with difference exactly zero.
 
 Every term of the reduced Hamiltonian is Hermitian and therefore lies in $\mathbb{B}_{\Psi}$. The objects that do not are the two-sided operators of the reduction — the mass term $\beta mc^2$ and the odd operator $O$, which end in right multiplications by $i\vec e_x$ and by $\vec e_y$ and so are not left multiplications by an element — together with the anti-Hermitian generator $iS_1$ and the rest-energy phase, which is not Hermitian and belongs to neither sector. The real structure $\flat$ — whose opposite-sign action on the sectors a Majorana-type coupling would carry — is not the parent's mass term, which is the linear coupling of the two chiralities. The Foldy–Wouthuysen grading by $\beta$ must not be confused with the $\mathbb{B}_{\Psi}/\mathbb{B}_{\Phi}$ grading by ${}^{*}$. All terms are energies, the three corrections carrying the expected $c^{-2}$.
 

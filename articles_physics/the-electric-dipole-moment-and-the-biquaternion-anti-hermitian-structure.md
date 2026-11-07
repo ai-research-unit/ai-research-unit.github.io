@@ -49,7 +49,7 @@ $$
 
 and the two displays are two equations, not one. Each is one-sided — the algebra acts by left multiplication on the field — and the pair is the chirality split of a single operator: the left-handed equation and the right-handed equation, coupled by the mass. The second member uses the conjugate gradient $\tilde{\nabla}^{\natural}$, a different element of the algebra; it is not the conjugate of the field, and the antilinear real structure $\flat=-{}^{*}$ is a third object, separate from both. Here $k_m=mc/\hbar$ is the mass wave number, the inverse of the mass length.
 
-**Units.** Natural units $\hbar=c=1$ are used, and the EDM unit conversion is $1\ \mathrm{GeV}^{-1}=1.97327\times10^{-14}\ \mathrm{cm}$.
+**Units.** The constants are carried, the EDM being a charge times a length, and the unit conversion is $1\ \mathrm{GeV}^{-1}=1.97327\times10^{-14}\ \mathrm{cm}$.
 
 The framework results used here are those of the companion articles:
 
@@ -77,7 +77,7 @@ $$
 
 the left multiplication by the element $-d\sum_kE_k\,i\vec e_k$ of $\mathbb{B}_{\Psi}$. The explicit $i$ is required for a Hermitian Lagrangian, and it is the first appearance of the article's central point: the insertion multiplies by $-\vec e_k$, which is anti-Hermitian, and the coefficient must be multiplied by $i$ to give a real interaction.
 
-**The dimension and the size.** The EDM has the dimensions of electric charge times length. In natural units, $d$ is dimensionless times a length, i.e. $[\mathrm{GeV}^{-1}]$, with the conversion given in the Introduction. For a fermion of mass $m_f$ and a new-physics scale $\Lambda$, the standard dimensional estimate of a CP-violating contribution is
+**The dimension and the size.** The EDM has the dimensions of electric charge times length. Written in $\mathrm{GeV}^{-1}$, $d$ is a pure number times that unit, with the conversion given in the Introduction. For a fermion of mass $m_f$ and a new-physics scale $\Lambda$, the standard dimensional estimate of a CP-violating contribution is
 
 $$
 d \sim \frac{e\,m_f}{\Lambda^2}\,\sin\theta_{\mathrm{pha}} ,

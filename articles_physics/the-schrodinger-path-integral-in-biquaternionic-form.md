@@ -18,10 +18,10 @@ Here $k_m=mc/\hbar$ is the mass wave number, the inverse of the mass length.
 
 ### The evolution operator and the position kernel
 
-The biquaternion Schrödinger equation $\frac{m\,c\,i}{k_m}\partial/\partial r'_t\tilde{Ξ}_{\mathrm{sp}}=H\tilde{Ξ}_{\mathrm{sp}}$ is solved formally by
+The biquaternion Schrödinger equation $\frac{m\,c^{2}\,i}{k_m}\partial/\partial r'_t\tilde{Ξ}_{\mathrm{sp}}=H\tilde{Ξ}_{\mathrm{sp}}$ is solved formally by
 
 $$
-\tilde Q(r'_t) = \exp(-\frac{k_m\,i\,H\,r'_{t}}{m\,c}),
+\tilde Q(r'_t) = \exp(-\frac{k_m\,i\,H\,r'_{t}}{m\,c^{2}}),
 \qquad
 \tilde{Ξ}_{\mathrm{sp}}(r'_t) = \tilde Q(r'_t)\,\tilde{Ξ}_{\mathrm{sp}}(0),
 $$
@@ -165,21 +165,21 @@ For $V=\frac12m\omega^2x^2$ the kernel can still be computed exactly, and it is 
 
 $$
 \boxed{\;G_{\mathrm{osc},\omega}(r_x,r'_t;r_{0x},0)
-=\left(\frac{\omega\,k_m}{2\pi i c\sin\omega r'_t}\right)^{1/2}
-\exp\left[\frac{im\omega}{\frac{2\,m\,c}{k_m}\sin\omega r'_t}
-\Big((r_x^2+r_{0x}^2)\cos\omega r'_t-2r_xr_{0x}\Big)\right]\;},
+=\left(\frac{\omega\,k_m}{2\pi i c\sin(\omega r'_t/c)}\right)^{1/2}
+\exp\left[\frac{im\omega}{\frac{2\,m\,c}{k_m}\sin(\omega r'_t/c)}
+\Big((r_x^2+r_{0x}^2)\cos(\omega r'_t/c)-2r_xr_{0x}\Big)\right]\;},
 $$
 
 a complex scalar times $e_t$. It is obtained by the Feynman–Hibbs ansatz: because the action is quadratic, the kernel has the form $G_{\mathrm{prop}}=F(r'_t)\exp(\frac{k_m\,iS_{\mathrm{cl}}}{m\,c})$ with
 
 $$
 S_{\mathrm{cl}}(r_x,r'_t;r_{0x},0)
-=\frac{m\omega}{2\sin\omega r'_t}\Big((r_x^2+r_{0x}^2)\cos\omega r'_t-2r_xr_{0x}\Big)
+=\frac{m\omega}{2\sin(\omega r'_t/c)}\Big((r_x^2+r_{0x}^2)\cos(\omega r'_t/c)-2r_xr_{0x}\Big)
 $$
 
-the classical action of the oscillator evaluated between the endpoints, and with the fluctuation factor $F(r'_t)$ independent of the endpoints. Substituting this form into the Schrödinger equation gives $\frac{dF/dr'_t}{F}=-\frac{\omega}{2}\cot\omega r'_t$, hence $F(r'_t)=C/\sqrt{\sin\omega r'_t}$, and the constant $C$ is fixed by the short-time limit: as $r'_t\to0$, $\sin\omega r'_t\to\omega r'_t$ and the kernel must tend to the free short-time kernel $(\frac{k_m}{2\,c\,\pi\,i\,r'_{t}})^{1/2}$, which gives $C=\sqrt{\frac{k_m\,\omega}{2\,c\,\pi\,i}}$. The biquaternion content of the construction is again the same: the kernel is $G_{\mathrm{osc},\omega}\,e_t$ with $G_{\mathrm{osc},\omega}$ the scalar amplitude, a central element, because the action is a real scalar and the fluctuation factor is a function of central quantities.
+the classical action of the oscillator evaluated between the endpoints, and with the fluctuation factor $F(r'_t)$ independent of the endpoints. Substituting this form into the Schrödinger equation gives $\frac{dF/dr'_t}{F}=-\frac{\omega}{2}\cot\omega r'_t/c$, hence $F(r'_t)=C/\sqrt{\sin(\omega r'_t/c)}$, and the constant $C$ is fixed by the short-time limit: as $r'_t\to0$, $\sin(\omega r'_t/c)\to\omega r'_t/c$ and the kernel must tend to the free short-time kernel $(\frac{k_m}{2\,c\,\pi\,i\,r'_{t}})^{1/2}$, which gives $C=\sqrt{\frac{k_m\,\omega}{2\,c\,\pi\,i}}$. The biquaternion content of the construction is again the same: the kernel is $G_{\mathrm{osc},\omega}\,e_t$ with $G_{\mathrm{osc},\omega}$ the scalar amplitude, a central element, because the action is a real scalar and the fluctuation factor is a function of central quantities.
 
-The kernel has poles at $\sin\omega r'_t=0$, i.e. at $\omega r'_t=n\pi$. These are the caustics of the oscillator: the classical trajectories refocus after a half period, the fluctuation factor diverges, and the simple form of the kernel breaks down. They are the same points at which the Maslov phases accumulate in the semiclassical expansion.
+The kernel has poles at $\sin(\omega r'_t/c)=0$, i.e. at $\omega r'_t/c=n\pi$. These are the caustics of the oscillator: the classical trajectories refocus after a half period, the fluctuation factor diverges, and the simple form of the kernel breaks down. They are the same points at which the Maslov phases accumulate in the semiclassical expansion.
 
 ### Composition and the limit to the free kernel
 
@@ -190,7 +190,7 @@ $$
 = G_{\mathrm{osc},\omega}(r_x,r_{0x};T_1+T_2),
 $$
 
-for times at which no intermediate caustic is crossed. The kernel was also checked to solve the Schrödinger equation directly, at two sample points and times, by finite-difference evaluation of $\frac{m\,c\,i}{k_m}\partial/\partial r'_tK$ against $(-\frac{m\,c^{2}}{2\,k_m^{2}}\partial^2/\partial R_x^2+\frac12m\omega^2x^2)K$, with agreement at the $10^{-8}$ level (limited by the finite-difference error).
+for times at which no intermediate caustic is crossed. The kernel was also checked to solve the Schrödinger equation directly, at two sample points and times, by finite-difference evaluation of $\frac{m\,c^{2}\,i}{k_m}\partial/\partial r'_tK$ against $(-\frac{m\,c^{2}}{2\,k_m^{2}}\partial^2/\partial R_x^2+\frac12m\omega^2x^2)K$, with agreement at the $10^{-8}$ level (limited by the finite-difference error).
 
 The free kernel is recovered as the $\omega\to0$ limit,
 
@@ -198,7 +198,7 @@ $$
 G_{\mathrm{osc},\omega} \longrightarrow K_0 \qquad (\omega\to0),
 $$
 
-because $\sin\omega r'_t\to\omega r'_t$ and $\cos\omega r'_t\to1$ in the oscillatory factors; the limit was verified numerically at fixed time as $\omega$ was taken through $0.2, 0.05, 0.01$, with the relative difference falling as $\omega^2$. The oscillator kernel is thus the one-parameter deformation of the free kernel whose deformation parameter is the frequency, and the whole family is central.
+because $\sin(\omega r'_t/c)\to\omega r'_t/c$ and $\cos(\omega r'_t/c)\to1$ in the oscillatory factors; the limit was verified numerically at fixed time as $\omega$ was taken through $0.2, 0.05, 0.01$, with the relative difference falling as $\omega^2$. The oscillator kernel is thus the one-parameter deformation of the free kernel whose deformation parameter is the frequency, and the whole family is central.
 
 ### Euclidean continuation
 
@@ -284,7 +284,7 @@ where the determinant is the van Vleck determinant, the same amplitude that the 
 
 ### Caustics and the higher orders
 
-The van Vleck form fails at the caustics, where the van Vleck determinant vanishes or diverges: the classical trajectories cross, the stationary points coalesce, and the Gaussian approximation to the fluctuation integral breaks down. The oscillator's poles at $\omega r'_t=n\pi$ are the model case. The repair is the standard one: a uniform approximation, or the inclusion of the higher-order fluctuation terms, which produce the Maslov phases and, at higher orders in $\frac{m\,c}{k_m}$, the loop corrections to the semiclassical kernel. The algebra plays no role in the repair beyond supplying the central $i$ under the square roots.
+The van Vleck form fails at the caustics, where the van Vleck determinant vanishes or diverges: the classical trajectories cross, the stationary points coalesce, and the Gaussian approximation to the fluctuation integral breaks down. The oscillator's poles at $\omega r'_t/c=n\pi$ are the model case. The repair is the standard one: a uniform approximation, or the inclusion of the higher-order fluctuation terms, which produce the Maslov phases and, at higher orders in $\frac{m\,c}{k_m}$, the loop corrections to the semiclassical kernel. The algebra plays no role in the repair beyond supplying the central $i$ under the square roots.
 
 ## What the Biquaternion Form Adds
 
@@ -316,7 +316,7 @@ The van Vleck form fails at the caustics, where the van Vleck determinant vanish
 
 ## Summary
 
-The Schrödinger path integral in the biquaternion framework is derived from the central evolution operator $\tilde Q(r'_t)=\exp(-\frac{k_m\,iHr'_{t}}{m\,c})$ with $H=[-\frac{m\,c^{2}}{2\,k_m^{2}}\nabla^2+V]e_t$. The position kernel is $K\,e_t$, a complex scalar times the identity, and the state is propagated by scalar convolution; the module factor is untouched. The short-time kernel is
+The Schrödinger path integral in the biquaternion framework is derived from the central evolution operator $\tilde Q(r'_t)=\exp(-\frac{k_m\,iHr'_{t}}{m\,c^{2}})$ with $H=[-\frac{m\,c^{2}}{2\,k_m^{2}}\nabla^2+V]e_t$. The position kernel is $K\,e_t$, a complex scalar times the identity, and the state is propagated by scalar convolution; the module factor is untouched. The short-time kernel is
 
 $$
 G_{\\mathrm{prop},\\varepsilon}(r_{2x}\,\vec e_x+r_{2y}\,\vec e_y+r_{2z}\,\vec e_z,r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)
@@ -329,11 +329,11 @@ and the Trotter product of these kernels gives the sum over paths $G_{\mathrm{pr
 The free kernel is $K_0=(\frac{k_m}{2\,c\,\pi\,i\,r'_{t}})^{3/2}\exp(im|r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z|^\frac{k_m}{m\,r'_{t}})$, with the composition law verified on a two-packet superposition to a relative error of order $10^{-14}$. The harmonic-oscillator kernel is
 
 $$
-G_{\mathrm{osc},\omega}=\left(\frac{\omega\,k_m}{2\pi i c\sin\omega r'_t}\right)^{1/2}
-\exp\left[\frac{im\omega}{\frac{2\,m\,c}{k_m}\sin\omega r'_t}\Big((r_x^2+r_{0x}^2)\cos\omega r'_t-2r_xr_{0x}\Big)\right],
+G_{\mathrm{osc},\omega}=\left(\frac{\omega\,k_m}{2\pi i c\sin(\omega r'_t/c)}\right)^{1/2}
+\exp\left[\frac{im\omega}{\frac{2\,m\,c}{k_m}\sin(\omega r'_t/c)}\Big((r_x^2+r_{0x}^2)\cos(\omega r'_t/c)-2r_xr_{0x}\Big)\right],
 $$
 
-central, with caustic poles at $\omega r'_t=n\pi$; its composition law was verified to $10^{-14}$, its solution of the Schrödinger equation to the $10^{-8}$ level of the finite-difference check, and its $\omega\to0$ limit to the free kernel with a difference falling as $\omega^2$. After the Wick rotation it becomes the Mehler kernel. The kernel reproduces the Schrödinger equation through the infinitesimal expansion $\tilde{Ξ}_{\mathrm{sp}}(r_x,r'_t+\varepsilon)=\tilde{Ξ}_{\mathrm{sp}}-\frac{k_m\,i\,\varepsilon}{m\,c}V\tilde{Ξ}_{\mathrm{sp}}+\frac{i c\varepsilon}{2\,k_m}\frac{\partial^2\tilde{Ξ}_{\mathrm{sp}}}{\partial r_x^2}+O(\varepsilon^2)$, verified on a two-Gaussian superposition to a relative error of about $2\times10^{-11}$.
+central, with caustic poles at $\omega r'_t/c=n\pi$; its composition law was verified to $10^{-14}$, its solution of the Schrödinger equation to the $10^{-8}$ level of the finite-difference check, and its $\omega\to0$ limit to the free kernel with a difference falling as $\omega^2$. After the Wick rotation it becomes the Mehler kernel. The kernel reproduces the Schrödinger equation through the infinitesimal expansion $\tilde{Ξ}_{\mathrm{sp}}(r_x,r'_t+\varepsilon)=\tilde{Ξ}_{\mathrm{sp}}-\frac{k_m\,i\,\varepsilon}{m\,c}V\tilde{Ξ}_{\mathrm{sp}}+\frac{i c\varepsilon}{2\,k_m}\frac{\partial^2\tilde{Ξ}_{\mathrm{sp}}}{\partial r_x^2}+O(\varepsilon^2)$, verified on a two-Gaussian superposition to a relative error of about $2\times10^{-11}$.
 
 The semiclassical limit of the path integral is the van Vleck kernel $K\approx(\frac{2\,m\,c\,\pi\,i}{k_m})^{-3/2}|\det\partial^2 S_{\mathrm{cl}}/\partial x_i\partial x_f|^{1/2}\exp(\frac{k_m\,iS_{\mathrm{cl}}}{m\,c})$, central, with the Maslov phases arising from the central square root of $i$; the free kernel is exact at all times and the oscillator kernel is exact away from its caustics. The framework thus supplies the centrality of the kernel, the scalar reduction of the path integral, and the central square roots; it does not supply the measure, the space of paths, or a dynamical module factor, and it adds no prediction distinguishing the reformulation from scalar path-integral quantum physics.
 
@@ -348,14 +348,14 @@ The semiclassical limit of the path integral is the van Vleck kernel $K\approx(\
 | $\mathbb{B}_{\Psi}$, $\mathbb{B}_{\Phi}$ | Hermitian and anti-Hermitian sectors |
 | $\mathbb{B}\tilde\Pi\cong\mathbb{C}^2$ | State module |
 | $H=[-\frac{m\,c^{2}}{2\,k_m^{2}}\nabla^2+V]e_t$ | Central Hamiltonian |
-| $\tilde Q(r'_t)=\exp(-\frac{k_m\,iHr'_{t}}{m\,c})$ | Evolution operator; central $*$-unitary, semigroup |
+| $\tilde Q(r'_t)=\exp(-\frac{k_m\,iHr'_{t}}{m\,c^{2}})$ | Evolution operator; central $*$-unitary, semigroup |
 | $G_{\mathrm{prop}}(x_f\,\vec e_x+y_f\,\vec e_y+z_f\,\vec e_z,r'_{t,f};x_i\,\vec e_x+y_i\,\vec e_y+z_i\,\vec e_z,r'_{t,i})=Ke_t$ | Position kernel; central |
 | $G_{\\mathrm{prop},\\varepsilon}(r_{2x}\,\vec e_x+r_{2y}\,\vec e_y+r_{2z}\,\vec e_z,r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)$ | Short-time kernel; phase $=\frac{k_m\,i}{m\,c}(\mathrm{Lag}\varepsilon)$ |
 | $\mathcal{D}x\,\mathcal{D}y\,\mathcal{D}z$ | Path-integral measure; defined by the Trotter limit |
 | $S[r_x,r_y,r_z]=\int \mathrm{Lag}\,dr'_t$ | Action; real scalar |
 | $K_0=(\frac{k_m}{2\,c\,\pi\,i\,r'_{t}})^{3/2}\exp(im|r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z|^\frac{k_m}{m\,r'_{t}})$ | Free kernel |
-| $G_{\mathrm{osc},\omega}$ | Oscillator kernel; poles at $\omega r'_t=n\pi$ |
-| $S_{\mathrm{cl}}=\frac{m\omega}{2\sin\omega r'_t}[(r_x^2+r_{0x}^2)\cos\omega r'_t-2r_xr_{0x}]$ | Oscillator classical action |
+| $G_{\mathrm{osc},\omega}$ | Oscillator kernel; poles at $\omega r'_t/c=n\pi$ |
+| $S_{\mathrm{cl}}=\frac{m\omega}{2\sin(\omega r'_t/c)}[(r_x^2+r_{0x}^2)\cos(\omega r'_t/c)-2r_xr_{0x}]$ | Oscillator classical action |
 | $G_{\mathrm{osc},\omega}^E$ | Mehler kernel; image of $G_{\mathrm{osc},\omega}$ under $r'_t\to-i\tau$ |
 | $\lvert\det\partial^2S_{\mathrm{cl}}/\partial x_i\partial x_f\rvert^{1/2}$ | Van Vleck determinant |
 | $r'_t\mapsto-i\tau$ | Wick rotation; $\mathbb{B}_{\Phi}\to\mathbb{B}_{H}$ |

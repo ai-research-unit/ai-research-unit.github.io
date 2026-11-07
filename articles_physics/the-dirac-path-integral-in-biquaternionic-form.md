@@ -18,7 +18,7 @@ $$
 k_m=\dfrac{mc}{\hbar},
 $$
 
-with massless limit $\tilde{\nabla}\tilde{Ξ}_{\mathrm{sp}} = 0$; in natural units $k_m = m$. Both lines act from the left, the conjugation $\natural$ separates them, and no glyph names a side (*Operator and Calculus Conventions*, §*The Two Sides and the Renaming Theorem*). Every coordinate form of the pair is the standard Dirac equation and is not a second dynamics. The field is one element of $\mathbb{B}$ with two parts, one for each value of the subscript, and the mass is the term that takes one part into the other.
+with massless limit $\tilde{\nabla}\tilde{Ξ}_{\mathrm{sp}} = 0$. Both lines act from the left, the conjugation $\natural$ separates them, and no glyph names a side (*Operator and Calculus Conventions*, §*The Two Sides and the Renaming Theorem*). Every coordinate form of the pair is the standard Dirac equation and is not a second dynamics. The field is one element of $\mathbb{B}$ with two parts, one for each value of the subscript, and the mass is the term that takes one part into the other.
 
 **Two different equations carry the name of Dirac, and this article uses one of them.** The first is the one-sided pair displayed above: both gradients act by left multiplication, and the mass is the off-diagonal pairing of the two values of the subscript. The second is the **two-sided** form of *The Dirac Equation in Biquaternionic Form*, a single equation on $\mathbb{B}$ in which the derivative acts from the left and the mass by right multiplication through the fixed direction $\vec e_z$. The two are the same field read through the dictionary of that article, and they are not the same operator; the difference is exactly the difference between a one-sided and a two-sided action. Every statement below is about the one-sided pair, and the path integral is built for it.
 
@@ -132,7 +132,7 @@ the scalar propagator is the integral over a proper time $T$ of a kernel $\langl
 
 $$
 \Delta_F(x,x_2) = \int_0^\infty dT\int_{x(0)=x}^{x(T)=x_2}\mathcal{D}x(\tau)\;
-\exp(iS_0[x]),
+\exp(\frac{k_m\,i}{m\,c}S_0[x]),
 \qquad
 S_0[x] = \int_0^T d\tau\left(\frac{1}{4}\sum_\mu\frac{dR_\mu}{d\tau}\frac{dR_\mu}{d\tau} - k_m^{2}\right),
 $$
@@ -200,7 +200,7 @@ with the unit $e_t$ of the algebra in place of the identity of the older display
 The path integral over the odd variables, with the boundary condition appropriate to the object computed, is a **spin factor** $Ξ[x]$ multiplying the scalar measure:
 
 $$
-\boxed{\;\mathcal S(x,x_2) = \int_0^\infty dT\int\mathcal{D}x\;Ξ[x]\,\exp(iS_0[x])\;}
+\boxed{\;\mathcal S(x,x_2) = \int_0^\infty dT\int\mathcal{D}x\;Ξ[x]\,\exp(\frac{k_m\,i}{m\,c}S_0[x])\;}
 $$
 
 with the spin factor
@@ -281,7 +281,7 @@ The biquaternion interpretation is then immediate, and it needs no second algebr
 
 ### The Recurrence and Its Limit
 
-The discrete structure can be written as a pair of coupled recurrences and taken to the continuum, and doing so exhibits the mass pair explicitly. Let $A_+(r_x,r'_t)$ and $A_-(r_x,r'_t)$ be the amplitudes to arrive at the lattice point $(r_x,r'_t)$ having last moved in the $+x$ and $-x$ directions respectively, with the lattice spacing and time step both equal to $\epsilon$ (units $c = 1$). A step carries the particle one site in its direction of motion, and a corner contributes the weight $i\epsilon\,k_m$; the recurrences are therefore
+The discrete structure can be written as a pair of coupled recurrences and taken to the continuum, and doing so exhibits the mass pair explicitly. Let $A_+(r_x,r'_t)$ and $A_-(r_x,r'_t)$ be the amplitudes to arrive at the lattice point $(r_x,r'_t)$ having last moved in the $+x$ and $-x$ directions respectively, with the lattice spacing and time step both equal to $\epsilon$ (in the units of the check). A step carries the particle one site in its direction of motion, and a corner contributes the weight $i\epsilon\,k_m$; the recurrences are therefore
 
 $$
 A_+(r_x,r'_t+\epsilon) = A_+(r_x-\epsilon,r'_t) + \dfrac{i\epsilon\,k_m}{c}\,A_-(r_x-\epsilon,r'_t),

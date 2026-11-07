@@ -146,7 +146,7 @@ $$
 \rho = \frac{i}{c}\left({\xi_{\mathrm{scl}}}^{*}\partial/\partial r'_t\,\xi_{\mathrm{scl}} - \xi_{\mathrm{scl}}\,\partial/\partial r'_t\,{\xi_{\mathrm{scl}}}^{*}\right),
 $$
 
-which is real and **positive** on a positive-frequency wave $\xi_{\mathrm{scl}}\propto\exp(i(\vec k\cdot\vec r-\omega r'_t))$, where it equals $\frac{2\omega}{c}|\xi_{\mathrm{scl}}|^2$. This is the sign convention of *The Klein–Gordon Equation in Biquaternionic Form*, and it is what fixes the sign of $\tilde{J}_{\Phi}$ above.
+which is real and **positive** on a positive-frequency wave $\xi_{\mathrm{scl}}\propto\exp(i(\vec k\cdot\vec r-\omega r'_t/c))$, where it equals $\frac{2\omega}{c}|\xi_{\mathrm{scl}}|^2$. This is the sign convention of *The Klein–Gordon Equation in Biquaternionic Form*, and it is what fixes the sign of $\tilde{J}_{\Phi}$ above.
 
 ### Conservation and the Identity Behind It
 
@@ -175,7 +175,7 @@ which is the continuity equation $c\,\partial/\partial r'_t\rho + \mathrm{div}\,
 A single plane wave is a trap: for $\tilde{Ξ} = \tilde{Ξ}_0\exp(i\,\mathrm{Sc}(\tilde P_{\Phi}\tilde{R}_\Phi^{\natural}))$ the current is *constant*, so its divergence vanishes whether or not the field is on shell, and the plane wave that suggests the formula cannot test it. The conservation was therefore checked on three other cases:
 
 - **a superposition of on-shell plane waves.** With $c = \hbar = m = 1$ and the momenta $(|\vec k|,\omega) = (0,1)$, $(\tfrac34,\tfrac54)$, $(\tfrac{5}{12},\tfrac{13}{12})$ all satisfying $\omega^2 = \vec k^2 + 1$, and amplitudes $1, \tfrac12, \tfrac13$, the current has non-constant cross terms, and $\mathrm{Sc}(\tilde{\nabla}^{\natural}\tilde{J}_{\Phi})$ cancels identically;
-- **a standing wave**, $\tilde{Ξ} = \sin(kx)\cos(\omega r'_t) + i\sin(kx)\sin(\omega r'_t)$ with $\omega^2 = c^2k^2 + c^2k_m^{2}$: this is on shell and is **not** a plane wave, and again $\mathrm{Sc}(\tilde{\nabla}^{\natural}\tilde{J}_{\Phi})$ vanishes identically;
+- **a standing wave**, $\tilde{Ξ} = \sin(kx)\cos(\omega r'_t/c) + i\sin(kx)\sin(\omega r'_t/c)$ with $\omega^2 = c^2k^2 + c^2k_m^{2}$: this is on shell and is **not** a plane wave, and again $\mathrm{Sc}(\tilde{\nabla}^{\natural}\tilde{J}_{\Phi})$ vanishes identically;
 - **an off-shell field.** A two-mode field with one mode off shell gives a divergence proportional to the field equation, explicitly nonzero. The identity above was also confirmed on a generic three-mode field, off shell: the difference $\mathrm{Sc}(\tilde{\nabla}^{\natural}\tilde{J}_{\Phi}) - i\,\mathrm{Sc}[(\Box\tilde{Ξ}^{*})\tilde{Ξ} - \tilde{Ξ}^{*}(\Box\tilde{Ξ})]$ reduces to zero identically, and the divergence is $2\,\mathrm{Im}(\tilde{Ξ}^{*}\Box\tilde{Ξ})$, which is what the identity gives.
 
 The last case is the honest statement of the theorem: the current is conserved **whenever** the field equation holds; off shell it need not be, and its divergence *is* the field equation.
@@ -309,7 +309,7 @@ The naive sum of the parent's four-forces is not zero even though the total four
 
 ### What Translation Does to a Plane Wave
 
-A free field is a plane wave, and a translation acts on it by a central phase. With the series' phase convention $\tilde{Ξ} = \tilde{Ξ}_0\exp(i\,\mathrm{Sc}(\tilde P_{\Phi}\tilde{R}_\Phi^{\natural}))$, whose phase is $\mathrm{Sc}(\tilde P_{\Phi}\tilde{R}_\Phi^{\natural}) = \vec k\cdot\vec r-\omega r'_t$, and with $\tilde P_{\Phi}\in\mathbb{B}_{\Phi}$ and $\tilde R_\Phi\mapsto\tilde R_\Phi+\tilde{R}_{\Phi,0}$,
+A free field is a plane wave, and a translation acts on it by a central phase. With the series' phase convention $\tilde{Ξ} = \tilde{Ξ}_0\exp(i\,\mathrm{Sc}(\tilde P_{\Phi}\tilde{R}_\Phi^{\natural}))$, whose phase is $\mathrm{Sc}(\tilde P_{\Phi}\tilde{R}_\Phi^{\natural}) = \vec k\cdot\vec r-\omega r'_t/c$, and with $\tilde P_{\Phi}\in\mathbb{B}_{\Phi}$ and $\tilde R_\Phi\mapsto\tilde R_\Phi+\tilde{R}_{\Phi,0}$,
 
 $$
 \tilde{Ξ}\big|_{\tilde R_\Phi+\tilde{R}_{\Phi,0}} = \exp\!\bigl(i\,\mathrm{Sc}(\tilde P_{\Phi}\tilde{R}_{\Phi,0}^{\natural})\bigr)\,\tilde{Ξ}\big|_{\tilde R_\Phi},
@@ -320,10 +320,10 @@ $$
 The multiplier is **central and of unit modulus**, because $\mathrm{Sc}(\tilde P_{\Phi}\tilde{R}_{\Phi,0}^{\natural}) = \langle\tilde P_{\Phi},\tilde{R}_{\Phi,0}\rangle_{\natural}$ is real: writing $\tilde P_{\Phi} = i\frac{\omega}{c}e_t + \vec k$ and $\tilde{R}_{\Phi,0} = i R_{0t} e_t + \vec R_0$, with $R_{0t} = r'_{t}_0$,
 
 $$
-\mathrm{Sc}\!\left(\tilde P_{\Phi}\tilde{R}_{\Phi,0}^{\natural}\right) = -\frac{\omega R_{0t}}{c} + \vec k\cdot\vec R_0 = \vec k\cdot\vec R_0-\omega r'_{t,0} .
+\mathrm{Sc}\!\left(\tilde P_{\Phi}\tilde{R}_{\Phi,0}^{\natural}\right) = -\frac{\omega R_{0t}}{c} + \vec k\cdot\vec R_0 = \vec k\cdot\vec R_0-\omega r'_{t,0}/c .
 $$
 
-What makes it a phase is the $i$: the same scalar in a real exponential is a dilation. For $\tilde P_{\Phi} = 2i\,e_t + 0.7\vec e_x - 0.3\vec e_y + 0.5\vec e_z$ and $\tilde{R}_{\Phi,0} = 0.4i\,e_t + 0.25\vec e_x - 0.35\vec e_y + 0.15\vec e_z$ (units $c = 1$), $\mathrm{Sc}(\tilde P_{\Phi}\tilde{R}_{\Phi,0}^{\natural}) = -0.445$ and the multiplier is $\exp(-0.445i)$, of modulus $1$, whereas $\exp(\mathrm{Sc}(\tilde P_{\Phi}\tilde{R}_{\Phi,0}^{\natural})) = e^{-0.445}$ has modulus $0.641$. The $\natural$ inside the pairing must be the one the wave itself carries; the un-conjugated $\mathrm{Sc}(\tilde P_{\Phi}\tilde{R}_{\Phi,0}) = -\frac{\omega R_{0t}}{c}-\vec k\cdot\vec R_0$ belongs to the opposite sign convention for $\vec k$ in the phase, and mixing the two flips the sign of $\vec k\cdot\vec R_0$ alone. This central phase is the finite, field-space form of the translation subgroup; its infinitesimal generator is the derivation $\partial/\partial R_\mu$, and it is not a rotor, as *The Poincaré Group and the Biquaternion Frame* establishes.
+What makes it a phase is the $i$: the same scalar in a real exponential is a dilation. For $\tilde P_{\Phi} = 2i\,e_t + 0.7\vec e_x - 0.3\vec e_y + 0.5\vec e_z$ and $\tilde{R}_{\Phi,0} = 0.4i\,e_t + 0.25\vec e_x - 0.35\vec e_y + 0.15\vec e_z$ (in the units of the check), $\mathrm{Sc}(\tilde P_{\Phi}\tilde{R}_{\Phi,0}^{\natural}) = -0.445$ and the multiplier is $\exp(-0.445i)$, of modulus $1$, whereas $\exp(\mathrm{Sc}(\tilde P_{\Phi}\tilde{R}_{\Phi,0}^{\natural})) = e^{-0.445}$ has modulus $0.641$. The $\natural$ inside the pairing must be the one the wave itself carries; the un-conjugated $\mathrm{Sc}(\tilde P_{\Phi}\tilde{R}_{\Phi,0}) = -\frac{\omega R_{0t}}{c}-\vec k\cdot\vec R_0$ belongs to the opposite sign convention for $\vec k$ in the phase, and mixing the two flips the sign of $\vec k\cdot\vec R_0$ alone. This central phase is the finite, field-space form of the translation subgroup; its infinitesimal generator is the derivation $\partial/\partial R_\mu$, and it is not a rotor, as *The Poincaré Group and the Biquaternion Frame* establishes.
 
 ## The Energy–Momentum of the Field
 
@@ -534,7 +534,7 @@ $$
 \qquad E = \gamma mc^2,\quad \vec p = \gamma m\vec v,
 $$
 
-as the Noether charge, conserved for a free particle. The conservation law for a system is the vanishing of the **coordinate**-time derivative of the total, $d\tilde{P}_{\Phi,\mathrm{tot}}/dr'_t = 0$; the parent's proper-time four-force cannot be summed across bodies, and the correct form is $\sum_a\tilde{\mathcal F}_{\mathrm{frc},a}/\gamma_a = 0$, or the integrated $\sum_{\mathrm{in}}\tilde{P}_{\Phi} = \sum_{\mathrm{out}}\tilde{P}_{\Phi}$. A translation acts on a plane wave by the central unit-modulus phase $\exp(i\,\mathrm{Sc}(\tilde P_{\Phi}\tilde{R}_{\Phi,0}^{\natural}))$, with $\mathrm{Sc}(\tilde P_{\Phi}\tilde{R}_{\Phi,0}^{\natural}) = \vec k\cdot\vec R_0-\omega r'_{t,0}$.
+as the Noether charge, conserved for a free particle. The conservation law for a system is the vanishing of the **coordinate**-time derivative of the total, $d\tilde{P}_{\Phi,\mathrm{tot}}/dr'_t = 0$; the parent's proper-time four-force cannot be summed across bodies, and the correct form is $\sum_a\tilde{\mathcal F}_{\mathrm{frc},a}/\gamma_a = 0$, or the integrated $\sum_{\mathrm{in}}\tilde{P}_{\Phi} = \sum_{\mathrm{out}}\tilde{P}_{\Phi}$. A translation acts on a plane wave by the central unit-modulus phase $\exp(i\,\mathrm{Sc}(\tilde P_{\Phi}\tilde{R}_{\Phi,0}^{\natural}))$, with $\mathrm{Sc}(\tilde P_{\Phi}\tilde{R}_{\Phi,0}^{\natural}) = \vec k\cdot\vec R_0-\omega r'_{t,0}/c$.
 
 The field translation current is the canonical energy–momentum, $-\partial T_{0\nu}/\partial x_0+\sum_k\partial T_{k\nu}/\partial r_k = 0$ on shell in the real coordinates, with positive energy density $T_{00} = |\partial\xi_{\mathrm{scl}}/\partial r'_t|^2 + |\nabla\xi_{\mathrm{scl}}|^2 + k_m^{2}|\xi_{\mathrm{scl}}|^2$. Rank two cannot be one biquaternion, so the framework packages it bilinearly; the Maxwell object $\tilde{W}_{\Psi} = \tfrac12\tilde{F}\tilde{F}^{*}$ is its time row, and $\mathrm{Sc}(\tilde{\nabla}\tilde{W}_{\Psi}) = \frac{i}{c}\vec J\cdot\vec E$ is the energy law it carries. Lorentz invariance gives the angular-momentum bivector $\tilde L = \tfrac12\sum L_{\mu\nu}\,e^{\natural}_\mu e_\nu$, with the rank-three field current reduced to the rank-two particle bivector only when the spin term vanishes. The theorem is standard; the algebra supplies the home of each conserved object and the compact form of its divergence, and it supplies no conservation law the symmetries did not already give.
 
@@ -570,8 +570,8 @@ The field translation current is the canonical energy–momentum, $-\partial T_{
 | $T_{\mu\nu} = (\partial{\xi_{\mathrm{scl}}}^*/\partial x_\mu)(\partial\xi_{\mathrm{scl}}/\partial x_\nu) + (\partial\xi_{\mathrm{scl}}/\partial x_\mu)(\partial{\xi_{\mathrm{scl}}}^*/\partial x_\nu) + \varepsilon_\mu\delta_{\mu\nu}\mathcal{L}_{\mathrm{scl},\xi}$ | Canonical energy–momentum in the real coordinates; the coefficient of $\mathcal{L}_{\mathrm{scl},\xi}$ is the plain form of the two units |
 | $\tilde{W}_{\Psi} = \tfrac12\tilde{F}\tilde{F}^{*} = W\,e_t + \frac{i}{c}\vec S$ | Maxwell energy–momentum (time row), in $\mathbb{B}_{\Psi}$; $\mathrm{Sc}(\tilde\nabla\tilde W_{\Psi})=\frac{i}{c}\vec J\cdot\vec E$ |
 | $L_{\mu\nu} = x_\mu p_\nu - x_\nu p_\mu$, $\tilde L = \tfrac12\sum L_{\mu\nu}\,e^{\natural}_\mu e_\nu$ | Angular momentum and its bivector |
-| $\tilde P_{\Phi} = i\frac{\omega}{c}e_t + \vec k$ | Four-wavevector, in $\mathbb{B}_{\Phi}$; plane-wave phase $\mathrm{Sc}(\tilde P_{\Phi}\tilde{R}_\Phi^{\natural}) = \vec k\cdot\vec r-\omega r'_t$ |
-| $\exp(i\,\mathrm{Sc}(\tilde P_{\Phi}\tilde{R}_{\Phi,0}^{\natural}))$, $\mathrm{Sc}(\tilde P_{\Phi}\tilde{R}_{\Phi,0}^{\natural})=\vec k\cdot\vec R_0-\omega r'_{t,0}$ | Central translation multiplier on a plane wave, of unit modulus |
+| $\tilde P_{\Phi} = i\frac{\omega}{c}e_t + \vec k$ | Four-wavevector, in $\mathbb{B}_{\Phi}$; plane-wave phase $\mathrm{Sc}(\tilde P_{\Phi}\tilde{R}_\Phi^{\natural}) = \vec k\cdot\vec r-\omega r'_t/c$ |
+| $\exp(i\,\mathrm{Sc}(\tilde P_{\Phi}\tilde{R}_{\Phi,0}^{\natural}))$, $\mathrm{Sc}(\tilde P_{\Phi}\tilde{R}_{\Phi,0}^{\natural})=\vec k\cdot\vec R_0-\omega r'_{t,0}/c$ | Central translation multiplier on a plane wave, of unit modulus |
 | $\operatorname{Tr}(\tilde{Ϛ}_{\Psi}\tilde R_\Psi^{*})=\operatorname{Tr}(\tilde{Ϛ}_{\Psi}\tilde R_\Psi)=2\langle\tilde{Ϛ}_{\Psi},\tilde R_\Psi\rangle_{*} = 2\,\mathrm{Sc}(\tilde{Ϛ}_{\Psi}\tilde R_\Psi^{*})$ | Trace formula of the informational sector, $\tilde R_\Psi$ Hermitian |
 | $c = 1/\sqrt{\epsilon\mu}$, $c_0$ | Speed of light in the medium; in vacuum |
 | $\langle\tilde{Q}_1,\tilde{Q}_2\rangle=\varepsilon_\mu Q_{1\mu}Q_{2\mu}$ | the general plain bilinear form, $\mathrm{Sc}(\tilde{Q}_1\tilde{Q}_2)$ |

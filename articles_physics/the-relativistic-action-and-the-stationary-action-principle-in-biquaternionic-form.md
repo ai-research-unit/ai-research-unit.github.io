@@ -195,7 +195,7 @@ The centrality of the mass is the structural point to carry forward. The compani
 
 ### The dispersion relation
 
-On a plane-wave field $\tilde{Ξ} = \tilde{Ξ}_0\exp(i(\vec k\cdot(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)-\omega r'_t))$ the Lagrangian's variation returns the mass shell as the symbol condition of the operator article,
+On a plane-wave field $\tilde{Ξ} = \tilde{Ξ}_0\exp(i(\vec k\cdot(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)-\omega r'_t/c))$ the Lagrangian's variation returns the mass shell as the symbol condition of the operator article,
 $$
 \Box \to  \frac{\omega^2}{c^2} - \vec k^2 = (k_m)^{2} ,
 \qquad

@@ -4,12 +4,12 @@
 
 For a pure state $|\tilde{Ξ}_{\mathrm{sp}}(r'_t)\rangle$ and a Hamiltonian $H$, the Schrödinger equation of standard quantum physics is
 
-$$\frac{m\,c\,i}{k_m}\partial/\partial r'_t|\tilde{Ξ}_{\mathrm{sp}}(r'_t)\rangle  = H\,|\tilde{Ξ}_{\mathrm{sp}}(r'_t)\rangle,
+$$\frac{m\,c^{2}\,i}{k_m}\partial/\partial r'_t|\tilde{Ξ}_{\mathrm{sp}}(r'_t)\rangle  = H\,|\tilde{Ξ}_{\mathrm{sp}}(r'_t)\rangle,
 $$
 
-and for a density matrix $\rho$ the same dynamics reads $\frac{m\,c\,i}{k_m}\partial/\partial r'_t\rho = [H,\rho]$. Both statements have biquaternion forms, and it matters which of the two one has in hand.
+and for a density matrix $\rho$ the same dynamics reads $\frac{m\,c^{2}\,i}{k_m}\partial/\partial r'_t\rho = [H,\rho]$. Both statements have biquaternion forms, and it matters which of the two one has in hand.
 
-The companion article *Quantum Physics in Biquaternionic Form* treats the second form: it exhibits the $*$-unitary biquaternion $\tilde Q(r'_t)$ obeying $\frac{m\,c\,i\,d\,\tilde{Q}}{k_m\,dr'_{t}}= \tilde R_\Psi\tilde Q$ and the state equation $\frac{m\,c\,i\,d\,\tilde{Ϛ}_{\Psi}}{k_m\,dr'_{t}}= [H,\tilde{Ϛ}_{\Psi}]$ for $\tilde{Ϛ}_{\Psi} \in \mathbb{B}_{\Psi}$. It does **not** write the state-vector equation $\frac{m\,c\,i}{k_m}\partial/\partial r'_t\tilde{Ξ}_{\mathrm{sp}} = \tilde R_\Psi\tilde{Ξ}_{\mathrm{sp}}$, nor examine its symbol $i$. That is a difference of object rather than an oversight: the "states" of the framework are the elements of $\mathbb{B}_{\Psi}$, i.e. density-matrix-like objects, whereas a wave function is something else. This article supplies the state-vector form and settles what its $i$ denotes.
+The companion article *Quantum Physics in Biquaternionic Form* treats the second form: it exhibits the $*$-unitary biquaternion $\tilde Q(r'_t)$ obeying $\frac{m\,c^{2}\,i\,d\,\tilde{Q}}{k_m\,dr'_{t}}= \tilde R_\Psi\tilde Q$ and the state equation $\frac{m\,c^{2}\,i\,d\,\tilde{Ϛ}_{\Psi}}{k_m\,dr'_{t}}= [H,\tilde{Ϛ}_{\Psi}]$ for $\tilde{Ϛ}_{\Psi} \in \mathbb{B}_{\Psi}$. It does **not** write the state-vector equation $\frac{m\,c^{2}\,i}{k_m}\partial/\partial r'_t\tilde{Ξ}_{\mathrm{sp}} = \tilde R_\Psi\tilde{Ξ}_{\mathrm{sp}}$, nor examine its symbol $i$. That is a difference of object rather than an oversight: the "states" of the framework are the elements of $\mathbb{B}_{\Psi}$, i.e. density-matrix-like objects, whereas a wave function is something else. This article supplies the state-vector form and settles what its $i$ denotes.
 
 The question is not decorative. In and around the algebra $\mathbb{B}$ there are three distinct things commonly written with a symbol that squares to $-1$ or plays the role of $i$:
 
@@ -98,17 +98,17 @@ is the state module; in the matrix picture it is the space of matrices with only
 
 ### Why the wave function is not a generic element of $\mathbb{B}_{\Psi}$
 
-The temptation is to let the "state" $\tilde{Ϛ}_{\Psi} \in \mathbb{B}_{\Psi}$ of the companion article also serve as the wave function. The obstacle is not that the equation admits no $\mathbb{B}_{\Psi}$-valued solution — it does — but that $\mathbb{B}_{\Psi}$ is not stable under the action of the observables. $\mathbb{B}_{\Psi}$ is neither a subalgebra nor a left ideal of $\mathbb{B}$ (for example $(i\vec e_x)(i\vec e_y) = -\vec e_z \in \mathbb{B}_{\Phi}$), so for $\tilde{Ξ}_{\mathrm{sp}} \in \mathbb{B}_{\Psi}$ the product $\tilde R_\Psi\tilde{Ξ}_{\mathrm{sp}}$ need not lie in $\mathbb{B}_{\Psi}$, and the equation $\frac{m\,c\,i}{k_m}\partial/\partial r'_t\tilde{Ξ}_{\mathrm{sp}} = \tilde R_\Psi\tilde{Ξ}_{\mathrm{sp}}$ does not define a flow on $\mathbb{B}_{\Psi}$.
+The temptation is to let the "state" $\tilde{Ϛ}_{\Psi} \in \mathbb{B}_{\Psi}$ of the companion article also serve as the wave function. The obstacle is not that the equation admits no $\mathbb{B}_{\Psi}$-valued solution — it does — but that $\mathbb{B}_{\Psi}$ is not stable under the action of the observables. $\mathbb{B}_{\Psi}$ is neither a subalgebra nor a left ideal of $\mathbb{B}$ (for example $(i\vec e_x)(i\vec e_y) = -\vec e_z \in \mathbb{B}_{\Phi}$), so for $\tilde{Ξ}_{\mathrm{sp}} \in \mathbb{B}_{\Psi}$ the product $\tilde R_\Psi\tilde{Ξ}_{\mathrm{sp}}$ need not lie in $\mathbb{B}_{\Psi}$, and the equation $\frac{m\,c^{2}\,i}{k_m}\partial/\partial r'_t\tilde{Ξ}_{\mathrm{sp}} = \tilde R_\Psi\tilde{Ξ}_{\mathrm{sp}}$ does not define a flow on $\mathbb{B}_{\Psi}$.
 
-That solutions can exist is expected, because both sides can meet in $\mathbb{B}_{\Phi}$: for $\tilde{Ξ}_{\mathrm{sp}} \in \mathbb{B}_{\Psi}$ the derivative $\partial/\partial r'_t\tilde{Ξ}_{\mathrm{sp}}$ lies in the real vector space $\mathbb{B}_{\Psi}$, so $\frac{m\,c\,i}{k_m}\partial/\partial r'_t\tilde{Ξ}_{\mathrm{sp}} \in \mathbb{B}_{\Phi}$ at every instant, and $\tilde R_\Psi\tilde{Ξ}_{\mathrm{sp}}$ need not be Hermitian. Take $\tilde R_\Psi = i\,\vec e_x$ and
+That solutions can exist is expected, because both sides can meet in $\mathbb{B}_{\Phi}$: for $\tilde{Ξ}_{\mathrm{sp}} \in \mathbb{B}_{\Psi}$ the derivative $\partial/\partial r'_t\tilde{Ξ}_{\mathrm{sp}}$ lies in the real vector space $\mathbb{B}_{\Psi}$, so $\frac{m\,c^{2}\,i}{k_m}\partial/\partial r'_t\tilde{Ξ}_{\mathrm{sp}} \in \mathbb{B}_{\Phi}$ at every instant, and $\tilde R_\Psi\tilde{Ξ}_{\mathrm{sp}}$ need not be Hermitian. Take $\tilde R_\Psi = i\,\vec e_x$ and
 
 $$
-\tilde{Ξ}_{\mathrm{sp}}(r'_t) = i\left(\cos\theta\,\vec e_y + \sin\theta\,\vec e_z\right), \qquad \theta =\frac{k_m\,r'_{t}}{m\,c}.
+\tilde{Ξ}_{\mathrm{sp}}(r'_t) = i\left(\cos\theta\,\vec e_y + \sin\theta\,\vec e_z\right), \qquad \theta =\frac{k_m\,r'_{t}}{m\,c^{2}}.
 $$
 
 Then $\tilde{Ξ}_{\mathrm{sp}}^{\dagger} = \tilde{Ξ}_{\mathrm{sp}}$, so $\tilde{Ξ}_{\mathrm{sp}}$ is Hermitian at every $r'_t$, and
 
-$$\frac{m\,c\,i}{k_m}\partial/\partial r'_t\tilde{Ξ}_{\mathrm{sp}} = \sin\theta\,\vec e_y - \cos\theta\,\vec e_z = (i\,\vec e_x)\,\tilde{Ξ}_{\mathrm{sp}},
+$$\frac{m\,c^{2}\,i}{k_m}\partial/\partial r'_t\tilde{Ξ}_{\mathrm{sp}} = \sin\theta\,\vec e_y - \cos\theta\,\vec e_z = (i\,\vec e_x)\,\tilde{Ξ}_{\mathrm{sp}},
 $$
 
 so the equation holds. The Hermitian-valued unknown is not inconsistent.
@@ -128,7 +128,7 @@ which is Hermitian, positive, and trace one — an element of the Bloch ball, he
 With these objects separated, the equation reads
 
 $$
-\boxed{\;\frac{m\,c\,i}{k_m}\partial/\partial r'_t\tilde{Ξ}_{\mathrm{sp}}(r'_t) = \tilde R_\Psi\,\tilde{Ξ}_{\mathrm{sp}}(r'_t),
+\boxed{\;\frac{m\,c^{2}\,i}{k_m}\partial/\partial r'_t\tilde{Ξ}_{\mathrm{sp}}(r'_t) = \tilde R_\Psi\,\tilde{Ξ}_{\mathrm{sp}}(r'_t),
 \qquad
 \tilde R_\Psi = r_t\,e_t + i\vec r_\Psi \in  \mathbb{B}_{\Psi},
 \qquad
@@ -140,10 +140,10 @@ where $i$ is the scalar imaginary. Because $i$ is central, $i\tilde R_\psii$, an
 **Solution.** Since $-i\tilde R_\Psi = -i r_t\,e_t + \vec r_\Psi$ and the scalar and vector parts commute,
 
 $$
-\boxed{\;\tilde Q(r'_t) = \exp\!\left(-\frac{k_m\,i\,Hr'_{t}}{m\,c}\right)
-= \exp(-\frac{k_m\,i\,r_{t}\,r'_{t}}{m})\left(\cos\theta\,e_t + \sin\theta\,\vec u_\Psi\right),
+\boxed{\;\tilde Q(r'_t) = \exp\!\left(-\frac{k_m\,i\,Hr'_{t}}{m\,c^{2}}\right)
+= \exp(-\frac{k_m\,i\,r_{t}\,r'_{t}}{m\,c^{2}})\left(\cos\theta\,e_t + \sin\theta\,\vec u_\Psi\right),
 \qquad
-\theta =\frac{|\vec r_\Psi|r'_t}{\frac{m\,c}{k_m}}\;},
+\theta =\frac{|\vec r_\Psi|r'_t}{\frac{m\,c^{2}}{k_m}}\;},
 $$
 
 and $\tilde{Ξ}_{\mathrm{sp}}(r'_t) = \tilde Q(r'_t)\tilde{Ξ}_{\mathrm{sp}}(0)$. The element $\tilde Q$ is $*$-unitary, $\tilde Q\tilde Q^{*} = e_t$: the central phase cancels and $R = \cos\theta\,e_t + \sin\theta\,\vec u_\Psi$ is a unit real quaternion, $R R^{*} = e_t$. Consequently the Hermitian norm $\mathrm{Tr}(\tilde{Ξ}_{\mathrm{sp}}^{\dagger}\tilde{Ξ}_{\mathrm{sp}})$ is preserved: with $\tilde{Ξ}_{\mathrm{sp}}(r'_t) = \tilde Q\tilde{Ξ}_{\mathrm{sp}}(0)$,
@@ -154,16 +154,16 @@ $$
 = \mathrm{Tr}\!\left(\tilde{Ξ}_{\mathrm{sp}}(0)^\dagger\tilde{Ξ}_{\mathrm{sp}}(0)\right).
 $$
 
-Differentiating the solution gives $\frac{m\,c\,i}{k_m}\partial/\partial r'_t\tilde{Ξ}_{\mathrm{sp}} =\frac{m\,c\,i}{k_m}(-\frac{k_m\,i\,H}{m\,c})\tilde{Ξ}_{\mathrm{sp}} = \tilde R_\Psi\tilde{Ξ}_{\mathrm{sp}}$, so it is the required solution.
+Differentiating the solution gives $\frac{m\,c^{2}\,i}{k_m}\partial/\partial r'_t\tilde{Ξ}_{\mathrm{sp}} =\frac{m\,c^{2}\,i}{k_m}(-\frac{k_m\,i\,H}{m\,c^{2}})\tilde{Ξ}_{\mathrm{sp}} = \tilde R_\Psi\tilde{Ξ}_{\mathrm{sp}}$, so it is the required solution.
 
-**Case checked.** For $\tilde R_\Psi = i\,\vec e_x$ one has $r_t = 0$, $\vec r_\Psi = \vec e_x$, and $\tilde Q(r'_t) = \cos(\frac{k_m\,r'_{t}}{m\,c})e_t + \sin(\frac{k_m\,r'_{t}}{m\,c})\vec e_x$. Then $\tilde Q(r'_t)$ is $*$-unitary, and $\tilde R_\Psi\tilde Q = i \vec e_x(\cos(\frac{k_m\,r'_{t}}{m\,c})e_t + \sin(\frac{k_m\,r'_{t}}{m\,c})\vec e_x) = i\cos(\frac{k_m\,r'_{t}}{m\,c})\vec e_x - i\sin(\frac{k_m\,r'_{t}}{m\,c})e_t$ equals $\frac{m\,c\,i\,d\,\tilde{Q}}{k_m\,dr'_{t}}= i(-\sin(\frac{k_m\,r'_{t}}{m\,c})e_t + \cos(\frac{k_m\,r'_{t}}{m\,c})\vec e_x)$, term by term. This case was chosen independently of the general formula and confirms it.
+**Case checked.** For $\tilde R_\Psi = i\,\vec e_x$ one has $r_t = 0$, $\vec r_\Psi = \vec e_x$, and $\tilde Q(r'_t) = \cos(\frac{k_m\,r'_{t}}{m\,c^{2}})e_t + \sin(\frac{k_m\,r'_{t}}{m\,c^{2}})\vec e_x$. Then $\tilde Q(r'_t)$ is $*$-unitary, and $\tilde R_\Psi\tilde Q = i \vec e_x(\cos(\frac{k_m\,r'_{t}}{m\,c^{2}})e_t + \sin(\frac{k_m\,r'_{t}}{m\,c^{2}})\vec e_x) = i\cos(\frac{k_m\,r'_{t}}{m\,c^{2}})\vec e_x - i\sin(\frac{k_m\,r'_{t}}{m\,c^{2}})e_t$ equals $\frac{m\,c^{2}\,i\,d\,\tilde{Q}}{k_m\,dr'_{t}}= i(-\sin(\frac{k_m\,r'_{t}}{m\,c^{2}})e_t + \cos(\frac{k_m\,r'_{t}}{m\,c^{2}})\vec e_x)$, term by term. This case was chosen independently of the general formula and confirms it.
 
-**Consistency with the density matrix.** The companion article's equation for $\tilde{Ϛ}_{\Psi} = \tilde{Ξ}_{\mathrm{sp}}\tilde{Ξ}_{\mathrm{sp}}^{\dagger}$ follows from the spinor equation. Differentiating $\tilde{Ϛ}_{\Psi} = \tilde{Ξ}_{\mathrm{sp}}\tilde{Ξ}_{\mathrm{sp}}^{\dagger}$ and using $\partial/\partial r'_t\tilde{Ξ}_{\mathrm{sp}} = -\frac{k_m\,i\,\tilde{R}_{\Psi}\,\tilde{Ξ}_{\mathrm{sp}}}{m\,c}$, $\partial/\partial r'_t\tilde{Ξ}_{\mathrm{sp}}^{\dagger} =\frac{k_m\,i\,\tilde{Ξ}_{\mathrm{sp}}^{\dagger}\,\tilde{R}_{\Psi}}{m\,c}$ (valid because $\tilde R_\Psi^{*} = \tilde R_\Psi$) gives
+**Consistency with the density matrix.** The companion article's equation for $\tilde{Ϛ}_{\Psi} = \tilde{Ξ}_{\mathrm{sp}}\tilde{Ξ}_{\mathrm{sp}}^{\dagger}$ follows from the spinor equation. Differentiating $\tilde{Ϛ}_{\Psi} = \tilde{Ξ}_{\mathrm{sp}}\tilde{Ξ}_{\mathrm{sp}}^{\dagger}$ and using $\partial/\partial r'_t\tilde{Ξ}_{\mathrm{sp}} = -\frac{k_m\,i\,\tilde{R}_{\Psi}\,\tilde{Ξ}_{\mathrm{sp}}}{m\,c^{2}}$, $\partial/\partial r'_t\tilde{Ξ}_{\mathrm{sp}}^{\dagger} =\frac{k_m\,i\,\tilde{Ξ}_{\mathrm{sp}}^{\dagger}\,\tilde{R}_{\Psi}}{m\,c^{2}}$ (valid because $\tilde R_\Psi^{*} = \tilde R_\Psi$) gives
 
 $$
-\boxed{\;\partial/\partial r'_t\tilde{Ϛ}_{\Psi} = -\frac{k_m\,i}{m\,c}\tilde R_\Psi\tilde{Ϛ}_{\Psi} +\frac{k_m\,i}{m\,c}\tilde{Ϛ}_{\Psi}\tilde R_\Psi
-= -\frac{k_m\,i}{m\,c}[H,\tilde{Ϛ}_{\Psi}],
-\qquad\text{i.e.}\qquad\frac{m\,c\,i}{k_m}\partial/\partial r'_t\tilde{Ϛ}_{\Psi} = [H,\tilde{Ϛ}_{\Psi}]\;},
+\boxed{\;\partial/\partial r'_t\tilde{Ϛ}_{\Psi} = -\frac{k_m\,i}{m\,c^{2}}\tilde R_\Psi\tilde{Ϛ}_{\Psi} +\frac{k_m\,i}{m\,c^{2}}\tilde{Ϛ}_{\Psi}\tilde R_\Psi
+= -\frac{k_m\,i}{m\,c^{2}}[H,\tilde{Ϛ}_{\Psi}],
+\qquad\text{i.e.}\qquad\frac{m\,c^{2}\,i}{k_m}\partial/\partial r'_t\tilde{Ϛ}_{\Psi} = [H,\tilde{Ϛ}_{\Psi}]\;},
 $$
 
 which is the von Neumann equation of the parent article. The Born rule follows as there: with $\tilde{Ϛ}_{\Psi} = \tfrac12(e_t + i\vec r)$ and $\tilde\Pi_1(\vec u) = \tfrac12(e_t + i\vec u)$,
@@ -178,12 +178,12 @@ For the up-state spinor $\tilde{Ξ}_{\mathrm{sp}} = \begin{pmatrix} 1 \\ 0\end{p
 
 It is worth making precise why the obvious alternatives to $i$ fail. Suppose a root $\tilde{Ζ}$ with $\tilde{Ζ}^2 = -1$ is used in place of $i$:
 
-$$\frac{m\,c\,\tilde{Ζ}}{k_m}\partial/\partial r'_t\tilde{Ξ}_{\mathrm{sp}} = \tilde R_\Psi\tilde{Ξ}_{\mathrm{sp}}
+$$\frac{m\,c^{2}\,\tilde{Ζ}}{k_m}\partial/\partial r'_t\tilde{Ξ}_{\mathrm{sp}} = \tilde R_\Psi\tilde{Ξ}_{\mathrm{sp}}
 \qquad\Longrightarrow\qquad
-\partial/\partial r'_t\tilde{Ξ}_{\mathrm{sp}} = -\frac{k_m}{m\,c}\tilde{Ζ}\tilde R_\Psi\,\tilde{Ξ}_{\mathrm{sp}},
+\partial/\partial r'_t\tilde{Ξ}_{\mathrm{sp}} = -\frac{k_m}{m\,c^{2}}\tilde{Ζ}\tilde R_\Psi\,\tilde{Ξ}_{\mathrm{sp}},
 $$
 
-so the generator of the flow is $-\frac{k_m\,\tilde{Ζ}\,\tilde{R}_{\Psi}}{m\,c}$. The flow preserves the Hermitian form, i.e. $\exp(-\frac{k_m\,r'_{t}\,\tilde{Ζ}\,\tilde{R}_{\Psi}}{m\,c})$ is $*$-unitary, exactly when $-\frac{k_m\,\tilde{Ζ}\,\tilde{R}_{\Psi}}{m\,c}$ is anti-Hermitian, which is the condition
+so the generator of the flow is $-\frac{k_m\,\tilde{Ζ}\,\tilde{R}_{\Psi}}{m\,c^{2}}$. The flow preserves the Hermitian form, i.e. $\exp(-\frac{k_m\,r'_{t}\,\tilde{Ζ}\,\tilde{R}_{\Psi}}{m\,c^{2}})$ is $*$-unitary, exactly when $-\frac{k_m\,\tilde{Ζ}\,\tilde{R}_{\Psi}}{m\,c^{2}}$ is anti-Hermitian, which is the condition
 
 $$
 (\tilde{Ζ}\tilde R_\Psi)^{*} = -\tilde{Ζ}\tilde R_\Psi
@@ -200,7 +200,7 @@ $$
 \vec{Ζ}\tilde R_\Psi = \vec e_z\,(i \vec e_x) = i\,\vec e_z \vec e_x = i\,\vec e_y,
 $$
 
-using $\vec e_z \vec e_x = \vec e_y$. Since $i\,\vec e_y$ is Hermitian, $(i\vec e_y)^{*} = i\vec e_y$, the generator $-\frac{k_m\,\vec Ζ\,\tilde{R}_{\Psi}}{m\,c}= -\frac{k_m\,i\,\vec e_{y}}{m\,c}$ is Hermitian, not anti-Hermitian, and $\exp(-\frac{k_m\,r'_{t}\,\vec Ζ\,\tilde{R}_{\Psi}}{m\,c})$ is not $*$-unitary. Explicitly, at $r'_t =\frac{m\,c\,\pi}{2\,k_m}$,
+using $\vec e_z \vec e_x = \vec e_y$. Since $i\,\vec e_y$ is Hermitian, $(i\vec e_y)^{*} = i\vec e_y$, the generator $-\frac{k_m\,\vec Ζ\,\tilde{R}_{\Psi}}{m\,c^{2}}= -\frac{k_m\,i\,\vec e_{y}}{m\,c^{2}}$ is Hermitian, not anti-Hermitian, and $\exp(-\frac{k_m\,r'_{t}\,\vec Ζ\,\tilde{R}_{\Psi}}{m\,c^{2}})$ is not $*$-unitary. Explicitly, at $r'_t =\frac{m\,c^{2}\,\pi}{2\,k_m}$,
 
 $$
 \tilde Q^{*}\tilde Q = \exp\!\left(-i\pi \vec e_y\right)
@@ -215,18 +215,18 @@ There is a second defect in the non-central choice: because $\vec e_z \vec e_x =
 
 ## The $\mathbb{B}_{\Phi}$ and $\mathbb{B}_{\Psi}$ Readings of the Equation
 
-The equation can be rearranged into a statement that lives entirely in one sector at a time. Dividing by $\frac{m\,c\,i}{k_m}$,
+The equation can be rearranged into a statement that lives entirely in one sector at a time. Dividing by $\frac{m\,c^{2}\,i}{k_m}$,
 
 $$
-\partial/\partial r'_t\tilde{Ξ}_{\mathrm{sp}} = -\frac{k_m\,i}{m\,c}\tilde R_\Psi\tilde{Ξ}_{\mathrm{sp}},
+\partial/\partial r'_t\tilde{Ξ}_{\mathrm{sp}} = -\frac{k_m\,i}{m\,c^{2}}\tilde R_\Psi\tilde{Ξ}_{\mathrm{sp}},
 \qquad
--\frac{k_m\,i}{m\,c}\tilde R_\Psi =\frac{\vec r_\Psi - i r_t e_t}{\frac{m\,c}{k_m}} \in  \mathbb{B}_{\Phi}.
+-\frac{k_m\,i}{m\,c^{2}}\tilde R_\Psi =\frac{\vec r_\Psi - i r_t e_t}{\frac{m\,c^{2}}{k_m}} \in  \mathbb{B}_{\Phi}.
 $$
 
-The generator $-\frac{k_m\,i\,H}{m\,c}$ is anti-Hermitian; this is the general reason the exponential is $*$-unitary. The two interpretations are then:
+The generator $-\frac{k_m\,i\,H}{m\,c^{2}}$ is anti-Hermitian; this is the general reason the exponential is $*$-unitary. The two interpretations are then:
 
 - **$\mathbb{B}_{\Psi}$ interpretation.** The Hamiltonian $\tilde R_\Psi \in \mathbb{B}_{\Psi}$ is a Hermitian observable — an energy. The equation says that the dynamics is generated by that observable, read through the intertwiner $i$.
-- **$\mathbb{B}_{\Phi}$ interpretation.** The generator $-\frac{k_m\,i\,H}{m\,c\,\in\,\mathbb{B}}_{\Phi}$ lies in the *material* sector, the same four-dimensional real space that carries the four-vectors of relativistic physics. The time-translation generator is an element of that sector; multiplying it by $\frac{m\,c\,i}{k_m}$ returns the Hermitian observable $\tilde R_\Psi$.
+- **$\mathbb{B}_{\Phi}$ interpretation.** The generator $-\frac{k_m\,i\,H}{m\,c\,\in\,\mathbb{B}}_{\Phi}$ lies in the *material* sector, the same four-dimensional real space that carries the four-vectors of relativistic physics. The time-translation generator is an element of that sector; multiplying it by $\frac{m\,c^{2}\,i}{k_m}$ returns the Hermitian observable $\tilde R_\Psi$.
 
 In the von Neumann form the split is even cleaner. For $\tilde R_\Psi, \tilde{Ϛ}_{\Psi} \in \mathbb{B}_{\Psi}$,
 
@@ -234,7 +234,7 @@ $$
 \left([H,\tilde{Ϛ}_{\Psi}]\right)^\dagger = \tilde{Ϛ}_{\Psi}\tilde R_\Psi - \tilde R_\Psi\tilde{Ϛ}_{\Psi} = -[H,\tilde{Ϛ}_{\Psi}],
 $$
 
-so $[H,\tilde{Ϛ}_{\Psi}] \in \mathbb{B}_{\Phi}$; and since $\tilde{Ϛ}_{\Psi} \in \mathbb{B}_{\Psi}$ and $i\,\mathbb{B}_{\Psi} = \mathbb{B}_{\Phi}$, the term $\frac{m\,c\,i}{k_m}\partial/\partial r'_t\tilde{Ϛ}_{\Psi}$ is also in $\mathbb{B}_{\Phi}$. The von Neumann equation is thus an identity in a single sector, while its solution returns to the complementary one.
+so $[H,\tilde{Ϛ}_{\Psi}] \in \mathbb{B}_{\Phi}$; and since $\tilde{Ϛ}_{\Psi} \in \mathbb{B}_{\Psi}$ and $i\,\mathbb{B}_{\Psi} = \mathbb{B}_{\Phi}$, the term $\frac{m\,c^{2}\,i}{k_m}\partial/\partial r'_t\tilde{Ϛ}_{\Psi}$ is also in $\mathbb{B}_{\Phi}$. The von Neumann equation is thus an identity in a single sector, while its solution returns to the complementary one.
 
 A structural caution belongs here. The wave function $\tilde{Ξ}_{\mathrm{sp}}$ itself is an element of the state module $\mathbb{B}\tilde\Pi$, not of either sector; it carries no $\mathbb{B}_{\Psi}/\mathbb{B}_{\Phi}$ label. The decomposition $\mathbb{B} = \mathbb{B}_{\Psi} \oplus \mathbb{B}_{\Phi}$ classifies Hermitian observables and anti-Hermitian generators, not state vectors. What returns to $\mathbb{B}_{\Psi}$ is the bilinear object $\tilde{Ϛ}_{\Psi} = \tilde{Ξ}_{\mathrm{sp}}\tilde{Ξ}_{\mathrm{sp}}^{\dagger}$, not $\tilde{Ξ}_{\mathrm{sp}}$. Reading the sector labels onto the wave function is the same error as conflating the wave function with the density matrix.
 
@@ -246,7 +246,7 @@ A structural caution belongs here. The wave function $\tilde{Ξ}_{\mathrm{sp}}$ 
 
 1. *The complex structure is supplied, not chosen.* Since $\mathbb{B} = \mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ contains the central element $i$ by construction, the complex structure of the state module is fixed by the algebra. In a purely quaternionic formulation — wave functions valued in $\mathbb{H}$, with no complexifying factor — there is no central imaginary unit, and one must *choose* a complex structure on the state space, so the choice becomes extra input. Here the algebra supplies it, and the quaternion units, being non-central, are not candidates. This is definitional — $\mathbb{C}$ was put into $\mathbb{B}$ by fiat — but the content is that the same algebra contains both the quaternion units and the central root of $-1$, unique up to sign, that quantum physics requires.
 
-2. *The observable/generator split is intrinsic.* $\mathbb{B}_{\Psi}$ and $\mathbb{B}_{\Phi}$ are the fixed-point subspaces of Hermitian conjugation, and $i$ is the canonical real-linear isomorphism relating them. The Schrödinger equation is exactly the map $\tilde R_\Psi \mapsto  -\frac{k_m\,i\,H}{m\,c}$ from observables to generators. In $M_2(\mathbb{C})$ language this is the elementary statement that $\tilde R_\Psi$ is Hermitian iff $-i H$ is anti-Hermitian; the biquaternion form names the two sectors that the statement relates, and places the generator in the material sector.
+2. *The observable/generator split is intrinsic.* $\mathbb{B}_{\Psi}$ and $\mathbb{B}_{\Phi}$ are the fixed-point subspaces of Hermitian conjugation, and $i$ is the canonical real-linear isomorphism relating them. The Schrödinger equation is exactly the map $\tilde R_\Psi \mapsto  -\frac{k_m\,i\,H}{m\,c^{2}}$ from observables to generators. In $M_2(\mathbb{C})$ language this is the elementary statement that $\tilde R_\Psi$ is Hermitian iff $-i H$ is anti-Hermitian; the biquaternion form names the two sectors that the statement relates, and places the generator in the material sector.
 
 3. *The roots of $-1$ are separated by role.* The central roots $\pm i$ are the complex structure; the non-central roots $\vec u$ are state axes and rotation generators. A formulation that writes the Schrödinger equation with a quaternion unit destroys the first while leaving the second in place, and the counterexample above shows how. The biquaternion form keeps the two apart by construction.
 
@@ -269,16 +269,16 @@ A structural caution belongs here. The wave function $\tilde{Ξ}_{\mathrm{sp}}$ 
 The Schrödinger equation in biquaternionic form is
 
 $$
-\boxed{\;\frac{m\,c\,i}{k_m}\partial/\partial r'_t\tilde{Ξ}_{\mathrm{sp}} = \tilde R_\Psi\tilde{Ξ}_{\mathrm{sp}}\;},
+\boxed{\;\frac{m\,c^{2}\,i}{k_m}\partial/\partial r'_t\tilde{Ξ}_{\mathrm{sp}} = \tilde R_\Psi\tilde{Ξ}_{\mathrm{sp}}\;},
 $$
 
 with $\tilde R_\Psi = r_t\,e_t + i\vec r_\Psi \in \mathbb{B}_{\Psi}$ Hermitian, $\tilde{Ξ}_{\mathrm{sp}}$ a spinor in the Peirce carrier $\mathbb{B}\tilde\Pi \cong \mathbb{C}^2$, a minimal left ideal here, and $i$ the **scalar imaginary** — the central root of $-1$ in $\mathbb{B}$, unique up to sign.
 
-The symbol $i$ must not be confused with the quaternion units or the non-central roots of $-1$, which are rotation axes, and it is not a complex structure on $\mathbb{B}_{\Psi}$, since $i\,\mathbb{B}_{\Psi} = \mathbb{B}_{\Phi}$: the scalar imaginary is the canonical isomorphism between the two sectors, not an operator on either. The wave function is a spinor in the state module, not a generic element of $\mathbb{B}_{\Psi}$; the density matrix is recovered as $\tilde{Ϛ}_{\Psi} = \tilde{Ξ}_{\mathrm{sp}}\tilde{Ξ}_{\mathrm{sp}}^{\dagger}/\mathrm{Tr}(\tilde{Ξ}_{\mathrm{sp}}^{\dagger}\tilde{Ξ}_{\mathrm{sp}}) \in \mathbb{B}_{\Psi}$, and the spinor equation implies the parent article's von Neumann equation $\frac{m\,c\,i}{k_m}\partial/\partial r'_t\tilde{Ϛ}_{\Psi} = [H,\tilde{Ϛ}_{\Psi}]$.
+The symbol $i$ must not be confused with the quaternion units or the non-central roots of $-1$, which are rotation axes, and it is not a complex structure on $\mathbb{B}_{\Psi}$, since $i\,\mathbb{B}_{\Psi} = \mathbb{B}_{\Phi}$: the scalar imaginary is the canonical isomorphism between the two sectors, not an operator on either. The wave function is a spinor in the state module, not a generic element of $\mathbb{B}_{\Psi}$; the density matrix is recovered as $\tilde{Ϛ}_{\Psi} = \tilde{Ξ}_{\mathrm{sp}}\tilde{Ξ}_{\mathrm{sp}}^{\dagger}/\mathrm{Tr}(\tilde{Ξ}_{\mathrm{sp}}^{\dagger}\tilde{Ξ}_{\mathrm{sp}}) \in \mathbb{B}_{\Psi}$, and the spinor equation implies the parent article's von Neumann equation $\frac{m\,c^{2}\,i}{k_m}\partial/\partial r'_t\tilde{Ϛ}_{\Psi} = [H,\tilde{Ϛ}_{\Psi}]$.
 
-Using a non-central root $\tilde{Ζ}$ in place of $i$ fails generically: the generator $-\frac{k_m\,\tilde{Ζ}\,\tilde{R}_{\Psi}}{m\,c}$ need not be anti-Hermitian, so the flow is not $*$-unitary and the norm is not preserved (explicitly for $\vec{Ζ} = \vec e_z$, $\tilde R_\Psi = i\vec e_x$). The scalar imaginary is the only choice, up to sign, that works for every Hermitian Hamiltonian.
+Using a non-central root $\tilde{Ζ}$ in place of $i$ fails generically: the generator $-\frac{k_m\,\tilde{Ζ}\,\tilde{R}_{\Psi}}{m\,c^{2}}$ need not be anti-Hermitian, so the flow is not $*$-unitary and the norm is not preserved (explicitly for $\vec{Ζ} = \vec e_z$, $\tilde R_\Psi = i\vec e_x$). The scalar imaginary is the only choice, up to sign, that works for every Hermitian Hamiltonian.
 
-Read in the two sectors, the equation says that the Hermitian observable $\tilde R_\Psi \in \mathbb{B}_{\Psi}$ generates, through the intertwiner $i$, a flow whose generator $-\frac{k_m\,i\,H}{m\,c}$ lies in the material sector $\mathbb{B}_{\Phi}$. For a single qubit this is a rewriting of the standard two-component equation; the structural content is that the complex structure is supplied by the algebra, the observable/generator split is intrinsic to the Hermitian decomposition, and the roots of $-1$ are separated by role.
+Read in the two sectors, the equation says that the Hermitian observable $\tilde R_\Psi \in \mathbb{B}_{\Psi}$ generates, through the intertwiner $i$, a flow whose generator $-\frac{k_m\,i\,H}{m\,c^{2}}$ lies in the material sector $\mathbb{B}_{\Phi}$. For a single qubit this is a rewriting of the standard two-component equation; the structural content is that the complex structure is supplied by the algebra, the observable/generator split is intrinsic to the Hermitian decomposition, and the roots of $-1$ are separated by role.
 
 ## Summary of Notation
 
@@ -288,14 +288,14 @@ Read in the two sectors, the equation says that the Hermitian observable $\tilde
 | $e_t = 1, \vec e_x, \vec e_y, \vec e_z$ | Quaternion basis, $\vec e_\mu^2 = -e_t$ |
 | $i$ | Scalar imaginary, central, $i^2 = -e_t$ |
 | $\mathbb{B}_{C}$ | Complex subspace $\operatorname{span}_{\mathbb{R}}\{e_t, ie_t\}$; the centre |
-| $\mathbb{B}_{\Psi}$ | Hermitian subspace (observables): $\frac{m\,c\,i}{k_m}\partial/\partial r'_t\tilde{Ξ}_{\mathrm{sp}} = \tilde R_\Psi\tilde{Ξ}_{\mathrm{sp}}$ has $\tilde R_\Psi \in \mathbb{B}_{\Psi}$ |
+| $\mathbb{B}_{\Psi}$ | Hermitian subspace (observables): $\frac{m\,c^{2}\,i}{k_m}\partial/\partial r'_t\tilde{Ξ}_{\mathrm{sp}} = \tilde R_\Psi\tilde{Ξ}_{\mathrm{sp}}$ has $\tilde R_\Psi \in \mathbb{B}_{\Psi}$ |
 | $\mathbb{B}_{\Phi}$ | Anti-Hermitian subspace (generators): the generator is $-\frac{k_m\,i\,H}{m\,c\,\in\,\mathbb{B}}_{\Phi}$ |
 | $\mathbb{B}_{H}$ | Real quaternion subspace; home of the unit pure quaternions $\vec u$ |
 | $\tilde R_\Psi = r_t\,e_t + i\vec r_\Psi$ | Hermitian element (Hamiltonian) |
 | $\tilde\Pi_{1,2}(\vec u) = \tfrac12(e_t \pm i\vec u)$ | Idempotent (pure state); $\vec u$ the state axis |
 | $\mathbb{B}\tilde\Pi \cong \mathbb{C}^2$ | Minimal left ideal: the state module of spinors $\tilde{Ξ}_{\mathrm{sp}}$ |
 | $\tilde{Ϛ}_{\Psi} = \tilde{Ξ}_{\mathrm{sp}}\tilde{Ξ}_{\mathrm{sp}}^{\dagger}/\mathrm{Tr}(\tilde{Ξ}_{\mathrm{sp}}^{\dagger}\tilde{Ξ}_{\mathrm{sp}})$ | Density matrix associated to a spinor |
-| $\tilde Q(r'_t) = \exp(-\frac{k_m\,i\,Hr'_{t}}{m\,c})$ | $*$-Unitary evolution, $\tilde{Ξ}_{\mathrm{sp}}(r'_t) = \tilde Q(r'_t)\tilde{Ξ}_{\mathrm{sp}}(0)$ |
+| $\tilde Q(r'_t) = \exp(-\frac{k_m\,i\,Hr'_{t}}{m\,c^{2}})$ | $*$-Unitary evolution, $\tilde{Ξ}_{\mathrm{sp}}(r'_t) = \tilde Q(r'_t)\tilde{Ξ}_{\mathrm{sp}}(0)$ |
 | $2\,\mathrm{Sc}(\tilde\Pi_1(\vec u)\tilde R_\Psi^{*}) = r_t + \vec u\cdot\vec r_\Psi = \operatorname{Tr}(\tilde\Pi_1(\vec u)\tilde R_\Psi^{*})$ | Trace reading last / Born rule |
 | $\vec e_\mu \vec e_\nu = \varepsilon_{\mu\nu\lambda}\vec e_\lambda$, $\mu \neq \nu$ | Quaternion multiplication |
 | $\langle\tilde{Q}_1,\tilde{Q}_2\rangle_{*}$ | the general plain sesquilinear form, $\mathrm{Sc}(\tilde{Q}_1\tilde{Q}_2^{*})$; on the diagonal $\langle\tilde{Q}_2,\tilde{Q}_2\rangle_{*}=\sum_\mu\lvert Q_{2\mu}\rvert^{2}$ |

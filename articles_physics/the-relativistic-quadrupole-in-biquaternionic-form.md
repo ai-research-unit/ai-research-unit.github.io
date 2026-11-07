@@ -80,10 +80,10 @@ $$
 
 with $\tilde{J}_{\Phi} = ic\rho\,e_t + \vec J\in\mathbb{B}_{\Phi}$ the four-current and the subscript *ret* denoting evaluation at the retarded time. This is the standard retarded solution, transcribed into the material sector; no biquaternion input is needed to write it, and none is used.
 
-For a source with a single frequency $\omega$, the current is $\vec J(r_{2x}\,\vec e_x+r_{2y}\,\vec e_y+r_{2z}\,\vec e_z,r'_t) = \vec J(r_{2x}\,\vec e_x+r_{2y}\,\vec e_y+r_{2z}\,\vec e_z)\exp(-i\omega r'_t)$, and in the far zone $r = |r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z|\to\infty$ the retarded integral reduces to
+For a source with a single frequency $\omega$, the current is $\vec J(r_{2x}\,\vec e_x+r_{2y}\,\vec e_y+r_{2z}\,\vec e_z,r'_t) = \vec J(r_{2x}\,\vec e_x+r_{2y}\,\vec e_y+r_{2z}\,\vec e_z)\exp(-i\omega r'_t/c)$, and in the far zone $r = |r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z|\to\infty$ the retarded integral reduces to
 
 $$
-\vec A(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z,r'_t) = \frac{\mu_0}{4\pi}\,\frac{\exp(i(kr-\omega r'_t))}{r}\,\vec F(\vec u) ,
+\vec A(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z,r'_t) = \frac{\mu_0}{4\pi}\,\frac{\exp(i(kr-\omega r'_t/c))}{r}\,\vec F(\vec u) ,
 \qquad
 \vec F(\vec u) = \int \vec J(r_{2x}\,\vec e_x+r_{2y}\,\vec e_y+r_{2z}\,\vec e_z)\,\exp(-ik\vec u\cdot(r_{2x}\,\vec e_x+r_{2y}\,\vec e_y+r_{2z}\,\vec e_z))\,d^3r_2 ,
 $$
@@ -247,7 +247,7 @@ This field is not a radiation field: it has no $r^{-1}$ part, and its Poynting f
 In the far zone the electric quadrupole produces a genuine radiation field. From the radiation vector computed above, $\vec F_{E2} = -\tfrac{k\omega}{6}\vec{\mathcal{Q}}(\vec u)$, and $\vec B = ik\,\vec u\times\vec A$ in the radiation zone, one obtains
 
 $$
-\vec B_{E2}(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z,r'_t) = -\frac{\mu_0}{4\pi}\,\frac{\exp(i(kr-\omega r'_t))}{r}\,\frac{ik^2\omega}{6}\,\vec u\times\vec{\mathcal{Q}}(\vec u) .
+\vec B_{E2}(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z,r'_t) = -\frac{\mu_0}{4\pi}\,\frac{\exp(i(kr-\omega r'_t/c))}{r}\,\frac{ik^2\omega}{6}\,\vec u\times\vec{\mathcal{Q}}(\vec u) .
 $$
 
 The field is transverse, falls off as $r^{-1}$, and carries the angular dependence of degree two through the vector $\vec{\mathcal{Q}}(\vec u)$. The time-averaged angular distribution follows from the Poynting vector $\langle\vec S\rangle = \tfrac{r^2c}{2\mu_0}|\vec B|^2\vec u$:
@@ -269,7 +269,7 @@ $$
 = \frac{1}{4\pi\epsilon_0}\,\frac{1}{180\,c^5}\,\langle \,d^3Q_{ij}/d{r'_{t}}^3 d^3Q_{ij}/d{r'_{t}}^3\rangle\;}
 $$
 
-where the second form is the standard one, and the two agree because a harmonic quadrupole $\mathcal{Q}_{ij}\cos\omega r'_t$ has $\langle\,d^3Q_{ij}/d{r'_{t}}^3 d^3Q_{ij}/d{r'_{t}}^3\rangle = \tfrac{1}{2}\omega^6\mathcal{Q}_{ij}\mathcal{Q}_{ij}$. This is the standard long-wavelength electric-quadrupole result, reconstructed here from the radiation vector; the sixth power of the frequency is the reason each successive multipole is harder to excite.
+where the second form is the standard one, and the two agree because a harmonic quadrupole $\mathcal{Q}_{ij}\cos(\omega r'_t/c)$ has $\langle\,d^3Q_{ij}/d{r'_{t}}^3 d^3Q_{ij}/d{r'_{t}}^3\rangle = \tfrac{1}{2}\omega^6\mathcal{Q}_{ij}\mathcal{Q}_{ij}$. This is the standard long-wavelength electric-quadrupole result, reconstructed here from the radiation vector; the sixth power of the frequency is the reason each successive multipole is harder to excite.
 
 For an axisymmetric source, $\mathcal{Q}_{ij} = \mathrm{diag}(-\tfrac{1}{2}ϙ,-\tfrac{1}{2}ϙ,ϙ)$ with $ϙ = \mathcal{Q}_{zz}$, the angular distribution is the degree-two pattern
 

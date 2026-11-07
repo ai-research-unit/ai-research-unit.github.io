@@ -319,7 +319,7 @@ $$
 
 by $i^2=-1$; $\xi$ is also the difference $e_+-e_-$ of the two central idempotents $e_\pm=\tfrac12(e_t\pm\xi)$. The sign $\xi$ is central and lies outside $\mathbb{B}_{\mathbb{R}}$, and $\gamma_5$ represents it on the module; it is not its definition, and the two must not be identified.
 
-**The two Dirac equations.** The corpus carries two forms of one dynamics, and they are kept apart by where the second chirality slot sits. In units $\hbar=c=1$, with the biquaternionic gradient $\tilde\nabla=e_t\partial/\partial R_t+\sum_k\vec e_k\partial/\partial R_k$ and its conjugate $\tilde\nabla^{\natural}$, the **one-sided** form is the chiral pair
+**The two Dirac equations.** The corpus carries two forms of one dynamics, and they are kept apart by where the second chirality slot sits. With the biquaternionic gradient $\tilde\nabla=e_t\partial/\partial R_t+\sum_k\vec e_k\partial/\partial R_k$ and its conjugate $\tilde\nabla^{\natural}$, the **one-sided** form is the chiral pair
 
 $$
 \tilde\nabla\tilde{Ξ}_{\mathrm{sp},R}=k_m\tilde{Ξ}_{\mathrm{sp},L},\qquad

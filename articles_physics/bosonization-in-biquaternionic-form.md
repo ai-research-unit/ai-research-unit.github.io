@@ -194,7 +194,7 @@ The fermionic side of the dictionary is built from vertex operators, and their d
 $$
 \bigl[j_t(Q_x),j_x(Q_y)\bigr] = \frac{i}{\pi}\,\frac{d\delta}{dQ_x}(Q_x-Q_y),
 $$
-the **Schwinger term**. The sign and the coefficient are the canonical commutator's: the commutator $[\xi_{\mathrm{scl}},\partial\xi_{\mathrm{scl}}/\partial R_t]=i\delta$ with $\hbar=1$, the corpus's convention, gives $\frac{1}{\pi}[\partial\xi_{\mathrm{scl}}/\partial R_x,\partial\xi_{\mathrm{scl}}/\partial R_t]$, which is $\frac{i}{\pi}$ times the derivative of the delta written in the display above. Both indices are low, so no metric sign enters this commutator; the signature signs are already carried by the dictionary's $\epsilon_{\mu\nu}\varepsilon_\nu$. The coefficient is $1/\pi$, the square of the anomaly's $1/\sqrt\pi$ because it is bilinear in the current, the anomaly being the second relation of the dictionary section.
+the **Schwinger term**. The sign and the coefficient are the canonical commutator's: the commutator $[\xi_{\mathrm{scl}},\partial\xi_{\mathrm{scl}}/\partial R_t]=i\delta$ in units of $\hbar$, the corpus's convention, gives $\frac{1}{\pi}[\partial\xi_{\mathrm{scl}}/\partial R_x,\partial\xi_{\mathrm{scl}}/\partial R_t]$, which is $\frac{i}{\pi}$ times the derivative of the delta written in the display above. Both indices are low, so no metric sign enters this commutator; the signature signs are already carried by the dictionary's $\epsilon_{\mu\nu}\varepsilon_\nu$. The coefficient is $1/\pi$, the square of the anomaly's $1/\sqrt\pi$ because it is bilinear in the current, the anomaly being the second relation of the dictionary section.
 
 **Vertex operators.** The bosonized fermion is an exponential of the boson field, the **vertex operator**
 $$

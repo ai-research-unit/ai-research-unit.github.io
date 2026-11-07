@@ -69,7 +69,7 @@ $$
 
 Two equivalent formulations of the classical theory are therefore available, and the choice matters for quantization.
 
-**The second-order, potential formulation.** The field is $\tilde{A}_{\Phi}$; the Lagrangian density in natural units is $\mathcal{L}=-\tfrac14 \sum_{\mu,\nu}F_{\mu\nu}F_{\mu\nu}$; it is second order, and it is the formulation in which the Legendre transform and the canonical momentum are defined. This is the route the rest of the article follows.
+**The second-order, potential formulation.** The field is $\tilde{A}_{\Phi}$; the Lagrangian density is $\mathcal{L}=\frac{m\,c}{k_m}\left(-\tfrac14 \sum_{\mu,\nu}F_{\mu\nu}F_{\mu\nu}\right)$; it is second order, and it is the formulation in which the Legendre transform and the canonical momentum are defined. This is the route the rest of the article follows.
 
 **The first-order, Palatini formulation.** If one wants the field strength to remain the independent variable, one takes $\tilde{F}$ and $\tilde{A}_{\Phi}$ as independent and uses the first-order action
 
@@ -83,7 +83,7 @@ This is the first finding of the article. The biquaternion formulation writes th
 
 ## The Constraint Structure
 
-The Legendre transform of the potential formulation is singular, and the singularities are of a different kind from the Dirac case. In natural units the conjugate momenta are
+The Legendre transform of the potential formulation is singular, and the singularities are of a different kind from the Dirac case. The conjugate momenta are
 
 $$
 \pi_\mu=\frac{\partial\mathcal{L}}{\partial(\partial/\partial R_t A_\mu)}=-F_{t\mu},

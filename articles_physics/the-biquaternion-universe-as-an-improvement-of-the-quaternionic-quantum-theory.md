@@ -304,7 +304,7 @@ have the images $\mathsf{M}_2(\tilde S_{\Psi,k})=\frac{m\,c}{2\,k_m}\sigma_{k}$,
 $$
 [\tilde S_{\Psi,i},\tilde S_{\Psi,j}]=\frac{m\,c\,i}{k_m}\sum_{k}\epsilon_{ijk}\tilde S_{\Psi,k}.
 $$
-This was checked on the corpus's matrix model for the two values $\hbar=1$ and $\frac{m\,c}{k_m}=2.7$ and for every pair of indices, and the same check confirms the quaternion bracket $\mathsf{M}_2([\vec e_j,\vec e_k])=2\epsilon_{jkl}\mathsf{M}_2(\vec e_l)$, which is the bracket Part I records for the imaginary units $i,j,k$. The spin achievement of the quaternionic theory is therefore kept **exactly**: the units are still $SU(2)$ and still the rotation generators. What has changed is only their role. In the quaternionic theory they multiplied the states as scalars; here they generate the representation, which is the angular-momentum algebra of the corpus. The bracket is owned by *Angular Momentum and Spin in Biquaternionic Form*.
+This was checked on the corpus's matrix model for the two values $\frac{m\,c}{k_m}=1$ and $\frac{m\,c}{k_m}=2.7$ and for every pair of indices, and the same check confirms the quaternion bracket $\mathsf{M}_2([\vec e_j,\vec e_k])=2\epsilon_{jkl}\mathsf{M}_2(\vec e_l)$, which is the bracket Part I records for the imaginary units $i,j,k$. The spin achievement of the quaternionic theory is therefore kept **exactly**: the units are still $SU(2)$ and still the rotation generators. What has changed is only their role. In the quaternionic theory they multiplied the states as scalars; here they generate the representation, which is the angular-momentum algebra of the corpus. The bracket is owned by *Angular Momentum and Spin in Biquaternionic Form*.
 
 ### The Material Sector Is Spacetime
 

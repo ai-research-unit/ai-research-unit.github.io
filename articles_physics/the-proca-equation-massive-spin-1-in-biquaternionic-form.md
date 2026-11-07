@@ -179,7 +179,7 @@ $$
 \tilde P_{\Phi} = i\frac{\omega}{c}\,e_t + \vec k,
 $$
 
-where $\mathrm{Sc}(\tilde P_{\Phi}\tilde{Q}^{\natural}) = \vec k\cdot(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z) - \omega r'_t$ and $\tilde{A}_{\Phi,0}$ is a constant biquaternion of the material sector, so that $A_t$ is purely imaginary and $\vec a$ is real. Differentiation gives $\tilde{\nabla}\tilde{A}_{\Phi} = i\tilde P_{\Phi}\tilde{A}_{\Phi}$ and $\tilde{\nabla}^{\natural}\tilde{A}_{\Phi} = i\tilde P_{\Phi}^{\natural}\tilde{A}_{\Phi}$, and the Klein–Gordon operator acts as
+where $\mathrm{Sc}(\tilde P_{\Phi}\tilde{Q}^{\natural}) = \vec k\cdot(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z) - \omega r'_t/c$ and $\tilde{A}_{\Phi,0}$ is a constant biquaternion of the material sector, so that $A_t$ is purely imaginary and $\vec a$ is real. Differentiation gives $\tilde{\nabla}\tilde{A}_{\Phi} = i\tilde P_{\Phi}\tilde{A}_{\Phi}$ and $\tilde{\nabla}^{\natural}\tilde{A}_{\Phi} = i\tilde P_{\Phi}^{\natural}\tilde{A}_{\Phi}$, and the Klein–Gordon operator acts as
 
 $$
 \Box\,\exp(\,i\,\mathrm{Sc}(\tilde P_{\Phi}\tilde{Q}^{\natural})) = \left(\frac{\omega^2}{c^2} - \vec k^2\right)\exp(\,i\,\mathrm{Sc}(\tilde P_{\Phi}\tilde{Q}^{\natural})),
@@ -262,7 +262,7 @@ $$
 
 where the slot in $\mathcal{T}$ takes an arbitrary biquaternion argument — marked by $[\;]$ inside the operator, as in the companion article on Maxwell's equations — the source's $+$ is the Hermitian conjugation, and $(\cdots)^{\sim}$ means that the expression is completed by adding the **reverse** of the part on the left. The completion is not decoration: it is what gives each object a definite order parity, since any part added to its own reversal is reversal-even by construction, and the source's conclusion is that the current and the energy–momentum are then "bireal and ordinal invariant four-vectors, as it should be". This is the same reversal-evenness that selects the Proca combination from the Lanczos parent below, and it is the object catalogued in *Comparison of the Remarkable Subspaces*.
 
-Two points of notation, so that the display is not misread. The mass coefficient is the source's $m^2$ in natural units, that is $k_m^{2} = k_m^{2}$ in the units of this article. And the same authors' 2001 comment prints the same current undoubled and with $\vec{b}$ — its name for the field strength — in place of $\tilde{F}$; the two formulas are one object in two notations.
+Two points of notation, so that the display is not misread. The mass coefficient is the source's $m^2$, which is $k_m^{2}=k_m^{2}$ in the units of this article. And the same authors' 2001 comment prints the same current undoubled and with $\vec{b}$ — its name for the field strength — in place of $\tilde{F}$; the two formulas are one object in two notations.
 
 The source adds one further statement, which the corpus records without re-deriving it: if the electromagnetic field is introduced — by either route, local gauge invariance or the minimum-coupling substitution — the divergence of the current still vanishes, while the divergence of $\mathcal{T}$ gives the **Lorentz force** acting on the particle. What is checked here is only the structure, that the completion rule makes the two objects reversal-even; that follows from the definition and needs no computation, whereas the two divergence statements are the source's.
 

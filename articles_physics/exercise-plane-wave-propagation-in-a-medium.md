@@ -18,7 +18,7 @@ and the Hermitian form with its trace reading is that of *Norm and Pairing Conve
 
 **The result.** For a source-free monochromatic plane wave
 $$
-\tilde{F}(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z,r'_t) = \tilde{F}_0\,\exp(\,i(\vec k\cdot(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)-\omega r'_t)),
+\tilde{F}(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z,r'_t) = \tilde{F}_0\,\exp(\,i(\vec k\cdot(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)-\omega r'_t/c)),
 \qquad
 \tilde{F}_0 = i\sqrt{\epsilon}\,\vec E_0 - \sqrt{\mu}\,\vec H_0,
 $$
@@ -48,17 +48,17 @@ Two points of discipline are kept in view. First, the field strength is a pure v
 
 ## Problem 1: The Plane-Wave Conditions and the Dispersion Relation
 
-**Statement.** (a) With the ansatz $\tilde{F} = \tilde{F}_0\,\exp(i(\vec k\cdot(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)-\omega r'_t))$ and $\tilde{F}_0$ a pure vector, show that the gradient acts by left multiplication by a constant biquaternion, and identify it. (b) Show that $\tilde{\nabla}\tilde{F} = 0$ is equivalent to the four conditions of the parent and to the dispersion relation $k = \omega/c$. (c) Derive the impedance relation and the amplitude relations $|\vec E_0| = Z|\vec H_0| = c|\vec B_0|$.
+**Statement.** (a) With the ansatz $\tilde{F} = \tilde{F}_0\,\exp(i(\vec k\cdot(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)-\omega r'_t/c))$ and $\tilde{F}_0$ a pure vector, show that the gradient acts by left multiplication by a constant biquaternion, and identify it. (b) Show that $\tilde{\nabla}\tilde{F} = 0$ is equivalent to the four conditions of the parent and to the dispersion relation $k = \omega/c$. (c) Derive the impedance relation and the amplitude relations $|\vec E_0| = Z|\vec H_0| = c|\vec B_0|$.
 
 **Solution (a).** The partial derivatives act on the exponential by
 $$
-\partial/\partial R_t\,\exp(\,i(\vec k\cdot(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)-\omega r'_t)) = -\frac{\omega}{c}\,\exp(\,i(\vec k\cdot(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)-\omega r'_t)),
+\partial/\partial R_t\,\exp(\,i(\vec k\cdot(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)-\omega r'_t/c)) = -\frac{\omega}{c}\,\exp(\,i(\vec k\cdot(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)-\omega r'_t/c)),
 \qquad
-\partial/\partial R_j\,\exp(\,i(\vec k\cdot(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)-\omega r'_t)) = i k_j\,\exp(\,i(\vec k\cdot(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)-\omega r'_t)),
+\partial/\partial R_j\,\exp(\,i(\vec k\cdot(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)-\omega r'_t/c)) = i k_j\,\exp(\,i(\vec k\cdot(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)-\omega r'_t/c)),
 $$
-using $\partial/\partial R_t = -i\partial/\partial r'_t$ and $\partial/\partial r'_t \to -i\omega$. Hence
+using $\partial/\partial R_t = -i\partial/\partial r'_t$ and $\partial/\partial r'_t \to -i\omega/c$. Hence
 $$
-\tilde{\nabla}\tilde{F} = \left(-\frac{\omega}{c}\,e_t + i\vec k\right)\tilde{F}_0\,\exp(\,i(\vec k\cdot(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)-\omega r'_t)),
+\tilde{\nabla}\tilde{F} = \left(-\frac{\omega}{c}\,e_t + i\vec k\right)\tilde{F}_0\,\exp(\,i(\vec k\cdot(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)-\omega r'_t/c)),
 \qquad
 \vec k = k_1\vec e_x + k_2\vec e_y + k_3\vec e_z .
 $$
@@ -168,17 +168,17 @@ The statement has a clean interpretation: the field-strength amplitude is annihi
 
 **Solution (c).** Superpose two counter-propagating waves of the same frequency in the same medium, choosing a linear polarisation:
 $$
-\vec E = E_0\cos(kz-\omega r'_t)\,\vec u_x + E_0\cos(kz+\omega r'_t)\,\vec u_x = 2E_0\cos kz\cos\omega r'_t\,\vec u_x .
+\vec E = E_0\cos(kz-\omega r'_t/c)\,\vec u_x + E_0\cos(kz+\omega r'_t/c)\,\vec u_x = 2E_0\cos kz\cos(\omega r'_t/c)\,\vec u_x .
 $$
 For the wave travelling in $-\vec u_z$ the magnetic field is $\vec H = Z^{-1}(-\vec u_z)\times\vec E$, so the two magnetic contributions subtract in the sum, giving
 $$
-\vec H = \frac{E_0}{Z}\left[\cos(kz-\omega r'_t) - \cos(kz+\omega r'_t)\right]\vec u_y = \frac{2E_0}{Z}\sin kz\sin\omega r'_t\,\vec u_y .
+\vec H = \frac{E_0}{Z}\left[\cos(kz-\omega r'_t/c) - \cos(kz+\omega r'_t/c)\right]\vec u_y = \frac{2E_0}{Z}\sin kz\sin(\omega r'_t/c)\,\vec u_y .
 $$
 Then $\vec E\cdot\vec H = 0$, but
 $$
-\vec E^2 - c^2\vec B^2 = 4E_0^2\left(\cos^2 kz\cos^2\omega r'_t - \sin^2 kz\sin^2\omega r'_t\right),
+\vec E^2 - c^2\vec B^2 = 4E_0^2\left(\cos^2 kz\cos^2\omega r'_t/c - \sin^2 kz\sin^2\omega r'_t/c\right),
 $$
-using $c^2\mu^2/Z^2 = c^2\epsilon\mu = 1$. This is not identically zero: at $kz = \pi/4$, $\omega r'_t = 0$ it equals $2E_0^2$, while at $kz = \pi/4$, $\omega r'_t = \pi/2$ it equals $-2E_0^2$. So $I_1 \neq 0$ and $\langle\tilde{F}\rangle_{\natural} \neq 0$ for the standing wave: it is not null and not a zero divisor. The nullness of Problem 2(a) is therefore specific to the single running plane wave, which is the case the parent treats. The standing wave, by contrast, is a superposition of two waves each of which is null, and it is the interference of their two null directions that removes the nullness — a reminder that the states classified by the invariants are fields, not modes.
+using $c^2\mu^2/Z^2 = c^2\epsilon\mu = 1$. This is not identically zero: at $kz = \pi/4$, $\omega r'_t/c = 0$ it equals $2E_0^2$, while at $kz = \pi/4$, $\omega r'_t/c = \pi/2$ it equals $-2E_0^2$. So $I_1 \neq 0$ and $\langle\tilde{F}\rangle_{\natural} \neq 0$ for the standing wave: it is not null and not a zero divisor. The nullness of Problem 2(a) is therefore specific to the single running plane wave, which is the case the parent treats. The standing wave, by contrast, is a superposition of two waves each of which is null, and it is the interference of their two null directions that removes the nullness — a reminder that the states classified by the invariants are fields, not modes.
 
 ## Problem 3: Energy, Flux, and the Energy–Momentum Biquaternion
 
@@ -204,7 +204,7 @@ $$
 $$
 using $\epsilon Z = \epsilon\sqrt{\mu/\epsilon} = \sqrt{\epsilon\mu} = 1/c$. So the energy flows along the wavevector with speed $c$, and $|\vec S| = cW$ at every instant.
 
-**Solution (b).** With the complex amplitudes of the parent's convention, $\vec E(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z,r'_t) = \mathrm{Re}[\vec E_0 \exp(i(\vec k\cdot(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)-\omega r'_t))]$, the time averages over a period are
+**Solution (b).** With the complex amplitudes of the parent's convention, $\vec E(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z,r'_t) = \mathrm{Re}[\vec E_0 \exp(i(\vec k\cdot(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)-\omega r'_t/c))]$, the time averages over a period are
 $$
 \langle W\rangle = \frac{1}{4}\left(\epsilon\,|\vec E_0|^2 + \mu\,|\vec H_0|^2\right),
 \qquad
@@ -228,7 +228,7 @@ because $\frac{\mu}{Z^2} = \epsilon$. Therefore $c\langle W\rangle = \frac{c\eps
 $$
 \boxed{\;\tilde{W}_{\Psi} = \frac{1}{2}\tilde{F}\tilde{F}^{*} = W\left(e_t + i\vec u_k\right)\;}.
 $$
-This is an element of $\mathbb{B}_{\Psi}$, as every Hermitian form is: its scalar part $W$ is real and its vector part $iW\vec u_k$ is purely imaginary. To compute $\tilde{\nabla}\tilde{W}_{\Psi}$, write $\theta_{\mathrm{pha}} = \vec k\cdot(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z) - \omega r'_t$ and $W = W(\theta_{\mathrm{pha}})$, the general form, which reduces to $W = W_0\cos^2\theta_{\mathrm{pha}}$ for an in-phase, linearly polarised wave. For a scalar, the gradient acts as $\tilde{\nabla}W = W_{\mathrm{pha},\theta}\,\tilde P_{\Phi}$, with $W_{\mathrm{pha},\theta} = \partial/\partial\theta_{\mathrm{pha}}\,W$ and $\tilde P_{\Phi} = \frac{i\omega}{c}e_t + \vec k$ the four-wavevector: in the in-phase case, expanding $W = \frac{W_0}{2}(1 + \cos 2\theta_{\mathrm{pha}})$, the exponentials $\exp(\pm 2i\theta_{\mathrm{pha}})$ are eigenfunctions with eigenvalues $\pm 2i\tilde P_{\Phi}$, and their combination reproduces $W_{\mathrm{pha},\theta}\tilde P_{\Phi}$. Since $e_t + i\vec u_k$ is constant,
+This is an element of $\mathbb{B}_{\Psi}$, as every Hermitian form is: its scalar part $W$ is real and its vector part $iW\vec u_k$ is purely imaginary. To compute $\tilde{\nabla}\tilde{W}_{\Psi}$, write $\theta_{\mathrm{pha}} = \vec k\cdot(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z) - \omega r'_t/c$ and $W = W(\theta_{\mathrm{pha}})$, the general form, which reduces to $W = W_0\cos^2\theta_{\mathrm{pha}}$ for an in-phase, linearly polarised wave. For a scalar, the gradient acts as $\tilde{\nabla}W = W_{\mathrm{pha},\theta}\,\tilde P_{\Phi}$, with $W_{\mathrm{pha},\theta} = \partial/\partial\theta_{\mathrm{pha}}\,W$ and $\tilde P_{\Phi} = \frac{i\omega}{c}e_t + \vec k$ the four-wavevector: in the in-phase case, expanding $W = \frac{W_0}{2}(1 + \cos 2\theta_{\mathrm{pha}})$, the exponentials $\exp(\pm 2i\theta_{\mathrm{pha}})$ are eigenfunctions with eigenvalues $\pm 2i\tilde P_{\Phi}$, and their combination reproduces $W_{\mathrm{pha},\theta}\tilde P_{\Phi}$. Since $e_t + i\vec u_k$ is constant,
 $$
 \tilde{\nabla}\tilde{W}_{\Psi} = \left(\tilde{\nabla}W\right)\left(e_t + i\vec u_k\right)
 = W_{\mathrm{pha},\theta}\,\tilde P_{\Phi}\left(e_t + i\vec u_k\right).
@@ -270,15 +270,15 @@ $$
 The distinction is not bookkeeping: a single monochromatic wave has no envelope and travels at $v_p$, while a narrow superposition travels at $v_g$. For two frequencies $\omega \pm \Delta\omega$ with wave numbers $k \pm \Delta k$, the sum of the two real waves factors as
 $$
 \cos\big((k+\Delta k)r_z - (\omega+\Delta\omega)r'_t\big) + \cos\big((k-\Delta k)r_z - (\omega-\Delta\omega)r'_t\big)
-= 2\cos(\Delta k\,r_z - \Delta\omega\,r'_t)\cos(kz-\omega r'_t),
+= 2\cos(\Delta k\,r_z - \Delta\omega\,r'_t/c)\cos(kz-\omega r'_t/c),
 $$
-an envelope $\cos(\Delta k\,r_z-\Delta\omega\,r'_t)$ modulating the carrier. The envelope's speed is $\Delta\omega/\Delta k$, which tends to $v_g = d\omega/dk$ as $\Delta\omega\to0$. This shows that in a dispersive medium the physically transported energy moves at the group velocity, while the phase of the carrier moves at the phase velocity — a distinction the single-frequency statements of Problems 1–3 cannot display.
+an envelope $\cos(\Delta k\,r_z-\Delta\omega\,r'_t/c)$ modulating the carrier. The envelope's speed is $\Delta\omega/\Delta k$, which tends to $v_g = d\omega/dk$ as $\Delta\omega\to0$. This shows that in a dispersive medium the physically transported energy moves at the group velocity, while the phase of the carrier moves at the phase velocity — a distinction the single-frequency statements of Problems 1–3 cannot display.
 
 **Solution (c).** In vacuum $\epsilon = \epsilon_0$, $\mu = \mu_0$, so $c = c_0$, $Z = Z_0$, $n = 1$, and $dn/d\omega = 0$. Then the dispersion relation becomes $k^2 = \omega^2/c_0^2$, the impedance relation becomes $\vec H_0 = Z_0^{-1}\vec u_k\times\vec E_0$, the amplitude relation becomes $|\vec E_0| = Z_0|\vec H_0| = c_0|\vec B_0|$, the nullness $\langle\tilde{F}_0\rangle_{\natural} = 0$ is unchanged, $v_p = v_g = c_0$, and the gradient's temporal eigenvalue becomes $-\omega/c_0$. Every relation reduces to the vacuum statement of the parent articles by the substitution $c\to c_0$, $Z\to Z_0$, as it must.
 
 ## Problem 5: The Monochromatic and Stationary Field
 
-**Statement.** (a) With the harmonic time dependence $\tilde F = \tilde F_0(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)\exp(-i\omega r'_t)$ and wave number $k = \omega/c$, derive the equation satisfied by the complex amplitude and its radiating solution. (b) Take the time-independent limit, recover the Poisson equation and the Newton-potential solution, and exhibit the scalar and vector potentials of the stationary field.
+**Statement.** (a) With the harmonic time dependence $\tilde F = \tilde F_0(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)\exp(-i\omega r'_t/c)$ and wave number $k = \omega/c$, derive the equation satisfied by the complex amplitude and its radiating solution. (b) Take the time-independent limit, recover the Poisson equation and the Newton-potential solution, and exhibit the scalar and vector potentials of the stationary field.
 
 **Solution (a).** In the corpus's three-vector form the field satisfies $\partial/\partial R_t\tilde F+\mathrm{rot}\,\tilde F=-\vec j$, with $\vec j = \sqrt{\mu}\,\vec J_{\mathrm{e}} - i\sqrt{\epsilon}\,\vec J_{\mathrm{m}}$ and $\partial/\partial R_t=-i\partial/\partial r'_t$. For the harmonic dependence $\partial/\partial R_t=-k$, so
 
@@ -346,7 +346,7 @@ The gap that the exercise most wants to flag is the first: a reader of the paren
 
 ## Summary
 
-For a source-free monochromatic plane wave $\tilde{F} = \tilde{F}_0\,\exp(i(\vec k\cdot(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)-\omega r'_t))$ in a homogeneous medium, the biquaternionic Maxwell equation reduces to the algebraic annihilation $\tilde P_{\Phi}\tilde{F}_0 = 0$, where $\tilde P_{\Phi} = \frac{i\omega}{c}e_t + \vec k \in \mathbb{B}_{\Phi}$ is the four-wavevector. Its scalar and vector parts give the two curl conditions
+For a source-free monochromatic plane wave $\tilde{F} = \tilde{F}_0\,\exp(i(\vec k\cdot(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)-\omega r'_t/c))$ in a homogeneous medium, the biquaternionic Maxwell equation reduces to the algebraic annihilation $\tilde P_{\Phi}\tilde{F}_0 = 0$, where $\tilde P_{\Phi} = \frac{i\omega}{c}e_t + \vec k \in \mathbb{B}_{\Phi}$ is the four-wavevector. Its scalar and vector parts give the two curl conditions
 $$
 \vec k\times\vec E_0 = \omega\mu\,\vec H_0,
 \qquad

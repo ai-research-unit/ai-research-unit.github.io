@@ -43,11 +43,11 @@ so that the complex scalar is equivalent to two real scalars, one in each sector
 
 ### The action and its variation
 
-The Klein–Gordon action for the complex scalar field is the standard relativistic scalar action, written with the framework's d'Alembertian. In natural units,
+The Klein–Gordon action for the complex scalar field is the standard relativistic scalar action, written with the framework's d'Alembertian. The action carries the inverse wave number $\hbar=m\,c/k_m$,
 
 $$
 S[\tilde{Ξ}]
-=\int d^4r\left[-\frac{1}{2}\sum_\mu\partial/\partial R_\mu\,\xi^*\,\partial/\partial R_\mu\,\xi-\frac{1}{2}\,k_m^{2}\,|\xi|^2\right],
+=\frac{m\,c}{k_m}\int d^4r\left[-\frac{1}{2}\sum_\mu\partial/\partial R_\mu\,\xi^*\,\partial/\partial R_\mu\,\xi-\frac{1}{2}\,k_m^{2}\,|\xi|^2\right],
 $$
 
 with the index summed over the same $Q$ coordinate; in biquaternion form, using $\tilde{Ξ}^{*}=\xi^*e_t$ and $\mathrm{Sc}(\tilde{Ξ}^{*}\tilde{Ξ})=|\xi|^2$, this is a central scalar functional,
@@ -314,8 +314,8 @@ The semiclassical expansion about a source has the classical Klein–Gordon equa
 | $\tilde P_{\Phi}=\frac{m\,c\,(i\omega/c\,e_t+\vec k)}{k_m}$ | Material four-wavevector, $\in\mathbb{B}_{\Phi}$ |
 | $\langle\tilde{Q}\rangle_{\natural}=\tilde{Q}\tilde{Q}^{\natural}$ | Biquaternion norm; $\langle\tilde P_{\Phi}\rangle_{\natural}=-k_m^{2}$ is the mass shell |
 | $\Box=\tilde{\nabla}\tilde{\nabla}^{\natural}=\partial^2/\partial R_t^2+\Delta$ | d'Alembertian, series convention |
-| $1/k_m$ | The mass length, $\hbar/(mc)$; its reciprocal $k_m=mc/\hbar$ is the mass parameter ($k_m=m$ in natural units) |
-| $\Omega_{\vec k}=\sqrt{\vec k^2+k_m^{2}}$ | On-shell frequency, natural units |
+| $1/k_m$ | The mass length, $\hbar/(mc)$; its reciprocal $k_m=mc/\hbar$ is the mass parameter |
+| $\Omega_{\vec k}=\sqrt{\vec k^2+k_m^{2}}$ | On-shell frequency, an inverse length |
 | $S[\tilde{Ξ}]$ | Klein–Gordon action, central scalar |
 | $S_E[\tilde{Ξ}]$ | Euclidean action, $\ge0$ for $k_m^{2}\ge0$ |
 | $Z[J]$ | Generating functional; $\tilde{J}_{\Phi}=Je_t$ a central source |

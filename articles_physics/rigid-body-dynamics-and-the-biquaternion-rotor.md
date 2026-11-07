@@ -121,7 +121,7 @@ so the space-frame angular velocity is the body-frame angular velocity carried t
 
 ### Check on a Fixed Axis
 
-For a rotation about a fixed axis $\vec u$ at rate $\omega$, the rotor is $\tilde u(r'_t)=\exp(+\tfrac12\omega r'_t\,\vec u)$. Then $d\tilde u/dr'_t=+\tfrac12\omega\vec u\tilde u$, and since $\vec u$ is constant and commutes with $\tilde u$,
+For a rotation about a fixed axis $\vec u$ at rate $\omega$, the rotor is $\tilde u(r'_t)=\exp(+\tfrac12\omega r'_t/c\,\vec u)$. Then $d\tilde u/dr'_t=+\tfrac12\omega\vec u\tilde u$, and since $\vec u$ is constant and commutes with $\tilde u$,
 
 $$
 \vec\omega_b=+2\tilde u^{\natural}d\tilde u/dr'_t

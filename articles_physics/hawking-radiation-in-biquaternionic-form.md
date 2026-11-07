@@ -156,10 +156,10 @@ The $(r'_t,r)$ part of the line element becomes
 $$
 ds^2_{(r'_t,r)} = -f c^2 d{r'_{t}}^2 + f^{-1}dr^2
 = -\rho^2\left(\frac{c\,dr'_t}{2r_s}\right)^2 + d\rho^2
-= -\rho^2\,d(\kappa_\omega r'_t)^2 + d\rho^2,
+= -\rho^2\,d(\kappa_\omega r'_t/c)^2 + d\rho^2,
 $$
 
-with $\kappa_\omega=c/(2r_s)$ the surface gravity in the frequency normalization. This is the Rindler metric of a uniformly accelerated frame, with Rindler time $\kappa_\omega r'_t$ and proper acceleration parameter equal to the surface gravity. The near-horizon region of the Schwarzschild horizon is therefore a Rindler wedge, and its horizon is the Rindler horizon; the angular part is a sphere of radius $r_s$ at leading order and does not affect the argument. This is the local statement that makes the identification of Hawking radiation with the Unruh effect exact rather than approximate.
+with $\kappa_\omega=c/(2r_s)$ the surface gravity in the frequency normalization. This is the Rindler metric of a uniformly accelerated frame, with Rindler time $\kappa_\omega r'_t/c$ and proper acceleration parameter equal to the surface gravity. The near-horizon region of the Schwarzschild horizon is therefore a Rindler wedge, and its horizon is the Rindler horizon; the angular part is a sphere of radius $r_s$ at leading order and does not affect the argument. This is the local statement that makes the identification of Hawking radiation with the Unruh effect exact rather than approximate.
 
 ### The Same KMS Statement in Different Coordinates
 
@@ -295,10 +295,10 @@ The horizon is what forces the specific distribution. Consider the outgoing radi
 
 $$
 U=-\exp(-\kappa u)\quad\Longleftrightarrow\quad u=-\frac{1}{\kappa}\ln(-U),
-\qquad (\hbar=c=1,\ \kappa=\kappa_\omega),
+\qquad (\kappa=\kappa_\omega),
 $$
 
-where $\kappa$ is the surface gravity in natural units. A positive-frequency out mode of frequency $\omega$ is proportional to
+where $\kappa$ is the surface gravity, an inverse length. A positive-frequency out mode of frequency $\omega$ is proportional to
 
 $$
 \exp(-i\omega u)=\left(-U\right)^{i\omega/\kappa},

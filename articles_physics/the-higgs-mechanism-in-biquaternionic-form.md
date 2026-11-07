@@ -132,10 +132,10 @@ This is a quadratic form in the connection — a **Proca mass term**. Comparing 
 $$
 \boxed{\;M_A^2 = \frac{ϙ^2v^2}{\hbar^2}\;},
 \qquad\text{i.e.}\qquad
-M_A = \frac{ϙv}{\hbar} \quad (\hbar = 1:\ M_A = ϙv).
+M_A = \frac{ϙv}{\hbar}.
 $$
 
-This is the standard abelian-Higgs result. It reproduces the textbook value: with $\langle|\xi|\rangle = v/\sqrt{2}$ the conventional complex scalar, $|D_\mu\xi|^2$ at the minimum gives $\frac{1}{2}ϙ^2v^2\sum_\mu A_\mu A_\mu$, so the pole mass is $M_A = ϙv$ (in units $\hbar = 1$), exactly as for the Higgs mechanism of scalar electrodynamics. The larger $\frac{m\,c}{k_m}$ is, the smaller the mass, as the factor $\frac{k_m\,ϙ}{m\,c}$ requires.
+This is the standard abelian-Higgs result. It reproduces the textbook value: with $\langle|\xi|\rangle = v/\sqrt{2}$ the conventional complex scalar, $|D_\mu\xi|^2$ at the minimum gives $\frac{1}{2}ϙ^2v^2\sum_\mu A_\mu A_\mu$, so the pole mass is $M_A = \frac{ϙv}{\hbar}$, exactly as for the Higgs mechanism of scalar electrodynamics. The larger $\frac{m\,c}{k_m}$ is, the smaller the mass, as the factor $\frac{k_m\,ϙ}{m\,c}$ requires.
 
 **What produced the mass, and what did not.** Three things about the derivation are worth stating, because each is a trap avoided.
 

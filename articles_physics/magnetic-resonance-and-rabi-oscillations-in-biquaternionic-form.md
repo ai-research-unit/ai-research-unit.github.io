@@ -7,7 +7,7 @@ A spin-1/2 placed in a static magnetic field $B_0\vec u_z$ precesses at the Larm
 This article presents the driven spin-1/2 in the biquaternion algebra $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ of the companion articles. The physical content is standard and is reproduced here exactly. What the article establishes is **where** the driven problem lives in the algebra and which of the framework's structures the resonance condition and the Rabi formula expose:
 
 1. **The drive is a pair of Hermitian elements with time-dependent real coefficients.** The transverse coupling is built from $\tilde{S}_{\Psi,1} =\frac{m\,c}{2\,k_m}i\vec e_x$ and $\tilde{S}_{\Psi,2} =\frac{m\,c}{2\,k_m}i\vec e_y$, both in $\mathbb{B}_{\Psi}$; the total Hamiltonian remains in $\mathbb{B}_{\Psi}$ for all times. No element of the material sector enters the spin dynamics.
-2. **The rotating frame is a rotor.** The transformation that removes the Larmor precession is conjugation by the unit real quaternion $\tilde u_{\mathrm r}(r'_t) = \exp(-\tfrac{\omega r'_t}{2}\vec e_z)\in\mathbb{B}_{H}$, the same one-parameter rotor that the spin-precession exercise uses. The frame is not an approximation; it is an exact change of description.
+2. **The rotating frame is a rotor.** The transformation that removes the Larmor precession is conjugation by the unit real quaternion $\tilde u_{\mathrm r}(r'_t) = \exp(-\tfrac{\omega r'_t}{2\,c}\vec e_z)\in\mathbb{B}_{H}$, the same one-parameter rotor that the spin-precession exercise uses. The frame is not an approximation; it is an exact change of description.
 3. **The effective Hamiltonian is static and traceless**,
    $$
    \tilde{R}_{\Psi,R} = -\frac{m\,c}{2\,k_m}\Big[(\omega_0-\omega)\,i\vec e_z + \omega_1\,i\vec e_x\Big] \in  \mathbb{B}_{\Psi},
@@ -31,29 +31,29 @@ The companion articles supply the pieces:
 A spin-1/2 of gyromagnetic ratio $\gamma$ in the field
 
 $$
-\vec B(r'_t) = B_0\,\vec u_z + B_1\left(\cos\omega r'_t\,\vec u_x - \sin\omega r'_t\,\vec u_y\right)
+\vec B(r'_t) = B_0\,\vec u_z + B_1\left(\cos(\omega r'_t/c)\,\vec u_x - \sin(\omega r'_t/c)\,\vec u_y\right)
 $$
 
 has the Hamiltonian $H(r'_t) = -\vec\mu\cdot\vec B(r'_t)$ with $\vec\mu = \gamma\vec S$. In the biquaternion algebra the spin operator is $\tilde S_{\Psi} =\frac{m\,c}{2\,k_m}i \vec e_k$ along $\vec e_k$, and the Hamiltonian is the Hermitian element
 
 $$
 \tilde R_\Psi(r'_t) = -\frac{m\,c\,\omega_{0}}{2\,k_m}\,i\vec e_z
--\frac{m\,c\,\omega_{1}}{2\,k_m}\left(i\vec e_x\cos\omega r'_t - i\vec e_y\sin\omega r'_t\right),
+-\frac{m\,c\,\omega_{1}}{2\,k_m}\left(i\vec e_x\cos(\omega r'_t/c) - i\vec e_y\sin(\omega r'_t/c)\right),
 \qquad
 \omega_0 = \gamma B_0, \quad \omega_1 = \gamma B_1 .
 $$
 
 Here $\omega_0$ is the Larmor frequency and $\omega_1$ is the **Rabi frequency**, the rate set by the transverse amplitude. Each of the three terms lies in $\mathbb{B}_{\Psi}$: the longitudinal term is a multiple of $i\vec e_z$ and the transverse terms are multiples of $i\vec e_x$ and $i\vec e_y$, each with a real time-dependent coefficient. The Hamiltonian is therefore Hermitian at every instant, and the evolution it generates preserves the biquaternion norm and the trace, as the Schrödinger article requires.
 
-The choice of the $-\vec u_y$ sense for the second transverse component is the one that corotates with the Larmor precession in the convention of the companion exercise *Exercise: Spin Precession in a Magnetic Field*, where the Bloch vector of a spin in a static field precesses as $\vec r(r'_t) = (\cos\omega_0 r'_t, -\sin\omega_0 r'_t, 0)$ for a state initially along $+\vec u_x$. The field of the equation above rotates in the same sense, so the drive remains in phase with the precession; a linearly polarised drive is the sum of this circular component and its counter-rotating partner, and the rotating-wave approximation discards the latter, as discussed below.
+The choice of the $-\vec u_y$ sense for the second transverse component is the one that corotates with the Larmor precession in the convention of the companion exercise *Exercise: Spin Precession in a Magnetic Field*, where the Bloch vector of a spin in a static field precesses as $\vec r(r'_t) = (\cos(\omega_0 r'_t/c), -\sin(\omega_0 r'_t/c), 0)$ for a state initially along $+\vec u_x$. The field of the equation above rotates in the same sense, so the drive remains in phase with the precession; a linearly polarised drive is the sum of this circular component and its counter-rotating partner, and the rotating-wave approximation discards the latter, as discussed below.
 
 ### The Larmor Precession as a Rotor
 
-With $B_1 = 0$ the propagator is $\tilde u_0(r'_t) = \exp(-\frac{k_m\,i\,H_{0}\,r'_{t}}{m\,c})$ with $\tilde{R}_{\Psi,0} = -\frac{m\,c\,\omega_{0}}{2\,k_m}i\vec e_z$. Since $-i H_{0}/\hbar = \tfrac{\omega_0}{2}(i\cdot i\vec e_z) = -\tfrac{\omega_0}{2}\vec e_z$ and $\vec e_z^2 = -e_t$,
+With $B_1 = 0$ the propagator is $\tilde u_0(r'_t) = \exp(-\frac{k_m\,i\,H_{0}\,r'_{t}}{m\,c^{2}})$ with $\tilde{R}_{\Psi,0} = -\frac{m\,c\,\omega_{0}}{2\,k_m}i\vec e_z$. Since $-i H_{0}/\hbar = \tfrac{\omega_0}{2}(i\cdot i\vec e_z) = -\tfrac{\omega_0}{2}\vec e_z$ and $\vec e_z^2 = -e_t$,
 
 $$
-\tilde u_0(r'_t) = \exp\!\left(-\frac{\omega_0 r'_t}{2}\vec e_z\right)
-= \cos\frac{\omega_0 r'_t}{2}\,e_t - \sin\frac{\omega_0 r'_t}{2}\,\vec e_z
+\tilde u_0(r'_t) = \exp\!\left(-\frac{\omega_0 r'_t}{2\,c}\vec e_z\right)
+= \cos\frac{\omega_0 r'_t}{2\,c}\,e_t - \sin\frac{\omega_0 r'_t}{2\,c}\,\vec e_z
 \;\in \mathbb{B}_{H} .
 $$
 
@@ -78,8 +78,8 @@ Define the rotating-frame state and observable by
 $$
 \tilde{Ξ}_{\mathrm{sp},R}(r'_t) = \tilde u_{\mathrm r}(r'_t)^{*}\,\tilde{Ξ}_{\mathrm{sp}}(r'_t),
 \qquad
-\tilde u_{\mathrm r}(r'_t) = \exp\!\left(-\frac{\omega r'_t}{2}\vec e_z\right)
-= \cos\frac{\omega r'_t}{2}\,e_t - \sin\frac{\omega r'_t}{2}\,\vec e_z .
+\tilde u_{\mathrm r}(r'_t) = \exp\!\left(-\frac{\omega r'_t}{2\,c}\vec e_z\right)
+= \cos\frac{\omega r'_t}{2\,c}\,e_t - \sin\frac{\omega r'_t}{2\,c}\,\vec e_z .
 $$
 
 The rotor $\tilde u_{\mathrm r}$ is the Larmor rotor taken at the drive frequency $\omega$ rather than at $\omega_0$; it rotates the reference frame at the drive frequency. The Schrödinger equation $\frac{m\,c\,i\,d\,\tilde{Ξ}_{\mathrm{sp}}}{k_m\,dr'_{t}}= \tilde R_\Psi\tilde{Ξ}_{\mathrm{sp}}$ becomes $\frac{m\,c\,i\,d\,\tilde{Ξ}_{\mathrm{sp},R}}{k_m\,dr'_{t}}= \tilde{R}_{\Psi,R}\tilde{Ξ}_{\mathrm{sp},R}$ with
@@ -95,7 +95,7 @@ The second term is the "fictitious" term produced by the time dependence of the 
 The three terms of $\tilde R_\Psi$ transform as follows. The longitudinal term is proportional to $i\vec e_z$, which commutes with the rotor, so it is unchanged. The transverse combination is rotated into a fixed direction: using the conjugation rule for a rotor about $\vec e_z$, one finds
 
 $$
-\tilde u_{\mathrm r}^{*}\left(i\vec e_x\cos\omega r'_t - i\vec e_y\sin\omega r'_t\right)\tilde u_{\mathrm r} = i\vec e_x ,
+\tilde u_{\mathrm r}^{*}\left(i\vec e_x\cos(\omega r'_t/c) - i\vec e_y\sin(\omega r'_t/c)\right)\tilde u_{\mathrm r} = i\vec e_x ,
 $$
 
 so the drive becomes a static transverse field. The fictitious term computes to $-\frac{m\,c\,i\,\tilde{u}_{\mathrm r}^{*}}{k_m}\partial/\partial r'_t\tilde u_{\mathrm r} = +\frac{m\,c\,\omega}{2\,k_m}i\vec e_z$. Adding the three contributions,
@@ -140,7 +140,7 @@ Prepare the spin in the upper eigenstate of the static field, $\tilde{Ϛ}_{\Psi}
 $$
 \tilde{Ϛ}_{\Psi,R}(r'_t) = \tilde u_H(r'_t)\,\tilde{Ϛ}_{\Psi}(0)\,\tilde u_H(r'_t)^{*},
 \qquad
-\tilde u_H(r'_t) = \exp\!\left(-\frac{k_m\,i\,\tilde{R}_{\Psi,R}\,r'_{t}}{m\,c}\right).
+\tilde u_H(r'_t) = \exp\!\left(-\frac{k_m\,i\,\tilde{R}_{\Psi,R}\,r'_{t}}{m\,c^{2}}\right).
 $$
 
 Since $-\frac{k_m\,i\,H_{R}}{m\,c}= -\tfrac12(\omega_1 \vec e_x + \Delta \vec e_z)$ and the square of the generator is $-\tfrac14(\omega_1^2+\Delta^2)e_t = -\tfrac14\Omega^2 e_t$, the exponential is a rotation about $\vec u_R$:
@@ -160,7 +160,7 @@ $$
 This is the **Rabi formula**. On resonance it simplifies to
 
 $$
-P_\downarrow(r'_t)\big|_{\omega=\omega_0} = \sin^2\!\left(\frac{\omega_1 r'_t}{2}\right),
+P_\downarrow(r'_t)\big|_{\omega=\omega_0} = \sin^2\!\left(\frac{\omega_1 r'_t}{2\,c}\right),
 $$
 
 the elementary sinusoidal oscillation between the two levels at the Rabi frequency.
@@ -172,10 +172,10 @@ The derivation contains one geometric fact worth isolating. In the rotating fram
 The circularly polarised drive used above is a single rotating component. A practical magnetic-resonance experiment uses a **linearly** polarised field,
 
 $$
-\vec B_1(r'_t) = 2B_1\cos\omega r'_t\;\vec u_x,
+\vec B_1(r'_t) = 2B_1\cos(\omega r'_t/c)\;\vec u_x,
 $$
 
-which is the sum of the corotating component $B_1(\cos\omega r'_t\,\vec u_x-\sin\omega r'_t\,\vec u_y)$ considered above and the counter-rotating component $B_1(\cos\omega r'_t\,\vec u_x+\sin\omega r'_t\,\vec u_y)$. The corotating component is static in the rotating frame; the counter-rotating component rotates at $2\omega$ and contributes rapidly oscillating terms. The **rotating-wave approximation** (RWA) drops the counter-rotating terms, and it is accurate when $\omega_1\ll\omega_0$; the neglected terms produce the Bloch–Siegert shift, of order $\omega_1^2/\omega_0$. In the biquaternion algebra the split is the decomposition of the linear drive into the two circular components $i\vec e_x\cos\omega r'_t\mp i\vec e_y\sin\omega r'_t$, each a Hermitian combination; the RWA keeps the component that corotates with the Larmor rotor $\tilde u_0$ and discards its conjugate. The approximation is thus a statement about which rotor the drive is in phase with, and it has no special algebraic status.
+which is the sum of the corotating component $B_1(\cos(\omega r'_t/c)\,\vec u_x-\sin(\omega r'_t/c)\,\vec u_y)$ considered above and the counter-rotating component $B_1(\cos(\omega r'_t/c)\,\vec u_x+\sin(\omega r'_t/c)\,\vec u_y)$. The corotating component is static in the rotating frame; the counter-rotating component rotates at $2\omega$ and contributes rapidly oscillating terms. The **rotating-wave approximation** (RWA) drops the counter-rotating terms, and it is accurate when $\omega_1\ll\omega_0$; the neglected terms produce the Bloch–Siegert shift, of order $\omega_1^2/\omega_0$. In the biquaternion algebra the split is the decomposition of the linear drive into the two circular components $i\vec e_x\cos(\omega r'_t/c)\mp i\vec e_y\sin(\omega r'_t/c)$, each a Hermitian combination; the RWA keeps the component that corotates with the Larmor rotor $\tilde u_0$ and discards its conjugate. The approximation is thus a statement about which rotor the drive is in phase with, and it has no special algebraic status.
 
 ### $\pi$ and $\pi/2$ Pulses
 
@@ -214,7 +214,7 @@ The Bloch picture is the material of the companion article *Quantum Physics in B
 **What the algebra organises.**
 
 - **A single sector.** The drive, the static field and the effective field are all Hermitian elements of $\mathbb{B}_{\Psi}$, and the whole problem is the conjugation of a state in that sector by a product of unitaries. The material sector does not appear, except in the frame rotor $\tilde u_{\mathrm r}$, which is a real quaternion in $\mathbb{B}_{H}$.
-- **The rotor as the natural variable.** The rotating frame is not an ad hoc complex exponential; it is conjugation by the unit real quaternion $\exp(-\tfrac{\omega r'_t}{2}\vec e_z)$, the same rotor that carries the Larmor precession. The effective Hamiltonian is the transformed observable, and the resonance condition is the vanishing of its longitudinal component.
+- **The rotor as the natural variable.** The rotating frame is not an ad hoc complex exponential; it is conjugation by the unit real quaternion $\exp(-\tfrac{\omega r'_t}{2\,c}\vec e_z)$, the same rotor that carries the Larmor precession. The effective Hamiltonian is the transformed observable, and the resonance condition is the vanishing of its longitudinal component.
 - **The spectral gap as the Rabi frequency.** The generalized Rabi frequency is the difference of the two eigenvalues of the effective Hamiltonian, $\pm\frac{m\,c\,\Omega}{2\,k_m}$, so it is a spectral quantity of a Hermitian element of $\mathbb{B}_{\Psi}$. The maximum transition amplitude $\omega_1^2/(\omega_1^2+\Delta^2)$ is the square of the transverse fraction of the effective field, i.e. the geometric tilt of $\vec u_R$ from the equator.
 - **No privileged counter-rotating terms.** Because the drive is written as a Hermitian element with an explicit time dependence, the RWA is exposed as a physical approximation about which rotor the drive tracks, not as an algebraic necessity.
 
@@ -226,7 +226,7 @@ The Bloch picture is the material of the companion article *Quantum Physics in B
 
 2. **Dissipation.** The framework is $*$-unitary, and the Rabi problem is closed. The open-system version — the Bloch equations with relaxation — requires a density operator that is not merely conjugated by a rotor. Whether the informational sector admits a completely positive map with a natural algebraic form is left open by the companion article *The Measurement Problem in Algebraic Form*.
 
-3. **The rotating frame and the local complex structure.** The rotor $\exp(-\tfrac{\omega r'_t}{2}\vec e_z)$ uses the real unit $\vec e_z$, not the central imaginary. The central imaginary of the Schrödinger equation is fixed, but the series makes the complex structure local, set by the medium. Whether the frame rotor should be regarded as a local object, and how it would then differ from a global one, is unresolved.
+3. **The rotating frame and the local complex structure.** The rotor $\exp(-\tfrac{\omega r'_t}{2\,c}\vec e_z)$ uses the real unit $\vec e_z$, not the central imaginary. The central imaginary of the Schrödinger equation is fixed, but the series makes the complex structure local, set by the medium. Whether the frame rotor should be regarded as a local object, and how it would then differ from a global one, is unresolved.
 
 4. **Dressed states.** The eigenstates of $\tilde{R}_{\Psi,R}$ are the dressed states of the driven two-level system, and the Mollow triplet in resonance fluorescence is their spectrum. Is there an algebraic statement of the dressed-state structure — for instance a spectral decomposition of $\tilde{R}_{\Psi,R}$ that makes the Autler–Townes splitting immediate?
 
@@ -234,13 +234,13 @@ The Bloch picture is the material of the companion article *Quantum Physics in B
 
 ## Summary
 
-A spin-1/2 driven by $\vec B(r'_t) = B_0\vec u_z + B_1(\cos\omega r'_t\,\vec u_x-\sin\omega r'_t\,\vec u_y)$ has the biquaternion Hamiltonian
+A spin-1/2 driven by $\vec B(r'_t) = B_0\vec u_z + B_1(\cos(\omega r'_t/c)\,\vec u_x-\sin(\omega r'_t/c)\,\vec u_y)$ has the biquaternion Hamiltonian
 
 $$
-\tilde R_\Psi(r'_t) = -\frac{m\,c\,\omega_{0}}{2\,k_m}i\vec e_z -\frac{m\,c\,\omega_{1}}{2\,k_m}\left(i\vec e_x\cos\omega r'_t - i\vec e_y\sin\omega r'_t\right) \in  \mathbb{B}_{\Psi},
+\tilde R_\Psi(r'_t) = -\frac{m\,c\,\omega_{0}}{2\,k_m}i\vec e_z -\frac{m\,c\,\omega_{1}}{2\,k_m}\left(i\vec e_x\cos(\omega r'_t/c) - i\vec e_y\sin(\omega r'_t/c)\right) \in  \mathbb{B}_{\Psi},
 $$
 
-with $\omega_0 = \gamma B_0$ and $\omega_1 = \gamma B_1$. The transformation to the frame rotating with the drive is conjugation by the unit real quaternion $\tilde u_{\mathrm r}(r'_t) = \exp(-\tfrac{\omega r'_t}{2}\vec e_z)$, and it produces the static effective Hamiltonian
+with $\omega_0 = \gamma B_0$ and $\omega_1 = \gamma B_1$. The transformation to the frame rotating with the drive is conjugation by the unit real quaternion $\tilde u_{\mathrm r}(r'_t) = \exp(-\tfrac{\omega r'_t}{2\,c}\vec e_z)$, and it produces the static effective Hamiltonian
 
 $$
 \tilde{R}_{\Psi,R} = \tilde u_{\mathrm r}^{*}\tilde R_\Psi\tilde u_{\mathrm r} -\frac{m\,c\,i\,\tilde{u}_{\mathrm r}^{*}}{k_m}\partial/\partial r'_t\tilde u_{\mathrm r}
@@ -255,7 +255,7 @@ $$
 P_\downarrow(r'_t) = \frac{\omega_1^2}{\omega_1^2+\Delta^2}\,\sin^2\!\left(\frac{\Omega r'_t}{2}\right),
 $$
 
-which reduces to $\sin^2(\omega_1r'_t/2)$ on resonance. The $\pi$-pulse $r'_t = \pi/\omega_1$ inverts the spin and the $\pi/2$-pulse $r'_t = \pi/(2\omega_1)$ prepares the equal superposition. The Bloch vector obeys $d\vec r/dr'_t = \vec\omega_{\mathrm{eff}}\times\vec r$ with $\vec\omega_{\mathrm{eff}} = (-\omega_1,0,-\Delta)$, a rigid rotation about the fixed effective axis. The rotating-wave approximation is the discarding of the counter-rotating helicity of a linear drive; it is a statement about which rotor the drive tracks, not an algebraic identity.
+which reduces to $\sin^2(\omega_1r'_t/c/2)$ on resonance. The $\pi$-pulse $r'_t = \pi/\omega_1$ inverts the spin and the $\pi/2$-pulse $r'_t = \pi/(2\omega_1)$ prepares the equal superposition. The Bloch vector obeys $d\vec r/dr'_t = \vec\omega_{\mathrm{eff}}\times\vec r$ with $\vec\omega_{\mathrm{eff}} = (-\omega_1,0,-\Delta)$, a rigid rotation about the fixed effective axis. The rotating-wave approximation is the discarding of the counter-rotating helicity of a linear drive; it is a statement about which rotor the drive tracks, not an algebraic identity.
 
 ## Summary of Notation
 
@@ -267,12 +267,12 @@ which reduces to $\sin^2(\omega_1r'_t/2)$ on resonance. The $\pi$-pulse $r'_t = 
 | $\mathbb{B}_{\Psi}$ | Hermitian (informational) subspace; home of all Hamiltonians here |
 | $\mathbb{B}_{H}$ | Real-quaternion subspace; home of the frame rotor |
 | $\tilde{S}_{\Psi,k} =\frac{m\,c}{2\,k_m}i\vec e_k$ | Spin observable along $\vec e_k$ |
-| $\vec B(r'_t) = B_0\vec u_z+B_1(\cos\omega r'_t\,\vec u_x-\sin\omega r'_t\,\vec u_y)$ | Static field plus corotating drive |
+| $\vec B(r'_t) = B_0\vec u_z+B_1(\cos(\omega r'_t/c)\,\vec u_x-\sin(\omega r'_t/c)\,\vec u_y)$ | Static field plus corotating drive |
 | $\omega_0 = \gamma B_0$ | Larmor frequency |
 | $\omega_1 = \gamma B_1$ | Rabi frequency |
 | $\Delta = \omega_0-\omega$ | Detuning |
-| $\tilde R_\Psi(r'_t) = -\frac{m\,c\,\omega_{0}}{2\,k_m}i\vec e_z-\frac{m\,c\,\omega_{1}}{2\,k_m}(i\vec e_x\cos\omega r'_t-i\vec e_y\sin\omega r'_t)$ | Laboratory Hamiltonian |
-| $\tilde u_{\mathrm r}(r'_t) = \exp(-\tfrac{\omega r'_t}{2}\vec e_z)$ | Rotating-frame rotor |
+| $\tilde R_\Psi(r'_t) = -\frac{m\,c\,\omega_{0}}{2\,k_m}i\vec e_z-\frac{m\,c\,\omega_{1}}{2\,k_m}(i\vec e_x\cos(\omega r'_t/c)-i\vec e_y\sin\omega r'_t/c)$ | Laboratory Hamiltonian |
+| $\tilde u_{\mathrm r}(r'_t) = \exp(-\tfrac{\omega r'_t}{2\,c}\vec e_z)$ | Rotating-frame rotor |
 | $\tilde{R}_{\Psi,R} = -\frac{m\,c}{2\,k_m}[(\omega_0-\omega)i\vec e_z+\omega_1i\vec e_x]$ | Effective Hamiltonian in the rotating frame |
 | $\Omega = \sqrt{\omega_1^2+\Delta^2}$ | Generalized Rabi frequency (spectral gap) |
 | $\vec u_R = (\omega_1\vec e_x+\Delta \vec e_z)/\Omega$ | Effective rotation axis |

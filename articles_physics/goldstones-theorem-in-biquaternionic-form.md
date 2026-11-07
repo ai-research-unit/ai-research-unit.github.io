@@ -28,7 +28,7 @@ $$
 \mathrm{Sc}\!\left(\tilde{Ξ}^{*}\tilde{Ξ}\right)=\frac12\left(\xi_1^2+\xi_2^2\right),
 $$
 
-so that $\xi_1,\xi_2$ are the two real scalar fields of the sector and the kinetic term is $\frac12[(\partial\xi_1)^2+(\partial\xi_2)^2]$ in natural units $\hbar=c=1$. The $\mathrm{U}(1)$ charge and current are those of the companion Noether article; the mass enters as the length $k_m=mc/\hbar$ where it appears.
+so that $\xi_1,\xi_2$ are the two real scalar fields of the sector and the kinetic term is $\frac12[(\partial\xi_1)^2+(\partial\xi_2)^2]$, each derivative an inverse length and the temporal one differentiating $r'_t$. The $\mathrm{U}(1)$ charge and current are those of the companion Noether article; the mass enters as the length $k_m=mc/\hbar$ where it appears.
 
 ## The Symmetry and Its Spontaneous Breaking
 

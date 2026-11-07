@@ -20,7 +20,7 @@ and the tree-level potential, the vacuum manifold, the radial mode and the would
 
 The findings are the following, and they are separated at the outset in the corpus's three-way form.
 
-- **Established, and recomputed below.** The framework's scalar invariant is $\rho = \mathrm{Sc}(\tilde{Ξ}^{*}\tilde{Ξ})$, and every gauge-invariant, $\mathrm{U}(1)$-preserving potential is a function of $\rho$ alone. The one-loop effective potential of the central scalar is a function of $\rho$ alone as well, because the fluctuation operator of a central background is central: the radiative correction respects the central symmetry exactly and does not generate a non-central operator. The one-loop coefficient that multiplies $\rho^2\ln(\rho/\mu^2)$ is fixed by the field content; for the central scalar coupled to the central gauge field it is $B = (12ϙ^4 + \tfrac52\lambda^2)/(64\pi^2)$ in units $\hbar = c = 1$. With $B > 0$ the one-loop potential of a classically scale-invariant central scalar has a minimum at the exponentially small value $\ln(\langle \rho\rangle/\mu^2) = -\tfrac12 - \lambda/(4B)$, with $\frac{d^2V}{d\rho^2}(\langle \rho\rangle) = 2B > 0$ and $V(\langle \rho\rangle) = -\tfrac{B}{2}\langle \rho\rangle^2 < 0$.
+- **Established, and recomputed below.** The framework's scalar invariant is $\rho = \mathrm{Sc}(\tilde{Ξ}^{*}\tilde{Ξ})$, and every gauge-invariant, $\mathrm{U}(1)$-preserving potential is a function of $\rho$ alone. The one-loop effective potential of the central scalar is a function of $\rho$ alone as well, because the fluctuation operator of a central background is central: the radiative correction respects the central symmetry exactly and does not generate a non-central operator. The one-loop coefficient that multiplies $\rho^2\ln(\rho/\mu^2)$ is fixed by the field content; for the central scalar coupled to the central gauge field it is $B = (12ϙ^4 + \tfrac52\lambda^2)/(64\pi^2)$, a pure number. With $B > 0$ the one-loop potential of a classically scale-invariant central scalar has a minimum at the exponentially small value $\ln(\langle \rho\rangle/\mu^2) = -\tfrac12 - \lambda/(4B)$, with $\frac{d^2V}{d\rho^2}(\langle \rho\rangle) = 2B > 0$ and $V(\langle \rho\rangle) = -\tfrac{B}{2}\langle \rho\rangle^2 < 0$.
 - **Interpretation.** Interpreting the exponentially small scale as **dimensional transmutation** — a dimensionless coupling traded for a dimensionful vacuum scale — and reading the negative value of the potential at the minimum as the standard energy lowering of the broken phase is the standard interpretation of the algebra. It is labelled as interpretation where it occurs.
 - **Gap, left visible.** The loop integral, its regularization and its renormalization are standard field theory and are imported. The framework contributes the centrality of the fluctuation operator — which is what makes the effective potential a function of the central invariant and nothing else — and no native loop structure. Whether the framework's trace or biquaternion norm selects a preferred normalization of the renormalization scale, or a preferred value of the quartic coupling, is not shown here.
 
@@ -136,7 +136,7 @@ $$
 \mathcal{V}_1(\rho) = \frac{1}{64\pi^2}\sum_i n_i\,m_i^4(\rho)\left[\ln\frac{m_i^2(\rho)}{\mu^2} - c_i\right],
 $$
 
-where $i$ runs over the fields whose mass depends on the background, $n_i$ is the signed number of real degrees of freedom, $m_i^2(\rho)$ is the field-dependent mass-squared in units $\hbar = c = 1$, $\mu$ is the renormalization scale at which the couplings are defined, and $c_i$ is a scheme constant ($c = \tfrac32$ for a real scalar and $c = \tfrac56$ for a gauge boson in the Landau gauge). This is the standard result (Coleman and Weinberg 1973; Jackiw 1974) and is transcribed, not re-derived; what the framework fixes is the field content and hence the list of masses.
+where $i$ runs over the fields whose mass depends on the background, $n_i$ is the signed number of real degrees of freedom, $m_i^2(\rho)$ is the field-dependent mass-squared, written as $k_{m_i}^2(\rho)$, an inverse length squared, so that every logarithm has a dimensionless argument, $\mu$ is the renormalization scale at which the couplings are defined, and $c_i$ is a scheme constant ($c = \tfrac32$ for a real scalar and $c = \tfrac56$ for a gauge boson in the Landau gauge). This is the standard result (Coleman and Weinberg 1973; Jackiw 1974) and is transcribed, not re-derived; what the framework fixes is the field content and hence the list of masses.
 
 For the framework's central scalar the field content is the scalar itself and the central gauge field, and the two field-dependent masses are read off from the tree potential and from the Higgs mechanism of the companion article.
 
@@ -153,7 +153,7 @@ m_1^2(\rho) = \frac{3\lambda}{2}\rho,
 m_2^2(\rho) = \frac{\lambda}{2}\rho ,
 $$
 so both contribute to the one-loop potential with $n = 1$ each.
-- **The central gauge field.** The kinetic term of the scalar evaluated at the constant background produces a Proca mass term, and the companion article on the Higgs mechanism gives $M_A^2 = 2ϙ^2\rho$ in units $\hbar = c = 1$ (it quotes $M_A^2 =\frac{k_m^{2}\,ϙ^{2}\,v^{2}}{m^{2}\,c^{2}}$ with $\rho = v^2/2$, which is the same statement). The gauge field has three polarizations in four dimensions, so $n_A = 3$.
+- **The central gauge field.** The kinetic term of the scalar evaluated at the constant background produces a Proca mass term, and the companion article on the Higgs mechanism gives $M_A^2 = 2ϙ^2\rho$ (it quotes $M_A^2 =\frac{k_m^{2}\,ϙ^{2}\,v^{2}}{m^{2}\,c^{2}}$ with $\rho = v^2/2$, which is the same statement). The gauge field has three polarizations in four dimensions, so $n_A = 3$.
 
 Inserting these into the general form and retaining the terms that carry the logarithm of $\rho$,
 
@@ -318,7 +318,7 @@ The loop integral, its regularization and its renormalization are standard and a
 | $S^{(2)}[\xi_c] = -\Box + \mathcal{H}(\rho_c)$ | Central fluctuation operator; $\mathcal{H}$ the scalar Hessian |
 | $\mathcal{V}_1(\rho) = \frac{1}{64\pi^2}\sum_i n_i m_i^4[\ln(m_i^2/\mu^2) - c_i]$ | One-loop effective potential (Coleman–Weinberg form) |
 | $m_1^2(\rho) = \frac{\lambda}{2}(3\rho - v_0^2)$, $m_2^2(\rho) = \frac{\lambda}{2}(\rho - v_0^2)$ | Field-dependent masses of the two real scalar modes |
-| $m_1^2 = \frac32\lambda \rho$, $m_2^2 = \frac{\lambda}{2}\rho$ ($v_0 = 0$); $m_A^2(\rho) = 2ϙ^2\rho$ | Scale-invariant scalar masses; gauge mass; $n_A = 3$ (units $\hbar = c = 1$) |
+| $m_1^2 = \frac32\lambda \rho$, $m_2^2 = \frac{\lambda}{2}\rho$ ($v_0 = 0$); $m_A^2(\rho) = 2ϙ^2\rho$ | Scale-invariant scalar masses; gauge mass; $n_A = 3$ |
 | $B = (12ϙ^4 + \tfrac52\lambda^2)/(64\pi^2)$ | One-loop coefficient of $\rho^2\ln(\rho/\mu^2)$ |
 | $\mu$ | Renormalization scale |
 | $\ln(\langle \rho\rangle/\mu^2) = -\tfrac12 - \lambda/(4B)$ | Coleman–Weinberg minimum |

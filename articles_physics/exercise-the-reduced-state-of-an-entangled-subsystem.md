@@ -186,7 +186,7 @@ $$
 
 This invariance is a specific property of the maximally mixed state.
 
-**3. It is the state of maximum ignorance.** The von Neumann entropy is $\log 2$ (in natural units), the maximum possible for a qubit. This reflects that the reduced state contains no information about which pure state particle 1 is in, because the information is stored entirely in the correlations with particle 2.
+**3. It is the state of maximum ignorance.** The von Neumann entropy is $\log 2$ in nats, the maximum possible for a qubit. This reflects that the reduced state contains no information about which pure state particle 1 is in, because the information is stored entirely in the correlations with particle 2.
 
 ## Comparison with a Product State
 
@@ -251,7 +251,7 @@ The contrast is the operational signature of entanglement: **product states have
 | Physical process | Measurement | Evolution | Successive measurements | Entangled measurement | Reduced state |
 | Structural object | Idempotent + idempotent | Idempotent + $*$-unitary | Sequence of idempotents | State in $\mathbb{B}\otimes\mathbb{B}$ | Partial trace of a state |
 | Rule used | Trace formula | Trace formula + rotor conjugation | Product of trace formulas | Tensor-product trace formula | Partial trace + trace formula |
-| Result | $\cos^2(\theta/2)$ | $(\frac{m\,c}{2\,k_m})\cos(\omega_L r'_t)$ | $\cos^2(\theta_1/2)\cos^2((\theta_2-\theta_1)/2)$ | $(1/4)(1-\vec u_a\cdot\vec u_b)$ | $\tilde{Ϛ}_{\Psi,1} = \frac{1}{2}e_t$, purity $\frac{1}{2}$, entropy $\log 2$ |
+| Result | $\cos^2(\theta/2)$ | $(\frac{m\,c}{2\,k_m})\cos(\omega_L r'_t/c)$ | $\cos^2(\theta_1/2)\cos^2((\theta_2-\theta_1)/2)$ | $(1/4)(1-\vec u_a\cdot\vec u_b)$ | $\tilde{Ϛ}_{\Psi,1} = \frac{1}{2}e_t$, purity $\frac{1}{2}$, entropy $\log 2$ |
 
 These exercises illustrate five fundamental operations of the quantum formalism: **measurement** (Exercise: Measuring Spin Along an Arbitrary Direction), **evolution** (Exercise: Spin Precession in a Magnetic Field), **sequential measurement** (Exercise: Successive Measurements of Spin), **entangled measurement** (Exercise: Two Spins in the Singlet State), and **partial trace** (Exercise: The Reduced State of an Entangled Subsystem). In each case, the biquaternion framework expresses the operation as an algebraic manipulation of the elements of $\mathbb{B}_{\Psi}$, $\mathbb{H}_\mathbb{B}$, and their tensor products.
 

@@ -71,7 +71,7 @@ $$
 \gamma_2 = \gamma_b\gamma = 1.4433757, \qquad
 \vec v_2 = \begin{pmatrix} 0.5196152 \\ -0.5 \\ 0\end{pmatrix}c, \qquad |\vec v_2| = 0.7211103\,c .
 $$
-The norm is preserved: $\langle\tilde{V}_{\Phi,2}\rangle_{\natural} = -1$ in units $c=1$. The transverse component is contracted by $1/\gamma_b$ (from $0.6c$ to $0.5196c$) and the boost direction acquires the recoil $-v_b$; this is (2) term by term.
+The norm is preserved: $\langle\tilde{V}_{\Phi,2}\rangle_{\natural} = -1$ in the units of the check. The transverse component is contracted by $1/\gamma_b$ (from $0.6c$ to $0.5196c$) and the boost direction acquires the recoil $-v_b$; this is (2) term by term.
 
 ## Problem 2: Collinear Boosts and Rapidity Addition
 

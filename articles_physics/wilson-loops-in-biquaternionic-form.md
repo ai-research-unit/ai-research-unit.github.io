@@ -15,15 +15,15 @@ The article is organized as follows. The holonomy is defined for the abelian and
 
 ## The Holonomy of the Connection
 
-Throughout, $\varepsilon=(1,-1,-1,-1)$ is the plain weight of the algebra, $\mathrm{Sc}(e_\mu e_\nu)=\varepsilon_\mu\delta_{\mu\nu}$, and a paired index is written low with its weight: $\sum_\mu\varepsilon_\mu A_\mu dx_\mu$ is the one-form $A_0\,dx_0-\sum_k A_k\,dx_k$. Natural units $\hbar=c=1$ are used and the transported charge is set to $ϙ=1$, so that the exponential of a loop integral is a phase and every exponent below is a pure number; the factors $\frac{k_m\,ϙ}{m\,c}$ return by multiplying each exponent.
+Throughout, $\varepsilon=(1,-1,-1,-1)$ is the plain weight of the algebra, $\mathrm{Sc}(e_\mu e_\nu)=\varepsilon_\mu\delta_{\mu\nu}$, and a paired index is written low with its weight: $\sum_\mu\varepsilon_\mu A_\mu dx_\mu$ is the one-form $A_0\,dx_0-\sum_k A_k\,dx_k$. Every exponent below carries the factor $\frac{k_m\,ϙ}{m\,c}$, the product of the charge $ϙ$ and the inverse action $1/\hbar=k_m/(m\,c)$, so that the exponential of a loop integral is a phase and each exponent is a pure number on its own; no unit and no charge is set to one.
 
 ### The Abelian Wilson Loop
 
 For an abelian connection the holonomy around a closed curve $C$ is the exponential of the line integral of the potential,
 
 $$
-W(C) = \exp\left(i\oint_C \sum_\mu\varepsilon_\mu A_\mu\,dx_\mu\right)
-= \exp\left(\oint_C \sum_\mu\varepsilon_\mu\,\mathrm{Sc}\!\left(\tilde{A}_{\Phi,\mu}\right)dx_\mu\right),
+W(C) = \exp\left(\frac{k_m\,ϙ}{m\,c}\oint_C \sum_\mu\varepsilon_\mu A_\mu\,dx_\mu\right)
+= \exp\left(\frac{k_m\,ϙ}{m\,c}\oint_C \sum_\mu\varepsilon_\mu\,\mathrm{Sc}\!\left(\tilde{A}_{\Phi,\mu}\right)dx_\mu\right),
 $$
 
 where the second form records that the $i$ of the phase is carried by the material sector itself: for the abelian field the potential is taken along the scalar direction, $\tilde{A}_{\Phi,\mu}=iA_\mu e_t$, so that $\mathrm{Sc}(\tilde{A}_{\Phi,\mu})=iA_\mu$ and the line integral is a central imaginary scalar whose exponential is a phase. The definition is a functional of the curve and a functional of the connection, and it is an element of $\mathrm{U}(1)$ — a phase. Its gauge transformation is the content of the following section.
@@ -33,11 +33,11 @@ where the second form records that the $i$ of the phase is carried by the materi
 For a non-abelian connection the potential is a Lie-algebra-valued one-form, and the holonomy is the path-ordered exponential
 
 $$
-W(C) = \mathrm{Tr}\,\mathcal{P}\exp\left(i\oint_C \sum_\mu\varepsilon_\mu A_\mu\,dx_\mu\right)
-= \mathrm{Tr}\,\mathcal{P}\exp\left(i\oint_C \sum_{\mu,a}\varepsilon_\mu A_{\mu a} T_a\,dx_\mu\right),
+W(C) = \mathrm{Tr}\,\mathcal{P}\exp\left(\frac{k_m\,ϙ}{m\,c}\oint_C \sum_\mu\varepsilon_\mu A_\mu\,dx_\mu\right)
+= \mathrm{Tr}\,\mathcal{P}\exp\left(\frac{k_m\,ϙ}{m\,c}\oint_C \sum_{\mu,a}\varepsilon_\mu A_{\mu a} T_a\,dx_\mu\right),
 $$
 
-where the generators $T_a$ are realized in the informational sector of the algebra. Without the trace, the holonomy is a group element $U(C)=\mathcal{P}\exp(i\oint_C \sum_\mu\varepsilon_\mu A_\mu dx_\mu)$; with the trace it is a gauge-invariant number. In the quaternion realization the generators are the imaginary units $i\vec e_a$, the group element is a unit quaternion $Q$, and the trace is $2Q_t$ — twice the scalar part. The Wilson loop is therefore, in the framework's own terms, the scalar part of the holonomy element of the informational sector, and the connection whose holonomy it is lies in the material sector. The loop is a bilinear object that joins the two sectors.
+where the generators $T_a$ are realized in the informational sector of the algebra. Without the trace, the holonomy is a group element $U(C)=\mathcal{P}\exp(\frac{k_m\,ϙ}{m\,c}\oint_C \sum_\mu\varepsilon_\mu A_\mu dx_\mu)$; with the trace it is a gauge-invariant number. In the quaternion realization the generators are the imaginary units $i\vec e_a$, the group element is a unit quaternion $Q$, and the trace is $2Q_t$ — twice the scalar part. The Wilson loop is therefore, in the framework's own terms, the scalar part of the holonomy element of the informational sector, and the connection whose holonomy it is lies in the material sector. The loop is a bilinear object that joins the two sectors.
 
 ## Gauge Invariance and Stokes' Theorem
 
@@ -120,7 +120,7 @@ $$
 the gauge-fixed Gaussian average gives
 
 $$
-\langle W(C)\rangle = \left\langle\exp\left(i\oint_C \sum_\mu\varepsilon_\mu A_\mu dx_\mu\right)\right\rangle
+\langle W(C)\rangle = \left\langle\exp\left(\frac{k_m\,ϙ}{m\,c}\oint_C \sum_\mu\varepsilon_\mu A_\mu dx_\mu\right)\right\rangle
 = \exp\left(-\frac{i}{2}\sum_{\mu,\nu}\varepsilon_\mu\varepsilon_\nu\oint_C dx_\mu\oint_C dy_\nu\;D_{\mu\nu}(x-y)\right),
 $$
 
@@ -188,7 +188,7 @@ so that the loop is the worldline of a pair of static sources separated by $L$ a
 In the framework the order parameter is the expectation of the scalar part of the holonomy of a material-sector connection, taken around a closed curve,
 
 $$
-\langle W(C)\rangle = \left\langle \mathrm{Tr}\,\mathcal{P}\exp\left(i\oint_C \sum_\mu\varepsilon_\mu\tilde{A}_{\Phi,\mu} dx_\mu\right)\right\rangle ,
+\langle W(C)\rangle = \left\langle \mathrm{Tr}\,\mathcal{P}\exp\left(\frac{k_m\,ϙ}{m\,c}\oint_C \sum_\mu\varepsilon_\mu\tilde{A}_{\Phi,\mu} dx_\mu\right)\right\rangle ,
 $$
 
 with the trace over the informational realization of the gauge group and the average over the material-sector configurations. The two fixed-point sectors appear in the two operations: the average is over $\mathbb{B}_{\Phi}$ configurations, and the trace is over the $\mathbb{B}_{\Psi}$ realization of the group. The order parameter is thus the expectation of a two-sector bilinear, and the confinement transition is a statement about its long-distance behaviour.
@@ -213,7 +213,7 @@ The quantum Wilson loop is constrained by the Schwinger–Dyson equation of the 
 
 $$
 \frac{\delta}{\delta\sigma_{\mu\nu}(x)}\langle W(C)\rangle
-= \left\langle \mathrm{Tr}\,\mathcal{P}\left(F_{\mu\nu}(x)\,\exp(i\oint_C A)\right)\right\rangle ,
+= \left\langle \mathrm{Tr}\,\mathcal{P}\left(F_{\mu\nu}(x)\,\exp(\frac{k_m\,ϙ}{m\,c}\oint_C A)\right)\right\rangle ,
 $$
 
 the statement that the area derivative inserts the field strength at a point of the loop. Iterating and using the field equation produces the loop equation. For the abelian theory the content is the free-field equation for the field strength; for the non-abelian theory the equation couples loops with different numbers of windings, and closing it requires an additional assumption such as the factorization of the large-$N$ limit. These equations are standard and are cited below; their biquaternion rendition adds nothing beyond the observation already made, that the loop is the trace of a holonomy of a material connection over an informational realization, and that the loop equation is the statement that this holonomy is a functional of the field strength obeying the nonlinear field equation of the companion articles.
@@ -252,7 +252,7 @@ Three consequences are worth stating separately. The untraced holonomy is an ele
 
 The Wilson loop is the trace of the holonomy of the gauge connection around a closed curve. In the biquaternion framework the connection is a material-sector one-form, $\tilde{A}_{\Phi}\in\mathbb{B}_{\Phi}$, and the holonomy is an element of the gauge group realized in the informational sector $\mathbb{B}_{\Psi}$ — for $\mathrm{SU}(2)$ a unit quaternion — so that the loop is the scalar part of that element and couples the two fixed-point sectors.
 
-For the abelian theory the loop is $\exp(i\oint \sum_\mu\varepsilon_\mu A_\mu dx_\mu)$; it is invariant under the gradient shift because the integral of a total derivative around a closed curve vanishes, and Stokes' theorem makes it the exponential of the enclosed flux. For the non-abelian theory the holonomy is a path-ordered exponential transforming by conjugation at the base point, and the trace is invariant; this was verified for the quaternion realization, where the real part of the trace was unchanged under random site gauge transformations while the untraced holonomy changed by conjugation.
+For the abelian theory the loop is $\exp(\frac{k_m\,ϙ}{m\,c}\oint \sum_\mu\varepsilon_\mu A_\mu dx_\mu)$; it is invariant under the gradient shift because the integral of a total derivative around a closed curve vanishes, and Stokes' theorem makes it the exponential of the enclosed flux. For the non-abelian theory the holonomy is a path-ordered exponential transforming by conjugation at the base point, and the trace is invariant; this was verified for the quaternion realization, where the real part of the trace was unchanged under random site gauge transformations while the untraced holonomy changed by conjugation.
 
 For a small loop the holonomy expands as $W=1+i\ell^2F_{\mu\nu}+O(\ell^4)$, verified to six significant figures on a plaquette, so that the loop exponentiates the field strength. Writing $\tilde{F}=\sum_k(iE_k-H_k)\vec e_k$, the square of the field strength is central,
 
@@ -268,9 +268,9 @@ verified in the $2\times2$ representation, so that the two Lorentz invariants of
 |---|---|
 | $C$ | Closed curve (loop); $S$ a surface it bounds |
 | $\tilde{A}_{\Phi}=\sum_\mu\varepsilon_\mu\tilde{A}_{\Phi,\mu} dx_\mu$ | Connection one-form; $\tilde{A}_{\Phi,\mu}\in\mathbb{B}_{\Phi}$ |
-| $W(C)=\exp(i\oint_C \sum_\mu\varepsilon_\mu A_\mu dx_\mu)$ | Abelian Wilson loop; a phase |
-| $U(C)=\mathcal{P}\exp(i\oint_C \sum_\mu\varepsilon_\mu A_\mu dx_\mu)$ | Holonomy (group element), non-abelian |
-| $W(C)=\mathrm{Tr}\,\mathcal{P}\exp(i\oint_C \sum_{\mu,a}\varepsilon_\mu A_{\mu a}T_a dx_\mu)$ | Non-abelian Wilson loop |
+| $W(C)=\exp(\frac{k_m\,ϙ}{m\,c}\oint_C \sum_\mu\varepsilon_\mu A_\mu dx_\mu)$ | Abelian Wilson loop; a phase |
+| $U(C)=\mathcal{P}\exp(\frac{k_m\,ϙ}{m\,c}\oint_C \sum_\mu\varepsilon_\mu A_\mu dx_\mu)$ | Holonomy (group element), non-abelian |
+| $W(C)=\mathrm{Tr}\,\mathcal{P}\exp(\frac{k_m\,ϙ}{m\,c}\oint_C \sum_{\mu,a}\varepsilon_\mu A_{\mu a}T_a dx_\mu)$ | Non-abelian Wilson loop |
 | $\mathcal{P}$ | Path ordering |
 | $T_a=i\vec e_a\in\mathbb{B}_{\Psi}$ | Gauge generators realized in the informational sector |
 | $U(C)\mapsto Q\,U(C)\,Q^{-1}$ | Conjugation of the holonomy; trace invariant |

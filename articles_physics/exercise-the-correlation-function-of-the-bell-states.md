@@ -335,7 +335,7 @@ with a sign pattern satisfying $\epsilon_1\epsilon_2\epsilon_3 = +1$. This is th
 | Physical process | Single measurement | Evolution | Successive measurements | Singlet measurement | Reduced state | Correlation function |
 | Structural object | Idempotent + idempotent | Idempotent + $*$-unitary | Sequence of idempotents | Idempotent in $\mathbb{B}\otimes\mathbb{B}$ | Partial trace | Bell idempotents |
 | Rule used | Trace formula | Trace formula + rotor conjugation | Product of trace formulas | Tensor-product trace formula | Partial trace + trace formula | Tensor-product trace reading of the Hermitian form |
-| Result | $\cos^2(\theta/2)$ | $(\frac{m\,c}{2\,k_m})\cos(\omega_L r'_t)$ | $\cos^2(\theta_1/2)\cos^2((\theta_2-\theta_1)/2)$ | $(1/4)(1 - \vec u_x\cdot\vec u_y)$ | $\tilde{Ϛ}_{\Psi,1} = \tfrac{1}{2}e_t$ | $E = -\sum_j \epsilon_j a_j b_j$ |
+| Result | $\cos^2(\theta/2)$ | $(\frac{m\,c}{2\,k_m})\cos(\omega_L r'_t/c)$ | $\cos^2(\theta_1/2)\cos^2((\theta_2-\theta_1)/2)$ | $(1/4)(1 - \vec u_x\cdot\vec u_y)$ | $\tilde{Ϛ}_{\Psi,1} = \tfrac{1}{2}e_t$ | $E = -\sum_j \epsilon_j a_j b_j$ |
 
 ## Summary
 

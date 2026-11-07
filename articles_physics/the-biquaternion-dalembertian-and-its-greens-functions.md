@@ -85,7 +85,7 @@ The verification of the composition was made on a random real symbol vector $s$,
 
 On a plane wave
 $$
-\tilde{Ξ} = \tilde{Ξ}_0\,\exp(i(\vec k\cdot(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z) - \omega r'_t))
+\tilde{Ξ} = \tilde{Ξ}_0\,\exp(i(\vec k\cdot(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z) - \omega r'_t/c))
 $$
 the derivatives act as numbers: $\partial/\partial R_t \to -\frac{i}{c}(-i\omega) = -\omega/c$ and $\partial/\partial R_k \to ik_k$, so
 $$
@@ -99,7 +99,7 @@ The sign convention deserves a paragraph of its own, because it is the series' m
 $$
 \left(\Box - k_m^{2}\right)\tilde{Ξ}_{\mathrm{sp}} = 0 ,
 $$
-whose symbol reproduces $\omega^2 = c^2\vec k^2 + c^2k_m^{2}$. The companion article *Exercise: Chirality and the Weyl Spinors* works in natural units with the quantum-field-theory metric $(+,-,-,-)$ and writes the same operator in real time, $\Box = -\partial^2/\partial {r'_{t}}^2 + \nabla^2$; its mass equation is $(\Box-k_m^{2})\tilde{Ξ}_{\mathrm{sp}} = 0$, the same equation as here and as in every other companion. Throughout this article $\Box$ means the series convention above and the mass term is $-k_m^{2}$ with $k_m=mc/\hbar$.
+whose symbol reproduces $\omega^2 = c^2\vec k^2 + c^2k_m^{2}$. The companion article *Exercise: Chirality and the Weyl Spinors* carries $\hbar=m\,c/k_m$ and works with the quantum-field-theory metric $(+,-,-,-)$ and writes the same operator in real time, $\Box = -\partial^2/\partial {r'_{t}}^2 + \nabla^2$; its mass equation is $(\Box-k_m^{2})\tilde{Ξ}_{\mathrm{sp}} = 0$, the same equation as here and as in every other companion. Throughout this article $\Box$ means the series convention above and the mass term is $-k_m^{2}$ with $k_m=mc/\hbar$.
 
 ### Self-adjointness
 
@@ -315,7 +315,7 @@ $$
 = \Box + 2\kappa\,\partial/\partial R_t + \kappa^2
 = \left(\partial/\partial R_t + \kappa\right)^2 + \Delta ,
 $$
-which is central. On the plane wave $\exp(i(\vec k\cdot(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)-\omega r'_t))$ its symbol is
+which is central. On the plane wave $\exp(i(\vec k\cdot(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)-\omega r'_t/c))$ its symbol is
 $$
 \left(\frac{\omega}{c} - \kappa\right)^2 - \|\vec k\|^2 ,
 $$

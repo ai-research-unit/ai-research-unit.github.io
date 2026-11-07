@@ -16,7 +16,7 @@ The results are as follows. The state space of spin $1$ is the face of the two-q
 
 The article is organised as follows. The next section fixes the qubit result as the reference point. The spin-$1$ operators are then constructed in the framework, both by the adjoint action and by the symmetric combination of two fundamental factors, and the sector in which the states live is identified. The Bloch coordinates are introduced, together with the two invariants that determine the spectrum, and the state space is characterised by the unit ball and the cubic inequality. The inscribed ball of radius $\tfrac{1}{2}$ is then proved to be sharp, the pure states and the coherent states are described, and the two three-balls are compared. A closing section states what the algebra supplies and what it does not.
 
-Throughout, $\hbar=1$ in the geometric formulae, so that the spin-$1$ matrices have eigenvalues $+1,0,-1$; restoring $\frac{m\,c}{k_m}$ multiplies every matrix element by $\frac{m\,c}{k_m}$.
+Throughout, the geometric formulae measure the spin in units of $\hbar=m\,c/k_m$, so that the spin-$1$ matrices have eigenvalues $+1,0,-1$; the factor $\frac{m\,c}{k_m}$ multiplies every matrix element.
 
 ## The Qubit Bloch Ball as the Reference Point
 
@@ -90,7 +90,7 @@ F_2=\tfrac{1}{\sqrt2}\begin{pmatrix}0&-i&0\\ i&0&-i\\0& i&0\end{pmatrix},\quad
 F_3=\begin{pmatrix}1&0&0\\0&0&0\\0&0&-1\end{pmatrix},
 $$
 
-which is the realisation used from here on; their matrix elements follow from the algebra elements by the isomorphism, and the commutation relations are those of an angular momentum with $\hbar=1$.
+which is the realisation used from here on; their matrix elements follow from the algebra elements by the isomorphism, and the commutation relations are those of an angular momentum in units of $\hbar$.
 
 ## The State Space of a Three-Level System
 

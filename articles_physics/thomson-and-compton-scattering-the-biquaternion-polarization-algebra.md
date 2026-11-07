@@ -52,7 +52,7 @@ $$
 \qquad
 \lambda\varepsilon = \mathrm{Vect}\bigl(i\vec u_k\varepsilon\bigr) ,
 $$
-with $\hbar=1$ and the spin-one generators $\vec S_k = i\vec e_k$, so that the three expressions agree on the transverse plane; the identity $\tfrac{i}{2}\mathrm{ad}_{\vec u_k}\varepsilon = i\vec u_k\varepsilon$ holds because $\mathrm{ad}_{\vec u_k}\varepsilon = 2\vec u_k\varepsilon$ for a transverse $\varepsilon$. Its representative in $\mathbb{B}_{\Psi}$ is the element $i\vec u_k$: left multiplication by that element, followed by the vector part, has eigenvalues $\pm1$ on $\varepsilon_{\mathrm{fop},\pm}$ and annihilates the longitudinal direction. Here the relation is used as the algebraic definition of circular polarization and as the reason the polarization sums are geometric.
+with the spin measured in units of $\hbar$ and the spin-one generators $\vec S_k = i\vec e_k$, so that the three expressions agree on the transverse plane; the identity $\tfrac{i}{2}\mathrm{ad}_{\vec u_k}\varepsilon = i\vec u_k\varepsilon$ holds because $\mathrm{ad}_{\vec u_k}\varepsilon = 2\vec u_k\varepsilon$ for a transverse $\varepsilon$. Its representative in $\mathbb{B}_{\Psi}$ is the element $i\vec u_k$: left multiplication by that element, followed by the vector part, has eigenvalues $\pm1$ on $\varepsilon_{\mathrm{fop},\pm}$ and annihilates the longitudinal direction. Here the relation is used as the algebraic definition of circular polarization and as the reason the polarization sums are geometric.
 
 ### The polarization sum
 
@@ -118,14 +118,14 @@ where $\vec N_+$ is the self-dual half and $\vec N_-$ the anti-self-dual one, co
 
 ### The classical cross-section
 
-A free electron of charge $-e$ and mass $m$ in a plane wave of amplitude $E_0$ acquires the oscillating velocity $\vec v = e\vec E/(mi\omega)$: the phase is $\exp(-i\omega r'_t)$, so $\partial/\partial r'_t \to -i\omega$ and the equation $m\,d\vec v/dr'_t = -e\vec E$ gives that velocity. The driven displacement has the amplitude $x_0 = eE_0/(m\omega^2)$, one power of $\omega$ below the velocity's, so the dipole moment $\vec p = -e\vec r$ has $\ddot{\vec p} = -e\ddot{\vec r} = +e^2\vec E_0/m$, independent of the frequency. One power of $\omega$ cancels against the $\omega^2$ of the second derivative, and that cancellation is the whole of the frequency independence at this level. The electron radiates as that dipole, and the Larmor formula gives the time-averaged power per unit solid angle,
+A free electron of charge $-e$ and mass $m$ in a plane wave of amplitude $E_0$ acquires the oscillating velocity $\vec v = e\vec E/(mi\omega)$: the phase is $\exp(-i\omega r'_t/c)$, so $\partial/\partial r'_t \to -i\omega/c$ and the equation $m\,d\vec v/dr'_t = -e\vec E$ gives that velocity. The driven displacement has the amplitude $x_0 = eE_0/(m\omega^2)$, one power of $\omega$ below the velocity's, so the dipole moment $\vec p = -e\vec r$ has $\ddot{\vec p} = -e\ddot{\vec r} = +e^2\vec E_0/m$, independent of the frequency. One power of $\omega$ cancels against the $\omega^2$ of the second derivative, and that cancellation is the whole of the frequency independence at this level. The electron radiates as that dipole, and the Larmor formula gives the time-averaged power per unit solid angle,
 $$
 \Bigl\langle\frac{dP}{d\Omega}\Bigr\rangle
 = \frac{1}{16\pi^2\epsilon_0 c^3}\,\bigl\langle|\ddot{\vec p}_{\perp}|^2\bigr\rangle
 = \frac{e^4E_0^2}{32\pi^2\epsilon_0 c^3 m^2}\,
 \bigl|\varepsilon_{\mathrm{fop},\mathrm{out}}\cdot\varepsilon_{\mathrm{fop}}\bigr|^2 ,
 $$
-the factor $\tfrac12$ coming from $\langle\cos^2\omega r'_t\rangle$. Dividing by the incident intensity $I = \tfrac12\epsilon_0 cE_0^2$ gives the Thomson differential cross-section
+the factor $\tfrac12$ coming from $\langle\cos^2\omega r'_t/c\rangle$. Dividing by the incident intensity $I = \tfrac12\epsilon_0 cE_0^2$ gives the Thomson differential cross-section
 $$
 \boxed{\;
 \frac{d\sigma_T}{d\Omega} = r_e^2\,\bigl|\varepsilon_{\mathrm{fop},\mathrm{out}}\cdot\varepsilon_{\mathrm{fop}}\bigr|^2 ,
@@ -522,7 +522,7 @@ $$
 \qquad\text{that is}\qquad
 -\tilde\nabla^{\natural}F - k_mi\,\overline{F}\,\vec e_z = 0
 $$
-in natural units, where $D_3=\sum_k\vec e_k\,\partial/\partial R_k$ is the three-dimensional Cauchy–Riemann operator, the bar is the componentwise conjugation and $\vec e_z$ multiplies from the right. Its mass term is a conjugation together with a fixed direction rather than an off-diagonal pairing, its chirality is the chirality cell $\gamma_5=i\omega$, with $\omega=-L_{\mathrm{pau},e_t}R_{\mathrm{pau},\vec e_z}$ the volume cell, and its analytic machinery is the Cauchy theory of the dictionary article.
+where $D_3=\sum_k\vec e_k\,\partial/\partial R_k$ is the three-dimensional Cauchy–Riemann operator, the bar is the componentwise conjugation and $\vec e_z$ multiplies from the right. Its mass term is a conjugation together with a fixed direction rather than an off-diagonal pairing, its chirality is the chirality cell $\gamma_5=i\omega$, with $\omega=-L_{\mathrm{pau},e_t}R_{\mathrm{pau},\vec e_z}$ the volume cell, and its analytic machinery is the Cauchy theory of the dictionary article.
 
 | Aspect | One-sided equation | Two-sided equation |
 |---|---|---|

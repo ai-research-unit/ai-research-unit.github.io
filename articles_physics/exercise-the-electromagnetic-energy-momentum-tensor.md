@@ -85,13 +85,13 @@ The two differ: the time-derivative term in $\mathrm{Sc}(\tilde\nabla\tilde W_{\
 
 **Witness: a free plane wave.** Take a plane wave in a medium,
 $$
-\vec E = E_0\cos(kz - \omega r'_t)\,\vec u_x, \qquad \vec H = \frac{E_0}{\mu c}\cos(kz - \omega r'_t)\,\vec u_y, \qquad k = \frac{\omega}{c},
+\vec E = E_0\cos(kz - \omega r'_t/c)\,\vec u_x, \qquad \vec H = \frac{E_0}{\mu c}\cos(kz - \omega r'_t/c)\,\vec u_y, \qquad k = \frac{\omega}{c},
 $$
-which satisfies $\mathrm{rot}\,\vec E = -\partial/\partial r'_t\vec B$ and $\mathrm{rot}\,\vec H = \partial/\partial r'_t\vec D$ with no sources. Then $W = \epsilon E_0^2\cos^2(kz-\omega r'_t)$, $\vec S = \vec E\times\vec H = cW\,\vec u_z$, and $\mathrm{div}\,\vec S = c\,\partial/\partial R_z\,W = -\partial/\partial r'_t\,W$, so the Poynting theorem $\partial/\partial r'_t\,W + \mathrm{div}\,\vec S = 0$ holds. The scalar expression of the real form is
+which satisfies $\mathrm{rot}\,\vec E = -\partial/\partial r'_t\vec B$ and $\mathrm{rot}\,\vec H = \partial/\partial r'_t\vec D$ with no sources. Then $W = \epsilon E_0^2\cos^2(kz-\omega r'_t/c)$, $\vec S = \vec E\times\vec H = cW\,\vec u_z$, and $\mathrm{div}\,\vec S = c\,\partial/\partial R_z\,W = -\partial/\partial r'_t\,W$, so the Poynting theorem $\partial/\partial r'_t\,W + \mathrm{div}\,\vec S = 0$ holds. The scalar expression of the real form is
 $$
 \mathrm{Sc}\!\left(\tilde\nabla\tilde W_{\Psi}\right) = -i\partial/\partial r'_t\,W - \frac{1}{c}\partial/\partial R_z\,S_z = -i\partial/\partial r'_t\,W - \partial/\partial R_z\,W = \frac{1-i}{c}\,\partial/\partial r'_t\,W,
 $$
-using $\partial/\partial R_z\,S_z = c\,\partial/\partial R_z\,W = -\partial/\partial r'_t\,W$. This is nonzero whenever $\cos(kz-\omega r'_t)\sin(kz-\omega r'_t)\neq 0$. A conservation law that fails on a free plane wave is not a conservation law for the field. **For the real form, the equation $\tilde\nabla\tilde W_{\Psi} = -\tilde{\mathcal F}$ does not expand to the Poynting theorem; the real form is not the biquaternionic energy–momentum.** The failure is a factor $i$ on the Poynting part, together with the fact — shown in Problem 2 — that a four-component object cannot carry the spatial stress at all.
+using $\partial/\partial R_z\,S_z = c\,\partial/\partial R_z\,W = -\partial/\partial r'_t\,W$. This is nonzero whenever $\cos(kz-\omega r'_t/c)\sin(kz-\omega r'_t/c)\neq 0$. A conservation law that fails on a free plane wave is not a conservation law for the field. **For the real form, the equation $\tilde\nabla\tilde W_{\Psi} = -\tilde{\mathcal F}$ does not expand to the Poynting theorem; the real form is not the biquaternionic energy–momentum.** The failure is a factor $i$ on the Poynting part, together with the fact — shown in Problem 2 — that a four-component object cannot carry the spatial stress at all.
 
 **Solution (d).** The object whose scalar divergence does give the energy law is the Hermitian form itself, halved:
 $$
@@ -250,14 +250,14 @@ which holds because $F = \frac12(cF + \overline{cF})$, lets the two terms of the
 
 **Statement.** For the plane wave of Problem 1, compute $T_{\mu\nu}$ explicitly and show that it is rank one, $T_{\mu\nu}\propto k_\mu k_\nu$ with $k$ the wave four-vector; verify tracelessness and conservation on this case.
 
-**Solution.** The wave four-vector of a wave propagating in the $+z$ direction at the medium speed is $k_\mu = \left(\frac{\omega}{c}, 0, 0, k\right)$ with $k = \frac{\omega}{c}$. For this wave $W = \epsilon E_0^2\cos^2(kz-\omega r'_t)$, $S_z = cW$, and the Maxwell stress has the components
+**Solution.** The wave four-vector of a wave propagating in the $+z$ direction at the medium speed is $k_\mu = \left(\frac{\omega}{c}, 0, 0, k\right)$ with $k = \frac{\omega}{c}$. For this wave $W = \epsilon E_0^2\cos^2(kz-\omega r'_t/c)$, $S_z = cW$, and the Maxwell stress has the components
 $$
 \sigma_{33} = \epsilon E_3^2 + \mu H_3^2 - W = -W, \qquad \sigma_{11} = \epsilon E_1^2 + \mu H_1^2 - W = \epsilon E_0^2\cos^2 - W = 0,
 $$
 $$
 \sigma_{22} = \mu\frac{E_0^2}{\mu^2c^2}\cos^2 - W = \epsilon E_0^2\cos^2 - W = 0, \qquad \sigma_{12} = \sigma_{13} = \sigma_{23} = 0,
 $$
-where $W = \epsilon E_0^2\cos^2(kz-\omega r'_t)$ for this wave and $1/(\mu c^2) = \epsilon$. Hence only $T_{00} = W$, $T_{03} = T_{30} = \frac{1}{c}S_z = W$, and $T_{33} = -\sigma_{33} = W$ survive:
+where $W = \epsilon E_0^2\cos^2(kz-\omega r'_t/c)$ for this wave and $1/(\mu c^2) = \epsilon$. Hence only $T_{00} = W$, $T_{03} = T_{30} = \frac{1}{c}S_z = W$, and $T_{33} = -\sigma_{33} = W$ survive:
 $$
 \boxed{\;T_{\mu\nu} = W\begin{pmatrix} 1 & 0 & 0 & 1 \\ 0 & 0 & 0 & 0 \\ 0 & 0 & 0 & 0 \\ 1 & 0 & 0 & 1 \end{pmatrix} = \frac{W}{(\omega/c)^2}\,k_\mu k_\nu\;}.
 $$

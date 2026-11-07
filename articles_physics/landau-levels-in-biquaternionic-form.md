@@ -207,7 +207,7 @@ $$
 Ξ_0=\frac{hc}{|ϙ|},
 $$
 
-the number of **magnetic flux quanta** $Ξ_0=hc/|ϙ|$ through the sample area $A$. The degeneracy per unit area is $B/Ξ_0=|ϙ|B/hc$. The counting was verified numerically: at $L_x=L_y=10$ with $B=m=ϙ=\hbar=c=1$ a direct count of the allowed $k$ gave 16 states against $AB/Ξ_0=15.92$, and the count tracked $AB/Ξ_0$ at the other sampled areas, the boundary convention accounting for the unit difference.
+the number of **magnetic flux quanta** $Ξ_0=hc/|ϙ|$ through the sample area $A$. The degeneracy per unit area is $B/Ξ_0=|ϙ|B/hc$. The counting was verified numerically: at $L_x=L_y=10$ in units of the magnetic length, where $B$, $m$ and $ϙ$ each equal one, a direct count of the allowed $k$ gave 16 states against $AB/Ξ_0=15.92$, and the count tracked $AB/Ξ_0$ at the other sampled areas, the boundary convention accounting for the unit difference.
 
 The identification of the degeneracy with a flux count is exact and is the non-relativistic seed of the quantum Hall effect. Dividing the electron number $N_e$ by the degeneracy defines the **filling factor** $\nu=N_e/N_{\mathrm{scl},\xi}$; the integer values of $\nu$ are the plateaux of the integer quantum Hall effect, and the fractional values require the interacting many-body problem, which is outside this article. The biquaternion framework does not change the count: it is a count of central momentum eigenvalues in a fixed area, and the module contributes no extra states, because the spin-0 particle has no internal degree of freedom to fill.
 

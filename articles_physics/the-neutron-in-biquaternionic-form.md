@@ -61,7 +61,7 @@ The companion article separates two objects that both carry the name *Dirac equa
 
 **The one-sided equation** is the chiral pair displayed at the head of this section: the definition. The gradient acts by left multiplication on the element $\tilde{Ξ}_{\mathrm{sp}}\in\mathbb{B}$, and the mass is the off-diagonal pair: each equation of the pair carries one value into the other. Chirality is the subscript, with the two values fixed above.
 
-**The two-sided equation** is Kravchenko's dictionary form, a single equation on the element $F\in\mathbb{B}$, in the corpus's units $c=1$,
+**The two-sided equation** is Kravchenko's dictionary form, a single equation on the element $F\in\mathbb{B}$, with the constants carried,
 
 $$
 \Bigl(i\frac{\partial}{\partial r'_t}+\nabla\Bigr)F-k_{m_n}\,i\,\bar{F}\,\vec e_z=0,

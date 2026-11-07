@@ -14,7 +14,7 @@ The plan is the diagonalisation and then its consequences. The next section fixe
 
 ## The Time-Harmonic System in a Homogeneous Medium
 
-The convention is $\exp(-i\omega r'_t)$, so that $\partial/\partial r'_t\to-i\omega$ and a monochromatic field is its complex amplitude. The medium is homogeneous and isotropic, and its response is carried by two possibly complex constants: the permittivity $\epsilon$ and the permeability $\mu$, so that the loss tangent of the dielectric and the inertia of the polarisation processes are both representable by making $\epsilon$ complex. The ohmic conduction of the medium enters separately, through the real conductivity $\sigma_*$, and the two are combined into a single **complex conductivity**
+The convention is $\exp(-i\omega r'_t/c)$, so that $\partial/\partial r'_t\to-i\omega/c$ and a monochromatic field is its complex amplitude. The medium is homogeneous and isotropic, and its response is carried by two possibly complex constants: the permittivity $\epsilon$ and the permeability $\mu$, so that the loss tangent of the dielectric and the inertia of the polarisation processes are both representable by making $\epsilon$ complex. The ohmic conduction of the medium enters separately, through the real conductivity $\sigma_*$, and the two are combined into a single **complex conductivity**
 
 $$
 \sigma:=\sigma_*-i\omega\epsilon ,

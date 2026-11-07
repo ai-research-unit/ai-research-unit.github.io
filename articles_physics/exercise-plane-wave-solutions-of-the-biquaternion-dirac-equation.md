@@ -48,7 +48,7 @@ $$
 
 because $e_t$ commutes with the three spatial units while the spatial units anticommute among themselves. The mixed terms are the ones the conjugate removes: in $\tilde\nabla\tilde\nabla^{\natural}$ the coefficient of $\partial^2/\partial R_t\partial R_k$ is $e_te_k-\vec e_ke_t=0$, and the coefficient of $\partial^2/\partial R_\mu^2$ is $\varepsilon_\mu e_\mu^2=1$. So the equation is the pair: the square with the conjugate is the scalar $\Box$ and the square with itself is not a scalar, so no single first-order equation on one field can carry a mass term.
 
-**The wave element.** A plane wave is $\tilde{Ξ}_{\mathrm{sp}}=\tilde{Ξ}_{\mathrm{sp},0}\exp(i\theta)$ with $\theta=\vec k\cdot(r_x\vec e_x+r_y\vec e_y+r_z\vec e_z)-\omega r'_t$, its polarisation $\tilde{Ξ}_{\mathrm{sp},0}$ an element that does not depend on the coordinates. The phase is central, so it commutes with the polarisation, and the gradient differentiates it to left multiplication by
+**The wave element.** A plane wave is $\tilde{Ξ}_{\mathrm{sp}}=\tilde{Ξ}_{\mathrm{sp},0}\exp(i\theta)$ with $\theta=\vec k\cdot(r_x\vec e_x+r_y\vec e_y+r_z\vec e_z)-\omega r'_t/c$, its polarisation $\tilde{Ξ}_{\mathrm{sp},0}$ an element that does not depend on the coordinates. The phase is central, so it commutes with the polarisation, and the gradient differentiates it to left multiplication by
 
 $$
 i\tilde P_{\Phi}=-\tilde K,\qquad
@@ -56,7 +56,7 @@ i\tilde P_{\Phi}=-\tilde K,\qquad
 \tilde K=k_0-i\vec k,
 $$
 
-with $k_0=\omega$ and $\vec k=k_1\vec e_x+k_2\vec e_y+k_3\vec e_z$; in natural units $k_0=E$ and $\vec k=\vec p$. The wave element is that of the material sector, imaginary scalar part and real vector part, and its two scalar squares are
+with $k_0=\omega/c$ the temporal wave number and $\vec k=\vec p/\hbar$ the vector wave number. The wave element is that of the material sector, imaginary scalar part and real vector part, and its two scalar squares are
 
 $$
 \tilde K^{\natural}\tilde K=k_0^2-\lvert\vec k\rvert^2=p^2,\qquad

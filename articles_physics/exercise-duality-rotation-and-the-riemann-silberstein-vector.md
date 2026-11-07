@@ -162,23 +162,23 @@ Directly, $I_{1,\mathrm D} = \vec E_{\mathrm D}^2 - \vec B_{\mathrm D}^2 = \frac
 
 *Null plane wave.* Take a plane wave in the medium,
 $$
-\vec E = E_0\cos(kz-\omega r'_t)\,\vec u_x,
+\vec E = E_0\cos(kz-\omega r'_t/c)\,\vec u_x,
 \qquad
-\vec B = \frac{E_0}{c}\cos(kz-\omega r'_t)\,\vec u_y,
+\vec B = \frac{E_0}{c}\cos(kz-\omega r'_t/c)\,\vec u_y,
 \qquad
 k = \frac{\omega}{c}.
 $$
 It has $I_1 = \vec E^2 - c^2\vec B^2 = 0$ and $I_2 = \vec E\cdot\vec B = 0$, so $\langle\tilde F\rangle_{\natural}=0$: it is a null field, and the pair $(I_1,2cI_2)$ is the zero pair, which any rotation fixes. The Riemann–Silberstein vector is
 $$
-\vec N = E_0\cos(kz-\omega r'_t)\left(\vec u_x + i\vec u_y\right),
+\vec N = E_0\cos(kz-\omega r'_t/c)\left(\vec u_x + i\vec u_y\right),
 $$
 and duality gives
 $$
 \vec N_{\mathrm D} = \exp(-i\theta)\vec N,
 \qquad
-\vec E_{\mathrm D} = E_0\cos(kz-\omega r'_t)\left(\cos\theta\,\vec u_x + \sin\theta\,\vec u_y\right),
+\vec E_{\mathrm D} = E_0\cos(kz-\omega r'_t/c)\left(\cos\theta\,\vec u_x + \sin\theta\,\vec u_y\right),
 \qquad
-\vec B_{\mathrm D} = \frac{E_0}{c}\cos(kz-\omega r'_t)\left(\cos\theta\,\vec u_y - \sin\theta\,\vec u_x\right).
+\vec B_{\mathrm D} = \frac{E_0}{c}\cos(kz-\omega r'_t/c)\left(\cos\theta\,\vec u_y - \sin\theta\,\vec u_x\right).
 $$
 The wave remains a null plane wave with the same $W$ and the same $\vec S = cW\vec u_z$; the duality rotation simply rotates the direction of linear polarization. This is the second case that was not used to suggest the general invariant formula, and it agrees with it.
 

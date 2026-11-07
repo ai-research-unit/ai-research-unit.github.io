@@ -206,7 +206,7 @@ and the numerical check reproduced it to a relative error of order $10^{-32}$, t
 The Einstein–Cartan field equations then read, schematically,
 
 $$
-T_{\lambda\mu\nu} = \kappa\,\Sigma_{\lambda\mu\nu} , \qquad \kappa = 8\pi G \quad (c=1) ,
+T_{\lambda\mu\nu} = \kappa\,\Sigma_{\lambda\mu\nu} , \qquad \kappa = \frac{8\pi G}{c^{4}} ,
 $$
 
 with $\Sigma$ the density displayed above. Because the torsion appears in the action without derivatives, its field equation is algebraic: it is solved by $T=\kappa\Sigma$ and the solution can be substituted back into the matter equation. The substitution couples the torsion to the axial current, and since the torsion is the dual of that current, the result is a **four-fermion axial–axial contact term** with a coefficient fixed by $G$ and not chosen. The elimination is the step the nonlinear-Dirac article performs; its coefficient, $\tfrac{3\kappa}{16}$ in the Lagrangian and $\tfrac{3\kappa}{8}$ in the equation, is that article's to own, and the factor of two between them is the variation of the square; this article supplies the two geometric identities — duality and the factor six — that make the elimination a two-line algebraic substitution rather than a computation in components. The statement that the torsion–spin relation is algebraic, and therefore that the elimination introduces no new propagating field, is the whole reason the Hehl–Datta term is a contact interaction.
@@ -328,7 +328,7 @@ Two statements bound the article. The commutator of the quaternion units is a co
 | $\Sigma_{\lambda\mu\nu}$ | spin density of the field, $\operatorname{Sc}(\tilde{Ξ}_{\mathrm{sp}}^*iX_{\lambda\mu\nu}\vec e_x)$; equal to $-i\,\epsilon_{\lambda\mu\nu\rho}A^\rho$ |
 | $A_\mu$ | axial current, $\operatorname{Sc}(\tilde{Ξ}_{\mathrm{sp}}^*i\,e_\mu\tilde{Ξ}_{\mathrm{sp}}\vec e_{\nu(\mu)}\vec e_z\vec e_x)$ |
 | $\varepsilon$, $\varepsilon_\mu$ | sign vector, $\varepsilon_t=+1$ and $\varepsilon_k=-1$; $\varepsilon_\mu A_\mu$ is the raised $A^\mu$ |
-| $\kappa = 8\pi G$ | Einstein gravitational constant, $c=1$ |
+| $\kappa = 8\pi G/c^{4}$ | Einstein gravitational constant |
 
 ## Further Reading
 

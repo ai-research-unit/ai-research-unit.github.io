@@ -68,7 +68,7 @@ both gradients acting from the left, with no right multiplication and no conjuga
 
 The FW transformation is best stated for the Hamiltonian form of the Dirac equation. The pair, read on the Dirac module $\Delta=\mathbb B$, is the equation of motion
 
-$$\frac{m\,c\,i}{k_m}\frac{\partial  F}{\partial  r'_t}=HF,
+$$\frac{m\,c^{2}\,i}{k_m}\frac{\partial  F}{\partial  r'_t}=HF,
 \qquad
 HF=\beta mc^2F+OF+ϙA_0F,
 \qquad

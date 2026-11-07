@@ -169,7 +169,7 @@ $$
 \langle\tilde P_{\Phi}\rangle_{\natural} = -\frac{\omega^2}{c^2} + \vec k^2 .
 $$
 
-For a plane wave $Ξ = f(s)$ with $s = \mathrm{Sc}(\tilde P_{\Phi}\tilde{Q}^{\natural}) = -\omega r'_t + \vec k\cdot(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)$, the chain rule gives
+For a plane wave $Ξ = f(s)$ with $s = \mathrm{Sc}(\tilde P_{\Phi}\tilde{Q}^{\natural}) = -\omega r'_t/c + \vec k\cdot(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)$, the chain rule gives
 
 $$
 \partial/\partial R_t\,s = \frac{-\omega}{ic} = \frac{i\omega}{c} = K_0,

@@ -70,7 +70,7 @@ If the difference in the first frame vanishes, the difference in the second fram
 
 *Translation.* A Poincaré translation $(\tilde U_{\mathrm{lor}},\tilde{R}_{\Phi,0})$ acts on the four-position by $\tilde R_\Phi\mapsto\tilde U_{\mathrm{lor}}\tilde R_\Phi\tilde U_{\mathrm{lor}}{}^{*}+\tilde{R}_{\Phi,0}$. The four-momentum of a free body is built from its four-velocity, $d\tilde R_\Phi/d\tau$, which is unchanged by a shift of the origin; the shift also drops out of the interval between any two events. Hence each $\tilde{P}_{\Phi,a}$ is translation-invariant, and so is the conservation law. Equivalently, in the Poincaré frame the four-momenta are the generators $P_\mu$ of the translation subgroup, and a translation acts on a plane wave of four-wavevector $\frac{k_m\,\tilde{P}_{\Phi}\,p}{m\,c}$ by multiplication by a central scalar of unit modulus; this representation is checked in the closing section. Here $\frac{m\,c}{k_m\,p}$ is the momentum length.
 
-**Solution (d).** Take two equal masses $m_1 = m_2 = m$, units $c = 1$, and a projectile of total energy $E_1 = 3m$ striking the target at rest, with the collision elastic. The laboratory four-momenta are
+**Solution (d).** Take two equal masses $m_1 = m_2 = m$, in the units of the check, and a projectile of total energy $E_1 = 3m$ striking the target at rest, with the collision elastic. The laboratory four-momenta are
 $$
 \tilde{P}_{\Phi,1} = i\,3m\,e_t + \sqrt{8}\,m\,\vec e_z,
 \qquad
@@ -262,9 +262,9 @@ for this reaction. The origin of the factor is visible in the fixed-target expre
 
 ## Problem 5: A Numerical Instance
 
-**Statement.** Take two equal masses $m_1=m_2=m$, units $c=1$, and an elastic collision with projectile total energy $E_1 = 3m$ on a stationary target. (a) Compute $s$, $W$, $E_1^*$, $p^*$, $V$, and $\gamma$. (b) For $\theta^*=90^\circ$ compute the two final laboratory four-momenta, energies, and angles. (c) Verify four-momentum conservation in both frames and the sum rule. (d) Compare the laboratory opening angle with the non-relativistic value.
+**Statement.** Take two equal masses $m_1=m_2=m$ and an elastic collision with projectile total energy $E_1=3\,m\,c^{2}$ on a stationary target. (a) Compute $s$, $W$, $E_1^*$, $p^*$, $V$, and $\gamma$. (b) For $\theta^*=90^\circ$ compute the two final laboratory four-momenta, energies, and angles. (c) Verify four-momentum conservation in both frames and the sum rule. (d) Compare the laboratory opening angle with the non-relativistic value.
 
-**Solution (a).** With $c=1$ and $\vec p_1$ along $\vec e_z$,
+**Solution (a).** With $\vec p_1$ along $\vec e_z$ and $c$ carried,
 $$
 \tilde{P}_{\Phi,1} = i\,3m\,e_t + \sqrt{8}\,m\,\vec e_z,
 \qquad

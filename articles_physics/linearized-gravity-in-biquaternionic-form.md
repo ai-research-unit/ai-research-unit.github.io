@@ -493,7 +493,7 @@ $$
 \tilde\nabla^{\natural}\tilde{Ξ}_{\mathrm{sp},L}=\frac{k_m}{\tilde{Ξ}_{\mathrm{sp},R}},
 $$
 
-with both gradients acting from the left and the mass term pairing the two chiral halves off-diagonally. Kravchenko's two-sided equation, for a biquaternion field $F$ (in the source's units $c=1$), is
+with both gradients acting from the left and the mass term pairing the two chiral halves off-diagonally. Kravchenko's two-sided equation, for a biquaternion field $F$ (in the source's Gaussian units), is
 
 $$
 \bigl(i\partial/\partial r'_t+D_3\bigr)F-\frac{k_m}{i\,\overline{F}\,\vec e_{z}}=0,

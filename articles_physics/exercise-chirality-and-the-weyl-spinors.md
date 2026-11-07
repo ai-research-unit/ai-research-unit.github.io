@@ -30,7 +30,7 @@ Seven problems are worked below, one per section.
 
 ## Problem 2: The Two Weyl Halves and the Mass Term
 
-This problem works in the natural units $\hbar=c=1$; the factors of $\frac{m\,c}{k_m}$ and $c$ are restored in the mass-shell paragraph.
+This problem writes every mass through $k_m=m\,c/\hbar$ and every phase through $\omega r'_t/c$; the mass-shell paragraph gathers the two factors.
 
 **The gradient.** The biquaternionic gradient $\tilde\nabla$ is one element and acts by left multiplication (*Operator and Calculus Conventions*, §*The Operators*). It therefore keeps each letter (Problem 1), and its quaternion conjugate $\tilde\nabla^{\natural}$ is a conjugation of the same operator and not a second derivative.
 

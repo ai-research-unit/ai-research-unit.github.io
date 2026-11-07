@@ -105,7 +105,7 @@ It is **not**, however, a **unit-norm** element. The Lorentz rotors are the biqu
 
 $$
 \exp(\frac{k_m\,i\,S}{m\,c})\,\overline{\big(\exp(iS/\hbar)\big)}=\exp(\frac{2\,k_m\,i\,S}{m\,c})\neq  e_t
-\qquad\text{unless }\frac{k_m\,S}{m\,c\,\in\,\pi\,\mathbb{Z}}.
+\qquad\text{unless }\frac{k_m\,S}{m\,c}\in\pi\,\mathbb{Z}.
 $$
 
 So the phase is a $*$-unitary element and not a Lorentz rotor. The two notions of "unit" — $\tilde U\tilde U^{*}=e_t$ for $\mathrm{U}(2)$ and $\tilde U_{\mathrm{lor}}\tilde U_{\mathrm{lor}}{}^{\natural}=e_t$ for $SL(2,\mathbb{C})$ — must be kept apart here, and the path-integral phase belongs to the first.
@@ -175,9 +175,9 @@ $$
 \int dy\;\exp(A(x-y)^2)\exp(By^2)=\sqrt{\frac{-\pi}{A+B}}\;\exp\!\Big(\frac{AB}{A+B}x^2\Big)
 $$
 
-gives $A+B=\frac{k_m\,i}{2\,c}\frac{T_1+T_2}{T_1T_2}$ and $\frac{AB}{A+B}=\frac{k_m\,i}{2\,c\,(T_1+T_2)}$, so the convolution of $G_{\mathrm{prop},0}(\cdot,T_2)$ with $G_{\mathrm{prop},0}(\cdot,T_1)$ is exactly $G_{\mathrm{prop},0}(\cdot,T_1+T_2)$, prefactor included. The phase that survives is the classical action of the longer free flight, and the branch of every square root is fixed by the requirement that the product reproduce the single kernel. The composition was checked numerically on a case chosen for the purpose: with $m=\hbar=1$, $T_1=0.6$, $T_2=0.9$, $x=1.1$, the convolution and the single kernel agree to a relative $1.8\times10^{-16}$.
+gives $A+B=\frac{k_m\,i}{2\,c}\frac{T_1+T_2}{T_1T_2}$ and $\frac{AB}{A+B}=\frac{k_m\,i}{2\,c\,(T_1+T_2)}$, so the convolution of $G_{\mathrm{prop},0}(\cdot,T_2)$ with $G_{\mathrm{prop},0}(\cdot,T_1)$ is exactly $G_{\mathrm{prop},0}(\cdot,T_1+T_2)$, prefactor included. The phase that survives is the classical action of the longer free flight, and the branch of every square root is fixed by the requirement that the product reproduce the single kernel. The composition was checked numerically on a case chosen for the purpose: with $k_m=k_{t}^{\prime}=1$, $T_1=0.6$, $T_2=0.9$, $x=1.1$, the convolution and the single kernel agree to a relative $1.8\times10^{-16}$.
 
-**The single-step kernel and the Schrödinger equation.** Expanding $G_{\mathrm{prop},\varepsilon}$ about $x$ and performing the Gaussian integral over the displacement returns the free Schrödinger equation $\frac{m\,c\,i}{k_m}\partial/\partial r'_t\,\tilde{Ξ}_{\mathrm{sp}}=-\frac{m\,c^{2}}{2\,k_m^{2}}\partial^2/\partial R_x^2\tilde{Ξ}_{\mathrm{sp}}$, with the central $i$. The path integral therefore reproduces the state-vector equation of the Schrödinger article, and does not introduce a second imaginary unit: the $i$ of the exponent and the $i$ of the resulting equation are the same central element. The potential term enters through the factor $\exp(-\frac{k_m\,i\,\varepsilon\,V}{m\,c})$, again central.
+**The single-step kernel and the Schrödinger equation.** Expanding $G_{\mathrm{prop},\varepsilon}$ about $x$ and performing the Gaussian integral over the displacement returns the free Schrödinger equation $\frac{m\,c^{2}\,i}{k_m}\partial/\partial r'_t\,\tilde{Ξ}_{\mathrm{sp}}=-\frac{m\,c^{2}}{2\,k_m^{2}}\partial^2/\partial R_x^2\tilde{Ξ}_{\mathrm{sp}}$, with the central $i$. The path integral therefore reproduces the state-vector equation of the Schrödinger article, and does not introduce a second imaginary unit: the $i$ of the exponent and the $i$ of the resulting equation are the same central element. The potential term enters through the factor $\exp(-\frac{k_m\,i\,\varepsilon\,V}{m\,c})$, again central.
 
 The distance between this and a genuinely biquaternionic path integral should be stated plainly. The kernel above is a complex scalar times $e_t$; the paths are real-valued trajectories; and the algebra has entered only through the identification of the phase's imaginary unit and the location of its exponent. No element of $\mathbb{B}_{\Psi}$ has been used to *define* the sum, and no non-central element appears at all.
 
@@ -289,7 +289,7 @@ Both ambiguities that the flat time slicing conceals appear when the configurati
 $$
 [p,[p,g]]=-\frac{m^{2}\,c^{2}\,d\,g}{k_m^{2}\,x^{2}} ,
 $$
-verified here numerically on $g(x)=1+x^2$ and a test function: with $\hbar=1$, the commutator reproduces $-\frac{m^{2}\,c^{2}\,d\,g}{k_m^{2}\,x^{2}}\tilde{Ξ}_{\mathrm{sp}}$ to six decimal places at $x=-0.7,0,0.4,1.2$. The identity shows that the ordering ambiguity is proportional to the curvature — the second derivative of the coefficient, which for a metric is the Riemann tensor — and cannot be removed by a normalisation of the path integral. The flat case escapes it only because $g$ is constant and the commutator vanishes.
+verified here numerically on $g(x)=1+x^2$ and a test function: in units of $\hbar$, the commutator reproduces $-\frac{m^{2}\,c^{2}\,d\,g}{k_m^{2}\,x^{2}}\tilde{Ξ}_{\mathrm{sp}}$ to six decimal places at $x=-0.7,0,0.4,1.2$. The identity shows that the ordering ambiguity is proportional to the curvature — the second derivative of the coefficient, which for a metric is the Riemann tensor — and cannot be removed by a normalisation of the path integral. The flat case escapes it only because $g$ is constant and the commutator vanishes.
 
 **The measure-theoretic factor.** The second ambiguity is in the measure. For a particle in curved space the functional integral carries, in addition to $\mathcal{D}x$, a factor
 $$

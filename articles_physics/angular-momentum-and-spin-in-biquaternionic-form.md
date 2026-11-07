@@ -18,7 +18,7 @@ $$
 \mathsf{M}_2(i \vec e_k) = \sigma_k, \qquad \mathsf{M}_2\bigl(r_t e_t + i \sum_k h_k \vec e_k\bigr) = r_t I_2 + \sum_k h_k \sigma_k .
 $$
 
-The scalar imaginary is $i$, the quaternion basis satisfies $e_t=1$, $\vec e_k^2=-e_t$, and $\vec e_\mu \vec e_\nu = \epsilon_{\mu\nu\lambda}\,\vec e_\lambda$ for $\mu\neq\nu$. The reduced Planck constant $\frac{m\,c}{k_m}$ is written explicitly; the algebra literature often sets $\hbar=1$, and the commutation relation quoted in the scope, $[L_{\mathrm{orb},i},L_{\mathrm{orb},j}]=i\epsilon_{ijk}L_{\mathrm{orb},k}$, is the $\hbar=1$ form of the relations below.
+The scalar imaginary is $i$, the quaternion basis satisfies $e_t=1$, $\vec e_k^2=-e_t$, and $\vec e_\mu \vec e_\nu = \epsilon_{\mu\nu\lambda}\,\vec e_\lambda$ for $\mu\neq\nu$. The reduced Planck constant $\frac{m\,c}{k_m}$ is written explicitly; the algebra literature often measures the action in units of $\hbar$, and the commutation relation quoted in the scope, $[L_{\mathrm{orb},i},L_{\mathrm{orb},j}]=i\epsilon_{ijk}L_{\mathrm{orb},k}$, is the form of the relations below with the action in units of $\hbar$.
 
 ## The Angular-Momentum Algebra
 

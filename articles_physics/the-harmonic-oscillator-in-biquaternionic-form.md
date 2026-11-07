@@ -22,7 +22,7 @@ The conventions are those of the read list. The biquaternion algebra is $\mathbb
 
 Fix the standard oscillator objects once; the structural question is where they can live.
 
-In units with $\hbar=1$, the two quadratures
+With the action measured in units of $\hbar$, the two quadratures
 
 $$
 \tilde{Q}_1=\frac{a+a^\dagger}{\sqrt2},\qquad
@@ -168,7 +168,7 @@ $$
 
 so the phase rotates the $\mathbb{B}_{\Psi}$ quadrature $\tilde{Q}_1$ into the $\mathbb{B}_{\Phi}$ content of the amplitude and back. The oscillator's phase is literally the rotation that mixes the two sectors. This is a genuine addition of the framework: the "complex structure" that gives the oscillator its complex amplitude is identified with the operation that exchanges $\mathbb{B}_{\Psi}$ and $\mathbb{B}_{\Phi}$, and the oscillator's phase is the one-parameter group it generates.
 
-The connection to the dynamics is direct. The parent article's evolution $\tilde Q(r'_t)=\exp(-\frac{k_m\,i\,r_{t}\,r'_{t}}{m})(\cos(|\vec r_\Psi|\frac{k_m\,r'_{t}}{m\,c})e_t+\sin(|\vec r_\Psi|\frac{k_m\,r'_{t}}{m\,c})\vec u_\Psi)$ carries the trace part $r_t$ of the Hamiltonian only as a central phase that cancels from the conjugation. For the truncated oscillator that trace part is $\frac{m\,c\,\omega}{k_m}$, twice the zero-point energy $\tfrac12\frac{m\,c\,\omega}{k_m}$; that the zero-point energy is unobservable and that the trace part of the Hamiltonian is a central scalar are the same statement, with the trace formula making "trace part" literal.
+The connection to the dynamics is direct. The parent article's evolution $\tilde Q(r'_t)=\exp(-\frac{k_m\,i\,r_{t}\,r'_{t}}{m\,c^{2}})(\cos(|\vec r_\Psi|\frac{k_m\,r'_{t}}{m\,c^{2}})e_t+\sin(|\vec r_\Psi|\frac{k_m\,r'_{t}}{m\,c^{2}})\vec u_\Psi)$ carries the trace part $r_t$ of the Hamiltonian only as a central phase that cancels from the conjugation. For the truncated oscillator that trace part is $\frac{m\,c\,\omega}{k_m}$, twice the zero-point energy $\tfrac12\frac{m\,c\,\omega}{k_m}$; that the zero-point energy is unobservable and that the trace part of the Hamiltonian is a central scalar are the same statement, with the trace formula making "trace part" literal.
 
 ## Squeezing Is a Boost
 

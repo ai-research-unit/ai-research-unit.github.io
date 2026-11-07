@@ -21,7 +21,7 @@ U(C) = \mathcal{P}\exp\!\left(i\oint_C \sum_\mu\varepsilon_\mu A_\mu\,dx_\mu\rig
 W(C) = \mathrm{Tr}\,U(C),
 $$
 
-with $\varepsilon$ the corpus's plain weight, $\mathcal{P}$ the path ordering and the trace over the informational realization. The units are the series' natural units $\hbar=c=1$ and the transported charge is set to $ϙ=1$, so that this exponent is a pure number; the factors $\frac{k_m\,ϙ}{m\,c}$ return by multiplying it. The state of the informational sector is the corpus's $\tilde{Ϛ}_{\Psi}$, of trace one and parametrized by the Bloch vector $\vec r$, and the relative entropy of two states is $S(\tilde{Ϛ}_{\Psi,1}\|\tilde{Ϛ}_{\Psi,2})$; the trace, twice the scalar part, is the one of *Norm and Pairing Conventions*. The symbols $SU(3)$, $N_c$, $N_f$, $\alpha_s$, and the colour labels $\mathbf{3}$, $\mathbf{8}$ are **standard QCD notation, not framework objects**; they are used only where standard results are quoted or where an object is named as missing. Throughout, $i$ is the central scalar imaginary, so $i^2=-1$; wherever two imaginary factors meet, the display below simplifies them explicitly.
+with $\varepsilon$ the corpus's plain weight, $\mathcal{P}$ the path ordering and the trace over the informational realization. This exponent carries the factor $\frac{k_m\,ϙ}{m\,c}$ explicitly, the product of the charge and the inverse action, so that it is a pure number with no unit and no charge set to one. The state of the informational sector is the corpus's $\tilde{Ϛ}_{\Psi}$, of trace one and parametrized by the Bloch vector $\vec r$, and the relative entropy of two states is $S(\tilde{Ϛ}_{\Psi,1}\|\tilde{Ϛ}_{\Psi,2})$; the trace, twice the scalar part, is the one of *Norm and Pairing Conventions*. The symbols $SU(3)$, $N_c$, $N_f$, $\alpha_s$, and the colour labels $\mathbf{3}$, $\mathbf{8}$ are **standard QCD notation, not framework objects**; they are used only where standard results are quoted or where an object is named as missing. Throughout, $i$ is the central scalar imaginary, so $i^2=-1$; wherever two imaginary factors meet, the display below simplifies them explicitly.
 
 The derivative of this article is the corpus's gradient $\tilde\nabla$, with its quaternion conjugate $\tilde\nabla^\natural$ and the d'Alembertian $\Box$, fixed in *Operator and Calculus Conventions*, where the material-sector reading of the time derivative is stated as well. Every other first-order operator here is written from these, by a shift or by the central imaginary. No other first-order operator is introduced, and no letter stands for a side: an action that is not a multiplication by an element is written out as one, in the form $f\mapsto fb$.
 
@@ -120,7 +120,7 @@ The model of the next subsection does not use colour at all. It uses the framewo
 
 ### The Restricted State and the Vanishing Relative Entropy
 
-The superselection statement can be made exact without a colour group, on the framework's own state space, by using the commutant structure that any charge superselection rule produces. Let the charge along the axis $\vec u$ be the Hermitian element $\vec u\cdot\vec S$ of $\mathbb{B}_{\Psi}$, the generator of *Special Element Conventions*, in the units $\hbar=c=1$ used throughout, so that the charge rotation is rotor conjugation,
+The superselection statement can be made exact without a colour group, on the framework's own state space, by using the commutant structure that any charge superselection rule produces. Let the charge along the axis $\vec u$ be the Hermitian element $\vec u\cdot\vec S$ of $\mathbb{B}_{\Psi}$, the generator of *Special Element Conventions*, with the spin measured in units of $\hbar=m\,c/k_m$, so that the charge rotation is rotor conjugation,
 
 $$
 \tilde{Ϛ}_{\Psi}\;\longmapsto\;U\tilde{Ϛ}_{\Psi}\,U^{*},
@@ -290,7 +290,7 @@ $$
 D_3=\sum_{k=1}^{3}\vec e_k\frac{\partial}{\partial R_k}.
 $$
 
-Since $i\partial/\partial r'_t=-\partial/\partial R_t$ on the material sector in the natural units $\hbar=c=1$, the same operator reads
+Since $i\partial/\partial r'_t=-\partial/\partial R_t$ on the material sector, the same operator reads
 
 $$
 \mathcal NF=-\tilde\nabla^\natural F-k_mi\,\overline{F}\,\vec e_z=0 .
@@ -303,10 +303,10 @@ The derivative part acts from the left, the mass part from the right through $\v
 Let $\vec q=r_x\vec e_x+r_y\vec e_y+r_z\vec e_z$, and let $Ξ$ be the source's four-component field, taken time-harmonic,
 
 $$
-Ξ(r'_t,\vec q)=Ξ_\omega(\vec q)\,e^{\,i\omega r'_t},
+Ξ(r'_t,\vec q)=Ξ_\omega(\vec q)\,e^{\,i\omega r'_t/c},
 $$
 
-obeying the massive Dirac equation in a bounded domain $\Omega$, with $\partial\Omega$ a closed Liapunov surface. The source writes that equation in its own frame; in the conventions it is the two-sided $\mathcal NF=0$ of the previous subsection, and its derivative part is the gradient alone. The source's time term, with its two imaginary factors, is the $e_t$ term of $\tilde\nabla$ read on the material sector, where the time derivative carries the $i$, so $i\partial/\partial r'_t=-\partial/\partial R_t$ and the free part is $-\tilde\nabla^\natural$. The spatial derivative is the sum $\sum_k\vec e_k\,\partial/\partial R_k$ that $\tilde\nabla$ carries, acting from the left. The mass is the conjugation together with the direction $-\vec e_z$, and it does not commute with the phase, $\overline{Ξ_\omega e^{i\omega r'_t}}=\overline{Ξ_\omega}\,e^{-i\omega r'_t}$. The amplitude is therefore taken on the complex-linear operator that the reduction below produces, and not on $\mathcal N$ directly; that is why the source reduces before he applies the ansatz.
+obeying the massive Dirac equation in a bounded domain $\Omega$, with $\partial\Omega$ a closed Liapunov surface. The source writes that equation in its own frame; in the conventions it is the two-sided $\mathcal NF=0$ of the previous subsection, and its derivative part is the gradient alone. The source's time term, with its two imaginary factors, is the $e_t$ term of $\tilde\nabla$ read on the material sector, where the time derivative carries the $i$, so $i\partial/\partial r'_t=-\partial/\partial R_t$ and the free part is $-\tilde\nabla^\natural$. The spatial derivative is the sum $\sum_k\vec e_k\,\partial/\partial R_k$ that $\tilde\nabla$ carries, acting from the left. The mass is the conjugation together with the direction $-\vec e_z$, and it does not commute with the phase, $\overline{Ξ_\omega e^{i\omega r'_t/c}}=\overline{Ξ_\omega}\,e^{-i\omega r'_t/c}$. The amplitude is therefore taken on the complex-linear operator that the reduction below produces, and not on $\mathcal N$ directly; that is why the source reduces before he applies the ansatz.
 
 The confinement of the field to $\Omega$ is a **linear boundary condition**: a fixed value for the field's direction along the outward normal, which forbids the flow of the particle through the surface. Translated from the source's frame, the condition is the action of the element $\sum_k u_k\vec e_k$,
 

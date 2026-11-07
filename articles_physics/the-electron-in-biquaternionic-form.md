@@ -122,7 +122,7 @@ The electron's spin is where the framework is strongest and where the distinctio
 
 ## The Dirac Description of the Electron
 
-The electron's relativistic dynamics is the chirality pair $\tilde{\nabla}\tilde{Ξ}_{\mathrm{sp},R}=k_{m_e}\tilde{Ξ}_{\mathrm{sp},L}$, $\tilde{\nabla}^{\natural}\tilde{Ξ}_{\mathrm{sp},L}=k_{m_e}\tilde{Ξ}_{\mathrm{sp},R}$. The plane-wave solutions are computed in the companion solutions article, in the algebra's own objects. They come in two branches at each momentum, the positive-frequency $w^{(r)}(\vec p)\exp\!\big(-\frac{k_m\,i\,(Er'_t-\vec p\cdot\vec r)}{m\,c}\big)$ and the negative-frequency $v^{(r)}(\vec p)\exp\!\big(+\frac{k_m\,i\,(Er'_t-\vec p\cdot\vec r)}{m\,c}\big)$, with $\vec r = r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z$, $E = +\sqrt{\vec p^2c^2 + m_e^2c^4}$ and $r$ the spin label. Together they span a complex space of dimension four, one pair for each value of the chirality; the dimension two of each pair is the dimension of the irreducible action, and the count is the count of the two values. The spin sums, normalisations, and bilinears are constructed in the companion solutions article and are not repeated here.
+The electron's relativistic dynamics is the chirality pair $\tilde{\nabla}\tilde{Ξ}_{\mathrm{sp},R}=k_{m_e}\tilde{Ξ}_{\mathrm{sp},L}$, $\tilde{\nabla}^{\natural}\tilde{Ξ}_{\mathrm{sp},L}=k_{m_e}\tilde{Ξ}_{\mathrm{sp},R}$. The plane-wave solutions are computed in the companion solutions article, in the algebra's own objects. They come in two branches at each momentum, the positive-frequency $w^{(r)}(\vec p)\exp\!\big(-\frac{k_m\,i\,(E\,r'_t/c-\vec p\cdot\vec r)}{m\,c^{2}}\big)$ and the negative-frequency $v^{(r)}(\vec p)\exp\!\big(+\frac{k_m\,i\,(E\,r'_t/c-\vec p\cdot\vec r)}{m\,c^{2}}\big)$, with $\vec r = r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z$, $E = +\sqrt{\vec p^2c^2 + m_e^2c^4}$ and $r$ the spin label. Together they span a complex space of dimension four, one pair for each value of the chirality; the dimension two of each pair is the dimension of the irreducible action, and the count is the count of the two values. The spin sums, normalisations, and bilinears are constructed in the companion solutions article and are not repeated here.
 
 **A note on the wave biquaternion.** The mass-shell condition is written in the corpus convention, in which the four-wavevector has the imaginary time component of the $i r'_t$ convention,
 
@@ -153,10 +153,10 @@ The **two-sided equation** is the dictionary form of V. V. Kravchenko: a single 
 $$
 \mathcal{N}F = \Big(i\frac{\partial}{\partial r'_t}+\vec\nabla\Big)F - m\,i\,\overline{F}\,\vec e_z = 0,
 \qquad\text{that is}\qquad
--\tilde{\nabla}^{\natural}F - m\,i\,\overline{F}\,\vec e_z = 0
+-\tilde{\nabla}^{\natural}F - k_m\,i\,\overline{F}\,\vec e_z = 0
 $$
 
-in natural units, with $\vec\nabla = \sum_k\vec e_k\,\partial/\partial R_k$ and the bar the coefficientwise complex conjugation. The time derivative and the spatial gradient act by left multiplication; the mass term acts by right multiplication through $\vec e_z$ and carries the antilinear conjugation. This is the form in which the quaternionic analysis acts — the shifted operator, the Cauchy kernel, and the integral representation of the harmonic field.
+with $\vec\nabla = \sum_k\vec e_k\,\partial/\partial R_k$ and the bar the coefficientwise complex conjugation. The time derivative and the spatial gradient act by left multiplication; the mass term acts by right multiplication through $\vec e_z$ and carries the antilinear conjugation. This is the form in which the quaternionic analysis acts — the shifted operator, the Cauchy kernel, and the integral representation of the harmonic field.
 
 | | One-sided equation | Two-sided equation |
 |---|---|---|

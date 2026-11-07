@@ -219,7 +219,7 @@ The biquaternionic interpretation is that each Fourier component carries its own
 $$
 \partial/\partial R_t=-i\frac{\partial}{\partial r'_t}\;\longrightarrow\;-\omega,
 $$
-because $\partial/\partial r'_t\to-i\omega$ in the $\exp(-i\omega r'_t)$ convention of this section and $i^2=-1$, so the imaginary time axis is scaled differently at each frequency. The local complex structure is thus **spectral** as well as spatial: it is indexed by the frequency at which the medium is probed.
+because $\partial/\partial r'_t\to-i\omega/c$ in the $\exp(-i\omega r'_t/c)$ convention of this section and $i^2=-1$, so the imaginary time axis is scaled differently at each frequency. The local complex structure is thus **spectral** as well as spatial: it is indexed by the frequency at which the medium is probed.
 
 Two caveats delimit what the framework as written supports.
 
@@ -243,7 +243,7 @@ where $\beta$ is the **chirality measure** of the medium, a real scalar of the d
 
 **A name collision.** Everywhere else in this framework the same word labels the two halves of a Dirac field: the element carries the subscript $L$ or $R$, that label takes those two values and no third, and it is read off the element rather than computed; for that sense see *Chiral Fermions in the Biquaternion Framework*. "Chiral medium" is the older use of the same word for an optically active material. The two senses are unrelated and are distinguished by context alone; the medium sense occurs only in this section and its two companions below. The physical motivation for the medium sense — organic molecules such as DNA at some frequencies, the pupil of the eye, and manufactured chiral materials — is recorded by the authors of the time-harmonic treatment cited below.
 
-**The time variable of this section.** The source of this section differentiates with respect to the *real* time, and the corpus's own variable is imaginary: $\partial/\partial r'_t=ic\,\partial/\partial R_t$, so that $\partial/\partial r'_t$ and $ic\,\partial/\partial R_t$ are the same operator and only one convention should be used in a display. The formulas of this section are written with $\partial/\partial r'_t$, which is the source's variable, so that each of them can be checked as it stands against Maxwell's equations and against the source; the corpus's $\partial/\partial R_t$ reappears in the non-chiral reduction of the earlier sections, where it carries no source to be transcribed. The time-harmonic convention is $\exp(i\omega r'_t)$, so that $\partial/\partial r'_t\to i\omega$.
+**The time variable of this section.** The source of this section differentiates with respect to the *real* time, and the corpus's own variable is imaginary: $\partial/\partial r'_t=ic\,\partial/\partial R_t$, so that $\partial/\partial r'_t$ and $ic\,\partial/\partial R_t$ are the same operator and only one convention should be used in a display. The formulas of this section are written with $\partial/\partial r'_t$, which is the source's variable, so that each of them can be checked as it stands against Maxwell's equations and against the source; the corpus's $\partial/\partial R_t$ reappears in the non-chiral reduction of the earlier sections, where it carries no source to be transcribed. The time-harmonic convention is $\exp(i\omega r'_t/c)$, so that $\partial/\partial r'_t\to i\omega/c$.
 
 **The reduction, and why it is not the same reduction.** Substituting the two relations into Faraday's and Ampère–Maxwell's laws and keeping the two divergence equations gives the chiral system
 $$
@@ -284,7 +284,7 @@ $$
 $$
 which is the parent article's factorization read with the opposite overall sign for $\Box$. The source cites the same identity as the factorization of the non-chiral wave operator on which the earlier quaternionic reformulation rests. Read together, the two statements say that the parent's reduction is the $\beta=0$ member of a one-parameter family, and the member whose single equation is *first* order.
 
-**A degenerate frequency in the frequency domain.** A Fourier transform in $r'_t$ in the $\exp(i\omega r'_t)$ convention replaces $\partial/\partial r'_t$ by $i\omega$ and turns $\mathcal{M}$ into $\beta\sqrt{\epsilon\mu}\,i\omega D+\sqrt{\epsilon\mu}\,i\omega-iD$, which factors exactly:
+**A degenerate frequency in the frequency domain.** A Fourier transform in $r'_t$ in the $\exp(i\omega r'_t/c)$ convention replaces $\partial/\partial r'_t$ by $i\omega$ and turns $\mathcal{M}$ into $\beta\sqrt{\epsilon\mu}\,i\omega D+\sqrt{\epsilon\mu}\,i\omega-iD$, which factors exactly:
 $$
 \mathcal{M}(\omega)=i\left(\beta\sqrt{\epsilon\mu}\,\omega-1\right)\bigl(D+\alpha(\omega)\bigr),
 \qquad
@@ -325,7 +325,7 @@ which the source identifies as the quaternionic form of the Silver–Müller con
 
 Causality is then imposed, not assumed: among the regularisations of the inverse transform the source selects the one that vanishes for $r'_t<0$, by displacing the frequency into the upper half-plane, $\omega\mapsto\omega-i0$, "in agreement with the condition $\mathrm{Im}\,\alpha\geq0$". For a simple pole this gives the retarded factor
 $$
-\frac{1}{2\pi i}\oint\frac{\exp(i\omega r'_t)\,d\omega}{\omega-a_y}
+\frac{1}{2\pi i}\oint\frac{\exp(i\omega r'_t/c)\,d\omega}{\omega-a_y}
 =\mathrm{H}_{\mathrm{hvs}}(r'_t)\,\exp(i a_y r'_t),
 $$
 with $a_y=a+iy$ and $\Theta$ the Heaviside function, and the higher-order poles give $\mathrm{H}_{\mathrm{hvs}}(r'_t)\,\exp(ia_yr'_t)(ir'_t)^{n}/n!$; the residue formula was checked to $3.2\times10^{-9}$ for pole orders 1–3. For $r'_t<0$ the same integrand must be closed in the lower half-plane, where the displaced pole is not enclosed, so the contour integral vanishes: that is the content of the causality principle here, and it is exactly the statement that the displaced pole lies in the upper half-plane. Convolution of the resulting kernel with the quaternionic source then solves the inhomogeneous chiral system in whole space.
@@ -440,7 +440,7 @@ D\,\vec{\mathcal H}+\vec{\mathcal H}\,\vec{\mu}
 =\frac{1}{c}\,\partial/\partial r'_t\,\vec{\mathcal E}+\sqrt{\mu}\,\vec J,
 $$
 
-the corrections now being right products, as the dots record. In the time-harmonic convention $\exp(i\omega r'_t)$ used by the source of this section — the dispersion section above uses $\exp(-i\omega r'_t)$ and the two must not be mixed — with $k=\omega\sqrt{\epsilon\mu}$,
+the corrections now being right products, as the dots record. In the time-harmonic convention $\exp(i\omega r'_t/c)$ used by the source of this section — the dispersion section above uses $\exp(-i\omega r'_t/c)$ and the two must not be mixed — with $k=\omega\sqrt{\epsilon\mu}$,
 
 $$
 D\,\vec{\mathcal E}+\vec{\mathcal E}\,\vec{\epsilon}=-ik\,\vec{\mathcal H}-\frac{\rho}{\sqrt{\epsilon}},
@@ -505,7 +505,7 @@ Kravchenko's equation is **two-sided**: one equation on the algebra,
 $$
 \tilde{\nabla}^{\natural}F=-mi\,\bar F\,\vec e_z,
 $$
-in natural units, where the spatial gradient acts from the left, the mass term acts from the right through the fixed direction $\vec e_z$, and $\bar{\cdot}$ is the coefficientwise complex conjugation of the introduction. The position dependence of a potential is a coefficient multiplying one basis direction on the right, and it is this second form, not the one-sided pair, that has the shape of the carrier identity.
+where the spatial gradient acts from the left, the mass term acts from the right through the fixed direction $\vec e_z$, and $\bar{\cdot}$ is the coefficientwise complex conjugation of the introduction. The position dependence of a potential is a coefficient multiplying one basis direction on the right, and it is this second form, not the one-sided pair, that has the shape of the carrier identity.
 
 That is the whole content of the correspondence below. The massive equation with an electric potential, or separately with a scalar potential, becomes after the dictionary an equation whose only position dependence is such a coefficient, and matching it with the static reduction $D\vec{\mathcal E}+\vec{\mathcal E}\vec{\epsilon}=0$ of a sourceless medium — a right multiplication by $\vec{\epsilon}=\mathrm{grad}\sqrt{\epsilon}/\sqrt{\epsilon}$ — identifies the two. The one-sided pair has no right multiplication at all, so it cannot match a reduction whose inhomogeneity enters from the right; the two-sided equation has exactly that structure. The permittivity is then the exponential of the potential,
 $$
@@ -796,12 +796,12 @@ with reflectance $R=|r|^2$ and transmittance $T=(Z_1/Z_2)|r'_t|^2$ satisfying $R
 
 This section fixes the conventions for the later exercise on plane-wave propagation in a medium. Work in a homogeneous medium with real, possibly frequency-dependent, $\epsilon(\omega)$ and $\mu(\omega)$, and use the complex-amplitude convention
 $$
-\vec E(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z,r'_t)=\mathrm{Re}\!\left[\vec E_0\,\exp(\,i(\vec k\cdot(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)-\omega r'_t))\right],
+\vec E(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z,r'_t)=\mathrm{Re}\!\left[\vec E_0\,\exp(\,i(\vec k\cdot(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)-\omega r'_t/c))\right],
 $$
 $$
-\vec H(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z,r'_t)=\mathrm{Re}\!\left[\vec H_0\,\exp(\,i(\vec k\cdot(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)-\omega r'_t))\right],
+\vec H(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z,r'_t)=\mathrm{Re}\!\left[\vec H_0\,\exp(\,i(\vec k\cdot(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)-\omega r'_t/c))\right],
 $$
-with complex amplitude vectors $\vec E_0,\vec H_0$ and real $\omega>0$ and $\vec k$. This fixes the sign convention; the opposite choice $\exp(-i(\vec k\cdot(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)-\omega r'_t))$ is equivalent under $\vec k\to-\vec k$, $\omega\to-\omega$.
+with complex amplitude vectors $\vec E_0,\vec H_0$ and real $\omega>0$ and $\vec k$. This fixes the sign convention; the opposite choice $\exp(-i(\vec k\cdot(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)-\omega r'_t/c))$ is equivalent under $\vec k\to-\vec k$, $\omega\to-\omega$.
 
 For a source-free plane wave, $\tilde{\nabla}\tilde{F}=0$ is equivalent to the four algebraic conditions
 $$
@@ -942,7 +942,7 @@ which is fixed by the parent article and splits $\tilde{F}$ into a Hermitian ele
 
 The single biquaternionic Maxwell equation $\tilde{\nabla}\tilde{F}=-\sqrt{\mu}\,\tilde{J}_{\Phi}$ is the same in every medium: the field factors cancel through $\sqrt{\epsilon}/(c\sqrt{\mu})=\epsilon$ and $\sqrt{\mu}/(c\sqrt{\epsilon})=\mu$, and the only medium factor left explicit in the equation is $\sqrt{\mu}$. Dispersion makes the local complex structure spectral: each frequency carries its own speed $c(\omega)=1/\sqrt{\epsilon(\omega)\mu(\omega)}$, refractive index $n(\omega)=c_0/c(\omega)$, dispersion relation $k^2=\omega^2\epsilon(\omega)\mu(\omega)$, and group velocity $v_g=c_0/(n+\omega\,dn/d\omega)$, at least while the normalisation is real. At an interface the local complex structure jumps, and the field strength is discontinuous even though the physical fields satisfy the standard tangential and normal continuity conditions. The vacuum limit $c\to c_0$, $Z\to Z_0$ recovers every object of the parent article, and the zero-divisor cone of the algebra coincides with the wave cone of the medium at every value of $c$.
 
-For a plane wave in the medium, the conventions fixed above are: complex amplitudes in the $\exp(i(\vec k\cdot(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)-\omega r'_t))$ convention, transversality $\vec k\cdot\vec E_0=\vec k\cdot\vec H_0=0$, the relations $\vec k\times\vec E_0=\omega\mu\vec H_0$ and $\vec k\times\vec H_0=-\omega\epsilon\vec E_0$, the dispersion relation $k=\omega/c(\omega)=n(\omega)\omega/c_0$, and the impedance relation $\vec H_0=Z^{-1}\vec u_k\times\vec E_0$. In these conventions $|\vec E_0|=Z|\vec H_0|=c|\vec B_0|$, the two normalised halves of $\tilde{F}_0$ have equal magnitude, and $\langle\tilde{F}_0\rangle_{\natural}=0$.
+For a plane wave in the medium, the conventions fixed above are: complex amplitudes in the $\exp(i(\vec k\cdot(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)-\omega r'_t/c))$ convention, transversality $\vec k\cdot\vec E_0=\vec k\cdot\vec H_0=0$, the relations $\vec k\times\vec E_0=\omega\mu\vec H_0$ and $\vec k\times\vec H_0=-\omega\epsilon\vec E_0$, the dispersion relation $k=\omega/c(\omega)=n(\omega)\omega/c_0$, and the impedance relation $\vec H_0=Z^{-1}\vec u_k\times\vec E_0$. In these conventions $|\vec E_0|=Z|\vec H_0|=c|\vec B_0|$, the two normalised halves of $\tilde{F}_0$ have equal magnitude, and $\langle\tilde{F}_0\rangle_{\natural}=0$.
 
 A chiral medium is the one constitutive case recorded here that changes the *order* of the reduction rather than only its parameters. With the Drude–Born–Fedorov relations $\vec D=\epsilon(\vec E+\beta\,\mathrm{rot}\,\vec E)$ and $\vec B=\mu(\vec H+\beta\,\mathrm{rot}\,\vec H)$ the time-dependent Maxwell system still reduces to a single quaternionic equation, but its operator $\mathcal{M}=\beta\sqrt{\epsilon\mu}\,\partial/\partial r'_t\,D+\sqrt{\epsilon\mu}\,\partial/\partial r'_t-iD$ is of second order, its wave equations are of fourth order, and its frequency symbol factors as $i(\beta\sqrt{\epsilon\mu}\,\omega-1)(D+\alpha(\omega))$ with a frequency-dependent $\alpha$ that degenerates at $\omega=c/\beta$. The non-chiral reduction $\sqrt{\epsilon\mu}\,\partial/\partial r'_t-iD$ is the $\beta=0$ member of that family. The same fourth-order equation carries the medium's birefringence, with the two refractive indices $n_\pm(\omega)=1/(1\mp\beta\omega/c)$; and the fundamental solution of $\mathcal{M}$ is causal by construction, built from the retarded kernel $V_{\mathrm{vek},\alpha}$ with a displaced pole in the upper half-frequency plane.
 

@@ -184,7 +184,7 @@ where $q_j=-i\vec e_j$. The source does not state which pair belongs to which ax
 
 ## The Raising and Lowering Operators
 
-**The source prints $S_+ = \tfrac12(S_x + iS_y)$ and $S_- = \tfrac12(S_x - iS_y)$**; with its own $S_x,S_y$ from (9)–(10) the factor $\tfrac12$ is spurious, and the values it prints in (18)–(19) are those of $S_x\pm iS_y$ with $\hbar=1$. Indeed, using $i(-i)=+1$,
+**The source prints $S_+ = \tfrac12(S_x + iS_y)$ and $S_- = \tfrac12(S_x - iS_y)$**; with its own $S_x,S_y$ from (9)–(10) the factor $\tfrac12$ is spurious, and the values it prints in (18)–(19) are those of $S_x\pm iS_y$ in units of $\hbar$. Indeed, using $i(-i)=+1$,
 
 $$
 S_+ = S_x+iS_y =\frac{m\,c}{2\,k_m}\left(-i\vec e_z+\vec e_y\right)=\frac{m\,c}{2\,k_m}\left(\vec e_y-i\vec e_z\right),
@@ -194,7 +194,7 @@ $$
 S_- = S_x-iS_y =\frac{m\,c}{2\,k_m}\left(-i\vec e_z-\vec e_y\right)=\frac{m\,c}{2\,k_m}\left(-\vec e_y-i\vec e_z\right),
 $$
 
-so in units $\hbar=1$ the two elements are
+so with $\hbar=m\,c/k_m$ carried the two elements are
 
 $$
 S_+=\tfrac12\left(\vec e_y-i\vec e_z\right),\qquad S_-=\tfrac12\left(-\vec e_y-i\vec e_z\right),
@@ -346,7 +346,7 @@ $$
 
 A single product is a pure tensor; the products form the seven-dimensional cone $\operatorname{rank}c(M)\le1$, and a general element is a sum of at most four, with $\ell(M)=\operatorname{rank}c(M)$.
 
-**The two Dirac equations.** The corpus carries two forms of one dynamics, and the difference between them is where the second chirality slot sits. In units $\hbar=c=1$, with the biquaternionic gradient $\tilde\nabla=e_t\partial/\partial R_t+\sum_k\vec e_k\partial/\partial R_k$ and its conjugate $\tilde\nabla^{\natural}$, the **one-sided** form is the chiral pair
+**The two Dirac equations.** The corpus carries two forms of one dynamics, and the difference between them is where the second chirality slot sits. With the biquaternionic gradient $\tilde\nabla=e_t\partial/\partial R_t+\sum_k\vec e_k\partial/\partial R_k$ and its conjugate $\tilde\nabla^{\natural}$, the **one-sided** form is the chiral pair
 
 $$
 \tilde\nabla\tilde{Ξ}_{\mathrm{sp},R}=k_m\tilde{Ξ}_{\mathrm{sp},L},\qquad
