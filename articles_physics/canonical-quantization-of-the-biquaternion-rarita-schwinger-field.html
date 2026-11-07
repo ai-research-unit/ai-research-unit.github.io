@@ -99,7 +99,7 @@ $$</p>
 \qquad
 \mathbb{D}_p\tilde{Ξ}_{\mathrm{sp}}:=\sum_\mu\varepsilon_\mu\,i\,e_\mu\,\tilde{Ξ}_{\mathrm{sp}}\,\vec e_{\nu(\mu)}\,p_\mu ,
 $$</p>
-<p>with $\mathbb{D}^2=\Box$ and $\mathbb{D}_p^2=\frac{k_m^{2}\,p^{2}}{m^{2}\,c^{2}}$, which is $k_m^{2}$ on the mass shell; the minus sign of $\mathbb{D}$ is the product of the imaginary unit of the frame cell and the one the Dirac operator carries, $i\cdot i=-1$, and $\mathbb{D}_p$ keeps the single one of the cell. The second is the <strong>trace spinor</strong> of a vector-spinor, the metric contraction of its vector index with the frame cells,</p>
+<p>with $\mathbb{D}^2=\Box$ and $\mathbb{D}_p^2=p^{2}$, which is $m^{2}c^{2}$ on the mass shell; the minus sign of $\mathbb{D}$ is the product of the imaginary unit of the frame cell and the one the Dirac operator carries, $i\cdot i=-1$, and $\mathbb{D}_p$ keeps the single one of the cell. The second is the <strong>trace spinor</strong> of a vector-spinor, the metric contraction of its vector index with the frame cells,</p>
 <p>$$
 \Sigma(\tilde{Ξ}_{\mathrm{sp}}):=\sum_\mu\varepsilon_\mu\,i\,e_\mu\,\tilde{Ξ}_{\mathrm{sp},\mu}\,\vec e_{\nu(\mu)} .
 $$</p>
@@ -130,11 +130,11 @@ $$</p>
 <p>$$
 \Sigma\bigl(\mathbb{D}_p\tilde{Ξ}_{\mathrm{sp}}\bigr)=2\,p\cdot\tilde{Ξ}_{\mathrm{sp}}-\mathbb{D}_p\,\Sigma(\tilde{Ξ}_{\mathrm{sp}}),
 $$</p>
-<p>the trace of the operator times the field being the divergence of the field minus the operator applied to the trace. The field equation is $(\mathbb{D}_p-m)\tilde{Ξ}_{\mathrm{sp},\mu}=0$, so its trace is</p>
+<p>the trace of the operator times the field being the divergence of the field minus the operator applied to the trace. The field equation is $(\mathbb{D}_p-mc)\tilde{Ξ}_{\mathrm{sp},\mu}=0$, so its trace is</p>
 <p>$$
 m\,\Sigma(\tilde{Ξ}_{\mathrm{sp}})=\Sigma\bigl(\mathbb{D}_p\tilde{Ξ}_{\mathrm{sp}}\bigr)=2\,p\cdot\tilde{Ξ}_{\mathrm{sp}}-\mathbb{D}_p\,\Sigma(\tilde{Ξ}_{\mathrm{sp}}) ,
 \qquad\text{that is}\qquad
-2\,p\cdot\tilde{Ξ}_{\mathrm{sp}}=\bigl(\mathbb{D}_p+m\bigr)\Sigma(\tilde{Ξ}_{\mathrm{sp}}) .
+2\,p\cdot\tilde{Ξ}_{\mathrm{sp}}=\bigl(\mathbb{D}_p+ mc\bigr)\Sigma(\tilde{Ξ}_{\mathrm{sp}}) .
 $$</p>
 <p>The divergence of the field is therefore the trace spinor propagated by the field operator, and it vanishes when the trace does. Hence the constraint and the field equation together imply the <strong>transversality</strong> condition</p>
 <p>$$
@@ -203,7 +203,7 @@ a_r(\vec p)\,\zeta_{\mu,r}(p)\,\exp(-ip\cdot x)
 $$</p>
 <p>with $E_p=\sqrt{\vec p^2+m^2}$, $p\cdot x=E_p r'_t-\vec p\cdot\vec r$, and with the Rarita–Schwinger polarization spinors satisfying</p>
 <p>$$
-\bigl(\mathbb{D}_p-m\bigr)\zeta_{\mu,r}=0 ,
+\bigl(\mathbb{D}_p- mc\bigr)\zeta_{\mu,r}=0 ,
 \qquad
 \Sigma(\zeta_r)=0 ,
 \qquad
@@ -211,7 +211,7 @@ p\cdot\zeta_r=0 ,
 $$</p>
 <p>together with the completeness relation of the four polarizations,</p>
 <p>$$
-\sum_{r=1}^{4}\zeta_{\mu,r}\bar\zeta_{\nu,r}=\bigl(\mathbb{D}_p+m\bigr)\Pi_{\mu\nu} .
+\sum_{r=1}^{4}\zeta_{\mu,r}\bar\zeta_{\nu,r}=\bigl(\mathbb{D}_p+ mc\bigr)\Pi_{\mu\nu} .
 $$</p>
 <p>The object $\Pi_{\mu\nu}$ is the <strong>transverse</strong> traceless projector, the on-shell projector onto the intersection of the two constraints — the trace and the transversality — of rank eight on the vector-spinor space and four on the positive-energy solutions. It is not the constraint projector $P_{\mu\nu}$ of the preceding section: transversality requires the additional momentum-dependent terms, and the contraction of $p$ with the entries of $P$ does not vanish, so the completeness relation cannot be carried by $P_{\mu\nu}$ alone. It is the standard Rarita–Schwinger projector and is cited below. The creation and annihilation operators satisfy the fermionic algebra</p>
 <p>$$
@@ -226,7 +226,7 @@ $$</p>
 <h2 id="the-propagator-and-its-gauge-fixing">The Propagator and Its Gauge Fixing</h2>
 <p>The momentum-space propagator is the inverse of the quadratic form that the field equation and the constraint define on the traceless subspace. It is of the general form</p>
 <p>$$
-G_{\mu\nu}(p) = -\frac{i}{p^2-\hbar^2k_m^2}\Bigl[\bigl(\mathbb{D}_p+m\bigr)\Pi_{\mu\nu} + \text{(lower-spin terms)}\Bigr] ,
+G_{\mu\nu}(p) = -\frac{i}{p^2-\hbar^2k_m^2}\Bigl[\bigl(\mathbb{D}_p+ mc\bigr)\Pi_{\mu\nu} + \text{(lower-spin terms)}\Bigr] ,
 $$</p>
 <p>where the transverse projector $\Pi_{\mu\nu}$ is the one of the completeness relation and the lower-spin terms are the parts that the constraint removes; in the standard covariant form the propagator carries the gauge-fixing dependence of the massless case and a $p_\mu p_\nu$ term whose coefficient involves $1/m^2$ for the massive case. The detailed form, including the dependence on the gauge-fixing parameter and the $D$-dimensional continuation, is the standard result and is cited below; the framework's contribution is the identification of the trace part of the projector with the algebra's traceless projector and the interpretation of the lower-spin terms as the removed $\left(\tfrac12\right)$ component.</p>
 <p>The massless case requires the gauge fixing, and the gauge-fixing parameter enters the propagator in the same way as in the vector case, through the longitudinal-traceless decomposition of the field. The ghost fields are spinor and commuting, so they live in the spinor carrier tensored with the even part of the algebra; the BRST structure is the standard one, with the gauge parameter now a spinor.</p>
@@ -357,16 +357,16 @@ P_{\mu\nu}=g_{\mu\nu}I_4-\tfrac14\gamma_\mu\gamma_\nu,
 $$</p>
 <p>and the polarization equations, the completeness relation and the propagator are</p>
 <p>$$
-(\gamma\cdot p-m)\zeta_{\mu,r}=0,
+(\gamma\cdot p-mc)\zeta_{\mu,r}=0,
 \qquad
 \gamma\cdot\zeta_r=0,
 \qquad
 p\cdot\zeta_r=0,
 $$</p>
 <p>$$
-\sum_{r=1}^{4}\zeta_{\mu,r}\bar\zeta_{\nu,r}=(\gamma\cdot p+m)\Pi_{\mu\nu},
+\sum_{r=1}^{4}\zeta_{\mu,r}\bar\zeta_{\nu,r}=(\gamma\cdot p+mc)\Pi_{\mu\nu},
 \qquad
-G_{\mu\nu}(p)=-\frac{i}{p^2-\hbar^2k_m^2}\Bigl[(\gamma\cdot p+m)\Pi_{\mu\nu}+\text{(lower-spin terms)}\Bigr].
+G_{\mu\nu}(p)=-\frac{i}{p^2-\hbar^2k_m^2}\Bigl[(\gamma\cdot p+mc)\Pi_{\mu\nu}+\text{(lower-spin terms)}\Bigr].
 $$</p>
 <p><strong>The display.</strong> Every array printed in this section is given twice: in the Peirce display first, labelled $\mathrm{pau}$, whose arrays are the ones the literature prints, and in the axis-free display after it, labelled $\mathrm{axf}$, which is the display of the body and of the corpus. The two are carried into one another by $L_{\mathrm{axf},e_\mu}=C_{\Pi}L_{\mathrm{pau},e_\mu}C_{\Pi}^{-1}$, and a conjugation by $C_{\Pi}$ changes no product, no anticommutator, no trace and no determinant, so every identity of the section holds in both. An array is a statement about one display; a cell named in the running text keeps the Peirce label, and its axis-free array is the conjugate. The label names the array and not the operator.</p>
 <h2 id="summary">Summary</h2>
@@ -471,7 +471,7 @@ $$</p>
 <td>Transverse traceless (Rarita–Schwinger) projector; rank $8$, and $4$ on positive-energy solutions</td>
 </tr>
 <tr>
-<td>$\sum_r \zeta_{\mu,r}\bar\zeta_{\nu,r}=(\mathbb{D}_p+m)\Pi_{\mu\nu}$</td>
+<td>$\sum_r \zeta_{\mu,r}\bar\zeta_{\nu,r}=(\mathbb{D}_p+mc)\Pi_{\mu\nu}$</td>
 <td>Completeness relation, carried by the transverse projector</td>
 </tr>
 <tr>

@@ -92,7 +92,7 @@ $$</p>
 \sum_{r=1}^{2}\Big[a_{\mathrm{fop},r}(\vec p)\,\tilde{Ξ}_{\mathrm{sp},+}^{(r)}(\vec p)\,\exp(-ip\cdot x)
 +b_{\mathrm{fop},r}^{\dagger}(\vec p)\,\tilde{Ξ}_{\mathrm{sp},-}^{(r)}(\vec p)\,\exp(+ip\cdot x)\Big],
 $$</p>
-<p>with $E_{\vec p}=+\sqrt{\vec p^{\,2}c^2+m^{2}\,c^{4}}$, $x=(r'_t,\vec r)$ and $p\cdot x=E_{\vec p}r'_t-\vec p\cdot\vec r$. The amplitudes $\tilde{Ξ}_{\mathrm{sp},\pm}^{(r)}(\vec p)$ are elements of $\mathbb{B}$: they are the two branches of the biquaternion plane wave of the solutions article, the two $+$ amplitudes solving the amplitude equation there at the positive root of $\tilde P_{\Phi}\tilde P_{\Phi}^{\natural}= -m^{2}\,c^{2}$ and the two $-$ amplitudes at the negative root, with $r=1,2$ counting the two solutions at each root. The mode anticommutators are</p>
+<p>with $E_{\vec p}=+\sqrt{\vec p^{\,2}c^2+m^{2}\,c^{4}}$, $x=(r'_t,\vec r)$ and $p\cdot x=\frac{E_{\vec p}}{c}r'_t-\vec p\cdot\vec r$. The amplitudes $\tilde{Ξ}_{\mathrm{sp},\pm}^{(r)}(\vec p)$ are elements of $\mathbb{B}$: they are the two branches of the biquaternion plane wave of the solutions article, the two $+$ amplitudes solving the amplitude equation there at the positive root of $\tilde P_{\Phi}\tilde P_{\Phi}^{\natural}= -m^{2}\,c^{2}$ and the two $-$ amplitudes at the negative root, with $r=1,2$ counting the two solutions at each root. The mode anticommutators are</p>
 <p>$$
 \{a_{\mathrm{fop},r}(\vec p),a_{\mathrm{fop},s}^{\dagger}(\vec q)\}
 =\{b_{\mathrm{fop},r}(\vec p),b_{\mathrm{fop},s}^{\dagger}(\vec q)\}
@@ -276,9 +276,9 @@ $$</p>
 <p>$$
 \mathbb{D}:\ \tilde X\longmapsto-\frac{\partial\tilde X}{\partial r'_t}\vec e_x-\sum_k\vec e_k\,\frac{\partial\tilde X}{\partial R_k}\vec e_y ,
 \qquad
-\mathbb{D}_p:\ \tilde X\longmapsto iE_{\vec p}\,\tilde X\vec e_x-i\sum_k p_k\,\vec e_k\tilde X\vec e_y ,
+\mathbb{D}_p:\ \tilde X\longmapsto i\frac{E_{\vec p}}{c}\,\tilde X\vec e_x-i\sum_k p_k\,\vec e_k\tilde X\vec e_y ,
 $$</p>
-<p>the first the operator and the second its value on the plane wave $\exp(-iE_{\vec p}r'_t+i\vec p\cdot\vec r)$. In the time term the left factor is $e_t$, the unit of the algebra, so the term is a single right multiplication by $\vec e_x$; each spatial term carries $\vec e_k$ on the left and $\vec e_y$ on the right. The two imaginary units of the frame are already multiplied to $-1$, so no $i$ remains on the units, and both squares are scalars, $\mathbb{D}^2=\Box$ and $\mathbb{D}_p^2=p^2$, the cross terms cancelling between the time term and the three spatial ones.</p>
+<p>the first the operator and the second its value on the plane wave $\exp(-iE_{\vec p}r'_t/(\hbar c)+i\vec p\cdot\vec r/\hbar)$. In the time term the left factor is $e_t$, the unit of the algebra, so the term is a single right multiplication by $\vec e_x$; each spatial term carries $\vec e_k$ on the left and $\vec e_y$ on the right. The two imaginary units of the frame are already multiplied to $-1$, so no $i$ remains on the units, and both squares are scalars, $\mathbb{D}^2=\Box$ and $\mathbb{D}_p^2=p^2$, the cross terms cancelling between the time term and the three spatial ones.</p>
 <p>The covariant anticommutator of the free quantized field is the object that carries the canonical structure, and it has two properties that the biquaternion framework reads directly.</p>
 <p><strong>It is a $c$-number and it is local.</strong> Every term of the product $\tilde{Ξ}_{\mathrm{fop}}^{\dagger}(y)i\vec e_x\tilde{Ξ}_{\mathrm{fop}}(x)$ or $\tilde{Ξ}_{\mathrm{fop}}(x)\tilde{Ξ}_{\mathrm{fop}}^{\dagger}(y)i\vec e_x$ is a product of at most two mode operators with $c$-number amplitudes. Terms carrying one particle and one antiparticle operator, $a_{\mathrm{fop}}b_{\mathrm{fop}}$ or $a_{\mathrm{fop}}^{\dagger}b_{\mathrm{fop}}^{\dagger}$, reverse sign when the two field factors are exchanged and cancel in the anticommutator; terms with one creation and one annihilation operator of the same species collapse to $c$-numbers through the anticommutators. Hence, for every element $\tilde X$,</p>
 <p>$$
@@ -303,7 +303,7 @@ $$</p>
 S_F(p):\ \tilde{X}\,\longmapsto\frac{i\bigl(i\tilde X\vec e_x p_{0}-\sum_k  i\vec e_k\tilde X\vec e_y p_{k}+m\,\tilde X\bigr)}{p^2-m^{2}\,c^{2}+i\epsilon}
 =-\frac{i\bigl(i\tilde X\vec e_x p_{0}-\sum_k  i\vec e_k\tilde X\vec e_y p_{k}+m\,\tilde X\bigr)}{\tilde P_{\Phi}\tilde P_{\Phi}^{\natural}+m^{2}\,c^{2}-i\epsilon}.
 $$</p>
-<p>Distributing the outer $i$ of the first form with $i^2=-1$ gives the equivalent numerator $-\tilde X\vec e_x p_0+\sum_k\vec e_k\tilde X\vec e_y p_k+i m\tilde X$. The numerator is $(\mathbb{D}_p+m)\tilde X$, the momentum symbol of the display above together with the mass, the mass term being the multiplication by $m$ and not a separate operator. The denominator is the deformed mass-shell scalar, and the deformation $-i\epsilon\,e_t$ lies in the centre and along the $i r'_t$ axis of the material sector. The two-point function of the operator field is thus an operator-valued distribution whose biquaternion form is the mass-shell condition with the Feynman shift; the companion article's finding — that the algebra supplies the axis of the deformation but not its orientation — is inherited unchanged, and this article adds nothing to it.</p>
+<p>Distributing the outer $i$ of the first form with $i^2=-1$ gives the equivalent numerator $-\tilde X\vec e_x p_0+\sum_k\vec e_k\tilde X\vec e_y p_k+i m\,c\tilde X$. The numerator is $(\mathbb{D}_p+mc)\tilde X$, the momentum symbol of the display above together with the mass, the mass term being the multiplication by $m$ and not a separate operator. The denominator is the deformed mass-shell scalar, and the deformation $-i\epsilon\,e_t$ lies in the centre and along the $i r'_t$ axis of the material sector. The two-point function of the operator field is thus an operator-valued distribution whose biquaternion form is the mass-shell condition with the Feynman shift; the companion article's finding — that the algebra supplies the axis of the deformation but not its orientation — is inherited unchanged, and this article adds nothing to it.</p>
 <h2 id="what-is-standard-and-what-is-the-algebras">What Is Standard and What Is the Algebra's</h2>
 <p><strong>Standard field theory, written in the algebra.</strong> The mode expansion and mode algebra; the operator-valued field equation; the parity grading of the mode algebra; the normal-ordered Hamiltonian, momentum, charge, current and spin; the $c$-number anticommutator and the nonlocal commutator; the biquaternion form of the two-point function. None of this is new, and all of it is the standard quantized Dirac field written in the parents' conventions.</p>
 <p><strong>What the biquaternion structure supplies.</strong></p>
@@ -338,7 +338,7 @@ $$</p>
 $$</p>
 <p>so the observables are the even bilinears, the operator algebra is $\mathbb{Z}/2$-graded with the field in the odd part, and the grading agrees with the $2\pi$ rotation on the odd subspace. For one mode the entire structure is realized inside $\mathbb{B}$ through $\tilde S_{\Psi,+}/\hbar=\tfrac12(i\vec e_x-\vec e_y)$ and $(-1)^F=i\vec e_z$; for the field it is external.</p>
 <p>The observables are the normal-ordered energy–momentum, charge, current and spin. The Hamiltonian is $H=\sum_r\int\frac{d^3p}{(2\pi)^3}E_{\vec p}(a_{\mathrm{fop},r}^{\dagger}a_{\mathrm{fop},r}+b_{\mathrm{fop},r}^{\dagger}b_{\mathrm{fop},r})$ after normal ordering, with the constant $E_0=-2V\int\frac{d^3p}{(2\pi)^3}E_{\vec p}$; the sign flip of the antiparticle term is the anticommutator, verified on the two-mode truncation. The four-momentum assembles into the operator-valued material-sector element $\tilde P_{\Phi,\mathrm{fop}}=iH e_t+P_{\mathrm{fop},k}\vec e_k\in\mathcal{A}\otimes\mathbb{B}_{\Phi}$, and the charge is central. The current is conserved as an operator equation, verified by finite differences on a superposition of two momenta and on both frequency branches, to $5.3\times10^{-10}$ and $1.2\times10^{-10}$ respectively.</p>
-<p>The covariant anticommutator is a $c$-number and vanishes for spacelike separation; for every element $\tilde X$, $\{\tilde{Ξ}_{\mathrm{fop}}(x)\mathrm{Sc}(\tilde{Ξ}_{\mathrm{fop}}^{\dagger}(y)i\vec e_x\tilde X)\}=(\mathbb{D}+k_m)\Delta_{\mathrm{A}}(x-y)\tilde X$. The commutator is a $c$-number as well but has support outside the light cone. The momentum-space two-point function is the propagator companion's map $S_F(p):\tilde X\mapsto-i(i\tilde X\vec e_x p_0-\sum_k i\vec e_k\tilde X\vec e_y p_k+m\tilde X)/(\tilde P_{\Phi}\tilde P_{\Phi}^{\natural}+m^{2}\,c^{2}-i\epsilon)$, whose biquaternion form is the deformed mass-shell condition.</p>
+<p>The covariant anticommutator is a $c$-number and vanishes for spacelike separation; for every element $\tilde X$, $\{\tilde{Ξ}_{\mathrm{fop}}(x)\mathrm{Sc}(\tilde{Ξ}_{\mathrm{fop}}^{\dagger}(y)i\vec e_x\tilde X)\}=(\mathbb{D}+k_m)\Delta_{\mathrm{A}}(x-y)\tilde X$. The commutator is a $c$-number as well but has support outside the light cone. The momentum-space two-point function is the propagator companion's map $S_F(p):\tilde X\mapsto-i(i\tilde X\vec e_x p_0-\sum_k i\vec e_k\tilde X\vec e_y p_k+mc\tilde X)/(\tilde P_{\Phi}\tilde P_{\Phi}^{\natural}+m^{2}\,c^{2}-i\epsilon)$, whose biquaternion form is the deformed mass-shell condition.</p>
 <h2 id="summary-of-notation">Summary of Notation</h2>
 <div class="table-scroll"><table>
 <thead>
@@ -361,7 +361,7 @@ $$</p>
 <td>Scalar imaginary, $i^2=-1$</td>
 </tr>
 <tr>
-<td>$x=(r'_t,\vec r)$, $p\cdot x=E_{\vec p}r'_t-\vec p\cdot\vec r$, $p_0=E_{\vec p}/c$</td>
+<td>$x=(r'_t,\vec r)$, $p\cdot x=\frac{E_{\vec p}}{c}r'_t-\vec p\cdot\vec r$, $p_0=E_{\vec p}/c$</td>
 <td>Spacetime point, plane-wave phase, and energy component</td>
 </tr>
 <tr>
@@ -390,7 +390,7 @@ $$</p>
 </tr>
 <tr>
 <td>$\mathbb{D}_p$</td>
-<td>Momentum symbol at $p_0=E_{\vec p}/c$: $\mathbb{D}_p:\tilde X\mapsto iE_{\vec p}\tilde X\vec e_x-i\sum_kp_k\vec e_k\tilde X\vec e_y$, with $\mathbb{D}_p^2=p^2$</td>
+<td>Momentum symbol at $p_0=E_{\vec p}/c$: $\mathbb{D}_p:\tilde X\mapsto i\frac{E_{\vec p}}{c}\tilde X\vec e_x-i\sum_kp_k\vec e_k\tilde X\vec e_y$, with $\mathbb{D}_p^2=p^2$</td>
 </tr>
 <tr>
 <td>$\tilde{\nabla}\tilde{Ξ}_{\mathrm{sp},R}=k_m\tilde{Ξ}_{\mathrm{sp},L}$, $\tilde{\nabla}^{\natural}\tilde{Ξ}_{\mathrm{sp},L}=k_m\tilde{Ξ}_{\mathrm{sp},R}$</td>
@@ -473,7 +473,7 @@ $$</p>
 <td>Equal-time commutator kernel, nonzero at every spacelike separation</td>
 </tr>
 <tr>
-<td>$S_F(p):\tilde X\mapsto-\frac{i(i\tilde X\vec e_x p_0-\sum_k i\vec e_k\tilde X\vec e_y p_k+m\tilde X)}{\tilde P_{\Phi}\tilde P_{\Phi}^{\natural}+m^{2}\,c^{2}-i\epsilon}$</td>
+<td>$S_F(p):\tilde X\mapsto-\frac{i(i\tilde X\vec e_x p_0-\sum_k i\vec e_k\tilde X\vec e_y p_k+mc\tilde X)}{\tilde P_{\Phi}\tilde P_{\Phi}^{\natural}+m^{2}\,c^{2}-i\epsilon}$</td>
 <td>Feynman propagator amplitude, as a map on elements</td>
 </tr>
 <tr>

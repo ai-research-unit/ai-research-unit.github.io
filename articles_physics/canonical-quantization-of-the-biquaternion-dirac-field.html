@@ -128,10 +128,10 @@ $$</p>
 <p>with $Q_k$ running over the three spatial coordinates. The sides are the whole of the content. The time term carries $e_t$ on the left, and $e_t$ is the unit of the algebra, so that term is a single right multiplication by $\vec e_x$; each spatial term carries $\vec e_k$ on the left and $\vec e_y$ on the right. The operator is therefore <strong>two-sided</strong>, and the two elements are the ones just named. Its square is the d'Alembertian: the cross terms cancel because left and right multiplications commute and $\vec e_x\vec e_y=-\vec e_y\vec e_x$, the time term contributes $-\partial^2/\partial {r'_t}^2$ because $\vec e_x^2=-e_t$, and the spatial terms contribute $+\Delta_Q$ because $\vec e_y^2=-e_t$ and $\vec e_k\vec e_l+\vec e_l\vec e_k=-2\delta_{kl}e_t$. Verified on plane-wave symbols at $4\times10^{-15}$.</p>
 <p>Its symbol on a plane wave is the momentum form</p>
 <p>$$
-\mathbb{D}_p:\ \tilde X\longmapsto iE_{\vec p}\,\tilde X\vec e_x-i\sum_k  p_k\,\vec e_k\tilde X\vec e_y,
-\qquad \mathbb{D}_p^2=\frac{k_m^{2}\,p^{2}}{m^{2}\,c^{2}} ,
+\mathbb{D}_p:\ \tilde X\longmapsto i\frac{E_{\vec p}}{c}\,\tilde X\vec e_x-i\sum_k  p_k\,\vec e_k\tilde X\vec e_y,
+\qquad \mathbb{D}_p^2=p^{2} ,
 $$</p>
-<p>with $p_0=E_{\vec p}/c$ and $p_k$ the physical momentum components, so that $p^2=p_0^2-\vec p^2=m^{2}\,c^{2}$. The lower index of $p_\mu$ is a label and not a metric contraction: the signs are carried by $\varepsilon$. That sign vector is what the plane wave produces. On $e^{-i(p\cdot x)/\hbar}$ the time derivative gives $-iE_{\vec p}$ and the spatial derivatives $+ip_k$, so the time term contributes $iE_{\vec p}\tilde X\vec e_x$ and the spatial terms $-ip_k\vec e_k\tilde X\vec e_y$. On the material sector both objects satisfy $\mathbb{D}^2=\Box$ and $\mathbb{D}_p^2=p^2$, the second equal to $m^2$ on the mass shell.</p>
+<p>with $p_0=E_{\vec p}/c$ and $p_k$ the physical momentum components, so that $p^2=p_0^2-\vec p^2=m^{2}\,c^{2}$. The lower index of $p_\mu$ is a label and not a metric contraction: the signs are carried by $\varepsilon$. That sign vector is what the plane wave produces. On $e^{-i(p\cdot x)/\hbar}$ the time derivative gives $-iE_{\vec p}/(\hbar c)$ and the spatial derivatives $+ip_k/\hbar$, so the time term contributes $i\frac{E_{\vec p}}{c}\tilde X\vec e_x$ and the spatial terms $-ip_k\vec e_k\tilde X\vec e_y$. On the material sector both objects satisfy $\mathbb{D}^2=\Box$ and $\mathbb{D}_p^2=p^2$, the second equal to $m^{2}c^{2}$ on the mass shell.</p>
 <h3 id="the-lagrangian">The Lagrangian</h3>
 <p>The classical field theory is defined by the Lagrangian density</p>
 <p>$$
@@ -205,7 +205,7 @@ $$</p>
 <h2 id="field-expansion-in-the-plane-wave-solutions">Field Expansion in the Plane-Wave Solutions</h2>
 <p>The classical equation is linear, so its general solution is a superposition of the plane waves constructed in the parent article. Those solutions come in two branches: the positive-frequency branch spanned by the amplitudes $\tilde{Ξ}_{\mathrm{sp},+}^{(r)}(\vec p)\exp(-ip\cdot x)$ and the negative-frequency branch spanned by $\tilde{Ξ}_{\mathrm{sp},-}^{(r)}(\vec p)\exp(+ip\cdot x)$, with $r=1,2$ and</p>
 <p>$$
-E_{\vec p}=+\sqrt{\vec p^{\,2}c^2+m^{2}\,c^{4}},\qquad  p\cdot x:=E_{\vec p}r'_t-\vec p\cdot X,
+E_{\vec p}=+\sqrt{\vec p^{\,2}c^2+m^{2}\,c^{4}},\qquad  p\cdot x:=\frac{E_{\vec p}}{c}r'_t-\vec p\cdot X,
 $$</p>
 <p>for the point $x=(X,r'_t)$; each amplitude is an element of $\mathbb{B}$. The covariant normalizations, orthogonality, and spin sums established there are written with the Dirac pairing</p>
 <p>$$
@@ -221,8 +221,8 @@ $$</p>
 \mathrm{Sc}\big(\tilde{Ξ}_{\mathrm{sp},+}^{(r)*}\tilde{Ξ}_{\mathrm{sp},+}^{(s)}\big)=\mathrm{Sc}\big(\tilde{Ξ}_{\mathrm{sp},-}^{(r)*}\tilde{Ξ}_{\mathrm{sp},-}^{(s)}\big)=2E_{\vec p}\,\delta_{rs},
 $$</p>
 <p>$$
-\sum_{r=1}^{2}\tilde{Ξ}_{\mathrm{sp},+}^{(r)}\big\langle\tilde{Ξ}_{\mathrm{sp},+}^{(r)},\tilde{Ξ}\big\rangle_{\mathrm D}=(\mathbb{D}_p+m)\tilde{Ξ},\qquad
-\sum_{r=1}^{2}\tilde{Ξ}_{\mathrm{sp},-}^{(r)}\big\langle\tilde{Ξ}_{\mathrm{sp},-}^{(r)},\tilde{Ξ}\big\rangle_{\mathrm D}=(\mathbb{D}_p-m)\tilde{Ξ}
+\sum_{r=1}^{2}\tilde{Ξ}_{\mathrm{sp},+}^{(r)}\big\langle\tilde{Ξ}_{\mathrm{sp},+}^{(r)},\tilde{Ξ}\big\rangle_{\mathrm D}=(\mathbb{D}_p+mc)\tilde{Ξ},\qquad
+\sum_{r=1}^{2}\tilde{Ξ}_{\mathrm{sp},-}^{(r)}\big\langle\tilde{Ξ}_{\mathrm{sp},-}^{(r)},\tilde{Ξ}\big\rangle_{\mathrm D}=(\mathbb{D}_p-mc)\tilde{Ξ}
 \qquad\text{for every }\tilde{Ξ}\in\mathbb{B}.
 $$</p>
 <p>The last pair is an operator identity and not a statement about solutions: the first sum returns $2m$ times the element on the positive-frequency branch and vanishes on the negative-frequency one, and the second does the reverse. Verified on a basis of $\mathbb{B}$ at four momenta: completeness and orthogonality to better than $6\times10^{-15}$, and the covariant norms to machine precision.</p>
@@ -243,7 +243,7 @@ $$</p>
 <p>$$
 \tilde P_{\Phi}\tilde P_{\Phi}^{\natural}= -m^{2}\,c^{2},
 $$</p>
-<p>and the polarization equation $(\mathbb{D}_p-m)\tilde{Ξ}_{\mathrm{sp},0}=0$ is the algebraic form of the momentum-space equation. Promoting the coefficients to operators is thus a transcription of the standard mode expansion onto the parent article's biquaternion plane waves; it is not, by itself, a derivation of the expansion from the algebra.</p>
+<p>and the polarization equation $(\mathbb{D}_p-mc)\tilde{Ξ}_{\mathrm{sp},0}=0$ is the algebraic form of the momentum-space equation. Promoting the coefficients to operators is thus a transcription of the standard mode expansion onto the parent article's biquaternion plane waves; it is not, by itself, a derivation of the expansion from the algebra.</p>
 <h2 id="anticommutators-of-the-mode-operators">Anticommutators of the Mode Operators</h2>
 <p>For the equal-time relations above to hold, the mode operators must satisfy</p>
 <p>$$
@@ -270,8 +270,8 @@ $$</p>
 $$</p>
 <p>The two phases are <strong>opposite</strong>: the positive-frequency term carries $e^{+i\vec p\cdot\vec\Delta}$ and the negative-frequency term $e^{-i\vec p\cdot\vec\Delta}$. The bracket carries untwisted outer products, while the spin sums of the preceding section are statements about the pairing; moving the right multiplication by $i\vec e_x$ that the pairing carries onto the argument, the same operator identities read</p>
 <p>$$
-\sum_r\tilde{Ξ}_{\mathrm{sp},+}^{(r)}\,\mathrm{Sc}\big(\tilde{Ξ}_{\mathrm{sp},+}^{(r)*}\tilde{Ξ}\big)=(\mathbb{D}_p+m)\big(\tilde{Ξ}\,i\vec e_x\big),\qquad
-\sum_r\tilde{Ξ}_{\mathrm{sp},-}^{(r)}\,\mathrm{Sc}\big(\tilde{Ξ}_{\mathrm{sp},-}^{(r)*}\tilde{Ξ}\big)=(\mathbb{D}_p-m)\big(\tilde{Ξ}\,i\vec e_x\big).
+\sum_r\tilde{Ξ}_{\mathrm{sp},+}^{(r)}\,\mathrm{Sc}\big(\tilde{Ξ}_{\mathrm{sp},+}^{(r)*}\tilde{Ξ}\big)=(\mathbb{D}_p+mc)\big(\tilde{Ξ}\,i\vec e_x\big),\qquad
+\sum_r\tilde{Ξ}_{\mathrm{sp},-}^{(r)}\,\mathrm{Sc}\big(\tilde{Ξ}_{\mathrm{sp},-}^{(r)*}\tilde{Ξ}\big)=(\mathbb{D}_p-mc)\big(\tilde{Ξ}\,i\vec e_x\big).
 $$</p>
 <p>Multiplying by the two phases and adding, with $\theta=\vec p\cdot\vec\Delta$,</p>
 <p>$$
@@ -279,7 +279,7 @@ $$</p>
 +\tilde{Ξ}_{\mathrm{sp},-}^{(r)}\mathrm{Sc}\big(\tilde{Ξ}_{\mathrm{sp},-}^{(r)*}\tilde{Ξ}\big)e^{-i\theta}\Big]
 =2\cos\theta\,\mathbb{D}_p\big(\tilde{Ξ}\,i\vec e_x\big)+2im\sin\theta\,\big(\tilde{Ξ}\,i\vec e_x\big),
 $$</p>
-<p>the four terms grouping as $e^{+i\theta}(\mathbb{D}_p+m)+e^{-i\theta}(\mathbb{D}_p-m)$. Each piece now has a definite parity in $\vec p$: the time part of $\mathbb{D}_p$ contributes $iE_{\vec p}(\tilde{Ξ} i\vec e_x)\vec e_x=E_{\vec p}\tilde{Ξ}$, because $i\vec e_x\cdot i\vec e_x=i^2\vec e_x^2=e_t$, and it is even, since $E_{\vec p}$ and the units are; the spatial part $-i\sum_kp_k\vec e_k(\tilde{Ξ} i\vec e_x)\vec e_y$ and the mass term $2im\sin\theta(\tilde{Ξ} i\vec e_x)$ are odd. The even part is $2E_{\vec p}\cos\theta$ times the identity and, after division by $2E_{\vec p}$, integrates to $\delta^{(3)}(\vec\Delta)$; the odd parts vanish under symmetric integration. Hence the equal-time relation holds. The cancellation of the odd terms is exactly what the opposite phases of the two branches accomplish; had both phases been equal, the cross terms would have survived and the canonical relation would have failed.</p>
+<p>the four terms grouping as $e^{+i\theta}(\mathbb{D}_p+mc)+e^{-i\theta}(\mathbb{D}_p-mc)$. Each piece now has a definite parity in $\vec p$: the time part of $\mathbb{D}_p$ contributes $i\frac{E_{\vec p}}{c}(\tilde{Ξ} i\vec e_x)\vec e_x=\frac{E_{\vec p}}{c}\tilde{Ξ}$, because $i\vec e_x\cdot i\vec e_x=i^2\vec e_x^2=e_t$, and it is even, since $E_{\vec p}$ and the units are; the spatial part $-i\sum_kp_k\vec e_k(\tilde{Ξ} i\vec e_x)\vec e_y$ and the mass term $2im\sin\theta(\tilde{Ξ} i\vec e_x)$ are odd. The even part is $2E_{\vec p}\cos\theta$ times the identity and, after division by $2E_{\vec p}$, integrates to $\delta^{(3)}(\vec\Delta)$; the odd parts vanish under symmetric integration. Hence the equal-time relation holds. The cancellation of the odd terms is exactly what the opposite phases of the two branches accomplish; had both phases been equal, the cross terms would have survived and the canonical relation would have failed.</p>
 <h3 id="the-fock-space-and-pauli-exclusion">The Fock Space and Pauli Exclusion</h3>
 <p>The mode algebra generates the Fock space. Define the vacuum $|0\rangle$ by</p>
 <p>$$
@@ -484,7 +484,7 @@ $$</p>
 <td>Pair operator on one element; $\mathbb{D}^2=\Box$</td>
 </tr>
 <tr>
-<td>$\mathbb{D}_p:\tilde X\mapsto iE_{\vec p}\tilde X\vec e_x-i\sum_kp_k\vec e_k\tilde X\vec e_y$</td>
+<td>$\mathbb{D}_p:\tilde X\mapsto i\frac{E_{\vec p}}{c}\tilde X\vec e_x-i\sum_kp_k\vec e_k\tilde X\vec e_y$</td>
 <td>Momentum symbol on a plane wave; $\mathbb{D}_p^2=p^2$</td>
 </tr>
 <tr>
