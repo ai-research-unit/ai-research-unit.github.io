@@ -154,7 +154,7 @@ $$</p>
 <p>$$
 \tilde{\nabla}^{\natural}F = -i\,\overline{F}\,\vec e_z\,k_m,
 $$</p>
-<p>which has the shape of the corpus's $\tilde{\nabla}^{\natural}\tilde{Ξ}_{\mathrm{sp},L}=k_m\,\tilde{Ξ}_{\mathrm{sp},R}$ with the second field read as $-i\,\overline{F}\,\vec e_z$: a conjugation and a fixed direction, and nothing else. That is the operator-theoretic content of the two-sidedness — the dictionary reaches the member with the minus value, and the second field of that member is the conjugate of the first. The normalization with the imaginary-time derivative is not used for the operator itself, and the reason is the reality of the operator $R$ below: the factor $-\frac{i}{c}$ that carries $\partial/\partial r'_t$ into $\partial/\partial R_t$ would put the central imaginary into every coefficient of $R$ and take away the property that makes $R$ real.</p>
+<p>which has the shape of the corpus's $\tilde{\nabla}^{\natural}\tilde{Ξ}_{\mathrm{sp},L}=k_m\,\tilde{Ξ}_{\mathrm{sp},R}$ with the second field read as $-i\,\overline{F}\,\vec e_z$: a conjugation and a fixed direction, and nothing else. That is the operator-theoretic content of the two-sidedness — the dictionary reaches the member with the minus value, and the second field of that member is the conjugate of the first. The normalization with the imaginary-time derivative is not used for the operator itself, and the reason is the reality of the operator $R$ below: the factor $-i$ that carries $\partial/\partial r'_t$ into $\partial/\partial R_t$ would put the central imaginary into every coefficient of $R$ and take away the property that makes $R$ real.</p>
 <p>Following the source, $i_1,i_2,i_3$ denote the quaternion units; this article writes them $\vec e_x,\vec e_y,\vec e_z$ and keeps the source's $i_k$ only where it quotes the source. The product $i\,i_k$ is the scalar imaginary times a quaternion unit, not a square: $i^2=-1$, while $(i\,i_k)^2=i^2i_k^2=+1$.</p>
 <p><strong>Which conjugation.</strong> The bar of the equation is the algebra's <strong>coefficient conjugation</strong> $\bar{\cdot}$, not the algebra's real structure $\flat$. They are different maps with different fixed spaces, and the corpus keeps them apart (<em>Antilinear Structure and the Two Kinds of Mass in Biquaternionic Form</em>, and the convention remark of <em>The Massive Case</em> above). The distinction has teeth here, because the dictionary's mass term is antilinear and the framework has already found that not every antilinear mass term is admissible. The retired single-field equation $\tilde{\nabla}\tilde{Ξ}_{\mathrm{sp}} = k_m\,\tilde{Ξ}_{\mathrm{sp}}^{\flat}$ fails on the dispersion, whereas the Lanczos form $\tilde{\nabla}D = D^{*}i\vec{\nu}\,k_m$ of <em>The Lanczos Route: Maxwell with Feedback</em> is exact. Kravchenko's mass term is of the second kind: its conjugation is $\bar{\cdot}$, and it is accompanied by a right multiplication by a spatial direction, its $\vec e_z$ standing where the Lanczos unit vector $\vec{\nu}$ stands.
  The corpus reads the two as one structure — a conjugation together with a direction, rather than the algebra's real structure — and the dictionary is the second explicit instance of it.</p>
@@ -175,13 +175,13 @@ $$</p>
 R[F] := \Bigl(i\partial/\partial r'_t + \vec\nabla\Bigr)F\;e_{+} + \Bigl(-i\partial/\partial r'_t + \vec\nabla\Bigr)F\;e_{-} - F\,\vec e_y\,k_m
 $$</p>
 <p>is related to $\mathcal{N}$ by a change of variable on each side. The conjugation has not been removed, only moved: it sits in the two factors that surround the operator, and the operator itself is free of it.</p>
-<p><strong>The reality of $R$, recomputed.</strong> The two projections collapse, because $e_{+}+e_{-}=e_t$ and $e_{+}-e_{-}=i\,\vec e_x$. Writing $A=\frac{i}{c}\,\partial F/\partial r'_t$ and $B=\vec\nabla F$, the first two terms give</p>
+<p><strong>The reality of $R$, recomputed.</strong> The two projections collapse, because $e_{+}+e_{-}=e_t$ and $e_{+}-e_{-}=i\,\vec e_x$. Writing $A=i\,\partial F/\partial r'_t$ and $B=\vec\nabla F$, the first two terms give</p>
 <p>$$
 (A+B)e_{+} + (-A+B)e_{-} = B\,(e_{+}+e_{-}) + A\,(e_{+}-e_{-}) = B + A\,i\vec e_x ,
 $$</p>
 <p>and the step $i\cdot i=-1$ turns the second into the right multiplication by $-\vec e_x$. The operator is therefore</p>
 <p>$$
-R[F] = \vec\nabla F - \frac{1}{c}\frac{\partial F}{\partial r'_t}\,\vec e_x - F\,\vec e_y\,k_m ,
+R[F] = \vec\nabla F - \frac{\partial F}{\partial r'_t}\,\vec e_x - F\,\vec e_y\,k_m ,
 $$</p>
 <p>and its coefficients are the three spatial units of $\vec\nabla$ and the two right multiplications by $\vec e_x$ and $\vec e_y$. All of them are real quaternions, and no central imaginary appears. That is the property the source names when it calls the quaternionic Dirac operator <strong>real</strong>.</p>
 <p><strong>Real and imaginary parts are separately solutions.</strong> Since no coefficient of $R$ carries the central imaginary, the bar passes through it,</p>
@@ -200,7 +200,7 @@ $$</p>
 $$</p>
 <p>printed there in its own normalization, at $c=1$ and with $\frac{m\,c}{k_m}$ restored, and with the source's $\dagger$ read as the quaternionic conjugate $\natural$ and its $*$ as the coefficient bar. The equation of this section carries no $\frac{m\,c}{k_m}$, and the same pair gives the law in the units of this section,</p>
 <p>$$
-\frac{1}{c}\frac{\partial}{\partial r'_t}\bigl(FF^{\natural}\bigr)
+\frac{\partial}{\partial r'_t}\bigl(FF^{\natural}\bigr)
 = F\,\vec e_x\,(\vec\nabla F)^{\natural} - (\vec\nabla F)\,\vec e_x\,F^{\natural},
 $$</p>
 <p>which is the quaternionic form of the current-conservation equation of the Dirac field: the time derivative of the density on the left, and on the right the two terms that carry the spatial derivative, with the direction $\vec e_x$ of the operator in the place the source's $M_{i_1}$ occupies. Writing $A=F\,\vec e_x\,(\vec\nabla F)^{\natural}$, the second term is $A^{\natural}$, so the right side is $A+A^{\natural}$ and is scalar; the mass cancels between the two terms, so the law is the same at $m=0$, and it was checked at residual $1.1\times10^{-15}$ over $100$ random real fields and again symbolically on a polynomial field. The density is the modulus $FF^{\natural}$. On the real representative it coincides with the Hermitian norm, $FF^{\natural}=\langle F\rangle_{*}=\sum_\mu F_\mu^2$, and that shared value is indefinite: what the pair conserves is a density, not a probability density. The definite Hermitian norm carries the probability reading only on the complex field, where the two norms differ.</p>
@@ -256,7 +256,7 @@ $$</p>
 <p>where the two factors $\tfrac12(e_t\pm\alpha/\sqrt{\alpha^2})$ are complementary projections built from the unit in the direction of the parameter, and they multiply the field on the right; and $f$ is a solution of the shifted amplitude equation $\vec\nabla f+f\alpha=0$. The pair of signs of the frequency and the pair of right multiplications are one pairing: each half of the field is a projected shifted equation.</p>
 <p><strong>The interpretation the source attaches to it.</strong> The source states that its two projections are <em>closely related to particle helicity</em>, and on that interpretation the two halves of the harmonic field are the two helicity components, the half with the plus sign of the frequency being the <strong>neutrino</strong> and the other the <strong>antineutrino</strong>. In the massless case the equation they come from is</p>
 <p>$$
-\frac{i}{c}\,\partial F/\partial r'_t + \vec\nabla F = 0,
+i\,\partial F/\partial r'_t + \vec\nabla F = 0,
 $$</p>
 <p>which for a field equal to its own conjugate is a known reformulation of the vacuum Maxwell equations, attributed by the source to Imaeda [1976]. The algebra thus supplies the two helicities in one object: the two complementary projections of the parameter, one for each sign of the frequency, with the parameter's direction in place of a vacuum direction.</p>
 <p><strong>Which pair.</strong> The two projections above are <strong>not</strong> the two values. The value is a property of the element, $L$ or $R$, and no parameter enters it; the two projections above are built from the parameter $\alpha$, so they carry the frequency and the mass of the field. Helicity and the value coincide only for a massless field; at $m\neq0$ the two readings of the one field are genuinely different, and the neutrino or antineutrino identification is a statement about the helicity pair and not about the values. The corpus records the identification as the source's interpretation rather than as a derivation: what the algebra contributes to it is the shape — two complementary projections, one for each sign of the frequency — and the name <em>neutrino</em> is the source's, not the algebra's.</p>
@@ -656,7 +656,7 @@ $$</p>
 <p>The spherical and cylindrical solutions are constructed from harmonic functions by the completion $\tilde{Ξ}_{\mathrm{sp}}\mapsto\tilde{\nabla}^{\natural}\tilde{Ξ}_{\mathrm{sp}}$, and they describe the angular momentum states of the fermion field and the waveguide modes.</p>
 <p>A second form of the same equation is Kravchenko's, and it is two-sided: $\bigl(i\partial/\partial r'_t+\vec\nabla\bigr)F-i\,\overline{F}\,\vec e_z\,k_m=0$, whose free part is $-\tilde{\nabla}^{\natural}$ and whose mass term is a coefficient conjugation together with the right multiplication by the direction $\vec e_z$. The conjugation obstructs the analytic theory, so it is moved into the change of variable, and the conjugation-free operator</p>
 <p>$$
-R[F] = \vec\nabla F - \frac{1}{c}\frac{\partial F}{\partial r'_t}\,\vec e_x - F\,\vec e_y\,k_m
+R[F] = \vec\nabla F - \frac{\partial F}{\partial r'_t}\,\vec e_x - F\,\vec e_y\,k_m
 $$</p>
 <p>has coefficients in the real quaternions. The real and imaginary parts of a solution of $R[F]=0$ are therefore separately solutions, so one quaternionic solution carries two Dirac solutions. With the conjugation removed, the time-harmonic amplitude obeys a shifted equation with a biquaternionic parameter, and the Cauchy integral formula, the Plemelj–Sokhotski formulas and the boundary-value criterion hold for it in the same shape as for the time-harmonic Maxwell field.</p>
 <p>The same dictionary relates the massive Dirac equation with an electric or a scalar potential to the static sourceless Maxwell system of an inhomogeneous medium, $\epsilon = \exp(2G)$ with $dG/dr_x = g$; and on time-harmonic fields the Dirac field and the Maxwell field of a homogeneous medium share their projection identity exactly when $k^2 = \alpha^2$, which is the mass shell, $E^2 =\frac{m^{2}\,c^{2}\,\omega^{2}}{k_m^{2}}+m^{2}\,c^{4}$. The four potentials — scalar, pseudoscalar, electric and magnetic — are coefficients on four distinguished directions of the algebra, and the pseudoscalar one is the shifted operator that the corpus already solves.</p>
@@ -768,7 +768,7 @@ $$</p>
 <td>The two-sided Dirac operator with the conjugation in the mass term; its free part is $-\tilde{\nabla}^{\natural}$</td>
 </tr>
 <tr>
-<td>$R[F] = \vec\nabla F-\frac{1}{c}\partial F/\partial r'_t\,\vec e_x-F\vec e_y\,k_m$</td>
+<td>$R[F] = \vec\nabla F-\partial F/\partial r'_t\,\vec e_x-F\vec e_y\,k_m$</td>
 <td>The conjugation-free operator of the same source; real, with coefficients in $\mathbb{H}$, so $R[\mathrm{Re}\,F]=R[\mathrm{Im}\,F]=0$</td>
 </tr>
 <tr>

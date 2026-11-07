@@ -220,9 +220,9 @@ $$</p>
 <p>$$
 \mathrm{Sc}\!\left(\tilde{\nabla}^{\natural}\tilde{J}_{\Phi}\right) = 0,
 \qquad\text{equivalently}\qquad
-\partial/\partial r'_t\rho + \nabla\cdot\vec j = 0 .
+c\,\partial/\partial r'_t\rho + \nabla\cdot\vec j = 0 .
 $$</p>
-<p>Verifying the equivalence is a one-line computation: $\tilde{\nabla}^{\natural}\tilde{J}_{\Phi}$ has scalar part $\partial/\partial R_t(ic\rho) - \mathrm{Sc}(\vec\nabla\vec j) = \partial/\partial r'_t\rho + \nabla\cdot\vec j$, and the vector part is not set to zero. So the continuity equation is the scalar projection of the biquaternion conservation law, and it holds; numerically, on the plane wave used above the combination $\partial/\partial r'_t\rho + \nabla\cdot\vec j$ vanishes to finite-difference accuracy ($\sim10^{-6}$).</p>
+<p>Verifying the equivalence is a one-line computation: $\tilde{\nabla}^{\natural}\tilde{J}_{\Phi}$ has scalar part $\partial/\partial R_t(ic\rho) - \mathrm{Sc}(\vec\nabla\vec j) = c\,\partial/\partial r'_t\rho + \nabla\cdot\vec j$, and the vector part is not set to zero. So the continuity equation is the scalar projection of the biquaternion conservation law, and it holds; numerically, on the plane wave used above the combination $c\,\partial/\partial r'_t\rho + \nabla\cdot\vec j$ vanishes to finite-difference accuracy ($\sim10^{-6}$).</p>
 <p>The current is conserved, but its time component $\rho$ is <strong>not positive definite</strong>. For the positive-frequency plane wave $\tilde{Ξ}=N \exp(i(\vec k\cdot(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)-\omega r'_t))$ with $\omega>0$, direct substitution gives</p>
 <p>$$
 \rho =\frac{\omega}{c\,k_m}\,|N|^2 > 0 ,
