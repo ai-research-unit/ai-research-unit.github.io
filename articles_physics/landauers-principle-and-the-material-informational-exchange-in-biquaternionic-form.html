@@ -156,9 +156,9 @@ $$</p>
 <p>The map is linear, completely positive, trace-preserving and idempotent, but it is <strong>not unital</strong>: it sends the maximally mixed state to a pure state, $\mathcal{E}_{\vec u}(e_t/2) = \tilde\Pi_1(\vec u) \neq e_t/2$. It is therefore not a coarse-graining in the sense of the companion article, whose conditional expectations fix the maximally mixed state; it is the composition of the pointer coarse-graining with a reset, and the non-unital character is exactly what allows it to <strong>lower</strong> the entropy of the memory. The deficit is not created or destroyed by the map; it is exported to the environment, where it appears as the heat of the following section.</p>
 <p>The map is <strong>rank two</strong>: it has a Kraus representation with two operators. In the pointer basis they are</p>
 <p>$$
-K_1 = |0\rangle_{*}\langle 0|, \qquad K_2 = |0\rangle\langle 1| ,
+M_{\mathrm{kraus},1} = |0\rangle_{*}\langle 0|, \qquad M_{\mathrm{kraus},2} = |0\rangle\langle 1| ,
 $$</p>
-<p>where $K_1$ is $\tilde\Pi_1(\vec u)$ itself and $K_2$ is its raising companion, the off-diagonal element that carries the second logical state into the first. They satisfy $\sum_a K_a^\dagger K_a = e_t$ and $\sum_a K_a\,\tilde{Ϛ}\,K_a^\dagger = \tilde\Pi_1(\vec u)\,\mathrm{Tr}(\tilde{Ϛ})$, which is $\tilde\Pi_1(\vec u)$ on every state. The completeness and the reset property are elementary matrix identities; they were checked explicitly in the $2\times2$ representation, where $\sum_a K_a^\dagger K_a = I$ and the image of an arbitrary state $\tilde{Ϛ}$ is $\tilde\Pi_1$ independent of $\tilde{Ϛ}$. The minimal Kraus rank of the reset channel is two.</p>
+<p>where $M_{\mathrm{kraus},1}$ is $\tilde\Pi_1(\vec u)$ itself and $M_{\mathrm{kraus},2}$ is its raising companion, the off-diagonal element that carries the second logical state into the first. They satisfy $\sum_a K_a^\dagger K_a = e_t$ and $\sum_a K_a\,\tilde{Ϛ}\,K_a^\dagger = \tilde\Pi_1(\vec u)\,\mathrm{Tr}(\tilde{Ϛ})$, which is $\tilde\Pi_1(\vec u)$ on every state. The completeness and the reset property are elementary matrix identities; they were checked explicitly in the $2\times2$ representation, where $\sum_a K_a^\dagger K_a = I$ and the image of an arbitrary state $\tilde{Ϛ}$ is $\tilde\Pi_1$ independent of $\tilde{Ϛ}$. The minimal Kraus rank of the reset channel is two.</p>
 <h3 id="the-entropy-change">The Entropy Change</h3>
 <p>The entropy change of the memory is the difference between the entropies of the image and the state:</p>
 <p>$$
@@ -322,7 +322,7 @@ $$</p>
 <td>Erasure map (non-unital reset)</td>
 </tr>
 <tr>
-<td>$K_1, K_2$</td>
+<td>$M_{\mathrm{kraus},1}, M_{\mathrm{kraus},2}$</td>
 <td>Kraus operators of erasure, $\sum_a K_a^\dagger K_a = e_t$</td>
 </tr>
 <tr>
