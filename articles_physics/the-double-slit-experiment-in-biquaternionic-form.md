@@ -197,13 +197,13 @@ $$
 
 verified directly in the matrix representation. It is a **relative** phase between the two spin components — a spin rotation — not a global phase shared by both.
 
-Now compute the two-path intensity with this root, for a beam whose two routes carry the same spinor $s$ (normalised, $\mathrm{Tr}(s^\dagger s) = 1$). The total amplitude is $\tilde{W}s$ with $\tilde{W} = a_1 \exp(\vec{u}\theta_{\mathrm{pha},1}) + a_2 \exp(\vec{u}\theta_{\mathrm{pha},2})$, an element of the plane $\mathrm{span}\{e_t, \vec{u}\}$. Its Hermitian norm is
+Now compute the two-path intensity with this root, for a beam whose two routes carry the same spinor $s$ (normalised, $\mathrm{Tr}(s^\dagger s) = 1$). The total amplitude is $\tilde Q_{\mathrm{amp}}s$ with $\tilde Q_{\mathrm{amp}} = a_1 \exp(\vec{u}\theta_{\mathrm{pha},1}) + a_2 \exp(\vec{u}\theta_{\mathrm{pha},2})$, an element of the plane $\mathrm{span}\{e_t, \vec{u}\}$. Its Hermitian norm is
 
 $$
-\mathrm{Tr}\!\bigl((\tilde{W}s)^\dagger(\tilde{W}s)\bigr) = \mathrm{Tr}\bigl(s^\dagger \tilde{W}^{\natural}\tilde{W}s\bigr) = \langle\tilde{W}\rangle_{\natural}\,\mathrm{Tr}(s^\dagger s) = \bigl(a_1^2 + a_2^2 + 2a_1a_2\cos\delta\bigr),
+\mathrm{Tr}\!\bigl((\tilde Q_{\mathrm{amp}}s)^\dagger(\tilde Q_{\mathrm{amp}}s)\bigr) = \mathrm{Tr}\bigl(s^\dagger \tilde Q_{\mathrm{amp}}^{\natural}\tilde Q_{\mathrm{amp}}s\bigr) = \langle\tilde Q_{\mathrm{amp}}\rangle_{\natural}\,\mathrm{Tr}(s^\dagger s) = \bigl(a_1^2 + a_2^2 + 2a_1a_2\cos\delta\bigr),
 $$
 
-because $\tilde{W}^{\natural}\tilde{W} = \langle\tilde{W}\rangle_{\natural}e_t$ is central and $\langle\tilde{W}\rangle_{\natural} = \langle\tilde{W},\tilde{W}\rangle_{\natural} = \bigl(\sum_k a_k\cos\theta_{\mathrm{pha},k}\bigr)^2 + \bigl(\sum_k a_k\sin\theta_{\mathrm{pha},k}\bigr)^2 = |a_1 \exp(i\theta_{\mathrm{pha},1}) + a_2 \exp(i\theta_{\mathrm{pha},2})|^2$. This is *exactly* the central-phase intensity. The identity was checked numerically on random amplitudes and random spinors: the central and non-central intensities agreed to about $4\times10^{-14}$, the level of floating-point round-off.
+because $\tilde Q_{\mathrm{amp}}^{\natural}\tilde Q_{\mathrm{amp}} = \langle\tilde Q_{\mathrm{amp}}\rangle_{\natural}e_t$ is central and $\langle\tilde Q_{\mathrm{amp}}\rangle_{\natural} = \langle\tilde Q_{\mathrm{amp}},\tilde Q_{\mathrm{amp}}\rangle_{\natural} = \bigl(\sum_k a_k\cos\theta_{\mathrm{pha},k}\bigr)^2 + \bigl(\sum_k a_k\sin\theta_{\mathrm{pha},k}\bigr)^2 = |a_1 \exp(i\theta_{\mathrm{pha},1}) + a_2 \exp(i\theta_{\mathrm{pha},2})|^2$. This is *exactly* the central-phase intensity. The identity was checked numerically on random amplitudes and random spinors: the central and non-central intensities agreed to about $4\times10^{-14}$, the level of floating-point round-off.
 
 So the *spin-summed* two-slit intensity, for a common spin state, is **root-independent**; the double slit, read as an intensity pattern without spin analysis, does not by itself witness the centrality of the phase. What the non-central choice changes is not this number but the *type* of the amplitude and the *action* of the phase:
 

@@ -124,7 +124,7 @@ using $s_1^2+s_2^2=1$ and $h(1-p)=h(p)$. The invariant on which the entanglement
 Two immediate consequences, which are part (c) of the exercise:
 
 - $S=0$ if and only if one Schmidt coefficient vanishes, i.e. $|\tilde{Ξ}_{\mathrm{sp}}\rangle$ is a **product state** $|u\rangle|v\rangle$.
-- $S=\log 2$ if and only if $s_1=s_2=1/\sqrt2$, i.e. $|\tilde{Ξ}_{\mathrm{sp}}\rangle$ is **maximally entangled**. The four Bell states are the canonical examples, but they are not the only ones: any state of the form $(\tilde{U}\otimes\tilde{V})|Ξ^{+}\rangle$ with local unitaries is maximally entangled.
+- $S=\log 2$ if and only if $s_1=s_2=1/\sqrt2$, i.e. $|\tilde{Ξ}_{\mathrm{sp}}\rangle$ is **maximally entangled**. The four Bell states are the canonical examples, but they are not the only ones: any state of the form $(\tilde U_{\mathrm{loc},1}\otimes\tilde U_{\mathrm{loc},2})|Ξ^{+}\rangle$ with local unitaries is maximally entangled.
 
 The maximally entangled states are therefore a **continuum**, of three real dimensions among the six of the pure-state rays, and no finite catalogue exhausts them. A source that lists twelve patterns of maximally entangled states and claims they are all of them (Obojska, *Journal of Physics Communications* **4** (2020) 055018) is mistaken for exactly this reason: the twelve patterns are a measure-zero subset selected by an extra quotient rule on the amplitudes, and the family $\tfrac{1}{\sqrt2}(|00\rangle+\exp(i\theta_{\mathrm{pha}})|11\rangle)$ is a counterexample for every $\theta_{\mathrm{pha}}$ outside the discrete set the patterns allow. The computation is in *The Bell Basis as the Idempotent Basis of $\mathbb{B}\otimes\mathbb{B}$*, in the section *A Claimed Enumeration of the Maximally Entangled States*.
 

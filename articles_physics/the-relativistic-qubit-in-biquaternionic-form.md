@@ -243,23 +243,23 @@ $$
 $$
 and the element
 $$
-\tilde{W}(\tilde U_{\mathrm{lor}},\tilde{V}_{\Phi}) = \tilde U_{\mathrm{lor},\tilde{V}_{\Phi,2}}\,\tilde U_{\mathrm{lor}}\,\tilde U_{\mathrm{lor},\tilde{V}_{\Phi}}{}^{-1}
+\tilde U_{\mathrm{Wig}}(\tilde U_{\mathrm{lor}},\tilde{V}_{\Phi}) = \tilde U_{\mathrm{lor},\tilde{V}_{\Phi,2}}\,\tilde U_{\mathrm{lor}}\,\tilde U_{\mathrm{lor},\tilde{V}_{\Phi}}{}^{-1}
 $$
 carries the rest frame to the rest frame:
 $$
-\tilde{W}\,(ic\,e_t)\,\tilde{W}^{*}
+\tilde U_{\mathrm{Wig}}\,(ic\,e_t)\,\tilde U_{\mathrm{Wig}}^{*}
 = \tilde U_{\mathrm{lor},\tilde{V}_{\Phi,2}}\tilde U_{\mathrm{lor}}\tilde U_{\mathrm{lor},\tilde{V}_{\Phi}}{}^{-1}\,(ic\,e_t)\,\tilde U_{\mathrm{lor},\tilde{V}_{\Phi}}{}^{-1{}^{*}}\tilde U_{\mathrm{lor}}{}^{*}\tilde U_{\mathrm{lor},\tilde{V}_{\Phi,2}}{}^\dagger
 = \tilde U_{\mathrm{lor},\tilde{V}_{\Phi,2}}\,\tilde U_{\mathrm{lor}}\,\tilde{V}_{\Phi}\,\tilde U_{\mathrm{lor}}{}^{*}\,\tilde U_{\mathrm{lor},\tilde{V}_{\Phi,2}}{}^\dagger
 = \tilde U_{\mathrm{lor},\tilde{V}_{\Phi,2}}\,\tilde{V}_{\Phi,2}\,\tilde U_{\mathrm{lor},\tilde{V}_{\Phi,2}}{}^\dagger
 = ic\,e_t .
 $$
-By the stabilizer computation, $\tilde{W}$ is an element of the little group, and for a massive particle it is a unit-norm element with $\tilde{W}\tilde{W}^{*} = e_t$: a **unit real quaternion**, i.e. an element of $SU(2)$. This is the **Wigner rotation**. It is $*$-unitary, so it acts on the spin state by a genuine quantum operation,
+By the stabilizer computation, $\tilde U_{\mathrm{Wig}}$ is an element of the little group, and for a massive particle it is a unit-norm element with $\tilde U_{\mathrm{Wig}}\tilde U_{\mathrm{Wig}}^{*} = e_t$: a **unit real quaternion**, i.e. an element of $SU(2)$. This is the **Wigner rotation**. It is $*$-unitary, so it acts on the spin state by a genuine quantum operation,
 $$
-\tilde{Ϛ}_{\Psi} \ \longmapsto\ \tilde{W}\tilde{Ϛ}_{\Psi}\tilde{W}^{*} , \qquad \tilde{W}\in SU(2),
+\tilde{Ϛ}_{\Psi} \ \longmapsto\ \tilde U_{\mathrm{Wig}}\tilde{Ϛ}_{\Psi}\tilde U_{\mathrm{Wig}}^{*} , \qquad \tilde U_{\mathrm{Wig}}\in SU(2),
 $$
-which preserves the trace, the Hermiticity, the positivity, and — because it is a rotation — the Bloch radius. The maximally mixed state is fixed. The observable spin transformation at definite momentum is therefore a Bloch-sphere rotation by the Wigner angle, and not the non-$*$-unitary congruence of the previous subsection; the two agree only when $\tilde U_{\mathrm{lor}}$ is itself a rotation, in which case the standard boosts can be chosen so that $\tilde{W} = \tilde U_{\mathrm{lor}}$.
+which preserves the trace, the Hermiticity, the positivity, and — because it is a rotation — the Bloch radius. The maximally mixed state is fixed. The observable spin transformation at definite momentum is therefore a Bloch-sphere rotation by the Wigner angle, and not the non-$*$-unitary congruence of the previous subsection; the two agree only when $\tilde U_{\mathrm{lor}}$ is itself a rotation, in which case the standard boosts can be chosen so that $\tilde U_{\mathrm{Wig}} = \tilde U_{\mathrm{lor}}$.
 
-The frame dependence of everything that follows enters through the momentum argument of $\tilde{W}$. For a particle with a sharp four-velocity the boost applies the single $*$-unitary $\tilde{W}(\tilde U_{\mathrm{lor}},\tilde{V}_{\Phi})$ to the spin state and no entanglement with momentum can appear; for a momentum superposition the operator $\tilde{W}$ depends on the branch, and the boost acts as a momentum-controlled rotation, correlating spin with momentum. That mechanism — the momentum dependence of a $*$-unitary little-group element — is the content of the next three articles, and it is worth naming here as the reason the relativistic qubit is a *family* of qubits labelled by momentum rather than a single two-state system with an enlarged symmetry group.
+The frame dependence of everything that follows enters through the momentum argument of $\tilde U_{\mathrm{Wig}}$. For a particle with a sharp four-velocity the boost applies the single $*$-unitary $\tilde U_{\mathrm{Wig}}(\tilde U_{\mathrm{lor}},\tilde{V}_{\Phi})$ to the spin state and no entanglement with momentum can appear; for a momentum superposition the operator $\tilde U_{\mathrm{Wig}}$ depends on the branch, and the boost acts as a momentum-controlled rotation, correlating spin with momentum. That mechanism — the momentum dependence of a $*$-unitary little-group element — is the content of the next three articles, and it is worth naming here as the reason the relativistic qubit is a *family* of qubits labelled by momentum rather than a single two-state system with an enlarged symmetry group.
 
 ## Observables, Generators, and the Two Sectors
 
@@ -291,9 +291,9 @@ so the informational ray and its material null direction are carried by the same
 
 The physical spin state at definite four-velocity transforms not by the non-$*$-unitary congruence but by the little-group **Wigner rotation**
 $$
-\boxed{\;\tilde{W}(\tilde U_{\mathrm{lor}},\tilde{V}_{\Phi}) = \tilde U_{\mathrm{lor},\tilde{V}_{\Phi,2}}\tilde U_{\mathrm{lor}}\tilde U_{\mathrm{lor},\tilde{V}_{\Phi}}{}^{-1}\in SU(2), \qquad \tilde{V}_{\Phi,2} = \tilde U_{\mathrm{lor}}\tilde{V}_{\Phi}\tilde U_{\mathrm{lor}}{}^{*}\;},
+\boxed{\;\tilde U_{\mathrm{Wig}}(\tilde U_{\mathrm{lor}},\tilde{V}_{\Phi}) = \tilde U_{\mathrm{lor},\tilde{V}_{\Phi,2}}\tilde U_{\mathrm{lor}}\tilde U_{\mathrm{lor},\tilde{V}_{\Phi}}{}^{-1}\in SU(2), \qquad \tilde{V}_{\Phi,2} = \tilde U_{\mathrm{lor}}\tilde{V}_{\Phi}\tilde U_{\mathrm{lor}}{}^{*}\;},
 $$
-which fixes the rest four-velocity, is a unit real quaternion, and acts on the Bloch ball by a rotation. The massive little group is $SU(2)$ and carries spin; the massless little group is $E(2)$ and carries helicity, so the massless qubit has one state per momentum for each helicity. The congruence by a non-$*$-unitary element is a map on the algebra that moves the maximally mixed state and scales the trace, and the physical state transformation is the $*$-unitary Wigner rotation; the two coincide only on the compact subgroup. Because $\tilde{W}$ depends on the four-velocity, the relativistic qubit is a momentum-labelled family of qubits, and a boost acts as a momentum-controlled rotation — the mechanism behind the frame-dependent entanglement of the next article.
+which fixes the rest four-velocity, is a unit real quaternion, and acts on the Bloch ball by a rotation. The massive little group is $SU(2)$ and carries spin; the massless little group is $E(2)$ and carries helicity, so the massless qubit has one state per momentum for each helicity. The congruence by a non-$*$-unitary element is a map on the algebra that moves the maximally mixed state and scales the trace, and the physical state transformation is the $*$-unitary Wigner rotation; the two coincide only on the compact subgroup. Because $\tilde U_{\mathrm{Wig}}$ depends on the four-velocity, the relativistic qubit is a momentum-labelled family of qubits, and a boost acts as a momentum-controlled rotation — the mechanism behind the frame-dependent entanglement of the next article.
 
 ## Summary of Notation
 
@@ -313,7 +313,7 @@ which fixes the rest four-velocity, is a unit real quaternion, and acts on the B
 | $\tilde{V}_{\Phi} = \gamma(ic\,e_t + \vec v)$ | Four-velocity, $\langle\tilde{V}_{\Phi}\rangle_{\natural} = -c^2$ |
 | $\mathrm{Little}(\tilde{V}_{\Phi})$ | Stabilizer of $\tilde{V}_{\Phi}$: $\mathrm{U}(2)$ massive, $E(2)$ massless |
 | $\tilde U_{\mathrm{lor},\tilde{V}_{\Phi}}$ | Standard boost carrying $\tilde{V}_{\Phi}$ to rest |
-| $\tilde{W}(\tilde U_{\mathrm{lor}},\tilde{V}_{\Phi}) = \tilde U_{\mathrm{lor},\tilde{V}_{\Phi,2}}\tilde U_{\mathrm{lor}}\tilde U_{\mathrm{lor},\tilde{V}_{\Phi}}{}^{-1}$ | Wigner rotation, $\in SU(2)$ |
+| $\tilde U_{\mathrm{Wig}}(\tilde U_{\mathrm{lor}},\tilde{V}_{\Phi}) = \tilde U_{\mathrm{lor},\tilde{V}_{\Phi,2}}\tilde U_{\mathrm{lor}}\tilde U_{\mathrm{lor},\tilde{V}_{\Phi}}{}^{-1}$ | Wigner rotation, $\in SU(2)$ |
 | $\tilde{S}_{\Psi,k} =\frac{m\,c}{2\,k_m}i\vec e_k$ | Spin operators |
 | $\tfrac12\vec e_k\in\mathbb{B}_{\Phi}^{0}$ | Rotation generators (pure elements, material, compact) |
 | $\tfrac12 i\vec e_k\in\mathbb{B}_{\Psi}^{0}$ | Boost generators (pure elements, informational) |

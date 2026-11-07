@@ -231,18 +231,18 @@ Thus $T$ has order eight as a gate and order sixteen as an element of $SU(2)$. T
 
 ### The Product Law
 
-Let $\tilde Q$ and $\tilde{V}$ be gates, and consider the physical process that applies $\tilde Q$ first and $\tilde{V}$ second. The state passes through
+Let $\tilde Q_{\mathrm{gate},1}$ and $\tilde Q_{\mathrm{gate},2}$ be gates, and consider the physical process that applies $\tilde Q_{\mathrm{gate},1}$ first and $\tilde Q_{\mathrm{gate},2}$ second. The state passes through
 
 $$
-\tilde{Ϛ}_{\Psi} \;\xrightarrow{\ \tilde Q\ }\; \tilde Q\tilde{Ϛ}_{\Psi}\tilde Q^{*}
-\;\xrightarrow{\ \tilde{V}\ }\; \tilde{V}\tilde Q\tilde{Ϛ}_{\Psi}\tilde Q^{*}\tilde{V}^{*}
-= (\tilde{V}\tilde Q)\,\tilde{Ϛ}_{\Psi}\,(\tilde{V}\tilde Q)^{*} .
+\tilde{Ϛ}_{\Psi} \;\xrightarrow{\ \tilde Q_{\mathrm{gate},1}\ }\; \tilde Q_{\mathrm{gate},1}\tilde{Ϛ}_{\Psi}\tilde Q_{\mathrm{gate},1}^{*}
+\;\xrightarrow{\ \tilde Q_{\mathrm{gate},2}\ }\; \tilde Q_{\mathrm{gate},2}\tilde Q_{\mathrm{gate},1}\tilde{Ϛ}_{\Psi}\tilde Q_{\mathrm{gate},1}^{*}\tilde Q_{\mathrm{gate},2}^{*}
+= (\tilde Q_{\mathrm{gate},2}\tilde Q_{\mathrm{gate},1})\,\tilde{Ϛ}_{\Psi}\,(\tilde Q_{\mathrm{gate},2}\tilde Q_{\mathrm{gate},1})^{*} .
 $$
 
-So the composite gate is the **product** $\tilde{W} = \tilde{V}\tilde Q$, and the map on channels is
+So the composite gate is the **product** $\tilde Q_{\mathrm{gate},3} = \tilde Q_{\mathrm{gate},2}\tilde Q_{\mathrm{gate},1}$, and the map on channels is
 
 $$
-\boxed{\;Ξ_{\tilde{V}} \circ Ξ_{\tilde Q} = Ξ_{\tilde{V}\tilde Q}\;}.
+\boxed{\;Ξ_{\tilde Q_{\mathrm{gate},2}} \circ Ξ_{\tilde Q_{\mathrm{gate},1}} = Ξ_{\tilde Q_{\mathrm{gate},2}\tilde Q_{\mathrm{gate},1}}\;}.
 $$
 
 The product is the biquaternion product (for several qubits, the product in $\mathbb{B}^{\otimes n}$). Because that product is associative, a circuit is well defined without any bracketing convention: it is one element, the ordered product of its gates, and its action is a single conjugation by that element. The identity gate is $e_t$; the inverse of $\tilde Q$ is $\tilde Q^{*} = \tilde Q^{-1}$; and the set of gates is closed under the product, which is the statement that the gate group is a group.
@@ -251,7 +251,7 @@ Two remarks make the product law precise.
 
 First, the order is the reverse of the circuit interpretation. If a diagram is read left to right, the algebraic product is written right to left, as above. This is the standard convention for operator composition and carries no biquaternion-specific content.
 
-Second, because the map $\tilde Q\mapstoΞ_{\tilde Q}$ has kernel $\mathrm{U}(1)$, the product law holds at the level of gates but the algebraic identity of representatives may fail by a central phase. If $\tilde{V}\tilde Q = \exp(i\theta_{\mathrm{pha}})\tilde{W}$, then $Ξ_{\tilde{V}}\circΞ_{\tilde Q} = Ξ_{\tilde{W}}$ nevertheless. Circuit identities in the framework are therefore identities **up to a central phase**, and the phase is unobservable.
+Second, because the map $\tilde Q\mapstoΞ_{\tilde Q}$ has kernel $\mathrm{U}(1)$, the product law holds at the level of gates but the algebraic identity of representatives may fail by a central phase. If $\tilde Q_{\mathrm{gate},2}\tilde Q_{\mathrm{gate},1} = \exp(i\theta_{\mathrm{pha}})\tilde Q_{\mathrm{gate},3}$, then $Ξ_{\tilde Q_{\mathrm{gate},2}}\circΞ_{\tilde Q_{\mathrm{gate},1}} = Ξ_{\tilde Q_{\mathrm{gate},3}}$ nevertheless. Circuit identities in the framework are therefore identities **up to a central phase**, and the phase is unobservable.
 
 ### Worked Identities
 
@@ -295,7 +295,7 @@ $$
 
 with the trace $\mathrm{Tr}(x\otimes y) = \mathrm{Tr}_{\mathbb{B}}(x)\cdot\mathrm{Tr}_{\mathbb{B}}(y)$, where $\mathrm{Tr}_{\mathbb{B}}(e_t)=2$ and $\mathrm{Tr}_{\mathbb{B}}(\vec e_k)=0$, and with the partial traces $\mathrm{Tr}_1,\mathrm{Tr}_2$ of the companion article on entangled subsystems. A **gate** is a $*$-unitary element of $\mathbb{B}^{\otimes n}$, acting on states (Hermitian, positive, trace-one elements of $\mathbb{B}_{\Psi}^{\otimes n}$) by conjugation. The elementary gates of a circuit are of two kinds: **local gates** $\tilde Q_1\otimes\tilde Q_2\otimes\cdots$ on the factors, and **entangling gates**, which are not tensor products.
 
-Local gates on different factors commute, $(\tilde Q\otimes e_t)(e_t\otimes\tilde{V}) = (e_t\otimes\tilde{V})(\tilde Q\otimes e_t) = \tilde Q\otimes\tilde{V}$, so the order of operations on disjoint wires is immaterial — the algebraic statement of the fact that commuting gates may be drawn in either order.
+Local gates on different factors commute, $(\tilde Q_{\mathrm{gate},1}\otimes e_t)(e_t\otimes \tilde Q_{\mathrm{gate},2}) = (e_t\otimes \tilde Q_{\mathrm{gate},2})(\tilde Q_{\mathrm{gate},1}\otimes e_t) = \tilde Q_{\mathrm{gate},1}\otimes \tilde Q_{\mathrm{gate},2}$, so the order of operations on disjoint wires is immaterial — the algebraic statement of the fact that commuting gates may be drawn in either order.
 
 The status of the tensor product is the open question inherited from the companion articles. Everything below is a statement inside $\mathbb{B}^{\otimes n}$ once that algebra is granted; whether it is canonical for the framework is left open, exactly as in the companion article on the Bell basis.
 
@@ -364,10 +364,10 @@ $$
 the biquaternion idempotent corresponding to $|00\rangle_{*}$. Apply the Hadamard to the first qubit and then the CNOT with the first qubit as control. As a circuit, the operation is the product
 
 $$
-\tilde{W} = \tilde{Q}_{\tilde Q_x}(\tilde Q_{\mathrm{Had}}\otimes e_t), \qquad \tilde{Q}_{\tilde Q_x} = \tilde\Pi_1(\vec u_z)\otimes e_t + \tilde\Pi_2(\vec u_z)\otimes (i \vec e_x),
+\tilde Q_{\mathrm{cir}} = \tilde{Q}_{\tilde Q_x}(\tilde Q_{\mathrm{Had}}\otimes e_t), \qquad \tilde{Q}_{\tilde Q_x} = \tilde\Pi_1(\vec u_z)\otimes e_t + \tilde\Pi_2(\vec u_z)\otimes (i \vec e_x),
 $$
 
-and the output state is $\tilde{W}\tilde{Ϛ}_{\Psi,0}\tilde{W}^{*}$, a single conjugation because $\tilde{W}$ is a single gate.
+and the output state is $\tilde Q_{\mathrm{cir}}\tilde{Ϛ}_{\Psi,0}\tilde Q_{\mathrm{cir}}^{*}$, a single conjugation because $\tilde Q_{\mathrm{cir}}$ is a single gate.
 
 **Step one: the Hadamard.** Since $\tilde Q_{\mathrm{Had}}$ is Hermitian and $\tilde Q_{\mathrm{Had}}^2 = e_t$, the conjugation of the first factor gives
 
@@ -410,10 +410,10 @@ $$
 
 The right-hand side is the **Bell idempotent** $\tilde\Pi_\epsilon$ of the companion article on the Bell basis, with sign pattern $\epsilon = (-1,+1,-1)$, which is the idempotent of $|Ξ^{+}\rangle$. The identification was verified independently by mapping both sides to $M_4(\mathbb{C})$: the biquaternion element equals $\tfrac{1}{2}(|00\rangle+|11\rangle)(\langle 00|+\langle 11|)$.
 
-The whole circuit is thus the single element $\tilde{W} = \tilde{Q}_{\tilde Q_x}(\tilde Q_{\mathrm{Had}}\otimes e_t)$ of $\mathbb{B}\otimes\mathbb{B}$, and its output is
+The whole circuit is thus the single element $\tilde Q_{\mathrm{cir}} = \tilde{Q}_{\tilde Q_x}(\tilde Q_{\mathrm{Had}}\otimes e_t)$ of $\mathbb{B}\otimes\mathbb{B}$, and its output is
 
 $$
-\boxed{\;\tilde{W}\left[\tilde\Pi_1(\vec u_z)\otimes\tilde\Pi_1(\vec u_z)\right]\tilde{W}^{*}
+\boxed{\;\tilde Q_{\mathrm{cir}}\left[\tilde\Pi_1(\vec u_z)\otimes\tilde\Pi_1(\vec u_z)\right]\tilde Q_{\mathrm{cir}}^{*}
 = \tfrac{1}{4}\left[e_t\otimes e_t - \vec e_x\otimes \vec e_x + \vec e_y\otimes \vec e_y - \vec e_z\otimes \vec e_z\right]\;}.
 $$
 
@@ -431,7 +431,7 @@ $$
 
 Equivalently, a channel is a gate if and only if it preserves purity, and if and only if it is an inner automorphism of the algebra. Three consequences organise the distinction.
 
-**Closure.** The composition of two gates is a gate, because the product of two unitaries is $*$-unitary. Hence **a circuit built only from gates is a gate**: it is one element, it has Kraus rank one, and it is invertible. The inverse circuit is the product of the inverses in the reverse order, which in the algebra is just $\tilde{W}^{*}$. The Bell-preparation circuit above is reversible for exactly this reason, even though it creates entanglement: entanglement is not irreversibility.
+**Closure.** The composition of two gates is a gate, because the product of two unitaries is $*$-unitary. Hence **a circuit built only from gates is a gate**: it is one element, it has Kraus rank one, and it is invertible. The inverse circuit is the product of the inverses in the reverse order, which in the algebra is just $\tilde Q_{\mathrm{cir}}^{*}$. The Bell-preparation circuit above is reversible for exactly this reason, even though it creates entanglement: entanglement is not irreversibility.
 
 **Irreversibility is a sum.** A channel is irreversible precisely when its Kraus rank is at least two, i.e. when it is a *sum* of conjugations rather than one conjugation. The canonical example is **dephasing** along $\vec u_{\mathrm r}$,
 
@@ -492,7 +492,7 @@ A gate in the biquaternion framework is a **$*$-unitary element** $\tilde Q\in\m
 
 The standard single-qubit gate set has explicit representatives: the Pauli gates are $\tilde Q_x=i\vec e_x$, $\tilde Q_y=i\vec e_y$, $\tilde Q_z=i\vec e_z$; the Hadamard is $\tilde Q_{\mathrm{Had}}=\tfrac{i}{\sqrt2}(\vec e_x+\vec e_z)$; the phase and $T$ gates are the rotations $\tfrac{1}{\sqrt2}(e_t+\vec e_z)$ and $\cos\tfrac{\pi}{8}e_t+\sin\tfrac{\pi}{8}\vec e_z$; a general gate is $\exp(i\theta_{\mathrm{pha}})(\cos\tfrac{\theta}{2}e_t+\sin\tfrac{\theta}{2}\vec u_{\mathrm r})$. Apart from the identity gate, the Hermitian gates are the $\pi$-rotations $\pm i\vec u_{\mathrm r}$; the Pauli and Hadamard gates are of this type, the phase and $T$ gates are not.
 
-**Composition** is the algebra product: applying $\tilde Q$ then $\tilde{V}$ gives $\tilde{V}\tilde Q$, and the whole circuit is a single element whose action is a single conjugation. The Pauli group is the sixteen-element set $\{\pm e_t,\pm ie_t,\pm \vec e_k,\pm i\vec e_k\}$, and the Clifford group is its normaliser in the gate group; $H$ and $S$ generate it, and its image in $PU(2)$ is the octahedral rotation group of order $24$.
+**Composition** is the algebra product: applying $\tilde Q_{\mathrm{gate},1}$ then $\tilde Q_{\mathrm{gate},2}$ gives $\tilde Q_{\mathrm{gate},2}\tilde Q_{\mathrm{gate},1}$, and the whole circuit is a single element whose action is a single conjugation. The Pauli group is the sixteen-element set $\{\pm e_t,\pm ie_t,\pm \vec e_k,\pm i\vec e_k\}$, and the Clifford group is its normaliser in the gate group; $H$ and $S$ generate it, and its image in $PU(2)$ is the octahedral rotation group of order $24$.
 
 In the **multi-qubit** arena $\mathbb{B}^{\otimes n}\cong M_{2^n}(\mathbb{C})$, the controlled gate is $\tilde{Q}_{\tilde Q} = \tilde\Pi_1(\vec u_{\mathrm r})\otimes e_t + \tilde\Pi_2(\vec u_{\mathrm r})\otimes\tilde Q$, $*$-unitary by the complementarity of the idempotents and the unitarity of $\tilde Q$. The CNOT, CZ, and SWAP gates have explicit representatives, and the standard circuit identities hold as algebra identities. A worked circuit — Hadamard then CNOT on two qubits — produces the Bell idempotent $\tfrac14(e_t\otimes e_t - \vec e_x\otimes \vec e_x + \vec e_y\otimes \vec e_y - \vec e_z\otimes \vec e_z)$ from a product state by a single conjugation.
 

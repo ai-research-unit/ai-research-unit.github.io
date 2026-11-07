@@ -99,7 +99,7 @@ and the apex is the element that divides only $0$ and is divided by everything. 
 The partition is a partition of elements. Read on the maps they generate, it is a partition of processes. Left multiplication by $\tilde Q$ is a $\mathbb{C}$-linear map $L_{\tilde Q}$ of the algebra, and the assignment is injective. The maps compose by
 
 $$
-L_{\tilde A}\circ L_{\tilde B}=L_{\tilde A\tilde B},
+L_{\tilde Q_1}\circ L_{\tilde Q_2}=L_{\tilde Q_1\tilde Q_2},
 $$
 
 so the left multiplications form a **monoid** under composition, with identity $L_{\mathrm{axf},e_t}$. The monoid is the element monoid seen through the regular representation, and it carries the same partition: its units are exactly the off-cone elements, and its non-units are the zero divisors together with zero.
@@ -110,7 +110,7 @@ A unit is a **reversible process**: the map is a bijection, and it can be run ba
 
 **The cone as a horizon.** The cone has three readings at once: its cut by the material sector is the light cone, its cut by the informational sector is the boundary of the state space, and in the whole algebra it is the locus of the non-invertible acting maps. Read as one object, it is where a process loses information: a map on the cone has a kernel, and what enters the kernel does not leave. The horizon reading is the identification of the three loci, and it is an interpretation. The algebra supplies the common set, not the thermodynamics; the area law, the temperature and the second law belong to *Black Hole Thermodynamics in Biquaternionic Form* and to the KMS articles. The cone is a horizon in the sense of a boundary at which the map stops being reversible, not in the sense of a metric horizon with a temperature.
 
-**Which composition is physical.** The monoid composes by $L_{\tilde A}L_{\tilde B}=L_{\tilde A\tilde B}$, so a sequence of two processes is a product. The product is associative, and associativity is order-blind: it says that the bracketing of three factors does not matter, not that the order of the two factors does. The two orders are the two products $\tilde A\tilde B$ and $\tilde B\tilde A$, and the algebra supplies both; their commutator $[\tilde A,\tilde B]$, the antisymmetric half of the product, measures the order sensitivity. **Which of the two orders is the physical composition is open.** The algebra supplies both and selects neither.
+**Which composition is physical.** The monoid composes by $L_{\tilde Q_1}L_{\tilde Q_2}=L_{\tilde Q_1\tilde Q_2}$, so a sequence of two processes is a product. The product is associative, and associativity is order-blind: it says that the bracketing of three factors does not matter, not that the order of the two factors does. The two orders are the two products $\tilde Q_1\tilde Q_2$ and $\tilde Q_2\tilde Q_1$, and the algebra supplies both; their commutator $[\tilde Q_1,\tilde Q_2]$, the antisymmetric half of the product, measures the order sensitivity. **Which of the two orders is the physical composition is open.** The algebra supplies both and selects neither.
 
 **The boundary.** The open question is not a defect of the algebra. It is the statement that a composition law is not a dynamics: a physical theory must say which product is the composition of its processes, and that choice is an input.
 

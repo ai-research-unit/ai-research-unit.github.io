@@ -190,10 +190,10 @@ The warrant is one line: the star reverses the order, so the product carries $\t
 
 ### The Indefinite Form
 
-A second Hermitian form is obtained by twisting the first by a fixed direction. Let $\tilde W$ be a fixed Hermitian element squaring to the unit, taken here as $\tilde W=i\vec e_z$; the direction is the declared one of the frame, and any other direction gives a conjugate form. Define, for two elements of one value,
+A second Hermitian form is obtained by twisting the first by a fixed direction. Let $\tilde U_{\mathrm{ax}}$ be a fixed Hermitian element squaring to the unit, taken here as $\tilde U_{\mathrm{ax}}=i\vec e_z$; the direction is the declared one of the frame, and any other direction gives a conjugate form. Define, for two elements of one value,
 
 $$
-[X\,|\,Y]=2\,\mathrm{Sc}\bigl(\tilde X^{*}\tilde W\tilde Y\bigr).
+[X\,|\,Y]=2\,\mathrm{Sc}\bigl(\tilde X^{*}\tilde U_{\mathrm{ax}}\tilde Y\bigr).
 $$
 
 The form is Hermitian, and on a value it has signature $(1,1)$: one direction is positive and one is negative. It is invariant under the elements that fix the direction,
@@ -201,7 +201,7 @@ The form is Hermitian, and on a value it has signature $(1,1)$: one direction is
 $$
 [X\,|\,Y]\ \text{invariant}
 \quad\Longleftrightarrow\quad
-\tilde U^{*}\tilde W\tilde U=\tilde W ,
+\tilde U^{*}\tilde U_{\mathrm{ax}}\tilde U=\tilde U_{\mathrm{ax}} ,
 $$
 
 and that stabiliser is of real dimension three: it contains the rotations about the direction and the two boosts transverse to it, those three elements span its Lie algebra, and it is the group $SU(1,1)$ of the companion articles. The definite form and the indefinite one therefore select the two real forms of the same complex group, the compact one and the non-compact one, and neither is a change of basis of the other.
@@ -220,7 +220,7 @@ The warrant is the identity $\tilde U^{*}\bar{\tilde U}=e_t$, which holds for ev
 |---|---|---|---|
 | $\langle\tilde X,\tilde Y\rangle_{\natural}$ | one value with the other | the whole group | the invariant bilinear form; self-duality |
 | $h(\tilde X,\tilde Y)$ | one value | the compact $SU(2)$ | positive definite; the compact real form |
-| $[X\,\vert\,Y]$ | one value | the stabiliser of $\tilde W$, $SU(1,1)$ | indefinite; the non-compact real form |
+| $[X\,\vert\,Y]$ | one value | the stabiliser of $\tilde U_{\mathrm{ax}}$, $SU(1,1)$ | indefinite; the non-compact real form |
 | $h(\tilde X,\tilde Y)$ with $\bar{\tilde U}$ on the second factor | a value, and the conjugate action on the second factor | the whole group | the pairing of the two labels |
 
 ### The Map to the Hermitian Sector
@@ -397,7 +397,7 @@ What the article does **not** supply is a dynamics. It supplies the carrier, the
 | $\tilde Q\mapsto\tilde U_{\mathrm{lor}}\tilde Q\tilde U_{\mathrm{lor}}{}^{*}$ | The Hermitian sandwich on $\mathbb{B}_{\Phi}$ |
 | $\langle\tilde X,\tilde Y\rangle_{\natural}$ | The quaternionic form; the invariant bilinear form of the module |
 | $h(\tilde X,\tilde Y)=2\,\mathrm{Sc}(\tilde X^{*}\tilde Y)$ | The positive definite Hermitian form of a value; invariant on $SU(2)$ |
-| $[X\,\vert\,Y]=2\,\mathrm{Sc}(\tilde X^{*}\tilde W\tilde Y)$, $\tilde W=i\vec e_z$ | The indefinite Hermitian form of a value; invariant on the stabiliser of $\tilde W$, $SU(1,1)$ |
+| $[X\,\vert\,Y]=2\,\mathrm{Sc}(\tilde X^{*}\tilde U_{\mathrm{ax}}\tilde Y)$, $\tilde U_{\mathrm{ax}}=i\vec e_z$ | The indefinite Hermitian form of a value; invariant on the stabiliser of $\tilde U_{\mathrm{ax}}$, $SU(1,1)$ |
 | $\tfrac12(\tilde X\tilde Y^{*}+\tilde Y\tilde X^{*})$ | The map to $\mathbb{B}_{\Psi}$; the four-vector is $i$ times it |
 
 ## Further Reading

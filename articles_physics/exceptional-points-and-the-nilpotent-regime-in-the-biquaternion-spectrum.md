@@ -91,22 +91,22 @@ and in the nilpotent row the element has no logarithm at all, because it is not 
 The eigenvalue splitting near the point is the signature of the Jordan block. Take a linear family
 
 $$
-\tilde Q(\epsilon)=\tilde Q_0+\epsilon\tilde V,
+\tilde Q(\epsilon)=\tilde Q_0+\epsilon\tilde Q_1,
 \qquad
-B(\epsilon)^2=2\epsilon(\vec Q_0,\vec V)+\epsilon^2(\vec V,\vec V),
+B(\epsilon)^2=2\epsilon(\vec Q_0,\vec Q_1)+\epsilon^2(\vec Q_1,\vec Q_1),
 $$
 
-with $\tilde Q_0$ on the discriminant. For a generic direction $(\vec Q_0,\vec V)\neq0$,
+with $\tilde Q_0$ on the discriminant. For a generic direction $(\vec Q_0,\vec Q_1)\neq0$,
 
 $$
-\boxed{\;B(\epsilon)=\sqrt{2\epsilon(\vec Q_0,\vec V)}\left(1+O(\epsilon)\right),
+\boxed{\;B(\epsilon)=\sqrt{2\epsilon(\vec Q_0,\vec Q_1)}\left(1+O(\epsilon)\right),
 \qquad
 \lambda_\pm(\epsilon)=Q_t(\epsilon)\pm iB(\epsilon)\;}.
 $$
 
 The splitting is of order $\sqrt{\epsilon}$, not $\epsilon$. That is the defining behaviour of an exceptional point: a perturbation that is linear in the parameter produces a square-root response, because the two eigenvalues are the two branches of a square root. The sign of the branch is a choice, and the two branches meet at $\epsilon=0$.
 
-The square root is also the boundary of the reading. The formula is a statement about a chosen family and a chosen direction; the algebra supplies the normal form at the point, not the family. A different direction can give a different coefficient, and a direction with $(\vec Q_0,\vec V)=0$ gives a splitting of higher order. The $\sqrt{\epsilon}$ law is generic, not universal.
+The square root is also the boundary of the reading. The formula is a statement about a chosen family and a chosen direction; the algebra supplies the normal form at the point, not the family. A different direction can give a different coefficient, and a direction with $(\vec Q_0,\vec Q_1)=0$ gives a splitting of higher order. The $\sqrt{\epsilon}$ law is generic, not universal.
 
 ## Diabolic and Exceptional
 

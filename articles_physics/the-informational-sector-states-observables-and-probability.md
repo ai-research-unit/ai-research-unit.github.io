@@ -226,7 +226,7 @@ $$
 
 and its image is Hermitian, positive and normalised by $\langle\tilde{Ϛ}_{\Psi,\tilde Q},e_t\rangle_{*}=\tfrac12$, hence a point of the Bloch ball. The Cartan amplitude $\tilde R_\Psi=\sqrt{\tilde Q\tilde Q^{*}}$ is the unnormalised square root of the image, and the eigenvalues of $\tilde R_\Psi$ are the singular values of $\tilde Q$.
 
-Three properties fix the map. It is **right-invariant**, $(\tilde Q\tilde W)(\tilde Q\tilde W)^{*}=\tilde Q\tilde Q^{*}$ for $*$-unitary $\tilde W$, so the right $*$-unitary is a gauge fibre. It is **left-covariant**, $\tilde{Ϛ}_{\Psi,\tilde V\tilde Q}=\tilde V\tilde{Ϛ}_{\Psi,\tilde Q}\tilde V^{*}$, so a left $*$-unitary is a change of frame. And it is **stratified** by the rank of the operator:
+Three properties fix the map. It is **right-invariant**, $(\tilde Q\tilde U_{\mathrm{gau}})(\tilde Q\tilde U_{\mathrm{gau}})^{*}=\tilde Q\tilde Q^{*}$ for $*$-unitary $\tilde U_{\mathrm{gau}}$, so the right $*$-unitary is a gauge fibre. It is **left-covariant**, $\tilde{Ϛ}_{\Psi,\tilde U_{\mathrm{frm}}\tilde Q}=\tilde U_{\mathrm{frm}}\tilde{Ϛ}_{\Psi,\tilde Q}\tilde U_{\mathrm{frm}}^{*}$, so a left $*$-unitary is a change of frame. And it is **stratified** by the rank of the operator:
 
 | operator | singular values | image |
 | --- | --- | --- |

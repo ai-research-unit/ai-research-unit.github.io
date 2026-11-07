@@ -42,9 +42,9 @@ The map is defined for every nonzero element, including the zero divisors. It is
 
 Four elementary properties fix the map.
 
-- **Right invariance.** For $*$-unitary $\tilde W$, $\tilde Q\tilde W$ has the same image, because $(\tilde Q\tilde W)(\tilde Q\tilde W)^{*}=\tilde Q\tilde W\tilde W^{*}\tilde Q^{*}=\tilde Q\tilde Q^{*}$. The $*$-unitary right factor is the phase that the map forgets.
+- **Right invariance.** For $*$-unitary $\tilde U_{\mathrm{gau}}$, $\tilde Q\tilde U_{\mathrm{gau}}$ has the same image, because $(\tilde Q\tilde U_{\mathrm{gau}})(\tilde Q\tilde U_{\mathrm{gau}})^{*}=\tilde Q\tilde U_{\mathrm{gau}}\tilde U_{\mathrm{gau}}^{*}\tilde Q^{*}=\tilde Q\tilde Q^{*}$. The $*$-unitary right factor is the phase that the map forgets.
 - **Scale invariance.** For nonzero complex $\lambda$, $\lambda\tilde Q$ has the same image, because $(\lambda\tilde Q)(\lambda\tilde Q)^{*}=\lvert\lambda\rvert^{2}\tilde Q\tilde Q^{*}$ and the denominator carries the same factor. The overall scale is the second coordinate that the map forgets.
-- **Left covariance.** For $*$-unitary $\tilde V_{\Phi}$, the image of $\tilde V_{\Phi}\tilde Q$ is $\tilde V_{\Phi}\tilde{Ϛ}_{\Psi,Q}\tilde V_{\Phi}^{*}$. A left $*$-unitary is a change of frame, and it rotates the state rather than leaving it fixed.
+- **Left covariance.** For $*$-unitary $\tilde U_{\mathrm{frm}}$, the image of $\tilde U_{\mathrm{frm}}\tilde Q$ is $\tilde U_{\mathrm{frm}}\tilde{Ϛ}_{\Psi,Q}\tilde U_{\mathrm{frm}}^{*}$. A left $*$-unitary is a change of frame, and it rotates the state rather than leaving it fixed.
 - **Normalisation.** $\langle\tilde{Ϛ}_{\Psi,Q},e_t\rangle_{*}=\tfrac12$ and $\tilde{Ϛ}_{\Psi,Q}\ge0$, so the image is a state and not merely a positive element.
 
 The distinction between the two sides is the whole content of the general polar factorization. The right $*$-unitary and the scale are the fibre; the left $*$-unitary is the frame.
@@ -119,12 +119,12 @@ The identification of the cone with the pure states is exact and is the stronges
 Off the null cone the general polar factorization writes $\tilde Q=\tilde Q_H\tilde Q_0$ with $\tilde Q_0$ $*$-unitary, which is the Cartan pairing; on the cone $\tilde Q_0$ is a partial isometry. The map keeps the normalised amplitude $\tilde Q_{\mathrm n}=\tilde Q_H/\sqrt{2\langle\tilde Q_H,\tilde Q_H\rangle_{*}}$ and discards both $\tilde Q_0$ and the scale of $\tilde Q_H$. The fibre over a state is therefore
 
 $$
-\{c\,\tilde Q_{\mathrm n}\tilde W:\ c>0,\ \tilde W\ \text{}{}^{*}\text{-unitary}\},
+\{c\,\tilde Q_{\mathrm n}\tilde U_{\mathrm{gau}}:\ c>0,\ \tilde U_{\mathrm{gau}}\ \text{}{}^{*}\text{-unitary}\},
 $$
 
-off the cone, a $\mathrm{U}(2)$ torsor times a positive scale when $\tilde Q_{\mathrm n}>0$, and on the cone the same set with $\tilde W$ a partial isometry with the same final projection. The phase is not a gauge field and not a physical field: it is one coordinate along the fibre, and the scale is the other. Choosing a representative of each fibre is choosing a section of the map, and the factorization is the canonical section $\tilde Q_0=\tilde Q_H^{-1}\tilde Q$ when $\tilde Q_H$ is invertible.
+off the cone, a $\mathrm{U}(2)$ torsor times a positive scale when $\tilde Q_{\mathrm n}>0$, and on the cone the same set with $\tilde U_{\mathrm{gau}}$ a partial isometry with the same final projection. The phase is not a gauge field and not a physical field: it is one coordinate along the fibre, and the scale is the other. Choosing a representative of each fibre is choosing a section of the map, and the factorization is the canonical section $\tilde Q_0=\tilde Q_H^{-1}\tilde Q$ when $\tilde Q_H$ is invertible.
 
-This gives a clean statement of what a **gauge choice** is in this language. A gauge transformation acts on the right by a $*$-unitary, $\tilde Q\mapsto\tilde Q\tilde W$, and leaves the state fixed. A change of frame acts on the left by a $*$-unitary, $\tilde Q\mapsto\tilde V_{\Phi}\tilde Q$, and rotates the state. The two are not the same operation, and confusing them is the common error. Gauge freedom is the $*$-unitary part of the fibre; the scale is the other fibre coordinate; frame freedom is the base.
+This gives a clean statement of what a **gauge choice** is in this language. A gauge transformation acts on the right by a $*$-unitary, $\tilde Q\mapsto\tilde Q\tilde U_{\mathrm{gau}}$, and leaves the state fixed. A change of frame acts on the left by a $*$-unitary, $\tilde Q\mapsto\tilde U_{\mathrm{frm}}\tilde Q$, and rotates the state. The two are not the same operation, and confusing them is the common error. Gauge freedom is the $*$-unitary part of the fibre; the scale is the other fibre coordinate; frame freedom is the base.
 
 The fibre also shows why the map cannot be inverted. A state determines the normalised amplitude $\tilde Q_{\mathrm n}$ uniquely, because the positive square root is unique, but it determines neither $\tilde Q_0$ nor the scale of $\tilde Q_H$. Two operators whose singular values are proportional and whose $*$-unitary factors differ, or whose partial isometries on the cone differ, define the same state and the same normalised amplitude, with phases and scales that need not agree: the state is blind to the phase and to the overall scale.
 
@@ -162,7 +162,7 @@ The map is not an extra structure added to the theory; it is the common form of 
 |---|---|---|---|
 | measurement outcome | Kraus operator $\tilde M_{\mathrm{kraus},y}$ | $\tilde M_{\mathrm{kraus},y}\tilde{Ϛ}_{\Psi}\tilde M_{\mathrm{kraus},y}^{*}/p_y$ | [*The Polar Decomposition of a Kraus Operator: Effect, Backaction and the Measurement Boundary*](the-polar-decomposition-of-a-kraus-operator-effect-backaction-and-the-measurement-boundary.html) |
 | polarization | Jones matrix $\tilde J_{\Phi}$ | the normalized $\tilde J_{\Phi}\tilde J_{\Phi}^{*}$, the output coherency | [*Pancharatnam's Phase and the Polarization Sphere in Biquaternionic Form*](pancharatnams-phase-and-the-polarization-sphere-in-biquaternionic-form.html) |
-| scattering | S-matrix element $\tilde S$ | the normalized $\tilde S\tilde S^{*}$ | [*The S-Matrix in Biquaternionic Form*](the-s-matrix-in-biquaternionic-form.html) |
+| scattering | S-matrix element $\tilde{\mathcal S}_{\Psi}$ | the normalized $\tilde{\mathcal S}_{\Psi}\tilde{\mathcal S}_{\Psi}^{*}$ | [*The S-Matrix in Biquaternionic Form*](the-s-matrix-in-biquaternionic-form.html) |
 | field | field strength $\tilde F$ | the normalized $\tilde F\tilde F^{*}$; for a null field, an energy–momentum direction | [*The Field-Strength Biquaternion and Its Invariants*](the-field-strength-biquaternion-and-its-invariants.html) |
 
 In each row the map is the same and the physical name of the state is different. The measurement row adds a conditioning on the initial state; the polarization row reads the state as a coherency matrix; the scattering row reads it as the state produced by an interaction; the field row reads it as the field's state, which for a null field is an energy–momentum direction. The unity is algebraic, and the differences are in the interpretation of the operator.
