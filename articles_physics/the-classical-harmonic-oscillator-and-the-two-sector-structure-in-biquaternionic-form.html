@@ -70,7 +70,7 @@
       <div class="article-body">
         <h1 id="the-classical-harmonic-oscillator-and-the-two-sector-structure-in-biquaternionic-form"><strong>The Classical Harmonic Oscillator and the Two-Sector Structure in Biquaternionic Form</strong></h1>
 <h2 id="introduction">Introduction</h2>
-<p>The harmonic oscillator is the first system in this subcategory with a <strong>restoring force</strong>. The free particle of the companion article has a constant velocity and a straight worldline; the oscillator has an acceleration proportional to its displacement, $d^2(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)/d{r'_{t}}^2 = -\omega^2(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)$, so its motion is bounded and periodic and its trajectory closes. In the biquaternion framework it is the first system in which the <strong>two-sector structure</strong> of the algebra becomes visible in a classical mechanical quantity rather than in a formal classification.</p>
+<p>The harmonic oscillator is the first system in this subcategory with a <strong>restoring force</strong>. The free particle of the companion article has a constant velocity and a straight worldline; the oscillator has an acceleration proportional to its displacement, $d^2(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)/d{t'}^2 = -\omega^2(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)$, so its motion is bounded and periodic and its trajectory closes. In the biquaternion framework it is the first system in which the <strong>two-sector structure</strong> of the algebra becomes visible in a classical mechanical quantity rather than in a formal classification.</p>
 <p>The observation the article develops is the following. The state of a one-dimensional oscillator is a pair of conjugate real numbers, the displacement $x$ and the momentum $p$, or, in the normalization that makes the motion a rigid rotation, the complex amplitude</p>
 <p>$$
 \boxed{\;a = x + i\,\frac{p}{m\omega} \in \mathbb{C}\;}.
@@ -86,7 +86,7 @@ $$</p>
 <h3 id="the-equation-of-motion">The Equation of Motion</h3>
 <p>A particle of mass $m$ bound to the origin by the linear restoring force $\vec F = -k(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)$, with $k = m\omega^2$, obeys</p>
 <p>$$
-md^2(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)/d{r'_{t}}^2 = -m\omega^2(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z), \qquad \,d^2(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)/d{r'_{t}}^2 + \omega^2(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z) = 0 .
+md^2(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)/d{t'}^2 = -m\omega^2(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z), \qquad \,d^2(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)/d{t'}^2 + \omega^2(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z) = 0 .
 $$</p>
 <p>In the framework the worldline is the material-sector curve</p>
 <p>$$
@@ -108,9 +108,9 @@ $$</p>
 <h3 id="energy">Energy</h3>
 <p>The energy is the sum of the kinetic and elastic terms,</p>
 <p>$$
-E = \frac{1}{2}m\left(d\zeta/dr'_t\right)^{2} + \frac{1}{2}m\omega^2\zeta^2 ,
+E = \frac{1}{2}m\left(d\zeta/dt'\right)^{2} + \frac{1}{2}m\omega^2\zeta^2 ,
 $$</p>
-<p>and it is conserved, $dE/dr'_t = 0$, by the equation of motion. In the normalized variables $x = \zeta$ and $p = md\zeta/dr'_t$ it reads $E = p^2/(2m) + \tfrac12 m\omega^2x^2$, and in the amplitude normalization below it will take the compact form $\tfrac12 m\omega^2|a|^2$. The energy is a real scalar; its placement in the algebra is the subject of the section "Energy and the Hermitian Form".</p>
+<p>and it is conserved, $dE/dt' = 0$, by the equation of motion. With $t'=r'_t/c$ the derivative is against the time; in the normalized variables $x = \zeta$ and $p = md\zeta/dt'$ it reads $E = p^2/(2m) + \tfrac12 m\omega^2x^2$, and in the amplitude normalization below it will take the compact form $\tfrac12 m\omega^2|a|^2$. The energy is a real scalar; its placement in the algebra is the subject of the section "Energy and the Hermitian Form".</p>
 <h2 id="the-complex-amplitude-and-the-centre">The Complex Amplitude and the Centre</h2>
 <h3 id="the-amplitude">The Amplitude</h3>
 <p>Introduce the normalized momentum and the complex amplitude</p>
@@ -145,11 +145,11 @@ $$</p>
 <h3 id="the-solution-as-a-rotation-of-the-centre">The Solution as a Rotation of the Centre</h3>
 <p>The equation of motion in the amplitude variables is the pair</p>
 <p>$$
-dr_x/dr'_t = \omega\varpi, \qquad \,d\varpi/dr'_t = -\omega r_x ,
+dr_x/dt' = \omega\varpi, \qquad \,d\varpi/dt' = -\omega r_x ,
 $$</p>
 <p>which is equivalent to the single complex equation</p>
 <p>$$
-\boxed{\;\frac{d\tilde{A}_{\Phi}}{dr'_t} = -i\omega\,\tilde{A}_{\Phi}\;}.
+\boxed{\;\frac{d\tilde{A}_{\Phi}}{dt'} = -i\omega\,\tilde{A}_{\Phi}\;}.
 $$</p>
 <p>Its solution is the phase rotation</p>
 <p>$$
@@ -200,10 +200,10 @@ $$</p>
 <h2 id="the-flow-as-a-bracket-derivation">The Flow as a Bracket Derivation</h2>
 <p>The phase rotation can also be written as a Hamiltonian flow, and the exercise makes the sector roles precise. With the normalized momentum $\varpi = p/(m\omega)$ the canonical bracket is $\{x, \varpi\} = 1/(m\omega)$, inherited from $\{x,p\} = 1$, and the energy is $H = \tfrac12 m\omega^2(r_x^2 + \varpi^2)$. The equations of motion are the bracket equations</p>
 <p>$$
-dr_x/dr'_t = \{r_x, H\} = \frac{\partial H}{\partial p} = \omega\varpi, \qquad
-\,d\varpi/dr'_t = \{\varpi, H\} = -\frac{1}{m\omega}\frac{\partial H}{\partial r_x} = -\omega r_x ,
+dr_x/dt' = \{r_x, H\} = \frac{\partial H}{\partial p} = \omega\varpi, \qquad
+\,d\varpi/dt' = \{\varpi, H\} = -\frac{1}{m\omega}\frac{\partial H}{\partial r_x} = -\omega r_x ,
 $$</p>
-<p>which are the two real equations of the phase advance. Assembling them into the amplitude gives $d\tilde{A}_{\Phi}/dr'_t = -i\omega\tilde{A}_{\Phi}$ again.</p>
+<p>which are the two real equations of the phase advance. Assembling them into the amplitude gives $d\tilde{A}_{\Phi}/dt' = -i\omega\tilde{A}_{\Phi}$ again.</p>
 <p>The bracket shows how the sector split interacts with the flow. The energy is a central scalar and lies in the central part of $\mathbb{B}_{\Psi}$; the bracket with it is a derivation on the space of functions of the centre, and that derivation carries the real part of the amplitude into the imaginary part and back. The oscillator is thus the case in which the Hamiltonian derivation generated by an element of $\mathbb{B}_{\Psi}$ is the sector exchange on the centre — the classical, single-degree-of-freedom instance of the general relation between the bracket and the algebra discussed in the companion article <em>Similitudes Between the Poisson Bracket and the Quantum Commutator</em>. Nothing quantum is used: the bracket is the classical one, and the derivation is a derivation on classical functions, not a commutator with an operator.</p>
 <h3 id="numerical-checks">Numerical Checks</h3>
 <p>The structural claims of this section were verified by explicit computation with complex-coefficient quaternions. The Hermitian and anti-Hermitian parts of the central amplitude were computed and found to be $r_x\,e_t$ and $i(p/m\omega)e_t$ respectively; the phase rotation $a\mapsto \exp(-i\omega r'_t/c)a$ was found to reproduce the standard oscillator solution for the displacement and the momentum to twelve decimal places; the energy was found to equal $\tfrac12 m\omega^2|a|^2$ and to equal the scalar part of $\tilde{A}_{\Phi}\tilde{A}_{\Phi}^{*}$; and the biquaternion norm was found to be $a^2e_t$, indefinite. Separately, the commutator of two Hermitian biquaternions was computed and found to be the pure real quaternion $-2\,\vec r_\Psi\times\vec k$ with a vanishing scalar part, which is the fact that prevents the canonical commutator from being realized in $\mathbb{B}_{\Psi}$.</p>
@@ -211,16 +211,16 @@ $$</p>
 <p>The companion article on the quantum oscillator asks whether the complexification that defines $\mathbb{B}$ makes the material and informational sectors behave as two oscillators, and answers the question in the quantum setting. The classical case has a clean answer, and it is worth stating.</p>
 <p><strong>The classical oscillator is one oscillator, not two.</strong> The phase rotation is a single one-parameter group, with a single frequency $\omega$ and a single conserved energy. There is no second frequency and no independent second degree of freedom. The phase plane is two-real-dimensional, and it is exhausted by the two quadratures of the single amplitude.</p>
 <p><strong>The two sectors carry the two quadratures, not two modes.</strong> The $\mathbb{B}_{\Psi}$ and $\mathbb{B}_{\Phi}$ parts of $\tilde{A}_{\Phi}$ are $r_x\,e_t$ and $i\varpi\,e_t$; they are the real and imaginary parts of one complex number, coupled rigidly by the phase rotation. They are not independently excitable: setting one to zero at one time does not keep it zero, because the flow carries it into the other after a quarter period. The sector split of the centre is a <strong>direct-sum decomposition of the phase plane</strong>, and the dynamics is a rotation that does not respect it.</p>
-<p><strong>The two first-order equations are the sector pair.</strong> The equation of motion, written as $dr_x/dr'_t = \omega\varpi$ and $d\varpi/dr'_t = -\omega r_x$, is a pair of real equations, one for each sector component. The pair is coupled, and the coupling constant is the frequency. In this interpretation the two sectors do carry the two equations of motion, and the phase advance is the coupling. This is the most one can say: the sectors are the two quadratures, and the oscillator is the coupling between them.</p>
+<p><strong>The two first-order equations are the sector pair.</strong> The equation of motion, written as $dr_x/dt' = \omega\varpi$ and $d\varpi/dt' = -\omega r_x$, is a pair of real equations, one for each sector component. The pair is coupled, and the coupling constant is the frequency. In this interpretation the two sectors do carry the two equations of motion, and the phase advance is the coupling. This is the most one can say: the sectors are the two quadratures, and the oscillator is the coupling between them.</p>
 <p>A genuinely two-oscillator structure would require two independent complex amplitudes, hence a four-real-dimensional phase space and two frequencies. That is what a two-dimensional isotropic oscillator has, and it is not the structure of the centre. The centre is one complex dimension, and the two sectors are its real and imaginary axes.</p>
 <h2 id="summary">Summary</h2>
-<p>The classical harmonic oscillator in biquaternionic form has its trajectory, its restoring force and its energy in the material sector, and its phase structure in the centre. The trajectory is $\tilde R_\Phi = i r'_{t}\,e_t + r_x(r'_t)\,\vec e_x+r_y(r'_t)\,\vec e_y+r_z(r'_t)\,\vec e_z$ with $d^2(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)/d{r'_{t}}^2 = -\omega^2(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)$; the restoring force $\vec F = -m\omega^2(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)$ is a real vector in $\mathbb{B}_{\Phi}$ and is central about the origin.</p>
+<p>The classical harmonic oscillator in biquaternionic form has its trajectory, its restoring force and its energy in the material sector, and its phase structure in the centre. The trajectory is $\tilde R_\Phi = i r'_{t}\,e_t + r_x(r'_t)\,\vec e_x+r_y(r'_t)\,\vec e_y+r_z(r'_t)\,\vec e_z$ with $d^2(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)/d{t'}^2 = -\omega^2(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)$; the restoring force $\vec F = -m\omega^2(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)$ is a real vector in $\mathbb{B}_{\Phi}$ and is central about the origin.</p>
 <p>The complex amplitude $a = x + ip/(m\omega)$ embeds in the algebra as the central element</p>
 <p>$$
 \tilde{A}_{\Phi} = a\,e_t = \underbrace{x\,e_t}_{\in \mathbb{B}_{\Psi}} + \underbrace{i\,\frac{p}{m\omega}\,e_t}_{\in \mathbb{B}_{\Phi}},
 $$</p>
 <p>so that the two conjugate quadratures occupy the two sectors, along the two real directions of the centre $\mathbb{B}_{C} = \operatorname{span}_\mathbb{R}\{e_t, ie_t\}$. The assignment of which quadrature occupies which sector is a phase convention; the fact that they occupy different sectors is not.</p>
-<p>The equation of motion is $d\tilde{A}_{\Phi}/dr'_t = -i\omega\tilde{A}_{\Phi}$, whose solution is the phase rotation $\tilde{A}_{\Phi}(r'_t) = \exp(-i\omega r'_t/c)\tilde{A}_{\Phi}(0)$. The generator $-i\omega\,e_t$ lies in $\mathbb{B}_{\Phi}$ along the timelike direction $ie_t$, and the rotation it generates is the <strong>sector exchange restricted to the centre</strong>: the $\mathbb{B}_{\Psi}$ quadrature is carried into the $\mathbb{B}_{\Phi}$ quadrature and back. The oscillator is therefore the system in which the sector exchange is a classical mechanical motion.</p>
+<p>The equation of motion is $d\tilde{A}_{\Phi}/dt' = -i\omega\tilde{A}_{\Phi}$, whose solution is the phase rotation $\tilde{A}_{\Phi}(r'_t) = \exp(-i\omega r'_t/c)\tilde{A}_{\Phi}(0)$. The generator $-i\omega\,e_t$ lies in $\mathbb{B}_{\Phi}$ along the timelike direction $ie_t$, and the rotation it generates is the <strong>sector exchange restricted to the centre</strong>: the $\mathbb{B}_{\Psi}$ quadrature is carried into the $\mathbb{B}_{\Phi}$ quadrature and back. The oscillator is therefore the system in which the sector exchange is a classical mechanical motion.</p>
 <p>The energy is the Hermitian form,</p>
 <p>$$
 E = \frac{1}{2}m\omega^2|a|^2 = \frac{1}{2}m\omega^2\,\mathrm{Sc}\!\left(\tilde{A}_{\Phi}\tilde{A}_{\Phi}^{*}\right),
@@ -296,7 +296,7 @@ $$</p>
 <td>Sector components: $r_x\,e_t$ and $i\varpi\,e_t$</td>
 </tr>
 <tr>
-<td>$d\tilde{A}_{\Phi}/dr'_t = -i\omega\tilde{A}_{\Phi}$</td>
+<td>$d\tilde{A}_{\Phi}/dt' = -i\omega\tilde{A}_{\Phi}$</td>
 <td>Amplitude equation; generator $-i\omega\,e_t \in \mathbb{B}_{\Phi}$</td>
 </tr>
 <tr>

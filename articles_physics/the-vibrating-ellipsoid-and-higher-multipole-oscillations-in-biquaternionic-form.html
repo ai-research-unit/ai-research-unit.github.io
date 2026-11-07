@@ -100,9 +100,9 @@ $$</p>
 $$</p>
 <p>so the rotors form a group, and the map is two-to-one: $\tilde U(\theta + 2\pi,\vec u) = -\tilde U(\theta,\vec u)$, with $+2\pi$ and $4\pi$ giving respectively $-e_t$ and $+e_t$. This has been checked directly. The two rotors $\pm\tilde U$ produce the <strong>same</strong> rotation of vectors, which is the familiar two-sheeted cover of the rotation group by its spin group.</p>
 <h3 id="angular-velocity">Angular Velocity</h3>
-<p>Let the axis be fixed and the angle vary, $\theta = \theta(r'_t)$, and write $\vec\omega = d\theta/dr'_t\,\vec u$ for the angular velocity as a real pure quaternion. Differentiating the rotor gives the kinematic identity</p>
+<p>Let the axis be fixed and the angle vary, $\theta = \theta(r'_t)$, and write $\vec\omega = d\theta/dt'\,\vec u$ for the angular velocity as a real pure quaternion. Differentiating the rotor gives the kinematic identity</p>
 <p>$$
-d\tilde U/dr'_t = \tfrac12\,\tilde U\,\vec\omega .
+d\tilde U/dt' = \tfrac12\,\tilde U\,\vec\omega .
 $$</p>
 <p>This has been verified numerically: for $\theta(r'_t)$ increasing at rate $\omega$ about $\vec e_z$, the central difference $(\tilde U(r'_t+\delta)-\tilde U(r'_t-\delta))/(2\delta)$ equals $\frac12\tilde U\vec\omega$ to $10^{-8}$ at a step $\delta = 10^{-4}$, the residual falling with $\delta^2$ as a central difference must. For a general rotation the axis may itself move, and the identity is then the body-frame version of the angular-velocity relation; the vector $\vec\omega$ lies in the vector part, as the angular velocity of a rigid body must.</p>
 <h3 id="rotation-of-a-rank-two-tensor">Rotation of a Rank-Two Tensor</h3>
@@ -130,9 +130,9 @@ $$</p>
 <h3 id="normal-mode-dynamics">Normal-Mode Dynamics</h3>
 <p>For small amplitudes each mode decouples, and each amplitude obeys a harmonic-oscillator equation,</p>
 <p>$$
-\left(d^2a_{lm}/d{r'_{t}}^2\right)(r'_t) + \omega_l^2\,a_{lm}(r'_t) = 0 ,
+\left(d^2a_{lm}/d{t'}^2\right)(r'_t) + \omega_l^2\,a_{lm}(r'_t) = 0 ,
 $$</p>
-<p>with a frequency $\omega_l$ that depends on the order $l$ and on the body's constitution. For the <strong>spherical</strong> equilibrium the frequency is independent of the azimuthal index $m$, so the $2l+1$ modes of order $l$ are degenerate and the solution is $a_{lm}(r'_t) = A_{lm}\cos(\omega_l r'_t/c + \theta_{\mathrm{pha},lm})$; a non-spherical equilibrium lifts that degeneracy, and the frequency then acquires an $m$-dependence of order the ellipticity. That splitting is the mechanism the rotating-ellipsoid section below makes use of.</p>
+<p>with $t'=r'_t/c$, a frequency $\omega_l$ that depends on the order $l$ and on the body's constitution. For the <strong>spherical</strong> equilibrium the frequency is independent of the azimuthal index $m$, so the $2l+1$ modes of order $l$ are degenerate and the solution is $a_{lm}(r'_t) = A_{lm}\cos(\omega_l r'_t/c + \theta_{\mathrm{pha},lm})$; a non-spherical equilibrium lifts that degeneracy, and the frequency then acquires an $m$-dependence of order the ellipticity. That splitting is the mechanism the rotating-ellipsoid section below makes use of.</p>
 <p>The classic and exactly solvable case is <strong>Rayleigh's vibrating liquid drop</strong>, for which the restoring force is surface tension. The frequency of the $l$-th mode is the standard result</p>
 <p>$$
 \boxed{\;\omega_l^2 = \frac{\sigma}{\rho_m R_0^3}\,l(l-1)(l+2)\;},
@@ -177,7 +177,7 @@ $$</p>
 \mathrm{Sd}_{ij} = ϙ_p\left(3d_ia_j + 3d_ja_i - 2(\vec d\cdot\vec a)\,\delta_{ij}\right),
 $$</p>
 <p>verified for random $\vec a, \vec d$ with residuals below $10^{-13}$ and vanishing trace. The quadrupole is thus built from <strong>products of two vectors</strong>, $d_i a_j + d_j a_i$; the symmetric traceless part of such a product is exactly what the quaternion product of two vectors discards. Each individual dipole is a vector and an algebra element, and the quadrupole is a bilinear object over that same vector part, living in $\operatorname{sym}^2_0(D^{(1)})\cong D^{(2)}$ rather than in $\mathbb{B}$. The two-dipole picture is the physical face of the algebraic statement of the preceding article: the algebra can hold each of the two dipoles separately, and it cannot hold the quadrupole that their product forms. Whether the pole strength $ϙ_p$ is a charge, as in the electromagnetic setting of the preceding article, or a mass, as in the gravitational setting used here, is immaterial to the decomposition, since only the kernel enters it.</p>
-<h2 id="the-rotating-ellipsoid-and-the-math178-oscillation">The Rotating Ellipsoid and the $2\Omega$ Oscillation</h2>
+<h2 id="the-rotating-ellipsoid-and-the-math179-oscillation">The Rotating Ellipsoid and the $2\Omega$ Oscillation</h2>
 <h3 id="body-frame-and-lab-frame">Body Frame and Lab Frame</h3>
 <p>A rotating non-axisymmetric body is a second and distinct source of an oscillating quadrupole. Let the body frame carry the constant quadrupole $\mathcal{Q}^{(b)} = \mathrm{diag}(\lambda_1, \lambda_2, \lambda_3)$ with $\lambda_1+\lambda_2+\lambda_3 = 0$, and let the body rotate about the $\vec e_z$ axis with constant angular speed $\Omega$. The lab-frame moment is the rotor conjugate,</p>
 <p>$$
@@ -185,7 +185,7 @@ $$</p>
 \qquad
 \tilde U(r'_t) = \cos\frac{\Omega r'_t}{2} + \sin\frac{\Omega r'_t}{2}\,\vec e_z .
 $$</p>
-<h3 id="the-math184-frequency">The $2\Omega$ Frequency</h3>
+<h3 id="the-math185-frequency">The $2\Omega$ Frequency</h3>
 <p>Carrying out the rotation about $\vec e_z$ gives, with the rotation matrix $R = R_3(\Omega r'_t/c)$ and $\mathcal{Q}^{(lab)} = R\mathcal{Q}^{(b)}R^{\mathsf{T}}$,</p>
 <p>$$
 \begin{aligned}
@@ -228,9 +228,9 @@ $$</p>
 <p>obtained from $\vec\nabla\vec v = \sum_{\mu,\nu}\vec e_\mu \vec e_\nu\,\partial/\partial R_\mu\,v_\nu$: only the terms with $\mu = \nu$ contribute to the centre, and $\vec e_k^2 = -e_t$. The divergence-free condition is therefore the vanishing of the central part of $\vec\nabla\vec v$, a scalar statement, while the remainder of $\vec\nabla\vec v$ is the curl, a vector. The gradient of a vector thus splits into its $D^{(0)}$ and $D^{(1)}$ pieces, exactly the two representations the algebra carries:
 - Companion article <em>Similitudes Between the Poisson Bracket and the Quantum Commutator</em>, for the vector-part algebra and the commutator $[\tilde{Q}_1,\tilde{Q}_2] = -2(\vec Q_1\times\vec Q_2)$ used in these manipulations.</p>
 <h3 id="the-energy-of-a-mode">The Energy of a Mode</h3>
-<p>For small oscillations the energy of a mode is the sum of a kinetic term and a potential term, each quadratic in the amplitude. For a surface-tension drop of density $\rho_m$ and equilibrium radius $R_0$, the potential energy of an $l$-th mode of amplitude $a_l$ is proportional to the change in surface area, and the kinetic energy is proportional to $\rho_m R_0^5\left(da_{l}/dr'_t\right)^{2}$. Writing $E = \frac12 M_l\left(da_{l}/dr'_t\right)^{2} + \frac12 K_l a_l^2$ and identifying the frequency from $\omega_l^2 = K_l/M_l$ gives the Rayleigh value quoted above; the coefficients $M_l$ and $K_l$ follow from the standard surface-area and kinetic-energy integrals of an incompressible mode, and their ratio is the standard result. Each mode is then an independent harmonic oscillator, and the total energy is the sum over the tower,</p>
+<p>For small oscillations the energy of a mode is the sum of a kinetic term and a potential term, each quadratic in the amplitude. For a surface-tension drop of density $\rho_m$ and equilibrium radius $R_0$, the potential energy of an $l$-th mode of amplitude $a_l$ is proportional to the change in surface area, and the kinetic energy is proportional to $\rho_m R_0^5\left(da_{l}/dt'\right)^{2}$. Writing $E = \frac12 M_l\left(da_{l}/dt'\right)^{2} + \frac12 K_l a_l^2$ and identifying the frequency from $\omega_l^2 = K_l/M_l$ gives the Rayleigh value quoted above; the coefficients $M_l$ and $K_l$ follow from the standard surface-area and kinetic-energy integrals of an incompressible mode, and their ratio is the standard result. Each mode is then an independent harmonic oscillator, and the total energy is the sum over the tower,</p>
 <p>$$
-E = \sum_{l=2}^{\infty}\sum_{m=-l}^{l}\tfrac12\left(M_l\,\left(da_{lm}/dr'_t\right)^{2} + K_l\,a_{lm}^2\right),
+E = \sum_{l=2}^{\infty}\sum_{m=-l}^{l}\tfrac12\left(M_l\,\left(da_{lm}/dt'\right)^{2} + K_l\,a_{lm}^2\right),
 $$</p>
 <p>the $l = 0$ and $l = 1$ terms being omitted for a body that conserves volume and does not translate. The number of oscillators at order $l$ is $2l+1$: the energy sum runs over the same infinite tower as the multipole series, one harmonic oscillator for each independent multipole component.</p>
 <h3 id="the-locus-of-the-tower">The Locus of the Tower</h3>
@@ -300,11 +300,11 @@ $$</p>
 <td>Rotation matrix in $SO(3)$, the image of $\tilde U$ (distinct from the radius $R_0$)</td>
 </tr>
 <tr>
-<td>$\vec\omega = d\theta/dr'_t\,\vec u$</td>
+<td>$\vec\omega = d\theta/dt'\,\vec u$</td>
 <td>Angular velocity (body-frame vector)</td>
 </tr>
 <tr>
-<td>$d\tilde U/dr'_t = \tfrac12\tilde U\vec\omega$</td>
+<td>$d\tilde U/dt' = \tfrac12\tilde U\vec\omega$</td>
 <td>Rotor kinematic identity</td>
 </tr>
 <tr>
