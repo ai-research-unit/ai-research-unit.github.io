@@ -241,7 +241,7 @@ with the Bessel term restricted to the interior of the cone by $\mathrm{H}_{\mat
 
 Three checks were carried out on this closed form.
 
-1. **Massless limit.** As $k_m\to0$ the Bessel term vanishes and only $\frac{\mathrm{H}_{\mathrm{hvs}}(r'_t)}{2\pi}\delta(r_x^2)$ remains. Converting the invariant delta to a radial delta by the light-cone Jacobian below gives $\frac{1}{4\pi r}\delta(r'_t-r)$, which is exactly the retarded kernel $\frac{1}{4\pi R}\delta(r'_t-R)$ of the electromagnetism exercise at $c=1$. The limit was verified numerically for $k_m=10^{-3}$.
+1. **Massless limit.** As $k_m\to0$ the Bessel term vanishes and only $\frac{\mathrm{H}_{\mathrm{hvs}}(r'_t)}{2\pi}\delta(r_x^2)$ remains. Converting the invariant delta to a radial delta by the light-cone Jacobian below gives $\frac{1}{4\pi r}\delta(r'_t-r)$, which is exactly the retarded kernel $\frac{1}{4\pi R}\delta(r'_t-R)$ of the electromagnetism exercise, in the same time coordinate $r'_t$. The limit was verified numerically for $k_m=10^{-3}$.
 2. **The homogeneous equation.** Inside the cone the Bessel form must satisfy $(\Box-k_m^{2})G_{\mathrm{rgs},R}=0$, because the only source is at the origin. Evaluating the radial d'Alembertian $-\partial^2/\partial {r'_{t}}^2+\partial^2/\partial r^2+\frac{2}{r}\partial/\partial r-k_m^{2}$ by finite differences at six random interior points with $r'_t\in[2.5,4]$, $r/r'_t\in[0.2,0.85]$ and $k_m\in[0.4,1.5]$, the greatest residual was $1.1\times 10^{-9}$, against an amplitude of order $10^{-2}$.
 3. **The Bessel function.** The series evaluation of $J_1$ reproduces the reference values $J_1(1)=0.4400505857$ and $J_1(2)=0.5767248078$ to ten digits, so the Bessel factor in the kernel is not a source of error.
 
@@ -261,7 +261,7 @@ $$
 \frac{1}{2\pi}\delta(r_x^2)=\frac{1}{4\pi r}\delta(r'_t-r).
 $$
 
-The coefficient was checked numerically to twelve digits, and it is the c-explicit exercise's Jacobian with $c=1$. This is the step at which a derivation of the retarded kernel most often goes wrong: dropping the factor $2r$ gives a kernel whose coefficient has the wrong power of $r$, and the kernel then fails to reduce to the Newton kernel in the static limit. The invariant form and the radial form are used interchangeably below.
+The coefficient was checked numerically to twelve digits, and it is the Jacobian of the c-explicit electromagnetism exercise, read in the same coordinate $r'_t$. This is the step at which a derivation of the retarded kernel most often goes wrong: dropping the factor $2r$ gives a kernel whose coefficient has the wrong power of $r$, and the kernel then fails to reduce to the Newton kernel in the static limit. The invariant form and the radial form are used interchangeably below.
 
 ## The Advanced Kernel and the Boundary Condition
 

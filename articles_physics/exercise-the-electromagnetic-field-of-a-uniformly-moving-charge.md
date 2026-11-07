@@ -75,7 +75,7 @@ The parent gives the velocity field in terms of the retarded separation $\vec R$
 4. fix the boost-rotor convention and confirm the closed form as the boosted Coulomb field;
 5. quantify the present-position fallacy and evaluate the field invariants.
 
-The numerical checks quoted below were performed under `/home/hp/.venvs/verify/bin/python` on constant-velocity worldlines, with the retarded time obtained independently by Newton iteration on $r'_{\mathrm{ret},t} = r'_t - R/c$ (the iteration uses $\partial r'_{\mathrm{ret},t}/\partial r'_t = 1/\kappa$, so it agrees with the closed form only if the closed form is right). All reported discrepancies are componentwise maxima in units with $4\pi\epsilon = 1$ unless stated otherwise.
+The numerical checks quoted below were performed under `/home/hp/.venvs/verify/bin/python` on constant-velocity worldlines, with the retarded time obtained independently by Newton iteration on $r'_{\mathrm{ret},t} = r'_t - R/c$ (the iteration uses $\partial r'_{\mathrm{ret},t}/\partial r'_t = 1/\kappa$, so it agrees with the closed form only if the closed form is right). All reported discrepancies are componentwise maxima at $\epsilon_r=1$, in units of the Coulomb field of the charge at the same separation, unless stated otherwise.
 
 ## Problem 1: The Retarded Position in Closed Form
 

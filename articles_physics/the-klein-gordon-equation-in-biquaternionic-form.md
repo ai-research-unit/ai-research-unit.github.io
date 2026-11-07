@@ -281,7 +281,7 @@ $$
 \partial^2/\partial {r'_{t}}^2\tilde{Ξ}_{\mathrm{sp}} - \dfrac{2i\,k_m}{c}\partial/\partial r'_t\tilde{Ξ}_{\mathrm{sp}} - \Delta\tilde{Ξ}_{\mathrm{sp}} = 0 ,
 $$
 
-in which the two mass terms have cancelled exactly. Dropping the term $\partial^2/\partial {r'_{t}}^2\tilde{Ξ}_{\mathrm{sp}}/c^2$, which is small when the field varies slowly on the time scale $1/k_m/c$, leaves
+in which the two mass terms have cancelled exactly. Dropping the term $\partial^2/\partial {r'_{t}}^2\tilde{Ξ}_{\mathrm{sp}}/c^2$, which is small when the field varies slowly on the time scale $1/(k_m\,c)$, leaves
 
 $$\frac{m\,c\,i}{k_m}\partial/\partial r'_t\tilde{Ξ}_{\mathrm{sp}} = -\frac{m\,c^{2}}{2\,k_m^{2}}\Delta\tilde{Ξ}_{\mathrm{sp}},
 $$

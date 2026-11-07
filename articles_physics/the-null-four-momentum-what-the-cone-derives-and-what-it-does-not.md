@@ -101,9 +101,9 @@ $$
 \frac{v}{c} = \frac{|\vec p|c}{\sqrt{\vec p^2c^2+m^2c^4}} .
 $$
 
-At $m=0$ the expression is exactly $1$ for every $|\vec p|$, with no limiting procedure: the null shell is $E=c|\vec p|$ at every momentum, so the speed is $c$ at every momentum. For $m>0$ the speed increases monotonically towards $c$ as $m\to0$ but never reaches it, as the table shows with $c=1$, $|\vec p|=1$.
+At $m=0$ the expression is exactly $1$ for every $|\vec p|$, with no limiting procedure: the null shell is $E=c|\vec p|$ at every momentum, so the speed is $c$ at every momentum. For $m>0$ the speed increases monotonically towards $c$ as $m\to0$ but never reaches it, as the table shows at fixed $|\vec p|$ with $m\,c/|\vec p|$ the ratio that varies.
 
-| $m$ | $E$ | $v/c$ | $\langle\tilde{P}_{\Phi}\rangle_{\natural}$ |
+| $m\,c/|\vec p|$ | $E/(|\vec p|c)$ | $v/c$ | $\langle\tilde{P}_{\Phi}\rangle_{\natural}/|\vec p|^{2}$ |
 |---|---|---|---|
 | $1$ | $1.414214$ | $0.707107$ | $-1.000000$ |
 | $0.5$ | $1.118034$ | $0.894427$ | $-0.250000$ |

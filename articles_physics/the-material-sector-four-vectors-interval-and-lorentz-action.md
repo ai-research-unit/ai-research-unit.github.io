@@ -249,7 +249,7 @@ The action preserves the norm when the acting element has unit norm, and then it
 
 ## Examples
 
-**A four-position.** Take $c=1$, $r'_t=1$, $x=3$, $y=z=0$. Then $\tilde Q=i e_t+3\vec e_x$ and $\langle\tilde Q\rangle_{\natural}=-1+9=8$, a spacelike interval.
+**A four-position.** Take $r'_t=1\,\mathrm{m}$, $x=3\,\mathrm{m}$, $y=z=0$. Then $\tilde Q=i\,e_t+3\,\vec e_x$, the coefficients in metres, and $\langle\tilde Q\rangle_{\natural}=-1+9=8\ \mathrm{m^{2}}$, a spacelike interval.
 
 **A light ray.** Take $\tilde Q=i e_t+\vec e_x$. Then $\langle\tilde Q\rangle_{\natural}=-1+1=0$: the element is null and a zero divisor. The ray travels along $x$ at the speed of light.
 

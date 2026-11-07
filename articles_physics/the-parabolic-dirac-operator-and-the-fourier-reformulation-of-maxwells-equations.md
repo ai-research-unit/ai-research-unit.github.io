@@ -52,7 +52,7 @@ $$
 \Box = \tilde{\nabla}\tilde{\nabla}^{\natural} = \tilde{\nabla}^{\natural}\tilde{\nabla} = \partial^2/\partial R_t^2 + \Delta
 $$
 
-(*Biquaternion Analysis*, *The d'Alembertian*). With $c = 1$ one has $\partial/\partial R_t = -i\partial/\partial r'_t$, hence
+(*Biquaternion Analysis*, *The d'Alembertian*). On the material sector $\partial/\partial R_t = -i\partial/\partial r'_t$ is a change of coordinate and not a choice of units, hence
 
 $$
 \tilde{\nabla} = D - i\partial/\partial r'_t, \qquad -\tilde{\nabla}^{\natural} = D + i\partial/\partial r'_t,
@@ -214,7 +214,7 @@ so the scalar part of $L_{\mathcal{C}}R_{\pm}[\mp i w]$ solves the homogeneous w
 
 ### Maxwell's Equations and the Single Biquaternionic Equation
 
-The source takes Maxwell's equations in **Gaussian units** with $c = 1$,
+The source takes Maxwell's equations in **Gaussian units**; its time is read here as the corpus's $r'_t=c\,t'$, which is why the curls carry $\partial/\partial r'_t$ and no factor $1/c$,
 
 $$
 \mathrm{div}\,\vec{E} = 4\pi\rho, \qquad
@@ -231,7 +231,7 @@ $$
 \tag{13}
 $$
 
-This is the corpus's single equation, and the identification is exact. The corpus's field-strength biquaternion is $\tilde{F} = i\sqrt{\epsilon}\,\vec E - \sqrt{\mu}\,\vec H$, which in vacuum with $c = 1$ reads $\tilde{F} = i\vec E - \vec B = i(\vec E + i\vec B)$; the corpus's dual field strength is $-i\tilde{F} = \vec E + i\vec B$ (*Maxwell's Equations in the Biquaternionic Formulation*, Summary of Notation), so the source's $\vec{\xi}$ is the corpus's dual field strength. With $\tilde{\nabla} = D - i\partial/\partial r'_t$ and $\sqrt{\mu}\,\tilde{J}_{\Phi} = i\rho + \vec{\jmath}$ in vacuum, the corpus's equation $\tilde{\nabla}\tilde{F} = -\sqrt{\mu}\,\tilde{J}_{\Phi}$ becomes
+This is the corpus's single equation, and the identification is exact. The corpus's field-strength biquaternion is $\tilde{F} = i\sqrt{\epsilon}\,\vec E - \sqrt{\mu}\,\vec H$, which in vacuum is $\tilde{F} = i\sqrt{\epsilon_0}\,\vec E - \sqrt{\mu_0}\,\vec H$; with the magnetic field quoted in units of $\vec E/c$, a change of unit for one quantity and not a setting of $c$, it reads $\tilde{F} = \sqrt{\epsilon_0}\,(i\vec E - \vec B) = i\sqrt{\epsilon_0}\,(\vec E + i\vec B)$. The corpus's dual field strength (*Maxwell's Equations in the Biquaternionic Formulation*, Summary of Notation) is therefore $-i\tilde{F} = \sqrt{\epsilon_0}\,(\vec E + i\vec B)$, so the source's $\vec{\xi}$ is the corpus's dual field strength up to the constant $\sqrt{\epsilon_0}$, which drops out of the comparison of (13) and (14). With $\tilde{\nabla} = D - i\partial/\partial r'_t$ and $\sqrt{\mu}\,\tilde{J}_{\Phi} = i\rho + \vec{\jmath}$ in vacuum, the corpus's equation $\tilde{\nabla}\tilde{F} = -\sqrt{\mu}\,\tilde{J}_{\Phi}$ becomes
 
 $$
 -i\,\tilde{\nabla}\tilde F = -(\rho - i\vec{\jmath}), \qquad \text{that is} \qquad (D - i\partial/\partial r'_t)\tilde F = -i(\rho - i\vec{\jmath}).
@@ -297,7 +297,7 @@ The source's wave-operator factorisation $-\Delta + \partial^2/\partial {r'_{t}}
 | $\mathbb{B}$ | Biquaternion algebra |
 | $\Omega$, $\mathcal{C} = \Omega \times (0,\infty)$ | Bounded spatial domain and the space-time domain of the source |
 | $D = \vec e_x\partial/\partial R_x + \vec e_y\partial/\partial R_y + \vec e_z\partial/\partial R_z$ | Moisil–Teodorescu operator (the source's); the corpus's spatial part $\vec{\nabla}$ of $\tilde{\nabla}$ |
-| $D \pm i\partial/\partial r'_t$ | The parabolic Dirac operators of the source; $D - i\partial/\partial r'_t = \tilde{\nabla}$ and $D + i\partial/\partial r'_t = -\tilde{\nabla}^{\natural}$ at $c = 1$ |
+| $D \pm i\partial/\partial r'_t$ | The parabolic Dirac operators of the source; $D - i\partial/\partial r'_t = \tilde{\nabla}$ and $D + i\partial/\partial r'_t = -\tilde{\nabla}^{\natural}$, a sector identity that carries no $c$ |
 | $\Delta = \partial^2/\partial R_x^2 + \partial^2/\partial R_y^2 + \partial^2/\partial R_z^2$ | Three-dimensional Laplacian; $D^2 = -\Delta e_t$ |
 | $\nabla, \mathrm{div}, \mathrm{rot}$ | Gradient, divergence, curl; $\mathrm{rot}$ is the source's $\mathrm{curl}$ |
 | $w = g + iv = (g_0 + \vec q) + i(b_0 + \vec{b})$ | Biquaternion-valued function, split into real and imaginary quaternion parts, each scalar plus vector |

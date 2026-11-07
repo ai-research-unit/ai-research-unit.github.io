@@ -274,7 +274,7 @@ and the **maximum** is $\Theta = \pi$. For $\gamma \gg 1$, $\Theta_{\min} \appro
 
 **Statement.** Evaluate the two-body formulas for $K^+ \to \pi^+ \pi^0$, and for the limits $\pi^0 \to \gamma\gamma$ (two massless daughters) and $\pi^+ \to \mu^+ \nu_\mu$ (one massless daughter). Compare with the non-relativistic approximation.
 
-**Solution.** We use the standard masses $m_{K^+} = 493.677$, $m_{\pi^+} = 139.57039$, $m_{\pi^0} = 134.9768$, $m_\mu = 105.6583755$ MeV$/c^2$, and set $c = 1$ so that energies are in MeV.
+**Solution.** We use the standard masses $m_{K^+} = 493.677$, $m_{\pi^+} = 139.57039$, $m_{\pi^0} = 134.9768$, $m_\mu = 105.6583755$ MeV$/c^2$, and quote energies in MeV and momenta in MeV$/c$, the units every display below carries.
 
 For $K^+ \to \pi^+\pi^0$, with $M = m_{K^+}$, $m_1 = m_{\pi^+}$, $m_2 = m_{\pi^0}$:
 $$

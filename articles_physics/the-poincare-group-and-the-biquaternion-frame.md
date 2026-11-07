@@ -135,7 +135,7 @@ and these agree only when $\tilde{R}_{\Phi,0}$ is fixed by $\mathrm{Ad}(\tilde U
 
 ## A Composition Checked Directly
 
-The group law is verified here on a case chosen for the check, not on a case from which the law was read off. Take $c=1$ and the two transformations
+The group law is verified here on a case chosen for the check, not on a case from which the law was read off. Take the two transformations
 $$
 g_1=(\tilde u_{\mathrm r},\tilde{R}_{\Phi,0,1}),\qquad g_2=(\tilde U_{\Psi,\mathrm b},\tilde{R}_{\Phi,0,2}),
 $$

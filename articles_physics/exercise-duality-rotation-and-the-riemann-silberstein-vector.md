@@ -148,7 +148,7 @@ W_{\mathrm D} = \tfrac12\left(\epsilon\vec E_{\mathrm D}^2 + \mu\vec H_{\mathrm 
 $$
 Duality rotates the field into a different electric–magnetic split but does not change its energy density or its energy flow.
 
-**Solution (d).** *Generic field.* Take $\epsilon = \mu = 1$, so $c = 1$, and
+**Solution (d).** *Generic field.* Take the vacuum, $\epsilon_r=\mu_r=1$ with $\epsilon_0$ and $\mu_0$ carried, and quote the magnetic field in units of $\vec E/c$, the permitted change of unit for one quantity; then
 $$
 \vec E = (3,0,0), \qquad \vec B = (0,4,0), \qquad \theta = \frac{\pi}{4}.
 $$
@@ -287,7 +287,7 @@ $$
 \tilde U = \cosh\frac{\theta_{\mathrm{rpd}}}{2} + i\sinh\frac{\theta_{\mathrm{rpd}}}{2}\,\vec e_z,
 \qquad \tanh\theta_{\mathrm{rpd}} = \frac{v_b}{c},
 $$
-which is Hermitian, $\tilde U^{*} = \tilde U$. For simplicity set $\epsilon = \mu = 1$, so $c = 1$ and $\vec H = \vec B$, and take the same transverse electric field $\vec E = E_0 \vec e_x$, $\vec B = 0$, so $\tilde F = iE_0 \vec e_x$. The standard boost formulas of the parent give
+which is Hermitian, $\tilde U^{*} = \tilde U$. For simplicity take the vacuum with $\epsilon_r=\mu_r=1$ and quote the magnetic field in units of $\vec E/c$, so that $\vec H$ and $\vec B$ are one array; take the same transverse electric field $\vec E = E_0 \vec e_x$, $\vec B = 0$, so $\tilde F = iE_0 \vec e_x$. The standard boost formulas of the parent give
 $$
 \vec E_{\mathrm D} = \gamma\left(\vec E + \vec v_b\times\vec B\right) - \frac{\gamma-1}{v_b^2}\left(\vec v_b\cdot\vec E\right)\vec v_b
 = \cosh\theta_{\mathrm{rpd}}\,E_0\,\vec e_x,

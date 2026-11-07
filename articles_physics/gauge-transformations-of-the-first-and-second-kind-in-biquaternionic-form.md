@@ -98,7 +98,7 @@ $$
 \vec N\mapsto \exp(-i\theta)\vec N ,
 $$
 
-the duality rotation, which at $\theta=\pi/2$ is the classical exchange of electricity and magnetism. In dimensionless units the source's $F = \vec E+i\vec B$ is precisely $\vec N$ at $c=1$, and the source's transformation $F\to \exp(i\alpha)F$ is $\vec N\to \exp(i\alpha)\vec N$, that is, the duality rotation with $\theta=-\alpha$. The rotation mixes the two Lorentz invariants $\vec E\cdot\vec B$ and $\vec E^2-c^2\vec B^2$, leaving the energy density invariant; the corpus's field-strength article computes exactly this, and the computation is reproduced here as a check on the identification.
+the duality rotation, which at $\theta=\pi/2$ is the classical exchange of electricity and magnetism. With the magnetic field quoted in units of $\vec E/c$, the source's $F = \vec E+i\vec B$ is precisely $\vec N=\vec E+ic\vec B$, and the source's transformation $F\to \exp(i\alpha)F$ is $\vec N\to \exp(i\alpha)\vec N$, that is, the duality rotation with $\theta=-\alpha$. The rotation mixes the two Lorentz invariants $\vec E\cdot\vec B$ and $\vec E^2-c^2\vec B^2$, leaving the energy density invariant; the corpus's field-strength article computes exactly this, and the computation is reproduced here as a check on the identification.
 
 **The rotation of the invariants.** With $I_1 = \vec E^2-c^2\vec B^2$ and $I_2=\vec E\cdot\vec B$, the rotation by $\alpha$ sends
 
@@ -180,7 +180,7 @@ Tanişli's EPL paper writes the source-free Maxwell equations as $\nabla F=0$ wi
 
 | Symbol | Source | Corpus |
 |---|---|---|
-| $F$ | Electromagnetic bivector $\vec E+i\vec B$ | Riemann–Silberstein $\vec N=\vec E+ic\vec B$ at $c=1$; $\tilde F = i\sqrt\epsilon\,\vec N$ |
+| $F$ | Electromagnetic bivector $\vec E+i\vec B$ | Riemann–Silberstein $\vec N=\vec E+ic\vec B$, with $\vec B$ in units of $\vec E/c$; $\tilde F = i\sqrt\epsilon\,\vec N$ |
 | $\nabla$ | Biquaternion gradient $i\partial/\partial r'_t\,e_t+\partial/\partial R_x\,\vec e_x+\partial/\partial R_y\,\vec e_y+\partial/\partial R_z\,\vec e_z$ | $\tilde\nabla = e_t\partial/\partial R_t+\vec e_x\partial/\partial R_x+\vec e_y\partial/\partial R_y+\vec e_z\partial/\partial R_z$ |
 | $\nabla F=0$ | Source-free Maxwell equations | $\tilde\nabla\tilde F=0$, the homogeneous pair |
 | $\mathrm{Lag}=F^*\cdot\nabla F$ | First-order density | No direct equivalent; no real local Lagrangian gives the first-order system |

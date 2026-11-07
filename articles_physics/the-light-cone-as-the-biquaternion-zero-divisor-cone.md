@@ -203,7 +203,7 @@ $$
 \vec k_1 = (1,0,0),\quad \vec k_2 = (0,1,0),\quad \vec k_3 = (0.6,0.8,0),
 $$
 
-with $\omega_i = c|\vec k_i|$ and $c = 1$, so that each $\langle\tilde P_{\Phi,i}\rangle_{\natural} = 0$. Evaluating $\BoxΞ = \partial^2/\partial R_t^2Ξ + \DeltaΞ$ numerically at a generic event gives $|\BoxΞ| \sim 10^{-8}$ at the finite-difference resolution used, i.e. zero. The cross terms between different modes, which the single-mode test cannot see, are the content of the check and they cancel because each mode is separately in the kernel of $\Box$.
+with $\omega_i = c|\vec k_i|$, so that each $\langle\tilde P_{\Phi,i}\rangle_{\natural} = 0$. Evaluating $\BoxΞ = \partial^2/\partial R_t^2Ξ + \DeltaΞ$ numerically at a generic event gives $|\BoxΞ| \sim 10^{-8}$ at the finite-difference resolution used, i.e. zero. The cross terms between different modes, which the single-mode test cannot see, are the content of the check and they cancel because each mode is separately in the kernel of $\Box$.
 
 The factorization has a second face. Because $\Box = \tilde{\nabla}\tilde{\nabla}^{\natural}$ and the two factors commute, the wave equation is also $\tilde{\nabla}(\tilde{\nabla}^{\natural}Ξ) = 0$, and the cone is the set of directions in which the first-order operator $\tilde{\nabla}^{\natural}$ has a nontrivial kernel of the special form $f(\mathrm{Sc}(\tilde P_{\Phi}\tilde{Q}^{\natural}))$. The light cone is the characteristic cone of the operator, and it is the same object as the zero set of the biquaternion norm.
 

@@ -144,7 +144,7 @@ $$
 \boxed{\;\vec\Omega_{\mathrm{LT}} = -\frac{ϙ}{m}\left(\frac{i}{c}\vec E + \vec B\right) = -\frac{ϙ}{m}\,\tilde{F}^{*}\;}
 $$
 
-in the units of the field-strength article with $\sqrt{\epsilon_0} = 1/c_0$ and $\sqrt{\mu_0} = 1$ (Heaviside–Lorentz units), where $\tilde{F}^{*} = i\sqrt{\epsilon}\vec E + \sqrt{\mu}\vec H = i\vec E/c + \vec B$. The rate is a pure vector, so it preserves the norm, and the minus sign is the one fixed by using the rest-to-lab eigenspinor; with the lab-to-moving rotor the sign is reversed. Substituting into the equation of motion gives
+in the units of the field-strength article, where $\vec H$ is quoted in the units of $\vec B$ so that $\sqrt{\mu_0}\,\vec H=\vec B$ and $\sqrt{\epsilon_0}=1/c$, and $\tilde{F}^{*} = i\sqrt{\epsilon}\vec E + \sqrt{\mu}\vec H = i\vec E/c + \vec B$. The rate is a pure vector, so it preserves the norm, and the minus sign is the one fixed by using the rest-to-lab eigenspinor; with the lab-to-moving rotor the sign is reversed. Substituting into the equation of motion gives
 
 $$
 \frac{d\tilde{P}_{\Phi}}{d\tau} = -\frac{ϙ}{m}\,P_{\mathbb{B}_{\Phi}}\!\left(\tilde{F}^{*}\tilde{P}_{\Phi}\right)

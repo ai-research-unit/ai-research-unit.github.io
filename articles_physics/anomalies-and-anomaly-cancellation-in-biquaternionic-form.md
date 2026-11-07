@@ -28,7 +28,7 @@ Q\ \xrightarrow{\ z\ }\ i\,e_zQ\,\vec e_y\ \xrightarrow{\ y\ }\ \vec e_xQ\ \xrig
 $$
 the arrow labelled by a coordinate being the frame cell of that coordinate. The composite collapses to a single right multiplication, $Q\mapsto-Q\vec e_z$, and the chirality cell multiplies on the right by $-i\vec e_z$. So the chirality cell is $i$ times the volume cell, which is how the corpus states it (*Special Element Conventions*, §*The Chirality Convention*). That relation is what places the anomaly's density inside the framework rather than beside it.
 
-**The field strength, in components.** For the abelian anomaly the field strength is $\tilde F=\tilde\nabla^{\natural}\tilde A_{\Phi}$ in Heaviside–Lorentz units (the medium factors of *The Field-Strength Biquaternion and Its Invariants* are set to one). The alternating symbol has $\epsilon_{0123}=+1$, and in the real-time indices $r'_t,r_x,r_y,r_z$ the components are
+**The field strength, in components.** For the abelian anomaly the field strength is $\tilde F=\tilde\nabla^{\natural}\tilde A_{\Phi}$ with the relative medium factors of *The Field-Strength Biquaternion and Its Invariants* equal to one. The alternating symbol has $\epsilon_{0123}=+1$, and in the real-time indices $r'_t,r_x,r_y,r_z$ the components are
 
 $$
 F_{r'_t i}=E_i,

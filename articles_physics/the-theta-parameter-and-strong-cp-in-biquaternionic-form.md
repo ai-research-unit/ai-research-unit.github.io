@@ -88,7 +88,7 @@ $$
 
 The theta term is thus the integral of the framework's own parity-odd invariant, with the factor $i$ that the $i r'_t$ convention attaches to it. This is the genuine affirmative content of the article: in the abelian sector the CP-odd term is not an object the framework lacks; it is $I_2$, already present in *The Field-Strength Biquaternion and Its Invariants*.
 
-**The same invariant, read from the element.** The array above is a contraction, and the invariant it contracts to is one component of a norm. In vacuum the two medium factors of the companion are one, so $c=1$ there; the quaternionic norm of the field-strength element is $-(I_1+2iI_2)$ (*The Field-Strength Biquaternion and Its Invariants*), so the parity-odd invariant is minus one half of its imaginary part,
+**The same invariant, read from the element.** The array above is a contraction, and the invariant it contracts to is one component of a norm. In vacuum the two relative medium factors of the companion are one, and $c=1/\sqrt{\epsilon_0\mu_0}$ stands; the quaternionic norm of the field-strength element is $-(I_1+2iI_2)$ (*The Field-Strength Biquaternion and Its Invariants*), so the parity-odd invariant is minus one half of its imaginary part,
 
 $$
 I_2=-\tfrac12\,\mathrm{Im}\,\langle\tilde F\rangle_{\natural}\qquad(\text{vacuum}),

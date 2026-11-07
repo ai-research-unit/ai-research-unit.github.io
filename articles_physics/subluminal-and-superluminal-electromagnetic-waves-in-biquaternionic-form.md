@@ -41,7 +41,7 @@ two first-order equations in two chiral halves, and the spinorial part below is 
 
 **The source's letter.** The source writes its calculus with one letter for a first-order operator of its own, one generator per coordinate. That operator is not one of the corpus's conventions, and this article neither uses it nor displays it. The free-field content of the source is carried here by $\tilde\nabla$; the massive content by the chiral pair. Where the source's own equation is translated, the translation is stated once, and no cell appears.
 
-**Worked action.** The operator is read off the multiplication table of the units. With $c=1$, constants die, and a coordinate times a unit returns the product of that coordinate's unit with the unit.
+**Worked action.** The operator is read off the multiplication table of the units: a coordinate times a unit returns the product of that coordinate's unit with the unit, and the only constants the table carries are the ones the sector substitution puts in, $-i$ in the temporal slot and nothing in the three spatial slots.
 
 | $\tilde{Ξ}_{\mathrm{sp}}$ | $\tilde\nabla\tilde{Ξ}_{\mathrm{sp}}$ |
 |+-|+-|

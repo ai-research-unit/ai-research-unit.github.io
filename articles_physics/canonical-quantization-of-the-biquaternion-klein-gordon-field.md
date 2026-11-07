@@ -179,10 +179,10 @@ The obstruction to anything more is worth stating precisely, because it distingu
 
 ## The Hamiltonian, Momentum and Charge
 
-The Hamiltonian density is the time–time component of the canonical energy–momentum tensor, and in natural units
+The Hamiltonian density is the time–time component of the canonical energy–momentum tensor; with $\xi_{\mathrm{fop}}$ carrying an inverse length and $r'_t$ a length, the density needs one factor $\hbar\,c$ to be an energy,
 
 $$
-H=\int d^3r\left(\left(\partial\xi_{\mathrm{fop}}/\partial r'_t\right)^{\dagger} \partial\xi_{\mathrm{fop}}/\partial r'_t+\nabla\xi_{\mathrm{fop}}^{\dagger}\cdot\nabla\xi_{\mathrm{fop}}+k_m^{2}\xi_{\mathrm{fop}}^{\dagger}\xi_{\mathrm{fop}}\right).
+H=\hbar c\int d^3r\left(\left(\partial\xi_{\mathrm{fop}}/\partial r'_t\right)^{\dagger} \partial\xi_{\mathrm{fop}}/\partial r'_t+\nabla\xi_{\mathrm{fop}}^{\dagger}\cdot\nabla\xi_{\mathrm{fop}}+k_m^{2}\xi_{\mathrm{fop}}^{\dagger}\xi_{\mathrm{fop}}\right).
 $$
 
 Substituting the mode expansion and using the commutators gives, before normal ordering,
@@ -294,7 +294,7 @@ The field's value space is the centre $\mathbb{B}_{C}$, and the algebra supplies
 | $\pi=\left(\partial\xi/\partial r'_t\right)^{\,*}$, $\pi^\dagger=\partial\xi/\partial r'_t$ | Conjugate momenta; Legendre transform regular |
 | $\tilde K_{\Phi}=i\omega/c\,e_t+\vec k_\Phi$, $\langle\tilde K_{\Phi}\rangle_{\natural}=\frac{k_m^{2}\,\tilde{P}_{\Phi}\,\tilde{P}_{\Phi}^{\natural}}{m^{2}\,c^{2}}$ | Material four-wavevector and biquaternion norm |
 | $\langle\tilde K_{\Phi}\rangle_{\natural}=-k_m^{2}\,e_t$ | Mass-shell condition |
-| $E_{\vec p}=c\sqrt{\vec p^{\,2}+m^{2}c^{2}}$, $p\cdot x=\frac{E_{\vec p}}{c}r'_t-\vec p\cdot(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)$ | On-shell energy and phase (natural units) |
+| $E_{\vec p}=c\sqrt{\vec p^{\,2}+m^{2}c^{2}}$, $p\cdot x=\frac{E_{\vec p}}{c}r'_t-\vec p\cdot(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)$ | On-shell energy and phase |
 | $a_{\mathrm{fop},\vec p},b_{\mathrm{fop},\vec p}$ | Particle and antiparticle annihilation operators |
 | $[a_{\mathrm{fop},\vec p},{a_{\mathrm{fop},\vec k_\Phi}}^\dagger]=(2\pi)^3\delta^{(3)}(\vec p-\vec k_\Phi)$ | Mode commutators |
 | $\mathcal{F}=\bigoplus_n(\mathcal{H}_1^{\otimes n})_+$ | Bosonic Fock space (symmetric algebra) |
