@@ -200,11 +200,11 @@ $$
 the second relation being the analytic continuation of the first to $s=0$. In this scheme the determinant is finite by construction, and the regularization dependence appears as an additive constant that is fixed by renormalization. For a single mode with eigenvalue $\lambda$ the definition gives $\zeta(s)=\lambda^{-s}$ and $-\left.\frac{d\zeta}{ds}\right|_{s=0}=\log\lambda$, i.e. the ordinary logarithm; the scheme reduces to the ordinary determinant when the product is finite.</p>
 <p><strong>Heat-kernel evaluation.</strong> The zeta function is evaluated from the heat kernel of the previous article,
 $$
-\zeta_{S^{(2)}}(s) = \frac{1}{\Gamma(s)}\int_0^\infty dr'_t\;{r'_{t}}^{s-1}\,K(r'_t),
+\zeta_{S^{(2)}}(s) = \frac{1}{\Gamma(s)}\int_0^\infty dr'_t\;{r'_{t}}^{s-1}\,G_{\mathrm{prop}}(r'_t),
 \qquad
-K(r'_t) = \mathrm{Tr}\,\exp(-r'_t S^{(2)}),
+G_{\mathrm{prop}}(r'_t) = \mathrm{Tr}\,\exp(-r'_t S^{(2)}),
 $$
-and the small-$r'_t$ expansion $K(r'_t)\sim(4\pi r'_t)^{-d/2}\sum_n a_n {r'_{t}}^n$ gives $\zeta(0)$ and $\left.\frac{d\zeta}{ds}\right|_{s=0}$ in terms of the Seeley–DeWitt coefficients $a_n$. In the biquaternion framework $S^{(2)}$ acts on the module and the coefficients $a_n$ carry the module's dimension and the geometry of the sector on which the operator lives. This is the machinery that <em>The Trace Anomaly in Biquaternionic Form</em> uses; here it is recorded as the regularization that gives the determinant its meaning. The heat-kernel method is standard (Seeley, DeWitt, Gilkey) and is cited rather than rebuilt.</p>
+and the small-$r'_t$ expansion $G_{\mathrm{prop}}(r'_t)\sim(4\pi r'_t)^{-d/2}\sum_n a_n {r'_{t}}^n$ gives $\zeta(0)$ and $\left.\frac{d\zeta}{ds}\right|_{s=0}$ in terms of the Seeley–DeWitt coefficients $a_n$. In the biquaternion framework $S^{(2)}$ acts on the module and the coefficients $a_n$ carry the module's dimension and the geometry of the sector on which the operator lives. This is the machinery that <em>The Trace Anomaly in Biquaternionic Form</em> uses; here it is recorded as the regularization that gives the determinant its meaning. The heat-kernel method is standard (Seeley, DeWitt, Gilkey) and is cited rather than rebuilt.</p>
 <p><strong>A remark on scheme dependence.</strong> Different regularizations (zeta function, proper time with a cutoff, dimensional regularization) differ by local counterterms, and the <em>ratios</em> of determinants of operators of the same type are scheme-independent. In the framework, a scheme-independent statement is one that compares two determinants taken on the same module; this is the same caveat that attends any statement about the biquaternion norm's normalization.</p>
 <h2 id="the-fermionic-determinant-and-its-phase">The Fermionic Determinant and Its Phase</h2>
 <p>The determinant of a fermionic fluctuation operator is the place where the framework's non-central mass term has its clearest consequence.</p>
@@ -320,7 +320,7 @@ Both were verified: for $\tilde Q=(0.7+0.2i,\,0.3-0.5i,\,-0.2+0.4i,\,0.1+0.6i)$,
 <td>Zeta-function regularization</td>
 </tr>
 <tr>
-<td>$K(r'_t)=\mathrm{Tr}\,\exp(-r'_t S^{(2)})$, $K\sim(4\pi r'_t)^{-d/2}\sum a_n {r'_{t}}^n$</td>
+<td>$G_{\mathrm{prop}}(r'_t)=\mathrm{Tr}\,\exp(-r'_t S^{(2)})$, $K\sim(4\pi r'_t)^{-d/2}\sum a_n {r'_{t}}^n$</td>
 <td>Heat kernel; Seeley–DeWitt coefficients</td>
 </tr>
 <tr>

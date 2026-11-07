@@ -135,7 +135,7 @@ $$</p>
 <p>$$
 -\Delta - \frac{\omega^2}{c^2} = (D_3+k)(D_3-k), \qquad k=\frac{\omega}{c},
 $$</p>
-<p>the scalar shift of <em>Biquaternion Regular Functions</em> with its two branches $D_{3\pm k}$ and their fundamental solutions $\mathcal K_{\pm k}$; the kernel of the whole lies in the union of the two half-kernels, which is the decomposition used in <em>Maxwell's Equations in Chiral Media — The Quaternionic Reformulation</em>. This second form is the source's and is correct as printed, with $k$ the scalar wavenumber.</p>
+<p>the scalar shift of <em>Biquaternion Regular Functions</em> with its two branches $D_{3\pm k}$ and their fundamental solutions $\mathcal V_{\mathrm{vek},\pm k}$; the kernel of the whole lies in the union of the two half-kernels, which is the decomposition used in <em>Maxwell's Equations in Chiral Media — The Quaternionic Reformulation</em>. This second form is the source's and is correct as printed, with $k$ the scalar wavenumber.</p>
 <h3 id="the-vector-factorisation-and-its-two-signs">The vector factorisation and its two signs</h3>
 <p>There is a second factorisation, and it is the one the scattering theory needs. With the parameter a <strong>vector</strong> $k=k_1\vec e_x+k_2\vec e_y+k_3\vec e_z$ and either multiplication,</p>
 <p>$$
@@ -165,9 +165,9 @@ C_k(\vec r) = \left(k+\frac{r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z}{\lvert r_
 $$</p>
 <p>obtained, the source says, in the Kravchenko–Shapiro paper on the generalised Cauchy–Riemann system with a quaternionic parameter. Its bracket is exactly the bracket of the corpus's kernel in <em>Electromagnetism in Media — The Local Complex Structure at Work</em>,</p>
 <p>$$
-\mathcal K_{\pm\alpha} = -(D_3\mp\alpha)\mathrm{Sd}_\alpha = \left(\alpha+\frac{r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z}{\lvert r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z\rvert^{2}}-i\alpha\vec u_x\right)\mathrm{Sd}_\alpha ,
+\mathcal V_{\mathrm{vek},\pm\alpha} = -(D_3\mp\alpha)\mathrm{Sd}_\alpha = \left(\alpha+\frac{r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z}{\lvert r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z\rvert^{2}}-i\alpha\vec u_x\right)\mathrm{Sd}_\alpha ,
 $$</p>
-<p>read at $\alpha=k$: since $D_{-k}=D_3-k$ is the negative branch $D_{3,-k}$, the source's kernel is $C_k=-(D_3-k)\mathrm{Sd}_k=\mathcal K_{+k}$. The two branches share the second-order companion, for $(D_3+k)(D_3-k)=-\Delta-k^2$ either way, so the companion cannot tell them apart and each of $\mathcal K_{\pm k}$ is a fundamental solution of <strong>either</strong> branch up to the normalisation sign; the corpus's table pairs $\mathcal K_{+\alpha}$ with $D_{3+\alpha}$ and the source applies $C_k$ to $D_{-k}$, and the pairing is a matter of convention rather than of substance. What is not a matter of convention is the <strong>sign</strong> of the kernel: the source's section 2.1 writes the free-space Green's function of the Helmholtz operator as $+\exp(ik\lvert r-r_2\rvert)/(4\pi\lvert r-r_2\rvert)$, whereas the proposition writes $F_k$ with the minus. The two are Green's functions of the two signs of the same operator, $-\Delta-k^2$ and $\Delta+k^2$, and the chapter uses them in its two halves without noting the switch. The corpus's convention, fixed by $\mathrm{Sd}_\alpha$, is the one with the minus, and it is the one used in this article.</p>
+<p>read at $\alpha=k$: since $D_{-k}=D_3-k$ is the negative branch $D_{3,-k}$, the source's kernel is $C_k=-(D_3-k)\mathrm{Sd}_k=\mathcal{V}_{\mathrm{vek},+k}$. The two branches share the second-order companion, for $(D_3+k)(D_3-k)=-\Delta-k^2$ either way, so the companion cannot tell them apart and each of $\mathcal V_{\mathrm{vek},\pm k}$ is a fundamental solution of <strong>either</strong> branch up to the normalisation sign; the corpus's table pairs $\mathcal{V}_{\mathrm{vek},+\alpha}$ with $D_{3+\alpha}$ and the source applies $C_k$ to $D_{-k}$, and the pairing is a matter of convention rather than of substance. What is not a matter of convention is the <strong>sign</strong> of the kernel: the source's section 2.1 writes the free-space Green's function of the Helmholtz operator as $+\exp(ik\lvert r-r_2\rvert)/(4\pi\lvert r-r_2\rvert)$, whereas the proposition writes $F_k$ with the minus. The two are Green's functions of the two signs of the same operator, $-\Delta-k^2$ and $\Delta+k^2$, and the chapter uses them in its two halves without noting the switch. The corpus's convention, fixed by $\mathrm{Sd}_\alpha$, is the one with the minus, and it is the one used in this article.</p>
 <h3 id="the-boundary-representation">The boundary representation</h3>
 <p>The fundamental solution gives a representation of the solutions of the first-order equation by their boundary values, the source's Proposition 7.2. Let $G$ be a bounded Lipschitz domain with boundary $\partial G$ and outward unit normal $n$, and let $u\in H^1(G)$. If $u\in\ker(D_3+k)$ and $\operatorname{Im}(k)\ge0$, then</p>
 <p>$$
@@ -295,7 +295,7 @@ $$</p>
 <h2 id="what-the-source-establishes-transcribes-and-does-not">What the Source Establishes, Transcribes, and Does Not</h2>
 <p><strong>Transcribed from the corpus's own materials.</strong></p>
 <ul>
-<li>The three-dimensional setting, the operator $D_3$ and the identification $D_3u=-\operatorname{div}u+\operatorname{curl}u$; the Helmholtz kernel $\mathrm{Sd}_k=F_k$ and the shifted kernels $\mathcal K_{\pm k}$; the zero-divisor structure of the radiation condition. All of these are in <em>Biquaternion Regular Functions</em>, <em>Maxwell's Equations in Chiral Media — The Quaternionic Reformulation</em> and <em>Electromagnetism in Media — The Local Complex Structure at Work</em>, and this article adds no formula to them.</li>
+<li>The three-dimensional setting, the operator $D_3$ and the identification $D_3u=-\operatorname{div}u+\operatorname{curl}u$; the Helmholtz kernel $\mathrm{Sd}_k=F_k$ and the shifted kernels $\mathcal V_{\mathrm{vek},\pm k}$; the zero-divisor structure of the radiation condition. All of these are in <em>Biquaternion Regular Functions</em>, <em>Maxwell's Equations in Chiral Media — The Quaternionic Reformulation</em> and <em>Electromagnetism in Media — The Local Complex Structure at Work</em>, and this article adds no formula to them.</li>
 <li>The Maxwell reduction and the quaternionic reformulation in inhomogeneous media, which the corpus's electromagnetic articles own.</li>
 </ul>
 <p><strong>Transcribed from the source, not derived here.</strong></p>
@@ -309,7 +309,7 @@ $$</p>
 <p><strong>Established, in the sense that it was recomputed here.</strong></p>
 <ul>
 <li>The vector factorisation and the plane-wave substitution identities of the third and seventh sections: $(D_3\pm R_k)(D_3\mp R_k)=-\Delta+\lvert k\rvert^2$ and the same with $ik$, both orderings; $(D_3-L_{ik})(\exp(ik\cdot x)b)=\exp(ik\cdot x)D_3b$; and $kb+bk=-2k\cdot b$ for vector $b$ with the collapse failing for a general quaternion. The two-sided vocabulary — which of $L_k$ and $R_k$ the source uses in each section, and why either answers for a constant parameter — was reconstructed here, because the source does not state it.</li>
-<li>The identification $C_k=\mathcal K_{+k}$ in the corpus's notation, and with it the decision that the corpus's kernel sign, not the source's section 2.1 sign, is the one to keep.</li>
+<li>The identification $C_k=\mathcal{V}_{\mathrm{vek},+k}$ in the corpus's notation, and with it the decision that the corpus's kernel sign, not the source's section 2.1 sign, is the one to keep.</li>
 </ul>
 <p><strong>Not established, and left visible.</strong></p>
 <ul>
@@ -383,8 +383,8 @@ $$</p>
 <td>Helmholtz fundamental solution; the source's $F_k$ at $\alpha=k$</td>
 </tr>
 <tr>
-<td>$\mathcal K_{\pm\alpha}=-(D_3\mp\alpha)\mathrm{Sd}_\alpha$</td>
-<td>Fundamental solutions of the shifted family; the source's $C_k$ is $\mathcal K_{+k}$</td>
+<td>$\mathcal V_{\mathrm{vek},\pm\alpha}=-(D_3\mp\alpha)\mathrm{Sd}_\alpha$</td>
+<td>Fundamental solutions of the shifted family; the source's $C_k$ is $\mathcal{V}_{\mathrm{vek},+k}$</td>
 </tr>
 <tr>
 <td>$C_k=-D_{-k}F_k$</td>
