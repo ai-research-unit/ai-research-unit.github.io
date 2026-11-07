@@ -43,7 +43,7 @@ $$
 \mathbb{D}_p\tilde{Ξ}_{\mathrm{sp}}:=\sum_\mu\varepsilon_\mu\,i\,e_\mu\,\tilde{Ξ}_{\mathrm{sp}}\,\vec e_{\nu(\mu)}\,p_\mu ,
 $$
 
-with $\mathbb{D}^2=\Box$ and $\mathbb{D}_p^2=\frac{k_m^{2}\,p^{2}}{m^{2}\,c^{2}}$, which is $k_m^{2}$ on the mass shell; the minus sign of $\mathbb{D}$ is the product of the imaginary unit of the frame cell and the one the Dirac operator carries, $i\cdot i=-1$, and $\mathbb{D}_p$ keeps the single one of the cell. The second is the **trace spinor** of a vector-spinor, the metric contraction of its vector index with the frame cells,
+with $\mathbb{D}^2=\Box$ and $\mathbb{D}_p^2=p^{2}$, which is $m^{2}c^{2}$ on the mass shell; the minus sign of $\mathbb{D}$ is the product of the imaginary unit of the frame cell and the one the Dirac operator carries, $i\cdot i=-1$, and $\mathbb{D}_p$ keeps the single one of the cell. The second is the **trace spinor** of a vector-spinor, the metric contraction of its vector index with the frame cells,
 
 $$
 \Sigma(\tilde{Ξ}_{\mathrm{sp}}):=\sum_\mu\varepsilon_\mu\,i\,e_\mu\,\tilde{Ξ}_{\mathrm{sp},\mu}\,\vec e_{\nu(\mu)} .
@@ -91,12 +91,12 @@ $$
 \Sigma\bigl(\mathbb{D}_p\tilde{Ξ}_{\mathrm{sp}}\bigr)=2\,p\cdot\tilde{Ξ}_{\mathrm{sp}}-\mathbb{D}_p\,\Sigma(\tilde{Ξ}_{\mathrm{sp}}),
 $$
 
-the trace of the operator times the field being the divergence of the field minus the operator applied to the trace. The field equation is $(\mathbb{D}_p-m)\tilde{Ξ}_{\mathrm{sp},\mu}=0$, so its trace is
+the trace of the operator times the field being the divergence of the field minus the operator applied to the trace. The field equation is $(\mathbb{D}_p-mc)\tilde{Ξ}_{\mathrm{sp},\mu}=0$, so its trace is
 
 $$
 m\,\Sigma(\tilde{Ξ}_{\mathrm{sp}})=\Sigma\bigl(\mathbb{D}_p\tilde{Ξ}_{\mathrm{sp}}\bigr)=2\,p\cdot\tilde{Ξ}_{\mathrm{sp}}-\mathbb{D}_p\,\Sigma(\tilde{Ξ}_{\mathrm{sp}}) ,
 \qquad\text{that is}\qquad
-2\,p\cdot\tilde{Ξ}_{\mathrm{sp}}=\bigl(\mathbb{D}_p+m\bigr)\Sigma(\tilde{Ξ}_{\mathrm{sp}}) .
+2\,p\cdot\tilde{Ξ}_{\mathrm{sp}}=\bigl(\mathbb{D}_p+ mc\bigr)\Sigma(\tilde{Ξ}_{\mathrm{sp}}) .
 $$
 
 The divergence of the field is therefore the trace spinor propagated by the field operator, and it vanishes when the trace does. Hence the constraint and the field equation together imply the **transversality** condition
@@ -204,7 +204,7 @@ $$
 with $E_p=\sqrt{\vec p^2+m^2}$, $p\cdot x=E_p r'_t-\vec p\cdot\vec r$, and with the Rarita–Schwinger polarization spinors satisfying
 
 $$
-\bigl(\mathbb{D}_p-m\bigr)\zeta_{\mu,r}=0 ,
+\bigl(\mathbb{D}_p- mc\bigr)\zeta_{\mu,r}=0 ,
 \qquad
 \Sigma(\zeta_r)=0 ,
 \qquad
@@ -214,7 +214,7 @@ $$
 together with the completeness relation of the four polarizations,
 
 $$
-\sum_{r=1}^{4}\zeta_{\mu,r}\bar\zeta_{\nu,r}=\bigl(\mathbb{D}_p+m\bigr)\Pi_{\mu\nu} .
+\sum_{r=1}^{4}\zeta_{\mu,r}\bar\zeta_{\nu,r}=\bigl(\mathbb{D}_p+ mc\bigr)\Pi_{\mu\nu} .
 $$
 
 The object $\Pi_{\mu\nu}$ is the **transverse** traceless projector, the on-shell projector onto the intersection of the two constraints — the trace and the transversality — of rank eight on the vector-spinor space and four on the positive-energy solutions. It is not the constraint projector $P_{\mu\nu}$ of the preceding section: transversality requires the additional momentum-dependent terms, and the contraction of $p$ with the entries of $P$ does not vanish, so the completeness relation cannot be carried by $P_{\mu\nu}$ alone. It is the standard Rarita–Schwinger projector and is cited below. The creation and annihilation operators satisfy the fermionic algebra
@@ -238,7 +238,7 @@ The field is quantized with anticommutators, not commutators, and the reason is 
 The momentum-space propagator is the inverse of the quadratic form that the field equation and the constraint define on the traceless subspace. It is of the general form
 
 $$
-G_{\mu\nu}(p) = -\frac{i}{p^2-\hbar^2k_m^2}\Bigl[\bigl(\mathbb{D}_p+m\bigr)\Pi_{\mu\nu} + \text{(lower-spin terms)}\Bigr] ,
+G_{\mu\nu}(p) = -\frac{i}{p^2-\hbar^2k_m^2}\Bigl[\bigl(\mathbb{D}_p+ mc\bigr)\Pi_{\mu\nu} + \text{(lower-spin terms)}\Bigr] ,
 $$
 
 where the transverse projector $\Pi_{\mu\nu}$ is the one of the completeness relation and the lower-spin terms are the parts that the constraint removes; in the standard covariant form the propagator carries the gauge-fixing dependence of the massless case and a $p_\mu p_\nu$ term whose coefficient involves $1/m^2$ for the massive case. The detailed form, including the dependence on the gauge-fixing parameter and the $D$-dimensional continuation, is the standard result and is cited below; the framework's contribution is the identification of the trace part of the projector with the algebra's traceless projector and the interpretation of the lower-spin terms as the removed $\left(\tfrac12\right)$ component.
@@ -376,7 +376,7 @@ $$
 and the polarization equations, the completeness relation and the propagator are
 
 $$
-(\gamma\cdot p-m)\zeta_{\mu,r}=0,
+(\gamma\cdot p-mc)\zeta_{\mu,r}=0,
 \qquad
 \gamma\cdot\zeta_r=0,
 \qquad
@@ -384,9 +384,9 @@ p\cdot\zeta_r=0,
 $$
 
 $$
-\sum_{r=1}^{4}\zeta_{\mu,r}\bar\zeta_{\nu,r}=(\gamma\cdot p+m)\Pi_{\mu\nu},
+\sum_{r=1}^{4}\zeta_{\mu,r}\bar\zeta_{\nu,r}=(\gamma\cdot p+mc)\Pi_{\mu\nu},
 \qquad
-G_{\mu\nu}(p)=-\frac{i}{p^2-\hbar^2k_m^2}\Bigl[(\gamma\cdot p+m)\Pi_{\mu\nu}+\text{(lower-spin terms)}\Bigr].
+G_{\mu\nu}(p)=-\frac{i}{p^2-\hbar^2k_m^2}\Bigl[(\gamma\cdot p+mc)\Pi_{\mu\nu}+\text{(lower-spin terms)}\Bigr].
 $$
 
 **The display.** Every array printed in this section is given twice: in the Peirce display first, labelled $\mathrm{pau}$, whose arrays are the ones the literature prints, and in the axis-free display after it, labelled $\mathrm{axf}$, which is the display of the body and of the corpus. The two are carried into one another by $L_{\mathrm{axf},e_\mu}=C_{\Pi}L_{\mathrm{pau},e_\mu}C_{\Pi}^{-1}$, and a conjugation by $C_{\Pi}$ changes no product, no anticommutator, no trace and no determinant, so every identity of the section holds in both. An array is a statement about one display; a cell named in the running text keeps the Peirce label, and its axis-free array is the conjugate. The label names the array and not the operator.
@@ -425,7 +425,7 @@ In the biquaternion framework the field is the tensor product of the material fo
 | $\{a_r(\vec p),a_s^\dagger(\vec k_\Phi)\}=(2\pi)^3\delta_{rs}\delta^{(3)}(\vec p-\vec k_\Phi)$ | Fermionic mode algebra |
 | $\zeta_{\mu,r},v_{\mu,r}$, $r=1,\dots,4$ | Polarization spinors; helicities $\pm\tfrac32,\pm\tfrac12$ |
 | $\Pi_{\mu\nu}$ | Transverse traceless (Rarita–Schwinger) projector; rank $8$, and $4$ on positive-energy solutions |
-| $\sum_r \zeta_{\mu,r}\bar\zeta_{\nu,r}=(\mathbb{D}_p+m)\Pi_{\mu\nu}$ | Completeness relation, carried by the transverse projector |
+| $\sum_r \zeta_{\mu,r}\bar\zeta_{\nu,r}=(\mathbb{D}_p+mc)\Pi_{\mu\nu}$ | Completeness relation, carried by the transverse projector |
 | $G_{\mu\nu}(p)$ | Propagator; inverse of the quadratic form on the traceless subspace |
 | $\varepsilon=(1,-1,-1,-1)$ | sign vector of the generators; the material interval is its negative |
 

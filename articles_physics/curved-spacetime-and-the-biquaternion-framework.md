@@ -408,7 +408,7 @@ which is the inhomogeneous transformation expected of a connection on the field.
 
 ### The Curved Dirac Operator and the Equation
 
-The biquaternion gradient $\tilde\nabla$ is the operator of *Operator and Calculus Conventions*, §*The Gradient*; read on the material sector in the physical coordinates $x_\mu=(r'_t,r_x,r_y,r_z)$, and in units with $c=1$, it is
+The biquaternion gradient $\tilde\nabla$ is the operator of *Operator and Calculus Conventions*, §*The Gradient*; read on the material sector in the physical coordinates $x_\mu=(r'_t,r_x,r_y,r_z)$, all four in metres, it is
 $$
 \tilde\nabla = -i\,e_t\,\partial/\partial r'_t + \sum_k\,\vec e_k\,\partial/\partial x_k,
 $$

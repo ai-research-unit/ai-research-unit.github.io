@@ -147,18 +147,18 @@ Here $k_m=mc/\hbar$ is the mass wave number, the inverse of the mass length.
 The time term carries $e_t$ on the left, and $e_t$ is the unit, so that term is a single right multiplication by $\vec e_x$; each spatial term carries $\vec e_k$ on the left and $\vec e_y$ on the right, so the spatial part is genuinely two-sided and is the multiplication by no single element. Both elements stand in position in the display, and the operator is never written as a product of two one-sided symbols: a single glyph for the pair of one-sided factors would hide exactly the information the computation below uses. On a plane wave the same operator has the symbol
 
 $$
-\mathbb{D}_p:\ \tilde X\longmapsto iE_{\vec p}\,\tilde X\vec e_x-i\sum_k  p_k\,\vec e_k\tilde X\vec e_y,
+\mathbb{D}_p:\ \tilde X\longmapsto i\frac{E_{\vec p}}{c}\,\tilde X\vec e_x-i\sum_k  p_k\,\vec e_k\tilde X\vec e_y,
 \qquad
-\mathbb{D}_p^2=\frac{p_0^2-|\vec p|^2}{\frac{m^{2}\,c^{2}}{k_m^{2}}}=k_m^{2},
+\mathbb{D}_p^2=p_0^2-|\vec p|^2=m^{2}\,c^{2},
 $$
 
-because $\exp(-ip\cdot x)$ gives $-iE_{\vec p}$ to the time derivative and $+ip_k$ to the spatial ones. The glyph is the pair operator's, of *Operator and Calculus Conventions*: on the pair it is $\mathbb{D}(\tilde{Ξ}_{\mathrm{sp},R},\tilde{Ξ}_{\mathrm{sp},L})=(\tilde\nabla\tilde{Ξ}_{\mathrm{sp},R},\tilde\nabla^{\natural}\tilde{Ξ}_{\mathrm{sp},L})$ with $\mathbb{D}^2=\Box I$, and on one element, which is how the equal-time computation uses it, it is the coordinate form above with $\mathbb{D}^2=\Box$. The square is scalar: the cross terms cancel because left and right multiplications commute, the time term contributes $-\partial^2/\partial {r'_t}^2$, and the spatial terms contribute $+\Delta_Q$ because $\vec e_y^2=-e_t$ and $\vec e_k\vec e_l+\vec e_l\vec e_k=-2\delta_{kl}e_t$. Verified on the symbol at random momenta, with $p^2=p_0^2-|\vec p|^2$: $\mathbb{D}_p^2-p^2I$ to $2.7\times10^{-15}$.
+because $\exp(-i(p\cdot x)/\hbar)$ gives $-iE_{\vec p}/(\hbar c)$ to the time derivative and $+ip_k/\hbar$ to the spatial ones. The glyph is the pair operator's, of *Operator and Calculus Conventions*: on the pair it is $\mathbb{D}(\tilde{Ξ}_{\mathrm{sp},R},\tilde{Ξ}_{\mathrm{sp},L})=(\tilde\nabla\tilde{Ξ}_{\mathrm{sp},R},\tilde\nabla^{\natural}\tilde{Ξ}_{\mathrm{sp},L})$ with $\mathbb{D}^2=\Box I$, and on one element, which is how the equal-time computation uses it, it is the coordinate form above with $\mathbb{D}^2=\Box$. The square is scalar: the cross terms cancel because left and right multiplications commute, the time term contributes $-\partial^2/\partial {r'_t}^2$, and the spatial terms contribute $+\Delta_Q$ because $\vec e_y^2=-e_t$ and $\vec e_k\vec e_l+\vec e_l\vec e_k=-2\delta_{kl}e_t$. Verified on the symbol at random momenta, with $p^2=p_0^2-|\vec p|^2$: $\mathbb{D}_p^2-p^2I$ to $2.7\times10^{-15}$.
 
 The parents' spin sums are the two completeness identities
 
 $$
-\sum_{r=1}^{2}\tilde{Ξ}_{\mathrm{sp},+}^{(r)}\,\mathrm{Sc}\big(\tilde{Ξ}_{\mathrm{sp},+}^{(r)*}\tilde{Ξ}\big)=(\mathbb{D}_p+m)\big(\tilde{Ξ}\,i\vec e_x\big),\qquad
-\sum_{r=1}^{2}\tilde{Ξ}_{\mathrm{sp},-}^{(r)}\,\mathrm{Sc}\big(\tilde{Ξ}_{\mathrm{sp},-}^{(r)*}\tilde{Ξ}\big)=(\mathbb{D}_p-m)\big(\tilde{Ξ}\,i\vec e_x\big)
+\sum_{r=1}^{2}\tilde{Ξ}_{\mathrm{sp},+}^{(r)}\,\mathrm{Sc}\big(\tilde{Ξ}_{\mathrm{sp},+}^{(r)*}\tilde{Ξ}\big)=(\mathbb{D}_p+mc)\big(\tilde{Ξ}\,i\vec e_x\big),\qquad
+\sum_{r=1}^{2}\tilde{Ξ}_{\mathrm{sp},-}^{(r)}\,\mathrm{Sc}\big(\tilde{Ξ}_{\mathrm{sp},-}^{(r)*}\tilde{Ξ}\big)=(\mathbb{D}_p-mc)\big(\tilde{Ξ}\,i\vec e_x\big)
 $$
 
 for every $\tilde{Ξ}\in\mathbb{B}$. The right multiplication by $i\vec e_x$ is the factor that the Dirac adjoint carries, moved onto the argument: $\bar{\tilde{Ξ}}_{\mathrm{sp}}X=\mathrm{Sc}(\tilde{Ξ}_{\mathrm{sp}}^*iX\vec e_x)$, and here it multiplies the test element, not the field, so the identity stays an identity of operators on one element. The identities are operator statements and not statements about solutions, and the second carries the opposite mass sign because the negative-frequency branch has the covariant norm $-2m$. Verified with the parent's covariant normalizations $\langle\tilde{Ξ}_{\mathrm{sp},\pm}^{(r)},\tilde{Ξ}_{\mathrm{sp},\pm}^{(s)}\rangle_{\mathrm D}=\pm2m\delta_{rs}$ at random momenta: the norms to $1.8\times10^{-15}$ and the two identities to $2.1\times10^{-14}$.
@@ -180,7 +180,7 @@ $$
 =2\cos\theta\,\mathbb{D}_p\big(\tilde{Ξ}\,i\vec e_x\big)+2im\sin\theta\,\big(\tilde{Ξ}\,i\vec e_x\big).
 $$
 
-The time part of $\mathbb{D}_p$ gives $iE_{\vec p}(\tilde{Ξ} i\vec e_x)\vec e_x=E_{\vec p}\tilde{Ξ}$, because $i\vec e_x\,i\vec e_x=i^2\vec e_x^2=e_t$; it is even in $\vec p$, and so is $\cos\theta$. The spatial part $-i\sum_kp_k\vec e_k(\tilde{Ξ} i\vec e_x)\vec e_y$ and the mass term $2im\sin\theta(\tilde{Ξ} i\vec e_x)$ are odd, because $\sin\theta$ and $p_k$ are. The odd terms vanish under symmetric integration. Division by $2E_{\vec p}$ leaves $\cos\theta$ times the identity on the test element, which integrates to $\delta^{(3)}(\vec\Delta)$, so the equal-time relation is the component statement
+The time part of $\mathbb{D}_p$ gives $i\frac{E_{\vec p}}{c}(\tilde{Ξ} i\vec e_x)\vec e_x=\frac{E_{\vec p}}{c}\tilde{Ξ}$, because $i\vec e_x\,i\vec e_x=i^2\vec e_x^2=e_t$; it is even in $\vec p$, and so is $\cos\theta$. The spatial part $-i\sum_kp_k\vec e_k(\tilde{Ξ} i\vec e_x)\vec e_y$ and the mass term $2im\sin\theta(\tilde{Ξ} i\vec e_x)$ are odd, because $\sin\theta$ and $p_k$ are. The odd terms vanish under symmetric integration. Division by $2E_{\vec p}$ leaves $\cos\theta$ times the identity on the test element, which integrates to $\delta^{(3)}(\vec\Delta)$, so the equal-time relation is the component statement
 
 $$
 \boxed{\;\{\tilde{Ξ}_{\mathrm{fop},\mu}(X,r'_t),\tilde{Ξ}_{\mathrm{fop},\nu}^{\dagger}(Y,r'_t)\}=\delta_{\mu\nu}\,\delta^{(3)}(\vec\Delta)\;},

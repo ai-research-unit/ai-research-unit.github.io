@@ -118,13 +118,13 @@ with all other anticommutators vanishing. The plane-wave elements of the parent 
 Contracting the mode operators against the vacuum gives the two elementary two-point actions. The **positive-frequency** piece is
 
 $$
-W_+(x-y):\ \tilde Q\ \longmapsto\ \int\!\frac{d^3p}{(2\pi)^3}\frac{1}{2E_{\vec p}}\,\big(\mathcal{A}_{p}(\tilde Q)+m\tilde Q\big)\,\exp(-i(p\cdot(x-y))/\hbar),
+W_+(x-y):\ \tilde Q\ \longmapsto\ \int\!\frac{d^3p}{(2\pi)^3}\frac{1}{2E_{\vec p}}\,\big(\mathcal{A}_{p}(\tilde Q)+mc\tilde Q\big)\,\exp(-i(p\cdot(x-y))/\hbar),
 $$
 
 in which only the $a_{\mathrm{fop}} a_{\mathrm{fop}}^{\dagger}$ contraction survives, and the **negative-frequency** piece is
 
 $$
-W_-(x-y):\ \tilde Q\ \longmapsto\ \int\!\frac{d^3p}{(2\pi)^3}\frac{1}{2E_{\vec p}}\,\big(\mathcal{A}_{p}(\tilde Q)-m\tilde Q\big)\,\exp(+ip\cdot(x-y)),
+W_-(x-y):\ \tilde Q\ \longmapsto\ \int\!\frac{d^3p}{(2\pi)^3}\frac{1}{2E_{\vec p}}\,\big(\mathcal{A}_{p}(\tilde Q)-mc\tilde Q\big)\,\exp(+i(p\cdot(x-y))/\hbar),
 $$
 
 in which only $b_{\mathrm{fop}} b_{\mathrm{fop}}^{\dagger}$ survives. In both expressions the momentum action is on shell, because the free mode expansion contains the on-shell modes and nothing else. These two objects are not yet the propagator; each is a boundary value of an analytic function, and it is the time ordering that combines them into $S_F$.
@@ -143,7 +143,7 @@ The two $\mathrm{H}_{\mathrm{hvs}}$ functions can be represented by a single fou
 
 $$
 \boxed{\;S_F(x-y):\ \tilde Q\longmapsto i\int\!\frac{d^4p}{(2\pi\hbar)^4}\;
-\exp(-i(p\cdot(x-y))/\hbar)\frac{\mathcal{A}_p(\tilde Q)+m\tilde Q}{p^2-m^{2}\,c^{2}+i\epsilon},
+\exp(-i(p\cdot(x-y))/\hbar)\frac{\mathcal{A}_p(\tilde Q)+mc\tilde Q}{p^2-m^{2}\,c^{2}+i\epsilon},
 \qquad \epsilon\to0^+\;}.
 $$
 
@@ -174,23 +174,23 @@ This is the whole content of the prescription: the two poles are displaced in *o
 Write $p_+=(E_{\vec p},\vec p)$ and $p_-=(-E_{\vec p},\vec p)$. The residues are
 
 $$
-\mathrm{Res}_{p_0=+E_{\vec p}}\frac{\mathcal{A}_p(\tilde Q)+m\tilde Q}{p_0^2-E_{\vec p}^2}
-=\frac{\mathcal{A}_{p_+}(\tilde Q)+m\tilde Q}{2E_{\vec p}},
+\mathrm{Res}_{p_0=+E_{\vec p}}\frac{\mathcal{A}_p(\tilde Q)+mc\tilde Q}{p_0^2-E_{\vec p}^2}
+=\frac{\mathcal{A}_{p_+}(\tilde Q)+mc\tilde Q}{2E_{\vec p}},
 \qquad
-\mathrm{Res}_{p_0=-E_{\vec p}}\frac{\mathcal{A}_p(\tilde Q)+m\tilde Q}{p_0^2-E_{\vec p}^2}
-=\frac{\mathcal{A}_{p_-}(\tilde Q)+m\tilde Q}{-2E_{\vec p}}.
+\mathrm{Res}_{p_0=-E_{\vec p}}\frac{\mathcal{A}_p(\tilde Q)+mc\tilde Q}{p_0^2-E_{\vec p}^2}
+=\frac{\mathcal{A}_{p_-}(\tilde Q)+mc\tilde Q}{-2E_{\vec p}}.
 $$
 
 The contour contributes $-2\pi i$ when it closes below and $+2\pi i$ when it closes above. With the residues above and the overall factor $i$ of $S_F$, the two cases are
 
 $$
-\Delta t>0:\quad i\,(-2\pi i)\,\frac{\mathcal{A}_{p_+}(\tilde Q)+m\tilde Q}{2E_{\vec p}}
-=2\pi\,\frac{\mathcal{A}_{p_+}(\tilde Q)+m\tilde Q}{2E_{\vec p}},
+\Delta t>0:\quad i\,(-2\pi i)\,\frac{\mathcal{A}_{p_+}(\tilde Q)+mc\tilde Q}{2E_{\vec p}}
+=2\pi\,\frac{\mathcal{A}_{p_+}(\tilde Q)+mc\tilde Q}{2E_{\vec p}},
 $$
 
 $$
-\Delta t<0:\quad i\,(+2\pi i)\,\frac{\mathcal{A}_{p_-}(\tilde Q)+m\tilde Q}{-2E_{\vec p}}
-=2\pi\,\frac{\mathcal{A}_{p_-}(\tilde Q)+m\tilde Q}{2E_{\vec p}},
+\Delta t<0:\quad i\,(+2\pi i)\,\frac{\mathcal{A}_{p_-}(\tilde Q)+mc\tilde Q}{-2E_{\vec p}}
+=2\pi\,\frac{\mathcal{A}_{p_-}(\tilde Q)+mc\tilde Q}{2E_{\vec p}},
 $$
 
 in both lines the product of the two imaginary units being $i^2=-1$.
@@ -198,7 +198,7 @@ in both lines the product of the two imaginary units being $i^2=-1$.
 Both carry the same **positive** weight: the sign of the half-plane and the sign inside the residue cancel, and the $2\pi$ cancels against the $1/(2\pi)$ of the $p_0$ measure, leaving $1/(2E_{\vec p})$, which is the normalisation of $W_\pm$. The fermionic minus is therefore not in the contour, and it must come from the numerator. For $\Delta t>0$ the $p_0$ integral is already the positive-frequency integrand of $W_+$. For $\Delta t<0$ it is
 
 $$
-\frac{\mathcal{A}_{p_-}(\tilde Q)+m\tilde Q}{2E_{\vec p}}\,\exp(+iE_{\vec p}\Delta r_t+i\vec p\cdot\Delta\vec r).
+\frac{\mathcal{A}_{p_-}(\tilde Q)+mc\tilde Q}{2E_{\vec p}}\,\exp\!\big(+iE_{\vec p}\Delta r_t/(\hbar c)+i\vec p\cdot\Delta\vec r/\hbar\big).
 $$
 
 Now flip the integration variable, $\vec p\to-\vec p$: the measure and $E_{\vec p}$ are unchanged, and the spatial phase reverses. The action is linear in the four-momentum, so flipping all four components flips its sign,
@@ -210,8 +210,8 @@ $$
 and the numerator of the flipped expression becomes
 
 $$
-\mathcal{A}_{(-E_{\vec p},-\vec p)}(\tilde Q)+m\tilde Q
-=-\big(\mathcal{A}_{(E_{\vec p},\vec p)}(\tilde Q)-m\tilde Q\big),
+\mathcal{A}_{(-E_{\vec p},-\vec p)}(\tilde Q)+mc\tilde Q
+=-\big(\mathcal{A}_{(E_{\vec p},\vec p)}(\tilde Q)-mc\tilde Q\big),
 $$
 
 which is the negative-frequency numerator of $W_-$ with a minus. The single covariant expression, with its single factor of $i$ in front, therefore reproduces both the time ordering and the fermionic minus.
@@ -275,8 +275,8 @@ $$
 whose two frequency branches $E=\pm E_{\vec p}$ are the two poles $p_\pm$ of section *The Pole Structure and the Contour*. Substituting $\tilde P_{\Phi}\tilde P_{\Phi}^{\natural}=-p^2$ in the amplitude gives the biquaternion form,
 
 $$
-\boxed{\;S_F(p):\ \tilde{Q}\,\longmapsto\frac{i\big(\mathcal{A}_p(\tilde Q)+m\tilde Q\big)}{p^2-m^{2}\,c^{2}+i\epsilon}
-\;=\;-\,\frac{i\big(\mathcal{A}_p(\tilde Q)+m\tilde Q\big)}{\tilde P_{\Phi}\tilde P_{\Phi}^{\natural}+m^{2}\,c^{2}-i\epsilon}\;},
+\boxed{\;S_F(p):\ \tilde{Q}\,\longmapsto\frac{i\big(\mathcal{A}_p(\tilde Q)+mc\tilde Q\big)}{p^2-m^{2}\,c^{2}+i\epsilon}
+\;=\;-\,\frac{i\big(\mathcal{A}_p(\tilde Q)+mc\tilde Q\big)}{\tilde P_{\Phi}\tilde P_{\Phi}^{\natural}+m^{2}\,c^{2}-i\epsilon}\;},
 $$
 
 the denominator being the **deformed mass-shell operator** $\mathcal{M}(\tilde P_{\Phi})=\tilde P_{\Phi}\tilde P_{\Phi}^{\natural}+m^{2}\,c^{2}$, shifted by $-i\epsilon$. The prescription is thus a deformation of the scalar on which the mass shell is defined, not an addition to the algebra.
@@ -403,17 +403,17 @@ $$
 Its content is the contour prescription, and the prescription is fixed by time ordering together with the fermionic anticommutation sign:
 
 $$
-S_F(x-y):\ \tilde Q\longmapsto i\int\!\frac{d^4p}{(2\pi\hbar)^4}\,\exp(-i(p\cdot(x-y))/\hbar)\frac{\mathcal{A}_p(\tilde Q)+m\tilde Q}{p^2-m^{2}\,c^{2}+i\epsilon},
+S_F(x-y):\ \tilde Q\longmapsto i\int\!\frac{d^4p}{(2\pi\hbar)^4}\,\exp(-i(p\cdot(x-y))/\hbar)\frac{\mathcal{A}_p(\tilde Q)+mc\tilde Q}{p^2-m^{2}\,c^{2}+i\epsilon},
 \qquad
 \mathcal{A}_p:\ \tilde Q\longmapsto i p_0\tilde Q\,\vec e_x-i\sum_{k=1}^{3} p_k\,\vec e_k\,\tilde Q\,\vec e_y .
 $$
 
-The $p_0$ integral has poles at $p_0=\pm\big(E_{\vec p}-i\epsilon/2E_{\vec p}\big)$: the positive pole below the real axis and the negative pole above it. Closing below for $x_0-y_0>0$ and above for $x_0-y_0<0$ gives the two branches with the same positive weight $1/(2E_{\vec p})$, the sign of the half-plane cancelling the sign inside the residue and the $2\pi$ cancelling the measure; the fermionic relative minus is carried by the numerator: after $\vec p\to-\vec p$ the negative-frequency numerator obeys $\mathcal{A}_{(-E_{\vec p},-\vec p)}(\tilde Q)+m\tilde Q=-(\mathcal{A}_{(E_{\vec p},\vec p)}(\tilde Q)-m\tilde Q)$, which is the two-point form of the anticommutation.
+The $p_0$ integral has poles at $p_0=\pm\big(E_{\vec p}-i\epsilon/2E_{\vec p}\big)$: the positive pole below the real axis and the negative pole above it. Closing below for $x_0-y_0>0$ and above for $x_0-y_0<0$ gives the two branches with the same positive weight $1/(2E_{\vec p})$, the sign of the half-plane cancelling the sign inside the residue and the $2\pi$ cancelling the measure; the fermionic relative minus is carried by the numerator: after $\vec p\to-\vec p$ the negative-frequency numerator obeys $\mathcal{A}_{(-E_{\vec p},-\vec p)}(\tilde Q)+mc\tilde Q=-(\mathcal{A}_{(E_{\vec p},\vec p)}(\tilde Q)-mc\tilde Q)$, which is the two-point form of the anticommutation.
 
 Writing the four-momentum biquaternion $\tilde P_{\Phi}=i(E/c)\,e_t+\vec p$, so that $\tilde P_{\Phi}\tilde P_{\Phi}^{\natural}=-p^2$, the propagator amplitude becomes
 
 $$
-S_F(p):\ \tilde Q\longmapsto-\frac{i\big(\mathcal{A}_p(\tilde Q)+m\tilde Q\big)}{\tilde P_{\Phi}\tilde P_{\Phi}^{\natural}+m^{2}\,c^{2}-i\epsilon},
+S_F(p):\ \tilde Q\longmapsto-\frac{i\big(\mathcal{A}_p(\tilde Q)+mc\tilde Q\big)}{\tilde P_{\Phi}\tilde P_{\Phi}^{\natural}+m^{2}\,c^{2}-i\epsilon},
 $$
 
 and the prescription is a deformation of the mass-shell scalar. The added term $-i\epsilon\,e_t$ is central and lies along the $i r'_t$ axis of the material sector $\mathbb{B}_{\Phi}$; read instead as a displacement of $\tilde P_{\Phi}$, the same shift would be Hermitian, so what is fixed is the place of the term, not a direction of the momentum. The Feynman, retarded, and advanced propagators differ only in whether the two pole displacements are opposite or common; the algebra provides the complex plane and the axis of the added term but not its orientation, which is a boundary condition on the distributional inverse. The algebra therefore adds notation and a natural home for the $i\epsilon$, not the selection of the Feynman contour.

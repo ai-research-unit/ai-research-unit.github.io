@@ -217,7 +217,7 @@ to machine precision (ratio $1+0i$), and the four two-point amplitudes divided b
 
 ### The Biquaternion Form of the Kernel
 
-Write the wave biquaternion $\tilde P_{\Phi}=i(E/c)\,e_t+\vec p$, so that $\tilde P_{\Phi}\tilde P_{\Phi}^{\natural}=-p^2$. The symbol of the pair on the plane wave $\exp\!\big(-i(E/(\hbar c))r'_t+i(\vec p/\hbar)\cdot\vec r\big)$ is the left multiplication by $i\tilde K_{\Phi}=i\tilde P_{\Phi}$ of §*The Pair Operator on the Algebra*, with $-\tilde K_{\Phi}\tilde K_{\Phi}^{\natural}=p^2$, so the symbol squares to $p^2$ times the identity, $(\mathbb{D}_p-m)(\mathbb{D}_p+mc)=(p^2-m^{2}\,c^{2})I$, and the kernel of $\mathbb{D}-k_m$ at momentum $p$ is $(\mathbb{D}_p+mc)/(p^2-m^{2}\,c^{2})$. The Gaussian weight of the finite-mode section carries $M=-i(\mathbb{D}-k_m)$, so the free two-point amplitude is
+Write the wave biquaternion $\tilde P_{\Phi}=i(E/c)\,e_t+\vec p$, so that $\tilde P_{\Phi}\tilde P_{\Phi}^{\natural}=-p^2$. The symbol of the pair on the plane wave $\exp\!\big(-i(E/(\hbar c))r'_t+i(\vec p/\hbar)\cdot\vec r\big)$ is the left multiplication by $i\tilde K_{\Phi}=i\tilde P_{\Phi}$ of §*The Pair Operator on the Algebra*, with $-\tilde K_{\Phi}\tilde K_{\Phi}^{\natural}=p^2$, so the symbol squares to $p^2$ times the identity, $(\mathbb{D}_p-mc)(\mathbb{D}_p+mc)=(p^2-m^{2}\,c^{2})I$, and the kernel of $\mathbb{D}-k_m$ at momentum $p$ is $(\mathbb{D}_p+mc)/(p^2-m^{2}\,c^{2})$. The Gaussian weight of the finite-mode section carries $M=-i(\mathbb{D}-k_m)$, so the free two-point amplitude is
 
 $$
 S_F(p)=\frac{i(\mathbb{D}_p+mc)}{p^2-m^{2}\,c^{2}+i\epsilon}=-\frac{i(\mathbb{D}_p+mc)}{\tilde P_{\Phi}\tilde P_{\Phi}^{\natural}+m^{2}\,c^{2}-i\epsilon}.
