@@ -10,7 +10,7 @@
 
 **The ledger.** Four kinds of statement are in play, and the article keeps them apart.
 
-- **Established, and recomputed below.** A Dirac field is an element with independent values and eight real components. A Weyl field is an element of one value, with four. A Majorana field is the fixed space of an antilinear involution of square one, also with four. The Majorana condition is consistent with a mass: the mass shell stays $p^{2}=m^{2}$, and half the degrees of freedom are removed, not the mass. The vector current of the self-conjugate field vanishes, so the field carries no fermion number.
+- **Established, and recomputed below.** A Dirac field is an element with independent values and eight real components. A Weyl field is an element of one value, with four. A Majorana field is the fixed space of an antilinear involution of square one, also with four. The Majorana condition is consistent with a mass: the mass shell stays $p^{2}=m^{2}c^{2}$, and half the degrees of freedom are removed, not the mass. The vector current of the self-conjugate field vanishes, so the field carries no fermion number.
 - **Established elsewhere in the corpus, and sharpened here.** The three notions are read directly on the element, because the field *is* an element and the two values are the two eigenspaces of one operator of the frame. Nothing in the construction is a column, a block or an ideal, and none of the older objects enters.
 - **Arithmetical, and recorded because it looks paradoxical.** A commuting c-number element that satisfies the same algebraic condition gives the *opposite* bilinear pattern: its scalar pairing vanishes and its vector current does not. The pattern is a property of the anticommuting field, and the sign by which the two cases differ is the anticommutativity alone.
 - **Not established, and left visible.** The left-handedness of the neutrino is empirical. The framework transcribes the chiral gauge structure, it does not derive the assignment. The value of the mass and the size of the mixing are outside the algebra.
@@ -108,7 +108,7 @@ $$
 
 because every coefficient of $D$ is real and the central $i$ passes through the operator. The fourth line is the whole reason the construction works, and it is a statement about where the $i$ sits: the operator is built from multipliers the conjugation fixes, so the conjugation passes through it, and the phase $i$ is carried by the field and not by the frame.
 
-**What the conjugation reverses.** The operator is real, and its symbol at fixed momentum is not. On a plane wave $e^{-ip\cdot x}$ the operator acts as the multiplier
+**What the conjugation reverses.** The operator is real, and its symbol at fixed momentum is not. On a plane wave $e^{-i(p\cdot x)/\hbar}$ the operator acts as the multiplier
 
 $$
 D_p=-i\sum_\mu\varepsilon_\mu\,p_\mu\,c_\mu ,
@@ -175,7 +175,7 @@ $$
 \Box\,\tilde{Ξ}_{\mathrm{sp}}=D^{2}\tilde{Ξ}_{\mathrm{sp}}=k_mD\,\tilde{Ξ}_{\mathrm{sp}}^c=k_m^{2}\,\tilde{Ξ}_{\mathrm{sp}} ,
 $$
 
-so a plane wave of the field sits on $p^{2}=m^{2}$, exactly as in the Dirac case. The mass shell is the one of a massive fermion, and the Majorana restriction has removed half the degrees of freedom and nothing else. The bilinear that normalises the field is the one of the companion quantisation article, and it is nonzero for $m>0$. Here $k_m=mc/\hbar$ is the mass wave number, the inverse of the mass length.
+so a plane wave of the field sits on $p^{2}=m^{2}c^{2}$, exactly as in the Dirac case. The mass shell is the one of a massive fermion, and the Majorana restriction has removed half the degrees of freedom and nothing else. The bilinear that normalises the field is the one of the companion quantisation article, and it is nonzero for $m>0$. Here $k_m=mc/\hbar$ is the mass wave number, the inverse of the mass length.
 
 **No single mode is self-conjugate.** At fixed momentum the equation reads $D_p u=m\,\mathcal{C}u$, and $\mathcal{C}$ anticommutes with $D_p$, so it carries the kernel of $D_p-m$ to the kernel of $D_p+m$. A solution of definite frequency therefore has a conjugate of the opposite frequency, and no one mode is its own conjugate. The self-conjugate field is a pair of opposite frequencies, one amplitude at $p$ and its conjugate at $-p$, and each amplitude solves its own equation. That is the standard statement that the charge conjugate of a positive-frequency amplitude is a negative-frequency one, and it is why the condition does not quantise the theory into nothing.
 
@@ -283,7 +283,7 @@ The framework transcribes both facts, and neither is a derivation.
 | Weyl: four real components; Majorana: four; Dirac: eight | supplied | the dimensions of a value and of a fixed space of an involution |
 | The charge conjugation is the coefficient bar | supplied | the bar is the only conjugate-linear automorphism; the phase in front of it is convention |
 | The conjugation commutes with the kinetic operator | supplied | the four coefficients of the operator are real |
-| The mass shell stays $p^{2}=m^{2}$ | supplied | $D^{2}=\Box$ and $\mathcal{C}^{2}=1$ |
+| The mass shell stays $p^{2}=m^{2}c^{2}$ | supplied | $D^{2}=\Box$ and $\mathcal{C}^{2}=1$ |
 | The vector current of the self-conjugate field vanishes | supplied | the anticommutation of the components |
 | A commuting element gives the opposite pattern | recorded | the same computation without anticommutation |
 | The sector split is not the Majorana real form | supplied | the operator does not preserve $\mathbb{B}_{\Phi}$ |
@@ -360,7 +360,7 @@ The field is an element of $\mathbb{B}$. Its chirality is a value of one operato
 
 The charge conjugation is the coefficient conjugate, $\tilde{Ξ}_{\mathrm{sp}}^c=i\bar{\tilde{Ξ}}_{\mathrm{sp}}$ up to the phase discussed above. It is conjugate-linear, it squares to one, it exchanges the two values, it fixes a real four-dimensional space, and it commutes with the kinetic operator of the frame. The last property holds because every coefficient of the operator is real: the operator is built from multipliers the conjugation fixes, so the conjugation passes through it. On the symbol the same fact reads as anticommutation, and it is the reversal of the frequency that the conjugation performs on a plane wave.
 
-The Majorana condition $\tilde{Ξ}_{\mathrm{sp}}=\tilde{Ξ}_{\mathrm{sp}}^c$ is therefore consistent with a mass. The constraint is propagated, the deviation from self-conjugacy solves the equation with the reversed sign of the mass, the mass shell stays $p^{2}=m^{2}$, and the restriction removes half the degrees of freedom and not the mass. No single mode is self-conjugate: the condition pairs an amplitude at $p$ with its conjugate at $-p$. The vector current of the self-conjugate field vanishes, so the field carries no fermion number; the scalar pairing survives, and it is the mass term. Both statements are statements about an anticommuting field, and a commuting element gives the opposite pattern.
+The Majorana condition $\tilde{Ξ}_{\mathrm{sp}}=\tilde{Ξ}_{\mathrm{sp}}^c$ is therefore consistent with a mass. The constraint is propagated, the deviation from self-conjugacy solves the equation with the reversed sign of the mass, the mass shell stays $p^{2}=m^{2}c^{2}$, and the restriction removes half the degrees of freedom and not the mass. No single mode is self-conjugate: the condition pairs an amplitude at $p$ with its conjugate at $-p$. The vector current of the self-conjugate field vanishes, so the field carries no fermion number; the scalar pairing survives, and it is the mass term. Both statements are statements about an anticommuting field, and a commuting element gives the opposite pattern.
 
 Which conjugation of the algebra plays the role is decided by one criterion: a real structure on a field that carries the algebra's left action must be an automorphism, and the coefficient bar is the only conjugate-linear automorphism. The Hermitian conjugation and $\flat$ reverse the order and cannot serve. The fixed space of the charge conjugation is the real-quaternion form multiplied by the central phase, and it is not the material sector: the sector split is a different decomposition of the same algebra, and the operator does not preserve it, because $\vec e_x$ is anti-Hermitian and $\vec e_x^{2}=-e_t$ is not. The split therefore obstructs the reality condition rather than supplying it.
 

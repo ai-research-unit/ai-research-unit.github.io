@@ -81,7 +81,7 @@ $$
 P(p)^2=p_0^2-\vec p^2,
 $$
 
-and the mass-shell condition is $P(p)^2=m^2$, that is $p_0^2-\vec p^2=m^2$.
+and the mass-shell condition is $P(p)^2=m^{2}c^{2}$, that is $p_0^2-\vec p^{\,2}=m^{2}c^{2}$.
 
 ### The two Dirac equations of the external states
 
@@ -115,7 +115,7 @@ P(p)\,\tilde u(p)=m\,\tilde u(p),
 P(k)\,\tilde v(k)=-m\,\tilde v(k),
 $$
 
-with the momentum cell acting on the element as defined. The two lines are distinguished by the sign of the mass term, because $\tilde u$ carries the positive-frequency factor $e^{-ip\cdot x}$ and $\tilde v$ the negative-frequency factor $e^{+ip\cdot x}$; the opposite sign is the crossing, not a second mass. This is not the two-sided equation: there the mass acts on the right by a unit and the field is conjugated, here the mass is the central scalar $m$ and the field is not.
+with the momentum cell acting on the element as defined. The two lines are distinguished by the sign of the mass term, because $\tilde u$ carries the positive-frequency factor $e^{-i(p\cdot x)/\hbar}$ and $\tilde v$ the negative-frequency factor $e^{+i(p\cdot x)/\hbar}$; the opposite sign is the crossing, not a second mass. This is not the two-sided equation: there the mass acts on the right by a unit and the field is conjugated, here the mass is the central scalar $m$ and the field is not.
 
 ### The two amplitudes
 

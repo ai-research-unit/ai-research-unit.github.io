@@ -39,15 +39,15 @@ $$
 The gradient and its conjugate act on the plane wave by left multiplication by the two symbols,
 
 $$
-\tilde{\nabla}\,e^{-ip\cdot x} = i\tilde{P}_{\Phi}\,e^{-ip\cdot x},
+\tilde{\nabla}\,e^{-i(p\cdot x)/\hbar} = i\tilde K_{\Phi}\,e^{-i(p\cdot x)/\hbar},
 \qquad
-\tilde{\nabla}^{\natural}\,e^{-ip\cdot x} = i\tilde{P}_{\Phi}^{\natural}\,e^{-ip\cdot x},
+\tilde{\nabla}^{\natural}\,e^{-i(p\cdot x)/\hbar} = i\tilde K_{\Phi}^{\natural}\,e^{-i(p\cdot x)/\hbar},
 $$
 
-a derived form: the time derivative of the phase is $-ip_0$ and the spatial derivative $+ip_k$, and on the material sector the time derivative of the gradient is read with $\partial/\partial R_t = -i\,\partial/\partial x_0$ (*Operator and Calculus Conventions*, §*The Gradient*). The product of the two symbols is the symbol of the d'Alembertian,
+a derived form: the time derivative of the phase is $-ip_0/\hbar$ and the spatial derivative $+ip_k/\hbar$, the two wave numbers $k_{t}^{\prime}$ and $k_k$, and on the material sector the time derivative of the gradient is read with $\partial/\partial R_t = -i\,\partial/\partial x_0$ (*Operator and Calculus Conventions*, §*The Gradient*). The product of the two symbols is the symbol of the d'Alembertian,
 
 $$
-i\tilde{P}_{\Phi}\,i\tilde{P}_{\Phi}^{\natural} = -\langle\tilde{P}_{\Phi}\rangle_{\natural} = p^2 .
+i\tilde K_{\Phi}\,i\tilde K_{\Phi}^{\natural} = -\langle\tilde K_{\Phi}\rangle_{\natural} = \frac{p^2}{\hbar^{2}} .
 $$
 
 The sign bookkeeping is the whole of that line. The two factors of $i$ multiply to $-1$ and the norm is $-p^2$, so the product of the two symbols is the mass-shell scalar itself. Either order gives the same product, because the norm of an element is central: the sign with which the momentum is contracted is a labelling convention and not something the square can see.
@@ -99,9 +99,9 @@ This is standard relativistic quantum physics (see the Further Reading); the com
 **The propagator is the scalar kernel acted on by the first-order operator.** Write
 
 $$
-\Delta_F(x-x_2) = \int\frac{d^4p}{(2\pi)^4}\,
+\Delta_F(x-x_2) = \int\frac{d^4p}{(2\pi\hbar)^4}\,
 \frac{i}{p^2 - k_m^{2} + i\epsilon}\,
-\exp(-ip\cdot(x-x_2)),
+\exp(-i(p\cdot(x-x_2))/\hbar),
 \qquad
 \left(\Box - k_m^{2}\right)\Delta_F = i\,\delta^{(4)},
 $$
@@ -154,8 +154,8 @@ The deficiency of this representation is that the spin is nowhere to be seen unt
 It is worth evaluating the scalar worldline kernel in the free case, because the calculation is the whole content of the proper-time method and fixes the sense in which a first-order object is a square root. The proper-time kernel is the Fourier transform
 
 $$
-\Delta_F(x,x_2) = \int_0^\infty dT\int\frac{d^4p}{(2\pi)^4}\,
-\exp\left(iT\left(p^2 - k_m^{2} + i\epsilon\right)\right)\,\exp(-ip\cdot(x-x_2)),
+\Delta_F(x,x_2) = \int_0^\infty dT\int\frac{d^4p}{(2\pi\hbar)^4}\,
+\exp\left(iT\left(p^2 - k_m^{2} + i\epsilon\right)\right)\,\exp(-i(p\cdot(x-x_2))/\hbar),
 $$
 
 where the $i\epsilon$ prescription makes the $T$-integral converge at large $T$. The $p$-integral is a Gaussian: completing the square in each of the four components gives the standard free kernel

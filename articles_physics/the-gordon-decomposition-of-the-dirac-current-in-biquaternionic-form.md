@@ -126,8 +126,8 @@ Let $\tilde{Ξ}_{\mathrm{sp}}$ be a solution of the field equation of §*The Two
 $$
 \boxed{\;
 \bar{\tilde{Ξ}}_{\mathrm{sp}}\,i\,e_\mu\,\tilde{Ξ}_{\mathrm{sp}}\,\vec e_{\nu(\mu)}
-=\frac{i}{2\,m}\Big(\bar{\tilde{Ξ}}_{\mathrm{sp}}\,\partial_\mu\tilde{Ξ}_{\mathrm{sp}}-\overline{\partial_\mu\tilde{Ξ}_{\mathrm{sp}}}\,\tilde{Ξ}_{\mathrm{sp}}\Big)
-+\frac{1}{m}\sum_\nu\varepsilon_\nu\,\partial_\nu\Big(\bar{\tilde{Ξ}}_{\mathrm{sp}}\,\Sigma_{\mu\nu}\tilde{Ξ}_{\mathrm{sp}}\Big)\;}
+=\frac{i}{2\,k_m}\Big(\bar{\tilde{Ξ}}_{\mathrm{sp}}\,\partial_\mu\tilde{Ξ}_{\mathrm{sp}}-\overline{\partial_\mu\tilde{Ξ}_{\mathrm{sp}}}\,\tilde{Ξ}_{\mathrm{sp}}\Big)
++\frac{1}{k_m}\sum_\nu\varepsilon_\nu\,\partial_\nu\Big(\bar{\tilde{Ξ}}_{\mathrm{sp}}\,\Sigma_{\mu\nu}\tilde{Ξ}_{\mathrm{sp}}\Big)\;}
 $$
 
 The spin generator $\Sigma_{\mu\nu}$ is $\frac{i}{4}$ times the commutator of the $\mu$-th and $\nu$-th generators, antisymmetric in its two indices; its action on an element is written $\Sigma_{\mu\nu}\tilde{Ξ}_{\mathrm{sp}}$. The $i$ is the one the generator already carries. It is $i$ times the Lorentz generator of *Matrix Representations Conventions*, which is half the bivector of the pair; written out, $\Sigma_{23}$ is the left multiplication by $\frac{i}{2}\vec e_x$, and $\Sigma_{01}$ multiplies by $\frac{i}{2}\vec e_x$ on the left and by $\vec e_z$ on the right. The spin term is a total divergence, and the antisymmetry of $\Sigma_{\mu\nu}$ is what makes it one.
@@ -162,8 +162,8 @@ $$
 The weight collapses the sum, because $\varepsilon_\nu\varepsilon_\mu\delta_{\mu\nu}$ is $\varepsilon_\mu^2=1$ at $\nu=\mu$ and $0$ otherwise, so only the term $\nu=\mu$ survives and the coefficient of the convection bracket is the same $-i$ for all four components. The bivector part is a total derivative because $\Sigma_{\mu\nu}$ is a constant action and is antisymmetric in its two indices: the derivative of the bilinear is the sum of the two bivector pieces, one with the derivative on each factor. Dividing by $2m$,
 
 $$
-j_\mu=\frac{i}{2\,m}\Big(\bar{\tilde{Ξ}}_{\mathrm{sp}}\,\partial_\mu\tilde{Ξ}_{\mathrm{sp}}-\overline{\partial_\mu\tilde{Ξ}_{\mathrm{sp}}}\,\tilde{Ξ}_{\mathrm{sp}}\Big)
-+\frac{1}{m}\sum_\nu\varepsilon_\nu\,\partial_\nu\Big(\bar{\tilde{Ξ}}_{\mathrm{sp}}\,\Sigma_{\mu\nu}\tilde{Ξ}_{\mathrm{sp}}\Big),
+j_\mu=\frac{i}{2\,k_m}\Big(\bar{\tilde{Ξ}}_{\mathrm{sp}}\,\partial_\mu\tilde{Ξ}_{\mathrm{sp}}-\overline{\partial_\mu\tilde{Ξ}_{\mathrm{sp}}}\,\tilde{Ξ}_{\mathrm{sp}}\Big)
++\frac{1}{k_m}\sum_\nu\varepsilon_\nu\,\partial_\nu\Big(\bar{\tilde{Ξ}}_{\mathrm{sp}}\,\Sigma_{\mu\nu}\tilde{Ξ}_{\mathrm{sp}}\Big),
 $$
 
 which is the identity as stated. The spin term is the divergence of a bilinear and not the bilinear times a divergence, and that is the content of the last step: the two bivector contributions add into one derivative.
@@ -202,15 +202,15 @@ Between such solutions the Gordon decomposition reads
 $$
 \boxed{\;
 \bar w_2\,i\,e_\mu\,w\,\vec e_{\nu(\mu)}
-= \frac{(p+p_2)_\mu}{2m}\,\bar w_2w
-+ \frac{i}{m}\sum_\nu\varepsilon_\nu\,(p_2-p)_\nu\,\bar w_2\,\Sigma_{\mu\nu}w\;}
+= \frac{(p+p_2)_\mu}{2\,m\,c}\,\bar w_2w
++ \frac{i}{m\,c}\sum_\nu\varepsilon_\nu\,(p_2-p)_\nu\,\bar w_2\,\Sigma_{\mu\nu}w\;}
 $$
 
 Equivalently, with the momentum transfer $k_\nu=(p_2-p)_\nu$ and the average momentum $P_\mu=\tfrac12(p+p_2)_\mu$,
 
 $$
 \bar w_2\,i\,e_\mu\,w\,\vec e_{\nu(\mu)}
-=\frac{1}{m}\Big(P_\mu\,\bar w_2w
+=\frac{1}{m\,c}\Big(P_\mu\,\bar w_2w
 + i\sum_\nu\varepsilon_\nu\,k_\nu\,\bar w_2\Sigma_{\mu\nu}w\Big).
 $$
 
@@ -255,8 +255,8 @@ With both products expanded as above and the chirality cell moved to the front o
 
 $$
 \bar w_2\,e_\mu\,w\,\vec e_z\vec e_{\nu(\mu)}
-= \frac{(p_2-p)_\mu}{2m}\,\bar w_2\big(-i\,w\,\vec e_z\big)
-+ \frac{i}{m}\sum_\nu\varepsilon_\nu\,(p_2+p)_\nu\,\bar w_2\big(-i\,\Sigma_{\mu\nu}w\,\vec e_z\big).
+= \frac{(p_2-p)_\mu}{2\,m\,c}\,\bar w_2\big(-i\,w\,\vec e_z\big)
++ \frac{i}{m\,c}\sum_\nu\varepsilon_\nu\,(p_2+p)_\nu\,\bar w_2\big(-i\,\Sigma_{\mu\nu}w\,\vec e_z\big).
 $$
 
 The vector identity has the average momentum in the convection slot and the transfer in the spin slot; the axial identity has the transfer in the convection slot and the average momentum in the spin slot. The exchange is not an extra fact about the algebra: it is the minus sign that the exchange of the value puts on the weight term and withholds from the bivector term.
@@ -267,11 +267,11 @@ The vector identity has the average momentum in the convection slot and the tran
 
 The two terms of the momentum-space identity have a direct interpretation, and that is why the decomposition is useful.
 
-The **convection term** is $\frac{(p+p_2)_\mu}{2m}\bar w_2w$. It is the current of a charged scalar of mass $m$ and momentum $\tfrac12(p+p_2)$: the orbital part. It depends on the average four-momentum, it reduces to $\bar w_2w\,v_\mu$ in the non-relativistic limit, and it is the piece protected by gauge invariance.
+The **convection term** is $\frac{(p+p_2)_\mu}{2\,m\,c}\bar w_2w$. It is the current of a charged scalar of mass $m$ and momentum $\tfrac12(p+p_2)$: the orbital part. It depends on the average four-momentum, it reduces to $\bar w_2w\,v_\mu$ in the non-relativistic limit, and it is the piece protected by gauge invariance.
 
-The **spin term** is $\frac{i}{m}\sum_\nu\varepsilon_\nu(p_2-p)_\nu\bar w_2\Sigma_{\mu\nu}w$. It depends on the momentum **transfer** and on the tensor bilinear, and it is the piece that carries the magnetic moment: a spin density produces a current only where its density varies, and the variation is what the transfer measures.
+The **spin term** is $\frac{i}{m\,c}\sum_\nu\varepsilon_\nu(p_2-p)_\nu\bar w_2\Sigma_{\mu\nu}w$. It depends on the momentum **transfer** and on the tensor bilinear, and it is the piece that carries the magnetic moment: a spin density produces a current only where its density varies, and the variation is what the transfer measures.
 
-The identification of the second term with the spin density is not a metaphor. In position space it is $\frac1m\sum_\nu\varepsilon_\nu\partial_\nu(\bar{\tilde{Ξ}}_{\mathrm{sp}}\Sigma_{\mu\nu}\tilde{Ξ}_{\mathrm{sp}})$, a total divergence of an antisymmetric bilinear, and in three dimensions the spatial indices of that bilinear pair into the spin three-vector. The bilinear $\bar{\tilde{Ξ}}_{\mathrm{sp}}\Sigma_{\mu\nu}\tilde{Ξ}_{\mathrm{sp}}$ is the density whose integral is the spin of the state.
+The identification of the second term with the spin density is not a metaphor. In position space it is $\frac1{k_m}\sum_\nu\varepsilon_\nu\partial_\nu(\bar{\tilde{Ξ}}_{\mathrm{sp}}\Sigma_{\mu\nu}\tilde{Ξ}_{\mathrm{sp}})$, a total divergence of an antisymmetric bilinear, and in three dimensions the spatial indices of that bilinear pair into the spin three-vector. The bilinear $\bar{\tilde{Ξ}}_{\mathrm{sp}}\Sigma_{\mu\nu}\tilde{Ξ}_{\mathrm{sp}}$ is the density whose integral is the spin of the state.
 
 ### The magnetic moment and $g=2$
 
@@ -298,7 +298,7 @@ The same decomposition underlies the companion article on the classical origin o
 
 The covariant identity needs $m\neq0$, because both terms carry $1/m$. A massless field has no mass to divide by, and the energy $E$ is the only scale available. The **structure** of the decomposition survives this step, and only the normalisation changes: one term is still a transport current, the other is still a total divergence.
 
-Two statements can be made without a new derivation. The convection term, for a near plane wave of finite extent, is the charge transported at the group velocity, $e\rho\,\vec k/E=e\rho\,\vec v$ with $\rho=j_0$ and $\vec v=\vec k/E$; this reading uses only the density and the momentum, and it is the same in both regimes. The spin term is the divergence of the spin density, and in three dimensions the divergence of the antisymmetric pair of spatial indices is the curl of the spin three-vector,
+Two statements can be made without a new derivation. The convection term, for a near plane wave of finite extent, is the charge transported at the group velocity, $e\rho\,\vec k_\Phi/E=e\rho\,\vec v$ with $\rho=j_0$ and $\vec v=\vec k_\Phi/E$; this reading uses only the density and the momentum, and it is the same in both regimes. The spin term is the divergence of the spin density, and in three dimensions the divergence of the antisymmetric pair of spatial indices is the curl of the spin three-vector,
 
 $$
 \vec S=\big(\bar{\tilde{Ξ}}_{\mathrm{sp}}\Sigma_{23}\tilde{Ξ}_{\mathrm{sp}},\;\bar{\tilde{Ξ}}_{\mathrm{sp}}\Sigma_{31}\tilde{Ξ}_{\mathrm{sp}},\;\bar{\tilde{Ξ}}_{\mathrm{sp}}\Sigma_{12}\tilde{Ξ}_{\mathrm{sp}}\big),
@@ -426,16 +426,16 @@ The Gordon decomposition splits the on-shell current of the field as
 
 $$
 \bar{\tilde{Ξ}}_{\mathrm{sp}}\,i\,e_\mu\,\tilde{Ξ}_{\mathrm{sp}}\,\vec e_{\nu(\mu)}
-=\frac{i}{2\,m}\Big(\bar{\tilde{Ξ}}_{\mathrm{sp}}\,\partial_\mu\tilde{Ξ}_{\mathrm{sp}}-\overline{\partial_\mu\tilde{Ξ}_{\mathrm{sp}}}\,\tilde{Ξ}_{\mathrm{sp}}\Big)
-+\frac{1}{m}\sum_\nu\varepsilon_\nu\,\partial_\nu\Big(\bar{\tilde{Ξ}}_{\mathrm{sp}}\,\Sigma_{\mu\nu}\tilde{Ξ}_{\mathrm{sp}}\Big),
+=\frac{i}{2\,k_m}\Big(\bar{\tilde{Ξ}}_{\mathrm{sp}}\,\partial_\mu\tilde{Ξ}_{\mathrm{sp}}-\overline{\partial_\mu\tilde{Ξ}_{\mathrm{sp}}}\,\tilde{Ξ}_{\mathrm{sp}}\Big)
++\frac{1}{k_m}\sum_\nu\varepsilon_\nu\,\partial_\nu\Big(\bar{\tilde{Ξ}}_{\mathrm{sp}}\,\Sigma_{\mu\nu}\tilde{Ξ}_{\mathrm{sp}}\Big),
 $$
 
 into a convection part and the divergence of a spin density, $\Sigma_{\mu\nu}$ being $i$ times the conventions' Lorentz generator, half the bivector of the pair. The field is an element of $\mathbb{B}$ and the current is a pairing, a scalar part of a product of elements whose last factor is the frame's unit $c_\mu$. In momentum space the same statement is
 
 $$
 \bar w_2\,i\,e_\mu\,w\,\vec e_{\nu(\mu)}
-= \frac{(p+p_2)_\mu}{2m}\,\bar w_2w
-+ \frac{i}{m}\sum_\nu\varepsilon_\nu\,(p_2-p)_\nu\,\bar w_2\Sigma_{\mu\nu}w,
+= \frac{(p+p_2)_\mu}{2\,m\,c}\,\bar w_2w
++ \frac{i}{m\,c}\sum_\nu\varepsilon_\nu\,(p_2-p)_\nu\,\bar w_2\Sigma_{\mu\nu}w,
 $$
 
 where the first term is the current of a charged scalar and the second is the spin term whose coefficient gives $g=2$. The decomposition requires $m\neq0$ because both terms carry $1/m$; in the massless regime the energy $E$ replaces the mass as the scale of both terms, the spin term remains the curl of the spin density, and the locked moment of a one-valued field is what remains of the Dirac moment when the rest frame is lost. The Belinfante–Rosenfeld tensor contains the same spin term with coefficient $\tfrac12$ in the momentum density, and the mismatch between that $\tfrac12$ and the current's $1$ is the angular-momentum face of $g=2$. The axial companion is the same parent identity at the real action $e_\mu\cdot\vec e_z\vec e_{\nu(\mu)}$, and there the transfer and the average momentum exchange their slots.

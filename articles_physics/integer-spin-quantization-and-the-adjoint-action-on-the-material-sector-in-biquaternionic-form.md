@@ -76,7 +76,7 @@ $$
 which was verified to machine precision on the three-dimensional representation: the residual of $[\tilde S_{\Psi,\mathrm{adj},i},\tilde S_{\Psi,\mathrm{adj},j}]-i\varepsilon_{ijk}\tilde S_{\Psi,\mathrm{adj},k}$ was zero for all nine pairs. The quadratic Casimir is
 
 $$
-\tilde S_{\Psi,\mathrm{adj}}\,2} = (\tilde S_{\Psi,\mathrm{adj},1})^2+(\tilde S_{\Psi,\mathrm{adj},2})^2+(\tilde S_{\Psi,\mathrm{adj},3})^2 = 2\,I_3,
+\tilde S_{\Psi,\mathrm{adj}}^2 = (\tilde S_{\Psi,\mathrm{adj},1})^2+(\tilde S_{\Psi,\mathrm{adj},2})^2+(\tilde S_{\Psi,\mathrm{adj},3})^2 = 2\,I_3,
 $$
 
 verified with residual zero. The value $2=s(s+1)$ at $s=1$ is the algebraic statement that the adjoint action on $V$ is the **spin-one** representation, and $2s+1=3$ is the dimension of $V$. No further input is needed: once the multiplication table of the quaternion units is fixed, the representation is fixed.
@@ -232,10 +232,10 @@ $$
 with polarization labels $\xi_r$ and mode operators satisfying
 
 $$
-\left[a_{\mathrm{fop},r}(\vec p),a_{\mathrm{fop},s}^{\dagger}(\vec k)\right]
-= \delta_{rs}(2\pi)^3\delta^{(3)}(\vec p-\vec k),
+\left[a_{\mathrm{fop},r}(\vec p),a_{\mathrm{fop},s}^{\dagger}(\vec k_\Phi)\right]
+= \delta_{rs}(2\pi)^3\delta^{(3)}(\vec p-\vec k_\Phi),
 \qquad
-\left[a_{\mathrm{fop},r}(\vec p),a_{\mathrm{fop},s}(\vec k)\right]=0 .
+\left[a_{\mathrm{fop},r}(\vec p),a_{\mathrm{fop},s}(\vec k_\Phi)\right]=0 .
 $$
 
 The Fock space is the symmetric (bosonic) algebra over the one-particle space, and the Hamiltonian is normal-ordered, $:H:=\int d^3p/(2\pi)^3\,\omega_{\vec p}\sum_ra_{\mathrm{fop},r}^{\dagger}a_{\mathrm{fop},r}$, with $2s+1$ half-quanta per mode in the vacuum energy. For a massive integer-spin field the $2s+1$ polarizations all have positive norm, as in the Proca case; for a massless one the covariant description requires the indefinite metric and the subsidiary condition, and the physical polarizations are the two helicity states $\pm s$.
@@ -248,7 +248,7 @@ The massive integer-spin case is the case in which the little group is $\mathrm{
 
 ## What the Algebra Supplies and What It Imports
 
-**Supplied by the algebra, and recomputed here.** The inner derivations $\mathrm{ad}_{i\vec e_k}$ as the rotation generators, and the fact that they preserve the material sector; the invariant vector part $V$ and the scalar direction $ie_t$, giving the internal decomposition $\mathbb{B}_{\Phi}=\mathrm{span}_{\mathbb{R}}\{ie_t\}\oplus V$; the commutation relations $[\tilde S_{\Psi,\mathrm{adj},i},\tilde S_{\Psi,\mathrm{adj},j}]=i\varepsilon_{ijk}\tilde S_{\Psi,\mathrm{adj},k}$; the Casimir eigenvalue $\tilde S_{\Psi,\mathrm{adj}}\,2}=2I$, which is the algebraic statement of spin one; the weight basis $\varepsilon_\pm,\varepsilon_0$ and the ladder structure $\tilde S_{\Psi,\mathrm{adj},\pm}$; the identity $(\tilde S_{\Psi,\mathrm{adj},3})^3=\tilde S_{\Psi,\mathrm{adj},3}$; the tensor-power construction of the higher integer-spin carriers, with the trace removal supplied by the algebra's bilinear form.
+**Supplied by the algebra, and recomputed here.** The inner derivations $\mathrm{ad}_{i\vec e_k}$ as the rotation generators, and the fact that they preserve the material sector; the invariant vector part $V$ and the scalar direction $ie_t$, giving the internal decomposition $\mathbb{B}_{\Phi}=\mathrm{span}_{\mathbb{R}}\{ie_t\}\oplus V$; the commutation relations $[\tilde S_{\Psi,\mathrm{adj},i},\tilde S_{\Psi,\mathrm{adj},j}]=i\varepsilon_{ijk}\tilde S_{\Psi,\mathrm{adj},k}$; the Casimir eigenvalue $\tilde S_{\Psi,\mathrm{adj}}^2=2I$, which is the algebraic statement of spin one; the weight basis $\varepsilon_\pm,\varepsilon_0$ and the ladder structure $\tilde S_{\Psi,\mathrm{adj},\pm}$; the identity $(\tilde S_{\Psi,\mathrm{adj},3})^3=\tilde S_{\Psi,\mathrm{adj},3}$; the tensor-power construction of the higher integer-spin carriers, with the trace removal supplied by the algebra's bilinear form.
 
 **Imported, and left visible.** The Wigner classification and the little-group analysis; the bosonic oscillator algebra and the Fock construction; the normal-ordering and positivity arguments; the spin–statistics theorem, cited to the companion article; the Clebsch–Gordan series used to identify the content of the rank-two tensor; and the identification of the adjoint action's triplet with the polarizations of the massive vector field, which is a **physical interpretation** of an algebraic fact.
 
@@ -274,7 +274,7 @@ The massive integer-spin case is the case in which the little group is $\mathrm{
 
 Integer-spin quantization in the biquaternion framework rests on an identification: the adjoint action of the rotation algebra on the vector part of the material sector **is** the spin-one representation. The rotation generators are the inner derivations $\tilde S_{\Psi,\mathrm{adj},k}=\tfrac12\mathrm{ad}_{i\vec e_k}$, the vector part $V=\mathrm{span}_{\mathbb{C}}\{\vec e_x,\vec e_y,\vec e_z\}$ is invariant, and the imaginary scalar direction $ie_t$ is fixed, so that $\mathbb{B}_{\Phi}=\mathrm{span}_{\mathbb{R}}\{ie_t\}\oplus V$ decomposes into an internal spin-$0$ and spin-$1$ piece.
 
-The representation was computed explicitly: $[\tilde S_{\Psi,\mathrm{adj},i},\tilde S_{\Psi,\mathrm{adj},j}]=i\varepsilon_{ijk}\tilde S_{\Psi,\mathrm{adj},k}$ with residual zero, the Casimir $\tilde S_{\Psi,\mathrm{adj}}\,2}=2I$ with residual zero, the weight basis $\varepsilon_\pm=(\vec e_x\pm i\vec e_y)/\sqrt2$ and $\varepsilon_0=\vec e_z$ with $\tilde S_{\Psi,\mathrm{adj},3}$ eigenvalues $\pm1,0$, and the identity $(\tilde S_{\Psi,\mathrm{adj},3})^3-\tilde S_{\Psi,\mathrm{adj},3}=0$ that characterizes the triple. The ladder operators $\tilde S_{\Psi,\mathrm{adj},\pm}=\tilde S_{\Psi,\mathrm{adj},1}\pm i\tilde S_{\Psi,\mathrm{adj},2}$ shift between the weights with matrix element $\sqrt2$. The triplet is the polarization triad of the massive vector field, and the massless theory retains the two helicity states $\pm1$ while the gauge structure removes the $\lambda=0$ state.
+The representation was computed explicitly: $[\tilde S_{\Psi,\mathrm{adj},i},\tilde S_{\Psi,\mathrm{adj},j}]=i\varepsilon_{ijk}\tilde S_{\Psi,\mathrm{adj},k}$ with residual zero, the Casimir $\tilde S_{\Psi,\mathrm{adj}}^2=2I$ with residual zero, the weight basis $\varepsilon_\pm=(\vec e_x\pm i\vec e_y)/\sqrt2$ and $\varepsilon_0=\vec e_z$ with $\tilde S_{\Psi,\mathrm{adj},3}$ eigenvalues $\pm1,0$, and the identity $(\tilde S_{\Psi,\mathrm{adj},3})^3-\tilde S_{\Psi,\mathrm{adj},3}=0$ that characterizes the triple. The ladder operators $\tilde S_{\Psi,\mathrm{adj},\pm}=\tilde S_{\Psi,\mathrm{adj},1}\pm i\tilde S_{\Psi,\mathrm{adj},2}$ shift between the weights with matrix element $\sqrt2$. The triplet is the polarization triad of the massive vector field, and the massless theory retains the two helicity states $\pm1$ while the gauge structure removes the $\lambda=0$ state.
 
 For general integer spin the carrier is the symmetric traceless rank-$s$ tensor of $V$, the angular momentum is the sum of the adjoint actions on the factors, and the trace removal is effected by the algebra's bilinear form. The rank-one case is the adjoint action itself; the rank-two case is the graviton, with helicity $\pm2$. Integer-spin fields are quantized bosonically, with $2s+1$ mode pairs and positive norm in the massive case, and with the indefinite metric and the subsidiary condition in the massless one; the linkage between integer spin and commuting mode operators is the content of the spin–statistics theorem, which the algebra respects but does not by itself prove.
 
@@ -293,7 +293,7 @@ What the algebra supplies is the triplet, its ladder, its Casimir, and the tenso
 | $\tilde S_{\Psi,\mathrm{adj},k}=\tfrac12\mathrm{ad}_{i\vec e_k}$ | Hermitian angular-momentum (spin) generator |
 | $\tilde L_k$, $\tilde S_{\Psi,k}=\tilde S_{\Psi,\mathrm{adj},k}$ | Orbital and internal parts; $\tilde S_{\Psi,\mathrm{tot},k}=\tilde L_k+\tilde S_{\Psi,k}$ |
 | $[\tilde S_{\Psi,\mathrm{adj},i},\tilde S_{\Psi,\mathrm{adj},j}]=i\varepsilon_{ijk}\tilde S_{\Psi,\mathrm{adj},k}$ | Rotation algebra (verified, residual zero) |
-| $\tilde S_{\Psi,\mathrm{adj}}\,2}=(\tilde S_{\Psi,\mathrm{adj},1})^2+(\tilde S_{\Psi,\mathrm{adj},2})^2+(\tilde S_{\Psi,\mathrm{adj},3})^2=2I$ | Casimir; $2=s(s+1)$ at $s=1$ |
+| $\tilde S_{\Psi,\mathrm{adj}}^2=(\tilde S_{\Psi,\mathrm{adj},1})^2+(\tilde S_{\Psi,\mathrm{adj},2})^2+(\tilde S_{\Psi,\mathrm{adj},3})^2=2I$ | Casimir; $2=s(s+1)$ at $s=1$ |
 | $\varepsilon_\pm=(\vec e_x\pm i\vec e_y)/\sqrt2$, $\varepsilon_0=\vec e_z$ | Weight basis of the triplet; $\tilde S_{\Psi,\mathrm{adj},3}$ eigenvalues $\pm1,0$ |
 | $\tilde S_{\Psi,\mathrm{adj},\pm}=\tilde S_{\Psi,\mathrm{adj},1}\pm i\tilde S_{\Psi,\mathrm{adj},2}$ | Ladder operators, matrix element $\sqrt2$ |
 | $(\tilde S_{\Psi,\mathrm{adj},3})^3-\tilde S_{\Psi,\mathrm{adj},3}=0$ | Minimal polynomial of the spin-one generator |

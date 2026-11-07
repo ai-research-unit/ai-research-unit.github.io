@@ -71,10 +71,10 @@ $$
 \langle\tilde{Q}_{BA}\rangle_{\natural} = -c^2\,\Delta r'_{\mathrm{ret},t}\,\Delta r'_t_{\mathrm{adv}} .
 $$
 
-A signal therefore satisfies $\Delta r'_{\mathrm{ret},t} = 0$ or $\Delta r'_t_{\mathrm{adv}} = 0$, and a null plane wave has a phase proportional to one of them. For a wave of four-wavevector $\tilde P_{\Phi} =\frac{m\,c\,(i\omega/c\,e_t + \vec k)}{k_m}$ propagating along $\vec u_k$, the phase of the companion article *Exercise: The Relativistic Doppler Effect*,
+A signal therefore satisfies $\Delta r'_{\mathrm{ret},t} = 0$ or $\Delta r'_t_{\mathrm{adv}} = 0$, and a null plane wave has a phase proportional to one of them. For a wave of four-wavevector $\tilde P_{\Phi} =\frac{m\,c\,(i\omega/c\,e_t + \vec k_\Phi)}{k_m}$ propagating along $\vec u_k$, the phase of the companion article *Exercise: The Relativistic Doppler Effect*,
 
 $$
-Ξ = \mathrm{Sc}\!\left(\tilde P_{\Phi}\tilde{Q}^{\natural}\right) = \vec k\cdot(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z) - \omega r'_t/c = -\omega\left(r'_t - \frac{\vec u_k\cdot(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)}{c}\right) = -\omega\,r'_{\mathrm{ret},t}/c,
+Ξ = \mathrm{Sc}\!\left(\tilde P_{\Phi}\tilde{Q}^{\natural}\right) = \vec k_\Phi\cdot(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z) - \omega r'_t/c = -\omega\left(r'_t - \frac{\vec u_k\cdot(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)}{c}\right) = -\omega\,r'_{\mathrm{ret},t}/c,
 $$
 
 is the retarded coordinate multiplied by the frequency. The algebra's phase invariant is thus the statement that an exchange is labelled by a single null coordinate, and it is this coordinate that the signal carries from emitter to receiver.
@@ -371,7 +371,7 @@ The exchange of information and the synchronisation of clocks are built from the
 | $\mathrm{Sc}$ | Scalar projection |
 | $\vec u_{\mathrm s}$ | Propagation direction |
 | $r'_{\mathrm{ret},t} = r'_t-\vec u_{\mathrm s}\cdot(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)/c$, $r'_{\mathrm{adv},t} = r'_t+\vec u_{\mathrm s}\cdot(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)/c$ | Retarded and advanced radar coordinates |
-| $\tilde P_{\Phi} = i\omega/c\,e_t+\vec k$ | Four-wavevector |
+| $\tilde P_{\Phi} = i\omega/c\,e_t+\vec k_\Phi$ | Four-wavevector |
 | $Ξ = \mathrm{Sc}(\tilde P_{\Phi}\tilde{Q}^{\natural}) = -\omega r'_{\mathrm{ret},t}/c$ | Plane-wave phase |
 | $\tau$, $\Delta\tau$ | Proper time |
 | $\tilde{V}_{\Phi} = \gamma(ic\,e_t+\vec v)$, $\langle\tilde{V}_{\Phi}\rangle_{\natural}=-c^2$ | Clock four-velocity |

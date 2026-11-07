@@ -153,7 +153,7 @@ $$
 $$
 with the $\mathrm{U}(1)$ the phases and the $\mathbb{Z}_2$ the particle–hole exchange. There are no other one-mode Bogoliubov transformations. In particular there is **no continuous squeezing**: the Fock-preserving subgroup is $\mathrm{U}(1)$, the coset $O(2)/\mathrm{U}(1)$ is the two-point set $\{$identity, particle–hole$\}$, and the dimension formula $n(n-1)$ vanishes at $n=1$.
 
-The group-theoretic statement is worth restating physically. Fermionic squeezing is the pairing of two modes into a BCS-like condensate; it requires a *pair*, one mode at momentum $\vec k$ and one at $-\vec k$, and it is the $\vec k\leftrightarrow-\vec k$ mixing that produces the Bogoliubov coefficients. A single mode has no partner, so there is nothing to pair with, and the algebra cannot squeeze it. The absence of one-mode squeezing in $\mathbb{B}$ is therefore not a deficiency of the framework; it is the group theory of $O(2)$.
+The group-theoretic statement is worth restating physically. Fermionic squeezing is the pairing of two modes into a BCS-like condensate; it requires a *pair*, one mode at momentum $\vec k_\Phi$ and one at $-\vec k_\Phi$, and it is the $\vec k_\Phi\leftrightarrow-\vec k_\Phi$ mixing that produces the Bogoliubov coefficients. A single mode has no partner, so there is nothing to pair with, and the algebra cannot squeeze it. The absence of one-mode squeezing in $\mathbb{B}$ is therefore not a deficiency of the framework; it is the group theory of $O(2)$.
 
 ## What the Surviving Transformations Do
 

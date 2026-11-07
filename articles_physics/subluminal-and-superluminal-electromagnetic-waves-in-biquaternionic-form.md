@@ -44,7 +44,7 @@ two first-order equations in two chiral halves, and the spinorial part below is 
 **Worked action.** The operator is read off the multiplication table of the units. With $c=1$, constants die, and a coordinate times a unit returns the product of that coordinate's unit with the unit.
 
 | $\tilde{Ξ}_{\mathrm{sp}}$ | $\tilde\nabla\tilde{Ξ}_{\mathrm{sp}}$ |
-|---|---|
+|+-|+-|
 | $\vec e_z$ | $0$ |
 | $q_x\vec e_y$ | $\vec e_z$ |
 | $r'_t\vec e_x$ | $-i\vec e_x$ |
@@ -71,22 +71,22 @@ The spinor $\tilde{Ξ}_{\mathrm{sp}}$ is an element of the biquaternion algebra 
 The free equation $\tilde\nabla\tilde F=0$ is solved by the plane wave
 
 $$
-\tilde F = f\,\exp(i\theta_{\mathrm{pha}}),\qquad \theta_{\mathrm{pha}}=k_{t}^{\prime}x_0-\vec k\cdot\vec q ,
+\tilde F = f\,\exp(i\theta_{\mathrm{pha}}),\qquad \theta_{\mathrm{pha}}=k_{t}^{\prime}x_0-\vec k_\Phi\cdot\vec q ,
 $$
 
 with $f$ a constant element and $k$ the propagation vector. The gradient acts on the phase through the symbol
 
 $$
-\tilde K=k_{t}^{\prime}-i\vec k,\qquad \vec k=\sum_k\vec e_k k_k ,
+-i\tilde K_{\Phi}=k_{t}^{\prime}-i\vec k_\Phi,\qquad \vec k_\Phi=\sum_k\vec e_k k_k ,
 $$
 
-so the equation is $\tilde Kf=0$. Applying $\tilde K^{\natural}$ on the left gives $\tilde K^{\natural}\tilde Kf=(k_{t}^{\prime\,2}-|\vec k|^2)f=0$, and the propagation vector is **null**,
+so the equation is $-i\tilde K_{\Phi}f=0$. Applying $i\tilde K_{\Phi}^{\natural}$ on the left gives $i\tilde K_{\Phi}^{\natural}\cdot(-i\tilde K_{\Phi})f=-\tilde K_{\Phi}^{\natural}\tilde K_{\Phi}f=(k_{t}^{\prime\,2}-|\vec k_\Phi|^2)f=0$, and the propagation vector is **null**,
 
 $$
-k^2=0\quad\Longleftrightarrow\quad k_{t}^{\prime}=\pm|\vec k| .
+k^2=0\quad\Longleftrightarrow\quad k_{t}^{\prime}=\pm|\vec k_\Phi| .
 $$
 
-The condition $\tilde Kf=0$ is four independent complex conditions on the six complex components of $f$. On a null $k$ its kernel is two-dimensional, the two polarizations, and on the whole kernel $f^2=0$: the plane wave has **null invariants**. The step is not a cancellation, because a null $\tilde K$ has no inverse; it is the rank of left multiplication by a null element. Checked on the six components for several null $k$, the kernel is two-dimensional and $f^2=0$ on it. The invariant $\tilde F^2=f^2\exp(2i\theta_{\mathrm{pha}})$ vanishes with it.
+The condition $-i\tilde K_{\Phi}f=0$ is four independent complex conditions on the six complex components of $f$. On a null $k$ its kernel is two-dimensional, the two polarizations, and on the whole kernel $f^2=0$: the plane wave has **null invariants**. The step is not a cancellation, because a null $-i\tilde K_{\Phi}$ has no inverse; it is the rank of left multiplication by a null element. Checked on the six components for several null $k$, the kernel is two-dimensional and $f^2=0$ on it. The invariant $\tilde F^2=f^2\exp(2i\theta_{\mathrm{pha}})$ vanishes with it.
 
 Both facts are the standard ones, and the source's point in restating them is the contrast with what follows — the plane waves of the free equation sit on the special null case, and the source then exhibits solutions that do not.
 
@@ -405,7 +405,7 @@ $$
 and reads off $M_0=m$, $M_1=m_\mu$, $M_2=m_\tau$, $M_3=20090\,m_e=10291$ MeV. The formula gives none of those numbers. What reproduces the tau is the **last term alone**, $1+4^p$ at $p=2$, which is the $1+16$ of the tau paragraph above; $1+4^p$ and the sum coincide only at $p=1$:
 
 | $p$ | printed | $\sum_{l=0}^{p}4^l$ | from the sum | $1+4^p$ | from the last term |
-|---|---|---|---|---|---|
+|+-|+-|+-|+-|+-|+-|
 | 0 | $m_e$ | $1$ | $206.55\,m_e$ | $2$ | $412\,m_e$ |
 | 1 | $206.55\,m_e$ | $5$ | $1029\,m_e$ | $5$ | $1029\,m_e$ |
 | 2 | $3495\,m_e$ | $21$ | $4318\,m_e$ | $17$ | $3495\,m_e$ |
@@ -476,7 +476,7 @@ The programme of Rodrigues and Vaz works in a bundle of differential forms and p
 ## Summary of Notation
 
 | Symbol | Meaning |
-|---|---|
+|+-|+-|
 | $\mathbb{B}$ | The biquaternion algebra, of which the field and the spinor are elements |
 | $\varepsilon=(1,-1,-1,-1)$ | sign vector of the layer |
 | $\omega=-\vec e_z$ | Volume element, the pseudoscalar; $\omega^2=-e_t$; the source's "$i$", its duality generator, not the corpus's central $i$ |

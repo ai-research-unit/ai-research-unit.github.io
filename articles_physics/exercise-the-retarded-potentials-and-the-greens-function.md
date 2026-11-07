@@ -50,7 +50,7 @@ $$
 \qquad\text{so}\qquad
 \Box = \partial^2/\partial R_t^2 + \Delta = \Delta - \frac{\partial^2}{\partial {r'_{t}}^2} .
 $$
-The temporal term is negative and the spatial terms positive: $\Box$ is *hyperbolic*, the wave operator, not the elliptic operator obtained from it by the Wick rotation, in which all four directions enter with the same sign. The distinction matters here: the retarded kernel below is the fundamental solution of the hyperbolic operator, whereas the elliptic Cauchy kernel treated in the companion articles on biquaternion integration and analysis on subspaces is the fundamental solution of the Wick-rotated one. Acting on a plane wave $\exp(i(\vec k\cdot(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z) - \omega r'_t/c))$, the operator has symbol
+The temporal term is negative and the spatial terms positive: $\Box$ is *hyperbolic*, the wave operator, not the elliptic operator obtained from it by the Wick rotation, in which all four directions enter with the same sign. The distinction matters here: the retarded kernel below is the fundamental solution of the hyperbolic operator, whereas the elliptic Cauchy kernel treated in the companion articles on biquaternion integration and analysis on subspaces is the fundamental solution of the Wick-rotated one. Acting on a plane wave $\exp(i(\vec k_\Phi\cdot(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z) - \omega r'_t/c))$, the operator has symbol
 $$
 \Box \;\longmapsto\; -k^2 + \frac{\omega^2}{c^2} = \frac{\omega^2}{c^2} - k^2 .
 $$
@@ -140,19 +140,19 @@ $$
 $$
 This is the Jacobian the exercise warns about: the factor $1/(2R)$ is what turns the invariant coefficient $1/(2\pi)$ into the radial coefficient $1/(4\pi R)$. Dropping it — writing the radial kernel as $\frac{1}{2\pi}\delta(r'_t-R)$, or as $\frac{1}{2\pi R}\delta(r'_t-R)$, or as a coefficient without the $R$ in the denominator — gives a kernel that fails in part (a). The $\frac{du}{dg}$ term does not cancel, except for the middle form, whose $\frac{du}{dg}$ term does cancel but which produces twice the unit point source. The conversion was checked numerically for several pairs $(R,c)$ by smearing the invariant delta against test functions.
 
-**(c) The coefficient from the Fourier representation.** The defining equation in Fourier space is algebraic. With the transform convention $\delta^{(4)}(\tilde{Q}) = \int \frac{d^3k}{(2\pi)^3}\frac{d\omega}{2\pi}\,\exp(i(\vec k\cdot(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)-\omega r'_t/c))$ and the symbol $\omega^2/c^2 - k^2$ from part (a), the equation $(\omega^2/c^2 - k^2)G = -1$ gives
+**(c) The coefficient from the Fourier representation.** The defining equation in Fourier space is algebraic. With the transform convention $\delta^{(4)}(\tilde{Q}) = \int \frac{d^3k}{(2\pi)^3}\frac{d\omega}{2\pi}\,\exp(i(\vec k_\Phi\cdot(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)-\omega r'_t/c))$ and the symbol $\omega^2/c^2 - k^2$ from part (a), the equation $(\omega^2/c^2 - k^2)G = -1$ gives
 $$
-G(\vec k,\omega) = \frac{c^2}{c^2 k^2 - \omega^2},
+G(\vec k_\Phi,\omega) = \frac{c^2}{c^2 k^2 - \omega^2},
 \qquad
 G(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z,r'_t) = \int\frac{d^3k}{(2\pi)^3}\frac{d\omega}{2\pi}\,
-\frac{c^2\,\exp(i(\vec k\cdot(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)-\omega r'_t/c))}{c^2 k^2 - \omega^2},
+\frac{c^2\,\exp(i(\vec k_\Phi\cdot(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)-\omega r'_t/c))}{c^2 k^2 - \omega^2},
 $$
 where the inversion contour is not yet specified — this is exactly the ambiguity of Problem 3. The retarded choice shifts both $\omega$-poles below the real axis, $\omega \to \omega + i\epsilon$, i.e. the poles sit at $\omega = \pm ck - i\epsilon$. Closing the contour in the lower half-plane for $r'_t>0$ (and in the upper half-plane, with no poles, for $r'_t<0$) gives
 $$
 \int_{-\infty}^{\infty}\frac{d\omega}{2\pi}\,\frac{c^2\,\exp(-i\omega r'_t/c)}{c^2 k^2 - \omega^2}
 = \frac{c}{k}\,\sin(kr'_t)\,\mathrm{H}_{\mathrm{hvs}}(r'_t).
 $$
-The angular integral of $\exp(i\vec k\cdot(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z))$ over the directions of $\vec k$ introduces $\sin(kR)/(kR)$, so
+The angular integral of $\exp(i\vec k_\Phi\cdot(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z))$ over the directions of $\vec k_\Phi$ introduces $\sin(kR)/(kR)$, so
 $$
 G_{\mathrm{ret}}(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z,r'_t)
 = \frac{c}{2\pi^2 R}\int_0^\infty \sin(kR)\,\sin(kr'_t)\,dk

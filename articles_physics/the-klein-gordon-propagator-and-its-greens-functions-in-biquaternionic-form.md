@@ -44,28 +44,28 @@ $$
 and because both $\Box$ and the mass term are central and scalar, the equation is the ordinary complex scalar equation for $\xi_{\mathrm{scl}}$. On a plane wave with the material four-wavevector
 
 $$
-\tilde P_{\Phi}=i\frac{\omega}{c}e_t+\vec k\in\mathbb{B}_{\Phi},
+\tilde P_{\Phi}=i\frac{\omega}{c}e_t+\vec k_\Phi\in\mathbb{B}_{\Phi},
 \qquad
 \tilde R_\Phi=i r'_t\,e_t+r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z,
 \qquad
-\mathrm{Sc}(\tilde P_{\Phi}\tilde{R}_\Phi^{\natural})=\vec k\cdot(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)-\omega r'_t/c,
+\mathrm{Sc}(\tilde P_{\Phi}\tilde{R}_\Phi^{\natural})=\vec k_\Phi\cdot(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)-\omega r'_t/c,
 $$
 
 the operator has the symbol obtained from $\partial/\partial r'_t\,\to-i\omega$, so that $\partial/\partial R_t\,\to-\omega/c$, together with $\partial/\partial R_k\,\to ik_k$:
 
 $$
-\Box\;\longmapsto\;\frac{\omega^2}{c^2}-\vec k^2,
+\Box\;\longmapsto\;\frac{\omega^2}{c^2}-\vec k_\Phi^2,
 \qquad
-\left(\Box-k_m^{2}\right)\;\longmapsto\;\frac{\omega^2}{c^2}-\vec k^2-k_m^{2} .
+\left(\Box-k_m^{2}\right)\;\longmapsto\;\frac{\omega^2}{c^2}-\vec k_\Phi^2-k_m^{2} .
 $$
 
 The symbol vanishes precisely on the **mass shell** $\langle\tilde P_{\Phi}\rangle_{\natural}=\tilde P_{\Phi}\tilde P_{\Phi}^{\natural}= -m^{2}\,c^{2}$, that is, on
 
 $$
-\omega^2=c^2\vec k^2+c^2k_m^{2},
+\omega^2=c^2\vec k_\Phi^2+c^2k_m^{2},
 $$
 
-which is the biquaternion-norm statement of the relativistic dispersion relation: the mass shell is the level set of the biquaternion norm at the fixed negative value $-k_m^{2}$, a two-sheeted hyperboloid in the material sector. With the constants carried it reads $\omega^2/c^2=\vec k^2+k_m^{2}$. The zero level set $\langle\tilde P_{\Phi}\rangle_{\natural}=0$ is the **zero-divisor cone**, the light cone; it is the set of four-wavevectors that are nilpotent in the algebra, and the massless kernel will be supported on its position-space image.
+which is the biquaternion-norm statement of the relativistic dispersion relation: the mass shell is the level set of the biquaternion norm at the fixed negative value $-k_m^{2}$, a two-sheeted hyperboloid in the material sector. With the constants carried it reads $\omega^2/c^2=\vec k_\Phi^2+k_m^{2}$. The zero level set $\langle\tilde P_{\Phi}\rangle_{\natural}=0$ is the **zero-divisor cone**, the light cone; it is the set of four-wavevectors that are nilpotent in the algebra, and the massless kernel will be supported on its position-space image.
 
 ### Green's functions and the sign convention
 
@@ -435,7 +435,7 @@ The algebra's contribution is the identification of the singular loci with the b
 | $\mathbb{B}_{\Phi},\mathbb{B}_{\Psi}$ | Material (anti-Hermitian) and informational (Hermitian) sectors |
 | $\mathbb{B}_{C}=\operatorname{span}_{\mathbb{R}}\{e_t,ie_t\}$ | Centre of $\mathbb{B}$; the scalar field's value space |
 | $\tilde R_\Phi=i r'_t\,e_t+r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z$ | Material coordinate, $\in\mathbb{B}_{\Phi}$ |
-| $\tilde P_{\Phi}=\frac{m\,c\,(i\omega/c\,e_t+\vec k)}{k_m}$ | Material four-wavevector, $\in\mathbb{B}_{\Phi}$ |
+| $\tilde P_{\Phi}=\frac{m\,c\,(i\omega/c\,e_t+\vec k_\Phi)}{k_m}$ | Material four-wavevector, $\in\mathbb{B}_{\Phi}$ |
 | $\langle\tilde R_\Phi\rangle_{\natural}=\tilde R_\Phi\tilde{R}_\Phi^{\natural}$ | Biquaternion norm |
 | $\langle\tilde{Q}_1,\tilde{Q}_2\rangle_{*}=\mathrm{Sc}(\tilde{Q}_1\tilde{Q}_2^{*})$ | Hermitian form; real, positive definite |
 | $\tilde{P}_{\Phi,E}=ik_{\mathrm{eu},0}e_t+\vec p\in\mathbb{B}_{\Phi}$ | Euclidean material element; $\langle\tilde{P}_{\Phi,E},\tilde{P}_{\Phi,E}\rangle_{*}=\vec p_E^2$ |

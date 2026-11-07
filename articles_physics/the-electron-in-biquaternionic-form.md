@@ -127,11 +127,11 @@ The electron's relativistic dynamics is the chirality pair $\tilde{\nabla}\tilde
 **A note on the wave biquaternion.** The mass-shell condition is written in the corpus convention, in which the four-wavevector has the imaginary time component of the $i r'_t$ convention,
 
 $$
-\tilde K_{\Phi} = i\,\frac{\omega}{c}\,e_t + \vec k, \qquad
-\langle\tilde K_{\Phi}\rangle_{\natural} = \tilde K_{\Phi}\tilde K_{\Phi}^{\natural} = -\frac{\omega^2}{c^2} + \vec k^2 = -k_{m_e}^{2},
+\tilde K_{\Phi} = i\,\frac{\omega}{c}\,e_t + \vec k_\Phi, \qquad
+\langle\tilde K_{\Phi}\rangle_{\natural} = \tilde K_{\Phi}\tilde K_{\Phi}^{\natural} = -\frac{\omega^2}{c^2} + \vec k_\Phi^2 = -k_{m_e}^{2},
 $$
 
-with $\vec k^2$ the Euclidean square $k_x^2+k_y^2+k_z^2$, which is what the norm of a vector part produces. This is $E^2 = \vec p^2c^2 + m_e^2c^4$ under $E =\frac{m\,c\,\omega}{k_m}$, $\vec p =\frac{m\,c\,\vec k}{k_m}$, and it is the form used by the companion solutions article and by the parent Dirac article. Here $k_{\Phi}=\frac{k_m\,p}{m\,c}$ is the momentum wave number.
+with $\vec k_\Phi^2$ the Euclidean square $k_x^2+k_y^2+k_z^2$, which is what the norm of a vector part produces. This is $E^2 = \vec p^2c^2 + m_e^2c^4$ under $E =\frac{m\,c\,\omega}{k_m}$, $\vec p =\frac{m\,c\,\vec k_\Phi}{k_m}$, and it is the form used by the companion solutions article and by the parent Dirac article. Here $k_{\Phi}=\frac{k_m\,p}{m\,c}$ is the momentum wave number.
 
 **Antiparticle.** The two frequency branches are exchanged by charge conjugation, and in the quantized interpretation the negative-frequency branch describes the positron. The framework represents the electron and the positron on the same algebraic footing; which branch is called the electron is fixed by the charge convention of the previous section, not by the algebra.
 
@@ -328,7 +328,7 @@ The electron's data are not confined to either sector: state-like and field-stre
 | $\mathrm{Tr}(\tilde Q_1\tilde Q_2)$ | Trace pairing, read as $2\,\mathrm{Sc}(\tilde Q_1\tilde Q_2)$ at normalisation |
 | $\tilde{J}_{\Phi} = ic\,j_0 e_t + \vec j$ | Conserved four-current, in $\mathbb{B}_{\Phi}$ |
 | $\tilde{F} = iϙ\vec u_x/(4\pi\sqrt{\epsilon}\|(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)\|^2)$ | Coulomb field of a point charge, in $\mathbb{B}_{\Psi}$; $\vec u_x$ the radial unit vector |
-| $\tilde K_{\Phi} = i(\omega/c)\,e_t + \vec k$ | Four-wavevector |
+| $\tilde K_{\Phi} = i(\omega/c)\,e_t + \vec k_\Phi$ | Four-wavevector |
 | $\varepsilon=(1,-1,-1,-1)$ | Sign weights of the $\mathbb{B}_{\Phi}$ frame; metric in the closing section |
 | $m_e$, $e$, $\frac{m\,c}{k_m}$, $c$ | Electron mass, elementary charge, reduced Planck constant, speed of light |
 | $\mathcal{N}F = (i\partial/\partial r'_t+\vec\nabla)F - k_{m_e}i\,\overline{F}\,\vec e_z$, $\vec\nabla=\sum_k\vec e_k\partial/\partial R_k$ | Two-sided Dirac equation of the dictionary form |

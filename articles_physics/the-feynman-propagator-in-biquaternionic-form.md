@@ -108,9 +108,9 @@ The body of this article is written in these actions; the closing section gives 
 The mode operators obey
 
 $$
-\{a_{\mathrm{fop},r}(\vec p),a_{\mathrm{fop},s}^{\dagger}(\vec k)\}
-=\{b_{\mathrm{fop},r}(\vec p),b_{\mathrm{fop},s}^{\dagger}(\vec k)\}
-=(2\pi)^3\delta_{rs}\delta^{(3)}(\vec p-\vec k),
+\{a_{\mathrm{fop},r}(\vec p),a_{\mathrm{fop},s}^{\dagger}(\vec k_\Phi)\}
+=\{b_{\mathrm{fop},r}(\vec p),b_{\mathrm{fop},s}^{\dagger}(\vec k_\Phi)\}
+=(2\pi)^3\delta_{rs}\delta^{(3)}(\vec p-\vec k_\Phi),
 $$
 
 with all other anticommutators vanishing. The plane-wave elements of the parent article obey the normalizations it records there, and the two sums over its two solutions are the numerators of this article, read as actions on $\mathbb{B}$: the positive-frequency sum is the momentum action shifted up by the mass, $\mathcal{A}_p+m$, and the negative-frequency sum is the same action shifted down, $\mathcal{A}_p-m$, both on shell.
@@ -118,7 +118,7 @@ with all other anticommutators vanishing. The plane-wave elements of the parent 
 Contracting the mode operators against the vacuum gives the two elementary two-point actions. The **positive-frequency** piece is
 
 $$
-W_+(x-y):\ \tilde Q\ \longmapsto\ \int\!\frac{d^3p}{(2\pi)^3}\frac{1}{2E_{\vec p}}\,\big(\mathcal{A}_{p}(\tilde Q)+m\tilde Q\big)\,\exp(-ip\cdot(x-y)),
+W_+(x-y):\ \tilde Q\ \longmapsto\ \int\!\frac{d^3p}{(2\pi)^3}\frac{1}{2E_{\vec p}}\,\big(\mathcal{A}_{p}(\tilde Q)+m\tilde Q\big)\,\exp(-i(p\cdot(x-y))/\hbar),
 $$
 
 in which only the $a_{\mathrm{fop}} a_{\mathrm{fop}}^{\dagger}$ contraction survives, and the **negative-frequency** piece is
@@ -142,8 +142,8 @@ an equality of actions, read on a generic element. The relative minus is not a c
 The two $\mathrm{H}_{\mathrm{hvs}}$ functions can be represented by a single four-dimensional integral. The standard result, and the object whose biquaternion form is the subject of this article, is
 
 $$
-\boxed{\;S_F(x-y):\ \tilde Q\longmapsto i\int\!\frac{d^4p}{(2\pi)^4}\;
-\exp(-ip\cdot(x-y))\frac{\mathcal{A}_p(\tilde Q)+m\tilde Q}{p^2-m^{2}\,c^{2}+i\epsilon},
+\boxed{\;S_F(x-y):\ \tilde Q\longmapsto i\int\!\frac{d^4p}{(2\pi\hbar)^4}\;
+\exp(-i(p\cdot(x-y))/\hbar)\frac{\mathcal{A}_p(\tilde Q)+m\tilde Q}{p^2-m^{2}\,c^{2}+i\epsilon},
 \qquad \epsilon\to0^+\;}.
 $$
 
@@ -403,7 +403,7 @@ $$
 Its content is the contour prescription, and the prescription is fixed by time ordering together with the fermionic anticommutation sign:
 
 $$
-S_F(x-y):\ \tilde Q\longmapsto i\int\!\frac{d^4p}{(2\pi)^4}\,\exp(-ip\cdot(x-y))\frac{\mathcal{A}_p(\tilde Q)+m\tilde Q}{p^2-m^{2}\,c^{2}+i\epsilon},
+S_F(x-y):\ \tilde Q\longmapsto i\int\!\frac{d^4p}{(2\pi\hbar)^4}\,\exp(-i(p\cdot(x-y))/\hbar)\frac{\mathcal{A}_p(\tilde Q)+m\tilde Q}{p^2-m^{2}\,c^{2}+i\epsilon},
 \qquad
 \mathcal{A}_p:\ \tilde Q\longmapsto i p_0\tilde Q\,\vec e_x-i\sum_{k=1}^{3} p_k\,\vec e_k\,\tilde Q\,\vec e_y .
 $$

@@ -23,7 +23,7 @@ The scope is relativistic and quantum, and it is the worked application that clo
 
 The scalar imaginary of the algebra is written $i$. It is central, $i^2=-1$, and it commutes with $e_t,\vec e_x,\vec e_y,\vec e_z$; every factor of $i$ below is this one unit, so a product of two factors of $i$ is $-1$ and the simplifications of the displays are uses of that single identity.
 
-A plane-wave solution of the source-free Maxwell equations with wave biquaternion $\tilde P_{\Phi,\mathrm{ph}} = i(\omega/c)e_t + \vec k$ has a polarization biquaternion that is a pure vector, $\vec\varepsilon$, and the field-strength biquaternion of the wave is
+A plane-wave solution of the source-free Maxwell equations with wave biquaternion $\tilde P_{\Phi,\mathrm{ph}} = i(\omega/c)e_t + \vec k_\Phi$ has a polarization biquaternion that is a pure vector, $\vec\varepsilon$, and the field-strength biquaternion of the wave is
 $$
 \tilde{F} = i\sqrt{\epsilon}\,\vec E - \sqrt{\mu}\,\vec H
 = \tilde P_{\Phi,\mathrm{ph}}\,\vec\varepsilon \quad\text{up to a phase and a normalisation},
@@ -36,7 +36,7 @@ i.e. the polarization lies in the plane of the vector part of $\mathbb{B}_{\Phi}
 $$
 \varepsilon_{\mathrm{fop},\pm} = \frac{\varepsilon_{\mathrm{fop},1} \pm i\varepsilon_{\mathrm{fop},2}}{\sqrt{2}} ,
 $$
-complex combinations that lie in the complexification of the vector part of $\mathbb{B}$ but not in $\mathbb{B}_{\Phi}$ itself. Their defining algebraic property is that they diagonalise left multiplication by the propagation direction, taken as the real unit vector $\vec u_k$ along $\vec k$:
+complex combinations that lie in the complexification of the vector part of $\mathbb{B}$ but not in $\mathbb{B}_{\Phi}$ itself. Their defining algebraic property is that they diagonalise left multiplication by the propagation direction, taken as the real unit vector $\vec u_k$ along $\vec k_\Phi$:
 $$
 \vec u_k\,\varepsilon_{\mathrm{fop},\pm} = \mp i\,\varepsilon_{\mathrm{fop},\pm} ,
 $$
@@ -554,7 +554,7 @@ which sum back to $D(p)$, each being a projection of rank one; the asymmetry is 
 
 | Symbol | Meaning |
 |---|---|
-| $\tilde P_{\Phi,\mathrm{ph}} = i(\omega/c)e_t+\vec k$ | Photon wave biquaternion; $\langle\tilde P_{\Phi,\mathrm{ph}}\rangle_{\natural} = 0$ |
+| $\tilde P_{\Phi,\mathrm{ph}} = i(\omega/c)e_t+\vec k_\Phi$ | Photon wave biquaternion; $\langle\tilde P_{\Phi,\mathrm{ph}}\rangle_{\natural} = 0$ |
 | $\tilde P_{\Phi,e}$ | Electron four-momentum; $\langle\tilde P_{\Phi,e}\rangle_{\natural} = -m^2c^2$; at rest $\tilde P_{\Phi,e} = imc\,e_t$ |
 | $\varepsilon_{\mathrm{fop}}, \varepsilon_{\mathrm{fop},\mathrm{out}}$ | Incident and outgoing linear polarization unit vectors |
 | $\varepsilon_{\mathrm{fop},\pm} = (\varepsilon_{\mathrm{fop},1}\pm i\varepsilon_{\mathrm{fop},2})/\sqrt2$ | Circular polarizations; $\vec u_k\varepsilon_{\mathrm{fop},\pm} = \mp i\varepsilon_{\mathrm{fop},\pm}$ |

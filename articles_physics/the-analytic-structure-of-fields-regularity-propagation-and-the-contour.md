@@ -138,7 +138,7 @@ $$
 
 where $M_\alpha$ is right multiplication by $\alpha$, and $D_{\mathrm s}$ is the spatial Dirac operator. The equation $D_\alpha F=0$ defines the $\alpha$-hyperholomorphic functions. The parameter is an arbitrary element: it may be a zero divisor, its square need not be scalar, and it need not commute.
 
-The physical reading is the **mass or chemical potential**. The shift is a constant term in the first-order equation; it is the analogue of a mass term in the Dirac equation or a chemical potential in a finite-density system. The vanishing of the parameter's norm is the mass shell: for the pure element $\alpha=-(i\omega\vec e_x+m\vec e_y)$ the norm is $m^2-\omega^2$, and $\alpha$ is a zero divisor exactly on the mass shell $\omega^2=m^2$. The degenerate branch of the shifted theory is the mass shell of the parameter.
+The physical reading is the **mass or chemical potential**. The shift is a constant term in the first-order equation; it is the analogue of a mass term in the Dirac equation or a chemical potential in a finite-density system. The vanishing of the parameter's norm is the mass shell: for the pure element $\alpha=-(i(\omega/c)\vec e_x+k_m\vec e_y)$ the norm is $k_m^{2}-(\omega/c)^{2}$, and $\alpha$ is a zero divisor exactly on the mass shell $\omega^{2}=c^{2}k_m^{2}$. The degenerate branch of the shifted theory is the mass shell of the parameter.
 
 The boundary-value criterion,
 

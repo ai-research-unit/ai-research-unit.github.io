@@ -50,14 +50,14 @@ $$
 \sum_k\vec e_k\pi_k=-\frac{m\,c\,i\,D_{3}^{A}}{k_m},
 $$
 
-with $\pi_k=p_k-qA_k$ and $D_3^A=\sum_k\vec e_k(\partial/\partial r_k-\frac{k_m\,iqA_{k}}{m\,c})$ the pure part of the gauged gradient. The corpus names this family $\tilde\nabla_{\mathrm{gco}}$ in *The Covariant Derivative and the Gauge Connection in Biquaternionic Form*, where the potential is written $i\,a'_t\,e_t+\vec A$; the exercise keeps its own $\tilde A_{\Phi}=Ξ e_t-\vec A$ and writes the operator out rather than borrowing the name. A plane wave $\exp\!\bigl(i(k_{t}^{\prime}x_0-\vec k\cdot\vec q)\bigr)$, with $x_0=r'_{t}$, replaces the gradient by the element
+with $\pi_k=p_k-qA_k$ and $D_3^A=\sum_k\vec e_k(\partial/\partial r_k-\frac{k_m\,iqA_{k}}{m\,c})$ the pure part of the gauged gradient. The corpus names this family $\tilde\nabla_{\mathrm{gco}}$ in *The Covariant Derivative and the Gauge Connection in Biquaternionic Form*, where the potential is written $i\,a'_t\,e_t+\vec A$; the exercise keeps its own $\tilde A_{\Phi}=Ξ e_t-\vec A$ and writes the operator out rather than borrowing the name. A plane wave $\exp\!\bigl(i(k_{t}^{\prime}x_0-\vec k_\Phi\cdot\vec q)\bigr)$, with $x_0=r'_{t}$, replaces the gradient by the element
 
 $$
-\tilde K=k_{t}^{\prime}-i\vec k,
+-i\tilde K_{\Phi}=k_{t}^{\prime}-i\vec k_\Phi,
 \qquad
-\tilde Kf=0\ \text{on the light cone},
+-i\tilde K_{\Phi}f=0\ \text{on the light cone},
 \qquad
-\tilde K^{\natural}\tilde K=k_{t}^{\prime\,2}-\lvert\vec k\rvert^2 .
+(-i\tilde K_{\Phi})^{\natural}(-i\tilde K_{\Phi})=k_{t}^{\prime\,2}-\lvert\vec k_\Phi\rvert^2 .
 $$
 
 **What the gradient can do, and what it cannot.** The massless equation is one first-order equation in one field,
@@ -109,7 +109,7 @@ $$
 for a field $F\in\mathbb B$, since $i\partial/\partial r'_t=-\partial/\partial R_t$ in these units. The two forms are related by a change of representation, but they are different operators: the pair is linear in the field, while the mass term of the two-sided form is antilinear because it carries $\overline F$.
 
 | | One-sided pair | Two-sided form |
-|---|---|---|
+|+-|+-|+-|
 | Equation | $\tilde\nabla F_R=mF_L$, $\tilde\nabla^{\natural}F_L=mF_R$ | $\mathcal NF=0$, with $\mathcal NF=(i\partial/\partial r'_t+D_3)F-mi\overline F\vec e_z$ |
 | Multiplication | left by $\tilde\nabla$ and $\tilde\nabla^{\natural}$ | left by $i\partial/\partial r'_t$ and $D_3$; right by $\vec e_z$; antilinear bar |
 | Field | $F=F_L+F_R\in\Delta=\mathbb B$ | $F\in\mathbb B$ |
@@ -147,7 +147,7 @@ $$
 O=O^{\dagger},\quad \beta=\beta^{\dagger},
 $$
 
-so that $O$ is odd, $qΞ$ is even, and $H$ is Hermitian. The eigenvalues of $H$ at zero potential are $\pm\sqrt{m^2c^4+c^2\vec\pi^2}$, which is the mass shell $\tilde K^{\natural}\tilde K=m^2$ of the pair.
+so that $O$ is odd, $qΞ$ is even, and $H$ is Hermitian. The eigenvalues of $H$ at zero potential are $\pm\sqrt{m^2c^4+c^2\vec\pi^2}$, which is the mass shell $(-i\tilde K_{\Phi})^{\natural}(-i\tilde K_{\Phi})=k_m^{2}$ of the pair.
 
 **The two halves.** With $\beta\tilde{Ξ}_{\mathrm{sp},\mathrm{evn}}=+\tilde{Ξ}_{\mathrm{sp},\mathrm{evn}}$ and $\beta\tilde{Ξ}_{\mathrm{sp},\mathrm{odd}}=-\tilde{Ξ}_{\mathrm{sp},\mathrm{odd}}$, the equation of motion reads on the two parts
 
@@ -473,7 +473,7 @@ so the term is Hermitian if and only if $\nabla\times\vec E=0$, its failure of H
 *Step 2: the $\mathbb{B}_{\Psi}$ representatives.* Under the isomorphism, a Hermitian $2\times2$ matrix $r_t\,I_2+\vec r_\Psi\cdot\boldsymbol\sigma$ corresponds to the Hermitian biquaternion $r_t\,e_t+i\vec r_\Psi\in\mathbb{B}_{\Psi}$. Applying it term by term, with $\vec B=\sum_k B_k\vec e_k$ and $(\vec E\times\vec\pi)=(\vec E\times\vec\pi)_k\vec e_k$,
 
 | Term of $H$ | Biquaternion representative | Sector |
-|---|---|---|
+|+-|+-|+-|
 | $\vec\pi^2 c/(2\,m\,c)$ | $(\vec\pi^2 c/(2\,m\,c))\,e_t$ | $\mathbb{B}_{\Psi}$ |
 | $qΞ$ | $(qΞ)\,e_t$ | $\mathbb{B}_{\Psi}$ |
 | $-\frac{q c}{2\,k_m}\boldsymbol\sigma\cdot\vec B$ | $-\frac{q c}{2\,k_m}\,i\vec B$ | $\mathbb{B}_{\Psi}$ |
@@ -494,7 +494,7 @@ Every term of the reduced, two-component Hamiltonian is Hermitian, hence every t
 *Step 4: the sides, one line per operator.* Every operator of the reduction is listed with the element that multiplies on the left and the element that multiplies on the right. The column headed "side" is the answer to the only question that matters here: whether the operator is a single multiplication or a product of two.
 
 | Operator | Left element | Right element | Side |
-|---|---|---|---|
+|+-|+-|+-|+-|
 | $\beta$ | $e_t$ | $i\vec e_x$ | right multiplication alone |
 | $\Gamma$ | $e_t$ | $-i\vec e_z$ | right multiplication alone |
 | $O$ | $\vec e_k$, with $\pi_k$ | $\vec e_y$ | two-sided |
@@ -513,7 +513,7 @@ No other right multiplication and no other differential operator occurs in the r
 **Solution.** Every term is an energy, since each is a term of a Hamiltonian. The individual coefficients nevertheless carry different powers of $\frac{m\,c}{k_m}$ and $c$, and checking them is a useful consistency test. In SI units, with $[\frac{m\,c}{k_m}]=\mathrm{kg\,m^2\,s^{-1}}$, $[c]=\mathrm{m\,s^{-1}}$, $[q]=\mathrm C$, $[Ξ]=\mathrm V=\mathrm{kg\,m^2\,s^{-3}A^{-1}}$, $[\vec B]=\mathrm T=\mathrm{kg\,s^{-2}A^{-1}}$ and $[\vec E]=\mathrm{V\,m^{-1}}=\mathrm{kg\,m\,s^{-3}A^{-1}}$:
 
 | Term | Coefficient units | Field/operator units | Product |
-|---|---|---|---|
+|+-|+-|+-|+-|
 | $\vec\pi^2 c/(2\,m\,c)$ | $1/m$ | $(\mathrm{kg\,m\,s^{-1}})^2$ | $\mathrm{kg\,m^2\,s^{-2}}$ |
 | $qΞ$ | $\mathrm C$ | $\mathrm{kg\,m^2\,s^{-3}A^{-1}}$ | $\mathrm{kg\,m^2\,s^{-2}}$ |
 | $-\frac{q c}{2\,k_m}\boldsymbol\sigma\cdot\vec B$ | $\mathrm C\,\mathrm{kg\,m^2\,s^{-1}\,kg^{-1}}$ | $\mathrm{kg\,s^{-2}A^{-1}}$ | $\mathrm{kg\,m^2\,s^{-2}}$ |
@@ -540,7 +540,7 @@ Every term of the reduced Hamiltonian is Hermitian and therefore lies in $\mathb
 ## Summary of Notation
 
 | Symbol | Meaning |
-|---|---|
+|+-|+-|
 | $\mathbb B=\mathbb C\otimes_\mathbb R\mathbb H$ | Biquaternion algebra |
 | $e_t=1,\vec e_x,\vec e_y,\vec e_z$, $\vec e_k^2=-e_t$ | Quaternion basis |
 | $\mathbb{B}_{\Psi},\mathbb{B}_{\Phi}$ | Hermitian / anti-Hermitian subspaces |
@@ -549,7 +549,7 @@ Every term of the reduced Hamiltonian is Hermitian and therefore lies in $\mathb
 | $\Box=\tilde\nabla\tilde\nabla^{\natural}$ | The d'Alembertian |
 | $D_3=\sum_k\vec e_k\partial/\partial r_k$, $D_3^A$ | Pure part of the gradient, free and gauged |
 | $\tilde\nabla-\frac{k_m\,i\,q\,\tilde{A}_{\Phi}}{m\,c}$, $\tilde A_{\Phi}=Ξ e_t-\vec A$ | The gauged gradient; minimal substitution |
-| $\tilde K=k_{t}^{\prime}-i\vec k$ | Symbol of the gradient on a plane wave; $\tilde K^{\natural}\tilde K=k_{t}^{\prime\,2}-\lvert\vec k\rvert^2$ |
+| $-i\tilde K_{\Phi}=k_{t}^{\prime}-i\vec k_\Phi$ | Symbol of the gradient on a plane wave; $(-i\tilde K_{\Phi})^{\natural}(-i\tilde K_{\Phi})=k_{t}^{\prime\,2}-\lvert\vec k_\Phi\rvert^2$ |
 | $F=F_L+F_R$; $\Gamma F=-iF\vec e_z$ | The field and its chirality, values $\mp1$ |
 | $\beta F=iF\vec e_x$, $\beta^2=1$, $\beta\Gamma=-\Gamma\beta$ | The mass grading; $\beta O=-O\beta$ |
 | $O=c\sum_k\vec e_k\pi_k(\cdot)\vec e_y=-\frac{m\,c^{2}\,i\,D_{3}^{A}\,\vec e_{y}}{k_m}$ | The odd operator; $O^2=c^2(\vec\pi^2-\frac{m\,c\,i\,q\,\vec B}{k_m})$ |

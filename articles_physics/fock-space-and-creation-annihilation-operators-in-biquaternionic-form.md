@@ -68,9 +68,9 @@ $$
 with $a_{\mathrm{fop},r}$ annihilating particles and $b_{\mathrm{fop},r}$ annihilating antiparticles. The mode algebra is
 
 $$
-\{a_{\mathrm{fop},r}(\vec p),a_{\mathrm{fop},s}^{\dagger}(\vec k)\}
-=\{b_{\mathrm{fop},r}(\vec p),b_{\mathrm{fop},s}^{\dagger}(\vec k)\}
-=(2\pi)^3\delta_{rs}\delta^{(3)}(\vec p-\vec k),
+\{a_{\mathrm{fop},r}(\vec p),a_{\mathrm{fop},s}^{\dagger}(\vec k_\Phi)\}
+=\{b_{\mathrm{fop},r}(\vec p),b_{\mathrm{fop},s}^{\dagger}(\vec k_\Phi)\}
+=(2\pi)^3\delta_{rs}\delta^{(3)}(\vec p-\vec k_\Phi),
 $$
 
 with all other anticommutators vanishing. The particle number, the antiparticle number, the total number of quanta and the electric charge are
@@ -87,8 +87,8 @@ and Pauli exclusion is the algebraic identity $(a_{\mathrm{fop},r}^{\dagger}(\ve
 **Bosonic (Maxwell).** The potential expands in four polarizations with
 
 $$
-\big[a_{\mathrm{fop},r}(\vec k),a_{\mathrm{fop},s}^{\dagger}(\vec k_2)\big]
-=\sigma_{\mathrm{met},r}\,\delta_{rs}\,(2\pi)^3\delta^{(3)}(\vec k-\vec k_2),
+\big[a_{\mathrm{fop},r}(\vec k_\Phi),a_{\mathrm{fop},s}^{\dagger}(\vec k_2)\big]
+=\sigma_{\mathrm{met},r}\,\delta_{rs}\,(2\pi)^3\delta^{(3)}(\vec k_\Phi-\vec k_2),
 \qquad
 (\sigma_{\mathrm{met},0},\sigma_{\mathrm{met},1},\sigma_{\mathrm{met},2},\sigma_{\mathrm{met},3})=(-1,+1,+1,+1),
 $$
@@ -305,7 +305,7 @@ The capacity is one mode and no more: $m$ fermionic modes generate $M_{2^m}(\mat
 | $N=\sum_ia_{\mathrm{fop},i}^{\dagger}a_{\mathrm{fop},i}$ | Number operator |
 | $a_{\mathrm{fop},r}(\vec p),b_{\mathrm{fop},r}(\vec p)$ | Dirac particle and antiparticle mode operators (parent's notation) |
 | $F=N_a+N_b$, $Ϙ_{\mathrm{fop}}=N_a-N_b$ | Total number of quanta (parity $(-1)^F$), and fermion number (= electric charge) |
-| $a_{\mathrm{fop},r}(\vec k)$, $\sigma_{\mathrm{met}}=(-1,+1,+1,+1)$ | Maxwell mode operators and indefinite metric |
+| $a_{\mathrm{fop},r}(\vec k_\Phi)$, $\sigma_{\mathrm{met}}=(-1,+1,+1,+1)$ | Maxwell mode operators and indefinite metric |
 | $N_\gamma$ | Photon number (transverse sum) |
 | $\vec\Upsilon_x=\tfrac12(i\vec e_x-\vec e_y)$ | Single-mode annihilation operator in $\mathbb{B}$ |
 | $\vec\Upsilon_y=\tfrac12(i\vec e_x+\vec e_y)$ | Single-mode creation operator in $\mathbb{B}$ |

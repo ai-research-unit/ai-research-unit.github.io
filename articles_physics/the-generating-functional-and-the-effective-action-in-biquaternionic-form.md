@@ -181,7 +181,7 @@ V_{\mathrm{eff}}(\tilde{Ξ}_{\mathrm{cl}}) = V(\tilde{Ξ}_{\mathrm{cl}}) +\frac{
 $$
 is the standard Coleman–Weinberg form, and it is manifestly convex in the region where $\frac{d^2V}{d\xi^2}>0$; where the tree potential is non-convex the one-loop potential is amended by the Maxwell construction, which is exactly the statement that the Legendre transform is the convex envelope of $W$. The framework's contribution is again the real form with respect to which the convexity is taken, and the orthogonality of the sectors. The standard results are transcribed and cited.
 
-**Finite-dimensional convexity check.** For the one-dimensional model $V(\xi)=\tfrac12 m^2\xi^2+\tfrac{\lambda}{4}\xi^4$ with $m^2=1.3$, $\lambda=0.7$, the curvature $\frac{d^2V}{d\xi^2}(\xi)=m^2+3\lambda\xi^2$ takes the values $1.3$, $1.825$, $4.324$ at $\xi=0,0.5,1.2$: positive at all three points, so the tree effective potential is convex on that range and the Legendre transform is unmodified there.
+**Finite-dimensional convexity check.** For the one-dimensional model $V(\xi)=\tfrac12 m^2\xi^2+\tfrac{\lambda}{4}\xi^4$ with $k_m^{2}=1.3$, $\lambda=0.7$, the curvature $\frac{d^2V}{d\xi^2}(\xi)=k_m^{2}+3\lambda\xi^2$ takes the values $1.3$, $1.825$, $4.324$ at $\xi=0,0.5,1.2$: positive at all three points, so the tree effective potential is convex on that range and the Legendre transform is unmodified there.
 
 ## The One-Loop Term and the Determinant
 

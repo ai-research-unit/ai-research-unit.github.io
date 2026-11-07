@@ -478,7 +478,7 @@ In the classically allowed region this is positive, and the gradient is never a 
 
 ### The Dirac Point of Graphene Is a Null Momentum
 
-The effective Hamiltonian of graphene near a Dirac point is linear in the momentum, $h=v_F(c_1k_x+c_2k_y)$ in the notation of §*The Corner*, and its square is quadratic, $h^2=v_F^2|\vec k|^2I$. The linear branch is the square root of the quadratic symbol. The Dirac point is the apex of the cone, and the gapless excitations around it lie on the null cone $\langle\tilde P_{\Phi}\rangle_{\natural}=0$.
+The effective Hamiltonian of graphene near a Dirac point is linear in the momentum, $h=v_F(c_1k_x+c_2k_y)$ in the notation of §*The Corner*, and its square is quadratic, $h^2=v_F^2|\vec k_\Phi|^2I$. The linear branch is the square root of the quadratic symbol. The Dirac point is the apex of the cone, and the gapless excitations around it lie on the null cone $\langle\tilde P_{\Phi}\rangle_{\natural}=0$.
 
 In the biquaternion interpretation the physical branch is the **zero-divisor cone**: a null four-momentum is a zero divisor, and the node is its apex. The nilpotent appears in the **chiral part** of the symbol, where the two combinations $c_\pm$ are square-zero; it is the algebraic corner of the branch, not the four-momentum of a particle on it. The Dirac point itself is where the momentum vanishes, and the origin is not a nilpotent.
 

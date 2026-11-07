@@ -563,12 +563,12 @@ $$
 
 together with the two transverse relations. The normal (longitudinal) components of the electric and magnetic jumps are therefore exactly the jumps of the two real parts of the scalar field; when $[\alpha]=0$ both vanish and the fronts are transverse, which is the classical Maxwell case. The source reads this as the statement that the scalar field "describes the property of attraction–resistance of the EGM-field to the movement of external charges and currents", and the corpus keeps the name **attraction–resistance field** for it. This is the mirror of the $\tilde J_{\Phi,\mathrm{eg}}$-fronts: those are longitudinal when the charge jump is non-zero, and the field fronts are longitudinal when the scalar-field jump is non-zero.
 
-At the level of smooth solutions the programme constructs the corresponding waves from scalar plane potentials. Take $\theta_{\mathrm{rpd},j} = f(\eta)$ with $\eta = (\vec k,r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z) - \omega\tau$ and $\|\vec k\| = \omega$, and $A = D^-\theta_{\mathrm{rpd},j}$; the four modes are
+At the level of smooth solutions the programme constructs the corresponding waves from scalar plane potentials. Take $\theta_{\mathrm{rpd},j} = f(\eta)$ with $\eta = (\vec k_\Phi,r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z) - \omega\tau$ and $\|\vec k_\Phi\| = \omega$, and $A = D^-\theta_{\mathrm{rpd},j}$; the four modes are
 
-| Mode | Potential | $(\vec E,\vec k)$ | $(\vec H,\vec k)$ |
+| Mode | Potential | $(\vec E,\vec k_\Phi)$ | $(\vec H,\vec k_\Phi)$ |
 |---|---|---|---|
-| Longitudinal magnetic | $f$ | $0$ | $-\|\vec k\|^2 \frac{df}{d\eta}/\sqrt{\mu}$ |
-| Longitudinal electric | $if$ | $\|\vec k\|^2 \frac{df}{d\eta}/\sqrt{\epsilon}$ | $0$ |
+| Longitudinal magnetic | $f$ | $0$ | $-\|\vec k_\Phi\|^2 \frac{df}{d\eta}/\sqrt{\mu}$ |
+| Longitudinal electric | $if$ | $\|\vec k_\Phi\|^2 \frac{df}{d\eta}/\sqrt{\epsilon}$ | $0$ |
 | Tesla's wave | $f \vec e_x$ | $-\omega k_1 \frac{df}{d\eta}/\sqrt{\epsilon}$ | $0$ |
 | Torsion wave | $if \vec e_x$ | $0$ | $-\omega k_1 \frac{df}{d\eta}/\sqrt{\mu}$ |
 

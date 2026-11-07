@@ -12,7 +12,7 @@ $$
 \langle\tilde P_{\Phi}\rangle_{\natural} = 0 ,
 $$
 
-which is the four-wavevector $\tilde P_{\Phi} = \frac{i\omega}{c}e_t + \vec k$ of the plane-wave exercise written with $\vec k = \frac{\omega}{c}\vec u_k$. The claim is that for a boost with Lorentz rotor $\tilde U_{\Psi,\mathrm b} = \cosh\frac{w}{2} + i\sinh\frac{w}{2}\vec u$ (Hermitian, of unit norm, $w$ the rapidity and $\vec u$ the boost direction) there is a **unit real quaternion** $\tilde{u}$ and a positive scalar $\exp(d)$ for which
+which is the four-wavevector $\tilde P_{\Phi} = \frac{i\omega}{c}e_t + \vec k_\Phi$ of the plane-wave exercise written with $\vec k_\Phi = \frac{\omega}{c}\vec u_k$. The claim is that for a boost with Lorentz rotor $\tilde U_{\Psi,\mathrm b} = \cosh\frac{w}{2} + i\sinh\frac{w}{2}\vec u$ (Hermitian, of unit norm, $w$ the rapidity and $\vec u$ the boost direction) there is a **unit real quaternion** $\tilde{u}$ and a positive scalar $\exp(d)$ for which
 
 $$
 \tilde P_{\Phi,2} \;=\; \tilde U_{\Psi,\mathrm b}\,\tilde P_{\Phi}\,\tilde U_{\Psi,\mathrm b}^{*} \;=\; \exp(d)\,\tilde{u}\,\tilde P_{\Phi}\,\tilde{u}^{*},
@@ -101,7 +101,7 @@ $$
 \tilde{D} \;=\; \cosh\frac{w}{2} + \sinh\frac{w}{2}\,\vec u\vec u_k
 $$
 
-contains the null element no longer: it is a real quaternion, that is an element of $\mathbb H_{\mathbb B}$, and it is the product of the dilation and the rotation. The product $\vec u\vec u_k$ of two unit real vectors is a unit real quaternion, and with the quaternion product rule $\vec q\vec k = -\vec q\cdot\vec k + \vec q\times\vec k$ it separates into its scalar and vector parts,
+contains the null element no longer: it is a real quaternion, that is an element of $\mathbb H_{\mathbb B}$, and it is the product of the dilation and the rotation. The product $\vec u\vec u_k$ of two unit real vectors is a unit real quaternion, and with the quaternion product rule $\vec q\vec k_\Phi = -\vec q\cdot\vec k_\Phi + \vec q\times\vec k_\Phi$ it separates into its scalar and vector parts,
 
 $$
 \vec u\vec u_k \;=\; -\cos\theta_{\mathrm{wav}}\,e_t + \vec u\times\vec u_k,
@@ -223,7 +223,7 @@ Transversely the dilation is $\gamma$ — the transverse Doppler factor — and 
 | $\mathbb{B}$, $e_t = 1, \vec e_k$ | Biquaternion algebra, quaternion basis with $\vec e_k^2 = -e_t$ |
 | $i$ | Scalar imaginary, $i^2 = -1$, central |
 | $\mathbb{B}_{H}$, $\mathbb{B}_{\Psi}$ and $\mathbb{B}_{\Phi}$ | Real-quaternion, Hermitian and anti-Hermitian subspaces |
-| $\vec k = k\vec u_k = \frac{\omega}{c}\vec u_k$ | Wavevector, $k = \omega/c$, $\vec u_k$ its unit direction |
+| $\vec k_\Phi = k\vec u_k = \frac{\omega}{c}\vec u_k$ | Wavevector, $k = \omega/c$, $\vec u_k$ its unit direction |
 | $\tilde P_{\Phi} = \frac{\omega}{c}(i+\vec u_k)$ | Wave biquaternion (four-wavevector), null, $\langle\tilde P_{\Phi}\rangle_{\natural} = 0$ |
 | $\tilde{F}$ | Field-strength biquaternion, pure vector, null for a plane wave, $\tilde P_{\Phi}\tilde{F}=0$ |
 | $\tilde U_{\Psi,\mathrm b} = \cosh\frac{w}{2} + i\sinh\frac{w}{2}\vec u$ | Boost rotor, Hermitian, unit norm; $w$ rapidity, $\vec u$ boost direction |

@@ -121,7 +121,7 @@ the signs being the Condon–Shortley phase, chosen so that the ladder coefficie
 **The operators.** With $\tilde S_{\Psi,\mathrm{adj},k}=\frac{m\,c}{2\,k_m}\mathrm{ad}_{i\vec e_k}$,
 
 $$
-\tilde S_{\Psi,\mathrm{adj}}\,2}=2\hbar^2\operatorname{id}_V,\qquad
+\tilde S_{\Psi,\mathrm{adj}}^2=2\hbar^2\operatorname{id}_V,\qquad
 \tilde S_{\Psi,\mathrm{adj},3}\varepsilon_\pm=\pm\hbar\,\varepsilon_\pm,\qquad
 \tilde S_{\Psi,\mathrm{adj},3}\varepsilon_0=0 .
 $$
@@ -232,7 +232,7 @@ The physical interpretation is the scalar, the spinor and the vector, and the ob
 | $\vec\Upsilon_{+-},\vec\Upsilon_{-+}$ | The nilpotent mixed units |
 | $\tilde S_{\Psi,k}=\frac{m\,c}{2\,k_m}i\vec e_k$ | The spin-half operators |
 | $\tilde S_{\Psi,\mathrm{adj},k}=\frac{m\,c}{2\,k_m}\mathrm{ad}_{i\vec e_k}$ | The spin-one generators |
-| $C=\tilde S_{\Psi,\mathrm{adj}}\,2}$ | The Casimir, $\sum_k(\tilde S_{\Psi,\mathrm{adj},k})^2$ |
+| $C=\tilde S_{\Psi,\mathrm{adj}}^2$ | The Casimir, $\sum_k(\tilde S_{\Psi,\mathrm{adj},k})^2$ |
 | $s$ | The spin label |
 | $\vec u$ | A unit real pure quaternion, an axis |
 | $N=\langle\tilde P_{\Phi}\rangle_\natural$ | The biquaternion norm of the four-momentum; $N=-m^2c^2$ |

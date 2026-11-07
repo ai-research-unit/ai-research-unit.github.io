@@ -167,7 +167,7 @@ because $\Box_{\tilde{Q}} = \lambda^{-2}\Box_{\lambda^{-1}\tilde{Q}}$ and the ma
 
 ### The symbol on the light cone and the rank drop
 
-On shell the four-momentum is a biquaternion $\tilde P_{\Phi} = i(\omega/c)e_t + \vec k$, and the symbol of the operator is its biquaternion norm,
+On shell the four-momentum is a biquaternion $\tilde P_{\Phi} = i(\omega/c)e_t + \vec k_\Phi$, and the symbol of the operator is its biquaternion norm,
 $$
 \text{massive:}\quad \langle\tilde P_{\Phi}\rangle_{\natural} = -k_m^{2} \neq 0 ,
 \qquad\qquad

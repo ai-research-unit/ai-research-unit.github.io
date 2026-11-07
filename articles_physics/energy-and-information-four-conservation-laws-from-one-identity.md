@@ -776,7 +776,7 @@ What would fix $h_0$ is a derivation of $\frac{m\,c}{k_m}$ from the algebra. The
 | the width is the imaginary part of the central self-energy | corpus result | *The Unstable State and the Complex Energy Pole* |
 | in the effective description the damping is the Hermitian part of $G$ | established | $G=-i\tilde R_{\Psi,\mathrm{eff}}=-\frac12\tilde\Gamma-i\tilde R_\Psi$; checked |
 | the effective anti-Hermitian part decays the norm at rate $\tilde\Gamma$ | established | $\frac{d}{dr'_t}\langle\tilde{Ξ}\rangle_*=-\langle\tilde{Ξ},\tilde\Gamma\tilde{Ξ}\rangle_*$; checked on 100 elements |
-| the decay rate of a mode is the imaginary part of its pole | established | $\lVert e^{-iwr'_t}v\rVert^2=e^{2\operatorname{Im}(w)r'_t}$; checked to $7.8\times10^{-16}$ |
+| the decay rate of a mode is the imaginary part of its pole | established | $\lVert e^{-i(w/(\hbar c))r'_t}v\rVert^2=e^{2\operatorname{Im}(w)r'_t/(\hbar c)}$; checked to $7.8\times10^{-16}$ |
 | the Lindblad flow preserves the trace | established | cyclicity; checked to $1.8\times10^{-15}$ |
 | the norm lost on the no-jump branch is the total jump probability | established | $\frac{d}{dr'_t}\langle\tilde{Ξ}_{\mathrm{nj}}\rangle_*=-\sum_k\langle\tilde{Ξ}_{\mathrm{nj}},\tilde M_{\mathrm{kraus},k}^{*}\tilde M_{\mathrm{kraus},k}\tilde{Ξ}_{\mathrm{nj}}\rangle_*$; checked |
 | the commutator $-i[\tilde R_\Psi,\cdot]$ is anti-Hermitian in the Hilbert–Schmidt form | established | the adjoint is its negative; residual $0$ |

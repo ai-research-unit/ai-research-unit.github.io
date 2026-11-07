@@ -236,12 +236,12 @@ is the operator identity of the previous section, and both are the statement tha
 Write the four-wavevector and the four-position as
 
 $$
-\tilde P_{\Phi} = i\frac{\omega}{c}e_t + \vec k\in\mathbb{B}_{\Phi},
+\tilde P_{\Phi} = i\frac{\omega}{c}e_t + \vec k_\Phi\in\mathbb{B}_{\Phi},
 \qquad
 \tilde R_\Phi = i r'_t\,e_t + \vec r\in\mathbb{B}_{\Phi},
 $$
 
-with $\vec k = k_1\vec e_x + k_2\vec e_y + k_3\vec e_z$ and $\vec r = r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z$. Here $\vec k^2$ abbreviates the sum $k_1^2+k_2^2+k_3^2$ of the squares of the components, not the quaternion product, which is its negative, $\vec k\,\vec k = -\vec k^2e_t$. The phase is $\mathrm{Sc}(\tilde P_{\Phi}\tilde{R}_\Phi^{\natural}) = \vec k\cdot\vec r - \omega r'_t/c$, the scalar part of the product with the conjugate four-position. The exponent $i\,\mathrm{Sc}(\tilde P_{\Phi}\tilde{R}_\Phi^{\natural})$ is a purely imaginary central element, so the exponential is central and differentiates as an ordinary exponential. On a plane wave,
+with $\vec k_\Phi = k_1\vec e_x + k_2\vec e_y + k_3\vec e_z$ and $\vec r = r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z$. Here $\vec k_\Phi^2$ abbreviates the sum $k_1^2+k_2^2+k_3^2$ of the squares of the components, not the quaternion product, which is its negative, $\vec k_\Phi\,\vec k_\Phi = -\vec k_\Phi^2e_t$. The phase is $\mathrm{Sc}(\tilde P_{\Phi}\tilde{R}_\Phi^{\natural}) = \vec k_\Phi\cdot\vec r - \omega r'_t/c$, the scalar part of the product with the conjugate four-position. The exponent $i\,\mathrm{Sc}(\tilde P_{\Phi}\tilde{R}_\Phi^{\natural})$ is a purely imaginary central element, so the exponential is central and differentiates as an ordinary exponential. On a plane wave,
 
 $$
 \partial/\partial r'_t \longmapsto -i\omega/c, \qquad \partial/\partial r_k\longmapsto ik_k, \qquad \partial/\partial R_t \longmapsto -\frac{\omega}{c},
@@ -250,15 +250,15 @@ $$
 and therefore
 
 $$
-\tilde{\nabla} \longmapsto -\frac{\omega}{c}e_t + i\vec k, \qquad
-\tilde{\nabla}^{\natural} \longmapsto -\frac{\omega}{c}e_t - i\vec k, \qquad
-\Box \longmapsto \frac{\omega^2}{c^2} - \vec k^2 .
+\tilde{\nabla} \longmapsto -\frac{\omega}{c}e_t + i\vec k_\Phi, \qquad
+\tilde{\nabla}^{\natural} \longmapsto -\frac{\omega}{c}e_t - i\vec k_\Phi, \qquad
+\Box \longmapsto \frac{\omega^2}{c^2} - \vec k_\Phi^2 .
 $$
 
 The biquaternion norm of the wave biquaternion is
 
 $$
-\langle\tilde P_{\Phi}\rangle_{\natural} = \tilde P_{\Phi}\tilde P_{\Phi}^{\natural} = \left(i\frac{\omega}{c}\right)^2 + k_1^2+k_2^2+k_3^2 = -\frac{\omega^2}{c^2} + \vec k^2 = -\Box ,
+\langle\tilde P_{\Phi}\rangle_{\natural} = \tilde P_{\Phi}\tilde P_{\Phi}^{\natural} = \left(i\frac{\omega}{c}\right)^2 + k_1^2+k_2^2+k_3^2 = -\frac{\omega^2}{c^2} + \vec k_\Phi^2 = -\Box ,
 $$
 
 the last equality holding on the plane wave, so the second-order equation $(\Box - k_m^{2})\tilde{Ξ}_{\mathrm{sp}} = 0$ is the mass-shell condition
@@ -266,10 +266,10 @@ the last equality holding on the plane wave, so the second-order equation $(\Box
 $$
 \tilde P_{\Phi}\tilde P_{\Phi}^{\natural} = -m^{2}\,c^{2},
 \qquad\text{equivalently}\qquad
-\omega^2 = \vec k^2c^2 + k_m^{2}c^2,
+\omega^2 = \vec k_\Phi^2c^2 + k_m^{2}c^2,
 $$
 
-which is $E^2 = \vec p^2c^2 + m^2c^4$ under $E =\frac{m\,c\,\omega}{k_m}$, $\vec p =\frac{m\,c\,\vec k}{k_m}$ and $k_m=mc/\hbar$. The sign is the series sign and is consistent with the Klein–Gordon article: the operator $\Box - k_m^{2}$ vanishes on the same shell on which the biquaternion norm equals $-k_m^{2}$.
+which is $E^2 = \vec p^2c^2 + m^2c^4$ under $E =\frac{m\,c\,\omega}{k_m}$, $\vec p =\frac{m\,c\,\vec k_\Phi}{k_m}$ and $k_m=mc/\hbar$. The sign is the series sign and is consistent with the Klein–Gordon article: the operator $\Box - k_m^{2}$ vanishes on the same shell on which the biquaternion norm equals $-k_m^{2}$.
 
 The kernel of the square is larger than the kernel of the pair, and the difference is the information the square discards. For a fixed three-momentum $\vec p$, a **scalar** field obeying the Klein–Gordon equation has a two-dimensional complex solution space, spanned by the positive- and negative-frequency modes $\exp(\mp i(Er'_t-\vec p\cdot\vec r))$. A biquaternion field has four complex coefficients, and $(\Box - k_m^{2})$ acts coefficient by coefficient without mixing them, so the same pair of modes occurs once for each coefficient: an eight-dimensional complex solution space at fixed $\vec p$. The pair carries two such fields, so its second-order solution space at fixed $\vec p$ is sixteen-dimensional.
 
@@ -308,10 +308,10 @@ In the algebra the only identities used are $\tilde\nabla\tilde\nabla^\natural =
 *The Kernel and the Solution Space* measured what the square loses. The mirror question is what the **split** loses, and its answer is stronger: the second chiral half is a derivative of the first, and not independent data. Read the first member of the pair as a definition,
 
 $$
-\tilde{Ξ}_{\mathrm{sp},L} :=\frac{1}{m}\tilde\nabla\tilde{Ξ}_{\mathrm{sp},R} ,
+\tilde{Ξ}_{\mathrm{sp},L} :=\frac{1}{k_m}\tilde\nabla\tilde{Ξ}_{\mathrm{sp},R} ,
 $$
 
-and substitute it into the second member. The left-hand side becomes $\frac{1}{m}\tilde\nabla^{\natural}\tilde\nabla\tilde{Ξ}_{\mathrm{sp},R}$, which is $\frac{1}{m}\Box\tilde{Ξ}_{\mathrm{sp},R}$ because the product of the conjugate pair is the central scalar, so the second member reads
+and substitute it into the second member. The left-hand side becomes $\frac{1}{k_m}\tilde\nabla^{\natural}\tilde\nabla\tilde{Ξ}_{\mathrm{sp},R}$, which is $\frac{1}{k_m}\Box\tilde{Ξ}_{\mathrm{sp},R}$ because the product of the conjugate pair is the central scalar, so the second member reads
 
 $$
 \Box\tilde{Ξ}_{\mathrm{sp},R} = k_m^{2}\tilde{Ξ}_{\mathrm{sp},R} .
@@ -324,14 +324,14 @@ $$
 &(\Box-k_m^{2})\tilde{Ξ}_{\mathrm{sp},R} = 0 \\
 &\quad\Longleftrightarrow\quad
 \tilde\nabla\tilde{Ξ}_{\mathrm{sp},R} = k_m\tilde{Ξ}_{\mathrm{sp},L},\qquad  \tilde\nabla^{\natural}\tilde{Ξ}_{\mathrm{sp},L} = k_m\tilde{Ξ}_{\mathrm{sp},R},
-\qquad \tilde{Ξ}_{\mathrm{sp},L} =\frac{1}{m}\tilde\nabla\tilde{Ξ}_{\mathrm{sp},R} .
+\qquad \tilde{Ξ}_{\mathrm{sp},L} =\frac{1}{k_m}\tilde\nabla\tilde{Ξ}_{\mathrm{sp},R} .
 \end{aligned}
 $$
 
 Read left to right, a Klein–Gordon field generates a Dirac field. Read right to left, the first half of any Dirac field obeys Klein–Gordon. The map
 
 $$
-\tilde{Ξ}_{\mathrm{sp},R} \longmapsto \left(\tilde{Ξ}_{\mathrm{sp},R},\ \frac{1}{m}\tilde\nabla\tilde{Ξ}_{\mathrm{sp},R}\right)
+\tilde{Ξ}_{\mathrm{sp},R} \longmapsto \left(\tilde{Ξ}_{\mathrm{sp},R},\ \frac{1}{k_m}\tilde\nabla\tilde{Ξ}_{\mathrm{sp},R}\right)
 $$
 
 is $\mathbb{C}$-linear and injective and is onto the solution space of the pair, so the free Dirac solutions stand in bijection with the free Klein–Gordon solutions of **one chiral half**: the same data, described twice. The second member is not a second equation: it is what the definition of the second half turns into once the first half is on shell.
@@ -340,7 +340,7 @@ The device is older than this algebra. The second-order form of the Dirac equati
 
 Nothing in the display is a property of plane waves; the only identity used is $\tilde\nabla^{\natural}\tilde\nabla = \Box$, which is central. The equivalence was checked on plane waves at both frequency signs, with residual at the floating-point floor, and **off** the mass shell the same substitution leaves exactly
 
-$$\frac{1}{m}\tilde\nabla^{\natural}\tilde\nabla\tilde{Ξ}_{\mathrm{sp},R} - k_m\tilde{Ξ}_{\mathrm{sp},R} =\frac{1}{m}\left(\Box-k_m^{2}\right)\tilde{Ξ}_{\mathrm{sp},R} ,
+$$\frac{1}{k_m}\tilde\nabla^{\natural}\tilde\nabla\tilde{Ξ}_{\mathrm{sp},R} - k_m\tilde{Ξ}_{\mathrm{sp},R} =\frac{1}{k_m}\left(\Box-k_m^{2}\right)\tilde{Ξ}_{\mathrm{sp},R} ,
 $$
 
 which is the second member's defect, so the mass shell is the exact condition and not an approximation.
@@ -360,16 +360,16 @@ One step of the source's argument is not adopted. Kassandrov reads the construct
 Take the generator to be the Yukawa potential, the static spherically symmetric solution of the massive Klein–Gordon equation:
 
 $$
-\tilde{Ξ}_{\mathrm{sp},R} = \frac{e^{-mr}}{r},
+\tilde{Ξ}_{\mathrm{sp},R} = \frac{e^{-k_m r}}{r},
 \qquad
 r = \lvert\vec r\rvert .
 $$
 
-It solves the equation because $\Delta\left(e^{-mr}/r\right) = m^2e^{-mr}/r$ away from the origin, which was checked symbolically. The definition gives the second half in closed form:
+It solves the equation because $\Delta\left(e^{-k_m r}/r\right) = k_m^{2}e^{-k_m r}/r$ away from the origin, which was checked symbolically. The definition gives the second half in closed form:
 
 $$
-\tilde{Ξ}_{\mathrm{sp},L} =\frac{1}{m}\vec\nabla\frac{e^{-mr}}{r}
-= -\frac{(1+mr)\,e^{-mr}}{m r^3}\,\vec r ,
+\tilde{Ξ}_{\mathrm{sp},L} =\frac{1}{k_m}\vec\nabla\frac{e^{-k_m r}}{r}
+= -\frac{(1+k_m r)\,e^{-k_m r}}{k_m r^3}\,\vec r ,
 \qquad
 \vec r = r_x\,\vec e_x + r_y\,\vec e_y + r_z\,\vec e_z ,
 $$
@@ -377,14 +377,14 @@ $$
 and the pair is exact: the first member holds by construction and the second, $\tilde\nabla^{\natural}\tilde{Ξ}_{\mathrm{sp},L} = k_m\tilde{Ξ}_{\mathrm{sp},R}$, was checked symbolically term by term. Three features belong to the algebra.
 
 - The generator lies in the **scalar** part and the generated half in the **vector** part: scalar in, pure vector out. The static condition is what removes the timelike term of the gradient and leaves the vector part alone.
-- The singularity **rises by one power**, from $1/r$ to $1/r^2$ times a radial vector, and the profile $(1+mr)e^{-mr}$ is what the derivative of the Yukawa tail produces.
+- The singularity **rises by one power**, from $1/r$ to $1/r^2$ times a radial vector, and the profile $(1+k_m r)e^{-k_m r}$ is what the derivative of the Yukawa tail produces.
 - The pair is **spherically symmetric**: the scalar part is a function of $r$ alone and the vector part is a radial vector, so a rotation of the argument is undone by the rotation of the vector part. This is the corpus's form of the source's static spherically symmetric solution.
 
 The two densities on this pair make the smallest illustration of the section, and the contrast is exact rather than approximate. The density of the pair is the sum of the Hermitian norms of its two halves, the extension to the pair of the identification the corpus's Dirac article makes between the Hermitian norm of a biquaternion field and the Dirac probability density:
 
 $$
 \rho^{(D)} = \langle\tilde{Ξ}_{\mathrm{sp},R}\rangle_{*} + \langle\tilde{Ξ}_{\mathrm{sp},L}\rangle_{*}
-= \frac{e^{-2mr}}{r^2}\left(1 + \frac{(1+mr)^2}{m^2r^2}\right) > 0 ,
+= \frac{e^{-2k_m r}}{r^2}\left(1 + \frac{(1+k_m r)^2}{k_m^{2}r^2}\right) > 0 ,
 $$
 
 positive everywhere, integrable at infinity, singular at the origin as $1/r^2$. Its companion is the Klein–Gordon density, and for this static configuration that one vanishes identically, because every term of it carries a time derivative. So the same pair carries a positive definite density and a density that is zero, and the pair of behaviours is what the corpus's forms separate: the Hermitian form $\langle\cdot\rangle_{*}$ is positive definite, while the quaternionic norm $\langle\cdot\rangle_{\natural}$ is the interval, indefinite and vanishing on the cone. The source writes the density as twice this one, its halves being pairs of complex components rather than biquaternions. From the pair it draws the further conclusion that the Dirac field escapes Pauli's theorem on the sign of the energy density; the corpus records the two densities and does not adjudicate the theorem.
@@ -407,7 +407,7 @@ The square root is not scalar. The companion article on the Klein–Gordon equat
 
 The square carries the mass shell $\tilde P_{\Phi}\tilde P_{\Phi}^{\natural} = -m^{2}\,c^{2}$, hence $E^2 = \vec p^2c^2 + m^2c^4$, and the mass-squared coefficient of the second-order operator; it does not carry the sign of the mass, the chirality of each half, or the relation between the halves that selects the first-order solution space from the larger second-order one. At fixed three-momentum the pair's second-order space has complex dimension sixteen and the first-order equation selects eight of them, so the square is a necessary and not a sufficient condition. The Klein–Gordon operator is the bosonic shadow of a first-order object that exchanges the two halves.
 
-The converse holds exactly for the free pair. Read the first member as a definition, $\tilde{Ξ}_{\mathrm{sp},L} =\frac{1}{m}\tilde\nabla\tilde{Ξ}_{\mathrm{sp},R}$; the second member then becomes $(\Box-k_m^{2})\tilde{Ξ}_{\mathrm{sp},R} = 0$, so the free Dirac solutions stand in bijection with the free Klein–Gordon solutions of one chiral half, and the second half is the gradient of the first. In this two-term form there is no gauge freedom, because the only shift the gradient annihilates is the massless Weyl field, which takes the potential off the mass shell; the source's four-scalar form of the same construction does carry the residual gauge $\xi_{\mathrm{scl}}\mapsto\xi_{\mathrm{scl}}+\kappa$ with $D^*\kappa = 0$, and that is what earns the phrase *the Dirac field is a gauge field*. The correspondence is exact for the free field and stops at minimal coupling, where the commutator of the two generalized gradients is the field strength. Its smallest illustration is the static Yukawa pair, generator $e^{-mr}/r$ and second half $-(1+mr)e^{-mr}\vec r/(m r^3)$, on which the Dirac density is positive definite and the Klein–Gordon density vanishes.
+The converse holds exactly for the free pair. Read the first member as a definition, $\tilde{Ξ}_{\mathrm{sp},L} =\frac{1}{k_m}\tilde\nabla\tilde{Ξ}_{\mathrm{sp},R}$; the second member then becomes $(\Box-k_m^{2})\tilde{Ξ}_{\mathrm{sp},R} = 0$, so the free Dirac solutions stand in bijection with the free Klein–Gordon solutions of one chiral half, and the second half is the gradient of the first. In this two-term form there is no gauge freedom, because the only shift the gradient annihilates is the massless Weyl field, which takes the potential off the mass shell; the source's four-scalar form of the same construction does carry the residual gauge $\xi_{\mathrm{scl}}\mapsto\xi_{\mathrm{scl}}+\kappa$ with $D^*\kappa = 0$, and that is what earns the phrase *the Dirac field is a gauge field*. The correspondence is exact for the free field and stops at minimal coupling, where the commutator of the two generalized gradients is the field strength. Its smallest illustration is the static Yukawa pair, generator $e^{-k_m r}/r$ and second half $-(1+k_m r)e^{-k_m r}\vec r/(k_m r^3)$, on which the Dirac density is positive definite and the Klein–Gordon density vanishes.
 
 ## Summary of Notation
 
@@ -425,11 +425,11 @@ The converse holds exactly for the free pair. Read the first member as a definit
 | $\tilde{\nabla}^2 = \left(\partial^2/\partial R_t^2 - \lvert\vec\nabla\rvert^2\right)e_t + 2\,\partial/\partial R_t\,\vec\nabla$ | Square of the gradient alone; non-central, with a vector remainder |
 | $\Box = \tilde{\nabla}\tilde{\nabla}^{\natural} = \tilde{\nabla}^{\natural}\tilde{\nabla} = \partial^2/\partial R_t^2 + \Delta$ | d'Alembertian, series convention |
 | $\langle\tilde{Q}\rangle_{\natural} = \tilde{Q}\tilde{Q}^{\natural} = \sum_\mu Q_\mu^2$ | Biquaternion norm |
-| $\tilde P_{\Phi} =\frac{m\,c\,(i\omega/c\,e_t + \vec k)}{k_m}$ | Four-wavevector, $\tilde P_{\Phi}\tilde P_{\Phi}^{\natural} = -m^{2}\,c^{2}$ |
-| $\tilde R_\Phi = i r'_t\,e_t + \vec r$, with $\vec r = r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z$ | Four-position, phase $\mathrm{Sc}(\tilde P_{\Phi}\tilde{R}_\Phi^{\natural}) = \vec k\cdot\vec r - \omega r'_t/c$ |
+| $\tilde P_{\Phi} =\frac{m\,c\,(i\omega/c\,e_t + \vec k_\Phi)}{k_m}$ | Four-wavevector, $\tilde P_{\Phi}\tilde P_{\Phi}^{\natural} = -m^{2}\,c^{2}$ |
+| $\tilde R_\Phi = i r'_t\,e_t + \vec r$, with $\vec r = r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z$ | Four-position, phase $\mathrm{Sc}(\tilde P_{\Phi}\tilde{R}_\Phi^{\natural}) = \vec k_\Phi\cdot\vec r - \omega r'_t/c$ |
 | $1/k_m$ | The mass length of the operator pair, $\hbar/(mc)$ (inverse reduced Compton wavelength) |
 | $\tilde{\nabla}\tilde{Ξ}_{\mathrm{sp},R} = k_m\tilde{Ξ}_{\mathrm{sp},L}$, $\tilde{\nabla}^{\natural}\tilde{Ξ}_{\mathrm{sp},L} = k_m\tilde{Ξ}_{\mathrm{sp},R}$ | The one-sided pair; linear, with the mass the same scalar in each half |
-| $\tilde{Ξ}_{\mathrm{sp},L} =\frac{1}{m}\tilde\nabla\tilde{Ξ}_{\mathrm{sp},R}$ | The second half as the gradient of the first; the pair's equivalent form, exact whenever $(\Box-k_m^{2})\tilde{Ξ}_{\mathrm{sp},R} = 0$ |
+| $\tilde{Ξ}_{\mathrm{sp},L} =\frac{1}{k_m}\tilde\nabla\tilde{Ξ}_{\mathrm{sp},R}$ | The second half as the gradient of the first; the pair's equivalent form, exact whenever $(\Box-k_m^{2})\tilde{Ξ}_{\mathrm{sp},R} = 0$ |
 | $\langle\tilde{Ξ}_{\mathrm{sp}}\rangle_{*} = \sum_\mu\lvert\tilde{Ξ}_{\mathrm{sp},\mu}\rvert^2$ | Hermitian norm of a field, positive definite; the Dirac density of the pair |
 | $\tilde{Ξ}_{\mathrm{sp}} = (\tilde{Ξ}_{\mathrm{sp},L},\tilde{Ξ}_{\mathrm{sp},R})$ | The chiral pair as an ordered pair of elements |
 | $E^2 = \vec p^2c^2 + m^2c^4$ | Dispersion relation |

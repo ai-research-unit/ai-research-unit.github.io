@@ -6,7 +6,7 @@ The Maxwell field is massless, and its masslessness is what reduces four potenti
 
 The purpose of this article is to write the Proca system in biquaternionic form and to read its content from the algebra. The equation is a single biquaternion equation for the four-potential $\tilde{A}_{\Phi}\in\mathbb{B}_{\Phi}$ and its field strength $\tilde{F}\in\mathbb{B}_{V}$. Two structural facts organise everything. First, the equation is **homogeneous but not gauge invariant**: the source that the companion Maxwell equation attributes to an external current is supplied here by the potential itself, so the equation is linear in $\tilde{A}_{\Phi}$ and the gauge freedom of the massless theory is absent. Second, the divergence of the equation is not an identity: applying the conjugate gradient to the equation and taking its scalar part forces the **Lorenz condition** $S = \mathrm{Sc}(\tilde{\nabla}^{\natural}\tilde{A}_{\Phi}) = 0$, exactly as taking the divergence of the standard Proca equation forces $\langle\tilde\nabla,\tilde A_{\Phi}\rangle_{\natural} = 0$. The Lorenz condition is a consequence of the equation, not a gauge choice, and that is the algebraic statement of the disappearance of the gauge freedom.
 
-Once the Lorenz condition is available, the Proca equation collapses to the Klein–Gordon equation for each component, and the physical content is transparent: three real polarization directions at each wavevector — two transverse and one longitudinal — with the dispersion relation $\omega^2 = c^2\vec k^2 + c^2k_m^{2}$. The counting is done here explicitly, and it is contrasted with the massless case, where the same calculation leaves two real directions because a residual gauge transformation removes the third. The article closes by locating the massive field relative to the self-dual split of the companion article: the field strength remains a pure vector of the algebra and so keeps its self-dual and anti-self-dual coordinates, but it is no longer harmonic, and the mass term is precisely what the biquaternion Maxwell equation calls a source. Here $k_m=mc/\hbar$ is the mass wave number, the inverse of the mass length.
+Once the Lorenz condition is available, the Proca equation collapses to the Klein–Gordon equation for each component, and the physical content is transparent: three real polarization directions at each wavevector — two transverse and one longitudinal — with the dispersion relation $\omega^2 = c^2\vec k_\Phi^2 + c^2k_m^{2}$. The counting is done here explicitly, and it is contrasted with the massless case, where the same calculation leaves two real directions because a residual gauge transformation removes the third. The article closes by locating the massive field relative to the self-dual split of the companion article: the field strength remains a pure vector of the algebra and so keeps its self-dual and anti-self-dual coordinates, but it is no longer harmonic, and the mass term is precisely what the biquaternion Maxwell equation calls a source. Here $k_m=mc/\hbar$ is the mass wave number, the inverse of the mass length.
 
 The conventions are those of the companion articles. The algebra is $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ with basis $e_t=1,\vec e_x,\vec e_y,\vec e_z$, $\vec e_\mu^2=-e_t$, and central scalar imaginary $i$; the gradient is $\tilde{\nabla}=e_t\partial/\partial R_t+\vec e_x\partial/\partial R_x+\vec e_y\partial/\partial R_y+\vec e_z\partial/\partial R_z$ with $\tilde{\nabla}^{\natural}$ its quaternion conjugate and $\Box=\tilde{\nabla}\tilde{\nabla}^{\natural}=\partial^2/\partial R_t^2+\Delta$; the potential and field strength are $\tilde{A}_{\Phi}=i\,a'_t\,e_t+\vec A$ and $\tilde{F}=\tilde{\nabla}^{\natural}\tilde{A}_{\Phi}-\mathrm{Sc}(\tilde{\nabla}^{\natural}\tilde{A}_{\Phi})=i\sqrt{\epsilon}\,\vec E-\sqrt{\mu}\,\vec H$, with $c=1/\sqrt{\epsilon\mu}$ and the normalization of the potential fixed so that the two expressions for $\tilde{F}$ agree; and the mass enters as the length $k_m=mc/\hbar$, whose reciprocal $k_m=mc/\hbar$ is the coefficient written where the dimensions have to be displayed. The mass parameter is $m=m$, written through the mass length $1/k_m$.
 
@@ -62,11 +62,11 @@ $$
 \left(\Box - k_m^{2}\right)\tilde{A}_{\Phi} = 0 ,
 $$
 
-the Klein–Gordon equation with the physical mass shell $\omega^2 = c^2\vec k^2 + c^2k_m^{2}$. The field of a massive vector particle is thus a four-vector each of whose components satisfies the Klein–Gordon equation, subject to the single constraint $\langle\tilde\nabla,\tilde A_{\Phi}\rangle_{\natural} = 0$. Four components minus one constraint leaves three. This count is standard and is checked below on the explicit plane waves.
+the Klein–Gordon equation with the physical mass shell $\omega^2 = c^2\vec k_\Phi^2 + c^2k_m^{2}$. The field of a massive vector particle is thus a four-vector each of whose components satisfies the Klein–Gordon equation, subject to the single constraint $\langle\tilde\nabla,\tilde A_{\Phi}\rangle_{\natural} = 0$. Four components minus one constraint leaves three. This count is standard and is checked below on the explicit plane waves.
 
 ### The rest frame and the three states
 
-The three polarizations are easiest to see in the rest frame, $\vec k = \mathbf{0}$. The dispersion relation gives $\omega = c\,k_m$, and the Lorenz condition gives $A_t = i(c/\omega)\vec k\cdot\vec a = 0$, so the time component vanishes and the amplitude is purely spatial. The three real components of $\vec a$ are then three independent states, degenerate in energy and forming the three states $m_s = +1,0,-1$ of a spin-one particle along any chosen quantisation axis. There is no condition that removes the component of $\vec a$ along $\vec k$, and in the rest frame that component is unconstrained: all three directions survive. A massless particle has no rest frame, its two polarizations are the two transverse directions for every wavevector, and the third state is absent. The change from two to three states as the mass is turned on is thus visible already at the level of the rest-frame amplitudes.
+The three polarizations are easiest to see in the rest frame, $\vec k_\Phi = \mathbf{0}$. The dispersion relation gives $\omega = c\,k_m$, and the Lorenz condition gives $A_t = i(c/\omega)\vec k_\Phi\cdot\vec a = 0$, so the time component vanishes and the amplitude is purely spatial. The three real components of $\vec a$ are then three independent states, degenerate in energy and forming the three states $m_s = +1,0,-1$ of a spin-one particle along any chosen quantisation axis. There is no condition that removes the component of $\vec a$ along $\vec k_\Phi$, and in the rest frame that component is unconstrained: all three directions survive. A massless particle has no rest frame, its two polarizations are the two transverse directions for every wavevector, and the third state is absent. The change from two to three states as the mass is turned on is thus visible already at the level of the rest-frame amplitudes.
 
 ## The Biquaternion Proca Equation
 
@@ -176,54 +176,54 @@ Write a plane-wave potential
 $$
 \tilde{A}_{\Phi} = \tilde{A}_{\Phi,0}\,\exp(\,i\,\mathrm{Sc}(\tilde P_{\Phi}\tilde{Q}^{\natural})), \qquad
 \tilde{A}_{\Phi,0} = A_te_t + \vec a, \qquad
-\tilde P_{\Phi} = i\frac{\omega}{c}\,e_t + \vec k,
+\tilde P_{\Phi} = i\frac{\omega}{c}\,e_t + \vec k_\Phi,
 $$
 
-where $\mathrm{Sc}(\tilde P_{\Phi}\tilde{Q}^{\natural}) = \vec k\cdot(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z) - \omega r'_t/c$ and $\tilde{A}_{\Phi,0}$ is a constant biquaternion of the material sector, so that $A_t$ is purely imaginary and $\vec a$ is real. Differentiation gives $\tilde{\nabla}\tilde{A}_{\Phi} = i\tilde P_{\Phi}\tilde{A}_{\Phi}$ and $\tilde{\nabla}^{\natural}\tilde{A}_{\Phi} = i\tilde P_{\Phi}^{\natural}\tilde{A}_{\Phi}$, and the Klein–Gordon operator acts as
+where $\mathrm{Sc}(\tilde P_{\Phi}\tilde{Q}^{\natural}) = \vec k_\Phi\cdot(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z) - \omega r'_t/c$ and $\tilde{A}_{\Phi,0}$ is a constant biquaternion of the material sector, so that $A_t$ is purely imaginary and $\vec a$ is real. Differentiation gives $\tilde{\nabla}\tilde{A}_{\Phi} = i\tilde P_{\Phi}\tilde{A}_{\Phi}$ and $\tilde{\nabla}^{\natural}\tilde{A}_{\Phi} = i\tilde P_{\Phi}^{\natural}\tilde{A}_{\Phi}$, and the Klein–Gordon operator acts as
 
 $$
-\Box\,\exp(\,i\,\mathrm{Sc}(\tilde P_{\Phi}\tilde{Q}^{\natural})) = \left(\frac{\omega^2}{c^2} - \vec k^2\right)\exp(\,i\,\mathrm{Sc}(\tilde P_{\Phi}\tilde{Q}^{\natural})),
+\Box\,\exp(\,i\,\mathrm{Sc}(\tilde P_{\Phi}\tilde{Q}^{\natural})) = \left(\frac{\omega^2}{c^2} - \vec k_\Phi^2\right)\exp(\,i\,\mathrm{Sc}(\tilde P_{\Phi}\tilde{Q}^{\natural})),
 $$
 
 as in the companion Klein–Gordon article. The Klein–Gordon equation therefore requires
 
 $$
-\boxed{\;\frac{\omega^2}{c^2} - \vec k^2 = k_m^{2},
+\boxed{\;\frac{\omega^2}{c^2} - \vec k_\Phi^2 = k_m^{2},
 \qquad\text{i.e.}\qquad
-\omega^2 = c^2\vec k^2 + c^2k_m^{2}\;},
+\omega^2 = c^2\vec k_\Phi^2 + c^2k_m^{2}\;},
 $$
 
 the physical relativistic dispersion relation.
 
 ### The Lorenz condition on a plane wave
 
-The scalar part of $\tilde{\nabla}^{\natural}\tilde{A}_{\Phi}$ is the scalar part of $i\tilde P_{\Phi}^{\natural}\tilde{A}_{\Phi,0}$. Splitting $\tilde P_{\Phi}^{\natural} = i(\omega/c)e_t - \vec k$ and using $\vec k\vec a = -\vec k\cdot\vec a + \vec k\times\vec a$,
+The scalar part of $\tilde{\nabla}^{\natural}\tilde{A}_{\Phi}$ is the scalar part of $i\tilde P_{\Phi}^{\natural}\tilde{A}_{\Phi,0}$. Splitting $\tilde P_{\Phi}^{\natural} = i(\omega/c)e_t - \vec k_\Phi$ and using $\vec k_\Phi\vec a = -\vec k_\Phi\cdot\vec a + \vec k_\Phi\times\vec a$,
 
 $$
 \mathrm{Sc}\!\left(i\tilde P_{\Phi}^{\natural}\tilde{A}_{\Phi,0}\right)
-= -\frac{\omega}{c}\,A_t + i\,\vec k\cdot\vec a,
+= -\frac{\omega}{c}\,A_t + i\,\vec k_\Phi\cdot\vec a,
 $$
 
 so that the Lorenz condition fixes the time component in terms of the spatial amplitude,
 
 $$
-A_t = i\,\frac{c}{\omega}\,\vec k\cdot\vec a.
+A_t = i\,\frac{c}{\omega}\,\vec k_\Phi\cdot\vec a.
 $$
 
-For real $\vec k$ and real $\vec a$ this $A_t$ is purely imaginary, so the potential remains in the material sector $\mathbb{B}_{\Phi}$, as it must. No condition is placed on the direction of $\vec a$.
+For real $\vec k_\Phi$ and real $\vec a$ this $A_t$ is purely imaginary, so the potential remains in the material sector $\mathbb{B}_{\Phi}$, as it must. No condition is placed on the direction of $\vec a$.
 
 ### Counting
 
-The amplitude data are the three real components of $\vec a$. The time component is not independent: it is fixed by the Lorenz condition. The dispersion relation fixes $\omega$ for each $\vec k$ but does not reduce the number of amplitudes. Hence a massive vector field has **three real polarization directions per wavevector**:
+The amplitude data are the three real components of $\vec a$. The time component is not independent: it is fixed by the Lorenz condition. The dispersion relation fixes $\omega$ for each $\vec k_\Phi$ but does not reduce the number of amplitudes. Hence a massive vector field has **three real polarization directions per wavevector**:
 
-- two directions in the plane orthogonal to $\vec k$, the transverse polarizations; and
-- one direction along $\vec k$, the **longitudinal** polarization.
+- two directions in the plane orthogonal to $\vec k_\Phi$, the transverse polarizations; and
+- one direction along $\vec k_\Phi$, the **longitudinal** polarization.
 
-The counting is linear in the field, so it is enough to test it on a general superposition. It is satisfied on a superposition of two independent plane waves with different wavevectors and amplitudes: the Proca equation $\tilde{\nabla}\tilde{F}=m^2\tilde{A}_{\Phi}$ holds to round-off (residual at the level of $10^{-16}$ in units of the field amplitude), the Lorenz scalar vanishes to round-off for each component of the superposition, and the mass shell holds for each wavevector. A wave whose time component violates the Lorenz condition fails the equation by an amount of order the amplitude, as a separate substitution shows: the constraint is not optional.
+The counting is linear in the field, so it is enough to test it on a general superposition. It is satisfied on a superposition of two independent plane waves with different wavevectors and amplitudes: the Proca equation $\tilde{\nabla}\tilde{F}=k_m^{2}\tilde{A}_{\Phi}$ holds to round-off (residual at the level of $10^{-16}$ in units of the field amplitude), the Lorenz scalar vanishes to round-off for each component of the superposition, and the mass shell holds for each wavevector. A wave whose time component violates the Lorenz condition fails the equation by an amount of order the amplitude, as a separate substitution shows: the constraint is not optional.
 
 ### Contrast with the massless case
 
-For $m = 0$ the dispersion relation becomes $\omega^2 = c^2\vec k^2$ and the Lorenz condition still fixes $A_t = i(c/\omega)\vec k\cdot\vec a$, but now the system has the residual gauge freedom $\tilde{A}_{\Phi}\to\tilde{A}_{\Phi}-\tilde{\nabla}\Gamma$ with $\Box\Gamma=0$. On a plane wave this freedom shifts the amplitude by a multiple of the four-wavevector, $\vec a\to\vec a+\lambda\vec k$ and $A_t\to A_t+\lambda\,i\omega/c$, which removes exactly the longitudinal direction together with the time component; two real transverse directions remain. The massless field therefore has two real polarizations, and the massive field three. The third polarization is physical for the Proca field precisely because there is no gauge transformation to remove it, and the algebra exhibits this: the Lorenz condition is a consequence of the equation in the massive case and a choice in the massless one.
+For $m = 0$ the dispersion relation becomes $\omega^2 = c^2\vec k_\Phi^2$ and the Lorenz condition still fixes $A_t = i(c/\omega)\vec k_\Phi\cdot\vec a$, but now the system has the residual gauge freedom $\tilde{A}_{\Phi}\to\tilde{A}_{\Phi}-\tilde{\nabla}\Gamma$ with $\Box\Gamma=0$. On a plane wave this freedom shifts the amplitude by a multiple of the four-wavevector, $\vec a\to\vec a+\lambda\vec k_\Phi$ and $A_t\to A_t+\lambda\,i\omega/c$, which removes exactly the longitudinal direction together with the time component; two real transverse directions remain. The massless field therefore has two real polarizations, and the massive field three. The third polarization is physical for the Proca field precisely because there is no gauge transformation to remove it, and the algebra exhibits this: the Lorenz condition is a consequence of the equation in the massive case and a choice in the massless one.
 
 ### The massless limit and the Stueckelberg form
 
@@ -331,7 +331,7 @@ with $\tilde{A}_{\Phi}\in\mathbb{B}_{\Phi}$ and $\tilde{F}\in\mathbb{B}_{V}$. Un
 
 The divergence of the equation is not an identity. Applying $\tilde{\nabla}^{\natural}$ and taking the scalar part, the d'Alembertian is central and scalar, the field strength is a pure vector, and the left-hand side vanishes identically; the mass then forces the **Lorenz condition** $S=\mathrm{Sc}(\tilde{\nabla}^{\natural}\tilde{A}_{\Phi})=0$ as a consequence of the equation of motion. With the constraint in hand, the field strength is the conjugate gradient of the potential and the equation reduces to the Klein–Gordon equation $(\Box - k_m^{2})\tilde{A}_{\Phi}=0$ for each component. The two together — Klein–Gordon and Lorenz — are equivalent to the Proca equation.
 
-The plane-wave solutions carry a real spatial amplitude and a time component fixed by the Lorenz condition, with the dispersion relation $\omega^2 = c^2\vec k^2 + c^2k_m^{2}$. The three real components of the spatial amplitude are the three polarizations: two transverse and one longitudinal. The longitudinal mode is physical because there is no gauge freedom to remove it; in the massless limit the residual gauge transformation removes exactly that mode and leaves the two transverse polarizations. The field strength remains a pure vector of the algebra and so retains the self-dual split of the companion article — it carries the self-dual coordinate $\vec N=\vec E+ic\vec B$ of the real field — but it is not harmonic, and the mass term is precisely the source that the biquaternion Maxwell equation requires.
+The plane-wave solutions carry a real spatial amplitude and a time component fixed by the Lorenz condition, with the dispersion relation $\omega^2 = c^2\vec k_\Phi^2 + c^2k_m^{2}$. The three real components of the spatial amplitude are the three polarizations: two transverse and one longitudinal. The longitudinal mode is physical because there is no gauge freedom to remove it; in the massless limit the residual gauge transformation removes exactly that mode and leaves the two transverse polarizations. The field strength remains a pure vector of the algebra and so retains the self-dual split of the companion article — it carries the self-dual coordinate $\vec N=\vec E+ic\vec B$ of the real field — but it is not harmonic, and the mass term is precisely the source that the biquaternion Maxwell equation requires.
 
 ## Summary of Notation
 
@@ -347,8 +347,8 @@ The plane-wave solutions carry a real spatial amplitude and a time component fix
 | $\tilde{F} = \tilde{\nabla}^{\natural}\tilde{A}_{\Phi}-\mathrm{Sc}(\tilde{\nabla}^{\natural}\tilde{A}_{\Phi})$ | Field-strength biquaternion, pure vector |
 | $S = \mathrm{Sc}(\tilde{\nabla}^{\natural}\tilde{A}_{\Phi})$ | Gauge scalar; the Proca equation forces $S=0$ (Lorenz condition) |
 | $1/k_m$ | The mass length, $\hbar/(mc)$; its reciprocal is the inverse Compton wave vector, $k_m=mc/\hbar$, and the squared coefficient is $k_m^{2}=k_m^{2}$ |
-| $\tilde P_{\Phi} =\frac{m\,c\,(i\omega/c\,e_t + \vec k)}{k_m}$ | Four-wavevector biquaternion |
-| $\omega^2 = c^2\vec k^2 + c^2k_m^{2}$ | Massive dispersion relation |
+| $\tilde P_{\Phi} =\frac{m\,c\,(i\omega/c\,e_t + \vec k_\Phi)}{k_m}$ | Four-wavevector biquaternion |
+| $\omega^2 = c^2\vec k_\Phi^2 + c^2k_m^{2}$ | Massive dispersion relation |
 | $\vec a$, $A_t$ | Spatial amplitude (three real components) and time component fixed by Lorenz |
 | $\star\tilde{F} = -i\tilde{F}$ | Hodge dual on the field strength (companion article) |
 | $\langle\tilde{Q}_1,\tilde{Q}_2\rangle$ | the general plain bilinear form, the scalar part of the general plain bilinear product, $\mathrm{Sc}(\tilde{Q}_1\tilde{Q}_2)$ |

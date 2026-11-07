@@ -796,22 +796,22 @@ with reflectance $R=|r|^2$ and transmittance $T=(Z_1/Z_2)|r'_t|^2$ satisfying $R
 
 This section fixes the conventions for the later exercise on plane-wave propagation in a medium. Work in a homogeneous medium with real, possibly frequency-dependent, $\epsilon(\omega)$ and $\mu(\omega)$, and use the complex-amplitude convention
 $$
-\vec E(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z,r'_t)=\mathrm{Re}\!\left[\vec E_0\,\exp(\,i(\vec k\cdot(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)-\omega r'_t/c))\right],
+\vec E(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z,r'_t)=\mathrm{Re}\!\left[\vec E_0\,\exp(\,i(\vec k_\Phi\cdot(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)-\omega r'_t/c))\right],
 $$
 $$
-\vec H(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z,r'_t)=\mathrm{Re}\!\left[\vec H_0\,\exp(\,i(\vec k\cdot(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)-\omega r'_t/c))\right],
+\vec H(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z,r'_t)=\mathrm{Re}\!\left[\vec H_0\,\exp(\,i(\vec k_\Phi\cdot(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)-\omega r'_t/c))\right],
 $$
-with complex amplitude vectors $\vec E_0,\vec H_0$ and real $\omega>0$ and $\vec k$. This fixes the sign convention; the opposite choice $\exp(-i(\vec k\cdot(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)-\omega r'_t/c))$ is equivalent under $\vec k\to-\vec k$, $\omega\to-\omega$.
+with complex amplitude vectors $\vec E_0,\vec H_0$ and real $\omega>0$ and $\vec k_\Phi$. This fixes the sign convention; the opposite choice $\exp(-i(\vec k_\Phi\cdot(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)-\omega r'_t/c))$ is equivalent under $\vec k_\Phi\to-\vec k_\Phi$, $\omega\to-\omega$.
 
 For a source-free plane wave, $\tilde{\nabla}\tilde{F}=0$ is equivalent to the four algebraic conditions
 $$
-\vec k\cdot\vec E_0=0,
+\vec k_\Phi\cdot\vec E_0=0,
 \qquad
-\vec k\cdot\vec H_0=0,
+\vec k_\Phi\cdot\vec H_0=0,
 \qquad
-\vec k\times\vec E_0=\omega\mu\,\vec H_0,
+\vec k_\Phi\times\vec E_0=\omega\mu\,\vec H_0,
 \qquad
-\vec k\times\vec H_0=-\omega\epsilon\,\vec E_0,
+\vec k_\Phi\times\vec H_0=-\omega\epsilon\,\vec E_0,
 $$
 from which
 $$
@@ -821,7 +821,7 @@ k^2=\omega^2\epsilon\mu=\frac{\omega^2}{c^2},
 \qquad
 Z=\sqrt{\frac{\mu}{\epsilon}},
 $$
-with $\vec u_k=\vec k/|\vec k|$. In particular the amplitudes satisfy
+with $\vec u_k=\vec k_\Phi/|\vec k_\Phi|$. In particular the amplitudes satisfy
 $$
 |\vec E_0|=Z\,|\vec H_0|,
 \qquad
@@ -942,7 +942,7 @@ which is fixed by the parent article and splits $\tilde{F}$ into a Hermitian ele
 
 The single biquaternionic Maxwell equation $\tilde{\nabla}\tilde{F}=-\sqrt{\mu}\,\tilde{J}_{\Phi}$ is the same in every medium: the field factors cancel through $\sqrt{\epsilon}/(c\sqrt{\mu})=\epsilon$ and $\sqrt{\mu}/(c\sqrt{\epsilon})=\mu$, and the only medium factor left explicit in the equation is $\sqrt{\mu}$. Dispersion makes the local complex structure spectral: each frequency carries its own speed $c(\omega)=1/\sqrt{\epsilon(\omega)\mu(\omega)}$, refractive index $n(\omega)=c_0/c(\omega)$, dispersion relation $k^2=\omega^2\epsilon(\omega)\mu(\omega)$, and group velocity $v_g=c_0/(n+\omega\,dn/d\omega)$, at least while the normalisation is real. At an interface the local complex structure jumps, and the field strength is discontinuous even though the physical fields satisfy the standard tangential and normal continuity conditions. The vacuum limit $c\to c_0$, $Z\to Z_0$ recovers every object of the parent article, and the zero-divisor cone of the algebra coincides with the wave cone of the medium at every value of $c$.
 
-For a plane wave in the medium, the conventions fixed above are: complex amplitudes in the $\exp(i(\vec k\cdot(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)-\omega r'_t/c))$ convention, transversality $\vec k\cdot\vec E_0=\vec k\cdot\vec H_0=0$, the relations $\vec k\times\vec E_0=\omega\mu\vec H_0$ and $\vec k\times\vec H_0=-\omega\epsilon\vec E_0$, the dispersion relation $k=\omega/c(\omega)=n(\omega)\omega/c_0$, and the impedance relation $\vec H_0=Z^{-1}\vec u_k\times\vec E_0$. In these conventions $|\vec E_0|=Z|\vec H_0|=c|\vec B_0|$, the two normalised halves of $\tilde{F}_0$ have equal magnitude, and $\langle\tilde{F}_0\rangle_{\natural}=0$.
+For a plane wave in the medium, the conventions fixed above are: complex amplitudes in the $\exp(i(\vec k_\Phi\cdot(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)-\omega r'_t/c))$ convention, transversality $\vec k_\Phi\cdot\vec E_0=\vec k_\Phi\cdot\vec H_0=0$, the relations $\vec k_\Phi\times\vec E_0=\omega\mu\vec H_0$ and $\vec k_\Phi\times\vec H_0=-\omega\epsilon\vec E_0$, the dispersion relation $k=\omega/c(\omega)=n(\omega)\omega/c_0$, and the impedance relation $\vec H_0=Z^{-1}\vec u_k\times\vec E_0$. In these conventions $|\vec E_0|=Z|\vec H_0|=c|\vec B_0|$, the two normalised halves of $\tilde{F}_0$ have equal magnitude, and $\langle\tilde{F}_0\rangle_{\natural}=0$.
 
 A chiral medium is the one constitutive case recorded here that changes the *order* of the reduction rather than only its parameters. With the Drude–Born–Fedorov relations $\vec D=\epsilon(\vec E+\beta\,\mathrm{rot}\,\vec E)$ and $\vec B=\mu(\vec H+\beta\,\mathrm{rot}\,\vec H)$ the time-dependent Maxwell system still reduces to a single quaternionic equation, but its operator $\mathcal{M}=\beta\sqrt{\epsilon\mu}\,\partial/\partial r'_t\,D+\sqrt{\epsilon\mu}\,\partial/\partial r'_t-iD$ is of second order, its wave equations are of fourth order, and its frequency symbol factors as $i(\beta\sqrt{\epsilon\mu}\,\omega-1)(D+\alpha(\omega))$ with a frequency-dependent $\alpha$ that degenerates at $\omega=c/\beta$. The non-chiral reduction $\sqrt{\epsilon\mu}\,\partial/\partial r'_t-iD$ is the $\beta=0$ member of that family. The same fourth-order equation carries the medium's birefringence, with the two refractive indices $n_\pm(\omega)=1/(1\mp\beta\omega/c)$; and the fundamental solution of $\mathcal{M}$ is causal by construction, built from the retarded kernel $V_{\mathrm{vek},\alpha}$ with a displaced pole in the upper half-frequency plane.
 
@@ -1005,8 +1005,8 @@ The equation that the reduction produces has a solution theory of its own, and i
 | $\langle\tilde{F}\rangle_{\natural} = \langle\tilde{F},\tilde{F}\rangle_{\natural}=\tilde{F}\tilde{F}^{\natural}$ | Biquaternion norm (complex scalar) |
 | $W=\tfrac{1}{2}(\epsilon\vec E^2+\mu\vec H^2)$ | Electromagnetic energy density |
 | $\vec S=\vec E\times\vec H$ | Poynting vector |
-| $\vec k,\omega$ | Wavevector and angular frequency |
-| $\vec u_k=\vec k/\lvert\vec k\rvert$ | Unit wavevector |
+| $\vec k_\Phi,\omega$ | Wavevector and angular frequency |
+| $\vec u_k=\vec k_\Phi/\lvert\vec k_\Phi\rvert$ | Unit wavevector |
 | $\beta$ | Chirality measure of a Drude–Born–Fedorov medium (a length) |
 | $D=\vec e_x\,\partial/\partial R_x+\vec e_y\,\partial/\partial R_y+\vec e_z\,\partial/\partial R_z$ | Moisil–Teodoresco operator, $D^2=-\Delta$, the spatial part of $\tilde{\nabla}$; used in every section from the chiral one onward |
 | $\mathcal{D}_{\vec{\alpha}}$ | Operator $g\mapsto Dg+g\,\vec{\alpha}$, the coefficient multiplying on the right |

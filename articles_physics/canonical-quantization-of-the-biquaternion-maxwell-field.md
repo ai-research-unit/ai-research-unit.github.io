@@ -155,15 +155,15 @@ Covariant quantization proceeds with all four polarizations and imposes a subsid
 
 $$
 A_\mu(x)=\int\!\frac{d^3k}{(2\pi)^3}\frac{1}{\sqrt{2\omega_k}}\sum_{r=0}^{3}
-\left[\epsilon^{(r)}_\mu(\vec k)\,a_{\mathrm{fop},r}(\vec k)\,\exp(-ik\cdot x)
-+\epsilon^{(r)*}_\mu(\vec k)\,a_{\mathrm{fop},r}^{\dagger}(\vec k)\,\exp(+ik\cdot x)\right],
+\left[\epsilon^{(r)}_\mu(\vec k_\Phi)\,a_{\mathrm{fop},r}(\vec k_\Phi)\,\exp(-ik\cdot x)
++\epsilon^{(r)*}_\mu(\vec k_\Phi)\,a_{\mathrm{fop},r}^{\dagger}(\vec k_\Phi)\,\exp(+ik\cdot x)\right],
 $$
 
-with $\omega_k=|\vec k|$ for the massless field and with polarization vectors normalized as $\langle\epsilon^{(r)},\epsilon^{(s)}\rangle_{\natural}=\sigma_{\mathrm{met},r}\delta_{rs}$, where $(\sigma_{\mathrm{met},0},\sigma_{\mathrm{met},1},\sigma_{\mathrm{met},2},\sigma_{\mathrm{met},3})=(-1,+1,+1,+1)$, the one minus being the square of the $i$ that the time coefficient carries, $Q_t=i r'_t$, and the natural form on the four units $e_t,\vec e_x,\vec e_y,\vec e_z$ being $\delta_{\mu\nu}$. The mode operators carry the corresponding commutators,
+with $\omega_k=|\vec k_\Phi|$ for the massless field and with polarization vectors normalized as $\langle\epsilon^{(r)},\epsilon^{(s)}\rangle_{\natural}=\sigma_{\mathrm{met},r}\delta_{rs}$, where $(\sigma_{\mathrm{met},0},\sigma_{\mathrm{met},1},\sigma_{\mathrm{met},2},\sigma_{\mathrm{met},3})=(-1,+1,+1,+1)$, the one minus being the square of the $i$ that the time coefficient carries, $Q_t=i r'_t$, and the natural form on the four units $e_t,\vec e_x,\vec e_y,\vec e_z$ being $\delta_{\mu\nu}$. The mode operators carry the corresponding commutators,
 
 $$
-\boxed{\;\big[a_{\mathrm{fop},r}(\vec k),a_{\mathrm{fop},s}^{\dagger}(\vec k_2)\big]
-=\sigma_{\mathrm{met},r}\,\delta_{rs}\,(2\pi)^3\delta^{(3)}(\vec k-\vec k_2)\;},
+\boxed{\;\big[a_{\mathrm{fop},r}(\vec k_\Phi),a_{\mathrm{fop},s}^{\dagger}(\vec k_2)\big]
+=\sigma_{\mathrm{met},r}\,\delta_{rs}\,(2\pi)^3\delta^{(3)}(\vec k_\Phi-\vec k_2)\;},
 $$
 
 with all other commutators vanishing. The signs are not optional: the timelike mode has $\sigma_{\mathrm{met},0}=-1$, so the one-particle state $a_{\mathrm{fop},0}^{\dagger}|0\rangle$ has **negative norm**, $\langle0|a_{\mathrm{fop},0}a_{\mathrm{fop},0}^{\dagger}|0\rangle=-1$. The longitudinal mode has positive norm, as do the two transverse modes.
@@ -177,7 +177,7 @@ $$
 which for a mode with momentum along $\vec e_z$ reduces to
 
 $$
-\boxed{\;\big(a_{\mathrm{fop},0}(\vec k)-a_{\mathrm{fop},3}(\vec k)\big)|\tilde{Ξ}_{\mathrm{sp}}\rangle=0\;}.
+\boxed{\;\big(a_{\mathrm{fop},0}(\vec k_\Phi)-a_{\mathrm{fop},3}(\vec k_\Phi)\big)|\tilde{Ξ}_{\mathrm{sp}}\rangle=0\;}.
 $$
 
 This condition does not set the timelike and longitudinal excitations to zero individually; it leaves the combination $a_{\mathrm{fop},0}^{\dagger}-a_{\mathrm{fop},3}^{\dagger}$. That combination is annihilated by the condition,
@@ -197,7 +197,7 @@ $$
 so, lying in the physical subspace and being null, it is orthogonal to every state in that subspace and decouples from all physical amplitudes. On the quotient by the zero-norm states, the physical subspace has **positive-definite norm** and consists exactly of the two transverse polarizations. Their polarization sum is the transverse projector,
 
 $$
-\boxed{\;\sum_{\lambda=1}^{2}\epsilon_i^{(\lambda)}(\vec k)\,\epsilon_j^{(\lambda)}(\vec k)
+\boxed{\;\sum_{\lambda=1}^{2}\epsilon_i^{(\lambda)}(\vec k_\Phi)\,\epsilon_j^{(\lambda)}(\vec k_\Phi)
 =\delta_{ij}-\vec{u_k}_i\vec{u_k}_j\;},
 $$
 
@@ -212,10 +212,10 @@ The alternatives should be named. The **Coulomb gauge** $\mathrm{div}\,\vec A=0$
 The counting is worth setting beside the scalar field, because the difference is where the gauge structure lives. A real scalar field $\xi_{\mathrm{scl}}$ of mass $m$ has conjugate momentum $\pi=\partial\xi_{\mathrm{scl}}/\partial r'_t$, the canonical commutator $[\xi_{\mathrm{fop}}(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z),\pi_{\mathrm{fop}}(\vec y)]=i\delta^{(3)}(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z-\vec y)$, and a mode expansion with **one** polarization,
 
 $$
-\big[a_{\mathrm{fop}}(\vec k),a_{\mathrm{fop}}^{\dagger}(\vec k_2)\big]=(2\pi)^3\delta^{(3)}(\vec k-\vec k_2),
+\big[a_{\mathrm{fop}}(\vec k_\Phi),a_{\mathrm{fop}}^{\dagger}(\vec k_2)\big]=(2\pi)^3\delta^{(3)}(\vec k_\Phi-\vec k_2),
 $$
 
-with dispersion $\omega_k=\sqrt{\vec k^2+m^2}$. Its Fock space has positive-definite norm, there is no constraint, and no gauge condition has to be imposed: the Legendre transform is regular. The massless scalar field has one mode. The photon has **two** physical transverse modes and reaches them only after the two unphysical modes — the timelike and the longitudinal — have been removed by a subsidiary condition. The photon is not a scalar particle with an extra label; the reduction from four components to two is performed by the gauge structure, and that structure is what the algebra does not fix. If the gauge field is given a mass, as in the Proca theory, the gauge freedom is absent, the constraint structure changes, and a third (longitudinal) polarization becomes physical — which shows that the two-polarization count is a consequence of the gauge symmetry, not of the number of field components.
+with dispersion $\omega_k=\sqrt{\vec k_\Phi^2+m^2}$. Its Fock space has positive-definite norm, there is no constraint, and no gauge condition has to be imposed: the Legendre transform is regular. The massless scalar field has one mode. The photon has **two** physical transverse modes and reaches them only after the two unphysical modes — the timelike and the longitudinal — have been removed by a subsidiary condition. The photon is not a scalar particle with an extra label; the reduction from four components to two is performed by the gauge structure, and that structure is what the algebra does not fix. If the gauge field is given a mass, as in the Proca theory, the gauge freedom is absent, the constraint structure changes, and a third (longitudinal) polarization becomes physical — which shows that the two-polarization count is a consequence of the gauge symmetry, not of the number of field components.
 
 ## Comparison with the Dirac Case
 
@@ -276,7 +276,7 @@ The extension is a transcription of standard canonical quantization into the fra
 | $\tilde{\pi}=\pi_0e_t+\vec\pi$ | Momentum biquaternion |
 | $\mathrm{Sc}(\tilde{\pi})\approx0$, $\mathrm{Sc}(\tilde{\nabla}^{\natural}\tilde{\pi})\approx0$ | Primary and Gauss-law constraints, both first class |
 | $A_\mu$, $\epsilon^{(r)}_\mu$, $a_{\mathrm{fop},r},a_{\mathrm{fop},r}^{\dagger}$ | Quantized potential, polarization vectors, mode operators |
-| $[a_{\mathrm{fop},r}(\vec k),a_{\mathrm{fop},s}^{\dagger}(\vec k_2)]=\sigma_{\mathrm{met},r}\delta_{rs}(2\pi)^3\delta^{(3)}$ | Mode commutator, $\sigma_{\mathrm{met}}=(-1,+1,+1,+1)$ |
+| $[a_{\mathrm{fop},r}(\vec k_\Phi),a_{\mathrm{fop},s}^{\dagger}(\vec k_2)]=\sigma_{\mathrm{met},r}\delta_{rs}(2\pi)^3\delta^{(3)}$ | Mode commutator, $\sigma_{\mathrm{met}}=(-1,+1,+1,+1)$ |
 | $(a_{\mathrm{fop},0}-a_{\mathrm{fop},3})\lvert\tilde{Ξ}_{\mathrm{sp}}\rangle=0$ | Gupta–Bleuler subsidiary condition (momentum along $\vec e_z$) |
 | $\sum_{\lambda=1}^2\epsilon_i^{(\lambda)}\epsilon_j^{(\lambda)}=\delta_{ij}-\vec{u_k}_i\vec{u_k}_j$ | Transverse polarization sum |
 | $\mathrm{Tr}(\tilde Q_1\tilde Q_2)=2\,\mathrm{Sc}(\tilde Q_1\tilde Q_2)$ | Trace reading of the plain form on the informational sector |

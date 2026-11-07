@@ -79,7 +79,7 @@ The conjugation $\flat$ is the algebra's real structure, not the mass term (§*T
 The plane-wave solutions are
 
 $$
-\tilde{Ξ}_{\mathrm{sp}}=\tilde{Ξ}_{\mathrm{sp},0}\exp\!\Big(i\,\mathrm{Sc}\big(\tilde P_{\Phi}\tilde{R}_\Phi^{\natural}\big)\frac{k_m}{m\,c}\Big),\frac{k_m\,\tilde{P}_{\Phi}}{m\,c}=\frac{k_m\,e_{t}\,i\,E}{m\,c^{2}}+\vec k,
+\tilde{Ξ}_{\mathrm{sp}}=\tilde{Ξ}_{\mathrm{sp},0}\exp\!\Big(i\,\mathrm{Sc}\big(\tilde P_{\Phi}\tilde{R}_\Phi^{\natural}\big)\frac{k_m}{m\,c}\Big),\frac{k_m\,\tilde{P}_{\Phi}}{m\,c}=\frac{k_m\,e_{t}\,i\,E}{m\,c^{2}}+\vec k_\Phi,
 \qquad
 \tilde R_\Phi=e_t(i r'_t)+\vec r,
 $$
@@ -253,7 +253,7 @@ The structural claim that motivated the article fails. The positive- and negativ
 | $\tilde{Ξ}_{\mathrm{sp}}$, $\tilde{Ξ}_{\mathrm{sp},L}$, $\tilde{Ξ}_{\mathrm{sp},R}$ | The field, one element of $\mathbb{B}$, and its two parts, one per value of the subscript |
 | $\tilde{Ξ}_{\mathrm{sp}}^{(+)}, \tilde{Ξ}_{\mathrm{sp}}^{(-)}$ | The two frequency branches; $\tilde{Ξ}_{\mathrm{sp},0}^{(\pm)}$ their constant elements |
 | $\tilde R_\Phi$ | The four-position biquaternion of the parent |
-| $\tilde K_{\Phi}$ | The wave biquaternion of the parent, $\vec k=\vec p\,\frac{k_m}{m\,c}$ |
+| $\tilde K_{\Phi}$ | The wave biquaternion of the parent, $\vec k_\Phi=\vec p\,\frac{k_m}{m\,c}$ |
 | $\tilde P_{\Phi}\tilde P_{\Phi}^{\natural} = -m^{2}\,c^{2}$ | Biquaternionic mass-shell condition |
 | $\flat$ | The anti-Hermitian conjugation (the algebra's real structure, not the mass term), *Algebra and Element Conventions* |
 | $\tilde\nabla$ | The biquaternionic gradient (Dirac operator), *Operator and Calculus Conventions* |

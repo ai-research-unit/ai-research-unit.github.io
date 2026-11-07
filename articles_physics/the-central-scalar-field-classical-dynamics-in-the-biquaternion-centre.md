@@ -105,10 +105,10 @@ the biquaternionic Klein–Gordon equation of the companion article, here read a
 In the absence of sources, write a plane wave
 
 $$
-\tilde{Ξ}(r_x)=\tilde{Ξ}_0\,\exp(i(\vec k\cdot(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)-\omega r'_t/c)), \qquad \tilde{Ξ}_0\in\mathbb{C},
+\tilde{Ξ}(r_x)=\tilde{Ξ}_0\,\exp(i(\vec k_\Phi\cdot(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)-\omega r'_t/c)), \qquad \tilde{Ξ}_0\in\mathbb{C},
 $$
 
-with the central phase $\exp(i(\vec k\cdot(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)-\omega r'_t/c))$ understood as multiplication by a central element. Because $\Box=-\partial^2/\partial {r'_{t}}^2+\Delta$ acts on it as $\omega^2/c^2-k^2$, the free equation requires the **dispersion relation**
+with the central phase $\exp(i(\vec k_\Phi\cdot(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)-\omega r'_t/c))$ understood as multiplication by a central element. Because $\Box=-\partial^2/\partial {r'_{t}}^2+\Delta$ acts on it as $\omega^2/c^2-k^2$, the free equation requires the **dispersion relation**
 
 $$
 \omega^2=c^2k^2+c^2(k_m)^{2}=c^2k^2+c^2(k_m)^{2} .

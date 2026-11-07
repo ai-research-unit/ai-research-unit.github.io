@@ -263,9 +263,9 @@ D_F(p^2) = \int_0^\infty \frac{d\mu^2}{2\pi}\,\frac{\rho(\mu^2)}{\mu^2-p^2-i\eps
 \qquad
 \rho(\mu^2) = (2\pi)\sum_n \big|\langle n|\tilde{Ξ}(0)|0\rangle\big|^2\,\delta(\mu^2-m_n^2)\ \ge 0 ,
 $$
-with the sum over all intermediate states of mass $m_n$. The two writings are the same function, since $\mu^2-p^2-i\epsilon=-(p^2-\mu^2+i\epsilon)$; the first is the one adapted to the propagator's normalization, whose pole at $\mu^2=m^2$ is $1/(m^{2}\,c^{2}-p^2-i\epsilon)$. The two $2\pi$'s, the one in $d\mu^2/2\pi$ and the one in $\rho$, cancel in the one-particle term and give back $Z$ exactly, which is the check that the normalization is consistent. The spectral function is non-negative — a consequence of the positivity of the state space — and the one-particle contribution is a delta function at the physical mass whose coefficient is $Z$:
+with the sum over all intermediate states of mass $m_n$. The two writings are the same function, since $\mu^2-p^2-i\epsilon=-(p^2-\mu^2+i\epsilon)$; the first is the one adapted to the propagator's normalization, whose pole at $\mu^2=m^{2}c^{2}$ is $1/(m^{2}\,c^{2}-p^2-i\epsilon)$. The two $2\pi$'s, the one in $d\mu^2/2\pi$ and the one in $\rho$, cancel in the one-particle term and give back $Z$ exactly, which is the check that the normalization is consistent. The spectral function is non-negative — a consequence of the positivity of the state space — and the one-particle contribution is a delta function at the physical mass whose coefficient is $Z$:
 $$
-\rho(\mu^2) = 2\pi\,Z\,\delta(\mu^2-m^2) + \rho_{\mathrm{continuum}}(\mu^2),
+\rho(\mu^2) = 2\pi\,Z\,\delta(\mu^2-m^{2}c^{2}) + \rho_{\mathrm{continuum}}(\mu^2),
 $$
 so that the one-particle term reproduces $D_F=Z/(m^{2}\,c^{2}-p^2-i\epsilon)$ and the residue of the pole is the one-particle weight. The continuum's threshold is the multiparticle branch point. This is standard (Källén 1952, Lehmann 1954) and is cited.
 

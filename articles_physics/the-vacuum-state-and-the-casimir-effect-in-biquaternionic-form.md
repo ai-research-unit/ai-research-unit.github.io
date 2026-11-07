@@ -60,14 +60,14 @@ The honest summary is this: "the biquaternion vacuum" is not a biquaternion. For
 **From the mode expansion.** The free Maxwell potential expands in four covariant polarisations,
 $$
 A_\mu(x)=\int\!\frac{d^{3}k}{(2\pi)^{3}}\frac{1}{\sqrt{2\omega_k}}\sum_{r=0}^{3}
-\Big(a_{\mathrm{fop},r}(\vec k)\,\epsilon^{(r)}_\mu(\vec k)\,\exp(-ik\cdot x)
-+a_{\mathrm{fop},r}^{\dagger}(\vec k)\,\epsilon^{(r)*}_\mu(\vec k)\,\exp(+ik\cdot x)\Big),
+\Big(a_{\mathrm{fop},r}(\vec k_\Phi)\,\epsilon^{(r)}_\mu(\vec k_\Phi)\,\exp(-ik\cdot x)
++a_{\mathrm{fop},r}^{\dagger}(\vec k_\Phi)\,\epsilon^{(r)*}_\mu(\vec k_\Phi)\,\exp(+ik\cdot x)\Big),
 \qquad
-\big[a_{\mathrm{fop},r}(\vec k),a_{\mathrm{fop},s}^{\dagger}(\vec k_2)\big]=\sigma_{\mathrm{met},r}\,\delta_{rs}\,(2\pi)^{3}\delta^{(3)}(\vec k-\vec k_2),
+\big[a_{\mathrm{fop},r}(\vec k_\Phi),a_{\mathrm{fop},s}^{\dagger}(\vec k_2)\big]=\sigma_{\mathrm{met},r}\,\delta_{rs}\,(2\pi)^{3}\delta^{(3)}(\vec k_\Phi-\vec k_2),
 $$
-with $\sigma_{\mathrm{met}}=(-1,+1,+1,+1)$ and $\omega_k=|\vec k|$ for the massless field. The normal-ordered Hamiltonian is
+with $\sigma_{\mathrm{met}}=(-1,+1,+1,+1)$ and $\omega_k=|\vec k_\Phi|$ for the massless field. The normal-ordered Hamiltonian is
 $$
-:\!H\!:\,=\sum_{r=0}^{3}\int\!\frac{d^{3}k}{(2\pi)^{3}}\,\sigma_{\mathrm{met},r}\,\omega_k\,a_{\mathrm{fop},r}^{\dagger}(\vec k)a_{\mathrm{fop},r}(\vec k),
+:\!H\!:\,=\sum_{r=0}^{3}\int\!\frac{d^{3}k}{(2\pi)^{3}}\,\sigma_{\mathrm{met},r}\,\omega_k\,a_{\mathrm{fop},r}^{\dagger}(\vec k_\Phi)a_{\mathrm{fop},r}(\vec k_\Phi),
 $$
 and the constant discarded in passing to the normal-ordered form is the zero-point energy.
 
@@ -77,7 +77,7 @@ $$
 $$
 the zero-point constant of the covariant field is that of **two** transverse modes, $\frac{m\,c\,\omega_{k}}{k_m}$ per mode, and the free vacuum energy is the quartically divergent integral
 $$
-E_0=\sum_{r=0}^{3}\sigma_{\mathrm{met},r}\sum_{\text{modes}}\tfrac12\frac{m\,c\,\omega_{k}}{k_m}=2\,V\!\int\!\frac{d^{3}k}{(2\pi)^{3}}\,\tfrac12\frac{m\,c^{2}}{k_m}\lvert\vec k\rvert
+E_0=\sum_{r=0}^{3}\sigma_{\mathrm{met},r}\sum_{\text{modes}}\tfrac12\frac{m\,c\,\omega_{k}}{k_m}=2\,V\!\int\!\frac{d^{3}k}{(2\pi)^{3}}\,\tfrac12\frac{m\,c^{2}}{k_m}\lvert\vec k_\Phi\rvert
 \;\xrightarrow[\ \Lambda\ ]{}\;\frac{m\,c^{2}\,\Lambda^{4}}{8\,k_m\,\pi^{2}}\,V .
 $$
 The coefficient is the free-space density for two polarisations; the divergence is quartic and proportional to the volume $V$. This is the biquaternion transcription of the standard fact that the electromagnetic zero-point energy diverges as the fourth power of the cutoff. The Dirac parent is the mirror case: there the normal-ordering constant is *negative*,

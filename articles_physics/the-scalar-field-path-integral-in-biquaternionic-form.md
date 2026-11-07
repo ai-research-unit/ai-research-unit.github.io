@@ -60,12 +60,12 @@ $$
 Three features of this rewriting are structural rather than cosmetic. First, the integration variable is a function into the **centre**, so the path integral is an ordinary functional integral over complex functions, equivalently over pairs of real functions, and the state module on which spinor fields live is not integrated over at all. Second, the quadratic form in the exponent is the biquaternion norm shifted by the mass: the momentum-space symbol of $(\Box-\mu^2)$ on the plane wave $\exp(-ip\cdot x)$ is
 
 $$
-\frac{\omega^2}{c^2}-\vec k^2-\mu^2
+\frac{\omega^2}{c^2}-\vec k_\Phi^2-\mu^2
 =-\left(\langle\tilde P_{\Phi}\rangle_{\natural}+\mu^2\right),
 \qquad
 \langle\tilde P_{\Phi}\rangle_{\natural}=\tilde P_{\Phi}\tilde P_{\Phi}^{\natural},
 \qquad
-\tilde P_{\Phi}=i\frac{\omega}{c}\,e_t+\vec k,
+\tilde P_{\Phi}=i\frac{\omega}{c}\,e_t+\vec k_\Phi,
 $$
 
 which vanishes precisely on the mass shell $\langle\tilde P_{\Phi}\rangle_{\natural}=-\mu^2$, so the Gaussian's width and the mass shell are one algebraic object; the propagator is the inverse of this symbol, $\Delta_F(\tilde P_{\Phi})=-i/(\langle\tilde P_{\Phi}\rangle_{\natural}+\mu^2-i\epsilon)$, exactly as the companion field article has it. Third, the phase is central, so it commutes with every element of the algebra and multiplies configuration space uniformly; no rotor and no spinor index enters. The three are the same three facts that the one-particle and propagator articles record for their own objects.
@@ -311,7 +311,7 @@ The framework's contribution is the centrality of the configuration space, the b
 | $Z_N(J)=(2\pi)^{N/2}(\det A)^{-1/2}\exp(J^{T}A^{-1}J/2)$, $Z_N\propto(\det A)^{-1}\exp(J^*A^{-1}J)$ | Finite-dimensional Gaussian identity, real and complex |
 | $\Delta_F$ | Feynman propagator; free two-point function |
 | $\Delta_F(\tilde P_{\Phi})=-i/(\langle\tilde P_{\Phi}\rangle_{\natural}+\mu^2-i\epsilon)$ | Propagator in material notation |
-| $\tilde P_{\Phi}=\frac{m\,c\,(i\omega/c\,e_t+\vec k)}{k_m}$, $\langle\tilde P_{\Phi}\rangle_{\natural}=\tilde P_{\Phi}\tilde P_{\Phi}^{\natural}$ | Material four-wavevector and biquaternion norm |
+| $\tilde P_{\Phi}=\frac{m\,c\,(i\omega/c\,e_t+\vec k_\Phi)}{k_m}$, $\langle\tilde P_{\Phi}\rangle_{\natural}=\tilde P_{\Phi}\tilde P_{\Phi}^{\natural}$ | Material four-wavevector and biquaternion norm |
 | $\pi_{\mathrm{fop}}=-\frac{m\,c\,i}{k_m\,\xi_{\mathrm{scl}}}$ | Momentum representation; yields $[\xi_{\mathrm{fop}},\pi_{\mathrm{fop}}]=\frac{m\,c\,i\,\delta^{(3)}}{k_m}$ |
 | $S_E[\tilde{Ξ}]=\int\mathrm{Sc}(\tilde{Ξ}^{*}(-\Delta_E+\mu^2)\tilde{Ξ})$ | Euclidean action (Wick rotation) |
 | $\vert\langle0_{\mathrm{out}}\vert0_{\mathrm{in}}\rangle\vert^2=\vert Z[\tilde Q_5]\vert^2/\vert Z[0]\vert^2$ | Vacuum persistence amplitude |

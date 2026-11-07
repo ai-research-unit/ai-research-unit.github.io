@@ -309,12 +309,12 @@ $$
 \Box = \tilde{\nabla}\tilde{\nabla}^{\natural} = \partial^2/\partial R_{1t}^2 + \Delta = \Delta + \partial^2/\partial R_{1t}^2,
 $$
 
-the series' d'Alembertian. For a wave whose phase is the scalar $s = \mathrm{Sc}(\tilde P_{\Phi}\tilde{R}_\Phi^{\natural}) = -\omega r'_t/c + \vec k\cdot(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)$, the chain rule gives the corpus identity
+the series' d'Alembertian. For a wave whose phase is the scalar $s = \mathrm{Sc}(\tilde P_{\Phi}\tilde{R}_\Phi^{\natural}) = -\omega r'_t/c + \vec k_\Phi\cdot(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)$, the chain rule gives the corpus identity
 
 $$
 \Box f(s) = \langle\tilde P_{\Phi}\rangle_{\natural}\,\frac{d^2f}{ds^2}(s),
 \qquad
-\langle\tilde P_{\Phi}\rangle_{\natural} = -\frac{\omega^2}{c^2} + |\vec k|^2,
+\langle\tilde P_{\Phi}\rangle_{\natural} = -\frac{\omega^2}{c^2} + |\vec k_\Phi|^2,
 $$
 
 because $s$ is linear and $\Box s = 0$. The exponential $\exp(s)$ is therefore an eigenfunction with eigenvalue $\langle\tilde P_{\Phi}\rangle_{\natural}$, and the oscillatory positive-frequency wave $\exp(is)$ has eigenvalue $-\langle\tilde P_{\Phi}\rangle_{\natural}$, the two differing by the overall sign that leaves the kernel unchanged. In either case the characteristic variety, the set on which the symbol vanishes, is exactly the null cone $\mathcal{Z}$. The cone is therefore the characteristic cone of the algebra's own wave operator, and the companion article *The Light Cone as the Biquaternion Zero-Divisor Cone* records the equivalent zero-divisor statement.

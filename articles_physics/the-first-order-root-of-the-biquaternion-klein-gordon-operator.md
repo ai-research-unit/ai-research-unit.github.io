@@ -74,25 +74,25 @@ $$
 
 ### The symbol and the mass shell
 
-On a plane wave $e^{i(k_{t}^{\prime}x_0-\vec k\cdot\vec r)}$ every derivative is a multiple of the wave. The substitution is $\partial/\partial R_t\mapsto k_{t}^{\prime}$ and $\partial/\partial R_k\mapsto-ik_k$, so the gradient becomes one fixed element of the algebra,
+On a plane wave $e^{i(k_{t}^{\prime}x_0-\vec k_\Phi\cdot\vec r)}$ every derivative is a multiple of the wave. The substitution is $\partial/\partial R_t\mapsto k_{t}^{\prime}$ and $\partial/\partial R_k\mapsto-ik_k$, so the gradient becomes one fixed element of the algebra,
 
 $$
-\tilde K=k_{t}^{\prime}-i\vec k=k_{t}^{\prime}-i\sum_k\vec e_k k_k,
+-i\tilde K_{\Phi}=k_{t}^{\prime}-i\vec k_\Phi=k_{t}^{\prime}-i\sum_k\vec e_k k_k,
 \qquad
-\tilde K^{\natural}\tilde K=\tilde K\tilde K^{\natural}=k_{t}^{\prime\,2}-\lvert\vec k\rvert^2 ,
+(-i\tilde K_{\Phi})^{\natural}(-i\tilde K_{\Phi})=-\tilde K_{\Phi}\tilde K_{\Phi}^{\natural}=k_{t}^{\prime\,2}-\lvert\vec k_\Phi\rvert^2 ,
 $$
 
 and the second identity is the symbol of $\Box$. The mass shell is the level set
 
 $$
-k_{t}^{\prime\,2}-\lvert\vec k\rvert^2=k_m^{2}
+k_{t}^{\prime\,2}-\lvert\vec k_\Phi\rvert^2=k_m^{2}
 \quad\Longleftrightarrow\quad
 E^2=\vec p^{\,2}c^2+m^2c^4 ,
 $$
 
-with $\vec k=\vec p\,\frac{k_m}{m\,c}$. Here $k_{\Phi}=\frac{k_m\,p}{m\,c}$ and $k_{t}^{\prime}=E/(\frac{m\,c^{2}}{k_m})$ are the momentum and energy wave numbers.
+with $\vec k_\Phi=\vec p\,\frac{k_m}{m\,c}$. Here $k_{\Phi}=\frac{k_m\,p}{m\,c}$ and $k_{t}^{\prime}=E/(\frac{m\,c^{2}}{k_m})$ are the momentum and energy wave numbers.
 
-The symbol of $\Box$ is the interval of the wave covector, and the mass shell is that symbol set to $k_m^{2}$. The symbol of the gradient is a zero divisor on exactly the same set: left multiplication by $\tilde K$ is invertible off the cone and has rank two on it. The equation $\tilde\nabla\tilde{Ξ}=0$ therefore has a nonzero plane-wave solution exactly where the massless Klein–Gordon equation does, and it halves the solution space there, as §*What the Root Does Not Carry* records.
+The symbol of $\Box$ is the interval of the wave covector, and the mass shell is that symbol set to $k_m^{2}$. The symbol of the gradient is a zero divisor on exactly the same set: left multiplication by $-i\tilde K_{\Phi}$ is invertible off the cone and has rank two on it. The equation $\tilde\nabla\tilde{Ξ}=0$ therefore has a nonzero plane-wave solution exactly where the massless Klein–Gordon equation does, and it halves the solution space there, as §*What the Root Does Not Carry* records.
 
 ## The Factorisation
 
@@ -159,7 +159,7 @@ $$
 and setting it to zero imposes four independent complex conditions, one per unit. The field is then constant. A root requires a field with room for the four units, and the algebra supplies exactly four complex dimensions.
 
 | Field | First-order equation | Root? |
-|---|---|---|
+|+-|+-|+-|
 | One complex number | $\tilde\nabla\xi=0$, which forces $\partial\xi/\partial R_\mu=0$ | no, it has no solution that propagates |
 | Element of $\mathbb{B}$, massless | $\tilde\nabla\tilde{Ξ}=0$ | yes, one factor of $\Box$ |
 | Element of $\mathbb{B}$, massive | $\tilde\nabla\tilde{Ξ}_{\mathrm{sp},R}=k_m\tilde{Ξ}_{\mathrm{sp},L}$ and $\tilde\nabla^{\natural}\tilde{Ξ}_{\mathrm{sp},L}=k_m\tilde{Ξ}_{\mathrm{sp},R}$ | yes, the pair |
@@ -214,14 +214,14 @@ The mass term is a multiple of the identity on the two slots and cannot move bet
 
 ### The determinant
 
-On a plane wave the symbol of $\mathbb{D}$, written $\mathbb{D}(\tilde K)$, is the block matrix with $\ell_{\tilde K}$ and $\ell_{\tilde K^{\natural}}$ off the diagonal, where $\ell_M$ is left multiplication by $M$, and its determinant is
+On a plane wave the symbol of $\mathbb{D}$, written $\mathbb{D}(-i\tilde K_{\Phi})$, is the block matrix with $\ell_{-i\tilde K_{\Phi}}$ and $\ell_{i\tilde K_{\Phi}^{\natural}}$ off the diagonal, where $\ell_M$ is left multiplication by $M$, and its determinant is
 
 $$
-\det\left(\mathbb{D}(\tilde K)-k_m\right)
-=\left(k_{t}^{\prime\,2}-\lvert\vec k\rvert^2-k_m^{2}\right)^4 ,
+\det\left(\mathbb{D}(-i\tilde K_{\Phi})-k_m\right)
+=\left(k_{t}^{\prime\,2}-\lvert\vec k_\Phi\rvert^2-k_m^{2}\right)^4 ,
 $$
 
-the fourth power of the symbol of $\Box-k_m^{2}$: eliminating one block leaves the Schur complement $1/k_m\left(k_{t}^{\prime\,2}-\lvert\vec k\rvert^2-k_m^{2}\right)$ times the four-dimensional identity.
+the fourth power of the symbol of $\Box-k_m^{2}$: eliminating one block leaves the Schur complement $1/k_m\left(k_{t}^{\prime\,2}-\lvert\vec k_\Phi\rvert^2-k_m^{2}\right)$ times the four-dimensional identity.
 
 The determinant is a product of eigenvalues, and it is not a square root. A determinant identity says that a power of the scalar symbol is the determinant of a first-order operator; a root needs one first-order operator whose square is the scalar operator, and the power four is the evidence that this operator lives on the doubled carrier. The vanishing is a consistency check on the factorisation, and not a construction of a single root.
 
@@ -229,7 +229,7 @@ The determinant is a product of eigenvalues, and it is not a square root. A dete
 
 The classification is a statement of form, and its boundaries are part of the result.
 
-1. **It is stronger than Klein–Gordon.** The massless first-order equation selects a subspace of the second-order solution space. At a null momentum the second-order equation admits every element, four complex dimensions, while $\tilde\nabla\tilde{Ξ}=0$ admits two: at $k=(1,1,0,0)$ left multiplication by $\tilde K$ has rank two and kernel two, and the kernel carries one state of each value of the chirality, the right action $\tilde{Ξ}_{\mathrm{sp}}\mapsto-i\tilde{Ξ}_{\mathrm{sp}}\vec e_z$. What the root halves is the room for the field at that momentum, not the spectrum.
+1. **It is stronger than Klein–Gordon.** The massless first-order equation selects a subspace of the second-order solution space. At a null momentum the second-order equation admits every element, four complex dimensions, while $\tilde\nabla\tilde{Ξ}=0$ admits two: at $k=(1,1,0,0)$ left multiplication by $-i\tilde K_{\Phi}$ has rank two and kernel two, and the kernel carries one state of each value of the chirality, the right action $\tilde{Ξ}_{\mathrm{sp}}\mapsto-i\tilde{Ξ}_{\mathrm{sp}}\vec e_z$. What the root halves is the room for the field at that momentum, not the spectrum.
 2. **No mass and no coupling are predicted.** The classification says which first-order structures have the Klein–Gordon second order; it does not say which one nature uses, and it does not determine $1/k_m$. The sign of the mass carries no content either: the pair at $k_m$ and the pair at $-k_m$ are the same equations with the sign of one part flipped.
 3. **The coefficients are constant and the background flat.** A position-dependent coefficient adds a term in which the derivative acts on the coefficient, and a gauged derivative adds a field strength; the constant-coefficient classification is then the starting point rather than the answer. On a curved background the derivatives become covariant, and the classification applies in the tangent space at each point. The $x$ coordinates are flat; the algebra coordinates give the same operator and not a different root.
 4. **The real structure is open.** The article works over $\mathbb{C}$. Whether the gradient can be given a real structure, and which sign that structure carries, is the charge-conjugation question, and the article does not settle it. The index question is a different one again, and the massless kernel of §*The symbol and the mass shell* splits by the chirality without the gradient separating the two values.
@@ -247,22 +247,22 @@ The doubling is not a doubling of particles. The two values of the label are the
 The identities were recomputed before they were written. The algebra multiplication and the left and right multiplications were built as four-dimensional complex matrices, and the symbol reductions were checked at random wave covectors. The residuals are the largest absolute difference over the stated samples, and $k_m$ is a fixed real mass coefficient.
 
 | Check | Result |
-|---|---|
-| $\tilde K^{\natural}\tilde K-(k_{t}^{\prime\,2}-\lvert\vec k\rvert^2)e_t$ on $100$ random wave covectors | $8.9\times10^{-16}$ |
-| the symbol of the square, $\tilde K^2-\left(k_{t}^{\prime\,2}+\lvert\vec k\rvert^2\right)e_t+2ik_{t}^{\prime}\vec k$, on $100$ random wave covectors | $1.8\times10^{-15}$ |
+|+-|+-|
+| $(-i\tilde K_{\Phi})^{\natural}(-i\tilde K_{\Phi})-(k_{t}^{\prime\,2}-\lvert\vec k_\Phi\rvert^2)e_t$ on $100$ random wave covectors | $8.9\times10^{-16}$ |
+| the symbol of the square, $\tilde K_{\Phi}^2+\left(k_{t}^{\prime\,2}+\lvert\vec k_\Phi\rvert^2\right)e_t-2ik_{t}^{\prime}\vec k_\Phi$, on $100$ random wave covectors | $1.8\times10^{-15}$ |
 | the sixteen maps $\tilde{Ξ}_{\mathrm{sp}}\mapsto e_\mu\tilde{Ξ}_{\mathrm{sp}} e_\nu$ are independent | rank $16$ |
 | no element anticommutes with the three spatial units | kernel dimension $0$ |
 | no map anticommutes with the four left multiplications | dimension $0$ |
 | the same for a generic quaternionic triple, over $100$ conjugates | kernel dimension $0$ |
-| $\det\ell_{\tilde K}-(k_{t}^{\prime\,2}-\lvert\vec k\rvert^2)^2$ on $100$ random wave covectors | $5.7\times10^{-14}$ |
-| rank and kernel of $\ell_{\tilde K}$ at five null wave covectors | rank $2$, kernel $2$ (exact) |
+| $\det\ell_{-i\tilde K_{\Phi}}-(k_{t}^{\prime\,2}-\lvert\vec k_\Phi\rvert^2)^2$ on $100$ random wave covectors | $5.7\times10^{-14}$ |
+| rank and kernel of $\ell_{-i\tilde K_{\Phi}}$ at five null wave covectors | rank $2$, kernel $2$ (exact) |
 | the same off the cone, at $k=(2,1,0,0)$ | rank $4$ |
 | the chirality on the null kernel, the eigenvalues of the right action by $\vec e_z$ | $\pm i$, one of each |
-| $\mathbb{D}(\tilde K)^2-\Box I_8$ | $1.8\times10^{-15}$ |
-| $\det(\mathbb{D}(\tilde K)-k_m)-(\Box-k_m^{2})^4$ on $100$ random wave covectors | $2.5\times10^{-11}$ |
+| $\mathbb{D}(-i\tilde K_{\Phi})^2-\Box I_8$ | $1.8\times10^{-15}$ |
+| $\det(\mathbb{D}(-i\tilde K_{\Phi})-k_m)-(\Box-k_m^{2})^4$ on $100$ random wave covectors | $2.5\times10^{-11}$ |
 | the elimination, $\tilde\nabla^{\natural}\tilde\nabla\tilde{Ξ}_{\mathrm{sp},R}/k_m^{2}-\tilde{Ξ}_{\mathrm{sp},R}$ on shell | $3.6\times10^{-15}$ |
 
-The numerical checks are checks of polynomial identities at random points. The proof is the algebra of the preceding sections; the numbers guard against a sign or factor error in the transcription. Two exact values are quoted in the text: at $k=(2,1,0,0)$ the norm $\tilde K^{\natural}\tilde K$ is $3$, the determinant $\det\ell_{\tilde K}$ is $9$, and at $k_m=1$ the determinant of $\mathbb{D}(\tilde K)-k_m$ is $16$.
+The numerical checks are checks of polynomial identities at random points. The proof is the algebra of the preceding sections; the numbers guard against a sign or factor error in the transcription. Two exact values are quoted in the text: at $k=(2,1,0,0)$ the norm $(-i\tilde K_{\Phi})^{\natural}(-i\tilde K_{\Phi})$ is $3$, the determinant $\det\ell_{-i\tilde K_{\Phi}}$ is $9$, and at $k_m=1$ the determinant of $\mathbb{D}(-i\tilde K_{\Phi})-k_m$ is $16$.
 
 ## Summary
 
@@ -277,7 +277,7 @@ A field whose value is one complex number has no first-order equation: the four 
 ## Summary of Notation
 
 | Symbol | Meaning |
-|---|---|
+|+-|+-|
 | $\mathbb{B}$ | The biquaternion algebra |
 | $e_t,\vec e_x,\vec e_y,\vec e_z$ | The four units |
 | $i$ | The central imaginary unit |
@@ -290,7 +290,7 @@ A field whose value is one complex number has no first-order equation: the four 
 | $1/k_m$ | The mass length, $\hbar/(mc)$; its reciprocal $k_m=mc/\hbar$ is the inverse reduced Compton wavelength |
 | $k_\mu$ | The wave covector of a plane wave |
 | $\omega=-\vec e_z$ | The pseudoscalar of the algebra, $\omega^2=-e_t$ |
-| $\tilde K=k_{t}^{\prime}-i\vec k$ | The symbol of the gradient, an element of $\mathbb{B}$ |
+| $-i\tilde K_{\Phi}=k_{t}^{\prime}-i\vec k_\Phi$ | The symbol of the gradient, an element of $\mathbb{B}$ |
 | $\ell_M$ | Left multiplication by $M$ |
 | $\tilde{Ξ}$ | The field of the Klein–Gordon equation, an element of $\mathbb{B}$ |
 | $\tilde{Ξ}_{\mathrm{sp},L},\tilde{Ξ}_{\mathrm{sp},R}$ | The two parts of an element, the two values of the label |

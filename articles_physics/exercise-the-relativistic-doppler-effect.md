@@ -4,7 +4,7 @@
 
 This is one of the exercises in the relativity series. It is a set of worked problems in the relativistic Doppler effect, using the framework and the notation of the companion articles *Relativistic Mechanics in Biquaternionic Form* and *The Lorentz Transformation as a Biquaternionic Rotation*. Those two articles are the parents of this exercise: they set up the four-vectors of $\mathbb{B}_{\Phi}$ and the boost rotor that acts on them, and what follows applies them to the light of a moving source. Nothing new is introduced, and every result below is obtained from the tools already defined there.
 
-**What is assumed.** The algebra, the sectors and the biquaternion norm are those of *Algebra and Element Conventions* and *Norm and Pairing Conventions*, and none is restated here. The four-wavevector $\tilde P_{\Phi} =\frac{m\,c\,(i\omega/c\,e_t + \vec k)}{k_m}$ from the table of four-vectors in *The Material Sector: Four-Vectors, Interval and Lorentz Action*. The rotor conjugation $\tilde{Q} \mapsto \tilde U_{\Psi,\mathrm b}\tilde{Q}\tilde U_{\Psi,\mathrm b}^{*}$ by the Lorentz rotor $\tilde U_{\Psi,\mathrm b}$, with $\tilde U_{\Psi,\mathrm b}\tilde U_{\Psi,\mathrm b}^{\natural} = e_t$, and the boost biquaternion
+**What is assumed.** The algebra, the sectors and the biquaternion norm are those of *Algebra and Element Conventions* and *Norm and Pairing Conventions*, and none is restated here. The four-wavevector $\tilde P_{\Phi} =\frac{m\,c\,(i\omega/c\,e_t + \vec k_\Phi)}{k_m}$ from the table of four-vectors in *The Material Sector: Four-Vectors, Interval and Lorentz Action*. The rotor conjugation $\tilde{Q} \mapsto \tilde U_{\Psi,\mathrm b}\tilde{Q}\tilde U_{\Psi,\mathrm b}^{*}$ by the Lorentz rotor $\tilde U_{\Psi,\mathrm b}$, with $\tilde U_{\Psi,\mathrm b}\tilde U_{\Psi,\mathrm b}^{\natural} = e_t$, and the boost biquaternion
 $$
 \tilde U_{\Psi,\mathrm b} = \cosh\frac{\theta_{\mathrm{rpd}}}{2} + i\sinh\frac{\theta_{\mathrm{rpd}}}{2}\,\vec u,
 \qquad
@@ -30,27 +30,27 @@ and check the formula both in the observer's rest frame and in the source frame.
 
 **Solution (a).** The four-wavevector is the element of $\mathbb{B}_{\Phi}$
 $$
-\tilde P_{\Phi} = \frac{i\omega}{c}\,e_t + \vec k,
+\tilde P_{\Phi} = \frac{i\omega}{c}\,e_t + \vec k_\Phi,
 \qquad
-\vec k = k_1\vec e_x + k_2\vec e_y + k_3\vec e_z,
+\vec k_\Phi = k_1\vec e_x + k_2\vec e_y + k_3\vec e_z,
 \qquad
-k = |\vec k| .
+k = |\vec k_\Phi| .
 $$
 Its biquaternion norm is
 $$
-\langle\tilde P_{\Phi}\rangle_{\natural} = \tilde P_{\Phi}\tilde P_{\Phi}^{\natural} = \left(\frac{i\omega}{c}\right)^2 + \vec k^2 = -\frac{\omega^2}{c^2} + k^2 .
+\langle\tilde P_{\Phi}\rangle_{\natural} = \tilde P_{\Phi}\tilde P_{\Phi}^{\natural} = \left(\frac{i\omega}{c}\right)^2 + \vec k_\Phi^2 = -\frac{\omega^2}{c^2} + k^2 .
 $$
 For light in a medium of local speed $c = 1/\sqrt{\epsilon\mu}$ the dispersion relation is $k = \omega/c$, so
 $$
 \langle\tilde P_{\Phi}\rangle_{\natural} = 0 :
 $$
-the four-wavevector of light is a **null** element of $\mathbb{B}_{\Phi}$, i.e. a zero divisor of the algebra, exactly as the light cone of Minkowski space is the zero-divisor cone (see *The Material Sector: Four-Vectors, Interval and Lorentz Action* and the mass-shell relation of *Relativistic Mechanics in Biquaternionic Form*). The contrast with matter is instructive: a massive de Broglie wave has $\langle\tilde P_{\Phi}\rangle_{\natural}  = -(k_m)^{2}$, a fixed negative biquaternion norm, whereas for light the biquaternion norm vanishes. The null condition is what makes the Doppler problem a one-parameter problem in each direction: the shift depends only on the direction of $\vec k$, through the angle $\theta$, and on $\beta$ — not on the magnitude $k$. Here $\hbar/(mc)$ is the mass length.
+the four-wavevector of light is a **null** element of $\mathbb{B}_{\Phi}$, i.e. a zero divisor of the algebra, exactly as the light cone of Minkowski space is the zero-divisor cone (see *The Material Sector: Four-Vectors, Interval and Lorentz Action* and the mass-shell relation of *Relativistic Mechanics in Biquaternionic Form*). The contrast with matter is instructive: a massive de Broglie wave has $\langle\tilde P_{\Phi}\rangle_{\natural}  = -(k_m)^{2}$, a fixed negative biquaternion norm, whereas for light the biquaternion norm vanishes. The null condition is what makes the Doppler problem a one-parameter problem in each direction: the shift depends only on the direction of $\vec k_\Phi$, through the angle $\theta$, and on $\beta$ — not on the magnitude $k$. Here $\hbar/(mc)$ is the mass length.
 
 **Solution (b).** Fix the plane-wave convention $\propto \exp(iΞ)$ with
 $$
 Ξ = \mathrm{Sc}\!\left(\tilde P_{\Phi}\tilde{R}_\Phi^{\natural}\right)
-= \left(\frac{i\omega}{c}\right)(i r'_{t}) + \vec k\cdot(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)
-= \vec k\cdot(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z) - \omega r'_t/c ,
+= \left(\frac{i\omega}{c}\right)(i r'_{t}) + \vec k_\Phi\cdot(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)
+= \vec k_\Phi\cdot(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z) - \omega r'_t/c ,
 \qquad
 \tilde R_\Phi = i r'_{t}\,e_t + (r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z) .
 $$
@@ -75,8 +75,8 @@ Hence $Ξ_2 = Ξ$: the phase is a scalar of the algebra and of the Lorentz group
 **Solution (c).** Let the observer carry the timelike four-velocity $\tilde{V}_{\Phi} = \gamma_b(ic\,e_t + \vec v_{\mathrm{obs},b})$, normalized by $\langle\tilde{V}_{\Phi}\rangle_{\natural} = -c^2$. In the observer's rest frame $\tilde{V}_{\Phi} = ic\,e_t$ and $\tilde{V}_{\Phi}^{\natural} = ic\,e_t$, so
 $$
 -\,\mathrm{Sc}\!\left(\tilde P_{\Phi}\tilde{V}_{\Phi}^{\natural}\right)
-= -\,\mathrm{Sc}\!\left(\left(\frac{i\omega}{c}e_t + \vec k\right)(ic\,e_t)\right)
-= -\,\mathrm{Sc}\!\left(-\,\omega\,e_t + ic\,\vec k\right)
+= -\,\mathrm{Sc}\!\left(\left(\frac{i\omega}{c}e_t + \vec k_\Phi\right)(ic\,e_t)\right)
+= -\,\mathrm{Sc}\!\left(-\,\omega\,e_t + ic\,\vec k_\Phi\right)
 = \omega ,
 $$
 which is the frequency that frame assigns to the wave. In the source frame the same observer has four-velocity $\tilde{V}_{\Phi} = \gamma(ic\,e_t + \vec v_b)$ with $\tilde{V}_{\Phi}^{\natural} = \gamma(ic\,e_t - \vec v_b)$, and
@@ -314,7 +314,7 @@ and find the angle that maximises it. (For $\beta = 0.99$ and $\Theta = 0.1$ rad
 
 ## Summary
 
-1. **Four-wavevector.** $\tilde P_{\Phi} =\frac{m\,c\,(i\omega/c\,e_t + \vec k)}{k_m}$ is an element of $\mathbb{B}_{\Phi}$ with $\langle\tilde P_{\Phi}\rangle_{\natural} = -\omega^2/c^2 + k^2$; for light $k = \omega/c$ and $\langle\tilde P_{\Phi}\rangle_{\natural} = 0$, so light is a null element (zero divisor) of the algebra. The phase $Ξ = \mathrm{Sc}(\tilde P_{\Phi}\tilde{R}_\Phi^{\natural}) = \vec k\cdot(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)-\omega r'_t/c$ is invariant under rotor conjugation.
+1. **Four-wavevector.** $\tilde P_{\Phi} =\frac{m\,c\,(i\omega/c\,e_t + \vec k_\Phi)}{k_m}$ is an element of $\mathbb{B}_{\Phi}$ with $\langle\tilde P_{\Phi}\rangle_{\natural} = -\omega^2/c^2 + k^2$; for light $k = \omega/c$ and $\langle\tilde P_{\Phi}\rangle_{\natural} = 0$, so light is a null element (zero divisor) of the algebra. The phase $Ξ = \mathrm{Sc}(\tilde P_{\Phi}\tilde{R}_\Phi^{\natural}) = \vec k_\Phi\cdot(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)-\omega r'_t/c$ is invariant under rotor conjugation.
 
 2. **Frequency invariant.** An observer of four-velocity $\tilde{V}_{\Phi}$ measures $\omega_{\mathrm{obs}} = -\mathrm{Sc}(\tilde P_{\Phi}\tilde{V}_{\Phi}^{\natural})$; in the source frame this is $\gamma\omega_0(1-\beta\cos\theta)$.
 
@@ -341,7 +341,7 @@ and find the angle that maximises it. (For $\beta = 0.99$ and $\Theta = 0.1$ rad
 | $\langle\tilde{Q}\rangle_{\natural} = \tilde{Q}\tilde{Q}^{\natural}$ | Biquaternion norm |
 | $c$, $c_0$ | Speed of light in the medium, and in vacuum |
 | $\tilde R_\Phi = i r'_t\,e_t + r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z$ | Four-position |
-| $\tilde P_{\Phi} =\frac{m\,c\,(i\omega/c\,e_t + \vec k)}{k_m}$ | Four-wavevector, $\langle\tilde P_{\Phi}\rangle_{\natural} = 0$ for light |
+| $\tilde P_{\Phi} =\frac{m\,c\,(i\omega/c\,e_t + \vec k_\Phi)}{k_m}$ | Four-wavevector, $\langle\tilde P_{\Phi}\rangle_{\natural} = 0$ for light |
 | $\tilde{V}_{\Phi} = \gamma_b(ic\,e_t + \vec v_b)$ | Observer four-velocity, $\langle\tilde{V}_{\Phi}\rangle_{\natural} = -c^2$ |
 | $\tilde U_{\Psi,\mathrm b} = \cosh\frac{\theta_{\mathrm{rpd}}}{2} + i\sinh\frac{\theta_{\mathrm{rpd}}}{2}\vec u$ | Boost biquaternion (Hermitian, unit norm) |
 | $\theta_{\mathrm{rpd}}$ | Rapidity, $\tanh\theta_{\mathrm{rpd}} = v_b/c$ |

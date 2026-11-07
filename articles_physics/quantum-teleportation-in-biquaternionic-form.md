@@ -266,7 +266,7 @@ $$
 \tilde{Ϛ}_{\Psi,\mathrm{sp}}\ \longmapsto\ \tfrac14\sum_\epsilon \tilde Q_\epsilon\,\tilde{Ϛ}_{\Psi,\mathrm{sp}}\,\tilde Q_\epsilon^{*}=\tfrac12 e_t ,
 $$
 
-which is the replacement channel to the maximally mixed state. In Kraus form it has the four linearly independent operators $\tilde{K}_\epsilon=\tfrac12\tilde Q_\epsilon$, normalised by $\sum_\epsilon \tilde{K}_\epsilon^{*}\tilde{K}_\epsilon=\tfrac14\sum_\epsilon e_t=e_t$. It has Kraus rank four, it does not preserve purity, and it is not a gate: the protocol by itself is irreversible and, as the previous section shows, informationless.
+which is the replacement channel to the maximally mixed state. In Kraus form it has the four linearly independent operators $\tilde M_{\mathrm{kraus},\epsilon}=\tfrac12\tilde Q_\epsilon$, normalised by $\sum_\epsilon \tilde M_{\mathrm{kraus},\epsilon}^{*}\tilde M_{\mathrm{kraus},\epsilon}=\tfrac14\sum_\epsilon e_t=e_t$. It has Kraus rank four, it does not preserve purity, and it is not a gate: the protocol by itself is irreversible and, as the previous section shows, informationless.
 
 **With the record: a selective gate on each branch.** Conditioned on the outcome $\epsilon$, the map from Alice's preparation to Bob's qubit is
 
@@ -282,7 +282,7 @@ $$
 \tilde{Ϛ}_{\Psi,\mathrm{sp}}\ \longmapsto\ \tfrac14\sum_\epsilon \tilde Q_\epsilon^{*}\left(\tilde Q_\epsilon\,\tilde{Ϛ}_{\Psi,\mathrm{sp}}\,\tilde Q_\epsilon^{*}\right)\tilde Q_\epsilon=\tilde{Ϛ}_{\Psi,\mathrm{sp}} ,
 $$
 
-which is the identity channel. Written in Kraus form it has the four normalised operators $\tilde{K}_\epsilon=\tfrac12\tilde Q_\epsilon^{*}\tilde Q_\epsilon=\tfrac12 e_t$, with $\sum_\epsilon\tilde{K}_\epsilon^{*}\tilde{K}_\epsilon=4\cdot\tfrac14 e_t=e_t$; the four are proportional, so the Kraus rank is one and the channel is conjugation by the single $*$-unitary $\tilde M_{\mathrm{kraus}}=e_t$. The net state map on the teleported qubit is therefore a **gate** in the sense of the companion article: a single conjugation, purity-preserving and invertible.
+which is the identity channel. Written in Kraus form it has the four normalised operators $\tilde M_{\mathrm{kraus},\epsilon}=\tfrac12\tilde Q_\epsilon^{*}\tilde Q_\epsilon=\tfrac12 e_t$, with $\sum_\epsilon\tilde M_{\mathrm{kraus},\epsilon}^{*}\tilde M_{\mathrm{kraus},\epsilon}=4\cdot\tfrac14 e_t=e_t$; the four are proportional, so the Kraus rank is one and the channel is conjugation by the single $*$-unitary $\tilde M_{\mathrm{kraus}}=e_t$. The net state map on the teleported qubit is therefore a **gate** in the sense of the companion article: a single conjugation, purity-preserving and invertible.
 
 The three interpretations are not in conflict; they are the instrument, its branches, and its completed action. What they show is that teleportation is *not* a counterexample to the reversible/irreversible dichotomy but an illustration of it. The measurement is a rank-four irreversible step; the classical record is what permits the rank-four step to be undone by a conditional rank-one step; and the completed protocol is the identity gate. Teleportation transfers a state; it does not compute on it. The cost of the transfer is the shared Bell idempotent, which is consumed by the measurement, together with the two classical bits, which are not an algebraic object at all.
 

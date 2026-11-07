@@ -324,7 +324,7 @@ $$
 \Pi = \sum_n P_n + ϙ_n A(X_n), \qquad P_n = [E_n\,;\,-ic\vec p_n], \qquad A = [\xi_{\mathrm{scp}}\,;\,-i\vec A],
 $$
 
-in the source's notation, with $ϙ_n$ the charge of the $n$-th particle and $A$ the four-potential; the scalar part is the Hamiltonian $H=E+ϙ\xi_{\mathrm{scp}}$ and the vector part the canonical momentum $\vec\pi=\vec p+ϙ\vec A$. Up to the central factor $-i$ — the corpus's placement of the time component in the scalar slot — the four-momenta here are the corpus's four-momentum $\tilde P_{\Phi}$, and the source's mass-shell statement $|P|^2=m^2$ (units with $c=1$) is the corpus's $\langle\tilde P_{\Phi}\rangle_{\natural}=-m^2c^2$.
+in the source's notation, with $ϙ_n$ the charge of the $n$-th particle and $A$ the four-potential; the scalar part is the Hamiltonian $H=E+ϙ\xi_{\mathrm{scp}}$ and the vector part the canonical momentum $\vec\pi=\vec p+ϙ\vec A$. Up to the central factor $-i$ — the corpus's placement of the time component in the scalar slot — the four-momenta here are the corpus's four-momentum $\tilde P_{\Phi}$, and the source's mass-shell statement $|P|^2=m^{2}c^{2}$ is the corpus's $\langle\tilde P_{\Phi}\rangle_{\natural}=-m^2c^2$.
 
 The reason to introduce the object is the action. The source's **action postulate** is
 

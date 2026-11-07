@@ -276,17 +276,17 @@ $$
 
 which is the Minkowski interval; its zero set $\langle\tilde R_\Phi\rangle_{\natural}=0$ is the **light cone**. So the light cone is the real slice of the biquaternion-norm cone, obtained by taking the scalar coefficient of the phase-space biquaternion to be purely imaginary rather than real. The indefinite signature of the Minkowski form and the definiteness of the Euclidean phase-space form are the same ambiguity of the biquaternion norm under a complex rotation of its scalar direction.
 
-The same computation identifies the characteristic cone of the d'Alembertian. For a plane-wave biquaternion $\tilde P_{\Phi}=\frac{i\omega}{c}e_t+\vec k$, the biquaternion norm is
+The same computation identifies the characteristic cone of the d'Alembertian. For a plane-wave biquaternion $\tilde P_{\Phi}=\frac{i\omega}{c}e_t+\vec k_\Phi$, the biquaternion norm is
 
 $$
-\boxed{\;\langle\tilde P_{\Phi}\rangle_{\natural}=-\frac{\omega^2}{c^2}+\vec k^2\;},
+\boxed{\;\langle\tilde P_{\Phi}\rangle_{\natural}=-\frac{\omega^2}{c^2}+\vec k_\Phi^2\;},
 $$
 
-and $\langle\tilde P_{\Phi}\rangle_{\natural}=0$ is the dispersion relation $\omega^2/c^2=\vec k^2$ of the wave equation $\Box\tilde{Ξ}=0$. On a plane wave of frequency $\omega$ and wave vector $\vec k$, whose wave biquaternion is $\tilde P_{\Phi}=\frac{i\omega}{c}e_t+\vec k$, the operator $\Box=\partial^2/\partial R_t^2+\Delta$ acts as the eigenvalue
+and $\langle\tilde P_{\Phi}\rangle_{\natural}=0$ is the dispersion relation $\omega^2/c^2=\vec k_\Phi^2$ of the wave equation $\Box\tilde{Ξ}=0$. On a plane wave of frequency $\omega$ and wave vector $\vec k_\Phi$, whose wave biquaternion is $\tilde P_{\Phi}=\frac{i\omega}{c}e_t+\vec k_\Phi$, the operator $\Box=\partial^2/\partial R_t^2+\Delta$ acts as the eigenvalue
 
 $$
-(iK_0)^2+(i\vec k)^2
-=-\left(K_0^2+\vec k^2\right)=-\langle\tilde P_{\Phi}\rangle_{\natural}=\frac{\omega^2}{c^2}-\vec k^2,
+(iK_0)^2+(i\vec k_\Phi)^2
+=-\left(K_0^2+\vec k_\Phi^2\right)=-\langle\tilde P_{\Phi}\rangle_{\natural}=\frac{\omega^2}{c^2}-\vec k_\Phi^2,
 \qquad K_0=\frac{i\omega}{c},
 $$
 
@@ -359,7 +359,7 @@ The symplectic form is the antisymmetric (imaginary) part of one Hermitian pairi
 | $\langle\tilde Q\rangle_{\natural} = \langle\tilde Q,\tilde Q\rangle_{\natural}=\tilde Q\tilde Q^{\natural}=\sum_\mu Q_\mu^2$ | Biquaternion norm (holomorphic) |
 | $\langle\vec Z,\vec W\rangle=\mathrm{Sc}(\vec Z\vec W^{\natural}) = \langle\vec Z,\vec W\rangle_{\natural}$ | Symmetric general plain bilinear form of $\langle\cdot,\cdot\rangle_{\natural}$ |
 | $\langle\tilde R_\Phi\rangle_{\natural}=0$, $\tilde R_\Phi=i r'_t\,e_t+r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z$ | Light cone of the material sector |
-| $\langle\tilde P_{\Phi}\rangle_{\natural}=0$, $\tilde P_{\Phi}=\frac{i\omega}{c}e_t+\vec k$ | Characteristic cone of $\Box$ |
+| $\langle\tilde P_{\Phi}\rangle_{\natural}=0$, $\tilde P_{\Phi}=\frac{i\omega}{c}e_t+\vec k_\Phi$ | Characteristic cone of $\Box$ |
 | $\langle\vec S\rangle_{\natural}=S^2$ | Coadjoint-orbit level set; $S=0$ is the cone |
 | $\omega_{\mathrm S}=\frac{1}{S}\Omega_S,\ \ \Omega_S=\frac{1}{2S}\varepsilon_{ijk}S_i dS_j\wedge dS_k$ | Souriau–Kirillov form on the orbit (area form divided by $S$) |
 | $\langle\tilde{Q}_1,\tilde{Q}_2\rangle$ | the general plain bilinear form, the scalar part of the general plain bilinear product, $\mathrm{Sc}(\tilde{Q}_1\tilde{Q}_2)$ |

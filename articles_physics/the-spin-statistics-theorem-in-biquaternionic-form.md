@@ -166,8 +166,8 @@ for every $\tilde{Ξ}\in\mathbb{B}$. The right multiplication by $i\vec e_x$ is 
 The field is element-valued; the biquaternion content is the algebra on which it is built and the notation, and the mode algebra is imposed. Two choices are available. The **Fermi choice** imposes
 
 $$
-\{a_{\mathrm{fop},r}(\vec p),a_{\mathrm{fop},s}^{\dagger}(\vec k)\}=(2\pi)^3\delta_{rs}\delta^{(3)}(\vec p-\vec k),\qquad
-\{b_{\mathrm{fop},r}(\vec p),b_{\mathrm{fop},s}^{\dagger}(\vec k)\}=(2\pi)^3\delta_{rs}\delta^{(3)}(\vec p-\vec k),
+\{a_{\mathrm{fop},r}(\vec p),a_{\mathrm{fop},s}^{\dagger}(\vec k_\Phi)\}=(2\pi)^3\delta_{rs}\delta^{(3)}(\vec p-\vec k_\Phi),\qquad
+\{b_{\mathrm{fop},r}(\vec p),b_{\mathrm{fop},s}^{\dagger}(\vec k_\Phi)\}=(2\pi)^3\delta_{rs}\delta^{(3)}(\vec p-\vec k_\Phi),
 $$
 
 with all other brackets vanishing, and the **Bose choice** replaces both braces by brackets.
@@ -321,7 +321,7 @@ What the framework establishes is that the two pairings which survive the theore
 | $\{\vec\Upsilon_x,\vec\Upsilon_y\}=e_t$, $[\vec\Upsilon_x,\vec\Upsilon_y]=i\vec e_z$ | Fermionic mode relation; failure of the bosonic relation |
 | $\tilde\nabla$, $\tilde\nabla^{\natural}$, $\Box=\tilde\nabla\tilde\nabla^{\natural}$ | Corpus gradient, its quaternion conjugate and the d'Alembertian (*Operator and Calculus Conventions*, §*The Gradient*) |
 | $\mathbb{D}\tilde X=-\partial\tilde X/\partial r'_t\,\vec e_x-\sum_k\vec e_k\,\partial\tilde X/\partial R_k\,\vec e_y$ | Pair operator on one element (coordinate form); the time term is a single right multiplication, the spatial terms two-sided; $\mathbb{D}^2=\Box$ |
-| $\mathbb{D}_p\tilde X=iE_{\vec p}\tilde X\vec e_x-i\sum_k p_k\vec e_k\tilde X\vec e_y$ | Symbol of the same operator on a plane wave; $\mathbb{D}_p^2=p_0^2-\lvert\vec p\rvert^2=m^2$ |
+| $\mathbb{D}_p\tilde X=i\frac{E_{\vec p}}{c}\tilde X\vec e_x-i\sum_k p_k\vec e_k\tilde X\vec e_y$ | Symbol of the same operator on a plane wave; $\mathbb{D}_p^2=p_0^2-\lvert\vec p\rvert^2=m^{2}c^{2}$ |
 | $\nabla_k=\partial/\partial\Delta_k$ | Gradient with respect to the spatial separation |
 | $\tilde{Ξ}_{\mathrm{fop}}$, $\bar{\tilde{Ξ}}_{\mathrm{sp},\mathrm{fop}}=\tilde{Ξ}_{\mathrm{fop}}^{\dagger}i\vec e_x$ | Quantized element-valued Dirac field and its Dirac adjoint, $\bar{\tilde{Ξ}}_{\mathrm{sp}}X=\mathrm{Sc}(\tilde{Ξ}_{\mathrm{sp}}^*iX\vec e_x)$ |
 | $a_{\mathrm{fop},r}(\vec p),b_{\mathrm{fop},r}^{\dagger}(\vec p)$ | Annihilation and antiparticle creation operators |

@@ -18,19 +18,19 @@ and the Hermitian form with its trace reading is that of *Norm and Pairing Conve
 
 **The result.** For a source-free monochromatic plane wave
 $$
-\tilde{F}(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z,r'_t) = \tilde{F}_0\,\exp(\,i(\vec k\cdot(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)-\omega r'_t/c)),
+\tilde{F}(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z,r'_t) = \tilde{F}_0\,\exp(\,i(\vec k_\Phi\cdot(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)-\omega r'_t/c)),
 \qquad
 \tilde{F}_0 = i\sqrt{\epsilon}\,\vec E_0 - \sqrt{\mu}\,\vec H_0,
 $$
 the equation $\tilde{\nabla}\tilde{F} = 0$ reduces to
 $$
-\vec k\cdot\vec E_0 = 0, \qquad \vec k\cdot\vec H_0 = 0, \qquad \vec k\times\vec E_0 = \omega\mu\,\vec H_0, \qquad \vec k\times\vec H_0 = -\omega\epsilon\,\vec E_0
+\vec k_\Phi\cdot\vec E_0 = 0, \qquad \vec k_\Phi\cdot\vec H_0 = 0, \qquad \vec k_\Phi\times\vec E_0 = \omega\mu\,\vec H_0, \qquad \vec k_\Phi\times\vec H_0 = -\omega\epsilon\,\vec E_0
 $$
 and, for a nonzero field, these force the dispersion relation
 $$
-\vec k^2 = \omega^2\epsilon\mu = \frac{\omega^2}{c^2}
+\vec k_\Phi^2 = \omega^2\epsilon\mu = \frac{\omega^2}{c^2}
 $$
-and then $\vec H_0 = Z^{-1}\,\vec u_k\times\vec E_0$, with $\vec u_k = \vec k/|\vec k|$. The amplitude satisfies $|\vec E_0| = Z|\vec H_0| = c|\vec B_0|$, the two normalised halves $i\sqrt{\epsilon}\,\vec E_0$ and $-\sqrt{\mu}\,\vec H_0$ have equal magnitude, and the field-strength amplitude is null,
+and then $\vec H_0 = Z^{-1}\,\vec u_k\times\vec E_0$, with $\vec u_k = \vec k_\Phi/|\vec k_\Phi|$. The amplitude satisfies $|\vec E_0| = Z|\vec H_0| = c|\vec B_0|$, the two normalised halves $i\sqrt{\epsilon}\,\vec E_0$ and $-\sqrt{\mu}\,\vec H_0$ have equal magnitude, and the field-strength amplitude is null,
 $$
 \langle\tilde{F}_0\rangle_{\natural} = \sum_{k=1}^{3}(F_{tk})^2 = 0,
 $$
@@ -48,59 +48,59 @@ Two points of discipline are kept in view. First, the field strength is a pure v
 
 ## Problem 1: The Plane-Wave Conditions and the Dispersion Relation
 
-**Statement.** (a) With the ansatz $\tilde{F} = \tilde{F}_0\,\exp(i(\vec k\cdot(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)-\omega r'_t/c))$ and $\tilde{F}_0$ a pure vector, show that the gradient acts by left multiplication by a constant biquaternion, and identify it. (b) Show that $\tilde{\nabla}\tilde{F} = 0$ is equivalent to the four conditions of the parent and to the dispersion relation $k = \omega/c$. (c) Derive the impedance relation and the amplitude relations $|\vec E_0| = Z|\vec H_0| = c|\vec B_0|$.
+**Statement.** (a) With the ansatz $\tilde{F} = \tilde{F}_0\,\exp(i(\vec k_\Phi\cdot(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)-\omega r'_t/c))$ and $\tilde{F}_0$ a pure vector, show that the gradient acts by left multiplication by a constant biquaternion, and identify it. (b) Show that $\tilde{\nabla}\tilde{F} = 0$ is equivalent to the four conditions of the parent and to the dispersion relation $k = \omega/c$. (c) Derive the impedance relation and the amplitude relations $|\vec E_0| = Z|\vec H_0| = c|\vec B_0|$.
 
 **Solution (a).** The partial derivatives act on the exponential by
 $$
-\partial/\partial R_t\,\exp(\,i(\vec k\cdot(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)-\omega r'_t/c)) = -\frac{\omega}{c}\,\exp(\,i(\vec k\cdot(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)-\omega r'_t/c)),
+\partial/\partial R_t\,\exp(\,i(\vec k_\Phi\cdot(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)-\omega r'_t/c)) = -\frac{\omega}{c}\,\exp(\,i(\vec k_\Phi\cdot(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)-\omega r'_t/c)),
 \qquad
-\partial/\partial R_j\,\exp(\,i(\vec k\cdot(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)-\omega r'_t/c)) = i k_j\,\exp(\,i(\vec k\cdot(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)-\omega r'_t/c)),
+\partial/\partial R_j\,\exp(\,i(\vec k_\Phi\cdot(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)-\omega r'_t/c)) = i k_j\,\exp(\,i(\vec k_\Phi\cdot(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)-\omega r'_t/c)),
 $$
 using $\partial/\partial R_t = -i\partial/\partial r'_t$ and $\partial/\partial r'_t \to -i\omega/c$. Hence
 $$
-\tilde{\nabla}\tilde{F} = \left(-\frac{\omega}{c}\,e_t + i\vec k\right)\tilde{F}_0\,\exp(\,i(\vec k\cdot(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)-\omega r'_t/c)),
+\tilde{\nabla}\tilde{F} = \left(-\frac{\omega}{c}\,e_t + i\vec k_\Phi\right)\tilde{F}_0\,\exp(\,i(\vec k_\Phi\cdot(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)-\omega r'_t/c)),
 \qquad
-\vec k = k_1\vec e_x + k_2\vec e_y + k_3\vec e_z .
+\vec k_\Phi = k_1\vec e_x + k_2\vec e_y + k_3\vec e_z .
 $$
 The bracket is $i\tilde P_{\Phi}$, where
 $$
-\tilde P_{\Phi} = \frac{i\omega}{c}\,e_t + \vec k
+\tilde P_{\Phi} = \frac{i\omega}{c}\,e_t + \vec k_\Phi
 $$
-is exactly the **four-wavevector** of the material space, whose scalar part $i\omega/c$ is purely imaginary and whose vector part $\vec k$ is real, so that $\tilde P_{\Phi} \in \mathbb{B}_{\Phi}$. The operator eigenvalue identity is therefore
+is exactly the **four-wavevector** of the material space, whose scalar part $i\omega/c$ is purely imaginary and whose vector part $\vec k_\Phi$ is real, so that $\tilde P_{\Phi} \in \mathbb{B}_{\Phi}$. The operator eigenvalue identity is therefore
 $$
-\tilde{\nabla} \;\longrightarrow\; i\tilde P_{\Phi} = -\frac{\omega}{c}\,e_t + i\vec k,
+\tilde{\nabla} \;\longrightarrow\; i\tilde P_{\Phi} = -\frac{\omega}{c}\,e_t + i\vec k_\Phi,
 $$
 and since $i$ is central and invertible, the source-free equation $\tilde{\nabla}\tilde{F} = 0$ is equivalent to the algebraic condition
 $$
 \boxed{\;\tilde P_{\Phi}\,\tilde{F}_0 = 0\;}.
 $$
 
-**Solution (b).** Write $\tilde{F}_0 = F_{tx}\vec e_x + F_{ty}\vec e_y + F_{tz}\vec e_z$. Because $\tilde P_{\Phi}$ has a scalar part and $\tilde{F}_0$ is a pure vector, the product separates by parts. For a scalar $\kappa$ and a vector $\vec q$, $\kappa\tilde{F}_0 = \kappa F_{tk}\vec e_k$ distributes over components, while the vector part of $\tilde P_{\Phi}$ multiplies by the quaternion rule $\vec k\tilde{F}_0 = -\vec k\cdot\tilde{F}_0 + \vec k\times\tilde{F}_0$. Thus
+**Solution (b).** Write $\tilde{F}_0 = F_{tx}\vec e_x + F_{ty}\vec e_y + F_{tz}\vec e_z$. Because $\tilde P_{\Phi}$ has a scalar part and $\tilde{F}_0$ is a pure vector, the product separates by parts. For a scalar $\kappa$ and a vector $\vec q$, $\kappa\tilde{F}_0 = \kappa F_{tk}\vec e_k$ distributes over components, while the vector part of $\tilde P_{\Phi}$ multiplies by the quaternion rule $\vec k_\Phi\tilde{F}_0 = -\vec k_\Phi\cdot\tilde{F}_0 + \vec k_\Phi\times\tilde{F}_0$. Thus
 $$
-\tilde P_{\Phi}\tilde{F}_0 = \frac{i\omega}{c}\,\tilde{F}_0 - \vec k\cdot\tilde{F}_0 + \vec k\times\tilde{F}_0 .
+\tilde P_{\Phi}\tilde{F}_0 = \frac{i\omega}{c}\,\tilde{F}_0 - \vec k_\Phi\cdot\tilde{F}_0 + \vec k_\Phi\times\tilde{F}_0 .
 $$
 Its scalar part and its vector part must vanish separately:
 $$
-\vec k\cdot\tilde{F}_0 = 0,
+\vec k_\Phi\cdot\tilde{F}_0 = 0,
 \qquad
-\vec k\times\tilde{F}_0 = -\frac{i\omega}{c}\,\tilde{F}_0 .
+\vec k_\Phi\times\tilde{F}_0 = -\frac{i\omega}{c}\,\tilde{F}_0 .
 $$
 
-Now substitute $\tilde{F}_0 = i\sqrt{\epsilon}\,\vec E_0 - \sqrt{\mu}\,\vec H_0$ into the vector equation. The left side is $i\sqrt{\epsilon}\,\vec k\times\vec E_0 - \sqrt{\mu}\,\vec k\times\vec H_0$, and the right side is $\frac{\omega}{c}\sqrt{\epsilon}\,\vec E_0 + \frac{i\omega}{c}\sqrt{\mu}\,\vec H_0$. Since $\sqrt{\epsilon}$ and $\sqrt{\mu}$ are real, separating the real and imaginary parts gives the two relations
+Now substitute $\tilde{F}_0 = i\sqrt{\epsilon}\,\vec E_0 - \sqrt{\mu}\,\vec H_0$ into the vector equation. The left side is $i\sqrt{\epsilon}\,\vec k_\Phi\times\vec E_0 - \sqrt{\mu}\,\vec k_\Phi\times\vec H_0$, and the right side is $\frac{\omega}{c}\sqrt{\epsilon}\,\vec E_0 + \frac{i\omega}{c}\sqrt{\mu}\,\vec H_0$. Since $\sqrt{\epsilon}$ and $\sqrt{\mu}$ are real, separating the real and imaginary parts gives the two relations
 $$
-\sqrt{\epsilon}\,\vec k\times\vec E_0 = \frac{\omega}{c}\sqrt{\mu}\,\vec H_0,
+\sqrt{\epsilon}\,\vec k_\Phi\times\vec E_0 = \frac{\omega}{c}\sqrt{\mu}\,\vec H_0,
 \qquad
--\sqrt{\mu}\,\vec k\times\vec H_0 = \frac{\omega}{c}\sqrt{\epsilon}\,\vec E_0 .
+-\sqrt{\mu}\,\vec k_\Phi\times\vec H_0 = \frac{\omega}{c}\sqrt{\epsilon}\,\vec E_0 .
 $$
 Using $c = 1/\sqrt{\epsilon\mu}$, the coefficients are $\frac{\omega\sqrt{\mu}}{c\sqrt{\epsilon}} = \omega\mu$ and $\frac{\omega\sqrt{\epsilon}}{c\sqrt{\mu}} = \omega\epsilon$, so
 $$
-\vec k\times\vec E_0 = \omega\mu\,\vec H_0,
+\vec k_\Phi\times\vec E_0 = \omega\mu\,\vec H_0,
 \qquad
-\vec k\times\vec H_0 = -\omega\epsilon\,\vec E_0,
+\vec k_\Phi\times\vec H_0 = -\omega\epsilon\,\vec E_0,
 $$
-which are the parent's two curl conditions. Dotting the first with $\vec k$ kills the left side and gives $\omega\mu\,\vec k\cdot\vec H_0 = 0$, so $\vec k\cdot\vec H_0 = 0$; dotting the second gives $\vec k\cdot\vec E_0 = 0$. The transversality conditions of the parent's list are therefore consequences of the curl relations, not independent inputs, and the scalar equation $\vec k\cdot\tilde{F}_0 = 0$ is then automatic.
+which are the parent's two curl conditions. Dotting the first with $\vec k_\Phi$ kills the left side and gives $\omega\mu\,\vec k_\Phi\cdot\vec H_0 = 0$, so $\vec k_\Phi\cdot\vec H_0 = 0$; dotting the second gives $\vec k_\Phi\cdot\vec E_0 = 0$. The transversality conditions of the parent's list are therefore consequences of the curl relations, not independent inputs, and the scalar equation $\vec k_\Phi\cdot\tilde{F}_0 = 0$ is then automatic.
 
-Finally, take $\vec k\times(\vec k\times\vec E_0)$. Expanding the double cross product, and using $\vec k\cdot\vec E_0 = 0$, gives $-k^2\,\vec E_0$; substituting the first curl relation and then the second gives $\vec k\times(\omega\mu\vec H_0) = \omega\mu(\vec k\times\vec H_0) = -\omega^2\epsilon\mu\,\vec E_0$. Equating the two expressions,
+Finally, take $\vec k_\Phi\times(\vec k_\Phi\times\vec E_0)$. Expanding the double cross product, and using $\vec k_\Phi\cdot\vec E_0 = 0$, gives $-k^2\,\vec E_0$; substituting the first curl relation and then the second gives $\vec k_\Phi\times(\omega\mu\vec H_0) = \omega\mu(\vec k_\Phi\times\vec H_0) = -\omega^2\epsilon\mu\,\vec E_0$. Equating the two expressions,
 $$
 -k^2\vec E_0 = -\omega^2\epsilon\mu\,\vec E_0
 \quad\Longrightarrow\quad
@@ -108,9 +108,9 @@ $$
 $$
 for a nonzero field. This is the medium dispersion relation, and it is a consequence of the annihilation condition, not an extra assumption.
 
-**Solution (c).** From $\vec k\times\vec E_0 = \omega\mu\vec H_0$ and $\vec k = k\vec u_k$ with $k = \omega/c$,
+**Solution (c).** From $\vec k_\Phi\times\vec E_0 = \omega\mu\vec H_0$ and $\vec k_\Phi = k\vec u_k$ with $k = \omega/c$,
 $$
-\vec H_0 = \frac{1}{\omega\mu}\,\vec k\times\vec E_0 = \frac{k}{\omega\mu}\,\vec u_k\times\vec E_0 = \frac{1}{Z}\,\vec u_k\times\vec E_0,
+\vec H_0 = \frac{1}{\omega\mu}\,\vec k_\Phi\times\vec E_0 = \frac{k}{\omega\mu}\,\vec u_k\times\vec E_0 = \frac{1}{Z}\,\vec u_k\times\vec E_0,
 $$
 since $\frac{k}{\omega\mu} = \frac{\sqrt{\epsilon\mu}}{\mu} = \sqrt{\frac{\epsilon}{\mu}} = \frac{1}{Z}$. Because $\vec E_0$ is transverse to the unit vector $\vec u_k$, the cross product has the same modulus: $|\vec u_k\times\vec E_0| = |\vec E_0|$. Hence
 $$
@@ -158,7 +158,7 @@ Since $\tilde{F}_0$ is a pure vector, $\tilde{F}_0^2 = -\vec F_0\cdot\vec F_0 = 
 
 **Solution (b).** The four-wavevector is null as well. Its biquaternion norm is
 $$
-\langle\tilde P_{\Phi}\rangle_{\natural} = \left(\frac{i\omega}{c}\right)^2 + \vec k^2 = -\frac{\omega^2}{c^2} + k^2 = 0
+\langle\tilde P_{\Phi}\rangle_{\natural} = \left(\frac{i\omega}{c}\right)^2 + \vec k_\Phi^2 = -\frac{\omega^2}{c^2} + k^2 = 0
 $$
 by the dispersion relation of Problem 1. So $\tilde P_{\Phi}$ is a nonzero null element, hence a zero divisor, and Problem 1 established that
 $$
@@ -204,7 +204,7 @@ $$
 $$
 using $\epsilon Z = \epsilon\sqrt{\mu/\epsilon} = \sqrt{\epsilon\mu} = 1/c$. So the energy flows along the wavevector with speed $c$, and $|\vec S| = cW$ at every instant.
 
-**Solution (b).** With the complex amplitudes of the parent's convention, $\vec E(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z,r'_t) = \mathrm{Re}[\vec E_0 \exp(i(\vec k\cdot(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)-\omega r'_t/c))]$, the time averages over a period are
+**Solution (b).** With the complex amplitudes of the parent's convention, $\vec E(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z,r'_t) = \mathrm{Re}[\vec E_0 \exp(i(\vec k_\Phi\cdot(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)-\omega r'_t/c))]$, the time averages over a period are
 $$
 \langle W\rangle = \frac{1}{4}\left(\epsilon\,|\vec E_0|^2 + \mu\,|\vec H_0|^2\right),
 \qquad
@@ -228,19 +228,19 @@ because $\frac{\mu}{Z^2} = \epsilon$. Therefore $c\langle W\rangle = \frac{c\eps
 $$
 \boxed{\;\tilde{W}_{\Psi} = \frac{1}{2}\tilde{F}\tilde{F}^{*} = W\left(e_t + i\vec u_k\right)\;}.
 $$
-This is an element of $\mathbb{B}_{\Psi}$, as every Hermitian form is: its scalar part $W$ is real and its vector part $iW\vec u_k$ is purely imaginary. To compute $\tilde{\nabla}\tilde{W}_{\Psi}$, write $\theta_{\mathrm{pha}} = \vec k\cdot(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z) - \omega r'_t/c$ and $W = W(\theta_{\mathrm{pha}})$, the general form, which reduces to $W = W_0\cos^2\theta_{\mathrm{pha}}$ for an in-phase, linearly polarised wave. For a scalar, the gradient acts as $\tilde{\nabla}W = W_{\mathrm{pha},\theta}\,\tilde P_{\Phi}$, with $W_{\mathrm{pha},\theta} = \partial/\partial\theta_{\mathrm{pha}}\,W$ and $\tilde P_{\Phi} = \frac{i\omega}{c}e_t + \vec k$ the four-wavevector: in the in-phase case, expanding $W = \frac{W_0}{2}(1 + \cos 2\theta_{\mathrm{pha}})$, the exponentials $\exp(\pm 2i\theta_{\mathrm{pha}})$ are eigenfunctions with eigenvalues $\pm 2i\tilde P_{\Phi}$, and their combination reproduces $W_{\mathrm{pha},\theta}\tilde P_{\Phi}$. Since $e_t + i\vec u_k$ is constant,
+This is an element of $\mathbb{B}_{\Psi}$, as every Hermitian form is: its scalar part $W$ is real and its vector part $iW\vec u_k$ is purely imaginary. To compute $\tilde{\nabla}\tilde{W}_{\Psi}$, write $\theta_{\mathrm{pha}} = \vec k_\Phi\cdot(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z) - \omega r'_t/c$ and $W = W(\theta_{\mathrm{pha}})$, the general form, which reduces to $W = W_0\cos^2\theta_{\mathrm{pha}}$ for an in-phase, linearly polarised wave. For a scalar, the gradient acts as $\tilde{\nabla}W = W_{\mathrm{pha},\theta}\,\tilde P_{\Phi}$, with $W_{\mathrm{pha},\theta} = \partial/\partial\theta_{\mathrm{pha}}\,W$ and $\tilde P_{\Phi} = \frac{i\omega}{c}e_t + \vec k_\Phi$ the four-wavevector: in the in-phase case, expanding $W = \frac{W_0}{2}(1 + \cos 2\theta_{\mathrm{pha}})$, the exponentials $\exp(\pm 2i\theta_{\mathrm{pha}})$ are eigenfunctions with eigenvalues $\pm 2i\tilde P_{\Phi}$, and their combination reproduces $W_{\mathrm{pha},\theta}\tilde P_{\Phi}$. Since $e_t + i\vec u_k$ is constant,
 $$
 \tilde{\nabla}\tilde{W}_{\Psi} = \left(\tilde{\nabla}W\right)\left(e_t + i\vec u_k\right)
 = W_{\mathrm{pha},\theta}\,\tilde P_{\Phi}\left(e_t + i\vec u_k\right).
 $$
-Evaluating the product with $\vec k = k\vec u_k$, $k = \omega/c$, and $\vec u_k^2 = -e_t$:
+Evaluating the product with $\vec k_\Phi = k\vec u_k$, $k = \omega/c$, and $\vec u_k^2 = -e_t$:
 $$
 \tilde P_{\Phi}\left(e_t + i\vec u_k\right)
-= \left(\frac{i\omega}{c}e_t + \vec k\right)\left(e_t + i\vec u_k\right)
-= \frac{i\omega}{c}e_t - \frac{\omega}{c}\vec u_k + \vec k + i\,\vec k\vec u_k
-= i\left(\frac{\omega}{c} - k\right)e_t + \left(\vec k - \frac{\omega}{c}\vec u_k\right) = 0,
+= \left(\frac{i\omega}{c}e_t + \vec k_\Phi\right)\left(e_t + i\vec u_k\right)
+= \frac{i\omega}{c}e_t - \frac{\omega}{c}\vec u_k + \vec k_\Phi + i\,\vec k_\Phi\vec u_k
+= i\left(\frac{\omega}{c} - k\right)e_t + \left(\vec k_\Phi - \frac{\omega}{c}\vec u_k\right) = 0,
 $$
-using $\vec k\vec u_k = -k e_t$. So $\tilde{\nabla}\tilde{W}_{\Psi} = 0$: the energy–momentum biquaternion of a free plane wave is conserved, which is the source-free case of the parent's law $\tilde{\nabla}\tilde{W}_{\Psi} = -\tilde{\mathcal F}$ with $\tilde{\mathcal F} = 0$.
+using $\vec k_\Phi\vec u_k = -k e_t$. So $\tilde{\nabla}\tilde{W}_{\Psi} = 0$: the energy–momentum biquaternion of a free plane wave is conserved, which is the source-free case of the parent's law $\tilde{\nabla}\tilde{W}_{\Psi} = -\tilde{\mathcal F}$ with $\tilde{\mathcal F} = 0$.
 
 Finally, the biquaternion norm of $\tilde{W}_{\Psi}$ is
 $$
@@ -256,7 +256,7 @@ So the energy–momentum biquaternion of the wave is itself a **zero divisor**, 
 $$
 \partial/\partial R_t = -\frac{i}{c(\omega)}\,\partial/\partial r'_t \;\longrightarrow\; -\frac{i}{c(\omega)}\,(-i\omega) = -\frac{\omega}{c(\omega)},
 $$
-a **real** eigenvalue, so that the operator eigenvalue is $-\frac{\omega}{c(\omega)}e_t + i\vec k$. The imaginary time axis $i r'_t = i\,c(\omega)\,r'_t$ is scaled by $c(\omega)$, which is different at each frequency; the algebra $\mathbb{B}$ and the scalar $i$ are fixed, and only the embedding of physical time into the imaginary direction changes. This is the precise sense in which the local complex structure is spectral as well as spatial, and it is why the dispersion relation must be imposed frequency by frequency.
+a **real** eigenvalue, so that the operator eigenvalue is $-\frac{\omega}{c(\omega)}e_t + i\vec k_\Phi$. The imaginary time axis $i r'_t = i\,c(\omega)\,r'_t$ is scaled by $c(\omega)$, which is different at each frequency; the algebra $\mathbb{B}$ and the scalar $i$ are fixed, and only the embedding of physical time into the imaginary direction changes. This is the precise sense in which the local complex structure is spectral as well as spatial, and it is why the dispersion relation must be imposed frequency by frequency.
 
 **Solution (b).** With $n(\omega) = c_0/c(\omega)$ and $k = \frac{n(\omega)\omega}{c_0}$, the phase velocity is
 $$
@@ -332,7 +332,7 @@ The gap that the exercise most wants to flag is the first: a reader of the paren
 
 **1. Oblique incidence and Snell's law.** Use the parent's interface conditions — continuity of the tangential components of $\vec E$ and $\vec H$ and of the normal components of $\vec D$ and $\vec B$ — to derive Snell's law $n_1\sin\theta_1 = n_2\sin\theta_2$ and, at normal incidence, the Fresnel coefficients $r = (Z_2-Z_1)/(Z_2+Z_1)$, $r'_t = 2Z_2/(Z_1+Z_2)$ with $R+T=1$. Show where in the derivation the discontinuity of the biquaternionic normalisation $\sqrt{\epsilon},\sqrt{\mu}$ enters, since $\tilde{F}$ is not itself continuous across the interface.
 
-**2. Evanescent waves.** In total internal reflection the transmitted wavevector has a component normal to the interface that is imaginary, so $\vec k$ is no longer real. Repeat Problem 1 with one component of $\vec k$ imaginary, and determine which of the parent's statements — transversality, the curl relations, the dispersion relation, the nullness $\langle\tilde{F}_0\rangle_{\natural} = 0$ — survive. The decay of the amplitude in the transverse direction is not radiative transport, and the energy relation of Problem 3 is expected to change; state precisely how.
+**2. Evanescent waves.** In total internal reflection the transmitted wavevector has a component normal to the interface that is imaginary, so $\vec k_\Phi$ is no longer real. Repeat Problem 1 with one component of $\vec k_\Phi$ imaginary, and determine which of the parent's statements — transversality, the curl relations, the dispersion relation, the nullness $\langle\tilde{F}_0\rangle_{\natural} = 0$ — survive. The decay of the amplitude in the transverse direction is not radiative transport, and the energy relation of Problem 3 is expected to change; state precisely how.
 
 **3. The absorbing case.** Let $\epsilon$ and $\mu$ be complex. Show explicitly that the electric and magnetic halves of $\tilde{F}$ leave $\mathbb{B}_{\Psi}$ and $\mathbb{B}_{\Phi}$ respectively, identify the obstacle to defining a real field strength, and determine what the framework's complexified extension requires to fix a physical real slice. This is the parent's declared boundary; it is not a computation with a settled answer in the framework as written.
 
@@ -346,13 +346,13 @@ The gap that the exercise most wants to flag is the first: a reader of the paren
 
 ## Summary
 
-For a source-free monochromatic plane wave $\tilde{F} = \tilde{F}_0\,\exp(i(\vec k\cdot(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)-\omega r'_t/c))$ in a homogeneous medium, the biquaternionic Maxwell equation reduces to the algebraic annihilation $\tilde P_{\Phi}\tilde{F}_0 = 0$, where $\tilde P_{\Phi} = \frac{i\omega}{c}e_t + \vec k \in \mathbb{B}_{\Phi}$ is the four-wavevector. Its scalar and vector parts give the two curl conditions
+For a source-free monochromatic plane wave $\tilde{F} = \tilde{F}_0\,\exp(i(\vec k_\Phi\cdot(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)-\omega r'_t/c))$ in a homogeneous medium, the biquaternionic Maxwell equation reduces to the algebraic annihilation $\tilde P_{\Phi}\tilde{F}_0 = 0$, where $\tilde P_{\Phi} = \frac{i\omega}{c}e_t + \vec k_\Phi \in \mathbb{B}_{\Phi}$ is the four-wavevector. Its scalar and vector parts give the two curl conditions
 $$
-\vec k\times\vec E_0 = \omega\mu\,\vec H_0,
+\vec k_\Phi\times\vec E_0 = \omega\mu\,\vec H_0,
 \qquad
-\vec k\times\vec H_0 = -\omega\epsilon\,\vec E_0,
+\vec k_\Phi\times\vec H_0 = -\omega\epsilon\,\vec E_0,
 $$
-from which the transversality conditions $\vec k\cdot\vec E_0 = \vec k\cdot\vec H_0 = 0$ and the dispersion relation $k = \omega/c$ follow. The impedance relation $\vec H_0 = Z^{-1}\vec u_k\times\vec E_0$ gives $|\vec E_0| = Z|\vec H_0| = c|\vec B_0|$, the two normalised halves $i\sqrt{\epsilon}\vec E_0$ and $-\sqrt{\mu}\vec H_0$ have equal magnitude, and the amplitude is the null combination $\tilde{F}_0 = i\sqrt{\epsilon}(\vec E_0 + i\vec u_k\times\vec E_0)$.
+from which the transversality conditions $\vec k_\Phi\cdot\vec E_0 = \vec k_\Phi\cdot\vec H_0 = 0$ and the dispersion relation $k = \omega/c$ follow. The impedance relation $\vec H_0 = Z^{-1}\vec u_k\times\vec E_0$ gives $|\vec E_0| = Z|\vec H_0| = c|\vec B_0|$, the two normalised halves $i\sqrt{\epsilon}\vec E_0$ and $-\sqrt{\mu}\vec H_0$ have equal magnitude, and the amplitude is the null combination $\tilde{F}_0 = i\sqrt{\epsilon}(\vec E_0 + i\vec u_k\times\vec E_0)$.
 
 The amplitude is a zero divisor: $\langle\tilde{F}_0\rangle_{\natural} = -\epsilon\,\vec N_0\cdot\vec N_0 = 0$ and $\tilde{F}_0^2 = 0$, and the null four-wavevector annihilates it, $\tilde P_{\Phi}\tilde{F}_0 = 0$, with $\langle\tilde P_{\Phi}\rangle_{\natural} = 0$. A standing wave in the same medium is not null, so the nullness is specific to the single running plane wave. The energy density and flux satisfy $\vec S = cW\vec u_k$ and, on time average, $|\langle\vec S\rangle| = c\langle W\rangle$; the energy–momentum biquaternion is $\tilde{W}_{\Psi} = W(e_t + i\vec u_k)$, it is conserved, $\tilde{\nabla}\tilde{W}_{\Psi} = 0$, and it is itself null, $\langle\tilde{W}_{\Psi}\rangle_{\natural} = 0$. In a dispersive medium the temporal eigenvalue of the gradient is $-\omega/c(\omega)$, the phase velocity is $c(\omega)$, the group velocity is $c_0/(n + \omega\,dn/d\omega)$, and the vacuum limit $c\to c_0$, $Z\to Z_0$, $n\to1$ recovers every statement. Problem 5 extends the same complex vector to harmonic and static fields: the complex amplitude obeys a Helmholtz equation with the radiating kernel $\exp(ikR)/R$, its static limit is the Poisson equation solved by Newton potentials, and throughout the medium enters only through $k = \omega/c$ — the "single constant $c$" interpretation made concrete.
 
@@ -376,8 +376,8 @@ The exercise confirms the parent's plane-wave results on cases the parent did no
 | $c = 1/\sqrt{\epsilon\mu}$, $c_0$ | Speed of light in the medium; in vacuum |
 | $Z = \sqrt{\mu/\epsilon}$, $Z_0$ | Wave impedance of the medium; in vacuum |
 | $n(\omega) = c_0/c(\omega)$ | Refractive index |
-| $\vec k, \omega, \vec u_k = \vec k/\lvert\vec k\rvert$ | Wavevector, angular frequency, unit wavevector |
-| $\tilde P_{\Phi} = \frac{i\omega}{c}e_t + \vec k$ | Four-wavevector biquaternion, in $\mathbb{B}_{\Phi}$ |
+| $\vec k_\Phi, \omega, \vec u_k = \vec k_\Phi/\lvert\vec k_\Phi\rvert$ | Wavevector, angular frequency, unit wavevector |
+| $\tilde P_{\Phi} = \frac{i\omega}{c}e_t + \vec k_\Phi$ | Four-wavevector biquaternion, in $\mathbb{B}_{\Phi}$ |
 | $\tilde{A}_{\Phi} = i\,a'_te_t + \vec A$ | Potential biquaternion |
 | $\vec j = \sqrt{\mu}\,\vec J_{\mathrm{e}} - i\sqrt{\epsilon}\,\vec J_{\mathrm{m}}$ | Complex current of the field equation |
 | $k = \omega/c$ | Wave number |

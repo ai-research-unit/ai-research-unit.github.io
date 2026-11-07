@@ -14,7 +14,7 @@ The article is organised as follows. The next section sets up the two diagrams, 
 
 ### Kinematics
 
-Let the incoming electrons carry four-momenta $p_1,p_2$ and the outgoing electrons $p_3,p_4$, with $p_i^2=m^2$ and $m=m_e$. The algebra is $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, with the scalar unit $e_t$, the three vector units and the central imaginary $i$, as *Algebra and Element Conventions* fixes them.
+Let the incoming electrons carry four-momenta $p_1,p_2$ and the outgoing electrons $p_3,p_4$, with $p_i^2=m^{2}c^{2}$ and $m=m_e$. The algebra is $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, with the scalar unit $e_t$, the three vector units and the central imaginary $i$, as *Algebra and Element Conventions* fixes them.
 
 **The four insertions.** The four vertex insertions are the four actions
 
@@ -31,7 +31,7 @@ $$
 P(p):\ Q\mapsto p_0\,iQ\vec e_x-\sum_{k=1}^3 p_k\,i\vec e_kQ\vec e_y ,
 $$
 
-which is the four-momentum contracted with the insertions of the preceding paragraph. Its square is $(p_0^2-\vec p^2)$ times the identity, and the mass-shell condition is $p_0^2-\vec p^2=m^2$.
+which is the four-momentum contracted with the insertions of the preceding paragraph. Its square is $(p_0^2-\vec p^2)$ times the identity, and the mass-shell condition is $p_0^2-\vec p^{\,2}=m^{2}c^{2}$.
 
 The **Mandelstam variables** are
 
@@ -379,7 +379,7 @@ With every index low only the first keeps a closed form, $\sum_\mu\gamma_\mu\gam
 
 ## Summary
 
-Møller scattering, $e^-e^-\to e^-e^-$, is the tree-level exchange of a photon between two electrons, contributing through $t$-channel and $u$-channel diagrams that combine with the relative minus sign of identical-fermion exchange. The Mandelstam variables satisfy $s+t+u=4m^2$; the spin-summed matrix element is three terms, two of them products of traces over the photon propagators and one the interference, whose sign flips from destructive to constructive at $p^2=m^2/2$; the unpolarized cross section reduces to the Rutherford-like $(1+3\cos^2\theta)/\sin^4\theta$ law at low energy and to $(3+\cos^2\theta)^2/\sin^4\theta$ at high energy. The electroweak $Z$-exchange adds a parity-violating asymmetry of order one hundred parts per billion, measured at SLAC and used to extract the weak mixing angle.
+Møller scattering, $e^-e^-\to e^-e^-$, is the tree-level exchange of a photon between two electrons, contributing through $t$-channel and $u$-channel diagrams that combine with the relative minus sign of identical-fermion exchange. The Mandelstam variables satisfy $s+t+u=4m^2$; the spin-summed matrix element is three terms, two of them products of traces over the photon propagators and one the interference, whose sign flips from destructive to constructive at $p^2=m^{2}c^{2}/2$; the unpolarized cross section reduces to the Rutherford-like $(1+3\cos^2\theta)/\sin^4\theta$ law at low energy and to $(3+\cos^2\theta)^2/\sin^4\theta$ at high energy. The electroweak $Z$-exchange adds a parity-violating asymmetry of order one hundred parts per billion, measured at SLAC and used to extract the weak mixing angle.
 
 In the biquaternion framework the amplitude is the contraction of two material-sector currents — the same current the minimal-coupling article identifies — by the framework's quantized photon propagator. Every vertex is one action written out, $Q\mapsto aQb$; the five actions are the four insertions and the chirality action, and the chirality takes the two values $L$ and $R$, which the external elements carry as subscripts. The mass is a scalar multiple of the unit in the momentum-space equation, and a right multiplication by $-i\vec e_z$ on the conjugate when the same physics is read on the whole algebra. The two structures the framework genuinely owns are the exchange sign, which is the antisymmetry of the mode algebra established by the canonical-quantization article as $(a_{\mathrm{fop}}^{\dagger})^2=0$ and the $\mathbb Z/2$ grading, and crossing symmetry, which is the charge-conjugation real structure $\mathcal C$ on the doubled module. The body uses no array: the traces are traces of composites of the actions, computed from the two multiplier strings, and the older display appears once, at the end, with the dictionary and no derivation. The framework does not evaluate loops, does not supply $Z$ exchange, and makes no framework-specific prediction; the parity-violating asymmetry is quoted as the experimental target that the framework's left-handed coupling must ultimately meet.
 

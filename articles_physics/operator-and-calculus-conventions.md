@@ -13,7 +13,7 @@ The article assumes the base of *Algebra and Element Conventions*, the products 
 **The named operators.** The structural operators take an upright capital letter and carry the element in the subscript, where it keeps its own mark:
 
 | Operator | Glyph |
-|---|---|
+|+-|+-|
 | left multiplication | $L_{\tilde Q_1}(\tilde Q_2)=\tilde Q_1\tilde Q_2$ |
 | right multiplication | $R_{\tilde Q_1}(\tilde Q_2)=\tilde Q_2\tilde Q_1$ |
 | two-sided | $L_{\tilde Q_4}R_{\tilde Q_1}(\tilde Q_2)=\tilde Q_4\tilde Q_2\tilde Q_1$ |
@@ -71,7 +71,7 @@ $$
 **The three properties.** Everything rests on them, and only the third is non-trivial.
 
 | property | statement | residual |
-|---|---|---|
+|+-|+-|+-|
 | involutive | $\natural\circ\natural=\mathrm{id}$ | $0$ |
 | $\mathbb{C}$-linear | $\natural(i\tilde{Ξ}_{\mathrm{sp}})=i\,\natural(\tilde{Ξ}_{\mathrm{sp}})$ | $0$ |
 | anti-automorphism | $(ab)^{\natural}=b^{\natural}a^{\natural}$ | $2.6\times10^{-15}$ over $400$ random complex pairs |
@@ -559,19 +559,19 @@ $$
 
 and the sides are the whole of the content. The time term is a right multiplication by $\vec e_x$ alone; each space term carries $\vec e_k$ on the left and $\vec e_y$ on the right, and the two multipliers are fixed basis elements that select the chiral slots and do not depend on the field. Left and right multiplications commute and the pure units anticommute, $\vec e_x\vec e_y=-\vec e_y\vec e_x$, with $\vec e_x^2=\vec e_y^2=-e_t$, so the cross terms cancel and the square is the d'Alembertian of the material sector, $\Delta-\partial^2/\partial {r'_{t}}^2$. The $i$ of the coordinate derivative is absorbed in the multiplier, $\partial/\partial R_t=-i\,\partial/\partial r'_t$, and no factor is left in front of the derivative; this is the pair read on one element and not a second definition.
 
-**The symbol.** On a plane wave the two gradients act as left multiplication by the momentum element and its conjugate, $\tilde K=i\tilde P_{\Phi}=-(E/c)\,e_t+i\vec p$ with $\tilde K\tilde K^{\natural}=E^2/c^2-\lvert\vec p\rvert^2=p^2$, the four-momentum being $p_0=E/c$; the symbol of the pair is the momentum element divided by $\frac{m\,c}{k_m}$, so that it carries an inverse length like the gradient it stands for,
+**The symbol.** On a plane wave the two gradients act as left multiplication by the momentum element and its conjugate, $i\hbar\tilde K_{\Phi}=i\tilde P_{\Phi}=-(E/c)\,e_t+i\vec p$ with $-\hbar^{2}\tilde K_{\Phi}\tilde K_{\Phi}^{\natural}=E^2/c^2-\lvert\vec p\rvert^2=p^2$, the four-momentum being $p_0=E/c$; the symbol of the pair is the momentum element divided by $\frac{m\,c}{k_m}$, so that it carries an inverse length like the gradient it stands for,
 
 $$
-\mathbb{D}_p:\ (w_L,w_R)\longmapsto\bigl(\tilde K\,w_R,\ \tilde K^{\natural}w_L\bigr),
+\mathbb{D}_p:\ (w_L,w_R)\longmapsto\bigl(i\hbar\tilde K_{\Phi}\,w_R,\ -i\hbar\tilde K_{\Phi}^{\natural}w_L\bigr),
 \qquad
 \mathbb{D}_p^2=\frac{k_m^{2}\,p^{2}}{m^{2}\,c^{2}}\,I ,
 $$
 
-and on one element it reads $\mathbb{D}_p:\tilde X\mapsto \frac{k_m\,i\,E}{m\,c^{2}}\,\tilde X\vec e_x-i\sum_k\frac{k_m\,p_{k}}{m\,c}\,\vec e_k\tilde X\vec e_y$. The square of the element is not the scalar: $\tilde K^2$ has scalar part $E^2+\lvert\vec p\rvert^2$ and a vector part that does not cancel, and only the composition with the conjugate returns $p^2$. On the mass shell $p^2=m^{2}\,c^{2}$, that is $\frac{k_m^{2}\,p^{2}}{m^{2}\,c^{2}}=k_m^{2}$, the symbol of $\mathbb{D}-k_m$ is therefore singular exactly there and nowhere else, and the two chiral slots share the one condition.
+and on one element it reads $\mathbb{D}_p:\tilde X\mapsto \frac{k_m\,i\,E}{m\,c^{2}}\,\tilde X\vec e_x-i\sum_k\frac{k_m\,p_{k}}{m\,c}\,\vec e_k\tilde X\vec e_y$. The square of the element is not the scalar: $-\hbar^{2}\tilde K_{\Phi}^{2}$ has scalar part $E^2+\lvert\vec p\rvert^2$ and a vector part that does not cancel, and only the composition with the conjugate returns $p^2$. On the mass shell $p^2=m^{2}\,c^{2}$, that is $\frac{k_m^{2}\,p^{2}}{m^{2}\,c^{2}}=k_m^{2}$, the symbol of $\mathbb{D}-k_m$ is therefore singular exactly there and nowhere else, and the two chiral slots share the one condition.
 
 **The inverse is a Green matrix.** With $G$ the Green's function of the d'Alembertian, $(\Box-k_m^{2})G=\delta$, the Green matrix of the pair is $\mathcal{S}=(\mathbb{D}+k_m)G$, and $(\mathbb{D}-k_m)\mathcal{S}=(\mathbb{D}^2-m^2)G=\delta I$. The inverse introduces no new object: the scalar mass commutes with $\mathbb{D}$, and the factorization is the algebraic identity $(\mathbb{D}-k_m)(\mathbb{D}+k_m)=\mathbb{D}^2-m^2$.
 
-**The glyph and its marks.** The glyph is $\mathbb{D}$, and it takes a mark for the factor and never for the chart. A subscript names the factor when that factor is not the material gradient — $\mathbb{D}_p$ for the constant momentum covector, which is the symbol — and an element in parentheses is an argument, $\mathbb{D}(\tilde K)$, because a letter on the right without parentheses, $\mathbb{D}\tilde{Ξ}_{\mathrm{sp}}$, is the field acted on. The gradient follows the same rule: $\tilde\nabla$ bare, $\natural$ or a sector label only where a second gradient is in play. The pair is never written $\mathbb{D}_{\mathbb{B}_{\Phi}}$ or $\mathbb{D}^{\natural}$; the sector enters through the coordinate, and the conjugate of the pair is the pair with its two gradients exchanged.
+**The glyph and its marks.** The glyph is $\mathbb{D}$, and it takes a mark for the factor and never for the chart. A subscript names the factor when that factor is not the material gradient — $\mathbb{D}_p$ for the constant momentum covector, which is the symbol — and an element in parentheses is an argument, $\mathbb{D}(i\hbar\tilde K_{\Phi})$, because a letter on the right without parentheses, $\mathbb{D}\tilde{Ξ}_{\mathrm{sp}}$, is the field acted on. The gradient follows the same rule: $\tilde\nabla$ bare, $\natural$ or a sector label only where a second gradient is in play. The pair is never written $\mathbb{D}_{\mathbb{B}_{\Phi}}$ or $\mathbb{D}^{\natural}$; the sector enters through the coordinate, and the conjugate of the pair is the pair with its two gradients exchanged.
 
 **The pair is sector-free.** On $\mathbb{B}_{\Phi}$ and on $\mathbb{B}_{\Psi}$ the operator is the same and only the four derivatives change, $\partial/\partial R_t=-i\,\partial/\partial r'_t$ against $\partial/\partial R_t=\partial/\partial r_t$. Its square follows the d'Alembertian of §*The Quaternionic Bilinear Product, Its Form and Its Norm*: $\Delta-\partial^2/\partial {r'_{t}}^2$ on the material sector and $\partial^2/\partial r_t^2-\Delta|_{\mathbb{B}_{\Psi}}$ on the informational one, and a reader who moves the pair from one sector to the other moves one overall sign and no operator.
 
@@ -662,7 +662,7 @@ The four forms remain four distinct conventions and the norms two, because each 
 ## Summary of Notation
 
 | Symbol | Meaning |
-|---|---|
+|+-|+-|
 | $L_{\tilde Q}, R_{\tilde Q}$ | Left and right multiplication by the element; the glyph of the operator is the glyph of the element |
 | $L_{\tilde Q_4}R_{\tilde Q_1}$ | The two-sided operator, $\tilde Q_2\mapsto\tilde Q_4\tilde Q_2\tilde Q_1$ |
 | $\mathrm{Sd}_{\tilde Q}=L_{\tilde Q}R_{\tilde Q^{*}}$ | The sandwich, the congruence by the element |

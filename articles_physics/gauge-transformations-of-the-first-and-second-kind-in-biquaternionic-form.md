@@ -140,7 +140,7 @@ $$
 
 so the equation is preserved only when $-(\partial/\partial r'_t\,\alpha)\vec N = ic\,(\nabla\alpha)\times\vec N$, which is not an identity. For constant $\alpha$ every derivative of $\alpha$ vanishes and the equation is preserved, which is the rigid duality rotation; for a position-dependent $\alpha$ it is not.
 
-**Check.** On a free plane wave with $\vec k\cdot\vec E_0=0$, $\vec B_0 = \vec k\times\vec E_0/\omega$, the residual $|i\partial/\partial r'_t\,\vec N-c\,\mathrm{rot}\,\vec N|$ is $5.6\times10^{-12}$ at constant phase, which is the finite-difference floor, and $2.4\times10^{-1}$ at the local phase $\alpha = 0.5x-0.3z$, against a field scale of $5.1\times10^{-1}$. The local residual is half the field magnitude: the local transformation is not a symmetry.
+**Check.** On a free plane wave with $\vec k_\Phi\cdot\vec E_0=0$, $\vec B_0 = \vec k_\Phi\times\vec E_0/\omega$, the residual $|i\partial/\partial r'_t\,\vec N-c\,\mathrm{rot}\,\vec N|$ is $5.6\times10^{-12}$ at constant phase, which is the finite-difference floor, and $2.4\times10^{-1}$ at the local phase $\alpha = 0.5x-0.3z$, against a field scale of $5.1\times10^{-1}$. The local residual is half the field magnitude: the local transformation is not a symmetry.
 
 The source uses an infinitesimal $\alpha$, and the objection is not removed by the smallness. The extra terms are first order in the derivatives of $\alpha$, not in $\alpha$ itself, so they do not vanish in the infinitesimal limit; the source's derivation uses the field equation $\nabla F=0$ to discard one term of $\delta \mathrm{Lag}$, and the remaining term, $F^*\cdot(\nabla\alpha)F$, is not a divergence that can be dropped.
 

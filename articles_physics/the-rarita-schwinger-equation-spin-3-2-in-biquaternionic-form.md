@@ -15,9 +15,9 @@ The two subscripts take the two values $L$ and $R$ of *Special Element Conventio
 
 **The calculus is the corpus's and is cited, not restated.** The first-order operator is the biquaternionic gradient $\tilde\nabla$, its quaternion conjugate is $\tilde\nabla^{\natural}$, and the d'Alembertian $\Box$ is the quaternionic norm of the gradient, all three as fixed in *Operator and Calculus Conventions*, §*The Gradient* and §*The Quaternionic Bilinear Product, Its Form and Its Norm*. The pair operator $\mathbb{D}$ and its square are those of §*The Gradient* of the same article, under **The pair operator**. No other letter names a derivative below.
 
-**The gradient does not square to a scalar, and that is why the massive equation is a pair.** With $\tilde K=\\tilde K_0e_t+\\tilde K_x\vec e_x+\\tilde K_y\vec e_y+\\tilde K_z\vec e_z$ the symbol of the gradient, the time unit commutes with the three spatial units and the mixed derivatives are symmetric, so the square keeps a vector part,
+**The gradient does not square to a scalar, and that is why the massive equation is a pair.** With $i\hbar\tilde K_{\Phi}=-\hbar k_{t}^{\prime}\,e_t+i\hbar\vec k_\Phi$ the symbol of the gradient, the time unit commutes with the three spatial units and the mixed derivatives are symmetric, so the square keeps a vector part,
 $$
-\tilde K^2=\bigl(\\tilde K_0^2-\\tilde K_x^2-\\tilde K_y^2-\\tilde K_z^2\bigr)e_t+2\\tilde K_0\bigl(\\tilde K_x\vec e_x+\\tilde K_y\vec e_y+\\tilde K_z\vec e_z\bigr).
+-\hbar^{2}\tilde K_{\Phi}^{2}=\hbar^{2}\bigl(k_{t}^{\prime\,2}+\lvert\vec k_\Phi\rvert^{2}\bigr)e_t-2i\hbar^{2}k_{t}^{\prime}\vec k_\Phi .
 $$
 The computation is a derived form of this article. It says that $\tilde\nabla^2$ is neither a scalar nor the d'Alembertian, so no first-order operator with scalar square exists in this algebra, and a single field carries no mass. The massless equation is one equation on one element, $\tilde\nabla\tilde{Ξ}_{\mathrm{sp}}=0$, and the massive equation is the pair above, whose scalar square is $\Box$.
 
@@ -52,7 +52,7 @@ The Rarita–Schwinger field is a four-vector whose components are Dirac fields:
 
 **The source's own equation** is one antisymmetrized equation: the triple contracted with the derivative and with the field, plus $i\,m$ times the pair contracted with the field. In the algebra it is the three statements of the introduction, and the translation is made once here. The kinetic structure is the **gradient pair**: the antisymmetrized triple contracts the derivative index with the three spatial directions, and the contraction on a component is $\tilde\nabla$ on the $R$ value and $\tilde\nabla^{\natural}$ on the $L$ value. The mass structure is **left multiplication by an element** $\Gamma_{\mu\nu}\in\mathbb{B}$, the table of which is given in §*The Field in the Biquaternion Framework*. Nothing else of the source's composites survives the translation, because nothing else of them is an operator on $\mathbb{B}$.
 
-**The factor $i$ is not a convention.** The source has two writings of the same equation, one with the triple and a real mass term and one with the epsilon combination and an imaginary one. The epsilon combination is $\pm i$ times the triple, the sign being the metric weight of the raised index, so the two writings differ by the right multiplier $\omega$ and an overall sign. Written with a real mass term in place of $i\,m$ the equation has no solutions at all: the sixteen-component momentum-space operator of that display is then invertible on the mass shell, its determinant not vanishing at $k^2=m^2$, while with $\pm i\,m$ it has the four-dimensional kernel of the quartet. The check was run at three masses: the nullity is $4$ with the imaginary mass and $0$ with the real one. The overall sign is then a free convention of the source's writing, and this article keeps the one whose positive-frequency solutions have the rest-frame frequency $\varpi=m$.
+**The factor $i$ is not a convention.** The source has two writings of the same equation, one with the triple and a real mass term and one with the epsilon combination and an imaginary one. The epsilon combination is $\pm i$ times the triple, the sign being the metric weight of the raised index, so the two writings differ by the right multiplier $\omega$ and an overall sign. Written with a real mass term in place of $i\,m$ the equation has no solutions at all: the sixteen-component momentum-space operator of that display is then invertible on the mass shell, its determinant not vanishing at $k^2=m^{2}c^{2}$, while with $\pm i\,m$ it has the four-dimensional kernel of the quartet. The check was run at three masses: the nullity is $4$ with the imaginary mass and $0$ with the real one. The overall sign is then a free convention of the source's writing, and this article keeps the one whose positive-frequency solutions have the rest-frame frequency $\varpi=m$.
 
 The equation is the Euler–Lagrange equation of the Rarita–Schwinger Lagrangian, whose kinetic term is the same antisymmetrized combination and whose mass term is the antisymmetrized pair, up to an overall normalisation that is a convention. The index structure is fixed by the requirement that the equation be first order and that its free solutions carry spin $\tfrac32$. No first-order equation for a single lower-spin field can do that: the two-index structure is necessary, and the antisymmetrizations are what make the equation carry an irreducible spin-$\tfrac32$ rather than a reducible sum. The Lagrangian also shows where the mass term sits: it is the antisymmetrized pair, not the metric term $\varepsilon_\mu\delta_{\mu\nu}$, and this is what distinguishes the spin-$\tfrac32$ mass term from the Proca mass term $\tfrac12m^2\sum_\mu A_\mu A_\mu$.
 
@@ -205,7 +205,7 @@ and the vector condition removes exactly the spin-$\tfrac12$ piece of dimension 
 
 *At generic lightlike momenta*: the nullity is six, the four-dimensional space of pure-gauge modes $\tilde{Ξ}_{\mathrm{sp},\mu}\propto\partial/\partial x_\mu\epsilon$ is a subspace, the divergence vanishes on the whole solution space, the trace does not, and adjoining the trace leaves four. The trace values of the solutions span a space of dimension two, which is the space of trace shifts the gauge transformation produces.
 
-*In the algebra*: the trace map has rank four on the sixteen complex components. On a null momentum the symbol of the gradient, $\tilde K=\\tilde K_0e_t+\\tilde K_x\vec e_x+\\tilde K_y\vec e_y+\\tilde K_z\vec e_z$, is a zero divisor. The null condition is its quaternion norm, $\tilde K\tilde K^{\natural}=\\tilde K_0^2+\\tilde K_x^2+\\tilde K_y^2+\\tilde K_z^2=0$, which for $\\tilde K_0=i\varpi$ and real $\vec k$ is $\varpi^2=\vec k^2$ and not $\varpi^2=-\vec k^2$. Then left multiplication by $\tilde K$ has rank two and a two-dimensional kernel, checked on four independent null momenta. On a non-null momentum the same left multiplication has rank four and no kernel. That kernel is where the two helicities live, and it is the algebraic reason the massless count is the count it is.
+*In the algebra*: the trace map has rank four on the sixteen complex components. On a null momentum the symbol of the gradient, $i\hbar\tilde K_{\Phi}=-\hbar k_{t}^{\prime}\,e_t+i\hbar\vec k_\Phi$, is a zero divisor. The null condition is its quaternion norm, $-\hbar^{2}\tilde K_{\Phi}\tilde K_{\Phi}^{\natural}=\hbar^{2}\bigl(k_{t}^{\prime\,2}-\lvert\vec k_\Phi\rvert^{2}\bigr)=0$, which is $k_{t}^{\prime\,2}=\lvert\vec k_\Phi\rvert^{2}$, that is $\varpi^{2}=c^{2}\vec k_\Phi^{\,2}$ at $k_m=0$, and not $k_{t}^{\prime\,2}=-\lvert\vec k_\Phi\rvert^{2}$. Then left multiplication by $i\hbar\tilde K_{\Phi}$ has rank two and a two-dimensional kernel, checked on four independent null momenta. On a non-null momentum the same left multiplication has rank four and no kernel. That kernel is where the two helicities live, and it is the algebraic reason the massless count is the count it is.
 
 *The transverse map.* The map $T$ of §*The Transverse Condition on the Vector Index* was checked on fifty generic families of three components: it is unchanged by a second application to $3\times10^{-16}$, it annihilates every longitudinal family $\tilde\xi_k=\vec e_k\tilde\zeta$, it fixes every family with $\sum_k\vec e_k\tilde\xi_k=0$, and its rank over the vector index is two.
 
@@ -257,9 +257,9 @@ $$
 $$
 with $\tilde Q=x_0e_t+\sum_k x_k\vec e_k$ the coordinate element and $\tilde P_{\Phi}=p_0e_t+\sum_k p_k\vec e_k$ its conjugate momentum, the Dirac equation on the component requires $\tilde P_{\Phi}\tilde P_{\Phi}^{\natural}= -m^{2}\,c^{2}$ in the normalization of the companion Dirac article, that is,
 $$
-\frac{\varpi^2}{c^2} - \vec k^2 = k_m^{2},
+\frac{\varpi^2}{c^2} - \vec k_\Phi^2 = k_m^{2},
 \qquad\text{i.e.}\qquad
-\varpi^2 = c^2\vec k^2 + c^2k_m^{2},
+\varpi^2 = c^2\vec k_\Phi^2 + c^2k_m^{2},
 $$
 the same physical massive shell as the Proca field. The trace constraint and the subsidiary conditions then reduce the sixteen components to the four states of the quartet, with the three-momentum on the shell. The dispersion relation is therefore common to the massive spin-one and spin-$\tfrac32$ fields, as it must be: the mass shell is a property of the representation's Casimir and not of the index structure. Here $k_m=mc/\hbar$ is the mass wave number, the inverse of the mass length.
 
@@ -268,7 +268,7 @@ the same physical massive shell as the Proca field. The trace constraint and the
 **The three field equations of this subcategory and its lower-spin neighbours form a sequence**, and the sequence is the clearest statement of what the biquaternion framework does and does not carry natively.
 
 | Field | Standard carrier | Components | Constraints | Physical components |
-|---|---|---|---|---|
+|+-|+-|+-|+-|+-|
 | Dirac, spin $\tfrac12$ | a Dirac field | $4$ | the equation alone, removing $2$ | $2$ |
 | Proca, spin $1$ | four-vector | $4$ | Lorenz, removing $1$ | $3$ |
 | Rarita–Schwinger, spin $\tfrac32$ | four-vector of Dirac fields | $16$ | trace and subsidiary, removing $12$ | $4$ |
@@ -313,7 +313,7 @@ The field is a tensor product of the algebra's four-vector structure and its Dir
 ## Summary of Notation
 
 | Symbol | Meaning |
-|---|---|
+|+-|+-|
 | $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ | Biquaternion algebra |
 | $e_t=1,\vec e_x,\vec e_y,\vec e_z$ | Quaternion basis, $\vec e_k^2=-e_t$ |
 | $i$ | Central scalar imaginary of $\mathbb{B}$, $i^2=-1$ |
@@ -321,7 +321,7 @@ The field is a tensor product of the algebra's four-vector structure and its Dir
 | $\tilde\nabla$, $\tilde\nabla^{\natural}$ | The gradient and its quaternion conjugate; the only first-order operators of the article |
 | $\Box$ | The d'Alembertian, the quaternionic norm of the gradient |
 | $\mathbb{D}$ | The pair operator of *Operator and Calculus Conventions*, §*The Pair Operator and Its Symbol* |
-| $\tilde K$ | Symbol of the gradient, $\\tilde K_0e_t+\\tilde K_x\vec e_x+\\tilde K_y\vec e_y+\\tilde K_z\vec e_z$ |
+| $i\hbar\tilde K_{\Phi}$ | Symbol of the gradient, $-\hbar k_{t}^{\prime}\,e_t+i\hbar\vec k_\Phi$ |
 | $\omega=-\vec e_z$, $\omega^2=-e_t$ | The right multiplier that carries the source's $i$; eigenvalue $+i$ on the $L$ value and $-i$ on the $R$ value |
 | $e_t$, $i\vec e_k$ | The four units that square to $+e_t$; the images of the source's four generators |
 | $\tilde{Ξ}_{\mathrm{sp},\mu}\in\mathbb{B}$ | Biquaternion-valued components of the field, $\mu=0,1,2,3$ |

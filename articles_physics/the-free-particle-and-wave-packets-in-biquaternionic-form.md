@@ -88,16 +88,16 @@ lies in the **material sector**, as every generator of a $*$-unitary flow does i
 Take the plane-wave ansatz
 
 $$
-\tilde{Ξ}_{\mathrm{sp},\vec k}(r'_t, r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z) = \xi\, \exp(\,i(\vec k\cdot(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z) - \omega r'_t)),
+\tilde{Ξ}_{\mathrm{sp},\vec k_\Phi}(r'_t, r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z) = \xi\, \exp(\,i(\vec k_\Phi\cdot(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z) - \omega r'_t)),
 \qquad
-\xi \in \mathbb{B}\tilde\Pi \ \text{constant}, \qquad \vec k \in \mathbb{R}^3,
+\xi \in \mathbb{B}\tilde\Pi \ \text{constant}, \qquad \vec k_\Phi \in \mathbb{R}^3,
 $$
 
-so that $\vec k = k_1 \vec e_x + k_2 \vec e_y + k_3 \vec e_z$ is a real quaternion. The exponential is a central element of $\mathbb{B}$, because its exponent is a purely imaginary scalar. Substitution gives
+so that $\vec k_\Phi = k_1 \vec e_x + k_2 \vec e_y + k_3 \vec e_z$ is a real quaternion. The exponential is a central element of $\mathbb{B}$, because its exponent is a purely imaginary scalar. Substitution gives
 
-$$\frac{m\,c\,i}{k_m}\partial/\partial r'_t \tilde{Ξ}_{\mathrm{sp},\vec k} =\frac{m\,c\,\omega\,\tilde{Ξ}_{\mathrm{sp},\vec k}}{k_m},
+$$\frac{m\,c\,i}{k_m}\partial/\partial r'_t \tilde{Ξ}_{\mathrm{sp},\vec k_\Phi} =\frac{m\,c\,\omega\,\tilde{Ξ}_{\mathrm{sp},\vec k_\Phi}}{k_m},
 \qquad
-H \tilde{Ξ}_{\mathrm{sp},\vec k} =\frac{m\,c^{2}\,k^{2}}{2\,k_m^{2}}\,\tilde{Ξ}_{\mathrm{sp},\vec k},
+H \tilde{Ξ}_{\mathrm{sp},\vec k_\Phi} =\frac{m\,c^{2}\,k^{2}}{2\,k_m^{2}}\,\tilde{Ξ}_{\mathrm{sp},\vec k_\Phi},
 $$
 
 so the equation is satisfied for every constant $\xi$ provided
@@ -105,28 +105,28 @@ so the equation is satisfied for every constant $\xi$ provided
 $$
 \boxed{\;\frac{m\,c\,\omega}{k_m}=\frac{m\,c^{2}\,k^{2}}{2\,k_m^{2}}
 \qquad\Longleftrightarrow\qquad
-\omega(\vec k) = \frac{c k^2}{2\,k_m}\;}.
+\omega(\vec k_\Phi) = \frac{c k^2}{2\,k_m}\;}.
 $$
 
 Two features of the solution are the whole content of the plane-wave section. First, the **energy does not depend on $\xi$**: the two components of the spinor are degenerate, because the Hamiltonian is central. Second, the phase is central, so it multiplies both components equally and generates no relative phase. Neither of these is an assumption; both follow from $H \in \mathbb{B}_{C}$.
 
-The momentum acts on the plane wave as a left multiplication by a fixed algebra element. Using $p_k \exp(i\vec k\cdot(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)) =\frac{m\,c\,k_{k}}{k_m}\exp(i\vec k\cdot(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z))$,
+The momentum acts on the plane wave as a left multiplication by a fixed algebra element. Using $p_k \exp(i\vec k_\Phi\cdot(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)) =\frac{m\,c\,k_{k}}{k_m}\exp(i\vec k_\Phi\cdot(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z))$,
 
 $$
-\tilde p\,\tilde{Ξ}_{\mathrm{sp},\vec k} = \sum_k  \vec e_k p_k \tilde{Ξ}_{\mathrm{sp},\vec k}
-=\frac{m\,c}{k_m}\sum_k  k_k \vec e_k\, \tilde{Ξ}_{\mathrm{sp},\vec k}
-=\frac{m\,c\,\vec k\,\tilde{Ξ}_{\mathrm{sp},\vec k}}{k_m},
+\tilde p\,\tilde{Ξ}_{\mathrm{sp},\vec k_\Phi} = \sum_k  \vec e_k p_k \tilde{Ξ}_{\mathrm{sp},\vec k_\Phi}
+=\frac{m\,c}{k_m}\sum_k  k_k \vec e_k\, \tilde{Ξ}_{\mathrm{sp},\vec k_\Phi}
+=\frac{m\,c\,\vec k_\Phi\,\tilde{Ξ}_{\mathrm{sp},\vec k_\Phi}}{k_m},
 $$
 
 and therefore
 
 $$
-\tilde p^{\,2}\tilde{Ξ}_{\mathrm{sp},\vec k} =\frac{m^{2}\,c^{2}\,\vec k^{2}\,\tilde{Ξ}_{\mathrm{sp},\vec k}}{k_m^{2}}= -\frac{m^{2}\,c^{2}\,k^{2}\,\tilde{Ξ}_{\mathrm{sp},\vec k}}{k_m^{2}},
+\tilde p^{\,2}\tilde{Ξ}_{\mathrm{sp},\vec k_\Phi} =\frac{m^{2}\,c^{2}\,\vec k_\Phi^{2}\,\tilde{Ξ}_{\mathrm{sp},\vec k_\Phi}}{k_m^{2}}= -\frac{m^{2}\,c^{2}\,k^{2}\,\tilde{Ξ}_{\mathrm{sp},\vec k_\Phi}}{k_m^{2}},
 \qquad
-\tilde p\,\tilde p^{\natural}\,\tilde{Ξ}_{\mathrm{sp},\vec k} =\frac{m^{2}\,c^{2}\,k^{2}\,\tilde{Ξ}_{\mathrm{sp},\vec k}}{k_m^{2}}.
+\tilde p\,\tilde p^{\natural}\,\tilde{Ξ}_{\mathrm{sp},\vec k_\Phi} =\frac{m^{2}\,c^{2}\,k^{2}\,\tilde{Ξ}_{\mathrm{sp},\vec k_\Phi}}{k_m^{2}}.
 $$
 
-The operator $\frac{m\,c\,\vec k}{k_m}$ is a real quaternion, so $\tilde p$ is diagonalised on the plane waves by left multiplication in the vector slots; the two spinor components share the same eigenvalue. The phase $\exp(i(\vec k\cdot(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)-\omega r'_t))$ is the standard Schrödinger phase; what the biquaternion interpretation adds is that the **imaginary unit in it is the canonical central one**, not a chosen complex structure.
+The operator $\frac{m\,c\,\vec k_\Phi}{k_m}$ is a real quaternion, so $\tilde p$ is diagonalised on the plane waves by left multiplication in the vector slots; the two spinor components share the same eigenvalue. The phase $\exp(i(\vec k_\Phi\cdot(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)-\omega r'_t))$ is the standard Schrödinger phase; what the biquaternion interpretation adds is that the **imaginary unit in it is the canonical central one**, not a chosen complex structure.
 
 ### Dispersion and the location of the wave vector
 
@@ -139,13 +139,13 @@ $$
 and the group velocity, which is the velocity of the packet and the classical velocity, is
 
 $$
-\vec v_g = \frac{\partial\omega}{\partial\vec k} = c\,\vec k/k_m = \frac{\vec p}{m}.
+\vec v_g = \frac{\partial\omega}{\partial\vec k_\Phi} = c\,\vec k_\Phi/k_m = \frac{\vec p}{m}.
 $$
 
 In the framework's interpretation, a plane wave carries a wave **four-vector** in the material sector,
 
 $$
-\tilde K_{\Phi} = \frac{i\omega}{c}\,e_t + \vec k \in \mathbb{B}_{\Phi},
+\tilde K_{\Phi} = \frac{i\omega}{c}\,e_t + \vec k_\Phi \in \mathbb{B}_{\Phi},
 $$
 
 whose biquaternion norm is
@@ -162,7 +162,7 @@ For the non-relativistic dispersion the wave four-vector is **spacelike** for ev
 On a box of side $L$ with periodic boundary conditions, the normalised plane waves are
 
 $$
-\tilde{Ξ}_{\mathrm{sp},\vec k}(r'_t, r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z) = \frac{1}{\sqrt{L^3}}\,\exp(\,i(\vec k\cdot(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)-\omega r'_t))\,\xi,
+\tilde{Ξ}_{\mathrm{sp},\vec k_\Phi}(r'_t, r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z) = \frac{1}{\sqrt{L^3}}\,\exp(\,i(\vec k_\Phi\cdot(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)-\omega r'_t))\,\xi,
 \qquad
 \mathrm{Tr}(\xi^\dagger\xi) = 1,
 $$
@@ -170,13 +170,13 @@ $$
 and the density integrated over the box is one,
 
 $$
-\int_{L^3} d^3r\;\mathrm{Tr}\!\left(\tilde{Ξ}_{\mathrm{sp},\vec k}^{\dagger} \tilde{Ξ}_{\mathrm{sp},\vec k}\right) = 1 .
+\int_{L^3} d^3r\;\mathrm{Tr}\!\left(\tilde{Ξ}_{\mathrm{sp},\vec k_\Phi}^{\dagger} \tilde{Ξ}_{\mathrm{sp},\vec k_\Phi}\right) = 1 .
 $$
 
 In the continuum, with the normalisation factor $(2\pi)^{-3/2}$,
 
 $$
-\int d^3r\;\mathrm{Tr}\!\left(\tilde{Ξ}_{\mathrm{sp},\vec k}^{\dagger} \tilde{Ξ}_{\mathrm{sp},\vec k_2}\right) = (2\pi)^3 \delta^{(3)}(\vec k - \vec k_2).
+\int d^3r\;\mathrm{Tr}\!\left(\tilde{Ξ}_{\mathrm{sp},\vec k_\Phi}^{\dagger} \tilde{Ξ}_{\mathrm{sp},\vec k_2}\right) = (2\pi)^3 \delta^{(3)}(\vec k_\Phi - \vec k_2).
 $$
 
 Two norms must be kept apart here. The **probability density** of a spinor field is
@@ -202,15 +202,15 @@ The zero divisor cone therefore carries the states, while the positive trace for
 The free equation is linear over $\mathbb{C}$, and its coefficients are central, so superpositions of plane waves are solutions:
 
 $$
-\tilde{Ξ}_{\mathrm{sp}}(r'_t, r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z) = \int \frac{d^3k}{(2\pi)^3}\;\tilde{Ξ}_{\mathrm{sp},0}(\vec k)\,\exp(\,i(\vec k\cdot(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z) - \omega(\vec k) r'_t)),
+\tilde{Ξ}_{\mathrm{sp}}(r'_t, r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z) = \int \frac{d^3k}{(2\pi)^3}\;\tilde{Ξ}_{\mathrm{sp},0}(\vec k_\Phi)\,\exp(\,i(\vec k_\Phi\cdot(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z) - \omega(\vec k_\Phi) r'_t)),
 \qquad
-\tilde{Ξ}_{\mathrm{sp},0}(\vec k) \in \mathbb{B}\tilde\Pi .
+\tilde{Ξ}_{\mathrm{sp},0}(\vec k_\Phi) \in \mathbb{B}\tilde\Pi .
 $$
 
-The amplitudes $\tilde{Ξ}_{\mathrm{sp},0}(\vec k)$ may depend on $\vec k$ and may be general module elements, so in principle the spinor orientation could vary with momentum. The free evolution does not act on that orientation:
+The amplitudes $\tilde{Ξ}_{\mathrm{sp},0}(\vec k_\Phi)$ may depend on $\vec k_\Phi$ and may be general module elements, so in principle the spinor orientation could vary with momentum. The free evolution does not act on that orientation:
 
 $$
-\tilde{Ξ}_{\mathrm{sp}}(\vec k, r'_t) = \tilde{Ξ}_{\mathrm{sp},0}(\vec k)\,\exp(-i\omega(\vec k)r'_t),
+\tilde{Ξ}_{\mathrm{sp}}(\vec k_\Phi, r'_t) = \tilde{Ξ}_{\mathrm{sp},0}(\vec k_\Phi)\,\exp(-i\omega(\vec k_\Phi)r'_t),
 $$
 
 because the phase is central and commutes with the module element. In particular, if the initial condition factorises as $\tilde{Ξ}_{\mathrm{sp}}(0,r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z) = Ξ_0(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)\xi$ with $\xi$ a fixed constant spinor, then
@@ -245,7 +245,7 @@ $$
 \rho = \mathrm{Tr}(\tilde{Ξ}_{\mathrm{sp}}^{\dagger}\tilde{Ξ}_{\mathrm{sp}}).
 $$
 
-For a plane wave of momentum $\frac{m\,c\,\vec k}{k_m}$ the current is $\vec J =\frac{c\,\rho\,\vec k}{k_m}= \rho\,\vec v_g$, as it must be. For a general packet, $\vec J = \rho\,\vec v_g$ holds only where the packet is locally monochromatic, which is the usual situation for a broad packet.
+For a plane wave of momentum $\frac{m\,c\,\vec k_\Phi}{k_m}$ the current is $\vec J =\frac{c\,\rho\,\vec k_\Phi}{k_m}= \rho\,\vec v_g$, as it must be. For a general packet, $\vec J = \rho\,\vec v_g$ holds only where the packet is locally monochromatic, which is the usual situation for a broad packet.
 
 The current is a **material-sector** object in the following sense: it is built from the plain form of the spinor with its gradient, read as the trace pairing, and it is a real spatial vector, hence the spatial part of an element of $\mathbb{B}_{\Phi}$; the density is the trace of a Hermitian element of $\mathbb{B}_{\Psi}$. The continuity equation thus pairs an $\mathbb{B}_{\Psi}$ density with an $\mathbb{B}_{\Phi}$ current, exactly as the sector assignment of the framework requires.
 
@@ -295,15 +295,15 @@ The closed forms above were checked numerically. Using the density-width normali
 The packet integral is dominated, for large $r'_t$ or small $\frac{m\,c}{k_m}$, by the stationary points of its phase. Writing the exponent for the free case,
 
 $$
-\theta_{\mathrm{pha}}(\vec k) = \vec k\cdot(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z) - \frac{c k^2}{2\,k_m}r'_t,
+\theta_{\mathrm{pha}}(\vec k_\Phi) = \vec k_\Phi\cdot(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z) - \frac{c k^2}{2\,k_m}r'_t,
 $$
 
 the stationary condition is
 
 $$
-\nabla_{\vec k}\theta_{\mathrm{pha}} = r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z - c\,\vec k/k_mr'_t = 0
+\nabla_{\vec k_\Phi}\theta_{\mathrm{pha}} = r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z - c\,\vec k_\Phi/k_mr'_t = 0
 \qquad\Longrightarrow\qquad
-(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z) = c\,\vec k/k_mr'_t = \vec v_g r'_t .
+(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z) = c\,\vec k_\Phi/k_mr'_t = \vec v_g r'_t .
 $$
 
 The stationary wave vector is the one whose group velocity carries it to the observation point, so the stationary phase is the **classical free trajectory**: the packet centre moves uniformly at $\vec v_g = \vec p/m$. This is the free-particle case of the general semiclassical statement that the phase of the wave function at a point is the classical action accumulated along the trajectory reaching it. For a packet of mean momentum $\frac{m\,c\,k_{0}}{k_m}$, the phase at the centre is $\frac{c\,k_{0}^{2}\,r'_{t}}{2\,k_m}$ up to the $ik_{t}^{\prime}x$ term, which is the classical action $S_{\mathrm{cl}} = p_0^2r'_t/2m$; the exact Gaussian envelope above carries precisely this phase, as the term $-\frac{c\,i\,k_{0}^{2}\,r'_{t}}{2\,k_m}$ in $Ξ(r_x,r'_t)$ shows.
@@ -316,7 +316,7 @@ The free propagator is the inverse Fourier transform of the free phase,
 
 $$
 \boxed{\;G_{\mathrm{prop},0}(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z, r'_t) = \int  \frac{d^3k}{(2\pi)^3}\,
-\exp(\,i\vec k\cdot(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z) -\frac{c\,i\,k^{2}\,r'_{t}}{2\,k_m})
+\exp(\,i\vec k_\Phi\cdot(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z) -\frac{c\,i\,k^{2}\,r'_{t}}{2\,k_m})
 = \left(\frac{k_m}{2\pi i r'_t}\right)^{3/2}
 \exp\!\left(\frac{im|r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z|^2}{\frac{2\,m\,r'_{t}}{k_m}}\right)\;},
 $$
@@ -391,8 +391,8 @@ Two further structural points belong to this section.
 
 - **Centrality of the free Hamiltonian, made manifest.** The free Hamiltonian is literally a scalar multiple of $e_t$: $H = r_t e_t \in \mathbb{B}_{C}$. The free evolution is therefore a central phase, the free propagator is a central element, and the module factor is frozen. In a representation in which the two components were written as an arbitrary pair, this would have to be checked by hand; here it is a one-line consequence of $H \in \mathbb{B}_{C}$.
 - **The kinetic term as a biquaternion norm.** $T = -\tilde p^2 c/(2\,m\,c) = \tilde p\tilde p^{\natural}/2m$. The sign that makes the kinetic energy positive is the sign of the biquaternion norm on the Hermitian subspace, and the reality of the kinetic term is the statement that $\tilde p$ is Hermitian.
-- **A canonical complex structure.** The phase $\exp(i(\vec k\cdot(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)-\omega r'_t))$ uses the central scalar imaginary, which the algebra supplies; it is not a chosen complex structure. This is the free-particle instance of the property that the path-integral phase is central and canonical.
-- **A material-sector location for the dispersion.** The wave four-vector $\tilde K_{\Phi} = i\omega/c\,e_t + \vec k$ is an element of $\mathbb{B}_{\Phi}$, and its biquaternion norm $\langle\tilde K_{\Phi}\rangle_{\natural}  = k^2(1 -\frac{k^{2}}{4\,k_m^{2}})$ shows that the free non-relativistic solutions are spacelike and off the null cone — the cone that the last article of the subcategory treats as a physical locus.
+- **A canonical complex structure.** The phase $\exp(i(\vec k_\Phi\cdot(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)-\omega r'_t))$ uses the central scalar imaginary, which the algebra supplies; it is not a chosen complex structure. This is the free-particle instance of the property that the path-integral phase is central and canonical.
+- **A material-sector location for the dispersion.** The wave four-vector $\tilde K_{\Phi} = i\omega/c\,e_t + \vec k_\Phi$ is an element of $\mathbb{B}_{\Phi}$, and its biquaternion norm $\langle\tilde K_{\Phi}\rangle_{\natural}  = k^2(1 -\frac{k^{2}}{4\,k_m^{2}})$ shows that the free non-relativistic solutions are spacelike and off the null cone — the cone that the last article of the subcategory treats as a physical locus.
 - **The probability from the trace, not from the biquaternion norm.** The positivity of $\rho = \mathrm{Tr}(\tilde{Ξ}_{\mathrm{sp}}^{\dagger}\tilde{Ξ}_{\mathrm{sp}})$ is a property of the Hermitian form on $\mathbb{B}_{\Psi}$, read through the trace, while the biquaternion norm of the same spinor vanishes identically because the state module lies on the zero divisor cone. The two quadratic structures of the algebra play distinct roles, and the free problem exhibits both at once.
 
 **What remains open.**
@@ -422,9 +422,9 @@ H =\frac{p^{2}}{2\,m}\,e_t =\frac{\tilde{p}\,\tilde{p}^{\natural}}{2\,m} = -\fra
 \tilde p = -\frac{m\,c\,i}{k_m}\nabla,
 $$
 
-and the kinetic energy is the **biquaternion norm of the momentum**. Because $H$ is central, the free dynamics is a scalar dynamics: plane waves $\tilde{Ξ}_{\mathrm{sp},\vec k} = \xi \exp(i(\vec k\cdot(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)-\omega r'_t))$ have the dispersion $\omega =\frac{c\,k^{2}}{2\,k_m}$ for every constant module element $\xi$, the two components are exactly degenerate, the phase is central, and the module orientation is frozen for all time. The generator $-\frac{k_m\,i\,H}{m\,c}$ lies in the material sector $\mathbb{B}_{\Phi}$.
+and the kinetic energy is the **biquaternion norm of the momentum**. Because $H$ is central, the free dynamics is a scalar dynamics: plane waves $\tilde{Ξ}_{\mathrm{sp},\vec k_\Phi} = \xi \exp(i(\vec k_\Phi\cdot(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)-\omega r'_t))$ have the dispersion $\omega =\frac{c\,k^{2}}{2\,k_m}$ for every constant module element $\xi$, the two components are exactly degenerate, the phase is central, and the module orientation is frozen for all time. The generator $-\frac{k_m\,i\,H}{m\,c}$ lies in the material sector $\mathbb{B}_{\Phi}$.
 
-The wave four-vector $\tilde K_{\Phi} = i\omega/c\,e_t + \vec k$ has biquaternion norm $\langle\tilde K_{\Phi}\rangle_{\natural}  = k^2(1-\frac{k^{2}}{4\,k_m^{2}})$, so the free non-relativistic solutions are spacelike and strictly off the null (zero divisor) cone. The probability density is $\rho = \mathrm{Tr}(\tilde{Ξ}_{\mathrm{sp}}^{\dagger}\tilde{Ξ}_{\mathrm{sp}})$, positive definite, while the biquaternion norm of the same spinor vanishes identically because the state module consists of zero divisors; probabilities come from the normalised Hermitian form, read through the trace, not from $\langle\cdot\rangle_{\natural}$. The continuity equation $\partial/\partial r'_t\,\rho + \nabla\cdot\vec J = 0$ holds with $J_k =\frac{c}{2\,k_m\,i}\mathrm{Tr}(\tilde{Ξ}_{\mathrm{sp}}^{\dagger}\partial/\partial R_k\,\tilde{Ξ}_{\mathrm{sp}} - (\partial/\partial R_k\,\tilde{Ξ}_{\mathrm{sp}})^\dagger\tilde{Ξ}_{\mathrm{sp}})$, pairing an $\mathbb{B}_{\Psi}$ density with an $\mathbb{B}_{\Phi}$ current.
+The wave four-vector $\tilde K_{\Phi} = i\omega/c\,e_t + \vec k_\Phi$ has biquaternion norm $\langle\tilde K_{\Phi}\rangle_{\natural}  = k^2(1-\frac{k^{2}}{4\,k_m^{2}})$, so the free non-relativistic solutions are spacelike and strictly off the null (zero divisor) cone. The probability density is $\rho = \mathrm{Tr}(\tilde{Ξ}_{\mathrm{sp}}^{\dagger}\tilde{Ξ}_{\mathrm{sp}})$, positive definite, while the biquaternion norm of the same spinor vanishes identically because the state module consists of zero divisors; probabilities come from the normalised Hermitian form, read through the trace, not from $\langle\cdot\rangle_{\natural}$. The continuity equation $\partial/\partial r'_t\,\rho + \nabla\cdot\vec J = 0$ holds with $J_k =\frac{c}{2\,k_m\,i}\mathrm{Tr}(\tilde{Ξ}_{\mathrm{sp}}^{\dagger}\partial/\partial R_k\,\tilde{Ξ}_{\mathrm{sp}} - (\partial/\partial R_k\,\tilde{Ξ}_{\mathrm{sp}})^\dagger\tilde{Ξ}_{\mathrm{sp}})$, pairing an $\mathbb{B}_{\Psi}$ density with an $\mathbb{B}_{\Phi}$ current.
 
 A Gaussian packet of initial density width $s_0$ evolves to a Gaussian of width $s(r'_t) = s_0\sqrt{1+(\frac{m\,r'_{t}}{2\,k_m\,ms_{0}^{2}})^2}$ whose centre moves at the group velocity $\frac{c\,k_{0}}{k_m}$, with spreading time $\tau = 2s_0^2/(c/k_m)$; the closed forms were verified against direct momentum-space quadrature to relative errors below $10^{-13}$, and the density, mean, and variance to machine precision, on a superposition rather than a single plane wave. The free kernel
 
@@ -450,10 +450,10 @@ is central, is a complex scalar times $e_t$, and satisfies the composition law, 
 | $\tilde p^2 = -p^{2} e_t$, $\tilde p\tilde p^{\natural} = p^{2} e_t$ | Quaternion square and biquaternion norm of the momentum |
 | $H = p^{2} e_t/2m$ | Free Hamiltonian; central |
 | $T = -\tilde p^2 c/(2\,m\,c) = \tilde p\tilde p^{\natural}/2m$ | Kinetic energy as a biquaternion norm |
-| $\tilde{Ξ}_{\mathrm{sp},\vec k} = \xi \exp(i(\vec k\cdot(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)-\omega r'_t))$ | Plane wave; $\xi \in \mathbb{B}\tilde\Pi$ constant |
-| $\omega(\vec k) =\frac{c\,k^{2}}{2\,k_m}$ | Dispersion relation |
-| $\vec v_g = \partial\omega/\partial\vec k =\frac{c\,\vec k}{k_m}$ | Group velocity; classical velocity |
-| $\tilde K_{\Phi} = i\omega/c\,e_t + \vec k$ | Wave four-vector in $\mathbb{B}_{\Phi}$ |
+| $\tilde{Ξ}_{\mathrm{sp},\vec k_\Phi} = \xi \exp(i(\vec k_\Phi\cdot(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)-\omega r'_t))$ | Plane wave; $\xi \in \mathbb{B}\tilde\Pi$ constant |
+| $\omega(\vec k_\Phi) =\frac{c\,k^{2}}{2\,k_m}$ | Dispersion relation |
+| $\vec v_g = \partial\omega/\partial\vec k_\Phi =\frac{c\,\vec k_\Phi}{k_m}$ | Group velocity; classical velocity |
+| $\tilde K_{\Phi} = i\omega/c\,e_t + \vec k_\Phi$ | Wave four-vector in $\mathbb{B}_{\Phi}$ |
 | $\langle\tilde K_{\Phi}\rangle_{\natural} = -\omega^2/c^2 + k^2$ | Biquaternion norm of the wave four-vector; spacelike |
 | $\rho = \mathrm{Tr}(\tilde{Ξ}_{\mathrm{sp}}^{\dagger}\tilde{Ξ}_{\mathrm{sp}})$ | Probability density, from the trace reading of the Hermitian form |
 | $J_k =\frac{c}{2\,k_m\,i}\mathrm{Tr}(\tilde{Ξ}_{\mathrm{sp}}^{\dagger}\partial/\partial R_k\,\tilde{Ξ}_{\mathrm{sp}} - (\partial/\partial R_k\,\tilde{Ξ}_{\mathrm{sp}})^\dagger\tilde{Ξ}_{\mathrm{sp}})$ | Probability current |

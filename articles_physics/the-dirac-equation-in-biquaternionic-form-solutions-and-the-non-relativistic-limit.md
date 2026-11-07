@@ -73,23 +73,23 @@ $$
 and let the corresponding elements of the $L$ value be the images
 
 $$
-\tilde\zeta_{L\pm}=\frac{1}{E\mp|\vec p|}\,\mathcal{D}\tilde\zeta_{R\pm} .
+\tilde\zeta_{L\pm}=\frac{1}{E\mp|\vec p|\,c}\,\mathcal{D}\tilde\zeta_{R\pm} .
 $$
 
-Four statements follow, one line each, and each is a computation of products only. First, $\mathcal{D}\tilde\zeta_{R\pm}=(E\mp|\vec p|)\tilde\zeta_{L\pm}$, which is the definition. Second, $\mathcal{D}\tilde\zeta_{L\pm}=(E\pm|\vec p|)\tilde\zeta_{R\pm}$, because $\mathcal{D}^2=m^2=(E-|\vec p|)(E+|\vec p|)$. Third, $\mathcal{H}\tilde\zeta_{L\pm}=\pm\tilde\zeta_{L\pm}$, because $\mathcal{H}$ commutes with $\mathcal{D}$. Fourth, $\mathrm{Tr}(\tilde\zeta_{L\pm}^{*}\tilde\zeta_{L\pm})=1$ and $\mathrm{Re}\langle\tilde\zeta_{R\pm},\tilde\zeta_{L\pm}\rangle_{\mathrm D}=1$: the image carries the same Hermitian norm as its seed, the Hermitian product of a seed with its image vanishes, and the number the two parts share is the pairing. These four numbers are what the normalization below fixes.
+Four statements follow, one line each, and each is a computation of products only. First, $\mathcal{D}\tilde\zeta_{R\pm}=(E\mp|\vec p|\,c)\tilde\zeta_{L\pm}$, which is the definition. Second, $\mathcal{D}\tilde\zeta_{L\pm}=(E\pm|\vec p|\,c)\tilde\zeta_{R\pm}$, because $\mathcal{D}^2=m^{2}c^{4}=(E-|\vec p|\,c)(E+|\vec p|\,c)$. Third, $\mathcal{H}\tilde\zeta_{L\pm}=\pm\tilde\zeta_{L\pm}$, because $\mathcal{H}$ commutes with $\mathcal{D}$. Fourth, $\mathrm{Tr}(\tilde\zeta_{L\pm}^{*}\tilde\zeta_{L\pm})=1$ and $\mathrm{Re}\langle\tilde\zeta_{R\pm},\tilde\zeta_{L\pm}\rangle_{\mathrm D}=1$: the image carries the same Hermitian norm as its seed, the Hermitian product of a seed with its image vanishes, and the number the two parts share is the pairing. These four numbers are what the normalization below fixes.
 
 **Positive-frequency branch.** Put
 
 $$
-\tilde w_\pm(\vec p)=\sqrt{E\pm|\vec p|}\;\tilde\zeta_{R\pm}+\sqrt{E\mp|\vec p|}\;\tilde\zeta_{L\pm} .
+\tilde w_\pm(\vec p)=\sqrt{E\pm|\vec p|\,c}\;\tilde\zeta_{R\pm}+\sqrt{E\mp|\vec p|\,c}\;\tilde\zeta_{L\pm} .
 $$
 
-Then $\mathcal{D}\tilde w_\pm=m\tilde w_\pm$. On the $L$ part the action returns $\sqrt{E\pm|\vec p|}(E\mp|\vec p|)\tilde\zeta_{L\pm}$, which is $m\sqrt{E\mp|\vec p|}\tilde\zeta_{L\pm}$ because $\sqrt{E+|\vec p|}\sqrt{E-|\vec p|}=m$, and that is $m$ times the $L$ part of $\tilde w_\pm$; on the $R$ part the action returns $m\sqrt{E\pm|\vec p|}\tilde\zeta_{R\pm}$ by the second law, which is $m$ times the $R$ part. The two parts satisfy the two lines of the pair separately, so $\tilde w_\pm$ solves the equation. The four laws above and the three properties of the action were checked on generic elements, and the residuals sit at the round-off level of double precision, of order $10^{-14}$. The $R$ part is the larger one, with amplitude $\sqrt{E+|\vec p|}$, and the ratio of the two amplitudes is $\sqrt{(E+|\vec p|)/(E-|\vec p|)}$.
+Then $\mathcal{D}\tilde w_\pm=m\,c^{2}\tilde w_\pm$. On the $L$ part the action returns $\sqrt{E\pm|\vec p|\,c}(E\mp|\vec p|\,c)\tilde\zeta_{L\pm}$, which is $m\,c^{2}\sqrt{E\mp|\vec p|\,c}\tilde\zeta_{L\pm}$ because $\sqrt{E+|\vec p|\,c}\sqrt{E-|\vec p|\,c}=m$, and that is $m$ times the $L$ part of $\tilde w_\pm$; on the $R$ part the action returns $m\sqrt{E\pm|\vec p|\,c}\tilde\zeta_{R\pm}$ by the second law, which is $m$ times the $R$ part. The two parts satisfy the two lines of the pair separately, so $\tilde w_\pm$ solves the equation. The four laws above and the three properties of the action were checked on generic elements, and the residuals sit at the round-off level of double precision, of order $10^{-14}$. The $R$ part is the larger one, with amplitude $\sqrt{E+|\vec p|\,c}$, and the ratio of the two amplitudes is $\sqrt{(E+|\vec p|\,c)/(E-|\vec p|\,c)}$.
 
 **Negative-frequency branch.** With the same elements,
 
 $$
-\tilde v_\pm(\vec p)=\sqrt{E\pm|\vec p|}\;\tilde\zeta_{R\pm}-\sqrt{E\mp|\vec p|}\;\tilde\zeta_{L\pm} ,\qquad \mathcal{D}\tilde v_\pm=-m\tilde v_\pm ,
+\tilde v_\pm(\vec p)=\sqrt{E\pm|\vec p|\,c}\;\tilde\zeta_{R\pm}-\sqrt{E\mp|\vec p|\,c}\;\tilde\zeta_{L\pm} ,\qquad \mathcal{D}\tilde v_\pm=-m\,c^{2}\tilde v_\pm ,
 $$
 
 by the same two laws with one sign reversed. The relative minus sign is the standard one of the negative-frequency branch, and it is what makes $\langle\tilde v,\tilde v\rangle_{\mathrm D}$ negative below.
@@ -108,20 +108,20 @@ with $E=+\sqrt{\vec p^{\,2}c^2+m^{2}\,c^{4}}$ in both lines: the negative-freque
 **The two parts in the split by the timelike unit.** That split gives the large and the small part of the non-relativistic section, and the ratio of their sizes is
 
 $$
-\frac{\|\tilde{Ξ}\|}{\|\tilde{Ξ}_{\mathrm{sp}}\|}=\sqrt{\frac{E+m}{E-m}}
+\frac{\|\tilde{Ξ}\|}{\|\tilde{Ξ}_{\mathrm{sp}}\|}=\sqrt{\frac{E+m\,c^{2}}{E-m\,c^{2}}}
 $$
 
-for a normalized positive-frequency solution, since the two amplitudes are $\sqrt{E+m}$ and $\sqrt{E-m}$ up to the common normalization. The two ratios, $\sqrt{(E+|\vec p|)/(E-|\vec p|)}$ in the values and $\sqrt{(E+m)/(E-m)}$ in the timelike split, are different numbers and neither may be substituted for the other: the first compares the two chiralities, the second compares the large and the small part.
+for a normalized positive-frequency solution, since the two amplitudes are $\sqrt{E+m\,c^{2}}$ and $\sqrt{E-m\,c^{2}}$ up to the common normalization. The two ratios, $\sqrt{(E+|\vec p|\,c)/(E-|\vec p|\,c)}$ in the values and $\sqrt{(E+m)/(E-m)}$ in the timelike split, are different numbers and neither may be substituted for the other: the first compares the two chiralities, the second compares the large and the small part.
 
 ### The spin label and the helicity–chirality relation
 
 **The spin label.** The two solutions at fixed momentum can be separated by any one of several quantities, and the two in use in the corpus are the helicity $\mathcal{H}$ above and a spin projection along a fixed direction $\vec u$. Helicity is the natural label for a massless particle, because it is invariant under the Lorentz transformations of the frame; for a massive particle it is frame-dependent, and a fixed axis is then the more convenient label. Both are left multiplications by fixed elements and both take two values.
 
-**Chirality and helicity at $m=0$.** In the massless limit $E=|\vec p|$ and the two amplitudes of $\tilde w_+$ collapse to one: the solution is the single element $\sqrt{2E}\,\tilde\zeta_{R+}$, with no $L$ part, and the $L$ value contributes no positive-helicity solution at all. The counting is exact. Setting $m=0$ in the pair leaves $\mathcal{D}\tilde{Ξ}_{\mathrm{sp},R}=0$ and $\mathcal{D}\tilde{Ξ}_{\mathrm{sp},L}=0$, each an equation inside one value; the kernel of $\mathcal{D}$ inside the $R$ value is one-dimensional, spanned by $\tilde\zeta_{R+}$, and the kernel inside the $L$ value is one-dimensional, spanned by $\tilde\zeta_{L-}$. So a solution of one value carries exactly one helicity, and the two values carry opposite ones. This is the precise sense in which a massless fermion of definite helicity has definite chirality. For $m\neq0$ the same element carries both values with unequal amplitudes and no locking: the mass is what makes the two parts visible to each other.
+**Chirality and helicity at $m=0$.** In the massless limit $E=|\vec p|\,c$ and the two amplitudes of $\tilde w_+$ collapse to one: the solution is the single element $\sqrt{2E}\,\tilde\zeta_{R+}$, with no $L$ part, and the $L$ value contributes no positive-helicity solution at all. The counting is exact. Setting $m=0$ in the pair leaves $\mathcal{D}\tilde{Ξ}_{\mathrm{sp},R}=0$ and $\mathcal{D}\tilde{Ξ}_{\mathrm{sp},L}=0$, each an equation inside one value; the kernel of $\mathcal{D}$ inside the $R$ value is one-dimensional, spanned by $\tilde\zeta_{R+}$, and the kernel inside the $L$ value is one-dimensional, spanned by $\tilde\zeta_{L-}$. So a solution of one value carries exactly one helicity, and the two values carry opposite ones. This is the precise sense in which a massless fermion of definite helicity has definite chirality. For $m\neq0$ the same element carries both values with unequal amplitudes and no locking: the mass is what makes the two parts visible to each other.
 
 ## Orthogonality and normalization
 
-The pairing of the field section evaluates on the solutions in closed form. With the normalization fixed above, $\mathrm{Tr}(\tilde\zeta^{*}\tilde\zeta)=1$ and $\mathrm{Re}\langle\tilde\zeta_{R\pm},\tilde\zeta_{L\pm}\rangle_{\mathrm D}=1$ for the four elements, and the same-value pairings vanish, so each solution contributes only its cross term, $2\sqrt{(E+|\vec p|)(E-|\vec p|)}=2m$:
+The pairing of the field section evaluates on the solutions in closed form. With the normalization fixed above, $\mathrm{Tr}(\tilde\zeta^{*}\tilde\zeta)=1$ and $\mathrm{Re}\langle\tilde\zeta_{R\pm},\tilde\zeta_{L\pm}\rangle_{\mathrm D}=1$ for the four elements, and the same-value pairings vanish, so each solution contributes only its cross term, $2\sqrt{(E+|\vec p|\,c)(E-|\vec p|\,c)}=2m$:
 
 $$
 \langle\tilde w_\pm,\tilde w_{\pm'}\rangle_{\mathrm D}=2m\,\delta_{\pm\pm'},\qquad
@@ -269,7 +269,7 @@ $$
 
 and it carries a single value: no part of the other value appears in it, which is what "chirality is conserved at $m=0$" states. The locking of chirality to helicity is the counting above: one solution per value, of opposite helicity, so a massless fermion of definite helicity has definite chirality, and the assignment reverses for the negative-frequency branch.
 
-The mass term is the only term that couples the two values, and it is the reason the locking fails at $m\neq0$: the two laws of the solutions section, $\mathcal{D}\tilde\zeta_{R\pm}=(E\mp|\vec p|)\tilde\zeta_{L\pm}$ and the law with the two elements interchanged, carry the mass through $\sqrt{E+|\vec p|}\sqrt{E-|\vec p|}=m$, and they degenerate exactly when $m=0$. The Weyl fields are therefore the $m\to0$ limit of the solutions constructed above, and the biquaternionic equation reduces in that limit to the pair of one-value equations.
+The mass term is the only term that couples the two values, and it is the reason the locking fails at $m\neq0$: the two laws of the solutions section, $\mathcal{D}\tilde\zeta_{R\pm}=(E\mp|\vec p|\,c)\tilde\zeta_{L\pm}$ and the law with the two elements interchanged, carry the mass through $\sqrt{E+|\vec p|\,c}\sqrt{E-|\vec p|\,c}=m$, and they degenerate exactly when $m=0$. The Weyl fields are therefore the $m\to0$ limit of the solutions constructed above, and the biquaternionic equation reduces in that limit to the pair of one-value equations.
 
 ## The Legacy Pauli Gamma Formulation
 
@@ -326,8 +326,8 @@ The biquaternionic Dirac equation is one equation on one element, $\mathcal{D}(\
 The solutions are explicit. The two helicity elements of one value are the seed, the corresponding elements of the other value are their images under the action, and the two branches are
 
 $$
-\tilde w_\pm=\sqrt{E\pm|\vec p|}\,\tilde\zeta_{R\pm}+\sqrt{E\mp|\vec p|}\,\tilde\zeta_{L\pm},\qquad
-\tilde v_\pm=\sqrt{E\pm|\vec p|}\,\tilde\zeta_{R\pm}-\sqrt{E\mp|\vec p|}\,\tilde\zeta_{L\pm} ,
+\tilde w_\pm=\sqrt{E\pm|\vec p|\,c}\,\tilde\zeta_{R\pm}+\sqrt{E\mp|\vec p|\,c}\,\tilde\zeta_{L\pm},\qquad
+\tilde v_\pm=\sqrt{E\pm|\vec p|\,c}\,\tilde\zeta_{R\pm}-\sqrt{E\mp|\vec p|\,c}\,\tilde\zeta_{L\pm} ,
 $$
 
 with $E=+\sqrt{\vec p^{\,2}c^2+m^{2}\,c^{4}}$. Each branch is two-dimensional over $\mathbb{C}$, the four dimensions the companion article counts. The normalization is covariant, $\langle\tilde w,\tilde w\rangle_{\mathrm D}=2m$ and $\langle\tilde v,\tilde v\rangle_{\mathrm D}=-2m$, with $\langle\tilde w,\tilde v\rangle_{\mathrm D}=0$, and the spin sums $\sum_\pm\tilde w_\pm\langle\tilde w_\pm,\cdot\rangle_{\mathrm D}=\mathcal{D}+m$ and $\sum_\pm\tilde v_\pm\langle\tilde v_\pm,\cdot\rangle_{\mathrm D}=\mathcal{D}-m$ close the set.

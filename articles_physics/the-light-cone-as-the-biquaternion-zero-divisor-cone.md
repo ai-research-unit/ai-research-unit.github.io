@@ -164,12 +164,12 @@ because the cross terms cancel and the spatial part gives $+\sum_{\mu\in\{x,r_y,
 Now let $\tilde P_{\Phi}$ be a four-wavevector, meaning an element of $\mathbb{B}_{\Phi}$ written as
 
 $$
-\tilde P_{\Phi} = i\,\frac{\omega}{c}\,e_t + \vec k,
+\tilde P_{\Phi} = i\,\frac{\omega}{c}\,e_t + \vec k_\Phi,
 \qquad
-\langle\tilde P_{\Phi}\rangle_{\natural} = -\frac{\omega^2}{c^2} + \vec k^2 .
+\langle\tilde P_{\Phi}\rangle_{\natural} = -\frac{\omega^2}{c^2} + \vec k_\Phi^2 .
 $$
 
-For a plane wave $Ξ = f(s)$ with $s = \mathrm{Sc}(\tilde P_{\Phi}\tilde{Q}^{\natural}) = -\omega r'_t/c + \vec k\cdot(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)$, the chain rule gives
+For a plane wave $Ξ = f(s)$ with $s = \mathrm{Sc}(\tilde P_{\Phi}\tilde{Q}^{\natural}) = -\omega r'_t/c + \vec k_\Phi\cdot(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)$, the chain rule gives
 
 $$
 \partial/\partial R_t\,s = \frac{-\omega}{ic} = \frac{i\omega}{c} = K_0,
@@ -182,7 +182,7 @@ so that
 $$
 \Box f(s) = \left[(\partial/\partial R_t\,s)^2 + \sum_{\mu\in\{x,r_y,r_z\}}(\partial/\partial R_\mu s)^2\right] \frac{d^2f}{ds^2}(s)
 + \bigl(\Box s\bigr) \frac{df}{ds}(s)
-= \left[-\frac{\omega^2}{c^2} + \vec k^2\right] \frac{d^2f}{ds^2}(s)
+= \left[-\frac{\omega^2}{c^2} + \vec k_\Phi^2\right] \frac{d^2f}{ds^2}(s)
 = \langle\tilde P_{\Phi}\rangle_{\natural}\,\frac{d^2f}{ds^2}(s),
 $$
 
@@ -194,7 +194,7 @@ $$
 \langle\tilde P_{\Phi}\rangle_{\natural} = 0 .
 $$
 
-A four-wavevector supports a dispersionless wave precisely when it is null, and the null condition is the zero-divisor condition: $\tilde P_{\Phi}\in\mathcal{Z}$. The wave travels at the speed $c$ because $\langle\tilde P_{\Phi}\rangle_{\natural} = 0$ reads $\omega = c|\vec k|$, and it is the biquaternion norm of the wavevector, not a separate postulate, that fixes $c$ as the propagation speed. Equivalently, the lightlike $\tilde P_{\Phi} = i(\omega/c)e_t + \vec k$ with $\omega = c|\vec k|$ has the form $i(\omega/c)(e_t - i\vec u_k) = 2i(\omega/c)\tilde\Pi(-\vec u_k)$, an idempotent multiple, so the null wavevectors are exactly the non-pure zero divisors of the material sector, in parallel with the null positions of the previous section.
+A four-wavevector supports a dispersionless wave precisely when it is null, and the null condition is the zero-divisor condition: $\tilde P_{\Phi}\in\mathcal{Z}$. The wave travels at the speed $c$ because $\langle\tilde P_{\Phi}\rangle_{\natural} = 0$ reads $\omega = c|\vec k_\Phi|$, and it is the biquaternion norm of the wavevector, not a separate postulate, that fixes $c$ as the propagation speed. Equivalently, the lightlike $\tilde P_{\Phi} = i(\omega/c)e_t + \vec k_\Phi$ with $\omega = c|\vec k_\Phi|$ has the form $i(\omega/c)(e_t - i\vec u_k) = 2i(\omega/c)\tilde\Pi(-\vec u_k)$, an idempotent multiple, so the null wavevectors are exactly the non-pure zero divisors of the material sector, in parallel with the null positions of the previous section.
 
 A superposition of three such modes checks the cancellation explicitly. Let
 $$
@@ -255,7 +255,7 @@ The **physical interpretation** of this algebraic boundary is the content of the
 
 **Supplied by the algebra.** The identification of the interval with the biquaternion norm, hence of the light cone with the zero set of the algebra's quadratic form; the criterion that the non-pure zero divisors are exactly the idempotent multiples, with the identity $\tilde{Q}^2 = 2Q_t\tilde{Q}$; the placement of the real light cone in the non-pure family; the factorization $\Box = \tilde{\nabla}\tilde{\nabla}^{\natural}$ and the resulting characterization of null propagation as the kernel of the first-order operator; and the invariance of the cone under rotor conjugation, which is multiplicativity of the biquaternion norm.
 
-**Standard physics transcribed.** The light-cone structure of Minkowski space, the dispersion relation $\omega = c|\vec k|$, the classification of the electromagnetic field as null/radiative when both invariants vanish, and the characteristic-cone interpretation of a second-order hyperbolic operator are all standard. The algebra reproduces them; it does not add a new propagation law.
+**Standard physics transcribed.** The light-cone structure of Minkowski space, the dispersion relation $\omega = c|\vec k_\Phi|$, the classification of the electromagnetic field as null/radiative when both invariants vanish, and the characteristic-cone interpretation of a second-order hyperbolic operator are all standard. The algebra reproduces them; it does not add a new propagation law.
 
 **Interpretation.** The interpretation of the material cone as physical spacetime's causal structure, and of its zero-divisor character as the boundary of the invertible sector, is the framework's structural hypothesis. The mathematics is exact and standard; the physical assignment is the hypothesis.
 
@@ -290,7 +290,7 @@ $$
 
 so $\mathcal{Z}$ meets the material sector exactly in the light cone $|r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z| = c|r'_t|$, and every nonzero real null point is a real multiple of an idempotent $\tilde\Pi(-\vec u_x) = \tfrac12(e_t - i\vec u_x)$. The division subalgebras $\mathbb{B}_{C}$ and $\mathbb{B}_{H}$ contain no zero divisors; the cones in the two Hermitian-type sectors $\mathbb{B}_{\Phi}$ and $\mathbb{B}_{\Psi}$ are the two real faces of $\mathcal{Z}$, of which the material one is the physical light cone.
 
-The cone is also the locus of propagation. Because $\Box = \tilde{\nabla}\tilde{\nabla}^{\natural}$ is the biquaternion norm of the gradient, a four-wavevector $\tilde P_{\Phi}$ satisfies $\Box f(\mathrm{Sc}(\tilde P_{\Phi}\tilde{Q}^{\natural})) = \langle\tilde P_{\Phi}\rangle_{\natural}\frac{d^2f}{ds^2}$ for every smooth $f$; the wave equation holds for every such phase precisely when $\langle\tilde P_{\Phi}\rangle_{\natural} = 0$, which is $\omega = c|\vec k|$ and the zero-divisor condition on $\tilde P_{\Phi}$. The cone is invariant under rotor conjugation because the biquaternion norm is multiplicative, and its three physical guises — the massless shell in momentum space, the null field in field space, and the dispersionless wavevector in wave space — are one algebraic locus.
+The cone is also the locus of propagation. Because $\Box = \tilde{\nabla}\tilde{\nabla}^{\natural}$ is the biquaternion norm of the gradient, a four-wavevector $\tilde P_{\Phi}$ satisfies $\Box f(\mathrm{Sc}(\tilde P_{\Phi}\tilde{Q}^{\natural})) = \langle\tilde P_{\Phi}\rangle_{\natural}\frac{d^2f}{ds^2}$ for every smooth $f$; the wave equation holds for every such phase precisely when $\langle\tilde P_{\Phi}\rangle_{\natural} = 0$, which is $\omega = c|\vec k_\Phi|$ and the zero-divisor condition on $\tilde P_{\Phi}$. The cone is invariant under rotor conjugation because the biquaternion norm is multiplicative, and its three physical guises — the massless shell in momentum space, the null field in field space, and the dispersionless wavevector in wave space — are one algebraic locus.
 
 The light cone is the set on which elements of the biquaternion algebra cease to be invertible; the algebra's failure of division is the algebraic form of the existence of lightlike propagation.
 
@@ -309,8 +309,8 @@ The light cone is the set on which elements of the biquaternion algebra cease to
 | $\tilde\Pi(\vec u) = \tfrac12(e_t + i\vec u)$ | Idempotent; $N=0$, $\tilde\Pi^2=\tilde\Pi$ |
 | $\tilde{Q}^2 = 2Q_t\tilde{Q}$ | Non-pure zero-divisor identity |
 | $\tilde{\nabla}, \tilde{\nabla}^{\natural}$, $\Box = \tilde{\nabla}\tilde{\nabla}^{\natural} = \partial^2/\partial R_t^2+\Delta$ | Gradient, conjugate gradient, d'Alembertian |
-| $\tilde P_{\Phi} = i\frac{\omega}{c}e_t + \vec k$ | Four-wavevector, $\mathbb{B}_{\Phi}$ |
-| $\langle\tilde P_{\Phi}\rangle_{\natural} = -\omega^2/c^2 + \vec k^2$ | Null condition $\Leftrightarrow$ dispersionless wave |
+| $\tilde P_{\Phi} = i\frac{\omega}{c}e_t + \vec k_\Phi$ | Four-wavevector, $\mathbb{B}_{\Phi}$ |
+| $\langle\tilde P_{\Phi}\rangle_{\natural} = -\omega^2/c^2 + \vec k_\Phi^2$ | Null condition $\Leftrightarrow$ dispersionless wave |
 | $\tilde{U}\tilde{U}^{\natural} = e_t$ | Lorentz rotor (unit norm) |
 | $\tilde{Q}\mapsto\tilde{U}\tilde{Q}\tilde{U}^{*}$ | Rotor conjugation; preserves the cone |
 | $c = 1/\sqrt{\epsilon\mu}$, $c_0$ | Speed of light in the medium; in vacuum |

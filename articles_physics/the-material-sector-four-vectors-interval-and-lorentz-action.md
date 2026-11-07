@@ -9,7 +9,7 @@ This article interprets the mathematics of that subspace. It states each result 
 The results used are these.
 
 | Mathematical Content | Source Mathematical Article |
-| --- | --- |
+| +- | +- |
 | The subspace, its basis and its coordinate blocks | [Subspaces and Decompositions](../articles_maths/subspaces-and-decompositions-of-the-biquaternion-algebra.html) |
 | The norm, its signature and the inverse formula | [N-Regularity and N-Degeneracy in the Biquaternion Algebra](../articles_maths/n-regularity-and-n-degeneracy-in-the-biquaternion-algebra.html) |
 | The zero divisors and the cone | [N-Regularity and N-Degeneracy in the Biquaternion Algebra](../articles_maths/n-regularity-and-n-degeneracy-in-the-biquaternion-algebra.html) |
@@ -156,11 +156,11 @@ The interval is therefore the form that a change of **local complex structure** 
 The sector carries the standard four-vectors of relativistic physics. The table gives the element, its components and its invariant.
 
 | Four-vector | Element | Components | Norm |
-| --- | --- | --- | --- |
+| +- | +- | +- | +- |
 | four-position | $\tilde R=\tilde R_\Phi=i r'_t\,e_t+\vec r$ | $(r'_{t},r_x,r_y,r_z)$ | $s^2=-{r'_{t}}^2+\lvert\vec r\rvert^2$ |
 | four-velocity | $\tilde V_{\Phi}=i\gamma c\,e_t+\gamma\vec v$ | $(\gamma c,\gamma\vec v)$ | $-c^2$ |
 | four-momentum | $\tilde P_{\Phi}=i\frac{E}{c}\,e_t+\vec p$ | $(E/c,\vec p)$ | $-m^2c^2$ |
-| four-wavevector | $\tilde K=i\frac{\omega}{c}\,e_t+\vec k$ | $(\omega/c,\vec k)$ | $0$ for light |
+| four-wavevector | $\tilde K_{\Phi}=i\frac{\omega}{c}\,e_t+\vec k_\Phi$ | $(\omega/c,\vec k_\Phi)$ | $0$ for light |
 | four-potential | $\tilde A_{\Phi}=i\,a'_t\,e_t+\vec A$ | $(a'_t,\vec A)$ | gauge-dependent |
 | four-current | $\tilde J_{\Phi}=i c\rho\,e_t+\vec j$ | $(c\rho,\vec j)$ | not fixed |
 | four-force | $\tilde{\mathcal F}_{\Phi,\mathrm{frc}}=i\frac{\gamma\vec f\cdot\vec v}{c}\,e_t+\gamma\vec f$ | $(\gamma\vec f\cdot\vec v/c,\gamma\vec f)$ | not fixed |
@@ -287,7 +287,7 @@ The article interprets the kinematics of the sector: the events, the four-vector
 ## Summary of Notation
 
 | Symbol | Meaning |
-| --- | --- |
+| +- | +- |
 | $\mathbb{B}_{\Phi}$ | the anti-Hermitian subspace, the material sector |
 | $\tilde R_\Phi=i r'_t e_t+\vec r_\Phi$ | a material element; it is its own material part |
 | $\tilde Q^{\flat}=-{}^{*}\tilde Q$ | the reversal, whose fixed space is $\mathbb{B}_{\Phi}$ |

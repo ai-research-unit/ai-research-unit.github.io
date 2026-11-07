@@ -99,7 +99,7 @@ $$
 \vec S=-(\left(\partial\xi/\partial r'_t\right)^{\,*}\nabla\xi+\partial\xi/\partial r'_t\,\nabla\xi^{\,*})=-c^2(\pi\nabla\xi+\pi^\dagger\nabla\xi^{\,*});
 $$
 
-the mass terms cancel between the time derivative of $k_m^{2}|\xi|^2$ and the equation of motion, and the surviving terms are a divergence. The vector $\vec S$ is the **energy flux**. For a single plane wave $\xi=\xi_0\exp(i(\vec k\cdot(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)-\omega r'_t/c))$ one has $\vec S=2\omega\vec k|\xi_0|^2$, directed along the wavevector, so the energy travels the way the wave travels. Integrating the conservation law over a volume and using the vanishing of the flux at infinity makes the four-momentum
+the mass terms cancel between the time derivative of $k_m^{2}|\xi|^2$ and the equation of motion, and the surviving terms are a divergence. The vector $\vec S$ is the **energy flux**. For a single plane wave $\xi=\xi_0\exp(i(\vec k_\Phi\cdot(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)-\omega r'_t/c))$ one has $\vec S=2\omega\vec k_\Phi|\xi_0|^2$, directed along the wavevector, so the energy travels the way the wave travels. Integrating the conservation law over a volume and using the vanishing of the flux at infinity makes the four-momentum
 
 $$
 P_\nu=\frac{1}{c}\int T_{t\nu}\,d^3r

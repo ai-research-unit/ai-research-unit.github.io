@@ -188,31 +188,31 @@ $$
 $$
 
 and because of the factorisation every solution of it is $\nabla^{+}_{\omega}$ applied to a Helmholtz
-potential. Taking the plane potentials $\xi_{j} = \exp(\,i(\vec k,r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z))\vec e_{j}$ with
-$\|\vec k\| = \omega$ and $e_t = 1$, the programme's four modes are, in the corpus's
+potential. Taking the plane potentials $\xi_{j} = \exp(\,i(\vec k_\Phi,r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z))\vec e_{j}$ with
+$\|\vec k_\Phi\| = \omega$ and $e_t = 1$, the programme's four modes are, in the corpus's
 notation and recomputed exactly,
 
 $$
-\boxed{\;\tilde{Ξ}_{\vec k0} = \omega\,\xi\left(1 + i\,\vec u_k\right),
+\boxed{\;\tilde{Ξ}_{\vec k_\Phi0} = \omega\,\xi\left(1 + i\,\vec u_k\right),
 \qquad
-\tilde{Ξ}_{\vec kj} = \xi\left(\omega\,\vec e_{j} - i\,k_{j} + i\,[\vec k,\vec e_{j}]\right),
+\tilde{Ξ}_{\vec kj} = \xi\left(\omega\,\vec e_{j} - i\,k_{j} + i\,[\vec k_\Phi,\vec e_{j}]\right),
 \qquad j = 1,2,3\;}
 $$
 
-with $\xi = \exp(\,i(\vec k,r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z))$ and $\vec u_k = \vec k/\omega$. All four
+with $\xi = \exp(\,i(\vec k_\Phi,r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z))$ and $\vec u_k = \vec k_\Phi/\omega$. All four
 satisfy the free equation, and their content differs in a way the programme reads as physics.
 
 - **The scalar-potential mode is longitudinal and has the two field vectors parallel.** For
   $j = 0$ the mode has
   $\vec E = -(\omega\sin\theta/\sqrt{\epsilon})\,\vec u_k$ and
-  $\vec H = (\omega\cos\theta/\sqrt{\mu})\,\vec u_k$ with $\theta = (\vec k,r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)$,
+  $\vec H = (\omega\cos\theta/\sqrt{\mu})\,\vec u_k$ with $\theta = (\vec k_\Phi,r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)$,
   so both fields lie along the wave vector and are parallel up to a relative sign set by the phase —
   recomputed. No other mode of the construction is of this kind: a potential axis along
-  $\vec k$ reproduces this mode up to a factor, which is the redundancy recorded below. The paper
+  $\vec k_\Phi$ reproduces this mode up to a factor, which is the redundancy recorded below. The paper
   calls it the plane longitudinal harmonic EGM wave.
 - **A vector-potential mode is transverse exactly when its potential is.** Its scalar (ether-density)
   amplitude is $\alpha = -k_{j}\xi$, recomputed, so it vanishes precisely when
-  $\vec e_{j} \perp \vec k$. In that case $\vec E \perp \vec k$, $\vec H \perp \vec k$
+  $\vec e_{j} \perp \vec k_\Phi$. In that case $\vec E \perp \vec k_\Phi$, $\vec H \perp \vec k_\Phi$
   and $\vec E \perp \vec H$ — the **tensional wave** of the paper, with zero ether density —
   while for $k_{j} \neq 0$ the mode carries a longitudinal part. This is where the ether section's
   restriction returns: the tensional wave is precisely the mode whose scalar part vanishes, that is,
@@ -262,8 +262,8 @@ and the free-photon cloud is the same construction with the four plane modes wei
 
 $$
 \mathrm{O}(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z,\tau) = \sum_{j=0}^{3}\int_{\omega_{1}}^{\omega_{2}} \exp(-i\omega\tau)
-\left\{\Omega_{j}(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z,\omega) * \int_{\|\vec k\|=\omega} b_{j}(\vec k,\omega)\,
-\tilde{Ξ}_{\vec kj}(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z,\omega)\,dS(\vec k)\right\} d\omega ,
+\left\{\Omega_{j}(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z,\omega) * \int_{\|\vec k_\Phi\|=\omega} b_{j}(\vec k_\Phi,\omega)\,
+\tilde{Ξ}_{\vec kj}(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z,\omega)\,dS(\vec k_\Phi)\right\} d\omega ,
 \qquad
 \tilde{\Sigma}_{\Psi,\mathrm{O}} = \tfrac12\,\mathrm{O}\,\mathrm{O}^{*} ,
 $$
@@ -276,7 +276,7 @@ speculation that such clouds "apparently describe ball lightning".
 Two structural remarks belong on the free-photon formula, which is the more general of the two. It
 sums the four polarisation types at each frequency, each with its own arbitrary weight *and* its own
 arbitrary biquaternion, and it integrates an arbitrary angular distribution over the sphere
-$\|\vec k\| = \omega$. Every ingredient of a beam of light is therefore an input — the band, the
+$\|\vec k_\Phi\| = \omega$. Every ingredient of a beam of light is therefore an input — the band, the
 angular weights, the polarisation weights and the biquaternions — so the formula describes the set of
 possible light rather than any light, and that is the boundary-condition gap in its light-theoretic
 form. Second, the arbitrary biquaternion enters by **convolution**, which is the *structural
@@ -382,7 +382,7 @@ $\tilde{Ξ}_{\mathrm{sp}} = -\exp(\,i\omega r)/(4\pi r)$. The kernel gives the *
 charge, a spherical wave with amplitudes $\omega/(4\pi r)$ and
 $\sqrt{\omega^{2}+1/r^{2}}/(4\pi r)$, an energy density falling as $r^{-2}$ and a radial flux; the
 homogeneous equation gives **free photons** as the four plane modes
-$\omega\xi(1+i\vec u_k)$ and $\xi(\omega \vec e_{j}-ik_{j}+i[\vec k,\vec e_{j}])$, of which
+$\omega\xi(1+i\vec u_k)$ and $\xi(\omega \vec e_{j}-ik_{j}+i[\vec k_\Phi,\vec e_{j}])$, of which
 the first is longitudinal with the two field vectors parallel and the others are transverse exactly
 when their potentials are; and a source's field is the source convolved with the elementary photon,
 which the paper reads as light, a cloud of elementary photons over a visible band.
@@ -419,9 +419,9 @@ clearest statement of what the programme assumes.
 | $\tilde{Ξ}^{0}$ | Elementary photon, the kernel of the source-to-field map |
 | $\alpha_{0}$, $\tilde F_{0}$ | Scalar amplitude and field-strength amplitude of the elementary photon (the paper writes $\rho_{0}$ and $\|Ξ_{0}\|$) |
 | $\tilde{Ξ}_{\vec kj}$ | Free plane modes, $j = 0,1,2,3$ |
-| $\vec u_k = \vec k/\omega$ | Unit wave direction, $\|\vec k\| = \omega$ |
-| $\xi = \exp(\,i(\vec k,r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z))$ | Plane Helmholtz potential |
-| $\alpha = -k_{j}\xi$ | Ether-density amplitude of the $j$-th mode; zero iff $\vec e_{j}\perp\vec k$ |
+| $\vec u_k = \vec k_\Phi/\omega$ | Unit wave direction, $\|\vec k_\Phi\| = \omega$ |
+| $\xi = \exp(\,i(\vec k_\Phi,r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z))$ | Plane Helmholtz potential |
+| $\alpha = -k_{j}\xi$ | Ether-density amplitude of the $j$-th mode; zero iff $\vec e_{j}\perp\vec k_\Phi$ |
 | $\vec u_x = (r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)/r$ | Radial unit vector |
 | $\Lambda$, $\tilde{\Sigma}_{\Psi,\Lambda}$ | Light and its energy–momentum, a spectral integral over the band |
 | $\mathrm{O}$, $\tilde{\Sigma}_{\Psi,\mathrm{O}}$ | Free-photon cloud and its energy–momentum (the paper writes omicron) |

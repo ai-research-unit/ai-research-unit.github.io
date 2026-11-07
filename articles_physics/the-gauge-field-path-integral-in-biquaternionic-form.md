@@ -145,7 +145,7 @@ and it must be represented by ghost fields: the Gaussian representation of the d
 With the gauge fixed, the action is quadratic in the potential, and the integral is Gaussian. The four units are $e_t,\vec e_x,\vec e_y,\vec e_z$, their pairing is the unit metric $\delta_{\mu\nu}=(1,1,1,1)$, and the momentum components are complex, the time one imaginary and the three space ones real, so the invariant is $p^2=-\sum_\mu p_\mu p_\mu$. Writing the gauge-fixed quadratic form in momentum space as
 
 $$
-S_2 = \tfrac12\int\frac{d^4p}{(2\pi)^4}\;\tilde{A}_{\Phi,\mu}(-p)\,
+S_2 = \tfrac12\int\frac{d^4p}{(2\pi\hbar)^4}\;\tilde{A}_{\Phi,\mu}(-p)\,
 \mathcal F_{\mathrm{med},\mu\nu}(p)\,
 \tilde{A}_{\Phi,\nu}(p),
 \qquad
@@ -218,7 +218,7 @@ The Gaussian integral is fixed in full by adding a source. With the gauge fixed,
 
 $$
 Z[J] = \int\mathcal{D}\tilde{A}_{\Phi}\;\exp\left(iS_2[\tilde{A}_{\Phi}]+i\int d^4r\,\sum_\mu J_\mu A_\mu\right)
-= \left(\det K\right)^{-1/2}\exp\left(-\frac{i}{2}\int\frac{d^4p}{(2\pi)^4}\sum_{\mu,\nu}J_\mu(-p)D_{\mu\nu}(p)J_\nu(p)\right)
+= \left(\det K\right)^{-1/2}\exp\left(-\frac{i}{2}\int\frac{d^4p}{(2\pi\hbar)^4}\sum_{\mu,\nu}J_\mu(-p)D_{\mu\nu}(p)J_\nu(p)\right)
 $$
 
 is evaluated by completing the square, the shift $A_\mu\to A_\mu+\sum_\nu D_{\mu\nu}J_\nu$ being the only ingredient beyond the definition of $D$ as the inverse of $K$. The two-point function is read off by differentiating twice with respect to the source,

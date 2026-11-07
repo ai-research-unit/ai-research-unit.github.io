@@ -87,9 +87,9 @@ So the split of a fermion field into a "particle field" and an "antiparticle fie
 Because the mode expansion is a superposition of classical solutions with operator coefficients, and because the coefficients are constant in $x$, the field satisfies the free equation as an operator identity:
 
 $$
-\boxed{\;\tilde{\nabla}\tilde{Ξ}_{\mathrm{fop},R}=k_m\tilde{Ξ}_{\mathrm{fop},L}},
+\boxed{\;\tilde{\nabla}\tilde{Ξ}_{\mathrm{fop},R}=k_m\tilde{Ξ}_{\mathrm{fop},L},
 \qquad
-\tilde{\nabla}^{\natural}\tilde{Ξ}_{\mathrm{fop},L}=k_m\tilde{Ξ}_{\mathrm{fop},R}}\;},
+\tilde{\nabla}^{\natural}\tilde{Ξ}_{\mathrm{fop},L}=k_m\tilde{Ξ}_{\mathrm{fop},R}\;},
 $$
 
 the one-sided chiral pair, in which both gradients act from the left and the mass is the off-diagonal coupling of the two parts. The pair is one operator equation and not two: read on the pair $\bigl(\tilde{Ξ}_{\mathrm{fop},L},\tilde{Ξ}_{\mathrm{fop},R}\bigr)$ it is $(\mathbb{D}-k_m)$, with $\mathbb{D}$ the pair operator of *Operator and Calculus Conventions*, and the operator adds nothing to the algebra form. It is named here because the two-point function below is stated with it.

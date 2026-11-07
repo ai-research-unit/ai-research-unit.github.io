@@ -379,7 +379,7 @@ It is useful to separate the two kinds of result that the article contains.
 
 - The rotation generators sit in the Lie algebra $\mathbb{B}_{\Phi}$ of the $*$-unitary group; the compact generators are $-\tfrac12 \vec e_k$ inside the real quaternion subspace $\mathbb{B}_{H}$, and the rotation group is the group of unit real quaternions.
 - The spin commutation relations $[\tilde S_{\Psi,i},\tilde S_{\Psi,j}]=\frac{m\,c\,i\,\epsilon_{ijk}\,\tilde{S}_{\Psi,k}}{k_m}$ follow from the quaternion product rule $\vec e_\mu \vec e_\nu=\epsilon_{\mu\nu\lambda}\vec e_\lambda$, the square $\vec e_k^2=-e_t$, and $i^2=-1$; the Hermiticity of $i\vec e_k$ is what places the observables in $\mathbb{B}_{\Psi}$.
-- The commutator of two Hermitian observables is $-2(\vec r_\Psi\times\vec k)$, a pure real quaternion in $\mathbb{B}_{\Phi}\cap\mathbb{B}_{H}$: the commutator of observables is a rotation generator.
+- The commutator of two Hermitian observables is $-2(\vec r_\Psi\times\vec k_\Phi)$, a pure real quaternion in $\mathbb{B}_{\Phi}\cap\mathbb{B}_{H}$: the commutator of observables is a rotation generator.
 - The pure-spin Casimir $\tilde S_{\Psi}^2=\frac{3\,m^{2}\,c^{2}}{4\,k_m^{2}}e_t$ is a central element of $\mathbb{B}$, and its value $\frac{m^{2}\,c^{2}\,s\,(s+1)}{k_m^{2}}$ with $s=\tfrac12$ follows from $(i\vec e_k)^2=+e_t$.
 - The spin eigenstates are the idempotents $\tilde\Pi(\pm\vec u)=\tfrac12(e_t\pm i\vec u)$, and $\sum_k \vec u_k\tilde S_{\Psi,k}$ has eigenvalues $\pm\frac{m\,c}{2\,k_m}$ on them.
 - The spin ladder operators are nilpotent and null in the biquaternion norm, $\tilde S_{\Psi,\pm}^2=0$ and $\langle\tilde S_{\Psi,\pm}\rangle_{\natural}=0$: they are zero divisors of the algebra.

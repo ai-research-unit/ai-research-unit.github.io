@@ -43,7 +43,7 @@ $\lambda$ is an observable and not a generator: its action on an element of the 
 - $\vec S$ is the spin vector of *Angular Momentum and Spin in Biquaternionic Form*. *The Photon in Biquaternionic Form* records that the same glyph is also the Poynting vector of its energy–momentum table. The two are distinguished by the carrier: the spin vector acts on a state, the Poynting vector is a density of the field.
 - $\lambda$ is used below in two senses, and the factorisation sections say which is in force. Here it is the operator, an element of the algebra carrying no index; there it is a spinor, one of the two factors of a null momentum, with a spinor index and a bar on its conjugate.
 
-**Two subscripts, one object.** The subscript names the element whose direction is taken, the third rule of the arrow in *Algebra and Element Conventions*, §*The Remarkable Subspaces of Biquaternions*: $\vec u_p$ for the momentum $\vec p$ and $\vec u_k$ for the wave vector $\vec k$. The two are the same element, since $\vec p=\frac{m\,c\,\vec k}{k_m}$; the subscript records which symbol the article in hand uses, the photon article writing $\vec u_k$ and the Dirac articles $\vec u_p$.
+**Two subscripts, one object.** The subscript names the element whose direction is taken, the third rule of the arrow in *Algebra and Element Conventions*, §*The Remarkable Subspaces of Biquaternions*: $\vec u_p$ for the momentum $\vec p$ and $\vec u_k$ for the wave vector $\vec k_\Phi$. The two are the same element, since $\vec p=\frac{m\,c\,\vec k_\Phi}{k_m}$; the subscript records which symbol the article in hand uses, the photon article writing $\vec u_k$ and the Dirac articles $\vec u_p$.
 
 ## Why the Orbital Part Drops Out
 
@@ -292,7 +292,7 @@ At $m=0$ a second description opens. The null momentum is a zero divisor, hence 
 | Symbol | Meaning |
 |---|---|
 | $\vec u_p=\vec p/\lvert\vec p\rvert$ | The unit along the momentum, declared; a pure real quaternion, $\vec u_p^2=-e_t$ |
-| $\vec u_k=\vec k/\lvert\vec k\rvert$ | The unit along the wave vector; the same element as $\vec u_p$, since $\vec p=\frac{m\,c\,\vec k}{k_m}$ |
+| $\vec u_k=\vec k_\Phi/\lvert\vec k_\Phi\rvert$ | The unit along the wave vector; the same element as $\vec u_p$, since $\vec p=\frac{m\,c\,\vec k_\Phi}{k_m}$ |
 | $\lambda=\vec u_p\cdot\vec S$ | The helicity operator, $\in\mathbb{B}_{\Psi}$, acting by left multiplication; $\frac{m\,c}{k_m}$ times the dimensionless $\tfrac{i}{2}\mathrm{ad}_{\vec u_p}$ on the adjoint |
 | $\vec S$ | The rotation generator read as one vector, $\tilde S_{\Psi,k}=\frac{m\,c}{2\,k_m}i\vec e_k$ on the fundamental carrier |
 | $\tilde\Pi_\pm(\vec u_p)=\tfrac12(e_t\pm i\vec u_p)$ | The idempotents at the momentum axis; $\tilde\Pi_+$ is the vector of the value $+\frac{m\,c}{2\,k_m}$ in $S_+(\vec u_p)$ |
