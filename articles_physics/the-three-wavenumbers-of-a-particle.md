@@ -369,7 +369,7 @@ The energy available in the region has reached the energy needed to make a secon
 **The field at rest still oscillates.** A field of mass $m$ at rest has a time dependence $e^{-i\omega_C t}$ with
 
 $$
-\omega_C =c\,k_m = c\,k_m .
+\omega_C =c\,k_m .
 $$
 
 For the electron this is $7.763\times10^{20}\ \mathrm{rad\,s^{-1}}$, that is $1.236\times10^{20}\ \mathrm{Hz}$. The number is not a curiosity: it is the rest energy divided by $\frac{m\,c}{k_m}$, and it is the rate at which the phase of the field turns in the frame where the particle is at rest.

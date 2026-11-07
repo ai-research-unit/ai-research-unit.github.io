@@ -46,7 +46,7 @@ $$
 
 because the substitution turns $\partial^2/\partial R_t^2$ into $-\partial^2/\partial x_0^2$ and leaves the three spatial derivatives alone. This is the form the rest of the article uses.
 
-Throughout, $c$ is the speed of light in the medium and $\frac{m\,c}{k_m}$ the reduced Planck constant. The mass enters as the length $k_m=mc/\hbar$, and its reciprocal $k_m=mc/\hbar$ is the coefficient of the pair.
+Throughout, $c$ is the speed of light in the medium and $\frac{m\,c}{k_m}$ the reduced Planck constant, $\hbar$. The mass enters as the wave number $k_m=mc/\hbar$, an inverse length and the coefficient of the pair; its reciprocal $1/k_m=\hbar/(mc)$ is the reduced Compton length. The older version of this sentence called $k_m$ a length and then gave $k_m=mc/\hbar$ a second time as its own reciprocal; the expression was right, the word and the reciprocity were not.
 
 ## The Operator and Its Symbol
 
@@ -87,10 +87,54 @@ and the second identity is the symbol of $\Box$. The mass shell is the level set
 $$
 k_0^2-\lvert\vec k\rvert^2=k_m^{2}
 \quad\Longleftrightarrow\quad
-E^2=\vec p^{\,2}c^2+m^2c^4 ,
+E^2=\vec p^{\,2}c^2+m^2c^4 .
 $$
 
-with $k_0=k_E$ and $\vec k=\vec p\,k_{\mathrm{mo}}$. Here $k_{\mathrm{mo}}=\frac{k_m\,p}{m\,c}$ and $k_E=E/(\frac{m\,c^{2}}{k_m})$ are the momentum and energy lengths.
+**The symbol is the wave-number element.** The covector $k_\mu$ of this display is not an independent datum. Divide the four-momentum once by $\hbar$ and both entries appear as coordinates of one element of the algebra,
+
+$$
+\tilde K_{\Phi}=\frac{\tilde P_{\Phi}}{\hbar}=\frac{1}{\hbar}\left(i\,\frac{E}{c}\,e_t+\vec p\right)=i\,k_{t}^{\prime}e_t+\vec k_{\Phi}\ \in\mathbb{B}_{\Phi},
+\qquad
+k_{t}^{\prime}=\frac{E}{\hbar\,c}=\frac{\omega}{c},
+\qquad
+\vec k_{\Phi}=\frac{\vec p}{\hbar},
+$$
+
+so that $k_0=k_{t}^{\prime}$ and $\vec k=\vec k_{\Phi}$ are the temporal and the three spatial coordinates of that one quotient, and the mass shell is one line on them, $\langle\tilde K_{\Phi}\rangle_{\natural}=-k_{t}^{\prime\,2}+k_{\Phi}^{2}=-k_m^{2}$.
+
+The symbol of the gradient and the wave-number element are then not two objects but one object written in two sectors, and the central $-i$ is what carries it across:
+
+$$
+\tilde K=k_0-i\vec k=-i\left(ik_{t}^{\prime}+\vec k_{\Phi}\right)=-i\,\tilde K_{\Phi}.
+$$
+
+The difference is one central factor. The substitution values $k_0$ and $k_j$ are real; the element carries $k_0$ on $e_t$ and $-ik_j$ on $\vec e_j$, while $\tilde K_{\Phi}$ carries $ik_{t}^{\prime}$ on $e_t$ and $+k_{\Phi j}$ on $\vec e_j$; multiplying the whole element by $-i$ converts one into the other term by term. It also moves the sector: $\tilde K_{\Phi}^{\natural}=-\tilde K_{\Phi}$ is anti-Hermitian and $\tilde K^{\natural}=\tilde K$ is Hermitian, so $i\,\mathbb{B}_{\Phi}=\mathbb{B}_{\Psi}$. The norms differ by exactly the sign that $-i$ supplies, since $\natural$ fixes the central $i$ and negates only the vector part, so $\langle-i\tilde K_{\Phi}\rangle_{\natural}=-\langle\tilde K_{\Phi}\rangle_{\natural}$:
+
+$$
+\langle\tilde K\rangle_{\natural}=k_0^2-\lvert\vec k\rvert^2=-\langle\tilde K_{\Phi}\rangle_{\natural}=k_{t}^{\prime\,2}-k_{\Phi}^{2}.
+$$
+
+Thus the $+k_m^{2}$ of this article and the $-k_m^{2}$ that the corpus writes for the same shell are the same number in the two sectors, and no sign convention has to be remembered separately: the central $-i$ carries it.
+
+**The phase, and why the natural sign is there.** The plane wave of this article is $e^{i\theta}$ with $\theta=k_0r'_t-\vec k\cdot\vec r$. The corpus writes every phase as $\mathrm{Sc}(\tilde K_{\Phi}\tilde R_\Phi^{\natural})$, and the natural sign is what makes that work. With $\tilde R_\Phi=i r'_t e_t+\vec r$ the conjugate negates the three spatial coefficients and leaves the temporal one, $\tilde R_\Phi^{\natural}=i r'_t e_t-\vec r$, so
+
+$$
+\mathrm{Sc}\left(\tilde K_{\Phi}\tilde R_{\Phi}^{\natural}\right)
+=\left(i k_{t}^{\prime}\right)\left(i r'_t\right)-\vec k_{\Phi}\cdot\left(-\vec r\right)
+=-k_{t}^{\prime}r'_t+\vec k_{\Phi}\cdot\vec r ,
+$$
+
+which is the corpus phase; call it $\theta_{\Phi}$. The temporal sign is not free: $i\cdot i=-1$ fixes it. So the only way to give the spatial term a plus — the sign a travelling wave needs — is the natural sign on the position. Without it the scalar part is $-k_{t}^{\prime}r'_t-\vec k_{\Phi}\cdot\vec r$, in which both terms are negative and the phase fronts travel along $-\vec k_{\Phi}$. The natural sign is therefore not decoration; it is the step that turns $i^{2}=-1$ into $e^{i(\vec k\cdot\vec r-\omega r'_t)}$.
+
+This article's wave is the other branch, $e^{i(k_0r'_t-\vec k\cdot\vec r)}=e^{-i\theta_{\Phi}}$, and that is exactly why its symbol has the form it has. Differentiating the conjugate phase,
+
+$$
+\tilde\nabla\,e^{-i\theta_{\Phi}}=-i\,\tilde K_{\Phi}\,e^{-i\theta_{\Phi}}=\tilde K\,e^{-i\theta_{\Phi}},
+\qquad
+\tilde K=-i\,\tilde K_{\Phi},
+$$
+
+so the symbol $k_0-i\vec k$ of §*The gradient is the first-order operator* and the choice of branch are one fact, not two. The rest frame shows it directly: there $\vec k_{\Phi}=0$, the two branches differ only in the sign of the temporal term, and every display above reduces to the single number $-k_{t}^{\prime}r'_t$.
 
 The symbol of $\Box$ is the interval of the wave covector, and the mass shell is that symbol set to $k_m^{2}$. The symbol of the gradient is a zero divisor on exactly the same set: left multiplication by $\tilde K$ is invertible off the cone and has rank two on it. The equation $\tilde\nabla\tilde{Ξ}=0$ therefore has a nonzero plane-wave solution exactly where the massless Klein–Gordon equation does, and it halves the solution space there, as §*What the Root Does Not Carry* records.
 
@@ -288,9 +332,10 @@ A field whose value is one complex number has no first-order equation: the four 
 | $\Box$ | d'Alembertian; its Lorentz form is derived in §*The Equation* |
 | $c$ | The speed of light in the medium |
 | $1/k_m$ | The mass length, $\hbar/(mc)$; its reciprocal $k_m=mc/\hbar$ is the inverse reduced Compton wavelength |
-| $k_\mu$ | The wave covector of a plane wave |
+| $k_\mu$ | The wave covector of a plane wave; $k_0=k_{t}^{\prime}=E/(\hbar c)$ and $\vec k=\vec k_{\Phi}=\vec p/\hbar$ are the coordinates of $\tilde K_{\Phi}$ |
+| $\tilde K_{\Phi}=\frac{\tilde P_{\Phi}}{\hbar}=i\,k_{t}^{\prime}e_t+\vec k_{\Phi}$ | The wave-number element, in $\mathbb{B}_{\Phi}$; $\langle\tilde K_{\Phi}\rangle_{\natural}=-k_{t}^{\prime\,2}+k_{\Phi}^{2}=-k_m^{2}$ |
 | $\omega=-\vec e_z$ | The pseudoscalar of the algebra, $\omega^2=-e_t$ |
-| $\tilde K=k_0-i\vec k$ | The symbol of the gradient, an element of $\mathbb{B}$ |
+| $\tilde K=k_0-i\vec k=-i\tilde K_{\Phi}$ | The symbol of the gradient, in $\mathbb{B}_{\Psi}$; the wave-number element carried across by the central $-i$, with $\langle\tilde K\rangle_{\natural}=-\langle\tilde K_{\Phi}\rangle_{\natural}$ |
 | $\ell_M$ | Left multiplication by $M$ |
 | $\tilde{Ξ}$ | The field of the Klein–Gordon equation, an element of $\mathbb{B}$ |
 | $\tilde{Ξ}_{\mathrm{sp},L},\tilde{Ξ}_{\mathrm{sp},R}$ | The two parts of an element, the two values of the label |

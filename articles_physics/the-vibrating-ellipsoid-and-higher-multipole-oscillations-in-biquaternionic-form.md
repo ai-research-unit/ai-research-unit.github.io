@@ -50,10 +50,10 @@ so the rotors form a group, and the map is two-to-one: $\tilde U(\theta + 2\pi,\
 
 ### Angular Velocity
 
-Let the axis be fixed and the angle vary, $\theta = \theta(r'_t)$, and write $\vec\omega = d\theta/dr'_t\,\vec u$ for the angular velocity as a real pure quaternion. Differentiating the rotor gives the kinematic identity
+Let the axis be fixed and the angle vary, $\theta = \theta(r'_t)$, and write $\vec\omega = d\theta/dt'\,\vec u$ for the angular velocity as a real pure quaternion. Differentiating the rotor gives the kinematic identity
 
 $$
-d\tilde U/dr'_t = \tfrac12\,\tilde U\,\vec\omega .
+d\tilde U/dt' = \tfrac12\,\tilde U\,\vec\omega .
 $$
 
 This has been verified numerically: for $\theta(r'_t)$ increasing at rate $\omega$ about $\vec e_z$, the central difference $(\tilde U(r'_t+\delta)-\tilde U(r'_t-\delta))/(2\delta)$ equals $\frac12\tilde U\vec\omega$ to $10^{-8}$ at a step $\delta = 10^{-4}$, the residual falling with $\delta^2$ as a central difference must. For a general rotation the axis may itself move, and the identity is then the body-frame version of the angular-velocity relation; the vector $\vec\omega$ lies in the vector part, as the angular velocity of a rigid body must.
@@ -99,10 +99,10 @@ for $l\geq1$. They are ordinary scalar functions of time — real if real spheri
 For small amplitudes each mode decouples, and each amplitude obeys a harmonic-oscillator equation,
 
 $$
-\left(d^2a_{lm}/d{r'_{t}}^2\right)(r'_t) + \omega_l^2\,a_{lm}(r'_t) = 0 ,
+\left(d^2a_{lm}/d{t'}^2\right)(r'_t) + \omega_l^2\,a_{lm}(r'_t) = 0 ,
 $$
 
-with a frequency $\omega_l$ that depends on the order $l$ and on the body's constitution. For the **spherical** equilibrium the frequency is independent of the azimuthal index $m$, so the $2l+1$ modes of order $l$ are degenerate and the solution is $a_{lm}(r'_t) = A_{lm}\cos(\omega_l r'_t/c + \theta_{\mathrm{pha},lm})$; a non-spherical equilibrium lifts that degeneracy, and the frequency then acquires an $m$-dependence of order the ellipticity. That splitting is the mechanism the rotating-ellipsoid section below makes use of.
+with $t'=r'_t/c$, a frequency $\omega_l$ that depends on the order $l$ and on the body's constitution. For the **spherical** equilibrium the frequency is independent of the azimuthal index $m$, so the $2l+1$ modes of order $l$ are degenerate and the solution is $a_{lm}(r'_t) = A_{lm}\cos(\omega_l r'_t/c + \theta_{\mathrm{pha},lm})$; a non-spherical equilibrium lifts that degeneracy, and the frequency then acquires an $m$-dependence of order the ellipticity. That splitting is the mechanism the rotating-ellipsoid section below makes use of.
 
 The classic and exactly solvable case is **Rayleigh's vibrating liquid drop**, for which the restoring force is surface tension. The frequency of the $l$-th mode is the standard result
 
@@ -255,10 +255,10 @@ obtained from $\vec\nabla\vec v = \sum_{\mu,\nu}\vec e_\mu \vec e_\nu\,\partial/
 
 ### The Energy of a Mode
 
-For small oscillations the energy of a mode is the sum of a kinetic term and a potential term, each quadratic in the amplitude. For a surface-tension drop of density $\rho_m$ and equilibrium radius $R_0$, the potential energy of an $l$-th mode of amplitude $a_l$ is proportional to the change in surface area, and the kinetic energy is proportional to $\rho_m R_0^5\left(da_{l}/dr'_t\right)^{2}$. Writing $E = \frac12 M_l\left(da_{l}/dr'_t\right)^{2} + \frac12 K_l a_l^2$ and identifying the frequency from $\omega_l^2 = K_l/M_l$ gives the Rayleigh value quoted above; the coefficients $M_l$ and $K_l$ follow from the standard surface-area and kinetic-energy integrals of an incompressible mode, and their ratio is the standard result. Each mode is then an independent harmonic oscillator, and the total energy is the sum over the tower,
+For small oscillations the energy of a mode is the sum of a kinetic term and a potential term, each quadratic in the amplitude. For a surface-tension drop of density $\rho_m$ and equilibrium radius $R_0$, the potential energy of an $l$-th mode of amplitude $a_l$ is proportional to the change in surface area, and the kinetic energy is proportional to $\rho_m R_0^5\left(da_{l}/dt'\right)^{2}$. Writing $E = \frac12 M_l\left(da_{l}/dt'\right)^{2} + \frac12 K_l a_l^2$ and identifying the frequency from $\omega_l^2 = K_l/M_l$ gives the Rayleigh value quoted above; the coefficients $M_l$ and $K_l$ follow from the standard surface-area and kinetic-energy integrals of an incompressible mode, and their ratio is the standard result. Each mode is then an independent harmonic oscillator, and the total energy is the sum over the tower,
 
 $$
-E = \sum_{l=2}^{\infty}\sum_{m=-l}^{l}\tfrac12\left(M_l\,\left(da_{lm}/dr'_t\right)^{2} + K_l\,a_{lm}^2\right),
+E = \sum_{l=2}^{\infty}\sum_{m=-l}^{l}\tfrac12\left(M_l\,\left(da_{lm}/dt'\right)^{2} + K_l\,a_{lm}^2\right),
 $$
 
 the $l = 0$ and $l = 1$ terms being omitted for a body that conserves volume and does not translate. The number of oscillators at order $l$ is $2l+1$: the energy sum runs over the same infinite tower as the multipole series, one harmonic oscillator for each independent multipole component.
@@ -309,8 +309,8 @@ In the biquaternion framework the division of labour is exact. The shape mode am
 | $\tilde U = \cos(\theta/2) + \sin(\theta/2)\vec u$ | Rotation rotor, a real unit quaternion |
 | $\vec w_2 = \tilde U\vec w\tilde U^{*}$ | Rotor action on a vector |
 | $R(\theta,\vec u)$ | Rotation matrix in $SO(3)$, the image of $\tilde U$ (distinct from the radius $R_0$) |
-| $\vec\omega = d\theta/dr'_t\,\vec u$ | Angular velocity (body-frame vector) |
-| $d\tilde U/dr'_t = \tfrac12\tilde U\vec\omega$ | Rotor kinematic identity |
+| $\vec\omega = d\theta/dt'\,\vec u$ | Angular velocity (body-frame vector) |
+| $d\tilde U/dt' = \tfrac12\tilde U\vec\omega$ | Rotor kinematic identity |
 | $Y_{lm}$ | Spherical harmonics |
 | $r(\theta,\theta_{\mathrm{azm}},r'_t) = R_0[1+\sum a_{lm}Y_{lm}]$ | Shape function of the deformed body |
 | $a_{lm}(r'_t)$ | Normal-mode amplitude (a scalar) |

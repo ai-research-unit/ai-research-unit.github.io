@@ -82,15 +82,13 @@ $$
 
 so a plane wave is $\tilde{Ξ}_{\mathrm{sp}}\propto\exp\!\big(i\,\mathrm{Sc}(\tilde K_{\Phi}\tilde R_\Phi^{\natural})\big)$ with $\mathrm{Sc}(\tilde K_{\Phi}\tilde R_\Phi^{\natural})=\vec k_{\Phi}\cdot\vec r-k_{t}^{\prime}r'_{t}$, and the exponent is an inverse length against a length, dimensionless by construction with no factor of $c$ left to place by hand.
 
-The division acts on the norm as a division by $\hbar^{2}$, and the mass shell is the statement that the quotient's norm is the mass wave number squared:
+The division acts on the norm as a division by $\hbar^{2}$, and the mass shell is the statement that the quotient's norm is minus the mass wave number squared:
 
 $$
-\langle\tilde K_{\Phi}\rangle_{\natural}=\frac{\tilde{P}_{\Phi}\tilde{P}_{\Phi}^{\natural}}{\hbar^{2}}=-\frac{E^2}{\hbar^{2}c^{2}}+\frac{\vec p^{\,2}}{\hbar^{2}}=-k_{t}^{\prime\,2}+k_{\Phi}^{2}=-k_m^{2},
-\qquad
--k_{t}^{\prime\,2}+k_{\Phi}^{2}=\frac{1}{\hbar^{2}}\left(-\frac{E^2}{c^2}+\vec p^{\,2}\right)=-\frac{m^2c^2}{\hbar^{2}},
+\langle\tilde K_{\Phi}\rangle_{\natural}=\frac{\tilde{P}_{\Phi}\tilde{P}_{\Phi}^{\natural}}{\hbar^{2}}=-\frac{E^2}{(\hbar\,c)^{2}}+\frac{\vec p^{\,2}}{\hbar^{2}}=-k_{t}^{\prime\,2}+k_{\Phi}^{2}=-\frac{m^{2}c^{2}}{\hbar^{2}}=-k_m^{2} .
 $$
 
-and $-\frac{E^2}{c^2}+\vec p^{\,2}=-m^2c^2$ is the four-momentum line the article already had, i.e. $E^2 = \vec p^2c^2 + m^2c^4$. The three statements are one shell, written on the momentum, on the coordinates and in the mass wave number. The Klein–Gordon equation returns the identical condition without any further input: the d'Alembertian acts on the plane wave as multiplication by $-k_{t}^{\prime\,2}+k_{\Phi}^{2}=\langle\tilde K_{\Phi}\rangle_{\natural}$, so $(\Box-k_m^{2})\tilde{Ξ}_{\mathrm{sp}}=0$ is $\langle\tilde K_{\Phi}\rangle_{\natural}-k_m^{2}=0$, that is $k_{t}^{\prime\,2}=k_{\Phi}^{2}+k_m^{2}$. The operator and the element carry the same norm, which is why the shell can be read off either.
+The first equality is the division, the second writes each coefficient, the third names the coordinates, and the fourth is the shell $E^2=\vec p^{\,2}c^2+m^2c^4$, equivalently $\tilde{P}_{\Phi}\tilde{P}_{\Phi}^{\natural}=-m^2c^2$ — the four-momentum statement the earlier version printed on its own, and the same statement the coordinates make. The Klein–Gordon equation then returns it without any further input: the d'Alembertian acts on the plane wave as multiplication by $-k_{t}^{\prime\,2}+k_{\Phi}^{2}=\langle\tilde K_{\Phi}\rangle_{\natural}$, so $(\Box-k_m^{2})\tilde{Ξ}_{\mathrm{sp}}=0$ is $\langle\tilde K_{\Phi}\rangle_{\natural}-k_m^{2}=0$, that is $k_{t}^{\prime\,2}=k_{\Phi}^{2}+k_m^{2}$. The operator and the element carry the same norm, which is why the shell can be read off either.
 
 **What the earlier display of this paragraph did.** It wrote the plane wave as $\exp(-ik_0x_0+i\vec k\cdot(r_x\vec e_x+r_y\vec e_y+r_z\vec e_z))$ with $x_0=r'_t$, and the quotient as $k=\frac{k_m P}{m\,c}$ with components $(k_0,\vec k)=(k_E,\vec p\,k_{\mathrm{mo}})$, naming $k_{\mathrm{mo}}=\frac{k_m p}{m\,c}$ and $k_E=E/(\frac{m\,c^{2}}{k_m})$ the *momentum* and *energy lengths*. The ratio $\frac{k_m}{m\,c}$ is $\frac{1}{\hbar}$, so the number in each entry was right; what was wrong is everything about the reading. The two symbols are inverse lengths, not lengths — their reciprocals are lengths — so the names were the opposite of the content. Neither is a third object: $\frac{k_m p}{m\,c}=\frac{p}{\hbar}=|\vec k_{\Phi}|$ is the modulus of the spatial coordinate, and $E/(\frac{m\,c^{2}}{k_m})=\frac{E}{\hbar\,c}=k_{t}^{\prime}$ is the temporal one, so the two named quantities were the two coordinates of $\tilde K_{\Phi}$ under other letters. And $k_0$ and $\vec k$ were the same coordinates written without the element that produces them, which left the reader to check the exponent $k_0x_0-\vec k\cdot\vec r$ for dimensionlessness on his own. With the element written, the check is not needed: $\mathrm{Sc}(\tilde K_{\Phi}\tilde R_\Phi^{\natural})$ is an inverse length times a length by construction.
 
@@ -381,6 +379,7 @@ Seven problems were solved. (1) The subscript takes two values and there are exa
 | $\tilde\nabla=\sum_\mu e_\mu\,\partial/\partial R_\mu$ | Biquaternionic gradient |
 | $\Box=\tilde\nabla\tilde\nabla^{\natural}$ | The d'Alembertian, the quaternionic norm of the gradient |
 | $D_3=\sum_k\vec e_k\,\partial/\partial R_k$ | Three-dimensional Cauchy–Riemann operator of the two-sided equation |
+| $k_m=m\,c/\hbar$ | Mass wave number; $1/k_m$ the reduced Compton length |
 | $\tilde K_{\Phi}=\frac{\tilde P_{\Phi}}{\hbar}=i\,k_{t}^{\prime}e_t+\vec k_{\Phi}$ | Wave-number biquaternion of Problem 2; $k_{t}^{\prime}=E/(\hbar c)=\omega/c$, $\vec k_{\Phi}=\vec p/\hbar$ |
 | $\langle\tilde K_{\Phi}\rangle_{\natural}=-k_{t}^{\prime\,2}+k_{\Phi}^{2}=-k_m^{2}$ | The mass shell read on the coordinates of $\tilde K_{\Phi}$; $0$ at $m=0$ |
 | $\tilde U_{\Psi,\mathrm b} = \cosh\frac{\theta_{\mathrm{rpd}}}{2}\,e_t+i\sinh\frac{\theta_{\mathrm{rpd}}}{2}\,\vec u_{\mathrm b}$ | Boost rotor ($\mathbb{B}_{\Psi}$) |
