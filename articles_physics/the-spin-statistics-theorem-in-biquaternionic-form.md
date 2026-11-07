@@ -122,9 +122,9 @@ The operator-level content of the theorem is a computation with the parents' fre
 The field is the element-valued map $\tilde{Ξ}_{\mathrm{fop}}:\mathbb{R}^{1,3}\to\mathbb{B}$ of *Canonical Quantization of the Biquaternion Dirac Field*, with the mode expansion
 
 $$
-\tilde{Ξ}_{\mathrm{fop}}(X,r'_t)=\int\!\frac{d^3p}{(2\pi)^3}\,\frac{1}{\sqrt{2E_{\vec p}}}
-\sum_{r=1}^{2}\Big[a_{\mathrm{fop},r}(\vec p)\,\tilde{Ξ}_{\mathrm{sp},+}^{(r)}(\vec p)\,\exp(-ip\cdot x)
-+b_{\mathrm{fop},r}^{\dagger}(\vec p)\,\tilde{Ξ}_{\mathrm{sp},-}^{(r)}(\vec p)\,\exp(+ip\cdot x)\Big],
+\tilde{Ξ}_{\mathrm{fop}}(X,r'_t)=\int\!\frac{d^3p}{(2\pi\hbar)^3}\,\sqrt{\frac{\hbar c}{2E_{\vec p}}}
+\sum_{r=1}^{2}\Big[a_{\mathrm{fop},r}(\vec p)\,\tilde{Ξ}_{\mathrm{sp},+}^{(r)}(\vec p)\,\exp(-ip\cdot x/\hbar)
++b_{\mathrm{fop},r}^{\dagger}(\vec p)\,\tilde{Ξ}_{\mathrm{sp},-}^{(r)}(\vec p)\,\exp(+ip\cdot x/\hbar)\Big],
 $$
 
 where $\tilde{Ξ}_{\mathrm{sp},\pm}^{(r)}(\vec p)$ are the parent's positive- and negative-frequency amplitudes, elements of $\mathbb{B}$, and $\tilde{Ξ}_{\mathrm{fop}}^{\dagger}$ is the Hermitian conjugate.
@@ -166,8 +166,8 @@ for every $\tilde{Ξ}\in\mathbb{B}$. The right multiplication by $i\vec e_x$ is 
 The field is element-valued; the biquaternion content is the algebra on which it is built and the notation, and the mode algebra is imposed. Two choices are available. The **Fermi choice** imposes
 
 $$
-\{a_{\mathrm{fop},r}(\vec p),a_{\mathrm{fop},s}^{\dagger}(\vec k_\Phi)\}=(2\pi)^3\delta_{rs}\delta^{(3)}(\vec p-\vec k_\Phi),\qquad
-\{b_{\mathrm{fop},r}(\vec p),b_{\mathrm{fop},s}^{\dagger}(\vec k_\Phi)\}=(2\pi)^3\delta_{rs}\delta^{(3)}(\vec p-\vec k_\Phi),
+\{a_{\mathrm{fop},r}(\vec p),a_{\mathrm{fop},s}^{\dagger}(\vec k_\Phi)\}=(2\pi\hbar)^3\delta_{rs}\delta^{(3)}(\vec p-\hbar\vec k_\Phi),\qquad
+\{b_{\mathrm{fop},r}(\vec p),b_{\mathrm{fop},s}^{\dagger}(\vec k_\Phi)\}=(2\pi\hbar)^3\delta_{rs}\delta^{(3)}(\vec p-\hbar\vec k_\Phi),
 $$
 
 with all other brackets vanishing, and the **Bose choice** replaces both braces by brackets.
@@ -202,13 +202,13 @@ $$
 \frac{1}{2E_{\vec p}}\Big[2m\cos\theta\,\big(\tilde{Ξ}\,i\vec e_x\big)+2\sin\theta\sum_k p_k\,\vec e_k\big(\tilde{Ξ}\,i\vec e_x\big)\vec e_y\Big].
 $$
 
-Integrating with $\int\frac{d^3p}{(2\pi)^3}\,\frac{\cos\theta}{E_{\vec p}}=F(\vec\Delta)$ and $\int\frac{d^3p}{(2\pi)^3}\,\frac{p_k\sin\theta}{E_{\vec p}}=-\nabla_kF$, and using $(\tilde{Ξ}\,i\vec e_x)\vec e_y=i\tilde{Ξ}\vec e_z$, leaves
+Integrating with $\int\frac{d^3p}{(2\pi\hbar)^3}\,\frac{\cos\theta}{E_{\vec p}}=F(\vec\Delta)$ and $\int\frac{d^3p}{(2\pi\hbar)^3}\,\frac{p_k\sin\theta}{E_{\vec p}}=-\nabla_kF$, and using $(\tilde{Ξ}\,i\vec e_x)\vec e_y=i\tilde{Ξ}\vec e_z$, leaves
 
 $$
 [\tilde{Ξ}_{\mathrm{fop}}(X,r'_t),\tilde{Ξ}_{\mathrm{fop}}^{\dagger}(Y,r'_t)]\,\tilde{Ξ}
 =i\,mF(\vec\Delta)\,\tilde{Ξ}\vec e_x-i\sum_k\vec e_k\,\tilde{Ξ}\vec e_z\,\nabla_kF(\vec\Delta),
 \qquad
-F(\vec\Delta)=\int\!\frac{d^3p}{(2\pi)^3}\,\frac{1}{E_{\vec p}}\cos(\vec p\cdot\vec\Delta),
+F(\vec\Delta)=\int\!\frac{d^3p}{(2\pi\hbar)^3}\,\frac{1}{E_{\vec p}}\cos(\vec p\cdot\vec\Delta),
 $$
 
 with $\nabla_k=\partial/\partial\Delta_k$. For $m>0$ the kernel is $F(\vec\Delta)=\dfrac{m}{2\pi^2|\vec\Delta|}\,K_1\!\big(m|\vec\Delta|\big)$, the modified Bessel function of the second kind. The identity $\int_0^\infty\frac{p}{E}\sin(p\Delta)\,dp=mK_1(m\Delta)$ is the derivative in $\Delta$ of $\int_0^\infty\frac{\cos(p\Delta)}{E}\,dp=K_0(m\Delta)$, and both were checked numerically for $k_m=1$ and $\Delta=0.5,2,5,10$ to thirty digits. Nothing cancels: $F$ is positive and decaying, and $\nabla_kF$ vanishes only where $\Delta_k$ does, so the kernel is nonzero for **every** $\vec\Delta\ne 0$. It decays exponentially for large separations, but it does not vanish. So at equal times and spatial separation $\vec\Delta\ne 0$ — a spacelike separation — the commutator of the spin-$\tfrac12$ field is nonzero, while the anticommutator is zero. The Bose choice fails microcausality for a half-integer-spin field.
@@ -228,14 +228,14 @@ with $\bar{\tilde{Ξ}}_{\mathrm{sp},\mathrm{fop}}(y)=\tilde{Ξ}_{\mathrm{fop}}^{
 The third ingredient is positivity, and it is where the finite algebra has a native statement. With the mode expansion, the Hamiltonian of the free field is
 
 $$
-H=\sum_r\int\!\frac{d^3p}{(2\pi)^3}\,E_{\vec p}\,
+H=\sum_r\int\!\frac{d^3p}{(2\pi\hbar)^3}\,E_{\vec p}\,
 \big(a_{\mathrm{fop},r}^{\dagger}a_{\mathrm{fop},r}-b_{\mathrm{fop},r}b_{\mathrm{fop},r}^{\dagger}\big).
 $$
 
 The sign of the antiparticle term is decided by the bracket. With the **Fermi choice**, $b_{\mathrm{fop}}b_{\mathrm{fop}}^{\dagger}=1-b_{\mathrm{fop}}^{\dagger}b_{\mathrm{fop}}$, so after normal ordering
 
 $$
-H=\sum_r\int\!\frac{d^3p}{(2\pi)^3}\,E_{\vec p}\,
+H=\sum_r\int\!\frac{d^3p}{(2\pi\hbar)^3}\,E_{\vec p}\,
 \big(a_{\mathrm{fop},r}^{\dagger}a_{\mathrm{fop},r}+b_{\mathrm{fop},r}^{\dagger}b_{\mathrm{fop},r}\big)+E_0,
 $$
 
@@ -332,7 +332,7 @@ What the framework establishes is that the two pairings which survive the theore
 | $[\tilde{Ξ}_{\mathrm{fop}},\tilde{Ξ}_{\mathrm{fop}}^{\dagger}]\,\tilde{Ξ}=i\,mF\,\tilde{Ξ}\vec e_x-i\sum_k\vec e_k\,\tilde{Ξ}\vec e_z\,\nabla_kF$ | Nonlocal equal-time commutator acting on a test element $\tilde{Ξ}$ |
 | $F(\vec\Delta)=\frac{m}{2\pi^2|\vec\Delta|}\\mathrm{Ki}_{1}(m|\vec\Delta|)$ | Surviving commutator kernel ($m>0$) |
 | $\Delta_{\mathrm{A}}(x-y)$, $G_{\mathrm{S}}(x-y)$ | Antisymmetric (Pauli–Jordan-type) and symmetric two-point kernels |
-| $H=\sum_r\int\frac{d^3p}{(2\pi)^3}E_{\vec p}(a_{\mathrm{fop},r}^{\dagger}a_{\mathrm{fop},r}+b_{\mathrm{fop},r}^{\dagger}b_{\mathrm{fop},r})+E_0$ | Normal-ordered Hamiltonian (Fermi choice) |
+| $H=\sum_r\int\frac{d^3p}{(2\pi\hbar)^3}E_{\vec p}(a_{\mathrm{fop},r}^{\dagger}a_{\mathrm{fop},r}+b_{\mathrm{fop},r}^{\dagger}b_{\mathrm{fop},r})+E_0$ | Normal-ordered Hamiltonian (Fermi choice) |
 | $\langle\tilde{Q}_1,\tilde{Q}_2\rangle$ | the general plain bilinear form, $\mathrm{Sc}(\tilde{Q}_1\tilde{Q}_2)$ |
 | $\langle\tilde{Q}_1,\tilde{Q}_2\rangle_{*}$ | the general plain sesquilinear form, $\mathrm{Sc}(\tilde{Q}_1\tilde{Q}_2^{*})$; on the diagonal $\langle\tilde{Q}_1,\tilde{Q}_1\rangle_{*}=\sum_\mu\lvert Q_{1\mu}\rvert^{2}$ |
 

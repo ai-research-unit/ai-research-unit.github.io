@@ -5,7 +5,7 @@
 In the second quantization of a free field, two different objects are routinely called "the state", and the biquaternion framework places them in different sectors. The first is a **mode function**: one definite solution of the free wave equation, carrying a definite momentum and a definite spin or polarization label,
 
 $$
-w^{(r)}(\vec p)\,\exp(-ip\cdot x),\qquad v^{(r)}(\vec p)\,\exp(+ip\cdot x),\qquad r=1,2 .
+w^{(r)}(\vec p)\,\exp(-ip\cdot x/\hbar),\qquad v^{(r)}(\vec p)\,\exp(+ip\cdot x/\hbar),\qquad r=1,2 .
 $$
 
 The second is an **excitation**: one quantum occupying such a mode, the state $a_{\mathrm{fop},r}^{\dagger}(\vec p)|0\rangle$, or a superposition of occupations. The mode function says *which* mode; the excitation says *how many* quanta the mode contains. The subject of this article is where each of the two lives in the biquaternion algebra $\mathbb{B}$, and in particular whether the informational sector $\mathbb{B}_{\Psi}$ is their natural home.
@@ -40,12 +40,12 @@ and basis $\{\tilde\Pi_+,\vec\Upsilon_y\}$ for $\mathbb{B}\tilde\Pi_+$, where th
 The Dirac field of the companion articles expands on the spinor module as
 
 $$
-\tilde{Ξ}_{\mathrm{fop}}(x)=\int\!\frac{d^3p}{(2\pi)^3}\frac{1}{\sqrt{2E_{\vec p}}}\sum_{r=1}^{2}
-\Big[a_{\mathrm{fop},r}(\vec p)\,w^{(r)}(\vec p)\,\exp(-ip\cdot x)
-+b_{\mathrm{fop},r}^{\dagger}(\vec p)\,v^{(r)}(\vec p)\,\exp(+ip\cdot x)\Big],
+\tilde{Ξ}_{\mathrm{fop}}(x)=\int\!\frac{d^3p}{(2\pi\hbar)^3}\sqrt{\frac{\hbar c}{2E_{\vec p}}}\sum_{r=1}^{2}
+\Big[a_{\mathrm{fop},r}(\vec p)\,w^{(r)}(\vec p)\,\exp(-ip\cdot x/\hbar)
++b_{\mathrm{fop},r}^{\dagger}(\vec p)\,v^{(r)}(\vec p)\,\exp(+ip\cdot x/\hbar)\Big],
 $$
 
-with the mode operators and spinors of the parent article. Each term of the expansion is a **mode function**: the positive-frequency mode functions are $w^{(r)}(\vec p)\exp(-ip\cdot x)$ and the negative-frequency ones $v^{(r)}(\vec p)\exp(+ip\cdot x)$. Three labels specify a mode function completely — the momentum $\vec p$, the spin index $r$, and the sign of the frequency — and the mode function is a solution of the free equation with those labels.
+with the mode operators and spinors of the parent article. Each term of the expansion is a **mode function**: the positive-frequency mode functions are $w^{(r)}(\vec p)\exp(-ip\cdot x/\hbar)$ and the negative-frequency ones $v^{(r)}(\vec p)\exp(+ip\cdot x/\hbar)$. Three labels specify a mode function completely — the momentum $\vec p$, the spin index $r$, and the sign of the frequency — and the mode function is a solution of the free equation with those labels.
 
 The word *definite* in "definite solution" means that the mode function is a single element of the solution space, not a general superposition. The general solution is the integral over all modes; a mode function is one basis vector of that integral. In the biquaternion interpretation of the parent article, a mode function is the module representative of a biquaternion plane wave $\tilde{Ξ}_{\mathrm{sp},0}\exp(\tilde P_{\Phi}\tilde{Q})$: the four-wavevector $\tilde P_{\Phi}=\frac{m\,c\,(i\omega/c\,e_t+\vec k_\Phi)}{k_m}$ is an element of the material sector $\mathbb{B}_{\Phi}$ (it appears in the table of four-vectors of *The Material Sector: Four-Vectors, Interval and Lorentz Action*), and the amplitude $\tilde{Ξ}_{\mathrm{sp},0}$ is a spinor, i.e. an element of the module $\mathbb{B}\tilde\Pi_+$. Both pieces are therefore objects attached to the material sector and to the module. Neither is an element of the Hermitian subspace $\mathbb{B}_{\Psi}$.
 
@@ -64,7 +64,7 @@ $$
 and the occupation-number operator
 
 $$
-N=\sum_{r}\int\!\frac{d^3p}{(2\pi)^3}\ a_{\mathrm{fop},r}^{\dagger}(\vec p)\,a_{\mathrm{fop},r}(\vec p)
+N=\sum_{r}\int\!\frac{d^3p}{(2\pi\hbar)^3}\ a_{\mathrm{fop},r}^{\dagger}(\vec p)\,a_{\mathrm{fop},r}(\vec p)
 $$
 
 counts the quanta, with $[N,a_{\mathrm{fop},r}^{\dagger}]=+a_{\mathrm{fop},r}^{\dagger}$ and $[N,a_{\mathrm{fop},r}]=-a_{\mathrm{fop},r}$. The excitation is not a solution of the wave equation and is not a mode function; it is a state in the many-particle space, and its defining datum is the integer eigenvalue of $N$.
@@ -98,7 +98,7 @@ The phrase "an excitation and its state" packs three different objects together,
 
 | Object | Definition | Algebraic home |
 |---|---|---|
-| Mode function | A definite solution $w^{(r)}(\vec p)\exp(-ip\cdot x)$ | Spinor module $\mathbb{B}\tilde\Pi_+$ (Dirac); $\mathrm{Vect}(\mathbb{B}_{\Phi})$ (Maxwell polarization) |
+| Mode function | A definite solution $w^{(r)}(\vec p)\exp(-ip\cdot x/\hbar)$ | Spinor module $\mathbb{B}\tilde\Pi_+$ (Dirac); $\mathrm{Vect}(\mathbb{B}_{\Phi})$ (Maxwell polarization) |
 | Excitation operator | $\vec\Upsilon_y$ (or $a_{\mathrm{fop},r}^{\dagger}(\vec p)$) | Neither $\mathbb{B}_{\Psi}$ nor $\mathbb{B}_{\Phi}$; not Hermitian |
 | Occupation state | $\vert n\rangle$, or the density matrix $\tilde{Ϛ}_{\Psi}$ | State vector: the module; density matrix and $\tilde\Pi_-$: $\mathbb{B}_{\Psi}$ (one fermionic mode) |
 
@@ -223,7 +223,7 @@ $\mathbb{B}_{\Psi}$ is a four-dimensional real Hilbert space under the trace pai
 | $\tilde\Pi_+=\tfrac12(e_t+i\vec e_z)$, $\tilde\Pi_-=\tfrac12(e_t-i\vec e_z)$ | Orthogonal idempotents, Peirce idempotents; $i\vec e_z$ is a root of $+1$ |
 | $\vec\Upsilon_x=\tfrac12(i\vec e_x-\vec e_y)$, $\vec\Upsilon_y=\tfrac12(i\vec e_x+\vec e_y)$ | Matrix units, $\vec\Upsilon_x\vec\Upsilon_y=\tilde\Pi_+$, $\vec\Upsilon_y\vec\Upsilon_x=\tilde\Pi_-$, $\vec\Upsilon_x^2=\vec\Upsilon_y^2=0$ |
 | $\mathbb{B}\tilde\Pi_+=\{ \tilde{Ξ}_{\mathrm{sp},1}\tilde\Pi_++\tilde{Ξ}_{\mathrm{sp},2}\vec\Upsilon_y\}$ | Spinor module (one-particle solutions), $\mathbb{B}\tilde\Pi_+\cap\mathbb{B}_{\Psi}=\mathbb{R}\tilde\Pi_+$ |
-| $w^{(r)}(\vec p)\exp(-ip\cdot x)$, $v^{(r)}(\vec p)\exp(+ip\cdot x)$ | Mode functions (positive/negative frequency) |
+| $w^{(r)}(\vec p)\exp(-ip\cdot x/\hbar)$, $v^{(r)}(\vec p)\exp(+ip\cdot x/\hbar)$ | Mode functions (positive/negative frequency) |
 | $a_{\mathrm{fop},r}^{\dagger}(\vec p)$, $a_{\mathrm{fop},r}(\vec p)$ | Excitation (creation) and annihilation operators |
 | $\vec\Upsilon_x=x$, $\vec\Upsilon_y=y$ | One-mode ladder operators in $\mathbb{B}$ |
 | $\tilde\Pi_-=\vec\Upsilon_y\vec\Upsilon_x=\tfrac12(e_t-i\vec e_z)$ | Occupation-number operator (idempotent, in $\mathbb{B}_{\Psi}$) |

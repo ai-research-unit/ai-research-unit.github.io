@@ -322,7 +322,7 @@ $$
 Its Fourier transform is multiplication by $\zeta^2+2t\gamma\cdot\zeta-\lambda^2$; replacing the real $t$ by a complex parameter $z$, the symbol is invertible away from $\operatorname{Im}(z)=0$, and the **Faddeev Green's operator** is defined by the inverse of that symbol,
 
 $$
-\boxed{\;\bigl(g_\gamma(\lambda,z)f\bigr)(x) = \frac{1}{(2\pi)^3}\int \frac{\exp(ix\cdot\zeta)}{\zeta^2+2z\gamma\cdot\zeta-\lambda^2}\,f(\zeta)\,d\zeta ,
+\boxed{\;\bigl(g_\gamma(\lambda,z)f\bigr)(x) = \frac{1}{(2\pi\hbar)^3}\int \frac{\exp(ix\cdot\zeta)}{\zeta^2+2z\gamma\cdot\zeta-\lambda^2}\,f(\zeta)\,d\zeta ,
 \qquad \gamma\in S^2,\ \lambda\ge0,\ z\in\mathbb{C}_+ = \{z : \operatorname{Im}(z)>0\}\;},
 $$
 

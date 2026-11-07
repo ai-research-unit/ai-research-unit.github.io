@@ -176,7 +176,7 @@ $$
 In the continuum, with the normalisation factor $(2\pi)^{-3/2}$,
 
 $$
-\int d^3r\;\mathrm{Tr}\!\left(\tilde{Ξ}_{\mathrm{sp},\vec k_\Phi}^{\dagger} \tilde{Ξ}_{\mathrm{sp},\vec k_2}\right) = (2\pi)^3 \delta^{(3)}(\vec k_\Phi - \vec k_2).
+\int d^3r\;\mathrm{Tr}\!\left(\tilde{Ξ}_{\mathrm{sp},\vec k_\Phi}^{\dagger} \tilde{Ξ}_{\mathrm{sp},\vec k_2}\right) = (2\pi\hbar)^3 \delta^{(3)}(\vec k_\Phi - \vec k_2).
 $$
 
 Two norms must be kept apart here. The **probability density** of a spinor field is
@@ -288,7 +288,7 @@ $$
 
 is the spreading time. The biquaternion form of the packet is $\tilde{Ξ}_{\mathrm{sp}} = Ξ\,\xi$: the scalar envelope $Ξ$ carries all of the dynamics, and the module factor $\xi$ is a constant.
 
-The closed forms above were checked numerically. Using the density-width normalisation with $m = \hbar = 1$ and $s_0 = 0.5$, the analytic density agrees with the Gaussian $|Ξ(r_x,r'_t)|^2$ to a relative error below $6\times 10^{-16}$ at $r'_t = 0, 1.4, 2.7$, and the variance computed by direct quadrature of $|Ξ(r_x,r'_t)|^2$ equals $s(r'_t)^2$ to six decimal places at each time, with the mean equal to $v_0 r'_t$. The analytic envelope itself was checked against a direct momentum-space quadrature of $Ξ(r_x,r'_t) = \int  \frac{dk}{2\pi}\tilde{Ξ}_0(k)\exp(ikx -\frac{c\,i\,k^{2}\,r'_{t}}{2\,k_m})$, evaluated on a rotated contour, with agreement at the $10^{-13}$ level on three sampled points. In every case the quantity checked is a superposition — a packet is a superposition of plane waves — and never a single plane wave.
+The closed forms above were checked numerically. Using the density-width normalisation, with every wave number quoted in units of $k_m$ (so that $k_m=1$), every length in units of $1/k_m$, and $s_0 = 0.5$, the analytic density agrees with the Gaussian $|Ξ(r_x,r'_t)|^2$ to a relative error below $6\times 10^{-16}$ at $r'_t = 0, 1.4, 2.7$, and the variance computed by direct quadrature of $|Ξ(r_x,r'_t)|^2$ equals $s(r'_t)^2$ to six decimal places at each time, with the mean equal to $v_0 r'_t$. The analytic envelope itself was checked against a direct momentum-space quadrature of $Ξ(r_x,r'_t) = \int  \frac{dk}{2\pi}\tilde{Ξ}_0(k)\exp(ikx -\frac{i\,k^{2}\,r'_{t}}{2\,k_m})$, evaluated on a rotated contour, with agreement at the $10^{-13}$ level on three sampled points. In every case the quantity checked is a superposition — a packet is a superposition of plane waves — and never a single plane wave.
 
 ### Stationary phase and the classical trajectory
 

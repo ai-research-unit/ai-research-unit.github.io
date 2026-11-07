@@ -28,7 +28,7 @@ The worldline parameter is $\tau$ and the proper time $T$. The material position
 
 The object the path integral must compute is the Feynman propagator of the pair. Its two components are the amplitudes for the two values of the subscript, and each component is an element of the algebra: no array enters, and the pair is what the algebra's own product acts on.
 
-**The two symbols.** A plane wave of the pair is $\tilde{Ξ}_{\mathrm{sp}}(x) = \tilde{Ξ}_{\mathrm{sp},\mathrm{amp}}\exp(-ip\cdot x)$, with $p\cdot x = p_0x_0 - \vec p\cdot\vec r$ and $p_0 = E/c$ the contraction of the material frame. The momentum element is $\tilde{P}_{\Phi}$, and its norm is the mass-shell scalar,
+**The two symbols.** A plane wave of the pair is $\tilde{Ξ}_{\mathrm{sp}}(x) = \tilde{Ξ}_{\mathrm{sp},\mathrm{amp}}\exp(-ip\cdot x/\hbar)$, with $p\cdot x = p_0x_0 - \vec p\cdot\vec r$ and $p_0 = E/c$ the contraction of the material frame. The momentum element is $\tilde{P}_{\Phi}$, and its norm is the mass-shell scalar,
 
 $$
 \langle\tilde{P}_{\Phi}\rangle_{\natural} = \tilde{P}_{\Phi}\tilde{P}_{\Phi}^{\natural} = -p^2,
@@ -65,9 +65,9 @@ and eliminating one part returns the mass shell, $p^2=m^{2}\,c^{2}$, since $\til
 **The propagator.** The Green kernel of the pair is the inverse of $\mathbb{D}-k_m$, and on a plane wave its two components are
 
 $$
-\mathcal S_L = \frac{i\,k_m - \tilde{P}_{\Phi}}{p^2 - k_m^{2}},
+\mathcal S_L = \frac{i\,mc - \tilde{P}_{\Phi}}{p^2 - m^{2}c^{2}},
 \qquad
-\mathcal S_R = \frac{i\,k_m - \tilde{P}_{\Phi}^{\natural}}{p^2 - k_m^{2}} .
+\mathcal S_R = \frac{i\,mc - \tilde{P}_{\Phi}^{\natural}}{p^2 - m^{2}c^{2}} .
 $$
 
 The numerator of the $L$ component is the momentum element and the numerator of the $R$ component its conjugate; that assignment is the one that satisfies both lines, since
@@ -100,23 +100,23 @@ This is standard relativistic quantum physics (see the Further Reading); the com
 
 $$
 \Delta_F(x-x_2) = \int\frac{d^4p}{(2\pi\hbar)^4}\,
-\frac{i}{p^2 - k_m^{2} + i\epsilon}\,
+\frac{i\,\hbar^{2}}{p^2 - m^{2}c^{2} + i\epsilon}\,
 \exp(-i(p\cdot(x-x_2))/\hbar),
 \qquad
 \left(\Box - k_m^{2}\right)\Delta_F = i\,\delta^{(4)},
 $$
 
-for the scalar (Klein–Gordon) Feynman propagator, the spin-$0$ object of the companion subcategory. It carries the same $i$ as $\mathcal S$, so the two kernels have one and the same Green's-function normalisation and differ by the first-order operator alone. Since $\Box$ acts on the exponential as multiplication by $p^2$, the difference is exactly that operator, and formally
+for the scalar (Klein–Gordon) Feynman propagator, the spin-$0$ object of the companion subcategory. It carries the same $i$ as $\mathcal S$, so the two kernels have one and the same Green's-function normalisation and differ by the first-order operator alone. Since $\Box$ acts on the exponential as multiplication by $p^2/\hbar^2$, the difference is exactly that operator, and formally
 
 $$
-\boxed{\;\mathcal S = \left(\mathbb{D} + k_m\right)\Delta_F\;}
+\boxed{\;\mathcal S = \frac{1}{\hbar^{2}}\left(\mathbb{D} + mc\right)\Delta_F\;}
 $$
 
 which is the Green kernel of the pair operator as *Operator and Calculus Conventions*, §*The Pair Operator and Its Symbol* states it. The verification is the one-line algebra of the pair,
 
 $$
-\left(\mathbb{D} - k_m\right)\left(\mathbb{D} + k_m\right)
-= \mathbb{D}^2 - k_m^{2} = \Box - k_m^{2},
+\left(\mathbb{D} - mc\right)\left(\mathbb{D} + mc\right)
+= \mathbb{D}^2 - m^{2}c^{2} = \hbar^{2}\left(\Box - k_m^{2}\right),
 $$
 
 which is the operator that $\Delta_F$ inverts. The Dirac propagator is therefore the Klein–Gordon propagator with the first-order operator applied; if the scalar kernel is available as a path integral, the Dirac propagator is available from it by a differential operation. This is one of the two standard resolutions of the first-order problem, and it is the one the biquaternion algebra states most directly: the inverse of the first-order operator is the conjugate first-order operator times the inverse of its square, and its square is central.
@@ -124,11 +124,11 @@ which is the operator that $\Delta_F$ inverts. The Dirac propagator is therefore
 **The propagator is not one path integral with one phase.** The worldline proper-time representation makes the same point in a Lorentz-invariant way. Since
 
 $$
-\frac{i}{p^2 - k_m^{2} + i\epsilon}
-= \int_0^\infty dT\,\exp\left(iT\left(p^2 - k_m^{2} + i\epsilon\right)\right),
+\frac{i}{p^2 - m^{2}c^{2} + i\epsilon}
+= \int_0^\infty dT\,\exp\left(iT\left(p^2 - m^{2}c^{2} + i\epsilon\right)/\hbar\right),
 $$
 
-the scalar propagator is the integral over a proper time $T$ of a kernel $\langle x_2|\exp(iT(\Box - k_m^{2}))|x\rangle$, and that kernel is a sum over worldlines,
+the scalar propagator is the integral over a proper time $T$ of a kernel $\langle x_2|\exp(i\hbar T(\Box - k_m^{2}))|x\rangle$, and that kernel is a sum over worldlines,
 
 $$
 \Delta_F(x,x_2) = \int_0^\infty dT\int_{x(0)=x}^{x(T)=x_2}\mathcal{D}x(\tau)\;
@@ -155,7 +155,7 @@ It is worth evaluating the scalar worldline kernel in the free case, because the
 
 $$
 \Delta_F(x,x_2) = \int_0^\infty dT\int\frac{d^4p}{(2\pi\hbar)^4}\,
-\exp\left(iT\left(p^2 - k_m^{2} + i\epsilon\right)\right)\,\exp(-i(p\cdot(x-x_2))/\hbar),
+\exp\left(iT\left(p^2 - m^{2}c^{2} + i\epsilon\right)/\hbar\right)\,\exp(-i(p\cdot(x-x_2))/\hbar),
 $$
 
 where the $i\epsilon$ prescription makes the $T$-integral converge at large $T$. The $p$-integral is a Gaussian: completing the square in each of the four components gives the standard free kernel
@@ -446,9 +446,9 @@ so that the four values are $-4I_4$, $+2\gamma_\alpha$, $0$ and $-2\gamma_\alpha
 
 ## Summary
 
-The Dirac path integral is the sum over worldlines that computes the propagator $\mathcal S$, the pair of element-valued kernels satisfying $\left(\mathbb{D} - k_m\right)\mathcal S = i\delta^{(4)}$ with $k_m=mc/\hbar$. Because the Dirac operator is first order, the path integral is organised in one of two standard ways. In the **proper-time** way, the scalar Klein–Gordon kernel is written as a worldline sum over material curves in $\mathbb{B}_{\Phi}$ with central phase $S_0$, and the Dirac propagator is obtained by applying the conjugate first-order operator: $\mathcal S = \left(\mathbb{D} + k_m\right)\Delta_F$, the identity following from $\mathbb{D}^2 = \Box$. In the **spinning-worldline** way, an odd Grassmann variable $\tilde{Ξ}_{\mathrm{sp},\mu}$ is added at each point with kinetic term $\frac{i}{2}\sum_\mu\tilde{Ξ}_{\mathrm{sp},\mu}\frac{d\tilde{Ξ}_{\mathrm{sp},\mu}}{d\tau}$; a pair of odd variables is an element of the algebra with $\tilde{Ξ}_{\mathrm{sp},\mu}\tilde{Ξ}_{\mathrm{sp},\nu} + \tilde{Ξ}_{\mathrm{sp},\nu}\tilde{Ξ}_{\mathrm{sp},\mu} = -\frac12\varepsilon_\mu\delta_{\mu\nu}e_t$; the path integral over $\tilde{Ξ}_{\mathrm{sp}}$ is the algebra-valued spin factor $Ξ[x]$; and the full worldline integral reproduces the propagator (Berezin–Marinov, Brink–Di Vecchia–Howe).
+The Dirac path integral is the sum over worldlines that computes the propagator $\mathcal S$, the pair of element-valued kernels satisfying $\left(\mathbb{D} - mc\right)\mathcal S = i\delta^{(4)}$. Because the Dirac operator is first order, the path integral is organised in one of two standard ways. In the **proper-time** way, the scalar Klein–Gordon kernel is written as a worldline sum over material curves in $\mathbb{B}_{\Phi}$ with central phase $S_0$, and the Dirac propagator is obtained by applying the conjugate first-order operator: $\mathcal S = \hbar^{-2}\left(\mathbb{D} + mc\right)\Delta_F$, the identity following from $\mathbb{D}^2 = \hbar^{2}\Box$. In the **spinning-worldline** way, an odd Grassmann variable $\tilde{Ξ}_{\mathrm{sp},\mu}$ is added at each point with kinetic term $\frac{i}{2}\sum_\mu\tilde{Ξ}_{\mathrm{sp},\mu}\frac{d\tilde{Ξ}_{\mathrm{sp},\mu}}{d\tau}$; a pair of odd variables is an element of the algebra with $\tilde{Ξ}_{\mathrm{sp},\mu}\tilde{Ξ}_{\mathrm{sp},\nu} + \tilde{Ξ}_{\mathrm{sp},\nu}\tilde{Ξ}_{\mathrm{sp},\mu} = -\frac12\varepsilon_\mu\delta_{\mu\nu}e_t$; the path integral over $\tilde{Ξ}_{\mathrm{sp}}$ is the algebra-valued spin factor $Ξ[x]$; and the full worldline integral reproduces the propagator (Berezin–Marinov, Brink–Di Vecchia–Howe).
 
-In the biquaternion framework, a single odd variable is not an element of the algebra and a pair is, because every product of two units is a unit up to sign; the spin factor is the path-ordered product of those elements, and squaring the first-order operator returns the central Klein–Gordon operator. In momentum space the two components of the propagator are $\mathcal S_L = (i\,k_m-\tilde{P}_{\Phi})/(p^2-k_m^{2})$ and $\mathcal S_R = (i\,k_m-\tilde{P}_{\Phi}^{\natural})/(p^2-k_m^{2})$, and the identity $\left(\mathbb{D}-k_m\right)\left(\mathbb{D}+k_m\right) = \mathbb{D}^2-k_m^{2}$ is the whole of the square. The scalar path integral of the companion subcategory is the kernel that the first-order factor acts on, a consequence of this identity rather than an independent construction. Feynman's checkerboard is the discrete realisation of the same structure in 1+1 dimensions: the two directions are the two values of the subscript, the corners carry the weight $i\epsilon\,k_m$ and are the off-diagonal mass insertions, and the continuum limit is the two-dimensional propagator.
+In the biquaternion framework, a single odd variable is not an element of the algebra and a pair is, because every product of two units is a unit up to sign; the spin factor is the path-ordered product of those elements, and squaring the first-order operator returns the central Klein–Gordon operator. In momentum space the two components of the propagator are $\mathcal S_L = (i\,mc-\tilde{P}_{\Phi})/(p^2-m^{2}c^{2})$ and $\mathcal S_R = (i\,mc-\tilde{P}_{\Phi}^{\natural})/(p^2-m^{2}c^{2})$, and the identity $\left(\mathbb{D}-mc\right)\left(\mathbb{D}+mc\right) = \mathbb{D}^2-m^{2}c^{2}=\hbar^{2}(\Box-k_m^{2})$ is the whole of the square. The scalar path integral of the companion subcategory is the kernel that the first-order factor acts on, a consequence of this identity rather than an independent construction. Feynman's checkerboard is the discrete realisation of the same structure in 1+1 dimensions: the two directions are the two values of the subscript, the corners carry the weight $i\epsilon\,k_m$ and are the off-diagonal mass insertions, and the continuum limit is the two-dimensional propagator.
 
 ## Summary of Notation
 

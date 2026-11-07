@@ -222,10 +222,10 @@ which is exactly the statement that the total internal angular momentum of a com
 An integer-spin field is quantized with commutators, not anticommutators. The mode expansion carries one oscillator pair for each of the $2s+1$ polarizations at each momentum,
 
 $$
-Ξ_{\mathrm{fop}}(x) = \int\!\frac{d^3p}{(2\pi)^3}\frac{1}{\sqrt{2\omega_{\vec p}}}
+Ξ_{\mathrm{fop}}(x) = \int\!\frac{d^3p}{(2\pi\hbar)^3}\sqrt{\frac{c}{2\omega_{\vec p}}}
 \sum_{r=1}^{2s+1}\left[
-\xi_r(\vec p)\,a_{\mathrm{fop},r}(\vec p)\,\exp(-ip\cdot x)
-+ \xi_{r}^{*}(\vec p)\,a_{\mathrm{fop},r}^{\dagger}(\vec p)\,\exp(+ip\cdot x)
+\xi_r(\vec p)\,a_{\mathrm{fop},r}(\vec p)\,\exp(-ip\cdot x/\hbar)
++ \xi_{r}^{*}(\vec p)\,a_{\mathrm{fop},r}^{\dagger}(\vec p)\,\exp(+ip\cdot x/\hbar)
 \right],
 $$
 
@@ -233,12 +233,12 @@ with polarization labels $\xi_r$ and mode operators satisfying
 
 $$
 \left[a_{\mathrm{fop},r}(\vec p),a_{\mathrm{fop},s}^{\dagger}(\vec k_\Phi)\right]
-= \delta_{rs}(2\pi)^3\delta^{(3)}(\vec p-\vec k_\Phi),
+= \delta_{rs}(2\pi\hbar)^3\delta^{(3)}(\vec p-\hbar\vec k_\Phi),
 \qquad
 \left[a_{\mathrm{fop},r}(\vec p),a_{\mathrm{fop},s}(\vec k_\Phi)\right]=0 .
 $$
 
-The Fock space is the symmetric (bosonic) algebra over the one-particle space, and the Hamiltonian is normal-ordered, $:H:=\int d^3p/(2\pi)^3\,\omega_{\vec p}\sum_ra_{\mathrm{fop},r}^{\dagger}a_{\mathrm{fop},r}$, with $2s+1$ half-quanta per mode in the vacuum energy. For a massive integer-spin field the $2s+1$ polarizations all have positive norm, as in the Proca case; for a massless one the covariant description requires the indefinite metric and the subsidiary condition, and the physical polarizations are the two helicity states $\pm s$.
+The Fock space is the symmetric (bosonic) algebra over the one-particle space, and the Hamiltonian is normal-ordered, $:H:=\int d^3p/(2\pi\hbar)^3\,\omega_{\vec p}\sum_ra_{\mathrm{fop},r}^{\dagger}a_{\mathrm{fop},r}$, with $2s+1$ half-quanta per mode in the vacuum energy. For a massive integer-spin field the $2s+1$ polarizations all have positive norm, as in the Proca case; for a massless one the covariant description requires the indefinite metric and the subsidiary condition, and the physical polarizations are the two helicity states $\pm s$.
 
 The reason the bracket must be a commutator is the spin–statistics theorem, which the companion article *The Spin–Statistics Theorem in Biquaternionic Form* treats in the framework's terms. Its content here is the linkage between the adjoint action and the bosonic algebra: integer spin means that the internal angular momentum eigenvalues are integers, and the exchange of two identical particles must return the state to itself, so the mode operators commute. A hypothetical integer-spin field quantized with anticommutators would have a state of the wrong exchange symmetry, and the theorem forbids it. The algebra does not independently forbid it — the Fock companion proves that the bracket is not native to $\mathbb{B}$ — but the representation theory that the adjoint action realizes is what the theorem uses.
 
@@ -298,7 +298,7 @@ What the algebra supplies is the triplet, its ladder, its Casimir, and the tenso
 | $\tilde S_{\Psi,\mathrm{adj},\pm}=\tilde S_{\Psi,\mathrm{adj},1}\pm i\tilde S_{\Psi,\mathrm{adj},2}$ | Ladder operators, matrix element $\sqrt2$ |
 | $(\tilde S_{\Psi,\mathrm{adj},3})^3-\tilde S_{\Psi,\mathrm{adj},3}=0$ | Minimal polynomial of the spin-one generator |
 | $\xi_r$, $r=1,\dots,2s+1$ | Polarization labels of a spin-$s$ field |
-| $a_{\mathrm{fop},r},a_{\mathrm{fop},r}^{\dagger}$ | Bosonic mode operators, $[a_{\mathrm{fop},r},a_{\mathrm{fop},s}^{\dagger}]=\delta_{rs}(2\pi)^3\delta^{(3)}$ |
+| $a_{\mathrm{fop},r},a_{\mathrm{fop},r}^{\dagger}$ | Bosonic mode operators, $[a_{\mathrm{fop},r},a_{\mathrm{fop},s}^{\dagger}]=\delta_{rs}(2\pi\hbar)^3\delta^{(3)}$ |
 | $\lambda=\vec u_p\cdot\vec S$ | Helicity; eigenvalues $\pm s$ |
 | $\tilde S_{\Psi}^{(s)}_k=\sum_a I\otimes\cdots\otimes \tilde S_{\Psi,\mathrm{adj},k}\otimes\cdots\otimes I$ | Internal spin for rank-$s$ carriers |
 

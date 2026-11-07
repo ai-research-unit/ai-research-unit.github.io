@@ -60,9 +60,9 @@ We collect the mode operators that the parents supply, because the rest of the a
 **Fermionic (Dirac).** The field expands as
 
 $$
-\tilde{Ξ}_{\mathrm{fop}}(x)=\int\!\frac{d^3p}{(2\pi)^3}\frac{1}{\sqrt{2E_{\vec p}}}\sum_{r=1}^{2}
-\Big[a_{\mathrm{fop},r}(\vec p)w^{(r)}(\vec p)\exp(-ip\cdot x)
-+b_{\mathrm{fop},r}^{\dagger}(\vec p)v^{(r)}(\vec p)\exp(+ip\cdot x)\Big],
+\tilde{Ξ}_{\mathrm{fop}}(x)=\int\!\frac{d^3p}{(2\pi\hbar)^3}\sqrt{\frac{\hbar c}{2E_{\vec p}}}\sum_{r=1}^{2}
+\Big[a_{\mathrm{fop},r}(\vec p)w^{(r)}(\vec p)\exp(-ip\cdot x/\hbar)
++b_{\mathrm{fop},r}^{\dagger}(\vec p)v^{(r)}(\vec p)\exp(+ip\cdot x/\hbar)\Big],
 $$
 
 with $a_{\mathrm{fop},r}$ annihilating particles and $b_{\mathrm{fop},r}$ annihilating antiparticles. The mode algebra is
@@ -70,14 +70,14 @@ with $a_{\mathrm{fop},r}$ annihilating particles and $b_{\mathrm{fop},r}$ annihi
 $$
 \{a_{\mathrm{fop},r}(\vec p),a_{\mathrm{fop},s}^{\dagger}(\vec k_\Phi)\}
 =\{b_{\mathrm{fop},r}(\vec p),b_{\mathrm{fop},s}^{\dagger}(\vec k_\Phi)\}
-=(2\pi)^3\delta_{rs}\delta^{(3)}(\vec p-\vec k_\Phi),
+=(2\pi\hbar)^3\delta_{rs}\delta^{(3)}(\vec p-\hbar\vec k_\Phi),
 $$
 
 with all other anticommutators vanishing. The particle number, the antiparticle number, the total number of quanta and the electric charge are
 
 $$
-N_a=\sum_r\int\!\frac{d^3p}{(2\pi)^3}a_{\mathrm{fop},r}^{\dagger}a_{\mathrm{fop},r},\qquad
-N_b=\sum_r\int\!\frac{d^3p}{(2\pi)^3}b_{\mathrm{fop},r}^{\dagger}b_{\mathrm{fop},r},\qquad
+N_a=\sum_r\int\!\frac{d^3p}{(2\pi\hbar)^3}a_{\mathrm{fop},r}^{\dagger}a_{\mathrm{fop},r},\qquad
+N_b=\sum_r\int\!\frac{d^3p}{(2\pi\hbar)^3}b_{\mathrm{fop},r}^{\dagger}b_{\mathrm{fop},r},\qquad
 F=N_a+N_b,\qquad
 Ϙ_{\mathrm{fop}}=N_a-N_b,
 $$
@@ -88,7 +88,7 @@ and Pauli exclusion is the algebraic identity $(a_{\mathrm{fop},r}^{\dagger}(\ve
 
 $$
 \big[a_{\mathrm{fop},r}(\vec k_\Phi),a_{\mathrm{fop},s}^{\dagger}(\vec k_2)\big]
-=\sigma_{\mathrm{met},r}\,\delta_{rs}\,(2\pi)^3\delta^{(3)}(\vec k_\Phi-\vec k_2),
+=\sigma_{\mathrm{met},r}\,\delta_{rs}\,(2\pi)^3\,\delta^{(3)}(\vec k_\Phi-\vec k_2),
 \qquad
 (\sigma_{\mathrm{met},0},\sigma_{\mathrm{met},1},\sigma_{\mathrm{met},2},\sigma_{\mathrm{met},3})=(-1,+1,+1,+1),
 $$

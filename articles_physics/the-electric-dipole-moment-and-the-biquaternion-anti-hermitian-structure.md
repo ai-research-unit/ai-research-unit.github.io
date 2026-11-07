@@ -275,8 +275,8 @@ The EDM is the pseudotensor bilinear, the tensor times the chirality cell, and t
 $$
 \Gamma_\mu(p_2,p_1)\,\tilde{Ξ}_{\mathrm{sp}}
 = i\,e_\mu\,\tilde{Ξ}_{\mathrm{sp}}\,\vec e_{\nu(\mu)}\,F_1(k^2)
-+\frac{i}{2\,m}\,k_\nu\,\mathcal{G}_{\mu\nu}\tilde{Ξ}_{\mathrm{sp}}\,F_2(k^2)
-+\frac{i}{2\,m}\,k_\nu\,\mathcal{O}_{\mu\nu}\tilde{Ξ}_{\mathrm{sp}}\,F_3(k^2) + \cdots ,
++\frac{i}{2\,m\,c}\,k_\nu\,\mathcal{G}_{\mu\nu}\tilde{Ξ}_{\mathrm{sp}}\,F_2(k^2)
++\frac{i}{2\,m\,c}\,k_\nu\,\mathcal{O}_{\mu\nu}\tilde{Ξ}_{\mathrm{sp}}\,F_3(k^2) + \cdots ,
 $$
 
 with $F_1$ the charge, $F_2$ the anomalous magnetic moment, and $F_3$ the EDM form factor; the ellipsis denotes the anapole and higher terms. In the nonrelativistic limit, $F_2$ and $F_3$ reduce to the magnetic and electric dipole couplings,
@@ -286,7 +286,7 @@ H_{\mathrm{NR}} = -\,\mu\sum_k B_k\,i\vec e_k - d\sum_k E_k\,i\vec e_k ,
 $$
 
 $$
-\mu = \frac{e}{2m}\big(1+F_2(0)\big),\qquad d = \frac{e}{2m}F_3(0),
+\mu = \frac{e\hbar}{2m}\big(1+F_2(0)\big),\qquad d = \frac{e\hbar}{2m}F_3(0),
 $$
 
 so that the two coefficients are the form factors at zero momentum transfer, multiplied by the same dimensionful factor and distinguished by the chirality cell. The magnetic moment is the Hermitian member of the pair; the EDM is the anti-Hermitian member; and the two are Hodge duals of each other. This is the standard form-factor decomposition, and it is the reason the EDM is called the "dual" of the anomalous magnetic moment.
@@ -348,7 +348,7 @@ $$
 
 for an order-one phase and no loop suppression. This is the standard statement that the electron EDM probes scales up to a few thousand TeV, which is why it is a leading constraint on new physics and why it is the target of the next generation of experiments. The neutron and proton bounds probe their own combinations of quark and gluon CP-odd operators, and the framework's proton and neutron articles state that no value is predicted.
 
-**The magnetic moment for comparison.** The anomalous magnetic moment of the muon is measured to a precision of about half a part per million and its theoretical uncertainty is dominated by hadronic effects; the companion article treats it. The EDM bounds are in a different regime: the electron EDM bound corresponds to a dipole moment about $5.7\times10^{-19}$ of the electron's magnetic moment, since $\mu_e/e=1/(2m_e)=1.93\times10^{-11}\ \mathrm{cm}$ and $d_e/e\lesssim1.1\times10^{-29}\ \mathrm{cm}$. The two observables are the Hermitian and anti-Hermitian members of the same dimension-five pair, and the framework places them in the informational and material sectors respectively.
+**The magnetic moment for comparison.** The anomalous magnetic moment of the muon is measured to a precision of about half a part per million and its theoretical uncertainty is dominated by hadronic effects; the companion article treats it. The EDM bounds are in a different regime: the electron EDM bound corresponds to a dipole moment about $5.7\times10^{-19}$ of the electron's magnetic moment, since $\mu_e/e=\hbar/(2m_e c)=1.93\times10^{-11}\ \mathrm{cm}$ and $d_e/e\lesssim1.1\times10^{-29}\ \mathrm{cm}$. The two observables are the Hermitian and anti-Hermitian members of the same dimension-five pair, and the framework places them in the informational and material sectors respectively.
 
 ## What the Framework Supplies, Transcribes, and Does Not Supply
 
@@ -483,8 +483,8 @@ The form-factor decomposition
 $$
 \Gamma_\mu(p_2,p_1)\,\tilde{Ξ}_{\mathrm{sp}}
 = i\,e_\mu\,\tilde{Ξ}_{\mathrm{sp}}\,\vec e_{\nu(\mu)}\,F_1
-+\frac{i}{2\,m}\,k_\nu\,\mathcal{G}_{\mu\nu}\tilde{Ξ}_{\mathrm{sp}}\,F_2
-+\frac{i}{2\,m}\,k_\nu\,\mathcal{O}_{\mu\nu}\tilde{Ξ}_{\mathrm{sp}}\,F_3 + \cdots
++\frac{i}{2\,m\,c}\,k_\nu\,\mathcal{G}_{\mu\nu}\tilde{Ξ}_{\mathrm{sp}}\,F_2
++\frac{i}{2\,m\,c}\,k_\nu\,\mathcal{O}_{\mu\nu}\tilde{Ξ}_{\mathrm{sp}}\,F_3 + \cdots
 $$
 
 exhibits the magnetic moment $F_2$ and the EDM $F_3$ as the Hermitian and anti-Hermitian members of one dimension-five pair, which the framework places in the informational and material sectors; they are the whole list, the pseudotensor being $i$ times the dual of the tensor. The framework does not supply the coefficient: it has no CP-violating phase, predicts no measurable EDM, and inherits the Standard Model's tiny CKM contribution and the $\theta$-term constraint, $|\theta|\lesssim10^{-10}$ from $|d_n|\lesssim1.8\times10^{-26}\ e\cdot\mathrm{cm}$. The present electron bound $|d_e|\lesssim1.1\times10^{-29}\ e\cdot\mathrm{cm}$, combined with the dimensional estimate $d/e\sim m_e\sin\theta_{\mathrm{pha}}/\Lambda^2$, probes new-physics scales $\Lambda\gtrsim10^{3}$ TeV, and the framework's contribution is to state exactly where in the algebra such a coefficient would sit.
@@ -510,7 +510,7 @@ exhibits the magnetic moment $F_2$ and the EDM $F_3$ as the Hermitian and anti-H
 | $\mathcal{L}_{\mathrm{EDM}}=i\,d\sum_kE_k\tilde{Ξ}_{\mathrm{sp}}^*i(\vec e_k\tilde{Ξ}_{\mathrm{sp}})\vec e_x + i\,d\sum_kB_k\tilde{Ξ}_{\mathrm{sp}}^*i(\vec e_k\tilde{Ξ}_{\mathrm{sp}}\vec e_z)\vec e_x$ | EDM Lagrangian |
 | $H_{\mathrm{NR}}=-d\sum_kE_k\,i\vec e_k$ | EDM nonrelativistic Hamiltonian |
 | $F_1,F_2,F_3$ | Charge, anomalous magnetic moment, EDM form factors |
-| $d=\tfrac{e}{2m}F_3(0)$, $\mu=\tfrac{e}{2m}(1+F_2(0))$ | EDM and magnetic moment |
+| $d=\tfrac{e\hbar}{2m}F_3(0)$, $\mu=\tfrac{e\hbar}{2m}(1+F_2(0))$ | EDM and magnetic moment |
 | $d/e\sim m_f\sin\theta_{\mathrm{pha}}/\Lambda^2$ | Dimensional estimate, the charge factored out of the $e\cdot\mathrm{cm}$ unit |
 | $1\ \mathrm{GeV}^{-1}=1.97327\times10^{-14}\ \mathrm{cm}$ | EDM unit conversion |
 | $\lvert d_e\rvert\lesssim1.1\times10^{-29}\ e\cdot\mathrm{cm}$ | Electron EDM bound |

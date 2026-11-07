@@ -282,10 +282,10 @@ so the density is a constant times the framework's second invariant $I_2$ of the
 **Where the $1/16\pi^2$ comes from.** The coefficient is a four-dimensional Gaussian, and it can be read off before any element is touched. In the coincidence limit the free heat kernel is
 $$
 \big\langle r_x\big|\exp(-\partial^2/M^2)\big|r_x\big\rangle
-= \int\frac{d^4p_E}{(2\pi)^4}\,\exp(-p_E^2/M^2)
+= \int\frac{d^4p_E}{(2\pi\hbar)^4}\,\exp(-p_E^2/(\hbar^2M^2))
 = \frac{M^4}{16\pi^2},
 $$
-using $\int d^4p_E\,\exp(-p_E^2/M^2)=(\pi M^2)^2=\pi^2M^4$ and dividing by $(2\pi)^4=16\pi^4$. The powers of $M$ then balance, and the balance is worth displaying because it is where the $1/32\pi^2$ of the density is fixed. Write $\mathcal{H}=\mathcal{H}_0+V$, with $\mathcal{H}_0$ the scalar operator $-\partial^2$ and $V$ the field-strength part, a bivector element that acts by left multiplication and is built from $[D_\mu,D_\nu]=iϙF_{\mu\nu}$. Each insertion of $V$ brings one factor $1/M^2$ and one free propagator, so the second-order term of the heat kernel carries
+using $\int d^4p_E\,\exp(-p_E^2/(\hbar^2M^2))=(\pi\hbar^2M^2)^2=\pi^2\hbar^4M^4$ and dividing by $(2\pi\hbar)^4=16\pi^4\hbar^4$. The regulator $M$ is an inverse length, the wave number of the cutoff, because $\partial^2/M^2$ in the exponent must be a pure number and every derivative carries an inverse length; the two powers of $\hbar$ it carries are what leave the kernel an inverse four-volume. The powers of $M$ then balance, and the balance is worth displaying because it is where the $1/32\pi^2$ of the density is fixed. Write $\mathcal{H}=\mathcal{H}_0+V$, with $\mathcal{H}_0$ the scalar operator $-\partial^2$ and $V$ the field-strength part, a bivector element that acts by left multiplication and is built from $[D_\mu,D_\nu]=iϙF_{\mu\nu}$. Each insertion of $V$ brings one factor $1/M^2$ and one free propagator, so the second-order term of the heat kernel carries
 $$
 \frac{1}{2!\,M^4}\ \text{for the two insertions},\qquad
 \frac{M^4}{16\pi^2}\ \text{for the coincidence kernel},

@@ -12,7 +12,7 @@ Three answers organise the article, and they are not the same answer.
 
 1. **Its value space.** The field is central-valued: at each event it is an operator times $e_t$, so its value-space indices are trivial, its Lorentz transformation has no spin part, and it commutes with every element of the algebra. This is the operator form of the statement that spin $0$ lives in the centre.
 2. **Its algebra.** The field is an operator-valued distribution, unbounded, and its commutator with its adjoint is a **multiple of the identity**, the commutator function. The field therefore generates a CCR algebra whose brackets are central; the non-commutativity of the field is a fixed c-number function, not an operator. This is what makes the scalar field bosonic, and it is the structure $\mathbb{B}$ cannot host, as the companion article *Fock Space and Creation/Annihilation Operators in Biquaternionic Form* proves.
-3. **Its phases.** The only biquaternion structure the field carries is the transport of the central phase $\exp(\pm i\,\mathrm{Sc}(\tilde P_{\Phi}\tilde{R}_\Phi^{\natural}))$ and the centrality of that phase. The mass shell is a level set of the biquaternion norm; the exponentials are central unitaries; the Lorentz rotors act trivially on them.
+3. **Its phases.** The only biquaternion structure the field carries is the transport of the central phase $\exp(\pm i\,\mathrm{Sc}(\tilde P_{\Phi}\tilde{R}_\Phi^{\natural})/\hbar)$ and the centrality of that phase. The mass shell is a level set of the biquaternion norm; the exponentials are central unitaries; the Lorentz rotors act trivially on them.
 
 The article is organised as follows. The next section treats the field as an operator-valued distribution and fixes its value space. The following section separates its positive- and negative-frequency parts. The next section treats the real and complex cases and charge conjugation. The section after that establishes the c-number character of the field commutator. The next section gives the two-point functions and the propagator, read through the biquaternion norm. A section treats the transformation of the field operator under the Poincaré group and the central phase. The final section separates what is standard from what is open.
 
@@ -40,8 +40,8 @@ The value space of the field is the centre. In the mode expansion
 $$
 \tilde{Ξ}_{\mathrm{fop}}(\tilde R_\Phi)=\xi_{\mathrm{fop}}(r_x)\,e_t,
 \qquad
-\xi_{\mathrm{fop}}(r_x)=\int\!\frac{d^3p}{(2\pi)^3}\frac{1}{\sqrt{2E_{\vec p}}}
-\left(a_{\mathrm{fop},\vec p}\exp(-ip\cdot x)+{b_{\mathrm{fop},\vec p}}^\dagger \exp(+ip\cdot x)\right),
+\xi_{\mathrm{fop}}(r_x)=\int\!\frac{d^3p}{(2\pi\hbar)^3}\sqrt{\frac{\hbar c}{2E_{\vec p}}}
+\left(a_{\mathrm{fop},\vec p}\exp(-ip\cdot x/\hbar)+{b_{\mathrm{fop},\vec p}}^\dagger \exp(+ip\cdot x/\hbar)\right),
 $$
 
 every coefficient multiplies the central unit $e_t$. Three consequences follow immediately and are worth stating separately.
@@ -55,9 +55,9 @@ every coefficient multiplies the central unit $e_t$. Three consequences follow i
 The decomposition of the field into its two exponential branches is the operator form of the two-branch structure of the parent equation. Define
 
 $$
-\xi_{\mathrm{fop}}^{(+)}(x)=\int\!\frac{d^3p}{(2\pi)^3}\frac{1}{\sqrt{2E_{\vec p}}}\,a_{\mathrm{fop},\vec p}\,\exp(-ip\cdot x),
+\xi_{\mathrm{fop}}^{(+)}(x)=\int\!\frac{d^3p}{(2\pi\hbar)^3}\sqrt{\frac{\hbar c}{2E_{\vec p}}}\,a_{\mathrm{fop},\vec p}\,\exp(-ip\cdot x/\hbar),
 \qquad
-\xi_{\mathrm{fop}}^{(-)}(x)=\int\!\frac{d^3p}{(2\pi)^3}\frac{1}{\sqrt{2E_{\vec p}}}\,{b_{\mathrm{fop},\vec p}}^\dagger\,\exp(+ip\cdot x),
+\xi_{\mathrm{fop}}^{(-)}(x)=\int\!\frac{d^3p}{(2\pi\hbar)^3}\sqrt{\frac{\hbar c}{2E_{\vec p}}}\,{b_{\mathrm{fop},\vec p}}^\dagger\,\exp(+ip\cdot x/\hbar),
 $$
 
 so that $\xi_{\mathrm{fop}}=\xi_{\mathrm{fop}}^{(+)}+\xi_{\mathrm{fop}}^{(-)}$ and $\xi_{\mathrm{fop}}^{\dagger}=\xi_{\mathrm{fop}}^{(+)\dagger}+\xi_{\mathrm{fop}}^{(-)\dagger}$, with $\xi_{\mathrm{fop}}^{(+)\dagger}$ containing ${a_{\mathrm{fop},\vec p}}^\dagger$ and $\xi_{\mathrm{fop}}^{(-)\dagger}$ containing $b_{\mathrm{fop},\vec p}$. Two facts fix the interpretation.
@@ -72,7 +72,7 @@ $$
 
 so $\xi_{\mathrm{fop}}^{(+)}$ is the **annihilation part** and $\xi_{\mathrm{fop}}^{(-)}$ the **creation part**. The same statement in the biquaternion notation is that the annihilation part is the transport of the vacuum by the positive-frequency central phase.
 
-**The frequency split is Lorentz invariant.** The split is defined by the sign of the energy, and the sign of the energy is preserved by orthochronous Lorentz transformations; equivalently, the positive-frequency part continues analytically in the upper half of the complex time plane when the phase is written $\exp(-iE_{\vec p}r'_t/(\hbar c))$. This is the standard statement that the Wightman function is the boundary value of an analytic function, and the framework's central phase $\exp(\,i\,\mathrm{Sc}(\tilde P_{\Phi}\tilde{R}_\Phi^{\natural}))$ is the phase in which the statement is made.
+**The frequency split is Lorentz invariant.** The split is defined by the sign of the energy, and the sign of the energy is preserved by orthochronous Lorentz transformations; equivalently, the positive-frequency part continues analytically in the upper half of the complex time plane when the phase is written $\exp(-iE_{\vec p}r'_t/(\hbar c))$. This is the standard statement that the Wightman function is the boundary value of an analytic function, and the framework's central phase $\exp(\,i\,\mathrm{Sc}(\tilde P_{\Phi}\tilde{R}_\Phi^{\natural})/\hbar)$ is the phase in which the statement is made.
 
 ## Real and Complex Scalar Fields
 
@@ -95,8 +95,8 @@ and it leaves the commutators and the Hamiltonian invariant. It is an antiunitar
 **The real (neutral) field.** Imposing $\xi_{\mathrm{fop}}^{\dagger}=\xi_{\mathrm{fop}}$ forces $b_{\mathrm{fop},\vec p}=a_{\mathrm{fop},\vec p}$ and reduces the expansion to a single set of modes,
 
 $$
-\xi_{\mathrm{fop}}(x)=\int\!\frac{d^3p}{(2\pi)^3}\frac{1}{\sqrt{2E_{\vec p}}}
-\left(a_{\mathrm{fop},\vec p}\exp(-ip\cdot x)+{a_{\mathrm{fop},\vec p}}^\dagger \exp(+ip\cdot x)\right),
+\xi_{\mathrm{fop}}(x)=\int\!\frac{d^3p}{(2\pi\hbar)^3}\sqrt{\frac{\hbar c}{2E_{\vec p}}}
+\left(a_{\mathrm{fop},\vec p}\exp(-ip\cdot x/\hbar)+{a_{\mathrm{fop},\vec p}}^\dagger \exp(+ip\cdot x/\hbar)\right),
 $$
 
 in which the field creates and destroys its own antiparticle. The charge vanishes identically, and the $\mathrm{U}(1)$ symmetry of the complex case is not present. In the framework's terms the real field is a **Hermitian central-valued** operator field, while the complex field is a central-valued field whose conjugate is a distinct operator.
@@ -109,8 +109,8 @@ The defining property of a bosonic field is that its commutator is a c-number. F
 
 $$
 \boxed{\;\big[\xi_{\mathrm{fop}}(x),\xi_{\mathrm{fop}}^{\dagger}(y)\big]
-=\int\!\frac{d^3p}{(2\pi)^3\,2E_{\vec p}}
-\left(\exp(-ip\cdot(x-y))-\exp(+ip\cdot(x-y))\right)
+=\int\!\frac{d^3p}{(2\pi\hbar)^3\,\frac{\hbar c}{2E_{\vec p}}}
+\left(\exp(-ip\cdot(x-y)/\hbar)-\exp(+ip\cdot(x-y)/\hbar)\right)
 \equiv i\Delta(x-y)\;},
 $$
 
@@ -132,7 +132,7 @@ The field operator's content is exhausted by its correlation functions. The basi
 
 $$
 \boxed{\;W(x-y)=\langle0|\xi_{\mathrm{fop}}(x)\xi_{\mathrm{fop}}^{\dagger}(y)|0\rangle
-=\int\!\frac{d^3p}{(2\pi)^3\,2E_{\vec p}}\,\exp(-ip\cdot(x-y))\;},
+=\int\!\frac{d^3p}{(2\pi\hbar)^3\,\frac{\hbar c}{2E_{\vec p}}}\,\exp(-ip\cdot(x-y)/\hbar)\;},
 $$
 
 which is precisely the positive-frequency part of the commutator function and is annihilated by the Klein–Gordon operator in each variable,
@@ -210,7 +210,7 @@ so the canonical commutator is the identity $\delta\xi(r_x\,\vec e_x+r_y\,\vec e
 For the free scalar the ground-state functional is an explicit Gaussian. With the Hamiltonian of the companion quantization and the real field for economy,
 
 $$
-\tilde{Ξ}_{\mathrm{sp},0}[\xi]\;\propto\;\exp\!\left(-\frac{1}{2}\int\frac{d^3p}{(2\pi)^3}\,E_{\vec p}\,\big|\xi(\vec p)\big|^2\right)
+\tilde{Ξ}_{\mathrm{sp},0}[\xi]\;\propto\;\exp\!\left(-\frac{1}{2}\int\frac{d^3p}{(2\pi\hbar)^3}\,E_{\vec p}\,\big|\xi(\vec p)\big|^2\right)
 =\exp\!\left(-\frac{1}{2}\int d^3r\,d^3y\;\xi(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)\,K(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z-\vec y)\,\xi(\vec y)\right),
 $$
 

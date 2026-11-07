@@ -57,7 +57,7 @@ Z=\int\mathcal{D}\tilde{Ξ}\;\exp(\,iS[\tilde{Ξ}]\frac{k_m}{m\,c}),
 \exp(\,\frac{k_m\,i\,S}{m\,c})\ \text{a central }{}^{*}\text{-unitary} .
 $$
 
-Three features of this rewriting are structural rather than cosmetic. First, the integration variable is a function into the **centre**, so the path integral is an ordinary functional integral over complex functions, equivalently over pairs of real functions, and the state module on which spinor fields live is not integrated over at all. Second, the quadratic form in the exponent is the biquaternion norm shifted by the mass: the momentum-space symbol of $(\Box-\mu^2)$ on the plane wave $\exp(-ip\cdot x)$ is
+Three features of this rewriting are structural rather than cosmetic. First, the integration variable is a function into the **centre**, so the path integral is an ordinary functional integral over complex functions, equivalently over pairs of real functions, and the state module on which spinor fields live is not integrated over at all. Second, the quadratic form in the exponent is the biquaternion norm shifted by the mass: the momentum-space symbol of $(\Box-\mu^2)$ on the plane wave $\exp(-ip\cdot x/\hbar)$ is
 
 $$
 \frac{\omega^2}{c^2}-\vec k_\Phi^2-\mu^2

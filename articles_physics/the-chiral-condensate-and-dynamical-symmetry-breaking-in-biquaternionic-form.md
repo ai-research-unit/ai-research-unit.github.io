@@ -313,7 +313,7 @@ and the condensate in turn is computed in the mean-field vacuum of a fermion of 
 $$
 \boxed{\;m = 4N_c\,G\,m\,I_1(m)\;}
 \qquad
-I_1(m) = \int_0^{\Lambda}\frac{d^3p}{(2\pi)^3}\frac{1}{\sqrt{\vec p^2+m^2}} .
+I_1(m) = \int_0^{\Lambda}\frac{d^3p}{(2\pi\hbar)^3}\frac{1}{\sqrt{\vec p^2+m^2}} .
 $$
 
 The equation always has the **chiral** solution $m=0$. Dividing by $m$, a nontrivial solution requires $1 = 4N_cG\,I_1(m)$, and since $I_1$ decreases with $m$ the threshold is set at $m=0$:
@@ -371,7 +371,7 @@ The dynamical coefficient is therefore a common mass for the two values: the off
 **The effective potential.** The mean-field energy of the condensate is the standard one. Writing $\sigma=-2G\langle\tilde{Ξ}_{\mathrm{sp}}^*iR_{\mathrm{axf},\vec e_x}\tilde{Ξ}_{\mathrm{sp}}\rangle$ for the order parameter, which equals $m$ at the minimum, the effective potential at zero temperature is
 
 $$
-V(\sigma) \;=\; \frac{\sigma^{2}}{4G} \;-\; 2N_c\int^{\Lambda}\frac{d^3p}{(2\pi)^3}\,\sqrt{\vec p^{2}+\sigma^{2}} ,
+V(\sigma) \;=\; \frac{\sigma^{2}}{4G} \;-\; 2N_c\int^{\Lambda}\frac{d^3p}{(2\pi\hbar)^3}\,\sqrt{\vec p^{2}+\sigma^{2}} ,
 $$
 
 where the normalization of the first term is tied to the $(\tilde{Ξ}_{\mathrm{sp}}^*iR_{\mathrm{axf},\vec e_x}\tilde{Ξ}_{\mathrm{sp}})^{2}$ coupling convention used above. Its stationarity condition is
@@ -530,7 +530,7 @@ The framework supplies the carrier, the symmetry pattern and the sector placemen
 | $\langle\tilde{Ξ}_{\mathrm{sp}}^*iR_{\mathrm{axf},\vec e_x}\tilde{Ξ}_{\mathrm{sp}}\rangle=-\Sigma^3$ | Chiral condensate, the order parameter; $\Sigma$ its scale |
 | $m=-2G\langle\tilde{Ξ}_{\mathrm{sp}}^*iR_{\mathrm{axf},\vec e_x}\tilde{Ξ}_{\mathrm{sp}}\rangle$ | Mean-field relation between mass and condensate |
 | $G$, $G_c=\pi^2/(N_c\Lambda^2)$ | Four-fermion coupling and critical coupling |
-| $I_1(m)=\int^\Lambda\frac{d^3p}{(2\pi)^3}(\vec p^2+m^2)^{-1/2}$ | Gap-equation integral |
+| $I_1(m)=\int^\Lambda\frac{d^3p}{(2\pi\hbar)^3}(\vec p^2+m^2)^{-1/2}$ | Gap-equation integral |
 | $N_f$, $N_c$, $\Lambda$ | Flavours, colours, ultraviolet cutoff |
 | $N_f^2-1$ | Number of Goldstone modes of the broken chiral symmetry |
 | $SU(N_f)_L\times SU(N_f)_R\to SU(N_f)_V$ | Chiral symmetry breaking pattern |

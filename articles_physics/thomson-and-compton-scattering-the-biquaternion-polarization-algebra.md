@@ -330,11 +330,11 @@ $$
 $$
 The left side is a sum of two pairings, each multiplied by the solution it pairs, and the two sides agree for every $\tilde{Ξ}_{\mathrm{sp}}$; the equality is therefore a statement about one action on the algebra, and it can be checked term by term.
 
-Here $\langle\tilde w,\tilde w\rangle_{\mathrm D}=2m$ is the covariant normalisation, and $\langle\tilde{Ξ}_{\mathrm{sp}},\tilde{Ξ}\rangle_{\mathrm D}=\mathrm{Tr}(\tilde{Ξ}_{\mathrm{sp}}^*\tilde{Ξ}\,i\vec e_x)$ is the Dirac pairing of the companion Solutions article. This is the **momentum-space** completeness relation: it sends every state into the two-dimensional space of the positive-frequency solutions of the one-sided pair, on which $D(p)\tilde{Ξ}_{\mathrm{sp}} = 2m\tilde{Ξ}_{\mathrm{sp}}$, and applying it twice returns $2m$ times itself,
+Here $\langle\tilde w,\tilde w\rangle_{\mathrm D}=2m\,c$ is the covariant normalisation, and $\langle\tilde{Ξ}_{\mathrm{sp}},\tilde{Ξ}\rangle_{\mathrm D}=\mathrm{Tr}(\tilde{Ξ}_{\mathrm{sp}}^*\tilde{Ξ}\,i\vec e_x)$ is the Dirac pairing of the companion Solutions article. This is the **momentum-space** completeness relation: it sends every state into the two-dimensional space of the positive-frequency solutions of the one-sided pair, on which $D(p)\tilde{Ξ}_{\mathrm{sp}} = 2m\,c\tilde{Ξ}_{\mathrm{sp}}$, and applying it twice returns $2m\,c$ times itself,
 $$
-D(p)\bigl(D(p)\tilde{Ξ}_{\mathrm{sp}}\bigr)=2m\,D(p)\tilde{Ξ}_{\mathrm{sp}} \qquad\text{on shell}.
+D(p)\bigl(D(p)\tilde{Ξ}_{\mathrm{sp}}\bigr)=2m\,c\,D(p)\tilde{Ξ}_{\mathrm{sp}} \qquad\text{on shell}.
 $$
-It is not the two-sided dictionary equation of *The Dirac Equation in Biquaternionic Form*; the two are separated in the Gamma Formulation below. Divided by $2m$ the action is a projection of rank two, and its complement $\tilde{Ξ}_{\mathrm{sp}}\mapsto\tilde{Ξ}_{\mathrm{sp}}-\frac{1}{2\,m}D(p)\tilde{Ξ}_{\mathrm{sp}}$ is the negative-frequency projection; the two sum to the identity action. The averaged spin is therefore one projection, and its three terms are the whole of it.
+It is not the two-sided dictionary equation of *The Dirac Equation in Biquaternionic Form*; the two are separated in the Gamma Formulation below. Divided by $2m\,c$ the action is a projection of rank two, and its complement $\tilde{Ξ}_{\mathrm{sp}}\mapsto\tilde{Ξ}_{\mathrm{sp}}-\frac{1}{2\,m}D(p)\tilde{Ξ}_{\mathrm{sp}}$ is the negative-frequency projection; the two sum to the identity action. The averaged spin is therefore one projection, and its three terms are the whole of it.
 
 ### The resolved spin
 
@@ -356,7 +356,7 @@ D_{-s}(p):\quad \tilde{Ξ}_{\mathrm{sp}}\longmapsto \tfrac12\,D(p)\bigl(B_{-s}\t
 $$
 and they add term by term to $D(p)\tilde{Ξ}_{\mathrm{sp}}$, because $B_s\tilde{Ξ}_{\mathrm{sp}}+B_{-s}\tilde{Ξ}_{\mathrm{sp}}=2\tilde{Ξ}_{\mathrm{sp}}$. The spin enters the bracket in all four slots, so the split names the target's spin direction: the axial direction it uses is $s$ itself, no unit of the coefficient basis is singled out as its axis, and writing $-s$ for $s$ exchanges the two sums and changes nothing else.
 
-The identity was verified at $m=1.3$ and $\vec p=(0.4,-0.7,0.9)$, with $s$ a unit spacelike four-vector orthogonal to $p$. Each of the two, divided by $2m$, is a projection of rank one and trace one; the two are mutually orthogonal; and they sum to $D(p)$ to below $10^{-15}$. Spin resolution is therefore a decomposition of the shell into two orthogonal projections, and the unpolarized average is the trace part of the spin biquaternion, exactly as before.
+The identity was verified at $m=1.3$ and $\vec p=(0.4,-0.7,0.9)$, with $s$ a unit spacelike four-vector orthogonal to $p$. Each of the two, divided by $2m\,c$, is a projection of rank one and trace one; the two are mutually orthogonal; and they sum to $D(p)$ to below $10^{-15}$. Spin resolution is therefore a decomposition of the shell into two orthogonal projections, and the unpolarized average is the trace part of the spin biquaternion, exactly as before.
 
 Two further features of the split are properties of the algebra. Each term of $D(p)$ is a state multiplied by one unit on each side, and multiplying the state once more on either side composes the units of that side and multiplies the coefficients; the result is again a term of that shape. A split built from such multiplications therefore stays inside the algebra's own multiplication, and each resolved sum is a sum of terms shaped like the shell's three. And the cross-section difference between the two is twice the part of the squared amplitude that changes sign with $s$, which is why the asymmetry is a spin observable and why the photon's circular polarization and the electron's spin enter through the same axial direction.
 
@@ -503,7 +503,7 @@ in which the gradient acts by left multiplication only, the field is a section o
 $$
 D(p) = p_{0}\,\gamma_0-\sum_k p_{k}\,\gamma_k+m\,L_{\mathrm{pau},e_t}R_{\mathrm{pau},e_t} ,
 \qquad
-D(p)\tilde{Ξ}_{\mathrm{sp}} = 2m\,\tilde{Ξ}_{\mathrm{sp}} \ \ \text{on the positive-frequency solutions},
+D(p)\tilde{Ξ}_{\mathrm{sp}} = 2m\,c\,\tilde{Ξ}_{\mathrm{sp}} \ \ \text{on the positive-frequency solutions},
 $$
 
 The same expressions, in the axis-free display:
@@ -511,10 +511,10 @@ The same expressions, in the axis-free display:
 $$
 D(p) = p_{0}\,\gamma_0-\sum_k p_{k}\,\gamma_k+m\,L_{\mathrm{axf},e_t}R_{\mathrm{axf},e_t} ,
 \qquad
-D(p)\tilde{Ξ}_{\mathrm{sp}} = 2m\,\tilde{Ξ}_{\mathrm{sp}} \ \ \text{on the positive-frequency solutions},
+D(p)\tilde{Ξ}_{\mathrm{sp}} = 2m\,c\,\tilde{Ξ}_{\mathrm{sp}} \ \ \text{on the positive-frequency solutions},
 $$
 
-and the cell obeys $D(p)^2 = 2m\,D(p)$ on shell, so $D(p)/2m$ is the projector of rank two that the previous section uses. Its chirality is the cell $\gamma_5=-iR_{\mathrm{axf},\vec e_z}$, whose projectors $\tfrac12(1\pm\gamma_5)$ separate the chiral halves; the central sign $\chi=i\tilde{Ζ}_{\mathrm{ad}}$ is the same operator written centrally, and $\tfrac12(e_t\pm\xi)$ are its central idempotents.
+and the cell obeys $D(p)^2 = 2m\,c\,D(p)$ on shell, so $D(p)/2m\,c$ is the projector of rank two that the previous section uses. Its chirality is the cell $\gamma_5=-iR_{\mathrm{axf},\vec e_z}$, whose projectors $\tfrac12(1\pm\gamma_5)$ separate the chiral halves; the central sign $\chi=i\tilde{Ζ}_{\mathrm{ad}}$ is the same operator written centrally, and $\tfrac12(e_t\pm\xi)$ are its central idempotents.
 
 The second is Kravchenko's **two-sided** equation, the dictionary form on $\mathbb{B}$,
 $$
@@ -577,12 +577,12 @@ which sum back to $D(p)$, each being a projection of rank one; the asymmetry is 
 | $A(\omega,\theta)+B(\omega,\theta)\cos2\theta_{\mathrm{azm}}$ | Azimuthal modulation for a linearly polarized incident beam; $\lvert B/A\rvert$ is the analysing power |
 | $\vec s\cdot(\vec u_k\times\vec u_{\mathrm{out},k})$ | Electron-spin asymmetry (magnetic Compton) |
 | $\tilde{Ϛ}_{\Psi,e} = \frac12(e_t+i\vec s)\in\mathbb{B}_{\Psi}$ | Electron spin biquaternion; $\langle\tilde{Ϛ}_{\Psi,e}\rangle_{\natural} = \frac14(1-\lvert\vec s\rvert^2)$ |
-| $D(p)$ | The shell action, $\tilde{Ξ}_{\mathrm{sp}}\mapsto ip_0\tilde{Ξ}_{\mathrm{sp}}\vec e_x-\sum_k ip_k\vec e_k\tilde{Ξ}_{\mathrm{sp}}\vec e_y+k_m\tilde{Ξ}_{\mathrm{sp}}$; the spin sum $\sum_r\tilde w^{(r)}\langle\tilde w^{(r)},\cdot\rangle_{\mathrm D}$, a projection of rank two when divided by $2m$ |
+| $D(p)$ | The shell action, $\tilde{Ξ}_{\mathrm{sp}}\mapsto ip_0\tilde{Ξ}_{\mathrm{sp}}\vec e_x-\sum_k ip_k\vec e_k\tilde{Ξ}_{\mathrm{sp}}\vec e_y+k_m\tilde{Ξ}_{\mathrm{sp}}$; the spin sum $\sum_r\tilde w^{(r)}\langle\tilde w^{(r)},\cdot\rangle_{\mathrm D}$, a projection of rank two when divided by $2m\,c$ |
 | $\Sigma_s$ | Spin action, $\tilde{Ξ}_{\mathrm{sp}}\mapsto is_0\tilde{Ξ}_{\mathrm{sp}}\vec e_x-\sum_k is_k\vec e_k\tilde{Ξ}_{\mathrm{sp}}\vec e_y$; the shell's pattern with $s$ in place of $p$ and no mass term |
 | $B_s$ | The bracket of the split, $\tilde{Ξ}_{\mathrm{sp}}\mapsto\tilde{Ξ}_{\mathrm{sp}}+s_0\tilde{Ξ}_{\mathrm{sp}}\vec e_y+\sum_k s_k\vec e_k\tilde{Ξ}_{\mathrm{sp}}\vec e_x$; half of it is a projection, and $B_s+B_{-s}$ is twice the identity action |
 | $D_s(p)$ | The resolved shell, $\tilde{Ξ}_{\mathrm{sp}}\mapsto\tfrac12 D(p)(B_s\tilde{Ξ}_{\mathrm{sp}})$; $\frac{1}{2\,m}D_s$ is a projection of rank one, and $D_s+D_{-s}=D(p)$ |
 | $s$, $s\cdot p=0$, $s^2=-1$ | Spin four-vector of the target; rest frame $(0,\vec s)$, with $\vec s$ the Bloch vector of the state |
-| $\langle\tilde{Ξ}_{\mathrm{sp}},\tilde{Ξ}\rangle_{\mathrm D}=\mathrm{Tr}(\tilde{Ξ}_{\mathrm{sp}}^*\tilde{Ξ}\,i\vec e_x)$ | Dirac pairing; $\langle\tilde w,\tilde w\rangle_{\mathrm D}=2m$ |
+| $\langle\tilde{Ξ}_{\mathrm{sp}},\tilde{Ξ}\rangle_{\mathrm D}=\mathrm{Tr}(\tilde{Ξ}_{\mathrm{sp}}^*\tilde{Ξ}\,i\vec e_x)$ | Dirac pairing; $\langle\tilde w,\tilde w\rangle_{\mathrm D}=2m\,c$ |
 
 ## Further Reading
 

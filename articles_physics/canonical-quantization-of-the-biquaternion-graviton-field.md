@@ -146,10 +146,10 @@ The helicity argument also shows why the massless count is two and not more, and
 In the transverse-traceless gauge the field carries only the two physical modes, and its expansion is
 
 $$
-h_{ij}^{\mathrm{TT}}(x) = \int\frac{d^3p}{(2\pi)^3}\frac{1}{\sqrt{2E_p}}
+h_{ij}^{\mathrm{TT}}(x) = \int\frac{d^3p}{(2\pi\hbar)^3}\sqrt{\frac{\hbar c}{2E_p}}
 \sum_{r=+,\times}\left[
-a_r(\vec p)\,\varepsilon_{r ij}(\vec u_p)\,\exp(-ip\cdot x)
-+ a_r^\dagger(\vec p)\,\varepsilon_{r ij}^{*}(\vec u_p)\,\exp(+ip\cdot x)
+a_r(\vec p)\,\varepsilon_{r ij}(\vec u_p)\,\exp(-ip\cdot x/\hbar)
++ a_r^\dagger(\vec p)\,\varepsilon_{r ij}^{*}(\vec u_p)\,\exp(+ip\cdot x/\hbar)
 \right] ,
 $$
 
@@ -161,7 +161,7 @@ The graviton is a boson, and the field is quantized with commutators:
 
 $$
 \left[a_r(\vec p),\,a_s^\dagger(\vec k_\Phi)\right]
-= (2\pi)^3\,\delta_{rs}\,\delta^{(3)}(\vec p-\vec k_\Phi) ,
+= (2\pi\hbar)^3\,\delta_{rs}\,\delta^{(3)}(\vec p-\hbar\vec k_\Phi) ,
 \qquad
 \left[a_r(\vec p),\,a_s(\vec k_\Phi)\right] = 0 .
 $$
@@ -261,7 +261,7 @@ of dimension five. The decomposition $6=1+5$ is therefore the statement that the
 
 The graviton is the massless spin-two field of the linearized Einstein theory, with the gauge symmetry $h_{\mu\nu}\mapsto h_{\mu\nu}+\partial/\partial R_\mu\,\zeta_\nu+\partial/\partial R_\nu\,\zeta_\mu$ and the linearized Riemann tensor as its gauge-invariant field strength. A symmetric tensor has ten components; the gauge removes four and the constraints four more, leaving the two transverse-traceless polarizations of helicity $\pm2$. The transverse-traceless projector $P_{ij,kl}=\tfrac12(\Pi_{ik}\Pi_{jl}+\Pi_{il}\Pi_{jk})-\tfrac12\Pi_{ij}\Pi_{kl}$ is idempotent, has trace two, kills the pure-gauge and trace modes, and has a transverse-traceless complement of dimension two; all of these were verified to machine precision, and the two polarizations were verified to be its fixed points.
 
-In the biquaternion framework the carrier is the symmetric square of the material vector, $V\odot V$, whose decomposition is $0\oplus2$ with $6=1+5$: the trace is the spin-zero singlet and the trace-free part is the spin-two carrier of dimension five, the trace being removed with the algebra's bilinear form. The massless gauge then removes three of the five, leaving the two helicities $\pm2$. The canonical quantization gives the transverse-traceless mode expansion with two polarizations, the bosonic commutators $[a_r(\vec p),a_s^\dagger(\vec k_\Phi)]=(2\pi)^3\delta_{rs}\delta^{(3)}$, and the Fock space; the covariant quantization requires the de Donder gauge fixing and Faddeev–Popov vector ghosts, with the standard BRST structure. The propagator's numerator is the standard de Donder structure, and the massive Fierz–Pauli theory has five polarizations whose massless limit exhibits the van Dam–Veltman–Zakharov discontinuity.
+In the biquaternion framework the carrier is the symmetric square of the material vector, $V\odot V$, whose decomposition is $0\oplus2$ with $6=1+5$: the trace is the spin-zero singlet and the trace-free part is the spin-two carrier of dimension five, the trace being removed with the algebra's bilinear form. The massless gauge then removes three of the five, leaving the two helicities $\pm2$. The canonical quantization gives the transverse-traceless mode expansion with two polarizations, the bosonic commutators $[a_r(\vec p),a_s^\dagger(\vec k_\Phi)]=(2\pi\hbar)^3\delta_{rs}\delta^{(3)}$, and the Fock space; the covariant quantization requires the de Donder gauge fixing and Faddeev–Popov vector ghosts, with the standard BRST structure. The propagator's numerator is the standard de Donder structure, and the massive Fierz–Pauli theory has five polarizations whose massless limit exhibits the van Dam–Veltman–Zakharov discontinuity.
 
 The framework's statement about the graviton is therefore the same as its statement about the other higher spins: the field is the top component of a tensor product of the material vector with a lower-spin carrier, selected by a projector built from the algebra's invariant form. The graviton is the symmetric-square case, the trace-free part of $V\odot V$; and the count, five massive and two massless, follows from the decomposition and the gauge. What the framework does not supply is the coupling to $T_{\mu\nu}$, the equivalence principle, Newton's constant, the odd coordinates, or any empirical content.
 
@@ -281,7 +281,7 @@ The framework's statement about the graviton is therefore the same as its statem
 | $\varepsilon^{+}_{ij},\varepsilon^{\times}_{ij}$ | Two polarizations; helicities $\pm2$ |
 | $V\odot V=0\oplus2$, $6=1+5$ | Symmetric square of the material vector and its decomposition |
 | $h_{ij}^{\mathrm{TT}}(x)$ | Transverse-traceless mode expansion |
-| $[a_r(\vec p),a_s^\dagger(\vec k_\Phi)]=(2\pi)^3\delta_{rs}\delta^{(3)}(\vec p-\vec k_\Phi)$ | Bosonic mode algebra |
+| $[a_r(\vec p),a_s^\dagger(\vec k_\Phi)]=(2\pi\hbar)^3\delta_{rs}\delta^{(3)}(\vec p-\hbar\vec k_\Phi)$ | Bosonic mode algebra |
 | $\mathcal{P}_{\mu\nu,\rho\sigma}=\tfrac12(\delta_{\mu\rho}\delta_{\nu\sigma}+\delta_{\mu\sigma}\delta_{\nu\rho})-\tfrac{1}{D-2}\delta_{\mu\nu}\delta_{\rho\sigma}$ | Propagator numerator in the de Donder gauge; the coefficient of the trace term is fixed by the gauge fixing |
 | Fierz–Pauli | Massive spin-two theory; five polarizations; vDVZ discontinuity |
 

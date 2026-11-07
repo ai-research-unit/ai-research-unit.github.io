@@ -131,10 +131,10 @@ Because the in- and out-mode operators differ, the in-vacuum is not annihilated 
 
 $$
 \langle 0_{\mathrm{in}}|{a_{\mathrm{fop},\vec k_\Phi}}_{\mathrm{out}}^{{}^{*}}{a_{\mathrm{fop},\vec k_\Phi}}_{\mathrm{out}}|0_{\mathrm{in}}\rangle
-=|\beta_{\vec k_\Phi}|^2\,(2\pi)^3\delta^{(3)}(0),
+=|\beta_{\vec k_\Phi}|^2\,(2\pi\hbar)^3\delta^{(3)}(0),
 $$
 
-with the same value for the antiparticle mode. The delta function is the volume factor of the continuum normalization, $[a_{\mathrm{fop},\vec k_\Phi},a_{\mathrm{fop},\vec k_2}^{\dagger}]=(2\pi)^3\delta^{(3)}(\vec k_\Phi-\vec k_2)$, and the convention-free statement is the one per mode: the **mean number of created pairs** per mode is $|\beta_{\vec k_\Phi}|^2$, and the total pair number density is the momentum integral
+with the same value for the antiparticle mode. The delta function is the volume factor of the continuum normalization, $[a_{\mathrm{fop},\vec k_\Phi},a_{\mathrm{fop},\vec k_2}^{\dagger}]=(2\pi)^3\,\delta^{(3)}(\vec k_\Phi-\vec k_2)$, and the convention-free statement is the one per mode: the **mean number of created pairs** per mode is $|\beta_{\vec k_\Phi}|^2$, and the total pair number density is the momentum integral
 
 $$
 \frac{N_{\mathrm{pairs}}}{V}=\int\!\frac{d^3k}{(2\pi)^3}\,|\beta_{\vec k_\Phi}|^2 .
@@ -275,7 +275,7 @@ The process is standard scalar quantum field theory in an external background, t
 | $\langle N_{\mathrm{pairs}}\rangle=\vert\beta_{\vec k_\Phi}\vert^2$ | Mean number of created pairs per mode |
 | $\vert\langle0_{\mathrm{out}}\vert0_{\mathrm{in}}\rangle\vert^2=1/\vert\alpha_{\vec k_\Phi}\vert^2$ | Vacuum persistence amplitude |
 | $\vert\beta\vert^2=(\omega_2-\omega_1)^2/(4\omega_1\omega_2)$ | Sudden-quench result |
-| $Ϙ_{\mathrm{fop}}=\int\frac{d^3p}{(2\pi)^3}(a_{\mathrm{fop}}^{\dagger}a_{\mathrm{fop}}-b_{\mathrm{fop}}^{\dagger}b_{\mathrm{fop}})$ | Conserved $\mathrm{U}(1)$ charge; pairs have $Ϙ=0$ |
+| $Ϙ_{\mathrm{fop}}=\int\frac{d^3p}{(2\pi\hbar)^3}(a_{\mathrm{fop}}^{\dagger}a_{\mathrm{fop}}-b_{\mathrm{fop}}^{\dagger}b_{\mathrm{fop}})$ | Conserved $\mathrm{U}(1)$ charge; pairs have $Ϙ=0$ |
 | $\mathrm{Tr}(e_t)=2$, $\mathrm{Tr}[\tilde Q_2,\tilde{Q}_1]=0$ | Trace identity; no bosonic mode in $\mathbb{B}$ |
 
 ## Further Reading
