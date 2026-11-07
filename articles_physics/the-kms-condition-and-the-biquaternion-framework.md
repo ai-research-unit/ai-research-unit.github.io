@@ -146,7 +146,7 @@ $$
 
 The complexified time direction of $\mathbb{B}_{\Phi}$ — the direction in which the KMS continuation takes place — is therefore a specific 2-dimensional complex subspace of $\mathbb{B}$, spanned by the imaginary time coefficient $i c r'_t$ of $\mathbb{B}_{\Phi}$ and the real time coefficient $c r_t$ of $\mathbb{B}_{\Psi}$. The KMS condition, which requires analyticity in this complexified direction, has a natural home in the algebra.
 
-**Third, the modular Hamiltonian lives in $\mathbb{B}_{\Psi}$.** In the algebraic formulation of the KMS condition, the modular Hamiltonian $K = -\log \Delta$ (where $\Delta$ is the modular operator) generates the modular evolution. In a finite-dimensional setting, $\Delta$ is the density matrix $\rho$, and $K = -\log \rho$. The density matrix is a positive Hermitian element of the algebra, so $K = -\log \rho$ is a **Hermitian element** of the algebra, and therefore lies in the Hermitian subspace $\mathbb{B}_{\Psi}$. This is an algebraic fact, not an interpretation. The interpretive content is that the modular Hamiltonian, being a Hermitian element, is naturally an object of the informational sector: temperature, modular evolution, and the imaginary-time shift are all encoded in $\mathbb{B}_{\Psi}$-valued operators acting on $\mathbb{B}_{\Phi}$-valued fields.
+**Third, the modular Hamiltonian lives in $\mathbb{B}_{\Psi}$.** In the algebraic formulation of the KMS condition, the modular Hamiltonian $H_{\mathrm{modular}}=-\log\Delta$ (where $\Delta$ is the modular operator) generates the modular evolution. In a finite-dimensional setting, $\Delta$ is the density matrix $\rho$, and $H_{\mathrm{modular}}=-\log\rho$. The density matrix is a positive Hermitian element of the algebra, so $H_{\mathrm{modular}}=-\log\rho$ is a **Hermitian element** of the algebra, and therefore lies in the Hermitian subspace $\mathbb{B}_{\Psi}$. This is an algebraic fact, not an interpretation. The interpretive content is that the modular Hamiltonian, being a Hermitian element, is naturally an object of the informational sector: temperature, modular evolution, and the imaginary-time shift are all encoded in $\mathbb{B}_{\Psi}$-valued operators acting on $\mathbb{B}_{\Phi}$-valued fields.
 
 ### The Thermal Route and the Rotation
 
@@ -184,7 +184,7 @@ The fermionic KMS condition might then be readable as a statement about the spin
 
 - The material sector $\mathbb{B}_{\Phi}$ of the biquaternion algebra and its intrinsic imaginary time coordinate $i c r'_t$.
 - The complexification of $\mathbb{B}_{\Phi}$ as the full algebra $\mathbb{B}$.
-- The modular Hamiltonian $K = -\log \rho$ is a Hermitian element of the algebra, hence lies in $\mathbb{B}_{\Psi}$.
+- The modular Hamiltonian $H_{\mathrm{modular}}=-\log\rho$ is a Hermitian element of the algebra, hence lies in $\mathbb{B}_{\Psi}$.
 - The identity $\langle i\omega_n e_t+\vec p,\,i\omega_n e_t+\vec p\rangle_{*} = \langle -\omega_n e_t+\vec p\rangle_{\natural}$ between the Hermitian form at a material element and the biquaternion norm at the rotated one; the material-sector thermal route and the rotated route therefore agree.
 
 **Interpretation.**
@@ -203,7 +203,7 @@ The fermionic KMS condition might then be readable as a statement about the spin
 
 The following directions seem promising.
 
-**1. The modular Hamiltonian in $\mathbb{B}_{\Psi}$.** The modular Hamiltonian $K$ is a Hermitian element of $\mathbb{B}$, hence lies in $\mathbb{B}_{\Psi}$. What is its further structure? What are its eigenvalues in a specific thermal state, and how do they relate to the temperature?
+**1. The modular Hamiltonian in $\mathbb{B}_{\Psi}$.** The modular Hamiltonian $H_{\mathrm{modular}}$ is a Hermitian element of $\mathbb{B}$, hence lies in $\mathbb{B}_{\Psi}$. What is its further structure? What are its eigenvalues in a specific thermal state, and how do they relate to the temperature?
 
 **2. The KMS condition for biquaternion-valued fields.** The KMS condition is usually stated for scalar or spinor fields. What is the correct statement when the operators take values in the biquaternion algebra? Do the additional degrees of freedom (the four complex coefficients) introduce new structure?
 
@@ -223,7 +223,7 @@ The KMS condition has imaginary time built into it. The analytic continuation $r
 
 The material sector $\mathbb{B}_{\Phi}$ of the biquaternion algebra has imaginary time intrinsically: its time coordinate is $i c r'_t$, which is imaginary by construction. The KMS condition, which is stated in terms of the imaginary time, acquires a natural algebraic interpretation in this sector. The shift $r'_t \to r'_t + i\beta$ is a shift in the coefficient $q'_t = c r'_{t}$ by an imaginary amount, and the complexified time direction in which the KMS continuation takes place is the sum of the imaginary time direction of $\mathbb{B}_{\Phi}$ and the real time direction of $\mathbb{B}_{\Psi}$.
 
-The modular Hamiltonian $K = -\log \rho$ of the KMS condition is a Hermitian element of the algebra, and therefore lies in the informational sector $\mathbb{B}_{\Psi}$. This is an algebraic fact, not an interpretation. Its interpretive content is that the modular evolution, the temperature, and the imaginary-time shift are all encoded in $\mathbb{B}_{\Psi}$-valued operators acting on $\mathbb{B}_{\Phi}$-valued fields. This provides a natural structural interpretation of the KMS condition, in which the material and informational sectors are connected through the thermal structure.
+The modular Hamiltonian $H_{\mathrm{modular}}=-\log\rho$ of the KMS condition is a Hermitian element of the algebra, and therefore lies in the informational sector $\mathbb{B}_{\Psi}$. This is an algebraic fact, not an interpretation. Its interpretive content is that the modular evolution, the temperature, and the imaginary-time shift are all encoded in $\mathbb{B}_{\Psi}$-valued operators acting on $\mathbb{B}_{\Phi}$-valued fields. This provides a natural structural interpretation of the KMS condition, in which the material and informational sectors are connected through the thermal structure.
 
 The thermal formalism downstream of the condition is usually reached by the Wick rotation, and it is reached without one: the wave biquaternion can stay in $\mathbb{B}_{\Phi}$ as $i\omega_n e_t+\vec p$, where its positivity is the Hermitian form's, and the thermal correlator's positivity is the central-root case of the Bochner theorem. The rotation is the standard route; the material-sector route is the alternative, and the two agree by an identity.
 
@@ -246,7 +246,7 @@ The reformulation is an interpretation, not a derivation. The KMS condition is e
 | $F_{AB}(r'_t + i\beta) = F_{BA}(-r'_t)$ | KMS condition |
 | $\tilde{P}_E = i\omega_n e_t+\vec p \in \mathbb{B}_{\Phi}$ | Euclidean wave biquaternion of the material (no-rotation) route |
 | $\langle\tilde{Q}_1,\tilde{Q}_2\rangle_{*} = \mathrm{Sc}(\tilde{Q}_1\tilde{Q}_2^{*}) = \sum_\mu Q_{1\mu}\overline{Q_{2\mu}}$ | Hermitian form; carries the thermal positivity without a rotation |
-| $K = -\log \rho$ | Modular Hamiltonian (Hermitian, in $\mathbb{B}_{\Psi}$) |
+| $H_{\mathrm{modular}}=-\log\rho$ | Modular Hamiltonian (Hermitian, in $\mathbb{B}_{\Psi}$) |
 | $\omega_n = 2\pi n/\beta$ | Bosonic Matsubara frequencies |
 | $\omega_n = (2n+1)\pi/\beta$ | Fermionic Matsubara frequencies |
 

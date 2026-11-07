@@ -166,10 +166,10 @@ Two further facts tie the partition function to that structure, and both are con
 First, the **normalization of the thermal state** is what makes the modular Hamiltonian a Hermitian element. From $\tilde{Ϛ}=\exp(-\beta H)/Z$,
 
 $$
-K=-\log\tilde{Ϛ}=\beta\tilde R_\Psi+\big(\log Z\big)e_t,
+H_{\mathrm{modular}}=-\log\tilde{Ϛ}=\beta\tilde R_\Psi+\big(\log Z\big)e_t,
 $$
 
-which is Hermitian, hence an element of $\mathbb{B}_{\Psi}$; the log-partition function $\log Z$ appears as the real scalar part of the modular Hamiltonian. The companion article records the general fact that $K=-\log\tilde{Ϛ}$ lies in $\mathbb{B}_{\Psi}$; the partition function is precisely the additive scalar that makes this true for the Gibbs state.
+which is Hermitian, hence an element of $\mathbb{B}_{\Psi}$; the log-partition function $\log Z$ appears as the real scalar part of the modular Hamiltonian. The companion article records the general fact that $H_{\mathrm{modular}}=-\log\tilde{Ϛ}$ lies in $\mathbb{B}_{\Psi}$; the partition function is precisely the additive scalar that makes this true for the Gibbs state.
 
 Second, the **KMS boundary relation** $F_{AB}(r'_t+i\beta)=F_{BA}(-r'_t)$ of the companion article is the imaginary-time statement whose finite-dimensional shadow is the Gibbs form used here. The partition function is the normalization of the KMS state, and the strip width in that relation is the same $\beta$ that measures the imaginary-time displacement of the thermal trace. Nothing in the present article changes the KMS boundary relation; the partition function presupposes it.
 
@@ -237,7 +237,7 @@ $$
 
 the ordinary two-level partition function with energies $c r_t\pm|\vec r_\Psi|$. The thermal state is $\tilde{Ϛ}=\tfrac12(e_t+i\vec r)$ with $\vec r=-\tanh(\beta|\vec r_\Psi|)\vec u_\Psi$, and the internal energy $E=c r_t-|\vec r_\Psi|\tanh(\beta|\vec r_\Psi|)$ agrees with $-\partial/\partial \beta\log Z$.
 
-The trace keeps the scalar part of the thermal operator and discards its imaginary vector part. That discarded part is the coherence — the orientation of the thermal polarization — and it is invisible to $Z$ but visible in expectation values and KMS correlation functions. It is not the material sector: for Hermitian $\tilde R_\Psi$ the thermal operator has no $\mathbb{B}_{\Phi}$ component. The material sector enters through imaginary time, since $Z=\mathrm{Tr}\,\tilde Q(-i\beta)$ is the trace of the evolution operator continued along the $i c r'_t$ direction, with the thermal circle of circumference $\beta$ lying along the $\mathbb{B}_{\Phi}$ time. The modular Hamiltonian $K=-\log\tilde{Ϛ}=\beta\tilde R_\Psi+(\log Z)e_t$ lies in $\mathbb{B}_{\Psi}$, with the log-partition function as its real scalar part, in agreement with the KMS article.
+The trace keeps the scalar part of the thermal operator and discards its imaginary vector part. That discarded part is the coherence — the orientation of the thermal polarization — and it is invisible to $Z$ but visible in expectation values and KMS correlation functions. It is not the material sector: for Hermitian $\tilde R_\Psi$ the thermal operator has no $\mathbb{B}_{\Phi}$ component. The material sector enters through imaginary time, since $Z=\mathrm{Tr}\,\tilde Q(-i\beta)$ is the trace of the evolution operator continued along the $i c r'_t$ direction, with the thermal circle of circumference $\beta$ lying along the $\mathbb{B}_{\Phi}$ time. The modular Hamiltonian $H_{\mathrm{modular}}=-\log\tilde{Ϛ}=\beta\tilde R_\Psi+(\log Z)e_t$ lies in $\mathbb{B}_{\Psi}$, with the log-partition function as its real scalar part, in agreement with the KMS article.
 
 The algebra does not force a modification. A genuine modification appears only if the generator is permitted an $\mathbb{B}_{\Phi}$ component, in which case $Z$ can become complex, with the imaginary scalar part of the generator producing a phase and its real vector part an oscillatory modulus. That extension is possible, connects to complex temperature and imaginary chemical potential, and is not forced by the framework; it is left open.
 
@@ -259,7 +259,7 @@ The algebra does not force a modification. A genuine modification appears only i
 | $\exp(-\beta H)=\exp(-\beta c r_t)\big(\cosh(\beta|\vec r_\Psi|)e_t-i\sinh(\beta|\vec r_\Psi|)\vec u_\Psi\big)$ | Thermal operator |
 | $\vec r=-\tanh(\beta|\vec r_\Psi|)\vec u_\Psi$ | Bloch vector of the thermal state |
 | $F=-\beta^{-1}\log Z$, $E=-\partial/\partial \beta\log Z$ | Free energy, internal energy |
-| $K=-\log\tilde{Ϛ}=\beta\tilde R_\Psi+(\log Z)e_t$ | Modular Hamiltonian (in $\mathbb{B}_{\Psi}$) |
+| $H_{\mathrm{modular}}=-\log\tilde{Ϛ}=\beta\tilde R_\Psi+(\log Z)e_t$ | Modular Hamiltonian (in $\mathbb{B}_{\Psi}$) |
 | $\langle\tilde Q\rangle_{\natural} = \langle\tilde Q,\tilde Q\rangle_{\natural}=\tilde Q\tilde Q^{\natural}$ | Biquaternion norm |
 | $\beta=1/(k_BT)$ ($\hbar=1$) | Inverse temperature |
 | $\langle\tilde{Q}_1,\tilde{Q}_2\rangle$ | the general plain bilinear form, the scalar part of the general plain bilinear product, $\mathrm{Sc}(\tilde{Q}_1\tilde{Q}_2)$ |
@@ -268,11 +268,11 @@ The algebra does not force a modification. A genuine modification appears only i
 ## Further Reading
 
 - L. D. Landau and E. M. Lifshitz, *Statistical Physics, Part 1* (Pergamon, 1980), for the partition function, the Gibbs state, and the thermodynamic potentials.
-- R. K. Pathria and P. D. Beale, *Statistical Mechanics* (Butterworth–Heinemann, 2011), for the standard treatment of the canonical ensemble.
-- K. Huang, *Statistical Mechanics* (Wiley, 1987), for the relation between the partition function and the spectrum.
+- R. H_{\mathrm{modular}}. Pathria and P. D. Beale, *Statistical Mechanics* (Butterworth–Heinemann, 2011), for the standard treatment of the canonical ensemble.
+- H_{\mathrm{modular}}. Huang, *Statistical Mechanics* (Wiley, 1987), for the relation between the partition function and the spectrum.
 - M. Le Bellac, *Thermal Field Theory* (Cambridge, 1996), for the imaginary-time and Matsubara formulation in which $Z$ is a Euclidean trace.
 - R. Haag, N. M. Hugenholtz, and M. Winnink, "On the equilibrium states in quantum statistical mechanics," *Communications in Mathematical Physics* **5** (1967) 215–236, for the KMS characterization of thermal equilibrium.
-- M. Takesaki, *Tomita's Theory of Modular Hilbert Algebras and Its Applications* (Springer, 1970), for the modular Hamiltonian $K=-\log\rho$.
+- M. Takesaki, *Tomita's Theory of Modular Hilbert Algebras and Its Applications* (Springer, 1970), for the modular Hamiltonian $H_{\mathrm{modular}}=-\log\rho$.
 - A. Roberge and N. Weiss, "Gauge theories with imaginary chemical potential and the phases of QCD," *Nuclear Physics B* **275** (1986) 734–745, for the imaginary-chemical-potential technique alluded to in the text.
 - C. M. Bender and S. Boettcher, "Real spectra in non-Hermitian Hamiltonians having $\mathcal{PT}$ symmetry," *Physical Review Letters* **80** (1998) 5243–5246, for non-Hermitian generators with controlled spectra.
 - Companion articles: [The KMS Condition and the Biquaternion Framework](the-kms-condition-and-the-biquaternion-framework.html), for the imaginary-time and modular structure; [The Informational Sector: States, Observables and Probability](the-informational-sector-states-observables-and-probability.html), for the trace formula and the action of $\mathbb{B}_{\Psi}$; [The Born Rule from the Hermitian Form — Derivation and Comparison](the-born-rule-from-the-hermitian-form-derivation-and-comparison.html), for what the Hermitian form, read through the trace, derives and what it restates; [Quantum Physics in Biquaternionic Form](quantum-physics-in-biquaternionic-form.html), for the thermal state as an element of the Bloch ball.

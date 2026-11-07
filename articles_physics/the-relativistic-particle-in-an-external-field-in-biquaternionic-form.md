@@ -211,7 +211,7 @@ $$
 \tilde{\mathcal F}_{\mathrm{frc}}\tilde{P}^{\natural}{}_{\mathrm{kin}} + \tilde{P}_{\mathrm{kin}}\tilde{\mathcal F}_{\mathrm{frc}}^{\natural} = 0,
 $$
 
-the biquaternion form of $\sum_\mu\varepsilon_\mu K_\mu P_\mu = 0$: the Lorentz force rotates the four-momentum in $\mathbb{B}_{\Phi}$ but does not change its biquaternion norm, so the rest mass is preserved. Second, because $\tilde{\mathcal F}_{\mathrm{frc}}=d\tilde{P}_{\mathrm{kin}}/d\tau$ is a **proper-time** derivative, the equation is a statement about one worldline; the rest-mass preservation above is the statement that the norm of *that* four-momentum is constant, and it is not a conservation law for a system of bodies (see the closing section on the proper-time restriction).
+the biquaternion form of $\sum_\mu\varepsilon_\mu F_{\mathrm{lor},\mu} P_\mu = 0$: the Lorentz force rotates the four-momentum in $\mathbb{B}_{\Phi}$ but does not change its biquaternion norm, so the rest mass is preserved. Second, because $\tilde{\mathcal F}_{\mathrm{frc}}=d\tilde{P}_{\mathrm{kin}}/d\tau$ is a **proper-time** derivative, the equation is a statement about one worldline; the rest-mass preservation above is the statement that the norm of *that* four-momentum is constant, and it is not a conservation law for a system of bodies (see the closing section on the proper-time restriction).
 
 ## Case I: A Purely Electric Field
 

@@ -14,13 +14,13 @@ The contributions divide cleanly, and the division is the content of the article
 $$
 \langle \tilde{Q},\tilde{Q}_1\rangle = \mathrm{Re}\,\mathrm{Tr}\big(\tilde{Q}^{*}\tilde{Q}_1\big),
 $$
-which is the positive-definite Hilbert–Schmidt form on the algebra; the signature split belongs to the biquaternion norm $\langle\cdot\rangle_{\natural}$, not to this pairing. For a field $\tilde{Ξ}=\tilde{Ξ}_-+\tilde{Ξ}_+$ and a central kinetic operator $K_{\mathrm{kin}}=\Box-k_m^{2}$ the quadratic action is
+which is the positive-definite Hilbert–Schmidt form on the algebra; the signature split belongs to the biquaternion norm $\langle\cdot\rangle_{\natural}$, not to this pairing. For a field $\tilde{Ξ}=\tilde{Ξ}_-+\tilde{Ξ}_+$ and a central kinetic operator $W_{\mathrm{kinetic}}=\Box-k_m^{2}$ the quadratic action is
 $$
-S[\tilde{Ξ}] = \int d^4r\; \Big\langle \tilde{Ξ}, K_{\mathrm{kin}}\tilde{Ξ}\Big\rangle,
+S[\tilde{Ξ}] = \int d^4r\; \Big\langle \tilde{Ξ}, W_{\mathrm{kinetic}}\tilde{Ξ}\Big\rangle,
 \qquad
 \Box = \tilde{\nabla}\tilde{\nabla}^{\natural} = \sum_\mu\partial^2/\partial R_\mu^2 .
 $$
-The plain form, read as the trace pairing, is what makes the exponent a number and not a biquaternion. Because $K_{\mathrm{kin}}$ is central it preserves each sector, and the sectors are **orthogonal** under the real form,
+The plain form, read as the trace pairing, is what makes the exponent a number and not a biquaternion. Because $W_{\mathrm{kinetic}}$ is central it preserves each sector, and the sectors are **orthogonal** under the real form,
 $$
 \big\langle \tilde{Ξ}_-,\tilde{Ξ}_+\big\rangle = 0
 \qquad\text{for all } \tilde{Ξ}_\pm\in\mathbb{B}_{\Psi}\cup\mathbb{B}_{\Phi} ,
@@ -75,18 +75,18 @@ $$
 $$
 is the *scalar part* of $\tilde{Q}$; it is a complex number in general, and the physical action is its real part, equivalently the real bilinear form $\langle\tilde{Q},\tilde{Q}_1\rangle_{*}=\mathrm{Re}\,\mathrm{Tr}(\tilde{Q}^{*}\tilde{Q}_1)$. For a quadratic theory the natural action is
 $$
-S[\tilde{Ξ}] = \int d^4r\;\Big\langle \tilde{Ξ},K_{\mathrm{kin}}\tilde{Ξ}\Big\rangle
+S[\tilde{Ξ}] = \int d^4r\;\Big\langle \tilde{Ξ},W_{\mathrm{kinetic}}\tilde{Ξ}\Big\rangle
 + S_{\mathrm{int}}[\tilde{Ξ}],
 \qquad
-K_{\mathrm{kin}} = \Box-k_m^{2} ,
+W_{\mathrm{kinetic}} = \Box-k_m^{2} ,
 $$
-where $K_{\mathrm{kin}}$ is built from the central d'Alembertian and a central mass, and $S_{\mathrm{int}}$ collects interactions. Three properties of this action are the algebra's.
+where $W_{\mathrm{kinetic}}$ is built from the central d'Alembertian and a central mass, and $S_{\mathrm{int}}$ collects interactions. Three properties of this action are the algebra's.
 
 1. **It is a scalar, obtained by the trace.** The integrand is the real part of a trace, hence a number, and the integral is a number. The plain form, read as the trace pairing, is exactly the operation that converts the algebra-valued field into an action. This is the field-theoretic counterpart of the propagator article's trace formula.
-2. **It is invariant under the biquaternion-norm isometries.** The quadratic term with $K_{\mathrm{kin}}$ central is unchanged by left multiplication $\tilde{Ξ}\mapsto\tilde U\tilde{Ξ}$ and right multiplication $\tilde{Ξ}\mapsto\tilde{Ξ}\tilde V$ by unit real quaternions, $\langle\tilde U\rangle_{\natural} = \langle\tilde U,\tilde U\rangle_{\natural}=\langle\tilde V\rangle_{\natural}=e_t$, since $\tilde U^{*}\tilde U=\tilde V\tilde V^{*}=e_t$. The free biquaternion field therefore carries an $SU(2)\times SU(2)$ global symmetry at the level of the quadratic action. Which part of it survives interactions is a question about $S_{\mathrm{int}}$, not about the quadratic term.
-3. **It is sector-blind when $K_{\mathrm{kin}}$ is central.** A central $K_{\mathrm{kin}}$ commutes with the projections onto $\mathbb{B}_{\Psi}$ and $\mathbb{B}_{\Phi}$, so it does not mix the sectors. The consequences are computed in the next two sections.
+2. **It is invariant under the biquaternion-norm isometries.** The quadratic term with $W_{\mathrm{kinetic}}$ central is unchanged by left multiplication $\tilde{Ξ}\mapsto\tilde U\tilde{Ξ}$ and right multiplication $\tilde{Ξ}\mapsto\tilde{Ξ}\tilde V$ by unit real quaternions, $\langle\tilde U\rangle_{\natural} = \langle\tilde U,\tilde U\rangle_{\natural}=\langle\tilde V\rangle_{\natural}=e_t$, since $\tilde U^{*}\tilde U=\tilde V\tilde V^{*}=e_t$. The free biquaternion field therefore carries an $SU(2)\times SU(2)$ global symmetry at the level of the quadratic action. Which part of it survives interactions is a question about $S_{\mathrm{int}}$, not about the quadratic term.
+3. **It is sector-blind when $W_{\mathrm{kinetic}}$ is central.** A central $W_{\mathrm{kinetic}}$ commutes with the projections onto $\mathbb{B}_{\Psi}$ and $\mathbb{B}_{\Phi}$, so it does not mix the sectors. The consequences are computed in the next two sections.
 
-The mass term requires a word of care, because the framework's **Dirac** mass is not central. As *The Dirac Equation in Biquaternionic Form* records, the Dirac mass term is linear and chirality-off-diagonal, $\tilde\nabla\tilde{Ξ}_{\mathrm{sp},R} = k_m\tilde{Ξ}_{\mathrm{sp},L}$, $\tilde\nabla^{\natural}\tilde{Ξ}_{\mathrm{sp},L} = k_m\tilde{Ξ}_{\mathrm{sp},R}$, and it acts as a *right* multiplication, which is what allows it to relate the two minimal left ideals (the chiralities). For a **scalar** example, the mass is the central $m^2$ above and the quadratic operator is sector-diagonal. Both cases are handled by the Gaussian formula; the difference is whether $K_{\mathrm{kin}}$ is central. The scalar case is taken as the explicit example below, and the fermionic case is remarked on where the structure differs. Here $k_m=mc/\hbar$ is the mass wave number, the inverse of the mass length.
+The mass term requires a word of care, because the framework's **Dirac** mass is not central. As *The Dirac Equation in Biquaternionic Form* records, the Dirac mass term is linear and chirality-off-diagonal, $\tilde\nabla\tilde{Ξ}_{\mathrm{sp},R} = k_m\tilde{Ξ}_{\mathrm{sp},L}$, $\tilde\nabla^{\natural}\tilde{Ξ}_{\mathrm{sp},L} = k_m\tilde{Ξ}_{\mathrm{sp},R}$, and it acts as a *right* multiplication, which is what allows it to relate the two minimal left ideals (the chiralities). For a **scalar** example, the mass is the central $m^2$ above and the quadratic operator is sector-diagonal. Both cases are handled by the Gaussian formula; the difference is whether $W_{\mathrm{kinetic}}$ is central. The scalar case is taken as the explicit example below, and the fermionic case is remarked on where the structure differs. Here $k_m=mc/\hbar$ is the mass wave number, the inverse of the mass length.
 
 ## The Gaussian Functional Integral
 
@@ -105,10 +105,10 @@ a Gaussian in the source.
 
 **The biquaternion case.** A field $\tilde{Ξ}$ valued in $\mathbb{B}$ has, at each mode, two complex components — the dimension of the spinor module $\mathbb{B}\tilde\Pi(\vec u)\cong\mathbb{C}^2$. The quadratic form is built from $\mathrm{Sc}$, which is a real bilinear pairing, and the Gaussian integral over the module is
 $$
-\boxed{\;\int \mathcal{D}\tilde{Ξ}\; \exp(-\frac12\langle\tilde{Ξ},K_{\mathrm{kin}}\tilde{Ξ}\rangle + \langle\tilde J,\tilde{Ξ}\rangle)
-= \big(\det K_{\mathrm{kin}}\big)^{-1/2}\, \exp(\frac12\langle\tilde J,K_{\mathrm{kin}}{}^{-1}\tilde J\rangle)\;},
+\boxed{\;\int \mathcal{D}\tilde{Ξ}\; \exp(-\frac12\langle\tilde{Ξ},W_{\mathrm{kinetic}}\tilde{Ξ}\rangle + \langle\tilde J,\tilde{Ξ}\rangle)
+= \big(\det W_{\mathrm{kinetic}}\big)^{-1/2}\, \exp(\frac12\langle\tilde J,W_{\mathrm{kinetic}}{}^{-1}\tilde J\rangle)\;},
 $$
-where $\langle\tilde{Ξ},\tilde{Ξ}_{\mathrm{sp}}\rangle=\mathrm{Re}\,\mathrm{Tr}(\tilde{Ξ}^{*}\tilde{Ξ}_{\mathrm{sp}})$ is the real bilinear form of the action, the determinant is taken on the module, and each mode contributes its two complex dimensions. In the Euclidean reading used for the Gaussian the operator $K$ is the kinetic operator $-\Box+k_m^{2}$, whose momentum symbol is the mass-shell operator $\mathcal{M}(\tilde P)=\tilde P\tilde P^{\natural}+m^{2}\,c^{2}$; the Lorentzian action's operator $K_{\mathrm{kin}}=\Box-k_m^{2}$ is its negative, a sign that leaves the determinant unchanged on the two-complex-dimensional module but fixes the sign of the kernel $K_{\mathrm{kin}}{}^{-1}$. The determinant is the object that *The Functional Determinant in Biquaternionic Form* computes; this article records only that the Gaussian integral reduces to it.
+where $\langle\tilde{Ξ},\tilde{Ξ}_{\mathrm{sp}}\rangle=\mathrm{Re}\,\mathrm{Tr}(\tilde{Ξ}^{*}\tilde{Ξ}_{\mathrm{sp}})$ is the real bilinear form of the action, the determinant is taken on the module, and each mode contributes its two complex dimensions. In the Euclidean reading used for the Gaussian the operator $K$ is the kinetic operator $-\Box+k_m^{2}$, whose momentum symbol is the mass-shell operator $\mathcal{M}(\tilde P)=\tilde P\tilde P^{\natural}+m^{2}\,c^{2}$; the Lorentzian action's operator $W_{\mathrm{kinetic}}=\Box-k_m^{2}$ is its negative, a sign that leaves the determinant unchanged on the two-complex-dimensional module but fixes the sign of the kernel $W_{\mathrm{kinetic}}{}^{-1}$. The determinant is the object that *The Functional Determinant in Biquaternionic Form* computes; this article records only that the Gaussian integral reduces to it.
 
 **Finite-dimensional verification.** The **real** form of the identity was checked as follows, on a real symmetric — hence Hermitian — matrix $K$, with complex arithmetic carried through the elimination. For
 $$
@@ -123,29 +123,29 @@ The central kinetic operator does not mix the sectors, and this makes the free i
 
 **The cross term vanishes.** Write $\tilde{Ξ}=\tilde{Ξ}_-+\tilde{Ξ}_+$ and expand the real form:
 $$
-\Big\langle\tilde{Ξ},K_{\mathrm{kin}}\tilde{Ξ}\Big\rangle
-= \mathrm{Re}\,\mathrm{Tr}\Big(\tilde{Ξ}^{*}_-K_{\mathrm{kin}}\tilde{Ξ}_- + \tilde{Ξ}^{*}_+K_{\mathrm{kin}}\tilde{Ξ}_+ + \tilde{Ξ}^{*}_-K_{\mathrm{kin}}\tilde{Ξ}_+ + \tilde{Ξ}^{*}_+K_{\mathrm{kin}}\tilde{Ξ}_-\Big),
+\Big\langle\tilde{Ξ},W_{\mathrm{kinetic}}\tilde{Ξ}\Big\rangle
+= \mathrm{Re}\,\mathrm{Tr}\Big(\tilde{Ξ}^{*}_-W_{\mathrm{kinetic}}\tilde{Ξ}_- + \tilde{Ξ}^{*}_+W_{\mathrm{kinetic}}\tilde{Ξ}_+ + \tilde{Ξ}^{*}_-W_{\mathrm{kinetic}}\tilde{Ξ}_+ + \tilde{Ξ}^{*}_+W_{\mathrm{kinetic}}\tilde{Ξ}_-\Big),
 $$
-using the centrality of $K_{\mathrm{kin}}$. The first two terms are the sector norms; the last two are cross terms. For the cross terms one has the identity
+using the centrality of $W_{\mathrm{kinetic}}$. The first two terms are the sector norms; the last two are cross terms. For the cross terms one has the identity
 $$
-\mathrm{Re}\,\mathrm{Tr}\big(\tilde{Ξ}^{*}_-K_{\mathrm{kin}}\tilde{Ξ}_+\big) = 0 = \mathrm{Re}\,\mathrm{Tr}\big(\tilde{Ξ}^{*}_+K_{\mathrm{kin}}\tilde{Ξ}_-\big)
+\mathrm{Re}\,\mathrm{Tr}\big(\tilde{Ξ}^{*}_-W_{\mathrm{kinetic}}\tilde{Ξ}_+\big) = 0 = \mathrm{Re}\,\mathrm{Tr}\big(\tilde{Ξ}^{*}_+W_{\mathrm{kinetic}}\tilde{Ξ}_-\big)
 \qquad\text{for all } \tilde{Ξ}_\pm\in\mathbb{B}_{\Psi}\cup\mathbb{B}_{\Phi} .
 $$
 
-**Proof.** It suffices to check the statement on the four units, since the real form is bilinear. In the material sector the coordinates are $Q_t=i c r'_t$ and $Q_k=x_k$, in the informational sector $Q_t=c r_t$ and $Q_k=i r'_{x_k}$, and each elementary term is $\mathrm{Re}\,\mathrm{Tr}(e_\mu^{*}K_{\mathrm{kin}}e_\nu)$ times the product of one material coordinate and one informational one. The trace factor vanishes off the diagonal, and on it the coordinate product is purely imaginary, $i c r'_t\cdot c r_t$ on the time slot and $x_k\cdot i r'_{x_k}$ on each space slot. A direct evaluation over the $4\times4=16$ elementary products gives zero in every case. The cross terms of the real form therefore vanish, and the quadratic form is block diagonal.
+**Proof.** It suffices to check the statement on the four units, since the real form is bilinear. In the material sector the coordinates are $Q_t=i c r'_t$ and $Q_k=x_k$, in the informational sector $Q_t=c r_t$ and $Q_k=i r'_{x_k}$, and each elementary term is $\mathrm{Re}\,\mathrm{Tr}(e_\mu^{*}W_{\mathrm{kinetic}}e_\nu)$ times the product of one material coordinate and one informational one. The trace factor vanishes off the diagonal, and on it the coordinate product is purely imaginary, $i c r'_t\cdot c r_t$ on the time slot and $x_k\cdot i r'_{x_k}$ on each space slot. A direct evaluation over the $4\times4=16$ elementary products gives zero in every case. The cross terms of the real form therefore vanish, and the quadratic form is block diagonal.
 
 **Consequence: factorisation.** With the source split as $\tilde J=\tilde J_-+\tilde J_+$, the free functional integral is
 $$
-\boxed{\;Z_0[\tilde J] = \int\mathcal{D}\tilde{Ξ}_-\,\exp(-\frac12\langle\tilde{Ξ}_-,K_{\mathrm{kin}}\tilde{Ξ}_-\rangle+\langle\tilde J_-,\tilde{Ξ}_-\rangle)
+\boxed{\;Z_0[\tilde J] = \int\mathcal{D}\tilde{Ξ}_-\,\exp(-\frac12\langle\tilde{Ξ}_-,W_{\mathrm{kinetic}}\tilde{Ξ}_-\rangle+\langle\tilde J_-,\tilde{Ξ}_-\rangle)
 \times
-\int\mathcal{D}\tilde{Ξ}_+\,\exp(-\frac12\langle\tilde{Ξ}_+,K_{\mathrm{kin}}\tilde{Ξ}_+\rangle+\langle\tilde J_+,\tilde{Ξ}_+\rangle)
+\int\mathcal{D}\tilde{Ξ}_+\,\exp(-\frac12\langle\tilde{Ξ}_+,W_{\mathrm{kinetic}}\tilde{Ξ}_+\rangle+\langle\tilde J_+,\tilde{Ξ}_+\rangle)
 = Z_-[J_-]\,Z_+[J_+]\;}.
 $$
 Each factor is a Gaussian integral on one sector's four-real-dimensional space, of the form evaluated above. The free quadratic form is therefore **block diagonal**, and the free integral factorizes into a Gaussian on each sector; the sectors are coupled only through an interaction $S_{\mathrm{int}}$ that is not sector-diagonal. A central kinetic operator cannot couple them; a chirality-off-diagonal Dirac mass can, because it is a right multiplication and so is not central.
 
-**A check of the determinant structure.** For a block-diagonal $K_{\mathrm{kin}}=\mathrm{diag}(K_-,K_+)$ the determinant factorizes,
+**A check of the determinant structure.** For a block-diagonal $W_{\mathrm{kinetic}}=\mathrm{diag}(K_-,K_+)$ the determinant factorizes,
 $$
-\det K_{\mathrm{kin}} = \det K_-\,\det K_+ ,
+\det W_{\mathrm{kinetic}} = \det K_-\,\det K_+ ,
 $$
 so the Gaussian prefactor of $Z_0$ is the product of the sector prefactors and the factorisation is consistent at the level of the determinant. This was checked on an explicit block-diagonal Hermitian matrix, and it is the algebraic reason the free quadratic form splits into two block-diagonal parts.
 
@@ -172,7 +172,7 @@ D_F(x-y) \quad\text{(Lorentzian)},
 $$
 the Feynman propagator of *The Feynman Propagator in Biquaternionic Form*, whose algebra content is the wave biquaternion and the $i c r'_t$ axis of the $i\epsilon$ deformation. The functional integral thus reproduces the propagator from the quadratic action, and the algebra's role is confined to naming the kinetic operator's central scalar and the axis of the continuation.
 
-**The determinant.** The prefactor of $Z_0$ is $(\det K_{\mathrm{kin}})^{-1/2}$ with the determinant taken on the module, and since the module has two complex dimensions the free determinant is $\prod_k(\tilde P\tilde P^{\natural}+m^{2}\,c^{2})^2$ and the prefactor is the product over modes of $(\tilde P\tilde P^{\natural}+m^{2}\,c^{2})^{-1}$ — the module's dimension and the $-\tfrac12$ power together giving one inverse power per mode, the convention that *The Functional Determinant in Biquaternionic Form* fixes and that its one-loop free energy $\Gamma_1=\sum_{\text{modes}}\log(\tilde P\tilde P^{\natural}+m^{2}\,c^{2})$ records. This determinant is divergent and requires regularization; its computation, its regularization dependence, and its relation to the trace anomaly are the subjects of *The Functional Determinant in Biquaternionic Form* and *The Trace Anomaly in Biquaternionic Form*. This article records the reduction and does not compute the determinant.
+**The determinant.** The prefactor of $Z_0$ is $(\det W_{\mathrm{kinetic}})^{-1/2}$ with the determinant taken on the module, and since the module has two complex dimensions the free determinant is $\prod_k(\tilde P\tilde P^{\natural}+m^{2}\,c^{2})^2$ and the prefactor is the product over modes of $(\tilde P\tilde P^{\natural}+m^{2}\,c^{2})^{-1}$ — the module's dimension and the $-\tfrac12$ power together giving one inverse power per mode, the convention that *The Functional Determinant in Biquaternionic Form* fixes and that its one-loop free energy $\Gamma_1=\sum_{\text{modes}}\log(\tilde P\tilde P^{\natural}+m^{2}\,c^{2})$ records. This determinant is divergent and requires regularization; its computation, its regularization dependence, and its relation to the trace anomaly are the subjects of *The Functional Determinant in Biquaternionic Form* and *The Trace Anomaly in Biquaternionic Form*. This article records the reduction and does not compute the determinant.
 
 **A remark on the biquaternion field.** A genuinely biquaternion-valued scalar has four complex coefficients, equivalently eight real components, and the sector split assigns four real components to each sector; the factorisation above is the statement that the free quadratic form is block diagonal with respect to that split. The two sectors are **not** independent fields in the sense of being separately adjustable: they are related by multiplication by the central $i$, $\mathbb{B}_{\Phi}=i\mathbb{B}_{\Psi}$, so the sector split is a decomposition of one field into its graded parts and not a doubling of the field content. The counting is a component count fixed by the algebra, and it is *not* a claim that the biquaternion scalar is a multiplicity of complex scalars; the sector interpretation is the one of *The Partition Function in Biquaternionic Form* and *The Harmonic Oscillator in Biquaternionic Form*.
 
@@ -236,7 +236,7 @@ with the spinor structure carried by the module and the mass term linear and chi
 ## What Is Established and What Is Interpretation
 
 **Established (algebra).**
-- The quadratic action of a biquaternion field is the central scalar $\int\mathrm{Sc}(\tilde{Ξ}^{\natural}K_{\mathrm{kin}}\tilde{Ξ})$; the Hermitian form, read through the trace, is the scalar extraction.
+- The quadratic action of a biquaternion field is the central scalar $\int\mathrm{Sc}(\tilde{Ξ}^{\natural}W_{\mathrm{kinetic}}\tilde{Ξ})$; the Hermitian form, read through the trace, is the scalar extraction.
 - For a central kinetic operator the cross terms $\mathrm{Sc}(\tilde{Ξ}^{\natural}_-\tilde{Ξ}_+)$ vanish identically over the sector bases, so the free quadratic form is block diagonal and the free functional integral factorizes, $Z_0=Z_-\cdot Z_+$.
 - The Gaussian functional integral is $(2\pi)^{N/2}(\det K)^{-1/2}\exp(\frac12\langle J,K^{-1}J\rangle)$ on the module, with $N$ the real dimension of the module; checked in finite dimension with explicit Hermitian matrices.
 - The Wick rotation is the identification $\mathbb{B}_{\Phi}\to\mathbb{B}_{H}$ and turns $\exp(iS)$ into $\exp(-S_E)$.
@@ -255,9 +255,9 @@ with the spinor structure carried by the module and the mass term linear and chi
 
 ## Summary
 
-The functional integral over a biquaternion field reduces, in its free part, to a block-diagonal quadratic form and hence to a Gaussian integral on each sector's four-real-dimensional space, and its algebra content is the scalar extraction that makes the exponent a number. For a field $\tilde{Ξ}=\tilde{Ξ}_-+\tilde{Ξ}_+$ and a central kinetic operator $K_{\mathrm{kin}}=\Box-k_m^{2}$ with $\Box=\tilde\nabla\tilde\nabla^{\natural}=\sum_\mu\partial^2/\partial R_\mu^2$,
+The functional integral over a biquaternion field reduces, in its free part, to a block-diagonal quadratic form and hence to a Gaussian integral on each sector's four-real-dimensional space, and its algebra content is the scalar extraction that makes the exponent a number. For a field $\tilde{Ξ}=\tilde{Ξ}_-+\tilde{Ξ}_+$ and a central kinetic operator $W_{\mathrm{kinetic}}=\Box-k_m^{2}$ with $\Box=\tilde\nabla\tilde\nabla^{\natural}=\sum_\mu\partial^2/\partial R_\mu^2$,
 $$
-S[\tilde{Ξ}]=\int d^4r\;\Big\langle\tilde{Ξ},K_{\mathrm{kin}}\tilde{Ξ}\Big\rangle,
+S[\tilde{Ξ}]=\int d^4r\;\Big\langle\tilde{Ξ},W_{\mathrm{kinetic}}\tilde{Ξ}\Big\rangle,
 \qquad
 \Big\langle\tilde{Ξ}_-,\tilde{Ξ}_+\Big\rangle=0 ,
 $$
@@ -267,7 +267,7 @@ $$
 \qquad
 Z_\pm[J_\pm]=\big(\det K_{\mathrm{kin},\pm}\big)^{-1/2}\exp(\frac12\langle J_\pm,K_{\mathrm{kin},\pm}{}^{-1}J_\pm\rangle)\;}.
 $$
-The Gaussian formula was verified in finite dimension ($\det K=3.12$, $Z_0=8.9165$, $Z[J]=23.964$, and $W[J]-W[0]=J^2/(2a)$ in one dimension), and the determinant factorizes for a block-diagonal $K_{\mathrm{kin}}$.
+The Gaussian formula was verified in finite dimension ($\det K=3.12$, $Z_0=8.9165$, $Z[J]=23.964$, and $W[J]-W[0]=J^2/(2a)$ in one dimension), and the determinant factorizes for a block-diagonal $W_{\mathrm{kinetic}}$.
 
 The **measure**, the **space of field configurations**, and the **interaction** are outside the algebra and are transcribed; the space of fields is infinite-dimensional, and $\mathbb{B}$ is finite-dimensional. Restricting the integral to a **causally complete region** — the double light cone, or the wedge — makes the boundary-value functional precise and is where the net of local algebras and Einstein causality live; the algebra supplies the interval of the cones, which fixes the causal relation $O_{\mathrm{cc}}=O$, and the microcausality of the observables, while the region, its measure, and the net are transcribed, with the wedge and $\tilde H_{\mathrm{modular},W}=2\pi G_1$ the one worked instance. The Wick rotation, in the framework's interpretation, is the identification of the material sector $\mathbb{B}_{\Phi}$ with the real-quaternion subspace $\mathbb{B}_{H}$, and it is what turns the oscillatory weight into the decaying Euclidean one and makes the Gaussian integral converge. The determinant that the Gaussian integral leaves behind is the subject of the next article.
 
@@ -284,10 +284,10 @@ The **measure**, the **space of field configurations**, and the **interaction** 
 | $\langle\tilde{Q},\tilde{Q}_1\rangle=\mathrm{Re}\,\mathrm{Tr}(\tilde{Q}^{*}\tilde{Q}_1)$ | Real bilinear form of the action; sector-orthogonal |
 | $\Box=\tilde\nabla\tilde\nabla^{\natural}=\sum_\mu\partial^2/\partial R_\mu^2$ | d'Alembertian, series convention |
 | $\tilde P=i(E/c)e_t+\vec p$, $\tilde P\tilde P^{\natural}=-p^2$ | Wave biquaternion; Euclidean $k_{\mathrm{eu}}^2$ |
-| $S[\tilde{Ξ}]=\int d^4r\,\langle\tilde{Ξ},K_{\mathrm{kin}}\tilde{Ξ}\rangle$ | Quadratic biquaternion action; $K_{\mathrm{kin}}=\Box-k_m^{2}$ |
-| $Z[\tilde J]=\int\mathcal{D}\tilde{Ξ}\,\exp(-\frac12\langle\tilde{Ξ},K_{\mathrm{kin}}\tilde{Ξ}\rangle+\langle\tilde J,\tilde{Ξ}\rangle)$ | Functional integral with source |
-| $Z_0=(\det K_{\mathrm{kin}})^{-1/2}\exp(\frac12\langle\tilde J,K_{\mathrm{kin}}{}^{-1}\tilde J\rangle)$ | Gaussian result; $\prod_k(\tilde P\tilde P^{\natural}+m^{2}\,c^{2})^{-1}$ per mode for the free central operator |
-| $W[\tilde J]=\log Z[\tilde J]$, $W-W_0=\tfrac12\langle\tilde J,K_{\mathrm{kin}}{}^{-1}\tilde J\rangle$ | Free energy |
+| $S[\tilde{Ξ}]=\int d^4r\,\langle\tilde{Ξ},W_{\mathrm{kinetic}}\tilde{Ξ}\rangle$ | Quadratic biquaternion action; $W_{\mathrm{kinetic}}=\Box-k_m^{2}$ |
+| $Z[\tilde J]=\int\mathcal{D}\tilde{Ξ}\,\exp(-\frac12\langle\tilde{Ξ},W_{\mathrm{kinetic}}\tilde{Ξ}\rangle+\langle\tilde J,\tilde{Ξ}\rangle)$ | Functional integral with source |
+| $Z_0=(\det W_{\mathrm{kinetic}})^{-1/2}\exp(\frac12\langle\tilde J,W_{\mathrm{kinetic}}{}^{-1}\tilde J\rangle)$ | Gaussian result; $\prod_k(\tilde P\tilde P^{\natural}+m^{2}\,c^{2})^{-1}$ per mode for the free central operator |
+| $W[\tilde J]=\log Z[\tilde J]$, $W-W_0=\tfrac12\langle\tilde J,W_{\mathrm{kinetic}}{}^{-1}\tilde J\rangle$ | Free energy |
 | $r'_t\mapsto-i\tau$, $\mathbb{B}_{\Phi}\to\mathbb{B}_{H}$ | Wick rotation; $\exp(iS)\to \exp(-S_E)$ |
 | $O$, $O_{\mathrm c}$, $O_{\mathrm{cc}}=O$ | Region, causal complement, causal completeness (localisation) |
 | $\tilde H_{\mathrm{modular},W}=2\pi G_1$ | Wedge modular Hamiltonian (the worked causally complete region) |

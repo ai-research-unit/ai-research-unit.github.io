@@ -13,12 +13,12 @@ with a Planckian spectrum in the frequency conjugate to the observer's proper ti
 Three structures carry the effect, and all three have a definite home in the framework.
 
 1. **The Rindler wedge.** The accelerated trajectory is confined to a wedge of Minkowski space, the **right Rindler wedge** $R=\{x>|c r'_{t}|\}$. Its boundary is the light cone — which, in the material sector $\mathbb{B}_{\Phi}$, is exactly the **zero-divisor cone** of the algebra. The wedge, its horizon, and its boost flow are material-sector objects.
-2. **The boost as the modular Hamiltonian.** By the Bisognano–Wichmann theorem, the modular operator of the vacuum restricted to the wedge is $\Delta=\exp(-2\pi K_{\mathrm{boost}})$, where $K_{\mathrm{boost}}$ is the generator of boosts. The modular flow is therefore the boost flow. The boost generator is a Hermitian element of the algebra; for a boost along $\vec e_x$ it is $G_1=i\vec e_x\in\mathbb{B}_{\Psi}$.
+2. **The boost as the modular Hamiltonian.** By the Bisognano–Wichmann theorem, the modular operator of the vacuum restricted to the wedge is $\Delta=\exp(-2\pi H_{\mathrm{modular,boost}})$, where $H_{\mathrm{modular,boost}}$ is the generator of boosts. The modular flow is therefore the boost flow. The boost generator is a Hermitian element of the algebra; for a boost along $\vec e_x$ it is $G_1=i\vec e_x\in\mathbb{B}_{\Psi}$.
 3. **The KMS condition.** The KMS condition of the companion article states that the correlation functions of a thermal state are analytic in a strip of width $\beta=\frac{m\,c}{k_m\,k_{B}\,T}$ in the complex time plane and satisfy a boundary relation that exchanges the operators. The wedge vacuum satisfies that condition with respect to the boost flow, and the width of the strip is what fixes the temperature.
 
 The trap in this subject is to *assert* the thermality — to write down the exponential spectrum and the temperature as if the algebra had produced them. It has not. Thermality is a statement about the **analyticity of the two-point function**, and the section that derives it shows the step: the two-point function along the accelerated orbit is an explicit function whose analytic continuation to imaginary proper time is periodic, and the period *is* the KMS width. The temperature is then recomputed a second time, from the **surface gravity** of the boost orbit, so that it is not a single formula asserted twice.
 
-**Relation to the parent.** *The KMS Condition and the Biquaternion Framework* is the parent article. It establishes two facts that this article uses unchanged: the imaginary time of the material sector is intrinsic, and the modular Hamiltonian $K=-\log\tilde{Ϛ}$ of a finite-dimensional Gibbs state is a Hermitian element of $\mathbb{B}_{\Psi}$. It also leaves a gap, which is stated here rather than filled silently. Its modular Hamiltonian is defined through a density matrix in a **finite-dimensional** setting. The wedge-restricted Minkowski vacuum is a state on a field algebra; it is not given by a density matrix, and the parent neither defines the modular operator $\Delta$ nor the modular flow in that setting. The identification of the modular flow with the boost is the **Bisognano–Wichmann theorem** — established physics, imported here, not derived from the biquaternion algebra. What this article does with the gap is make the flow geometric in the one case where the standard theorem supplies it, and label precisely what remains outside the framework.
+**Relation to the parent.** *The KMS Condition and the Biquaternion Framework* is the parent article. It establishes two facts that this article uses unchanged: the imaginary time of the material sector is intrinsic, and the modular Hamiltonian $H_{\mathrm{modular}}=-\log\tilde{Ϛ}$ of a finite-dimensional Gibbs state is a Hermitian element of $\mathbb{B}_{\Psi}$. It also leaves a gap, which is stated here rather than filled silently. Its modular Hamiltonian is defined through a density matrix in a **finite-dimensional** setting. The wedge-restricted Minkowski vacuum is a state on a field algebra; it is not given by a density matrix, and the parent neither defines the modular operator $\Delta$ nor the modular flow in that setting. The identification of the modular flow with the boost is the **Bisognano–Wichmann theorem** — established physics, imported here, not derived from the biquaternion algebra. What this article does with the gap is make the flow geometric in the one case where the standard theorem supplies it, and label precisely what remains outside the framework.
 
 - **Established, and recomputed below.** In the right wedge, the boost Killing vector $\zeta=r_x\partial/\partial r'_t+r'_t\partial/\partial R_x$ is future-directed; a boost by rapidity $\theta_{\mathrm{rpd}}$ shifts Rindler time $\eta$ by $\eta\mapsto\eta-\theta_{\mathrm{rpd}}$ under the Lorentz rotor $\tilde U_{\mathrm b}(\theta_{\mathrm{rpd}})=\cosh\frac{\theta_{\mathrm{rpd}}}{2}+i\sinh\frac{\theta_{\mathrm{rpd}}}{2}\vec e_x$; the rotor lies in $\mathbb{B}_{\Psi}$, preserves $\mathbb{B}_{\Phi}$ and preserves the biquaternion norm. The massless two-point function along the orbit $\rho=\text{const}$ is $W=-\tfrac{1}{16\pi^2\rho^2}\sinh^{-2}\!\big(\tfrac{1}{2}(\delta\eta-i\epsilon)\big)$ in units $c=1$; it is even and periodic under $\delta\eta\mapsto\delta\eta+2\pi i$, equivalently in imaginary proper time with period $\beta=2\pi/a$, giving the KMS strip $0<\mathrm{Im}\,\delta\tau<\beta$ and the boundary relation $W(\delta\tau+i\beta)=W(-\delta\tau)$. The surface gravity of the redshift-normalized boost $\xi=a\zeta$ is $\kappa=a$ on the horizon, so $T=\kappa/(2\pi)=a/(2\pi)$.
 - **Standard, and imported.** The Unruh effect itself; the Bisognano–Wichmann theorem; the KMS characterization of thermal equilibrium; the massless Wightman function and its pole structure; the definition of surface gravity.
@@ -116,7 +116,7 @@ $$
 
 for the flow parameter $s=\theta_{\mathrm{rpd}}/2$. This is the sign that has to be fixed before anything else can be done; we record it explicitly and use the inverse orientation that advances $\eta$ when we need a direction. The same computation shows that the boost preserves the biquaternion norm, $\langle\tilde U_{\mathrm b}\tilde R_\Phi\tilde U_{\mathrm b}\rangle_{\natural}=\langle\tilde R_\Phi\rangle_{\natural}$, so $R$ is mapped to itself and the horizon to itself. Two checks beyond the case that suggested the formulas are recorded in the companion: the rotor maps $\eta$ to $\eta-\theta_{\mathrm{rpd}}$ on an independently chosen orbit, and the biquaternion norm is preserved on a general element of $\mathbb{B}_{\Phi}$.
 
-**Which wedge.** The two wedges have opposite orientation. The boost generator whose flow is future-directed on $R$ is past-directed on $L$, so the modular Hamiltonians of the two wedges satisfy $K_L=-K_R$, and the surface gravities have opposite signs. The temperature is built from $|\kappa|=a$, so it is the same for both; but a statement about "the modular Hamiltonian" that omits the wedge is ambiguous, and we keep the wedge explicit.
+**Which wedge.** The two wedges have opposite orientation. The boost generator whose flow is future-directed on $R$ is past-directed on $L$, so the modular Hamiltonians of the two wedges satisfy $H_{\mathrm{modular},L}=-H_{\mathrm{modular},R}$, and the surface gravities have opposite signs. The temperature is built from $|\kappa|=a$, so it is the same for both; but a statement about "the modular Hamiltonian" that omits the wedge is ambiguous, and we keep the wedge explicit.
 
 ## The Boost as the Modular Hamiltonian
 
@@ -125,10 +125,10 @@ for the flow parameter $s=\theta_{\mathrm{rpd}}/2$. This is the sign that has to
 The parent article defines the modular Hamiltonian, in a finite-dimensional setting, by
 
 $$
-K = -\log\Delta, \qquad \Delta=\rho \ \ (\text{finite dimension}),
+H_{\mathrm{modular}}=-\log\Delta, \qquad \Delta=\rho \ \ (\text{finite dimension}),
 $$
 
-so that $K=-\log\tilde{Ϛ}$ is Hermitian and therefore lies in $\mathbb{B}_{\Psi}$. It states that the KMS correlation functions are analytic in the strip $0<\mathrm{Im}\,r'_t<\beta$ and satisfy
+so that $H_{\mathrm{modular}}=-\log\tilde{Ϛ}$ is Hermitian and therefore lies in $\mathbb{B}_{\Psi}$. It states that the KMS correlation functions are analytic in the strip $0<\mathrm{Im}\,r'_t<\beta$ and satisfy
 
 $$
 F_{\tilde Q_2\tilde{Q}_1}(r'_t+i\beta) = F_{\tilde{Q}_1\tilde Q_2}(-r'_t),
@@ -136,27 +136,27 @@ $$
 
 and it records the imaginary time of $\mathbb{B}_{\Phi}$ as intrinsic.
 
-The gap is the one anticipated in the introduction. In a quantum field theory the state of the vacuum restricted to a wedge is not given by a density matrix: the local algebra is a von Neumann algebra of type III, on which no trace, and hence no $\rho$, exists. The parent's $K=-\log\tilde{Ϛ}$ therefore does **not** extend to this case, and the parent says nothing about a modular **flow** $\alpha_s$ for a field algebra. The step from "there is a modular Hamiltonian" to "the modular flow is the boost at this temperature" is not in the parent and is not supplied by the biquaternion algebra. It is supplied by a theorem.
+The gap is the one anticipated in the introduction. In a quantum field theory the state of the vacuum restricted to a wedge is not given by a density matrix: the local algebra is a von Neumann algebra of type III, on which no trace, and hence no $\rho$, exists. The parent's $H_{\mathrm{modular}}=-\log\tilde{Ϛ}$ therefore does **not** extend to this case, and the parent says nothing about a modular **flow** $\alpha_s$ for a field algebra. The step from "there is a modular Hamiltonian" to "the modular flow is the boost at this temperature" is not in the parent and is not supplied by the biquaternion algebra. It is supplied by a theorem.
 
 ### The Bisognano–Wichmann Identification
 
 For the vacuum state of a Wightman quantum field theory and the right Rindler wedge $R$, the **Bisognano–Wichmann theorem** states that the modular operator is
 
 $$
-\Delta = \exp(-2\pi K_{\mathrm{boost}}),
+\Delta = \exp(-2\pi H_{\mathrm{modular,boost}}),
 $$
 
-where $K_{\mathrm{boost}}$ is the generator of the boosts that preserve $R$, normalized so that $\zeta=\partial/\partial\eta$. The modular flow is
+where $H_{\mathrm{modular,boost}}$ is the generator of the boosts that preserve $R$, normalized so that $\zeta=\partial/\partial\eta$. The modular flow is
 
 $$
-\alpha_s(\tilde Q_2) = \Delta^{is}\,\tilde Q_2\,\Delta^{-is} = \exp(-2\pi i sK_{\mathrm{boost}})\,\tilde Q_2\,\exp(2\pi i sK_{\mathrm{boost}}),
+\alpha_s(\tilde Q_2) = \Delta^{is}\,\tilde Q_2\,\Delta^{-is} = \exp(-2\pi i sH_{\mathrm{modular,boost}})\,\tilde Q_2\,\exp(2\pi i sH_{\mathrm{modular,boost}}),
 $$
 
 which is the boost by rapidity $2\pi s$. This is established physics and is imported here; the article does not derive it, and says so. Its content for us is that the abstract modular flow of the parent acquires a **geometric realization**: it is the boost flow, and the modular parameter $s$ is the Rindler time measured in units of $2\pi$.
 
 ### The Flow in Biquaternion Form
 
-The generator $K_{\mathrm{boost}}$ is the boost Hamiltonian, whose biquaternion representative is the Hermitian element $G_1=i\vec e_x\in\mathbb{B}_{\Psi}$ of the preceding section, up to the normalization of the modular generator (the flow below is conjugation by $\tilde U_{\mathrm b}(-2\pi s)=\exp(-\pi sG_1)$). The one-parameter modular flow therefore acts on the material sector by rotor conjugation,
+The generator $H_{\mathrm{modular,boost}}$ is the boost Hamiltonian, whose biquaternion representative is the Hermitian element $G_1=i\vec e_x\in\mathbb{B}_{\Psi}$ of the preceding section, up to the normalization of the modular generator (the flow below is conjugation by $\tilde U_{\mathrm b}(-2\pi s)=\exp(-\pi sG_1)$). The one-parameter modular flow therefore acts on the material sector by rotor conjugation,
 
 $$
 \alpha_s:\ \tilde R_\Phi \longmapsto \tilde U_{\mathrm b}(-2\pi s)\,\tilde R_\Phi\,\tilde U_{\mathrm b}(-2\pi s),
@@ -164,7 +164,7 @@ $$
 
 the argument $-2\pi s$ being the orientation that advances $\eta$ (the opposite sign gives the left wedge). The sign is the one fixed above: the abstract boost by rapidity $2\pi s$ is represented here by the **inverse** rotor $\tilde U_{\mathrm b}(-2\pi s)$ precisely because $\tilde U_{\mathrm b}(+\theta_{\mathrm{rpd}})$ shifts $\eta$ by $-\theta_{\mathrm{rpd}}$. Three features of this are worth separating.
 
-- **The generator is in $\mathbb{B}_{\Psi}$.** The modular Hamiltonian is represented by a Hermitian element of the informational sector, in agreement with the parent's algebraic fact that $K=-\log\tilde{Ϛ}$ lies in $\mathbb{B}_{\Psi}$. Here the element is $G_1=i\vec e_x$, the boost generator, and the agreement is exact up to that normalization rather than analogical.
+- **The generator is in $\mathbb{B}_{\Psi}$.** The modular Hamiltonian is represented by a Hermitian element of the informational sector, in agreement with the parent's algebraic fact that $H_{\mathrm{modular}}=-\log\tilde{Ϛ}$ lies in $\mathbb{B}_{\Psi}$. Here the element is $G_1=i\vec e_x$, the boost generator, and the agreement is exact up to that normalization rather than analogical.
 - **The flow is an inner automorphism of the algebra** by a one-parameter family of unit-norm Hermitian rotors in $\mathbb{B}_{\Psi}$. In the finite-dimensional model in which observables are elements of $\mathbb{B}$, this realizes the modular flow as conjugation. In a genuine field theory the observable algebra is infinite-dimensional and the flow is not inner; the identification is a model, and it is flagged as such.
 - **The flow acts on the field algebra, not on spacetime points.** The rotor conjugation above is the Lorentz action on the four-vector representative $\tilde R_\Phi$; identifying the boost flow of spacetime with the modular flow of the field algebra is exactly the content of Bisognano–Wichmann, not a consequence of the notation.
 
@@ -349,7 +349,7 @@ the proper acceleration. This is the statement of the preceding section read on 
 
 **What it adds (algebra and structure).**
 
-- *The flow generator is in $\mathbb{B}_{\Psi}$.* The modular Hamiltonian of the wedge is represented by the Hermitian boost generator $G_1=i\vec e_x$, up to the normalization of the modular generator noted above. This is the exact form of the parent's statement that $K=-\log\tilde{Ϛ}\in\mathbb{B}_{\Psi}$ — the same Hermitian element that rotates $\mathbb{B}_{\Phi}$ by rotor conjugation is the generator of the thermal flow — and it is not an analogy.
+- *The flow generator is in $\mathbb{B}_{\Psi}$.* The modular Hamiltonian of the wedge is represented by the Hermitian boost generator $G_1=i\vec e_x$, up to the normalization of the modular generator noted above. This is the exact form of the parent's statement that $H_{\mathrm{modular}}=-\log\tilde{Ϛ}\in\mathbb{B}_{\Psi}$ — the same Hermitian element that rotates $\mathbb{B}_{\Phi}$ by rotor conjugation is the generator of the thermal flow — and it is not an analogy.
 - *The horizon is the zero-divisor cone.* The Rindler horizon of the accelerated observer is the null cone of the material sector, the zero-divisor set of the algebra. The wedge is a connected region on which the biquaternion norm has one sign; the horizon is where it changes.
 - *The thermal circle lies along the material time.* The KMS analyticity is a continuation in the $i c r'_t$ direction, i.e. the complexification of the Rindler time, and the flow that acts is an inner automorphism by rotors in $\mathbb{B}_{\Psi}$. The material sector supplies the time in which the state is thermal; the informational sector supplies the operator that generates the flow.
 - *The boost is two-sided.* The generator acts on $\mathbb{B}_{\Phi}$ through the rotor anticommutator $G_1\tilde R_\Phi+\tilde R_\Phi G_1$, not through the commutator. This is the curved-spacetime companion's caution, and the Unruh flow is a case where it is load-bearing: the commutator generates a rotation in the plane orthogonal to the boost (it vanishes on the boost plane itself) and does not produce the boost.
@@ -376,14 +376,14 @@ The Unruh temperature does not depend on the statistics of the field. The KMS bo
 
 **Gaps.**
 
-- *The modular operator in the field setting.* The parent's $K=-\log\tilde{Ϛ}$ is finite-dimensional and does not extend to the wedge algebra; the article imports Bisognano–Wichmann for the flow and does not construct $\Delta$ in the framework.
+- *The modular operator in the field setting.* The parent's $H_{\mathrm{modular}}=-\log\tilde{Ϛ}$ is finite-dimensional and does not extend to the wedge algebra; the article imports Bisognano–Wichmann for the flow and does not construct $\Delta$ in the framework.
 - *The inner-automorphism model.* Realizing the flow as conjugation by rotors in $\mathbb{B}_{\Psi}$ uses the finite-dimensional algebra as a model of the observables. The physical algebra is infinite-dimensional, where the modular flow is not inner. The model is stated as a model.
 - *Derivation of thermality.* The framework houses the effect; it does not derive it. The calculation of the two-point function is standard field theory written in the framework's coordinates.
 - *Curved spacetime.* The Hawking effect is the same KMS structure with the surface gravity of a black-hole horizon, and it lies outside this article. The companion article on curved spacetime records that the framework generates no dynamics, and the same limitation applies.
 
 ## Open Questions
 
-1. **The modular operator for a biquaternion field algebra.** The parent defines $K$ through a density matrix and this article imports the geometric flow. Can a modular operator be defined intrinsically on a subalgebra attached to the wedge, without the Bisognano–Wichmann input?
+1. **The modular operator for a biquaternion field algebra.** The parent defines $H_{\mathrm{modular}}$ through a density matrix and this article imports the geometric flow. Can a modular operator be defined intrinsically on a subalgebra attached to the wedge, without the Bisognano–Wichmann input?
 
 2. **The flow beyond the model.** The modular flow is inner in the finite-dimensional model. Is there a biquaternionic structure — a crossed product, or a module with a trace — in which the wedge flow becomes inner in a controlled infinite-dimensional sense?
 
@@ -401,7 +401,7 @@ The Unruh temperature does not depend on the statistics of the field. The KMS bo
 
 An observer of constant proper acceleration $a$ in the Minkowski vacuum is confined to a Rindler wedge, and the vacuum restricted to that wedge is a thermal state with respect to the boost flow. In the biquaternion framework the wedge is a region of the material sector $\mathbb{B}_{\Phi}$ bounded by the **zero-divisor cone**, and the boost flow is generated by the Hermitian element $G_1=i\vec e_x\in\mathbb{B}_{\Psi}$ acting on $\mathbb{B}_{\Phi}$ by the two-sided rotor conjugation $\tilde R_\Phi\mapsto\tilde U_{\mathrm b}\,\tilde R_\Phi\,\tilde U_{\mathrm b}$ with $\tilde U_{\mathrm b}(\theta_{\mathrm{rpd}})=\cosh\frac{\theta_{\mathrm{rpd}}}{2}+i\sinh\frac{\theta_{\mathrm{rpd}}}{2}\vec e_x$.
 
-By the Bisognano–Wichmann theorem — imported, not derived — the modular operator of the vacuum on the wedge is $\Delta=\exp(-2\pi K_{\mathrm{boost}})$, so the modular flow is the boost by rapidity $2\pi s$; this realizes the parent's abstract modular Hamiltonian as the boost generator, whose image in the algebra is the Hermitian element $i\vec e_x\in\mathbb{B}_{\Psi}$. The thermality is derived from the two-point function. Along the accelerated orbit the massless Wightman function is
+By the Bisognano–Wichmann theorem — imported, not derived — the modular operator of the vacuum on the wedge is $\Delta=\exp(-2\pi H_{\mathrm{modular,boost}})$, so the modular flow is the boost by rapidity $2\pi s$; this realizes the parent's abstract modular Hamiltonian as the boost generator, whose image in the algebra is the Hermitian element $i\vec e_x\in\mathbb{B}_{\Psi}$. The thermality is derived from the two-point function. Along the accelerated orbit the massless Wightman function is
 
 $$
 W(\delta\tau) = -\frac{a^2}{16\pi^2}\,\frac{1}{\sinh^2\!\big(\tfrac{a}{2}(\delta\tau-i\epsilon)\big)},
@@ -441,9 +441,9 @@ The framework supplies the algebraic home: the horizon as the zero-divisor cone,
 | $G_1=i\vec e_x\in\mathbb{B}_{\Psi}$ | Boost generator (Hermitian) |
 | $\tilde U_{\mathrm b}(\theta_{\mathrm{rpd}})=\cosh\frac{\theta_{\mathrm{rpd}}}{2}+i\sinh\frac{\theta_{\mathrm{rpd}}}{2}\vec e_x$ | Boost rotor (Hermitian, unit norm) |
 | $\tilde R_\Phi\mapsto\tilde U_{\mathrm b}\tilde R_\Phi\tilde U_{\mathrm b}$ | Boost = rotor conjugation on $\mathbb{B}_{\Phi}$ |
-| $K_{\mathrm{boost}},\ \Delta=\exp(-2\pi K_{\mathrm{boost}})$ | Boost Hamiltonian; modular operator (Bisognano–Wichmann) |
+| $H_{\mathrm{modular,boost}},\ \Delta=\exp(-2\pi H_{\mathrm{modular,boost}})$ | Boost Hamiltonian; modular operator (Bisognano–Wichmann) |
 | $\alpha_s$ | Modular flow = boost by rapidity $2\pi s$ |
-| $K=-\log\Delta$ | Modular Hamiltonian (parent's notation) |
+| $H_{\mathrm{modular}}=-\log\Delta$ | Modular Hamiltonian (parent's notation) |
 | $W(\delta\tau)$ | Massless two-point function on the orbit |
 | $\beta=2\pi/a$ | KMS strip width in imaginary proper time |
 | $T=\frac{m\,a}{2\,k_m\,\pi\,k_{B}}$ | Unruh temperature |

@@ -16,9 +16,9 @@ J M J = M_{\mathrm c}, \qquad \Delta^{ir'_t}M\Delta^{ir'_t*}=M, \qquad \sigma_{r
 $$
 so that $J$ identifies $M$ with its commutant and $r'_t\mapsto\sigma_{r'_{t}}$ is a one-parameter group of automorphisms of $M$, the **modular automorphism group** of the pair $(M,\Omega)$.
 
-The article writes the construction in its **Hermitian form**, the form used by the companion articles. The state is the Hermitian pairing with a density matrix, $\omega(\tilde Q_3)=\mathrm{Tr}(\tilde{Ϛ}\tilde Q_3)$; the modular Hamiltonian $K=-\log\tilde{Ϛ}$ is a Hermitian element of $\mathbb{B}_{\Psi}$; the modular flow is the inner automorphism by the $*$-unitary $e^{-it'K}$; and the modular operator is built from the Hermitian exponentials $e^{-K}$ and $e^{K}$. The parameters are Hermitian ($K$) or $*$-unitary ($U_{r'_{t}}=e^{-it'K}$ and $\Delta^{ir'_t}$), so their inverses are their adjoints; the two exponentials $e^{-K}$ and $e^{K}$ are both Hermitian functions of $K$.
+The article writes the construction in its **Hermitian form**, the form used by the companion articles. The state is the Hermitian pairing with a density matrix, $\omega(\tilde Q_3)=\mathrm{Tr}(\tilde{Ϛ}\tilde Q_3)$; the modular Hamiltonian $H_{\mathrm{modular}}=-\log\tilde{Ϛ}$ is a Hermitian element of $\mathbb{B}_{\Psi}$; the modular flow is the inner automorphism by the $*$-unitary $e^{-it\'H_{\mathrm{modular}}}$; and the modular operator is built from the Hermitian exponentials $e^{-H_{\mathrm{modular}}}$ and $e^{H_{\mathrm{modular}}}$. The parameters are Hermitian ($H_{\mathrm{modular}}$) or $*$-unitary ($U_{r'_{t}}=e^{-it\'H_{\mathrm{modular}}}$ and $\Delta^{ir'_t}$), so their inverses are their adjoints; the two exponentials $e^{-H_{\mathrm{modular}}}$ and $e^{H_{\mathrm{modular}}}$ are both Hermitian functions of $H_{\mathrm{modular}}$.
 
-This article is the companion of *The KMS Condition and the Biquaternion Framework*. That article stated the KMS condition and located the modular Hamiltonian $K=-\log\rho$ in the informational sector $\mathbb{B}_{\Psi}$. It used, but did not construct, the operator $S$ whose polar decomposition produces the modular flow. The present article constructs $S$ explicitly in the finite-dimensional biquaternion algebra $\mathbb{B}\cong M_2(\mathbb{C})$, takes its polar decomposition in closed form, and verifies the resulting identities by recomputation. The KMS condition is the parent's subject and is not restated here; the one thing imported from it is the result that the modular flow is the flow for which the thermal state satisfies the KMS boundary relation.
+This article is the companion of *The KMS Condition and the Biquaternion Framework*. That article stated the KMS condition and located the modular Hamiltonian $H_{\mathrm{modular}}=-\log\rho$ in the informational sector $\mathbb{B}_{\Psi}$. It used, but did not construct, the operator $S$ whose polar decomposition produces the modular flow. The present article constructs $S$ explicitly in the finite-dimensional biquaternion algebra $\mathbb{B}\cong M_2(\mathbb{C})$, takes its polar decomposition in closed form, and verifies the resulting identities by recomputation. The KMS condition is the parent's subject and is not restated here; the one thing imported from it is the result that the modular flow is the flow for which the thermal state satisfies the KMS boundary relation.
 
 Three features of the construction are easy to get wrong, and they organize what follows.
 
@@ -119,11 +119,11 @@ F_{AB}(r'_t+i) = \omega\big(\sigma_{-r'_t}(B)\,A\big) = F_{BA}(-r'_t),
 $$
 the last equality by the invariance of $\omega$ under the modular flow.
 
-The normalization $\beta=1$ is a choice of scale for the modular parameter. The parent article's inverse temperature is recovered by rescaling, $r'_t\mapsto r'_t/\beta$ in the flow, and its boundary relation $F_{AB}(r'_t+i\beta)=F_{BA}(-r'_t)$ is the same statement at width $\beta$ rather than width $1$. The parent's **modular Hamiltonian** is the generator of this flow: writing $K=-\log\rho$, the finite-dimensional flow below is $\sigma_{r'_{t}}(A)=\exp(-it'K)A\exp(it'K)$, so that
+The normalization $\beta=1$ is a choice of scale for the modular parameter. The parent article's inverse temperature is recovered by rescaling, $r'_t\mapsto r'_t/\beta$ in the flow, and its boundary relation $F_{AB}(r'_t+i\beta)=F_{BA}(-r'_t)$ is the same statement at width $\beta$ rather than width $1$. The parent's **modular Hamiltonian** is the generator of this flow: writing $H_{\mathrm{modular}}=-\log\rho$, the finite-dimensional flow below is $\sigma_{r'_{t}}(A)=\exp(-it'H_{\mathrm{modular}})A\exp(it'H_{\mathrm{modular}})$, so that
 $$
-\frac{d}{dr'_t}\sigma_{r'_{t}}(A)\Big|_{r'_t=0} = -i[K,A],
+\frac{d}{dr'_t}\sigma_{r'_{t}}(A)\Big|_{r'_t=0} = -i[H_{\mathrm{modular}},A],
 $$
-and the parent article's algebraic fact that $K$ is a Hermitian element of the algebra, hence lies in $\mathbb{B}_{\Psi}$, is the statement that the flow has an $\mathbb{B}_{\Psi}$-valued generator. What the present article adds to the parent is the operator $S$: the parent stated the KMS relation, and $S$ is the object whose polar decomposition produces the flow for which that relation holds.
+and the parent article's algebraic fact that $H_{\mathrm{modular}}$ is a Hermitian element of the algebra, hence lies in $\mathbb{B}_{\Psi}$, is the statement that the flow has an $\mathbb{B}_{\Psi}$-valued generator. What the present article adds to the parent is the operator $S$: the parent stated the KMS relation, and $S$ is the object whose polar decomposition produces the flow for which that relation holds.
 
 ## The Finite-Dimensional Realization in the Biquaternion Algebra
 
@@ -205,7 +205,7 @@ A second, physical case ties the construction to the parent article and to *The 
 $$
 \tilde H_{\mathrm{modular}}=-\log\tilde{Ϛ}=\mathrm{diag}(0.292368,1.372368)=\beta\tilde R_\Psi+(\log Z)e_t,
 $$
-with $Z=1+\exp(-\beta\omega)=1.339596$, in agreement with the partition-function article's $K=\beta H+\log Z\,e_t$ and with that article's partition function.
+with $Z=1+\exp(-\beta\omega)=1.339596$, in agreement with the partition-function article's $H_{\mathrm{modular}}=\beta H+\log Z\,e_t$ and with that article's partition function.
 
 ## The Biquaternion Candidate for $S$
 
@@ -296,7 +296,7 @@ J(\tilde{Q}_3)=e^{-\tilde H_{\mathrm{modular}}/2}\tilde{Q}_3^{*}e^{\tilde H_{\ma
 $$
 The identities $J^2=1$, $J\Delta J\Delta=1$ and $J\,i\,J=-i$ — the modular conjugation conjugates the scalar imaginary — together with the group law of the flow, were verified symbolically and numerically on an explicit faithful state whose Bloch vector was chosen independently of the derivation.
 
-The modular flow is the KMS flow: normalized to $\beta=1$, a faithful normal state satisfies the KMS boundary relation with respect to $\sigma_{-r'_t}$, and the parent article's modular Hamiltonian $K=-\log\tilde{Ϛ}\in\mathbb{B}_{\Psi}$ generates it, $d\sigma_{r'_{t}}/dr'_t|_{r'_t=0}=-i[K,A]$. The parent stated the condition; this article has constructed the operator whose polar decomposition produces the flow for which it holds.
+The modular flow is the KMS flow: normalized to $\beta=1$, a faithful normal state satisfies the KMS boundary relation with respect to $\sigma_{-r'_t}$, and the parent article's modular Hamiltonian $H_{\mathrm{modular}}=-\log\tilde{Ϛ}\in\mathbb{B}_{\Psi}$ generates it, $d\sigma_{r'_{t}}/dr'_t|_{r'_t=0}=-i[H_{\mathrm{modular}},A]$. The parent stated the condition; this article has constructed the operator whose polar decomposition produces the flow for which it holds.
 
 Two honest limitations. The framework supplies $S$ and a family of faithful states, but no dynamics that selects a state, and the distinguished tracial state gives the trivial flow. And $\mathbb{B}$ is a type I$_2$ factor, hence semifinite, so its modular flow is inner — implemented by $\tilde{Ϛ}^{ir'_t}\in\mathbb{B}$ — while the outer modular flow of type III factors, the case in which the theory is indispensable, cannot occur inside the finite-dimensional algebra. The modular flow is inner for the semifinite factors and outer for III$_1$; the reverse interpretation is a common error. Whether an infinite-dimensional algebra built on $\mathbb{B}$-modules realizes the type III case is open.
 
@@ -323,9 +323,9 @@ Two honest limitations. The framework supplies $S$ and a family of faithful stat
 
 ## Further Reading
 
-- Companion article [The KMS Condition and the Biquaternion Framework](the-kms-condition-and-the-biquaternion-framework.html), for the KMS condition, the imaginary-time strip, and the modular Hamiltonian $K=-\log\rho$.
+- Companion article [The KMS Condition and the Biquaternion Framework](the-kms-condition-and-the-biquaternion-framework.html), for the KMS condition, the imaginary-time strip, and the modular Hamiltonian $H_{\mathrm{modular}}=-\log\rho$.
 - Companion article [The Informational Sector: States, Observables and Probability](the-informational-sector-states-observables-and-probability.html), for the Hermitian subspace, the trace formula, and states as elements of $\mathbb{B}_{\Psi}$.
-- Companion article [The Partition Function in Biquaternionic Form](the-partition-function-in-biquaternionic-form.html), for the Gibbs state and $K=\beta H+\log Z\,e_t$.
+- Companion article [The Partition Function in Biquaternionic Form](the-partition-function-in-biquaternionic-form.html), for the Gibbs state and $H_{\mathrm{modular}}=\beta H+\log Z\,e_t$.
 - Companion article [Fock Space and Creation/Annihilation Operators in Biquaternionic Form](fock-space-and-creation-annihilation-operators-in-biquaternionic-form.html), for the single fermionic mode, $\tilde\Pi_-$, and the parity $(-1)^F$.
 - Companion article [Introduction to the Biquaternion Universe](introduction-to-the-biquaternion-universe.html), for the algebra and its two sectors.
 - Companion article [The Material Sector: Four-Vectors, Interval and Lorentz Action](the-material-sector-four-vectors-interval-and-lorentz-action.html), for the material sector and the four-vectors.

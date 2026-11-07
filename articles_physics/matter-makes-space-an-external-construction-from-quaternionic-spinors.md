@@ -105,7 +105,7 @@ The heart of the construction is the source's Section 4. With $\kappa\equiv8\pi 
 $$
 e^a{}_\mu=\kappa^{-1}\,\mathrm{ReTr}\bigl\langle\tilde{Ξ}_{\mathrm{sp}},\,C_a\,\partial \tilde{Ξ}_{\mathrm{sp}}/\partial x_\mu\bigr\rangle,\qquad
 T_\rho{}_{\mu\nu}=\kappa\,\mathrm{ReTr}\bigl\langle\tilde{Ξ}_{\mathrm{sp}},\,\tfrac12[q_\mu,q_\nu]\,q_\rho\,\tilde{Ξ}_{\mathrm{sp}}\bigr\rangle,\qquad
-K_{\mu ab}=\kappa\,\mathrm{ReTr}\bigl\langle\tilde{Ξ}_{\mathrm{sp}},\,C_{ab}\,\partial \tilde{Ξ}_{\mathrm{sp}}/\partial x_\mu\bigr\rangle,
+N_{\mathrm{cont},\mu ab}=\kappa\,\mathrm{ReTr}\bigl\langle\tilde{Ξ}_{\mathrm{sp}},\,C_{ab}\,\partial \tilde{Ξ}_{\mathrm{sp}}/\partial x_\mu\bigr\rangle,
 $$
 and identifies them with the tetrad, the torsion tensor and the contorsion. The frame action $C_a$ carries the tetrad's frame slot, and $C_{ab}=\tfrac12[C_a,C_b]$ is the bivector slot, so the contorsion needs no new letter. In Eq. (5) the multipliers are the units and not the actions: $q_\mu$ acts by left multiplication, $\tilde{Ξ}_{\mathrm{sp}}\mapsto e_\mu\tilde{Ξ}_{\mathrm{sp}}$, and the product $\tfrac12[q_\mu,q_\nu]q_\rho$ is an element of the algebra. The whole element then multiplies $\tilde{Ξ}_{\mathrm{sp}}$ from the left, and within it the rightmost factor is the one nearest the field, which is why the free index is the last one written in $[q_\lambda,q_\mu]q_\nu$. The letters $q$ name elements here and never a side: only the position of the element relative to $\tilde{Ξ}_{\mathrm{sp}}$ does. Throughout, the tetrad of Eq. (4) is written $\exp(a){}_\mu$ for the source's $e^a{}_\mu$, the frame index in parentheses so that it does not collide with the basis unit $e_\mu$, and $e$ is $\det\exp(a){}_\mu$.
 
@@ -127,11 +127,11 @@ The vanishing of the three imaginary bilinears, established above and used repea
 
 **The printed contorsion–torsion relation carries the last index in the wrong order.** The source prints $K_{ab\mu}=\tfrac12(T_{\mu ab}-T_{ab\mu}+T_{ba\mu})$, with the frame pair first. The relation that is exact for any torsion, and antisymmetric in its first and third slots, is
 $$
-K_{\mu ab}=\tfrac12\bigl(T_{\mu ab}-T_{ab\mu}+T_{b\mu a}\bigr),
+N_{\mathrm{cont},\mu ab}=\tfrac12\bigl(T_{\mu ab}-T_{ab\mu}+T_{b\mu a}\bigr),
 $$
 whose third term carries the order $b\mu a$. On a totally antisymmetric torsion the three cyclic orders coincide, $T_{\mu ab}=T_{ab\mu}=T_{b\mu a}$, so the standard bracket is $T_{\mu ab}-T_{\mu ab}+T_{\mu ab}=T_{\mu ab}$ and the contorsion is $\tfrac12T_{\mu ab}$; the printed third term $T_{ba\mu}$ is the odd permutation and equals $-T_{\mu ab}$, so the printed bracket is $-T_{\mu ab}$ and the printed contorsion is $-\tfrac12T_{\mu ab}$. On $T_{012}=T_{120}=T_{201}=1$ the printed form gives $-\tfrac12$ where the standard one gives $+\tfrac12$: the coefficient $\tfrac12$ is right and the sign is reversed.
 
-That is a sign convention rather than an arithmetic slip, and it is the more awkward defect for being one. A contorsion defined by $\Gamma=\{\,\}-K$ instead of $\Gamma=\{\,\}+K$ makes the printed form correct, and the paper never states which convention it uses; its two displays, $K_{ab\mu}$ in Section 5.1 and $K_{\mu ab}$ in Section 5.7, agree with each other to $-\tfrac12T$ and never fix it. Since the same $K$ is then built as the composite $\kappa\,\mathrm{ReTr}\langle\tilde{Ξ}_{\mathrm{sp}},\,C_{ab}\partial \tilde{Ξ}_{\mathrm{sp}}/\partial x_\mu\rangle$ and fed into the torsion–spin relation of Appendix B, the sign of the matter coupling is left undetermined by the text.
+That is a sign convention rather than an arithmetic slip, and it is the more awkward defect for being one. A contorsion defined by $\Gamma=\{\,\}-K$ instead of $\Gamma=\{\,\}+K$ makes the printed form correct, and the paper never states which convention it uses; its two displays, $K_{ab\mu}$ in Section 5.1 and $N_{\mathrm{cont},\mu ab}$ in Section 5.7, agree with each other to $-\tfrac12T$ and never fix it. Since the same $K$ is then built as the composite $\kappa\,\mathrm{ReTr}\langle\tilde{Ξ}_{\mathrm{sp}},\,C_{ab}\partial \tilde{Ξ}_{\mathrm{sp}}/\partial x_\mu\rangle$ and fed into the torsion–spin relation of Appendix B, the sign of the matter coupling is left undetermined by the text.
 
 **The composite tetrad vanishes on the free Dirac solutions.** This is the decisive failure of the section. For a plane wave $\tilde{Ξ}_{\mathrm{sp}}=\tilde{Ξ}_{\mathrm{sp}}\exp(ik\cdot x)$ with constant $\tilde{Ξ}_{\mathrm{sp}}$, the derivative gives $\partial \tilde{Ξ}_{\mathrm{sp}}/\partial x_\mu=ik_\mu\tilde{Ξ}_{\mathrm{sp}}$, so, with $n$ the dimension of the trace,
 $$
@@ -169,7 +169,7 @@ S=\int d^4r\, e\Bigl[\frac{1}{2\kappa}\exp(a){}_\mu \exp(b){}_\nu \mathrm{Riem}_
 $$
 with $C^a=g^{ab}C_b$ raised through the metric and the curvature pair written world indices first, in the corpus's order, and it adds the constraint Lagrangian
 $$
-\mathcal{L}_{\text{constr}} = \lambda_{\mu a}\bigl(\exp(a){}_\mu - \exp(a){}_\mu[\tilde{Ξ}_{\mathrm{sp}}]\bigr) + \Lambda_{\mu ab}\bigl(K_{\mu ab} - K_{\mu ab}[\tilde{Ξ}_{\mathrm{sp}}]\bigr) ,
+\mathcal{L}_{\text{constr}} = \lambda_{\mu a}\bigl(\exp(a){}_\mu - \exp(a){}_\mu[\tilde{Ξ}_{\mathrm{sp}}]\bigr) + \Lambda_{\mu ab}\bigl(N_{\mathrm{cont},\mu ab} - N_{\mathrm{cont},\mu ab}[\tilde{Ξ}_{\mathrm{sp}}]\bigr) ,
 $$
 with the composite expressions of Section 4 on the right, and with the coefficient $c_A$ renamed from the source's $C_A$ so that it does not collide with the frame actions $C_\mu$. One remark on the printed form belongs before the variation. The index on the action is raised by the metric, $iC^a=i g^{ab}C_b$, so the kinetic term carries a minus sign on the three spatial derivatives and none on the time derivative.
 
@@ -221,17 +221,17 @@ a coefficient $2\kappa=16\pi G$ where the printed target $G_{\mu\nu}=8\pi G T_{\
 
 ## The Teleparallel Sector
 
-Section 9.1 adds a Lagrange multiplier $\mathrm{Sd}_{\mu\nu ab}$ enforcing $\mathrm{Riem}_{\mu\nu ab}(\omega)=0$, so that the geometry is teleparallel, and identifies the Weitzenböck gauge $\omega_{\mu ab}=0$ with the contorsion given by minus the Levi-Civita spin connection of the tetrad, $K_{\mu ab}=-\omega_{\mu ab}(e)$. Both statements of geometry are correct and standard: the Weitzenböck connection
+Section 9.1 adds a Lagrange multiplier $\mathrm{Sd}_{\mu\nu ab}$ enforcing $\mathrm{Riem}_{\mu\nu ab}(\omega)=0$, so that the geometry is teleparallel, and identifies the Weitzenböck gauge $\omega_{\mu ab}=0$ with the contorsion given by minus the Levi-Civita spin connection of the tetrad, $N_{\mathrm{cont},\mu ab}=-\omega_{\mu ab}(e)$. Both statements of geometry are correct and standard: the Weitzenböck connection
 $$
 \Gamma_{\lambda\mu\nu}=\sum_a e_{a\lambda}\,\frac{\partial \exp(a){}_\nu}{\partial x_\mu}
 $$
 is curvature-free by construction, and the teleparallel gauge is the one in which the whole connection is contorsion. Both were verified independently for this corpus in *Torsion, Contorsion and the Spin Connection in Biquaternionic Form*, where the vanishing of the curvature and the non-vanishing of the torsion were checked exactly.
 
-One defect in that paragraph is checkable on the page and needs no computation. The display for the contorsion reads $K_{\mu ab}=-\omega_{\mu ab}(e)=e_{a\nu}\frac{\partial e_{b]}{}^{\nu}}{\partial r_x^{[\mu}}-e_{b\nu}\frac{\partial e_{a]}{}^{\nu}}{\partial r_x^{[\mu}}$, and the line immediately below, which the same paragraph equates to it, reads $\kappa\,\mathrm{ReTr}\langle\tilde{Ξ}_{\mathrm{sp}},\,C_{ab}\,\partial \tilde{Ξ}_{\mathrm{sp}}/\partial x_\mu\rangle=-e_{a\nu}\frac{\partial e_{b]}{}^{\nu}}{\partial r_x^{[\mu}}-e_{b\nu}\frac{\partial e_{a]}{}^{\nu}}{\partial r_x^{[\mu}}$. The second term changes sign between two consecutive displays of the same object, so at most one of them is right.
+One defect in that paragraph is checkable on the page and needs no computation. The display for the contorsion reads $N_{\mathrm{cont},\mu ab}=-\omega_{\mu ab}(e)=e_{a\nu}\frac{\partial e_{b]}{}^{\nu}}{\partial r_x^{[\mu}}-e_{b\nu}\frac{\partial e_{a]}{}^{\nu}}{\partial r_x^{[\mu}}$, and the line immediately below, which the same paragraph equates to it, reads $\kappa\,\mathrm{ReTr}\langle\tilde{Ξ}_{\mathrm{sp}},\,C_{ab}\,\partial \tilde{Ξ}_{\mathrm{sp}}/\partial x_\mu\rangle=-e_{a\nu}\frac{\partial e_{b]}{}^{\nu}}{\partial r_x^{[\mu}}-e_{b\nu}\frac{\partial e_{a]}{}^{\nu}}{\partial r_x^{[\mu}}$. The second term changes sign between two consecutive displays of the same object, so at most one of them is right.
 
 What is *not* correct is what the source puts into that identity. The teleparallel gauge condition, read as an equation for the contorsion — hence, through Eq. (6), for the bilinear
 $$
-K_{\mu ab}=\kappa\,\mathrm{ReTr}\bigl\langle\tilde{Ξ}_{\mathrm{sp}},\,C_{ab}\,\partial \tilde{Ξ}_{\mathrm{sp}}/\partial x_\mu\bigr\rangle
+N_{\mathrm{cont},\mu ab}=\kappa\,\mathrm{ReTr}\bigl\langle\tilde{Ξ}_{\mathrm{sp}},\,C_{ab}\,\partial \tilde{Ξ}_{\mathrm{sp}}/\partial x_\mu\bigr\rangle
 $$
 — must equal $-\omega_{\mu ab}(e)$ of the *composite* tetrad, the Levi-Civita connection of $\exp(a){}_\nu[\tilde{Ξ}_{\mathrm{sp}}]$. That is an over-determined differential equation on $\tilde{Ξ}_{\mathrm{sp}}$, not a consequence of anything, and the composite tetrad it is asked to reproduce vanishes on the free solutions. The teleparallel section therefore rests on the same composite that fails above.
 
@@ -247,7 +247,7 @@ $$
 \bigl[2\kappa D\,\mathrm{ReTr}\langle\tilde{Ξ}_{\mathrm{sp}},\,\partial_\mu\tilde{Ξ}_{\mathrm{sp}}\rangle\bigr]=M^{-2}\,M\,M^{4}=M^{3},\qquad
 \bigl[2\kappa^{2}\bigl(\mathrm{ReTr}\langle\tilde{Ξ}_{\mathrm{sp}},\,\partial_\mu\tilde{Ξ}_{\mathrm{sp}}\rangle\bigr)^{2}\bigr]=M^{-4}\,M^{8}=M^{4} .
 $$
-A single equation cannot hold at three different orders, so the constraint is dimensionally impossible before any of its content is examined. The reason is not a stray exponent. Both terms on the right are pieces of the contorsion, since $\kappa\,\mathrm{ReTr}\langle\tilde{Ξ}_{\mathrm{sp}},\,C_{ab}\partial \tilde{Ξ}_{\mathrm{sp}}/\partial x_\mu\rangle=K_{\mu ab}$ makes the first $-2D_{[\mu}K_{\nu]ab}$ and the second a product of two contorsions: they are the $DK$ and the $K^2$ of $\mathrm{Riem}(\omega(e)+K)$. For a contorsion of dimension $M$, which is the dimension a contorsion has, both terms would be $M^2$ and the display would close. The source's composite has dimension $M^2$ instead, and one false power in the composite becomes $M^3$ in $DK$ and $M^4$ in $K^2$ — the mismatch grows as the construction proceeds, which is why it cannot be repaired downstream.
+A single equation cannot hold at three different orders, so the constraint is dimensionally impossible before any of its content is examined. The reason is not a stray exponent. Both terms on the right are pieces of the contorsion, since $\kappa\,\mathrm{ReTr}\langle\tilde{Ξ}_{\mathrm{sp}},\,C_{ab}\partial \tilde{Ξ}_{\mathrm{sp}}/\partial x_\mu\rangle=N_{\mathrm{cont},\mu ab}$ makes the first $-2D_{[\mu}K_{\nu]ab}$ and the second a product of two contorsions: they are the $DK$ and the $K^2$ of $\mathrm{Riem}(\omega(e)+K)$. For a contorsion of dimension $M$, which is the dimension a contorsion has, both terms would be $M^2$ and the display would close. The source's composite has dimension $M^2$ instead, and one false power in the composite becomes $M^3$ in $DK$ and $M^4$ in $K^2$ — the mismatch grows as the construction proceeds, which is why it cannot be repaired downstream.
 
 ## Kozyrev's Causal Time
 
@@ -458,7 +458,7 @@ What the source does supply is a reminder, in a form the corpus's own articles s
 | $\mathrm{ReTr}(X)$ | the real part of the trace of $X$, which is $n$ times its central coefficient: $n=2$ for $\mathrm{Tr}_{\mathbb H}$ and $n=4$ for the four-dimensional trace of Eqs. (4)–(6) |
 | $\exp(a){}_\mu$ | the source's tetrad $e^a{}_\mu$, Eq. (4) |
 | $T_\rho{}_{\mu\nu}$ | the source's composite torsion, Eq. (5) |
-| $K_{\mu ab}$ | the source's composite contorsion, Eq. (6) |
+| $N_{\mathrm{cont},\mu ab}$ | the source's composite contorsion, Eq. (6) |
 | $\Sigma_{\lambda\mu\nu}$ | the corpus’s spin density, $\langle\tilde{Ξ}_{\mathrm{sp}},\operatorname{Alt}[C_\lambda C_\mu C_\nu]\tilde{Ξ}_{\mathrm{sp}}\rangle$, equal to $\kappa^{-1}T_{\lambda\mu\nu}$ on the source’s own solutions; $\Sigma_{\rho\mu\nu}$ is the same object carrying the index of the torsion it is matched to |
 | $A_\rho$ | the axial bilinear $\langle\tilde{Ξ}_{\mathrm{sp}},\mathsf{V}_{\mathrm{vol}} C_\rho\tilde{Ξ}_{\mathrm{sp}}\rangle$ |
 | $\mathrm{Sd}_{\mu\nu ab}$ | the source's teleparallel Lagrange multiplier |

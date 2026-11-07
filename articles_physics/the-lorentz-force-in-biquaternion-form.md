@@ -2,7 +2,7 @@
 
 ## Introduction
 
-A charged particle moving in an electromagnetic field is acted on by the **Lorentz force**. In the four-dimensional language of relativity this force is the contraction of the field-strength tensor with the four-velocity, $K_\mu = ϙ\sum_\nu F_{\mu\nu}v_\nu$; in three-vector language it reads $ϙ(\vec E + \vec v\times\vec B)$ for the spatial part, together with the power $ϙ\,\vec E\cdot\vec v$ in the time part. The companion article *Relativistic Mechanics in Biquaternionic Form* recorded the biquaternion component form of this four-force and identified it as an element of the anti-Hermitian subspace $\mathbb{B}_{\Phi}$. That article also recorded, explicitly and twice, an open problem: the expression of the same four-force as a **biquaternion product** of the field-strength biquaternion $\tilde{F}$ and the four-velocity $\tilde{V}$ is *not* simply the real part of $\tilde{F}\circ\tilde{V}$, the correct expression "involves the representation theory of $\mathbb{B}$ in the even subalgebra of $\mathrm{Cl}_{1,3}$", and it "remains to be worked out cleanly".
+A charged particle moving in an electromagnetic field is acted on by the **Lorentz force**. In the four-dimensional language of relativity this force is the contraction of the field-strength tensor with the four-velocity, $F_{\mathrm{lor},\mu} = ϙ\sum_\nu F_{\mu\nu}v_\nu$; in three-vector language it reads $ϙ(\vec E + \vec v\times\vec B)$ for the spatial part, together with the power $ϙ\,\vec E\cdot\vec v$ in the time part. The companion article *Relativistic Mechanics in Biquaternionic Form* recorded the biquaternion component form of this four-force and identified it as an element of the anti-Hermitian subspace $\mathbb{B}_{\Phi}$. That article also recorded, explicitly and twice, an open problem: the expression of the same four-force as a **biquaternion product** of the field-strength biquaternion $\tilde{F}$ and the four-velocity $\tilde{V}$ is *not* simply the real part of $\tilde{F}\circ\tilde{V}$, the correct expression "involves the representation theory of $\mathbb{B}$ in the even subalgebra of $\mathrm{Cl}_{1,3}$", and it "remains to be worked out cleanly".
 
 This article carries out that work. The result is a two-term product formula, bilinear in the field and the four-velocity, that reproduces the component form exactly. In its most compact shape the formula is a single projection:
 
@@ -55,9 +55,9 @@ $$
 \tilde{\mathcal F}_{\mathrm{frc}} = i\,\frac{\gamma P_{\text{mech}}}{c}\,e_t + \gamma\,\vec f.
 $$
 
-This is the biquaternion transcription of the Minkowski force $K_\mu = (i\gamma P_{\text{mech}}/c,\ \gamma\vec f)$ in the $i c r'_t$ convention, so the coefficient of $e_t$ is the $i c r'_t$ time component $K_0$.
+This is the biquaternion transcription of the Minkowski force $F_{\mathrm{lor},\mu} = (i\gamma P_{\text{mech}}/c,\ \gamma\vec f)$ in the $i c r'_t$ convention, so the coefficient of $e_t$ is the $i c r'_t$ time component $K_0$.
 
-**Origin in the field tensor.** The component form is the contraction $K_\mu = ϙ\sum_\nu F_{\mu\nu}v_\nu$. In the $i c r'_t$ convention the metric is Euclidean, so no metric factor arises and $v_\nu = (i\gamma c,\ \gamma\vec v)$. The field tensor is the one fixed by the field-strength article,
+**Origin in the field tensor.** The component form is the contraction $F_{\mathrm{lor},\mu} = ϙ\sum_\nu F_{\mu\nu}v_\nu$. In the $i c r'_t$ convention the metric is Euclidean, so no metric factor arises and $v_\nu = (i\gamma c,\ \gamma\vec v)$. The field tensor is the one fixed by the field-strength article,
 
 $$
 F_{\mu\nu} =
@@ -109,7 +109,7 @@ $$
 \tilde{\mathcal F}_{\mathrm{frc}}\tilde{P}^{\natural} + \tilde{P}\tilde{\mathcal F}_{\mathrm{frc}}^{\natural} = 0,
 $$
 
-the biquaternion form of the Minkowski orthogonality $\sum_\mu K_\mu P_\mu = 0$. The four-force changes the direction of the four-momentum but not its norm. This is examined further in the section on invariants.
+the biquaternion form of the Minkowski orthogonality $\sum_\mu F_{\mathrm{lor},\mu} P_\mu = 0$. The four-force changes the direction of the four-momentum but not its norm. This is examined further in the section on invariants.
 
 ## The Product Problem
 
@@ -354,7 +354,7 @@ The four-force is thus built from the same ingredients as the four-momentum — 
 
 Three consequences follow at once.
 
-**Orthogonality.** Differentiating the mass shell, $\frac{d}{d\tau}(\tilde{P}\tilde{P}^{\natural}) = \tilde{\mathcal F}_{\mathrm{frc}}\tilde{P}^{\natural} + \tilde{P}\tilde{\mathcal F}_{\mathrm{frc}}^{\natural} = 0$. In components this is the familiar $\sum_\mu K_\mu P_\mu = 0$, which for the Lorentz force reads
+**Orthogonality.** Differentiating the mass shell, $\frac{d}{d\tau}(\tilde{P}\tilde{P}^{\natural}) = \tilde{\mathcal F}_{\mathrm{frc}}\tilde{P}^{\natural} + \tilde{P}\tilde{\mathcal F}_{\mathrm{frc}}^{\natural} = 0$. In components this is the familiar $\sum_\mu F_{\mathrm{lor},\mu} P_\mu = 0$, which for the Lorentz force reads
 
 $$
 \left(i\frac{\gamma P_{\text{mech}}}{c}\right)\left(i\gamma mc\right) + \left(\gamma\vec f\right)\cdot\left(\gamma m\vec v\right)
@@ -620,7 +620,7 @@ $$
 \tilde{\mathcal F}_{\mathrm{frc}} = i\,\frac{\gamma ϙ}{c}\left(\vec E\cdot\vec v\right)e_t + \gamma ϙ\left(\vec E + \vec v\times\vec B\right),
 $$
 
-which is the contraction $K_\mu = ϙ\sum_\nu F_{\mu\nu}v_\nu$ written in the biquaternion basis, and it lies in the anti-Hermitian subspace $\mathbb{B}_{\Phi}$. Its expression as a biquaternion product of the field strength and the four-velocity is not the real part of $\tilde{F}\tilde{V}$ — that object has the wrong reality structure and lies outside $\mathbb{B}_{\Phi}$ — but the anti-Hermitian projection of $\tilde{V}\tilde{F}$:
+which is the contraction $F_{\mathrm{lor},\mu} = ϙ\sum_\nu F_{\mu\nu}v_\nu$ written in the biquaternion basis, and it lies in the anti-Hermitian subspace $\mathbb{B}_{\Phi}$. Its expression as a biquaternion product of the field strength and the four-velocity is not the real part of $\tilde{F}\tilde{V}$ — that object has the wrong reality structure and lies outside $\mathbb{B}_{\Phi}$ — but the anti-Hermitian projection of $\tilde{V}\tilde{F}$:
 
 $$
 \boxed{\;\tilde{\mathcal F}_{\mathrm{frc}} = -\,ϙ\sqrt{\mu}\;P_{\mathbb{B}_{\Phi}}\!\left(\tilde{V}\tilde{F}\right)

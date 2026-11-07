@@ -20,7 +20,7 @@ $$
 T =\frac{m\,\kappa}{2\,k_m\,\pi\,k_{B}},
 $$
 
-with $\kappa$ the surface gravity of the horizon. This article takes that result as its input, together with the framework interpretation that accompanies it — the horizon-generating flow as the modular flow, the modular Hamiltonian $K=-\log\tilde{Ϛ}$ as a Hermitian element of $\mathbb{B}_{\Psi}$, and the Euclidean period as a period along the intrinsic imaginary time of $\mathbb{B}_{\Phi}$ — and asks what else the horizon's thermodynamics contains. The three things it contains are the **entropy**, the **first law**, and the **Smarr relation**.
+with $\kappa$ the surface gravity of the horizon. This article takes that result as its input, together with the framework interpretation that accompanies it — the horizon-generating flow as the modular flow, the modular Hamiltonian $H_{\mathrm{modular}}=-\log\tilde{Ϛ}$ as a Hermitian element of $\mathbb{B}_{\Psi}$, and the Euclidean period as a period along the intrinsic imaginary time of $\mathbb{B}_{\Phi}$ — and asks what else the horizon's thermodynamics contains. The three things it contains are the **entropy**, the **first law**, and the **Smarr relation**.
 
 **Three traps organise the treatment, and one prohibition closes it.**
 
@@ -134,7 +134,7 @@ $$
 
 Two features of the parent's result are used below and are not re-established here. First, $\kappa$ is the **redshifted** surface gravity — finite at the horizon, the limit of $a(r)\sqrt f$ for the static observer, not the divergent proper acceleration $a(r)$ — so the temperature is the same function of the state regardless of the observer. Second, the parent identified the inverse temperature with the Euclidean period, $\beta=2\pi c/\kappa=8\pi GM/c^3$, which is the length of the compact imaginary-time circle. That identification is the operational meaning of the imaginary time of $\mathbb{B}_{\Phi}$ and is the reason the thermodynamics below can be read as a statement about the horizon's own geometry rather than about a distant observer's detector.
 
-The framework content inherited here is likewise the parent's: the horizon-generating flow is the modular flow, and its modular Hamiltonian $K=-\log\tilde{Ϛ}$ is a Hermitian element of the informational sector $\mathbb{B}_{\Psi}$. The horizon's temperature is fixed by the period of that flow. The entropy developed in the next section is, by contrast, **not** a functional of an $\mathbb{B}_{\Psi}$ state; the framework supplies no such state for a horizon, and the distinction is kept explicit.
+The framework content inherited here is likewise the parent's: the horizon-generating flow is the modular flow, and its modular Hamiltonian $H_{\mathrm{modular}}=-\log\tilde{Ϛ}$ is a Hermitian element of the informational sector $\mathbb{B}_{\Psi}$. The horizon's temperature is fixed by the period of that flow. The entropy developed in the next section is, by contrast, **not** a functional of an $\mathbb{B}_{\Psi}$ state; the framework supplies no such state for a horizon, and the distinction is kept explicit.
 
 ## The Entropy Is the Horizon Area
 
@@ -443,7 +443,7 @@ Substituting these, $M-2TS+2PV$ reduces identically to zero; and independently, 
 
 - The sectors $\mathbb{B}_{\Phi}$ and $\mathbb{B}_{\Psi}$, the quaternion subspace $\mathbb{B}_{H}$, the complex scalars $\mathbb{B}_{C}$, the biquaternion norm $\langle\tilde{Q}\rangle_{\natural}=\tilde{Q}\tilde{Q}^{\natural}$, and the plain form $\langle\tilde{Ϛ},\tilde R_\Psi\rangle_{*}=\mathrm{Sc}(\tilde{Ϛ}\tilde R_\Psi^{*})$, read as the trace pairing $\mathrm{Tr}(\tilde{Ϛ}\tilde R_\Psi^{*})=2\,\mathrm{Sc}(\tilde{Ϛ}\tilde R_\Psi^{*})$.
 - The intrinsic imaginary time $i c r'_t$ of $\mathbb{B}_{\Phi}$, whose compactification period is the inverse temperature, and the KMS condition of the parent.
-- The modular Hamiltonian $K=-\log\tilde{Ϛ}$ of the horizon flow as a Hermitian element of $\mathbb{B}_{\Psi}$.
+- The modular Hamiltonian $H_{\mathrm{modular}}=-\log\tilde{Ϛ}$ of the horizon flow as a Hermitian element of $\mathbb{B}_{\Psi}$.
 - The boost word in the two-term form $\tilde U_{\mathrm b}(\theta_{\mathrm{rpd}})=e^{\theta_{\mathrm{rpd}}/2}\tilde\Pi_+ + e^{-\tilde{Ξ}_{\mathrm{sp}}/2}\tilde\Pi_-$, whose renormalised limit $\tilde{Ξ}_{\mathrm{sp}}\to\infty$ is the null idempotent $\tilde\Pi_+$.
 - The charges $(M,J,Ϙ)$ as material-sector Noether quantities: energy–momentum is an $\mathbb{B}_{\Phi}$ four-vector, angular momentum the associated bivector, and charge the time component of the conserved current.
 
@@ -496,7 +496,7 @@ The biquaternion framework houses the thermodynamics — the material sector $\m
 |---|---|
 | $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ | Biquaternion algebra |
 | $\mathbb{B}_{\Phi}$ | Material sector: imaginary time, real space; home of the four-vectors |
-| $\mathbb{B}_{\Psi}$ | Informational sector: real time, imaginary space; home of $K=-\log\tilde{Ϛ}$ |
+| $\mathbb{B}_{\Psi}$ | Informational sector: real time, imaginary space; home of $H_{\mathrm{modular}}=-\log\tilde{Ϛ}$ |
 | $\mathbb{B}_{C}$, $\mathbb{B}_{H}$ | Complex scalars; real-quaternion subspace |
 | $e_t,\vec e_x,\vec e_y,\vec e_z$ | Quaternion basis, $\vec e_k^2=-e_t$ |
 | $i$ | Scalar imaginary, $i^2=-1$ |
@@ -520,7 +520,7 @@ The biquaternion framework houses the thermodynamics — the material sector $\m
 | $M=2TS+2\Omega J+Ξ Ϙ$ | Smarr relation |
 | $\Lambda$, $P=-\Lambda/(8\pi G)$, $V$ | Cosmological constant, pressure, thermodynamic volume |
 | $M=2TS+2\Omega J+Ξ Ϙ-2PV$ | Smarr relation with a cosmological constant |
-| $K=-\log\tilde{Ϛ}$ | Modular Hamiltonian (Hermitian, in $\mathbb{B}_{\Psi}$) |
+| $H_{\mathrm{modular}}=-\log\tilde{Ϛ}$ | Modular Hamiltonian (Hermitian, in $\mathbb{B}_{\Psi}$) |
 | $\tilde\Pi_\pm=\tfrac12(e_t\pm i\vec u_\zeta)$ | Idempotents of the horizon-generating boost; the renormalised rotor tends to $\tilde\Pi_+$ |
 | $(\beta,A)$ | Boundary datum: Euclidean period and horizon area |
 

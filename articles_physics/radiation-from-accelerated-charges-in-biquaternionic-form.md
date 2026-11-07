@@ -473,7 +473,7 @@ K_{\mathrm{rad}\,\mu}
 = \frac{ϙ^2}{6\pi\epsilon c^3}\left(\frac{d^2u_\mu}{d\tau^2} - \frac{u_\mu}{c^2}\sum_\nu\left(\frac{du_\nu}{d\tau}\right)^2\right),
 $$
 
-the radiation-reaction counterpart of the electromagnetic four-force $K_\mu$ of *The Lorentz Force in Biquaternion Form*. Its defining property is that it is **orthogonal to the worldline**:
+the radiation-reaction counterpart of the electromagnetic four-force $F_{\mathrm{lor},\mu}$ of *The Lorentz Force in Biquaternion Form*. Its defining property is that it is **orthogonal to the worldline**:
 
 $$
 \sum_\mu K_{\mathrm{rad}\,\mu}u_\mu = 0 .
@@ -585,7 +585,7 @@ The construction is explicit enough that the two downstream exercises are direct
 | $\theta, \theta_{\mathrm{azm}}$ | Polar angle from $\vec\beta$, azimuthal angle |
 | $\epsilon, \mu$, $c = 1/\sqrt{\epsilon\mu}$ | Medium permittivity, permeability, speed of light |
 | $ϙ, m$ | Charge and mass of the radiating particle |
-| $K_{\mathrm{rad}\,\mu}$ | Radiation-reaction four-force, $\sum_\mu K_{\mathrm{rad}\,\mu}u_\mu = 0$, the counterpart of the Lorentz four-force $K_\mu$ |
+| $K_{\mathrm{rad}\,\mu}$ | Radiation-reaction four-force, $\sum_\mu K_{\mathrm{rad}\,\mu}u_\mu = 0$, the counterpart of the Lorentz four-force $F_{\mathrm{lor},\mu}$ |
 | $P(\Sigma)$, $\mathcal{Q}$ | Radiated energy–momentum rate and self-interaction force (Gsponer), $\left(dP/dr'_{\mathrm{ret},t}\right)(\Sigma) = -\mathcal{Q}$ |
 | $C^{[0]}, C^{[1]}$ | Colombeau moments of the mollifier; the worldline condition fixes $C^{[1]} = 1$ |
 
