@@ -154,7 +154,7 @@ $$
 f=\sqrt2\,v\;},
 $$
 
-so the current is the derivative of the Goldstone field times the **decay constant** $f$. The charge is the spatial integral, $Ϙ=-f\int d^3r\,d\vartheta_{\mathrm{fld}}/dr'_t$ to leading order, and it is conserved because the current is. The matrix element that defines $f$ is the standard one,
+so the current is the derivative of the Goldstone field times the **decay constant** $f$. The charge is the spatial integral, $Ϙ=-f\int d^3r\,d\vartheta_{\mathrm{fld}}/dt' = -fc\int d^3r\,d\vartheta_{\mathrm{fld}}/dr'_t$ to leading order, the clock being $t'=r'_t/c$, and it is conserved because the current is. The algebraic identity below is homogeneous in the parameter, so it holds verbatim with either $d/dr'_t$ or $d/dt'$. The matrix element that defines $f$ is the standard one,
 
 $$
 \boxed{\;\langle0|\tilde J_{\Phi}(0)|\vartheta_{\mathrm{fld}}(p)\rangle=i f\,p_\mu\;},

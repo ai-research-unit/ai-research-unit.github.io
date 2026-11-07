@@ -115,12 +115,13 @@ an equation in the centre of the algebra: **the kinetic energy is the biquaterni
 The Hamilton–Jacobi equation is solved by the method of characteristics, and the characteristics are the classical trajectories. Writing $\vec p = \nabla S$ for the classical momentum, the equation reads $|\vec p|^2/2m+V=E$, and its characteristic system is
 
 $$
-d(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)/dr'_t = \frac{\vec p}{m},
+d(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)/dt' = \frac{\vec p}{m},
 \qquad
-\,d\vec p/dr'_t = -\nabla V .
+\,d\vec p/dt' = -\nabla V ,
 $$
+written against the clock $t'=r'_t/c$, because a characteristic velocity is a velocity and not a dimensionless ratio.
 
-The phase gradient therefore defines a congruence of trajectories along which $S$ is constant along the wave fronts and increases at the rate $dS/dr'_t = \vec p\cdot\,d(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)/dr'_t = |\vec p|^2/m$, which recovers the classical action. This is the optical–mechanical analogy in its algebraic form: the wave fronts $S=\text{const}$ are the surfaces of constant phase, the rays are the trajectories, and the phase gradient is the ray direction. In the biquaternion interpretation the ray direction per point is an element of the real-quaternion subspace $\mathbb{B}_{H}$, the algebra's copy of three-dimensional space, and the phase accumulated along a ray is a central element of $\mathbb{B}_{C}$.
+The phase gradient therefore defines a congruence of trajectories along which $S$ is constant along the wave fronts and increases at the rate $dS/dt' = \vec p\cdot\,d(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)/dt' = |\vec p|^2/m$, an energy and not an energy per metre, which recovers the classical action. This is the optical–mechanical analogy in its algebraic form: the wave fronts $S=\text{const}$ are the surfaces of constant phase, the rays are the trajectories, and the phase gradient is the ray direction. In the biquaternion interpretation the ray direction per point is an element of the real-quaternion subspace $\mathbb{B}_{H}$, the algebra's copy of three-dimensional space, and the phase accumulated along a ray is a central element of $\mathbb{B}_{C}$.
 
 ### The free and separable cases
 
@@ -320,7 +321,7 @@ The whole semiclassical expansion lives in the **centre** of the algebra: the ph
 | $\nabla S=\sum_\mu(\partial S/\partial R_\mu)\vec e_\mu$ | Phase gradient; real quaternion, $\in\mathbb{B}_{H}$ |
 | $\langle \nabla S\rangle_{\natural}=\lvert\nabla S\rvert^2$ | Biquaternion norm of the phase gradient; $\nabla S\,\nabla S^{\natural}=\lvert\nabla S\rvert^2e_t$ |
 | $\frac{1}{2\,m}\langle  \nabla  S\rangle_{\natural}=E-V$ | Hamilton–Jacobi equation as a biquaternion norm |
-| $\vec p=\nabla S$, $d(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)/dr'_t=\vec p/m$, $d\vec p/dr'_t=-\nabla V$ | Characteristics; classical trajectories |
+| $\vec p=\nabla S$, $d(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)/dt'=\vec p/m$, $d\vec p/dt'=-\nabla V$ | Characteristics; classical trajectories, against $t'=r'_t/c$ |
 | $\nabla\cdot(A^2\nabla S)=0$ | Transport equation |
 | $A=C/\sqrt{\lvert p\rvert}$ | WKB amplitude in one dimension |
 | $\lvert\det\partial^2S_{\mathrm{cl}}/\partial x_i\partial x_f\rvert^{1/2}$ | Van Vleck determinant |

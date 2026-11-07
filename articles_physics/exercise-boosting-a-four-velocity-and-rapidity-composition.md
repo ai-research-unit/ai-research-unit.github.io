@@ -281,7 +281,7 @@ $$
 \tilde R_\Phi(\tau) = ic\,\tau\cosh\xi(\tau)\,e_t + c\,\tau\sinh\xi(\tau)\,\vec u_y,
 \qquad \xi = \xi(\tau),
 $$
-so that $r'_t = \tau\cosh\xi$ and the displacement along $\vec u_y$ is $x_1 = c\tau\sinh\xi$. Define the coordinate velocity by $\beta = (1/c)\,dx_1/dr'_t$.
+so that $r'_t = c\tau\cosh\xi$ and the displacement along $\vec u_y$ is $x_1 = c\tau\sinh\xi$. Define the coordinate velocity by $\beta = (1/c)\,dx_1/dr'_t$.
 
 **(a)** Show that
 $$

@@ -189,9 +189,11 @@ The drift is the angle defect: the recorded values agree with $\tfrac12-(a^2+b^2
 
 For a particle whose velocity traces a path in velocity space — an accelerated particle — the holonomy accumulated along the path is a continuous rotation of the rest-frame spin, and its rate is Thomas precession,
 $$
-d\vec\Omega_{\mathrm{T}}/dr'_t = -\frac{\gamma-1}{v^2}\,\vec v\times\,d\vec v/dr'_t ,
+\frac{d\vec\Omega_{\mathrm{T}}}{dr'_t} = -\frac{\gamma-1}{v^2}\,\vec v\times\frac{d\vec v}{dr'_t},
+\qquad
+\vec\omega_{\mathrm{T}}=c\,\frac{d\vec\Omega_{\mathrm{T}}}{dr'_t},
 $$
-the infinitesimal form of the statement that the area swept out per unit time is the rotation accumulated per unit time. The rate form is derived in the companion article on the Wigner rotation; the present article supplies what the rate does not: the exact finite statement, and the identification of the accumulated angle with an area rather than with a Euclidean product of rapidities. In dimensions other than three the same structure is the statement that the symmetric space $SL(2,\mathbb{C})/SU(2)$ has rank one, so its curvature is a single number and every loop's holonomy is a single angle.
+the infinitesimal form of the statement that the area swept out per unit material length is the rotation accumulated per unit material length; the clock is the length $r'_t=c\,t'$, so the angular velocity of the precession is $c$ times the twist. The rate form is derived in the companion article on the Wigner rotation; the present article supplies what the rate does not: the exact finite statement, and the identification of the accumulated angle with an area rather than with a Euclidean product of rapidities. In dimensions other than three the same structure is the statement that the symmetric space $SL(2,\mathbb{C})/SU(2)$ has rank one, so its curvature is a single number and every loop's holonomy is a single angle.
 
 ## The Light Cone Is the Boundary at Infinity
 

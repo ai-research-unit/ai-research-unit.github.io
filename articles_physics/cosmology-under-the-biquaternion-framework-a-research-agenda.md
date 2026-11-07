@@ -28,9 +28,9 @@ with a function and a parameter: the **scale factor** $a(r'_t)$, which carries t
 
 **The Friedmann equations, and what closes them.** Evaluating the Einstein equations on that metric gives
 
-$$\boxed{\;H^2 \equiv \left(\frac{da/dr'_t}{a}\right)^2 = \frac{8\pi G}{3c^2}\rho - \frac{kc^2}{a^2} + \frac{\Lambda c^2}{3},
+$$\boxed{\;H^2 \equiv \left(\frac{da/dt'}{a}\right)^2 = \frac{8\pi G}{3}\rho - \frac{kc^2}{a^2} + \frac{\Lambda c^2}{3},
 \qquad
-\frac{d^2a/d{r'_{t}}^2}{a} = -\frac{4\pi G}{3c^2}\left(\rho + 3p\right) + \frac{\Lambda c^2}{3}\;},$$
+\frac{d^2a/dt'^2}{a} = -\frac{4\pi G}{3}\left(\rho + 3p\right) + \frac{\Lambda c^2}{3}\;},$$
 
 where $\rho$ and $p$ are the energy density and pressure of the cosmic source. These are the Einstein equations on a homogeneous and isotropic ansatz; they inherit whatever status the Einstein equations have in the framework, no more and no less. Two of the three functions $a$, $\rho$, $p$ are fixed by them, and the system is **closed by an equation of state**, usually $p = w\rho$, together with the conservation law $\sum_\mu\nabla_\mu T_{\mu\nu} = 0$. The source is the perfect-fluid stress–energy tensor
 
@@ -243,7 +243,7 @@ The speculations are labelled as such. One sector sourcing the other at cosmolog
 | $\mathrm{Tr}(\tilde Q_1\tilde Q_2)=2\,\mathrm{Sc}(\tilde Q_1\tilde Q_2)$ | trace reading, a **fibre** trace over $\mathbb{C}^2$ | inherited |
 | $\tilde{E}_{\Phi}_\mu \in \mathbb{B}_{\Phi}$, $g_{\mu\nu} = \langle\tilde{E}_{\Phi}_\mu,\tilde{E}_{\Phi}_\nu\rangle_{\natural}$ | frame field and the metric it carries | inherited |
 | $a(r'_t)$, $k$ | scale factor and spatial-curvature parameter — **standard cosmology, carried not derived** | standard notation |
-| $H = \left(da/dr'_t\right)/a$, $\rho$, $p$, $w$, $\Lambda$ | Hubble rate, density, pressure, equation-of-state parameter, cosmological constant — **standard cosmology, no framework interpretation** | standard notation |
+| $H = \left(da/dt'\right)/a = c\left(da/dr'_t\right)/a$, $\rho$, $p$, $w$, $\Lambda$ | Hubble rate, density, pressure, equation-of-state parameter, cosmological constant — **standard cosmology, no framework interpretation** | standard notation |
 | $\sum_{\mu\nu}T_{\mu\nu}\varepsilon_\mu\bar{\varepsilon}_\nu=(\sum_{\mu}T_{\mu\mu})e_t$ | the bilinear collapses a rank-two tensor to its trace | recomputed here from an inherited identity |
 | $Z = 2\exp(-\beta r_t)\cosh(\beta|\vec r_\Psi|)$ | qubit partition function; entropy bounded by $\log 2$ | inherited from the partition-function article |
 | $c_{\mathrm{loc}} = c = 1/\sqrt{\epsilon\mu}$ | local scale of the imaginary time axis, Reading B of the local-scale route | inherited |

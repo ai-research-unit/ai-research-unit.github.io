@@ -309,7 +309,7 @@ $$
 
 with equality only at $p=0$, or for states already on the axis. The entropy therefore increases monotonically with $p$ from $\mathcal{S}(\tilde{Ϛ}_{\Psi})$ to $h(|\vec u\cdot\vec r|)$, and it is maximised over the axis by the choice $\vec u \perp \vec r$, which discards the state entirely and returns $\log 2$.
 
-In continuous time, with the transverse component decaying as $\exp(-\Gamma r'_t)$ and the axial component fixed, the Bloch radius is
+In continuous time, with the transverse component decaying as $\exp(-\Gamma r'_t)$ and the axial component fixed, the Bloch radius is, in steps of the material length $r'_t=c\,t'$ — so $\Gamma$ is a decay per unit length and the per-second decay is $c\Gamma$ — and the derivative below is taken in that same parameter on both sides:
 
 $$
 r(r'_t) = \sqrt{r_\parallel^2 + r_\perp(r'_t)^2}, \qquad r_\perp(r'_t) = \exp(-\Gamma r'_t)r_\perp(0),

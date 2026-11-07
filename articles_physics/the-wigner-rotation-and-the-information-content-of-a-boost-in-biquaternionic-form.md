@@ -258,9 +258,11 @@ This is the **holonomy** of the boost connection. Its defining property is that 
 
 For a particle that is accelerated along a curved worldline, the velocity traces a path in velocity space, and the holonomy accumulated over the path is a continuous rotation of the spin. The rate form of the same statement is **Thomas precession**, and it is the standard physical face of the holonomy:
 $$
-d\vec\Omega_{\mathrm{T}}/dr'_t = -\frac{\gamma-1}{v^2}\,\vec v\times\,d\vec v/dr'_t ,
+\frac{d\vec\Omega_{\mathrm{T}}}{dr'_t} = -\frac{\gamma-1}{v^2}\,\vec v\times\frac{d\vec v}{dr'_t},
+\qquad
+\vec\omega_{\mathrm{T}}=c\,\frac{d\vec\Omega_{\mathrm{T}}}{dr'_t},
 $$
-a precession of the rest-frame spin at a rate proportional to the acceleration and to $\gamma-1$. The biquaternion expression of the same rate is the commutator of the infinitesimal boosts of the path, and the accumulated rotation is the product of the trip. The companion exercise treats the precession directly; here it is recorded as the infinitesimal form of the closed-loop statement above.
+an angle swept per unit material length, a twist proportional to the acceleration and to $\gamma-1$, with the angular velocity of the precession $c$ times that twist because the clock is the length $r'_t=c\,t'$. The biquaternion expression of the same rate is the commutator of the infinitesimal boosts of the path, and the accumulated rotation is the product of the trip. The companion exercise treats the precession directly; here it is recorded as the infinitesimal form of the closed-loop statement above.
 
 The information interpretation of the holonomy is the sharpest statement available. Two observers who follow different paths between the same two frames — the same initial and final four-velocity — and who each keep a gyroscope, will disagree about the orientation of a spin by the accumulated rotation. The disagreement is not an error and not a measurement artefact; it is the curvature of the boost parameter space, and it means that the frame label does not determine the spin frame. The extra data needed to reconstruct the spin state is a path, i.e. the holonomy, and that is the information content of a sequence of boosts beyond the information in its endpoints.
 
@@ -313,7 +315,7 @@ Because the boost parameter space is curved, a closed path of boosts that return
 | $\tan\theta_{\mathrm{wgn}} = \sinh\theta_{\mathrm{rpd}}\sinh\xi/(\cosh\theta_{\mathrm{rpd}}+\cosh\xi)$ | Exact angle at $\theta = \pi/2$ |
 | $h\!\left(\frac{1+\cos\theta_{\mathrm{wgn}}}{2}\right)$ | Spin entropy imprinted on a transverse spin |
 | $\tilde{P}_{\Phi} = \tilde U_{\vec v_2}\tilde U_{\Psi,\mathrm b,y}(b)\tilde U_{\Psi,\mathrm b,x}(a)$ | Holonomy of a closed velocity loop |
-| $d\vec\Omega_{\mathrm{T}}/dr'_t = -\frac{\gamma-1}{v^2}\vec v\times\,d\vec v/dr'_t$ | Thomas precession rate |
+| $d\vec\Omega_{\mathrm{T}}/dr'_t = -\frac{\gamma-1}{v^2}\vec v\times d\vec v/dr'_t$, $\vec\omega_{\mathrm{T}}=c\,d\vec\Omega_{\mathrm{T}}/dr'_t$ | Thomas precession, as a twist and as a rate |
 
 ## Further Reading
 

@@ -280,21 +280,21 @@ For an isolated system of bodies $a$ the conserved object is the **total** four-
 $$
 \boxed{\;\tilde{P}_{\Phi,\mathrm{tot}} = \sum_a \tilde{P}_{\Phi,a},
 \qquad
-\frac{d\tilde{P}_{\Phi,\mathrm{tot}}}{dr'_t} = 0\;},
+\frac{d\tilde{P}_{\Phi,\mathrm{tot}}}{dt'} = c\,\frac{d\tilde{P}_{\Phi,\mathrm{tot}}}{dr'_t} = 0\;},
 $$
 
-a vanishing **coordinate**-time derivative. The parent defines the four-force by the **proper**-time derivative of a single body, $\tilde{\mathcal F}_{\mathrm{frc},a} = d\tilde{P}_{\Phi,a}/d\tau_a$, and since $d\tau_a = dr'_t/\gamma_a$,
+a vanishing **coordinate**-time derivative; the clock is $t'=r'_t/c$, so $d/dt'=c\,d/dr'_t$ and the coordinate time is a length divided by the speed of light. The parent defines the four-force by the **proper**-time derivative of a single body, $\tilde{\mathcal F}_{\mathrm{frc},a} = d\tilde{P}_{\Phi,a}/d\tau_a$, and since $d\tau_a = dr'_t/(c\gamma_a)$,
 
 $$
-\frac{d\tilde{P}_{\Phi,a}}{dr'_t} = \frac{1}{\gamma_a}\tilde{\mathcal F}_{\mathrm{frc},a},
+\frac{d\tilde{P}_{\Phi,a}}{dr'_t} = \frac{1}{c\gamma_a}\tilde{\mathcal F}_{\mathrm{frc},a},
 \qquad\text{so}\qquad
-\sum_a \tilde{\mathcal F}_{\mathrm{frc},a} = \sum_a \gamma_a\frac{d\tilde{P}_{\Phi,a}}{dr'_t},
+\sum_a \tilde{\mathcal F}_{\mathrm{frc},a} = \sum_a c\gamma_a\frac{d\tilde{P}_{\Phi,a}}{dr'_t} = \sum_a \gamma_a\frac{d\tilde{P}_{\Phi,a}}{dt'},
 $$
 
-which equals $d\tilde{P}_{\Phi,\mathrm{tot}}/dr'_t$ only when all the $\gamma_a$ are equal. The parent's symbol $\tilde{\mathcal F}_{\Phi,\mathrm{frc}}$ is a per-body proper-time rate and cannot be summed across bodies. The conservation law in terms of the parent's four-forces is therefore
+which equals $c\,d\tilde{P}_{\Phi,\mathrm{tot}}/dr'_t = d\tilde{P}_{\Phi,\mathrm{tot}}/dt'$ only when all the $\gamma_a$ are equal. The parent's symbol $\tilde{\mathcal F}_{\Phi,\mathrm{frc}}$ is a per-body proper-time rate and cannot be summed across bodies. The conservation law in terms of the parent's four-forces is therefore
 
 $$
-\sum_a \frac{1}{\gamma_a}\tilde{\mathcal F}_{\mathrm{frc},a} = \frac{d\tilde{P}_{\Phi,\mathrm{tot}}}{dr'_t} = 0,
+\sum_a \frac{1}{c\gamma_a}\tilde{\mathcal F}_{\mathrm{frc},a} = \frac{d\tilde{P}_{\Phi,\mathrm{tot}}}{dr'_t} = 0,
 $$
 
 or, in the integrated form that avoids the derivative altogether, $\sum_{\mathrm{in}}\tilde{P}_{\Phi} = \sum_{\mathrm{out}}\tilde{P}_{\Phi}$ for a collision. The exercise reports this defect; the corrected statement above is the one to use.
@@ -302,7 +302,7 @@ or, in the integrated form that avoids the derivative altogether, $\sum_{\mathrm
 **A numerical witness.** Two bodies connected by a translation-invariant interaction exchange momentum, so at some instant $d\tilde{P}_{\Phi,2}/dr'_t = -d\tilde{P}_{\Phi,1}/dr'_t = i\,e_t + \vec e_x$, and their Lorentz factors differ, $\gamma_1 = 5/3$, $\gamma_2 = 5/4$. Then $d\tilde{P}_{\Phi,\mathrm{tot}}/dr'_t = 0$, but
 
 $$
-\tilde{\mathcal F}_{\mathrm{frc},1} + \tilde{\mathcal F}_{\mathrm{frc},2} = (\gamma_2 - \gamma_1)\left(i\,e_t + \vec e_x\right) = -\frac{5}{12}\left(i\,e_t + \vec e_x\right) \neq 0 .
+\tilde{\mathcal F}_{\mathrm{frc},1} + \tilde{\mathcal F}_{\mathrm{frc},2} = c(\gamma_2 - \gamma_1)\left(i\,e_t + \vec e_x\right) = -\frac{5c}{12}\left(i\,e_t + \vec e_x\right) \neq 0 .
 $$
 
 The naive sum of the parent's four-forces is not zero even though the total four-momentum is conserved. For the collision of *Exercise: Four-Momentum Conservation in a Collision* ($E_1 = 3mc^2$, equal masses, $\theta^* = 90^\circ$), the total four-momenta $\tilde{P}_{\Phi,\mathrm{in}}$ and $\tilde{P}_{\Phi,\mathrm{out}}$ were recomputed and agree component by component in the laboratory.
@@ -534,7 +534,7 @@ $$
 \qquad E = \gamma mc^2,\quad \vec p = \gamma m\vec v,
 $$
 
-as the Noether charge, conserved for a free particle. The conservation law for a system is the vanishing of the **coordinate**-time derivative of the total, $d\tilde{P}_{\Phi,\mathrm{tot}}/dr'_t = 0$; the parent's proper-time four-force cannot be summed across bodies, and the correct form is $\sum_a\tilde{\mathcal F}_{\mathrm{frc},a}/\gamma_a = 0$, or the integrated $\sum_{\mathrm{in}}\tilde{P}_{\Phi} = \sum_{\mathrm{out}}\tilde{P}_{\Phi}$. A translation acts on a plane wave by the central unit-modulus phase $\exp(i\,\mathrm{Sc}(\tilde P_{\Phi}\tilde{R}_{\Phi,0}^{\natural})/\hbar)$, with $\mathrm{Sc}(\tilde P_{\Phi}\tilde{R}_{\Phi,0}^{\natural}) = \vec k_\Phi\cdot\vec R_0-\omega r'_{t,0}/c$.
+as the Noether charge, conserved for a free particle. The conservation law for a system is the vanishing of the **coordinate**-time derivative of the total, $d\tilde{P}_{\Phi,\mathrm{tot}}/dt' = c\,d\tilde{P}_{\Phi,\mathrm{tot}}/dr'_t = 0$; the parent's proper-time four-force cannot be summed across bodies, and the correct form is $\sum_a\tilde{\mathcal F}_{\mathrm{frc},a}/(c\gamma_a) = 0$, or the integrated $\sum_{\mathrm{in}}\tilde{P}_{\Phi} = \sum_{\mathrm{out}}\tilde{P}_{\Phi}$. A translation acts on a plane wave by the central unit-modulus phase $\exp(i\,\mathrm{Sc}(\tilde P_{\Phi}\tilde{R}_{\Phi,0}^{\natural})/\hbar)$, with $\mathrm{Sc}(\tilde P_{\Phi}\tilde{R}_{\Phi,0}^{\natural}) = \vec k_\Phi\cdot\vec R_0-\omega r'_{t,0}/c$.
 
 The field translation current is the canonical energy–momentum, $-\partial T_{0\nu}/\partial x_0+\sum_k\partial T_{k\nu}/\partial r_k = 0$ on shell in the real coordinates, with positive energy density $T_{00} = |\partial\xi_{\mathrm{scl}}/\partial r'_t|^2 + |\nabla\xi_{\mathrm{scl}}|^2 + k_m^{2}|\xi_{\mathrm{scl}}|^2$. Rank two cannot be one biquaternion, so the framework packages it bilinearly; the Maxwell object $\tilde{W}_{\Psi} = \tfrac12\tilde{F}\tilde{F}^{*}$ is its time row, and $\mathrm{Sc}(\tilde{\nabla}\tilde{W}_{\Psi}) = \frac{i}{c}\vec J\cdot\vec E$ is the energy law it carries. Lorentz invariance gives the angular-momentum bivector $\tilde L = \tfrac12\sum L_{\mu\nu}\,e^{\natural}_\mu e_\nu$, with the rank-three field current reduced to the rank-two particle bivector only when the spin term vanishes. The theorem is standard; the algebra supplies the home of each conserved object and the compact form of its divergence, and it supplies no conservation law the symmetries did not already give.
 

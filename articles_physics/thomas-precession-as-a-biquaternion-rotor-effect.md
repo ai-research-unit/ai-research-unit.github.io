@@ -10,7 +10,7 @@ $$
 \gamma=\frac{1}{\sqrt{1-\vec v^{2}/c^{2}}} ,
 $$
 
-with $\vec a=d\vec v/dr'_t$ the laboratory acceleration and $c=1/\sqrt{\epsilon\mu}$ the speed of light in the medium. The effect is purely **kinematic**: it involves no force, no moment, and no field, and it is present for every accelerated particle. Its non-relativistic limit is $\vec\omega_T=\tfrac{1}{2c^{2}}\vec a\times\vec v$, the "Thomas half", and it is the kinematic part of the spin–orbit coupling and of the classical precession of a relativistic spin in an electromagnetic field.
+with $\vec a=c\,d\vec v/dr'_t$ the laboratory acceleration and $c=1/\sqrt{\epsilon\mu}$ the speed of light in the medium. The clock is the material length $r'_t=c\,t'$, so a time step is $dr'_t/c$ and every rate below multiplies a derivative in $r'_t$ by $c$. The effect is purely **kinematic**: it involves no force, no moment, and no field, and it is present for every accelerated particle. Its non-relativistic limit is $\vec\omega_T=\tfrac{1}{2c^{2}}\vec a\times\vec v$, the "Thomas half", and it is the kinematic part of the spin–orbit coupling and of the classical precession of a relativistic spin in an electromagnetic field.
 
 The purpose of this article is to exhibit the Thomas precession as what it algebraically is: a **rotor effect**. The argument has three steps, and none of them leaves the biquaternion algebra $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$.
 
@@ -18,7 +18,7 @@ The first step is that the transformation that carries the laboratory to the ins
 
 The second step is that the composition of two boosts is **not** a boost. The product $\tilde U_{\mathrm{lor},1}\tilde U_{\mathrm{lor},2}$ of two boost rotors, each a Lorentz rotor, is a unit-norm biquaternion, so it admits the **polar decomposition** $\tilde U_{\mathrm{lor},1}\tilde U_{\mathrm{lor},2}=\tilde U_{\Psi,\mathrm b}\tilde{u}$ into a pure boost $\tilde U_{\Psi,\mathrm b}$ and a rotation $\tilde{u}\in\mathbb{B}_{H}$, and the rotation factor is present whenever the two boost directions are not collinear. The rotation is the **Thomas–Wigner rotation**, its exact angle is determined by the two rapidities and the angle between the directions, and it is the algebraic expression of the fact that the boosts do not form a subgroup.
 
-The third step is to **take the continuous limit**. The rest frames at two laboratory times $r'_t$ and $r'_t+dr'_t$ are related by the interval rotor $\tilde U_{\mathrm{int}}=\tilde U_{\vec v+d\vec v}\tilde U_{\vec v}^{-1}$, whose rotation factor is the Thomas–Wigner rotation of the interval. Expanding the exact product to first order in $dr'_t$ gives $\vec\omega_T$, with the axis $\vec u_{\vec a\times\vec v}$ and the coefficient $\gamma^2/(\gamma+1)$; the "Thomas half" is the value of that coefficient at $\gamma=1$. The whole of the Thomas precession is thus the linearization of a quaternion product.
+The third step is to **take the continuous limit**. The rest frames at the two instants $t'$ and $t'+dr'_t/c$ are related by the interval rotor $\tilde U_{\mathrm{int}}=\tilde U_{\vec v+d\vec v}\tilde U_{\vec v}^{-1}$, whose rotation factor is the Thomas–Wigner rotation of the interval. Expanding the exact product to first order in $dr'_t$ gives $\vec\omega_T$, with the axis $\vec u_{\vec a\times\vec v}$ and the coefficient $\gamma^2/(\gamma+1)$; the "Thomas half" is the value of that coefficient at $\gamma=1$. The whole of the Thomas precession is thus the linearization of a quaternion product.
 
 Three boundaries are respected. The **Wigner rotation as an information-theoretic object** belongs to the sibling quantum series, `Biquaternion Relativistic Quantum Theory`, subcategory on informational aspects; the present article is the kinematic statement. The **cover of the Lorentz group** and its topology belong to `Biquaternion Relativistic Non Quantum Theory`, subcategory `generalities`; here the cover is used only through the statement that the boost rotors are unit-norm biquaternions and that $SL(2,\mathbb{C})$ is a double cover of $SO^{+}(1,3)$. The **Larmor precession** of a magnetic moment in a magnetic field is a non-relativistic effect and belongs to `Biquaternion Non Relativistic Non Quantum Theory`, subcategory on effects with intrinsic magnetism; it appears here only as the non-relativistic limit against which the Thomas term is read.
 
@@ -92,17 +92,17 @@ At equal rapidity $\theta_{\mathrm{rpd}}=1.0$ and angle $\theta=0.7$ the polar d
 
 ## The Rotor Between Neighbouring Rest Frames
 
-Let a particle have laboratory velocity $\vec v(r'_t)$, and let $\tilde U_{\vec v}$ be its lab-to-rest rotor. The rest frame at laboratory time $r'_t+dr'_t$ is reached from the rest frame at time $r'_t$ by the **interval rotor**
+Let a particle have laboratory velocity $\vec v(r'_t)$, and let $\tilde U_{\vec v}$ be its lab-to-rest rotor. The rest frame at the instant $t'+dr'_t/c$ is reached from the rest frame at $t'=r'_t/c$ by the **interval rotor**
 
 $$
 \tilde U_{\mathrm{int}}
 =\tilde U_{\vec v+d\vec v}\,\tilde U_{\vec v}^{-1}
 =\tilde U_{\vec v+d\vec v}\,\tilde U_{\vec v}^{\natural},
 \qquad
-d\vec v=\vec a\,dr'_t .
+d\vec v=\vec a\,\frac{dr'_t}{c} .
 $$
 
-Indeed, if $\tilde Q_2=\tilde U_{\vec v}\tilde{Q}\tilde U_{\vec v}^{*}$ are the components of a four-vector in the rest frame at $r'_t$, then the components in the rest frame at $r'_t+dr'_t$ are
+Indeed, if $\tilde Q_2=\tilde U_{\vec v}\tilde{Q}\tilde U_{\vec v}^{*}$ are the components of a four-vector in the rest frame at $r'_t$, then the components in the rest frame at $t'+dr'_t/c$ are
 
 $$
 \tilde Q_3=\tilde U_{\vec v+d\vec v}\tilde{Q}\tilde U_{\vec v+d\vec v}^{*}
@@ -128,31 +128,31 @@ The interval rotor makes precise in what sense the Thomas precession is a rotor 
 The Thomas precession is the angular velocity obtained from the interval rotor in the limit $dr'_t\to0$. Write the two boost directions and rapidities as in Companion article *Exercise: The Thomas Precession*, for the direct expansion of the interval rotor: $\vec u_x=\vec u_{\vec v+d\vec v}$, $\vec u_y=-\vec u_v$, with rapidities $\theta_{\mathrm{rpd},1}=\theta_{\mathrm{rpd}}+d\theta_{\mathrm{rpd}}$ and $\theta_{\mathrm{rpd},2}=\theta_{\mathrm{rpd}}$, and let $\theta$ be the angle between them, so that $\theta=\pi-\delta$ with
 
 $$
-\delta=\frac{|\vec a_\perp|}{v}\,dr'_t+O(d{r'_{t}}^{2}),
+\delta=\frac{|\vec a_\perp|}{v}\,\frac{dr'_t}{c}+O\!\left(\frac{d{r'_{t}}^{2}}{c^{2}}\right),
 \qquad
 \vec a_\perp=\vec a-\frac{\vec a\cdot\vec v}{v^{2}}\vec v,
 $$
 
-the perpendicular part of the acceleration. Since only the perpendicular acceleration changes the direction of the velocity, $d\theta_{\mathrm{rpd}}=\gamma^2(\vec a\cdot\vec u_v)dr'_t/c$, and to leading order
+the perpendicular part of the acceleration. Since only the perpendicular acceleration changes the direction of the velocity, $d\theta_{\mathrm{rpd}}=\gamma^2(\vec a\cdot\vec u_v)dr'_t/c^{2}$, the rapidity gained in the time step $dr'_t/c$, and to leading order
 
 $$
-\sin\theta=\delta+O(d{r'_{t}}^{3}),
+\sin\theta=\delta+O\!\left(\frac{d{r'_{t}}^{3}}{c^{3}}\right),
 \qquad
-\cos\theta=-1+O(d{r'_{t}}^{2}).
+\cos\theta=-1+O\!\left(\frac{d{r'_{t}}^{2}}{c^{2}}\right).
 $$
 
-Substituting into the exact Wigner-angle formula, the numerator is $\sinh^{2}\tfrac{\theta_{\mathrm{rpd}}}{2}\,\delta+O(d{r'_{t}}^{2})$, the $d\theta_{\mathrm{rpd}}$ terms cancel between the two products in the denominator, and the denominator is $1+O(d{r'_{t}}^{2})$. Hence
+Substituting into the exact Wigner-angle formula, the numerator is $\sinh^{2}\tfrac{\theta_{\mathrm{rpd}}}{2}\,\delta+O((dr'_t/c)^{2})$, the $d\theta_{\mathrm{rpd}}$ terms cancel between the two products in the denominator, and the denominator is $1+O((dr'_t/c)^{2})$. Hence
 
 $$
-\tan\frac{\theta_W}{2}=\sinh^{2}\frac{\theta_{\mathrm{rpd}}}{2}\,\delta+O(d{r'_{t}}^{2})
+\tan\frac{\theta_W}{2}=\sinh^{2}\frac{\theta_{\mathrm{rpd}}}{2}\,\delta+O\!\left(\frac{d{r'_{t}}^{2}}{c^{2}}\right)
 \;\Longrightarrow\;
-\theta_W=(\gamma-1)\frac{|\vec a_\perp|}{v}\,dr'_t+O(d{r'_{t}}^{2}),
+\theta_W=(\gamma-1)\frac{|\vec a_\perp|}{v}\,\frac{dr'_t}{c}+O\!\left(\frac{d{r'_{t}}^{2}}{c^{2}}\right),
 $$
 
 where $2\sinh^{2}\tfrac{\theta_{\mathrm{rpd}}}{2}=\cosh\theta_{\mathrm{rpd}}-1=\gamma-1$. The angular velocity is therefore
 
 $$
-\omega_T=\frac{d\theta_W}{dr'_t}=(\gamma-1)\frac{|\vec a_\perp|}{v}
+\omega_T=c\,\frac{d\theta_W}{dr'_t}=(\gamma-1)\frac{|\vec a_\perp|}{v}
 =\frac{\gamma-1}{v^{2}}\,|\vec a\times\vec v|,
 \qquad
 \frac{\gamma-1}{v^{2}}=\frac{\gamma^2}{c^{2}(\gamma+1)},
@@ -175,14 +175,14 @@ The factor $\tfrac12$ is not inserted by hand: it is the limit of $\gamma^2/(\ga
 
 Only the **transverse** acceleration precesses the frame. Since $\vec a\times\vec v=\vec a_\perp\times\vec v$, a purely longitudinal acceleration gives $\vec\omega_T=0$: it changes the rapidity but not the direction of the velocity, and a boost along the instantaneous direction generates no rotation. This is the first sign that a collinear configuration cannot test the direction of $\vec\omega_T$.
 
-The interval rotor $\tilde U_{\mathrm{int}}=\tilde U_{\vec v+d\vec v}\tilde U_{\vec v}^{\natural}$ is formed directly as a $2\times2$ complex matrix in the representation $\mathsf{M}_2(\vec e_\mu)=-i\sigma_k$, $\mathsf{M}_2(i)=iI_2$, and its polar decomposition $\tilde U_{\mathrm{int}}=\tilde U_{\Psi,\mathrm b}\tilde{u}$, $\tilde U_{\Psi,\mathrm b}=\sqrt{\tilde U_{\mathrm{int}}\tilde U_{\mathrm{int}}^{*}}$, $\tilde{u}=\tilde U_{\Psi,\mathrm b}^{-1}\tilde U_{\mathrm{int}}$, is carried out at $dr'_t=10^{-5}$ for random non-collinear pairs $(\vec v,\vec a)$ with $|\vec v|<c$. The rotation vector of $\tilde{u}$ agrees with $\vec\omega_T\,dr'_t$ in both magnitude and direction to better than $10^{-10}$ in the units of the check; the collinear case gives zero on both sides. The sign is testable only off the collinear line, and it is the axis $\vec a\times\vec v$ that the exact product selects.
+The interval rotor $\tilde U_{\mathrm{int}}=\tilde U_{\vec v+d\vec v}\tilde U_{\vec v}^{\natural}$ is formed directly as a $2\times2$ complex matrix in the representation $\mathsf{M}_2(\vec e_\mu)=-i\sigma_k$, $\mathsf{M}_2(i)=iI_2$, and its polar decomposition $\tilde U_{\mathrm{int}}=\tilde U_{\Psi,\mathrm b}\tilde{u}$, $\tilde U_{\Psi,\mathrm b}=\sqrt{\tilde U_{\mathrm{int}}\tilde U_{\mathrm{int}}^{*}}$, $\tilde{u}=\tilde U_{\Psi,\mathrm b}^{-1}\tilde U_{\mathrm{int}}$, is carried out at $dr'_t=10^{-5}\,c$ for random non-collinear pairs $(\vec v,\vec a)$ with $|\vec v|<c$. The rotation vector of $\tilde{u}$ agrees with $\vec\omega_T\,dr'_t/c$ in both magnitude and direction to better than $10^{-10}$ in the units of the check; the collinear case gives zero on both sides. The sign is testable only off the collinear line, and it is the axis $\vec a\times\vec v$ that the exact product selects.
 
 ## The Thomas Rotor
 
-The precession can be written as a rotor conjugation in the same half-angle form used throughout the series. Let $\vec u_\omega=\vec u_{\vec a\times\vec v}$ be the unit axis and $\theta_T(r'_t)$ the accumulated angle, $d\theta_T=\omega_T\,dr'_t$. A spatial triad that is carried rigidly by the instantaneous rest frame rotates relative to the laboratory according to
+The precession can be written as a rotor conjugation in the same half-angle form used throughout the series. Let $\vec u_\omega=\vec u_{\vec a\times\vec v}$ be the unit axis and $\theta_T(r'_t)$ the accumulated angle, $d\theta_T=\omega_T\,dr'_t/c$. A spatial triad that is carried rigidly by the instantaneous rest frame rotates relative to the laboratory according to
 
 $$
-\frac{d\vec r}{dr'_t}=\vec\omega_T\times\vec r,
+\frac{d\vec r}{dr'_t}=\frac{1}{c}\,\vec\omega_T\times\vec r,
 \qquad
 \vec r=\sum_\mu r_\mu \vec e_\mu\in\mathbb{B}_{H},
 $$
@@ -198,7 +198,7 @@ $$
 with $\tilde{u}_T$ a unit real quaternion. The frame turns through $\theta_T$ while the rotor turns through half that angle: this is the double-cover half-angle of the algebra, the same one that appears in the Larmor rotor and in the spin-$\tfrac12$ evolution. The generator form is the commutator
 
 $$
-\frac{d\vec r}{dr'_t}=\tfrac{1}{2}\left[\vec r,\vec\omega_T\right],
+\frac{d\vec r}{dr'_t}=\tfrac{1}{2c}\left[\vec r,\vec\omega_T\right],
 \qquad
 \vec\omega_T=-\omega_{T,\mu}\vec e_\mu ,
 $$
@@ -317,7 +317,7 @@ about the normal to the plane of the two boost directions. The rest frames at tw
 $$
 \tilde U_{\mathrm{int}}=\tilde U_{\vec v+d\vec v}\,\tilde U_{\vec v}^{\natural}=\tilde U_{\Psi,\mathrm b}\tilde{u},
 \qquad
-d\vec v=\vec a\,dr'_t,
+d\vec v=\vec a\,\frac{dr'_t}{c},
 $$
 
 whose rotation factor is the Thomas–Wigner rotation of the interval. Its continuous limit is the Thomas precession
@@ -352,7 +352,7 @@ along $\vec a\times\vec v$, with only the transverse acceleration contributing. 
 | $\tilde U_{\mathrm{lor},1}\tilde U_{\mathrm{lor},2}=\tilde U_{\Psi,\mathrm b}\tilde{u}$ | Polar decomposition of a composition of boosts |
 | $\tilde{u}\in\mathbb{B}_{H}$ | Thomas–Wigner rotation (unit real quaternion) |
 | $\theta$, $\theta_W$, $\theta_{\mathrm{wgn}}$ | Angle between boost directions; Wigner angle |
-| $\vec a=d\vec v/dr'_t$, $\vec a_\perp$ | Laboratory acceleration; its part perpendicular to $\vec v$ |
+| $\vec a=c\,d\vec v/dr'_t$, $\vec a_\perp$ | Laboratory acceleration; its part perpendicular to $\vec v$ |
 | $\tilde U_{\mathrm{int}}=\tilde U_{\vec v+d\vec v}\tilde U_{\vec v}^{\natural}$ | Interval rotor between neighbouring rest frames |
 | $\vec\omega_T=\frac{\gamma^2}{c^2(\gamma+1)}\vec a\times\vec v$ | Thomas precession angular velocity |
 | $\vec\Omega$ | Orbital angular velocity (circular motion) |

@@ -42,7 +42,7 @@ $$
 \lambda(v) = \lim_{r'_t\to\infty}\frac{1}{r'_{t}}\log\frac{\left\|D\xi_{\mathrm{flw},r'_{t}}\,v\right\|}{\left\|v\right\|},
 $$
 
-whenever the limit exists. The **multiplicative ergodic theorem** of Oseledets guarantees that, for an invariant measure, the limit exists for almost every initial condition and takes finitely many values $\lambda_1\ge\lambda_2\ge\cdots\ge\lambda_n$, the **Lyapunov spectrum** of the flow. A positive exponent is exponential divergence of nearby trajectories; a negative exponent is exponential contraction; a zero exponent is neutrality, and the direction of the flow itself is always neutral.
+whenever the limit exists. The flow parameter is the material length $r'_t=c\,t'$, so the exponents above are per unit length; the per-second exponents of the same flow are $c$ times these, and the symbols $\lambda_k$ and $\Gamma$ denote the per-length ones throughout. The **multiplicative ergodic theorem** of Oseledets guarantees that, for an invariant measure, the limit exists for almost every initial condition and takes finitely many values $\lambda_1\ge\lambda_2\ge\cdots\ge\lambda_n$, the **Lyapunov spectrum** of the flow. A positive exponent is exponential divergence of nearby trajectories; a negative exponent is exponential contraction; a zero exponent is neutrality, and the direction of the flow itself is always neutral.
 
 ### Three Standard Facts
 
