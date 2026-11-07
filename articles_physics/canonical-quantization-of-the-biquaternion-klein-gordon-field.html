@@ -123,15 +123,19 @@ $$</p>
 <p>with $\xi_1,\xi_2$ the two real scalar fields of the sector in the normalization in which the kinetic term is $\frac12[(\partial\xi_1)^2+(\partial\xi_2)^2]$ — the component normalization that the companion articles on the quantized field and on symmetry breaking use throughout — and the complex structure that makes the two into a single complex field is the central scalar imaginary $i$. The scalar field is, in this precise sense, the field of the centre; the spinor module on which the Dirac field lives is not involved.</p>
 <p>The quadratic form of the theory is the biquaternion norm. The material four-wavevector is</p>
 <p>$$
-\tilde K_{\Phi}=i\frac{\omega}{c}\,e_t+\vec k_\Phi\in\mathbb{B}_{\Phi},\frac{k_m\,\tilde{P}_{\Phi}^{\natural}}{m\,c}=i\frac{\omega}{c}\,e_t-\vec k_\Phi,
+\tilde K_{\Phi}=\frac{\tilde P_{\Phi}}{\hbar}
+=\frac{k_m}{m\,c}\,\tilde P_{\Phi}
+=i\,k_{t}^{\prime}\,e_t+\vec k_\Phi\in\mathbb{B}_{\Phi},
 \qquad
-\langle\tilde K_{\Phi}\rangle_{\natural}=\frac{k_m^{2}\,\tilde{P}_{\Phi}\,\tilde{P}_{\Phi}^{\natural}}{m^{2}\,c^{2}}=\left(-\frac{\omega^2}{c^2}+\vec k_\Phi^2\right)e_t ,
+\tilde K_{\Phi}^{\natural}=i\,k_{t}^{\prime}\,e_t-\vec k_\Phi,
+\qquad
+k_{t}^{\prime}=\frac{\omega}{c},
+\qquad
+\langle\tilde K_{\Phi}\rangle_{\natural}
+=\frac{k_m^{2}\,\tilde P_{\Phi}\tilde P_{\Phi}^{\natural}}{m^{2}c^{2}}
+=-k_{t}^{\prime\,2}+k_{\Phi}^{2}=-k_m^{2} .
 $$</p>
-<p>Here $k_{\Phi}=\frac{k_m\,p}{m\,c}$ is the momentum wave number.</p>
-<p>and the plane-wave phase is the scalar part $\mathrm{Sc}(\tilde P_{\Phi}\tilde{R}_\Phi^{\natural})/\hbar=\vec k_\Phi\cdot(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)-\frac{\omega}{c} r'_t$. Substituting $\tilde{Ξ}=\xi_0\exp(i\mathrm{Sc}\frac{k_m\,\tilde{P}_{\Phi}\,\tilde{R}_{\Phi}^{\natural}}{m\,c})e_t$ into $\left(\Box-k_m^{2}\right)\tilde{Ξ}=0$ gives $\omega^2/c^2-\vec k_\Phi^2=k_m^{2}$, which is the mass-shell condition</p>
-<p>$$
-\langle\tilde K_{\Phi}\rangle_{\natural}=-k_m^{2}\,e_t .
-$$</p>
+<p>Here $k_{\Phi}=|\vec k_\Phi|=\frac{k_m\,p}{m\,c}$ is the momentum wave number, and the norm is a central <strong>scalar</strong> of $\mathbb{B}_{C}$, not a multiple of $e_t$: the two factors are $(ik_{t}^{\prime})^{2}e_t=-k_{t}^{\prime\,2}e_t$ and $\vec k_\Phi\vec k_\Phi^{\natural}=k_\Phi^{2}e_t$, so the temporal square enters with a minus and the spatial with a plus, and the three wave numbers close the mass shell. $\hbar$ is real and central, so the division touches no coefficient's sector: $\tilde K_{\Phi}$ is anti-Hermitian like $\tilde P_{\Phi}$, stays in $\mathbb{B}_{\Phi}$, and carries the dimension $\mathrm{L}^{-1}$. The plane-wave phase is the scalar part $\mathrm{Sc}(\tilde K_{\Phi}\tilde{R}_\Phi^{\natural})=-k_{t}^{\prime}\,r'_t+\vec k_\Phi\cdot(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)$, which is $\mathrm{Sc}(\tilde P_{\Phi}\tilde{R}_\Phi^{\natural})/\hbar$: the division by $\hbar$ is the whole of the wave number, so the phase carries no separate $\hbar$ once $\tilde K_{\Phi}$ is named. Substituting $\tilde{Ξ}=\xi_0\exp(i\mathrm{Sc}(\tilde K_{\Phi}\tilde{R}_{\Phi}^{\natural}))e_t$ into $\left(\Box-k_m^{2}\right)\tilde{Ξ}=0$ gives $k_{t}^{\prime\,2}-k_{\Phi}^{2}=k_m^{2}$, which is the mass-shell condition $k_{t}^{\prime\,2}=k_{\Phi}^{2}+k_m^{2}$ already contained in the norm.</p>
 <h2 id="equal-time-commutation-relations">Equal-Time Commutation Relations</h2>
 <p>Quantization promotes the classical field and its momentum to operators $\xi_{\mathrm{fop}}$, $\xi_{\mathrm{fop}}^{\dagger}$, $\pi_{\mathrm{fop}}$, $\pi_{\mathrm{fop}}^{\dagger}$ and imposes equal-time brackets. Because the field is complex, $\xi$ and $\xi^\dagger$ are independent, and the canonical relations are</p>
 <p>$$
@@ -151,7 +155,7 @@ $$</p>
 <p>The brackets are <strong>commutators</strong>, and the choice is forced, as the companion article <em>The Spin–Statistics Theorem in Biquaternionic Form</em> establishes; the three operative reasons may be stated compactly. <strong>Boundedness of the energy:</strong> a commutator makes the particle and antiparticle contributions to the Hamiltonian both positive, whereas an anticommutator would give opposite signs and an energy unbounded below. <strong>Microcausality:</strong> for a spin-$0$ field it is the commutator $[\xi_{\mathrm{fop}}(x),\xi_{\mathrm{fop}}^{\dagger}(y)]$ that must vanish outside the light cone, and it does; the anticommutator does not, and quantizing with it would correlate causally disconnected measurements. <strong>Positivity of the norm:</strong> the symmetric Fock space built on the one-particle space has positive-definite inner product, while the antisymmetric projection of a bosonic one-particle space is not the structure the field equation's solution space supports. The three reasons point the same way for a field of integer spin; the general theorem is not rederived here.</p>
 <p>The scalar case has one feature the two parent cases do not. Because the field is single-component and the Legendre transform regular, the canonical relation is imposed <strong>directly</strong>, without the Dirac-bracket modification the Dirac field required. There is no constraint surface to project onto and no gauge orbit to fix. What the algebra does not supply is not a constraint resolution but the ladder itself, and that is the subject of the section after next.</p>
 <h2 id="the-mode-expansion">The Mode Expansion</h2>
-<p>The field equation is linear, so the general solution is a superposition of plane waves. With $E_{\vec p}=+c\sqrt{\vec p^{\,2}+m^{2}c^{2}}$ and $p\cdot x=\frac{E_{\vec p}}{c}r'_t-\vec p\cdot(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)$, the quantized field expands as</p>
+<p>The field equation is linear, so the general solution is a superposition of plane waves. With $E_{\vec p}=+c\sqrt{\vec p^{\,2}+m^{2}c^{2}}$ and $p\cdot x=\hbar\left(k_{t}^{\prime}r'_t-\vec k_\Phi\cdot(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)\right)=-\hbar\,\mathrm{Sc}(\tilde K_{\Phi}\tilde{R}_\Phi^{\natural})$, the quantized field expands as</p>
 <p>$$
 \boxed{\;\xi_{\mathrm{fop}}(x)=\int\!\frac{d^3p}{(2\pi\hbar)^3}\,\sqrt{\frac{\hbar c}{2E_{\vec p}}}
 \left(a_{\mathrm{fop},\vec p}\,\exp(-ip\cdot x/\hbar)+{b_{\mathrm{fop},\vec p}}^\dagger\,\exp(+ip\cdot x/\hbar)\right)\;},
@@ -162,13 +166,13 @@ $$</p>
 \left(b_{\mathrm{fop},\vec p}\,\exp(-ip\cdot x/\hbar)+{a_{\mathrm{fop},\vec p}}^\dagger\,\exp(+ip\cdot x/\hbar)\right).
 $$</p>
 <p>The operator $a_{\mathrm{fop},\vec p}$ annihilates a particle of momentum $\vec p$ and $b_{\mathrm{fop},\vec p}$ annihilates an antiparticle; the two branches of the parent equation, distinguished by the sign of the frequency, become the particle and antiparticle branches.</p>
-<p>The biquaternion form of the expansion is the replacement of the phase $\exp(\mp ip\cdot x)$ by a central $*$-unitary element built from the material four-wavevector. With $\tilde K_{\Phi}=i\frac{E_{\vec p}}{\hbar c}e_t+\frac{\vec p}{\hbar}$, the identity above gives</p>
+<p>The biquaternion form of the expansion is the replacement of the scalar phase $\exp(\mp ip\cdot x/\hbar)$ by a central $*$-unitary element built from the material four-wavevector $\tilde K_{\Phi}=i\frac{E_{\vec p}}{\hbar c}e_t+\frac{\vec p}{\hbar}$. The wave number is the whole of the phase, so no $\hbar$ is written after the division:</p>
 <p>$$
-\mathrm{Sc}\!\left(\tilde P_{\Phi}\tilde{R}_\Phi^{\natural}\right)=\vec p\cdot(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)-\frac{E_{\vec p}}{c}r'_t=-p\cdot x ,
+\mathrm{Sc}\!\left(\tilde K_{\Phi}\tilde{R}_\Phi^{\natural}\right)=-k_{t}^{\prime}\,r'_t+\vec k_\Phi\cdot(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)=-\frac{p\cdot x}{\hbar},
 \qquad
-\exp(-ip\cdot x/\hbar)=\exp(\,i\,\mathrm{Sc}(\tilde P_{\Phi}\tilde{R}_\Phi^{\natural})/\hbar),
+\exp(-ip\cdot x/\hbar)=\exp\!\big(i\,\mathrm{Sc}(\tilde K_{\Phi}\tilde{R}_\Phi^{\natural})\big),
 \qquad
-\exp(+ip\cdot x/\hbar)=\exp(-i\,\mathrm{Sc}(\tilde P_{\Phi}\tilde{R}_\Phi^{\natural})/\hbar) .
+\exp(+ip\cdot x/\hbar)=\exp\!\big(-i\,\mathrm{Sc}(\tilde K_{\Phi}\tilde{R}_\Phi^{\natural})\big) .
 $$</p>
 <p>The exponentials are central, so the mode expansion is a sum of central phases multiplying operators; the field operator at each event is an operator times $e_t$, i.e. it is central-valued as an operator-valued distribution, and the transport of the phase is the framework's own. The normalization $1/\sqrt{2E_{\vec p}}$ and the measure $d^3p/(2\pi\hbar)^3$ are the standard Lorentz-invariant ones and are inherited.</p>
 <p>For a <strong>real</strong> (neutral) scalar field the field is Hermitian, $\xi_{\mathrm{fop}}=\xi_{\mathrm{fop}}^{\dagger}$, which forces $b_{\mathrm{fop},\vec p}=a_{\mathrm{fop},\vec p}$; there is one set of modes, the field creates and destroys its own antiparticle, and the charge below vanishes identically. For a <strong>complex</strong> (charged) field the two sets are independent. The biquaternion framework does not by itself prefer either: the real field is a Hermitian central-valued operator field, the complex field a pair of them related by the central phase, and the distinction is the standard one.</p>
@@ -222,10 +226,10 @@ $$</p>
 <p>$$
 \big[\xi_{\mathrm{fop}}(x),\xi_{\mathrm{fop}}^{\dagger}(y)\big]
 =\int\!\frac{d^3p}{(2\pi\hbar)^3\,\frac{\hbar c}{2E_{\vec p}}}
-\left(\exp(-ip\cdot(x-y)/\hbar)-\exp(+ip\cdot(x-y)/\hbar)\right)
+\left(\exp\!\big(i\,\mathrm{Sc}(\tilde K_{\Phi}\Delta\tilde{R}_\Phi^{\natural})\big)-\exp\!\big(-i\,\mathrm{Sc}(\tilde K_{\Phi}\Delta\tilde{R}_\Phi^{\natural})\big)\right)
 \equiv i\Delta(x-y),
 $$</p>
-<p>a c-number, the <strong>commutator function</strong> (Pauli–Jordan function) times a central unit; the commutators $[\xi_{\mathrm{fop}},\xi_{\mathrm{fop}}]$ and $[\xi_{\mathrm{fop}}^{\dagger},\xi_{\mathrm{fop}}^{\dagger}]$ vanish identically. This c-number character is the precise sense in which a bosonic field is a <strong>classical</strong> field with operator coefficients: the non-commutativity of the field at two events is a fixed function, not a dynamical operator. For the Dirac field the corresponding object is an operator-valued matrix, and the difference is the difference between the bosonic and fermionic cases.</p>
+<p>a c-number, the <strong>commutator function</strong> (Pauli–Jordan function) times a central unit, with $\Delta\tilde R_{\Phi}=\tilde R_{\Phi,2}-\tilde R_{\Phi,1}$ the element joining the two events; the commutators $[\xi_{\mathrm{fop}},\xi_{\mathrm{fop}}]$ and $[\xi_{\mathrm{fop}}^{\dagger},\xi_{\mathrm{fop}}^{\dagger}]$ vanish identically. This c-number character is the precise sense in which a bosonic field is a <strong>classical</strong> field with operator coefficients: the non-commutativity of the field at two events is a fixed function, not a dynamical operator. For the Dirac field the corresponding object is an operator-valued matrix, and the difference is the difference between the bosonic and fermionic cases.</p>
 <p>Two properties of $\Delta$ are the physical content. At equal times it vanishes,</p>
 <p>$$
 \big[\xi_{\mathrm{fop}}(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z,r'_t),\xi_{\mathrm{fop}}^{\dagger}(\vec y,r'_t)\big]=0,
@@ -259,12 +263,12 @@ $$</p>
 =\frac{m\,c\,i\,\delta^{(3)}\,(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z-\vec y)}{k_m},
 $$</p>
 <p>with all other equal-time brackets vanishing; commutation rather than anticommutation is forced by the boundedness of the energy, by microcausality, and by positivity of the norm.</p>
-<p>The field expands in the parent's plane waves,</p>
+<p>The field expands in the parent's plane waves, written with the wave number itself as the phase,</p>
 <p>$$
 \xi_{\mathrm{fop}}(x)=\int\!\frac{d^3p}{(2\pi\hbar)^3}\sqrt{\frac{\hbar c}{2E_{\vec p}}}
-\left(a_{\mathrm{fop},\vec p}\exp(-ip\cdot x/\hbar)+{b_{\mathrm{fop},\vec p}}^\dagger \exp(+ip\cdot x/\hbar)\right),
+\left(a_{\mathrm{fop},\vec p}\exp\!\big(i\,\mathrm{Sc}(\tilde K_{\Phi}\tilde{R}_{\Phi}^{\natural})\big)+{b_{\mathrm{fop},\vec p}}^\dagger \exp\!\big(-i\,\mathrm{Sc}(\tilde K_{\Phi}\tilde{R}_{\Phi}^{\natural})\big)\right),
 $$</p>
-<p>the phases being central unitaries $\exp(\pm  i\,\mathrm{Sc}\frac{k_m\,\tilde{P}_{\Phi}\,\tilde{R}_{\Phi}^{\natural}}{m\,c})$ built from the material four-wavevector $\tilde K_{\Phi}=i\frac{E_{\vec p}}{\hbar c}e_t+\frac{\vec p}{\hbar}$; the mode commutators are $[a_{\mathrm{fop},\vec p},{a_{\mathrm{fop},\vec p^{\,\prime}}}^\dagger]=[b_{\mathrm{fop},\vec p},{b_{\mathrm{fop},\vec k_\Phi}}^\dagger]=(2\pi\hbar)^3\delta^{(3)}(\vec p-\vec p^{\,\prime})$ and all others zero, and they reproduce the equal-time relation. The Fock space is the symmetric algebra of the one-particle space. The Hamiltonian is $:\!H\!:=\int\frac{d^3p}{(2\pi\hbar)^3}E_{\vec p}(a_{\mathrm{fop}}^{\dagger}a_{\mathrm{fop}}+b_{\mathrm{fop}}^{\dagger}b_{\mathrm{fop}})$ after normal ordering, and the normal-ordered charge has particles and antiparticles of opposite sign.</p>
+<p>the phase being the central unitary built from the material four-wavevector $\tilde K_{\Phi}=i\frac{E_{\vec p}}{\hbar c}e_t+\frac{\vec p}{\hbar}$, with $E_{\vec p}$ and $\vec p$ its two coordinates; the mode commutators are $[a_{\mathrm{fop},\vec p},{a_{\mathrm{fop},\vec p^{\,\prime}}}^\dagger]=[b_{\mathrm{fop},\vec p},{b_{\mathrm{fop},\vec k_\Phi}}^\dagger]=(2\pi\hbar)^3\delta^{(3)}(\vec p-\vec p^{\,\prime})$ and all others zero, and they reproduce the equal-time relation. The Fock space is the symmetric algebra of the one-particle space. The Hamiltonian is $:\!H\!:=\int\frac{d^3p}{(2\pi\hbar)^3}E_{\vec p}(a_{\mathrm{fop}}^{\dagger}a_{\mathrm{fop}}+b_{\mathrm{fop}}^{\dagger}b_{\mathrm{fop}})$ after normal ordering, and the normal-ordered charge has particles and antiparticles of opposite sign.</p>
 <p>The field's value space is the centre $\mathbb{B}_{C}$, and the algebra supplies no ladder for it: no pair in $\mathbb{B}$ satisfies $[a_{\mathrm{fop}},a_{\mathrm{fop}}^{\dagger}]=e_t$, since the trace of a commutator vanishes while $\mathrm{Tr}(e_t)=2$. The scalar mode algebra is thus the Weyl algebra of an imported module. The quantization is a transcription of standard canonical quantization into the framework's notation; its distinctive content is the central-valuedness of the field, the biquaternion-norm interpretation of the mass shell, and the explicit determination that this sector, alone among the three, receives nothing algebraic from $\mathbb{B}$.</p>
 <h2 id="summary-of-notation">Summary of Notation</h2>
 <div class="table-scroll"><table>
@@ -324,16 +328,16 @@ $$</p>
 <td>Conjugate momenta; Legendre transform regular</td>
 </tr>
 <tr>
-<td>$\tilde K_{\Phi}=i\omega/c\,e_t+\vec k_\Phi$, $\langle\tilde K_{\Phi}\rangle_{\natural}=\frac{k_m^{2}\,\tilde{P}_{\Phi}\,\tilde{P}_{\Phi}^{\natural}}{m^{2}\,c^{2}}$</td>
-<td>Material four-wavevector and biquaternion norm</td>
+<td>$\tilde K_{\Phi}=i\,k_{t}^{\prime}e_t+\vec k_\Phi=\tilde P_{\Phi}/\hbar$, $\langle\tilde K_{\Phi}\rangle_{\natural}=-k_t^{\prime\,2}+k_\Phi^{2}=-k_m^{2}$</td>
+<td>Material four-wavevector and its norm, the mass shell</td>
 </tr>
 <tr>
-<td>$\langle\tilde K_{\Phi}\rangle_{\natural}=-k_m^{2}\,e_t$</td>
-<td>Mass-shell condition</td>
+<td>$\exp(\pm i\,\mathrm{Sc}(\tilde K_{\Phi}\tilde{R}_{\Phi}^{\natural}))$, $\Delta\tilde R_{\Phi}$</td>
+<td>Central plane-wave phase; the separation element of the commutator</td>
 </tr>
 <tr>
-<td>$E_{\vec p}=c\sqrt{\vec p^{\,2}+m^{2}c^{2}}$, $p\cdot x=\frac{E_{\vec p}}{c}r'_t-\vec p\cdot(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)$</td>
-<td>On-shell energy and phase</td>
+<td>$E_{\vec p}=c\sqrt{\vec p^{\,2}+m^{2}c^{2}}$, $p\cdot x=\hbar\left(k_{t}^{\prime}r'_t-\vec k_\Phi\cdot(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)\right)$</td>
+<td>On-shell energy, and the action $\hbar$ times the phase</td>
 </tr>
 <tr>
 <td>$a_{\mathrm{fop},\vec p},b_{\mathrm{fop},\vec p}$</td>

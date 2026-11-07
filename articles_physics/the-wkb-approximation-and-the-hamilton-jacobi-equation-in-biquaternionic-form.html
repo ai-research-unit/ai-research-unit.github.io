@@ -87,6 +87,13 @@ $$</p>
 A(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z) > 0, \quad S(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z) \in  \mathbb{R}, \quad \xi \in  \mathbb{B}\tilde\Pi,
 $$</p>
 <p>with a real positive amplitude $A$ and a real phase $S$. The exponential is central, so it commutes with the module element $\xi$ and with everything else; the amplitude is real and therefore also central. Under the isomorphism $\mathsf{M}_2$, the state is $A \exp(\frac{k_m\,i\,S}{m\,c})\xi$ with a scalar phase multiplying both components equally. This is the WKB form that the framework's conventions make natural: the phase is central, and the module factor is a constant spectator, exactly as in the free and scattering problems.</p>
+<p><strong>The wave number of the state.</strong> The exponent is $iS/\hbar$, and $\frac{k_m}{m\,c}=\frac{1}{\hbar}$ is one over an action, so the phase is a wave number acting on a coordinate. For the free particle, where $S$ is linear, it is exactly one such product, $S/\hbar=\mathrm{Sc}(\tilde K_{\Phi}\tilde R_{\Phi}^{\natural})$ with $\tilde K_{\Phi}=\tilde P_{\Phi}/\hbar=i k_{t}^{\prime}e_t+\vec k_\Phi$, $k_{t}^{\prime}=E/(\hbar c)$ and $\vec k_\Phi=\vec p/\hbar$. For a general potential the phase is local, and so is the wave biquaternion: its two coordinates are the phase gradient and the state's frequency,</p>
+<p>$$
+\vec k_\Phi=\frac{\nabla S}{\hbar},
+\qquad
+k_{t}^{\prime}=\frac{E}{\hbar\,c},
+$$</p>
+<p>the second fixed by the eigenvalue because the state is stationary, and its norm is the mass shell $\langle\tilde K_{\Phi}\rangle_{\natural}=-k_m^{2}$ only where the local momentum is on shell. Nothing new enters: the division by $\hbar$ is the whole of $\tilde K_{\Phi}$, so the phase carries none, and the expansion parameter below, $\frac{m\,c}{k_m}=\hbar$, is the same constant read in the other direction.</p>
 <p>The momentum acts on the phase in a fixed way. Since $\partial/\partial R_\mu \exp(\frac{k_m\,i\,S}{m\,c}) = (\frac{k_m\,i}{m\,c})(\partial S/\partial R_\mu)\exp(\frac{k_m\,i\,S}{m\,c})$,</p>
 <p>$$
 \tilde p\,\tilde{Ξ}_{\mathrm{sp}} = \sum_\mu  \vec e_\mu p_\mu \tilde{Ξ}_{\mathrm{sp}}
@@ -152,11 +159,11 @@ written against the clock $t'=r'_t/c$, because a characteristic velocity is a ve
 <h3 id="the-free-and-separable-cases">The free and separable cases</h3>
 <p>For the free particle the Hamilton–Jacobi equation has the complete integral</p>
 <p>$$
-S(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z,r'_t) = \vec p\cdot(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z) - E r'_t,
+S(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z,r'_t) = \vec p\cdot(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z) - E\,r'_t/c,
 \qquad
 E =\frac{|\vec p|^2 c}{2\,m\,c},
 $$</p>
-<p>whose phase gradient is the constant vector $\vec p$, and whose wave function $A\exp(\frac{k_m\,i\,(\vec p\cdot(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)-E\,r'_t/c)}{m\,c^{2}})$ is the plane wave of the free-particle article. For a separable potential $V=V_1(x_1)+V_2(x_2)+V_3(x_3)$ the equation separates, $S=\sum_k S_k(x_k)$, and each $S_k$ obeys</p>
+<p>whose phase gradient is the constant vector $\vec p$, and whose wave function $A\exp\!\big(i\,\mathrm{Sc}(\tilde K_{\Phi}\tilde R_{\Phi}^{\natural})\big)=A\exp\!\big(\frac{k_m\,i\,(\vec p\cdot(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)-E\,r'_t/c)}{m\,c^{2}}\big)$, with $\tilde K_{\Phi}=\tilde P_{\Phi}/\hbar=i\frac{E}{\hbar c}e_t+\frac{\vec p}{\hbar}$, is the plane wave of the free-particle article. For a separable potential $V=V_1(x_1)+V_2(x_2)+V_3(x_3)$ the equation separates, $S=\sum_k S_k(x_k)$, and each $S_k$ obeys</p>
 <p>$$\frac{1}{2\,m}\left(\frac{dS_k}{dx_k}\right)^2 + V_k(x_k) = E_k,
 \qquad
 \sum_k  E_k = E ,
@@ -307,12 +314,12 @@ $$</p>
 <td>State module</td>
 </tr>
 <tr>
-<td>$\tilde{Ξ}_{\mathrm{sp}}=A\exp(\frac{k_m\,i\,S}{m\,c})\xi$</td>
+<td>$\tilde{Ξ}_{\mathrm{sp}}=A\exp(\frac{k_m\,i\,S}{m\,c})\xi=A\exp(iS/\hbar)\xi$</td>
 <td>WKB state; central phase, real central amplitude, constant $\xi$</td>
 </tr>
 <tr>
-<td>$\tilde p=-\frac{m\,c\,i}{k_m}\nabla$</td>
-<td>Momentum operator, Hermitian</td>
+<td>$\tilde p=-\frac{m\,c\,i}{k_m}\nabla=-i\hbar\nabla$</td>
+<td>Momentum operator, Hermitian; $\tilde K_{\Phi}=\tilde p/\hbar$ on a plane wave</td>
 </tr>
 <tr>
 <td>$\tilde p\tilde{Ξ}_{\mathrm{sp}}=[\nabla  S-\frac{m\,c\,i}{k_m}\nabla\ln  A]\tilde{Ξ}_{\mathrm{sp}}$</td>
