@@ -478,7 +478,7 @@ $$
 $$
 The contraction sums follow from the squares. With one index raised, $\gamma^\mu=-\varepsilon_\mu\gamma_\mu$, so that $\sum_\mu\gamma^\mu\gamma_\mu=-4I_4$, $\sum_\mu\gamma^\mu\gamma_\alpha\gamma_\mu=2\gamma_\alpha$, $\sum_\mu\gamma^\mu\gamma_\alpha\gamma_\beta\gamma_\mu=-4\varepsilon_\alpha\delta_{\alpha\beta}I_4$ and $\sum_\mu\gamma^\mu\gamma_\gamma\gamma_\beta\gamma_\alpha\gamma_\mu=-2\gamma_\gamma\gamma_\beta\gamma_\alpha$.
 
-The volume cell is $\gamma_0\gamma_1\gamma_2\gamma_3=-i\gamma_5=-R_{\mathrm{pau},\vec e_z}=-L_{\mathrm{axf},e_t}R_{\mathrm{axf},\vec e_z}$, the same cell written in the two displays.
+The fifth cell is $\gamma_0\gamma_1\gamma_2\gamma_3=-i\gamma_5=-R_{\mathrm{pau},\vec e_z}=-L_{\mathrm{axf},e_t}R_{\mathrm{axf},\vec e_z}$, the same cell written in the two displays.
 
 The four contraction sums are statements about the squares, because a cell's square is. For generators that all square to $+I_4$ (written $\Gamma_\mu$ here), they take the textbook values,
 $$
@@ -514,7 +514,7 @@ D(p) = p_{0}\,\gamma_0-\sum_k p_{k}\,\gamma_k+m\,L_{\mathrm{axf},e_t}R_{\mathrm{
 D(p)\tilde{Ξ}_{\mathrm{sp}} = 2m\,c\,\tilde{Ξ}_{\mathrm{sp}} \ \ \text{on the positive-frequency solutions},
 $$
 
-and the cell obeys $D(p)^2 = 2m\,c\,D(p)$ on shell, so $D(p)/2m\,c$ is the projector of rank two that the previous section uses. Its chirality is the cell $\gamma_5=-iR_{\mathrm{axf},\vec e_z}$, whose projectors $\tfrac12(1\pm\gamma_5)$ separate the chiral halves; the central sign $\chi=i\tilde{Ζ}_{\mathrm{ad}}$ is the same operator written centrally, and $\tfrac12(e_t\pm\xi)$ are its central idempotents.
+and the cell obeys $D(p)^2 = 2m\,c\,D(p)$ on shell, so $D(p)/2m\,c$ is the projector of rank two that the previous section uses. The cell that carries its chirality is $\gamma_5=-iR_{\mathrm{axf},\vec e_z}$, a pure right multiplier, and its projectors $\tfrac12(1\pm\gamma_5)$ separate the chiral halves; the central sign $\chi=i\tilde{Ζ}_{\mathrm{ad}}$ is the same operator written centrally, and $\tfrac12(e_t\pm\xi)$ are its central idempotents.
 
 The second is Kravchenko's **two-sided** equation, the dictionary form on $\mathbb{B}$,
 $$
@@ -522,17 +522,17 @@ $$
 \qquad\text{that is}\qquad
 -\tilde\nabla^{\natural}F - k_mi\,\overline{F}\,\vec e_z = 0
 $$
-where $D_3=\sum_k\vec e_k\,\partial/\partial R_k$ is the three-dimensional Cauchy–Riemann operator, the bar is the componentwise conjugation and $\vec e_z$ multiplies from the right. Its mass term is a conjugation together with a fixed direction rather than an off-diagonal pairing, its chirality is the chirality cell $\gamma_5=i\omega$, with $\omega=-L_{\mathrm{pau},e_t}R_{\mathrm{pau},\vec e_z}$ the volume cell, and its analytic machinery is the Cauchy theory of the dictionary article.
+where $D_3=\sum_k\vec e_k\,\partial/\partial R_k$ is the three-dimensional Cauchy–Riemann operator, the bar is the componentwise conjugation and $\vec e_z$ multiplies from the right. Its mass term is a conjugation together with a fixed direction rather than an off-diagonal pairing, the cell that carries its split is $\gamma_5=i\omega$ with $\omega=-L_{\mathrm{pau},e_t}R_{\mathrm{pau},\vec e_z}$, and its analytic machinery is the Cauchy theory of the dictionary article.
 
 | Aspect | One-sided equation | Two-sided equation |
 |---|---|---|
 | Form | $\tilde\nabla\tilde{Ξ}_{\mathrm{sp},R}=k_m\tilde{Ξ}_{\mathrm{sp},L}$, $\tilde\nabla^\natural\tilde{Ξ}_{\mathrm{sp},L}=k_m\tilde{Ξ}_{\mathrm{sp},R}$ | $\mathcal{N}F=0$, that is $-\tilde\nabla^{\natural}F-k_mi\,\overline{F}\,\vec e_z=0$ |
 | Multiplication | left, by $\tilde\nabla$ and $\tilde\nabla^\natural$ | left, plus right by $\vec e_z$ in the mass term, plus the antilinear bar |
 | Mass | off-diagonal pairing of $S$ and $S^{\mathrm c}$ | $-k_mi\,\overline{F}\,\vec e_z$ |
-| Chirality | the central sign $\chi=i\tilde{Ζ}_{\mathrm{ad}}$ | the chirality cell $\gamma_5=-iL_{\mathrm{pau},e_t}R_{\mathrm{pau},\vec e_z}=i\omega$, with $\omega=-L_{\mathrm{pau},e_t}R_{\mathrm{pau},\vec e_z}$ the volume cell; in the axis-free display $\gamma_5=-iL_{\mathrm{axf},e_t}R_{\mathrm{axf},\vec e_z}=i\omega$, with $\omega=-L_{\mathrm{axf},e_t}R_{\mathrm{axf},\vec e_z}$ |
+| Chirality | the side: the right slot for a right multiplier, both slots for a central scalar | the cell that realises the split is $\gamma_5=-iL_{\mathrm{pau},e_t}R_{\mathrm{pau},\vec e_z}=i\omega$, with $\omega=-L_{\mathrm{pau},e_t}R_{\mathrm{pau},\vec e_z}$; in the axis-free display $\gamma_5=-iL_{\mathrm{axf},e_t}R_{\mathrm{axf},\vec e_z}=i\omega$, with $\omega=-L_{\mathrm{axf},e_t}R_{\mathrm{axf},\vec e_z}$ |
 | Use | kinematics, spin sums, and this article | the dictionary, the Cauchy theory, the integral representation |
 
-The two are related by the dictionary and are not the same operator; the scattering problem uses only the first, with the second entering exclusively through the identity of the chirality cell.
+The two are related by the dictionary and are not the same operator; the scattering problem uses only the first, with the second entering exclusively through the identity of the cell.
 
 **The display.** Every array printed in this section is given twice: in the Peirce display first, labelled $\mathrm{pau}$, whose arrays are the ones the literature prints, and in the axis-free display after it, labelled $\mathrm{axf}$, which is the display of the body and of the corpus. The two are carried into one another by $L_{\mathrm{axf},e_\mu}=C_{\Pi}L_{\mathrm{pau},e_\mu}C_{\Pi}^{-1}$, and a conjugation by $C_{\Pi}$ changes no product, no anticommutator, no trace and no determinant, so every identity of the section holds in both. An array is a statement about one display; a cell named in the running text keeps the Peirce label, and its axis-free array is the conjugate. The label names the array and not the operator.
 

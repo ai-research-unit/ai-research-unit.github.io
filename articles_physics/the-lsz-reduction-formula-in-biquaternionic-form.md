@@ -202,7 +202,7 @@ $$
 $$
 with two independent signs per leg: $s_j=+1$ on an outgoing leg and $-1$ on an incoming one, from the Fourier phase, and $\varepsilon_j=+1$ on a $\tilde{Ξ}_{\mathrm{sp}}$ leg and $-1$ on a $\tilde{Ξ}_{\mathrm{sp}}^{\natural}$ leg, from the numerator the leg carries. The two are unrelated: a $\tilde{Ξ}_{\mathrm{sp}}^{\natural}$ leg may be incoming or outgoing.
 
-**Chirality.** The chirality is the value of the subscript, $L$ or $R$: $L$ is the minus value, $R$ the plus one, every element is the sum of one of each, and only $0$ is both. The closing section prints the frame cell whose two values these are. The momentum action exchanges the two values and the mass keeps each of them, so the equation $\mathcal{A}_p\tilde{Ξ}_{\mathrm{sp}}=m\tilde{Ξ}_{\mathrm{sp}}$ splits into the two lines
+**Chirality.** Chirality is the side of the cell that assigns the values; a state carries the value $L$ or $R$: $L$ is the minus one, $R$ the plus one, every element is the sum of one of each, and only $0$ is both. The closing section prints the frame cell whose two values these are. The momentum action exchanges the two values and the mass keeps each of them, so the equation $\mathcal{A}_p\tilde{Ξ}_{\mathrm{sp}}=m\tilde{Ξ}_{\mathrm{sp}}$ splits into the two lines
 $$
 \mathcal{A}_p\tilde{Ξ}_{\mathrm{sp},R}=m\tilde{Ξ}_{\mathrm{sp},L} ,
 \qquad

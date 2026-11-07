@@ -31,6 +31,16 @@ $$
 
 with a real positive amplitude $A$ and a real phase $S$. The exponential is central, so it commutes with the module element $\xi$ and with everything else; the amplitude is real and therefore also central. Under the isomorphism $\mathsf{M}_2$, the state is $A \exp(\frac{k_m\,i\,S}{m\,c})\xi$ with a scalar phase multiplying both components equally. This is the WKB form that the framework's conventions make natural: the phase is central, and the module factor is a constant spectator, exactly as in the free and scattering problems.
 
+**The wave number of the state.** The exponent is $iS/\hbar$, and $\frac{k_m}{m\,c}=\frac{1}{\hbar}$ is one over an action, so the phase is a wave number acting on a coordinate. For the free particle, where $S$ is linear, it is exactly one such product, $S/\hbar=\mathrm{Sc}(\tilde K_{\Phi}\tilde R_{\Phi}^{\natural})$ with $\tilde K_{\Phi}=\tilde P_{\Phi}/\hbar=i k_{t}^{\prime}e_t+\vec k_\Phi$, $k_{t}^{\prime}=E/(\hbar c)$ and $\vec k_\Phi=\vec p/\hbar$. For a general potential the phase is local, and so is the wave biquaternion: its two coordinates are the phase gradient and the state's frequency,
+
+$$
+\vec k_\Phi=\frac{\nabla S}{\hbar},
+\qquad
+k_{t}^{\prime}=\frac{E}{\hbar\,c},
+$$
+
+the second fixed by the eigenvalue because the state is stationary, and its norm is the mass shell $\langle\tilde K_{\Phi}\rangle_{\natural}=-k_m^{2}$ only where the local momentum is on shell. Nothing new enters: the division by $\hbar$ is the whole of $\tilde K_{\Phi}$, so the phase carries none, and the expansion parameter below, $\frac{m\,c}{k_m}=\hbar$, is the same constant read in the other direction.
+
 The momentum acts on the phase in a fixed way. Since $\partial/\partial R_\mu \exp(\frac{k_m\,i\,S}{m\,c}) = (\frac{k_m\,i}{m\,c})(\partial S/\partial R_\mu)\exp(\frac{k_m\,i\,S}{m\,c})$,
 
 $$
@@ -128,12 +138,12 @@ The phase gradient therefore defines a congruence of trajectories along which $S
 For the free particle the Hamilton–Jacobi equation has the complete integral
 
 $$
-S(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z,r'_t) = \vec p\cdot(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z) - E r'_t,
+S(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z,r'_t) = \vec p\cdot(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z) - E\,r'_t/c,
 \qquad
 E =\frac{|\vec p|^2 c}{2\,m\,c},
 $$
 
-whose phase gradient is the constant vector $\vec p$, and whose wave function $A\exp(\frac{k_m\,i\,(\vec p\cdot(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)-E\,r'_t/c)}{m\,c^{2}})$ is the plane wave of the free-particle article. For a separable potential $V=V_1(x_1)+V_2(x_2)+V_3(x_3)$ the equation separates, $S=\sum_k S_k(x_k)$, and each $S_k$ obeys
+whose phase gradient is the constant vector $\vec p$, and whose wave function $A\exp\!\big(i\,\mathrm{Sc}(\tilde K_{\Phi}\tilde R_{\Phi}^{\natural})\big)=A\exp\!\big(\frac{k_m\,i\,(\vec p\cdot(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)-E\,r'_t/c)}{m\,c^{2}}\big)$, with $\tilde K_{\Phi}=\tilde P_{\Phi}/\hbar=i\frac{E}{\hbar c}e_t+\frac{\vec p}{\hbar}$, is the plane wave of the free-particle article. For a separable potential $V=V_1(x_1)+V_2(x_2)+V_3(x_3)$ the equation separates, $S=\sum_k S_k(x_k)$, and each $S_k$ obeys
 
 $$\frac{1}{2\,m}\left(\frac{dS_k}{dx_k}\right)^2 + V_k(x_k) = E_k,
 \qquad
@@ -315,8 +325,8 @@ The whole semiclassical expansion lives in the **centre** of the algebra: the ph
 | $\mathbb{B}_{H}$ | Real-quaternion subspace; home of the phase gradient |
 | $\mathbb{B}_{\Psi}$, $\mathbb{B}_{\Phi}$ | Hermitian and anti-Hermitian sectors |
 | $\mathbb{B}\tilde\Pi\cong\mathbb{C}^2$ | State module |
-| $\tilde{Ξ}_{\mathrm{sp}}=A\exp(\frac{k_m\,i\,S}{m\,c})\xi$ | WKB state; central phase, real central amplitude, constant $\xi$ |
-| $\tilde p=-\frac{m\,c\,i}{k_m}\nabla$ | Momentum operator, Hermitian |
+| $\tilde{Ξ}_{\mathrm{sp}}=A\exp(\frac{k_m\,i\,S}{m\,c})\xi=A\exp(iS/\hbar)\xi$ | WKB state; central phase, real central amplitude, constant $\xi$ |
+| $\tilde p=-\frac{m\,c\,i}{k_m}\nabla=-i\hbar\nabla$ | Momentum operator, Hermitian; $\tilde K_{\Phi}=\tilde p/\hbar$ on a plane wave |
 | $\tilde p\tilde{Ξ}_{\mathrm{sp}}=[\nabla  S-\frac{m\,c\,i}{k_m}\nabla\ln  A]\tilde{Ξ}_{\mathrm{sp}}$ | Action of the momentum on the WKB state |
 | $\nabla S=\sum_\mu(\partial S/\partial R_\mu)\vec e_\mu$ | Phase gradient; real quaternion, $\in\mathbb{B}_{H}$ |
 | $\langle \nabla S\rangle_{\natural}=\lvert\nabla S\rvert^2$ | Biquaternion norm of the phase gradient; $\nabla S\,\nabla S^{\natural}=\lvert\nabla S\rvert^2e_t$ |

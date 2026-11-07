@@ -26,7 +26,7 @@ Every display below is an element, a product of elements, or a conjugation of on
 
 **The two operators.** The gradient $\tilde\nabla$ and the d'Alembertian $\Box$ are the series operators (*Operator and Calculus Conventions*); the article names them and does not restate them. It uses one property, which the same article fixes: the product of the gradient with its natural conjugate is the d'Alembertian. That product is the sense in which the two first-order operators of the pair below are square roots of $\Box$, and it is a convention of the series, not a result of this article.
 
-**The letters.** The chirality of a frame is the action of right multiplication by the third unit with the phase $-i$,
+**The letters.** The cell of a frame is the right multiplication by the third unit with the phase $-i$, a pure right multiplier whose side is the right slot,
 $$
 \tilde{Ξ}_{\mathrm{sp}}\longmapsto-i\,\tilde{Ξ}_{\mathrm{sp}}\,\vec e_z ,
 $$

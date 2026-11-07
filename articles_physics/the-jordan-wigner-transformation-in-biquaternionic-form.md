@@ -308,7 +308,7 @@ $$
 P^2=I_4 ,
 $$
 
-and the two differ only by the overall sign that the frame fixes. The Peirce sign is a copy index inside $\mathbb{B}$; the chirality is not. The chirality is the cell $\gamma_5=-iR_{\mathrm{axf},\vec e_z}$, whose central form is the sign $\chi=i\tilde{Ζ}_{\mathrm{ad}}$ of the complexified algebra.
+and the two differ only by the overall sign that the frame fixes. The Peirce sign is a copy index inside $\mathbb{B}$; the chirality is not. The cell is $-iR_{\mathrm{axf},\vec e_z}$, a pure right multiplier, and its side is the right slot; its central form is the sign $\chi=i\tilde{Ζ}_{\mathrm{ad}}$ of the complexified algebra.
 
 The frame is Clifford, with $\varepsilon=(1,-1,-1,-1)$ and $I_4=L_{\mathrm{pau},e_t}R_{\mathrm{pau},e_t}$ the identity cell:
 

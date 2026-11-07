@@ -254,7 +254,7 @@ Without $\mathcal{B}$ and $\mathcal{C}$, the algebra would be the direct sum $\m
 
 ## The Biquaternion Case and the Comparison
 
-**At $n=2$ the mass block is a line.** For $M_2(\mathbb{C})$, the chirality is the root $H=\operatorname{diag}(1,-1)$, and the mass block is
+**At $n=2$ the mass block is a line.** For $M_2(\mathbb{C})$ the chirality involution is the root $H=\operatorname{diag}(1,-1)$, the word naming an involution of the carrier and not the biquaternion chirality, which is a side; the mass block is
 
 $$
 \mathcal{B}=P_+M_2P_-=\mathbb{C}E_{12},

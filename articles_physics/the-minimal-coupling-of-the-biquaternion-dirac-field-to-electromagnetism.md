@@ -430,7 +430,7 @@ $$
 
 A single cell is a tensor $a\otimes b$ read through $L_aR_b$, so its coefficient matrix has rank one; the cells form the seven-dimensional cone $\operatorname{rank}c(M)\le1$, and every element of $M_4(\mathbb{C})$ is a sum of at most four of them.
 
-$\gamma_5$ is the chirality cell of the frame, $\mathsf{V}_{\mathrm{vol}}$, the cell $-iR_{\vec e_z}$ of the axis-free display. Its eigenvalues are $\pm1$, with multiplicity two each; read in the frame, that is the statement that the two values of the subscript are two.
+$\gamma_5$ is the cell $\mathsf{V}_{\mathrm{vol}}=-iR_{\vec e_z}$, a pure right multiplier. Its side is the right slot, which is what makes it a chirality, and its eigenvalues are $\pm1$ with multiplicity two each: that is the statement that the two values of the subscript are two.
 
 The dictionary is complex-linear; over $\mathbb{R}$ the products span $\mathrm{Cl}_{1,3}(\mathbb{R})\cong M_2(\mathbb{H})$ and the cells span $\mathrm{Cl}_{3,1}(\mathbb{R})\cong M_4(\mathbb{R})$.
 

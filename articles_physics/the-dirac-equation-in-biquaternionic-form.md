@@ -75,7 +75,7 @@ A single element of $\mathbb{B}$ carries four complex numbers, which is the coun
 
 ### Chirality
 
-**The notion is a side, and the frame supplies it.** The derivative of this article multiplies the field on the left; the frame has a fifth cell that multiplies on the right, its volume cell, and that cell is what the corpus calls the operator chirality of the frame (*Operator Chirality on the Biquaternion Algebra*, §*What Operator Chirality Is Not*). The cell is named here and not computed, and its arrays are printed in *The Legacy Pauli Gamma Formulation*, where the older display is compared. No other object is introduced to say which part is which.
+**The notion is a side, and one cell realises it.** The derivative of this article multiplies the field on the left; a right multiplier supplies the other side, and the cell $-iR_{\vec e_z}$ is one such operator. That cell is an example of the right slot and not the definition of the label (*Operator Chirality on the Biquaternion Algebra*, §*What Operator Chirality Is Not*). The cell is named here and not computed, and its arrays are printed in *The Legacy Pauli Gamma Formulation*, where the older display is compared. No other object is introduced to say which part is which.
 
 **The rules of the value.** A product takes the value of its right factor, and left multiplication keeps it. The derivative therefore carries each part into a part of the same value, and nothing that multiplies on the left acts on the value at all.
 
@@ -427,47 +427,50 @@ in agreement with the companion article on the Klein–Gordon equation. This is 
 Plane-wave solutions of the right-handed massless equation are
 
 $$
-\boxed{\;\tilde{Ξ}_{\mathrm{sp}}(\tilde R_\Phi) = \tilde{Ξ}_{\mathrm{sp},0} \exp\!\left(i\,\mathrm{Sc}\!\left(\tilde{P}_{\Phi}\tilde{R}_\Phi^{\natural}\right)\frac{k_m}{m\,c}\right)
-= \tilde{Ξ}_{\mathrm{sp},0}\,\exp(\,i(\vec k_\Phi\cdot(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)-\omega r'_t/c))\;},
+\boxed{\;\tilde{Ξ}_{\mathrm{sp}}(\tilde R_\Phi) = \tilde{Ξ}_{\mathrm{sp},0} \exp\!\left(i\,\mathrm{Sc}\!\left(\tilde{K}_{\Phi}\tilde{R}_\Phi^{\natural}\right)\right)
+= \tilde{Ξ}_{\mathrm{sp},0}\,\exp\!\big(i(\vec k_\Phi\cdot(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)-k_{t}^{\prime} r'_t)\big)\;},
 $$
 
-where $\tilde{Ξ}_{\mathrm{sp},0} \in \mathbb{B}$ is a constant biquaternion, $\frac{k_m\,\tilde{P}_{\Phi}}{m\,c}= i k_{t}^{\prime} e_t + \vec e_x k_1 + \vec e_y k_2 + \vec e_z k_3$ (with $k_{t}^{\prime} = \omega/c$) is the wave biquaternion, and $\tilde R_\Phi = e_t (i r'_t) + \vec e_x r_x + \vec e_y r_y + \vec e_z r_z$ is the four-position biquaternion. The scalar part $\mathrm{Sc}(\tilde{P}_{\Phi}\tilde{R}_\Phi^{\natural})/\hbar = \vec k_\Phi\cdot(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z) - \omega r'_t/c$ is real, so the exponent $i\,\mathrm{Sc}\frac{k_m\,\tilde{P}_{\Phi}\,\tilde{R}_{\Phi}^{\natural}}{m\,c}$ is a purely imaginary central element; the exponential therefore commutes with $\tilde{Ξ}_{\mathrm{sp},0}$ and differentiates to left multiplication by $\frac{k_m\,i\,\tilde{P}_{\Phi}}{m\,c}$,
+where $\tilde{Ξ}_{\mathrm{sp},0} \in \mathbb{B}$ is a constant biquaternion, $\tilde{K}_{\Phi}=\frac{\tilde{P}_{\Phi}}{\hbar}= i k_{t}^{\prime} e_t + \vec e_x k_1 + \vec e_y k_2 + \vec e_z k_3$ (with $k_{t}^{\prime} = \omega/c$) is the wave biquaternion, and $\tilde R_\Phi = e_t (i r'_t) + \vec e_x r_x + \vec e_y r_y + \vec e_z r_z$ is the four-position biquaternion. The scalar part $\mathrm{Sc}(\tilde{K}_{\Phi}\tilde{R}_\Phi^{\natural}) = \vec k_\Phi\cdot(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z) - k_{t}^{\prime} r'_t$ is real, so the exponent $i\,\mathrm{Sc}(\tilde{K}_{\Phi}\tilde{R}_{\Phi}^{\natural})$ is a purely imaginary central element; the exponential therefore commutes with $\tilde{Ξ}_{\mathrm{sp},0}$ and differentiates to left multiplication by $i\tilde{K}_{\Phi}$,
 
 $$
-\tilde{\nabla}\tilde{Ξ}_{\mathrm{sp}} =\frac{k_m\,i\,\tilde{P}_{\Phi}\,\tilde{Ξ}_{\mathrm{sp}}}{m\,c},
+\tilde{\nabla}\tilde{Ξ}_{\mathrm{sp}} = i\tilde{K}_{\Phi}\,\tilde{Ξ}_{\mathrm{sp}},
 $$
 
 so the equation $\tilde{\nabla}\tilde{Ξ}_{\mathrm{sp}} = 0$ becomes
 
 $$
-\tilde{P}_{\Phi}\tilde{Ξ}_{\mathrm{sp},0}/\hbar = 0,
+\tilde{K}_{\Phi}\tilde{Ξ}_{\mathrm{sp},0} = 0,
 $$
 
-i.e., the polarization biquaternion $\tilde{Ξ}_{\mathrm{sp},0}$ is annihilated by the wave biquaternion $\frac{k_m\,\tilde{P}_{\Phi}}{m\,c}$. This is the momentum-space massless equation in the algebra; its kernel has complex dimension two, the two spin states of the field with this value. The two values are the two helicities, so the full massless field is the pair of this equation and its conjugate.
+i.e., the polarization biquaternion $\tilde{Ξ}_{\mathrm{sp},0}$ is annihilated by the wave biquaternion $\tilde{K}_{\Phi}$. This is the momentum-space massless equation in the algebra; its kernel has complex dimension two, the two spin states of the field with this value. The two values are the two helicities, so the full massless field is the pair of this equation and its conjugate.
 
-Nonzero solutions of $\tilde{P}_{\Phi}\tilde{Ξ}_{\mathrm{sp},0}/\hbar = 0$ exist only when $\frac{k_m\,\tilde{P}_{\Phi}}{m\,c}$ is a zero divisor in $\mathbb{B}$, that is, when $\frac{k_m\,\tilde{P}_{\Phi}}{m\,c}$ is null: $\frac{k_m^{2}\,\tilde{P}_{\Phi}\,\tilde{P}_{\Phi}^{\natural}}{m^{2}\,c^{2}}= 0$, equivalently $k_{t}^{\prime\,2} = \|\vec k_\Phi\|^2$, the massless dispersion relation. In that case the kernel is a two-dimensional complex vector space, the two spin states; for non-null $\frac{k_m\,\tilde{P}_{\Phi}}{m\,c}$ the kernel is trivial.
+Nonzero solutions of $\tilde{K}_{\Phi}\tilde{Ξ}_{\mathrm{sp},0} = 0$ exist only when $\tilde{K}_{\Phi}$ is a zero divisor in $\mathbb{B}$, that is, when $\tilde{K}_{\Phi}$ is null: $\tilde{K}_{\Phi}\tilde{K}_{\Phi}^{\natural}= \tilde{P}_{\Phi}\tilde{P}_{\Phi}^{\natural}/\hbar^{2}= 0$, equivalently $k_{t}^{\prime\,2} = k_\Phi^{2}$, the massless dispersion relation. In that case the kernel is a two-dimensional complex vector space, the two spin states; for non-null $\tilde{K}_{\Phi}$ the kernel is trivial.
 
 ### Massive Plane Waves
 
 For the massive equation a single central-phase plane wave,
 
 $$
-\tilde{Ξ}_{\mathrm{sp}}(\tilde R_\Phi) = \tilde{Ξ}_{\mathrm{sp},0} \exp\!\left(i\,\mathrm{Sc}\!\left(\tilde{P}_{\Phi}\tilde{R}_\Phi^{\natural}\right)\frac{k_m}{m\,c}\right) = \tilde{Ξ}_{\mathrm{sp},0}\,\exp(i\theta), \qquad \theta = \vec k_\Phi\cdot(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z) - \omega r'_t/c,
+\tilde{Ξ}_{\mathrm{sp}}(\tilde R_\Phi) = \tilde{Ξ}_{\mathrm{sp},0} \exp\!\left(i\,\mathrm{Sc}\!\left(\tilde{K}_{\Phi}\tilde{R}_\Phi^{\natural}\right)\right) = \tilde{Ξ}_{\mathrm{sp},0}\,\exp(i\theta), \qquad \theta = \vec k_\Phi\cdot(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z) - k_{t}^{\prime} r'_t,
 $$
 
-does solve the pair, with one polarization biquaternion per value, $\tilde{Ξ}_{\mathrm{sp},0} = \tilde{Ξ}_{\mathrm{sp},0}^L + \tilde{Ξ}_{\mathrm{sp},0}^R$. Differentiating as in the massless case, $\tilde{\nabla}$ acts on $\exp(i\theta)$ as left multiplication by $\frac{k_m\,i\,\tilde{P}_{\Phi}}{m\,c}$ and $\tilde{\nabla}^{\natural}$ acts on it as left multiplication by $\frac{k_m\,i\,\tilde{P}_{\Phi}^{\natural}}{m\,c}$, so the chiral pair becomes the momentum-space system
+does solve the pair, with one polarization biquaternion per value, $\tilde{Ξ}_{\mathrm{sp},0} = \tilde{Ξ}_{\mathrm{sp},0}^L + \tilde{Ξ}_{\mathrm{sp},0}^R$. Differentiating as in the massless case, $\tilde{\nabla}$ acts on $\exp(i\theta)$ as left multiplication by $i\tilde{K}_{\Phi}$ and $\tilde{\nabla}^{\natural}$ as left multiplication by $i\tilde{K}_{\Phi}^{\natural}$, so the chiral pair becomes the momentum-space system
 
-$$\frac{k_m\,i\,\tilde{P}_{\Phi}\,\tilde{Ξ}_{\mathrm{sp},0}^{R}}{m\,c}= k_m\,\tilde{Ξ}_{\mathrm{sp},0}^L,\frac{k_m\,i\,\tilde{P}_{\Phi}^{\natural}\,\tilde{Ξ}_{\mathrm{sp},0}^{L}}{m\,c}= k_m\,\tilde{Ξ}_{\mathrm{sp},0}^R .
+$$
+i\tilde{K}_{\Phi}\,\tilde{Ξ}_{\mathrm{sp},0}^{R}= k_m\,\tilde{Ξ}_{\mathrm{sp},0}^L,
+\qquad
+i\tilde{K}_{\Phi}^{\natural}\,\tilde{Ξ}_{\mathrm{sp},0}^{L}= k_m\,\tilde{Ξ}_{\mathrm{sp},0}^R .
 $$
 
 Eliminating $\tilde{Ξ}_{\mathrm{sp},0}^L$ gives
 
-$$\frac{k_m^{2}\,\tilde{P}_{\Phi}\,\tilde{P}_{\Phi}^{\natural}}{m^{2}\,c^{2}}\,\tilde{Ξ}_{\mathrm{sp},0}^R = -k_m^{2}\,\tilde{Ξ}_{\mathrm{sp},0}^R ,
+$$\tilde{K}_{\Phi}\tilde{K}_{\Phi}^{\natural}\,\tilde{Ξ}_{\mathrm{sp},0}^R = -k_m^{2}\,\tilde{Ξ}_{\mathrm{sp},0}^R ,
 $$
 
 so a nonzero solution requires the **mass-shell condition**
 
-$$\frac{k_m^{2}\,\tilde{P}_{\Phi}\,\tilde{P}_{\Phi}^{\natural}}{m^{2}\,c^{2}}=-k_m^{2},
+$$\tilde{K}_{\Phi}\tilde{K}_{\Phi}^{\natural}=-k_m^{2},
 $$
 
 i.e., $-k_{t}^{\prime\,2} + \|\vec k_\Phi\|^2 = -k_m^{2}$, which is the standard mass-shell relation $k_{t}^{\prime\,2} = \|\vec k_\Phi\|^2 + k_m^{2}$ (with $k_{t}^{\prime} = c\,k_{t}^{\prime} c$). This is the biquaternion form of the standard relativistic energy-momentum relation $E^2 = \vec p^2 c^2 +m^{2}\,c^{4}$ (with $\vec p =\frac{m\,c\,\vec k_\Phi}{k_m}$), the same shell as the four-momentum kinematics of the preceding section. The two signs of $k_{t}^{\prime}$ are the two frequency branches — the particle and the antiparticle — and with the two spin states they give the four solutions that the field carries.
@@ -703,7 +706,7 @@ The biquaternion formulation adds three things:
 
 **2. A compact notation for the value.** The value of the field is a letter, $L$ or $R$. No index is written: the field is one element, its two parts are named by the letter they carry, and the mass is the pairing between them.
 
-**3. A natural language for relativistic kinematics.** The four-velocity $\tilde{V}_{\Phi}$, the four-momentum $\tilde{P}_{\Phi}$, and the mass-shell relation $\tilde{P}_{\Phi}\tilde{P}_{\Phi}^{\natural} = -m^{2}\,c^{2}$ are all natural objects in the biquaternion algebra. The Dirac equation is naturally stated in terms of these objects, and the plane-wave solutions are naturally written in terms of the wave biquaternion $\frac{k_m\,\tilde{P}_{\Phi}}{m\,c}$ and the four-position $\tilde R_\Phi$.
+**3. A natural language for relativistic kinematics.** The four-velocity $\tilde{V}_{\Phi}$, the four-momentum $\tilde{P}_{\Phi}$, and the mass-shell relation $\tilde{P}_{\Phi}\tilde{P}_{\Phi}^{\natural} = -m^{2}\,c^{2}$ are all natural objects in the biquaternion algebra. The Dirac equation is naturally stated in terms of these objects, and the plane-wave solutions are naturally written in terms of the wave biquaternion $\tilde{K}_{\Phi}=\tilde{P}_{\Phi}/\hbar$ and the four-position $\tilde R_\Phi$.
 
 ### The Mass as a Non-Integrable Phase
 
@@ -769,7 +772,7 @@ $$
 
 A single product is a pure tensor; the products form the seven-dimensional cone of rank at most one, and a general element is a sum of at most four.
 
-$\gamma_5$ is the fifth cell of the frame, the operator the maths article calls the chirality operator (*Operator Chirality on the Biquaternion Algebra*): the volume cell, $-iL_{e_t}R_{\vec e_z}$, which is the pure right multiplier $-iR_{\vec e_z}$ on the algebra. The two arrays above are its arrays in the two displays. The operator is neither array. It is the side, and the side is what the fifth cell of the frame adds to the four generators: the four multiply on the left, and the fifth multiplies on the right by the third direction.
+$\gamma_5$ is the fifth cell of the frame, one operator that realises the split (*Operator Chirality on the Biquaternion Algebra*): the right multiplication $-iR_{\vec e_z}$, written $-iL_{e_t}R_{\vec e_z}$ because $L_{e_t}=\mathrm I$. The two arrays above are its arrays in the two displays. The operator is neither array. The side is what this cell shows and what the four generators do not: the four multiply on the left, and the cell multiplies on the right. Its being a chirality is that side, and the side is fixed without it.
 
 The cell dictionary is complex-linear; over $\mathbb{R}$ the products span $\mathrm{Cl}_{1,3}(\mathbb{R})\cong M_2(\mathbb{H})$ and the cells span $\mathrm{Cl}_{3,1}(\mathbb{R})\cong M_4(\mathbb{R})$.
 
@@ -793,7 +796,7 @@ one for each value; the single equation $\tilde{\nabla}\tilde{Ξ}_{\mathrm{sp}}=
 
 The relativistic kinematic relations are expressed in the same language: the four-velocity $\tilde{V}_{\Phi} = \gamma(ic\, e_t + \vec v)$ satisfies $\tilde{V}_{\Phi}\tilde{V}_{\Phi}^{\natural} = -c^2$, the four-momentum $\tilde{P}_{\Phi} =m\,\tilde{V}_{\Phi}$ satisfies the mass-shell relation $\tilde{P}_{\Phi}\tilde{P}_{\Phi}^{\natural} = -m^{2}\,c^{2}$, and the four-position $\tilde R_\Phi = i r'_t\, e_t + r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z$ gives the invariant interval $ds^2 = \langle d\tilde R_\Phi\rangle_{\natural} = d\tilde R_\Phi\,d\tilde{R}_\Phi^{\natural}$.
 
-The plane-wave solutions of the massless equation with the plus value are $\tilde{Ξ}_{\mathrm{sp}} = \tilde{Ξ}_{\mathrm{sp},0}\exp\!\left(i\,\mathrm{Sc}\frac{k_m\,\tilde{P}_{\Phi}\,\tilde{R}_{\Phi}^{\natural}}{m\,c}\right) = \tilde{Ξ}_{\mathrm{sp},0}\,\exp(\,i(\vec k_\Phi\cdot(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)-\omega r'_t/c))$ with $\tilde{P}_{\Phi}\tilde{Ξ}_{\mathrm{sp},0}/\hbar = 0$, nonzero only for null $\frac{k_m\,\tilde{P}_{\Phi}}{m\,c}$, giving the two spin states of that value; the other value has the conjugate plane waves, and the two are the two helicities, which a massless plane wave fixes to $-\tfrac12$ and $+\tfrac12$. The massive plane waves satisfy the mass-shell condition $\tilde{P}_{\Phi}\tilde{P}_{\Phi}^{\natural}=-m^{2}\,c^{2}$; the two frequency branches are the particle and the antiparticle, and with the two spin states they give the four solutions the field carries.
+The plane-wave solutions of the massless equation with the plus value are $\tilde{Ξ}_{\mathrm{sp}} = \tilde{Ξ}_{\mathrm{sp},0}\exp\!\big(i\,\mathrm{Sc}(\tilde{K}_{\Phi}\tilde{R}_{\Phi}^{\natural})\big) = \tilde{Ξ}_{\mathrm{sp},0}\,\exp\!\big(i(\vec k_\Phi\cdot(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)-k_{t}^{\prime} r'_t)\big)$ with $\tilde{K}_{\Phi}\tilde{Ξ}_{\mathrm{sp},0} = 0$, nonzero only for null $\tilde{K}_{\Phi}$, giving the two spin states of that value; the other value has the conjugate plane waves, and the two are the two helicities, which a massless plane wave fixes to $-\tfrac12$ and $+\tfrac12$. The massive plane waves satisfy the mass-shell condition $\tilde{P}_{\Phi}\tilde{P}_{\Phi}^{\natural}=-m^{2}\,c^{2}$; the two frequency branches are the particle and the antiparticle, and with the two spin states they give the four solutions the field carries.
 
 The spherical and cylindrical solutions are constructed from harmonic functions by the completion $\tilde{Ξ}_{\mathrm{sp}}\mapsto\tilde{\nabla}^{\natural}\tilde{Ξ}_{\mathrm{sp}}$, and they describe the angular momentum states of the fermion field and the waveguide modes.
 
@@ -846,7 +849,7 @@ The biquaternion framework provides a compact and unified language for the Maxwe
 | $\xi_{\mathrm{scl}}$ | Scalar (pseudoscalar-potential) coefficient of the shifted Dirac operator |
 | $\tfrac12(e_t\pm\alpha/\sqrt{\alpha^2})$ | The two complementary projections of the harmonic field, multiplying on the right; they split it into the two signs of the frequency, and in the source's reading the two helicities |
 | $\mathcal{C}_{\mathrm{cau},\omega}$ | The Cauchy-type operator of the amplitude equation; the Cauchy integral formula, the Plemelj–Sokhotski formulas and the boundary-value criterion $\tilde{Ξ}_{\mathrm{sp}} = \mathcal{C}_{\mathrm{cau},\omega}\tilde{Ξ}_{\mathrm{sp}}$ on $\Gamma$ hold for it |
-| $\frac{k_m\,\tilde{P}_{\Phi}}{m\,c}$ | Wave biquaternion |
+| $\tilde{K}_{\Phi}=\frac{k_m\,\tilde{P}_{\Phi}}{m\,c}=\frac{\tilde{P}_{\Phi}}{\hbar}=i k_{t}^{\prime}e_t+\vec k_\Phi$ | Wave biquaternion; $k_{t}^{\prime}=\omega/c$ |
 | $U_{\mathrm{vec},\mu}$ | Unit complex four-vector carrying the mass term, $k_m\tilde{Ξ}_{\mathrm{sp}}^{\dagger}iR_{\mathrm{axf},\vec e_x}\tilde{Ξ}_{\mathrm{sp}}=\tilde{Ξ}_{\mathrm{sp}}^{\dagger}iR_{\mathrm{axf},\vec e_x}(iK_t\,e_t\tilde{Ξ}_{\mathrm{sp}} \vec e_x+i\sum_k B_{\mathrm{boost},k}\,\vec e_k\tilde{Ξ}_{\mathrm{sp}} \vec e_y)$; $U_{\mathrm{vec},\mu}=\frac{p_{\mu}}{m}$ on shell, $\sum_\mu\varepsilon_\mu U_{\mathrm{vec},\mu} U_{\mathrm{vec},\mu}=1$ |
 | $iR_{\mathrm{axf},\vec e_x}$ | The timelike cell, the Dirac adjoint in the bilinear covariants |
 | $\lvert F\rvert^2 = \langle F\rangle_{*} = \sum_\mu\lvert F_\mu\rvert^2$ | Hermitian norm of the biquaternion field, the definite one; the probability density of a complex field |

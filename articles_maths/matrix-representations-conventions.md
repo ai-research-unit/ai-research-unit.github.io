@@ -752,7 +752,7 @@ The Pauli and gamma formulation is legacy: the reasons are explained in the arti
 
 **The gammas are the five-cell frame as matrices.** The body writes the cells; this section writes the arrays, in both frames.
 
-**The five gammas.** The five Dirac matrices are two-sided operators of the frame. The fifth is the volume cell of the frame, written $\mathsf{V}_{\mathrm{vol}}$ where the cell and not its array is meant, with the frame named in the sentence; the articles on the sides use that glyph and cite the gamma display for the arrays.
+**The five gammas.** The five Dirac matrices are two-sided operators of the frame. The fifth is the fifth cell of the frame, written $\mathsf{V}_{\mathrm{vol}}$ where the cell and not its array is meant, with the frame named in the sentence; the articles on the sides use that glyph and cite the gamma display for the arrays.
 $$
 \boxed{\;\gamma_0=iR_{\mathrm{pau},\vec e_x}=iL_{\mathrm{pau},e_t}R_{\mathrm{pau},\vec e_x},\qquad
 \gamma_1=iL_{\mathrm{pau},\vec e_x}R_{\mathrm{pau},\vec e_y},\qquad

@@ -311,7 +311,7 @@ fine lines respectively. At $p=2$ this is $4,8,8,16$; at $p=3$ it is $9,9,9,9$.
 
 **Proof.** There are $p^2$ ordered pairs $(k,l)$ with both indices in $I$, $p(6-p)$ with the first in $I$ and the second outside, and so on.
 
-**Remark (coarse and fine).** The rank-three split by the special idempotent $\Pi_+=P_1+P_3+P_5$ is the chiral split of *The Two Chiralities of $M_6(\mathbb{C})$*: its corners are the $3\times3$ chiral blocks and the mass block of dimension $9$. A general rank-three idempotent gives a conjugate split, with the same corner dimensions; the chiral split is the representative adapted to the root. **The corner dimensions see only the rank; the root sees which lines are grouped.**
+**Remark (coarse and fine).** The rank-three split by the special idempotent $\Pi_+=P_1+P_3+P_5$ is the chiral split of *The Two Chiralities of $M_6(\mathbb{C})$*: its corners are the $3\times3$ chiral blocks and the mass block of dimension $9$. A general rank-three idempotent gives a conjugate split, with the same corner dimensions; the split adapted to the root is the representative of that class; the word chiral belongs to the article that defines it, and it is not a chirality in the operator sense, which is a side. **The corner dimensions see only the rank; the root sees which lines are grouped.**
 
 ## Summary
 

@@ -168,11 +168,11 @@ $$
 $$
 The innermost factor is the action of the cell of $x_{\lambda_{\sigma(3)}}$ on the field, and each bracket around it is the action of the cell of the index outside it, so the display is the product of the three cells written on the element: no operator symbol, no letter for a cell and no matrix product appears in it. The normalisation is that of $\operatorname{Alt}$, the **normalised** antisymmetrisation: the average over the six permutations weighted by the sign of the permutation, which is what the sum above writes; without the $1/3!$ the duality below carries an extra factor six and the squared display an extra thirty-six.
 
-**The chirality cell is the volume cell of the frame**, the corpus's glyph $\mathsf{V}_{\mathrm{vol}}$ of *Special Element Conventions*, §*The Chirality Convention*. In the axis-free frame its action is the pure right multiplication $Q\mapsto-iQ\vec e_z$, and it is $i$ times the product of the four cells of the frame, each of the four carrying one $i$ and $i^4=+1$. It anticommutes with each of the four cells, and that sign is what makes the four alternate. The axial current is the same pairing with the volume cell in place of a fourth cell,
+**The chirality cell is the fifth cell of the frame**, the corpus's glyph $\mathsf{V}_{\mathrm{vol}}$ of *Special Element Conventions*, §*The Chirality Convention*. In the axis-free frame its action is the pure right multiplication $Q\mapsto-iQ\vec e_z$, and it is $i$ times the product of the four cells of the frame, each of the four carrying one $i$ and $i^4=+1$. It anticommutes with each of the four cells, and that sign is what makes the four alternate. The axial current is the same pairing with the fifth cell in place of a fourth cell,
 $$
 A_\mu=\operatorname{Sc}\bigl(\tilde{Ξ}_{\mathrm{sp}}^*\,i\,e_\mu\,\tilde{Ξ}_{\mathrm{sp}}\,\vec e_{\nu(\mu)}\,\vec e_z\,\vec e_x\bigr),
 $$
-where $i\,e_\mu\tilde{Ξ}_{\mathrm{sp}}\vec e_{\nu(\mu)}$ is the element the cell of $x_\mu$ makes of the field, the volume cell multiplies that on the right by $-i\vec e_z$, the adjoint supplies the $i$ and the $\vec e_x$ outside, and the two phases cancel: the single $i$ of the display is the cell's, and no second one survives.
+where $i\,e_\mu\tilde{Ξ}_{\mathrm{sp}}\vec e_{\nu(\mu)}$ is the element the cell of $x_\mu$ makes of the field, the fifth cell multiplies that on the right by $-i\vec e_z$, the adjoint supplies the $i$ and the $\vec e_x$ outside, and the two phases cancel: the single $i$ of the display is the cell's, and no second one survives.
 
 **The antisymmetric spin density is the dual of the axial current.**
 $$
@@ -180,7 +180,7 @@ $$
 $$
 with $A^\rho=\varepsilon_\rho A_\rho$ and $\epsilon_{0123}=+1$. The weight $\varepsilon_\rho$ is not a convention added by hand: it is the raised index, written low as the index convention requires, so the two forms of the display are the same statement.
 
-The identity is exact, and the constant is $-i$. The cells carry the reason themselves: the antisymmetrised product of three of them is the volume cell times the fourth, as an identity on any element $Q$,
+The identity is exact, and the constant is $-i$. The cells carry the reason themselves: the antisymmetrised product of three of them is the fifth cell times the fourth, as an identity on any element $Q$,
 $$
 \tfrac16\sum_{\sigma\in S_3}\operatorname{sgn}(\sigma)\,i\,e_{\lambda_{\sigma(1)}}\Bigl(i\,e_{\lambda_{\sigma(2)}}\bigl(i\,e_{\lambda_{\sigma(3)}}\,Q\,\vec e_{\nu(\lambda_{\sigma(3)})}\bigr)\vec e_{\nu(\lambda_{\sigma(2)})}\Bigr)\vec e_{\nu(\lambda_{\sigma(1)})}
 =-\,i\,\epsilon_{\lambda\mu\nu\rho}\,\varepsilon_\rho\,e_\rho\,Q\,\vec e_{\nu(\rho)}\,\vec e_z .
@@ -266,7 +266,7 @@ $$
 
 The sixteen words in the four gammas are a basis of $M_4(\mathbb{C})$, and each single one is invertible with determinant one: $L_a$ and $R_b$ with $|a|=|b|=1$ are invertible, and the scalar $i$ enters a $4\times4$ determinant as $i^4=+1$. A frame cell is therefore a full-rank operator, and the rank-one cone of "pure tensors" belongs to the sandwich family $M\Theta M^\dagger$, not here.
 
-These are the frame cells of the earlier sections under their Clifford names, $\gamma_\mu$ for the cell of $x_\mu$ and $\gamma_5$ for the volume cell $\mathsf{V}_{\mathrm{vol}}$. The central grading of the complexified algebra is a different object: it is the difference $e_+-e_-$ of the two central idempotents, written $i\tilde{Ζ}_{\mathrm{ad}}$ with $\tilde{Ζ}_{\mathrm{ad}}^2=-e_t$, so that its own square is $+e_t$. It is not a cell of the frame, and $\gamma_5$ is its representative on the Dirac module.
+These are the frame cells of the earlier sections under their Clifford names, $\gamma_\mu$ for the cell of $x_\mu$ and $\gamma_5$ for the fifth cell $\mathsf{V}_{\mathrm{vol}}$. The central grading of the complexified algebra is a different object: it is the difference $e_+-e_-$ of the two central idempotents, written $i\tilde{Ζ}_{\mathrm{ad}}$ with $\tilde{Ζ}_{\mathrm{ad}}^2=-e_t$, so that its own square is $+e_t$. It is not a cell of the frame, and $\gamma_5$ is its representative on the Dirac module.
 
 The dictionary is complex-linear. Over $\mathbb{R}$ the products of the gammas close on a sixteen-dimensional algebra and reproduce $\{\gamma_a,\gamma_b\}=2g_{ab}I_4$ with $\varepsilon=(1,-1,-1,-1)$, so they span $\mathrm{Cl}_{1,3}(\mathbb{R})\cong M_2(\mathbb{H})$; the same four cells without their factor $i$, written $\beta_a$ in this block, anticommute the other way round, $\{\beta_a,\beta_b\}=2\eta'_{ab}I_4$ with $\eta'=\mathrm{diag}(-1,+1,+1,+1)$, and span the opposite real form $\mathrm{Cl}_{3,1}(\mathbb{R})\cong M_4(\mathbb{R})$.
 
@@ -322,7 +322,7 @@ Two statements bound the article. The commutator of the quaternion units is a co
 | $\vec\Gamma_\mu$ | the connection as an element of the Lie subspace of $\mathbb{B}$ |
 | the frame cell of $x_\mu$ | the action $Q\mapsto i\,e_\mu Q\,\vec e_{\nu(\mu)}$ with $\nu(t)=x$ and $\nu(k)=y$: $Q\mapsto iQ\vec e_x$ at $\mu=t$ and $Q\mapsto i\vec e_kQ\vec e_y$ at $\mu=k$; no letter stands for it |
 | two distinct frame cells | their six products are the six Lorentz bivectors; the six generators are half of them |
-| $\mathsf{V}_{\mathrm{vol}}$ | the chirality cell of the frame, the action $Q\mapsto-iQ\vec e_z$; it is $i$ times the product of the four cells and anticommutes with each of them |
+| $\mathsf{V}_{\mathrm{vol}}$ | one cell that carries the split, the right multiplication $Q\mapsto-iQ\vec e_z$; it is $i$ times the product of the four cells, and its side, the right slot, is what makes the sign a chirality |
 | $\operatorname{Sc}(\tilde{Ξ}_{\mathrm{sp}}^*iX\vec e_x)$ | every density of the spin section: the pairing of the field with the element $X$, the timelike action $Q\mapsto iQ\vec e_x$ spent in it |
 | $X_{\lambda\mu\nu}$ | the element the spin density reads, the normalised antisymmetrisation of the three cell actions applied to the field |
 | $\Sigma_{\lambda\mu\nu}$ | spin density of the field, $\operatorname{Sc}(\tilde{Ξ}_{\mathrm{sp}}^*iX_{\lambda\mu\nu}\vec e_x)$; equal to $-i\,\epsilon_{\lambda\mu\nu\rho}A^\rho$ |

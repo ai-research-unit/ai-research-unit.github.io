@@ -219,7 +219,7 @@ The table is an index of labels and not a list of tokens: a label names an objec
 | $\mathrm{top}$ | the top exterior power |
 | $\mathrm{tot}$ | the total tensor |
 | $\mathrm{tpl}$ | the topological entropy and susceptibility, $h_{\mathrm{tpl}}$ |
-| $\mathrm{vol}$ | the volume cell of a frame, $\mathsf{V}_{\mathrm{vol}}$, the chirality operator of the frame |
+| $\mathrm{vol}$ | the fifth cell of a frame, $\mathsf{V}_{\mathrm{vol}}$, the chirality operator of the frame |
 | $\mathrm{wkb}$ | the WKB approximation |
 
 **The second table is the angle family.** Each row is a role that a second angle plays in one formula, and the glyph is the same in every row: the label is what tells one angle from another. The table reads alphabetically by the label, and no angle label names an object — the object is the element and the angle is one of its coordinates.

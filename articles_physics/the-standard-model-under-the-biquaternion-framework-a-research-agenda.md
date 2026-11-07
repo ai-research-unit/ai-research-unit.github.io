@@ -100,7 +100,7 @@ This is the precise ceiling of the present construction. The non-abelian machine
 
 The article *Chiral Fermions in the Biquaternion Framework* establishes the framework's chirality kinematics, and this agenda inherits it without change.
 
-**The field is one element.** The field of the framework is an element $\tilde{Ξ}_{\mathrm{sp}}$ of $\mathbb{B}$. Its chirality is the volume cell of the frame, $\mathsf{V}_{\mathrm{vol}}=-iR_{\mathrm{axf},\vec e_z}$, a pure right multiplier (*Special Element Conventions*, §*The Chirality Convention*). The cell is named here once, because the subscript of the element is read from it and from nothing else.
+**The field is one element.** The field of the framework is an element $\tilde{Ξ}_{\mathrm{sp}}$ of $\mathbb{B}$. Its chirality is the slot of an operator, and one cell supplies the sign: $\mathsf{V}_{\mathrm{vol}}=-iR_{\mathrm{axf},\vec e_z}$ is a pure right multiplier and therefore an example of the right slot (*Special Element Conventions*, §*The Chirality Convention*). The cell is named here once, because the subscript of the element is read from it, and the label it shows is the side.
 
 **Two values, and no third.** The cell gives the subscript its two values: $L$ for the minus value and $R$ for the plus value. The field is the sum of its two parts,
 
@@ -234,7 +234,7 @@ The table collects the agenda's items and sorts each into the three-way classifi
 | Compact algebra in the material sector: $[e_a,e_b]=2\varepsilon_{abc}e_c$, $\mathbb{B}_{\Phi}=\mathbb{R}(ie_t)\oplus\mathrm{SU}(2)=\mathrm{U}(2)$ | Established (source 5) | — |
 | Non-abelian machinery: adjoint connection law, commutator curvature, Bianchi identity, gauge-invariant Yang–Mills density | Established (source 5) | — |
 | Ceiling: compact subalgebra of $\mathbb{B}$ has dimension $\le 4$; every $\mathbb{B}$-module has complex dimension $2k$ | Established | — |
-| Chiral structure on the field: the volume cell of the frame, the two values of the subscript, the chirality-odd bilinear $B$, the chiral abelian charge $b$, selection rule $ϙ_L=ϙ_R$ | Established | — |
+| Chiral structure on the field: the fifth cell of the frame, the two values of the subscript, the chirality-odd bilinear $B$, the chiral abelian charge $b$, selection rule $ϙ_L=ϙ_R$ | Established | — |
 | Vector-like character of the centre, read on the two values of the field | Established | — |
 | Linear chiral mass with conserved vector $\mathrm{U}(1)$; real structure $\flat$ (antilinear) | Established; interpretation of $\flat$'s pairing (Majorana/Dirac) open | Decide the interpretation on the real structure |
 | Reality class of the non-abelian connection | **Known route** | Recompute the transformation for the mixed assignment ($\mathcal{A}_0$ anti-Hermitian, $\mathcal{A}_k$ Hermitian) and find a principle fixing the placement of $i$; or a no-go |
@@ -380,7 +380,7 @@ The article commits throughout to the agenda's central discipline: no section as
 | $\mathrm{GL}(2,\mathbb{C})=\mathrm{U}(2)\oplus i\,\mathrm{U}(2)$ | Cartan decomposition fixing the ceiling: maximal compact subalgebra $\mathrm{U}(2)$ |
 | $\tilde{Ξ}_{\mathrm{sp}}$, $\tilde{Ξ}_{\mathrm{sp},L}$, $\tilde{Ξ}_{\mathrm{sp},R}$ | The field as one element and its two values: $L$ is the minus value, $R$ the plus value, and only the zero element is both |
 | every $\mathbb{B}$-module | complex dimension $2k$; a three-dimensional internal space is not a module |
-| $-iR_{\mathrm{axf},\vec e_z}$ | The volume cell of the frame: a pure right multiplication, and the source of the two values of the subscript |
+| $-iR_{\mathrm{axf},\vec e_z}$ | The fifth cell of the frame: a pure right multiplication, and the source of the two values of the subscript |
 | $B=\mathrm{Sc}(\tilde{Ξ}_{\mathrm{sp}}^*i\,\tilde{Ξ}_{\mathrm{sp}}\,\vec e_x)$, $b=\tfrac{ϙ_L+ϙ_R}{2}e_t-\tfrac{i}{2}(ϙ_R-ϙ_L)\vec e_z$ | Chirality-odd mass bilinear; chiral charge as one right multiplication, $\tilde{Ξ}_{\mathrm{sp}}\mapsto\tilde{Ξ}_{\mathrm{sp}} b$; selection rule $ϙ_L=ϙ_R$ |
 | $\tilde{\nabla}\tilde{Ξ}_{\mathrm{sp},R}=k_m\tilde{Ξ}_{\mathrm{sp},L},\ \tilde{\nabla}^{\natural}\tilde{Ξ}_{\mathrm{sp},L}=k_m\tilde{Ξ}_{\mathrm{sp},R}$; $\tilde{Ξ}_{\mathrm{sp}}^{\flat}=-\tilde{Ξ}_{\mathrm{sp}}^*$ | Linear chiral mass pair; algebra real structure $\flat$ (Majorana/Dirac reading of its pairing open) |
 | $\mathrm{Tr}(\tilde Q_1\tilde Q_2)=2\,\mathrm{Sc}(\tilde Q_1\tilde Q_2)$ | Inherited plain trace reading |

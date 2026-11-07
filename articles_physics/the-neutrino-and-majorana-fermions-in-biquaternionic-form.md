@@ -23,13 +23,13 @@ The article is organized as follows. The next section fixes the field, the two v
 
 **The field is an element.** In this framework the state of a fermion is an element of $\mathbb{B}$, written $\tilde{Ξ}_{\mathrm{sp}}$, and a general element is written $Q$. An element has four complex coefficients and eight real components. Every statement below is a statement about elements, their products, and the multipliers of one declared frame.
 
-**The chirality is a value of one operator.** The chirality operator of the frame is
+**The chirality is a value of one operator.** Chirality is the side on which an operator multiplies; the cell that supplies a sign is
 
 $$
 \xi=-iR_{\mathrm{axf},\vec e_z},\qquad \xi Q=-i\,Q\,\vec e_z ,\qquad \xi^{2}=1 ,
 $$
 
-a pure right multiplier. It carries part of the coefficient space to minus itself and part to plus itself, and the two parts are the two values of the subscript: $\xi\tilde{Ξ}_{\mathrm{sp},L}=-\tilde{Ξ}_{\mathrm{sp},L}$ and $\xi\tilde{Ξ}_{\mathrm{sp},R}=+\tilde{Ξ}_{\mathrm{sp},R}$. Every element is one part of each value, $\tilde{Ξ}_{\mathrm{sp}}=\tilde{Ξ}_{\mathrm{sp},L}+\tilde{Ξ}_{\mathrm{sp},R}$, each part is of two complex dimensions, and only the zero element is both. The letters are the Dirac ones, $L$ for the minus value and $R$ for the plus one (*Matrix Representations Conventions*, §*The Subscript on an Element*).
+a pure right multiplier, so it is an example of the right slot and never its definition. It carries part of the coefficient space to minus itself and part to plus itself, and the two parts are the two values of the subscript: $\xi\tilde{Ξ}_{\mathrm{sp},L}=-\tilde{Ξ}_{\mathrm{sp},L}$ and $\xi\tilde{Ξ}_{\mathrm{sp},R}=+\tilde{Ξ}_{\mathrm{sp},R}$. Every element is one part of each value, $\tilde{Ξ}_{\mathrm{sp}}=\tilde{Ξ}_{\mathrm{sp},L}+\tilde{Ξ}_{\mathrm{sp},R}$, each part is of two complex dimensions, and only the zero element is both. The letters are the Dirac ones, $L$ for the minus value and $R$ for the plus one (*Matrix Representations Conventions*, §*The Subscript on an Element*).
 
 **The rule for products.** A product takes the value of its right factor, $(QR)\vec e_z=Q(R\vec e_z)$, and a left multiplication keeps the value. Both follow at once from the definition, and they are the rule the section on the mass runs on.
 
@@ -374,7 +374,7 @@ The left-handedness of the neutrino is empirical, and the mass values and mixing
 | $e_t = 1, \vec e_x, \vec e_y, \vec e_z$ | Quaternion basis, $\vec e_\mu^2=-e_t$, $\vec e_x \vec e_y=\vec e_z$ |
 | $i$ | Scalar imaginary, $i^2=-1$ |
 | $\tilde{Ξ}_{\mathrm{sp}}=\tilde{Ξ}_{\mathrm{sp},L}+\tilde{Ξ}_{\mathrm{sp},R}$ | The field, an element, and its two values |
-| $\xi=-iR_{\mathrm{axf},\vec e_z}$ | Chirality operator of the frame; $\xi\tilde{Ξ}_{\mathrm{sp},L}=-\tilde{Ξ}_{\mathrm{sp},L}$, $\xi\tilde{Ξ}_{\mathrm{sp},R}=+\tilde{Ξ}_{\mathrm{sp},R}$ |
+| $\xi=-iR_{\mathrm{axf},\vec e_z}$ | One cell that carries the split, a pure right multiplier; $\xi\tilde{Ξ}_{\mathrm{sp},L}=-\tilde{Ξ}_{\mathrm{sp},L}$, $\xi\tilde{Ξ}_{\mathrm{sp},R}=+\tilde{Ξ}_{\mathrm{sp},R}$ |
 | $\mathbb{B}_{\Phi}, \mathbb{B}_{\Psi}$ | Material (anti-Hermitian) and informational (Hermitian) sectors |
 | $\mathbb{B}_{H} = \{Q:\bar{Q}=Q\}$ | Real-quaternion subspace, fixed space of $\bar{\cdot}$ |
 | $\mathbb{B}_{C} = \mathrm{span}_{\mathbb{R}}\{e_t, ie_t\}$ | Complex scalar subspace; the centre |

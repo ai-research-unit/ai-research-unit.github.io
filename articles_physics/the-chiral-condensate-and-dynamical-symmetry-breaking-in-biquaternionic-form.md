@@ -12,7 +12,7 @@ $$
 
 Here $k_m=mc/\hbar$ is the mass wave number, the inverse of the mass length.
 
-The framework carries two first-order writings of one mass coupling, and this article keeps them apart from the first line. The **gradient equation** is that pair on the algebra: every derivative acts by left multiplication, the two members are conjugate, and no chirality term is one of its terms, because no right multiplication is one. The **two-sided equation** is $(\mathbb{D}-k_m)\tilde{Ξ}_{\mathrm{sp}}=0$, in which every derivative sits between a left multiplier and a right multiplier; the chirality is the frame's fifth cell $\xi:\ Q\mapsto-iQ\vec e_z$, and that cell multiplies on the **right**, which is what makes it a chirality at all. The condensate, its bilinears and the axial rotation are read from the two-sided equation; the gradient equation supplies the mass shell. The section *The Pair, the Two-Sided Equation and the Chirality* states both, and every later section says which one it uses.
+The framework carries two first-order writings of one mass coupling, and this article keeps them apart from the first line. The **gradient equation** is that pair on the algebra: every derivative acts by left multiplication, the two members are conjugate, and no chirality term is one of its terms, because no right multiplication is one. The **two-sided equation** is $(\mathbb{D}-k_m)\tilde{Ξ}_{\mathrm{sp}}=0$, in which every derivative sits between a left multiplier and a right multiplier; the cell that carries it is the frame's fifth cell $\xi:\ Q\mapsto-iQ\vec e_z$, and that cell multiplies on the **right**, which is where the chirality is: the side, not the cell, is the notion. The condensate, its bilinears and the axial rotation are read from the two-sided equation; the gradient equation supplies the mass shell. The section *The Pair, the Two-Sided Equation and the Chirality* states both, and every later section says which one it uses.
 
 This article asks what the framework supplies for the condensate. The answer is a short chain of algebraic facts and one large missing physical input. The categories are the corpus's: **established** (and recomputed here), **transcribed** from the standard literature, and **gap** (left visible).
 
@@ -64,9 +64,9 @@ $$
 
 that is $\{\xi,G_\mu\}=0$, and the left slot contributes nothing to the sign because $\xi$ has none. A reader who expects chirality to be *defined* by anticommuting with the frame cannot have it: the frame's time cell carries $L_{e_t}=\mathrm{id}$ in its left slot, and an operator that anticommuted with the identity would be zero. The sign in this algebra is not produced by an anticommutator; it is produced by the side.
 
-*It is not a functional on the algebra.* A sign attached to elements would have to be a multiplicative map into $\{\pm1\}$, and none separates the two sides, because the two families of multipliers overlap in the scalars and a scalar has no side. The sign is one operator, the volume cell of the frame, whose two eigenspaces are of equal size; the subscript below is what it does, and not what the algebra is.
+*It is not a functional on the algebra.* A sign attached to elements would have to be a multiplicative map into $\{\pm1\}$, and none separates the two sides, because the two families of multipliers overlap in the scalars and a scalar has no side. The sign is one operator, the fifth cell of the frame, whose two eigenspaces are of equal size; the subscript below is what it does, and not what the algebra is.
 
-**The chirality is the subscript.** It takes two values, $L$ and $R$: $\tilde{Ξ}_{\mathrm{sp},L}$ and $\tilde{Ξ}_{\mathrm{sp},R}$ for a state, $Q_L$ and $Q_R$ for a general element. The letters are the Dirac ones. The value $L$ is the minus one and the value $R$ the plus one, as the corpus fixes them (*Operator Chirality on the Biquaternion Algebra*, §*What Operator Chirality Is Not*); this article uses the convention and does not restate it. The value is read from the one operator, $\xi Q_L=-Q_L$ and $\xi Q_R=+Q_R$, and the two eigenspaces are of equal size, so every element is one part of each value and only the zero element is both. A product takes the letter of its right factor, $(\tilde X\tilde Y)\vec e_z=\tilde X(\tilde Y\vec e_z)$, and left multiplication keeps the letter. The value is a property of the element and of the declared frame, and no second object is needed to carry it.
+**The chirality is a side, and the subscript reads it off.** The subscript takes two values, $L$ and $R$: $\tilde{Ξ}_{\mathrm{sp},L}$ and $\tilde{Ξ}_{\mathrm{sp},R}$ for a state, $Q_L$ and $Q_R$ for a general element. The letters are the Dirac ones. The value $L$ is the minus one and the value $R$ the plus one, as the corpus fixes them (*Operator Chirality on the Biquaternion Algebra*, §*What Operator Chirality Is Not*); this article uses the convention and does not restate it. The value is read from the one operator, $\xi Q_L=-Q_L$ and $\xi Q_R=+Q_R$, and the two eigenspaces are of equal size, so every element is one part of each value and only the zero element is both. A product takes the letter of its right factor, $(\tilde X\tilde Y)\vec e_z=\tilde X(\tilde Y\vec e_z)$, and left multiplication keeps the letter. The value is a property of the element and of the declared frame, and no second object is needed to carry it.
 
 **The collapse of the imaginary unit.** Because $i^{2}=-1$, the product of the central imaginary with an action is a plain product by units, and the two collapses used below are
 
@@ -93,13 +93,13 @@ $$
 
 the sign is reversed, and on the $L$ part $\xi\tilde{Ξ}_{\mathrm{sp}}=-\tilde{Ξ}_{\mathrm{sp}}$, so oddness reads $\tilde{Ξ}_{\mathrm{sp}}^*iR_{\mathrm{axf},\vec e_x}\tilde{Ξ}_{\mathrm{sp}}=-\tilde{Ξ}_{\mathrm{sp}}^*iR_{\mathrm{axf},\vec e_x}\tilde{Ξ}_{\mathrm{sp}}$ and the pairing vanishes. That is why the bilinear pairs one part of each value and never a value with itself, and it is the corpus's statement that $\xi$ anticommutes with the frame's time cell.
 
-**The volume cell.** The composite of the four generator actions, applied in the order $z,y,x,t$ with the action of $z$ innermost, is a single right multiplication,
+**The fifth cell.** The composite of the four generator actions, applied in the order $z,y,x,t$ with the action of $z$ innermost, is a single right multiplication,
 
 $$
 Q\ \xrightarrow{\ z\ }\ i\,e_zQ\,\vec e_y\ \xrightarrow{\ y\ }\ \vec e_xQ\ \xrightarrow{\ x\ }\ -i\,Q\,\vec e_y\ \xrightarrow{\ t\ }\ -Q\,\vec e_z ,
 $$
 
-the four factors of $i$ multiplying to $i^{4}=+1$. The composite is $-R_{\vec e_z}$, and $i$ times it is the corpus's volume cell of the frame, $\xi=-iR_{\vec e_z}$, which is the fifth cell. That the composite is a pure right multiplication is not an accident of the order: the left slots multiply to $-\vec e_t$, a central scalar, and a central scalar has no side, so only the right multiplications are left standing. This is recorded once, here, because it is the one place where the four generators are used together.
+the four factors of $i$ multiplying to $i^{4}=+1$. The composite is $-R_{\vec e_z}$, and $i$ times it is the corpus's fifth cell of the frame, $\xi=-iR_{\vec e_z}$, which is the fifth cell. That the composite is a pure right multiplication is not an accident of the order: the left slots multiply to $-\vec e_t$, a central scalar, and a central scalar has no side, so only the right multiplications are left standing. This is recorded once, here, because it is the one place where the four generators are used together.
 
 **The frame, the coordinates and the units.** Every derivative in a two-sided display is with respect to $x_\mu=(r'_t,r_x,r_y,r_z)$ and the constants are carried; the $i r'_t$ normalization $Q_t=i r'_t$ is named only where the gradient is written. In these coordinates $\partial^2/\partial R_t^2=-\partial^2/\partial {r'_t}^2$, so the contraction that reproduces $\Box$ carries the tuple $(-1,+1,+1,+1)$ in the material coordinates, while the generators carry the same vector with the opposite overall sign, $\varepsilon_\mu$; the minus between them is taken once, in $\mathbb{D}^{2}$, and no display below carries a second sign vector. The plain form, read as the trace formula $\mathrm{Tr}(\tilde Q_1\tilde Q_2)=2\,\mathrm{Sc}(\tilde Q_1\tilde Q_2)$, is inherited unchanged. Throughout, $c=1/\sqrt{\epsilon\mu}$ is the speed of light in the medium and $c_0$ the vacuum value; the gap-equation section writes every mass through $k_m=m\,c/\hbar$.
 
@@ -461,7 +461,7 @@ i\,\gamma_\mu=-L_{\mathrm{axf},e_\mu}R_{\mathrm{axf},\vec e_{\nu(\mu)}} ,
 i\,\gamma_5=R_{\mathrm{axf},\vec e_z} ,
 $$
 
-so multiplying a generator or the chirality cell by $i$ trades it for a plain cell; four generators therefore carry $i^{4}=+1$ and the volume cell is $\gamma_0\gamma_1\gamma_2\gamma_3=\omega=-i\gamma_5$.
+so multiplying a generator or the chirality cell by $i$ trades it for a plain cell; four generators therefore carry $i^{4}=+1$ and the fifth cell is $\gamma_0\gamma_1\gamma_2\gamma_3=\omega=-i\gamma_5$.
 
 **The identities the article cites.** In the $\gamma$ reading, with $\epsilon_{0123}=+1$,
 $$
@@ -516,7 +516,7 @@ The framework supplies the carrier, the symmetry pattern and the sector placemen
 | $(\mathbb{D}-k_m)\tilde{Ξ}_{\mathrm{sp}}=0$, $\mathbb{D}\tilde{Ξ}_{\mathrm{sp}}=-\sum_\mu e_\mu(\partial_\mu\tilde{Ξ}_{\mathrm{sp}})\vec e_{\nu(\mu)}$ | Two-sided equation; $\mathbb{D}^2=\Box$ |
 | $G_\mu:\ Q\mapsto i e_\mu Q\vec e_{\nu(\mu)}$, $\nu(t)=x$, $\nu(k)=y$ | Generator actions; $\{G_\mu,G_\nu\}=2\varepsilon_\mu\delta_{\mu\nu}\,\mathrm{id}$ |
 | $\xi:\ Q\mapsto-iQ\vec e_z=-iR_{\vec e_z}$, the frame's fifth cell | Chirality operator: a **pure right multiplier**, so it commutes with every left multiplication and $\{\xi,G_\mu\}=0$; $\xi^2=1$, $\xi\,\mathbb{D}\,\xi^{-1}=-\mathbb{D}$ |
-| $i\xi:\ Q\mapsto Q\vec e_z$ | The collapse of the imaginary unit: $\xi$ is the volume cell itself, and $i\xi$ is a plain right multiplication |
+| $i\xi:\ Q\mapsto Q\vec e_z$ | The collapse of the imaginary unit: $\xi$ is the fifth cell itself, and $i\xi$ is a plain right multiplication |
 | $G_t=iR_{\vec e_x}$, $G_k=iL_{\vec e_k}R_{\vec e_y}$ | The slots of the generators: the time one has **no left slot**, the three spatial ones carry **both slots** |
 | $m$ | Central scalar: the one term of the equation with **both slots**, hence no side, and therefore the only term that pairs the two values |
 | $U_\alpha=\exp(i\alpha\xi)$ | The axial rotation, a pure right multiplication; $U_\alpha(\mathbb{D}-k_m)U_\alpha^{-1}=\exp(2i\alpha\xi)\mathbb{D}-k_m$ |
@@ -539,7 +539,7 @@ The framework supplies the carrier, the symmetry pattern and the sector placemen
 
 ## Further Reading
 
-- [Operator Chirality on the Biquaternion Algebra](../articles_maths/operator-chirality-on-the-biquaternion-algebra.html), for the side of an operator, the volume cell of the frame and the two values of the subscript.
+- [Operator Chirality on the Biquaternion Algebra](../articles_maths/operator-chirality-on-the-biquaternion-algebra.html), for the side of an operator, the fifth cell of the frame and the two values of the subscript.
 - [Why AXF Matrices instead of Pauli and Gamma Matrices](why-axf-matrices-instead-of-pauli-and-gamma-matrices.html), for the reasons the AXF matrices replace the Pauli and gamma matrices.
 - Y. Nambu and G. Jona-Lasinio, "Dynamical model of elementary particles based on an analogy with superconductivity. I," *Physical Review* **122** (1961) 345–358, and II, *Physical Review* **124** (1961) 246–254, for the four-fermion mechanism of dynamical mass generation.
 - J. Goldstone, "Field theories with superconductor solutions," *Nuovo Cimento* **19** (1961) 154–164, for the Goldstone theorem and the counting of broken generators.

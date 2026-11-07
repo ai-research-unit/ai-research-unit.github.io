@@ -165,7 +165,7 @@ Several distinct $\mathbb{Z}/2$'s coexist in the framework, and the parity of th
 | structure | what it grades | an algebra grading? |
 |---|---|---|
 | parity (this article) | $\mathrm{Cl}_{1,3}=\mathrm{Cl}^0\oplus\mathrm{Cl}^1$, bosonic/fermionic | yes, of the ambient algebra only |
-| chirality (left/right) | the label of the element, $\tilde Q_L$ or $\tilde Q_R$ | no; a label with two values |
+| chirality (left/right) | the side of the operator; the element carries the value $\tilde Q_L$ or $\tilde Q_R$ | no; a side is not a grading |
 | sector splitting $\mathbb{B}_{\Psi}\oplus\mathbb{B}_{\Phi}$ | the Hermitian dagger, informational/material | **no**; it is the eigen-decomposition of the dagger and grades the symmetrized product only |
 | frame grading $\beta$ | large/small components, Foldy–Wouthuysen | no; a frame-dependent split |
 | number grading $N$ | the Fock space by total particle number | a grading of the state space |

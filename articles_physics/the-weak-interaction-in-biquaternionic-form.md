@@ -177,7 +177,7 @@ $$
 \tilde{Ξ}_{\mathrm{sp},L}^{\dagger}iR_{\vec e_x}\tilde{Ξ}_{\mathrm{sp},L}=\tilde{Ξ}_{\mathrm{sp}}^{\dagger}P_L\,iR_{\vec e_x}P_L\tilde{Ξ}_{\mathrm{sp}}=\tilde{Ξ}_{\mathrm{sp}}^{\dagger}iR_{\vec e_x}P_RP_L\tilde{Ξ}_{\mathrm{sp}}=0 ,
 $$
 
-a mass term with nothing to pair. The same cell supplies the vertex its nilpotent multiplier. A field of definite chirality is therefore massless and its weak vertex is null, and both statements are read off the one idempotent.
+a mass term with nothing to pair. The same cell supplies the vertex its nilpotent multiplier. A field of definite chirality is therefore massless and its weak vertex is null, and both statements are read off one cell and its eigenvalue on the state the idempotent prepares.
 
 ### What nilpotency forbids on a line
 

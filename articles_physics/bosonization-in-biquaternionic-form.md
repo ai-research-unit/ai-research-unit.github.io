@@ -50,7 +50,7 @@ $$
 $$
 and they were checked by recomputation on generic elements. The conjugation therefore preserves each value of the label, and the two values are a real splitting of the algebra.
 
-**The four-dimensional comparison.** In the full four-slot frame the chirality is the action $Q\mapsto-iQ\vec e_z$, the volume cell with its phase (*Special Element Conventions*, §*The Chirality Convention*). It carries the central $i$, so the coefficient conjugation reverses it and therefore exchanges the two values: a real element there is one value together with the conjugate of the other, which is a Majorana field and not a Majorana–Weyl one (*The Neutrino and Majorana Fermions in Biquaternionic Form*). The whole difference between the two arenas is that single factor of $i$: in the arena the chirality is a product of units, and the conjugation fixes it. This is the fermionic side's true content, and the bosonic side must match it.
+**The four-dimensional comparison.** In the full four-slot frame the operator that carries the split is the right multiplication $Q\mapsto-iQ\vec e_z$ (*Special Element Conventions*, §*The Chirality Convention*); being a right multiplication, it carries the right slot, and that side is what the comparison turns on. It carries the central $i$, so the coefficient conjugation reverses it and therefore exchanges the two values: a real element there is one value together with the conjugate of the other, which is a Majorana field and not a Majorana–Weyl one (*The Neutrino and Majorana Fermions in Biquaternionic Form*). The whole difference between the two arenas is that single factor of $i$: in the arena the chirality is a product of units, and the conjugation fixes it. This is the fermionic side's true content, and the bosonic side must match it.
 
 **The boson.** The boson is a single real scalar field $\xi_{\mathrm{scl}}$, and it is central: it multiplies every element by the same number, and its exponentials $\exp(2i\sqrt\pi\,\xi_{\mathrm{scl}})$ are central. Its free dynamics is the massless equation $\Box\xi_{\mathrm{scl}}=0$ of *Operator and Calculus Conventions*, §*The Gradient*, and its stress tensor is a central scalar. The bosonic side of the dictionary is therefore the centre's dynamics, and this is the identification the next sections use.
 
@@ -297,7 +297,7 @@ $$
 (\gamma_0\gamma_1)^2=I_4 .
 $$
 
-The four-dimensional $\gamma_5$ is not this product; it is the volume cell times $i$, and its square is also $I_4$ because $i^2=-1$ turns the volume cell's $-L_{\mathrm{pau},e_t}R_{\mathrm{pau},e_t}$ into $+L_{\mathrm{pau},e_t}R_{\mathrm{pau},e_t}$.
+The four-dimensional $\gamma_5$ is not this product; it is the fifth cell times $i$, and its square is also $I_4$ because $i^2=-1$ turns the fifth cell's $-L_{\mathrm{pau},e_t}R_{\mathrm{pau},e_t}$ into $+L_{\mathrm{pau},e_t}R_{\mathrm{pau},e_t}$.
 
 A single product is a pure tensor; the products form the seven-dimensional cone $\operatorname{rank}c(M)\le1$, and a general element is a sum of at most four, with $\ell(M)=\operatorname{rank}c(M)$.
 

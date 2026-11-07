@@ -295,7 +295,7 @@ $$
 
 so a square spends $i^2=-1$ once, and it spends one quaternion square for $\gamma_0$ against two for $\gamma_k$: two minus signs give $(\gamma_0)^2=+I_4$, three give $(\gamma_k)^2=-I_4$.
 
-**The fifth generator and the central sign.** $\gamma_5$ is the older notation's name for the fifth generator, the one it calls the chirality cell, and the label $L$ of the body is its minus part. The abstract central sign of the complexified algebra, $\chi=i\tilde{Ζ}_{\mathrm{ad}}$ of *Special Element Conventions*, §*The Root Convention*, is a different object; its representative on the array is $\gamma_5$.
+**The fifth generator and the central sign.** $\gamma_5$ is the older notation's name for the fifth generator; the cell is one right multiplication, $-iR_{\vec e_z}$, a pure right multiplier, and the older notation calls it $\gamma_5$. The label $L$ of the body is its minus part. The abstract central sign of the complexified algebra, $\chi=i\tilde{Ζ}_{\mathrm{ad}}$ of *Special Element Conventions*, §*The Root Convention*, is a different object; its representative on the array is $\gamma_5$.
 
 **The identities.** In the frame declared above, with $\epsilon_{0123}=+1$,
 $$

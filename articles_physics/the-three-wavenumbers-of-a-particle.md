@@ -44,7 +44,7 @@ The two coordinates belong to the state and move when the particle moves. The no
 The three are not independent. The momentum is on shell, $\tilde P_{\Phi}\tilde P_{\Phi}^{\natural}=-m^{2}c^{2}$, and dividing that line by $\hbar^{2}$ turns it into the norm of $\tilde K_{\Phi}$, which read in coefficients is a relation among the three wave numbers:
 
 $$
-\tilde K_{\Phi}\tilde K_{\Phi}^{\natural}=-k_{t}^{\prime\,2}+\vec k_{\Phi}^{\,2}=-k_m^{2},
+\tilde K_{\Phi}\tilde K_{\Phi}^{\natural}=-k_{t}^{\prime\,2}+k_{\Phi}^{2}=-k_m^{2},
 \qquad\text{that is}\qquad
 k_{t}^{\prime\,2}=k_{\Phi}^{2}+k_m^{2}.
 $$

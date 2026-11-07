@@ -163,40 +163,41 @@ $$
 \tilde R_\Phi = i r'_t\,e_t + r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z\in\mathbb{B}_{\Phi} ,
 $$
 
-and the phase is the scalar part of the product of the wave biquaternion with the conjugate four-position, $\mathrm{Sc}\frac{k_m\,\tilde{P}_{\Phi}\,\tilde{R}_{\Phi}^{\natural}}{m\,c}$, the convention of the companion articles. Using $\vec k_\Phi\cdot(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z) = \sum_j k_jx_j$ and $i^2 = -1$,
+and the phase is the scalar part of the product of the wave biquaternion with the conjugate four-position, $\mathrm{Sc}(\tilde K_{\Phi}\tilde R_{\Phi}^{\natural})$, the same object that $\mathrm{Sc}\frac{k_m\,\tilde{P}_{\Phi}\,\tilde{R}_{\Phi}^{\natural}}{m\,c}$ names, since $\tilde K_{\Phi}=\frac{k_m}{m\,c}\tilde P_{\Phi}=\frac{\tilde P_{\Phi}}{\hbar}$. Using $\vec k_\Phi\cdot(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z) = \sum_j k_jx_j$ and $i^2 = -1$,
 
 $$
-\mathrm{Sc}\!\left(\tilde P_{\Phi}\tilde{R}_\Phi^{\natural}\right)/\hbar
-= \left(i\frac{\omega}{c}\right)(i r'_t) + \vec k_\Phi\cdot(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)
-= -\frac{\omega}{c} r'_t + \vec k_\Phi\cdot(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z),
+\mathrm{Sc}\!\left(\tilde K_{\Phi}\tilde{R}_\Phi^{\natural}\right)
+= \left(i k_{t}^{\prime}\right)(i r'_t) + \vec k_\Phi\cdot(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)
+= -k_{t}^{\prime} r'_t + \vec k_\Phi\cdot(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z),
+\qquad k_{t}^{\prime}=\frac{\omega}{c} ,
 $$
 
-which is real. A plane wave of positive frequency is $\tilde{Ξ} = \tilde{Ξ}_0\,\exp(\,i\,\mathrm{Sc}\frac{k_m\,\tilde{P}_{\Phi}\,\tilde{R}_{\Phi}^{\natural}}{m\,c})$ with $\omega>0$; the exponent $i\,\mathrm{Sc}\frac{k_m\,\tilde{P}_{\Phi}\,\tilde{R}_{\Phi}^{\natural}}{m\,c}$ is a purely imaginary central element, so the exponential is central and commutes with everything. With the exponential central, differentiation is elementary: $\partial/\partial r'_t\tilde{Ξ} = -i\frac{\omega}{c}\,\tilde{Ξ}$ and $\partial/\partial x_j\,\tilde{Ξ} = ik_j\,\tilde{Ξ}$, so
+which is real. A plane wave of positive frequency is $\tilde{Ξ} = \tilde{Ξ}_0\,\exp(\,i\,\mathrm{Sc}(\tilde K_{\Phi}\tilde{R}_{\Phi}^{\natural}))$ with $\omega>0$; the exponent is a purely imaginary central element, so the exponential is central and commutes with everything, and no $\hbar$ is left in it because the division by $\hbar$ is the whole of $\tilde K_{\Phi}$. With the exponential central, differentiation is elementary: $\partial/\partial r'_t\tilde{Ξ} = -ik_{t}^{\prime}\,\tilde{Ξ}$ and $\partial/\partial x_j\,\tilde{Ξ} = ik_j\,\tilde{Ξ}$, so
 
 $$
-\Box\tilde{Ξ} = \left(-\frac{1}{c^2}(-i\omega)^2 + (i\vec k_\Phi)^2\right)\tilde{Ξ}
-= \left(\frac{\omega^2}{c^2} - \vec k_\Phi^2\right)\tilde{Ξ}.
+\Box\tilde{Ξ} = \left(k_{t}^{\prime\,2} - k_{\Phi}^{2}\right)\tilde{Ξ}.
 $$
 
-The Klein–Gordon equation therefore requires $\omega^2/c^2 - \vec k_\Phi^2 = k_m^{2}$. Since the biquaternion norm of the four-wavevector is $\langle\tilde K_{\Phi}\rangle_{\natural}  =\frac{k_m^{2}\,\tilde{P}_{\Phi}\,\tilde{P}_{\Phi}^{\natural}}{m^{2}\,c^{2}}= -\omega^2/c^2 + \vec k_\Phi^2$, this is exactly the mass-shell condition
+Here $k_{\Phi} = |\vec k_\Phi|$ is the magnitude, written without the arrow so that its square carries no sign question: in the dispersion relations of this corpus $\vec k_\Phi^2$ denotes the Euclidean square $k_x^2+k_y^2+k_z^2$, while as a quaternion square the same symbol is $\vec k_\Phi^2=-k_\Phi^2$. The scalar $k_\Phi$ is the number, and the Laplacian returns $-k_\Phi^2$. The Klein–Gordon equation therefore requires $k_{t}^{\prime\,2} - k_{\Phi}^{2} = k_m^{2}$. Since the biquaternion norm of the four-wavevector is $\langle\tilde K_{\Phi}\rangle_{\natural}  =\frac{k_m^{2}\,\tilde{P}_{\Phi}\,\tilde{P}_{\Phi}^{\natural}}{m^{2}\,c^{2}}= -k_{t}^{\prime\,2} + k_{\Phi}^{2}$, this is exactly the mass-shell condition
 
 $$
 \langle\tilde K_{\Phi}\rangle_{\natural} = -k_m^{2}
 \qquad\Longleftrightarrow\qquad
--\frac{\omega^2}{c^2} + \vec k_\Phi^2 = -k_m^{2},
+-k_{t}^{\prime\,2} + k_{\Phi}^{2} = -k_m^{2},
 $$
 
 that is,
 
 $$
 \boxed{\;
-\omega^2 = c^2\vec k_\Phi^2 + c^2k_m^{2}\;}.
+\omega^2 = c^2k_{\Phi}^{2} + c^2k_m^{2}\;},
+\qquad k_{t}^{\prime}=\frac{\omega}{c} .
 $$
 
-This is the standard relativistic dispersion relation $E^2 = \vec p^2c^2 + m^2c^4$ under $E =\frac{m\,c\,\omega}{k_m}$, $\vec p =\frac{m\,c\,\vec k_\Phi}{k_m}$, and in biquaternion language it is exactly the mass-shell condition $\tilde P_{\Phi}\tilde P_{\Phi}^{\natural}= -m^{2}\,c^{2}$ — the biquaternion norm of the four-wavevector fixed to a negative constant, the same statement as $\tilde{P}_{\Phi}\tilde{P}_{\Phi}^{\natural} = -m^{2}\,c^{2}$ for the four-momentum. The two roots
+This is the standard relativistic dispersion relation $E^2 = p^2c^2 + m^2c^4$ under $E =\frac{m\,c\,\omega}{k_m}=\hbar c\,k_t^{\prime}$, $p =\frac{m\,c\,k_\Phi}{k_m}=\hbar k_\Phi$, and in biquaternion language it is exactly the mass-shell condition $\tilde P_{\Phi}\tilde P_{\Phi}^{\natural}= -m^{2}\,c^{2}$ — the biquaternion norm of the four-wavevector fixed to a negative constant, the same statement as $\tilde{P}_{\Phi}\tilde{P}_{\Phi}^{\natural} = -m^{2}\,c^{2}$ for the four-momentum. The two roots
 
 $$
-\omega = \pm\sqrt{c^2\vec k_\Phi^2 + c^2k_m^{2}}
+\omega = \pm c\sqrt{k_\Phi^2 + k_m^{2}}
 $$
 
 are the two frequency branches. They are the same dispersion relation with opposite signs, not two different equations, and no choice of $\vec k_\Phi$ or $m$ makes the negative root disappear. Here $k_{\Phi}=\frac{k_m\,p}{m\,c}$ is the momentum wave number.
@@ -330,7 +331,7 @@ $$
 
 with $\tilde{Ξ}$ a biquaternion-valued field. Because $\Box$ is central and scalar, the equation decomposes into four decoupled scalar equations, and the biquaternion writing is for the scalar field a relabelling.
 
-Being second order in time, the equation has two frequency branches and requires both $\tilde{Ξ}$ and $\tilde{Ξ}^{*}$. Its dispersion relation is $\omega^2 = c^2\vec k_\Phi^2 + c^2k_m^{2}$, which is the mass-shell condition $\tilde P_{\Phi}\tilde P_{\Phi}^{\natural}= -m^{2}\,c^{2}$, and the phase of a plane wave is the scalar part $\mathrm{Sc}(\tilde P_{\Phi}\tilde{R}_\Phi^{\natural})/\hbar = \vec k_\Phi\cdot(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)-\omega r'_t/c$. Both branches were checked on a case chosen independently of the derivation. The conserved current $\tilde{J}_{\Phi} = ic\rho e_t + \vec j$ lies in $\mathbb{B}_{\Phi}$ and satisfies $\mathrm{Sc}(\tilde{\nabla}^{\natural}\tilde{J}_{\Phi})=0$, but its scalar component $\rho$ has the sign of the frequency and is not positive definite; together with the absence of a one-particle interpretation, this is the two-fold defect the equation has always had, and the biquaternion notation neither removes nor disguises it.
+Being second order in time, the equation has two frequency branches and requires both $\tilde{Ξ}$ and $\tilde{Ξ}^{*}$. Its dispersion relation is $\omega^2 = c^2k_\Phi^{2} + c^2k_m^{2}$, that is $k_{t}^{\prime\,2}=k_\Phi^{2}+k_m^{2}$, which is the mass-shell condition $\langle\tilde K_{\Phi}\rangle_{\natural}=\tilde P_{\Phi}\tilde P_{\Phi}^{\natural}/\hbar^{2}= -m^{2}c^{2}/\hbar^{2}$ read on the wave number, and the phase of a plane wave is the scalar part $\mathrm{Sc}(\tilde K_{\Phi}\tilde{R}_\Phi^{\natural}) = \vec k_\Phi\cdot(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)-k_{t}^{\prime} r'_t$. Both branches were checked on a case chosen independently of the derivation. The conserved current $\tilde{J}_{\Phi} = ic\rho e_t + \vec j$ lies in $\mathbb{B}_{\Phi}$ and satisfies $\mathrm{Sc}(\tilde{\nabla}^{\natural}\tilde{J}_{\Phi})=0$, but its scalar component $\rho$ has the sign of the frequency and is not positive definite; together with the absence of a one-particle interpretation, this is the two-fold defect the equation has always had, and the biquaternion notation neither removes nor disguises it.
 
 The central structural question has a negative answer. The second-order structure does **not** fit the $\mathbb{B}_{\Phi}/\mathbb{B}_{\Psi}$ split naturally. Since $\Box$ is central, the split decouples the equation into two sectors hosting two copies of the same real solution space, exchanged by multiplication by $i$; the $\mathbb{B}_{\Phi}$ part of a solution is the $i$-image of an $\mathbb{B}_{\Psi}$ solution, so the pairing is the real/imaginary-part split of a complex field, not a conjugate pair. The conjugate pair is complex conjugation, which preserves both sectors, and the doubling the equation actually needs is the spinor-module doubling of the first-order square root $\tilde{\nabla}$, whose mass term is the linear coupling of the two chiralities. That doubling is representation-theoretic, not the real fixed-point decomposition. The non-relativistic limit recovers the parent article's free Schrödinger equation with the same central scalar imaginary $i$, so the two articles use one complex structure and no competing unit.
 
@@ -353,7 +354,7 @@ One exception to the obstruction is imported from the literature and kept separa
 | $\Box = \tilde{\nabla}\tilde{\nabla}^{\natural} = \partial^2/\partial R_t^2 + \Delta$ | d'Alembertian |
 | $\tilde{Ξ}$ | Biquaternion-valued Klein–Gordon field |
 | $\tilde R_\Phi = i r'_t\,e_t + r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z$ | Four-position biquaternion |
-| $\tilde K_{\Phi} = i\omega/c\,e_t + \vec k_\Phi$ | Four-wavevector biquaternion |
+| $\tilde K_{\Phi} = i\,k_{t}^{\prime}e_t + \vec k_\Phi = \tilde P_{\Phi}/\hbar$, $k_{t}^{\prime}=\omega/c$, $k_\Phi=\lvert\vec k_\Phi\rvert$ | Four-wavevector biquaternion and its two coordinates |
 | $\langle\tilde{Q}\rangle_{\natural} = \tilde{Q}\tilde{Q}^{\natural}$ | Biquaternion norm |
 | $\tilde P_{\Phi}\tilde P_{\Phi}^{\natural}= -m^{2}\,c^{2}$ | Mass-shell condition |
 | $\tilde{J}_{\Phi} = ic\rho\,e_t + \vec j$ | Conserved four-current |

@@ -28,7 +28,7 @@ The worldline parameter is $\tau$ and the proper time $T$. The material position
 
 The object the path integral must compute is the Feynman propagator of the pair. Its two components are the amplitudes for the two values of the subscript, and each component is an element of the algebra: no array enters, and the pair is what the algebra's own product acts on.
 
-**The two symbols.** A plane wave of the pair is $\tilde{Ξ}_{\mathrm{sp}}(x) = \tilde{Ξ}_{\mathrm{sp},\mathrm{amp}}\exp(-ip\cdot x/\hbar)$, with $p\cdot x = p_0x_0 - \vec p\cdot\vec r$ and $p_0 = E/c$ the contraction of the material frame. The momentum element is $\tilde{P}_{\Phi}$, and its norm is the mass-shell scalar,
+**The two symbols.** A plane wave of the pair is $\tilde{Ξ}_{\mathrm{sp}}(x) = \tilde{Ξ}_{\mathrm{sp},\mathrm{amp}}\exp(-ip\cdot x/\hbar)=\tilde{Ξ}_{\mathrm{sp},\mathrm{amp}}\exp\!\big(i\,\mathrm{Sc}(\tilde K_{\Phi}\tilde R_{\Phi}^{\natural})\big)$, with $p\cdot x = p_0x_0 - \vec p\cdot\vec r$, $p_0 = E/c$ and $\tilde K_{\Phi}=\tilde P_{\Phi}/\hbar$; the two exponents are one number, since $p\cdot x/\hbar=-\mathrm{Sc}(\tilde K_{\Phi}\tilde R_{\Phi}^{\natural})$. The momentum element is $\tilde{P}_{\Phi}$, and its norm is the mass-shell scalar,
 
 $$
 \langle\tilde{P}_{\Phi}\rangle_{\natural} = \tilde{P}_{\Phi}\tilde{P}_{\Phi}^{\natural} = -p^2,
@@ -39,12 +39,12 @@ $$
 The gradient and its conjugate act on the plane wave by left multiplication by the two symbols,
 
 $$
-\tilde{\nabla}\,e^{-i(p\cdot x)/\hbar} = i\tilde K_{\Phi}\,e^{-i(p\cdot x)/\hbar},
+\tilde{\nabla}\,e^{\,i\mathrm{Sc}(\tilde K_{\Phi}\tilde R_{\Phi}^{\natural})} = i\tilde K_{\Phi}\,e^{\,i\mathrm{Sc}(\tilde K_{\Phi}\tilde R_{\Phi}^{\natural})},
 \qquad
-\tilde{\nabla}^{\natural}\,e^{-i(p\cdot x)/\hbar} = i\tilde K_{\Phi}^{\natural}\,e^{-i(p\cdot x)/\hbar},
+\tilde{\nabla}^{\natural}\,e^{\,i\mathrm{Sc}(\tilde K_{\Phi}\tilde R_{\Phi}^{\natural})} = i\tilde K_{\Phi}^{\natural}\,e^{\,i\mathrm{Sc}(\tilde K_{\Phi}\tilde R_{\Phi}^{\natural})},
 $$
 
-a derived form: the time derivative of the phase is $-ip_0/\hbar$ and the spatial derivative $+ip_k/\hbar$, the two wave numbers $k_{t}^{\prime}$ and $k_k$, and on the material sector the time derivative of the gradient is read with $\partial/\partial R_t = -i\,\partial/\partial x_0$ (*Operator and Calculus Conventions*, §*The Gradient*). The product of the two symbols is the symbol of the d'Alembertian,
+a derived form: the time derivative of the phase is $-ik_{t}^{\prime}$ and the spatial derivative $+ik_k$, the two coordinates of $\tilde K_{\Phi}$ and nothing else, with $k_{t}^{\prime}=p_0/\hbar=E/(\hbar c)$ and $k_k=p_k/\hbar$; on the material sector the time derivative of the gradient is read with $\partial/\partial R_t = -i\,\partial/\partial x_0$ (*Operator and Calculus Conventions*, §*The Gradient*). The product of the two symbols is the symbol of the d'Alembertian,
 
 $$
 i\tilde K_{\Phi}\,i\tilde K_{\Phi}^{\natural} = -\langle\tilde K_{\Phi}\rangle_{\natural} = \frac{p^2}{\hbar^{2}} .
@@ -55,30 +55,32 @@ The sign bookkeeping is the whole of that line. The two factors of $i$ multiply 
 **The pair on a plane wave.** Substituting the symbols into the two lines gives
 
 $$
-i\tilde{P}_{\Phi}\,\tilde{Ξ}_{\mathrm{sp},\mathrm{amp},R} = k_m\tilde{Ξ}_{\mathrm{sp},\mathrm{amp},L},
+i\tilde K_{\Phi}\,\tilde{Ξ}_{\mathrm{sp},\mathrm{amp},R} = k_m\tilde{Ξ}_{\mathrm{sp},\mathrm{amp},L},
 \qquad
-i\tilde{P}_{\Phi}^{\natural}\,\tilde{Ξ}_{\mathrm{sp},\mathrm{amp},L} = k_m\tilde{Ξ}_{\mathrm{sp},\mathrm{amp},R} ,
+i\tilde K_{\Phi}^{\natural}\,\tilde{Ξ}_{\mathrm{sp},\mathrm{amp},L} = k_m\tilde{Ξ}_{\mathrm{sp},\mathrm{amp},R} ,
 $$
 
-and eliminating one part returns the mass shell, $p^2=m^{2}\,c^{2}$, since $\tilde{P}_{\Phi}^{\natural}\tilde{P}_{\Phi} = \langle\tilde{P}_{\Phi}\rangle_{\natural}$.
+and eliminating one part returns the mass shell, $\tilde K_{\Phi}\tilde K_{\Phi}^{\natural}=-k_m^{2}$, that is $p^2=m^{2}c^{2}$, since $\tilde K_{\Phi}^{\natural}\tilde K_{\Phi} = \langle\tilde K_{\Phi}\rangle_{\natural}$.
 
 **The propagator.** The Green kernel of the pair is the inverse of $\mathbb{D}-k_m$, and on a plane wave its two components are
 
 $$
-\mathcal S_L = \frac{i\,mc - \tilde{P}_{\Phi}}{p^2 - m^{2}c^{2}},
+\mathcal S_L = \frac{\tilde K_{\Phi} - i k_m}{k_m^{2} + \langle\tilde K_{\Phi}\rangle_{\natural}},
 \qquad
-\mathcal S_R = \frac{i\,mc - \tilde{P}_{\Phi}^{\natural}}{p^2 - m^{2}c^{2}} .
+\mathcal S_R = \frac{\tilde K_{\Phi}^{\natural} - i k_m}{k_m^{2} + \langle\tilde K_{\Phi}\rangle_{\natural}} .
 $$
 
-The numerator of the $L$ component is the momentum element and the numerator of the $R$ component its conjugate; that assignment is the one that satisfies both lines, since
+The numerator of the $L$ component is the wave number and the numerator of the $R$ component its conjugate; the denominator vanishes exactly on the mass shell, and that assignment is the one that satisfies both lines, since
 
 $$
-i\tilde{P}_{\Phi}\,\mathcal S_R - k_m\mathcal S_L = i,
+i\tilde K_{\Phi}\,\mathcal S_R - k_m\mathcal S_L = i,
 \qquad
-i\tilde{P}_{\Phi}^{\natural}\,\mathcal S_L - k_m\mathcal S_R = i .
+i\tilde K_{\Phi}^{\natural}\,\mathcal S_L - k_m\mathcal S_R = i .
 $$
 
-Two factors of $i$ do different work and neither is redundant. The $i$ of the numerator is the normalisation of the Green's function, fixed by the right-hand side. The $i$ inside each symbol fixes the sign of the squared operator: the symbols are $i\tilde{P}_{\Phi}$ and $i\tilde{P}_{\Phi}^{\natural}$, their product is $p^2$, and without the two factors of $i$ the product would be the norm $-p^2$ and the denominator would be the negative of the mass-shell scalar.
+Each line is verified in one step: $i\tilde K_{\Phi}(\tilde K_{\Phi}^{\natural}-ik_m) = i\langle\tilde K_{\Phi}\rangle_{\natural}+k_m\tilde K_{\Phi}$ and $k_m(\tilde K_{\Phi}-ik_m)=k_m\tilde K_{\Phi}-ik_m^{2}$, so the difference is $i(\langle\tilde K_{\Phi}\rangle_{\natural}+k_m^{2})$ over the same denominator, which is $i$. The form written is $\hbar$ times the momentum-space expression $(imc-\tilde P_{\Phi})/(p^{2}-m^{2}c^{2})$, since $\tilde K_{\Phi}=\tilde P_{\Phi}/\hbar$ and $p^{2}-m^{2}c^{2}=-\hbar^{2}(k_m^{2}+\langle\tilde K_{\Phi}\rangle_{\natural})$: the two differ by the constant $\hbar$ of the wave-number normalisation and by nothing else, and they have the same pole.
+
+Two factors of $i$ do different work and neither is redundant. The $i$ of the numerator is the normalisation of the Green's function, fixed by the right-hand side. The $i$ inside each symbol fixes the sign of the squared operator: the symbols are $i\tilde K_{\Phi}$ and $i\tilde K_{\Phi}^{\natural}$, their product is $-\langle\tilde K_{\Phi}\rangle_{\natural}=p^{2}/\hbar^{2}$, and without the two factors of $i$ the product would be the norm $\langle\tilde K_{\Phi}\rangle_{\natural}=-p^{2}/\hbar^{2}$ and the denominator would have the wrong sign.
 
 The propagator satisfies
 
@@ -92,7 +94,7 @@ $$
 \mathbb{D}^2 = \Box ,
 $$
 
-the composition of two left multiplications by the two gradients, whose product is central (*Operator and Calculus Conventions*, §*The Gradient*). In symbols that is the identity $i\tilde{P}_{\Phi}\,i\tilde{P}_{\Phi}^{\natural} = p^2$; the operator is $\Box=\sum_\mu\partial^2/\partial R_\mu^2$, and on the material reading, $Q_t=i r'_t$ and $Q_k=r_k$, it is $\Delta - \partial^2/\partial x_0^2$, with $\Delta$ the Laplacian in the three real spatial coordinates. The square is therefore the series' own scalar operator and not a second one, and that is what makes the first-order operator a square root.
+the composition of two left multiplications by the two gradients, whose product is central (*Operator and Calculus Conventions*, §*The Gradient*). In symbols that is the identity $i\tilde K_{\Phi}\,i\tilde K_{\Phi}^{\natural} = p^{2}/\hbar^{2}$; the operator is $\Box=\sum_\mu\partial^2/\partial R_\mu^2$, and on the material reading, $Q_t=i r'_t$ and $Q_k=r_k$, it is $\Delta - \partial^2/\partial x_0^2$, with $\Delta$ the Laplacian in the three real spatial coordinates. The square is therefore the series' own scalar operator and not a second one, and that is what makes the first-order operator a square root.
 
 This is standard relativistic quantum physics (see the Further Reading); the companion article *The Feynman Propagator in Biquaternionic Form* treats the same object in the biquaternion framework. Two structural facts are needed here.
 
@@ -423,7 +425,7 @@ $$
 $$
 The contraction sums follow from the squares. With one index raised, $\gamma^\mu=-\varepsilon_\mu\gamma_\mu$, so that $\sum_\mu\gamma^\mu\gamma_\mu=-4I_4$, $\sum_\mu\gamma^\mu\gamma_\alpha\gamma_\mu=2\gamma_\alpha$, $\sum_\mu\gamma^\mu\gamma_\alpha\gamma_\beta\gamma_\mu=-4\varepsilon_\alpha\delta_{\alpha\beta}I_4$ and $\sum_\mu\gamma^\mu\gamma_\gamma\gamma_\beta\gamma_\alpha\gamma_\mu=-2\gamma_\gamma\gamma_\beta\gamma_\alpha$.
 
-The volume cell is $\gamma_0\gamma_1\gamma_2\gamma_3=-i\gamma_5=-R_{\mathrm{pau},\vec e_z}=-L_{\mathrm{axf},e_t}R_{\mathrm{axf},\vec e_z}$, the same cell written in the two displays.
+The cell is $-R_{\mathrm{pau},\vec e_z}=-L_{\mathrm{axf},e_t}R_{\mathrm{axf},\vec e_z}$, the same operator written in the two displays, and the product $\gamma_0\gamma_1\gamma_2\gamma_3=-i\gamma_5$ is the display's way of returning it from the four arrays.
 
 **The four contraction sums** are the sums in which one gamma is contracted against a fixed string of $n$ gammas,
 

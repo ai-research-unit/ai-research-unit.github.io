@@ -53,7 +53,7 @@ $$
 \Gamma_k: X\mapsto i\vec e_kX\vec e_y\quad(k=1,2,3),
 $$
 
-with $(\vec e_1,\vec e_2,\vec e_3)=(\vec e_x,\vec e_y,\vec e_z)$, and the fifth, the **volume cell**, acts by
+with $(\vec e_1,\vec e_2,\vec e_3)=(\vec e_x,\vec e_y,\vec e_z)$, and the fifth, the cell that carries the split, acts by
 
 $$
 \mathsf{V}_{\mathrm{vol}}: X\mapsto -iX\vec e_z .
@@ -67,7 +67,7 @@ $$
 \Gamma_\mu\Gamma_\nu+\Gamma_\nu\Gamma_\mu=0\quad(\mu\neq\nu),
 $$
 
-the $1$ being the identity action and the $0$ the zero action. The anticommutation comes from the quaternion rule of two different spatial units. The time cell is a right multiplication alone, the three spatial cells carry a factor on each side, and the volume cell is a right multiplication alone that anticommutes with the four frame cells.
+the $1$ being the identity action and the $0$ the zero action. The anticommutation comes from the quaternion rule of two different spatial units. The time cell is a right multiplication alone, the three spatial cells carry a factor on each side, and the fifth is a right multiplication alone; that side is what makes it a chirality, and its anticommutation with the four frame cells is a separate property of the list.
 
 The **momentum cell** of a four-momentum $p=(p_0,p_1,p_2,p_3)$ is the sum of the four frame cells with the components as coefficients,
 
@@ -352,7 +352,7 @@ $$
 
 which is the algebra behind the cross section.
 
-The central grading $\xi_{\mathrm{ad}}:=i\tilde{Ζ}_{\mathrm{ad}}$ is a different object from the volume cell $\mathsf{V}_{\mathrm{vol}}$, and the two must not be read as one. Here $\tilde{Ζ}_{\mathrm{ad}}$ is a central root of $-e_t$, so $\tilde{Ζ}_{\mathrm{ad}}^2=-e_t$ and $\xi_{\mathrm{ad}}^2=i^2\tilde{Ζ}_{\mathrm{ad}}^2=(-1)(-e_t)=e_t$; equivalently, $\xi_{\mathrm{ad}}$ is the difference of the two central idempotents of the complexified algebra. Being central, it acts on the Dirac module as a sign, and its representative there is $\gamma_5$. The volume cell $\mathsf{V}_{\mathrm{vol}}$ acts on that same module exactly as $\gamma_5$ acts; what the two-sided reading adds is not a second operator but the frame in which the mass can act by right multiplication.
+The central grading $\xi_{\mathrm{ad}}:=i\tilde{Ζ}_{\mathrm{ad}}$ is a different object from the cell $\mathsf{V}_{\mathrm{vol}}$, and the two must not be read as one. Here $\tilde{Ζ}_{\mathrm{ad}}$ is a central root of $-e_t$, so $\tilde{Ζ}_{\mathrm{ad}}^2=-e_t$ and $\xi_{\mathrm{ad}}^2=i^2\tilde{Ζ}_{\mathrm{ad}}^2=(-1)(-e_t)=e_t$; equivalently, $\xi_{\mathrm{ad}}$ is the difference of the two central idempotents of the complexified algebra. Being central, it acts on the Dirac module as a sign, and its representative there is $\gamma_5$. The fifth cell $\mathsf{V}_{\mathrm{vol}}$ acts on that same module exactly as $\gamma_5$ acts; what the two-sided reading adds is not a second operator but the frame in which the mass can act by right multiplication.
 
 Read over $\mathbb{R}$ rather than $\mathbb{C}$, the cells generate a real Clifford algebra of sixteen dimensions, and its complexification is the whole of $M_4(\mathbb{C})$. The algebra $\mathbb{B}$ itself is the eight-dimensional real algebra $M_2(\mathbb{C})$, the complexified quaternions. That complexification is what lets the cells and the gammas be the same objects, and it is why no larger algebra is needed.
 

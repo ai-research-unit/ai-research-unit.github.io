@@ -209,7 +209,7 @@ The answer to the question is therefore: **pure boosts and pure spatial rotation
 
 ## The Two Parts and the Reflection
 
-The cell that separates the two parts of an element is the chirality cell of the frame, the product of the four generators,
+The cell that separates the two parts of an element is one such cell, a right multiplier and the product of the four generators,
 $$
 -iR_{\mathrm{axf},\vec e_z} = i\,\omega , \qquad
 \omega = iR_{\mathrm{axf},\vec e_x}\,iL_{\mathrm{axf},\vec e_x}R_{\mathrm{axf},\vec e_y}\,iL_{\mathrm{axf},\vec e_y}R_{\mathrm{axf},\vec e_y}\,iL_{\mathrm{axf},\vec e_z}R_{\mathrm{axf},\vec e_y} = -L_{\mathrm{axf},e_t}R_{\mathrm{axf},\vec e_z} ,

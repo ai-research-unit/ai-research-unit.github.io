@@ -95,12 +95,14 @@ $$
 so the operator in the exponent is exactly the Klein–Gordon operator whose Green's functions the companion article constructs. The mass shell is where the momentum-space symbol vanishes,
 
 $$
-\frac{\omega^2}{c^2}-\vec k_\Phi^2-k_m^{2}=0
+k_{t}^{\prime\,2}-k_\Phi^{2}-k_m^{2}=0
+\qquad\Longleftrightarrow\qquad
+\langle\tilde K_{\Phi}\rangle_{\natural}=\tilde K_{\Phi}\tilde K_{\Phi}^{\natural}=-k_m^{2}
 \qquad\Longleftrightarrow\qquad
 \langle\tilde P_{\Phi}\rangle_{\natural}=\tilde P_{\Phi}\tilde P_{\Phi}^{\natural}= -m^{2}\,c^{2},
 $$
 
-a level set of the biquaternion norm on the material four-wavevector $\tilde P_{\Phi}=\frac{m\,c\,(i\omega/c\,e_t+\vec k_\Phi)}{k_m}$. The quadratic form of the path integral is thus the biquaternion norm of $\mathbb{B}_{\Phi}$, shifted by the mass: the exponent's saddle is the biquaternion norm's level set, and the Gaussian's width is the operator whose symbol is that biquaternion norm minus the mass. This is the sense in which the framework's contribution to the scalar path integral is geometry rather than a new mechanism.
+a level set of the biquaternion norm on the material four-wavevector, read indifferently as the wave number $\tilde K_{\Phi}=\frac{\tilde P_{\Phi}}{\hbar}=i k_{t}^{\prime}e_t+\vec k_\Phi$ or as the momentum $\tilde P_{\Phi}=\hbar\,\tilde K_{\Phi}$. The two differ by the division alone, so they have the same level sets and different dimensions: $k_{t}^{\prime}=\omega/c$ and $k_\Phi=|\vec k_\Phi|$ are inverse lengths, and the subtraction above is a subtraction of like quantities, which the momentum form is not. The quadratic form of the path integral is thus the biquaternion norm of $\mathbb{B}_{\Phi}$, shifted by the mass: the exponent's saddle is the biquaternion norm's level set, and the Gaussian's width is the operator whose symbol is that biquaternion norm minus the mass. This is the sense in which the framework's contribution to the scalar path integral is geometry rather than a new mechanism.
 
 ## The Generating Functional and the Free Gaussian
 
@@ -208,10 +210,11 @@ a central scalar phase times a central scalar determinant. The effective action 
 The classical equation's momentum-space form is the vanishing of the symbol of the quadratic form,
 
 $$
-\left(\frac{\omega^2}{c^2}-\vec k_\Phi^2-k_m^{2}\right)\xi_{\mathrm{cl}}(\omega,\vec k_\Phi)=-J(\omega,\vec k_\Phi),
+\left(k_{t}^{\prime\,2}-k_\Phi^{2}-k_m^{2}\right)\xi_{\mathrm{cl}}(\omega,\vec k_\Phi)=-J(\omega,\vec k_\Phi),
+\qquad k_{t}^{\prime}=\frac{\omega}{c},
 $$
 
-so that the propagator is the inverse of the biquaternion norm shifted by the mass. In the framework's terms, the saddle condition is that the four-wavevector of a free mode lies on the level set $\langle\tilde P_{\Phi}\rangle_{\natural}=-k_m^{2}$ of the biquaternion norm of $\mathbb{B}_{\Phi}$, and the source moves the field off the shell by an amount measured by the biquaternion norm through the kernel. This is the third formulation's version of the same biquaternion-norm geometry that the equation and the propagator exhibit.
+so that the propagator is the inverse of the biquaternion norm shifted by the mass. In the framework's terms, the saddle condition is that the wave biquaternion of a free mode, $\tilde K_{\Phi}=\tilde P_{\Phi}/\hbar$, lies on the level set $\langle\tilde K_{\Phi}\rangle_{\natural}=-k_m^{2}$ of the biquaternion norm of $\mathbb{B}_{\Phi}$, and the source moves the field off the shell by an amount measured by the biquaternion norm through the kernel. This is the third formulation's version of the same biquaternion-norm geometry that the equation and the propagator exhibit.
 
 ## The Wick Rotation and the Euclidean Functional
 
@@ -312,10 +315,10 @@ The semiclassical expansion about a source has the classical Klein–Gordon equa
 | $\tilde{Q}_E=c\tau\,e_t+r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z$ | Euclidean coordinate, $\in\mathbb{B}_{H}$ |
 | $\tilde{Ξ}=\xi e_t$ | Scalar (spin-$0$) field, valued in the centre |
 | $\tilde P_{\Phi}=\frac{m\,c\,(i\omega/c\,e_t+\vec k_\Phi)}{k_m}$ | Material four-wavevector, $\in\mathbb{B}_{\Phi}$ |
-| $\langle\tilde{Q}\rangle_{\natural}=\tilde{Q}\tilde{Q}^{\natural}$ | Biquaternion norm; $\langle\tilde P_{\Phi}\rangle_{\natural}=-k_m^{2}$ is the mass shell |
+| $\langle\tilde{Q}\rangle_{\natural}=\tilde{Q}\tilde{Q}^{\natural}$ | Biquaternion norm; $\langle\tilde K_{\Phi}\rangle_{\natural}=-k_m^{2}$, equivalently $\langle\tilde P_{\Phi}\rangle_{\natural}=-m^{2}c^{2}$, is the mass shell |
 | $\Box=\tilde{\nabla}\tilde{\nabla}^{\natural}=\partial^2/\partial R_t^2+\Delta$ | d'Alembertian, series convention |
 | $1/k_m$ | The mass length, $\hbar/(mc)$; its reciprocal $k_m=mc/\hbar$ is the mass parameter |
-| $\Omega_{\vec k_\Phi}=\sqrt{\vec k_\Phi^2+k_m^{2}}$ | On-shell frequency, an inverse length |
+| $\Omega_{\vec k_\Phi}=\sqrt{k_\Phi^{2}+k_m^{2}}=k_{t}^{\prime}$ | On-shell frequency, an inverse length: the temporal wave number |
 | $S[\tilde{Ξ}]$ | Klein–Gordon action, central scalar |
 | $S_E[\tilde{Ξ}]$ | Euclidean action, $\ge0$ for $k_m^{2}\ge0$ |
 | $Z[J]$ | Generating functional; $\tilde{J}_{\Phi}=Je_t$ a central source |

@@ -26,7 +26,17 @@ $$
 \tilde{Ξ}_{\mathrm{sp}}(r'_t) = \tilde Q(r'_t)\,\tilde{Ξ}_{\mathrm{sp}}(0),
 $$
 
-and because $H$ is central, $\tilde Q(r'_t)$ is a central $*$-unitary element of $\mathbb{B}$: it commutes with every biquaternion and satisfies $\tilde Q\tilde Q^{*}=e_t$. The evolution operator is a semigroup in time,
+and because $H$ is central, $\tilde Q(r'_t)$ is a central $*$-unitary element of $\mathbb{B}$: it commutes with every biquaternion and satisfies $\tilde Q\tilde Q^{*}=e_t$.
+
+**The exponent is one wave number times one coordinate.** Since $\frac{k_m}{m\,c^{2}}=\frac{1}{\hbar\,c}$, and since $k_{t}^{\prime}=\frac{H}{\hbar\,c}$ is the temporal coefficient of the wave biquaternion $\tilde K_{\Phi}=\tilde P_{\Phi}/\hbar$, the evolution operator is
+
+$$
+\tilde Q(r'_t)=\exp(-i\,k_{t}^{\prime}\,r'_t)\,e_t,
+$$
+
+one coefficient of $\tilde K_{\Phi}$ multiplying one coordinate of $\tilde R_{\Phi}$: no $\hbar$ is left, because the division by $\hbar$ is what $\tilde K_{\Phi}$ is. The path phase below is the same statement summed along a trajectory, $\exp(iS/\hbar)=\exp\!\big(i\int\mathrm{Sc}(\tilde K_{\Phi}\,d\tilde R_{\Phi}^{\natural})\big)$, the identity of the companion article *The Path Integral in Biquaternionic Form*.
+
+The evolution operator is a semigroup in time,
 
 $$
 \tilde Q(r'_{t,1}+r'_{t,2}) = \tilde Q(r'_{t,2})\,\tilde Q(r'_{t,1}),

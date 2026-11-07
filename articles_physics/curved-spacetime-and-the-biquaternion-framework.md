@@ -660,7 +660,7 @@ $$
 \gamma_0=iL_{\mathrm{axf},e_t}R_{\mathrm{axf},\vec e_x},\quad \gamma_1=iL_{\mathrm{axf},\vec e_x}R_{\mathrm{axf},\vec e_y},\quad \gamma_2=iL_{\mathrm{axf},\vec e_y}R_{\mathrm{axf},\vec e_y},\quad \gamma_3=iL_{\mathrm{axf},\vec e_z}R_{\mathrm{axf},\vec e_y},\quad \gamma_5=-iL_{\mathrm{axf},e_t}R_{\mathrm{axf},\vec e_z} .
 $$
 
-The four of them are, as cells, the frame cells the Dirac operator of this article is built from, and the fifth, $\gamma_5$, is the chirality cell $\mathsf{V}_{\mathrm{vol}}$ of the frame. The anticommutation $\{\gamma_a,\gamma_b\}=2\varepsilon_a\delta_{ab}I_4$ is the weight carried into the Lichnerowicz square of §*Flat Limit and the Square*, and the four compose to the fifth, $\gamma_5=i\gamma_0\gamma_1\gamma_2\gamma_3$. The traces, the contraction sums and the algebra of the five are those of the conventions article, §*The Legacy Pauli Gamma Formulation*, and are not restated here. Nothing in the body of this article prints an array: the operators it uses are written there as cells or as elements.
+The four of them are, as cells, the frame cells the Dirac operator of this article is built from, and the fifth is $\mathsf{V}_{\mathrm{vol}}=-iR_{\vec e_z}$, a pure right multiplier that the display writes $\gamma_5$. The anticommutation $\{\gamma_a,\gamma_b\}=2\varepsilon_a\delta_{ab}I_4$ is the weight carried into the Lichnerowicz square of §*Flat Limit and the Square*, and the four compose to the fifth, $\gamma_5=i\gamma_0\gamma_1\gamma_2\gamma_3$. The traces, the contraction sums and the algebra of the five are those of the conventions article, §*The Legacy Pauli Gamma Formulation*, and are not restated here. Nothing in the body of this article prints an array: the operators it uses are written there as cells or as elements.
 
 ## Summary
 
@@ -707,7 +707,7 @@ What is missing is not a technical detail but the theory. Nothing determines the
 | $\vec\Gamma_\mu$ | Connection 1-form, valued in the Lie subspace |
 | $D_\mu\tilde{Q} = \partial/\partial x_\mu\,\tilde{Q} + \vec\Gamma_\mu\tilde{Q} + \tilde{Q}\vec\Gamma_\mu^{*}$ | Covariant derivative on $\mathbb{B}_{\Phi}$ (two-sided) |
 | $\tilde F_\mu = g_{\mu\nu}\tilde E_{\Phi,\nu}$, $\langle \tilde F_\mu, \tilde E_{\Phi,\nu}\rangle_{\natural} = \delta_{\mu\nu}$ | Material dual frame (inverse tetrad) |
-| $iL_{\mathrm{axf},e_a}R_{\mathrm{axf},\vec e_{\nu(a)}}$ | The four frame cells of the vector legs, with $\nu(t)=x$ and $\nu(k)=y$; the fifth cell of the frame is the chirality cell $\mathsf{V}_{\mathrm{vol}}$ |
+| $iL_{\mathrm{axf},e_a}R_{\mathrm{axf},\vec e_{\nu(a)}}$ | The four frame cells of the vector legs, with $\nu(t)=x$ and $\nu(k)=y$; the fifth cell of the frame is $\mathsf{V}_{\mathrm{vol}}=-iR_{\vec e_z}$, a pure right multiplier |
 | $S_{ab}=\tfrac14[iL_{e_a}R_{\vec e_{\nu(a)}},iL_{e_b}R_{\vec e_{\nu(b)}}]$ | Spin cell, a quarter of the commutator of two frame cells; a derived form |
 | $\varepsilon_a$, $\varepsilon=(1,-1,-1,-1)$ | The plain weight of a contraction, the cells' multiplication weight; a property of the multiplication, not of a frame; not the Levi-Civita $\varepsilon_{\mu\nu\rho\sigma}$ and not the world metric $g_{\mu\nu}$ |
 | $e_{\mathrm{inf},a}=(e_t,i\vec e_x,i\vec e_y,i\vec e_z)$ | Informational basis; the cell of $e_{\mathrm{inf},a}$ is even, and multiplication by the odd cell $iR_{\mathrm{axf},\vec e_x}$ carries it to the vector generators |

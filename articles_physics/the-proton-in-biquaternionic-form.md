@@ -26,7 +26,7 @@ $$
 \tilde{Ξ}_{\mathrm{sp}}=\tilde{Ξ}_{\mathrm{sp},L}+\tilde{Ξ}_{\mathrm{sp},R}\in\mathbb{B},
 $$
 
-whose two parts carry the two values of the chirality, $\tilde{Ξ}_{\mathrm{sp},L}$ the value L and $\tilde{Ξ}_{\mathrm{sp},R}$ the value R, at the declared axis $\vec u$ (*Special Element Conventions*, §*The Chirality Convention*); every element of the algebra is such a field, and only the zero element has both parts zero. This article declares the axis $\vec u=\vec e_z$, the unit at which the chirality cell is the volume cell of the material frame $\mathbb{B}_{\Phi}$. The free propagation is the biquaternion Dirac equation
+whose two parts are the two eigenvalues of one cell, $\tilde{Ξ}_{\mathrm{sp},L}$ the value L and $\tilde{Ξ}_{\mathrm{sp},R}$ the value R (*Special Element Conventions*, §*The Chirality Convention*). The cell is a choice and the values are not: another traceless $u$ with $u^2=-e_t$ gives another cell with the same two values; every element of the algebra is such a field, and only the zero element has both parts zero. This article declares the axis $\vec u=\vec e_z$, the unit at which the chirality cell is the fifth cell of the material frame $\mathbb{B}_{\Phi}$. The free propagation is the biquaternion Dirac equation
 
 $$
 \tilde{\nabla}\tilde{Ξ}_{\mathrm{sp},R}=k_{m_p}\,\tilde{Ξ}_{\mathrm{sp},L},

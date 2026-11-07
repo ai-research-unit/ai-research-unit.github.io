@@ -390,6 +390,8 @@ $$
 \Gamma=H^2 .
 $$
 
+The name belongs to this matrix model. The biquaternion chirality is a side of an operator, and the involution here is the square of a chosen root; the two agree only where one element is used twice, and that agreement is a coincidence recorded in *Operator Chirality on the Biquaternion Algebra*, §*What Operator Chirality Is Not*. The conditional is the same statement in one line: the Peirce projector of $\tfrac12(e_t+iu)$ equals the spectral projector of $-iR_u$ onto $-1$ when, and only when, both are built from that one element.
+
 **Proposition.** $\Gamma$ is an involution, $\Gamma^2=I$, with eigenvalues $+1$ on $V_1\oplus V_3$ and $-1$ on $V_2\oplus V_4$. It has trace $0$, its $+1$ eigenspace and its $-1$ eigenspace both have dimension $2$, and
 
 $$

@@ -431,7 +431,7 @@ $$
 \gamma_k^{2} = -L_{\mathrm{axf},\vec e_k^{2}}R_{\mathrm{axf},\vec e_y^{2}} = -L_{\mathrm{axf},-e_t}R_{\mathrm{axf},-e_t} = -I_4.
 $$
 
-$\gamma_5$ is the reference-frame cell of the chirality; the central grading is a different object. It is $\chi=i\tilde{Ζ}_{\mathrm{ad}}$, with $\tilde{Ζ}_{\mathrm{ad}}$ the central root of $-e_t$, so that $\chi^2=e_t$ and $e_\pm=\tfrac12(e_t\pm\xi)$ are the two central idempotents; on the Dirac module it is represented by $\gamma_5$.
+$\gamma_5$ is one cell that shows the chirality, a pure right multiplier; the central grading is a different object. It is $\chi=i\tilde{Ζ}_{\mathrm{ad}}$, with $\tilde{Ζ}_{\mathrm{ad}}$ the central root of $-e_t$, so that $\chi^2=e_t$ and $e_\pm=\tfrac12(e_t\pm\xi)$ are the two central idempotents; on the Dirac module it is represented by $\gamma_5$.
 
 **The two conjugation cells in the frame.** The cells of the previous sections are two of these products, and reading them off settles the signs:
 
