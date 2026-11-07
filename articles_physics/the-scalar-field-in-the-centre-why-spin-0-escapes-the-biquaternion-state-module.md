@@ -203,43 +203,28 @@ $$
 
 with the biquaternion writing carrying no additional content. This is the honest verdict of the companion article, and the algebra of the present article says why it must be so: there is no axis in the field for any non-central algebraic structure to act on. Here $k_m=mc/\hbar$ is the mass wave number, the inverse of the mass length.
 
-The plane-wave solutions exhibit the same point. The four-position is $\tilde R_\Phi=ir'_te_t+\vec r$, and the wave number is one element, the four-momentum divided by $\hbar$,
+The plane-wave solutions exhibit the same point. With the four-position $\tilde R_\Phi$ and the four-wavevector $\tilde P_{\Phi}\,k_{\mathrm{mo}}$ in the material sector, the phase is the real scalar $\mathrm{Sc}(\tilde P_{\Phi}\tilde{R}_\Phi^{\natural})/\hbar=\vec k\cdot\vec r-\omega r'_t/c$, and the positive-frequency solution is
 
 $$
-\tilde K_{\Phi}=\frac{\tilde P_{\Phi}}{\hbar}=\frac{1}{\hbar}\left(i\,\frac{E}{c}\,e_t+\vec p\right)=i\,k_{t}^{\prime}e_t+\vec k_{\Phi},
-\qquad
-k_{t}^{\prime}=\frac{E}{\hbar\,c}=\frac{\omega}{c},
-\qquad
-\vec k_{\Phi}=\frac{\vec p}{\hbar},
+\tilde{Ξ}=\xi_{\mathrm{scl},0}\,\exp\!\left(i\,\mathrm{Sc}\frac{k_m\,\tilde{P}_{\Phi}\,\tilde{R}_{\Phi}^{\natural}}{m\,c}\right)e_t
+=\xi_{\mathrm{scl},0}\,\exp\!\left(i(\vec k\cdot\vec r-\omega r'_t/c)\right)e_t .
 $$
 
-so the phase is one real scalar with no factor placed by hand, and the positive-frequency solution is
+The exponential is central. The mass-shell condition is the biquaternion norm of the four-wavevector,
 
 $$
-\tilde{Ξ}=\xi_{\mathrm{scl},0}\,\exp\!\left(i\,\mathrm{Sc}\left(\tilde K_{\Phi}\tilde R_{\Phi}^{\natural}\right)\right)e_t
-=\xi_{\mathrm{scl},0}\,\exp\!\left(i\left(\vec k_{\Phi}\cdot\vec r-k_{t}^{\prime}r'_t\right)\right)e_t .
-$$
-
-The natural sign on the position is what gives the spatial term its plus: $\tilde R_\Phi^{\natural}=ir'_te_t-\vec r$ negates the vector part, and the two minus signs of $i\cdot i$ and of that negation leave $-k_{t}^{\prime}r'_t+\vec k_{\Phi}\cdot\vec r$. The exponential is central. The mass-shell condition is the biquaternion norm of that same element,
-
-$$
-\langle\tilde K_{\Phi}\rangle_{\natural}=-k_{t}^{\prime\,2}+k_{\Phi}^{2}
-=-\frac{\omega^{2}}{c^{2}}+k_{\Phi}^{2},
+\langle\tilde P_{\Phi}\,k_{\mathrm{mo}}\rangle_{\natural}=-\frac{\omega^2}{c^2}+k_x^2+k_y^2+k_z^2 ,
 $$
 
 and setting it to the negative constant $-k_m^{2}$ gives the dispersion relation
 
 $$
--k_{t}^{\prime\,2}+k_{\Phi}^{2}=-k_m^{2}
+-\frac{\omega^2}{c^2}+k_x^2+k_y^2+k_z^2=-k_m^{2}
 \quad\Longleftrightarrow\quad
-k_{t}^{\prime\,2}=k_{\Phi}^{2}+k_m^{2}
-\quad\Longleftrightarrow\quad
-\omega^2=c^2k_{\Phi}^{2}+c^2k_m^{2},
+\omega^2=c^2\left(k_x^2+k_y^2+k_z^2\right)+c^2k_m^{2},
 $$
 
-which is the standard relativistic dispersion relation. It is reproduced here only to record that the scalar field's entire algebraic content is the biquaternion norm of a four-vector, not the action of the algebra on a state. The conserved current $\tilde{J}_{\Phi}$ lies in $\mathbb{B}_{\Phi}$, its scalar component being the imaginary scalar direction, exactly as for the four-current of relativistic mechanics.
-
-**What the earlier display of this paragraph did.** It wrote the four-momentum as the product $\tilde P_{\Phi}\,k_{\mathrm{mo}}$ with $k_{\mathrm{mo}}=\frac{k_m\,p}{m\,c}$, called the result the *four-wavevector*, and named $k_{\mathrm{mo}}$ the *momentum length*. Three things were wrong at once, and none of them changed a number. The factor $\frac{k_m}{m\,c}$ is $\frac{1}{\hbar}$, so the product was the quotient; the object in the material sector was therefore the wave number and not the momentum, whose symbol it carried. $k_{\mathrm{mo}}=\frac{p}{\hbar}$ is an inverse length, not a length, and it is not a third quantity but the modulus $k_{\Phi}$ of the vector part. And the display's $k_x,k_y,k_z$ were the components of $\vec k_{\Phi}$ written without the sector letter, one transposition away from the spatial index $k$ that the corpus reserves.
+which is the standard relativistic dispersion relation. It is reproduced here only to record that the scalar field's entire algebraic content is the biquaternion norm of a four-vector, not the action of the algebra on a state. The conserved current $\tilde{J}_{\Phi}$ lies in $\mathbb{B}_{\Phi}$, its scalar component being the imaginary scalar direction, exactly as for the four-current of relativistic mechanics. Here $k_{\mathrm{mo}}=\frac{k_m\,p}{m\,c}$ is the momentum length.
 
 One structural remark belongs with the equation. The first-order operators of the framework act on states and change their content. The scalar field has no such action. The only operator the scalar equation uses is the central scalar $\Box$, whose square-root structure is a statement about the *operator*, not about the field it acts on. A scalar field is annihilated by a composite of state operators without ever being a state; it is the trivial channel appearing in the composition, not an element of the carrier.
 
@@ -335,7 +320,7 @@ For the sector split, the centre meets each sector in one real direction: the re
 | $H=\tfrac12(\tilde{Ξ}_{\mathrm{sp}}\tilde\xi^{*}+\tilde\xi\tilde{Ξ}_{\mathrm{sp}}^*)$ | Hermitian product of two states, in $\mathbb{B}_{\Psi}$ |
 | $\sigma=\mathrm{Sc}\,H$ | Scalar part of $H$; the time coefficient of $iH$, not a Lorentz scalar |
 | $\mathfrak{b}(\tilde{Ξ}_{\mathrm{sp}},\tilde\xi)=2\,\mathrm{Sc}(\tilde{Ξ}_{\mathrm{sp}}^*\tilde\xi)$ | Mixed pairing of two states of opposite labels |
-| $\tilde R_\Phi$, $\tilde K_{\Phi}=\tilde P_{\Phi}/\hbar=i k_{t}^{\prime}e_t+\vec k_{\Phi}$ | Four-position and wave number, in $\mathbb{B}_{\Phi}$; $k_{t}^{\prime}=E/(\hbar c)=\omega/c$ and $\vec k_{\Phi}=\vec p/\hbar$, with $\langle\tilde K_{\Phi}\rangle_{\natural}=-k_m^{2}$ |
+| $\tilde R_\Phi$, $\tilde P_{\Phi}\,k_{\mathrm{mo}}$ | Four-position and four-wavevector, in $\mathbb{B}_{\Phi}$ (cited) |
 | $\langle\tilde{Q}\rangle_{\natural}$ | Biquaternion norm (cited) |
 | $\Box$ | d'Alembertian, central and scalar (cited) |
 | $c$, $\frac{m\,c}{k_m}$, $m$ | Speed of light in the medium, reduced Planck constant, mass |
