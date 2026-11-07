@@ -108,15 +108,17 @@ $$</p>
 $$</p>
 <p>the operator has the symbol obtained from $\partial/\partial r'_t\,\to-i\omega$, so that $\partial/\partial R_t\,\to-\omega/c$, together with $\partial/\partial R_k\,\to ik_k$:</p>
 <p>$$
-\Box\;\longmapsto\;\frac{\omega^2}{c^2}-\vec k_\Phi^2,
+\Box\;\longmapsto\;k_{t}^{\prime\,2}-k_\Phi^{2},
 \qquad
-\left(\Box-k_m^{2}\right)\;\longmapsto\;\frac{\omega^2}{c^2}-\vec k_\Phi^2-k_m^{2} .
+\left(\Box-k_m^{2}\right)\;\longmapsto\;k_{t}^{\prime\,2}-k_\Phi^{2}-k_m^{2},
+\qquad
+k_{t}^{\prime}=\frac{\omega}{c} .
 $$</p>
-<p>The symbol vanishes precisely on the <strong>mass shell</strong> $\langle\tilde P_{\Phi}\rangle_{\natural}=\tilde P_{\Phi}\tilde P_{\Phi}^{\natural}= -m^{2}\,c^{2}$, that is, on</p>
+<p>The symbol vanishes precisely on the <strong>mass shell</strong> $\langle\tilde K_{\Phi}\rangle_{\natural}=\tilde K_{\Phi}\tilde K_{\Phi}^{\natural}=-k_m^{2}$, equivalently $\langle\tilde P_{\Phi}\rangle_{\natural}=\tilde P_{\Phi}\tilde P_{\Phi}^{\natural}= -m^{2}\,c^{2}$, that is, on</p>
 <p>$$
-\omega^2=c^2\vec k_\Phi^2+c^2k_m^{2},
+k_{t}^{\prime\,2}=k_\Phi^{2}+k_m^{2},
 $$</p>
-<p>which is the biquaternion-norm statement of the relativistic dispersion relation: the mass shell is the level set of the biquaternion norm at the fixed negative value $-k_m^{2}$, a two-sheeted hyperboloid in the material sector. With the constants carried it reads $\omega^2/c^2=\vec k_\Phi^2+k_m^{2}$. The zero level set $\langle\tilde P_{\Phi}\rangle_{\natural}=0$ is the <strong>zero-divisor cone</strong>, the light cone; it is the set of four-wavevectors that are nilpotent in the algebra, and the massless kernel will be supported on its position-space image.</p>
+<p>which is the biquaternion-norm statement of the relativistic dispersion relation: the mass shell is the level set of the biquaternion norm at the fixed negative value $-k_m^{2}$, a two-sheeted hyperboloid in the material sector. Restoring the angular frequency through $k_{t}^{\prime}=\omega/c$ gives $\omega^{2}=c^{2}(k_\Phi^{2}+k_m^{2})$. The zero level set $\langle\tilde P_{\Phi}\rangle_{\natural}=0$ is the <strong>zero-divisor cone</strong>, the light cone; it is the set of four-wavevectors that are nilpotent in the algebra, and the massless kernel will be supported on its position-space image.</p>
 <h3 id="greens-functions-and-the-sign-convention">Green's functions and the sign convention</h3>
 <p>A Green's function of the Klein–Gordon operator is a distributional inverse. This article fixes the defining equation once,</p>
 <p>$$
@@ -403,7 +405,7 @@ G_R(\tilde R_\Phi)
 r_x^2=-{r'_{t}}^2+\vec r^2,
 $$</p>
 <p>The delta term is the massless retarded kernel, whose invariant form converts to $\frac{1}{4\pi r}\delta(r'_t-r)$ by the light-cone Jacobian $\delta(r_x^2)=\frac{1}{2r}\delta(r'_t-r)$; the Bessel term is the massive volume contribution, verified to satisfy the homogeneous Klein–Gordon equation inside the cone and to vanish as $k_m\to0$. The advanced kernel is the time reverse, and the defining equation does not select between them: the retarded kernel is fixed by the no-incoming-radiation boundary condition, which is physical.</p>
-<p>The Pauli–Jordan function $G_C=G_R-G_A$ is supported on the closed cone and vanishes for spacelike separations, which is microcausality; the commutator is $[\tilde{Ξ},\tilde{Ξ}^{*}]=G_C e_t$ in the normalization used here, and it is nonzero inside the cone. The Feynman propagator is the opposite-pole displacement, equal to the time-ordered two-point function $\langle0|T\tilde{Ξ}(r_x)\tilde{Ξ}^{*}(r_y)|0\rangle=G_F(r_x-r_y)e_t$; its spacelike tail is the Euclidean Yukawa kernel $\frac{k_m}{4\pi^2\sqrt{\rho_E^2}}\\mathrm{Ki}_{1}(k_m\sqrt{\rho_E^2})$, of range the Compton wavelength, and its inverse in momentum space is the quadratic form of the action used in the companion path-integral article.</p>
+<p>The Pauli–Jordan function $G_C=G_R-G_A$ is supported on the closed cone and vanishes for spacelike separations, which is microcausality; the commutator is $[\tilde{Ξ},\tilde{Ξ}^{*}]=G_C e_t$ in the normalization used here, and it is nonzero inside the cone. The Feynman propagator is the opposite-pole displacement, equal to the time-ordered two-point function $\langle0|T\tilde{Ξ}(r_x)\tilde{Ξ}^{*}(r_y)|0\rangle=G_F(r_x-r_y)e_t$; its spacelike tail is the Euclidean Yukawa kernel $\frac{k_m}{4\pi^2\sqrt{\rho_E^2}}\mathrm{Ki}_{1}(k_m\sqrt{\rho_E^2})$, of range the Compton wavelength, and its inverse in momentum space is the quadratic form of the action used in the companion path-integral article.</p>
 <p>The algebra's contribution is the identification of the singular loci with the biquaternion norm: the light cone is the zero-divisor cone $\langle\tilde R_\Phi\rangle_{\natural}=0$ of the material sector and the mass shell is the level set $\langle\tilde P_{\Phi}\rangle_{\natural}=-k_m^{2}$. The kernel is central, the module is a spectator, and the causal boundary condition is a physical input. The retarded, advanced, commutator and Feynman kernels are the standard scalar kernels, written in the framework's notation and interpreted through its biquaternion norm.</p>
 <h2 id="summary-of-notation">Summary of Notation</h2>
 <div class="table-scroll"><table>
