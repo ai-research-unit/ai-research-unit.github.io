@@ -247,10 +247,10 @@ $$</p>
 <h2 id="anticommutators-of-the-mode-operators">Anticommutators of the Mode Operators</h2>
 <p>For the equal-time relations above to hold, the mode operators must satisfy</p>
 <p>$$
-\{a_{\mathrm{fop},r}(\vec p),a_{\mathrm{fop},s}^{\dagger}(\vec k_\Phi)\}=(2\pi\hbar)^3\,\delta_{rs}\,\delta^{(3)}(\vec p-\hbar\vec k_\Phi),
+\{a_{\mathrm{fop},r}(\vec p),a_{\mathrm{fop},s}^{\dagger}(\vec p^{\,\prime})\}=(2\pi\hbar)^3\,\delta_{rs}\,\delta^{(3)}(\vec p-\vec p^{\,\prime}),
 $$</p>
 <p>$$
-\{b_{\mathrm{fop},r}(\vec p),b_{\mathrm{fop},s}^{\dagger}(\vec k_\Phi)\}=(2\pi\hbar)^3\,\delta_{rs}\,\delta^{(3)}(\vec p-\hbar\vec k_\Phi),
+\{b_{\mathrm{fop},r}(\vec p),b_{\mathrm{fop},s}^{\dagger}(\vec k_\Phi)\}=(2\pi\hbar)^3\,\delta_{rs}\,\delta^{(3)}(\vec p-\vec p^{\,\prime}),
 $$</p>
 <p>with <strong>all other anticommutators vanishing</strong>:</p>
 <p>$$
@@ -294,7 +294,7 @@ $$</p>
 <p>$$
 \big(a_{\mathrm{fop},r}^{\dagger}(\vec p)\big)^2=0,\qquad \big(b_{\mathrm{fop},r}^{\dagger}(\vec p)\big)^2=0,
 $$</p>
-<p>which is the Pauli exclusion principle as an algebraic identity: the square of a creation operator vanishes because $\{a_{\mathrm{fop},r}^{\dagger}(\vec p),a_{\mathrm{fop},s}^{\dagger}(\vec k_\Phi)\}=0$. This is the sharpest sense in which the statistics is carried by the mode algebra. The construction of the biquaternion Fock space as an object in its own right — rather than as the exterior algebra of a space of element-valued solutions — is the subject of the companion article <em>Fock Space and Creation/Annihilation Operators in Biquaternionic Form</em>; here we need only the mode algebra.</p>
+<p>which is the Pauli exclusion principle as an algebraic identity: the square of a creation operator vanishes because $\{a_{\mathrm{fop},r}^{\dagger}(\vec p),a_{\mathrm{fop},s}^{\dagger}(\vec p^{\,\prime})\}=0$. This is the sharpest sense in which the statistics is carried by the mode algebra. The construction of the biquaternion Fock space as an object in its own right — rather than as the exterior algebra of a space of element-valued solutions — is the subject of the companion article <em>Fock Space and Creation/Annihilation Operators in Biquaternionic Form</em>; here we need only the mode algebra.</p>
 <h2 id="the-hamiltonian-and-the-normal-ordering-constant">The Hamiltonian and the Normal-Ordering Constant</h2>
 <p>The conserved energy of the free Dirac field is</p>
 <p>$$
@@ -377,7 +377,7 @@ $$</p>
 <p>the <strong>Fermi–Dirac</strong> distribution. The same computation for a bosonic mode, where the relevant relation is the commutator $a_{\mathrm{fop}}a_{\mathrm{fop}}^{\dagger}=1+a_{\mathrm{fop}}^{\dagger}a_{\mathrm{fop}}$, gives $n_{\mathrm B}=1/\big(\exp(\beta(E-\mu))-1\big)$, the Bose–Einstein distribution. At $\mu=0$ the two reduce to $1/(\exp(\beta E)\pm1)$. This is the cleanest sense in which the statistics is carried by the (anti)commutator and not by the KMS boundary relation — the point the KMS article makes when it locates the difference in the algebra rather than in the boundary relation. In the continuum, the free-field thermal two-point function is</p>
 <p>$$
 \omega_\beta\big(a_{\mathrm{fop},r}^{\dagger}(\vec p)a_{\mathrm{fop},s}(\vec k_\Phi)\big)
-=(2\pi\hbar)^3\,\delta_{rs}\,\delta^{(3)}(\vec p-\hbar\vec k_\Phi)\,\frac{1}{\exp\!\big(\beta(E_{\vec p}-\mu)\big)+1},
+=(2\pi\hbar)^3\,\delta_{rs}\,\delta^{(3)}(\vec p-\vec p^{\,\prime})\,\frac{1}{\exp\!\big(\beta(E_{\vec p}-\mu)\big)+1},
 $$</p>
 <p>and the time-ordered fermionic correlation functions built from it are <strong>antiperiodic</strong> in imaginary time with period $\beta$, hence periodic with period $2\beta$; the Fourier modes of the compact imaginary-time direction are consequently the fermionic Matsubara frequencies</p>
 <p>$$
@@ -419,7 +419,7 @@ $$</p>
 \tilde{Ξ}_{\mathrm{fop}}(X,r'_t)=\int\!\frac{d^3p}{(2\pi\hbar)^3}\sqrt{\frac{\hbar c}{2E_{\vec p}}}\sum_r
 \Big[a_{\mathrm{fop},r}(\vec p)\tilde{Ξ}_{\mathrm{sp},+}^{(r)}(\vec p)\exp(-ip\cdot x/\hbar)+b_{\mathrm{fop},r}^{\dagger}(\vec p)\tilde{Ξ}_{\mathrm{sp},-}^{(r)}(\vec p)\exp(+ip\cdot x/\hbar)\Big],
 $$</p>
-<p>with the mode anticommutators $\{a_{\mathrm{fop},r}(\vec p),a_{\mathrm{fop},s}^{\dagger}(\vec k_\Phi)\}=\{b_{\mathrm{fop},r}(\vec p),b_{\mathrm{fop},s}^{\dagger}(\vec k_\Phi)\}=(2\pi\hbar)^3\delta_{rs}\delta^{(3)}(\vec p-\hbar\vec k_\Phi)$ and all others zero. These reproduce the equal-time relation: the positive- and negative-frequency branches enter with opposite phases, the even part of the spin sums integrates to the delta function, and the odd parts cancel. The resulting Fock space carries Pauli exclusion as the algebraic identity $(a_{\mathrm{fop},r}^{\dagger})^2=0$.</p>
+<p>with the mode anticommutators $\{a_{\mathrm{fop},r}(\vec p),a_{\mathrm{fop},s}^{\dagger}(\vec p^{\,\prime})\}=\{b_{\mathrm{fop},r}(\vec p),b_{\mathrm{fop},s}^{\dagger}(\vec k_\Phi)\}=(2\pi\hbar)^3\delta_{rs}\delta^{(3)}(\vec p-\vec p^{\,\prime})$ and all others zero. These reproduce the equal-time relation: the positive- and negative-frequency branches enter with opposite phases, the even part of the spin sums integrates to the delta function, and the odd parts cancel. The resulting Fock space carries Pauli exclusion as the algebraic identity $(a_{\mathrm{fop},r}^{\dagger})^2=0$.</p>
 <p>The Hamiltonian is $:\!H\!:=\sum_r\int\frac{d^3p}{(2\pi\hbar)^3}E_{\vec p}(a_{\mathrm{fop},r}^{\dagger}a_{\mathrm{fop},r}+b_{\mathrm{fop},r}^{\dagger}b_{\mathrm{fop},r})$ after normal ordering, with the negative, quartically divergent normal-ordering constant $E_0=-2V\int\frac{d^3p}{(2\pi\hbar)^3}E_{\vec p}$ removed. The normal-ordered charge has particles and antiparticles of opposite sign. The mode algebra is $\mathbb{Z}/2$-graded by fermion parity, which is the structure the KMS article identifies as missing; with it, the KMS condition plus the anticommutator yields the Fermi–Dirac distribution and the antiperiodic imaginary-time correlators whose Matsubara frequencies are $(2n+1)\pi/\beta$.</p>
 <p>The extension is a transcription of standard canonical quantization onto the parent article's biquaternion plane waves, not a derivation of the quantized structure from the algebra $\mathbb{B}$. The intrinsic $\mathbb{B}$-valued Lagrangian pairing and momentum, the biquaternion Fock space, and the embedding of the grading in $\mathbb{B}$ remain open.</p>
 <h2 id="summary-of-notation">Summary of Notation</h2>
@@ -524,7 +524,7 @@ $$</p>
 <td>Quantized field; particle and antiparticle annihilation operators</td>
 </tr>
 <tr>
-<td>$\{a_{\mathrm{fop},r}(\vec p),a_{\mathrm{fop},s}^{\dagger}(\vec k_\Phi)\}=(2\pi\hbar)^3\delta_{rs}\delta^{(3)}(\vec p-\hbar\vec k_\Phi)$</td>
+<td>$\{a_{\mathrm{fop},r}(\vec p),a_{\mathrm{fop},s}^{\dagger}(\vec p^{\,\prime})\}=(2\pi\hbar)^3\delta_{rs}\delta^{(3)}(\vec p-\vec p^{\,\prime})$</td>
 <td>Mode anticommutator</td>
 </tr>
 <tr>
