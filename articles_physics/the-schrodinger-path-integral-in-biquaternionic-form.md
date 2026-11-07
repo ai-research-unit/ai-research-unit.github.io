@@ -12,7 +12,7 @@ The article is organised as follows. The next section derives the transition ker
 
 The conventions are those of the companion articles: $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ with $e_t=1,\vec e_x,\vec e_y,\vec e_z$, $\vec e_j^2=-e_t$, central $i$; $\mathbb{B}_{C}$ is the centre; $\mathbb{B}_{\Psi}$ and $\mathbb{B}_{\Phi}$ are the Hermitian and anti-Hermitian sectors; the state module is $\mathbb{B}\tilde\Pi\cong\mathbb{C}^2$; $\mathrm{Tr}(\tilde R_\Psi)=2\,\mathrm{Sc}(\tilde R_\Psi)$; and the Hamiltonian of a scalar particle is $H=[-\frac{m\,c^{2}}{2\,k_m^{2}}\nabla^2+V(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)]e_t$, central. The coordinate $r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z$ is the argument of the field.
 
-Here $k_m=mc/\hbar$ is the mass wave number, the inverse of the mass length.
+Here $k_m=mc/\hbar$ is the mass wave number, the inverse of the mass length. The step variables $\varepsilon$ and $T$ are lengths along the material coordinate $r'_t$, so the corresponding duration is $\varepsilon/c$; and $\mathrm{Lag}$ is the Lagrangian per unit $r'_t$, that is $L/c$ with $L$ the Lagrangian per unit time $t'=r'_t/c$, so that $\int\mathrm{Lag}\,dr'_t$ is the action in its usual units.
 
 ## From the State-Vector Equation to a Sum over Paths
 
@@ -66,30 +66,30 @@ in which the kernel multiplies the module factor by a scalar. Whatever the initi
 
 ### The short-time kernel
 
-For a small time $\varepsilon$ one computes the kernel directly. Splitting the Hamiltonian into kinetic and potential parts and using the lowest-order product formula,
+For a small step $\varepsilon$ in $r'_t$ one computes the kernel directly (the duration is $\varepsilon/c$). Splitting the Hamiltonian into kinetic and potential parts and using the lowest-order product formula,
 
 $$
-\exp(-i\varepsilon(p^2 c/(2\,m\,c)+V)\frac{k_m}{m\,c})
-= \exp(-i\varepsilon p^2 c/(\frac{2\,m^{2}\,c^{2}}{k_m}))\,\exp(-\frac{k_m\,i\,\varepsilon\,V}{m\,c}) + O(\varepsilon^2),
+\exp\left[-\frac{i\,\varepsilon}{\hbar\,c}\left(\frac{p^{2}}{2\,m}+V\right)\right]
+= \exp\left(-\,\frac{i\,k_m\,\varepsilon\,p^{2}}{2\,m^{2}\,c^{2}}\right)\,\exp\left(-\,\frac{i\,k_m\,\varepsilon\,V}{m\,c^{2}}\right) + O(\varepsilon^2),
 $$
 
 the position matrix element is the momentum integral
 
 $$
-G_{\\mathrm{prop},\\varepsilon}(r_{2x}\,\vec e_x+r_{2y}\,\vec e_y+r_{2z}\,\vec e_z,r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)
+G_{\mathrm{prop},\varepsilon}(r_{2x}\,\vec e_x+r_{2y}\,\vec e_y+r_{2z}\,\vec e_z,r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)
 = \int\frac{d^3p}{(\frac{2\,m\,c\,\pi}{k_m})^3}\,
 \exp(\,\frac{k_m\,i\,\vec p\,(r_{2x}\,\vec e_x+r_{2y}\,\vec e_y+r_{2z}\,\vec e_z-(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z))}{m\,c})\,
-\exp(-i\varepsilon p^2 c/(\frac{2\,m^{2}\,c^{2}}{k_m}))\,
-\exp(-\frac{k_m\,i\,\varepsilon\,V\,(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)}{m\,c})\,e_t
+\exp\left(-\,\frac{i\,k_m\,\varepsilon\,p^{2}}{2\,m^{2}\,c^{2}}\right)\,
+\exp\left(-\,\frac{i\,k_m\,\varepsilon\,V\,(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)}{m\,c^{2}}\right)\,e_t
 + O(\varepsilon^2),
 $$
 
 where the potential factor is evaluated at the initial point because the commutator $[p^2,V]$ is itself of order $\frac{m\,c}{k_m}$ and contributes only at higher order. The momentum integral is the standard Fresnel integral
 
 $$
-\int\frac{d^3p}{(\frac{2\,m\,c\,\pi}{k_m})^3}\exp\left[\frac{k_m\,i}{m\,c}\left(\vec p\cdot\vec\Delta -\frac{\varepsilon\,p^{2}}{2\,m}\right)\right]
-= \left(\frac{k_m}{2\pi i c\varepsilon}\right)^{3/2}
-\exp\left(\frac{im|\vec\Delta|^2}{\frac{2\,m\,c\,\varepsilon}{k_m}}\right),
+\int\frac{d^3p}{(2\pi\hbar)^3}\exp\left[\frac{k_m\,i}{m\,c}\,\vec p\cdot\vec\Delta-\frac{i\,k_m\,\varepsilon\,p^{2}}{2\,m^{2}\,c^{2}}\right]
+= \left(\frac{k_m}{2\pi i\varepsilon}\right)^{3/2}
+\exp\left(\frac{i\,k_m|\vec\Delta|^2}{2\,\varepsilon}\right),
 \qquad
 \vec\Delta = r_{2x}\,\vec e_x+r_{2y}\,\vec e_y+r_{2z}\,\vec e_z-(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z) ,
 $$
@@ -97,13 +97,13 @@ $$
 so that
 
 $$
-G_{\\mathrm{prop},\\varepsilon}(r_{2x}\,\vec e_x+r_{2y}\,\vec e_y+r_{2z}\,\vec e_z,r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)
-= \left(\frac{k_m}{2\pi i c\varepsilon}\right)^{3/2}
-\exp\left[\frac{k_m\,i}{m\,c}\left(\frac{m|r_{2x}\,\vec e_x+r_{2y}\,\vec e_y+r_{2z}\,\vec e_z-(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)|^2}{2\varepsilon} - \varepsilon V(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)\right)\right]e_t
+G_{\mathrm{prop},\varepsilon}(r_{2x}\,\vec e_x+r_{2y}\,\vec e_y+r_{2z}\,\vec e_z,r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)
+= \left(\frac{k_m}{2\pi i\varepsilon}\right)^{3/2}
+\exp\left[\,i\,k_m\left(\frac{|r_{2x}\,\vec e_x+r_{2y}\,\vec e_y+r_{2z}\,\vec e_z-(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)|^2}{2\varepsilon} - \frac{\varepsilon\,V(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)}{m\,c^{2}}\right)\right]e_t
 + O(\varepsilon^2).
 $$
 
-The short-time kernel is central. Its phase is $(\frac{k_m\,i}{m\,c})$ times the short-time Lagrangian action $\mathrm{Lag}\varepsilon = \frac{m|\vec\Delta|^2}{2\varepsilon^2}\varepsilon - V\varepsilon$, and its prefactor is built from the central $i$, the central real numbers $m,\frac{m\,c}{k_m},\varepsilon$, and $e_t$. The only non-central object in the construction is the displacement $\vec\Delta$, which is a real vector of configuration space rather than an element of the state module; the module factor does not appear in the kernel at all.
+The short-time kernel is central. Its phase is $\frac{k_m\,i}{m\,c}$ times the short-time action $\mathrm{Lag}\,\varepsilon = \frac{m\,c|\vec\Delta|^{2}}{2\varepsilon}-\frac{\varepsilon\,V}{c}$, and its prefactor is built from the central $i$, the central real numbers $m,\frac{m\,c}{k_m},\varepsilon$, and $e_t$. The only non-central object in the construction is the displacement $\vec\Delta$, which is a real vector of configuration space rather than an element of the state module; the module factor does not appear in the kernel at all.
 
 ### The Trotter product and the measure
 
@@ -119,9 +119,9 @@ and inserting a resolution of the identity between each pair of factors turns th
 $$
 G_{\mathrm{prop}}(\vec r_f,r'_t;\vec r_i,0)
 =\lim_{N\to\infty}
-\left(\frac{k_m}{2\pi i c\varepsilon}\right)^{3N/2}
+\left(\frac{k_m}{2\pi i\varepsilon}\right)^{3N/2}
 \int\prod_{k=1}^{N-1} d^3r_k\;
-\exp\left[\frac{k_m\,i}{m\,c}\sum_{k=0}^{N-1}\left(\frac{m|\vec r_{k+1}-\vec r_k|^2}{2\varepsilon}-\varepsilon V(\vec r_k)\right)\right]e_t,
+\exp\left[\frac{k_m\,i}{m\,c}\sum_{k=0}^{N-1}\left(\frac{m\,c|\vec r_{k+1}-\vec r_k|^{2}}{2\varepsilon}-\frac{\varepsilon\,V(\vec r_k)}{c}\right)\right]e_t,
 $$
 
 with $\varepsilon=r'_t/N$, $\vec r_0=\vec r_i$, $\vec r_N=\vec r_f$. In the continuum limit the sum in the exponent becomes the action $S[\vec r]=\int_0^{r'_{t}} \mathrm{Lag}\,d\tau$ and the multiple integral becomes the formal path integral
@@ -141,12 +141,12 @@ For $V=0$ the short-time kernel is exact for every $\varepsilon$, and the Trotte
 
 $$
 \boxed{\;K_0(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z,r'_t)
-= \int\frac{d^3p}{(\frac{2\,m\,c\,\pi}{k_m})^3}\,\exp(\,\frac{k_m\,i\,\vec p\,(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)}{m\,c})\,\exp(-i\varepsilon p^2 c/(\frac{2\,m^{2}\,c^{2}}{k_m}))\Big|_{\varepsilon\to  r'_t}
+= \int\frac{d^3p}{(\frac{2\,m\,c\,\pi}{k_m})^3}\,\exp(\,\frac{k_m\,i\,\vec p\,(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)}{m\,c})\,\exp\left(-\,\frac{i\,k_m\,\varepsilon\,p^{2}}{2\,m^{2}\,c^{2}}\right)\Big|_{\varepsilon\to  r'_t}
 = \left(\frac{k_m}{2\pi i r'_t}\right)^{3/2}
 \exp\left(\frac{im|r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z|^2}{\frac{2\,m\,r'_{t}}{k_m}}\right)\;},
 $$
 
-which is the free kernel of the free-particle article. It is central, and its phase is the classical free action $S_{\mathrm{cl}}=m|r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z|^2/2r'_t$ over $\frac{m\,c}{k_m}$. The squared modulus is the spreading density $|K_0|^2=(\frac{k_m}{2\,c\,\pi\,r'_{t}})^3$, constant in space, which is the statement that a point source spreads uniformly in free space.
+which is the free kernel of the free-particle article. It is central, and its phase is the classical free action $S_{\mathrm{cl}}=m\,c\,|r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z|^{2}/(2r'_t)$ over $\frac{m\,c}{k_m}=\hbar$. The squared modulus is the spreading density $|K_0|^2=(\frac{k_m}{2\,\pi\,r'_{t}})^3$, constant in space, which is the statement that a point source spreads uniformly in free space.
 
 ### Composition
 
@@ -162,7 +162,7 @@ which follows from the Gaussian convolution formula
 $$
 \int  dy\;\exp(A(x-y)^2)\exp(By^2)=\sqrt{\frac{-\pi}{A+B}}\exp\left(\frac{AB}{A+B}x^2\right),
 \qquad
-A=\frac{k_m\,i}{2\,c\,T_{2}},\quad  B=\frac{k_m\,i}{2\,c\,T_{1}},
+A=\frac{k_m\,i}{2\,T_{2}},\quad  B=\frac{k_m\,i}{2\,T_{1}},
 $$
 
 and which was verified numerically on a superposition of two Gaussian packets to a relative error of order $10^{-14}$ at three time pairs. The composition is the statement that the sum over paths factorises at an intermediate time, and in the biquaternion interpretation it is a statement about the centre: the product of two central kernels is central, and the classical action of the two flights adds.
@@ -234,36 +234,36 @@ so that the zero-point factor $\exp(-\omega\tau/2)$ is present rather than remov
 The kernel determines the dynamics, so it must contain the Schrödinger equation. The derivation is the infinitesimal-time version of the composition law. For an infinitesimal step,
 
 $$
-\tilde{Ξ}_{\mathrm{sp}}(r_x,r'_t+\varepsilon)=\int dy\;G_{\\mathrm{prop},\\varepsilon}(r_x,r_y)\,\tilde{Ξ}_{\mathrm{sp}}(r_y,r'_t),
+\tilde{Ξ}_{\mathrm{sp}}(r_x,r'_t+\varepsilon)=\int dy\;G_{\mathrm{prop},\varepsilon}(r_x,r_y)\,\tilde{Ξ}_{\mathrm{sp}}(r_y,r'_t),
 $$
 
 and inserting the short-time kernel and expanding the smooth wave function about $y=x$,
 
 $$
 \tilde{Ξ}_{\mathrm{sp}}(r_x,r'_t+\varepsilon)
-=\left(\frac{k_m}{2\pi i c\varepsilon}\right)^{1/2}
-\int  dy\;\exp(\,\frac{k_m\,i\,(r_y-r_x)^{2}}{2\,c\,\varepsilon})
-\exp(-\frac{k_m\,i\,\varepsilon\,V\,r_{y}}{m\,c})
+=\left(\frac{k_m}{2\pi i\varepsilon}\right)^{1/2}
+\int  dy\;\exp(\,\frac{i\,k_m\,(r_y-r_x)^{2}}{2\,\varepsilon})
+\exp\left(-\,\frac{i\,k_m\,\varepsilon\,V\,r_{y}}{m\,c^{2}}\right)
 \left[\tilde{Ξ}_{\mathrm{sp}}(r_x)+(r_y-r_x)\frac{d\tilde{Ξ}_{\mathrm{sp}}}{dx}(r_x)+\tfrac12(r_y-r_x)^2\frac{\partial^2\tilde{Ξ}_{\mathrm{sp}}}{\partial r_x^2}(r_x)+\cdots\right].
 $$
 
 The Gaussian moments are
 
 $$
-\left(\frac{k_m}{2\pi i c\varepsilon}\right)^{1/2}\int  dy\;\exp(\,\frac{k_m\,i\,(y-x)^{2}}{2\,c\,\varepsilon})=1,
+\left(\frac{k_m}{2\pi i\varepsilon}\right)^{1/2}\int  dy\;\exp(\,\frac{i\,k_m\,(y-x)^{2}}{2\,\varepsilon})=1,
 \qquad
-\left(\frac{k_m}{2\pi i c\varepsilon}\right)^{1/2}\int  dy\;(y-x)^2\exp(\,\frac{k_m\,i\,(y-x)^{2}}{2\,c\,\varepsilon})=i c/k_m\varepsilon,
+\left(\frac{k_m}{2\pi i\varepsilon}\right)^{1/2}\int  dy\;(y-x)^2\exp(\,\frac{i\,k_m\,(y-x)^{2}}{2\,\varepsilon})=i\,\varepsilon/k_m,
 $$
 
 and the linear term vanishes by symmetry. Collecting,
 
 $$
-\tilde{Ξ}_{\mathrm{sp}}(r_x,r'_t+\varepsilon)=\tilde{Ξ}_{\mathrm{sp}}(r_x)-\frac{k_m\,i\,\varepsilon}{m\,c}V(r_x)\tilde{Ξ}_{\mathrm{sp}}(r_x)+\frac{i c\varepsilon}{2\,k_m}\frac{\partial^2\tilde{Ξ}_{\mathrm{sp}}}{\partial r_x^2}(r_x)+O(\varepsilon^2),
+\tilde{Ξ}_{\mathrm{sp}}(r_x,r'_t+\varepsilon)=\tilde{Ξ}_{\mathrm{sp}}(r_x)-\frac{i\,k_m\,\varepsilon\,V(r_x)}{m\,c^{2}}\tilde{Ξ}_{\mathrm{sp}}(r_x)+\frac{i\,\varepsilon}{2\,k_m}\frac{\partial^2\tilde{Ξ}_{\mathrm{sp}}}{\partial r_x^2}(r_x)+O(\varepsilon^2),
 $$
 
 which rearranges to
 
-$$\frac{m\,c\,i}{k_m}\frac{\tilde{Ξ}_{\mathrm{sp}}(r_x,r'_t+\varepsilon)-\tilde{Ξ}_{\mathrm{sp}}(r_x,r'_t)}{\varepsilon}
+$$\frac{m\,c^{2}\,i}{k_m}\frac{\tilde{Ξ}_{\mathrm{sp}}(r_x,r'_t+\varepsilon)-\tilde{Ξ}_{\mathrm{sp}}(r_x,r'_t)}{\varepsilon}
 =\left(-\frac{m\,c^{2}}{2\,k_m^{2}}\partial^2/\partial R_x^2+V(r_x)\right)\tilde{Ξ}_{\mathrm{sp}}+O(\varepsilon),
 $$
 
@@ -329,14 +329,14 @@ The van Vleck form fails at the caustics, where the van Vleck determinant vanish
 The Schrödinger path integral in the biquaternion framework is derived from the central evolution operator $\tilde Q(r'_t)=\exp(-\frac{k_m\,iHr'_{t}}{m\,c^{2}})$ with $H=[-\frac{m\,c^{2}}{2\,k_m^{2}}\nabla^2+V]e_t$. The position kernel is $K\,e_t$, a complex scalar times the identity, and the state is propagated by scalar convolution; the module factor is untouched. The short-time kernel is
 
 $$
-G_{\\mathrm{prop},\\varepsilon}(r_{2x}\,\vec e_x+r_{2y}\,\vec e_y+r_{2z}\,\vec e_z,r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)
-=\left(\frac{k_m}{2\pi i c\varepsilon}\right)^{3/2}
-\exp\left[\frac{k_m\,i}{m\,c}\left(\frac{m|r_{2x}\,\vec e_x+r_{2y}\,\vec e_y+r_{2z}\,\vec e_z-(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)|^2}{2\varepsilon}-\varepsilon V(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)\right)\right]e_t+O(\varepsilon^2),
+G_{\mathrm{prop},\varepsilon}(r_{2x}\,\vec e_x+r_{2y}\,\vec e_y+r_{2z}\,\vec e_z,r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)
+=\left(\frac{k_m}{2\pi i\varepsilon}\right)^{3/2}
+\exp\left[\,i\,k_m\left(\frac{|r_{2x}\,\vec e_x+r_{2y}\,\vec e_y+r_{2z}\,\vec e_z-(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)|^2}{2\varepsilon}-\frac{\varepsilon\,V(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)}{m\,c^{2}}\right)\right]e_t+O(\varepsilon^2),
 $$
 
 and the Trotter product of these kernels gives the sum over paths $G_{\mathrm{prop}}=\int\mathcal{D}r_x\,\mathcal{D}r_y\,\mathcal{D}r_z\,\exp(iS[r_x,r_y,r_z]\frac{k_m}{m\,c})e_t$.
 
-The free kernel is $K_0=(\frac{k_m}{2\,c\,\pi\,i\,r'_{t}})^{3/2}\exp(im|r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z|^\frac{k_m}{m\,r'_{t}})$, with the composition law verified on a two-packet superposition to a relative error of order $10^{-14}$. The harmonic-oscillator kernel is
+The free kernel is $K_0=(\frac{k_m}{2\,\pi\,i\,r'_{t}})^{3/2}\exp(\frac{i\,k_m|r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z|^{2}}{2\,r'_{t}})$, with the composition law verified on a two-packet superposition to a relative error of order $10^{-14}$. The harmonic-oscillator kernel is
 
 $$
 G_{\mathrm{osc},\omega}=\left(\frac{\omega\,k_m}{2\pi i c\sin(\omega r'_t/c)}\right)^{1/2}
@@ -360,10 +360,10 @@ The semiclassical limit of the path integral is the van Vleck kernel $K\approx(\
 | $H=[-\frac{m\,c^{2}}{2\,k_m^{2}}\nabla^2+V]e_t$ | Central Hamiltonian |
 | $\tilde Q(r'_t)=\exp(-\frac{k_m\,iHr'_{t}}{m\,c^{2}})$ | Evolution operator; central $*$-unitary, semigroup |
 | $G_{\mathrm{prop}}(x_f\,\vec e_x+y_f\,\vec e_y+z_f\,\vec e_z,r'_{t,f};x_i\,\vec e_x+y_i\,\vec e_y+z_i\,\vec e_z,r'_{t,i})=Ke_t$ | Position kernel; central |
-| $G_{\\mathrm{prop},\\varepsilon}(r_{2x}\,\vec e_x+r_{2y}\,\vec e_y+r_{2z}\,\vec e_z,r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)$ | Short-time kernel; phase $=\frac{k_m\,i}{m\,c}(\mathrm{Lag}\varepsilon)$ |
+| $G_{\mathrm{prop},\varepsilon}(r_{2x}\,\vec e_x+r_{2y}\,\vec e_y+r_{2z}\,\vec e_z,r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)$ | Short-time kernel; phase $=\frac{k_m\,i}{m\,c}\mathrm{Lag}\,\varepsilon$, with $\varepsilon$ a step in $r'_t$ |
 | $\mathcal{D}x\,\mathcal{D}y\,\mathcal{D}z$ | Path-integral measure; defined by the Trotter limit |
-| $S[r_x,r_y,r_z]=\int \mathrm{Lag}\,dr'_t$ | Action; real scalar |
-| $K_0=(\frac{k_m}{2\,c\,\pi\,i\,r'_{t}})^{3/2}\exp(im|r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z|^\frac{k_m}{m\,r'_{t}})$ | Free kernel |
+| $S[r_x,r_y,r_z]=\int \mathrm{Lag}\,dr'_t$ | Action; real scalar; $\mathrm{Lag}$ is the Lagrangian per unit $r'_t$, i.e. $L/c$ |
+| $K_0=(\frac{k_m}{2\,\pi\,i\,r'_{t}})^{3/2}\exp(\frac{i\,k_m|r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z|^{2}}{2\,r'_{t}})$ | Free kernel |
 | $G_{\mathrm{osc},\omega}$ | Oscillator kernel; poles at $\omega r'_t/c=n\pi$ |
 | $S_{\mathrm{cl}}=\frac{m\omega}{2\sin(\omega r'_t/c)}[(r_x^2+r_{0x}^2)\cos(\omega r'_t/c)-2r_xr_{0x}]$ | Oscillator classical action |
 | $G_{\mathrm{osc},\omega}^E$ | Mehler kernel; image of $G_{\mathrm{osc},\omega}$ under $r'_t\to-i\tau$ |

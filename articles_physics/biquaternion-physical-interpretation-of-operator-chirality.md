@@ -4,7 +4,7 @@
 
 **The question.** What does the operator chirality of the biquaternion algebra predict, and what does it leave to physics?
 
-**The answer in one line.** Chirality is a side. A pure left multiplier carries the left slot, a pure right multiplier the right slot, a scalar both slots at once, and the remaining operators no single side. Physics uses one cell, $-iR_u$ for a traceless $u$ with $u^2=-e_t$, and that cell is a pure right multiplier: it is an example of the right slot, never the definition of it. The Dirac operator is the pure left multiplier $L(\tilde\nabla)$, the two sit on opposite sides and therefore commute, and the mass is the one term of the equation with no side at all.
+**The answer in one line.** Chirality is a side. A pure left multiplier carries the left slot, a pure right multiplier the right slot, a scalar both slots at once, and the remaining operators no single side. Physics uses one cell, $-iR_u$ for a traceless $u$ with $u^2=-e_t$, and that cell is a pure right multiplier: it is an example of the right slot, never the definition of it. The Dirac operator is the pure left multiplier $L(\tilde\nabla)$, the two sit on opposite sides and therefore commute, so the derivative carries the cell's value unchanged. What carries a field from one value to the other is not the mass of the pair but a right multiplication by an element that anticommutes with $u$.
 
 **What this article does.** It restates the mathematics in the form a physicist reads, and it states what the algebra does not supply. The proofs are in *Operator Chirality on the Biquaternion Algebra*, one click away, and nothing here is proved twice.
 
@@ -20,10 +20,12 @@
 | --- | --- |
 | The two slots, the two one-sided families and their dimensions | [Operator Chirality on the Biquaternion Algebra](../articles_maths/operator-chirality-on-the-biquaternion-algebra.html) |
 | The label of an operator as a side, and one cell that realises the split, a pure right multiplier and hence an example of the right slot | same |
-| The list of eight objects the notion does not need, the cell among them | same |
+| The list of eleven objects the notion does not need, the cell among them | same |
 | The swap $\sigma(L_aR_b)=L_bR_a$ and the conjugation $\mathsf C\,L(a^{\natural})\,\mathsf C=R(a)$ | same |
 | The cells as a basis, the coefficient matrix and the length | [$M_4(\mathbb{C})$ Axis-Free Representation : Operators](../articles_maths/m4c-axis-free-representation-operators.html) |
 | The chiral pair of the Dirac equation and its two-sided variant | [The Dirac Equation in Biquaternionic Form](the-dirac-equation-in-biquaternionic-form.html) |
+| The mass as a breaking: a right multiplication by an element that anticommutes with $u$, not a left multiplication | [What the Biquaternion Algebra Cannot Do](what-the-biquaternion-algebra-cannot-do-a-catalogue-of-algebraic-obstructions.html) |
+| The two statements kept apart: the mass shell belongs to the gradient equation, the chirality to the right multiplication | [The Roots of a General Element, Mass Frames and the Mass Shell](the-roots-of-a-general-element-mass-frames-and-the-mass-shell.html) |
 | The two forms of the equation on the algebra, and the statement that the pair needs no carrier beyond the algebra | [The Minimal Coupling of the Biquaternion Dirac Field to Electromagnetism](the-minimal-coupling-of-the-biquaternion-dirac-field-to-electromagnetism.html) |
 
 ## Operator Chirality in One Page
@@ -59,7 +61,7 @@ That is the whole definition: one element, one multiplication on the right, one 
 | square | $(-iR_u)^2=\mathrm I$ | an involution, so a sign |
 | trace | $\operatorname{tr}(-iR_u)=0$ | the two halves are of equal size |
 | spectrum | $+1$ and $-1$, two dimensions each | two chiral components, two states each |
-| with a left multiplier | $[\,L(a),-iR_u\,]=0$ for every $a$ | it sits on the opposite side to the gradient |
+| with a left multiplier | $[\,L(a),-iR_u\,]=0$ for every $a$ | it sits on the opposite side to the gradient, so the gradient keeps the value |
 
 The square follows from $R_u^2=R_{u^2}=-\mathrm I$, so that $(-iR_u)^2=\mathrm I$. The trace vanishes because $u$ is traceless: the trace of $R_u$ is four times the scalar part of $u$, and the hypothesis is exactly that this part is zero. The spectrum is the spectrum of $u$ read four times, and $u^2=-e_t$ with $\operatorname{Sc}u=0$ gives $\pm i$ twice each.
 
@@ -89,23 +91,50 @@ in which both operators act by left multiplication: the first by $\tilde\nabla$,
 $$
 \mathsf C\,L(a^{\natural})\,\mathsf C=R(a),
 $$
-so the conjugate member of the pair is the same operator read on the other side. Nothing else is used: no carrier, no splitting of a carrier, no projector, no idempotent, no ideal. This is the point recorded where the corpus separates its three forms of the equation: the pair written on the algebra holds without any choice of module. Here $k_m=mc/\hbar$ is the mass wave number, the inverse of the mass length.
+so the conjugate member of the pair is the same operator read on the other side. Nothing else is used: no carrier, no splitting of a carrier, no projector, no idempotent, no ideal. Here $k_m=mc/\hbar$ is the mass wave number, the inverse of the mass length.
 
-**The massless case, and the split.** At $m=0$ the pair decouples into $\tilde\nabla\tilde{Ξ}_{\mathrm{sp},R}=0$ and $\tilde\nabla^{\natural}\tilde{Ξ}_{\mathrm{sp},L}=0$. For a null gradient the solution space of either member is two-dimensional over $\mathbb{C}$, and $-iR_u$ acts on it with the two eigenvalues $+1$ and $-1$, one state each. So a massless biquaternion Dirac field carries **one state of each chirality**, which is the standard statement that a massless Dirac fermion has both helicities. The mechanism is the commutation above: the solution space is stable under the cell, so a solution of definite chirality can be chosen.
+**The two letters of the pair are not the two values of the cell.** They are written alike, and they are different objects, so the difference comes before anything about the mass. The pair is two equations for two elements, and the mass is the number that relates them: each element is the gradient of the other divided by $k_m$, which at $k_m\neq0$ is a change of variable. The two values of the cell are a second partition of the same algebra, cut by an operator the pair never uses. A reader who takes the letters of the pair for the values of the cell finds that the pair has only the zero solution, and the reason is one line: both members of every line are left multiplications, a left multiplication keeps the value, so each line would equate a field of one value with a field of the other.
 
-**Commutation, and the anticommutation a reader will expect.** On $\mathbb{B}$ the cell multiplies on the right and the derivative on the left, so the two commute, and the commutation says that the cell preserves each of its own eigenspaces. In a matrix display the cell is diagonal and the derivative is off-diagonal, and the anticommutation of the two is the display's way of saying that the derivative carries one eigenspace into the other. The anticommutation is therefore a statement about the derivative, not a rival statement about the cell. The conclusion for a solution is the same in either account and needs no display: if $\tilde{Ξ}_{\mathrm{sp}}$ is massless then $-iR_u\tilde{Ξ}_{\mathrm{sp}}$ is massless too.
+**What the derivative does to the value.** A left multiplier and a right multiplier never fail to commute,
+$$
+L(a)\,R(b)=R(b)\,L(a)\quad\text{for all }a,b,
+$$
+so
+$$
+[\,L(\tilde\nabla),-iR_u\,]=0 .
+$$
+The derivative therefore carries each value into itself: if $\tilde\Xi$ has a value then so does $\tilde\nabla\tilde\Xi$, and a field of definite value stays of definite value under differentiation. The cell and the Dirac operator are the two sides of the same algebra, and their commutation is a consequence of the sides and not a computation about arrays.
 
-**The mass is the term with no side.** The mass term multiplies the field by the scalar $m$, and a central scalar is the one operator that is simultaneously a left multiplier and a right multiplier. It is therefore the only term of the equation that has no side, and it is exactly the term that couples the two sides. The algebra says this without any computation: a term that couples the sides cannot itself belong to one of them.
+**The massless case, and the split.** At $m=0$ the pair decouples into $\tilde\nabla\tilde{Ξ}_{\mathrm{sp},R}=0$ and $\tilde\nabla^{\natural}\tilde{Ξ}_{\mathrm{sp},L}=0$. For a null gradient the solution space of either member is two-dimensional over $\mathbb{C}$, and $-iR_u$ acts on it with the two eigenvalues $+1$ and $-1$, one state each. So a massless biquaternion Dirac field carries **one state of each value**, which is the standard statement that a massless Dirac fermion has both helicities. The mechanism is the commutation above: the solution space is stable under the cell, so a solution of definite value may be chosen.
 
-| Term | Multiplier | Slot |
-| --- | --- | --- |
-| $\tilde\nabla\tilde{Ξ}_{\mathrm{sp},R}$ | left by $\tilde\nabla$ | left |
-| $\tilde\nabla^{\natural}\tilde{Ξ}_{\mathrm{sp},L}$ | left by the conjugate | left |
-| $k_m\tilde{Ξ}_{\mathrm{sp}}$ | central scalar | both, hence no side |
+**The mass of the pair is a number, and a number has both slots.** In the pair the mass enters as $k_m$, and $k_m$ is central: it is a left multiplier and a right multiplier at once, so it holds both slots and has no single side. That is where its physical reading comes from, and it is also where the reading stops. Being in both slots, it acts on the two values alike, and a term that acts on them alike does not move a field from one to the other. In the projectors of the cell the statement is one equation, with $P_\pm=\tfrac12(\mathrm I\mp iR_u)$,
+$$
+P_+\,(k_m\mathrm I)\,P_-=0 ,
+$$
+which holds for every $k_m$: a central scalar is diagonal in the cell's own decomposition. The mass is the constant of proportionality that lets the pair say that each component is the derivative of the other, and a constant of proportionality is not a carrier.
 
-## The Eight Objects the Physics Does Not Need
+| Term | Multiplier | Slot | What it does to the value |
+| --- | --- | --- | --- |
+| $\tilde\nabla\tilde{Ξ}_{\mathrm{sp},R}$ | left by $\tilde\nabla$ | left | keeps it |
+| $\tilde\nabla^{\natural}\tilde{Ξ}_{\mathrm{sp},L}$ | left by the conjugate | left | keeps it |
+| $k_m\tilde{Ξ}_{\mathrm{sp}}$ | central scalar | both slots, hence no single side | keeps it |
+| $\tilde{Ξ}_{\mathrm{sp}}v$, $uv+vu=0$ | right by $v$ | right | exchanges it |
 
-**The list.** The mathematics article separates operator chirality from eight objects. The table repeats the separation and states, for each object, what a physicist would otherwise think it is doing.
+**What carries a field from one value to the other.** The exchange is a right-slot operation, and its condition is anticommutation with $u$:
+$$
+u v+v u=0\quad\Longrightarrow\quad R_v\,(-iR_u)=-(-iR_u)\,R_v ,
+$$
+since $R_vR_u=R_{uv}$ and $R_uR_v=R_{vu}$. Then $R_v$ carries one half into the other, and when $v$ is a unit perpendicular to $u$ it does so isometrically: $\lVert R_vP_+\rVert_{\mathrm F}=\lVert P_+\rVert_{\mathrm F}=\sqrt2$. For the cell $-iR_{\vec e_z}$ the elements that work are the complex combinations $a\vec e_x+b\vec e_y$, and not the two units alone.
+
+**How the corpus writes the mass as an operator.** A term that does the carrying exists in the corpus, and it is not the $k_m$ of the pair. The catalogue of what the algebra cannot host states it as the reading of an obstruction: *since a left multiplication acts by the same element on the two parts and cannot couple them, a mass term is not a left multiplication but a breaking, which the conventions realise as the right multiplication by $\tfrac12(i\vec e_x-\vec e_y)$* (*What the Biquaternion Algebra Cannot Do*, §*Physical Readings*). The element $\tfrac12(i\vec e_x-\vec e_y)$ anticommutes with $\vec e_z$ and is nilpotent, $\bigl(\tfrac12(i\vec e_x-\vec e_y)\bigr)^2=0$, so the map it gives is one-way: it carries the $-1$ part onto the $+1$ part, and applying it a second time gives zero. The word *breaking* is therefore a computation: the carrier is nilpotent, so the term is one-way, and it sits in the right slot.
+
+**Two readings of one word, kept apart.** The pair and the operator statement are both in the corpus, and they are not the same statement: the first uses the mass as a number and leaves the value alone, the second uses it as a right multiplier and moves the value. Which one a computation needs depends on the question. A mass shell, a dispersion relation, a plane wave: the pair, because the value plays no part in them. A chiral current, an axial rotation, a condensate, an anomaly coefficient: the right multiplier, because there the value is the whole subject. The corpus keeps the two apart in the same words in *The Roots of a General Element, Mass Frames and the Mass Shell*: the mass shell is a statement of the gradient equation, and the chirality, the axial current and the condensate are statements of the field's right multiplication.
+
+**Commutation, and the anticommutation a reader will expect.** On $\mathbb{B}$ the cell multiplies on the right and the derivative on the left, so the two commute, and the commutation says that the cell preserves each of its own eigenspaces. In a matrix display the cell is diagonal and the derivative is off-diagonal, and the anticommutation of the two is that display's way of saying the derivative carries one eigenspace into the other. The anticommutation is therefore a statement about the derivative, and it is true of the display's derivative and not of the algebra's left multiplier. The display's four frame cells are $iL_{e_a}R_{e_{\nu(a)}}$, and each of the four anticommutes with the cell: that is the standard chiral structure, and it is a property of those four operators rather than of the cell. The conclusion for a solution is the same in either account and needs no display: if $\tilde{Ξ}_{\mathrm{sp}}$ is massless then $-iR_u\tilde{Ξ}_{\mathrm{sp}}$ is massless too.
+
+## The Eleven Objects the Physics Does Not Need
+
+**The list.** The mathematics article separates operator chirality from eleven objects. The table repeats the separation and states, for each object, what a physicist would otherwise think it is doing.
 
 | Object | What a physicist might expect it to do | Why the physics does not need it |
 | --- | --- | --- |
@@ -113,22 +142,31 @@ so the conjugate member of the pair is the same operator read on the other side.
 | an idempotent | supply a state or a superselection sector | the cell is an involution, $(-iR_u)^2=\mathrm I$, not a projector |
 | a Peirce decomposition | supply the two chiral halves | the halves are the eigenspaces of one operator, not four corners of two idempotents |
 | a Peirce basis | supply the working basis | a basis is a display; the side is read without one |
-| a spinor | supply the object that carries chirality | the operator is defined before any ideal is chosen |
-| an ideal | supply the state space | the state space is $\mathbb{B}$ itself, and no point of a projective line is chosen |
+| a spectrum | supply the sign, as the pair $+1,-1$ | a list of numbers belonging to one chosen operator |
+| a spinor | supply the object that carries chirality | a spinor is an element of $\mathbb{B}$; the label is a property of an operator |
+| the module $S$ | supply the space the states live in | $S$ is one minimal left ideal, and it needs a point of a projective line |
+| an ideal | supply the state space | a subspace of $\mathbb{B}$, and no ideal is mentioned in the definition |
 | a Clifford algebra | supply the sign as a product of generators | the sign is the side of a right multiplier, and a product of generators is one operator among many |
+| a matrix unit of $M_4(\mathbb{C})$ | supply the cell, since the cell is a basis element of the display | the cell is a sum of four matrix units, and $4$ is the display's number and not the algebra's |
 | the cell itself | be what chirality means | it is an example of the right slot, and an example cannot be the definition |
 
 **No root.** A root $\tilde{Ζ}$ with $\tilde{Ζ}^2=e_t$ is an element chosen in the algebra, and it is needed when a Peirce decomposition is wanted. The cell needs one element with a stated square and a stated trace, so the choice stops where $u$ is named. A change of root changes the Peirce data and leaves the label of every operator untouched.
 
 **No idempotent.** An idempotent satisfies $\tilde\Pi^2=\tilde\Pi$, and it is the algebraic form of a projection, hence of a state preparation. The cell satisfies $(-iR_u)^2=\mathrm I$ and is not a projection: it is a sign, and a sign is not a state. The projectors $\tfrac12(\mathrm I\pm iR_u)$ are built from it when a projection is wanted, and they are derived objects.
 
+**No spectrum, and no pair of eigenvalues.** The sentence a physicist is likeliest to write is that chirality is the two eigenvalues $+1$ and $-1$. It is true of one chosen cell and false of the notion, and the difference is visible in counting: the label has four cases, a spectrum is a list of numbers, and two of the four cases have no spectrum at all. The eigenvalues follow from the cell the moment the cell is fixed, and they do not tell a reader which slot it sits in. What they do supply is the balance, two of each sign, and that balance is what lets the cell be used as a projector once it has been chosen.
+
 **No Peirce decomposition and no Peirce basis.** A Peirce decomposition needs two idempotents and returns four lines. The chiral splitting is one operator and returns two halves. Four lines and two halves are not the same partition, and the difference is measurable: the Peirce lines are one-dimensional corners of $\mathbb{B}$, and the chiral halves are two-dimensional left modules.
 
-**No spinor.** A spinor is an element of a minimal left ideal, which is produced by a rank-one idempotent, which is a point of a projective line. The cell is a right multiplier, it chooses no point of that line, and it acts on the whole algebra.
+**No spinor, and no module $S$.** A spinor is an element of a minimal left ideal, and the corpus writes one such ideal $S$ and its conjugate $S^{\mathrm{c}}$. Both are subspaces of $\mathbb{B}$: $S$ is four real dimensions of the algebra, and a state is a vector in it. The label is not in that space at all. A spinor is an object the algebra multiplies; the label is a property of the thing that multiplies. That is why an article can define chirality and never mention a spinor, and why a sentence of the form *this spinor is left-handed* is a statement about the value of one cell on one vector and not about the notion.
+
+**No ideal.** An ideal is a subspace $I$ of $\mathbb{B}$ closed under multiplication, and none is needed, because the two spaces are different: the label is a membership in the sixteen-dimensional space of operators, and an ideal is a subspace of the four-dimensional algebra those operators act on. The objection is not that ideals are hard to compute with; it is that no ideal can appear in the definition, and no statement about the label is proved by exhibiting one. The temptation is real, because a minimal left ideal is the natural home of a spinor and a spinor is where a physicist expects the handedness to live. The expectation is met by a different object: the value of the cell on the spinor.
 
 **No ideal.** The minimal left ideals of $\mathbb{B}$ are indexed by the points of a projective line, and no point is distinguished. An operator that multiplied on one side and selected a point would be an ideal in disguise. The cell selects nothing: it multiplies, and the two eigenspaces follow from its square and its trace alone.
 
 **No Clifford algebra.** This deserves a paragraph, because the Clifford reading is the one a physicist is most likely to reach for. A Clifford algebra is generated by vectors with $\{e_i,e_j\}=2g_{ij}$, and in it the sign is the product of the generators by construction. In the biquaternion algebra the corresponding identity holds as a fact about five cells, and it is a fact, not an axiom. The relation fixes squares and anticommutators; what operator chirality uses is the side, and the relation says nothing about sides. A Clifford algebra also fixes a dimension and a signature, while the two images exist for every algebra in every dimension. The Clifford reading is a display of the algebra, and a correct display; it is not a foundation, and nothing in the physics is derived from it that the cells do not already give.
+
+**No matrix unit, and no basis element of the display.** In a display the cell is a diagonal of signs, and the smallest thing a display has is a matrix unit $E_{ij}$; so the cell is often described as a basis element of $M_4(\mathbb{C})$, or as the unit of a basis in which it is diagonal. It is not one. Written in any display the cell is a sum of four matrix units, and it is a single operator rather than a combination of four. The number $4$ is the size of one display of an algebra of complex dimension four; the two images are defined by the multiplication of any algebra, in any dimension, with no display at all. A definition that names a matrix unit names one display, and it fails the moment the display changes, while the label of every operator stays where it was.
 
 **Why no anticommutation can give the sign.** It is worth stating the reason, because it explains why the side is the right notion and not merely an available one. If the sign were characterised by anticommuting with the generators, it would have to anticommute with $L(e_t)$, which is the identity, and an operator anticommuting with the identity is zero. There is no such operator. The sign is not produced by an anticommutator; it is produced by the side.
 
@@ -145,15 +183,15 @@ so the conjugate member of the pair is the same operator read on the other side.
 - **No derivation of the gauge group.** The algebra supplies the sign; it does not supply the Standard Model gauge group, its representations or its breaking pattern.
 - **No second kind of field.** The two values of the cell belong to fields of one kind; distinguishing the left-handed field from its conjugate is not something an operator of $\mathbb{B}$ does.
 - **No matter content and no generations.** The number of copies is an input.
-- **No mass value and no spectrum.** The algebra fixes the slot of the mass term, which is the centre, and the number $m$ is dynamical.
-- **No dynamics.** Nothing here says how a field moves between the sides.
+- **No mass value and no spectrum.** The algebra fixes the slot of the mass term, which is the right slot, and the element that can carry it, which is any $v$ with $uv+vu=0$; the number $m$ is dynamical, and the pair says nothing about it beyond its appearance as $k_m$.
+- **No dynamics.** The algebra names the term that carries a field from one value to the other; it does not say when the term acts, nor with what coefficient beyond the $k_m$ of the pair.
 - **The element is a choice.** The cell is built from one element. Another traceless $u$ with $u^2=-e_t$ gives another cell, with the same four properties and the same slot, while every label of every operator stays where it was. The choice is invisible to the physics, which uses the side.
 
 ## Summary
 
-Operator chirality is the side on which an operator multiplies: the left slot, the right slot, both slots at once for the scalars, and no single side otherwise. One cell realises the split, $-iR_u$ for a traceless $u$ with $u^2=-e_t$. It is a pure right multiplier, so it is an example of the right slot and not the definition of chirality. The Dirac operator is the pure left multiplier $L(\tilde\nabla)$, and the two commute because a left multiplier never fails to commute with a right one. That commutation is why a massless field carries states of both chiralities. The mass is the central scalar, the one term of the equation with no side, and therefore the term that couples the two.
+Operator chirality is the side on which an operator multiplies: the left slot, the right slot, both slots at once for the scalars, and no single side otherwise. One cell realises the split, $-iR_u$ for a traceless $u$ with $u^2=-e_t$. It is a pure right multiplier, so it is an example of the right slot and not the definition of chirality. The Dirac operator is the pure left multiplier $L(\tilde\nabla)$, and the two commute because a left multiplier never fails to commute with a right one. That commutation is why a massless field carries states of both chiralities. The mass appears twice and the two appearances are not one statement. As $k_m$ in the pair it is central, it holds both slots, and it keeps the value. As a right multiplication by an element that anticommutes with $u$ it is a one-sided term that carries the field from one value to the other. Only the second of these is a coupling of the two values, and only the second is in the right slot.
 
-The construction needs none of the eight objects that usually carry the name: no root, no idempotent, no Peirce decomposition, no Peirce basis, no spinor, no ideal, no Clifford algebra, and no separate chirality element standing in for the definition. Each of them is a choice, and each of them is invisible in the numbers a display prints, which is why the numbers were mistaken for the notion. The cell prints the same in every reading, and none of those structures is needed to reach it.
+The construction needs none of the eleven objects that usually carry the name: no root, no idempotent, no Peirce decomposition, no Peirce basis, no spectrum, no spinor, no module $S$, no ideal, no Clifford algebra, no matrix unit of a display, and no separate chirality element standing in for the definition. Each of them is a choice, and each of them is invisible in the numbers a display prints, which is why the numbers were mistaken for the notion. The cell prints the same in every reading, and none of those structures is needed to reach it.
 
 The limit is stated once and it is not small: the two values of the cell separate fields of one kind, so the algebra is vector-like, and the distinction the Standard Model draws between the left-handed field and its conjugate is not an operator distinction of $\mathbb{B}$.
 
@@ -169,7 +207,9 @@ The limit is stated once and it is not small: the two values of the cell separat
 | $u$ | a traceless element with $u^2=-e_t$ |
 | $-iR_u$ | the cell that realises the split, a pure right multiplier: an example of the right slot and not the definition |
 | $\tfrac12(\mathrm I\pm iR_u)$ | the two chiral projectors, derived from the sign |
-| $m$ | the mass, the central scalar of the equation |
+| $P_\pm=\tfrac12(\mathrm I\mp iR_u)$ | the projectors onto the two values |
+| $m$, $k_m=mc/\hbar$ | the mass and its wave number; in the pair the coefficient is central and keeps the value |
+| $v$, $uv+vu=0$ | the carrier of the mass as an operator: a right multiplier that exchanges the two values |
 
 ## Further Reading
 
