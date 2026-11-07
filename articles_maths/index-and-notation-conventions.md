@@ -1,4 +1,4 @@
-# __Index, Notation and Corpus Conventions__
+# __Index and Notation Conventions__
 
 ## Introduction
 

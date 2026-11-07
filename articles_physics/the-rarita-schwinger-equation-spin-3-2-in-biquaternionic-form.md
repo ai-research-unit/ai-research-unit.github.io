@@ -28,7 +28,7 @@ $$
 \sum_\mu\varepsilon_\mu\,\partial/\partial x_\mu\,\tilde{Ξ}_{\mathrm{sp},\mu}&=0,
 \end{aligned}
 $$
-with $\varepsilon=(1,-1,-1,-1)$ the sign vector of the frame, as fixed in *Unit, Index and Notation Conventions*, §*The Subscripts*. The source states the three statements as one antisymmetrized equation; the algebra states them as the pair and the two constraints, and the translation between the two writings is made once, in §*The Field in the Biquaternion Framework*.
+with $\varepsilon=(1,-1,-1,-1)$ the sign vector of the frame, as fixed in *Index and Notation Conventions*, §*The Subscripts*. The source states the three statements as one antisymmetrized equation; the algebra states them as the pair and the two constraints, and the translation between the two writings is made once, in §*The Field in the Biquaternion Framework*.
 
 **In the rest frame the pair leaves four complex parameters, and they are the quartet.** The pair forces the time component of the family to vanish, the three spatial components satisfy one vector condition, $\sum_k\vec e_k\tilde{Ξ}_{\mathrm{sp},k}=0$, and the surviving space is exactly four-dimensional. It carries the spin-$\tfrac32$ quartet, and the condition on the vector index acts on the three directions as the transverse map of §*The Transverse Condition on the Vector Index*.
 

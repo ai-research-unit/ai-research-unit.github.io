@@ -261,7 +261,7 @@ No generic $E$ is written outside the matrix model, and no tilde on a pure eleme
 $$
 s=\max\operatorname{spec}\bigl(\rho(\vec u\cdot\vec S)\bigr)\in\tfrac12\mathbb{Z}_{\ge0},
 $$
-a scalar label and not a vector. The generator is $\tilde S_k$, the label $s$, the projection $s_z$; a total of several parts carries the role subscript $s_{\mathrm{tot}}$ (*Index, Notation and Corpus Conventions*, §*The Subscripts*).
+a scalar label and not a vector. The generator is $\tilde S_k$, the label $s$, the projection $s_z$; a total of several parts carries the role subscript $s_{\mathrm{tot}}$ (*Index and Notation Conventions*, §*The Subscripts*).
 
 **The two carriers of $\mathbb{B}$.** The minimal left ideals are
 $$

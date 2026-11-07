@@ -161,5 +161,5 @@ The metric is one, and it is the tuple of the interval in the $Q$'s: $\delta_{\m
 - [Conventions of the Twelve Products and the Four Forms](product-and-form-conventions.html), for the interval, the plain weight and the other two norms.
 - [Conventions of the Matrix Models](matrix-representations-conventions.html), for the explicit arrays and the one set of gamma matrices.
 - [Operator and Calculus Conventions](operator-and-calculus-conventions.html), for the calculus these frames read.
-- [Conventions of the Indices, the Notation and the Corpus](index-notation-and-corpus-conventions.html), for the index rule that keeps the gamma label low.
+- [Conventions of the Indices, the Notation and the Corpus](index-and-notation-conventions.html), for the index rule that keeps the gamma label low.
 - [The Gamma Frame and the Complexified Dirac Algebra of $M_4(\mathbb{C})$](the-gamma-frame-and-the-complexified-dirac-algebra-of-m4c.html), for the gamma matrices read as an object of their own.

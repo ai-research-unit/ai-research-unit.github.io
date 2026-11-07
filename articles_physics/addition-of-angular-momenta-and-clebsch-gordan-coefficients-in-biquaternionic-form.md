@@ -12,7 +12,7 @@ The article is organised as follows. The next section recalls the angular-moment
 
 ## The Angular-Momentum Algebra in Biquaternion Form
 
-The conventions are those of the companion articles: the algebra, the units, the sectors and the conjugations are those of *Algebra and Element Conventions* and *Unit, Index and Notation Conventions*, and none is restated here.
+The conventions are those of the companion articles: the algebra, the units, the sectors and the conjugations are those of *Algebra and Element Conventions* and *Physics Units and Most Common Elements*, and none is restated here.
 
 An angular momentum is a triple of Hermitian elements $\tilde S_{\mathrm{tot},1},\tilde S_{\mathrm{tot},2},\tilde S_{\mathrm{tot},3}\in\mathbb{B}_{\Psi}$ satisfying
 

@@ -58,7 +58,7 @@ and they were checked by recomputation on generic elements. The conjugation ther
 
 The dictionary is stated first in its standard form, then in the framework's notation.
 
-**The two components of the current.** The adjoint of the field is the field read through the Hermitian conjugation and followed by the arena's timelike cell (*Unit, Index and Notation Conventions*, §*The Upper and Low Marks*). In the arena the two components of the current reduce to two scalar parts,
+**The two components of the current.** The adjoint of the field is the field read through the Hermitian conjugation and followed by the arena's timelike cell (*Index and Notation Conventions*, §*The Upper and Low Marks*). In the arena the two components of the current reduce to two scalar parts,
 $$
 j_t=\mathrm{Sc}\bigl(\tilde{Ξ}_{\mathrm{sp}}^*\tilde{Ξ}_{\mathrm{sp}}\bigr),
 \qquad

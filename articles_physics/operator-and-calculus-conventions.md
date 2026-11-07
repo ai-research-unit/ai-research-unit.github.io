@@ -4,7 +4,7 @@
 
 These are the conventions of the operators and of the calculus. An operator acting by multiplication is the element it multiplies by, and its glyph is the glyph of that element; the article fixes the named operators, the dagger, the Kraus operator and the Fock exception. The calculus follows: the derivative marks, the gradient and the d'Alembertian, and the four product-form-norm readings of the gradient that the field equations use.
 
-The article assumes the base of *Algebra and Element Conventions*, the products and forms of *Product and Form Conventions*, and the norms of *Norm and Pairing Conventions*. The matrix models are in *Matrix Representations Conventions*; the superscripts on operators are in *Unit, Index and Notation Conventions*.
+The article assumes the base of *Algebra and Element Conventions*, the products and forms of *Product and Form Conventions*, and the norms of *Norm and Pairing Conventions*. The matrix models are in *Matrix Representations Conventions*; the superscripts on operators are in *Index and Notation Conventions*.
 
 ## The Operators
 
@@ -48,7 +48,7 @@ The gradient decides the case cleanly: $\tilde\nabla$ is not pure, because its $
 
 **A Kraus operator is an element, not an array.** The Kraus operators of a channel or an instrument multiply the state on both sides, $Ξ(\tilde{Ϛ})=\sum_l\tilde K_l\tilde{Ϛ}\tilde K_l^{*}$, so each $\tilde K_l$ is an element of $\mathbb{B}$ and carries the tilde of the element. It is not a matrix, and the ban on a tilde on an array does not apply to it. Where the same operator is read as an array, that array is its image $\mathsf{M}_2(\tilde K_l)$, which carries no tilde, and its adjoint is the dagger, $\mathsf{M}_2(\tilde K_l)^{\dagger}=\mathsf{M}_2(\tilde K_l^{*})$; the corpus does not use that reading, and the star on the element is not a matrix adjoint.
 
-**The Fock exception.** A Fock operator is not an element of the algebra; its superscript $\mathrm{fop}$ and the order of the two marks are fixed in *Unit, Index and Notation Conventions*, §*The Labels*.
+**The Fock exception.** A Fock operator is not an element of the algebra; its superscript $\mathrm{fop}$ and the order of the two marks are fixed in *Index and Notation Conventions*, §*The Labels*.
 
 ## The Two Sides and the Renaming Theorem
 
@@ -132,7 +132,7 @@ so the two arrays differ and neither may be substituted for the other at sight. 
 
 In this work, subscripts denote vector components, not partial derivatives as in the PDE convention; every partial derivative is written explicitly with $\partial$ followed by its variable, and no subscript is ever attached to the $\partial$ of a derivative. A subscript is therefore a component index, as in $v_x$ for the component of a velocity along an axis, or a label, as in $\tilde U_{\mathrm r}$; it never denotes a derivative. The derivative with respect to a coordinate is written $\partial/\partial R_\mu$, and in a fixed direction $\partial/\partial R_t$, $\partial/\partial R_x$, $\partial/\partial R_y$ or $\partial/\partial R_z$; a coordinate is never left under the $\partial$, so none of the abbreviated spellings occurs, and the rule admits no exception for a derivative, neither on a free index nor on any other.
 
-**A subscript on an operator names its degree, its place or its argument.** The rule governs the derivative of a field, which names its variable after the $\partial$. It does not forbid a low mark on an operator that differentiates nothing: the chain boundary is $\partial_n:C_n\to C_{n-1}$, with the degree in the subscript, and a derivative taken along a vector is $\nabla_X$, with the vector. These are operator labels, in the sense of *Unit, Index and Notation Conventions*, §*The Subscripts*, and they stand as written.
+**A subscript on an operator names its degree, its place or its argument.** The rule governs the derivative of a field, which names its variable after the $\partial$. It does not forbid a low mark on an operator that differentiates nothing: the chain boundary is $\partial_n:C_n\to C_{n-1}$, with the degree in the subscript, and a derivative taken along a vector is $\nabla_X$, with the vector. These are operator labels, in the sense of *Index and Notation Conventions*, §*The Subscripts*, and they stand as written.
 
 **A variant of an operator is a label, and a chart is not a variant.** The gradient carries $\natural$ in the caret or a label low, $\tilde\nabla^{\natural}$ and $\tilde\nabla_{\mathrm{gco}}$, and it never takes a letter in the low slot for the coordinates it is read in. The Wick rotation is written on the coordinate, $r'_t\mapsto-i\tau$, which sends $R_t=i c r'_t$ to $R_t=c\tau$; the four terms of the sum are unchanged, only the sign of $\partial^2/\partial R_t^2$ moves, and the article that continues the coordinates says which chart it reads them in rather than marking the operator.
 
@@ -686,5 +686,5 @@ The four forms remain four distinct conventions and the norms two, because each 
 - [Conventions in the Biquaternion Universe](algebra-and-element-conventions.html), for the algebra and the element glyphs.
 - [Conventions of the Products and the Forms](product-and-form-conventions.html), for the four products read on the gradient.
 - [Conventions of the Norms and the Pairings](norm-and-pairing-conventions.html), for the norms of those products.
-- [Conventions of the Units, the Indices and the Notation](unit-index-and-notation-conventions.html), for the Fock superscript and the subscript rules.
+- [Index and Notation Conventions](index-and-notation-conventions.html), for the Fock superscript and the subscript rules.
 - [The Element and Operator Representations](element-and-operator-representations-the-three-actions.html), companion article, for the three actions and their matrices.

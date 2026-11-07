@@ -55,7 +55,7 @@ Every defect is one of three: a missing datum, a part printed as the whole, or t
 - [Matrix Representations Conventions](matrix-representations-conventions.html). The three displays, the Pauli form, the Clifford structure and the legacy gamma block.
 - [Operator and Calculus Conventions](operator-and-calculus-conventions.html). The operator that is its element, the dagger and the Fock exception.
 - [Operator Family Conventions](operator-family-conventions.html). The four families and the slot label that is the chirality.
-- [Index, Notation and Corpus Conventions](index-notation-and-corpus-conventions.html). The marks, the subscripts and the working conventions of the corpus.
+- [Index and Notation Conventions](index-and-notation-conventions.html). The marks, the subscripts and the working conventions of the corpus.
 - [Operator Chirality on the Biquaternion Algebra](operator-chirality-on-the-biquaternion-algebra.html). The two slots, the chirality operator of a frame, the subscript on an element, and the eight objects the notion does not need.
 - [Angular Momentum and Spin in the Biquaternion Algebra](angular-momentum-and-spin-in-the-biquaternion-algebra.html). The generators, the Casimir, the definition of spin, and the carriers that carry it.
 - [Introduction to the Mathematical Corpus](introduction-to-the-mathematical-corpus.html). The exclusion of the applications, which is the restraint the second condition asks for.

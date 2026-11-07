@@ -156,7 +156,7 @@ In the Einstein–Cartan–Sciama–Kibble theory the torsion is not free: it is
 $$
 \operatorname{Sc}\bigl(\tilde{Ξ}_{\mathrm{sp}}^*\,i\,X\,\vec e_x\bigr),
 $$
-where $X$ is the element the density reads (*Norm and Pairing Conventions*, §*The Four Algebraic Norms and the Unitary Convention*). The fixed element $i\vec e_x$ is the timelike frame cell, written as the one multiplier it is: this is the Dirac adjoint of *Unit, Index and Notation Conventions*, §*The Upper and Low Marks*, with its operator spent, and it is the same factor in every density below. No column, no row and no matrix product is written anywhere in this section.
+where $X$ is the element the density reads (*Norm and Pairing Conventions*, §*The Four Algebraic Norms and the Unitary Convention*). The fixed element $i\vec e_x$ is the timelike frame cell, written as the one multiplier it is: this is the Dirac adjoint of *Index and Notation Conventions*, §*The Upper and Low Marks*, with its operator spent, and it is the same factor in every density below. No column, no row and no matrix product is written anywhere in this section.
 
 For the field $\tilde{Ξ}_{\mathrm{sp}}$ the spin density is the completely antisymmetric bilinear of three frame cells, read in that pairing. Written on the field, the element it reads is
 $$
