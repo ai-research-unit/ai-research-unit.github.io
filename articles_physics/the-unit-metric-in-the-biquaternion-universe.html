@@ -96,7 +96,7 @@ $$</p>
 <p>$$
 \langle e_\mu\rangle_\natural=e_\mu e_\mu^\natural=+1,\qquad \mu\in\{t,x,y,z\}.
 $$</p>
-<p>The two cases are computed directly: $e_te_t^\natural=e_te_t=1$, and $\vec e_k\vec e_k^\natural=\vec e_k(-\vec e_k)=-\vec e_k^2=+1$. No sign is inserted anywhere, because the natural conjugation supplies the sign and the square supplies it back.</p>
+<p>The two cases are computed directly: $e_te_t^\natural=e_te_t=1$, and $\vec e_k\vec e_k^\natural=\vec e_k(-\vec e_k)=-\vec e_k^2=+1$. No sign is inserted anywhere, because the quaternion conjugation supplies the sign and the square supplies it back.</p>
 <p><strong>That one line is the metric.</strong> The Gram matrix of the quaternionic form on the base is</p>
 <p>$$
 \langle e_\mu,e_\nu\rangle_\natural=\mathrm{Sc}\bigl(e_\mu^\natural e_\nu\bigr)=\delta_{\mu\nu},
@@ -106,7 +106,7 @@ $$</p>
 <p><strong>A frame carries a coordinate, not a metric.</strong> Both frames read the same $\delta_{\mu\nu}$, because both read the same norm. What separates them is the coordinate the norm is read in: $Q_\mu$ in $\mathbb{B}$, the real $x_\mu$ in $\mathbb{B}_{\Phi}$. A frame that carried a metric of its own would be a second object, and the rest of this article is about why the series keeps one.</p>
 <h2 id="the-metric-is-read-off-the-product">The Metric Is Read Off the Product</h2>
 <h3 id="the-quaternionic-form-and-the-plain-form">The quaternionic form and the plain form</h3>
-<p>Two bilinear forms live on the algebra, and they differ in one slot. The <strong>plain</strong> form takes the scalar part of the product, $\mathrm{Sc}(\tilde Q_1\tilde Q_2)$. The <strong>quaternionic</strong> form conjugates the first slot before multiplying, $\mathrm{Sc}(\tilde Q_1^\natural\tilde Q_2)$, and it is the one the natural conjugation supplies. On the base the two read</p>
+<p>Two bilinear forms live on the algebra, and they differ in one slot. The <strong>plain</strong> form takes the scalar part of the product, $\mathrm{Sc}(\tilde Q_1\tilde Q_2)$. The <strong>quaternionic</strong> form conjugates the first slot before multiplying, $\mathrm{Sc}(\tilde Q_1^\natural\tilde Q_2)$, and it is the one the quaternion conjugation supplies. On the base the two read</p>
 <p>$$
 \mathrm{Sc}(e_\mu e_\nu)=\varepsilon_\mu\delta_{\mu\nu},\qquad
 \mathrm{Sc}(e_\mu^\natural e_\nu)=\delta_{\mu\nu},
@@ -138,7 +138,7 @@ $$</p>
 </tr>
 </tbody>
 </table></div>
-<p><strong>The weight is what the conjugation does.</strong> For each unit, $e_\mu^\natural=\varepsilon_\mu e_\mu$: the natural conjugation leaves the temporal unit and negates the three space units. So the two forms differ by the weight, applied entrywise, and the weight squares to the identity. <strong>The metric is what is left when the weight has been applied twice.</strong></p>
+<p><strong>The weight is what the conjugation does.</strong> For each unit, $e_\mu^\natural=\varepsilon_\mu e_\mu$: the quaternion conjugation leaves the temporal unit and negates the three space units. So the two forms differ by the weight, applied entrywise, and the weight squares to the identity. <strong>The metric is what is left when the weight has been applied twice.</strong></p>
 <p><strong>The metric is a theorem of the table.</strong> Solving the first display for the metric gives</p>
 <p>$$
 \delta_{\mu\nu}=\frac{\mathrm{Sc}(e_\mu e_\nu)}{\mathrm{Sc}(e_\mu e_\mu)} ,
@@ -292,7 +292,7 @@ $$</p>
 <p>The two objects are different and the series keeps both. The unit metric is the flat form of the algebra at a point: it is the Gram matrix of the norm, it has constant coefficients, and it says nothing about curvature. A curved metric is a field that attaches the algebra to a manifold, and it is carried by a tetrad, not by $\delta_{\mu\nu}$. Curvature cannot reside in the algebra for the reason the curved-space article gives: the algebra is the same at every point and its norm has constant coefficients. So the identity metric is not a rival of the dynamical $g_{\mu\nu}(x)$; it is the local flat form that the dynamical metric reduces to at a point, and the articles that carry a curved metric keep theirs unchanged.</p>
 <h3 id="the-objection-from-invariants">The objection from invariants</h3>
 <p><em>Without a metric you cannot form an invariant, and without a metric you cannot raise an index.</em></p>
-<p>The invariant is the norm, and the norm is a product. A boost is a rotor, $B=\cosh\frac{\theta_{\mathrm{rpd}}}{2}+i\sinh\frac{\theta_{\mathrm{rpd}}}{2}\vec u$ for a unit real vector $\vec u$, and it acts by conjugation, $\tilde Q\mapsto B\tilde Q B^{*}$. That action leaves the norm fixed, and the proof uses no metric. A rotor has quaternionic norm one, $BB^\natural=1$, so $B^\natural=B^{-1}$. Because the natural conjugation is an involution and commutes with the bar, $(B^{*})^\natural=\bar B$, so $B^{*}\bar B=\langle B^{*}\rangle_\natural=1$. Then</p>
+<p>The invariant is the norm, and the norm is a product. A boost is a rotor, $B=\cosh\frac{\theta_{\mathrm{rpd}}}{2}+i\sinh\frac{\theta_{\mathrm{rpd}}}{2}\vec u$ for a unit real vector $\vec u$, and it acts by conjugation, $\tilde Q\mapsto B\tilde Q B^{*}$. That action leaves the norm fixed, and the proof uses no metric. A rotor has quaternionic norm one, $BB^\natural=1$, so $B^\natural=B^{-1}$. Because the quaternion conjugation is an involution and commutes with the bar, $(B^{*})^\natural=\bar B$, so $B^{*}\bar B=\langle B^{*}\rangle_\natural=1$. Then</p>
 <p>$$
 \bigl\langle B\tilde Q B^{*}\bigr\rangle_\natural=B\tilde Q B^{*}(B^{*})^\natural\tilde Q^\natural B^\natural=B\tilde Q\,\tilde Q^\natural B^{-1}=\langle\tilde Q\rangle_\natural ,
 $$</p>

@@ -1,0 +1,2203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Conjugation Migration: The Purge of Natural Conjugation — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="conjugation-migration-the-purge-of-natural-conjugation"><strong>Conjugation Migration: The Purge of Natural Conjugation</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p><strong>The verdict.</strong> The corpus names one map by two names, and uses the two almost equally. <em>Quaternion conjugation</em> is written $396$ times. <em>Natural conjugation</em> is written $373$ times. The map is the same in both cases,
+$$
+\tilde Q^{\natural}=Q_te_t-Q_x\vec e_x-Q_y\vec e_y-Q_z\vec e_z .
+$$
+One name must go. The one to keep is <em>quaternion conjugation</em>. The one to retire is <em>natural conjugation</em>, with its two satellites <em>natural sign</em> and <em>natural conjugate</em>.</p>
+<p><strong>The scale.</strong> The retired name stands in $180$ article files and in $14$ lines of the mathematics menu. The four forms of the name total $566$ occurrences in the articles and $14$ in the menu. The heaviest file carries $14$ occurrences. The median file carries $2$. One hundred and five files carry one or two, and those $105$ files hold $149$ of the $566$.</p>
+<p><strong>This article is the record of a completed pass.</strong> Every count in §<em>The Count</em> and §<em>The Inventory</em> is the count before the pass, kept as the census. §<em>The Applied State</em> gives the count after it. The article fixes the object, states the one serious objection and answers it, gives the substitution table, lists every file that carried the name, names the places where a substitution breaks the sentence, gives the ordered passes, and closes with the verification and the residue.</p>
+<p><strong>What the article does not claim.</strong> It does not claim that the map is ill-defined. It does not claim that the glyph ${}^{\natural}$ should change. It does not claim that the articles that use the retired name are wrong about the mathematics; they are not. It claims that the word carries no information that the word <em>quaternion</em> does not carry, that the corpus has already chosen the surviving name, and that the rest is a deletion.</p>
+<p><strong>The organisation.</strong> §<em>The Map and the Two Names</em> fixes the object and counts the names. §<em>Why the Word Goes</em> gives the five reasons. §<em>The Objection</em> names the strongest counter-argument and answers it. §<em>The Senses</em> is the substitution table. §<em>The Inventory</em> lists the $180$ articles with their links. §<em>The Sites That Need Reading</em> names the places where a substitution produces a false sentence. §<em>The Strategy</em> gives the nine passes. §<em>The Cost</em> counts the work. §<em>The Applied State</em> gives the numbers the pass reached.</p>
+<h2 id="the-map-and-the-two-names">The Map and the Two Names</h2>
+<h3 id="the-map">The Map</h3>
+<p><strong>One formula on every layer.</strong> The map reads the scalar coordinate as it stands and negates the three vector coordinates. It is fixed on the scalar part and negated on the vector part, so its fixed space is the centre $\mathbb{B}_{C}$ and its anti-fixed space is the vector subspace $\mathbb{B}_{V}$.</p>
+<p><strong>It is $\mathbb{C}$-linear.</strong> The coefficients are complex, and no coefficient is conjugated, so the map commutes with the multiplication by a complex scalar. This is the property that separates it from the other three conjugations of the algebra.</p>
+<p><strong>It reverses the order of a product.</strong> For every pair,
+$$
+(\tilde Q_1\tilde Q_2)^{\natural}=\tilde Q_2^{\natural}\tilde Q_1^{\natural} ,
+$$
+and applying it twice returns the element. It is an anti-automorphism of order two.</p>
+<p><strong>It is one of four conjugations.</strong> The algebra carries the coefficient bar $\bar{\cdot}$, the map ${}^{\natural}$, the Hermitian star ${}^{*}=\bar{\cdot}\circ{}^{\natural}$, and the reversal ${}^{\flat}=-{}^{*}$. The corpus counts them as three involutions and one reversal, and they single out four subspaces. The map ${}^{\natural}$ is the only one of the four that is linear, and the only one that is a quaternion operation with the coefficients untouched.</p>
+<h3 id="the-count">The Count</h3>
+<p><strong>The two names are tied.</strong> A name used $373$ times is not a stray. A corpus that writes one name $396$ times and the other $373$ times has not chosen; it has drifted. The table gives the seven forms.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>name</th>
+<th>occurrences</th>
+<th>decision</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>quaternion conjugation</td>
+<td>$396$</td>
+<td>keep</td>
+</tr>
+<tr>
+<td>natural conjugation</td>
+<td>$373$</td>
+<td>retire</td>
+</tr>
+<tr>
+<td>natural sign</td>
+<td>$122$</td>
+<td>retire</td>
+</tr>
+<tr>
+<td>natural conjugate, as a noun</td>
+<td>$69$</td>
+<td>retire</td>
+</tr>
+<tr>
+<td>quaternion conjugate, as a noun</td>
+<td>$278$</td>
+<td>keep</td>
+</tr>
+<tr>
+<td>quaternionic conjugation</td>
+<td>$24$</td>
+<td>deferred</td>
+</tr>
+<tr>
+<td>natural involution</td>
+<td>$12$</td>
+<td>$9$ retire, $3$ stay</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>The two names for the noun are tied in the same way.</strong> <em>Quaternion conjugate</em> is written $278$ times and <em>natural conjugate</em> $69$ times. The noun follows the name of the map, so it moves with it.</p>
+<p><strong>Where the name stands.</strong> The table gives the four forms by corpus. The columns are <em>conj.</em> for <em>natural conjugation</em> or <em>natural conjugations</em>, <em>sign</em> for <em>natural sign</em>, <em>conj. noun</em> for <em>natural conjugate</em> or <em>natural conjugates</em>, and <em>invol.</em> for <em>natural involution</em>.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>corpus</th>
+<th>files</th>
+<th>conj.</th>
+<th>sign</th>
+<th>conj. noun</th>
+<th>invol.</th>
+<th>total</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>mathematics</td>
+<td>$134$</td>
+<td>$315$</td>
+<td>$90$</td>
+<td>$46$</td>
+<td>$10$</td>
+<td>$461$</td>
+</tr>
+<tr>
+<td>physics</td>
+<td>$40$</td>
+<td>$39$</td>
+<td>$31$</td>
+<td>$17$</td>
+<td>$2$</td>
+<td>$89$</td>
+</tr>
+<tr>
+<td>internal</td>
+<td>$6$</td>
+<td>$7$</td>
+<td>$0$</td>
+<td>$5$</td>
+<td>$0$</td>
+<td>$12$</td>
+</tr>
+<tr>
+<td>mathematics menu</td>
+<td>$1$</td>
+<td>$12$</td>
+<td>$1$</td>
+<td>$1$</td>
+<td>$0$</td>
+<td>$14$</td>
+</tr>
+<tr>
+<td>total</td>
+<td>$181$</td>
+<td>$373$</td>
+<td>$122$</td>
+<td>$69$</td>
+<td>$12$</td>
+<td>$576$</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Four occurrences are missing from the columns.</strong> Four sites split the phrase across a line break, two in <em>Zero Divisors of the General Quaternionic Algebra</em>, one in <em>Zero Divisors of the Quaternion Algebra</em>, and one in <em>The Specificities of the Antisymmetric Plain Algebra of the Quaternions</em>. The columns count the forms written on one line, so the true total in the articles is $566$ and not $562$. The four are named here because a line-oriented search reports zero on them; §<em>The Strategy</em> returns to the point.</p>
+<p><strong>The distribution.</strong> The table gives the count of files by number of occurrences.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>occurrences per file</th>
+<th>files</th>
+<th>occurrences</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$1$</td>
+<td>$61$</td>
+<td>$61$</td>
+</tr>
+<tr>
+<td>$2$</td>
+<td>$44$</td>
+<td>$88$</td>
+</tr>
+<tr>
+<td>$3$</td>
+<td>$26$</td>
+<td>$78$</td>
+</tr>
+<tr>
+<td>$4$</td>
+<td>$14$</td>
+<td>$56$</td>
+</tr>
+<tr>
+<td>$5$ to $6$</td>
+<td>$14$</td>
+<td>$74$</td>
+</tr>
+<tr>
+<td>$7$ to $9$</td>
+<td>$11$</td>
+<td>$86$</td>
+</tr>
+<tr>
+<td>$10$ to $14$</td>
+<td>$10$</td>
+<td>$119$</td>
+</tr>
+<tr>
+<td>total</td>
+<td>$180$</td>
+<td>$562$</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>The concentration is low.</strong> The ten heaviest files hold $119$ occurrences, which is $21$ per cent of the $562$ counted on one line. The other $170$ files hold $443$, and $105$ of them hold one or two. No file needs a rewrite. The pass is a substitution with a short list of exceptions.</p>
+<p><strong>The glyph is outside the count.</strong> The corpus prints <code>\natural</code> $21\,610$ times in $867$ files. The purge does not change one of them. The glyph is the mark; the word is the name. Only the name goes.</p>
+<h3 id="why-the-word-goes">Why the Word Goes</h3>
+<p><strong>First, the word asserts a choice without making it.</strong> The algebra carries four conjugations, and the corpus states the criterion that separates them: one is linear, one acts on the coefficients, one is their composite, one is the negative of the composite. To call the linear one <em>natural</em> is to claim it is privileged without naming the privilege. The article that needs the privilege states it in one line: the map is the only one of the four that is $\mathbb{C}$-linear and the only one that is a quaternion operation with the coefficients fixed. Those are the facts. The word is the impression they leave.</p>
+<p><strong>Second, the word names nothing that the surviving word does not name.</strong> The map conjugates the quaternion factor and leaves the complex coefficient alone. <em>Quaternion conjugation</em> says exactly that. <em>Natural conjugation</em> says nothing about the algebra: it says something about the writer's taste.</p>
+<p><strong>Third, the corpus has already chosen.</strong> The surviving name stands $396$ times, twice as a section title (<em>The Transposition of the Two Sides</em>, §<em>The Quaternion Conjugation</em>; <em>The Cartan-Hermitian Pairing of the Polar Decomposition of an $N$-Regular Spectrally Regular Biquaternion</em>, §<em>The Quaternion Conjugation</em>), and once as a row of the table of the four conjugations in <em>Algebra and Element Conventions</em>. The drift is not a disagreement about the mathematics. It is a disagreement about a word, and one side of it is the side the corpus states in its own conventions.</p>
+<p><strong>Fourth, the word collides.</strong> The word <em>natural</em> is written $2\,524$ times in the article files. Of those, $566$ are the conjugation. The remaining $1\,958$ are another sense: <em>natural transformation</em> $84$ times, <em>natural isomorphism</em> $112$, <em>natural pairing</em> $87$, <em>natural map</em> $83$, <em>natural numbers</em> $76$, <em>natural extension</em> $43$, <em>natural form</em> $47$, <em>natural action</em> $34$, and so on. A global replacement of the word corrupts three quarters of the sites where it stands. This is the practical reason the pass cannot be a <code>sed</code> on the word alone.</p>
+<p><strong>Fifth, the glyph and the word reinforce each other.</strong> The mark ${}^{\natural}$ is the Unicode natural sign. A reader who meets the glyph reads the word, and the prose then confirms the reading. If the word goes, the glyph becomes an arbitrary mark with a stated definition, which is what a mark should be. The glyph stays because it is compact and unambiguous. The word goes because it is neither.</p>
+<h3 id="the-objection">The Objection</h3>
+<p><strong>The objection.</strong> <em>Natural</em> is the only name that works on every layer. On $\mathbb{C}$ the map is the identity, on $\mathbb{C}_{\mathrm{spl}}$ and $\mathbb{C}_{\mathrm{dln}}$ it is the identity, and on $\mathbb{B}_{\mathrm{red}}$ it has no sense at all and is not written. A layer with no quaternion factor has no quaternion conjugation. So the purge would replace a true generic name by a false specific one, and the articles on the commutative layers would have to invent a name or write a falsehood.</p>
+<p><strong>The answer is that the corpus already owns the generic name.</strong> <em>Algebra and Element Conventions</em> calls ${}^{\natural}$ <strong>the intrinsic conjugate</strong>, and it names <em>the intrinsic conjugation of the layer</em> where the layer is not quaternionic, including the tessarine sign of $\mathbb{B}_{\mathrm{red}}$. The two forms are written $23$ times in the corpus, $14$ as the noun and $9$ as the name of the operation. The dictionary therefore has two entries and no gap:</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>layer</th>
+<th>the map ${}^{\natural}$ is called</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\mathbb{H}$, $\mathbb{H}_{\mathrm{spl}}$, $\mathbb{B}$, $\mathbb{B}_{\mathrm{spl}}$</td>
+<td>quaternion conjugation</td>
+</tr>
+<tr>
+<td>$\mathbb{C}$, $\mathbb{C}_{\mathrm{spl}}$, $\mathbb{C}_{\mathrm{dln}}$</td>
+<td>intrinsic conjugation; on these layers it is the identity</td>
+</tr>
+<tr>
+<td>$\mathbb{B}_{\mathrm{red}}$</td>
+<td>no sense: not written</td>
+</tr>
+<tr>
+<td>every layer</td>
+<td>the mark ${}^{\natural}$</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>The rule that follows.</strong> <em>Quaternion conjugation</em> wherever a quaternion factor is present. <em>Intrinsic conjugation</em> wherever the layer is commutative. The mark ${}^{\natural}$ everywhere, and it is never translated.</p>
+<p><strong>A second objection, weaker.</strong> If the map is quaternion conjugation, then <em>vector conjugation</em> $-\tilde q^{\natural}$ and <em>total conjugation</em> $-\tilde q$ are also quaternion conjugations, and the three names collapse into one. The answer is that the corpus says so itself, in <em>Quaternion Algebra</em>: the three conjugations of $\mathbb{H}$ are obtained from the quaternion conjugation together with the negation map. The collapse is a fact about the algebra and the sentence that states it must be rewritten, not substituted. That is one of the seven sites of §<em>The Sites That Need Reading</em>.</p>
+<h2 id="the-senses">The Senses</h2>
+<p><strong>Six senses, six replacements.</strong> The table gives the shape of each sense, the count of its occurrences, and the replacement. The counts are the counts of the forms; a file may carry two senses.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>sense</th>
+<th>shape</th>
+<th>occurrences</th>
+<th>replacement</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>the map</td>
+<td><em>the natural conjugation is $\mathbb{C}$-linear</em></td>
+<td>$373$</td>
+<td>the quaternion conjugation</td>
+</tr>
+<tr>
+<td>the mark</td>
+<td><em>the natural sign ${}^{\natural}$</em></td>
+<td>$122$</td>
+<td>the quaternion sign</td>
+</tr>
+<tr>
+<td>the noun</td>
+<td><em>the natural conjugate of $\tilde Q$</em></td>
+<td>$69$</td>
+<td>the quaternion conjugate</td>
+</tr>
+<tr>
+<td>the class</td>
+<td><em>three natural conjugations on $\mathbb{H}$</em></td>
+<td>$7$ sites</td>
+<td>three conjugations; four involutions</td>
+</tr>
+<tr>
+<td>the product</td>
+<td><em>the natural product</em></td>
+<td>$35$</td>
+<td>the general quaternionic bilinear product, or the $\natural$-product</td>
+</tr>
+<tr>
+<td>the quadratic form</td>
+<td><em>the natural norm</em>, <em>the natural quadratic form</em></td>
+<td>$28$ and $10$</td>
+<td>the quaternion norm</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>The first three senses are one substitution.</strong> In the three, <em>natural</em> is a synonym of <em>quaternion</em> or of <em>quaternion sign</em> and the sentence survives the exchange unchanged. <em>The natural conjugation is $\mathbb{C}$-linear</em> becomes <em>the quaternion conjugation is $\mathbb{C}$-linear</em>. <em>The natural sign is the identity</em> becomes <em>the intrinsic conjugation is the identity</em> on the commutative layers; on the quaternionic ones the word alone changes, <em>the quaternion sign</em>. <em>The natural conjugate of the value</em> becomes <em>the quaternion conjugate of the value</em>.</p>
+<p><strong>The fourth sense is not a substitution.</strong> <em>There are three natural conjugations on $\mathbb{H}$, obtained from the quaternion conjugation together with the negation map</em> cannot become <em>there are three quaternion conjugations, obtained from the quaternion conjugation</em>. The sentence must lose the word and nothing else: <em>there are three conjugations on $\mathbb{H}$, obtained from the quaternion conjugation together with the negation map</em>.</p>
+<p><strong>The fifth and sixth senses are the second wave.</strong> They are derived names, and they carry the same defect in a worse form. <em>The natural product</em> reads as <em>the ordinary product of the algebra</em>, and it means $\tilde Q_1^{\natural}\tilde Q_2$. That is not a weak name; it is a misleading one. The corpus owns the correct names already: <em>the general quaternionic bilinear product</em> in full, <em>the $\natural$-product</em> in short, <em>the quaternion norm</em> for $\langle\tilde Q\rangle_{\natural}$, written $2\,512$ times. The second wave is a separate pass, and §<em>The Strategy</em> keeps it out of the first.</p>
+<p><strong>One name in the sixth sense must not be touched.</strong> <em>The natural form</em> is written $47$ times in two senses: the $\natural$-form, and the form that the basis units carry in a given frame, as in <em>the natural form on the four units is the metric</em>. The second sense is ordinary language and it stays. The $47$ sites therefore need reading, and none of them is mechanical.</p>
+<h2 id="the-inventory">The Inventory</h2>
+<p><strong>The tables.</strong> The three tables list every file that carries one of the four forms. The columns are the same as in §<em>The Count</em>: <em>conj.</em> for the phrase <em>natural conjugation</em>, <em>sign</em> for <em>natural sign</em>, <em>conj. noun</em> for <em>natural conjugate</em>, <em>invol.</em> for <em>natural involution</em>. The sort is by total, then by title. The link text is the title of the article and the target is its <code>.html</code> address.</p>
+<p><strong>This article is not in its own inventory.</strong> The tables count the corpus before the migration, so this file is excluded. A re-run of any count will include it unless it is excluded explicitly, which is why the verification of §<em>The Strategy</em> excludes it by name.</p>
+<p><strong>The three files that are one count short.</strong> The four occurrences that split across a line break are inside the three files named in §<em>The Count</em>, so those three rows are lower by one or two than the true count.</p>
+<h3 id="the-mathematics-corpus">The Mathematics Corpus</h3>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>article</th>
+<th>conj.</th>
+<th>sign</th>
+<th>conj. noun</th>
+<th>invol.</th>
+<th>total</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="../articles_maths/the-four-general-products-and-their-relations-over-the-biquaternion-algebra.html">The Four General Products and Their Relations over the Biquaternion Algebra</a></td>
+<td>6</td>
+<td>6</td>
+<td>2</td>
+<td>0</td>
+<td>14</td>
+</tr>
+<tr>
+<td><a href="../articles_maths/the-star-and-the-conjugate-linear-operators-of-m4c.html">The Star and the Conjugate-Linear Operators of $M_4(\mathbb{C})$</a></td>
+<td>14</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>14</td>
+</tr>
+<tr>
+<td><a href="../articles_maths/introduction-to-the-general-quaternionic-sesqualgebra.html">Introduction to the General Quaternionic Sesqualgebra</a></td>
+<td>12</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td>13</td>
+</tr>
+<tr>
+<td><a href="../articles_maths/the-group-of-involutions-of-the-quaternioid.html">The Group of Involutions of the Quaternioid</a></td>
+<td>2</td>
+<td>11</td>
+<td>0</td>
+<td>0</td>
+<td>13</td>
+</tr>
+<tr>
+<td><a href="../articles_maths/the-general-quaternionic-sesqualgebra-in-the-4x4-left-regular-representation.html">The General Quaternionic Sesqualgebra in the $4\times4$ Left Regular Representation</a></td>
+<td>8</td>
+<td>0</td>
+<td>4</td>
+<td>0</td>
+<td>12</td>
+</tr>
+<tr>
+<td><a href="../articles_maths/the-two-one-sided-actions-and-the-absence-of-a-unit.html">The Two One-Sided Actions and the Absence of a Unit</a></td>
+<td>11</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td>12</td>
+</tr>
+<tr>
+<td><a href="../articles_maths/introduction-to-the-symmetric-plain-sesqualgebra.html">Introduction to the Symmetric Plain Sesqualgebra</a></td>
+<td>8</td>
+<td>0</td>
+<td>3</td>
+<td>0</td>
+<td>11</td>
+</tr>
+<tr>
+<td><a href="../articles_maths/the-form-on-the-biquaternion-algebra-as-a-general-plain-sesquilinear-form.html">The Form on the Biquaternion Algebra as a General Plain Sesquilinear Form</a></td>
+<td>10</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>10</td>
+</tr>
+<tr>
+<td><a href="../articles_maths/the-four-forms-and-the-four-algebraic-norms-over-the-biquaternion-algebra.html">The Four Forms and the Four Algebraic Norms over the Biquaternion Algebra</a></td>
+<td>10</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>10</td>
+</tr>
+<tr>
+<td><a href="../articles_maths/the-endomorphisms-of-the-biquaternion-algebra.html">The Endomorphisms of the Biquaternion Algebra</a></td>
+<td>7</td>
+<td>2</td>
+<td>0</td>
+<td>0</td>
+<td>9</td>
+</tr>
+<tr>
+<td><a href="../articles_maths/the-multiplication-operators-of-the-symmetric-quaternionic-sesqualgebra.html">The Multiplication Operators of the Symmetric Quaternionic Sesqualgebra</a></td>
+<td>9</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>9</td>
+</tr>
+<tr>
+<td><a href="../articles_maths/algebra-and-element-conventions.html">Algebra and Element Conventions</a></td>
+<td>0</td>
+<td>8</td>
+<td>0</td>
+<td>0</td>
+<td>8</td>
+</tr>
+<tr>
+<td><a href="../articles_maths/annihilators-of-the-general-quaternionic-algebra.html">Annihilators of the General Quaternionic Algebra</a></td>
+<td>6</td>
+<td>0</td>
+<td>2</td>
+<td>0</td>
+<td>8</td>
+</tr>
+<tr>
+<td><a href="../articles_maths/introduction-to-the-general-quaternionic-algebra-of-the-biquaternions.html">Introduction to the General Quaternionic Algebra of the Biquaternions</a></td>
+<td>8</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>8</td>
+</tr>
+<tr>
+<td><a href="../articles_maths/the-left-and-right-multiplications-of-the-general-quaternionic-sesquilinear-product.html">The Left and Right Multiplications of the General Quaternionic Sesquilinear Product</a></td>
+<td>5</td>
+<td>1</td>
+<td>2</td>
+<td>0</td>
+<td>8</td>
+</tr>
+<tr>
+<td><a href="../articles_maths/the-multiplication-operators-of-the-symmetric-plain-algebra-of-the-biquaternions.html">The Multiplication Operators of the Symmetric Plain Algebra of the Biquaternions</a></td>
+<td>8</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>8</td>
+</tr>
+<tr>
+<td><a href="../articles_maths/idempotents.html">Idempotents</a></td>
+<td>7</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>7</td>
+</tr>
+<tr>
+<td><a href="../articles_maths/square-roots-of-one-and-the-idempotents-of-the-general-quaternionic-sesqualgebra.html">Square Roots of One and the Idempotents of the General Quaternionic Sesqualgebra</a></td>
+<td>2</td>
+<td>0</td>
+<td>5</td>
+<td>0</td>
+<td>7</td>
+</tr>
+<tr>
+<td><a href="../articles_maths/the-specificities-of-the-general-quaternionic-sesqualgebra.html">The Specificities of the General Quaternionic Sesqualgebra</a></td>
+<td>6</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td>7</td>
+</tr>
+<tr>
+<td><a href="../articles_maths/the-specificities-of-the-symmetric-plain-algebra-of-the-quaternions.html">The Specificities of the Symmetric Plain Algebra of the Quaternions</a></td>
+<td>0</td>
+<td>2</td>
+<td>0</td>
+<td>5</td>
+<td>7</td>
+</tr>
+<tr>
+<td><a href="../articles_maths/m2c-representation-the-general-quaternionic-algebra-of-biquaternions.html">$M_2(\mathbb{C})$ Representation : The General Quaternionic Algebra of Biquaternions</a></td>
+<td>6</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>6</td>
+</tr>
+<tr>
+<td><a href="../articles_maths/m2c-representation-the-general-quaternionic-sesqualgebra-of-biquaternions.html">$M_2(\mathbb{C})$ Representation : The General Quaternionic Sesqualgebra of Biquaternions</a></td>
+<td>6</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>6</td>
+</tr>
+<tr>
+<td><a href="../articles_maths/remarkable-subspaces-and-the-four-general-products-forms-and-norms.html">Remarkable Subspaces and the Four General Products, Forms and Norms</a></td>
+<td>5</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td>6</td>
+</tr>
+<tr>
+<td><a href="../articles_maths/the-general-quaternionic-algebra-in-the-4x4-left-regular-representation.html">The General Quaternionic Algebra in the $4\times4$ Left Regular Representation</a></td>
+<td>6</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>6</td>
+</tr>
+<tr>
+<td><a href="../articles_maths/annihilators-in-the-algebraic-structures-over-the-biquaternion-c-space.html">Annihilators in the Algebraic Structures over the Biquaternion $\mathbb{C}$ Space</a></td>
+<td>3</td>
+<td>0</td>
+<td>2</td>
+<td>0</td>
+<td>5</td>
+</tr>
+<tr>
+<td><a href="../articles_maths/association-and-the-transpose-on-the-quaternion-algebra.html">Association and the Transpose on the Quaternion Algebra</a></td>
+<td>0</td>
+<td>5</td>
+<td>0</td>
+<td>0</td>
+<td>5</td>
+</tr>
+<tr>
+<td><a href="../articles_maths/introduction-to-the-symmetric-quaternionic-sesqualgebra.html">Introduction to the Symmetric Quaternionic Sesqualgebra</a></td>
+<td>4</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td>5</td>
+</tr>
+<tr>
+<td><a href="../articles_maths/norm-and-invertibility-in-the-general-quaternionic-sesqualgebra.html">Norm and Invertibility in the General Quaternionic Sesqualgebra</a></td>
+<td>5</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>5</td>
+</tr>
+<tr>
+<td><a href="../articles_maths/norm-and-unitary-conventions.html">Norm and Unitary Conventions</a></td>
+<td>0</td>
+<td>5</td>
+<td>0</td>
+<td>0</td>
+<td>5</td>
+</tr>
+<tr>
+<td><a href="../articles_maths/the-conjugate-commutative-law-and-the-idempotents-of-the-symmetric-plain-sesqualgebra.html">The Conjugate-Commutative Law and the Idempotents of the Symmetric Plain Sesqualgebra</a></td>
+<td>5</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>5</td>
+</tr>
+<tr>
+<td><a href="../articles_maths/the-specificities-of-the-antisymmetric-plain-sesqualgebra.html">The Specificities of the Antisymmetric Plain Sesqualgebra</a></td>
+<td>5</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>5</td>
+</tr>
+<tr>
+<td><a href="../articles_maths/the-square-of-the-general-quaternionic-sesquilinear-product-and-the-two-halves.html">The Square of the General Quaternionic Sesquilinear Product and the Two Halves</a></td>
+<td>2</td>
+<td>0</td>
+<td>3</td>
+<td>0</td>
+<td>5</td>
+</tr>
+<tr>
+<td><a href="../articles_maths/annihilators-in-the-algebraic-structures-over-the-quaternioid-r-space.html">Annihilators in the Algebraic Structures over the Quaternioid $\mathbb{R}$ Space</a></td>
+<td>4</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>4</td>
+</tr>
+<tr>
+<td><a href="../articles_maths/introduction-to-the-remarkable-subspaces-of-the-quaternions.html">Introduction to the Remarkable Subspaces of the Quaternions</a></td>
+<td>0</td>
+<td>4</td>
+<td>0</td>
+<td>0</td>
+<td>4</td>
+</tr>
+<tr>
+<td><a href="../articles_maths/operator-and-calculus-conventions.html">Operator and Calculus Conventions</a></td>
+<td>3</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>4</td>
+</tr>
+<tr>
+<td><a href="../articles_maths/symmetric-and-antisymmetric-decomposition-of-the-four-general-products.html">Symmetric and Antisymmetric Decomposition of the Four General Products</a></td>
+<td>2</td>
+<td>0</td>
+<td>2</td>
+<td>0</td>
+<td>4</td>
+</tr>
+<tr>
+<td><a href="../articles_maths/the-adjoint-operators-and-the-two-sided-operator-of-the-antisymmetric-plain-sesqualgebra.html">The Adjoint Operators and the Two-Sided Operator of the Antisymmetric Plain Sesqualgebra</a></td>
+<td>4</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>4</td>
+</tr>
+<tr>
+<td><a href="../articles_maths/the-quaternionic-product-on-the-quaternion-subspace.html">The Quaternionic Product on the Quaternion Subspace</a></td>
+<td>4</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>4</td>
+</tr>
+<tr>
+<td><a href="../articles_maths/the-specificities-of-the-general-quaternionic-algebra-of-the-biquaternions.html">The Specificities of the General Quaternionic Algebra of the Biquaternions</a></td>
+<td>4</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>4</td>
+</tr>
+<tr>
+<td><a href="../articles_maths/the-vector-parts-of-the-products-over-the-biquaternion-algebra.html">The Vector Parts of the Products over the Biquaternion Algebra</a></td>
+<td>4</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>4</td>
+</tr>
+<tr>
+<td><a href="../articles_maths/two-sided-operators-on-the-general-quaternionic-algebra-of-the-biquaternions.html">Two-Sided Operators on the General Quaternionic Algebra of the Biquaternions</a></td>
+<td>4</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>4</td>
+</tr>
+<tr>
+<td><a href="../articles_maths/annihilators-of-the-general-quaternionic-sesqualgebra.html">Annihilators of the General Quaternionic Sesqualgebra</a></td>
+<td>2</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td>3</td>
+</tr>
+<tr>
+<td><a href="../articles_maths/decompositions-along-the-remarkable-subspaces-of-the-quaternions.html">Decompositions Along the Remarkable Subspaces of the Quaternions</a></td>
+<td>0</td>
+<td>3</td>
+<td>0</td>
+<td>0</td>
+<td>3</td>
+</tr>
+<tr>
+<td><a href="../articles_maths/introduction-to-the-symmetric-plain-algebra-of-the-quaternions.html">Introduction to the Symmetric Plain Algebra of the Quaternions</a></td>
+<td>0</td>
+<td>3</td>
+<td>0</td>
+<td>0</td>
+<td>3</td>
+</tr>
+<tr>
+<td><a href="../articles_maths/n-regularity-and-n-degeneracy-in-the-biquaternion-algebra.html">N-Regularity and N-Degeneracy in the Biquaternion Algebra</a></td>
+<td>3</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>3</td>
+</tr>
+<tr>
+<td><a href="../articles_maths/nilpotents.html">Nilpotents</a></td>
+<td>3</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>3</td>
+</tr>
+<tr>
+<td><a href="../articles_maths/norm-and-invertibility-in-the-symmetric-quaternionic-algebra.html">Norm and Invertibility in the Symmetric Quaternionic Algebra</a></td>
+<td>3</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>3</td>
+</tr>
+<tr>
+<td><a href="../articles_maths/operator-family-conventions.html">Operator Family Conventions</a></td>
+<td>1</td>
+<td>2</td>
+<td>0</td>
+<td>0</td>
+<td>3</td>
+</tr>
+<tr>
+<td><a href="../articles_maths/relations-between-the-biquaternion-exponential-and-the-fourier-kernel.html">Relations between the Biquaternion Exponential and the Fourier Kernel</a></td>
+<td>3</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>3</td>
+</tr>
+<tr>
+<td><a href="../articles_maths/split-biquaternion-algebra.html">Split-Biquaternion Algebra</a></td>
+<td>3</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>3</td>
+</tr>
+<tr>
+<td><a href="../articles_maths/split-biquaternion-norm-and-invertibility.html">Split-Biquaternion Norm and Invertibility</a></td>
+<td>0</td>
+<td>3</td>
+<td>0</td>
+<td>0</td>
+<td>3</td>
+</tr>
+<tr>
+<td><a href="../articles_maths/square-roots-of-zero-and-the-nilpotents-of-the-general-quaternionic-algebra.html">Square Roots of Zero and the Nilpotents of the General Quaternionic Algebra</a></td>
+<td>3</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>3</td>
+</tr>
+<tr>
+<td><a href="../articles_maths/the-bochner-theorem-for-the-biquaternion-transform-the-hermitian-form-and-the-root.html">The Bochner Theorem for the Biquaternion Transform: the Hermitian Form and the Root</a></td>
+<td>3</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>3</td>
+</tr>
+<tr>
+<td><a href="../articles_maths/the-canonical-hermitian-form-on-the-regular-module-of-the-biquaternion-algebra.html">The Canonical Hermitian Form on the Regular Module of the Biquaternion Algebra</a></td>
+<td>0</td>
+<td>3</td>
+<td>0</td>
+<td>0</td>
+<td>3</td>
+</tr>
+<tr>
+<td><a href="../articles_maths/the-polar-decomposition-and-remarkable-subspaces.html">The Polar Decomposition and Remarkable Subspaces</a></td>
+<td>0</td>
+<td>0</td>
+<td>3</td>
+<td>0</td>
+<td>3</td>
+</tr>
+<tr>
+<td><a href="../articles_maths/the-realification-of-the-eight-derived-structures.html">The Realification of the Eight Derived Structures</a></td>
+<td>3</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>3</td>
+</tr>
+<tr>
+<td><a href="../articles_maths/the-two-general-products-and-the-reason-there-are-only-two.html">The Two General Products and the Reason There Are Only Two</a></td>
+<td>3</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>3</td>
+</tr>
+<tr>
+<td><a href="../articles_maths/zero-divisors-in-the-algebraic-structures-over-the-biquaternion-c-space.html">Zero Divisors in the Algebraic Structures over the Biquaternion $\mathbb{C}$ Space</a></td>
+<td>2</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td>3</td>
+</tr>
+<tr>
+<td><a href="../articles_maths/zero-divisors-in-the-algebraic-structures-over-the-quaternioid-r-space.html">Zero Divisors in the Algebraic Structures over the Quaternioid $\mathbb{R}$ Space</a></td>
+<td>3</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>3</td>
+</tr>
+<tr>
+<td><a href="../articles_maths/zero-divisors-of-the-general-quaternionic-algebra.html">Zero Divisors of the General Quaternionic Algebra</a></td>
+<td>3</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>3</td>
+</tr>
+<tr>
+<td><a href="../articles_maths/zero-divisors-of-the-quaternion-algebra.html">Zero Divisors of the Quaternion Algebra</a></td>
+<td>3</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>3</td>
+</tr>
+<tr>
+<td><a href="../articles_maths/m4c-pauli-representation-operators.html">$M_4(\mathbb{C})$ Pauli Representation : Operators</a></td>
+<td>0</td>
+<td>0</td>
+<td>2</td>
+<td>0</td>
+<td>2</td>
+</tr>
+<tr>
+<td><a href="../articles_maths/comparison-of-the-remarkable-subspaces-of-the-quaternions.html">Comparison of the Remarkable Subspaces of the Quaternions</a></td>
+<td>0</td>
+<td>2</td>
+<td>0</td>
+<td>0</td>
+<td>2</td>
+</tr>
+<tr>
+<td><a href="../articles_maths/dual-numbers-algebra.html">Dual-Numbers Algebra</a></td>
+<td>2</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>2</td>
+</tr>
+<tr>
+<td><a href="../articles_maths/introduction-to-the-antisymmetric-plain-algebra-of-the-quaternions.html">Introduction to the Antisymmetric Plain Algebra of the Quaternions</a></td>
+<td>0</td>
+<td>2</td>
+<td>0</td>
+<td>0</td>
+<td>2</td>
+</tr>
+<tr>
+<td><a href="../articles_maths/introduction-to-the-symmetric-quaternionic-algebra.html">Introduction to the Symmetric Quaternionic Algebra</a></td>
+<td>2</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>2</td>
+</tr>
+<tr>
+<td><a href="../articles_maths/j-self-adjoint-and-j-unitary-operators-on-the-general-quaternionic-sesqualgebra.html">J-Self-Adjoint and J-Unitary Operators on the General Quaternionic Sesqualgebra</a></td>
+<td>1</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td>2</td>
+</tr>
+<tr>
+<td><a href="../articles_maths/kr-regularity-and-degeneracy-in-the-biquaternion-algebra.html">Kr-Regularity and Degeneracy in the Biquaternion Algebra</a></td>
+<td>2</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>2</td>
+</tr>
+<tr>
+<td><a href="../articles_maths/one-sided-operators-on-the-general-quaternionic-algebra-of-the-biquaternions.html">One-Sided Operators on the General Quaternionic Algebra of the Biquaternions</a></td>
+<td>2</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>2</td>
+</tr>
+<tr>
+<td><a href="../articles_maths/quaternion-algebra.html">Quaternion Algebra</a></td>
+<td>2</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>2</td>
+</tr>
+<tr>
+<td><a href="../articles_maths/square-roots-of-one-and-the-idempotents-of-the-general-quaternionic-algebra.html">Square Roots of One and the Idempotents of the General Quaternionic Algebra</a></td>
+<td>2</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>2</td>
+</tr>
+<tr>
+<td><a href="../articles_maths/the-adjoint-operators-and-the-derivations-of-the-antisymmetric-plain-algebra-of-the-quaternions.html">The Adjoint Operators and the Derivations of the Antisymmetric Plain Algebra of the Quaternions</a></td>
+<td>0</td>
+<td>2</td>
+<td>0</td>
+<td>0</td>
+<td>2</td>
+</tr>
+<tr>
+<td><a href="../articles_maths/the-algebraic-structures-over-the-biquaternion-c-space.html">The Algebraic Structures over the Biquaternion $\mathbb{C}$ Space</a></td>
+<td>2</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>2</td>
+</tr>
+<tr>
+<td><a href="../articles_maths/the-antisymmetric-plain-algebra-in-the-2x2-matrix-element-representation-m2c-h.html">The Antisymmetric Plain Algebra in the $2\times2$ Matrix Element Representation $M_2(\mathbb{C})_{\mathbb{H}}$</a></td>
+<td>0</td>
+<td>2</td>
+<td>0</td>
+<td>0</td>
+<td>2</td>
+</tr>
+<tr>
+<td><a href="../articles_maths/the-antisymmetric-plain-algebra-in-the-4x4-matrix-element-representation-m4r-h-l.html">The Antisymmetric Plain Algebra in the $4\times4$ Matrix Element Representation $M_4(\mathbb{R})_{\mathbb{H}_L}$</a></td>
+<td>0</td>
+<td>2</td>
+<td>0</td>
+<td>0</td>
+<td>2</td>
+</tr>
+<tr>
+<td><a href="../articles_maths/the-biquaternion-quadratic-map-and-its-julia-sets.html">The Biquaternion Quadratic Map and Its Julia Sets</a></td>
+<td>0</td>
+<td>0</td>
+<td>2</td>
+<td>0</td>
+<td>2</td>
+</tr>
+<tr>
+<td><a href="../articles_maths/the-eigenbasis-of-a-spectrally-regular-biquaternion.html">The Eigenbasis of a Spectrally Regular Biquaternion</a></td>
+<td>2</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>2</td>
+</tr>
+<tr>
+<td><a href="../articles_maths/the-killing-form-of-the-antisymmetric-plain-algebra-of-the-quaternions.html">The Killing Form of the Antisymmetric Plain Algebra of the Quaternions</a></td>
+<td>0</td>
+<td>2</td>
+<td>0</td>
+<td>0</td>
+<td>2</td>
+</tr>
+<tr>
+<td><a href="../articles_maths/the-lie-algebra-of-the-antisymmetric-plain-algebra-of-the-quaternions.html">The Lie Algebra of the Antisymmetric Plain Algebra of the Quaternions</a></td>
+<td>0</td>
+<td>2</td>
+<td>0</td>
+<td>0</td>
+<td>2</td>
+</tr>
+<tr>
+<td><a href="../articles_maths/the-multiplication-operators-of-the-symmetric-plain-algebra-of-the-quaternions.html">The Multiplication Operators of the Symmetric Plain Algebra of the Quaternions</a></td>
+<td>0</td>
+<td>2</td>
+<td>0</td>
+<td>0</td>
+<td>2</td>
+</tr>
+<tr>
+<td><a href="../articles_maths/the-n-degenerate-sector.html">The N-Degenerate Sector</a></td>
+<td>2</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>2</td>
+</tr>
+<tr>
+<td><a href="../articles_maths/the-n-regular-sector.html">The N-Regular Sector</a></td>
+<td>2</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>2</td>
+</tr>
+<tr>
+<td><a href="../articles_maths/the-quaternioid-as-a-vector-space-over-r.html">The Quaternioid as a Vector Space over $\mathbb{R}$</a></td>
+<td>2</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>2</td>
+</tr>
+<tr>
+<td><a href="../articles_maths/the-semisimple-nilpotent-split.html">The Semisimple–Nilpotent Split</a></td>
+<td>2</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>2</td>
+</tr>
+<tr>
+<td><a href="../articles_maths/the-square-the-idempotents-and-the-jordan-inverse-of-the-symmetric-plain-algebra-of-the-biquaternions.html">The Square, the Idempotents and the Jordan Inverse of the Symmetric Plain Algebra of the Biquaternions</a></td>
+<td>0</td>
+<td>0</td>
+<td>2</td>
+<td>0</td>
+<td>2</td>
+</tr>
+<tr>
+<td><a href="../articles_maths/the-square-the-idempotents-and-the-jordan-inverse-of-the-symmetric-plain-algebra-of-the-quaternions.html">The Square, the Idempotents and the Jordan Inverse of the Symmetric Plain Algebra of the Quaternions</a></td>
+<td>0</td>
+<td>2</td>
+<td>0</td>
+<td>0</td>
+<td>2</td>
+</tr>
+<tr>
+<td><a href="../articles_maths/the-symmetric-plain-algebra-in-the-2x2-matrix-element-representation-m2c-h.html">The Symmetric Plain Algebra in the $2\times2$ Matrix Element Representation $M_2(\mathbb{C})_{\mathbb{H}}$</a></td>
+<td>0</td>
+<td>2</td>
+<td>0</td>
+<td>0</td>
+<td>2</td>
+</tr>
+<tr>
+<td><a href="../articles_maths/the-symmetric-plain-algebra-in-the-4x4-matrix-element-representation-m4r-h-l.html">The Symmetric Plain Algebra in the $4\times4$ Matrix Element Representation $M_4(\mathbb{R})_{\mathbb{H}_L}$</a></td>
+<td>0</td>
+<td>2</td>
+<td>0</td>
+<td>0</td>
+<td>2</td>
+</tr>
+<tr>
+<td><a href="../articles_maths/the-symmetric-and-antisymmetric-parts-of-a-sesqualgebra-product.html">The Symmetric and Antisymmetric Parts of a Sesqualgebra Product</a></td>
+<td>1</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td>2</td>
+</tr>
+<tr>
+<td><a href="../articles_maths/the-symmetrised-quaternionic-product-and-the-hermitian-subspace-of-the-biquaternions.html">The Symmetrised Quaternionic Product and the Hermitian Subspace of the Biquaternions</a></td>
+<td>2</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>2</td>
+</tr>
+<tr>
+<td><a href="../articles_maths/the-trace-form-and-the-invariance-of-the-symmetric-plain-algebra-of-the-quaternions.html">The Trace Form and the Invariance of the Symmetric Plain Algebra of the Quaternions</a></td>
+<td>0</td>
+<td>2</td>
+<td>0</td>
+<td>0</td>
+<td>2</td>
+</tr>
+<tr>
+<td><a href="../articles_maths/the-two-general-products-of-the-quaternioid-r-space.html">The Two General Products of the Quaternioid $\mathbb{R}$ Space</a></td>
+<td>2</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>2</td>
+</tr>
+<tr>
+<td><a href="../articles_maths/the-two-involutions-and-the-group-of-involutions.html">The Two Involutions and the Group of Involutions</a></td>
+<td>0</td>
+<td>2</td>
+<td>0</td>
+<td>0</td>
+<td>2</td>
+</tr>
+<tr>
+<td><a href="../articles_maths/zero-divisors-of-the-general-quaternionic-sesqualgebra.html">Zero Divisors of the General Quaternionic Sesqualgebra</a></td>
+<td>2</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>2</td>
+</tr>
+<tr>
+<td><a href="../articles_maths/biquaternion-versors-and-the-orthogonal-group.html">Biquaternion Versors and the Orthogonal Group</a></td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+</tr>
+<tr>
+<td><a href="../articles_maths/comparison-of-norms-and-invertibility.html">Comparison of Norms and Invertibility</a></td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+</tr>
+<tr>
+<td><a href="../articles_maths/definitions-for-the-study-of-the-algebraic-structures-over-the-biquaternion-c-space.html">Definitions for the Study of the Algebraic Structures over the Biquaternion $\mathbb{C}$ Space</a></td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+</tr>
+<tr>
+<td><a href="../articles_maths/frame-and-metric-conventions.html">Frame and Metric Conventions</a></td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+</tr>
+<tr>
+<td><a href="../articles_maths/introduction-to-the-antisymmetric-plain-algebra-of-the-biquaternions.html">Introduction to the Antisymmetric Plain Algebra of the Biquaternions</a></td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+</tr>
+<tr>
+<td><a href="../articles_maths/introduction-to-the-antisymmetric-plain-sesqualgebra.html">Introduction to the Antisymmetric Plain Sesqualgebra</a></td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td>1</td>
+</tr>
+<tr>
+<td><a href="../articles_maths/introduction-to-the-general-plain-sesqualgebra.html">Introduction to the General Plain Sesqualgebra</a></td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+</tr>
+<tr>
+<td><a href="../articles_maths/introduction-to-the-quaternion-algebra.html">Introduction to the Quaternion Algebra</a></td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+</tr>
+<tr>
+<td><a href="../articles_maths/real-algebra.html">Real Algebra</a></td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+</tr>
+<tr>
+<td><a href="../articles_maths/real-spinors-and-reality-conditions-with-inner-conjugation.html">Real Spinors and Reality Conditions with Inner Conjugation</a></td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+</tr>
+<tr>
+<td><a href="../articles_maths/remarkable-subspaces-under-the-symmetric-quaternionic-sesqualgebra.html">Remarkable Subspaces under the Symmetric Quaternionic Sesqualgebra</a></td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td>1</td>
+</tr>
+<tr>
+<td><a href="../articles_maths/square-roots-of-zero-and-the-nilpotents-of-the-general-quaternionic-sesqualgebra.html">Square Roots of Zero and the Nilpotents of the General Quaternionic Sesqualgebra</a></td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td>1</td>
+</tr>
+<tr>
+<td><a href="../articles_maths/square-roots-of-zero-and-the-nilpotents-of-the-quaternion-algebra.html">Square Roots of Zero and the Nilpotents of the Quaternion Algebra</a></td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+</tr>
+<tr>
+<td><a href="../articles_maths/square-roots-of-a-general-element-in-the-general-quaternionic-sesqualgebra.html">Square Roots of a General Element in the General Quaternionic Sesqualgebra</a></td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+</tr>
+<tr>
+<td><a href="../articles_maths/the-12-multiplication-tables-of-the-biquaternion-complex-space.html">The 12 Multiplication Tables of the Biquaternion Complex Space</a></td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+</tr>
+<tr>
+<td><a href="../articles_maths/the-associator-and-the-ternary-product-of-the-quaternionic-product-of-the-biquaternions.html">The Associator and the Ternary Product of the Quaternionic Product of the Biquaternions</a></td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+</tr>
+<tr>
+<td><a href="../articles_maths/the-associator-of-the-general-quaternionic-sesquilinear-product.html">The Associator of the General Quaternionic Sesquilinear Product</a></td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+</tr>
+<tr>
+<td><a href="../articles_maths/the-biquaternion-algebra.html">The Biquaternion Algebra</a></td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+</tr>
+<tr>
+<td><a href="../articles_maths/the-biquaternion-algebra-and-the-krein-von-neumann-property.html">The Biquaternion Algebra and the Krein–von Neumann Property</a></td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+</tr>
+<tr>
+<td><a href="../articles_maths/the-biquaternion-iterated-function-systems.html">The Biquaternion Iterated Function Systems</a></td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+</tr>
+<tr>
+<td><a href="../articles_maths/the-conjugate-symmetric-and-skew-conjugate-symmetric-parts-of-a-sesquilinear-product.html">The Conjugate-Symmetric and Skew-Conjugate-Symmetric Parts of a Sesquilinear Product</a></td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+</tr>
+<tr>
+<td><a href="../articles_maths/the-indefinite-hermitian-pair-of-operators-on-the-general-quaternionic-sesqualgebra.html">The Indefinite Hermitian Pair of Operators on the General Quaternionic Sesqualgebra</a></td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>1</td>
+</tr>
+<tr>
+<td><a href="../articles_maths/the-involution-on-a-complex-vector-space.html">The Involution on a Complex Vector Space</a></td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>1</td>
+</tr>
+<tr>
+<td><a href="../articles_maths/the-involution-on-the-kahler-operator.html">The Involution on the Kähler Operator</a></td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>1</td>
+</tr>
+<tr>
+<td><a href="../articles_maths/the-involution-on-the-translation-operators.html">The Involution on the Translation Operators</a></td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>1</td>
+</tr>
+<tr>
+<td><a href="../articles_maths/the-jordan-basis-of-a-spectrally-degenerate-biquaternion.html">The Jordan Basis of a Spectrally Degenerate Biquaternion</a></td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+</tr>
+<tr>
+<td><a href="../articles_maths/the-kr-degenerate-sector.html">The Kr-Degenerate Sector</a></td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+</tr>
+<tr>
+<td><a href="../articles_maths/the-kr-regular-sector.html">The Kr-Regular Sector</a></td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+</tr>
+<tr>
+<td><a href="../articles_maths/the-krein-isometry-group-and-its-cartan-decomposition.html">The Krein Isometry Group and Its Cartan Decomposition</a></td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+</tr>
+<tr>
+<td><a href="../articles_maths/the-left-multiplications-of-the-quaternionic-product-and-the-opposite-monoid-of-the-biquaternions.html">The Left Multiplications of the Quaternionic Product and the Opposite Monoid of the Biquaternions</a></td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+</tr>
+<tr>
+<td><a href="../articles_maths/the-matrix-algebra-mnc.html">The Matrix Algebra $M_n(\mathbb{C})$</a></td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+</tr>
+<tr>
+<td><a href="../articles_maths/the-non-central-algebraic-norm-and-the-two-halves-of-the-symmetric-quaternionic-sesqualgebra.html">The Non-Central Algebraic Norm and the Two Halves of the Symmetric Quaternionic Sesqualgebra</a></td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+</tr>
+<tr>
+<td><a href="../articles_maths/the-realification-of-the-general-quaternionic-algebra.html">The Realification of the General Quaternionic Algebra</a></td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+</tr>
+<tr>
+<td><a href="../articles_maths/the-regular-bimodule-over-an-involutive-ring.html">The Regular Bimodule over an Involutive Ring</a></td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>1</td>
+</tr>
+<tr>
+<td><a href="../articles_maths/the-specificities-of-the-antisymmetric-plain-algebra-of-the-quaternions.html">The Specificities of the Antisymmetric Plain Algebra of the Quaternions</a></td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+</tr>
+<tr>
+<td><a href="../articles_maths/the-specificities-of-the-symmetric-quaternionic-sesqualgebra.html">The Specificities of the Symmetric Quaternionic Sesqualgebra</a></td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+</tr>
+<tr>
+<td><a href="../articles_maths/the-spectrum.html">The Spectrum</a></td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+</tr>
+<tr>
+<td><a href="../articles_maths/the-squares-and-the-positive-cone-of-the-biquaternion-sesqualgebra.html">The Squares and the Positive Cone of the Biquaternion Sesqualgebra</a></td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+</tr>
+<tr>
+<td><a href="../articles_maths/the-ternary-product-and-the-failure-of-the-jordan-triple-identity.html">The Ternary Product and the Failure of the Jordan Triple Identity</a></td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+</tr>
+<tr>
+<td><a href="../articles_maths/zero-divisors-and-units.html">Zero Divisors and Units</a></td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+</tr>
+</tbody>
+</table></div>
+<h3 id="the-physics-corpus">The Physics Corpus</h3>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>article</th>
+<th>conj.</th>
+<th>sign</th>
+<th>conj. noun</th>
+<th>invol.</th>
+<th>total</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="../articles_physics/the-biquaternion-basis-of-a-unified-field-fibre-bundle.html">The Biquaternion Basis of a Unified-Field Fibre Bundle</a></td>
+<td>0</td>
+<td>10</td>
+<td>0</td>
+<td>0</td>
+<td>10</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/product-and-form-conventions.html">Product and Form Conventions</a></td>
+<td>0</td>
+<td>5</td>
+<td>0</td>
+<td>0</td>
+<td>5</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/unitarity-from-centrality-the-biquaternion-norm-preservation-theorem.html">Unitarity from Centrality: The Biquaternion Norm-Preservation Theorem</a></td>
+<td>0</td>
+<td>5</td>
+<td>0</td>
+<td>0</td>
+<td>5</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/operator-and-calculus-conventions.html">Operator and Calculus Conventions</a></td>
+<td>3</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>4</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-four-general-products-composition-probability-causality-gauge.html">The Four General Products: Composition, Probability, Causality, Gauge</a></td>
+<td>4</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>4</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-quantized-dirac-field-in-biquaternionic-form.html">The Quantized Dirac Field in Biquaternionic Form</a></td>
+<td>2</td>
+<td>0</td>
+<td>2</td>
+<td>0</td>
+<td>4</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-roots-of-a-general-element-mass-frames-and-the-mass-shell.html">The Roots of a General Element: Mass, Frames and the Mass Shell</a></td>
+<td>1</td>
+<td>1</td>
+<td>2</td>
+<td>0</td>
+<td>4</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-unit-metric-in-the-biquaternion-universe.html">The Unit Metric in the Biquaternion Universe</a></td>
+<td>4</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>4</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/algebra-and-element-conventions.html">Algebra and Element Conventions</a></td>
+<td>0</td>
+<td>2</td>
+<td>0</td>
+<td>1</td>
+<td>3</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/bhabha-multi-mass-wave-equations-and-the-bivector-space-in-biquaternionic-form.html">Bhabha Multi-Mass Wave Equations and the Bivector Space in Biquaternionic Form</a></td>
+<td>0</td>
+<td>0</td>
+<td>3</td>
+<td>0</td>
+<td>3</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/exercise-chirality-and-the-weyl-spinors.html">Exercise: Chirality and the Weyl Spinors</a></td>
+<td>0</td>
+<td>3</td>
+<td>0</td>
+<td>0</td>
+<td>3</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/fermion-doubling-and-the-nielsen-ninomiya-theorem-in-biquaternionic-form.html">Fermion Doubling and the Nielsen–Ninomiya Theorem in Biquaternionic Form</a></td>
+<td>1</td>
+<td>0</td>
+<td>2</td>
+<td>0</td>
+<td>3</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-differentiable-field-one-primary-equation-and-the-linear-sector.html">The Differentiable Field: One Primary Equation and the Linear Sector of the Biquaternion Universe</a></td>
+<td>3</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>3</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/biquaternion-physical-interpretation-of-operator-chirality.html">Biquaternion Physical Interpretation of Operator Chirality</a></td>
+<td>0</td>
+<td>0</td>
+<td>2</td>
+<td>0</td>
+<td>2</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/fundamental-and-derived-elements-in-the-biquaternion-framework.html">Fundamental and Derived Elements in the Biquaternion Framework</a></td>
+<td>2</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>2</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-biquaternion-universe-as-an-improvement-of-the-quaternionic-quantum-theory.html">The Biquaternion Universe as an Improvement of the Quaternionic Quantum Theory</a></td>
+<td>2</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>2</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-four-forms-and-the-four-algebraic-norms-over-the-biquaternion-algebra.html">The Four Forms and the Four Algebraic Norms over the Biquaternion Algebra</a></td>
+<td>2</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>2</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-majorana-equation-in-biquaternionic-form.html">The Majorana Equation in Biquaternionic Form</a></td>
+<td>0</td>
+<td>0</td>
+<td>2</td>
+<td>0</td>
+<td>2</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-spinor-module-in-biquaternionic-form-and-its-lorentz-action.html">The Spinor Module in Biquaternionic Form and Its Lorentz Action</a></td>
+<td>0</td>
+<td>2</td>
+<td>0</td>
+<td>0</td>
+<td>2</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/why-axf-matrices-instead-of-pauli-and-gamma-matrices.html">Why AXF Matrices instead of Pauli and Gamma Matrices</a></td>
+<td>2</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>2</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/a-brief-history-of-biquaternions-in-physics.html">A Brief History of Biquaternions in Physics</a></td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/exercise-duality-rotation-and-the-riemann-silberstein-vector.html">Exercise: Duality Rotation and the Riemann–Silberstein Vector</a></td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td>1</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/frame-and-metric-conventions.html">Frame and Metric Conventions</a></td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/norm-and-pairing-conventions.html">Norm and Pairing Conventions</a></td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/parras-four-options-of-the-dirac-equation-and-the-discrete-symmetries.html">Parra's Four Options of the Dirac Equation and the Discrete Symmetries</a></td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/physical-interpretation-of-spectral-regularity-and-degeneracy-in-the-biquaternion-algebra.html">Physical Interpretation of Spectral Regularity and Degeneracy in the Biquaternion Algebra</a></td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/subluminal-and-superluminal-electromagnetic-waves-in-biquaternionic-form.html">Subluminal and Superluminal Electromagnetic Waves in Biquaternionic Form</a></td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-chiral-algebra-of-biquaternions-and-the-cyclic-representation-of-the-dirac-equation.html">The Chiral Algebra of Biquaternions and the Cyclic Representation of the Dirac Equation</a></td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-conformal-group-in-biquaternionic-form.html">The Conformal Group in Biquaternionic Form</a></td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-dirac-equation-in-biquaternionic-form.html">The Dirac Equation in Biquaternionic Form</a></td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td>1</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-fermionic-fock-space-in-biquaternionic-form.html">The Fermionic Fock Space in Biquaternionic Form</a></td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-feynman-propagator-in-biquaternionic-form.html">The Feynman Propagator in Biquaternionic Form</a></td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td>1</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-fujikawa-method-and-the-path-integral-anomaly-in-biquaternionic-form.html">The Fujikawa Method and the Path-Integral Anomaly in Biquaternionic Form</a></td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-krein-form-and-the-indefinite-structure.html">The Krein Form and the Indefinite Structure</a></td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-physical-interpretation-of-the-12-products.html">The Physical Interpretation of the 12 Products</a></td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-pion-and-the-chiral-lagrangian-in-biquaternionic-form.html">The Pion and the Chiral Lagrangian in Biquaternionic Form</a></td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-so4-route-to-the-euclidean-frame-an-alternative-to-the-imaginary-time-coordinate.html">The SO(4) Route to the Euclidean Frame: An Alternative to the Imaginary Time Coordinate</a></td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-square-zero-element-nilpotency-as-mode-differential-and-supercharge.html">The Square-Zero Element: Nilpotency as Mode, Differential and Supercharge</a></td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td>1</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-temporal-dimension-why-the-temporal-unit-is-the-identity.html">The Temporal Dimension: Why the Temporal Unit Is the Identity</a></td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-three-wavenumbers-of-a-particle.html">The Three Wavenumbers of a Particle</a></td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>1</td>
+</tr>
+</tbody>
+</table></div>
+<h3 id="the-internal-articles">The Internal Articles</h3>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>article</th>
+<th>conj.</th>
+<th>sign</th>
+<th>conj. noun</th>
+<th>invol.</th>
+<th>total</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="the-hermitian-pair-in-components-left-right-two-sides.html">The Hermitian Pair in Components: Left, Right, Two Sides</a></td>
+<td>3</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>3</td>
+</tr>
+<tr>
+<td><a href="matrix/m4c-pauli-representation-operators.html">$M_4(\mathbb{C})$ Pauli Representation : Operators</a></td>
+<td>0</td>
+<td>0</td>
+<td>2</td>
+<td>0</td>
+<td>2</td>
+</tr>
+<tr>
+<td><a href="operator-migration.html">Operator Migration: The Operators Subcategory under the Four Cells</a></td>
+<td>1</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td>2</td>
+</tr>
+<tr>
+<td><a href="the-non-hermitian-adjoint-outside-the-gauge-sector.html">Remaining Non-Hermitian Adjoints Outside the Gauge Sector</a></td>
+<td>1</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td>2</td>
+</tr>
+<tr>
+<td><a href="the-transposition-of-the-two-sides-in-axis-free-matrices.html">The Transposition of the Two Sides, Proved in Axis-Free Matrices</a></td>
+<td>2</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>2</td>
+</tr>
+<tr>
+<td><a href="the-labels-of-the-gradient-an-inventory-and-the-return-to-the-caret.html">The Labels of the Gradient: An Inventory and the Return to the Caret</a></td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td>1</td>
+</tr>
+</tbody>
+</table></div>
+<h3 id="the-menu">The Menu</h3>
+<p><strong>Fourteen lines of <code>maths.md</code>.</strong> The menu carries the retired name in the comment blocks that describe its entries. The lines are $16$, $6287$, $6767$, $6912$, $7106$, $7157$, $7160$, $7212$, $7215$, $7220$, $7223$ and $7275$, and $7244$ carries two. Line $16$ carries <em>natural sign</em>, line $7106$ carries the hyphenated <em>natural-conjugation</em>, line $7244$ carries both <em>natural conjugate</em> and <em>natural conjugation</em>, and the rest carry <em>natural conjugation</em>. The physics menu carries none.</p>
+<p><strong>Why the menu counts.</strong> The comments are not rendered, but they are the corpus's own index of its articles, and a reader who opens the source meets them. A migration that leaves the index describing what the articles no longer say is half a migration. The menu is edited in the same pass, after the articles, so that each comment describes the article as it now stands.</p>
+<h2 id="the-sites-that-need-reading">The Sites That Need Reading</h2>
+<p><strong>Seven sentences.</strong> In seven places the word is not a synonym and the substitution produces a false or ungrammatical sentence. They are listed with their text, and each is rewritten here so that the pass has a model.</p>
+<h3 id="the-class-of-conjugations">The Class of Conjugations</h3>
+<p><strong>The sentence in <em>Quaternion Algebra</em>.</strong> <em>There are </em><em>three</em><em> natural conjugations on $\mathbb{H}$, obtained from the quaternion conjugation together with the negation map.</em> Here <em>natural</em> names the class, and <em>quaternion</em> names one member. The replacement is to drop the word: <em>There are </em><em>three</em><em> conjugations on $\mathbb{H}$, obtained from the quaternion conjugation together with the negation map.</em> The list that follows, quaternion, vector and total conjugation, is unchanged.</p>
+<p><strong>The sentence in <em>The Split Biquaternion Algebra</em>.</strong> Two sites. The first is <em>There are </em><em>four</em><em> natural conjugations on $\mathbb{B}_{\mathrm{spl}}$, obtained by composing the quaternion conjugation ${}^{\natural}$ and the split complex conjugation $\bar{\cdot}$.</em> The second is <em>There are four natural conjugations: quaternion conjugation, split complex conjugation, Hermitian conjugation, and anti-Hermitian conjugation.</em> Both lose the word and keep the count: <em>four conjugations</em>.</p>
+<p><strong>The sentence in <em>Dual Numbers Algebra</em>.</strong> <em>There are </em><em>two</em><em> natural conjugations on $\mathbb{C}_{\mathrm{dln},R}$.</em> It becomes <em>two conjugations</em>.</p>
+<p><strong>The sentence in <em>A Brief History of Biquaternions in Physics</em>.</strong> <em>Its four natural conjugations have as fixed-point sets the remarkable real subspaces.</em> It becomes <em>its four conjugations</em>. The next sentence, on the natural quadratic form, belongs to the second wave and is treated there.</p>
+<p><strong>The two sentences with the word <em>involution</em>.</strong> In <em>The Regular Bimodule over an Involutive Ring</em>, <em>The biquaternion algebra $\mathbb{B}$ carries four natural involutions</em>; in <em>Algebra and Element Conventions</em>, physics copy, <em>The biquaternion algebra carries three natural involutions and the anti-Hermitian sign derived from them</em>. The first becomes <em>four involutions</em>, the second <em>three involutions</em>. The mathematics copy of the conventions article already writes <em>three involutions</em> at the corresponding place, which is the warrant that the physics copy is the stale one.</p>
+<h3 id="the-involution-that-is-not-the-map">The Involution That Is Not the Map</h3>
+<p><strong>Three occurrences stay.</strong> <em>Natural involution</em> is written $12$ times, and three of them name a different object. <em>A complex vector space carries two natural involutions</em> names the complex structure and the conjugation of a complex space. <em>The pair of natural involutions of the exterior algebra that exchange $L$ with $\Lambda$</em> names the pair of the Kähler article. <em>The natural involution is the inversion $\iota(a)=a^{-1}$</em> names the inversion of a group. In all three, <em>natural</em> means <em>canonical for the object at hand</em>, and the object is not $\mathbb{B}$. The word stays.</p>
+<p><strong>Nine occurrences are the map.</strong> They stand in <em>The Regular Bimodule over an Involutive Ring</em> (one, the class sense), <em>Algebra and Element Conventions</em>, physics copy (one, the class sense), <em>The Indefinite Hermitian Pair of Operators on the General Quaternionic Sesqualgebra</em> (one), <em>The Specificities of the Symmetric Plain Algebra of the Quaternions</em> (five), and <em>The Three Wavenumbers of a Particle</em> (one). The word goes, replaced by <em>quaternion</em> where the sentence names the map and by nothing where it names the class.</p>
+<h3 id="the-degraded-layers">The Degraded Layers</h3>
+<p><strong>The identity sentences.</strong> <em>In $\mathbb{C}$, $\mathbb{C}_{\mathrm{spl}}$ and $\mathbb{C}_{\mathrm{dln}}$ the imaginary, hyperbolic and dual units are the coefficient sector itself, conjugated by the bar, so the natural sign is the identity and the star is the bar.</em> The map is the identity there and there is no quaternion factor, so the sentence becomes <em>the intrinsic conjugation is the identity</em>. The same rewrite applies at every place in <em>Algebra and Element Conventions</em> where <em>the natural sign</em> is followed by <em>is the identity</em>, <em>has no sense</em> or <em>is not written</em>, and at the two places in <em>Norm and Pairing Conventions</em> and <em>Norm and Unitary Conventions</em> where <em>the natural sign alone</em> names the surviving involution of a layer.</p>
+<p><strong>The table rows.</strong> In the inventories of marks, the row is a glyph and a name. <em>The bar, the natural sign ${}^{\natural}$, the tessarine sign ${}_{\mathrm{ts}}$</em> becomes <em>the bar, the sign ${}^{\natural}$, the tessarine sign ${}_{\mathrm{ts}}$</em>, because the table lists marks and the word <em>quaternion</em> would break the parallel with <em>tessarine</em>.</p>
+<h3 id="the-compound-that-cannot-be-touched">The Compound That Cannot Be Touched</h3>
+<p><strong>The derived adjectives stay.</strong> The corpus writes $190$ compounds that begin with the glyph: <em>$\natural$-regular</em> $71$ times, <em>$\natural$-degenerate</em> $73$, <em>$\natural$-product</em> $19$, <em>$\natural$-bilinear</em> $7$, <em>$\natural$-isotope</em> $5$, and a tail. None contains the word <em>natural</em>, and none is the name of the map. They are the names of the form and its level sets, and they are read as <em>the $\natural$-form</em>, not as <em>the natural form</em>. They are outside the pass.</p>
+<p><strong>No article argues for the word.</strong> The inventory found no sentence that says why the map is called natural, that defends the word, or that derives it. The word arrives without a warrant in the articles that use it. That absence is the strongest argument for the purge: nothing is lost when a name that was never argued for is removed.</p>
+<h2 id="the-strategy">The Strategy</h2>
+<p><strong>Nine passes, in this order.</strong> Each pass ends with a check, and the next begins only on a clean check. The order is from the definition outward, because an article that inherits a name from a conventions page must not be edited before the page.</p>
+<h3 id="pass-0-freeze-the-dictionary">Pass 0: Freeze the Dictionary</h3>
+<p><strong>Four entries.</strong> The pass writes down the replacement table of §<em>The Senses</em> and does not change during the migration.</p>
+<ul>
+<li><em>natural conjugation</em> becomes <em>quaternion conjugation</em> on the quaternionic layers and <em>intrinsic conjugation</em> elsewhere.</li>
+<li><em>natural sign</em> becomes <em>quaternion sign</em>, the parallel of <em>tessarine sign</em> and <em>Hermitian sign</em> already used by the corpus; where the phrase is followed by the mark, the single word <em>sign</em> is used.</li>
+<li><em>natural conjugate</em> becomes <em>quaternion conjugate</em>.</li>
+<li><em>natural involution</em> becomes <em>quaternion involution</em> where it names the map, nothing where it names the class, and stays where it names another object.</li>
+</ul>
+<p><strong>The guard list.</strong> The word is left alone before these nouns: <em>transformation</em>, <em>isomorphism</em>, <em>pairing</em>, <em>map</em>, <em>numbers</em>, <em>extension</em>, <em>action</em>, <em>bijection</em>, <em>family</em>, <em>functor</em>, <em>basis</em>, <em>order</em>, <em>home</em>, <em>setting</em>, <em>deduction</em>, <em>real</em>, <em>algebraic</em>, <em>object</em>. The list is not a licence to replace by regex; it is the list of sites that must not be touched.</p>
+<h3 id="pass-1-the-definition-sites">Pass 1: The Definition Sites</h3>
+<p><strong>The conventions first.</strong> Ten conventions articles carry the name: <em>Algebra and Element Conventions</em>, <em>Norm and Unitary Conventions</em>, <em>Operator and Calculus Conventions</em>, <em>Operator Family Conventions</em> and <em>Frame and Metric Conventions</em> in mathematics, and <em>Algebra and Element Conventions</em>, <em>Product and Form Conventions</em>, <em>Norm and Pairing Conventions</em>, <em>Operator and Calculus Conventions</em> and <em>Frame and Metric Conventions</em> in physics. Each pair of same-named files is a different file with a different text, and both are edited.</p>
+<p><strong>Then the six layer articles.</strong> <em>Quaternion Algebra</em>, <em>The Split Biquaternion Algebra</em>, <em>Dual Numbers Algebra</em>, <em>The Group of Involutions of the Quaternioid</em>, <em>The Two Involutions and the Group of Involutions</em>, and <em>The Biquaternion Algebra</em>. These are the files that introduce the map to a reader, and they set the wording every consumer inherits.</p>
+<p><strong>The check.</strong> After the pass, each of the $16$ files names the map in the kept name, the definition formula is unchanged, and the section that defines it is reachable by its new title.</p>
+<h3 id="pass-2-the-headings">Pass 2: The Headings</h3>
+<p><strong>Eleven headings.</strong> They are the eleven titles that carry the word.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>file</th>
+<th>heading today</th>
+<th>heading after</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>The Endomorphisms of the Biquaternion Algebra</td>
+<td>The Natural Conjugation</td>
+<td>The Quaternion Conjugation</td>
+</tr>
+<tr>
+<td>The Group of Involutions of the Quaternioid</td>
+<td>The Natural Sign</td>
+<td>The Quaternion Conjugation</td>
+</tr>
+<tr>
+<td>The Two Involutions and the Group of Involutions</td>
+<td>The Natural Sign</td>
+<td>The Quaternion Conjugation</td>
+</tr>
+<tr>
+<td>Introduction to the Remarkable Subspaces of the Quaternions</td>
+<td>The Natural Sign and the Two Subspaces</td>
+<td>The Quaternion Conjugation and the Two Subspaces</td>
+</tr>
+<tr>
+<td>Comparison of the Remarkable Subspaces of the Quaternions</td>
+<td>The Sign Pattern of the Natural Sign</td>
+<td>The Sign Pattern of the Quaternion Conjugation</td>
+</tr>
+<tr>
+<td>The Form on the Biquaternion Algebra as a General Plain Sesquilinear Form</td>
+<td>The Caution on the Natural Conjugation</td>
+<td>The Caution on the Quaternion Conjugation</td>
+</tr>
+<tr>
+<td>Introduction to the General Quaternionic Sesqualgebra</td>
+<td>The Right Action Is the Natural Conjugation</td>
+<td>The Right Action Is the Quaternion Conjugation</td>
+</tr>
+<tr>
+<td>The Two One-Sided Actions and the Absence of a Unit</td>
+<td>The Right Action Is the Natural Conjugation</td>
+<td>The Right Action Is the Quaternion Conjugation</td>
+</tr>
+<tr>
+<td>The Bochner Theorem for the Biquaternion Transform: the Hermitian Form and the Root</td>
+<td>The Natural Conjugation Is a Different Statement</td>
+<td>The Quaternion Conjugation Is a Different Statement</td>
+</tr>
+<tr>
+<td>Relations between the Biquaternion Exponential and the Fourier Kernel</td>
+<td>Natural Conjugation</td>
+<td>Quaternion Conjugation</td>
+</tr>
+<tr>
+<td>The Transposition of the Two Sides, Proved in Axis-Free Matrices</td>
+<td>Step One: The Transpose Is the Natural Conjugation</td>
+<td>Step One: The Transpose Is the Quaternion Conjugation</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Nothing breaks.</strong> The corpus carries no anchor link of the form <code>.html#section</code>, and no <code>§*…*</code> reference to a section whose title contains the word. The rename is invisible to every link. The only readers who notice are the ones who read the section, which is the intent.</p>
+<h3 id="pass-3-the-tail">Pass 3: The Tail</h3>
+<p><strong>One hundred and five files, one or two occurrences each.</strong> These are mechanical substitutions, with one caution each: the file may carry a derived name in the same sentence, as a one-occurrence file in the biquaternion family often does. The reader checks the sentence, substitutes the name, and moves on. The pass is fast and it is the place where a careless substitution does the most damage, because a one-occurrence file is a file nobody re-reads.</p>
+<h3 id="pass-4-the-heavy-files">Pass 4: The Heavy Files</h3>
+<p><strong>Seventy-five files, three or more occurrences.</strong> These are the files that use the name as a term of art. The heaviest, <em>The Four General Products and Their Relations over the Biquaternion Algebra</em> at $14$, uses it on every page. The pass reads each of the files and decides, paragraph by paragraph, whether the sentence names the map, the mark, the class, or one of the derived objects. The eleven headings are already done, so the section titles are consistent while the body is read.</p>
+<h3 id="pass-5-the-class-sense">Pass 5: The Class Sense</h3>
+<p><strong>Seven sites.</strong> They are the seven of §<em>The Sites That Need Reading</em>. The pass is separate because the substitution is a deletion and not a rename, and because a substitution applied before this pass would produce <em>three quaternion conjugations obtained from the quaternion conjugation</em>, which is the one sentence the migration must not produce.</p>
+<h3 id="pass-6-the-menu">Pass 6: The Menu</h3>
+<p><strong>Fourteen lines of <code>maths.md</code>.</strong> The comments are edited last, when the articles they describe are final. The pass reads each comment against the article it introduces and updates only the words that name the map. No entry is moved and no link target changes.</p>
+<h3 id="pass-7-the-record">Pass 7: The Record</h3>
+<p><strong>Six internal articles.</strong> Five of them carry the name in running prose and are edited like any article. The sixth is this one. This article keeps the retired name as its object: it quotes the sentences it rewrites, it gives the counts of the name it retires, and it cannot be written without the name. It is the one file where the word survives, and the verification excludes it by name.</p>
+<h3 id="pass-8-the-verification">Pass 8: The Verification</h3>
+<p><strong>The target check.</strong> The count must be zero everywhere but this article.</p>
+<pre><code>grep -rniE 'natural[- ](conjugat|sign|involution)' articles_maths articles_physics | wc -l
+grep -niE 'natural[- ](conjugat|sign|involution)' maths.md | wc -l
+grep -rniE 'natural[- ](conjugat|sign|involution)' articles_internal | grep -v conjugation-migration
+</code></pre>
+<p>The third command returns nothing. The first prints <code>3</code>, the three of §<em>The Involution That Is Not the Map</em>, and the second prints <code>0</code>.</p>
+<p><strong>The line-break check.</strong> The three commands above read lines. Four sites split the phrase across a line break, so the pass re-runs the search on the file contents, not on the lines:</p>
+<pre><code>python3 -c &quot;
+import re,glob,sys
+p=re.compile(r'natural[\s-]+(conjugat|sign|involut)',re.I)
+for f in glob.glob('articles_*/**/*.md',recursive=True):
+    if f.endswith('conjugation-migration.md'): continue
+    t=open(f).read()
+    if p.search(t): print(f)
+&quot;
+</code></pre>
+<p>The command prints the same three files and no other. A verification that only greps lines reports success on the four sites split across a line break, which is why the content search is the one that decides.</p>
+<p><strong>The invariant checks.</strong> The pass must leave three counts unchanged.</p>
+<ul>
+<li>The glyph: <code>grep -ro '\\natural' articles_maths articles_physics | wc -l</code> prints $21\,617$. The rise of seven is the seven marks written by hand; a drop would mean a substitution reached into a formula.</li>
+<li>The word in its other senses: $1\,802$ occurrences of <em>natural</em> are left, none of them touching the map. The word stands $1\,925$ times in the articles, against $2\,490$ in the census. Of the $1\,925$, $120$ are the derived names — product $35$, norm $28$, quadratic form $10$, form $47$ — and three are the involutions of other objects; the rest are <em>natural pairing</em>, <em>natural transformation</em>, <em>natural numbers</em>, <em>natural basis</em> and their kin.</li>
+<li>The article count: all $2\,782$ mathematics and physics files still open on their <code># __Title__</code> line, and both menus still hold their entries. A substitution that eats a heading is not a substitution.</li>
+</ul>
+<p><strong>The reading check.</strong> Two files are read end to end after the machine checks: <em>Algebra and Element Conventions</em>, mathematics copy, and <em>The Group of Involutions of the Quaternioid</em>. The first is where the map is defined and the second is where the family of involutions is named. If these two read correctly, the corpus has a consistent vocabulary; the other $178$ files inherit it.</p>
+<h3 id="what-the-pass-does-not-touch">What the Pass Does Not Touch</h3>
+<p><strong>Four things stay.</strong></p>
+<ul>
+<li>The glyph ${}^{\natural}$, in all its $21\,610$ occurrences.</li>
+<li>The $190$ compounds of the form <em>$\natural$-regular</em>, <em>$\natural$-degenerate</em>, <em>$\natural$-product</em>, <em>$\natural$-bilinear</em>, <em>$\natural$-isotope</em>. They name the form and its level sets, not the map.</li>
+<li>The word <em>natural</em> in its ordinary sense, $1\,958$ times.</li>
+<li><em>Quaternionic conjugation</em> and <em>quaternionic conjugate</em>, $33$ occurrences. They are a variant of the kept name and not of the retired one. Normalising them is a second, smaller pass, and it should not be mixed with this one: the two passes have different failure modes, and a mixed pass cannot be verified by a single count.</li>
+</ul>
+<p><strong>No file name changes.</strong> No file name in the corpus contains the word, so no article address changes, and no incoming link breaks. The eight file names that exist in both corpora stay as they are; the two copies are edited independently.</p>
+<h2 id="the-cost">The Cost</h2>
+<p><strong>The pass in numbers.</strong> The table gives the work by pass. The counts are occurrences, not files.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>pass</th>
+<th>files</th>
+<th>occurrences</th>
+<th>nature</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1, definition sites</td>
+<td>$16$</td>
+<td>$58$</td>
+<td>rewrite, read each</td>
+</tr>
+<tr>
+<td>2, headings</td>
+<td>$11$</td>
+<td>$11$</td>
+<td>rename, no link risk</td>
+</tr>
+<tr>
+<td>3, tail</td>
+<td>$105$</td>
+<td>$149$</td>
+<td>mechanical, read each sentence</td>
+</tr>
+<tr>
+<td>4, heavy files</td>
+<td>$75$</td>
+<td>$413$</td>
+<td>read each paragraph</td>
+</tr>
+<tr>
+<td>5, class sense</td>
+<td>$7$</td>
+<td>$7$</td>
+<td>delete the word</td>
+</tr>
+<tr>
+<td>6, menu</td>
+<td>$1$</td>
+<td>$14$</td>
+<td>edit the comments</td>
+</tr>
+<tr>
+<td>7, record</td>
+<td>$6$</td>
+<td>$12$</td>
+<td>edit, one stays by design</td>
+</tr>
+<tr>
+<td>total</td>
+<td>$180$</td>
+<td>$562$</td>
+<td></td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>The passes overlap by file.</strong> A file can be a definition site and a heavy file, and the table counts it once per pass. The column sums to more than $562$ and the file count to more than $180$ for that reason. The $180$ files and the $562$ occurrences of §<em>The Count</em> are the union.</p>
+<p><strong>The time is in the reading.</strong> Just over a quarter of the occurrences are mechanical. The cost is in the $75$ heavy files and in the seven class sites. A pass that treats all $180$ files as mechanical will produce <em>three quaternion conjugations</em> in <em>Quaternion Algebra</em>, and that sentence is visible to every reader of the algebra's first article.</p>
+<h2 id="the-applied-state">The Applied State</h2>
+<p><strong>The pass ran in the order of §<em>The Strategy</em>.</strong> The counts below are measured on the corpus after the pass, with this article excluded. The baseline is the census of §<em>The Count</em>.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>measure</th>
+<th>before</th>
+<th>after</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>natural conjugation</td>
+<td>$373$</td>
+<td>$0$</td>
+</tr>
+<tr>
+<td>natural sign</td>
+<td>$122$</td>
+<td>$0$</td>
+</tr>
+<tr>
+<td>natural conjugate</td>
+<td>$69$</td>
+<td>$0$</td>
+</tr>
+<tr>
+<td>natural involution</td>
+<td>$12$</td>
+<td>$3$</td>
+</tr>
+<tr>
+<td>quaternion conjugation</td>
+<td>$396$</td>
+<td>$756$</td>
+</tr>
+<tr>
+<td>quaternion sign</td>
+<td>$21$</td>
+<td>$110$</td>
+</tr>
+<tr>
+<td>quaternion conjugate</td>
+<td>$278$</td>
+<td>$345$</td>
+</tr>
+<tr>
+<td>intrinsic conjugation and conjugate</td>
+<td>$23$</td>
+<td>$28$</td>
+</tr>
+<tr>
+<td>the glyph <code>\natural</code></td>
+<td>$21\,610$</td>
+<td>$21\,617$</td>
+</tr>
+<tr>
+<td>files carrying the retired name</td>
+<td>$180$</td>
+<td>$3$</td>
+</tr>
+<tr>
+<td>menu lines carrying it</td>
+<td>$14$</td>
+<td>$0$</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>One hundred and seventy-eight files were edited</strong> — $131$ in mathematics, $40$ in physics, $7$ internal, and the two menus. The three files that still carry the word are the three of §<em>The Involution That Is Not the Map</em>, and they carry it for their own object, not for the map.</p>
+<p><strong>The glyph rose by seven.</strong> The pass writes seven new marks, each in a sentence that names the mark itself: the $\natural$-partner of §<em>The Compound That Cannot Be Touched</em>, the $\natural$-sign interpretation at three sites, and the sign ${}^{\natural}$ at one site each in the two copies of <em>Operator and Calculus Conventions</em>, in <em>The Differentiable Field</em> and in <em>Introduction to the General Quaternionic Sesqualgebra</em>. No existing formula was touched. The count of the glyph is the check, and the increase is entirely accounted for by those seven additions.</p>
+<p><strong>The eleven headings were renamed before the bodies were read.</strong> No link broke, as §<em>Pass 2</em> predicted: the corpus carries no anchor into a section title.</p>
+<p><strong>The seven class sites lost the word and kept the count.</strong> The rewrites are:</p>
+<ul>
+<li><em>Quaternion Algebra</em>: <em>there are </em><em>three</em><em> conjugations on $\mathbb{H}$, obtained from the quaternion conjugation together with the negation map</em>.</li>
+<li><em>The Split Biquaternion Algebra</em>, first site: <em>there are </em><em>four</em><em> conjugations on $\mathbb{B}_{\mathrm{spl}}$, obtained by composing the quaternion conjugation ${}^{\natural}$ and the split complex conjugation $\bar{\cdot}$</em>.</li>
+<li><em>The Split Biquaternion Algebra</em>, second site: <em>there are four conjugations: quaternion conjugation, split complex conjugation, Hermitian conjugation, and anti-Hermitian conjugation</em>.</li>
+<li><em>Dual Numbers Algebra</em>: <em>there are </em><em>two</em><em> conjugations on $\mathbb{C}_{\mathrm{dln},R}$</em>.</li>
+<li><em>A Brief History of Biquaternions in Physics</em>: <em>its four conjugations have as fixed-point sets the remarkable real subspaces</em>.</li>
+<li><em>The Regular Bimodule over an Involutive Ring</em>: <em>the biquaternion algebra $\mathbb{B}$ carries four involutions</em>.</li>
+<li><em>Algebra and Element Conventions</em>, physics copy: <em>the biquaternion algebra carries three involutions and the anti-Hermitian sign derived from them</em>.</li>
+</ul>
+<p><strong>The degraded layers were rewritten before the bulk pass.</strong> <em>The intrinsic conjugation is the identity</em> now stands where <em>the natural sign is the identity</em> stood, at one site in <em>Algebra and Element Conventions</em> and one in <em>Norm and Unitary Conventions</em>; <em>the intrinsic conjugation has no sense and is not written</em> at one site; <em>the intrinsic conjugation is not written</em> at two. The count of <em>intrinsic conjugation</em> rose from $23$ to $28$ for that reason.</p>
+<p><strong>Nine tautologies were avoided by hand.</strong> In nine articles the preamble read <em>the natural sign $\natural$ is the quaternion conjugation</em>, which the bulk substitution would have turned into <em>the quaternion sign is the quaternion conjugation</em>, and then into a sentence that says nothing. The word was dropped instead: <em>the sign $\natural$ is the quaternion conjugation</em>. Five more such collisions were found after the pass and repaired: two in the tables of marks, where the entry read <em>the quaternion sign, the quaternion conjugation</em> and now reads <em>the quaternion conjugation</em>; one in <em>Introduction to the General Quaternionic Sesqualgebra</em>, where the parenthesis read <em>the quaternion conjugation is the quaternion conjugation on the real subspace</em>; one in <em>The Quaternionic Product on the Quaternion Subspace</em>, where <em>acts as the quaternion conjugate</em> became <em>coincides with the bar</em>; and one in <em>The Differentiable Field</em>, where <em>the $\mathbb{C}$-linear quaternion conjugation</em> glossed <em>the quaternion conjugation</em> and became <em>the $\mathbb{C}$-linear involution</em>.</p>
+<p><strong>One name was added to the dictionary during the pass.</strong> <em>Natural sign</em> became <em>quaternion sign</em>, not <em>quaternion conjugation</em>. The corpus already names marks this way — <em>tessarine sign</em>, <em>Hermitian sign</em>, <em>anti-Hermitian sign</em> — and the sentences where the word stood were about the mark, not about the operation on an element. The parallel is exact and no sentence needed rewriting for it.</p>
+<p><strong>The second wave was not run.</strong> The derived names stand as they were: <em>the natural product</em> $35$, <em>the natural norm</em> $28$, <em>the natural quadratic form</em> $10$, and <em>the natural form</em> $47$ in two senses. They do not contain the word <em>conjugation</em>, so the purge of the name left them untouched. <em>The natural product</em> is the most misleading of them, because it reads as the ordinary product and means $\tilde Q_1^{\natural}\tilde Q_2$; the corpus owns the correct name, <em>the general quaternionic bilinear product</em>. One of them was repaired in passing, in the mathematics menu, where <em>the plain and the natural products</em> became <em>the plain and the quaternionic products</em>.</p>
+<p><strong>Three files outside the corpus carry the name and were not touched.</strong> The reserve draft <code>_reserve/Charon/md/charon-s64-the-biquaternion-rewrite-scope.md</code> writes <em>four natural involutions</em>, and two files under <code>temp/</code> write <em>natural sign</em> and <em>natural conjugate</em>. They are drafts and backups, not articles, and the migration covers <code>articles_maths</code>, <code>articles_physics</code>, <code>articles_internal</code>, <code>maths.md</code> and <code>physics.md</code>.</p>
+<h2 id="summary">Summary</h2>
+<p><strong>One map, two names, and the corpus must choose one.</strong> The map is $\tilde Q^{\natural}=Q_te_t-Q_x\vec e_x-Q_y\vec e_y-Q_z\vec e_z$. It is written <em>quaternion conjugation</em> $396$ times and <em>natural conjugation</em> $373$ times. The surviving name is the first.</p>
+<p><strong>The retired name stands in $180$ articles and $14$ menu lines.</strong> The four forms total $566$ occurrences in the articles. The heaviest file carries $14$; the median file carries $2$; $105$ files carry one or two.</p>
+<p><strong>The word goes for five reasons.</strong> It asserts a privilege it does not state. It names nothing that <em>quaternion</em> does not name. The corpus has already chosen. It collides with $1\,958$ occurrences of <em>natural</em> in other senses. And it doubles the Unicode name of the glyph.</p>
+<p><strong>The objection is real and it has a home.</strong> <em>Natural</em> is layer-general and <em>quaternion</em> is not. The corpus already owns the layer-general name: <em>intrinsic conjugation</em>, written $23$ times in its two forms and defined in <em>Algebra and Element Conventions</em>. The dictionary has two entries and no gap.</p>
+<p><strong>Seven sentences are not substitutions.</strong> They are the class sense in six files: <em>three natural conjugations on $\mathbb{H}$</em>, <em>four natural conjugations on $\mathbb{B}_{\mathrm{spl}}$</em> at two places, <em>two natural conjugations on $\mathbb{C}_{\mathrm{dln},R}$</em>, <em>four natural conjugations</em> in the history article, <em>four natural involutions</em> in <em>The Regular Bimodule</em>, and <em>three natural involutions</em> in the physics conventions. They lose the word and keep the count.</p>
+<p><strong>The pass is nine steps, from the definition outward.</strong> The dictionary, then the conventions, then the headings, then the tail, then the heavy files, then the class sites, then the menu, then the internal record, then the verification.</p>
+<p><strong>The verification is four checks.</strong> The target count, the line-break search, the three invariants, and two files read end to end.</p>
+<p><strong>The pass is done.</strong> The corpus writes <em>natural conjugation</em>, <em>natural sign</em> and <em>natural conjugate</em> zero times. It writes the surviving names everywhere else: <em>quaternion conjugation</em> $756$ times, <em>quaternion sign</em> $110$, <em>quaternion conjugate</em> $345$. The glyph <code>\natural</code> stands $21\,617$ times, seven more than before, all seven added by hand and all seven accounted for. Three occurrences of <em>natural involution</em> remain, and they name the complex structure, the exterior-algebra pair and the group inversion, not the map. The migration of the name is complete; the derived names of §<em>The Applied State</em> are the residue.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>item</th>
+<th>reading</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>${}^{\natural}$</td>
+<td>the mark; unchanged by the migration</td>
+</tr>
+<tr>
+<td>quaternion conjugation</td>
+<td>the kept name of the map $\tilde Q^{\natural}=Q_te_t-Q_x\vec e_x-Q_y\vec e_y-Q_z\vec e_z$</td>
+</tr>
+<tr>
+<td>intrinsic conjugation</td>
+<td>the name of the same mark on a layer with no quaternion factor, where it is the identity</td>
+</tr>
+<tr>
+<td>natural conjugation</td>
+<td>the retired name; survives only in this article</td>
+</tr>
+<tr>
+<td>natural sign</td>
+<td>the retired name of the mark</td>
+</tr>
+<tr>
+<td>quaternion conjugate</td>
+<td>the kept noun</td>
+</tr>
+<tr>
+<td>quaternion sign</td>
+<td>the kept name of the mark, parallel to <em>tessarine sign</em></td>
+</tr>
+<tr>
+<td>$\natural$-regular, $\natural$-degenerate, $\natural$-product</td>
+<td>the compounds of the mark; untouched</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li><a href="../articles_maths/algebra-and-element-conventions.html">Algebra and Element Conventions</a>, for the four conjugations, the table of the marks, and the phrase <em>intrinsic conjugation</em> that carries the generic case.</li>
+<li><a href="../articles_maths/the-group-of-involutions-of-the-quaternioid.html">The Group of Involutions of the Quaternioid</a>, for the map, the inner involutions and the classification of the anti-automorphisms.</li>
+<li><a href="../articles_maths/quaternion-algebra.html">Quaternion Algebra</a>, for the three conjugations of $\mathbb{H}$ and the class sentence the migration rewrites.</li>
+<li><a href="../articles_maths/split-biquaternion-algebra.html">The Split Biquaternion Algebra</a>, for the four conjugations of the split layer and their two class sentences.</li>
+<li><a href="../articles_maths/the-four-general-products-and-their-relations-over-the-biquaternion-algebra.html">The Four General Products and Their Relations over the Biquaternion Algebra</a>, for the name <em>general quaternionic bilinear product</em>, which replaces <em>natural product</em> in the second wave.</li>
+<li><a href="../articles_maths/product-and-form-conventions.html">Product and Form Conventions</a>, for the names of the twelve products and the four forms.</li>
+<li><a href="the-transposition-of-the-two-sides-in-axis-free-matrices.html">The Transposition of the Two Sides in Axis-Free Matrices</a>, internal, for a section already named <em>The Quaternion Conjugation</em> and for the transposition reading of the map.</li>
+<li><a href="operator-migration.html">Operator Migration</a>, internal, for the companion migration and the pattern of an inventory article: the pass, the warrant, the cost and the state of the corpus.</li>
+<li><a href="pair-migration.html">Pair Migration</a>, internal, for a second companion migration and the form of the per-file record.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>
