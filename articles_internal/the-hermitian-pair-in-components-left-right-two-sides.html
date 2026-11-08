@@ -1,0 +1,537 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Hermitian Pair in Components: Left, Right, Two Sides — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-hermitian-pair-in-components-left-right-two-sides"><strong>The Hermitian Pair in Components: Left, Right, Two Sides</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p><strong>The subject.</strong> One element $\tilde Q$ of $\mathbb{B}$ and three operators it defines:</p>
+<p>$$
+L_{\tilde Q}(\tilde X)=\tilde Q\tilde X,\qquad
+R_{\tilde Q^{*}}(\tilde X)=\tilde X\tilde Q^{*},\qquad
+\mathrm{Hp}_{\tilde Q}(\tilde X)=\tilde Q\tilde X\tilde Q^{*}.
+$$</p>
+<p>The first multiplies on the left, the second on the right by the Hermitian conjugate, the third does both, and it is the <strong>Hermitian pair</strong>. The article writes all three as products of explicit $4\times4$ arrays and derives each identity between them by multiplying those arrays.</p>
+<p><strong>The one array.</strong> The frame is $\mathcal{E}=(e_t,\vec e_x,\vec e_y,\vec e_z)$, with $\vec e_k^{2}=-e_t$ and $\vec e_x\vec e_y=\vec e_z$ cyclically, and every operator here is read from the matrix of the element in this frame,</p>
+<p>$$
+L(\tilde Q)=L_{\mathrm{axf}}(\tilde Q),
+$$</p>
+<p>the matrix whose $\nu$-th column is the coordinate column $[\tilde Qe_\nu]$. Three facts about it carry the whole article. It is multiplicative and faithful, so a statement about elements is a statement about arrays. Its conjugate transpose is $L(\tilde Q^{*})$, so the star of the algebra is the dagger of the array. Its transpose is $L(\tilde Q^{\natural})$, so the natural conjugation is the transpose.</p>
+<p><strong>Boundaries.</strong> The abstract statements belong to <em>Operators Acting on One Side</em>, <em>Operators Acting on Two Sides</em> and <em>The Hermitian Pair of Operators Acting on Two Sides</em>; the frame and its two regular matrices to <em>$M_4(\mathbb{C})$ Axis-Free Representation</em>; the transport of the parameter to <em>The Transposition of the Two Sides</em>. Nothing here treats the Pauli frame, the Peirce frames or the Lorentz action of the pair.</p>
+<h2 id="the-matrix-of-the-element">The Matrix of the Element</h2>
+<p><strong>The display.</strong> Reading the four columns off the multiplication table,</p>
+<p>$$
+\begin{pmatrix}Q_t&-Q_x&-Q_y&-Q_z\\Q_x&Q_t&-Q_z&Q_y\\Q_y&Q_z&Q_t&-Q_x\\Q_z&-Q_y&Q_x&Q_t\end{pmatrix}
+\tag{1}
+$$</p>
+<p>The first column is $[\tilde Q]$, so the array determines the element.</p>
+<p><strong>One array, two roles.</strong> As a matrix of an operator on coefficient columns, (1) is the matrix of $L_{\tilde Q}$, because its $\nu$-th column is $[L_{\tilde Q}e_\nu]$. As a matrix of an element, it is multiplied by the matrix of another element. The two roles are one array because the map $\tilde Q\mapsto L(\tilde Q)$ preserves the product.</p>
+<p><strong>Theorem (multiplicativity).</strong> $L(\tilde Q_1\tilde Q_2)=L(\tilde Q_1)L(\tilde Q_2)$, and $L(\tilde Q)=0$ only for $\tilde Q=0$.</p>
+<p><em>Proof.</em> The $\nu$-th column of the left side is $[\tilde Q_1(\tilde Q_2e_\nu)]$, which is $L(\tilde Q_1)$ applied to the $\nu$-th column of $L(\tilde Q_2)$; a matrix is its columns. For the second part, the first column is $[\tilde Q]$.</p>
+<p><strong>The dagger of the array,</strong> which is the matrix of $L_{\tilde Q^{*}}$:</p>
+<p>$$
+\begin{pmatrix}\bar Q_t&\bar Q_x&\bar Q_y&\bar Q_z\\-\bar Q_x&\bar Q_t&\bar Q_z&-\bar Q_y\\-\bar Q_y&-\bar Q_z&\bar Q_t&\bar Q_x\\-\bar Q_z&\bar Q_y&-\bar Q_x&\bar Q_t\end{pmatrix}
+\tag{2}
+$$</p>
+<p><strong>The transpose of the array,</strong> which is the matrix of $L_{\tilde Q^{\natural}}$:</p>
+<p>$$
+\begin{pmatrix}Q_t&Q_x&Q_y&Q_z\\-Q_x&Q_t&Q_z&-Q_y\\-Q_y&-Q_z&Q_t&Q_x\\-Q_z&Q_y&-Q_x&Q_t\end{pmatrix}
+\tag{3}
+$$</p>
+<p><strong>Two entries tell the whole story.</strong> In (1) the mixed entry in the scalar row is $-Q_k$ and the mixed entry in the scalar column is $+Q_k$. Transposition exchanges the two, which is why (3) is (1) with each vector coefficient negated; conjugation leaves the signs and conjugates the four coefficients, which is why the dagger is the conjugate of the transpose.</p>
+<p><strong>Theorem (the three conjugations).</strong></p>
+<p>$$
+L(\tilde Q)^{\mathsf T}=L(\tilde Q^{\natural}),\qquad
+L(\tilde Q)^{\dagger}=L(\tilde Q^{*}),\qquad
+\overline{L(\tilde Q)}=L(\bar{\tilde Q}),
+$$</p>
+<p>with $\tilde Q^{\natural}=Q_te_t-Q_x\vec e_x-Q_y\vec e_y-Q_z\vec e_z$, $\tilde Q^{*}$ the Hermitian conjugate of $\tilde Q$, and $\bar{\tilde Q}$ its coefficient conjugate.</p>
+<p><em>Proof.</em> A pair of entries symmetric about the diagonal carries one vector coefficient twice with the same sign, so transposition negates that coefficient; every other entry is shared with its image. The entrywise conjugation of (1) is the display of $\bar{\tilde Q}$, and the two operations compose to the dagger.</p>
+<p><strong>The dictionary.</strong> Four maps on the elements, four operations on the array, one for one.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>map on $\mathbb{B}$</th>
+<th>operation on $L(\tilde Q)$</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>identity</td>
+<td>$L(\tilde Q)$</td>
+</tr>
+<tr>
+<td>$\natural$</td>
+<td>$L(\tilde Q)^{\mathsf T}$</td>
+</tr>
+<tr>
+<td>$\ast$</td>
+<td>$L(\tilde Q)^{\dagger}$</td>
+</tr>
+<tr>
+<td>$\bar{\cdot}$</td>
+<td>$\overline{L(\tilde Q)}$</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>The invariants.</strong> The trace is $4Q_t$. The determinant is</p>
+<p>$$
+\det L(\tilde Q)=\langle\tilde Q\rangle_{\natural}^{2},
+$$</p>
+<p>because in the canonical frame the array is two copies of the two-by-two matrix of the element, whose determinant is $\langle\tilde Q\rangle_{\natural}$. The rank is twice the rank of that two-by-two matrix, hence $0$, $2$ or $4$.</p>
+<p><strong>The sign matrix.</strong> The array</p>
+<p>$$
+\begin{pmatrix}1&0&0&0\\0&-1&0&0\\0&0&-1&0\\0&0&0&-1\end{pmatrix}
+\tag{4}
+$$</p>
+<p>with $D^{\mathsf T}=D=D^{-1}$, is the Gram matrix of the symmetric form $\operatorname{Sc}(\tilde X\tilde Y)$ on the frame. It is not the matrix of an element: every left matrix has four equal diagonal entries and (4) does not. It is needed once, to write the right multiplication in the column picture.</p>
+<h2 id="the-left-multiplication-written-out">The Left Multiplication, Written Out</h2>
+<p><strong>The statement.</strong> For all $\tilde Q,\tilde X$,</p>
+<p>$$
+L_{\tilde Q}(\tilde X)=\tilde Q\tilde X
+\quad\text{has matrix}\quad
+L(\tilde Q)\,L(\tilde X),
+$$</p>
+<p>by multiplicativity. The second factor is</p>
+<p>$$
+\begin{pmatrix}X_t&-X_x&-X_y&-X_z\\X_x&X_t&-X_z&X_y\\X_y&X_z&X_t&-X_x\\X_z&-X_y&X_x&X_t\end{pmatrix}
+\tag{5}
+$$</p>
+<p>and the product is</p>
+<p>$$
+\underbrace{\begin{pmatrix}Q_t&-Q_x&-Q_y&-Q_z\\Q_x&Q_t&-Q_z&Q_y\\Q_y&Q_z&Q_t&-Q_x\\Q_z&-Q_y&Q_x&Q_t\end{pmatrix}}_{L(\tilde Q)}
+\;\underbrace{\begin{pmatrix}X_t&-X_x&-X_y&-X_z\\X_x&X_t&-X_z&X_y\\X_y&X_z&X_t&-X_x\\X_z&-X_y&X_x&X_t\end{pmatrix}}_{L(\tilde X)}
+\;=\;
+\begin{pmatrix}Q_tX_t-Q_xX_x-Q_yX_y-Q_zX_z&-Q_tX_x-Q_xX_t-Q_yX_z+Q_zX_y&-Q_tX_y+Q_xX_z-Q_yX_t-Q_zX_x&-Q_tX_z-Q_xX_y+Q_yX_x-Q_zX_t\\Q_tX_x+Q_xX_t+Q_yX_z-Q_zX_y&Q_tX_t-Q_xX_x-Q_yX_y-Q_zX_z&-Q_tX_z-Q_xX_y+Q_yX_x-Q_zX_t&Q_tX_y-Q_xX_z+Q_yX_t+Q_zX_x\\Q_tX_y-Q_xX_z+Q_yX_t+Q_zX_x&Q_tX_z+Q_xX_y-Q_yX_x+Q_zX_t&Q_tX_t-Q_xX_x-Q_yX_y-Q_zX_z&-Q_tX_x-Q_xX_t-Q_yX_z+Q_zX_y\\Q_tX_z+Q_xX_y-Q_yX_x+Q_zX_t&-Q_tX_y+Q_xX_z-Q_yX_t-Q_zX_x&Q_tX_x+Q_xX_t+Q_yX_z-Q_zX_y&Q_tX_t-Q_xX_x-Q_yX_y-Q_zX_z\end{pmatrix}
+\tag{6}
+$$</p>
+<p>which is $L(\tilde Q\tilde X)$ read on the entries. <strong>The left multiplication is the operator the frame writes with no transport</strong>: the matrix of the operator and the matrix of the parameter are one array, and acting on element matrices is left multiplication by that array.</p>
+<p><strong>Two left factors at the same parameter.</strong> Multiplying (1) by itself:</p>
+<p>$$
+\underbrace{\begin{pmatrix}Q_t&-Q_x&-Q_y&-Q_z\\Q_x&Q_t&-Q_z&Q_y\\Q_y&Q_z&Q_t&-Q_x\\Q_z&-Q_y&Q_x&Q_t\end{pmatrix}}_{L(\tilde Q)}
+\;\underbrace{\begin{pmatrix}Q_t&-Q_x&-Q_y&-Q_z\\Q_x&Q_t&-Q_z&Q_y\\Q_y&Q_z&Q_t&-Q_x\\Q_z&-Q_y&Q_x&Q_t\end{pmatrix}}_{L(\tilde Q)}
+\;=\;
+\begin{pmatrix}Q_t^{2}-Q_x^{2}-Q_y^{2}-Q_z^{2}&-Q_tQ_x&-Q_tQ_y&-Q_tQ_z\\Q_tQ_x&Q_t^{2}-Q_x^{2}-Q_y^{2}-Q_z^{2}&-Q_tQ_z&Q_tQ_y\\Q_tQ_y&Q_tQ_z&Q_t^{2}-Q_x^{2}-Q_y^{2}-Q_z^{2}&-Q_tQ_x\\Q_tQ_z&-Q_tQ_y&Q_tQ_x&Q_t^{2}-Q_x^{2}-Q_y^{2}-Q_z^{2}\end{pmatrix}
+\tag{7}
+$$</p>
+<p>and the diagonal entry at the scalar slot is $Q_t^{2}-Q_x^{2}-Q_y^{2}-Q_z^{2}$, which is $\langle\tilde Q\rangle_{\natural}$: the square of the array carries the norm of the element in its scalar slot. That single entry is the reason the pair's determinant is a fourth power.</p>
+<p><strong>The array against its transpose.</strong></p>
+<p>$$
+\underbrace{\begin{pmatrix}Q_t&-Q_x&-Q_y&-Q_z\\Q_x&Q_t&-Q_z&Q_y\\Q_y&Q_z&Q_t&-Q_x\\Q_z&-Q_y&Q_x&Q_t\end{pmatrix}}_{L(\tilde Q)}
+\;\underbrace{\begin{pmatrix}Q_t&Q_x&Q_y&Q_z\\-Q_x&Q_t&Q_z&-Q_y\\-Q_y&-Q_z&Q_t&Q_x\\-Q_z&Q_y&-Q_x&Q_t\end{pmatrix}}_{L(\tilde Q)^{\mathsf T}}
+\;=\;
+\begin{pmatrix}Q_t^{2}+Q_x^{2}+Q_y^{2}+Q_z^{2}&0&0&0\\0&Q_t^{2}+Q_x^{2}+Q_y^{2}+Q_z^{2}&0&0\\0&0&Q_t^{2}+Q_x^{2}+Q_y^{2}+Q_z^{2}&0\\0&0&0&Q_t^{2}+Q_x^{2}+Q_y^{2}+Q_z^{2}\end{pmatrix}
+\tag{8}
+$$</p>
+<p>The product is $Q_t^{2}+Q_x^{2}+Q_y^{2}+Q_z^{2}$ on the whole diagonal and zero elsewhere: the transpose is the inverse of the array up to the norm, which is (3) read on a product.</p>
+<h2 id="the-right-multiplication-written-out">The Right Multiplication, Written Out</h2>
+<p><strong>The statement.</strong> For all $\tilde Q,\tilde X$,</p>
+<p>$$
+R_{\tilde Q}(\tilde X)=\tilde X\tilde Q
+\quad\text{has matrix}\quad
+L(\tilde X)\,L(\tilde Q),
+\qquad
+R_{\tilde Q^{*}}(\tilde X)=\tilde X\tilde Q^{*}
+\quad\text{has matrix}\quad
+L(\tilde X)\,L(\tilde Q)^{\dagger}.
+$$</p>
+<p><strong>The same operator on columns.</strong> On coefficient columns the right multiplication by $\tilde Q$ has matrix</p>
+<p>$$
+R(\tilde Q)=D\,L(\tilde Q)^{\mathsf T}D .
+$$</p>
+<p>The transpose alone, preceded and followed by the sign matrix, is</p>
+<p>$$
+\underbrace{\begin{pmatrix}Q_t&Q_x&Q_y&Q_z\\Q_x&-Q_t&-Q_z&Q_y\\Q_y&Q_z&-Q_t&-Q_x\\Q_z&-Q_y&Q_x&-Q_t\end{pmatrix}}_{D\,L(\tilde Q)^{\mathsf T}}
+\;\underbrace{\begin{pmatrix}1&0&0&0\\0&-1&0&0\\0&0&-1&0\\0&0&0&-1\end{pmatrix}}_{\natural}
+\;=\;
+\begin{pmatrix}Q_t&-Q_x&-Q_y&-Q_z\\Q_x&Q_t&Q_z&-Q_y\\Q_y&-Q_z&Q_t&Q_x\\Q_z&Q_y&-Q_x&Q_t\end{pmatrix}
+\tag{9}
+$$</p>
+<p>Written with the transported parameter standing still, the same computation is</p>
+<p>$$
+\underbrace{\begin{pmatrix}Q_t&Q_x&Q_y&Q_z\\Q_x&-Q_t&-Q_z&Q_y\\Q_y&Q_z&-Q_t&-Q_x\\Q_z&-Q_y&Q_x&-Q_t\end{pmatrix}}_{D\,L(\tilde Q^{\natural})}
+\;\underbrace{\begin{pmatrix}1&0&0&0\\0&-1&0&0\\0&0&-1&0\\0&0&0&-1\end{pmatrix}}_{\natural}
+\;=\;
+\begin{pmatrix}Q_t&-Q_x&-Q_y&-Q_z\\Q_x&Q_t&Q_z&-Q_y\\Q_y&-Q_z&Q_t&Q_x\\Q_z&Q_y&-Q_x&Q_t\end{pmatrix}
+\tag{10}
+$$</p>
+<p>and (10) is the right matrix of the same parameter,</p>
+<p>$$
+\begin{pmatrix}Q_t&-Q_x&-Q_y&-Q_z\\Q_x&Q_t&Q_z&-Q_y\\Q_y&-Q_z&Q_t&Q_x\\Q_z&Q_y&-Q_x&Q_t\end{pmatrix}
+\tag{11}
+$$</p>
+<p>entry by entry. So the right multiplication carries two arrays — right multiplication by $L(\tilde Q)$ on element matrices, and (11) on columns — equal as operators and different as arrays.</p>
+<p><strong>The two one-sided products, in one display each.</strong></p>
+<p>$$
+\underbrace{\begin{pmatrix}Q_t&-Q_x&-Q_y&-Q_z\\Q_x&Q_t&-Q_z&Q_y\\Q_y&Q_z&Q_t&-Q_x\\Q_z&-Q_y&Q_x&Q_t\end{pmatrix}}_{L(\tilde Q)}
+\;\underbrace{\begin{pmatrix}1&0&0&0\\0&-1&0&0\\0&0&-1&0\\0&0&0&-1\end{pmatrix}}_{\natural}
+\;=\;
+\begin{pmatrix}Q_t&Q_x&Q_y&Q_z\\Q_x&-Q_t&Q_z&-Q_y\\Q_y&-Q_z&-Q_t&Q_x\\Q_z&Q_y&-Q_x&-Q_t\end{pmatrix}
+\tag{12}
+$$</p>
+<p>$$
+\underbrace{\begin{pmatrix}1&0&0&0\\0&-1&0&0\\0&0&-1&0\\0&0&0&-1\end{pmatrix}}_{\natural}
+\;\underbrace{\begin{pmatrix}Q_t&-Q_x&-Q_y&-Q_z\\Q_x&Q_t&-Q_z&Q_y\\Q_y&Q_z&Q_t&-Q_x\\Q_z&-Q_y&Q_x&Q_t\end{pmatrix}}_{L(\tilde Q)}
+\;=\;
+\begin{pmatrix}Q_t&-Q_x&-Q_y&-Q_z\\-Q_x&-Q_t&Q_z&-Q_y\\-Q_y&-Q_z&-Q_t&Q_x\\-Q_z&Q_y&-Q_x&-Q_t\end{pmatrix}
+\tag{13}
+$$</p>
+<p>The two are different arrays, and their entries differ in the spatial block. Neither equals (11), which is the same conjugation applied on both sides.</p>
+<p><strong>Theorem (the dagger exchanges the sides).</strong></p>
+<p>$$
+R_{\tilde Q^{*}}=\ast\,L_{\tilde Q}\,\ast,
+$$</p>
+<p>that is, $X^{\dagger}$ is sent to $L(\tilde Q)X^{\dagger}$, and the dagger is taken again.</p>
+<p><em>Proof.</em> The dagger of a matrix product reverses the order, $(AB)^{\dagger}=B^{\dagger}A^{\dagger}$. Hence $(L(\tilde Q)X^{\dagger})^{\dagger}=X\,L(\tilde Q)^{\dagger}$, which is $\tilde X\tilde Q^{*}$. The outer dagger is the star of the algebra by the dictionary above, so the composite is the right multiplication by $\tilde Q^{*}$.</p>
+<p><strong>What the theorem says.</strong> A right multiplication is a left multiplication read through the Hermitian conjugation, and the reason is one line of array algebra: the dagger reverses the order of a product. The reversal that a right multiplication performs on the elements and the reversal that the dagger performs on the arrays are the same reversal. <strong>No sign matrix enters the exchange of the sides</strong>; $D$ belongs to the column picture, and the exchange is a dagger.</p>
+<h2 id="the-two-sides">The Two Sides</h2>
+<p><strong>The congruence.</strong> Composing the two operators,</p>
+<p>$$
+\mathrm{Hp}_{\tilde Q}(\tilde X)=\tilde Q\tilde X\tilde Q^{*}
+\quad\text{has matrix}\quad
+L(\tilde Q)\,L(\tilde X)\,L(\tilde Q)^{\dagger},
+$$</p>
+<p>so with $L(\tilde X)$ written out in (5), the whole map is the product</p>
+<p>$$
+\underbrace{\begin{pmatrix}Q_t&-Q_x&-Q_y&-Q_z\\Q_x&Q_t&-Q_z&Q_y\\Q_y&Q_z&Q_t&-Q_x\\Q_z&-Q_y&Q_x&Q_t\end{pmatrix}}_{L(\tilde Q)}
+\;\underbrace{\begin{pmatrix}X_t&-X_x&-X_y&-X_z\\X_x&X_t&-X_z&X_y\\X_y&X_z&X_t&-X_x\\X_z&-X_y&X_x&X_t\end{pmatrix}}_{L(\tilde X)}
+\;\underbrace{\begin{pmatrix}\bar Q_t&\bar Q_x&\bar Q_y&\bar Q_z\\-\bar Q_x&\bar Q_t&\bar Q_z&-\bar Q_y\\-\bar Q_y&-\bar Q_z&\bar Q_t&\bar Q_x\\-\bar Q_z&\bar Q_y&-\bar Q_x&\bar Q_t\end{pmatrix}}_{L(\tilde Q)^{\dagger}}
+\;=\;
+\begin{pmatrix}Q_tX_t\bar Q_t+Q_tX_x\bar Q_x+Q_tX_y\bar Q_y+Q_tX_z\bar Q_z+Q_xX_t\bar Q_x-Q_xX_x\bar Q_t+Q_xX_y\bar Q_z-Q_xX_z\bar Q_y+Q_yX_t\bar Q_y-Q_yX_x\bar Q_z-Q_yX_y\bar Q_t+Q_yX_z\bar Q_x+Q_zX_t\bar Q_z+Q_zX_x\bar Q_y-Q_zX_y\bar Q_x-Q_zX_z\bar Q_t&Q_tX_t\bar Q_x-Q_tX_x\bar Q_t+Q_tX_y\bar Q_z-Q_tX_z\bar Q_y-Q_xX_t\bar Q_t-Q_xX_x\bar Q_x-Q_xX_y\bar Q_y-Q_xX_z\bar Q_z+Q_yX_t\bar Q_z+Q_yX_x\bar Q_y-Q_yX_y\bar Q_x-Q_yX_z\bar Q_t-Q_zX_t\bar Q_y+Q_zX_x\bar Q_z+Q_zX_y\bar Q_t-Q_zX_z\bar Q_x&Q_tX_t\bar Q_y-Q_tX_x\bar Q_z-Q_tX_y\bar Q_t+Q_tX_z\bar Q_x-Q_xX_t\bar Q_z-Q_xX_x\bar Q_y+Q_xX_y\bar Q_x+Q_xX_z\bar Q_t-Q_yX_t\bar Q_t-Q_yX_x\bar Q_x-Q_yX_y\bar Q_y-Q_yX_z\bar Q_z+Q_zX_t\bar Q_x-Q_zX_x\bar Q_t+Q_zX_y\bar Q_z-Q_zX_z\bar Q_y&Q_tX_t\bar Q_z+Q_tX_x\bar Q_y-Q_tX_y\bar Q_x-Q_tX_z\bar Q_t+Q_xX_t\bar Q_y-Q_xX_x\bar Q_z-Q_xX_y\bar Q_t+Q_xX_z\bar Q_x-Q_yX_t\bar Q_x+Q_yX_x\bar Q_t-Q_yX_y\bar Q_z+Q_yX_z\bar Q_y-Q_zX_t\bar Q_t-Q_zX_x\bar Q_x-Q_zX_y\bar Q_y-Q_zX_z\bar Q_z\\-Q_tX_t\bar Q_x+Q_tX_x\bar Q_t-Q_tX_y\bar Q_z+Q_tX_z\bar Q_y+Q_xX_t\bar Q_t+Q_xX_x\bar Q_x+Q_xX_y\bar Q_y+Q_xX_z\bar Q_z-Q_yX_t\bar Q_z-Q_yX_x\bar Q_y+Q_yX_y\bar Q_x+Q_yX_z\bar Q_t+Q_zX_t\bar Q_y-Q_zX_x\bar Q_z-Q_zX_y\bar Q_t+Q_zX_z\bar Q_x&Q_tX_t\bar Q_t+Q_tX_x\bar Q_x+Q_tX_y\bar Q_y+Q_tX_z\bar Q_z+Q_xX_t\bar Q_x-Q_xX_x\bar Q_t+Q_xX_y\bar Q_z-Q_xX_z\bar Q_y+Q_yX_t\bar Q_y-Q_yX_x\bar Q_z-Q_yX_y\bar Q_t+Q_yX_z\bar Q_x+Q_zX_t\bar Q_z+Q_zX_x\bar Q_y-Q_zX_y\bar Q_x-Q_zX_z\bar Q_t&Q_tX_t\bar Q_z+Q_tX_x\bar Q_y-Q_tX_y\bar Q_x-Q_tX_z\bar Q_t+Q_xX_t\bar Q_y-Q_xX_x\bar Q_z-Q_xX_y\bar Q_t+Q_xX_z\bar Q_x-Q_yX_t\bar Q_x+Q_yX_x\bar Q_t-Q_yX_y\bar Q_z+Q_yX_z\bar Q_y-Q_zX_t\bar Q_t-Q_zX_x\bar Q_x-Q_zX_y\bar Q_y-Q_zX_z\bar Q_z&-Q_tX_t\bar Q_y+Q_tX_x\bar Q_z+Q_tX_y\bar Q_t-Q_tX_z\bar Q_x+Q_xX_t\bar Q_z+Q_xX_x\bar Q_y-Q_xX_y\bar Q_x-Q_xX_z\bar Q_t+Q_yX_t\bar Q_t+Q_yX_x\bar Q_x+Q_yX_y\bar Q_y+Q_yX_z\bar Q_z-Q_zX_t\bar Q_x+Q_zX_x\bar Q_t-Q_zX_y\bar Q_z+Q_zX_z\bar Q_y\\-Q_tX_t\bar Q_y+Q_tX_x\bar Q_z+Q_tX_y\bar Q_t-Q_tX_z\bar Q_x+Q_xX_t\bar Q_z+Q_xX_x\bar Q_y-Q_xX_y\bar Q_x-Q_xX_z\bar Q_t+Q_yX_t\bar Q_t+Q_yX_x\bar Q_x+Q_yX_y\bar Q_y+Q_yX_z\bar Q_z-Q_zX_t\bar Q_x+Q_zX_x\bar Q_t-Q_zX_y\bar Q_z+Q_zX_z\bar Q_y&-Q_tX_t\bar Q_z-Q_tX_x\bar Q_y+Q_tX_y\bar Q_x+Q_tX_z\bar Q_t-Q_xX_t\bar Q_y+Q_xX_x\bar Q_z+Q_xX_y\bar Q_t-Q_xX_z\bar Q_x+Q_yX_t\bar Q_x-Q_yX_x\bar Q_t+Q_yX_y\bar Q_z-Q_yX_z\bar Q_y+Q_zX_t\bar Q_t+Q_zX_x\bar Q_x+Q_zX_y\bar Q_y+Q_zX_z\bar Q_z&Q_tX_t\bar Q_t+Q_tX_x\bar Q_x+Q_tX_y\bar Q_y+Q_tX_z\bar Q_z+Q_xX_t\bar Q_x-Q_xX_x\bar Q_t+Q_xX_y\bar Q_z-Q_xX_z\bar Q_y+Q_yX_t\bar Q_y-Q_yX_x\bar Q_z-Q_yX_y\bar Q_t+Q_yX_z\bar Q_x+Q_zX_t\bar Q_z+Q_zX_x\bar Q_y-Q_zX_y\bar Q_x-Q_zX_z\bar Q_t&Q_tX_t\bar Q_x-Q_tX_x\bar Q_t+Q_tX_y\bar Q_z-Q_tX_z\bar Q_y-Q_xX_t\bar Q_t-Q_xX_x\bar Q_x-Q_xX_y\bar Q_y-Q_xX_z\bar Q_z+Q_yX_t\bar Q_z+Q_yX_x\bar Q_y-Q_yX_y\bar Q_x-Q_yX_z\bar Q_t-Q_zX_t\bar Q_y+Q_zX_x\bar Q_z+Q_zX_y\bar Q_t-Q_zX_z\bar Q_x\\-Q_tX_t\bar Q_z-Q_tX_x\bar Q_y+Q_tX_y\bar Q_x+Q_tX_z\bar Q_t-Q_xX_t\bar Q_y+Q_xX_x\bar Q_z+Q_xX_y\bar Q_t-Q_xX_z\bar Q_x+Q_yX_t\bar Q_x-Q_yX_x\bar Q_t+Q_yX_y\bar Q_z-Q_yX_z\bar Q_y+Q_zX_t\bar Q_t+Q_zX_x\bar Q_x+Q_zX_y\bar Q_y+Q_zX_z\bar Q_z&Q_tX_t\bar Q_y-Q_tX_x\bar Q_z-Q_tX_y\bar Q_t+Q_tX_z\bar Q_x-Q_xX_t\bar Q_z-Q_xX_x\bar Q_y+Q_xX_y\bar Q_x+Q_xX_z\bar Q_t-Q_yX_t\bar Q_t-Q_yX_x\bar Q_x-Q_yX_y\bar Q_y-Q_yX_z\bar Q_z+Q_zX_t\bar Q_x-Q_zX_x\bar Q_t+Q_zX_y\bar Q_z-Q_zX_z\bar Q_y&-Q_tX_t\bar Q_x+Q_tX_x\bar Q_t-Q_tX_y\bar Q_z+Q_tX_z\bar Q_y+Q_xX_t\bar Q_t+Q_xX_x\bar Q_x+Q_xX_y\bar Q_y+Q_xX_z\bar Q_z-Q_yX_t\bar Q_z-Q_yX_x\bar Q_y+Q_yX_y\bar Q_x+Q_yX_z\bar Q_t+Q_zX_t\bar Q_y-Q_zX_x\bar Q_z-Q_zX_y\bar Q_t+Q_zX_z\bar Q_x&Q_tX_t\bar Q_t+Q_tX_x\bar Q_x+Q_tX_y\bar Q_y+Q_tX_z\bar Q_z+Q_xX_t\bar Q_x-Q_xX_x\bar Q_t+Q_xX_y\bar Q_z-Q_xX_z\bar Q_y+Q_yX_t\bar Q_y-Q_yX_x\bar Q_z-Q_yX_y\bar Q_t+Q_yX_z\bar Q_x+Q_zX_t\bar Q_z+Q_zX_x\bar Q_y-Q_zX_y\bar Q_x-Q_zX_z\bar Q_t\end{pmatrix}
+\tag{14}
+$$</p>
+<p><strong>The pair's own array.</strong> On coefficient columns the same map is a product of three factors, the middle one being the entrywise conjugate of (1) preceded by the sign matrix:</p>
+<p>$$
+\underbrace{\begin{pmatrix}Q_t&-Q_x&-Q_y&-Q_z\\Q_x&Q_t&-Q_z&Q_y\\Q_y&Q_z&Q_t&-Q_x\\Q_z&-Q_y&Q_x&Q_t\end{pmatrix}}_{L(\tilde Q)}
+\;\underbrace{\begin{pmatrix}\bar Q_t&-\bar Q_x&-\bar Q_y&-\bar Q_z\\-\bar Q_x&-\bar Q_t&\bar Q_z&-\bar Q_y\\-\bar Q_y&-\bar Q_z&-\bar Q_t&\bar Q_x\\-\bar Q_z&\bar Q_y&-\bar Q_x&-\bar Q_t\end{pmatrix}}_{D\,\overline{L(\tilde Q)}}
+\;\underbrace{\begin{pmatrix}1&0&0&0\\0&-1&0&0\\0&0&-1&0\\0&0&0&-1\end{pmatrix}}_{\natural}
+\;=\;
+\begin{pmatrix}Q_t\bar Q_t+Q_x\bar Q_x+Q_y\bar Q_y+Q_z\bar Q_z&Q_t\bar Q_x-Q_x\bar Q_t-Q_y\bar Q_z+Q_z\bar Q_y&Q_t\bar Q_y+Q_x\bar Q_z-Q_y\bar Q_t-Q_z\bar Q_x&Q_t\bar Q_z-Q_x\bar Q_y+Q_y\bar Q_x-Q_z\bar Q_t\\-Q_t\bar Q_x+Q_x\bar Q_t-Q_y\bar Q_z+Q_z\bar Q_y&Q_t\bar Q_t+Q_x\bar Q_x-Q_y\bar Q_y-Q_z\bar Q_z&-Q_t\bar Q_z+Q_x\bar Q_y+Q_y\bar Q_x-Q_z\bar Q_t&Q_t\bar Q_y+Q_x\bar Q_z+Q_y\bar Q_t+Q_z\bar Q_x\\-Q_t\bar Q_y+Q_x\bar Q_z+Q_y\bar Q_t-Q_z\bar Q_x&Q_t\bar Q_z+Q_x\bar Q_y+Q_y\bar Q_x+Q_z\bar Q_t&Q_t\bar Q_t-Q_x\bar Q_x+Q_y\bar Q_y-Q_z\bar Q_z&-Q_t\bar Q_x-Q_x\bar Q_t+Q_y\bar Q_z+Q_z\bar Q_y\\-Q_t\bar Q_z-Q_x\bar Q_y+Q_y\bar Q_x+Q_z\bar Q_t&-Q_t\bar Q_y+Q_x\bar Q_z-Q_y\bar Q_t+Q_z\bar Q_x&Q_t\bar Q_x+Q_x\bar Q_t+Q_y\bar Q_z+Q_z\bar Q_y&Q_t\bar Q_t-Q_x\bar Q_x-Q_y\bar Q_y+Q_z\bar Q_z\end{pmatrix}
+\tag{15}
+$$</p>
+<p><strong>The pair is a congruence, and the congruence is the array of the pair read on columns.</strong> The two versions of the same computation — three factors on element matrices in (14), three factors on columns in (15) — agree because the middle factor of one is $L(\tilde X)$ and of the other is $D\overline{L(\tilde Q)}$.</p>
+<p><strong>Theorem (the halves are preserved).</strong> A Hermitian element has a Hermitian image and an anti-Hermitian element an anti-Hermitian image, for every parameter.</p>
+<p><em>Proof.</em> In arrays the hypothesis is $L(\tilde X)^{\dagger}=\pm L(\tilde X)$, and</p>
+<p>$$
+\bigl(L(\tilde Q)L(\tilde X)L(\tilde Q)^{\dagger}\bigr)^{\dagger}
+=L(\tilde Q)\,L(\tilde X)^{\dagger}\,L(\tilde Q)^{\dagger}
+=\pm\,L(\tilde Q)L(\tilde X)L(\tilde Q)^{\dagger},
+$$</p>
+<p>using the order reversal of the dagger. The map therefore preserves the fixed space $\mathbb{B}_{\Psi}$ of $\ast$ and the fixed space $\mathbb{B}_{\Phi}$.</p>
+<p><strong>Theorem (multiplicativity).</strong> $\mathrm{Hp}_{\tilde P}\mathrm{Hp}_{\tilde Q}=\mathrm{Hp}_{\tilde P\tilde Q}$.</p>
+<p><em>Proof.</em> $L(\tilde P)\bigl(L(\tilde Q)L(\tilde X)L(\tilde Q)^{\dagger}\bigr)L(\tilde P)^{\dagger}=L(\tilde P\tilde Q)L(\tilde X)L(\tilde P\tilde Q)^{\dagger}$, and $L(\tilde P\tilde Q)=L(\tilde P)L(\tilde Q)$ by multiplicativity of the array. The order of the factors is kept.</p>
+<p><strong>The invariants.</strong> For every $\tilde X$,</p>
+<p>$$
+\det\bigl(L(\tilde Q)L(\tilde X)L(\tilde Q)^{\dagger}\bigr)
+=\lvert\det L(\tilde Q)\rvert^{2}\det L(\tilde X)
+=\lvert\langle\tilde Q\rangle_{\natural}\rvert^{4}\langle\tilde X\rangle_{\natural}^{2}.
+$$</p>
+<p><strong>The circle.</strong> For central complex $\omega$,</p>
+<p>$$
+\mathrm{Hp}_{\omega\tilde Q}(\tilde X)=\omega\tilde Q\,\tilde X\,\overline{\omega}\tilde Q^{*}=\lvert\omega\rvert^{2}\mathrm{Hp}_{\tilde Q}(\tilde X),
+$$</p>
+<p>so the operator depends on the parameter through the ray and the modulus: $\mathrm{Hp}_{\omega\tilde Q}=\mathrm{Hp}_{\tilde Q}$ for $\lvert\omega\rvert=1$. In arrays the couple $\bigl(L(\tilde Q),L(\tilde Q)^{\dagger}\bigr)$ is rescaled by $\omega$ and $\bar\omega$, one real rescaling by $\lvert\omega\rvert^{2}$.</p>
+<p><strong>The general parameter, in coordinates.</strong> Write $\Sigma=\sum_\mu\lvert Q_\mu\rvert^{2}$ for the squared Euclidean norm of the four coordinates. The four diagonal entries of (15) are</p>
+<p>$$
+M_{tt}=\Sigma,\qquad
+M_{xx}=\Sigma-2\bigl(\lvert Q_y\rvert^{2}+\lvert Q_z\rvert^{2}\bigr),\qquad
+M_{yy}=\Sigma-2\bigl(\lvert Q_x\rvert^{2}+\lvert Q_z\rvert^{2}\bigr),\qquad
+M_{zz}=\Sigma-2\bigl(\lvert Q_x\rvert^{2}+\lvert Q_y\rvert^{2}\bigr),
+$$</p>
+<p>so the trace is</p>
+<p>$$
+\operatorname{tr}M=4\lvert Q_t\rvert^{2}.
+$$</p>
+<p><strong>Read on the array.</strong> The scalar slot of (15) is amplified by the whole $\Sigma$, and each spatial slot by $\Sigma$ minus twice the squared moduli of the two coordinates it does not carry. The four entries are unequal as soon as the vector part is nonzero, and their sum is four times the squared modulus of the scalar coordinate alone.</p>
+<p><strong>The determinant and the rank</strong> are</p>
+<p>$$
+\det M=\lvert\langle\tilde Q\rangle_{\natural}\rvert^{4},\qquad
+\operatorname{rank}M=
+\begin{cases}
+4,&\langle\tilde Q\rangle_{\natural}\neq0,\\
+1,&\tilde Q\ \text{a nonzero zero divisor},\\
+0,&\tilde Q=0,
+\end{cases}
+$$</p>
+<p>because $\langle\tilde Q\rangle_{\natural}$ vanishes exactly on the zero divisors of $\mathbb{B}$, and $M$ is a product of two factors of rank two there.</p>
+<p><strong>When the pair is a scalar.</strong> $M=\Sigma\,\mathrm I_4$ exactly when $\vec Q=0$, and then $\Sigma=\lvert Q_t\rvert^{2}$ and the pair is multiplication by the real scalar $\lvert Q_t\rvert^{2}$. For every parameter with a nonzero vector part at least one off-diagonal entry of (15) is nonzero, so the pair mixes the four slots; it is a scalar multiple of the identity only on the scalars.</p>
+<h2 id="the-pair-is-not-a-one-sided-multiplication">The Pair Is Not a One-Sided Multiplication</h2>
+<p><strong>The difference of the two families.</strong> Subtracting the right array (11) from the left array (1) leaves the scalar row and the scalar column zero:</p>
+<p>$$
+\begin{pmatrix}0&0&0&0\\0&0&-Q_z&Q_y\\0&Q_z&0&-Q_x\\0&-Q_y&Q_x&0\end{pmatrix}
+\tag{16}
+$$</p>
+<p>The two families therefore differ by a matrix supported on the vector block alone, and they coincide only when that block vanishes.</p>
+<p><strong>Why the pair cannot be one of them.</strong> Every left matrix and every right matrix has four equal diagonal entries, by (1) and (11). The array (15) has unequal diagonal entries by the formulas above, as soon as the vector part is nonzero. So (15) lies in neither family, and the congruence is not left multiplication by any array, nor right multiplication by any array: <strong>the pair genuinely acts on two sides.</strong></p>
+<p><strong>What the one-sided multiplication would have been.</strong> The product of the array with its dagger,</p>
+<p>$$
+\underbrace{\begin{pmatrix}Q_t&-Q_x&-Q_y&-Q_z\\Q_x&Q_t&-Q_z&Q_y\\Q_y&Q_z&Q_t&-Q_x\\Q_z&-Q_y&Q_x&Q_t\end{pmatrix}}_{L(\tilde Q)}
+\;\underbrace{\begin{pmatrix}\bar Q_t&\bar Q_x&\bar Q_y&\bar Q_z\\-\bar Q_x&\bar Q_t&\bar Q_z&-\bar Q_y\\-\bar Q_y&-\bar Q_z&\bar Q_t&\bar Q_x\\-\bar Q_z&\bar Q_y&-\bar Q_x&\bar Q_t\end{pmatrix}}_{L(\tilde Q)^{\dagger}}
+\;=\;
+\begin{pmatrix}Q_t\bar Q_t+Q_x\bar Q_x+Q_y\bar Q_y+Q_z\bar Q_z&Q_t\bar Q_x-Q_x\bar Q_t+Q_y\bar Q_z-Q_z\bar Q_y&Q_t\bar Q_y-Q_x\bar Q_z-Q_y\bar Q_t+Q_z\bar Q_x&Q_t\bar Q_z+Q_x\bar Q_y-Q_y\bar Q_x-Q_z\bar Q_t\\-Q_t\bar Q_x+Q_x\bar Q_t-Q_y\bar Q_z+Q_z\bar Q_y&Q_t\bar Q_t+Q_x\bar Q_x+Q_y\bar Q_y+Q_z\bar Q_z&Q_t\bar Q_z+Q_x\bar Q_y-Q_y\bar Q_x-Q_z\bar Q_t&-Q_t\bar Q_y+Q_x\bar Q_z+Q_y\bar Q_t-Q_z\bar Q_x\\-Q_t\bar Q_y+Q_x\bar Q_z+Q_y\bar Q_t-Q_z\bar Q_x&-Q_t\bar Q_z-Q_x\bar Q_y+Q_y\bar Q_x+Q_z\bar Q_t&Q_t\bar Q_t+Q_x\bar Q_x+Q_y\bar Q_y+Q_z\bar Q_z&Q_t\bar Q_x-Q_x\bar Q_t+Q_y\bar Q_z-Q_z\bar Q_y\\-Q_t\bar Q_z-Q_x\bar Q_y+Q_y\bar Q_x+Q_z\bar Q_t&Q_t\bar Q_y-Q_x\bar Q_z-Q_y\bar Q_t+Q_z\bar Q_x&-Q_t\bar Q_x+Q_x\bar Q_t-Q_y\bar Q_z+Q_z\bar Q_y&Q_t\bar Q_t+Q_x\bar Q_x+Q_y\bar Q_y+Q_z\bar Q_z\end{pmatrix}
+\tag{17}
+$$</p>
+<p>and in the other order</p>
+<p>$$
+\underbrace{\begin{pmatrix}\bar Q_t&\bar Q_x&\bar Q_y&\bar Q_z\\-\bar Q_x&\bar Q_t&\bar Q_z&-\bar Q_y\\-\bar Q_y&-\bar Q_z&\bar Q_t&\bar Q_x\\-\bar Q_z&\bar Q_y&-\bar Q_x&\bar Q_t\end{pmatrix}}_{L(\tilde Q)^{\dagger}}
+\;\underbrace{\begin{pmatrix}Q_t&-Q_x&-Q_y&-Q_z\\Q_x&Q_t&-Q_z&Q_y\\Q_y&Q_z&Q_t&-Q_x\\Q_z&-Q_y&Q_x&Q_t\end{pmatrix}}_{L(\tilde Q)}
+\;=\;
+\begin{pmatrix}Q_t\bar Q_t+Q_x\bar Q_x+Q_y\bar Q_y+Q_z\bar Q_z&Q_t\bar Q_x-Q_x\bar Q_t-Q_y\bar Q_z+Q_z\bar Q_y&Q_t\bar Q_y+Q_x\bar Q_z-Q_y\bar Q_t-Q_z\bar Q_x&Q_t\bar Q_z-Q_x\bar Q_y+Q_y\bar Q_x-Q_z\bar Q_t\\-Q_t\bar Q_x+Q_x\bar Q_t+Q_y\bar Q_z-Q_z\bar Q_y&Q_t\bar Q_t+Q_x\bar Q_x+Q_y\bar Q_y+Q_z\bar Q_z&Q_t\bar Q_z-Q_x\bar Q_y+Q_y\bar Q_x-Q_z\bar Q_t&-Q_t\bar Q_y-Q_x\bar Q_z+Q_y\bar Q_t+Q_z\bar Q_x\\-Q_t\bar Q_y-Q_x\bar Q_z+Q_y\bar Q_t+Q_z\bar Q_x&-Q_t\bar Q_z+Q_x\bar Q_y-Q_y\bar Q_x+Q_z\bar Q_t&Q_t\bar Q_t+Q_x\bar Q_x+Q_y\bar Q_y+Q_z\bar Q_z&Q_t\bar Q_x-Q_x\bar Q_t-Q_y\bar Q_z+Q_z\bar Q_y\\-Q_t\bar Q_z+Q_x\bar Q_y-Q_y\bar Q_x+Q_z\bar Q_t&Q_t\bar Q_y+Q_x\bar Q_z-Q_y\bar Q_t-Q_z\bar Q_x&-Q_t\bar Q_x+Q_x\bar Q_t+Q_y\bar Q_z-Q_z\bar Q_y&Q_t\bar Q_t+Q_x\bar Q_x+Q_y\bar Q_y+Q_z\bar Q_z\end{pmatrix}
+\tag{18}
+$$</p>
+<p>Both have the constant diagonal $\Sigma$, and neither mixes the slots the way (15) does: they are $L(\tilde Q\tilde Q^{*})$ and $L(\tilde Q^{*}\tilde Q)$, the left matrices of the two norm elements. <strong>The pair multiplies by $\tilde Q$ on the left and by $\tilde Q^{*}$ on the right of $\tilde X$; the products (17) and (18) multiply by both on the same side of $\tilde X$.</strong> The two agree with the pair only when $\tilde Q$ is central.</p>
+<p><strong>Same determinant, different trace.</strong> By multiplicativity of the determinant, (15), (17) and (18) all have determinant $\lvert\langle\tilde Q\rangle_{\natural}\rvert^{4}$. Their traces are different:</p>
+<p>$$
+\operatorname{tr}M=4\lvert Q_t\rvert^{2},\qquad
+\operatorname{tr}\bigl(L(\tilde Q)L(\tilde Q)^{\dagger}\bigr)=4\Sigma
+=4\lvert Q_t\rvert^{2}+4\bigl(\lvert Q_x\rvert^{2}+\lvert Q_y\rvert^{2}+\lvert Q_z\rvert^{2}\bigr).
+$$</p>
+<p>The difference of the traces is four times the squared modulus of the vector part, and it is the exact measure of what the exchange of the sides does to the array.</p>
+<h2 id="the-pair-without-the-product">The Pair Without the Product</h2>
+<p><strong>Two operators, not one.</strong> The pair $\bigl(L_{\tilde Q},R_{\tilde Q^{*}}\bigr)$ is a point of $L(\mathbb{B})\times R(\mathbb{B})$, and in the frame it is the couple of arrays</p>
+<p>$$
+\bigl(L(\tilde Q),R(\tilde Q^{*})\bigr)=\bigl(L(\tilde Q),\,D\,\overline{L(\tilde Q)}\,D\bigr),
+$$</p>
+<p>that is, (1) together with</p>
+<p>$$
+\underbrace{\begin{pmatrix}1&0&0&0\\0&-1&0&0\\0&0&-1&0\\0&0&0&-1\end{pmatrix}}_{\natural}
+\;\underbrace{\begin{pmatrix}\bar Q_t&-\bar Q_x&-\bar Q_y&-\bar Q_z\\\bar Q_x&\bar Q_t&-\bar Q_z&\bar Q_y\\\bar Q_y&\bar Q_z&\bar Q_t&-\bar Q_x\\\bar Q_z&-\bar Q_y&\bar Q_x&\bar Q_t\end{pmatrix}}_{\overline{L(\tilde Q)}}
+\;\underbrace{\begin{pmatrix}1&0&0&0\\0&-1&0&0\\0&0&-1&0\\0&0&0&-1\end{pmatrix}}_{\natural}
+\;=\;
+\begin{pmatrix}\bar Q_t&\bar Q_x&\bar Q_y&\bar Q_z\\-\bar Q_x&\bar Q_t&-\bar Q_z&\bar Q_y\\-\bar Q_y&\bar Q_z&\bar Q_t&-\bar Q_x\\-\bar Q_z&-\bar Q_y&\bar Q_x&\bar Q_t\end{pmatrix}
+\tag{19}
+$$</p>
+<p>two arrays, tied entry by entry, the second read from the first by conjugation and the sign matrix. The couple has eight real coordinates, the four complex coefficients of $\tilde Q$, and it is not an operator.</p>
+<p><strong>The product of the two members, with one parameter.</strong> Both sides at the same element:</p>
+<p>$$
+\underbrace{\begin{pmatrix}Q_t&-Q_x&-Q_y&-Q_z\\Q_x&Q_t&-Q_z&Q_y\\Q_y&Q_z&Q_t&-Q_x\\Q_z&-Q_y&Q_x&Q_t\end{pmatrix}}_{L(\tilde Q)}
+\;\underbrace{\begin{pmatrix}Q_t&-Q_x&-Q_y&-Q_z\\Q_x&Q_t&Q_z&-Q_y\\Q_y&-Q_z&Q_t&Q_x\\Q_z&Q_y&-Q_x&Q_t\end{pmatrix}}_{R(\tilde Q)}
+\;=\;
+\begin{pmatrix}Q_t^{2}-Q_x^{2}-Q_y^{2}-Q_z^{2}&-Q_tQ_x&-Q_tQ_y&-Q_tQ_z\\Q_tQ_x&Q_t^{2}-Q_x^{2}+Q_y^{2}+Q_z^{2}&-Q_xQ_y&-Q_xQ_z\\Q_tQ_y&-Q_xQ_y&Q_t^{2}+Q_x^{2}-Q_y^{2}+Q_z^{2}&-Q_yQ_z\\Q_tQ_z&-Q_xQ_z&-Q_yQ_z&Q_t^{2}+Q_x^{2}+Q_y^{2}-Q_z^{2}\end{pmatrix}
+\tag{20}
+$$</p>
+<p>which is the array of $x\mapsto\tilde Qx\tilde Q$. Its first column is $[\tilde Q^{2}]$, and its diagonal entries are unequal, so it is again in neither family.</p>
+<p><strong>What the composition loses.</strong> The congruence is invariant under the circle of the parameter, so it carries seven real coordinates and the couple carries eight. The circle is exactly what the composition forgets, and the difference is the difference between one congruence and the two multiplications that produce it.</p>
+<p><strong>The same tie as a system.</strong> Imposed on one unknown with two data, the couple reads</p>
+<p>$$
+\tilde Q\tilde X=\tilde Y_1,\qquad \tilde X\tilde Q^{*}=\tilde Y_2,
+$$</p>
+<p>a first-order system in $\tilde X$, with the compatibility condition $\tilde Q\tilde Y_2=\tilde Y_1\tilde Q^{*}$. Composed, the same tie reads $\tilde Q\tilde X\tilde Q^{*}=\tilde Y$, one equation and one unknown. In arrays the difference is one line: the couple is two products of two arrays, the congruence is one product of three.</p>
+<h2 id="the-two-adjoints">The Two Adjoints</h2>
+<p><strong>The word needs a form.</strong> On $\mathbb{B}$ there are two forms, and each has its adjoint. The symmetric form $\operatorname{Sc}(\tilde X\tilde Y)$ has Gram matrix $D$ in the frame; the coefficient form $\operatorname{Sc}(\tilde X^{*}\tilde Y)$ has Gram matrix $\mathrm I_4$. The adjoint of an operator for a form is fixed by $\langle A\tilde X,\tilde Y\rangle=\langle\tilde X,A^{\mathrm{ad}}\tilde Y\rangle$, and on arrays it is the transposed array conjugated by the Gram matrix.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>adjoint</th>
+<th>form</th>
+<th>on the array</th>
+<th>on the operator</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>plain</td>
+<td>$\operatorname{Sc}(\tilde X\tilde Y)$, Gram $D$</td>
+<td>$D\,L(\tilde Q)^{\mathsf T}D=R(\tilde Q)$</td>
+<td>$L_{\tilde Q}\mapsto R_{\tilde Q}$</td>
+</tr>
+<tr>
+<td>Hermitian</td>
+<td>$\operatorname{Sc}(\tilde X^{*}\tilde Y)$, Gram $\mathrm I_4$</td>
+<td>$L(\tilde Q)^{\dagger}=L(\tilde Q^{*})$</td>
+<td>$L_{\tilde Q}\mapsto L_{\tilde Q^{*}}$</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>The two adjoints compose to the pair.</strong> The plain adjoint changes the side and keeps the parameter; the Hermitian adjoint stars the parameter and keeps the side. Applying them in the two orders to $L_{\tilde Q}$ gives the same operator,</p>
+<p>$$
+R_{\tilde Q^{*}}=\bigl(L_{\tilde Q}^{\dagger}\bigr)^{\approx}=\bigl(L_{\tilde Q}^{\approx}\bigr)^{\dagger},
+$$</p>
+<p>so <strong>the two adjoints commute, and their composite is the second member of the pair.</strong> The star on the parameter and the exchange of the sides are one operation each, and the pair is the two of them.</p>
+<p><strong>Why the Hermitian adjoint is the one that carries the star.</strong> The eigenvalue problems of the physical corpus are posed for the coefficient form, where the adjoint is the conjugate transpose, and the conjugate transpose of $L(\tilde Q)$ is (2). The plain adjoint is the adjoint for the symmetric form of the algebra; it produces the right multiplication of the same parameter and is blind to the star. The two coincide only for real central parameters, where both give $c\,\mathrm I_4$ with $c$ real.</p>
+<h2 id="summary">Summary</h2>
+<p>The three operators of one element are three products of one array. The left multiplication is $X\mapsto L(\tilde Q)X$, and its operator matrix in the frame is $L(\tilde Q)$ itself. The right multiplication is $X\mapsto XL(\tilde Q)$, so the right multiplication by the Hermitian conjugate is $X\mapsto XL(\tilde Q)^{\dagger}$. The exchange of the sides is the dagger, because the dagger reverses the order of a product, $(AB)^{\dagger}=B^{\dagger}A^{\dagger}$, whence $R_{\tilde Q^{*}}=\ast L_{\tilde Q}\ast$.</p>
+<p>The Hermitian pair is the two of them composed, and it is a congruence, $X\mapsto L(\tilde Q)XL(\tilde Q)^{\dagger}$. It preserves the two halves of the algebra for every parameter, it is multiplicative with the order kept, its determinant is $\lvert\langle\tilde Q\rangle_{\natural}\rvert^{4}\langle\tilde X\rangle_{\natural}^{2}$, its own array has determinant $\lvert\langle\tilde Q\rangle_{\natural}\rvert^{4}$ and trace $4\lvert Q_t\rvert^{2}$, and it is invariant under the circle of the parameter. It lies in neither family of arrays, so it is not a one-sided multiplication, and it carries seven real coordinates against the eight of the uncomposed couple.</p>
+<p>The dictionary between the element and the array has four entries: the identity is $L(\tilde Q)$, the natural conjugation the transpose, the Hermitian conjugation the dagger, the coefficient conjugation the entrywise conjugate. Every identity of this article is one of the four applied to a product.</p>
+<h2 id="verification">Verification</h2>
+<p>Every display above was recomputed on an explicit implementation of the algebra in the axis-free frame, with random complex coordinates and with zero divisors, outside the repository.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>claim</th>
+<th>check</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$L(\tilde Q_1\tilde Q_2)=L(\tilde Q_1)L(\tilde Q_2)$</td>
+<td>exact, all basis pairs</td>
+</tr>
+<tr>
+<td>$L(\tilde Q)^{\mathsf T}=L(\tilde Q^{\natural})$, $L(\tilde Q)^{\dagger}=L(\tilde Q^{*})$, $\overline{L(\tilde Q)}=L(\bar{\tilde Q})$</td>
+<td>exact, $50$ random parameters</td>
+</tr>
+<tr>
+<td>$D\,L(\tilde Q^{\natural})\,D=R(\tilde Q)$, $D\,\overline{L(\tilde Q)}\,D=R(\tilde Q^{*})$</td>
+<td>exact, $50$ random parameters</td>
+</tr>
+<tr>
+<td>$L(\tilde Q)R(\tilde Q)=L(\tilde Q^{2})$, and $M$ diagonal $(\Sigma,\Sigma-2(\lvert Q_y\rvert^{2}+\lvert Q_z\rvert^{2}),\dots)$</td>
+<td>exact</td>
+</tr>
+<tr>
+<td>$\operatorname{tr}M=4\lvert Q_t\rvert^{2}$, $\det M=\lvert\langle\tilde Q\rangle_{\natural}\rvert^{4}$</td>
+<td>$50$ random parameters</td>
+</tr>
+<tr>
+<td>$\operatorname{tr}\bigl(L(\tilde Q)L(\tilde Q)^{\dagger}\bigr)=4\Sigma$, same determinant</td>
+<td>$50$ random parameters</td>
+</tr>
+<tr>
+<td>$\operatorname{rank}M=4$ when $\langle\tilde Q\rangle_{\natural}\neq0$, $1$ on six zero divisors, $0$ at $\tilde Q=0$</td>
+<td>exact</td>
+</tr>
+<tr>
+<td>(15) lies in neither the left nor the right family when $\vec Q\neq0$</td>
+<td>$50$ random parameters</td>
+</tr>
+<tr>
+<td>$L(\tilde Q)L(\tilde X)L(\tilde Q)^{\dagger}=L(\tilde Q\tilde X\tilde Q^{*})$</td>
+<td>exact, $50$ random pairs</td>
+</tr>
+<tr>
+<td>the two halves are preserved</td>
+<td>$40$ random Hermitian and $40$ random anti-Hermitian $\tilde X$</td>
+</tr>
+<tr>
+<td>$\mathrm{Hp}_{\tilde P}\mathrm{Hp}_{\tilde Q}=\mathrm{Hp}_{\tilde P\tilde Q}$</td>
+<td>exact, $30$ random pairs</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$L(\tilde Q)$, $R(\tilde Q)$</td>
+<td>the left and the right regular matrix of $\tilde Q$ in the axis-free frame, $L(\tilde Q)=L_{\mathrm{axf}}(\tilde Q)$</td>
+</tr>
+<tr>
+<td>$L_{\tilde Q}$, $R_{\tilde Q}$</td>
+<td>left and right multiplication by $\tilde Q$, $L_{\tilde Q}(\tilde X)=\tilde Q\tilde X$ and $R_{\tilde Q}(\tilde X)=\tilde X\tilde Q$</td>
+</tr>
+<tr>
+<td>$\mathrm{Hp}_{\tilde Q}$</td>
+<td>the Hermitian pair, $\mathrm{Hp}_{\tilde Q}=L_{\tilde Q}R_{\tilde Q^{*}}$</td>
+</tr>
+<tr>
+<td>$\tilde Q^{\natural}$, $\tilde Q^{*}$, $\bar{\tilde Q}$</td>
+<td>natural conjugation, Hermitian conjugation, coefficient conjugation</td>
+</tr>
+<tr>
+<td>$D$</td>
+<td>the sign matrix $\operatorname{diag}(1,-1,-1,-1)$, Gram matrix of $\operatorname{Sc}(\tilde X\tilde Y)$, its own inverse</td>
+</tr>
+<tr>
+<td>$\langle\tilde Q\rangle_{\natural}$</td>
+<td>the quaternionic norm $Q_t^{2}+Q_x^{2}+Q_y^{2}+Q_z^{2}$</td>
+</tr>
+<tr>
+<td>$\Sigma$</td>
+<td>the squared Euclidean norm $\sum_\mu\lvert Q_\mu\rvert^{2}$ of the four coordinates</td>
+</tr>
+<tr>
+<td>$\mathbb{B}_{\Psi}$, $\mathbb{B}_{\Phi}$</td>
+<td>the Hermitian and the anti-Hermitian halves, the fixed spaces of $+1$ and $-1$ of $\ast$</td>
+</tr>
+<tr>
+<td>$A^{\approx}$, $A^{\dagger}$</td>
+<td>the plain adjoint and the Hermitian adjoint of an operator</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li><a href="operators-acting-on-one-side.html">Operators Acting on One Side</a>, for the two regular families, their injectivity and their composition laws</li>
+<li><a href="operators-acting-on-two-sides.html">Operators Acting on Two Sides</a>, for the complex cone of two-sided operators of which the pair is a real slice</li>
+<li><a href="the-hermitian-pair-of-operators-acting-on-two-sides.html">The Hermitian Pair of Operators Acting on Two Sides</a>, for the multiplicativity, the sector preservation and the Lorentz action proved abstractly</li>
+<li><a href="m4c-axis-free-representation.html">$M_4(\mathbb{C})$ Axis-Free Representation</a>, for the frame, the two regular matrices and the sign matrix</li>
+<li><a href="the-transposition-of-the-two-sides.html">The Transposition of the Two Sides</a>, for the transport of the parameter by a reversal, which is the dagger here</li>
+<li><a href="matrix-representations-conventions.html">Matrix Representations Conventions</a>, for the two regular matrices in a general frame and the stitch between them</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

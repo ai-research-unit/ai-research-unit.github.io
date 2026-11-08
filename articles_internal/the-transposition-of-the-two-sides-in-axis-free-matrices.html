@@ -1,0 +1,725 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Transposition of the Two Sides, Proved in Axis-Free Matrices — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-transposition-of-the-two-sides-proved-in-axis-free-matrices"><strong>The Transposition of the Two Sides, Proved in Axis-Free Matrices</strong></h1>
+<h2 id="the-claims-and-the-plan">The Claims, and the Plan</h2>
+<p><strong>What is proved here.</strong> <em>The Transposition of the Two Sides</em> states a theorem, three corollaries, two propositions and a remark, and proves them with element arithmetic. This article proves the same statements by multiplication of $4\times4$ matrices in the axis-free frame. Nothing new is asserted; every identity is the one of the parent article, and every proof below is a display of the matrices, followed by their product.</p>
+<p><strong>The statements.</strong> They are numbered, and the numbers are used throughout the article.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th></th>
+<th>claim of the parent article</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>C1</td>
+<td>$\tau L_{\tilde Q}\tau^{-1}=R_{\tau(\tilde Q)}$ and $\tau R_{\tilde Q}\tau^{-1}=L_{\tau(\tilde Q)}$, for a reversal $\tau$</td>
+</tr>
+<tr>
+<td>C2</td>
+<td>$R_{\tilde Q}=\tau^{-1}L_{\tau(\tilde Q)}\tau$, and $L_{\tilde Q_1}R_{\tilde Q_2}=L_{\tilde Q_1}\tau^{-1}L_{\tau(\tilde Q_2)}\tau$</td>
+</tr>
+<tr>
+<td>C3</td>
+<td>conjugation by $\tau$ is multiplicative, exchanges the two families, and keeps a two-sided operator two-sided with the two sides and the two parameters exchanged</td>
+</tr>
+<tr>
+<td>C4</td>
+<td>$R_{\tilde Q}=L_{\tilde Q}$ exactly when $\tilde Q$ is central</td>
+</tr>
+<tr>
+<td>C5</td>
+<td>if $\tau(\tilde Q)=\tilde Q$, then $\tau(x\tilde Q)=\tilde Q\,\tau(x)$ for every $x$</td>
+</tr>
+<tr>
+<td>C6</td>
+<td>$R_{\tilde Q_1}R_{\tilde Q_2}=R_{\tilde Q_2\tilde Q_1}$, and the anti-representation is the representation conjugated by $\tau$</td>
+</tr>
+<tr>
+<td>C7</td>
+<td>the left multiplications together with $\tau$ and $\tau^{-1}$ generate every operator of the algebra</td>
+</tr>
+<tr>
+<td>C8</td>
+<td>every $\mathbb{C}$-linear reversal is $\tau_U(x)=U\natural(x)U^{-1}$, and it is in general not an involution</td>
+</tr>
+<tr>
+<td>C9</td>
+<td>the coefficient conjugation $\bar{\cdot}$ is not a reversal</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>The one principle that makes the article possible.</strong> The map $\tilde Q\mapsto L_{\mathrm{axf}}(\tilde Q)$ is injective and multiplicative,</p>
+<p>$$
+L_{\mathrm{axf}}(\tilde Q_1\tilde Q_2)=L_{\mathrm{axf}}(\tilde Q_1)L_{\mathrm{axf}}(\tilde Q_2),
+\qquad
+L_{\mathrm{axf}}(\tilde Q)=0\iff\tilde Q=0 .
+$$</p>
+<p>An identity between elements is therefore an identity between $4\times4$ matrices, and conversely: an element <strong>is</strong> its left matrix.</p>
+<p><strong>The notation of the switch.</strong> The diagonal sign matrix is written $D$ here, as in <em>$M_4(\mathbb{C})$ Axis-Free Representation</em>, where it is called the switch matrix. The companion internal article <em>The Hermitian Pair in Components</em> writes the same matrix $D$.</p>
+<h2 id="the-frame-and-the-matrices-written-out">The Frame, and the Matrices Written Out</h2>
+<p><strong>The basis.</strong> $\mathcal{E}=(e_t,\vec e_x,\vec e_y,\vec e_z)$, with</p>
+<p>$$
+\vec e_x^{2}=\vec e_y^{2}=\vec e_z^{2}=-e_t,\qquad
+\vec e_x\vec e_y=\vec e_z,\quad\vec e_y\vec e_z=\vec e_x,\quad\vec e_z\vec e_x=\vec e_y,
+$$</p>
+<p>and the reverse products negated. An element is $\tilde Q=Q_te_t+Q_x\vec e_x+Q_y\vec e_y+Q_z\vec e_z$ with $Q_\mu\in\mathbb{C}$.</p>
+<p><strong>The left matrix.</strong> The $\nu$-th column is the coordinate column of $\tilde Qe_\nu$:</p>
+<p>$$
+\begin{pmatrix}Q_t&-Q_x&-Q_y&-Q_z\\Q_x&Q_t&-Q_z&Q_y\\Q_y&Q_z&Q_t&-Q_x\\Q_z&-Q_y&Q_x&Q_t\end{pmatrix}
+\tag{1}
+$$</p>
+<p><strong>The right matrix.</strong> The $\nu$-th column is the coordinate column of $e_\nu\tilde Q$:</p>
+<p>$$
+\begin{pmatrix}Q_t&-Q_x&-Q_y&-Q_z\\Q_x&Q_t&Q_z&-Q_y\\Q_y&-Q_z&Q_t&Q_x\\Q_z&Q_y&-Q_x&Q_t\end{pmatrix}
+\tag{2}
+$$</p>
+<p><strong>The element is the first column of either.</strong> $L_{\mathrm{axf}}(\tilde Q)e_1=[\tilde Q]=R_{\mathrm{axf}}(\tilde Q)e_1$, so each array determines the element.</p>
+<p><strong>The two displays agree where the order is invisible.</strong> They have the same first column, the same first row, and the same diagonal $Q_t$. They differ inside the three-by-three block, and by nothing else. That single observation is the source of every identity of the article.</p>
+<p><strong>The switch matrix.</strong></p>
+<p>$$
+\begin{pmatrix}1&0&0&0\\0&-1&0&0\\0&0&-1&0\\0&0&0&-1\end{pmatrix}
+\tag{3}
+$$</p>
+<p>with $D^{2}=\mathrm I_4$, $D^{-1}=D$, $\det D=-1$. The equality $D^{-1}=D$ makes every congruence by $D$ at the same time a similarity, and that is why the invariants of the two families agree.</p>
+<p><strong>The six unit matrices.</strong> Write $S_\mu=L_{\mathrm{axf}}(e_\mu)$ and $T_\mu=R_{\mathrm{axf}}(e_\mu)$. Then $S_t=T_t=\mathrm I_4$, and the three vector matrices of each family are</p>
+<p>$$
+S_x=\begin{pmatrix}0&-1&0&0\\1&0&0&0\\0&0&0&-1\\0&0&1&0\end{pmatrix},
+\quad
+S_y=\begin{pmatrix}0&0&-1&0\\0&0&0&1\\1&0&0&0\\0&-1&0&0\end{pmatrix},
+\quad
+S_z=\begin{pmatrix}0&0&0&-1\\0&0&-1&0\\0&1&0&0\\1&0&0&0\end{pmatrix},
+$$</p>
+<p>$$
+T_x=\begin{pmatrix}0&-1&0&0\\1&0&0&0\\0&0&0&1\\0&0&-1&0\end{pmatrix},
+\quad
+T_y=\begin{pmatrix}0&0&-1&0\\0&0&0&-1\\1&0&0&0\\0&1&0&0\end{pmatrix},
+\quad
+T_z=\begin{pmatrix}0&0&0&-1\\0&0&1&0\\0&-1&0&0\\1&0&0&0\end{pmatrix}.
+$$</p>
+<p><strong>What the six have in common.</strong> Each is a signed permutation matrix, each is <strong>antisymmetric</strong>,</p>
+<p>$$
+S_k^{\mathsf T}=-S_k,\qquad T_k^{\mathsf T}=-T_k\qquad(k=x,y,z),
+\tag{4}
+$$</p>
+<p>and $S_k^{2}=T_k^{2}=-\mathrm I_4$. Property (4) is the whole proof of Step One.</p>
+<p><strong>The decomposition of the two displays.</strong> By (1) and (2),</p>
+<p>$$
+L_{\mathrm{axf}}(\tilde Q)=Q_t\mathrm I_4+\sum_{k}Q_kS_k,
+\qquad
+R_{\mathrm{axf}}(\tilde Q)=Q_t\mathrm I_4+\sum_{k}Q_kT_k .
+\tag{5}
+$$</p>
+<p>Four matrices, four coefficients. The two families differ only in which of the two triples is used.</p>
+<h2 id="three-things-that-carry-the-name">Three Things That Carry the Name</h2>
+<p><strong>The word is overloaded, and the overload is the difficulty.</strong> Three different objects are in play.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>object</th>
+<th>what it acts on</th>
+<th>symbol here</th>
+<th>where it is used</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>the matrix transpose</td>
+<td>a $4\times4$ matrix</td>
+<td>$M\mapsto M^{\mathsf T}$</td>
+<td>(4), Step One, Step Two</td>
+</tr>
+<tr>
+<td>the reversal</td>
+<td>the elements of $\mathbb{B}$</td>
+<td>$\natural$, $\ast$, $\tau$</td>
+<td>C1, C2, C3, C5, C6</td>
+</tr>
+<tr>
+<td>the transport</td>
+<td>the parameter alone</td>
+<td>$\tilde Q\mapsto\tilde Q^{\natural}$</td>
+<td>C2, C4, C5</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>What each one is.</strong> The matrix transpose is an operation on arrays and knows nothing about the algebra. The reversal is an operation on the algebra: an additive bijection with $\tau(xy)=\tau(y)\tau(x)$. The transport is the effect of the reversal on the parameter.</p>
+<p><strong>The compound sentence of the parent article, in symbols.</strong></p>
+<p>$$
+\underbrace{R_{\tilde Q}}_{\text{right matrix}}
+=\underbrace{D}_{\text{reversal}}\;\underbrace{L_{\tilde Q}^{\mathsf T}}_{\text{transpose}}\;\underbrace{D}_{\text{reversal}} .
+$$</p>
+<p>The transpose is then replaced by a left matrix of a transported parameter, and the replacement is Step One followed by Step Two.</p>
+<h2 id="lemma-a-map-on-elements-acts-on-operators-by-conjugation">Lemma: A Map on Elements Acts on Operators by Conjugation</h2>
+<p><strong>The statement.</strong> Let $\tau$ be an additive bijection of $\mathbb{B}$ with matrix $S$ on coefficient columns, $[\tau(x)]=S\,[x]$, with $S$ complex and invertible for a linear $\tau$. Then for every $\mathbb{C}$-linear operator $A$,</p>
+<p>$$
+\bigl[\tau A\tau^{-1}\bigr]=S\,[A]\,S^{-1}.
+\tag{6}
+$$</p>
+<p><em>Proof.</em> Apply the composite to $y$: $\tau\bigl(A\tau^{-1}y\bigr)$, whose column is $S[A]S^{-1}[y]$. A matrix is what it does to every column.</p>
+<p><strong>The antilinear case.</strong> If $\tau$ is conjugate-linear with $[\tau(x)]=S\overline{[x]}$, then $[\tau A\tau^{-1}]=S\overline{[A]}S^{-1}$. <strong>Conjugation of operators in the algebra is conjugation of matrices in the frame.</strong></p>
+<p><strong>The three matrices.</strong></p>
+<p>$$
+\natural\longmapsto D,
+\qquad
+\ast\longmapsto\bigl([x]\mapsto D\overline{[x]}\bigr),
+\qquad
+\bar{\cdot}\longmapsto\bigl([x]\mapsto\overline{[x]}\bigr).
+\tag{7}
+$$</p>
+<h2 id="step-one-the-transpose-is-the-natural-conjugation">Step One: The Transpose Is the Natural Conjugation</h2>
+<p><strong>Theorem.</strong> $L_{\mathrm{axf}}(\tilde Q)^{\mathsf T}=L_{\mathrm{axf}}(\tilde Q^{\natural})$ and $R_{\mathrm{axf}}(\tilde Q)^{\mathsf T}=R_{\mathrm{axf}}(\tilde Q^{\natural})$.</p>
+<p><strong>The transpose, written out.</strong> Transposing (1) moves each entry to its mirrored position:</p>
+<p>$$
+\begin{pmatrix}Q_t&Q_x&Q_y&Q_z\\-Q_x&Q_t&Q_z&-Q_y\\-Q_y&-Q_z&Q_t&Q_x\\-Q_z&Q_y&-Q_x&Q_t\end{pmatrix}
+\tag{8}
+$$</p>
+<p><strong>The left matrix of the transported parameter.</strong> Putting $\tilde Q^{\natural}=Q_te_t-Q_x\vec e_x-Q_y\vec e_y-Q_z\vec e_z$ into (1):</p>
+<p>$$
+\begin{pmatrix}Q_t&Q_x&Q_y&Q_z\\-Q_x&Q_t&Q_z&-Q_y\\-Q_y&-Q_z&Q_t&Q_x\\-Q_z&Q_y&-Q_x&Q_t\end{pmatrix}
+\tag{9}
+$$</p>
+<p><strong>The two displays are equal.</strong> (8) and (9) have the same sixteen entries: the diagonal $Q_t$ is untouched, and each of the twelve off-diagonal entries has changed sign, because $S_k^{\mathsf T}=-S_k$ by (4). Hence $L_{\mathrm{axf}}(\tilde Q)^{\mathsf T}=L_{\mathrm{axf}}(\tilde Q^{\natural})$.</p>
+<p><strong>The right family, the same way.</strong> Transposing (2):</p>
+<p>$$
+\begin{pmatrix}Q_t&Q_x&Q_y&Q_z\\-Q_x&Q_t&-Q_z&Q_y\\-Q_y&Q_z&Q_t&-Q_x\\-Q_z&-Q_y&Q_x&Q_t\end{pmatrix}
+\tag{10}
+$$</p>
+<p>and writing (2) at the transported parameter:</p>
+<p>$$
+\begin{pmatrix}Q_t&Q_x&Q_y&Q_z\\-Q_x&Q_t&-Q_z&Q_y\\-Q_y&Q_z&Q_t&-Q_x\\-Q_z&-Q_y&Q_x&Q_t\end{pmatrix}
+\tag{11}
+$$</p>
+<p>The two agree entry by entry, by $T_k^{\mathsf T}=-T_k$.</p>
+<p><strong>The array is orthogonal up to the norm.</strong> Multiplying (1) by its transpose, and the transpose by (1):</p>
+<p>$$
+\begin{pmatrix}Q_t^{2}+Q_x^{2}+Q_y^{2}+Q_z^{2}&0&0&0\\0&Q_t^{2}+Q_x^{2}+Q_y^{2}+Q_z^{2}&0&0\\0&0&Q_t^{2}+Q_x^{2}+Q_y^{2}+Q_z^{2}&0\\0&0&0&Q_t^{2}+Q_x^{2}+Q_y^{2}+Q_z^{2}\end{pmatrix}
+\tag{12}
+$$</p>
+<p>$$
+\begin{pmatrix}Q_t^{2}+Q_x^{2}+Q_y^{2}+Q_z^{2}&0&0&0\\0&Q_t^{2}+Q_x^{2}+Q_y^{2}+Q_z^{2}&0&0\\0&0&Q_t^{2}+Q_x^{2}+Q_y^{2}+Q_z^{2}&0\\0&0&0&Q_t^{2}+Q_x^{2}+Q_y^{2}+Q_z^{2}\end{pmatrix}
+\tag{13}
+$$</p>
+<p>Both products are $Q_t^{2}+Q_x^{2}+Q_y^{2}+Q_z^{2}$, the quaternionic norm $\langle\tilde Q\rangle_{\natural}$, on the diagonal and nowhere else. So $L(\tilde Q)L(\tilde Q)^{\mathsf T}=L(\tilde Q)^{\mathsf T}L(\tilde Q)=\langle\tilde Q\rangle_{\natural}\mathrm I_4$: the transpose is the inverse of the array up to the norm, and a unit element gives an orthogonal array. This is the same fact as (8) read on a product.</p>
+<p><strong>The same statement in coordinates.</strong> Write $\delta$ for the Kronecker delta and $\varepsilon$ for the alternating symbol with $\varepsilon_{xyz}=1$, and write the spatial indices $k,l$. The display (1) is the four formulas</p>
+<p>$$
+L_{tt}=Q_t,\qquad L_{tk}=-Q_k,\qquad L_{kt}=Q_k,\qquad
+L_{kl}=Q_t\,\delta_{kl}-\varepsilon_{klm}Q_m .
+$$</p>
+<p>Transposition exchanges $L_{\mu\nu}$ with $L_{\nu\mu}$, which keeps the four diagonal entries and negates all twelve others,</p>
+<p>$$
+L^{\mathsf T}_{tt}=Q_t,\qquad
+L^{\mathsf T}_{tk}=L_{kt}=Q_k,\qquad
+L^{\mathsf T}_{kt}=L_{tk}=-Q_k,\qquad
+L^{\mathsf T}_{kl}=L_{lk}=Q_t\,\delta_{kl}+\varepsilon_{klm}Q_m ,
+$$</p>
+<p>using $\varepsilon_{lkm}=-\varepsilon_{klm}$. These are the four formulas above with $Q_k$ replaced by $-Q_k$.</p>
+<p><strong>Two reasons, and which one belongs where.</strong> <em>$M_4(\mathbb{C})$ Axis-Free Representation</em> writes the sign pattern $s_\mu s_\nu$ beside this identity. That pattern is the rule of the <strong>congruence</strong> of Step Two, where each entry is read at the transposed position; applied to the transpose alone it does not hold, because in (1) every one of the six off-diagonal pairs carries opposite signs, including the pairs inside the vector block, where $s_\mu s_\nu=+1$. The reason of the transpose itself is (4).</p>
+<h2 id="step-two-the-right-matrix-is-the-left-matrix-of-the-transported-element">Step Two: The Right Matrix Is the Left Matrix of the Transported Element</h2>
+<p><strong>Theorem.</strong> $R_{\mathrm{axf}}(\tilde Q)=D\,L_{\mathrm{axf}}(\tilde Q)^{\mathsf T}D$.</p>
+<p><strong>The multiplication on the left.</strong> Multiply (3) by (8), the sign matrix on the left of the transpose. Row $t$ is kept and the three spatial rows change sign:</p>
+<p>$$
+\underbrace{\begin{pmatrix}1&0&0&0\\0&-1&0&0\\0&0&-1&0\\0&0&0&-1\end{pmatrix}}_{\text{(3)}}
+\;\underbrace{\begin{pmatrix}Q_t&Q_x&Q_y&Q_z\\-Q_x&Q_t&Q_z&-Q_y\\-Q_y&-Q_z&Q_t&Q_x\\-Q_z&Q_y&-Q_x&Q_t\end{pmatrix}}_{\text{(8)}}
+\;=\;
+\begin{pmatrix}Q_t&Q_x&Q_y&Q_z\\Q_x&-Q_t&-Q_z&Q_y\\Q_y&Q_z&-Q_t&-Q_x\\Q_z&-Q_y&Q_x&-Q_t\end{pmatrix}
+\tag{14}
+$$</p>
+<p><strong>The multiplication on the right alone.</strong> Multiply (8) by (3) on the right. Column $t$ is kept and the three spatial columns change sign:</p>
+<p>$$
+\underbrace{\begin{pmatrix}Q_t&Q_x&Q_y&Q_z\\-Q_x&Q_t&Q_z&-Q_y\\-Q_y&-Q_z&Q_t&Q_x\\-Q_z&Q_y&-Q_x&Q_t\end{pmatrix}}_{\text{(8)}}
+\;\underbrace{\begin{pmatrix}1&0&0&0\\0&-1&0&0\\0&0&-1&0\\0&0&0&-1\end{pmatrix}}_{\text{(3)}}
+\;=\;
+\begin{pmatrix}Q_t&-Q_x&-Q_y&-Q_z\\-Q_x&-Q_t&-Q_z&Q_y\\-Q_y&Q_z&-Q_t&-Q_x\\-Q_z&-Q_y&Q_x&-Q_t\end{pmatrix}
+\tag{15}
+$$</p>
+<p><strong>Both multiplications.</strong> Multiply (14) by (3) on the right, which restores the two mixed entries and negates the two entries of the spatial block:</p>
+<p>$$
+\underbrace{\begin{pmatrix}Q_t&Q_x&Q_y&Q_z\\Q_x&-Q_t&-Q_z&Q_y\\Q_y&Q_z&-Q_t&-Q_x\\Q_z&-Q_y&Q_x&-Q_t\end{pmatrix}}_{\text{(14)}}
+\;\underbrace{\begin{pmatrix}1&0&0&0\\0&-1&0&0\\0&0&-1&0\\0&0&0&-1\end{pmatrix}}_{\text{(3)}}
+\;=\;
+\begin{pmatrix}Q_t&-Q_x&-Q_y&-Q_z\\Q_x&Q_t&Q_z&-Q_y\\Q_y&-Q_z&Q_t&Q_x\\Q_z&Q_y&-Q_x&Q_t\end{pmatrix}
+\tag{16}
+$$</p>
+<p><strong>The result is the right matrix.</strong> Comparing (16) with (2) entry by entry, the sixteen entries agree: the diagonal $Q_t$, the six mixed entries $-Q_k$ in the scalar row and $Q_k$ in the scalar column, and the spatial block $Q_t\delta_{kl}+\varepsilon_{klm}Q_m$. Hence</p>
+<p>$$
+D\,L_{\mathrm{axf}}(\tilde Q)^{\mathsf T}D=R_{\mathrm{axf}}(\tilde Q),
+\tag{17}
+$$</p>
+<p>which is the theorem.</p>
+<p><strong>Why each factor does what it does.</strong> The left factor multiplies the entry at $(\mu,\nu)$ by $s_\mu$ and the right factor by $s_\nu$, so the congruence multiplies the entry at $(\mu,\nu)$ by $s_\mu s_\nu$. That factor is $+1$ when the two indices agree in kind — both scalar or both spatial — and $-1$ when exactly one of them is the scalar slot. Hence the congruence negates the six mixed entries of the transpose and leaves its diagonal and its spatial block alone, which is exactly the difference between (1) and (2).</p>
+<p><strong>The same statement with the parameter carried.</strong> Substituting (9) into the congruence,</p>
+<p>$$
+\underbrace{\begin{pmatrix}1&0&0&0\\0&-1&0&0\\0&0&-1&0\\0&0&0&-1\end{pmatrix}}_{\natural}
+\;\underbrace{\begin{pmatrix}Q_t&Q_x&Q_y&Q_z\\-Q_x&Q_t&Q_z&-Q_y\\-Q_y&-Q_z&Q_t&Q_x\\-Q_z&Q_y&-Q_x&Q_t\end{pmatrix}}_{L(\tilde Q^{\natural})}
+\;\underbrace{\begin{pmatrix}1&0&0&0\\0&-1&0&0\\0&0&-1&0\\0&0&0&-1\end{pmatrix}}_{\natural}
+\;=\;
+\begin{pmatrix}Q_t&-Q_x&-Q_y&-Q_z\\Q_x&Q_t&Q_z&-Q_y\\Q_y&-Q_z&Q_t&Q_x\\Q_z&Q_y&-Q_x&Q_t\end{pmatrix}
+\tag{18}
+$$</p>
+<p>and (18) is (2) again, by the same entry comparison. This is the form used below, because the parameter stands still and the switch moves.</p>
+<p><strong>And the same statement read on the units.</strong> $D\,S_k\,D=-T_k$ for each direction: the congruence negates the two mixed entries of $S_k$ and keeps its two spatial entries, and that is $-T_k$ at all four positions. Hence, applying the congruence term by term to (5),</p>
+<p>$$
+D\,L_{\mathrm{axf}}(\tilde Q^{\natural})\,D
+=D\Bigl(Q_t\mathrm I_4-\sum_kQ_kS_k\Bigr)D
+=Q_t\mathrm I_4+\sum_kQ_kT_k
+=R_{\mathrm{axf}}(\tilde Q).
+$$</p>
+<p><strong>The mechanism in one sentence.</strong> The reversal negates the vector part of the parameter, the right family acts with the vector part of the opposite sign, and the matrix $D$ is the map that negates the vector coordinates; so conjugating the left matrix by the matrix of the reversal produces the right matrix.</p>
+<h2 id="step-three-conjugation-by-the-reversal">Step Three: Conjugation by the Reversal</h2>
+<p><strong>The theorem, for $\natural$.</strong> By (6) with $S=D$, and by (18),</p>
+<p>$$
+\bigl[\natural\,L_{\tilde Q}\,\natural^{-1}\bigr]=D\,L_{\mathrm{axf}}(\tilde Q)\,D=R_{\mathrm{axf}}(\tilde Q^{\natural}),
+$$</p>
+<p>that is $\natural L_{\tilde Q}\natural=R_{\tilde Q^{\natural}}$, which is C1 for $\tau=\natural$.</p>
+<p><strong>The multiplication on the left of the untransposed matrix.</strong></p>
+<p>$$
+\underbrace{\begin{pmatrix}1&0&0&0\\0&-1&0&0\\0&0&-1&0\\0&0&0&-1\end{pmatrix}}_{\natural}
+\;\underbrace{\begin{pmatrix}Q_t&-Q_x&-Q_y&-Q_z\\Q_x&Q_t&-Q_z&Q_y\\Q_y&Q_z&Q_t&-Q_x\\Q_z&-Q_y&Q_x&Q_t\end{pmatrix}}_{L(\tilde Q)}
+\;=\;
+\begin{pmatrix}Q_t&-Q_x&-Q_y&-Q_z\\-Q_x&-Q_t&Q_z&-Q_y\\-Q_y&-Q_z&-Q_t&Q_x\\-Q_z&Q_y&-Q_x&-Q_t\end{pmatrix}
+\tag{19}
+$$</p>
+<p><strong>The multiplication on the right.</strong></p>
+<p>$$
+\underbrace{\begin{pmatrix}Q_t&-Q_x&-Q_y&-Q_z\\Q_x&Q_t&-Q_z&Q_y\\Q_y&Q_z&Q_t&-Q_x\\Q_z&-Q_y&Q_x&Q_t\end{pmatrix}}_{L(\tilde Q)}
+\;\underbrace{\begin{pmatrix}1&0&0&0\\0&-1&0&0\\0&0&-1&0\\0&0&0&-1\end{pmatrix}}_{\natural}
+\;=\;
+\begin{pmatrix}Q_t&Q_x&Q_y&Q_z\\Q_x&-Q_t&Q_z&-Q_y\\Q_y&-Q_z&-Q_t&Q_x\\Q_z&Q_y&-Q_x&-Q_t\end{pmatrix}
+\tag{20}
+$$</p>
+<p><strong>Both, which is the congruence.</strong> The scalar row and the scalar column are negated twice and come back, and the spatial block is negated twice and comes back:</p>
+<p>$$
+\underbrace{\begin{pmatrix}Q_t&-Q_x&-Q_y&-Q_z\\-Q_x&-Q_t&Q_z&-Q_y\\-Q_y&-Q_z&-Q_t&Q_x\\-Q_z&Q_y&-Q_x&-Q_t\end{pmatrix}}_{\text{(19)}}
+\;\underbrace{\begin{pmatrix}1&0&0&0\\0&-1&0&0\\0&0&-1&0\\0&0&0&-1\end{pmatrix}}_{\natural}
+\;=\;
+\begin{pmatrix}Q_t&Q_x&Q_y&Q_z\\-Q_x&Q_t&-Q_z&Q_y\\-Q_y&Q_z&Q_t&-Q_x\\-Q_z&-Q_y&Q_x&Q_t\end{pmatrix}
+\tag{21}
+$$</p>
+<p>and (21) is (11), the right matrix of the transported parameter. Hence</p>
+<p>$$
+D\,L_{\mathrm{axf}}(\tilde Q)\,D=R_{\mathrm{axf}}(\tilde Q^{\natural}).
+\tag{22}
+$$</p>
+<p><strong>The right family, the same way.</strong> Two multiplications and their composite:</p>
+<p>$$
+\underbrace{\begin{pmatrix}1&0&0&0\\0&-1&0&0\\0&0&-1&0\\0&0&0&-1\end{pmatrix}}_{\natural}
+\;\underbrace{\begin{pmatrix}Q_t&-Q_x&-Q_y&-Q_z\\Q_x&Q_t&Q_z&-Q_y\\Q_y&-Q_z&Q_t&Q_x\\Q_z&Q_y&-Q_x&Q_t\end{pmatrix}}_{R(\tilde Q)}
+\;=\;
+\begin{pmatrix}Q_t&-Q_x&-Q_y&-Q_z\\-Q_x&-Q_t&-Q_z&Q_y\\-Q_y&Q_z&-Q_t&-Q_x\\-Q_z&-Q_y&Q_x&-Q_t\end{pmatrix}
+\tag{23}
+$$</p>
+<p>$$
+\underbrace{\begin{pmatrix}Q_t&-Q_x&-Q_y&-Q_z\\Q_x&Q_t&Q_z&-Q_y\\Q_y&-Q_z&Q_t&Q_x\\Q_z&Q_y&-Q_x&Q_t\end{pmatrix}}_{R(\tilde Q)}
+\;\underbrace{\begin{pmatrix}1&0&0&0\\0&-1&0&0\\0&0&-1&0\\0&0&0&-1\end{pmatrix}}_{\natural}
+\;=\;
+\begin{pmatrix}Q_t&Q_x&Q_y&Q_z\\Q_x&-Q_t&-Q_z&Q_y\\Q_y&Q_z&-Q_t&-Q_x\\Q_z&-Q_y&Q_x&-Q_t\end{pmatrix}
+\tag{24}
+$$</p>
+<p>$$
+\underbrace{\begin{pmatrix}Q_t&-Q_x&-Q_y&-Q_z\\-Q_x&-Q_t&-Q_z&Q_y\\-Q_y&Q_z&-Q_t&-Q_x\\-Q_z&-Q_y&Q_x&-Q_t\end{pmatrix}}_{\text{(23)}}
+\;\underbrace{\begin{pmatrix}1&0&0&0\\0&-1&0&0\\0&0&-1&0\\0&0&0&-1\end{pmatrix}}_{\natural}
+\;=\;
+\begin{pmatrix}Q_t&Q_x&Q_y&Q_z\\-Q_x&Q_t&Q_z&-Q_y\\-Q_y&-Q_z&Q_t&Q_x\\-Q_z&Q_y&-Q_x&Q_t\end{pmatrix}
+\tag{25}
+$$</p>
+<p>and (25) is (9), so $D\,R_{\mathrm{axf}}(\tilde Q)\,D=L_{\mathrm{axf}}(\tilde Q^{\natural})$.</p>
+<p><strong>Read on the entries.</strong> The entry of $D\,L\,D$ at $(\mu,\nu)$ is $s_\mu s_\nu L_{\mu\nu}$: the diagonal and the spatial block are untouched and the six mixed entries change sign. That is $R_{\mathrm{axf}}(\tilde Q^{\natural})$ entry by entry, because its mixed entries are $-Q_k^{\natural}=+Q_k$ and $Q_k^{\natural}=-Q_k$, the negated mixed entries of (1), and its spatial block is $Q_t\delta_{kl}+\varepsilon_{klm}Q^{\natural}_m=Q_t\delta_{kl}-\varepsilon_{klm}Q_m$, the block of (1) itself.</p>
+<p><strong>The right factor alone (C2).</strong> The boxed identity of the parent article is $R_{\tilde Q}=\natural^{-1}L_{\natural\tilde Q}\natural$. Since $\natural$ is an involution, $\natural^{-1}=\natural$, and (18) <strong>is</strong> that identity read in the frame. The element-level proof solves the conjugation theorem for the right factor; the matrix statement does not need solving, because it puts the right multiplication on the left from the start.</p>
+<p><strong>The invariants agree, the entries do not.</strong> Because $D^{-1}=D$, (18) is a similarity and not merely a congruence, so the characteristic polynomial, the trace, the determinant and the rank of $L_{\mathrm{axf}}(\tilde Q^{\natural})$ and of $R_{\mathrm{axf}}(\tilde Q)$ coincide. In both the trace is $4Q_t$ and the determinant is $\langle\tilde Q\rangle_{\natural}^{2}$. The entries are another matter: the two matrices have the same diagonal and the same three-by-three block, and they differ at the six mixed entries.</p>
+<p><strong>C3, in the same language.</strong> Multiplication of matrices is associative, so $M\mapsto DMD$ is multiplicative; it maps the left copy onto the right copy and back, by (18); and applied to a two-sided product,</p>
+<p>$$
+D\,L_{\mathrm{axf}}(\tilde Q_1)R_{\mathrm{axf}}(\tilde Q_2)\,D
+=\bigl(DL_{\mathrm{axf}}(\tilde Q_1)D\bigr)\bigl(DR_{\mathrm{axf}}(\tilde Q_2)D\bigr)
+=R_{\mathrm{axf}}(\tilde Q_1^{\natural})L_{\mathrm{axf}}(\tilde Q_2^{\natural}),
+$$</p>
+<p>because $D^{2}=\mathrm I_4$ supplies the missing factor between the two congruences. The two sides have exchanged and the two parameters have been transported.</p>
+<h2 id="step-four-the-star-case">Step Four: The Star Case</h2>
+<p><strong>The matrix of $\ast$.</strong> By (7), $\ast$ acts on coefficient columns by $[x]\mapsto D\overline{[x]}$. Since $\ast$ is an involution, (6) for the antilinear case gives $\bigl[\ast\,A\,\ast^{-1}\bigr]=D\,\overline{[A]}\,D$.</p>
+<p><strong>The entrywise conjugate of the left matrix.</strong> Conjugating every entry of (1) conjugates the four coefficients and leaves the signs alone:</p>
+<p>$$
+\begin{pmatrix}\bar Q_t&-\bar Q_x&-\bar Q_y&-\bar Q_z\\\bar Q_x&\bar Q_t&-\bar Q_z&\bar Q_y\\\bar Q_y&\bar Q_z&\bar Q_t&-\bar Q_x\\\bar Q_z&-\bar Q_y&\bar Q_x&\bar Q_t\end{pmatrix}
+\tag{26}
+$$</p>
+<p><strong>The multiplication on the left by the sign matrix.</strong></p>
+<p>$$
+\underbrace{\begin{pmatrix}1&0&0&0\\0&-1&0&0\\0&0&-1&0\\0&0&0&-1\end{pmatrix}}_{\text{(3)}}
+\;\underbrace{\begin{pmatrix}\bar Q_t&-\bar Q_x&-\bar Q_y&-\bar Q_z\\\bar Q_x&\bar Q_t&-\bar Q_z&\bar Q_y\\\bar Q_y&\bar Q_z&\bar Q_t&-\bar Q_x\\\bar Q_z&-\bar Q_y&\bar Q_x&\bar Q_t\end{pmatrix}}_{\text{(26)}}
+\;=\;
+\begin{pmatrix}\bar Q_t&-\bar Q_x&-\bar Q_y&-\bar Q_z\\-\bar Q_x&-\bar Q_t&\bar Q_z&-\bar Q_y\\-\bar Q_y&-\bar Q_z&-\bar Q_t&\bar Q_x\\-\bar Q_z&\bar Q_y&-\bar Q_x&-\bar Q_t\end{pmatrix}
+\tag{27}
+$$</p>
+<p><strong>The multiplication on the right.</strong></p>
+<p>$$
+\underbrace{\begin{pmatrix}\bar Q_t&-\bar Q_x&-\bar Q_y&-\bar Q_z\\-\bar Q_x&-\bar Q_t&\bar Q_z&-\bar Q_y\\-\bar Q_y&-\bar Q_z&-\bar Q_t&\bar Q_x\\-\bar Q_z&\bar Q_y&-\bar Q_x&-\bar Q_t\end{pmatrix}}_{\text{(27)}}
+\;\underbrace{\begin{pmatrix}1&0&0&0\\0&-1&0&0\\0&0&-1&0\\0&0&0&-1\end{pmatrix}}_{\text{(3)}}
+\;=\;
+\begin{pmatrix}\bar Q_t&\bar Q_x&\bar Q_y&\bar Q_z\\-\bar Q_x&\bar Q_t&-\bar Q_z&\bar Q_y\\-\bar Q_y&\bar Q_z&\bar Q_t&-\bar Q_x\\-\bar Q_z&-\bar Q_y&\bar Q_x&\bar Q_t\end{pmatrix}
+\tag{28}
+$$</p>
+<p><strong>The result is the right matrix of the starred parameter.</strong> With $\tilde Q^{*}=\overline{Q_t}e_t-\overline{Q_x}\vec e_x-\overline{Q_y}\vec e_y-\overline{Q_z}\vec e_z$, the display (2) reads</p>
+<p>$$
+\begin{pmatrix}\bar Q_t&\bar Q_x&\bar Q_y&\bar Q_z\\-\bar Q_x&\bar Q_t&-\bar Q_z&\bar Q_y\\-\bar Q_y&\bar Q_z&\bar Q_t&-\bar Q_x\\-\bar Q_z&-\bar Q_y&\bar Q_x&\bar Q_t\end{pmatrix}
+\tag{29}
+$$</p>
+<p>and (29) is (28) entry by entry. Hence</p>
+<p>$$
+\ast L_{\tilde Q}\ast=R_{\tilde Q^{*}} .
+$$</p>
+<p><strong>Where the star entered.</strong> Once, at the coefficients, through the entrywise conjugation of (26). The switch $D$ is untouched, and the reversal of the order is still done by $D$.</p>
+<p><strong>The dagger of the array.</strong> Transposing (26) gives the conjugate transpose, which is the left matrix of the starred parameter:</p>
+<p>$$
+\begin{pmatrix}\bar Q_t&\bar Q_x&\bar Q_y&\bar Q_z\\-\bar Q_x&\bar Q_t&\bar Q_z&-\bar Q_y\\-\bar Q_y&-\bar Q_z&\bar Q_t&\bar Q_x\\-\bar Q_z&\bar Q_y&-\bar Q_x&\bar Q_t\end{pmatrix}
+\tag{30}
+$$</p>
+<p>so $L(\tilde Q)^{\dagger}=L(\tilde Q^{*})$, and the array of the pair is read from the array of the element alone.</p>
+<p><strong>The array times its dagger.</strong> Multiplying (1) by (30):</p>
+<p>$$
+\begin{pmatrix}Q_t\bar Q_t+Q_x\bar Q_x+Q_y\bar Q_y+Q_z\bar Q_z&Q_t\bar Q_x-Q_x\bar Q_t+Q_y\bar Q_z-Q_z\bar Q_y&Q_t\bar Q_y-Q_x\bar Q_z-Q_y\bar Q_t+Q_z\bar Q_x&Q_t\bar Q_z+Q_x\bar Q_y-Q_y\bar Q_x-Q_z\bar Q_t\\-Q_t\bar Q_x+Q_x\bar Q_t-Q_y\bar Q_z+Q_z\bar Q_y&Q_t\bar Q_t+Q_x\bar Q_x+Q_y\bar Q_y+Q_z\bar Q_z&Q_t\bar Q_z+Q_x\bar Q_y-Q_y\bar Q_x-Q_z\bar Q_t&-Q_t\bar Q_y+Q_x\bar Q_z+Q_y\bar Q_t-Q_z\bar Q_x\\-Q_t\bar Q_y+Q_x\bar Q_z+Q_y\bar Q_t-Q_z\bar Q_x&-Q_t\bar Q_z-Q_x\bar Q_y+Q_y\bar Q_x+Q_z\bar Q_t&Q_t\bar Q_t+Q_x\bar Q_x+Q_y\bar Q_y+Q_z\bar Q_z&Q_t\bar Q_x-Q_x\bar Q_t+Q_y\bar Q_z-Q_z\bar Q_y\\-Q_t\bar Q_z-Q_x\bar Q_y+Q_y\bar Q_x+Q_z\bar Q_t&Q_t\bar Q_y-Q_x\bar Q_z-Q_y\bar Q_t+Q_z\bar Q_x&-Q_t\bar Q_x+Q_x\bar Q_t-Q_y\bar Q_z+Q_z\bar Q_y&Q_t\bar Q_t+Q_x\bar Q_x+Q_y\bar Q_y+Q_z\bar Q_z\end{pmatrix}
+\tag{31}
+$$</p>
+<p>The diagonal is $\Sigma=\lvert Q_t\rvert^{2}+\lvert Q_x\rvert^{2}+\lvert Q_y\rvert^{2}+\lvert Q_z\rvert^{2}$ in all four slots, and the off-diagonal entries are the mixed terms $Q_t\overline{Q_x}-Q_x\overline{Q_t}+Q_y\overline{Q_z}-Q_z\overline{Q_y}$ and its companions. This is $L_{\mathrm{axf}}(\tilde Q\tilde Q^{*})$, which is $L$ of a Hermitian element: <strong>the product of the array with its dagger is again an array of the left family, and its diagonal is the squared Euclidean norm.</strong> It is a scalar matrix only when the vector part vanishes; the off-diagonal entries are the obstruction, and they are exactly the coefficients of the vector part of $\tilde Q\tilde Q^{*}$.</p>
+<p><strong>The two reversals, side by side.</strong> The natural conjugation acts by the symmetric sign matrix $D$ and the star acts by $D$ composed with conjugation. Both reverse the order of the factors, and both carry the parameter; they differ in the grade, and the grade is the only difference that matters, because the operators of the corpus are complex-linear and a conjugate-linear reversal does not act on them. That is why $\natural$ is the reversal used in C1 and $\ast$ is the reversal used in the Hermitian pair.</p>
+<h2 id="step-five-the-coefficient-conjugation-is-not-a-reversal-c9">Step Five: The Coefficient Conjugation Is Not a Reversal (C9)</h2>
+<p><strong>The matrix.</strong> By (7) the coefficient conjugation acts on coefficient columns by entrywise conjugation, matrix $\mathrm I_4$. Applied to a left matrix it gives another left matrix,</p>
+<p>$$
+\overline{L_{\mathrm{axf}}(\tilde Q)}=L_{\mathrm{axf}}(\bar{\tilde Q}),
+$$</p>
+<p>whose display is (26) with the four coefficients read as the conjugates of the four coordinates of $\bar{\tilde Q}$. <strong>The image is in $\mathbb{B}_L$, on the same side as the original.</strong> An operation that stays inside one family cannot exchange the two.</p>
+<p><strong>The reversal property, tested.</strong> The coefficient conjugation fixes each of the four units, because the structure constants in this frame are real. A reversal must satisfy $\tau(xy)=\tau(y)\tau(x)$, so for $\tau=\bar{\cdot}$ the requirement on the units reads $e_\mu e_\nu=e_\nu e_\mu$: the test is whether the product commutes.</p>
+<p>| pair | $e_\mu e_\nu$ | $e_\nu e_\mu$ | $L_{\mathrm{axf}}(e_\mu e_\nu)$ | $L_{\mathrm{axf}}(e_\nu e_\mu)$ | agree |
+|---|---|---|---|---|
+| $\mu=\nu=x$ | $-e_t$ | $-e_t$ | $-\mathrm I_4$ | $-\mathrm I_4$ | yes |
+| $\mu=t$, any $\nu$ | $e_\nu$ | $e_\nu$ | $S_\nu$ | $S_\nu$ | yes |
+| $\mu=x,\nu=y$ | $\vec e_z$ | $-\vec e_z$ | $S_z$ | $-S_z$ | <strong>no</strong> |</p>
+<p>The failures are exactly the six ordered pairs of <strong>distinct</strong> vector units, $xy$, $xz$, $yx$, $yz$, $zx$, $zy$. The scalar row and the three squares agree, because there the order of the two factors is not visible.</p>
+<p><strong>The one-line diagnosis.</strong> The unit matrices $S_k$ anticommute, so exchanging the order of two distinct vector units costs a sign; the coefficient conjugation is the identity on the matrices and cannot produce that sign. A reversal must produce it, and $D$ does, because $D S_k D=-T_k$ is a signed permutation matrix and the sign is exactly what the exchange of the order costs.</p>
+<h2 id="step-six-two-sided-operators-the-anti-representation-and-generation">Step Six: Two-Sided Operators, the Anti-Representation, and Generation</h2>
+<p><strong>The two-sided product (C2).</strong> By (18),</p>
+<p>$$
+L_{\mathrm{axf}}(\tilde Q_1)\,R_{\mathrm{axf}}(\tilde Q_2)
+=L_{\mathrm{axf}}(\tilde Q_1)\;D\;L_{\mathrm{axf}}(\tilde Q_2^{\natural})\;D .
+\tag{32}
+$$</p>
+<p><strong>The two-sided operator with one parameter, written out.</strong> Both sides at the same element:</p>
+<p>$$
+\underbrace{\begin{pmatrix}Q_t&-Q_x&-Q_y&-Q_z\\Q_x&Q_t&-Q_z&Q_y\\Q_y&Q_z&Q_t&-Q_x\\Q_z&-Q_y&Q_x&Q_t\end{pmatrix}}_{L(\tilde Q)}
+\;\underbrace{\begin{pmatrix}Q_t&-Q_x&-Q_y&-Q_z\\Q_x&Q_t&Q_z&-Q_y\\Q_y&-Q_z&Q_t&Q_x\\Q_z&Q_y&-Q_x&Q_t\end{pmatrix}}_{R(\tilde Q)}
+\;=\;
+\begin{pmatrix}Q_t^{2}-Q_x^{2}-Q_y^{2}-Q_z^{2}&-Q_tQ_x&-Q_tQ_y&-Q_tQ_z\\Q_tQ_x&Q_t^{2}-Q_x^{2}+Q_y^{2}+Q_z^{2}&-Q_xQ_y&-Q_xQ_z\\Q_tQ_y&-Q_xQ_y&Q_t^{2}+Q_x^{2}-Q_y^{2}+Q_z^{2}&-Q_yQ_z\\Q_tQ_z&-Q_xQ_z&-Q_yQ_z&Q_t^{2}+Q_x^{2}+Q_y^{2}-Q_z^{2}\end{pmatrix}
+\tag{33}
+$$</p>
+<p>which is the array of $x\mapsto\tilde Qx\tilde Q$, the two-sided operator of one parameter. Its first column is $[\tilde Q^{2}]$, as it must be.</p>
+<p><strong>The product written out.</strong> With two parameters $\tilde P$ and $\tilde Q$,</p>
+<p>$$
+\underbrace{\begin{pmatrix}P_t&-P_x&-P_y&-P_z\\P_x&P_t&-P_z&P_y\\P_y&P_z&P_t&-P_x\\P_z&-P_y&P_x&P_t\end{pmatrix}}_{L(\tilde P)}
+\;\underbrace{\begin{pmatrix}Q_t&-Q_x&-Q_y&-Q_z\\Q_x&Q_t&Q_z&-Q_y\\Q_y&-Q_z&Q_t&Q_x\\Q_z&Q_y&-Q_x&Q_t\end{pmatrix}}_{R(\tilde Q)}
+\;=\;
+\begin{pmatrix}P_tQ_t-P_xQ_x-P_yQ_y-P_zQ_z&-P_tQ_x-P_xQ_t+P_yQ_z-P_zQ_y&-P_tQ_y-P_xQ_z-P_yQ_t+P_zQ_x&-P_tQ_z+P_xQ_y-P_yQ_x-P_zQ_t\\P_tQ_x+P_xQ_t+P_yQ_z-P_zQ_y&P_tQ_t-P_xQ_x+P_yQ_y+P_zQ_z&P_tQ_z-P_xQ_y-P_yQ_x-P_zQ_t&-P_tQ_y-P_xQ_z+P_yQ_t-P_zQ_x\\P_tQ_y-P_xQ_z+P_yQ_t+P_zQ_x&-P_tQ_z-P_xQ_y-P_yQ_x+P_zQ_t&P_tQ_t+P_xQ_x-P_yQ_y+P_zQ_z&P_tQ_x-P_xQ_t-P_yQ_z-P_zQ_y\\P_tQ_z+P_xQ_y-P_yQ_x+P_zQ_t&P_tQ_y-P_xQ_z-P_yQ_t-P_zQ_x&-P_tQ_x+P_xQ_t-P_yQ_z-P_zQ_y&P_tQ_t+P_xQ_x+P_yQ_y-P_zQ_z\end{pmatrix}
+\tag{34}
+$$</p>
+<p>and the first column of (34) is $[\tilde P\tilde Q]$, the first column of $L_{\mathrm{axf}}(\tilde P\tilde Q)$; the other columns follow by reading the same computation at $\tilde Qe_\nu$ in place of $\tilde Q$. Faithfulness then gives the whole identity: <strong>the product of the two arrays is the left matrix of the product of the two elements.</strong> The same statement inside one family, two left factors:</p>
+<p>$$
+\underbrace{\begin{pmatrix}P_t&-P_x&-P_y&-P_z\\P_x&P_t&-P_z&P_y\\P_y&P_z&P_t&-P_x\\P_z&-P_y&P_x&P_t\end{pmatrix}}_{L(\tilde P)}
+\;\underbrace{\begin{pmatrix}Q_t&-Q_x&-Q_y&-Q_z\\Q_x&Q_t&-Q_z&Q_y\\Q_y&Q_z&Q_t&-Q_x\\Q_z&-Q_y&Q_x&Q_t\end{pmatrix}}_{L(\tilde Q)}
+\;=\;
+\begin{pmatrix}P_tQ_t-P_xQ_x-P_yQ_y-P_zQ_z&-P_tQ_x-P_xQ_t-P_yQ_z+P_zQ_y&-P_tQ_y+P_xQ_z-P_yQ_t-P_zQ_x&-P_tQ_z-P_xQ_y+P_yQ_x-P_zQ_t\\P_tQ_x+P_xQ_t+P_yQ_z-P_zQ_y&P_tQ_t-P_xQ_x-P_yQ_y-P_zQ_z&-P_tQ_z-P_xQ_y+P_yQ_x-P_zQ_t&P_tQ_y-P_xQ_z+P_yQ_t+P_zQ_x\\P_tQ_y-P_xQ_z+P_yQ_t+P_zQ_x&P_tQ_z+P_xQ_y-P_yQ_x+P_zQ_t&P_tQ_t-P_xQ_x-P_yQ_y-P_zQ_z&-P_tQ_x-P_xQ_t-P_yQ_z+P_zQ_y\\P_tQ_z+P_xQ_y-P_yQ_x+P_zQ_t&-P_tQ_y+P_xQ_z-P_yQ_t-P_zQ_x&P_tQ_x+P_xQ_t+P_yQ_z-P_zQ_y&P_tQ_t-P_xQ_x-P_yQ_y-P_zQ_z\end{pmatrix}
+\tag{35}
+$$</p>
+<p>and the right side is $L_{\mathrm{axf}}(\tilde P\tilde Q)$, the left matrix of the product read on the entries.</p>
+<p><strong>The anti-representation (C6).</strong> Right multiplication is an anti-representation. In matrices, using (18) twice and $D^{2}=\mathrm I_4$,</p>
+<p>$$
+R_{\mathrm{axf}}(\tilde Q_1)R_{\mathrm{axf}}(\tilde Q_2)
+=DL_{\mathrm{axf}}(\tilde Q_1^{\natural})D\;DL_{\mathrm{axf}}(\tilde Q_2^{\natural})D
+=DL_{\mathrm{axf}}(\tilde Q_1^{\natural})L_{\mathrm{axf}}(\tilde Q_2^{\natural})D
+=DL_{\mathrm{axf}}(\tilde Q_1^{\natural}\tilde Q_2^{\natural})D .
+$$</p>
+<p>Now $\natural$ is a reversal, so $\tilde Q_1^{\natural}\tilde Q_2^{\natural}=(\tilde Q_2\tilde Q_1)^{\natural}$, and the last display is $R_{\mathrm{axf}}(\tilde Q_2\tilde Q_1)$. <strong>The order reverses inside $\natural$, exactly once, and that once is the whole of the anti-representation.</strong></p>
+<p><strong>The same statement in one display of matrices.</strong> Two right factors, then the right matrix of the reversed product:</p>
+<p>$$
+\underbrace{\begin{pmatrix}P_t&-P_x&-P_y&-P_z\\P_x&P_t&P_z&-P_y\\P_y&-P_z&P_t&P_x\\P_z&P_y&-P_x&P_t\end{pmatrix}}_{R(\tilde P)}
+\;\underbrace{\begin{pmatrix}Q_t&-Q_x&-Q_y&-Q_z\\Q_x&Q_t&Q_z&-Q_y\\Q_y&-Q_z&Q_t&Q_x\\Q_z&Q_y&-Q_x&Q_t\end{pmatrix}}_{R(\tilde Q)}
+\;=\;
+\begin{pmatrix}P_tQ_t-P_xQ_x-P_yQ_y-P_zQ_z&-P_tQ_x-P_xQ_t+P_yQ_z-P_zQ_y&-P_tQ_y-P_xQ_z-P_yQ_t+P_zQ_x&-P_tQ_z+P_xQ_y-P_yQ_x-P_zQ_t\\P_tQ_x+P_xQ_t-P_yQ_z+P_zQ_y&P_tQ_t-P_xQ_x-P_yQ_y-P_zQ_z&P_tQ_z-P_xQ_y+P_yQ_x+P_zQ_t&-P_tQ_y-P_xQ_z-P_yQ_t+P_zQ_x\\P_tQ_y+P_xQ_z+P_yQ_t-P_zQ_x&-P_tQ_z+P_xQ_y-P_yQ_x-P_zQ_t&P_tQ_t-P_xQ_x-P_yQ_y-P_zQ_z&P_tQ_x+P_xQ_t-P_yQ_z+P_zQ_y\\P_tQ_z-P_xQ_y+P_yQ_x+P_zQ_t&P_tQ_y+P_xQ_z+P_yQ_t-P_zQ_x&-P_tQ_x-P_xQ_t+P_yQ_z-P_zQ_y&P_tQ_t-P_xQ_x-P_yQ_y-P_zQ_z\end{pmatrix}
+\tag{36}
+$$</p>
+<p>$$
+\begin{pmatrix}P_tQ_t-P_xQ_x-P_yQ_y-P_zQ_z&-P_tQ_x-P_xQ_t+P_yQ_z-P_zQ_y&-P_tQ_y-P_xQ_z-P_yQ_t+P_zQ_x&-P_tQ_z+P_xQ_y-P_yQ_x-P_zQ_t\\P_tQ_x+P_xQ_t-P_yQ_z+P_zQ_y&P_tQ_t-P_xQ_x-P_yQ_y-P_zQ_z&P_tQ_z-P_xQ_y+P_yQ_x+P_zQ_t&-P_tQ_y-P_xQ_z-P_yQ_t+P_zQ_x\\P_tQ_y+P_xQ_z+P_yQ_t-P_zQ_x&-P_tQ_z+P_xQ_y-P_yQ_x-P_zQ_t&P_tQ_t-P_xQ_x-P_yQ_y-P_zQ_z&P_tQ_x+P_xQ_t-P_yQ_z+P_zQ_y\\P_tQ_z-P_xQ_y+P_yQ_x+P_zQ_t&P_tQ_y+P_xQ_z+P_yQ_t-P_zQ_x&-P_tQ_x-P_xQ_t+P_yQ_z-P_zQ_y&P_tQ_t-P_xQ_x-P_yQ_y-P_zQ_z\end{pmatrix}
+\tag{37}
+$$</p>
+<p>and (36) is (37) entry by entry: the product of the two right arrays is the right array of $\tilde Q\tilde P$, not of $\tilde P\tilde Q$. Compare it with (35), where the order is kept. <strong>One pair of displays is the whole difference between the representation and the anti-representation.</strong></p>
+<p><strong>The conjugation that explains it.</strong> With the congruence kept in place,</p>
+<p>$$
+D\,R_{\mathrm{axf}}(\tilde Q_1)D\;D\,R_{\mathrm{axf}}(\tilde Q_2)D
+=L_{\mathrm{axf}}(\tilde Q_1^{\natural})L_{\mathrm{axf}}(\tilde Q_2^{\natural})
+=L_{\mathrm{axf}}\bigl((\tilde Q_2\tilde Q_1)^{\natural}\bigr),
+$$</p>
+<p>so conjugating the right family by $D$ turns the anti-representation into the representation.</p>
+<p><strong>The sixteen elementary products.</strong> The products $S_\mu T_\nu=L_{\mathrm{axf}}(e_\mu)R_{\mathrm{axf}}(e_\nu)$ are sixteen signed permutation matrices, each with one nonzero entry in each row and each column, all of modulus one. They are linearly independent, hence a basis of $M_4(\mathbb{C})$.</p>
+<p><strong>Generation (C7).</strong> Every matrix is a unique combination $M=\sum_{\mu,\nu}c_{\mu\nu}S_\mu T_\nu$, and by (18) each $T_\nu=DS_\nu D$. Hence every operator is a word in left multiplications and switch matrices. The reversal is genuinely a new generator and not a hidden multiplication: $D$ is in <strong>neither</strong> family, since every matrix in $\mathbb{B}_L$ and every matrix in $\mathbb{B}_R$ has the same four diagonal entries, and the diagonal of $D$ is $(1,-1,-1,-1)$.</p>
+<h2 id="step-seven-the-parameter-is-carried-c4-c5">Step Seven: The Parameter Is Carried (C4, C5)</h2>
+<p><strong>The difference of the two displays.</strong> Subtracting (2) from (1) leaves the scalar row and the scalar column zero and puts a matrix in the vector block:</p>
+<p>$$
+\begin{pmatrix}0&0&0&0\\0&0&-Q_z&Q_y\\0&Q_z&0&-Q_x\\0&-Q_y&Q_x&0\end{pmatrix}
+\tag{38}
+$$</p>
+<p><strong>The block is the cross product.</strong> The six off-diagonal slots are $-2Q_z$, $2Q_y$, $2Q_z$, $-2Q_x$, $-2Q_y$, $2Q_x$, each a single vector coordinate up to the factor $\pm2$, so the block vanishes exactly when the three coordinates do. That is C4: <strong>the two families meet in the scalars and nowhere else.</strong></p>
+<p><strong>The fixed-space shortcut (C5).</strong> Let $\tau$ be a reversal with matrix $S$, and suppose $\tau(\tilde Q)=\tilde Q$. Then by (6), $\bigl[\tau R_{\tilde Q}\bigr]=S\,R_{\mathrm{axf}}(\tilde Q)$ and $\bigl[L_{\tilde Q}\tau\bigr]=L_{\mathrm{axf}}(\tilde Q)\,S$, and the two agree exactly when $S\,R_{\mathrm{axf}}(\tilde Q)=L_{\mathrm{axf}}(\tilde Q)\,S$. Two instances: for $\natural$, $S=D$, and (21) is the identity, holding for <strong>central</strong> $\tilde Q$, the fixed space of $\natural$; for $\ast$, $S=D\overline{(\cdot)}$, and $D\,\overline{R_{\mathrm{axf}}(\tilde Q)}=L_{\mathrm{axf}}(\tilde Q)D$ holds for <strong>Hermitian</strong> $\tilde Q$, the fixed space $\mathbb{B}_{\Psi}$ of $\ast$. Neither holds off its fixed space, and the error the parent article warns about is the substitution of a fixed-space identity for a general one: in the frame it is the claim that two matrices with visibly different entries are equal.</p>
+<p><strong>Why the transport cannot be dropped.</strong> In (18) the parameter on the right is $\tilde Q^{\natural}$ and the parameter on the left is $\tilde Q$. An identity written with the same parameter on both sides would read $R_{\mathrm{axf}}(\tilde Q)=DL_{\mathrm{axf}}(\tilde Q)D$, and by (5) that would say $\sum_kQ_kT_k=-\sum_kQ_kS_k$ for all $\tilde Q$, which fails for every noncentral parameter: in the frame it is a sign error in the vector block, visible in (21) against (2).</p>
+<h2 id="step-eight-the-general-complex-linear-reversal-c8">Step Eight: The General Complex-Linear Reversal (C8)</h2>
+<p><strong>The matrix of $\tau_U$.</strong> Let $U$ be invertible and $\tau_U(x)=U\natural(x)U^{-1}$. As a composite it is $\mathrm{Ad}_U\circ\natural$, and $\mathrm{Ad}_U$ has matrix $L_{\mathrm{axf}}(U)R_{\mathrm{axf}}(U)^{-1}$, since $x\mapsto UxU^{-1}$ is a left multiplication followed by a right multiplication by $U^{-1}$. Hence</p>
+<p>$$
+S_U=L_{\mathrm{axf}}(U)\,R_{\mathrm{axf}}(U)^{-1}\,D .
+\tag{39}
+$$</p>
+<p><strong>$\tau_U$ is a reversal.</strong> The inner automorphism preserves the order, $\natural$ reverses it, and the composite reverses it. In the frame the property is a check on the sixteen basis pairs: the column of $\tau_U(xy)$ must equal $L_{\mathrm{axf}}(\tau_U x)\,[\tau_U y]$, which is the column of $\tau_U(y)\tau_U(x)$.</p>
+<p><strong>$\tau_U$ is not an involution in general.</strong> Squaring (39) and using $D^{2}=\mathrm I_4$ together with (18) twice,</p>
+<p>$$
+S_U^{2}
+=L_{\mathrm{axf}}(U)R_{\mathrm{axf}}(U)^{-1}\,D\,L_{\mathrm{axf}}(U)R_{\mathrm{axf}}(U)^{-1}\,D
+=L_{\mathrm{axf}}(V)\,R_{\mathrm{axf}}(V)^{-1},
+\qquad V=U\natural(U)^{-1},
+\tag{40}
+$$</p>
+<p>which is the matrix of the inner automorphism $x\mapsto VxV^{-1}$. That automorphism is the identity exactly when $V$ is central, and $U=\lambda\natural(U)$ forces $\lambda^{2}=1$; so</p>
+<p>$$
+\tau_U^{2}=\mathrm{id}\iff\natural(U)=\pm U
+\iff U\ \text{is central or pure vector}.
+$$</p>
+<p><strong>Reading the same display.</strong> Since $S_U=D$ is the same statement as $L_{\mathrm{axf}}(U)=R_{\mathrm{axf}}(U)$, the switch is the matrix of $\tau_U$ exactly when $U$ is central, by (38). Every other choice of $U$ gives a matrix that is a genuine word in a left matrix, an inverse and the switch, and no cheaper. The corpus chooses $U=e_t$, and the choice is what makes the switch a sign matrix and the whole correspondence concrete.</p>
+<h2 id="why-it-works">Why It Works</h2>
+<p><strong>The argument in one paragraph.</strong> The left and right displays of one element share their diagonal, and the diagonal carries the scalar coordinate, the centre; they differ in the three-by-three vector block, which is where the order of the two factors of a product is visible. The three vector units are antisymmetric matrices, so the block changes sign under transposition, and the three-by-three structure is exhausted by that fact. The reversal $\natural$ is the map that negates exactly the vector coordinates, so its matrix is the diagonal sign matrix $D$; conjugating by $D$ negates exactly the vector block. Transposition is the same operation read on the array, reversal is the same operation read on the algebra, and transport is the same operation read on the parameter. <strong>Three readings of one sign change.</strong></p>
+<p><strong>What the reader should retain.</strong> The identity $R_{\mathrm{axf}}(\tilde Q)=D\,L_{\mathrm{axf}}(\tilde Q^{\natural})\,D$ is the statement that a right multiplication is a left multiplication whose parameter has had its vector part reversed, written in the frame where that reversal is a diagonal sign matrix. Everything else follows from that single line and from $D^{2}=\mathrm I_4$.</p>
+<h2 id="summary-claim-matrix-identity-proof">Summary: Claim, Matrix Identity, Proof</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>claim</th>
+<th>matrix identity</th>
+<th>proof</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>C1, $\tau=\natural$</td>
+<td>$D\,L_{\mathrm{axf}}(\tilde Q)\,D=R_{\mathrm{axf}}(\tilde Q^{\natural})$</td>
+<td>(21), (22)</td>
+</tr>
+<tr>
+<td>C1, $\tau=\ast$</td>
+<td>$D\,\overline{L_{\mathrm{axf}}(\tilde Q)}\,D=R_{\mathrm{axf}}(\tilde Q^{*})$</td>
+<td>(28), (29)</td>
+</tr>
+<tr>
+<td>C2</td>
+<td>$R_{\mathrm{axf}}(\tilde Q)=D\,L_{\mathrm{axf}}(\tilde Q^{\natural})\,D$</td>
+<td>(18)</td>
+</tr>
+<tr>
+<td>C2, two sides</td>
+<td>$L_{\mathrm{axf}}(\tilde P)R_{\mathrm{axf}}(\tilde Q)=L_{\mathrm{axf}}(\tilde P\tilde Q)$</td>
+<td>(34)</td>
+</tr>
+<tr>
+<td>C3</td>
+<td>$D\bigl(L_{\mathrm{axf}}\cdot R_{\mathrm{axf}}\bigr)D=R_{\mathrm{axf}}\cdot L_{\mathrm{axf}}$ with both parameters transported</td>
+<td>Step Three</td>
+</tr>
+<tr>
+<td>C4</td>
+<td>$L_{\mathrm{axf}}-R_{\mathrm{axf}}=2[\vec Q]_{\times}$ in the vector block</td>
+<td>(38)</td>
+</tr>
+<tr>
+<td>C5</td>
+<td>$\tau(\tilde Q)=\tilde Q$ gives $S\,R_{\mathrm{axf}}(\tilde Q)=L_{\mathrm{axf}}(\tilde Q)\,S$</td>
+<td>Step Seven</td>
+</tr>
+<tr>
+<td>C6</td>
+<td>$R_{\mathrm{axf}}(\tilde Q_1)R_{\mathrm{axf}}(\tilde Q_2)=DL_{\mathrm{axf}}(\tilde Q_1^{\natural}\tilde Q_2^{\natural})D=R_{\mathrm{axf}}(\tilde Q_2\tilde Q_1)$</td>
+<td>Step Six</td>
+</tr>
+<tr>
+<td>C7</td>
+<td>$\{S_\mu T_\nu\}$ is a basis of $M_4(\mathbb{C})$, and $T_\nu=DS_\nu D$</td>
+<td>Step Six</td>
+</tr>
+<tr>
+<td>C8</td>
+<td>$S_U=L_{\mathrm{axf}}(U)R_{\mathrm{axf}}(U)^{-1}D$, with $S_U^{2}$ inner by $U\natural(U)^{-1}$</td>
+<td>(39), (40)</td>
+</tr>
+<tr>
+<td>C9</td>
+<td>$\overline{L_{\mathrm{axf}}(\tilde Q)}=L_{\mathrm{axf}}(\bar{\tilde Q})$, still a left matrix</td>
+<td>(26)</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="verification">Verification</h2>
+<p><strong>The checks.</strong> Every display of this article was recomputed against an explicit implementation of the algebra in the axis-free frame, on random parameters with complex coordinates, and on the basis and the fixed spaces. The script was written outside the repository and deleted.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>claim</th>
+<th>check</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$L_{\mathrm{axf}}(\tilde Q_1\tilde Q_2)=L_{\mathrm{axf}}(\tilde Q_1)L_{\mathrm{axf}}(\tilde Q_2)$</td>
+<td>exact, all basis pairs</td>
+</tr>
+<tr>
+<td>$S_k$ and $T_k$ are antisymmetric, $S_k^{2}=T_k^{2}=-\mathrm I_4$</td>
+<td>exact</td>
+</tr>
+<tr>
+<td>$L_{\mathrm{axf}}(\tilde Q)^{\mathsf T}=L_{\mathrm{axf}}(\tilde Q^{\natural})$, same on the right</td>
+<td>exact, $50$ random parameters</td>
+</tr>
+<tr>
+<td>$D\,L_{\mathrm{axf}}(\tilde Q)^{\mathsf T}D=R_{\mathrm{axf}}(\tilde Q)$</td>
+<td>exact, $50$ random parameters</td>
+</tr>
+<tr>
+<td>$D\,L_{\mathrm{axf}}(\tilde Q)\,D=R_{\mathrm{axf}}(\tilde Q^{\natural})$</td>
+<td>exact, $50$ random parameters</td>
+</tr>
+<tr>
+<td>$D\,R_{\mathrm{axf}}(\tilde Q)\,D=L_{\mathrm{axf}}(\tilde Q^{\natural})$</td>
+<td>exact, $50$ random parameters</td>
+</tr>
+<tr>
+<td>$D\,S_k\,D=-T_k$</td>
+<td>exact, three directions</td>
+</tr>
+<tr>
+<td>$D\,\overline{L_{\mathrm{axf}}(\tilde Q)}\,D=R_{\mathrm{axf}}(\tilde Q^{*})$</td>
+<td>exact, $50$ random parameters</td>
+</tr>
+<tr>
+<td>$\overline{L_{\mathrm{axf}}(\tilde Q)}=L_{\mathrm{axf}}(\bar{\tilde Q})$</td>
+<td>exact</td>
+</tr>
+<tr>
+<td>$L(\tilde Q)^{\dagger}=L(\tilde Q^{*})$</td>
+<td>exact</td>
+</tr>
+<tr>
+<td>$\natural$ reverses the product on the sixteen basis pairs</td>
+<td>$16/16$</td>
+</tr>
+<tr>
+<td>$\bar{\cdot}$ fails to reverse the product</td>
+<td>$6$ failures: $xy,xz,yx,yz,zx,zy$</td>
+</tr>
+<tr>
+<td>$L_{\mathrm{axf}}(\tilde Q)=R_{\mathrm{axf}}(\tilde Q)$ iff $\vec Q=0$</td>
+<td>$50$ random parameters</td>
+</tr>
+<tr>
+<td>$D\,R_{\mathrm{axf}}(\tilde Q)\,D=L_{\mathrm{axf}}(\tilde Q)$ for central $\tilde Q$</td>
+<td>exact</td>
+</tr>
+<tr>
+<td>$D\,\overline{R_{\mathrm{axf}}(\tilde Q)}=L_{\mathrm{axf}}(\tilde Q)D$ for Hermitian $\tilde Q$</td>
+<td>$40$ random Hermitian parameters; none off the fixed space</td>
+</tr>
+<tr>
+<td>the sixteen $S_\mu T_\nu$ are signed permutation matrices, of rank $16$</td>
+<td>exact</td>
+</tr>
+<tr>
+<td>$D$ lies in neither $\mathbb{B}_L$ nor $\mathbb{B}_R$</td>
+<td>exact</td>
+</tr>
+<tr>
+<td>$S_U L_{\mathrm{axf}}(\tilde Q)S_U^{-1}=R_{\mathrm{axf}}(\tau_U\tilde Q)$</td>
+<td>$20$ random pairs $(U,\tilde Q)$</td>
+</tr>
+<tr>
+<td>$S_U^{2}=\mathrm I_4$ iff $U$ is central or pure vector</td>
+<td>$20$ random pairs $(U,\tilde Q)$</td>
+</tr>
+<tr>
+<td>trace and determinant of $L_{\mathrm{axf}}$ and $R_{\mathrm{axf}}$</td>
+<td>$4Q_t$ and $\langle\tilde Q\rangle_{\natural}^{2}$, both families</td>
+</tr>
+</tbody>
+</table></div>
+      </div>
+    </main>
+  </div>
+</body>
+</html>
