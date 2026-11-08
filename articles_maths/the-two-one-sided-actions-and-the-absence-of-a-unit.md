@@ -9,7 +9,7 @@ $$
 \tilde Q_1 \star \tilde Q_2 = \tilde Q_1^{\natural}\tilde Q_2^{*} ,
 $$
 
-is the subject of this group. The rule, the scalar–vector form and the place of the product among the four are *The Four General Products and Their Relations over the Biquaternion Algebra* §*The General Quaternionic Sesquilinear Product*; the sesqualgebra it defines, its multiplication table and its two actions of the unit are *Introduction to the General Quaternionic Sesqualgebra*. The symbols are those of the group: ${}^{\natural}$ is the natural conjugation $\tilde Q^{\natural} = Q_t - \vec Q$, ${}^{*}$ is the star conjugation $\tilde Q^{*} = \overline{Q_t} - \overline{\vec Q}$, the bar is the coefficientwise complex conjugation, and $\vec Q = \sum_k Q_k \vec e_k$ is the vector part.
+is the subject of this group. The rule, the scalar–vector form and the place of the product among the four are *The Four General Products and Their Relations over the Biquaternion Algebra* §*The General Quaternionic Sesquilinear Product*; the sesqualgebra it defines, its multiplication table and its two actions of the unit are *Introduction to the General Quaternionic Sesqualgebra*. The symbols are those of the group: ${}^{\natural}$ is the quaternion conjugation $\tilde Q^{\natural} = Q_t - \vec Q$, ${}^{*}$ is the star conjugation $\tilde Q^{*} = \overline{Q_t} - \overline{\vec Q}$, the bar is the coefficientwise complex conjugation, and $\vec Q = \sum_k Q_k \vec e_k$ is the vector part.
 
 The subject of this article is the pair of **one-sided actions of the unit candidate** $e_t$, and the fact that they are not the identity but the two conjugations of the algebra:
 
@@ -31,11 +31,11 @@ $$
 \boxed{\; e_t \star \tilde Q = \tilde Q^{*} \;}.
 $$
 
-**Proof.** By the rule, $e_t \star \tilde Q = e_t^{\natural}\tilde Q^{*}$. The natural conjugation fixes the identity, $e_t^{\natural} = e_t$, and $e_t$ is the unit of the plain product, so $e_t^{\natural}\tilde Q^{*} = \tilde Q^{*}$.
+**Proof.** By the rule, $e_t \star \tilde Q = e_t^{\natural}\tilde Q^{*}$. The quaternion conjugation fixes the identity, $e_t^{\natural} = e_t$, and $e_t$ is the unit of the plain product, so $e_t^{\natural}\tilde Q^{*} = \tilde Q^{*}$.
 
 **Remark.** The left action of the unit candidate is therefore not the identity but the star conjugation, which is conjugate-linear: $e_t \star (\lambda \tilde Q) = (\lambda\tilde Q)^{*} = \bar\lambda\,\tilde Q^{*} = \bar\lambda\,(e_t \star \tilde Q)$. This one computation already rules out a left unit, and it is the operator-level form of the second scalar rule of the category applied at $e_t$.
 
-### The Right Action Is the Natural Conjugation
+### The Right Action Is the Quaternion Conjugation
 
 **Proposition (the right action).** For every biquaternion $\tilde Q$,
 
@@ -45,7 +45,7 @@ $$
 
 **Proof.** By the rule, $\tilde Q \star e_t = \tilde Q^{\natural} e_t^{*}$. The star conjugation fixes the identity, $e_t^{*} = e_t$, so $\tilde Q^{\natural}e_t^{*} = \tilde Q^{\natural}$.
 
-**Remark.** The right action is the natural conjugation, which is $\mathbb{C}$-linear: $\tilde Q \star (\lambda e_t) = (\lambda e_t)^{\natural} = \lambda\,\tilde Q^{\natural} = \lambda\,(\tilde Q \star e_t)$. The two actions are thus a conjugate-linear one on the left and a linear one on the right, and they are the two conjugations of the group of involutions (*The Group of Involutions*, *The Involutions of a Sesqualgebra*).
+**Remark.** The right action is the quaternion conjugation, which is $\mathbb{C}$-linear: $\tilde Q \star (\lambda e_t) = (\lambda e_t)^{\natural} = \lambda\,\tilde Q^{\natural} = \lambda\,(\tilde Q \star e_t)$. The two actions are thus a conjugate-linear one on the left and a linear one on the right, and they are the two conjugations of the group of involutions (*The Group of Involutions*, *The Involutions of a Sesqualgebra*).
 
 ### Both Actions Are Involutions
 
@@ -123,7 +123,7 @@ The general theory asks whether a sesquilinear product is the **derived operatio
 
 ### The Isotope Interpretation
 
-**Corollary.** The product is the **isotope** of the derived operation by the natural conjugation,
+**Corollary.** The product is the **isotope** of the derived operation by the quaternion conjugation,
 
 $$
 \boxed{\; \tilde Q_1 \star \tilde Q_2 = {}^{\natural}(\tilde Q_1)\,\tilde Q_2^{*} = \tilde Q_1^{\natural}\tilde Q_2^{*} \;},
@@ -150,7 +150,7 @@ The remarkable subspaces are the centre $\mathbb{B}_{C}$, the vector subspace $\
 | $\mathbb{B}_{\Psi}$ | identity | $\tilde Q \mapsto \tilde Q^{\natural}$ |
 | $\mathbb{B}_{\Phi}$ | $-\mathrm{id}$ | $\tilde Q \mapsto \tilde Q^{\natural}$ |
 
-**Proof.** The left column is the star conjugation, $Q^{*}_t = \overline{Q_t}$ and $Q^{*}_k = -\overline{Q_k}$; the right column is the natural conjugation, $\tilde Q^{\natural} = Q_t - \vec Q$.
+**Proof.** The left column is the star conjugation, $Q^{*}_t = \overline{Q_t}$ and $Q^{*}_k = -\overline{Q_k}$; the right column is the quaternion conjugation, $\tilde Q^{\natural} = Q_t - \vec Q$.
 
 - On the centre, $\vec Q = 0$, so ${}^{*}$ is the coefficientwise conjugation of the single coordinate and ${}^{\natural}$ fixes the element.
 - On the vector subspace, $Q_t = 0$, so ${}^{*}$ sends $\vec Q$ to $-\overline{\vec Q}$ and ${}^{\natural}$ sends it to $-\vec Q$.
@@ -159,7 +159,7 @@ The remarkable subspaces are the centre $\mathbb{B}_{C}$, the vector subspace $\
 - On the Hermitian subspace, ${}^{*}$ is the identity by definition, and ${}^{\natural}$ fixes the real scalar coordinate and negates the imaginary vector coordinate, $\tilde Q = a_t + i\vec p \mapsto a_t - i\vec p$, which stays in $\mathbb{B}_{\Psi}$.
 - On the anti-Hermitian subspace, ${}^{*}$ is $-\mathrm{id}$ by definition, and ${}^{\natural}$ fixes the imaginary scalar coordinate and negates the real vector coordinate, $\tilde Q = i b_t + \vec q \mapsto i b_t - \vec q$, which stays in $\mathbb{B}_{\Phi}$.
 
-**Remark.** Two entries are the identity, and each is instructive. The left action is the identity on the Hermitian subspace, because that is the fixed space of ${}^{*}$; the right action is the identity on the centre, because the natural conjugation does not touch a scalar element; and no action is the identity on all of $\mathbb{B}$, which is the absence of a unit in its subspace form. The table also shows where the two actions agree, on $\mathbb{B}_{H}$, and where they differ by a sign, on $\mathbb{B}_{iH}$ and on $\mathbb{B}_{\Psi}$ and $\mathbb{B}_{\Phi}$.
+**Remark.** Two entries are the identity, and each is instructive. The left action is the identity on the Hermitian subspace, because that is the fixed space of ${}^{*}$; the right action is the identity on the centre, because the quaternion conjugation does not touch a scalar element; and no action is the identity on all of $\mathbb{B}$, which is the absence of a unit in its subspace form. The table also shows where the two actions agree, on $\mathbb{B}_{H}$, and where they differ by a sign, on $\mathbb{B}_{iH}$ and on $\mathbb{B}_{\Psi}$ and $\mathbb{B}_{\Phi}$.
 
 ## The Unit Candidate as an Idempotent
 
@@ -181,7 +181,7 @@ $$
 
 The left action conjugates the norm and the right action preserves it; both preserve its modulus $\lvert N\rvert$ and hence the zero-divisor cone $\{N = 0\}$.
 
-**Proof.** The norm is multiplicative for the plain product with $\langle e_t\rangle_{\natural} = 1$; it is invariant under the natural conjugation, $\langle\tilde Q^{\natural}\rangle_{\natural} = \langle\tilde Q\rangle_{\natural}$, because ${}^{\natural}$ negates an even number of coordinates with the square; and it transforms by the coefficientwise conjugation under ${}^{*}$, $\langle\tilde Q^{*}\rangle_{\natural} = \overline{\langle\tilde Q\rangle_{\natural}}$, because ${}^{*}$ conjugates each coordinate and $N$ is a quadratic form in the coordinates with real coefficients. The two actions are ${}^{*}$ and ${}^{\natural}$.
+**Proof.** The norm is multiplicative for the plain product with $\langle e_t\rangle_{\natural} = 1$; it is invariant under the quaternion conjugation, $\langle\tilde Q^{\natural}\rangle_{\natural} = \langle\tilde Q\rangle_{\natural}$, because ${}^{\natural}$ negates an even number of coordinates with the square; and it transforms by the coefficientwise conjugation under ${}^{*}$, $\langle\tilde Q^{*}\rangle_{\natural} = \overline{\langle\tilde Q\rangle_{\natural}}$, because ${}^{*}$ conjugates each coordinate and $N$ is a quadratic form in the coordinates with real coefficients. The two actions are ${}^{*}$ and ${}^{\natural}$.
 
 **Remark.** The two transforms are the numerical trace of the two parities of the actions: the conjugate-linear action conjugates the quadratic form and the linear action fixes it, and the composite, the coefficientwise conjugation, is the Galois action of $\mathbb{C}$ over $\mathbb{R}$ that distinguishes them. The preservation of the modulus is the reason the two actions are symmetries of the zero-divisor cone $N = 0$, the set on which the element theory of the product is read, and it is why an element and its two conjugates are zero divisors together.
 
@@ -192,7 +192,7 @@ The left action conjugates the norm and the right action preserves it; both pres
 With no unit, the derived vocabulary of an algebra has to be replaced, and the group names the replacements as they are used.
 
 - **The group of units** does not exist for the multiplication; the algebra's group of units is a different group, belonging to the plain product, and is the subject of *Peirce Decompositions of the Biquaternion Algebra*. The elements of the multiplication that are units of the algebra are distinguished by the norm, and for the idempotents this is *Square Roots of One and the Idempotents of the General Quaternionic Sesqualgebra*.
-- **The inverse** is replaced by the involution: the closest substitute for an inverse, given that $\tilde Q\tilde Q^{\natural} = \langle\tilde Q\rangle_{\natural}e_t$ and the product twists each slot by a conjugation, is the operation of the two conjugations themselves. Each nontrivial idempotent, for example, has inverse its own natural conjugate in the algebra, $\tilde\Pi^{-1} = \tilde\Pi^{\natural}$, although that inverse is not an inverse of the multiplication.
+- **The inverse** is replaced by the involution: the closest substitute for an inverse, given that $\tilde Q\tilde Q^{\natural} = \langle\tilde Q\rangle_{\natural}e_t$ and the product twists each slot by a conjugation, is the operation of the two conjugations themselves. Each nontrivial idempotent, for example, has inverse its own quaternion conjugate in the algebra, $\tilde\Pi^{-1} = \tilde\Pi^{\natural}$, although that inverse is not an inverse of the multiplication.
 - **One-sided identities** are not available, and the binary structure has to be replaced by the **ternary product**, which is the later article of this group *The Ternary Product and the Failure of the Jordan Triple Identity*. The definition of that ternary product, $\{ \tilde Q_1,\tilde Q_2,\tilde Q_3 \} = (\tilde Q_1 \star \tilde Q_2) \star \tilde Q_3^{*}$, itself uses the star conjugation in the third slot, so the involution that obstructs the unit is the involution that builds the ternary structure.
 - **The left multiplications** do not form a monoid, and the composition laws are the later article *The Left and Right Multiplications of the General Quaternionic Sesquilinear Product*; the present article supplies the negative statement that makes those laws necessary.
 
@@ -213,7 +213,7 @@ With no unit, the derived vocabulary of an algebra has to be replaced, and the g
 
 ## Summary
 
-The two one-sided actions of $e_t$ under the general quaternionic sesquilinear multiplication $\tilde Q_1 \star \tilde Q_2 = \tilde Q_1^{\natural}\tilde Q_2^{*}$ are the two conjugations of the algebra: the left action is the star, $e_t \star \tilde Q = \tilde Q^{*}$, and the right action is the natural conjugation, $\tilde Q \star e_t = \tilde Q^{\natural}$. Both actions are involutions of $\mathbb{B}$, they commute, and together with the identity and their composite, the coefficientwise conjugation, they form the group of involutions, the Klein four-group. Their consequence is that the multiplication has no unit on either side: a left-unit candidate is forced by the right action to $e_t$ and then rejected by the left action at $\vec e_x$, and a right-unit candidate is forced by the left action to $e_t$ and then rejected by the right action at $\vec e_x$; hence there is no two-sided unit, no inverse and no group of units of the multiplication, and the group of units of the algebra is a different group belonging to the plain product. On the derived-operation test the first row of the multiplication is the star conjugation, which satisfies condition (i) and fails condition (ii), so the multiplication is the isotope of the derived operation by the natural conjugation and not the derived operation itself. On the remarkable subspaces the two actions restrict to the coefficientwise conjugation, the negation with a conjugation, the quaternionic conjugation, a sign, the identity and a reflection, and no one of them is the identity on all of $\mathbb{B}$. The unit candidate is itself the trivial idempotent of the multiplication, $e_t \star e_t = e_t$, and its two actions transform the norm by the character of their parity, $\langle e_t \star \tilde Q\rangle_{\natural} = \overline{\langle\tilde Q\rangle_{\natural}}$ and $\langle\tilde Q \star e_t\rangle_{\natural} = \langle\tilde Q\rangle_{\natural}$, so that both preserve the modulus and the zero-divisor cone.
+The two one-sided actions of $e_t$ under the general quaternionic sesquilinear multiplication $\tilde Q_1 \star \tilde Q_2 = \tilde Q_1^{\natural}\tilde Q_2^{*}$ are the two conjugations of the algebra: the left action is the star, $e_t \star \tilde Q = \tilde Q^{*}$, and the right action is the quaternion conjugation, $\tilde Q \star e_t = \tilde Q^{\natural}$. Both actions are involutions of $\mathbb{B}$, they commute, and together with the identity and their composite, the coefficientwise conjugation, they form the group of involutions, the Klein four-group. Their consequence is that the multiplication has no unit on either side: a left-unit candidate is forced by the right action to $e_t$ and then rejected by the left action at $\vec e_x$, and a right-unit candidate is forced by the left action to $e_t$ and then rejected by the right action at $\vec e_x$; hence there is no two-sided unit, no inverse and no group of units of the multiplication, and the group of units of the algebra is a different group belonging to the plain product. On the derived-operation test the first row of the multiplication is the star conjugation, which satisfies condition (i) and fails condition (ii), so the multiplication is the isotope of the derived operation by the quaternion conjugation and not the derived operation itself. On the remarkable subspaces the two actions restrict to the coefficientwise conjugation, the negation with a conjugation, the quaternionic conjugation, a sign, the identity and a reflection, and no one of them is the identity on all of $\mathbb{B}$. The unit candidate is itself the trivial idempotent of the multiplication, $e_t \star e_t = e_t$, and its two actions transform the norm by the character of their parity, $\langle e_t \star \tilde Q\rangle_{\natural} = \overline{\langle\tilde Q\rangle_{\natural}}$ and $\langle\tilde Q \star e_t\rangle_{\natural} = \langle\tilde Q\rangle_{\natural}$, so that both preserve the modulus and the zero-divisor cone.
 
 ## Summary of Notation
 
@@ -221,7 +221,7 @@ The two one-sided actions of $e_t$ under the general quaternionic sesquilinear m
 |---|---|
 | $\tilde Q_1 \star \tilde Q_2 = \tilde Q_1^{\natural}\tilde Q_2^{*}$ | the multiplication of this group |
 | $e_t \star \tilde Q = \tilde Q^{*}$ | the left action of $e_t$, the star conjugation |
-| $\tilde Q \star e_t = \tilde Q^{\natural}$ | the right action of $e_t$, the natural conjugation |
+| $\tilde Q \star e_t = \tilde Q^{\natural}$ | the right action of $e_t$, the quaternion conjugation |
 | $\bar{\cdot} = {}^{\natural} \circ {}^{*}$ | the coefficientwise conjugation, the composite of the two actions |
 | $\{ \mathrm{id}, {}^{\natural}, {}^{*}, \bar{\cdot} \}$ | the group of involutions, the Klein four-group |
 | $\sigma(\tilde Q_2) = e_t \star \tilde Q_2 = \tilde Q_2^{*}$ | the first row of the multiplication |

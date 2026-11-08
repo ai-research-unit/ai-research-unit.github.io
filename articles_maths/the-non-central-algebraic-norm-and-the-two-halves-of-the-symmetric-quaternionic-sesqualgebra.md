@@ -123,7 +123,7 @@ On the algebraic norm $\tilde Q\star\tilde Q$ of an element, the two actions giv
 
 **The two halves at a vector.** $\tilde Q=\vec e_x$: $\tilde Q^{\natural}\tilde Q^{*}=(-\vec e_x)(-\vec e_x)=-e_t$ and $\tilde Q^{*}\tilde Q^{\natural}=(-\vec e_x)(-\vec e_x)=-e_t$; the two orders coincide, the difference vanishes, and the algebraic norm is $-e_t$.
 
-**Coincident and opposite orders.** $\tilde Q=2e_t+i\vec e_x$: $\tilde Q^{\natural}=2e_t-i\vec e_x$ and $\tilde Q^{*}=2e_t+i\vec e_x$ (the coefficientwise conjugation sends $Q_t$ to $2$ and $Q_x$ to $-i$, and the natural conjugation restores the vector coefficient to $+i$), so the first order is $(2e_t-i\vec e_x)(2e_t+i\vec e_x)=3e_t$ and the second is $(2e_t+i\vec e_x)(2e_t-i\vec e_x)=3e_t$; the two orders coincide, and the algebraic norm is the central value $3e_t$ read in the earlier example. For the pair $\tilde Q_1=\vec e_y$, $\tilde Q_2=\vec e_x$ the two orders are opposite, $-\vec e_z$ and $\vec e_z$, and their sum vanishes.
+**Coincident and opposite orders.** $\tilde Q=2e_t+i\vec e_x$: $\tilde Q^{\natural}=2e_t-i\vec e_x$ and $\tilde Q^{*}=2e_t+i\vec e_x$ (the coefficientwise conjugation sends $Q_t$ to $2$ and $Q_x$ to $-i$, and the quaternion conjugation restores the vector coefficient to $+i$), so the first order is $(2e_t-i\vec e_x)(2e_t+i\vec e_x)=3e_t$ and the second is $(2e_t+i\vec e_x)(2e_t-i\vec e_x)=3e_t$; the two orders coincide, and the algebraic norm is the central value $3e_t$ read in the earlier example. For the pair $\tilde Q_1=\vec e_y$, $\tilde Q_2=\vec e_x$ the two orders are opposite, $-\vec e_z$ and $\vec e_z$, and their sum vanishes.
 
 ## Summary
 

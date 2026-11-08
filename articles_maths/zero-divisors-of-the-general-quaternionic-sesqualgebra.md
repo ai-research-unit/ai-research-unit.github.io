@@ -36,7 +36,7 @@ $$
 
 and its vanishing is the zero-divisor criterion of the general plain algebra (*Zero Divisors of the
 General Plain Algebra*). The product is $\tilde Q_1\star\tilde Q_2 = \tilde Q_1^{\natural}\tilde Q_2^{*}$,
-with the natural conjugation ${}^{\natural}$ in the first slot and the star ${}^{*}$ in the second;
+with the quaternion conjugation ${}^{\natural}$ in the first slot and the star ${}^{*}$ in the second;
 the juxtaposition $\tilde Q_1\tilde Q_2$ is the general plain bilinear product, the multiplication of
 the algebra.
 
@@ -73,7 +73,7 @@ bijection, so the existence of a nonzero $\tilde Q_2$ with $\tilde Q\star\tilde 
 existence of a nonzero $\tilde Q_1$ with $\tilde Q^{\natural}\tilde Q_1 = 0$, that is,
 $\tilde Q^{\natural}$ is a left zero divisor of the plain product, with $\tilde Q_1 = \tilde Q_2^{*}$.
 The zero-divisor criterion of the plain algebra says that this happens exactly when
-$C(\tilde Q^{\natural}) = 0$, and the natural conjugation keeps the three vector squares and the
+$C(\tilde Q^{\natural}) = 0$, and the quaternion conjugation keeps the three vector squares and the
 scalar square, so $C(\tilde Q^{\natural}) = Q_t^2 + \sum_k Q_k^2 = C(\tilde Q)$. The left statement
 follows; the right statement is the same computation with $\tilde Q_2^{\natural}\tilde Q^{*} = 0$,
 which for varying $\tilde Q_2$ says that $\tilde Q^{*}$ is a right zero divisor of the plain product;

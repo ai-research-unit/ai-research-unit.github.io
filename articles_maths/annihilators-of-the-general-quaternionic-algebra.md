@@ -18,9 +18,9 @@ $$
 \tilde Q_1\star\tilde Q_2=\tilde Q_1^{\natural}\tilde Q_2
 =\bigl[Q_{1t}Q_{2t}+(\vec Q_1,\vec Q_2)\bigr]+Q_{1t}\vec Q_2-Q_{2t}\vec Q_1-\vec Q_1\times\vec Q_2,
 $$
-the product of the natural conjugate of the first factor with the second (*Introduction to the
+the product of the quaternion conjugate of the first factor with the second (*Introduction to the
 General Quaternionic Algebra of Biquaternions*). It is neither commutative nor alternating, and yet
-a two-sided involution ties the two sides: the natural conjugation is a $\mathbb{C}$-linear
+a two-sided involution ties the two sides: the quaternion conjugation is a $\mathbb{C}$-linear
 anti-automorphism of order two, so it carries the right annihilator
 $\{\tilde Q_2:\tilde Q_2^{\natural}\tilde Q_1=0\}$ onto the left annihilator
 $\{\tilde Q_1^{\natural}\tilde Q_2=0\}$, and the two annihilators of an element coincide. The
@@ -29,7 +29,7 @@ article owns that reading, the operator with its rank, and the shape of the anni
 remarkable subspaces; the zero-divisor set and its comparison with the other three general products
 are the cited article's.
 
-**The results.** The left and the right annihilator of an element coincide for **every** element of $\mathbb{B}$, unit or zero divisor alike, because the natural conjugation is a $\mathbb{C}$-linear anti-automorphism of order two; the quaternionic product is the one general product whose annihilators are not exchanged but equal. The multiplication operator $L_{\tilde Q_1}$ has trace $4Q_{1t}$ and determinant $C(\tilde Q_1)^{2}$ with $C(\tilde Q_1)=\sum_\mu Q_{1\mu}^{2}$: it is invertible off the zero-divisor cone, while on the cone it has rank two and a kernel of complex dimension two. The common annihilator is therefore $\{0\}$ off the cone and a complex plane on it, and the plane contains the element itself. Each section below states its result first and then proves it.
+**The results.** The left and the right annihilator of an element coincide for **every** element of $\mathbb{B}$, unit or zero divisor alike, because the quaternion conjugation is a $\mathbb{C}$-linear anti-automorphism of order two; the quaternionic product is the one general product whose annihilators are not exchanged but equal. The multiplication operator $L_{\tilde Q_1}$ has trace $4Q_{1t}$ and determinant $C(\tilde Q_1)^{2}$ with $C(\tilde Q_1)=\sum_\mu Q_{1\mu}^{2}$: it is invertible off the zero-divisor cone, while on the cone it has rank two and a kernel of complex dimension two. The common annihilator is therefore $\{0\}$ off the cone and a complex plane on it, and the plane contains the element itself. Each section below states its result first and then proves it.
 
 ## The Annihilator of a Product
 
@@ -52,19 +52,19 @@ $$
 L_{\tilde Q_1}\tilde Q_2=\tilde Q_1\star\tilde Q_2=\tilde Q_1^{\natural}\tilde Q_2,\qquad
 R_{\tilde Q_1}\tilde Q_2=\tilde Q_2\star\tilde Q_1=\tilde Q_2^{\natural}\tilde Q_1,
 $$
-a multiplication by the natural conjugate. The block is the sibling of the **general plain
+a multiplication by the quaternion conjugate. The block is the sibling of the **general plain
 algebra**, and the two share the cone and its plane but differ in the coincidence of the two sides.
 
 ## The Two Annihilators Coincide
 
-**For every $\tilde Q_1\in\mathbb{B}$, unit or zero divisor alike, the two annihilators coincide, $B_\star(\tilde Q_1)=A_\star(\tilde Q_1)$, because the natural conjugation is a $\mathbb{C}$-linear anti-automorphism of order two.**
+**For every $\tilde Q_1\in\mathbb{B}$, unit or zero divisor alike, the two annihilators coincide, $B_\star(\tilde Q_1)=A_\star(\tilde Q_1)$, because the quaternion conjugation is a $\mathbb{C}$-linear anti-automorphism of order two.**
 
 **Theorem (the coincidence).** For **every** $\tilde Q_1\in\mathbb{B}$, unit or zero divisor alike,
 $$
 \boxed{\; B_\star(\tilde Q_1)=A_\star(\tilde Q_1) \;}.
 $$
 
-*Proof.* Let $\tilde Q_2\in\mathbb{B}$. Applying the natural conjugation ${}^{\natural}$ to the
+*Proof.* Let $\tilde Q_2\in\mathbb{B}$. Applying the quaternion conjugation ${}^{\natural}$ to the
 equation $\tilde Q_1^{\natural}\tilde Q_2=0$ gives $(\tilde Q_1^{\natural}\tilde Q_2)^{\natural}=0$, which
 is $\tilde Q_2^{\natural}\tilde Q_1=0$ because ${}^{\natural}$ is an anti-automorphism of order two;
 the argument reverses because ${}^{\natural}$ is a bijection of $\mathbb{B}$ onto itself. Hence
@@ -89,7 +89,7 @@ $$
 
 *Proof.* The matrix is the left multiplication matrix of the quaternion $\tilde Q_1^{\natural}$,
 whose determinant is the square of the quaternion norm $C(\tilde Q_1^{\natural})=C(\tilde Q_1)$; the
-natural conjugation keeps the four squares, so the determinant is $C(\tilde Q_1)^{2}$. The trace is
+quaternion conjugation keeps the four squares, so the determinant is $C(\tilde Q_1)^{2}$. The trace is
 the sum of the four diagonal entries, $4Q_{1t}$.
 
 **Corollary (the rank and the annihilator).** The rank of $L_{\tilde Q_1}$ and the annihilator of
@@ -161,7 +161,7 @@ $L_{\vec Q_1}\tilde Q_2=-\vec Q_1\tilde Q_2$ and $C(\tilde Q_1)=(\vec Q_1,\vec Q
 is $\{0\}$ unless the vector part is isotropic, and on the isotropic locus it is the complex plane
 of the elements the pure quaternion $\vec Q_1$ kills by left multiplication.
 
-**The Hermitian and anti-Hermitian subspaces.** On the Hermitian subspace the natural conjugation
+**The Hermitian and anti-Hermitian subspaces.** On the Hermitian subspace the quaternion conjugation
 is the coefficientwise conjugation of the vector part, and the annihilator of a nonzero Hermitian
 zero divisor is again a complex plane; the elements of the annihilator are those killed by the
 Hermitian quaternion, a left ideal of the plain algebra.

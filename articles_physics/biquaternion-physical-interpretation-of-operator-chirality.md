@@ -86,7 +86,7 @@ A left multiplier and a right multiplier never fail to commute. The basis operat
 $$
 \tilde\nabla\tilde{Ξ}_{\mathrm{sp},R}=k_m\tilde{Ξ}_{\mathrm{sp},L},\qquad \tilde\nabla^{\natural}\tilde{Ξ}_{\mathrm{sp},L}=k_m\tilde{Ξ}_{\mathrm{sp},R},
 $$
-in which both operators act by left multiplication: the first by $\tilde\nabla$, the second by its natural conjugate $\tilde\nabla^{\natural}$. The conjugation is what relates the two, and its identity is the one of the mathematics article,
+in which both operators act by left multiplication: the first by $\tilde\nabla$, the second by its quaternion conjugate $\tilde\nabla^{\natural}$. The conjugation is what relates the two, and its identity is the one of the mathematics article,
 $$
 \mathsf C\,L(a^{\natural})\,\mathsf C=R(a),
 $$
@@ -200,7 +200,7 @@ The limit is stated once and it is not small: the two values of the basis operat
 | $L_aR_b$ | the basis operator, $L_aR_b\tilde X=a\tilde Xb$, with a left and a right slot |
 | left slot, right slot, both slots, no single side | operator chirality, the membership in one of the two images |
 | $\tilde\nabla$ | the biquaternion gradient, acting by left multiplication |
-| $\tilde\nabla^{\natural}$ | its natural conjugate, related to the other side by $\mathsf C L(a^{\natural})\mathsf C=R(a)$ |
+| $\tilde\nabla^{\natural}$ | its quaternion conjugate, related to the other side by $\mathsf C L(a^{\natural})\mathsf C=R(a)$ |
 | $u$ | a traceless element with $u^2=-e_t$ |
 | $-iR_u$ | the basis operator that realises the split, a pure right multiplier: an example of the right slot and not the definition |
 | $\tfrac12(\mathrm I\pm iR_u)$ | the two chiral projectors, derived from the sign |

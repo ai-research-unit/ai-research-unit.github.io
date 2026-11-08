@@ -4,7 +4,7 @@
 
 The biquaternion algebra carries one multiplicative norm, the quaternionic norm, the diagonal of the general quaternionic bilinear form. It alone decides invertibility. This article defines it, proves its multiplicative law, and separates the elements of $\mathbb{B}$ into the two cases of its value: the **$\natural$-regular** case of non-zero norm, whose elements are the units of the algebra and form a group, and the **$\natural$-degenerate** case of zero norm, the null cone. This article is the study of this one norm and of its two cases.
 
-**Notation.** An element is $\tilde Q=Q_t e_t+\vec Q$, its natural conjugation is $\tilde Q^{\natural}=Q_t-\vec Q$, and the product of the article is the plain product $\tilde Q_2\tilde Q$ of the algebra, which is associative and has the two-sided unit $e_t$. The norm is $\langle\tilde Q\rangle_{\natural}=\sum_\mu Q_\mu^2$. A biquaternion is **$\natural$-regular** when $\langle\tilde Q\rangle_{\natural}\neq0$ and **$\natural$-degenerate** when $\langle\tilde Q\rangle_{\natural}=0$, the two terms fixed in *The Four Forms and the Four Algebraic Norms over the Biquaternion Algebra*, §*Regular and Degenerate Biquaternions*. The product $\tilde Q_2^{\natural}\tilde Q$ has a left unit and no right unit; it is recorded in one remark in §*The $\natural$-Regular Case*, because only the plain product has a group of units.
+**Notation.** An element is $\tilde Q=Q_t e_t+\vec Q$, its quaternion conjugation is $\tilde Q^{\natural}=Q_t-\vec Q$, and the product of the article is the plain product $\tilde Q_2\tilde Q$ of the algebra, which is associative and has the two-sided unit $e_t$. The norm is $\langle\tilde Q\rangle_{\natural}=\sum_\mu Q_\mu^2$. A biquaternion is **$\natural$-regular** when $\langle\tilde Q\rangle_{\natural}\neq0$ and **$\natural$-degenerate** when $\langle\tilde Q\rangle_{\natural}=0$, the two terms fixed in *The Four Forms and the Four Algebraic Norms over the Biquaternion Algebra*, §*Regular and Degenerate Biquaternions*. The product $\tilde Q_2^{\natural}\tilde Q$ has a left unit and no right unit; it is recorded in one remark in §*The $\natural$-Regular Case*, because only the plain product has a group of units.
 
 ## The Quaternionic Norm
 
@@ -28,7 +28,7 @@ $$
 \langle\tilde Q_2\tilde Q\rangle_{\natural}=\langle\tilde Q_2\rangle_{\natural}\langle\tilde Q\rangle_{\natural}.
 $$
 
-*Proof.* The natural conjugation is an anti-automorphism, so $(\tilde Q_2\tilde Q)^{\natural}=\tilde Q^{\natural}\tilde Q_2^{\natural}$. Then
+*Proof.* The quaternion conjugation is an anti-automorphism, so $(\tilde Q_2\tilde Q)^{\natural}=\tilde Q^{\natural}\tilde Q_2^{\natural}$. Then
 
 $$
 (\tilde Q_2\tilde Q)(\tilde Q_2\tilde Q)^{\natural}
@@ -243,7 +243,7 @@ The $\natural$-degenerate case is the null cone, with the origin at its apex and
 | $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ | the biquaternion algebra |
 | $e_t,\vec e_x,\vec e_y,\vec e_z$ | the basis, $e_t$ the identity |
 | $\tilde Q=Q_t e_t+\vec Q$ | an element and its scalar–vector split |
-| $\tilde Q^{\natural}=Q_t-\vec Q$ | the natural conjugation |
+| $\tilde Q^{\natural}=Q_t-\vec Q$ | the quaternion conjugation |
 | $\tilde Q_2\tilde Q$ | the plain product, associative, with the two-sided unit $e_t$ |
 | $\langle\tilde Q\rangle_{\natural}=\sum_\mu Q_\mu^2$ | the quaternionic norm, written $\langle\tilde Q\rangle_{\natural}$, the only multiplicative one |
 | $\natural$-regular | $\langle\tilde Q\rangle_{\natural}\neq0$; the unit group |

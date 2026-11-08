@@ -92,7 +92,7 @@ The roots of $-1$ fall into three families (*Square Roots of Minus One, Zero and
 | real | $\pm\mu$, $\mu$ unit real | $-\mu$ | $-\mu$ |
 | genuinely complex | $b\mu+d\nu i$, $\mu\perp\nu$, $b^{2}-d^{2}=1$ | $-b\mu-d\nu i$ | $-b\mu+d\nu i$ |
 
-The distinction of the columns is the point of the table: the natural conjugation acts on the quaternion factor alone, while the Hermitian conjugation conjugates the complex coefficients as well, and for the genuinely complex roots the two disagree on the sign of the $d\nu i$ term. The first two families are the **degenerate** roots of the physics companion, and the criterion below singles them out.
+The distinction of the columns is the point of the table: the quaternion conjugation acts on the quaternion factor alone, while the Hermitian conjugation conjugates the complex coefficients as well, and for the genuinely complex roots the two disagree on the sign of the $d\nu i$ term. The first two families are the **degenerate** roots of the physics companion, and the criterion below singles them out.
 
 ### The Character Is $*$-Unitary Exactly for a Skew-Adjoint Root
 
@@ -108,7 +108,7 @@ $$
 
 The proposition is the exact biquaternion form of the classical unitarity of the character, and it is **root-dependent**, which the corpus's own statement of unitarity is not: *Biquaternion Continuous Harmonic Analysis*, §*The Fourier Kernel*, records $\chi_\omega^{\natural}=\chi_\omega^{-1}$ for a pure root, which uses the **natural** conjugation, and this holds for the pure roots — the real and the genuinely complex — while the scalar imaginary is read there as the exception. **The corpus is not wrong.** $\chi_\omega^{\natural}=\chi_\omega^{-1}$ is the correct statement about the norm's conjugation, and it answers a different question from the one asked here: whether the *norm* of the character is the identity, rather than whether the character is $*$-unitary for the conjugation a positive-definite function uses. Read with the Hermitian conjugation, which is that conjugation, the scalar imaginary is not an exception at all — it is one of the two degenerate families for which the character is $*$-unitary.
 
-### The Natural Conjugation Is a Different Statement
+### The Quaternion Conjugation Is a Different Statement
 
 The biquaternion norm of the kernel is the natural square, $\langle \chi_\omega\rangle_{\natural}=\chi_\omega\chi_\omega^{\natural}=(\cos^{2}\theta+\sin^{2}\theta)e_t=e_t$ for every pure root — the real and the genuinely complex — and it is not the identity only for the scalar imaginary. The two unitarity statements must therefore be kept apart:
 
@@ -295,7 +295,7 @@ Bochner's theorem for the biquaternion transform is a theorem about the general 
 
 ## Further Reading
 
-- [Biquaternion Continuous Harmonic Analysis](biquaternion-continuous-harmonic-analysis.html), for the transform, its kernel, the classification of the roots, the two-unit kernel, the vanishing-norm issue, the transform of a measure with the natural conjugation, and the open question answered here.
+- [Biquaternion Continuous Harmonic Analysis](biquaternion-continuous-harmonic-analysis.html), for the transform, its kernel, the classification of the roots, the two-unit kernel, the vanishing-norm issue, the transform of a measure with the quaternion conjugation, and the open question answered here.
 - [Biquaternion Discrete Harmonic Analysis](biquaternion-discrete-harmonic-analysis.html), for the discrete transform, the sampling theorem and the discrete form of the same positivity statement.
 - [The Four Forms and the Four Algebraic Norms over the Biquaternion Algebra](the-four-forms-and-the-four-algebraic-norms-over-the-biquaternion-algebra.html), for the four pairings, $\langle\tilde Q_1,\tilde Q_2\rangle_{*}$ among them, and their conjugations.
 - [Positivity and the Hermitian Cone of the Biquaternion Algebra with Hermitian Adjoint](positivity-and-the-hermitian-cone-of-the-biquaternion-algebra-with-hermitian-adjoint.html), for the positivity of the Hermitian conjugation and the cone $P=\{\tilde Q\tilde Q^{*}\}$.

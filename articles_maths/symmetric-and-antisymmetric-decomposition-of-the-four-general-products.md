@@ -10,7 +10,7 @@ The article assumes the four general products from *The Four General Products an
 
 Throughout, the element $\tilde Q_1 = Q_{1t} + \vec Q_1$ separates the complex scalar part $Q_{1t}$ from the complex vector part $\vec Q_1 = Q_{1x}\vec e_x+Q_{1y}\vec e_y+Q_{1z}\vec e_z$; $\overline{\vec Q_1}$ is the coefficientwise conjugate of the vector part, $(\vec Q_1,\vec Q_2)$ the complex bilinear dot product and $\vec Q_1\times\vec Q_2$ the complex bilinear cross product, as in *The Biquaternion Algebra*.
 
-**The operator.** A product is written by its two slots and the conjugation each one carries. The first slot is read as it stands or through the natural conjugation, which separates the plain family from the quaternionic one; the second as it stands or through the Hermitian conjugation, which separates the bilinear class from the sesquilinear one. A symmetric part is taken with the full dot $\bullet$ and an antisymmetric part with the wedge $\wedge$, and the class of the exchange is carried by the subscript, ${}_{*}$ for the plain sesquilinear product, ${}_{\natural}$ for the quaternionic bilinear one and ${}_{\natural*}$ for the quaternionic sesquilinear one. The twelve are $\tilde Q_1\tilde Q_2$, $\tilde Q_1^{\natural}\tilde Q_2$, $\tilde Q_1\tilde Q_2^{*}$, $\tilde Q_1^{\natural}\tilde Q_2^{*}$, $\tilde Q_1\bullet\tilde Q_2$, $\tilde Q_1\bullet_{\natural}\tilde Q_2$, $\tilde Q_1\bullet_{*}\tilde Q_2$, $\tilde Q_1\bullet_{\natural*}\tilde Q_2$, $\tilde Q_1\wedge\tilde Q_2$, $\tilde Q_1\wedge_{\natural}\tilde Q_2$, $\tilde Q_1\wedge_{*}\tilde Q_2$ and $\tilde Q_1\wedge_{\natural*}\tilde Q_2$.
+**The operator.** A product is written by its two slots and the conjugation each one carries. The first slot is read as it stands or through the quaternion conjugation, which separates the plain family from the quaternionic one; the second as it stands or through the Hermitian conjugation, which separates the bilinear class from the sesquilinear one. A symmetric part is taken with the full dot $\bullet$ and an antisymmetric part with the wedge $\wedge$, and the class of the exchange is carried by the subscript, ${}_{*}$ for the plain sesquilinear product, ${}_{\natural}$ for the quaternionic bilinear one and ${}_{\natural*}$ for the quaternionic sesquilinear one. The twelve are $\tilde Q_1\tilde Q_2$, $\tilde Q_1^{\natural}\tilde Q_2$, $\tilde Q_1\tilde Q_2^{*}$, $\tilde Q_1^{\natural}\tilde Q_2^{*}$, $\tilde Q_1\bullet\tilde Q_2$, $\tilde Q_1\bullet_{\natural}\tilde Q_2$, $\tilde Q_1\bullet_{*}\tilde Q_2$, $\tilde Q_1\bullet_{\natural*}\tilde Q_2$, $\tilde Q_1\wedge\tilde Q_2$, $\tilde Q_1\wedge_{\natural}\tilde Q_2$, $\tilde Q_1\wedge_{*}\tilde Q_2$ and $\tilde Q_1\wedge_{\natural*}\tilde Q_2$.
 
 **The names and the operators.** The four general products are the general plain bilinear product $\tilde Q_1\tilde Q_2$, the general quaternionic bilinear product $\tilde Q_1^{\natural}\tilde Q_2$, the general plain sesquilinear product $\tilde Q_1\tilde Q_2^{*}$ and the general quaternionic sesquilinear product $\tilde Q_1^{\natural}\tilde Q_2^{*}$. The symmetric parts of the four are the symmetric plain bilinear product $\tilde Q_1\bullet\tilde Q_2$, the symmetric quaternionic bilinear product $\tilde Q_1\bullet_{\natural}\tilde Q_2$, the symmetric plain sesquilinear product $\tilde Q_1\bullet_{*}\tilde Q_2$ and the symmetric quaternionic sesquilinear product $\tilde Q_1\bullet_{\natural*}\tilde Q_2$. The antisymmetric parts of the four are the antisymmetric plain bilinear product $\tilde Q_1\wedge\tilde Q_2$, the antisymmetric quaternionic bilinear product $\tilde Q_1\wedge_{\natural}\tilde Q_2$, the antisymmetric plain sesquilinear product $\tilde Q_1\wedge_{*}\tilde Q_2$ and the antisymmetric quaternionic sesquilinear product $\tilde Q_1\wedge_{\natural*}\tilde Q_2$.
 
@@ -71,7 +71,7 @@ $$
 \tilde Q_1^{\natural}\tilde Q_2=\bigl[Q_{1t}Q_{2t}+(\vec Q_1,\vec Q_2)\bigr]+Q_{1t}\vec Q_2-Q_{2t}\vec Q_1-\vec Q_1\times\vec Q_2.
 $$
 
-The general quaternionic bilinear product, $\tilde Q_1^{\natural}\tilde Q_2$, is the general plain bilinear product with the first factor read through ${}^{\natural}$. It is $\mathbb{C}$-bilinear, **not associative**, and $e_t$ is a unit on the **left** only. Its exchange is the natural conjugation of its value, $\tilde Q_2^{\natural}\tilde Q_1=(\tilde Q_1^{\natural}\tilde Q_2)^{\natural}$.
+The general quaternionic bilinear product, $\tilde Q_1^{\natural}\tilde Q_2$, is the general plain bilinear product with the first factor read through ${}^{\natural}$. It is $\mathbb{C}$-bilinear, **not associative**, and $e_t$ is a unit on the **left** only. Its exchange is the quaternion conjugation of its value, $\tilde Q_2^{\natural}\tilde Q_1=(\tilde Q_1^{\natural}\tilde Q_2)^{\natural}$.
 
 Its values fill the whole space $\mathbb{B}$.
 
@@ -81,7 +81,7 @@ $$
 \tilde Q_1\tilde Q_2^{*}=\bigl[Q_{1t}\overline{Q_{2t}}+(\vec Q_1,\overline{\vec Q_2})\bigr]-Q_{1t}\overline{\vec Q_2}+\overline{Q_{2t}}\vec Q_1-\vec Q_1\times\overline{\vec Q_2}.
 $$
 
-The general plain sesquilinear product, $\tilde Q_1\tilde Q_2^{*}$, reads the second factor through the Hermitian conjugation ${}^{*}$. Both products of the pair are the natural conjugates of the two orders of one underlying product,
+The general plain sesquilinear product, $\tilde Q_1\tilde Q_2^{*}$, reads the second factor through the Hermitian conjugation ${}^{*}$. Both products of the pair are the quaternion conjugate of the two orders of one underlying product,
 $$
 \tilde Q_1\tilde Q_2^{*}=\bigl(\overline{\tilde Q}_2\tilde Q_1^{\natural}\bigr)^{\natural},\qquad
 \tilde Q_2\tilde Q_1^{*}=\bigl(\overline{\tilde Q}_1\tilde Q_2^{\natural}\bigr)^{\natural}.
@@ -96,7 +96,7 @@ $$
 \tilde Q_1^{\natural}\tilde Q_2^{*}=\bigl[Q_{1t}\overline{Q_{2t}}-(\vec Q_1,\overline{\vec Q_2})\bigr]-Q_{1t}\overline{\vec Q_2}-\overline{Q_{2t}}\vec Q_1+\vec Q_1\times\overline{\vec Q_2}.
 $$
 
-The general quaternionic sesquilinear product, $\tilde Q_1^{\natural}\tilde Q_2^{*}$, reads both slots through a conjugation. Both products of the pair are the natural conjugates of the two orders of one underlying product,
+The general quaternionic sesquilinear product, $\tilde Q_1^{\natural}\tilde Q_2^{*}$, reads both slots through a conjugation. Both products of the pair are the quaternion conjugate of the two orders of one underlying product,
 $$
 \tilde Q_1^{\natural}\tilde Q_2^{*}=\bigl(\overline{\tilde Q}_2\tilde Q_1\bigr)^{\natural},\qquad
 \tilde Q_2^{\natural}\tilde Q_1^{*}=\bigl(\overline{\tilde Q}_1\tilde Q_2\bigr)^{\natural}.

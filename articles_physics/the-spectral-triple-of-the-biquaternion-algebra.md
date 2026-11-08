@@ -92,7 +92,7 @@ $$
 \qquad
 \tilde\nabla^{\natural}\tilde{Ξ}_{\mathrm{sp},L}=k_m\tilde{Ξ}_{\mathrm{sp},R},
 $$
-with the gradient acting on the right-chirality part and its conjugate on the left-chirality part, and the mass coupling the two. The pair is two lines and no third object, and each line composed with the conjugate of the other is $\Box e_t$; the massive equation is the pair itself, one line per part. The two-sided form, from the two-sided operator theory of *The Feynman Propagator in Biquaternionic Form*, is
+with the gradient acting on the right-chirality part and its conjugate on the left-chirality part, and the mass coupling the two. The pair is two lines and no third object, and each line composed with the conjugate of the other is $\Box$ acting on that part; the massive equation is the pair itself, one line per part. The two-sided form, from the two-sided operator theory of *The Feynman Propagator in Biquaternionic Form*, is
 $$
 \mathcal{N}\tilde{Ξ}_{\mathrm{sp}}=\Bigl(-\tilde\nabla^{\natural}-k_mi\,\overline{\,\cdot}\,\vec e_z\Bigr)\tilde{Ξ}_{\mathrm{sp}}=0,
 $$

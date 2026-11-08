@@ -58,9 +58,9 @@ $$ \boxed{\; L_{\tilde q_4}R_{\tilde q_5}^{\sim}=L_{\tilde q_5}R_{\tilde q_4} \;
 
 *Proof.* The equality $L_{\tilde q_4}R_{\tilde q_5}=L_{\tilde q_5}R_{\tilde q_4}$ says $\tilde q_4\tilde q\tilde q_5=\tilde q_5\tilde q\tilde q_4$ for every $\tilde q$. At $\tilde q=e_t$ it gives $\tilde q_4\tilde q_5=\tilde q_5\tilde q_4$, so $\tilde q_5$ commutes with $\tilde q_4$; if $\tilde q_5=\mu\tilde q_4$ for some real $\mu$ the two sides are equal, which is the sufficiency. Conversely, either $\tilde q_4$ is central, and then the identity reads $\tilde q\tilde q_4\tilde q_5=\tilde q_5\tilde q\tilde q_4$, that is $\tilde q\tilde q_4\tilde q_5=\tilde q_4\tilde q_5\tilde q$ with the product $\tilde q_4\tilde q_5$ central because $\tilde q_4$ is and $\tilde q_5$ commutes with it, so $\tilde q_5$ is central too and $\tilde q_5\in\mathbb{R}\tilde q_4$; or $\tilde q_4$ is not central, its commutant is the plane $\mathbb{R}e_t+\mathbb{R}\tilde q_4$, and $\tilde q_5=\lambda+\mu\tilde q_4$ gives $\tilde q_4\tilde q\tilde q_5-\tilde q_5\tilde q\tilde q_4=\lambda(\tilde q_4\tilde q-\tilde q\tilde q_4)$, which vanishes for all $\tilde q$ only if $\lambda=0$, that is $\tilde q_5\in\mathbb{R}\tilde q_4$. The degenerate cases $\tilde q_4=0$ or $\tilde q_5=0$ are included, both sides being $0$.
 
-**Theorem (the natural sign is self-transpose).** The operator $\natural:\tilde q\mapsto\tilde q^{\natural}$ satisfies $\natural^{\sim}=\natural$.
+**Theorem (the quaternion sign is self-transpose).** The operator $\natural:\tilde q\mapsto\tilde q^{\natural}$ satisfies $\natural^{\sim}=\natural$.
 
-*Proof.* $\langle\tilde q_1^{\natural},\tilde q_2\rangle=\mathrm{Sc}(\tilde q_1^{\natural}\tilde q_2)=\sum_\mu q_{1\mu} q_{2\mu}$ and $\langle\tilde q_1,\tilde q_2^{\natural}\rangle=\mathrm{Sc}(\tilde q_1\tilde q_2^{\natural})=\sum_\mu q_{1\mu} q_{2\mu}$; the two agree for all $\tilde q_1,\tilde q_2$, so the operator is self-transpose. The formula displays the coordinate pairing as the product form read through the natural sign in either slot.
+*Proof.* $\langle\tilde q_1^{\natural},\tilde q_2\rangle=\mathrm{Sc}(\tilde q_1^{\natural}\tilde q_2)=\sum_\mu q_{1\mu} q_{2\mu}$ and $\langle\tilde q_1,\tilde q_2^{\natural}\rangle=\mathrm{Sc}(\tilde q_1\tilde q_2^{\natural})=\sum_\mu q_{1\mu} q_{2\mu}$; the two agree for all $\tilde q_1,\tilde q_2$, so the operator is self-transpose. The formula displays the coordinate pairing as the product form read through the quaternion sign in either slot.
 
 ## The Matrix Formula for the Transpose
 
@@ -87,13 +87,13 @@ $$ \boxed{\; G^{\sim}=D\,G^{\mathsf T}D \;} .$$
 
 ## The Identity against the Quaternion Adjoint
 
-**Theorem.** The product form read through the natural sign in either slot is the positive definite coordinate pairing:
+**Theorem.** The product form read through the quaternion sign in either slot is the positive definite coordinate pairing:
 
 $$ \boxed{\; \langle\tilde q_1^{\natural},\tilde q_2\rangle=\langle\tilde q_1,\tilde q_2^{\natural}\rangle=\sum_{\mu}q_{1\mu} q_{2\mu}=\mathrm{Sc}(\tilde q_1^{\natural}\tilde q_2) \;} .$$
 
 *Proof.* $\tilde q_1^{\natural}\tilde q_2=\sum_\mu q_{1\mu} q_{2\mu}+\text{(a vector part)}$ and $\tilde q_1\tilde q_2^{\natural}$ likewise; the scalar part is the sum of the coordinate products, the vector parts being sums of the basis vectors without a scalar component.
 
-**Corollary.** The natural sign is the adjoint of the identity of the product form: it carries the indefinite form to the positive definite coordinate one, and its self-transposeness is the statement that the two pairings agree.
+**Corollary.** The quaternion sign is the adjoint of the identity of the product form: it carries the indefinite form to the positive definite coordinate one, and its self-transposeness is the statement that the two pairings agree.
 
 ## Summary
 
@@ -108,7 +108,7 @@ The product form $\langle\tilde q_1,\tilde q_2\rangle=\mathrm{Sc}(\tilde q_1\til
 | $D=\operatorname{diag}(1,-1,-1,-1)$ | Gram matrix of $\mathrm B$ |
 | $T^{\sim}$ | Transpose of the operator $T$ |
 | $L_{\tilde q_4},R_{\tilde q_5}$ | Left and right multiplications |
-| $\natural$ | The natural sign, the quaternion conjugation |
+| $\natural$ | The quaternion conjugation |
 
 ## Further Reading
 

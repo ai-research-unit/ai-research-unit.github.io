@@ -115,7 +115,7 @@ one formula, as in *The Non-Central Algebraic Norm and the Two Halves of the Sym
 Sesqualgebra*, *Idempotents of the Symmetric Quaternionic Sesqualgebra* and *Nilpotents of the Symmetric
 Quaternionic Sesqualgebra*.
 
-**The $\langle\cdot,\cdot\rangle_{\natural*}$-adjoint of the multiplication.** The clause (C1), together with the natural conjugation as the
+**The $\langle\cdot,\cdot\rangle_{\natural*}$-adjoint of the multiplication.** The clause (C1), together with the quaternion conjugation as the
 compatibility involution, gives the operator identity
 
 $$

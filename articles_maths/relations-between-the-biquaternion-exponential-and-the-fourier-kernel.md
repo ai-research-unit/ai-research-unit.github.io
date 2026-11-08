@@ -241,9 +241,9 @@ The two physical real forms give the first two rows. For the material sector the
 
 ## The Two Conjugations
 
-### Natural Conjugation
+### Quaternion Conjugation
 
-The natural conjugation $\natural$ fixes $e_t$ and sends every vector to its negative. For a pure root, $\rho^\natural=-\rho$. Because $\natural$ is complex linear,
+The quaternion conjugation $\natural$ fixes $e_t$ and sends every vector to its negative. For a pure root, $\rho^\natural=-\rho$. Because $\natural$ is complex linear,
 
 $$
 W(t,\omega)^\natural=\exp(2\pi\rho\,\omega t)=W(t,\omega)^{-1}.
@@ -490,7 +490,7 @@ On the cone there is no root and no frequency. The exponential is the truncated 
 | $\nu,\zeta$ | pure directions completing $\rho$ to a root-adapted basis |
 | $u_\mp=\tfrac12(\nu\mp i\zeta)$ | the nilpotent pair of the eigenbasis |
 | $\vec N=\vec Q$ on the cone, $\vec N^2=0$ | the nilpotent part of a degenerate element |
-| $\natural$ | the natural conjugation, $e_t\mapsto e_t$, $\vec e_k\mapsto-\vec e_k$ |
+| $\natural$ | the quaternion conjugation, $e_t\mapsto e_t$, $\vec e_k\mapsto-\vec e_k$ |
 | $*$ | the Hermitian conjugation, $\bar{\natural}$ |
 | $\langle X\rangle_*=XX^*$ | the positive Hermitian form |
 | $N(X)=XX^\natural$ | the quaternionic norm |

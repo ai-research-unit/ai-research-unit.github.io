@@ -109,7 +109,7 @@ $$
 S^2=\bigl\{\vec u\in\mathbb{B}_{H} : \vec u^2=-e_t\bigr\} ,
 $$
 
-and the condition is the unit one, not an extra: a pure element is anti-fixed by the natural conjugation, $\vec u^{\natural}=-\vec u$, so $\vec u\vec u^{\natural}=-\vec u^2=\langle\vec u\rangle_{\natural}e_t$, and $\vec u^2=-e_t$ says exactly that $\vec u\vec u^{\natural}=e_t$, which is the corpus's spelling of unit norm. No modulus is needed and none is written: the bars $\lvert\cdot\rvert$ are the complex modulus of a coefficient, and the glyph $\vec u$ is already the corpus's unit pure element.
+and the condition is the unit one, not an extra: a pure element is anti-fixed by the quaternion conjugation, $\vec u^{\natural}=-\vec u$, so $\vec u\vec u^{\natural}=-\vec u^2=\langle\vec u\rangle_{\natural}e_t$, and $\vec u^2=-e_t$ says exactly that $\vec u\vec u^{\natural}=e_t$, which is the corpus's spelling of unit norm. No modulus is needed and none is written: the bars $\lvert\cdot\rvert$ are the complex modulus of a coefficient, and the glyph $\vec u$ is already the corpus's unit pure element.
 
 This is the sphere of *The Hopf Fibration and the Biquaternion Gauge Bundle*, where it appears as the Bloch sphere and as the base of the Hopf map. So the sphere of directions indexes the complex structures on the algebra's own quaternionic line, through $\vec u\mapsto L_{\vec u}$, and it is the corpus's sphere under this new use.
 

@@ -100,7 +100,7 @@ and the two coefficients cannot vanish together off the origin — the vector te
 
 The equation names a product, and the notion is relative to it; throughout this article the product is the quaternion product, the multiplication of the algebra, and the square is the square. The general definition, with the index of nilpotency and the square-zero element, is *Algebras: A General Introduction*, ; the square-zero set and the nilpotent class are kept apart below, and the relation between them is stated in both readings.
 
-The natural conjugation preserves square-zero elements, being multiplicative and carrying a vanishing square to a vanishing square,
+The quaternion conjugation preserves square-zero elements, being multiplicative and carrying a vanishing square to a vanishing square,
 
 $$
 (\tilde\nu^{\natural})^2=(\tilde\nu^2)^{\natural}=0,

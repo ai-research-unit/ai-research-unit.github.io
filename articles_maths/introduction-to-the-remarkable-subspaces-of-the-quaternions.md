@@ -8,11 +8,11 @@ Here there is no central unit and the quaternion norm is definite, so the lattic
 
 The article owns the two subspaces one by one: the defining condition, the coordinate condition, the basis, the dimension, the role, and the two closures. It owns no product theory, no form and no topology; the norm and the invertibility criterion are *Norm and Invertibility in the Quaternion Algebra*, below this article in this category.
 
-## The Natural Sign and the Two Subspaces
+## The Quaternion Conjugation and the Two Subspaces
 
-Over $\mathbb{R}$ the only conjugation is the natural sign ${}^{\natural}$, and it is the one written below.
+Over $\mathbb{R}$ the only conjugation is the quaternion sign ${}^{\natural}$, and it is the one written below.
 
-The natural sign is an anti-involution, $\tilde q^{\natural}=q_t-\vec q$ with $\tilde q=q_te_t+q_x\vec e_x+q_y\vec e_y+q_z\vec e_z$ and $\vec q=q_x\vec e_x+q_y\vec e_y+q_z\vec e_z$, and its $\pm1$ eigenspaces are the two remarkable subspaces. There is no fourth real subspace: the only other involutions available act by inner conjugation and move the two subspaces among themselves, and the article records their action in *Comparison of the Remarkable Subspaces of the Quaternions*, below this article in this category.
+The quaternion sign is an anti-involution, $\tilde q^{\natural}=q_t-\vec q$ with $\tilde q=q_te_t+q_x\vec e_x+q_y\vec e_y+q_z\vec e_z$ and $\vec q=q_x\vec e_x+q_y\vec e_y+q_z\vec e_z$, and its $\pm1$ eigenspaces are the two remarkable subspaces. There is no fourth real subspace: the only other involutions available act by inner conjugation and move the two subspaces among themselves, and the article records their action in *Comparison of the Remarkable Subspaces of the Quaternions*, below this article in this category.
 
 ## The Scalar Subspace
 
@@ -70,7 +70,7 @@ The additive decomposition carried by the two subspaces, and the polar decomposi
 
 ## Summary
 
-The quaternion algebra has two remarkable real subspaces. The scalar line $\mathbb{R}_{\mathbb{H}}$ is the fixed space of the natural sign, of dimension one, a subalgebra and the centre, closed under inversion, on which the norm is the square. The vector space $\mathrm{Vect}(\mathbb{H})$ is the anti-fixed space, of dimension three, not a subalgebra, with product $\vec q_1\vec q_2=-\langle\vec q_1,\vec q_2\rangle+\vec q_1\times\vec q_2$; it is closed under inversion, its square is the negative norm, and its unit sphere is the sphere of roots of $-1$. The two are supplementary and orthogonal for the norm, and $\langle\tilde q\rangle_{\natural}=q_t^2+|\vec q|^2$.
+The quaternion algebra has two remarkable real subspaces. The scalar line $\mathbb{R}_{\mathbb{H}}$ is the fixed space of the quaternion sign, of dimension one, a subalgebra and the centre, closed under inversion, on which the norm is the square. The vector space $\mathrm{Vect}(\mathbb{H})$ is the anti-fixed space, of dimension three, not a subalgebra, with product $\vec q_1\vec q_2=-\langle\vec q_1,\vec q_2\rangle+\vec q_1\times\vec q_2$; it is closed under inversion, its square is the negative norm, and its unit sphere is the sphere of roots of $-1$. The two are supplementary and orthogonal for the norm, and $\langle\tilde q\rangle_{\natural}=q_t^2+|\vec q|^2$.
 
 ## Summary of Notation
 

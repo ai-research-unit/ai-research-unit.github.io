@@ -198,7 +198,7 @@ The four adjoints of the four pairings of *Product and Form Conventions* are wri
 
 **The sign is written on the operator.** The sign is a superscript on the operator, after a bracket where the operator carries subscripts: $(L_{\tilde Q}R_{\tilde Q_2})^{\approx}$ and $(L_{\tilde Q})^{N}$. It is never written on the parameter, and the parameter keeps its own mark.
 
-**The letter $N$ is not the natural sign.** The quaternionic adjoint of an operator is written with the capital roman $N$, and the natural conjugation of an element with the sign ${}^{\natural}$. The two marks are distinct because the objects are: the sign conjugates an element, and the letter names the form whose adjoint is taken.
+**The letter $N$ is not the quaternion sign.** The quaternionic adjoint of an operator is written with the capital roman $N$, and the quaternion conjugation of an element with the sign ${}^{\natural}$. The two marks are distinct because the objects are: the sign conjugates an element, and the letter names the form whose adjoint is taken.
 
 **The dagger is not one of the four.** The general adjoint of an operator is the dagger ${}^{\dagger}$ of *Operator and Calculus Conventions*, §*The Operators*. It covers the four signs and is not a fifth one, and it is never written on an element.
 
@@ -210,7 +210,7 @@ The four sets are $\operatorname{End}_L(\mathbb{B})$, $\operatorname{End}_R(\mat
 
 The units of the algebra are $e_t,\vec e_x,\vec e_y,\vec e_z$ and its identity is $e_t$; the units of the operator space are the matrix units $E_{ij}$ and its identity is $\mathrm{I}_4$. The two alphabets are never exchanged. The bracket carries its frame and never omits it, and the Peirce change is $C_{\Pi}$, written with its inverse. Every display declares its frame.
 
-The strata are labelled by two bits, the norm first and the square of the vector part second, and the label is not an algebra. The two halves $\mathbb{B}_{\Psi}$ and $\mathbb{B}_{\Phi}$ record fixed and anti-fixed under the star, not positivity and negativity. Rank is written of an operator, length of a two-sided operator and dimension of a set with its field; the unit of the algebra is $e_t$, the identity of the operator space is $\mathrm{I}_4$, and the closed ray of the identity is written as a set. The four adjoint signs are ${}^{\approx}$, ${}^{N}$, ${}^{\ast}$ and ${}^{\natural\ast}$; the quaternionic sign is the capital letter $N$ and not the natural sign; and the dagger is the general adjoint, not a fifth of them.
+The strata are labelled by two bits, the norm first and the square of the vector part second, and the label is not an algebra. The two halves $\mathbb{B}_{\Psi}$ and $\mathbb{B}_{\Phi}$ record fixed and anti-fixed under the star, not positivity and negativity. Rank is written of an operator, length of a two-sided operator and dimension of a set with its field; the unit of the algebra is $e_t$, the identity of the operator space is $\mathrm{I}_4$, and the closed ray of the identity is written as a set. The four adjoint signs are ${}^{\approx}$, ${}^{N}$, ${}^{\ast}$ and ${}^{\natural\ast}$; the quaternionic sign is the capital letter $N$ and not the quaternion sign; and the dagger is the general adjoint, not a fifth of them.
 
 ## Summary of Notation
 

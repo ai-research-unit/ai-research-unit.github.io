@@ -140,7 +140,7 @@ The norm of each of the eight algebras is multiplicative, and the eight divide b
 | symbol | meaning |
 |---|---|
 | $\langle\cdot\rangle_{*}$ | the norm of $\mathbb{C}$, $\mathbb{C}_{\mathrm{spl}}$, $\mathbb{C}_{\mathrm{dln}}$, the bracket of the bar |
-| $\langle\cdot\rangle_{\natural}$ | the norm of the quaternionic layers, the bracket of the natural sign |
+| $\langle\cdot\rangle_{\natural}$ | the norm of the quaternionic layers, the bracket of the quaternion sign |
 | $\langle q\rangle_{\natural}=q^2$ | the norm of $\mathbb{R}$ |
 | $\langle Q\rangle_{*}=a^2+b^2$ | the norm of $\mathbb{C}$ |
 | $\langle Q\rangle_{*}=a^2-b^2$ | the norm of $\mathbb{C}_{\mathrm{spl}}$, signature $(1,1)$ |

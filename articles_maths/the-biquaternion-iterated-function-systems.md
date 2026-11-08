@@ -24,7 +24,7 @@ The three families are nested; a left-affine map is two-sided with $\tilde Q_3=e
 
 **Proof.** The assignment $\tilde Q_1\otimes\tilde Q_3\mapsto\bigl(\tilde Q\mapsto\tilde Q_1\tilde Q\tilde Q_3\bigr)$ extends to an algebra isomorphism $M_2(\mathbb{C})\otimes M_2(\mathbb{C})\to\operatorname{End}_{\mathbb{C}}(\mathbb{B})$, because $\mathbb{B}\cong M_2(\mathbb{C})$ and $M_2(\mathbb{C})\otimes M_2(\mathbb{C})\cong\operatorname{End}_{\mathbb{C}}\bigl(M_2(\mathbb{C})\bigr)$ (*The Category of Modules*); both spaces have complex dimension sixteen, so the span is all of them.
 
-**Remark (only the left-affine family is an iterated function system in the classical sense here).** A right-affine map is the mirror of a left-affine one under the natural conjugation, and a two-sided map is a left-affine map composed with the right multiplication; the three families have the same contraction theory, and the article treats the left-affine case and records the differences.
+**Remark (only the left-affine family is an iterated function system in the classical sense here).** A right-affine map is the mirror of a left-affine one under the quaternion conjugation, and a two-sided map is a left-affine map composed with the right multiplication; the three families have the same contraction theory, and the article treats the left-affine case and records the differences.
 
 ## Contractions in the Euclidean Norm
 

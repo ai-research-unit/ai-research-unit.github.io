@@ -2,7 +2,7 @@
 
 ## Introduction
 
-The underlying $\mathbb{C}$-vector space of the biquaternion algebra $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ carries four general products, defined side by side in *The Four General Products and Their Relations over the Biquaternion Algebra*. Read as a multiplication, the first of them makes that space an associative unital algebra, and that reading is *The Biquaternion Algebra*; the second is the **general quaternionic bilinear product** $\tilde Q_1^{\natural}\tilde Q_2$, and it is the subject of this article. The name is the one of the four-general-products article: *complex* is the base ring, over which all four rules are written, and *quaternionic* marks the product whose first element is read through the natural conjugation ${}^{\natural}$, the $\mathbb{C}$-linear extension of the quaternionic conjugation. The word names a slot and not a base ring. The product is $\mathbb{C}$-bilinear and it is nothing more: it is not associative and it is unital on one side alone, so it is not the multiplication of an associative unital algebra, as the comparison of the four settles. What it defines is a multiplication in the weak sense of *Algebras: A General Introduction*, additive in each variable and linear over the commutative ring $\mathbb{C}$, and this article builds the algebra that this multiplication makes of $\mathbb{B}$.
+The underlying $\mathbb{C}$-vector space of the biquaternion algebra $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ carries four general products, defined side by side in *The Four General Products and Their Relations over the Biquaternion Algebra*. Read as a multiplication, the first of them makes that space an associative unital algebra, and that reading is *The Biquaternion Algebra*; the second is the **general quaternionic bilinear product** $\tilde Q_1^{\natural}\tilde Q_2$, and it is the subject of this article. The name is the one of the four-general-products article: *complex* is the base ring, over which all four rules are written, and *quaternionic* marks the product whose first element is read through the quaternion conjugation ${}^{\natural}$, the $\mathbb{C}$-linear extension of the quaternionic conjugation. The word names a slot and not a base ring. The product is $\mathbb{C}$-bilinear and it is nothing more: it is not associative and it is unital on one side alone, so it is not the multiplication of an associative unital algebra, as the comparison of the four settles. What it defines is a multiplication in the weak sense of *Algebras: A General Introduction*, additive in each variable and linear over the commutative ring $\mathbb{C}$, and this article builds the algebra that this multiplication makes of $\mathbb{B}$.
 
 The construction is short and the consequences are of two kinds. The product is the plain multiplication with one conjugation inserted in the first slot, so the table is read off the quaternion table, bilinearity is immediate, and the failure of the axioms is decided by short computations on the basis; but the product is also the multiplication whose square of every element lands in the scalar line and whose symmetrisation is scalar. The article therefore has a negative half — the axioms the product fails, among them the three quaternionic scalar laws, which is where the base ring is fixed — and a positive half, in which the square, the idempotents, the nilpotents and the graded behaviour on the remarkable subspaces are read off.
 
@@ -71,7 +71,7 @@ $$
 (A\tilde Q_1)\star\tilde Q_2=A(\tilde Q_1\star\tilde Q_2)=\tilde Q_1\star(A\tilde Q_2) , \qquad A\in\mathbb{C} .
 $$
 
-**Proof.** The natural conjugation is $\mathbb{C}$-linear, $(\lambda\tilde Q_1)^{\natural}=\lambda\tilde Q_1^{\natural}$, and the plain product is $\mathbb{C}$-bilinear; the three identities follow. Equivalently they are read coordinate by coordinate on the developed form, every coordinate of which is a sum of terms $Q_{1,\mu} Q_{2,\nu}$ with fixed coefficients.
+**Proof.** The quaternion conjugation is $\mathbb{C}$-linear, $(\lambda\tilde Q_1)^{\natural}=\lambda\tilde Q_1^{\natural}$, and the plain product is $\mathbb{C}$-bilinear; the three identities follow. Equivalently they are read coordinate by coordinate on the developed form, every coordinate of which is a sum of terms $Q_{1,\mu} Q_{2,\nu}$ with fixed coefficients.
 
 **Proposition (determination by the table).** The multiplication is the unique $\mathbb{C}$-bilinear map $\mathbb{B}\times\mathbb{B}\to\mathbb{B}$ sending the pair $(e_\mu,e_\nu)$ to the product $e_\mu\star e_\nu$ of the table.
 
@@ -169,7 +169,7 @@ $$
 
 **Proof.** At $\tilde Q_1=e_t$ it reads $\tilde E=e_t$, and at $\tilde Q_1=\vec e_x$ it reads $\vec e_x\star e_t=\vec e_x$, which is false, the value being $-\vec e_x$.
 
-**Remark.** The two actions of the unit by multiplication are therefore the identity and a conjugation: the left action is the identity, $e_t\star\tilde Q=\tilde Q$, and the right action is the natural conjugation, $\tilde Q\star e_t=\tilde Q^{\natural}$. Neither is a two-sided unit, and no element of $\mathbb{B}$ is one, so the multiplication has a unit on one side alone. The left multiplications nonetheless compose, in reversed order, by the proposition below, and that is why the comparison of the four records a monoid of left multiplications for this product although the product has no two-sided unit.
+**Remark.** The two actions of the unit by multiplication are therefore the identity and a conjugation: the left action is the identity, $e_t\star\tilde Q=\tilde Q$, and the right action is the quaternion conjugation, $\tilde Q\star e_t=\tilde Q^{\natural}$. Neither is a two-sided unit, and no element of $\mathbb{B}$ is one, so the multiplication has a unit on one side alone. The left multiplications nonetheless compose, in reversed order, by the proposition below, and that is why the comparison of the four records a monoid of left multiplications for this product although the product has no two-sided unit.
 
 **Proposition (the left multiplications).** The left multiplications $L_{\tilde Q_1}(\tilde Q_2)=\tilde Q_1\star\tilde Q_2$ compose in the reversed order of the algebra,
 
@@ -225,7 +225,7 @@ so the square is a scalar element, in the scalar line $\mathbb{C}e_t$.
 
 **Proof.** The scalar–vector form gives $\tilde Q^{\natural}\tilde Q=(Q_t-\vec Q)(Q_t+\vec Q)=Q_t^2-\vec Q^2$, and $\vec Q^2=-(\vec Q,\vec Q)$ for a vector part, so the value is $\bigl(Q_t^2+(\vec Q,\vec Q)\bigr)e_t=\sum_\mu Q_\mu^2e_t$. The same scalar is produced in the two orders, $\tilde Q\tilde Q^{\natural}=\tilde Q^{\natural}\tilde Q$.
 
-**Corollary.** Every square lies in the scalar line $\mathbb{C}e_t$; it is fixed by the natural conjugation, and it is central for the plain product. The squaring map of the multiplication is $\tilde Q\mapsto\bigl(\sum_\mu Q_\mu^2\bigr)e_t$, with its values in the scalar line rather than in the field.
+**Corollary.** Every square lies in the scalar line $\mathbb{C}e_t$; it is fixed by the quaternion conjugation, and it is central for the plain product. The squaring map of the multiplication is $\tilde Q\mapsto\bigl(\sum_\mu Q_\mu^2\bigr)e_t$, with its values in the scalar line rather than in the field.
 
 **Remark.** The plain product and the $\natural$-product therefore have different squares: the square in the multiplication is $\bigl(\sum_\mu Q_\mu^2\bigr)e_t$ for every $\tilde Q$, whereas the square in the plain product is $Q_t^2-(\vec Q,\vec Q)+2Q_t\vec Q$, which lands in the scalar line exactly when $\tilde Q$ is a multiple of $e_t$, and is then $Q_t^2e_t$, or when its scalar part vanishes, and is then $-\bigl(\sum_{\mu=1}^{3}Q_\mu^2\bigr)e_t$. Which of the two a statement about squares is about must be said each time, and the two are the pair of structures attached to the two bilinear products of the space.
 
@@ -274,7 +274,7 @@ The remarkable subspaces and the exact span table of the plain product on them a
 
 **Proposition.** On the scalar line the multiplication agrees with the plain product and is the multiplication of the field: $(Ae_t)\star(Be_t)=ABe_t$ for $A,B\in\mathbb{C}$. On the vector part it is the negated quaternion product: $\vec U\star\vec V=-\vec U\vec V$ for pure vector parts, so its symmetric part is the dot product, $\vec U\star\vec V+\vec V\star\vec U=2(\vec U,\vec V)e_t$, and its antisymmetric part is minus the cross product.
 
-**Proof.** The natural conjugation fixes the scalar line and negates the vector part; on the vector part the plain product of two pure vectors is $-(\vec U,\vec V)+\vec U\times\vec V$, and the product is its negative.
+**Proof.** The quaternion conjugation fixes the scalar line and negates the vector part; on the vector part the plain product of two pure vectors is $-(\vec U,\vec V)+\vec U\times\vec V$, and the product is its negative.
 
 **Remark.** On the vector part the multiplication is therefore the companion of the plain product in the same sense as the quaternion product is the companion of the vector product: the plain product has the symmetric part $-(\vec U,\vec V)$ beside the cross product, and the $\natural$-product has the symmetric part $+(\vec U,\vec V)$ beside the negative cross product. On the scalar line the two agree, which is the statement that $\natural$ is the identity where the conjugation has nothing to do.
 
@@ -288,7 +288,7 @@ Let $\mathbb{B}_{H}=\mathbb{R}e_t+\mathbb{R}\vec e_x+\mathbb{R}\vec e_y+\mathbb{
 
 **Proposition.** On the quaternion subspace the multiplication is the plain product with the quaternionic conjugate in the first slot, $h\star g=\bar h\,g$ for real $h,g$, and its square is $h\star h=\bigl(h_t^2+h_x^2+h_y^2+h_z^2\bigr)e_t$. It is not associative there: on the subspace spanned by $e_t$ and one vector unit it fails the associative law, as in §*Associativity*. Its square vanishes on $\mathbb{B}_{H}$ only at $0$, a sum of squares of real coordinates vanishing only when every coordinate vanishes, and in this it agrees with the record of *N-Regularity and N-Degeneracy in the Biquaternion Algebra*, §*The Zero Divisors* that the real quaternion subspace carries no zero divisor.
 
-**Proof.** On real coordinates the natural conjugation is the quaternionic conjugation $\bar h$, so $h\star g=\bar hg$; the square is the sum of the squares of the four real coordinates; and the failure of associativity is the witness of §*Associativity*.
+**Proof.** On real coordinates the quaternion conjugation is the quaternionic conjugation $\bar h$, so $h\star g=\bar hg$; the square is the sum of the squares of the four real coordinates; and the failure of associativity is the witness of §*Associativity*.
 
 **Remark.** The four inclusions say that the multiplication does not mix the two halves in the wrong way, and they hold for the same reason they hold for the plain product: the complex structure is an algebra automorphism for both products. On either half the multiplication has neither a two-sided unit nor associativity; on the even part its square is the sum of the squares of the real coordinates, which vanishes only at the origin, and the two halves are exchanged by the odd products.
 
@@ -316,7 +316,7 @@ The sharper test of the *derived operation* of *Sesqualgebras* separates the pai
 
 ## Summary
 
-The general quaternionic bilinear product $\tilde Q_1^{\natural}\tilde Q_2$ of *The Four General Products and Their Relations over the Biquaternion Algebra*, read as a multiplication, is $\mathbb{C}$-bilinear and additive in each variable, and it is the isotope of the plain product determined by the natural conjugation in the first slot.
+The general quaternionic bilinear product $\tilde Q_1^{\natural}\tilde Q_2$ of *The Four General Products and Their Relations over the Biquaternion Algebra*, read as a multiplication, is $\mathbb{C}$-bilinear and additive in each variable, and it is the isotope of the plain product determined by the quaternion conjugation in the first slot.
 
 $$
 \boxed{\
@@ -339,7 +339,7 @@ Its table has $e_t$ on the diagonal, the identity row and the negated column, an
 | $\tilde Q=Q_te_t+\vec Q$ | a biquaternion and its scalar–vector split, $\vec Q=\sum_\mu Q_\mu\vec e_\mu$ |
 | $(\vec Q_1,\vec Q_2)=\sum_\mu Q_{1,\mu} Q_{2,\mu}$ | complex bilinear dot product of the vector parts |
 | $\vec Q_1\times\vec Q_2$ | complex bilinear cross product of the vector parts |
-| ${}^{\natural}$ | the natural conjugation, the $\mathbb{C}$-linear anti-automorphism of the first slot |
+| ${}^{\natural}$ | the quaternion conjugation, the $\mathbb{C}$-linear anti-automorphism of the first slot |
 | $\bar{\cdot}$, ${}^{*}=\bar{\cdot}\circ{}^{\natural}$ | the coefficientwise conjugation and the star |
 | $\tilde Q_1\star\tilde Q_2=\tilde Q_1^{\natural}\tilde Q_2$ | the general quaternionic bilinear product, the multiplication of the article |
 | $\varepsilon=(1,-1,-1,-1)$ | the signs of the conjugation on the basis, $Q^{\natural}_\nu=\varepsilon_\nu Q_\nu$ |

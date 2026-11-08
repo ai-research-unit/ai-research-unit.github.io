@@ -239,7 +239,7 @@ j_{\mu k} = -\frac{f_\pi^2}{2}\,\mathrm{Sc}\!\left(\frac{\partial\tilde U^{\natu
 = -\sum_{j,l}\epsilon_{kjl}\,\pi_j\,\frac{\partial\pi_l}{\partial R_\mu} + \cdots ,
 $$
 
-the standard isovector current of the pion triplet. The natural conjugation on the derivative is the one that fixes the sign: with $\partial\tilde U^{\natural}/\partial R_\mu=-\partial\tilde U/\partial R_\mu$ and $\mathrm{Sc}(\vec e_j\vec e_k)=-\delta_{jk}$, the two minus signs cancel and the prefactor $-\frac{f_\pi^2}{2}$ produces the displayed minus. It lies in the material sector, like every current of the framework, and it is the current whose charge rotates the pion triplet in the adjoint.
+the standard isovector current of the pion triplet. The quaternion conjugation on the derivative is the one that fixes the sign: with $\partial\tilde U^{\natural}/\partial R_\mu=-\partial\tilde U/\partial R_\mu$ and $\mathrm{Sc}(\vec e_j\vec e_k)=-\delta_{jk}$, the two minus signs cancel and the prefactor $-\frac{f_\pi^2}{2}$ produces the displayed minus. It lies in the material sector, like every current of the framework, and it is the current whose charge rotates the pion triplet in the adjoint.
 
 **The axial current and its divergence.** The axial current is not the Noether current of a symmetry of the algebra. It is the quark axial current of the underlying theory, which fixes its nature and its anomalous divergence; what the framework contributes is the product of elements that carries the vertex. The frame basis operator of the coordinate $x_\mu$ multiplies on the left by $e_\mu$ and on the right by $\vec e_{\nu(\mu)}$, with the phase $i$,
 

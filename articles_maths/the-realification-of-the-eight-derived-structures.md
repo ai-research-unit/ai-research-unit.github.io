@@ -163,7 +163,7 @@ is kept inside itself, because $e_t$ pairs to zero with the two other generators
 
 **The trace factor.** The complex trace of the multiplication is the scalar part $Q_{6t}$ and the real trace is $2\operatorname{Re}Q_{6t}$; the factor two is the doubling of the realification, and the absence of the factors four and eight that the regular representation of the plain algebra carries is the rank-one nature of the block, a feature that the real reading shows and the complex reading hides.
 
-**The conjugate-linear automorphisms.** Over $\mathbb{C}$ the automorphisms of the block are the $\mathbb{C}$-linear ones, and the natural conjugation is among them, because the block is commutative with central values. The star and the Hermitian conjugation preserve the product as well, and they are conjugate-linear; since the block is commutative, they are automorphisms of the $\mathbb{R}$-algebra and not of the $\mathbb{C}$-algebra, so the real automorphism group carries the extra conjugate-linear coset of the complex one, which the complex reading does not see. The block's article calls them *conjugations* of the block for this reason (*Norm and Invertibility in the Symmetric Quaternionic Algebra*).
+**The conjugate-linear automorphisms.** Over $\mathbb{C}$ the automorphisms of the block are the $\mathbb{C}$-linear ones, and the quaternion conjugation is among them, because the block is commutative with central values. The star and the Hermitian conjugation preserve the product as well, and they are conjugate-linear; since the block is commutative, they are automorphisms of the $\mathbb{R}$-algebra and not of the $\mathbb{C}$-algebra, so the real automorphism group carries the extra conjugate-linear coset of the complex one, which the complex reading does not see. The block's article calls them *conjugations* of the block for this reason (*Norm and Invertibility in the Symmetric Quaternionic Algebra*).
 
 ### Instance: the Symmetric Quaternionic Algebra
 
@@ -221,7 +221,7 @@ $$
 $$
 a **positive definite** Hermitian form of complex inertia $(4,0)$. This is the trace form of the left regular representation of the block, the analogue of $\operatorname{Tr}_{\mathbb{R}}(L_{\tilde Q_1}L_{\tilde Q_2})$ for the parent. The block therefore carries two real forms over $\mathbb{R}$, of opposite kinds: the indefinite $\Phi_{\mathbb{R}}$, of signature $(2,6)$, attached to the product, and the definite $\tau$, of signature $(8,0)$, attached to its left multiplications; the definite one is no multiple of the indefinite one.
 
-**The Galois twist.** The four conjugations of the ring — the identity, the natural conjugation ${}^{\natural}$, the coefficientwise conjugation $\kappa$ and the Hermitian star ${}^{*}=\kappa\circ{}^{\natural}$ — are $\mathbb{R}$-linear and are automorphisms of the block,
+**The Galois twist.** The four conjugations of the ring — the identity, the quaternion conjugation ${}^{\natural}$, the coefficientwise conjugation $\kappa$ and the Hermitian star ${}^{*}=\kappa\circ{}^{\natural}$ — are $\mathbb{R}$-linear and are automorphisms of the block,
 $$
 T(\tilde Q_1\star\tilde Q_2)=T(\tilde Q_1)\star T(\tilde Q_2),
 $$
@@ -427,7 +427,7 @@ is a subalgebra as well, of real dimension three: on the vector subspace the ope
 $$
 \overline{\tilde Q_1\diamond\tilde Q_2}=\bar{\tilde Q_1}\diamond\bar{\tilde Q_2} .
 $$
-It is conjugate-linear, so it is not an automorphism over $\mathbb{C}$, and composing it with the $\mathbb{C}$-linear automorphism group (*The Adjoint Operators of the Antisymmetric Quaternionic Algebra*, §*The Automorphism Group and the Structure Group*) gives the conjugate-linear coset $\bar{\cdot}\,\mathrm{Aut}_{\mathbb{C}}$ of the real automorphism group, which the complex reading does not see. The natural conjugation is not an automorphism of the block: at $(\vec e_x,\vec e_y)$ it gives ${}^{\natural}(\vec e_x\diamond \vec e_y)=\vec e_z$ while ${}^{\natural}\vec e_x\diamond{}^{\natural}\vec e_y=-\vec e_z$; the block reads its real automorphisms through the coefficientwise conjugation and not through the natural one.
+It is conjugate-linear, so it is not an automorphism over $\mathbb{C}$, and composing it with the $\mathbb{C}$-linear automorphism group (*The Adjoint Operators of the Antisymmetric Quaternionic Algebra*, §*The Automorphism Group and the Structure Group*) gives the conjugate-linear coset $\bar{\cdot}\,\mathrm{Aut}_{\mathbb{C}}$ of the real automorphism group, which the complex reading does not see. The quaternion conjugation is not an automorphism of the block: at $(\vec e_x,\vec e_y)$ it gives ${}^{\natural}(\vec e_x\diamond \vec e_y)=\vec e_z$ while ${}^{\natural}\vec e_x\diamond{}^{\natural}\vec e_y=-\vec e_z$; the block reads its real automorphisms through the coefficientwise conjugation and not through the natural one.
 
 ## The Antisymmetric Quaternionic Sesqualgebra (aqs)
 

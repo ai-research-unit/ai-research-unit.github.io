@@ -237,7 +237,7 @@ The biquaternion algebra carries three involutions — coefficient, natural and 
 | Hermitian conjugation | ${}^{*}$ | The involution of the algebra, $\bar{\cdot}\circ{}^{\natural}$ |
 | Anti-Hermitian conjugation | ${}^{\flat} = -{}^{*}$ | The negative of the star |
 
-Outside the quaternionic layers there is no vector part. In $\mathbb{C}$, $\mathbb{C}_{\mathrm{spl}}$ and $\mathbb{C}_{\mathrm{dln}}$ the imaginary, hyperbolic and dual units are the coefficient sector itself, conjugated by the bar, so the natural sign is the identity and the star is the bar, $*=\bar{\cdot}$. $\mathbb{B}_{\mathrm{red}}$ is commutative and has no vector part as well, but its second line is not the coefficient sector: the coefficients are complex and the bar leaves $j$ fixed, so the bar and the identity do not exhaust the involutions, the natural sign has no sense and is not written. The intrinsic conjugation of the layer is the **tessarine sign** ${}_{\mathrm{ts}}$, $\breve Q_{\mathrm{ts}}=Q_{\blacktriangle}-jQ_{\blacktriangledown}$, $\mathbb{C}$-linear and of square one, and the star is its composite with the bar, ${}^{*}=\bar{\cdot}\circ{}_{\mathrm{ts}}$, $\breve Q^{*}=\bar Q_{\blacktriangle}-j\bar Q_{\blacktriangledown}$.
+Outside the quaternionic layers there is no vector part. In $\mathbb{C}$, $\mathbb{C}_{\mathrm{spl}}$ and $\mathbb{C}_{\mathrm{dln}}$ the imaginary, hyperbolic and dual units are the coefficient sector itself, conjugated by the bar, so the intrinsic conjugation is the identity and the star is the bar, $*=\bar{\cdot}$. $\mathbb{B}_{\mathrm{red}}$ is commutative and has no vector part as well, but its second line is not the coefficient sector: the coefficients are complex and the bar leaves $j$ fixed, so the bar and the identity do not exhaust the involutions, the intrinsic conjugation has no sense and is not written. The intrinsic conjugation of the layer is the **tessarine sign** ${}_{\mathrm{ts}}$, $\breve Q_{\mathrm{ts}}=Q_{\blacktriangle}-jQ_{\blacktriangledown}$, $\mathbb{C}$-linear and of square one, and the star is its composite with the bar, ${}^{*}=\bar{\cdot}\circ{}_{\mathrm{ts}}$, $\breve Q^{*}=\bar Q_{\blacktriangle}-j\bar Q_{\blacktriangledown}$.
 
 Which of the marks has a sense depends on the system, since a mark degenerates wherever the structure it conjugates is absent. The examples below fix it system by system.
 
@@ -253,7 +253,7 @@ $$
 \bar Q = q - jq' , \qquad j^2 = +1 .
 $$
 
-**The quaternions $\mathbb{H}$ and the split-quaternions $\mathbb{H}_{\mathrm{spl}}$.** Only the natural sign has a sense, the coefficients being real and the conjugation intrinsic to the quaternion factor, and the same formula is read on the two sets of units:
+**The quaternions $\mathbb{H}$ and the split-quaternions $\mathbb{H}_{\mathrm{spl}}$.** Only the quaternion sign has a sense, the coefficients being real and the conjugation intrinsic to the quaternion factor, and the same formula is read on the two sets of units:
 
 $$
 \tilde q^{\natural} = q_te_t - q_x\vec e_x - q_y\vec e_y - q_z\vec e_z , \qquad \vec e_k^2 = -e_t \ (\mathbb{H}) , \qquad \vec e_x^2 = -e_t , \ \vec e_y^2 = \vec e_z^2 = +e_t \ (\mathbb{H}_{\mathrm{spl}}) .
@@ -275,7 +275,7 @@ $$
 \breve Q_{\mathrm{ts}} = Q_{\blacktriangle} - jQ_{\blacktriangledown} , \qquad \breve Q^{*} = \overline{\breve Q_{\mathrm{ts}}} = \bar Q_{\blacktriangle} - j\bar Q_{\blacktriangledown} , \qquad \breve Q_{\mathrm{ts}}\breve Q = Q_{\blacktriangle}^{2}-Q_{\blacktriangledown}^{2} .
 $$
 
-The maps of the layer are the bar, the tessarine sign, the star that is their composite, and the derived anti-Hermitian sign; the natural sign is not written on it.
+The maps of the layer are the bar, the tessarine sign, the star that is their composite, and the derived anti-Hermitian sign; the intrinsic conjugation is not written on it.
 
 ## Summary
 
@@ -283,7 +283,7 @@ The base is written with the letter $e$, one unit to a direction: the scalar uni
 
 The biquaternion algebra splits into the centre $\mathbb{B}_{C}$ and the vector subspace $\mathbb{B}_{V}$, the fixed and anti-fixed spaces of the intrinsic conjugate; into the quaternion and antiquaternion subspaces $\mathbb{B}_{H}$ and $\mathbb{B}_{iH}$, the real and imaginary halves; and into the Hermitian and anti-Hermitian subspaces $\mathbb{B}_{\Psi}$ and $\mathbb{B}_{\Phi}$, the fixed and anti-fixed spaces of the star. A pure element carries the arrow and no tilde, and the arrow takes priority where the two marks could fall on one glyph.
 
-The biquaternion algebra carries three involutions — the coefficient bar, the natural sign ${}^{\natural}$ and the star ${}^{*}=\bar{\cdot}\circ{}^{\natural}$ — and the reversal ${}^{\flat}=-{}^{*}$ beside them. Which of the marks has a sense depends on the layer, since a mark degenerates wherever the structure it conjugates is absent: the complex, split-complex and dual layers keep the bar, the quaternion and split-quaternion layers the natural sign, and the reduced biquaternion layer the bar, the tessarine sign and the star.
+The biquaternion algebra carries three involutions — the coefficient bar, the quaternion sign ${}^{\natural}$ and the star ${}^{*}=\bar{\cdot}\circ{}^{\natural}$ — and the reversal ${}^{\flat}=-{}^{*}$ beside them. Which of the marks has a sense depends on the layer, since a mark degenerates wherever the structure it conjugates is absent: the complex, split-complex and dual layers keep the bar, the quaternion and split-quaternion layers the quaternion sign, and the reduced biquaternion layer the bar, the tessarine sign and the star.
 
 The angle follows the same rule as the element: one letter in two cases, $\theta$ real and $\Theta=\theta+i\theta'$ complex, so that a rotation and a boost are the real and the pure imaginary readings of one symbol. This article is the reference for the element, the subspaces and the marks. The products and forms, the norms, the special elements, the frames, the representations, the calculus, the operator families and the indices are the subjects of the eight companions, and the table below is the index of the glyphs they share.
 
@@ -296,7 +296,7 @@ The conventions below are those used throughout the corpus.
 | $\mathbb{N}, \mathbb{Z}, \mathbb{Q}, \mathbb{R}, \mathbb{C}$ | The naturals, integers, rationals, reals and complex numbers |
 | $\mathbb{C}_{\mathrm{spl}}$ | The split-complex numbers, $\mathbb{R}[x]/(x^2-1)$ |
 | $\mathbb{C}_{\mathrm{dln}}$ | The dual numbers, $\mathbb{R}[x]/(x^2)$ |
-| $\mathbb{B}_{\mathrm{red}}$ | The reduced biquaternions, $\mathbb{C} \otimes_{\mathbb{R}} \mathbb{C} \cong \mathbb{C} \oplus \mathbb{C}$, equivalently the tessarines or the double-complex numbers; its intrinsic conjugation is the tessarine sign ${}_{\mathrm{ts}}$, and the natural sign is not written on the layer |
+| $\mathbb{B}_{\mathrm{red}}$ | The reduced biquaternions, $\mathbb{C} \otimes_{\mathbb{R}} \mathbb{C} \cong \mathbb{C} \oplus \mathbb{C}$, equivalently the tessarines or the double-complex numbers; its intrinsic conjugation is the tessarine sign ${}_{\mathrm{ts}}$, and the intrinsic conjugation is not written on the layer |
 | $\mathbb{H}$ | The real quaternions |
 | $\mathbb{H}_{\mathrm{spl}}$ | The split-quaternions, $\mathrm{Cl}_{1,1} \cong M_2(\mathbb{R})$ |
 | $\mathbb{B}$ | The biquaternions, $\mathbb{C} \otimes_{\mathbb{R}} \mathbb{H}$ |
@@ -337,7 +337,7 @@ The conventions below are those used throughout the corpus.
 | $\mathcal{Q}$ | The Lie or null quadric, in calligraphic, as in $\mathcal{Q}^{n+1}$ |
 | $\bullet$ | The symmetrised (Jordan) product, $x \bullet y = \tfrac{1}{2}(xy + yx)$, and, with the slot subscripts ${}_{*}$, ${}_{\natural}$ and ${}_{\natural*}$, the four **symmetric products** of *Product and Form Conventions*, §*The Twelve Products and Their Names*; the circle $\circ$ is reserved for the composition of maps |
 | $\wedge$ | The antisymmetrised product, $x \wedge y = \tfrac{1}{2}(xy - yx)$, and, with the same subscripts, the four **antisymmetric products** of *Product and Form Conventions*, §*The Twelve Products and Their Names*. On differential forms the same glyph is the exterior product, $\alpha\wedge\beta$, a different use |
-| $\bar{\cdot}, {}^{\natural}, {}_{\mathrm{ts}}, {}^{*}, {}^{\flat}, {}^{\dagger}$ | The conjugations of an algebra with an involution — the bar, the natural sign ${}^{\natural}$, the tessarine sign ${}_{\mathrm{ts}}$ of $\mathbb{B}_{\mathrm{red}}$, the star, the anti-Hermitian sign — and the adjoint of an operator; §*The Conjugations* and *Operator and Calculus Conventions*, §*The Operators*, fix their meanings |
+| $\bar{\cdot}, {}^{\natural}, {}_{\mathrm{ts}}, {}^{*}, {}^{\flat}, {}^{\dagger}$ | The conjugations of an algebra with an involution — the bar, the quaternion sign ${}^{\natural}$, the tessarine sign ${}_{\mathrm{ts}}$ of $\mathbb{B}_{\mathrm{red}}$, the star, the anti-Hermitian sign — and the adjoint of an operator; §*The Conjugations* and *Operator and Calculus Conventions*, §*The Operators*, fix their meanings |
 | $\tilde\Pi$, $\tilde\pi$, $\Pi$, $\Pi_\pm$ | An idempotent or a pure state, and the minimal left ideal it generates; the biquaternion layer writes $\tilde\Pi$, the quaternion layer $\tilde\pi$, and the tilde-free layers $\Pi$, the split-complex and reduced biquaternion ones writing the sign pair $\Pi_\pm$ (*Special Element and Peirce Conventions*, §*The Idempotent Convention*) |
 | $\tilde{Ζ}$, $\tilde\zeta$, $Ζ$ | A root of $1$: the biquaternion layer writes $\tilde{Ζ}$, the quaternion layer $\tilde\zeta$, and the tilde-free layers $Ζ$ (*Special Element and Peirce Conventions*, §*The Root Convention*) |
 | $\tilde\nu$ | A nilpotent of the quaternion or split-quaternion layer |

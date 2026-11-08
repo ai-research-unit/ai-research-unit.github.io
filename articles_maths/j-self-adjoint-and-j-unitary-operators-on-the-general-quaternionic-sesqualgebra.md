@@ -50,7 +50,7 @@ of real dimension $16$. Its $*$-unitary subgroup is $\mathrm{U}(1)\times \mathrm
 
 ## The $J$-Adjoint of the Three Families
 
-The natural conjugation exchanges the sides, and this propagates to the adjoints.
+The quaternion conjugation exchanges the sides, and this propagates to the adjoints.
 
 **Theorem (the adjoints).** For all $\tilde{Q},\tilde Q_3\in\mathbb{B}$,
 
@@ -61,7 +61,7 @@ $$
 \bigl(\mathrm{Sd}_{\tilde{Q}}\bigr)^{\dagger}=\mathrm{Sd}_{{}^{\natural}\tilde{Q}} \;},
 $$
 
-where $\bar{\tilde{Q}}$ is the coefficient conjugate and ${}^{\natural}\tilde{Q}$ the natural conjugate of the parameter.
+where $\bar{\tilde{Q}}$ is the coefficient conjugate and ${}^{\natural}\tilde{Q}$ the quaternion conjugate of the parameter.
 
 **Proof.** By the anti-automorphism property of ${}^{\natural}$, ${}^{\natural}L_{\tilde{Q}}{}^{\natural}=R_{\tilde{Q}^{\natural}}$ and ${}^{\natural}R_{\tilde Q_3}{}^{\natural}=L_{\tilde Q_3^{\natural}}$ (*The Biquaternion Algebra*, §*The Conjugations and the Classification*). Hence $L_{\tilde{Q}}^{\dagger}={}^{\natural}L_{\tilde{Q}}^{*}{}^{\natural}={}^{\natural}L_{\tilde{Q}^{*}}{}^{\natural}=R_{\tilde{Q}^{*\natural}}$, and $\tilde{Q}^{*\natural}=(\tilde{Q}^{*})^{\natural}=\overline{\tilde{Q}}$ because ${}^{*}$ and ${}^{\natural}$ commute; the second is the same with left and right interchanged. The third follows by antimultiplicativity, $(L_{\tilde{Q}}R_{\tilde Q_3})^{\dagger}=R_{\tilde Q_3}^{\dagger}L_{\tilde{Q}}^{\dagger}=L_{\bar{\tilde Q_3}}R_{\bar{\tilde{Q}}}$. For the two-sided operator, $\mathrm{Sd}_{\tilde{Q}}=L_{\tilde{Q}}R_{\tilde{Q}^{*}}$, so $\mathrm{Sd}_{\tilde{Q}}^{\dagger}=R_{\tilde{Q}^{*}}^{\dagger}L_{\tilde{Q}}^{\dagger}=L_{\overline{\tilde{Q}^{*}}}R_{\bar{\tilde{Q}}}=L_{{}^{\natural}\tilde{Q}}R_{\bar{\tilde{Q}}}=\mathrm{Sd}_{{}^{\natural}\tilde{Q}}$, using $\overline{\tilde{Q}^{*}}={}^{\natural}\tilde{Q}$ and $\mathrm{Sd}_{\tilde{S}}=L_{\tilde{S}}R_{\tilde{S}^{*}}$.
 

@@ -36,7 +36,7 @@ Each structure is read below with its product, the criterion and the annihilatin
 
 ### $\tilde Q_1^{\natural}\tilde Q_2$, the general quaternionic algebra
 
-The product is $\tilde q_1^{\natural}\tilde q_2$. The first factor carries the natural conjugation, a bijection of $\mathbb{H}$ that fixes the centre, and the product is the algebra product composed with that anti-involution.
+The product is $\tilde q_1^{\natural}\tilde q_2$. The first factor carries the quaternion conjugation, a bijection of $\mathbb{H}$ that fixes the centre, and the product is the algebra product composed with that anti-involution.
 
 **The annihilating set is $\{0\}$.** At the partner $\tilde q_2=e_t$ the condition reads $\tilde q_1^{\natural}=0$, whence $\tilde q_1=0$; the right set is empty except for the origin in the same way.
 
@@ -78,7 +78,7 @@ It is alternating, so it vanishes at the two equal arguments, $\tilde q\wedge\ti
 
 | structure | the product | the annihilating set, and why |
 |---|---|---|
-| $\tilde Q_1^{\natural}\tilde Q_2$ | $\tilde q_1^{\natural}\tilde q_2$ | The set is $\{0\}$, because the natural conjugation is a bijection and the partner $e_t$ reads $\tilde q_1^{\natural}$, which vanishes only at the origin. |
+| $\tilde Q_1^{\natural}\tilde Q_2$ | $\tilde q_1^{\natural}\tilde q_2$ | The set is $\{0\}$, because the quaternion conjugation is a bijection and the partner $e_t$ reads $\tilde q_1^{\natural}$, which vanishes only at the origin. |
 | $\tilde Q_1\bullet\tilde Q_2$ | $\tilde q_1\bullet\tilde q_2$ | The set is $\{0\}$, because the unit $e_t$ is a partner of the product and reads the element itself, $\tilde q_1\bullet e_t=\tilde q_1$, which vanishes only at the origin. |
 | $\tilde Q_1\wedge\tilde Q_2$ | $\tilde q_1\wedge\tilde q_2=\vec q_1\times\vec q_2$ | The set is the scalar line $\mathbb{R}_{\mathbb{H}}$, because a scalar has no vector part and the cross product reads the vector parts alone, while a nonzero vector part fails at a partner. |
 
@@ -92,7 +92,7 @@ Two of the three structures are faithful in the sense that no nonzero element ki
 
 **Theorem (the two sides coincide in all three structures).** The left and the right annihilating sets are equal for each of the three companion structures of the quaternion real space.
 
-*Proof.* The symmetric plain product is commutative, so the two multiplications of an element are one operator and the two sets are one set. The general quaternionic product is the algebra product with the first factor carrying the natural conjugation, a bijection, so an element that kills every partner on one side kills every partner on the other. The antisymmetric plain product is alternating, and the sign that exchanges the two factors does not change whether a product vanishes. **The $\mathbb{R}$ case has no exception.** In the biquaternion space the same theorem has two exceptions, the plain product and the general quaternionic sesquilinear product, and both appear only at an element of vanishing norm; over $\mathbb{R}$ the norm $\langle\cdot\rangle_{\natural}$ is positive definite and vanishes at the origin alone.
+*Proof.* The symmetric plain product is commutative, so the two multiplications of an element are one operator and the two sets are one set. The general quaternionic product is the algebra product with the first factor carrying the quaternion conjugation, a bijection, so an element that kills every partner on one side kills every partner on the other. The antisymmetric plain product is alternating, and the sign that exchanges the two factors does not change whether a product vanishes. **The $\mathbb{R}$ case has no exception.** In the biquaternion space the same theorem has two exceptions, the plain product and the general quaternionic sesquilinear product, and both appear only at an element of vanishing norm; over $\mathbb{R}$ the norm $\langle\cdot\rangle_{\natural}$ is positive definite and vanishes at the origin alone.
 
 ## The Annihilating Set and the Zero Divisors
 
@@ -118,7 +118,7 @@ The annihilating set of a product is the set of elements that the product kills 
 
 Three facts summarize the three structures.
 
-- **The annihilating set is the origin alone in two of the three structures, and the scalar line in the third.** The general quaternionic product carries the natural conjugation, a bijection; the symmetric plain product carries the unit $e_t$; and the antisymmetric plain product alone fails to be faithful, its annihilating set being the scalar line $\mathbb{R}_{\mathbb{H}}$, the centre of the algebra, because the cross product forgets the scalar slot.
+- **The annihilating set is the origin alone in two of the three structures, and the scalar line in the third.** The general quaternionic product carries the quaternion conjugation, a bijection; the symmetric plain product carries the unit $e_t$; and the antisymmetric plain product alone fails to be faithful, its annihilating set being the scalar line $\mathbb{R}_{\mathbb{H}}$, the centre of the algebra, because the cross product forgets the scalar slot.
 - **The two one-sided annihilating sets coincide in all three structures**, so the annihilating set is a two-sided ideal of each of them, $\{0\}$ in two cases and the centre in the third. The biquaternion space separates the two sides in two of its structures, and there only at an element of vanishing norm; over $\mathbb{R}$ the norm $\langle\cdot\rangle_{\natural}$ is positive definite and there is no such element.
 - **The radical of the product and the radical of the form agree for the two structures with a nonvanishing form, and they fail for the antisymmetric plain product.** The plain and the quaternion forms are nondegenerate, of radical $\{0\}$, while the cross product has the zero scalar form, of radical all of $\mathbb{H}$, and its annihilating set is the scalar line.
 

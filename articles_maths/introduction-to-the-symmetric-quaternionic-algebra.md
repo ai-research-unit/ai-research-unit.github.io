@@ -2,7 +2,7 @@
 
 ## Introduction
 
-The biquaternion space $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ carries four general products, and the second of them is the **general quaternionic bilinear product** $\tilde Q_1^{\natural}\tilde Q_2$, the plain product with the natural conjugation read on the first factor (*The Four General Products and Their Relations over the Biquaternion Algebra*). Every bilinear product on $\mathbb{B}$ splits into a symmetric part and an antisymmetric part, and this article is the introduction of the block that reads the symmetric part of $\tilde Q_1^{\natural}\tilde Q_2$ as a multiplication:
+The biquaternion space $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ carries four general products, and the second of them is the **general quaternionic bilinear product** $\tilde Q_1^{\natural}\tilde Q_2$, the plain product with the quaternion conjugation read on the first factor (*The Four General Products and Their Relations over the Biquaternion Algebra*). Every bilinear product on $\mathbb{B}$ splits into a symmetric part and an antisymmetric part, and this article is the introduction of the block that reads the symmetric part of $\tilde Q_1^{\natural}\tilde Q_2$ as a multiplication:
 
 $$
 \tilde Q_1\star\tilde Q_2 = \tfrac12\bigl(\tilde Q_1^{\natural}\tilde Q_2 + \tilde Q_2^{\natural}\tilde Q_1\bigr).
@@ -46,7 +46,7 @@ $$ \boxed{\; \tilde Q_1\star\tilde Q_2=\tilde Q_2\star\tilde Q_1,\qquad [\tilde 
 
 *Proof.* Bilinearity is read on the definition, the two slots being linear; commutativity is read on the defining half-sum; centrality is the theorem; and the commutator vanishes because the product is commutative.
 
-**Remark (the value is central although neither summand is).** The two summands $\tilde Q_1^{\natural}\tilde Q_2$ and $\tilde Q_2^{\natural}\tilde Q_1$ are exchanged by the natural conjugation, $(\tilde Q_1^{\natural}\tilde Q_2)^{\natural}=\tilde Q_2^{\natural}\tilde Q_1$, and an average of two elements exchanged by an involution is fixed by it; the elements fixed by ${}^{\natural}$ are the central ones. This is the reason for the centrality, and the reason $\tilde Q_1\bullet_{\natural}\tilde Q_2$ behaves unlike the symmetric part of the plain product, which keeps a vector part. Every later statement of the block is a reading of the formula $\tilde Q_1\star\tilde Q_2=\langle\tilde Q_1,\tilde Q_2\rangle_{\natural}e_t$; the operation is the pairing $\langle\cdot,\cdot\rangle_{\natural}$ placed on the central line.
+**Remark (the value is central although neither summand is).** The two summands $\tilde Q_1^{\natural}\tilde Q_2$ and $\tilde Q_2^{\natural}\tilde Q_1$ are exchanged by the quaternion conjugation, $(\tilde Q_1^{\natural}\tilde Q_2)^{\natural}=\tilde Q_2^{\natural}\tilde Q_1$, and an average of two elements exchanged by an involution is fixed by it; the elements fixed by ${}^{\natural}$ are the central ones. This is the reason for the centrality, and the reason $\tilde Q_1\bullet_{\natural}\tilde Q_2$ behaves unlike the symmetric part of the plain product, which keeps a vector part. Every later statement of the block is a reading of the formula $\tilde Q_1\star\tilde Q_2=\langle\tilde Q_1,\tilde Q_2\rangle_{\natural}e_t$; the operation is the pairing $\langle\cdot,\cdot\rangle_{\natural}$ placed on the central line.
 
 ## The Multiplication Table
 

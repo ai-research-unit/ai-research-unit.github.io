@@ -17,9 +17,9 @@ The first is a subalgebra, indeed the centre, and the second is not closed under
 
 **Proof.** A quaternion fixed by ${}^{\natural}$ has $\vec q=0$ and a quaternion anti-fixed has $q_t=0$, so the intersection is $\tilde q=0$; every $\tilde q=q_t+\vec q$ is the sum of one of each. The subalgebra and centre statements are *Introduction to the Remarkable Subspaces of the Quaternions*; the failure of closure is the product law $\vec q_1\vec q_2=-\langle\vec q_1,\vec q_2\rangle+\vec q_1\times\vec q_2$ recalled there.
 
-## The Sign Pattern of the Natural Sign
+## The Sign Pattern of the Quaternion Conjugation
 
-The natural sign acts on the coordinates by the sign vector
+The quaternion sign acts on the coordinates by the sign vector
 $$
 {}^{\natural}:\ (q_t,q_x,q_y,q_z)\longmapsto(+q_t,-q_x,-q_y,-q_z),
 $$

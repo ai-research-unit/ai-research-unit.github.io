@@ -18,9 +18,8 @@ $\tilde Q_1\wedge\tilde Q_2$ in *The Algebraic Structures over the Quaternioid $
 
 **This is not the algebra $\mathbb{H}$.** The two share the space, the addition and the real
 scalars, but $\times$ is a different multiplication from $\tilde q_1\tilde q_2$: it is alternating, it
-is not associative, and $e_t$ is not a unit. Throughout, the natural sign ${}^{\natural}$ is the
-quaternion conjugation, the bar is the identity because $\mathbb{R}$ has no nontrivial involution,
-and the star coincides with the natural sign and gives nothing new.
+is not associative, and $e_t$ is not a unit. Throughout, the sign ${}^{\natural}$ is the quaternion conjugation, the bar is the identity because $\mathbb{R}$ has no nontrivial involution,
+and the star coincides with the quaternion sign and gives nothing new.
 
 The article owns the operation as a multiplication: the rule, the class, the laws, the sixteen
 products of the basis, the image, the absence of a unit and the reconstruction of the plain product

@@ -24,7 +24,7 @@ Every display below is an element, a product of elements, or a conjugation of on
 
 **The frame.** Every display is written in the $\mathbb{B}_{\Phi}$ frame, where $Q_t=i r'_t$ and $r'_t$ is a length, the time carried with the constant kept, $r'_t=c\,t'$; the metric coefficient of the seconds $t'$ is $g_{tt}=-c^{2}$ and the quadratic form in $r'_t$ is $\langle\tilde Q\rangle_{\natural}=-r'_t^{2}+r_x^{2}+r_y^{2}+r_z^{2}$ (*Frame and Metric Conventions*). The constant $c$ is carried in every display below, and none of them sets it to one.
 
-**The two operators.** The gradient $\tilde\nabla$ and the d'Alembertian $\Box$ are the series operators (*Operator and Calculus Conventions*); the article names them and does not restate them. It uses one property, which the same article fixes: the product of the gradient with its natural conjugate is the d'Alembertian. That product is the sense in which the two first-order operators of the pair below are square roots of $\Box$, and it is a convention of the series, not a result of this article.
+**The two operators.** The gradient $\tilde\nabla$ and the d'Alembertian $\Box$ are the series operators (*Operator and Calculus Conventions*); the article names them and does not restate them. It uses one property, which the same article fixes: the product of the gradient with its quaternion conjugate is the d'Alembertian. That product is the sense in which the two first-order operators of the pair below are square roots of $\Box$, and it is a convention of the series, not a result of this article.
 
 **The letters.** The basis operator of a frame is the right multiplication by the third unit with the phase $-i$, a pure right multiplier whose side is the right slot,
 $$
@@ -159,7 +159,7 @@ sixteen real equations in the sixteen real parameters of the two amplitudes. The
 
 **The solution at fixed momentum.** On the shell the nullity is eight, and the projection onto the first amplitude is of rank eight: the amplitude $\tilde{Ξ}_{\mathrm{sp},0}$ is free and the conjugate amplitude $\tilde{Ξ}_{\mathrm{sp},1}$ is determined by it. The amplitude carries four real coefficients and the conjugate amplitude four more, which is the eight of the Dirac field; the counting of the previous section is the counting of one of the two.
 
-**The shell.** Squaring the equation, and using that the product of the gradient with its natural conjugate is the d'Alembertian, gives $\Box\tilde{Ξ}_{\mathrm{sp}}=k_m^{2}\tilde{Ξ}_{\mathrm{sp}}$ for each amplitude, so the solutions sit on the ordinary mass shell and the mass enters as the parameter of the dispersion and not as a normalisation. The computation is elementary and exact; its result is the first row of the nullity table. Here $k_m=mc/\hbar$ is the mass wave number, the inverse of the mass length.
+**The shell.** Squaring the equation, and using that the product of the gradient with its quaternion conjugate is the d'Alembertian, gives $\Box\tilde{Ξ}_{\mathrm{sp}}=k_m^{2}\tilde{Ξ}_{\mathrm{sp}}$ for each amplitude, so the solutions sit on the ordinary mass shell and the mass enters as the parameter of the dispersion and not as a normalisation. The computation is elementary and exact; its result is the first row of the nullity table. Here $k_m=mc/\hbar$ is the mass wave number, the inverse of the mass length.
 
 **What the pair is not.** The pair is not a second equation. The two lines are the two exponentials of one equation, and a reader who counts them as two fields counts the field and its conjugate twice.
 

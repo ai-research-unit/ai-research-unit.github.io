@@ -9,7 +9,7 @@ Every one of the twelve products equips the complex space with an **algebraic st
 The name is read from its marks: the two slots, their conjugations and the dot or the wedge.
 
 - The **first** letter says which of the three operations of a family is meant: $\mathrm g$ the **general** product, the multiplication itself, $\mathrm s$ its **symmetric** part, $\mathrm a$ its **antisymmetric** part.
-- The **second** letter says which of the two products of the family is meant: $\mathrm p$ the **plain** one and $\mathrm q$ the **quaternionic** one, in the sense of the first slot, read as it stands for $\mathrm p$ and through the natural conjugation ${}^{\natural}$ for $\mathrm q$.
+- The **second** letter says which of the two products of the family is meant: $\mathrm p$ the **plain** one and $\mathrm q$ the **quaternionic** one, in the sense of the first slot, read as it stands for $\mathrm p$ and through the quaternion conjugation ${}^{\natural}$ for $\mathrm q$.
 - The **third** letter says the **family**: $\mathrm a$ the algebra over $\mathbb{C}$, whose second slot is read as it stands, and $\mathrm s$ the sesqualgebra over $\mathbb{C}$, whose second slot carries the Hermitian conjugation ${}^{*}$.
 
 The twelve names are these:
@@ -140,7 +140,7 @@ $$
 | second slot ${}^{*}$ | $\tilde Q_1\tilde Q_2^{*}$, $\tilde Q_1^{\natural}\tilde Q_2^{*}$ | no |
 | from the sesquilinear | $\tilde Q_1\bullet_{*}\tilde Q_2$, $\tilde Q_1\wedge_{*}\tilde Q_2$, $\tilde Q_1\bullet_{\natural*}\tilde Q_2$, $\tilde Q_1\wedge_{\natural*}\tilde Q_2$ | no |
 
-The claim is about the law and not about single elements. The nearest case is $\tilde Q_1^{\natural}\tilde Q_2$, whose product is the plain product read through the natural conjugation of the first slot; it fails at $\vec e_x$, where $\vec e_x^{\natural}=-\vec e_x$.
+The claim is about the law and not about single elements. The nearest case is $\tilde Q_1^{\natural}\tilde Q_2$, whose product is the plain product read through the quaternion conjugation of the first slot; it fails at $\vec e_x$, where $\vec e_x^{\natural}=-\vec e_x$.
 
 
 ---

@@ -4,7 +4,7 @@
 
 The symmetric plain algebra of $\mathbb{H}$ carries the Jordan product $\tilde p\bullet\tilde q=\tfrac12(\tilde p\tilde q+\tilde q\tilde p)$ of *Introduction to the Symmetric Plain Algebra*. This article reads the block on the $4\times4$ **left regular representation** $\mathsf{M}_4:\mathbb{H}\hookrightarrow M_4(\mathbb{R})_{\mathbb{H}_L}$, $\mathsf{M}_4(\tilde q)\tilde q_4=\tilde q\tilde q_4$, so that the Jordan product becomes the half-sum of the two orders of the regular matrices and the two commuting copies of the algebra become visible.
 
-**This is not the algebra $\mathbb{H}$.** The two algebras share the space, the addition, the real scalars and the unit, but $\bullet$ is a different multiplication and the projection onto the scalar line is not multiplicative. Throughout, the natural sign ${}^{\natural}$ is the quaternion conjugation, the bar is the identity because $\mathbb{R}$ has no nontrivial involution, and the star coincides with the natural sign and gives nothing new.
+**This is not the algebra $\mathbb{H}$.** The two algebras share the space, the addition, the real scalars and the unit, but $\bullet$ is a different multiplication and the projection onto the scalar line is not multiplicative. Throughout, the sign ${}^{\natural}$ is the quaternion conjugation, the bar is the identity because $\mathbb{R}$ has no nontrivial involution, and the star coincides with the quaternion sign and gives nothing new.
 
 ## The Representation
 

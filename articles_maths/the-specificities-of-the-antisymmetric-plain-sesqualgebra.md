@@ -32,7 +32,7 @@ The article is the closing entry of the block, after the introduction, the vecto
 
 ## Conventions
 
-$\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ has basis $e_t,\vec e_x,\vec e_y,\vec e_z$ with $\vec e_x\vec e_y=\vec e_z$, central scalar imaginary $i$ and coefficients in $\mathbb{C}$; an element is $\tilde Q=Q_te_t+\vec Q$ with $\vec Q=Q_x\vec e_x+Q_y\vec e_y+Q_z\vec e_z$. The **plain product** is written by juxtaposition $\tilde Q_1\tilde Q_2$ and the parent sesquilinear product $\tilde Q_1\tilde Q_2^{*}$; a product written $\star$ is a generic one and its identity is stated at each use, and $\diamond$ is the product of the block. The conjugations are the natural conjugation ${}^{\natural}$, $\tilde Q^{\natural}=Q_t-\vec Q$, the coefficientwise conjugations $\bar{\cdot}$ and ${}^{*}=\bar{\cdot}\circ{}^{\natural}$; the **left** and the **right multiplication** of a product $\star$ by $\tilde Q_1$ are the maps
+$\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ has basis $e_t,\vec e_x,\vec e_y,\vec e_z$ with $\vec e_x\vec e_y=\vec e_z$, central scalar imaginary $i$ and coefficients in $\mathbb{C}$; an element is $\tilde Q=Q_te_t+\vec Q$ with $\vec Q=Q_x\vec e_x+Q_y\vec e_y+Q_z\vec e_z$. The **plain product** is written by juxtaposition $\tilde Q_1\tilde Q_2$ and the parent sesquilinear product $\tilde Q_1\tilde Q_2^{*}$; a product written $\star$ is a generic one and its identity is stated at each use, and $\diamond$ is the product of the block. The conjugations are the quaternion conjugation ${}^{\natural}$, $\tilde Q^{\natural}=Q_t-\vec Q$, the coefficientwise conjugations $\bar{\cdot}$ and ${}^{*}=\bar{\cdot}\circ{}^{\natural}$; the **left** and the **right multiplication** of a product $\star$ by $\tilde Q_1$ are the maps
 
 $$
 L^{\star}_{\tilde Q_1}:\tilde Q_2\mapsto\tilde Q_1\star\tilde Q_2,
@@ -64,7 +64,7 @@ $$
 L^{\diamond}_{e_t}\tilde Q_1=e_t\diamond\tilde Q_1=\operatorname{Vect}\bigl(e_t\tilde Q_1^{*}\bigr)=\operatorname{Vect}\tilde Q_1^{*}=-\overline{\operatorname{Vect}\tilde Q_1}.
 $$
 
-*Proof.* The product is $\tilde Q_1\diamond\tilde Q_2=\operatorname{Vect}(\tilde Q_1\tilde Q_2^{*})$ and $e_t^{*}=e_t$ is the unit of the plain product, so $\tilde Q_1e_t^{*}=\tilde Q_1$ and $\operatorname{Vect}(\tilde Q_1)=\operatorname{Vect}\tilde Q_1$; the left side is $e_t\tilde Q_1^{*}=\tilde Q_1^{*}$, and $\operatorname{Vect}(\tilde Q_1^{*})=-\overline{\operatorname{Vect}\tilde Q_1}$ because the vector part carries the coefficientwise conjugation with the signs $\varepsilon=(1,-1,-1,-1)$ and the natural conjugation.
+*Proof.* The product is $\tilde Q_1\diamond\tilde Q_2=\operatorname{Vect}(\tilde Q_1\tilde Q_2^{*})$ and $e_t^{*}=e_t$ is the unit of the plain product, so $\tilde Q_1e_t^{*}=\tilde Q_1$ and $\operatorname{Vect}(\tilde Q_1)=\operatorname{Vect}\tilde Q_1$; the left side is $e_t\tilde Q_1^{*}=\tilde Q_1^{*}$, and $\operatorname{Vect}(\tilde Q_1^{*})=-\overline{\operatorname{Vect}\tilde Q_1}$ because the vector part carries the coefficientwise conjugation with the signs $\varepsilon=(1,-1,-1,-1)$ and the quaternion conjugation.
 
 The two displays say the same thing twice: **the splitting is visible to the right multiplication and conjugate-visible to the left one.** The right multiplication by the ambient unit is the projection, so its image is the vector subspace and its kernel is the centre; the left multiplication is the projection followed by the coefficientwise conjugation, so its image is the *conjugate* vector subspace, which is the same space, and its kernel is again the centre.
 
@@ -113,13 +113,13 @@ The criterion is tested on each of the twelve structures by computing the right 
 | the action of $R^{\star}_{e_t}$ | the structures |
 |---|---|
 | the identity | gpa, spa, gps |
-| the natural conjugation | gqa, gqs, sqs |
+| the quaternion conjugation | gqa, gqs, sqs |
 | the projection onto the centre | sqa, sps |
 | the zero operator | apa, aqs |
 | minus the projection onto the vector subspace | aqa |
 | **the projection onto the vector subspace** | **aps** |
 
-The rows are the three operations that generate the twelve. The general products and their symmetric parts act by the identity, by the natural conjugation or by the projection onto the centre; the antisymmetric parts act by zero or by plus or minus the projection onto the vector subspace, because the antisymmetrisation kills the scalar part of the value; and the block is the row in which the sign is $+1$ and no conjugation is applied. The block alone carries the conjugation in the second slot **and** the antisymmetrisation, so that $\tilde Q_1\diamond e_t=\operatorname{Vect}(\tilde Q_1e_t^{*})=\operatorname{Vect}\tilde Q_1$ retains the vector part of $\tilde Q_1$; this is the exact meaning of the trailing $\mathrm S$ of the code.
+The rows are the three operations that generate the twelve. The general products and their symmetric parts act by the identity, by the quaternion conjugation or by the projection onto the centre; the antisymmetric parts act by zero or by plus or minus the projection onto the vector subspace, because the antisymmetrisation kills the scalar part of the value; and the block is the row in which the sign is $+1$ and no conjugation is applied. The block alone carries the conjugation in the second slot **and** the antisymmetrisation, so that $\tilde Q_1\diamond e_t=\operatorname{Vect}(\tilde Q_1e_t^{*})=\operatorname{Vect}\tilde Q_1$ retains the vector part of $\tilde Q_1$; this is the exact meaning of the trailing $\mathrm S$ of the code.
 
 ## The Other Criteria Fail Here
 
@@ -150,7 +150,7 @@ The criterion is sharp and it has one neighbour on each side.
 
 **The antisymmetric quaternionic algebra.** The product $\tilde Q_1\wedge_{\natural}\tilde Q_2$ realises the splitting by its left multiplication, $L_{e_t}=P_{\operatorname{Vect}}$, and by its right multiplication it acts by $-P_{\operatorname{Vect}}$; it is the left twin of the block, and its operator layer is *Introduction to the Antisymmetric Quaternionic Algebra* together with *The Jacobi Failure and the Associator Defect of the Antisymmetric Quaternionic Algebra*, the article of its own specificities being outside the register of the present menu. The block is the right twin, and the two together say that the splitting $\mathbb{B}=\mathbb{B}_{V}\oplus\mathbb{B}_{C}$ is realised by a single element in exactly two of the twelve structures, on opposite sides.
 
-**The conjugate-commutative structures.** $\tilde Q_1\bullet_{*}\tilde Q_2$ and $\tilde Q_1\bullet_{\natural*}\tilde Q_2$ are conjugate-commutative, and their right multiplication by $e_t$ is the projection onto the centre for $\tilde Q_1\bullet_{*}\tilde Q_2$ and the natural conjugation for $\tilde Q_1\bullet_{\natural*}\tilde Q_2$; the projection onto the vector subspace, which is the image of the block, and the projection onto the centre, which is the image of the symmetric plain sesquilinear product, are the two projections the pair realises, on opposite subspaces. The two are the extreme rows of the splitting: **the antisymmetrisation keeps the vector part and loses the scalar part, and the symmetrisation does the converse.**
+**The conjugate-commutative structures.** $\tilde Q_1\bullet_{*}\tilde Q_2$ and $\tilde Q_1\bullet_{\natural*}\tilde Q_2$ are conjugate-commutative, and their right multiplication by $e_t$ is the projection onto the centre for $\tilde Q_1\bullet_{*}\tilde Q_2$ and the quaternion conjugation for $\tilde Q_1\bullet_{\natural*}\tilde Q_2$; the projection onto the vector subspace, which is the image of the block, and the projection onto the centre, which is the image of the symmetric plain sesquilinear product, are the two projections the pair realises, on opposite subspaces. The two are the extreme rows of the splitting: **the antisymmetrisation keeps the vector part and loses the scalar part, and the symmetrisation does the converse.**
 
 **The open question.** Whether the identity $R^{\star}_{\tilde Q_1}=P_{\operatorname{Vect}}$ for some element $\tilde Q_1$ of one of the other eleven can occur after a rescaling of the product, or after a change of basis that does not preserve the involution, is a question of the classification of the twelve and is left to the author. In the basis and the products as fixed, the answer is no, and the isolation of §*The Isolation among the Twelve* is the evidence.
 

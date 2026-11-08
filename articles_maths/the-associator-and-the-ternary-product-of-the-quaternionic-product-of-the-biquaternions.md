@@ -149,7 +149,7 @@ The quaternionic product is not associative, and its associator has the closed f
 | $\vec Q_1 = \sum_{k=1}^{3}Q_{1,k}\vec e_k$ | the vector part |
 | $(\vec Q_1,\vec Q_2)$ | the complex bilinear dot product $\sum_k Q_{1,k}Q_{2,k}$ |
 | $\vec Q_1\times\vec Q_2$ | the complex bilinear cross product |
-| ${}^{\natural}$ | the natural conjugation $\tilde Q_1^{\natural} = Q_{1t} - \vec Q_1$ |
+| ${}^{\natural}$ | the quaternion conjugation $\tilde Q_1^{\natural} = Q_{1t} - \vec Q_1$ |
 | $\tilde Q_1\star\tilde Q_2 = \tilde Q_1^{\natural}\tilde Q_2$ | the general quaternionic bilinear product, the multiplication of this group |
 | $[\tilde Q_1,\tilde Q_2,\tilde Q_3] = (\tilde Q_1\star\tilde Q_2)\star\tilde Q_3 - \tilde Q_1\star(\tilde Q_2\star\tilde Q_3)$ | the associator of the product |
 | $\tilde Q_1\bullet\tilde Q_2 = \tfrac12(\tilde Q_1\star\tilde Q_2+\tilde Q_2\star\tilde Q_1)$ | the symmetrised product |

@@ -30,7 +30,7 @@ $$
 
 The bar is the involution of the **coefficient sector**. It is the only one of the four maps that has a sense over any complex algebra, and over the split-complex numbers $\mathbb{C}_{\mathrm{spl}}$ the coefficientwise conjugation degenerates to the identity because the coefficients are real.
 
-### The Natural Sign
+### The Quaternion Conjugation
 
 **The tessarine sign negates the second slot, and it is the intrinsic conjugate of the algebra: it fixes the scalar line $\mathbb{C}$ and negates the $j$-line $\mathbb{C}j$.**
 
@@ -190,7 +190,7 @@ and their fixed spaces — $\mathbb{R}\{1,j\}$ the real subalgebra, $\mathbb{C}=
 - [Reduced Biquaternion Space](reduced-biquaternion-space.html), above this article in this category, for the algebra, the basis and the idempotents.
 - [Reduced Biquaternions as a Vector Space over $\mathbb{R}$ and $\mathbb{C}$](reduced-biquaternions-as-a-vector-space-over-r-and-c.html), above this article, for the linear and antilinear characters of the four maps.
 - [Conventions in Mathematics](algebra-and-element-conventions.html), §*The Conjugations*, for the bar, the tessarine sign, the star and the flat, the Klein group and the dagger.
-- [The Group of Involutions](the-group-of-involutions.html), the biquaternion counterpart, for the same group over the non-commutative algebra, where the natural sign and the star are anti-automorphisms.
+- [The Group of Involutions](the-group-of-involutions.html), the biquaternion counterpart, for the same group over the non-commutative algebra, where the quaternion sign and the star are anti-automorphisms.
 - [The Four Products, Their Forms and Their Algebraic Norms](the-four-products-their-forms-and-their-algebraic-norms.html), below this article, for the four general products whose slots carry the maps of this article.
 - [Introduction to the Remarkable Subspaces](introduction-to-the-remarkable-subspaces.html), below this article in this category, for the fixed spaces as subspaces.
 - [Square Roots of One and the Idempotents of the Algebra of the Reduced Biquaternions](square-roots-of-one-and-the-idempotents-of-the-algebra-of-the-reduced-biquaternions.html), below this article, for the idempotents and their behaviour under the four maps.

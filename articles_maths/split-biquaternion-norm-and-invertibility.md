@@ -29,7 +29,7 @@ $$
 \langle X_1,X_2\rangle_{\sigma_1\sigma_2}=\mathrm{Sc}\bigl(X_1^{\sigma_1}X_2^{\sigma_2}\bigr),
 $$
 
-with each $\sigma$ the identity, the natural sign ${}^{\natural}$ or the star ${}^{*}$. The plain, the quaternionic, the Hermitian and the Krein form are therefore $\langle\cdot,\cdot\rangle$, $\langle\cdot,\cdot\rangle_{\natural}$, $\langle\cdot,\cdot\rangle_{*}$ and $\langle\cdot,\cdot\rangle_{\natural*}$, and the four norms are their values at equal arguments. The Hermitian form is linear in the first slot and split-antilinear in the second; the geometry articles write it $g$.
+with each $\sigma$ the identity, the quaternion sign ${}^{\natural}$ or the star ${}^{*}$. The plain, the quaternionic, the Hermitian and the Krein form are therefore $\langle\cdot,\cdot\rangle$, $\langle\cdot,\cdot\rangle_{\natural}$, $\langle\cdot,\cdot\rangle_{*}$ and $\langle\cdot,\cdot\rangle_{\natural*}$, and the four norms are their values at equal arguments. The Hermitian form is linear in the first slot and split-antilinear in the second; the geometry articles write it $g$.
 
 ## The Split-Biquaternion Norm
 
@@ -210,7 +210,7 @@ The form used in *Split-Biquaternion Rotations and the Lorentz Group* and in the
 
 ### The Krein Form
 
-The fourth form carries the natural sign in the first slot and the star in the second:
+The fourth form carries the quaternion sign in the first slot and the star in the second:
 
 $$
 \langle\tilde Q_1,\tilde Q_2\rangle_{\natural*}=\mathrm{Sc}(\tilde Q_1^{\natural}\tilde Q_2^{*})=Q_{1t}\bar Q_{2t}-\sum_k Q_{1k}\bar Q_{2k},
@@ -222,7 +222,7 @@ $$
 \langle\tilde Q\rangle_{\natural*}=Q_t\bar Q_t-\sum_k Q_k\bar Q_k=\sum_\mu\epsilon_\mu(q_\mu^2-q'^2_\mu),\qquad (\epsilon_t,\epsilon_x,\epsilon_y,\epsilon_z)=(+1,-1,-1,-1),
 $$
 
-which is real of signature $(4,4)$. It is the natural-sign partner of the Hermitian form: on $\mathbb{B}_{\Psi}$ it is positive definite of signature $(4,0)$, where the Hermitian form is Lorentzian of signature $(1,3)$, and on $\mathbb{B}_{\Phi}$ it is negative definite of signature $(0,4)$, where the Hermitian form is $(3,1)$.
+which is real of signature $(4,4)$. It is the $\natural$-partner of the Hermitian form: on $\mathbb{B}_{\Psi}$ it is positive definite of signature $(4,0)$, where the Hermitian form is Lorentzian of signature $(1,3)$, and on $\mathbb{B}_{\Phi}$ it is negative definite of signature $(0,4)$, where the Hermitian form is $(3,1)$.
 
 ### The Four Forms and Their Norms
 

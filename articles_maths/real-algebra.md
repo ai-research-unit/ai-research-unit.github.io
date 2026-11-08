@@ -165,7 +165,7 @@ where the product $q_1 q_2$ is that of the real field.
 
 ### Conjugations
 
-There is **one** natural conjugation on $\mathbb{R}$, and it is trivial: the identity map.
+There is **one** quaternion conjugation on $\mathbb{R}$, and it is trivial: the identity map.
 
 **Identity conjugation** $\operatorname{id}$:
 

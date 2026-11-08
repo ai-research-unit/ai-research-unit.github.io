@@ -8,7 +8,7 @@ This article records the equations, the spin chains they live on, and the third 
 
 It is worth separating this article from the companion that shares the name Bhabha. *Bhabha Scattering in Biquaternionic Form* is about the elastic scattering of an electron and a positron; the present article is about Bhabha's *wave equations*, a different piece of work by the same author. The two are cross-referenced and not merged.
 
-**The algebra and the calculus, by citation.** The algebra is the biquaternion algebra of *Algebra and Element Conventions*, with its four units, its coefficient basis and its conjugations; the gradient, its natural conjugate and the d'Alembertian are those of *Operator and Calculus Conventions*, §*The Gradient*; the two sides of an action are those of that article, §*The Two Sides and the Renaming Theorem*. No symbol of those files is defined here, and two of their statements are used and cited rather than restated: the product $\tilde\nabla\tilde\nabla^{\natural}=\tilde\nabla^{\natural}\tilde\nabla=\Box$, and the exchange by which a right action on an element is a left action on its conjugate.
+**The algebra and the calculus, by citation.** The algebra is the biquaternion algebra of *Algebra and Element Conventions*, with its four units, its coefficient basis and its conjugations; the gradient, its quaternion conjugate and the d'Alembertian are those of *Operator and Calculus Conventions*, §*The Gradient*; the two sides of an action are those of that article, §*The Two Sides and the Renaming Theorem*. No symbol of those files is defined here, and two of their statements are used and cited rather than restated: the product $\tilde\nabla\tilde\nabla^{\natural}=\tilde\nabla^{\natural}\tilde\nabla=\Box$, and the exchange by which a right action on an element is a left action on its conjugate.
 
 Displayed formulae are written with their imaginary units reduced whenever the algebra allows it; where the source's own conventions leave a reduction undecided, the display is transcribed as printed and the undecided step is flagged rather than silently repaired.
 
@@ -233,7 +233,7 @@ $$
 \boxed{\;\tilde\nabla\tilde{Ξ}_{\mathrm{sp},R}=k_m\tilde{Ξ}_{\mathrm{sp},L},\qquad \tilde\nabla^{\natural}\tilde{Ξ}_{\mathrm{sp},L}=k_m\tilde{Ξ}_{\mathrm{sp},R}\;}
 $$
 
-Each member is one left multiplication, by the gradient or by its natural conjugate; one equation per value; the mass is the only term that couples them. At $m=0$ the pair decouples into $\tilde\nabla\tilde{Ξ}_{\mathrm{sp},R}=0$ and $\tilde\nabla^{\natural}\tilde{Ξ}_{\mathrm{sp},L}=0$. Applying $\tilde\nabla^{\natural}$ to the first member and using the second gives $\tilde\nabla^{\natural}\tilde\nabla\tilde{Ξ}_{\mathrm{sp},R}=k_m^{2}\tilde{Ξ}_{\mathrm{sp},R}$, that is
+Each member is one left multiplication, by the gradient or by its quaternion conjugate; one equation per value; the mass is the only term that couples them. At $m=0$ the pair decouples into $\tilde\nabla\tilde{Ξ}_{\mathrm{sp},R}=0$ and $\tilde\nabla^{\natural}\tilde{Ξ}_{\mathrm{sp},L}=0$. Applying $\tilde\nabla^{\natural}$ to the first member and using the second gives $\tilde\nabla^{\natural}\tilde\nabla\tilde{Ξ}_{\mathrm{sp},R}=k_m^{2}\tilde{Ξ}_{\mathrm{sp},R}$, that is
 
 $$
 \Box\tilde{Ξ}_{\mathrm{sp},R}=k_m^{2}\tilde{Ξ}_{\mathrm{sp},R},
@@ -357,7 +357,7 @@ The framework's relation to this is the fundamental doublet's factor: $\mathbb{C
 | $\Pi_j=M^{l}_j\otimes\mathbf{1}-\mathbf{1}\otimes M^{\bar l}_j$, $\Pi_jX=X(M^{l}_j)^{\mathsf T}-M^{\bar l}_jX$ | Tensor-product generator of the $\mathbb{R}^6$ equation; two-sided, the article's one such operator |
 | $\mathbb{C}^3\cong\mathbb{R}^6$ | Complex form of the bivector space, Lorentz parameter space |
 | $(59/2,29)$, degree $3540$ | The proton's chain member |
-| $\tilde\nabla$, $\tilde\nabla^{\natural}$, $\Box$ | The gradient, its natural conjugate and the d'Alembertian, all of *Operator and Calculus Conventions* |
+| $\tilde\nabla$, $\tilde\nabla^{\natural}$, $\Box$ | The gradient, its quaternion conjugate and the d'Alembertian, all of *Operator and Calculus Conventions* |
 | $\tilde\nabla\tilde{Ξ}_{\mathrm{sp},R}=k_m\tilde{Ξ}_{\mathrm{sp},L}$, $\tilde\nabla^{\natural}\tilde{Ξ}_{\mathrm{sp},L}=k_m\tilde{Ξ}_{\mathrm{sp},R}$ | The Dirac pair: each member one left multiplication, one equation per value |
 
 Here $k_m=mc/\hbar$ is the mass wave number, the inverse of the mass length.

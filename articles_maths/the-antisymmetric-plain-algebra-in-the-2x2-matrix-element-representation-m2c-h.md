@@ -15,9 +15,8 @@ The reading is the standard one: the commutator of two matrix images is the imag
 image is the trace-free part, and the trace form on that part is the Killing form of the block.
 
 **This is not the algebra $\mathbb{H}$.** The model is an algebra embedding of the plain product; the
-antisymmetric block is read on it as the commutator and is not the matrix product. Throughout, the
-natural sign ${}^{\natural}$ is the quaternion conjugation, the bar is the identity because
-$\mathbb{R}$ has no nontrivial involution, and the star coincides with the natural sign and gives
+antisymmetric block is read on it as the commutator and is not the matrix product. Throughout, the sign ${}^{\natural}$ is the quaternion conjugation, the bar is the identity because
+$\mathbb{R}$ has no nontrivial involution, and the star coincides with the quaternion sign and gives
 nothing new.
 
 The model itself, its basis images and the multiplicativity are *Introduction to the $2\times2$ Matrix

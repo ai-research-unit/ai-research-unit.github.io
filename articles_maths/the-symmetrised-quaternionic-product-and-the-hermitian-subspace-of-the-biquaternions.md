@@ -43,7 +43,7 @@ $$
 \boxed{\; \tilde Q_1\star\tilde Q_2 = \tilde Q_1\bullet\tilde Q_2 + \tfrac12\bigl[\tilde Q_1,\tilde Q_2\bigr]_{\star} , \qquad \bigl[\tilde Q_1,\tilde Q_2\bigr]_{\star} = \tilde Q_1^{\natural}\tilde Q_2 - \tilde Q_2^{\natural}\tilde Q_1 \;}.
 $$
 
-**Remark (the two summands are exchanged by the conjugation).** The natural conjugation is an anti-automorphism of order two, so $(\tilde Q_1^{\natural}\tilde Q_2)^{\natural} = \tilde Q_2^{\natural}\tilde Q_1$: the conjugation exchanges the two summands of the symmetrisation. The average of two quantities exchanged by an involution is fixed by it, and the elements fixed by ${}^{\natural}$ are exactly the central ones; this is the structural reason for the centrality of the corollary, and it also shows why the individual summands are not central while their average is. The same computation is the reason the symmetrisation of the sesquilinear products of the sibling group behaves differently: there the exchanging map carries a conjugate-linear slot.
+**Remark (the two summands are exchanged by the conjugation).** The quaternion conjugation is an anti-automorphism of order two, so $(\tilde Q_1^{\natural}\tilde Q_2)^{\natural} = \tilde Q_2^{\natural}\tilde Q_1$: the conjugation exchanges the two summands of the symmetrisation. The average of two quantities exchanged by an involution is fixed by it, and the elements fixed by ${}^{\natural}$ are exactly the central ones; this is the structural reason for the centrality of the corollary, and it also shows why the individual summands are not central while their average is. The same computation is the reason the symmetrisation of the sesquilinear products of the sibling group behaves differently: there the exchanging map carries a conjugate-linear slot.
 
 **Definition.** The **symmetrised quaternionic product** is the commutative operation $\bullet$ on $\mathbb{B}$, with $\tilde Q_1\bullet\tilde Q_2 = \tfrac12(\tilde Q_1\star\tilde Q_2 + \tilde Q_2\star\tilde Q_1)$, and the central coefficient is written
 
@@ -136,7 +136,7 @@ The symmetrised quaternionic product $\tilde Q_1\bullet\tilde Q_2 = \tfrac12(\ti
 | $\vec Q_1 = \sum_{k=1}^{3}Q_{1,k}\vec e_k$ | the vector part |
 | $(\vec Q_1,\vec Q_2)$ | the complex bilinear dot product $\sum_k Q_{1,k}Q_{2,k}$ |
 | $\vec Q_1\times\vec Q_2$ | the complex bilinear cross product |
-| ${}^{\natural}$ | the natural conjugation $\tilde Q_1^{\natural} = Q_{1t} - \vec Q_1$ |
+| ${}^{\natural}$ | the quaternion conjugation $\tilde Q_1^{\natural} = Q_{1t} - \vec Q_1$ |
 | $\tilde Q_1\star\tilde Q_2 = \tilde Q_1^{\natural}\tilde Q_2$ | the general quaternionic bilinear product, the multiplication of this group |
 | $\tilde Q_1\bullet\tilde Q_2 = \tfrac12(\tilde Q_1\star\tilde Q_2+\tilde Q_2\star\tilde Q_1)$ | the symmetrised quaternionic product |
 | $\beta(\tilde Q_1,\tilde Q_2) = Q_{1t}Q_{2t}+(\vec Q_1,\vec Q_2)$ | its central coefficient |

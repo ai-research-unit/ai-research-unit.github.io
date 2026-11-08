@@ -27,7 +27,7 @@ The order is: the norm reading of the four letters, the qualified regular and de
 | $\langle Q_1,Q_2\rangle=Q_1Q_2$ | plain, also quaternionic | $\langle Q\rangle=Q^2\in\mathbb{C}$, $\operatorname{Re}\langle Q\rangle=q^2-q'^2$ | $(1,1)$ | anisotropic; real part indefinite |
 | $\langle Q_1,Q_2\rangle_{*}=Q_1\bar Q_2$ | Hermitian, also Krein | $\langle Q\rangle_{*}=Q\bar Q=q^2+q'^2$ | $(2,0)$ | definite; multiplicative; topology |
 
-In $\mathbb{C}$ the star bracket is definite and multiplicative at once. The plain norm is complex and anisotropic, $\langle Q\rangle=0$ only at $Q=0$; its real part is indefinite. The natural sign being the identity, the quaternionic bracket is the plain one and the Krein bracket the Hermitian one.
+In $\mathbb{C}$ the star bracket is definite and multiplicative at once. The plain norm is complex and anisotropic, $\langle Q\rangle=0$ only at $Q=0$; its real part is indefinite. The quaternion sign being the identity, the quaternionic bracket is the plain one and the Krein bracket the Hermitian one.
 
 **The split-complex numbers $\mathbb{C}_{\mathrm{spl}}$**, $Q=q+jq'$, $j^2=+1$.
 
@@ -74,7 +74,7 @@ The tessarine bracket carries the algebra and the tessarine-Hermitian bracket ca
 | $\langle\tilde q_1,\tilde q_2\rangle=\mathrm{Sc}(\tilde q_1\tilde q_2)$ | plain, also Krein | $q_t^2-q_x^2-q_y^2-q_z^2$ | $(1,3)$ | indefinite; not multiplicative |
 | $\langle\tilde q_1,\tilde q_2\rangle_{\natural}=\mathrm{Sc}(\tilde q_1^{\natural}\tilde q_2)$ | quaternionic, also Hermitian | $q_t^2+q_x^2+q_y^2+q_z^2$ | $(4,0)$ | definite; multiplicative; topology |
 
-The coefficients are real and the only non-trivial involution is the natural sign, so the Hermitian form is the quaternionic one and the Krein form the plain one. The quaternionic form is definite and its norm is multiplicative, the usual quaternion norm $q_t^2+q_x^2+q_y^2+q_z^2$; the plain form is indefinite and its norm is not multiplicative.
+The coefficients are real and the only non-trivial involution is the quaternion sign, so the Hermitian form is the quaternionic one and the Krein form the plain one. The quaternionic form is definite and its norm is multiplicative, the usual quaternion norm $q_t^2+q_x^2+q_y^2+q_z^2$; the plain form is indefinite and its norm is not multiplicative.
 
 **The split-quaternions $\mathbb{H}_{\mathrm{spl}}$**, the same glyph over the units $\vec e_x^2=-e_t$ and $\vec e_y^2=\vec e_z^2=+e_t$.
 
@@ -96,7 +96,7 @@ The collapse of the names is the same. The quaternionic norm is the split-quater
 
 The quaternionic norm is the determinant in the $2\times2$ image and is the multiplicative one, vanishing exactly on the zero-divisor cone; the Hermitian norm is the definite one and carries the topology; the plain and the Krein norms are the remaining two, complex and indefinite respectively. The signature column is that of the realified form on the eight real parameters; on the material sector the restrictions are those stated above. The split-biquaternion layer $\mathbb{B}_{\mathrm{spl}}$ keeps the same four brackets, its coefficients being split-complex instead of complex, so the two bilinear norms take split-complex values and the two sesquilinear ones stay real.
 
-**The one-line rule.** Write the bracket with the intrinsic conjugation of the layer: the star in $\mathbb{C}$, $\mathbb{C}_{\mathrm{spl}}$ and $\mathbb{C}_{\mathrm{dln}}$, where the natural sign is the identity; the natural sign in $\mathbb{H}$ and $\mathbb{H}_{\mathrm{spl}}$, where the bar is the identity; the tessarine sign in $\mathbb{B}_{\mathrm{red}}$; and both marks, all four brackets, in $\mathbb{B}$ and $\mathbb{B}_{\mathrm{spl}}$.
+**The one-line rule.** Write the bracket with the intrinsic conjugation of the layer: the star in $\mathbb{C}$, $\mathbb{C}_{\mathrm{spl}}$ and $\mathbb{C}_{\mathrm{dln}}$, where the intrinsic conjugation is the identity; the quaternion conjugation in $\mathbb{H}$ and $\mathbb{H}_{\mathrm{spl}}$, where the bar is the identity; the tessarine sign in $\mathbb{B}_{\mathrm{red}}$; and both marks, all four brackets, in $\mathbb{B}$ and $\mathbb{B}_{\mathrm{spl}}$.
 
 ### The Unitary Convention
 
@@ -151,7 +151,7 @@ of real dimension four, written upright because it is a group. Its elements are 
 
 A boost is a unit element and is not unitary. A unitary element whose determinant is not one is unitary and is not a unit element. The glyph asserts the first and never the second; an article that needs a unitary element states $\tilde Q^{*}\tilde Q=e_t$ on it.
 
-**The norm and the group condition exist only where their involution does**: the bar alone over $\mathbb{C}$ and the split-complex numbers, the natural sign alone over $\mathbb{H}$ and the split-quaternions, the bar, the tessarine sign and the star over $\mathbb{B}_{\mathrm{red}}$, and all four marks over $\mathbb{B}$ and the split-biquaternions.
+**The norm and the group condition exist only where their involution does**: the bar alone over $\mathbb{C}$ and the split-complex numbers, the quaternion sign alone over $\mathbb{H}$ and the split-quaternions, the bar, the tessarine sign and the star over $\mathbb{B}_{\mathrm{red}}$, and all four marks over $\mathbb{B}$ and the split-biquaternions.
 
 **The case rule splits the glyph**, as for the elements: $\tilde U$ in the biquaternion and split-biquaternion layers, $\tilde u$ in the quaternion and split-quaternion ones, $U$ in the complex, split-complex, dual and reduced biquaternion ones. The pure case carries the arrow, $\vec u$ and $\vec U$.
 

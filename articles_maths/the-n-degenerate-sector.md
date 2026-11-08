@@ -12,7 +12,7 @@ the **null cone**. It contains the origin at its apex and the zero divisors at i
 
 The cone is split by the scalar part into two strata, the **pure** stratum of nilpotents and the **non-pure** stratum of complex multiples of idempotents. On the cone this split coincides exactly with the spectral split: the pure stratum, with the origin adjoined, is the doubly degenerate sector $\Sigma_{00}$, and the non-pure stratum is the norm-degenerate, spectrally regular sector $\Sigma_{01}$. That coincidence is special to the cone and is the main structural link between the norm partition and the spectral partition.
 
-**Conventions.** The algebra is $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ on the basis $e_t,\vec e_x,\vec e_y,\vec e_z$, of complex dimension four and real dimension eight, with $\vec e_x\vec e_y=\vec e_z$ and $\vec e_k^2=-e_t$. An element is $\tilde Q=Q_te_t+\vec Q$ with $Q_\mu\in\mathbb{C}$ and $\vec Q=Q_x\vec e_x+Q_y\vec e_y+Q_z\vec e_z$. The natural conjugation is $\tilde Q^{\natural}=Q_t-\vec Q$ and the Hermitian conjugation is $\tilde Q^{*}=\overline{Q_t}-\overline{\vec Q}$. The **quaternionic norm** is
+**Conventions.** The algebra is $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ on the basis $e_t,\vec e_x,\vec e_y,\vec e_z$, of complex dimension four and real dimension eight, with $\vec e_x\vec e_y=\vec e_z$ and $\vec e_k^2=-e_t$. An element is $\tilde Q=Q_te_t+\vec Q$ with $Q_\mu\in\mathbb{C}$ and $\vec Q=Q_x\vec e_x+Q_y\vec e_y+Q_z\vec e_z$. The quaternion conjugation is $\tilde Q^{\natural}=Q_t-\vec Q$ and the Hermitian conjugation is $\tilde Q^{*}=\overline{Q_t}-\overline{\vec Q}$. The **quaternionic norm** is
 
 $$
 \langle\tilde Q\rangle_{\natural}=Q_t^2+B^2,\qquad B^2=Q_x^2+Q_y^2+Q_z^2,
@@ -470,7 +470,7 @@ The polar decomposition survives on the cone in degenerate form: the Hermitian f
 |---|---|
 | $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ | the biquaternion algebra, complex dimension four, real dimension eight |
 | $\tilde Q=Q_te_t+\vec Q$ | an element and its scalar–vector split |
-| $\tilde Q^{\natural}=Q_t-\vec Q$ | the natural conjugation |
+| $\tilde Q^{\natural}=Q_t-\vec Q$ | the quaternion conjugation |
 | $\tilde Q^{*}=\overline{Q_t}-\overline{\vec Q}$ | the Hermitian conjugation |
 | $\langle\tilde Q\rangle_{\natural}=Q_t^2+B^2$ | the quaternionic norm |
 | $B^2=Q_x^2+Q_y^2+Q_z^2$ | the square of the vector part |

@@ -36,7 +36,7 @@ $$
 e_t^{\natural} = \bar{e_t} = e_t^{*} = e_t ,
 $$
 
-while each of the three vector units changes sign under the natural conjugation, $\vec e_k^{\natural} = -\vec e_k$. The temporal direction is the direction fixed by the natural, complex and Hermitian conjugations. Only the anti-Hermitian conjugation $\flat = -{}^{*}$ negates $e_t$, $e_t^{\flat} = -e_t$, while fixing the three vector units.
+while each of the three vector units changes sign under the quaternion conjugation, $\vec e_k^{\natural} = -\vec e_k$. The temporal direction is the direction fixed by the natural, complex and Hermitian conjugations. Only the anti-Hermitian conjugation $\flat = -{}^{*}$ negates $e_t$, $e_t^{\flat} = -e_t$, while fixing the three vector units.
 
 **It is the direction the rotations fix and the boosts move.** The Lorentz action is rotor conjugation, $\tilde Q \mapsto \tilde U\tilde Q\tilde U^{*}$ for $\tilde U$ in the norm-one group $\mathbb{B}^\times_1 = \{\tilde U : \langle\tilde U\rangle_{\natural} = e_t\}$. A **rotation** is a unit real quaternion, an element of $Sp(1) \subset \mathbb{B}^\times_1$, and it fixes the temporal unit,
 

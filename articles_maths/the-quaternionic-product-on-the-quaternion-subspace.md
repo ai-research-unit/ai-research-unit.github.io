@@ -15,7 +15,7 @@ $$
 \mathbb{B}_{H} = \mathbb{R}e_t+\mathbb{R}\vec e_x+\mathbb{R}\vec e_y+\mathbb{R}\vec e_z ,
 $$
 
-the **quaternion subspace** (*Subspaces and Decompositions* §*The Quaternion Subspace*). Its elements are the real quaternions: the four coefficients are real, and the subspace is the fixed space of complex conjugation, $\bar{\tilde Q_1} = \tilde Q_1$ if and only if $\tilde Q_1 \in \mathbb{B}_{H}$. On it the natural conjugation acts as the quaternion conjugate, $h^{\natural} = \bar h$, which fixes the real line alone; the fixed set of ${}^{\natural}$ on the whole algebra is the centre, not the subspace.
+the **quaternion subspace** (*Subspaces and Decompositions* §*The Quaternion Subspace*). Its elements are the real quaternions: the four coefficients are real, and the subspace is the fixed space of complex conjugation, $\bar{\tilde Q_1} = \tilde Q_1$ if and only if $\tilde Q_1 \in \mathbb{B}_{H}$. On it the quaternion conjugation coincides with the bar, $h^{\natural} = \bar h$, which fixes the real line alone; the fixed set of ${}^{\natural}$ on the whole algebra is the centre, not the subspace.
 
 The article establishes four things. First, the subspace is closed under the product, and the restriction is the familiar operation of putting the first factor into its quaternion conjugate,
 
@@ -35,7 +35,7 @@ $$
 
 where $\bar h$ is the quaternion conjugate of $h$.
 
-**Proof.** For a real quaternion $h = h_t+h_x\vec e_x+h_y\vec e_y+h_z\vec e_z$ the natural conjugation is $h^{\natural} = h_t-h_x\vec e_x-h_y\vec e_y-h_z\vec e_z$, the quaternion conjugate; the conjugation is an anti-automorphism of the plain product, so $\bar h g$ is again a real quaternion, and the coefficients of $\bar h g$ are sums of products of real numbers and of the structure constants of the quaternion algebra, hence real.
+**Proof.** For a real quaternion $h = h_t+h_x\vec e_x+h_y\vec e_y+h_z\vec e_z$ the quaternion conjugation is $h^{\natural} = h_t-h_x\vec e_x-h_y\vec e_y-h_z\vec e_z$, the quaternion conjugate; the conjugation is an anti-automorphism of the plain product, so $\bar h g$ is again a real quaternion, and the coefficients of $\bar h g$ are sums of products of real numbers and of the structure constants of the quaternion algebra, hence real.
 
 **Corollary (the subspace is a real algebra with a left unit only).** $\mathbb{B}_{H}$ is a four-dimensional real algebra under $\star$, with $e_t$ as a left unit, $e_t\star g = g$, and no right unit, $h\star e_t = \bar h$, which differs from $h$ as soon as the vector part of $h$ is nonzero. In particular the subspace is closed under $\star$ but is not the quaternion algebra: the element $h = i$ gives $i\star e_t = -i$ whereas $i e_t = i$.
 
@@ -45,7 +45,7 @@ where $\bar h$ is the quaternion conjugate of $h$.
 
 Inside $\mathbb{B}_{H}$ sit two smaller real subspaces, the real vector subspace $\mathbb{R}\vec e_x+\mathbb{R}\vec e_y+\mathbb{R}\vec e_z$ and the real line $\mathbb{R}e_t$, and the product restricts to each in a way worth recording, because the restriction along the chain $\mathbb{R}e_t\subset\mathbb{R}\vec e_x+\mathbb{R}\vec e_y+\mathbb{R}\vec e_z\subset\mathbb{B}_{H}$ is what the vector part of the whole algebra sees.
 
-**The real vector subspace.** For real pure quaternions $\vec q,\vec v$, the natural conjugation is the negation, $\vec q^{\natural} = -\vec q$, so
+**The real vector subspace.** For real pure quaternions $\vec q,\vec v$, the quaternion conjugation is the negation, $\vec q^{\natural} = -\vec q$, so
 
 $$
 \vec q\star\vec v = \vec q^{\natural}\vec v = -\vec q\vec v = -(\vec q,\vec v)e_t+\vec q\times\vec v .
@@ -154,7 +154,7 @@ The quaternion subspace $\mathbb{B}_{H}$, of real dimension four, is the fixed s
 | $\mathbb{B}_{H}$ | the quaternion subspace $\mathbb{R}e_t+\mathbb{R}\vec e_x+\mathbb{R}\vec e_y+\mathbb{R}\vec e_z$ |
 | $h = h_t+h_x\vec e_x+h_y\vec e_y+h_z\vec e_z$ | a real quaternion, all four coefficients real |
 | $\bar h = h_t-h_x\vec e_x-h_y\vec e_y-h_z\vec e_z$ | the quaternion conjugate, the restriction of ${}^{\natural}$ |
-| ${}^{\natural}$ | the natural conjugation $\tilde Q_1^{\natural} = Q_{1t}-\vec Q_1$ |
+| ${}^{\natural}$ | the quaternion conjugation $\tilde Q_1^{\natural} = Q_{1t}-\vec Q_1$ |
 | $\tilde Q_1\star\tilde Q_2 = \tilde Q_1^{\natural}\tilde Q_2$ | the general quaternionic bilinear product, the multiplication of this group |
 | $h\bullet g = \tfrac12(\bar hg+\bar gh)$ | the symmetrisation of the restricted product, the definite inner product of the subspace |
 | $\tilde Q_1\tilde Q_2$ | the plain (associative) product of the algebra |

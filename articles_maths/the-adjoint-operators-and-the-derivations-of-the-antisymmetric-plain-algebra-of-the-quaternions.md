@@ -16,9 +16,9 @@ product of the nonzero scalings of the centre and the group of linear maps of th
 preserving the cross product.
 
 **This is not the algebra $\mathbb{H}$.** The operators are read on the Lie bracket, not on the
-associative product. Throughout, the natural sign ${}^{\natural}$ is the quaternion conjugation, the
+associative product. Throughout, the sign ${}^{\natural}$ is the quaternion conjugation, the
 bar is the identity because $\mathbb{R}$ has no nontrivial involution, and the star coincides with the
-natural sign and gives nothing new.
+quaternion sign and gives nothing new.
 
 The operation and the Jacobi identity are *The Specificities of the Antisymmetric Plain Algebra*; the
 Lie structure is *The Lie Algebra of the Antisymmetric Plain Algebra* and the form is *The Killing Form

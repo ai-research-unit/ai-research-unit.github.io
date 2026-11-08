@@ -4,7 +4,7 @@
 
 The symmetric plain algebra of $\mathbb{H}$ carries the Jordan product $\tilde q_1\bullet\tilde q_2=\tfrac12(\tilde q_1\tilde q_2+\tilde q_2\tilde q_1)$ of *Introduction to the Symmetric Plain Algebra*. This article reads the block on the $2\times2$ **matrix element representation**, the real-linear embedding $\mathsf{M}_2:\mathbb{H}\hookrightarrow M_2(\mathbb{C})$ that carries the plain product to the matrix product, so that the Jordan product becomes the half-sum of the two orders of the matrices.
 
-**This is not the algebra $\mathbb{H}$.** The two algebras share the space, the addition, the real scalars and the unit, but $\bullet$ is a different multiplication and the projection onto the scalar line is not multiplicative. Throughout, the natural sign ${}^{\natural}$ is the quaternion conjugation, the bar is the identity because $\mathbb{R}$ has no nontrivial involution, and the star coincides with the natural sign and gives nothing new.
+**This is not the algebra $\mathbb{H}$.** The two algebras share the space, the addition, the real scalars and the unit, but $\bullet$ is a different multiplication and the projection onto the scalar line is not multiplicative. Throughout, the sign ${}^{\natural}$ is the quaternion conjugation, the bar is the identity because $\mathbb{R}$ has no nontrivial involution, and the star coincides with the quaternion sign and gives nothing new.
 
 ## The Representation
 

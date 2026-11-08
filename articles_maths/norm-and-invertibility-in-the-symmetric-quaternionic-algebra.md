@@ -68,7 +68,7 @@ At $\tilde Q_1=\vec e_x$, $\tilde Q_2=\vec e_y$ the first is $0$ because $\langl
 
 The block therefore carries **no multiplicative algebraic norm of its own**: the multiplicativity holds for the plain product, and the diagonal of the block transmits it to that product and no further. A reader who expects $\langle\tilde Q_1\star\tilde Q_2\rangle_{\natural}=\langle\tilde Q_1\rangle_{\natural}\langle\tilde Q_2\rangle_{\natural}$ is reading the multiplicity of the plain product into the block.
 
-**Proposition (the three conjugations preserve the product).** The natural conjugation, the star and the Hermitian conjugation satisfy
+**Proposition (the three conjugations preserve the product).** The quaternion conjugation, the star and the Hermitian conjugation satisfy
 
 $$
 (\tilde Q_1\star\tilde Q_2)^{\natural}=\tilde Q_1^{\natural}\star\tilde Q_2^{\natural},\qquad
@@ -76,11 +76,11 @@ $$
 \overline{\tilde Q_1\star\tilde Q_2}=\overline{\tilde Q}_1\star\overline{\tilde Q}_2,
 $$
 
-and the natural conjugation preserves the algebraic norm while the star conjugates its value, $\langle\tilde Q^{\natural}\rangle_{\natural}=\langle\tilde Q\rangle_{\natural}$ and $\langle\tilde Q^{*}\rangle_{\natural}=\overline{\langle\tilde Q\rangle_{\natural}}$.
+and the quaternion conjugation preserves the algebraic norm while the star conjugates its value, $\langle\tilde Q^{\natural}\rangle_{\natural}=\langle\tilde Q\rangle_{\natural}$ and $\langle\tilde Q^{*}\rangle_{\natural}=\overline{\langle\tilde Q\rangle_{\natural}}$.
 
 *Proof.* The value is central, so each conjugation acts on it coefficientwise: $(\tilde Q_1\star\tilde Q_2)^{\natural}=\langle\tilde Q_1,\tilde Q_2\rangle_{\natural}e_t$ and $\tilde Q_1^{\natural}\star\tilde Q_2^{\natural}=\langle\tilde Q_1^{\natural},\tilde Q_2^{\natural}\rangle_{\natural}e_t$, and $\langle\tilde Q_1^{\natural},\tilde Q_2^{\natural}\rangle_{\natural}=Q_{1t}Q_{2t}+(-\vec Q_1,-\vec Q_2)=\langle\tilde Q_1,\tilde Q_2\rangle_{\natural}$; the star and the bar are the same computation with the coefficients conjugated. On the diagonal the first is $\langle\tilde Q^{\natural}\rangle_{\natural}=\langle\tilde Q\rangle_{\natural}$ and the second $\langle\tilde Q^{*}\rangle_{\natural}=\overline{\langle\tilde Q\rangle_{\natural}}$.
 
-The natural conjugation, an anti-automorphism of the plain product, is an **automorphism** of the block, because it is $\mathbb{C}$-linear and the block is commutative with central values; the star and the Hermitian conjugation are **conjugate-linear**, hence conjugations of the block and not automorphisms of it.
+The quaternion conjugation, an anti-automorphism of the plain product, is an **automorphism** of the block, because it is $\mathbb{C}$-linear and the block is commutative with central values; the star and the Hermitian conjugation are **conjugate-linear**, hence conjugations of the block and not automorphisms of it.
 
 ## The Absence of a Unit and of an Inverse
 

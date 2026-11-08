@@ -12,7 +12,7 @@ and it is exactly the group of units of the plain product. This article studies 
 
 The sector is defined by one condition, and the spectrum does not split it into two open halves. It is connected. The spectral condition cuts inside it a closed stratum of real codimension two, the spectrally degenerate units, and leaves its complement, the spectrally regular units, open and dense. The two pieces are the sectors $\Sigma_{11}$ and $\Sigma_{10}$ of *The N-Regular, Spectrally Regular Sector* and *The N-Regular, Spectrally Degenerate Sector*; this article records their place in the sector and cites their internal study.
 
-**Conventions.** The algebra is $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ on the basis $e_t,\vec e_x,\vec e_y,\vec e_z$, of complex dimension four and real dimension eight, with $\vec e_x\vec e_y=\vec e_z$ and $\vec e_k^2=-e_t$. An element is $\tilde Q=Q_te_t+\vec Q$ with $Q_\mu\in\mathbb{C}$ and $\vec Q=Q_x\vec e_x+Q_y\vec e_y+Q_z\vec e_z$. The natural conjugation is $\tilde Q^{\natural}=Q_t-\vec Q$ and the Hermitian conjugation is $\tilde Q^{*}=\overline{Q_t}-\overline{\vec Q}$. The **quaternionic norm** is
+**Conventions.** The algebra is $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ on the basis $e_t,\vec e_x,\vec e_y,\vec e_z$, of complex dimension four and real dimension eight, with $\vec e_x\vec e_y=\vec e_z$ and $\vec e_k^2=-e_t$. An element is $\tilde Q=Q_te_t+\vec Q$ with $Q_\mu\in\mathbb{C}$ and $\vec Q=Q_x\vec e_x+Q_y\vec e_y+Q_z\vec e_z$. The quaternion conjugation is $\tilde Q^{\natural}=Q_t-\vec Q$ and the Hermitian conjugation is $\tilde Q^{*}=\overline{Q_t}-\overline{\vec Q}$. The **quaternionic norm** is
 
 $$
 \langle\tilde Q\rangle_{\natural}=Q_t^2+B^2,\qquad B^2=Q_x^2+Q_y^2+Q_z^2,
@@ -315,7 +315,7 @@ The spectrum does not split the sector into two open halves. The spectrally regu
 |---|---|
 | $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ | the biquaternion algebra, complex dimension four, real dimension eight |
 | $\tilde Q=Q_te_t+\vec Q$ | an element and its scalar–vector split |
-| $\tilde Q^{\natural}=Q_t-\vec Q$ | the natural conjugation |
+| $\tilde Q^{\natural}=Q_t-\vec Q$ | the quaternion conjugation |
 | $\tilde Q^{*}=\overline{Q_t}-\overline{\vec Q}$ | the Hermitian conjugation |
 | $\langle\tilde Q\rangle_{\natural}=Q_t^2+B^2$ | the quaternionic norm, multiplicative and complex-valued |
 | $B^2=Q_x^2+Q_y^2+Q_z^2$ | the square of the vector part |

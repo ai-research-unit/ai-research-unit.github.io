@@ -54,7 +54,7 @@ $$
 \tilde X\;\longmapsto\;\bar{\tilde U}_{\mathrm{lor}}\,\tilde X .
 $$
 
-The bar is an automorphism of the algebra, it conjugates the norm, and on an element of norm one its value is again of norm one; the assignment $\tilde U_{\mathrm{lor}}\mapsto\bar{\tilde U}_{\mathrm{lor}}$ is therefore an automorphism of the group, and the action is a genuine representation. The bar is the coefficient conjugation of *Algebra and Element Conventions*, and it is not the Hermitian conjugation: the star composes the bar with the natural sign.
+The bar is an automorphism of the algebra, it conjugates the norm, and on an element of norm one its value is again of norm one; the assignment $\tilde U_{\mathrm{lor}}\mapsto\bar{\tilde U}_{\mathrm{lor}}$ is therefore an automorphism of the group, and the action is a genuine representation. The bar is the coefficient conjugation of *Algebra and Element Conventions*, and it is not the Hermitian conjugation: the star composes the bar with the quaternion sign.
 
 **The two halves are not the two values.** The field is one element $\tilde{Ξ}_{\mathrm{sp}}=\tilde{Ξ}_{\mathrm{sp},L}+\tilde{Ξ}_{\mathrm{sp},R}$, and its two parts are the two values. Both parts carry the same action of the group: a left multiplication multiplies both by $\tilde U_{\mathrm{lor}}$, so the two parts are two copies of one module. The inequivalence of the two labels belongs to the pair of modules $(S,\bar S)$ and not to the two values of one element.
 
@@ -163,7 +163,7 @@ $$
 \bigl\langle\tilde U\tilde X,\tilde U\tilde Y\bigr\rangle_{\natural}=\bigl\langle\tilde X,\tilde Y\bigr\rangle_{\natural},
 $$
 
-because the natural sign reverses the order of a product and $\tilde U^{\natural}\tilde U=e_t$. The form is therefore invariant under the whole group, and none of the other three forms of *Product and Form Conventions* is.
+because the quaternion sign reverses the order of a product and $\tilde U^{\natural}\tilde U=e_t$. The form is therefore invariant under the whole group, and none of the other three forms of *Product and Form Conventions* is.
 
 **It vanishes on one value.** Two elements of the same value are never paired by it: the form is identically zero on each value. It pairs one value with the other, and on that pair it is nondegenerate. The dual of one value is therefore the other value; since the two values are isomorphic as modules, each value is self-dual.
 

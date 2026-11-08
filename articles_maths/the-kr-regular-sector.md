@@ -11,7 +11,7 @@ $$
 
 and it splits into the positive region and the negative region. Its partner is *The Kr-Degenerate Sector*, for $\mathcal K$. The two articles carry the partition of *Kr-Regularity and Degeneracy in the Biquaternion Algebra*; the spectral condition is not used as a subdivision, and §*Why There Is No Spectral Split* of that article gives the four reasons.
 
-**Conventions.** The algebra is $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ on the basis $e_t,\vec e_x,\vec e_y,\vec e_z$, of complex dimension four and real dimension eight, with $\vec e_x\vec e_y=\vec e_z$ and $\vec e_k^2=-e_t$. An element is $\tilde Q=Q_te_t+\vec Q$ with $Q_\mu\in\mathbb{C}$ and $\vec Q=Q_x\vec e_x+Q_y\vec e_y+Q_z\vec e_z$. The natural conjugation is $\tilde Q^{\natural}=Q_t-\vec Q$, the Hermitian conjugation is $\tilde Q^{*}=\overline{Q_t}-\overline{\vec Q}$, and the coefficient signs are $\varepsilon=(1,-1,-1,-1)$. The forms are
+**Conventions.** The algebra is $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ on the basis $e_t,\vec e_x,\vec e_y,\vec e_z$, of complex dimension four and real dimension eight, with $\vec e_x\vec e_y=\vec e_z$ and $\vec e_k^2=-e_t$. An element is $\tilde Q=Q_te_t+\vec Q$ with $Q_\mu\in\mathbb{C}$ and $\vec Q=Q_x\vec e_x+Q_y\vec e_y+Q_z\vec e_z$. The quaternion conjugation is $\tilde Q^{\natural}=Q_t-\vec Q$, the Hermitian conjugation is $\tilde Q^{*}=\overline{Q_t}-\overline{\vec Q}$, and the coefficient signs are $\varepsilon=(1,-1,-1,-1)$. The forms are
 
 $$
 \langle\tilde Q_1,\tilde Q_2\rangle_{\natural*}=\sum_\mu\varepsilon_\mu Q_{1\mu}\overline{Q_{2\mu}},\qquad

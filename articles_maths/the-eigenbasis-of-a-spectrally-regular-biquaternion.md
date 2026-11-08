@@ -34,7 +34,7 @@ $$
 B^2=Q_x^2+Q_y^2+Q_z^2.
 $$
 
-The number $B$ is a fixed complex square root of $B^2$; the other root exchanges the two labels. A general element is written $\tilde Q_2=Q_{2,t}e_t+\vec Q_2$; the subscript distinguishes it from the fixed element $\tilde Q$ whose eigenbasis is constructed. The plain product is the associative product of $\mathbb{B}$, with unit $e_t$, natural conjugation $\tilde Q^{\natural}=Q_t-\vec Q$ and Hermitian conjugation $\tilde Q^*=\overline{Q}_t-\overline{\vec Q}$. The trace is $\operatorname{Tr}(\tilde Q_2)=2Q_{2,t}$, and $\langle\tilde Q_2\rangle_{\natural}=\operatorname{Sc}(\tilde Q_2^{\natural}\tilde Q_2)$ is the scalar of $\tilde Q_2^{\natural}\tilde Q_2$. The Peirce corners of a pair of idempotents are $\mathbb{B}_{st}=\tilde\Pi_s\mathbb{B}\tilde\Pi_t$. The letters $L_{\tilde Q_2}$ and $R_{\tilde Q_2}$ denote left and right multiplication by $\tilde Q_2$.
+The number $B$ is a fixed complex square root of $B^2$; the other root exchanges the two labels. A general element is written $\tilde Q_2=Q_{2,t}e_t+\vec Q_2$; the subscript distinguishes it from the fixed element $\tilde Q$ whose eigenbasis is constructed. The plain product is the associative product of $\mathbb{B}$, with unit $e_t$, quaternion conjugation $\tilde Q^{\natural}=Q_t-\vec Q$ and Hermitian conjugation $\tilde Q^*=\overline{Q}_t-\overline{\vec Q}$. The trace is $\operatorname{Tr}(\tilde Q_2)=2Q_{2,t}$, and $\langle\tilde Q_2\rangle_{\natural}=\operatorname{Sc}(\tilde Q_2^{\natural}\tilde Q_2)$ is the scalar of $\tilde Q_2^{\natural}\tilde Q_2$. The Peirce corners of a pair of idempotents are $\mathbb{B}_{st}=\tilde\Pi_s\mathbb{B}\tilde\Pi_t$. The letters $L_{\tilde Q_2}$ and $R_{\tilde Q_2}$ denote left and right multiplication by $\tilde Q_2$.
 
 ## The Spectral Condition and the Root
 
@@ -318,7 +318,7 @@ $$
 
 The term $2i\,\mathrm{Im}(\overline{Q}_t\vec Q)$ lies in the real plane spanned by $\vec A$ and $\vec C$, and $\Omega$ is orthogonal to that plane. The normal component of $\mathrm{Vect}(\tilde Q\tilde Q^*)$ is therefore $-\Omega$: it contains the gauge direction, and $\Omega$ is that direction. The scalar $Q_t$ moves the component inside the plane and leaves the normal one unchanged, which is why the gauge depends on $\vec Q$ alone.
 
-**Remark (equivariance).** Let $S$ be a real unit quaternion, $S^*=S^{-1}$. Then $\Omega\mapsto S\Omega S^{-1}$ and $n$ is rotated by $S$, so the gauge is natural for the real form: it is equivariant under the subgroup of the inner automorphisms that preserves the natural conjugation. Under a general inner automorphism the pair is carried to a reciprocal rescaling, as in §*Equivariance under Inner Automorphisms*.
+**Remark (equivariance).** Let $S$ be a real unit quaternion, $S^*=S^{-1}$. Then $\Omega\mapsto S\Omega S^{-1}$ and $n$ is rotated by $S$, so the gauge is natural for the real form: it is equivariant under the subgroup of the inner automorphisms that preserves the quaternion conjugation. Under a general inner automorphism the pair is carried to a reciprocal rescaling, as in §*Equivariance under Inner Automorphisms*.
 
 ### The Convention Used in This Article
 

@@ -18,7 +18,7 @@ $$
 \tilde Q_1\star\tilde Q_2=\tilde Q_1^{\natural}\tilde Q_2^{*}
 =\bigl[Q_{1t}\overline{Q_{2t}}-(\vec Q_1,\overline{\vec Q_2})\bigr]-Q_{1t}\overline{\vec Q_2}-\overline{Q_{2t}}\vec Q_1+\vec Q_1\times\overline{\vec Q_2},
 $$
-the product of the natural conjugate of the first factor with the conjugate of the second
+the product of the quaternion conjugate of the first factor with the conjugate of the second
 (*Introduction to the General Quaternionic Sesqualgebra*). It is the block with
 **both** involution signs, and its zero divisors are the elements of the cone $C(\tilde Q_1)=0$
 (*Zero Divisors of the General Quaternionic Sesqualgebra*, above this article in this category).
@@ -146,7 +146,7 @@ distinction between the sides is read off the anti-Hermitian directions.
 The annihilator of an element in a product is the set of partners the element kills, the left and
 the right annihilator being the kernels of the left and the right multiplication. The general
 quaternionic sesquimultiplication $\tilde Q_1\star\tilde Q_2=\tilde Q_1^{\natural}\tilde Q_2^{*}$ carries
-both the natural conjugation and the star, and its two annihilators of an element are **distinct**.
+both the quaternion conjugation and the star, and its two annihilators of an element are **distinct**.
 The left annihilator is the star of the plain annihilator of $\tilde Q_1^{\natural}$, and the right
 annihilator is the corresponding object of the other side; both are $\{0\}$ off the cone and
 complex planes on the cone, and for $\tilde Q_1=e_t+i\vec e_x$ they are the distinct planes spanned by
@@ -171,4 +171,4 @@ meeting of the two involution signs is exactly what makes the two sides two agai
 - [Zero Divisors of the General Quaternionic Sesqualgebra](zero-divisors-of-the-general-quaternionic-sesqualgebra.html), above this article in this category, for the criterion and the two families.
 - [N-Regularity and N-Degeneracy in the Biquaternion Algebra](n-regularity-and-n-degeneracy-in-the-biquaternion-algebra.html), the parent, for the cone $C(\tilde Q_1)=0$.
 - [Annihilators of the General Plain Sesqualgebra](annihilators-of-the-general-plain-sesqualgebra.html), the sibling whose single star identifies the two sides.
-- [Annihilators of the General Quaternionic Algebra](annihilators-of-the-general-quaternionic-algebra.html), the sibling whose single natural conjugation identifies the two sides.
+- [Annihilators of the General Quaternionic Algebra](annihilators-of-the-general-quaternionic-algebra.html), the sibling whose single quaternion conjugation identifies the two sides.

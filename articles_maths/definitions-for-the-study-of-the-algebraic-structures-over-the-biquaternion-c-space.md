@@ -21,7 +21,7 @@ A **product** on $\mathbb{B}$ is a map
 $$
 \star \;:\; \mathbb{B}\times\mathbb{B}\longrightarrow\mathbb{B},
 $$
-and the twelve products of the space are its instances. A product is read by its **two slots**: the first slot is read either as it stands (**plain**, letter $\mathrm P$) or through the natural conjugation (**quaternionic**, letter $\mathrm Q$), and the second slot is read either as it stands (the **algebra**, letter $\mathrm A$) or through the star (the **sesqualgebra**, letter $\mathrm S$). The four general products are the four combinations, and each of their symmetric and antisymmetric parts is one of the twelve.
+and the twelve products of the space are its instances. A product is read by its **two slots**: the first slot is read either as it stands (**plain**, letter $\mathrm P$) or through the quaternion conjugation (**quaternionic**, letter $\mathrm Q$), and the second slot is read either as it stands (the **algebra**, letter $\mathrm A$) or through the star (the **sesqualgebra**, letter $\mathrm S$). The four general products are the four combinations, and each of their symmetric and antisymmetric parts is one of the twelve.
 
 **Definition (class of a product).** A product $\star$ is read in each slot through an involution: it is $\sigma$-semilinear in the first slot and $\varsigma$-semilinear in the second,
 $$

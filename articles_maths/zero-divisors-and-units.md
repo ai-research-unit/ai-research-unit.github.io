@@ -123,7 +123,7 @@ The element itself belongs to its right annihilator, because $\tilde Q_1^2=-B_1^
 
 ## The Left Annihilator
 
-The natural conjugation relates the two annihilators. Indeed, for every $\tilde Q_2$,
+The quaternion conjugation relates the two annihilators. Indeed, for every $\tilde Q_2$,
 
 $$
 \tilde Q_2\tilde Q_1=0\iff(\tilde Q_2\tilde Q_1)^{\natural}=0\iff\tilde Q_1^{\natural}\tilde Q_2^{\natural}=0,

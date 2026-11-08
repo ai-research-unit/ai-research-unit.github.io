@@ -18,9 +18,8 @@ ideals and the two identifications of the derived algebra with the classical com
 same name.
 
 **This is not the algebra $\mathbb{H}$.** The Lie bracket is the cross product of the vector parts and
-ignores the scalars; the associative multiplication of $\mathbb{H}$ plays no role. Throughout, the
-natural sign ${}^{\natural}$ is the quaternion conjugation, the bar is the identity because
-$\mathbb{R}$ has no nontrivial involution, and the star coincides with the natural sign and gives
+ignores the scalars; the associative multiplication of $\mathbb{H}$ plays no role. Throughout, the sign ${}^{\natural}$ is the quaternion conjugation, the bar is the identity because
+$\mathbb{R}$ has no nontrivial involution, and the star coincides with the quaternion sign and gives
 nothing new.
 
 The operation and its table are *Introduction to the Antisymmetric Plain Algebra*; the

@@ -139,13 +139,13 @@ That is still the deepest of the costs, because the corpus's quantum sector rest
 
 ### The Real Slice Is Not Natural
 
-The programme's rule for what counts as meaningful is invariance under the algebra automorphisms, $\mathrm{Aut}(\mathbb{B})\cong SO(3,\mathbb{C})$, and the Hermitian form is not invariant under them, so the programme calls the restriction to the real slice artificial. The corpus makes the natural conjugation primitive instead, with $\mathbb{B}_{\Psi}\oplus\mathbb{B}_{\Phi}$ as its fixed and anti-fixed spaces. The argument for the programme's side is in *The Algebrodynamical Programme*, §*The Induced Causal Minkowski Geometry with Phase*.
+The programme's rule for what counts as meaningful is invariance under the algebra automorphisms, $\mathrm{Aut}(\mathbb{B})\cong SO(3,\mathbb{C})$, and the Hermitian form is not invariant under them, so the programme calls the restriction to the real slice artificial. The corpus makes the quaternion conjugation primitive instead, with $\mathbb{B}_{\Psi}\oplus\mathbb{B}_{\Phi}$ as its fixed and anti-fixed spaces. The argument for the programme's side is in *The Algebrodynamical Programme*, §*The Induced Causal Minkowski Geometry with Phase*.
 
 This is not a difference of taste: it is the point at which the two cannot both have the primitive object.
 
 ## The Fork: Product First or Conjugation First
 
-The corpus's structure is built on the **natural conjugation** $\natural$, the $\mathbb{C}$-linear quaternion conjugation: it cuts the algebra into the material and the informational sectors, it gives the interval its signature, and it makes the two slots of one product physically different. That conjugation is not an algebra automorphism, and the corpus already knows what that means: *Frames, Rotations and the Lorentz Group* states that a boost preserves the interval and the sectors but not the product, and concludes that a boost is a motion and not a symmetry of the algebraic structure.
+The corpus's structure is built on the **quaternion conjugation** $\natural$, the $\mathbb{C}$-linear involution: it cuts the algebra into the material and the informational sectors, it gives the interval its signature, and it makes the two slots of one product physically different. That conjugation is not an algebra automorphism, and the corpus already knows what that means: *Frames, Rotations and the Lorentz Group* states that a boost preserves the interval and the sectors but not the product, and concludes that a boost is a motion and not a symmetry of the algebraic structure.
 
 The derivation route is built on the **product** instead. Its derivative is defined by multiplication alone, its invariants are the automorphism invariants, and a structure that the product does not preserve is not a structure of the theory. The Hermitian form fails that test, so the real slice fails it, and the two sectors are, on this reading, an artefact of a coordinate choice.
 
@@ -204,7 +204,7 @@ The last is the fork. Conjugation first gives the two sectors and the corpus's q
 |---|---|
 | $\mathbb{B}$ | The biquaternion algebra, isomorphic to $M_2(\mathbb{C})$ |
 | $\mathbb{B}_{\Psi}$, $\mathbb{B}_{\Phi}$ | The informational and material sectors, the fixed spaces of ${}^{*}$ and $\flat$ |
-| $\natural$ | The natural conjugation, $\mathbb{C}$-linear, fixing $\mathbb{B}_{H}$ |
+| $\natural$ | The quaternion conjugation, $\mathbb{C}$-linear, fixing $\mathbb{B}_{H}$ |
 | $\tilde\nabla$ | The biquaternionic gradient $\sum_\mu e_\mu\partial/\partial R_\mu$ |
 | $N(\tilde Q)$ | The biquaternion norm $\sum_\mu Q_\mu^2$, zero on the cone |
 | $\Sigma$ | One component of a differentiable function |

@@ -32,7 +32,7 @@ $$
 $$
 This is the general case. The two real sectors are conditions on these four coefficients, not other frames.
 
-**The interval has four $+1$ coefficients.** With the natural conjugation $\natural$,
+**The interval has four $+1$ coefficients.** With the quaternion conjugation $\natural$,
 $$
 \langle\tilde Q\rangle_\natural=\tilde Q\tilde Q^\natural=Q_t^2+Q_x^2+Q_y^2+Q_z^2 .
 $$

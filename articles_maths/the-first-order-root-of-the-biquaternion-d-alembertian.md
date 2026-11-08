@@ -179,7 +179,7 @@ $$
 
 The identity is exact, and it is the whole factorisation of $\Box$ that the algebra supplies. Each factor is left multiplication by an element with derivative coefficients, and the product is composition on the field: the right factor acts first, the left factor acts on the result, and no derivative acts on a coefficient, since all coefficients are constant. The factorisation has two factors, and neither is a root by itself: the square of either one alone carries the vector remainder of §*The Square of the Gradient*. That is the sense in which the root exists: as a pair of first-order operators, not as one operator.
 
-### The Pair Operator
+### The Pair, as Two Lines
 
 The two equations of the massive case are two lines on $\mathbb{B}\oplus\mathbb{B}$, and they are never gathered into one letter. Write $\tilde{Ξ}_{\mathrm{sp}}=(\tilde{Ξ}_{\mathrm{sp},L},\tilde{Ξ}_{\mathrm{sp},R})$; then
 
@@ -284,7 +284,7 @@ $$
 
 so the pair is satisfied. The example exhibits the bijection between the solutions of the shifted d'Alembertian on one part and the solutions of the pair.
 
-**The determinant.** For the symbol $\tilde K$, the determinant of the left action is $(q_0^2-\lvert\vec q\rvert^2)^2$, and the determinant of the pair operator shifted by $m$ is $(q_0^2-\lvert\vec q\rvert^2-m^2)^4$. At $q=(2,1,0,0)$ the norm is $3$, the first determinant is $9$, and at $m=1$ the second determinant is $(3-1)^4=16$.
+**The determinant.** For the symbol $\tilde K$, the determinant of the left action is $(q_0^2-\lvert\vec q\rvert^2)^2$, and the determinant of the pair, written as the block array and shifted by $m$, is $(q_0^2-\lvert\vec q\rvert^2-m^2)^4$. At $q=(2,1,0,0)$ the norm is $3$, the first determinant is $9$, and at $m=1$ the second determinant is $(3-1)^4=16$.
 
 ## Verification
 

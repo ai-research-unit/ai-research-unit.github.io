@@ -16,9 +16,8 @@ left multiplication operators is the operator of the bracket, its image is the t
 model carries both regular copies at once.
 
 **This is not the algebra $\mathbb{H}$.** The model is a faithful algebra morphism of the plain
-product; the antisymmetric block is read on it as the commutator. Throughout, the natural sign
-${}^{\natural}$ is the quaternion conjugation, the bar is the identity because $\mathbb{R}$ has no
-nontrivial involution, and the star coincides with the natural sign and gives nothing new.
+product; the antisymmetric block is read on it as the commutator. Throughout, the sign ${}^{\natural}$ is the quaternion conjugation, the bar is the identity because $\mathbb{R}$ has no
+nontrivial involution, and the star coincides with the quaternion sign and gives nothing new.
 
 The model and its multiplicativity are *Introduction to the $4\times4$ Matrix Element Representation
 $M_4(\mathbb{R})_{\mathbb{H}_L}$ of Quaternions*; the bracket and its structure are *The Lie Algebra of the

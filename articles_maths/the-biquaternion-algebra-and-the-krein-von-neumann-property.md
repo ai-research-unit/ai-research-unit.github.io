@@ -2,7 +2,7 @@
 
 ## Introduction
 
-A **Krein–von Neumann algebra** is a unital algebra of bounded operators on a Krein space, closed under the adjoint of the indefinite form and in the weak operator topology; equivalently, it is an algebra $\mathcal{M}$ with $J\mathcal{M}^{*}J=\mathcal{M}$ (*Krein–von Neumann Algebras*). The biquaternion algebra carries a general quaternionic sesquilinear form whose fundamental symmetry is the natural conjugation $J={}^{\natural}$ (*The Fundamental Symmetry of the Form*), and its left multiplications give a faithful algebra of operators on that Krein space (*One-Sided Operators on the General Plain Sesqualgebra*). This article asks whether that algebra is a Krein–von Neumann algebra.
+A **Krein–von Neumann algebra** is a unital algebra of bounded operators on a Krein space, closed under the adjoint of the indefinite form and in the weak operator topology; equivalently, it is an algebra $\mathcal{M}$ with $J\mathcal{M}^{*}J=\mathcal{M}$ (*Krein–von Neumann Algebras*). The biquaternion algebra carries a general quaternionic sesquilinear form whose fundamental symmetry is the quaternion conjugation $J={}^{\natural}$ (*The Fundamental Symmetry of the Form*), and its left multiplications give a faithful algebra of operators on that Krein space (*One-Sided Operators on the General Plain Sesqualgebra*). This article asks whether that algebra is a Krein–von Neumann algebra.
 
 The answer is **no for the general quaternionic sesquilinear form of the algebra**, and the obstruction is one identity: the indefinite adjoint of a left multiplication is a **right** multiplication,
 

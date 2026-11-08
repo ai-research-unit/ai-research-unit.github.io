@@ -22,7 +22,7 @@ $$
 \tilde\Pi_\pm=\tfrac12(e_t\pm i\vec e_z),\qquad
 \vec\Upsilon_\pm=\tfrac12(i\vec e_x\pm\vec e_y),
 $$
-and a matrix written without a superscript is in this frame. The coefficient coordinates are $(t,x,y,z)$. The quaternionic norm is $\langle\tilde Q\rangle_{\natural}=Q_t^2+Q_x^2+Q_y^2+Q_z^2$, the determinant of $\mathsf M_2(\tilde Q)$, the natural conjugate is $\tilde Q^{\natural}=Q_t-\vec Q$, and the Hermitian conjugate is $\tilde Q^{*}=\bar{\tilde Q}^{\natural}$. The $2\times2$ model is $\mathsf M_2(\tilde Q)$, with
+and a matrix written without a superscript is in this frame. The coefficient coordinates are $(t,x,y,z)$. The quaternionic norm is $\langle\tilde Q\rangle_{\natural}=Q_t^2+Q_x^2+Q_y^2+Q_z^2$, the determinant of $\mathsf M_2(\tilde Q)$, the quaternion conjugate is $\tilde Q^{\natural}=Q_t-\vec Q$, and the Hermitian conjugate is $\tilde Q^{*}=\bar{\tilde Q}^{\natural}$. The $2\times2$ model is $\mathsf M_2(\tilde Q)$, with
 $$
 \mathsf M_2(e_t)=\mathrm I_2,\qquad
 \mathsf M_2(\vec e_x)=\begin{pmatrix}0&-i\\-i&0\end{pmatrix},\qquad
@@ -866,7 +866,7 @@ In one line: every two-sided operator is a single product of one left and one ri
 | $\ell(M)$ | the least number of products summing to $M$; equal to $\operatorname{rank}c(M)$ |
 | $\Phi(\tilde Q,\tilde Q_2)=L_{\tilde Q}R_{\tilde Q_2}$ | the factorisation map |
 | $\langle\tilde Q\rangle_{\natural}=Q_t^2+Q_x^2+Q_y^2+Q_z^2$ | the quaternionic norm, $\det\mathsf M_2(\tilde Q)$ |
-| $\tilde Q^{\natural}=Q_t-\vec Q$ | the natural conjugate |
+| $\tilde Q^{\natural}=Q_t-\vec Q$ | the quaternion conjugate |
 | $\tilde Q^{*}=\bar{\tilde Q}^{\natural}$ | the Hermitian conjugate |
 | $\mathrm{Ad}_{\tilde Q}(X)=\tilde Q X\tilde Q^{-1}$ | the inner automorphism |
 | $\mathbb{B}_{\mathrm{opp}}$ | the opposite algebra, with the reversed product |

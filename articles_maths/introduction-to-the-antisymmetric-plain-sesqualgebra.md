@@ -41,7 +41,7 @@ $$
 
 which is the general definition of *The Symmetric and Antisymmetric Parts of a Sesqualgebra Product*, §*The Two Parts Under Their Own Names*, read on the biquaternion product with the conjugation $\bar{\cdot}$.
 
-The equivalence of the two displays is the definition of the vector part. Indeed $\overline{\tilde Q_2\tilde Q_1^{*}}=(\tilde Q_1\tilde Q_2^{*})^{\natural}$ for the biquaternion product, since $\natural(\overline{\tilde Q_3})=\tilde Q_3^{*}$ and $\natural$ is an anti-automorphism, so that $\tfrac12\bigl(\tilde Q_3-\tilde Q_3^{\natural}\bigr)=\mathrm{Vect}(\tilde Q_3)$ at $\tilde Q_3=\tilde Q_1\tilde Q_2^{*}$. That identity is the reason the two sesqualgebra rows of the row table admit the exchange *read on the value*: the conjugate transpose of the value is the natural conjugate of the same value, and the two halves of the same element fall out.
+The equivalence of the two displays is the definition of the vector part. Indeed $\overline{\tilde Q_2\tilde Q_1^{*}}=(\tilde Q_1\tilde Q_2^{*})^{\natural}$ for the biquaternion product, since $\natural(\overline{\tilde Q_3})=\tilde Q_3^{*}$ and $\natural$ is an anti-automorphism, so that $\tfrac12\bigl(\tilde Q_3-\tilde Q_3^{\natural}\bigr)=\mathrm{Vect}(\tilde Q_3)$ at $\tilde Q_3=\tilde Q_1\tilde Q_2^{*}$. That identity is the reason the two sesqualgebra rows of the row table admit the exchange *read on the value*: the conjugate transpose of the value is the quaternion conjugate of the same value, and the two halves of the same element fall out.
 
 Written on the coordinates, collecting the scalar and the vector parts and conjugating the second one,
 
@@ -181,7 +181,7 @@ The antisymmetric part of the general plain sesquilinear product is $\tilde Q_1\
 | $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ | the biquaternion algebra, read here with the sesquilinear product split |
 | $e_t,\vec e_x,\vec e_y,\vec e_z$ | the basis; $e_t$ the unit, $\vec e_k$ the quaternion units; $i$ the central scalar imaginary |
 | $\tilde Q=Q_te_t+\vec Q$ | a biquaternion and its scalar–vector split, $Q_\mu\in\mathbb{C}$ |
-| $\bar{\cdot}$, ${}^{\natural}$, ${}^{*}=\bar{\cdot}\circ{}^{\natural}$ | the coefficientwise, the natural and the Hermitian conjugations, $Q^{*}_\nu=\varepsilon_\nu\overline{Q_\nu}$ |
+| $\bar{\cdot}$, ${}^{\natural}$, ${}^{*}=\bar{\cdot}\circ{}^{\natural}$ | the coefficientwise, the quaternion and the Hermitian conjugations, $Q^{*}_\nu=\varepsilon_\nu\overline{Q_\nu}$ |
 | $\tilde Q_1\diamond\tilde Q_2=\mathrm{Vect}(\tilde Q_1\tilde Q_2^{*})$ | the operation of the block, the antisymmetric plain sesqualgebra $\tilde Q_1\wedge_{*}\tilde Q_2$ |
 | $\langle\tilde Q_1,\tilde Q_2\rangle_{*}=\mathrm{Sc}(\tilde Q_1\tilde Q_2^{*})$ | the Hermitian form of *The Four Forms and the Four Algebraic Norms over the Biquaternion Algebra* |
 | $\mathbb{B}_{V},\mathbb{B}_{C}$ | the vector subspace and the centre of the remarkable subspaces |

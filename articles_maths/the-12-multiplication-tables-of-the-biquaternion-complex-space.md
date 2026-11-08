@@ -102,7 +102,7 @@ The diagonal is $e_t$ throughout, the imaginary block anticommutes with the sign
 | $\vec e_y$ | $-\vec e_y$ | $-\vec e_z$ | $-e_t$ | $\vec e_x$ |
 | $\vec e_z$ | $-\vec e_z$ | $\vec e_y$ | $-\vec e_x$ | $-e_t$ |
 
-The table is the table of $\tilde Q_1\tilde Q_2^{*}$ with the first slot read through the natural conjugation, that is with the row sign changed on the three vector rows; the diagonal is $e_t,-e_t,-e_t,-e_t$.
+The table is the table of $\tilde Q_1\tilde Q_2^{*}$ with the first slot read through the quaternion conjugation, that is with the row sign changed on the three vector rows; the diagonal is $e_t,-e_t,-e_t,-e_t$.
 
 ### The Four Symmetric Tables
 

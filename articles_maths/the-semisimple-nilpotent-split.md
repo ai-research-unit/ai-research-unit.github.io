@@ -8,7 +8,7 @@ The algebra has degree two, so the theorem is short. An element $\tilde Q=Q_te_t
 
 The article is the biquaternion case of *Nilpotent Elements and the Jordan–Chevalley Decomposition*, where the general theorem, its uniqueness and its multiplicative form are proved. What is added here is the explicit frame, the corner pattern and the exact list of types. The two frame articles are *The Eigenbasis of a Spectrally Regular Biquaternion* and *The Jordan Basis of a Spectrally Degenerate Biquaternion*; the Peirce decomposition is *Peirce Decompositions of the Biquaternion Algebra*, and the centraliser is *The Centraliser*.
 
-**Notation.** An element is $\tilde Q=Q_te_t+\vec Q$, with $\vec Q=Q_x\vec e_x+Q_y\vec e_y+Q_z\vec e_z$, and its natural conjugation is $\tilde Q^{\natural}=Q_te_t-\vec Q$. The product is the plain product, associative with unit $e_t$. The scalar part is $\operatorname{Sc}(\tilde Q)=Q_t$, and
+**Notation.** An element is $\tilde Q=Q_te_t+\vec Q$, with $\vec Q=Q_x\vec e_x+Q_y\vec e_y+Q_z\vec e_z$, and its quaternion conjugation is $\tilde Q^{\natural}=Q_te_t-\vec Q$. The product is the plain product, associative with unit $e_t$. The scalar part is $\operatorname{Sc}(\tilde Q)=Q_t$, and
 
 $$
 B^2=Q_x^2+Q_y^2+Q_z^2,\qquad \vec Q^2=-B^2e_t .
@@ -268,7 +268,7 @@ For a unit, the additive split gives the multiplicative form $\tilde Q=\tilde Q_
 |---|---|
 | $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ | the biquaternion algebra |
 | $\tilde Q=Q_te_t+\vec Q$ | a general element |
-| $\tilde Q^{\natural}=Q_te_t-\vec Q$ | the natural conjugation |
+| $\tilde Q^{\natural}=Q_te_t-\vec Q$ | the quaternion conjugation |
 | $B^2=Q_x^2+Q_y^2+Q_z^2$ | the square of the vector part, the discriminant up to $-4$ |
 | $p_{\tilde Q}(X)=(X-Q_t)^2+B^2$ | the characteristic polynomial |
 | $m_{\tilde Q}$ | the minimal polynomial |

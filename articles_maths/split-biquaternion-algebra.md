@@ -3,7 +3,7 @@
 
 ## Introduction
 
-This article introduces the split biquaternion algebra as an algebraic structure. The goal is to define the algebra precisely, establish its basic properties, and describe the distinguished real vector subspaces that arise from the natural conjugations.
+This article introduces the split biquaternion algebra as an algebraic structure. The goal is to define the algebra precisely, establish its basic properties, and describe the distinguished real vector subspaces that arise from the quaternion conjugation.
 
 The treatment is mathematically honest: every claim is either proved or stated as a definition. No physics is invoked. No examples are given. The quaternion algebra $\mathbb{H}$ is assumed from the article on quaternion algebra. The split complex algebra $\mathbb{C}_{\mathrm{spl}}$ is assumed from the article on split complex algebra, together with its idempotents $\tilde\Pi_1 = \tfrac{1}{2}(1 + j)$ and $\tilde\Pi_2 = \tfrac{1}{2}(1 - j)$ and the isomorphism $\mathbb{C}_{\mathrm{spl}} \cong \mathbb{R} \oplus \mathbb{R}$.
 
@@ -192,7 +192,7 @@ This formula has the same structure as the quaternion product: scalar part, vect
 
 ### Conjugations
 
-There are **four** natural conjugations on $\mathbb{B}_{\mathrm{spl}}$, obtained by composing the quaternion conjugation ${}^{\natural}$ and the split complex conjugation $\bar{\cdot}$:
+There are **four** conjugations on $\mathbb{B}_{\mathrm{spl}}$, obtained by composing the quaternion conjugation ${}^{\natural}$ and the split complex conjugation $\bar{\cdot}$:
 
 **Quaternion conjugation** $\tilde{Q}^{\natural}$:
 
@@ -430,7 +430,7 @@ The split biquaternion algebra is the tensor product $\mathbb{C}_{\mathrm{spl}} 
 
 The algebra is isomorphic to the direct sum $\mathbb{H} \oplus \mathbb{H}$ via the idempotent decomposition $\tilde{Q} = \tilde{Q}_+ \tilde\Pi_1 + \tilde{Q}_- \tilde\Pi_2$, where $\tilde\Pi_{1,2} = \tfrac{1}{2}(1 \pm j)$ are the idempotents of the split complex algebra. This is the most important structural fact about the algebra.
 
-There are four natural conjugations: quaternion conjugation, split complex conjugation, Hermitian conjugation, and anti-Hermitian conjugation. Each has a fixed-point set, which is a four-dimensional real subspace (or two-dimensional in the case of the split complex subspace). The four subspaces are the split complex subspace, the quaternion subspace, the Hermitian subspace, and the anti-Hermitian subspace.
+There are four conjugations: quaternion conjugation, split complex conjugation, Hermitian conjugation, and anti-Hermitian conjugation. Each has a fixed-point set, which is a four-dimensional real subspace (or two-dimensional in the case of the split complex subspace). The four subspaces are the split complex subspace, the quaternion subspace, the Hermitian subspace, and the anti-Hermitian subspace.
 
 There are three natural decompositions of the algebra: the quaternion decomposition $\mathbb{H}_{\mathbb{B}_{\mathrm{spl}}} \oplus j \mathbb{H}_{\mathbb{B}_{\mathrm{spl}}}$, the idempotent decomposition $\mathbb{H} \tilde\Pi_1 \oplus \mathbb{H} \tilde\Pi_2$, and the Hermitian decomposition $\mathbb{B}_{\Psi} \oplus \mathbb{B}_{\Phi}$.
 

@@ -116,7 +116,7 @@ If $A$ is commutative and $\sigma$ is the identity then $\sigma$ is the identity
 
 ### The biquaternions
 
-The biquaternion algebra $\mathbb{B}$ carries four natural involutions, the complex conjugation, the quaternion conjugation, the conjugate transpose and their product, and each gives its own twist, its own $\sigma$-swap isomorphism and its own Hermitian form on the regular bimodule. The lattice they form is *Subspaces and Decompositions*, in Part VI, where the same regular module is read through each of them; the present article supplies only the general construction.
+The biquaternion algebra $\mathbb{B}$ carries four involutions, the complex conjugation, the quaternion conjugation, the conjugate transpose and their product, and each gives its own twist, its own $\sigma$-swap isomorphism and its own Hermitian form on the regular bimodule. The lattice they form is *Subspaces and Decompositions*, in Part VI, where the same regular module is read through each of them; the present article supplies only the general construction.
 
 ## Summary
 

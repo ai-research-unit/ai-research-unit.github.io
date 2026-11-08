@@ -99,7 +99,7 @@ $$
 \frac{\tilde Q\bullet\tilde Q}{\langle\tilde Q\rangle_{\natural}}-\frac{T(\tilde Q)}{\langle\tilde Q\rangle_{\natural}}\tilde Q+e_t=0,
 $$
 
-that is, $\tilde Q\bullet\bigl((T(\tilde Q)e_t-\tilde Q)/\langle\tilde Q\rangle_{\natural}\bigr)=e_t$, so the displayed element is a Jordan inverse; the second equation $x\bullet(y\bullet x)=x$ follows, since $\bullet$ is commutative and associative with respect to the unit in the Jordan sense. The identity $T(\tilde Q)e_t-\tilde Q=2Q_te_t-\tilde Q=\tilde Q^{\natural}$ is the definition of the natural conjugate.
+that is, $\tilde Q\bullet\bigl((T(\tilde Q)e_t-\tilde Q)/\langle\tilde Q\rangle_{\natural}\bigr)=e_t$, so the displayed element is a Jordan inverse; the second equation $x\bullet(y\bullet x)=x$ follows, since $\bullet$ is commutative and associative with respect to the unit in the Jordan sense. The identity $T(\tilde Q)e_t-\tilde Q=2Q_te_t-\tilde Q=\tilde Q^{\natural}$ is the definition of the quaternion conjugate.
 
 ### The Comparison with the Algebra Inverse
 
@@ -112,7 +112,7 @@ $$
 
 *Proof.* The inverse formula of the algebra is $\tilde Q^{-1}=\tilde Q^{\natural}/\langle\tilde Q\rangle_{\natural}$ in *N-Regularity and N-Degeneracy in the Biquaternion Algebra*, and $\langle\tilde Q\rangle_{\natural}=\langle\tilde Q,\tilde Q\rangle_{\natural}$. The two formulas are the same element; the Jordan inverse was computed above as the same quotient.
 
-**Remark (the inverse agrees because the block is special).** In a general Jordan algebra the inverse is a new operation; here the block is the symmetrisation of an associative algebra, and **the Jordan inverse coincides with the associative inverse and is therefore computed by the natural conjugate and the norm**, exactly as in the algebra. The invertibility criterion is the same in the two readings: an element is invertible in the block precisely when it is invertible in $\mathbb{B}$, that is, precisely when it is not a zero divisor.
+**Remark (the inverse agrees because the block is special).** In a general Jordan algebra the inverse is a new operation; here the block is the symmetrisation of an associative algebra, and **the Jordan inverse coincides with the associative inverse and is therefore computed by the quaternion conjugate and the norm**, exactly as in the algebra. The invertibility criterion is the same in the two readings: an element is invertible in the block precisely when it is invertible in $\mathbb{B}$, that is, precisely when it is not a zero divisor.
 
 ## The Norm, the Isotropic Cone and the Elements of Square Zero
 

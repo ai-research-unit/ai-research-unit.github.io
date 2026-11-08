@@ -77,11 +77,11 @@ $$
 
 ### $\tilde Q_1^{\natural}\tilde Q_2$, the general quaternionic algebra
 
-The product is $\tilde Q^{\natural}\tilde Q_2$, the plain product with the natural conjugation in the first slot. It is the plain product of $\tilde Q^{\natural}$ and $\tilde Q_2$.
+The product is $\tilde Q^{\natural}\tilde Q_2$, the plain product with the quaternion conjugation in the first slot. It is the plain product of $\tilde Q^{\natural}$ and $\tilde Q_2$.
 
 **The natural product carries the algebraic norm $\langle\cdot\rangle_{\natural}$, and here the carried norm is the deciding one, $\langle\tilde Q\rangle_{\natural}=\mathrm{Norm}(\tilde Q)$.**
 
-**The two annihilators are always equal, and in every case they equal the plain annihilator of $\tilde Q^{\natural}$.** **When the norm $\langle\tilde Q\rangle_{\natural}$ is not zero, they are $\{0\}$.** **When the norm $\langle\tilde Q\rangle_{\natural}$ is zero at a nonzero element, they are the complex plane of dimension two that contains the line $\mathbb{C}\tilde Q$.** At $\tilde Q=0$ they are all of $\mathbb{B}$. The equality is the natural conjugation applied to $\tilde Q^{\natural}\tilde Q_1=0$, which gives $\tilde Q_1^{\natural}\tilde Q=0$. At the pure element $\vec e_x+i\vec e_y$ and at the non-pure element $e_t+i\vec e_x$, both of norm zero, the plane contains the element itself:
+**The two annihilators are always equal, and in every case they equal the plain annihilator of $\tilde Q^{\natural}$.** **When the norm $\langle\tilde Q\rangle_{\natural}$ is not zero, they are $\{0\}$.** **When the norm $\langle\tilde Q\rangle_{\natural}$ is zero at a nonzero element, they are the complex plane of dimension two that contains the line $\mathbb{C}\tilde Q$.** At $\tilde Q=0$ they are all of $\mathbb{B}$. The equality is the quaternion conjugation applied to $\tilde Q^{\natural}\tilde Q_1=0$, which gives $\tilde Q_1^{\natural}\tilde Q=0$. At the pure element $\vec e_x+i\vec e_y$ and at the non-pure element $e_t+i\vec e_x$, both of norm zero, the plane contains the element itself:
 $$
 A_\star(\vec e_x+i\vec e_y)=\mathbb{C}\{\vec e_x+i\vec e_y,\ \vec e_z-ie_t\},\qquad A_\star(e_t+i\vec e_x)=\mathbb{C}\{e_t+i\vec e_x,\ \vec e_y+i\vec e_z\}.
 $$
@@ -118,7 +118,7 @@ It is commutative, so $A_\bullet(\tilde Q)=B_\bullet(\tilde Q)$ at every element
 - **At an element with $Q_t$ not zero and with vanishing norm $\langle\tilde Q\rangle_{\natural}$, the annihilator is the line $\mathbb{C}\tilde Q^{\natural}$**, since the vector equation forces $\vec Q_2=-(Q_{2t}/Q_t)\vec Q$ and the scalar equation then forces the vanishing of the norm $\langle\tilde Q\rangle_{\natural}$.
 - **At a nonzero element with $Q_t=0$, the annihilator is the plane $\{Q_{1t}=0,\ (\vec Q,\vec Q_1)=0\}$**, because a pure element times $\tilde Q_1$ is $-(\vec Q,\vec Q_1)e_t+Q_{1t}\vec Q$; at $\tilde Q=0$ it is all of $\mathbb{B}$.
 
-Two worked elements show the two families. At the pure element $\vec e_x$ the annihilator is the plane of the pure elements orthogonal to $\vec e_x$, and at the non-pure element $e_t+i\vec e_x$ it is the line of the natural conjugate:
+Two worked elements show the two families. At the pure element $\vec e_x$ the annihilator is the plane of the pure elements orthogonal to $\vec e_x$, and at the non-pure element $e_t+i\vec e_x$ it is the line of the quaternion conjugate:
 $$
 A_\bullet(\vec e_x)=\mathbb{C}\{\vec e_y,\vec e_z\},\qquad A_\bullet(e_t+i\vec e_x)=\mathbb{C}\{e_t-i\vec e_x\}.
 $$
@@ -264,7 +264,7 @@ The twelve are tabulated with the annihilator of a general element, the case spl
 | the plain algebra | $\tilde Q_1\tilde Q_2$ | $\tilde Q\tilde Q_2$ | When the norm $\langle\tilde Q\rangle_{\natural}$ is not zero, each of the two annihilators is $\{0\}$. When the norm $\langle\tilde Q\rangle_{\natural}$ is zero at a nonzero element, each annihilator is a complex plane of dimension two. The two planes are distinct, both contain the line $\mathbb{C}\tilde Q^{\natural}$, and they meet in exactly that line. At $\tilde Q=0$, each annihilator is all of $\mathbb{B}$. | the two sides differ |
 | the plain sesqualgebra | $\tilde Q_1\tilde Q_2^{*}$ | $\tilde Q\tilde Q_2^{*}$ | When the norm $\langle\tilde Q\rangle_{\natural}$ is not zero, the annihilator is $\{0\}$. When the norm $\langle\tilde Q\rangle_{\natural}$ is zero at a nonzero element, the annihilator is the plane of dimension two formed by the conjugates $\tilde Q_2^{*}$ of the solutions $\tilde Q_2$ of $\tilde Q\tilde Q_2=0$ in the plain product. At $\tilde Q=0$, the annihilator is all of $\mathbb{B}$. | the two sides are equal |
 | the quaternionic algebra | $\tilde Q_1^{\natural}\tilde Q_2$ | $\tilde Q^{\natural}\tilde Q_2$ | When the norm $\langle\tilde Q\rangle_{\natural}$ is not zero, both annihilators are $\{0\}$. When the norm $\langle\tilde Q\rangle_{\natural}$ is zero at a nonzero element, both are one and the same plane of dimension two, and that plane contains the line $\mathbb{C}\tilde Q$. At $\tilde Q=0$, both are all of $\mathbb{B}$. | the two sides are equal |
-| the quaternionic sesqualgebra | $\tilde Q_1^{\natural}\tilde Q_2^{*}$ | $\tilde Q^{\natural}\tilde Q_2^{*}$ | When the norm $\langle\tilde Q\rangle_{\natural}$ is not zero, both annihilators are $\{0\}$. When the norm $\langle\tilde Q\rangle_{\natural}$ is zero at a nonzero element, the left annihilator is the conjugate of the plain left annihilator of $\tilde Q^{\natural}$, and the right annihilator is the natural conjugate of the plain right annihilator of $\tilde Q^{*}$. The two are distinct planes of dimension two, and they meet in exactly the line $\mathbb{C}\tilde Q^{*}$. At $\tilde Q=0$, both are all of $\mathbb{B}$. | the two sides differ |
+| the quaternionic sesqualgebra | $\tilde Q_1^{\natural}\tilde Q_2^{*}$ | $\tilde Q^{\natural}\tilde Q_2^{*}$ | When the norm $\langle\tilde Q\rangle_{\natural}$ is not zero, both annihilators are $\{0\}$. When the norm $\langle\tilde Q\rangle_{\natural}$ is zero at a nonzero element, the left annihilator is the conjugate of the plain left annihilator of $\tilde Q^{\natural}$, and the right annihilator is the quaternion conjugate of the plain right annihilator of $\tilde Q^{*}$. The two are distinct planes of dimension two, and they meet in exactly the line $\mathbb{C}\tilde Q^{*}$. At $\tilde Q=0$, both are all of $\mathbb{B}$. | the two sides differ |
 | the plain algebra | $\tilde Q_1\bullet\tilde Q_2$ | $\tfrac12(\tilde Q\tilde Q_2+\tilde Q_2\tilde Q)$ | At a nonzero element whose scalar part $Q_t$ is zero, the annihilator is the plane $\{Q_{1t}=0,\ (\vec Q,\vec Q_1)=0\}$. At an element with $Q_t$ not zero and with vanishing norm $\langle\tilde Q\rangle_{\natural}$, the annihilator is the line $\mathbb{C}\tilde Q^{\natural}$. At an element with $Q_t$ not zero and with nonzero norm $\langle\tilde Q\rangle_{\natural}$, the annihilator is $\{0\}$. At $\tilde Q=0$, the annihilator is all of $\mathbb{B}$. | the two sides are equal |
 | the plain sesqualgebra | $\tilde Q_1\bullet_{*}\tilde Q_2$ | $\langle\tilde Q,\tilde Q_2\rangle_{*}e_t$ | At a nonzero element, the annihilator is the hyperplane $\langle\tilde Q,\tilde Q_1\rangle_{*}=0$, that is $Q_t\overline{Q_{1t}}+(\vec Q,\overline{\vec Q_1})=0$, of dimension three. At $\tilde Q=0$, the annihilator is all of $\mathbb{B}$. | the two sides are equal |
 | the quaternionic algebra | $\tilde Q_1\bullet_{\natural}\tilde Q_2$ | $\langle\tilde Q,\tilde Q_2\rangle_{\natural}e_t$ | At a nonzero element, the annihilator is the hyperplane $\langle\tilde Q,\tilde Q_1\rangle_{\natural}=0$, that is $Q_tQ_{1t}+(\vec Q,\vec Q_1)=0$, of dimension three. At $\tilde Q=0$, the annihilator is all of $\mathbb{B}$. | the two sides are equal |
@@ -286,7 +286,7 @@ Four facts follow from the table. The two one-sided annihilators differ in exact
 
 Fix a nonzero element of the cone, $\mathrm{Norm}(\tilde Q)=Q_t^{2}+Q_x^{2}+Q_y^{2}+Q_z^{2}=0$. Each of the four general products gives two planes for it, and the eight planes are related as follows.
 
-**Theorem (the planes are read through the two conjugations).** Write $A_{\text{plain}},A_{*},A_{\natural},A_{\natural*}$ for the left annihilators of $\tilde Q$ in the plain, the general plain sesquilinear, the natural and the general quaternionic sesquilinear product. Then
+**Theorem (the planes are read through the two conjugations).** Write $A_{\text{plain}},A_{*},A_{\natural},A_{\natural*}$ for the left annihilators of $\tilde Q$ in the plain, the general plain sesquilinear, the quaternionic bilinear and the general quaternionic sesquilinear product. Then
 $$ \boxed{\; A_{\natural}(\tilde Q)=A_{\text{plain}}(\tilde Q^{\natural}),\qquad A_{*}(\tilde Q)=A_{\text{plain}}(\tilde Q)^{*},\qquad A_{\natural*}(\tilde Q)=A_{\text{plain}}(\tilde Q^{\natural})^{*} \;}, $$
 and the two sides coincide for the natural product and for the general plain sesquilinear product, while for the plain product and for the general quaternionic sesquilinear product they differ.
 
@@ -319,7 +319,7 @@ The single example that ties them together is $\tilde Q=e_t+i\vec e_x$, whose no
 | $\star$ | one of the twelve products of $\mathbb{B}$ |
 | $\tilde Q\tilde Q_2$, $\tilde Q\tilde Q_2^{*}$, $\tilde Q^{\natural}\tilde Q_2$, $\tilde Q^{\natural}\tilde Q_2^{*}$ | the four general products |
 | $A_\star(\tilde Q)$, $B_\star(\tilde Q)$ | the left and the right annihilator of $\tilde Q$ in the product $\star$, the kernels of $L_{\tilde Q}$ and $R_{\tilde Q}$ |
-| $A_{\text{plain}},A_{*},A_{\natural},A_{\natural*}$ | the left annihilators in the plain, the general plain sesquilinear, the natural and the general quaternionic sesquilinear product |
+| $A_{\text{plain}},A_{*},A_{\natural},A_{\natural*}$ | the left annihilators in the plain, the general plain sesquilinear, the quaternionic bilinear and the general quaternionic sesquilinear product |
 | $A_{\text{plain}}(\tilde Q)=\{\tilde Q_2:\tilde Q\tilde Q_2=0\}$ | the kernel of the left multiplication in the plain product, $A_{\text{plain}}(\tilde Q)$ |
 | $\mathbb{C}\{u,v\}$, $\mathbb{C}u$ | a complex plane and a complex line, given by their generators |
 | $\langle\tilde Q\rangle_{\natural}=\mathrm{Sc}(\tilde Q^{\natural}\tilde Q)=Q_t^{2}+Q_x^{2}+Q_y^{2}+Q_z^{2}$ | the general quaternionic bilinear algebraic norm, also called the quaternionic norm $\mathrm{Norm}(\tilde Q)$; zero exactly on the cone, and **the deciding norm of every annihilator in this article** |
@@ -329,7 +329,7 @@ The single example that ties them together is $\tilde Q=e_t+i\vec e_x$, whose no
 | $\tilde Q^{\perp}$ | the hyperplane $\{\langle\tilde Q,\tilde Q_1\rangle_{\natural}=0\}$ or $\{\langle\tilde Q,\tilde Q_1\rangle_{*}=0\}$ |
 | $\mathbb{B}_{C}=\mathbb{C}e_t$, $\mathbb{B}_{V}$ | the centre and the vector subspace |
 | $\tilde Q_1\tilde Q_2,\dots,\tilde Q_1\wedge_{\natural*}\tilde Q_2$ | the twelve structures, read in the table of §*The Twelve Annihilators* |
-| ${}^{*}$, ${}^{\natural}$ | the Hermitian conjugation, $\overline{Q_{1t}}e_t-\sum_{\mu\in\{x,y,z\}}\overline{Q_{1\mu}}\vec e_\mu$, and the natural conjugation, $Q_{1t}e_t-\vec Q_1$ |
+| ${}^{*}$, ${}^{\natural}$ | the Hermitian conjugation, $\overline{Q_{1t}}e_t-\sum_{\mu\in\{x,y,z\}}\overline{Q_{1\mu}}\vec e_\mu$, and the quaternion conjugation, $Q_{1t}e_t-\vec Q_1$ |
 | $\mathsf{M}_2$ | the isomorphism $\mathbb{B}\cong M_2(\mathbb{C})$ |
 
 ## Further Reading

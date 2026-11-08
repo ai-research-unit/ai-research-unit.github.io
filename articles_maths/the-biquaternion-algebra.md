@@ -273,10 +273,10 @@ The algebra is central simple of dimension four. The element, its three coordina
 | $\varphi : \mathbb{C} \to Z(\mathbb{B})$, $A \mapsto Ae_t$ | the structure map of the complex algebra |
 | $\mathbb{B}_{C} = \mathbb{C}e_t$ | the centre, equal to the scalar line |
 | $\mathbb{B}_{H} = \mathbb{R}e_t + \mathbb{R}\vec e_x + \mathbb{R}\vec e_y + \mathbb{R}\vec e_z$ | the quaternion subspace |
-| ${}^{\natural}$, $\bar{\cdot}$ | the natural and the coefficient conjugation |
+| ${}^{\natural}$, $\bar{\cdot}$ | the quaternion and the coefficient conjugation |
 | ${}^{*} = \bar{\cdot} \circ {}^{\natural} = \natural \circ \bar{\cdot}$ | the Hermitian conjugation |
 | ${}^{\flat} = -{}^{*}$ | the anti-Hermitian conjugation, outside the Klein group |
-| $\varepsilon = (1,-1,-1,-1)$ | the sign vector of the natural conjugation |
+| $\varepsilon = (1,-1,-1,-1)$ | the sign vector of the quaternion conjugation |
 | $h_1, h_2, h_3, h_4$ | the hyperbolic basis of the plain product, $e_t+\vec e_x$, $\tfrac12(e_t-\vec e_x)$, $\vec e_y+i\vec e_z$, $\tfrac12(i\vec e_z-\vec e_y)$ |
 | real form of $\mathbb{B}$ | a real subspace $V$ of real dimension $4$ with $\mathbb{B} = V \oplus JV$ |
 

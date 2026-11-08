@@ -116,7 +116,7 @@ $$
 =i\,k_{t}^{\prime}\,e_{t}+\vec k_{\Phi}.
 $$
 
-The division is legitimate term by term, and the reason is one line: $\hbar$ is real and central, so it passes unchanged through the coefficient bar, the natural involution and the star, and it therefore moves no element out of its subspace. The momentum is anti-Hermitian, $\tilde P_{\Phi}^{*}=-\tilde P_{\Phi}$; multiplying by the real central $1/\hbar$ preserves that, so $\tilde K_{\Phi}^{*}=-\tilde K_{\Phi}$ and $\tilde K_{\Phi}\in\mathbb{B}_{\Phi}$.
+The division is legitimate term by term, and the reason is one line: $\hbar$ is real and central, so it passes unchanged through the coefficient bar, the quaternion involution and the star, and it therefore moves no element out of its subspace. The momentum is anti-Hermitian, $\tilde P_{\Phi}^{*}=-\tilde P_{\Phi}$; multiplying by the real central $1/\hbar$ preserves that, so $\tilde K_{\Phi}^{*}=-\tilde K_{\Phi}$ and $\tilde K_{\Phi}\in\mathbb{B}_{\Phi}$.
 
 **The check of the equality.** Two routes must agree, and they do. Divide the norm of the momentum:
 

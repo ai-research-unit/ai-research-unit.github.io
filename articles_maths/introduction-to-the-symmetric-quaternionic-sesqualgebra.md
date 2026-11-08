@@ -15,7 +15,7 @@ The general construction of the sesqualgebra parts is *The Symmetric and Antisym
 
 ## The Product
 
-**Definition (the class and its two slot involutions).** Let $\star$ be a product on the complex space $\mathbb{B}$ that is $\mathbb{C}$-linear in its first argument and $\bar{\cdot}$-semilinear in its second, so that $(\lambda\tilde Q_1)\star\tilde Q_2=\lambda(\tilde Q_1\star\tilde Q_2)$ and $\tilde Q_1\star(\lambda\tilde Q_2)=\overline{\lambda}(\tilde Q_1\star\tilde Q_2)$; such a product is a **sesquilinear product over $(\mathbb{C},\bar{\cdot}\,)$**, and the definition is stated once and for all in *The Sesquilinear Product*. The four general products of the space are *The Four General Products and Their Relations over the Biquaternion Algebra*, and the product of the fourth general row carries the two slot involutions that the class uses, the natural conjugation ${}^{\natural}$ in the first slot and the Hermitian conjugation ${}^{*}$ in the second; the block is the part of that product that the adapted exchange fixes, and the exchange is *The Symmetric and Antisymmetric Parts of a Sesqualgebra Product*. The definition below fixes the two slot involutions and the two orders, and the tables that follow are read from it.
+**Definition (the class and its two slot involutions).** Let $\star$ be a product on the complex space $\mathbb{B}$ that is $\mathbb{C}$-linear in its first argument and $\bar{\cdot}$-semilinear in its second, so that $(\lambda\tilde Q_1)\star\tilde Q_2=\lambda(\tilde Q_1\star\tilde Q_2)$ and $\tilde Q_1\star(\lambda\tilde Q_2)=\overline{\lambda}(\tilde Q_1\star\tilde Q_2)$; such a product is a **sesquilinear product over $(\mathbb{C},\bar{\cdot}\,)$**, and the definition is stated once and for all in *The Sesquilinear Product*. The four general products of the space are *The Four General Products and Their Relations over the Biquaternion Algebra*, and the product of the fourth general row carries the two slot involutions that the class uses, the quaternion conjugation ${}^{\natural}$ in the first slot and the Hermitian conjugation ${}^{*}$ in the second; the block is the part of that product that the adapted exchange fixes, and the exchange is *The Symmetric and Antisymmetric Parts of a Sesqualgebra Product*. The definition below fixes the two slot involutions and the two orders, and the tables that follow are read from it.
 
 **Definition.** The **symmetric quaternionic sesquilinear product** of two biquaternions is
 
@@ -61,7 +61,7 @@ $$ \boxed{\; \tilde Q_1\star\tilde Q_2=\overline{\tilde Q_2\star\tilde Q_1} \;}.
 
 **Remark.** The conjugate-commutativity is the symmetry the block inherits from its construction, and it is *not* commutativity: the product is not commutative, and it is not associative either. The block is the one of the four symmetric parts that is neither central nor commutative, and its diagonal is the subject of *The Non-Central Algebraic Norm and the Two Halves of the Symmetric Quaternionic Sesqualgebra*.
 
-**Proposition (the two orders of the plain product).** The two orders whose half-sum is the block are the natural conjugates of the two orders of the plain product of $\overline{\tilde Q_2}$ and $\tilde Q_1$:
+**Proposition (the two orders of the plain product).** The two orders whose half-sum is the block are the quaternion conjugate of the two orders of the plain product of $\overline{\tilde Q_2}$ and $\tilde Q_1$:
 
 $$
 \tilde Q_1^{\natural}\tilde Q_2^{*}=(\overline{\tilde Q_2}\tilde Q_1)^{\natural},
@@ -73,7 +73,7 @@ $$
 
 where $\tilde Q_1\bullet\tilde Q_2(\tilde Q_1,\tilde Q_2)=\tfrac12(\tilde Q_1\tilde Q_2+\tilde Q_2\tilde Q_1)$ is the symmetric plain product.
 
-*Proof.* The natural conjugation is an anti-automorphism, so $(\overline{\tilde Q_2}\tilde Q_1)^{\natural}=\tilde Q_1^{\natural}(\overline{\tilde Q_2})^{\natural}=\tilde Q_1^{\natural}\tilde Q_2^{*}$, since $(\overline{\tilde Q_2})^{\natural}=\tilde Q_2^{*}$; the second identity is the same with the factors exchanged. Averaging gives $\tilde Q_1\star\tilde Q_2=\bigl[\tfrac12(\overline{\tilde Q_2}\tilde Q_1+\tilde Q_1\overline{\tilde Q_2})\bigr]^{\natural}=\bigl[\tilde Q_1\bullet\tilde Q_2(\overline{\tilde Q_2},\tilde Q_1)\bigr]^{\natural}$.
+*Proof.* The quaternion conjugation is an anti-automorphism, so $(\overline{\tilde Q_2}\tilde Q_1)^{\natural}=\tilde Q_1^{\natural}(\overline{\tilde Q_2})^{\natural}=\tilde Q_1^{\natural}\tilde Q_2^{*}$, since $(\overline{\tilde Q_2})^{\natural}=\tilde Q_2^{*}$; the second identity is the same with the factors exchanged. Averaging gives $\tilde Q_1\star\tilde Q_2=\bigl[\tfrac12(\overline{\tilde Q_2}\tilde Q_1+\tilde Q_1\overline{\tilde Q_2})\bigr]^{\natural}=\bigl[\tilde Q_1\bullet\tilde Q_2(\overline{\tilde Q_2},\tilde Q_1)\bigr]^{\natural}$.
 
 **Remark (the orders are not conjugate to each other).** The second order $\tilde Q_2^{*}\tilde Q_1^{\natural}$ is not $\overline{\tilde Q_1^{\natural}\tilde Q_2^{*}}$; the two differ by the cross product, $(\tilde Q_1^{\natural}\tilde Q_2^{*})-(\tilde Q_2^{*}\tilde Q_1^{\natural})=2\,\vec Q_1\times\overline{\vec Q_2}$, so the cross-product cancellation in the half-sum is not a conjugation but a genuine cancellation of two independent orders.
 
@@ -95,7 +95,7 @@ $$
 
 *Proof.* A left unit would satisfy $\tilde E\star e_t=e_t$, that is $\tilde E^{\natural}=e_t$, whence $\tilde E=e_t$; but $e_t\star \vec e_x=\vec e_x^{*}=-\vec e_x\neq \vec e_x$, so $e_t$ is not a left unit. The right case is the mirror, through $\tilde Q\star e_t=\tilde Q^{\natural}$, and $\tilde Q^{\natural}\neq\tilde Q$ for $\tilde Q=\vec e_x$.
 
-**Remark.** The two actions are the two conjugations of the algebra, so the unit candidate $e_t$ acts as the star conjugation on the left and as the natural conjugation on the right; the same computation shows that no other element can do better, since it must already fail at $\vec e_x$. The one-sided actions are *The Two One-Sided Actions and the Absence of a Unit*, read on the general quaternionic sesquilinear product; here they are the actions of the block, and they agree with the general ones.
+**Remark.** The two actions are the two conjugations of the algebra, so the unit candidate $e_t$ acts as the star conjugation on the left and as the quaternion conjugation on the right; the same computation shows that no other element can do better, since it must already fail at $\vec e_x$. The one-sided actions are *The Two One-Sided Actions and the Absence of a Unit*, read on the general quaternionic sesquilinear product; here they are the actions of the block, and they agree with the general ones.
 
 ## The Sixteen Products of the Basis
 
@@ -184,7 +184,7 @@ and on the other, at the element $\tilde Q_3^{\natural}$,
 $$
 \langle\tilde Q_3^{\natural}\star\tilde Q_2,\tilde Q_1\rangle_{\natural*}=\mathrm{Sc}\bigl((\tilde Q_3^{\natural}\star\tilde Q_2)^{\natural}\tilde Q_1^{*}\bigr)=\tfrac12\,\mathrm{Sc}\bigl((\overline{\tilde Q_2}\tilde Q_3^{\natural}+\tilde Q_3^{\natural}\overline{\tilde Q_2})\tilde Q_1^{*}\bigr).
 $$
-The natural conjugation carries the two summands of the first display onto the two of the second, since $(\overline{\tilde Q_1})^{\natural}=\tilde Q_1^{*}$ and $(\tilde Q_2^{*})^{\natural}=\overline{\tilde Q_2}$, and the scalar part is invariant under it; the cyclic invariance $\mathrm{Sc}(UV)=\mathrm{Sc}(VU)$ then matches the terms. Hermitian symmetry of the form gives the conjugate on the right.
+The quaternion conjugation carries the two summands of the first display onto the two of the second, since $(\overline{\tilde Q_1})^{\natural}=\tilde Q_1^{*}$ and $(\tilde Q_2^{*})^{\natural}=\overline{\tilde Q_2}$, and the scalar part is invariant under it; the cyclic invariance $\mathrm{Sc}(UV)=\mathrm{Sc}(VU)$ then matches the terms. Hermitian symmetry of the form gives the conjugate on the right.
 
 **Remark (adjointness, not multiplicativity).** The product is conjugate-linear in one slot, so its left multiplications do not preserve the form the way a group of linear maps does. The defect measures the failure, and the adjoint relation is the compatibility that survives; in operator form it is the $K$-adjointness of *The Multiplication Operators of the Symmetric Quaternionic Sesqualgebra*.
 

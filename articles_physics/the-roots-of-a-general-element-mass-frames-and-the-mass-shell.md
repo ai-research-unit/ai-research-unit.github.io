@@ -8,7 +8,7 @@ $$
 \boxed{\;\tilde{Ζ}^2=\tilde Q\;}.
 $$
 
-**Notation, once.** The imaginary unit is the central $i$ of $\mathbb{B}$, with $i^2=-1$; every double $i$ is reduced before a formula is read. The star and the natural sign are the two conjugations of *Algebra and Element Conventions*, and the derivative is the gradient $\tilde\nabla$ of *Operator and Calculus Conventions*, with natural conjugate $\tilde\nabla^{\natural}$ and d'Alembertian $\Box$; on the material sector $\Box$ reads $\Delta-\partial^2/\partial {r'_{t}}^2$, a derived form. The side is position: $a\tilde{Ξ}_{\mathrm{sp}}$ multiplies on the left and $\tilde{Ξ}_{\mathrm{sp}} b$ on the right. The chirality is the operator $\Gamma$ of the corpus, a right action; the Dirac bilinear is $\tilde{Ξ}_{\mathrm{sp}}^*i\tilde{Ξ}_{\mathrm{sp}}\vec e_x$. For a radicand with vector part $\vec Q$, $B$ is the modulus of the vector part, $B^2=(\vec Q,\vec Q)$.
+**Notation, once.** The imaginary unit is the central $i$ of $\mathbb{B}$, with $i^2=-1$; every double $i$ is reduced before a formula is read. The star and the quaternion sign are the two conjugations of *Algebra and Element Conventions*, and the derivative is the gradient $\tilde\nabla$ of *Operator and Calculus Conventions*, with quaternion conjugate $\tilde\nabla^{\natural}$ and d'Alembertian $\Box$; on the material sector $\Box$ reads $\Delta-\partial^2/\partial {r'_{t}}^2$, a derived form. The side is position: $a\tilde{Ξ}_{\mathrm{sp}}$ multiplies on the left and $\tilde{Ξ}_{\mathrm{sp}} b$ on the right. The chirality is the operator $\Gamma$ of the corpus, a right action; the Dirac bilinear is $\tilde{Ξ}_{\mathrm{sp}}^*i\tilde{Ξ}_{\mathrm{sp}}\vec e_x$. For a radicand with vector part $\vec Q$, $B$ is the modulus of the vector part, $B^2=(\vec Q,\vec Q)$.
 
 The answer depends on the product, and the first job of the article is to keep the products apart. The **plain square** $\tilde{Ζ}^2$ has a finite root set for a non-scalar radicand, generically four elements, falling to two or to none. The **natural square** $\tilde{Ζ}\tilde{Ζ}^{\natural}=\langle\tilde{Ζ}\rangle_{\natural}e_t$ has the level set of the interval as its root set, and on the material sector that level set is the mass shell. The **Hermitian square** $\tilde{Ζ}\tilde{Ζ}^{*}$ produces a positive semidefinite value; the eigenvalues of the mass operator are the mass-squareds of a doublet. The three squares are three root problems, not one.
 
@@ -215,7 +215,7 @@ $$
 
 with $\tilde{Ξ}_{\mathrm{sp}}=(\tilde{Ξ}_{\mathrm{sp},L},\tilde{Ξ}_{\mathrm{sp},R})$ and each line composed with its partner equal to $\Box I$. Both members are left actions, and no third object stands between them. The pair is not a rewording: $\tilde\nabla^2$ is not scalar, because the mixed spatial derivatives survive as units, while $\tilde\nabla\tilde\nabla^{\natural}=\Box$ is; no one-field first-order equation carries a mass.
 
-The chirality is not a term of either member. It is a right multiplication of the field, and a right multiplication of $\tilde{Ξ}_{\mathrm{sp}}$ is a left multiplication of the natural conjugate, by the exchange of *Operator and Calculus Conventions*: the same operator is the left multiplication of $\tilde{Ξ}_{\mathrm{sp}}^{\natural}$ by $i\vec e_z$. A chirality needs a right multiplication, and the one-sided gradient has none.
+The chirality is not a term of either member. It is a right multiplication of the field, and a right multiplication of $\tilde{Ξ}_{\mathrm{sp}}$ is a left multiplication of the quaternion conjugate, by the exchange of *Operator and Calculus Conventions*: the same operator is the left multiplication of $\tilde{Ξ}_{\mathrm{sp}}^{\natural}$ by $i\vec e_z$. A chirality needs a right multiplication, and the one-sided gradient has none.
 
 The axial symmetry, the axial current and the condensate are not a second theory: they are what a right multiplication carries, and what the gradient does not.
 
@@ -311,7 +311,7 @@ The mass shell is a statement of the gradient equation; the chirality, the axial
 | $\tilde{Ζ}$ | a root of $\tilde Q$ |
 | $\tilde Q$ | a radicand |
 | $B$ | the square root of the vector-part square, $B^2=(\vec Q,\vec Q)$ |
-| $*,\natural$ | the Hermitian and natural conjugations of *Algebra and Element Conventions* |
+| $*,\natural$ | the Hermitian and quaternion conjugations of *Algebra and Element Conventions* |
 | $\langle\tilde Q\rangle_{\natural}$ | the natural norm of *Norm and Pairing Conventions* |
 | $\tilde P_{\Phi}$ | a material four-momentum |
 | $(\vec v,\vec v)$ | the vector-part square $v_x^2+v_y^2+v_z^2$; the element $\vec v$ squares to $-(\vec v,\vec v)e_t$ |

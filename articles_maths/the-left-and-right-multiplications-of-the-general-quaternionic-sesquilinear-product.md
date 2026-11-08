@@ -9,7 +9,7 @@ $$
 \tilde Q_1 \star \tilde Q_2 = \tilde Q_1^{\natural}\tilde Q_2^{*} ,
 $$
 
-is the subject of this group. The rule and the scalar–vector form are *The Four General Products and Their Relations over the Biquaternion Algebra* §*The General Quaternionic Sesquilinear Product*; the sesqualgebra it defines and its one-sided actions of the unit are *Introduction to the General Quaternionic Sesqualgebra*; the associator is *The Associator of the General Quaternionic Sesquilinear Product*. The symbols are those of the group: ${}^{\natural}$ is the natural conjugation $\tilde Q^{\natural} = Q_t - \vec Q$, ${}^{*}$ is the star conjugation, and the bar is the coefficientwise complex conjugation.
+is the subject of this group. The rule and the scalar–vector form are *The Four General Products and Their Relations over the Biquaternion Algebra* §*The General Quaternionic Sesquilinear Product*; the sesqualgebra it defines and its one-sided actions of the unit are *Introduction to the General Quaternionic Sesqualgebra*; the associator is *The Associator of the General Quaternionic Sesquilinear Product*. The symbols are those of the group: ${}^{\natural}$ is the quaternion conjugation $\tilde Q^{\natural} = Q_t - \vec Q$, ${}^{*}$ is the star conjugation, and the bar is the coefficientwise complex conjugation.
 
 The subject of this article is the pair of **multiplication operators** attached to the multiplication,
 
@@ -49,7 +49,7 @@ where $\mathcal{T}_{a,b}(\tilde Q_1) = a\tilde Q_1^{*}b$ is the sesquilinear two
 
 **Proof.** The first display is the rule; the two-sided operator with second parameter $e_t$ is $a\tilde Q_1^{*}e_t = a\tilde Q_1^{*}$, which is the left multiplication with $a = \tilde Q_5^{\natural}$. The second display is the rule read on the right slot.
 
-**Remark.** The left multiplication is a two-sided operator and the right multiplication is not: $R_{\tilde Q_5}(\tilde Q_1) = \tilde Q_1^{\natural}\tilde Q_5^{*}$ carries the natural conjugation in the first factor rather than the star in the middle, and it is a $\mathbb{C}$-linear operator, whereas every two-sided operator is conjugate-linear. The asymmetry of the two slots of the multiplication therefore appears at the operator level as the asymmetry between a two-sided operator and a linear two-sided operator.
+**Remark.** The left multiplication is a two-sided operator and the right multiplication is not: $R_{\tilde Q_5}(\tilde Q_1) = \tilde Q_1^{\natural}\tilde Q_5^{*}$ carries the quaternion conjugation in the first factor rather than the star in the middle, and it is a $\mathbb{C}$-linear operator, whereas every two-sided operator is conjugate-linear. The asymmetry of the two slots of the multiplication therefore appears at the operator level as the asymmetry between a two-sided operator and a linear two-sided operator.
 
 ### The Parities
 
@@ -59,11 +59,11 @@ $$
 L_{\tilde Q_5}(\lambda\tilde Q_1) = \bar\lambda\, L_{\tilde Q_5}(\tilde Q_1) , \qquad R_{\tilde Q_5}(\lambda\tilde Q_1) = \lambda\, R_{\tilde Q_5}(\tilde Q_1) .
 $$
 
-**Proof.** $L_{\tilde Q_5}(\tilde Q_1) = \tilde Q_5^{\natural}\tilde Q_1^{*}$ and the star conjugation is conjugate-linear, $(\lambda\tilde Q_1)^{*} = \bar\lambda\tilde Q_1^{*}$, while $\tilde Q_5^{\natural}$ is fixed; hence the first identity. $R_{\tilde Q_5}(\tilde Q_1) = \tilde Q_1^{\natural}\tilde Q_5^{*}$ and the natural conjugation is $\mathbb{C}$-linear, $(\lambda\tilde Q_1)^{\natural} = \lambda\tilde Q_1^{\natural}$, and $\tilde Q_5^{*}$ is fixed; hence the second.
+**Proof.** $L_{\tilde Q_5}(\tilde Q_1) = \tilde Q_5^{\natural}\tilde Q_1^{*}$ and the star conjugation is conjugate-linear, $(\lambda\tilde Q_1)^{*} = \bar\lambda\tilde Q_1^{*}$, while $\tilde Q_5^{\natural}$ is fixed; hence the first identity. $R_{\tilde Q_5}(\tilde Q_1) = \tilde Q_1^{\natural}\tilde Q_5^{*}$ and the quaternion conjugation is $\mathbb{C}$-linear, $(\lambda\tilde Q_1)^{\natural} = \lambda\tilde Q_1^{\natural}$, and $\tilde Q_5^{*}$ is fixed; hence the second.
 
 **Proposition (the parities of the parametrisations).** The map $\tilde Q_5 \mapsto L_{\tilde Q_5}$ is injective and $\mathbb{C}$-**linear**, and the map $\tilde Q_5 \mapsto R_{\tilde Q_5}$ is injective and **conjugate-linear**.
 
-**Proof.** For the linearity of the first, $L_{\tilde Q_5 + \lambda\tilde Q_2}(\tilde Q_1) = (\tilde Q_5 + \lambda\tilde Q_2)^{\natural}\tilde Q_1^{*} = \tilde Q_5^{\natural}\tilde Q_1^{*} + \lambda\tilde Q_2^{\natural}\tilde Q_1^{*}$; the natural conjugation is $\mathbb{C}$-linear, so $(\lambda\tilde Q_2)^{\natural} = \lambda\tilde Q_2^{\natural}$ and $L_{\tilde Q_5+\lambda\tilde Q_2} = L_{\tilde Q_5} + \lambda L_{\tilde Q_2}$. Injectivity: $L_{\tilde Q_5} = 0$ means $\tilde Q_5^{\natural}\tilde Q_1^{*} = 0$ for every $\tilde Q_1$, which at $\tilde Q_1 = e_t$ gives $\tilde Q_5^{\natural} = 0$, hence $\tilde Q_5 = 0$. For the second, $R_{\tilde Q_5+\lambda\tilde Q_2}(\tilde Q_1) = \tilde Q_1^{\natural}(\tilde Q_5 + \lambda\tilde Q_2)^{*} = \tilde Q_1^{\natural}\tilde Q_5^{*} + \bar\lambda\tilde Q_1^{\natural}\tilde Q_2^{*}$, since the star is conjugate-linear; injectivity is as before at $\tilde Q_1 = e_t$.
+**Proof.** For the linearity of the first, $L_{\tilde Q_5 + \lambda\tilde Q_2}(\tilde Q_1) = (\tilde Q_5 + \lambda\tilde Q_2)^{\natural}\tilde Q_1^{*} = \tilde Q_5^{\natural}\tilde Q_1^{*} + \lambda\tilde Q_2^{\natural}\tilde Q_1^{*}$; the quaternion conjugation is $\mathbb{C}$-linear, so $(\lambda\tilde Q_2)^{\natural} = \lambda\tilde Q_2^{\natural}$ and $L_{\tilde Q_5+\lambda\tilde Q_2} = L_{\tilde Q_5} + \lambda L_{\tilde Q_2}$. Injectivity: $L_{\tilde Q_5} = 0$ means $\tilde Q_5^{\natural}\tilde Q_1^{*} = 0$ for every $\tilde Q_1$, which at $\tilde Q_1 = e_t$ gives $\tilde Q_5^{\natural} = 0$, hence $\tilde Q_5 = 0$. For the second, $R_{\tilde Q_5+\lambda\tilde Q_2}(\tilde Q_1) = \tilde Q_1^{\natural}(\tilde Q_5 + \lambda\tilde Q_2)^{*} = \tilde Q_1^{\natural}\tilde Q_5^{*} + \bar\lambda\tilde Q_1^{\natural}\tilde Q_2^{*}$, since the star is conjugate-linear; injectivity is as before at $\tilde Q_1 = e_t$.
 
 **Remark.** The two families are therefore two different images of $\mathbb{B}$: the left one is a $\mathbb{C}$-linear image inside the conjugate-linear endomorphisms, and the right one a conjugate-linear image inside the linear endomorphisms. The left family is a copy of $\mathbb{B}$ and not a representation of the multiplication, because the multiplication is not associative; the right family is the conjugate copy. This is the operator-level reason the group has no regular representation in the sense of an algebra, and it is the first of the two negative results of the article.
 
@@ -75,11 +75,11 @@ $$
 L_{\tilde Q_5} = \lambda_{\tilde Q_5^{\natural}} \circ {}^{*} , \qquad R_{\tilde Q_5} = \rho_{\tilde Q_5^{*}} \circ {}^{\natural} .
 $$
 
-**Proposition.** The left multiplication is the plain left multiplication by $\tilde Q_5^{\natural}$ after the star conjugation, and the right multiplication is the plain right multiplication by $\tilde Q_5^{*}$ after the natural conjugation.
+**Proposition.** The left multiplication is the plain left multiplication by $\tilde Q_5^{\natural}$ after the star conjugation, and the right multiplication is the plain right multiplication by $\tilde Q_5^{*}$ after the quaternion conjugation.
 
 **Proof.** $\lambda_{\tilde Q_5^{\natural}}(\tilde Q_1^{*}) = \tilde Q_5^{\natural}\tilde Q_1^{*} = L_{\tilde Q_5}(\tilde Q_1)$, and $\rho_{\tilde Q_5^{*}}(\tilde Q_1^{\natural}) = \tilde Q_1^{\natural}\tilde Q_5^{*} = R_{\tilde Q_5}(\tilde Q_1)$.
 
-**Remark.** The reading is the one of *The Four General Products and Their Relations over the Biquaternion Algebra* §*The Left Multiplications*: the left multiplication of the fourth product is a plain multiplication re-indexed by the natural sign and composed with the star, while the right multiplication is the conjugate of a plain right multiplication re-indexed. The re-indexing by ${}^{\natural}$ is the operator form of the isotope by which the fourth product differs from the derived operation (*The Two One-Sided Actions and the Absence of a Unit*), and the asymmetric placement of the two conjugations is the operator form of the two different slots of the multiplication.
+**Remark.** The reading is the one of *The Four General Products and Their Relations over the Biquaternion Algebra* §*The Left Multiplications*: the left multiplication of the fourth product is a plain multiplication re-indexed by the quaternion sign and composed with the star, while the right multiplication is the conjugate of a plain right multiplication re-indexed. The re-indexing by ${}^{\natural}$ is the operator form of the isotope by which the fourth product differs from the derived operation (*The Two One-Sided Actions and the Absence of a Unit*), and the asymmetric placement of the two conjugations is the operator form of the two different slots of the multiplication.
 
 ## The Composition of Two Left Multiplications
 
@@ -245,9 +245,9 @@ $$
 L_{\tilde\Pi}(\tilde\Pi) = \tilde\Pi , \qquad L_{\tilde\Pi}\bigl(\tilde\Pi^{\natural}\bigr) = \langle\tilde\Pi\rangle_{\natural}\,e_t . 
 $$
 
-**Proof.** The first is the idempotent equation, $L_{\tilde\Pi}(\tilde\Pi) = \tilde\Pi \star \tilde\Pi = \tilde\Pi$. For the second, the nontrivial idempotents have real coordinates (*Square Roots of One and the Idempotents of the General Quaternionic Sesqualgebra*), so $\overline{\tilde\Pi} = \tilde\Pi$ and $(\tilde\Pi^{\natural})^{*} = \overline{\tilde\Pi} = \tilde\Pi$; hence $L_{\tilde\Pi}(\tilde\Pi^{\natural}) = \tilde\Pi^{\natural}(\tilde\Pi^{\natural})^{*} = \tilde\Pi^{\natural}\tilde\Pi = \langle\tilde\Pi\rangle_{\natural}e_t$, the plain product of an element with its natural conjugate being the norm times the identity.
+**Proof.** The first is the idempotent equation, $L_{\tilde\Pi}(\tilde\Pi) = \tilde\Pi \star \tilde\Pi = \tilde\Pi$. For the second, the nontrivial idempotents have real coordinates (*Square Roots of One and the Idempotents of the General Quaternionic Sesqualgebra*), so $\overline{\tilde\Pi} = \tilde\Pi$ and $(\tilde\Pi^{\natural})^{*} = \overline{\tilde\Pi} = \tilde\Pi$; hence $L_{\tilde\Pi}(\tilde\Pi^{\natural}) = \tilde\Pi^{\natural}(\tilde\Pi^{\natural})^{*} = \tilde\Pi^{\natural}\tilde\Pi = \langle\tilde\Pi\rangle_{\natural}e_t$, the plain product of an element with its quaternion conjugate being the norm times the identity.
 
-**Remark.** With $\langle\tilde\Pi\rangle_{\natural} = 1$ for the nontrivial idempotents of *Square Roots of One and the Idempotents of the General Quaternionic Sesqualgebra*, the second value is $e_t$, and the two values together show that the left multiplication by an idempotent fixes the idempotent and sends its natural conjugate to the identity. This is the operator reading of the two-sided nature of an idempotent, and it is the closest the operator theory comes to the unit that the multiplication does not have.
+**Remark.** With $\langle\tilde\Pi\rangle_{\natural} = 1$ for the nontrivial idempotents of *Square Roots of One and the Idempotents of the General Quaternionic Sesqualgebra*, the second value is $e_t$, and the two values together show that the left multiplication by an idempotent fixes the idempotent and sends its quaternion conjugate to the identity. This is the operator reading of the two-sided nature of an idempotent, and it is the closest the operator theory comes to the unit that the multiplication does not have.
 
 ## Summary
 

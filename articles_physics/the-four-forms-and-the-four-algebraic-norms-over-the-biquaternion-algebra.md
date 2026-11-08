@@ -155,7 +155,7 @@ The interval is the algebraic norm that carries the word **mass**. Its level set
 
 The Krein form is the indefinite Hermitian form of the fourth corner. It is real at the two equal arguments, of signature $(2,6)$ on the real algebra and $(1,3)$ on each of the four four-dimensional real-type subspaces, and it normalises nothing: an indefinite form has no positive unit sphere, so it cannot supply a probability. Its null set is the real cone $\mathcal{K}=\{\lvert c\rvert=\lvert v\rvert\}$ of the centre–vector split, of real dimension seven, and its positive and negative value-one sets are $S^{1}\times\mathbb{R}^{6}$ and $S^{5}\times\mathbb{R}^{2}$.
 
-The reading is a **constraint**, not a state. A gauge calibration fixes a redundancy of the description; it does not prepare a state, and its form is the form of that redundancy. The signature is what an object is: a definite Hermitian form counts states, an indefinite one counts a constraint. The Krein form is the indefinite metric of an indefinite-metric quantum theory, and its fundamental symmetry is the natural conjugation ${}^{\natural}$, the operator that turns it into a definite form.
+The reading is a **constraint**, not a state. A gauge calibration fixes a redundancy of the description; it does not prepare a state, and its form is the form of that redundancy. The signature is what an object is: a definite Hermitian form counts states, an indefinite one counts a constraint. The Krein form is the indefinite metric of an indefinite-metric quantum theory, and its fundamental symmetry is the quaternion conjugation ${}^{\natural}$, the operator that turns it into a definite form.
 
 On the material sector the Krein form is minus the interval; on the informational sector it is the interval. The two are one form read with a sign, and on the informational side they are the same form. This is the algebraic reason the interval and the gauge form are easy to conflate, and the reason the sign of the sector must be named whenever the two are compared.
 
@@ -241,7 +241,7 @@ Only the $N$ cut is the invertibility partition. A degenerate biquaternion is no
 | $P$, $N$, $H$, $\mathrm{Kr}$ | the plain, quaternionic, Hermitian and Krein letter, naming the form with two arguments and the algebraic norm with one |
 | $\langle\tilde Q_1,\tilde Q_2\rangle$, $\langle\tilde Q_1,\tilde Q_2\rangle_{\natural}$, $\langle\tilde Q_1,\tilde Q_2\rangle_{*}$, $\langle\tilde Q_1,\tilde Q_2\rangle_{\natural*}$ | the sector sign, the interval, the Born form and the Krein form |
 | $\langle\tilde Q\rangle$, $\langle\tilde Q\rangle_{\natural}$, $\langle\tilde Q\rangle_{*}$, $\langle\tilde Q\rangle_{\natural*}$ | the four algebraic norms, the same brackets at two equal arguments |
-| $\varepsilon=(1,-1,-1,-1)$ | the sign vector of the natural conjugation |
+| $\varepsilon=(1,-1,-1,-1)$ | the sign vector of the quaternion conjugation |
 | $\mathrm{E}=\operatorname{diag}(1,-1,-1,-1)$, $\mathrm{I}_4$ | the Gram matrices of the four forms |
 | $(4,4)$, $(4,4)$, $(8,0)$, $(2,6)$ | the signatures of the realifications of the four forms |
 | $(0,4)$, $(3,1)$, $(4,0)$, $(1,3)$ | their signatures on $\mathbb{B}_{\Phi}$, in the same order |

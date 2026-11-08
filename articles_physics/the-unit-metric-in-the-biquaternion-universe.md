@@ -44,7 +44,7 @@ $$
 \langle e_\mu\rangle_\natural=e_\mu e_\mu^\natural=+1,\qquad \mu\in\{t,x,y,z\}.
 $$
 
-The two cases are computed directly: $e_te_t^\natural=e_te_t=1$, and $\vec e_k\vec e_k^\natural=\vec e_k(-\vec e_k)=-\vec e_k^2=+1$. No sign is inserted anywhere, because the natural conjugation supplies the sign and the square supplies it back.
+The two cases are computed directly: $e_te_t^\natural=e_te_t=1$, and $\vec e_k\vec e_k^\natural=\vec e_k(-\vec e_k)=-\vec e_k^2=+1$. No sign is inserted anywhere, because the quaternion conjugation supplies the sign and the square supplies it back.
 
 **That one line is the metric.** The Gram matrix of the quaternionic form on the base is
 
@@ -62,7 +62,7 @@ and the four units are pairwise orthogonal, since $\mathrm{Sc}(e_x^\natural e_y)
 
 ### The quaternionic form and the plain form
 
-Two bilinear forms live on the algebra, and they differ in one slot. The **plain** form takes the scalar part of the product, $\mathrm{Sc}(\tilde Q_1\tilde Q_2)$. The **quaternionic** form conjugates the first slot before multiplying, $\mathrm{Sc}(\tilde Q_1^\natural\tilde Q_2)$, and it is the one the natural conjugation supplies. On the base the two read
+Two bilinear forms live on the algebra, and they differ in one slot. The **plain** form takes the scalar part of the product, $\mathrm{Sc}(\tilde Q_1\tilde Q_2)$. The **quaternionic** form conjugates the first slot before multiplying, $\mathrm{Sc}(\tilde Q_1^\natural\tilde Q_2)$, and it is the one the quaternion conjugation supplies. On the base the two read
 
 $$
 \mathrm{Sc}(e_\mu e_\nu)=\varepsilon_\mu\delta_{\mu\nu},\qquad
@@ -77,7 +77,7 @@ with $\varepsilon=(1,-1,-1,-1)$ the plain weight. The two tables are:
 | $(\vec e_x,\vec e_x)$, $(\vec e_y,\vec e_y)$, $(\vec e_z,\vec e_z)$ | $-1$ each | $+1$ each |
 | every pair with $\mu\neq\nu$ | $0$ | $0$ |
 
-**The weight is what the conjugation does.** For each unit, $e_\mu^\natural=\varepsilon_\mu e_\mu$: the natural conjugation leaves the temporal unit and negates the three space units. So the two forms differ by the weight, applied entrywise, and the weight squares to the identity. **The metric is what is left when the weight has been applied twice.**
+**The weight is what the conjugation does.** For each unit, $e_\mu^\natural=\varepsilon_\mu e_\mu$: the quaternion conjugation leaves the temporal unit and negates the three space units. So the two forms differ by the weight, applied entrywise, and the weight squares to the identity. **The metric is what is left when the weight has been applied twice.**
 
 **The metric is a theorem of the table.** Solving the first display for the metric gives
 
@@ -221,7 +221,7 @@ The two objects are different and the series keeps both. The unit metric is the 
 
 *Without a metric you cannot form an invariant, and without a metric you cannot raise an index.*
 
-The invariant is the norm, and the norm is a product. A boost is a rotor, $B=\cosh\frac{\theta_{\mathrm{rpd}}}{2}+i\sinh\frac{\theta_{\mathrm{rpd}}}{2}\vec u$ for a unit real vector $\vec u$, and it acts by conjugation, $\tilde Q\mapsto B\tilde Q B^{*}$. That action leaves the norm fixed, and the proof uses no metric. A rotor has quaternionic norm one, $BB^\natural=1$, so $B^\natural=B^{-1}$. Because the natural conjugation is an involution and commutes with the bar, $(B^{*})^\natural=\bar B$, so $B^{*}\bar B=\langle B^{*}\rangle_\natural=1$. Then
+The invariant is the norm, and the norm is a product. A boost is a rotor, $B=\cosh\frac{\theta_{\mathrm{rpd}}}{2}+i\sinh\frac{\theta_{\mathrm{rpd}}}{2}\vec u$ for a unit real vector $\vec u$, and it acts by conjugation, $\tilde Q\mapsto B\tilde Q B^{*}$. That action leaves the norm fixed, and the proof uses no metric. A rotor has quaternionic norm one, $BB^\natural=1$, so $B^\natural=B^{-1}$. Because the quaternion conjugation is an involution and commutes with the bar, $(B^{*})^\natural=\bar B$, so $B^{*}\bar B=\langle B^{*}\rangle_\natural=1$. Then
 
 $$
 \bigl\langle B\tilde Q B^{*}\bigr\rangle_\natural=B\tilde Q B^{*}(B^{*})^\natural\tilde Q^\natural B^\natural=B\tilde Q\,\tilde Q^\natural B^{-1}=\langle\tilde Q\rangle_\natural ,

@@ -154,7 +154,7 @@ The element $0$ is a nilpotent, the trivial one, and the article is concerned wi
 
 The square is the only power that has to be checked. Since $\tilde\Upsilon^3=\tilde\Upsilon\tilde\Upsilon^2=\tilde\Upsilon^2\tilde\Upsilon$, a square-zero element has every higher power zero, and §*Index Two* shows conversely that a vanishing cube already forces a vanishing square. Index two is therefore the only index the algebra carries, and the two clauses of the definition are exhaustive: the nilpotents are exactly the nonzero square-zero elements, with no further stratification.
 
-The star and the natural conjugation preserve nilpotency, since conjugation is multiplicative and carries a vanishing square to a vanishing square,
+The star and the quaternion conjugation preserve nilpotency, since conjugation is multiplicative and carries a vanishing square to a vanishing square,
 
 $$
 (\tilde\Upsilon^{*})^2=(\tilde\Upsilon^2)^{*}=0,\qquad (\tilde\Upsilon^{\natural})^2=(\tilde\Upsilon^2)^{\natural}=0 .
@@ -222,7 +222,7 @@ $$
 
 **Proof.** The first is the criterion. The complex equation cuts a complex-quadric cone in $\mathbb{C}^3$, of complex dimension two; as a real cone it is the two real equations displayed, whose independence away from the origin gives real dimension four. For the parametrisation, the two real equations say that the real part $\vec p$ and the imaginary part $\vec p'$ are orthogonal and have equal sum of squares, which is the stated form; conversely such a pair satisfies both.
 
-The cone is stable under complex scaling, $\tilde\Upsilon\mapsto\lambda\tilde\Upsilon$ for $\lambda\in\mathbb{C}$, because the isotropy condition is homogeneous of degree two; it is stable under the star, which conjugates the two real parts; and the natural conjugation sends $\tilde\Upsilon$ to $-\tilde\Upsilon$. The parameter $r$ is fixed by $r^2=\vec p\cdot\vec p=\vec p'\cdot\vec p'$, and the pair $(\vec u_p,\vec u_{p'})$ is determined up to the simultaneous sign change $(\vec u_p,\vec u_{p'})\mapsto(-\vec u_p,-\vec u_{p'})$.
+The cone is stable under complex scaling, $\tilde\Upsilon\mapsto\lambda\tilde\Upsilon$ for $\lambda\in\mathbb{C}$, because the isotropy condition is homogeneous of degree two; it is stable under the star, which conjugates the two real parts; and the quaternion conjugation sends $\tilde\Upsilon$ to $-\tilde\Upsilon$. The parameter $r$ is fixed by $r^2=\vec p\cdot\vec p=\vec p'\cdot\vec p'$, and the pair $(\vec u_p,\vec u_{p'})$ is determined up to the simultaneous sign change $(\vec u_p,\vec u_{p'})\mapsto(-\vec u_p,-\vec u_{p'})$.
 
 ### Index Two
 
@@ -304,7 +304,7 @@ The general plain bilinear product of *The Four General Products and Their Relat
 
 The nonzero roots of $0$ are exactly the nilpotents of the algebra, the nonzero elements of vanishing square. The criterion is $Q_{1t}=0$ and $(\vec Q_1,\vec Q_1)=0$, so every nilpotent is pure and its vector part is isotropic for the complex dot product $\vec Q\cdot\vec Q$; the class is the nilpotent cone, a complex cone of complex dimension two and real dimension four, parametrised as $r(\vec u_p+i\vec u_{p'})$ over pairs of real vectors with $\vec u_p\cdot\vec u_{p'}=0$ and $\vec u_p\cdot\vec u_p=\vec u_{p'}\cdot\vec u_{p'}=1$. The algebra has no nilpotent of index three: $\tilde Q_1^3=0$ exactly when $\tilde Q_1^2=0$, so index two is the only index, and the powers of a nilpotent stop at the second.
 
-Every nonzero nilpotent annihilates itself, so it is a two-sided zero divisor; the nilpotents are the pure family of the zero-divisor set, the non-pure family being its complement. The star preserves the nilpotent set and fixes none of it, the natural conjugation sends $\tilde\Upsilon$ to $-\tilde\Upsilon$, and in the model $M_2(\mathbb{C})$ the nilpotents are the nonzero trace-free singular matrices, the conjugates of the strictly triangular matrix, with the two standard nilpotents as a pair. Of the remarkable subspaces only the vector subspace contains one, and it contains all of them.
+Every nonzero nilpotent annihilates itself, so it is a two-sided zero divisor; the nilpotents are the pure family of the zero-divisor set, the non-pure family being its complement. The star preserves the nilpotent set and fixes none of it, the quaternion conjugation sends $\tilde\Upsilon$ to $-\tilde\Upsilon$, and in the model $M_2(\mathbb{C})$ the nilpotents are the nonzero trace-free singular matrices, the conjugates of the strictly triangular matrix, with the two standard nilpotents as a pair. Of the remarkable subspaces only the vector subspace contains one, and it contains all of them.
 
 ## Summary of Notation
 

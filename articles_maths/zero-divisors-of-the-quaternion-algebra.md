@@ -14,7 +14,7 @@ separates, and to prove that over $\mathbb{R}$ both are empty.
 A divisor is relative to a product. The definition is stated once for a general product in *Algebras: A General Introduction*; the unqualified "zero divisor" means "zero divisor of the quaternion product", the multiplication of the quaternion algebra.
 
 Every claim is proved or stated as a definition, no physics is invoked and no examples are given.
-The algebra $\mathbb{H}$, its natural conjugation and its remarkable subspaces are assumed from
+The algebra $\mathbb{H}$, its quaternion conjugation and its remarkable subspaces are assumed from
 *Introduction to the Quaternion Algebra* and *Introduction to the Remarkable Subspaces of the Quaternions*,
 and the invertibility criterion and the quaternion norm from *Norm and Invertibility in the General
 Plain Algebra*. The annihilator of an element, the two multiplication operators and their rank are
@@ -30,9 +30,9 @@ $$
 \qquad \vec q = q_x \vec e_x + q_y \vec e_y + q_z \vec e_z, \qquad q_\mu \in \mathbb{R},
 $$
 
-with **scalar part** $q_t = \mathrm{Sc}(\tilde q)$ and **vector part** $\vec q$. The natural
+with **scalar part** $q_t = \mathrm{Sc}(\tilde q)$ and **vector part** $\vec q$. The quaternion
 conjugation is $\tilde q^{\natural} = q_t e_t - \vec q$. Over $\mathbb{R}$ the bar is the identity
-and the star coincides with the natural conjugation, so the chapter has exactly two general products,
+and the star coincides with the quaternion conjugation, so the chapter has exactly two general products,
 the plain one $\tilde q_1\tilde q_2$ and the quaternionic one $\tilde q_1^{\natural}\tilde q_2$; the plain
 product is the one of this article. A product of the space is written $\star$ when the statement is
 one about an arbitrary product and only the fact that it is a product is used, as in §*Definition*.
@@ -266,7 +266,7 @@ either is a zero divisor.
 |---|---|
 | $\mathbb{H}$ | Quaternion algebra |
 | $\tilde q = \sum_\mu q_\mu e_\mu$ | General quaternion |
-| $\tilde q^{\natural} = q_t e_t - \vec q$ | Natural conjugation |
+| $\tilde q^{\natural} = q_t e_t - \vec q$ | Quaternion conjugation |
 | $\langle\tilde q\rangle_{\natural} = \tilde q\tilde q^{\natural} = \sum_\mu q_\mu^2$ | Quaternion norm, positive definite over $\mathbb{R}$ |
 | $\tilde q\tilde q^{\natural} = 0$ | Algebraic criterion for a zero divisor |
 | $\mathcal{Z} = \varnothing$ | Zero divisor set |

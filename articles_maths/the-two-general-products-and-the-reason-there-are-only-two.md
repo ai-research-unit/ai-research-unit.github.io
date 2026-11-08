@@ -6,7 +6,7 @@ The quaternion algebra $\mathbb{H}$ carries, besides the algebra product of the 
 
 ## The General Construction
 
-A **general product** on the quaternion algebra $\mathbb{H}$ is a bilinear or sesquilinear map obtained by choosing, independently, how each of its two slots reads its argument: through the identity or through the natural conjugation ${}^{\natural}$. The two choices are the two **slot pairings** of each side, and the products are the four pairings
+A **general product** on the quaternion algebra $\mathbb{H}$ is a bilinear or sesquilinear map obtained by choosing, independently, how each of its two slots reads its argument: through the identity or through the quaternion conjugation ${}^{\natural}$. The two choices are the two **slot pairings** of each side, and the products are the four pairings
 
 $$
 (\mathrm{id},\mathrm{id}) ,\quad (\mathrm{id},{}^{\natural}) ,\quad ({}^{\natural},\mathrm{id}) ,\quad ({}^{\natural},{}^{\natural}) .
@@ -83,7 +83,7 @@ The two general products and their four halves are the six products of the chapt
 
 ## Summary
 
-A general product on $\mathbb{H}$ is a slot pairing of the identity and the natural conjugation. Since the two slots read the same conjugation, the pairings with the conjugation in the second slot repeat those with it in the first, read with both arguments conjugated, and exactly two general products arise: the general plain product $\tilde q_1\tilde q_2$ and the general quaternionic product $\tilde q_1^{\natural}\tilde q_2$.
+A general product on $\mathbb{H}$ is a slot pairing of the identity and the quaternion conjugation. Since the two slots read the same conjugation, the pairings with the conjugation in the second slot repeat those with it in the first, read with both arguments conjugated, and exactly two general products arise: the general plain product $\tilde q_1\tilde q_2$ and the general quaternionic product $\tilde q_1^{\natural}\tilde q_2$.
 
 Each general product splits under the interchange of its slots into a symmetric and an antisymmetric part, and the split produces the four halves: the Jordan product $\tilde q_1\bullet\tilde q_2$, the quaternion form read as a product $\langle\tilde q_1,\tilde q_2\rangle_{\natural}e_t$, the cross product $\tilde q_1\wedge\tilde q_2=\vec q_1\times\vec q_2$, and the quaternionic cross product $\tilde q_1\wedge^{\natural}\tilde q_2$. The two general products and the four halves are six distinct products; three of them carry the companion structures, $\tilde Q_1\bullet\tilde Q_2$, $\tilde Q_1\wedge\tilde Q_2$ and $\tilde Q_1^{\natural}\tilde Q_2$, indexed by the family and the half; the reconstruction $\tilde q_1\tilde q_2=\tilde q_1\bullet\tilde q_2+\tilde q_1\wedge\tilde q_2$ and $\tilde q_1^{\natural}\tilde q_2=\langle\tilde q_1,\tilde q_2\rangle_{\natural}e_t+\tilde q_1\wedge^{\natural}\tilde q_2$ recovers the two general products, and no seventh product exists. The count is two because the algebra carries one nontrivial conjugation and the base field none.
 
@@ -91,7 +91,7 @@ Each general product splits under the interchange of its slots into a symmetric 
 
 | symbol | meaning |
 |---|---|
-| ${}^{\natural}$ | the natural conjugation, the anti-involution of the algebra |
+| ${}^{\natural}$ | the quaternion conjugation, the anti-involution of the algebra |
 | $(\mathrm{id},\mathrm{id})$, $({}^{\natural},\mathrm{id})$, $(\mathrm{id},{}^{\natural})$, $({}^{\natural},{}^{\natural})$ | the four slot pairings |
 | $\tilde q_1\tilde q_2$, $\tilde q_1^{\natural}\tilde q_2$ | the two general products |
 | $\tilde q_1\bullet\tilde q_2$, $\tilde q_1\wedge\tilde q_2$ | the symmetric and the antisymmetric half of the plain product |

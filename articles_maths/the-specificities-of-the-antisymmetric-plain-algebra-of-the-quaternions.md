@@ -17,9 +17,9 @@ Idempotents of the Antisymmetric Plain Algebra* and *Square Roots of Zero and th
 Antisymmetric Plain Algebra*, are folded here.
 
 **This is not the algebra $\mathbb{H}$.** The two share the space, the addition and the real scalars,
-but $\times$ is a different multiplication, alternating and without a unit. Throughout, the natural
-sign ${}^{\natural}$ is the quaternion conjugation, the bar is the identity because $\mathbb{R}$ has
-no nontrivial involution, and the star coincides with the natural sign and gives nothing new.
+but $\times$ is a different multiplication, alternating and without a unit. Throughout, the sign
+${}^{\natural}$ is the quaternion conjugation, the bar is the identity because $\mathbb{R}$ has
+no nontrivial involution, and the star coincides with it and gives nothing new.
 
 The operation and its table are *Introduction to the Antisymmetric Plain Algebra*; the
 Lie structure, the form and the operators are *The Lie Algebra of the Antisymmetric Plain Algebra*,

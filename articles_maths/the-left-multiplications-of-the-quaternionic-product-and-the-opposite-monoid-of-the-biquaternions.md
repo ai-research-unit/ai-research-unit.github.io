@@ -133,7 +133,7 @@ The left multiplications of the quaternionic product are $L_{\tilde Q_1}(\tilde 
 | $\mathbb{B}$ | the biquaternion algebra $\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ |
 | $e_t,\vec e_x,\vec e_y,\vec e_z$ | the basis, $e_t$ the identity, $\vec e_k^2 = -e_t$ |
 | $\tilde Q = \sum_\mu Q_\mu e_\mu$ | an element and its four complex coordinates |
-| ${}^{\natural}$ | the natural conjugation $\tilde Q^{\natural} = Q_t - \vec Q$ |
+| ${}^{\natural}$ | the quaternion conjugation $\tilde Q^{\natural} = Q_t - \vec Q$ |
 | $\tilde Q_1\star\tilde Q_2 = \tilde Q_1^{\natural}\tilde Q_2$ | the general quaternionic bilinear product, the multiplication of this group |
 | $\tilde Q_1\tilde Q_2$ | the plain (associative) product of the algebra |
 | $L_{\tilde Q_1}$ | the left multiplication $\tilde Q_2\mapsto\tilde Q_1\star\tilde Q_2 = \tilde Q_1^{\natural}\tilde Q_2$ |

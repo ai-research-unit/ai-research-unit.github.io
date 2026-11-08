@@ -58,9 +58,9 @@ $$
 \langle\tilde q_1,\tilde q_2\rangle_{\natural}=\mathrm{Sc}(\tilde q_1^{\natural}\tilde q_2)=q_{1t}q_{2t}+(\vec q_1,\vec q_2) ,
 $$
 
-the quaternion form of *The 2 Forms over the Quaternioid $\mathbb{R}$ Space*. The norm is the form at the two equal arguments, $\langle\tilde q\rangle_{\natural}=q_t^{2}+q_x^{2}+q_y^{2}+q_z^{2}$; the natural conjugation sends $\vec q$ to $-\vec q$, so $\langle\tilde q^{\natural}\rangle_{\natural}=\langle\tilde q\rangle_{\natural}$.
+the quaternion form of *The 2 Forms over the Quaternioid $\mathbb{R}$ Space*. The norm is the form at the two equal arguments, $\langle\tilde q\rangle_{\natural}=q_t^{2}+q_x^{2}+q_y^{2}+q_z^{2}$; the quaternion conjugation sends $\vec q$ to $-\vec q$, so $\langle\tilde q^{\natural}\rangle_{\natural}=\langle\tilde q\rangle_{\natural}$.
 
-**The zero-divisor set is empty.** The natural product is the algebra product with the natural conjugation in the first slot, so its left multiplication by $\tilde q$ is the left multiplication of the algebra by $\tilde q^{\natural}$; the kernel is $\{0\}$ for $\tilde q\neq0$ (*Zero Divisors of the Quaternion Algebra*). The element is invertible, with the two-sided solution $(\tilde q^{-1})^{\natural}$ of the inverse equations.
+**The zero-divisor set is empty.** The natural product is the algebra product with the quaternion conjugation in the first slot, so its left multiplication by $\tilde q$ is the left multiplication of the algebra by $\tilde q^{\natural}$; the kernel is $\{0\}$ for $\tilde q\neq0$ (*Zero Divisors of the Quaternion Algebra*). The element is invertible, with the two-sided solution $(\tilde q^{-1})^{\natural}$ of the inverse equations.
 
 The element $e_t$ is a left unit alone, and every nonzero element has the two-sided solution $(\tilde q^{-1})^{\natural}$ of the inverse equations; the invertible elements are $\mathbb{H}\setminus\{0\}$, and the complement of the empty zero-divisor set is that set together with the origin, the whole space.
 
@@ -88,7 +88,7 @@ $$
 \boxed{\;\{\tilde q_1\neq0:\tilde q_1\text{ admits an annihilating factor in }\star\}=\varnothing \qquad\text{for }\star=\tilde q_1^{\natural}\tilde q_2\text{ and }\star=\tilde q_1\tilde q_2\;}.
 $$
 
-*Proof.* The natural product is the algebra product with the natural conjugation in the first slot, so its left multiplication by $\tilde q_1$ is the left multiplication of the algebra by $\tilde q_1^{\natural}$, and the conjugation is a bijection that leaves the norm unchanged. The kernel of the algebra left multiplication by $\tilde q_1^{\natural}$ is $\{0\}$, the element $\tilde q_1^{\natural}$ being nonzero; hence a nonzero element admits no annihilating factor in the general quaternionic product. For the algebra product this is the division property itself: from $\tilde q_1\tilde q_2=0$ with $\tilde q_1\neq0$ one multiplies by $\tilde q_1^{-1}$ and gets $\tilde q_2=0$.
+*Proof.* The natural product is the algebra product with the quaternion conjugation in the first slot, so its left multiplication by $\tilde q_1$ is the left multiplication of the algebra by $\tilde q_1^{\natural}$, and the conjugation is a bijection that leaves the norm unchanged. The kernel of the algebra left multiplication by $\tilde q_1^{\natural}$ is $\{0\}$, the element $\tilde q_1^{\natural}$ being nonzero; hence a nonzero element admits no annihilating factor in the general quaternionic product. For the algebra product this is the division property itself: from $\tilde q_1\tilde q_2=0$ with $\tilde q_1\neq0$ one multiplies by $\tilde q_1^{-1}$ and gets $\tilde q_2=0$.
 
 | product | left condition | right condition | the set |
 |---|---|---|---|

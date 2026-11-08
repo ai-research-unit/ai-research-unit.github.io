@@ -3,7 +3,7 @@
 
 ## Introduction
 
-This article introduces the quaternion algebra as an algebraic structure. The goal is to define the algebra precisely, establish its basic properties, and describe the distinguished real vector subspaces that arise from the natural conjugations.
+This article introduces the quaternion algebra as an algebraic structure. The goal is to define the algebra precisely, establish its basic properties, and describe the distinguished real vector subspaces that arise from the conjugations.
 
 The quadratic form the algebra carries — its polarisation, the Hermitian form and the inner product — is a form and a distance, and a norm is a distance: these belong to the topology group, in *Quaternion Norm and Invertibility*, and the present article only names them. The geometric reading of the algebra is likewise deferred to the geometry group, in *Quaternion Rotations and Reflections*.
 
@@ -134,7 +134,7 @@ $$
 
 ### Conjugations
 
-There are **three** natural conjugations on $\mathbb{H}$, obtained from the quaternion conjugation together with the negation map:
+There are **three** conjugations on $\mathbb{H}$, obtained from the quaternion conjugation together with the negation map:
 
 **Quaternion conjugation** $\tilde{q}^{\natural}$:
 

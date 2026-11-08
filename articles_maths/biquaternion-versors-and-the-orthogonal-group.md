@@ -42,7 +42,7 @@ for every non-isotropic $\zeta\in V$, and the odd slot $\mathbb{B}\zeta$ is a se
 
 ## The Grading of the Versors
 
-**Definition (cited from *The Clifford, Pin and Spin Groups with Signed Inner Conjugation*).** A **versor** is a product $\tilde U=\eta_1\cdots\eta_k$ of non-isotropic vectors of $V$. The **Clifford group** $\Gamma$ is the set of invertible elements $\tilde U$ with $\mathrm{Ad}^{\alpha}_{\tilde U}(V)\subseteq V$, and the **Clifford norm** is $\langle\tilde U\rangle_{\natural}=\tilde U\tilde U^{\natural}$, the natural sign being the Clifford conjugation of the envelope, which on the even part is the quaternion conjugation of the algebra. The groups are
+**Definition (cited from *The Clifford, Pin and Spin Groups with Signed Inner Conjugation*).** A **versor** is a product $\tilde U=\eta_1\cdots\eta_k$ of non-isotropic vectors of $V$. The **Clifford group** $\Gamma$ is the set of invertible elements $\tilde U$ with $\mathrm{Ad}^{\alpha}_{\tilde U}(V)\subseteq V$, and the **Clifford norm** is $\langle\tilde U\rangle_{\natural}=\tilde U\tilde U^{\natural}$, the quaternion sign being the Clifford conjugation of the envelope, which on the even part is the quaternion conjugation of the algebra. The groups are
 $$
 \mathrm{Pin}=\{\tilde U\in\Gamma : \langle\tilde U\rangle_{\natural}=\pm1\},\qquad
 \mathrm{Spin}=\mathrm{Pin}\cap\mathrm{Cl}^{+},

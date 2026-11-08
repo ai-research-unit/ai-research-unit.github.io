@@ -104,7 +104,7 @@ of real dimension four, written upright because it is a group. Its elements are 
 
 A boost is a unit element and is not $*$-unitary: $\tilde U_{\Psi,\mathrm b}$ is $N$-norm one and $\tilde U_{\Psi,\mathrm b}^{*}\tilde U_{\Psi,\mathrm b}\neq e_t$. A $*$-unitary element whose determinant is not one is $*$-unitary and is not a unit element. The glyph asserts the first and never the second; an article that needs a $*$-unitary element states $\tilde Q^{*}\tilde Q=e_t$ on it.
 
-**The norm and the group condition exist only where their involution does**: the bar alone over $\mathbb{C}$ and the split-complex numbers, the natural sign alone over $\mathbb{H}$ and the split-quaternions, all four marks over $\mathbb{B}$ and the split-biquaternions.
+**The norm and the group condition exist only where their involution does**: the bar alone over $\mathbb{C}$ and the split-complex numbers, the quaternion sign alone over $\mathbb{H}$ and the split-quaternions, all four marks over $\mathbb{B}$ and the split-biquaternions.
 
 **The case rule splits the glyph**, as for the elements: $\tilde U$ in the biquaternion and split-biquaternion layers, $\tilde u$ in the quaternion and split-quaternion ones, $U$ in the complex, split-complex, dual and reduced biquaternion ones. The pure case carries the arrow, $\vec u$ and $\vec U$.
 

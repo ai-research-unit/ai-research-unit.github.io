@@ -112,7 +112,7 @@ A terminological caution is necessary, because the word "biquaternion" has not b
 
 The algebra and its subspaces are established in the companion articles and are recalled here only in the form the history needs. The notation is inherited, not redefined.
 
-$\mathbb{B}$ is four-dimensional over $\mathbb{C}$ and eight-dimensional over $\mathbb{R}$. Its four natural conjugations have as fixed-point sets the remarkable real subspaces used throughout the corpus: the complex subspace $\mathbb{B}_{C}$ (the complex scalars, the centre of $\mathbb{B}$), the quaternion subspace $\mathbb{B}_{H}$ (the real quaternions), the Hermitian subspace $\mathbb{B}_{\Psi}$ (real scalar part, imaginary vector part, the informational sector), and the anti-Hermitian subspace $\mathbb{B}_{\Phi}$ (imaginary scalar part, real vector part, the material sector). The natural quadratic form is the biquaternion norm
+$\mathbb{B}$ is four-dimensional over $\mathbb{C}$ and eight-dimensional over $\mathbb{R}$. Its four conjugations have as fixed-point sets the remarkable real subspaces used throughout the corpus: the complex subspace $\mathbb{B}_{C}$ (the complex scalars, the centre of $\mathbb{B}$), the quaternion subspace $\mathbb{B}_{H}$ (the real quaternions), the Hermitian subspace $\mathbb{B}_{\Psi}$ (real scalar part, imaginary vector part, the informational sector), and the anti-Hermitian subspace $\mathbb{B}_{\Phi}$ (imaginary scalar part, real vector part, the material sector). The natural quadratic form is the biquaternion norm
 
 $$
 \langle\tilde{Q}\rangle_{\natural} = \tilde{Q}\tilde{Q}^{\natural} = \sum_{\mu\in\{t,x,y,z\}} Q_\mu^2 ,

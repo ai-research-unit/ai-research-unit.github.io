@@ -61,7 +61,7 @@ $$
 
 The one-sided form, the right multiplication by $e_x$, has order four: its square is minus the argument, $Q\mapsto Qe_x\mapsto Qe_xe_x=-Q$, and its fourth power returns the argument. The two signs come from the two units: the two-sided product uses $-e_y$ twice on each side, so its square is $e_y^4=+e_t$, and the one-sided product uses $e_x$ twice, so its square is $e_x^2=-e_t$.
 
-**The two lines.** The free equation of the series has two lines, one for each component of the pair; the pair is fixed in *Operator and Calculus Conventions*, §*The Pair Operator*, and is not restated here. The conjugation keeps the value, so it carries a field of one line to a field of the same line; that a solution is carried to a solution is the companion article's explicit verification.
+**The two lines.** The free equation of the series has two lines, one for each component of the pair; the pair is fixed in *Operator and Calculus Conventions*, §*The Two First-Order Equations and Their Symbol*, and is not restated here. The conjugation keeps the value, so it carries a field of one line to a field of the same line; that a solution is carried to a solution is the companion article's explicit verification.
 
 ## The Division-Ring Trichotomy
 

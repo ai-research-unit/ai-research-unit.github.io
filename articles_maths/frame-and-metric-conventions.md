@@ -32,7 +32,7 @@ $$
 $$
 Each coefficient is a complex number, $Q_\mu=q_\mu+iq'_\mu$ with $q_\mu,q'_\mu$ real. This is the general case; the two real sectors are conditions on the same four coefficients.
 
-**The interval has four $+1$ coefficients.** With the natural conjugation $\natural$,
+**The interval has four $+1$ coefficients.** With the quaternion conjugation $\natural$,
 $$
 \langle\tilde Q\rangle_\natural=\tilde Q\tilde Q^\natural=Q_t^2+Q_x^2+Q_y^2+Q_z^2 .
 $$

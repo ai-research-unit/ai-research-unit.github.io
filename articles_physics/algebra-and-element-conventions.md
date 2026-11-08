@@ -335,7 +335,7 @@ with the $\frac{m\,c}{k_m}$ in the exponent and not in the coefficient. The tild
 
 ## The Conjugations
 
-The biquaternion algebra carries three natural involutions and the anti-Hermitian sign derived from them, all of them used in the series:
+The biquaternion algebra carries three quaternion involution and the anti-Hermitian sign derived from them, all of them used in the series:
 
 | Map | Mark | What it is |
 |---|---|---|
@@ -352,7 +352,7 @@ $$
 \bar Q = q - iq' .
 $$
 
-**The quaternions $\mathbb{H}$.** Only the natural sign has a sense, the coefficients being real and the conjugation intrinsic to the quaternion factor:
+**The quaternions $\mathbb{H}$.** Only the quaternion sign has a sense, the coefficients being real and the conjugation intrinsic to the quaternion factor:
 
 $$
 \tilde q^{\natural} = q_te_t - q_x\vec e_x - q_y\vec e_y - q_z\vec e_z .
@@ -370,7 +370,7 @@ $$
 
 **The fourth mark is a sign, not a fourth conjugation.** $\flat=-{}^{*}$ is the negative of the star, it reverses products with a twist, $(\tilde Q_1\tilde Q_2)^{\flat}=-\tilde Q_2^{\flat}\tilde Q_1^{\flat}$, and it is an involution of the underlying real space only, not of the ring. Its fixed space is the material sector $\mathbb{B}_{\Phi}$, and the sector split is its work in the series. It is retained for that split, for the bilinear pairings built on it, and for the real-form question of Dirac against Majorana fermions. It is not the mass — the retired form $\tilde\nabla\tilde{Ξ}_{\mathrm{sp}}=k_m\tilde{Ξ}_{\mathrm{sp}}^{\flat}$ conflated the two — and it is not the charge conjugation of the module, the operation defined in *Charge Conjugation and the Division Ring: Charged, Neutral and Truly Neutral Particles in Biquaternionic Form*. Here $k_m=mc/\hbar$ is the mass wave number, the inverse of the mass length.
 
-**The biquaternion norm.** The natural sign carries the algebra's **biquaternion norm**,
+**The biquaternion norm.** The quaternion sign carries the algebra's **biquaternion norm**,
 
 $$
 \langle\tilde{Q}\rangle_{\natural} = \tilde{Q}\tilde{Q}^{\natural} = Q_t^2 + Q_x^2 + Q_y^2 + Q_z^2 ,

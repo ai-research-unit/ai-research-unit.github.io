@@ -2,7 +2,7 @@
 
 ## Introduction
 
-The left regular representation reads the algebra acting on itself. In the canonical frame of *Matrix Representations Conventions*, §*The Matrix Models*, the Peirce frame $(\tilde\Pi_+,\vec\Upsilon_+,\vec\Upsilon_-,\tilde\Pi_-)$, the matrix of left multiplication is block diagonal, $I_2\otimes\mathsf M_2(\tilde Q)$, and the natural conjugation ${}^{\natural}$ is the signed reversal of the four Peirce coordinates,
+The left regular representation reads the algebra acting on itself. In the canonical frame of *Matrix Representations Conventions*, §*The Matrix Models*, the Peirce frame $(\tilde\Pi_+,\vec\Upsilon_+,\vec\Upsilon_-,\tilde\Pi_-)$, the matrix of left multiplication is block diagonal, $I_2\otimes\mathsf M_2(\tilde Q)$, and the quaternion conjugation ${}^{\natural}$ is the signed reversal of the four Peirce coordinates,
 $$
 \mathsf M_{4L}(\tilde Q^{\natural})=C\,\mathsf M_{4L}(\tilde Q)^{\mathsf T}C^{-1},\qquad C=-\sigma_2\otimes\sigma_2,
 $$
@@ -31,12 +31,12 @@ $$
 $$
 The two families commute, $L_aR_b=R_bL_a$, because both send $x$ to $a\,x\,b$. The image $\mathbb B_L=\rho_L(\mathbb B)$ is a four-dimensional subalgebra of $M_4(\mathbb C)$ isomorphic to $\mathbb B$.
 
-**The two involutions.** The natural conjugation is the carrier $C$ acting on the transpose, and the Hermitian conjugation is the conjugate transpose:
+**The two involutions.** The quaternion conjugation is the carrier $C$ acting on the transpose, and the Hermitian conjugation is the conjugate transpose:
 $$
 \mathsf M_{4L}(\tilde Q^{\natural})=C\,\mathsf M_{4L}(\tilde Q)^{\mathsf T}C^{-1},\qquad
 \mathsf M_{4L}(\tilde Q^{*})=\mathsf M_{4L}(\tilde Q)^{\dagger}.
 $$
-The first formula is the difference from the coefficient frame, where the natural conjugation is the plain transpose. The two frames are related by the Peirce change $C_{\Pi}$ of *Matrix Representations Conventions*, and $C_{\Pi}$ does not preserve transposition, only the operator.
+The first formula is the difference from the coefficient frame, where the quaternion conjugation is the plain transpose. The two frames are related by the Peirce change $C_{\Pi}$ of *Matrix Representations Conventions*, and $C_{\Pi}$ does not preserve transposition, only the operator.
 
 **The invariants.** The trace and the determinant read
 $$
@@ -167,7 +167,7 @@ the plain, the quaternionic, the Hermitian and the Krein form. The factor is $\t
 
 ## Summary
 
-The left regular representation in the canonical frame is $\mathsf M_{4L}(\tilde Q)=I_2\otimes\mathsf M_2(\tilde Q)$, with trace $4Q_t$ and determinant $\langle\tilde Q\rangle_{\natural}^{2}$. The natural conjugation is the signed reversal $\mathsf M_{4L}(\tilde Q^{\natural})=C\mathsf M_{4L}(\tilde Q)^{\mathsf T}C^{-1}$ with $C=-\sigma_2\otimes\sigma_2$, and the Hermitian conjugation is the conjugate transpose. The quaternionic product is the carried product $\mathsf M_{4L}(\tilde Q_1\star\tilde Q_2)=C\mathsf M_{4L}(\tilde Q_1)^{\mathsf T}C^{-1}\mathsf M_{4L}(\tilde Q_2)$, whose square is the scalar matrix $\langle\tilde Q\rangle_{\natural}I_4$. The general quaternionic bilinear form is the trace pairing $\tfrac12\operatorname{Tr}(\mathsf M_{4L}(\tilde Q_1)C\mathsf M_{4L}(\tilde Q_2)^{\mathsf T}C^{-1})=2\langle\tilde Q_1,\tilde Q_2\rangle_{\natural}$; its diagonal is twice the algebraic norm, its realification has signature $(4,4)$, its null set is the zero-divisor cone of real dimension $6$, and its isometry group is $O_4(\mathbb C)$, of realification $O(4,4)$.
+The left regular representation in the canonical frame is $\mathsf M_{4L}(\tilde Q)=I_2\otimes\mathsf M_2(\tilde Q)$, with trace $4Q_t$ and determinant $\langle\tilde Q\rangle_{\natural}^{2}$. The quaternion conjugation is the signed reversal $\mathsf M_{4L}(\tilde Q^{\natural})=C\mathsf M_{4L}(\tilde Q)^{\mathsf T}C^{-1}$ with $C=-\sigma_2\otimes\sigma_2$, and the Hermitian conjugation is the conjugate transpose. The quaternionic product is the carried product $\mathsf M_{4L}(\tilde Q_1\star\tilde Q_2)=C\mathsf M_{4L}(\tilde Q_1)^{\mathsf T}C^{-1}\mathsf M_{4L}(\tilde Q_2)$, whose square is the scalar matrix $\langle\tilde Q\rangle_{\natural}I_4$. The general quaternionic bilinear form is the trace pairing $\tfrac12\operatorname{Tr}(\mathsf M_{4L}(\tilde Q_1)C\mathsf M_{4L}(\tilde Q_2)^{\mathsf T}C^{-1})=2\langle\tilde Q_1,\tilde Q_2\rangle_{\natural}$; its diagonal is twice the algebraic norm, its realification has signature $(4,4)$, its null set is the zero-divisor cone of real dimension $6$, and its isometry group is $O_4(\mathbb C)$, of realification $O(4,4)$.
 
 ## Summary of Notation
 
@@ -175,8 +175,8 @@ The left regular representation in the canonical frame is $\mathsf M_{4L}(\tilde
 |---|---|
 | $\mathsf M_{4L}(\tilde Q)=I_2\otimes\mathsf M_2(\tilde Q)$ | the $4\times4$ left regular matrix, $\operatorname{Tr}=4Q_t$, $\det=\langle\tilde Q\rangle_{\natural}^{2}$ |
 | $\mathsf M_{4R}(\tilde Q)=\mathsf M_2(\tilde Q)^{\mathsf T}\otimes I_2$ | the right regular matrix, the commuting partner |
-| $C=-\sigma_2\otimes\sigma_2$ | the carrier of the natural conjugation, $C^2=I_4$, $C=C^{\dagger}$ |
-| $\mathsf M_{4L}(\tilde Q^{\natural})=C\mathsf M_{4L}(\tilde Q)^{\mathsf T}C^{-1}$ | the natural conjugation |
+| $C=-\sigma_2\otimes\sigma_2$ | the carrier of the quaternion conjugation, $C^2=I_4$, $C=C^{\dagger}$ |
+| $\mathsf M_{4L}(\tilde Q^{\natural})=C\mathsf M_{4L}(\tilde Q)^{\mathsf T}C^{-1}$ | the quaternion conjugation |
 | $\mathsf M_{4L}(\tilde Q_1\star\tilde Q_2)=C\mathsf M_{4L}(\tilde Q_1)^{\mathsf T}C^{-1}\mathsf M_{4L}(\tilde Q_2)$ | the quaternionic product |
 | $\tfrac12\operatorname{Tr}(\mathsf M_{4L}(\tilde Q_1)C\mathsf M_{4L}(\tilde Q_2)^{\mathsf T}C^{-1})=2\langle\tilde Q_1,\tilde Q_2\rangle_{\natural}$ | the general quaternionic bilinear form |
 | $O_4(\mathbb C)$, $O(4,4)$ | the isometry group and its realification |

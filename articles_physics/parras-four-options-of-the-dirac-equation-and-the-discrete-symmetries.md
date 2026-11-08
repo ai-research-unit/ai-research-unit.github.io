@@ -168,7 +168,7 @@ $$
 \tilde{Ξ}_{\mathrm{sp},\{r\}}=\tilde q_{r1}+i\,\tilde q_{r2},
 $$
 
-the sum of a real quaternion $\tilde q_{r1}\in\mathbb{B}_{H}$ and the central $i$ times a real quaternion $\tilde q_{r2}$ — the decomposition of an element into the two halves $\mathbb{B}_{H}$ and $\mathbb{B}_{iH}$ fixed in *Algebra and Element Conventions*. (Parra writes the second quaternion through its quaternion conjugation, which is the natural sign on the real quaternions and names the same four real coefficients.)
+the sum of a real quaternion $\tilde q_{r1}\in\mathbb{B}_{H}$ and the central $i$ times a real quaternion $\tilde q_{r2}$ — the decomposition of an element into the two halves $\mathbb{B}_{H}$ and $\mathbb{B}_{iH}$ fixed in *Algebra and Element Conventions*. (Parra writes the second quaternion through its quaternion conjugation, which is the quaternion sign on the real quaternions and names the same four real coefficients.)
 
 **Proposition (the Parra field is the corpus's field).** The map $q_{r1}+i\bar q_{r2}\mapsto\tilde{Ξ}_{\mathrm{sp},\{r\}}$ sends the Parra field of each option into the algebra $\mathbb{B}$, and a general element of $\mathbb{B}$ has eight real parameters — exactly the eight real fields of the source.
 

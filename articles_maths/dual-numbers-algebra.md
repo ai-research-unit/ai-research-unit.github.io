@@ -3,7 +3,7 @@
 
 ## Introduction
 
-This article introduces the dual number algebra as an algebraic structure. The goal is to define the algebra precisely, establish its basic properties, and describe the distinguished real vector subspaces that arise from the natural conjugation.
+This article introduces the dual number algebra as an algebraic structure. The goal is to define the algebra precisely, establish its basic properties, and describe the distinguished real vector subspaces that arise from the quaternion conjugation.
 
 The treatment is mathematically honest: every claim is either proved or stated as a definition. No physics is invoked. No examples are given, and no applications are discussed. The algebra is defined over an arbitrary commutative ring in which the defining nilpotent is available, and the specializations to specific rings are left for the reader.
 
@@ -55,7 +55,7 @@ The notation $\varepsilon$ is chosen deliberately. In some of the older literatu
 
 ### Conjugations
 
-There are **two** natural conjugations on $\mathbb{C}_{\mathrm{dln},R}$:
+There are **two** conjugations on $\mathbb{C}_{\mathrm{dln},R}$:
 
 **Dual conjugation** $\bar Q = q - \varepsilon q'$ and **identity conjugation** $\operatorname{id}(Q) = Q$. Each is an involution, and each has a fixed-point set, an $R$-submodule of $\mathbb{C}_{\mathrm{dln},R}$, described in the next section.
 

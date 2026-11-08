@@ -115,7 +115,7 @@ is closed under the product: its two non-unit generators are orthogonal for $\la
 $$
 (\vec e_x+i\vec e_y)\star(\vec e_x+i\vec e_y)=(i\vec e_x-\vec e_y)\star(i\vec e_x-\vec e_y)=(\vec e_x+i\vec e_y)\star(i\vec e_x-\vec e_y)=0,
 $$
-and $e_t$ acts on the left by the identity and on the right by the natural conjugation, which sends each generator to its negative; every product therefore stays in the span. This is the smallest illustration that the real reading carries subalgebras the complex reading cannot see.
+and $e_t$ acts on the left by the identity and on the right by the quaternion conjugation, which sends each generator to its negative; every product therefore stays in the span. This is the smallest illustration that the real reading carries subalgebras the complex reading cannot see.
 
 **The trace form.** By §*The Real Operators and the Trace Form* the trace form of the product is $8\operatorname{Re}\langle\tilde Q_1,\tilde Q_2\rangle$, a real symmetric bilinear form of signature $(4,4)$ and zero radical, the realified general plain bilinear form. It is the same real form as the trace form of the general plain algebra: the two products, one associative with a two-sided unit and one not associative with a left unit alone, have the same trace form, and the conjugation that separates them is invisible to the trace.
 

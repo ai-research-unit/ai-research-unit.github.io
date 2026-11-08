@@ -123,7 +123,7 @@ $$
 
 with $\bar{\tilde Q_1} = \sum_\mu\overline{Q_{1,\mu}}e_\mu$ the coefficient conjugation.
 
-*Proof.* In the coefficient basis $L_{\tilde Q_1}$ is left multiplication by $\tilde Q_1$ and the Krein adjoint is $E\,L_{\tilde Q_1}^{*}\,E$; the definite adjoint of $L_{\tilde Q_1}$ is $L_{\tilde Q_1^{*}}$ (*The Adjoint of the Left Multiplication on a Hermitian Algebra*), and conjugating it by $E$ replaces the Hermitian star by the coefficient conjugation, which is the natural involution composed with the star. The computation is the operator form of the identity $(L_{\tilde Q_1})^{\dagger} = R_{\bar{\tilde Q_1}}$ used throughout the indefinite theory of the algebra.
+*Proof.* In the coefficient basis $L_{\tilde Q_1}$ is left multiplication by $\tilde Q_1$ and the Krein adjoint is $E\,L_{\tilde Q_1}^{*}\,E$; the definite adjoint of $L_{\tilde Q_1}$ is $L_{\tilde Q_1^{*}}$ (*The Adjoint of the Left Multiplication on a Hermitian Algebra*), and conjugating it by $E$ replaces the Hermitian star by the coefficient conjugation, which is the quaternion involution composed with the star. The computation is the operator form of the identity $(L_{\tilde Q_1})^{\dagger} = R_{\bar{\tilde Q_1}}$ used throughout the indefinite theory of the algebra.
 
 **Theorem ($J$-unitarity of the algebra parameters).** For $\tilde Q_1\in\mathbb{B}$,
 

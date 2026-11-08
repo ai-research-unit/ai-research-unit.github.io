@@ -33,7 +33,7 @@ The following table collects the results at a glance.
 | Halving map | bijection $H(\tilde{Ζ})=\tfrac12(e_t+\tilde{Ζ})$ | two-to-one on unordered pairs |
 | Standard pair | $\tilde\Pi_{\pm}=\tfrac12(e_t\pm i\vec e_z)$, orthogonal, complete and primitive | two elements |
 | Zero divisors | every non-trivial idempotent; every non-pure zero divisor is $2Q_t\tilde\Pi$ | two families |
-| Involutions | the natural conjugation and the bar exchange the standard pair; the star fixes both | three involutions |
+| Involutions | the quaternion conjugation and the bar exchange the standard pair; the star fixes both | three involutions |
 
 The article is algebraic. It does not treat the roots of the general quadratic $\tilde{Ζ}^2=\tilde Q$, which is *Square Roots of an Element*; the roots of $0$ and the nilpotents, which are *Nilpotents*; the structure of the zero-divisor set, which is *Zero Divisors and Units*; or the corner decomposition the standard idempotents produce, which is *Peirce Decompositions of the Biquaternion Algebra*. The subsection §*The Roots of Minus One* records how the roots of $-1$ are read off the roots of $+1$; it is a remark, it is used nowhere, and it opens nothing.
 
@@ -578,7 +578,7 @@ The derivation, from the square relation $\tilde Q^2=2Q_t\tilde Q$ that the non-
 
 ### Idempotents and the Involutions
 
-**For the standard pair, the natural conjugation and the bar exchange $\tilde\Pi_{+}$ and $\tilde\Pi_{-}$, while the star fixes both.**
+**For the standard pair, the quaternion conjugation and the bar exchange $\tilde\Pi_{+}$ and $\tilde\Pi_{-}$, while the star fixes both.**
 
 The action of the involutions on the idempotents is collected in the table.
 
@@ -588,7 +588,7 @@ The action of the involutions on the idempotents is collected in the table.
 | bar $\bar{\cdot}$ | $0$ | $e_t$ | $\tilde\Pi_{-}$ | $\tilde\Pi_{+}$ |
 | star $\tilde Q^{*}=\overline{Q_t}-\overline{\vec Q}$ | $0$ | $e_t$ | $\tilde\Pi_{+}$ | $\tilde\Pi_{-}$ |
 
-The natural conjugation changes the sign of the vector part and fixes the central $i$, so it sends $i\vec e_z$ to $-i\vec e_z$ and exchanges the two idempotents. The bar conjugates the complex coefficient $i$ and fixes $\vec e_z$, so it also exchanges them. The star is the composite $\bar{\cdot}\circ{}^{\natural}$, so it fixes each: $\tilde\Pi_{+}^{*}=\tilde\Pi_{+}$ and $\tilde\Pi_{-}^{*}=\tilde\Pi_{-}$. The trivial idempotents $0$ and $e_t$ are fixed by all three. The non-trivial fixed idempotents of the star are the non-trivial Hermitian idempotents of §*The Families of Idempotents*, and the trivial idempotents $0$ and $e_t$ are fixed as well; the natural conjugation and the bar exchange the members of the standard pair without preserving the individual idempotent.
+The quaternion conjugation changes the sign of the vector part and fixes the central $i$, so it sends $i\vec e_z$ to $-i\vec e_z$ and exchanges the two idempotents. The bar conjugates the complex coefficient $i$ and fixes $\vec e_z$, so it also exchanges them. The star is the composite $\bar{\cdot}\circ{}^{\natural}$, so it fixes each: $\tilde\Pi_{+}^{*}=\tilde\Pi_{+}$ and $\tilde\Pi_{-}^{*}=\tilde\Pi_{-}$. The trivial idempotents $0$ and $e_t$ are fixed by all three. The non-trivial fixed idempotents of the star are the non-trivial Hermitian idempotents of §*The Families of Idempotents*, and the trivial idempotents $0$ and $e_t$ are fixed as well; the quaternion conjugation and the bar exchange the members of the standard pair without preserving the individual idempotent.
 
 ## The Idempotents in the Six Subspaces
 
@@ -640,7 +640,7 @@ $$
 | Halving map | bijection $H(\tilde{Ζ})=\tfrac12(e_t+\tilde{Ζ})$, inverse $H^{-1}(\tilde\Pi)=2\tilde\Pi-e_t$ |
 | Standard pair | $\tilde\Pi_{\pm}=\tfrac12(e_t\pm i\vec e_z)$, orthogonal, complete and primitive |
 | Zero divisors | every non-trivial idempotent; every non-pure zero divisor is $2Q_t\tilde\Pi$; the pure ones form a separate family |
-| Involutions | the natural conjugation and the bar exchange the standard pair; the star fixes both |
+| Involutions | the quaternion conjugation and the bar exchange the standard pair; the star fixes both |
 
 The roots of $+1$ in $\mathbb{B}$ are, by the vector–scalar split and the product formula $\tilde{Ζ}^2=(Ζ_t^2-(\vec{Ζ},\vec{Ζ}))e_t+2Ζ_t\vec{Ζ}$:
 
@@ -670,9 +670,9 @@ The idempotents are the trivial elements $0$ and $e_t$ and the elements $\tilde\
 | $\tilde{Ζ}=\tilde\Pi_{+}(\tilde{Ζ})-\tilde\Pi_{-}(\tilde{Ζ})$ | The root as the difference of its pair |
 | $H(\tilde{Ζ})=\tfrac12(e_t+\tilde{Ζ})$ | The halving map from the roots of $+1$ to the idempotents |
 | $H^{-1}(\tilde\Pi)=2\tilde\Pi-e_t$ | The inverse halving map |
-| $\tilde Q^{\natural}=Q_t-\vec Q$ | The natural conjugation |
+| $\tilde Q^{\natural}=Q_t-\vec Q$ | The quaternion conjugation |
 | $\bar{\tilde Q}=\bar Q_t+\bar{\vec Q}$ | The coefficient conjugation, the bar |
-| $\tilde Q^{*}=\overline{Q_t}-\overline{\vec Q}$ | The star involution, the composite of the bar and the natural conjugation |
+| $\tilde Q^{*}=\overline{Q_t}-\overline{\vec Q}$ | The star involution, the composite of the bar and the quaternion conjugation |
 
 
 | $\mathbb{B}_{\Psi}$ | The Hermitian subspace, containing the Hermitian idempotents |

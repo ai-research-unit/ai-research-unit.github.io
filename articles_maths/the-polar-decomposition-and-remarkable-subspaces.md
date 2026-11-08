@@ -291,7 +291,7 @@ $$
 \boxed{\; \left(\frac{\vec Q}{\Rho}\right)^{\natural} = -\frac{\vec Q}{\Rho} , \qquad \left(\frac{\vec Q}{\Rho}\right)^{2} = -e_t \;},
 $$
 
-so it is a root of $-1$ of the algebra, pure and of unit norm. Both identities were verified over $1000$ random complex vectors, the natural conjugate to machine precision and the square to $3.6\times10^{-15}$, together with the two conclusions of the proposition: the scalar part of the rotor vanished to $4.4\times10^{-16}$, and the dot product of the two axes vanished to $2.6\times10^{-15}$ whenever the boost was nontrivial.
+so it is a root of $-1$ of the algebra, pure and of unit norm. Both identities were verified over $1000$ random complex vectors, the quaternion conjugate to machine precision and the square to $3.6\times10^{-15}$, together with the two conclusions of the proposition: the scalar part of the rotor vanished to $4.4\times10^{-16}$, and the dot product of the two axes vanished to $2.6\times10^{-15}$ whenever the boost was nontrivial.
 
 **Converse.** The argument reverses. If the rotor of the word of an element is a half turn and either the boost is trivial or its axis is orthogonal to the rotor axis, then the scalar part of $\tilde U_{\mathrm b}\tilde u_{\mathrm r}$ vanishes, so the element with that word and any central modulus is pure. The vector subspace is therefore exactly the set of elements whose word has a half-turn rotor, with the boost trivial or its axis orthogonal to the rotor axis.
 
@@ -492,7 +492,7 @@ $$
 \overline{\tilde{Q}} = r\,\omega^{-1}\,\tilde U_{\mathrm b}^{\natural}\,\tilde u_{\mathrm r} ,
 $$
 
-which is a polar word again: the scale is unchanged, the phase is reversed, the rotor is unchanged, and the boost is replaced by its natural conjugate. The natural conjugate of a boost is a boost — it is the inverse, with the same rapidity and the opposite axis — so the complex conjugation acts on the polar data by reversing the phase and reflecting the boost axis, and it fixes the rotor. Verified to $1.1\times10^{-14}$ over $300$ elements, together with the positivity of $\tilde U_{\mathrm b}^{\natural}$.
+which is a polar word again: the scale is unchanged, the phase is reversed, the rotor is unchanged, and the boost is replaced by its quaternion conjugate. The quaternion conjugate of a boost is a boost — it is the inverse, with the same rapidity and the opposite axis — so the complex conjugation acts on the polar data by reversing the phase and reflecting the boost axis, and it fixes the rotor. Verified to $1.1\times10^{-14}$ over $300$ elements, together with the positivity of $\tilde U_{\mathrm b}^{\natural}$.
 
 The quaternion conjugation is the one that reverses the order of the two non-central factors. It keeps the modulus, since $\langle\tilde Q\rangle_{\natural}$ is invariant, and it gives
 

@@ -162,7 +162,7 @@ $$
 \boxed{\; \tilde\Pi_+(\tilde{Ζ})\star\tilde\Pi_+(\tilde{Ζ})=0 , \qquad \langle\tilde\Pi_+(\tilde{Ζ})\rangle_{\natural}=0 \;}.
 $$
 
-**Proof.** The natural conjugation negates the vector part, $\tilde\Pi_+(\tilde{Ζ})^{\natural}=\tfrac12(e_t-\tilde{Ζ})=e_t-\tilde\Pi_+(\tilde{Ζ})$, the **complementary idempotent**. Hence
+**Proof.** The quaternion conjugation negates the vector part, $\tilde\Pi_+(\tilde{Ζ})^{\natural}=\tfrac12(e_t-\tilde{Ζ})=e_t-\tilde\Pi_+(\tilde{Ζ})$, the **complementary idempotent**. Hence
 
 $$
 \tilde\Pi_+(\tilde{Ζ})\star\tilde\Pi_+(\tilde{Ζ})=\tilde\Pi_+(\tilde{Ζ})^{\natural}\tilde\Pi_+(\tilde{Ζ})=\tfrac14\bigl(e_t-(\tilde{Ζ})^2\bigr)=\tfrac14(e_t-e_t)=0 ,
@@ -260,7 +260,7 @@ In the general quaternionic bilinear product the square of every element is the 
 | $\mathbb{B}$ | the biquaternion algebra $\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ |
 | $e_t,\vec e_x,\vec e_y,\vec e_z$ | the basis, $e_t$ the identity, $\vec e_\mu^2=-e_t$ |
 | $\tilde{Ζ}\star\tilde Q=\tilde{Ζ}^{\natural}\tilde Q$ | the general quaternionic bilinear product |
-| ${}^{\natural}$ | the natural conjugation $\tilde Q^{\natural}=Q_t-\vec Q$ |
+| ${}^{\natural}$ | the quaternion conjugation $\tilde Q^{\natural}=Q_t-\vec Q$ |
 | $\langle\tilde{Ζ}\rangle_{\natural}=\sum_\mu Ζ_\mu^2=Ζ_t^2+(\vec{Ζ},\vec{Ζ})$ | the algebraic norm, $\tilde{Ζ}\star\tilde{Ζ}=\langle\tilde{Ζ}\rangle_{\natural}e_t$ |
 | $\lambda e_t$ | a central value, $\lambda\in\mathbb{C}$ |
 | $\vec u$ | a real unit vector of $\mathbb{R}^3$, a real vector root of $+1$ |

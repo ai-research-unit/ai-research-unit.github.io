@@ -18,7 +18,7 @@ The article assumes the algebra and the conjugations of *The Biquaternion Algebr
 
 ## Notational Conventions
 
-$\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ is the biquaternion algebra, with basis $e_t,\vec e_x,\vec e_y,\vec e_z$, scalar unit $e_t=1$, vector units $\vec e_k^{2}=-e_t$, and central scalar imaginary $i$, $i^{2}=-1$. A general element is $\tilde Q=\sum_{\mu\in\{t,x,y,z\}}Q_\mu e_\mu$ with $Q_\mu\in\mathbb{C}$, written in the centre–vector split $\tilde Q=c+v$ with $c=Q_te_t\in\mathbb{B}_{C}$ and $v=\sum_{k=1}^{3}Q_k\vec e_k\in\mathbb{B}_{V}$. The scalar part is $\mathrm{Sc}$. The coefficientwise conjugation is $\bar{\cdot}$, the natural conjugation is ${}^{\natural}$, with $Q^{\natural}_\mu=\varepsilon_\mu Q_\mu$ and sign vector $\varepsilon=(1,-1,-1,-1)$, and the Hermitian conjugation is ${}^{*}=\bar{\cdot}\circ{}^{\natural}$. The vector parts carry the complex bilinear dot product $(\vec P,\vec Q)=\sum_{k=1}^{3}P_kQ_k$ and the cross product $\vec P\times\vec Q$.
+$\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ is the biquaternion algebra, with basis $e_t,\vec e_x,\vec e_y,\vec e_z$, scalar unit $e_t=1$, vector units $\vec e_k^{2}=-e_t$, and central scalar imaginary $i$, $i^{2}=-1$. A general element is $\tilde Q=\sum_{\mu\in\{t,x,y,z\}}Q_\mu e_\mu$ with $Q_\mu\in\mathbb{C}$, written in the centre–vector split $\tilde Q=c+v$ with $c=Q_te_t\in\mathbb{B}_{C}$ and $v=\sum_{k=1}^{3}Q_k\vec e_k\in\mathbb{B}_{V}$. The scalar part is $\mathrm{Sc}$. The coefficientwise conjugation is $\bar{\cdot}$, the quaternion conjugation is ${}^{\natural}$, with $Q^{\natural}_\mu=\varepsilon_\mu Q_\mu$ and sign vector $\varepsilon=(1,-1,-1,-1)$, and the Hermitian conjugation is ${}^{*}=\bar{\cdot}\circ{}^{\natural}$. The vector parts carry the complex bilinear dot product $(\vec P,\vec Q)=\sum_{k=1}^{3}P_kQ_k$ and the cross product $\vec P\times\vec Q$.
 
 The six subspaces and their real bases are these.
 
@@ -201,7 +201,7 @@ $$
 
 on the two complex subspaces, and the one sign is the whole difference between the two pairs. The identity says that the alternating part is not a second independent object on top of the real part: it is the real part read through the complex structure, and it is available only where the complex structure is. On the four real-type subspaces the complex structure leaves the subspace and the identity has no content.
 
-**The two slotted conjugations and the two pairings.** The imaginary part of a form is symmetric when the form is bilinear and alternating when the form is sesquilinear, and the second slot is the slot that decides it: the star conjugates $i$ and flips the sign of the companion identity, and the conjugate symmetry of the two sesquilinear forms then forces their imaginary part to be alternating. The first slot, the natural conjugation, does not touch the value: it is applied before the two elements are multiplied, and no conjugation of $i$ reaches the product. The difference between the two families in the table of the imaginary part is the difference between the two second slots and nothing else.
+**The two slotted conjugations and the two pairings.** The imaginary part of a form is symmetric when the form is bilinear and alternating when the form is sesquilinear, and the second slot is the slot that decides it: the star conjugates $i$ and flips the sign of the companion identity, and the conjugate symmetry of the two sesquilinear forms then forces their imaginary part to be alternating. The first slot, the quaternion conjugation, does not touch the value: it is applied before the two elements are multiplied, and no conjugation of $i$ reaches the product. The difference between the two families in the table of the imaginary part is the difference between the two second slots and nothing else.
 
 ### The Alternating Forms on the Whole Space
 
@@ -249,7 +249,7 @@ The signatures are these.
 
 ## The Centre Subspace
 
-**The centre is both a Jordan algebra and a Lie algebra, and it is the only subspace that is a Lie algebra for all four products.** A central element is $Ae_t$ with $A\in\mathbb{C}$. The subspace is the fixed set of the natural conjugation ${}^{\natural}$, of real dimension two and complex dimension one, and it is the centre of the algebra. In the blocks of *Subspaces and Decompositions* it is $A_1\oplus A_2$.
+**The centre is both a Jordan algebra and a Lie algebra, and it is the only subspace that is a Lie algebra for all four products.** A central element is $Ae_t$ with $A\in\mathbb{C}$. The subspace is the fixed set of the quaternion conjugation ${}^{\natural}$, of real dimension two and complex dimension one, and it is the centre of the algebra. In the blocks of *Subspaces and Decompositions* it is $A_1\oplus A_2$.
 
 ### The Four General Products
 
@@ -293,7 +293,7 @@ $$
 \langle\tilde Q_1,\tilde Q_2\rangle_{*}=\langle\tilde Q_1,\tilde Q_2\rangle_{\natural*}=A\overline{C}.
 $$
 
-The first is the complex quadratic form $AC$ of the pair, the second the Hermitian form $A\overline{C}$. The collapse has one reason: the natural conjugation fixes the centre, so the first slot of the product is idle there and the difference between the plain and the quaternionic families disappears.
+The first is the complex quadratic form $AC$ of the pair, the second the Hermitian form $A\overline{C}$. The collapse has one reason: the quaternion conjugation fixes the centre, so the first slot of the product is idle there and the difference between the plain and the quaternionic families disappears.
 
 Writing $A=a+ib$ and $C=c+id$ with real coordinates,
 
@@ -337,7 +337,7 @@ The two bilinear norms coincide and are the complex square; the two sesquilinear
 
 **The vector subspace is a Lie algebra but not a Jordan algebra.** Under the two bilinear brackets it is $(\mathbb{B}_{V},[\cdot,\cdot])\cong\mathfrak{sl}(2,\mathbb{C})$, the general quaternionic bilinear bracket being the negative of the commutator, and it is **no Jordan algebra** for any of the four symmetrisations.
 
-A pure vector is $\vec Q=Q_x\vec e_x+Q_y\vec e_y+Q_z\vec e_z$ with $Q_k\in\mathbb{C}$. Its scalar part vanishes and the natural conjugation reverses its sign, so the subspace, of real dimension six and complex dimension three, is the largest of the remarkable subspaces and the complex analogue of the imaginary quaternions. In the blocks it is $B_1\oplus B_2$. The three operations behave here as differently as anywhere: the product leaves the subspace at once, the symmetrisation collapses to the centre or to the Hermitian subspace, and only the bracket stays.
+A pure vector is $\vec Q=Q_x\vec e_x+Q_y\vec e_y+Q_z\vec e_z$ with $Q_k\in\mathbb{C}$. Its scalar part vanishes and the quaternion conjugation reverses its sign, so the subspace, of real dimension six and complex dimension three, is the largest of the remarkable subspaces and the complex analogue of the imaginary quaternions. In the blocks it is $B_1\oplus B_2$. The three operations behave here as differently as anywhere: the product leaves the subspace at once, the symmetrisation collapses to the centre or to the Hermitian subspace, and only the bracket stays.
 
 ### The Four General Products
 
@@ -474,7 +474,7 @@ $$
 h\bullet k=h\bullet_{*}k=\bigl(h_tk_t+(\vec h,\vec k)\bigr)e_t,
 $$
 
-the trace form of the general quaternionic bilinear product; the general quaternionic sesquilinear one is the natural conjugate of the Jordan product, $h\bullet_{\natural*}k=(h\bullet_{\mathrm{pl}}k)^{\natural}$. Each of the three fails the identity at $x=\vec e_x$: for the general plain sesquilinear and the general quaternionic bilinear symmetrisations $x\bullet x=e_t$, so the two sides of $(x\bullet x)\bullet(x\bullet x)=x\bullet\bigl(x\bullet(x\bullet x)\bigr)$ are $e_t$ and $0$; for the general quaternionic sesquilinear one, where $x\bullet_{\natural*}x=-e_t$, they are $e_t$ and $-e_t$.
+the trace form of the general quaternionic bilinear product; the general quaternionic sesquilinear one is the quaternion conjugate of the Jordan product, $h\bullet_{\natural*}k=(h\bullet_{\mathrm{pl}}k)^{\natural}$. Each of the three fails the identity at $x=\vec e_x$: for the general plain sesquilinear and the general quaternionic bilinear symmetrisations $x\bullet x=e_t$, so the two sides of $(x\bullet x)\bullet(x\bullet x)=x\bullet\bigl(x\bullet(x\bullet x)\bigr)$ are $e_t$ and $0$; for the general quaternionic sesquilinear one, where $x\bullet_{\natural*}x=-e_t$, they are $e_t$ and $-e_t$.
 
 **The bracket.** The commutator stays inside the subspace and gives a **Lie algebra**:
 

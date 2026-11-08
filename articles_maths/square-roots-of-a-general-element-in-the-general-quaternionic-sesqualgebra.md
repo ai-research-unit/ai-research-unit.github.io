@@ -34,7 +34,7 @@ $$
 \boxed{\; \zeta_t^2+\zeta'^2_t-\lvert\vec\zeta\rvert^2-\lvert\vec\zeta'\rvert^2 = Q_{1t} , \qquad 2(\zeta_t\vec\zeta+\zeta'_t\vec\zeta') = -\vec R , \qquad 2\,\vec\zeta\times\vec\zeta' = -\vec S \;}.
 $$
 
-**Proof.** The plain product $\overline{\tilde{Ζ}}\tilde{Ζ} = (\overline{a}+\overline{\vec q})(a+\vec q)$ has scalar part $\zeta_t^2+\zeta'^2_t-\lvert\vec\zeta\rvert^2-\lvert\vec\zeta'\rvert^2$, real vector part $2(\zeta_t\vec\zeta+\zeta'_t\vec\zeta')$ and imaginary vector part $2i\,\vec\zeta\times\vec\zeta'$, as in §*The Reduction of the Root Equation* of *Square Roots of One and the Idempotents of the General Quaternionic Sesqualgebra*; the equation $\overline{\tilde{Ζ}}\tilde{Ζ} = \tilde Q_1^{\natural}$ has scalar part $Q_{1t}$ because the natural conjugation fixes the scalar part, and vector part $-\vec v = -\vec R-i\vec S$; the identification of the three parts is the displayed system.
+**Proof.** The plain product $\overline{\tilde{Ζ}}\tilde{Ζ} = (\overline{a}+\overline{\vec q})(a+\vec q)$ has scalar part $\zeta_t^2+\zeta'^2_t-\lvert\vec\zeta\rvert^2-\lvert\vec\zeta'\rvert^2$, real vector part $2(\zeta_t\vec\zeta+\zeta'_t\vec\zeta')$ and imaginary vector part $2i\,\vec\zeta\times\vec\zeta'$, as in §*The Reduction of the Root Equation* of *Square Roots of One and the Idempotents of the General Quaternionic Sesqualgebra*; the equation $\overline{\tilde{Ζ}}\tilde{Ζ} = \tilde Q_1^{\natural}$ has scalar part $Q_{1t}$ because the quaternion conjugation fixes the scalar part, and vector part $-\vec v = -\vec R-i\vec S$; the identification of the three parts is the displayed system.
 
 ## The Solvability Criterion
 

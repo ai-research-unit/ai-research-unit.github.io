@@ -2,9 +2,9 @@
 
 ## Introduction
 
-The underlying complex vector space of $\mathbb{B}$ carries **four general products**, one to each choice of the two slots: the first factor is read as it stands or through the natural conjugation ${}^{\natural}$, the second as it stands or through the Hermitian conjugation ${}^{*}$, and the two choices are independent. The four are the general plain bilinear product $\tilde Q_1\tilde Q_2$, the general quaternionic bilinear product $\tilde Q_1^{\natural}\tilde Q_2$, the general plain sesquilinear product $\tilde Q_1\tilde Q_2^{*}$ and the general quaternionic sesquilinear product $\tilde Q_1^{\natural}\tilde Q_2^{*}$. No two of the four agree on every pair.
+The underlying complex vector space of $\mathbb{B}$ carries **four general products**, one to each choice of the two slots: the first factor is read as it stands or through the quaternion conjugation ${}^{\natural}$, the second as it stands or through the Hermitian conjugation ${}^{*}$, and the two choices are independent. The four are the general plain bilinear product $\tilde Q_1\tilde Q_2$, the general quaternionic bilinear product $\tilde Q_1^{\natural}\tilde Q_2$, the general plain sesquilinear product $\tilde Q_1\tilde Q_2^{*}$ and the general quaternionic sesquilinear product $\tilde Q_1^{\natural}\tilde Q_2^{*}$. No two of the four agree on every pair.
 
-This article does three things. It defines the four on the coordinates, each with its scalar–vector form, and reads the two decisions on the pair: the block of scalar parts and the block of vector parts. Each case closes with the conjugation it inserts, its fixed subspaces and the form that follows; the fourth carries the natural conjugation as the fundamental symmetry of the Krein form. It collects the identities that link the four — how each conjugation in a slot separates a factor into scalar and vector parts, how a product conjugates, how the four scalar parts and the four vector parts are related, how the left multiplications of the four are the plain ones read through the conjugations, and how the four collapse on the real quaternion subspace. It then compares the four by their algebraic properties: the property table, bilinearity, associativity, the units, the alternative and flexible identities, the degree-three identity, the left multiplications, and the question of which of the four is a multiplication in the sense of algebra.
+This article does three things. It defines the four on the coordinates, each with its scalar–vector form, and reads the two decisions on the pair: the block of scalar parts and the block of vector parts. Each case closes with the conjugation it inserts, its fixed subspaces and the form that follows; the fourth carries the quaternion conjugation as the fundamental symmetry of the Krein form. It collects the identities that link the four — how each conjugation in a slot separates a factor into scalar and vector parts, how a product conjugates, how the four scalar parts and the four vector parts are related, how the left multiplications of the four are the plain ones read through the conjugations, and how the four collapse on the real quaternion subspace. It then compares the four by their algebraic properties: the property table, bilinearity, associativity, the units, the alternative and flexible identities, the degree-three identity, the left multiplications, and the question of which of the four is a multiplication in the sense of algebra.
 
 The four are also one rule with a conjugation inserted in each slot. The two insertions commute, the four readings form a group $\mathbb{Z}_2\times\mathbb{Z}_2$, and the reading of the group on a general algebra gives the slot family, whose second slot governs the composition and whose first slot governs the form. That construction, the group and the table of the slots are *Introduction to the Operators of the Biquaternion Algebra*, §*The Four Readings and Their Group*.
 
@@ -73,7 +73,7 @@ $$
 
 The scalar part is $\mathrm{Sc}(\tilde Q_1^{\natural}\tilde Q_2)=\sum_{\mu\in\{t,x,y,z\}}Q_{1\mu} Q_{2\mu}$, and the vector part is the one displayed.
 
-**The natural sign in the first slot.** The first factor is read through ${}^{\natural}$, which is a $\mathbb{C}$-linear anti-automorphism and an involution, with $+1$-eigenspace the centre $\mathbb{B}_{C}$ and $-1$-eigenspace the vector subspace $\mathbb{V}_{\mathbb{B}}$; in the coefficient basis it is $\operatorname{diag}(1,-1,-1,-1)$. The insertion separates the scalar part of the first factor from its vector part, $\tilde Q_1^{\natural}\tilde Q_2=(Q_{1t}e_t)\tilde Q_2-\vec Q_1\tilde Q_2$, and it is the whole difference from the plain case, which differs by the vector part of the first factor alone. The case is $\mathbb{C}$-bilinear and has $e_t$ as a left unit alone.
+**The quaternion sign in the first slot.** The first factor is read through ${}^{\natural}$, which is a $\mathbb{C}$-linear anti-automorphism and an involution, with $+1$-eigenspace the centre $\mathbb{B}_{C}$ and $-1$-eigenspace the vector subspace $\mathbb{V}_{\mathbb{B}}$; in the coefficient basis it is $\operatorname{diag}(1,-1,-1,-1)$. The insertion separates the scalar part of the first factor from its vector part, $\tilde Q_1^{\natural}\tilde Q_2=(Q_{1t}e_t)\tilde Q_2-\vec Q_1\tilde Q_2$, and it is the whole difference from the plain case, which differs by the vector part of the first factor alone. The case is $\mathbb{C}$-bilinear and has $e_t$ as a left unit alone.
 
 ### The General Plain Sesquilinear Product $\tilde Q_1\tilde Q_2^{*}$
 
@@ -135,7 +135,7 @@ $$
 
 The scalar part is $\mathrm{Sc}(\tilde Q_1^{\natural}\tilde Q_2^{*})=\sum_{\mu\in\{t,x,y,z\}}\varepsilon_\mu Q_{1\mu}\overline{Q_{2\mu}}$, conjugate-linear in the coordinates of the second element; the vector part is the one displayed.
 
-**The two insertions together, and the fundamental symmetry.** The scalar part is the Krein form, $\langle\tilde Q_1,\tilde Q_2\rangle_{\natural*}=\mathrm{Sc}(\tilde Q_1^{\natural}\tilde Q_2^{*})$, with the definite companion $\langle\tilde Q_1,\tilde Q_2\rangle_{*}=\mathrm{Sc}(\tilde Q_1\tilde Q_2^{*})$; the natural conjugation $J={}^{\natural}$ is its **fundamental symmetry**:
+**The two insertions together, and the fundamental symmetry.** The scalar part is the Krein form, $\langle\tilde Q_1,\tilde Q_2\rangle_{\natural*}=\mathrm{Sc}(\tilde Q_1^{\natural}\tilde Q_2^{*})$, with the definite companion $\langle\tilde Q_1,\tilde Q_2\rangle_{*}=\mathrm{Sc}(\tilde Q_1\tilde Q_2^{*})$; the quaternion conjugation $J={}^{\natural}$ is its **fundamental symmetry**:
 $$
 J^2=\mathrm{id},\qquad
 \langle\tilde Q_2,J\tilde Q_1\rangle_{\natural*}=\langle J\tilde Q_2,\tilde Q_1\rangle_{\natural*},\qquad
@@ -263,7 +263,7 @@ $$
 
 The sums separate the scalar parts of the two factors, the differences the vector part of the first factor against the second: the two scalar parts of a pair are the same reading with the sign of the vector part of the first factor flipped, and their mean and their half-difference are the two extreme readings.
 
-Three identities move a scalar part from one writing to another. The natural sign may be carried from one factor to the other,
+Three identities move a scalar part from one writing to another. The quaternion sign may be carried from one factor to the other,
 
 $$
 \boxed{\;
@@ -271,7 +271,7 @@ $$
 \;},
 $$
 
-and the same holds with the star, $\mathrm{Sc}(\tilde Q_1^{\natural}\tilde Q_2^{*})=\mathrm{Sc}(\tilde Q_1\bar{\tilde Q}_2)$, while the scalar part is unchanged when both factors are conjugated by the natural sign,
+and the same holds with the star, $\mathrm{Sc}(\tilde Q_1^{\natural}\tilde Q_2^{*})=\mathrm{Sc}(\tilde Q_1\bar{\tilde Q}_2)$, while the scalar part is unchanged when both factors are conjugated by the quaternion sign,
 
 $$
 \mathrm{Sc}(\tilde Q_1^{\natural}\tilde Q_2^{\natural})=\mathrm{Sc}(\tilde Q_1\tilde Q_2) .
@@ -332,7 +332,7 @@ $$
 \tilde Q_1^{\natural}\tilde Q_3^{*}=\bigl(R_{\bar{\tilde Q}_1}(\tilde Q_3)\bigr)^{*} .
 $$
 
-The ${}^{\natural}$-product is the left multiplication of the general plain bilinear product re-indexed by the natural sign; the other two are the conjugates of the right multiplications of the general plain bilinear product by the star and by the conjugate of the first factor. The distinction decides which of the four general products have a monoid of left multiplications, and it is worth recording, although the property table itself is §*The Property Table*, below.
+The ${}^{\natural}$-product is the left multiplication of the general plain bilinear product re-indexed by the quaternion sign; the other two are the conjugates of the right multiplications of the general plain bilinear product by the star and by the conjugate of the first factor. The distinction decides which of the four general products have a monoid of left multiplications, and it is worth recording, although the property table itself is §*The Property Table*, below.
 
 For the general plain bilinear product the left multiplications compose by $L_{\tilde Q_1}\circ L_{\tilde Q_4}=L_{\tilde Q_1\tilde Q_4}$, the associativity of the product, so they form a monoid, the image of $\mathbb{B}$ in its endomorphism ring. For the ${}^{\natural}$-product,
 
@@ -378,11 +378,11 @@ $$
 
 *Proof.* Both contain $\tilde Q^{\natural}$, since $\tilde Q\tilde Q^{\natural}=\tilde Q^{\natural}\tilde Q=0$, and both have dimension $2$; they are not equal, because for $\tilde Q=e_t+i\vec e_x$ the element $\tilde X=(e_t-i\vec e_x)\vec e_y/2$ lies in $A(\tilde Q)$ and not in $B(\tilde Q)$.
 
-**Remark (the four products).** An annihilator is the kernel of a left multiplication, so the formulas of §*The Left Multiplications* give the annihilators of the other three products as plain annihilators of conjugated elements: $\ker L^{*}_{\tilde Q}=B(\tilde Q^{*})$, $\ker L^{\natural}_{\tilde Q}=A(\tilde Q^{\natural})$ and $\ker L^{\natural*}_{\tilde Q}=B(\bar{\tilde Q})$. In particular the two annihilators of the ${}^{\natural}$-product coincide, the natural conjugation being a $\mathbb{C}$-linear anti-automorphism of order two (*Annihilators of the General Quaternionic Algebra*, §*The Two Annihilators Coincide*); in the plain product they are genuinely two.
+**Remark (the four products).** An annihilator is the kernel of a left multiplication, so the formulas of §*The Left Multiplications* give the annihilators of the other three products as plain annihilators of conjugated elements: $\ker L^{*}_{\tilde Q}=B(\tilde Q^{*})$, $\ker L^{\natural}_{\tilde Q}=A(\tilde Q^{\natural})$ and $\ker L^{\natural*}_{\tilde Q}=B(\bar{\tilde Q})$. In particular the two annihilators of the ${}^{\natural}$-product coincide, the quaternion conjugation being a $\mathbb{C}$-linear anti-automorphism of order two (*Annihilators of the General Quaternionic Algebra*, §*The Two Annihilators Coincide*); in the plain product they are genuinely two.
 
 ## The Restriction to the Quaternion Subspace
 
-On the real quaternion subspace $\mathbb{B}_{H}$, the elements whose coefficients are real, the complex conjugation is the identity, so the star coincides with the natural sign: the two sesquilinear rules then read as the natural conjugates of the two bilinear ones with the slots exchanged, and the two conjugate-linear scalar parts become linear.
+On the real quaternion subspace $\mathbb{B}_{H}$, the elements whose coefficients are real, the complex conjugation is the identity, so the star coincides with the quaternion sign: the two sesquilinear rules then read as the quaternion conjugate of the two bilinear ones with the slots exchanged, and the two conjugate-linear scalar parts become linear.
 
 For $\bar{\tilde Q}_1=\tilde Q_1$ and $\bar{\tilde Q}_2=\tilde Q_2$, the two sesquilinear products coincide with the natural twists of the two bilinear ones,
 
@@ -391,13 +391,13 @@ $$
 \tilde Q_1^{\natural}\tilde Q_2^{*}=\tilde Q_1^{\natural}\tilde Q_2^{\natural}=(\tilde Q_2\tilde Q_1)^{\natural} ,
 $$
 
-so the four general products take the four values $\tilde Q_1\tilde Q_2$, $\tilde Q_1\tilde Q_2^{\natural}$, $\tilde Q_1^{\natural}\tilde Q_2$ and $(\tilde Q_2\tilde Q_1)^{\natural}$, of which the second and the fourth are the natural conjugates of the two products in the reversed order. The scalar parts follow: the second scalar part restricts to the third,
+so the four general products take the four values $\tilde Q_1\tilde Q_2$, $\tilde Q_1\tilde Q_2^{\natural}$, $\tilde Q_1^{\natural}\tilde Q_2$ and $(\tilde Q_2\tilde Q_1)^{\natural}$, of which the second and the fourth are the quaternion conjugate of the two products in the reversed order. The scalar parts follow: the second scalar part restricts to the third,
 
 $$
 \mathrm{Sc}(\tilde Q_1\tilde Q_2^{*})=\sum_\mu Q_{1\mu} Q_{2\mu}=\mathrm{Sc}(\tilde Q_1^{\natural}\tilde Q_2) \qquad (\bar{\tilde Q}_1=\tilde Q_1,\ \bar{\tilde Q}_2=\tilde Q_2),
 $$
 
-and the fourth restricts to the first. The four scalar parts therefore come in two linear and two conjugate-linear pairs off the subspace and in two linear pairs on it: on the subspace the coefficients are fixed by the complex conjugation, so the star is the natural sign and only the signs $\varepsilon_\mu$ remain.
+and the fourth restricts to the first. The four scalar parts therefore come in two linear and two conjugate-linear pairs off the subspace and in two linear pairs on it: on the subspace the coefficients are fixed by the complex conjugation, so the star is the quaternion sign and only the signs $\varepsilon_\mu$ remain.
 
 
 ## The Property Table
@@ -542,7 +542,7 @@ The vector space is therefore the direct sum of the two planes $\operatorname{sp
 
 The four general products of the underlying complex space of $\mathbb{B}$ are read on one and the same pair, each with either element read as it stands or through a conjugation: the natural ${}^{\natural}$ in the first slot and the Hermitian ${}^{*}$ in the second. They are the general plain bilinear product $\tilde Q_1\tilde Q_2$, the general quaternionic bilinear product $\tilde Q_1^{\natural}\tilde Q_2$, the general plain sesquilinear product $\tilde Q_1\tilde Q_2^{*}$ and the general quaternionic sesquilinear product $\tilde Q_1^{\natural}\tilde Q_2^{*}$, and no two agree on every pair. The two remaining conjugations add no new scalar part, since $\mathrm{Sc}(\bar{\tilde Q}_1\tilde Q_2)=\mathrm{Sc}(\tilde Q_2^{\natural}\tilde Q_1^{*})$ and $\mathrm{Sc}(\tilde Q_1\bar{\tilde Q}_2)=\mathrm{Sc}(\tilde Q_1^{\natural}\tilde Q_2^{*})$.
 
-The conjugation in a slot separates the scalar part of that factor from its vector part: $\tilde Q_1\tilde Q_2\pm\tilde Q_1^{\natural}\tilde Q_2$ is $2Q_{1t}\tilde Q_2$ or $2\vec Q_1\tilde Q_2$, and the same two identities hold with $\tilde Q_2^{*}$ in place of $\tilde Q_2$; they hold again for the vector parts. The ${}^{\natural}$ of the ${}^{\natural}$-product and the ${}^{*}$ of the ${}^{*}$-product return the product with its slots exchanged, which is why the scalar parts of those two are symmetric and conjugate-symmetric, while no one of the four products is commutative. The four scalar parts are $\sum_\mu\varepsilon_\mu Q_{1\mu}Q_{2\mu}$, $\sum_\mu Q_{1\mu}Q_{2\mu}$, $\sum_\mu Q_{1\mu}\overline{Q_{2\mu}}$ and $\sum_\mu\varepsilon_\mu Q_{1\mu}\overline{Q_{2\mu}}$, in the order of the two slots. The case with both slots conjugated is the one that carries a symmetry: the natural conjugation is the fundamental symmetry of the Krein form, with bridge $\langle\tilde Q_2,\tilde Q_1\rangle_{\natural*}=\langle\tilde Q_2,J\tilde Q_1\rangle_{*}$, and it is the unique such symmetry that is a unital $\mathbb{C}$-algebra anti-automorphism.
+The conjugation in a slot separates the scalar part of that factor from its vector part: $\tilde Q_1\tilde Q_2\pm\tilde Q_1^{\natural}\tilde Q_2$ is $2Q_{1t}\tilde Q_2$ or $2\vec Q_1\tilde Q_2$, and the same two identities hold with $\tilde Q_2^{*}$ in place of $\tilde Q_2$; they hold again for the vector parts. The ${}^{\natural}$ of the ${}^{\natural}$-product and the ${}^{*}$ of the ${}^{*}$-product return the product with its slots exchanged, which is why the scalar parts of those two are symmetric and conjugate-symmetric, while no one of the four products is commutative. The four scalar parts are $\sum_\mu\varepsilon_\mu Q_{1\mu}Q_{2\mu}$, $\sum_\mu Q_{1\mu}Q_{2\mu}$, $\sum_\mu Q_{1\mu}\overline{Q_{2\mu}}$ and $\sum_\mu\varepsilon_\mu Q_{1\mu}\overline{Q_{2\mu}}$, in the order of the two slots. The case with both slots conjugated is the one that carries a symmetry: the quaternion conjugation is the fundamental symmetry of the Krein form, with bridge $\langle\tilde Q_2,\tilde Q_1\rangle_{\natural*}=\langle\tilde Q_2,J\tilde Q_1\rangle_{*}$, and it is the unique such symmetry that is a unital $\mathbb{C}$-algebra anti-automorphism.
 
 The comparison gives the property table. Each of the four is $\mathbb{C}$-linear in the first argument; the general plain bilinear product and the ${}^{\natural}$-product are $\mathbb{C}$-linear in the second, the two products carrying the star are conjugate-linear there. The general plain bilinear product is associative, has the two-sided unit $1$, is alternative, flexible and satisfies the degree-three identity, and its left multiplications form a monoid. The ${}^{\natural}$-product is $\mathbb{C}$-bilinear, has the left unit $1$ alone, and fails associativity, the alternative identities, flexibility and the degree-three identity, as do the two sesquilinear products, which have no identity and whose left multiplications do not form a monoid. The left multiplications of the four are the plain ones read through the conjugations: $L^{*}_{\tilde Q_1}=(\cdot)^{*}\circ R_{\tilde Q_1^{*}}$, $L^{\natural}_{\tilde Q_1}=L_{\tilde Q_1^{\natural}}$ and $L^{\natural*}_{\tilde Q_1}=(\cdot)^{*}\circ R_{\bar{\tilde Q}_1}$.
 
@@ -564,7 +564,7 @@ The four are told apart on one element by the square: $\mathrm{Sc}(\tilde Q\tild
 | $\tilde Q_1^{\natural}$, $\tilde Q_1^{*}$ | the two conjugations, in coordinates |
 | $\langle\tilde Q_1,\tilde Q_2\rangle_{*}=\mathrm{Sc}(\tilde Q_1\tilde Q_2^{*})$ | the Hermitian form, the scalar part of the plain sesquilinear product |
 | $\langle\tilde Q_1,\tilde Q_2\rangle_{\natural*}=\mathrm{Sc}(\tilde Q_1^{\natural}\tilde Q_2^{*})$ | the Krein form, the scalar part of the quaternionic sesquilinear product |
-| $J={}^{\natural}$ | the natural conjugation, the fundamental symmetry of the Krein form |
+| $J={}^{\natural}$ | the quaternion conjugation, the fundamental symmetry of the Krein form |
 | $\vec Q_1=Q_{1x}\vec e_x+Q_{1y}\vec e_y+Q_{1z}\vec e_z$ | the vector part, read as an element where it multiplies |
 | $(\vec Q_1,\vec Q_2)=\sum_kQ_{1k}Q_{2k}$ | the complex bilinear dot product |
 | $\vec Q_1\times\vec Q_2$ | the complex bilinear cross product |

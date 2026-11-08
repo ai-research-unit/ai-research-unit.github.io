@@ -16,9 +16,9 @@ spanned by the Killing form and the scalar-part form $\varphi(\tilde q_1,\tilde 
 no nonzero alternating invariant form.
 
 **This is not the algebra $\mathbb{H}$.** The form belongs to the Lie bracket of the vector parts, not
-to the associative multiplication. Throughout, the natural sign ${}^{\natural}$ is the quaternion
+to the associative multiplication. Throughout, the sign ${}^{\natural}$ is the quaternion
 conjugation, the bar is the identity because $\mathbb{R}$ has no nontrivial involution, and the star
-coincides with the natural sign and gives nothing new.
+coincides with the quaternion sign and gives nothing new.
 
 The Lie algebra, its centre and its derived algebra are *The Lie Algebra of the Antisymmetric Plain
 Algebra*; the adjoint operators and the derivations are *The Adjoint Operators and the Derivations of

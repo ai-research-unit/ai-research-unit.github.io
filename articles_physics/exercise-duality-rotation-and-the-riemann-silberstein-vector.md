@@ -245,7 +245,7 @@ $$
 $$
 so the quaternion conjugate transforms with $\exp(-i\theta)$, not with $\exp(+i\theta)$.
 
-**Solution (b).** Two symbols are in play and they are not interchangeable. The star conjugates the coefficients of the complex vector, $\vec N^* = \vec E - ic\vec B$, and it carries the opposite phase; the natural conjugate negates the vector, $\vec N^{\natural} = -\vec N$, and it carries the same phase as $\vec N$. Part (a) shows that the object whose duality image is $\exp(+i\theta)$ times itself is $\vec N^*$, and the parent's display,
+**Solution (b).** Two symbols are in play and they are not interchangeable. The star conjugates the coefficients of the complex vector, $\vec N^* = \vec E - ic\vec B$, and it carries the opposite phase; the quaternion conjugate negates the vector, $\vec N^{\natural} = -\vec N$, and it carries the same phase as $\vec N$. Part (a) shows that the object whose duality image is $\exp(+i\theta)$ times itself is $\vec N^*$, and the parent's display,
 $$
 \vec N \mapsto \exp(-i\theta)\vec N,
 \qquad \vec N^* \mapsto \exp(+i\theta)\vec N^*,

@@ -99,7 +99,7 @@ $$
 
 because $\varsigma^2 = \mathrm{id}$, which is $R$-linearity of $c$ as a map $A^{\varsigma} \to A$. The map $\mathrm{id}$ is $\varsigma$-semilinear exactly when $\varsigma(\lambda)x = \lambda x$ for all $\lambda$ and $x$, that is when $\varsigma = \mathrm{id}$.
 
-**Remark.** The conjugation is the operation that the sesquilinear context requires and the bilinear one does not have. In the standard example of *Sesqualgebras*, where $A$ is an associative algebra with a $\varsigma$-semilinear involution $*$, the natural conjugation is the one that conjugates the coefficients of the algebra without moving them, the operation whose fixed set is the $R^{\varsigma}$-form of $A$; on the complex matrices it is the entrywise conjugation, on a matrix algebra over a field it is the entrywise action of $\varsigma$. It is an automorphism there, but the definition above asks only for an involutive semilinear map, and multiplicativity is used nowhere below.
+**Remark.** The conjugation is the operation that the sesquilinear context requires and the bilinear one does not have. In the standard example of *Sesqualgebras*, where $A$ is an associative algebra with a $\varsigma$-semilinear involution $*$, the quaternion conjugation is the one that conjugates the coefficients of the algebra without moving them, the operation whose fixed set is the $R^{\varsigma}$-form of $A$; on the complex matrices it is the entrywise conjugation, on a matrix algebra over a field it is the entrywise action of $\varsigma$. It is an automorphism there, but the definition above asks only for an involutive semilinear map, and multiplicativity is used nowhere below.
 
 ### The Exchange
 

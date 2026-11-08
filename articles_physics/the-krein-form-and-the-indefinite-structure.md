@@ -50,7 +50,7 @@ The indefiniteness is what makes the form unable to normalise. A definite Hermit
 
 ## The Fundamental Symmetry
 
-The indefinite form is a definite form in disguise. Let $J={}^{\natural}$ be the natural conjugation, fixing the central $i$ and negating the three vector units. Then
+The indefinite form is a definite form in disguise. Let $J={}^{\natural}$ be the quaternion conjugation, fixing the central $i$ and negating the three vector units. Then
 
 $$
 \boxed{\;\langle\tilde P_{\Phi},\tilde Q\rangle_{\natural*}=\langle\tilde P_{\Phi},J\tilde Q\rangle_{*},

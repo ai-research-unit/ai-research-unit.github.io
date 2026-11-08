@@ -4,7 +4,7 @@
 
 **The object.** The biquaternion algebra $\mathbb{B}$ is a complex vector space of dimension four, and its multiplication is a bilinear map $\mathbb{B}\times\mathbb{B}\to\mathbb{B}$. A third structure is easy to overlook: the complex-linear maps of $\mathbb{B}$ into itself. They form an algebra under composition, the **endomorphism algebra** $\operatorname{End}_{\mathbb{C}}(\mathbb{B})$, of complex dimension sixteen. This article opens the group and fixes that ambient object.
 
-**The scope of the word.** Here an **endomorphism** is a $\mathbb{C}$-linear map $\mathbb{B}\to\mathbb{B}$, with no condition of preserving the product. The maps that preserve the product are the **algebra** endomorphisms; for $\mathbb{B}$ every nonzero unital one is invertible, and they form a group. The two uses of the word are separated in §*Endomorphisms of the Algebra*, and confusing them is the first trap of the subject. The article then reads the one involution of the algebra that is itself a complex-linear operator, the natural conjugation $D$.
+**The scope of the word.** Here an **endomorphism** is a $\mathbb{C}$-linear map $\mathbb{B}\to\mathbb{B}$, with no condition of preserving the product. The maps that preserve the product are the **algebra** endomorphisms; for $\mathbb{B}$ every nonzero unital one is invertible, and they form a group. The two uses of the word are separated in §*Endomorphisms of the Algebra*, and confusing them is the first trap of the subject. The article then reads the one involution of the algebra that is itself a complex-linear operator, the quaternion conjugation $D$.
 
 **What the article does not do.** The operators produced by the multiplication itself, the left and the right regular families and their products, are the subject of *Operator Chirality on the Biquaternion Algebra* and *Operators Acting on One Side*. This article needs one display of them, the inner derivation $\tilde Qx-x\tilde Q$, and one pointer: the two summands of that display are the regular operators, and they are defined and studied there, not here. The matrix form of the ambient space is the subject of *Matrix Representations Conventions*; this article states the dimension and leaves the matrix to the article that fixes the frame.
 
@@ -54,7 +54,7 @@ $$
 \operatorname{End}_{\mathbb{C}}(\mathbb{B})=\{F\in\operatorname{End}_{\mathbb{R}}(\mathbb{B}):FJ=JF\}.
 $$
 
-**The three marks, read on the field.** The coefficient conjugation $\bar{\cdot}$ and the Hermitian conjugation ${}^{*}$ conjugate the complex coefficients, so they are **conjugate-linear** and lie in $\operatorname{End}_{\mathbb{R}}(\mathbb{B})\setminus\operatorname{End}_{\mathbb{C}}(\mathbb{B})$. The natural conjugation ${}^{\natural}$ fixes the coefficients and changes the sign of the three vector units, so it is $\mathbb{C}$-linear and lies in $\operatorname{End}_{\mathbb{C}}(\mathbb{B})$, although it is an anti-automorphism and not an algebra endomorphism.
+**The three marks, read on the field.** The coefficient conjugation $\bar{\cdot}$ and the Hermitian conjugation ${}^{*}$ conjugate the complex coefficients, so they are **conjugate-linear** and lie in $\operatorname{End}_{\mathbb{R}}(\mathbb{B})\setminus\operatorname{End}_{\mathbb{C}}(\mathbb{B})$. The quaternion conjugation ${}^{\natural}$ fixes the coefficients and changes the sign of the three vector units, so it is $\mathbb{C}$-linear and lies in $\operatorname{End}_{\mathbb{C}}(\mathbb{B})$, although it is an anti-automorphism and not an algebra endomorphism.
 
 **The consequence for the operator articles.** An operator statement that uses $\bar{\cdot}$ or ${}^{*}$ is a real-linear statement, even when the carrier is written over $\mathbb{C}$. In particular the four adjoints of *Adjoint Pair of $L$ and $R$ Operators* are not all complex-linear: the plain and the quaternionic adjoints are, and the Hermitian and the Krein adjoints are not. The distinction is not a defect of the notation; it records which conjugation each adjoint carries.
 
@@ -108,11 +108,11 @@ and $\operatorname{ad}_{\tilde Q}=0$ exactly when $\tilde Q$ is central. Hence $
 
 **A subspace, against a group.** The derivations are cut out by a condition linear in the operator, so they form a subspace of complex dimension three. The automorphisms are cut out by a condition quadratic in the operator, so they form a group and not a subspace. The two dimensions agree because the derivations are the tangent space of the group at the identity; the general rule is *The Operators on an Algebra*, read on $\mathbb{B}$.
 
-## The Natural Conjugation
+## The Quaternion Conjugation
 
 ### D as an Anti-Automorphism
 
-**Definition.** The **natural conjugation** is the complex-linear map
+**Definition.** The **quaternion conjugation** is the complex-linear map
 
 $$
 D:\mathbb{B}\longrightarrow\mathbb{B},\qquad D(x)=x^{\natural}=x_te_t-x_x\vec e_x-x_y\vec e_y-x_z\vec e_z .
@@ -128,11 +128,11 @@ $$
 
 ### The Conjugate-Linear Maps Outside End_C(B)
 
-**The two conjugate-linear conjugations.** The coefficient conjugation $\bar{\cdot}$ and the Hermitian conjugation ${}^{*}$ act on the coefficients, so they are conjugate-linear and lie outside $\operatorname{End}_{\mathbb{C}}(\mathbb{B})$. They are real-linear operators of the carrier, of real dimension eight, and they are not elements of the complex operator algebra. The star is the composite of the bar and the natural sign, ${}^{*}=\bar{\cdot}\circ{}^{\natural}$, so the two conjugate-linear maps differ by $D$.
+**The two conjugate-linear conjugations.** The coefficient conjugation $\bar{\cdot}$ and the Hermitian conjugation ${}^{*}$ act on the coefficients, so they are conjugate-linear and lie outside $\operatorname{End}_{\mathbb{C}}(\mathbb{B})$. They are real-linear operators of the carrier, of real dimension eight, and they are not elements of the complex operator algebra. The star is the composite of the bar and the quaternion sign, ${}^{*}=\bar{\cdot}\circ{}^{\natural}$, so the two conjugate-linear maps differ by $D$.
 
-**Their fixed spaces.** The bar fixes the elements with real coefficients, the real quaternions $\mathbb{H}$; the star fixes the Hermitian subspace $\mathbb{B}_{\Psi}$. The two fixed spaces are not the same, and neither is a complex subspace of $\mathbb{B}$: a conjugate-linear map has a real fixed space, and the complex structure carries it to the anti-fixed space. The natural conjugation $D$ is complex-linear, so its fixed space is complex: it is the centre $\mathbb{C}e_t$.
+**Their fixed spaces.** The bar fixes the elements with real coefficients, the real quaternions $\mathbb{H}$; the star fixes the Hermitian subspace $\mathbb{B}_{\Psi}$. The two fixed spaces are not the same, and neither is a complex subspace of $\mathbb{B}$: a conjugate-linear map has a real fixed space, and the complex structure carries it to the anti-fixed space. The quaternion conjugation $D$ is complex-linear, so its fixed space is complex: it is the centre $\mathbb{C}e_t$.
 
-**Why the distinction is kept.** An operator built with the bar or the star is a real-linear operator, and a statement about it is a statement over $\mathbb{R}$. An operator built with the natural sign is complex-linear, and a statement about it is a statement over $\mathbb{C}$. The four adjoints of *Adjoint Pair of $L$ and $R$ Operators* separate along this line: the plain and the quaternionic adjoints are complex-linear, the Hermitian and the Krein adjoints are conjugate-linear. Writing a dagger over the distinction, as *Operator and Calculus Conventions* records, does not make the four one.
+**Why the distinction is kept.** An operator built with the bar or the star is a real-linear operator, and a statement about it is a statement over $\mathbb{R}$. An operator built with the quaternion sign is complex-linear, and a statement about it is a statement over $\mathbb{C}$. The four adjoints of *Adjoint Pair of $L$ and $R$ Operators* separate along this line: the plain and the quaternionic adjoints are complex-linear, the Hermitian and the Krein adjoints are conjugate-linear. Writing a dagger over the distinction, as *Operator and Calculus Conventions* records, does not make the four one.
 
 ## Summary
 
@@ -140,7 +140,7 @@ The ambient object of the group is $\operatorname{End}_{\mathbb{C}}(\mathbb{B})$
 
 Inside the ambient algebra the article separates three objects. The **automorphisms** are the bijective multiplicative maps; every nonzero unital algebra endomorphism is one, and the group is $PGL_2(\mathbb{C})$, of complex dimension $3$. The **derivations** are the maps with the Leibniz rule; every one is inner, $\operatorname{ad}_{\tilde Q}(x)=\tilde Qx-x\tilde Q$, and they form a subspace of complex dimension $3$. The two dimensions agree because the derivations are the tangent space of the group at the identity, but one object is a subspace and the other a group.
 
-The **natural conjugation** $D$ is the one conjugation that is complex-linear. It is an involution and an anti-automorphism, of matrix $\operatorname{diag}(1,-1,-1,-1)$, trace $-2$ and determinant $-1$; it lies in the ambient algebra and not in the automorphism group. The coefficient bar and the Hermitian star are conjugate-linear, so they lie outside the ambient algebra and every statement that uses them is real-linear. The four adjoints of the corpus separate along that line.
+The **quaternion conjugation** $D$ is the one conjugation that is complex-linear. It is an involution and an anti-automorphism, of matrix $\operatorname{diag}(1,-1,-1,-1)$, trace $-2$ and determinant $-1$; it lies in the ambient algebra and not in the automorphism group. The coefficient bar and the Hermitian star are conjugate-linear, so they lie outside the ambient algebra and every statement that uses them is real-linear. The four adjoints of the corpus separate along that line.
 
 ## Summary of Notation
 
@@ -153,7 +153,7 @@ The **natural conjugation** $D$ is the one conjugation that is complex-linear. I
 | $\operatorname{Aut}_{\mathbb{C}}(\mathbb{B})$ | The automorphism group, $PGL_2(\mathbb{C})$, complex dimension $3$ |
 | $\operatorname{Der}_{\mathbb{C}}(\mathbb{B})$ | The derivations, complex dimension $3$ |
 | $\operatorname{ad}_{\tilde Q}$ | The inner derivation, $\operatorname{ad}_{\tilde Q}(x)=\tilde Qx-x\tilde Q$ |
-| $D$ | The natural conjugation, $\operatorname{diag}(1,-1,-1,-1)$ |
+| $D$ | The quaternion conjugation, $\operatorname{diag}(1,-1,-1,-1)$ |
 | $\bar{\cdot}$, ${}^{*}$ | The conjugate-linear conjugations |
 | $\mathbb{H}$, $\mathbb{B}_{\Psi}$ | The fixed spaces of the bar and of the star |
 

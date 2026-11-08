@@ -17,7 +17,7 @@ is not a subspace, and it is the union of the **pure** and the **non-pure** fami
 theory of the algebra. Third, the two **annihilators** of an element, taken with respect to
 $\star$, are each of complex dimension two for a zero divisor and vanish for a unit, and the
 element lies in its own annihilators. Fourth, and the sharpest fact of the article, the two
-annihilators **coincide for every element**, unit or zero divisor alike, because the natural
+annihilators **coincide for every element**, unit or zero divisor alike, because the quaternion
 conjugation is a $\mathbb{C}$-linear anti-automorphism of order two; the quaternionic product is
 the one product of the block whose annihilators are not exchanged by the conjugation.
 
@@ -27,7 +27,7 @@ $$
 \tilde Q_1\star\tilde Q_2=\tilde Q_1^{\natural}\tilde Q_2 ,
 $$
 
-with $\natural$ the natural conjugation $\tilde Q^{\natural}=Q_t-\vec Q$. An element is
+with $\natural$ the quaternion conjugation $\tilde Q^{\natural}=Q_t-\vec Q$. An element is
 $\tilde Q=Q_te_t+\vec Q$ with $\vec Q=\sum_{k=1}^{3}Q_k\vec e_k$, the **algebraic norm** is
 $\langle\tilde Q\rangle_{\natural}=\tilde Q^{\natural}\tilde Q=\sum_\mu Q_\mu^2$, and
 $(\vec Q_1,\vec Q_2)=\sum_kQ_{1,k}Q_{2,k}$ is the complex bilinear form of the vector parts. An element
@@ -139,8 +139,7 @@ $$
 $$
 
 **Proof.** The scalar–vector form of the product at a pure pair is $(\vec Q,\vec Q)e_t$ for
-the quaternionic product and $-(\vec Q,\vec Q)e_t$ for the plain one, and the natural
-conjugation negates a pure element.
+the quaternionic product and $-(\vec Q,\vec Q)e_t$ for the plain one, and the quaternion conjugation negates a pure element.
 
 **Theorem (the criterion in the pure case).** For a nonzero pure $\tilde Q$ the following are
 equivalent:
@@ -244,7 +243,7 @@ square, which is blind to it, and it is read from the scalar part of the element
 ## The Annihilators
 
 The annihilator of an element is the kernel of the left or the right multiplication, the two
-coinciding because the natural conjugation is an anti-automorphism of order two: off the cone both
+coinciding because the quaternion conjugation is an anti-automorphism of order two: off the cone both
 vanish, and on the cone each is a complex plane. The annihilators, the coincidence theorem, the
 operator and the reading on the remarkable subspaces are the companion article *Annihilators of the
 General Quaternionic Algebra*, below this article in this category.
@@ -306,7 +305,7 @@ squares vanish together, and the **non-pure** family, the complex multiples of t
 idempotents, on which the quaternionic square vanishes while the plain square is the nonzero
 multiple $2Q_t\tilde Q$. The left and the right annihilator of a zero divisor are each a complex
 plane containing the element, and both are $0$ for a unit; the two annihilators **coincide for
-every element**, because the natural conjugation is a $\mathbb{C}$-linear anti-automorphism of
+every element**, because the quaternion conjugation is a $\mathbb{C}$-linear anti-automorphism of
 order two that turns the one equation into the other. The zero-divisor set is the same set as for
 the plain product, a coincidence of the algebra proved in *Zero Divisors in the Algebraic Structures over the Biquaternion $\mathbb{C}$ Space*; what
 this product changes is the equation, the cone-shaped square, and the annihilator, which is

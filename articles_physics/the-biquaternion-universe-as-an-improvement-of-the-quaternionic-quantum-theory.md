@@ -176,7 +176,7 @@ with $e_t=1$, $\vec e_k^{2}=-e_t$ for $k=x,y,z$, and $\vec e_x\vec e_y=\vec e_z$
 - **The algebra is central simple over its centre.** The isomorphism $\mathbb{B}\cong M_{2}(\mathbb{C})$ is an isomorphism of complex algebras, so $\mathbb{B}$ is a full matrix algebra over $\mathbb{C}$. This is precisely the property that quaternionic scalars lack, and the whole of Part II turns on it.
 - **The units survive as elements and cease to be scalars.** The elements $\vec e_x,\vec e_y,\vec e_z$ remain, with $\vec e_k^{2}=-e_t$ and the rotation bracket, but they commute with the scalars $i$ and do not commute with one another. They are elements of the algebra over $\mathbb{C}$, not the field of scalars.
 
-**The conjugations and the sectors.** Three operations act on $\mathbb{B}$: the coefficientwise conjugation $\overline{\cdot}$, which conjugates the complex coordinates; the natural conjugation ${}^{\natural}$, which fixes $e_t$, negates $\vec e_x,\vec e_y,\vec e_z$ and is $\mathbb{C}$-linear; and the Hermitian conjugation ${}^{*}={}^{\natural}\circ\overline{\cdot}$, so that $Q^{*}_{\nu}=\varepsilon_{\nu}\overline{Q_{\nu}}$ with $\varepsilon=(1,-1,-1,-1)$. The Hermitian conjugation splits the algebra into its two fixed spaces,
+**The conjugations and the sectors.** Three operations act on $\mathbb{B}$: the coefficientwise conjugation $\overline{\cdot}$, which conjugates the complex coordinates; the quaternion conjugation ${}^{\natural}$, which fixes $e_t$, negates $\vec e_x,\vec e_y,\vec e_z$ and is $\mathbb{C}$-linear; and the Hermitian conjugation ${}^{*}={}^{\natural}\circ\overline{\cdot}$, so that $Q^{*}_{\nu}=\varepsilon_{\nu}\overline{Q_{\nu}}$ with $\varepsilon=(1,-1,-1,-1)$. The Hermitian conjugation splits the algebra into its two fixed spaces,
 $$
 \mathbb{B}=\mathbb{B}_{\Psi}\oplus\mathbb{B}_{\Phi},
 $$
@@ -391,7 +391,7 @@ Quaternionic quantum theory is the theory obtained by making the quaternion alge
 | $Z(\mathbb{B})=\mathbb{C}e_t$ | The centre; the scalar field of the biquaternion theory |
 | $e_t,\vec e_x,\vec e_y,\vec e_z$ | The basis, with $e_t=1$ and $\vec e_k^{2}=-e_t$ |
 | $i$ | The central scalar imaginary, commuting with every $\vec e_k$ |
-| $\overline{\cdot}$, ${}^{\natural}$, ${}^{*}$ | The coefficientwise conjugation, the natural conjugation, and the Hermitian conjugation ${}^{*}=\overline{\cdot}\circ{}^{\natural}$ |
+| $\overline{\cdot}$, ${}^{\natural}$, ${}^{*}$ | The coefficientwise conjugation, the quaternion conjugation, and the Hermitian conjugation ${}^{*}=\overline{\cdot}\circ{}^{\natural}$ |
 | $\mathbb{B}_{\Psi}$, $\mathbb{B}_{\Phi}$ | The Hermitian and anti-Hermitian sectors, the fixed spaces of ${}^{*}$ |
 | $\mathbb{B}_{\Phi}\cong\mathbb{R}^{3,1}$ | The material sector as Minkowski space |
 | $\mathsf{M}_2(e_t)=I_{2}$, $\mathsf{M}_2(\vec e_k)=-i\sigma_{k}$ | The matrix model of $\mathbb{B}$ onto the $2\times2$ complex matrices |

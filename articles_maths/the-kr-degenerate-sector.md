@@ -13,7 +13,7 @@ It is a real cone of real codimension one, smooth off its apex, and its partner 
 
 The sector is **not homogeneous algebraically**. It splits by the algebraic norm into the **doubly null set** $\mathcal K_{\mathrm d}=\mathcal K\cap\mathcal N$, which is the Peirce lines together with the origin, and the **isotropic units** $\mathcal K_{\mathrm u}=\mathcal K\setminus\mathcal K_{\mathrm d}$. That split is the trace of the algebraic partition, zero divisors against units, and it is the only refinement of the sector that the corpus uses.
 
-**Conventions.** The algebra is $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ on the basis $e_t,\vec e_x,\vec e_y,\vec e_z$, of complex dimension four and real dimension eight, with $\vec e_x\vec e_y=\vec e_z$ and $\vec e_k^2=-e_t$. An element is $\tilde Q=Q_te_t+\vec Q$ with $Q_\mu\in\mathbb{C}$. The natural conjugation is $\tilde Q^{\natural}=Q_t-\vec Q$, the Hermitian conjugation is $\tilde Q^{*}=\overline{Q_t}-\overline{\vec Q}$, and $\varepsilon=(1,-1,-1,-1)$. The forms are
+**Conventions.** The algebra is $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ on the basis $e_t,\vec e_x,\vec e_y,\vec e_z$, of complex dimension four and real dimension eight, with $\vec e_x\vec e_y=\vec e_z$ and $\vec e_k^2=-e_t$. An element is $\tilde Q=Q_te_t+\vec Q$ with $Q_\mu\in\mathbb{C}$. The quaternion conjugation is $\tilde Q^{\natural}=Q_t-\vec Q$, the Hermitian conjugation is $\tilde Q^{*}=\overline{Q_t}-\overline{\vec Q}$, and $\varepsilon=(1,-1,-1,-1)$. The forms are
 
 $$
 \langle\tilde Q_1,\tilde Q_2\rangle_{\natural*}=\sum_\mu\varepsilon_\mu Q_{1\mu}\overline{Q_{2\mu}},\qquad
