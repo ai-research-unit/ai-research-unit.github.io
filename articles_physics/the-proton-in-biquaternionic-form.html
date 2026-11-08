@@ -97,53 +97,49 @@ $$</p>
 $$</p>
 <p>In this section we record what is structural about placing it there and what is not.</p>
 <h3 id="the-one-sided-and-the-two-sided-equation">The One-Sided and the Two-Sided Equation</h3>
-<p>The article carries two Dirac equations, and they must not be read as one. They share the operator and the mass coefficient; they differ in how many times the operator is written.</p>
+<p>The article writes the Dirac equation once, as the pair of two first-order equations, and reads it in two ways: on a pair of elements and on one element. The gradients and the mass coefficient are the same in the two readings; they differ in where the two values are carried.</p>
 <p><strong>The one-sided equation</strong> is the pair displayed above, and it is the corpus's definition. Every derivative acts by left multiplication, and the mass is the off-diagonal pairing of the two values rather than a term inside either. The two values are read from the chirality basis operator and from nothing else; the label is not an element of the algebra, because the element that suggests itself, $i\vec e_z$, has square $+e_t$ and the split it gives is the index of the decomposition and not the chirality (<em>Special Element Conventions</em>, §<em>The Chirality Convention</em>, the paragraph <em>What the word does not name</em>).</p>
-<p><strong>The two-sided equation</strong> writes the same pair once, on the same element. The pair operator of <em>Operator and Calculus Conventions</em>, §<em>The Pair Operator and Its Symbol</em>, carries the L value by $\tilde{\nabla}^{\natural}$ and the R value by $\tilde{\nabla}$,</p>
+<p><strong>The reading on one element</strong> writes the same pair on the same element. The gradient $\tilde{\nabla}^{\natural}$ carries the L value to the R value and $\tilde{\nabla}$ carries the R value to the L value,</p>
 <p>$$
-\mathbb{D}\tilde{Ξ}_{\mathrm{sp}}=k_{m_p}\,\tilde{Ξ}_{\mathrm{sp}},
+\tilde{\nabla}\tilde{Ξ}_{\mathrm{sp},R}=k_{m_p}\,\tilde{Ξ}_{\mathrm{sp},L},
 \qquad
-\mathbb{D}^2=\Box
+\tilde{\nabla}^{\natural}\tilde{Ξ}_{\mathrm{sp},L}=k_{m_p}\,\tilde{Ξ}_{\mathrm{sp},R},
 $$</p>
-<p>on each value, so the pair reads</p>
-<p>$$
-\left(\mathbb{D}-k_{m_p}\right)\tilde{Ξ}_{\mathrm{sp}}=0 .
-$$</p>
-<p>Here $1/k_{m_p}=\hbar/(m_pc)$ is the mass length.</p>
-<p>The operator is a single object acting on the element: it is the pair written once, and it contains no matrix generator. What the one-operator reading adds is the charge and the bilinears, which are read on the element. The algebra carries the mass term and the mass shell, and the two readings are related by a change of the operator, not by a change of physics.</p>
+<p>and composing the two lines gives $(\Box-k_{m_p}^{2})\tilde{Ξ}_{\mathrm{sp},L}=0$ and $(\Box-k_{m_p}^{2})\tilde{Ξ}_{\mathrm{sp},R}=0$. Here $1/k_{m_p}=\hbar/(m_pc)$ is the mass length.</p>
+<p>The two lines act on the element and contain no matrix generator. What the reading on one element adds is the charge and the bilinears, which are read on the element. The algebra carries the mass term and the mass shell, and the two readings are related by a change of carrier, not by a change of physics.</p>
 <div class="table-scroll"><table>
 <thead>
 <tr>
 <th></th>
-<th>One-sided equation</th>
-<th>Two-sided equation</th>
+<th>On a pair of elements</th>
+<th>On one element</th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td>Equation</td>
 <td>$\tilde{\nabla}\tilde{Ξ}_{\mathrm{sp},R}=k_{m_p}\tilde{Ξ}_{\mathrm{sp},L}$, $\tilde{\nabla}^{\natural}\tilde{Ξ}_{\mathrm{sp},L}=k_{m_p}\tilde{Ξ}_{\mathrm{sp},R}$</td>
-<td>$(\mathbb{D}-k_{m_p})\tilde{Ξ}_{\mathrm{sp}}=0$</td>
+<td>the same two lines</td>
 </tr>
 <tr>
 <td>Field</td>
+<td>$(\tilde{Ξ}_{\mathrm{sp},L},\tilde{Ξ}_{\mathrm{sp},R})\in\mathbb{B}\oplus\mathbb{B}$, two elements</td>
 <td>$\tilde{Ξ}_{\mathrm{sp}}=\tilde{Ξ}_{\mathrm{sp},L}+\tilde{Ξ}_{\mathrm{sp},R}\in\mathbb{B}$, two values</td>
-<td>the same element, the same two values</td>
 </tr>
 <tr>
 <td>Mass</td>
-<td>the off-diagonal pairing of the two values</td>
+<td>the off-diagonal coupling of the two entries</td>
 <td>the same coefficient, off-diagonal in the two values</td>
 </tr>
 <tr>
 <td>Operator</td>
-<td>left multiplication by $\tilde{\nabla}$ and $\tilde{\nabla}^{\natural}$</td>
-<td>one operator, $\mathbb{D}^2=\Box$ on each value</td>
+<td>left multiplication by $\tilde{\nabla}$ and $\tilde{\nabla}^{\natural}$, one on each entry</td>
+<td>the same two, $\Box$ on each value after the two lines are composed</td>
 </tr>
 <tr>
 <td>Chirality</td>
+<td>the entry</td>
 <td>the value carried by each part</td>
-<td>the same values</td>
 </tr>
 <tr>
 <td>Use</td>
@@ -159,7 +155,7 @@ $$</p>
 \tilde{P}_{\Phi}\tilde{P}_{\Phi}^{\natural}=-m_p^2c^2,
 $$</p>
 <p>in the corpus's four-momentum convention $\tilde{P}_{\Phi}=iE/c\,e_t+\vec p$, where the product is $-E^2/c^2+|\vec p|^2$ and the relation is $E^2=|\vec p|^2c^2+m_p^2c^4$: the <em>form</em> of the mass shell is structural, the number in it is an import.</p>
-<p><strong>The free equation contains no charge.</strong> Neither the one-sided pair nor the two-sided equation $(\mathbb{D}-k_{m_p})\tilde{Ξ}_{\mathrm{sp}}=0$ contains a coupling. The mass length $1/k_{m_p}$ is the only parameter, and it is central.</p>
+<p><strong>The free equation contains no charge.</strong> Neither the one-sided pair nor its reading on one element contains a coupling. The mass length $1/k_{m_p}$ is the only parameter, and it is central.</p>
 <p>Charge enters only when the field is coupled to a four-potential, through minimal substitution. Two immediate consequences follow and they are the theme of the next section. First, the proton and the neutron satisfy the same free equation with the same operator; whatever distinguishes them is an inserted coupling and not a structure of the equation. Second, the framework's ability to state the proton's charge is the ability of its charge element to <em>carry</em> the value $+1$, not an ability to produce it.</p>
 <h2 id="the-charge-operator-on-the-field">The Charge Operator on the Field</h2>
 <p>The charge of the framework multiplies each value of the field by its own number,</p>
@@ -407,7 +403,7 @@ $$</p>
 <p>With the summed index raised the weights become signs, $\gamma^\mu=-\varepsilon_\mu\gamma_\mu$, and the same four sums read $-4I_4$, $+2\gamma_\alpha$, $-4\varepsilon_\alpha\delta_{\alpha\beta}I_4$ and $-2\gamma_\alpha\gamma_\beta\gamma_\rho$. Without weights the sum is $\sum_\mu\gamma_\mu\gamma_\mu=(1-1-1-1)I_4=-2I_4$: the metric has left the basis operators and entered the sum.</p>
 <p><strong>The display.</strong> Every array printed in this section is given twice: in the Peirce display first, labelled $\mathrm{pau}$, whose arrays are the ones the literature prints, and in the axis-free display after it, labelled $\mathrm{axf}$, which is the display of the body and of the corpus. The two are carried into one another by $L_{\mathrm{axf},e_\mu}=C_{\Pi}L_{\mathrm{pau},e_\mu}C_{\Pi}^{-1}$, and a conjugation by $C_{\Pi}$ changes no product, no anticommutator, no trace and no determinant, so every identity of the section holds in both. An array is a statement about one display; a basis operator named in the running text keeps the Peirce label, and its axis-free array is the conjugate. The label names the array and not the operator.</p>
 <h2 id="summary">Summary</h2>
-<p>The proton can be placed in the biquaternion framework as a massive spin-$\tfrac12$ Dirac field, written in the algebra as the one-sided pair $\tilde{\nabla}\tilde{Ξ}_{\mathrm{sp},R}=k_{m_p}\tilde{Ξ}_{\mathrm{sp},L}$, $\tilde{\nabla}^{\natural}\tilde{Ξ}_{\mathrm{sp},L}=k_{m_p}\tilde{Ξ}_{\mathrm{sp},R}$ and as the single equation $(\mathbb{D}-k_{m_p})\tilde{Ξ}_{\mathrm{sp}}=0$ with $\mathbb{D}^2=\Box$. The framework makes three structural statements about it. The spin-$\tfrac12$ content follows from the algebra's single class of simple carrier, on which the left multiplications act with weights $\pm\tfrac12$; the mass term is the linear pair of the two values of the field; and, being massive, the proton is forced by the mass selection rule $ϙ_L=ϙ_R$ to be vector-like, so the general charge element, which multiplies the L value by $ϙ_L$ and the R value by $ϙ_R$, collapses to the central element,</p>
+<p>The proton can be placed in the biquaternion framework as a massive spin-$\tfrac12$ Dirac field, written in the algebra as the one-sided pair $\tilde{\nabla}\tilde{Ξ}_{\mathrm{sp},R}=k_{m_p}\tilde{Ξ}_{\mathrm{sp},L}$, $\tilde{\nabla}^{\natural}\tilde{Ξ}_{\mathrm{sp},L}=k_{m_p}\tilde{Ξ}_{\mathrm{sp},R}$ and as the same pair on one element, where composing the two lines returns $\Box$ on each value. The framework makes three structural statements about it. The spin-$\tfrac12$ content follows from the algebra's single class of simple carrier, on which the left multiplications act with weights $\pm\tfrac12$; the mass term is the linear pair of the two values of the field; and, being massive, the proton is forced by the mass selection rule $ϙ_L=ϙ_R$ to be vector-like, so the general charge element, which multiplies the L value by $ϙ_L$ and the R value by $ϙ_R$, collapses to the central element,</p>
 <p>$$
 \boxed{\;Ϙ=ϙ_p\,e_t\;},
 $$</p>
@@ -489,8 +485,8 @@ $$</p>
 <td>Four-momentum; the mass shell is $\tilde{P}_{\Phi}\tilde{P}_{\Phi}^{\natural}=-m_p^2c^2$, that is $E^2=\lvert\vec p\rvert^2c^2+m_p^2c^4$</td>
 </tr>
 <tr>
-<td>$\mathbb{D}$, $\mathbb{D}^2=\Box$</td>
-<td>The pair operator of the two-sided equation $(\mathbb{D}-k_{m_p})\tilde{Ξ}_{\mathrm{sp}}=0$; it carries the L value by $\tilde\nabla^{\natural}$ and the R value by $\tilde\nabla$</td>
+<td>$\tilde\nabla$, $\tilde\nabla^{\natural}$</td>
+<td>The two gradients of the pair; $\tilde\nabla^{\natural}$ carries the L value to the R and $\tilde\nabla$ the R to the L, and each line composed with the other returns $\Box$</td>
 </tr>
 <tr>
 <td>$\Gamma=-iR_{\vec e_z}$</td>
@@ -536,7 +532,7 @@ $$</p>
 <li><a href="angular-momentum-and-spin-in-biquaternionic-form.html">Angular Momentum and Spin in Biquaternionic Form</a> — the spin operators $\tilde{S}_{\Psi,\mu}=\frac{m\,c}{2\,k_m} i\vec e_\mu$ and the state structure used implicitly here.</li>
 <li><a href="the-neutrino-and-majorana-fermions-in-biquaternionic-form.html">The Neutrino and Majorana Fermions in Biquaternionic Form</a> — the real structure and the Majorana-versus-Dirac interpretation that bears on charge conservation.</li>
 <li><a href="the-material-sector-four-vectors-interval-and-lorentz-action.html">The Material Sector: Four-Vectors, Interval and Lorentz Action</a> and <a href="the-informational-sector-states-observables-and-probability.html">The Informational Sector: States, Observables and Probability</a> — the two sectors, their bases and the normalised Hermitian form, with its trace reading, inherited unchanged.</li>
-<li><a href="operator-and-calculus-conventions.html">Operator and Calculus Conventions</a> — the pair operator $\mathbb{D}$, the square $\mathbb{D}^2=\Box$, and the one-operator reading of the massive equation, taken over unchanged.</li>
+<li><a href="operator-and-calculus-conventions.html">Operator and Calculus Conventions</a> — the two first-order equations, the square on each line, and the reading of the massive equation on one element, taken over unchanged.</li>
 <li><a href="introduction-to-the-biquaternion-universe.html">Introduction to the Biquaternion Universe</a> — the algebra, the conjugations and the sector split in which the whole construction is set.</li>
 <li>C. Lanczos, "Die tensoranalytischen Beziehungen der Diracschen Gleichung," <em>Zeitschrift für Physik</em> <strong>57</strong> (1929) 447–473, 474–483, 484–493 (arXiv:physics/0508002, physics/0508012, physics/0508013), for the coupled biquaternion system whose doubling is the isospin of the section <em>The Isospin Partner, and Why It Is Not in This Equation</em>.</li>
 <li>F. Gürsey, "Applications of Quaternions to Field Equations," PhD thesis, University of London, 1950, and "Relation of charge independence and baryon conservation to Pauli's transformation," <em>Nuovo Cimento</em> <strong>7</strong> (1958) 411–415, for the proton and neutron as the two superpositions of Lanczos's doubled system.</li>

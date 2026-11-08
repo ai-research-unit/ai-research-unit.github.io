@@ -70,217 +70,332 @@
       <div class="article-body">
         <h1 id="the-transposition-of-the-two-sides"><strong>The Transposition of the Two Sides</strong></h1>
 <h2 id="introduction">Introduction</h2>
-<p><strong>The fact.</strong> A right multiplication is a transposed left multiplication, at the price of one relabelling. In the axis-free frame the two halves of that sentence are</p>
+<p>Every element of the biquaternion algebra acts on the algebra in two ways, by multiplication on the left and by multiplication on the right, and for a general element the two actions are different operators. They are not, however, independent. The subject of this article is the pair of identities that converts one action into the other:</p>
 <p>$$
-\boxed{\;R_{\mathrm{axf}}(\tilde Q)=\mathsf D\,L_{\mathrm{axf}}(\tilde Q)^{\mathsf T}\mathsf D\;},\qquad
-L_{\mathrm{axf}}(\tilde Q)^{\mathsf T}=L_{\mathrm{axf}}(\tilde Q^{\natural}),
+L_{\tilde Q}=\natural\,R_{\natural(\tilde Q)}\,\natural,
+\qquad\qquad
+R_{\tilde Q}=\natural\,L_{\natural(\tilde Q)}\,\natural .
 $$</p>
-<p>with $\mathsf D=\operatorname{diag}(1,-1,-1,-1)$ the switch of the frame, the real sign matrix that also carries the left family onto the right one. The second identity says what a transpose does in this frame: it turns a left matrix into another left matrix, the one of the quaternion conjugate. The first says what must be added to reach the other side, namely one conjugation by the switch.</p>
-<p><strong>Why the second identity is the interesting half.</strong> Transposition alone never leaves the left. It gives another left multiplication, so $R_{\mathrm{axf}}(\tilde Q)=L_{\mathrm{axf}}(\tilde Q)^{\mathsf T}$ holds only for central $\tilde Q$: the two arrays differ by a sign on the six entries with one vector index, and equality forces the three vector coefficients to vanish. The right side is reached only when the transposed array is read through the sign matrix of the frame, and that sign matrix is the object the corpus calls the switch. The transposition of the two sides is a transpose together with a change of reading, and neither half can be dropped.</p>
-<p><strong>What the article proves.</strong> The identity is not an accident of one basis. At the level of operators it reads</p>
+<p>In one sentence: every right multiplication is a conjugated left multiplication, and every left multiplication is a conjugated right multiplication. The second display says that a right multiplication is a left multiplication, conjugated on both sides by the quaternion conjugation: a reader who is given an equation written with right multiplications may rewrite it with left multiplications only, at the price of two conjugations for each converted operator and of the passage of the parameter through $\natural$. The first display says the same thing in the other direction, for a left multiplication replaced by a right one. The parameter is not free in either conversion. It is carried, and the carried value is $\natural(\tilde Q)$ and not $\tilde Q$.</p>
+<p>The article proves the pair before it uses it. The two families and their laws come first, because every later statement is a statement about them. The quaternion conjugation comes next, with a proof that it reverses products, since that single property is the whole mechanism. The two displays are then proved one at a time, each by computing the composite on an arbitrary element, so that the reader sees where the carried parameter comes from rather than being told what it is. Once both are proved, they are recognised as two halves of one involution of the operator algebra, and that recognition is what makes the conversion a tool: the involution preserves products, so an equation may be transformed on both sides and remains equivalent.</p>
+<p>The remaining sections put the tool to work. The rewriting rules are collected, a couple of one-sided operators is brought to a single side, and the law of the right family is re-derived from the law of the left family by the conversion alone, which shows the two laws are one law. Then comes the list of displays that resemble the pair and are false, with the exact size of their failure, because a conversion rule that is used carelessly is worse than none. Finally the mechanism is isolated, and the sense in which the operation deserves the name of a transposition is settled against the genuine transpose of the plain bilinear form.</p>
+<p>No step uses a basis, a matrix, a topology, a distance or a limit. Every object is an operator on the algebra, and every proof is a computation on an arbitrary element.</p>
+<h2 id="the-two-families">The Two Families</h2>
+<p><strong>Definition.</strong> For $\tilde Q$ in $\mathbb{B}$, the <strong>left multiplication</strong> and the <strong>right multiplication</strong> by $\tilde Q$ are the operators</p>
 <p>$$
-R_{\tilde Q}=\natural\,L_{\tilde Q^{\natural}}\,\natural,
+L_{\tilde Q}(X)=\tilde Q X,
+\qquad\qquad
+R_{\tilde Q}(X)=X\tilde Q,
 $$</p>
-<p>which contains no matrix and no frame: the quaternion conjugation $\natural$ acts on the carrier, and the right multiplication is a left multiplication by the conjugate parameter, conjugated by that same $\natural$. The mechanism is one sign count, and the article states it in four steps: the two displays differ on six entries, the transpose turns all twelve off-diagonal entries, the switch turns six of them back, and the six that stay turned are the pairs of distinct vector units, which are the pairs that anticommute.</p>
-<p><strong>Boundaries.</strong> The two families and their laws are <em>Operators Acting on One Side</em>, their products <em>Operators Acting on Two Sides</em>, the ambient space <em>The Endomorphisms of the Biquaternion Algebra</em>. The entry-by-entry computation of the stitch in the axis-free frame is <em>$M_4(\mathbb{C})$ Axis-Free Representation : Operators</em>, §<em>The Stitch Between the Copies</em>; this article states the identity as a theorem about operators and says why it holds. The conjugations are <em>The Group of Involutions</em>, the forms <em>The Four Forms and the Four Algebraic Norms over the Biquaternion Algebra</em>. Everything below is written in the coefficient frame $e_t,\vec e_x,\vec e_y,\vec e_z$, and no step uses a topology.</p>
-<h2 id="the-two-displays-differ-on-six-entries">The Two Displays Differ on Six Entries</h2>
-<p><strong>The two arrays.</strong> For $\tilde Q=Q_te_t+Q_x\vec e_x+Q_y\vec e_y+Q_z\vec e_z$,</p>
+<p>defined for every $X$ in $\mathbb{B}$. Both are $\mathbb{C}$-linear, because the product of the algebra is bilinear over $\mathbb{C}$. The element $\tilde Q$ is called the <strong>parameter</strong> of the operator.</p>
+<p><strong>Proposition (the three laws).</strong> For all elements,</p>
 <p>$$
-L_{\mathrm{axf}}(\tilde Q)=
-\begin{pmatrix}
-Q_t&-Q_x&-Q_y&-Q_z\\
-Q_x&Q_t&-Q_z&Q_y\\
-Q_y&Q_z&Q_t&-Q_x\\
-Q_z&-Q_y&Q_x&Q_t
-\end{pmatrix},\qquad
-R_{\mathrm{axf}}(\tilde Q)=
-\begin{pmatrix}
-Q_t&-Q_x&-Q_y&-Q_z\\
-Q_x&Q_t&Q_z&-Q_y\\
-Q_y&-Q_z&Q_t&Q_x\\
-Q_z&Q_y&-Q_x&Q_t
-\end{pmatrix}.
-$$</p>
-<p><strong>The comparison at one element.</strong> At $\tilde Q=e_t+2\vec e_x+3\vec e_y+4\vec e_z$ the two arrays are</p>
-<p>$$
-L=
-\begin{pmatrix}
-1&-2&-3&-4\\
-2&1&-4&3\\
-3&4&1&-2\\
-4&-3&2&1
-\end{pmatrix},\qquad
-R=
-\begin{pmatrix}
-1&-2&-3&-4\\
-2&1&4&-3\\
-3&-4&1&2\\
-4&3&-2&1
-\end{pmatrix}.
-$$</p>
-<p>They agree on the diagonal and in the first row and the first column, and they disagree on the six entries whose two indices are both vector: the pairs $(x,y)$, $(x,z)$ and $(y,z)$, each in its two orders.</p>
-<p><strong>The rule, and its reason.</strong> The entry $(\mu,\nu)$ of the left display is the $\mu$-th coordinate of $\tilde Qe_\nu$, and the entry $(\mu,\nu)$ of the right display is the $\mu$-th coordinate of $e_\nu\tilde Q$. The two agree when $\mu=\nu$, when $\nu=t$ and when $\mu=t$, and they are opposite in the remaining six places. The reason is the multiplication table. The row $t$ of the table is the identity, so the coordinate $t$ of a product is read without any reordering of the factors; the row $k$ carries the two remaining vector coordinates with opposite signs, so a coordinate $k$ changes sign exactly when the second factor is a vector unit other than $\vec e_k$. The six signs by which the displays differ are therefore the non-commutativity of the algebra and nothing else, and in a commutative algebra the two displays would coincide.</p>
-<p><strong>What the six signs are not.</strong> They are not a defect of the frame. A change of basis conjugates both arrays at once, so it preserves the fact that they differ, and it moves the difference around. The six entries that carry it are named by the multiplication table and not by the basis.</p>
-<h2 id="the-transpose-of-a-left-matrix">The Transpose of a Left Matrix</h2>
-<p><strong>The observation.</strong> The left display carries $Q_t$ on the diagonal and is skew off it: $L_{\mu\nu}=-L_{\nu\mu}$ whenever $\mu\ne\nu$. The transpose therefore has the diagonal of the display and the negative of the display everywhere else, which is one line:</p>
-<p>$$
-L_{\mathrm{axf}}(\tilde Q)^{\mathsf T}=2Q_t\,\mathrm I_4-L_{\mathrm{axf}}(\tilde Q).
-$$</p>
-<p><strong>The dictionary.</strong> The map $\tilde Q\mapsto 2Q_te_t-\tilde Q$ is the quaternion conjugation, which keeps the scalar coefficient and negates the three vector coefficients, and the assignment $\tilde Q\mapsto L_{\mathrm{axf}}(\tilde Q)$ is linear. Applying the conjugation to the display is the same as negating the three vector coefficients in it, which is the transpose:</p>
-<p>$$
-L_{\mathrm{axf}}(\tilde Q)^{\mathsf T}=L_{\mathrm{axf}}(\tilde Q^{\natural}).
-$$</p>
-<p>The transpose of a left matrix is a left matrix. It is the left matrix of the quaternion conjugate, and it is not the right matrix: the right display agrees with the transpose on the diagonal and on the six entries with two vector indices, and differs from it by a sign on the six with one vector index.</p>
-<p><strong>The reading.</strong> Transposition exchanges the two indices of every entry. In this frame the two indices play symmetric roles in the scalar part and antisymmetric roles in the vector part, and the transpose reads exactly that antisymmetry. It is not a change of side but a change of element, and the element it produces is the quaternion conjugate.</p>
-<p><strong>The same shape in the Peirce frame.</strong> There the left matrix is the tensor product $\mathrm I_2\otimes\mathsf M_2(\tilde Q)$, so its transpose is $\mathrm I_2\otimes\mathsf M_2(\tilde Q)^{\mathsf T}$, a left matrix again. It is the left matrix of the element whose $2\times2$ image is $\mathsf M_2(\tilde Q)^{\mathsf T}$, and that element is the exchange $S\tilde Q$ of <em>Operators Acting on One Side</em>, §<em>The Flip of the Two Mixed Units</em>. In both frames the transpose of a left matrix is a left matrix; what differs from frame to frame is the element the transpose implements, $\natural$ in the axis-free frame and $S$ in the Peirce frame.</p>
-<h2 id="the-switch-restores-the-six-entries">The Switch Restores the Six Entries</h2>
-<p><strong>Theorem.</strong> In the axis-free frame, for every $\tilde Q\in\mathbb{B}$,</p>
-<p>$$
-R_{\mathrm{axf}}(\tilde Q)=\mathsf D\,L_{\mathrm{axf}}(\tilde Q)^{\mathsf T}\,\mathsf D,
+L_{\tilde Q}L_{\tilde P}=L_{\tilde Q\tilde P},
 \qquad
-\mathsf D=\operatorname{diag}(1,-1,-1,-1).
-$$</p>
-<p><em>Proof.</em> Write $s_t=1$ and $s_x=s_y=s_z=-1$, so that $\mathsf D=\operatorname{diag}(s_\mu)$ and $\tilde Q^{\natural}$ carries the coefficients $s_\mu Q_\mu$. The product $\mathsf D M\mathsf D$ multiplies the entry $(\mu,\nu)$ of a matrix $M$ by $s_\mu s_\nu$, which is $-1$ when exactly one of the two indices is $t$ and $+1$ otherwise.</p>
-<p>By the preceding section the transpose negates the twelve off-diagonal entries of the display and keeps the four diagonal ones. Conjugating by $\mathsf D$ then negates the six entries that carry exactly one index $t$, which are the six entries of the first row and the first column off the diagonal, and keeps the diagonal and the six entries with two vector indices. The two steps give an array that agrees with the display on the diagonal and on the six entries with one scalar index, and is the negative of the display on the six with two vector indices. That is the right display, by the rule of §<em>The Two Displays Differ on Six Entries</em>.</p>
-<p><strong>Why the switch stands on both sides.</strong> The array $\mathsf D L_{\mathrm{axf}}(\tilde Q)^{\mathsf T}$ alone is not a right matrix: its first row is $(Q_t,Q_x,Q_y,Q_z)$ where the right display has $(Q_t,-Q_x,-Q_y,-Q_z)$, because one factor turns the entries of one index only. The switch is applied through both indices of the array because the two indices are the two slots of the operator, and the sign that separates the two families depends on the pair.</p>
-<p><strong>Both directions.</strong> The identity is symmetric in the two sides, since $\mathsf D^2=\mathrm I_4$:</p>
-<p>$$
-R_{\mathrm{axf}}(\tilde Q)=\mathsf D\,L_{\mathrm{axf}}(\tilde Q)^{\mathsf T}\mathsf D,
+R_{\tilde Q}R_{\tilde P}=R_{\tilde P\tilde Q},
 \qquad
-L_{\mathrm{axf}}(\tilde Q)=\mathsf D\,R_{\mathrm{axf}}(\tilde Q)^{\mathsf T}\mathsf D .
+L_{\tilde Q}R_{\tilde P}=R_{\tilde P}L_{\tilde Q}.
 $$</p>
-<p>Each family is the transposed image of the other. Both forms hold at residual $0$ on $100$ random elements.</p>
-<h2 id="the-anti-automorphism-behind-the-transpose">The Anti-Automorphism Behind the Transpose</h2>
-<p><strong>Definition.</strong> An <strong>anti-automorphism</strong> of $\mathbb{B}$ is an additive bijection $\tau$ with</p>
+<p><em>Proof.</em> Let $X$ be arbitrary. The only ingredient is the associativity of the product.</p>
 <p>$$
-\tau(xy)=\tau(y)\tau(x)\qquad\text{for all }x,y\in\mathbb{B},
+L_{\tilde Q}\bigl(L_{\tilde P}(X)\bigr)=\tilde Q\bigl(\tilde PX\bigr)=\bigl(\tilde Q\tilde P\bigr)X=L_{\tilde Q\tilde P}(X),
+$$
+$$
+R_{\tilde Q}\bigl(R_{\tilde P}(X)\bigr)=\bigl(X\tilde P\bigr)\tilde Q=X\bigl(\tilde P\tilde Q\bigr)=R_{\tilde P\tilde Q}(X),
+$$
+$$
+L_{\tilde Q}\bigl(R_{\tilde P}(X)\bigr)=\tilde QX\tilde P=R_{\tilde P}\bigl(L_{\tilde Q}(X)\bigr).
 $$</p>
-<p>which is either $\mathbb{C}$-linear, $\tau(\lambda x)=\lambda\tau(x)$, or $\mathbb{C}$-antilinear, $\tau(\lambda x)=\bar\lambda\,\tau(x)$, for central $\lambda$. The two grades are kept apart, because the operators of the corpus are complex-linear and an antilinear map does not act on them. The inverse of an anti-automorphism is an anti-automorphism of the same grade. Order two is not required anywhere below: the identities use $\tau$ and $\tau^{-1}$ in that order and never $\tau$ alone.</p>
-<p><strong>Theorem ($\natural$ is a complex-linear anti-automorphism).</strong> The quaternion conjugation, $\natural(e_t)=e_t$ and $\natural(\vec e_k)=-\vec e_k$, satisfies $\natural(xy)=\natural(y)\natural(x)$ and is $\mathbb{C}$-linear.</p>
-<p><em>Proof.</em> Three cases on the basis. A product with $e_t$ is unchanged by the exchange of the order, and $\natural$ fixes $e_t$. A square $\vec e_k\vec e_k=-e_t$ is scalar, and the two signs cancel, $\natural(\vec e_k\vec e_k)=-e_t=\natural(\vec e_k)\natural(\vec e_k)$. For distinct $k\ne l$ the product $\vec e_k\vec e_l$ is $\pm$ the third unit, so $\natural(\vec e_k\vec e_l)=\mp\vec e_m$, while $\natural(\vec e_l)\natural(\vec e_k)=(-\vec e_l)(-\vec e_k)=-\vec e_k\vec e_l=\mp\vec e_m$. The two sides agree in the three cases, and both are additive and $\mathbb{C}$-linear on the coordinates.</p>
-<p><strong>Theorem ($\ast$ is an antilinear anti-automorphism).</strong> The Hermitian conjugation $\ast=\natural\circ\bar{\cdot}$ satisfies $\ast(xy)=\ast(y)\ast(x)$ and $\ast(\lambda x)=\bar\lambda\,\ast(x)$.</p>
-<p><em>Proof.</em> $\ast(xy)=\natural(\bar x\bar y)=\natural(\bar y)\natural(\bar x)=\ast(y)\ast(x)$, the middle equality being the preceding theorem applied to the two conjugated factors.</p>
-<p><strong>Theorem (the coefficient conjugation is not one).</strong> The map $\bar{\cdot}$ that conjugates each of the four coefficients is a $\mathbb{C}$-antilinear <strong>automorphism</strong>, $\overline{xy}=\bar x\,\bar y$.</p>
-<p><em>Proof.</em> The structure constants in the coefficient frame are $0$ and $\pm1$, all real, so conjugating the coordinates of a product conjugates the coordinates of the two factors and nothing else.</p>
-<h3 id="the-three-maps-of-the-coefficient-frame">The Three Maps of the Coefficient Frame</h3>
-<div class="table-scroll"><table>
-<thead>
-<tr>
-<th>map</th>
-<th>linearity</th>
-<th>the product</th>
-<th>fixed space</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>$\natural$</td>
-<td>$\mathbb{C}$-linear</td>
-<td>reversed</td>
-<td>$\mathbb{C}e_t$</td>
-</tr>
-<tr>
-<td>$\ast=\natural\bar{\cdot}$</td>
-<td>$\mathbb{C}$-antilinear</td>
-<td>reversed</td>
-<td>$\mathbb{B}_{\Psi}$</td>
-</tr>
-<tr>
-<td>$\bar{\cdot}$</td>
-<td>$\mathbb{C}$-antilinear</td>
-<td><strong>preserved</strong></td>
-<td>—</td>
-</tr>
-</tbody>
-</table></div>
-<p><strong>The trap.</strong> The coefficient conjugation is the standing error of the subject. It looks like a change of side, because it changes every coefficient, and it exchanges nothing: an identity built on it fails for every noncentral parameter. The mistake is structural and not numerical. The transport of a parameter needs an anti-automorphism, the coefficient conjugation is an automorphism, and the sign it does not supply is the sign of the three vector units, which is the sign that reverses the products.</p>
-<h3 id="all-the-complex-linear-ones">All the Complex-Linear Ones</h3>
-<p><strong>Proposition.</strong> For every invertible $\tilde U$ the map $\tau_{\tilde U}(\tilde X)=\tilde U\natural(\tilde X)\tilde U^{-1}$ is a complex-linear anti-automorphism, and every complex-linear anti-automorphism arises this way.</p>
-<p><em>Proof.</em> The composite of the anti-automorphism $\natural$ with two inner automorphisms is an anti-automorphism, and it is complex-linear. Conversely, the composite of two anti-automorphisms is an automorphism, every $\mathbb{C}$-linear automorphism of a central simple algebra is inner (<em>Biquaternion Automorphisms and Derivations</em>, §<em>Standing Facts: Simplicity and the Centre</em>), and $\natural$ is one anti-automorphism.</p>
-<p><strong>The order is not order two.</strong> For a general $\tilde U$ the map $\tau_{\tilde U}$ is not an involution: $\tau_{\tilde U}^2$ is the inner automorphism by $\tilde U\natural(\tilde U)$, which is the identity only when that product is central. The identity of the next section needs no more than an anti-automorphism, and it is written with $\tau^{-1}$ for that reason.</p>
-<h2 id="conjugation-by-an-anti-automorphism">Conjugation by an Anti-Automorphism</h2>
-<p><strong>Theorem (the two families are conjugate).</strong> For an anti-automorphism $\tau$ and every $\tilde Q$,</p>
+<p>Since $X$ was arbitrary, the operators agree.</p>
+<p>The second law says that the map $\tilde Q\mapsto R_{\tilde Q}$ exchanges the order of the parameters, and such a map is called an <strong>anti-representation</strong>; the first says that $\tilde Q\mapsto L_{\tilde Q}$ preserves it. The third says that the two families commute element by element, so a product of one operator from each may be written with the factors in either order.</p>
+<p><strong>Proposition (the unit reads the parameter).</strong> Let $e_t$ be the unit of the algebra. Then</p>
 <p>$$
-\tau L_{\tilde Q}\tau^{-1}=R_{\tau(\tilde Q)},\qquad
-\tau R_{\tilde Q}\tau^{-1}=L_{\tau(\tilde Q)} .
+L_{\tilde Q}(e_t)=\tilde Q=R_{\tilde Q}(e_t),
 $$</p>
-<p><em>Proof.</em> $\tau\bigl(L_{\tilde Q}\tau^{-1}\tilde Y\bigr)=\tau\bigl(\tilde Q\,\tau^{-1}\tilde Y\bigr)=\tau(\tau^{-1}\tilde Y)\,\tau(\tilde Q)=\tilde Y\,\tau(\tilde Q)=R_{\tau(\tilde Q)}\tilde Y$ for every $\tilde Y$, and $\tau$ is a bijection. The second identity is the same computation with the two factors exchanged, and $\tau^{-1}$ is an anti-automorphism of the same grade.</p>
-<p><strong>Corollary (the two images are exchanged).</strong> The map $T\mapsto\tau T\tau^{-1}$ on $\operatorname{End}_{\mathbb{C}}(\mathbb{B})$ is multiplicative and exchanges the two images, $\tau L(\mathbb{B})\tau^{-1}=R(\mathbb{B})$ and $\tau R(\mathbb{B})\tau^{-1}=L(\mathbb{B})$. It is $\mathbb{C}$-linear in $T$ when $\tau$ is, and conjugate-linear when $\tau$ is antilinear.</p>
-<p><strong>Corollary (a two-sided operator stays two-sided).</strong> $\tau\bigl(L_{\tilde Q_1}R_{\tilde Q_2}\bigr)\tau^{-1}=L_{\tau(\tilde Q_2)}R_{\tau(\tilde Q_1)}$. The sides exchange and the parameters are carried. The corpus records the case $\tau=\natural$ in one line, $\natural L_{\tilde Q}\natural=R_{\tilde Q^{\natural}}$ (<em>Operator Chirality on the Biquaternion Algebra</em>, §<em>Conjugation Exchanges the Sides</em>).</p>
-<h3 id="three-maps-that-are-not-this-one">Three Maps That Are Not This One</h3>
-<p><strong>The three.</strong> Three maps are easy to confuse with this one, and each answers a different question.</p>
+<p>and consequently $L_{\tilde Q}=L_{\tilde P}$ exactly when $\tilde Q=\tilde P$, and $R_{\tilde Q}=R_{\tilde P}$ exactly when $\tilde Q=\tilde P$.</p>
+<p><em>Proof.</em> Multiplying by the unit changes nothing. If two such operators are equal, their values at $e_t$ are equal, which gives the equality of the parameters; if the parameters are equal, the operators are equal by definition.</p>
+<p>This proposition is used twice in every section that follows. Applied to an identity between operators it turns that identity into an identity between parameters, because the unit evaluates a parameter directly. Applied in the other direction it says that a parameter written in a display is written uniquely, so it cannot be changed in silence.</p>
+<p><strong>Proposition (a left multiplication is a right one only at the centre).</strong> $L_{\tilde Q}=R_{\tilde Q}$ exactly when $\tilde Q$ commutes with every element, and those elements are the scalar multiples of the unit.</p>
+<p><em>Proof.</em> The equality says $\tilde QX=X\tilde Q$ for every $X$, which is the definition of commuting with everything. For the second claim, let $\tilde Q=q_te_t+q_x\vec e_x+q_y\vec e_y+q_z\vec e_z$ commute with every element; it is enough to test the three vector units, because the scalar unit gives nothing. From $\tilde Q\vec e_x=\vec e_x\tilde Q$ the two sides are</p>
+<p>$$
+q_te_t\vec e_x+q_x\vec e_x^2+q_y\vec e_y\vec e_x+q_z\vec e_z\vec e_x
+=q_te_t\vec e_x+q_x\vec e_x^2+q_y\vec e_x\vec e_y+q_z\vec e_x\vec e_z,
+$$</p>
+<p>and cancelling the common terms leaves $q_y\bigl(\vec e_y\vec e_x-\vec e_x\vec e_y\bigr)+q_z\bigl(\vec e_z\vec e_x-\vec e_x\vec e_z\bigr)=0$. Distinct vector units anticommute, so the left side is $-2q_y\vec e_z+2q_z\vec e_y$, which vanishes only for $q_y=q_z=0$. The same test with $\vec e_y$ gives $q_x=0$, hence $\tilde Q=q_te_t$.</p>
+<p>So the two families meet only over the centre, and there both are the multiplication by a scalar. Everywhere else they are different operators, and the pair of the introduction is the exact measure of how they differ.</p>
+<h2 id="the-quaternion-conjugation">The Quaternion Conjugation</h2>
+<p><strong>Definition.</strong> The <strong>quaternion conjugation</strong> is the map</p>
+<p>$$
+\natural\bigl(q_te_t+q_x\vec e_x+q_y\vec e_y+q_z\vec e_z\bigr)
+=q_te_t-q_x\vec e_x-q_y\vec e_y-q_z\vec e_z .
+$$</p>
+<p>It fixes the scalar part and negates the vector part, and it is $\mathbb{C}$-linear by construction, the coefficients being untouched.</p>
+<p><strong>Proposition (the two properties).</strong></p>
+<ol>
+<li>$\natural$ is an involution: $\natural\bigl(\natural(X)\bigr)=X$ for every $X$.</li>
+<li>$\natural$ reverses every product: $\natural(XY)=\natural(Y)\natural(X)$ for all $X,Y$.</li>
+</ol>
+<p><em>Proof.</em> The first property is immediate, negating the vector part twice restoring it. For the second, put $\varepsilon_t=1$ and $\varepsilon_x=\varepsilon_y=\varepsilon_z=-1$, so that $\natural(e_\mu)=\varepsilon_\mu e_\mu$ on the four units. Both sides of the identity to be proved are $\mathbb{C}$-bilinear in the pair $(X,Y)$, so it is enough to check the products of two units, and there are three shapes.</p>
 <ul>
-<li>The <strong>matrix transpose</strong> acts on arrays and not on operators. It depends on the frame, and the entry $M^{\mathsf T}$ has the two indices of $M$ exchanged.</li>
-<li>The <strong>associate</strong> $F^{\approx}$ of <em>Adjoint Pair of $L$ and $R$ Operators</em> is an adjoint, defined by the plain bilinear form, and it exchanges the families while keeping the parameter: $(L_{\tilde Q})^{\approx}=R_{\tilde Q}$.</li>
-<li>The <strong>swap</strong> $\sigma$ of <em>Operator Chirality on the Biquaternion Algebra</em> exchanges the two slots and keeps the parameter, $\sigma(L_aR_b)=L_bR_a$, and it is not inner.</li>
+<li>If one factor is the unit, say $e_te_\nu=e_\nu$, then $\natural(e_te_\nu)=\varepsilon_\nu e_\nu$ while $\natural(e_\nu)\natural(e_t)=\varepsilon_\nu e_\nu e_t=\varepsilon_\nu e_\nu$; the two agree, and exchanging the factors gives the same.</li>
+<li>If the two factors are the same vector unit, $e_je_j=-e_t$, then $\natural(e_je_j)=-e_t$ while $\natural(e_j)\natural(e_j)=\vec e_j\vec e_j=e_je_j=-e_t$; the two agree.</li>
+<li>If the two factors are distinct vector units, $e_je_k=\epsilon e_l$ with $\epsilon=\pm1$ and $l$ the third vector index, then $\natural(e_je_k)=\epsilon\,\varepsilon_l e_l=-\epsilon e_l$ because $l$ is a vector index; and $\natural(e_k)\natural(e_j)=\vec e_k\vec e_j=e_ke_j=-\epsilon e_l$ because distinct vector units anticommute. The two agree.</li>
 </ul>
-<p><strong>The fourth, which is this one.</strong> Conjugation by an anti-automorphism reverses the order of the products and carries the parameter, $\tau L_{\tilde Q}\tau^{-1}=R_{\tau(\tilde Q)}$. The associate and the swap describe where an operator sits, and they leave the parameter alone; the conjugation moves the parameter. It is the one the display realises, because a transpose moves the entries of an array and not the operator they display.</p>
-<p><strong>The transposition, with no matrix.</strong> Take $\tau=\natural$. The matrix of $\natural$ in the axis-free frame is $\mathsf D$, so the matrix of $\natural L_{\tilde Q}\natural$ is $\mathsf D\,L_{\mathrm{axf}}(\tilde Q)\,\mathsf D$. The theorem therefore reads</p>
+<p>The identity holds on the units and both sides are bilinear, so it holds on all pairs.</p>
+<p>The two properties together say that $\natural$ is a bijection with $\natural^{-1}=\natural$, and that it reverses the order of every product. Reversal is worth restating in words, because everything later is an application of it: it moves the factor that stood on the left to the right and the factor that stood on the right to the left, and it applies the map to each of them on the way.</p>
+<h2 id="the-first-identity">The First Identity</h2>
+<p><strong>Theorem.</strong> For every element $\tilde Q$ of the algebra,</p>
 <p>$$
-\natural\,L_{\tilde Q}\,\natural=R_{\tilde Q^{\natural}},
-\qquad\text{that is}\qquad
-\mathsf D\,L_{\mathrm{axf}}(\tilde Q)\,\mathsf D=R_{\mathrm{axf}}(\tilde Q^{\natural}),
+\natural\,L_{\tilde Q}\,\natural=R_{\natural(\tilde Q)} .
 $$</p>
-<p>and with $\tilde Q$ replaced by $\tilde Q^{\natural}$ it is the boxed identity of the introduction, because $L_{\mathrm{axf}}(\tilde Q^{\natural})=L_{\mathrm{axf}}(\tilde Q)^{\mathsf T}$. The matrix identity and the operator identity are one statement. The transposition of the two sides is a conjugation by the quaternion conjugation, and the switch is the display of that conjugation.</p>
-<h2 id="every-operator-is-a-left-multiplication">Every Operator Is a Left Multiplication</h2>
-<p><strong>Theorem.</strong> $R_{\tilde Q}=\natural\,L_{\natural(\tilde Q)}\,\natural$, and therefore</p>
+<p><em>Proof.</em> The composite is written with $\natural$ on both sides of the left multiplication because conjugating an operator $F$ means forming $\natural F\natural^{-1}$, and here $\natural^{-1}=\natural$. So the composite acts in three steps: conjugate the input, multiply the result by $\tilde Q$ on the left, conjugate again. Let $X$ be an arbitrary element and read the composite from the inside out:</p>
 <p>$$
-\boxed{\;L_{\tilde Q_1}R_{\tilde Q_2}=L_{\tilde Q_1}\,\natural\,L_{\natural(\tilde Q_2)}\,\natural\;}.
+\bigl(\natural L_{\tilde Q}\natural\bigr)(X)
+=\natural\Bigl(L_{\tilde Q}\bigl(\natural(X)\bigr)\Bigr)
+=\natural\Bigl(\tilde Q\,\natural(X)\Bigr).
 $$</p>
-<p><em>Proof.</em> The theorem of the preceding section reads $\natural R_{\tilde Q}=L_{\natural(\tilde Q)}\natural$; composing with $\natural^{-1}=\natural$ on the left gives the first identity, and substituting it into the product gives the second.</p>
-<p><strong>The general form.</strong> The same computation for any anti-automorphism reads $\tau R_{\tilde Q}=L_{\tau(\tilde Q)}\tau$, that is $R_{\tilde Q}=\tau^{-1}L_{\tau(\tilde Q)}\tau$, and the product becomes $L_{\tilde Q_1}R_{\tilde Q_2}=L_{\tilde Q_1}\tau^{-1}L_{\tau(\tilde Q_2)}\tau$. Nothing in it uses order two, which is why the inverse and not the map itself stands on the left.</p>
-<p><strong>The reading.</strong> Both factors act on the left. The right factor becomes a left factor at the price of one application of $\natural$ before it and one after it. This is the sense in which the corpus writes every action on the left: a right multiplication is not a second kind of operator, it is a left multiplication by the quaternion conjugate composed with the conjugation, and the conjugation falls on the operand as well as on the parameter.</p>
-<h3 id="the-anti-representation-explained">The Anti-Representation Explained</h3>
-<p><strong>Corollary.</strong> The right family is an anti-representation, $R_{\tilde Q_1}R_{\tilde Q_2}=R_{\tilde Q_2\tilde Q_1}$, while $\tilde Q\mapsto L_{\natural(\tilde Q)}$ is a representation. The first is the second conjugated by $\natural$:</p>
+<p>The first equality is the definition of composition and the second is the definition of the left multiplication, which multiplies its parameter on the left of its argument.</p>
+<p>The argument of the outer $\natural$ is now a product of two elements, namely $\tilde Q$ and $\natural(X)$. Apply the reversal property of §<em>The Quaternion Conjugation</em> to that product. The two factors change places and $\natural$ is applied to each:</p>
 <p>$$
-\natural L_{\natural(\tilde Q_1)}\natural\;\natural L_{\natural(\tilde Q_2)}\natural
-=\natural\,L_{\natural(\tilde Q_2)\natural(\tilde Q_1)}\,\natural .
+\natural\Bigl(\tilde Q\,\natural(X)\Bigr)
+=\natural\bigl(\natural(X)\bigr)\,\natural(\tilde Q)
+=X\,\natural(\tilde Q).
 $$</p>
-<p>The exchange of order inside the right family and the exchange of order inside $\natural$ are one and the same exchange, read once on the parameters and once on the products. Nothing is added to the algebra to obtain an anti-representation: one conjugation removes it.</p>
-<h3 id="generation">Generation</h3>
-<p><strong>Corollary.</strong> The operators of $\mathbb{B}$ are generated by the left multiplications together with $\natural$.</p>
-<p><em>Proof.</em> The two families together generate $\operatorname{End}_{\mathbb{C}}(\mathbb{B})$, by $\mathbb{B}\otimes_{\mathbb{C}}\mathbb{B}_{\mathrm{opp}}\cong\operatorname{End}_{\mathbb{C}}(\mathbb{B})$ (<em>The Enveloping Operator Algebra of the Biquaternion Algebra and the Bi-module Structure</em>). Every right multiplication is $\natural L\natural$ by the theorem above, so it lies in the algebra generated by $L(\mathbb{B})$ and $\natural$.</p>
-<h2 id="every-frame-has-its-switch">Every Frame Has Its Switch</h2>
-<p><strong>A general carrier basis.</strong> A transpose depends on the frame, so $R=\mathsf D L^{\mathsf T}\mathsf D$ is the shape the identity takes in the axis-free frame and not the shape it takes everywhere. In a carrier basis where the plain bilinear form $\beta$ has Gram matrix $\mathsf W$ the adjoint of a matrix is $\mathsf W^{-1}M^{\mathsf T}\mathsf W$, and the two families are related by</p>
+<p>The last equality is the involution property, which returns $\natural(X)$ to $X$. Right multiplication by an element is the operator that multiplies that element on the right of its argument, so the two displays together give</p>
 <p>$$
-[R(\tilde Q)]=\mathsf W^{-1}[L(\tilde Q)]^{\mathsf T}\mathsf W .
+\bigl(\natural L_{\tilde Q}\natural\bigr)(X)=X\,\natural(\tilde Q)=R_{\natural(\tilde Q)}(X).
 $$</p>
-<p>The matrix $\mathsf W$ is the switch. It is symmetric, and it is the Gram matrix of $\beta$ and not a change of basis: a change of basis replaces it by $\mathsf P^{\mathsf T}\mathsf W\mathsf P$ and the array by $\mathsf P^{-1}[X]\mathsf P$, and the two changes cancel. The identity $\mathsf W^2=\mathrm I_4$ holds only in the axis-free frame, which is why the symmetric form $\mathsf W(\cdot)^{\mathsf T}\mathsf W$ is not the general rule and the inverse must be written.</p>
-<p><strong>The two frames of the corpus.</strong></p>
+<p>The element $X$ was arbitrary, so the composite and the right multiplication agree as operators.</p>
+<p>Three things were used and no more: that $\natural$ is $\mathbb{C}$-linear, so that the composite is defined; that $\natural$ is an involution; and that $\natural$ reverses products. Nothing was assumed about $\tilde Q$, and no basis was chosen.</p>
+<p><strong>The middle step, slowly.</strong> The one step that decides the identity is the application of the reversal, and it is worth saying exactly what it does to the two factors. Before the step, the product stands as $\tilde Q$ on the left of $\natural(X)$. After the step, $\natural(X)$ stands on the left of $\natural(\tilde Q)$. So the factor $\tilde Q$ has crossed from the left of the other factor to its right, and while crossing it has been put through $\natural$. The parameter therefore ends on the right of the input, which is what makes the result a right multiplication, and it ends there as $\natural(\tilde Q)$, which is what makes the display exact for every element. Both facts come from the same step, and neither can be had without the other.</p>
+<p><strong>Check at the unit.</strong> Evaluate both sides at $e_t$. The composite sends $e_t$ first to $\natural(e_t)=e_t$, then to $\tilde Qe_t=\tilde Q$, then to $\natural(\tilde Q)$; the right multiplication sends $e_t$ to $\natural(\tilde Q)$. The two agree, as they must.</p>
+<h2 id="the-second-identity">The Second Identity</h2>
+<p><strong>Theorem.</strong> For every element $\tilde Q$ of the algebra,</p>
+<p>$$
+\natural\,R_{\tilde Q}\,\natural=L_{\natural(\tilde Q)} .
+$$</p>
+<p><em>Proof.</em> The composite again conjugates the input, multiplies by $\tilde Q$ on the right, and conjugates the result. For an arbitrary $X$,</p>
+<p>$$
+\bigl(\natural R_{\tilde Q}\natural\bigr)(X)
+=\natural\Bigl(R_{\tilde Q}\bigl(\natural(X)\bigr)\Bigr)
+=\natural\Bigl(\natural(X)\,\tilde Q\Bigr).
+$$</p>
+<p>The argument of the outer $\natural$ is now the product of $\natural(X)$ and $\tilde Q$. Reversal applies to it, and this time the two factors are found in the other order, so $\tilde Q$ moves to the left:</p>
+<p>$$
+\natural\Bigl(\natural(X)\,\tilde Q\Bigr)
+=\natural(\tilde Q)\,\natural\bigl(\natural(X)\bigr)
+=\natural(\tilde Q)\,X=L_{\natural(\tilde Q)}(X).
+$$</p>
+<p>Since $X$ was arbitrary, the composite and the left multiplication agree.</p>
+<p>The two proofs are the same proof with the factors of one product written in the opposite order, and that is the whole difference between the two families. In the first proof the parameter stood on the left of the other factor and was carried to the right; in the second it stood on the right and was carried to the left. In both cases the reversal carried it across, and in both cases it arrived as its image.</p>
+<p><strong>Check at the unit.</strong> The composite sends $e_t$ to $\natural(\tilde Q)$, and so does $L_{\natural(\tilde Q)}$.</p>
+<h2 id="the-symmetric-pair">The Symmetric Pair</h2>
+<p>The two theorems of the two preceding sections say what the conjugation does to each family. Both are stated with the conjugation on the left of the display and the family on the right. Solving each for the family gives the pair of the introduction, and the derivation is a single substitution in each case.</p>
+<p><strong>Corollary (the pair).</strong> For every element $\tilde Q$,</p>
+<p>$$
+L_{\tilde Q}=\natural\,R_{\natural(\tilde Q)}\,\natural,
+\qquad\qquad
+R_{\tilde Q}=\natural\,L_{\natural(\tilde Q)}\,\natural .
+$$</p>
+<p><em>Proof.</em> For the first display, apply the second theorem to the element $\natural(\tilde Q)$ in place of $\tilde Q$: it gives $\natural R_{\natural(\tilde Q)}\natural=L_{\natural(\natural(\tilde Q))}=L_{\tilde Q}$, because $\natural$ is an involution. For the second display, apply the first theorem to the element $\natural(\tilde Q)$: it gives $\natural L_{\natural(\tilde Q)}\natural=R_{\natural(\natural(\tilde Q))}=R_{\tilde Q}$.</p>
+<p>The corollary is the form in which the pair is used, and the theorems are the form in which it is proved. The difference is worth keeping in view: the theorems say what conjugation does to a family, and the corollary says that each family is the conjugate of the other. The corollary is what one applies to an equation, because it replaces one family by the other without leaving a conjugation outstanding.</p>
+<p><strong>The pair is symmetric under the exchange of the two families.</strong> The second display becomes the first if $L$ and $R$ are exchanged throughout, and the first becomes the second in the same way. That exchange is not a notational courtesy; it is an operation on operators, and it is the subject of the next section.</p>
+<h2 id="the-single-involution">The Single Involution</h2>
+<p>Both displays of the pair are statements about one map of the operator algebra, and naming that map makes the pair look like what it is: one involution with two-element orbits.</p>
+<p><strong>Definition.</strong> For a $\mathbb{C}$-linear operator $F$ of $\mathbb{B}$, put</p>
+<p>$$
+\mathsf K(F)=\natural\,F\,\natural .
+$$</p>
+<p><strong>Proposition (the four properties of $\mathsf K$).</strong></p>
+<ol>
+<li>$\mathsf K$ is $\mathbb{C}$-linear.</li>
+<li>$\mathsf K$ is an involution: $\mathsf K\bigl(\mathsf K(F)\bigr)=F$.</li>
+<li>$\mathsf K$ preserves products: $\mathsf K(F)\mathsf K(G)=\mathsf K(FG)$.</li>
+<li>$\mathsf K$ exchanges the two families: $\mathsf K(L_{\tilde Q})=R_{\natural(\tilde Q)}$ and $\mathsf K(R_{\tilde Q})=L_{\natural(\tilde Q)}$.</li>
+</ol>
+<p><em>Proof.</em> The first is the $\mathbb{C}$-linearity of $\natural$. The second is $\natural^4=\mathrm{id}$, which is the involution property applied twice. For the third, compose: applying $\mathsf K(G)$ and then $\mathsf K(F)$ gives</p>
+<p>$$
+\natural\Bigl(F\,\natural\bigl(\natural\,G\,\natural\bigr)\Bigr)\natural
+=\natural\,F\,G\,\natural=\mathsf K(FG),
+$$</p>
+<p>the middle $\natural\natural$ being the identity. The fourth is the two theorems of the preceding sections.</p>
+<p>The third property is the one that matters for equations, and it deserves a word of contrast. A conjugation by an involution of the algebra is an <strong>automorphism</strong> of the operator algebra, not an anti-automorphism, because the two inner conjugations cancel the reversal. So $\mathsf K$ may be applied to a product factor by factor, in the order the factors are written, and the result is the image of the product. That is what makes the conversion of a composite operator legitimate.</p>
+<p><strong>Corollary (the orbits are the pairs).</strong> For every $\tilde Q$ the set $\{L_{\tilde Q},R_{\natural(\tilde Q)}\}$ is carried into itself by $\mathsf K$, and the two elements are exchanged. The same holds for the set $\{R_{\tilde Q},L_{\natural(\tilde Q)}\}$.</p>
+<p><em>Proof.</em> By the fourth property, $\mathsf K(L_{\tilde Q})=R_{\natural(\tilde Q)}$, and applying $\mathsf K$ once more gives $\mathsf K(R_{\natural(\tilde Q)})=L_{\natural(\natural(\tilde Q))}=L_{\tilde Q}$. The second set is the same statement read from the right family.</p>
+<p>So the pair of the introduction is one orbit of one involution, described from both of its ends. That is the precise sense in which the pair is symmetric: not two coincidences standing side by side, but a single two-element orbit, and the two displays are the orbit written starting from one member or from the other.</p>
+<p><strong>Corollary (the orbit collapses exactly at the centre).</strong> The two elements of the orbit coincide exactly when $\tilde Q$ is a scalar multiple of the unit, and then the orbit is a single operator, the multiplication by that scalar.</p>
+<p><em>Proof.</em> $L_{\tilde Q}=R_{\natural(\tilde Q)}$ at the unit reads $\tilde Q=\natural(\tilde Q)$, which by §<em>The Two Families</em> holds exactly at the centre; there both operators are the multiplication by the scalar.</p>
+<p>Off the centre the orbit therefore has exactly two members, and the pair is a genuine exchange rather than a tautology.</p>
+<p><strong>Remark (which operators the involution fixes).</strong> An operator is fixed by $\mathsf K$ exactly when it commutes with $\natural$. Among the two-sided operators the products $L_{\tilde Q}R_{\natural(\tilde Q)}$ are fixed, since</p>
+<p>$$
+\mathsf K\bigl(L_{\tilde Q}R_{\natural(\tilde Q)}\bigr)
+=R_{\natural(\tilde Q)}\,\mathsf K\bigl(R_{\natural(\tilde Q)}\bigr)
+=R_{\natural(\tilde Q)}L_{\natural(\natural(\tilde Q))}
+=R_{\natural(\tilde Q)}L_{\tilde Q}
+=L_{\tilde Q}R_{\natural(\tilde Q)},
+$$</p>
+<p>the last equality being the commutation of the two families. The general criterion is one line longer.</p>
+<p><strong>Proposition (the fixed two-sided operators).</strong> Let $\tilde Q$ be invertible. Then $L_{\tilde Q}R_{\tilde P}$ is fixed by $\mathsf K$ exactly when the product $\tilde Q\tilde P$ is a scalar multiple of the unit; and for $\tilde P=\natural(\tilde Q)$ the product is the norm, so that case is always fixed.</p>
+<p><em>Proof.</em> Suppose first that the operator is fixed and evaluate at $e_t$. The operator gives $\tilde Q\tilde P$. Its image under $\mathsf K$ is $R_{\natural(\tilde Q)}L_{\natural(\tilde P)}$, which at $e_t$ gives $\natural(\tilde P)\natural(\tilde Q)=\natural(\tilde Q\tilde P)$ by the reversal property. So $\tilde Q\tilde P$ equals its own image under $\natural$, which is the centre. Conversely, let $\tilde Q\tilde P=\lambda e_t$. Then $\tilde P=\lambda\tilde Q^{-1}$, and since $\tilde Q\natural(\tilde Q)=N e_t$ with $N=q_t^2+q_x^2+q_y^2+q_z^2$ the scalar norm, one has $\tilde Q^{-1}=\natural(\tilde Q)/N$ and therefore $\natural(\tilde P)=\lambda\tilde Q/N$. Both operators then act by $X\mapsto\lambda\tilde QX\natural(\tilde Q)/N$, so they agree. For the last claim, $\tilde Q\natural(\tilde Q)=Ne_t$ is the displayed norm identity.</p>
+<p>So the two-sided operators whose two parameters are related by the conjugation are the ones on which the transposition of the sides has no effect, and they are a special case of a broader family, the operators whose parameter product is central. The corpus studies the special case on its own account, under the name of the Hermitian pair.</p>
+<h2 id="the-rewriting-rules">The Rewriting Rules</h2>
+<p>The pair converts one family into the other, and a composite operator is converted factor by factor, because $\mathsf K$ preserves products. The rules are therefore short.</p>
 <div class="table-scroll"><table>
 <thead>
 <tr>
-<th>frame</th>
-<th>switch</th>
-<th>the transpose of a left matrix</th>
+<th>the operator</th>
+<th>rewritten with the other family</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td>axis-free</td>
-<td>$\mathsf D=\operatorname{diag}(1,-1,-1,-1)$</td>
-<td>the left matrix of $\tilde Q^{\natural}$</td>
+<td>$R_{\tilde Q}$</td>
+<td>$\natural\,L_{\natural(\tilde Q)}\,\natural$</td>
 </tr>
 <tr>
-<td>Peirce</td>
-<td>$\mathsf P$, the display of the exchange $S$</td>
-<td>the left matrix of $S\tilde Q$</td>
+<td>$L_{\tilde Q}$</td>
+<td>$\natural\,R_{\natural(\tilde Q)}\,\natural$</td>
+</tr>
+<tr>
+<td>$\natural\,R_{\tilde Q}\,\natural$</td>
+<td>$L_{\natural(\tilde Q)}$</td>
+</tr>
+<tr>
+<td>$\natural\,L_{\tilde Q}\,\natural$</td>
+<td>$R_{\natural(\tilde Q)}$</td>
 </tr>
 </tbody>
 </table></div>
-<p><strong>The reading.</strong> The transposition of the two sides survives every frame: the right array is always the transposed left array read through the switch. What changes from frame to frame is the element map that the transpose implements, and with it the usefulness of the dictionary. The corpus keeps the axis-free frame because there the transpose implements the quaternion conjugation, so the passage from one side to the other is a passage from an element to its conjugate, and the display of the price is a sign matrix.</p>
-<h2 id="the-parameter">The Parameter</h2>
-<p><strong>Proposition.</strong> $R_{\tilde Q}=L_{\tilde Q}$ exactly when $\tilde Q$ is central.</p>
-<p><em>Proof.</em> The identity $\tilde X\tilde Q=\tilde Q\tilde X$ for every $\tilde X$ is the definition of the centre, which is $\mathbb{C}e_t$.</p>
-<p><strong>Proposition (the shortcut on a fixed space).</strong> If $\tau(\tilde Q)=\tilde Q$, then $\tau R_{\tilde Q}=L_{\tilde Q}\tau$: on the fixed space of an anti-automorphism, a right multiplication by $\tilde Q$ is a left multiplication by $\tilde Q$ once $\tau$ is carried through.</p>
-<p><em>Proof.</em> $\tau(\tilde X\tilde Q)=\tau(\tilde Q)\tau(\tilde X)=\tilde Q\tau(\tilde X)$.</p>
-<p>The fixed spaces are the last column of the table of §<em>The Three Maps of the Coefficient Frame</em>: the centre for $\natural$, where the shortcut is the triviality $R=L$, and the sector $\mathbb{B}_{\Psi}$ for $\ast$, where it is a genuine transfer, since $R_{\tilde Q}\ne L_{\tilde Q}$ off the centre.</p>
-<p><strong>The two errors, which are distinct.</strong> The first is to take the coefficient conjugation for an anti-automorphism: it preserves the product, so the family it is expected to exchange is not exchanged, and the identity it is expected to give fails for every noncentral parameter. The second is to drop the transport of the parameter: the identity $\tau(\tilde X\tilde Q)=\tilde Q\tau(\tilde X)$ holds on the fixed space and nowhere else, so an equation written with the same parameter on both sides is a statement about a fixed point of $\tau$ and not a general one.</p>
+<p>The first two rows are the pair. The last two are the two theorems, which are the same content read the other way: they say that a conjugated right multiplication <em>is</em> a left multiplication, with no conjugation left over.</p>
+<p><strong>A couple of one-sided operators on a single side.</strong> Let $L_{\tilde Q}$ and $R_{\tilde P}$ be given, the two operators of a couple, one from each family. Their product is converted to the left family by the first row:</p>
+<p>$$
+L_{\tilde Q}R_{\tilde P}
+=L_{\tilde Q}\,\natural\,L_{\natural(\tilde P)}\,\natural .
+$$</p>
+<p>The right-hand side uses the left multiplication only. The two conjugations are operators in their own right, inserted where the right multiplication used to be, and the parameter $\tilde P$ has become $\natural(\tilde P)$. Read in the other direction, by the second row, the same product is a product of right multiplications only:</p>
+<p>$$
+L_{\tilde Q}R_{\tilde P}
+=\natural\,R_{\natural(\tilde Q)}\,\natural\,R_{\tilde P},
+$$</p>
+<p>and the inner $\natural\natural$ of the two consecutive conversions combines when more factors are present. So a couple may be brought to whichever side is convenient, and the only trace of the move is the conjugation of the parameters and the presence of $\natural$ between the factors.</p>
+<p><strong>The law of the right family follows from the law of the left family.</strong> As a check that the conversion is consistent with the algebra and not merely a rewriting of symbols, derive the anti-representation of the right family from the representation of the left family. By the pair, $R_{\tilde Q}=\natural L_{\natural(\tilde Q)}\natural$ and $R_{\tilde P}=\natural L_{\natural(\tilde P)}\natural$, so</p>
+<p>$$
+R_{\tilde Q}R_{\tilde P}
+=\natural\,L_{\natural(\tilde Q)}\,L_{\natural(\tilde P)}\,\natural
+=\natural\,L_{\natural(\tilde Q)\natural(\tilde P)}\,\natural ,
+$$</p>
+<p>where the two inner conjugations have combined and the law of the left family has been used. Now $\natural(\tilde Q)\natural(\tilde P)=\natural\bigl(\tilde P\tilde Q\bigr)$, which is the reversal property read on two elements. Hence</p>
+<p>$$
+R_{\tilde Q}R_{\tilde P}=\natural\,L_{\natural(\tilde P\tilde Q)}\,\natural=R_{\tilde P\tilde Q},
+$$</p>
+<p>by the pair once more. The order of the parameters is exchanged, and the only ingredient beyond the pair is the reversal property of $\natural$. So the two laws are one law, seen on the two orbits of $\mathsf K$.</p>
+<p><strong>Equations.</strong> Let an equation between operators be written with the two families, and apply $\mathsf K$ to both sides. Because $\mathsf K$ is an involution it is injective, so the new equation is equivalent to the old one; because $\mathsf K$ preserves products, each side is transformed factor by factor; and because it exchanges the families, the transformed equation is written with the families exchanged and the parameters carried. An equation that is written mostly with right multiplications therefore becomes an equation written mostly with left multiplications, and conversely. This is the operation the pair exists to perform, and the four properties of $\mathsf K$ are exactly the four conditions that make it safe.</p>
+<h2 id="the-pairings-that-look-alike">The Pairings That Look Alike</h2>
+<p>The pair carries the parameter, and the conjugation is easy to drop, so the displays that omit it must be listed and refuted once, in one place. There are eight pairings of a family, a conjugation, and a parameter; four are true and four are false, and the rule that separates them is that the parameter written inside must be the conjugation of the parameter written outside.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>display</th>
+<th>verdict</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$L_{\tilde Q}=\natural\,R_{\natural(\tilde Q)}\,\natural$</td>
+<td>true</td>
+</tr>
+<tr>
+<td>$R_{\tilde Q}=\natural\,L_{\natural(\tilde Q)}\,\natural$</td>
+<td>true</td>
+</tr>
+<tr>
+<td>$\natural\,L_{\tilde Q}\,\natural=R_{\natural(\tilde Q)}$</td>
+<td>true</td>
+</tr>
+<tr>
+<td>$\natural\,R_{\tilde Q}\,\natural=L_{\natural(\tilde Q)}$</td>
+<td>true</td>
+</tr>
+<tr>
+<td>$L_{\tilde Q}=\natural\,R_{\tilde Q}\,\natural$</td>
+<td>false off the centre</td>
+</tr>
+<tr>
+<td>$R_{\tilde Q}=\natural\,L_{\tilde Q}\,\natural$</td>
+<td>false off the centre</td>
+</tr>
+<tr>
+<td>$\natural\,L_{\tilde Q}\,\natural=R_{\tilde Q}$</td>
+<td>false off the centre</td>
+</tr>
+<tr>
+<td>$\natural\,R_{\tilde Q}\,\natural=L_{\tilde Q}$</td>
+<td>false off the centre</td>
+</tr>
+</tbody>
+</table></div>
+<p>The four false rows are the four true rows with the inner parameter replaced by the outer one. Each is refuted by the same one-element test.</p>
+<p><strong>Proposition (the false rows fail at the centre and only there).</strong> $\natural L_{\tilde Q}\natural=R_{\tilde Q}$ exactly when $\tilde Q$ is a scalar multiple of the unit.</p>
+<p><em>Proof.</em> Evaluate at $e_t$. The right multiplication gives $\tilde Q$; the composite gives $\natural(\tilde Q)$, as computed in §<em>The First Identity</em>. So the two agree exactly when $\tilde Q=\natural(\tilde Q)$, which by §<em>The Two Families</em> is the centre. The other three false rows are the same computation on the other pairing, or the same equation read from the other family.</p>
+<p><strong>Proposition (the size of the failure).</strong> For every element,</p>
+<p>$$
+R_{\tilde Q}-\natural\,L_{\tilde Q}\,\natural=R_{2\vec Q},
+\qquad\text{where } \vec Q=\tilde Q-q_te_t .
+$$</p>
+<p><em>Proof.</em> By the first theorem, $\natural L_{\tilde Q}\natural=R_{\natural(\tilde Q)}$. Right multiplication is additive in its parameter, because the product of the algebra is additive, so the difference of the two operators is the right multiplication by $\tilde Q-\natural(\tilde Q)$, and that element is $2\vec Q$.</p>
+<p>So the false pairing is not wrong by an arbitrary amount. It is wrong by a right multiplication, and the parameter of that right multiplication is twice the vector part, which vanishes exactly at the centre. The measurement also tells the reader what to expect: on a central parameter no error appears at all, which is why the mistake survives inspection on scalar examples and only shows itself away from the centre.</p>
+<p><strong>Example.</strong> Take $\tilde Q=e_t+2\vec e_x$, so that $\natural(\tilde Q)=e_t-2\vec e_x$ and the gap is $4\vec e_x$. On the input $e_t$ the right multiplication gives $e_t+2\vec e_x$ and the composite gives $e_t-2\vec e_x$. The two operators disagree on the unit alone, before any other input is tried.</p>
+<p><strong>Proposition (the parameter of the conversion is unique).</strong> Fix $\tilde Q$ and let $\tilde P$ vary. Then $\natural L_{\tilde P}\natural=R_{\tilde Q}$ exactly when $\tilde P=\natural(\tilde Q)$.</p>
+<p><em>Proof.</em> By the first theorem the left side is $R_{\natural(\tilde P)}$, and by the unit this equals $R_{\tilde Q}$ exactly when $\natural(\tilde P)=\tilde Q$; applying the involution gives $\tilde P=\natural(\tilde Q)$.</p>
+<p>The conversion is therefore not one choice among many. The parameter that must stand under the left multiplication is the image of the parameter that stands under the right multiplication, and no other element will do.</p>
+<h2 id="why-the-exchange-is-reversal">Why the Exchange Is Reversal</h2>
+<p>The pair was proved by computing, but the computation contains one step that decides it, and the article would be incomplete without isolating that step from the notation of the two families.</p>
+<p><strong>The same computation for an arbitrary antimultiplicative bijection.</strong> Let $\Theta$ be a bijection of the algebra with $\Theta(XY)=\Theta(Y)\Theta(X)$ for all $X,Y$. Then, for arbitrary $X$,</p>
+<p>$$
+\bigl(\Theta L_{\tilde Q}\Theta^{-1}\bigr)(X)
+=\Theta\Bigl(\tilde Q\,\Theta^{-1}(X)\Bigr)
+=\Theta\bigl(\Theta^{-1}(X)\bigr)\,\Theta(\tilde Q)
+=X\,\Theta(\tilde Q)
+=R_{\Theta(\tilde Q)}(X),
+$$</p>
+<p>so that $\Theta L_{\tilde Q}\Theta^{-1}=R_{\Theta(\tilde Q)}$. <strong>The same computation for an automorphism.</strong> Let $\sigma$ preserve products, $\sigma(XY)=\sigma(X)\sigma(Y)$. Then</p>
+<p>$$
+\bigl(\sigma L_{\tilde Q}\sigma^{-1}\bigr)(X)
+=\sigma\Bigl(\tilde Q\,\sigma^{-1}(X)\Bigr)
+=\sigma(\tilde Q)\,\sigma\bigl(\sigma^{-1}(X)\bigr)
+=\sigma(\tilde Q)\,X
+=L_{\sigma(\tilde Q)}(X).
+$$</p>
+<p>The contrast is exact and it is the whole mechanism. In the first computation the two factors change places, so the parameter ends on the right of the input and the operator becomes a right multiplication. In the second they keep their places, so the parameter stays on the left and the operator remains a left multiplication. The exchange of the sides is precisely the reversal of the two factors of the product $\tilde Q\,\Theta^{-1}(X)$, and nothing else in the computation can produce it.</p>
+<p><strong>Proposition (exchange forces reversal).</strong> Let $\Theta$ be a bijection of the algebra such that $\Theta L_{\tilde Q}\Theta^{-1}=R_{\Theta(\tilde Q)}$ for every $\tilde Q$. Then $\Theta$ reverses products.</p>
+<p><em>Proof.</em> Let $X$ be arbitrary and put $Y=\Theta^{-1}(X)$, so that $X=\Theta(Y)$. Evaluating the hypothesis at $X$,</p>
+<p>$$
+\Theta\bigl(\tilde Q\,Y\bigr)
+=\bigl(\Theta L_{\tilde Q}\Theta^{-1}\bigr)(X)
+=R_{\Theta(\tilde Q)}(X)
+=X\,\Theta(\tilde Q)
+=\Theta(Y)\,\Theta(\tilde Q),
+$$</p>
+<p>and the relation holds for all $\tilde Q$ and all $Y$.</p>
+<p>Together with the computation above, the proposition says that the bijections transposing the two families are exactly the bijections reversing products. There are therefore two descriptions of one class of maps, and the class is not empty, $\natural$ being a member.</p>
+<p>The proposition also settles a question of principle that the table of §<em>The Pairings That Look Alike</em> raises. A bijection that exchanges the families carries the parameter to its image, by the first computation, and it must reverse products, by the proposition. So no bijection can exchange the families and leave the parameter in place. The false rows of that table are not merely unproved; they describe a map that cannot exist.</p>
+<h2 id="the-sense-of-the-name">The Sense of the Name</h2>
+<p>The article calls the pair a transposition of the two sides, and the name should be justified, because the algebra also carries a genuine transposition: the adjoint of its plain bilinear form. The two operations agree on what they move and differ on what they charge for it.</p>
+<p><strong>The plain form.</strong> Put $\langle X,Y\rangle=\mathrm{Sc}(XY)$, the scalar part of the product. It is symmetric, because the scalar part is invariant under the exchange of its two factors, and it is non-degenerate, because the units read the coefficients: $\langle X,e_t\rangle=x_t$ and $\langle X,\vec e_k\rangle=-x_k$ for the three vector units.</p>
+<p><strong>The transpose.</strong> For a $\mathbb{C}$-linear operator $F$, the <strong>transpose</strong> for the plain form is the operator $F^{\approx}$ with $\langle F(X),Y\rangle=\langle X,F^{\approx}(Y)\rangle$ for all $X,Y$. It exists and is unique, because the relation determines $F^{\approx}(Y)$ by its pairings with all elements and the form is non-degenerate. The corpus names this operator the <strong>plain bilinear adjoint</strong>.</p>
+<p><strong>Proposition (the plain bilinear adjoint exchanges the sides and keeps the parameter).</strong> $L_{\tilde Q}^{\approx}=R_{\tilde Q}$ and $R_{\tilde Q}^{\approx}=L_{\tilde Q}$.</p>
+<p><em>Proof.</em> The left side of the defining relation for $F=L_{\tilde Q}$ is $\langle\tilde QX,Y\rangle=\mathrm{Sc}(\tilde QXY)$. The scalar part is invariant under the cyclic permutation of the three factors, so $\mathrm{Sc}(\tilde QXY)=\mathrm{Sc}(XY\tilde Q)=\langle X,R_{\tilde Q}(Y)\rangle$, which is the defining relation of $R_{\tilde Q}$; the transpose is unique. The second identity is the same computation run the other way.</p>
+<p>The comparison is now immediate. Both the plain bilinear adjoint and the conjugation turn $L_{\tilde Q}$ into a right multiplication by $\tilde Q$, and the pair reconciles them:</p>
+<p>$$
+L_{\tilde Q}^{\approx}=R_{\tilde Q}=\natural\,L_{\natural(\tilde Q)}\,\natural .
+$$</p>
+<p>They reach the same operator and they differ in what they do to the parameter. The plain bilinear adjoint keeps it and needs no conjugation; the conjugation carries it and needs two. The pair is therefore the statement that the two prices buy the same operator, and the article's title is the record of the second price.</p>
 <h2 id="summary">Summary</h2>
-<p>A right multiplication is a transposed left multiplication read through the switch. In the axis-free frame the two halves are $L_{\mathrm{axf}}(\tilde Q)^{\mathsf T}=L_{\mathrm{axf}}(\tilde Q^{\natural})$ and $R_{\mathrm{axf}}(\tilde Q)=\mathsf D L_{\mathrm{axf}}(\tilde Q)^{\mathsf T}\mathsf D$. The first says that a transpose keeps the operator on the left and changes the element into its quaternion conjugate, because the left display is diagonal and skew off the diagonal, $L^{\mathsf T}=2Q_t\mathrm I_4-L$. The second says that reaching the other side costs one conjugation by the switch.</p>
-<p>The mechanism is a sign count on the two displays. They agree on the diagonal, on the first row and on the first column, and they differ on the six entries whose two indices are both vector, because distinct vector units anticommute. The transpose turns all twelve off-diagonal signs, the switch turns back the six that carry one scalar index, and the six that survive are the six that anticommute. That is the whole proof.</p>
-<p>At the level of operators no matrix is needed. An anti-automorphism conjugates the left family onto the right one, $\tau L_{\tilde Q}\tau^{-1}=R_{\tau(\tilde Q)}$, and with $\tau=\natural$ this is $R_{\tilde Q}=\natural L_{\tilde Q^{\natural}}\natural$, which is the same equation as the boxed display, because the matrix of $\natural$ is the switch and the transpose is $\natural$. Hence $R_{\tilde Q}=\natural L_{\natural(\tilde Q)}\natural$, and every two-sided operator is two left multiplications separated by one conjugation, $L_{\tilde Q_1}R_{\tilde Q_2}=L_{\tilde Q_1}\natural L_{\natural(\tilde Q_2)}\natural$. The anti-representation of the right family is the representation of the left family conjugated by $\natural$, and the left family together with $\natural$ generates every operator.</p>
-<p>Every frame has its own switch, the Gram matrix of the plain form there, and its own element map implemented by the transpose; the axis-free frame is kept because there the switch is the display of that map and the price of a change of side is a sign matrix. The parameter is carried by the conjugation, so the shortcut that drops it is exact on the fixed space and false off it, the fixed spaces being the centre for $\natural$ and the sector $\mathbb{B}_{\Psi}$ for $\ast$.</p>
+<p>For every element $\tilde Q$, each of the two families is the conjugate of the other: $L_{\tilde Q}=\natural R_{\natural(\tilde Q)}\natural$ and $R_{\tilde Q}=\natural L_{\natural(\tilde Q)}\natural$. Each display was proved by computing the conjugated composite on an arbitrary element. In the first, the composite conjugates the input, multiplies by $\tilde Q$ on the left, and conjugates again; the outer conjugation meets the product $\tilde Q\natural(X)$, reverses it, and in reversing it moves $\tilde Q$ across the other factor while putting it through $\natural$. The parameter therefore lands on the right of the input, which makes the result a right multiplication, and it lands there as $\natural(\tilde Q)$, which makes the display exact for every element. The second display is the same computation with the two factors of that product written in the other order, so the parameter is carried the other way and the result is a left multiplication.</p>
+<p>The pair is one orbit of one involution. The map $\mathsf K(F)=\natural F\natural$ is $\mathbb{C}$-linear, involutive, product-preserving, and exchanges the two families, so $\{L_{\tilde Q},R_{\natural(\tilde Q)}\}$ is carried into itself with its two members exchanged. The orbit collapses to a single operator exactly at the centre, and off the centre the exchange is genuine.</p>
+<p>The consequences are the working tool. Any right multiplication is a conjugated left multiplication, so a couple of one-sided operators can be brought to a single side by converting one of them; a composite operator is converted factor by factor, because $\mathsf K$ preserves products; and since $\mathsf K$ is an involution, an equation transformed on both sides remains equivalent. The law of the right family, with its exchanged parameters, follows from the law of the left family and the reversal property alone, so the two laws are one law.</p>
+<p>The displays that omit the carried parameter are false, and the failure is measured: $R_{\tilde Q}-\natural L_{\tilde Q}\natural=R_{2\vec Q}$, so the error vanishes exactly at the centre and is a right multiplication by twice the vector part everywhere else. The parameter of the conversion is moreover unique, the element under the left multiplication being forced to be the image of the element under the right one.</p>
+<p>Finally the mechanism and the name. The exchange of the sides is exactly the reversal of the two factors of the product inside the conjugation, which is why only antimultiplicative maps transpose the families, and why no such map can keep the parameter. The genuine transpose of the plain form, the plain bilinear adjoint, exchanges the sides as well and keeps the parameter; the conjugation exchanges them and carries it. The two agree on the operator they produce and differ on the price, and the pair is the statement of that agreement.</p>
 <h2 id="summary-of-notation">Summary of Notation</h2>
 <div class="table-scroll"><table>
 <thead>
@@ -291,73 +406,65 @@ $$</p>
 </thead>
 <tbody>
 <tr>
-<td>$\tau$, $\tau(xy)=\tau(y)\tau(x)$</td>
-<td>an anti-automorphism, complex-linear or conjugation-linear; order two is <strong>not</strong> required</td>
+<td>$L_{\tilde Q}(X)=\tilde QX$, $R_{\tilde Q}(X)=X\tilde Q$</td>
+<td>the left and the right multiplication by $\tilde Q$</td>
 </tr>
 <tr>
-<td>$\natural$</td>
-<td>the quaternion conjugation, $\mathrm{id}$ on the centre and $-\mathrm{id}$ on the span of $\vec e_x,\vec e_y,\vec e_z$; a complex-linear anti-automorphism</td>
+<td>$L_{\tilde Q}L_{\tilde P}=L_{\tilde Q\tilde P}$, $R_{\tilde Q}R_{\tilde P}=R_{\tilde P\tilde Q}$, $L_{\tilde Q}R_{\tilde P}=R_{\tilde P}L_{\tilde Q}$</td>
+<td>the three laws, from associativity alone</td>
 </tr>
 <tr>
-<td>$\ast=\natural\bar{\cdot}$</td>
-<td>the Hermitian conjugation; a conjugation-linear anti-automorphism</td>
+<td>$L_{\tilde Q}(e_t)=\tilde Q=R_{\tilde Q}(e_t)$</td>
+<td>the unit reads the parameter, and separates two operators</td>
 </tr>
 <tr>
-<td>$\bar{\cdot}$</td>
-<td>the coefficient conjugation; a conjugation-linear <strong>automorphism</strong>, not an anti-automorphism</td>
+<td>$L_{\tilde Q}=R_{\tilde Q}$ exactly at the centre</td>
+<td>the two families meet only over the scalars</td>
 </tr>
 <tr>
-<td>$\mathsf D=\operatorname{diag}(1,-1,-1,-1)$</td>
-<td>the switch of the axis-free frame, the Gram matrix of $\beta$ there, and the matrix of $\natural$; the two axis-free articles write it $D$</td>
+<td>$\natural(\tilde Q)=q_te_t-q_x\vec e_x-q_y\vec e_y-q_z\vec e_z$</td>
+<td>the quaternion conjugation: involutive and antimultiplicative</td>
 </tr>
 <tr>
-<td>$\mathsf W$</td>
-<td>the switch in a general carrier basis, the Gram matrix of $\beta$ there</td>
+<td>$\natural L_{\tilde Q}\natural=R_{\natural(\tilde Q)}$</td>
+<td>the first identity: what the conjugation does to a left multiplication</td>
 </tr>
 <tr>
-<td>$\mathsf P$</td>
-<td>the display of the exchange $S$ in the Peirce frame, and the switch there</td>
+<td>$\natural R_{\tilde Q}\natural=L_{\natural(\tilde Q)}$</td>
+<td>the second identity: what it does to a right multiplication</td>
 </tr>
 <tr>
-<td>$L_{\mathrm{axf}}(\tilde Q)^{\mathsf T}=L_{\mathrm{axf}}(\tilde Q^{\natural})$</td>
-<td>the transpose of a left matrix is a left matrix, of the conjugate element</td>
+<td>$L_{\tilde Q}=\natural R_{\natural(\tilde Q)}\natural$, $R_{\tilde Q}=\natural L_{\natural(\tilde Q)}\natural$</td>
+<td>the pair: each family is the conjugate of the other</td>
 </tr>
 <tr>
-<td>$R_{\mathrm{axf}}(\tilde Q)=\mathsf D L_{\mathrm{axf}}(\tilde Q)^{\mathsf T}\mathsf D$</td>
-<td>the right matrix as a transposed left matrix</td>
+<td>$\mathsf K(F)=\natural F\natural$</td>
+<td>the involution: linear, involutive, product-preserving, exchanging the families</td>
 </tr>
 <tr>
-<td>$[R(\tilde Q)]=\mathsf W^{-1}[L(\tilde Q)]^{\mathsf T}\mathsf W$</td>
-<td>the same identity in a general frame</td>
+<td>$\{L_{\tilde Q},R_{\natural(\tilde Q)}\}$</td>
+<td>the orbit of $\mathsf K$, a pair off the centre and a point on it</td>
 </tr>
 <tr>
-<td>$R_{\tilde Q}=\natural L_{\tilde Q^{\natural}}\natural=\natural L_{\natural(\tilde Q)}\natural$</td>
-<td>the same identity with no matrix</td>
+<td>$R_{\tilde Q}-\natural L_{\tilde Q}\natural=R_{2\vec Q}$</td>
+<td>the measured failure of the pairing without the carried parameter</td>
 </tr>
 <tr>
-<td>$\tau L_{\tilde Q}\tau^{-1}=R_{\tau(\tilde Q)}$</td>
-<td>conjugation by an anti-automorphism exchanges the two families</td>
-</tr>
-<tr>
-<td>$L_{\tilde Q_1}R_{\tilde Q_2}=L_{\tilde Q_1}\natural L_{\natural(\tilde Q_2)}\natural$</td>
-<td>a two-sided operator as two left multiplications</td>
-</tr>
-<tr>
-<td>$\tau_{\tilde U}(\tilde X)=\tilde U\natural(\tilde X)\tilde U^{-1}$</td>
-<td>the general complex-linear anti-automorphism, in general not an involution</td>
-</tr>
-<tr>
-<td>fixed space: $\mathbb{C}e_t$ for $\natural$, $\mathbb{B}_{\Psi}$ for $\ast$</td>
-<td>the parameters the conjugation does not carry</td>
+<td>$\langle X,Y\rangle=\mathrm{Sc}(XY)$, $L_{\tilde Q}^{\approx}=R_{\tilde Q}$</td>
+<td>the plain form and the plain bilinear adjoint, which transposes and keeps the parameter</td>
 </tr>
 </tbody>
 </table></div>
 <h2 id="further-reading">Further Reading</h2>
 <ul>
-<li><a href="operators-acting-on-one-side.html">Operators Acting on One Side</a>, for the two families $L(\mathbb{B})$ and $R(\mathbb{B})$, their injectivity and their composition laws, and for the exchange $S$ and the matrix identity $\mathsf P L_{\mathrm{pau}}(\tilde Q)^{\mathsf T}\mathsf P^{-1}=R_{\mathrm{pau}}(\tilde Q)$</li>
-<li><a href="m4c-axis-free-representation-operators.html">$M_4(\mathbb{C})$ Axis-Free Representation : Operators</a>, §<em>The Stitch Between the Copies</em>, for the entry-by-entry computation of $R_{\mathrm{axf}}(\tilde Q)=\mathsf D L_{\mathrm{axf}}(\tilde Q)^{\mathsf T}\mathsf D$ in the frame used here</li>
-<li><a href="operator-chirality-on-the-biquaternion-algebra.html">Operator Chirality on the Biquaternion Algebra</a>, for the exchange of the two sides, $\natural L_{\tilde Q}\natural=R_{\tilde Q^{\natural}}$, for the switch as the Gram matrix of the plain form, and for the difference between that map and the swap of the two slots</li>
-<li><a href="operators-acting-on-two-sides.html">Operators Acting on Two Sides</a>, for the family that this article rewrites as two left multiplications, and for the Hermitian pair $\mathrm{Sd}_{\tilde Q}=L_{\tilde Q}R_{\tilde Q^{\ast}}$</li>
+<li><a href="operators-acting-on-one-side.html">Operators Acting on One Side</a>, for the two families, their images, their commutants and the laws used here</li>
+<li><a href="operators-acting-on-two-sides.html">Operators Acting on Two Sides</a>, for the products $L_{\tilde Q}R_{\tilde P}$, their adjoints and their isometries</li>
+<li><a href="adjoint-pair-of-l-and-r-operators.html">Adjoint Pair of $L$ and $R$ Operators</a>, for the plain bilinear adjoint $L_{\tilde Q}^{\approx}=R_{\tilde Q}$ as the first of the four adjoints, and for the other three</li>
+<li><a href="the-hermitian-pair-of-operators-acting-on-one-side.html">The Hermitian Pair of Operators Acting on One Side</a>, for the two-sided operators whose parameters are related by the conjugation, which are the operators fixed by the involution of this article</li>
+<li><a href="operator-chirality-on-the-biquaternion-algebra.html">Operator Chirality on the Biquaternion Algebra</a>, for the exchange of the sides as the corpus records it, and for its difference from the swap of the two slots</li>
+<li><a href="the-enveloping-operator-algebra-of-the-biquaternion-algebra-and-the-bi-module-structure.html">The Enveloping Operator Algebra of the Biquaternion Algebra and the Bi-module Structure</a>, for the generation of the endomorphism algebra by two families, one of which this article derives from the other</li>
+<li><a href="the-group-of-involutions.html">The Group of Involutions</a>, for $\natural$, $\ast$ and the coefficient conjugation, their linearity and their grades</li>
+<li><a href="bilinear-forms.html">Bilinear Forms</a>, §<em>Isometries</em>, for the transpose of a bilinear form, of which the plain bilinear adjoint is the biquaternion case</li>
 </ul>
       </div>
     </main>

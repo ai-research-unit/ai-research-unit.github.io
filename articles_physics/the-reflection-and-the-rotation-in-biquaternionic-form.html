@@ -341,16 +341,13 @@ where the four scalar factors of $\omega$ multiply to $i^4=1$, so that $\omega$ 
 $$
 \tilde\nabla\tilde{Ξ}_{\mathrm{sp},R} = k_m\tilde{Ξ}_{\mathrm{sp},L} , \qquad \tilde\nabla^{\natural}\tilde{Ξ}_{\mathrm{sp},L} = k_m\tilde{Ξ}_{\mathrm{sp},R} ,
 $$
-in which every derivative is the gradient and acts by left multiplication. The pair is written once as an operator on the direct sum $\mathbb{B}\oplus\mathbb{B}$,
+in which every derivative is the gradient and acts by left multiplication. The pair stays two lines and is never written as one operator on the direct sum $\mathbb{B}\oplus\mathbb{B}$. Each line is <strong>off-diagonal in the two slots</strong>: the first slot of the output is filled from the second slot of the input and the second from the first, and no slot is filled from itself. The subscripts name the two slots, not a value that the operator computes: the gradient acts by left multiplication, a left multiplier does not touch the letter, and the term that carries a field from one letter to the other is therefore the mass, which is the only such term. The mass is a multiple of the identity on the sum, central and even, and it moves nothing by itself. The composition of the two lines is scalar because each is a gradient followed by the conjugate of the other,
 $$
-\tilde{Ξ}_{\mathrm{sp}}=(\tilde{Ξ}_{\mathrm{sp},L},\tilde{Ξ}_{\mathrm{sp},R}),\qquad
-\mathbb{D}\tilde{Ξ}_{\mathrm{sp}}=\bigl(\tilde\nabla\tilde{Ξ}_{\mathrm{sp},R},\ \tilde\nabla^{\natural}\tilde{Ξ}_{\mathrm{sp},L}\bigr),
+\tilde\nabla\tilde\nabla^{\natural}\tilde{Ξ}_{\mathrm{sp},L}=\Box\,\tilde{Ξ}_{\mathrm{sp},L},
+\qquad
+\tilde\nabla^{\natural}\tilde\nabla\tilde{Ξ}_{\mathrm{sp},R}=\Box\,\tilde{Ξ}_{\mathrm{sp},R},
 $$
-and the massive equation is $(\mathbb{D}-k_m)\tilde{Ξ}_{\mathrm{sp}}=0$. The pair operator is <strong>off-diagonal in the two slots</strong>: the first slot of the output is filled from the second slot of the input and the second from the first, and no slot is filled from itself. The subscripts name the two slots, not a value that the operator computes: the gradient acts by left multiplication, a left multiplier does not touch the letter, and the term that carries a field from one letter to the other is therefore the mass, which is the only such term. The mass is a multiple of the identity on the sum, central and even, and it moves nothing by itself. The square is scalar because each member is a gradient followed by its conjugate,
-$$
-\mathbb{D}^2\tilde{Ξ}_{\mathrm{sp}}=\bigl(\tilde\nabla\tilde\nabla^{\natural}\tilde{Ξ}_{\mathrm{sp},L},\ \tilde\nabla^{\natural}\tilde\nabla\tilde{Ξ}_{\mathrm{sp},R}\bigr)=\Box\,\tilde{Ξ}_{\mathrm{sp}} ,
-$$
-with $\Box=\Delta_Q-\partial^2/\partial {r'_t}^2$ on the material sector, so that $(\mathbb{D}-k_m)(\mathbb{D}+k_m)=\Box-k_m^{2}$ is the Klein–Gordon operator exactly, with no overall sign left to fix. Here $k_m=mc/\hbar$ is the mass wave number, the inverse of the mass length.</p>
+with $\Box=\Delta_Q-\partial^2/\partial {r'_t}^2$ on the material sector, so that eliminating one part returns $\Box\tilde{Ξ}_{\mathrm{sp}}=k_m^{2}\tilde{Ξ}_{\mathrm{sp}}$, the Klein–Gordon equation exactly, with no overall sign left to fix. Here $k_m=mc/\hbar$ is the mass wave number, the inverse of the mass length.</p>
 <p>The consequence is immediate. Set $\tilde{Ξ}_{\mathrm{sp},R}=0$ in a massive field: the first member reads $0=k_m\tilde{Ξ}_{\mathrm{sp},L}$, so $\tilde{Ξ}_{\mathrm{sp},L}=0$ as well, and a massive field carries both parts. A field of one letter alone is not a solution. At $m=0$ the pair decouples into $\tilde\nabla\tilde{Ξ}_{\mathrm{sp},R}=0$ and $\tilde\nabla^{\natural}\tilde{Ξ}_{\mathrm{sp},L}=0$, one member for each part, so a field of one part alone is allowed. That decoupling is the operator-level content of the statement that the letter and the helicity agree only in the massless limit.</p>
 <p>The representation-theoretic form of the same fact is the split of the complexified Lorentz algebra into two copies of $\mathfrak{sl}(2,\mathbb{C})$, each of them the complexification of an $\mathfrak{su}(2)$,
 $$
@@ -426,7 +423,7 @@ A basis operator that commutes with the three generators multiplies each of the 
 <p><strong>Two reflections, or four.</strong> A rotation is a product of two reflections exactly when it fixes a plane. Pure boosts, pure spatial rotations and boosts with a rotation in the plane of the boost qualify; a boost with a rotation about the boost axis does not, and needs four.</p>
 </li>
 <li>
-<p><strong>The letter is what the reflection changes.</strong> Even basis operators keep the letter, odd basis operators exchange it, so rotations preserve the two parts and reflections reverse them. The mass is even and central and couples the two parts without moving either; the pair operator $\mathbb{D}$ is off-diagonal in the two slots, and the mass is the one term that carries a field from one letter to the other. In the split $\mathfrak{so}(1,3)_{\mathbb{C}}\cong\mathfrak{sl}(2,\mathbb{C})\oplus\mathfrak{sl}(2,\mathbb{C})$ the letter is which copy, and the exchange of the copies is parity.</p>
+<p><strong>The letter is what the reflection changes.</strong> Even basis operators keep the letter, odd basis operators exchange it, so rotations preserve the two parts and reflections reverse them. The mass is even and central and couples the two parts without moving either; each line of the pair is off-diagonal in the two slots, and the mass is the one term that carries a field from one letter to the other. In the split $\mathfrak{so}(1,3)_{\mathbb{C}}\cong\mathfrak{sl}(2,\mathbb{C})\oplus\mathfrak{sl}(2,\mathbb{C})$ the letter is which copy, and the exchange of the copies is parity.</p>
 </li>
 <li>
 <p><strong>The letter is relativistic.</strong> Three generators cannot carry it: their product is central, and no basis operator of their algebra anticommutes with all three. The chirality basis operator is the product of all four generators and is even, so it exists only because one generator is timelike.</p>
@@ -490,8 +487,8 @@ A basis operator that commutes with the three generators multiplies each of the 
 <td>The biquaternion gradient $\sum_\mu e_\mu\partial/\partial R_\mu$ and its quaternion conjugate $\sum_\mu\varepsilon_\mu e_\mu\partial/\partial R_\mu$; $\Box=\tilde\nabla\tilde\nabla^{\natural}=\partial^2/\partial R_t^2+\Delta_Q$; the chiral pair $\tilde\nabla\tilde{Ξ}_{\mathrm{sp},R}=k_m\tilde{Ξ}_{\mathrm{sp},L}$, $\tilde\nabla^{\natural}\tilde{Ξ}_{\mathrm{sp},L}=k_m\tilde{Ξ}_{\mathrm{sp},R}$, whose subscripts name the two members</td>
 </tr>
 <tr>
-<td>$\mathbb{D}$</td>
-<td>The pair operator on $\mathbb{B}\oplus\mathbb{B}$, $\mathbb{D}(\tilde{Ξ}_{\mathrm{sp},L},\tilde{Ξ}_{\mathrm{sp},R})=(\tilde\nabla\tilde{Ξ}_{\mathrm{sp},R},\tilde\nabla^{\natural}\tilde{Ξ}_{\mathrm{sp},L})$; $\mathbb{D}^2=\Box I$, off-diagonal in the two slots</td>
+<td>$\tilde\nabla\tilde{Ξ}_{\mathrm{sp},R}=k_m\tilde{Ξ}_{\mathrm{sp},L}$, $\tilde\nabla^{\natural}\tilde{Ξ}_{\mathrm{sp},L}=k_m\tilde{Ξ}_{\mathrm{sp},R}$</td>
+<td>The pair as two lines, off-diagonal in the two slots</td>
 </tr>
 <tr>
 <td>$iR_{\mathrm{axf},\vec e_x}$</td>
