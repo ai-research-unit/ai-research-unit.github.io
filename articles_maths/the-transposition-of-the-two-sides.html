@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Transposition of the Two Sides — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-transposition-of-the-two-sides"><strong>The Transposition of the Two Sides</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>The operators of the physical corpus are written on the left. A right multiplication appears only inside a pair, where it closes the action on the second side. The practice does not rest on a convention of taste. A right multiplication is a left multiplication read through a reversal of the algebra, and the reversal is written down once:</p>
+<p>$$
+\boxed{\;R_{\tilde Q}=\tau^{-1}\,L_{\tau(\tilde Q)}\,\tau\;},\qquad \tau(xy)=\tau(y)\tau(x).
+$$</p>
+<p>The whole of the article is that identity, its hypotheses and its consequences. The hypothesis is the reversal $\tau(xy)=\tau(y)\tau(x)$, and nothing else: order two is not used anywhere, and the reversals of the algebra are in general not involutions. With $\tau$ in hand the two families $L(\mathbb{B})$ and $R(\mathbb{B})$ are one family read in two frames and every two-sided operator is a word in left multiplications and $\tau$.</p>
+<p><strong>What the reversal is not.</strong> It is not the operator transpose $\approx$ of <em>Adjoint Pair of $L$ and $R$ Operators</em>, which takes an operator of $\mathbb{B}$ to an operator of $\mathbb{B}$ through a form. It is not the swap of <em>Operator Chirality on the Biquaternion Algebra</em>, which exchanges the two sides of an operator and leaves the parameters where they are. A reversal acts on the elements of the algebra, it carries the parameters, and it reverses their product. That last property is the entire mechanism, and it is the one property the coefficient conjugation lacks while appearing to have it.</p>
+<p>The two families are <em>Operators Acting 1 Side</em>, their products <em>Operators Acting 2 Side</em>, the ambient space <em>The Endomorphisms of the Biquaternion Algebra</em>. Everything below is written in the coefficient frame $e_t,\vec e_x,\vec e_y,\vec e_z$, with the central $i$ and the products $\vec e_x\vec e_y=\vec e_z$, $\vec e_y\vec e_z=\vec e_x$, $\vec e_z\vec e_x=\vec e_y$, $\vec e_x^2=\vec e_y^2=\vec e_z^2=-e_t$. The article is pure algebra; no step uses a topology, a distance or a limit.</p>
+<h2 id="the-reversals-of-the-algebra">The Reversals of the Algebra</h2>
+<p><strong>Definition.</strong> A <strong>reversal</strong> of $\mathbb{B}$ is an additive bijection $\tau$ with</p>
+<p>$$
+\tau(xy)=\tau(y)\tau(x)\qquad\text{for all }x,y\in\mathbb{B},
+$$</p>
+<p>which is either $\mathbb{C}$-linear, $\tau(\lambda x)=\lambda\tau(x)$, or $\mathbb{C}$-<strong>antilinear</strong>, $\tau(\lambda x)=\bar\lambda\,\tau(x)$, for central $\lambda$. The two grades are kept apart, because the operators of the corpus are complex-linear and a reversal of the second grade does not act on them. The inverse of a reversal is a reversal of the same grade.</p>
+<p><strong>Theorem ($\natural$ is a complex-linear reversal).</strong> The natural conjugation, $\natural(e_t)=e_t$ and $\natural(\vec e_k)=-\vec e_k$, satisfies $\natural(xy)=\natural(y)\natural(x)$.</p>
+<p><em>Proof.</em> Three cases on the basis, in the frame above. First, a product with $e_t$ is unchanged by the reversal of the order, because $e_t$ is the unit and $\natural$ fixes it. Second, $\vec e_k\vec e_k=-e_t$ is a scalar, and two signs cancel: $\natural(\vec e_k\vec e_k)=-e_t=\natural(\vec e_k)\natural(\vec e_k)$. Third, for distinct $k\ne l$ the product $\vec e_k\vec e_l$ is $\pm$ the third unit $\vec e_m$, so $\natural(\vec e_k\vec e_l)=\mp\vec e_m$; and $\natural(\vec e_l)\natural(\vec e_k)=(-\vec e_l)(-\vec e_k)=-\vec e_k\vec e_l=\mp\vec e_m$, the distinct units anticommuting. The two sides agree in the three cases, and both sides are additive and $\mathbb{C}$-linear on the coordinates.</p>
+<p><strong>Remark (why the sign falls on a product).</strong> A map that negates a basis either preserves a product or reverses it, according to which of the two gets the sign. On the products of two distinct units the exchange of the order carries a sign, and the double negation supplies exactly that sign. On the squares the exchange carries none, because a square is central, and the double negation supplies none either. The two cases agree, and they agree for the same reason.</p>
+<p><strong>Theorem (the coefficient conjugation is not a reversal).</strong> The map $\bar{\cdot}$ sending each of the four coefficients to its conjugate is a $\mathbb{C}$-antilinear automorphism, $\overline{xy}=\bar x\,\bar y$.</p>
+<p><em>Proof.</em> The structure constants of the algebra in the coefficient frame are real, the products of the basis being $0$, $\pm e_\mu$ or $-e_t$, so conjugating the coordinates of a product conjugates nothing beyond the coordinates of the two factors.</p>
+<p>$\bar{\cdot}$ preserves the product instead of reversing it, and it is antilinear, so it fails both the reversal and the linearity grade. <strong>It is the standing trap of the subject</strong>: it looks like a transposition, it exchanges nothing, and an identity built on it is false for every noncentral parameter.</p>
+<p><strong>Corollary ($\ast$ is an antilinear reversal).</strong> The Hermitian conjugation $\ast=\natural\circ\bar{\cdot}$ satisfies $\ast(xy)=\ast(y)\ast(x)$ and $\ast(\lambda x)=\bar\lambda\,\ast(x)$.</p>
+<p><em>Proof.</em> $\ast(xy)=\natural(\bar x\bar y)=\natural(\bar y)\natural(\bar x)=\ast(y)\ast(x)$, the second equality being the theorem on $\natural$ and the reversal of the two conjugated factors.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>$\tau$</th>
+<th>linearity</th>
+<th>reverses the product</th>
+<th>fixed space</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\natural$</td>
+<td>$\mathbb{C}$-linear</td>
+<td>yes</td>
+<td>$\mathbb{C}e_t$</td>
+</tr>
+<tr>
+<td>$\ast$</td>
+<td>$\mathbb{C}$-antilinear</td>
+<td>yes</td>
+<td>$\mathbb{B}_{\Psi}$</td>
+</tr>
+<tr>
+<td>$\bar{\cdot}$</td>
+<td>$\mathbb{C}$-antilinear</td>
+<td><strong>no</strong>, preserves it</td>
+<td>—</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Remark (all the complex-linear reversals).</strong> For any invertible $U$ the map $\tau_U(x)=U\natural(x)U^{-1}$ is a complex-linear reversal, and each of them arises this way, because every $\mathbb{C}$-linear automorphism of a central simple algebra is inner (<em>Biquaternion Automorphisms and Derivations</em>, §<em>Skolem–Noether</em>) and the composite of two reversals is an automorphism. The reversal is therefore a choice of $U$, and the choice the corpus makes is $U=e_t$, which is $\natural$ itself. For a complex $U$ the map $\tau_U$ is in general <strong>not</strong> an involution: it is a reversal all the same, and the identity of the next section uses $\tau^{-1}$ and never $\tau$ alone.</p>
+<h2 id="conjugation-by-a-reversal">Conjugation by a Reversal</h2>
+<p><strong>Theorem (the two families are conjugate).</strong> For a reversal $\tau$ and every $\tilde Q$,</p>
+<p>$$
+\tau L_{\tilde Q}\tau^{-1}=R_{\tau(\tilde Q)},\qquad
+\tau R_{\tilde Q}\tau^{-1}=L_{\tau(\tilde Q)} .
+$$</p>
+<p><em>Proof.</em> $\tau\bigl(L_{\tilde Q}\tau^{-1}y\bigr)=\tau\bigl(\tilde Q\,\tau^{-1}y\bigr)=\tau(\tau^{-1}y)\,\tau(\tilde Q)=y\,\tau(\tilde Q)=R_{\tau(\tilde Q)}y$ for every $y$, and $\tau$ is bijective. The second line is the same computation with the two factors of the product exchanged, and $\tau^{-1}$ is a reversal of the same linearity grade.</p>
+<p><strong>Corollary (one family in two frames).</strong> The map $\mathcal T(T)=\tau T\tau^{-1}$ on $\operatorname{End}_{\mathbb{C}}(\mathbb{B})$ is multiplicative, $\mathcal T(ST)=\mathcal T(S)\mathcal T(T)$; it is $\mathbb{C}$-linear in $T$ when $\tau$ is $\mathbb{C}$-linear and conjugate-linear in $T$ when $\tau$ is antilinear; and it exchanges the two images,</p>
+<p>$$
+\mathcal T\bigl(L(\mathbb{B})\bigr)=R(\mathbb{B}),\qquad \mathcal T\bigl(R(\mathbb{B})\bigr)=L(\mathbb{B}).
+$$</p>
+<p><strong>Corollary (a two-sided operator stays two-sided).</strong> $\mathcal T\bigl(L_{\tilde Q_1}R_{\tilde Q_2}\bigr)=L_{\tau(\tilde Q_2)}R_{\tau(\tilde Q_1)}$. The two sides exchange and the two parameters are carried. The corpus already records the case $\tau=\natural$ in one line, $\natural L_{\tilde Q}\natural=R_{\natural(\tilde Q)}$ (<em>Operator Chirality on the Biquaternion Algebra</em>); what the theorem adds is that the property is a property of the reversal and not of that one map.</p>
+<h2 id="the-factoring">The Factoring</h2>
+<p><strong>Theorem (a right multiplication is a left one).</strong> $R_{\tilde Q}=\tau^{-1}L_{\tau(\tilde Q)}\tau$, and therefore</p>
+<p>$$
+\boxed{\;L_{\tilde Q_1}R_{\tilde Q_2}=L_{\tilde Q_1}\,\tau^{-1}\,L_{\tau(\tilde Q_2)}\,\tau\;}.
+$$</p>
+<p><em>Proof.</em> The theorem of the preceding section reads $\tau R_{\tilde Q}=L_{\tau(\tilde Q)}\tau$; composing with $\tau^{-1}$ on the left gives the first identity, and substituting it into the product gives the second.</p>
+<p><strong>Reading.</strong> Both multiplications act on the left. The right factor becomes a left factor at the price of one application of $\tau$ before it and one of $\tau^{-1}$ after. A computation that appears to need a right multiplication needs two left multiplications and one reversal.</p>
+<p><strong>Corollary (the anti-representation explains itself).</strong> The right family is an anti-representation, $R_{\tilde Q_1}R_{\tilde Q_2}=R_{\tilde Q_2\tilde Q_1}$, while the assignment $\tilde Q\mapsto L_{\tau(\tilde Q)}$ is a representation. The first is the second conjugated by $\tau$:</p>
+<p>$$
+\tau^{-1}L_{\tau(\tilde Q_1)}\tau\;\tau^{-1}L_{\tau(\tilde Q_2)}\tau
+=\tau^{-1}L_{\tau(\tilde Q_2\tilde Q_1)}\tau .
+$$</p>
+<p>The reversal inside the right family and the reversal inside $\tau$ are the same reversal, read on the parameters and on the products respectively. Nothing is added to the algebra to get an anti-representation; one conjugation removes it.</p>
+<p><strong>Corollary (generation).</strong> The operators of $\mathbb{B}$ are generated by the left multiplications together with $\tau$ and $\tau^{-1}$; the right family adds no generator.</p>
+<p><em>Proof.</em> The left and the right families together generate $\operatorname{End}_{\mathbb{C}}(\mathbb{B})$, by $\mathbb{B}\otimes_{\mathbb{C}}\mathbb{B}_{\mathrm{opp}}\cong\operatorname{End}_{\mathbb{C}}(\mathbb{B})$ (<em>The Enveloping Operator Algebra of the Biquaternion Algebra and the Bi-module Structure</em>). And every right multiplication is $\tau^{-1}L\tau$ by the theorem above, so it lies in the algebra generated by $L(\mathbb{B})$ and $\tau,\tau^{-1}$.</p>
+<h2 id="the-parameter">The Parameter</h2>
+<p><strong>Proposition.</strong> $R_{\tilde Q}=L_{\tilde Q}$ exactly when $\tilde Q$ is central.</p>
+<p><em>Proof.</em> The identity $x\tilde Q=\tilde Qx$ for every $x$ is the definition of the centre, which is $\mathbb{C}e_t$.</p>
+<p>The two operators agree only on the scalars. Elsewhere they are compared by the reversal, which transports the parameter: the right multiplication by $\tilde Q$ is a left multiplication by $\tau(\tilde Q)$.</p>
+<p><strong>Proposition (the fixed-space shortcut).</strong> If $\tau(\tilde Q)=\tilde Q$, then $\tau(x\tilde Q)=\tilde Q\,\tau(x)$ for every $x$: on the fixed space of the reversal, the right multiplication by $\tilde Q$ is the left multiplication by $\tilde Q$ on the reversed element.</p>
+<p><em>Proof.</em> $\tau(x\tilde Q)=\tau(\tilde Q)\tau(x)=\tilde Q\tau(x)$.</p>
+<p>The fixed spaces are the last column of the table: the centre for $\natural$, where the shortcut is the triviality $R=L$, and the sector $\mathbb{B}_{\Psi}$ for $\ast$, where it is a genuine transfer, since $R_{\tilde Q}\ne L_{\tilde Q}$ off the centre.</p>
+<p><strong>Remark (the two errors, which are distinct).</strong> The first is to take the coefficient conjugation for a reversal: it preserves the product, so the family it is expected to exchange is not exchanged, and the identity it is expected to give fails for every noncentral parameter. The second is to drop the transport of the parameter: the identity $\tau(x\tilde Q)=\tilde Q\tau(x)$ holds on the fixed space and nowhere else, so an equation written with the same parameter on both sides is a statement about a fixed point of $\tau$ and not a general one.</p>
+<h2 id="summary">Summary</h2>
+<p>A reversal of the biquaternion algebra is a bijection that sends a product to the product of the factors in the other order, and it is either complex-linear or conjugation-linear. The natural conjugation $\natural$ is a complex-linear reversal, and the reason is one line: the double negation supplies the sign that the exchange of the order supplies on the products of two distinct vector units, and supplies none on the squares, where the exchange supplies none either. The Hermitian conjugation $\ast$ is a conjugation-linear reversal. The coefficient conjugation is neither: it preserves the product and conjugates the scalars, so it exchanges nothing and is the standing trap of the subject. All the complex-linear reversals are the maps $U\natural(\cdot)U^{-1}$, which are in general not involutions; the identity below uses only the reversal, never the order.</p>
+<p>Conjugation by a reversal exchanges the two regular families, $\tau L\tau^{-1}=R_{\tau(\cdot)}$ and $\tau R\tau^{-1}=L_{\tau(\cdot)}$, so the two families are one family in two frames, and a two-sided operator stays two-sided under the conjugation with its sides exchanged and its parameters carried. Solving the same identity for the right factor gives the statement of the practice:</p>
+<p>$$
+R_{\tilde Q}=\tau^{-1}L_{\tau(\tilde Q)}\tau,\qquad
+L_{\tilde Q_1}R_{\tilde Q_2}=L_{\tilde Q_1}\,\tau^{-1}\,L_{\tau(\tilde Q_2)}\,\tau .
+$$</p>
+<p>A two-sided operator is two left multiplications separated by one reversal. The anti-representation of the right family is the representation of the left family conjugated by $\tau$, and the left family together with $\tau$ generates every operator of the algebra.</p>
+<p>The parameter is carried by the reversal, so the shortcut that drops it is exact on the fixed space and false off it, the fixed spaces being the centre for $\natural$ and the sector $\mathbb{B}_{\Psi}$ for $\ast$. Nothing else is needed: the article never leaves the algebra of operators.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\tau$, $\tau(xy)=\tau(y)\tau(x)$</td>
+<td>a reversal, complex-linear or conjugation-linear; order two is <strong>not</strong> required</td>
+</tr>
+<tr>
+<td>$\natural$</td>
+<td>the natural conjugation, $\mathrm{id}$ on the centre and $-\mathrm{id}$ on the span of $\vec e_x,\vec e_y,\vec e_z$; a complex-linear reversal</td>
+</tr>
+<tr>
+<td>$\ast=\natural\bar{\cdot}$</td>
+<td>the Hermitian conjugation; a conjugation-linear reversal</td>
+</tr>
+<tr>
+<td>$\bar{\cdot}$</td>
+<td>the coefficient conjugation; a conjugation-linear <strong>automorphism</strong>, not a reversal</td>
+</tr>
+<tr>
+<td>fixed space: $\mathbb{C}e_t$ for $\natural$, $\mathbb{B}_{\Psi}$ for $\ast$</td>
+<td>the parameters the reversal does not carry</td>
+</tr>
+<tr>
+<td>$\tau L_{\tilde Q}\tau^{-1}=R_{\tau(\tilde Q)}$, $\tau R_{\tilde Q}\tau^{-1}=L_{\tau(\tilde Q)}$</td>
+<td>conjugation by a reversal exchanges the two families</td>
+</tr>
+<tr>
+<td>$\mathcal T(T)=\tau T\tau^{-1}$</td>
+<td>the conjugation on $\operatorname{End}_{\mathbb{C}}(\mathbb{B})$; linear in $T$ for $\tau$ linear, conjugate-linear for $\tau$ antilinear</td>
+</tr>
+<tr>
+<td>$R_{\tilde Q}=\tau^{-1}L_{\tau(\tilde Q)}\tau$</td>
+<td>the right multiplication as a left multiplication</td>
+</tr>
+<tr>
+<td>$L_{\tilde Q_1}R_{\tilde Q_2}=L_{\tilde Q_1}\tau^{-1}L_{\tau(\tilde Q_2)}\tau$</td>
+<td>a two-sided operator as two left multiplications</td>
+</tr>
+<tr>
+<td>$\tau_U(x)=U\natural(x)U^{-1}$</td>
+<td>the general complex-linear reversal, in general not an involution</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li><a href="operators-acting-1-side.html">Operators Acting 1 Side</a>, for the two families $L(\mathbb{B})$ and $R(\mathbb{B})$, their injectivity and their composition laws, which are the two laws the reversal exchanges</li>
+<li><a href="the-endomorphisms-of-the-biquaternion-algebra.html">The Endomorphisms of the Biquaternion Algebra</a>, for the operator space on which the conjugation $\mathcal T$ acts and for the real-linear effects of the conjugations</li>
+<li><a href="operators-acting-2-side.html">Operators Acting 2 Side</a>, for the family that this article rewrites as two left multiplications</li>
+<li><a href="hermitian-pair-of-operators-acting-as-1-side.html">Hermitian pair of operators acting as 1 side</a>, for the use of the factoring $R_{\tilde Q^{\ast}}=\ast^{-1}L_{\tilde Q}\ast$ on a pair of equations, where the transported parameter is the first parameter itself</li>
+<li><a href="operator-chirality-on-the-biquaternion-algebra.html">Operator Chirality on the Biquaternion Algebra</a>, for the case $\tau=\natural$ of the conjugation theorem and for the swap, which is the operator-level comparison and not the element-level one</li>
+<li><a href="adjoint-pair-of-l-and-r-operators.html">Adjoint Pair of $L$ and $R$ Operators</a>, for the operator transpose $\approx$ and the four adjoints, which act on operators and take their input from a form</li>
+<li><a href="the-enveloping-operator-algebra-of-the-biquaternion-algebra-and-the-bi-module-structure.html">The Enveloping Operator Algebra of the Biquaternion Algebra and the Bi-module Structure</a>, for $\mathbb{B}^{\mathrm e}=\mathbb{B}\otimes_{\mathbb{C}}\mathbb{B}_{\mathrm{opp}}\cong\operatorname{End}_{\mathbb{C}}(\mathbb{B})$, on which the generation statement rests</li>
+<li><a href="biquaternion-automorphisms-and-derivations.html">Biquaternion Automorphisms and Derivations</a>, for the inner automorphisms and Skolem–Noether, which give the reading of the general reversal $\tau_U$ as a choice of $U$</li>
+<li><a href="anti-automorphisms-twisted-by-the-base-involution.html">Anti-Automorphisms Twisted by the Base Involution</a>, for the coset of the reversals and the place of $\bar{\cdot}$ among the semilinear maps</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>
