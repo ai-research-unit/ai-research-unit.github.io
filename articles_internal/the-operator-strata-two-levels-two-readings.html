@@ -1,0 +1,744 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Four Strata at Four Levels — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-four-strata-at-four-levels"><strong>The Four Strata at Four Levels</strong></h1>
+<h2 id="the-plan">The Plan</h2>
+<p><strong>One grid: four strata, four levels.</strong> The strata are the corpus's own four sectors, named by the two bits $\langle\tilde Q\rangle_{\natural}$ (N-regular or N-degenerate) and $B^{2}$ (spectrally regular or spectrally degenerate). The levels are the four readings of an operator: the algebra of its matrix (§1), the same with derivative entries (§2), the physics of the element (§3), the physics of the gradient (§4).</p>
+<p><strong>The two bits are a determinant and a discriminant.</strong></p>
+<p>$$
+\langle\tilde Q\rangle_{\natural}=Q_{t}^{2}+Q_{x}^{2}+Q_{y}^{2}+Q_{z}^{2},\qquad B^{2}=Q_{x}^{2}+Q_{y}^{2}+Q_{z}^{2}.
+$$</p>
+<p>$\langle\tilde Q\rangle_{\natural}$ is the determinant of the multiplication operator and decides invertibility. $B^{2}$ is the discriminant of the characteristic polynomial and decides whether the two eigenvalues are distinct.</p>
+<p><strong>§1 carries a second subject, and it is the reason the section is long.</strong> The polar representation of an element is not the same object in the four strata. It degrades in four steps: four factors; four factors with the two angles locked to one number; two objects, a complex scale and an idempotent; one object, the element itself. §1.5 puts the four side by side.</p>
+<p><strong>§1 also places the three spins, and the answer is one spin per stratum.</strong> The three subcarriers of $\mathbb{B}$ are $Z$ (spin $0$), $S_\pm$ (spin $\tfrac12$) and $V$ (spin $1$), and they sit in $\Sigma_{10}$, $\Sigma_{01}$ and $\Sigma_{11}$ respectively. §1.6 proves it. The inclusion runs one way and only one way: a stratum is bigger than its spin space, so no stratum has a spin of its own, and no stratum holds two.</p>
+<p><strong>What the grid shows.</strong> The two bits classify mass and motion at the level of an element. At the level of a module they classify nothing, and §3.5 and §4.5 say why the same stratum carries every spin once a field is put on it.</p>
+<h2 id="1-the-operator-level">1. The Operator Level</h2>
+<p><strong>The operator.</strong> Left multiplication $L_{\tilde Q}:\tilde X\mapsto\tilde Q\tilde X$ is a $4\times4$ complex matrix once four units are fixed as a basis, and $\det L_{\tilde Q}=\langle\tilde Q\rangle_{\natural}^{2}$. Right multiplication has the same determinant, spectrum and Jordan type, so this section speaks of $L_{\tilde Q}$; everything carries to $R_{\tilde Q}$ unchanged. Two facts do all the work: $\det L_{\tilde Q}$ says whether $L_{\tilde Q}$ is invertible, and the minimal polynomial says whether it is diagonalisable.</p>
+<h3 id="11-n-regular-spectrally-regular">1.1 N-Regular, Spectrally Regular</h3>
+<p><strong>The shape.</strong> $\langle\tilde Q\rangle_{\natural}\neq0$ and $B^{2}\neq0$ together are the generic element: the whole algebra minus two complex hypersurfaces. Write $B=\sqrt{B^{2}}$, one of the two square roots.</p>
+<p><strong>The operator.</strong> Invertible, rank four, with the two eigenvalues</p>
+<p>$$
+\lambda_{\pm}=Q_{t}\pm iB,\qquad \lambda_{+}\neq\lambda_{-},
+$$</p>
+<p>each of multiplicity two, each with a two-dimensional eigenspace. The minimal polynomial is $(x-\lambda_{+})(x-\lambda_{-})$, square-free, so $L_{\tilde Q}$ is diagonalisable. Nothing is defective.</p>
+<p><strong>The polar representation.</strong> The four-factor word, and it is the only stratum where all four factors are independent:</p>
+<p>$$
+\boxed{\;\tilde Q=r\,e^{i\alpha}\,\tilde U_{\mathrm b}\,\tilde u_{\mathrm r}
+=r\,e^{i\alpha}\exp\Bigl(i\frac{\theta_{\mathrm{rpd}}}{2}\vec u_{\mathrm b}\Bigr)\exp\Bigl(\frac{\theta}{2}\vec u_{\mathrm r}\Bigr)\;}
+$$</p>
+<p>with</p>
+<p>$$
+\tilde U_{\mathrm b}=\cosh\frac{\theta_{\mathrm{rpd}}}{2}\,e_{t}+i\sinh\frac{\theta_{\mathrm{rpd}}}{2}\,\vec u_{\mathrm b},
+\qquad
+\tilde u_{\mathrm r}=\cos\frac{\theta}{2}\,e_{t}+\sin\frac{\theta}{2}\,\vec u_{\mathrm r}.
+$$</p>
+<p>The scale is the modulus, $r=\sqrt{\lvert\langle\tilde Q\rangle_{\natural}\rvert}$, the phase is half the argument of the norm, $\alpha=\tfrac12\operatorname{Arg}\langle\tilde Q\rangle_{\natural}$, the boost has a free rapidity and a free axis, the rotor has a free angle and a free axis. Everything is computed from $Q_{t},Q_{x},Q_{y},Q_{z}$ by closed formulas — <em>Exponential Polar Decomposition of an N-Regular, Spectrally Regular Biquaternion</em>, §<em>The Result in Terms of the Coordinates</em>, where the two unit factors are boxed exactly as above.</p>
+<p><strong>What it costs.</strong> Nothing. The stratum is the only one where the polar word and the spectral decomposition are both available; <em>The N-Regular, Spectrally Regular Sector</em>, §<em>Consequences</em>: "in $\Sigma_{01}$ the polar word fails while the spectral decomposition survives, and in $\Sigma_{10}$ the spectral decomposition fails while the polar word survives."</p>
+<p><strong>Its dimension.</strong> Eight real, that is four complex: the stratum is an open set of $\mathbb{C}^{4}$.</p>
+<h3 id="12-n-regular-spectrally-degenerate">1.2 N-Regular, Spectrally Degenerate</h3>
+<p><strong>The shape.</strong> $B^{2}=0$ with $\langle\tilde Q\rangle_{\natural}\neq0$ forces the vector part to be a nilpotent, $\vec\Upsilon^{2}=0$, and the element is</p>
+<p>$$
+\tilde Q=Q_{t}\bigl(e_{t}+\vec\Upsilon\bigr),\qquad \vec\Upsilon^{2}=0,\qquad Q_{t}\neq0 .
+$$</p>
+<p>The stratum has two halves and they must be kept apart. On the <strong>Jordan line</strong> $\vec\Upsilon\neq0$; on the <strong>scalar line</strong> $\vec\Upsilon=0$ and $\tilde Q=Q_{t}e_{t}$.</p>
+<p><strong>The operator.</strong> Invertible, rank four, one eigenvalue $Q_{t}$, and</p>
+<p>$$
+\mathrm{rank}\bigl(L_{\tilde Q}-Q_{t}\bigr)=2,\qquad \bigl(L_{\tilde Q}-Q_{t}\bigr)^{2}=0 .
+$$</p>
+<p>Two Jordan blocks of size two, no eigenbasis, minimal polynomial $(x-Q_{t})^{2}$. <em>The One-Sided Operator Exponential of an N-Regular, Spectrally Degenerate Biquaternion</em>, §<em>The Exponential at the Wall</em>: "Their product has the single eigenvalue $Q_{t}$, with two Jordan blocks of size two, and its spectrum carries no angle at all." On the scalar line $L_{\tilde Q}=Q_{t}$ exactly, which is diagonalisable, and the second bit is the only thing that keeps it out of $\Sigma_{11}$.</p>
+<p><strong>The polar representation.</strong> The word survives with the same four factors, and it is rigid.</p>
+<p>$$
+\boxed{\;\tilde Q=Q_{t}\bigl(e_{t}+\vec\Upsilon\bigr)=r\,e^{i\alpha}\,\tilde U_{\mathrm b}\,\tilde u_{\mathrm r}\;}
+$$</p>
+<p>with $r=\lvert Q_{t}\rvert$, $\alpha=\arg\Rho$ where $\Rho=\varepsilon Q_{t}$ is the principal root of $Q_{t}^{2}$, and $\varepsilon=\pm1$ the sign of that root. <strong>The product of the two unit factors is $\pm$unipotent</strong>:</p>
+<p>$$
+\tilde U_{\mathrm b}\tilde u_{\mathrm r}=\varepsilon\bigl(e_{t}+\vec\Upsilon\bigr),
+$$</p>
+<p>so its two eigenvalues coincide and it has no eigenbasis — the word's unit part is not a genuine boost times a genuine rotation. <strong>The two angles are locked</strong>:</p>
+<p>$$
+\cosh\frac{\theta_{\mathrm{rpd}}}{2}\cos\frac{\theta}{2}=\varepsilon,
+\qquad
+\varepsilon\tan\frac{\theta}{2}=\sinh\frac{\theta_{\mathrm{rpd}}}{2}=a ,
+$$</p>
+<p>where $\vec\Upsilon=\vec A+i\vec B$ with $\vec A\cdot\vec B=0$ and $\lvert\vec A\rvert=\lvert\vec B\rvert=a$. <strong>One real number $a$ replaces the two angles.</strong> The corpus says the consequence in one line: "the four word parameters reduce to the single complex number $Q_{t}$, one angle and a frame."</p>
+<p><strong>What it costs.</strong> The two rotations are no longer independent: the boost and the rotor turn together, so the element carries one angle's worth of freedom and no more. On the scalar line $a=0$, both angles are zero, and the word collapses to $\tilde Q=re^{i\alpha}e_{t}$.</p>
+<p><strong>Its dimension.</strong> Six real. The coordinates are $Q_{t}$ (two real) and the complex null vector $\vec\Upsilon$ (four real: one complex equation in $\mathbb{C}^{3}$).</p>
+<h3 id="13-n-degenerate-spectrally-regular">1.3 N-Degenerate, Spectrally Regular</h3>
+<p><strong>The shape.</strong> $\langle\tilde Q\rangle_{\natural}=0$ with $B^{2}\neq0$ is the idempotent stratum: every element is a nonzero complex multiple of a non-trivial idempotent,</p>
+<p>$$
+\tilde Q=c\,\tilde\Pi,\qquad \tilde\Pi^{2}=\tilde\Pi,\qquad c\neq0,
+$$</p>
+<p>and the idempotent is the element's own spectral idempotent, $\tilde\Pi=\tilde Q/(2Q_{t})$.</p>
+<p><strong>The operator.</strong> Singular and semisimple at the same time. Rank two, and</p>
+<p>$$
+\mathrm{spec}\,L_{\tilde Q}=\{c,c,0,0\},\qquad L_{\tilde Q}^{2}=c\,L_{\tilde Q},\qquad \text{minimal polynomial } x(x-c).
+$$</p>
+<p>The spectrum is $\{c,0\}$ for the element and $\{c,c,0,0\}$ for the matrix, because each eigenvalue is carried twice. The minimal polynomial is square-free, so <strong>the operator is diagonalisable despite being singular</strong>: image and kernel are complementary, each of dimension two, and there is no Jordan defect. <em>The N-Degenerate, Spectrally Regular Sector</em>, §<em>Spectrum and Minimal Polynomial</em>: "The spectrum is $\{c,0\}$, with distinct roots, and the minimal polynomial is $X(X-c)$. The element is semisimple"; §<em>The One-Sided Operators</em>: "Both operators have complex rank $2$, with images the minimal left and right ideals $\mathbb{B}\tilde\Pi$ and $\tilde\Pi\mathbb{B}$".</p>
+<p><strong>The polar representation.</strong> The four-factor word fails, and it fails at the modulus, not at the angles:</p>
+<p>$$
+\Rho=\sqrt{\langle\tilde Q\rangle_{\natural}}=0,
+$$</p>
+<p>so there is no $r>0$ and no unit factor of norm one — the product of the four factors would have norm zero and could not equal a nonzero element (<em>The Polar Decomposition of an N-Degenerate Biquaternion</em>, §<em>The Vanishing of the Modulus</em>). What replaces it is a <strong>two-object word</strong>: one complex number and one idempotent,</p>
+<p>$$
+\tilde Q=c\,\tilde\Pi .
+$$</p>
+<p>The scale and the phase merge into the single complex number $c$; both unit factors are gone. Equivalently the two-factor pair survives, with a Hermitian factor of matrix rank one: $\tilde Q=\tilde Q_{H}\tilde Q_{0}$ with $\tilde Q_{H}^{2}=2a\tilde Q_{H}$, $\operatorname{spec}\tilde Q_{H}=\{0,2a\}$, and $\tilde Q_{0}$ a partial isometry which is not $*$-unitary, its support projection $\tilde Q_{H}/(2a)$ being minimal. The formulas for $\tilde Q_{H}$, $a$ and $\tilde Q_{0}$ are collected once in §1.5. The corpus's own summary is the honest one: "The failure is caused by the norm, not by the spectrum."</p>
+<p><strong>What it costs.</strong> The two angle slots are gone: an idempotent cannot be rotated, only scaled. The spectral reading survives in full.</p>
+<p><strong>Its dimension.</strong> Six real. The coordinates are the complex scale $c$ (two real) and the minimal idempotent (four real, one complex equation $\zeta^{2}=e_{t}$ for the pure root $\zeta$ in $\tilde\Pi=\tfrac12(e_{t}+\zeta)$).</p>
+<h3 id="14-n-degenerate-spectrally-degenerate">1.4 N-Degenerate, Spectrally Degenerate</h3>
+<p><strong>The shape.</strong> Both bits vanish, and the two conditions together give $Q_{t}=0$, because $\langle\tilde Q\rangle_{\natural}=Q_{t}^{2}+B^{2}$. So the element is pure and null:</p>
+<p>$$
+\tilde Q=\vec\Upsilon,\qquad \vec\Upsilon^{2}=0,\qquad \vec\Upsilon\neq0 .
+$$</p>
+<p><strong>The operator.</strong> Square-zero and nonzero,</p>
+<p>$$
+L_{\tilde Q}\neq0,\qquad L_{\tilde Q}^{2}=0,\qquad \mathrm{rank}\,L_{\tilde Q}=2,
+$$</p>
+<p>with minimal polynomial $x^{2}$, not $x$. The image lies inside the kernel and there is no eigenbasis. <em>The N-Degenerate, Spectrally Degenerate Sector</em>, §<em>The One-Sided Operators</em>: "Left and right multiplication by $\tilde Q$ both have complex rank $2$, with kernels $A(\tilde Q)$ and $B(\tilde Q)$. Both are square-zero operators"; §<em>Spectrum and Minimal Polynomial</em>: "The spectrum is $\{0\}$ and the minimal polynomial is $X^2$, not $X$".</p>
+<p><strong>The polar representation.</strong> There is no word. The modulus–unit form and the four-factor word both fail, since there is no scalar part to carry a scale or a phase, and <em>the same article</em> records it: "The modulus is $\Rho=\sqrt{\langle\tilde Q\rangle_{\natural}}=0$, so the modulus–unit polar decomposition ... has no value on the sector: there is no unit factor of norm one."</p>
+<p><strong>The only surviving structure is the pair, and it is rank one.</strong> $\tilde Q\tilde Q^{*}=\langle\tilde Q\rangle_{*}e_{t}+i\vec W$ is still nonzero, because the Hermitian norm $\langle\tilde Q\rangle_{*}$ is not the algebraic norm $\langle\tilde Q\rangle_{\natural}$. So $a=\sqrt{\langle\tilde Q\rangle_{*}/2}>0$, the Hermitian factor $\tilde Q_{H}=ae_{t}+i\vec W/(2a)$ is rank one, and $\tilde Q=\tilde Q_{H}\tilde Q_{0}$ still holds. <strong>The element is its own word</strong>: nothing is factored off it but a positive rank-one Hermitian piece and a phase-free isometry.</p>
+<p><strong>What it costs.</strong> Everything except the element. This is the corpus's "everything fails" sector: invertibility, the Peirce decomposition relative to $\tilde Q$ off the origin, the eigenbasis, the modulus–unit polar form, and the injectivity of both multiplications.</p>
+<p><strong>Its dimension.</strong> Four real. The coordinates are a complex scale and a complex-null direction modulo the rotation the scale performs on it.</p>
+<h3 id="15-the-four-polar-representations-compared">1.5 The Four Polar Representations Compared</h3>
+<p><strong>The two unit factors, defined once.</strong> Every polar word in this article is built from these two, so they are written here and not repeated.</p>
+<p>$$
+\tilde U_{\mathrm b}=\cosh\frac{\theta_{\mathrm{rpd}}}{2}\,e_{t}+i\sinh\frac{\theta_{\mathrm{rpd}}}{2}\,\vec u_{\mathrm b},
+\qquad
+\tilde u_{\mathrm r}=\cos\frac{\theta}{2}\,e_{t}+\sin\frac{\theta}{2}\,\vec u_{\mathrm r},
+$$</p>
+<p>with $\theta_{\mathrm{rpd}}\ge0$, $\theta\in[0,2\pi)$, and $\vec u_{\mathrm b},\vec u_{\mathrm r}$ real unit vectors. $\tilde U_{\mathrm b}$ is the boost, $\tilde u_{\mathrm r}$ the rotor, and both have norm one.</p>
+<p><strong>The word, written out in each stratum.</strong> The third column is the point of the table: it shows exactly which factor exists in each case.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>stratum</th>
+<th>the polar word, written out</th>
+<th>status</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\Sigma_{11}$</td>
+<td>$\tilde Q=r\,e^{i\alpha}\,\tilde U_{\mathrm b}\,\tilde u_{\mathrm r}$, $r=\sqrt{\lvert\langle\tilde Q\rangle_{\natural}\rvert}$, $\alpha=\tfrac12\operatorname{Arg}\langle\tilde Q\rangle_{\natural}$</td>
+<td>four independent factors; no constraint linking them</td>
+</tr>
+<tr>
+<td>$\Sigma_{10}$</td>
+<td>$\tilde Q=r\,e^{i\alpha}\bigl[\varepsilon\,(e_{t}+\vec\Upsilon)\bigr]=Q_{t}\bigl(e_{t}+\vec\Upsilon\bigr)$, $\vec\Upsilon^{2}=0$</td>
+<td>four factors, but $\tilde U_{\mathrm b}\tilde u_{\mathrm r}=\varepsilon(e_{t}+\vec\Upsilon)$ is $\pm$unipotent</td>
+</tr>
+<tr>
+<td>$\Sigma_{01}$</td>
+<td>$\tilde Q=c\,\tilde\Pi$, $c=2Q_{t}$, $\tilde\Pi^{2}=\tilde\Pi$, $\operatorname{tr}\tilde\Pi=1$</td>
+<td>two objects: no $r$, no unit factor</td>
+</tr>
+<tr>
+<td>$\Sigma_{00}$</td>
+<td>no word; only the two-factor pair of the next paragraph</td>
+<td>the word does not exist</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Why the modulus dies at $\Sigma_{01}$ and $\Sigma_{00}$.</strong> The scale is $r=\sqrt{\lvert\langle\tilde Q\rangle_{\natural}\rvert}$, and $\langle\tilde Q\rangle_{\natural}=0$ on both strata. So $r=0$, and no unit factor of norm one can multiply to give a nonzero element. The word fails at the scale, not at the angles.</p>
+<p><strong>The constraint that locks the two angles at $\Sigma_{10}$.</strong> The unit part must be $\pm$unipotent, and that forces</p>
+<p>$$
+\cosh\frac{\theta_{\mathrm{rpd}}}{2}\cos\frac{\theta}{2}=\varepsilon,
+\qquad
+\varepsilon\tan\frac{\theta}{2}=\sinh\frac{\theta_{\mathrm{rpd}}}{2}=a,
+\qquad
+\vec\Upsilon=\vec A+i\vec B,\ \ \vec A\cdot\vec B=0,\ \ \lvert\vec A\rvert=\lvert\vec B\rvert=a .
+$$</p>
+<p>So both angles are functions of the single number $a$: <strong>one angle replaces two.</strong> At $a=0$ on the scalar line, both angles vanish and the word is its scale.</p>
+<p><strong>What replaces the word on the two degenerate strata.</strong> The same two-factor pair, with a Hermitian factor of matrix rank one and a partial isometry:</p>
+<p>$$
+\tilde Q=\tilde Q_{H}\tilde Q_{0},\qquad
+\tilde Q_{H}=a\,e_{t}+\frac{i}{2a}\vec W,\qquad
+a=\sqrt{\frac{\langle\tilde Q\rangle_{*}}{2}},\qquad
+\tilde Q\tilde Q^{*}=\langle\tilde Q\rangle_{*}e_{t}+i\vec W,\qquad
+\tilde Q_{0}=\frac{\tilde Q_{H}}{4a^{2}}\tilde Q,
+$$</p>
+<p>so $\tilde Q_{H}^{2}=2a\tilde Q_{H}$ and $\tilde Q_{H}$ has rank one. Verified on both strata: $\operatorname{rank}L_{\tilde Q_{H}}=2$ (matrix rank one), $\tilde Q_{0}\tilde Q_{0}^{*}$ and $\tilde Q_{0}^{*}\tilde Q_{0}$ are projections, $\tilde Q_{H}\tilde Q_{0}=\tilde Q$, and $\tilde Q_{0}$ is never $*$-unitary.</p>
+<p><strong>What differs between $\Sigma_{01}$ and $\Sigma_{00}$ is the scale, not the angles.</strong> In $\Sigma_{01}$ the scalar $c=2Q_{t}$ is nonzero and invertible, because $\langle\tilde Q\rangle_{\natural}=Q_{t}^{2}+B^{2}=0$ with $B^{2}\neq0$ gives $Q_{t}^{2}=-B^{2}\neq0$. <strong>So $\Sigma_{01}$ keeps a phase</strong>: the element is a nonzero complex number times an idempotent. In $\Sigma_{00}$ the element is nilpotent, no scalar multiple of it is an idempotent, and the phase is gone too.</p>
+<p><strong>The data, counted.</strong> The dimension column is a check on the word: the number of free parameters in the word must equal the real dimension of the stratum.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>stratum</th>
+<th>free data of the word</th>
+<th>count</th>
+<th>real dim</th>
+<th>spin readings</th>
+<th>carrier element here</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\Sigma_{11}$</td>
+<td>$r$, $\alpha$, $\theta_{\mathrm{rpd}}$, $\theta$, $\vec u_{\mathrm b}$, $\vec u_{\mathrm r}$</td>
+<td>$1+1+1+1+2+2$</td>
+<td>$8$</td>
+<td>$2\times\tfrac12$ and $0\oplus1$</td>
+<td>$\vec e_z$ (spin $1$)</td>
+</tr>
+<tr>
+<td>$\Sigma_{10}$</td>
+<td>$Q_{t}$, $a$, $\vec A$ direction, $\vec B$ direction in the plane $\perp\vec A$</td>
+<td>$2+1+2+1$</td>
+<td>$6$</td>
+<td>$2\times\tfrac12$ and $0\oplus1$</td>
+<td>$e_t$ (spin $0$)</td>
+</tr>
+<tr>
+<td>$\Sigma_{01}$</td>
+<td>$c$, the minimal idempotent $\tilde\Pi=\tfrac12(e_t+\vec\zeta)$, $\vec\zeta^{2}=e_t$</td>
+<td>$2+4$</td>
+<td>$6$</td>
+<td>$2\times\tfrac12$ and $0\oplus1$</td>
+<td>$\tilde\Pi_\pm$ (spin $\tfrac12$)</td>
+</tr>
+<tr>
+<td>$\Sigma_{00}$</td>
+<td>none: the element itself, $\vec\Upsilon^{2}=0$</td>
+<td>$4$</td>
+<td>$4$</td>
+<td>$2\times\tfrac12$ and $0\oplus1$</td>
+<td>none: the element is nilpotent</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>The spin column is the same in all four rows, and that is the result.</strong> Every element of the algebra, in every stratum, reads as two halves of $\tfrac12$ on the left and as $0\oplus1$ in the adjoint action. §1.6 proves both readings and states the one thing that does vary: which carrier element sits in the stratum.</p>
+<p><strong>Two readings of the table.</strong></p>
+<ul>
+<li><strong>The number of factors follows the number of surviving structures, not the codimension.</strong> $\Sigma_{11}$ and $\Sigma_{10}$ are both made of invertible elements, yet $\Sigma_{10}$ loses an angle, because its unit part is unipotent and its two unit factors cannot turn independently.</li>
+<li><strong>The two degenerate strata lose the same dimension and lose different things.</strong> $\Sigma_{01}$ keeps a complex scale and an idempotent; $\Sigma_{00}$ keeps neither, and its only structure is the square-zero operator.</li>
+</ul>
+<p><strong>What §1 settles.</strong> The four strata are told apart by a determinant, a discriminant and a minimal polynomial; their polar words by which factors survive; and their dimensions by how many parameters those factors carry.</p>
+<h3 id="16-spin-two-readings-of-the-same-four-dimensions">1.6 Spin: Two Readings of the Same Four Dimensions</h3>
+<p><strong>The algebra splits two ways, and the sum of the dimensions is four either way.</strong></p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>reading</th>
+<th>subspaces</th>
+<th>complex dims</th>
+<th>Casimir on each</th>
+<th>measured</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>left module</td>
+<td>$S_\pm=\mathbb{B}\tilde\Pi_\pm$, $\tilde\Pi_\pm=\tfrac12(e_t\pm i\vec u)$</td>
+<td>$2+2$</td>
+<td>$\tfrac34$</td>
+<td>left Casimir $=\tfrac34 I_4$</td>
+</tr>
+<tr>
+<td>adjoint</td>
+<td>$Z=\mathbb{C}e_t$, $V=\ker\operatorname{tr}$</td>
+<td>$1+3$</td>
+<td>$0$ and $2$</td>
+<td>eigenvalues $0,2,2,2$</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Reading 1, written on an element.</strong> For every $\tilde Q$, with no condition at all,</p>
+<p>$$
+\tilde Q=\tilde Q\tilde\Pi_+ + \tilde Q\tilde\Pi_-,
+$$</p>
+<p>and each summand lies in $S_\pm$, so each is a rank-one matrix and <strong>each is singular</strong>. Verified on $200$ random elements with random axes: the identity holds and both summands have $\langle\cdot\rangle_{\natural}=0$, $200/200$. <strong>Every element of the algebra is a sum of two elements of the spin-$\tfrac12$ spaces, in every stratum.</strong></p>
+<p><strong>Reading 2, written on the same element.</strong> $\tilde Q=Q_{t}e_{t}+\tilde Q_{V}$, with $Q_{t}e_{t}$ on the spin-$0$ line and $\tilde Q_{V}$ traceless, in the spin-$1$ space.</p>
+<p><strong>Why the two readings are not the same partition.</strong> The Casimir values give it away: $\tfrac34+\tfrac34=\tfrac32$ on the left, but $0+2=2$ in the adjoint. The two readings cut four dimensions into different pieces, $2+2$ against $1+3$, and only the total agrees.</p>
+<p><strong>Clebsch–Gordan, realised by a sum and a difference of idempotents.</strong> $\tfrac12\otimes\tfrac12=0\oplus1$, and both halves of that identity are elements of the algebra.</p>
+<ul>
+<li><strong>The sum is the singlet.</strong> $\tilde\Pi_++\tilde\Pi_-=e_{t}$, which is trace $2$, lies on the scalar line, and has spin $0$ in the adjoint reading. <strong>Two halves add to zero, not to one.</strong></li>
+<li><strong>The difference is the triplet.</strong> $\tilde\Pi_+-\tilde\Pi_-=i\vec u$, traceless, with $(1,1)$, so in $\Sigma_{11}$. <strong>The spin $1$ is the difference, not the sum.</strong></li>
+</ul>
+<p><strong>Every traceless element is a difference of two minimal idempotents.</strong> The idempotent attached to a complex vector $m$ is</p>
+<p>$$
+\tilde\Pi(m)=\tfrac12\bigl(e_t-i\,m\cdot\vec e\,\bigr),\qquad m\cdot m=1,
+$$</p>
+<p>which is minimal because $(m\cdot\vec e)^{2}=-e_t$. Given $\tilde Q_{V}=\sum_j A_j\vec e_j$ traceless, set $a=iA$ and take any $w$ with $w\cdot a=0$ and $w\cdot w=1-a\cdot a$; then</p>
+<p>$$
+\tilde\Pi(a+w)-\tilde\Pi(w-a)=-i\,a\cdot\vec e=\tilde Q_{V},
+$$</p>
+<p>and both terms are minimal idempotents. Verified $300/300$ on random traceless elements, on $\vec e_x,\vec e_y,\vec e_z$, and on nilpotent elements of $\Sigma_{00}$.</p>
+<p><strong>But not every element is a sum, and the obstruction is the trace.</strong> A sum of two minimal idempotents has trace $2$, that is $Q_{t}=1$: <strong>two real conditions.</strong> So</p>
+<blockquote>
+<p>a generic element of $\Sigma_{11}$ is <strong>not</strong> a sum of two minimal idempotents, and only a codimension-two slice of $\Sigma_{11}$ is.</p>
+</blockquote>
+<p>Measured: $0$ of $2000$ random elements satisfy $Q_{t}=1$; all $50$ of $50$ constructed sums do.</p>
+<p><strong>Where each combination can land.</strong></p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>combination</th>
+<th>trace</th>
+<th>strata it can reach</th>
+<th>observed</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\Pi_1+\Pi_2$</td>
+<td>$2$</td>
+<td>$\Sigma_{11}$, $\Sigma_{10}$, $\Sigma_{01}$</td>
+<td>all three; $2\Pi$ gives $\Sigma_{01}$, $\Pi+(e_t-\Pi)$ gives $\Sigma_{10}$, generic pairs give $\Sigma_{11}$; <strong>never $\Sigma_{00}$</strong></td>
+</tr>
+<tr>
+<td>$\Pi_1-\Pi_2$</td>
+<td>$0$</td>
+<td>$\Sigma_{11}$, $\Sigma_{00}$</td>
+<td>both; $\vec e_z$ gives $\Sigma_{11}$, both nilpotents give $\Sigma_{00}$; <strong>never $\Sigma_{10}$ or $\Sigma_{01}$</strong></td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Every element carries both halves.</strong> Combining the two results,</p>
+<p>$$
+\tilde Q=Q_{t}\bigl(\tilde\Pi_+ + \tilde\Pi_-\bigr)+(P-Q),
+$$</p>
+<p>a sum of two minimal idempotents plus a difference of two, verified $300/300$ over random elements in all four strata. <strong>So the two halves of $\tfrac12$ are present in every stratum, and the spin readings cannot vary down the table.</strong></p>
+<p><strong>What does vary.</strong> Not the readings, but which carrier element the stratum contains:</p>
+<p>$$
+Z=\mathbb{C}e_t\subset\Sigma_{10},\qquad
+S_\pm=\mathbb{B}\tilde\Pi_\pm\subset\Sigma_{01},\qquad
+V=\ker\operatorname{tr}\subset\Sigma_{11},
+$$</p>
+<p>each inclusion strict: $\Sigma_{11}$ also holds $e_{t}+2\vec e_x$ with $(5,4)$, and $\Sigma_{00}$ meets $S_\pm$ in one null line and meets $V$ in the null quadric $B^{2}=0$. A stratum therefore tells you which spin spaces reach it, never what the spin of an element is.</p>
+<h2 id="2-the-operator-level-with-derivatives">2. The Operator Level with Derivatives</h2>
+<p><strong>The step.</strong> Replace the four components by four derivatives:</p>
+<p>$$
+\tilde\nabla=\sum_{\mu\in\{t,x,y,z\}}e_{\mu}\frac{\partial}{\partial R_{\mu}} .
+$$</p>
+<p>Every formula of §1 still applies, because every formula of §1 is a formula in the four components. The determinant, the discriminant and the minimal polynomial are computed from those components and do not care whether they are numbers or derivatives. The two bits become</p>
+<p>$$
+\langle\tilde\nabla\rangle_{\natural}=\sum_{\mu}\frac{\partial^{2}}{\partial R_{\mu}^{2}}=\Box,
+\qquad
+B^{2}(\tilde\nabla)=\sum_{k\in\{x,y,z\}}\frac{\partial^{2}}{\partial R_{k}^{2}}=\Delta,
+\qquad
+\Delta=\Box-\frac{\partial^{2}}{\partial R_{t}^{2}} .
+$$</p>
+<p>The first is the corpus's definition of the d'Alembertian, <em>Operator and Calculus Conventions</em>, §<em>The Quaternionic Bilinear Product, Its Form and Its Norm</em>: $\Box=\langle\tilde\nabla\rangle_{\natural}=\mathrm{Sc}(\tilde\nabla^{\natural}\tilde\nabla)$, "an operator on the whole algebra, one and the same before any sector is named". The second is the same substitution on the vector slot. Both are scalar because the off-diagonal pairs cancel: $e_{\mu}^{\natural}e_{\nu}=-\,e_{\nu}^{\natural}e_{\mu}$ while $\partial_{\mu}\partial_{\nu}=\partial_{\nu}\partial_{\mu}$.</p>
+<p><strong>An operator with derivative entries is in no stratum.</strong> The strata are defined on numbers. The gradient is read on its <strong>symbol</strong>, the element by which it acts on a plane wave,</p>
+<p>$$
+\tilde K=-p_{t}e_{t}+i\vec p,\qquad
+\langle\tilde K\rangle_{\natural}=p^{2}=p_{t}^{2}-\lvert\vec p\rvert^{2},\qquad
+B^{2}(\tilde K)=-\lvert\vec p\rvert^{2},
+$$</p>
+<p>in the informational shape; the material shape $\tilde K_{\Phi}=ik'_{t}e_{t}+\vec k$ is minus this and flips both signs. <strong>The four subsections give the symbol of each stratum and the dimension of the kernel of $L_{\tilde K}$, which is the dimension of the solution space of the first-order equation at that momentum.</strong></p>
+<h3 id="21-n-regular-spectrally-regular">2.1 N-Regular, Spectrally Regular</h3>
+<p><strong>Timelike or spacelike momentum with $\vec p\neq0$.</strong> $p^{2}\neq0$ and $B^{2}=-\lvert\vec p\rvert^{2}\neq0$. The symbol is a unit, $\dim\ker L_{\tilde K}=0$, and both $\Box$ and $\Delta$ act nontrivially at that momentum.</p>
+<p><strong>The polar word of the symbol, carried over from §1.1.</strong> $\tilde K$ is a unit, so it has the four-factor word; its modulus is the mass, $\Rho=\sqrt{p^{2}}=k_{m}$, and its rotor is $\pm e_{t}$, so the word is a boost. §4.1 reads it.</p>
+<h3 id="22-n-regular-spectrally-degenerate">2.2 N-Regular, Spectrally Degenerate</h3>
+<p><strong>Rest: $\vec p=0$ with $p^{2}\neq0$.</strong> $B^{2}=0$ because the vector part vanishes, and the symbol is $-p_{t}e_{t}$, a multiple of the identity. Invertible, kernel zero, one eigenvalue.</p>
+<p><strong>No momentum reaches the Jordan line.</strong> That line needs $\vec\Upsilon^{2}=0$ with $\vec\Upsilon\neq0$. A momentum's vector part is real or purely imaginary, so its square is $\pm\lvert\vec p\rvert^{2}$, which vanishes only with $\vec p$ — and then the vector part is zero, not nilpotent. <strong>So the gradient never puts its symbol in the non-diagonalisable half of this stratum</strong>, and the lock of §1.2 degenerates: $a=0$, hence both angles zero.</p>
+<h3 id="23-n-degenerate-spectrally-regular">2.3 N-Degenerate, Spectrally Regular</h3>
+<p><strong>Null momentum: $p^{2}=0$ with $\vec p\neq0$.</strong> $B^{2}=-\lvert\vec p\rvert^{2}\neq0$, so the symbol is a zero divisor of the semisimple kind:</p>
+<p>$$
+\mathrm{rank}\,L_{\tilde K}=2,\qquad \dim\ker L_{\tilde K}=2 .
+$$</p>
+<p>This is the operator-level content of the massless Dirac equation. <em>The Dirac Equation in Biquaternionic Form</em>, §<em>Massless Plane Waves</em>: the polarization "is annihilated by the wave biquaternion $\tilde{K}_{\Phi}$. This is the momentum-space massless equation in the algebra; its kernel has complex dimension two."</p>
+<p><strong>The polar reading, carried over from §1.3.</strong> Since $p^{2}=0$ the symbol has no modulus, and the word of §1.1 does not apply; what survives is the two-object form, a complex scale times an idempotent. The corpus computes it in <em>The Massless Limit as a Boundary Value of the Polar Word</em>, §<em>The Limit at Infinite Rapidity</em>: $L=\frac{R\varkappa_{\mathrm{phs}}}{2}(e_{t}+i\vec u_{\mathrm b})\tilde u_{\mathrm r}$ with $L^{2}=\tau L$. §4.3 reads that formula.</p>
+<h3 id="24-n-degenerate-spectrally-degenerate">2.4 N-Degenerate, Spectrally Degenerate</h3>
+<p><strong>Zero momentum: $p=0$.</strong> Both bits vanish and the symbol is the zero element, so $L_{\tilde K}=0$, rank zero, $\dim\ker L_{\tilde K}=4$. Every element of the algebra solves the first-order equation, and $\Box$ and $\Delta$ both vanish at that momentum.</p>
+<p><strong>The polar reading, carried over from §1.4.</strong> No word and no scale; the symbol has no structure at all, and the stratum is the origin of momentum space.</p>
+<p><strong>The four symbols in one table, with the spin column empty.</strong> A symbol is one element, so it belongs to a stratum; a spin belongs to a space, and here there is no space. The column is therefore empty on purpose, and §4.5 fills it once a field is chosen.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>stratum</th>
+<th>symbol $\tilde K$</th>
+<th>$\dim\ker L_{\tilde K}$</th>
+<th>spin carried by the symbol</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\Sigma_{11}$</td>
+<td>$p^{2}\neq0$, $\vec p\neq0$</td>
+<td>$0$</td>
+<td>none</td>
+</tr>
+<tr>
+<td>$\Sigma_{10}$</td>
+<td>$-p_{t}e_{t}$, $\vec p=0$</td>
+<td>$0$</td>
+<td>none</td>
+</tr>
+<tr>
+<td>$\Sigma_{01}$</td>
+<td>$p^{2}=0$, $\vec p\neq0$</td>
+<td>$2$</td>
+<td>none</td>
+</tr>
+<tr>
+<td>$\Sigma_{00}$</td>
+<td>$0$</td>
+<td>$4$</td>
+<td>none</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="3-the-physics-reading-of-the-operators">3. The Physics Reading of the Operators</h2>
+<p>No derivatives in this section. Five physical objects, each an element, each in a stratum.</p>
+<p><strong>The four strata in one table, with the spin whose carrier sits in each.</strong> The column gives the spin of the space $Z$, $S_\pm$ or $V$ that lies inside the stratum; it is not a label of the stratum itself. §1.6 proves the inclusion and §3.5 explains why physics can put several spins on one stratum.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>stratum</th>
+<th>physical object</th>
+<th>spin of the carrier that sits here</th>
+<th>note</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\Sigma_{11}$</td>
+<td>massive momentum with $\vec p\neq0$; every rotation; every spin generator</td>
+<td>$1$ (the space $V$)</td>
+<td>the generators of spin $\tfrac12$ and of spin $1$ both lie here</td>
+</tr>
+<tr>
+<td>$\Sigma_{10}$</td>
+<td>massive momentum at rest, $imc\,e_t$</td>
+<td>$0$ (the line $Z$)</td>
+<td>the scalar line is the spin-$0$ carrier</td>
+</tr>
+<tr>
+<td>$\Sigma_{01}$</td>
+<td>null momentum: photon, graviton, chiral fermion</td>
+<td>$\tfrac12$ (the space $S_\pm$)</td>
+<td>in physics many spins share this stratum; §3.5</td>
+</tr>
+<tr>
+<td>$\Sigma_{00}$</td>
+<td>$p=0$ only</td>
+<td>none</td>
+<td>no one-particle state; the corner where all three spaces go null</td>
+</tr>
+</tbody>
+</table></div>
+<h3 id="31-n-regular-spectrally-regular">3.1 N-Regular, Spectrally Regular</h3>
+<p><strong>Massive and moving; and every rotation; and every spin generator.</strong> The material momentum element $\tilde P_{\Phi}=i\frac{E}{c}e_{t}+\vec p$ has $\langle\tilde P_{\Phi}\rangle_{\natural}=-m^{2}c^{2}\neq0$ and $B^{2}=\lvert\vec p\rvert^{2}\neq0$ whenever the particle moves. Its word is the four-factor word with the mass in the scale slot.</p>
+<p><strong>The rotor is here by construction.</strong> $\tilde u_{\mathrm r}$ has $\langle\tilde u_{\mathrm r}\rangle_{\natural}=1$ and $B^{2}=\sin^{2}\frac\theta2$, so a rotation is N-regular always and spectrally regular unless $\theta\in2\pi\mathbb{Z}$; at $\theta=0$ it is exactly $e_{t}$ and nothing turns.</p>
+<p><strong>Both spin generators are here.</strong> $\tfrac{i}{2}\vec u$ has $(-\tfrac14,-\tfrac14)$ and $i\vec u$ has $(-1,-1)$: N-regular, spectrally regular, and normal, being complex multiples of one real vector. <strong>The adjoint doubling from $\pm\tfrac12$ to $\pm1$ moves the magnitude by four and moves nothing else.</strong> Spin is not a stratum.</p>
+<h3 id="32-n-regular-spectrally-degenerate">3.2 N-Regular, Spectrally Degenerate</h3>
+<p><strong>The rest frame, and nothing else.</strong> $\vec p=0$ makes $B^{2}=0$, so a massive particle at rest is the physical inhabitant, and it sits on the scalar line: $\tilde P_{\Phi}=imc\,e_{t}$, a multiple of the identity. The corpus's boost at zero rapidity carries $\tilde P_{\Phi}$ into exactly this element, in <em>The Massless Limit as a Boundary Value of the Polar Word</em>, §<em>The Massless Momentum</em>.</p>
+<p><strong>The Jordan line has no physical momentum.</strong> Its element carries a complex null vector, which is a field configuration, not a momentum. On the scalar line the lock reads $a=0$ and both angles are zero, which is the physical statement: <strong>at rest there is no boost and no rotor.</strong></p>
+<h3 id="33-n-degenerate-spectrally-regular">3.3 N-Degenerate, Spectrally Regular</h3>
+<p><strong>Massless, and the radiation field.</strong> $\langle\tilde P_{\Phi}\rangle_{\natural}=-m^{2}c^{2}=0$ at $m=0$, so <strong>N-degenerate is massless</strong>. The photon momentum and the field strength of a null wave are here: norm zero, vector part nonzero, rank one, word replaced by scale times idempotent.</p>
+<p><strong>And here the section earns its point.</strong> <em>The Zero-Divisor Cone and the Massless Spectrum</em>, §<em>The Massless Spectrum</em>:</p>
+<blockquote>
+<p>The massless particles the corpus has built are the photon of helicity $\pm1$, the graviton of helicity $\pm2$, the Rarita–Schwinger field of helicity $\pm\tfrac32$ and the chiral fermion of helicity $\pm\tfrac12$. All four have vanishing norm; the cone sees no difference between them. […] <strong>rank is a mass label and not a spin label</strong></p>
+</blockquote>
+<p><strong>Four different spins, one stratum.</strong> Masslessness does not give spin one; it gives a position on the cone, and the spin comes from the module the algebra acts on.</p>
+<h3 id="34-n-degenerate-spectrally-degenerate">3.4 N-Degenerate, Spectrally Degenerate</h3>
+<p><strong>Zero momentum: the origin of momentum space.</strong> Both bits vanish. No real momentum is here except $0$, because $\vec p=0$ with $p_{t}\neq0$ has $p^{2}\neq0$, and a real null momentum has $\vec p\neq0$.</p>
+<p><strong>The honest statement is that the stratum is empty of one-particle states.</strong> Physical objects reach it as limits, not as states, and its element is a nilpotent with no scalar slot.</p>
+<h3 id="35-why-one-stratum-can-serve-several-spins">3.5 Why One Stratum Can Serve Several Spins</h3>
+<p><strong>The table above carries one spin per stratum, and §3.3 has four spins on one stratum.</strong> That is not a contradiction; it is the difference between a subcarrier and a carrier.</p>
+<p><strong>Inside $\mathbb{B}$ there are exactly three spins, one per space.</strong> $Z$, $S_\pm$ and $V$ exhaust the subcarriers (<em>The Subcarriers of the Regular Module</em>), and their dimensions $1+2+3=6$ already exceed $\dim_{\mathbb{C}}\mathbb{B}=4$, so no single structure holds all three. That gives the one-per-stratum reading of §1.6: $0$ in $\Sigma_{10}$, $\tfrac12$ in $\Sigma_{01}$, $1$ in $\Sigma_{11}$.</p>
+<p><strong>In physics the spin is read off a module the algebra acts on, and that module need not be a subspace of $\mathbb{B}$.</strong> The photon, the graviton, the Rarita–Schwinger field and the chiral fermion are four different modules; all four have null momentum, so all four momenta lie in $\Sigma_{01}$. <em>The Zero-Divisor Cone and the Massless Spectrum</em>, §<em>The Massless Spectrum</em>, states it: "rank is a mass label and not a spin label."</p>
+<p><strong>So the two readings are consistent, and the distinction is sharp.</strong></p>
+<ul>
+<li><strong>A stratum constrains the momentum, not the representation.</strong> It fixes $\langle\tilde P\rangle_{\natural}$ and $B^{2}(\tilde P)$; it says nothing about which module the field takes values in.</li>
+<li>
+<p><strong>The three subcarrier spins are a property of $\mathbb{B}$ alone</strong>: three spaces, three strata, one each. And those four dimensions split a second way, $2+2$ as well as $1+3$ (§1.6), so even inside $\mathbb{B}$ the spin content reads two ways.</p>
+</li>
+<li>
+<p><strong>The physics spins are a property of the field content</strong>: on the cone there are as many as the theory supplies.</p>
+</li>
+</ul>
+<p><strong>The one check that keeps the two readings apart.</strong> $e_t+2\vec e_x$ has $(5,4)$ and lies in $\Sigma_{11}$, yet it belongs to no spin space. So $\Sigma_{11}\to$ spin $1$ is false; what is true is only that the spin-$1$ space sits inside $\Sigma_{11}$.</p>
+<h2 id="4-the-physics-reading-of-the-gradient">4. The Physics Reading of the Gradient</h2>
+<p><strong>The identity that carries the physics.</strong> $\Box=\langle\tilde\nabla\rangle_{\natural}$, so the second-order operator of the series is the norm of the first-order one. Applying $\tilde\nabla^{\natural}$ to the first member of the chiral pair, <em>The Dirac Equation in Biquaternionic Form</em>, §<em>The Equation in the Algebra</em>:</p>
+<p>$$
+\tilde{\nabla}^{\natural}\tilde{\nabla}\tilde{Ξ}_{\mathrm{sp},R}=\Box\tilde{Ξ}_{\mathrm{sp},R}=k_{m}\,\tilde{\nabla}^{\natural}\tilde{Ξ}_{\mathrm{sp},L}=\tilde{Ξ}_{\mathrm{sp},R}\,k_{m}^{2},
+\qquad\text{that is}\qquad
+\left(\Box-k_{m}^{2}\right)\tilde{Ξ}_{\mathrm{sp},R}=0 .
+$$</p>
+<p><strong>On a solution the norm of the gradient is the squared mass</strong>, and the four subsections read that sentence at each stratum.</p>
+<h3 id="41-n-regular-spectrally-regular">4.1 N-Regular, Spectrally Regular</h3>
+<p><strong>Massive and moving: Klein–Gordon on a non-null momentum.</strong> $p^{2}=k_{m}^{2}\neq0$ and $\vec p\neq0$, so both gates are open and both operators act.</p>
+<p><strong>The word is the §1.1 word with the mass in the scale slot.</strong> $\Rho=k_{m}$, so $\tilde K=k_{m}\tilde U_{\mathrm b}\tilde u_{\mathrm r}$ with both unit factors of norm one. The free parameter is the rapidity</p>
+<p>$$
+\theta_{\mathrm{rpd}}=2\operatorname{artanh}\frac{\lvert\vec p\rvert}{p_{t}},
+$$</p>
+<p>and the rotor is $\pm e_{t}$: <strong>the momentum's word is a boost, never a rotation.</strong> The two sides of the pair are the two chiralities; the mass is the off-diagonal coefficient; the second-order equation on each part is Klein–Gordon.</p>
+<h3 id="42-n-regular-spectrally-degenerate">4.2 N-Regular, Spectrally Degenerate</h3>
+<p><strong>Massive at rest: no boost, no spatial dependence.</strong> $p=(k_{m},0,0,0)$, so</p>
+<p>$$
+\Box\tilde\Xi=k_{m}^{2}\tilde\Xi,\qquad \Delta\tilde\Xi=0 .
+$$</p>
+<p>The field is annihilated by the spatial Laplacian — a plane wave of zero wave vector — and the only operator acting is the time derivative. In the word of §1.2 the lock gives $a=0$, hence $\theta_{\mathrm{rpd}}=0$ and $\theta=0$, and the word collapses to its scale $k_{m}$.</p>
+<p><strong>This is the stratum where the second gate is visible in physics</strong>: $B^{2}(\tilde\nabla)=\Delta$ vanishes on the solution because the momentum has no vector part. There is no locked angle to find, because there is no angle at all.</p>
+<h3 id="43-n-degenerate-spectrally-regular">4.3 N-Degenerate, Spectrally Regular</h3>
+<p><strong>Massless: the symbol is a zero divisor and the modulus is gone.</strong> $k_{m}=0$, so $\Box\tilde\Xi=0$ on the solutions and $\langle\tilde K\rangle_{\natural}=0$. <em>The Dirac Equation in Biquaternionic Form</em>, §<em>Massless Plane Waves</em>: nonzero solutions "exist only when $\tilde{K}_{\Phi}$ is a zero divisor in $\mathbb{B}$, that is, when $\tilde{K}_{\Phi}$ is null". The kernel has complex dimension two: one state per helicity value.</p>
+<p><strong>The word has no value on the cone.</strong> <em>The Massless Limit as a Boundary Value of the Polar Word</em>, §<em>The Word and the Mass Shell</em>: "The word is defined exactly on the complement of the cone, and the massless limit is the limit $r\to0$, which is not a point of the domain." What survives is the boundary value</p>
+<p>$$
+L=\frac{R\varkappa_{\mathrm{phs}}}{2}\left(e_{t}+i\vec u_{\mathrm b}\right)\tilde u_{\mathrm r},
+\qquad
+L^{2}=\tau L,\qquad \tau=R\varkappa_{\mathrm{phs}}(a-ib),
+$$</p>
+<p>which is the §1.3 shape — a complex number times an idempotent, since $\tfrac12(e_{t}+i\vec u_{\mathrm b})$ is a minimal idempotent. Its phase carries the rotor angle folded together with the central phase: <strong>the angle is not lost on the cone, it is unreadable there.</strong></p>
+<h3 id="44-n-degenerate-spectrally-degenerate">4.4 N-Degenerate, Spectrally Degenerate</h3>
+<p><strong>Zero momentum: both operators vanish and the field is constant.</strong> $p=0$ makes $\tilde K=0$, hence $\Box\tilde\Xi=0$ and $\Delta\tilde\Xi=0$ together. Every constant field solves the first-order equation, which is the statement $\dim\ker L_{\tilde K}=4$. There is no dispersion relation to impose, because there is no momentum to satisfy it.</p>
+<p><strong>This stratum is the trivial solution and the vacuum</strong>, and the only one where the two gates coincide.</p>
+<h3 id="45-the-spin-at-the-gradient-level">4.5 The Spin at the Gradient Level</h3>
+<p><strong>The column that would be wrong here.</strong> At the operator level the spin column is fixed, because the readings are the same in all four strata (§1.6). At the gradient level there is no such column, and the reason is decisive: <strong>the gradient is an element of the algebra, but the field it acts on is not.</strong></p>
+<p><strong>The momentum is stratified; the field is not.</strong> $\tilde\nabla$ has a stratum through its symbol $\tilde K$, and §2 fixed that. The field $\tilde\Xi$ takes values in a module, and the module fixes the spin. The two choices are independent.</p>
+<p>$$
+\text{stratum of }\tilde K\quad\text{and}\quad\text{spin of }\tilde\Xi\quad\text{are unrelated}.
+$$</p>
+<p><strong>So the same stratum carries every spin.</strong> Klein–Gordon ($s=0$), Dirac ($s=\tfrac12$), Proca ($s=1$) and Rarita–Schwinger ($s=\tfrac32$) are four fields, four modules, and one momentum each. A massive particle at rest has its momentum in $\Sigma_{10}$ whether the field is a scalar or a vector; a massless one has its momentum in $\Sigma_{01}$ whatever the helicity.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>stratum</th>
+<th>momentum</th>
+<th>equation imposed</th>
+<th>field spins that can sit on it</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\Sigma_{11}$</td>
+<td>massive, moving</td>
+<td>$\Box\tilde\Xi=k_{m}^{2}\tilde\Xi$ on each chirality</td>
+<td>$0$, $\tfrac12$, $1$</td>
+</tr>
+<tr>
+<td>$\Sigma_{10}$</td>
+<td>massive, at rest</td>
+<td>$\Box\tilde\Xi=k_{m}^{2}\tilde\Xi$ with $\Delta\tilde\Xi=0$</td>
+<td>$0$, $\tfrac12$, $1$</td>
+</tr>
+<tr>
+<td>$\Sigma_{01}$</td>
+<td>null</td>
+<td>$\Box\tilde\Xi=0$, kernel of dimension two</td>
+<td>$\tfrac12$, $1$, $2$, $\tfrac32$</td>
+</tr>
+<tr>
+<td>$\Sigma_{00}$</td>
+<td>zero</td>
+<td>both operators vanish, field constant</td>
+<td>any, trivially</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Where the spin does enter the gradient.</strong> Not through the stratum, but through the <strong>kernel dimension</strong>, and only on the cone. At a null momentum $\dim\ker L_{\tilde K}=2$: two polarization states per momentum, which is the count the little group supplies and which the two helicities fill. At a non-null momentum the kernel is zero and the polarization count comes from the module alone. <strong>The gradient sees the number of helicity states, never their spin.</strong></p>
+<p><strong>The one place the two levels agree.</strong> $\Sigma_{00}$: every spin gives the same answer, the constant field. That is the stratum where the spin is unreadable, and it is unreadable in both readings.</p>
+<h2 id="verification">Verification</h2>
+<p>Recomputed on 96 elements at the operator level (24 in each stratum region), on 30 random elements for the polar word of each regular stratum, on 80 elements for the two-factor pair of the degenerate strata, on 100 momenta in five classes, on 600 samples of each spin carrier space, on 200 elements for each idempotent statement, and on 20 exact biquaternion-valued polynomials. Every count is out of the number tested.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>claim</th>
+<th>result</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\det L_{\tilde Q}=\langle\tilde Q\rangle_{\natural}^{2}$</td>
+<td>96/96</td>
+</tr>
+<tr>
+<td>§1.1 $\mathrm{rank}\,L=4$, two eigenspaces of dimension two, $(L-\lambda_{+})(L-\lambda_{-})$ nilpotent</td>
+<td>24/24, 24/24, 24/24</td>
+</tr>
+<tr>
+<td>§1.1 the word $re^{i\alpha}\tilde U_{\mathrm b}\tilde u_{\mathrm r}$ recomputed from the coordinates reproduces $\tilde Q$</td>
+<td>30/30</td>
+</tr>
+<tr>
+<td>§1.2 $\mathrm{rank}\,L=4$, $\mathrm{rank}(L-Q_{t})=2$, $(L-Q_{t})^{2}=0$</td>
+<td>24/24, 24/24, 24/24</td>
+</tr>
+<tr>
+<td>§1.2 the lock $\cosh\frac{\theta_{\mathrm{rpd}}}{2}\cos\frac{\theta}{2}=\varepsilon$ and $\varepsilon\tan\frac{\theta}{2}=\sinh\frac{\theta_{\mathrm{rpd}}}{2}=a$</td>
+<td>30/30, 30/30</td>
+</tr>
+<tr>
+<td>§1.3 $\mathrm{rank}\,L=2$, $L^{2}=cL$, $L^{2}\neq0$</td>
+<td>24/24, 24/24, 24/24</td>
+</tr>
+<tr>
+<td>§1.3 $\tilde\Pi=\tilde Q/(2Q_{t})$ is idempotent and $\tilde Q=2Q_{t}\tilde\Pi$</td>
+<td>30/30</td>
+</tr>
+<tr>
+<td>§1.3/§1.4 two-factor pair: $\tilde Q\tilde Q^{*}=\langle\tilde Q\rangle_{*}e_{t}+i\vec W$ with $\lvert\vec W\rvert=\langle\tilde Q\rangle_{*}$, $\tilde Q_{H}^{2}=2a\tilde Q_{H}$, $\tilde Q_{H}\tilde Q_{0}=\tilde Q$</td>
+<td>40/40 in each stratum</td>
+</tr>
+<tr>
+<td>§1.4 $\mathrm{rank}\,L=2$, $L^{2}=0$, $Q_{t}=0$</td>
+<td>24/24, 24/24, 20/20</td>
+</tr>
+<tr>
+<td>§2 $\langle\tilde K\rangle_{\natural}=p^{2}$ and $B^{2}(\tilde K)=-\lvert\vec p\rvert^{2}$</td>
+<td>100/100, 100/100</td>
+</tr>
+<tr>
+<td>§2.1/§2.2 $\dim\ker L_{\tilde K}$ at nonzero $p^{2}$</td>
+<td>$0$ in 40/40</td>
+</tr>
+<tr>
+<td>§2.3 $\dim\ker L_{\tilde K}$ at null $p$</td>
+<td>$2$ in 20/20</td>
+</tr>
+<tr>
+<td>§2.4 $\dim\ker L_{\tilde K}$ at $p=0$</td>
+<td>$4$ in 1/1</td>
+</tr>
+<tr>
+<td>§2.2 no momentum on the Jordan line ($\vec K^{2}=0$ with $\vec K\neq0$)</td>
+<td>0 of 100</td>
+</tr>
+<tr>
+<td>§4 $\tilde\nabla^{\natural}\tilde\nabla f=\Box f$ on arbitrary polynomials, both orders, $\Delta=\Box-\partial_{t}^{2}$</td>
+<td>20/20, 20/20, 20/20</td>
+</tr>
+<tr>
+<td>§4.1 rapidity against $2\operatorname{artanh}(\lvert\vec p\rvert/p_{t})$</td>
+<td>max error $1.8\times10^{-15}$</td>
+</tr>
+<tr>
+<td>§2.3 null momenta: $\lvert\langle\tilde K\rangle_{\natural}\rvert$</td>
+<td>$\le3.2\times10^{-8}$, zero to rounding, 20/20</td>
+</tr>
+<tr>
+<td>§3.1 spin generators $\tfrac{i}{2}\vec u$ and $i\vec u$</td>
+<td>$(-\tfrac14,-\tfrac14)$ and $(-1,-1)$, both normal</td>
+</tr>
+<tr>
+<td>§1.6 $\langle\tilde Q\rangle_{\natural}\equiv0$ on $S_\pm(\vec u)$</td>
+<td>$\max\lvert\cdot\rvert=5.7\times10^{-17}$ over $600$ samples</td>
+</tr>
+<tr>
+<td>§1.6 $B^{2}(a\tilde\Pi_+ + b\,w_-)=-\tfrac14a^{2}$, so $S_+\cap\Sigma_{00}=\mathbb{C}w_-$</td>
+<td>error $5.7\times10^{-17}$, 300 samples</td>
+</tr>
+<tr>
+<td>§1.6 $\langle\tilde Q\rangle_{\natural}=B^{2}$ on $V$ and $B^{2}\equiv0$ on $Z$</td>
+<td>exactly $0$ in both cases</td>
+</tr>
+<tr>
+<td>§1.6 Casimir values: $S_\pm$ $\tfrac34$, $Z$ $0$, $V$ $2$</td>
+<td>$3/3$ exact</td>
+</tr>
+<tr>
+<td>§1.6 $\tilde\Pi_\pm=\tfrac12(e_t\pm i\vec u)$ is idempotent and sits in $\Sigma_{01}$</td>
+<td>400/400</td>
+</tr>
+<tr>
+<td>§1.6 $w_-^{2}=0$ and $v_\pm^{2}=0$; $\vec e_x+i\vec e_z$ null with weight $0$</td>
+<td>$3/3$ exact</td>
+</tr>
+<tr>
+<td>§1.6 the inclusion is strict: $e_t+2\vec e_x$ has $(5,4)$, lies in $\Sigma_{11}$, belongs to no spin space</td>
+<td>$(5,4)$ exact</td>
+</tr>
+<tr>
+<td>§1.6 $\tilde\Pi_\pm$ idempotent, $\tilde\Pi_++\tilde\Pi_-=e_t$, $\tilde\Pi_+-\tilde\Pi_-=i\vec u$ in $\Sigma_{11}$</td>
+<td>5/5 axes, exact</td>
+</tr>
+<tr>
+<td>§1.6 $\tilde\Pi(m)^{2}=\tilde\Pi(m)$ for complex $m$ with $m\cdot m=1$</td>
+<td>200/200</td>
+</tr>
+<tr>
+<td>§1.6 every traceless element $=\tilde\Pi(a+w)-\tilde\Pi(w-a)$</td>
+<td>200/200 in the algebra, 300/300 in matrices</td>
+</tr>
+<tr>
+<td>§1.6 $\tilde Q=\tilde Q\tilde\Pi_++\tilde Q\tilde\Pi_-$, both summands singular</td>
+<td>200/200</td>
+</tr>
+<tr>
+<td>§1.6 $\tilde Q=Q_t(\tilde\Pi_++\tilde\Pi_-)+(P-Q)$</td>
+<td>200/200</td>
+</tr>
+<tr>
+<td>§1.6 a sum of two minimal idempotents has $Q_t=1$; no random element does</td>
+<td>50/50, 0 of 2000</td>
+</tr>
+<tr>
+<td>§1.6 left Casimir $=\tfrac34I_4$; adjoint Casimir has eigenvalues $0,2,2,2$</td>
+<td>exact</td>
+</tr>
+</tbody>
+</table></div>
+<p>Scripts were written outside the repository and deleted.</p>
+      </div>
+    </main>
+  </div>
+</body>
+</html>
