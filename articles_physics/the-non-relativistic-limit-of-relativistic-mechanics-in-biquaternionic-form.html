@@ -70,131 +70,85 @@
       <div class="article-body">
         <h1 id="the-non-relativistic-limit-of-relativistic-mechanics-in-biquaternionic-form"><strong>The Non-Relativistic Limit of Relativistic Mechanics in Biquaternionic Form</strong></h1>
 <h2 id="introduction">Introduction</h2>
-<p>The kinematic content of relativistic mechanics is one element and one constraint. The element is the four-velocity of the particle, a biquaternion of the material sector; the constraint is that its norm is $-c^{2}$, the same for every particle. Every other kinematic element of the theory — the four-momentum, the four-current, the four-potential of a single charge, the four-wave-number — is that element with a scale attached, and the scale is the one thing the constraint does not fix.</p>
-<p>The non-relativistic limit is one operation on the constraint. Nothing is added, and no second equation is introduced.</p>
-<p><strong>The method in one display.</strong> Write the four-velocity in its two parts, the temporal one and the vector one,</p>
+<p>The kinematic content of relativistic mechanics is one element and one constraint. The element is the four-velocity, a biquaternion of the material sector; the constraint is that its norm is $-c^{2}$, the same for every particle. The four-momentum, the four-current, the four-wave-number and the four-potential of a single charge are that element with a scale attached, and the scale is the one thing the constraint does not fix.</p>
+<p><strong>The element and its norm.</strong></p>
 <p>$$
 \tilde V_{\Phi} = \underbrace{i\,\gamma c\,e_{t}}_{\text{temporal}} + \underbrace{\gamma\vec v}_{\text{vector}} ,
 \qquad
-\langle\tilde V_{\Phi}\rangle_{\natural} = -\left(\gamma c\right)^{2}+\left(\gamma v\right)^{2} = -c^{2} .
-$$</p>
-<p>The constraint says that the square of the temporal part exceeds the square of the vector part by $c^{2}$. The temporal part is $c$ times $\gamma$, so its excess over its rest value $c$ is $c\left(\gamma-1\right)$. Divide the constraint by $c^{2}$ and rearrange:</p>
-<p>$$
-\boxed{\;\gamma^{2}\beta^{2}=\gamma^{2}-1=\left(\gamma-1\right)\left(\gamma+1\right)\;}
-$$</p>
-<p>which is exact. The box is a difference of squares, and it says that <strong>the square of the vector part, in units of $c^{2}$, is the excess times the excess plus two</strong>. The two factors are of different size: $\gamma-1$ is small at low speed and $\gamma+1$ is close to $2$. Keeping the first factor and freezing the second at $2$ is the whole of the limit, and no letter beyond $\gamma$ and $\beta$ is needed to state it.</p>
-<p><strong>The error is one ratio.</strong> The leading term is $2\left(\gamma-1\right)$, so the truncated excess is $\frac{1}{2}\gamma^{2}\beta^{2}$, and the error of the truncation is</p>
-<p>$$
-\frac{\left(\gamma-1\right)_{\mathrm{trunc}}-\left(\gamma-1\right)}{\left(\gamma-1\right)} = -\frac{\gamma-1}{\gamma+1} ,
-$$</p>
-<p>exact at every speed. That ratio is the only number the article needs, and it is written with the same two letters as everything else.</p>
-<p><strong>Why the four-velocity and not the four-momentum.</strong> The four-momentum is $\tilde P_{\Phi}=m\tilde V_{\Phi}$, and the mass is a free real scale that the algebra does not fix: the norm is homogeneous and the light cone is scale-invariant, so the constraint cannot choose a mass. If the limit is taken on $\tilde P_{\Phi}$, the mass appears in every coefficient of the answer, and it has entered by a route the constraint never authorised. Taken on $\tilde V_{\Phi}$, the limit is a statement about a dimensionless element, and the mass enters once, at the end, where the scale is attached. §<em>The Scale: The Four-Momentum</em> attaches it, and §<em>Other Biquaternions Under the Same Limit</em> lists the elements that are in the family and the elements that are not.</p>
-<p><strong>What the article does.</strong> It states the element and its norm, and shows that the norm is the only constraint and is conserved by construction. It reduces the constraint to one equation in $\gamma$ and $\beta$ and computes the limit there. It records what the limit says about the velocity itself, including the composition of velocities. It attaches the scale and recovers the ladder of the energy, the momentum and the Lagrangian, with the error in closed form. It classifies the other biquaternions of the theory by whether they are that element times a scale, and it states what the limit does not do.</p>
-<p><strong>What is not new.</strong> The algebra is the algebra of <em>Relativistic Mechanics in Biquaternionic Form</em>, and the expansion of a square root is textbook. What the article isolates is which element carries the limit and in what order the moves go: <strong>write the norm in two parts, reduce it to a difference of squares, expand once, keep the leading factor, then attach the scale.</strong> The same four moves, on the same constraint written in wave numbers, appear in <em>The Three Wavenumbers of a Particle</em>; on the field equation they appear in <em>The Klein–Gordon Equation in Biquaternionic Form</em>.</p>
-<p><strong>Two limits, not one.</strong> The corpus uses the phrase <em>non-relativistic limit</em> for two different restrictions. <em>The Central-Scalar Limit of Classical Mechanics in Biquaternionic Form</em> separates them, and this article keeps the separation. The <strong>kinematic</strong> limit is the one treated here: the vector part of the four-velocity is small compared with the temporal part, and the constraint is truncated. The <strong>central-scalar</strong> restriction says which directions of the algebra are occupied, and it holds at any speed. A slowly moving spinning top satisfies this article's limit and violates the central-scalar restriction. A relativistic scalar particle does the opposite.</p>
-<p>The conventions are those of the companion articles. The biquaternion algebra is $\mathbb{B} = \mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$, the quaternion basis is $e_{t}=1, \vec e_{x}, \vec e_{y}, \vec e_{z}$ with $\vec e_{\mu}^{2}=-e_{t}$ and $\vec e_{\mu}\vec e_{\nu}=\varepsilon_{\mu\nu\lambda}\vec e_{\lambda}$, and $i$ is the scalar imaginary, central in $\mathbb{B}$. The material sector is $\mathbb{B}_{\Phi}=\mathrm{span}_{\mathbb{R}}\{ie_{t},\vec e_{x},\vec e_{y},\vec e_{z}\}$, the anti-Hermitian one, and the informational sector is $\mathbb{B}_{\Psi}=\mathrm{span}_{\mathbb{R}}\{e_{t},i\vec e_{x},i\vec e_{y},i\vec e_{z}\}$, the Hermitian one. The four-position is $\tilde R_{\Phi}=i\,r'_{t}\,e_{t}+\vec r$ and the four-velocity is $\tilde V_{\Phi}$ of §<em>The Four-Velocity and Its Norm</em>, both in $\mathbb{B}_{\Phi}$. The rapidity is $\theta_{\mathrm{rpd}}$. Throughout, $c=1/\sqrt{\epsilon\mu}$ is the speed of light in the medium, $c_{0}$ its vacuum value, $\beta=\lvert\vec v\rvert/c$, and $\gamma=1/\sqrt{1-\beta^{2}}$.</p>
-<h2 id="the-four-velocity-and-its-norm">The Four-Velocity and Its Norm</h2>
-<p><strong>The element.</strong> For a particle with velocity $\vec v$,</p>
-<p>$$
-\tilde V_{\Phi} = \gamma\left(i\,c\,e_{t}+\vec v\right) = i\,\gamma c\,e_{t}+\gamma\vec v ,
+\langle\tilde V_{\Phi}\rangle_{\natural} = -\left(\gamma c\right)^{2}+\left(\gamma v\right)^{2} = -c^{2} ,
 \qquad
-\gamma=\frac{1}{\sqrt{1-\vec v^{\,2}/c^{2}}} .
+\gamma=\frac{1}{\sqrt{1-\beta^{2}}} .
 $$</p>
-<p>The coefficient of $e_{t}$ is imaginary and the vector part is real, so $\tilde V_{\Phi}$ is anti-Hermitian and lies in $\mathbb{B}_{\Phi}$. Its <strong>norm</strong> is</p>
+<p>The norm is multiplicative and a boost is a rotor conjugation, so this one condition holds in every frame and along the worldline. It is the only constraint: the element has four real coefficients, the norm is one real condition, and the other three are the velocity.</p>
+<p><strong>The limit is the first rung of one ladder.</strong> The temporal part is $\gamma c$ and the vector part is $\gamma v$, so the parameter is their ratio, $\beta=v/c$, exactly. Solving the exact constraint for the excess $\gamma-1$ turns it into a recursion whose iterates are the successive truncations, each correct to one more power of $\beta$ than the last. <strong>The limit is the first of them, and the first is quadratic in $\beta$.</strong> Everything in the article is that one rung applied to one element at a time, with the error of each truncation given in closed form.</p>
+<p><strong>Why the velocity and not the momentum.</strong> The four-momentum is $\tilde P_{\Phi}=m\tilde V_{\Phi}$, and the mass is a free real scale that the algebra does not fix: the norm is homogeneous and the light cone is scale-invariant. A limit taken on $\tilde P_{\Phi}$ carries the mass in every coefficient, and the mass entered by a route the constraint never authorised. Taken on $\tilde V_{\Phi}$ the limit is a statement about a dimensionless element, and the mass enters once, at the end, where the scale is attached.</p>
+<p><strong>What is not new.</strong> The algebra is the algebra of <em>Relativistic Mechanics in Biquaternionic Form</em>, and the expansion of $1/\sqrt{1-\beta^{2}}$ is textbook. What the article isolates is the order of the moves: <strong>write the norm in two parts, expand $\gamma$ once, keep the leading term, then attach the scale.</strong></p>
+<p><strong>Two limits, not one.</strong> The <strong>kinematic</strong> limit is treated here: the vector part of the element is small compared with the temporal part. The <strong>central-scalar</strong> restriction, separated in <em>The Central-Scalar Limit of Classical Mechanics in Biquaternionic Form</em>, says which directions of the algebra are occupied and holds at any speed. A slowly moving spinning top satisfies the kinematic limit and violates the central-scalar restriction.</p>
+<p>The conventions are those of the companion articles. The biquaternion algebra is $\mathbb{B} = \mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$, the quaternion basis is $e_{t}=1, \vec e_{x}, \vec e_{y}, \vec e_{z}$ with $\vec e_{\mu}^{2}=-e_{t}$ and $\vec e_{\mu}\vec e_{\nu}=\varepsilon_{\mu\nu\lambda}\vec e_{\lambda}$, and $i$ is the scalar imaginary, central in $\mathbb{B}$. The material sector is $\mathbb{B}_{\Phi}=\mathrm{span}_{\mathbb{R}}\{ie_{t},\vec e_{x},\vec e_{y},\vec e_{z}\}$, the anti-Hermitian one, and the informational sector is $\mathbb{B}_{\Psi}=\mathrm{span}_{\mathbb{R}}\{e_{t},i\vec e_{x},i\vec e_{y},i\vec e_{z}\}$, the Hermitian one. The four-position is $\tilde R_{\Phi}=i\,r'_{t}\,e_{t}+\vec r$, both it and $\tilde V_{\Phi}$ in $\mathbb{B}_{\Phi}$. The rapidity is $\theta_{\mathrm{rpd}}$. Throughout, $c=1/\sqrt{\epsilon\mu}$ is the speed of light in the medium, $c_{0}$ its vacuum value, $\beta=\lvert\vec v\rvert/c$, and $\gamma=1/\sqrt{1-\beta^{2}}$.</p>
+<h2 id="the-four-velocity-and-its-norm">The Four-Velocity and Its Norm</h2>
+<p><strong>The element.</strong> The coefficient of $e_{t}$ is imaginary and the vector part is real, so $\tilde V_{\Phi}$ is anti-Hermitian and lies in $\mathbb{B}_{\Phi}$. Its norm,</p>
 <p>$$
 \langle\tilde V_{\Phi}\rangle_{\natural} = \tilde V_{\Phi}\tilde V_{\Phi}^{\natural}
-= \gamma^{2}\left(-c^{2}+\vec v^{\,2}\right) = -c^{2} .
+= \gamma^{2}\left(-c^{2}+\vec v^{\,2}\right) = -c^{2} ,
 $$</p>
-<p>That line is the whole input of the article. It is one equation, it holds for every particle, and it contains no mass, no $\hbar$ and no energy.</p>
-<p><strong>Two parts, one ratio.</strong> The element carries two numbers: the temporal part, of magnitude $\gamma c$, and the vector part, of magnitude $\gamma v$. Their ratio is</p>
+<p>is the whole input of the article: one equation, true of every particle, containing no mass, no $\hbar$ and no energy.</p>
+<p><strong>The norm is conserved, and it is the only constraint.</strong> The norm of $\mathbb{B}$ is multiplicative, $\langle\tilde Q_{1}\tilde Q_{2}\rangle_{\natural}=\langle\tilde Q_{1}\rangle_{\natural}\langle\tilde Q_{2}\rangle_{\natural}$, and a boost multiplies on the two sides by elements of unit norm. Hence $\langle\tilde V_{\Phi}'\rangle_{\natural}=\langle\tilde V_{\Phi}\rangle_{\natural}=-c^{2}$ in every frame, and the same along the worldline. The constraint is preserved by the group rather than imposed after the fact. So the constraint is also complete: four real coefficients, one real condition, and the three that remain are the three components of the velocity.</p>
+<h2 id="the-ladder">The Ladder</h2>
+<p><strong>The excess, defined once.</strong> Write the temporal part as the rest value plus what the motion adds, in units of $c$:</p>
 <p>$$
-\beta := \frac{\lvert\gamma\vec v\rvert}{\lvert i\gamma c\rvert} = \frac{v}{c} ,
-$$</p>
-<p>exactly, at every speed and with no approximation. The parameter of the limit is therefore not a small number inserted from outside: it is <strong>the ratio of the two parts of the element</strong>, and the limit is the statement that this ratio is small. That is why the four-velocity is the right base for the calculation, and why no expansion in $v/c$ can surprise: the quantity expanded is a ratio of two parts of the object being expanded.</p>
-<p><strong>The norm is conserved, and it is the only constraint.</strong> The norm of $\mathbb{B}$ is multiplicative, $\langle\tilde Q_{1}\tilde Q_{2}\rangle_{\natural}=\langle\tilde Q_{1}\rangle_{\natural}\langle\tilde Q_{2}\rangle_{\natural}$, and a boost acts on the four-vectors of $\mathbb{B}_{\Phi}$ by a rotor conjugation, that is by multiplication on the two sides by elements of unit norm. The norm of $\tilde V_{\Phi}$ is therefore the same in every frame,</p>
-<p>$$
-\langle\tilde V_{\Phi}'\rangle_{\natural} = \langle\tilde V_{\Phi}\rangle_{\natural} = -c^{2} ,
-$$</p>
-<p>and the same along the worldline, for the same reason. So the constraint is preserved by the transformation group rather than imposed after the fact. It is also the only constraint: the element has four real coefficients, the norm is one real condition, and the remaining three are the three components of the velocity. Equivalently, the set of four-velocities is the hyperboloid $\langle\tilde Q_{\Phi}\rangle_{\natural}=-c^{2}$ in $\mathbb{B}_{\Phi}$, and the Lorentz group acts on it transitively.</p>
-<p><strong>The shape of the hyperboloid.</strong> The condition $\gamma^{2}\left(c^{2}-v^{2}\right)=c^{2}$ can be read without algebra: it says $c^{2}-v^{2}>0$, so $0\le\lvert\vec v\rvert<c$. The hyperboloid is one sheet with an apex at $\vec v=0$, where the element is $i\,c\,e_{t}$, and an asymptote at $\lvert\vec v\rvert=c$, which it approaches and never reaches. The speed of light is not a parameter of the theory that could be varied: it is the value of the norm, and it enters here as the height of the apex.</p>
-<p><strong>The apex is itself a solution.</strong> At $\vec v=0$ the element is $\tilde V_{\Phi}=i\,c\,e_{t}$, with norm $-c^{2}$. The rest element is not a limiting case of the family, it is a member of it, and that is why dividing a solution by its rest phase is legitimate in the field articles: the divisor is the four-velocity of a particle at rest, on the same hyperboloid as the state it divides.</p>
-<h2 id="the-norm-as-one-equation-in-two-factors">The Norm as One Equation in Two Factors</h2>
-<p><strong>One number replaces the velocity.</strong> The element has four coefficients and one constraint, so three of them are free; at fixed direction there is one. The number that is left is $\gamma$, and the whole content of the constraint is that it multiplies $c$ in the temporal part. Define the <strong>excess</strong> of that part over its rest value, in units of $c$,</p>
-<p>$$
-\gamma-1 = \frac{\lvert i\gamma c\,e_{t}\rvert-c}{c} ,
-$$</p>
-<p>which is non-negative, vanishes at the apex, and grows without bound as $\lvert\vec v\rvert\to c$. This is the quantity the rest of the article works with. It is not a new symbol: it is $\gamma$ with its rest value removed, and $\gamma$ is already the coefficient in the element.</p>
-<p><strong>The constraint, rewritten.</strong> Substituting $\gamma^{2}=1+\gamma^{2}\beta^{2}$ from the norm gives the box of the introduction,</p>
-<p>$$
-\gamma^{2}\beta^{2} = \gamma^{2}-1 = \left(\gamma-1\right)\left(\gamma+1\right) = 2\left(\gamma-1\right)+\left(\gamma-1\right)^{2} .
-$$</p>
-<p>The last form is the one to read. It says that <strong>the square of the vector part, in units of $c^{2}$, is twice the excess plus the square of the excess</strong>. One term is linear in the excess and one is quadratic, and there is nothing else in the equation: no mass, no energy, no $\hbar$.</p>
-<p><strong>The same statement in three other forms.</strong> Divided by $\gamma^{2}$ the box is $\beta^{2}=1-1/\gamma^{2}$, which is the definition of $\gamma$, so the box is not a new relation but the norm in the variable $\gamma$. Solved for $\gamma$ it is $\gamma=1/\sqrt{1-\beta^{2}}$, and solved for the excess it is</p>
-<p>$$
-\gamma-1 = \sqrt{1+\gamma^{2}\beta^{2}}-1 ,
-$$</p>
-<p>which is closed form. And as a series in $\beta^{2}$ the box is a geometric series,</p>
-<p>$$
-\gamma^{2}\beta^{2} = \frac{\beta^{2}}{1-\beta^{2}} = \beta^{2}+\beta^{4}+\beta^{6}+\cdots ,
-$$</p>
-<p>so <strong>the ratio of any term of the expansion to the one before it is $\beta^{2}$, exactly</strong>, and the ratio of the quadratic term to the linear one in the excess is $\left(\gamma-1\right)/2$. These are one equation, and the choice among the forms is a choice of variable.</p>
-<p><strong>Solved as a correction.</strong> Write the box as $\left(\gamma-1\right)\left(1+\frac{\gamma-1}{2}\right)=\left(\gamma-1\right)_{\mathrm{trunc}}$ with</p>
-<p>$$
-\left(\gamma-1\right)_{\mathrm{trunc}} := \frac{\gamma^{2}\beta^{2}}{2} ,
-$$</p>
-<p>so that the exact excess and the truncated one stand in the ratio</p>
-<p>$$
-\gamma-1 = \frac{\left(\gamma-1\right)_{\mathrm{trunc}}}{1+\frac{\gamma-1}{2}} .
-$$</p>
-<p>Written this way the box states the whole limit in one line: the numerator is what the leading term keeps, the denominator is the correction, and the correction is $1$ at the apex and rises with the speed. The next section turns the ratio into the number that measures the truncation.</p>
-<p><strong>The trap in splitting the element.</strong> The element splits as $\tilde V_{\Phi}=i\,c\,e_{t}+\left(i\,c\left(\gamma-1\right)e_{t}+\gamma\vec v\right)$, the apex plus a <strong>displacement</strong>, and it is tempting to split the norm the same way. It cannot be done: the norm is not additive,</p>
-<p>$$
-\langle\tilde Q_{1}+\tilde Q_{2}\rangle_{\natural} = \langle\tilde Q_{1}\rangle_{\natural}+\langle\tilde Q_{2}\rangle_{\natural}+2\,\mathrm{Sc}\left(\tilde Q_{1}\tilde Q_{2}^{\natural}\right) ,
-$$</p>
-<p>so the constraint on the sum is not the sum of the constraints. The apex satisfies the constraint, the displacement does not, and the state satisfies it because of the cross term. The box is the correct statement, and it is a statement about the whole element, not about its two parts.</p>
-<h2 id="the-ratio-that-measures-the-truncation">The Ratio That Measures the Truncation</h2>
-<p><strong>The ratio of the two terms.</strong> The box reads $2\left(\gamma-1\right)+\left(\gamma-1\right)^{2}$, and the quotient of the second term by the first is $\left(\gamma-1\right)/2$. That is the number that decides whether the truncation is legitimate, and it is written without a new letter.</p>
-<p><strong>The error, in closed form.</strong> The relative error of keeping only the leading term is</p>
-<p>$$
--\frac{\gamma-1}{\gamma+1} = -\tanh^{2}\frac{\theta_{\mathrm{rpd}}}{2} ,
-$$</p>
-<p>the second form being the identity $\left(\cosh\theta-1\right)/\left(\cosh\theta+1\right)=\tanh^{2}\left(\theta/2\right)$. The error is therefore exact at every speed, and it is known rather than estimated. It is below one per cent as soon as $\gamma-1<2.02\times10^{-2}$, that is $\gamma<1.0202$, that is $\beta<0.198$.</p>
-<p><strong>Why the excess and not $\beta$.</strong> Both are small together, and they differ only by a factor of two at leading order:</p>
-<p>$$
-\gamma-1 = \frac{\beta^{2}}{2}+\frac{3\beta^{4}}{8}+\frac{5\beta^{6}}{16}+\cdots ,
+\tfrac{1}{c}\left\lvert i\gamma c\,e_{t}\right\rvert=\gamma=1+\varepsilon ,
 \qquad
-\gamma^{2}\beta^{2} = \beta^{2}+\beta^{4}+\beta^{6}+\cdots .
+\varepsilon:=\gamma-1 .
 $$</p>
-<p>A limit stated as $\beta\ll1$ and a limit stated as $\left(\gamma-1\right)\ll1$ are therefore the same criterion to leading order, and either letter will do. The article uses $\gamma-1$ for one reason: it is the excess of the temporal part of the element over its rest value, so it is a property of the element itself, and the truncation of the box is a statement about that excess. In $\beta$ the truncation would read as a statement about a ratio of components at a fixed time, which is the same thing seen less directly.</p>
-<p><strong>The two letters are exchanged for free.</strong> Since $\gamma^{2}\beta^{2}=\gamma^{2}-1$, the excess and the speed carry the same information:</p>
+<p>Nothing is approximated in that line: $\varepsilon$ is defined as the excess, not expanded into. It vanishes at rest and grows without bound as $\lvert\vec v\rvert\to c$.</p>
+<p><strong>The box.</strong> Divide the norm by $c^{2}$ and substitute $\gamma=1+\varepsilon$:</p>
 <p>$$
-\gamma-1 = \frac{\gamma^{2}\beta^{2}}{\gamma+1} ,
+\gamma^{2}\beta^{2}=\gamma^{2}-1=\left(\gamma-1\right)\left(\gamma+1\right)
+\qquad\Longleftrightarrow\qquad
+\left(1+\varepsilon\right)^{2}\beta^{2}=\varepsilon\left(2+\varepsilon\right) .
+$$</p>
+<p>The right-hand form is exact and it is the whole constraint: <strong>the square of the vector part, in units of $c^{2}$, is twice the excess plus the square of the excess.</strong> One term linear in $\varepsilon$, one quadratic, and nothing else — no mass, no $\hbar$, no energy.</p>
+<p><strong>The ladder, defined.</strong> Solved for $\varepsilon$, the box is a recursion rather than a series. Bring the quadratic term to the left and divide:</p>
+<p>$$
+\varepsilon=\frac{\left(1+\varepsilon\right)^{2}}{2+\varepsilon}\,\beta^{2}
+\qquad\Longrightarrow\qquad
+\varepsilon_{n+1}=\frac{\left(1+\varepsilon_{n}\right)^{2}}{2+\varepsilon_{n}}\,\beta^{2},
 \qquad
-\beta^{2} = \frac{\left(\gamma-1\right)\left(\gamma+1\right)}{\left(1+\gamma-1\right)^{2}} .
+\varepsilon_{0}=0 .
 $$</p>
-<p>Neither is more fundamental than the other, and no result in the article depends on the choice. What the choice fixes is where the small number sits: in $\gamma-1$ it sits in a single coefficient of the element, and a single coefficient is what the truncation alters.</p>
-<h2 id="the-ladder-of-the-velocity">The Ladder of the Velocity</h2>
-<p><strong>One expansion.</strong> The box has one expansion, and every kinematic quantity is a function of the same hyperbolic cosine. Expanding,</p>
+<p>The <strong>rungs</strong> of the ladder are its iterates, and each rung is one more term than the one before:</p>
 <p>$$
-\gamma = 1+\frac{\beta^{2}}{2}+\frac{3\beta^{4}}{8}+\frac{5\beta^{6}}{16}+\cdots ,
+\varepsilon_{1}=\frac{\beta^{2}}{2},
 \qquad
-\gamma-1 = \frac{\beta^{2}}{2}+\frac{3\beta^{4}}{8}+\frac{5\beta^{6}}{16}+\cdots ,
+\varepsilon_{2}=\frac{\beta^{2}}{2}+\frac{3\beta^{4}}{8}+\cdots,
+\qquad
+\varepsilon_{3}=\frac{\beta^{2}}{2}+\frac{3\beta^{4}}{8}+\frac{5\beta^{6}}{16}+\cdots,
 $$</p>
-<p>and the vector part of the element follows from $\gamma\beta$,</p>
+<p>and in the limit</p>
 <p>$$
-\frac{\lvert\gamma\vec v\rvert}{c} = \gamma\beta = \beta+\frac{\beta^{3}}{2}+\frac{3\beta^{5}}{8}+\cdots .
+\boxed{\;\varepsilon=\frac{\beta^{2}}{2}+\frac{3\beta^{4}}{8}+\frac{5\beta^{6}}{16}+\frac{35\beta^{8}}{128}+\cdots\;}
 $$</p>
-<p>The first correction to the element is thus entirely a thickening of the temporal part. To first order in $\beta^{2}$,</p>
+<p><strong>Rung $n$ is correct to order $\beta^{2n}$.</strong> That is the property that makes the ladder a ladder and not a list: every rung reproduces every power already found and adds exactly one new one. The coefficients $\frac{1}{2},\frac{3}{8},\frac{5}{16},\frac{35}{128}$ are those of $\gamma-1$, obtained by iterating one line rather than by differentiating a square root.</p>
+<p><strong>The first rung is the limit, and it is quadratic.</strong> Rung one is $\varepsilon_{1}=\frac{\beta^{2}}{2}$: quadratic in $\beta$, and it is the only rung that is a single term. <strong>Keeping rung one is the whole non-relativistic limit</strong>, and every section that follows applies it to a different element.</p>
+<p><strong>The element, at rung one.</strong> The vector part is kept exact and only the temporal coefficient is replaced:</p>
 <p>$$
-\tilde V_{\Phi} = i\,c\,e_{t}+\vec v+\frac{\beta^{2}}{2}\,i\,c\,e_{t}+O\left(\beta^{4}\right) ,
+\tilde V_{\Phi}=\gamma\left(i\,c\,e_{t}+\vec v\right)
+\quad\longrightarrow\quad
+\tilde V_{\Phi,1}=i\,c\left(1+\frac{\beta^{2}}{2}\right)e_{t}+\vec v .
 $$</p>
-<p>that is, the apex, plus the velocity, plus $O\left(\beta^{2}\right)$ of extra temporal part.</p>
-<p><strong>The constraint decides the order of the truncation.</strong> Truncate $\gamma$ at order zero, $\gamma=1$: the norm is then $-c^{2}+v^{2}$, which differs from $-c^{2}$ at order $\beta^{2}$. Truncate at order $\beta^{2}$, $\gamma=1+\beta^{2}/2$: the norm is</p>
+<p>That is the apex $i\,c\,e_{t}$, plus the velocity, plus first-order thickening of the temporal part. It is one substitution, not a truncation of the algebra.</p>
+<p><strong>The error of rung one.</strong> Rung one is $\varepsilon_{1}=\frac{1}{2}\gamma^{2}\beta^{2}=\varepsilon\left(1+\frac{\varepsilon}{2}\right)$, so the relative error is exact and closed:</p>
 <p>$$
-\gamma^{2}\left(v^{2}-c^{2}\right) = -c^{2}\left(1-\frac{3}{4}\beta^{4}+O\left(\beta^{6}\right)\right) ,
+\frac{\varepsilon_{1}-\varepsilon}{\varepsilon}=-\frac{\varepsilon}{2+\varepsilon}=-\frac{\gamma-1}{\gamma+1}=-\tanh^{2}\frac{\theta_{\mathrm{rpd}}}{2}
 $$</p>
-<p>which differs at order $\beta^{4}$. Keep the $\beta^{4}$ term of $\gamma$ and the error is of order $\beta^{6}$. <strong>The truncation error of the norm is one order beyond the truncation error of $\gamma$</strong>, because the norm is quadratic in $\gamma$ and vanishes identically for the exact one, so its error is the square of the error of $\gamma$ to leading order. A truncated four-velocity is on the hyperboloid to one order better than it is on the series, which is why the element of the limit, though off the hyperboloid, is off it at a high order.</p>
-<p><strong>The rapidity, and why it is the additive coordinate.</strong> Set</p>
+<p>below one per cent for $\beta<0.198$. Its first term is $-\beta^{2}/4$, so rung one is good to one part in $10^{4}$ at $\beta=0.01$.</p>
+<h2 id="the-truncation-the-rapidity-and-the-composition-of-speed">The Truncation, the Rapidity, and the Composition of Speed</h2>
+<p><strong>The order of the truncation.</strong> The norm is quadratic in $\gamma$ and vanishes identically for the exact value, so its error is the square of the error of $\gamma$ to leading order. Truncate $\gamma$ at order zero, $\gamma=1$: the norm is $-c^{2}+v^{2}$, wrong at order $\beta^{2}$. Truncate at order $\beta^{2}$, $\gamma=1+\frac{\beta^{2}}{2}$: the norm is</p>
+<p>$$
+\gamma^{2}\left(v^{2}-c^{2}\right) = -c^{2}\left(1-\frac{3}{4}\beta^{4}+O\left(\beta^{6}\right)\right),
+$$</p>
+<p>wrong at order $\beta^{4}$. Keeping one more term of $\gamma$ gives an error of order $\beta^{6}$. <strong>The truncated four-velocity satisfies the constraint to one order better than it satisfies the series.</strong></p>
+<p><strong>The rapidity.</strong> Set</p>
 <p>$$
 \gamma=\cosh\theta_{\mathrm{rpd}} ,
 \qquad
@@ -202,20 +156,14 @@ $$</p>
 \qquad
 \theta_{\mathrm{rpd}}=\operatorname{artanh}\beta .
 $$</p>
-<p>The norm identity then reads $\cosh^{2}\theta_{\mathrm{rpd}}-\sinh^{2}\theta_{\mathrm{rpd}}=1$, which is not a coincidence of notation: the hyperboloid $\langle\tilde V_{\Phi}\rangle_{\natural}=-c^{2}$ <strong>is</strong> the hyperbola, and the rapidity is its own parameter. In this variable the limit has its simplest form. The excess is</p>
-<p>$$
-\gamma-1 = \cosh\theta_{\mathrm{rpd}}-1 = \frac{\theta_{\mathrm{rpd}}^{2}}{2}+\frac{\theta_{\mathrm{rpd}}^{4}}{24}+\cdots ,
-$$</p>
-<p>so <strong>the limit is the statement that the rapidity is small</strong>, and the excess is a coordinate on the hyperboloid measured from the apex, squared and halved at leading order. The truncated form is $\left(\gamma-1\right)_{\mathrm{trunc}}=\frac{1}{2}\sinh^{2}\theta_{\mathrm{rpd}}$, and the error $\left(\gamma-1\right)_{\mathrm{trunc}}/\left(\gamma-1\right)-1$ is $\tanh^{2}\left(\theta_{\mathrm{rpd}}/2\right)$, which is the cleanest way to state it.</p>
-<p><strong>Velocities compose by addition of rapidities and not of speeds.</strong> Rapidity adds exactly, $\theta_{\mathrm{rpd},12}=\theta_{\mathrm{rpd},1}+\theta_{\mathrm{rpd},2}$, because the boost is one rotor and the rotors of one direction multiply by adding their angles. In speeds this is</p>
+<p>The constraint then reads $\cosh^{2}\theta_{\mathrm{rpd}}-\sinh^{2}\theta_{\mathrm{rpd}}=1$, the identity that makes the rapidity the additive parameter of the boost. In this variable the series of the previous section is $\gamma-1=\cosh\theta_{\mathrm{rpd}}-1=\frac{\theta_{\mathrm{rpd}}^{2}}{2}+\frac{\theta_{\mathrm{rpd}}^{4}}{24}+\cdots$, so <strong>the limit is the statement that the rapidity is small</strong>, and the excess is the squared rapidity, halved at leading order.</p>
+<p><strong>Velocities compose by adding rapidities.</strong> Rapidity adds exactly, $\theta_{\mathrm{rpd},12}=\theta_{\mathrm{rpd},1}+\theta_{\mathrm{rpd},2}$, because a boost is one rotor of one direction. In speeds this is</p>
 <p>$$
 \beta_{12} = \frac{\beta_{1}+\beta_{2}}{1+\beta_{1}\beta_{2}} ,
-$$</p>
-<p>whose departure from the Galilean sum is</p>
-<p>$$
+\qquad
 \beta_{12}-\left(\beta_{1}+\beta_{2}\right) = -\frac{\beta_{1}\beta_{2}\left(\beta_{1}+\beta_{2}\right)}{1+\beta_{1}\beta_{2}} ,
 $$</p>
-<p>of second order in the speeds. Two speeds of $0.3c$ and $0.4c$ add to $0.625c$ and not to $0.7c$. The Galilean law is the leading term of the expression above, and its error is the product of the two small parameters. <strong>The additivity of the rapidity is the exact statement, and the Galilean addition law is its truncation</strong>: the same relation the box has to its leading term.</p>
+<p>whose departure from the Galilean sum is of second order. Two speeds of $0.3c$ and $0.4c$ add to $0.625c$ and not to $0.7c$. <strong>The additivity of the rapidity is the exact statement; the Galilean law is its truncation</strong>, in the same sense as the box and its leading term.</p>
 <h2 id="the-scale-the-four-momentum">The Scale: The Four-Momentum</h2>
 <p><strong>One multiplication.</strong> The four-momentum is the four-velocity with the mass attached,</p>
 <p>$$
@@ -225,98 +173,104 @@ E=\gamma mc^{2},
 \qquad
 \vec p_{\Phi}=m\gamma\vec v ,
 $$</p>
-<p>and it lies in $\mathbb{B}_{\Phi}$ with norm $\langle\tilde P_{\Phi}\rangle_{\natural}=-m^{2}c^{2}$. The two components are worth writing on their own, because they are what makes the scale a scale and nothing else: <strong>the vector part of the four-velocity is the momentum per unit mass, and the temporal part is the energy per unit mass in units of $c$</strong>,</p>
-<p>$$
-\vec p_{\Phi} = m\left(\gamma\vec v\right) ,
-\qquad
-E = mc\left(\gamma c\right) .
-$$</p>
-<p><strong>The same ladder, multiplied.</strong> Since $\tilde P_{\Phi}=m\tilde V_{\Phi}$, every series of the previous sections is the same series with one factor:</p>
+<p>with norm $\langle\tilde P_{\Phi}\rangle_{\natural}=-m^{2}c^{2}$. <strong>The vector part of the four-velocity is the momentum per unit mass, and the temporal part is the energy per unit mass in units of $c$.</strong></p>
+<p><strong>The same series, multiplied.</strong> Every expansion of the previous sections is the same expansion with one factor:</p>
 <p>$$
 E = mc^{2}+\frac{1}{2}mv^{2}+\frac{3}{8}\frac{mv^{4}}{c^{2}}+\cdots ,
 \qquad
 p_{\Phi} = mv+\frac{1}{2}\frac{mv^{3}}{c^{2}}+\cdots .
 $$</p>
-<p>The excess energy is $\mathcal{E}:=E-mc^{2}=\left(\gamma-1\right)mc^{2}$, so it is the excess of the element multiplied by the one scale, and the small number of the energy ladder is the same $\gamma-1$. The error of the truncation is therefore the same $-\left(\gamma-1\right)/\left(\gamma+1\right)$, with no conversion. One check makes the point: the truncated excess energy is</p>
+<p>The excess energy is $\mathcal{E}:=E-mc^{2}=\left(\gamma-1\right)mc^{2}$, so it is the excess of the element times the one scale, and the relative error of its truncation is the same $-\left(\gamma-1\right)/\left(\gamma+1\right)$ with no conversion. Indeed</p>
 <p>$$
 \frac{p_{\Phi}^{2}}{2m} = \frac{1}{2}m\left(\gamma v\right)^{2} = mc^{2}\cdot\frac{\gamma^{2}\beta^{2}}{2} = \left(\gamma-1\right)_{\mathrm{trunc}}mc^{2} ,
 $$</p>
-<p>which is the truncated excess times $mc^{2}$. The two "columns" — one in the momentum, one in the speed — are one column read in two units.</p>
-<p><strong>The mass shell, and where it comes from.</strong> Multiplying the norm by $m^{2}$ and writing it in components gives</p>
-<p>$$
-E^{2} = p_{\Phi}^{2}c^{2}+m^{2}c^{4} ,
-$$</p>
-<p>which is the constraint of the four-momentum. In the variable of the excess energy it reads</p>
+<p>which is the truncated excess times $mc^{2}$: the momentum column and the velocity column are one column read in two units.</p>
+<p><strong>The mass shell, and the second sheet.</strong> Multiplying the norm by $m^{2}$ gives $E^{2}=p_{\Phi}^{2}c^{2}+m^{2}c^{4}$, and in the excess energy</p>
 <p>$$
 \left(E-mc^{2}\right)\left(E+mc^{2}\right) = p_{\Phi}^{2}c^{2} ,
 \qquad
 p_{\Phi}^{2} = 2m\mathcal{E}+\frac{\mathcal{E}^{2}}{c^{2}} ,
 $$</p>
-<p>the second being the box multiplied by $m^{2}c^{2}$ and written in $\mathcal{E}$ instead of $\gamma-1$. Nothing here is new. The point of writing the constraint twice is that the momentum form has one feature the velocity form does not, and the next paragraph is about it.</p>
-<p><strong>The second sheet is an artefact of squaring.</strong> The box in $\mathcal{E}$ is a quadratic, so it has two roots,</p>
+<p>the second being the box multiplied by $m^{2}c^{2}$. In this form the constraint is a quadratic and has two roots,</p>
 <p>$$
 E_{\pm} = \pm\sqrt{m^{2}c^{4}+p_{\Phi}^{2}c^{2}} ,
 \qquad
-\frac{E_{-}}{mc^{2}} = -\gamma ,
+E_{-}/mc^{2} = -\gamma ,
 $$</p>
-<p>and the negative one is a branch the limit cannot touch: its excess is $\gamma_--1=-\left(\gamma+1\right)\approx-2$, which is not small at any speed. What is small there is the other factor, $\gamma_-+1=1-\gamma\approx-\beta^{2}/2$. The box still factorises on the negative branch, but with the roles of the two factors exchanged, so the truncation this article performs — keeping the term linear in the small factor — is not a truncation that applies to it. The four-velocity has no such branch. Its temporal part is $\gamma c$ with $\gamma>0$ by construction, so the hyperboloid is one sheet, the limit is taken on the only sheet there is, and nothing is discarded. <strong>The negative branch appears when the constraint is squared, not when it is written.</strong> That is a further reason to take the velocity as the base: on the velocity the limit has no branch to select, and the selection rule of the energy form is a rule about a form the algebra did not ask for.</p>
-<p><strong>The Lagrangian, and the Legendre check.</strong> The free relativistic Lagrangian is $L=-mc^{2}\sqrt{1-\beta^{2}}=-mc^{2}/\gamma$, and its warrant is that it reproduces the momentum, $\partial L/\partial v=\gamma mv$. In terms of the element it is $L=-mc^{2}\left(c/\lvert V_{t}\rvert\right)$: the Lagrangian is the rest energy divided by the temporal part of the four-velocity. Expanding in $\beta$,</p>
+<p>and the negative one is a branch the limit cannot touch: its excess is $\gamma_--1=-\left(\gamma+1\right)\approx-2$, which is not small at any speed, and what is small there is the other factor, $\gamma_-+1=1-\gamma\approx-\beta^{2}/2$. The box factorises on that branch with the roles of the two factors exchanged, so the truncation performed here does not apply to it. The four-velocity has no such branch: its temporal part is $\gamma c$ with $\gamma>0$ by construction, so there is nothing to discard. <strong>The negative branch appears when the constraint is squared, not when it is written.</strong></p>
+<p><strong>The Lagrangian, and the Legendre check.</strong> The free Lagrangian is $L=-mc^{2}\sqrt{1-\beta^{2}}=-mc^{2}/\gamma$, and its warrant is that it reproduces the momentum, $\partial L/\partial v=\gamma mv$. In terms of the element it is the rest energy divided by the temporal part, $L=-mc^{2}\left(c/\lvert V_{t}\rvert\right)$. Expanding,</p>
 <p>$$
 L = -mc^{2}+\frac{1}{2}mv^{2}+\frac{1}{8}\frac{mv^{4}}{c^{2}}+\cdots ,
 \qquad
 L = -mc^{2}+\frac{p_{\Phi}^{2}}{2m}-\frac{3p_{\Phi}^{4}}{8m^{3}c^{2}}+\cdots ,
 $$</p>
-<p>and the coefficients differ between the two variables for the reason given in the next paragraph. The Legendre transform $E=p_{\Phi}v-L$ is exact at every speed, and to order $c^{-2}$,</p>
+<p>and the Legendre transform $E=p_{\Phi}v-L$ is exact at every speed. To order $c^{-2}$,</p>
 <p>$$
 p_{\Phi}v = \frac{p_{\Phi}^{2}}{m}-\frac{p_{\Phi}^{4}}{2m^{3}c^{2}} ,
 \qquad
 -L = mc^{2}-\frac{p_{\Phi}^{2}}{2m}+\frac{3p_{\Phi}^{4}}{8m^{3}c^{2}} ,
 $$</p>
-<p>whose sum is $mc^{2}+p_{\Phi}^{2}/2m-p_{\Phi}^{4}/\left(8m^{3}c^{2}\right)$ because $-\frac{1}{2}+\frac{3}{8}=-\frac{1}{8}$. The coefficient that surprises is a sum of two terms of opposite sign, and the check is what fixes it.</p>
-<p><strong>Why the two columns have different coefficients.</strong> The momentum column expands in $u:=p_{\Phi}^{2}/\left(m^{2}c^{2}\right)=\sinh^{2}\theta_{\mathrm{rpd}}$, and the velocity column expands in $\beta^{2}=\tanh^{2}\theta_{\mathrm{rpd}}$. Both are $\theta^{2}$ at leading order and they differ at the next: $\sinh^{2}\theta=\theta^{2}+\frac{1}{3}\theta^{4}+\cdots$ and $\tanh^{2}\theta=\theta^{2}-\frac{2}{3}\theta^{4}+\cdots$. The energy series in the two variables is</p>
-<p>$$
-\frac{\mathcal{E}}{mc^{2}} = \frac{1}{2}u-\frac{1}{8}u^{2}+\cdots = \frac{\theta^{2}}{2}+\left(\frac{1}{6}-\frac{1}{8}\right)\theta^{4}+\cdots ,
-$$</p>
-<p>$$
-\frac{\mathcal{E}}{mc^{2}} = \frac{1}{2}\beta^{2}+\frac{3}{8}\beta^{4}+\cdots = \frac{\theta^{2}}{2}+\left(-\frac{1}{3}+\frac{3}{8}\right)\theta^{4}+\cdots ,
-$$</p>
-<p>and both brackets are $\frac{1}{24}$, which is the coefficient of $\theta^{4}$ in $\cosh\theta-1$. <strong>The two columns are one function of the rapidity, read in $\sinh$ and in $\tanh$; their coefficients differ exactly as those two functions differ.</strong> No sign is in disagreement, and nothing has been mis-derived: a reader who compares $-\frac{1}{8}$ with $+\frac{3}{8}$ has compared two coordinates on one hyperbola.</p>
+<p>whose sum is $mc^{2}+\frac{p_{\Phi}^{2}}{2m}-\frac{p_{\Phi}^{4}}{8m^{3}c^{2}}$ because $-\frac{1}{2}+\frac{3}{8}=-\frac{1}{8}$.</p>
 <h2 id="other-biquaternions-under-the-same-limit">Other Biquaternions Under the Same Limit</h2>
-<p><strong>A test for the family.</strong> An element belongs to the family of the four-velocity if it is $\tilde V_{\Phi}$ times one real scale, the same scale for every state. For such an element the limit is the one computed above with one multiplication, and no new series is needed. The table at the end of this section sorts them.</p>
-<p><strong>The four-wave-number.</strong> Dividing by $\hbar$ gives</p>
+<p><strong>The transfer.</strong> Let $\tilde Q=\lambda\tilde V_{\Phi}$, with $\lambda$ real and the same for every state. Then</p>
 <p>$$
-\tilde K_{\Phi} = \frac{\tilde P_{\Phi}}{\hbar} = i\,k_{t}^{\prime}e_{t}+\vec k_{\Phi} = \frac{m}{\hbar}\,\tilde V_{\Phi} = \frac{k_m}{c}\,\tilde V_{\Phi} ,
+\langle\tilde Q\rangle_{\natural}=\lambda^{2}\langle\tilde V_{\Phi}\rangle_{\natural}=-\lambda^{2}c^{2},
 \qquad
-k_m=\frac{mc}{\hbar} ,
+\tilde Q-\tilde Q_{\mathrm{trunc}}=\lambda\left(\tilde V_{\Phi}-\tilde V_{\Phi,\mathrm{trunc}}\right),
 $$</p>
-<p>so the wave-number biquaternion is the four-velocity in units of the mass wave number. Its components are the three wave numbers of <em>The Three Wavenumbers of a Particle</em>,</p>
+<p>so the norm scales as a square, the excess is still $\gamma-1$ times $\lambda$, and every relative error is unchanged. <strong>The limit transfers by one multiplication; no member of the family needs its own expansion.</strong> In closed form the truncation multiplies any excess by $\frac{\gamma+1}{2}$, which is $1+\frac{\beta^{2}}{2}+\cdots$ and equals $1$ at rest.</p>
+<p><strong>The four-momentum.</strong> With $\tilde P_{\Phi}=m\tilde V_{\Phi}$ the excess is the kinetic energy $T:=E-mc^{2}=mc^{2}\left(\gamma-1\right)$, and</p>
 <p>$$
-k_{t}^{\prime} = k_m\gamma = k_m\left(1+\gamma-1\right) ,
+E=mc^{2}\left(1+\frac{\beta^{2}}{2}+\frac{3\beta^{4}}{8}+\cdots\right),
 \qquad
-k_{\Phi} = k_m\gamma\beta = k_m\sinh\theta_{\mathrm{rpd}} ,
+p_{\Phi}=mc\left(\beta+\frac{\beta^{3}}{2}+\cdots\right),
 \qquad
-k_m = k_m ,
+T=\frac{1}{2}mv^{2}\left(1+\frac{3}{4}\beta^{2}+\cdots\right).
 $$</p>
-<p>and the excess wave number is $\Omega:=k_{t}^{\prime}-k_m=k_m\left(\gamma-1\right)$, which is the excess of the element multiplied by the one scale $k_m$. The triangle of that article is the <strong>hyperbolic</strong> triangle of the four-velocity: its hypotenuse is the temporal part, its side is the vector part, and the mass side is the norm. Its criterion $k_{\Phi}\ll k_m$ is $\beta\ll1$ here, and its excess is $\Omega=k_m\left(\gamma-1\right)$, the same number of the element multiplied by the same scale. At $m\to0$ the scale vanishes and the triangle degenerates; the element $\tilde V_{\Phi}$ does not degenerate, which is why the massless case is a statement about the scale and not about the limit.</p>
-<p><strong>The four-current.</strong> For a charge density $\varrho_{0}$ in the rest frame of the material, the convective four-current is</p>
+<p>The kinetic energy computed from the momentum is $\frac{p_{\Phi}^{2}}{2m}=\frac{1}{2}m\gamma^{2}v^{2}$, and</p>
 <p>$$
-\tilde J_{\Phi} = \varrho_{0}\tilde V_{\Phi} = i\,c\rho\,e_{t}+\vec j ,
-\qquad
-\rho = \gamma\varrho_{0} ,
-\qquad
-\vec j = \rho\vec v .
+\frac{p_{\Phi}^{2}/2m}{T}=\frac{\gamma+1}{2}
 $$</p>
-<p>This is in the family, and the limit costs nothing because there is nothing to expand: the current is the velocity with a scale. The one place the limit enters is the density, and there it is the statement that the correction to the charge density is the Lorentz contraction, $\rho=\varrho_{0}\left(1+\frac{1}{2}\beta^{2}+\cdots\right)$, whose coefficient is the excess to leading order.</p>
-<p><strong>The four-potential, for one charge and for a field.</strong> For a single charge in uniform motion the four-potential is proportional to the four-velocity, $\tilde A_{\Phi}=\left(\varphi/c,\vec A\right)\propto\tilde V_{\Phi}$, so the limit applies with one scale, and it is the standard statement that the magnetic field of a slowly moving charge is smaller than its electric field by one power of $\beta$. For a general field there is no such proportionality: $\tilde A_{\Phi}$ is a four-vector of the same sector, but it is not a four-velocity times a scale, and the limit of a general $\tilde A_{\Phi}$ is a separate problem in which the components are independent.</p>
-<p><strong>The field biquaternion.</strong> $\tilde F$ is built from the electric and magnetic fields and is not a multiple of $\tilde V_{\Phi}$ under any rescaling. Its limit is not a truncation of a norm but a statement about components: at leading order only the electric part of the field of a slow charge survives, and the magnetic part is the next order. It is the same physical statement as the potential case, written on the field rather than on the potential.</p>
-<p><strong>The rotor.</strong> The boost rotor of §<em>The Four-Velocity and Its Norm</em> is not a multiple of $\tilde V_{\Phi}$: the rotor is where the group lives, the element is where the state lives. Its limit is not a truncation but a degeneration — the boost becomes a shear, and the rapidity, which is the additive coordinate of the rotor, becomes the small number at leading order. That degeneration is the subject of its own article, and this one records only that the rotor is outside the family.</p>
+<p>exactly. <strong>The Galilean kinetic energy is not an arbitrary cut: it is the exact one multiplied by one known number.</strong></p>
+<p><strong>The four-wave-number, and the same ladder in another variable.</strong> With $\tilde K_{\Phi}=\left(k_m/c\right)\tilde V_{\Phi}$ and $k_m=mc/\hbar$, the excess of the temporal coefficient is $\Omega:=k_{t}^{\prime}-k_m=k_m\varepsilon$, and dividing the norm by $k_m^{2}$ gives the box again:</p>
+<p>$$
+k_{\Phi}^{2}=2k_m\Omega+\Omega^{2},
+\qquad
+\frac{k_{\Phi}}{k_m}=\gamma\beta .
+$$</p>
+<p>The ladder is the same construction — solve for the excess, then iterate — with $\Omega_{0}=0$:</p>
+<p>$$
+\Omega_{n+1}=\frac{k_{\Phi}^{2}-\Omega_{n}^{2}}{2k_m},
+\qquad
+\Omega_{1}=\frac{k_{\Phi}^{2}}{2k_m},
+\qquad
+\Omega_{2}=\frac{k_{\Phi}^{2}}{2k_m}-\frac{k_{\Phi}^{4}}{8k_m^{3}}+\cdots .
+$$</p>
+<p><strong>Rung $n$ here is correct to order $\left(k_{\Phi}/k_m\right)^{2n}$, exactly as rung $n$ in $\beta$ is correct to $\beta^{2n}$.</strong> The first rung is again one quadratic term, and it is again the whole limit.</p>
+<p><strong>The two ladders agree at the first rung and part after it.</strong> They share $\frac{1}{2}$, because $k_{\Phi}/k_m=\gamma\beta$ reduces to the rapidity at leading order; they differ at the second, $+\frac{3}{8}$ in $\beta^{2}=\tanh^{2}\theta$ against $-\frac{1}{8}$ in $\left(k_{\Phi}/k_m\right)^{2}=\sinh^{2}\theta$. One function of the rapidity, read in two variables. <strong>The limit is the rung the two share</strong>, which is why it is the same equation in either variable, and why the criterion $k_{\Phi}\ll k_m$ of <em>The Three Wavenumbers of a Particle</em> and $\beta\ll1$ here are one criterion.</p>
+<p><strong>The four-current.</strong> With $\tilde J_{\Phi}=\varrho_{0}\tilde V_{\Phi}$,</p>
+<p>$$
+\tilde J_{\Phi}=i\,c\rho\,e_{t}+\vec j,
+\qquad
+\rho=\gamma\varrho_{0}=\varrho_{0}\left(1+\frac{\beta^{2}}{2}+\frac{3\beta^{4}}{8}+\cdots\right),
+\qquad
+\vec j=\rho\vec v ,
+$$</p>
+<p>and continuity $\partial_{t}\rho+\nabla\cdot\vec j=0$ holds exactly for uniform motion. This series starts at $1$, not at $\beta^{2}$, so the truncation leaves $-\frac{3\beta^{4}}{8}$: <strong>what the limit removes from $\rho$ is the second-order part of the Lorentz contraction, not its first-order part.</strong></p>
+<p><strong>The four-potential of one charge.</strong> For a charge in uniform motion $\tilde A_{\Phi}\propto\tilde V_{\Phi}$, so $\varphi=\gamma\varphi_{0}$ and $\vec A=\gamma\varphi_{0}\vec v/c^{2}$, and</p>
+<p>$$
+\frac{\lvert\vec B\rvert}{\lvert\vec E\rvert}=\frac{\beta}{c},
+$$</p>
+<p>one power of the speed: the magnetic field is a first-order effect, the electric field zeroth order.</p>
+<p><strong>Outside the family.</strong> A general four-potential is a four-vector of the sector but not a four-velocity times a scale, so its components are independent and its limit is not a truncation. The field biquaternion $\tilde F$ is built from $\vec E$ and $\vec B$ and is a multiple of no $\tilde V_{\Phi}$: at leading order only its electric part survives. The boost rotor is a unit-norm element of the group, not a multiple of the state, so its limit is a degeneration, the boost becoming a shear.</p>
 <div class="table-scroll"><table>
 <thead>
 <tr>
 <th>Element</th>
 <th>Definition</th>
 <th>In the family</th>
-<th>What the limit gives</th>
+<th>Truncated</th>
+<th>Error</th>
 </tr>
 </thead>
 <tbody>
@@ -324,94 +278,104 @@ $$</p>
 <td>$\tilde V_{\Phi}$</td>
 <td>$\gamma\left(ic\,e_{t}+\vec v\right)$</td>
 <td>the base element</td>
-<td>$\gamma-1=\frac{1}{2}\beta^{2}+\frac{3}{8}\beta^{4}+\cdots$</td>
+<td>$\gamma-1\to\frac{1}{2}\gamma^{2}\beta^{2}$</td>
+<td>factor $\frac{\gamma+1}{2}$</td>
 </tr>
 <tr>
 <td>$\tilde P_{\Phi}$</td>
 <td>$m\tilde V_{\Phi}$</td>
-<td>yes, scale $m$</td>
-<td>$E=mc^{2}+\frac{1}{2}mv^{2}+\cdots$</td>
+<td>yes, $m$</td>
+<td>$T\to\frac{p_{\Phi}^{2}}{2m}$</td>
+<td>factor $\frac{\gamma+1}{2}$</td>
 </tr>
 <tr>
 <td>$\tilde K_{\Phi}$</td>
 <td>$\left(k_m/c\right)\tilde V_{\Phi}$</td>
-<td>yes, scale $k_m/c$</td>
-<td>$k_{t}^{\prime}=k_m\left(1+\frac{1}{2}\beta^{2}+\cdots\right)$</td>
+<td>yes, $k_m/c$</td>
+<td>$\Omega\to\frac{k_{\Phi}^{2}}{2k_m}$</td>
+<td>factor $\frac{\gamma+1}{2}$</td>
 </tr>
 <tr>
 <td>$\tilde J_{\Phi}$</td>
 <td>$\varrho_{0}\tilde V_{\Phi}$</td>
-<td>yes, scale $\varrho_{0}$</td>
-<td>$\rho=\varrho_{0}\left(1+\frac{1}{2}\beta^{2}+\cdots\right)$</td>
+<td>yes, $\varrho_{0}$</td>
+<td>$\rho\to\varrho_{0}\left(1+\frac{\beta^{2}}{2}\right)$</td>
+<td>$-\frac{3\beta^{4}}{8}$</td>
 </tr>
 <tr>
 <td>$\tilde A_{\Phi}$</td>
-<td>$\propto\tilde V_{\Phi}$ for one charge only</td>
+<td>$\propto\tilde V_{\Phi}$, one charge</td>
 <td>partly</td>
-<td>$\lvert\vec B\rvert/\lvert\vec E\rvert=O\left(\beta\right)$</td>
+<td>$\varphi\to\varphi_{0}\left(1+\frac{\beta^{2}}{2}\right)$</td>
+<td>$\frac{\lvert\vec B\rvert}{\lvert\vec E\rvert}=\frac{\beta}{c}$</td>
 </tr>
 <tr>
 <td>$\tilde F$</td>
-<td>built from $\vec E$ and $\vec B$</td>
+<td>from $\vec E$, $\vec B$</td>
 <td>no</td>
-<td>electric part survives, magnetic part is next order</td>
+<td>electric part only</td>
+<td>magnetic part next order</td>
 </tr>
 <tr>
 <td>boost rotor</td>
-<td>unit-norm element of the group</td>
+<td>unit-norm, group element</td>
 <td>no</td>
-<td>the boost degenerates to a shear</td>
+<td>boost becomes a shear</td>
+<td>degeneration</td>
 </tr>
 </tbody>
 </table></div>
 <h2 id="the-phase-and-the-order-in-time">The Phase and the Order in Time</h2>
-<p><strong>The limit moves inside an exponential.</strong> Everything so far is a statement about the numbers attached to one mode. In a wave the same numbers sit in an exponent, and the limit taken there is a further step: it turns a relation between coefficients into an equation for a field. That step is the business of the field articles — <em>The Klein–Gordon Equation in Biquaternionic Form</em> for the field, <em>The Three Wavenumbers of a Particle</em> for the same statement in wave numbers — and this section records only the form the limit takes inside the exponential, because the truncation of the ladder and the truncation of the exponential are one decision.</p>
-<p><strong>The phase splits like the energy.</strong> A plane wave carries the scalar part of $\tilde K_{\Phi}\tilde R_{\Phi}^{\natural}$ in its exponent, which in momentum units is $\vec p_{\Phi}\cdot\vec r/\hbar - Et/\hbar$. With $E = mc^{2}+\mathcal{E}$,</p>
+<p><strong>The phase splits like the energy.</strong> A plane wave carries the scalar part of $\tilde K_{\Phi}\tilde R_{\Phi}^{\natural}$ in its exponent. With $E = mc^{2}+\mathcal{E}$,</p>
 <p>$$
 e^{\,i\left(\vec p_{\Phi}\cdot\vec r - Et\right)/\hbar}
 = \underbrace{e^{-i\,mc^{2}t/\hbar}}_{f}\,
-\underbrace{e^{\,i\left(\vec p_{\Phi}\cdot\vec r - \mathcal{E}t\right)/\hbar}}_{\chi} .
+\underbrace{e^{\,i\left(\vec p_{\Phi}\cdot\vec r - \mathcal{E}t\right)/\hbar}}_{\chi} ,
 $$</p>
-<p>The first factor is the <strong>rest phase</strong>: unit modulus, frequency $\omega_{m}=mc^{2}/\hbar$, period $2\pi\hbar/\left(mc^{2}\right)$, which is $8.09\times10^{-21}\ \mathrm{s}$ for the electron. It is the fastest motion in the state by a wide margin at low speed: at $\beta=0.5$ the excess is $79052\ \mathrm{MeV}$ against $510999\ \mathrm{MeV}$ of rest energy, so the rest phase turns $6.5$ times for every turn of the excess. The second factor is the field with the rest oscillation divided out, and it is the field the limit is about.</p>
-<p>Nothing is approximated in that line either. It is the same split as the split of the element, applied to the exponent.</p>
-<p><strong>Two terms of the exponential give a first-order equation.</strong> Over a step $\delta t$ the excess factor advances by</p>
+<p>exactly. The first factor is the <strong>rest phase</strong>, of frequency $\omega_{m}=mc^{2}/\hbar$ and period $8.09\times10^{-21}\ \mathrm{s}$ for the electron; it is the fastest motion in the state, turning $6.5$ times for every turn of the excess at $\beta=0.5$. The second factor is the envelope, and it is what the limit is about.</p>
+<p><strong>Two terms of the exponential give a first-order equation.</strong> Over a step $\delta t$,</p>
 <p>$$
-e^{-i\,\mathcal{E}\,\delta t/\hbar} = 1 - i\,\frac{\mathcal{E}}{\hbar}\,\delta t + O\left(\delta t^{2}\right),
+e^{-i\,\mathcal{E}\,\delta t/\hbar} = 1 - i\,\frac{\mathcal{E}}{\hbar}\,\delta t + O\left(\delta t^{2}\right)
+\qquad\Longrightarrow\qquad
+\partial_{t}\chi = -\frac{i}{\hbar}\,\mathcal{E}\,\chi .
 $$</p>
-<p>so the field satisfies $\partial_{t}\chi = -i\mathcal{E}\chi/\hbar$. That is one equation and it is first order in time. It is first order because the exponential was cut after two terms. A third term would leave $\chi''$ in the relation and rebuild a second-order equation, which is the Klein–Gordon form; a fourth would leave $\chi'''$, and so on. <strong>The order in time of the equation is the number of terms kept in the exponential</strong>, and the truncation of the ladder and the truncation of the exponential are the same decision.</p>
-<p><strong>The same statement as an operator.</strong> The exact relation $\mathcal{E}=\sqrt{m^{2}c^{4}+p_{\Phi}^{2}c^{2}}-mc^{2}$ carries the whole ladder, and it is not a polynomial: through $p_{\Phi}^{2}\to-\hbar^{2}\Delta$ it becomes the square root of a differential operator,</p>
+<p>First order in time, because the exponential was cut after two terms. A third term would bring $\chi''$ and rebuild a second-order equation; a fourth would bring $\chi'''$. <strong>The order in time is the number of terms kept in the exponential</strong>, and that is the same decision as the truncation of the ladder.</p>
+<p><strong>The same statement as an operator.</strong> The exact relation $\mathcal{E}=\sqrt{m^{2}c^{4}+p_{\Phi}^{2}c^{2}}-mc^{2}$ is not a polynomial; through $p_{\Phi}^{2}\to-\hbar^{2}\Delta$ it becomes the square root of a differential operator,</p>
 <p>$$
-i\hbar\,\frac{\partial\chi}{\partial t} = \left(\sqrt{m^{2}c^{4}-\hbar^{2}c^{2}\Delta}-mc^{2}\right)\chi .
+i\hbar\,\frac{\partial\chi}{\partial t} = \left(\sqrt{m^{2}c^{4}-\hbar^{2}c^{2}\Delta}-mc^{2}\right)\chi ,
 $$</p>
-<p>That operator is non-local, and its square is the Klein–Gordon operator after the rest phase is removed. Truncating it to the first term of the ladder makes it local. The truncation of the ladder and the reduction of the order are one operation, seen from two sides.</p>
+<p>non-local, whose square is the Klein–Gordon operator after the rest phase is removed. Truncating to the first term of the ladder makes it local: the truncation of the ladder and the reduction of the order are one operation.</p>
 <h2 id="the-equation-of-the-limit">The Equation of the Limit</h2>
-<p><strong>Only one member of the family produces a wave equation.</strong> The limit computed on $\tilde V_{\Phi}$ is a statement about a dimensionless element, and it stops there: a velocity is not an operator. To reach an equation for a field the scale must supply $\hbar$, and among the elements of the table only $\tilde P_{\Phi}$ and $\tilde K_{\Phi}$ do. The wave equation is therefore a consequence of the scale and not of the limit, which is why it is written last.</p>
-<p><strong>From the momentum.</strong> With the truncated excess energy $\mathcal{E}=p_{\Phi}^{2}/2m$, multiply the first-order relation by $i\hbar$ and use $p_{\Phi}^{2}\to-\hbar^{2}\Delta$:</p>
+<p><strong>From the momentum.</strong> With the truncated excess energy $\mathcal{E}=p_{\Phi}^{2}/2m$ and $p_{\Phi}^{2}\to-\hbar^{2}\Delta$,</p>
 <p>$$
 i\hbar\,\frac{\partial\chi}{\partial t} = \frac{p_{\Phi}^{2}}{2m}\,\chi = -\frac{\hbar^{2}}{2m}\,\Delta\,\chi .
 $$</p>
-<p><strong>From the wave number.</strong> The same equation in the variable of the triangle, where $\Omega:=k_{t}^{\prime}-k_m=k_m\left(\gamma-1\right)$ and $\Omega_{\mathrm{trunc}}=k_{\Phi}^{2}/2k_m$, is</p>
+<p><strong>From the wave number.</strong> With $\Omega_{\mathrm{trunc}}=k_{\Phi}^{2}/2k_m$ and $k_{\Phi}^{2}\to-\Delta$, the same statement multiplied by $\hbar c$ reads</p>
 <p>$$
 i\,\frac{\partial\chi}{\partial r'_{t}} = -\frac{1}{2k_m}\,\Delta\,\chi ,
+\qquad
+r'_{t}=c\,t ,
 $$</p>
-<p>which is the same statement multiplied by $\hbar c$ and written in the material time. Both are the free Schrödinger equation:</p>
+<p>which is the free Schrödinger equation:</p>
 <p>$$
 \boxed{\;i\hbar\,\frac{\partial\chi}{\partial t} = -\frac{\hbar^{2}}{2m}\,\Delta\,\chi\;}
 $$</p>
-<p><strong>Two features are read off, not assumed.</strong> The equation is first order in time, because the term kept is $\mathcal{E}$ and not $\mathcal{E}^{2}$. And it is local and linear, because the leading term is quadratic in the momentum, so the momentum enters as a derivative. The constraint it comes from is second order in time and not polynomial; both features of the Schrödinger equation are consequences of the truncation.</p>
-<p>In the material time $r'_{t}=c\,t$ and with the central imaginary unit of the algebra, the same equation reads</p>
+<p><strong>Two features are read off, not assumed.</strong> It is first order in time because the term kept is $\mathcal{E}$ and not $\mathcal{E}^{2}$; it is local and linear because the leading term is quadratic in the momentum. The constraint it comes from is not polynomial; both features are consequences of the truncation.</p>
+<p>In the material sector the same equation reads</p>
 <p>$$
 \frac{mc^{2}i}{k_m}\,\frac{\partial\chi}{\partial r'_{t}} = \tilde R_{\Psi}\,\chi ,
 \qquad
 \tilde R_{\Psi} = -\frac{\hbar^{2}}{2m}\,\Delta \in \mathbb{B}_{\Psi} ,
 $$</p>
-<p>since $mc^{2}/k_m = \hbar c$. The observable $\tilde R_{\Psi}$ is Hermitian and informational; the coefficient carries the central $i$ and lies in the material sector $\mathbb{B}_{\Phi}$. The structure is the one the parent article <em>The Schrödinger Equation in Biquaternionic Form</em> assumes, and here it is not assumed: it is what the constraint leaves when its quadratic term is dropped.</p>
-<h2 id="what-the-limit-selects">What the Limit Selects</h2>
-<p><strong>No branch is selected on the velocity.</strong> The hyperboloid has one sheet, and its temporal part is $\gamma c$ with $\gamma>0$ everywhere on it. The limit is taken on the whole of it, and nothing is discarded: <strong>the velocity form of the constraint has no second branch to exclude.</strong> The branch appears in §<em>The Scale: The Four-Momentum</em> only because squaring the constraint turns a hyperbola into a quadratic, and the quadratic has a second root. That root is not a second kind of four-velocity; it is a second root of a form the algebra did not ask for. The statement that the limit applies to the positive branch and not the negative one is therefore a statement about the energy form, and the velocity form makes it unnecessary.</p>
-<p><strong>A branch is not a solution dropped.</strong> No solution of a physical problem has been thrown away by the limit. Every four-velocity is on the hyperboloid, the limit is a truncation of the constraint on it, and the truncated constraint describes the states for which the truncation is small.</p>
-<p><strong>The constant is not a knob.</strong> The limit is taken on the state, not on $c$. The speed of light stays where it is; what becomes small is the ratio of the two parts of the element for the state in hand. Setting $c\to\infty$ would send the apex to infinity and destroy the Maxwell equations the constant comes from. The excess $\gamma-1$ is a property of the state, and it is the only thing that goes to zero.</p>
+<p>since $mc^{2}/k_m = \hbar c$. The observable $\tilde R_{\Psi}$ is Hermitian and informational, the coefficient carries the central $i$ and lies in $\mathbb{B}_{\Phi}$. This is the structure <em>The Schrödinger Equation in Biquaternionic Form</em> assumes; here it is what the constraint leaves when its quadratic term is dropped.</p>
+<p><strong>Only a scaled element produces a wave equation.</strong> The limit on $\tilde V_{\Phi}$ is a statement about a dimensionless element and stops there, because a velocity is not an operator. To reach a field the scale must supply $\hbar$, and among the elements of the table only $\tilde P_{\Phi}$ and $\tilde K_{\Phi}$ do. The wave equation is the scale's consequence, not the limit's, which is why it is written last.</p>
+<h2 id="what-the-limit-selects-and-what-it-does-not-do">What the Limit Selects, and What It Does Not Do</h2>
+<p><strong>No branch is selected.</strong> The temporal part is $\gamma c$ with $\gamma>0$ by construction, so the velocity form has no second branch to exclude. The branch of §<em>The Scale: The Four-Momentum</em> appears only because squaring turned the constraint into a quadratic, and that root is not a second kind of four-velocity. No solution has been thrown away.</p>
+<p><strong>The constant is not a knob.</strong> The limit is taken on the state, not on $c$. Setting $c\to\infty$ would contradict the Maxwell equations the constant comes from. Only $\gamma-1$ goes to zero.</p>
+<p><strong>It does not produce spin or antiparticles.</strong> The constraint is one equation on one element, and intrinsic angular momentum needs a multicomponent field: the corpus reaches the spinor case through the square root of the wave operator, and the negative branch of the energy form through second quantisation. <em>The Foldy–Wouthuysen Transformation in Biquaternionic Form</em> takes the same limit on the Dirac equation, where the odd terms must be removed first.</p>
+<p><strong>It does not re-derive Galilean kinematics.</strong> What is expanded here is the composition of two boosts, not the transformation law between frames.</p>
 <h2 id="case-checked">Case Checked</h2>
-<p><strong>The velocity, at four speeds.</strong> The first four columns are exact; the fifth is the truncated excess; the last two should agree.</p>
+<p><strong>The velocity.</strong> The first four columns are exact, the fifth is the truncated excess, and the last two must agree.</p>
 <div class="table-scroll"><table>
 <thead>
 <tr>
@@ -463,17 +427,16 @@ $$</p>
 </tr>
 </tbody>
 </table></div>
-<p>The exact excess and the leading form $\frac{1}{2}\beta^{2}$ agree at small $\beta$ and part company at large $\beta$, which is the boundary of the limit. The last two columns agree in every row because the error is exact, not estimated.</p>
-<p><strong>The same table with the scale attached.</strong> For the electron, $mc^{2}=510998.95\ \mathrm{MeV}$:</p>
+<p>The last two columns agree in every row because the error is exact, not estimated.</p>
+<p><strong>With the scale attached</strong>, for the electron, $mc^{2}=510998.95\ \mathrm{MeV}$:</p>
 <div class="table-scroll"><table>
 <thead>
 <tr>
 <th>$\beta$</th>
 <th>$E\ (\mathrm{MeV})$</th>
 <th>$\mathcal{E}\ (\mathrm{MeV})$</th>
-<th>$p^{2}/2m\ (\mathrm{MeV})$</th>
+<th>$\frac{p^{2}}{2m}\ (\mathrm{MeV})$</th>
 <th>error</th>
-<th>$-\frac{\gamma-1}{\gamma+1}$</th>
 </tr>
 </thead>
 <tbody>
@@ -483,14 +446,12 @@ $$</p>
 <td>$25.55$</td>
 <td>$25.55$</td>
 <td>$-2.50\times10^{-5}$</td>
-<td>$-2.50\times10^{-5}$</td>
 </tr>
 <tr>
 <td>$0.10$</td>
 <td>$513573.27$</td>
 <td>$2574.32$</td>
 <td>$2580.80$</td>
-<td>$-2.51\times10^{-3}$</td>
 <td>$-2.51\times10^{-3}$</td>
 </tr>
 <tr>
@@ -499,7 +460,6 @@ $$</p>
 <td>$79051.81$</td>
 <td>$85166.49$</td>
 <td>$-7.18\times10^{-2}$</td>
-<td>$-7.18\times10^{-2}$</td>
 </tr>
 <tr>
 <td>$0.90$</td>
@@ -507,29 +467,17 @@ $$</p>
 <td>$661313.04$</td>
 <td>$1089234.60$</td>
 <td>$-3.93\times10^{-1}$</td>
-<td>$-3.93\times10^{-1}$</td>
 </tr>
 </tbody>
 </table></div>
-<p>The first row is the regime the limit is for: one part in twenty thousand. The last row is not: at $\beta=0.9$ the truncation costs thirty-nine per cent, and the leading term does not describe the state. The two tables are one table: the excess energy is $\left(\gamma-1\right)mc^{2}$ and the truncated one is $\frac{1}{2}\gamma^{2}\beta^{2}mc^{2}$, so the fourth column here is the fifth column there multiplied by $mc^{2}$.</p>
-<p><strong>The identities, checked.</strong> The box $\gamma^{2}\beta^{2}=\left(\gamma-1\right)\left(\gamma+1\right)$ was evaluated at two hundred speeds spanning $\beta=10^{-3}$ to $0.99$, and it holds to $10^{-15}$ relative, which is the arithmetic. The closed form $\gamma-1=\sqrt{1+\gamma^{2}\beta^{2}}-1$ agrees with $1/\sqrt{1-\beta^{2}}-1$ to the same accuracy. The error $-\left(\gamma-1\right)/\left(\gamma+1\right)$ agrees with $-\tanh^{2}\left(\theta_{\mathrm{rpd}}/2\right)$ to the same accuracy at every speed tested. The composition of rapidities reproduces the speed-addition law to $10^{-15}$ at every pair tested, and the error of the Galilean law matches $-\beta_{1}\beta_{2}\left(\beta_{1}+\beta_{2}\right)/\left(1+\beta_{1}\beta_{2}\right)$ to the last digit printed.</p>
-<p><strong>The equation, checked.</strong> A two-mode packet $\chi=\sum_{j=1}^{2}a_{j}\exp\left(i\left(p_{j}x-\mathcal{E}_{j}t\right)/\hbar\right)$ with $\mathcal{E}_{j}=p_{j}^{2}/2m$ was propagated and compared with the right side of the boxed equation on a spectral grid. The residual is $3\times10^{-13}$ against a field of unit size, which is the floor of the transform. It must vanish: the boxed equation holds on each mode, and it is linear.</p>
-<h2 id="where-the-limit-sits-in-the-series">Where the Limit Sits in the Series</h2>
-<p><strong>In wave numbers.</strong> Multiply the box by $k_m^{2}$: with $\tilde K_{\Phi}=\left(k_m/c\right)\tilde V_{\Phi}$ it reads $k_{\Phi}^{2}=k_m^{2}\left(\gamma-1\right)\left(\gamma+1\right)$, and with $\Omega=k_m\left(\gamma-1\right)$ it is $k_{\Phi}^{2}=2k_m\Omega+\Omega^{2}$, the form used in <em>The Three Wavenumbers of a Particle</em>. Its criterion $k_{\Phi}\ll k_m$ is $\beta\ll1$ here, and its small number is the same.</p>
-<p><strong>On the field.</strong> <em>The Klein–Gordon Equation in Biquaternionic Form</em> divides out the rest phase and truncates the envelope's dispersion relation; the boxed equation of §<em>The Equation of the Limit</em> is the result. The three articles use one complex structure $i$ and no competing unit, and the same excess.</p>
-<p><strong>With the algebra's own restriction.</strong> <em>The Central-Scalar Limit of Classical Mechanics in Biquaternionic Form</em> takes the kinematic limit together with the restriction that no vector direction of $\mathbb{B}_{\Psi}$ is excited. This article takes the kinematic limit alone, which is why the equation it produces is the scalar one and not the spinor one.</p>
-<p><strong>With spin.</strong> <em>The Foldy–Wouthuysen Transformation in Biquaternionic Form</em> takes the same limit on the Dirac equation, where the odd terms of the Hamiltonian must be removed before the limit can be read. The constraint is the same; what differs is the operator that carries it.</p>
-<h2 id="what-the-limit-does-not-do">What the Limit Does Not Do</h2>
-<p><strong>It does not produce spin.</strong> The constraint is one equation on one element, and a particle with intrinsic angular momentum needs a multicomponent field. The corpus reaches the spinor case through the square root of the wave operator, not through this limit.</p>
-<p><strong>It does not produce antiparticles.</strong> The negative branch is an artefact of squaring the constraint, and on the four-velocity there is no branch at all. The antiparticle needs a second quantisation this article does not touch.</p>
-<p><strong>It does not turn relativity into Galilean kinematics.</strong> The ladder is a statement about one state's constraint. The transformation law between frames is not expanded here. What is expanded is the composition of two boosts, in §<em>The Ladder of the Velocity</em>, and the degeneration of the rotor into a shear is the separate subject of the rotor article.</p>
-<p><strong>It does not survive at high speed with its leading term alone.</strong> The error is $-\left(\gamma-1\right)/\left(\gamma+1\right)$ and it is known. Where the excess is not small, the limit does not describe the state, and no rearrangement of the series repairs that; the next term is the repair, and it is written down.</p>
+<p>The first row is the regime the limit is for, one part in twenty thousand. The last is not: at $\beta=0.9$ the truncation costs thirty-nine per cent.</p>
+<p><strong>The identities.</strong> The box, the closed form $\gamma-1=\sqrt{1+\gamma^{2}\beta^{2}}-1$ and the error $-\left(\gamma-1\right)/\left(\gamma+1\right)=-\tanh^{2}\left(\theta_{\mathrm{rpd}}/2\right)$ were each evaluated at two hundred speeds spanning $\beta=10^{-3}$ to $0.99$ and hold to $10^{-15}$ relative, which is the arithmetic. The composition law was checked the same way.</p>
+<p><strong>The equation.</strong> A two-mode packet with $\mathcal{E}_{j}=p_{j}^{2}/2m$ was propagated and compared with the right side of the boxed equation on a spectral grid; the residual is $3\times10^{-13}$ against a field of unit size, the floor of the transform. It must vanish: the equation holds on each mode and is linear.</p>
 <h2 id="summary">Summary</h2>
-<p>The kinematic content of relativistic mechanics is one element and one constraint: $\tilde V_{\Phi}=\gamma\left(ic\,e_{t}+\vec v\right)\in\mathbb{B}_{\Phi}$ with $\langle\tilde V_{\Phi}\rangle_{\natural}=-c^{2}$. The norm is multiplicative and a boost is a rotor conjugation, so the constraint is the same in every frame and along the worldline, and it is the only constraint. The parameter of the limit is the ratio of the two parts of the element, $\beta=v/c$, exactly.</p>
-<p>The constraint is a difference of squares, $\gamma^{2}\beta^{2}=\gamma^{2}-1=\left(\gamma-1\right)\left(\gamma+1\right)$, exact. Of the two factors, $\gamma-1$ is the excess of the temporal part over its rest value and $\gamma+1$ is close to $2$; the limit keeps the first and freezes the second, which leaves $\gamma-1\approx\frac{1}{2}\gamma^{2}\beta^{2}\approx\frac{1}{2}\beta^{2}$. The error is $-\left(\gamma-1\right)/\left(\gamma+1\right)=-\tanh^{2}\left(\theta_{\mathrm{rpd}}/2\right)$, exact at every speed and below one per cent for $\beta<0.198$.</p>
-<p>One expansion gives the whole ladder, and the order of the truncation is fixed by the constraint: the norm is quadratic in $\gamma$, so it is preserved one order beyond the truncation of $\gamma$. In the rapidity the limit is simplest, $\gamma-1=\cosh\theta_{\mathrm{rpd}}-1$, and the limit is small rapidity; the exact composition law is the addition of rapidities, whose truncation is the Galilean addition of speeds.</p>
-<p>The scale attaches once. $\tilde P_{\Phi}=m\tilde V_{\Phi}$ gives $E=\gamma mc^{2}$ and $\vec p_{\Phi}=m\gamma\vec v$, and every series of the velocity is the same series multiplied by $m$: $E=mc^{2}+\frac{1}{2}mv^{2}+\frac{3}{8}mv^{4}/c^{2}+\cdots$, with the same excess and the same error. The negative branch of the energy form is a second root of a quadratic, not a second sheet of the constraint. The same test sorts the rest: $\tilde K_{\Phi}$, $\tilde J_{\Phi}$ and the $\tilde A_{\Phi}$ of a single charge are the element times a scale, while a general $\tilde A_{\Phi}$, the field $\tilde F$ and the boost rotor are not.</p>
-<p>Only the scaled elements that carry $\hbar$ produce a wave equation, and it is the free Schrödinger equation. The power to do that is the scale's, not the limit's.</p>
+<p>The kinematic content of relativistic mechanics is one element and one constraint: $\tilde V_{\Phi}=\gamma\left(ic\,e_{t}+\vec v\right)\in\mathbb{B}_{\Phi}$ with $\langle\tilde V_{\Phi}\rangle_{\natural}=-c^{2}$, frame-independent and conserved because the norm is multiplicative and a boost is a rotor conjugation. The parameter is the ratio of the two parts, $\beta=v/c$.</p>
+<p>The limit is one boxed expansion, $\gamma=1+\frac{\beta^{2}}{2}+\frac{3\beta^{4}}{8}+\frac{5\beta^{6}}{16}+\cdots$, whose first correction is the excess of the temporal part over its rest value, $\gamma-1\simeq\frac{1}{2}\beta^{2}$. The constraint reads exactly $\gamma^{2}\beta^{2}=\left(\gamma-1\right)\left(\gamma+1\right)$, and the truncation error is $-\left(\gamma-1\right)/\left(\gamma+1\right)=-\tanh^{2}\left(\theta_{\mathrm{rpd}}/2\right)$, below one per cent for $\beta<0.198$. Since the norm is quadratic in $\gamma$, the truncated element satisfies the constraint one order better than it satisfies the series.</p>
+<p>The scale attaches once. $\tilde P_{\Phi}=m\tilde V_{\Phi}$ gives $E=mc^{2}+\frac{1}{2}mv^{2}+\frac{3}{8}\frac{mv^{4}}{c^{2}}+\cdots$, with the same excess and the same error, and the negative branch is a second root of a quadratic, not a second sheet. The same test sorts the rest: $\tilde K_{\Phi}$, $\tilde J_{\Phi}$ and the $\tilde A_{\Phi}$ of one charge are the element times a scale; a general $\tilde A_{\Phi}$, the field $\tilde F$ and the rotor are not.</p>
+<p>Only the scaled elements carrying $\hbar$ produce a wave equation, and it is the free Schrödinger equation. That power is the scale's, not the limit's.</p>
 <h2 id="summary-of-notation">Summary of Notation</h2>
 <div class="table-scroll"><table>
 <thead>
@@ -541,31 +489,27 @@ $$</p>
 <tbody>
 <tr>
 <td>$\tilde V_{\Phi} = \gamma\left(ic\,e_{t}+\vec v\right)$</td>
-<td>Four-velocity; the unit-norm element of $\mathbb{B}_{\Phi}$, the base of the article</td>
+<td>Four-velocity; unit-norm element of $\mathbb{B}_{\Phi}$, the base of the article</td>
 </tr>
 <tr>
-<td>$\langle\tilde V_{\Phi}\rangle_{\natural} = \tilde V_{\Phi}\tilde V_{\Phi}^{\natural} = -c^{2}$</td>
+<td>$\langle\tilde V_{\Phi}\rangle_{\natural} = -c^{2}$</td>
 <td>The norm; the one constraint, frame-independent and conserved</td>
 </tr>
 <tr>
-<td>$\gamma c$, $\gamma\vec v$</td>
-<td>The temporal and vector parts of the element</td>
-</tr>
-<tr>
 <td>$\beta = \lvert\gamma\vec v\rvert/\lvert i\gamma c\rvert = v/c$</td>
-<td>The ratio of the two parts; exact, the parameter of the limit</td>
+<td>Ratio of the two parts of the element; exact, the parameter of the limit</td>
 </tr>
 <tr>
 <td>$\gamma-1$</td>
-<td>The excess of the temporal part over its rest value, in units of $c$; $c\left(\gamma-1\right)$ is the displacement from the apex</td>
+<td>Excess of the temporal part over its rest value, in units of $c$</td>
+</tr>
+<tr>
+<td>$\gamma = 1+\frac{\beta^{2}}{2}+\frac{3\beta^{4}}{8}+\cdots$</td>
+<td>The one expansion; everything else is it with a factor</td>
 </tr>
 <tr>
 <td>$\gamma^{2}\beta^{2}=\left(\gamma-1\right)\left(\gamma+1\right)$</td>
 <td>The constraint as a difference of squares; exact</td>
-</tr>
-<tr>
-<td>$\frac{1}{2}\gamma^{2}\beta^{2}$</td>
-<td>Truncated excess; equals $\frac{1}{2}\beta^{2}$ at leading order</td>
 </tr>
 <tr>
 <td>$-\frac{\gamma-1}{\gamma+1}=-\tanh^{2}\left(\theta_{\mathrm{rpd}}/2\right)$</td>
@@ -573,11 +517,7 @@ $$</p>
 </tr>
 <tr>
 <td>$\theta_{\mathrm{rpd}} = \operatorname{artanh}\beta$</td>
-<td>Rapidity; the additive coordinate of the hyperboloid</td>
-</tr>
-<tr>
-<td>$\gamma=\cosh\theta_{\mathrm{rpd}}$, $\gamma\beta=\sinh\theta_{\mathrm{rpd}}$</td>
-<td>The element in the additive coordinate</td>
+<td>Rapidity; the additive parameter of the boost</td>
 </tr>
 <tr>
 <td>$\tilde P_{\Phi} = m\tilde V_{\Phi}$</td>
@@ -585,15 +525,15 @@ $$</p>
 </tr>
 <tr>
 <td>$E=\gamma mc^{2}$, $\vec p_{\Phi}=m\gamma\vec v$</td>
-<td>Energy and momentum; the two components of the scaled element</td>
+<td>Energy and momentum; the components of the scaled element</td>
 </tr>
 <tr>
 <td>$\mathcal{E} = E-mc^{2} = \left(\gamma-1\right)mc^{2}$</td>
-<td>Excess energy; the scaled excess</td>
+<td>Excess energy</td>
 </tr>
 <tr>
 <td>$\Omega = k_{t}^{\prime}-k_m = k_m\left(\gamma-1\right)$</td>
-<td>Excess wave number; the scaled excess in wave numbers</td>
+<td>Excess wave number</td>
 </tr>
 <tr>
 <td>$\tilde K_{\Phi} = \left(k_m/c\right)\tilde V_{\Phi}$</td>
@@ -612,11 +552,11 @@ $$</p>
 <h2 id="further-reading">Further Reading</h2>
 <ul>
 <li>Lev Landau and Evgeny Lifshitz, <em>The Classical Theory of Fields</em> (4th ed., Butterworth–Heinemann, 1975), §9, for the expansion of the relativistic energy and momentum and the Lagrangian of a free particle.</li>
-<li>Herbert Goldstein, Charles Poole and John Safko, <em>Classical Mechanics</em> (3rd ed., Addison–Wesley, 2002), chapter 7, for the relativistic Lagrangian and the Legendre transform to the Hamiltonian.</li>
-<li>John David Jackson, <em>Classical Electrodynamics</em> (3rd ed., Wiley, 1999), §11.5 and §11.10, for the same expansion used on the motion of a charge in an external field.</li>
+<li>Herbert Goldstein, Charles Poole and John Safko, <em>Classical Mechanics</em> (3rd ed., Addison–Wesley, 2002), chapter 7, for the relativistic Lagrangian and the Legendre transform.</li>
+<li>John David Jackson, <em>Classical Electrodynamics</em> (3rd ed., Wiley, 1999), §11.5 and §11.10, for the same expansion on the motion of a charge in an external field.</li>
 <li>Albert Messiah, <em>Quantum Mechanics</em> (North-Holland, 1961), chapter XX, for the non-relativistic limit of the Klein–Gordon and Dirac equations.</li>
-<li>Leslie L. Foldy and Siegfried A. Wouthuysen, "On the Dirac theory of spin 1/2 and its non-relativistic limit," <em>Physical Review</em> <strong>78</strong> (1950) 29–36, for the limit taken with spin, where the odd terms must be removed first.</li>
-<li>Paul A. M. Dirac, "The quantum theory of the electron," <em>Proceedings of the Royal Society A</em> <strong>117</strong> (1928) 610–624, for the first-order square root of the wave operator, which the non-local square root of §<em>The Phase and the Order in Time</em> shares with the matrix one.</li>
+<li>Leslie L. Foldy and Siegfried A. Wouthuysen, "On the Dirac theory of spin 1/2 and its non-relativistic limit," <em>Physical Review</em> <strong>78</strong> (1950) 29–36.</li>
+<li>Paul A. M. Dirac, "The quantum theory of the electron," <em>Proceedings of the Royal Society A</em> <strong>117</strong> (1928) 610–624, for the first-order square root of the wave operator.</li>
 </ul>
       </div>
     </main>
