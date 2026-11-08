@@ -84,7 +84,7 @@ $$
 
 since a momentum carries $\mathsf{M}\mathsf{L}\mathsf{T}^{-1}$ and $\hbar$ carries $\mathsf{M}\mathsf{L}^2\mathsf{T}^{-1}$, the unit of an action.
 
-**Why $\hbar$ and not $h$.** The series uses the reduced wave number throughout, the number of radians per unit length. The ordinary wave number is $2\pi k_{\Phi}$, and the ordinary de Broglie wavelength is $2\pi/k_{\Phi}$; the factor $2\pi$ is the whole difference. The reduced forms are the ones that enter the exponents, the derivatives and the operator coefficients, which is why they are the ones with names here. A text that quotes $h/p$ gives a wavelength, and that wavelength must be divided by $2\pi$ and inverted before it is compared with a wave number of this series.
+**Why $\hbar$ and not $h$.** The series uses the reduced wave number throughout, the number of radians per unit length. The ordinary wave number is $k_{\Phi}/(2\pi)$, and the ordinary de Broglie wavelength is $2\pi/k_{\Phi}$; the factor $2\pi$ is the whole difference. The reduced forms are the ones that enter the exponents, the derivatives and the operator coefficients, which is why they are the ones with names here. A text that quotes $h/p$ gives a wavelength, and that wavelength must be divided by $2\pi$ and inverted before it is compared with a wave number of this series. A spectrometer quotes the ordinary form, $1/\lambda=k_{\Phi}/(2\pi)$, in $\mathrm{cm^{-1}}$.
 
 **The reduced form is the angle per unit length.** That is what the missing $2\pi$ means, and it is why the readings below are phrased per radian rather than per turn: a phase advances by one radian over a distance $1/k_{\Phi}$, and by a full turn over $2\pi/k_{\Phi}$. Every comparison with a measured fringe spacing, a spectrometer reading or a quoted wavelength carries the $2\pi$ back.
 
@@ -272,7 +272,7 @@ $$
 (4.3561\times10^{12})^{2}+(2.5896\times10^{12})^{2} = 1.898\times10^{25}+6.706\times10^{24} = 2.568\times10^{25}.
 $$
 
-**A photon.** For $m=0$ the mass wave number vanishes and the other two coincide. At $1\ \mathrm{eV}$ both are $5.0677\times10^{6}\ \mathrm{m^{-1}}$, which is the reduced wave number of that photon; the ordinary wave number is $3.184\times10^{7}\ \mathrm{m^{-1}}$, the same number times $2\pi$, and the ordinary wavelength is $1239.842\ \mathrm{nm}$.
+**A photon.** For $m=0$ the mass wave number vanishes and the other two coincide. At $1\ \mathrm{eV}$ both are $5.0677\times10^{6}\ \mathrm{m^{-1}}$, which is the reduced wave number of that photon; the ordinary wave number is $8.0655\times10^{5}\ \mathrm{m^{-1}}$, the same number divided by $2\pi$, that is $8065.5\ \mathrm{cm^{-1}}$, and the ordinary wavelength is $1239.842\ \mathrm{nm}$.
 
 **What the tables say.** The electron's mass wave number is $2.5896\times10^{12}\ \mathrm{m^{-1}}$, that is one radian of phase per $3.86\times10^{-13}\ \mathrm{m}$. The wave numbers are in direct proportion to the masses, so the ordering of the mass wave numbers is the ordering of the masses, and that is the whole content of the definition.
 
@@ -288,7 +288,7 @@ The rule of the series is that a coefficient of a differential operator is an in
 | the temporal entry of the harmonic parameter | $k_{t}^{\prime}$ | the energy |
 | the spatial entry of the same parameter | $k_m$ | the mass |
 | the modulus of that parameter | $k_{\Phi}$ | the momentum |
-| the non-relativistic criterion | $k_{\Phi}\gg k_m$ | the momentum |
+| the non-relativistic criterion | $k_{\Phi}\ll k_m$ | the momentum |
 | the range of a Yukawa potential | $1/k_m$ | the mass |
 | the Zitterbewegung amplitude | $1/(2k_m)$ | the mass |
 | the ordinary Compton wavelength | $2\pi/k_m$ | the mass |
@@ -338,7 +338,7 @@ the reduced Compton wavelength, $386.159\ \mathrm{fm}$ for the electron. That di
 
 **It is the shortest distance at which the particle is still one particle.** The derivation of §*The Cost of Localization* is the statement: a region of size $1/k_m$ has a wave number spread $k_m$, an energy spread $m\,c^{2}=mc^{2}$, and the energy to make a second particle of the same mass. Below that distance the state that would be described is not a one-particle state, so $1/k_m$ is the resolution limit of the description and not the radius of an object.
 
-**It is the order of length at which relativistic effects cannot be ignored.** A particle localized to $1/k_m$ has, by the uncertainty relation, a momentum spread of order $\hbar k_m=mc$, so its kinetic energy is of order its rest energy and the non-relativistic description fails there. The distance is therefore the boundary of the Schrödinger theory: far above $1/k_m$ the non-relativistic equation is accurate, at $1/k_m$ it must give way to the Dirac or Klein–Gordon equation, and below it pair creation ends the one-particle description. That is the reading of the criterion $k_{\Phi}\gg k_m$ of §*The Non-Relativistic Criterion*, and it is the sense in which $1/k_m$ is quoted as the length at which a particle becomes relativistic: $386\ \mathrm{fm}$ for the electron, $0.21\ \mathrm{fm}$ for the proton, $2.3\times10^{-5}\ \mathrm{fm}$ for the top quark.
+**It is the order of length at which relativistic effects cannot be ignored.** A particle localized to $1/k_m$ has, by the uncertainty relation, a momentum spread of order $\hbar k_m=mc$, so its kinetic energy is of order its rest energy and the non-relativistic description fails there. The distance is therefore the boundary of the Schrödinger theory: far above $1/k_m$ the non-relativistic equation is accurate, at $1/k_m$ it must give way to the Dirac or Klein–Gordon equation, and below it pair creation ends the one-particle description. That is the reading of the criterion $k_{\Phi}\ll k_m$ of §*The Non-Relativistic Criterion*, and it is the sense in which $1/k_m$ is quoted as the length at which a particle becomes relativistic: $386\ \mathrm{fm}$ for the electron, $0.21\ \mathrm{fm}$ for the proton, $2.3\times10^{-5}\ \mathrm{fm}$ for the top quark.
 
 **It is the range of the force the particle carries.** The Yukawa potential is $e^{-r/\lambda_m}/r$, so the distance $1/k_m$ is where the exponential has fallen by $1/e$, and beyond it the force is gone. A force carried by a massless particle has $k_m=0$ and no range at all, which is the same statement as the divergence of $1/k_m$.
 
@@ -489,7 +489,7 @@ to five figures, the two differing only in the fifth because the binding energy 
 
 **The binding has a wave number of its own, and it is not one of the three.** The energy that moves inside the atom is the binding energy, and $\frac{m\,c^{2}}{k_m\,(13.6\ \mathrm{eV})}$ is the wavelength at the ionization threshold, that is $k=6.892\times10^{7}\ \mathrm{m^{-1}}$. That number is not $k_{t}^{\prime}$ of the state, because $k_{t}^{\prime}$ is built from the total energy and the total energy carries the rest energy. It is the energy wave number of an energy difference, of the kind read in §*The Uncertainty in Time*, and it is two hundred and seventy times smaller than the momentum wave number of the ground state: the photon that ionizes hydrogen has a wave number far below the inverse radius of the atom it ionizes, which is why the photo-ionization cross-section is so small.
 
-**What the ratio buys.** Because the ratio is the inverse fine-structure constant, a relativistic correction is smaller than the non-relativistic energy by a factor $\alpha^{2}$. The binding energy itself is $\tfrac12\alpha^{2}m_ec^{2}=13.6\ \mathrm{eV}$, and the corrections to it are of order $\alpha^{4}m_ec^{2}=1.4\ \mathrm{meV}$, a relative size of $2\alpha^{2}=1.1\times10^{-4}$. The scale $\alpha^{2}m_ec^{2}=27.2\ \mathrm{eV}$ is the binding scale and not the size of a correction; confusing the two overstates the corrections by the factor $1/\alpha^{2}=1.9\times10^{4}$. That the corrections sit four powers of $\alpha$ down follows from the same small parameter that makes $k_{\Phi}\gg k_m$, and it is why the Schrödinger equation with a Coulomb potential works as well as it does.
+**What the ratio buys.** Because the ratio is the inverse fine-structure constant, a relativistic correction is smaller than the non-relativistic energy by a factor $\alpha^{2}$. The binding energy itself is $\tfrac12\alpha^{2}m_ec^{2}=13.6\ \mathrm{eV}$, and the corrections to it are of order $\alpha^{4}m_ec^{2}=1.4\ \mathrm{meV}$, a relative size of $2\alpha^{2}=1.1\times10^{-4}$. The scale $\alpha^{2}m_ec^{2}=27.2\ \mathrm{eV}$ is the binding scale and not the size of a correction; confusing the two overstates the corrections by the factor $1/\alpha^{2}=1.9\times10^{4}$. That the corrections sit four powers of $\alpha$ down follows from the same small parameter that makes $k_{\Phi}\ll k_m$, and it is why the Schrödinger equation with a Coulomb potential works as well as it does.
 
 **Light and heavy.** At fixed $L$, a light particle has the smaller $k_m$ and reaches the relativistic regime first; a heavy particle stays non-relativistic in a smaller box.
 
@@ -751,13 +751,13 @@ which is the inverse of the distance the particle travels before it decays. The 
 
 ## The Non-Relativistic Criterion
 
-**The condition.** Non-relativistic quantum mechanics applies when the wave number of the state is much larger than the mass wave number:
+**The condition.** Non-relativistic quantum mechanics applies when the wave number of the state is much smaller than the mass wave number:
 
 $$
-k_{\Phi} \gg k_m .
+k_{\Phi} \ll k_m .
 $$
 
-The three ways of writing the same condition are $p\ll mc$, $k_{\Phi}\gg k_m$ and $k_{t}^{\prime}\simeq k_m$. The last is the easiest to apply, since $k_{t}^{\prime}=\gamma k_m$ and the criterion is $\gamma\simeq1$.
+The three ways of writing the same condition are $p\ll mc$, $k_{\Phi}\ll k_m$ and $k_{t}^{\prime}\simeq k_m$. The last is the easiest to apply, since $k_{t}^{\prime}=\gamma k_m$ and the criterion is $\gamma\simeq1$.
 
 **The hydrogen atom is the case in point.** The ratio $a_0k_{m_e}=1/\alpha=137.036$ derived in §*The Atomic Comparison* is the criterion satisfied with room to spare, and the room is exactly the inverse fine-structure constant.
 
@@ -765,114 +765,66 @@ The three ways of writing the same condition are $p\ll mc$, $k_{\Phi}\gg k_m$ an
 
 ## The Non-Relativistic Limit
 
-**A criterion is not a limit.** The preceding section states when the limit applies. This section states what the limit is, in the three wave numbers. It is one operation on the box $k_{t}^{\prime\,2}=k_{\Phi}^{2}+k_m^{2}$, and the operation has four moves: split exactly, solve exactly, expand once, keep the leading term. The same four moves on the same equation in momentum are the subject of *The Non-Relativistic Limit of Relativistic Mechanics in Biquaternionic Form*.
+**The condition, read on the three numbers.** Non-relativistic means that the excess of the energy wave number over the mass wave number is small, $\Omega:=k_{t}^{\prime}-k_m\ll k_m$, which is the same as $k_{\Phi}\ll k_m$. In that regime the mass wave number is a fixed constant, the momentum wave number is the dynamical variable, and the energy wave number is forced by the box of §*The Relation Between the Three*.
 
-### The Exact Split
-
-Write the energy wave number as the mass wave number plus an excess,
+**The element, truncated.** The rule is one line: keep $\gamma$ to order $\beta^{2}$ in the temporal slot and replace it by $1$ in the vector slot,
 
 $$
-k_{t}^{\prime} = k_m+\Omega ,
+\tilde K_{\Phi,1}=i\,k_m\left(1+\frac{\beta^{2}}{2}\right)e_{t}+k_m\vec\beta
+=i\left(k_m+\Omega\right)e_{t}+\vec k_{\Phi},
 \qquad
-\Omega := k_{t}^{\prime}-k_m .
-$$
-
-Nothing is approximated in that line, because the second equality defines $\Omega$. The first term is the wave number of the rest frame, the second is the wave number the motion adds, and the exponent splits with them:
-
-$$
-e^{-i\,k_{t}^{\prime}r'_{t}} = \underbrace{e^{-i\,k_m r'_{t}}}_{f}\,
-\underbrace{e^{-i\,\Omega r'_{t}}}_{\text{excess}} .
-$$
-
-The factor $f$ is the rest-frame clock of §*The Rest-Frame Clock*: unit modulus, period equal to the Compton period, and present in every state of the particle regardless of its speed.
-
-**Frequencies split the same way.** With $\omega_{m}=c\,k_m$ and $\omega=c\,\Omega$, the frequency of the state is $\omega_m+\omega$. The rest-frame clock is the $\Omega=0$ member of the family, and the excess frequency is the part the kinetic energy pays for.
-
-### The Exact Relation
-
-Substitute the split in the box and cancel the $k_m^{2}$ that appears on both sides:
-
-$$
-k_{\Phi}^{2} = 2k_m\,\Omega+\Omega^{2} .
-$$
-
-This is exact, and it is the box with the origin of the energy axis moved to the mass side. It has one term linear in the excess and one term quadratic. Solved as a quadratic in $\Omega$, it gives the two branches:
-
-$$
-\Omega_{\pm} = -k_m \pm \sqrt{k_{\Phi}^{2}+k_m^{2}} .
-$$
-
-### The Parameter
-
-The quotient of the quadratic term by the linear one is $\Omega/(2k_m)$, and that quotient is the parameter:
-
-$$
-\eta := \frac{\Omega}{2k_m}
-= \frac{\gamma-1}{2}
-= \frac{1}{4}\frac{k_{\Phi}^{2}}{k_m^{2}}+O\left(\frac{k_{\Phi}^{4}}{k_m^{4}}\right).
-$$
-
-It is not inserted: the exact relation has two terms, and $\eta$ is what their ratio is. The criterion $k_{\Phi}\ll k_m$ of the preceding section is the statement $\eta\ll1$, which is why a criterion about sizes and a limit about terms say the same thing here.
-
-**The error, in closed form.** Because $\Omega=\frac{k_{\Phi}^{2}}{2k_m}\cdot\frac{1}{1+\eta}$, the truncated excess $\Omega_{\mathrm{trunc}}:=k_{\Phi}^{2}/(2k_m)$ relates to the exact one by
-
-$$
-\frac{\Omega-\Omega_{\mathrm{trunc}}}{\Omega_{\mathrm{trunc}}} = -\frac{\eta}{1+\eta} .
-$$
-
-The error is known at every wave number and needs no estimate.
-
-### The Expansion
-
-Set $r:=k_{\Phi}/k_m$, so that $\Omega=k_m\left(\sqrt{1+r^{2}}-1\right)$ by the exact solution. Then
-
-$$
-\Omega = k_m\left(\frac{r^{2}}{2}-\frac{r^{4}}{8}+\frac{r^{6}}{16}-\cdots\right)
-= \frac{k_{\Phi}^{2}}{2k_m}-\frac{k_{\Phi}^{4}}{8k_m^{3}}+\frac{k_{\Phi}^{6}}{16k_m^{5}}-\cdots .
-$$
-
-Keeping the first term, and converting with $k_m=mc/\hbar$,
-
-$$
-\Omega = \frac{k_{\Phi}^{2}}{2k_m},
+\Omega=\frac{k_m\beta^{2}}{2},
 \qquad
-\hbar c\,\Omega = \frac{\hbar^{2}k_{\Phi}^{2}}{2m} = \frac{p^{2}}{2m},
+k_{\Phi}=k_m\beta .
 $$
 
-which is the non-relativistic kinetic energy. The dropped term is $-p^{4}/(8m^{3}c^{2})$, the familiar correction to the kinetic energy, and the ratio of dropped to kept is $-\eta$ to leading order.
+The temporal slot keeps its first correction because that correction *is* the kinetic energy; the vector slot keeps its leading term because its first correction, $\frac{1}{2}\beta^{2}k_m\vec\beta$, is of order $\beta^{3}$: one order below the term the temporal slot keeps, and therefore below the order of the element.
 
-**The table of the error.** The exact $\eta$ and the leading form $\frac14 r^{2}$ agree at small $r$ and part company at large $r$, which is the boundary of the limit.
-
-| $k_{\Phi}/k_m$ | exact $\eta$ | $\frac{1}{4}r^{2}$ | error $-\eta/(1+\eta)$ |
-|---|---|---|---|
-| $0.1$ | $0.00249$ | $0.00250$ | $-0.00249$ |
-| $0.5$ | $0.0590$ | $0.0625$ | $-0.0557$ |
-| $1$ | $0.2071$ | $0.2500$ | $-0.1716$ |
-| $2$ | $0.6180$ | $1.0000$ | $-0.3820$ |
-
-### The Order in Time
-
-**Two terms of the exponential give a first-order relation.** The excess factor advances over a step $\delta r'_{t}$ as
+**The same rule on the box.** Write $k_{t}^{\prime}=k_m+\Omega$ in $k_{t}^{\prime\,2}=k_{\Phi}^{2}+k_m^{2}$ and cancel the $k_m^{2}$:
 
 $$
-e^{-i\,\Omega\,\delta r'_{t}} = 1-i\,\Omega\,\delta r'_{t}+O\left(\left(\delta r'_{t}\right)^{2}\right),
+k_{\Phi}^{2}=2k_m\Omega+\Omega^{2}
+\qquad\longrightarrow\qquad
+\Omega=\frac{k_{\Phi}^{2}}{2k_m},
 $$
 
-so a field that carries the excess phase satisfies $\partial_{r'_{t}}\chi=-i\Omega\,\chi$. It is first order in $r'_{t}$ because the exponential was cut after two terms. A third term leaves $\chi''$ in the relation and rebuilds a second-order equation, which is the form the field articles start from. **The order in time is the number of terms kept**, and keeping two terms is the same decision as keeping the leading term of the ladder.
+the arrow being the statement $\Omega\ll k_m$: the quadratic term is a fraction $\Omega/2k_m=\frac{1}{4}\beta^{2}$ of the linear one and is dropped.
 
-**The equation of the limit.** With $\Omega$ truncated to $k_{\Phi}^{2}/2k_m$ and $k_{\Phi}^{2}\to-\Delta$, the relation becomes
-
-$$
-i\,\frac{\partial\chi}{\partial r'_{t}} = -\frac{1}{2k_m}\,\Delta\,\chi.
-$$
-
-Multiplying by $\hbar c$ and using $\hbar c/2k_m=\hbar^{2}/2m$, the free Schrödinger equation follows in either variable:
+**The relation then closes exactly.** On the truncated element the two entries are $\Omega=k_m\beta^{2}/2$ and $k_{\Phi}=k_m\beta$, so
 
 $$
-\boxed{\;i\hbar\,\frac{\partial\chi}{\partial t'} = -\frac{\hbar^{2}}{2m}\,\Delta\,\chi\;}
+\frac{k_{\Phi}^{2}}{2k_m}=\frac{k_m^{2}\beta^{2}}{2k_m}=\frac{k_m\beta^{2}}{2}=\Omega ,
+\qquad\text{that is}\qquad
+\hbar c\,\Omega=\frac{\left(\hbar k_{\Phi}\right)^{2}}{2m}=\frac{1}{2}m\lvert\vec v\rvert^{2}.
 $$
 
-That box is what the three wave numbers leave when the only small term of their triangle is dropped. *The Klein–Gordon Equation in Biquaternionic Form* applies the same box to the field, and there the same four moves are the whole derivation.
+The last equality is the kinetic energy written in the three wave numbers, and it holds without remainder: the truncated element satisfies $E_{\mathrm{kin}}=p^{2}/2m$ and not merely $p^{2}/2m$ to leading order. That is what makes the truncation of the two slots at different orders the consistent one — any other split leaves a remainder in this equality.
+
+**The error, and its only parameter.** The exact solution of the quadratic is $\Omega=-k_m+\sqrt{k_{\Phi}^{2}+k_m^{2}}$, which expands as
+
+$$
+\Omega=\frac{k_{\Phi}^{2}}{2k_m}\left(1-\frac{1}{4}\frac{k_{\Phi}^{2}}{k_m^{2}}+\cdots\right),
+$$
+
+so the truncated $\Omega$ is high by the fraction $\frac{1}{4}k_{\Phi}^{2}/k_m^{2}=\frac{1}{4}\beta^{2}$. At $k_{\Phi}/k_m=0.1$ the error is $0.25$ per cent and the limit is usable; at $k_{\Phi}/k_m=1$ the exact figure is $21$ per cent and the limit has ended. The single parameter of the whole section is $k_{\Phi}/k_m$.
+
+**The equation.** The exponent of the rung separates exactly, because $\Omega$ is a definition and not a series:
+
+$$
+e^{i\left(\vec k_{\Phi}\cdot\vec r-k_{t}^{\prime}r_{t}^{\prime}\right)}
+=\underbrace{e^{-i\,k_m\,r_{t}^{\prime}}}_{f}\,
+\underbrace{e^{i\left(\vec k_{\Phi}\cdot\vec r-\Omega\,r_{t}^{\prime}\right)}}_{\chi},
+$$
+
+with $f$ the rest-frame clock of §*The Rest-Frame Clock*. On the envelope $\chi$ the exponent gives $\partial_{r_{t}^{\prime}}\chi=-i\Omega\chi$, and $\Omega$ is quadratic in $\vec k_{\Phi}$, so the number $k_{\Phi}^{2}$ is the symbol of the operator $-\Delta$:
+
+$$
+i\,\frac{\partial\chi}{\partial r_{t}^{\prime}}=-\frac{1}{2k_m}\,\Delta\,\chi
+\qquad\longrightarrow\qquad
+i\hbar\,\frac{\partial\chi}{\partial t}=-\frac{\hbar^{2}}{2m}\,\Delta\,\chi ,
+$$
+
+the last step multiplying by $\hbar c$ with $r_{t}^{\prime}=c\,t$ and $\hbar c/2k_m=\hbar^{2}/2m$. This is the free Schrödinger equation, and it is the limit of the three wave numbers: $k_m$ is the constant, $k_{\Phi}$ the variable, and the box has been turned into an operator by dropping one term.
 
 ## The Massless Case
 
@@ -886,7 +838,7 @@ $$
 
 The triangle flattens: the hypotenuse falls on the momentum side. The energy wave number and the momentum wave number become one number, which is the reduced wave number of the particle, and the mass wave number is no longer a wave number of the problem.
 
-**No non-relativistic limit.** The criterion $k_{\Phi}\gg k_m$ reads $k_{\Phi}\gg0$ at $m=0$ and holds at every finite wave number, which is the statement that a massless particle always moves at $c$ and has no non-relativistic regime to be the limit of. The relativistic description is not a high-energy regime of a non-relativistic one; it is the only description.
+**No non-relativistic limit.** The criterion $k_{\Phi}\ll k_m$ reads $k_{\Phi}\ll0$ at $m=0$, which no finite wave number satisfies, so there is no non-relativistic regime for the massless particle to be the limit of. The relativistic description is not a high-energy regime of a non-relativistic one; it is the only description.
 
 **The rest-frame clock stops.** $\omega_C=c\,k_m\to0$ as the mass wave number vanishes: the field of a massless particle has no rest-frame oscillation, because there is no frame in which it rests. The Compton period, the trembling and the rest-frame phase are lost together, and their loss is the flattening of the triangle.
 

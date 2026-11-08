@@ -308,7 +308,7 @@ The added term is the density the rest mode carries by itself. The sign rule is 
 
 ## The Non-Relativistic Limit
 
-**The method, and where it is stated.** The limit of a dispersion relation is stated once, in *The Three Wavenumbers of a Particle* §*The Non-Relativistic Limit*, and it has four moves: split the energy wave number exactly as $k_{t}^{\prime}=k_m+\Omega$, use the exact relation $k_\Phi^{2}=2k_m\Omega+\Omega^{2}$, expand once, and keep the leading term. None of the four is specific to a field. What the field adds is one step, from a number on each mode to an operator on the field, and that step is the whole of this section.
+**The method, and where it is stated.** The limit is stated once, in *The Three Wavenumbers of a Particle* §*The Non-Relativistic Limit*, and it is one rule: keep the excess of $\gamma$ to order $\beta^{2}$ in the temporal slot and drop it in the vector slot, which is the same act as dropping $\Omega^{2}$ from the exact relation $k_\Phi^{2}=2k_m\Omega+\Omega^{2}$. Nothing in the rule is specific to a field. What the field adds is one step, from a number on each mode to an operator on the field, and that step is the whole of this section.
 
 **The general result, applied.** The solutions are superpositions of the plane waves of §*Plane Waves and the Dispersion Relation*,
 
