@@ -1,0 +1,599 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Two Lines, Six Components, and Their Sums — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="two-lines-six-components-and-their-sums"><strong>Two Lines, Six Components, and Their Sums</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>The Dirac equation in biquaternionic form is a pair of first-order equations, one per component of the field. This article asks what may be added to that pair, and answers with six elementary shapes and the couplings their sums produce. Along the way it settles a question the literature usually passes over: what the pair can and cannot carry of chirality.</p>
+<p><strong>The pair.</strong> With $\tilde\Xi_{\mathrm{sp}}=\tilde\Xi_{\mathrm{sp},L}+\tilde\Xi_{\mathrm{sp},R}$ one element of $\mathbb{B}$ and $k_m=mc/\hbar$,</p>
+<p>$$
+\tilde\nabla\tilde\Xi_{\mathrm{sp},R}=k_m\tilde\Xi_{\mathrm{sp},L},
+\qquad
+\tilde\nabla^{\natural}\tilde\Xi_{\mathrm{sp},L}=k_m\tilde\Xi_{\mathrm{sp},R}.
+$$</p>
+<p>This is the definition, not a rewriting of something simpler. Three things follow from it, and each is argued in its own section.</p>
+<p><strong>Why two lines and not one.</strong> A first-order equation whose derivative multiplies on the left constrains one component and cannot relate it to another, because left multiplication preserves the chirality value. One line is therefore half a description. The second line is not obtainable from the first by conjugation — conjugating a line imposes a reality condition on the field and yields a different equation. So the pair is posited, and the pair is what a couple of one-sided equations means here.</p>
+<p><strong>What the pair carries of chirality, and what it does not.</strong> The value is a good label of each part exactly as long as the mass is zero. Turn the mass on and the value split becomes impossible: the two lines can only be written on components that are not chirality eigenstates. The algebra says this in one line, and it says the same thing physics says — a massive fermion has no chirality eigenstate. §<em>Chirality: What the Pair Can Carry</em> is the technical core of this article.</p>
+<p><strong>Why an inventory.</strong> Any addition is one element $B$ of the algebra, and the algebra has eight real components. Six shapes among them are the ones proven physics uses. The mass is not one of the six; the mass is a <em>value</em> of the first, in the one slot of the pair that carries no derivative. Because $B$ is one element, components may be summed, and a sum carries cross terms belonging to no component — which is where the interactions physics measures actually live.</p>
+<h2 id="why-one-line-is-half-a-description">Why One Line Is Half a Description</h2>
+<p><strong>The count.</strong> At $k_m=0$ the pair decouples into $\tilde\nabla\tilde\Xi_{\mathrm{sp},R}=0$ and $\tilde\nabla^{\natural}\tilde\Xi_{\mathrm{sp},L}=0$. Each is a Weyl-type equation and each carries one component. A single equation of this form is one of those two: it fixes one half of the field and leaves the other free. The other half is not a redundancy that a gauge choice removes; it is a second degree of freedom, and a second equation is what constrains it.</p>
+<p><strong>Conjugation gives a different equation, not the second line.</strong> The quaternion conjugate $\natural$ is an anti-automorphism, and it exchanges the two sides of an operator: $\natural\,L(a)\,\natural=R(a^{\natural})$, with conjugation acting on the parameters as well. So conjugating $\tilde\nabla\tilde\Xi_{\mathrm{sp},R}=k_m\tilde\Xi_{\mathrm{sp},L}$ produces a statement about $\tilde\Xi_{\mathrm{sp},R}^{\natural}$, not about a second independent component. To read it as the second line one must set $\tilde\Xi_{\mathrm{sp},L}=\tilde\Xi_{\mathrm{sp},R}^{\natural}$. That is a reality condition linking the two parts, and it halves the coefficient count: four complex coefficients become two. The result is a Majorana-type equation, not the Dirac equation, and the difference is not cosmetic — its plane waves sit on the spacelike locus rather than on the mass shell. <strong>So the second line stands on its own or not at all.</strong></p>
+<p><strong>Multiplication does not help either.</strong> A single equation $\left(\tilde\nabla+B\right)\tilde\Xi=0$ is one left multiplier applied to one element. Whatever $B$ is, it is a left multiplier, so it cannot create the second component, and the equation cannot be squared into one either: no first-order operator with constant coefficients in $\mathbb{B}$ has a scalar square, because a scalar square would need four coefficients anticommuting pairwise with squares $+1,-1,-1,-1$, and no such quadruple exists in the algebra.</p>
+<p><strong>The pair is therefore minimal.</strong> Two components, two first-order equations, and a coefficient relating them. The coefficient $k_m$ sits where no derivative acts, so the relation costs no derivative and the derivative count stays first order. That is the whole design, and every addition below respects it.</p>
+<h2 id="chirality-what-the-pair-can-carry">Chirality: What the Pair Can Carry</h2>
+<p>This is the point on which a biquaternionic Dirac equation is usually written loosely, so it is worth doing in four steps. Each step is one line of algebra, and each was checked symbolically.</p>
+<p><strong>Step 1: the value, and where it lives.</strong> The chirality value of an element is read by one multiplication on the right,</p>
+<p>$$
+\tilde X\vec e_z=-i\tilde X\ \Rightarrow\ \text{value }L,
+\qquad
+\tilde X\vec e_z=+i\tilde X\ \Rightarrow\ \text{value }R .
+$$</p>
+<p>In a display this splits the algebra by columns: the value-$L$ elements are those whose second column vanishes, the value-$R$ elements those whose first column vanishes. An element with neither property is the sum of one part of each. Nothing is chosen to make the split; the frame supplies $\vec e_z$ and the element supplies the answer.</p>
+<p><strong>Step 2: left multiplication preserves the value.</strong> For any $B$ and any $\tilde X$ of value $\lambda$,</p>
+<p>$$
+\left(B\tilde X\right)\vec e_z=B\left(\tilde X\vec e_z\right)=B\left(\lambda\tilde X\right)=\lambda\left(B\tilde X\right),
+$$</p>
+<p>by associativity alone. So $B\tilde X$ carries the value of $\tilde X$, for every element $B$ and every value. Checked for a general $2\times2$ $B$ against both values: exact.</p>
+<p><strong>Step 3: everything in the equation is a left multiplier.</strong> The gradient multiplies on the left. Every addition $B$ multiplies on the left. The mass coefficient is central, so it is a left multiplier as well. <strong>No term of the pair moves a value across</strong>, and that is not an approximation or a convention — it is associativity.</p>
+<p><strong>Step 4: so the pair cannot be written on the value parts.</strong> Suppose the subscript named the values, with $\tilde\Xi_{\mathrm{sp},L}$ of value $L$ and $\tilde\Xi_{\mathrm{sp},R}$ of value $R$. In the first line the left member is $\tilde\nabla\tilde\Xi_{\mathrm{sp},R}$, which by Step 2 has value $R$; the right member $k_m\tilde\Xi_{\mathrm{sp},L}$ has value $L$. Two elements of different definite value are equal only if both vanish. Computed: substituting the value parts into the pair returns $\tilde\Xi_{\mathrm{sp},L}=0$ and leaves $\tilde\Xi_{\mathrm{sp},R}$ constrained but decoupled. So the pair, read on the value parts, collapses.</p>
+<p><strong>What follows, and it is the answer.</strong> The letters $L$ and $R$ name two components of the field, and they are <em>not</em> the two chirality values. The mass relates two independent components; it does not convert one value into the other.</p>
+<p><strong>And this is exactly what physics says.</strong> A massive fermion has no chirality eigenstate: chirality is not a good quantum number once $m\ne0$, and a mass term is precisely the thing that destroys it. The algebra states the same fact structurally rather than dynamically. At $k_m=0$ the value split is available — the mass term is gone and each line constrains its own value part, and in the frame whose third axis is the momentum those two parts are the two helicities. At $k_m\ne0$ the value split is not available. <strong>The value survives as a label that the whole equation preserves; it does not survive as the thing the pair splits by.</strong> That is the precise sense in which the pair is chiral at $m=0$ and not chiral at $m\ne0$.</p>
+<p><strong>Two consequences, stated plainly.</strong></p>
+<p>First, a value label that the entire equation preserves is a superselection label, not a mixing. Nothing in the one-sided pair can change a value, so nothing in it can be a chirality flip.</p>
+<p>Second, the corpus's own position agrees and is deliberately minimal: the letters name components, and the value is a separate property read by the test, with the split itself not fixed by the algebra. That is a real gap in the massive case, and it is the gap this section makes visible instead of hiding. What fills it is physics, not algebra: the physical identification of the two components is the helicity pair in the massless limit.</p>
+<h2 id="where-a-crossing-lives-and-what-it-costs">Where a Crossing Lives, and What It Costs</h2>
+<p><strong>Only two operations cross a value.</strong> Checked on the frame:</p>
+<ul>
+<li>right multiplication by $\vec e_x$ or by $\vec e_y$ reverses the value — the image of a value-$R$ element acquires a first column and loses its second;</li>
+<li>right multiplication by $e_t$, by $\vec e_z$ or by a central scalar keeps it;</li>
+<li>the coefficient conjugation reverses it, because it sends the central $i$ to $-i$ and leaves the units alone.</li>
+</ul>
+<p>So a crossing needs something on the <em>right</em>, or a conjugation. Neither is a left multiplier, and that is why no addition to the gradient can supply one.</p>
+<p><strong>This is the price of the one-sided pair, and the reason a two-sided form exists.</strong> Write the derivative on the left, the mass on the right through $\vec e_z$, and a coefficient conjugation in the mass term, and one equation on one element becomes possible. The corpus carries that form for the analytic machinery — the dictionary, the Cauchy theory, the integral representation — and it is a change of variable, not a simplification: the conjugation in the mass term is what buys the crossing. <strong>The two forms trade different things.</strong> The pair keeps two independent components and pays by losing the value split at $m\ne0$. The single equation keeps the crossing and pays by becoming real-linear, so its two halves are tied by a reality condition rather than independent.</p>
+<p><strong>Which form this article uses, and why.</strong> The pair, because the additions of physics are value-preserving and therefore live naturally on it. A reader who wants a genuinely chiral coupling — one that mixes the values — is asking for the two-sided form or for a right multiplier, and neither is an addition to the gradient in the sense of this inventory. §<em>The Boundary of the Inventory</em> states that limit once, at the end.</p>
+<h2 id="what-an-addition-is-and-where-it-enters">What an Addition Is, and Where It Enters</h2>
+<p><strong>One element, appended to the gradient.</strong> An addition is a single element $B\in\mathbb{B}$ placed beside the gradient in each line:</p>
+<p>$$
+\left(\tilde\nabla+B_{RR}\right)\tilde\Xi_{\mathrm{sp},R}=k_m\tilde\Xi_{\mathrm{sp},L},
+\qquad
+\left(\tilde\nabla^{\natural}+B_{LL}\right)\tilde\Xi_{\mathrm{sp},L}=k_m\tilde\Xi_{\mathrm{sp},R}.
+$$</p>
+<p><strong>The second line carries the conjugate.</strong> The two lines carry $\tilde\nabla$ and $\tilde\nabla^{\natural}$, and the second is the conjugate of the first by construction. One interaction seen from the two lines therefore enters as $B$ in the first and as $B^{\natural}$ in the second. When $B$ is self-conjugate the two lines carry the same element; when $B$ is anti-invariant they carry opposite elements; when $B$ is neither, the second line carries a permutation. That trichotomy is the content of the $B^{\natural}$ column of §<em>The Six Components</em>, and it is the first thing to read off any case.</p>
+<p><strong>The addition carries no derivative.</strong> A term with one derivative is a change of coefficients in disguise, $a_\mu\partial/\partial R_\mu+c_\mu\partial/\partial R_\mu=(a_\mu+c_\mu)\partial/\partial R_\mu$, which is a frame and never an interaction. So $B$ is zeroth order, it carries the dimension of a derivative, $\mathrm{L}^{-1}$, and every coefficient below is a wave number.</p>
+<p><strong>Two positions.</strong> A component may sit on the diagonal, where it appends to a gradient and multiplies one component by itself — that is every case below. Or it may sit off the diagonal, where $k_m$ sits, with no derivative beside it — that is where the mass lives. Both are additions to the same pair. §<em>The Mass Slot</em> takes the second.</p>
+<h2 id="the-six-components">The Six Components</h2>
+<p><strong>$B$ is one element.</strong> On the frame $B=\beta_t e_t+\sum_k\beta_k e_k$ with $\beta_\mu\in\mathbb{C}$, so $B$ has eight real components. Nothing in the algebra prefers one. A case is a choice of which coefficients are non-zero and of the structure that dresses them, and a case is elementary when no other case is a special value of it.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>#</th>
+<th>component</th>
+<th>shape of $B$</th>
+<th>$B^{\natural}$</th>
+<th>what physics calls it</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>real time-scalar</td>
+<td>$\beta e_t$, $\beta\in\mathbb{R}$</td>
+<td>$B$</td>
+<td>mass at $\beta=k_m$; scalar Yukawa at $\beta=\chi$; potential energy at $\beta=-V/\hbar c$</td>
+</tr>
+<tr>
+<td>2</td>
+<td>imaginary time-scalar</td>
+<td>$i\kappa A_t e_t$</td>
+<td>$B$</td>
+<td>electric potential</td>
+</tr>
+<tr>
+<td>3</td>
+<td>imaginary spatial vector</td>
+<td>$i\kappa\sum_k A_k e_k$</td>
+<td>$-B$</td>
+<td>magnetic vector potential</td>
+</tr>
+<tr>
+<td>4</td>
+<td>imaginary spatial bivector</td>
+<td>$i\lambda\sum_k B_k\vec e_k$</td>
+<td>$-B$</td>
+<td>anomalous magnetic moment</td>
+</tr>
+<tr>
+<td>5</td>
+<td>imaginary pseudoscalar</td>
+<td>$i\chi_P\omega$</td>
+<td>$-B$</td>
+<td>pseudoscalar Yukawa coupling</td>
+</tr>
+<tr>
+<td>6</td>
+<td>axial vector</td>
+<td>$i\kappa\omega\sum_\mu Z_\mu e_\mu$</td>
+<td>neither</td>
+<td>weak neutral current</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>The mass is a value of the first, not a sixth shape.</strong> So are the scalar Yukawa coupling and the potential energy. One shape at three numbers, and the algebra cannot tell them apart: what distinguishes them is the status of the number — a constant of nature, a background field, a prescribed function — and that distinction is made in the cases, not in the algebra.</p>
+<p><strong>The connection is a sum, not a component.</strong> Components 2 and 3 together are $\tilde A_\Phi=\sum_\mu A_\mu e_\mu$. That is why the electric and magnetic parts behave differently in every formula: they are different components, not two names for one. §<em>Sums</em> computes what the sum produces, and the curvature is the first entry in the list.</p>
+<p><strong>What the six have in common, and it is the point of the preceding section.</strong> Every one of them is a left multiplier, so every one preserves the value. <strong>No addition to the gradient can mix the chirality values</strong>, whatever its shape. Chirality mixing, when a model needs it, has to come from the right-hand side of a line or from a conjugation — not from this list. The inventory is therefore complete for value-preserving additions and silent, by construction, about genuinely chiral ones.</p>
+<p><strong>A caution about the word.</strong> The axial component of case 6 is called chiral in the literature, and the word there means parity-odd, not value-changing. It preserves the value like every other component; what it does instead is permute the slots, which is why its linear piece carries four rotated coefficients. Reading "axial" as "chirality-mixing" would contradict Step 2, and the permutation is the correct reading.</p>
+<h2 id="the-mass-slot">The Mass Slot</h2>
+<p><strong>$k_m$ is a value, and it lives off the diagonal.</strong> The right-hand side of a line is the only place with no derivative in front of it, and the mass is there. Written as a block element over the pair,</p>
+<p>$$
+\left(\mathbb{D}+\mathcal{M}\right)\tilde\Xi_{\mathrm{sp}}=0,
+\qquad
+\mathcal{M}=\begin{pmatrix}0&M_L\\M_R&0\end{pmatrix},
+\qquad
+\mathbb{D}\tilde\Xi_{\mathrm{sp}}=\left(\tilde\nabla\tilde\Xi_{\mathrm{sp},R},\ \tilde\nabla^{\natural}\tilde\Xi_{\mathrm{sp},L}\right),
+$$</p>
+<p>with $\mathbb{D}^{2}=\Box I$ and $M_L=M_R=k_m$ in the corpus form. This block writing is bookkeeping over the pair, not a replacement for it: the entries of $\mathcal{M}$ are the coefficients the two lines already carry, and $\mathbb{D}$ is not one operator with a matrix inside it, since its two slots carry different operators.</p>
+<p><strong>The entry is an element, and $k_m$ is its scalar value.</strong> Nothing requires a number: the general off-diagonal entry is an element $M$, and the corpus writes the mass as a field in the Petiau system, where the square carries $M M^{*}$ and therefore two masses. That generalisation is algebra the corpus can write and physics it cannot yet support; it is marked speculative at the end. $k_m$ is the proven point of that family.</p>
+<p><strong>Why the mass must sit there.</strong> Put the same real scalar on the diagonal instead, as component 1. The composition over the time slot is then $\left(\partial/\partial R_t+k_m\right)^{2}=\partial/\partial R_t^{2}+2k_m\partial/\partial R_t+k_m^{2}$, whose symbol is $\left(\omega/c-k_m\right)^{2}-\lVert\vec k_\Phi\rVert^{2}$ — a light cone translated in frequency. Its dispersion relation $\omega=c\left(k_m\pm\lVert\vec k_\Phi\rVert\right)$ is linear in the wave number with group velocity $\pm c$ everywhere, including at $\vec k_\Phi=0$: a rest energy with no rest frame. The shift and the first-derivative term are one number $b$, so they cannot be chosen separately — zero gives no mass, non-zero gives a first-derivative term.</p>
+<p>Off the diagonal the derivative acts on $\tilde\Xi_{\mathrm{sp},L}$, which carries $k_m$ and no derivative, so</p>
+<p>$$
+\tilde\nabla^{\natural}\left(k_m\tilde\Xi_{\mathrm{sp},L}\right)=k_m^{2}\tilde\Xi_{\mathrm{sp},R},
+$$</p>
+<p>the mass counted twice and differentiated never, and the shell $\omega=c\sqrt{\lVert\vec k_\Phi\rVert^{2}+k_m^{2}}$ is the physical one. <strong>The difference is the slot, not the number.</strong> §<em>Case 2</em> compares the two symbols term by term.</p>
+<h2 id="the-squared-pair">The Squared Pair</h2>
+<p><strong>What it is.</strong> Apply the second line's operator to the first and substitute the second:</p>
+<p>$$
+\left(\tilde\nabla^{\natural}+B^{\natural}\right)\left(\tilde\nabla+B\right)\tilde\Xi_{\mathrm{sp},R}=k_m^{2}\tilde\Xi_{\mathrm{sp},R}.
+$$</p>
+<p>This is a consequence of the pair and it uses both lines — the substitution is exactly the step a single equation cannot perform. Expanding the product gives the three pieces each case reports:</p>
+<p>$$
+\left(\tilde\nabla^{\natural}+B^{\natural}\right)\left(\tilde\nabla+B\right)
+=\Box
++\underbrace{\left(\tilde\nabla^{\natural}B+B^{\natural}\tilde\nabla\right)}_{\text{first order}}
++\underbrace{B^{\natural}B}_{\text{zeroth order}} .
+$$</p>
+<p>The <strong>quadratic piece</strong> is $\Box$, the same for every $B$. The <strong>linear piece</strong> has coefficient $C_\mu=\bar e_\mu B+B^{\natural}e_\mu$ in front of $\partial/\partial R_\mu$, with $\bar e_t=e_t$ and $\bar e_k=-\vec e_k$. The <strong>zeroth piece</strong> is $B^{\natural}B$, and one further zeroth-order term appears when $B$ varies, $\tilde\nabla^{\natural}B$. The decomposition is the one the corpus uses in its no-single-square theorem, applied there to a constant zero-order term.</p>
+<p><strong>What it may be used for.</strong> Three things. To display a case's two pieces, which is this article's inventory. To show that the second-order part is $\Box$ for every $B$ and every sum of $B$s, so no addition moves the characteristics of a squared equation. And to identify which first-order null set a case produces.</p>
+<p><strong>What it may not be used for.</strong> It may not be read as the equation, and its symbol may not be read off as the dispersion relation of the particle. The pair has two components and the square has one, so whatever the pair puts in the second component is gone after squaring. §<em>Chirality</em> is the sharpest instance: the square is blind to the value, and a symbol computed from it can say nothing about which values a solution carries.</p>
+<h2 id="case-1-math129-the-photon">Case 1: $B=0$, the Photon</h2>
+<p><strong>The component.</strong> None.</p>
+<p><strong>The pair, two ways.</strong> With the mass on the right,</p>
+<p>$$
+\tilde\nabla\tilde\Xi_{\mathrm{sp},R}=k_m\tilde\Xi_{\mathrm{sp},L},
+\qquad
+\tilde\nabla^{\natural}\tilde\Xi_{\mathrm{sp},L}=k_m\tilde\Xi_{\mathrm{sp},R},
+$$</p>
+<p>and with everything on the left,</p>
+<p>$$
+\tilde\nabla\tilde\Xi_{\mathrm{sp},R}-k_m\tilde\Xi_{\mathrm{sp},L}=0,
+\qquad
+\tilde\nabla^{\natural}\tilde\Xi_{\mathrm{sp},L}-k_m\tilde\Xi_{\mathrm{sp},R}=0.
+$$</p>
+<p><strong>Squared pair.</strong> $C_\mu=0$ and $B^{\natural}B=0$, so $\Box\tilde\Xi_{\mathrm{sp}}=0$: the massless Klein–Gordon equation, with symbol $(\omega/c)^{2}-\lVert\vec k_\Phi\rVert^{2}$ vanishing on the light cone.</p>
+<p><strong>Reading.</strong> What the operator describes depends on what it acts on: the massless Dirac equation on the spinor module, the source-free Maxwell equation on a field strength. One operator, two carriers, no term in either. Every case below departs from this one, and the departure is measured by $C_\mu$ and $B^{\natural}B$ ceasing to be zero.</p>
+<h2 id="case-2-the-real-time-scalar-mass-scalar-yukawa-potential">Case 2: The Real Time-Scalar — Mass, Scalar Yukawa, Potential</h2>
+<p><strong>The component.</strong> $B=\beta e_t$ with $\beta\in\mathbb{R}$. Since $e_t$ is the identity, $B$ is central and $B^{\natural}=B$, so both lines carry the same addition. Three numbers are named in physics and all three are this component: $\beta=k_m$ the mass, $\beta=\chi=g_S\phi/\hbar c$ a scalar Yukawa coupling, $\beta=-V/\hbar c$ a prescribed potential energy. The algebra sees only the value of $\beta$; the sign enters through $C_t$.</p>
+<p><strong>The pair, two ways.</strong></p>
+<p>$$
+\left(\tilde\nabla+\beta e_t\right)\tilde\Xi_{\mathrm{sp},R}=k_m\tilde\Xi_{\mathrm{sp},L},
+\qquad
+\left(\tilde\nabla^{\natural}+\beta e_t\right)\tilde\Xi_{\mathrm{sp},L}=k_m\tilde\Xi_{\mathrm{sp},R},
+$$</p>
+<p>$$
+\left(\tilde\nabla+\beta e_t\right)\tilde\Xi_{\mathrm{sp},R}-k_m\tilde\Xi_{\mathrm{sp},L}=0,
+\qquad
+\left(\tilde\nabla^{\natural}+\beta e_t\right)\tilde\Xi_{\mathrm{sp},L}-k_m\tilde\Xi_{\mathrm{sp},R}=0.
+$$</p>
+<p>The diagonal $\beta$ and the off-diagonal $k_m$ are the same element in two slots, and this pair is the cleanest place to see it: $\beta$ appends to a gradient, $k_m$ couples the components.</p>
+<p><strong>Squared pair.</strong></p>
+<p>$$
+C_\mu=\beta\left(\bar e_\mu+e_\mu\right)=2\beta\,\delta_{\mu t},
+\qquad
+B^{\natural}B=\beta^{2} .
+$$</p>
+<p><strong>The two slots compared.</strong> With $B=k_m$ on the diagonal,</p>
+<p>$$
+\left(\tilde\nabla^{\natural}+k_m\right)\left(\tilde\nabla+k_m\right)=\Box+2k_m\,\partial/\partial R_t+k_m^{2}=\left(\partial/\partial R_t+k_m\right)^{2}+\Delta ,
+$$</p>
+<p>with symbol $\left(\omega/c-k_m\right)^{2}-\lVert\vec k_\Phi\rVert^{2}$ and group velocity $\pm c$ everywhere. With $k_m$ off the diagonal, $\left(\Box-k_m^{2}\right)\tilde\Xi_{\mathrm{sp}}=0$ and group velocity $c^{2}\lVert\vec k_\Phi\rVert/\omega$, vanishing at the origin. The two symbols differ by one term,</p>
+<p>$$
+\left(\tfrac{\omega}{c}-k_m\right)^{2}-\lVert\vec k_\Phi\rVert^{2}
+=\underbrace{\tfrac{\omega^{2}}{c^{2}}-\lVert\vec k_\Phi\rVert^{2}-k_m^{2}}_{\text{mass shell}}-2k_m\tfrac{\omega}{c},
+$$</p>
+<p>and that term is the derivative landing on the field that carries the mass. Both have the same rest energy; only the second has a rest frame.</p>
+<p><strong>Reading.</strong> For $\beta=\chi$ this is a coupling to a scalar background, called a mass term when the background sits at its vacuum value — which is why the two carry one name. For $\beta=-V/\hbar c$ it is a prescribed potential energy, and it coincides with component 2 restricted to a constant coefficient when $V=ϙ\Phi$.</p>
+<h2 id="case-3-the-imaginary-time-scalar-the-electric-potential">Case 3: The Imaginary Time-Scalar — the Electric Potential</h2>
+<p><strong>The component.</strong> $B=i\kappa A_t e_t$ with $\kappa=k_mϙ/(mc)$; for a physical potential $A_t=i\Phi/c$, so $B=-\left(ϙ\Phi/\hbar c\right)e_t$, real and negative. Central, so $B^{\natural}=B$.</p>
+<p><strong>The pair, two ways.</strong></p>
+<p>$$
+\left(\tilde\nabla+i\kappa A_te_t\right)\tilde\Xi_{\mathrm{sp},R}=k_m\tilde\Xi_{\mathrm{sp},L},
+\qquad
+\left(\tilde\nabla^{\natural}+i\kappa A_te_t\right)\tilde\Xi_{\mathrm{sp},L}=k_m\tilde\Xi_{\mathrm{sp},R},
+$$</p>
+<p>$$
+\left(\tilde\nabla+i\kappa A_te_t\right)\tilde\Xi_{\mathrm{sp},R}-k_m\tilde\Xi_{\mathrm{sp},L}=0,
+\qquad
+\left(\tilde\nabla^{\natural}+i\kappa A_te_t\right)\tilde\Xi_{\mathrm{sp},L}-k_m\tilde\Xi_{\mathrm{sp},R}=0.
+$$</p>
+<p><strong>Squared pair.</strong> $C_t=2i\kappa A_t$, $C_\mu=0$ for $\mu\ne t$, and $B^{\natural}B=-\kappa^{2}A_t^{2}$.</p>
+<p><strong>Reading.</strong> The time half of the connection. On its own it is a phase: a constant $A_t$ shifts the frequency by $ϙ\Phi/\hbar$ and is removable, which is the statement that a constant potential is unobservable. A varying $A_t$ is not removable, and it produces the electric field — the curvature of the sum with case 4.</p>
+<p><strong>Remark.</strong> $\left(\Box+2i\kappa A_t\,\partial/\partial R_t+\tilde\nabla^{\natural}\left(i\kappa A_te_t\right)-\kappa^{2}A_t^{2}-k_m^{2}\right)\tilde\Xi=0$. The term $\tilde\nabla^{\natural}B$ is present as soon as $A_t$ varies.</p>
+<h2 id="case-4-the-imaginary-spatial-vector-the-magnetic-vector-potential">Case 4: The Imaginary Spatial Vector — the Magnetic Vector Potential</h2>
+<p><strong>The component.</strong> $B=i\kappa\sum_k A_k e_k$. The conjugation reverses the three spatial units, so $B^{\natural}=-B$: the component is anti-invariant and the two lines carry opposite additions.</p>
+<p><strong>The pair, two ways.</strong></p>
+<p>$$
+\left(\tilde\nabla+i\kappa\sum_kA_ke_k\right)\tilde\Xi_{\mathrm{sp},R}=k_m\tilde\Xi_{\mathrm{sp},L},
+\qquad
+\left(\tilde\nabla^{\natural}-i\kappa\sum_kA_ke_k\right)\tilde\Xi_{\mathrm{sp},L}=k_m\tilde\Xi_{\mathrm{sp},R},
+$$</p>
+<p>$$
+\left(\tilde\nabla+i\kappa\sum_kA_ke_k\right)\tilde\Xi_{\mathrm{sp},R}-k_m\tilde\Xi_{\mathrm{sp},L}=0,
+\qquad
+\left(\tilde\nabla^{\natural}-i\kappa\sum_kA_ke_k\right)\tilde\Xi_{\mathrm{sp},L}-k_m\tilde\Xi_{\mathrm{sp},R}=0.
+$$</p>
+<p><strong>Squared pair.</strong> $C_k=2i\kappa A_k$ on the three spatial slots, $C_t=0$, and $B^{\natural}B=-\kappa^{2}\sum_kA_k^{2}$. The linear piece is exactly the cross term of $\sum_kD_k^{2}$ with $D_k=\partial/\partial R_k+i\kappa A_k$.</p>
+<p><strong>Reading.</strong> The space half of the connection. On its own it is a constant shift of the three spatial derivatives, hence a phase: for constant $A_k$ the operator equals $\tilde\nabla$ conjugated by $e^{-i\kappa\sum_kA_kR_k}$, verified by finite differences. A varying $A_k$ is not removable, and it produces the magnetic field.</p>
+<p><strong>Remark.</strong> $\left(\Box+2i\kappa\sum_kA_k\,\partial/\partial R_k+\tilde\nabla^{\natural}\left(i\kappa\sum_kA_ke_k\right)-\kappa^{2}\sum_kA_k^{2}-k_m^{2}\right)\tilde\Xi=0$.</p>
+<h2 id="case-5-the-imaginary-spatial-bivector-the-magnetic-moment">Case 5: The Imaginary Spatial Bivector — the Magnetic Moment</h2>
+<p><strong>The component.</strong> $B=i\lambda\sum_kB_k\vec e_k$, with $B_k$ the magnetic field and $\lambda$ the coefficient; $B^{\natural}=-B$. This is the non-minimal or Pauli coupling, and no minimal-coupling prescription for the phase symmetry produces it.</p>
+<p><strong>The pair, two ways.</strong></p>
+<p>$$
+\left(\tilde\nabla+i\lambda\sum_kB_k\vec e_k\right)\tilde\Xi_{\mathrm{sp},R}=k_m\tilde\Xi_{\mathrm{sp},L},
+\qquad
+\left(\tilde\nabla^{\natural}-i\lambda\sum_kB_k\vec e_k\right)\tilde\Xi_{\mathrm{sp},L}=k_m\tilde\Xi_{\mathrm{sp},R},
+$$</p>
+<p>$$
+\left(\tilde\nabla+i\lambda\sum_kB_k\vec e_k\right)\tilde\Xi_{\mathrm{sp},R}-k_m\tilde\Xi_{\mathrm{sp},L}=0,
+\qquad
+\left(\tilde\nabla^{\natural}-i\lambda\sum_kB_k\vec e_k\right)\tilde\Xi_{\mathrm{sp},L}-k_m\tilde\Xi_{\mathrm{sp},R}=0.
+$$</p>
+<p><strong>Squared pair.</strong> $C_k=2i\lambda B_k$, $C_t=0$, and $B^{\natural}B=-\lambda^{2}\sum_kB_k^{2}$.</p>
+<p><strong>The identity with case 4.</strong> These are the pieces of case 4 with $\kappa A_k$ renamed $\lambda B_k$, and both lines flip sign together. The consequence is sharp: for a <strong>constant</strong> field the component is a phase on both lines at once,</p>
+<p>$$
+\tilde\nabla+i\lambda\sum_kB_k\vec e_k=e^{-i\lambda\sum_kB_kR_k}\,\tilde\nabla\,e^{+i\lambda\sum_kB_kR_k},
+$$</p>
+<p>verified by finite differences. So a constant bivector is removable, and its apparent shift of the squared mass is the wave-vector shift $\vec k\mapsto\vec k+\lambda\vec B$ seen from the other side. The pair states this more directly than the square does: a phase on both lines leaves the pair invariant. The component is an observable addition only where the field strength varies, since there $\tilde\nabla^{\natural}B\ne0$ and no single phase removes it.</p>
+<p><strong>Reading.</strong> The corpus computes the coefficient at the vertex, $F_2(0)=a=(g-2)/2$, against the tree value $g=2$ of the classical account. The measured $a_e\simeq1.16\times10^{-3}$ is the precision test of the framework, and it is a statement about the field-dependent term.</p>
+<p><strong>The electric partner.</strong> The bivector of a timelike pair is not of this shape; it is anti-Hermitian and belongs to the material sector, and its coefficient is the electric dipole moment, never measured as non-zero and bounded at order $10^{-29}\,e\,\mathrm{cm}$.</p>
+<p><strong>Remark.</strong> $\left(\Box+2i\lambda\sum_kB_k\,\partial/\partial R_k-\lambda^{2}\lVert\vec B\rVert^{2}-k_m^{2}\right)\tilde\Xi=0$, with the term $\tilde\nabla^{\natural}B$ when the field varies.</p>
+<h2 id="case-6-the-imaginary-pseudoscalar-the-pseudoscalar-yukawa">Case 6: The Imaginary Pseudoscalar — the Pseudoscalar Yukawa</h2>
+<p><strong>The component.</strong> $B=i\chi_P\omega$ with $\omega=-\vec e_z$ the frame pseudoscalar and $\chi_P=g_P\phi/\hbar c$. Since $\omega^{\natural}=-\omega$, the component is anti-invariant and reaches one slot.</p>
+<p><strong>The pair, two ways.</strong></p>
+<p>$$
+\left(\tilde\nabla+i\chi_P\omega\right)\tilde\Xi_{\mathrm{sp},R}=k_m\tilde\Xi_{\mathrm{sp},L},
+\qquad
+\left(\tilde\nabla^{\natural}-i\chi_P\omega\right)\tilde\Xi_{\mathrm{sp},L}=k_m\tilde\Xi_{\mathrm{sp},R},
+$$</p>
+<p>$$
+\left(\tilde\nabla+i\chi_P\omega\right)\tilde\Xi_{\mathrm{sp},R}-k_m\tilde\Xi_{\mathrm{sp},L}=0,
+\qquad
+\left(\tilde\nabla^{\natural}-i\chi_P\omega\right)\tilde\Xi_{\mathrm{sp},L}-k_m\tilde\Xi_{\mathrm{sp},R}=0.
+$$</p>
+<p><strong>Squared pair.</strong> $C_z=-2i\chi_P$, $C_\mu=0$ for $\mu\ne z$, and $B^{\natural}B=-\chi_P^{2}$: one slot, one sign, and a negative zeroth piece — the opposite sign to case 2 at equal magnitude.</p>
+<p><strong>Reading.</strong> A single square, and the corpus records what that means: this is the shape whose mass "is parity-odd, a pseudoscalar mass rather than a scalar". A constant pseudoscalar background is therefore a parity-odd mass, no fundamental particle of that kind is known, and the corpus offers it as an algebraic possibility. The proven use is the pion–nucleon coupling, where $\phi$ is a field with its own dynamics and the pseudoscalar character is a statement about parity.</p>
+<p><strong>Remark.</strong> $\left(\Box-2i\chi_P\,\partial/\partial R_z+\tilde\nabla^{\natural}\left(i\chi_P\omega\right)-\chi_P^{2}-k_m^{2}\right)\tilde\Xi=0$.</p>
+<h2 id="case-7-the-axial-vector-the-weak-neutral-current">Case 7: The Axial Vector — the Weak Neutral Current</h2>
+<p><strong>The component.</strong> $B=i\kappa\omega\sum_\mu Z_\mu e_\mu$. The conjugation reverses the order of a product, so</p>
+<p>$$
+B^{\natural}=i\kappa\left(\sum_\mu\varepsilon_\mu Z_\mu e_\mu\right)\omega^{\natural}
+=-i\kappa\sum_\mu\varepsilon_\mu Z_\mu e_\mu\,\omega ,
+$$</p>
+<p>with $\omega$ on the right. Neither invariant nor anti-invariant: the two lines differ by a permutation of the slots and a reversal of the order. A vector component enters both lines with one sign; an axial component does not.</p>
+<p><strong>The pair, two ways.</strong></p>
+<p>$$
+\left(\tilde\nabla+i\kappa\omega\sum_\mu Z_\mu e_\mu\right)\tilde\Xi_{\mathrm{sp},R}=k_m\tilde\Xi_{\mathrm{sp},L},
+\qquad
+\left(\tilde\nabla^{\natural}-i\kappa\sum_\mu\varepsilon_\mu Z_\mu e_\mu\,\omega\right)\tilde\Xi_{\mathrm{sp},L}=k_m\tilde\Xi_{\mathrm{sp},R},
+$$</p>
+<p>$$
+\left(\tilde\nabla+i\kappa\omega\sum_\mu Z_\mu e_\mu\right)\tilde\Xi_{\mathrm{sp},R}-k_m\tilde\Xi_{\mathrm{sp},L}=0,
+\qquad
+\left(\tilde\nabla^{\natural}-i\kappa\sum_\mu\varepsilon_\mu Z_\mu e_\mu\,\omega\right)\tilde\Xi_{\mathrm{sp},L}-k_m\tilde\Xi_{\mathrm{sp},R}=0.
+$$</p>
+<p><strong>Squared pair.</strong> $\omega$ commutes with $e_t$ and anticommutes with the three spatial units, so the linear piece keeps its four coefficients and permutes the slots:</p>
+<p>$$
+C_t=2i\kappa Z_z,\qquad
+C_x=2i\kappa Z_y,\qquad
+C_y=-2i\kappa Z_x,\qquad
+C_z=-2i\kappa Z_t ,
+$$</p>
+<p>and $B^{\natural}B=-\kappa^{2}\sum_\mu Z_\mu^{2}$. Computed exactly: the decomposition holds and the four coefficients are those four. A vector component gives $C_\mu=2i\kappa A_\mu$ with no permutation.</p>
+<p><strong>Reading.</strong> The permutation is the content, and it is the permutation that earns the word <em>axial</em>. A vector component couples each coefficient to the derivative along its own direction; an axial component couples it to a rotated direction. This is not a chirality mixing — by §<em>Chirality</em> no left multiplier mixes values — and the two claims coexist because <em>axial</em> names a behaviour under parity, while <em>chirality</em> names the value. The zeroth piece keeps the negative sign of case 4 at equal coupling.</p>
+<p><strong>Status.</strong> The axial-vector addition is proven physics: the neutral-current coupling of the weak interaction, whose interference with the vector coupling produces atomic parity violation, computed in §<em>Sums</em>. What the corpus leaves open is gauging the symmetry that rotates the two parts, and the gauge principle article ends without deciding it.</p>
+<p><strong>Remark.</strong> $\left(\Box+2i\kappa\left(Z_z\partial/\partial R_t+Z_y\partial/\partial R_x-Z_x\partial/\partial R_y-Z_t\partial/\partial R_z\right)-\kappa^{2}\sum_\mu Z_\mu^{2}-k_m^{2}\right)\tilde\Xi=0$.</p>
+<h2 id="sums">Sums</h2>
+<p><strong>Why sums matter.</strong> $B$ is one element, so any two components can be added, and the sum is an addition to the same pair. The two pieces behave differently. $C_\mu$ is linear, so linear pieces add and nothing else appears. $B^{\natural}B$ is quadratic, so every sum carries cross terms:</p>
+<p>$$
+\left(B_1+B_2\right)^{\natural}\left(B_1+B_2\right)=B_1^{\natural}B_1+B_2^{\natural}B_2+\underbrace{B_1^{\natural}B_2+B_2^{\natural}B_1}_{\text{cross}} .
+$$</p>
+<p>The cross term belongs to no component. It is the interaction between the two, and it is what experiments see.</p>
+<p><strong>The connection is the first example.</strong> Components 2 and 3 sum to $\tilde A_\Phi=\sum_\mu A_\mu e_\mu$. The linear pieces add to $2i\kappa A_\mu$ on all four slots, which is the cross term of $\sum_\mu D_\mu^{2}$. The curvature is the cross term that survives when the individual pieces are removed by a phase:</p>
+<p>$$
+\tilde\nabla_{\mathrm{gco}}^{\natural}\tilde\nabla_{\mathrm{gco}}=\sum_\mu D_\mu^{2}+i\kappa\tilde F ,
+\qquad
+\tilde F=\mathrm{Vect}\left(\tilde\nabla^{\natural}\tilde A_\Phi\right).
+$$</p>
+<p>Checked by finite differences with a position-dependent connection: the residual against $\sum_\mu D_\mu^{2}+i\kappa\tilde F$ is $4\times10^{-12}$, and against $\sum_\mu D_\mu^{2}$ alone it is $0.88$. The curvature is a cross term of the two components that make the connection, which is why neither component alone can produce it.</p>
+<p><strong>The parity-violating interference is the second.</strong> Sum the vector and the axial components:</p>
+<p>$$
+B_1^{\natural}B_2+B_2^{\natural}B_1=2\kappa^{2}\left(-A_tZ_z-A_xZ_y+A_yZ_x+A_zZ_t\right),
+$$</p>
+<p>a real scalar, verified symbolically. Its structure is the point: not the parity-even contraction $A_tZ_t-\vec A\cdot\vec Z$ that two vectors would give, but the parity-odd one, and the $\omega$ of the axial component is what makes the difference.</p>
+<p><strong>The anomalous moment is the third.</strong> Sum the gauge and bivector components:</p>
+<p>$$
+B_{\mathrm{gco}}^{\natural}B_{\mathrm{biv}}+B_{\mathrm{biv}}^{\natural}B_{\mathrm{gco}}=-2\kappa\lambda\,\vec A\cdot\vec B ,
+$$</p>
+<p>a real scalar, verified symbolically, and the term the vertex form factor $F_2$ multiplies.</p>
+<p><strong>Where these live.</strong> All three are cross terms of the squared pair, so they are visible in the second-order equation and in whatever is computed from it. In the pair itself each component sits in its own line and the sum sits in both. That division is why the pair states a model and the square displays its pieces.</p>
+<h2 id="the-boundary-of-the-inventory">The Boundary of the Inventory</h2>
+<p><strong>What the six cover.</strong> Every value-preserving addition to the gradient. Between them they exhaust the shapes physics has named, and their sums produce the couplings physics has measured.</p>
+<p><strong>What they cannot cover, and why.</strong> An addition is a left multiplier, so it preserves the chirality value. A term that changes the value must act on the right, or carry a conjugation. Such a term is not an addition to the gradient in the sense of this article; it is a change of the operator's form, and it is what the two-sided equation is for. <strong>A chiral gauge theory therefore cannot be built from this list alone</strong>, and that is a structural statement, not an oversight.</p>
+<p><strong>The three speculative additions.</strong> The mass promoted from the number $k_m$ to an element, so that the square carries two masses: exact algebra, no supporting physics. A position-linear term, which gives a discrete spectrum and a confining model but is not a constant in the algebra and not a connection: a solvable model, not an observed interaction. And an axial gauge connection, writable but with no measured axial gauge field to correspond to it.</p>
+<p><strong>Two objects offered as additions and not.</strong> A pure gauge connection $\tilde A_\Phi=\tilde\nabla\Gamma$ is removable by construction. A rescaling of the carrier, $\vec\alpha=\tilde\nabla\xi/\xi$, is removable by the identity</p>
+<p>$$
+\frac{1}{\xi}\tilde D\left(\xi g\right)=\tilde Dg+\frac{\tilde\nabla\xi}{\xi}g ,
+$$</p>
+<p>which is why a zeroth-order term is read as physics only after the carrier is normalised.</p>
+<h2 id="summary">Summary</h2>
+<p><strong>The pair is the definition.</strong> Two one-sided equations, one per component, because one left-multiplying equation constrains a component without relating it to another, and because conjugating a line gives a reality condition rather than a second equation.</p>
+<p><strong>Chirality is carried by the pair only in the massless case.</strong> The value is read on the right, left multiplication preserves it, and every term of the pair is a left multiplication. So the pair cannot be split by value once $k_m\ne0$: read on the value parts it collapses. The letters name components, not values, and that is the algebra's statement that a massive fermion has no chirality eigenstate. A genuine value crossing needs a right multiplier or a conjugation, and that is the two-sided form, not this one.</p>
+<p><strong>The mass is a value in a slot.</strong> $k_m$ is a value of the first shape, in the off-diagonal slot. Its placement, not its number, is what makes it a mass.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>case</th>
+<th>shape of $B$</th>
+<th>$B^{\natural}$</th>
+<th>$C_\mu$</th>
+<th>$B^{\natural}B$</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>$0$</td>
+<td>—</td>
+<td>$0$</td>
+<td>$0$</td>
+</tr>
+<tr>
+<td>2</td>
+<td>$\beta e_t$, $\beta\in\mathbb{R}$</td>
+<td>$B$</td>
+<td>$2\beta$ on $t$</td>
+<td>$+\beta^{2}$</td>
+</tr>
+<tr>
+<td>3</td>
+<td>$i\kappa A_te_t$</td>
+<td>$B$</td>
+<td>$2i\kappa A_t$ on $t$</td>
+<td>$-\kappa^{2}A_t^{2}$</td>
+</tr>
+<tr>
+<td>4</td>
+<td>$i\kappa\sum_kA_ke_k$</td>
+<td>$-B$</td>
+<td>$2i\kappa A_k$ on the spatial slots</td>
+<td>$-\kappa^{2}\sum A_k^{2}$</td>
+</tr>
+<tr>
+<td>5</td>
+<td>$i\lambda\sum_kB_k\vec e_k$</td>
+<td>$-B$</td>
+<td>$2i\lambda B_k$ on the spatial slots</td>
+<td>$-\lambda^{2}\lVert\vec B\rVert^{2}$</td>
+</tr>
+<tr>
+<td>6</td>
+<td>$i\chi_P\omega$</td>
+<td>$-B$</td>
+<td>$-2i\chi_P$ on $z$</td>
+<td>$-\chi_P^{2}$</td>
+</tr>
+<tr>
+<td>7</td>
+<td>$i\kappa\omega\sum_\mu Z_\mu e_\mu$</td>
+<td>neither</td>
+<td>$2i\kappa\left(Z_z,Z_y,-Z_x,-Z_t\right)$</td>
+<td>$-\kappa^{2}\sum Z_\mu^{2}$</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Four statements close the inventory.</strong> The pair is the equation and the square is its consequence. The mass is a value in the slot that carries no derivative. The connection is a sum of two components, and its curvature is their cross term. And every coupling physics measures is a cross term: linear pieces add, and everything that happens between two components lives in the quadratic piece.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>symbol</th>
+<th>meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\tilde\nabla$, $\tilde\nabla^{\natural}$</td>
+<td>the gradient and its conjugate, $\sum_\mu e_\mu\partial/\partial R_\mu$ and $\sum_\mu\varepsilon_\mu e_\mu\partial/\partial R_\mu$</td>
+</tr>
+<tr>
+<td>$\natural$</td>
+<td>the quaternion conjugate, an anti-automorphism exchanging the two sides, $\natural L(a)\natural=R(a^{\natural})$</td>
+</tr>
+<tr>
+<td>$\bar e_\mu$</td>
+<td>the conjugate basis, $\bar e_t=e_t$, $\bar e_k=-\vec e_k$</td>
+</tr>
+<tr>
+<td>$\Box$</td>
+<td>$\tilde\nabla^{\natural}\tilde\nabla$, the series d'Alembertian, $\Delta-\partial^2/\partial {r'_{t}}^2$</td>
+</tr>
+<tr>
+<td>$\vec e_z$, $\omega$</td>
+<td>the frame's third direction and the pseudoscalar $\omega=-\vec e_z$</td>
+</tr>
+<tr>
+<td>$L$, $R$</td>
+<td>the two chirality values of the test $\tilde X\vec e_z=\mp i\tilde X$, and, as subscripts, the two components of the field</td>
+</tr>
+<tr>
+<td>$\tilde\Xi_{\mathrm{sp}}$, $\tilde\Xi_{\mathrm{sp},L}$, $\tilde\Xi_{\mathrm{sp},R}$</td>
+<td>the field and its two components</td>
+</tr>
+<tr>
+<td>$B$</td>
+<td>the addition, one element of $\mathbb{B}$ with eight real components, carrying $\mathrm{L}^{-1}$</td>
+</tr>
+<tr>
+<td>$B^{\natural}$</td>
+<td>the addition as the second line carries it</td>
+</tr>
+<tr>
+<td>$\mathcal{M}$</td>
+<td>the off-diagonal block holding the mass, $\begin{pmatrix}0&M_L\\M_R&0\end{pmatrix}$; $M_L=M_R=k_m$ in the corpus form</td>
+</tr>
+<tr>
+<td>$\mathbb{D}$</td>
+<td>the pair operator, $\left(\tilde\nabla\tilde\Xi_{\mathrm{sp},R},\tilde\nabla^{\natural}\tilde\Xi_{\mathrm{sp},L}\right)$, with $\mathbb{D}^{2}=\Box I$</td>
+</tr>
+<tr>
+<td>$C_\mu$</td>
+<td>the linear piece of the squared pair, $C_\mu=\bar e_\mu B+B^{\natural}e_\mu$</td>
+</tr>
+<tr>
+<td>$B^{\natural}B$</td>
+<td>the zeroth piece of the squared pair, with $\tilde\nabla^{\natural}B$ added when $B$ varies</td>
+</tr>
+<tr>
+<td>$\beta$</td>
+<td>the real coefficient of component 1; $k_m$ is its mass value</td>
+</tr>
+<tr>
+<td>$k_m$</td>
+<td>the mass wave number, $k_m=mc/\hbar$, the inverse of the Compton length</td>
+</tr>
+<tr>
+<td>$\kappa$</td>
+<td>the gauge coupling, $\kappa=k_mϙ/(mc)$</td>
+</tr>
+<tr>
+<td>$ϙ$</td>
+<td>the charge of the field the operator acts on</td>
+</tr>
+<tr>
+<td>$A_\mu$, $\tilde A_\Phi$</td>
+<td>the connection coefficients and $\sum_\mu A_\mu e_\mu$; $\tilde F=\mathrm{Vect}(\tilde\nabla^{\natural}\tilde A_\Phi)$</td>
+</tr>
+<tr>
+<td>$D_\mu$</td>
+<td>$\partial/\partial R_\mu+i\kappa A_\mu$</td>
+</tr>
+<tr>
+<td>$\lambda$</td>
+<td>the coefficient of component 5; written $F_2(0)=a=(g-2)/2$ at the vertex</td>
+</tr>
+<tr>
+<td>$Z_\mu$</td>
+<td>the components of the axial-vector field of case 7</td>
+</tr>
+<tr>
+<td>$\chi$, $\chi_P$</td>
+<td>the scalar and pseudoscalar couplings, $g_S\phi/\hbar c$ and $g_P\phi/\hbar c$</td>
+</tr>
+<tr>
+<td>$V$</td>
+<td>a prescribed potential energy, $V=ϙ\Phi$ when electrostatic</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li><a href="../articles_physics/the-dirac-equation-in-biquaternionic-form.html">The Dirac Equation in Biquaternionic Form</a>, for the pair, the value test, and the one-sided against two-sided distinction.</li>
+<li><a href="../articles_maths/operator-chirality-on-the-biquaternion-algebra.html">Operator Chirality on the Biquaternion Algebra</a>, for the two slots and for the theorem that conjugation exchanges them.</li>
+<li><a href="../articles_maths/operator-and-calculus-conventions.html">Operator and Calculus Conventions</a>, for the gradient, its conjugate and the pair operator.</li>
+<li><a href="../articles_maths/special-element-conventions.html">Special Element Conventions</a>, for the chirality test and the frame pseudoscalar.</li>
+<li><a href="../articles_physics/the-first-order-root-of-the-biquaternion-klein-gordon-operator.html">The First-Order Root of the Biquaternion Klein–Gordon Operator</a>, for the no-single-square theorem and the decomposition of the zero-order term.</li>
+<li><a href="../articles_physics/the-biquaternion-dalembertian-and-its-greens-functions.html">The Biquaternion d'Alembertian and Its Green's Functions</a>, for the d'Alembertian, its symbol, and the shifted gradient.</li>
+<li><a href="../articles_physics/the-klein-gordon-equation-in-biquaternionic-form.html">The Klein–Gordon Equation in Biquaternionic Form</a>, for the squared pair.</li>
+<li><a href="../articles_physics/the-gauge-principle-in-biquaternionic-form.html">The Gauge Principle in Biquaternionic Form</a>, for the connection and for the open question of gauging the axial rotation.</li>
+<li><a href="../articles_physics/the-covariant-derivative-and-gauge-connection-in-biquaternionic-form.html">The Covariant Derivative and Gauge Connection in Biquaternionic Form</a>, for the square of the covariant derivative and the curvature.</li>
+<li><a href="../articles_physics/the-minimal-coupling-of-the-biquaternion-dirac-field-to-electromagnetism.html">The Minimal Coupling of the Biquaternion Dirac Field to Electromagnetism</a>, for the connection inside the pair.</li>
+<li><a href="../articles_physics/the-anomalous-magnetic-moment-in-biquaternionic-form.html">The Anomalous Magnetic Moment in Biquaternionic Form</a>, for component 5 at the vertex.</li>
+<li><a href="../articles_physics/the-classical-origin-of-g-2-in-biquaternionic-form.html">The Classical Origin of $g=2$ in Biquaternionic Form</a>, for the tree-level value the correction modifies.</li>
+<li><a href="../articles_physics/electroweak-theory-under-the-biquaternion-framework-a-research-agenda.html">Electroweak Theory under the Biquaternion Framework: A Research Agenda</a>, for the axial current and the unsettled gauging question.</li>
+<li><a href="../articles_physics/the-higgs-mechanism-in-biquaternionic-form.html">The Higgs Mechanism in Biquaternionic Form</a>, for the scalar background of component 1.</li>
+<li><a href="../articles_physics/the-hydrogen-atom-in-biquaternionic-form-the-relativistic-case.html">The Hydrogen Atom in Biquaternionic Form: The Relativistic Case</a>, for the potential of component 1 in use.</li>
+<li><a href="../articles_physics/shock-electromagnetic-waves.html">Shock Electromagnetic Waves</a>, for the massless case read on a field strength.</li>
+<li><a href="../articles_physics/the-index-theorem-and-the-zero-mode-count-in-biquaternionic-form.html">The Index Theorem and the Zero-Mode Count in Biquaternionic Form</a>, for the statement that a zeroth-order term leaves the symbol and the index alone.</li>
+<li><a href="../articles_physics/the-dirac-oscillator-in-biquaternionic-form.html">The Dirac Oscillator in Biquaternionic Form</a>, for the position-linear addition.</li>
+<li><a href="../articles_physics/the-petiau-system-and-the-quantisation-of-mass-in-biquaternionic-form.html">The Petiau System and the Quantisation of Mass</a>, for the mass as an element.</li>
+<li><a href="the-gauge-covariant-derivative-an-inventory-by-type.html">The Gauge-Covariant Derivative: An Inventory by Type</a>, for the shapes the connection is written in.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>
