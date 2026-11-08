@@ -126,7 +126,7 @@ $$
 
 and the scalar is central.
 
-*Proof.* The first equality is the representation law, the second is the definition of the quaternionic norm as the product of an element with its natural conjugate, and the third reads the left multiplication by a central element as a scalar operator. The centre of $\mathbb{B}$ is $\mathbb{C}e_t$, so the composite is central for every parameter.
+*Proof.* The first equality is the representation law, the second is the definition of the quaternionic norm as the product of an element with its quaternion conjugate, and the third reads the left multiplication by a central element as a scalar operator. The centre of $\mathbb{B}$ is $\mathbb{C}e_t$, so the composite is central for every parameter.
 
 **The second order, and the mass.** A single left multiplication is a first-order operator: one factor, one action. The composite of the pair is a scalar operator, so the pair of two first-order conditions is one second-order operator whose value on every argument is a multiple of that argument. That is the algebraic shape of a second-order equation with a mass, and the mass is $\langle\tilde Q\rangle_{\natural}$. The norm is invariant under $\natural$, $\langle\tilde Q^{\natural}\rangle_{\natural}=\langle\tilde Q\rangle_{\natural}$, so the two members compose to the same scalar in either order and the pair is symmetric in its two members.
 
@@ -216,7 +216,7 @@ The one-side pair proper composes to a scalar, $L_{\tilde Q}L_{\tilde Q^{\natura
 | $(F)^{\approx}$ | the associate, the adjoint of the plain form; it exchanges the sides |
 | $(F)^{\natural}$ | the adjoint of the quaternionic form; it keeps the side |
 | $(F)^{\ast}$ | the adjoint of the plain sesquilinear form |
-| $\natural$, $\ast$, $\bar{\cdot}$ | the natural conjugation, the Hermitian conjugation, the coefficient conjugation |
+| $\natural$, $\ast$, $\bar{\cdot}$ | the quaternion conjugation, the Hermitian conjugation, the coefficient conjugation |
 | $\langle\tilde Q\rangle_{\natural}$ | the quaternionic norm, $\sum_\mu Q_\mu^{2}$, central |
 | $\mathbb{B}_{\Psi}$, $\mathbb{B}_{\Phi}$ | the Hermitian and anti-Hermitian halves |
 | $\mathrm{Sd}_{\tilde Q}=L_{\tilde Q}R_{\tilde Q^{\ast}}$ | the two-side member, the subject of the companion article |

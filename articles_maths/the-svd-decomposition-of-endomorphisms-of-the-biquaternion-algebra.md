@@ -39,7 +39,7 @@ $$
 
 the products read cyclically and the reversed products being the negatives. An element is $\tilde Q=Q_te_t+Q_x\vec e_x+Q_y\vec e_y+Q_z\vec e_z$ with complex coefficients $Q_\mu=q_\mu+iq'_\mu$, and the four units are a complex basis. The algebra is $\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$, hence $M_2(\mathbb{C})$, and its complex dimension is four.
 
-**The two conjugations.** The **natural conjugation** is $\tilde Q^{\natural}=Q_te_t-Q_x\vec e_x-Q_y\vec e_y-Q_z\vec e_z$, complex-linear, involutive and an involution of the algebra, $(\tilde Q_1\tilde Q_2)^{\natural}=\tilde Q_2^{\natural}\tilde Q_1^{\natural}$. The **Hermitian conjugation** is $\tilde Q^{*}=\bar Q_te_t-\bar Q_x\vec e_x-\bar Q_y\vec e_y-\bar Q_z\vec e_z$, the coefficient conjugation of the natural conjugation, conjugate-linear, involutive and also order-reversing, $(\tilde Q_1\tilde Q_2)^{*}=\tilde Q_2^{*}\tilde Q_1^{*}$. The two agree on the elements with real coefficients, and the star is the one that pairs with a definite form, which is why the whole article is written with it.
+**The two conjugations.** The **quaternion conjugation** is $\tilde Q^{\natural}=Q_te_t-Q_x\vec e_x-Q_y\vec e_y-Q_z\vec e_z$, complex-linear, involutive and an involution of the algebra, $(\tilde Q_1\tilde Q_2)^{\natural}=\tilde Q_2^{\natural}\tilde Q_1^{\natural}$. The **Hermitian conjugation** is $\tilde Q^{*}=\bar Q_te_t-\bar Q_x\vec e_x-\bar Q_y\vec e_y-\bar Q_z\vec e_z$, the coefficient conjugation of the quaternion conjugation, conjugate-linear, involutive and also order-reversing, $(\tilde Q_1\tilde Q_2)^{*}=\tilde Q_2^{*}\tilde Q_1^{*}$. The two agree on the elements with real coefficients, and the star is the one that pairs with a definite form, which is why the whole article is written with it.
 
 **The scalar part.** Expanding a product and keeping the unit term,
 
@@ -47,7 +47,7 @@ $$
 \operatorname{Sc}(\tilde Q_1\tilde Q_2)=Q_{1t}Q_{2t}-Q_{1x}Q_{2x}-Q_{1y}Q_{2y}-Q_{1z}Q_{2z},
 $$
 
-and with $B^{2}=Q_x^{2}+Q_y^{2}+Q_z^{2}$ the complex square of the vector part. The scalar part is central and cyclic, $\operatorname{Sc}(\tilde Q_1\tilde Q_2\tilde Q_3)=\operatorname{Sc}(\tilde Q_2\tilde Q_3\tilde Q_1)$, and it is invariant under the natural conjugation, $\operatorname{Sc}(\tilde Q^{\natural})=\operatorname{Sc}(\tilde Q)$. The two facts are used in every computation that follows, and the cyclicity is what makes the adjoint of a two-sided operator computable in one line.
+and with $B^{2}=Q_x^{2}+Q_y^{2}+Q_z^{2}$ the complex square of the vector part. The scalar part is central and cyclic, $\operatorname{Sc}(\tilde Q_1\tilde Q_2\tilde Q_3)=\operatorname{Sc}(\tilde Q_2\tilde Q_3\tilde Q_1)$, and it is invariant under the quaternion conjugation, $\operatorname{Sc}(\tilde Q^{\natural})=\operatorname{Sc}(\tilde Q)$. The two facts are used in every computation that follows, and the cyclicity is what makes the adjoint of a two-sided operator computable in one line.
 
 ### The Hermitian Form
 
@@ -700,7 +700,7 @@ The two normalisations of a singular vector are different conditions, and the ar
 | $\mathrm{I}_4$, $\det F$, $\operatorname{rank}F$ | The identity operator, the determinant and the rank |
 | $\tilde Q$, $\tilde Q_1$, $\tilde Q_2$ | An element, and the two multipliers of a two-sided operator |
 | $e_t,\vec e_x,\vec e_y,\vec e_z$ | The scalar unit and the three vector units |
-| $\tilde Q^{*}$, $\tilde Q^{\natural}$ | The Hermitian and the natural conjugations |
+| $\tilde Q^{*}$, $\tilde Q^{\natural}$ | The Hermitian and the quaternion conjugations |
 | $\langle\tilde Q_1,\tilde Q_2\rangle_{*}$ | The Hermitian form, $\operatorname{Sc}(\tilde Q_1\tilde Q_2^{*})$ |
 | $\lVert\tilde Q\rVert^{2}=\langle\tilde Q,\tilde Q\rangle_{*}$ | The Hermitian norm of an element |
 | $N(\tilde Q)=\langle\tilde Q\rangle_{\natural}$ | The quaternionic algebraic norm, multiplicative and complex-valued |

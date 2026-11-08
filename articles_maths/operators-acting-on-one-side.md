@@ -75,7 +75,7 @@ $$
 
 **The representation and the anti-representation.** The first law says that $\tilde Q\mapsto L_{\tilde Q}$ is a homomorphism of complex algebras, the **left regular representation** of $\mathbb{B}$. The second says that $\tilde Q\mapsto R_{\tilde Q}$ reverses the order of the product, so it is an **anti-homomorphism**, an anti-isomorphism onto its image by §*Injectivity*. The order is reversed, not the multiplication table: in $R_{\tilde Q}R_{\tilde Q_2}=R_{\tilde Q_2\tilde Q}$ the operator applied first is the rightmost, and its parameter stands on the right of the subscript.
 
-**The repair.** The assignment $\tilde Q\mapsto R_{\tilde Q^{\natural}}$ is a representation, because $R_{\tilde Q^{\natural}}R_{\tilde Q_2^{\natural}}=R_{\tilde Q_2^{\natural}\tilde Q^{\natural}}=R_{(\tilde Q\tilde Q_2)^{\natural}}$. The natural conjugation converts the anti-representation into a representation at the cost of one more map. This article keeps the anti-representation, because the reversal is the point: it is the reversal that the composition law of the two-sided family inherits, and it is the reason the second factor of the enveloping algebra carries an $\mathrm{opp}$.
+**The repair.** The assignment $\tilde Q\mapsto R_{\tilde Q^{\natural}}$ is a representation, because $R_{\tilde Q^{\natural}}R_{\tilde Q_2^{\natural}}=R_{\tilde Q_2^{\natural}\tilde Q^{\natural}}=R_{(\tilde Q\tilde Q_2)^{\natural}}$. The quaternion conjugation converts the anti-representation into a representation at the cost of one more map. This article keeps the anti-representation, because the reversal is the point: it is the reversal that the composition law of the two-sided family inherits, and it is the reason the second factor of the enveloping algebra carries an $\mathrm{opp}$.
 
 **The unit and the powers.** $L_{e_t}=R_{e_t}=\mathrm{id}$, and $L_{\tilde Q^n}=(L_{\tilde Q})^n$ and $R_{\tilde Q^n}=(R_{\tilde Q})^n$ for every $n\geq0$. For a unit $\tilde Q$ the inverse law of §*The Inverse* extends both identities to the negative powers.
 
@@ -266,7 +266,7 @@ R_{\mathrm{pau}}(\tilde Q)=\mathsf P\,L_{\mathrm{pau}}(\tilde Q)^{\mathsf T}\,\m
 R_{\mathrm{axf}}(\tilde Q)=D\,L_{\mathrm{axf}}(\tilde Q)^{\mathsf T}D,
 $$
 
-with $\mathsf P$ the permutation above and $D=\operatorname{diag}(1,-1,-1,-1)$ the display of the natural conjugation in the coefficient basis. **The conjugating matrix is the involution that the transpose implements there:** the Peirce transpose implements the exchange and conjugates by $\mathsf P$, the coefficient transpose implements the natural conjugation and conjugates by $D$. The coefficient frame therefore does not serve the exchange, because $\operatorname{diag}(1,1,-1,1)$ is the display of $S$ there and not the matrix of the coefficient transpose. The matrix articles call this passage the stitch; §*The Stitch Between the Copies* of *$M_4(\mathbb{C})$ Axis-Free Representation : Operators* proves the coefficient pair entry by entry, and §*The One-Sided Operators* of *$M_4(\mathbb{C})$ Pauli Representation : Operators* proves the Peirce pair.
+with $\mathsf P$ the permutation above and $D=\operatorname{diag}(1,-1,-1,-1)$ the display of the quaternion conjugation in the coefficient basis. **The conjugating matrix is the involution that the transpose implements there:** the Peirce transpose implements the exchange and conjugates by $\mathsf P$, the coefficient transpose implements the quaternion conjugation and conjugates by $D$. The coefficient frame therefore does not serve the exchange, because $\operatorname{diag}(1,1,-1,1)$ is the display of $S$ there and not the matrix of the coefficient transpose. The matrix articles call this passage the stitch; §*The Stitch Between the Copies* of *$M_4(\mathbb{C})$ Axis-Free Representation : Operators* proves the coefficient pair entry by entry, and §*The One-Sided Operators* of *$M_4(\mathbb{C})$ Pauli Representation : Operators* proves the Peirce pair.
 
 **The sign on the $y$ generator.** With $\mathsf M_2(\vec e_y)=-i\sigma_2=\begin{pmatrix}0&-1\\1&0\end{pmatrix}$, the transpose is
 
@@ -296,7 +296,7 @@ $$
 
 **Not a one-sided multiplication.** A left multiplication that fixes $e_t$ is the identity, because $L_{\tilde Q}(e_t)=\tilde Q$; so is a right multiplication, because $R_{\tilde Q}(e_t)=\tilde Q$. The operator $S$ fixes $e_t$ and is not the identity, so it is neither.
 
-**Not the natural conjugation.** The natural conjugation negates all three vector units; the exchange negates only $\vec e_y$. The two are different involutions of the carrier: the natural conjugation is an anti-automorphism, and the exchange is not multiplicative at all.
+**Not the quaternion conjugation.** The quaternion conjugation negates all three vector units; the exchange negates only $\vec e_y$. The two are different involutions of the carrier: the quaternion conjugation is an anti-automorphism, and the exchange is not multiplicative at all.
 
 ## The Two Families Together
 
@@ -402,7 +402,7 @@ The two regular operators of $\tilde Q$ are $L_{\tilde Q}(X)=\tilde QX$ and $R_{
 
 The kernel of $L_{\tilde Q}$ is the right annihilator and its image the right ideal $\tilde Q\mathbb{B}$; the kernel of $R_{\tilde Q}$ is the left annihilator and its image the left ideal $\mathbb{B}\tilde Q$. The annihilators have complex dimensions $0,2,4$ and so do the ideals, and the rank is $4$, $2$ or $0$, the same on both sides: four for a unit, two for a nonzero zero divisor, zero for the zero element. Each operator is invertible exactly when $\langle\tilde Q\rangle_{\natural}\neq0$, with inverse the operator of $\tilde Q^{-1}$, and $\det=\langle\tilde Q\rangle_{\natural}^{2}$.
 
-In the Peirce frame the display of $S$ is the permutation $\mathsf P$ and the right matrix is the transpose of the left one conjugated by it: $R_{\mathrm{pau}}(\tilde Q)=\mathsf P\,L_{\mathrm{pau}}(\tilde Q)^{\mathsf T}\mathsf P^{-1}$. In the coefficient frame the display of $S$ is the reflection $\operatorname{diag}(1,1,-1,1)$, and there the transpose implements the natural conjugation instead, $R_{\mathrm{axf}}(\tilde Q)=D\,L_{\mathrm{axf}}(\tilde Q)^{\mathsf T}D$ with $D=\operatorname{diag}(1,-1,-1,-1)$. The exchange is an involution of trace $2$ and determinant $-1$; it is not multiplicative, it is in neither family, and it conjugates each family onto the other, $SL_{\tilde Q}S^{-1}=R_{S\tilde Q}$.
+In the Peirce frame the display of $S$ is the permutation $\mathsf P$ and the right matrix is the transpose of the left one conjugated by it: $R_{\mathrm{pau}}(\tilde Q)=\mathsf P\,L_{\mathrm{pau}}(\tilde Q)^{\mathsf T}\mathsf P^{-1}$. In the coefficient frame the display of $S$ is the reflection $\operatorname{diag}(1,1,-1,1)$, and there the transpose implements the quaternion conjugation instead, $R_{\mathrm{axf}}(\tilde Q)=D\,L_{\mathrm{axf}}(\tilde Q)^{\mathsf T}D$ with $D=\operatorname{diag}(1,-1,-1,-1)$. The exchange is an involution of trace $2$ and determinant $-1$; it is not multiplicative, it is in neither family, and it conjugates each family onto the other, $SL_{\tilde Q}S^{-1}=R_{S\tilde Q}$.
 
 The two families commute element by element, $L_{\tilde Q}R_{\tilde Q_2}=R_{\tilde Q_2}L_{\tilde Q}$, each is the exact commutant of the other, $L(\mathbb{B})'=R(\mathbb{B})$ and $R(\mathbb{B})'=L(\mathbb{B})$, and they meet in the scalars, $L(\mathbb{B})\cap R(\mathbb{B})=\mathbb{C}\cdot\mathrm I_4$. The two copies are incomparable and their sum is the complex seven-dimensional subspace that the two families span.
 
@@ -428,7 +428,7 @@ The two families commute element by element, $L_{\tilde Q}R_{\tilde Q_2}=R_{\til
 
 ## Further Reading
 
-- [The Endomorphisms of the Biquaternion Algebra](the-endomorphisms-of-the-biquaternion-algebra.html), for the ambient space, the inner derivations and the natural conjugation.
+- [The Endomorphisms of the Biquaternion Algebra](the-endomorphisms-of-the-biquaternion-algebra.html), for the ambient space, the inner derivations and the quaternion conjugation.
 - [The SVD Decomposition of Endomorphisms of the Biquaternion Algebra](the-svd-decomposition-of-endomorphisms-of-the-biquaternion-algebra.html), for the weights of a one-sided operator and the decomposition of a general endomorphism.
 - [Adjoint Pair of $L$ and $R$ Operators](adjoint-pair-of-l-and-r-operators.html), for the association of the two families with the four forms.
 - [Operators Acting on Two Sides](operators-acting-on-two-sides.html), for the products of the two families, the cone, the generation theorem and the ladder $1,4,7,16$.

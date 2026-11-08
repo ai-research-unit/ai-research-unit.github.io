@@ -184,7 +184,7 @@ A caution belongs here, because a dimension alone says nothing. The example need
 
 The swap exchanges the sides and leaves the elements alone. A second map exchanges the sides and moves the elements, and it is the one the physics reaches for.
 
-The **quaternion conjugate** $\natural$ fixes the unit and negates the vector part, $e_t^{\natural}=e_t$ and $u^{\natural}=-u$ for $u$ in the three-dimensional vector subspace. It fixes the coefficients, so it is complex-linear, and the sign on the three vectors makes it an anti-automorphism:
+The **quaternion conjugation** $\natural$ fixes the unit and negates the vector part, $e_t^{\natural}=e_t$ and $u^{\natural}=-u$ for $u$ in the three-dimensional vector subspace. It fixes the coefficients, so it is complex-linear, and the sign on the three vectors makes it an anti-automorphism:
 
 $$
 (\tilde X\tilde Y)^{\natural}=\tilde Y^{\natural}\tilde X^{\natural}.

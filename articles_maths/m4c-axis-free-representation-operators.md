@@ -35,7 +35,7 @@ Write $B^2=Q_x^2+Q_y^2+Q_z^2$. The quaternionic norm is
 $$
 \langle\tilde Q\rangle_{\natural}=Q_t^2+B^2=Q_t^2+Q_x^2+Q_y^2+Q_z^2,
 $$
-the scalar part of $\tilde Q\tilde Q^{\natural}$. An element is a unit exactly when $\langle\tilde Q\rangle_{\natural}\neq0$, and then $\tilde Q^{-1}=\tilde Q^{\natural}/\langle\tilde Q\rangle_{\natural}$. The natural conjugation is the $\mathbb{C}$-linear map
+the scalar part of $\tilde Q\tilde Q^{\natural}$. An element is a unit exactly when $\langle\tilde Q\rangle_{\natural}\neq0$, and then $\tilde Q^{-1}=\tilde Q^{\natural}/\langle\tilde Q\rangle_{\natural}$. The quaternion conjugation is the $\mathbb{C}$-linear map
 $$
 \tilde Q^{\natural}=Q_t-Q_x\vec e_x-Q_y\vec e_y-Q_z\vec e_z.
 $$
@@ -196,7 +196,7 @@ The set of the four together with their negatives is again the quaternion group.
 
 ### The Stitch Between the Copies
 
-**The switch matrix.** The natural conjugation acts on a coordinate column by $D$:
+**The switch matrix.** The quaternion conjugation acts on a coordinate column by $D$:
 $$
 D=\begin{pmatrix}1&0&0&0\\0&-1&0&0\\0&0&-1&0\\0&0&0&-1\end{pmatrix},
 \qquad D^2=\mathrm I_4,\quad \det D=-1.
@@ -216,7 +216,7 @@ The Hermitian adjoint is
 $$
 L_{\mathrm{axf}}(\tilde X)^{\dagger}=L_{\mathrm{axf}}(\tilde X^{*}),
 $$
-and the same identities hold for $R_{\mathrm{axf}}$. The first is the transpose dictionary of the axis-free basis: natural conjugation is transposition. The second is the conjugate transpose: the dagger is the Hermitian conjugation. Both are checked on the four units and extended by linearity. At the operator level the same transposition carries the parameter through the natural conjugation, and the flip of the two mixed units conjugates the two families, $SL_{\tilde Q}S^{-1}=R_{S\tilde Q}$; both statements are proved in *Operators Acting on One Side*, §*The Matrix Identity*, where the two frames are set side by side.
+and the same identities hold for $R_{\mathrm{axf}}$. The first is the transpose dictionary of the axis-free basis: quaternion conjugation is transposition. The second is the conjugate transpose: the dagger is the Hermitian conjugation. Both are checked on the four units and extended by linearity. At the operator level the same transposition carries the parameter through the quaternion conjugation, and the flip of the two mixed units conjugates the two families, $SL_{\tilde Q}S^{-1}=R_{S\tilde Q}$; both statements are proved in *Operators Acting on One Side*, §*The Matrix Identity*, where the two frames are set side by side.
 
 ### The Intersection of the Two Copies
 
@@ -844,7 +844,7 @@ In one line: every two-sided operator is a single product of one left and one ri
 | $\Phi(\tilde Q,\tilde Q_2)=L_{\mathrm{axf}}(\tilde Q)R_{\mathrm{axf}}(\tilde Q_2)$ | factorisation map |
 | $B^2=Q_x^2+Q_y^2+Q_z^2$ | the squared vector part |
 | $\langle\tilde Q\rangle_{\natural}=Q_t^2+B^2$ | quaternionic norm, the scalar of $\tilde Q\tilde Q^{\natural}$ |
-| $\tilde Q^{\natural}=Q_t-\vec Q$ | natural conjugation |
+| $\tilde Q^{\natural}=Q_t-\vec Q$ | quaternion conjugation |
 | $\tilde Q^{*}=\bar{\tilde Q}^{\natural}$ | Hermitian conjugation |
 | $\mathrm{Ad}_{\tilde Q}(X)=\tilde QX\tilde Q^{-1}$ | inner automorphism |
 | $\mathbb{B}_{\mathrm{opp}}$ | the opposite algebra |

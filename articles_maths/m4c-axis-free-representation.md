@@ -35,7 +35,7 @@ e_\mu e_\nu=\sum_\rho\varepsilon_{\mu\nu}^{\ \ \rho}\,e_\rho,\qquad
 $$
 and the array $\varepsilon$ is the algebra: the table above is that array, written out. Every matrix below is built from $\varepsilon$ by one rule, and the rule is the one of §*The Left Family*; property (d) of §*What the Axis-Free Family Makes Simple* says that the entries of the sixteen matrices are $\varepsilon$ itself.
 
-**The frame names no direction.** The three vector units enter every formula below by the same rule: none of them is singled out by the construction, and §*No Direction Is Privileged* develops the point. The price is that the idempotents of the algebra are not adapted to the basis. The gain is that the entries are integers and that the transpose is the conjugation (§*The Left Family*).
+**The frame names no direction.** The three vector units enter every formula below by the same rule: none of them is singled out by the construction, and §*No Direction Is Privileged* develops the point. The price is that the idempotents of the algebra are not adapted to the basis. The gain is that the entries are integers and that the transpose is the quaternion conjugation (§*The Left Family*).
 
 **The multiplication table.** The table of §*The Multiplication Table* of *The Biquaternion Algebra* is reproduced here, because the columns of the matrices built below are read from this table and from nothing else:
 
@@ -102,18 +102,18 @@ L_{\mathrm{axf},e_\mu}L_{\mathrm{axf},e_\nu}=\varepsilon L_{\mathrm{axf},e_{\mu\
 $$
 so the four are closed under products up to sign and the signs are the signs of the table. For example $(L_{\mathrm{axf},\vec e_x})^2=-\mathrm I_4$ and $L_{\mathrm{axf},\vec e_x}L_{\mathrm{axf},\vec e_y}=L_{\mathrm{axf},\vec e_z}=-L_{\mathrm{axf},\vec e_y}L_{\mathrm{axf},\vec e_x}$.
 
-**The transpose is the conjugation.** In this frame the transpose of a left matrix is the left matrix of the conjugate element:
+**The transpose is the quaternion conjugation.** In this frame the transpose of a left matrix is the left matrix of the quaternion conjugation, the $\mathbb{C}$-linear map $\natural$ that fixes $e_t$ and negates the three vector units:
 $$
 L_{\mathrm{axf}}(\tilde Q)^{\mathsf T}=L_{\mathrm{axf}}(\tilde Q^{\natural}),\qquad
 \tilde Q^{\natural}=Q_te_t-Q_x\vec e_x-Q_y\vec e_y-Q_z\vec e_z .
 $$
 The reason is visible in the display. Transposing swaps the entries at the $(\mu,\nu)$ and $(\nu,\mu)$ positions, and those two entries carry opposite signs exactly when $s_\mu s_\nu=-1$, with $s_t=1$ and $s_x=s_y=s_z=-1$, so every entry of the transpose is $s_\mu s_\nu$ times the corresponding entry of the display. Multiplying the three vector coefficients by $-1$ produces exactly that sign pattern. The same identity holds for the right matrices. It is a property of this frame, not of the algebra: in a general frame the transpose of a left matrix is the conjugate of a right matrix, $L(\tilde Q)^{\mathsf T}=\mathsf W R(\tilde Q)\mathsf W^{-1}$, and it is a left matrix here because the switch is diagonal.
 
-**The dagger.** The conjugate transpose gives the star conjugate,
+**The dagger.** The conjugate transpose gives the Hermitian conjugation $\tilde Q^{\ast}=\overline{\tilde Q^{\natural}}$,
 $$
 L_{\mathrm{axf}}(\tilde Q)^{\dagger}=L_{\mathrm{axf}}(\tilde Q^{*}),
 $$
-because the dagger is the entrywise conjugate followed by the transpose, and the entrywise conjugate of the display is the display of the element with $Q_\mu$ replaced by $\overline{Q_\mu}$, which is the star conjugation. Both identities are checked on the four units and extended by linearity.
+because the dagger is the entrywise conjugate followed by the transpose, and the entrywise conjugate of the display is the display of the element with $Q_\mu$ replaced by $\overline{Q_\mu}$, which is the coefficient conjugation; the transpose is the quaternion conjugation, so the composite $\ast=\natural\circ\bar{\cdot}$ is the Hermitian conjugation. Both identities are checked on the four units and extended by linearity.
 
 ### No Direction Is Privileged
 
@@ -204,7 +204,7 @@ because the product of two distinct units is a third unit, of zero scalar part, 
 $$
 \mathsf W=D=\begin{pmatrix}1&0&0&0\\0&-1&0&0\\0&0&-1&0\\0&0&0&-1\end{pmatrix}=\operatorname{diag}(1,-1,-1,-1).
 $$
-The matrix $D$ is real, symmetric and diagonal, $D^2=\mathrm I_4$, and $\det D=-1$. It is also the matrix of the conjugation in this basis, since $\tilde Q^{\natural}$ is $\tilde Q$ with the three vector coefficients negated.
+The matrix $D$ is real, symmetric and diagonal, $D^2=\mathrm I_4$, and $\det D=-1$. It is also the matrix of the quaternion conjugation in this basis, since $\tilde Q^{\natural}$ is $\tilde Q$ with the three vector coefficients negated.
 
 **The stitch.** With $\mathsf W=D$ the general rule reads
 $$
@@ -299,7 +299,7 @@ One matrix serves both families, because the frame is a property of the carrier 
 
 **A single orbit.** Every family of left matrices and every family of right matrices arises this way, from one $\mathsf C\in GL_4(\mathbb{C})$. So the families form one orbit, and what changes from frame to frame is the display: the entries, the sparsity, the subring of $\mathbb{C}$ in which the entries lie, the subspaces $\mathbb{B}_L$ and $\mathbb{B}_R$ of $M_4(\mathbb{C})$, and the switch. What does not change is the element: the trace $4Q_t$, the determinant $\langle\tilde Q\rangle_{\natural}^2$, the characteristic polynomial, the spectrum, the rank and the dimensions of the two annihilators are the same in every frame, as the table of *Families of Matrix Representations* records. No property of an element can be true in one frame and false in another; only a property of the display can.
 
-**A caution about identities.** An identity that holds in one frame need not hold in another. The transpose identity is the example: $L_{\mathrm{axf}}(\tilde Q)^{\mathsf T}=L_{\mathrm{axf}}(\tilde Q^{\natural})$ holds here and fails in a frame whose switch is not $D$. What survives every frame is the general relation $L(\tilde Q)^{\mathsf T}=\mathsf W R(\tilde Q)\mathsf W^{-1}$, with $\mathsf W$ the switch of the frame at hand. So the transpose is the conjugation only where $\mathsf W=D$, and that is one reason this frame is kept.
+**A caution about identities.** An identity that holds in one frame need not hold in another. The transpose identity is the example: $L_{\mathrm{axf}}(\tilde Q)^{\mathsf T}=L_{\mathrm{axf}}(\tilde Q^{\natural})$ holds here and fails in a frame whose switch is not $D$. What survives every frame is the general relation $L(\tilde Q)^{\mathsf T}=\mathsf W R(\tilde Q)\mathsf W^{-1}$, with $\mathsf W$ the switch of the frame at hand. So the transpose is the quaternion conjugation only where $\mathsf W=D$, and that is one reason this frame is kept.
 
 ## What the Axis-Free Family Makes Simple
 
@@ -313,7 +313,7 @@ One matrix serves both families, because the frame is a property of the carrier 
 
 **(d) The entries are the structure constants.** The matrices are the array $\varepsilon$ of §*The Axis-Free Basis*, read by columns. Nothing is rescaled and nothing is rotated.
 
-**(e) The transpose is the conjugation.** $L(\tilde Q)^{\mathsf T}=L(\tilde Q^{\natural})$, and the same for $R$.
+**(e) The transpose is the quaternion conjugation.** $L(\tilde Q)^{\mathsf T}=L(\tilde Q^{\natural})$, and the same for $R$.
 
 **(f) The switch is real and diagonal.** $R=DL^{\mathsf T}D$ with $D=\operatorname{diag}(1,-1,-1,-1)\in M_4(\mathbb{R})$.
 
@@ -647,7 +647,7 @@ The six subspaces are the scalar, traceless, real, purely imaginary, Hermitian a
 | $L_{\mathrm{axf},e_\mu}$, $R_{\mathrm{axf},e_\mu}$ | the left and right matrices of the four units |
 | $L_{\mathrm{axf}}(\tilde Q)$, $R_{\mathrm{axf}}(\tilde Q)$ | the left and right matrices of $\tilde Q$ |
 | $\mathbb{B}_L$, $\mathbb{B}_R$ | the two families, as subalgebras of $M_4(\mathbb{C})$ |
-| $D=\operatorname{diag}(1,-1,-1,-1)$ | the switch of this frame, the Gram matrix of $\beta$, and the matrix of the conjugation |
+| $D=\operatorname{diag}(1,-1,-1,-1)$ | the switch of this frame, the Gram matrix of $\beta$, and the matrix of the quaternion conjugation |
 | $s_\mu$ | the sign of $e_\mu^{\natural}=s_\mu e_\mu$, the diagonal entry of $D$ |
 | $\beta(\tilde X,\tilde Y)$ | $\operatorname{Sc}(\tilde X\tilde Y)$, the symmetric form whose Gram matrix is the switch |
 | $\mathsf C$ | the matrix of a change of frame, its columns the new frame vectors |

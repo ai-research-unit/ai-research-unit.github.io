@@ -45,7 +45,7 @@ $$
 
 *Proof.* $(L_aL_b)(\tilde Q_3)=a(b\tilde Q_3)=(ab)\tilde Q_3=L_{ab}(\tilde Q_3)$; $(R_aR_b)(\tilde Q_3)=(\tilde Q_3 b)a=\tilde Q_3(ba)=R_{ba}(\tilde Q_3)$; and $(L_aR_b)(\tilde Q_3)=a(\tilde Q_3 b)=(a\tilde Q_3)b=(R_bL_a)(\tilde Q_3)$. The last identity is associativity and needs no commutativity.
 
-So the map $L\colon a\mapsto L_a$ is an algebra **homomorphism** of $\mathbb B$ into $\operatorname{End}_{\mathbb C}(\mathbb B)$, while $R\colon a\mapsto R_a$ is an algebra **anti**-homomorphism, whose image is therefore a copy of the opposite algebra $\mathbb B_{\mathrm{opp}}$. The two families commute elementwise. This is the whole content of the two-sided operator $\mathrm{Sd}_{\tilde Q_1}=L_{\tilde Q_1}R_{\tilde{Q}_1^{*}}$ of the corpus, decomposed into its two factors.
+So the map $L\colon a\mapsto L_a$ is an algebra **homomorphism** of $\mathbb B$ into $\operatorname{End}_{\mathbb C}(\mathbb B)$, while $R\colon a\mapsto R_a$ is an algebra **anti**-homomorphism, whose image is therefore a copy of the opposite algebra $\mathbb B_{\mathrm{opp}}$. The two families commute elementwise. This is the whole content of the two-sided operator $\mathrm{Sd}_{\tilde Q_1}=L_{\tilde Q_1}R_{\tilde{Q}_1^{*}}$ of the corpus, with $\tilde Q_1^{*}$ the Hermitian conjugation, decomposed into its two factors.
 
 **Theorem (the double centraliser).** The commutant of the left multiplications is exactly the right multiplications, and likewise with the roles exchanged:
 
