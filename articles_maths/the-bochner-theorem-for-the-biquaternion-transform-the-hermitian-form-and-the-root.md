@@ -117,7 +117,7 @@ The biquaternion norm of the kernel is the quaternionic square, $\langle \chi_\o
 | Hermitian, $\chi_\omega^{*}=\chi_\omega^{-1}$ | $\tilde{Ζ}^{*}=-\tilde{Ζ}$ | scalar imaginary and real (the degenerate roots) |
 | quaternion, $\chi_\omega^{\natural}=\chi_\omega^{-1}$ | $\tilde{Ζ}^{\natural}=-\tilde{Ζ}$ | pure roots: real and genuinely complex (the scalar imaginary excluded) |
 
-The Hermitian row is the one a positive-definite function uses, because a positive-definite function is sesquilinear; the natural row is the one the norm identity of the continuous article uses, and it belongs to the metric.
+The Hermitian row is the one a positive-definite function uses, because a positive-definite function is sesquilinear; the quaternion row is the one the norm identity of the continuous article uses, and it belongs to the metric.
 
 ## Positivity of the Transform
 
@@ -283,7 +283,7 @@ Bochner's theorem for the biquaternion transform is a theorem about the general 
 | $\chi_\omega=\cos\theta\,e_t-\sin\theta\,\tilde{Ζ}$, $\theta=2\pi\langle\omega,x\rangle$ | the biquaternion kernel of a root |
 | $G(\omega)=\int\chi_\omega\,d\mu$ | the transform of the measure; $G(0)=\mu(\mathbb{R}^n)e_t$ |
 | $\chi_\omega^{*}=\chi_\omega^{-1}\Leftrightarrow\tilde{Ζ}^{*}=-\tilde{Ζ}$ | Hermitian unitarity; the degenerate roots |
-| $\chi_\omega^{\natural}=\chi_\omega^{-1}\Leftrightarrow\tilde{Ζ}^{\natural}=-\tilde{Ζ}$ | natural unitarity; the pure roots (real and genuinely complex) |
+| $\chi_\omega^{\natural}=\chi_\omega^{-1}\Leftrightarrow\tilde{Ζ}^{\natural}=-\tilde{Ζ}$ | quaternion unitarity; the pure roots (real and genuinely complex) |
 | $Q=\sum_{k,l}A_kG(\omega_k-\omega_l)A_l^{*}$ | the sesquilinear quadratic form, conjugation in the second slot |
 | $Q=\int ZZ^{*}d\mu$, $Z=\sum_kA_k\chi_{\omega_k}$ | the factorisation; positive definite for the degenerate roots |
 | $Q=2e_t-2ib\mu+2d\nu$, $Q-Q^{*}=4d\nu$, $\mathrm{spec}(\mathrm{Her}\,Q)=\{2(1-b),2(1+b)\}$ | the converse witness, for a genuinely complex root; the eigenvalue $2(1-b)$ is negative |
