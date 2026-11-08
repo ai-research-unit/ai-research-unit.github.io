@@ -4,9 +4,9 @@
 
 An algebra acts on its modules by linear operators, and when both the algebra and the module carry a $\mathbb{Z}/2$-grading the action has to respect it. The compatibility is a degree rule — multiplying by an element of degree $i$ shifts the degree of a homogeneous element by $i$ — and it forces a sign rule on the operators that represent the action: the even elements act by degree-preserving operators, the odd ones by degree-reversing operators, and the representation is a morphism of graded algebras whose brackets carry a sign.
 
-The present article studies the action as an operator and reads off the degree and the sign. The module theory itself is *Modules over an Algebra*, the grading of the algebra comes from the involutive automorphism $\alpha$ of *The Signed Sandwich on an Algebra*, and the general theory of graded algebras and graded modules, of the Koszul sign rule and of the symmetric monoidal structure is *Superalgebras and Graded Structures*, which is named as the owner and not used.
+The present article studies the action as an operator and reads off the degree and the sign. The module theory itself is *Modules over an Algebra*, the grading of the algebra comes from the involutive automorphism $\alpha$ of *The Signed Two-Sided Operator on an Algebra*, and the general theory of graded algebras and graded modules, of the Koszul sign rule and of the symmetric monoidal structure is *Superalgebras and Graded Structures*, which is named as the owner and not used.
 
-Throughout, $k$ is a field, $A$ is a unital associative $k$-algebra with an involutive automorphism $\alpha$, and $A = A^+ \oplus A^-$ is the induced $\mathbb{Z}/2$-grading of *The Signed Sandwich on an Algebra*. Elements of $A^\pm$ are **homogeneous** of degree $0$ (even) or $1$ (odd), written $|a| \in \{0,1\}$; a product of homogeneous elements is homogeneous of degree $|a| + |b|$ taken modulo two. The module theory, the bimodule structures and the tensor products are those of *Modules over an Algebra* and *The Balanced Product over an Algebra*.
+Throughout, $k$ is a field, $A$ is a unital associative $k$-algebra with an involutive automorphism $\alpha$, and $A = A^+ \oplus A^-$ is the induced $\mathbb{Z}/2$-grading of *The Signed Two-Sided Operator on an Algebra*. Elements of $A^\pm$ are **homogeneous** of degree $0$ (even) or $1$ (odd), written $|a| \in \{0,1\}$; a product of homogeneous elements is homogeneous of degree $|a| + |b|$ taken modulo two. The module theory, the bimodule structures and the tensor products are those of *Modules over an Algebra* and *The Balanced Product over an Algebra*.
 
 ## The Graded Module
 
@@ -118,7 +118,7 @@ $$
 
 *Proof.* The composite $\rho \circ \alpha$ is a homomorphism because $\alpha$ is an algebra automorphism of $A$, and a homomorphism $A \to \operatorname{End}_k(M)$ is an action. The degree is preserved because $\alpha(A^\pm) = A^\pm$. The graded centrality of $a$ is the equation $\rho(a)\rho(b) = (-1)^{|a||b|}\rho(b)\rho(a)$ for all homogeneous $b$, which is the definition of the graded centraliser of the image.
 
-**Remark.** There is no general commutator relation between the twisted action and the original one, and none is claimed: the two actions agree on $A^+$ and satisfy $\rho(\alpha(a)) = \rho(a)$ for even $a$, while for odd $a$ the twisted operator is $-\rho(a)$. The sign rule of the article is the graded bracket of the single action, not a bracket between the two actions. The module-level form of the signed sandwich is the operator $L(a)\alpha$ of *The Signed Left Multiplication on an Algebra*, which is the regular action with the involution inserted in the middle of the operator.
+**Remark.** There is no general commutator relation between the twisted action and the original one, and none is claimed: the two actions agree on $A^+$ and satisfy $\rho(\alpha(a)) = \rho(a)$ for even $a$, while for odd $a$ the twisted operator is $-\rho(a)$. The sign rule of the article is the graded bracket of the single action, not a bracket between the two actions. The module-level form of the signed two-sided operator is the operator $L(a)\alpha$ of *The Signed Left Multiplication on an Algebra*, which is the regular action with the involution inserted in the middle of the operator.
 
 ## The Regular and the Trivial Gradings
 
@@ -138,7 +138,7 @@ $$
 
 ### The Trivial Grading
 
-**Proposition.** If $A^- = 0$, equivalently $\alpha = \mathrm{id}$ by *The Signed Sandwich on an Algebra*, then every module carries the trivial grading $M^0 = M$, $M^1 = 0$, every operator is even, the graded commutator is the ordinary commutator, and the sign rule is empty. Every statement of the article reduces to the corresponding statement of *Modules over an Algebra*.
+**Proposition.** If $A^- = 0$, equivalently $\alpha = \mathrm{id}$ by *The Signed Two-Sided Operator on an Algebra*, then every module carries the trivial grading $M^0 = M$, $M^1 = 0$, every operator is even, the graded commutator is the ordinary commutator, and the sign rule is empty. Every statement of the article reduces to the corresponding statement of *Modules over an Algebra*.
 
 *Proof.* With $A^- = 0$ the compatibility $A^i M^j \subseteq M^{i+j}$ is vacuous, the degrees are all zero, and $(-1)^{|a||m|} = 1$; the graded commutator of two even operators is the ordinary one.
 
@@ -172,7 +172,7 @@ Let $A = \Lambda(V)$ with the degree grading and let $M = A$ with the regular ac
 
 ### A Group Algebra with a Parity
 
-Let $A = k[G]$ with a parity homomorphism $\chi$ as in *The Signed Sandwich on an Algebra*, and let $M = k[G]$ with the regular action. A group element $g$ acts with degree $|g| = 0$ when $\chi(g) = 1$ and degree $1$ when $\chi(g) = -1$; the even group elements act by parity-preserving operators, the odd ones by parity-reversing operators, and two odd group elements have the anticommutator relation $\{\rho(g),\rho(h)\} = \rho(gh) + \rho(hg)$.
+Let $A = k[G]$ with a parity homomorphism $\chi$ as in *The Signed Two-Sided Operator on an Algebra*, and let $M = k[G]$ with the regular action. A group element $g$ acts with degree $|g| = 0$ when $\chi(g) = 1$ and degree $1$ when $\chi(g) = -1$; the even group elements act by parity-preserving operators, the odd ones by parity-reversing operators, and two odd group elements have the anticommutator relation $\{\rho(g),\rho(h)\} = \rho(gh) + \rho(hg)$.
 
 ### A Module Concentrated in One Degree
 
@@ -186,7 +186,7 @@ $$
 [\rho(a),\rho(b)]_{\mathrm{gr}} = \rho\bigl([a,b]_{\mathrm{gr}}\bigr), \qquad [a,b]_{\mathrm{gr}} = ab - (-1)^{|a||b|}ba,
 $$
 
-so that even elements commute with the whole action in the graded sense and two odd elements have the anticommutator rule $\{\rho(a),\rho(b)\} = \rho(ab + ba)$. The twisted action $a \star m = \alpha(a)m$ is the module-level form of the signed sandwich; the regular module realizes the action as the left multiplications $L$, which is a morphism of graded algebras, and $\Lambda(a) = L(a)\alpha$ is the same action with the involution inserted; the free module realizes it as matrix multiplication, and the graded homomorphisms form a graded algebra under composition. When $A^- = 0$ the grading is trivial and the theory reduces to *Modules over an Algebra*; the general theory of graded algebras, of the symmetric monoidal structure and of the Koszul sign rule is *Superalgebras and Graded Structures*, and the module and tensor theory used here is *Modules over an Algebra* and *The Balanced Product over an Algebra*.
+so that even elements commute with the whole action in the graded sense and two odd elements have the anticommutator rule $\{\rho(a),\rho(b)\} = \rho(ab + ba)$. The twisted action $a \star m = \alpha(a)m$ is the module-level form of the signed two-sided operator; the regular module realizes the action as the left multiplications $L$, which is a morphism of graded algebras, and $\Lambda(a) = L(a)\alpha$ is the same action with the involution inserted; the free module realizes it as matrix multiplication, and the graded homomorphisms form a graded algebra under composition. When $A^- = 0$ the grading is trivial and the theory reduces to *Modules over an Algebra*; the general theory of graded algebras, of the symmetric monoidal structure and of the Koszul sign rule is *Superalgebras and Graded Structures*, and the module and tensor theory used here is *Modules over an Algebra* and *The Balanced Product over an Algebra*.
 
 ## Summary of Notation
 

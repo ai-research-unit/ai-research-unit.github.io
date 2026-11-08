@@ -191,7 +191,7 @@ Take a rotation about $\vec e_z$ by angle $\theta$, with rotor $\tilde u_{\mathr
 
 **On the field.** At $\theta = 2\pi$ the rotor is $\tilde u_{\mathrm r}(2\pi) = \cos\pi\,e_t = -e_t$, so the left multiplication sends every field to its negative, $\tilde{Ξ}_{\mathrm{sp}}\mapsto-\tilde{Ξ}_{\mathrm{sp}}$, which is not the identity. At $\theta = 4\pi$ the rotor is $\tilde u_{\mathrm r}(4\pi) = \cos 2\pi\,e_t = e_t$, and the field returns to itself.
 
-**On the four-vector.** The four-vector action is the sandwich by the rotor. At $\theta = 2\pi$,
+**On the four-vector.** The four-vector action is the two-sided operator with the rotor. At $\theta = 2\pi$,
 
 $$
 (-e_t)\,V\,(-e_t)^{*} = (-e_t)\,V\,(-e_t) = e_t\,V\,e_t = V,
@@ -214,15 +214,15 @@ $$
 
 and $SL(2,\mathbb{C})$ is the double cover.
 
-## Problem 7: The One-Sided Action and the Sandwich
+## Problem 7: The One-Sided Action and the Two-Sided Operator
 
-**From the one-sided action to the sandwich.** Let $w,v$ be of one value and form $V = V(w,v) = i\cdot\tfrac12(wv^{*}+vw^{*})\in\mathbb{B}_{\Phi}$. Under the field action $w\mapsto Uw$, $v\mapsto Uv$, the bilinear transforms as
+**From the one-sided action to the two-sided operator.** Let $w,v$ be of one value and form $V = V(w,v) = i\cdot\tfrac12(wv^{*}+vw^{*})\in\mathbb{B}_{\Phi}$. Under the field action $w\mapsto Uw$, $v\mapsto Uv$, the bilinear transforms as
 
 $$
 V \;\longmapsto\; U\,V\,U^{*},
 $$
 
-which is exactly the sandwich of the material sector. One element of the field contributes one factor, $\tilde{Ξ}_{\mathrm{sp}}\mapsto\tilde U\tilde{Ξ}_{\mathrm{sp}}$ (linear, one-sided); the four-vector is built from two of them and therefore carries two factors, $UVU^{*}$ (quadratic, two-sided). This is the origin of the difference in kind between the two actions, and it is the sense in which the four-vector is a *pair* of elements.
+which is exactly the two-sided operator of the material sector. One element of the field contributes one factor, $\tilde{Ξ}_{\mathrm{sp}}\mapsto\tilde U\tilde{Ξ}_{\mathrm{sp}}$ (linear, one-sided); the four-vector is built from two of them and therefore carries two factors, $UVU^{*}$ (quadratic, two-sided). This is the origin of the difference in kind between the two actions, and it is the sense in which the four-vector is a *pair* of elements.
 
 **The sign that cancels and the sign that does not.** Replace $\tilde U$ by $-\tilde U$. On four-vectors $(-U)V(-U)^{*} = UVU^{*}$, because the two signs cancel; on the field $(-U)\tilde{Ξ}_{\mathrm{sp}} = -U\tilde{Ξ}_{\mathrm{sp}}\neq U\tilde{Ξ}_{\mathrm{sp}}$ for every nonzero field. Hence $\ker\pi = \{\pm e_t\}$ on $\mathbb{B}_{\Phi}$ but the kernel of the field action is trivial: the field action does not descend to $SO^{+}(1,3)$.
 
@@ -254,7 +254,7 @@ The solutions have the expected limits.
 
 **2. Chirality is a real-structure notion.** The two values are invisible to the algebra as a complex algebra, where a left multiplication acts on both alike; they become visible only through the conjugate action, which the coefficient conjugation supplies.
 
-**3. The four-vector is the bilinear shadow of the field.** The sandwich on $\mathbb{B}_{\Phi}$ arises from the one-sided action through the Hermitian part; the vector action is two factors of the field, and that is why it is quadratic where the field action is linear.
+**3. The four-vector is the bilinear shadow of the field.** The two-sided operator on $\mathbb{B}_{\Phi}$ arises from the one-sided action through the Hermitian part; the vector action is two factors of the field, and that is why it is quadratic where the field action is linear.
 
 **4. The double cover is a kernel statement.** $\ker\pi = \{\pm e_t\}$ on the four-vectors, but trivial on the field; the difference is one factor of the rotor versus two.
 
@@ -343,7 +343,7 @@ The four contraction sums are fixed by the metric, because a basis operator's sq
 
 ## Summary
 
-Seven problems were solved. (1) The subscript takes two values and there are exactly two; every element is the sum of one part of each, and only the zero element is both; a product takes the letter of its right factor, and left multiplication keeps it, so the value of a part is Lorentz invariant. (2) The massless pair decouples into two independent one-sided equations, one per value; the mass term couples the values, and each part obeys $(\Box-k_m^{2})\tilde{Ξ}_{\mathrm{sp}} = 0$, with mass shell $k_{t}^{\prime\,2} = \vec k_\Phi^2+k_m^{2}$. The one-sided chiral pair is one of the two Dirac equations of the corpus; the two-sided form carries the same chirality coupling in a single equation, with the mass term a conjugation together with a right multiplication by the declared unit. (3) Under a boost the two parts transform by inverse elements, because $\bar{\tilde U}_{\Psi,\mathrm b}=\tilde U_{\Psi,\mathrm b}^{-1}$; under a rotation they transform by the same element, because a rotation rotor is real; in general $\bar{\tilde U}=(\tilde U^{*})^{-1}$. (4) The quaternionic form is invariant, symmetric and nondegenerate, vanishes on each value and pairs one value with the other, so each value is self-dual without being self-conjugate. (5) The bilinear gives $V = i\cdot\tfrac12(wv^{*}+vw^{*})\in\mathbb{B}_{\Phi}$, transforming by the sandwich $UVU^{*}$; one element gives a null four-vector, and the vector action is the product of two field factors. (6) A $2\pi$ rotation acts as $-e_t$ on the field and as the identity on four-vectors, and a $4\pi$ rotation as the identity on both: the double cover $SO^{+}(1,3)\cong SL(2,\mathbb{C})/\{\pm e_t\}$. (7) The sandwich is the bilinear shadow of the one-sided action; the sign cancels in the former but not in the latter, and the Hermitian form on one value and the other is invariant.
+Seven problems were solved. (1) The subscript takes two values and there are exactly two; every element is the sum of one part of each, and only the zero element is both; a product takes the letter of its right factor, and left multiplication keeps it, so the value of a part is Lorentz invariant. (2) The massless pair decouples into two independent one-sided equations, one per value; the mass term couples the values, and each part obeys $(\Box-k_m^{2})\tilde{Ξ}_{\mathrm{sp}} = 0$, with mass shell $k_{t}^{\prime\,2} = \vec k_\Phi^2+k_m^{2}$. The one-sided chiral pair is one of the two Dirac equations of the corpus; the two-sided form carries the same chirality coupling in a single equation, with the mass term a conjugation together with a right multiplication by the declared unit. (3) Under a boost the two parts transform by inverse elements, because $\bar{\tilde U}_{\Psi,\mathrm b}=\tilde U_{\Psi,\mathrm b}^{-1}$; under a rotation they transform by the same element, because a rotation rotor is real; in general $\bar{\tilde U}=(\tilde U^{*})^{-1}$. (4) The quaternionic form is invariant, symmetric and nondegenerate, vanishes on each value and pairs one value with the other, so each value is self-dual without being self-conjugate. (5) The bilinear gives $V = i\cdot\tfrac12(wv^{*}+vw^{*})\in\mathbb{B}_{\Phi}$, transforming by the two-sided operator $UVU^{*}$; one element gives a null four-vector, and the vector action is the product of two field factors. (6) A $2\pi$ rotation acts as $-e_t$ on the field and as the identity on four-vectors, and a $4\pi$ rotation as the identity on both: the double cover $SO^{+}(1,3)\cong SL(2,\mathbb{C})/\{\pm e_t\}$. (7) The two-sided operator is the bilinear shadow of the one-sided action; the sign cancels in the former but not in the latter, and the Hermitian form on one value and the other is invariant.
 
 ## Summary of Notation
 

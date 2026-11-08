@@ -119,7 +119,7 @@ $$
 x \star (\lambda y) = x(\lambda y)^{*} = x\,\varsigma(\lambda)\,y^{*} = \varsigma(\lambda)\,xy^{*} = \varsigma(\lambda)(x \star y).
 $$
 
-**Remark.** The derived operation is the reason the category is not empty and not artificial: every algebra with a conjugate-linear involution carries one, and the algebras of the corpus — the complex matrices with the conjugate transpose, the group algebra with $f \mapsto f^{*}$, the biquaternion algebra with the star — each carry one. The operator theory of the derived operation, its left and right multiplications and its sandwich, is the operator theory of this category.
+**Remark.** The derived operation is the reason the category is not empty and not artificial: every algebra with a conjugate-linear involution carries one, and the algebras of the corpus — the complex matrices with the conjugate transpose, the group algebra with $f \mapsto f^{*}$, the biquaternion algebra with the star — each carry one. The operator theory of the derived operation, its left and right multiplications and its two-sided operator, is the operator theory of this category.
 
 **Proposition (the units of the derived operation).** Let $A$ be a unital associative $R$-algebra with a $\varsigma$-semilinear involution $*$, and let $\star$ be the derived operation.
 

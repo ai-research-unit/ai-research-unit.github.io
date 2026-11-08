@@ -65,7 +65,7 @@ A category of Parts I to IV lists its articles in four groups, each of which add
 | Group | What it holds |
 |---|---|
 | Theory | the structure itself, read with the product of its elements |
-| Operator Theory | the operators on the structure: the left and right multiplications, the derivations, the automorphisms, the sandwich |
+| Operator Theory | the operators on the structure: the left and right multiplications, the derivations, the automorphisms, the two-sided operator |
 | * Theory | the same structure read with an involution on its **elements** |
 | * Operator Theory | the operators built from the **involution**, of which the adjoint is the archetype |
 | Applications | the concrete instances of the structure, closing the category |

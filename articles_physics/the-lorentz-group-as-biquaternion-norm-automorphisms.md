@@ -2,7 +2,7 @@
 
 ## Introduction
 
-The group that acts on the material sector of the biquaternion framework has so far been introduced in two ways: as the group of unit-norm biquaternions, and as the group of Hermitian sandwiches they generate. Both descriptions take the group as given and derive its action. This article takes the opposite route. It asks what group the algebra *forces* when the biquaternion norm is regarded as the structure to be preserved, and shows that the answer is the Lorentz group, with the rotor description recovered as the coordinate form of the automorphisms.
+The group that acts on the material sector of the biquaternion framework has so far been introduced in two ways: as the group of unit-norm biquaternions, and as the group of Hermitian pairs they generate. Both descriptions take the group as given and derive its action. This article takes the opposite route. It asks what group the algebra *forces* when the biquaternion norm is regarded as the structure to be preserved, and shows that the answer is the Lorentz group, with the rotor description recovered as the coordinate form of the automorphisms.
 
 The point of the automorphism interpretation is that the biquaternion norm is not an extra structure laid on the algebra. It is the algebra's own multiplicative quadratic form,
 
@@ -22,7 +22,7 @@ Four statements organize the article. The first three are the levels at which th
 
 - **At the complex level**, $\langle\cdot\rangle_{\natural}$ is a nondegenerate symmetric form on $\mathbb{B}\cong\mathbb{C}^4$, and the automorphism group is the complex orthogonal group $O(4,\mathbb{C})$. Via the determinant realization $N=\det$, the connected component is $SO(4,\mathbb{C})\cong(SL(2,\mathbb{C})\times SL(2,\mathbb{C}))/\{\pm(e_t,e_t)\}$, acting by $\tilde{Q}\mapsto A\tilde{Q}B^{*}$.
 - **At the real level**, the restricted form on the anti-Hermitian slice is the Minkowski interval $\langle\tilde Q\rangle_\natural$ with $Q_t=ix_0$, and the automorphisms preserving the slice are the real orthogonal maps of signature $(3,1)$, with identity component the restricted Lorentz group $SO^+(1,3)$.
-- **At the rotor level**, the identity component is exactly the group of Hermitian sandwiches $\tilde{Q}\mapsto\tilde U_{\mathrm{lor}}\tilde{Q}\tilde U_{\mathrm{lor}}{}^{*}$ with the Lorentz rotor $\tilde U_{\mathrm{lor}}$, a unit-norm biquaternion, and the correspondence is two-to-one.
+- **At the rotor level**, the identity component is exactly the group of Hermitian pairs $\tilde{Q}\mapsto\tilde U_{\mathrm{lor}}\tilde{Q}\tilde U_{\mathrm{lor}}{}^{*}$ with the Lorentz rotor $\tilde U_{\mathrm{lor}}$, a unit-norm biquaternion, and the correspondence is two-to-one.
 - **At the algebra level**, the automorphisms that preserve the **product** and not only the form are the inner ones, and they form the subfamily $AB^{*}=I$, the group $SO(3,\mathbb{C})\cong PGL(2,\mathbb{C})$ inside $SO(4,\mathbb{C})$. As a real group this is again the restricted Lorentz group, and it acts as the Lorentz group on a real coordinate system that is *bilinear* in the coordinates of a complex 3-space, with the causal structure following from an identity rather than from a postulate. That route is the source's, and the section *The Algebra Automorphisms: the Diagonal, and an Induced Causality* treats it as the middle case between the norm and the slice.
 
 ## The Biquaternion Norm as a Quadratic Form
@@ -200,7 +200,7 @@ $$
 
 the full Lorentz group including the discrete reflections and the time-reversal and parity components. The connected component of the identity is the **restricted Lorentz group** $SO^+(1,3)$: the transformations that are proper (determinant $+1$) and orthochronous (preserve the time direction). This is the group the algebra supplies at the real level: the automorphisms of the biquaternion norm that respect the material slice.
 
-The discrete components are automorphisms of the form and are not Hermitian sandwiches; they include spatial reflection and time reversal, which are outer with respect to the rotor group. The rotor group covers only the identity component, which is why a spinor or a rotor is not by itself sensitive to orientation-reversing transformations.
+The discrete components are automorphisms of the form and are not Hermitian pairs; they include spatial reflection and time reversal, which are outer with respect to the rotor group. The rotor group covers only the identity component, which is why a spinor or a rotor is not by itself sensitive to orientation-reversing transformations.
 
 ## The Rotor Realization of the Automorphisms
 
@@ -212,13 +212,13 @@ $$
 \tilde U_{\mathrm{lor}}\tilde U_{\mathrm{lor}}{}^{\natural} = e_t ,
 $$
 
-and it acts by the **Hermitian sandwich**,
+and it acts by the **Hermitian pair**,
 
 $$
 \pi(\tilde U_{\mathrm{lor}}):\ \tilde{Q}\ \longmapsto\ \tilde U_{\mathrm{lor}}\,\tilde{Q}\,\tilde U_{\mathrm{lor}}{}^{*} .
 $$
 
-The sandwich is built from the Hermitian adjoint, and the rotor has unit biquaternion norm. It preserves the biquaternion norm and the anti-Hermitian slice; it is an automorphism of the norm, not of the product.
+The two-sided operator is built from the Hermitian adjoint, and the rotor has unit biquaternion norm. It preserves the biquaternion norm and the anti-Hermitian slice; it is an automorphism of the norm, not of the product.
 
 Three properties, each a one-line verification, are the content of the identification.
 
@@ -264,14 +264,14 @@ $$
 SO^+(1,3)\cong SL(2,\mathbb{C})/\{\pm e_t\}.
 $$
 
-The map $\pi$ is **surjective** onto $SO^+(1,3)$; that every proper orthochronous Lorentz transformation of $\mathbb{B}_{\Phi}$ arises as a Hermitian sandwich is the standard theorem that $SL(2,\mathbb{C})$ is the double cover of the restricted Lorentz group, and it is cited here as standard rather than re-derived. The identification of the previous section is therefore complete at the level of the identity component:
+The map $\pi$ is **surjective** onto $SO^+(1,3)$; that every proper orthochronous Lorentz transformation of $\mathbb{B}_{\Phi}$ arises as a Hermitian pair is the standard theorem that $SL(2,\mathbb{C})$ is the double cover of the restricted Lorentz group, and it is cited here as standard rather than re-derived. The identification of the previous section is therefore complete at the level of the identity component:
 
 $$
 \boxed{\; SO^+(1,3)\;\cong\;SL(2,\mathbb{C})/\{\pm e_t\}
 \;=\;\{\pi(\tilde U_{\mathrm{lor}}): \langle\tilde U_{\mathrm{lor}}\rangle_{\natural}=1\}/\ker\pi\;}.
 $$
 
-A word on the relation between the complex and the real descriptions is in order, because the two groups have the same complexification. The complex group $SO(4,\mathbb{C})$ has complex dimension six; the real Lorentz group $SO(1,3)$ also has real dimension six, and is a real form of it. The rotor group $SL(2,\mathbb{C})$ is a six-real-dimensional group that doubly covers the identity component. The real structure is what reduces the first to the second; the map $\pi$ is what realizes the second by the Hermitian sandwich with unit-norm elements.
+A word on the relation between the complex and the real descriptions is in order, because the two groups have the same complexification. The complex group $SO(4,\mathbb{C})$ has complex dimension six; the real Lorentz group $SO(1,3)$ also has real dimension six, and is a real form of it. The rotor group $SL(2,\mathbb{C})$ is a six-real-dimensional group that doubly covers the identity component. The real structure is what reduces the first to the second; the map $\pi$ is what realizes the second by the Hermitian pair with unit-norm elements.
 
 ## The Algebra Automorphisms: the Diagonal, and an Induced Causality
 
@@ -343,7 +343,7 @@ T \longmapsto \cosh 2\theta_{\mathrm{rpd}}\,T + \sinh 2\theta_{\mathrm{rpd}}\,X_
 X_3 \longmapsto \sinh 2\theta_{\mathrm{rpd}}\,T + \cosh 2\theta_{\mathrm{rpd}}\,X_3 ,
 $$
 
-a **Lorentz boost of rapidity $2\theta_{\mathrm{rpd}}$**. The doubling is the source's point: the Lorentz boost angle is twice the rotation angle that generates it, so the Lorentz action on the bilinear coordinates is not the same as the complex rotation that produces it. The two families together — real rotations and imaginary rotations — are the six real parameters of $SO(3,\mathbb{C})$, and the isomorphism of the previous paragraph is the statement about the **groups**, not about an action on $(T,\vec X)$: the boost above holds only while $\vec p$ and $\vec q$ stay in the rotation plane, and for generic $\vec p,\vec q$ the induced map is not linear at all, so the action on the bilinear coordinates remains the Hermitian sandwich of $X=ZZ^{\dagger}$, not the automorphism itself.
+a **Lorentz boost of rapidity $2\theta_{\mathrm{rpd}}$**. The doubling is the source's point: the Lorentz boost angle is twice the rotation angle that generates it, so the Lorentz action on the bilinear coordinates is not the same as the complex rotation that produces it. The two families together — real rotations and imaginary rotations — are the six real parameters of $SO(3,\mathbb{C})$, and the isomorphism of the previous paragraph is the statement about the **groups**, not about an action on $(T,\vec X)$: the boost above holds only while $\vec p$ and $\vec q$ stay in the rotation plane, and for generic $\vec p,\vec q$ the induced map is not linear at all, so the action on the bilinear coordinates remains the Hermitian pair of $X=ZZ^{\dagger}$, not the automorphism itself.
 
 **Causality as a theorem.** Two inequalities, both elementary, make the construction more than a rewriting. By AM–GM, $2|\vec p|\,|\vec q|\le|\vec p|^2+|\vec q|^2=T$; and $|\vec X|=2|\vec p\times\vec q|\le2|\vec p|\,|\vec q|$. Hence
 
@@ -458,7 +458,7 @@ This is what makes each combination close on itself with the same structure cons
 
 ## What the Algebra Supplies and What Is Standard
 
-**Supplied by the algebra.** The fact that the biquaternion norm is multiplicative, and therefore that it is the algebra's own quadratic structure; the determinant realization $N = \det$, which turns the automorphism problem into a problem about $M_2(\mathbb{C})$; the restriction of the complex form to the real slices, with the signature table; the identification of the automorphisms preserving the material slice with $O(1,3)$, and of the identity component with the Hermitian sandwiches; and the infinitesimal algebra with its rotation-boost split and its minus sign on the boost-boost bracket.
+**Supplied by the algebra.** The fact that the biquaternion norm is multiplicative, and therefore that it is the algebra's own quadratic structure; the determinant realization $N = \det$, which turns the automorphism problem into a problem about $M_2(\mathbb{C})$; the restriction of the complex form to the real slices, with the signature table; the identification of the automorphisms preserving the material slice with $O(1,3)$, and of the identity component with the Hermitian pairs; and the infinitesimal algebra with its rotation-boost split and its minus sign on the boost-boost bracket.
 
 **Standard mathematics transcribed.** The classification of nondegenerate complex quadratic forms, the isomorphism $SO(4,\mathbb{C})\cong(SL(2,\mathbb{C})\times SL(2,\mathbb{C}))/\mathbb{Z}_2$, the double cover $SL(2,\mathbb{C})\to SO^+(1,3)$, and the real forms of $\mathrm{SO}(4,\mathbb{C})$ are standard Lie theory. The surjectivity of the rotor map is the standard covering theorem and is cited, not re-derived; what is derived here is the algebraic form of the action and its kernel.
 
@@ -509,7 +509,7 @@ $$
 \langle i r'_t\,e_t+r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z\rangle_{\natural} = -{r'_{t}}^2+r_x^2+r_y^2+r_z^2 ,
 $$
 
-so the automorphisms preserving the slice form $O(1,3)$, with identity component the restricted Lorentz group. That component is exactly the group of Hermitian sandwiches,
+so the automorphisms preserving the slice form $O(1,3)$, with identity component the restricted Lorentz group. That component is exactly the group of Hermitian pairs,
 
 $$
 SO^+(1,3)\cong SL(2,\mathbb{C})/\{\pm e_t\},
@@ -571,7 +571,7 @@ where $\sigma=z_1^2+z_2^2+z_3^2$. On that route the Minkowski form is induced fr
 | $\langle\tilde Q\rangle_\natural$, $Q_t=i r'_t$ | Level-2 Minkowski interval, the restriction of $\langle\cdot\rangle_{\natural}$ to $\mathbb{B}_{\Phi}$, signature $(3,1)$ |
 | $O(1,3)$, $SO^+(1,3)$ | Lorentz group; restricted (proper orthochronous) Lorentz group |
 | $\tilde U_{\mathrm{lor}}$, $\langle\tilde U_{\mathrm{lor}}\rangle_{\natural}=1$ | Unit-norm biquaternion (Lorentz rotor) |
-| $\tilde{Q}\mapsto\tilde U_{\mathrm{lor}}\tilde{Q}\tilde U_{\mathrm{lor}}{}^{*}$ | Hermitian sandwich; the automorphism of the slice |
+| $\tilde{Q}\mapsto\tilde U_{\mathrm{lor}}\tilde{Q}\tilde U_{\mathrm{lor}}{}^{*}$ | Hermitian pair; the automorphism of the slice |
 | $\pi:SL(2,\mathbb{C})\to SO^+(1,3)$, $\ker\pi=\{\pm e_t\}$ | Two-to-one covering homomorphism |
 | $\mathfrak{sl}(2,\mathbb{C}) = \{X:\mathrm{Sc}(X)=0\}$ | Lie algebra; $\mathcal{J}_\mu=\vec e_\mu$ (rotations), $\mathcal{K}_\mu=i\vec e_\mu$ (boosts) |
 | $[\mathcal{K}_\mu,\mathcal{K}_\nu]=-2\varepsilon_{\mu\nu\lambda}\mathcal{J}_\lambda$ | Boosts do not close; infinitesimal Wigner rotation |

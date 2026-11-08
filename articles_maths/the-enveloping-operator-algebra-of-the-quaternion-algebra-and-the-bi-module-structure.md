@@ -2,19 +2,19 @@
 
 ## Introduction
 
-The left and right multiplications of $\mathbb{H}$ generate together an algebra of operators, and that algebra is the **enveloping algebra** $\mathbb{H}^{\mathrm{e}}=\mathbb{H}\otimes_\mathbb{R}\mathbb{H}_{\mathrm{opp}}$. It is isomorphic to the full algebra of real-linear endomorphisms of the four-dimensional space, and the isomorphism is explicit: the elementary tensor $\tilde q_1\otimes\tilde q_{\mathrm{opp},2}$ acts as the sandwich $L_{\tilde q_1}R_{\tilde q_2}$, $\tilde q\mapsto\tilde q_1\tilde q\tilde q_2$. This article defines the enveloping algebra, identifies it with $\operatorname{End}_\mathbb{R}(\mathbb{H})$, writes the Conway operator basis and its composition rule, reads the one-sided operators as the edge rows and the two-sided operators as the elementary tensors, and describes the regular bimodule as a module over the enveloping algebra. The product and the operators are *Two-Sided Operators on the Quaternion Algebra*, below this article in this category, and *One-Sided Operators on the Quaternion Algebra*, below this article in this category; the transpose of a sandwich and the matrix formula $D\,G^{\mathsf T}D$ are *Association and the Transpose on the Quaternion Algebra*, above this article in this category; the module category is *Modules over the Quaternion Algebra*, above this article in this category.
+The left and right multiplications of $\mathbb{H}$ generate together an algebra of operators, and that algebra is the **enveloping algebra** $\mathbb{H}^{\mathrm{e}}=\mathbb{H}\otimes_\mathbb{R}\mathbb{H}_{\mathrm{opp}}$. It is isomorphic to the full algebra of real-linear endomorphisms of the four-dimensional space, and the isomorphism is explicit: the elementary tensor $\tilde q_1\otimes\tilde q_{\mathrm{opp},2}$ acts as the two-sided operator $L_{\tilde q_1}R_{\tilde q_2}$, $\tilde q\mapsto\tilde q_1\tilde q\tilde q_2$. This article defines the enveloping algebra, identifies it with $\operatorname{End}_\mathbb{R}(\mathbb{H})$, writes the Conway operator basis and its composition rule, reads the one-sided operators as the edge rows and the two-sided operators as the elementary tensors, and describes the regular bimodule as a module over the enveloping algebra. The product and the operators are *Two-Sided Operators on the Quaternion Algebra*, below this article in this category, and *One-Sided Operators on the Quaternion Algebra*, below this article in this category; the transpose of a two-sided operator and the matrix formula $D\,G^{\mathsf T}D$ are *Association and the Transpose on the Quaternion Algebra*, above this article in this category; the module category is *Modules over the Quaternion Algebra*, above this article in this category.
 
 ## The Enveloping Algebra
 
 **Definition.** The **enveloping algebra** of $\mathbb{H}$ is $\mathbb{H}^{\mathrm{e}}=\mathbb{H}\otimes_\mathbb{R}\mathbb{H}_{\mathrm{opp}}$, the tensor product of the algebra with its opposite, of real dimension $16$.
 
-**Theorem (the sandwich action).** The assignment $\tilde q_1\otimes\tilde q_{\mathrm{opp},2}\mapsto L_{\tilde q_1}R_{\tilde q_2}$, where $L_{\tilde q_1}R_{\tilde q_2}(\tilde q)=\tilde q_1\tilde q\tilde q_2$, extends uniquely to a representation of $\mathbb{H}^{\mathrm{e}}$ on the real vector space $\mathbb{H}$, and makes ${}_\mathbb{H}\mathbb{H}_\mathbb{H}$ a module over $\mathbb{H}^{\mathrm{e}}$.
+**Theorem (the two-sided action).** The assignment $\tilde q_1\otimes\tilde q_{\mathrm{opp},2}\mapsto L_{\tilde q_1}R_{\tilde q_2}$, where $L_{\tilde q_1}R_{\tilde q_2}(\tilde q)=\tilde q_1\tilde q\tilde q_2$, extends uniquely to a representation of $\mathbb{H}^{\mathrm{e}}$ on the real vector space $\mathbb{H}$, and makes ${}_\mathbb{H}\mathbb{H}_\mathbb{H}$ a module over $\mathbb{H}^{\mathrm{e}}$.
 
-*Proof.* The sandwich $L_{\tilde q_1}R_{\tilde q_2}$ is bilinear in $(\tilde q_1,\tilde q_2)$, so it defines a linear map on the tensor product $\mathbb{H}\otimes_\mathbb{R}\mathbb{H}_{\mathrm{opp}}$. It is multiplicative: $L_{\tilde q_1}R_{\tilde q_2}L_{\tilde q_3}R_{\tilde q_4}(\tilde q)=\tilde q_1\tilde q_3\,\tilde q\,\tilde q_4\tilde q_2=L_{\tilde q_1\tilde q_3}R_{\tilde q_4\tilde q_2}(\tilde q)$, and $\tilde q_1\tilde q_3$ is the product in $\mathbb{H}$ while $\tilde q_4\tilde q_2$ is the product in $\mathbb{H}_{\mathrm{opp}}$ of $\tilde q_{\mathrm{opp},2}$ and $\tilde q_{\mathrm{opp},4}$; so the map is an algebra homomorphism, and the associative law of the algebra is exactly the compatibility of the two actions.
+*Proof.* The two-sided operator $L_{\tilde q_1}R_{\tilde q_2}$ is bilinear in $(\tilde q_1,\tilde q_2)$, so it defines a linear map on the tensor product $\mathbb{H}\otimes_\mathbb{R}\mathbb{H}_{\mathrm{opp}}$. It is multiplicative: $L_{\tilde q_1}R_{\tilde q_2}L_{\tilde q_3}R_{\tilde q_4}(\tilde q)=\tilde q_1\tilde q_3\,\tilde q\,\tilde q_4\tilde q_2=L_{\tilde q_1\tilde q_3}R_{\tilde q_4\tilde q_2}(\tilde q)$, and $\tilde q_1\tilde q_3$ is the product in $\mathbb{H}$ while $\tilde q_4\tilde q_2$ is the product in $\mathbb{H}_{\mathrm{opp}}$ of $\tilde q_{\mathrm{opp},2}$ and $\tilde q_{\mathrm{opp},4}$; so the map is an algebra homomorphism, and the associative law of the algebra is exactly the compatibility of the two actions.
 
 ## The Identification with the Endomorphisms
 
-**Theorem.** The sandwich representation is an isomorphism $\mathbb{H}^{\mathrm{e}}\overset{\sim}{\to}\operatorname{End}_\mathbb{R}(\mathbb{H})$; both sides have real dimension $16$.
+**Theorem.** The two-sided representation is an isomorphism $\mathbb{H}^{\mathrm{e}}\overset{\sim}{\to}\operatorname{End}_\mathbb{R}(\mathbb{H})$; both sides have real dimension $16$.
 
 *Proof.* The map is a non-zero algebra homomorphism, since $e_t\otimes e_{\mathrm{opp},t}$ acts as the identity operator, and both algebras have real dimension $16$. The algebra $\mathbb{H}$ is central simple, and the tensor product of central simple algebras is central simple, so $\mathbb{H}^{\mathrm{e}}$ is simple; a non-zero homomorphism from a simple algebra into a ring is injective. Hence the map is injective, and by the equality of dimensions it is bijective.
 
@@ -42,7 +42,7 @@ $$ \boxed{\; (e_a[\,]e_b)(e_c[\,]e_d)=\varepsilon(a,c)\varepsilon(d,b)\,e_{a\opl
 
 **Corollary (the transpose of the basis element).** $(e_n[\,]e_m)^{\sim}=e_m[\,]e_n$.
 
-*Proof.* The transpose of a sandwich swaps its parameters, by *Association and the Transpose on the Quaternion Algebra*, above this article in this category.
+*Proof.* The transpose of a two-sided operator swaps its parameters, by *Association and the Transpose on the Quaternion Algebra*, above this article in this category.
 
 ## The One-Sided Operators as Edge Rows
 
@@ -66,23 +66,23 @@ Thus $\mathbb{H}^{\mathrm{e}}$ contains the two commuting copies $L(\mathbb{H})$
 
 ## The Two-Sided Operators as the Elementary Tensors
 
-**Theorem.** The map $\tilde q_1\otimes\tilde q_{\mathrm{opp},2}\mapsto \tilde q_1[\,]\tilde q_2=L_{\tilde q_1}R_{\tilde q_2}$ is an $\mathbb{R}$-linear bijection from the $16$-dimensional tensor product onto the two-sided operators, with tensor rank the minimal number of sandwiches.
+**Theorem.** The map $\tilde q_1\otimes\tilde q_{\mathrm{opp},2}\mapsto \tilde q_1[\,]\tilde q_2=L_{\tilde q_1}R_{\tilde q_2}$ is an $\mathbb{R}$-linear bijection from the $16$-dimensional tensor product onto the two-sided operators, with tensor rank the minimal number of two-sided operators.
 
 *Proof.* The map is the representation of the enveloping algebra, an isomorphism; the tensor rank statement is the definition of the rank of a tensor in $\mathbb{H}\otimes\mathbb{H}_{\mathrm{opp}}$, transported by the isomorphism.
 
-**Corollary.** The two-sided operators form the whole of $\operatorname{End}_\mathbb{R}(\mathbb{H})$: every real-linear operator of the four-dimensional space is a sandwich, and the Conway basis is a basis of the operator algebra.
+**Corollary.** The two-sided operators form the whole of $\operatorname{End}_\mathbb{R}(\mathbb{H})$: every real-linear operator of the four-dimensional space is a two-sided operator, and the Conway basis is a basis of the operator algebra.
 
 *Proof.* The theorem and the identification above.
 
 ## The Regular Bimodule
 
-**Theorem.** ${}_\mathbb{H}\mathbb{H}_\mathbb{H}$ is a module over $\mathbb{H}^{\mathrm{e}}$ by the sandwich action; it is the **standard module**, simple, of real dimension four, and the whole of $\mathbb{H}^{\mathrm{e}}$ acts faithfully on it.
+**Theorem.** ${}_\mathbb{H}\mathbb{H}_\mathbb{H}$ is a module over $\mathbb{H}^{\mathrm{e}}$ by the two-sided action; it is the **standard module**, simple, of real dimension four, and the whole of $\mathbb{H}^{\mathrm{e}}$ acts faithfully on it.
 
-*Proof.* The compatibility of the two actions is associativity, as in the sandwich theorem; faithfulness is injectivity of the representation, that is the identification. Simplicity and the module theory are *Modules over the Quaternion Algebra*, above this article in this category.
+*Proof.* The compatibility of the two actions is associativity, as in the two-sided theorem; faithfulness is injectivity of the representation, that is the identification. Simplicity and the module theory are *Modules over the Quaternion Algebra*, above this article in this category.
 
 **Corollary.** The enveloping algebra is the endomorphism algebra of its own standard module: $\mathbb{H}^{\mathrm{e}}=\operatorname{End}_\mathbb{R}({}_\mathbb{H}\mathbb{H}_\mathbb{H})$, and the centre of $\mathbb{H}^{\mathrm{e}}$ is the scalars acting by $L_{\lambda e_t}R_{\lambda e_t}$, a one-dimensional space.
 
-*Proof.* The identification with the endomorphisms; an operator commuting with all sandwiches is a scalar, since it must equal both a left and a right multiplication, and only the scalars are central.
+*Proof.* The identification with the endomorphisms; an operator commuting with all two-sided operators is a scalar, since it must equal both a left and a right multiplication, and only the scalars are central.
 
 ## Comparison with the Complex Case
 
@@ -90,21 +90,21 @@ The two constructions differ only in the coefficient field: over $\mathbb{R}$ th
 
 ## Summary
 
-The enveloping algebra $\mathbb{H}^{\mathrm{e}}=\mathbb{H}\otimes_\mathbb{R}\mathbb{H}_{\mathrm{opp}}$ has dimension $16$ and is isomorphic to the real-linear endomorphisms of $\mathbb{H}$ by the sandwich action $\tilde q_1\otimes\tilde q_{\mathrm{opp},2}\mapsto(\tilde q\mapsto\tilde q_1\tilde q\tilde q_2)$. Its Conway basis $e_n[\,]e_m$ obeys $(e_a[\,]e_b)(e_c[\,]e_d)=(e_ae_c)[\,](e_de_b)$, with structure constants read from the basis products; the one-sided operators are the edge rows $L_{e_n}=e_n[\,]e_t$ and $R_{e_m}=e_t[\,]e_m$; the left and right multiplications are two commuting copies whose product spans the algebra; and the two-sided operators are the elementary tensors, so that every real-linear operator is a sandwich. The regular bimodule is the standard simple module over $\mathbb{H}^{\mathrm{e}}$, faithful and of dimension four; over the complex case the same construction gives $M_4(\mathbb{C})$ and a standard module that is the algebra itself, of complex dimension four.
+The enveloping algebra $\mathbb{H}^{\mathrm{e}}=\mathbb{H}\otimes_\mathbb{R}\mathbb{H}_{\mathrm{opp}}$ has dimension $16$ and is isomorphic to the real-linear endomorphisms of $\mathbb{H}$ by the two-sided action $\tilde q_1\otimes\tilde q_{\mathrm{opp},2}\mapsto(\tilde q\mapsto\tilde q_1\tilde q\tilde q_2)$. Its Conway basis $e_n[\,]e_m$ obeys $(e_a[\,]e_b)(e_c[\,]e_d)=(e_ae_c)[\,](e_de_b)$, with structure constants read from the basis products; the one-sided operators are the edge rows $L_{e_n}=e_n[\,]e_t$ and $R_{e_m}=e_t[\,]e_m$; the left and right multiplications are two commuting copies whose product spans the algebra; and the two-sided operators are the elementary tensors, so that every real-linear operator is a two-sided operator. The regular bimodule is the standard simple module over $\mathbb{H}^{\mathrm{e}}$, faithful and of dimension four; over the complex case the same construction gives $M_4(\mathbb{C})$ and a standard module that is the algebra itself, of complex dimension four.
 
 ## Summary of Notation
 
 | Symbol | Meaning |
 |---|---|
 | $\mathbb{H}^{\mathrm{e}}=\mathbb{H}\otimes_\mathbb{R}\mathbb{H}_{\mathrm{opp}}$ | Enveloping algebra |
-| $\tilde q_1[\,]\tilde q_2$ | The sandwich $\tilde q\mapsto\tilde q_1\tilde q\tilde q_2$ |
+| $\tilde q_1[\,]\tilde q_2$ | The two-sided operator $\tilde q\mapsto\tilde q_1\tilde q\tilde q_2$ |
 | $L_{\tilde q_1},R_{\tilde q_2}$ | Left and right multiplications |
 | $e_n[\,]e_m$ | Conway operator basis, $16$ elements |
 | $\varepsilon(a,c)$, $\oplus$ | Structure constants and index law of the basis products |
 
 ## Further Reading
 
-- John H. Conway and Derek A. Smith, *On Quaternions and Octonions* (A K Peters, 2003), for the $[\,]$ operator notation and the composition of the sandwiches.
+- John H. Conway and Derek A. Smith, *On Quaternions and Octonions* (A K Peters, 2003), for the $[\,]$ operator notation and the composition of the two-sided operators.
 - Richard S. Pierce, *Associative Algebras* (Springer, 1982), for the enveloping algebra and its identification with the endomorphisms.
 - T. Y. Lam, *A First Course in Noncommutative Rings* (Springer, 2nd ed. 2001), for the double centraliser theorem and the standard module.
 - Israel Nathan Herstein, *Noncommutative Rings* (Mathematical Association of America, 1968), for the centraliser and the tensor product of an algebra with its opposite.

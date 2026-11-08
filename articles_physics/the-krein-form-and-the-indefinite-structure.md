@@ -105,13 +105,13 @@ $$
 
 with multiplicities. The eigenvalues on the unit circle are paired by conjugation and the eigenvalues off it occur in inverted pairs. A Krein isometry is therefore not confined to the unit circle: the boosts leave it, and that is the group-level form of the non-compactness.
 
-The compact algebraic isometries form a small subgroup. The central phases and the sandwiches by the $*$-unitary elements generate
+The compact algebraic isometries form a small subgroup. The central phases and the two-sided operators with the $*$-unitary elements generate
 
 $$
 \mathrm{U}(1)\times PU(2)\cong\mathrm{U}(1)\times SO(3),
 $$
 
-of real dimension $4$. The phases are the scalar isometries; the $*$-unitary sandwiches are inner automorphisms of the algebra; the two families commute and meet only at the identity. The compact subgroup is far from the whole group, whose dimension is $16$. The norm-one sandwiches are isometries too; the non-$*$-unitary ones are not inner automorphisms, and the slice forms the non-compact proper orthochronous Lorentz group $\mathrm{PSL}(2,\mathbb{C})\cong SO^{+}(1,3)$.
+of real dimension $4$. The phases are the scalar isometries; the $*$-unitary two-sided operators are inner automorphisms of the algebra; the two families commute and meet only at the identity. The compact subgroup is far from the whole group, whose dimension is $16$. The norm-one two-sided operators are isometries too; the non-$*$-unitary ones are not inner automorphisms, and the slice forms the non-compact proper orthochronous Lorentz group $\mathrm{PSL}(2,\mathbb{C})\cong SO^{+}(1,3)$.
 
 ## The Level Sets
 
@@ -249,7 +249,7 @@ The isometry group is not the Lorentz group. The Lorentz group is the subgroup t
 - The fundamental symmetry $J={}^{\natural}$ relates it to the definite Born form by $\langle P,Q\rangle_{\natural*}=\langle P,JQ\rangle_{*}$; the indefinite structure is the definite one twisted by $J$.
 - The isometry group is $\mathrm{U}(1,3)$, of real dimension $16$, with centre $\mathrm{U}(1)$ and maximal compact $\mathrm{U}(1)\times\mathrm{U}(3)$.
 - The boosts are one-parameter subgroups with spectrum $\{e^{t},e^{-t},1,1\}$; the spectrum of a general Krein isometry is invariant under $\lambda\mapsto1/\bar\lambda$.
-- The compact algebraic isometries form $\mathrm{U}(1)\times PU(2)\cong\mathrm{U}(1)\times SO(3)$, of dimension $4$; the norm-one sandwiches form the non-compact proper orthochronous Lorentz group.
+- The compact algebraic isometries form $\mathrm{U}(1)\times PU(2)\cong\mathrm{U}(1)\times SO(3)$, of dimension $4$; the norm-one two-sided operators form the non-compact proper orthochronous Lorentz group.
 - The nonzero level sets are $S^1\times\mathbb{R}^6$ and $S^5\times\mathbb{R}^2$; the punctured null set is $S^1\times S^5\times\mathbb{R}_{>0}$, and the null set is its cone with apex at the origin; all have real dimension $7$.
 - The positive lines form the complex hyperbolic ball $\mathbb{CH}^3=\mathrm{U}(1,3)/(\mathrm{U}(1)\times\mathrm{U}(3))$, with boundary $S^5$; the Lorentzian slice gives the real hyperbolic space $H^3$.
 - The $J$-contractions form an open set invariant under the isometries, not the ball; the model contraction is $\pi_y=\tfrac12(\mathrm{id}-J)$ with defect $\pi_x$.

@@ -2,13 +2,13 @@
 
 ## Introduction
 
-One biquaternion can be written in five standard matrix-shaped ways, and the five divide into two kinds. The **element representations** answer what the element is: the four-vector of complex coefficients, the $2\times2$ complex matrix $\mathsf{M}_2(\tilde Q)$, and the $4\times4$ left regular matrix $\mathsf{M}_{4L}(\tilde Q)$. The **operator representations** answer what the element does: the $2\times2$ congruence $X\mapsto \mathsf{M}_2(\tilde Q)X\mathsf{M}_2(\tilde Q)^{\dagger}$ and the $4\times4$ sandwich. The first kind is linear in the element; the second is quadratic. That difference is the whole content of the article.
+One biquaternion can be written in five standard matrix-shaped ways, and the five divide into two kinds. The **element representations** answer what the element is: the four-vector of complex coefficients, the $2\times2$ complex matrix $\mathsf{M}_2(\tilde Q)$, and the $4\times4$ left regular matrix $\mathsf{M}_{4L}(\tilde Q)$. The **operator representations** answer what the element does: the $2\times2$ congruence $X\mapsto \mathsf{M}_2(\tilde Q)X\mathsf{M}_2(\tilde Q)^{\dagger}$ and the $4\times4$ two-sided operator. The first kind is linear in the element; the second is quadratic. That difference is the whole content of the article.
 
-The physical stake is a distinction that is easy to lose. A state is carried by an element representation, a transformation by an operator representation. A spinor is a coordinate on a Peirce carrier, which in the $2\times2$ matrix model is a two-component column on which the $2\times2$ matrix acts; a four-vector is an element of the material sector on which the sandwich acts. Reading the determinant of the regular matrix as the norm, or the sandwich as a linear map of its parameter, or the doubled regular picture as two particles, are the three standard errors that the distinction prevents.
+The physical stake is a distinction that is easy to lose. A state is carried by an element representation, a transformation by an operator representation. A spinor is a coordinate on a Peirce carrier, which in the $2\times2$ matrix model is a two-component column on which the $2\times2$ matrix acts; a four-vector is an element of the material sector on which the two-sided operator acts. Reading the determinant of the regular matrix as the norm, or the two-sided operator as a linear map of its parameter, or the doubled regular picture as two particles, are the three standard errors that the distinction prevents.
 
 The article is a reader and owns no new theorem. Each result is stated in a sentence, the mathematics article that proves it is linked, and the physical reading is given with its boundary. It is the entry of the *Element and Operator Representations* group that fixes the vocabulary the other representation articles use.
 
-The operator side is stated once, here. An element acts in three ways: left multiplication and right multiplication, which carry an element with one side fixed, and the sandwich, which acts on both sides and carries a frame. The composition laws, the adjoint for the plain form, the two-sided pair and the Peirce decomposition are the grammar the rest of the category uses. The matrix pictures of the three actions are the subject of the operator sections; the operator calculus itself is not repeated in a separate article.
+The operator side is stated once, here. An element acts in three ways: left multiplication and right multiplication, which carry an element with one side fixed, and the two-sided operator, which acts on both sides and carries a frame. The composition laws, the adjoint for the plain form, the two-sided pair and the Peirce decomposition are the grammar the rest of the category uses. The matrix pictures of the three actions are the subject of the operator sections; the operator calculus itself is not repeated in a separate article.
 
 ## The Results It Uses
 
@@ -19,10 +19,10 @@ The operator side is stated once, here. An element acts in three ways: left mult
 | The left regular matrix, its determinant $N^2$, its trace $4Q_t$ and its block decomposition | [The $M_4(\mathbb{C})$ Axis-Free Representation](../articles_maths/m4c-axis-free-representation.html) |
 | The right regular matrix and its relation to the left one | [The $M_4(\mathbb{C})$ Axis-Free Representation](../articles_maths/m4c-axis-free-representation.html) |
 | The congruence, the two-sided maps and the enveloping operator algebra | [The Enveloping Operator Algebra of the Biquaternion Algebra and the Bi-module Structure](../articles_maths/the-enveloping-operator-algebra-of-the-biquaternion-algebra-and-the-bi-module-structure.html) |
-| The sandwich, its spectrum, determinant, trace and rank | [Hermitian pair of operators acting as 2 side](../articles_maths/hermitian-pair-of-operators-acting-as-2-side.html), for the matrix, the determinant, the trace and the rank; [Two-Sided Operator and the Polar Decomposition of an N-Regular, Spectrally Regular Biquaternion](../articles_maths/the-sandwich-of-an-n-regular-spectrally-regular-biquaternion.html), §*The Spectrum of the Sandwich*, for the spectrum, and §*The Vanishing of the Modulus*, for the rank |
+| The two-sided operator, its spectrum, determinant, trace and rank | [The Hermitian Pair of Operators Acting on Two Sides](../articles_maths/the-hermitian-pair-of-operators-acting-on-two-sides.html), for the matrix, the determinant, the trace and the rank; [Two-Sided Operator and the Polar Decomposition of an N-Regular, Spectrally Regular Biquaternion](../articles_maths/hermitian-pair-of-n-regular-spectrally-regular-operators-acting-on-two-sides.html), §*The Spectrum of the Two-Sided Operator*, for the spectrum, and §*The Vanishing of the Modulus*, for the rank |
 | The module structure and the Hilbert structure of the spinor space | [Modules over the Biquaternion Algebra](../articles_maths/the-category-of-modules.html) |
-| The left and right multiplications, their kernels, their images and their commutant | [Operators Acting 1 Side](../articles_maths/operators-acting-1-side.html) |
-| The two-sided operators, their types and their composition | [Operators Acting 2 Side](../articles_maths/operators-acting-2-side.html) |
+| The left and right multiplications, their kernels, their images and their commutant | [Operators Acting on One Side](../articles_maths/operators-acting-on-one-side.html) |
+| The two-sided operators, their types and their composition | [Operators Acting on Two Sides](../articles_maths/operators-acting-on-two-sides.html) |
 | The transpose, association and the swap of the sides | [Association and the Transpose on the Quaternion Algebra](../articles_maths/association-and-the-transpose-on-the-quaternion-algebra.html) |
 | The monoid of acting maps and the enveloping algebra | [The Enveloping Operator Algebra of the Biquaternion Algebra and the Bi-module Structure](../articles_maths/the-enveloping-operator-algebra-of-the-biquaternion-algebra-and-the-bi-module-structure.html) |
 | The rotor action on the two sectors and the double cover | [Biquaternion Rotations and Lorentz Transformations](../articles_maths/biquaternion-rotations-and-lorentz-transformations.html) |
@@ -40,7 +40,7 @@ The five pictures are five images of the same eight real numbers. The table reco
 | $2\times2$ operator | $X\mapsto M X M^{\dagger}$ | $M_2(\mathbb{C})$ | quadratic | the rank, the positivity and the collapse |
 | $4\times4$ operator | $X\mapsto \tilde Q X\tilde Q^{*}$ | $\mathbb{B}$ | quadratic | the spectrum, the determinant and the rank |
 
-A sixth object is the **four-vector operator**, the sandwich written on the material sector. It is a coordinate shadow of the $2\times2$ congruence and is treated with the operators below.
+A sixth object is the **four-vector operator**, the two-sided operator written on the material sector. It is a coordinate shadow of the $2\times2$ congruence and is treated with the operators below.
 
 The first three pictures are linear in $\tilde Q$: doubling the element doubles the matrix. The last two are quadratic: doubling the element multiplies the operator by four, because $\tilde Q X\tilde Q^{*}$ has two slots. The element picture is also basis-dependent: the column changes with the choice of basis while the matrix changes by similarity, and the operator picture is the invariant object behind both.
 
@@ -131,9 +131,9 @@ so it is not the transpose of the left matrix, which is $I_2\otimes\mathsf{M}_2(
 
 ## The Operator Representations
 
-### The Sandwich
+### The Two-Sided Operator
 
-The one operator that both matrix pictures realize is the sandwich
+The one operator that both matrix pictures realize is the two-sided operator
 
 $$
 \operatorname{H}_{\tilde Q}(X)=\tilde Q X\tilde Q^{*}.
@@ -145,7 +145,7 @@ $$
 \boxed{\;\operatorname{H}_{\tilde Q}=\mathsf{M}_{4L}(\tilde Q)\,\mathsf{M}_{4R}(\tilde Q^{*})\;}.
 $$
 
-The sandwich is multiplicative in its parameter, $\operatorname{H}_{\tilde Q}\operatorname{H}_{\tilde U}=\operatorname{H}_{\tilde Q\tilde U}$, but it is not linear, and on the unit group it is not faithful: $\operatorname{H}_{\lambda\tilde Q}=|\lambda|^2\operatorname{H}_{\tilde Q}$, so every central phase of modulus one gives the same operator. It is a quadratic map that descends to a faithful representation of the unit group modulo its central phase circle, not a linear one.
+The two-sided operator is multiplicative in its parameter, $\operatorname{H}_{\tilde Q}\operatorname{H}_{\tilde U}=\operatorname{H}_{\tilde Q\tilde U}$, but it is not linear, and on the unit group it is not faithful: $\operatorname{H}_{\lambda\tilde Q}=|\lambda|^2\operatorname{H}_{\tilde Q}$, so every central phase of modulus one gives the same operator. It is a quadratic map that descends to a faithful representation of the unit group modulo its central phase circle, not a linear one.
 
 ### The $2\times2$ Congruence
 
@@ -161,7 +161,7 @@ The congruence is a completely positive map with a single Kraus operator. It is 
 
 ### The $4\times4$ Operator
 
-On the algebra the same sandwich is the matrix $\operatorname{H}_{\tilde Q}=\mathsf{M}_{4L}(\tilde Q)\mathsf{M}_{4R}(\tilde Q^{*})$. If $\mathsf{M}_2(\tilde Q)$ has eigenvalues $\lambda_1,\lambda_2$, the operator has the four eigenvalues
+On the algebra the same two-sided operator is the matrix $\operatorname{H}_{\tilde Q}=\mathsf{M}_{4L}(\tilde Q)\mathsf{M}_{4R}(\tilde Q^{*})$. If $\mathsf{M}_2(\tilde Q)$ has eigenvalues $\lambda_1,\lambda_2$, the operator has the four eigenvalues
 
 $$
 \lambda_1\bar\lambda_1,\quad \lambda_1\bar\lambda_2,\quad \lambda_2\bar\lambda_1,\quad \lambda_2\bar\lambda_2,
@@ -179,7 +179,7 @@ The operator's trace and determinant remember only the time coordinate and the m
 
 ### The Four-Vector Operator
 
-On the material sector the sandwich is the frame action
+On the material sector the two-sided operator is the frame action
 
 $$
 \operatorname{H}_{\tilde Q}(\tilde W)=\tilde Q\tilde W\tilde Q^{*}, \qquad \tilde W\in\mathbb{B}_{\Phi}.
@@ -207,7 +207,7 @@ $$
 
 All three are $\mathbb{C}$-linear in the argument $X$. The assignments are injective in the parameter, but not all are injective as assignments of operators: $L_{\tilde Q}=L_{\tilde U}$ iff $\tilde Q=\tilde U$, while $\operatorname{H}_{\tilde Q}=\operatorname{H}_{\tilde U}$ can hold for different parameters, because a central phase cancels.
 
-The distinction is between **carriage** and **frame change**. A one-sided map has a nontrivial kernel in its argument exactly when the parameter is not a unit; it drags an object without compensating the other side, and it changes the scale and in general the sector of what it acts on. The sandwich acts on both sides at once, preserves the two sectors, and is the algebraic shape of a change of frame. The physical Lorentz transformation is a sandwich, not a multiplication. The mass term is a right multiplication, and that is why it can move between the two chiralities while a left multiplication cannot.
+The distinction is between **carriage** and **frame change**. A one-sided map has a nontrivial kernel in its argument exactly when the parameter is not a unit; it drags an object without compensating the other side, and it changes the scale and in general the sector of what it acts on. The two-sided operator acts on both sides at once, preserves the two sectors, and is the algebraic shape of a change of frame. The physical Lorentz transformation is a two-sided operator, not a multiplication. The mass term is a right multiplication, and that is why it can move between the two chiralities while a left multiplication cannot.
 
 ### The Composition Laws
 
@@ -225,13 +225,13 @@ $$
 \bigl(L_{\tilde Q_1}R_{\tilde Q_2}\bigr)\bigl(L_{\tilde Q_3}R_{\tilde Q_4}\bigr)=L_{\tilde Q_1\tilde Q_3}R_{\tilde Q_4\tilde Q_2},
 $$
 
-and the sandwich is the special case in which the right parameter is the Hermitian conjugate of the left:
+and the two-sided operator is the special case in which the right parameter is the Hermitian conjugate of the left:
 
 $$
 \operatorname{H}_{\tilde Q}\operatorname{H}_{\tilde U}=\operatorname{H}_{\tilde Q\tilde U}.
 $$
 
-The sandwich is multiplicative in its parameter but not linear: $\operatorname{H}_{\lambda\tilde Q}=|\lambda|^2\operatorname{H}_{\tilde Q}$, and $\operatorname{H}_{\tilde Q+\tilde U}\neq\operatorname{H}_{\tilde Q}+\operatorname{H}_{\tilde U}$ in general. It is a quadratic map that descends to a representation of the unit group modulo its central phase circle. The one-sided families generate the full endomorphism algebra; the sandwich alone does not, being an eight-real-parameter family of maps rather than a sixteen-real-parameter algebra.
+The two-sided operator is multiplicative in its parameter but not linear: $\operatorname{H}_{\lambda\tilde Q}=|\lambda|^2\operatorname{H}_{\tilde Q}$, and $\operatorname{H}_{\tilde Q+\tilde U}\neq\operatorname{H}_{\tilde Q}+\operatorname{H}_{\tilde U}$ in general. It is a quadratic map that descends to a representation of the unit group modulo its central phase circle. The one-sided families generate the full endomorphism algebra; the two-sided operator alone does not, being an eight-real-parameter family of maps rather than a sixteen-real-parameter algebra.
 
 ### The Adjoint and the Swap
 
@@ -263,9 +263,9 @@ $$
 
 The identity is the pair $(\lambda e_t,\lambda^{-1}e_t)$. A frame change is specified by an operand and its adjoint operand, and a common central phase cancels between them. The pair, not either member, is the physical object. The operator is invertible exactly when both parameters are units; if either is a zero divisor, the kernel is nontrivial. This is the operator-level form of the cone: the non-invertible two-sided maps are exactly those whose pair meets it.
 
-### The Sandwich: Sectors, Congruence, Self-Adjointness
+### The Two-Sided Operator: Sectors, Congruence, Self-Adjointness
 
-The sandwich has three properties that the general two-sided operator does not.
+The two-sided operator has three properties that the general two-sided operator does not.
 
 **It preserves the two sectors.** For $X\in\mathbb{B}_{\Psi}\cup\mathbb{B}_{\Phi}$,
 
@@ -273,7 +273,7 @@ $$
 (\tilde QX\tilde Q^{*})^{*}=\tilde QX^{*}\tilde Q^{*}=\pm\,\tilde QX\tilde Q^{*},
 $$
 
-so the image lies in the same sector. This is why the Lorentz transformation of a four-vector is a sandwich and not a general two-sided map.
+so the image lies in the same sector. This is why the Lorentz transformation of a four-vector is a two-sided operator and not a general two-sided map.
 
 **It is a congruence.** In the matrix picture it is $X\mapsto MXM^{\dagger}$, which preserves rank off the cone, scales the determinant by $|\det M|^2=|N|^2$, and collapses to a rank-one line on the cone.
 
@@ -283,9 +283,9 @@ $$
 \bigl(\operatorname{H}_{\tilde Q}\bigr)^{\dagger}=\operatorname{H}_{\tilde Q^{*}},
 $$
 
-so the sandwich is self-adjoint iff $\tilde Q^{*}=\lambda\tilde Q$ with $|\lambda|=1$, equivalently iff a central-phase multiple of $\tilde Q$ lies in $\mathbb{B}_{\Psi}$ or $\mathbb{B}_{\Phi}$. The criterion is algebraic; it does not by itself make the self-adjoint sandwiches observables. A Lorentz boost is a Hermitian parameter, hence gives a self-adjoint sandwich, and it is a transformation, not an observable.
+so the two-sided operator is self-adjoint iff $\tilde Q^{*}=\lambda\tilde Q$ with $|\lambda|=1$, equivalently iff a central-phase multiple of $\tilde Q$ lies in $\mathbb{B}_{\Psi}$ or $\mathbb{B}_{\Phi}$. The criterion is algebraic; it does not by itself make the self-adjoint two-sided operators observables. A Lorentz boost is a Hermitian parameter, hence gives a self-adjoint two-sided operator, and it is a transformation, not an observable.
 
-On the $*$-unitary slice $\tilde Q\tilde Q^{*}=e_t$, the sandwich is the inner automorphism $\operatorname{Ad}_{\tilde Q}$: it preserves the product, not only the sector. Off the slice it is a congruence that scales the interval. On the null cone it survives as a rank-one map; the nilpotent and the scaled projection are its two faces.
+On the $*$-unitary slice $\tilde Q\tilde Q^{*}=e_t$, the two-sided operator is the inner automorphism $\operatorname{Ad}_{\tilde Q}$: it preserves the product, not only the sector. Off the slice it is a congruence that scales the interval. On the null cone it survives as a rank-one map; the nilpotent and the scaled projection are its two faces.
 
 ### The Monoid of Acting Maps
 
@@ -325,13 +325,13 @@ $$
 
 so that $R_J$ exchanges the two columns and $R_J^2=\mathrm I$. The element has to be a unit because the mass is a bijection between the columns, one coefficient per chirality in each direction. A nilpotent cannot serve: $\mathsf M_2(\vec\Upsilon_x)=E_{12}$, so $R_{\vec\Upsilon_x}$ has rank two, carries the first column into the second and annihilates the second, and cannot carry a coefficient back. That map is the one-way copy flip, not the mass. In the $4\times4$ picture the mass is the off-diagonal block that the left regular matrix does not have; in the $2\times2$ picture it is the right action that the column picture does not show.
 
-**The central phase.** A central phase is a scalar matrix. It multiplies the element matrix, it multiplies the determinant by $\lambda^2$, and it disappears from the sandwich. The element picture sees the phase; the operator picture does not. This is why the polar word carries the phase and the sandwich does not.
+**The central phase.** A central phase is a scalar matrix. It multiplies the element matrix, it multiplies the determinant by $\lambda^2$, and it disappears from the two-sided operator. The element picture sees the phase; the operator picture does not. This is why the polar word carries the phase and the two-sided operator does not.
 
 **The degree of the determinant.** The $2\times2$ determinant is $N$, the $4\times4$ determinant is $N^2$, and the operator determinant is $|N|^4$. Only the zero sets agree. A computation that reads a determinant must say which picture it is in.
 
 **The trace factor.** The trace of the $2\times2$ matrix is $2Q_t$, the trace of the regular matrix is $4Q_t$, and the trace of the operator is $4|Q_t|^2$. The factor two is the number of columns; the factor four is the dimension of the regular module or the number of matrix units. The factors are bookkeeping, not physics, but they are the bookkeeping in which the factor-of-two errors of the corpus live.
 
-**The three actions.** A left multiplication and a right multiplication carry an element with one side fixed; they are the operators of carriage, and they change the scale and in general the sector of what they act on. The sandwich acts on both sides and carries a frame; it preserves the two sectors, and the physical Lorentz transformation is a sandwich, not a multiplication. The mass term is a right multiplication, which is why it can move between the two chiralities while a left multiplication cannot.
+**The three actions.** A left multiplication and a right multiplication carry an element with one side fixed; they are the operators of carriage, and they change the scale and in general the sector of what they act on. The two-sided operator acts on both sides and carries a frame; it preserves the two sectors, and the physical Lorentz transformation is a two-sided operator, not a multiplication. The mass term is a right multiplication, which is why it can move between the two chiralities while a left multiplication cannot.
 
 **The plain adjoint swaps the sides.** The adjoint for $\langle X,Y\rangle=\operatorname{Sc}(XY)$ is the associate, $L_{\tilde Q}^{\approx}=R_{\tilde Q}$. It does not conjugate the parameter. The form measures the symmetric data; the orientation of a process is in the commutator, not in the form. Self-adjointness for the plain form is not hermiticity, and the observables are not the self-adjoint elements of this family.
 
@@ -343,7 +343,7 @@ so that $R_J$ exchanges the two columns and $R_J^2=\mathrm I$. The element has t
 
 ## The Correspondence Table
 
-| Named object | Four-vector | $2\times2$ element | $4\times4$ left regular | Sandwich operator |
+| Named object | Four-vector | $2\times2$ element | $4\times4$ left regular | Two-Sided Operator operator |
 | --- | --- | --- | --- | --- |
 | The element | $Q\in\mathbb{C}^4$ | $M\in M_2(\mathbb{C})$ | $M_{4L}\in M_4(\mathbb{C})$ | $\operatorname{H}_{\tilde Q}\in\operatorname{End}\mathbb{B}$ |
 | Identity | $(1,0,0,0)$ | $\mathrm{I}_2$ | $\mathrm{I}_4$ | $\mathrm{id}$ |
@@ -371,22 +371,22 @@ The matrix pictures are representations, not the algebra's ontology. The algebra
 
 ## Summary
 
-- One element has three element pictures — the four-vector, the $2\times2$ matrix and the $4\times4$ left regular matrix — and two operator pictures — the $2\times2$ congruence and the $4\times4$ sandwich.
-- The element pictures are linear in the element; the operator pictures are quadratic, because the sandwich has two slots.
+- One element has three element pictures — the four-vector, the $2\times2$ matrix and the $4\times4$ left regular matrix — and two operator pictures — the $2\times2$ congruence and the $4\times4$ two-sided operator.
+- The element pictures are linear in the element; the operator pictures are quadratic, because the two-sided operator has two slots.
 - The four coefficients carry one material and one informational coordinate each; the scalar coefficient carries the two times.
 - The $2\times2$ matrix has trace $2Q_t$ and determinant $N$; it is the spinor picture and the smallest carrier of the state.
 - The $4\times4$ left regular matrix has determinant $N^2$ and trace $4Q_t$; it is the spinor picture taken twice, with the two blocks the two column indices.
 - Left multiplication preserves the column indices; right multiplication moves between them, and the mass is the right multiplication by the column-swap unit $i\vec e_x$, not by a nilpotent.
-- The sandwich is multiplicative in its parameter, $\operatorname{H}_{\tilde Q}\operatorname{H}_{\tilde U}=\operatorname{H}_{\tilde Q\tilde U}$, but quadratic and phase-blind; as an assignment it has kernel the central phase circle on the unit group.
+- The two-sided operator is multiplicative in its parameter, $\operatorname{H}_{\tilde Q}\operatorname{H}_{\tilde U}=\operatorname{H}_{\tilde Q\tilde U}$, but quadratic and phase-blind; as an assignment it has kernel the central phase circle on the unit group.
 - The $2\times2$ congruence preserves rank and scales the determinant by $|N|^2$ off the cone; on the cone it collapses to a rank-one line.
 - The $4\times4$ operator has eigenvalues $\lambda_i\bar\lambda_j$, determinant $|N|^4$, trace $4|Q_t|^2$ and rank $(\operatorname{rank}\mathsf{M}_2)^2$.
 - The four-vector operator returns the Euclidean square on the identity, not the interval; the positive weight and the spacetime length are different readings of the same element.
 - The determinant's degree and the trace's factor are the bookkeeping in which the standard factor-of-two errors live.
-- An element acts in three ways: left multiplication, right multiplication and the sandwich. The one-sided maps are linear and carry an element; the sandwich is quadratic and carries a frame.
-- The one-sided composition laws are $L_{\tilde Q_1}L_{\tilde Q_2}=L_{\tilde Q_1\tilde Q_2}$ and $R_{\tilde Q_1}R_{\tilde Q_2}=R_{\tilde Q_2\tilde Q_1}$; the two families commute. The sandwich is multiplicative, $\operatorname{H}_{\tilde Q}\operatorname{H}_{\tilde U}=\operatorname{H}_{\tilde Q\tilde U}$, but not linear.
+- An element acts in three ways: left multiplication, right multiplication and the two-sided operator. The one-sided maps are linear and carry an element; the two-sided operator is quadratic and carries a frame.
+- The one-sided composition laws are $L_{\tilde Q_1}L_{\tilde Q_2}=L_{\tilde Q_1\tilde Q_2}$ and $R_{\tilde Q_1}R_{\tilde Q_2}=R_{\tilde Q_2\tilde Q_1}$; the two families commute. The two-sided operator is multiplicative, $\operatorname{H}_{\tilde Q}\operatorname{H}_{\tilde U}=\operatorname{H}_{\tilde Q\tilde U}$, but not linear.
 - The adjoint for the plain form swaps the sides and leaves the parameter alone; self-adjoint one-sided operators are the central multiplications. The orientation is in the commutator, not in the form.
 - A two-sided operator is a pair defined up to a common central factor; it is invertible exactly when both parameters are units.
-- The sandwich preserves the two sectors, is a congruence, and is self-adjoint for the Hermitian form exactly when a central-phase multiple of its parameter lies in $\mathbb{B}_{\Psi}$ or $\mathbb{B}_{\Phi}$. On the $*$-unitary slice it is an inner automorphism.
+- The two-sided operator preserves the two sectors, is a congruence, and is self-adjoint for the Hermitian form exactly when a central-phase multiple of its parameter lies in $\mathbb{B}_{\Psi}$ or $\mathbb{B}_{\Phi}$. On the $*$-unitary slice it is an inner automorphism.
 - The acting maps form a monoid; the reversible maps are the units off the cone, the states are the idempotents, and the cone is the boundary between them.
 - The Peirce decomposition gives the four corners: populations on the diagonal, coherences off it.
 - No picture is more fundamental than another; each is a choice of what to make visible, and the correspondence table is the translation between them.
@@ -402,7 +402,7 @@ The matrix pictures are representations, not the algebra's ontology. The algebra
 | $\mathsf{M}_2(\tilde Q)$ | the $2\times2$ matrix, $\operatorname{Tr}=2Q_t$, $\det=N$ |
 | $\mathsf{M}_{4L}(\tilde Q)$ | the left regular matrix, $\operatorname{Tr}=4Q_t$, $\det=N^2$ |
 | $\mathsf{M}_{4R}(\tilde Q)$ | the right regular matrix |
-| $\operatorname{H}_{\tilde Q}(X)=\tilde Q X\tilde Q^{*}$ | the sandwich, the two-sided operator |
+| $\operatorname{H}_{\tilde Q}(X)=\tilde Q X\tilde Q^{*}$ | the Hermitian pair, the two-sided operator |
 | $L_{\tilde Q}(X)=\tilde Q X$, $R_{\tilde Q}(X)=X\tilde Q$ | the left and right multiplications |
 | $T^{\approx}$ | the associate, the adjoint for $\langle X,Y\rangle=\operatorname{Sc}(XY)$ |
 | $T^{\dagger}$ | the Hermitian adjoint, the adjoint for $\langle X,Y\rangle_{*}=\operatorname{Sc}(X^{*}Y)$ |
@@ -416,9 +416,9 @@ The matrix pictures are representations, not the algebra's ontology. The algebra
 - [The $M_4(\mathbb{C})$ Axis-Free Representation](../articles_maths/m4c-axis-free-representation.html), for the isomorphism, the trace, the determinant and the ideals.
 - [The $M_4(\mathbb{C})$ Axis-Free Representation](../articles_maths/m4c-axis-free-representation.html), for the regular matrix, its block form and the right matrix.
 - [The Enveloping Operator Algebra of the Biquaternion Algebra and the Bi-module Structure](../articles_maths/the-enveloping-operator-algebra-of-the-biquaternion-algebra-and-the-bi-module-structure.html), for the one-sided and two-sided maps, the congruence and the enveloping algebra.
-- [Operators Acting 1 Side](../articles_maths/operators-acting-1-side.html), for the two kernels, the two images, the rank, the exchange and the commutant.
-- [Operators Acting 2 Side](../articles_maths/operators-acting-2-side.html), for the pair structure and the type criteria.
+- [Operators Acting on One Side](../articles_maths/operators-acting-on-one-side.html), for the two kernels, the two images, the rank, the exchange and the commutant.
+- [Operators Acting on Two Sides](../articles_maths/operators-acting-on-two-sides.html), for the pair structure and the type criteria.
 - [Association and the Transpose on the Quaternion Algebra](../articles_maths/association-and-the-transpose-on-the-quaternion-algebra.html), for the adjoint that swaps the sides.
-- [Two-Sided Operator and the Polar Decomposition of an N-Regular, Spectrally Regular Biquaternion](../articles_maths/the-sandwich-of-an-n-regular-spectrally-regular-biquaternion.html), for the sandwich on the material sector, the four-vector image and the null cone.
+- [Two-Sided Operator and the Polar Decomposition of an N-Regular, Spectrally Regular Biquaternion](../articles_maths/hermitian-pair-of-n-regular-spectrally-regular-operators-acting-on-two-sides.html), for the two-sided operator on the material sector, the four-vector image and the null cone.
 - [Spin and the Three Elementary Carriers](spin-and-the-three-elementary-carriers.html), for the module and Hilbert structures, the second column and the mass coupling.
 - [The Material Sector: Four-Vectors, Interval and Lorentz Action](the-material-sector-four-vectors-interval-and-lorentz-action.html) and [The Informational Sector: States, Observables and Probability](the-informational-sector-states-observables-and-probability.html), for the two sectors read at length.

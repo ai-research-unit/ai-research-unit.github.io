@@ -2,7 +2,7 @@
 
 ## Introduction
 
-The informational sector is the Hermitian subspace $\mathbb{B}_{\Psi}$. It is the fixed space of the Hermitian conjugation, the half of the algebra in which the scalar coefficient is real and the three vector coefficients are imaginary. Its mathematics is the mathematics of a two-state quantum system: the Hermitian elements are observables, the positive elements normalised by $\langle\tilde{Ϛ}_{\Psi},e_t\rangle_{*}=\tfrac12\langle e_t\rangle_{*}$ are states, the Hermitian idempotents are pure states, the Hermitian form is the Born pairing, and the sandwich by a matrix-unitary element is the evolution.
+The informational sector is the Hermitian subspace $\mathbb{B}_{\Psi}$. It is the fixed space of the Hermitian conjugation, the half of the algebra in which the scalar coefficient is real and the three vector coefficients are imaginary. Its mathematics is the mathematics of a two-state quantum system: the Hermitian elements are observables, the positive elements normalised by $\langle\tilde{Ϛ}_{\Psi},e_t\rangle_{*}=\tfrac12\langle e_t\rangle_{*}$ are states, the Hermitian idempotents are pure states, the Hermitian form is the Born pairing, and the two-sided operator with a matrix-unitary element is the evolution.
 
 That mathematics is established algebra. What is not established is whether the sector is a distinct sector of the physical world in the sense in which the material sector is spacetime. The article states the hypothesis, develops the algebraic interpretation in full, and marks the boundary at the point where the algebra ends and the physics begins.
 
@@ -17,7 +17,7 @@ The results used are these.
 | The norm, the spectrum and the positive cone | [The Squares and the Positive Cone of the Biquaternion Sesqualgebra](../articles_maths/the-squares-and-the-positive-cone-of-the-biquaternion-sesqualgebra.html) |
 | The eigenvalue decomposition, the normality criterion and the non-normal pair | [The Biquaternion Eigenvalue Decomposition](../articles_maths/the-biquaternion-eigenvalue-decomposition.html) |
 | The four forms and their restrictions | [The Four Forms and the Four Algebraic Norms over the Biquaternion Algebra](../articles_maths/the-four-forms-and-the-four-algebraic-norms-over-the-biquaternion-algebra.html), [Remarkable Subspaces and the Four General Products, Forms and Norms](../articles_maths/remarkable-subspaces-and-the-four-general-products-forms-and-norms.html) |
-| The action on the material sector and the sandwich | [Two-Sided Operators on the General Plain Sesqualgebra](../articles_maths/two-sided-operators-on-the-general-plain-sesqualgebra.html) |
+| The action on the material sector and the two-sided operator | [Two-Sided Operators on the General Plain Sesqualgebra](../articles_maths/two-sided-operators-on-the-general-plain-sesqualgebra.html) |
 | The $*$-unitary slice and the matrix-unitary condition | [Unitary Operators of a Sesqualgebra](../articles_maths/the-unitary-operators-of-a-sesqualgebra.html) |
 | The Jordan algebra of the symmetrised product | [Jordan Algebras of Sesqualgebras](../articles_maths/jordan-algebras-of-sesqualgebras.html) |
 | The matrix model and the Hilbert–Schmidt pairing | [$M_2(\mathbb{C})$ Representation : The General Plain Sesqualgebra of Biquaternions](../articles_maths/m2c-representation-the-general-plain-sesqualgebra-of-biquaternions.html) |
@@ -264,9 +264,9 @@ Read physically, the two eigenvalues are the two possible readings of the observ
 
 The two pairings are worth separating. The **orthogonal** pairing is the Born form $\langle\tilde\Pi_\pm,\tilde{Ϛ}_{\Psi}\rangle_{*}$: it uses the Hermitian eigenprojections of a normal element and the Hermitian state, and it is positive on the sector. The **biorthogonal** pairing uses the right and left eigenbases, $\ell_\pm^{\dagger}r_\pm=1$ and $\ell_+^{\dagger}r_-=0$, and the projectors $P_\pm=r_\pm\ell_\pm^{\dagger}$, which are not Hermitian in general; the weights are $\ell_\pm^{\dagger}\tilde{Ϛ}_{\Psi} r_\pm$, and they are not positive for every state. The two coincide exactly when the element is normal. The biorthogonal calculus, the Petermann factor and the exceptional-point limit are *Biorthogonal Quantum Mechanics and the Biquaternion Spectrum*.
 
-### Evolution and Measurement Are One Sandwich
+### Evolution and Measurement Are One Two-Sided Operator
 
-The action of an element $\tilde Q$ on the sector is the sandwich
+The action of an element $\tilde Q$ on the sector is the two-sided operator
 
 $$
 \Gamma_{\tilde Q}(\tilde X)=\tilde Q\tilde X\tilde Q^{*}.
@@ -284,7 +284,7 @@ A unit-norm element is a Lorentz rotor: it preserves the interval and acts on th
 
 The dichotomy between reversible and irreversible actions is therefore intrinsic to the sector: a norm-preserving rotor against a norm-destroying projection. On the material sector the rotor is a Lorentz transformation; on the state side the reversible class narrows to the matrix-unitary elements, and the pair is exactly the quantum-information dichotomy between $*$-unitary evolution and measurement.
 
-**The boundary.** The sandwich is one operator; the three cases differ by the normalisation of the parameter, not by the operation. The projection is the algebraic form of a measurement, but the collapse is not derived from the algebra. The identification of the projection with a physical measurement is the interpretive step, and the probabilities it gives are the Born weights, not frequencies.
+**The boundary.** The two-sided operator is one operator; the three cases differ by the normalisation of the parameter, not by the operation. The projection is the algebraic form of a measurement, but the collapse is not derived from the algebra. The identification of the projection with a physical measurement is the interpretive step, and the probabilities it gives are the Born weights, not frequencies.
 
 ### The Born Rule Is the Normalised Hermitian Form
 
@@ -315,7 +315,7 @@ The framework relocates the Born rule from a postulate to a property of the pair
 
 ### The Sector Acts on the Material Sector
 
-The sector is the space of the things that act, and the material sector is the space of the things acted upon. The action is the sandwich $\tilde Q_-\mapsto\tilde Q_+\tilde Q_-\tilde Q_+^{*}$, and it preserves the material sector and, for a unit-norm parameter, the interval. A boost is a Hermitian element of $\mathbb{B}_{\Psi}$: it acts on a four-vector and changes its frame. A rotation is a real quaternion, which lies in the real sector $\mathbb{B}_{H}$ rather than in $\mathbb{B}_{\Psi}$, and its action on $\mathbb{B}_{\Phi}$ is still a rotor conjugation. The general Lorentz rotor is a general unit-norm biquaternion, outside both sectors.
+The sector is the space of the things that act, and the material sector is the space of the things acted upon. The action is the two-sided operator $\tilde Q_-\mapsto\tilde Q_+\tilde Q_-\tilde Q_+^{*}$, and it preserves the material sector and, for a unit-norm parameter, the interval. A boost is a Hermitian element of $\mathbb{B}_{\Psi}$: it acts on a four-vector and changes its frame. A rotation is a real quaternion, which lies in the real sector $\mathbb{B}_{H}$ rather than in $\mathbb{B}_{\Psi}$, and its action on $\mathbb{B}_{\Phi}$ is still a rotor conjugation. The general Lorentz rotor is a general unit-norm biquaternion, outside both sectors.
 
 The asymmetry is the physical content of the names. The material element is a configuration; the informational element is an operator on configurations. The operator can be a change of frame, a rotation, or a measurement projection; the configuration cannot act on the operator in the same way. The action is established algebra; the interpretation of $\mathbb{B}_{\Psi}$ as a distinct physical sector is the hypothesis.
 
@@ -449,7 +449,7 @@ The article establishes the algebra of the sector and its interpretation as a tw
 - The state slice (normalised by $\langle\tilde{Ϛ}_{\Psi},e_t\rangle_*=\tfrac12$; trace one in the $2\times2$ image) is the Bloch ball $\lvert\vec r\rvert\leq1$; its boundary is the Bloch sphere, its centre the maximally mixed state.
 - The Bloch ball is the state slice of the future light cone of the biquaternion norm; probability and causality share their boundary.
 - The spectral decomposition writes every observable as two eigenvalues times two orthogonal idempotents.
-- Evolution and measurement are one sandwich, with the parameter unit-norm, matrix-unitary or idempotent.
+- Evolution and measurement are one two-sided operator, with the parameter unit-norm, matrix-unitary or idempotent.
 - The Born rule is the normalised Hermitian form $\langle\tilde{Ϛ}_{\Psi},\tilde R_\Psi\rangle_{*}/\langle\tilde{Ϛ}_{\Psi},e_t\rangle_{*}$, read in the $2\times2$ image as $\operatorname{Tr}(\tilde{Ϛ}_{\Psi}\tilde R_\Psi^{*})=\operatorname{Tr}(\tilde{Ϛ}_{\Psi}\tilde R_\Psi)=2\langle\tilde{Ϛ}_{\Psi},\tilde R_\Psi\rangle_{*}=2\operatorname{Sc}(\tilde{Ϛ}_{\Psi}\tilde R_\Psi^{*})$, with $p_\pm=\tfrac12(1\pm\vec u\cdot\vec r)$.
 - The sector is a special Jordan algebra under the anticommutator, and not a Lie algebra; the material sector carries the compact Lie algebra $\mathfrak{u}(2)$, the spatial rotations together with the central phase.
 - The sector is phase-free in the scalar sense, but its vector product carries the coherence.
@@ -468,7 +468,7 @@ The article establishes the algebra of the sector and its interpretation as a tw
 | $\langle\tilde Q_1,\tilde Q_2\rangle=\mathrm{Sc}(\tilde Q_1\tilde Q_2)$, $\langle\tilde Q\rangle=\langle\tilde Q,\tilde Q\rangle$ | the plain form and its norm, the restriction of the Hermitian form to $\mathbb{B}_{\Psi}$ |
 | $\langle\tilde R_\Psi\rangle_{\natural}=r_t^2-\lvert\vec r_\Psi\rvert^2$ | the quaternionic norm, of signature $(1,3)$ |
 | $\operatorname{Tr}(\tilde Q_1\tilde Q_2^{*})=2\langle\tilde Q_1,\tilde Q_2\rangle_{*}=2\operatorname{Sc}(\tilde Q_1\tilde Q_2^{*})$, $\operatorname{Tr}(\tilde Q)=2\operatorname{Sc}(\tilde Q)$ | the trace, the $2\times2$ reading of the Hermitian form |
-| $\Gamma_{\tilde Q}(\tilde X)=\tilde Q\tilde X\tilde Q^{*}$ | the sandwich |
+| $\Gamma_{\tilde Q}(\tilde X)=\tilde Q\tilde X\tilde Q^{*}$ | the two-sided operator |
 | $\tilde Q\tilde Q^{*}=e_t$ | the matrix-unitary condition, $U(2)$ |
 | $\langle\tilde U\rangle_{\natural}=1$ | the unit-norm condition, $SL(2,\mathbb{C})$ |
 | $p_\pm=\langle\tilde\Pi_{1,2}(\vec u),\tilde{Ϛ}_{\Psi}\rangle_{*}/\langle\tilde{Ϛ}_{\Psi},e_t\rangle_{*}=\tfrac12(1\pm\vec u\cdot\vec r)$ | the Born probability |
@@ -481,7 +481,7 @@ The article establishes the algebra of the sector and its interpretation as a tw
 - [The Biquaternion Eigenvalue Decomposition](../articles_maths/the-biquaternion-eigenvalue-decomposition.html), for the eigenvalue decomposition, the normality criterion and the non-normal pair.
 - [Biorthogonal Quantum Mechanics and the Biquaternion Spectrum](biorthogonal-quantum-mechanics-and-the-biquaternion-spectrum.html), for the biorthogonal pairing and its difference from the Born form.
 - [The Four Forms and the Four Algebraic Norms over the Biquaternion Algebra](../articles_maths/the-four-forms-and-the-four-algebraic-norms-over-the-biquaternion-algebra.html) and [Remarkable Subspaces and the Four General Products, Forms and Norms](../articles_maths/remarkable-subspaces-and-the-four-general-products-forms-and-norms.html), for the forms and the absence of the area pairing.
-- [Two-Sided Operators on the General Plain Sesqualgebra](../articles_maths/two-sided-operators-on-the-general-plain-sesqualgebra.html), for the sandwich.
+- [Two-Sided Operators on the General Plain Sesqualgebra](../articles_maths/two-sided-operators-on-the-general-plain-sesqualgebra.html), for the two-sided operator.
 - [Unitary Operators of a Sesqualgebra](../articles_maths/the-unitary-operators-of-a-sesqualgebra.html), for the matrix-unitary slice.
 - [Jordan Algebras of Sesqualgebras](../articles_maths/jordan-algebras-of-sesqualgebras.html), for the symmetrised product.
 - [$M_2(\mathbb{C})$ Representation : The General Plain Sesqualgebra of Biquaternions](../articles_maths/m2c-representation-the-general-plain-sesqualgebra-of-biquaternions.html), for the Hilbert–Schmidt pairing and the matrix trace.

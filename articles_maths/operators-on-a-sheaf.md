@@ -5,7 +5,7 @@
 
 An **operator on a sheaf** is an endomorphism of that sheaf: a morphism $\mathcal{F}\to\mathcal{F}$ in the category of sheaves on a topological space $X$. The operators on $\mathcal{F}$ are therefore the elements of the hom-set $\operatorname{End}(\mathcal{F})=\operatorname{Hom}(\mathcal{F},\mathcal{F})$, and composition of morphisms makes this set a unital associative ring, commutative only in the degenerate cases; its group of units is the group $\operatorname{Aut}(\mathcal{F})$ of automorphisms of the sheaf. The operators on a sheaf are the sheaf-theoretic instance of the endomorphisms of an object of a category, and this article develops the three things the operator layer of the category is built on: the ring $\operatorname{End}(\mathcal{F})$ of global operators, the action of that ring on the sections of $\mathcal{F}$, and the **sheaf of operators** $\mathcal{E}nd(\mathcal{F})$, whose sections over an open set $\Omega$ are the operators on the restriction $\mathcal{F}|_\Omega$.
 
-The article fixes the notation of the operator layer and proves the elementary structure: the ring and its opposite, the left and the right multiplications and the sandwich, the sheaf of operators and the comparison of its stalks with the endomorphism rings of the stalks, and the central role of the scalars of a structure sheaf. Its companion *The Sheaf of Operators*, below this article, develops the sheaf $\mathcal{E}nd(\mathcal{F})$ as a sheaf of rings in its own right, with its sections, its sheaf of units and its local structure; *The Restriction and Extension Operators*, below this article, treats the functors by which the operators on different opens are compared.
+The article fixes the notation of the operator layer and proves the elementary structure: the ring and its opposite, the left and the right multiplications and the two-sided operator, the sheaf of operators and the comparison of its stalks with the endomorphism rings of the stalks, and the central role of the scalars of a structure sheaf. Its companion *The Sheaf of Operators*, below this article, develops the sheaf $\mathcal{E}nd(\mathcal{F})$ as a sheaf of rings in its own right, with its sections, its sheaf of units and its local structure; *The Restriction and Extension Operators*, below this article, treats the functors by which the operators on different opens are compared.
 
 The assumptions are those of *Presheaves and Sheaves*, which fixes the category of sheaves, the stalks, the sheafification and the sheaf $\mathcal{H}om_{\mathcal{O}_X}$, and of *Sheaf Cohomology*, which fixes the notation $H^i(X,\mathcal{F})$. Nothing analytic and nothing geometric is used. In particular the operators carry no form here: the adjoint of an operator, which a pairing alone makes meaningful, is the subject of *Hermitian Pairings of Sheaves* and of the involution articles of the present category, below this article. Throughout, $\mathcal{F}$ is a sheaf of abelian groups on $X$, or a sheaf of $\mathcal{O}_X$-modules for a structure sheaf $\mathcal{O}_X$, and the two cases are named whenever they differ.
 
@@ -29,7 +29,7 @@ $$
 L_a(T)=aT,\qquad R_a(T)=Ta .
 $$
 
-**Proposition (commutation and the sandwich).** $L_aR_b=R_bL_a$ for all $a,b\in\operatorname{End}(\mathcal{F})$, so $L$ and $R$ are commuting representations of $\operatorname{End}(\mathcal{F})$ and of $\operatorname{End}(\mathcal{F})_{\mathrm{opp}}$ on $\operatorname{End}(\mathcal{F})$. If $u\in\operatorname{Aut}(\mathcal{F})$ then the **sandwich**
+**Proposition (commutation and the two-sided operator).** $L_aR_b=R_bL_a$ for all $a,b\in\operatorname{End}(\mathcal{F})$, so $L$ and $R$ are commuting representations of $\operatorname{End}(\mathcal{F})$ and of $\operatorname{End}(\mathcal{F})_{\mathrm{opp}}$ on $\operatorname{End}(\mathcal{F})$. If $u\in\operatorname{Aut}(\mathcal{F})$ then the **two-sided operator**
 
 $$
 \Sigma_u(T)=uTu^{-1}
@@ -37,7 +37,7 @@ $$
 
 is a ring automorphism of $\operatorname{End}(\mathcal{F})$, and $u\mapsto\Sigma_u$ is a homomorphism $\operatorname{Aut}(\mathcal{F})\to\operatorname{Aut}(\operatorname{End}(\mathcal{F}))$ whose kernel is the intersection of the centre $Z(\operatorname{End}(\mathcal{F}))$ with $\operatorname{Aut}(\mathcal{F})$.
 
-*Proof.* $L_aR_b(T)=aTb=R_bL_a(T)$. For the sandwich, $\Sigma_u(ST)=uSTu^{-1}=(uSu^{-1})(uTu^{-1})=\Sigma_u(S)\Sigma_u(T)$, and $\Sigma_u$ is bijective with inverse $\Sigma_{u^{-1}}$; the kernel consists of the $u$ with $uTu^{-1}=T$ for all $T$, that is $u\in Z(\operatorname{End}(\mathcal{F}))$.
+*Proof.* $L_aR_b(T)=aTb=R_bL_a(T)$. For the two-sided operator, $\Sigma_u(ST)=uSTu^{-1}=(uSu^{-1})(uTu^{-1})=\Sigma_u(S)\Sigma_u(T)$, and $\Sigma_u$ is bijective with inverse $\Sigma_{u^{-1}}$; the kernel consists of the $u$ with $uTu^{-1}=T$ for all $T$, that is $u\in Z(\operatorname{End}(\mathcal{F}))$.
 
 **Proposition (the scalars and the centre).** Let $\mathcal{F}$ be a sheaf of $\mathcal{O}_X$-modules. The assignment $a\mapsto m_a$ sending a global function $a\in\mathcal{O}_X(X)$ to the multiplication $m_a(s)=as$ is a ring homomorphism $\mathcal{O}_X(X)\to\operatorname{End}(\mathcal{F})$ whose image lies in the centre. If $\mathcal{F}$ is locally free of rank $r\geq 1$, the scalars exhaust the centre,
 
@@ -131,7 +131,7 @@ as sheaves of rings and as rings. The inverse map is evaluation at the unit sect
 
 ## Summary
 
-An operator on a sheaf $\mathcal{F}$ is an endomorphism of $\mathcal{F}$; the operators form the endomorphism ring $\operatorname{End}(\mathcal{F})$, a unital associative ring whose units are the automorphisms of $\mathcal{F}$, an $\mathcal{O}_X(X)$-algebra when $\mathcal{F}$ is a sheaf of modules, and the global sections of the sheaf of operators $\mathcal{E}nd(\mathcal{F})=\mathcal{H}om(\mathcal{F},\mathcal{F})$. The opposite ring reverses the order of composition, the left and right multiplications commute and give the sandwich $T\mapsto uTu^{-1}$ by a unit, and the scalar multiplications of a structure sheaf always lie in the centre, which they exhaust for a locally free sheaf of positive rank.
+An operator on a sheaf $\mathcal{F}$ is an endomorphism of $\mathcal{F}$; the operators form the endomorphism ring $\operatorname{End}(\mathcal{F})$, a unital associative ring whose units are the automorphisms of $\mathcal{F}$, an $\mathcal{O}_X(X)$-algebra when $\mathcal{F}$ is a sheaf of modules, and the global sections of the sheaf of operators $\mathcal{E}nd(\mathcal{F})=\mathcal{H}om(\mathcal{F},\mathcal{F})$. The opposite ring reverses the order of composition, the left and right multiplications commute and give the two-sided operator $T\mapsto uTu^{-1}$ by a unit, and the scalar multiplications of a structure sheaf always lie in the centre, which they exhaust for a locally free sheaf of positive rank.
 
 The sheaf of operators is a sheaf of rings, or of $\mathcal{O}_X$-algebras, whose sections over an open set are the operators on the restriction of $\mathcal{F}$; it acts on $\mathcal{F}$, making $\mathcal{F}$ a sheaf of modules over it. The stalk of the sheaf of operators maps injectively to the endomorphism ring of the stalk, and the map is an isomorphism exactly when the sheaf is of finite presentation, in particular when it is locally free of finite rank or coherent; then $\mathcal{E}nd(\mathcal{F})_x\cong M_r(\mathcal{O}_{X,x})$ and $\mathcal{E}nd(\mathcal{F})\cong\mathcal{F}\otimes\mathcal{F}^{\vee}$ for a locally free $\mathcal{F}$ of rank $r$. The structure sheaf is the basic case: $\mathcal{E}nd(\mathcal{O}_X)\cong\mathcal{O}_X$ and $\operatorname{End}(\mathcal{O}_X)\cong\mathcal{O}_X(X)$, with units the invertible global functions.
 
@@ -144,7 +144,7 @@ The sheaf of operators is a sheaf of rings, or of $\mathcal{O}_X$-algebras, whos
 | $\operatorname{Aut}(\mathcal{F})$ | group of invertible operators, the units of $\operatorname{End}(\mathcal{F})$ |
 | $\operatorname{End}(\mathcal{F})_{\mathrm{opp}}$ | opposite ring, product $S\cdot_{\mathrm{opp}}T=TS$ |
 | $L_a$, $R_a$ | left and right multiplication by $a$; $L_aR_b=R_bL_a$ |
-| $\Sigma_u(T)=uTu^{-1}$ | sandwich by a unit $u$; an automorphism of $\operatorname{End}(\mathcal{F})$ |
+| $\Sigma_u(T)=uTu^{-1}$ | two-sided operator with a unit $u$; an automorphism of $\operatorname{End}(\mathcal{F})$ |
 | $m_a$ | multiplication by a scalar $a\in\mathcal{O}_X(X)$, in the centre |
 | $Z(\operatorname{End}(\mathcal{F}))$ | centre; $\cong\mathcal{O}_X(X)$ for $\mathcal{F}$ locally free of rank $\geq 1$ |
 | $\mathcal{E}nd(\mathcal{F})=\mathcal{H}om(\mathcal{F},\mathcal{F})$ | sheaf of operators; a sheaf of rings, of $\mathcal{O}_X$-algebras in the module case |

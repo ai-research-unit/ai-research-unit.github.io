@@ -4,7 +4,7 @@
 
 The biquaternion algebra is, as a real algebra, the **algebra of physical space**: the real algebra $\mathrm{Cl}_{3,0}$, which is also $M_2(\mathbb{C})$. The corpus records the identification, but it works throughout in the material sector $\mathbb{B}_{\Phi}$, whose time coordinate is the imaginary $i r'_t$. This article works instead in the **paravectors** of the algebra of physical space: the four-dimensional real space spanned by the scalar $e_t$ and the three positive-definite generators. That space is exactly the Hermitian subspace $\mathbb{B}_{\Psi}$ of the corpus, and the material sector is its central-imaginary multiple, $\mathbb{B}_{\Phi}=i\mathbb{B}_{\Psi}$. A paravector is thus a spacetime vector written with a **real** time; the $i$ of the $i r'_t$ convention is not removed but relocated, and the geometry becomes a geometry of physical space and its null elements.
 
-The purpose of the article is threefold. First, it fixes the dictionary between the source's paravectors and the corpus's objects, so that results written in the algebra of physical space can be read in the series' conventions. Second, it states and proves the source's **boost rule**, $p\mapsto\tilde V_{\Phi,\mathrm p}p_\parallel+p_\perp$, the computational device that replaces the rotor sandwich by a single multiplication, and shows it to be exactly the rotor congruence already used on the material sector. Third, it records the interpretation of **biparavectors** as spacetime planes, which is what makes the electromagnetic field a plane-valued object and which the field-strength article then uses.
+The purpose of the article is threefold. First, it fixes the dictionary between the source's paravectors and the corpus's objects, so that results written in the algebra of physical space can be read in the series' conventions. Second, it states and proves the source's **boost rule**, $p\mapsto\tilde V_{\Phi,\mathrm p}p_\parallel+p_\perp$, the computational device that replaces the rotor two-sided operator with a single multiplication, and shows it to be exactly the rotor congruence already used on the material sector. Third, it records the interpretation of **biparavectors** as spacetime planes, which is what makes the electromagnetic field a plane-valued object and which the field-strength article then uses.
 
 The source is William E. Baylis, *Relativity in Introductory Physics*, Can. J. Phys. **82** (2004) 853–873 (arXiv:physics/0406158), and his *Electrodynamics: A Modern Geometric Approach* (Birkhäuser, 1999), where the paravector formalism is developed. The article presents the paravector interpretation as a **presentation** of the corpus's own algebra, not as a different theory: the Lorentz group, the null cone, the field and its invariants are the same objects under a change of basis, and nothing below contradicts a result of the companion articles.
 
@@ -130,7 +130,7 @@ a derived form, the half-angle identity read on $\mathcal{P}$, with $\gamma=\cos
 
 ## The Boost Rule
 
-The computational advantage of the paravector interpretation is that the boost of a spacetime vector is a *product* rather than a sandwich with two factors.
+The computational advantage of the paravector interpretation is that the boost of a spacetime vector is a *product* rather than a two-sided operator with two factors.
 
 **Theorem (boost rule).** Let $\tilde U_{\Psi,\mathrm b}$ be a frame rotor of rapidity $\theta_{\mathrm{rpd}}$ about the unit direction $\vec u_{\mathrm b}$, and $\tilde V_{\Phi,\mathrm p}=\tilde U_{\Psi,\mathrm b}^{2}$ the corresponding proper velocity. For a paravector $p=p_te_t+i\vec p$, split it into the part coplanar with the boost plane and the part orthogonal to it,
 
@@ -180,7 +180,7 @@ $$
 
 so one two-sided action on the paravector space is a left multiplication on one part and no multiplication at all on the other: the proper velocity multiplies the coplanar part, and the orthogonal part is fixed. That is the operator content of the rule, and the reason a boost of a plane wave is a pair of one-sided operations rather than a conjugation.
 
-**What was gained.** The rule multiplies only the coplanar part and leaves the orthogonal part fixed. Against the sandwich it needs one factor instead of two; against a matrix it needs no basis in which the boost is aligned. The source uses it for the standard kinematical statements — the composition of velocities, the contraction of a moving rod, the relativity of simultaneity, the transformation of the field — and each becomes a one-line computation.
+**What was gained.** The rule multiplies only the coplanar part and leaves the orthogonal part fixed. Against the two-sided operator it needs one factor instead of two; against a matrix it needs no basis in which the boost is aligned. The source uses it for the standard kinematical statements — the composition of velocities, the contraction of a moving rod, the relativity of simultaneity, the transformation of the field — and each becomes a one-line computation.
 
 ## Composite Systems: Biparavectors and the Six Planes
 

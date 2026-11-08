@@ -254,7 +254,7 @@ $$
 
 Then $g$ is continuous and odd, $g(-x) = -g(x)$, so the restriction of $g$ to the equator $S^{n-1} = \{x \in S^n : x_{n+1} = 0\}$ is an odd map $S^{n-1}\to S^{n-1}$, of odd degree by Borsuk's theorem, hence of degree $\neq 0$. But $g$ is defined on the whole of $S^n$ and hence on the upper hemisphere $D^n_+$, whose boundary is the equator; therefore $g|_{S^{n-1}}$ extends to a map of the disc and is null-homotopic, of degree $0$, a contradiction.
 
-**Corollary (the ham sandwich theorem, in dimension two).** For any two bounded measurable regions $A, B$ of the plane there is a line bisecting both areas. The notion of area required by the statement is supplied by the measure theory of Part III; what is proved here is the topological input, the Borsuk–Ulam theorem, and the reduction of the bisection problem to it is a standard argument of Part III.
+**Corollary (the ham two-sided theorem, in dimension two).** For any two bounded measurable regions $A, B$ of the plane there is a line bisecting both areas. The notion of area required by the statement is supplied by the measure theory of Part III; what is proved here is the topological input, the Borsuk–Ulam theorem, and the reduction of the bisection problem to it is a standard argument of Part III.
 
 **Corollary (odd maps into spheres do not exist).** There is no continuous odd map $g : S^n \to S^{n-1}$ for $n \geq 1$.
 

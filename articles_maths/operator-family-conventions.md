@@ -27,29 +27,19 @@ The order follows the dependence. The family letters come first, because the nam
 
 **The letters are actions, not slots.** $L$ names left multiplication and $R$ names right multiplication. The same two letters name the two copies of the algebra in *Matrix Representations Conventions*, §*The 4×4 Regular Representation*, and the convention there holds here: the letter names the action, and a change of frame does not exchange the two actions even where it exchanges the two tensor slots.
 
-**One operator outside the four families carries two glyphs.** The exchange, the involution that fixes $\tilde\Pi_\pm$ and swaps $\vec\Upsilon_\pm$, is written $S$ in *Operators Acting 1 Side* and $\mathsf P$ in *Matrix Representations Conventions* and in the three matrix operator articles. The two glyphs name the same operator: $S$ where it is read as an operator of the carrier, $\mathsf P$ where it is read as a matrix. A sentence that meets both writes $S=\mathsf P$ and moves on.
+**One operator outside the four families carries two glyphs.** The exchange, the involution that fixes $\tilde\Pi_\pm$ and swaps $\vec\Upsilon_\pm$, is written $S$ in *Operators Acting on One Side* and $\mathsf P$ in *Matrix Representations Conventions* and in the three matrix operator articles. The two glyphs name the same operator: $S$ where it is read as an operator of the carrier, $\mathsf P$ where it is read as a matrix. A sentence that meets both writes $S=\mathsf P$ and moves on.
 
 **No fifth letter is implied.** An involution, a change of frame and a derivation also occur in the operator articles, and each carries the letter that its own article gives it. The four marks are the vocabulary of the four families assembled from the multiplication; they do not assert that every operator belongs to one of the four.
 
-### The Word That Is Retired
+### The Name of the Family
 
-**One object, and it already has a name.** The operator $\mathrm{Hp}_{\tilde Q}$ was called *the sandwich of $\tilde Q$* in the earlier articles, and that word is retired. It names the shape of the product, $\tilde Q\,\tilde X\,\tilde Q^{\ast}$, and the shape is already written by the letters. What the shape does not say is which pair and which tie, and the name does: the two parameters are $\tilde Q$ and its dagger, and the dagger is the adjoint of the plain sesquilinear form. The star is the tie of the fourth family and of nothing else in the four.
+**One object, and one name.** The operator $\mathrm{Hp}_{\tilde Q}=L_{\tilde Q}R_{\tilde Q^{\ast}}$ is *the Hermitian pair of operators acting on two sides*. The name records the two facts the letters cannot: the two parameters are $\tilde Q$ and its dagger, and the dagger is the adjoint of the plain sesquilinear form. The star is the tie of the fourth family and of nothing else in the four.
 
-**The word is replaced, not deleted.** A sentence carrying it is rewritten in its own grammar and keeps its meaning. The qualifiers in front of it were doing separate work, and each becomes a word that says what that work was:
+**Two lengths, and one rule for each.** The name is written in full once, at the definition and in the titles: *the Hermitian pair of operators acting on two sides*. Everywhere afterwards it is *the Hermitian pair*, and the qualifier *indefinite* goes in front when the tie is the Krein adjoint. The bare phrase *Hermitian pair of operators* is not used: it is longer than the short name and shorter than the full one, and it does not say on how many sides the pair acts.
 
-| retired | written instead |
-|---|---|
-| the sandwich, no qualifier | the Hermitian pair acting on two sides, $\mathrm{Hp}_{\tilde Q}$ |
-| the Hermitian sandwich | the Hermitian pair acting on two sides |
-| the signed sandwich | the graded two-sided operator, $L_{\tilde Q}R_{\tilde Q^{\natural}}$ |
-| the unsigned sandwich | the plain two-sided operator, $L_{\tilde Q}R_{\tilde Q_2}$ |
-| the sesquilinear sandwich | the sesquilinear-tied two-sided operator |
-| the adjoint sandwich | the adjoint of the two-sided operator |
-| the inner sandwich | the inner conjugation |
-| the two-sided sandwich | the two-sided operator |
-| sandwich action, sandwich map | the two-sided action |
-| sandwich monoid, space, family, exponential | the monoid, space, family, exponential of the two-sided operators |
-| sandwiched between $\tilde Q$ and $\tilde P$ | bracketed by $\tilde Q$ and $\tilde P$ |
+**The glyph is the dagger.** The member is $\mathrm{Hp}_{\tilde Q}$ when the tie is the dagger or the star, and the family letter $\Theta$ is kept for the ties of the other involutions, $\natural$ and $\approx$, whose member is written $\Theta_{\tilde Q}$.
+
+**The qualifier carries the family.** *Plain*, *graded*, *sesquilinear-tied*, *adjoint* and *inner conjugation* stand in front of *two-sided operator*, and each names a different insertion in the middle slot: no insertion, the grade involution $\natural$, the coefficient involution $\sigma$, the dagger, and the inverse. The qualifier names the insertion; the letter names the family; neither names the shape, because the shape is written by $L$ and $R$.
 
 **The word Hermitian names the tie, not self-adjointness.** The pair of parameters is $\left(\tilde Q,\tilde Q^{\ast}\right)$, and *Hermitian* records that the second is the dagger of the first. The operator $\mathrm{Hp}_{\tilde Q}$ is self-adjoint for the dagger exactly when $\tilde Q$ is Hermitian, so a sentence that needs the operator to be self-adjoint says so separately and does not infer it from the name.
 
@@ -228,7 +218,7 @@ The strata are labelled by two bits, the norm first and the square of the vector
 |---|---|
 | $L_{\tilde Q}$, $R_{\tilde Q_2}$ | The left and the right multiplier |
 | $L_{\tilde Q}R_{\tilde Q_2}$ | The two-sided operator, left multiplier first |
-| $\mathrm{Hp}_{\tilde Q}=L_{\tilde Q}R_{\tilde Q^{\ast}}$ | The Hermitian pair acting on two sides, with one free slot |
+| $\mathrm{Hp}_{\tilde Q}=L_{\tilde Q}R_{\tilde Q^{\ast}}$ | The Hermitian pair, with one free slot |
 | $L_{e_\mu}$, $R_{e_\nu}$, $L_{e_\mu}R_{e_\nu}$, $\mathrm{Hp}_{e_\mu}$ | The basis operators, read in that order, the first index belonging to the left slot |
 | left slot, right slot, both slots, no single side | The operator chirality: the side on which an operator multiplies. *Both slots* is the scalar line; a two-sided basis operator has *no single side* |
 | $\mathsf{V}_{\mathrm{vol}}$ | The fifth frame operator of a frame, the chirality operator; $-iR_{\vec e_z}$ in the axis-free frame. It is an example of the right slot, not the definition of chirality. The gamma display writes the same basis operator $\gamma_5$ |

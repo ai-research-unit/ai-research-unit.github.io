@@ -4,7 +4,7 @@
 
 The symmetric plain algebra of $\mathbb{B}$ carries the product $\tilde Q_1\bullet\tilde Q_2=\tfrac12(\tilde Q_1\tilde Q_2+\tilde Q_2\tilde Q_1)$ of *Introduction to the Symmetric Plain Algebra*. This article reads the **multiplication operators** of the block, $L^{\bullet}_{\tilde Q_5}\tilde Q=\tilde Q_5\bullet\tilde Q$ and $R^{\bullet}_{\tilde Q_5}\tilde Q=\tilde Q\bullet\tilde Q_5$, and the operator theory they carry: their relation to the operators of the plain product, their composition, their traces, determinants and ranks, their associate with respect to the trace form, the Jordan identity read on them, and the derivations and automorphisms of the block.
 
-The block is commutative, so the left and the right operator of an element coincide, and the operator theory is a theory of one operator to an element. The operator identity that opens the article is a factor of two away from the sum of the plain operators, and that factor is computed here; the trace form with respect to which the associate is taken is *The Trace Form and the Invariance of the Symmetric Plain Algebra*, and the plain operators are *Operators Acting 2 Side* and *One-Sided Operators on the General Plain Algebra of Biquaternions*. The derivations and the automorphisms of the block are read as the structure group and the Lie algebra of the Jordan algebra, and the matrix models of the same operators are *Introduction to the Symmetric Plain Algebra*.
+The block is commutative, so the left and the right operator of an element coincide, and the operator theory is a theory of one operator to an element. The operator identity that opens the article is a factor of two away from the sum of the plain operators, and that factor is computed here; the trace form with respect to which the associate is taken is *The Trace Form and the Invariance of the Symmetric Plain Algebra*, and the plain operators are *Operators Acting on Two Sides* and *One-Sided Operators on the General Plain Algebra of Biquaternions*. The derivations and the automorphisms of the block are read as the structure group and the Lie algebra of the Jordan algebra, and the matrix models of the same operators are *Introduction to the Symmetric Plain Algebra*.
 
 ## The Multiplication Operators
 
@@ -304,7 +304,7 @@ The multiplication operators of the block are $L^{\bullet}_{\tilde Q_5}$ and $R^
 
 ## Further Reading
 
-- [Operators Acting 2 Side](operators-acting-2-side.html) and *One-Sided Operators on the General Plain Algebra of Biquaternions*, for the plain operators whose half-sum is the operator of the block.
+- [Operators Acting on Two Sides](operators-acting-on-two-sides.html) and *One-Sided Operators on the General Plain Algebra of Biquaternions*, for the plain operators whose half-sum is the operator of the block.
 - [The Trace Form and the Invariance of the Symmetric Plain Algebra of the Biquaternions](the-trace-form-and-the-invariance-of-the-symmetric-plain-algebra-of-the-biquaternions.html), for the trace form, the invariance and the operator trace.
 - [Introduction to the Symmetric Plain Algebra of the Biquaternions](introduction-to-the-symmetric-plain-algebra-of-the-biquaternions.html), for the matrices of the operators in the two models.
 - [The Square, the Idempotents and the Jordan Inverse of the Symmetric Plain Algebra of the Biquaternions](the-square-the-idempotents-and-the-jordan-inverse-of-the-symmetric-plain-algebra-of-the-biquaternions.html), for the generic trace and the generic norm preserved by the automorphisms.

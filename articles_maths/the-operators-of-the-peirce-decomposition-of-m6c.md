@@ -11,7 +11,7 @@ L_{a}R_{b}(X)=aXb,\qquad
 \operatorname{ad}_a(X)=aX-Xa .
 $$
 
-They are the left and right multiplications, the sandwich, and the inner derivation. Each is a $36\times36$ matrix in the basis of matrix units, and each acts on the Peirce corners $A_{rs}$ by carrying them to corners determined by the Peirce labels of $a$ and $b$. The sandwich $L_{a}R_{b}$ carries $A_{rs}$ to $A_{il}$ when $a\in A_{ij}$ and $b\in A_{kl}$ with $j=r$ and $s=k$.
+They are the left and right multiplications, the two-sided operator, and the inner derivation. Each is a $36\times36$ matrix in the basis of matrix units, and each acts on the Peirce corners $A_{rs}$ by carrying them to corners determined by the Peirce labels of $a$ and $b$. The two-sided operator $L_{a}R_{b}$ carries $A_{rs}$ to $A_{il}$ when $a\in A_{ij}$ and $b\in A_{kl}$ with $j=r$ and $s=k$.
 
 The derivations of the algebra are the inner ones,
 
@@ -78,16 +78,16 @@ $$
 
 **Proof.** $\operatorname{vec}(aX)=(I_6\otimes a)\operatorname{vec}X$ and $\operatorname{vec}(Xa)=(a^{\mathsf T}\otimes I_6)\operatorname{vec}X$.
 
-### The Sandwich
+### The Two-Sided Operator
 
-**Definition.** The **sandwich** is
+**Definition.** The **two-sided operator** is
 
 $$
 L_{a}R_{b}:M_6\longrightarrow M_6,\quad
 X\longmapsto aXb .
 $$
 
-**Theorem.** The sandwiches compose by
+**Theorem.** The two-sided operators compose by
 
 $$
 L_{a}R_{b}L_{c}R_{d}=L_{ac}R_{db},
@@ -101,7 +101,7 @@ $$
 
 **Proof.** $a(cXd)b=(ac)X(db)$; $\operatorname{vec}(aXb)=(b^{\mathsf T}\otimes a)\operatorname{vec}X$.
 
-**Corollary (the sandwich monoid).** The set of sandwiches is a monoid under composition, with identity $L_{I_6}R_{I_6}$; its group of units is
+**Corollary (the two-sided monoid).** The set of two-sided operators is a monoid under composition, with identity $L_{I_6}R_{I_6}$; its group of units is
 
 $$
 (GL_6\times GL_6)/\mathbb{C}^\times,
@@ -109,7 +109,7 @@ $$
 
 where the scalar acts diagonally.
 
-**Proof.** $L_{a}R_{b}$ is invertible iff $a$ and $b$ are invertible, with inverse $L_{a^{-1}}R_{b^{-1}}$. The pairs $(a,b)$ and $(\lambda a,\lambda^{-1}b)$ give the same sandwich, and this is the only ambiguity.
+**Proof.** $L_{a}R_{b}$ is invertible iff $a$ and $b$ are invertible, with inverse $L_{a^{-1}}R_{b^{-1}}$. The pairs $(a,b)$ and $(\lambda a,\lambda^{-1}b)$ give the same two-sided operator, and this is the only ambiguity.
 
 ### The Inner Derivation
 
@@ -190,7 +190,7 @@ Xb\in A_{rl}\ \text{if }s=k,\qquad
 Xb=0\ \text{otherwise}.
 $$
 
-For the sandwich with $a\in A_{ij}$ and $b\in A_{kl}$,
+For the two-sided operator with $a\in A_{ij}$ and $b\in A_{kl}$,
 
 $$
 L_{a}R_{b}(A_{rs})\subseteq A_{il}
@@ -198,7 +198,7 @@ L_{a}R_{b}(A_{rs})\subseteq A_{il}
 L_{a}R_{b}(A_{rs})=0\ \text{otherwise}.
 $$
 
-**Proof.** The product $A_{ij}A_{rs}$ is contained in $\delta_{jr}A_{is}$ by the Peirce multiplication rule; the right multiplication is the same on the other side; the sandwich is the composition.
+**Proof.** The product $A_{ij}A_{rs}$ is contained in $\delta_{jr}A_{is}$ by the Peirce multiplication rule; the right multiplication is the same on the other side; the two-sided operator is the composition.
 
 **Corollary (the corner matrix).** In the Peirce basis, $L_{a}R_{b}$ has a single nonzero block, from the corner $A_{rs}$ to the corner $A_{il}$, whenever $a\in A_{ij}$, $b\in A_{kl}$ with $j=r$, $s=k$. All other blocks vanish.
 
@@ -357,11 +357,11 @@ so $X\mapsto-X^{\mathsf T}$ is a Lie algebra automorphism. It is not inner for $
 
 **Proof.** The first statement is Skolem–Noether; the second is the Dynkin diagram symmetry.
 
-## The Sandwich as a Map of Corners
+## The Two-Sided Operator as a Map of Corners
 
 ### The Corner Map
 
-**Theorem.** The sandwich $L_{a}R_{b}$ restricts to a linear map
+**Theorem.** The two-sided operator $L_{a}R_{b}$ restricts to a linear map
 
 $$
 L_{a}R_{b}:A_{rs}\longrightarrow A_{il},
@@ -379,7 +379,7 @@ $$
 
 **Proof.** This is the corner action of the theorem above.
 
-**Corollary (the corner multiplication).** The sandwich gives the multiplication map
+**Corollary (the corner multiplication).** The two-sided operator gives the multiplication map
 
 $$
 A_{ij}\times A_{kl}\longrightarrow\operatorname{Hom}(A_{rs},A_{il}),
@@ -387,11 +387,11 @@ A_{ij}\times A_{kl}\longrightarrow\operatorname{Hom}(A_{rs},A_{il}),
 (a,b)\longmapsto L_{a}R_{b},
 $$
 
-with $j=r$, $s=k$. In the rank-one case all four corners are one-dimensional, and the sandwich is a scalar.
+with $j=r$, $s=k$. In the rank-one case all four corners are one-dimensional, and the two-sided operator is a scalar.
 
 **Proof.** The domain of $L_{a}R_{b}$ is $A_{rs}$; the target is $A_{il}$; the map is bilinear in $(a,b)$.
 
-### The Sandwich Matrix
+### The Two-Sided Operator Matrix
 
 **Theorem.** In the basis of matrix units $E_{rs}$,
 
@@ -420,11 +420,11 @@ Hence the entry in the $(il),(rs)$ position is $a_{ir}b_{sl}$.
 
 **Proof.** $L_{a}R_{b}=b^{\mathsf T}\otimes a$; the rank of a Kronecker product is the product of the ranks.
 
-**Corollary (the invertible sandwiches).** $L_{a}R_{b}$ is invertible iff $a$ and $b$ are invertible; the group of invertible sandwiches is $(GL_6\times GL_6)/\mathbb{C}^\times$.
+**Corollary (the invertible two-sided operators).** $L_{a}R_{b}$ is invertible iff $a$ and $b$ are invertible; the group of invertible two-sided operators is $(GL_6\times GL_6)/\mathbb{C}^\times$.
 
 **Proof.** The Kronecker product is invertible iff both factors are; the scalar ambiguity is the diagonal.
 
-### The Sandwich Monoid
+### The Two-Sided Monoid
 
 **Theorem.** The map
 
@@ -436,9 +436,9 @@ $$
 
 is a monoid homomorphism with kernel the diagonal scalars, and its image is the proper submonoid of the decomposable operators.
 
-**Proof.** The composition law $L_{a}R_{b}L_{c}R_{d}=L_{ac}R_{db}$; the pairs $(a,b)$ and $(\lambda a,\lambda^{-1}b)$ give the same sandwich. The image is not all of $\operatorname{End}(M_6)$: the sum of two decomposable operators need not be decomposable.
+**Proof.** The composition law $L_{a}R_{b}L_{c}R_{d}=L_{ac}R_{db}$; the pairs $(a,b)$ and $(\lambda a,\lambda^{-1}b)$ give the same two-sided operator. The image is not all of $\operatorname{End}(M_6)$: the sum of two decomposable operators need not be decomposable.
 
-**Remark (the corner reading).** The sandwich is the only operator that sees two Peirce labels at once: $L_a$ sees the left label, $R_b$ the right label, and $L_{a}R_{b}$ the pair. **The sandwich is the corner map of the Peirce decomposition.**
+**Remark (the corner reading).** The two-sided operator is the only operator that sees two Peirce labels at once: $L_a$ sees the left label, $R_b$ the right label, and $L_{a}R_{b}$ the pair. **The two-sided operator is the corner map of the Peirce decomposition.**
 
 ## Summary
 
@@ -481,7 +481,7 @@ The derivations are the inner ones $\operatorname{ad}_a$, with kernel the scalar
 |---|---|
 | $L_a$ | left multiplication $X\mapsto aX$ |
 | $R_a$ | right multiplication $X\mapsto Xa$ |
-| $L_{a}R_{b}$ | sandwich $X\mapsto aXb$ |
+| $L_{a}R_{b}$ | two-sided operator $X\mapsto aXb$ |
 | $\operatorname{ad}_a$ | inner derivation $X\mapsto aX-Xa$ |
 | $E_{rs}=L_{P_r}R_{P_s}$ | Peirce corner projector |
 | $\operatorname{Der}(M_6)$ | the derivations, isomorphic to $\mathfrak{sl}_6$ |

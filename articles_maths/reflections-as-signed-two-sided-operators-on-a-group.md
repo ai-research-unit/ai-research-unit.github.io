@@ -5,11 +5,11 @@
 
 A reflection of a group is an operator of the signed two-sided form $x\mapsto a\,\alpha(x)\,a^{-1}$ that is its own inverse: it is an involution of the set $G$ produced by the multiplication, the grade involution and the inverse. This article defines the reflections of a graded group in that way, identifies the elements that carry them, computes their fixed subgroups, and records the cases in which the construction degenerates — the grade involution inner, the group abelian, or the carrying element failing to satisfy the centrality that makes the operator an involution.
 
-The article assumes the elementary theory of groups from *Groups*, the definition of an involutive automorphism, the associated involution $\sigma=\iota\alpha$, the inverted set and the fixed set from *Involutive Groups*, the inner conjugation and its square $c_a^2=c_{a^2}$ from *Inner Conjugation and the Class Operator*, the left and right translations from *Left and Right Multiplication in a Group*, and the signed sandwich, its factorisation and the square of the signed conjugation from *The Signed Sandwich on a Group*. The adjoint of a reflection is *The Signed Adjoint of the Reflection on a Group*. A reflection in the geometric sense — in a hyperplane, preserving a form — belongs to the later categories and requires a form, which this article never uses; a reflection here is only an operator on the underlying set.
+The article assumes the elementary theory of groups from *Groups*, the definition of an involutive automorphism, the associated involution $\sigma=\iota\alpha$, the inverted set and the fixed set from *Involutive Groups*, the inner conjugation and its square $c_a^2=c_{a^2}$ from *Inner Conjugation and the Class Operator*, the left and right translations from *Left and Right Multiplication in a Group*, and the signed two-sided operator, its factorisation and the square of the signed conjugation from *The Signed Two-Sided Operator on a Group*. The adjoint of a reflection is *The Signed Adjoint of the Reflection on a Group*. A reflection in the geometric sense — in a hyperplane, preserving a form — belongs to the later categories and requires a form, which this article never uses; a reflection here is only an operator on the underlying set.
 
 ## The Signed Conjugation
 
-**Definition.** For $a\in G$ the **signed conjugation** by $a$ is the signed sandwich $\Sigma^{\alpha}_{a,a^{-1}}(x)=a\,\alpha(x)\,a^{-1}$.
+**Definition.** For $a\in G$ the **signed conjugation** by $a$ is the signed two-sided operator $\Sigma^{\alpha}_{a,a^{-1}}(x)=a\,\alpha(x)\,a^{-1}$.
 
 **Proposition.** The signed conjugation is the automorphism $c_a\circ\alpha$ of $G$, with inverse $\Sigma^{\alpha}_{a^{-1},a}=\alpha\circ c_{a^{-1}}=c_{\alpha(a^{-1})}\circ\alpha$; its square is the inner conjugation by $a\alpha(a)$,
 
@@ -19,7 +19,7 @@ $$
 
 and it is an involution of the set $G$ exactly when $a\alpha(a)\in Z(G)$.
 
-**Proof.** $c_a(\alpha(x))=a\alpha(x)a^{-1}$ is the definition, and it is an automorphism as a composite of automorphisms. The square was computed in *The Signed Sandwich on a Group*: the composition law gives $(\Sigma^{\alpha}_{a,a^{-1}})^2=\Sigma_{a\alpha(a),(a\alpha(a))^{-1}}=c_{a\alpha(a)}$. The inner conjugation $c_u$ is the identity exactly when $u$ is central, so the square is the identity exactly when $a\alpha(a)\in Z(G)$.
+**Proof.** $c_a(\alpha(x))=a\alpha(x)a^{-1}$ is the definition, and it is an automorphism as a composite of automorphisms. The square was computed in *The Signed Two-Sided Operator on a Group*: the composition law gives $(\Sigma^{\alpha}_{a,a^{-1}})^2=\Sigma_{a\alpha(a),(a\alpha(a))^{-1}}=c_{a\alpha(a)}$. The inner conjugation $c_u$ is the identity exactly when $u$ is central, so the square is the identity exactly when $a\alpha(a)\in Z(G)$.
 
 **Proposition (the fixed subgroup).** The fixed set of the signed conjugation is
 
@@ -53,11 +53,11 @@ $$
 
 ## The Degenerate Cases
 
-The construction degenerates in three ways, and they are distinguished by which of the two families of sandwiches collapses.
+The construction degenerates in three ways, and they are distinguished by which of the two families of two-sided operators collapses.
 
 **Proposition (inner grade involution).** If $\alpha$ is an inner automorphism, say $\alpha=c_z$, then the signed conjugations are the unsigned ones, $\rho_a=c_a\circ c_z=c_{az}$, and the reflection is not distinguished from an ordinary inner conjugation; every reflection is an inner automorphism, and a reflection is an involution exactly when $(az)^2\in Z(G)$.
 
-**Proof.** That $\alpha$ inner forces $\mathfrak{S}^\alpha=\mathfrak{S}$ is *The Signed Sandwich on a Group*; hence $\rho_a=c_a\circ\alpha=c_a c_z=c_{az}$. An inner conjugation is an involution exactly when the conjugating element squares to a central element.
+**Proof.** That $\alpha$ inner forces $\mathfrak{S}^\alpha=\mathfrak{S}$ is *The Signed Two-Sided Operator on a Group*; hence $\rho_a=c_a\circ\alpha=c_a c_z=c_{az}$. An inner conjugation is an involution exactly when the conjugating element squares to a central element.
 
 **Proposition (abelian group).** If $G$ is abelian then every inner conjugation is the identity, so every signed conjugation is the grade involution,
 
@@ -99,6 +99,6 @@ The construction degenerates when the grade involution is inner, in which case t
 ## Further Reading
 
 - Ian R. Porteous, *Clifford Algebras and the Classical Groups* (Cambridge University Press, 1995), for the generation of the orthogonal group by reflections, each carried by a vector and realised by a signed conjugation.
-- Pertti Lounesto, *Clifford Algebras and Spinors* (Cambridge University Press, second edition, 2001), for the reflection as a sandwich operator and its fixed hyperplane.
+- Pertti Lounesto, *Clifford Algebras and Spinors* (Cambridge University Press, second edition, 2001), for the reflection as a two-sided operator and its fixed hyperplane.
 - Max-Albert Knus, Alexander Merkurjev, Markus Rost and Jean-Pierre Tignol, *The Book of Involutions*, Colloquium Publications 44 (American Mathematical Society, 1998), for involutive automorphisms, inverted elements and fixed subgroups.
 - Derek J. S. Robinson, *A Course in the Theory of Groups* (Springer, second edition, 1996), for automorphisms of order two, centralisers and the structure of the automorphism group.

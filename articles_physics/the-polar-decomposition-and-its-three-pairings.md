@@ -38,7 +38,7 @@ Two distinctions organise the article and are worth naming at the start. A **pai
 | 3 | $\tilde U_{\Psi,\mathrm b}=\exp(i\tfrac{\tilde{Ξ}_{\mathrm{sp},w}}{2}\vec u_{\mathrm b})$ | boost | $i\tfrac{\tilde{Ξ}_{\mathrm{sp},w}}{2}\vec u_{\mathrm b}$ | $i\vec u_{\mathrm b}$ | $\tilde{Ξ}_{\mathrm{sp},w}\ge0$, $\vec u_{\mathrm b}\in\mathcal{A}$ | $3$ | congruence $X\mapsto \tilde U_{\Psi,\mathrm b}X\tilde U_{\Psi,\mathrm b}^{*}$ |
 | 4 | $\tilde u_{\mathrm r}=\exp(\tfrac{\theta}{2}\vec u_{\mathrm r})$ | rotor | $\tfrac{\theta}{2}\vec u_{\mathrm r}$ | $\vec u_{\mathrm r}$ | $\theta\in[0,2\pi]$, $\vec u_{\mathrm r}\in\mathcal{A}$ | $3$ | conjugation $X\mapsto \tilde u_{\mathrm r}X\tilde u_{\mathrm r}^{*}$ |
 
-The axis sphere $\mathcal{A}$ is the set of unit real pure quaternions, the roots of $-e_t$. The phase is the only factor whose action is not a sandwich; its action is scalar multiplication.
+The axis sphere $\mathcal{A}$ is the set of unit real pure quaternions, the roots of $-e_t$. The phase is the only factor whose action is not a two-sided operator; its action is scalar multiplication.
 
 The scale and the phase are central, the boost is Hermitian positive and non-compact, and the rotor is compact and real. The order of the factors is forced: the scale and the phase commute with everything, the boost stands on the left of the rotor, and the rotor is what remains after the Hermitian part is divided out. The word is unique once the branch of the square root is fixed.
 
@@ -261,7 +261,7 @@ The four objects called a boost are separated in *Norm and Pairing Conventions*,
 
 ## A Four-Vector Is Bilinear, a Spinor Is Linear
 
-The unit factor acts on a four-vector and on a spinor by two different laws: a four-vector transforms by the congruence $X\mapsto\tilde Q_0 X\tilde Q_0^{*}$, which is bilinear in the spinor when $X=\tilde{Ξ}_{\mathrm{sp}}\tilde{Ξ}_{\mathrm{sp}}^*$, and a spinor transforms by the left multiplication $\tilde{Ξ}_{\mathrm{sp}}\mapsto\tilde Q_0\tilde{Ξ}_{\mathrm{sp}}$. The first law is quadratic in the spinor, the second linear. The sandwich is the four-vector column of the representation theory and the left multiplication is the spinor column. The polar action on the two sectors is the four-vector action; the action on the spinor module is the left multiplication, and it is the one that carries the double cover and the sign of the spinor.
+The unit factor acts on a four-vector and on a spinor by two different laws: a four-vector transforms by the congruence $X\mapsto\tilde Q_0 X\tilde Q_0^{*}$, which is bilinear in the spinor when $X=\tilde{Ξ}_{\mathrm{sp}}\tilde{Ξ}_{\mathrm{sp}}^*$, and a spinor transforms by the left multiplication $\tilde{Ξ}_{\mathrm{sp}}\mapsto\tilde Q_0\tilde{Ξ}_{\mathrm{sp}}$. The first law is quadratic in the spinor, the second linear. The two-sided operator is the four-vector column of the representation theory and the left multiplication is the spinor column. The polar action on the two sectors is the four-vector action; the action on the spinor module is the left multiplication, and it is the one that carries the double cover and the sign of the spinor.
 
 A rotation through $2\pi$ gives $-\tilde Q_0$ on the spinor and $+\mathrm{id}$ on the four-vector, because the congruence by $-\tilde Q_0$ is the congruence by $\tilde Q_0$. The sign is visible only in the linear action.
 
@@ -269,8 +269,8 @@ A rotation through $2\pi$ gives $-\tilde Q_0$ on the spinor and $+\mathrm{id}$ o
 
 The word is the physical description of an element, and each factor has a reading.
 
-- The **scale** is the invariant length: the modulus of the four-position, $c$ for the four-velocity, $mc$ for the on-shell four-momentum. It is the only factor that survives the sandwich as a scalar, and it survives squared.
-- The **phase** is the timelike/spacelike label and the gauge phase. It is $\pi/2$ on the timelike cone and $0$ on the spacelike sheet; it is the central $\mathrm{U}(1)$ that the sandwich does not see.
+- The **scale** is the invariant length: the modulus of the four-position, $c$ for the four-velocity, $mc$ for the on-shell four-momentum. It is the only factor that survives the two-sided operator as a scalar, and it survives squared.
+- The **phase** is the timelike/spacelike label and the gauge phase. It is $\pi/2$ on the timelike cone and $0$ on the spacelike sheet; it is the central $\mathrm{U}(1)$ that the two-sided operator does not see.
 - The **boost** is the velocity: the axis and the word's rapidity $\theta_{\mathrm{rpd},w}$, which is twice the kinematic rapidity $\theta_{\mathrm{rpd}}$ when the element is a four-vector.
 - The **rotor** is the spin orientation: the rotation angle and axis of the spatial frame.
 

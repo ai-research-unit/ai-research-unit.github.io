@@ -2,11 +2,11 @@
 
 ## Introduction
 
-A spinor is an element of the Peirce carrier $C(\pi)=\mathrm{Cl}(V,\mathfrak{Q})\pi=\pi\mathrm{Cl}\pi\oplus(1-\pi)\mathrm{Cl}\pi$ of the Clifford algebra, on which the algebra acts by left multiplication. In this article the carrier is a minimal left ideal, and that is what makes the whole pin group, and not only its even part, act on spinors. The general definition of the carrier is *Spinors as Peirce Coordinates*; the Clifford case is *Peirce Carriers and Inner Conjugation*. The present article reads the same carrier with the signed Hermitian sandwich as the operator, and the Hermitian form as the structure on it.
+A spinor is an element of the Peirce carrier $C(\pi)=\mathrm{Cl}(V,\mathfrak{Q})\pi=\pi\mathrm{Cl}\pi\oplus(1-\pi)\mathrm{Cl}\pi$ of the Clifford algebra, on which the algebra acts by left multiplication. In this article the carrier is a minimal left ideal, and that is what makes the whole pin group, and not only its even part, act on spinors. The general definition of the carrier is *Spinors as Peirce Coordinates*; the Clifford case is *Peirce Carriers and Inner Conjugation*. The present article reads the same carrier with the signed Hermitian pair as the operator, and the Hermitian form as the structure on it.
 
 The carrier is a left ideal, so left multiplication by **every** element of the algebra carries it into itself, and the pin action on it is defined for all of $\mathrm{Pin}(V,\mathfrak{Q})$. The carrier is not homogeneous, $C(\pi)=C(\pi)^0\oplus C(\pi)^1$ with $C(\pi)^i=\mathrm{Cl}^i\pi$, and an odd element interchanges the two summands while an even element preserves them, so a spinor of the carrier has a parity decomposition and the odd part of the group swaps the components.
 
-The signed Hermitian sandwich is realised on the carrier by a conjugation of the Clifford multiplication with **two left multiplications**,
+The signed Hermitian pair is realised on the carrier by a conjugation of the Clifford multiplication with **two left multiplications**,
 
 $$
 \mathrm{Sd}^{\alpha}_x(v)\,\psi=\alpha(x)\,v\,x^{\dagger}\,\psi
@@ -55,7 +55,7 @@ and left multiplication by an even element preserves the two summands while left
 
 **Remark (the Hermitian pairing of the halves).** The Hermitian form of the ideal pairs only elements of the same parity, so $I^0$ and $I^1$ are orthogonal for it; the two summands are orthogonal chiral halves, and the Hermitian form restricts to each of them. This is the ideal-theoretic form of the orthogonality of the chiral summands of a Hermitian Clifford module, recorded in *The Blade Form and the Hermitian Structure with Hermitian Adjoint*.
 
-## The Signed Hermitian Sandwich on the Ideal
+## The Signed Hermitian Pair of Operators on the Ideal
 
 **Proposition (the operator realised by left multiplications).** For $x\in\mathrm{Cl}(V,\mathfrak{Q})$, $v\in V$ and $\psi\in I$,
 
@@ -64,7 +64,7 @@ $$
 =\rho(\alpha(x))\,\rho(v)\,\rho(x)^{*}\,\psi\;} .
 $$
 
-So the signed Hermitian sandwich is realised on the ideal as the conjugation of the Clifford multiplication by the left multiplication of $\alpha(x)$ and the **adjoint** of the left multiplication of $x$: the left factor is the signed left multiplication $\Lambda^{\alpha}_x$ and the right factor is the dagger right multiplication, read on the ideal as the adjoint operator $\rho(x)^{*}=\rho(x^{\dagger})$. On the unitary slice the adjoint is the inverse and the formula is that of the inverse formulation.
+So the signed Hermitian pair is realised on the ideal as the conjugation of the Clifford multiplication by the left multiplication of $\alpha(x)$ and the **adjoint** of the left multiplication of $x$: the left factor is the signed left multiplication $\Lambda^{\alpha}_x$ and the right factor is the dagger right multiplication, read on the ideal as the adjoint operator $\rho(x)^{*}=\rho(x^{\dagger})$. On the unitary slice the adjoint is the inverse and the formula is that of the inverse formulation.
 
 *Proof.* Both sides are the same product of three factors in the algebra, applied to $\psi$; the first factor is $\rho(\alpha(x))=\Lambda^{\alpha}_x$ and the third is $\rho(x^{\dagger})=\rho(x)^{*}$ by the adjoint proposition of the pin-representation article, since the ideal is a Hermitian Clifford module. On the slice $x^{\dagger}=x^{-1}$ and $\rho(x)^{*}=\rho(x)^{-1}$.
 
@@ -75,11 +75,11 @@ $$
 \rho(u)\,\rho(v)\,\rho(u)^{*}\,\psi=-\mathfrak{Q}(u)\,\rho_u(v)\,\psi\;} ,
 $$
 
-and on the unitary slice, $\mathfrak{Q}(u)=-1$, both reduce to $\rho_u(v)\psi$; the unsigned sandwich is the negative of this on the slice. So on the ideal the sandwich with a slice-normalised vector is the reflection, and the sign that the two-sided operator removes is $-\mathfrak{Q}(u)$, which is $+1$ exactly on the slice.
+and on the unitary slice, $\mathfrak{Q}(u)=-1$, both reduce to $\rho_u(v)\psi$; the unsigned two-sided operator is the negative of this on the slice. So on the ideal the two-sided operator with a slice-normalised vector is the reflection, and the sign that the two-sided operator removes is $-\mathfrak{Q}(u)$, which is $+1$ exactly on the slice.
 
 *Proof.* The first identity is the previous proposition with $x=u$ and the vector formula $\mathrm{Sd}^{\alpha}_u=-\mathfrak{Q}(u)\rho_u$; the second is the corollary of the pin-representation article.
 
-**Remark (the defect off the slice).** Off the slice the third factor of the operator is the adjoint, and the two-sided operator is not the conjugation by a unit: the element $x$ satisfies $\rho(x)\rho(x)^{*}=\rho(xx^{\dagger})$, which is the identity only when $xx^{\dagger}=1$, that is on the slice. So the ideal conjugation by a general element realises the Hermitian sandwich but not by a unitary operator, and that is the precise sense in which the Hermitian formulation needs the slice to produce unitarily the geometric operators.
+**Remark (the defect off the slice).** Off the slice the third factor of the operator is the adjoint, and the two-sided operator is not the conjugation by a unit: the element $x$ satisfies $\rho(x)\rho(x)^{*}=\rho(xx^{\dagger})$, which is the identity only when $xx^{\dagger}=1$, that is on the slice. So the ideal conjugation by a general element realises the Hermitian pair but not by a unitary operator, and that is the precise sense in which the Hermitian formulation needs the slice to produce unitarily the geometric operators.
 
 ## Worked Cases
 
@@ -108,26 +108,26 @@ $$
 \rho(e_1)\rho(e_2)\rho(e_1)^{*}\pi=e_1e_2e_1\pi,
 $$
 
-the same three factors: on the slice the adjoint is the inverse and the signed operator is the conjugation. The unsigned sandwich is the negative of this, $-e_1e_2e_1\pi$, and the parity sign is the only difference between the two computations, exactly as in the inverse formulation; the Hermitian reading adds that the third factor is $\rho(e_1)^{*}$ and that this is $\rho(e_1)^{-1}$ on the slice.
+the same three factors: on the slice the adjoint is the inverse and the signed operator is the conjugation. The unsigned two-sided operator is the negative of this, $-e_1e_2e_1\pi$, and the parity sign is the only difference between the two computations, exactly as in the inverse formulation; the Hermitian reading adds that the third factor is $\rho(e_1)^{*}$ and that this is $\rho(e_1)^{-1}$ on the slice.
 
 ### The Volume Element
 
-The volume element $\omega=e_1e_2e_3$ of the odd-dimensional algebra is odd, central and satisfies $\omega^{2}=-1$, so it is on the slice, and its Hermitian sandwich is the signed inner conjugation: $\mathrm{Sd}^{\alpha}_\omega=\mathrm{Ad}^{\alpha}_\omega=-\mathrm{id}$ while $\mathrm{Sd}_\omega=\mathrm{id}$. On the ideal, left multiplication by $\omega$ sends $I^0$ to $I^1$ and $I^1$ to $I^0$, and the signed Hermitian sandwich by $\omega$ acts as $-\mathrm{id}$ on the ideal, separating a spinor from its negative; the unsigned one is invisible. The adjoint of $\rho(\omega)$ is $\rho(\omega)^{*}=\rho(\bar{\omega})=\rho(\omega)$; on an odd number of skew-adjoint generators the two reversals cancel, so $\rho(\omega)$ is self-adjoint, and it is not the inverse, since $\bar{\omega}=\omega$ while $\omega^{-1}=-\omega$: the volume element is **not** on the slice, $\bar{\omega}\omega=\omega^{2}=-1$. The self-adjointness is nevertheless consistent with the sandwich acting as $-\mathrm{id}$, because the sandwich is the two-sided operator and not the one-sided factor.
+The volume element $\omega=e_1e_2e_3$ of the odd-dimensional algebra is odd, central and satisfies $\omega^{2}=-1$, so it is on the slice, and its Hermitian pair is the signed inner conjugation: $\mathrm{Sd}^{\alpha}_\omega=\mathrm{Ad}^{\alpha}_\omega=-\mathrm{id}$ while $\mathrm{Sd}_\omega=\mathrm{id}$. On the ideal, left multiplication by $\omega$ sends $I^0$ to $I^1$ and $I^1$ to $I^0$, and the signed Hermitian pair by $\omega$ acts as $-\mathrm{id}$ on the ideal, separating a spinor from its negative; the unsigned one is invisible. The adjoint of $\rho(\omega)$ is $\rho(\omega)^{*}=\rho(\bar{\omega})=\rho(\omega)$; on an odd number of skew-adjoint generators the two reversals cancel, so $\rho(\omega)$ is self-adjoint, and it is not the inverse, since $\bar{\omega}=\omega$ while $\omega^{-1}=-\omega$: the volume element is **not** on the slice, $\bar{\omega}\omega=\omega^{2}=-1$. The self-adjointness is nevertheless consistent with the two-sided operator acting as $-\mathrm{id}$, because the two-sided operator is the composite of both factors and not either one-sided factor alone.
 
 ### The Biquaternion Ideal
 
-For $\mathrm{Cl}_{1,3}(\mathbb{R})\cong M_2(\mathbb{H})$ the same construction gives an ideal whose elements are the biquaternion spinors, with the two summands playing the role of the two chiralities and the odd elements of the pin group exchanging them. In the physics corpus the sandwich is written $\tilde Q\,x\,\tilde{Q}^{*}$, which is the Hermitian sandwich of this article read in the biquaternion algebra, and it is an isometry on the slice, the Lorentz group there; the compatibility of the ideal with the Lorentz action is the subject of the applications layer and nothing of it is used here.
+For $\mathrm{Cl}_{1,3}(\mathbb{R})\cong M_2(\mathbb{H})$ the same construction gives an ideal whose elements are the biquaternion spinors, with the two summands playing the role of the two chiralities and the odd elements of the pin group exchanging them. In the physics corpus the two-sided operator is written $\tilde Q\,x\,\tilde{Q}^{*}$, which is the Hermitian pair of this article read in the biquaternion algebra, and it is an isometry on the slice, the Lorentz group there; the compatibility of the ideal with the Lorentz action is the subject of the applications layer and nothing of it is used here.
 
 ## Summary
 
-A **Peirce carrier** $I=\mathrm{Cl}(V,\mathfrak{Q})\pi$ is a left ideal and hence a Clifford module on which left multiplication by every element of the algebra is defined; when $\pi$ is primitive it is a minimal left ideal. The whole **pin group** acts on it by left multiplication, spinors are the elements of $I$, and on a simple algebra the action is faithful, with kernel $\mathrm{Pin}\cap(\{1\}\times A')$ over a product. The ideal is not homogeneous: it splits as $I=I^0\oplus I^1$ with $I^i=\mathrm{Cl}^i\pi$, the even elements preserve the two summands and the odd elements interchange them, and the Hermitian form of the ideal pairs only equal parities, so the two chiral halves are Hermitian-orthogonal. The signed Hermitian sandwich is realised on the carrier by conjugating the Clifford multiplication with two left multiplications,
+A **Peirce carrier** $I=\mathrm{Cl}(V,\mathfrak{Q})\pi$ is a left ideal and hence a Clifford module on which left multiplication by every element of the algebra is defined; when $\pi$ is primitive it is a minimal left ideal. The whole **pin group** acts on it by left multiplication, spinors are the elements of $I$, and on a simple algebra the action is faithful, with kernel $\mathrm{Pin}\cap(\{1\}\times A')$ over a product. The ideal is not homogeneous: it splits as $I=I^0\oplus I^1$ with $I^i=\mathrm{Cl}^i\pi$, the even elements preserve the two summands and the odd elements interchange them, and the Hermitian form of the ideal pairs only equal parities, so the two chiral halves are Hermitian-orthogonal. The signed Hermitian pair is realised on the carrier by conjugating the Clifford multiplication with two left multiplications,
 
 $$
 \mathrm{Sd}^{\alpha}_x(v)\psi=\rho(\alpha(x))\,\rho(v)\,\rho(x)^{*}\psi
 =\rho(\alpha(x))\,\rho(v)\,\rho(x^{\dagger})\psi ,
 $$
 
-the left factor being the **signed left multiplication** $\Lambda^{\alpha}_x$ and the right factor being the **adjoint** of the left multiplication of $x$, the Hermitian specificity of the picture; on the unitary slice the adjoint is the inverse and the formula coincides with the inverse formulation, off the slice the defect $\rho(xx^{\dagger})$ measures the failure of the conjugation to be by a unitary. For a slice-normalised vector $u$ the sandwich on the ideal is the reflection, $\mathrm{Sd}^{\alpha}_u(v)\psi=\rho_u(v)\psi$, while the unsigned sandwich is its negative; the central volume element of an odd-dimensional algebra acts on the ideal by exchanging the two chiral summands, and the signed Hermitian sandwich by it acts as $-\mathrm{id}$ where the unsigned one is invisible.
+the left factor being the **signed left multiplication** $\Lambda^{\alpha}_x$ and the right factor being the **adjoint** of the left multiplication of $x$, the Hermitian specificity of the picture; on the unitary slice the adjoint is the inverse and the formula coincides with the inverse formulation, off the slice the defect $\rho(xx^{\dagger})$ measures the failure of the conjugation to be by a unitary. For a slice-normalised vector $u$ the two-sided operator on the ideal is the reflection, $\mathrm{Sd}^{\alpha}_u(v)\psi=\rho_u(v)\psi$, while the unsigned two-sided operator is its negative; the central volume element of an odd-dimensional algebra acts on the ideal by exchanging the two chiral summands, and the signed Hermitian pair by it acts as $-\mathrm{id}$ where the unsigned one is invisible.
 
 ## Summary of Notation
 
@@ -137,7 +137,7 @@ the left factor being the **signed left multiplication** $\Lambda^{\alpha}_x$ an
 | $\mathrm{Pin}$ acts by $\rho(x)\psi=x\psi$ | Pin action, one-sided, defined for all of $\mathrm{Pin}$ |
 | $I=I^0\oplus I^1$, $I^i=\mathrm{Cl}^i\pi$ | Parity splitting; odd elements exchange the summands |
 | $\langle I^0,I^1\rangle=0$ | Hermitian orthogonality of the chiral halves |
-| $\mathrm{Sd}^{\alpha}_x(v)\psi=\rho(\alpha(x))\rho(v)\rho(x)^{*}\psi$ | Signed Hermitian sandwich on the ideal |
+| $\mathrm{Sd}^{\alpha}_x(v)\psi=\rho(\alpha(x))\rho(v)\rho(x)^{*}\psi$ | Signed Hermitian pair on the ideal |
 | $\rho(x)^{*}=\rho(x^{\dagger})=\rho(x)^{-1}$ on $U$ | Adjoint is the inverse on the slice |
 | $\rho(xx^{\dagger})$, the defect | Failure of the conjugation to be unitary off the slice |
 | $\mathrm{Sd}^{\alpha}_u(v)\psi=\rho_u(v)\psi$, $\mathfrak{Q}(u)=-1$ | Reflection on the ideal, on the slice |

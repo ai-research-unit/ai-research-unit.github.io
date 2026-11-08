@@ -3,11 +3,11 @@
 
 ## Introduction
 
-Every two-sided operator of *Two-Sided Operators on a Clifford Algebra* is a product of two factors, one multiplying on the left and one on the right. This article treats the factors themselves. A **one-sided operator** is a left multiplication $y\mapsto a\,y$ or a right multiplication $y\mapsto y\,b$, together with the variants in which the multiplying element is replaced by its image under the grade involution or by its image under an anti-involution. The one-sided operators are the elementary operators out of which the two-sided family is built, and they are the operators for which the Hermitian adjoint has the cleanest form.
+Every two-sided operator of *The Family of Two-Sided Operators on a Clifford Algebra* is a product of two factors, one multiplying on the left and one on the right. This article treats the factors themselves. A **one-sided operator** is a left multiplication $y\mapsto a\,y$ or a right multiplication $y\mapsto y\,b$, together with the variants in which the multiplying element is replaced by its image under the grade involution or by its image under an anti-involution. The one-sided operators are the elementary operators out of which the two-sided family is built, and they are the operators for which the Hermitian adjoint has the cleanest form.
 
 Two facts organise the theory. The first is that the two one-sided families are separately multiplicative, with the same order of composition, even though the right factor carries an anti-automorphism; this is why a product of two elements gives the composites in both families and why the homogeneity of a two-sided operator follows from its two factors. The second is that the **adjoint of a one-sided operator is the one-sided operator of the dagger**: $L_a^{*} = L_{a^{\dagger}}$ and $R_b^{*} = R_{b^{\dagger}}$. From that identity the whole Hermitian theory of the one-sided operators follows in three lines: an operator is self-adjoint when its element is, it is skew-adjoint when its element is, and it is unitary exactly when its element lies in the unitary slice. The left and the right multiplications are mutual commutants, and the algebra they generate is the image of the enveloping algebra $\mathrm{Cl}(V,\mathfrak{Q})\otimes_F\mathrm{Cl}(V,\mathfrak{Q})_{\mathrm{opp}}$, which is the whole endomorphism algebra exactly when the Clifford algebra is central simple over the base and a proper subalgebra otherwise; this is the double centraliser theorem read in this setting, and the failure of generation is worked out in *One-Sided Operators on a Clifford Algebra*.
 
-The algebra and the dagger are *Hermitian Algebras*; the two-sided family and the composition law are *Two-Sided Operators on a Clifford Algebra*; the scalar forms and the adjoints of left and right multiplication are *The Blade Form and the Hermitian Structure with Hermitian Adjoint*, from which the identity $L_x^{*} = L_{x^{\dagger}}$ is taken; the Hermitian structures on modules are *Hermitian Modules over a Hermitian Algebra with Hermitian Adjoint*; the unitary slice is *The Unitary Slice and the Compact Real Form with Hermitian Adjoint*; the left ideals and the spinor module are *Peirce Carriers and Inner Conjugation*; and the adjoint of the one-sided action on a module is *The Adjoint of the One-Sided Action with Hermitian Adjoint*.
+The algebra and the dagger are *Hermitian Algebras*; the two-sided family and the composition law are *The Family of Two-Sided Operators on a Clifford Algebra*; the scalar forms and the adjoints of left and right multiplication are *The Blade Form and the Hermitian Structure with Hermitian Adjoint*, from which the identity $L_x^{*} = L_{x^{\dagger}}$ is taken; the Hermitian structures on modules are *Hermitian Modules over a Hermitian Algebra with Hermitian Adjoint*; the unitary slice is *The Unitary Slice and the Compact Real Form with Hermitian Adjoint*; the left ideals and the spinor module are *Peirce Carriers and Inner Conjugation*; and the adjoint of the one-sided action on a module is *The Adjoint of the One-Sided Action with Hermitian Adjoint*.
 
 ## The Two One-Sided Families
 
@@ -35,7 +35,7 @@ $$
 \Lambda^{\mathrm{J}}_x\circ\mathrm P^{c}_z = \mathrm P^{c}_z\circ\Lambda^{\mathrm{J}}_x ,
 $$
 
-and the two-sided operator of *Two-Sided Operators on a Clifford Algebra* is their product,
+and the two-sided operator of *The Family of Two-Sided Operators on a Clifford Algebra* is their product,
 
 $$
 \Phi^{\mathrm{J},c}_x = \Lambda^{\mathrm{J}}_x\circ\mathrm P^{c}_x = L_{\mathrm{J}(x)}\,R_{c(x)} .

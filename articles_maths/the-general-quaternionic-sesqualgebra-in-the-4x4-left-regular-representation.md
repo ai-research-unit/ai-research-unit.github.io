@@ -12,7 +12,7 @@ The regular matrix is block diagonal, $I_2\otimes\mathsf M_2(\tilde Q)$. The adj
 
 **Conventions.** The algebra is $\mathbb B=\mathbb C\otimes_{\mathbb R}\mathbb H$, with $\langle\tilde Q\rangle_{\natural}=Q_t^2+Q_x^2+Q_y^2+Q_z^2$ and $\mathsf M_2(\tilde Q)=\begin{pmatrix}Q_t-iQ_z&-iQ_x-Q_y\\-iQ_x+Q_y&Q_t+iQ_z\end{pmatrix}$. The natural conjugation is ${}^{\natural}$, the coefficientwise conjugation is $\bar{\cdot}$, and the Hermitian conjugation is ${}^{*}=\bar{\cdot}\circ{}^{\natural}$. The Krein form is $\langle\tilde Q_1,\tilde Q_2\rangle_{\natural*}=\mathrm{Sc}(\tilde Q_1^{\natural}\tilde Q_2^{*})$.
 
-**Boundaries.** The representation is *$M_4(\mathbb{C})$ Axis-Free Representation*; the operator reading is *Operators Acting 2 Side*. The $2\times2$ companion is *The General Quaternionic Sesqualgebra in the $2\times2$ Matrix Element Representation*; the form is *The Four Forms and the Four Algebraic Norms over the Biquaternion Algebra*; the operators are *J-Self-Adjoint and J-Unitary Operators on the General Quaternionic Sesqualgebra*.
+**Boundaries.** The representation is *$M_4(\mathbb{C})$ Axis-Free Representation*; the operator reading is *Operators Acting on Two Sides*. The $2\times2$ companion is *The General Quaternionic Sesqualgebra in the $2\times2$ Matrix Element Representation*; the form is *The Four Forms and the Four Algebraic Norms over the Biquaternion Algebra*; the operators are *J-Self-Adjoint and J-Unitary Operators on the General Quaternionic Sesqualgebra*.
 
 ## The Representation
 
@@ -173,7 +173,7 @@ In the canonical frame the left regular representation is $\mathsf M_{4L}(\tilde
 ## Further Reading
 
 - [The $M_4(\mathbb{C})$ Axis-Free Representation](m4c-axis-free-representation.html), for the representation and its first properties
-- [Operators Acting 2 Side](operators-acting-2-side.html), for the operator reading
+- [Operators Acting on Two Sides](operators-acting-on-two-sides.html), for the operator reading
 - [The Four Forms and the Four Algebraic Norms over the Biquaternion Algebra](the-four-forms-and-the-four-algebraic-norms-over-the-biquaternion-algebra.html), for the form on the algebra
 - [J-Self-Adjoint and J-Unitary Operators on the General Quaternionic Sesqualgebra](j-self-adjoint-and-j-unitary-operators-on-the-general-quaternionic-sesqualgebra.html), for the operators of the form
 - [$M_2(\mathbb C)$ Representation : The General Quaternionic Sesqualgebra of Biquaternions](m2c-representation-the-general-quaternionic-sesqualgebra-of-biquaternions.html), for the companion reading of the group

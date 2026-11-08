@@ -8,7 +8,7 @@
 
 **The three numbers.** The parametrisation has $2n^{2}$ complex parameters, its generic fibre is a single scaling orbit of dimension one, and the image has dimension $2n^{2}-1$. At $n=2$ this is $8-1=7$, the dimension of the cone of the biquaternion algebra; at $n=3$ it is $17$; at $n=4$ it is $31$.
 
-**Boundaries.** The one-sided families are *The One-Sided Operators of $M_n(\mathbb{C})$*; the general construction is *The Regular Representation in Dimension $n$*; the coefficient array and the length are *The Length and the Two Ranks on $M_n(\mathbb{C})$*; the sandwich, the adjoints and the difference family are *The Sandwich, the Difference Family and the Adjoints of $M_n(\mathbb{C})$*. At $n=2$ the abstract family is *Operators Acting 2 Side*, the frame and the sixteen basis operators are *$M_4(\mathbb{C})$ Pauli Representation : Operators*, and the entry-by-entry array is *The Coefficient Matrix of a Two-Sided Operator: A Worked Computation*. The Hermitian sandwich is Part V.
+**Boundaries.** The one-sided families are *The One-Sided Operators of $M_n(\mathbb{C})$*; the general construction is *The Regular Representation in Dimension $n$*; the coefficient array and the length are *The Length and the Two Ranks on $M_n(\mathbb{C})$*; the two-sided operator, the adjoints and the difference family are *The Two-Sided Operator, the Difference Family and the Adjoints of $M_n(\mathbb{C})$*. At $n=2$ the abstract family is *Operators Acting on Two Sides*, the frame and the sixteen basis operators are *$M_4(\mathbb{C})$ Pauli Representation : Operators*, and the entry-by-entry array is *The Coefficient Matrix of a Two-Sided Operator: A Worked Computation*. The Hermitian pair is Part V.
 
 **Conventions.** The algebra is $A=M_{n}(\mathbb{C})$ of complex dimension $N=n^{2}$; the operator space is $\operatorname{End}(A)$, of dimension $N^{2}=n^{4}$. The operator is $L_{A}R_{B}$, acting by $L_{A}R_{B}(X)=AXB$. In the column-stacking basis $L_{A}=\mathrm I_{n}\otimes A$, $R_{B}=B^{\mathsf T}\otimes\mathrm I_{n}$ and therefore
 $$
@@ -187,7 +187,7 @@ and it is the image of $\mathrm{GL}_{n}(\mathbb{C})\times\mathrm{GL}_{n}(\mathbb
 
 **The monoid is not a group and the failure is the zero.** The product set contains the zero operator, which has no inverse, so the family is a monoid with zero. It is regular in the semigroup sense: every member has a generalised inverse, because $L_{A}R_{B}L_{A^{-}}R_{B^{-}}L_{A}R_{B}$ for a reflexive generalised inverse $A^{-}$ of $A$ and $B^{-}$ of $B$.
 
-## The Two Boundaries and the Sandwich
+## The Two Boundaries and the Two-Sided Operator
 
 **The left and right boundaries.** The two copies are the boundary cases of the cone:
 $$
@@ -195,13 +195,13 @@ L_{A}R_{I}=L_{A},\qquad L_{I}R_{B}=R_{B},
 $$
 of dimension $n^{2}$ each inside the cone of dimension $2n^{2}-1$. Their intersection is the scalars. A generic product lies in neither copy, and the generic product is not a one-sided operator.
 
-**The sandwich.** The **sandwich** is the member with the second parameter the conjugate transpose of the first,
+**The two-sided operator.** The **two-sided operator** is the member with the second parameter the conjugate transpose of the first,
 $$
 \mathrm{Sd}_{A}=L_{A}R_{A^{*}},\qquad \mathrm{Sd}_{A}(X)=AXA^{*}.
 $$
-It is a real subcone of the complex cone, of real dimension $2n^{2}-1$, and it is the subject of *The Sandwich, the Difference Family and the Adjoints of $M_n(\mathbb{C})$*. The word *Hermitian* in the biquaternion articles refers to the same choice of the second slot, and the subcone is real and not complex because the star is antilinear.
+It is a real subcone of the complex cone, of real dimension $2n^{2}-1$, and it is the subject of *The Two-Sided Operator, the Difference Family and the Adjoints of $M_n(\mathbb{C})$*. The word *Hermitian* in the biquaternion articles refers to the same choice of the second slot, and the subcone is real and not complex because the star is antilinear.
 
-**The diagonal of the pair space.** The products with $A=B$ form the **diagonal subcone** $\{L_{A}R_{A}\}$ of complex dimension $n^{2}$, on which the scaling acts by $\lambda^{2}$ and not by $\lambda$. The diagonal is not the sandwich: it is complex, of dimension $n^{2}$, and it is not the set of self-adjoint products either, since the dagger of $L_{A}R_{A}$ is $L_{A^{*}}R_{A^{*}}$, again diagonal, and it equals $L_{A}R_{A}$ only when $A$ is a scalar multiple of a normal matrix.
+**The diagonal of the pair space.** The products with $A=B$ form the **diagonal subcone** $\{L_{A}R_{A}\}$ of complex dimension $n^{2}$, on which the scaling acts by $\lambda^{2}$ and not by $\lambda$. The diagonal is not the two-sided operator: it is complex, of dimension $n^{2}$, and it is not the set of self-adjoint products either, since the dagger of $L_{A}R_{A}$ is $L_{A^{*}}R_{A^{*}}$, again diagonal, and it equals $L_{A}R_{A}$ only when $A$ is a scalar multiple of a normal matrix.
 
 ## The Case $n=2$
 
@@ -219,7 +219,7 @@ The two-sided operator $L_{A}R_{B}(X)=AXB$ has the matrix $B^{\mathsf T}\otimes 
 
 The rank of a product is the product of the ranks, so the attained ranks are the products $rs$ with $0\le r,s\le n$; the trace is the product of the traces and the determinant is the $n$-th power of the product of the determinants. The products compose by $L_{A}R_{B}L_{C}R_{D}=L_{AC}R_{DB}$, so the family is a monoid with zero whose group of units is $(\mathrm{GL}_{n}\times\mathrm{GL}_{n})/\mathbb{C}^{\times}$, of complex dimension $2n^{2}-1$.
 
-The two one-sided copies are the two rulings of the cone and meet in the scalars; the sandwich $\mathrm{Sd}_{A}=L_{A}R_{A^{*}}$ is a real subcone of real dimension $2n^{2}-1$; the diagonal $\{L_{A}R_{A}\}$ is a complex subcone of complex dimension $n^{2}$. **The cone is not a subspace and not a group, and every property of the two-sided operators follows from the one fact that its members are the pure tensors of a tensor square.**
+The two one-sided copies are the two rulings of the cone and meet in the scalars; the two-sided operator $\mathrm{Sd}_{A}=L_{A}R_{A^{*}}$ is a real subcone of real dimension $2n^{2}-1$; the diagonal $\{L_{A}R_{A}\}$ is a complex subcone of complex dimension $n^{2}$. **The cone is not a subspace and not a group, and every property of the two-sided operators follows from the one fact that its members are the pure tensors of a tensor square.**
 
 ## Summary of Notation
 
@@ -231,7 +231,7 @@ The two one-sided copies are the two rulings of the cone and meet in the scalars
 | $N=n^{2}$ | the dimension of the algebra |
 | $2n^{2}-1$ | the complex dimension of the cone |
 | $\mathbb{P}^{n^{2}-1}\times\mathbb{P}^{n^{2}-1}$ | the Segre variety of the projectivised cone |
-| $\mathrm{Sd}_{A}=L_{A}R_{A^{*}}$ | the sandwich |
+| $\mathrm{Sd}_{A}=L_{A}R_{A^{*}}$ | the two-sided operator |
 | $(\mathrm{GL}_{n}\times\mathrm{GL}_{n})/\mathbb{C}^{\times}$ | the group of units of the monoid |
 | $\ell$ | the length, treated in the companion article |
 
@@ -242,5 +242,5 @@ The two one-sided copies are the two rulings of the cone and meet in the scalars
 - [The One-Sided Operators of $M_n(\mathbb{C})$](the-one-sided-operators-of-mnc.html), for the two rulings of the cone.
 - [The Regular Representation in Dimension $n$](the-regular-representation-in-dimension-n.html), for the tensor form and the ladder.
 - [The Length and the Two Ranks on $M_n(\mathbb{C})$](the-length-and-the-two-ranks-on-mnc.html), for the coefficient array which cuts the cone out by minors.
-- [Operators Acting 2 Side](operators-acting-2-side.html), for the abstract family at $n=2$.
+- [Operators Acting on Two Sides](operators-acting-on-two-sides.html), for the abstract family at $n=2$.
 - [$M_4(\mathbb{C})$ Pauli Representation : Operators](m4c-pauli-representation-operators.html), for the sixteen basis operators and the Peirce gauge.

@@ -8,7 +8,7 @@ $$
 Q_1 \star Q_2 = Q_1\bar Q_2 ,
 $$
 
-the product whose second slot is read through the conjugation, and it is the **general plain sesquilinear product** of the space: $\mathbb{C}_{\mathrm{spl}}$-linear in the first argument, $\bar\cdot$-semilinear in the second, additive in each. This article builds the **sesqualgebra** it defines. Unlike the plain product it is neither associative nor two-sidedly unital, and the structure that survives is the one that does not need associativity: the right unit alone, the associator, the ternary product, the two families of one-sided multiplications, the sandwich, the adjoint with respect to the Hermitian form, and the commutator with its symmetrisation.
+the product whose second slot is read through the conjugation, and it is the **general plain sesquilinear product** of the space: $\mathbb{C}_{\mathrm{spl}}$-linear in the first argument, $\bar\cdot$-semilinear in the second, additive in each. This article builds the **sesqualgebra** it defines. Unlike the plain product it is neither associative nor two-sidedly unital, and the structure that survives is the one that does not need associativity: the right unit alone, the associator, the ternary product, the two families of one-sided multiplications, the two-sided operator, the adjoint with respect to the Hermitian form, and the commutator with its symmetrisation.
 
 The results are simpler than in the four-dimensional case and sharper than in the complex one. The product has a right unit and no left one, and its associator is
 
@@ -16,7 +16,7 @@ $$
 (Q_1 \star Q_2) \star Q_3 - Q_1 \star (Q_2 \star Q_3) = Q_1\bar Q_2\,(\bar Q_3 - Q_3),
 $$
 
-which vanishes exactly when the third factor is real; the ternary product $\{Q_1,Q_2,Q_3\} = Q_1\bar Q_2 Q_3$ restores the Jordan triple identity and makes $\mathbb{C}_{\mathrm{spl}}$ an algebraic $J^{*}$-algebra. The right multiplications $R_Q$ generate the opposite monoid of the multiplicative monoid of $\mathbb{C}_{\mathrm{spl}}$, while the left ones $L_Q$ do not close; the sandwich $X \mapsto Q_1X\bar Q_2$ decomposes into one ordinary and one sesquilinear multiplication and is adjoint to the sandwich with the parameters exchanged; and the commutator $Q_1\bar Q_2 - Q_2\bar Q_1 = 2(q'_1q_2 - q_1q'_2)j$ lies on the split imaginary line, its halved antisymmetrisation is the area form and its symmetrisation is the scalar form $q_1q_2 - q'_1q'_2$ that the norm polarises. The bracket defined by the commutator satisfies the Jacobi identity.
+which vanishes exactly when the third factor is real; the ternary product $\{Q_1,Q_2,Q_3\} = Q_1\bar Q_2 Q_3$ restores the Jordan triple identity and makes $\mathbb{C}_{\mathrm{spl}}$ an algebraic $J^{*}$-algebra. The right multiplications $R_Q$ generate the opposite monoid of the multiplicative monoid of $\mathbb{C}_{\mathrm{spl}}$, while the left ones $L_Q$ do not close; the two-sided operator $X \mapsto Q_1X\bar Q_2$ decomposes into one ordinary and one sesquilinear multiplication and is adjoint to the two-sided operator with the parameters exchanged; and the commutator $Q_1\bar Q_2 - Q_2\bar Q_1 = 2(q'_1q_2 - q_1q'_2)j$ lies on the split imaginary line, its halved antisymmetrisation is the area form and its symmetrisation is the scalar form $q_1q_2 - q'_1q'_2$ that the norm polarises. The bracket defined by the commutator satisfies the Jacobi identity.
 
 ## The Product and Its Two Slots
 
@@ -171,9 +171,9 @@ where $M_Q(X) = QX$ is the ordinary left multiplication. In particular $L_{Q_1} 
 
 So the two one-sided families behave differently, and the asymmetry is the one of the general theory: the right family is a monoid, isomorphic to the opposite of the multiplicative monoid of the ring, while the left family is not closed and its products fall back into the ordinary multiplications. This is the split-complex form of the statement that the left and right multiplications fail to coincide and generate an opposite monoid.
 
-### The Sandwich
+### The Two-Sided Operator
 
-**Definition.** The **sesquilinear sandwich** by the parameters $Q_1, Q_2 \in \mathbb{C}_{\mathrm{spl}}$ is the map
+**Definition.** The **sesquilinear two-sided operator** by the parameters $Q_1, Q_2 \in \mathbb{C}_{\mathrm{spl}}$ is the map
 
 $$
 \mathcal{T}_{Q_1,Q_2} : X \longmapsto Q_1\,X\,\bar Q_2 .
@@ -185,15 +185,15 @@ $$
 \mathcal{T}_{Q_1,Q_2} = M_{Q_1} \circ R_{Q_2} = R_{Q_2} \circ M_{Q_1} ,
 $$
 
-the two orders agreeing because $\mathbb{C}_{\mathrm{spl}}$ is commutative, and it is therefore the split-complex form of the sandwich $X \mapsto Q_1X\bar Q_2$. The parameters specialise as
+the two orders agreeing because $\mathbb{C}_{\mathrm{spl}}$ is commutative, and it is therefore the split-complex form of the two-sided operator $X \mapsto Q_1X\bar Q_2$. The parameters specialise as
 
 $$
 \mathcal{T}_{1,1} = \mathrm{id}, \qquad \mathcal{T}_{Q_1,1} = M_{Q_1}, \qquad \mathcal{T}_{1,Q_2} = R_{Q_2}, \qquad \mathcal{T}_{Q_1,Q_2}(1) = Q_1\bar Q_2 = Q_1 \star Q_2 ;
 $$
 
-the sandwich at the unit is the product, and the two families of one-sided multiplications are the two degenerate sandwiches.
+the two-sided operator at the unit is the product, and the two families of one-sided multiplications are the two degenerate two-sided operators.
 
-**Proposition.** The sandwich is $\mathbb{C}_{\mathrm{spl}}$-linear in $X$, and its value at $1$ is the sesquilinear product $Q_1 \star Q_2$. Its composite with another sandwich is again a sandwich,
+**Proposition.** The two-sided operator is $\mathbb{C}_{\mathrm{spl}}$-linear in $X$, and its value at $1$ is the sesquilinear product $Q_1 \star Q_2$. Its composite with another two-sided operator is again a two-sided operator,
 
 $$
 \boxed{\;
@@ -203,7 +203,7 @@ $$
 
 **Proof.** Direct substitution, using the associativity of the plain product and the multiplicativity of the conjugation: $\mathcal{T}_{Q_1,Q_2}(\mathcal{T}_{Q_3,Q_4}(X)) = Q_1(Q_3X\bar Q_4)\bar Q_2 = (Q_1Q_3)X\bar Q_4\bar Q_2 = (Q_1Q_3)X\overline{Q_2Q_4} = \mathcal{T}_{Q_1Q_3,Q_2Q_4}(X)$.
 
-So the sandwiches form a monoid under composition, isomorphic to the product of the multiplicative monoid of $\mathbb{C}_{\mathrm{spl}}$ with itself via $(Q_1,Q_2) \mapsto \mathcal{T}_{Q_1,Q_2}$; in particular the sandwich $\mathcal{T}_{Q_1,Q_2}$ is invertible exactly when both $Q_1$ and $Q_2$ are units, with inverse $\mathcal{T}_{Q_1^{-1},Q_2^{-1}}$.
+So the two-sided operators form a monoid under composition, isomorphic to the product of the multiplicative monoid of $\mathbb{C}_{\mathrm{spl}}$ with itself via $(Q_1,Q_2) \mapsto \mathcal{T}_{Q_1,Q_2}$; in particular the two-sided operator $\mathcal{T}_{Q_1,Q_2}$ is invertible exactly when both $Q_1$ and $Q_2$ are units, with inverse $\mathcal{T}_{Q_1^{-1},Q_2^{-1}}$.
 
 ## The Hermitian Form and the Adjoints
 
@@ -223,7 +223,7 @@ the symmetric bilinear form $g$ that the norm polarises, of signature $(1,1)$.
 
 **Definition (adjoint).** For a $\mathbb{C}_{\mathrm{spl}}$-linear map $T$ the **adjoint** is the $\mathbb{C}_{\mathrm{spl}}$-linear map $T^{*}$ with $\langle TX,Y\rangle_{*} = \langle X,T^{*}Y\rangle_{*}$ for all $X,Y$; for a $\bar\cdot$-semilinear map $T$ the adjoint is the $\bar\cdot$-semilinear map $T^{*}$ with $\langle TX,Y\rangle_{*} = \overline{\langle X,T^{*}Y\rangle_{*}}$.
 
-**Theorem.** The adjoints of the one-sided multiplications and of the sandwich are
+**Theorem.** The adjoints of the one-sided multiplications and of the two-sided operator are
 
 $$
 \boxed{\;
@@ -231,7 +231,7 @@ M_Q^{*} = M_{\bar Q}, \qquad R_Q^{*} = M_Q, \qquad L_Q^{*} = L_Q, \qquad \mathca
 \;}.
 $$
 
-In particular the ordinary multiplication by a real element is self-adjoint, $M_t^{*} = M_t$ for $t \in \mathbb{R}$; the left multiplication is self-adjoint; and the sandwich is adjoint to the sandwich with the parameters exchanged.
+In particular the ordinary multiplication by a real element is self-adjoint, $M_t^{*} = M_t$ for $t \in \mathbb{R}$; the left multiplication is self-adjoint; and the two-sided operator is adjoint to the two-sided operator with the parameters exchanged.
 
 **Proof.** Compute each defining identity.
 - $\langle M_Q X, Q_1\rangle_{*} = (QX)\bar Q_1 = QX\bar Q_1$ and $\langle X, M_{\bar Q} Q_1\rangle_{*} = X\overline{\bar Q Q_1} = X Q\bar Q_1$, equal by commutativity.
@@ -239,19 +239,19 @@ In particular the ordinary multiplication by a real element is self-adjoint, $M_
 - $\langle L_Q X, Q_1\rangle_{*} = (Q\bar X)\bar Q_1 = Q\bar X\bar Q_1$ and $\overline{\langle X, L_Q Q_1\rangle_{*}} = \overline{X\overline{Q\bar Q_1}} = \bar X Q\bar Q_1$, equal, so $L_Q$ is self-adjoint.
 - Since $\mathcal{T}_{Q_1,Q_2} = M_{Q_1} \circ R_{Q_2}$, its adjoint is $\mathcal{T}_{Q_1,Q_2}^{*} = R_{Q_2}^{*} \circ M_{Q_1}^{*} = M_{Q_2} \circ M_{\bar Q_1} = M_{Q_2\bar Q_1}$; and $\mathcal{T}_{Q_2,Q_1}(X) = Q_2X\bar Q_1 = Q_2\bar Q_1 X = M_{Q_2\bar Q_1}(X)$, so the two agree.
 
-**Examples.** Take $Q_1 = 1$ and $Q_2 = j$: the sandwich is $\mathcal{T}_{1,j}(X) = X\bar j = -Xj$, and its adjoint is $\mathcal{T}_{j,1}(X) = jX$, as the theorem requires. Take $Q_1 = Q_2 = \Pi_1$: the sandwich is
+**Examples.** Take $Q_1 = 1$ and $Q_2 = j$: the two-sided operator is $\mathcal{T}_{1,j}(X) = X\bar j = -Xj$, and its adjoint is $\mathcal{T}_{j,1}(X) = jX$, as the theorem requires. Take $Q_1 = Q_2 = \Pi_1$: the two-sided operator is
 
 $$
 \mathcal{T}_{\Pi_1,\Pi_1}(X) = \Pi_1 X \bar\Pi_1 = \Pi_1 X \Pi_2 = 0
 $$
 
-for every $X$, since $\bar\Pi_1 = \Pi_2$ and $\Pi_1\Pi_2 = 0$; the zero map is self-adjoint, and indeed $\mathcal{T}_{\Pi_1,\Pi_1}^{*} = \mathcal{T}_{\Pi_1,\Pi_1}$ because the parameters are equal. Take $Q_1 = \Pi_1$ and $Q_2 = \Pi_2$, and write $X=x_+\Pi_1+x_-\Pi_2$: the sandwich is the projection onto the first idempotent line,
+for every $X$, since $\bar\Pi_1 = \Pi_2$ and $\Pi_1\Pi_2 = 0$; the zero map is self-adjoint, and indeed $\mathcal{T}_{\Pi_1,\Pi_1}^{*} = \mathcal{T}_{\Pi_1,\Pi_1}$ because the parameters are equal. Take $Q_1 = \Pi_1$ and $Q_2 = \Pi_2$, and write $X=x_+\Pi_1+x_-\Pi_2$: the two-sided operator is the projection onto the first idempotent line,
 
 $$
 \mathcal{T}_{\Pi_1,\Pi_2}(X) = \Pi_1 X \bar\Pi_2 = \Pi_1 X \Pi_1 = x_+\Pi_1 ,
 $$
 
-and its adjoint is the projection onto the second, $\mathcal{T}_{\Pi_2,\Pi_1}(X) = \Pi_2 X \Pi_2 = x_-\Pi_2$. The two projections onto the idempotent lines are therefore mutually adjoint, although they are idempotents of the sandwich monoid and not of the algebra in the same sense.
+and its adjoint is the projection onto the second, $\mathcal{T}_{\Pi_2,\Pi_1}(X) = \Pi_2 X \Pi_2 = x_-\Pi_2$. The two projections onto the idempotent lines are therefore mutually adjoint, although they are idempotents of the two-sided monoid and not of the algebra in the same sense.
 
 ## The Commutator and the Symmetrisation
 
@@ -318,13 +318,13 @@ The same construction over the complex field reads:
 
 The associator, the right unit and the ternary product are the same formulas in the two cases, because they use only the associativity of the base and the multiplicativity of the conjugation. The difference is entirely in the **form** and in the **direction of the commutator**. In $\mathbb{C}$ the symmetrisation recovers the positive-definite Euclidean form $ac+a'c'$, and the commutator lies on the imaginary axis, the direction of the rotation $i$ with $i^2 = -1$; in $\mathbb{C}_{\mathrm{spl}}$ the symmetrisation recovers the indefinite form $q_1q_2-q'_1q'_2$ of signature $(1,1)$, and the commutator lies on the split imaginary line, the direction of the hyperbolic unit $j$ with $j^2 = +1$. The two signs are the same sign: the flip of the square of the unit is the flip of the definiteness of the form, because the norm and the form are built from the same product by the same conjugation.
 
-On $\mathbb{C}_{\mathrm{spl}}$ the base involution of the coefficient ring is trivial and the ring is commutative, so the formulas simplify: the two halves of the product are a scalar and a split-imaginary element rather than a central scalar and a vector part, and the sandwich monoid is commutative.
+On $\mathbb{C}_{\mathrm{spl}}$ the base involution of the coefficient ring is trivial and the ring is commutative, so the formulas simplify: the two halves of the product are a scalar and a split-imaginary element rather than a central scalar and a vector part, and the two-sided monoid is commutative.
 
 ## Summary
 
 The split-complex space carries the sesquilinear product $Q_1 \star Q_2 = Q_1\bar Q_2$, $\mathbb{C}_{\mathrm{spl}}$-linear in the first slot and $\bar\cdot$-semilinear in the second; it is the derived operation of the algebra with its conjugation, and it is neither associative nor two-sidedly unital. The element $1$ is a right unit and not a left one, and there is no two-sided unit. The associator is $[Q_1,Q_2,Q_3] = Q_1\bar Q_2(\bar Q_3-Q_3)$, nonzero exactly when the third factor is not real, with the witness $[j,j,j] = 2j$; the ternary product $\{Q_1,Q_2,Q_3\} = Q_1\bar Q_2 Q_3$ restores the Jordan triple identity and makes $\mathbb{C}_{\mathrm{spl}}$ an algebraic $J^{*}$-algebra.
 
-The right multiplications satisfy $R_{Q_1} \circ R_{Q_2} = R_{Q_2Q_1}$ and form the opposite monoid of $(\mathbb{C}_{\mathrm{spl}},\cdot)$; the left multiplications satisfy $L_{Q_1} \circ L_{Q_2} = M_{Q_1\bar Q_2}$ and do not close, and $L_1$ is the conjugation while $R_1$ is the identity. The sandwich $\mathcal{T}_{Q_1,Q_2}(X) = Q_1X\bar Q_2$ is the composite of an ordinary and a sesquilinear multiplication, and the sandwiches form a monoid with $\mathcal{T}_{Q_1,Q_2} \circ \mathcal{T}_{Q_3,Q_4} = \mathcal{T}_{Q_1Q_3,Q_2Q_4}$. With respect to the Hermitian form $\langle Q_1,Q_2\rangle_{*} = Q_1\bar Q_2$, the adjoints are $M_Q^{*} = M_{\bar Q}$, $R_Q^{*} = M_Q$, $L_Q^{*} = L_Q$ and $\mathcal{T}_{Q_1,Q_2}^{*} = \mathcal{T}_{Q_2,Q_1}$; the two projections onto the idempotent lines are mutually adjoint.
+The right multiplications satisfy $R_{Q_1} \circ R_{Q_2} = R_{Q_2Q_1}$ and form the opposite monoid of $(\mathbb{C}_{\mathrm{spl}},\cdot)$; the left multiplications satisfy $L_{Q_1} \circ L_{Q_2} = M_{Q_1\bar Q_2}$ and do not close, and $L_1$ is the conjugation while $R_1$ is the identity. The two-sided operator $\mathcal{T}_{Q_1,Q_2}(X) = Q_1X\bar Q_2$ is the composite of an ordinary and a sesquilinear multiplication, and the two-sided operators form a monoid with $\mathcal{T}_{Q_1,Q_2} \circ \mathcal{T}_{Q_3,Q_4} = \mathcal{T}_{Q_1Q_3,Q_2Q_4}$. With respect to the Hermitian form $\langle Q_1,Q_2\rangle_{*} = Q_1\bar Q_2$, the adjoints are $M_Q^{*} = M_{\bar Q}$, $R_Q^{*} = M_Q$, $L_Q^{*} = L_Q$ and $\mathcal{T}_{Q_1,Q_2}^{*} = \mathcal{T}_{Q_2,Q_1}$; the two projections onto the idempotent lines are mutually adjoint.
 
 The commutator is $Q_1\bar Q_2 - Q_2\bar Q_1 = 2(q'_1q_2-q_1q'_2)j$, an element of the split imaginary line, and its halves are the scalar form $g(Q_1,Q_2) = q_1q_2-q'_1q'_2$ and the element $(q'_1q_2-q_1q'_2)j$. The bracket is the two-dimensional non-abelian Lie algebra and its Jacobi identity holds, automatically in two dimensions; the obstruction of the binary product is its associator, and the ternary product removes it. Against the complex case the formulas of the associator, unit and ternary product coincide, while the form is definite there and indefinite here and the commutator lies on the rotation axis there and on the hyperbolic line here.
 
@@ -340,7 +340,7 @@ The commutator is $Q_1\bar Q_2 - Q_2\bar Q_1 = 2(q'_1q_2-q_1q'_2)j$, an element 
 | $R_Q(X) = X\bar Q$ | Right multiplication of $\star$, $\mathbb{C}_{\mathrm{spl}}$-linear |
 | $[Q_1,Q_2,Q_3] = (Q_1\star Q_2)\star Q_3 - Q_1\star(Q_2\star Q_3) = Q_1\bar Q_2(\bar Q_3-Q_3)$ | Associator |
 | $\{Q_1,Q_2,Q_3\} = Q_1\bar Q_2 Q_3$ | Ternary product, an algebraic $J^{*}$-algebra |
-| $\mathcal{T}_{Q_1,Q_2}(X) = Q_1X\bar Q_2 = M_{Q_1} R_{Q_2}$ | Sesquilinear sandwich |
+| $\mathcal{T}_{Q_1,Q_2}(X) = Q_1X\bar Q_2 = M_{Q_1} R_{Q_2}$ | Sesquilinear two-sided operator |
 | $\langle Q_1,Q_2\rangle_{*} = Q_1\bar Q_2$ | Hermitian form, used for the adjoints |
 | $M_Q^{*} = M_{\bar Q}$, $R_Q^{*} = M_Q$, $L_Q^{*} = L_Q$, $\mathcal{T}_{Q_1,Q_2}^{*} = \mathcal{T}_{Q_2,Q_1}$ | Adjoints |
 | $[Q_1,Q_2] = Q_1\bar Q_2 - Q_2\bar Q_1 = 2(q'_1q_2-q_1q'_2)j$ | Commutator, on the split imaginary line |

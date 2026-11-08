@@ -3,7 +3,7 @@
 
 ## Introduction
 
-The signed left multiplication $x\mapsto a\,\alpha(x)$ is the one-sided operator built from the left translation and the grade involution, and its adjoint under the natural pairing is again a signed left multiplication, with parameter $\alpha(a)^{-1}$. The adjoint operation therefore acts on the set of signed left multiplications as an involution of the index set, and that involution is exactly the group involution $\sigma=\iota\alpha$ associated with $\alpha$; the self-adjoint signed left multiplications are those indexed by the fixed elements of $\sigma$. This article gives the adjoint, proves that the index assignment is an involution-preserving bijection, and records the relation to the signed sandwich. It is the sixth article of the `* Operator Theory` group; the signed left multiplication and its composition law are from *The Signed Left Multiplication on a Group*, the pairing and adjoint from *Involutions on the Operator Layer*, and the signed sandwich from *The Signed Adjoint Sandwich on a Group*.
+The signed left multiplication $x\mapsto a\,\alpha(x)$ is the one-sided operator built from the left translation and the grade involution, and its adjoint under the natural pairing is again a signed left multiplication, with parameter $\alpha(a)^{-1}$. The adjoint operation therefore acts on the set of signed left multiplications as an involution of the index set, and that involution is exactly the group involution $\sigma=\iota\alpha$ associated with $\alpha$; the self-adjoint signed left multiplications are those indexed by the fixed elements of $\sigma$. This article gives the adjoint, proves that the index assignment is an involution-preserving bijection, and records the relation to the signed two-sided operator. It is the sixth article of the `* Operator Theory` group; the signed left multiplication and its composition law are from *The Signed Left Multiplication on a Group*, the pairing and adjoint from *Involutions on the Operator Layer*, and the signed two-sided operator from *The Signed Adjoint Two-Sided Operator on a Group*.
 
 Throughout, $(G,\alpha)$ is a group with an involutive automorphism $\alpha$, $\sigma=\iota\alpha$ is the associated involution of $G$, $\ell^{\alpha}_a(x)=a\,\alpha(x)=\Sigma^{\alpha}_{a,e}$ is the signed left multiplication, and the adjoint is taken with respect to the orthonormal pairing $\langle g,h\rangle=\delta_{g,h}$.
 
@@ -17,7 +17,7 @@ $$
 
 Hence the adjoint of a signed left multiplication is a signed left multiplication, and the set $\{\ell^{\alpha}_a:a\in G\}$ is closed under the adjoint.
 
-**Proof.** The signed left multiplication is the signed sandwich with second parameter $e$, so the adjoint formula of *The Signed Adjoint Sandwich on a Group* gives $\bigl(\ell^{\alpha}_a\bigr)^{*}=\Sigma^{\alpha}_{\alpha(a)^{-1},\alpha(e)^{-1}}=\Sigma^{\alpha}_{\alpha(a)^{-1},e}$, because $\alpha(e)=e$. The last equality is $\alpha(a^{-1})=\alpha(a)^{-1}$.
+**Proof.** The signed left multiplication is the signed two-sided operator with second parameter $e$, so the adjoint formula of *The Signed Adjoint Two-Sided Operator on a Group* gives $\bigl(\ell^{\alpha}_a\bigr)^{*}=\Sigma^{\alpha}_{\alpha(a)^{-1},\alpha(e)^{-1}}=\Sigma^{\alpha}_{\alpha(a)^{-1},e}$, because $\alpha(e)=e$. The last equality is $\alpha(a^{-1})=\alpha(a)^{-1}$.
 
 **Corollary (the adjoint inverts the index through the involution).** The assignment $a\mapsto\alpha(a)^{-1}$ is an involution of the set $G$, and the adjoint on the signed left multiplications is that assignment on the indices:
 
@@ -43,23 +43,23 @@ It is the anti-automorphism $\sigma=\iota\alpha=\alpha\iota$ of *Involutive Grou
 
 **Proposition (unitarity).** Every signed left multiplication is unitary: $\bigl(\ell^{\alpha}_a\bigr)^{*}\ell^{\alpha}_a=\mathrm{id}=\ell^{\alpha}_a\bigl(\ell^{\alpha}_a\bigr)^{*}$.
 
-**Proof.** It is the signed sandwich with second parameter $e$, and every signed sandwich is unitary by *The Signed Adjoint Sandwich on a Group*. Directly, $\ell^{\alpha}_a\ell^{\alpha}_{\alpha(a)^{-1}}=L_{a\,\alpha(\alpha(a)^{-1})}=L_{aa^{-1}}=\mathrm{id}$ by the composition law of *The Signed Left Multiplication on a Group* and $\alpha^{2}=\mathrm{id}$.
+**Proof.** It is the signed two-sided operator with second parameter $e$, and every signed two-sided operator is unitary by *The Signed Adjoint Two-Sided Operator on a Group*. Directly, $\ell^{\alpha}_a\ell^{\alpha}_{\alpha(a)^{-1}}=L_{a\,\alpha(\alpha(a)^{-1})}=L_{aa^{-1}}=\mathrm{id}$ by the composition law of *The Signed Left Multiplication on a Group* and $\alpha^{2}=\mathrm{id}$.
 
 **Example (the fixed and inverted elements).** On the cyclic group $C_6$ with $\alpha=\iota$ the involution $\sigma=\iota\alpha=\mathrm{id}$ has fixed set all of $C_6$, so every signed left multiplication is self-adjoint; on $S_3$ with the conjugation by a transposition, the fixed set of $\sigma=\iota\alpha$ is the inverted set $I(\alpha)$ of the conjugation, which has four elements $\{e,(1\,2),(1\,2\,3),(1\,3\,2)\}$, and exactly four of the six signed left multiplications are self-adjoint.
 
 **Remark (the contrast with the unsigned case).** The unsigned left multiplication satisfies $(L_a)^{*}=L_{a^{-1}}$, indexed by the inversion $\iota$; the signed one satisfies $(\ell^{\alpha}_a)^{*}=\ell^{\alpha}_{\alpha(a)^{-1}}$, indexed by $\sigma=\iota\alpha$. The insertion of the grade involution therefore replaces the inversion by the involution $\sigma$ on the index set, and the self-adjoint unsigned left multiplications are indexed by the elements of order at most two whereas the self-adjoint signed ones are indexed by the fixed set of $\sigma$. The two agree exactly when $\alpha=\mathrm{id}$.
 
-## The Relation to the Signed Sandwich
+## The Relation to the Signed Two-Sided Operator
 
-**Proposition (the adjoint of the signed sandwich factors through the signed left multiplication).** For every $a,b\in G$,
+**Proposition (the adjoint of the signed two-sided factors through the signed left multiplication).** For every $a,b\in G$,
 
 $$
 \boxed{\;\bigl(\Sigma^{\alpha}_{a,b}\bigr)^{*}=\bigl(\ell^{\alpha}_a\bigr)^{*}\circ(R_b)^{*}=\ell^{\alpha}_{\alpha(a)^{-1}}\circ R_{b^{-1}}\;}.
 $$
 
-**Proof.** The factorisation $\Sigma^{\alpha}_{a,b}=R_b\circ\ell^{\alpha}_a$ is from *The Signed Adjoint Sandwich on a Group*; the adjoint of a product reverses the order, and the adjoints of the two factors are the theorem above and $(R_b)^{*}=R_{b^{-1}}$.
+**Proof.** The factorisation $\Sigma^{\alpha}_{a,b}=R_b\circ\ell^{\alpha}_a$ is from *The Signed Adjoint Two-Sided Operator on a Group*; the adjoint of a product reverses the order, and the adjoints of the two factors are the theorem above and $(R_b)^{*}=R_{b^{-1}}$.
 
-**Corollary (the two-sided adjoint from the one-sided one).** The adjoint of the signed sandwich is determined by the adjoint of the signed left multiplication and the adjoint of the right translation; iterating, the adjoint of any word in the operators $\ell^{\alpha}_a$ and $R_b$ is the reversed word in the adjoints, and it remains in the algebra generated by the signed left multiplications and the right translations.
+**Corollary (the two-sided adjoint from the one-sided one).** The adjoint of the signed two-sided operator is determined by the adjoint of the signed left multiplication and the adjoint of the right translation; iterating, the adjoint of any word in the operators $\ell^{\alpha}_a$ and $R_b$ is the reversed word in the adjoints, and it remains in the algebra generated by the signed left multiplications and the right translations.
 
 **Proof.** The adjoint is an anti-involution of the operator algebra, so it reverses words; the generators are mapped to generators by the theorem and by $(R_b)^{*}=R_{b^{-1}}$.
 
@@ -74,9 +74,9 @@ $$
 \qquad \sigma=\iota\alpha,
 $$
 
-so the set $\{\ell^{\alpha}_a\}$ is closed under the adjoint and the index map $a\mapsto\ell^{\alpha}_a$ is a bijection intertwining $\sigma$ with the adjoint. The **self-adjoint** signed left multiplications are those with $\alpha(a)=a^{-1}$, that is those indexed by the fixed set $G^{\sigma}=I(\alpha)$ of the involution $\sigma$; the unsigned case is recovered at $\alpha=\mathrm{id}$, where $\sigma=\iota$ and the self-adjoint signed left multiplications are indexed by the $2$-torsion. Every signed left multiplication is **unitary**, being the signed sandwich with second parameter $e$.
+so the set $\{\ell^{\alpha}_a\}$ is closed under the adjoint and the index map $a\mapsto\ell^{\alpha}_a$ is a bijection intertwining $\sigma$ with the adjoint. The **self-adjoint** signed left multiplications are those with $\alpha(a)=a^{-1}$, that is those indexed by the fixed set $G^{\sigma}=I(\alpha)$ of the involution $\sigma$; the unsigned case is recovered at $\alpha=\mathrm{id}$, where $\sigma=\iota$ and the self-adjoint signed left multiplications are indexed by the $2$-torsion. Every signed left multiplication is **unitary**, being the signed two-sided operator with second parameter $e$.
 
-The adjoint of the general signed sandwich factors through the signed left multiplication, $\bigl(\Sigma^{\alpha}_{a,b}\bigr)^{*}=\ell^{\alpha}_{\alpha(a)^{-1}}\circ R_{b^{-1}}$, so the two-sided adjoint is built from the one-sided adjoint and the adjoint of the right translation. The signed left multiplications do not form a $*$-representation, their composition law being that of *The Signed Left Multiplication on a Group*; they form a set indexed by $G$ on which the adjoint is the involution $\sigma$.
+The adjoint of the general signed two-sided factors through the signed left multiplication, $\bigl(\Sigma^{\alpha}_{a,b}\bigr)^{*}=\ell^{\alpha}_{\alpha(a)^{-1}}\circ R_{b^{-1}}$, so the two-sided adjoint is built from the one-sided adjoint and the adjoint of the right translation. The signed left multiplications do not form a $*$-representation, their composition law being that of *The Signed Left Multiplication on a Group*; they form a set indexed by $G$ on which the adjoint is the involution $\sigma$.
 
 ## Summary of Notation
 
@@ -87,7 +87,7 @@ The adjoint of the general signed sandwich factors through the signed left multi
 | $\sigma=\iota\alpha=\alpha\iota$ | the involution of the index set |
 | self-adjoint $\iff\alpha(a)=a^{-1}$ | indexed by the fixed set $G^{\sigma}=I(\alpha)$ |
 | $\bigl(\ell^{\alpha}_a\bigr)^{*}\ell^{\alpha}_a=\mathrm{id}$ | unitarity |
-| $\bigl(\Sigma^{\alpha}_{a,b}\bigr)^{*}=\ell^{\alpha}_{\alpha(a)^{-1}}R_{b^{-1}}$ | the adjoint of the sandwich |
+| $\bigl(\Sigma^{\alpha}_{a,b}\bigr)^{*}=\ell^{\alpha}_{\alpha(a)^{-1}}R_{b^{-1}}$ | the adjoint of the two-sided operator |
 
 ## Further Reading
 

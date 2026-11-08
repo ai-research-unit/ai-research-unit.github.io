@@ -78,7 +78,7 @@ so the signed left family is multiplicative in the written order, exactly like t
 
 **Proof.** Both identities are the computation $\Gamma L_x\Gamma\,\Gamma L_z\Gamma = \Gamma L_{xz}\Gamma$ and the right-handed analogue.
 
-**Remark (why the signed left multiplication is the useful one).** The signed left multiplication by a vector $a$ is $\Lambda^{\alpha}_a(y) = -uy$, and its composition with the inverse of the other factor produces the reflection. Heuristically the sign flips the direction of an odd factor and turns the conjugation into a reflection; the precise statement is the reflection formula of *Two-Sided Operators with the Signed Product* and *The Sandwich with the Signed Product*.
+**Remark (why the signed left multiplication is the useful one).** The signed left multiplication by a vector $a$ is $\Lambda^{\alpha}_a(y) = -uy$, and its composition with the inverse of the other factor produces the reflection. Heuristically the sign flips the direction of an odd factor and turns the conjugation into a reflection; the precise statement is the reflection formula of *Two-Sided Operators with the Signed Product* and *The Signed Inner Conjugation on a Clifford Algebra*.
 
 ## The Super-Structure
 

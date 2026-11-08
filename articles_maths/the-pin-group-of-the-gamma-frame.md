@@ -165,7 +165,7 @@ which is two-to-one with kernel $\{\pm1\}$. The norm $-1$ even coset maps to the
 
 **The lift of a reflection.** A reflection $\rho_\zeta$ lifts to the two elements $\pm\zeta$ of Pin. The sign is the usual sign ambiguity of the spinor representation; it is not a sign of the Lorentz transformation, which is fixed by $\det\rho_\zeta=-1$. The two lifts differ by $-1$, the kernel of the double cover.
 
-**The sign $\varepsilon$.** The reflection formula carries the metric sign $\varepsilon(\zeta)=q(\zeta)$. The timelike and spacelike generators of the frame therefore enter the sandwich with opposite signs:
+**The sign $\varepsilon$.** The reflection formula carries the metric sign $\varepsilon(\zeta)=q(\zeta)$. The timelike and spacelike generators of the frame therefore enter the two-sided operator with opposite signs:
 $$
 \rho_{A_0}(\eta)=-A_0\eta A_0,\qquad
 \rho_{A_k}(\eta)=+A_k\eta A_k .

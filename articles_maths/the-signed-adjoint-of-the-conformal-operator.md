@@ -3,15 +3,15 @@
 
 ## Introduction
 
-A **conformal operator** is a linear operator $T$ that multiplies a quadratic form by a scalar, $\mathfrak{Q}(Tx) = \lambda(T)\mathfrak{Q}(x)$; read as a signed two-sided operator it is the signed sandwich $x \mapsto a\,\alpha(x)\,b$, and the adjoint of that sandwich is computed with the **sign** carried by the grade involution $\alpha$. The **signed adjoint** is the adjoint of the signed operator, and it is **sign-reversing**: it reverses the sign of the parameters, so the adjoint of the sandwich of $a$ and $b$ is the sandwich of the inverse images. The **unitarity condition** it defines, $\Theta^{\ddagger}\Theta = \mathrm{id}$, selects the conformal operators with the factor one, that is, the isometries of the form inside the conformal group; the article proves the selection and identifies the sign-reversing adjoint as the obstruction to unitarity for a conformal operator with a nontrivial factor.
+A **conformal operator** is a linear operator $T$ that multiplies a quadratic form by a scalar, $\mathfrak{Q}(Tx) = \lambda(T)\mathfrak{Q}(x)$; read as a signed two-sided operator it is the signed two-sided operator $x \mapsto a\,\alpha(x)\,b$, and the adjoint of that two-sided operator is computed with the **sign** carried by the grade involution $\alpha$. The **signed adjoint** is the adjoint of the signed operator, and it is **sign-reversing**: it reverses the sign of the parameters, so the adjoint of the two-sided operator of $a$ and $b$ is the two-sided operator of the inverse images. The **unitarity condition** it defines, $\Theta^{\ddagger}\Theta = \mathrm{id}$, selects the conformal operators with the factor one, that is, the isometries of the form inside the conformal group; the article proves the selection and identifies the sign-reversing adjoint as the obstruction to unitarity for a conformal operator with a nontrivial factor.
 
-The article develops the conformal operator and its sign, the adjoint of a conformal operator with the factor $\lambda T^{-1}$, the signed adjoint with the formulae of the signed sandwich, the unitarity condition it defines and the group of the signed-unitary conformal operators, and the degenerate case in which the sign collapses. The conformal operator itself is *The Conformal Operator*, the signed sandwich is *The Signed Sandwich on an Ordered Algebra* and *The Signed Adjoint of the Reflection on a Linear Space*, and the adjoint is *The Adjoint under a Hermitian Pairing*.
+The article develops the conformal operator and its sign, the adjoint of a conformal operator with the factor $\lambda T^{-1}$, the signed adjoint with the formulae of the signed two-sided operator, the unitarity condition it defines and the group of the signed-unitary conformal operators, and the degenerate case in which the sign collapses. The conformal operator itself is *The Conformal Operator*, the signed two-sided operator is *The Signed Two-Sided Operator on an Ordered Algebra* and *The Signed Adjoint of the Reflection on a Linear Space*, and the adjoint is *The Adjoint under a Hermitian Pairing*.
 
-The article assumes *The Conformal Operator* for the similarity group, the conformal Laplacian and the Weyl tensor; *The Adjoint under a Hermitian Pairing* for the adjoint and the self-adjoint elements; *Unitary Geometry over a Field with Involution* for the Hermitian forms and the unitary group; *The Signed Sandwich on an Ordered Algebra* of Part III and *Reflections as Signed Two-Sided Operators on a Linear Space* and *The Signed Adjoint of the Reflection on a Linear Space* of Part I for the signed sandwich, its adjoint and the grade involution; and *Clifford Algebras* of Part II for the reflection elements. No distance and no physics is invoked.
+The article assumes *The Conformal Operator* for the similarity group, the conformal Laplacian and the Weyl tensor; *The Adjoint under a Hermitian Pairing* for the adjoint and the self-adjoint elements; *Unitary Geometry over a Field with Involution* for the Hermitian forms and the unitary group; *The Signed Two-Sided Operator on an Ordered Algebra* of Part III and *Reflections as Signed Two-Sided Operators on a Linear Space* and *The Signed Adjoint of the Reflection on a Linear Space* of Part I for the signed two-sided operator, its adjoint and the grade involution; and *Clifford Algebras* of Part II for the reflection elements. No distance and no physics is invoked.
 
 ## The Conformal Operator and Its Sign
 
-### The Similarity and the Signed Sandwich
+### The Similarity and the Signed Two-Sided Operator
 
 **Definition.** Let $(V,\mathfrak{Q})$ be a quadratic space over a field of characteristic not two. A **conformal operator** is a linear operator $T \in GL(V)$ with $\mathfrak{Q}(Tx) = \lambda(T)\mathfrak{Q}(x)$ for all $x$ and some $\lambda(T) \in K^\times$; the operators form the conformal group $\operatorname{CO}(V,\mathfrak{Q})$, the factor is a homomorphism to $K^\times$, and the orthogonal group is its kernel. In the Clifford algebra $\mathrm{Cl}(V,\mathfrak{Q})$ the conformal operators preserving the quadratic cone are the signed two-sided operators
 
@@ -19,11 +19,11 @@ $$
 \mathrm{Sd}^{\alpha}_{a,b}(X) = a\,\alpha(X)\,b ,
 $$
 
-where $\alpha$ is the **grade involution**, negating the odd part and fixing the even part; the sign of the operator is its twist by $\alpha$, and without the twist the sandwich is the ordinary one.
+where $\alpha$ is the **grade involution**, negating the odd part and fixing the even part; the sign of the operator is its twist by $\alpha$, and without the twist the two-sided operator is the ordinary one.
 
-**Proposition.** The signed sandwich is multiplicative in the pair, $\mathrm{Sd}^\alpha_{a,b}\circ\mathrm{Sd}^\alpha_{c,d} = \mathrm{Sd}^\alpha_{ac,db}$ when $\alpha(a) = a$ on the even parameters, and the operators preserving the quadratic cone are the elements $a$, $b$ of the group generated by the units with $a\,\alpha(X)\,b$ preserving the cone; the reflection $x \mapsto -axa^{-1}$ of a vector $a$ with $\mathfrak{Q}(a) \neq 0$ is the case $a$, $b = a^{-1}$ of the signed sandwich, and it is the geometric instance of the conformal operator in the signed form.
+**Proposition.** The signed two-sided operator is multiplicative in the pair, $\mathrm{Sd}^\alpha_{a,b}\circ\mathrm{Sd}^\alpha_{c,d} = \mathrm{Sd}^\alpha_{ac,db}$ when $\alpha(a) = a$ on the even parameters, and the operators preserving the quadratic cone are the elements $a$, $b$ of the group generated by the units with $a\,\alpha(X)\,b$ preserving the cone; the reflection $x \mapsto -axa^{-1}$ of a vector $a$ with $\mathfrak{Q}(a) \neq 0$ is the case $a$, $b = a^{-1}$ of the signed two-sided operator, and it is the geometric instance of the conformal operator in the signed form.
 
-**Proof.** The composition is $a\alpha(c\alpha(X)d)b = a\alpha(c)\alpha^2(X)\alpha(d)b$, which is the sandwich by $ac$ and $db$ under the commutation condition; the reflection formula is the geometric reflection of *Geodesic Reflection as an Operator*, in the signed two-sided form. The statement is in *The Signed Sandwich on an Ordered Algebra* and *Clifford Algebras*.
+**Proof.** The composition is $a\alpha(c\alpha(X)d)b = a\alpha(c)\alpha^2(X)\alpha(d)b$, which is the two-sided operator by $ac$ and $db$ under the commutation condition; the reflection formula is the geometric reflection of *Geodesic Reflection as an Operator*, in the signed two-sided form. The statement is in *The Signed Two-Sided Operator on an Ordered Algebra* and *Clifford Algebras*.
 
 ## The Adjoint of a Conformal Operator
 
@@ -49,7 +49,7 @@ $$
 T^{\ddagger} = \alpha\bigl(T^{\dagger}\bigr) ,
 $$
 
-the adjoint twisted by the grade involution; for the signed sandwich $\mathrm{Sd}^{\alpha}_{a,b}$ of the conformal operator, the signed adjoint is computed by the formula of the signed adjoint sandwich,
+the adjoint twisted by the grade involution; for the signed two-sided operator $\mathrm{Sd}^{\alpha}_{a,b}$ of the conformal operator, the signed adjoint is computed by the formula of the signed adjoint two-sided operator,
 
 $$
 \bigl(\mathrm{Sd}^{\alpha}_{a,b}\bigr)^{\ddagger} = \mathrm{Sd}^{\alpha}_{\alpha(b),\,\alpha(a)} ,
@@ -57,7 +57,7 @@ $$
 
 which **exchanges the two parameters and applies the grade involution to each**, that is, reverses the sign of the parameters, and which reduces to the adjoint for $\alpha = \mathrm{id}$.
 
-**Theorem.** The signed adjoint of the signed sandwich is the signed sandwich of the adjoint parameters, and it is a **sign-reversing** adjoint: on the even part of the algebra it is the ordinary adjoint, and on the odd part it is the negative of the ordinary adjoint. The signed adjoint is conjugate-linear, additive and anti-multiplicative,
+**Theorem.** The signed adjoint of the signed two-sided operator is the signed two-sided operator of the adjoint parameters, and it is a **sign-reversing** adjoint: on the even part of the algebra it is the ordinary adjoint, and on the odd part it is the negative of the ordinary adjoint. The signed adjoint is conjugate-linear, additive and anti-multiplicative,
 
 $$
 \boxed{\;(\Theta\Psi)^{\ddagger} = \Psi^{\ddagger}\Theta^{\ddagger}, \qquad (T^{\ddagger})^{\ddagger} = T\;} ,
@@ -65,7 +65,7 @@ $$
 
 and it is an involution of the algebra of the operators whenever the grade involution and the adjoint commute up to the sign of the grade.
 
-**Proof.** The formula for the sandwich is the adjoint computation of *The Signed Adjoint of the Reflection on a Linear Space* applied to the two-sided operator $\mathrm{Sd}^\alpha_{a,b}$, whose adjoint is the sandwich of the adjoints of the parameters with the sign reversed by $\alpha$; the sign reversal is the definition of $\alpha$ on the odd part, and the anti-multiplicativity and the involution property follow from the same properties of the adjoint and the multiplicativity of $\alpha$. The statement is in *Reflections as Signed Two-Sided Operators on a Linear Space* and *The Signed Adjoint of the Reflection on a Linear Space*.
+**Proof.** The formula for the two-sided operator is the adjoint computation of *The Signed Adjoint of the Reflection on a Linear Space* applied to the two-sided operator $\mathrm{Sd}^\alpha_{a,b}$, whose adjoint is the two-sided operator of the adjoints of the parameters with the sign reversed by $\alpha$; the sign reversal is the definition of $\alpha$ on the odd part, and the anti-multiplicativity and the involution property follow from the same properties of the adjoint and the multiplicativity of $\alpha$. The statement is in *Reflections as Signed Two-Sided Operators on a Linear Space* and *The Signed Adjoint of the Reflection on a Linear Space*.
 
 ### The Unitarity Condition
 
@@ -97,17 +97,17 @@ and the sign-reversing adjoint is the obstruction that removes the operators wit
 
 ## The Degenerate Case
 
-**Definition.** The **degenerate case** of the signed adjoint is the case in which the grade involution collapses or the form degenerates: in characteristic two the grade involution of a quadratic space collapses to the identity and the signed adjoint is the ordinary adjoint; when the form $\mathfrak{Q}$ is degenerate the reflection element $a$ with $\mathfrak{Q}(a) = 0$ has no inverse in the Clifford algebra, the sandwich $\mathrm{Sd}^\alpha_{a,a^{-1}}$ is undefined, and the signed adjoint of the corresponding conformal operator does not exist.
+**Definition.** The **degenerate case** of the signed adjoint is the case in which the grade involution collapses or the form degenerates: in characteristic two the grade involution of a quadratic space collapses to the identity and the signed adjoint is the ordinary adjoint; when the form $\mathfrak{Q}$ is degenerate the reflection element $a$ with $\mathfrak{Q}(a) = 0$ has no inverse in the Clifford algebra, the two-sided operator $\mathrm{Sd}^\alpha_{a,a^{-1}}$ is undefined, and the signed adjoint of the corresponding conformal operator does not exist.
 
 **Theorem.** When the grade involution is the identity the signed adjoint coincides with the ordinary adjoint and the unitarity condition is the ordinary unitarity; when the form is degenerate the signed adjoint fails to be defined for the isotropic parameters, and the operators with an isotropic reflection element have no signed adjoint. The failure is exactly the loss of the sign of the quadratic form, and it is the boundary case of the conformal geometry, in which the conformal structure degenerates to the orthogonal structure of the associated graded form.
 
-**Proof.** For $\alpha = \mathrm{id}$ the signed adjoint is the adjoint by the definition; for a degenerate form the Clifford algebra has zero divisors and the inverse $a^{-1} = a/\mathfrak{Q}(a)$ does not exist for $\mathfrak{Q}(a) = 0$, so the sandwich formula of the adjoint loses its meaning. The statement is the degenerate-case analysis of *The Signed Adjoint of the Reflection on a Linear Space* and *Clifford Algebras*.
+**Proof.** For $\alpha = \mathrm{id}$ the signed adjoint is the adjoint by the definition; for a degenerate form the Clifford algebra has zero divisors and the inverse $a^{-1} = a/\mathfrak{Q}(a)$ does not exist for $\mathfrak{Q}(a) = 0$, so the two-sided formula of the adjoint loses its meaning. The statement is the degenerate-case analysis of *The Signed Adjoint of the Reflection on a Linear Space* and *Clifford Algebras*.
 
 **Remark (the Weyl tensor and the sign).** The conformal operators of a conformal manifold act on the densities of a conformal weight, and the unitarity condition of the article is the infinitesimal form of the conformal invariance of the conformal Laplacian; the Weyl tensor of *The Conformal Operator* is the invariant that survives when the signed-unitary operators are divided out, and the sign-reversing adjoint measures the difference between the conformal and the isometric structures. The article owns the operator-layer sign and leaves the manifold theory to the companion.
 
 ## Summary
 
-A conformal operator $T$ multiplies the form by the factor $\lambda(T)$; its adjoint with respect to a compatible Hermitian pairing is $T^{\dagger} = \lambda(T)T^{-1}$, so the factor is the obstruction to unitarity and the isometries are exactly the conformal operators with $\lambda = 1$. The **signed adjoint** is the adjoint twisted by the grade involution, $T^{\ddagger} = \alpha(T^{\dagger})$, computed for the signed sandwich by the formula $(\mathrm{Sd}^\alpha_{a,b})^{\ddagger} = \mathrm{Sd}^\alpha_{\alpha(b)^{\ddagger},\alpha(a)^{\ddagger}}$; it is sign-reversing, anti-multiplicative and an involution, and it agrees with the ordinary adjoint on the even part. The **signed unitarity condition** $T^{\ddagger}T = \mathrm{id}$ is equivalent to $T^\dagger T = \mathrm{id}$ and hence to $\lambda(T) = 1$, so the signed-unitary conformal operators are exactly the isometries, $\operatorname{CO}(V,\mathfrak{Q})\cap \mathrm{U}(V,h) = O(V,\mathfrak{Q})$; the sign-reversing adjoint defines the orthogonal group inside the conformal group. In the degenerate case the grade involution collapses in characteristic two and the sign disappears, while a degenerate form makes the reflection element isotropic and the signed adjoint undefined.
+A conformal operator $T$ multiplies the form by the factor $\lambda(T)$; its adjoint with respect to a compatible Hermitian pairing is $T^{\dagger} = \lambda(T)T^{-1}$, so the factor is the obstruction to unitarity and the isometries are exactly the conformal operators with $\lambda = 1$. The **signed adjoint** is the adjoint twisted by the grade involution, $T^{\ddagger} = \alpha(T^{\dagger})$, computed for the signed two-sided operator with the formula $(\mathrm{Sd}^\alpha_{a,b})^{\ddagger} = \mathrm{Sd}^\alpha_{\alpha(b)^{\ddagger},\alpha(a)^{\ddagger}}$; it is sign-reversing, anti-multiplicative and an involution, and it agrees with the ordinary adjoint on the even part. The **signed unitarity condition** $T^{\ddagger}T = \mathrm{id}$ is equivalent to $T^\dagger T = \mathrm{id}$ and hence to $\lambda(T) = 1$, so the signed-unitary conformal operators are exactly the isometries, $\operatorname{CO}(V,\mathfrak{Q})\cap \mathrm{U}(V,h) = O(V,\mathfrak{Q})$; the sign-reversing adjoint defines the orthogonal group inside the conformal group. In the degenerate case the grade involution collapses in characteristic two and the sign disappears, while a degenerate form makes the reflection element isotropic and the signed adjoint undefined.
 
 ## Summary of Notation
 
@@ -119,7 +119,7 @@ A conformal operator $T$ multiplies the form by the factor $\lambda(T)$; its adj
 | $\mathrm{Sd}^{\alpha}_{a,b}(X) = a\alpha(X)b$ | Signed two-sided operator |
 | $T^{\dagger} = \lambda(T)T^{-1}$ | Adjoint of a conformal operator |
 | $T^{\ddagger} = \alpha(T^{\dagger})$ | Signed adjoint |
-| $(\mathrm{Sd}^{\alpha}_{a,b})^{\ddagger} = \mathrm{Sd}^{\alpha}_{\alpha(b),\alpha(a)}$ | Signed adjoint of the sandwich, the sign reversal |
+| $(\mathrm{Sd}^{\alpha}_{a,b})^{\ddagger} = \mathrm{Sd}^{\alpha}_{\alpha(b),\alpha(a)}$ | Signed adjoint of the two-sided operator, the sign reversal |
 | $T^{\ddagger}T = \mathrm{id}$ | Signed unitarity condition |
 | $\operatorname{CO}(V,\mathfrak{Q}) \cap \mathrm{U}(V,h) = O(V,\mathfrak{Q})$ | Signed-unitary conformal operators, the isometries |
 | $a$ with $\mathfrak{Q}(a) = 0$ | Isotropic parameter, the degenerate case |

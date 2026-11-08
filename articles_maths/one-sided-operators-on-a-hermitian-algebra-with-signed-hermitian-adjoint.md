@@ -2,7 +2,7 @@
 
 ## Introduction
 
-Every two-sided operator of *Two-Sided Operators on a Clifford Algebra* is the product of a left multiplication and a right multiplication, and the signed Hermitian sandwich of *Two-Sided Operators on a Hermitian Algebra with Signed Hermitian Adjoint* factors accordingly:
+Every two-sided operator of *The Family of Two-Sided Operators on a Clifford Algebra* is the product of a left multiplication and a right multiplication, and the signed Hermitian pair of *Two-Sided Operators on a Hermitian Algebra with Signed Hermitian Adjoint* factors accordingly:
 
 $$
 \mathrm{Sd}^{\alpha}_x=\Lambda^{\alpha}_x\circ R_{x^{\dagger}},
@@ -92,7 +92,7 @@ $$
 \boxed{\;L_x\circ R_{x^{\dagger}}=\mathrm{Sd}_x,\qquad \Lambda^{\alpha}_x\circ R_{x^{\dagger}}=\mathrm{Sd}^{\alpha}_x\;} ,
 $$
 
-the signed and unsigned Hermitian sandwiches. On the unitary slice both pairings reduce to the conjugations, $\mathrm{Sd}^{\alpha}_x=\mathrm{Ad}^{\alpha}_x$ and $\mathrm{Sd}_x=\mathrm{Ad}_x$.
+the signed and unsigned Hermitian pairs. On the unitary slice both pairings reduce to the conjugations, $\mathrm{Sd}^{\alpha}_x=\mathrm{Ad}^{\alpha}_x$ and $\mathrm{Sd}_x=\mathrm{Ad}_x$.
 
 *Proof.* $\Lambda^{\alpha}_x(R_{x^{\dagger}}(y))=\alpha(x)\,y\,x^{\dagger}$; the commutation of a left and a right multiplication is associativity; the slice statement is the slice reduction of the two-sided article.
 
@@ -176,11 +176,11 @@ $$
 R_{(ax)^{\dagger}}=\sigma(a)\,R_{x^{\dagger}}=-i\,R_{x^{\dagger}},
 $$
 
-so the two-sided parameter rule is $\mathrm{Sd}^{\alpha}_{ax}=a\sigma(a)\mathrm{Sd}^{\alpha}_x=i(-i)\mathrm{Sd}^{\alpha}_x=\mathrm{Sd}^{\alpha}_x$: the phase of the parameter cancels in the two-sided operator exactly because the left factor is linear and the right factor is antilinear. This is the one-sided form of the semilinearity correction of *The Hermitian Sandwich on a Hermitian Algebra with Hermitian Adjoint*.
+so the two-sided parameter rule is $\mathrm{Sd}^{\alpha}_{ax}=a\sigma(a)\mathrm{Sd}^{\alpha}_x=i(-i)\mathrm{Sd}^{\alpha}_x=\mathrm{Sd}^{\alpha}_x$: the phase of the parameter cancels in the two-sided operator exactly because the left factor is linear and the right factor is antilinear. This is the one-sided form of the semilinearity correction of *The Hermitian Pair of Operators on a Hermitian Algebra with Hermitian Adjoint*.
 
 ## Summary
 
-The signed Hermitian sandwich factors into a **signed left multiplication** and a **dagger right multiplication**,
+The signed Hermitian pair factors into a **signed left multiplication** and a **dagger right multiplication**,
 
 $$
 \mathrm{Sd}^{\alpha}_x=\Lambda^{\alpha}_x\circ R_{x^{\dagger}},\qquad

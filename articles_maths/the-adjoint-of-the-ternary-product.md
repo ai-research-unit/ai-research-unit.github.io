@@ -2,13 +2,13 @@
 
 ## Introduction
 
-The ternary product $\{x,y,z\}=xy^{*}z$ has three slots, and each of them turns the ternary operator $\mathrm{Sd}_{x,y}$ of the pair $(x,y)$ into an operator of the earlier entries of the group: the third slot gives the plain left multiplication $L_{x\star y}R_{1}$ by the derived product, the middle slot the sandwich $\mathcal{T}_{x,z}$, and the first slot the plain right multiplication, as *The Ternary Product as an Operator* records. The present article takes the adjoint of the ternary operator for the sesquilinear pairing $\varphi(x,y)=\tau(xy^{*})$. The operator is $R$-linear in its variable, so its adjoint is taken by the plain rule of *The Sesquilinear Adjoint Operator*, and the whole article turns on the single identity
+The ternary product $\{x,y,z\}=xy^{*}z$ has three slots, and each of them turns the ternary operator $\mathrm{Sd}_{x,y}$ of the pair $(x,y)$ into an operator of the earlier entries of the group: the third slot gives the plain left multiplication $L_{x\star y}R_{1}$ by the derived product, the middle slot the two-sided operator $\mathcal{T}_{x,z}$, and the first slot the plain right multiplication, as *The Ternary Product as an Operator* records. The present article takes the adjoint of the ternary operator for the sesquilinear pairing $\varphi(x,y)=\tau(xy^{*})$. The operator is $R$-linear in its variable, so its adjoint is taken by the plain rule of *The Sesquilinear Adjoint Operator*, and the whole article turns on the single identity
 
 $$
 \mathrm{Sd}_{x,y}^{\dagger}=\mathrm{Sd}_{y,x},
 $$
 
-the adjoint of the ternary operator of a pair being the ternary operator of the swapped pair. Three consequences are drawn. The diagonal $\mathrm{Sd}_{x,x}$ is self-adjoint for every element, so the quadratic representation of the Jordan theory is self-adjoint. The operator $\mathrm{Sd}_{x,y}$ is self-adjoint if and only if the derived product $x\star y$ is Hermitian, which ties the operator theory to *Hermitian and Skew-Hermitian Elements*. And the adjoint operation permutes the three readings of the ternary product among themselves, so the ternary product introduces no adjoint that the sandwich and the plain one-sided operators had not already named; this is the operator form of the reversibility that the $J^{*}$-triples carry.
+the adjoint of the ternary operator of a pair being the ternary operator of the swapped pair. Three consequences are drawn. The diagonal $\mathrm{Sd}_{x,x}$ is self-adjoint for every element, so the quadratic representation of the Jordan theory is self-adjoint. The operator $\mathrm{Sd}_{x,y}$ is self-adjoint if and only if the derived product $x\star y$ is Hermitian, which ties the operator theory to *Hermitian and Skew-Hermitian Elements*. And the adjoint operation permutes the three readings of the ternary product among themselves, so the ternary product introduces no adjoint that the two-sided operator and the plain one-sided operators had not already named; this is the operator form of the reversibility that the $J^{*}$-triples carry.
 
 Throughout, $R$ is a commutative ring with $1$, $\varsigma$ is an involution of $R$, $A$ is a unital associative $R$-algebra with a $\varsigma$-semilinear involution $*$ and $1^{*}=1$, and the function $\tau:A\to R$ is $R$-linear, central and compatible with the involution, $\tau(ab)=\tau(ba)$ and $\tau(x^{*})=\varsigma(\tau(x))$, with the pairing $\varphi(x,y)=\tau(xy^{*})$ perfect. The derived product is $x\star y=xy^{*}$, the ternary product is $\{x,y,z\}=xy^{*}z$, and
 
@@ -88,7 +88,7 @@ $$
 \mathrm{Sd}_{x,y}^{\dagger}=\mathrm{Sd}_{y,x}, \qquad \mathcal{T}_{x,z}^{\dagger}=\mathcal{T}_{z,x}, \qquad L_{x\star y}R_{1}^{\dagger}=L_{(x\star y)^{*}}R_{1} .
 $$
 
-**Proof.** The first identity is the adjoint theorem above. The second is the adjoint of the sandwich of *The Sesquilinear Adjoint Operator*, read with the middle reading $\mathrm{Sd}_{x,y}(z)=\mathcal{T}_{x,z}(y)$. The third is the adjoint of the plain left multiplication, which sends the parameter to its star; with the factorisation $\mathrm{Sd}_{x,y}=L_{x\star y}R_{1}$ it reproduces the first identity.
+**Proof.** The first identity is the adjoint theorem above. The second is the adjoint of the two-sided operator of *The Sesquilinear Adjoint Operator*, read with the middle reading $\mathrm{Sd}_{x,y}(z)=\mathcal{T}_{x,z}(y)$. The third is the adjoint of the plain left multiplication, which sends the parameter to its star; with the factorisation $\mathrm{Sd}_{x,y}=L_{x\star y}R_{1}$ it reproduces the first identity.
 
 **Corollary (no new adjoint).** The adjoint of the ternary operator of a pair is the plain left multiplication by the star of its derived product,
 
@@ -161,7 +161,7 @@ The ternary operator $\mathrm{Sd}_{x,y}(z)=xy^{*}z$ of a pair is $R$-linear, and
 | $\varphi(\{x,y,z\},w)=\varphi(z,\{y,x,w\})$ | the reversal of the triple |
 | $\mathrm{Sd}_{x,x}^{\dagger}=\mathrm{Sd}_{x,x}=L_{x\star x}R_{1}$ | the diagonal is self-adjoint: the quadratic representation |
 | $\mathrm{Sd}_{x,y}^{\dagger}=\mathrm{Sd}_{x,y}\iff(x\star y)^{*}=x\star y$ | the Hermitian criterion |
-| $\mathcal{T}_{a,b}^{\dagger}=\mathcal{T}_{b,a}$ | the adjoint of the sandwich |
+| $\mathcal{T}_{a,b}^{\dagger}=\mathcal{T}_{b,a}$ | the adjoint of the two-sided operator |
 | $L_{p}R_{q}^{\dagger}=L_{p^{*}}R_{q^{*}}$ | the adjoint of the plain two-sided operator |
 | $\mathrm{Sd}_{x,y}^{\dagger}=L_{(x\star y)^{*}}R_{1}=L_{y\star x}R_{1}$ | the adjoint as a plain left multiplication |
 

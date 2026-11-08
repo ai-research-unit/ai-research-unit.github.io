@@ -3,9 +3,9 @@
 
 ## Introduction
 
-The signed left multiplication is the one-sided operator $u\mapsto a\,\alpha(u)$ on the group algebra, and its adjoint with respect to the signed form is the signed left multiplication by the inverse: the class of one-sided signed operators is closed under the adjoint, exactly as the class of reflections is. The self-adjointness and the unitarity of the operator then carve the group into two of the sets the involution defines: the operator is self-adjoint exactly for the elements of order two and unitary exactly for the elements of the fixed subgroup, and it is an involution exactly for the elements of the inverted subgroup. This article computes the adjoint, separates the three conditions, and assembles the two-sided signed sandwich from the one-sided operator and its adjoint.
+The signed left multiplication is the one-sided operator $u\mapsto a\,\alpha(u)$ on the group algebra, and its adjoint with respect to the signed form is the signed left multiplication by the inverse: the class of one-sided signed operators is closed under the adjoint, exactly as the class of reflections is. The self-adjointness and the unitarity of the operator then carve the group into two of the sets the involution defines: the operator is self-adjoint exactly for the elements of order two and unitary exactly for the elements of the fixed subgroup, and it is an involution exactly for the elements of the inverted subgroup. This article computes the adjoint, separates the three conditions, and assembles the two-sided signed two-sided operator from the one-sided operator and its adjoint.
 
-The article assumes the natural and signed forms and the adjoints of the translations and of the linear extension $A$ of the grade involution from *The Adjoint of the Left Multiplication on a Topological Group*; the adjoint of the signed sandwich, its inverse and its unitarity criterion from *The Signed Adjoint Sandwich on a Topological Group*; the signed left multiplication, its composition laws, its square and its fixed set from *The Signed Left Multiplication on a Topological Group*; and the fixed subgroup, the inverted set and the dictionary from *Involutive Topological Groups*. The Haar inner product and the adjoint of the one-sided operator under it are Part III.
+The article assumes the natural and signed forms and the adjoints of the translations and of the linear extension $A$ of the grade involution from *The Adjoint of the Left Multiplication on a Topological Group*; the adjoint of the signed two-sided operator, its inverse and its unitarity criterion from *The Signed Adjoint Two-Sided Operator on a Topological Group*; the signed left multiplication, its composition laws, its square and its fixed set from *The Signed Left Multiplication on a Topological Group*; and the fixed subgroup, the inverted set and the dictionary from *Involutive Topological Groups*. The Haar inner product and the adjoint of the one-sided operator under it are Part III.
 
 Throughout, $G$ is a Hausdorff topological group, $k$ is a field of characteristic different from two, $k[G]$ is the group algebra, $\sigma$ is a continuous involution, $\alpha = \sigma\iota$ is the associated continuous involutive automorphism, $A u = \sum_g u_g\,\alpha(g)$ is its linear extension, $H = G^\alpha = I(\sigma)$ is the fixed subgroup, and the **signed left multiplication** is the operator
 
@@ -53,9 +53,9 @@ It is simultaneously unitary and self-adjoint exactly for the elements of order 
 
 **Proof.** On a group element $x$ the equation $\Lambda_a(x) = x$ is $a\alpha(x) = x$, that is $a = x\alpha(x)^{-1}$; the kernel is their span, closed by continuity. If $a\in G^\sigma$ then $\Lambda_a^2 = \mathrm{id}$, and for an involution with $2$ invertible the group algebra splits into the two eigenspaces, orthogonal for the signed form when the involution is self-adjoint, which for $a\in G^\sigma\cap G^\alpha$ is the case.
 
-## Relation to the Signed Sandwich
+## Relation to the Signed Two-Sided Operator
 
-**Theorem (assembling the two-sided operator).** The signed sandwich factors through the one-sided operators,
+**Theorem (assembling the two-sided operator).** The signed two-sided factors through the one-sided operators,
 
 $$
 \Sigma^{\alpha}_{a,b} = L_a\circ\Lambda^{\mathrm{R}}_b = \Lambda_a\circ R_{\alpha(b)} ,
@@ -67,15 +67,15 @@ $$
 \boxed{\;\bigl(\Sigma^{\alpha}_{a,b}\bigr)^\dagger = R_{b^{-1}}\circ\Lambda_{a^{-1}} = \Sigma^{\alpha}_{a^{-1},b^{-1}}\;} .
 $$
 
-**Proof.** $L_a\Lambda^{\mathrm{R}}_b(u) = L_a(\alpha(u)b) = a\alpha(u)b$ and $\Lambda_aR_{\alpha(b)}(u) = a\alpha(u\alpha(b)) = a\alpha(u)\alpha^2(b) = a\alpha(u)b$. For the adjoint, $(\Sigma^\alpha_{a,b})^\dagger = (\Lambda_aR_{\alpha(b)})^\dagger = R_{\alpha(b)}^\dagger\Lambda_a^\dagger = R_{\sigma\alpha(b)}\Lambda_{a^{-1}}$, and $\sigma\alpha = \sigma(\sigma\iota) = \iota$, so $\sigma\alpha(b) = b^{-1}$ and the adjoint is $R_{b^{-1}}\Lambda_{a^{-1}}(u) = a^{-1}\alpha(u)b^{-1} = \Sigma^\alpha_{a^{-1},b^{-1}}(u)$, consistently with *The Signed Adjoint Sandwich on a Topological Group*.
+**Proof.** $L_a\Lambda^{\mathrm{R}}_b(u) = L_a(\alpha(u)b) = a\alpha(u)b$ and $\Lambda_aR_{\alpha(b)}(u) = a\alpha(u\alpha(b)) = a\alpha(u)\alpha^2(b) = a\alpha(u)b$. For the adjoint, $(\Sigma^\alpha_{a,b})^\dagger = (\Lambda_aR_{\alpha(b)})^\dagger = R_{\alpha(b)}^\dagger\Lambda_a^\dagger = R_{\sigma\alpha(b)}\Lambda_{a^{-1}}$, and $\sigma\alpha = \sigma(\sigma\iota) = \iota$, so $\sigma\alpha(b) = b^{-1}$ and the adjoint is $R_{b^{-1}}\Lambda_{a^{-1}}(u) = a^{-1}\alpha(u)b^{-1} = \Sigma^\alpha_{a^{-1},b^{-1}}(u)$, consistently with *The Signed Adjoint Two-Sided Operator on a Topological Group*.
 
-**Corollary (the sandwich from a unitary one-sided operator).** If $a\in H$ then $\Lambda_a$ is unitary and the signed sandwich $\Sigma^{\alpha}_{a,e} = \Lambda_a$ is unitary; more generally $\Sigma^{\alpha}_{a,b}$ is unitary for all $a\in H$ and all $b$ with $\alpha(b)b^{-1} = e$, that is for $b\in H$, recovering the fixed-subgroup criterion of *The Signed Adjoint Sandwich on a Topological Group* from the one-sided one.
+**Corollary (the two-sided operator from a unitary one-sided operator).** If $a\in H$ then $\Lambda_a$ is unitary and the signed two-sided operator $\Sigma^{\alpha}_{a,e} = \Lambda_a$ is unitary; more generally $\Sigma^{\alpha}_{a,b}$ is unitary for all $a\in H$ and all $b$ with $\alpha(b)b^{-1} = e$, that is for $b\in H$, recovering the fixed-subgroup criterion of *The Signed Adjoint Two-Sided Operator on a Topological Group* from the one-sided one.
 
-**Proof.** The first statement is the unitarity criterion, and the second is the sandwich criterion specialised, whose second condition $\alpha(b)b^{-1} = \alpha(a)^{-1}a$ reduces to $\alpha(b)b^{-1} = e$ when $a\in H$ because then $\alpha(a) = a$.
+**Proof.** The first statement is the unitarity criterion, and the second is the two-sided operator criterion specialised, whose second condition $\alpha(b)b^{-1} = \alpha(a)^{-1}a$ reduces to $\alpha(b)b^{-1} = e$ when $a\in H$ because then $\alpha(a) = a$.
 
 ## Summary
 
-The signed left multiplication $\Lambda_a(u) = a\alpha(u)$ on the group algebra has adjoint $\Lambda_a^\dagger = \Lambda_{a^{-1}}$ with respect to the signed form, and the signed right multiplication has the same property; the one-sided signed families are closed under the adjoint. The operator is self-adjoint exactly for the elements of order two, unitary exactly for the elements of the fixed subgroup $H = G^\alpha$, and an involution exactly for the elements of the inverted set $G^\sigma = I(\alpha)$; the three conditions meet in the elements of order two of $H$, where the operator is an orthogonal involution. The fixed space is the kernel of $L_aA - \mathrm{id}$, spanned by the solutions of $a = x\alpha(x)^{-1}$. The two-sided signed sandwich is assembled as $\Sigma^{\alpha}_{a,b} = L_a\Lambda^{\mathrm{R}}_b = \Lambda_aR_{\alpha(b)}$, and its adjoint is assembled from the one-sided adjoints, giving again $\Sigma^{\alpha}_{a^{-1},b^{-1}}$; the unitarity criterion of the two-sided operator is recovered from the one-sided criterion, and the one-sided operator is unitary exactly on the fixed subgroup. The Haar inner product and the adjoint under it are Part III and are not used.
+The signed left multiplication $\Lambda_a(u) = a\alpha(u)$ on the group algebra has adjoint $\Lambda_a^\dagger = \Lambda_{a^{-1}}$ with respect to the signed form, and the signed right multiplication has the same property; the one-sided signed families are closed under the adjoint. The operator is self-adjoint exactly for the elements of order two, unitary exactly for the elements of the fixed subgroup $H = G^\alpha$, and an involution exactly for the elements of the inverted set $G^\sigma = I(\alpha)$; the three conditions meet in the elements of order two of $H$, where the operator is an orthogonal involution. The fixed space is the kernel of $L_aA - \mathrm{id}$, spanned by the solutions of $a = x\alpha(x)^{-1}$. The two-sided signed two-sided operator is assembled as $\Sigma^{\alpha}_{a,b} = L_a\Lambda^{\mathrm{R}}_b = \Lambda_aR_{\alpha(b)}$, and its adjoint is assembled from the one-sided adjoints, giving again $\Sigma^{\alpha}_{a^{-1},b^{-1}}$; the unitarity criterion of the two-sided operator is recovered from the one-sided criterion, and the one-sided operator is unitary exactly on the fixed subgroup. The Haar inner product and the adjoint under it are Part III and are not used.
 
 ## Summary of Notation
 
@@ -89,7 +89,7 @@ The signed left multiplication $\Lambda_a(u) = a\alpha(u)$ on the group algebra 
 | $a \in I(\alpha) = G^\sigma$ | the involution condition |
 | $\Lambda_a^2 = L_{a\alpha(a)}$ | the square of the operator |
 | $G^\alpha\cap G^\sigma$ | the elements of order two in the fixed subgroup, orthogonal involutions |
-| $\Sigma^{\alpha}_{a,b} = L_a\Lambda^{\mathrm{R}}_b = \Lambda_aR_{\alpha(b)}$ | the signed sandwich from the one-sided operators |
+| $\Sigma^{\alpha}_{a,b} = L_a\Lambda^{\mathrm{R}}_b = \Lambda_aR_{\alpha(b)}$ | the signed two-sided operator from the one-sided operators |
 | $\sigma\alpha = \iota$ | the identity reconciling the factors |
 
 ## Further Reading

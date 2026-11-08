@@ -148,17 +148,17 @@ and the spaces of the algebraic layer are recovered by forgetting the norm, with
 
 ### The Matrices
 
-**Example (the matrices, verdict: the sandwiches span the conjugate-linear operators).** Let $A = M_n(\mathbb{C})$ with the operator norm, the conjugation and the product $S \star T = ST^{*}$. The bounded linear operators are all the linear maps, of complex dimension $n^{2}$; and every bounded conjugate-linear map is a finite sum of sandwich operators $X \mapsto AX^{*}B$, since the matrix units give $X \mapsto E_{ij}X^{*}E_{kl}$ and these span. At $n=2$ the sandwiches read off the entries,
+**Example (the matrices, verdict: the two-sided operators span the conjugate-linear operators).** Let $A = M_n(\mathbb{C})$ with the operator norm, the conjugation and the product $S \star T = ST^{*}$. The bounded linear operators are all the linear maps, of complex dimension $n^{2}$; and every bounded conjugate-linear map is a finite sum of two-sided operators $X \mapsto AX^{*}B$, since the matrix units give $X \mapsto E_{ij}X^{*}E_{kl}$ and these span. At $n=2$ the two-sided operators read off the entries,
 
 $$
 X=\begin{pmatrix}a&b\\c&d\end{pmatrix},\qquad E_{11}X^{*}E_{22}=3E_{12}\ \text{for}\ c=3,\qquad E_{12}X^{*}E_{12}=2E_{12}\ \text{for}\ b=2,\qquad E_{21}X^{*}E_{21}=3E_{21},
 $$
 
-the involution $X \mapsto X^{*} = I_2 X^{*} I_2$ being the sandwich $\mathcal{T}_{1,1}$ with both slots the identity. That involution is the sandwich $\mathcal{T}_{1,1}$ of *The Sesquilinear Sandwich Operator*, §*The Definition*, and it is the odd element of the graded algebra that generates the whole odd part by composition with the linear operators, as §*The Involution as an Operator* states.
+the involution $X \mapsto X^{*} = I_2 X^{*} I_2$ being the two-sided operator $\mathcal{T}_{1,1}$ with both slots the identity. That involution is the two-sided operator $\mathcal{T}_{1,1}$ of *The Sesquilinear Two-Sided Operator*, §*The Definition*, and it is the odd element of the graded algebra that generates the whole odd part by composition with the linear operators, as §*The Involution as an Operator* states.
 
 ### The Sequences
 
-**Example (the sequences, verdict: the shift has no conjugate-linear partner).** Let $A = \ell^{1}$ with the norm, the termwise conjugation and the termwise product, which is submultiplicative. The left shift $T(x_0,x_1,\dots) = (x_1,x_2,\dots)$ is bounded and linear; the map $x \mapsto \bar x$ followed by the left shift is the bounded conjugate-linear operator $T \circ *$, and $T \circ *$ has the same norm as $T$ by §*The Involution as an Operator*. The operator norm of a sandwich is estimated in *The Bounded Sesquilinear Sandwich*.
+**Example (the sequences, verdict: the shift has no conjugate-linear partner).** Let $A = \ell^{1}$ with the norm, the termwise conjugation and the termwise product, which is submultiplicative. The left shift $T(x_0,x_1,\dots) = (x_1,x_2,\dots)$ is bounded and linear; the map $x \mapsto \bar x$ followed by the left shift is the bounded conjugate-linear operator $T \circ *$, and $T \circ *$ has the same norm as $T$ by §*The Involution as an Operator*. The operator norm of a two-sided operator is estimated in *The Bounded Sesquilinear Two-Sided Operator*.
 
 ## Summary
 

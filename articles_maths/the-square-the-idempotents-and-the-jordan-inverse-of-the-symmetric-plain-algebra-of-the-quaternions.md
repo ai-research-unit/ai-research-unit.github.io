@@ -98,7 +98,7 @@ U_{\tilde q_1}=2\,(L^{\bullet}_{\tilde q_1})^2-L^{\bullet}_{\tilde q_1^{\,\bulle
 U_{\tilde q_1}(\tilde q_2)=2\,\tilde q_1\bullet(\tilde q_1\bullet\tilde q_2)-\tilde q_1^{\bullet2}\bullet\tilde q_2 .
 $$
 
-**Theorem.** The quadratic representation is the plain sandwich operator and it is multiplicative in the norm:
+**Theorem.** The quadratic representation is the plain two-sided operator and it is multiplicative in the norm:
 
 $$
 \boxed{\;U_{\tilde q_1}(\tilde q_2)=\tilde q_1\,\tilde q_2\,\tilde q_1,\qquad
@@ -111,7 +111,7 @@ $$
 
 ## Summary
 
-The square map of the block is the plain square, $\mathfrak{Q}(\tilde q)=(q_t^2-|\vec q|^2)e_t+2q_t\vec q$, polarising to the product, with the scalar part $2q_t^2-\langle\tilde q\rangle_{\natural}$ and the quadratic identity $\tilde q^2-T(\tilde q)\tilde q+\langle\tilde q\rangle_{\natural}e_t=0$. The idempotents are exactly $0$ and $e_t$, because a nontrivial idempotent would need a pure root of $+e_t$ and the pure square is $-|\vec q_a|^2e_t$; the Peirce decomposition is trivial, $J_1(e_t)=\mathbb{H}$ and $J_0(0)=\mathbb{H}$ with the other spaces vanishing. The Jordan inverse is $\tilde q^{-1}=(T(\tilde q)e_t-\tilde q)/\langle\tilde q\rangle_{\natural}=\tilde q^{\natural}/\langle\tilde q\rangle_{\natural}$ for $\tilde q\neq0$, two-sided and involutive but not multiplicative, and the invertible elements do not form a group. The quadratic representation is $U_{\tilde q_1}=2(L^{\bullet}_{\tilde q_1})^2-L^{\bullet}_{\tilde q_1^{\,\bullet2}}$, equal to the sandwich $\tilde q_1\tilde q_2\tilde q_1$, and $\langle U_{\tilde q_1}\tilde q_2\rangle_{\natural}=\langle\tilde q_1\rangle_{\natural}^2\langle\tilde q_2\rangle_{\natural}$. Everything but the idempotents and the Peirce decomposition has the same shape over $\mathbb{C}$; there the idempotents are many and the Peirce calculus opens.
+The square map of the block is the plain square, $\mathfrak{Q}(\tilde q)=(q_t^2-|\vec q|^2)e_t+2q_t\vec q$, polarising to the product, with the scalar part $2q_t^2-\langle\tilde q\rangle_{\natural}$ and the quadratic identity $\tilde q^2-T(\tilde q)\tilde q+\langle\tilde q\rangle_{\natural}e_t=0$. The idempotents are exactly $0$ and $e_t$, because a nontrivial idempotent would need a pure root of $+e_t$ and the pure square is $-|\vec q_a|^2e_t$; the Peirce decomposition is trivial, $J_1(e_t)=\mathbb{H}$ and $J_0(0)=\mathbb{H}$ with the other spaces vanishing. The Jordan inverse is $\tilde q^{-1}=(T(\tilde q)e_t-\tilde q)/\langle\tilde q\rangle_{\natural}=\tilde q^{\natural}/\langle\tilde q\rangle_{\natural}$ for $\tilde q\neq0$, two-sided and involutive but not multiplicative, and the invertible elements do not form a group. The quadratic representation is $U_{\tilde q_1}=2(L^{\bullet}_{\tilde q_1})^2-L^{\bullet}_{\tilde q_1^{\,\bullet2}}$, equal to the two-sided operator $\tilde q_1\tilde q_2\tilde q_1$, and $\langle U_{\tilde q_1}\tilde q_2\rangle_{\natural}=\langle\tilde q_1\rangle_{\natural}^2\langle\tilde q_2\rangle_{\natural}$. Everything but the idempotents and the Peirce decomposition has the same shape over $\mathbb{C}$; there the idempotents are many and the Peirce calculus opens.
 
 ## Summary of Notation
 

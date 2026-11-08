@@ -3,11 +3,11 @@
 
 ## Introduction
 
-The left multiplication $L_a$ is the archetype of the operators of a ring, and its adjoint with respect to the form of the category is again a left multiplication, that by the image of $a$ under the involution: $(L_a)^\dagger = L_{\sigma(a)}$. The formula carries three things at once: the explicit expression of the adjoint, the compatibility of the adjoint with the involution, and the fact that the left regular representation is a `*`-representation. From it follow the self-adjointness, the skewness, the unitarity and the involutivity of the left multiplication, each read off from the corresponding property of the element, and the adjoints of the right multiplication and of the unsigned sandwich. This article computes the adjoint of the left multiplication, proves the compatibility with the involution, derives the dictionary between the properties of the operator and the properties of the element, and reads the whole thing through the topology, where the adjoint is continuous and the adjointable operators form a closed subalgebra.
+The left multiplication $L_a$ is the archetype of the operators of a ring, and its adjoint with respect to the form of the category is again a left multiplication, that by the image of $a$ under the involution: $(L_a)^\dagger = L_{\sigma(a)}$. The formula carries three things at once: the explicit expression of the adjoint, the compatibility of the adjoint with the involution, and the fact that the left regular representation is a `*`-representation. From it follow the self-adjointness, the skewness, the unitarity and the involutivity of the left multiplication, each read off from the corresponding property of the element, and the adjoints of the right multiplication and of the unsigned two-sided operator. This article computes the adjoint of the left multiplication, proves the compatibility with the involution, derives the dictionary between the properties of the operator and the properties of the element, and reads the whole thing through the topology, where the adjoint is continuous and the adjointable operators form a closed subalgebra.
 
 The article assumes the topological ring and the bounded and continuous operators from *Topological Rings and Fields* and *Operators on a Topological Ring*; the left and right multiplications from *The Left and Right Multiplication Operators on a Topological Ring*; the operator adjoint, the form of the category and the left regular representation from *The Involution on Bounded Operators of a Ring*; the continuous involution, the fixed and skew sets and the closedness of the fixed set from *Involutive Topological Rings and Fields*; and the self-adjoint, skew, unitary and inverted elements from *Involutive Topological Division Rings*. The adjoints under the residue pairing and under the Hermitian valuation are *Adjoints under the Residue Pairing* and *The Adjoint under a Hermitian Valuation*; the signed versions are the three articles that follow.
 
-Throughout, $R$ is a Hausdorff topological ring with a continuous involution $\sigma$, a continuous $\sigma$-invariant trace $\tau$ and the **form of the category** $\{x,y\} = \tau(x\sigma(y))$; $L_a(x) = ax$ and $R_b(x) = xb$ are the multiplications; the unsigned sandwich is $\Sigma_{a,b} = L_aR_b$; and the adjoint $T^\dagger$ is defined by $\{Tx,y\} = \{x,T^\dagger y\}$.
+Throughout, $R$ is a Hausdorff topological ring with a continuous involution $\sigma$, a continuous $\sigma$-invariant trace $\tau$ and the **form of the category** $\{x,y\} = \tau(x\sigma(y))$; $L_a(x) = ax$ and $R_b(x) = xb$ are the multiplications; the unsigned two-sided operator is $\Sigma_{a,b} = L_aR_b$; and the adjoint $T^\dagger$ is defined by $\{Tx,y\} = \{x,T^\dagger y\}$.
 
 ## The Adjoint of the Left Multiplication
 
@@ -25,13 +25,13 @@ Hence the adjoint of a left multiplication is the left multiplication by the ima
 
 **Proof.** The formula is the theorem; the `*`-representation statement is *The Involution on Bounded Operators of a Ring*, and the last identity is the theorem applied twice, $(L_{\sigma(a)})^\dagger = L_{\sigma^2(a)} = L_a$.
 
-**Corollary (the unsigned sandwich).** The unsigned sandwich $\Sigma_{a,b}(x) = axb$ is adjointable with
+**Corollary (the unsigned two-sided operator).** The unsigned two-sided operator $\Sigma_{a,b}(x) = axb$ is adjointable with
 
 $$
 (\Sigma_{a,b})^\dagger = \Sigma_{\sigma(a),\sigma(b)} ,
 $$
 
-the sandwich of the images, with the order of the parameters restored rather than reversed.
+the two-sided operator of the images, with the order of the parameters restored rather than reversed.
 
 **Proof.** $\Sigma_{a,b} = L_aR_b$, so $(\Sigma_{a,b})^\dagger = R_b{}^\dagger L_a{}^\dagger = R_{\sigma(b)}L_{\sigma(a)} = \Sigma_{\sigma(a),\sigma(b)}$ by the anti-multiplicativity of the adjoint.
 
@@ -99,7 +99,7 @@ so the left multiplication is unitary, $L_a^\dagger L_a = L_aL_a^\dagger = \math
 
 ## Summary
 
-The adjoint of the left multiplication of a topological ring with respect to the form of the category is the left multiplication by the image of the element under the involution, $(L_a)^\dagger = L_{\sigma(a)}$, and the adjoint of the right multiplication is $(R_b)^\dagger = R_{\sigma(b)}$; the adjoint therefore intertwines the multiplication with the involution and makes the left regular representation a `*`-representation. The adjoint of the unsigned sandwich is $\Sigma_{\sigma(a),\sigma(b)}$. The inner derivation $ad_a = L_a - R_a$ has adjoint $ad_{\sigma(a)}$, so it is self-adjoint exactly when $\sigma(a) - a$ is central and skew exactly when $\sigma(a) + a$ is central, and its trace vanishes; the inner derivations form a closed $\sigma$-stable subspace. The dictionary between operator and element is exact: the left multiplication is self-adjoint exactly for the self-adjoint elements, skew for the skew elements, unitary for the unitary elements with central norm, involutive for the elements of order two, and normal exactly for the elements commuting with their image under the involution. Topologically the left multiplications are bounded and continuous, the adjoint map is continuous in the topology of bounded convergence, the self-adjoint elements are closed, and the whole dictionary passes to the completion. Under a different form — the residue pairing — the adjoint of the left multiplication is a right multiplication, which shows that the adjoint depends on the form even when the involution is fixed.
+The adjoint of the left multiplication of a topological ring with respect to the form of the category is the left multiplication by the image of the element under the involution, $(L_a)^\dagger = L_{\sigma(a)}$, and the adjoint of the right multiplication is $(R_b)^\dagger = R_{\sigma(b)}$; the adjoint therefore intertwines the multiplication with the involution and makes the left regular representation a `*`-representation. The adjoint of the unsigned two-sided operator is $\Sigma_{\sigma(a),\sigma(b)}$. The inner derivation $ad_a = L_a - R_a$ has adjoint $ad_{\sigma(a)}$, so it is self-adjoint exactly when $\sigma(a) - a$ is central and skew exactly when $\sigma(a) + a$ is central, and its trace vanishes; the inner derivations form a closed $\sigma$-stable subspace. The dictionary between operator and element is exact: the left multiplication is self-adjoint exactly for the self-adjoint elements, skew for the skew elements, unitary for the unitary elements with central norm, involutive for the elements of order two, and normal exactly for the elements commuting with their image under the involution. Topologically the left multiplications are bounded and continuous, the adjoint map is continuous in the topology of bounded convergence, the self-adjoint elements are closed, and the whole dictionary passes to the completion. Under a different form — the residue pairing — the adjoint of the left multiplication is a right multiplication, which shows that the adjoint depends on the form even when the involution is fixed.
 
 ## Summary of Notation
 
@@ -109,7 +109,7 @@ The adjoint of the left multiplication of a topological ring with respect to the
 | $L_a(x) = ax$, $R_b(x) = xb$ | Left and right multiplications |
 | $(L_a)^\dagger = L_{\sigma(a)}$ | The adjoint of the left multiplication |
 | $(R_b)^\dagger = R_{\sigma(b)}$ | The adjoint of the right multiplication |
-| $\Sigma_{a,b} = L_aR_b$ | The unsigned sandwich |
+| $\Sigma_{a,b} = L_aR_b$ | The unsigned two-sided operator |
 | $(\Sigma_{a,b})^\dagger = \Sigma_{\sigma(a),\sigma(b)}$ | Its adjoint |
 | $L_a^\dagger = L_a \iff \sigma(a) = a$ | Self-adjoint left multiplications |
 | $L_a^\dagger L_a = \mathrm{id} \iff \sigma(a)a = 1$ | Left-unitary left multiplications |

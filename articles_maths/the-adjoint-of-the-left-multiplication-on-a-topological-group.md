@@ -75,7 +75,7 @@ so the involution on the elements of $G$ agrees with the adjoint on the operator
 
 **Corollary (the degenerate cases).** If $\sigma = \iota$, so that $\alpha = \mathrm{id}$, the signed form is the natural form and the adjoint of $L_a$ is $L_{a^{-1}}$; if the involution is inner, the adjoint differs from the untwisted adjoint by the inner automorphism of the conjugating element; and if $G$ is abelian then $L_a = R_a$ and the left multiplication is self-adjoint exactly when $\sigma(a) = a$, that is for $a \in G^\sigma$.
 
-**Proof.** The first statement is the specialisation $\alpha = \mathrm{id}$. For an inner involution one has $\sigma(a) = za z^{-1}$ up to the conventions of *The Signed Sandwich on a Topological Group*, so the signed adjoint is the conjugate of the untwisted one. On an abelian group $L_a = R_a$ and $L_{\sigma(a)} = L_a$ exactly when $\sigma(a) = a$.
+**Proof.** The first statement is the specialisation $\alpha = \mathrm{id}$. For an inner involution one has $\sigma(a) = za z^{-1}$ up to the conventions of *The Signed Two-Sided Operator on a Topological Group*, so the signed adjoint is the conjugate of the untwisted one. On an abelian group $L_a = R_a$ and $L_{\sigma(a)} = L_a$ exactly when $\sigma(a) = a$.
 
 ## Continuity
 

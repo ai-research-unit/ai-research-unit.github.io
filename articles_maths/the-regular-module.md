@@ -205,7 +205,7 @@ The simple module $S=\mathbb{B}\tilde\Pi_+$, its basis, its left action and its 
 
 ## Summary
 
-- The algebra is a left, a right and a two-sided module over itself, by left multiplication, right multiplication and the sandwich.
+- The algebra is a left, a right and a two-sided module over itself, by left multiplication, right multiplication and the two-sided operator.
 - The submodules of the regular module are the ideals: left, right or two-sided according to the side.
 - The algebra is simple: its two-sided ideals are $0$ and $\mathbb{B}$. It is of length two as a left module, with the two minimal left ideals as its composition factors.
 - The radical is zero, and the algebra is semisimple.

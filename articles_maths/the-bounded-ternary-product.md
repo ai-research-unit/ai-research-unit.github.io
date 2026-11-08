@@ -70,9 +70,9 @@ $$
 
 The pair map $(x,y) \mapsto \mathrm{Sd}_{x,y}$ is a bounded bilinear map $A \times A^{\varsigma} \to B(A)$ of norm at most one.
 
-*Proof.* Linearity in $z$ is the parity of the third slot; the bound is the trilinear bound read with $z$ as the variable; the three readings are the theorem of *The Ternary Product as an Operator*, §*The Three Interpretations*: the pair operator is the ordinary left multiplication by the derived product, $\mathrm{Sd}_{x,y} = L_{x \star y}R_{1}$, and it is also the sandwich $\mathcal{T}_{x,z}$ read in the middle slot and the right multiplication $L_{1}R_{y^{*}z}$ read in the first. Bilinearity of the pair map is the parity of the two parameters, read on $A \times A^{\varsigma}$.
+*Proof.* Linearity in $z$ is the parity of the third slot; the bound is the trilinear bound read with $z$ as the variable; the three readings are the theorem of *The Ternary Product as an Operator*, §*The Three Interpretations*: the pair operator is the ordinary left multiplication by the derived product, $\mathrm{Sd}_{x,y} = L_{x \star y}R_{1}$, and it is also the two-sided operator $\mathcal{T}_{x,z}$ read in the middle slot and the right multiplication $L_{1}R_{y^{*}z}$ read in the first. Bilinearity of the pair map is the parity of the two parameters, read on $A \times A^{\varsigma}$.
 
-**Corollary (the middle reading is a sandwich).** With the first and the third slots fixed, the map $y \mapsto x\,y^{*}\,z$ is the sandwich $\mathcal{T}_{x,z}$ of *The Bounded Sesquilinear Sandwich*, so the pair operator and the sandwich are the two readings of the same trilinear object, one with the middle slot promoted and one with the outer slots promoted.
+**Corollary (the middle reading is a two-sided operator).** With the first and the third slots fixed, the map $y \mapsto x\,y^{*}\,z$ is the two-sided operator $\mathcal{T}_{x,z}$ of *The Bounded Sesquilinear Two-Sided Operator*, so the pair operator and the two-sided operator are the two readings of the same trilinear object, one with the middle slot promoted and one with the outer slots promoted.
 
 *Proof.* $\{x,y,z\} = x y^{*} z = \mathcal{T}_{x,z}(y)$, which is the corollary of *The Ternary Product as an Operator*, §*The Three Interpretations*.
 
@@ -140,7 +140,7 @@ so the completion of a normed sesqualgebra is a Banach $J^{*}$-triple.
 
 **Definition.** A **normed $J^{*}$-triple** is a normed space with a bounded triple product that is conjugate-linear in the middle and linear in the outer variables and satisfies the Jordan triple identity; a **Banach $J^{*}$-triple** is a complete normed $J^{*}$-triple. A **normed $J^{*}$-algebra** is a normed $J^{*}$-triple with a unit and a binary product recovered by $xy = \{x, y^{*}, 1\}$.
 
-**Theorem (the sesqualgebra is a normed $J^{*}$-triple).** The standard example of a normed sesqualgebra is a normed $J^{*}$-triple, and its completion is a Banach $J^{*}$-triple; the pair operators are its bounded operators, the sandwich is its middle reading, and the triple system of the pairs is its Lie triple system.
+**Theorem (the sesqualgebra is a normed $J^{*}$-triple).** The standard example of a normed sesqualgebra is a normed $J^{*}$-triple, and its completion is a Banach $J^{*}$-triple; the pair operators are its bounded operators, the two-sided operator is its middle reading, and the triple system of the pairs is its Lie triple system.
 
 *Proof.* The parities and the Hermitian symmetry are the proposition of §*The Definition and the Parity*, the bound is §*The Trilinear Bound*, the identity is §*The Preservation of the Jordan Triple Identity* on the completion, and the identifications are the corollaries above.
 
@@ -178,7 +178,7 @@ $$
 
 ## Summary
 
-The ternary product of a sesquilinear product is $\{x,y,z\} = (x \star y) \star z^{*}$, linear in the two outer variables and conjugate-linear in the middle, and on a normed sesqualgebra with submultiplicative norm and isometric involution it is bounded with the constant one, $\lVert\{x,y,z\}\rVert \leq \lVert x\rVert\lVert y\rVert\lVert z\rVert$, so the object is a normed triple system and the product factors through the projective tensor product with a linear map of norm at most one. The pair operators $\mathrm{Sd}_{x,y}(z) = \{x,y,z\}$ are bounded with $\lVert\mathrm{Sd}_{x,y}\rVert \leq \lVert x\rVert\lVert y\rVert$, they are the left multiplications by the derived products, their middle reading is the sandwich $\mathcal{T}_{x,z}$, the pair map is bounded bilinear on $A \times A^{\varsigma}$, and the pair operators form a bounded Lie triple system under the commutator with the Lie companion $\delta_{x,y} = \mathrm{ad}_{[x,y]}$ the bounded inner derivation of the pair. The completion $\widehat{A}$ carries the extended product, involution and triple product, the bound survives, and the Jordan triple identity survives because both of its sides are continuous and agree on the dense subset, so the completion of a normed sesqualgebra is a Banach $J^{*}$-triple. In the unital case the ternary product determines the binary product and the involution, $\{x,y,1\} = x \star y$ and $\{1,y,1\} = y^{*}$, and the completed object is the normed $J^{*}$-algebra of *The Topological J\*-Algebra*.
+The ternary product of a sesquilinear product is $\{x,y,z\} = (x \star y) \star z^{*}$, linear in the two outer variables and conjugate-linear in the middle, and on a normed sesqualgebra with submultiplicative norm and isometric involution it is bounded with the constant one, $\lVert\{x,y,z\}\rVert \leq \lVert x\rVert\lVert y\rVert\lVert z\rVert$, so the object is a normed triple system and the product factors through the projective tensor product with a linear map of norm at most one. The pair operators $\mathrm{Sd}_{x,y}(z) = \{x,y,z\}$ are bounded with $\lVert\mathrm{Sd}_{x,y}\rVert \leq \lVert x\rVert\lVert y\rVert$, they are the left multiplications by the derived products, their middle reading is the two-sided operator $\mathcal{T}_{x,z}$, the pair map is bounded bilinear on $A \times A^{\varsigma}$, and the pair operators form a bounded Lie triple system under the commutator with the Lie companion $\delta_{x,y} = \mathrm{ad}_{[x,y]}$ the bounded inner derivation of the pair. The completion $\widehat{A}$ carries the extended product, involution and triple product, the bound survives, and the Jordan triple identity survives because both of its sides are continuous and agree on the dense subset, so the completion of a normed sesqualgebra is a Banach $J^{*}$-triple. In the unital case the ternary product determines the binary product and the involution, $\{x,y,1\} = x \star y$ and $\{1,y,1\} = y^{*}$, and the completed object is the normed $J^{*}$-algebra of *The Topological J\*-Algebra*.
 
 ## Summary of Notation
 
@@ -189,7 +189,7 @@ The ternary product of a sesquilinear product is $\{x,y,z\} = (x \star y) \star 
 | $A \widehat{\otimes}_{\pi} A \widehat{\otimes}_{\pi} A \to A$ | the factorisation of the triple product |
 | $\mathrm{Sd}_{x,y}(z) = \{x,y,z\}$ | the pair operator, linear and bounded |
 | $\lVert\mathrm{Sd}_{x,y}\rVert \leq \lVert x\rVert\lVert y\rVert$ | the bound of the pair operator |
-| $\mathrm{Sd}_{x,y}(z) = x\,y^{*}\,z = \mathcal{T}_{x,z}(y)$ | the pair operator as a left multiplication and as a sandwich |
+| $\mathrm{Sd}_{x,y}(z) = x\,y^{*}\,z = \mathcal{T}_{x,z}(y)$ | the pair operator as a left multiplication and as a two-sided operator |
 | $[\mathrm{Sd}_{x,y},\mathrm{Sd}_{u,v}]$ | the bracket of the pair operators, a Lie triple system |
 | $\delta_{x,y} = \mathrm{ad}_{[x,y]}$ | the Lie companion, a bounded inner derivation |
 | $\lVert\{x,y,z\}\rVert \leq C\lVert x\rVert\lVert y\rVert\lVert z\rVert$ | the defining inequality of a bounded triple product |

@@ -229,7 +229,7 @@ with $\tilde\Pi_\pm$ orthogonal idempotents, $\tilde\Pi_+\tilde\Pi_-=\tilde\Pi_-
 
 *Proof.* If $N\neq0$ then $\tilde Q$ is a unit and $L_{\tilde Q}$ is invertible. If $N=0$ and $\tilde Q\neq0$, the rank is $2$ by *The Four General Products and Their Relations over the Biquaternion Algebra*, §*The Annihilators*. At the origin the map is zero.
 
-**Definition (the sandwich).** The **sandwich** of $\tilde Q$ is the $\mathbb{C}$-linear operator
+**Definition (the two-sided operator).** The **two-sided operator** of $\tilde Q$ is the $\mathbb{C}$-linear operator
 
 $$
 \mathrm{Sd}_{\tilde Q}(\tilde X)=\tilde Q\tilde X\tilde Q^{*},
@@ -237,7 +237,7 @@ $$
 
 where ${}^{*}$ is the Hermitian conjugate of the matrix model.
 
-**Theorem (the sandwich is singular on the null cone).** $\mathrm{Sd}_{\tilde Q}$ is singular exactly on $\mathcal N$.
+**Theorem (the two-sided operator is singular on the null cone).** $\mathrm{Sd}_{\tilde Q}$ is singular exactly on $\mathcal N$.
 
 *Proof.* If $N=0$ and $\tilde Q\neq0$, then $\tilde Q^{\natural}\neq0$ and
 
@@ -278,7 +278,7 @@ If $B^{2}=0$ then $\mathrm{ad}_{\vec Q}^{3}=0$. If $B^{2}\neq0$ then $\vec Q\neq
 | $\Sigma_{01}$ | $2$ | singular, rank $1$ | not nilpotent |
 | $\Sigma_{00}$ | $0$ at the origin, $2$ otherwise | singular, rank $1$ off the origin | zero at the origin, index $3$ otherwise |
 
-**Corollary (the two operator loci).** The sandwich is singular exactly on the null cone and the inner derivation is nilpotent exactly on the spectral-degenerate cone. The sandwich and the rank follow the norm and separate the origin from the non-zero nilpotents, but not the scalar line from the Jordan part. The derivation follows the discriminant and separates both pairs of strata: it is zero on the scalar line and at the origin, and of index three on the Jordan part and on the non-zero nilpotents.
+**Corollary (the two operator loci).** The two-sided operator is singular exactly on the null cone and the inner derivation is nilpotent exactly on the spectral-degenerate cone. The two-sided operator and the rank follow the norm and separate the origin from the non-zero nilpotents, but not the scalar line from the Jordan part. The derivation follows the discriminant and separates both pairs of strata: it is zero on the scalar line and at the origin, and of index three on the Jordan part and on the non-zero nilpotents.
 
 ## Summary
 
@@ -290,7 +290,7 @@ The two cones are independent: neither contains the other, and they meet exactly
 
 The four sectors are compared by their spectrum, normal form, norm and minimal polynomial. The norm separates two types, the characteristic polynomial exactly the four sectors, and the minimal polynomial the six strata. The norm is therefore the coarsest invariant: it cannot separate the scalar line from the Jordan part, nor the origin from the non-zero nilpotents. The characteristic polynomial is complete off the spectral cone and exactly two-to-one on it.
 
-The two decompositions follow the two conditions. The eigenbasis follows the discriminant: it exists on $\Sigma_{11}\cup\Sigma_{01}$, has one term on the punctured scalar line, and fails on the Jordan part and on the non-zero nilpotents. The polar decomposition follows the norm: it exists on $\Sigma_{11}\cup\Sigma_{10}$ and fails on the null cone. The operator readings are the same pair of loci: the sandwich is singular exactly on the null cone, and the inner derivation is nilpotent exactly on the spectral-degenerate cone.
+The two decompositions follow the two conditions. The eigenbasis follows the discriminant: it exists on $\Sigma_{11}\cup\Sigma_{01}$, has one term on the punctured scalar line, and fails on the Jordan part and on the non-zero nilpotents. The polar decomposition follows the norm: it exists on $\Sigma_{11}\cup\Sigma_{10}$ and fails on the null cone. The operator readings are the same pair of loci: the two-sided operator is singular exactly on the null cone, and the inner derivation is nilpotent exactly on the spectral-degenerate cone.
 
 ## Summary of Notation
 
@@ -311,7 +311,7 @@ The two decompositions follow the two conditions. The eigenbasis follows the dis
 | $\Rho,\tilde U$ | the modulus and the unit factor, $\tilde Q=\Rho\tilde U$ with $\Rho^2=\langle\tilde Q\rangle_{\natural}$ and $\langle\tilde U\rangle_{\natural}=1$ |
 | $\vec\Upsilon$ | a non-zero pure nilpotent, $\vec\Upsilon^2=0$ |
 | $L_{\tilde Q}(\tilde X)=\tilde Q\tilde X$ | left multiplication; rank $4$ on the units, $2$ on the non-zero null elements, $0$ at the origin |
-| $\mathrm{Sd}_{\tilde Q}(\tilde X)=\tilde Q\tilde X\tilde Q^{*}$ | the sandwich, singular exactly on $\mathcal N$ |
+| $\mathrm{Sd}_{\tilde Q}(\tilde X)=\tilde Q\tilde X\tilde Q^{*}$ | the two-sided operator, singular exactly on $\mathcal N$ |
 | $\mathrm{ad}_{\tilde Q}(\tilde X)=\tilde Q\tilde X-\tilde X\tilde Q$ | the inner derivation, nilpotent exactly on $\mathcal S$ |
 
 ## Further Reading
@@ -323,7 +323,7 @@ The two decompositions follow the two conditions. The eigenbasis follows the dis
 - [The N-Degenerate, Spectrally Regular Sector](the-n-degenerate-spectrally-regular-sector.html), for $\Sigma_{01}$, the scaled idempotents and the spectrum $\{c,0\}$.
 - [The N-Degenerate, Spectrally Degenerate Sector](the-n-degenerate-spectrally-degenerate-sector.html), for $\Sigma_{00}$, the nilpotent cone and the origin.
 - *Relations between Exponential Polar Decomposition and Eigenbasis of a Biquaternion*, for the comparison of the two decompositions factor by factor.
-- [The Sandwich of an N-Regular, Spectrally Regular Biquaternion](the-sandwich-of-an-n-regular-spectrally-regular-biquaternion.html), for the sandwich, its spectrum and its rank on the null cone.
+- [Hermitian Pair of N-Regular, Spectrally Regular Operators Acting on Two Sides](hermitian-pair-of-n-regular-spectrally-regular-operators-acting-on-two-sides.html), for the two-sided operator, its spectrum and its rank on the null cone.
 - [The Biquaternion Eigenvalue Decomposition](the-biquaternion-eigenvalue-decomposition.html), for the eigenvalue decomposition, the eigenprojections and the degenerate regimes.
 - [Relations between the Biquaternion Exponential and the Fourier Kernel](relations-between-the-biquaternion-exponential-and-the-fourier-kernel.html), for the same four sectors read through the flow: the eigenbasis, the root and the Hermitian norm.
 

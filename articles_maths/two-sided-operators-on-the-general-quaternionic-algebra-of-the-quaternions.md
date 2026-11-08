@@ -8,7 +8,7 @@ $$
 L_{\tilde q_3}R_{\tilde q_4}(\tilde q) = \tilde q_3 \star \tilde q \cdot \tilde q_4 = \tilde q_3^{\natural}\tilde q\,\tilde q_4 = L_{\tilde q_3^{\natural}}R_{\tilde q_4} .
 $$
 
-They are the elementary sandwiches of the block, and their family carries the whole operator calculus of the algebra: a composition law, an adjoint for each of the two forms of the space, and the fact — the *type* of the family — that the sandwiches span every real-linear operator of $\mathbb{H}$. The left factor is the left multiplication by the conjugated parameter, $L_{\tilde q_3^{\natural}}$. This article establishes those four facts and compares them with the plain algebra of the same space, where the left multiplication does not carry the conjugation and the two laws are correspondingly different. The one-sided families are *One-Sided Operators on the General Quaternionic Algebra*, below this article in this category, and the left family with its monoid *The Left Multiplications of the Quaternionic Product and the Opposite Monoid*, above this article in this category; the forms are *The Isotropic Structure of the General Quaternionic Algebra*, above this article in this category.
+They are the elementary two-sided operators of the block, and their family carries the whole operator calculus of the algebra: a composition law, an adjoint for each of the two forms of the space, and the fact — the *type* of the family — that the two-sided operators span every real-linear operator of $\mathbb{H}$. The left factor is the left multiplication by the conjugated parameter, $L_{\tilde q_3^{\natural}}$. This article establishes those four facts and compares them with the plain algebra of the same space, where the left multiplication does not carry the conjugation and the two laws are correspondingly different. The one-sided families are *One-Sided Operators on the General Quaternionic Algebra*, below this article in this category, and the left family with its monoid *The Left Multiplications of the Quaternionic Product and the Opposite Monoid*, above this article in this category; the forms are *The Isotropic Structure of the General Quaternionic Algebra*, above this article in this category.
 
 ## The Family
 
@@ -16,7 +16,7 @@ They are the elementary sandwiches of the block, and their family carries the wh
 
 **Theorem (the type of the family).** The family spans the whole algebra of real-linear operators, $\operatorname{span}_\mathbb{R}\mathcal T = \operatorname{End}_\mathbb{R}(\mathbb{H})$, of real dimension sixteen; every real-linear operator of $\mathbb{H}$ is a finite real combination of two-sided operators.
 
-*Proof.* The left multiplications span a four-dimensional subspace by *The Left Multiplications of the Quaternionic Product and the Opposite Monoid*, above this article in this category, and the right multiplications span another four-dimensional subspace; the products $L_{\tilde q_3^{\natural}}R_{\tilde q_4}$ span the product of the two subspaces, and the sandwich operators of the plain algebra are known to span $\operatorname{End}_\mathbb{R}(\mathbb{H})$, since the enveloping algebra $\mathbb{H} \otimes_\mathbb{R} \mathbb{H}_{\mathrm{opp}}$ is the full matrix algebra $M_4(\mathbb{R})$. The reindexing $\tilde q_3 \mapsto \tilde q_3^{\natural}$ is a bijection, so the quaternionic sandwiches are the plain ones reindexed and span the same sixteen dimensions.
+*Proof.* The left multiplications span a four-dimensional subspace by *The Left Multiplications of the Quaternionic Product and the Opposite Monoid*, above this article in this category, and the right multiplications span another four-dimensional subspace; the products $L_{\tilde q_3^{\natural}}R_{\tilde q_4}$ span the product of the two subspaces, and the two-sided operators of the plain algebra are known to span $\operatorname{End}_\mathbb{R}(\mathbb{H})$, since the enveloping algebra $\mathbb{H} \otimes_\mathbb{R} \mathbb{H}_{\mathrm{opp}}$ is the full matrix algebra $M_4(\mathbb{R})$. The reindexing $\tilde q_3 \mapsto \tilde q_3^{\natural}$ is a bijection, so the quaternionic two-sided operators are the plain ones reindexed and span the same sixteen dimensions.
 
 **Corollary.** The four-dimensional space $\mathbb{H}$ is simple as a module over the operator algebra $\mathcal T$: the family is all of $\operatorname{End}_\mathbb{R}(\mathbb{H})$, and a full endomorphism algebra acts faithfully.
 
@@ -38,7 +38,7 @@ L_{\tilde q_3}R_{\tilde q_4}\bigl(L_{\tilde q_5}R_{\tilde q_6}(\tilde q)\bigr) =
 $$
 which is $L_{\tilde q_5\tilde q_3}R_{\tilde q_6\tilde q_4}(\tilde q)$.
 
-**Proposition (when two sandwiches agree, and the zero case).** The sandwich $L_\alpha R_\beta$ is zero exactly when $\alpha = 0$ or $\beta = 0$. For **nonzero** parameter pairs, two sandwiches agree as operators exactly when the pairs differ by a single real scalar:
+**Proposition (when two such operators agree, and the zero case).** The two-sided operator $L_\alpha R_\beta$ is zero exactly when $\alpha = 0$ or $\beta = 0$. For **nonzero** parameter pairs, two such operators agree as operators exactly when the pairs differ by a single real scalar:
 
 $$
 \boxed{\;\alpha,\beta,\alpha',\beta' \neq 0 : \quad L_{\alpha}R_{\beta} = L_{\alpha'}R_{\beta'} \iff \alpha' = \mu\alpha \text{ and } \beta' = \mu^{-1}\beta \text{ for some } \mu \in \mathbb{R}^\times\;}.
@@ -62,7 +62,7 @@ $$
 
 ## The Adjoint
 
-Each form of the space defines a transpose on the operators, and the two transposes of a sandwich are other sandwiches with the parameters conjugated and swapped.
+Each form of the space defines a transpose on the operators, and the two transposes of a two-sided operator are other two-sided operators with the parameters conjugated and swapped.
 
 **Theorem (the transpose for the plain form).** With respect to the plain form $\langle\tilde q_1,\tilde q_2\rangle = \mathrm{Sc}(\tilde q_1\tilde q_2)$, the transpose of a two-sided operator is
 
@@ -88,25 +88,25 @@ $$
 $$
 using that $(\tilde q_3\tilde q_2\tilde q_4^{\natural})^{\natural} = \tilde q_4\tilde q_2^{\natural}\tilde q_3^{\natural}$; the last is $\langle\tilde q_1,\tilde q_3\tilde q_2\tilde q_4^{\natural}\rangle_{\natural} = \langle\tilde q_1,L_{\tilde q_3^{\natural}}R_{\tilde q_4^{\natural}}\tilde q_2\rangle_{\natural}$, since $(\tilde q_3^{\natural})^{\natural}\tilde q_2\tilde q_4^{\natural} = \tilde q_3\tilde q_2\tilde q_4^{\natural}$.
 
-**Corollary (the two transposes and the comparison).** The plain transpose swaps the two parameters and conjugates them both, $T^{\sim}_{\tilde q_3,\tilde q_4} = L_{\tilde q_4^{\natural}}R_{\tilde q_3^{\natural}}$; the quaternionic transpose keeps the two parameters in place and conjugates them both, $T^{\dagger}_{\tilde q_3,\tilde q_4} = L_{\tilde q_3^{\natural}}R_{\tilde q_4^{\natural}}$. For a nonzero sandwich, the two transposes coincide exactly when the two parameters are proportional over $\mathbb{R}$,
+**Corollary (the two transposes and the comparison).** The plain transpose swaps the two parameters and conjugates them both, $T^{\sim}_{\tilde q_3,\tilde q_4} = L_{\tilde q_4^{\natural}}R_{\tilde q_3^{\natural}}$; the quaternionic transpose keeps the two parameters in place and conjugates them both, $T^{\dagger}_{\tilde q_3,\tilde q_4} = L_{\tilde q_3^{\natural}}R_{\tilde q_4^{\natural}}$. For a nonzero two-sided operator, the two transposes coincide exactly when the two parameters are proportional over $\mathbb{R}$,
 
 $$
 \boxed{\;\tilde q_3,\tilde q_4 \neq 0 : \quad T^{\sim}_{\tilde q_3,\tilde q_4} = T^{\dagger}_{\tilde q_3,\tilde q_4} \iff \tilde q_4 \in \mathbb{R}\tilde q_3\;},
 $$
 
-which includes the diagonal case $\tilde q_3 = \tilde q_4$ but is strictly wider; and a nonzero sandwich is self-transpose for the plain form exactly when the second parameter is a real multiple of the conjugate of the first,
+which includes the diagonal case $\tilde q_3 = \tilde q_4$ but is strictly wider; and a nonzero two-sided operator is self-transpose for the plain form exactly when the second parameter is a real multiple of the conjugate of the first,
 
 $$
 \tilde q_3,\tilde q_4 \neq 0 : \quad L_{\tilde q_3}R_{\tilde q_4} = T^{\sim}_{\tilde q_3,\tilde q_4} \iff \tilde q_4 \in \mathbb{R}\tilde q_3^{\natural} .
 $$
 
-The two criteria are stated for a nonzero sandwich because the zero operators $L_{0}R_{\tilde q_4}$ and $L_{\tilde q_3}R_{0}$ are transposed to zero and satisfy both equalities trivially, without any proportion between the parameters.
+The two criteria are stated for a nonzero two-sided operator because the zero operators $L_{0}R_{\tilde q_4}$ and $L_{\tilde q_3}R_{0}$ are transposed to zero and satisfy both equalities trivially, without any proportion between the parameters.
 
-*Proof.* The transposes are the sandwiches $L_{\tilde q_4^{\natural}}R_{\tilde q_3^{\natural}}$ and $L_{\tilde q_3^{\natural}}R_{\tilde q_4^{\natural}}$ with all four parameters nonzero for a nonzero sandwich. They agree exactly when the pairs $(\tilde q_4^{\natural},\tilde q_3^{\natural})$ and $(\tilde q_3^{\natural},\tilde q_4^{\natural})$ differ by the real scalar of the agree-as-operators criterion, that is $\tilde q_3^{\natural} = \mu\tilde q_4^{\natural}$ for some $\mu \neq 0$, which is $\tilde q_3 = \mu\tilde q_4$. For the self-transpose reading, $L_{\tilde q_3}R_{\tilde q_4} = T^{\sim}_{\tilde q_3,\tilde q_4}$ compares the pairs $(\tilde q_3^{\natural},\tilde q_4)$ and $(\tilde q_4^{\natural},\tilde q_3^{\natural})$: the criterion gives $\tilde q_4^{\natural} = \mu\tilde q_3^{\natural}$ and $\tilde q_3^{\natural} = \mu^{-1}\tilde q_4^{\natural}$, which is the single condition $\tilde q_4 = \mu\tilde q_3^{\natural}$ with a real $\mu \neq 0$.
+*Proof.* The transposes are the two-sided operators $L_{\tilde q_4^{\natural}}R_{\tilde q_3^{\natural}}$ and $L_{\tilde q_3^{\natural}}R_{\tilde q_4^{\natural}}$ with all four parameters nonzero for a nonzero two-sided operator. They agree exactly when the pairs $(\tilde q_4^{\natural},\tilde q_3^{\natural})$ and $(\tilde q_3^{\natural},\tilde q_4^{\natural})$ differ by the real scalar of the agree-as-operators criterion, that is $\tilde q_3^{\natural} = \mu\tilde q_4^{\natural}$ for some $\mu \neq 0$, which is $\tilde q_3 = \mu\tilde q_4$. For the self-transpose reading, $L_{\tilde q_3}R_{\tilde q_4} = T^{\sim}_{\tilde q_3,\tilde q_4}$ compares the pairs $(\tilde q_3^{\natural},\tilde q_4)$ and $(\tilde q_4^{\natural},\tilde q_3^{\natural})$: the criterion gives $\tilde q_4^{\natural} = \mu\tilde q_3^{\natural}$ and $\tilde q_3^{\natural} = \mu^{-1}\tilde q_4^{\natural}$, which is the single condition $\tilde q_4 = \mu\tilde q_3^{\natural}$ with a real $\mu \neq 0$.
 
 ## The Comparison with the Plain Algebra
 
-**Proposition.** The two-sided operators of the plain algebra are the sandwiches with the direct product, $T^{(0)}_{\tilde q_3,\tilde q_4}(\tilde q) = \tilde q_3\tilde q\tilde q_4$, and they satisfy the composition law $T^{(0)}_{\tilde q_3,\tilde q_4}T^{(0)}_{\tilde q_5,\tilde q_6} = T^{(0)}_{\tilde q_3\tilde q_5,\tilde q_6\tilde q_4}$, with only the second parameter reversed. The quaternionic operators are the same sandwiches with the first parameter conjugated, $L_{\tilde q_3}R_{\tilde q_4} = T^{(0)}_{\tilde q_3^{\natural},\tilde q_4}$, and their composition law reverses both parameters.
+**Proposition.** The two-sided operators of the plain algebra are the two-sided operators with the direct product, $T^{(0)}_{\tilde q_3,\tilde q_4}(\tilde q) = \tilde q_3\tilde q\tilde q_4$, and they satisfy the composition law $T^{(0)}_{\tilde q_3,\tilde q_4}T^{(0)}_{\tilde q_5,\tilde q_6} = T^{(0)}_{\tilde q_3\tilde q_5,\tilde q_6\tilde q_4}$, with only the second parameter reversed. The quaternionic operators are the same two-sided operators with the first parameter conjugated, $L_{\tilde q_3}R_{\tilde q_4} = T^{(0)}_{\tilde q_3^{\natural},\tilde q_4}$, and their composition law reverses both parameters.
 
 *Proof.* The plain law is the associativity of the plain product read twice; the quaternionic law is the theorem above, and the identification with the plain family is $\tilde q_3^{\natural}(\tilde q\tilde q_4) = T^{(0)}_{\tilde q_3^{\natural},\tilde q_4}(\tilde q)$.
 
@@ -122,14 +122,14 @@ The two criteria are stated for a nonzero sandwich because the zero operators $L
 
 ## Summary
 
-The two-sided operators of the quaternionic product are $L_{\tilde q_3}R_{\tilde q_4}(\tilde q) = \tilde q_3^{\natural}\tilde q\tilde q_4$, the sandwiches of the conjugated left multiplication $L_{\tilde q_3^{\natural}}$ with the plain right multiplication $R_{\tilde q_4}$. They span every real-linear operator of $\mathbb{H}$; two of them agree exactly on parameter pairs differing by a real scalar, so the family is a quotient of the parameter space by that scaling. They form a monoid with identity $L_{e_t}R_{e_t}$ and composition law $L_{\tilde q_3}R_{\tilde q_4}L_{\tilde q_5}R_{\tilde q_6} = L_{\tilde q_5\tilde q_3}R_{\tilde q_6\tilde q_4}$ reversing **both** parameters, the identity being reached exactly on the one-parameter kernel $\{(\lambda,\lambda^{-1})\}$; the invertible elements are those with both parameters nonzero, with inverse $L_{\tilde q_3^{-1}}R_{\tilde q_4^{-1}}$. The transpose for the plain form swaps and conjugates the two parameters, $T^{\sim}_{\tilde q_3,\tilde q_4} = L_{\tilde q_4^{\natural}}R_{\tilde q_3^{\natural}}$; the transpose for the quaternionic form keeps the places and conjugates, $T^{\dagger}_{\tilde q_3,\tilde q_4} = L_{\tilde q_3^{\natural}}R_{\tilde q_4^{\natural}}$; the two coincide on the real-proportional parameters, and a nonzero sandwich is plain-self-transpose exactly for $\tilde q_4 \in \mathbb{R}\tilde q_3^{\natural}$. The plain algebra has the same family of operators with the plain sandwiches, the composition law reversing one parameter, and the transpose swapping the parameters without conjugating; the whole difference is the conjugation that the first slot of the quaternionic product inserts.
+The two-sided operators of the quaternionic product are $L_{\tilde q_3}R_{\tilde q_4}(\tilde q) = \tilde q_3^{\natural}\tilde q\tilde q_4$, the two-sided operators of the conjugated left multiplication $L_{\tilde q_3^{\natural}}$ with the plain right multiplication $R_{\tilde q_4}$. They span every real-linear operator of $\mathbb{H}$; two of them agree exactly on parameter pairs differing by a real scalar, so the family is a quotient of the parameter space by that scaling. They form a monoid with identity $L_{e_t}R_{e_t}$ and composition law $L_{\tilde q_3}R_{\tilde q_4}L_{\tilde q_5}R_{\tilde q_6} = L_{\tilde q_5\tilde q_3}R_{\tilde q_6\tilde q_4}$ reversing **both** parameters, the identity being reached exactly on the one-parameter kernel $\{(\lambda,\lambda^{-1})\}$; the invertible elements are those with both parameters nonzero, with inverse $L_{\tilde q_3^{-1}}R_{\tilde q_4^{-1}}$. The transpose for the plain form swaps and conjugates the two parameters, $T^{\sim}_{\tilde q_3,\tilde q_4} = L_{\tilde q_4^{\natural}}R_{\tilde q_3^{\natural}}$; the transpose for the quaternionic form keeps the places and conjugates, $T^{\dagger}_{\tilde q_3,\tilde q_4} = L_{\tilde q_3^{\natural}}R_{\tilde q_4^{\natural}}$; the two coincide on the real-proportional parameters, and a nonzero two-sided operator is plain-self-transpose exactly for $\tilde q_4 \in \mathbb{R}\tilde q_3^{\natural}$. The plain algebra has the same family of operators with the plain two-sided operators, the composition law reversing one parameter, and the transpose swapping the parameters without conjugating; the whole difference is the conjugation that the first slot of the quaternionic product inserts.
 
 ## Summary of Notation
 
 | symbol | meaning |
 |---|---|
 | $L_{\tilde q_3}R_{\tilde q_4}(\tilde q) = \tilde q_3^{\natural}\tilde q\tilde q_4 = L_{\tilde q_3^{\natural}}R_{\tilde q_4}$ | the two-sided operator of the quaternionic product |
-| $L_{\alpha}R_{\beta} = L_{\alpha'}R_{\beta'} \iff (\alpha',\beta') = (\mu\alpha,\mu^{-1}\beta)$ | when two sandwiches agree; the kernel is $\{(\lambda,\lambda^{-1})\}$, $\lambda \in \mathbb{R}^\times$ |
+| $L_{\alpha}R_{\beta} = L_{\alpha'}R_{\beta'} \iff (\alpha',\beta') = (\mu\alpha,\mu^{-1}\beta)$ | when two such operators agree; the kernel is $\{(\lambda,\lambda^{-1})\}$, $\lambda \in \mathbb{R}^\times$ |
 | $\mathcal T$ | the family of two-sided operators, spanning $\operatorname{End}_\mathbb{R}(\mathbb{H})$ |
 | $L_{\tilde q_3}R_{\tilde q_4}L_{\tilde q_5}R_{\tilde q_6} = L_{\tilde q_5\tilde q_3}R_{\tilde q_6\tilde q_4}$ | the composition law, both parameters reversed |
 | $T^{\sim}_{\tilde q_3,\tilde q_4} = L_{\tilde q_4^{\natural}}R_{\tilde q_3^{\natural}}$ | the transpose for the plain form $\mathrm B$ |
@@ -141,7 +141,7 @@ The two-sided operators of the quaternionic product are $L_{\tilde q_3}R_{\tilde
 
 ## Further Reading
 
-- Richard S. Pierce, *Associative Algebras* (Springer, 1982), for the sandwich representation, the enveloping algebra and the identification of the sandwiches with the endomorphisms.
+- Richard S. Pierce, *Associative Algebras* (Springer, 1982), for the two-sided representation, the enveloping algebra and the identification of the two-sided operators with the endomorphisms.
 - Israel Nathan Herstein, *Noncommutative Rings* (Mathematical Association of America, 1968), for the opposite ring, the two-sided action and the anti-isomorphisms of a division algebra.
 - Max-Albert Knus, Alexander Merkurjev, Markus Rost and Jean-Pierre Tignol, *The Book of Involutions* (American Mathematical Society, 1998), for the transpose attached to a bilinear form and its behaviour under an involution.
 - T. Y. Lam, *A First Course in Noncommutative Rings* (Springer, 2nd ed. 2001), for the isometry and similarity groups of a form on a central simple algebra.

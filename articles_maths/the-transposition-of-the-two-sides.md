@@ -12,7 +12,7 @@ The whole of the article is that identity, its hypotheses and its consequences. 
 
 **What the reversal is not.** It is not the operator transpose $\approx$ of *Adjoint Pair of $L$ and $R$ Operators*, which takes an operator of $\mathbb{B}$ to an operator of $\mathbb{B}$ through a form. It is not the swap of *Operator Chirality on the Biquaternion Algebra*, which exchanges the two sides of an operator and leaves the parameters where they are. A reversal acts on the elements of the algebra, it carries the parameters, and it reverses their product. That last property is the entire mechanism, and it is the one property the coefficient conjugation lacks while appearing to have it.
 
-The two families are *Operators Acting 1 Side*, their products *Operators Acting 2 Side*, the ambient space *The Endomorphisms of the Biquaternion Algebra*. Everything below is written in the coefficient frame $e_t,\vec e_x,\vec e_y,\vec e_z$, with the central $i$ and the products $\vec e_x\vec e_y=\vec e_z$, $\vec e_y\vec e_z=\vec e_x$, $\vec e_z\vec e_x=\vec e_y$, $\vec e_x^2=\vec e_y^2=\vec e_z^2=-e_t$. The article is pure algebra; no step uses a topology, a distance or a limit.
+The two families are *Operators Acting on One Side*, their products *Operators Acting on Two Sides*, the ambient space *The Endomorphisms of the Biquaternion Algebra*. Everything below is written in the coefficient frame $e_t,\vec e_x,\vec e_y,\vec e_z$, with the central $i$ and the products $\vec e_x\vec e_y=\vec e_z$, $\vec e_y\vec e_z=\vec e_x$, $\vec e_z\vec e_x=\vec e_y$, $\vec e_x^2=\vec e_y^2=\vec e_z^2=-e_t$. The article is pure algebra; no step uses a topology, a distance or a limit.
 
 ## The Reversals of the Algebra
 
@@ -140,10 +140,10 @@ The parameter is carried by the reversal, so the shortcut that drops it is exact
 
 ## Further Reading
 
-- [Operators Acting 1 Side](operators-acting-1-side.html), for the two families $L(\mathbb{B})$ and $R(\mathbb{B})$, their injectivity and their composition laws, which are the two laws the reversal exchanges
+- [Operators Acting on One Side](operators-acting-on-one-side.html), for the two families $L(\mathbb{B})$ and $R(\mathbb{B})$, their injectivity and their composition laws, which are the two laws the reversal exchanges
 - [The Endomorphisms of the Biquaternion Algebra](the-endomorphisms-of-the-biquaternion-algebra.html), for the operator space on which the conjugation $\mathcal T$ acts and for the real-linear effects of the conjugations
-- [Operators Acting 2 Side](operators-acting-2-side.html), for the family that this article rewrites as two left multiplications
-- [Hermitian pair of operators acting as 1 side](hermitian-pair-of-operators-acting-as-1-side.html), for the use of the factoring $R_{\tilde Q^{\ast}}=\ast^{-1}L_{\tilde Q}\ast$ on a pair of equations, where the transported parameter is the first parameter itself
+- [Operators Acting on Two Sides](operators-acting-on-two-sides.html), for the family that this article rewrites as two left multiplications
+- [The Hermitian Pair of Operators Acting on One Side](the-hermitian-pair-of-operators-acting-on-one-side.html), for the use of the factoring $R_{\tilde Q^{\ast}}=\ast^{-1}L_{\tilde Q}\ast$ on a pair of equations, where the transported parameter is the first parameter itself
 - [Operator Chirality on the Biquaternion Algebra](operator-chirality-on-the-biquaternion-algebra.html), for the case $\tau=\natural$ of the conjugation theorem and for the swap, which is the operator-level comparison and not the element-level one
 - [Adjoint Pair of $L$ and $R$ Operators](adjoint-pair-of-l-and-r-operators.html), for the operator transpose $\approx$ and the four adjoints, which act on operators and take their input from a form
 - [The Enveloping Operator Algebra of the Biquaternion Algebra and the Bi-module Structure](the-enveloping-operator-algebra-of-the-biquaternion-algebra-and-the-bi-module-structure.html), for $\mathbb{B}^{\mathrm e}=\mathbb{B}\otimes_{\mathbb{C}}\mathbb{B}_{\mathrm{opp}}\cong\operatorname{End}_{\mathbb{C}}(\mathbb{B})$, on which the generation statement rests

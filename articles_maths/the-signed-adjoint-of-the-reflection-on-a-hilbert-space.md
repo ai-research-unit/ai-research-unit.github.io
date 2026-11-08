@@ -2,7 +2,7 @@
 
 ## Introduction
 
-A reflection of the graded algebra $B(H)$ is the signed conjugation $\rho_U(T)=U\,\alpha(T)\,U^{-1}$, the signed sandwich with the second parameter the inverse of the first, and it is an involutive $*$-automorphism for every reflector $U$, that is, every invertible $U$ whose twisted product $U\alpha(U)$ is scalar. This article computes the adjoint of the reflection with respect to the Hilbert–Schmidt form of the category and reads off the consequences. The adjoint is again a reflection,
+A reflection of the graded algebra $B(H)$ is the signed conjugation $\rho_U(T)=U\,\alpha(T)\,U^{-1}$, the signed two-sided operator with the second parameter the inverse of the first, and it is an involutive $*$-automorphism for every reflector $U$, that is, every invertible $U$ whose twisted product $U\alpha(U)$ is scalar. This article computes the adjoint of the reflection with respect to the Hilbert–Schmidt form of the category and reads off the consequences. The adjoint is again a reflection,
 
 $$
 (\rho_U)^*=\rho_{\alpha(U^*)},
@@ -10,7 +10,7 @@ $$
 
 so the family of reflections is closed under adjunction, and the adjoint operation is the composite of the involution of the parameters, $U\mapsto U^*$, with the grade involution, $U\mapsto\alpha(U)$. The reflection is unitary on the Hilbert–Schmidt space whenever the reflector is unitary, and it is self-adjoint exactly when $\alpha(U^*)$ agrees with $U$ up to a scalar. The self-adjointness is therefore not automatic: the inner automorphisms of a Hilbert space are, in general, not self-adjoint operators on the Hilbert–Schmidt space, and the article isolates the condition and the degenerate case in which the correspondence between the reflector and the self-adjoint reflection fails.
 
-This article fixes the reflector and the reflection, the adjoint of the reflection and its closed form, the unitarity of the reflection for a unitary reflector, the self-adjointness criterion, the eigenvalue decomposition of a self-adjoint reflection, and the failure in the degenerate case $\alpha=\mathrm{id}$. The reflections and their algebra are *Reflections as Signed Two-Sided Operators on a Hilbert Space*; the signed sandwich and its composition table are *The Signed Sandwich on a Hilbert Space*; the adjoint of the sandwich is *The Signed Adjoint Sandwich on a Hilbert Space*; the one-sided adjoints are *The Adjoint of the Left Multiplication on a Hilbert Space* and *The Signed Adjoint of the Left Multiplication on a Hilbert Space*; the unitary operators are *Unitary Operators*.
+This article fixes the reflector and the reflection, the adjoint of the reflection and its closed form, the unitarity of the reflection for a unitary reflector, the self-adjointness criterion, the eigenvalue decomposition of a self-adjoint reflection, and the failure in the degenerate case $\alpha=\mathrm{id}$. The reflections and their algebra are *Reflections as Signed Two-Sided Operators on a Hilbert Space*; the signed two-sided operator and its composition table are *The Signed Two-Sided Operator on a Hilbert Space*; the adjoint of the two-sided operator is *The Signed Adjoint Two-Sided Operator on a Hilbert Space*; the one-sided adjoints are *The Adjoint of the Left Multiplication on a Hilbert Space* and *The Signed Adjoint of the Left Multiplication on a Hilbert Space*; the unitary operators are *Unitary Operators*.
 
 Throughout, $H=H^0\oplus H^1$ is a graded Hilbert space over $\mathbb{K}=\mathbb{R}$ or $\mathbb{C}$ with parity operator $\Gamma$, grade involution $\alpha(T)=\Gamma T\Gamma$ and Hilbert–Schmidt form $\langle S,T\rangle_{\mathrm{HS}}=\operatorname{tr}(ST^*)$; a **reflector** is an invertible $U$ with $U\alpha(U)=\lambda I$ scalar, and the **reflection** is the signed conjugation $\rho_U=\mathcal{T}_{U,U^{-1}}$, $\rho_U(T)=U\alpha(T)U^{-1}$. The adjoint is taken with respect to the Hilbert–Schmidt form and is written with a star.
 
@@ -24,7 +24,7 @@ $$
 
 so the adjoint of a reflection is the reflection by the $\alpha$-adjoint reflector; the adjoint operation on the reflections is an involution, $((\rho_U)^*)^*=\rho_U$, and it commutes with the scalar ambiguity of the reflector.
 
-*Proof.* The reflection is the signed sandwich $\mathcal{T}_{U,U^{-1}}$, whose adjoint is $\mathcal{T}_{\alpha(U^*),\alpha((U^{-1})^*)}$ by *The Signed Adjoint Sandwich on a Hilbert Space*; since $(U^{-1})^*=(U^*)^{-1}$ and $\alpha$ is multiplicative, $\alpha((U^{-1})^*)=\alpha((U^*)^{-1})=(\alpha(U^*))^{-1}$, so the second parameter is the inverse of the first and the sandwich is the reflection $\rho_{\alpha(U^*)}$. The square of the operation is the identity because $U\mapsto U^*$ and $\alpha$ are involutions, and a scalar multiple of $U$ produces the same reflector property and the same adjoint reflection.
+*Proof.* The reflection is the signed two-sided operator $\mathcal{T}_{U,U^{-1}}$, whose adjoint is $\mathcal{T}_{\alpha(U^*),\alpha((U^{-1})^*)}$ by *The Signed Adjoint Two-Sided Operator on a Hilbert Space*; since $(U^{-1})^*=(U^*)^{-1}$ and $\alpha$ is multiplicative, $\alpha((U^{-1})^*)=\alpha((U^*)^{-1})=(\alpha(U^*))^{-1}$, so the second parameter is the inverse of the first and the two-sided operator is the reflection $\rho_{\alpha(U^*)}$. The square of the operation is the identity because $U\mapsto U^*$ and $\alpha$ are involutions, and a scalar multiple of $U$ produces the same reflector property and the same adjoint reflection.
 
 **Corollary (the unitary case).** If $U$ is unitary then $\alpha(U^*)=\alpha(U)^{-1}$ and
 
@@ -34,7 +34,7 @@ $$
 
 so the adjoint is the reflection by the inverse of the twisted unitary, and it coincides with $\rho_U$ exactly when $U^2$ is a scalar.
 
-*Proof.* Substitute $U^*=U^{-1}$ in the theorem; the second parameter of the sandwich adjoint is then the inverse of the first, which identifies the adjoint as the reflection by $\alpha(U)^{-1}$. The comparison with $\rho_U$ is the criterion of the self-adjointness theorem below.
+*Proof.* Substitute $U^*=U^{-1}$ in the theorem; the second parameter of the two-sided operator adjoint is then the inverse of the first, which identifies the adjoint as the reflection by $\alpha(U)^{-1}$. The comparison with $\rho_U$ is the criterion of the self-adjointness theorem below.
 
 **Proposition (the adjoint on the eigenvalue pieces).** Let $U$ be a reflector with reflection $\rho=\rho_U$ and eigenvalue decomposition $B(H)=B(H)^+_\rho\oplus B(H)^-_\rho$. The adjoint reflection is again an involutive $*$-automorphism, with its own eigenvalue decomposition
 

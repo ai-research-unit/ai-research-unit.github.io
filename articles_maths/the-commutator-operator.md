@@ -64,13 +64,13 @@ $$
 [a, x] = L(a)(x) - R(a)(x) = (L(a) - R(a))(x),
 $$
 
-so that as operators $\mathrm{ad}_a = L(a) - R(a)$; and the antisymmetrisation of the sandwich is the bracket,
+so that as operators $\mathrm{ad}_a = L(a) - R(a)$; and the antisymmetrisation of the two-sided operator is the bracket,
 
 $$
 [L_{a}R_{b} - L_{b}R_{a}](1) = ab - ba = [a, b].
 $$
 
-*Proof.* The first identity is the definition of the two multiplications. For the second, $L_{a}R_{b}(1) = ab$ by the elementary proposition of *The Sandwich Operator on an Algebra*, and similarly $L_{b}R_{a}(1) = ba$.
+*Proof.* The first identity is the definition of the two multiplications. For the second, $L_{a}R_{b}(1) = ab$ by the elementary proposition of *The Two-Sided Operator on an Algebra*, and similarly $L_{b}R_{a}(1) = ba$.
 
 The operator identity $\mathrm{ad}_a = L(a) - R(a)$ is the reason the commutator belongs to the operator layer: the bracket is not a new operation on the algebra but the difference of the two operators that the product already provides. Its vanishing is the commutativity of $a$ with everything, and its size measures the difference between the two sides.
 
@@ -134,7 +134,7 @@ The centre is thus exactly the part of the algebra that the operator $\mathrm{ad
 
 ## The Commutators of the Multiplication Operators
 
-The commutator of two multiplication operators is again a multiplication operator, and the two-sided case produces the associator. The following statements are the operator content of associativity, and they are the reason the present article sits beside *The Sandwich Operator on an Algebra*.
+The commutator of two multiplication operators is again a multiplication operator, and the two-sided case produces the associator. The following statements are the operator content of associativity, and they are the reason the present article sits beside *The Two-Sided Operator on an Algebra*.
 
 **Theorem.** For all $a, b \in A$,
 
@@ -142,13 +142,13 @@ $$
 \boxed{\;[L(a), L(b)] = L([a, b]), \qquad [R(a), R(b)] = R([b, a]) = -R([a, b]), \qquad [L(a), R(b)] = -A_{a,b}\;},
 $$
 
-where $A_{a,b}(x) = (a, x, b)$ is the associator operator of *The Sandwich Operator on an Algebra*.
+where $A_{a,b}(x) = (a, x, b)$ is the associator operator of *The Two-Sided Operator on an Algebra*.
 
-*Proof.* For the first, $L(a)L(b)(x) = a(bx) = (ab)x = L(ab)(x)$ and $L(b)L(a)(x) = L(ba)(x)$, so the difference is $L(ab - ba) = L([a,b])$. For the second, $R(a)R(b)(x) = (xb)a = x(ba) = R(ba)(x)$ and $R(b)R(a)(x) = R(ab)(x)$, so $[R(a),R(b)] = R(ba - ab) = R(-[a,b])$. The third is the theorem of the associator in *The Sandwich Operator on an Algebra*.
+*Proof.* For the first, $L(a)L(b)(x) = a(bx) = (ab)x = L(ab)(x)$ and $L(b)L(a)(x) = L(ba)(x)$, so the difference is $L(ab - ba) = L([a,b])$. For the second, $R(a)R(b)(x) = (xb)a = x(ba) = R(ba)(x)$ and $R(b)R(a)(x) = R(ab)(x)$, so $[R(a),R(b)] = R(ba - ab) = R(-[a,b])$. The third is the theorem of the associator in *The Two-Sided Operator on an Algebra*.
 
 **Corollary.** The map $L$ is an injective homomorphism of Lie algebras $A^{(-)} \to \operatorname{End}_k(A)$, so $L(A)$ is a Lie subalgebra isomorphic to $A^{(-)}$; the map $-R$ is an injective homomorphism of Lie algebras, so $R(A)$ is a Lie subalgebra isomorphic to the opposite algebra $A_{\mathrm{opp}}^{(-)}$; and the two images commute exactly when every associator vanishes, that is for an associative algebra for all pairs.
 
-*Proof.* The theorem shows that $L([a,b]) = [L(a),L(b)]$ and that $R([b,a]) = [R(a),R(b)]$, the second being the statement that $-R$ is a homomorphism; injectivity of $L$ and of $R$ is the statement, from *The Operators on an Algebra*, that $L(a) = 0$ or $R(a) = 0$ forces $a = 0$ in a unital algebra. Commutativity of the two images is the vanishing of $[L(a),R(b)] = -A_{a,b}$ for all $a$ and $b$, which by *The Sandwich Operator on an Algebra* is associativity.
+*Proof.* The theorem shows that $L([a,b]) = [L(a),L(b)]$ and that $R([b,a]) = [R(a),R(b)]$, the second being the statement that $-R$ is a homomorphism; injectivity of $L$ and of $R$ is the statement, from *The Operators on an Algebra*, that $L(a) = 0$ or $R(a) = 0$ forces $a = 0$ in a unital algebra. Commutativity of the two images is the vanishing of $[L(a),R(b)] = -A_{a,b}$ for all $a$ and $b$, which by *The Two-Sided Operator on an Algebra* is associativity.
 
 The theorem is a compact restatement of the algebra: the left multiplications carry the product, the right multiplications carry the opposite product, and the failure of the two to commute is exactly the failure of associativity. In the associative case the two-sided picture is the one of *Left and Right Multiplication*, and the commutator of an $L$ with an $R$ vanishes, so the whole Lie algebra $L(A) + R(A)$ is the direct sum of two commuting copies.
 
@@ -161,9 +161,9 @@ $\mathrm{ad}: A^{(-)} \to \operatorname{Der}_k(A)$ is a homomorphism of Lie alge
 
 **Remark.** The identity $[\delta, \mathrm{ad}_a] = \mathrm{ad}_{\delta(a)}$ says that the assignment $a \mapsto \mathrm{ad}_a$ is equivariant for the action of the derivation algebra, and it is the operator form of the fact that the inner derivations are the image of the algebra under a map that the outer derivations permute. When every derivation is inner — in particular for a central simple algebra, by *Central Simple Algebras and the Brauer Group* — the map $\mathrm{ad}$ is surjective and $\operatorname{Der}_k(A) \cong A^{(-)}/Z(A)$. This is the reading of the derivations of *Automorphisms and Derivations of Algebras* as operators on $A$, and its exponential $\exp(\mathrm{ad}_a)(x) = \exp(a) x \exp(-a)$ is the inner automorphism $\iota_{\exp(a)}$ of that article.
 
-## The Antisymmetric Sandwich
+## The Antisymmetric Two-Sided Operator
 
-The commutator is the antisymmetrisation of the sandwich, and the antisymmetrisation is a systematic operation on the operator space.
+The commutator is the antisymmetrisation of the two-sided operator, and the antisymmetrisation is a systematic operation on the operator space.
 
 **Proposition.** For all $a, b, c, d \in A$,
 
@@ -171,11 +171,11 @@ $$
 L_{a}R_{b}L_{c}R_{d} - L_{c}R_{d}L_{a}R_{b} = L_{ac}R_{\,db} - L_{ca}R_{\,bd},
 $$
 
-and the right-hand side is a single sandwich exactly when the two index pairs agree, that is when $ac = ca$ and $db = bd$. In particular the antisymmetrisation vanishes for every pair on a commutative algebra.
+and the right-hand side is a single two-sided operator exactly when the two index pairs agree, that is when $ac = ca$ and $db = bd$. In particular the antisymmetrisation vanishes for every pair on a commutative algebra.
 
-*Proof.* The composition rule $L_{a}R_{b}L_{c}R_{d} = L_{ac}R_{db}$ is the theorem of *The Sandwich Operator on an Algebra*, and subtracting the transposed product gives the display. The two terms on the right coincide exactly when the pairs $(ac, db)$ and $(ca, bd)$ are equal.
+*Proof.* The composition rule $L_{a}R_{b}L_{c}R_{d} = L_{ac}R_{db}$ is the theorem of *The Two-Sided Operator on an Algebra*, and subtracting the transposed product gives the display. The two terms on the right coincide exactly when the pairs $(ac, db)$ and $(ca, bd)$ are equal.
 
-**Remark.** The commutator of two multiplications and the antisymmetrisation of the sandwich are the same operation seen twice, and the order that emerges from the two readings is the standard one of the theory of the enveloping algebra of the commutator algebra. The reading is not developed here; the tensor construction of the enveloping algebra belongs to *Tensor Products of Algebras*, and the Lie theory of the bracket to *Lie Algebras*.
+**Remark.** The commutator of two multiplications and the antisymmetrisation of the two-sided operator are the same operation seen twice, and the order that emerges from the two readings is the standard one of the theory of the enveloping algebra of the commutator algebra. The reading is not developed here; the tensor construction of the enveloping algebra belongs to *Tensor Products of Algebras*, and the Lie theory of the bracket to *Lie Algebras*.
 
 ## The Examples
 
@@ -205,9 +205,9 @@ Let $A$ be commutative. Then $[a, b] = 0$ for all $a$ and $b$, the commutator al
 
 ## Summary
 
-The commutator $[a,b] = ab - ba$ is a $k$-bilinear antisymmetric operation satisfying the Jacobi identity, so that $A^{(-)} = (A, [\cdot,\cdot])$ is a Lie algebra. Fixing the first argument gives the **adjoint action** $\mathrm{ad}_a(x) = [a,x]$, an operator equal to $L(a) - R(a)$ and equal, on the unit, to the antisymmetrised sandwich, $[a,b] = L_{a}R_{b}(1) - L_{b}R_{a}(1)$. The map $a \mapsto \mathrm{ad}_a$ is a homomorphism of Lie algebras $A^{(-)} \to \operatorname{End}_k(A)$ with $[\mathrm{ad}_a, \mathrm{ad}_b] = \mathrm{ad}_{[a,b]}$, whose kernel is the centre $Z(A)$ and whose image is the space of inner derivations; the kernel of a single $\mathrm{ad}_a$ is the centraliser $C_A(a)$, a subalgebra containing $a$ and the centre.
+The commutator $[a,b] = ab - ba$ is a $k$-bilinear antisymmetric operation satisfying the Jacobi identity, so that $A^{(-)} = (A, [\cdot,\cdot])$ is a Lie algebra. Fixing the first argument gives the **adjoint action** $\mathrm{ad}_a(x) = [a,x]$, an operator equal to $L(a) - R(a)$ and equal, on the unit, to the antisymmetrised two-sided operator, $[a,b] = L_{a}R_{b}(1) - L_{b}R_{a}(1)$. The map $a \mapsto \mathrm{ad}_a$ is a homomorphism of Lie algebras $A^{(-)} \to \operatorname{End}_k(A)$ with $[\mathrm{ad}_a, \mathrm{ad}_b] = \mathrm{ad}_{[a,b]}$, whose kernel is the centre $Z(A)$ and whose image is the space of inner derivations; the kernel of a single $\mathrm{ad}_a$ is the centraliser $C_A(a)$, a subalgebra containing $a$ and the centre.
 
-Each $\mathrm{ad}_a$ is a derivation, by the Leibniz rule $[a,xy] = [a,x]y + x[a,y]$, and the inner derivations form a Lie ideal of $\operatorname{Der}_k(A)$ on which the outer derivations act by $[\delta, \mathrm{ad}_a] = \mathrm{ad}_{\delta(a)}$. The commutators of the multiplication operators are $[L(a),L(b)] = L([a,b])$, $[R(a),R(b)] = -R([a,b])$ and $[L(a),R(b)] = -A_{a,b}$, the last being the associator; the left and the right multiplication spaces therefore commute exactly when the product is associative, and the two-sided operator is the sandwich of *The Sandwich Operator on an Algebra*. For $M_n(k)$ the bracket of two matrix units is a difference of two matrix units and the inner derivations have dimension $n^2 - 1$; for $\mathbb{H}$ the bracket on the pure imaginary part is twice the cross product and the derivations form a three-dimensional Lie algebra; and on a commutative algebra the operator is identically zero.
+Each $\mathrm{ad}_a$ is a derivation, by the Leibniz rule $[a,xy] = [a,x]y + x[a,y]$, and the inner derivations form a Lie ideal of $\operatorname{Der}_k(A)$ on which the outer derivations act by $[\delta, \mathrm{ad}_a] = \mathrm{ad}_{\delta(a)}$. The commutators of the multiplication operators are $[L(a),L(b)] = L([a,b])$, $[R(a),R(b)] = -R([a,b])$ and $[L(a),R(b)] = -A_{a,b}$, the last being the associator; the left and the right multiplication spaces therefore commute exactly when the product is associative, and the two-sided operator is the operator of *The Two-Sided Operator on an Algebra*. For $M_n(k)$ the bracket of two matrix units is a difference of two matrix units and the inner derivations have dimension $n^2 - 1$; for $\mathbb{H}$ the bracket on the pure imaginary part is twice the cross product and the derivations form a three-dimensional Lie algebra; and on a commutative algebra the operator is identically zero.
 
 ## Summary of Notation
 

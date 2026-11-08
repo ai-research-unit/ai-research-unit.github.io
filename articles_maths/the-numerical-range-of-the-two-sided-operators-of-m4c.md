@@ -2,7 +2,7 @@
 
 ## Introduction
 
-For $a,b\in M_4(\mathbb{C})$ the **two-sided operator** is the sandwich
+For $a,b\in M_4(\mathbb{C})$ the **two-sided operator** is the two-sided operator
 
 $$
 L_{a}R_{b}:M_4(\mathbb{C})\longrightarrow M_4(\mathbb{C}),\qquad L_{a}R_{b}(X)=aXb .
@@ -25,11 +25,11 @@ This article computes it and compares it with the fields of values of the two fa
 
 The result is not the product of $W(a)$ and $W(b)$. The product set is only a lower bound: its convex hull always lies in $W(L_{a}R_{b})$, and the inclusion is strict already for the smallest nilpotent. The inclusion closes when one factor is normal, and then $W(L_{a}R_{b})=\operatorname{conv}(W(a)W(b))$. The defect is the correlation of the two factors inside a general Hilbert–Schmidt vector, which is a single matrix and not a pair of vectors.
 
-The general theory — compactness, convexity, the support function and the Hermitian and normal cases — is *Hermitian Operators and the Numerical Range*. The four-dimensional case, the elliptical range theorem and the disk of the nilpotent chain are *The Numerical Range and the Field of Values of $M_4(\mathbb{C})$*. The operators $L_a$, $R_a$ and $L_{a}R_{b}$, their $16\times16$ matrices and their spectrum are *The Operators of the Peirce Decomposition of $M_4(\mathbb{C})$*. The same construction on the carrier $\mathbb{B}$ is *Operators Acting 2 Side*, whose $4\times4$ matrices $L_\mu R_\nu$ are a different object. The Kronecker product is *The Kronecker Factorisation $M_4(\mathbb{C})\cong M_2(\mathbb{C})\otimes M_2(\mathbb{C})$*; the difference $L_a-R_b$ is *The Sylvester Operator and the Kronecker Sum of $M_4(\mathbb{C})$*; the Hilbert–Schmidt form is *The Involution and the Hermitian Structure of $M_4(\mathbb{C})$*.
+The general theory — compactness, convexity, the support function and the Hermitian and normal cases — is *Hermitian Operators and the Numerical Range*. The four-dimensional case, the elliptical range theorem and the disk of the nilpotent chain are *The Numerical Range and the Field of Values of $M_4(\mathbb{C})$*. The operators $L_a$, $R_a$ and $L_{a}R_{b}$, their $16\times16$ matrices and their spectrum are *The Operators of the Peirce Decomposition of $M_4(\mathbb{C})$*. The same construction on the carrier $\mathbb{B}$ is *Operators Acting on Two Sides*, whose $4\times4$ matrices $L_\mu R_\nu$ are a different object. The Kronecker product is *The Kronecker Factorisation $M_4(\mathbb{C})\cong M_2(\mathbb{C})\otimes M_2(\mathbb{C})$*; the difference $L_a-R_b$ is *The Sylvester Operator and the Kronecker Sum of $M_4(\mathbb{C})$*; the Hilbert–Schmidt form is *The Involution and the Hermitian Structure of $M_4(\mathbb{C})$*.
 
 ## The Setting
 
-**Definition.** For $a,b\in M_4(\mathbb{C})$ the two-sided operator is $L_{a}R_{b}(X)=aXb$. It is $\mathbb{C}$-linear, and it is the sandwich of *The Operators of the Peirce Decomposition of $M_4(\mathbb{C})$*, where the operator families are introduced.
+**Definition.** For $a,b\in M_4(\mathbb{C})$ the two-sided operator is $L_{a}R_{b}(X)=aXb$. It is $\mathbb{C}$-linear, and it is the operator of *The Operators of the Peirce Decomposition of $M_4(\mathbb{C})$*, where the operator families are introduced.
 
 **Proposition (the laws of composition).** For all $a,b,c,d$,
 
@@ -75,7 +75,7 @@ $$
 
 **Corollary.** $\|L_{a}R_{b}\|=\|a\|\,\|b\|$ and $\|L_{a}R_{b}\|_{\mathrm{HS}}=\|a\|_{\mathrm{HS}}\|b\|_{\mathrm{HS}}$.
 
-**Remark (the notation).** The letters $L_{a}R_{b}$ also denote the $4\times4$ matrices $L_\mu R_\nu$ of *The Two-Sided Operators Method to Build $M_4(\mathbb{C})$* and *Operators Acting 2 Side*, acting on the carrier $\mathbb{B}\cong\mathbb{C}^4$. The two are the same sandwich construction applied to the algebra $M_4(\mathbb{C})$ and to the algebra $\mathbb{B}$; the present article always means the operator on the sixteen-dimensional algebra. The same convention is used in *The Operators of the Peirce Decomposition of $M_4(\mathbb{C})$*.
+**Remark (the notation).** The letters $L_{a}R_{b}$ also denote the $4\times4$ matrices $L_\mu R_\nu$ of *The Two-Sided Operators Method to Build $M_4(\mathbb{C})$* and *Operators Acting on Two Sides*, acting on the carrier $\mathbb{B}\cong\mathbb{C}^4$. The two are the same two-sided construction applied to the algebra $M_4(\mathbb{C})$ and to the algebra $\mathbb{B}$; the present article always means the operator on the sixteen-dimensional algebra. The same convention is used in *The Operators of the Peirce Decomposition of $M_4(\mathbb{C})$*.
 
 **The field of values.** By the general theory, $W(L_{a}R_{b})$ is compact, connected and convex, it contains the spectrum, and its support function is
 
@@ -167,7 +167,7 @@ For the factors, $W(E_{12})$ is the disk of radius $\tfrac12$: the block $E_{12}
 
 ## The Rank-One Case
 
-**Theorem (the ellipse of a rank-one sandwich).** Let $a=uv^{*}$ and $b=xy^{*}$ with $u,v,x,y\ne0$. Then $L_{a}R_{b}$ has rank one, $L_{a}R_{b}(X)=\langle vx^{*},X\rangle\,uy^{*}$, and $W(L_{a}R_{b})$ is the closed ellipse with foci $0$ and $\operatorname{tr}a\,\operatorname{tr}b$ and semi-minor axis
+**Theorem (the ellipse of a rank-one two-sided operator).** Let $a=uv^{*}$ and $b=xy^{*}$ with $u,v,x,y\ne0$. Then $L_{a}R_{b}$ has rank one, $L_{a}R_{b}(X)=\langle vx^{*},X\rangle\,uy^{*}$, and $W(L_{a}R_{b})$ is the closed ellipse with foci $0$ and $\operatorname{tr}a\,\operatorname{tr}b$ and semi-minor axis
 
 $$
 \frac12\sqrt{\|a\|_{\mathrm{HS}}^{2}\|b\|_{\mathrm{HS}}^{2}
@@ -262,7 +262,7 @@ because $V$ is isometric on $\operatorname{ran}V^{*}$. For the converse, take a 
 | operator norm | $1$ | $1$ | $1$ | $1$ |
 | field of values | disk $\tfrac12$ | disk $\tfrac12$ | disk $\cos(\pi/5)$ | disk $\cos(\pi/5)$ |
 
-The last column is the left multiplication $L_{J_4}=L_{J_4}R_{I}$, whose field of values is $W(J_4)$ by the projection factor rule, or by the block form $J_4\otimes I_4$. The sandwich carries the nilpotent chain into the operator algebra without changing its three radii.
+The last column is the left multiplication $L_{J_4}=L_{J_4}R_{I}$, whose field of values is $W(J_4)$ by the projection factor rule, or by the block form $J_4\otimes I_4$. The two-sided operator carries the nilpotent chain into the operator algebra without changing its three radii.
 
 ## The Place in the Category
 
@@ -290,7 +290,7 @@ $$
 
 The first inclusion is the spectrum theorem, the second the product bound, the third the norm bound.
 
-**What the field of values does not see.** It does not determine the rank, by the two matrix-unit sandwiches above, and it does not determine either factor: $L_{a}R_{b}=L_{ua}R_{vb}$ for scalars with $uv=1$. It is also tied to the Hilbert–Schmidt form: the field of values is computed with the adjoint of the chosen involution, while the spectrum, the trace, the determinant and the rank do not depend on that choice. The spectrum, the determinant and the rank are invariants of the operator alone; the field of values is an invariant of the operator together with the Hilbert-space structure of the algebra.
+**What the field of values does not see.** It does not determine the rank, by the two matrix-unit two-sided operators above, and it does not determine either factor: $L_{a}R_{b}=L_{ua}R_{vb}$ for scalars with $uv=1$. It is also tied to the Hilbert–Schmidt form: the field of values is computed with the adjoint of the chosen involution, while the spectrum, the trace, the determinant and the rank do not depend on that choice. The spectrum, the determinant and the rank are invariants of the operator alone; the field of values is an invariant of the operator together with the Hilbert-space structure of the algebra.
 
 **The computation.** The support function is the largest eigenvalue of the $16\times16$ Hermitian matrix $\operatorname{Re}(e^{-i\alpha}a\otimes b^{\mathsf T})$, so the field of values is read from the single matrix $a\otimes b^{\mathsf T}$; no search over the unit sphere of $M_4(\mathbb{C})$ is needed.
 
@@ -298,7 +298,7 @@ The first inclusion is the spectrum theorem, the second the product bound, the t
 
 The two-sided operator $L_{a}R_{b}(X)=aXb$ acts on the sixteen-dimensional Hilbert space $M_4(\mathbb{C})$ with the Hilbert–Schmidt form. Its matrix is $a\otimes b^{\mathsf T}$; its spectrum is the set of products $\lambda_i(a)\lambda_j(b)$; its trace is $\operatorname{tr}a\operatorname{tr}b$, its determinant $(\det a\,\det b)^{4}$, its rank $\operatorname{rank}a\operatorname{rank}b$, its singular values are the products $s_i(a)s_j(b)$, and every Schatten norm is multiplicative, $\|L_{a}R_{b}\|_p=\|a\|_p\|b\|_p$.
 
-The field of values contains the convex hull of the product set $W(a)W(b)$, and the inclusion is strict in general: for $a=b=E_{12}$ the field of values is the disk of radius $\tfrac12$ while the product hull is the disk of radius $\tfrac14$. The inclusion is an equality when one factor is normal, and then $W(L_{a}R_{b})=\operatorname{conv}(W(a)W(b))$. For Hermitian factors the field of values is the interval between the extreme products; for a projection factor it collapses to the field of values of the other factor; for unitary factors the operator is unitary. The numerical radius is squeezed between $w(a)w(b)$ and $\|a\|\|b\|$, and the latter is at most four times the former. The matrix-unit sandwich is a nilpotent partial isometry with the three radii of $J_2$: spectral radius zero, numerical radius $\tfrac12$, norm one.
+The field of values contains the convex hull of the product set $W(a)W(b)$, and the inclusion is strict in general: for $a=b=E_{12}$ the field of values is the disk of radius $\tfrac12$ while the product hull is the disk of radius $\tfrac14$. The inclusion is an equality when one factor is normal, and then $W(L_{a}R_{b})=\operatorname{conv}(W(a)W(b))$. For Hermitian factors the field of values is the interval between the extreme products; for a projection factor it collapses to the field of values of the other factor; for unitary factors the operator is unitary. The numerical radius is squeezed between $w(a)w(b)$ and $\|a\|\|b\|$, and the latter is at most four times the former. The matrix-unit two-sided operator is a nilpotent partial isometry with the three radii of $J_2$: spectral radius zero, numerical radius $\tfrac12$, norm one.
 
 | Quantity | Value for $M_4(\mathbb{C})$ |
 |---|---|
@@ -343,7 +343,7 @@ The field of values contains the convex hull of the product set $W(a)W(b)$, and 
 - [The Operators of the Peirce Decomposition of $M_4(\mathbb{C})$](the-operators-of-the-peirce-decomposition-of-m4c.html), for $L_a$, $R_a$, $L_{a}R_{b}$, their matrices and their spectrum.
 - [The Kronecker Factorisation $M_4(\mathbb{C})\cong M_2(\mathbb{C})\otimes M_2(\mathbb{C})$](the-kronecker-factorisation-of-m4c-into-m2c-tensor-m2c.html), for the Kronecker product and the identity $W(I\otimes M)=W(M)$.
 - [The Two-Sided Operators Method to Build $M_4(\mathbb{C})$](the-two-sided-operators-method-to-build-m4c.html), for the construction of the algebra from the $4\times4$ matrices $L_\mu R_\nu$.
-- [Operators Acting 2 Side](operators-acting-2-side.html), for the same sandwich on the carrier $\mathbb{B}$.
+- [Operators Acting on Two Sides](operators-acting-on-two-sides.html), for the same two-sided operator on the carrier $\mathbb{B}$.
 - [The Forms, the Norms and the Singular Set of $M_4(\mathbb{C})$](the-forms-the-norms-and-the-singular-set-of-m4c.html), for the Schatten norms and the singular values.
 - [The Involution and the Hermitian Structure of $M_4(\mathbb{C})$](the-involution-and-the-hermitian-structure-of-m4c.html), for the Hilbert–Schmidt form and the adjoint.
 - [The Sylvester Operator and the Kronecker Sum of $M_4(\mathbb{C})$](the-sylvester-operator-and-the-kronecker-sum-of-m4c.html), for the difference $L_a-R_b$ and the equations $aX\pm Xb=C$.

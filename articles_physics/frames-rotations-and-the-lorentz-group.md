@@ -2,15 +2,15 @@
 
 ## Introduction
 
-A frame is a choice of axes, and a motion is a change of frame. The biquaternion algebra supplies both: the norm fixes the form, the unit-norm slice is the space of spin frames, and the sandwich by a unit is the change of frame. The Lorentz group is not a subset of the algebra; it is the quotient of the norm-one group by the central sign, and the algebra carries the double cover.
+A frame is a choice of axes, and a motion is a change of frame. The biquaternion algebra supplies both: the norm fixes the form, the unit-norm slice is the space of spin frames, and the two-sided operator with a unit is the change of frame. The Lorentz group is not a subset of the algebra; it is the quotient of the norm-one group by the central sign, and the algebra carries the double cover.
 
-The article reads the group that carries the motions, the sandwich that acts, the rotations, the boosts, the orbits and the reflections. Its thesis is that a frame is a unit up to sign, that a change of frame is the bilinear sandwich, that the interval is the invariant, that a rotation is an algebra automorphism and that a boost is a motion which is not one. It proves nothing; the theorems are in the mathematics articles of the source table.
+The article reads the group that carries the motions, the two-sided operator that acts, the rotations, the boosts, the orbits and the reflections. Its thesis is that a frame is a unit up to sign, that a change of frame is the bilinear two-sided operator, that the interval is the invariant, that a rotation is an algebra automorphism and that a boost is a motion which is not one. It proves nothing; the theorems are in the mathematics articles of the source table.
 
 ## The Results It Uses
 
 | Mathematical Content | Source Mathematical Article |
 | --- | --- |
-| The double covers, the rotor, the bilinear sandwich, its kernel, its scaling and its action on the remarkable subspaces | [Biquaternion Rotations and Lorentz Transformations](../articles_maths/biquaternion-rotations-and-lorentz-transformations.html) |
+| The double covers, the rotor, the bilinear two-sided operator, its kernel, its scaling and its action on the remarkable subspaces | [Biquaternion Rotations and Lorentz Transformations](../articles_maths/biquaternion-rotations-and-lorentz-transformations.html) |
 | The orbits, the rank invariant, the mass shell and the light cone | [Biquaternion Rotations and Lorentz Transformations](../articles_maths/biquaternion-rotations-and-lorentz-transformations.html) |
 | The reflection formula and the Cartan–Dieudonné theorem | [Biquaternion Rotations and Lorentz Transformations](../articles_maths/biquaternion-rotations-and-lorentz-transformations.html) |
 | The algebra automorphisms and the real automorphism group | [Biquaternion Automorphisms and Derivations](../articles_maths/biquaternion-automorphisms-and-derivations.html) |
@@ -60,15 +60,15 @@ $$
 $$
 the second component consisting of the conjugate-linear automorphisms.
 
-**The automorphism group is the same abstract group with a different action.** The Lorentz group appears twice: as the quotient of the norm-one group, acting on the material sector by the bilinear sandwich, and as the automorphism group of the algebra, acting by inner automorphisms. The two actions agree on the $*$-unitary slice, where the inverse and the Hermitian conjugate coincide; they differ on a boost. Interpreted physically, the same group can be a change of frame and a symmetry of the algebraic structure, and the two interpretations are not the same map.
+**The automorphism group is the same abstract group with a different action.** The Lorentz group appears twice: as the quotient of the norm-one group, acting on the material sector by the bilinear two-sided operator, and as the automorphism group of the algebra, acting by inner automorphisms. The two actions agree on the $*$-unitary slice, where the inverse and the Hermitian conjugate coincide; they differ on a boost. Interpreted physically, the same group can be a change of frame and a symmetry of the algebraic structure, and the two interpretations are not the same map.
 
 **The boundary of the interpretation.** The identification of $PGL_2(\mathbb{C})$ with $SO^{+}(1,3)$ is an isomorphism of real Lie groups, not of complex groups; the complex group is $SO(3,\mathbb{C})$. A physical Lorentz transformation is the action on $\mathbb{B}_{\Phi}$, not the inner automorphism, and the article does not identify the two.
 
-## The Sandwich and the Change of Frame
+## The Two-Sided Operator and the Change of Frame
 
 ### The Action
 
-For a unit $\tilde Q$, the **bilinear sandwich** is
+For a unit $\tilde Q$, the **bilinear two-sided operator** is
 $$
 \mathrm{H}_{\tilde Q}:\mathbb{B}\longrightarrow\mathbb{B},
 \qquad
@@ -96,15 +96,15 @@ On the whole algebra its kernel is the central circle $\mathrm{U}(1)e_t$; on the
 
 ### The Interpretations
 
-**A change of frame is the sandwich.** A four-vector is acted on by an element, not by a matrix, and the action is the sandwich. The acting element meets the element on both sides at once; a one-sided multiplication carries the element, while the sandwich carries the frame in which the element is described. Interpreted physically, a change of frame is a relabelling of the description, and the unit is the frame. The norm-one condition makes the action an isometry, and the central sign makes it a double cover.
+**A change of frame is the two-sided operator.** A four-vector is acted on by an element, not by a matrix, and the action is the two-sided operator. The acting element meets the element on both sides at once; a one-sided multiplication carries the element, while the two-sided operator carries the frame in which the element is described. Interpreted physically, a change of frame is a relabelling of the description, and the unit is the frame. The norm-one condition makes the action an isometry, and the central sign makes it a double cover.
 
-**The interval is the frame-independent object.** On the norm-one slice the sandwich preserves $\langle\tilde Q\rangle_{\natural}$, and off the slice it multiplies $\langle\tilde Q\rangle_{\natural}$ by the positive factor $|\langle\tilde Q\rangle_{\natural}|^{2}$. The sign and the vanishing of the norm are therefore unchanged by every unit, and the causal class of a four-vector is frame-independent. Interpreted physically, the interval is objective and the scale is a similarity, not a change of causal type.
+**The interval is the frame-independent object.** On the norm-one slice the two-sided operator preserves $\langle\tilde Q\rangle_{\natural}$, and off the slice it multiplies $\langle\tilde Q\rangle_{\natural}$ by the positive factor $|\langle\tilde Q\rangle_{\natural}|^{2}$. The sign and the vanishing of the norm are therefore unchanged by every unit, and the causal class of a four-vector is frame-independent. Interpreted physically, the interval is objective and the scale is a similarity, not a change of causal type.
 
-**The two sectors are preserved.** The sandwich preserves $\mathbb{B}_{\Psi}$ and $\mathbb{B}_{\Phi}$ for every unit, because the sectors are the eigenspaces of the dagger. Interpreted physically, a change of frame acts on the four-vectors and on the Hermitian forms in the same way; the state side and the material side are both covariant.
+**The two sectors are preserved.** The two-sided operator preserves $\mathbb{B}_{\Psi}$ and $\mathbb{B}_{\Phi}$ for every unit, because the sectors are the eigenspaces of the dagger. Interpreted physically, a change of frame acts on the four-vectors and on the Hermitian forms in the same way; the state side and the material side are both covariant.
 
-**The central phase is not a frame.** The kernel of the sandwich on the whole algebra is the central circle, so an overall phase acts trivially. Interpreted physically, a global phase is a redundancy of the action, not a change of frame; two units that differ by a phase give the same transformation of the algebra.
+**The central phase is not a frame.** The kernel of the two-sided operator on the whole algebra is the central circle, so an overall phase acts trivially. Interpreted physically, a global phase is a redundancy of the action, not a change of frame; two units that differ by a phase give the same transformation of the algebra.
 
-**The boundary of the interpretations.** The sandwich preserves $\mathbb{B}_{\Psi}$, but a boost does not preserve its trace-one slice: the trace-one Bloch ball is not invariant under the full Lorentz group. The finite-dimensional Hermitian sector is the space of Hermitian forms, not the relativistic state space; making the state space itself relativistic is open work. The algebra supplies the covariant action on the forms, not a $*$-unitary representation of the Lorentz group on a finite-dimensional state space.
+**The boundary of the interpretations.** The two-sided operator preserves $\mathbb{B}_{\Psi}$, but a boost does not preserve its trace-one slice: the trace-one Bloch ball is not invariant under the full Lorentz group. The finite-dimensional Hermitian sector is the space of Hermitian forms, not the relativistic state space; making the state space itself relativistic is open work. The algebra supplies the covariant action on the forms, not a $*$-unitary representation of the Lorentz group on a finite-dimensional state space.
 
 ## Rotations
 
@@ -115,7 +115,7 @@ $$
 \tilde u=\exp\!\left(\frac{\theta}{2}\vec u\right)
 =\cos\frac{\theta}{2}+\sin\frac{\theta}{2}\vec u,
 $$
-a real unit quaternion. Its sandwich is
+a real unit quaternion. Its two-sided operator is
 $$
 \mathrm{H}_{\tilde u}(\tilde Q_3)=\tilde u\,\tilde Q_3\,\tilde u^{*},
 $$
@@ -125,7 +125,7 @@ Sp(1)\longrightarrow SO(3)
 $$
 is two-to-one.
 
-**A rotation is an algebra automorphism.** The rotor is $*$-unitary, so the inverse and the Hermitian conjugate coincide, and the sandwich preserves the product as well as the interval. Interpreted physically, a rotation is a symmetry of the algebra and not only of the form: it can be applied to any element, and it preserves the centre, the vector subspace, the quaternion halves and the two sectors. The rotation is the only kind of frame change with this property.
+**A rotation is an algebra automorphism.** The rotor is $*$-unitary, so the inverse and the Hermitian conjugate coincide, and the two-sided operator preserves the product as well as the interval. Interpreted physically, a rotation is a symmetry of the algebra and not only of the form: it can be applied to any element, and it preserves the centre, the vector subspace, the quaternion halves and the two sectors. The rotation is the only kind of frame change with this property.
 
 **The half-angle is the rotor coordinate, not the spin.** The rotation acts once through the left factor and once through the right, so the angle in the rotor is half the angle of the motion. The halved angle is the coordinate of the rotor on the double cover; it is not the spin quantum number. The spin is half the highest weight: on a spin-$\tfrac12$ carrier the spin operator has weights $\pm\tfrac12$ and $s=\tfrac12$, and the rotor acts on that carrier by the exponential of the weight. The half-angle is therefore a consequence of the weight, not its definition. Interpreted physically, a rotation by $2\pi$ is $-e_t$ on the rotor, and the sign is the double cover. The sign is invisible on a four-vector and visible on a spinor.
 
@@ -148,7 +148,7 @@ $$
 \qquad
 \tanh\theta_{\mathrm{rpd}}=\frac{v}{c}.
 $$
-It is Hermitian, $\tilde U^{*}=\tilde U$, of norm one, and it is not $*$-unitary: $\tilde U^{*}\tilde U=\tilde U^{2}\neq e_t$ unless $\theta_{\mathrm{rpd}}=0$. Its sandwich is
+It is Hermitian, $\tilde U^{*}=\tilde U$, of norm one, and it is not $*$-unitary: $\tilde U^{*}\tilde U=\tilde U^{2}\neq e_t$ unless $\theta_{\mathrm{rpd}}=0$. Its two-sided operator is
 $$
 \mathrm{H}_{\tilde U}(\tilde Q_3)=\tilde U\,\tilde Q_3\,\tilde U,
 $$
@@ -169,7 +169,7 @@ $$
 $$
 for $\theta_{\mathrm{rpd}}\neq0$, because the missing factor is $\tilde Q^{*}\tilde Q=\tilde Q^{2}$. The defect is first order in the rapidity, while the time dilation is second order.
 
-**A boost is a change to a moving frame.** The rotor stores half the rapidity, and the sandwich carries the four-position of a world line to its rest frame; the rapidity is additive for collinear boosts. Interpreted physically, the boost is the change of inertial frame, and the rotor is the element that performs it.
+**A boost is a change to a moving frame.** The rotor stores half the rapidity, and the two-sided operator carries the four-position of a world line to its rest frame; the rapidity is additive for collinear boosts. Interpreted physically, the boost is the change of inertial frame, and the rotor is the element that performs it.
 
 **The boost spectrum is the Doppler pair.** As a $2\times2$ matrix the boost rotor is Hermitian of determinant one, and its eigenvalues are $e^{\pm\theta_{\mathrm{rpd}}/2}$; their squares $e^{\pm\theta_{\mathrm{rpd}}}$ are the red- and blue-shift factors of the frame change. The eigenvectors are the two spinors of the null directions along which the boost slides. Interpreted physically, the boost spectrum is the Doppler factor, and the doubling of the exponent is the two-way light travel.
 
@@ -187,7 +187,7 @@ for $\theta_{\mathrm{rpd}}\neq0$, because the missing factor is $\tilde Q^{*}\ti
 
 ### The Classification
 
-The sandwich preserves the rank of the matrix image and, on the norm-one slice, the norm itself. On the material sector the sign and the vanishing of the norm give the causal classes:
+The two-sided operator preserves the rank of the matrix image and, on the norm-one slice, the norm itself. On the material sector the sign and the vanishing of the norm give the causal classes:
 
 | class | norm $\langle\tilde Q\rangle_{\natural}$ | interpretation |
 | --- | --- | --- |
@@ -218,15 +218,15 @@ For a real unit vector $v\in\mathbb{R}\{\vec e_x,\vec e_y,\vec e_z\}$, so that $
 $$
 \boxed{\;\rho_v(\tilde Q_3)=v\,\tilde Q_3\,v^{*}\;}.
 $$
-The parameter is real, so the Hermitian conjugate $v^{*}$ equals $v$; the formula is the Hermitian sandwich $\mathrm{Sd}_v$. Since $v^{2}=-e_t$, the sandwich is minus the inner automorphism by $v$: a reflection is minus an inner automorphism. The sign is carried by the spacelike normal, not written separately, and no operator inverse is needed. On the vector subspace $\mathbb{B}_{V}=\mathbb{C}\{\vec e_x,\vec e_y,\vec e_z\}$ and on its real form $\mathbb{R}\{\vec e_x,\vec e_y,\vec e_z\}$, the multiplication is Clifford and orthogonality coincides with anticommutation:
+The parameter is real, so the Hermitian conjugate $v^{*}$ equals $v$; the formula is the Hermitian pair $\mathrm{Sd}_v$. Since $v^{2}=-e_t$, the two-sided operator is minus the inner automorphism by $v$: a reflection is minus an inner automorphism. The sign is carried by the spacelike normal, not written separately, and no operator inverse is needed. On the vector subspace $\mathbb{B}_{V}=\mathbb{C}\{\vec e_x,\vec e_y,\vec e_z\}$ and on its real form $\mathbb{R}\{\vec e_x,\vec e_y,\vec e_z\}$, the multiplication is Clifford and orthogonality coincides with anticommutation:
 $$
 v\tilde Q_3+\tilde Q_3v=-2\langle v,\tilde Q_3\rangle e_t.
 $$
-There $\rho_v$ fixes $v^{\perp}$ pointwise, negates $v$, and has determinant $-1$; it is an involution. On the quaternion and Hermitian subspaces the sandwich acts as a rotation rather than as a reflection, and on the whole algebra $\rho_v$ has determinant $+1$. The Cartan–Dieudonné theorem gives every isometry of the three-dimensional vector subspace as a product of at most three reflections $\rho_v$.
+There $\rho_v$ fixes $v^{\perp}$ pointwise, negates $v$, and has determinant $-1$; it is an involution. On the quaternion and Hermitian subspaces the two-sided operator acts as a rotation rather than as a reflection, and on the whole algebra $\rho_v$ has determinant $+1$. The Cartan–Dieudonné theorem gives every isometry of the three-dimensional vector subspace as a product of at most three reflections $\rho_v$.
 
 **A reflection is an odd isometry.** The reflection reverses one direction and fixes the hyperplane orthogonal to it; it is an isometry of the form and an orientation-reversing map of the vector subspace. Interpreted physically, it is a mirror: a parity in one direction, not a rotation.
 
-**Parity is outside the connected group.** The unit group is connected, and a reflection is a sandwich by a unit but not an inner automorphism: with $v$ spacelike the sandwich equals minus the inner automorphism by $v$. The reflections generate the orthogonal group of the vector subspace, which is the image of the Pin group; the versors are the real unit vectors of that subspace, and they lie in $\mathbb{B}$ but not in its $*$-unitary subgroup. Interpreted physically, parity is a discrete symmetry not connected to the identity, and it is not a continuous motion. The Lorentz reflections are not of the shape $\rho_v$ and live in the Clifford layer, not in the algebra.
+**Parity is outside the connected group.** The unit group is connected, and a reflection is a two-sided operator with a unit but not an inner automorphism: with $v$ spacelike the two-sided operator equals minus the inner automorphism by $v$. The reflections generate the orthogonal group of the vector subspace, which is the image of the Pin group; the versors are the real unit vectors of that subspace, and they lie in $\mathbb{B}$ but not in its $*$-unitary subgroup. Interpreted physically, parity is a discrete symmetry not connected to the identity, and it is not a continuous motion. The Lorentz reflections are not of the shape $\rho_v$ and live in the Clifford layer, not in the algebra.
 
 **Chirality is not an element of the algebra.** The two half-integral representations of the Lorentz group are conjugate, and the connected unit group does not exchange them; the exchange is an outer symmetry of the representation theory. Interpreted physically, chirality is a property of the module, carried by an operator of the two-sided algebra and not by a label of the algebra's elements; the algebra's reflections act on the vector subspace, and it is the module that carries the chirality.
 
@@ -236,15 +236,15 @@ There $\rho_v$ fixes $v^{\perp}$ pointwise, negates $v$, and has determinant $-1
 
 ## Limits
 
-The geometry of the algebra is the geometry of the norm and of its isometries. The unit group is eight-dimensional, the norm-one slice six-dimensional and the Lorentz group its six-dimensional quotient; the algebra carries the double cover, not the group. The sandwich is the action; the interval is the invariant; the product is preserved by a rotation and not by a boost. The orbits are the mass shells and the light cones; the reflections are orientation-reversing and lie outside the connected component of the orthogonal group.
+The geometry of the algebra is the geometry of the norm and of its isometries. The unit group is eight-dimensional, the norm-one slice six-dimensional and the Lorentz group its six-dimensional quotient; the algebra carries the double cover, not the group. The two-sided operator is the action; the interval is the invariant; the product is preserved by a rotation and not by a boost. The orbits are the mass shells and the light cones; the reflections are orientation-reversing and lie outside the connected component of the orthogonal group.
 
 The article does not derive the Lorentz group from the algebra: it reads the group that the norm already defines, and it reads the action that the dagger already supplies. It does not derive a dynamics, a field equation, a mass spectrum or a coupling. It does not supply a preferred frame; the frame is a choice, and the interval is what is left when the choice is made. It does not read acceleration, gravity or a local frame field. The finite-dimensional Hermitian sector is not the relativistic state space, and a boost carries the trace-one Bloch ball off its slice; that is a boundary of the interpretation, not a defect of the algebra.
 
 ## Summary
 
-The norm-one group $\mathbb{B}^{\times}_{1}\cong SL_2(\mathbb{C})$ is the double cover of the proper orthochronous Lorentz group, and its compact part $Sp(1)\cong SU(2)$ is the double cover of the spatial rotations. The Lorentz group is the quotient by the central sign, not a subgroup of the quaternion layer; the algebra carries the spin frame. The bilinear sandwich $\mathrm{H}_{\tilde Q}(\tilde Q_3)=\tilde Q\tilde Q_3\tilde Q^{*}$ is the change of frame: it preserves the two sectors, scales the norm by $|\langle\tilde Q\rangle_{\natural}|^{2}$, has kernel $\mathrm{U}(1)e_t$ on the algebra and $\{\pm e_t\}$ on the norm-one slice, and acts as $SO^{+}(1,3)$ there. The interval is the frame-independent object, and the central phase is not a frame.
+The norm-one group $\mathbb{B}^{\times}_{1}\cong SL_2(\mathbb{C})$ is the double cover of the proper orthochronous Lorentz group, and its compact part $Sp(1)\cong SU(2)$ is the double cover of the spatial rotations. The Lorentz group is the quotient by the central sign, not a subgroup of the quaternion layer; the algebra carries the spin frame. The bilinear two-sided operator $\mathrm{H}_{\tilde Q}(\tilde Q_3)=\tilde Q\tilde Q_3\tilde Q^{*}$ is the change of frame: it preserves the two sectors, scales the norm by $|\langle\tilde Q\rangle_{\natural}|^{2}$, has kernel $\mathrm{U}(1)e_t$ on the algebra and $\{\pm e_t\}$ on the norm-one slice, and acts as $SO^{+}(1,3)$ there. The interval is the frame-independent object, and the central phase is not a frame.
 
-A rotation is a $*$-unitary rotor, an algebra automorphism, with the angle halved in the element and the double cover $Sp(1)\to SO(3)$. A boost is a Hermitian norm-one rotor, not $*$-unitary, and not an automorphism: it preserves the interval and the sectors but not the product, the centre or the vector subspace. Two non-collinear boosts compose to a boost and a Wigner rotation. The orbits are the future and past mass shells and the future and past light cones; a null vector is a zero divisor and has no rest frame. The reflections $\rho_v$ are odd isometries of the vector subspace, images of the Pin group and not inner automorphisms: they are Hermitian sandwiches by the spacelike unit vectors, equal to minus the inner automorphisms; parity lies outside the connected Lorentz group, and chirality exchange is not an element of the group at all.
+A rotation is a $*$-unitary rotor, an algebra automorphism, with the angle halved in the element and the double cover $Sp(1)\to SO(3)$. A boost is a Hermitian norm-one rotor, not $*$-unitary, and not an automorphism: it preserves the interval and the sectors but not the product, the centre or the vector subspace. Two non-collinear boosts compose to a boost and a Wigner rotation. The orbits are the future and past mass shells and the future and past light cones; a null vector is a zero divisor and has no rest frame. The reflections $\rho_v$ are odd isometries of the vector subspace, images of the Pin group and not inner automorphisms: they are Hermitian pairs by the spacelike unit vectors, equal to minus the inner automorphisms; parity lies outside the connected Lorentz group, and chirality exchange is not an element of the group at all.
 
 ## Summary of Notation
 
@@ -252,8 +252,8 @@ A rotation is a $*$-unitary rotor, an algebra automorphism, with the angle halve
 | --- | --- |
 | $\mathbb{B}^{\times}_{1}\cong SL_2(\mathbb{C})$ | norm-one group; double cover of $SO^{+}(1,3)$ |
 | $Sp(1)=S^{3}\cong SU(2)$ | unit quaternions; double cover of $SO(3)$ |
-| $\mathrm{H}_{\tilde Q}(\tilde Q_3)=\tilde Q\tilde Q_3\tilde Q^{*}$ | bilinear sandwich; the change of frame |
-| $\mathrm{U}(1)e_t$ | kernel of the sandwich on the algebra |
+| $\mathrm{H}_{\tilde Q}(\tilde Q_3)=\tilde Q\tilde Q_3\tilde Q^{*}$ | bilinear two-sided operator; the change of frame |
+| $\mathrm{U}(1)e_t$ | kernel of the two-sided operator on the algebra |
 | $\langle\tilde Q\rangle_{\natural}$ | biquaternion norm; the interval on $\mathbb{B}_{\Phi}$ |
 | $\tilde u=\cos\tfrac{\theta}{2}+\sin\tfrac{\theta}{2}\vec u$ | rotation rotor |
 | $\tilde U=\cosh\tfrac{\theta_{\mathrm{rpd}}}{2}+i\sinh\tfrac{\theta_{\mathrm{rpd}}}{2}\vec u$ | boost rotor; Hermitian and norm-one |
@@ -263,7 +263,7 @@ A rotation is a $*$-unitary rotor, an algebra automorphism, with the angle halve
 
 ## Further Reading
 
-- [Biquaternion Rotations and Lorentz Transformations](../articles_maths/biquaternion-rotations-and-lorentz-transformations.html), for the double covers, the sandwich, the orbits and the reflections.
+- [Biquaternion Rotations and Lorentz Transformations](../articles_maths/biquaternion-rotations-and-lorentz-transformations.html), for the double covers, the two-sided operator, the orbits and the reflections.
 - [Biquaternion Automorphisms and Derivations](../articles_maths/biquaternion-automorphisms-and-derivations.html), for the automorphism group and its real form.
 - [N-Regularity and N-Degeneracy in the Biquaternion Algebra, §The Group of Units](../articles_maths/n-regularity-and-n-degeneracy-in-the-biquaternion-algebra.html), for the unit group and the norm-one slice.
 - [The Biquaternion Unit Group as a Topological Group](../articles_maths/the-biquaternion-unit-group-as-a-topological-group.html), for the topology of the group.

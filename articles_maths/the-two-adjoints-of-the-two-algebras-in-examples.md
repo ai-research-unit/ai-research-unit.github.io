@@ -39,7 +39,7 @@ $$
 \boxed{\;\langle L_{\tilde q_3}\tilde q_4,\tilde q_5\rangle_B=\langle\tilde q_4,R_{\tilde q_3}\tilde q_5\rangle_B , \qquad
 \langle L_{\tilde q_3}\tilde q_4,\tilde q_5\rangle_N=\langle\tilde q_4,L_{\tilde q_3^{\natural}}\tilde q_5\rangle_N\;},
 $$
-and the transposition relations of the two-sided operators follow by composing them, the adjoint of the sandwich $\tilde q_4\mapsto\tilde q_3\tilde q_4\tilde q_5$ swapping the two parameters and conjugating both in the quaternion case. The conjugation preserves the quaternion pairing, $\langle\tilde q_4^{\natural},\tilde q_5^{\natural}\rangle_{\natural}=\overline{\langle\tilde q_4,\tilde q_5\rangle_{\natural}}=\langle\tilde q_4,\tilde q_5\rangle_{\natural}$, the pairing being real valued.
+and the transposition relations of the two-sided operators follow by composing them, the adjoint of the two-sided operator $\tilde q_4\mapsto\tilde q_3\tilde q_4\tilde q_5$ swapping the two parameters and conjugating both in the quaternion case. The conjugation preserves the quaternion pairing, $\langle\tilde q_4^{\natural},\tilde q_5^{\natural}\rangle_{\natural}=\overline{\langle\tilde q_4,\tilde q_5\rangle_{\natural}}=\langle\tilde q_4,\tilde q_5\rangle_{\natural}$, the pairing being real valued.
 
 ## Summary
 

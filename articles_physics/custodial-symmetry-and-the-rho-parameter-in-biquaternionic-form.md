@@ -140,18 +140,18 @@ $$
 and the diagonal is unbroken. It is not invariant under a general left or right action, since $g_L\frac{v}{\sqrt2}e_tg_R^{*} = \frac{v}{\sqrt2}g_Lg_R^{*}$ equals the vacuum only when $g_L = g_R$; the axial directions are therefore broken, and their Goldstone bosons are the three would-be longitudinal gauge modes. The pivotal object is thus a central element, exactly as the Higgs mechanism's vacuum is central in the framework, and the difference is that the field carrying it is a general quaternion rather than a central scalar.
 
 ```text
-THE TWO-PARAMETER ADJOINT SANDWICH
-==================================
+THE TWO-PARAMETER TWO-SIDED OPERATOR
+====================================
 
     Theta[gL, gR](X) = gL X gR*
 
-One parameter W gives Theta[W, W](X) = W X W*, the Hermitian sandwich.
+One parameter W gives Theta[W, W](X) = W X W*, the Hermitian pair.
 The chiral action needs two independent parameters, gL and gR.
 
 WHY IT IS NEEDED
 ----------------
 * One parameter has three real dimensions; SU(2)L x SU(2)R has six.
-  A single sandwich cannot carry two independent rotations, and
+  A single two-sided operator cannot carry two independent rotations, and
   gL = gR leaves only the diagonal SU(2)V.
 * The second factor is the axial symmetry. Without it there is no axial
   current, no Goldstone coset and no breaking pattern.

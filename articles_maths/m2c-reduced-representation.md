@@ -322,7 +322,7 @@ $$
 $$
 a real hypersurface of codimension one that contains the two lines.
 
-So the three forms give three conformal loci — everything, two lines, and a hypersurface — and the exact one is the indefinite one. That is the shape the category takes in the projection of the ambient onto the conformal group: the family sits inside the conformal group of the split metric without exception, and inside the conformal group of the Euclidean metric only on two lines. The operators article uses the adjoint version for the sandwich and the $J$-version for the adjoint table.
+So the three forms give three conformal loci — everything, two lines, and a hypersurface — and the exact one is the indefinite one. That is the shape the category takes in the projection of the ambient onto the conformal group: the family sits inside the conformal group of the split metric without exception, and inside the conformal group of the Euclidean metric only on two lines. The operators article uses the adjoint version for the two-sided operator and the $J$-version for the adjoint table.
 
 ## The Norms
 
@@ -386,11 +386,11 @@ and the anti-fixed spaces are the three complementary planes. In the model the b
 
 **The zero divisors as a determinantal variety.** The set $\{Q_{+}Q_{-}=0\}$ is the union of the two ideals, each a complex line and a real plane, and their intersection is the origin. So the singular locus is **reducible with two components**, and its projectivisation in the three-dimensional projective space of the real quadruple is two skew lines: the quadric of the split-complex category, lifted by the complex coefficients. The projective picture is the same two-line picture in each complex direction, and the model of the operator article uses it for the cone of the two-sided product.
 
-**The two sandwiches.** Two sandwiches are worth naming because the operators article uses both. The plain sandwich is a left multiplication,
+**The two such operators.** Two two-sided operators are worth naming because the operators article uses both. The plain two-sided operator is a left multiplication,
 $$
 \breve Q\breve X\breve Q=\breve Q^{2}\breve X=L_{\breve Q^{2}}(\breve X),
 $$
-and it carries no information beyond the square. The bar-sandwich is the **modulus square**,
+and it carries no information beyond the square. The bar-two-sided-operator is the **modulus square**,
 $$
 \breve Q\breve X\bar{\breve Q}=\operatorname{diag}\bigl(|Q_{+}|^{2},|Q_{-}|^{2}\bigr)\breve X\ \text{in the frame},
 $$

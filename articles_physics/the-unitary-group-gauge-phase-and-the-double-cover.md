@@ -18,7 +18,7 @@ The distinction that organises the article is the distinction between three acti
 | --- | --- | --- | --- |
 | left multiplication on spinors | $U(2)$ | the Hermitian form and the spinor norm | the gauge of the spinor |
 | conjugation $\tilde X\mapsto\tilde U\tilde X\tilde U^{*}$ | $U(2)/U(1)\cong SO(3)$ | Hermiticity, trace, positivity and the product | the gauge of the state and the frame |
-| bilinear sandwich | $SO^{+}(1,3)$ (via the spin cover $\mathbb{B}^{\times}_{1}\cong SL_2(\mathbb{C})$; $SU(2)$ is the compact part) | the norm and the two sectors | the Lorentz group, not a gauge |
+| bilinear two-sided operator | $SO^{+}(1,3)$ (via the spin cover $\mathbb{B}^{\times}_{1}\cong SL_2(\mathbb{C})$; $SU(2)$ is the compact part) | the norm and the two sectors | the Lorentz group, not a gauge |
 
 The three are often conflated because their compact parts all involve $SU(2)$. They act on different objects and preserve different structures, and the physical reading of each is different.
 
@@ -28,12 +28,12 @@ The three are often conflated because their compact parts all involve $SU(2)$. T
 | --- | --- |
 | The $*$-unitary group, its normal form and its topology | [The Unitary Group of the Biquaternion Algebra](../articles_maths/the-unitary-group-of-the-biquaternion-algebra.html) |
 | The polar decomposition and the retractions | [The Polar Decomposition of a Biquaternion](../articles_maths/the-polar-decomposition-of-a-biquaternion.html) |
-| The three actions and the sandwich | [Element and Operator Representations: The Three Actions](element-and-operator-representations-the-three-actions.html) |
+| The three actions and the two-sided operator | [Element and Operator Representations: The Three Actions](element-and-operator-representations-the-three-actions.html) |
 | The minimal left ideals and the spinor spaces | [The Polarized Module of the Biquaternion Algebra](../articles_maths/the-polarized-module-of-the-biquaternion-algebra.html) |
 | The Krein isometry group and its Cartan decomposition | [The Krein Isometry Group and Its Cartan Decomposition](../articles_maths/the-krein-isometry-group-and-its-cartan-decomposition.html) |
 | The Krein form and the gauge calibration | [The Krein Form and the Indefinite Structure](the-krein-form-and-the-indefinite-structure.html) |
 | The state space and the Born form | [The Informational Sector: States, Observables and Probability](the-informational-sector-states-observables-and-probability.html) |
-| The Lorentz action as a sandwich | [Frames, Rotations and the Lorentz Group](frames-rotations-and-the-lorentz-group.html) |
+| The Lorentz action as a two-sided operator | [Frames, Rotations and the Lorentz Group](frames-rotations-and-the-lorentz-group.html) |
 
 ## The Group
 
@@ -214,9 +214,9 @@ $$
 U(1)\times PU(2)\cong U(1)\times SO(3),
 $$
 
-of dimension four: the central phases and the $*$-unitary sandwiches. The norm-one sandwiches form $PSL(2,\mathbb{C})\cong SO^+(1,3)$, the Lorentz group; their non-$*$-unitary members are isometries but not automorphisms of the algebra.
+of dimension four: the central phases and the $*$-unitary two-sided operators. The norm-one two-sided operators form $PSL(2,\mathbb{C})\cong SO^+(1,3)$, the Lorentz group; their non-$*$-unitary members are isometries but not automorphisms of the algebra.
 
-The reading is the **split of the gauge from the frame change**. Inside the algebra's own isometries, the compact subgroup $U(1)\times PU(2)$ is the gauge — the central phase and the spatial rotation — and the non-compact norm-one sandwiches are the boosts, a change of frame rather than a redundancy. The full Krein group is larger: its maximal compact subgroup is $U(1)\times U(3)$, and its non-compact directions are the complex hyperbolic boosts.
+The reading is the **split of the gauge from the frame change**. Inside the algebra's own isometries, the compact subgroup $U(1)\times PU(2)$ is the gauge — the central phase and the spatial rotation — and the non-compact norm-one two-sided operators are the boosts, a change of frame rather than a redundancy. The full Krein group is larger: its maximal compact subgroup is $U(1)\times U(3)$, and its non-compact directions are the complex hyperbolic boosts.
 
 The Krein involution is not the Cartan involution. It acts on the full operator algebra $\mathfrak{g}=\operatorname{End}_{\mathbb{C}}(\mathbb{B})\cong\mathfrak{gl}_4(\mathbb{C})$, of real dimension $32$, and splits it as
 
@@ -255,7 +255,7 @@ The $*$-unitary group of the algebra is $U(2)$, not $U(4)$. The full isometry gr
 
 The left action is not an automorphism of the algebra. It preserves the Hermitian form, but it does not preserve Hermiticity or the product. The conjugation is the automorphism, and its effective group is $U(2)/U(1)\cong SO(3)$. The two actions must not be conflated.
 
-The bilinear sandwich by the norm-one group is the Lorentz action — the norm-one group is its spin cover — not a gauge group. It preserves the norm and the two sectors, and it acts on the four-vectors; it is a change of frame, not a redundancy of the description.
+The bilinear two-sided operator with the norm-one group is the Lorentz action — the norm-one group is its spin cover — not a gauge group. It preserves the norm and the two sectors, and it acts on the four-vectors; it is a change of frame, not a redundancy of the description.
 
 The gauge reading is the state-space action. It is not a derivation of the Standard Model gauge group, and it is not a claim that the physical gauge group is $U(2)$.
 
@@ -292,7 +292,7 @@ No dynamics is supplied. The group is the group of reversible changes of basis; 
 
 - [The Unitary Group of the Biquaternion Algebra](../articles_maths/the-unitary-group-of-the-biquaternion-algebra.html), for the group and its topology.
 - [The Polar Decomposition and Its Three Pairings](the-polar-decomposition-and-its-three-pairings.html), for the amplitude–frame split.
-- [Element and Operator Representations: The Three Actions](element-and-operator-representations-the-three-actions.html), for the left action, the inner automorphism and the sandwich.
+- [Element and Operator Representations: The Three Actions](element-and-operator-representations-the-three-actions.html), for the left action, the inner automorphism and the two-sided operator.
 - [The Krein Isometry Group and Its Cartan Decomposition](../articles_maths/the-krein-isometry-group-and-its-cartan-decomposition.html), for $U(1,3)$ and the compact part.
 - [Spin and the Three Elementary Carriers](spin-and-the-three-elementary-carriers.html), for the spinor spaces and the double cover.
 - [The Informational Sector: States, Observables and Probability](the-informational-sector-states-observables-and-probability.html), for the state space and the Born form.

@@ -129,7 +129,7 @@ The ambiguity has three layers.
 
 | Layer | Shift | What it changes |
 | --- | --- | --- |
-| central phase | $2\pi i k\,e_t$ | nothing observable; the sandwich is blind to it |
+| central phase | $2\pi i k\,e_t$ | nothing observable; the two-sided operator is blind to it |
 | full rotation | $2\pi j\,\vec U$ | nothing; a full turn is the identity |
 | parity-matched pair | $\pi i\,e_t+\pi\,\vec U$ | nothing; the two half-shifts cancel |
 

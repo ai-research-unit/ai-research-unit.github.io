@@ -68,7 +68,7 @@ is an isometric $*$-automorphism of $B(H)$ with norm and Hilbert–Schmidt norm 
 
 *Proof.* The $*$-automorphism preserves the positivity and hence the order, transitivity on the projections follows by sending a unit vector to another, and the fixed-point statement is the definition of the commutant.
 
-**Example (the conjugation and the transforms).** The Fourier transform on $L^2(\mathbb{R})$ is a unitary of order four, and its conjugation gives the exchange of the position and frequency multiplications; the operator $U=\Gamma$ of the grading is a unitary with $U^2=I$, and the conjugation by it is the grade involution used throughout the signed operator theory of *The Signed Sandwich on a Hilbert Space*.
+**Example (the conjugation and the transforms).** The Fourier transform on $L^2(\mathbb{R})$ is a unitary of order four, and its conjugation gives the exchange of the position and frequency multiplications; the operator $U=\Gamma$ of the grading is a unitary with $U^2=I$, and the conjugation by it is the grade involution used throughout the signed operator theory of *The Signed Two-Sided Operator on a Hilbert Space*.
 
 ## The Spectral Theorem in the Unitary Case
 

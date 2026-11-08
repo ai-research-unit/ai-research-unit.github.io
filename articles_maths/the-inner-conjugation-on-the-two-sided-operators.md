@@ -2,21 +2,21 @@
 
 ## Introduction
 
-Among the two-sided operators of *The Sandwich on a Clifford Algebra* the first to be singled out by the geometry is the one whose two parameters are a unit and its inverse,
+Among the two-sided operators of *The Two-Sided Operator on a Clifford Algebra* the first to be singled out by the geometry is the one whose two parameters are a unit and its inverse,
 
 $$
 \mathrm{Ad}_x(y) = x\,y\,x^{-1}, \qquad x \in \mathrm{Cl}(V,\mathfrak{Q})^{\times},
 $$
 
-the **inner conjugation**. It is the composite $L_{x}R_{x^{-1}} = L_xR_{x^{-1}}$, and it is the only member of the two-parameter family that is a homomorphism of the multiplicative monoid as well as of the additive group: the sandwich with two independent parameters forgets the unit, the inner conjugation fixes it and is an algebra automorphism.
+the **inner conjugation**. It is the composite $L_{x}R_{x^{-1}} = L_xR_{x^{-1}}$, and it is the only member of the two-parameter family that is a homomorphism of the multiplicative monoid as well as of the additive group: the two-sided operator with two independent parameters forgets the unit, the inner conjugation fixes it and is an algebra automorphism.
 
 The inner conjugation alone, however, does not carry the orthogonal group correctly. On the quadratic space it realises the isometry $v \mapsto x\,v\,x^{-1}$, and for an odd versor this is the **negative** of the reflection; the central volume element of an odd-dimensional algebra is invisible to it. The action that repairs both defects is the **twisted action** $\chi_x(y) = x\,y\,\alpha(x)^{-1}$, which differs from the inner conjugation by the parity sign and returns the reflection itself. This article treats the two maps together: the algebraic operator and its kernel, the orthogonal action, and the two-sided operators that realise the automorphisms of the algebra.
 
-The sandwich and its composition law are *The Sandwich on a Clifford Algebra*; the group of two-sided operators and the spin group built from it are *The Two-Sided Operators and the Spin Group*; the Clifford, pin and spin groups and their exact sequences are *The Clifford, Pin and Spin Groups with Signed Inner Conjugation*, and the kernel and the reflection formula for the signed member $\mathrm{Ad}^{\alpha}$ are *Two-Sided Operators on a Clifford Algebra with Signed Inner Conjugation*. Those results are quoted, not re-derived. The algebra and its grading are *Clifford Algebras* and *Clifford Algebras in Finite Dimensions*.
+The two-sided operator and its composition law are *The Two-Sided Operator on a Clifford Algebra*; the group of two-sided operators and the spin group built from it are *The Two-Sided Operators and the Spin Group*; the Clifford, pin and spin groups and their exact sequences are *The Clifford, Pin and Spin Groups with Signed Inner Conjugation*, and the kernel and the reflection formula for the signed member $\mathrm{Ad}^{\alpha}$ are *Two-Sided Operators on a Clifford Algebra with Signed Inner Conjugation*. Those results are quoted, not re-derived. The algebra and its grading are *Clifford Algebras* and *Clifford Algebras in Finite Dimensions*.
 
 ## The Inner Conjugation as a Two-Sided Operator
 
-**Definition.** For a unit $x \in \mathrm{Cl}(V,\mathfrak{Q})^{\times}$ the **inner conjugation** by $x$ is the $F$-linear map $\mathrm{Ad}_x(y) = x\,y\,x^{-1}$. It is the sandwich $L_{x}R_{x^{-1}}$, and it is defined on the unit group alone, because the right factor is the inverse.
+**Definition.** For a unit $x \in \mathrm{Cl}(V,\mathfrak{Q})^{\times}$ the **inner conjugation** by $x$ is the $F$-linear map $\mathrm{Ad}_x(y) = x\,y\,x^{-1}$. It is the two-sided operator $L_{x}R_{x^{-1}}$, and it is defined on the unit group alone, because the right factor is the inverse.
 
 **Proposition (the automorphism).** $\mathrm{Ad}_x$ is an algebra automorphism of $\mathrm{Cl}(V,\mathfrak{Q})$: it is $F$-linear, bijective, multiplicative, and it fixes $1$.
 
@@ -50,7 +50,7 @@ where the kernel is the group of units of the centre; consequently $\mathrm{Inn}
 
 ## The Twisted Action and the Orthogonal Group
 
-**Definition.** The **twisted action** of a unit $x$ is $\chi_x(y) = x\,y\,\alpha(x)^{-1}$, the sandwich by the pair $(x, \alpha(x)^{-1})$.
+**Definition.** The **twisted action** of a unit $x$ is $\chi_x(y) = x\,y\,\alpha(x)^{-1}$, the two-sided operator with the pair $(x, \alpha(x)^{-1})$.
 
 **Proposition (the relation to the inner conjugation).** Let $x$ be homogeneous of degree $k$ and let $\varepsilon_x = (-1)^{k}$. Then
 
@@ -60,7 +60,7 @@ $$
 
 so the two actions agree on the even part of the unit group and are negatives on the odd part.
 
-**Proof.** For a homogeneous $x$, $\alpha(x)^{-1} = \varepsilon_x x^{-1}$, as in *The Sandwich on a Clifford Algebra*, and $\varepsilon_x$ is central.
+**Proof.** For a homogeneous $x$, $\alpha(x)^{-1} = \varepsilon_x x^{-1}$, as in *The Two-Sided Operator on a Clifford Algebra*, and $\varepsilon_x$ is central.
 
 **Theorem (the orthogonal group).** The assignment $x \mapsto \chi_x\big|_{V}$ is a surjective homomorphism
 
@@ -82,11 +82,11 @@ $$
 
 ## The Two-Sided Operators Realising the Automorphisms
 
-**Proposition (the inner automorphisms are sandwiches).** The map $x \mapsto \mathrm{Ad}_x$ is a surjection $\mathrm{Cl}(V,\mathfrak{Q})^{\times} \to \mathrm{Inn}(\mathrm{Cl}(V,\mathfrak{Q}))$ with kernel the central units; in the operator notation of *The Two-Sided Operators and the Spin Group* it is the restriction of the parametrisation $(a,b) \mapsto L_{a}R_{b}$ to the diagonal pairs $b = a^{-1}$.
+**Proposition (the inner automorphisms are two-sided operators).** The map $x \mapsto \mathrm{Ad}_x$ is a surjection $\mathrm{Cl}(V,\mathfrak{Q})^{\times} \to \mathrm{Inn}(\mathrm{Cl}(V,\mathfrak{Q}))$ with kernel the central units; in the operator notation of *The Two-Sided Operators and the Spin Group* it is the restriction of the parametrisation $(a,b) \mapsto L_{a}R_{b}$ to the diagonal pairs $b = a^{-1}$.
 
 **Proof.** The first statement is the exact sequence above; the second is the definition of the restriction.
 
-**Corollary (the interior automorphisms inside the two-sided group).** Inside the group $\mathcal{T}$ of invertible sandwiches the pairs $(x, x^{-1})$ form a subgroup isomorphic to $\mathrm{Cl}(V,\mathfrak{Q})^{\times}/Z^{\times}$, and the versors form inside it the subgroup generated by the twisted conjugations of *The Two-Sided Operators and the Spin Group*. The sandwiches not of this form, with $b \neq a^{-1}$, act on the algebra by maps that are not multiplicative and are not automorphisms; they are the maps of the Hermitian and intrinsic families once those structures are available.
+**Corollary (the interior automorphisms inside the two-sided group).** Inside the group $\mathcal{T}$ of invertible two-sided operators the pairs $(x, x^{-1})$ form a subgroup isomorphic to $\mathrm{Cl}(V,\mathfrak{Q})^{\times}/Z^{\times}$, and the versors form inside it the subgroup generated by the twisted conjugations of *The Two-Sided Operators and the Spin Group*. The two-sided operators not of this form, with $b \neq a^{-1}$, act on the algebra by maps that are not multiplicative and are not automorphisms; they are the maps of the Hermitian and intrinsic families once those structures are available.
 
 ## Worked Cases
 
@@ -104,7 +104,7 @@ For $c \in F^{\times}$, $\mathrm{Ad}_c = \mathrm{id}$ and $\chi_c = \mathrm{id}$
 
 ## Summary
 
-The **inner conjugation** $\mathrm{Ad}_x(y) = x\,y\,x^{-1}$ is the sandwich with $b = a^{-1}$; it is an algebra automorphism, it composes by $\mathrm{Ad}_x\mathrm{Ad}_z = \mathrm{Ad}_{xz}$, it preserves the parity grading, and it fixes the unit. Its kernel is the group of units of the centre, so it defines the exact sequence $1 \to Z(\mathrm{Cl})^{\times} \to \mathrm{Cl}^{\times} \to \mathrm{Inn}(\mathrm{Cl}) \to 1$; in odd dimension the central volume element lies in that kernel and the map is not faithful. The **twisted action** $\chi_x(y) = x\,y\,\alpha(x)^{-1}$ is the sandwich by $(x, \alpha(x)^{-1})$, equal to $\varepsilon_x\mathrm{Ad}_x$; it differs from the inner conjugation by the parity sign, agrees with it on the even part, and is the action that maps a vector to the reflection. The two actions give the same groups, $\Gamma(V,\mathfrak{Q}) \to O(V,\mathfrak{Q})$ with kernel $F^{\times}$ and $\mathrm{Spin}(V,\mathfrak{Q}) \to SO(V,\mathfrak{Q})$ with kernel $\{\pm1\}$, but only the twisted one is orthogonal on the odd part. Inside the group of invertible two-sided operators the inner conjugations form the subgroup of the diagonal pairs, isomorphic to $\mathrm{Cl}^{\times}/Z^{\times}$; the results on the groups themselves are those of *The Clifford, Pin and Spin Groups with Signed Inner Conjugation*.
+The **inner conjugation** $\mathrm{Ad}_x(y) = x\,y\,x^{-1}$ is the two-sided operator with $b = a^{-1}$; it is an algebra automorphism, it composes by $\mathrm{Ad}_x\mathrm{Ad}_z = \mathrm{Ad}_{xz}$, it preserves the parity grading, and it fixes the unit. Its kernel is the group of units of the centre, so it defines the exact sequence $1 \to Z(\mathrm{Cl})^{\times} \to \mathrm{Cl}^{\times} \to \mathrm{Inn}(\mathrm{Cl}) \to 1$; in odd dimension the central volume element lies in that kernel and the map is not faithful. The **twisted action** $\chi_x(y) = x\,y\,\alpha(x)^{-1}$ is the two-sided operator by $(x, \alpha(x)^{-1})$, equal to $\varepsilon_x\mathrm{Ad}_x$; it differs from the inner conjugation by the parity sign, agrees with it on the even part, and is the action that maps a vector to the reflection. The two actions give the same groups, $\Gamma(V,\mathfrak{Q}) \to O(V,\mathfrak{Q})$ with kernel $F^{\times}$ and $\mathrm{Spin}(V,\mathfrak{Q}) \to SO(V,\mathfrak{Q})$ with kernel $\{\pm1\}$, but only the twisted one is orthogonal on the odd part. Inside the group of invertible two-sided operators the inner conjugations form the subgroup of the diagonal pairs, isomorphic to $\mathrm{Cl}^{\times}/Z^{\times}$; the results on the groups themselves are those of *The Clifford, Pin and Spin Groups with Signed Inner Conjugation*.
 
 ## Summary of Notation
 

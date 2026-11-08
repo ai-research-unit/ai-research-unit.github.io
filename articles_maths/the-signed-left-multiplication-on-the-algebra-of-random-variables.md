@@ -7,15 +7,15 @@ The signed left multiplication of the algebra of random variables is the operato
 $$
 T^\alpha_a(x)=a\,\alpha(x)=L_a\circ\alpha=\alpha\circ L_{\alpha(a)} ,
 $$
-the elementary signed operator out of which the signed sandwich is built. This article treats it: the two readings of the operator, its products, its invertibility and its image, its adjoint with respect to the form of the category, and the conditions for it to be self-adjoint, an isometry or unitary. The adjoint is the point at which the algebra of random variables parts company with the algebra of arithmetic functions. There the form of the category is the coefficient form, the transpose of a left multiplication is not a left multiplication, and the adjoint of $L_a\alpha$ is the transposed multiplication composed with $\alpha$. Here the form is the expectation form $\langle x,y\rangle=\varphi(xy^*)$, it is invariant under the conjugation, the adjoint of a left multiplication is exactly the left multiplication by the conjugate, $L_a^*=L_{a^*}$, and the adjoint of the signed left multiplication is again a signed left multiplication,
+the elementary signed operator out of which the signed two-sided operator is built. This article treats it: the two readings of the operator, its products, its invertibility and its image, its adjoint with respect to the form of the category, and the conditions for it to be self-adjoint, an isometry or unitary. The adjoint is the point at which the algebra of random variables parts company with the algebra of arithmetic functions. There the form of the category is the coefficient form, the transpose of a left multiplication is not a left multiplication, and the adjoint of $L_a\alpha$ is the transposed multiplication composed with $\alpha$. Here the form is the expectation form $\langle x,y\rangle=\varphi(xy^*)$, it is invariant under the conjugation, the adjoint of a left multiplication is exactly the left multiplication by the conjugate, $L_a^*=L_{a^*}$, and the adjoint of the signed left multiplication is again a signed left multiplication,
 $$
 \bigl(T^\alpha_a\bigr)^*=T^\alpha_{\delta(a)},\qquad \delta=\sigma\alpha=\alpha\sigma .
 $$
 The involution on the elements and the adjoint on the operators therefore agree up to the twisted involution $\delta$; the multiplication is a $*$-representation, and the signed operator carries the twist.
 
-The conventions are those of *The Signed Sandwich on the Algebra of Random Variables*, earlier in this category: $\mathcal{A}=L^\infty(\Omega,\mathcal F,\mathbb P)$ with the pointwise product, the conjugation $\sigma(x)=\bar x$, the state $\varphi(x)=\mathbb E[x]$, the form $\langle x,y\rangle=\varphi(xy^*)$, the grade involution $\alpha$, the grading $\mathcal{A}=\mathcal{A}_{\bar0}\oplus\mathcal{A}_{\bar1}$, and the twisted involution $\delta=\sigma\alpha$. The reflections are the preceding article of this category, the graded action is the next, and the adjoint of the unsigned left multiplication, with the proof that $L_a^*=L_{a^*}$, is *The Adjoint of the Left Multiplication on the Algebra of Random Variables*, later in this category. The noncommutative signed left multiplication, whose adjoint is by $\delta$ as well but for a different reason, is *The Signed Left Multiplication on a Ring*, in Part I. No physics is invoked.
+The conventions are those of *The Signed Two-Sided Operator on the Algebra of Random Variables*, earlier in this category: $\mathcal{A}=L^\infty(\Omega,\mathcal F,\mathbb P)$ with the pointwise product, the conjugation $\sigma(x)=\bar x$, the state $\varphi(x)=\mathbb E[x]$, the form $\langle x,y\rangle=\varphi(xy^*)$, the grade involution $\alpha$, the grading $\mathcal{A}=\mathcal{A}_{\bar0}\oplus\mathcal{A}_{\bar1}$, and the twisted involution $\delta=\sigma\alpha$. The reflections are the preceding article of this category, the graded action is the next, and the adjoint of the unsigned left multiplication, with the proof that $L_a^*=L_{a^*}$, is *The Adjoint of the Left Multiplication on the Algebra of Random Variables*, later in this category. The noncommutative signed left multiplication, whose adjoint is by $\delta$ as well but for a different reason, is *The Signed Left Multiplication on a Ring*, in Part I. No physics is invoked.
 
-Throughout, $\mathcal{A}$ is the algebra of random variables, $\mathcal{H}=L^2(\Omega,\mathbb P)$ with the form $\langle x,y\rangle=\varphi(xy^*)$ is the Hilbert space of the category, and $\delta=\sigma\alpha$. The signed sandwich is $S^\alpha_{a,b}(x)=a\,\alpha(x)\,b$, which collapses to $T^\alpha_{ab}$ on this commutative algebra.
+Throughout, $\mathcal{A}$ is the algebra of random variables, $\mathcal{H}=L^2(\Omega,\mathbb P)$ with the form $\langle x,y\rangle=\varphi(xy^*)$ is the Hilbert space of the category, and $\delta=\sigma\alpha$. The signed two-sided operator is $S^\alpha_{a,b}(x)=a\,\alpha(x)\,b$, which collapses to $T^\alpha_{ab}$ on this commutative algebra.
 
 ## The Operator and its Products
 
@@ -25,13 +25,13 @@ Throughout, $\mathcal{A}$ is the algebra of random variables, $\mathcal{H}=L^2(\
 $$
 T^\alpha_a:\mathcal{A}\to\mathcal{A},\qquad T^\alpha_a(x)=a\,\alpha(x).
 $$
-It is the signed sandwich with $b=1$, $T^\alpha_a=S^\alpha_{a,1}$, and it satisfies the two readings
+It is the signed two-sided operator with $b=1$, $T^\alpha_a=S^\alpha_{a,1}$, and it satisfies the two readings
 $$
 T^\alpha_a=L_a\circ\alpha=\alpha\circ L_{\alpha(a)},
 $$
 the second because $L_a\alpha=\alpha L_{\alpha(a)}$ for an involutive automorphism $\alpha$.
 
-**Proposition (the signed sandwich re-read).** On the commutative algebra the signed sandwich is the signed left multiplication of the product,
+**Proposition (the signed two-sided operator re-read).** On the commutative algebra the signed two-sided operator is the signed left multiplication of the product,
 $$
 S^\alpha_{a,b}=T^\alpha_{ab},
 $$
@@ -120,7 +120,7 @@ The signed left multiplication degenerates in four configurations. First, the pr
 
 ## Summary
 
-The signed left multiplication $T^\alpha_a(x)=a\,\alpha(x)$ is the product $L_a\alpha=\alpha L_{\alpha(a)}$, it is the signed sandwich with the second factor one, and the signed sandwich itself is $T^\alpha_{ab}$ on the commutative algebra. Its products are the unsigned left multiplications $T^\alpha_aT^\alpha_b=L_{a\alpha(b)}$, it is injective exactly when $a\ne0$ and invertible exactly when $a$ is a unit with inverse $T^\alpha_{\alpha(a)^{-1}}$, and its image is the principal ideal $a\mathcal{A}$. Its adjoint with respect to the expectation form is $T^\alpha_{\delta(a)}=\alpha L_{a^*}$ with $\delta=\sigma\alpha$, the same formula as in the noncommutative case but obtained here from the invariance of the form; it is self-adjoint exactly when $a=\delta(a)$, that is when $\alpha(a)=a^*$, and it is an isometry exactly when it is unitary, exactly when $|a|=1$. The unitary members are parametrised by the unimodular random variables, and the self-adjoint unitary ones by the unimodular $\alpha$-Hermitian elements. The conventions are those of *The Signed Sandwich on the Algebra of Random Variables*; the unsigned adjoint is *The Adjoint of the Left Multiplication on the Algebra of Random Variables*, later in this category.
+The signed left multiplication $T^\alpha_a(x)=a\,\alpha(x)$ is the product $L_a\alpha=\alpha L_{\alpha(a)}$, it is the signed two-sided operator with the second factor one, and the signed two-sided operator itself is $T^\alpha_{ab}$ on the commutative algebra. Its products are the unsigned left multiplications $T^\alpha_aT^\alpha_b=L_{a\alpha(b)}$, it is injective exactly when $a\ne0$ and invertible exactly when $a$ is a unit with inverse $T^\alpha_{\alpha(a)^{-1}}$, and its image is the principal ideal $a\mathcal{A}$. Its adjoint with respect to the expectation form is $T^\alpha_{\delta(a)}=\alpha L_{a^*}$ with $\delta=\sigma\alpha$, the same formula as in the noncommutative case but obtained here from the invariance of the form; it is self-adjoint exactly when $a=\delta(a)$, that is when $\alpha(a)=a^*$, and it is an isometry exactly when it is unitary, exactly when $|a|=1$. The unitary members are parametrised by the unimodular random variables, and the self-adjoint unitary ones by the unimodular $\alpha$-Hermitian elements. The conventions are those of *The Signed Two-Sided Operator on the Algebra of Random Variables*; the unsigned adjoint is *The Adjoint of the Left Multiplication on the Algebra of Random Variables*, later in this category.
 
 ## Summary of Notation
 
@@ -128,7 +128,7 @@ The signed left multiplication $T^\alpha_a(x)=a\,\alpha(x)$ is the product $L_a\
 |---|---|
 | $T^\alpha_a(x)=a\,\alpha(x)$ | the signed left multiplication |
 | $T^\alpha_a=L_a\alpha=\alpha L_{\alpha(a)}$ | its two readings |
-| $S^\alpha_{a,b}=T^\alpha_{ab}$ | the signed sandwich as a signed left multiplication |
+| $S^\alpha_{a,b}=T^\alpha_{ab}$ | the signed two-sided operator as a signed left multiplication |
 | $T^\alpha_aT^\alpha_b=L_{a\alpha(b)}$ | the product law |
 | $a\mathcal{A}$ | the image, a principal ideal |
 | $T^\alpha_{\alpha(a)^{-1}}$ | the inverse of an invertible one |

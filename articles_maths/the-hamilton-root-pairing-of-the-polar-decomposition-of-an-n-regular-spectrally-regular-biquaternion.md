@@ -129,7 +129,7 @@ $$
 \qquad \tilde U_{\mathrm{lor}}\,\tilde U_{\mathrm{lor}}{}^{\natural} = e_t .
 $$
 
-It is a boost of rapidity $\theta_{\mathrm{rpd}}$ about $\vec u_{\mathrm b}$ times a rotation of angle $\theta$ about $\vec u_{\mathrm r}$; the boost alone is the Hermitian case $\tilde u_{\mathrm r}=e_t$. In the physical interpretation $\tilde U_{\mathrm{lor}}$ is the **Lorentz transformation**: the modulus $\Rho$ carries the scale and the phase, so every element of the domain is a complex scalar times a Lorentz transformation. The rotor of the bilinear sandwich of the physics articles is this factor, written $\tilde U$ there.
+It is a boost of rapidity $\theta_{\mathrm{rpd}}$ about $\vec u_{\mathrm b}$ times a rotation of angle $\theta$ about $\vec u_{\mathrm r}$; the boost alone is the Hermitian case $\tilde u_{\mathrm r}=e_t$. In the physical interpretation $\tilde U_{\mathrm{lor}}$ is the **Lorentz transformation**: the modulus $\Rho$ carries the scale and the phase, so every element of the domain is a complex scalar times a Lorentz transformation. The rotor of the bilinear two-sided operator of the physics articles is this factor, written $\tilde U$ there.
 
 | aspect | value |
 |---|---|

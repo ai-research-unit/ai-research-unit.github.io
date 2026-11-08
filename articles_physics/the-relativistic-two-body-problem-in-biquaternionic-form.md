@@ -336,7 +336,7 @@ $$
 
 which is the total kinetic energy of the daughters in the parent rest frame, split in the ratio $(E_1^*-m_1c^2)/(E_2^*-m_2c^2) = m_2/m_1$ in the non-relativistic limit derived below.
 
-If the parent is moving in the laboratory frame with velocity $\vec V$, the daughter four-momenta are obtained from their rest-frame values by the Hermitian sandwich $\tilde{P}_{\Phi,a} = \tilde U_{\Psi,\mathrm b}\tilde{P}_{\Phi,a}^{\rm CM}\tilde U_{\Psi,\mathrm b}^{*}$, where $\tilde U_{\Psi,\mathrm b}$ is the **inverse** of the rotor that carries the laboratory frame to the parent rest frame — the quaternion conjugate of $\tilde U_{\rm CM}$ of the preceding section. The middle factor is the four-momentum in the parent rest frame; it carries no star, since the star on the right factor is the conjugation that makes the sandwich:
+If the parent is moving in the laboratory frame with velocity $\vec V$, the daughter four-momenta are obtained from their rest-frame values by the Hermitian pair $\tilde{P}_{\Phi,a} = \tilde U_{\Psi,\mathrm b}\tilde{P}_{\Phi,a}^{\rm CM}\tilde U_{\Psi,\mathrm b}^{*}$, where $\tilde U_{\Psi,\mathrm b}$ is the **inverse** of the rotor that carries the laboratory frame to the parent rest frame — the quaternion conjugate of $\tilde U_{\rm CM}$ of the preceding section. The middle factor is the four-momentum in the parent rest frame; it carries no star, since the star on the right factor is the conjugation that makes the two-sided operator:
 
 $$
 \tilde U_{\Psi,\mathrm b} = \tilde U^{\natural}_{\rm CM} = \cosh\frac{\theta_{\mathrm{rpd}}}{2} - i\sinh\frac{\theta_{\mathrm{rpd}}}{2}\,\vec u_V,

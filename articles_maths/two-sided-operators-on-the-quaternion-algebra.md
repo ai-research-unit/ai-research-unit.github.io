@@ -10,7 +10,7 @@ The two-sided operators are the products of a left and a right multiplication, $
 
 **Proposition.** $\mathcal T$ is a linear subspace of $\operatorname{End}_\mathbb{R}(\mathbb{H})$ of dimension $16$, namely the whole of it.
 
-*Proof.* The map $(\tilde q_3,\tilde q_4)\mapsto L_{\tilde q_3}R_{\tilde q_4}$ is bilinear and its image is the span of the sixteen sandwiches $e_n[\,]e_m$; the enveloping algebra is identified with the endomorphisms in *The Enveloping Operator Algebra of the Quaternion Algebra and the Bi-module Structure*, above this article in this category, and has dimension $16$, equal to the dimension of the endomorphisms, so the family is everything.
+*Proof.* The map $(\tilde q_3,\tilde q_4)\mapsto L_{\tilde q_3}R_{\tilde q_4}$ is bilinear and its image is the span of the sixteen two-sided operators $e_n[\,]e_m$; the enveloping algebra is identified with the endomorphisms in *The Enveloping Operator Algebra of the Quaternion Algebra and the Bi-module Structure*, above this article in this category, and has dimension $16$, equal to the dimension of the endomorphisms, so the family is everything.
 
 **Corollary.** Every real-linear operator of $\mathbb{H}$ is a two-sided operator, and the four-dimensional space $\mathbb{H}$ is simple over the algebra $\mathcal T$.
 
@@ -22,7 +22,7 @@ The two-sided operators are the products of a left and a right multiplication, $
 
 *Proof.* Apply the left side to $\tilde q$: $\tilde q_3(\tilde q_5\tilde q\tilde q_6)\tilde q_4=(\tilde q_3\tilde q_5)\tilde q(\tilde q_6\tilde q_4)$, which is the right side. The second parameter is reversed because the second factor is read through the opposite algebra.
 
-**Proposition (when two sandwiches agree).** The sandwich $L_{\tilde q_3}R_{\tilde q_4}$ is zero exactly when $\tilde q_3=0$ or $\tilde q_4=0$. For nonzero parameter pairs, $L_{\tilde q_3}R_{\tilde q_4}=L_{\tilde q_5}R_{\tilde q_6}$ exactly when $(\tilde q_5,\tilde q_6)=(\lambda\tilde q_3,\lambda^{-1}\tilde q_4)$ for a real $\lambda\neq0$.
+**Proposition (when two such operators agree).** The two-sided operator $L_{\tilde q_3}R_{\tilde q_4}$ is zero exactly when $\tilde q_3=0$ or $\tilde q_4=0$. For nonzero parameter pairs, $L_{\tilde q_3}R_{\tilde q_4}=L_{\tilde q_5}R_{\tilde q_6}$ exactly when $(\tilde q_5,\tilde q_6)=(\lambda\tilde q_3,\lambda^{-1}\tilde q_4)$ for a real $\lambda\neq0$.
 
 *Proof.* At $\tilde q=e_t$ the equality $L_{\tilde q_3}R_{\tilde q_4}=0$ gives $\tilde q_3\tilde q_4=0$, so one factor vanishes. Assume all four parameters nonzero and $\tilde q_3\tilde q\tilde q_4=\tilde q_5\tilde q\tilde q_6$ for all $\tilde q$; left multiplying by $\tilde q_3^{-1}$ and writing $\gamma=\tilde q_3^{-1}\tilde q_5$ gives $\tilde q\tilde q_4=\gamma\tilde q\tilde q_6$, so $\tilde q_4=\gamma\tilde q_6$ at $\tilde q=e_t$ and $(\tilde q\gamma-\gamma\tilde q)\tilde q_6=0$ for all $\tilde q$, whence $\gamma$ is central, that is a real $\lambda\neq0$; then $\tilde q_5=\lambda\tilde q_3$ and $\tilde q_6=\lambda^{-1}\tilde q_4$. Conversely the central scalar gives $L_{\lambda\tilde q_3}R_{\lambda^{-1}\tilde q_4}=L_{\tilde q_3}R_{\tilde q_4}$.
 
@@ -44,7 +44,7 @@ $$ \boxed{\; L_{\tilde q_3}R_{\tilde q_4}^{\sim}=L_{\tilde q_4}R_{\tilde q_3} \;
 
 **Corollary.** $L_{\tilde q_3}R_{\tilde q_4}$ is self-transpose exactly when $\tilde q_4\in\mathbb{R}\tilde q_3$ or $\tilde q_3\in\mathbb{R}\tilde q_4$.
 
-*Proof.* $L_{\tilde q_3}R_{\tilde q_4}=L_{\tilde q_4}R_{\tilde q_3}$ exactly when $\tilde q_3\tilde q\tilde q_4=\tilde q_4\tilde q\tilde q_3$ for all $\tilde q$, which is the sandwich criterion of *Association and the Transpose on the Quaternion Algebra*, above this article in this category.
+*Proof.* $L_{\tilde q_3}R_{\tilde q_4}=L_{\tilde q_4}R_{\tilde q_3}$ exactly when $\tilde q_3\tilde q\tilde q_4=\tilde q_4\tilde q\tilde q_3$ for all $\tilde q$, which is the two-sided operator criterion of *Association and the Transpose on the Quaternion Algebra*, above this article in this category.
 
 ## The Criterion of Form Preservation
 
@@ -88,6 +88,6 @@ The two-sided operators $L_{\tilde q_3}R_{\tilde q_4}(\tilde q)=\tilde q_3\tilde
 
 ## Further Reading
 
-- John H. Conway and Derek A. Smith, *On Quaternions and Octonions* (A K Peters, 2003), for the sandwich operators and their composition.
+- John H. Conway and Derek A. Smith, *On Quaternions and Octonions* (A K Peters, 2003), for the two-sided operators and their composition.
 - Richard S. Pierce, *Associative Algebras* (Springer, 1982), for the inner automorphisms of a central simple algebra and the Skolem–Noether theorem.
 - T. Y. Lam, *A First Course in Noncommutative Rings* (Springer, 2nd ed. 2001), for the unit group of a division ring and its centre.

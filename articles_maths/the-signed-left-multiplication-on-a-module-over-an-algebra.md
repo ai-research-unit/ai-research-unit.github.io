@@ -3,9 +3,9 @@
 
 ## Introduction
 
-The signed sandwich of *The Signed Sandwich on a Bimodule over an Algebra* is built from two one-sided operators; this article isolates the left one. For an algebra $A$ with a grade involution $\alpha$ acting compatibly on a module $M$, the **signed left multiplication** by $a$ is the operator $L^{\alpha}_a(m)=a\,\alpha(m)$. It is the unsigned left multiplication of *Left and Right Multiplication of a Module* with the grade involution inserted before the action, and it is the operator that carries the parity sign of the grading.
+The signed two-sided operator of *The Signed Two-Sided Operator on a Bimodule over an Algebra* is built from two one-sided operators; this article isolates the left one. For an algebra $A$ with a grade involution $\alpha$ acting compatibly on a module $M$, the **signed left multiplication** by $a$ is the operator $L^{\alpha}_a(m)=a\,\alpha(m)$. It is the unsigned left multiplication of *Left and Right Multiplication of a Module* with the grade involution inserted before the action, and it is the operator that carries the parity sign of the grading.
 
-The article defines the signed left multiplication, relates it to its unsigned sibling, computes the composition of the two families, and determines the elements fixed by a signed left multiplication. The signed sandwich itself is treated in *The Signed Sandwich on a Bimodule over an Algebra*, and the corresponding right-handed operator is obtained from the same construction on the opposite algebra. The involution of the elements $\sigma$ and the adjoint belong to the `* Theory` and `* Operator Theory` groups and do not occur here. The article stays inside Part I: no distance, norm, form or limit, and the word *reflection* names an operator of order two. Throughout, $R$ is a commutative ring with $1 \neq 0$, $A$ is a unital associative $R$-algebra with grade involution $\alpha$, $M$ is a graded left $A$-module, $L_a(m)=am$ is the unsigned left multiplication, and $L^{\alpha}_a=L_a\circ\alpha$.
+The article defines the signed left multiplication, relates it to its unsigned sibling, computes the composition of the two families, and determines the elements fixed by a signed left multiplication. The signed two-sided operator itself is treated in *The Signed Two-Sided Operator on a Bimodule over an Algebra*, and the corresponding right-handed operator is obtained from the same construction on the opposite algebra. The involution of the elements $\sigma$ and the adjoint belong to the `* Theory` and `* Operator Theory` groups and do not occur here. The article stays inside Part I: no distance, norm, form or limit, and the word *reflection* names an operator of order two. Throughout, $R$ is a commutative ring with $1 \neq 0$, $A$ is a unital associative $R$-algebra with grade involution $\alpha$, $M$ is a graded left $A$-module, $L_a(m)=am$ is the unsigned left multiplication, and $L^{\alpha}_a=L_a\circ\alpha$.
 
 ## The Signed Left Multiplication
 
@@ -63,7 +63,7 @@ The signed and the unsigned left multiplication of the same element have the sam
 
 ### The four general products
 
-The composition of the signed and the unsigned left multiplications follows the parity of the twist, exactly as for the sandwiches.
+The composition of the signed and the unsigned left multiplications follows the parity of the twist, exactly as for the two-sided operators.
 
 **Theorem.** For all $a,b \in A$,
 
@@ -111,7 +111,7 @@ Consequently $L^{\alpha}_a$ is an involution if and only if $a\alpha(a)$ acts as
 
 *Proof.* $L^{\alpha}_a(L^{\alpha}_a(m))=a\,\alpha(a\alpha(m))=a\,\alpha(a)\,m=L_{a\alpha(a)}(m)$.
 
-The result is the one-sided case of the reflection criterion of the sandwich articles: a signed one-sided operator is an involution exactly when the product $a\alpha(a)$ is absorbed by the annihilator.
+The result is the one-sided case of the reflection criterion of the two-sided operator articles: a signed one-sided operator is an involution exactly when the product $a\alpha(a)$ is absorbed by the annihilator.
 
 ## The Elements Fixed by a Signed Left Multiplication
 

@@ -122,27 +122,27 @@ $$
 $$
 the centre, and the group of pairs modulo the stabiliser is the product of the two projective quaternion groups.
 
-## The Sandwich
+## The Two-Sided Operator
 
-**Four words, four operators, and here the sandwich does not collapse.**
+**Four words, four operators, and here the two-sided operator does not collapse.**
 
 **The four words.** With the four slots of the corpus,
 $$
 T^{\sigma_{1}\sigma_{2}}_{\tilde Q}(\tilde X)=\tilde Q^{\sigma_{1}}\tilde X\tilde Q^{\sigma_{2}},
 $$
-the plain ($\sigma_{1}=\sigma_{2}=1$), quaternionic ($\sigma_{1}=\sigma_{2}=\natural$), Hermitian ($\sigma_{1}=1$, $\sigma_{2}=*$) and Krein ($\sigma_{1}=\natural$, $\sigma_{2}=*$) sandwiches. The four are the four operators the corpus uses, and the model reads them blockwise with the corresponding quaternion operations.
+the plain ($\sigma_{1}=\sigma_{2}=1$), quaternionic ($\sigma_{1}=\sigma_{2}=\natural$), Hermitian ($\sigma_{1}=1$, $\sigma_{2}=*$) and Krein ($\sigma_{1}=\natural$, $\sigma_{2}=*$) two-sided operators. The four are the four operators the corpus uses, and the model reads them blockwise with the corresponding quaternion operations.
 
-**The quaternionic sandwich is conformal.** The main one is
+**The quaternionic two-sided operator is conformal.** The main one is
 $$
 \Phi_{\tilde Q}(\tilde X)=\tilde Q\tilde X\tilde Q^{\natural},
 $$
-and it is blockwise the quaternionic sandwich $x\mapsto uxu^{\natural}$. Since $u^{\natural}u=N(u)$ is a real scalar,
+and it is blockwise the quaternionic two-sided operator $x\mapsto uxu^{\natural}$. Since $u^{\natural}u=N(u)$ is a real scalar,
 $$
 N\bigl(uxu^{\natural}\bigr)=N(u)\,N(x)\,N(u^{\natural})=N(u)^{2}N(x),
 $$
-so the operator is a **conformal** map of the quaternionic norm, with factor $N(u)^{2}$ in each block. This is the analogue of the modulus sandwich of the reduced biquaternion category, and it is strictly richer: there the sandwich was a scalar on each block, whereas here it is a full quaternionic conjugation followed by a scaling, so it rotates as well as scales.
+so the operator is a **conformal** map of the quaternionic norm, with factor $N(u)^{2}$ in each block. This is the analogue of the modulus two-sided operator of the reduced biquaternion category, and it is strictly richer: there the two-sided operator was a scalar on each block, whereas here it is a full quaternionic conjugation followed by a scaling, so it rotates as well as scales.
 
-**The invariant cone.** On the Hermitian subspace $\mathbb{B}_{\Psi}$ the Hermitian sandwich
+**The invariant cone.** On the Hermitian subspace $\mathbb{B}_{\Psi}$ the Hermitian pair
 $$
 \Phi_{\tilde Q}(\tilde X)=\tilde Q\tilde X\tilde Q^{*},\qquad \tilde X^{*}=\tilde X,
 $$
@@ -152,15 +152,15 @@ is again Hermitian, because $(\tilde Q\tilde X\tilde Q^{*})^{*}=\tilde Q\tilde X
 $$
 \{\tilde Q:\tilde Q\tilde X\tilde Q^{*}=\tilde X\ \forall\tilde X\}=\{\pm1,\pm j\},
 $$
-a four-group, because the centraliser is $\mathbb{C}_{\mathrm{spl}}$ and the units of $\mathbb{C}_{\mathrm{spl}}$ are the split-complex units $\{\pm e^{\phi j}\}$, cut down by the condition $Q^{2}=1$ to the four elements. So the kernel of the sandwich map is a four-group and not a torus, and the difference from the reduced biquaternion category, where the kernel was the whole torus $T^{2}$, is that the quaternion blocks have no commuting phases: the phases are noncommutative and the sandwich sees them.
+a four-group, because the centraliser is $\mathbb{C}_{\mathrm{spl}}$ and the units of $\mathbb{C}_{\mathrm{spl}}$ are the split-complex units $\{\pm e^{\phi j}\}$, cut down by the condition $Q^{2}=1$ to the four elements. So the kernel of the two-sided map is a four-group and not a torus, and the difference from the reduced biquaternion category, where the kernel was the whole torus $T^{2}$, is that the quaternion blocks have no commuting phases: the phases are noncommutative and the two-sided operator sees them.
 
-**The plain sandwich.** $x\mapsto \tilde Q\tilde X\tilde Q$ is not conformal in the same sense, since $u^{2}$ is not real, and it is the operator of the plain product and of the functional calculus: its powers give $\tilde Q^{n}\tilde X\tilde Q^{n}$, and its kernel over the family is again the four-group.
+**The plain two-sided operator.** $x\mapsto \tilde Q\tilde X\tilde Q$ is not conformal in the same sense, since $u^{2}$ is not real, and it is the operator of the plain product and of the functional calculus: its powers give $\tilde Q^{n}\tilde X\tilde Q^{n}$, and its kernel over the family is again the four-group.
 
-**The two involution sandwiches.** The bar and the star sandwiches,
+**The two involution two-sided operators.** The bar and the star two-sided operators,
 $$
 \tilde X\longmapsto\tilde Q\tilde X\bar{\tilde Q},\qquad \tilde X\longmapsto\tilde Q\tilde X\tilde Q^{\flat},
 $$
-are the two-sided operators with the second parameter a conjugation. In the model the bar is the swap, so the first is $L_{\tilde Q}R_{\bar{\tilde Q}}$ and the second is $L_{\tilde Q}R_{-\tilde Q^{*}}$: the two are the sandwich with the swapped blocks up to a sign, so the four words reduce to two in this category, one with the conjugations inside the blocks and one with the swap.
+are the two-sided operators with the second parameter a conjugation. In the model the bar is the swap, so the first is $L_{\tilde Q}R_{\bar{\tilde Q}}$ and the second is $L_{\tilde Q}R_{-\tilde Q^{*}}$: the two are the two-sided operator with the swapped blocks up to a sign, so the four words reduce to two in this category, one with the conjugations inside the blocks and one with the swap.
 
 ## The Kronecker Display and the Coefficient Matrix
 
@@ -243,7 +243,7 @@ and the reduced trace is additive over sums of operators while the determinant i
 
 so the compact retract of the isometry group of the category is a product of four three-spheres, in contrast with the torus $T^{2}$ of the reduced biquaternion category and with the single three-sphere of the complex category. The reason is that the quaternionic blocks admit the noncommutative phases, and the phases are the three-spheres.
 
-**The multiplicative pairs.** The pairs $(\tilde Q,\tilde Q^{\natural})$ are those whose operator is a conformal map, by the computation of the sandwich section, and the pairs $(\tilde Q,\tilde Q^{-1})$ are those whose plain operator is the identity composed with the inner automorphism: since the algebra is a product of division rings, the inner automorphism group is $(SU(2)\times SU(2))/\{\pm1\}$ per block, and it is the gauge of the category.
+**The multiplicative pairs.** The pairs $(\tilde Q,\tilde Q^{\natural})$ are those whose operator is a conformal map, by the computation of the two-sided operator section, and the pairs $(\tilde Q,\tilde Q^{-1})$ are those whose plain operator is the identity composed with the inner automorphism: since the algebra is a product of division rings, the inner automorphism group is $(SU(2)\times SU(2))/\{\pm1\}$ per block, and it is the gauge of the category.
 
 **The gauge.** The inner automorphisms of $\mathbb{B}_{\mathrm{spl}}$ are the conjugations by the units, and they act blockwise by the inner automorphisms of $\mathbb{H}$. The quotient by the inner automorphisms is the two-block outer group, and the model realises the inner ones as the pairs $(\tilde Q,\tilde Q^{-1})$. Since $\mathbb{H}$ is a division ring, the inner automorphism group is the whole of the automorphism group, so the outer group is trivial and the gauge is the whole of $SU(2)\times SU(2)$ per block modulo the sign. The difference from the reduced biquaternion category is large: there the algebra is commutative, the inner automorphism group was trivial, and the whole operator family was the multiplicative gauge.
 
@@ -313,7 +313,7 @@ because one index can serve both blocks, and this is why the bound is four and n
 
 ## What the Pair Buys and Does Not
 
-**It buys a genuine bimodule, a genuine cone and a genuine conformal sandwich, and it does not buy a simple algebra, a matrix model, a central trace, an adjugate that is a conjugation, or a length above four.**
+**It buys a genuine bimodule, a genuine cone and a genuine conformal two-sided operator, and it does not buy a simple algebra, a matrix model, a central trace, an adjugate that is a conjugation, or a length above four.**
 
 | question | reduced biquaternion | split biquaternion | biquaternion |
 |---|---|---|---|
@@ -325,9 +325,9 @@ because one index can serve both blocks, and this is why the bound is four and n
 | the determinant | $Q_{+}Q_{-}$ | $N(\tilde Q_{+})N(\tilde Q_{-})$ | a complex number |
 | the adjugate | a conjugation | not a conjugation | a conjugation |
 | the length | $\{0,1\}$ | $\{0,1,2,3,4\}$ | $1,4,7,16$ |
-| the sandwich kernel | the torus $T^{2}$ | the four-group $\{\pm1,\pm j\}$ | a three-sphere |
+| the two-sided operator kernel | the torus $T^{2}$ | the four-group $\{\pm1,\pm j\}$ | a three-sphere |
 
-**What it buys.** A bimodule: the two copies of the algebra are independent, the quaternionic adjoint exchanges them, and the operator theory has both sides. A cone: the two-sided family is not a subspace, so the length is a genuine invariant and the reach is semialgebraic. A conformal sandwich: the quaternionic sandwich is a conformal map with the factor $N(\tilde Q)^{2}$, which the reduced biquaternion sandwich was not. And a positive cone: the Hermitian sandwich preserves the open positive cone of the Hermitian subspace and acts on it as the conformal group of the Minkowski space of signature $(1,3)$.
+**What it buys.** A bimodule: the two copies of the algebra are independent, the quaternionic adjoint exchanges them, and the operator theory has both sides. A cone: the two-sided family is not a subspace, so the length is a genuine invariant and the reach is semialgebraic. A conformal two-sided operator: the quaternionic two-sided operator is a conformal map with the factor $N(\tilde Q)^{2}$, which the reduced biquaternion two-sided operator was not. And a positive cone: the Hermitian pair preserves the open positive cone of the Hermitian subspace and acts on it as the conformal group of the Minkowski space of signature $(1,3)$.
 
 **What it does not buy.** A simple algebra: the algebra is a product, the model is a subspace, and the off-diagonal corners are structurally empty. A central trace: the trace is a quaternion and only the reduced trace is invariant. An adjugate that is a conjugation: the determinant is a product of two norms and the cofactors cross. A length above four: the two blocks share the index. And a matrix model: the algebra is not isomorphic to any full matrix algebra, and the diagonal model is the best there is.
 
@@ -340,7 +340,7 @@ because one index can serve both blocks, and this is why the bound is four and n
 3. The three adjoints: the plain form exchanges the two copies, $L_{\tilde Q}^{*}=R_{\tilde Q}$; the quaternionic and the Hermitian forms keep the sides and conjugate the parameter, $L_{\tilde Q}^{*}=L_{\tilde Q^{\natural}}$ and $L_{\tilde Q}^{*}=L_{\tilde Q^{*}}$.
 4. The two-sided operators are blockwise, compose with the order reversed in the second slot, have a two-dimensional central stabiliser, and reach a fourteen-dimensional product of two quaternionic cones inside a thirty-two-dimensional span.
 5. The zero operator is attained by nonzero pairs, and the pairs that attain it are the four combinations of the two idempotents with the two idempotents.
-6. The sandwich is genuine here: the quaternionic sandwich is conformal with factor $N(\tilde Q)^{2}$, its kernel is the four-group $\{\pm1,\pm j\}$, and on the Hermitian subspace it acts on the positive cone as the conformal group of the Minkowski space of signature $(1,3)$.
+6. The two-sided operator is genuine here: the quaternionic two-sided operator is conformal with factor $N(\tilde Q)^{2}$, its kernel is the four-group $\{\pm1,\pm j\}$, and on the Hermitian subspace it acts on the positive cone as the conformal group of the Minkowski space of signature $(1,3)$.
 7. The Kronecker display is the direct sum of two $16\times16$ real blocks, with rank in $\{0,16,32\}$, trace $16$ times the sum of the two block products of scalar parts, and determinant the fourth powers of the two products of norms.
 8. The coefficient array is block diagonal in the split index, each block is a $4\times4$ real array, and the criterion is the blockwise rank-one test.
 9. The length is at most four and the value is the maximum of the two block lengths, because one index serves both blocks; the identity of the ambient, the swap, is not in the span.
@@ -356,9 +356,9 @@ because one index can serve both blocks, and this is why the bound is four and n
 | $\mathsf K=\mathsf K_{+}\oplus\mathsf K_{-}$ | the Kronecker display, two $16\times16$ real blocks | this article |
 | $c$ | the coefficient array, block diagonal in the split index | this article |
 | $\ell(M)$ | the length, at most four | this article |
-| $\Phi_{\tilde Q}(\tilde X)=\tilde Q\tilde X\tilde Q^{\natural}$ | the quaternionic sandwich, conformal | this article |
+| $\Phi_{\tilde Q}(\tilde X)=\tilde Q\tilde X\tilde Q^{\natural}$ | the quaternionic two-sided operator, conformal | this article |
 | $N(u)=uu^{\natural}$ | the quaternion norm | *$M_{2}(\mathbb{H})$ Diagonal Representation* |
-| $\{\pm1,\pm j\}$ | the kernel of the sandwich | this article |
+| $\{\pm1,\pm j\}$ | the kernel of the two-sided operator | this article |
 | $\mathbb{B}_{\Psi}$ | the Hermitian subspace, the Minkowski space of signature $(1,3)$ | *Split-Biquaternion Algebra* |
 
 ## Further Reading

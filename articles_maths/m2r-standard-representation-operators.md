@@ -108,7 +108,7 @@ $$
 
 the identity component of the Lorentz group in $2+1$ dimensions. This is the operator form of the statement of the general article that the automorphisms of the algebra are inner: the inner automorphisms act on the algebra as the conjugations, and the conjugations are exactly the two-sided operators with $B=A^{-1}$.
 
-**The sandwich.** The case $B=A$ gives $X\mapsto AXA$, which is not a conjugation and whose determinant is $\det(A)^{4}$, a fourth power. The two sandwiches $L_{A}R_{A^{-1}}$ and $L_{A}R_{A}$ differ by the conjugation composed with the left multiplication by $A^{2}$, and only the first is a group action.
+**The two-sided operator.** The case $B=A$ gives $X\mapsto AXA$, which is not a conjugation and whose determinant is $\det(A)^{4}$, a fourth power. The two such operators $L_{A}R_{A^{-1}}$ and $L_{A}R_{A}$ differ by the conjugation composed with the left multiplication by $A^{2}$, and only the first is a group action.
 
 ## The Kronecker Display
 
@@ -175,7 +175,7 @@ $$
 
 of dimension seven, where the quotient is by the simultaneous scaling $(\lambda,\lambda^{-1})$.
 
-**The automorphisms.** The inner automorphisms of the algebra appear as the products $L_{A}R_{A^{-1}}$, and they form the subgroup $\mathrm{PGL}_2(\mathbb{R})$ of the group above, of dimension three. So the semigroup contains two distinguished subgroups: the full seven-dimensional group of the products of units, and the three-dimensional group of the conjugations. The four dimensions between them are the sandwiches $L_{A}R_{B}$ with $AB\neq I$.
+**The automorphisms.** The inner automorphisms of the algebra appear as the products $L_{A}R_{A^{-1}}$, and they form the subgroup $\mathrm{PGL}_2(\mathbb{R})$ of the group above, of dimension three. So the semigroup contains two distinguished subgroups: the full seven-dimensional group of the products of units, and the three-dimensional group of the conjugations. The four dimensions between them are the two-sided operators $L_{A}R_{B}$ with $AB\neq I$.
 
 **The matrix units.** The sixteen basis operators $L_{e_\mu}R_{e_\nu}$ are the matrix units of the ambient under the tensor identification, and the four corners of the Peirce decomposition give four of them. The algebra is a full matrix algebra and the semigroup carries a complete system of such units; the quaternion and split-biquaternion categories do not, which is the structural difference that their operators articles have to state.
 

@@ -5,9 +5,9 @@
 
 A Clifford algebra with a positive involution is a finite-dimensional $C^{*}$-algebra, and on such an algebra the maps that preserve the order are classified. The classification is **Choi's theorem**, and its two consequences are the Kraus form of a completely positive map and the statement that the automorphisms of a full matrix algebra are inner. Both consequences have a direct reading in the Clifford language, and that reading is the content of this article.
 
-The first reading is that the **Hermitian sandwich is a completely positive map**. For a fixed element $x$ the operator $\mathrm{Sd}_x(y) = x\,y\,x^{\dagger}$ is the elementary completely positive map of Kraus rank one, and it is therefore positive in the strongest sense: its amplification to matrices over the algebra is positive too. It is unital exactly on the unitary slice, and it is a unital algebra automorphism exactly there; so the unitary slice is the group of completely positive maps of the sandwich shape that are automorphisms, and the automorphisms of the Clifford algebra are the inner ones together with the anti-automorphisms induced by reversion and Clifford conjugation.
+The first reading is that the **Hermitian pair is a completely positive map**. For a fixed element $x$ the operator $\mathrm{Sd}_x(y) = x\,y\,x^{\dagger}$ is the elementary completely positive map of Kraus rank one, and it is therefore positive in the strongest sense: its amplification to matrices over the algebra is positive too. It is unital exactly on the unitary slice, and it is a unital algebra automorphism exactly there; so the unitary slice is the group of completely positive maps of the two-sided operator shape that are automorphisms, and the automorphisms of the Clifford algebra are the inner ones together with the anti-automorphisms induced by reversion and Clifford conjugation.
 
-The second reading is that this gives the algebraic model of a **quantum channel** with a Clifford structure: a completely positive, trace-preserving map on the algebra, its Kraus operators, and the unitary slice as the group of unitary channels. The positivity of the involution is *Positivity and the Hermitian Cone of a Hermitian Algebra with Hermitian Adjoint*; the slice is *The Unitary Slice and the Compact Real Form with Hermitian Adjoint*; the operator whose complete positivity is at stake is *The Hermitian Sandwich on a Hermitian Algebra with Hermitian Adjoint*; the antiautomorphisms induced by reversion and Clifford conjugation are *Hilbert Algebras*; and the general theory of operator algebras is *Operator Algebras* and *K-Theory of Operator Algebras*.
+The second reading is that this gives the algebraic model of a **quantum channel** with a Clifford structure: a completely positive, trace-preserving map on the algebra, its Kraus operators, and the unitary slice as the group of unitary channels. The positivity of the involution is *Positivity and the Hermitian Cone of a Hermitian Algebra with Hermitian Adjoint*; the slice is *The Unitary Slice and the Compact Real Form with Hermitian Adjoint*; the operator whose complete positivity is at stake is *The Hermitian Pair of Operators on a Hermitian Algebra with Hermitian Adjoint*; the antiautomorphisms induced by reversion and Clifford conjugation are *Hilbert Algebras*; and the general theory of operator algebras is *Operator Algebras* and *K-Theory of Operator Algebras*.
 
 Positivity of the involution is assumed in this article. For a Clifford algebra over a definite real form the algebra is a full matrix algebra over $\mathbb{R}$, $\mathbb{C}$ or $\mathbb{H}$ according to the parity of $n$; the completely positive theory is stated in the complexified case $\mathrm{Cl}_{0,n}\otimes_{\mathbb{R}}\mathbb{C}\cong M_{2^{m}}(\mathbb{C})$, where it is the classical theorem, and the real and quaternionic cases are flagged in the summary.
 
@@ -15,7 +15,7 @@ Positivity of the involution is assumed in this article. For a Clifford algebra 
 
 **Definition.** Let $A$ be a finite-dimensional $C^{*}$-algebra with involution ${}^{\dagger}$ and let $\Lambda : A \to A$ be linear. For $k \ge 1$ let $A\otimes M_k$ carry the involution $(a_{ij})^{\dagger} = (a_{ji}^{\dagger})$ and let $\Lambda_k = \Lambda\otimes\mathrm{id}_k$ act entrywise. The map $\Lambda$ is **positive** if $\Lambda(a^{\dagger}a) \in P$ for every $a$, and **completely positive** if $\Lambda_k$ is positive for every $k$.
 
-**Theorem (the sandwich is completely positive).** For every $x \in \mathrm{Cl}(V,\mathfrak{Q})$ the map
+**Theorem (the two-sided operator is completely positive).** For every $x \in \mathrm{Cl}(V,\mathfrak{Q})$ the map
 
 $$
 \boxed{\;\mathrm{Sd}_x(y) = x\,y\,x^{\dagger}\;}
@@ -61,17 +61,17 @@ $$
 
 of minimal length $R = \operatorname{rank}C_{\Lambda}$, and $\Lambda$ is unital exactly when $\sum_r V_rV_r^{\dagger} = 1$.
 
-**Corollary (the Clifford reading).** Under the identification $\mathrm{Cl}_{0,n}\otimes\mathbb{C}\cong M_{2^{m}}(\mathbb{C})$, the sandwich $\mathrm{Sd}_x$ is the completely positive map with Choi matrix of rank one and a single Kraus operator $V = x$, and its complete positivity is the $R=1$ case of the theorem. Every completely positive map of the algebra is a sum of such sandwiches, and every **unital** completely positive map is a sum $\sum_r\mathrm{Sd}_{x_r}$ with $\sum_r x_rx_r^{\dagger} = 1$, the **mixed unitary channels** being the case in which each $x_r$ is unitary.
+**Corollary (the Clifford reading).** Under the identification $\mathrm{Cl}_{0,n}\otimes\mathbb{C}\cong M_{2^{m}}(\mathbb{C})$, the two-sided operator $\mathrm{Sd}_x$ is the completely positive map with Choi matrix of rank one and a single Kraus operator $V = x$, and its complete positivity is the $R=1$ case of the theorem. Every completely positive map of the algebra is a sum of such two-sided operators, and every **unital** completely positive map is a sum $\sum_r\mathrm{Sd}_{x_r}$ with $\sum_r x_rx_r^{\dagger} = 1$, the **mixed unitary channels** being the case in which each $x_r$ is unitary.
 
 **Proof.** The Kraus form is the theorem; substituting $R=1$, $V = x$ gives $\mathrm{Sd}_x$, and the unitality condition $\sum_rV_rV_r^{\dagger}=1$ is $\sum_rx_rx_r^{\dagger}=1$.
 
-**Remark (Stinespring).** Equivalently, a completely positive map on the algebra is the compression of a representation on a larger Hilbert space, $\Lambda(y) = P\,\pi(y)\,P$ with $P$ a projection; for the sandwich, $\pi$ is the representation on the tensor product with the Kraus space and $P$ the projection onto the range of $x$. The two descriptions are the same statement in two languages, and the one used in the corpus is the Kraus form.
+**Remark (Stinespring).** Equivalently, a completely positive map on the algebra is the compression of a representation on a larger Hilbert space, $\Lambda(y) = P\,\pi(y)\,P$ with $P$ a projection; for the two-sided operator, $\pi$ is the representation on the tensor product with the Kraus space and $P$ the projection onto the range of $x$. The two descriptions are the same statement in two languages, and the one used in the corpus is the Kraus form.
 
 ## Channels with a Clifford Structure
 
 **Definition.** A **Clifford channel** of the algebra is a completely positive, trace-preserving map $\Lambda$ with respect to the trace form $T(x,y) = \operatorname{Tr}(m_{xy})$ of *The Blade Form and the Hermitian Structure with Hermitian Adjoint*.
 
-**Proposition.** The sandwich $\mathrm{Sd}_x$ preserves the trace functional $\mathrm{Sc}$ exactly when $x \in U$:
+**Proposition.** The two-sided operator $\mathrm{Sd}_x$ preserves the trace functional $\mathrm{Sc}$ exactly when $x \in U$:
 
 $$
 \mathrm{Sc}\bigl(\mathrm{Sd}_x(y)\bigr) = \mathrm{Sc}(y) \ \text{ for all } y \iff x \in U .
@@ -79,13 +79,13 @@ $$
 
 **Proof.** By cyclicity of the scalar part, $\mathrm{Sc}(xyx^{\dagger}) = \mathrm{Sc}(y\,x^{\dagger}x)$, so the condition is $\mathrm{Sc}\bigl(y\,(x^{\dagger}x)\bigr) = \mathrm{Sc}(y)$ for all $y$. Since $x^{\dagger}x = 1$ for $x \in U$ this is satisfied, and conversely the trace form $T(y,z) = 2^{n}\mathrm{Sc}(yz)$ of *The Blade Form and the Hermitian Structure with Hermitian Adjoint* is non-degenerate, so the vanishing of $\mathrm{Sc}\bigl(y(x^{\dagger}x-1)\bigr)$ for all $y$ forces $x^{\dagger}x = 1$.
 
-**Corollary.** A sandwich is trace-preserving exactly when it is unital, and then it is the unitary channel $\mathrm{Ad}_x$; the trace form is invariant under the automorphisms $\mathrm{Ad}_x$, $x \in U$, because $T(xyx^{-1}, xzx^{-1}) = \operatorname{Tr}(m_ym_z) = T(y,z)$ by cyclicity of the trace.
+**Corollary.** A two-sided operator is trace-preserving exactly when it is unital, and then it is the unitary channel $\mathrm{Ad}_x$; the trace form is invariant under the automorphisms $\mathrm{Ad}_x$, $x \in U$, because $T(xyx^{-1}, xzx^{-1}) = \operatorname{Tr}(m_ym_z) = T(y,z)$ by cyclicity of the trace.
 
 **Remark.** The statement is the trace-preservation condition, and it is the same as the unitarity condition because the trace and the involution are compatible when the involution is positive. The channels of the algebra are thus the completely positive maps whose Kraus operators have $\sum_rx_rx_r^{\dagger} = \sum_rx_r^{\dagger}x_r = 1$; the unitary slice is the group of invertible channels, and the non-invertible ones have Kraus rank larger than one.
 
 ## The Biquaternion Instance
 
-The biquaternion algebra is the case $d=2$: $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}\cong M_2(\mathbb{C})$, with the Hermitian conjugation ${}^{*}$ and the matrix model $\mathsf{M}_2$. A completely positive map of $\mathbb{B}$ has a $4\times4$ Choi matrix, and its Kraus form has $r=\operatorname{rank}C_{\Lambda}\le d^{2}=4$ terms; the maps of $\mathbb{B}$ are therefore the general maps of this article, and the sandwich $\mathrm{Sd}_{\tilde{Q}}$ of an element is the rank-one case.
+The biquaternion algebra is the case $d=2$: $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}\cong M_2(\mathbb{C})$, with the Hermitian conjugation ${}^{*}$ and the matrix model $\mathsf{M}_2$. A completely positive map of $\mathbb{B}$ has a $4\times4$ Choi matrix, and its Kraus form has $r=\operatorname{rank}C_{\Lambda}\le d^{2}=4$ terms; the maps of $\mathbb{B}$ are therefore the general maps of this article, and the two-sided operator $\mathrm{Sd}_{\tilde{Q}}$ of an element is the rank-one case.
 
 **The diagonal projection.** Let
 
@@ -101,7 +101,7 @@ $$
 
 the projection onto the diagonal. Its Choi matrix is the sum of two rank-one positive matrices and has rank two; the map is unital and trace preserving, completely positive, and not an automorphism. Its image is the diagonal subalgebra $\mathbb{C}e_t\oplus\mathbb{C}(i\vec e_z)$ in the chosen basis, of complex dimension two; the Hermitian part of that subalgebra is the real span of $e_t$ and $i\vec e_z$, of real dimension two, inside the four-dimensional Hermitian sector $\mathbb{B}_{\Psi}=\{\tilde Q:\tilde Q^{*}=\tilde Q\}$.
 
-**The null sandwich.** Let $\tilde Q_1=e_t+i\vec e_z$; then $\mathsf{M}_2(\tilde Q_1)=\operatorname{diag}(2,0)$, $\tilde Q_1=\tilde Q_1^{*}$, and $\tilde Q_1^{2}=2\tilde Q_1$. The sandwich $\mathrm{Sd}_{\tilde Q_1}$ has Kraus rank one, but
+**The null two-sided operator.** Let $\tilde Q_1=e_t+i\vec e_z$; then $\mathsf{M}_2(\tilde Q_1)=\operatorname{diag}(2,0)$, $\tilde Q_1=\tilde Q_1^{*}$, and $\tilde Q_1^{2}=2\tilde Q_1$. The two-sided operator $\mathrm{Sd}_{\tilde Q_1}$ has Kraus rank one, but
 
 $$
 \mathrm{Sd}_{\tilde Q_1}(e_t)=\tilde Q_1^{2}=2\tilde Q_1=\operatorname{diag}(4,0),
@@ -111,14 +111,14 @@ whose trace is $4$, not the trace $2$ of $e_t$: the map is neither unital nor tr
 
 ## Summary
 
-When the dagger is a positive involution, the Clifford algebra is a finite-dimensional $C^{*}$-algebra and the **Hermitian sandwich** $\mathrm{Sd}_x(y) = xyx^{\dagger}$ is a **completely positive** map of Kraus rank one, with the single Kraus operator $V=x$. It is positive in the strongest sense: the amplified map $\mathrm{Sd}_x\otimes\mathrm{id}_k$ sends $(z^{\dagger}z)$ to $\bigl(z(x\otimes1)^{\dagger}\bigr)^{\dagger}\bigl(z(x\otimes1)^{\dagger}\bigr)$, a square in the amplified algebra. It is unital if and only if $x$ lies in the **unitary slice**, and it is a unital algebra automorphism exactly there, where it becomes the inner automorphism $\mathrm{Ad}_x$; so the unitary slice is the group of complete-positivity maps of the sandwich shape that are automorphisms, and the automorphism group of the complexified algebra is generated by the inner ones together with the transposition induced by reversion or Clifford conjugation. Choi's theorem with its Choi matrix and Kraus form gives the general completely positive map as a sum $\sum_r\mathrm{Sd}_{x_r}$, unital exactly when $\sum_rx_rx_r^{\dagger}=1$, and the trace-preserving case is the Clifford channel; the unitary channels are exactly the sandwiches of the unitary slice. In the biquaternion instance, the case $d=2$, the Kraus length is at most four, the diagonal projection is a unital and trace-preserving completely positive map that is not an automorphism, and the null sandwich is a rank-one completely positive map that is neither unital nor trace preserving.
+When the dagger is a positive involution, the Clifford algebra is a finite-dimensional $C^{*}$-algebra and the **Hermitian pair** $\mathrm{Sd}_x(y) = xyx^{\dagger}$ is a **completely positive** map of Kraus rank one, with the single Kraus operator $V=x$. It is positive in the strongest sense: the amplified map $\mathrm{Sd}_x\otimes\mathrm{id}_k$ sends $(z^{\dagger}z)$ to $\bigl(z(x\otimes1)^{\dagger}\bigr)^{\dagger}\bigl(z(x\otimes1)^{\dagger}\bigr)$, a square in the amplified algebra. It is unital if and only if $x$ lies in the **unitary slice**, and it is a unital algebra automorphism exactly there, where it becomes the inner automorphism $\mathrm{Ad}_x$; so the unitary slice is the group of complete-positivity maps of the two-sided operator shape that are automorphisms, and the automorphism group of the complexified algebra is generated by the inner ones together with the transposition induced by reversion or Clifford conjugation. Choi's theorem with its Choi matrix and Kraus form gives the general completely positive map as a sum $\sum_r\mathrm{Sd}_{x_r}$, unital exactly when $\sum_rx_rx_r^{\dagger}=1$, and the trace-preserving case is the Clifford channel; the unitary channels are exactly the two-sided operators of the unitary slice. In the biquaternion instance, the case $d=2$, the Kraus length is at most four, the diagonal projection is a unital and trace-preserving completely positive map that is not an automorphism, and the null two-sided operator is a rank-one completely positive map that is neither unital nor trace preserving.
 
 ## Summary of Notation
 
 | Symbol | Meaning |
 |---|---|
 | $\Lambda_k = \Lambda\otimes\mathrm{id}_k$ | Amplification of a map to $A\otimes M_k$ |
-| $\mathrm{Sd}_x(y) = xyx^{\dagger}$ | Sandwich, completely positive of Kraus rank one |
+| $\mathrm{Sd}_x(y) = xyx^{\dagger}$ | Two-Sided Operator, completely positive of Kraus rank one |
 | $V_r$ | Kraus operators, $\Lambda(y)=\sum_rV_ryV_r^{\dagger}$ |
 | $C_{\Lambda}$ | Choi matrix, $\sum_{ij}E_{ij}\otimes\Lambda(E_{ij})$ |
 | $U$ | Unitary slice, group of unitary channels |

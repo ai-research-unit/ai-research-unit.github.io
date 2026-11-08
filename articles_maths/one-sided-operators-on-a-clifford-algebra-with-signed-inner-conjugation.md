@@ -2,7 +2,7 @@
 
 ## Introduction
 
-Every two-sided operator of *Two-Sided Operators on a Clifford Algebra* is the product of a left multiplication and a right multiplication, and the signed inner conjugation of *Two-Sided Operators on a Clifford Algebra with Signed Inner Conjugation* is the product of two such factors:
+Every two-sided operator of *The Family of Two-Sided Operators on a Clifford Algebra* is the product of a left multiplication and a right multiplication, and the signed inner conjugation of *Two-Sided Operators on a Clifford Algebra with Signed Inner Conjugation* is the product of two such factors:
 
 $$
 \mathrm{Ad}^{\alpha}_x=\Lambda^{\alpha}_x\circ R_{x^{-1}},\qquad \Lambda^{\alpha}_x(y)=\alpha(x)\,y,\qquad R_{x^{-1}}(y)=y\,x^{-1}.
@@ -12,7 +12,7 @@ The **signed left multiplication** $\Lambda^{\alpha}_x$ is the one-sided operato
 
 Two facts organise the account. The first is that the minus is entirely in the left factor: the right factor $R_{x^{-1}}$ is the inverse right multiplication, which is common to the inner conjugation and to the signed inner conjugation, and it is the substitution $L_x\mapsto\Lambda^{\alpha}_x$ that turns the product $L_xR_{x^{-1}}$ into $\Lambda^{\alpha}_xR_{x^{-1}}$, that is, $\mathrm{Ad}_x$ into $\mathrm{Ad}^{\alpha}_x$. The second is that a one-sided operator does not preserve the space of vectors, so the sign cannot be detected one-sidedly: no left multiplication and no right multiplication carries $V$ into itself except the scalars, and it is the product of two factors that acts on $V$ by an isometry. The signed left multiplication is therefore not a geometric transformation on its own; it is half of one, and the half that decides the sign.
 
-The general theory of the two one-sided families — their definitions, their composition laws, the anti-multiplicativity of the plain right multiplication, their mutual commutants, their kernels and their images — is *One-Sided Operators on a Clifford Algebra*, and nothing of it is re-derived here. The two-sided family and the inverse members are *Two-Sided Operators on a Clifford Algebra*; the signed member is *Two-Sided Operators on a Clifford Algebra with Signed Inner Conjugation*; the groups are *The Clifford, Pin and Spin Groups with Signed Inner Conjugation*; and the action of the pair on a Clifford module is *Pin Representations and Clifford Modules with Signed Inner Conjugation*. The base is a field $F$ of characteristic not $2$, with $q$ a non-degenerate quadratic form on the finite-dimensional space $V$ and $B$ its polar form.
+The general theory of the two one-sided families — their definitions, their composition laws, the anti-multiplicativity of the plain right multiplication, their mutual commutants, their kernels and their images — is *One-Sided Operators on a Clifford Algebra*, and nothing of it is re-derived here. The two-sided family and the inverse members are *The Family of Two-Sided Operators on a Clifford Algebra*; the signed member is *Two-Sided Operators on a Clifford Algebra with Signed Inner Conjugation*; the groups are *The Clifford, Pin and Spin Groups with Signed Inner Conjugation*; and the action of the pair on a Clifford module is *Pin Representations and Clifford Modules with Signed Inner Conjugation*. The base is a field $F$ of characteristic not $2$, with $q$ a non-degenerate quadratic form on the finite-dimensional space $V$ and $B$ its polar form.
 
 ## The Signed Left Multiplication
 
@@ -143,7 +143,7 @@ $$
 L_xR_{x^{-1}}=\mathrm{Ad}_x,\qquad \Lambda^{\alpha}_xR_{x^{-1}}=\mathrm{Ad}^{\alpha}_x,\qquad \Lambda^{\alpha}_x=\varepsilon_xL_x,\qquad \mathrm{Ad}^{\alpha}_x=\varepsilon_x\mathrm{Ad}_x ,
 $$
 
-with $\varepsilon_x=(-1)^{k}$ the parity sign, so the entire difference between the two two-sided operators sits in the left factor. The signed left multiplication is the conjugate of the plain one by the grade involution, $\Lambda^{\alpha}_x=\alpha L_x\alpha$; it agrees with $L_x$ on the even part and is $-L_x$ on the odd part; it is defined for every $x$, unlike the right factor; its value at the unit is $\alpha(x)$; it preserves the parity for even $x$ and interchanges the two parts for odd $x$; and its kernel and image are those of $L_x$, because it differs from $L_x$ by an invertible scalar.
+with $\varepsilon_x=(-1)^{k}$ the parity sign, so the entire difference between the two such operators sits in the left factor. The signed left multiplication is the conjugate of the plain one by the grade involution, $\Lambda^{\alpha}_x=\alpha L_x\alpha$; it agrees with $L_x$ on the even part and is $-L_x$ on the odd part; it is defined for every $x$, unlike the right factor; its value at the unit is $\alpha(x)$; it preserves the parity for even $x$ and interchanges the two parts for odd $x$; and its kernel and image are those of $L_x$, because it differs from $L_x$ by an invertible scalar.
 
 The sign is visible only in the pairing and only on the quadratic space. For a vector $a$, $\Lambda^{\alpha}_uR_{a^{-1}}(v)=\rho_a(v)$ while $L_uR_{a^{-1}}(v)=-\rho_a(v)$, so the signed left multiplication is exactly what turns the negative of the reflection into the reflection; no one-sided operator preserves $V$, so the minus has no one-sided manifestation there, and on a module it appears instead as the parity of the operator.
 
@@ -165,8 +165,8 @@ The sign is visible only in the pairing and only on the quadratic space. For a v
 
 ## Further Reading
 
-- Ian R. Porteous, *Clifford Algebras and the Classical Groups*, Cambridge Studies in Advanced Mathematics 50 (Cambridge University Press, 1995), for the left and right regular representations and the sandwich as a product of two one-sided multiplications.
-- Pertti Lounesto, *Clifford Algebras and Spinors* (Cambridge University Press, 2nd ed. 2001), for the two-sided sandwich, the reflection formula and the sign carried by a vector.
+- Ian R. Porteous, *Clifford Algebras and the Classical Groups*, Cambridge Studies in Advanced Mathematics 50 (Cambridge University Press, 1995), for the left and right regular representations and the two-sided operator as a product of two one-sided multiplications.
+- Pertti Lounesto, *Clifford Algebras and Spinors* (Cambridge University Press, 2nd ed. 2001), for the two-sided operator, the reflection formula and the sign carried by a vector.
 - H. Blaine Lawson and Marie-Louise Michelsohn, *Spin Geometry* (Princeton University Press, 1989), for the Clifford action on a module, which is one-sided by construction, and its relation to the action on the quadratic space.
 - Richard S. Pierce, *Associative Algebras*, Graduate Texts in Mathematics 88 (Springer, 1982), for the left and right regular representations, their kernels as annihilators and their images as ideals.
 - Nathan Jacobson, *Structure of Rings*, American Mathematical Society Colloquium Publications 37 (American Mathematical Society, 1956), for the double centraliser theorem on the regular bimodule.

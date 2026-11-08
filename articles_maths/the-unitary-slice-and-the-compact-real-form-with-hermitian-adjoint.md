@@ -3,11 +3,11 @@
 
 ## Introduction
 
-The dagger is defined on every element of the algebra, but it is an inverse only on the elements that satisfy $x^{\dagger}x = 1$. Those elements are the **unitary slice** $U$, and the slice is where the involutive theory and the orthogonal theory meet: on it the Hermitian sandwich is the inner conjugation, the dagger is the inverse, and the operator family of *Two-Sided Operators on a Clifford Algebra* closes on itself. The slice is also the object that makes the involutive base visible in the group theory, because its shape records the signature: for the identity involution it is the Pin group, and for a definite form over $\mathbb{C}$ or $\mathbb{H}$ it is a compact unitary group.
+The dagger is defined on every element of the algebra, but it is an inverse only on the elements that satisfy $x^{\dagger}x = 1$. Those elements are the **unitary slice** $U$, and the slice is where the involutive theory and the orthogonal theory meet: on it the Hermitian pair is the inner conjugation, the dagger is the inverse, and the operator family of *The Family of Two-Sided Operators on a Clifford Algebra* closes on itself. The slice is also the object that makes the involutive base visible in the group theory, because its shape records the signature: for the identity involution it is the Pin group, and for a definite form over $\mathbb{C}$ or $\mathbb{H}$ it is a compact unitary group.
 
 This article treats the slice as a group, as the isometry group of the Hermitian form, as the image of the exponential of the skew part, and as a compact real form of the group of units. The two structural results are that $U$ is a compact subgroup whenever the dagger is a positive involution, because $x^{\dagger}x = 1$ forces the Euclidean norm to be $1$, so the slice lies in the unit sphere; and that the group of units is the product $U\cdot\exp(\mathrm{Herm})$ of the slice with the exponential of the self-adjoint part, which is the Cartan decomposition of the polar decomposition of the previous article.
 
-The forms are *Hermitian Forms on a Hermitian Algebra with Hermitian Adjoint*; the scalar forms and the Euclidean norm are *The Blade Form and the Hermitian Structure with Hermitian Adjoint*; positivity and the cone are *Positivity and the Hermitian Cone of a Hermitian Algebra with Hermitian Adjoint*; the operator on the algebra whose slice this is is *The Hermitian Sandwich on a Hermitian Algebra with Hermitian Adjoint*; the unitary group as a classical group is *The Unitary and Symplectic Groups*; the compactness of the group of units of a complex Clifford algebra is the case of *The Clifford, Pin and Spin Groups with Signed Inner Conjugation* in the definite real case; and the biquaternion example, where the slice is $\mathrm{U}(2)$ with determinant-one part $\mathrm{Spin}(3)$, is *The Hermitian Sandwich in the Biquaternion Algebra with Hermitian Adjoint*.
+The forms are *Hermitian Forms on a Hermitian Algebra with Hermitian Adjoint*; the scalar forms and the Euclidean norm are *The Blade Form and the Hermitian Structure with Hermitian Adjoint*; positivity and the cone are *Positivity and the Hermitian Cone of a Hermitian Algebra with Hermitian Adjoint*; the operator on the algebra whose slice this is is *The Hermitian Pair of Operators on a Hermitian Algebra with Hermitian Adjoint*; the unitary group as a classical group is *The Unitary and Symplectic Groups*; the compactness of the group of units of a complex Clifford algebra is the case of *The Clifford, Pin and Spin Groups with Signed Inner Conjugation* in the definite real case; and the biquaternion example, where the slice is $\mathrm{U}(2)$ with determinant-one part $\mathrm{Spin}(3)$, is *The Hermitian Pair in the Biquaternion Algebra with Hermitian Adjoint*.
 
 ## The Unitary Slice
 
@@ -27,13 +27,13 @@ $$
 
 so $U$ is closed under multiplication; it contains $1$; and if $x \in U$ then $(x^{\dagger})^{\dagger}x^{\dagger} = xx^{\dagger} = 1$, so $x^{\dagger} = x^{-1} \in U$.
 
-**Corollary (the two theories meet).** On $U$ the Hermitian sandwich is the inner conjugation,
+**Corollary (the two theories meet).** On $U$ the Hermitian pair is the inner conjugation,
 
 $$
 x \in U \ \Longrightarrow \ \mathrm{Sd}_x(y) = x\,y\,x^{-1} = \mathrm{Ad}^{\alpha}_x(y) \text{ for even } x ,
 $$
 
-so the operator of *The Hermitian Sandwich on a Hermitian Algebra with Hermitian Adjoint* restricts on the slice to the inverse sandwich of *The Clifford, Pin and Spin Groups with Signed Inner Conjugation*.
+so the operator of *The Hermitian Pair of Operators on a Hermitian Algebra with Hermitian Adjoint* restricts on the slice to the inverse two-sided operator of *The Clifford, Pin and Spin Groups with Signed Inner Conjugation*.
 
 **Theorem (the slice is the isometry group).** $U$ is exactly the group of isometries of the Hermitian form $h_{\dagger}(x,y) = x^{\dagger}y$:
 
@@ -121,7 +121,7 @@ $$
 
 which defines a compact real surface in $\mathbb{C}^{2}$; the algebra is commutative, so $U$ is an abelian compact connected Lie group of dimension two, that is $U \cong \mathrm{U}(1)\times \mathrm{U}(1)$, the compact real form of $\mathbb{C}^{\times}\times\mathbb{C}^{\times}$. In the identification with $\mathbb{C}\oplus\mathbb{C}$ the dagger is $(z,w)^{\dagger} = (\bar z,\bar w)$ and $U = \{(z,w) : |z| = |w| = 1\}$, which is the same torus.
 
-**Remark (the general complex case).** In dimension $n$ the slice $U$ is the unitary group of the Hermitian form $h_{\dagger}$ restricted to the spinor module; the biquaternion algebra $\mathbb{B}\cong\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}\cong M_2(\mathbb{C})$ gives $\mathrm{U}(2)$ and its determinant-one part $SU(2)\cong\mathrm{Spin}(3)$, the example carried through in *The Hermitian Sandwich in the Biquaternion Algebra with Hermitian Adjoint*. The identification of $U$ with a classical unitary group in each signature is the subject of *The Unitary and Symplectic Groups*, and this article only fixes the slice, the compactness and the Cartan structure.
+**Remark (the general complex case).** In dimension $n$ the slice $U$ is the unitary group of the Hermitian form $h_{\dagger}$ restricted to the spinor module; the biquaternion algebra $\mathbb{B}\cong\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}\cong M_2(\mathbb{C})$ gives $\mathrm{U}(2)$ and its determinant-one part $SU(2)\cong\mathrm{Spin}(3)$, the example carried through in *The Hermitian Pair in the Biquaternion Algebra with Hermitian Adjoint*. The identification of $U$ with a classical unitary group in each signature is the subject of *The Unitary and Symplectic Groups*, and this article only fixes the slice, the compactness and the Cartan structure.
 
 ### The Orthogonal and the Unitary Geometry
 
@@ -137,7 +137,7 @@ so the involution $\sigma$ acts on such an $x$ as the scalar $\sigma(N(x))$, and
 
 ## Summary
 
-The **unitary slice** $U = \{x : x^{\dagger}x = 1\}$ is a subgroup of the group of units on which the dagger is the inverse, and it is exactly the isometry group of the Hermitian form $h_{\dagger}(x,y) = x^{\dagger}y$. On it the Hermitian sandwich is the inner conjugation, so the Hermitian and the inverse sandwich agree on the slice and the two theories meet there. For the identity involution $U = \{x : N(x) = 1\} = \mathrm{Pin}(V,\mathfrak{Q})$, so the slice recovers the classical spin group; for a nontrivial involution it is larger and acts as a group of operators on the algebra and its modules without adding isometries of the quadratic space.
+The **unitary slice** $U = \{x : x^{\dagger}x = 1\}$ is a subgroup of the group of units on which the dagger is the inverse, and it is exactly the isometry group of the Hermitian form $h_{\dagger}(x,y) = x^{\dagger}y$. On it the Hermitian pair is the inner conjugation, so the Hermitian and the inverse two-sided operator agree on the slice and the two theories meet there. For the identity involution $U = \{x : N(x) = 1\} = \mathrm{Pin}(V,\mathfrak{Q})$, so the slice recovers the classical spin group; for a nontrivial involution it is larger and acts as a group of operators on the algebra and its modules without adding isometries of the quadratic space.
 
 The **skew part** $\mathfrak{u} = \{u : u^{\dagger} = -u\}$ is a Lie algebra and is the Lie algebra of $U$; the exponential maps $\mathfrak{u}$ into $U$ and the self-adjoint part into itself, and the group of units is the Cartan product $G = U\exp(\mathrm{Herm})$ when the dagger is positive, which is the polar decomposition of an invertible element. When the dagger is positive the slice is **compact**, because $x^{\dagger}x = 1$ forces $\|x\|^{2} = \mathrm{Sc}(x^{\dagger}x) = 1$, so $U$ is a closed subset of the unit sphere; in the complex case it is a compact real form of the complex group of units, the one-dimensional exactly computed example being $\mathrm{Cl}_1(\mathbb{C})\cong\mathbb{C}\oplus\mathbb{C}$ with $U\cong \mathrm{U}(1)\times \mathrm{U}(1)$ and the biquaternion example being $\mathrm{U}(2)$ with determinant-one part $\mathrm{Spin}(3)$.
 

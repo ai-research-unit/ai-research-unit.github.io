@@ -629,7 +629,7 @@ $$
 
 The logarithm is the sum of the scalar logarithm and the nilpotent vector part. The period $2\pi ik\,e_t$ can be added to the scalar logarithm, and no other ambiguity is present on the Jordan part: the logarithm is unique modulo the central periods, because the nilpotent part is fixed by $\tilde Q$.
 
-The operator form of this single exponent is in §*The Exponential at the Wall* of *The One-Sided Operators of an N-Regular, Spectrally Degenerate Biquaternion* and of *The Sandwich of an N-Regular, Spectrally Degenerate Biquaternion*: the exponential of the left multiplication is the shear $\exp(L_{\tilde Q})=e^{Q_t}(I+Q_tL_{\vec\Upsilon})$, and the sandwich is the null rotation $\mathrm{Sd}_{\tilde Q}=|Q_t|^2e^{A+B}$.
+The operator form of this single exponent is in §*The Exponential at the Wall* of *N-Regular, Spectrally Degenerate Operators Acting on One Side* and of *Hermitian Pair of N-Regular, Spectrally Degenerate Operators Acting on Two Sides*: the exponential of the left multiplication is the shear $\exp(L_{\tilde Q})=e^{Q_t}(I+Q_tL_{\vec\Upsilon})$, and the two-sided operator is the null rotation $\mathrm{Sd}_{\tilde Q}=|Q_t|^2e^{A+B}$.
 
 ### The Formal Exponent and the Defect
 
@@ -811,7 +811,7 @@ The coordinate lines are three families:
 
 The sector retracts onto the scalar line, because the nilpotent part can be contracted to zero along $\vec\Upsilon\mapsto(1-t)\vec\Upsilon$, which stays null. Hence $\Sigma_{10}$ is connected and $\pi_1(\Sigma_{10})=\mathbb{Z}$, carried by the phase of $Q_t$.
 
-The **conformal factor** is read in the coordinates. Under the sandwich $\tilde QX\tilde Q^*$, the quaternionic norm of $X$ is multiplied by
+The **conformal factor** is read in the coordinates. Under the two-sided operator $\tilde QX\tilde Q^*$, the quaternionic norm of $X$ is multiplied by
 
 $$
 |Q_t|^4=\bigl\lvert\langle\tilde Q\rangle_{\natural}\bigr\rvert^2,

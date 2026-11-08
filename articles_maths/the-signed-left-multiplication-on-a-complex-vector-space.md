@@ -3,13 +3,13 @@
 
 ## Introduction
 
-The one-sided companion of the signed sandwich is the **signed left multiplication** on the endomorphism algebra $E = \operatorname{End}_{\mathbb C}(V)$,
+The one-sided companion of the signed two-sided operator is the **signed left multiplication** on the endomorphism algebra $E = \operatorname{End}_{\mathbb C}(V)$,
 $$
 \Lambda^{\alpha}_{a} = L_a\circ\alpha, \qquad \Lambda^{\alpha}_{a}(X) = a\,\alpha(X),
 $$
-obtained by taking the right factor of the signed sandwich $\mathrm{Sd}^{\alpha}_{a,b}(X) = a\alpha(X)b$ to be the identity. It is the composite of the ordinary left multiplication with the grade involution, so it is the case $b = 1$ of the signed sandwich, its products are ordinary left multiplications, its inverse is again signed, and its fixed elements are the solutions of $a\alpha(X) = X$. When the grade involution comes from a **unitary self-adjoint involution** $T$ of a Hermitian space $V$ and the element $a$ is unitary, the signed left multiplication is an isometry of the Hermitian trace form of $E$, so that the one-sided signed operators of the geometry are the isometric ones; the unsigned left multiplication is the case of the trivial involution, and the difference between the two is the sign carried by $\alpha$.
+obtained by taking the right factor of the signed two-sided operator $\mathrm{Sd}^{\alpha}_{a,b}(X) = a\alpha(X)b$ to be the identity. It is the composite of the ordinary left multiplication with the grade involution, so it is the case $b = 1$ of the signed two-sided operator, its products are ordinary left multiplications, its inverse is again signed, and its fixed elements are the solutions of $a\alpha(X) = X$. When the grade involution comes from a **unitary self-adjoint involution** $T$ of a Hermitian space $V$ and the element $a$ is unitary, the signed left multiplication is an isometry of the Hermitian trace form of $E$, so that the one-sided signed operators of the geometry are the isometric ones; the unsigned left multiplication is the case of the trivial involution, and the difference between the two is the sign carried by $\alpha$.
 
-The article has three sections: the signed left multiplication and its laws; the fixed elements and their computation through the involution; and the relation to the unsigned left multiplication, with the isometries. The unsigned and signed sandwiches are *The Signed Sandwich on a Complex Vector Space*, the previous articles of this group; the endomorphism algebra and its trace are *Algebras of Endomorphisms*; the fixed part of an involution and its dimension are *Involutive Linear Spaces*; the unitary group and the involution are *The Unitary and Symplectic Groups* and *Hermitian Geometry and the Unitary Group*. The unsigned case with its adjoint is *The Adjoint of the Left Multiplication on a Complex Vector Space*, the signed adjoint is *The Signed Adjoint of the Left Multiplication on a Complex Vector Space*, and the module-level variant is *The Graded Action on a Module over a Complex Vector Space*, all of this group. The group-level analogue is *The Signed Left Multiplication on a Symmetry Group*.
+The article has three sections: the signed left multiplication and its laws; the fixed elements and their computation through the involution; and the relation to the unsigned left multiplication, with the isometries. The unsigned and signed two-sided operators are *The Signed Two-Sided Operator on a Complex Vector Space*, the previous articles of this group; the endomorphism algebra and its trace are *Algebras of Endomorphisms*; the fixed part of an involution and its dimension are *Involutive Linear Spaces*; the unitary group and the involution are *The Unitary and Symplectic Groups* and *Hermitian Geometry and the Unitary Group*. The unsigned case with its adjoint is *The Adjoint of the Left Multiplication on a Complex Vector Space*, the signed adjoint is *The Signed Adjoint of the Left Multiplication on a Complex Vector Space*, and the module-level variant is *The Graded Action on a Module over a Complex Vector Space*, all of this group. The group-level analogue is *The Signed Left Multiplication on a Symmetry Group*.
 
 Throughout, $V$ is a finite-dimensional complex vector space of dimension $N$ with a positive-definite Hermitian form $h$, $E = \operatorname{End}_{\mathbb C}(V)$, $A^{\dagger}$ is the adjoint for $h$, $T$ is a unitary self-adjoint involution of $V$, $\alpha(X) = TXT$ is the grade involution it defines, $L_a(X) = aX$ and $R_b(X) = Xb$ are the one-sided multiplications, $\Lambda^{\alpha}_{a} = L_a\circ\alpha$ is the signed left multiplication, and $\langle X, Y\rangle = \operatorname{tr}(X^{\dagger}Y)$ is the Hermitian trace form of $E$.
 
@@ -20,13 +20,13 @@ $$
 \Lambda^{\alpha}_{a} = L_a\circ\alpha, \qquad \Lambda^{\alpha}_{a}(X) = a\,\alpha(X) .
 $$
 
-**Proposition (the two factorisations).** $\Lambda^{\alpha}_{a}$ is the signed sandwich with right factor the identity, $\Lambda^{\alpha}_{a} = \mathrm{Sd}^{\alpha}_{a,1}$, and
+**Proposition (the two factorisations).** $\Lambda^{\alpha}_{a}$ is the signed two-sided operator with right factor the identity, $\Lambda^{\alpha}_{a} = \mathrm{Sd}^{\alpha}_{a,1}$, and
 $$
 \boxed{\;\Lambda^{\alpha}_{a} = L_a\circ\alpha = \alpha\circ L_{\alpha(a)}\;} ,
 $$
 so the signed left multiplication is the ordinary left multiplication by $\alpha(a)$ conjugated by $\alpha$.
 
-**Proof.** The first identity is the definition of the sandwich with $b = 1$; for the second, $\alpha L_{\alpha(a)}(X) = \alpha(\alpha(a)X) = a\alpha(X) = \Lambda^{\alpha}_{a}(X)$.
+**Proof.** The first identity is the definition of the two-sided operator with $b = 1$; for the second, $\alpha L_{\alpha(a)}(X) = \alpha(\alpha(a)X) = a\alpha(X) = \Lambda^{\alpha}_{a}(X)$.
 
 **Proposition (composition).** For all $a,b \in E$,
 $$
@@ -70,7 +70,7 @@ $$
 $$
 \Lambda^{\alpha}_{a} = L_a\circ\alpha, \qquad L_{\alpha(a)} = \Lambda^{\alpha}_{a}\circ\alpha ,
 $$
-the first the definition and the second its consequence $\Lambda^{\alpha}_{a}\alpha = L_a\alpha\alpha = L_a$; the signed family is the ordinary family twisted by $\alpha$, exactly as the signed sandwich is the unsigned sandwich twisted by $\alpha$.
+the first the definition and the second its consequence $\Lambda^{\alpha}_{a}\alpha = L_a\alpha\alpha = L_a$; the signed family is the ordinary family twisted by $\alpha$, exactly as the signed two-sided operator is the unsigned two-sided operator twisted by $\alpha$.
 
 **Proof.** The first identity is the definition; composing it on the right with $\alpha$ and using $\alpha^2 = \mathrm{id}$ gives $\Lambda^{\alpha}_{a}\alpha = L_a$, which after replacing $a$ by $\alpha(a)$ is the second. Setting $\alpha = \mathrm{id}$ returns $L_a$ in both.
 
@@ -86,7 +86,7 @@ and $\Lambda^{\alpha}_{u}$ is invertible with $(\Lambda^{\alpha}_{u})^{-1} = \La
 
 ## Summary
 
-On the endomorphism algebra $E = \operatorname{End}_{\mathbb C}(V)$ of a complex vector space the signed left multiplication is $\Lambda^{\alpha}_{a} = L_a\circ\alpha$, the signed sandwich with right factor one, equal to $\alpha\circ L_{\alpha(a)}$. Its product with another is the ordinary left multiplication $\Lambda^{\alpha}_{a}\Lambda^{\alpha}_{b} = L_{a\alpha(b)}$; it satisfies $L_a\Lambda^{\alpha}_{b} = \Lambda^{\alpha}_{ab}$ and $\Lambda^{\alpha}_{a}L_b = R_{\alpha(b)}\Lambda^{\alpha}_{a}$, so the signed and ordinary left multiplications together form a closed monoid; it is invertible exactly for invertible $a$, with inverse $\Lambda^{\alpha}_{\alpha(a^{-1})}$; and its fixed space is the solution set of $a\alpha(X) = X$, equal to the fixed part $E^{+}$ of $\alpha$ when $a = 1$, of dimension $p^2+q^2$ for an involution with $p$ signs $+1$ and $q$ signs $-1$, and of dimension $(N-1)^2+1$ for a reflection's involution. When $T$ is unitary and self-adjoint and $a = u$ is unitary, the signed left multiplication is an isometry of the Hermitian trace form $\langle X,Y\rangle = \operatorname{tr}(X^\dagger Y)$. The unsigned case with its adjoint, the signed adjoint and the module-level graded variant are the companion articles of this group; the abstract laws and the involutive-subspace theory are *The Signed Sandwich on a Complex Vector Space* and *Involutive Linear Spaces*.
+On the endomorphism algebra $E = \operatorname{End}_{\mathbb C}(V)$ of a complex vector space the signed left multiplication is $\Lambda^{\alpha}_{a} = L_a\circ\alpha$, the signed two-sided operator with right factor one, equal to $\alpha\circ L_{\alpha(a)}$. Its product with another is the ordinary left multiplication $\Lambda^{\alpha}_{a}\Lambda^{\alpha}_{b} = L_{a\alpha(b)}$; it satisfies $L_a\Lambda^{\alpha}_{b} = \Lambda^{\alpha}_{ab}$ and $\Lambda^{\alpha}_{a}L_b = R_{\alpha(b)}\Lambda^{\alpha}_{a}$, so the signed and ordinary left multiplications together form a closed monoid; it is invertible exactly for invertible $a$, with inverse $\Lambda^{\alpha}_{\alpha(a^{-1})}$; and its fixed space is the solution set of $a\alpha(X) = X$, equal to the fixed part $E^{+}$ of $\alpha$ when $a = 1$, of dimension $p^2+q^2$ for an involution with $p$ signs $+1$ and $q$ signs $-1$, and of dimension $(N-1)^2+1$ for a reflection's involution. When $T$ is unitary and self-adjoint and $a = u$ is unitary, the signed left multiplication is an isometry of the Hermitian trace form $\langle X,Y\rangle = \operatorname{tr}(X^\dagger Y)$. The unsigned case with its adjoint, the signed adjoint and the module-level graded variant are the companion articles of this group; the abstract laws and the involutive-subspace theory are *The Signed Two-Sided Operator on a Complex Vector Space* and *Involutive Linear Spaces*.
 
 ## Summary of Notation
 

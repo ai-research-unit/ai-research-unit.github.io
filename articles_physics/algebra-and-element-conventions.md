@@ -186,7 +186,7 @@ $$
 
 At $\theta'=0$ this is $\cos\theta$ and $\sin\theta$; at $\theta=0$ it is $\cosh\theta'$ and $i\sinh\theta'$. A rotation, a boost and the intermediate case are three readings of one letter, and the case of the letter states which of them is meant.
 
-**Neither glyph carries a second role.** The roles that once shared the letter have glyphs of their own: the involution and the orbit map are $\mathrm{J}$; the curvature is $\Omega$; the sandwich is $\mathrm{Sd}$; the Heaviside step is $\mathrm{H}_{\mathrm{hvs}}$; the generalised angle of a congruence is $\vartheta_{\mathrm{cng}}$. A subscript on $\theta$ names the angular coordinate itself: $p_\theta$ is the momentum conjugate to it.
+**Neither glyph carries a second role.** The roles that once shared the letter have glyphs of their own: the involution and the orbit map are $\mathrm{J}$; the curvature is $\Omega$; the two-sided operator is $\mathrm{Sd}$; the Heaviside step is $\mathrm{H}_{\mathrm{hvs}}$; the generalised angle of a congruence is $\vartheta_{\mathrm{cng}}$. A subscript on $\theta$ names the angular coordinate itself: $p_\theta$ is the momentum conjugate to it.
 
 ## The Remarkable Subspaces of Biquaternions
 

@@ -45,7 +45,7 @@ the operators that intertwine the representation with its conjugate; the **`*`-m
 
 **Proof.** The adjoint of $\ell_r^\pi$ is $\ell_{\delta(r)}^\pi$; self-adjointness is $\pi(\delta(r)) = \pi(r)$, i.e. $\delta(r) = r$ on the image of $\pi$; unitarity is $\bigl(\ell_r^\pi\bigr)^\dagger\ell_r^\pi = \pi(\delta(r)\alpha(r)) = \mathrm{id}_M$ by the composition law. The closure of the commutant under the adjoint is the standard compatibility of an intertwining relation with the adjoint for a `*`-representation.
 
-**Remark (the reduction to the regular module).** On the regular module $M = A$ with $\pi$ the left regular representation and $\gamma = \alpha$, the graded commutant is the set of $T$ with $T L_r = L_{\delta(r)}T$, the *-module structure is the form of the category, and the whole theory of *The Signed Adjoint of the Left Multiplication on an Involutive Banach Algebra* is the special case of the present article; the two-sided operators are the composites of the graded adjoint action with the right multiplications, *The Signed Adjoint Sandwich on a Banach Algebra*.
+**Remark (the reduction to the regular module).** On the regular module $M = A$ with $\pi$ the left regular representation and $\gamma = \alpha$, the graded commutant is the set of $T$ with $T L_r = L_{\delta(r)}T$, the *-module structure is the form of the category, and the whole theory of *The Signed Adjoint of the Left Multiplication on an Involutive Banach Algebra* is the special case of the present article; the two-sided operators are the composites of the graded adjoint action with the right multiplications, *The Signed Adjoint Two-Sided Operator on a Banach Algebra*.
 
 ## Examples
 

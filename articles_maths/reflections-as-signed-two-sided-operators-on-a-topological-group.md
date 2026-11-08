@@ -5,13 +5,13 @@
 
 A reflection of a topological group is an operator of the signed two-sided form $x \mapsto a\,\alpha(x)\,a^{-1}$ that is its own inverse: it is an involution of the group produced by the multiplication, the continuous grade involution and the inverse, and the topology makes its fixed set closed and its carrying elements a closed set. This article reads the reflections of a graded topological group as operators on the group, identifies the elements that carry them, computes their fixed subgroups, and records the degenerate cases — the grade involution inner, the group abelian, or the carrying element failing the centrality that makes the operator an involution.
 
-The article assumes the continuous involutive automorphism, the fixed and inverted subgroups and the dictionary between them from *Involutive Topological Groups*; the abstract reflections, their squares, their fixed subgroups, the coset description of the carrying elements and the degenerate cases from *Reflections as Signed Two-Sided Operators on a Group*; the signed sandwich and its composition laws from *The Signed Sandwich on a Topological Group*; and the translations, the homeomorphism group and the compact-open topology from *Operators on a Topological Group*. The adjoint of a reflection is *The Signed Adjoint of the Reflection on a Topological Group*. A reflection in the geometric sense — in a hyperplane, preserving a form — needs a form and belongs to the later categories; a reflection here is only a continuous operator on the underlying group of order two.
+The article assumes the continuous involutive automorphism, the fixed and inverted subgroups and the dictionary between them from *Involutive Topological Groups*; the abstract reflections, their squares, their fixed subgroups, the coset description of the carrying elements and the degenerate cases from *Reflections as Signed Two-Sided Operators on a Group*; the signed two-sided operator and its composition laws from *The Signed Two-Sided Operator on a Topological Group*; and the translations, the homeomorphism group and the compact-open topology from *Operators on a Topological Group*. The adjoint of a reflection is *The Signed Adjoint of the Reflection on a Topological Group*. A reflection in the geometric sense — in a hyperplane, preserving a form — needs a form and belongs to the later categories; a reflection here is only a continuous operator on the underlying group of order two.
 
 Throughout, $G$ is a Hausdorff topological group with identity $e$, $\alpha$ is a continuous involutive automorphism, $\sigma = \iota\alpha$ is the associated topological involution, $G^\alpha$ is the fixed subgroup of $\alpha$, $I(\sigma) = G^\alpha$ is the inverted subgroup of $\sigma$, and $Z(G)$ is the centre.
 
 ## The Signed Conjugation
 
-**Definition.** For $a \in G$ the **signed conjugation** by $a$ is the signed sandwich $\rho_a = \Sigma^{\alpha}_{a,a^{-1}}$, that is
+**Definition.** For $a \in G$ the **signed conjugation** by $a$ is the signed two-sided operator $\rho_a = \Sigma^{\alpha}_{a,a^{-1}}$, that is
 
 $$
 \rho_a : G \longrightarrow G, \qquad \rho_a(x) = a\,\alpha(x)\,a^{-1} .
@@ -25,7 +25,7 @@ $$
 
 Consequently $\rho_a$ is an involution of the set $G$ exactly when $a\alpha(a) \in Z(G)$.
 
-**Proof.** $c_a(\alpha(x)) = a\alpha(x)a^{-1}$ is the definition, and a composite of continuous automorphisms is a continuous automorphism. The square is the computation of *The Signed Sandwich on a Topological Group*, and an inner conjugation is the identity exactly on the central elements.
+**Proof.** $c_a(\alpha(x)) = a\alpha(x)a^{-1}$ is the definition, and a composite of continuous automorphisms is a continuous automorphism. The square is the computation of *The Signed Two-Sided Operator on a Topological Group*, and an inner conjugation is the identity exactly on the central elements.
 
 **Corollary.** $\rho_a$ is a homeomorphism of $G$ of order two when $a\alpha(a)$ is central, and otherwise its order is the order of the inner automorphism $c_{a\alpha(a)}$, which is the order of the coset $a\alpha(a)Z(G)$ in $G/Z(G)$.
 
@@ -109,7 +109,7 @@ $$
 
 so no signed operator is distinguished from an inner automorphism; the reflection $\rho_a$ is an involution exactly when $(az)^2 \in Z(G)$, in which case it is the inner automorphism of order two $c_{az}$.
 
-**Proof.** That an inner grade involution forces $\mathfrak{S}^\alpha = \mathfrak{S}$ is *The Signed Sandwich on a Topological Group*; hence $\rho_a = c_a\alpha = c_ac_z = c_{az}$, and an inner conjugation is an involution exactly when its conjugating element squares to a central element. The conjugating element $az$ is a product of continuous elements, so the map $a \mapsto c_{az}$ is continuous.
+**Proof.** That an inner grade involution forces $\mathfrak{S}^\alpha = \mathfrak{S}$ is *The Signed Two-Sided Operator on a Topological Group*; hence $\rho_a = c_a\alpha = c_ac_z = c_{az}$, and an inner conjugation is an involution exactly when its conjugating element squares to a central element. The conjugating element $az$ is a product of continuous elements, so the map $a \mapsto c_{az}$ is continuous.
 
 **Theorem (abelian group).** If $G$ is abelian then every reflection is the grade involution,
 

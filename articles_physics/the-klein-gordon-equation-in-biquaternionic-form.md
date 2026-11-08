@@ -308,7 +308,9 @@ The added term is the density the rest mode carries by itself. The sign rule is 
 
 ## The Non-Relativistic Limit
 
-Every solution is a superposition of the plane waves of the earlier section,
+**The method, and where it is stated.** The limit of a dispersion relation is stated once, in *The Three Wavenumbers of a Particle* §*The Non-Relativistic Limit*, and it has four moves: split the energy wave number exactly as $k_{t}^{\prime}=k_m+\Omega$, use the exact relation $k_\Phi^{2}=2k_m\Omega+\Omega^{2}$, expand once, and keep the leading term. None of the four is specific to a field. What the field adds is one step, from a number on each mode to an operator on the field, and that step is the whole of this section.
+
+**The general result, applied.** The solutions are superpositions of the plane waves of §*Plane Waves and the Dispersion Relation*,
 
 $$
 \tilde{Ξ} \propto \exp\left(i\left(\vec k_\Phi\cdot\vec r - k_{t}^{\prime}s\right)\right),
@@ -316,74 +318,51 @@ $$
 k_{t}^{\prime} = \sqrt{k_\Phi^{2}+k_m^{2}} .
 $$
 
-A slow particle has $k_\Phi\ll k_m$, since $v/c = k_\Phi/k_m$. Split the time wave number into the rest value and the excess,
+The envelope $\chi$ of the previous section carries the excess wave number instead of the full one, since $e^{-ik_{t}^{\prime}s}=f\,e^{-i\Omega s}$ with $f$ the rest-mass phase. The expansion of the wavenumbers article then gives
 
 $$
-k_{t}^{\prime} = k_m+\Omega ,
+\Omega = \frac{k_{\Phi}^{2}}{2k_m}-\frac{k_{\Phi}^{4}}{8k_m^{3}}+\cdots ,
+$$
+
+with the parameter $\Omega/(2k_m)$ and the relative error $-\Omega/(2k_m+\Omega)$ tabulated there. Keeping the leading term, and converting with $k_m = mc/\hbar$,
+
+$$
+\Omega = \frac{k_{\Phi}^{2}}{2k_m},
 \qquad
-\Omega = \sqrt{k_\Phi^{2}+k_m^{2}}-k_m ,
+\hbar c\,\Omega = \frac{\hbar^{2}k_{\Phi}^{2}}{2m} = \frac{p^{2}}{2m},
 $$
 
-so that $e^{-ik_{t}^{\prime}s} = f\,e^{-i\Omega s}$, with $f$ the factor divided out in the previous section. Nothing is approximated in that split. The whole limit is a statement about $\Omega$.
+which is the non-relativistic kinetic energy. That is the entire use of the general result. Nothing is re-derived here, and no further expansion is made.
 
-**Expanding.** Expand in the ratio $k_\Phi/k_m$:
-
-$$
-\Omega = k_m\left(\sqrt{1+\frac{k_\Phi^{2}}{k_m^{2}}}-1\right)
-= \frac{k_\Phi^{2}}{2k_m}\left(1-\frac{k_\Phi^{2}}{4k_m^{2}}+\cdots\right).
-$$
-
-Keeping the first term and using $k_m = mc/\hbar$,
-
-$$
-\Omega = \frac{k_\Phi^{2}}{2k_m},
-\qquad
-\hbar c\,\Omega = \frac{\hbar^{2}k_\Phi^{2}}{2m} = \frac{p^{2}}{2m},
-$$
-
-which is the non-relativistic kinetic energy. The term dropped is $p^{4}/(8m^{3}c^{2})$, the standard relativistic correction to it, and the ratio of dropped to kept is $k_\Phi^{2}/(4k_m^{2}) = v^{2}/(4c^{2})$. That ratio is the small parameter of the limit, and it comes from the expansion rather than from an assumption.
-
-**First order in time.** With $\Omega$ fixed, the slow factor advances over a step $\delta s$ as
-
-$$
-e^{-i\Omega\,\delta s} = 1 - i\Omega\,\delta s + O\left(\delta s^{2}\right),
-$$
-
-so that $\partial_s\chi = -i\Omega\chi$. The equation is first order in time because the exponential was cut after two terms: a third term would leave $\chi''$ in the relation and rebuild the second-order Klein–Gordon equation. The order of the equation is the number of terms kept.
-
-**Two operators, one action.** On the same mode, $i\partial_s\chi = \Omega\chi$, and also
+**From a number to an operator.** The truncated $\Omega$ is a number on each mode, and a number becomes an operator when $k_\Phi^{2}\to-\Delta$. On a plane wave the two agree by construction,
 
 $$
 -\frac{1}{2k_m}\,\Delta\chi
 = -\frac{1}{2k_m}\left(-k_\Phi^{2}\right)\chi
 = \frac{k_\Phi^{2}}{2k_m}\,\chi
-= \Omega\chi .
+= \Omega\chi ,
 $$
 
-The two operators have equal eigenvalues on every plane wave, and the plane waves are complete, so they are equal on every field:
+and the plane waves are complete, so the first-order relation $\partial_s\chi=-i\Omega\chi$ of the wavenumbers article holds between operators:
 
 $$
 i\,\frac{\partial\chi}{\partial s} = -\frac{1}{2k_m}\,\Delta\chi .
 $$
 
-The agreement was checked numerically on the case used in the plane-wave section: the two sides match to machine precision, and the one-term expansion of $\Omega$ is accurate to $1.5\times10^{-3}$ there.
+The two sides were compared on the case of §*Plane Waves and the Dispersion Relation* and match to machine precision, at the one-term accuracy of the expansion, which is $1.5\times10^{-3}$ there.
 
-Because $\frac{mc^{2}i}{k_m} = i\hbar c$, the same equation reads $\frac{mc^{2}i}{k_m}\,\partial_s\chi = \tilde R_\Psi\,\chi$ in the article's material time, with $\tilde R_\Psi = -\frac{\hbar^{2}}{2m}\Delta\in\mathbb{B}_{\Psi}$: the observable is informational, and the central $i$ that carries it to the material sector sits in the coefficient. This is the parent article's structure, reached here from the Klein–Gordon spectrum rather than assumed.
+**Why the order is one.** The relation is first order in $s$ because its symbol is the truncated $\Omega$ and $\Omega$ is linear in the excess. The Klein–Gordon equation is second order because its symbol is $k_{t}^{\prime\,2}$, which the split writes as $(k_m+\Omega)^{2}$ and which contains $\Omega^{2}$. Dropping the $\Omega^{2}$ term of the dispersion relation and lowering the order of the equation are one operation: the order of the equation is the degree of its symbol in the excess.
 
-**What is left out.** Two things, stated rather than hidden. The negative branch has $\Omega\approx-2k_m$, so no ratio in it is small and the expansion does not apply; that branch is reached by factoring $\exp(+ik_ms)$ instead, and antiparticles are not treated here. And the field is a scalar, so the limit lands on the scalar Schrödinger equation, the spin-$0$ case of the parent article's two-component spinor equation; its spinor module and flows are untouched. The scalar sector is consistent with the parent, not identical to it.
+**In the material time.** Because $\frac{mc^{2}i}{k_m} = i\hbar c$, the same equation reads $\frac{mc^{2}i}{k_m}\,\partial_s\chi = \tilde R_\Psi\,\chi$, with $\tilde R_\Psi = -\frac{\hbar^{2}}{2m}\Delta\in\mathbb{B}_{\Psi}$. The observable is informational and the central $i$ that carries it into the material sector sits in the coefficient. That is the parent article's structure, reached here from the Klein–Gordon spectrum rather than assumed.
 
-**The equation for the remainder.** It is the same statement in seconds. Since $s = c\,t'$, the left side is $i\hbar\,\partial/\partial t'$, and since $k_m = mc/\hbar$,
+**What is left out.** The negative branch has $\Omega\approx-2k_m$, so no ratio in it is small and the expansion does not apply; that branch is reached by factoring $\exp(+ik_ms)$ instead, and antiparticles are not treated here. And the field is a scalar, so the limit lands on the scalar Schrödinger equation, the spin-$0$ case of the parent article's spinor equation, whose module and flows are untouched. The scalar sector is consistent with the parent, not identical to it.
 
-$$
-\frac{\hbar c}{2k_m} = \frac{\hbar c}{2mc/\hbar} = \frac{\hbar^{2}}{2m},
-$$
-
-which is the coefficient the limit has to produce, and does. The free Schrödinger equation follows, with the mass that entered the Klein–Gordon equation:
+**The equation.** In seconds, with $s = c\,t'$ and $\frac{\hbar c}{2k_m} = \frac{\hbar^{2}}{2m}$, the relation is the free Schrödinger equation with the mass that entered the Klein–Gordon equation:
 
 $$
 \boxed{\;
 i\hbar\,\frac{\partial\chi}{\partial t'}
-= -\frac{\hbar^{2}}{2m}\,\Delta\chi\;}.
+= -\frac{\hbar^{2}}{2m}\,\Delta\chi\;}
 $$
 
 ## What the Form Adds and What It Relabels
@@ -428,7 +407,7 @@ with $\tilde{Ξ}$ a biquaternion-valued field. Because $\Box$ is central and sca
 
 Being second order in time, the equation has two frequency branches and requires both $\tilde{Ξ}$ and $\tilde{Ξ}^{*}$. Its dispersion relation is $\omega^2 = c^2k_\Phi^{2} + c^2k_m^{2}$, that is $k_{t}^{\prime\,2}=k_\Phi^{2}+k_m^{2}$, which is the mass-shell condition $\langle\tilde K_{\Phi}\rangle_{\natural}=\tilde P_{\Phi}\tilde P_{\Phi}^{\natural}/\hbar^{2}= -m^{2}c^{2}/\hbar^{2}$ read on the wave number, and the phase of a plane wave is the scalar part $\mathrm{Sc}(\tilde K_{\Phi}\tilde{R}_\Phi^{\natural}) = \vec k_\Phi\cdot(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)-k_{t}^{\prime} r'_t$. Both branches were checked on a case chosen independently of the derivation. The conserved current $\tilde{J}_{\Phi} = ic\rho e_t + \vec j$ lies in $\mathbb{B}_{\Phi}$ and satisfies $\mathrm{Sc}(\tilde{\nabla}^{\natural}\tilde{J}_{\Phi})=0$, but its scalar component $\rho$ has the sign of the frequency and is not positive definite; together with the absence of a one-particle interpretation, this is the two-fold defect the equation has always had, and the biquaternion notation neither removes nor disguises it.
 
-The central structural question has a negative answer. The second-order structure does **not** fit the $\mathbb{B}_{\Phi}/\mathbb{B}_{\Psi}$ split naturally. Since $\Box$ is central, the split decouples the equation into two sectors hosting two copies of the same real solution space, exchanged by multiplication by $i$; the $\mathbb{B}_{\Phi}$ part of a solution is the $i$-image of an $\mathbb{B}_{\Psi}$ solution, so the pairing is the real/imaginary-part split of a complex field, not a conjugate pair. The conjugate pair is complex conjugation, which preserves both sectors, and the doubling the equation actually needs is the spinor-module doubling of the first-order square root $\tilde{\nabla}$, whose mass term is the linear coupling of the two chiralities. That doubling is representation-theoretic, not the real fixed-point decomposition. The non-relativistic limit needs one preliminary step: the rest-mass phase $f = \exp(-i k_m s)$, which is itself the zero-momentum solution, is divided out, and the mass term then cancels exactly. The limit is then the leading term of an expansion of $k_t' = \sqrt{k_\Phi^{2}+k_m^{2}} = k_m+\Omega$, with $\Omega = k_\Phi^{2}/2k_m$, so that $\hbar c\,\Omega = p^{2}/2m$; the term dropped is $p^{4}/(8m^{3}c^{2})$, and the ratio of dropped to kept is $k_\Phi^{2}/(4k_m^{2}) = v^{2}/4c^{2}$. What remains is the parent article's free Schrödinger equation, $i\hbar\,\partial_{t'}\chi = -\frac{\hbar^{2}}{2m}\Delta\chi$, with the same central scalar imaginary $i$; the two articles use one complex structure and no competing unit, and no second-order remnant is left behind.
+The central structural question has a negative answer. The second-order structure does **not** fit the $\mathbb{B}_{\Phi}/\mathbb{B}_{\Psi}$ split naturally. Since $\Box$ is central, the split decouples the equation into two sectors hosting two copies of the same real solution space, exchanged by multiplication by $i$; the $\mathbb{B}_{\Phi}$ part of a solution is the $i$-image of an $\mathbb{B}_{\Psi}$ solution, so the pairing is the real/imaginary-part split of a complex field, not a conjugate pair. The conjugate pair is complex conjugation, which preserves both sectors, and the doubling the equation actually needs is the spinor-module doubling of the first-order square root $\tilde{\nabla}$, whose mass term is the linear coupling of the two chiralities. That doubling is representation-theoretic, not the real fixed-point decomposition. The non-relativistic limit is the general one of *The Three Wavenumbers of a Particle*, applied to this field, and it needs one preliminary step: the rest-mass phase $f = \exp(-i k_m s)$, which is itself the zero-momentum solution, is divided out, and the mass term then cancels exactly. The limit is then the leading term of an expansion of $k_t' = \sqrt{k_\Phi^{2}+k_m^{2}} = k_m+\Omega$, with $\Omega = k_\Phi^{2}/2k_m$, so that $\hbar c\,\Omega = p^{2}/2m$; the term dropped is $p^{4}/(8m^{3}c^{2})$, and the ratio of dropped to kept is $k_\Phi^{2}/(4k_m^{2}) = v^{2}/4c^{2}$. What remains is the parent article's free Schrödinger equation, $i\hbar\,\partial_{t'}\chi = -\frac{\hbar^{2}}{2m}\Delta\chi$, with the same central scalar imaginary $i$; the two articles use one complex structure and no competing unit, and no second-order remnant is left behind.
 
 One exception to the obstruction is imported from the literature and kept separate from the framework's own operator. For a *vector* structural coefficient $\vec F$ the second-order operator $\Box_A + (\vec F,\vec F) + 2i(\vec F,\nabla)$ does factor into two first-order operators, and its fundamental solution is a weighted $\delta$-layer on the light cone rather than a Bessel-type kernel. The factorisation is paid for by the directional term: the mass $(\vec F,\vec F)$ and $2i(\vec F,\nabla)$ arrive together and cannot be separated, so the result is not a square root of the framework's massive scalar operator. It is a structural fact about the compensated operator, recorded here because it is the sharpest known contrast with the scalar obstruction.
 

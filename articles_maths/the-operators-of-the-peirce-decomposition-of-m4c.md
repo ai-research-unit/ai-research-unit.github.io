@@ -2,9 +2,9 @@
 
 ## Introduction
 
-**The Peirce decomposition is acted on by four families of linear operators: left multiplication $L_a$, right multiplication $R_a$, the sandwich $L_{a}R_{b}$, and the derivation $\operatorname{ad}_a$.** On the matrix units, $L_a$ moves the row index, $R_a$ moves the column index, $L_{a}R_{b}$ moves both, and $\operatorname{ad}_a$ is the difference of the two. The derivations of $M_4$ are exactly the inner derivations, $\operatorname{Der}(M_4)\cong\mathfrak{sl}_4$, of dimension $15$; the automorphisms are exactly the inner automorphisms, $\operatorname{Aut}(M_4)\cong PGL_4$, of dimension $15$.
+**The Peirce decomposition is acted on by four families of linear operators: left multiplication $L_a$, right multiplication $R_a$, the two-sided operator $L_{a}R_{b}$, and the derivation $\operatorname{ad}_a$.** On the matrix units, $L_a$ moves the row index, $R_a$ moves the column index, $L_{a}R_{b}$ moves both, and $\operatorname{ad}_a$ is the difference of the two. The derivations of $M_4$ are exactly the inner derivations, $\operatorname{Der}(M_4)\cong\mathfrak{sl}_4$, of dimension $15$; the automorphisms are exactly the inner automorphisms, $\operatorname{Aut}(M_4)\cong PGL_4$, of dimension $15$.
 
-The article defines the four operators, computes their matrices and their action on the Peirce corners, proves the derivation and automorphism theorems, and explains the sandwich as a map of corners. The Peirce decomposition is *The Peirce Decomposition of $M_4(\mathbb{C})$*; the adjoint action is *The Adjoint Action, the Orbits and the Flag Variety of $M_4(\mathbb{C})$*; the frame and the gauge are *The Frame, the Simple Nilpotents and the Gauge of $M_4(\mathbb{C})$*.
+The article defines the four operators, computes their matrices and their action on the Peirce corners, proves the derivation and automorphism theorems, and explains the two-sided operator as a map of corners. The Peirce decomposition is *The Peirce Decomposition of $M_4(\mathbb{C})$*; the adjoint action is *The Adjoint Action, the Orbits and the Flag Variety of $M_4(\mathbb{C})$*; the frame and the gauge are *The Frame, the Simple Nilpotents and the Gauge of $M_4(\mathbb{C})$*.
 
 ## The Four Operators
 
@@ -26,7 +26,7 @@ $$
 \operatorname{ad}_a:M_4\to M_4,\qquad \operatorname{ad}_a(X)=[a,X]=aX-Xa.
 $$
 
-The operator $L_{a}R_{b}$ is the **sandwich**; $\operatorname{ad}_a$ is the **adjoint** or **inner derivation**.
+The operator $L_{a}R_{b}$ is the **two-sided operator**; $\operatorname{ad}_a$ is the **adjoint** or **inner derivation**.
 
 **Proposition.** The operators satisfy
 
@@ -45,7 +45,7 @@ $$
 
 **Proof.** The identities are the associativity of the product: $a(Xb)=(aX)b$ and $(ab)X=a(bX)$, while $X(ba)=(Xb)a$. The adjoint is the difference of the left and right multiplications.
 
-**A note on the symbols.** Here $a,b\in M_4(\mathbb{C})$, the operators act on $M_4(\mathbb{C})\cong\mathbb{C}^{16}$, and the matrices below are $16\times16$. The article *Operators Acting 2 Side* uses the letters $\tilde Q_1,\tilde Q_2\in\mathbb{B}$ for the same two parameters, acting on $\mathbb{B}\cong\mathbb{C}^4$ and giving $4\times4$ matrices. The two are the same sandwich construction applied to $A=M_4(\mathbb{C})$ and to $A=\mathbb{B}$; the determinant is $\det L_{a}R_{b}=\det L_a\det R_b$, which is $(\det a)^4(\det b)^4$ here and $\langle\tilde Q_1\rangle_{\natural}^2\langle\tilde Q_2\rangle_{\natural}^2$ there.
+**A note on the symbols.** Here $a,b\in M_4(\mathbb{C})$, the operators act on $M_4(\mathbb{C})\cong\mathbb{C}^{16}$, and the matrices below are $16\times16$. The article *Operators Acting on Two Sides* uses the letters $\tilde Q_1,\tilde Q_2\in\mathbb{B}$ for the same two parameters, acting on $\mathbb{B}\cong\mathbb{C}^4$ and giving $4\times4$ matrices. The two are the same two-sided construction applied to $A=M_4(\mathbb{C})$ and to $A=\mathbb{B}$; the determinant is $\det L_{a}R_{b}=\det L_a\det R_b$, which is $(\det a)^4(\det b)^4$ here and $\langle\tilde Q_1\rangle_{\natural}^2\langle\tilde Q_2\rangle_{\natural}^2$ there.
 
 **The matrices.** Vectorise $M_4$ by columns, so that $X$ is a column of $16$ entries. Then
 
@@ -59,7 +59,7 @@ $$
 \operatorname{ad}_a=a\otimes I_4-I_4\otimes a^{\mathsf T}.
 $$
 
-**Proof.** The column-vectorisation of $aX$ is $(a\otimes I)\operatorname{vec}X$, and the vectorisation of $Xb$ is $(I\otimes b^{\mathsf T})\operatorname{vec}X$. The sandwich is the composition. The adjoint is the difference.
+**Proof.** The column-vectorisation of $aX$ is $(a\otimes I)\operatorname{vec}X$, and the vectorisation of $Xb$ is $(I\otimes b^{\mathsf T})\operatorname{vec}X$. The two-sided operator is the composition. The adjoint is the difference.
 
 **The eigenvalues and the trace.** The eigenvalues of $L_a$ are the eigenvalues $\lambda_1,\dots,\lambda_4$ of $a$, each with multiplicity $4$. The eigenvalues of $R_b$ are the eigenvalues $\mu_1,\dots,\mu_4$ of $b$, each with multiplicity $4$. The eigenvalues of $\operatorname{ad}_a$ are the differences $\lambda_i-\lambda_j$, $i,j=1,\dots,4$. Hence
 
@@ -89,7 +89,7 @@ $$
 
 For a generic $a$ with four distinct eigenvalues, the centraliser is the algebra of polynomials in $a$, of dimension $4$, and the rank is $12$.
 
-**The rank of the sandwich.** The sandwich $L_{a}R_{b}=a\otimes b^{\mathsf T}$ has rank
+**The rank of the two-sided operator.** The two-sided operator $L_{a}R_{b}=a\otimes b^{\mathsf T}$ has rank
 
 $$
 \operatorname{rank}L_{a}R_{b}=\operatorname{rank}a\cdot\operatorname{rank}b.
@@ -115,7 +115,7 @@ $$
 
 The row index $i$ is fixed, and the column index is transformed by $b$. The right multiplication acts on the **column index** of the unit.
 
-**The sandwich.** On the matrix units,
+**The two-sided operator.** On the matrix units,
 
 $$
 L_{a}R_{b}(E_{ij})=aE_{ij}b=\sum_{k,l=1}^{4}a_{ki}b_{jl}E_{kl}.
@@ -123,27 +123,27 @@ $$
 
 The coefficient of $E_{kl}$ is $a_{ki}b_{jl}$: the row index is transformed by $a$ and the column index by $b$, independently. This is the **corner map**: the unit $E_{ij}$ is sent to a linear combination of the units $E_{kl}$, and the coefficient factorises into a row factor and a column factor.
 
-**The elementary sandwich.** For $a=E_{ir}$ and $b=E_{sl}$,
+**The elementary two-sided operator.** For $a=E_{ir}$ and $b=E_{sl}$,
 
 $$
 L_{a}R_{b}(E_{rs})=E_{ir}E_{rs}E_{sl}=E_{il}.
 $$
 
-The sandwich with two elementary matrices carries the corner $A_{rs}$ to the corner $A_{il}$:
+The two-sided operator with two elementary matrices carries the corner $A_{rs}$ to the corner $A_{il}$:
 
 $$
 E_{ir}E_{rs}E_{sl}=E_{il}.
 $$
 
-The general sandwich is a linear combination of these elementary corner maps, with coefficients $a_{ir}b_{sl}$.
+The general two-sided operator is a linear combination of these elementary corner maps, with coefficients $a_{ir}b_{sl}$.
 
-**The corner matrix.** The four-by-four grid of Peirce corners $A_{ij}=\mathbb{C}E_{ij}$ is acted on by the sandwich as
+**The corner matrix.** The four-by-four grid of Peirce corners $A_{ij}=\mathbb{C}E_{ij}$ is acted on by the two-sided operator as
 
 $$
 A_{rs}\longmapsto\sum_{i,l}a_{ir}b_{sl}A_{il}.
 $$
 
-The row index of the corner is transformed by $a$, the column index by $b$. The sandwich is the tensor product of the two actions, and its matrix on the $16$-dimensional space of corners is $a\otimes b^{\mathsf T}$.
+The row index of the corner is transformed by $a$, the column index by $b$. The two-sided operator is the tensor product of the two actions, and its matrix on the $16$-dimensional space of corners is $a\otimes b^{\mathsf T}$.
 
 **The adjoint on the units.** The adjoint is
 
@@ -254,9 +254,9 @@ These are real-linear or conjugate-linear maps, not elements of $\operatorname{A
 
 **The Lie algebra.** The automorphism group $PGL_4$ has Lie algebra $\mathfrak{sl}_4$, and the adjoint action of the group on $M_4$ is the exponentiation of the adjoint action of the Lie algebra. The orbit of an element is its conjugacy class; the orbit classification is *The Adjoint Action, the Orbits and the Flag Variety of $M_4(\mathbb{C})$*.
 
-## The Sandwich as a Map of Corners
+## The Two-Sided Operator as a Map of Corners
 
-**The corner map.** The sandwich $L_{a}R_{b}$ is the most general linear map built from one left multiplication and one right multiplication. On the corners,
+**The corner map.** The two-sided operator $L_{a}R_{b}$ is the most general linear map built from one left multiplication and one right multiplication. On the corners,
 
 $$
 L_{a}R_{b}(A_{rs})=\sum_{i,l}a_{ir}b_{sl}A_{il}.
@@ -264,13 +264,13 @@ $$
 
 The coefficient of $A_{il}$ is the product of the $(i,r)$ entry of $a$ and the $(s,l)$ entry of $b$. The map is the tensor product of the row action and the column action; it sends the corner $(r,s)$ to a linear combination of the corners $(i,l)$.
 
-**The elementary corner maps.** The elementary sandwich $L_{E_{ir}}R_{E_{sl}}$ sends the corner $A_{rs}$ to the corner $A_{il}$:
+**The elementary corner maps.** The elementary two-sided operator $L_{E_{ir}}R_{E_{sl}}$ sends the corner $A_{rs}$ to the corner $A_{il}$:
 
 $$
 L_{E_{ir}}R_{E_{sl}}(A_{rs})=A_{il}.
 $$
 
-The elementary corner maps are the matrix units of the space of corner maps; the general sandwich is a linear combination with coefficients $a_{ir}b_{sl}$.
+The elementary corner maps are the matrix units of the space of corner maps; the general two-sided operator is a linear combination with coefficients $a_{ir}b_{sl}$.
 
 **The inner automorphism.** For $b=a^{-1}$,
 
@@ -280,11 +280,11 @@ $$
 
 is the inner automorphism $\Phi_a$. On the corners, it sends $A_{rs}$ to a linear combination of the corners $A_{il}$ with coefficients $a_{ir}(a^{-1})_{sl}$. The inner automorphism preserves the trace and the determinant but not the individual corners in general: it preserves each corner line exactly when $a$ is diagonal in the frame, and a permutation matrix permutes the spectral lines.
 
-**The sandwich and the Peirce table.** The sandwich acts on the two-sided Peirce table of *The Rank-Two Split of $M_4(\mathbb{C})$* by transforming the row index with $a$ and the column index with $b$. For the rank-two split with $\Pi=P_+$, the sandwich with block-diagonal $a,b$ preserves the four corners; the sandwich with off-diagonal $a$ or $b$ mixes the corners. The mass block $\mathcal{B}$ is carried to the corner determined by the row of $a$ and the column of $b$.
+**The two-sided operator and the Peirce table.** The two-sided operator acts on the two-sided Peirce table of *The Rank-Two Split of $M_4(\mathbb{C})$* by transforming the row index with $a$ and the column index with $b$. For the rank-two split with $\Pi=P_+$, the two-sided operator with block-diagonal $a,b$ preserves the four corners; the two-sided operator with off-diagonal $a$ or $b$ mixes the corners. The mass block $\mathcal{B}$ is carried to the corner determined by the row of $a$ and the column of $b$.
 
 ## Summary
 
-The four operators on $M_4$ are the left multiplication $L_a(X)=aX$, the right multiplication $R_a(X)=Xa$, the sandwich $L_{a}R_{b}(X)=aXb$ and the adjoint $\operatorname{ad}_a(X)=[a,X]$. They satisfy $L_{a}R_{b}=R_bL_a$ and $\operatorname{ad}_a=L_a-R_a$. On the matrix units, $L_a$ moves the row index, $R_a$ moves the column index, $L_{a}R_{b}$ moves both, and $\operatorname{ad}_a$ is the difference. The matrices are $L_a=a\otimes I$, $R_b=I\otimes b^{\mathsf T}$, $L_{a}R_{b}=a\otimes b^{\mathsf T}$ and $\operatorname{ad}_a=a\otimes I-I\otimes a^{\mathsf T}$; the eigenvalues are the eigenvalues of $a$, of $b$, and the differences $\lambda_i-\lambda_j$. The derivations of $M_4$ are exactly the inner derivations, $\operatorname{Der}(M_4)\cong\mathfrak{sl}_4$, of dimension $15$; the automorphisms are exactly the inner automorphisms, $\operatorname{Aut}(M_4)\cong PGL_4$, of dimension $15$. There are no outer derivations and no complex-linear outer automorphisms; the transpose and the conjugations are anti-automorphisms or conjugate-linear maps. The sandwich is the corner map $A_{rs}\mapsto\sum a_{ir}b_{sl}A_{il}$; the elementary sandwich $L_{E_{ir}}R_{E_{sl}}$ carries the corner $A_{rs}$ to the corner $A_{il}$.
+The four operators on $M_4$ are the left multiplication $L_a(X)=aX$, the right multiplication $R_a(X)=Xa$, the two-sided operator $L_{a}R_{b}(X)=aXb$ and the adjoint $\operatorname{ad}_a(X)=[a,X]$. They satisfy $L_{a}R_{b}=R_bL_a$ and $\operatorname{ad}_a=L_a-R_a$. On the matrix units, $L_a$ moves the row index, $R_a$ moves the column index, $L_{a}R_{b}$ moves both, and $\operatorname{ad}_a$ is the difference. The matrices are $L_a=a\otimes I$, $R_b=I\otimes b^{\mathsf T}$, $L_{a}R_{b}=a\otimes b^{\mathsf T}$ and $\operatorname{ad}_a=a\otimes I-I\otimes a^{\mathsf T}$; the eigenvalues are the eigenvalues of $a$, of $b$, and the differences $\lambda_i-\lambda_j$. The derivations of $M_4$ are exactly the inner derivations, $\operatorname{Der}(M_4)\cong\mathfrak{sl}_4$, of dimension $15$; the automorphisms are exactly the inner automorphisms, $\operatorname{Aut}(M_4)\cong PGL_4$, of dimension $15$. There are no outer derivations and no complex-linear outer automorphisms; the transpose and the conjugations are anti-automorphisms or conjugate-linear maps. The two-sided operator is the corner map $A_{rs}\mapsto\sum a_{ir}b_{sl}A_{il}$; the elementary two-sided operator $L_{E_{ir}}R_{E_{sl}}$ carries the corner $A_{rs}$ to the corner $A_{il}$.
 
 $$
 \boxed{\ \operatorname{Der}(M_4)\cong\mathfrak{sl}_4,\ \dim=15;\qquad \operatorname{Aut}(M_4)\cong PGL_4,\ \dim=15;\qquad \operatorname{rank}\operatorname{ad}_a=16-\sum_i m_i^2. }
@@ -303,7 +303,7 @@ $$
 |---|---|
 | $L_a$ | left multiplication $X\mapsto aX$ |
 | $R_a$ | right multiplication $X\mapsto Xa$ |
-| $L_{a}R_{b}$ | sandwich $X\mapsto aXb$ |
+| $L_{a}R_{b}$ | two-sided operator $X\mapsto aXb$ |
 | $\operatorname{ad}_a$ | adjoint $X\mapsto[a,X]$ |
 | $\operatorname{Der}(M_4)$ | the derivation algebra, $\cong\mathfrak{sl}_4$ |
 | $\operatorname{Aut}(M_4)$ | the automorphism group, $\cong PGL_4$ |
@@ -319,5 +319,5 @@ $$
 - [The Rank-Two Split of $M_4(\mathbb{C})$](the-rank-two-split-of-m4c.html), for the two-sided Peirce table.
 - [The Numerical Range of the Two-Sided Operators of $M_4(\mathbb{C})$](the-numerical-range-of-the-two-sided-operators-of-m4c.html), for the field of values of $L_{a}R_{b}$ and the product bound.
 - [The Adjoint Action, the Orbits and the Flag Variety of $M_4(\mathbb{C})$](the-adjoint-action-the-orbits-and-the-flag-variety-of-m4c.html), for the conjugation action and its orbits.
-- [The Matrix Algebra $M_4(\mathbb{C})$](the-matrix-algebra-m4c.html), for the construction of the algebra from the sandwich map and the four-dimensional case.
-- [Operators Acting 2 Side](operators-acting-2-side.html), for the same construction on the four-dimensional carrier.
+- [The Matrix Algebra $M_4(\mathbb{C})$](the-matrix-algebra-m4c.html), for the construction of the algebra from the two-sided map and the four-dimensional case.
+- [Operators Acting on Two Sides](operators-acting-on-two-sides.html), for the same construction on the four-dimensional carrier.

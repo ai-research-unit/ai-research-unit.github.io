@@ -18,7 +18,7 @@ $$
 
 is an orthogonal direct sum. If $e$ is not Hermitian, $P_e$ is not self-adjoint, the corners need not be orthogonal, and the form may pair the corner of $e$ with the corner of $e^*$; the symplectic matrix algebra and the split algebra with the exchange involution are the standard examples. The article proves the adjoint identity, the kernel–image form of it, and the orthogonal Peirce theorem, and it computes the three cases.
 
-The article is the form-theoretic companion of *The Sandwich Operators on the Peirce Components*, *Left and Right Multiplication on the Diagonal Peirce Part* and *Idempotents and Involutions of an Algebra*. The Peirce decomposition is that of *Unital Algebras*, §*Idempotents and the Peirce Decomposition*; the involutions are *Involutive Algebras*; the Hermitian idempotents and their Peirce theory are *Hermitian Idempotents and the Peirce Decomposition*; the form theory is *Hermitian Forms on a Sesqualgebra* and *Hermitian Forms over Algebras and Norms*; and the matrix and symplectic examples are *Matrix Algebras* and *The Unitary and Symplectic Groups*. The article uses no positivity and no topology.
+The article is the form-theoretic companion of *The Two-Sided Operators on the Peirce Components*, *Left and Right Multiplication on the Diagonal Peirce Part* and *Idempotents and Involutions of an Algebra*. The Peirce decomposition is that of *Unital Algebras*, §*Idempotents and the Peirce Decomposition*; the involutions are *Involutive Algebras*; the Hermitian idempotents and their Peirce theory are *Hermitian Idempotents and the Peirce Decomposition*; the form theory is *Hermitian Forms on a Sesqualgebra* and *Hermitian Forms over Algebras and Norms*; and the matrix and symplectic examples are *Matrix Algebras* and *The Unitary and Symplectic Groups*. The article uses no positivity and no topology.
 
 Throughout, $k$ is a field, $A$ is a finite-dimensional unital associative $k$-algebra with $1\neq0$, and $*$ is an involution of $A$. The form $\langle-,-\rangle:A\times A\to k$ is nondegenerate and **associative Hermitian**: for all $a,x,y\in A$,
 
@@ -216,7 +216,7 @@ Let $A$ be a finite-dimensional involutive algebra with a nondegenerate associat
 | $\dagger$ | the operator adjoint, $T\mapsto T^\dagger$ |
 | $\langle-,-\rangle$ | the associative Hermitian form |
 | $L_a,R_a$ | left and right multiplication |
-| $L_{a}R_{b}$ | the sandwich $x\mapsto axb$ |
+| $L_{a}R_{b}$ | the two-sided operator $x\mapsto axb$ |
 | $P_e=L_{e}R_{e}$ | the Peirce projection onto $eAe$ |
 | $E_{ij}=L_{e_i}R_{e_j}$ | the Peirce projection onto $A_{ij}$ |
 | $e^*$ | the adjoint idempotent |

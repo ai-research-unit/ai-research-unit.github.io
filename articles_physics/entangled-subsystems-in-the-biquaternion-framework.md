@@ -135,7 +135,7 @@ The measurement problem is the fact that standard quantum physics has two kinds 
 The biquaternion framework has something structural to offer here. In standard quantum physics, $*$-unitary evolution and projective collapse are different postulates, governing different types of process. In the biquaternion framework, both are properties of *acting elements* of the algebra:
 
 - **$*$-Unitary elements** $\tilde Q$ satisfy $\tilde Q\tilde Q^{*} = e_t$ and generate reversible evolution by rotor conjugation.
-- **Idempotent elements** $\tilde\Pi$ satisfy $\tilde\Pi^2 = \tilde\Pi$ and generate irreversible projection by the sandwich operation.
+- **Idempotent elements** $\tilde\Pi$ satisfy $\tilde\Pi^2 = \tilde\Pi$ and generate irreversible projection by the two-sided operation.
 
 The reversible/irreversible dichotomy is not an additional postulate; it is the algebraic dichotomy between two classes of elements of one algebra. This is a genuine reframing: the measurement problem is no longer "two incompatible dynamics glued together" but "one algebra with two classes of elements."
 

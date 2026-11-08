@@ -52,7 +52,7 @@ with $x^2 = \sum_{\rho}x_\rho x_\rho$. The conformal group contains the Poincar�
 
 ### What the algebra carries, and what it does not
 
-Six of the fifteen generators — the Lorentz ones — are elements of $\mathbb{B}$: the rotations are $\vec e_k$ and the boosts $B_{\mathrm{boost},k} = i\vec e_k$, and the Lorentz group acts by $\tilde{Q}\mapsto\tilde{U}\tilde{Q}\tilde{U}^{*}$. The dilation is realised by a non-unit element $\sqrt{\lambda}\,e_t$, which scales the biquaternion norm without preserving it. The translations and the special conformal transformations are not elements of the algebra and are not linear on $\mathbb{B}_{\Phi}$: the special conformal transformation is a fractional map obtained by sandwiching a translation between two inversions, and the inversion itself is the algebra inverse composed with parity,
+Six of the fifteen generators — the Lorentz ones — are elements of $\mathbb{B}$: the rotations are $\vec e_k$ and the boosts $B_{\mathrm{boost},k} = i\vec e_k$, and the Lorentz group acts by $\tilde{Q}\mapsto\tilde{U}\tilde{Q}\tilde{U}^{*}$. The dilation is realised by a non-unit element $\sqrt{\lambda}\,e_t$, which scales the biquaternion norm without preserving it. The translations and the special conformal transformations are not elements of the algebra and are not linear on $\mathbb{B}_{\Phi}$: the special conformal transformation is a fractional map obtained by placing a translation between two inversions, and the inversion itself is the algebra inverse composed with parity,
 $$
 I(\tilde{Q}) = \frac{\tilde{Q}^{\natural}}{\langle\tilde{Q}\rangle_{\natural}} ,
 \qquad
@@ -113,7 +113,7 @@ which was verified numerically at five random points with a maximum residual of 
 
 ### The special conformal transformations
 
-The special conformal transformation is a translation sandwiched between two inversions,
+The special conformal transformation is a translation placed between two inversions,
 $$
 \tilde{Q} \longmapsto I\bigl(I(\tilde{Q}) + \tilde{Q}_3^{\natural}\bigr) ,
 \qquad \tilde{Q}_3 \in \mathbb{B}_{\Phi} ,

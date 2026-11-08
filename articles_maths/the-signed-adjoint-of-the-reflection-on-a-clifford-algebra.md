@@ -3,23 +3,23 @@
 
 ## Introduction
 
-A **reflection** of a Clifford algebra is a reflection-shaped signed sandwich
+A **reflection** of a Clifford algebra is a reflection-shaped signed two-sided operator
 
 $$
 \Sigma^{\alpha}_{a,a^{-1}}(x)=a\,\alpha(x)\,a^{-1} , \qquad a\,\alpha(a)=1 ,
 $$
 
-the parameter $a$ satisfying the reflection condition; for a non-isotropic vector $u$ it is the geometric reflection $\rho_u$ of the quadratic space, and the family generates the orthogonal group by *Reflections as Signed Two-Sided Operators on a Clifford Algebra*. The adjoint formula of *The Signed Adjoint Sandwich on a Clifford Algebra* gives
+the parameter $a$ satisfying the reflection condition; for a non-isotropic vector $u$ it is the geometric reflection $\rho_u$ of the quadratic space, and the family generates the orthogonal group by *Reflections as Signed The Family of Two-Sided Operators on a Clifford Algebra*. The adjoint formula of *The Signed Adjoint Two-Sided Operator on a Clifford Algebra* gives
 
 $$
 \bigl(\Sigma^{\alpha}_{a,a^{-1}}\bigr)^{*}=\Sigma^{\alpha}_{\alpha(a^{-1}),\alpha(a)} ,
 $$
 
-and the reflection condition $\alpha(a)=a^{-1}$ collapses the two parameters: **every reflection is self-adjoint**. The article proves this, generalises it to the criterion that a reflection-shaped sandwich is self-adjoint exactly when $\alpha(a)a$ is central, exhibits the failure of self-adjointness by an explicit non-central element, and reads the $\pm1$-eigenspace decomposition of a reflection as the spectral decomposition of a self-adjoint involution.
+and the reflection condition $\alpha(a)=a^{-1}$ collapses the two parameters: **every reflection is self-adjoint**. The article proves this, generalises it to the criterion that a reflection-shaped two-sided operator is self-adjoint exactly when $\alpha(a)a$ is central, exhibits the failure of self-adjointness by an explicit non-central element, and reads the $\pm1$-eigenspace decomposition of a reflection as the spectral decomposition of a self-adjoint involution.
 
 ## The Adjoint of a Reflection
 
-**Definition.** A **reflection** of the Clifford algebra is a signed sandwich $\Sigma^{\alpha}_{a,a^{-1}}$ with $a$ a unit satisfying the **reflection condition** $a\,\alpha(a)=1$, equivalently $\alpha(a)=a^{-1}$; the **reflection-shaped** sandwiches are those of the form $\Sigma^{\alpha}_{a,a^{-1}}$ with no condition on $a\alpha(a)$.
+**Definition.** A **reflection** of the Clifford algebra is a signed two-sided operator $\Sigma^{\alpha}_{a,a^{-1}}$ with $a$ a unit satisfying the **reflection condition** $a\,\alpha(a)=1$, equivalently $\alpha(a)=a^{-1}$; the **reflection-shaped** two-sided operators are those of the form $\Sigma^{\alpha}_{a,a^{-1}}$ with no condition on $a\alpha(a)$.
 
 **Theorem.** Every reflection is self-adjoint for the standard form:
 
@@ -29,21 +29,21 @@ $$
 
 **Proof.** The general formula gives $\bigl(\Sigma^{\alpha}_{a,a^{-1}}\bigr)^{*}=\Sigma^{\alpha}_{\alpha(a^{-1}),\alpha(a)}$. Since $\alpha$ is an automorphism and $\alpha(a)=a^{-1}$, one has $\alpha(a^{-1})=\alpha(a)^{-1}=a$; the adjoint is therefore $\Sigma^{\alpha}_{a,a^{-1}}$.
 
-**Corollary.** The grade involution $\alpha=\Sigma^{\alpha}_{1,1}$ is self-adjoint; the reflection attached to an orthogonal element, $\hat aa=1$, is self-adjoint by *The Adjoint of the Left Multiplication on a Clifford Algebra*; and the reflections form a family whose members are all self-adjoint, in contrast with the general signed sandwiches, whose adjoint reverses and conjugates the parameters.
+**Corollary.** The grade involution $\alpha=\Sigma^{\alpha}_{1,1}$ is self-adjoint; the reflection attached to an orthogonal element, $\hat aa=1$, is self-adjoint by *The Adjoint of the Left Multiplication on a Clifford Algebra*; and the reflections form a family whose members are all self-adjoint, in contrast with the general signed two-sided operators, whose adjoint reverses and conjugates the parameters.
 
 **Remark (the parity of the parameter).** The reflection condition reads differently according to the parity of $a$: for an even $a$ one has $\alpha(a)=a$, so the condition is $a^{2}=1$ and the reflection is the conjugation $\Sigma^{\alpha}_{a,a}=\Sigma_{a,a}$; for an odd $a$ one has $\alpha(a)=-a$, so the condition is $a\alpha(a)=-a^2=1$, that is $\hat aa=1$ with $\hat a=-a$, and the reflection is the usual reflection by a normalised vector.
 
 ## The Self-Adjointness Criterion
 
-**Theorem.** Let $a$ be a unit. Then the reflection-shaped sandwich $\Sigma^{\alpha}_{a,a^{-1}}$ is self-adjoint if and only if $\alpha(a)a$ is central. In particular every reflection ($\alpha(a)a=1$) is self-adjoint, and the self-adjointness of a reflection-shaped sandwich is exactly the centrality of the product of the parameter with its grade-twisted value.
+**Theorem.** Let $a$ be a unit. Then the reflection-shaped two-sided operator $\Sigma^{\alpha}_{a,a^{-1}}$ is self-adjoint if and only if $\alpha(a)a$ is central. In particular every reflection ($\alpha(a)a=1$) is self-adjoint, and the self-adjointness of a reflection-shaped two-sided operator is exactly the centrality of the product of the parameter with its grade-twisted value.
 
-**Proof.** By the adjoint formula, $\bigl(\Sigma^{\alpha}_{a,a^{-1}}\bigr)^{*}=\Sigma^{\alpha}_{\alpha(a)^{-1},\alpha(a)}$, which is the reflection-shaped sandwich $\Sigma^{\alpha}_{b,b^{-1}}$ with $b=\alpha(a)^{-1}$. By the injectivity-up-to-the-centre of the reflection correspondence of *Reflections as Signed Two-Sided Operators on a Clifford Algebra*, two reflection-shaped sandwiches coincide exactly when the products $b^{-1}a$ differ by a central unit; here $b^{-1}a=\alpha(a)a$. Hence self-adjointness holds exactly when $\alpha(a)a$ is central.
+**Proof.** By the adjoint formula, $\bigl(\Sigma^{\alpha}_{a,a^{-1}}\bigr)^{*}=\Sigma^{\alpha}_{\alpha(a)^{-1},\alpha(a)}$, which is the reflection-shaped two-sided operator $\Sigma^{\alpha}_{b,b^{-1}}$ with $b=\alpha(a)^{-1}$. By the injectivity-up-to-the-centre of the reflection correspondence of *Reflections as Signed The Family of Two-Sided Operators on a Clifford Algebra*, two reflection-shaped two-sided operators coincide exactly when the products $b^{-1}a$ differ by a central unit; here $b^{-1}a=\alpha(a)a$. Hence self-adjointness holds exactly when $\alpha(a)a$ is central.
 
-**Corollary.** The centrality criterion is the algebraic relaxation of the reflection condition: the reflections are the case in which $\alpha(a)a=1$ is central trivially, and the wider family of reflection-shaped sandwiches is self-adjoint up to the centre of the algebra. In the central-simple case, where the centre is the scalars, $\Sigma^{\alpha}_{a,a^{-1}}$ is self-adjoint exactly when $\alpha(a)a\in F\cdot1$.
+**Corollary.** The centrality criterion is the algebraic relaxation of the reflection condition: the reflections are the case in which $\alpha(a)a=1$ is central trivially, and the wider family of reflection-shaped two-sided operators is self-adjoint up to the centre of the algebra. In the central-simple case, where the centre is the scalars, $\Sigma^{\alpha}_{a,a^{-1}}$ is self-adjoint exactly when $\alpha(a)a\in F\cdot1$.
 
 ## Failure in the Degenerate Case
 
-**Definition.** A reflection-shaped sandwich is **reflection-degenerate** when $a\alpha(a)$ is not central, and **totally degenerate** when $a$ is not a unit and $\Sigma^{\alpha}_{a,a^{-1}}$ is not defined.
+**Definition.** A reflection-shaped two-sided operator is **reflection-degenerate** when $a\alpha(a)$ is not central, and **totally degenerate** when $a$ is not a unit and $\Sigma^{\alpha}_{a,a^{-1}}$ is not defined.
 
 **Theorem (failure of self-adjointness).** There exist Clifford algebras and units $a$ for which $\Sigma^{\alpha}_{a,a^{-1}}$ is not self-adjoint. Concretely, in the Euclidean Clifford algebra $\mathrm{Cl}_4$ with $e_1^2=e_2^2=e_3^2=e_4^2=-1$ and the standard form, the even element $a=1+e_1e_2$ is a unit, its grade-twisted product is $\alpha(a)a=a^{2}=2e_1e_2$, which is not central, and the conjugation by $a$ has adjoint the conjugation by $a^{-1}$:
 
@@ -51,13 +51,13 @@ $$
 \boxed{\;\Sigma^{\alpha}_{a,a^{-1}}=L_{a}R_{a^{-1}} , \qquad \bigl(L_{a}R_{a^{-1}}\bigr)^{*}=L_{a^{-1}}R_{a}\neq L_{a}R_{a^{-1}}\;} .
 $$
 
-**Proof.** For the even element $a$ one has $\alpha(a)=a$, so $\alpha(a)a=a^2$. The square is computed from $a^2=(1+e_1e_2)^2=1+2e_1e_2+(e_1e_2)^2=1+2e_1e_2-1=2e_1e_2$, which is not central in the central-simple algebra $\mathrm{Cl}_4$; by the criterion the sandwich is not self-adjoint. The adjoint is $L_{a^{-1}}R_{a}$ by the general formula, with $a^{-1}=(1-e_1e_2)/2$, and the two conjugations differ: on the vector $e_1$,
+**Proof.** For the even element $a$ one has $\alpha(a)=a$, so $\alpha(a)a=a^2$. The square is computed from $a^2=(1+e_1e_2)^2=1+2e_1e_2+(e_1e_2)^2=1+2e_1e_2-1=2e_1e_2$, which is not central in the central-simple algebra $\mathrm{Cl}_4$; by the criterion the two-sided operator is not self-adjoint. The adjoint is $L_{a^{-1}}R_{a}$ by the general formula, with $a^{-1}=(1-e_1e_2)/2$, and the two conjugations differ: on the vector $e_1$,
 
 $$
 a\,e_1\,a^{-1}=e_2 , \qquad a^{-1}\,e_1\,a=-e_2 .
 $$
 
-**Corollary (the totally degenerate case).** When $a$ is not a unit the reflected sandwich does not exist; the operator $\Sigma^{\alpha}_{a,a}$ is defined for every $a$, and its square is
+**Corollary (the totally degenerate case).** When $a$ is not a unit the reflected two-sided operator does not exist; the operator $\Sigma^{\alpha}_{a,a}$ is defined for every $a$, and its square is
 
 $$
 \boxed{\;\Sigma^{\alpha}_{a,a}\circ\Sigma^{\alpha}_{a,a}=\Sigma_{a\alpha(a),\,\alpha(a)a}\;} ,
@@ -97,17 +97,17 @@ In $\mathrm{Cl}_4$ with the negative-definite form and the even unit $a=1+e_1e_2
 
 ## Summary
 
-A **signed reflection** $\Sigma^{\alpha}_{a,a^{-1}}$ with the reflection condition $a\alpha(a)=1$ has adjoint $\Sigma^{\alpha}_{\alpha(a^{-1}),\alpha(a)}$, which equals the reflection itself because $\alpha(a)=a^{-1}$; therefore **every reflection is self-adjoint** for the standard form. More generally, a reflection-shaped sandwich is self-adjoint exactly when the product $\alpha(a)a$ is **central**, the centrality being the relaxation of the reflection normalisation, and in the central-simple case the criterion reads $\alpha(a)a\in F\cdot1$. The **degenerate** case in which $\alpha(a)a$ is not central gives a reflection-shaped sandwich that is not self-adjoint; the explicit example is the conjugation by the even unit $a=1+e_1e_2$ in $\mathrm{Cl}_4$ with the negative-definite form, whose adjoint is the conjugation by $a^{-1}$ and which differs from it on $e_1$. The **totally degenerate** case, in which $a$ is not a unit, produces no reflection; the operator $\Sigma^{\alpha}_{a,a}$ has square $\Sigma_{a\alpha(a),\alpha(a)a}$, which is zero for an isotropic vector $u$ and makes $\Sigma^{\alpha}_{u,u}$ square-zero. The $\pm1$-eigenspace decomposition of a reflection is its spectral decomposition, the fixed part being $\alpha(x)=a^{-1}xa$ and, on the quadratic space, the hyperplane $u^{\perp}$. The analytic spectral theory of the self-adjoint reflections belongs to a later Part.
+A **signed reflection** $\Sigma^{\alpha}_{a,a^{-1}}$ with the reflection condition $a\alpha(a)=1$ has adjoint $\Sigma^{\alpha}_{\alpha(a^{-1}),\alpha(a)}$, which equals the reflection itself because $\alpha(a)=a^{-1}$; therefore **every reflection is self-adjoint** for the standard form. More generally, a reflection-shaped two-sided operator is self-adjoint exactly when the product $\alpha(a)a$ is **central**, the centrality being the relaxation of the reflection normalisation, and in the central-simple case the criterion reads $\alpha(a)a\in F\cdot1$. The **degenerate** case in which $\alpha(a)a$ is not central gives a reflection-shaped two-sided operator that is not self-adjoint; the explicit example is the conjugation by the even unit $a=1+e_1e_2$ in $\mathrm{Cl}_4$ with the negative-definite form, whose adjoint is the conjugation by $a^{-1}$ and which differs from it on $e_1$. The **totally degenerate** case, in which $a$ is not a unit, produces no reflection; the operator $\Sigma^{\alpha}_{a,a}$ has square $\Sigma_{a\alpha(a),\alpha(a)a}$, which is zero for an isotropic vector $u$ and makes $\Sigma^{\alpha}_{u,u}$ square-zero. The $\pm1$-eigenspace decomposition of a reflection is its spectral decomposition, the fixed part being $\alpha(x)=a^{-1}xa$ and, on the quadratic space, the hyperplane $u^{\perp}$. The analytic spectral theory of the self-adjoint reflections belongs to a later Part.
 
 ## Summary of Notation
 
 | Symbol | Meaning |
 |---|---|
-| $\Sigma^{\alpha}_{a,b}(x)=a\alpha(x)b$ | Signed sandwich |
-| $\Sigma^{\alpha}_{a,a^{-1}}$ | Reflection-shaped sandwich |
+| $\Sigma^{\alpha}_{a,b}(x)=a\alpha(x)b$ | Signed two-sided operator |
+| $\Sigma^{\alpha}_{a,a^{-1}}$ | Reflection-shaped two-sided operator |
 | $a\alpha(a)=1$ | Reflection condition; $\alpha(a)=a^{-1}$ |
 | $\bigl(\Sigma^{\alpha}_{a,a^{-1}}\bigr)^{*}=\Sigma^{\alpha}_{a,a^{-1}}$ | Self-adjointness of every reflection |
-| $\alpha(a)a$ central | Criterion for self-adjointness of a reflection-shaped sandwich |
+| $\alpha(a)a$ central | Criterion for self-adjointness of a reflection-shaped two-sided operator |
 | $\Sigma^{\alpha}_{u,u}$, $\Sigma_{0,0}=0$ | Square-zero limit for an isotropic vector |
 | $A_{\pm}$ | $\pm1$-eigenspaces of a reflection |
 | $u^{\perp}$, $Fu$ | Fixed hyperplane and anti-fixed line of a geometric reflection |

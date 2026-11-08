@@ -16,7 +16,7 @@ $$
 $$
 The involution $C$ is $C=-\sigma_2\otimes\sigma_2$; it satisfies $C^2=I_4$ and $C=C^{\dagger}$.
 
-**Boundaries.** The representation and its first properties are *$M_4(\mathbb{C})$ Axis-Free Representation*; the operator reading of the same group is *Operators Acting 2 Side*. The $2\times2$ companion is *The General Quaternionic Algebra in the $2\times2$ Matrix Element Representation*. The form is *The Four Forms and the Four Algebraic Norms over the Biquaternion Algebra*.
+**Boundaries.** The representation and its first properties are *$M_4(\mathbb{C})$ Axis-Free Representation*; the operator reading of the same group is *Operators Acting on Two Sides*. The $2\times2$ companion is *The General Quaternionic Algebra in the $2\times2$ Matrix Element Representation*. The form is *The Four Forms and the Four Algebraic Norms over the Biquaternion Algebra*.
 
 ## The Representation
 
@@ -184,7 +184,7 @@ The left regular representation in the canonical frame is $\mathsf M_{4L}(\tilde
 ## Further Reading
 
 - [The $M_4(\mathbb{C})$ Axis-Free Representation](m4c-axis-free-representation.html), for the representation and its first properties
-- [Operators Acting 2 Side](operators-acting-2-side.html), for the operator reading of the same group
+- [Operators Acting on Two Sides](operators-acting-on-two-sides.html), for the operator reading of the same group
 - [Introduction to the General Quaternionic Algebra of the Biquaternions](introduction-to-the-general-quaternionic-algebra-of-the-biquaternions.html), for the quaternionic product on the algebra
 - [The Four Forms and the Four Algebraic Norms over the Biquaternion Algebra](the-four-forms-and-the-four-algebraic-norms-over-the-biquaternion-algebra.html), for the form on the algebra
 - [$M_2(\mathbb C)$ Representation : The General Quaternionic Algebra of Biquaternions](m2c-representation-the-general-quaternionic-algebra-of-biquaternions.html), for the companion reading of the group

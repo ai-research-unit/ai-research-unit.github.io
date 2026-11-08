@@ -8,9 +8,9 @@ $$
 \rho_U(T)=U\,\alpha(T)\,U^{-1},
 $$
 
-one for each operator $U$ whose product $U\alpha(U)$ with its twist is central, that is, a scalar. Each such $\rho_U$ is the signed sandwich $\mathcal{T}_{U,U^{-1}}$ of *The Signed Sandwich on a Hilbert Space*, and the present article studies the correspondence between these reflections and the operators that produce them, computes the fixed part and the negated part, records the isometry and unitarity properties that the Hilbert structure makes available, and isolates the cases in which the correspondence degenerates.
+one for each operator $U$ whose product $U\alpha(U)$ with its twist is central, that is, a scalar. Each such $\rho_U$ is the signed two-sided operator $\mathcal{T}_{U,U^{-1}}$ of *The Signed Two-Sided Operator on a Hilbert Space*, and the present article studies the correspondence between these reflections and the operators that produce them, computes the fixed part and the negated part, records the isometry and unitarity properties that the Hilbert structure makes available, and isolates the cases in which the correspondence degenerates.
 
-The algebra $B(H)$ and the involution are *Bounded Operators on a Hilbert Space*; the signed sandwich, its composition table and its invertibility are *The Signed Sandwich on a Hilbert Space*; the algebraic correspondence, of which the present article is the Hilbert-space reading, is *Reflections as Signed Two-Sided Operators on an Algebra* (Part I). The graded modules and the adjoint theory of the reflections are *The Graded Action on a Module over a Hilbert Space* and *The Signed Adjoint of the Reflection on a Hilbert Space*.
+The algebra $B(H)$ and the involution are *Bounded Operators on a Hilbert Space*; the signed two-sided operator, its composition table and its invertibility are *The Signed Two-Sided Operator on a Hilbert Space*; the algebraic correspondence, of which the present article is the Hilbert-space reading, is *Reflections as Signed Two-Sided Operators on an Algebra* (Part I). The graded modules and the adjoint theory of the reflections are *The Graded Action on a Module over a Hilbert Space* and *The Signed Adjoint of the Reflection on a Hilbert Space*.
 
 Throughout, $H=H^0\oplus H^1$ is a graded Hilbert space, $\Gamma$ is the parity operator, $\alpha(T)=\Gamma T\Gamma$ is the grade involution of $B(H)$, and $\rho_U(T)=U\alpha(T)U^{-1}$ is the signed conjugation by an invertible $U$. The reflectors are the invertible $U$ with $U\alpha(U)$ central, the set of reflections is written $\mathrm{Ref}(H,\alpha)$, and the group of invertible operators is $B(H)^\times$.
 
@@ -122,7 +122,7 @@ so a unitary reflector produces the conjugation by the unitary $U\Gamma$, and ev
 
 **Proposition (the trivial grading).** If $H^1=0$ then $\alpha=\mathrm{id}$ and every invertible $U$ is a reflector; the reflections are the inner automorphisms $\iota_U$, and the correspondence $\mathrm{Ref}\cong B(H)^\times/\mathbb{K}^\times$ is the standard identification of the inner automorphism group. No reflection beyond the inner automorphisms is produced.
 
-*Proof.* $\Gamma=I$, so $\alpha=\mathrm{id}$ and $U\alpha(U)=U^2$ is central only via the scalar condition; the signed sandwich reduces to the inner automorphism by $U$.
+*Proof.* $\Gamma=I$, so $\alpha=\mathrm{id}$ and $U\alpha(U)=U^2$ is central only via the scalar condition; the signed two-sided operator reduces to the inner automorphism by $U$.
 
 **Proposition (the non-reflector).** An invertible $U$ fails to be a reflector exactly when $U\alpha(U)$ is not a scalar, and then $\rho_U$ is an automorphism of infinite order in general; the signed conjugation is not a reflection, and the family $B(H)^\pm$ is not defined.
 

@@ -3,7 +3,7 @@
 
 ## Introduction
 
-The inversion of a group is its canonical involution, and on the group algebra it is the operator that reverses the order of a product. With respect to the natural pairing of the category it is self-adjoint, and it is exactly the operator that turns the left regular representation into the right one: the adjoint of the left multiplication by $a$ is the left multiplication by $a^{-1}$, and the parameter that appears is the inverted one. This article identifies the inversion with the adjoint operation on the indices of the translations, records the unit and the counit of the group algebra and the identities they satisfy with the inversion, and fixes the identification of the inversion with the involution of the group algebra. It is the second article of the `* Operator Theory` group; the pairing and the adjoint are from *Involutions on the Operator Layer*, the translations and the sandwich from *Left and Right Multiplication in a Group* and *The Signed Sandwich on a Group*, and the coalgebra structure named here is developed in a later category.
+The inversion of a group is its canonical involution, and on the group algebra it is the operator that reverses the order of a product. With respect to the natural pairing of the category it is self-adjoint, and it is exactly the operator that turns the left regular representation into the right one: the adjoint of the left multiplication by $a$ is the left multiplication by $a^{-1}$, and the parameter that appears is the inverted one. This article identifies the inversion with the adjoint operation on the indices of the translations, records the unit and the counit of the group algebra and the identities they satisfy with the inversion, and fixes the identification of the inversion with the involution of the group algebra. It is the second article of the `* Operator Theory` group; the pairing and the adjoint are from *Involutions on the Operator Layer*, the translations and the two-sided operator from *Left and Right Multiplication in a Group* and *The Signed Two-Sided Operator on a Group*, and the coalgebra structure named here is developed in a later category.
 
 Throughout, $k[G]$ is the group algebra with basis $G$, $\Sigma_{\iota}$ is the linear extension of the inversion, $L_a,R_b$ are the translations, and the pairing and adjoint are those fixed in *Involutions on the Operator Layer*.
 
@@ -23,9 +23,9 @@ and for a two-sided translation $(L_aR_b)^{*}=L_{a^{-1}}R_{b^{-1}}$.
 
 **Proof.** That $(L_a)^{*}=L_{a^{-1}}=L_{\iota(a)}$ is the theorem. The intertwining is the equation $L_{\iota(a)}=L_a^{*}$, read as the commuting square of the isomorphism $a\mapsto L_a$ with the inversion on $G$ and the adjoint on $L(G)$.
 
-**Proposition (the sandwich and the inversion).** For the unsigned sandwich $\Sigma_{a,b}(x)=axb$ one has $\Sigma_{a,b}^{*}=\Sigma_{a^{-1},b^{-1}}$; hence the sandwich is unitary for every pair $(a,b)$ and it is self-adjoint exactly when $a^{2}=b^{2}=e$.
+**Proposition (the two-sided operator and the inversion).** For the unsigned two-sided operator $\Sigma_{a,b}(x)=axb$ one has $\Sigma_{a,b}^{*}=\Sigma_{a^{-1},b^{-1}}$; hence the two-sided operator is unitary for every pair $(a,b)$ and it is self-adjoint exactly when $a^{2}=b^{2}=e$.
 
-**Proof.** Solving $\Sigma_{a,b}(x)=y$ gives $x=a^{-1}yb^{-1}$, so the matrix of $\Sigma_{a,b}$ is carried to that of $\Sigma_{a^{-1},b^{-1}}$ by transposition. The sandwich is invertible with inverse $\Sigma_{a^{-1},b^{-1}}$, which is its adjoint, hence unitary; it is self-adjoint exactly when $a=a^{-1}$ and $b=b^{-1}$.
+**Proof.** Solving $\Sigma_{a,b}(x)=y$ gives $x=a^{-1}yb^{-1}$, so the matrix of $\Sigma_{a,b}$ is carried to that of $\Sigma_{a^{-1},b^{-1}}$ by transposition. The two-sided operator is invertible with inverse $\Sigma_{a^{-1},b^{-1}}$, which is its adjoint, hence unitary; it is self-adjoint exactly when $a=a^{-1}$ and $b=b^{-1}$.
 
 **Remark (the inversion as the adjoint of the left multiplication).** The phrase of the title is the theorem in its exact form: the adjoint of the left multiplication by $a$ is the left multiplication by the inverse of $a$, so that the inversion is the operation the adjoint performs on the index of the translation. When the group is abelian and the parameters are identified with their translations, the adjoint is inversion itself on the operator's index.
 
@@ -67,7 +67,7 @@ where $m$ is the multiplication of $k[G]$. The first two say that the counit is 
 
 ## Summary
 
-The inversion of $G$ is the canonical involution, and on the operator layer it is the adjoint operation on the indices of the translations: $(L_a)^{*}=L_{a^{-1}}=L_{\iota(a)}$, $(R_b)^{*}=R_{b^{-1}}$, and the two-sided sandwich is unitary with $\Sigma_{a,b}^{*}=\Sigma_{a^{-1},b^{-1}}$. The adjoint of the left regular representation is the left regular representation of the inverted element, so the map $a\mapsto L_a$ intertwines the inversion with the adjoint.
+The inversion of $G$ is the canonical involution, and on the operator layer it is the adjoint operation on the indices of the translations: $(L_a)^{*}=L_{a^{-1}}=L_{\iota(a)}$, $(R_b)^{*}=R_{b^{-1}}$, and the two-sided operator is unitary with $\Sigma_{a,b}^{*}=\Sigma_{a^{-1},b^{-1}}$. The adjoint of the left regular representation is the left regular representation of the inverted element, so the map $a\mapsto L_a$ intertwines the inversion with the adjoint.
 
 On the group algebra the inversion is the antipode: with the unit $u(1)=e$, the counit $\varepsilon$ the augmentation and the comultiplication $\Delta(g)=g\otimes g$, the identities $(\varepsilon\otimes\mathrm{id})\Delta=\mathrm{id}=(\mathrm{id}\otimes\varepsilon)\Delta$ and $m(\mathrm{id}\otimes\Sigma_{\iota})\Delta=u\varepsilon=m(\Sigma_{\iota}\otimes\mathrm{id})\Delta$ hold, and $\Sigma_{\iota}$ is the unique $k$-linear map with $\Sigma_{\iota}(g)=g^{-1}$ for every $g$. The counit is the augmentation $\varepsilon(x)=\sum_g x_g$, whereas the pairing with $\delta_e$ reads the coefficient at the identity, the two agreeing on the basis and differing in general. Every group involution $\sigma$ extends to an involution $\Sigma_{\sigma}$ of the group algebra, and each such extension is self-adjoint, so the adjoint commutes with the extension; but the involution on the elements and the adjoint on the operators remain two structures, and their agreement is proved and not assumed.
 
@@ -76,7 +76,7 @@ On the group algebra the inversion is the antipode: with the unit $u(1)=e$, the 
 | Symbol | Meaning |
 |---|---|
 | $(L_a)^{*}=L_{a^{-1}}$, $(R_b)^{*}=R_{b^{-1}}$ | the adjoint inverts the parameter |
-| $\Sigma_{a,b}^{*}=\Sigma_{a^{-1},b^{-1}}$ | the sandwich is unitary |
+| $\Sigma_{a,b}^{*}=\Sigma_{a^{-1},b^{-1}}$ | the two-sided operator is unitary |
 | $u(1)=e$ | the unit of the group algebra |
 | $\varepsilon(g)=1$ | the counit, the augmentation |
 | $\Delta(g)=g\otimes g$ | the comultiplication |

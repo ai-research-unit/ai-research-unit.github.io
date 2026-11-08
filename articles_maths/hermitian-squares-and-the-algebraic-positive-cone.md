@@ -56,7 +56,7 @@ $$
 
 ## Congruence
 
-### Invariance under the Sandwich
+### Invariance under the Two-Sided Operator
 
 **Proposition.** Let $c \in C(A)$ and $x \in A$. Then $x^{*} c x \in C(A)$.
 

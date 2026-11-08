@@ -190,7 +190,7 @@ The pair is $(\langle\tilde Q\rangle_{\natural*},\langle\tilde Q\rangle_{\natura
 
 **Left multiplication.** If $\tilde Q$ is positive it is a unit, and $L_{\tilde Q}$ is a bijection of complex rank $4$. If $\tilde Q$ is negative, $L_{\tilde Q}$ has rank $4$ when $\tilde Q$ is a unit and rank $2$ when it is a zero divisor, by *The Four General Products and Their Relations over the Biquaternion Algebra*, §*The Annihilators*. The rank therefore follows the algebraic norm and not the Krein sign.
 
-**The sandwich.** The operator $\mathrm{Sd}_{\tilde Q}(X)=\tilde QX\tilde Q^{*}$ is singular exactly on the algebraic null cone, by *Relations between the N Norm and Spectral Regularity and Degeneracy*, §*The Sandwich*. On the positive region it is invertible throughout; on the negative region it is invertible exactly on the negative units and singular on the negative zero divisors.
+**The two-sided operator.** The operator $\mathrm{Sd}_{\tilde Q}(X)=\tilde QX\tilde Q^{*}$ is singular exactly on the algebraic null cone, by *Relations between the N Norm and Spectral Regularity and Degeneracy*, §*The Two-Sided Operator*. On the positive region it is invertible throughout; on the negative region it is invertible exactly on the negative units and singular on the negative zero divisors.
 
 **The polar decomposition.** The modulus–unit decomposition $\tilde Q=\Rho\tilde U$ requires $\Rho^2=\langle\tilde Q\rangle_{\natural}$ with $\Rho\neq0$, so it exists exactly on the unit group. It therefore exists throughout the positive region, and on the negative region exactly off the zero divisors. The decomposition itself is *The Polar Decomposition of an N-Regular Biquaternion*.
 
@@ -210,7 +210,7 @@ The pair is $(\langle\tilde Q\rangle_{\natural*},\langle\tilde Q\rangle_{\natura
 | multiplication | not closed: positive times positive can be negative, negative times negative positive, regular times regular null |
 | inversion | preserves the sign, with $\langle\tilde Q^{-1}\rangle_{\natural*}=\langle\tilde Q\rangle_{\natural*}/\lvert\langle\tilde Q\rangle_{\natural}\rvert^2$ |
 | algebraic classes | positive units, negative units, negative zero divisors; no positive zero divisor |
-| operators | left multiplication and the sandwich follow the algebraic norm; the polar decomposition exists exactly on the units |
+| operators | left multiplication and the two-sided operator follow the algebraic norm; the polar decomposition exists exactly on the units |
 
 The sector is the metric interior and exterior of the null set, taken together. It carries two signs, two topologies and three algebraic classes, and it is the whole of the algebra on which the Krein norm is a genuine measure: the positive region is the inside of the cone, the negative region the outside, and the null set between them is the degenerate sector.
 
@@ -230,7 +230,7 @@ The sector is the metric interior and exterior of the null set, taken together. 
 | $\mathbb{B}^6_1$ | the open unit ball of $\mathbb{C}^3$ |
 | $D^2$, $S^5$ | the open unit disk and the unit sphere of $\mathbb{C}^3$ |
 | $P_K$ | the Krein cone, the closure of the positive region |
-| $\mathrm{Sd}_{\tilde Q}(X)=\tilde QX\tilde Q^{*}$ | the sandwich |
+| $\mathrm{Sd}_{\tilde Q}(X)=\tilde QX\tilde Q^{*}$ | the two-sided operator |
 
 ## Further Reading
 
@@ -242,7 +242,7 @@ The sector is the metric interior and exterior of the null set, taken together. 
 - [The Krein Level Sets and the Hyperbolic Structure](the-krein-level-sets-and-the-hyperbolic-structure.html), for the level sets, their topology and the complex hyperbolic ball.
 - [The Krein Isometry Group and Its Cartan Decomposition](the-krein-isometry-group-and-its-cartan-decomposition.html), for the group $\mathrm{U}(1,3)$ and its action.
 - [N-Regularity and N-Degeneracy in the Biquaternion Algebra](n-regularity-and-n-degeneracy-in-the-biquaternion-algebra.html), for the multiplicative norm, the unit group and the zero-divisor cone.
-- [Relations between the N Norm and Spectral Regularity and Degeneracy](relations-between-the-n-norm-and-spectral-regularity-and-degeneracy.html), for the sandwich, the rank of left multiplication and the polar decomposition.
+- [Relations between the N Norm and Spectral Regularity and Degeneracy](relations-between-the-n-norm-and-spectral-regularity-and-degeneracy.html), for the two-sided operator, the rank of left multiplication and the polar decomposition.
 - [The Polar Decomposition of an N-Regular Biquaternion](the-polar-decomposition-of-an-n-regular-biquaternion.html), for the modulus $\Rho=\sqrt{\langle\tilde Q\rangle_{\natural}}$ and its failure at the algebraic null cone.
 - [Remarkable Subspaces under the General Quaternionic Sesqualgebra](remarkable-subspaces-under-the-general-quaternionic-sesqualgebra.html), for the restriction of the form to the six remarkable subspaces.
 - [J-Self-Adjoint and J-Unitary Operators on the General Quaternionic Sesqualgebra](j-self-adjoint-and-j-unitary-operators-on-the-general-quaternionic-sesqualgebra.html), for the Krein adjoint and the operator theory of the form.

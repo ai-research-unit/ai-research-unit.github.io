@@ -4,7 +4,7 @@
 
 This article defines the **two products** carried by the split-complex space — the **general plain bilinear product** $Q_1Q_2$ and the **general plain sesquilinear product** $Q_1\overline{Q_2}$ — reads them on the coordinates, states the two structures they define, and isolates the one point that tells this pair of products from the pair carried by the complex field. The first is the multiplication of the algebra and makes $\mathbb{C}_{\mathrm{spl}}$ a commutative ring; the second is the product with the second argument conjugated and makes $\mathbb{C}_{\mathrm{spl}}$ a **sesqualgebra** over the algebra with involution $(\mathbb{C}_{\mathrm{spl}},\bar{\cdot})$. Two operations and two structures are the whole operational content of the split-complex space.
 
-The two products are defined and their structures asserted here. The associator of the sesquilinear product, its ternary product, its left and right multiplications, its sandwich and its commutator are *The Sesquilinear Product of the Split-Complexoid Space*, below this article in this category. The forms and the norms the two products define are *The Two Forms and the Two Algebraic Norms of the Split-Complexoid Space*, and the products read on the distinguished subspaces are *Remarkable Subspaces and the Two Products of the Split-Complexoid Space*. The ring multiplication alone, with its zero divisors, its idempotents and its ideals, is *Split-Complex Algebra* and its companions.
+The two products are defined and their structures asserted here. The associator of the sesquilinear product, its ternary product, its left and right multiplications, its two-sided operator and its commutator are *The Sesquilinear Product of the Split-Complexoid Space*, below this article in this category. The forms and the norms the two products define are *The Two Forms and the Two Algebraic Norms of the Split-Complexoid Space*, and the products read on the distinguished subspaces are *Remarkable Subspaces and the Two Products of the Split-Complexoid Space*. The ring multiplication alone, with its zero divisors, its idempotents and its ideals, is *Split-Complex Algebra* and its companions.
 
 ## The Two Products
 
@@ -91,7 +91,7 @@ The structure is therefore not the ring but a **sesqualgebra**: a module over an
 | right unit | yes | $Q_1\overline{1}=Q_1$ |
 | alternative, flexible, power-associative | no | the same associator |
 
-The associator, the left and right multiplications, the sandwich and the commutator of the sesquilinear product are *The Sesquilinear Product of the Split-Complexoid Space*, below this article in this category; as a form the product is the general plain sesquilinear form $\langle Q_1,Q_2\rangle_{*}=Q_1\overline{Q_2}$ of *The Two Forms and the Two Algebraic Norms of the Split-Complexoid Space*, whose algebraic norm is the second algebraic norm $\langle Q_1\rangle_{*}=Q_1\overline{Q_1}=\langle Q_1\rangle_{\natural*}=q_1^2-{q'_1}^2$.
+The associator, the left and right multiplications, the two-sided operator and the commutator of the sesquilinear product are *The Sesquilinear Product of the Split-Complexoid Space*, below this article in this category; as a form the product is the general plain sesquilinear form $\langle Q_1,Q_2\rangle_{*}=Q_1\overline{Q_2}$ of *The Two Forms and the Two Algebraic Norms of the Split-Complexoid Space*, whose algebraic norm is the second algebraic norm $\langle Q_1\rangle_{*}=Q_1\overline{Q_1}=\langle Q_1\rangle_{\natural*}=q_1^2-{q'_1}^2$.
 
 ## The Two Products on the Idempotent Coordinates
 

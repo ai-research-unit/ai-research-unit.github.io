@@ -17,7 +17,7 @@ The scalar imaginary $i$ is central, so multiplication by it is **one** $\mathbb
 | $\mathbb{B}_{H}$ and $\mathbb{B}_{iH}$ | Each other | The Wick rotation |
 | $\mathbb{B}_{\Phi}$ and $\mathbb{B}_{\Psi}$ | Each other | The material–informational exchange |
 
-The rule that ties the names is a rule about the generator and not about the subspaces: the map is central, so it acts the same way in every subspace, and it is a scalar that acts through the centre and never through the quaternion directions; a non-central generator would give one rotation per carrier. It is a rotation and not a projection, a collapse or a measurement — a loss of information is a non-invertible map and belongs to *The Operators: One-Sided, Two-Sided, Sandwich*.
+The rule that ties the names is a rule about the generator and not about the subspaces: the map is central, so it acts the same way in every subspace, and it is a scalar that acts through the centre and never through the quaternion directions; a non-central generator would give one rotation per carrier. It is a rotation and not a projection, a collapse or a measurement — a loss of information is a non-invertible map and belongs to *The Operators: One-Sided, Two-Sided, Two-Sided Operator*.
 
 **The relation to the Wick rotation.** The coordinate continuation $r'_t \mapsto -i\tau$ of *Interpretation of the Wick Rotation in the Biquaternion Universe*, and the two senses in which the series uses the phrase *Wick rotation* — the exchange of the real and imaginary sectors, on the whole element, and the continuation of the time coordinate, a relabeling of one coordinate — are set out there. The two share one generator and one temporal sign flip, and they are not the same map.
 

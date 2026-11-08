@@ -3,9 +3,9 @@
 
 ## Introduction
 
-The signed left multiplication is the one-sided operator $L^{\alpha}_a(m)=a\,\alpha(m)$ that carries the parity sign of the grading. This article computes its adjoint with respect to an $\alpha$-invariant pairing; the answer is the signed left multiplication by the parameter transformed by the composite $\beta=\alpha\sigma$, $(L^{\alpha}_a)^{*}=L^{\alpha}_{\beta(a)}$. It is the one-sided specialisation of the signed adjoint sandwich and the companion of the unsigned rule $(L_a)^{*}=L_{\sigma(a)}$.
+The signed left multiplication is the one-sided operator $L^{\alpha}_a(m)=a\,\alpha(m)$ that carries the parity sign of the grading. This article computes its adjoint with respect to an $\alpha$-invariant pairing; the answer is the signed left multiplication by the parameter transformed by the composite $\beta=\alpha\sigma$, $(L^{\alpha}_a)^{*}=L^{\alpha}_{\beta(a)}$. It is the one-sided specialisation of the signed adjoint two-sided operator and the companion of the unsigned rule $(L_a)^{*}=L_{\sigma(a)}$.
 
-The article is the sixth of the `* Operator Theory` group of this category. It assumes the signed left multiplication and its elementary properties from *The Signed Left Multiplication on a Module over an Algebra*, the signed adjoint sandwich from *The Signed Adjoint of the Sandwich on a Bimodule over an Algebra*, and the pairing and adjoint of *The Adjoint of a Module Homomorphism*; the unsigned one-sided adjoint is *The Adjoint of a Module Homomorphism*, and the reflection case is *The Signed Adjoint of the Reflection on a Bimodule over an Algebra*. The article stays inside Part I: no distance, norm, form with a norm, positivity, topology or limit. Throughout, $R$ is a commutative ring with $1 \neq 0$ in which $2$ is invertible, $(A,\sigma)$ is an involutive $R$-algebra, $\alpha$ is a grade involution of $A$ commuting with $\sigma$, $\beta=\alpha\sigma$, $M$ is a graded left $A$-module with an $\alpha$-invariant balanced $\sigma$-sesquilinear pairing, $L_a(m)=am$ is the unsigned left multiplication, and $L^{\alpha}_a=L_a\circ\alpha$, $L^{\alpha}_a(m)=a\,\alpha(m)$.
+The article is the sixth of the `* Operator Theory` group of this category. It assumes the signed left multiplication and its elementary properties from *The Signed Left Multiplication on a Module over an Algebra*, the signed adjoint two-sided operator from *The Signed Adjoint of the Two-Sided Operator on a Bimodule over an Algebra*, and the pairing and adjoint of *The Adjoint of a Module Homomorphism*; the unsigned one-sided adjoint is *The Adjoint of a Module Homomorphism*, and the reflection case is *The Signed Adjoint of the Reflection on a Bimodule over an Algebra*. The article stays inside Part I: no distance, norm, form with a norm, positivity, topology or limit. Throughout, $R$ is a commutative ring with $1 \neq 0$ in which $2$ is invertible, $(A,\sigma)$ is an involutive $R$-algebra, $\alpha$ is a grade involution of $A$ commuting with $\sigma$, $\beta=\alpha\sigma$, $M$ is a graded left $A$-module with an $\alpha$-invariant balanced $\sigma$-sesquilinear pairing, $L_a(m)=am$ is the unsigned left multiplication, and $L^{\alpha}_a=L_a\circ\alpha$, $L^{\alpha}_a(m)=a\,\alpha(m)$.
 
 ## The Signed Left Multiplication and Its Adjoint
 
@@ -17,11 +17,11 @@ $$
 \boxed{\;\bigl(L^{\alpha}_a\bigr)^{*}=L^{\alpha}_{\beta(a)}, \qquad \beta=\alpha\sigma\;} .
 $$
 
-*Proof.* The signed left multiplication is the signed sandwich with right parameter $1$, $L^{\alpha}_a=\mathcal{T}^{\alpha}_{a,1}$. By *The Signed Adjoint of the Sandwich on a Bimodule over an Algebra*, $\bigl(\mathcal{T}^{\alpha}_{a,1}\bigr)^{*}=\mathcal{T}^{\alpha}_{\beta(a),\beta(1)}$, and $\beta(1)=1$ because $\beta$ is an involution of the algebra. Hence the adjoint is $\mathcal{T}^{\alpha}_{\beta(a),1}=L^{\alpha}_{\beta(a)}$.
+*Proof.* The signed left multiplication is the signed two-sided operator with right parameter $1$, $L^{\alpha}_a=\mathcal{T}^{\alpha}_{a,1}$. By *The Signed Adjoint of the Two-Sided Operator on a Bimodule over an Algebra*, $\bigl(\mathcal{T}^{\alpha}_{a,1}\bigr)^{*}=\mathcal{T}^{\alpha}_{\beta(a),\beta(1)}$, and $\beta(1)=1$ because $\beta$ is an involution of the algebra. Hence the adjoint is $\mathcal{T}^{\alpha}_{\beta(a),1}=L^{\alpha}_{\beta(a)}$.
 
-**Proof (direct).** Write $L^{\alpha}_a=L_a\circ\alpha$, so by anti-multiplicativity $\bigl(L^{\alpha}_a\bigr)^{*}=\alpha^{*}(L_a)^{*}$. The pairing is $\alpha$-invariant, so $\alpha^{*}=\alpha$, and *The Adjoint of a Sandwich on a Bimodule over an Algebra* gives $(L_a)^{*}=L_{\sigma(a)}$. Hence $\bigl(L^{\alpha}_a\bigr)^{*}=\alpha L_{\sigma(a)}=L^{\alpha}_{\alpha\sigma(a)}$, using the identity $\alpha L_b=L^{\alpha}_{\alpha(b)}$ of *The Signed Left Multiplication on a Module over an Algebra*.
+**Proof (direct).** Write $L^{\alpha}_a=L_a\circ\alpha$, so by anti-multiplicativity $\bigl(L^{\alpha}_a\bigr)^{*}=\alpha^{*}(L_a)^{*}$. The pairing is $\alpha$-invariant, so $\alpha^{*}=\alpha$, and *The Adjoint of a Two-Sided Operator on a Bimodule over an Algebra* gives $(L_a)^{*}=L_{\sigma(a)}$. Hence $\bigl(L^{\alpha}_a\bigr)^{*}=\alpha L_{\sigma(a)}=L^{\alpha}_{\alpha\sigma(a)}$, using the identity $\alpha L_b=L^{\alpha}_{\alpha(b)}$ of *The Signed Left Multiplication on a Module over an Algebra*.
 
-The parameter transforms by the composite $\beta=\alpha\sigma$, exactly as for the general signed sandwich: the grading and the involution both act, and only their product is visible.
+The parameter transforms by the composite $\beta=\alpha\sigma$, exactly as for the general signed two-sided operator: the grading and the involution both act, and only their product is visible.
 
 ### Relation to the unsigned adjoint and to the grading
 
@@ -33,15 +33,15 @@ $$
 
 *Proof.* The first is the direct computation in the proof of the theorem; the second is the unsigned rule.
 
-**Corollary (parity).** The signed left multiplications are odd for the $\mathbb{Z}/2$-grading of the sandwich monoid, and the adjoint sends an odd operator to an odd operator: $\bigl(L^{\alpha}_a\bigr)^{*}=L^{\alpha}_{\beta(a)}$. The adjoint commutes with the grading, as it does for the two-sided operators.
+**Corollary (parity).** The signed left multiplications are odd for the $\mathbb{Z}/2$-grading of the two-sided monoid, and the adjoint sends an odd operator to an odd operator: $\bigl(L^{\alpha}_a\bigr)^{*}=L^{\alpha}_{\beta(a)}$. The adjoint commutes with the grading, as it does for the two-sided operators.
 
-*Proof.* Immediate from the theorem and the parity statement of *The Signed Adjoint of the Sandwich on a Bimodule over an Algebra*.
+*Proof.* Immediate from the theorem and the parity statement of *The Signed Adjoint of the Two-Sided Operator on a Bimodule over an Algebra*.
 
-## Relation to the Signed Sandwich
+## Relation to the Signed Two-Sided Operator
 
-### The one-sided operators inside the sandwich
+### The one-sided operators inside the two-sided operator
 
-**Proposition.** For all $a,b \in A$ the signed sandwich factors through the signed left multiplication,
+**Proposition.** For all $a,b \in A$ the signed two-sided factors through the signed left multiplication,
 
 $$
 \mathcal{T}^{\alpha}_{a,b}=L^{\alpha}_a\circ R_{\alpha(b)}, \qquad L^{\alpha}_a=\mathcal{T}^{\alpha}_{a,1}, \qquad R^{\alpha}_b:=\mathcal{T}^{\alpha}_{1,b} .
@@ -49,15 +49,15 @@ $$
 
 *Proof.* $L^{\alpha}_a(R_{\alpha(b)}(x))=a\,\alpha(x\alpha(b))=a\,\alpha(x)\,\alpha(\alpha(b))=a\,\alpha(x)\,b=\mathcal{T}^{\alpha}_{a,b}(x)$, and the other identities are the parameter choices.
 
-**Corollary.** The adjoint of the signed sandwich is the composite of the adjoints of its factors in the reverse order, and the one-sided adjoints assemble it:
+**Corollary.** The adjoint of the signed two-sided operator is the composite of the adjoints of its factors in the reverse order, and the one-sided adjoints assemble it:
 
 $$
 \bigl(\mathcal{T}^{\alpha}_{a,b}\bigr)^{*}=\bigl(R_{\alpha(b)}\bigr)^{*}\bigl(L^{\alpha}_a\bigr)^{*}=R_{\sigma(\alpha(b))}L^{\alpha}_{\beta(a)}=R_{\beta(b)}L^{\alpha}_{\beta(a)}=\mathcal{T}^{\alpha}_{\beta(a),\beta(b)} .
 $$
 
-*Proof.* Anti-multiplicativity and the theorem, with the right-handed adjoint $R_c^{*}=R_{\sigma(c)}$ obtained from the opposite algebra as in *The Adjoint of the Sandwich on a Bimodule over an Algebra*. For the middle equality, $\sigma(\alpha(b))=\sigma\alpha(b)=\alpha\sigma(b)=\beta(b)$ because $\alpha$ and $\sigma$ commute. For the last, $R_dL^{\alpha}_c=\mathcal{T}^{\alpha}_{c,d}$ directly, since $R_dL^{\alpha}_c(x)=c\,\alpha(x)\,d$.
+*Proof.* Anti-multiplicativity and the theorem, with the right-handed adjoint $R_c^{*}=R_{\sigma(c)}$ obtained from the opposite algebra as in *The Adjoint of the Two-Sided Operator on a Bimodule over an Algebra*. For the middle equality, $\sigma(\alpha(b))=\sigma\alpha(b)=\alpha\sigma(b)=\beta(b)$ because $\alpha$ and $\sigma$ commute. For the last, $R_dL^{\alpha}_c=\mathcal{T}^{\alpha}_{c,d}$ directly, since $R_dL^{\alpha}_c(x)=c\,\alpha(x)\,d$.
 
-The one-sided case is therefore not an analogy but a factorisation: the sandwich is a signed left multiplication composed with a right multiplication, and its adjoint is the composite of the one-sided adjoints.
+The one-sided case is therefore not an analogy but a factorisation: the two-sided operator is a signed left multiplication composed with a right multiplication, and its adjoint is the composite of the one-sided adjoints.
 
 ## Self-Adjointness and Unitarity
 
@@ -83,7 +83,7 @@ $$
 \bigl(L^{\alpha}_a\bigr)^{*}L^{\alpha}_a=L^{\alpha}_a\bigl(L^{\alpha}_a\bigr)^{*}=\mathrm{id} \iff \sigma(a)a=a\sigma(a)=1 .
 $$
 
-*Proof.* This is the unitarity criterion of *The Signed Adjoint of the Sandwich on a Bimodule over an Algebra* with $(a,b)=(a,1)$.
+*Proof.* This is the unitarity criterion of *The Signed Adjoint of the Two-Sided Operator on a Bimodule over an Algebra* with $(a,b)=(a,1)$.
 
 **Corollary.** The unitary signed left multiplications form a group isomorphic to the unitary group of $A$ modulo the annihilator: the map $a \mapsto L^{\alpha}_a$ restricted to the unitary elements of $A$ is multiplicative on unitary parameters and has kernel the unitary elements of $\operatorname{Ann}_A(M)$.
 
@@ -129,7 +129,7 @@ $$
 
 ## Summary
 
-For a graded module with an $\alpha$-invariant balanced $\sigma$-sesquilinear pairing, the adjoint of the signed left multiplication is the signed left multiplication by the composite $\beta=\alpha\sigma$, $\bigl(L^{\alpha}_a\bigr)^{*}=L^{\alpha}_{\beta(a)}$; this is the one-sided case of the signed adjoint sandwich, obtained directly from $\alpha^{*}=\alpha$, $(L_a)^{*}=L_{\sigma(a)}$ and the identity $\alpha L_b=L^{\alpha}_{\alpha(b)}$. The adjoint preserves the grading parity. Because the signed left multiplication is the signed sandwich with right parameter $1$, the sandwich adjoint factors through the one-sided adjoints. Self-adjointness holds exactly when $\beta(a)-a$ annihilates the module, skew-adjointness when $\beta(a)+a$ does, and unitarity exactly when the parameter is unitary in $A$; for a faithful module the criteria are the equalities $\beta(a)=a$, $\beta(a)=-a$ and $\sigma(a)a=a\sigma(a)=1$. The kernel and the image of the adjoint are described by the paired complements: $\ker(L^{\alpha}_a)^{*}=\ker L_{\sigma(a)}$ and $\operatorname{im}(L^{\alpha}_a)^{*}=\beta(a)M$, in agreement with the general theory.
+For a graded module with an $\alpha$-invariant balanced $\sigma$-sesquilinear pairing, the adjoint of the signed left multiplication is the signed left multiplication by the composite $\beta=\alpha\sigma$, $\bigl(L^{\alpha}_a\bigr)^{*}=L^{\alpha}_{\beta(a)}$; this is the one-sided case of the signed adjoint two-sided operator, obtained directly from $\alpha^{*}=\alpha$, $(L_a)^{*}=L_{\sigma(a)}$ and the identity $\alpha L_b=L^{\alpha}_{\alpha(b)}$. The adjoint preserves the grading parity. Because the signed left multiplication is the signed two-sided operator with right parameter $1$, the two-sided operator adjoint factors through the one-sided adjoints. Self-adjointness holds exactly when $\beta(a)-a$ annihilates the module, skew-adjointness when $\beta(a)+a$ does, and unitarity exactly when the parameter is unitary in $A$; for a faithful module the criteria are the equalities $\beta(a)=a$, $\beta(a)=-a$ and $\sigma(a)a=a\sigma(a)=1$. The kernel and the image of the adjoint are described by the paired complements: $\ker(L^{\alpha}_a)^{*}=\ker L_{\sigma(a)}$ and $\operatorname{im}(L^{\alpha}_a)^{*}=\beta(a)M$, in agreement with the general theory.
 
 ## Summary of Notation
 
@@ -142,7 +142,7 @@ For a graded module with an $\alpha$-invariant balanced $\sigma$-sesquilinear pa
 | $L^{\alpha}_a=L_a\alpha$ | signed left multiplication, $L^{\alpha}_a(m)=a\alpha(m)$ |
 | $(L^{\alpha}_a)^{*}=L^{\alpha}_{\beta(a)}$ | the adjoint of the signed left multiplication |
 | $\alpha L_b=L^{\alpha}_{\alpha(b)}$ | the conjugation identity used in the proof |
-| $\mathcal{T}^{\alpha}_{a,b}=L^{\alpha}_a R_{\alpha(b)}$ | the signed sandwich through the one-sided operators |
+| $\mathcal{T}^{\alpha}_{a,b}=L^{\alpha}_a R_{\alpha(b)}$ | the signed two-sided operator through the one-sided operators |
 | $\operatorname{Ann}_A(M)$ | the annihilator, source of the degenerate criteria |
 | $\ker(L^{\alpha}_a)^{*}=\ker L_{\sigma(a)}$ | the kernel of the adjoint |
 

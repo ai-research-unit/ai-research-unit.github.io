@@ -9,7 +9,7 @@ $$
 \tau_a(x) = a\,\alpha(x)\,a^{-1} = \mathrm{Sd}^{\alpha}_{a,a^{-1}}(x) ,
 $$
 
-the signed sandwich with the parameter $b = a^{-1}$; it is an involution exactly when $a$ is a **reflection element**, $\alpha(a) = a^{-1}$. The article computes its **adjoint** for the trace form by specialising the adjoint of the signed sandwich:
+the signed two-sided operator with the parameter $b = a^{-1}$; it is an involution exactly when $a$ is a **reflection element**, $\alpha(a) = a^{-1}$. The article computes its **adjoint** for the trace form by specialising the adjoint of the signed two-sided operator:
 
 $$
 (\tau_a)^{*} = \tau_{\alpha(a^{*})} ,
@@ -19,7 +19,7 @@ so the adjoint of a reflection is again a reflection, with the parameter replace
 
 The reflection is the operator of the family that has an algebraic meaning in the outer automorphism group: $\tau_a = \operatorname{Inn}_a\circ\alpha$ is the composite of the inner automorphism and the grade involution, two reflection elements give the same reflection exactly when their ratio is central, and the realised reflections are the composites of the grade involution with the inner automorphisms. The adjoint computation of the article is therefore not only an operator identity but a statement about the **outer class** of the reflection: the adjoint of $\operatorname{Inn}_a\circ\alpha$ is $\operatorname{Inn}_{\alpha(a^{*})}\circ\alpha$, an inner automorphism conjugated with the grade involution, and the adjoint preserves the outer class.
 
-The reflections and the reflection elements are *Reflections as Signed Two-Sided Operators on an Ordered Algebra*; the signed sandwich and its adjoint are *The Signed Sandwich on an Ordered Algebra* and *The Signed Adjoint Sandwich on an Ordered Algebra*; the signed left multiplication is *The Signed Left Multiplication on an Ordered Algebra*; the graded action is *The Graded Action on a Module over an Ordered Algebra*; the adjoint and the positivity are *The Adjoint of a Positive Operator*; the order of the elements is *Self-Adjoint Elements and the Order*; the two-sided multiplications are *The Adjoint of the Left Multiplication on an Ordered Algebra*; the automorphisms are *The Involution on the Order Automorphisms*; the order is *Ordered Vector Spaces and the Order Unit* and *Positive Operators on an Ordered Space*; the grading is *Superalgebras and Graded Structures* of Part I; and the algebra is *Ordered Involutive Algebras*.
+The reflections and the reflection elements are *Reflections as Signed Two-Sided Operators on an Ordered Algebra*; the signed two-sided operator and its adjoint are *The Signed Two-Sided Operator on an Ordered Algebra* and *The Signed Adjoint Two-Sided Operator on an Ordered Algebra*; the signed left multiplication is *The Signed Left Multiplication on an Ordered Algebra*; the graded action is *The Graded Action on a Module over an Ordered Algebra*; the adjoint and the positivity are *The Adjoint of a Positive Operator*; the order of the elements is *Self-Adjoint Elements and the Order*; the two-sided multiplications are *The Adjoint of the Left Multiplication on an Ordered Algebra*; the automorphisms are *The Involution on the Order Automorphisms*; the order is *Ordered Vector Spaces and the Order Unit* and *Positive Operators on an Ordered Space*; the grading is *Superalgebras and Graded Structures* of Part I; and the algebra is *Ordered Involutive Algebras*.
 
 ## The Adjoint of the Reflected Operator
 
@@ -39,7 +39,7 @@ $$
 
 in particular the adjoint of a reflection is again a reflection, the adjoint of $\tau_a$ is the ordinary conjugation by $a^{*}$ when the grade involution is the identity, and the family of the reflections is **closed under the adjoint**.
 
-*Proof.* Apply the adjoint formula of the signed sandwich to $\mathrm{Sd}^{\alpha}_{a,a^{-1}}$:
+*Proof.* Apply the adjoint formula of the signed two-sided operator to $\mathrm{Sd}^{\alpha}_{a,a^{-1}}$:
 $$
 (\tau_a)^{*} = \mathrm{Sd}^{\alpha}_{\alpha(a^{*}),\,\alpha((a^{-1})^{*})} = \mathrm{Sd}^{\alpha}_{\alpha(a^{*}),\,\alpha(a^{*})^{-1}} = \tau_{\alpha(a^{*})} ,
 $$
@@ -83,7 +83,7 @@ $$
 
 and when $a$ is a reflection element the square is the identity, $\tau_a^{2} = \mathrm{id}$, so the adjoint of the square is the identity and the reflection is an isometry of the quadratic order exactly when it is self-adjoint.
 
-*Proof.* The decomposition is the standard one; the square statement is the reflection theorem of *The Signed Sandwich on an Ordered Algebra*; the isometry statement follows because a reflection preserves the quadratic order exactly when it is an order automorphism commuting with the adjoint, which for an involution is the self-adjointness.
+*Proof.* The decomposition is the standard one; the square statement is the reflection theorem of *The Signed Two-Sided Operator on an Ordered Algebra*; the isometry statement follows because a reflection preserves the quadratic order exactly when it is an order automorphism commuting with the adjoint, which for an involution is the self-adjointness.
 
 ## The Adjoint and the Order
 
@@ -95,7 +95,7 @@ $$
 
 If the grade involution is not positive then the reflection of positive parameters need not be positive, and the obstruction is the sign of $\alpha$ on the odd part of the cone.
 
-*Proof.* The reflection is the signed sandwich $\mathrm{Sd}^{\alpha}_{a,a^{-1}}$; with $\alpha$ positive and $a\geq0$ invertible, so that $a^{-1}\geq0$, the positivity criterion of the signed sandwich gives $\tau_a\geq0$; the positivity of the adjoint is the general positivity preservation of the adjoint of *The Adjoint of a Positive Operator*. The failure in the non-positive case is the positivity proposition of the signed sandwich.
+*Proof.* The reflection is the signed two-sided operator $\mathrm{Sd}^{\alpha}_{a,a^{-1}}$; with $\alpha$ positive and $a\geq0$ invertible, so that $a^{-1}\geq0$, the positivity criterion of the signed two-sided operator gives $\tau_a\geq0$; the positivity of the adjoint is the general positivity preservation of the adjoint of *The Adjoint of a Positive Operator*. The failure in the non-positive case is the positivity proposition of the signed two-sided operator.
 
 **Corollary (the order and the outer class).** The reflections that are positive form a subset of the realised reflections closed under the adjoint; the order-reversing reflections are the ones whose adjoint is their negative up to the centre; and the adjoint action on the realised reflections preserves both the positive and the order-reversing classes, because it preserves the positivity of the operators. This is the order-theoretic statement of the outer-class computation: the adjoint is an order automorphism of the reflection family whose action on the outer classes is the $\alpha$-twist of the parameter.
 
@@ -123,7 +123,7 @@ $$
 (\tau_a)^{*} = \tau_{\alpha(a^{*})} ,
 $$
 
-so the adjoint of a reflection is again a reflection, the adjoint of the ordinary conjugation by $a$ is the conjugation by $a^{*}$ (the identity grade involution), and the family of the reflections is **closed under the adjoint**. The reflection is **self-adjoint** exactly when the parameter is $\alpha$-Hermitian, $a = \alpha(a^{*})$, up to a **central** factor, and **skew-adjoint** for the skew parameters; it decomposes into the self-adjoint and the skew-adjoint parts, and an involutive reflection is an isometry of the quadratic order exactly when it is self-adjoint. The adjoint acts on the realised reflections by the $\alpha$-twist of the parameter, $\operatorname{Inn}_a\circ\alpha\mapsto\operatorname{Inn}_{\alpha(a^{*})}\circ\alpha$, preserving the outer class, and it preserves the **positivity**: a reflection with a positive grade involution and a positive invertible parameter is positive, hence so is its adjoint. The reflections are *Reflections as Signed Two-Sided Operators on an Ordered Algebra*; the sandwich and its adjoint are *The Signed Sandwich on an Ordered Algebra* and *The Signed Adjoint Sandwich on an Ordered Algebra*; the adjoint is *The Adjoint of a Positive Operator*; the order is *Self-Adjoint Elements and the Order* and *Ordered Vector Spaces and the Order Unit*; the two-sided multiplications are *The Adjoint of the Left Multiplication on an Ordered Algebra*; the automorphisms are *The Involution on the Order Automorphisms*; and the grading is *Superalgebras and Graded Structures*.
+so the adjoint of a reflection is again a reflection, the adjoint of the ordinary conjugation by $a$ is the conjugation by $a^{*}$ (the identity grade involution), and the family of the reflections is **closed under the adjoint**. The reflection is **self-adjoint** exactly when the parameter is $\alpha$-Hermitian, $a = \alpha(a^{*})$, up to a **central** factor, and **skew-adjoint** for the skew parameters; it decomposes into the self-adjoint and the skew-adjoint parts, and an involutive reflection is an isometry of the quadratic order exactly when it is self-adjoint. The adjoint acts on the realised reflections by the $\alpha$-twist of the parameter, $\operatorname{Inn}_a\circ\alpha\mapsto\operatorname{Inn}_{\alpha(a^{*})}\circ\alpha$, preserving the outer class, and it preserves the **positivity**: a reflection with a positive grade involution and a positive invertible parameter is positive, hence so is its adjoint. The reflections are *Reflections as Signed Two-Sided Operators on an Ordered Algebra*; the two-sided operator and its adjoint are *The Signed Two-Sided Operator on an Ordered Algebra* and *The Signed Adjoint Two-Sided Operator on an Ordered Algebra*; the adjoint is *The Adjoint of a Positive Operator*; the order is *Self-Adjoint Elements and the Order* and *Ordered Vector Spaces and the Order Unit*; the two-sided multiplications are *The Adjoint of the Left Multiplication on an Ordered Algebra*; the automorphisms are *The Involution on the Order Automorphisms*; and the grading is *Superalgebras and Graded Structures*.
 
 ## Summary of Notation
 
@@ -144,4 +144,4 @@ so the adjoint of a reflection is again a reflection, the adjoint of the ordinar
 - F. Reese Harvey, *Spinors and Calibrations* (Academic Press, 1990), for the graded reflections and the reflection elements of a Clifford algebra.
 - Richard Kadison and John R. Ringrose, *Fundamentals of the Theory of Operator Algebras*, vol. 1 (Academic Press, 1983), for the adjoints, the involutions and the order.
 - Gert K. Pedersen, *C\*-Algebras and their Automorphism Groups* (Academic Press, 1979), for the inner automorphisms, the order-two automorphisms and the positivity.
-- Max Koecher, *The Minnesota Notes on Jordan Algebras and their Applications* (Springer, 1999), for the reflections and the sandwich operators of the Jordan structures.
+- Max Koecher, *The Minnesota Notes on Jordan Algebras and their Applications* (Springer, 1999), for the reflections and the two-sided operators of the Jordan structures.

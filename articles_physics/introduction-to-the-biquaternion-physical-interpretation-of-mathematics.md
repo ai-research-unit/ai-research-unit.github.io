@@ -42,7 +42,7 @@ If an interpretation needs a result that the menu does not contain, the article 
 
 ### The Interpretations
 
-A physical interpretation names a physical object, process or quantity and identifies it with the mathematical structure. It is written as a sentence: *the norm is the interval*, *the minimal Hermitian idempotent is the pure state*, *the sandwich is the change of frame*. It is not a metaphor and not an analogy.
+A physical interpretation names a physical object, process or quantity and identifies it with the mathematical structure. It is written as a sentence: *the norm is the interval*, *the minimal Hermitian idempotent is the pure state*, *the two-sided operator is the change of frame*. It is not a metaphor and not an analogy.
 
 Each interpretation is labelled. Several interpretations of one result are allowed, and they are distinguished by the sector, the regime or the question they answer. The label is the reader's protection: it says which interpretation is meant at that point.
 
@@ -66,7 +66,7 @@ $$
 
 The idempotents are a second case. A minimal Hermitian idempotent is a pure state, a rank-one projector and a choice of vacuum, depending on which structure is interpreted. The three interpretations agree on the element and disagree on the physics, which is why each is labelled.
 
-The sandwich is a third. $\mathrm{Sd}_{\tilde Q}(\tilde X)=\tilde Q\tilde X\tilde Q^{*}$ is a change of frame for a unit-norm rotor and a rotation with a dilation for a general unit. For a minimal Hermitian idempotent and a state, $\mathrm{Sd}_{\tilde\Pi}(\tilde{Ϛ}_{\Psi})=\tilde\Pi\tilde{Ϛ}_{\Psi}\tilde\Pi$ is the unnormalised post-measurement state. The same operator, three regimes of its parameter.
+The two-sided operator is a third. $\mathrm{Sd}_{\tilde Q}(\tilde X)=\tilde Q\tilde X\tilde Q^{*}$ is a change of frame for a unit-norm rotor and a rotation with a dilation for a general unit. For a minimal Hermitian idempotent and a state, $\mathrm{Sd}_{\tilde\Pi}(\tilde{Ϛ}_{\Psi})=\tilde\Pi\tilde{Ϛ}_{\Psi}\tilde\Pi$ is the unnormalised post-measurement state. The same operator, three regimes of its parameter.
 
 A reader who wants one interpretation per theorem will not find it here. A reader who wants to know which interpretation is meant will find the label and the boundary.
 
@@ -182,21 +182,21 @@ The category reads a second corpus as well. The *Biquaternion Algebraic Structur
 - [The Endomorphisms of the Biquaternion Algebra](../articles_maths/the-endomorphisms-of-the-biquaternion-algebra.html)
 - [The Enveloping Operator Algebra of the Biquaternion Algebra and the Bi-module Structure](../articles_maths/the-enveloping-operator-algebra-of-the-biquaternion-algebra-and-the-bi-module-structure.html)
 - [Adjoint Pair of $L$ and $R$ Operators](../articles_maths/adjoint-pair-of-l-and-r-operators.html)
-- [Operators Acting 2 Side](../articles_maths/operators-acting-2-side.html)
-- [Operators Acting 1 Side](../articles_maths/operators-acting-1-side.html)
-- [Introduction to the Operators under N and Spectral Regularity and Degeneracy](../articles_maths/introduction-to-the-operators-under-n-and-spectral-regularity-and-degeneracy.html)
-- [The One-Sided Operators of an N-Regular, Spectrally Regular Biquaternion](../articles_maths/the-one-sided-operators-of-an-n-regular-spectrally-regular-biquaternion.html)
-- [The Sandwich of an N-Regular, Spectrally Regular Biquaternion](../articles_maths/the-sandwich-of-an-n-regular-spectrally-regular-biquaternion.html)
-- [The One-Sided Operators of an N-Regular, Spectrally Degenerate Biquaternion](../articles_maths/the-one-sided-operators-of-an-n-regular-spectrally-degenerate-biquaternion.html)
-- [The Sandwich of an N-Regular, Spectrally Degenerate Biquaternion](../articles_maths/the-sandwich-of-an-n-regular-spectrally-degenerate-biquaternion.html)
-- [The One-Sided Operators of an N-Degenerate, Spectrally Regular Biquaternion](../articles_maths/the-one-sided-operators-of-an-n-degenerate-spectrally-regular-biquaternion.html)
-- [The Sandwich of an N-Degenerate, Spectrally Regular Biquaternion](../articles_maths/the-sandwich-of-an-n-degenerate-spectrally-regular-biquaternion.html)
-- [The One-Sided Operators of an N-Degenerate, Spectrally Degenerate Biquaternion](../articles_maths/the-one-sided-operators-of-an-n-degenerate-spectrally-degenerate-biquaternion.html)
-- [The Sandwich of an N-Degenerate, Spectrally Degenerate Biquaternion](../articles_maths/the-sandwich-of-an-n-degenerate-spectrally-degenerate-biquaternion.html)
-- [Hermitian pair of operators acting as 2 side](../articles_maths/hermitian-pair-of-operators-acting-as-2-side.html)
-- [Operators Acting 1 Side](../articles_maths/operators-acting-1-side.html)
-- [Operators Acting 2 Side](../articles_maths/operators-acting-2-side.html)
-- [Hermitian pair of operators acting as 2 side](../articles_maths/hermitian-pair-of-operators-acting-as-2-side.html)
+- [Operators Acting on Two Sides](../articles_maths/operators-acting-on-two-sides.html)
+- [Operators Acting on One Side](../articles_maths/operators-acting-on-one-side.html)
+- [Introduction to N and Spectrally Regular and Degenerate Operators](../articles_maths/introduction-to-n-and-spectrally-regular-and-degenerate-operators.html)
+- [N-Regular, Spectrally Regular Operators Acting on One Side](../articles_maths/n-regular-spectrally-regular-operators-acting-on-one-side.html)
+- [Hermitian Pair of N-Regular, Spectrally Regular Operators Acting on Two Sides](../articles_maths/hermitian-pair-of-n-regular-spectrally-regular-operators-acting-on-two-sides.html)
+- [N-Regular, Spectrally Degenerate Operators Acting on One Side](../articles_maths/n-regular-spectrally-degenerate-operators-acting-on-one-side.html)
+- [Hermitian Pair of N-Regular, Spectrally Degenerate Operators Acting on Two Sides](../articles_maths/hermitian-pair-of-n-regular-spectrally-degenerate-operators-acting-on-two-sides.html)
+- [N-Degenerate, Spectrally Regular Operators Acting on One Side](../articles_maths/n-degenerate-spectrally-regular-operators-acting-on-one-side.html)
+- [Hermitian Pair of N-Degenerate, Spectrally Regular Operators Acting on Two Sides](../articles_maths/hermitian-pair-of-n-degenerate-spectrally-regular-operators-acting-on-two-sides.html)
+- [N-Degenerate, Spectrally Degenerate Operators Acting on One Side](../articles_maths/n-degenerate-spectrally-degenerate-operators-acting-on-one-side.html)
+- [Hermitian Pair of N-Degenerate, Spectrally Degenerate Operators Acting on Two Sides](../articles_maths/hermitian-pair-of-n-degenerate-spectrally-degenerate-operators-acting-on-two-sides.html)
+- [The Hermitian Pair of Operators Acting on Two Sides](../articles_maths/the-hermitian-pair-of-operators-acting-on-two-sides.html)
+- [Operators Acting on One Side](../articles_maths/operators-acting-on-one-side.html)
+- [Operators Acting on Two Sides](../articles_maths/operators-acting-on-two-sides.html)
+- [The Hermitian Pair of Operators Acting on Two Sides](../articles_maths/the-hermitian-pair-of-operators-acting-on-two-sides.html)
 
 ### Topology
 
@@ -241,7 +241,7 @@ The category reads a second corpus as well. The *Biquaternion Algebraic Structur
 - [The Hamilton Root Pairing of the Polar Decomposition of an N-Regular, Spectrally Regular Biquaternion](../articles_maths/the-hamilton-root-pairing-of-the-polar-decomposition-of-an-n-regular-spectrally-regular-biquaternion.html)
 - [The Cartan Hermitian Pairing of the Polar Decomposition of an N-Regular, Spectrally Regular Biquaternion](../articles_maths/the-cartan-hermitian-pairing-of-the-polar-decomposition-of-an-n-regular-spectrally-regular-biquaternion.html)
 - [The One-Sided Operator Exponential of an N-Regular, Spectrally Regular Biquaternion](../articles_maths/the-one-sided-operator-exponential-of-an-n-regular-spectrally-regular-biquaternion.html)
-- [The Sandwich Exponential of an N-Regular, Spectrally Regular Biquaternion](../articles_maths/the-sandwich-exponential-of-an-n-regular-spectrally-regular-biquaternion.html)
+- [The Two-Sided Exponential of an N-Regular, Spectrally Regular Biquaternion](../articles_maths/the-two-sided-exponential-of-an-n-regular-spectrally-regular-biquaternion.html)
 
 #### Exponential Polar Decomposition of an N-Regular, Spectrally Degenerate Biquaternion
 
@@ -253,7 +253,7 @@ The category reads a second corpus as well. The *Biquaternion Algebraic Structur
 - [The Hamilton Root Pairing of the Polar Decomposition of an N-Regular, Spectrally Degenerate Biquaternion](../articles_maths/the-hamilton-root-pairing-of-the-polar-decomposition-of-an-n-regular-spectrally-degenerate-biquaternion.html)
 - [The Cartan Hermitian Pairing of the Polar Decomposition of an N-Regular, Spectrally Degenerate Biquaternion](../articles_maths/the-cartan-hermitian-pairing-of-the-polar-decomposition-of-an-n-regular-spectrally-degenerate-biquaternion.html)
 - [The One-Sided Operator Exponential of an N-Regular, Spectrally Degenerate Biquaternion](../articles_maths/the-one-sided-operator-exponential-of-an-n-regular-spectrally-degenerate-biquaternion.html)
-- [The Sandwich Exponential of an N-Regular, Spectrally Degenerate Biquaternion](../articles_maths/the-sandwich-exponential-of-an-n-regular-spectrally-degenerate-biquaternion.html)
+- [The Two-Sided Exponential of an N-Regular, Spectrally Degenerate Biquaternion](../articles_maths/the-two-sided-exponential-of-an-n-regular-spectrally-degenerate-biquaternion.html)
 
 ### Geometry
 
@@ -307,7 +307,7 @@ The index is not a publication plan. It is the map of the sources, and the categ
 | $\mathbb{B}_{\Phi}$, $\mathbb{B}_{\Psi}$ | the material and the informational sectors, the anti-Hermitian and the Hermitian halves |
 | $\tilde{Ϛ}_{\Psi}$ | the state element, Hermitian and normalised by $\langle\tilde{Ϛ}_{\Psi},e_t\rangle_{*}=\tfrac12$ (trace one in the $2\times2$ image) |
 | $\tilde\Pi$ | an idempotent; a rank-one Hermitian idempotent is a pure state |
-| $\mathrm{Sd}_{\tilde Q}(\tilde X)=\tilde Q\tilde X\tilde Q^{*}$ | the sandwich, the change of frame on the unit-norm slice |
+| $\mathrm{Sd}_{\tilde Q}(\tilde X)=\tilde Q\tilde X\tilde Q^{*}$ | the two-sided operator, the change of frame on the unit-norm slice |
 
 ## Further Reading
 

@@ -9,11 +9,11 @@ $$
 \bigl(\Lambda^{\alpha}_a\bigr)^{*} = \Lambda^{\alpha}_{\alpha(a)^{*}} .
 $$
 
-The one-sided case is where the adjoint formula is at its simplest — no reverse product appears, because a left multiplication has no other factor — and it is the building block of the two-sided case, since the signed sandwich factors as a signed left multiplication followed by a right multiplication and its adjoint factors the same way. The signed left multiplication is not closed under composition, so the set of the adjoints is not a group, and the unitarity condition is the single equation $\alpha(a)^{*}\alpha(a) = e$ rather than the two conditions of the two-sided case.
+The one-sided case is where the adjoint formula is at its simplest — no reverse product appears, because a left multiplication has no other factor — and it is the building block of the two-sided case, since the signed two-sided factors as a signed left multiplication followed by a right multiplication and its adjoint factors the same way. The signed left multiplication is not closed under composition, so the set of the adjoints is not a group, and the unitarity condition is the single equation $\alpha(a)^{*}\alpha(a) = e$ rather than the two conditions of the two-sided case.
 
-The article treats the signed left multiplication as an operator, its adjoint, the factorisation of the signed sandwich by the adjoint, and the fixed elements. The signed left multiplication, its parity sign, its composition law and its inverse are *The Signed Left Multiplication on a Symmetry Group*; the adjoint of the general signed sandwich is *The Signed Adjoint Sandwich on a Symmetry Group*, the previous article, of which this is the one-sided factor; the adjoint of a symmetry operator and the operator involution are *The Adjoint of a Symmetry Operator*, the first article of this group; the graded structure and the Clifford case are *The Signed Sandwich on a Symmetry Group*, *The Clifford, Pin and Spin Groups with Signed Inner Conjugation* and *Involutive Graded Algebras*. The grade involution $\alpha$ is the parity of the grading and not the involution of the group `- * Theory`; the two-structures question of an involution on the elements against the adjoint on the operators is settled in *The Adjoint of a Symmetry Operator* and is cited only.
+The article treats the signed left multiplication as an operator, its adjoint, the factorisation of the signed two-sided operator with the adjoint, and the fixed elements. The signed left multiplication, its parity sign, its composition law and its inverse are *The Signed Left Multiplication on a Symmetry Group*; the adjoint of the general signed two-sided operator is *The Signed Adjoint Two-Sided Operator on a Symmetry Group*, the previous article, of which this is the one-sided factor; the adjoint of a symmetry operator and the operator involution are *The Adjoint of a Symmetry Operator*, the first article of this group; the graded structure and the Clifford case are *The Signed Two-Sided Operator on a Symmetry Group*, *The Clifford, Pin and Spin Groups with Signed Inner Conjugation* and *Involutive Graded Algebras*. The grade involution $\alpha$ is the parity of the grading and not the involution of the group `- * Theory`; the two-structures question of an involution on the elements against the adjoint on the operators is settled in *The Adjoint of a Symmetry Operator* and is cited only.
 
-The article has four sections: the signed left multiplication; its adjoint; the factorisation and the sandwich; and the worked cases. Throughout, $G$ is a graded group with central sign element $z$ and grade involution $\alpha(g) = \varepsilon(g)g$, $A = kG$ the group algebra over a field $k$ of characteristic not $2$ with involution $x \mapsto x^{*}$ and trace form $\langle x, y\rangle = \tau(x^{*}y)$, the grade involution a `*`-automorphism preserving the trace, and $L_a(x) = ax$, $\Lambda^{\alpha}_a(x) = a\alpha(x)$ the left multiplications.
+The article has four sections: the signed left multiplication; its adjoint; the factorisation and the two-sided operator; and the worked cases. Throughout, $G$ is a graded group with central sign element $z$ and grade involution $\alpha(g) = \varepsilon(g)g$, $A = kG$ the group algebra over a field $k$ of characteristic not $2$ with involution $x \mapsto x^{*}$ and trace form $\langle x, y\rangle = \tau(x^{*}y)$, the grade involution a `*`-automorphism preserving the trace, and $L_a(x) = ax$, $\Lambda^{\alpha}_a(x) = a\alpha(x)$ the left multiplications.
 
 ## The Signed Left Multiplication
 
@@ -37,7 +37,7 @@ so the signed left multiplications are not closed under composition and form a c
 
 **Proof.** The inverse and the parity sign are *The Signed Left Multiplication on a Symmetry Group*; the composite is $\Lambda^{\alpha}_a(\Lambda^{\alpha}_b x) = a\alpha(b\alpha(x)) = a\alpha(b)\alpha^2(x) = a\alpha(b)x$.
 
-**Remark.** The one-sided signed operator is a bijection whose class is not a group: the composite of two signed left multiplications is unsigned, exactly as the composite of two signed sandwiches is unsigned. The adjoint below inherits this one-sidedness.
+**Remark.** The one-sided signed operator is a bijection whose class is not a group: the composite of two signed left multiplications is unsigned, exactly as the composite of two signed two-sided operators is unsigned. The adjoint below inherits this one-sidedness.
 
 ## The Adjoint of the Signed Left Multiplication
 
@@ -49,7 +49,7 @@ $$
 \boxed{\;\bigl(\Lambda^{\alpha}_a\bigr)^{*} = \Lambda^{\alpha}_{\alpha(a)^{*}}, \qquad\text{that is}\qquad \bigl(\Lambda^{\alpha}_a\bigr)^{*}(y) = \alpha(a)^{*}\,\alpha(y)\;} .
 $$
 
-**Proof.** Use the factorisation $\Lambda^{\alpha}_a = \alpha\circ L_{\alpha(a)}$: the adjoint of a composite is the composite of the adjoints in reverse order, $(\alpha L_{\alpha(a)})^{*} = L_{\alpha(a)}^{*}\alpha^{*}$, and $L_{b}^{*} = L_{b^{*}}$, $\alpha^{*} = \alpha$ from *The Signed Adjoint Sandwich on a Symmetry Group*, so
+**Proof.** Use the factorisation $\Lambda^{\alpha}_a = \alpha\circ L_{\alpha(a)}$: the adjoint of a composite is the composite of the adjoints in reverse order, $(\alpha L_{\alpha(a)})^{*} = L_{\alpha(a)}^{*}\alpha^{*}$, and $L_{b}^{*} = L_{b^{*}}$, $\alpha^{*} = \alpha$ from *The Signed Adjoint Two-Sided Operator on a Symmetry Group*, so
 $$
 \bigl(\Lambda^{\alpha}_a\bigr)^{*} = L_{\alpha(a)^{*}}\circ\alpha = \Lambda^{\alpha}_{\alpha(a)^{*}} .
 $$
@@ -75,11 +75,11 @@ which is the identity exactly when the parameter is the unit.
 
 **Remark.** The unitarity condition $\alpha(a)^{*}\alpha(a) = e$ is **one** equation, against the two of the two-sided case, because a left multiplication has one factor to be right-adjointed; the adjoint is nonetheless a signed left multiplication and not an unsigned one, so the sign structure survives the adjoint exactly as in the two-sided case.
 
-## The Factorisation and the Sandwich
+## The Factorisation and the Two-Sided Operator
 
 ### The Factorisation
 
-**Proposition.** The signed sandwich factors as a signed left multiplication followed by a right multiplication,
+**Proposition.** The signed two-sided factors as a signed left multiplication followed by a right multiplication,
 
 $$
 \boxed{\;\mathcal{T}^{\alpha}_{a,b} = R_b\circ\Lambda^{\alpha}_a, \qquad \mathcal{T}^{\alpha}_{a,b}(x) = a\,\alpha(x)\,b\;},
@@ -91,13 +91,13 @@ $$
 \bigl(\mathcal{T}^{\alpha}_{a,b}\bigr)^{*} = \bigl(\Lambda^{\alpha}_a\bigr)^{*}\circ R_b^{*} = \Lambda^{\alpha}_{\alpha(a)^{*}}\circ R_{b^{*}} ,
 $$
 
-which is the formula $(\mathcal{T}^{\alpha}_{a,b})^{*} = \mathcal{T}^{\alpha}_{\alpha(a)^{*},\alpha(b)^{*}}$ of *The Signed Adjoint Sandwich on a Symmetry Group*.
+which is the formula $(\mathcal{T}^{\alpha}_{a,b})^{*} = \mathcal{T}^{\alpha}_{\alpha(a)^{*},\alpha(b)^{*}}$ of *The Signed Adjoint Two-Sided Operator on a Symmetry Group*.
 
 **Proof.** The factorisation is the associativity of the product, $a\alpha(x)b = (a\alpha(x))b$; the adjoint of a composite reverses the order, and $R_b^{*} = R_{b^{*}}$, giving $\Lambda^{\alpha}_{\alpha(a)^{*}}R_{b^{*}}$; evaluating at $y$ gives $\alpha(a)^{*}\alpha(y)b^{*}$, which is $\mathcal{T}^{\alpha}_{\alpha(a)^{*},\alpha(b)^{*}}(y)$ since $\alpha(b)^{*} = \alpha(b^{*})$ and $R_{b^{*}}(y) = yb^{*}$.
 
 ### The Two-Sided Case from the One-Sided Case
 
-**Proposition.** The adjoint of the signed sandwich is the composite of the adjoint of the signed left multiplication with the adjoint of the right multiplication; hence the two-sided adjoint formula is the product of the one-sided formula and the right case, and the one-sided article is the atomic case of which the two-sided one is the product.
+**Proposition.** The adjoint of the signed two-sided operator is the composite of the adjoint of the signed left multiplication with the adjoint of the right multiplication; hence the two-sided adjoint formula is the product of the one-sided formula and the right case, and the one-sided article is the atomic case of which the two-sided one is the product.
 
 **Proof.** The adjoint of a composite is the reverse composite; the two factors are the signed left multiplication and the right multiplication, whose adjoints are the theorem above and $R_{b^{*}}$.
 
@@ -121,7 +121,7 @@ $$
 \bigl(\Lambda^{\alpha}_a\bigr)^{*} = \Lambda^{\alpha}_{\alpha(a)^{*}},
 $$
 
-proved by factorising $\Lambda^{\alpha}_a = \alpha\circ L_{\alpha(a)}$ and using $L_b^{*} = L_{b^{*}}$, $\alpha^{*} = \alpha$; the general formula for the unsigned case is $L_a^{*} = L_{a^{*}}$. The operator is unitary exactly when $\alpha(a)^{*}\alpha(a) = e$, a single equation, because the composite of the adjoint with the operator is the ordinary left multiplication $L_{\alpha(a)^{*}\alpha(a)}$. The signed sandwich factors as $\mathcal{T}^{\alpha}_{a,b} = R_b\circ\Lambda^{\alpha}_a$ and its adjoint factors the same way in reverse order, giving the two-sided formula $(\mathcal{T}^{\alpha}_{a,b})^{*} = \mathcal{T}^{\alpha}_{\alpha(a)^{*},\alpha(b)^{*}}$ of the previous article; the one-sided case is the atomic factor of the two-sided one. The adjoint on a module over the group is the subject of the next article.
+proved by factorising $\Lambda^{\alpha}_a = \alpha\circ L_{\alpha(a)}$ and using $L_b^{*} = L_{b^{*}}$, $\alpha^{*} = \alpha$; the general formula for the unsigned case is $L_a^{*} = L_{a^{*}}$. The operator is unitary exactly when $\alpha(a)^{*}\alpha(a) = e$, a single equation, because the composite of the adjoint with the operator is the ordinary left multiplication $L_{\alpha(a)^{*}\alpha(a)}$. The signed two-sided factors as $\mathcal{T}^{\alpha}_{a,b} = R_b\circ\Lambda^{\alpha}_a$ and its adjoint factors the same way in reverse order, giving the two-sided formula $(\mathcal{T}^{\alpha}_{a,b})^{*} = \mathcal{T}^{\alpha}_{\alpha(a)^{*},\alpha(b)^{*}}$ of the previous article; the one-sided case is the atomic factor of the two-sided one. The adjoint on a module over the group is the subject of the next article.
 
 ## Summary of Notation
 
@@ -135,7 +135,7 @@ proved by factorising $\Lambda^{\alpha}_a = \alpha\circ L_{\alpha(a)}$ and using
 | $(\Lambda^{\alpha}_a)^{*} = \Lambda^{\alpha}_{\alpha(a)^{*}}$ | the signed adjoint of the left multiplication |
 | $(\Lambda^{\alpha}_a)^{*}\Lambda^{\alpha}_a = L_{\alpha(a)^{*}\alpha(a)}$ | the composite; the unitarity condition |
 | $\alpha(a)^{*} = \alpha(a)^{-1}$ | the unitarity of the signed left multiplication |
-| $\mathcal{T}^{\alpha}_{a,b} = R_b\circ\Lambda^{\alpha}_a$ | the sandwich as a one-sided operator times a right multiplication |
+| $\mathcal{T}^{\alpha}_{a,b} = R_b\circ\Lambda^{\alpha}_a$ | the two-sided operator as a one-sided operator times a right multiplication |
 
 ## Further Reading
 

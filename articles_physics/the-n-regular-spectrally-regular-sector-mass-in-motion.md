@@ -20,7 +20,7 @@ The name of the region is deliberately double. **Mass in motion** is the timelik
 | The four-vector dictionary and the mass shell | [The Material Sector: Four-Vectors, Interval and Lorentz Action](the-material-sector-four-vectors-interval-and-lorentz-action.html) |
 | The spectral reading of a four-momentum | [The Spectral Reading of a Four-Vector](the-spectral-reading-of-a-four-vector.html) |
 | The polar word and the unit group | [The Polar Decomposition and Its Three Pairings](the-polar-decomposition-and-its-three-pairings.html) |
-| The Lorentz action as a sandwich | [Frames, Rotations and the Lorentz Group](frames-rotations-and-the-lorentz-group.html) |
+| The Lorentz action as a two-sided operator | [Frames, Rotations and the Lorentz Group](frames-rotations-and-the-lorentz-group.html) |
 
 ## The Region
 The region is
@@ -234,7 +234,7 @@ No dynamics is supplied. The region is a property of one element at one instant;
 - [The Four Regimes of an Element: Mass and Motion](the-four-regimes-of-an-element-mass-and-motion.html), for the partition and the other three regions.
 - [The Spectral Reading of a Four-Vector](the-spectral-reading-of-a-four-vector.html), for the Doppler pair and the two-term writing.
 - [The Polar Decomposition and Its Three Pairings](the-polar-decomposition-and-its-three-pairings.html), for the polar word.
-- [Frames, Rotations and the Lorentz Group](frames-rotations-and-the-lorentz-group.html), for the sandwich and the boost.
+- [Frames, Rotations and the Lorentz Group](frames-rotations-and-the-lorentz-group.html), for the two-sided operator and the boost.
 - [Spin and the Three Elementary Carriers](spin-and-the-three-elementary-carriers.html), for the minimal ideals.
 - [The Zero-Divisor Cone and the Massless Spectrum](the-zero-divisor-cone-and-the-massless-spectrum.html), for the boundary $N=0$.
 - [The N-Regular, Spectrally Degenerate Sector: The Rest Frame and the Exceptional Point](the-n-regular-spectrally-degenerate-sector-the-rest-frame-and-the-exceptional-point.html), for the boundary $B=0$.

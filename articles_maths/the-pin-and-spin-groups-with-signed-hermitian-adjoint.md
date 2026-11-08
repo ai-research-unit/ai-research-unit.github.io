@@ -4,31 +4,31 @@
 
 The classical construction of the covering groups of the orthogonal group uses the inverse: the Clifford group is the set of units $x$ for which $x\,v\,x^{-1}$ is again a vector, the norm $N(x)=x x^{\natural}$ cuts it down to $\mathrm{Pin}$, and the parity cuts $\mathrm{Pin}$ down to $\mathrm{Spin}$. The right factor in all of it is $x^{-1}$, and the operator carrying it is the signed inner conjugation $\mathrm{Ad}^{\alpha}_x(v)=\alpha(x)vx^{-1}$.
 
-This article makes the same construction with the right factor replaced by the dagger, that is with the **signed Hermitian sandwich** of *Two-Sided Operators on a Hermitian Algebra with Signed Hermitian Adjoint*,
+This article makes the same construction with the right factor replaced by the dagger, that is with the **signed Hermitian pair** of *Two-Sided Operators on a Hermitian Algebra with Signed Hermitian Adjoint*,
 
 $$
 \mathrm{Sd}^{\alpha}_x(v)=\alpha(x)\,v\,x^{\dagger},
 $$
 
-and it isolates what changes. The dagger needs an involution $\sigma$ of the base and is defined on the whole algebra; the inverse needs invertibility and nothing else. Three objects must therefore be compared rather than one. The **Clifford group** $\Gamma(V,\mathfrak{Q})$ is defined by the condition $\mathrm{Ad}^{\alpha}_x(V)\subseteq V$; the **unitary slice** $U=\{x:x^{\dagger}x=1\}$ is defined by the dagger; and the new object is the set of parameters for which the Hermitian sandwich is an *isometry* of $V$,
+and it isolates what changes. The dagger needs an involution $\sigma$ of the base and is defined on the whole algebra; the inverse needs invertibility and nothing else. Three objects must therefore be compared rather than one. The **Clifford group** $\Gamma(V,\mathfrak{Q})$ is defined by the condition $\mathrm{Ad}^{\alpha}_x(V)\subseteq V$; the **unitary slice** $U=\{x:x^{\dagger}x=1\}$ is defined by the dagger; and the new object is the set of parameters for which the Hermitian pair is an *isometry* of $V$,
 
 $$
 \Gamma_{\dagger}=\{\,x\in\Gamma(V,\mathfrak{Q}) : \sigma(N(x))^{2}=1\,\},
 $$
 
-the **Hermitian Clifford group**. The three are related by two facts: the Hermitian sandwich preserves $V$ exactly for $x\in\Gamma$ and is an isometry exactly for $x\in\Gamma_{\dagger}$, by the action proposition of the companion article; and on the slice $U$ the dagger is the inverse, so there $\mathrm{Sd}^{\alpha}_x=\mathrm{Ad}^{\alpha}_x$ and the whole inverse theory transfers verbatim.
+the **Hermitian Clifford group**. The three are related by two facts: the Hermitian pair preserves $V$ exactly for $x\in\Gamma$ and is an isometry exactly for $x\in\Gamma_{\dagger}$, by the action proposition of the companion article; and on the slice $U$ the dagger is the inverse, so there $\mathrm{Sd}^{\alpha}_x=\mathrm{Ad}^{\alpha}_x$ and the whole inverse theory transfers verbatim.
 
-The payoff is a single clean statement. With the trivial involution the Hermitian Clifford group **is** the pin group, $\Gamma_{\dagger}=\mathrm{Pin}$, and the hermitian reading of $\mathrm{Pin}$ is the set of elements whose Hermitian sandwich is an isometry; the odd part of it gives the reflections and the even part the rotations, and the map to $O(V,\mathfrak{Q})$ is two-to-one exactly as for the inverse member. The general involution $\sigma$ widens the scalars and the norm condition but changes no group-theoretic statement, because everything is a scalar modification of the inverse member on the slice.
+The payoff is a single clean statement. With the trivial involution the Hermitian Clifford group **is** the pin group, $\Gamma_{\dagger}=\mathrm{Pin}$, and the hermitian reading of $\mathrm{Pin}$ is the set of elements whose Hermitian pair is an isometry; the odd part of it gives the reflections and the even part the rotations, and the map to $O(V,\mathfrak{Q})$ is two-to-one exactly as for the inverse member. The general involution $\sigma$ widens the scalars and the norm condition but changes no group-theoretic statement, because everything is a scalar modification of the inverse member on the slice.
 
-The groups $\Gamma$, $\mathrm{Pin}$, $\mathrm{Spin}$, the norm and the exact sequences are *The Clifford, Pin and Spin Groups with Signed Inner Conjugation*; the dagger and the involution of the base are *Hermitian Algebras*; the unitary slice, its compactness and the compact real form are *The Unitary Slice and the Compact Real Form with Hermitian Adjoint*; the operator and its action on $V$ are *Two-Sided Operators on a Hermitian Algebra with Signed Hermitian Adjoint*; the unsigned member and its Clifford-group identities are *The Hermitian Sandwich on a Hermitian Algebra with Hermitian Adjoint*. Nothing owned by those entries is reproved.
+The groups $\Gamma$, $\mathrm{Pin}$, $\mathrm{Spin}$, the norm and the exact sequences are *The Clifford, Pin and Spin Groups with Signed Inner Conjugation*; the dagger and the involution of the base are *Hermitian Algebras*; the unitary slice, its compactness and the compact real form are *The Unitary Slice and the Compact Real Form with Hermitian Adjoint*; the operator and its action on $V$ are *Two-Sided Operators on a Hermitian Algebra with Signed Hermitian Adjoint*; the unsigned member and its Clifford-group identities are *The Hermitian Pair of Operators on a Hermitian Algebra with Hermitian Adjoint*. Nothing owned by those entries is reproved.
 
 ## The Three Conditions
 
 **Proposition (the slice is a group).** $U=\{x:x^{\dagger}x=1\}$ is a subgroup of the unit group. It contains $1$; if $x\in U$ then $x^{\dagger}=x^{-1}$ and $x^{\dagger}\in U$; and $U$ is closed under multiplication.
 
-*Proof.* This is the slice proposition of *The Hermitian Sandwich on a Hermitian Algebra with Hermitian Adjoint*: $(xy)^{\dagger}(xy)=y^{\dagger}x^{\dagger}xy=y^{\dagger}y=1$.
+*Proof.* This is the slice proposition of *The Hermitian Pair of Operators on a Hermitian Algebra with Hermitian Adjoint*: $(xy)^{\dagger}(xy)=y^{\dagger}x^{\dagger}xy=y^{\dagger}y=1$.
 
-**Proposition (the Hermitian Clifford group is a group).** $\Gamma_{\dagger}=\{x\in\Gamma(V,\mathfrak{Q}):\sigma(N(x))^{2}=1\}$ is a subgroup of $\Gamma(V,\mathfrak{Q})$, and it is the set of parameters for which the Hermitian sandwiches restrict to isometries of $V$,
+**Proposition (the Hermitian Clifford group is a group).** $\Gamma_{\dagger}=\{x\in\Gamma(V,\mathfrak{Q}):\sigma(N(x))^{2}=1\}$ is a subgroup of $\Gamma(V,\mathfrak{Q})$, and it is the set of parameters for which the Hermitian pairs restrict to isometries of $V$,
 
 $$
 \boxed{\;\mathrm{Sd}^{\alpha}_x(V)\subseteq V\iff x\in\Gamma(V,\mathfrak{Q}),
@@ -50,7 +50,7 @@ So the Hermitian Clifford group **is** the pin group, and the slice meets it in 
 
 *Proof.* For $\sigma=\mathrm{id}$ the dagger is $x^{\natural}$, so $U=\{x:x^{\natural}x=1\}$; on $\Gamma$ one has $x^{\natural}=N(x)x^{-1}$, hence $x^{\natural}x=N(x)$ and $U\cap\Gamma=\{x\in\Gamma:N(x)=1\}$, while $\Gamma_{\dagger}=\{x\in\Gamma:N(x)^{2}=1\}=\{x\in\Gamma:N(x)=\pm1\}$, which is the pin group of the inverse article. For a negative definite form the factors $-\mathfrak{Q}(v_i)$ are positive, so $N$ is positive on the versors and on $\Gamma$, and $N(x)=\pm1$ is $N(x)=1$.
 
-**Remark (the equality is the point).** The proposition says that in the trivial-involution case the three conditions — "the dagger is the inverse", "the Hermitian sandwich is an isometry", "the norm is $\pm1$" — cut $\Gamma$ down to the same group, the pin group being the isometry locus and the slice its norm-one subgroup. The Hermitian sandwich therefore needs no new group: it reconstructs $\mathrm{Pin}$ from the adjunction rather than from the inversion, and the identity $\mathrm{Sd}^{\alpha}_x=\mathrm{Ad}^{\alpha}_x$ on the slice is what makes the two constructions agree.
+**Remark (the equality is the point).** The proposition says that in the trivial-involution case the three conditions — "the dagger is the inverse", "the Hermitian pair is an isometry", "the norm is $\pm1$" — cut $\Gamma$ down to the same group, the pin group being the isometry locus and the slice its norm-one subgroup. The Hermitian pair therefore needs no new group: it reconstructs $\mathrm{Pin}$ from the adjunction rather than from the inversion, and the identity $\mathrm{Sd}^{\alpha}_x=\mathrm{Ad}^{\alpha}_x$ on the slice is what makes the two constructions agree.
 
 **Remark (for a general involution the three differ).** The slice $U$ and the Hermitian Clifford group $\Gamma_{\dagger}$ are different subsets of the unit group in general. The slice condition is $x^{\dagger}x=1$ and it does not involve the quadratic form; the isometry condition is $\sigma(N(x))^{2}=1$ and it does. An element can be a unit of norm $\pm1$ without being on the slice, and an element of the slice can have $\sigma(N(x))^{2}\neq1$; in the trivial-involution case the two reduce to $U\cap\Gamma=\{N=1\}$ and $\Gamma_{\dagger}=\{N=\pm1\}=\mathrm{Pin}$, which coincide for a definite form and differ by an index-two subgroup otherwise. The scalar widening by $\sigma$ is the only trace of the coefficient involution in the group theory.
 
@@ -62,7 +62,7 @@ $$
 \mathrm{Sd}^{\alpha}_u(v)=u\,v\,\sigma(u)=-\mathfrak{Q}(u)\,\rho_u(v),\qquad v\in V .
 $$
 
-On a vector of square $-1$ the signed Hermitian sandwich **is** the reflection, $\mathrm{Sd}^{\alpha}_u=\rho_u$, and $\mathrm{Sd}^{\alpha}_u\in\Gamma_{\bar{\cdot}}$; the unsigned Hermitian sandwich is $-\rho_u$ there. So the odd elements of the Hermitian Clifford group realise the reflections, and the even ones realise the rotations.
+On a vector of square $-1$ the signed Hermitian pair **is** the reflection, $\mathrm{Sd}^{\alpha}_u=\rho_u$, and $\mathrm{Sd}^{\alpha}_u\in\Gamma_{\bar{\cdot}}$; the unsigned Hermitian pair is $-\rho_u$ there. So the odd elements of the Hermitian Clifford group realise the reflections, and the even ones realise the rotations.
 
 *Proof.* The vector identity and the reflection statement are the propositions of the companion article; $\mathrm{Sd}^{\alpha}_u$ is an isometry for a unit vector by the determinant-and-scalar computation: $-\mathfrak{Q}(u)$ has square $1$ when $\mathfrak{Q}(u)=\pm1$. That an even element gives a rotation follows from $\mathrm{Sd}^{\alpha}_x=\mathrm{Sd}_x=\mathrm{Ad}_x$ on the slice and the parity of the determinant.
 
@@ -84,15 +84,15 @@ are exact, with the same two-to-one identification $x\sim-x$ as in the inverse f
 
 **Theorem (Cartan–Dieudonné).** Let $(V,\mathfrak{Q})$ be a non-degenerate quadratic space of dimension $n$ over a field of characteristic not two. Every isometry of $V$ is a product of at most $n$ reflections, and it lies in $SO(V,\mathfrak{Q})$ exactly when it is a product of an even number of them.
 
-*Proof.* Quoted from *The Clifford, Pin and Spin Groups with Signed Inner Conjugation*; the theorem is independent of which sandwich realises the reflections.
+*Proof.* Quoted from *The Clifford, Pin and Spin Groups with Signed Inner Conjugation*; the theorem is independent of which two-sided operator realises the reflections.
 
-**Corollary (the Hermitian reading).** With $\sigma=\mathrm{id}$, every element of $O(V,\mathfrak{Q})$ is a product of signed Hermitian sandwiches of unit vectors,
+**Corollary (the Hermitian reading).** With $\sigma=\mathrm{id}$, every element of $O(V,\mathfrak{Q})$ is a product of signed Hermitian pairs of unit vectors,
 
 $$
 \boxed{\;\gamma=\mathrm{Sd}^{\alpha}_{u_1}\circ\cdots\circ\mathrm{Sd}^{\alpha}_{u_k},\qquad \mathfrak{Q}(u_i)=-1\;},
 $$
 
-with $k$ even exactly when $\gamma\in SO(V,\mathfrak{Q})$; the word length $k$ is the reflection length of $\gamma$ and the algebraic length of the corresponding element of $\mathrm{Pin}$ in the generating set of unit vectors. The reflections are the Hermitian sandwiches of the odd elements, and the parity of the number of factors is the determinant.
+with $k$ even exactly when $\gamma\in SO(V,\mathfrak{Q})$; the word length $k$ is the reflection length of $\gamma$ and the algebraic length of the corresponding element of $\mathrm{Pin}$ in the generating set of unit vectors. The reflections are the Hermitian pairs of the odd elements, and the parity of the number of factors is the determinant.
 
 *Proof.* The unit vectors are in $\mathrm{Pin}$ and $\mathrm{Sd}^{\alpha}_u=\rho_u$; Cartan–Dieudonné writes the isometry as a product of reflections; the parity and determinant statements are the parity proposition of the companion article.
 
@@ -104,33 +104,33 @@ Over $\mathbb{R}$ with the definite negative form, $e_j^{2}=-1$ and $\sigma=\mat
 - $n=2$: $\mathrm{Cl}_{0,2}\cong\mathbb{H}$, $\mathrm{Pin}$ is the group of $24$ Hurwitz units up to sign, equal to $\{\pm1,\pm e_1,\pm e_2,\pm e_3\}$ with $e_3=e_1e_2$; the even part $\mathrm{Spin}=\{\pm1,\pm e_3\}$ is the circle group of the plane, and $\mathrm{Sd}^{\alpha}_{e_3}$ is the rotation through $\pi$.
 - $n=3$: $\mathrm{Cl}_{0,3}\cong\mathbb{H}\oplus\mathbb{H}$, $\mathrm{Pin}$ is the binary octahedral group of order $48$, $\mathrm{Spin}$ is the binary tetrahedral group of order $24$; the odd elements give the reflections and the even ones the rotations of $\mathbb{R}^{3}$, and the unit vectors $e_1,e_2,e_3$ give $\rho_{e_1},\rho_{e_2},\rho_{e_3}$.
 
-In each case $\mathrm{Pin}$ is compact because the form is definite, the norm $N(x)=x x^{\natural}$ is a nonzero real, and the Hermitian sandwich of a unit vector is the reflection with no rescaling. The dictionary with the biquaternion algebra, where the Hermitian sandwich is the corpus sandwich $\tilde Q\,x\,\bar{\tilde{Q}}$ and the slice is the Lorentz group, is *Biquaternion Versors and the Orthogonal Group* in the physics corpus.
+In each case $\mathrm{Pin}$ is compact because the form is definite, the norm $N(x)=x x^{\natural}$ is a nonzero real, and the Hermitian pair of a unit vector is the reflection with no rescaling. The dictionary with the biquaternion algebra, where the Hermitian pair is the corpus two-sided operator $\tilde Q\,x\,\bar{\tilde{Q}}$ and the slice is the Lorentz group, is *Biquaternion Versors and the Orthogonal Group* in the physics corpus.
 
 ## The Indefinite and Degenerate Cases
 
-**Remark (isotropic vectors).** If $q$ is indefinite, a vector with $\mathfrak{Q}(u)=0$ is not invertible and not on the slice; neither Hermitian sandwich is defined for it as an isometry, and the reflection $\rho_u$ does not exist. The construction is confined to the non-isotropic vectors in both formulations, and the Hermitian one has no advantage there.
+**Remark (isotropic vectors).** If $q$ is indefinite, a vector with $\mathfrak{Q}(u)=0$ is not invertible and not on the slice; neither Hermitian pair is defined for it as an isometry, and the reflection $\rho_u$ does not exist. The construction is confined to the non-isotropic vectors in both formulations, and the Hermitian one has no advantage there.
 
 **Remark (the norm can be isotropic).** On $\mathrm{Cl}_{1,1}\cong M_2(\mathbb{R})$ the norm is the determinant of signature $(2,2)$ and vanishes on the nonzero rank-one matrices. Those elements are zero divisors and not in $\Gamma$, so $\Gamma_{\dagger}\subseteq\Gamma$ excludes them; but an element of the slice can lie outside $\Gamma$, and the two conditions are genuinely independent off the trivial-involution case, as the next remark records.
 
 **Remark (the slice is not inside the Clifford group).** In $\mathrm{Cl}_{1,1}\cong M_2(\mathbb{R})$ the element $1-\tfrac12e_2-\tfrac12e_1e_2$ has norm $1$ and is a unit, and its signed inner conjugation does not preserve $V$, by *The Clifford, Pin and Spin Groups with Signed Inner Conjugation*. The same element shows that a unit can satisfy a norm condition and fail the Clifford-group condition, which is why $\Gamma_{\dagger}$ is defined inside $\Gamma$ and not by a norm condition alone. In the trivial-involution case this cannot happen, because there the norm condition and the slice condition coincide with membership in $\Gamma$.
 
-**Remark (the degenerate case).** If $q$ is degenerate the Clifford group need not act on $V$ by invertible maps, the map to $O(V,\mathfrak{Q})$ need not be onto, and the covering statement fails in both formulations; the Hermitian sandwich does not repair it. The degenerate theory belongs to *Degenerate Clifford Algebras and the Radical*.
+**Remark (the degenerate case).** If $q$ is degenerate the Clifford group need not act on $V$ by invertible maps, the map to $O(V,\mathfrak{Q})$ need not be onto, and the covering statement fails in both formulations; the Hermitian pair does not repair it. The degenerate theory belongs to *Degenerate Clifford Algebras and the Radical*.
 
 ## Summary
 
-The Hermitian formulation of the covering groups replaces the inverse by the dagger and therefore compares three conditions. The **Clifford group** $\Gamma$ is where the Hermitian sandwich preserves the vector space, and the **Hermitian Clifford group**
+The Hermitian formulation of the covering groups replaces the inverse by the dagger and therefore compares three conditions. The **Clifford group** $\Gamma$ is where the Hermitian pair preserves the vector space, and the **Hermitian Clifford group**
 
 $$
 \Gamma_{\dagger}=\{\,x\in\Gamma:\sigma(N(x))^{2}=1\,\}
 $$
 
-is where it is an isometry; it is a subgroup of $\Gamma$ because $N$ is multiplicative and $\sigma$ is a homomorphism. The **unitary slice** $U=\{x:x^{\dagger}x=1\}$ is a group, and it is where the dagger is the inverse, so that on $U$ the Hermitian sandwich is the signed inner conjugation and the entire inverse theory transfers verbatim. With the **trivial involution** the two conditions reduce to
+is where it is an isometry; it is a subgroup of $\Gamma$ because $N$ is multiplicative and $\sigma$ is a homomorphism. The **unitary slice** $U=\{x:x^{\dagger}x=1\}$ is a group, and it is where the dagger is the inverse, so that on $U$ the Hermitian pair is the signed inner conjugation and the entire inverse theory transfers verbatim. With the **trivial involution** the two conditions reduce to
 
 $$
 \sigma=\mathrm{id}\ \Longrightarrow\ U\cap\Gamma=\{\,x\in\Gamma:N(x)=1\,\},\quad \Gamma_{\dagger}=\{\,x\in\Gamma:N(x)=\pm1\,\}=\mathrm{Pin}(V,\mathfrak{Q}),
 $$
 
-and the two coincide for a definite form in the corpus's convention, so that the Hermitian sandwich reconstructs the pin group from the adjunction and needs no new group: the odd elements give the reflections through $\mathrm{Sd}^{\alpha}_u(v)=u\,v\,\sigma(u)=-\mathfrak{Q}(u)\rho_u(v)$, which for a unit vector is $\rho_u$ exactly, and the even ones give the rotations; the map to $O(V,\mathfrak{Q})$ is two-to-one, with kernel $\{\pm1\}$ on the slice, and the sequences $1\to\{\pm1\}\to\mathrm{Pin}\to O\to1$ and $1\to\{\pm1\}\to\mathrm{Spin}\to SO\to1$ are exact over $\mathbb{R}$ and a definite form. Cartan–Dieudonné then writes every isometry as a product of signed Hermitian sandwiches of unit vectors, with the parity of the number of factors equal to the determinant. For a general involution the three conditions differ, the scalars widen, and the covering statement is unchanged up to those scalars; the indefinite and degenerate cases fail in the same way as for the inverse member, and the Hermitian form brings no repair.
+and the two coincide for a definite form in the corpus's convention, so that the Hermitian pair reconstructs the pin group from the adjunction and needs no new group: the odd elements give the reflections through $\mathrm{Sd}^{\alpha}_u(v)=u\,v\,\sigma(u)=-\mathfrak{Q}(u)\rho_u(v)$, which for a unit vector is $\rho_u$ exactly, and the even ones give the rotations; the map to $O(V,\mathfrak{Q})$ is two-to-one, with kernel $\{\pm1\}$ on the slice, and the sequences $1\to\{\pm1\}\to\mathrm{Pin}\to O\to1$ and $1\to\{\pm1\}\to\mathrm{Spin}\to SO\to1$ are exact over $\mathbb{R}$ and a definite form. Cartan–Dieudonné then writes every isometry as a product of signed Hermitian pairs of unit vectors, with the parity of the number of factors equal to the determinant. For a general involution the three conditions differ, the scalars widen, and the covering statement is unchanged up to those scalars; the indefinite and degenerate cases fail in the same way as for the inverse member, and the Hermitian form brings no repair.
 
 ## Summary of Notation
 

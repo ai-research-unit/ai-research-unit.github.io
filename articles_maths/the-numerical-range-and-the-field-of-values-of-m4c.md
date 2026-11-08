@@ -252,7 +252,7 @@ The field of values $W(A)=\{x^*Ax:\|x\|=1\}$ of a matrix of $M_4(\mathbb{C})$ is
 ## Further Reading
 
 - [Hermitian Operators and the Numerical Range](hermitian-operators-and-the-numerical-range.html), for the general theory: the Toeplitz–Hausdorff theorem, the radius bounds and the Hermitian and normal characterisations.
-- [The Numerical Range of the Two-Sided Operators of $M_4(\mathbb{C})$](the-numerical-range-of-the-two-sided-operators-of-m4c.html), for the field of values of the sandwich $L_{a}R_{b}(X)=aXb$, the product bound and its failure.
+- [The Numerical Range of the Two-Sided Operators of $M_4(\mathbb{C})$](the-numerical-range-of-the-two-sided-operators-of-m4c.html), for the field of values of the two-sided operator $L_{a}R_{b}(X)=aXb$, the product bound and its failure.
 - [The Involution and the Hermitian Structure of $M_4(\mathbb{C})$](the-involution-and-the-hermitian-structure-of-m4c.html), for the Hermitian part and the unitary group.
 - [The Polar Decomposition of $M_4(\mathbb{C})$](the-polar-decomposition-of-m4c.html), for the singular values and the operator norm.
 - [The Forms, the Norms and the Singular Set of $M_4(\mathbb{C})$](the-forms-the-norms-and-the-singular-set-of-m4c.html), for the Frobenius, operator and nuclear norms.

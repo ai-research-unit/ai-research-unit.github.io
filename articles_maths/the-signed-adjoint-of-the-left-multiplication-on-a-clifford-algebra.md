@@ -74,17 +74,17 @@ so for the twisted form the parameter involution is the Clifford conjugation $\h
 
 **Remark (the meaning of the two displays).** The standard form pairs the signed family with the twisted conjugate and the twisted form with the conjugate; the difference is exactly the twist which defines the form, and it is the operator-level form of the statement that the grading is the twist of the category. In the notation of the graded-algebra article of the category, the same computation reads $(\Sigma^{\alpha}_{a,b})^{*}=\Sigma^{\alpha}_{\alpha(\hat a),\alpha(\hat b)}$ with the right factor absent.
 
-## Relation to the Signed Sandwich
+## Relation to the Signed Two-Sided Operator
 
-**Proposition.** The signed sandwich factors as $\Sigma^{\alpha}_{a,b}=\mathrm{L}^{\alpha}_a\,R_b$, and the adjoint of the factor is a factor of the adjoint,
+**Proposition.** The signed two-sided factors as $\Sigma^{\alpha}_{a,b}=\mathrm{L}^{\alpha}_a\,R_b$, and the adjoint of the factor is a factor of the adjoint,
 
 $$
 \boxed{\;\bigl(\Sigma^{\alpha}_{a,b}\bigr)^{*}=\bigl(\mathrm{L}^{\alpha}_a\bigr)^{*}R_b^{*} = \mathrm{L}^{\alpha}_{\alpha(\hat a)}R_{\hat b}\;} ,
 $$
 
-which is the decomposition of the signed-sandwich adjoint $\Sigma^{\alpha}_{\alpha(\hat a),\alpha(\hat b)}$ into its two factors; in particular the self-adjointness of the left factor is the special case $\alpha(\hat a)=a$ of the left parameter of a self-adjoint sandwich.
+which is the decomposition of the signed-two-sided-operator adjoint $\Sigma^{\alpha}_{\alpha(\hat a),\alpha(\hat b)}$ into its two factors; in particular the self-adjointness of the left factor is the special case $\alpha(\hat a)=a$ of the left parameter of a self-adjoint two-sided operator.
 
-**Proof.** The sandwich is the composite of the signed left multiplication with the ordinary right multiplication, and the adjoint of a composite is the composite of the adjoints in the reverse order; the right multiplications commute with the left ones, so the product of the two adjoints is the signed sandwich with the two parameters as displayed, matching *The Signed Adjoint Sandwich on a Clifford Algebra*.
+**Proof.** The two-sided operator is the composite of the signed left multiplication with the ordinary right multiplication, and the adjoint of a composite is the composite of the adjoints in the reverse order; the right multiplications commute with the left ones, so the product of the two adjoints is the signed two-sided operator with the two parameters as displayed, matching *The Signed Adjoint Two-Sided Operator on a Clifford Algebra*.
 
 ## Worked Cases
 
@@ -108,7 +108,7 @@ $$
 \bigl(\mathrm{L}^{\alpha}_a\bigr)^{*}=\mathrm{L}^{\alpha}_{\alpha(\hat a)} , \qquad \hat a=\alpha(a^{r}) ,
 $$
 
-so the adjoint stays inside the signed family and its parameter involution is $a\mapsto\alpha(\hat a)$. The operator is **self-adjoint** exactly when $\alpha(\hat a)=a$ — a condition met by every vector — and it is an **isometry** exactly when $\hat aa=1$, the same condition as for the ordinary left multiplication $L_a$, so signedness does not change the orthogonal elements. For the **twisted form** the adjoint is $\mathrm{L}^{\alpha}_{\hat a}$, the parameter conjugated by $\hat{}$, the two twists of the form and of the operator cancelling; and the factorisation $\Sigma^{\alpha}_{a,b}=\mathrm{L}^{\alpha}_aR_b$ makes the adjoint of the signed sandwich the product of the adjoints of its factors, matching *The Signed Adjoint Sandwich on a Clifford Algebra*. The ordinary adjoint is *The Adjoint of the Left Multiplication on a Clifford Algebra*, the disambiguation of the twists is *The Signed Left Multiplication on a Clifford Algebra*, and the module-level story is *The Graded Adjoint Action on a Module over a Clifford Algebra*, the last entry of the group.
+so the adjoint stays inside the signed family and its parameter involution is $a\mapsto\alpha(\hat a)$. The operator is **self-adjoint** exactly when $\alpha(\hat a)=a$ — a condition met by every vector — and it is an **isometry** exactly when $\hat aa=1$, the same condition as for the ordinary left multiplication $L_a$, so signedness does not change the orthogonal elements. For the **twisted form** the adjoint is $\mathrm{L}^{\alpha}_{\hat a}$, the parameter conjugated by $\hat{}$, the two twists of the form and of the operator cancelling; and the factorisation $\Sigma^{\alpha}_{a,b}=\mathrm{L}^{\alpha}_aR_b$ makes the adjoint of the signed two-sided operator the product of the adjoints of its factors, matching *The Signed Adjoint Two-Sided Operator on a Clifford Algebra*. The ordinary adjoint is *The Adjoint of the Left Multiplication on a Clifford Algebra*, the disambiguation of the twists is *The Signed Left Multiplication on a Clifford Algebra*, and the module-level story is *The Graded Adjoint Action on a Module over a Clifford Algebra*, the last entry of the group.
 
 ## Summary of Notation
 
@@ -122,7 +122,7 @@ so the adjoint stays inside the signed family and its parameter involution is $a
 | $\alpha(\hat a)=a$ | Self-adjointness; automatic for a vector |
 | $\hat aa=1$ | Isometry; shared with the ordinary left multiplication |
 | $\bigl(\mathrm{L}^{\alpha}_a\bigr)^{*\alpha}=\mathrm{L}^{\alpha}_{\hat a}$ | Twisted-form adjoint |
-| $\Sigma^{\alpha}_{a,b}=\mathrm{L}^{\alpha}_aR_b$ | Signed sandwich; factorisation |
+| $\Sigma^{\alpha}_{a,b}=\mathrm{L}^{\alpha}_aR_b$ | Signed two-sided operator; factorisation |
 
 ## Further Reading
 

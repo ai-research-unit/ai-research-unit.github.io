@@ -12,7 +12,7 @@ $$
 
 A reflection is therefore **self-adjoint exactly when it is fixed by the grade involution**, $\alpha(u) = u$, and the self-adjointness fails precisely in the **degenerate case** in which the twisted square $u\alpha(u)$ is not central, where the operator $r_u$ is not an involution at all but an automorphism of infinite order, and its adjoint is a different signed conjugation. The article also records the reflection for its own grade involution, where the operator collapses to the identity, and it states the unitarity of the reflections that are symmetries.
 
-The article assumes *Reflections as Signed Two-Sided Operators on a Jordan Algebra* for the signed conjugation, the twisted square and the reflection criterion; *The Signed Sandwich on a Jordan Algebra* for the symmetrisation $\Sigma^{\alpha}_{a,b} = U_{a,b}\circ\alpha$; *The Signed Adjoint Sandwich on a Jordan Algebra* for the adjoint computation and the unitarity condition; *The Adjoint of the Left Multiplication on a Jordan Algebra* for the trace form, its associativity and the self-adjointness of the quadratic representations; and *The Left and Right Multiplication Operators on a Jordan Algebra* for the symmetries and the inner structure group. Throughout, $J = A^+$ is a special unital Jordan algebra over a commutative ring $R$ in which $2$ is invertible, $\alpha$ is a grade involution of $A$, $u$ is a unit of $A$, $r_u(x) = u\alpha(x)u^{-1}$ is the signed conjugation, $T$ is the trace form and ${}^{\dagger}$ its adjoint; no norm, form, distance or geometric reflection occurs, and the symmetric-space reading of "reflection" is deferred to Part IV.
+The article assumes *Reflections as Signed Two-Sided Operators on a Jordan Algebra* for the signed conjugation, the twisted square and the reflection criterion; *The Signed Two-Sided Operator on a Jordan Algebra* for the symmetrisation $\Sigma^{\alpha}_{a,b} = U_{a,b}\circ\alpha$; *The Signed Adjoint Two-Sided Operator on a Jordan Algebra* for the adjoint computation and the unitarity condition; *The Adjoint of the Left Multiplication on a Jordan Algebra* for the trace form, its associativity and the self-adjointness of the quadratic representations; and *The Left and Right Multiplication Operators on a Jordan Algebra* for the symmetries and the inner structure group. Throughout, $J = A^+$ is a special unital Jordan algebra over a commutative ring $R$ in which $2$ is invertible, $\alpha$ is a grade involution of $A$, $u$ is a unit of $A$, $r_u(x) = u\alpha(x)u^{-1}$ is the signed conjugation, $T$ is the trace form and ${}^{\dagger}$ its adjoint; no norm, form, distance or geometric reflection occurs, and the symmetric-space reading of "reflection" is deferred to Part IV.
 
 ## The Reflection and Its Adjoint
 
@@ -20,9 +20,9 @@ The article assumes *Reflections as Signed Two-Sided Operators on a Jordan Algeb
 
 **Definition.** The **signed conjugation** by the unit $u$ is $r_u(x) = u\,\alpha(x)\,u^{-1}$; it is an automorphism of $J$, and it is a **reflection** when $r_u^2 = \mathrm{id}$, which holds exactly when the **twisted square** $u\alpha(u)$ is central.
 
-**Proposition (the symmetrised form).** The reflection by a **symmetry** $u = u^{-1}$ coincides with the symmetrised signed sandwich $U_u\circ\alpha$, and the diagonal signed sandwich $\mathcal{T}^{\alpha}_{u,u^{-1}}$ has this symmetrisation.
+**Proposition (the symmetrised form).** The reflection by a **symmetry** $u = u^{-1}$ coincides with the symmetrised signed two-sided operator $U_u\circ\alpha$, and the diagonal signed two-sided operator $\mathcal{T}^{\alpha}_{u,u^{-1}}$ has this symmetrisation.
 
-*Proof.* The symmetrisation of the sandwich $\mathcal{T}^{\alpha}_{u,u^{-1}}(x) = u\alpha(x)u^{-1}$ over the outer parameter is the twisted quadratic representation $U_u\circ\alpha$; for a symmetry the conjugation and the sandwich agree, as in *The Signed Sandwich on a Jordan Algebra*.
+*Proof.* The symmetrisation of the two-sided operator $\mathcal{T}^{\alpha}_{u,u^{-1}}(x) = u\alpha(x)u^{-1}$ over the outer parameter is the twisted quadratic representation $U_u\circ\alpha$; for a symmetry the conjugation and the two-sided operator agree, as in *The Signed Two-Sided Operator on a Jordan Algebra*.
 
 ### The Adjoint
 
@@ -32,7 +32,7 @@ $$
 \boxed{\;\bigl(U_u\circ\alpha\bigr)^{\dagger} = U_{\alpha(u)}\circ\alpha\;} .
 $$
 
-*Proof.* By *The Signed Adjoint Sandwich on a Jordan Algebra*, $(U_{a,b}\circ\alpha)^{\dagger} = U_{\alpha(a),\alpha(b)}\circ\alpha$; with $a = b = u$ and $U_{u,u} = U_u$ this is the displayed formula.
+*Proof.* By *The Signed Adjoint Two-Sided Operator on a Jordan Algebra*, $(U_{a,b}\circ\alpha)^{\dagger} = U_{\alpha(a),\alpha(b)}\circ\alpha$; with $a = b = u$ and $U_{u,u} = U_u$ this is the displayed formula.
 
 **Theorem (self-adjointness).** A reflection is self-adjoint exactly when its parameter is fixed by the grade involution:
 
@@ -64,7 +64,7 @@ which is self-adjoint and unitary; the reflection at the parameter equal to its 
 
 **Proposition.** A reflection that is a symmetry is unitary with respect to the adjoint exactly when the quadratic representation is an involution, $U_u^2 = \mathrm{id}$, which holds for the symmetries; in that case $(U_u\circ\alpha)^{\dagger}(U_u\circ\alpha) = \mathrm{id}$.
 
-*Proof.* By *The Signed Adjoint Sandwich on a Jordan Algebra* the unitarity of the signed sandwich is $U_{u,u}^2 = \mathrm{id}$, that is $U_u^2 = \mathrm{id}$; the symmetries satisfy it.
+*Proof.* By *The Signed Adjoint Two-Sided Operator on a Jordan Algebra* the unitarity of the signed two-sided operator is $U_{u,u}^2 = \mathrm{id}$, that is $U_u^2 = \mathrm{id}$; the symmetries satisfy it.
 
 ## Examples
 
@@ -76,7 +76,7 @@ which is self-adjoint and unitary; the reflection at the parameter equal to its 
 
 ## Summary
 
-A **reflection** on a Jordan algebra is a signed conjugation $r_u(x) = u\alpha(x)u^{-1}$ of order two, which exists exactly when the twisted square $u\alpha(u)$ is central; at a symmetry it coincides with the symmetrised signed sandwich $U_u\circ\alpha$. With respect to the **trace form**, the associativity of the form and the isometry property of the grade involution give the adjoint
+A **reflection** on a Jordan algebra is a signed conjugation $r_u(x) = u\alpha(x)u^{-1}$ of order two, which exists exactly when the twisted square $u\alpha(u)$ is central; at a symmetry it coincides with the symmetrised signed two-sided operator $U_u\circ\alpha$. With respect to the **trace form**, the associativity of the form and the isometry property of the grade involution give the adjoint
 
 $$
 \bigl(U_u\circ\alpha\bigr)^{\dagger} = U_{\alpha(u)}\circ\alpha ,

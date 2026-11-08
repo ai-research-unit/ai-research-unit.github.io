@@ -22,7 +22,7 @@ $$
 \rho(x)^{*}=\rho(x^{\dagger}),
 $$
 
-by the self-adjointness axiom; consequently the elements of the **unitary slice** act by unitary operators, $\rho(x)^{*}=\rho(x)^{-1}$ for $x\in U$, and the two-sided operator that the module naturally produces is the Hermitian sandwich
+by the self-adjointness axiom; consequently the elements of the **unitary slice** act by unitary operators, $\rho(x)^{*}=\rho(x)^{-1}$ for $x\in U$, and the two-sided operator that the module naturally produces is the Hermitian pair
 
 $$
 \rho(x)\,\rho(v)\,\rho(x)^{*}=\rho\bigl(\mathrm{Sd}_x(v)\bigr),
@@ -30,7 +30,7 @@ $$
 \rho\bigl(\mathrm{Sd}^{\alpha}_x(v)\bigr)=\varepsilon_x\,\rho(x)\,\rho(v)\,\rho(x)^{*},
 $$
 
-with $\varepsilon_x=(-1)^{k}$ the parity sign of $x$. The signed Hermitian sandwich of *Two-Sided Operators on a Hermitian Algebra with Signed Hermitian Adjoint* is therefore the two-sided operator whose action on $V$ matches the module conjugation **up to the parity sign**, exactly as in the inverse formulation, and the odd part of the pin group is again the part that the unsigned operator cannot describe.
+with $\varepsilon_x=(-1)^{k}$ the parity sign of $x$. The signed Hermitian pair of *Two-Sided Operators on a Hermitian Algebra with Signed Hermitian Adjoint* is therefore the two-sided operator whose action on $V$ matches the module conjugation **up to the parity sign**, exactly as in the inverse formulation, and the odd part of the pin group is again the part that the unsigned operator cannot describe.
 
 The Clifford algebra, its parity grading and the grade involution are *Clifford Algebras* and *Clifford Algebras in Finite Dimensions*; the general theory of modules, of the simple and semisimple modules and of the density theorem is *Modules over an Algebra* and *Simple and Semisimple Modules*; the Clifford modules, the explicit spinor module, chirality and the eightfold table are *Spin Representations and Clifford Modules with Inner Conjugation*; the Hermitian structure on a module and the self-adjointness axiom are *Hermitian Modules over a Hermitian Algebra with Hermitian Adjoint*; the adjoint of the one-sided action is *The Adjoint of the One-Sided Action with Hermitian Adjoint* and *One-Sided Operators on a Hermitian Algebra with Signed Hermitian Adjoint*; the groups and the norm are *The Pin and Spin Groups with Signed Hermitian Adjoint*; the two-sided operator is *Two-Sided Operators on a Hermitian Algebra with Signed Hermitian Adjoint*; the ideal description is *Peirce Carriers and Signed Hermitian Adjoint*. Nothing owned by those entries is re-derived. The base is a commutative ring $A$ with involution $\sigma$, $F$ the field of scalars of characteristic not two, $m$ non-degenerate of dimension $n$ on $V$, and $\mathrm{Cl}_{n,m}$ for the real forms.
 
@@ -120,7 +120,7 @@ and on the unitary slice, $\mathfrak{Q}(a)=-1$, this is $\rho(a)\rho(v)\rho(a)^{
 
 *Proof.* The algebra action is a representation of the algebra, so $\rho(a)^{2}=\rho(a^{2})=\mathfrak{Q}(a)\rho(1)$; the slice value is $\mathfrak{Q}(a)=-1$.
 
-**Remark (the sign is what the odd part needs).** On the even part $\varepsilon_x=1$ and the module conjugation intertwines the unsigned Hermitian sandwich itself; on the odd part $\varepsilon_x=-1$ and the module conjugation gives the negative of the geometric sandwich, so it is the **signed** Hermitian sandwich that restores the agreement between the action of $\mathrm{Pin}$ on $S$ and its action on $V$. This is the module-theoretic reason for the signed member, and it is unchanged from the inverse formulation; the Hermitian reading adds that the same operators are the adjoints of the group action and that the slice elements act unitarily.
+**Remark (the sign is what the odd part needs).** On the even part $\varepsilon_x=1$ and the module conjugation intertwines the unsigned Hermitian pair itself; on the odd part $\varepsilon_x=-1$ and the module conjugation gives the negative of the geometric two-sided operator, so it is the **signed** Hermitian pair that restores the agreement between the action of $\mathrm{Pin}$ on $S$ and its action on $V$. This is the module-theoretic reason for the signed member, and it is unchanged from the inverse formulation; the Hermitian reading adds that the same operators are the adjoints of the group action and that the slice elements act unitarily.
 
 ## Real Pin Modules
 
@@ -134,7 +134,7 @@ and on the unitary slice, $\mathfrak{Q}(a)=-1$, this is $\rho(a)\rho(v)\rho(a)^{
 
 ## Summary
 
-The pin representation of a Hermitian Clifford module is the restriction of the algebra action to the pin group, $\rho(x)s=x\cdot s$, and it is one-sided by construction. The Hermitian structure contributes its **adjoint**, $\rho(x)^{*}=\rho(x^{\dagger})$, so the elements of the unitary slice act by unitary operators and the two-sided operator that the module produces is the Hermitian sandwich,
+The pin representation of a Hermitian Clifford module is the restriction of the algebra action to the pin group, $\rho(x)s=x\cdot s$, and it is one-sided by construction. The Hermitian structure contributes its **adjoint**, $\rho(x)^{*}=\rho(x^{\dagger})$, so the elements of the unitary slice act by unitary operators and the two-sided operator that the module produces is the Hermitian pair,
 
 $$
 \rho(x)\,\rho(v)\,\rho(x)^{*}=\rho\bigl(\mathrm{Sd}_x(v)\bigr),
@@ -142,7 +142,7 @@ $$
 \rho\bigl(\mathrm{Sd}^{\alpha}_x(v)\bigr)=\varepsilon_x\,\rho(x)\,\rho(v)\,\rho(x)^{*},
 $$
 
-with $\varepsilon_x=(-1)^{k}$. The module conjugation intertwines the unsigned sandwich on the even part and its negative on the odd part, so the **signed** Hermitian sandwich is the operator whose action on $V$ agrees with the module action up to the parity sign; for a slice-normalised vector $a$, $\rho(a)\rho(v)\rho(a)^{-1}=\rho(\rho_a(v))$, so the odd elements of the pin group realise the reflections in the module exactly on the slice, and $\rho(a)^{2}=-\mathrm{id}_S$ is a complex structure there. Chirality, irreducibility, the kernel and the real forms are as in the inverse formulation: the odd elements interchange the two chiral summands, which are Hermitian-orthogonal, the pin representation is irreducible where the spin representation splits into the two half-spin representations, and the kernel is the intersection of the pin group with the annihilator of the module. A pinor is a spinor of the whole algebra, a half-spinor one of the even part, and the Hermitian form restricts to each half and pairs them trivially.
+with $\varepsilon_x=(-1)^{k}$. The module conjugation intertwines the unsigned two-sided operator on the even part and its negative on the odd part, so the **signed** Hermitian pair is the operator whose action on $V$ agrees with the module action up to the parity sign; for a slice-normalised vector $a$, $\rho(a)\rho(v)\rho(a)^{-1}=\rho(\rho_a(v))$, so the odd elements of the pin group realise the reflections in the module exactly on the slice, and $\rho(a)^{2}=-\mathrm{id}_S$ is a complex structure there. Chirality, irreducibility, the kernel and the real forms are as in the inverse formulation: the odd elements interchange the two chiral summands, which are Hermitian-orthogonal, the pin representation is irreducible where the spin representation splits into the two half-spin representations, and the kernel is the intersection of the pin group with the annihilator of the module. A pinor is a spinor of the whole algebra, a half-spinor one of the even part, and the Hermitian form restricts to each half and pairs them trivially.
 
 ## Summary of Notation
 
@@ -152,7 +152,7 @@ with $\varepsilon_x=(-1)^{k}$. The module conjugation intertwines the unsigned s
 | $(x\cdot s,t)=(s,x^{\dagger}\cdot t)$ | Hermitian Clifford module, self-adjointness |
 | $\rho(x)^{*}=\rho(x^{\dagger})$ | Adjoint of the group action |
 | $\rho(x)^{*}=\rho(x)^{-1}$, $x\in U$ | Unitary operators on the slice |
-| $\rho(x)\rho(v)\rho(x)^{*}=\rho(\mathrm{Sd}_x(v))$ | Intertwining by the unsigned sandwich |
+| $\rho(x)\rho(v)\rho(x)^{*}=\rho(\mathrm{Sd}_x(v))$ | Intertwining by the unsigned two-sided operator |
 | $\rho(\mathrm{Sd}^{\alpha}_x(v))=\varepsilon_x\rho(x)\rho(v)\rho(x)^{*}$ | The parity sign |
 | $\rho(a)\rho(v)\rho(a)^{-1}=\rho(\rho_a(v))$, $\mathfrak{Q}(a)=-1$ | Reflection in the module on the slice |
 | $\mathrm{Cl}^1\cdot S^{\pm}\subseteq S^{\mp}$ | Odd elements reverse chirality |

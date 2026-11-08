@@ -2,7 +2,7 @@
 
 ## Introduction
 
-The family of two-sided operators of *Two-Sided Operators on a Clifford Algebra* is indexed by a pair: an automorphism $\theta$ of the Clifford algebra that acts on the left factor and an anti-automorphism $c$ that acts on the right one, the operator attached to $x$ being $\Phi^{\theta,c}_x(y)=\theta(x)\,y\,c(x)$. The present article singles out the member in which the right factor is the inverse and the left factor carries the grade involution,
+The family of two-sided operators of *The Family of Two-Sided Operators on a Clifford Algebra* is indexed by a pair: an automorphism $\theta$ of the Clifford algebra that acts on the left factor and an anti-automorphism $c$ that acts on the right one, the operator attached to $x$ being $\Phi^{\theta,c}_x(y)=\theta(x)\,y\,c(x)$. The present article singles out the member in which the right factor is the inverse and the left factor carries the grade involution,
 
 $$
 x\,y\,x^{-1}\ \longmapsto\ \alpha(x)\,y\,x^{-1},
@@ -12,7 +12,7 @@ the **signed inner conjugation**. The name records the input that the inner conj
 
 The reason a separate name and a separate article are needed is that the even part of the algebra and the odd part behave differently, and the difference is exactly the sign. On an even element the factors $\alpha(x)$ and $x$ coincide and the signed inner conjugation is the inner conjugation, an algebra automorphism; on an odd element the two differ by $-1$, so the signed inner conjugation is the inner conjugation composed with the sign, a map that is multiplicative only up to that sign, yet still bijective, still preserving the parity grading, and on the space of vectors the one that returns the reflection. The inner conjugation and the signed inner conjugation therefore agree on $\mathrm{Cl}^0$ and differ on $\mathrm{Cl}^1$, and only the signed one has the kernel and the action on $V$ on which the pin and spin groups are built.
 
-The Clifford algebra, its parity grading and the three intrinsic involutions $\alpha$, $r$ and $x^{\natural}=\alpha(x^{r})$ are from *Clifford Algebras* and *Clifford Algebras in Finite Dimensions*. The general two-sided family, its five members, its value at the unit, its parity and its composition law are *Two-Sided Operators on a Clifford Algebra*, and nothing of that general theory is re-derived here. The restriction to the quadratic space, the Clifford group $\Gamma(V,\mathfrak{Q})$ and the groups cut out of it by the Clifford norm are *The Clifford, Pin and Spin Groups with Signed Inner Conjugation*; the one-sided factors of the operator are *One-Sided Operators on a Clifford Algebra with Signed Inner Conjugation*, and its role on a module is *Pin Representations and Clifford Modules with Signed Inner Conjugation*; and the reason the signed member is not a second independent structure, with the cancellation of two odd signs and the graded decomposition of the algebra, is *The Grading of the Clifford Algebra with Signed Inner Conjugation*. The base is a field $F$ of characteristic not $2$, with $q$ a non-degenerate quadratic form on the finite-dimensional space $V$ and $B$ its polar form.
+The Clifford algebra, its parity grading and the three intrinsic involutions $\alpha$, $r$ and $x^{\natural}=\alpha(x^{r})$ are from *Clifford Algebras* and *Clifford Algebras in Finite Dimensions*. The general two-sided family, its five members, its value at the unit, its parity and its composition law are *The Family of Two-Sided Operators on a Clifford Algebra*, and nothing of that general theory is re-derived here. The restriction to the quadratic space, the Clifford group $\Gamma(V,\mathfrak{Q})$ and the groups cut out of it by the Clifford norm are *The Clifford, Pin and Spin Groups with Signed Inner Conjugation*; the one-sided factors of the operator are *One-Sided Operators on a Clifford Algebra with Signed Inner Conjugation*, and its role on a module is *Pin Representations and Clifford Modules with Signed Inner Conjugation*; and the reason the signed member is not a second independent structure, with the cancellation of two odd signs and the graded decomposition of the algebra, is *The Grading of the Clifford Algebra with Signed Inner Conjugation*. The base is a field $F$ of characteristic not $2$, with $q$ a non-degenerate quadratic form on the finite-dimensional space $V$ and $B$ its polar form.
 
 ## The Operator and the Parity Sign
 
@@ -22,7 +22,7 @@ $$
 \mathrm{Ad}^{\alpha}_x:\mathrm{Cl}(V,\mathfrak{Q})\longrightarrow\mathrm{Cl}(V,\mathfrak{Q}),\qquad \mathrm{Ad}^{\alpha}_x(y)=\alpha(x)\,y\,x^{-1}.
 $$
 
-It is the two-sided operator of *Two-Sided Operators on a Clifford Algebra* attached to the pair $\theta=\alpha$, $c=(\ )^{-1}$, and it is defined on the unit group alone, because the right factor is the inverse.
+It is the operator of *The Family of Two-Sided Operators on a Clifford Algebra* attached to the pair $\theta=\alpha$, $c=(\ )^{-1}$, and it is defined on the unit group alone, because the right factor is the inverse.
 
 **Proposition (the parity sign).** Let $x$ be homogeneous of degree $k$ and let $\varepsilon_x=(-1)^{k}$, so that $\alpha(x)=\varepsilon_x\,x$. Then
 
@@ -120,7 +120,7 @@ $$
 
 *Proof.* The two conditions are equivalent because the two maps differ by the central scalar $\varepsilon_x$, which carries $V$ to itself. The rest is the theory of *The Clifford, Pin and Spin Groups with Signed Inner Conjugation*, quoted here.
 
-**Remark.** The equivalence of the two conditions shows that the Clifford group does not depend on which member is used to define it; what the member changes is the map, and hence which isometry is attached to which element. With $\mathrm{Ad}$ an odd element $a$ is sent to $-\rho_a$, that is to the reflection composed with $-\mathrm{id}$, and with the rotations of the even part this still fills out $O(V,\mathfrak{Q})$; with $\mathrm{Ad}^{\alpha}$ the same element is sent to the reflection itself. The two maps agree on the even part and differ by the sign on the odd part, and it is the signed map that matches the classical sandwich formula $v\mapsto-a\,v\,a^{-1}$.
+**Remark.** The equivalence of the two conditions shows that the Clifford group does not depend on which member is used to define it; what the member changes is the map, and hence which isometry is attached to which element. With $\mathrm{Ad}$ an odd element $a$ is sent to $-\rho_a$, that is to the reflection composed with $-\mathrm{id}$, and with the rotations of the even part this still fills out $O(V,\mathfrak{Q})$; with $\mathrm{Ad}^{\alpha}$ the same element is sent to the reflection itself. The two maps agree on the even part and differ by the sign on the odd part, and it is the signed map that matches the classical two-sided formula $v\mapsto-a\,v\,a^{-1}$.
 
 ## Worked Cases
 
@@ -161,7 +161,7 @@ In $\mathrm{Cl}_{1,1}(\mathbb{R})\cong M_2(\mathbb{R})$ with $e_1^{2}=1$ and $e_
 
 ## Summary
 
-The **signed inner conjugation** is the two-sided operator $\mathrm{Ad}^{\alpha}_x(y)=\alpha(x)\,y\,x^{-1}$, the member of the family of *Two-Sided Operators on a Clifford Algebra* whose left factor carries the grade involution and whose right factor is the inverse. Its whole behaviour is governed by the parity sign: with $\varepsilon_x=(-1)^{k}$ on the degree-$k$ part,
+The **signed inner conjugation** is the two-sided operator $\mathrm{Ad}^{\alpha}_x(y)=\alpha(x)\,y\,x^{-1}$, the member of the family of *The Family of Two-Sided Operators on a Clifford Algebra* whose left factor carries the grade involution and whose right factor is the inverse. Its whole behaviour is governed by the parity sign: with $\varepsilon_x=(-1)^{k}$ on the degree-$k$ part,
 
 $$
 \mathrm{Ad}^{\alpha}_x=\varepsilon_x\,\mathrm{Ad}_x ,

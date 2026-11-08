@@ -16,16 +16,16 @@ of dimension four. The one-sided family is the image of the model; the two-sided
 |---|---|---|
 | the two one-sided families | two copies, meeting in the scalars | one copy, they coincide |
 | the two-sided family | the whole ambient | the algebra again, of dimension two |
-| the sandwich | the vector action, a nontrivial group | a scalar on the carrier, a double boost on the ambient |
+| the two-sided operator | the vector action, a nontrivial group | a scalar on the carrier, a double boost on the ambient |
 | the length | a rank in $\{0,\dots,n\}$ | in $\{0,1\}$, and only inside the algebra |
 
-Three of the four collapse as in the complex category, and the reason is the same: the algebra is commutative, so the map $A\otimes A_{\mathrm{opp}}\to\operatorname{End}_{\mathbb{R}}(A)$ factors through the multiplication. The fourth does not collapse but **inverts**: the sandwich, which was the interesting operator of the non-commutative categories, is here the least informative one, and the one-sided operator carries everything. This article is about that inversion, and about the one place where the sandwich recovers information.
+Three of the four collapse as in the complex category, and the reason is the same: the algebra is commutative, so the map $A\otimes A_{\mathrm{opp}}\to\operatorname{End}_{\mathbb{R}}(A)$ factors through the multiplication. The fourth does not collapse but **inverts**: the two-sided operator, which was the interesting operator of the non-commutative categories, is here the least informative one, and the one-sided operator carries everything. This article is about that inversion, and about the one place where the two-sided operator recovers information.
 
-**The place where it recovers information.** The sandwich is scalar on the carrier and is not scalar on the ambient. Its ambient form has eigenvalues $N$, $\lambda_+^{2}$, $\lambda_-^{2}$, $N$: it kills the boost on the two mixed directions and **doubles** it on the two pure ones. So the two-sided operator of this category is a map that acts as a scalar on the algebra and as a double boost on the endomorphisms, and the gap between the two behaviours is the subject of the section on the Kronecker display.
+**The place where it recovers information.** The two-sided operator is scalar on the carrier and is not scalar on the ambient. Its ambient form has eigenvalues $N$, $\lambda_+^{2}$, $\lambda_-^{2}$, $N$: it kills the boost on the two mixed directions and **doubles** it on the two pure ones. So the two-sided operator of this category is a map that acts as a scalar on the algebra and as a double boost on the endomorphisms, and the gap between the two behaviours is the subject of the section on the Kronecker display.
 
 **The absence of spin, precisely located.** The biquaternion category has a half angle, a double cover and a spinor action. This category has a full angle and no cover, and the reason is not the commutativity alone but the fact that the eigenvalues of the one-sided operator are the *idempotent coordinates*, which are linear in $Q$. A half angle would need a square root: the operator of a square root would be a square root of the operator, and the spectrum of $M_Q$ is $\{\lambda_+,\lambda_-\}$, so a square root exists if and only if both coordinates are non-negative. So the half angle exists, but only on a cone, and it is a real square root and not a lift of a rotation. This is stated in the section on the pair.
 
-**Boundaries.** The model, the frame, the trace, the determinant, the projectors, the adjugate, the norms and the subspaces are *$M_2(\mathbb{R})$ Hyperbolic Representation*. The polar decomposition of the algebra is *Modulus–Unit Polar Decomposition of Split-Complex Numbers* and *Exponential Polar Decomposition of Split-Complex Numbers*; the one-sided operators in the abstract setting are *One-Sided Operators on a Clifford Algebra* and *Operators Acting 2 Side*, and the commutative complex companion of this article is *Operators on the Reduced Biquaternions*.
+**Boundaries.** The model, the frame, the trace, the determinant, the projectors, the adjugate, the norms and the subspaces are *$M_2(\mathbb{R})$ Hyperbolic Representation*. The polar decomposition of the algebra is *Modulus–Unit Polar Decomposition of Split-Complex Numbers* and *Exponential Polar Decomposition of Split-Complex Numbers*; the one-sided operators in the abstract setting are *One-Sided Operators on a Clifford Algebra* and *Operators Acting on Two Sides*, and the commutative complex companion of this article is *Operators on the Reduced Biquaternions*.
 
 **Conventions.** The carrier has the basis $(1,j)$; a column of two real numbers is read as $x+jx'$. The operator $M_Q$ is multiplication by $Q$, with matrix $\mathsf{M}_2(Q)=qI_2+q'J$, $J=\begin{pmatrix}0&1\\1&0\end{pmatrix}$; $M_Q=L_Q=R_Q$. The two-sided operator is $L_{Q}R_{P}(X)=QXP$ on the carrier and $K_{Q,P}$ on the ambient. The split form is $g=\operatorname{diag}(1,-1)$; the idempotents are $\Pi_\pm$; the coordinates are $\lambda_\pm=q\pm q'$.
 
@@ -128,7 +128,7 @@ of dimension two, and the pair is a redundant parametrisation of the algebra.
 
 **The redundancy.** For $\lambda\neq0$, $L_{\lambda Q}R_{P/\lambda}=L_{Q}R_{P}$; so the four real parameters of the pair fall to the two of the product, and the map from the pair to the operator has two-dimensional fibres.
 
-**The sandwich.** The sandwich is the case $P=\bar Q$:
+**The two-sided operator.** The two-sided operator is the case $P=\bar Q$:
 
 $$
 \mathrm{Sd}_Q(X)=QX\bar Q=\langle Q\rangle_{*}\,X .
@@ -138,11 +138,11 @@ $$
 
 **The reading, and the inversion.** $\mathrm{Sd}_Q$ is a **scalar operator**, equal to the norm. It is multiplicative, $\mathrm{Sd}_Q\circ\mathrm{Sd}_P=\mathrm{Sd}_{QP}$, and it is not faithful: it depends on $Q$ only through the norm, so its fibres are the level sets of $\langle\cdot\rangle_{*}$, which are the hyperbola branches. On the units the image is the group of nonzero scalar operators, of dimension one, and the kernel is the hyperbola $\{\langle Q\rangle_{*}=1\}$.
 
-**Why it collapses.** $\mathrm{Sd}_Q=\langle Q\rangle_{*}\operatorname{Ad}_Q$, where $\operatorname{Ad}_Q$ is the inner automorphism of the algebra; and the inner automorphism group of a commutative algebra is trivial. So the sandwich is the norm times the identity, and the whole of its non-triviality is the scalar. In the biquaternion category the same formula produced a Lorentz transformation, because the algebra was not commutative and the inner automorphisms were a three-dimensional group. Here there is nothing to conjugate.
+**Why it collapses.** $\mathrm{Sd}_Q=\langle Q\rangle_{*}\operatorname{Ad}_Q$, where $\operatorname{Ad}_Q$ is the inner automorphism of the algebra; and the inner automorphism group of a commutative algebra is trivial. So the two-sided operator is the norm times the identity, and the whole of its non-triviality is the scalar. In the biquaternion category the same formula produced a Lorentz transformation, because the algebra was not commutative and the inner automorphisms were a three-dimensional group. Here there is nothing to conjugate.
 
-**What the sandwich forgets.** The boost. Two elements on the same hyperbola have the same sandwich; in particular $Q$ and $Q^{-1}$ have the same norm $1$ and the same sandwich, the identity, while their one-sided operators are inverse boosts. So the sandwich is strictly less informative than the one-sided operator, which is the inversion announced in the introduction: in the non-commutative categories the sandwich carried the vector action and the one-sided operator the spinor one; here the one-sided operator carries everything and the sandwich carries one number.
+**What the two-sided operator forgets.** The boost. Two elements on the same hyperbola have the same two-sided operator; in particular $Q$ and $Q^{-1}$ have the same norm $1$ and the same two-sided operator, the identity, while their one-sided operators are inverse boosts. So the two-sided operator is strictly less informative than the one-sided operator, which is the inversion announced in the introduction: in the non-commutative categories the two-sided operator carried the vector action and the one-sided operator the spinor one; here the one-sided operator carries everything and the two-sided operator carries one number.
 
-**The ambient form is not scalar.** The formula $X\mapsto QX\bar Q$ defines an operator on the ambient as well, and there it is **not** a scalar: its matrix is the Kronecker display of the next section, of eigenvalues $\lambda_+^{2}$, $N$, $N$, $\lambda_-^{2}$. So the collapse to a scalar is a statement about the carrier, not about the formula. The carrier is the algebra, the algebra is the image of the model, and the sandwich never leaves the image; on the endomorphisms it does leave, and there it acts by a double boost. This is the one place in the category where the two-sided operator says something the one-sided operator does not.
+**The ambient form is not scalar.** The formula $X\mapsto QX\bar Q$ defines an operator on the ambient as well, and there it is **not** a scalar: its matrix is the Kronecker display of the next section, of eigenvalues $\lambda_+^{2}$, $N$, $N$, $\lambda_-^{2}$. So the collapse to a scalar is a statement about the carrier, not about the formula. The carrier is the algebra, the algebra is the image of the model, and the two-sided operator never leaves the image; on the endomorphisms it does leave, and there it acts by a double boost. This is the one place in the category where the two-sided operator says something the one-sided operator does not.
 
 ## The Kronecker Display
 
@@ -160,7 +160,7 @@ $$
 \operatorname{spec}K_{Q,P}=\{\lambda_+(Q)\lambda_+(P),\ \lambda_+(Q)\lambda_-(P),\ \lambda_-(Q)\lambda_+(P),\ \lambda_-(Q)\lambda_-(P)\}.
 $$
 
-For the sandwich $P=\bar Q$, where $\lambda_\pm(\bar Q)=\lambda_\mp(Q)$:
+For the two-sided operator $P=\bar Q$, where $\lambda_\pm(\bar Q)=\lambda_\mp(Q)$:
 
 $$
 \operatorname{spec}K_{Q,\bar Q}=\{\lambda_+^{2},\ N,\ N,\ \lambda_-^{2}\}.
@@ -171,7 +171,7 @@ $$
 - on the two **pure** directions the eigenvalue is $\lambda_\pm^{2}=r^{2}e^{\pm2\theta_{\mathrm{rpd}}}$: the scale is squared and the boost is **doubled**, the rapidity $2\theta_{\mathrm{rpd}}$ in place of $\theta_{\mathrm{rpd}}$;
 - on the two **mixed** directions the eigenvalue is $N=r^{2}\epsilon_+\epsilon_-$: the scale is squared and the boost **cancels**, exactly as it cancels on the carrier.
 
-So the ambient sandwich acts as a double boost on the diagonal corners of the tensor square and as a pure dilation on the off-diagonal corners. It is the exact analogue of the $2\theta$ of the complex category, in the hyperbolic parameter, and it is the only doubling of an angle in the whole block.
+So the ambient two-sided operator acts as a double boost on the diagonal corners of the tensor square and as a pure dilation on the off-diagonal corners. It is the exact analogue of the $2\theta$ of the complex category, in the hyperbolic parameter, and it is the only doubling of an angle in the whole block.
 
 **The invariants of the display.**
 
@@ -185,7 +185,7 @@ $$
 
 **The reading.** The trace of the display is $4qp$, that is four times the product of the two scalar parts, so it is the *product* of the two factors' traces over four: the display sees the pair and not only the product. The determinant is a fourth power of norms, and the rank is the product of the ranks, which is the second rank of the series.
 
-**The sign lost.** $K_{Q,P}=K_{-Q,-P}$, so the display is faithful on the pair only up to the simultaneous sign. It is not faithful on $Q$ alone: $K_{Q,\bar Q}$ determines $\lambda_\pm^{2}$ and $N$, hence $\lambda_\pm$ up to a common sign, hence $Q$ up to sign. So the ambient sandwich is faithful up to $\pm1$, and the carrier sandwich is faithful up to the hyperbola. The ladder of faithfulness is therefore
+**The sign lost.** $K_{Q,P}=K_{-Q,-P}$, so the display is faithful on the pair only up to the simultaneous sign. It is not faithful on $Q$ alone: $K_{Q,\bar Q}$ determines $\lambda_\pm^{2}$ and $N$, hence $\lambda_\pm$ up to a common sign, hence $Q$ up to sign. So the ambient two-sided operator is faithful up to $\pm1$, and the carrier two-sided operator is faithful up to the hyperbola. The ladder of faithfulness is therefore
 
 $$
 \mathrm{J}:\ \text{norm}\ \succ\ K:\ \pm Q\ \succ\ M:\ Q,
@@ -326,10 +326,10 @@ The two ranks differ exactly on the units, where the first is two and the second
 **What it buys.** Three things.
 
 - **The conformal structure.** $M_Q^{\mathsf T}gM_Q=\langle Q\rangle_{*}g$, so the family is the conformal group of the Minkowski plane intersected with the symmetric matrices. The pair adds nothing to this, but the display $K_{Q,P}$ extends it to $g\otimes g$ on the ambient, which is where the double boost lives.
-- **The doubling.** The ambient sandwich doubles the rapidity on the two pure corners and kills it on the two mixed ones, and this is the only place in the block where a hyperbolic angle is doubled. It is the analogue of the $2\theta$ of the complex category, and it is the trace of the two-sided formula that the non-commutative categories make into a group action.
+- **The doubling.** The ambient two-sided operator doubles the rapidity on the two pure corners and kills it on the two mixed ones, and this is the only place in the block where a hyperbolic angle is doubled. It is the analogue of the $2\theta$ of the complex category, and it is the trace of the two-sided formula that the non-commutative categories make into a group action.
 - **The faithfulness ladder.** $\Theta$ sees the norm, $K$ sees the pair up to the simultaneous sign, $M$ sees the element; so the model separates three levels of information that the quaternion models cannot separate, because there all three are the same group.
 
-**What it does not buy: a group action.** In the biquaternion category the sandwich is the vector action and its image is $CO^{+}(1,3)$, a six-dimensional group acting on a four-dimensional space. Here the image on the units is the ray of the identity, of dimension one, and it acts trivially on the algebra. So the two-sided family carries no action of a group on the carrier; what it carries is a scalar, and the action of the unit group on the algebra is the multiplication, which is the one-sided layer.
+**What it does not buy: a group action.** In the biquaternion category the two-sided operator is the vector action and its image is $CO^{+}(1,3)$, a six-dimensional group acting on a four-dimensional space. Here the image on the units is the ray of the identity, of dimension one, and it acts trivially on the algebra. So the two-sided family carries no action of a group on the carrier; what it carries is a scalar, and the action of the unit group on the algebra is the multiplication, which is the one-sided layer.
 
 **What it does not buy: the half angle and the cover.** The biquaternion has a half angle in the one-sided spectrum, hence a double cover and a spinor action. Here the spectrum is $\{\lambda_+,\lambda_-\}=\{r e^{\pm\theta_{\mathrm{rpd}}}\}$, the exponent is the full angle, and no cover appears. A square root of the operator exists exactly on the cone where both coordinates are non-negative, and it is a real square root and not a lift: so the half angle exists on a cone of the algebra and is not a representation-theoretic object.
 
@@ -343,7 +343,7 @@ The two ranks differ exactly on the units, where the first is two and the second
 2. The one-sided operator is faithful, self-adjoint for both the trace and the Frobenius forms, and conformal for the split form with factor the norm; its rank is $2$ on the units, $1$ on the null lines and $0$ at the origin.
 3. The polar word $Q=r\epsilon\exp(\theta_{\mathrm{rpd}} j)$ reads $M_Q=rM_\epsilon\exp(\theta_{\mathrm{rpd}} J)$, with eigenvalues $r\epsilon_\pm e^{\pm\theta_{\mathrm{rpd}}}$; the angle is full, the sign is a discrete label, and no cover appears.
 4. The two-sided operator depends on the pair only through the product, $L_{Q}R_{P}=M_{QP}$, so the two-sided family is the algebra and the parametrisation has two-dimensional fibres.
-5. The sandwich is a scalar on the carrier, $\mathrm{Sd}_Q=\langle Q\rangle_{*}\operatorname{id}$, because the inner automorphism group of a commutative algebra is trivial; it is faithful only up to the norm, and it forgets the boost entirely.
+5. The two-sided operator is a scalar on the carrier, $\mathrm{Sd}_Q=\langle Q\rangle_{*}\operatorname{id}$, because the inner automorphism group of a commutative algebra is trivial; it is faithful only up to the norm, and it forgets the boost entirely.
 6. On the ambient the same formula is not scalar: $K_{Q,\bar Q}$ has eigenvalues $\lambda_+^{2}$, $N$, $N$, $\lambda_-^{2}$, doubling the rapidity on the two pure corners and killing it on the two mixed ones.
 7. The display is symmetric, of trace $4qp$, of determinant $\langle Q\rangle_{*}^{2}\langle P\rangle_{*}^{2}$ and of rank $\operatorname{rank}M_Q\operatorname{rank}M_P$, so its ladder is $\{0,1,2,4\}$.
 8. The Galois twist of the algebra is outer in the algebra and inner in the ambient, implemented by the reflection $g=\operatorname{diag}(1,-1)$, which is not in the image.
@@ -356,7 +356,7 @@ The two ranks differ exactly on the units, where the first is two and the second
 |---|---|---|
 | $M_Q$ | the multiplication operator $X\mapsto QX$, equal to $L_Q$ and $R_Q$ | *$M_2(\mathbb{R})$ Hyperbolic Representation* |
 | $L_{Q}R_{P}$ | $X\mapsto QXP$, equal to $M_{QP}$ | this article |
-| $\mathrm{Sd}_Q$ | the sandwich $QX\bar Q=\langle Q\rangle_{*}X$ | this article |
+| $\mathrm{Sd}_Q$ | the two-sided operator $QX\bar Q=\langle Q\rangle_{*}X$ | this article |
 | $K_{Q,P}$ | the Kronecker display $\mathsf{M}_2(P)\otimes\mathsf{M}_2(Q)$ | this article |
 | $g$ | the split form $\operatorname{diag}(1,-1)$, implementing the conjugation by congruence | *$M_2(\mathbb{R})$ Hyperbolic Representation* |
 | $\lambda_\pm=q\pm q'$ | the eigenvalues, the idempotent coordinates | *Eigenvalue Decomposition and Eigenbasis of a Split-Complex Number* |

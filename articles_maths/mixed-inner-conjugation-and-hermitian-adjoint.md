@@ -3,11 +3,11 @@
 
 ## Introduction
 
-The two-sided operators on a Clifford algebra come in two families that are usually treated apart. The **inner conjugation** $x\,y\,x^{-1}$ uses the inverse, is an algebra automorphism, and is the object of *Two-Sided Operators on a Clifford Algebra*; the **Hermitian sandwich** $x\,y\,x^{\dagger}$ uses the dagger, is not an automorphism, and is the object of *The Hermitian Sandwich on a Hermitian Algebra with Hermitian Adjoint*. Each family also has a **graded** variant, in which the left factor is twisted by the grading $\alpha$. The four operators obtained by choosing independently the left twist and the right factor form a single family, and this article treats the family as a whole: it is in the **mixed** operators — the grading on the left and the dagger on the right — that the interaction of the involutive and the orthogonal structure is visible, and the two defects between the members of the family are computed exactly.
+The two-sided operators on a Clifford algebra come in two families that are usually treated apart. The **inner conjugation** $x\,y\,x^{-1}$ uses the inverse, is an algebra automorphism, and is the object of *The Family of Two-Sided Operators on a Clifford Algebra*; the **Hermitian pair** $x\,y\,x^{\dagger}$ uses the dagger, is not an automorphism, and is the object of *The Hermitian Pair of Operators on a Hermitian Algebra with Hermitian Adjoint*. Each family also has a **graded** variant, in which the left factor is twisted by the grading $\alpha$. The four operators obtained by choosing independently the left twist and the right factor form a single family, and this article treats the family as a whole: it is in the **mixed** operators — the grading on the left and the dagger on the right — that the interaction of the involutive and the orthogonal structure is visible, and the two defects between the members of the family are computed exactly.
 
 The two defects are the content of the article. The first is horizontal, between the inverse and the dagger: replacing the inverse by the dagger in the right factor multiplies the operator by the right multiplication by $x\,x^{\dagger}$. The second is vertical, between the signed and the unsigned left factor: it is the left multiplication by $\alpha(x)x^{-1}$. Both defects are trivial exactly on the unitary slice, and this is why the two families are indistinguishable there and only there: on the slice the dagger *is* the inverse, the signed is the unsigned up to sign, and the mixed operator collapses onto the inner conjugation.
 
-The Clifford algebra and its two-sided operators are *Two-Sided Operators on a Clifford Algebra*; the signed inner conjugation, the versors and the sandwich action are *Versors, Rotors and the Sandwich Action with Signed Inner Conjugation* and *The Clifford, Pin and Spin Groups with Signed Inner Conjugation*; the Hermitian sandwich is *The Hermitian Sandwich on a Hermitian Algebra with Hermitian Adjoint*; the adjoint of the one-sided action and the module form are *The Adjoint of the One-Sided Action with Hermitian Adjoint* and *Hermitian Modules over a Hermitian Algebra with Hermitian Adjoint*; the self-adjoint and skew operators are *Self-Adjoint and Skew Operators with Hermitian Adjoint*; the unitary slice, the compact form and the Lie algebra are *The Unitary Slice and the Compact Real Form with Hermitian Adjoint*; the two-sided adjoint theorem is *The Adjoint of the One-Sided Action with Hermitian Adjoint*; and the application of the mixed operators to the reflection groups is *Reflection Groups and Clifford Algebras with Signed Inner Conjugation*.
+The Clifford algebra and its two-sided operators are *The Family of Two-Sided Operators on a Clifford Algebra*; the signed inner conjugation, the versors and the two-sided action are *Versors, Rotors and the Two-Sided Action with Signed Inner Conjugation* and *The Clifford, Pin and Spin Groups with Signed Inner Conjugation*; the Hermitian pair is *The Hermitian Pair of Operators on a Hermitian Algebra with Hermitian Adjoint*; the adjoint of the one-sided action and the module form are *The Adjoint of the One-Sided Action with Hermitian Adjoint* and *Hermitian Modules over a Hermitian Algebra with Hermitian Adjoint*; the self-adjoint and skew operators are *Self-Adjoint and Skew Operators with Hermitian Adjoint*; the unitary slice, the compact form and the Lie algebra are *The Unitary Slice and the Compact Real Form with Hermitian Adjoint*; the two-sided adjoint theorem is *The Adjoint of the One-Sided Action with Hermitian Adjoint*; and the application of the mixed operators to the reflection groups is *Reflection Groups and Clifford Algebras with Signed Inner Conjugation*.
 
 ## The Operational Family
 
@@ -19,7 +19,7 @@ $$
 \Phi^{\mathrm{J},\rho}_{x}(y) = \mathrm{J}(x)\,y\,\rho(x) .
 $$
 
-The four members of the family are the **inner conjugation** $\Phi_{\mathrm{id},\mathrm{inv},x}(y) = x\,y\,x^{-1}$, the **signed inner conjugation** $\Phi_{\mathrm{inv},x}^{\alpha}(y) = \alpha(x)\,y\,x^{-1}$, the **Hermitian sandwich** $\Phi_{\mathrm{id},x}^{\dagger}(y) = x\,y\,x^{\dagger}$, and the **signed Hermitian sandwich** $\Phi^{\alpha,\dagger}_{x}(y) = \alpha(x)\,y\,x^{\dagger}$; the last two are the mixed operators that combine the grading with the adjoint. The last two are the **bilinear sandwich** and its signed version in the vocabulary of the biquaternion layer. The superscript $\dagger$ on $\Phi$ marks the slot that carries the adjoint; it is not part of the operator's name.
+The four members of the family are the **inner conjugation** $\Phi_{\mathrm{id},\mathrm{inv},x}(y) = x\,y\,x^{-1}$, the **signed inner conjugation** $\Phi_{\mathrm{inv},x}^{\alpha}(y) = \alpha(x)\,y\,x^{-1}$, the **Hermitian pair** $\Phi_{\mathrm{id},x}^{\dagger}(y) = x\,y\,x^{\dagger}$, and the **signed Hermitian pair** $\Phi^{\alpha,\dagger}_{x}(y) = \alpha(x)\,y\,x^{\dagger}$; the last two are the mixed operators that combine the grading with the adjoint. The last two are the **bilinear two-sided operator** and its signed version in the vocabulary of the biquaternion layer. The superscript $\dagger$ on $\Phi$ marks the slot that carries the adjoint; it is not part of the operator's name.
 
 **Proposition (multiplicativity in $x$).** For each fixed pair $(\mathrm{J},\rho)$ the assignment $x\mapsto\Phi^{\mathrm{J},\rho}_{x}$ is multiplicative on the group of units:
 
@@ -75,13 +75,13 @@ and in every case $\Phi_{\mathrm{id},x}^{\rho}$ is the **inner conjugation** $\m
 
 **Proof.** The horizontal defect is $xx^{\dagger} = 1$ on the slice, so the two right factors agree; the vertical defect is $\alpha(x)x^{-1}$, which is the scalar $(-1)^{|x|}$ for homogeneous $x$; and on the slice $x^{\dagger} = x^{-1}$, so the common operator is $\mathrm{Ad}_x$. All the identities were checked: $\Phi_{\mathrm{id},u}^{\rho} = \mathrm{Ad}_u$ and $\Phi^{\alpha,\rho}_{u} = (-1)^{|u|}\mathrm{Ad}_u$ for homogeneous $u\in U$, over four hundred constructed slice elements.
 
-**Remark.** The slice agreement is the operator-level reason the two-sided theory has a single object on $U$ and two off it, and it is the reason the inverse sandwich of *The Clifford, Pin and Spin Groups with Signed Inner Conjugation* and the Hermitian sandwich of *The Hermitian Sandwich on a Hermitian Algebra with Hermitian Adjoint* describe the same group on the slice.
+**Remark.** The slice agreement is the operator-level reason the two-sided theory has a single object on $U$ and two off it, and it is the reason the inverse two-sided operator of *The Clifford, Pin and Spin Groups with Signed Inner Conjugation* and the Hermitian pair of *The Hermitian Pair of Operators on a Hermitian Algebra with Hermitian Adjoint* describe the same group on the slice.
 
 ## The Adjoint and the Structure Theorems
 
 ### Adjoints and Isometries
 
-**Theorem (adjoint).** With respect to the Hermitian–Schmidt form $\langle y,z\rangle = \mathrm{Sc}(y^{\dagger}z)$ of *The Blade Form and the Hermitian Structure with Hermitian Adjoint*, the adjoint of the bilinear sandwich is the bilinear sandwich of $x^{\dagger}$,
+**Theorem (adjoint).** With respect to the Hermitian–Schmidt form $\langle y,z\rangle = \mathrm{Sc}(y^{\dagger}z)$ of *The Blade Form and the Hermitian Structure with Hermitian Adjoint*, the adjoint of the bilinear two-sided operator is the bilinear two-sided operator of $x^{\dagger}$,
 
 $$
 \boxed{\;\bigl(\Phi^{\mathrm{J},\dagger}_{x}\bigr)^{*} = \Phi^{\mathrm{J},\dagger}_{x^{\dagger}} \qquad (\mathrm{J} = \mathrm{id},\alpha)\;},
@@ -91,7 +91,7 @@ which was checked for both twists.
 
 **Proof.** This is the two-sided adjoint theorem of *The Adjoint of the One-Sided Action with Hermitian Adjoint*: all the standard involutions commute pairwise and each commutes with the dagger, so the argument transfers verbatim.
 
-**Theorem (isometry).** The bilinear sandwich is an isometry of the module form for every $x$ in the unitary slice,
+**Theorem (isometry).** The bilinear two-sided operator is an isometry of the module form for every $x$ in the unitary slice,
 
 $$
 \boxed{\;x\in U \ \Longrightarrow \ \bigl(\Phi^{\mathrm{J},\dagger}_{x}(y),\Phi^{\mathrm{J},\dagger}_{x}(z)\bigr) = (y,z) \quad \text{for all } y,z\;} ,
@@ -109,13 +109,13 @@ which for the unsigned twist is exactly $x^{\dagger}x = 1$, that is $x\in U$. In
 
 ### Algebra Homomorphisms
 
-**Theorem (homomorphism).** The unsigned bilinear sandwich is an algebra homomorphism exactly on the slice:
+**Theorem (homomorphism).** The unsigned bilinear two-sided operator is an algebra homomorphism exactly on the slice:
 
 $$
 \Phi_{\mathrm{id},x}^{\dagger}(yz) = \Phi_{\mathrm{id},x}^{\dagger}(y)\,\Phi_{\mathrm{id},x}^{\dagger}(z) \ \ \text{for all } y,z \iff x^{\dagger}x = 1 \iff x\in U ,
 $$
 
-and on the slice it is the inner conjugation $\mathrm{Ad}_x$, an automorphism; this was checked with no mismatch in four hundred tests. The signed bilinear sandwich is a homomorphism exactly for $x\in U$ with $x$ even, and for $x\in U$ odd it is **anti-multiplicative** with the sign $-1$, $\Phi^{\alpha,\dagger}_{x}(yz) = -\Phi^{\alpha,\dagger}_{x}(y)\Phi^{\alpha,\dagger}_{x}(z)$.
+and on the slice it is the inner conjugation $\mathrm{Ad}_x$, an automorphism; this was checked with no mismatch in four hundred tests. The signed bilinear two-sided operator is a homomorphism exactly for $x\in U$ with $x$ even, and for $x\in U$ odd it is **anti-multiplicative** with the sign $-1$, $\Phi^{\alpha,\dagger}_{x}(yz) = -\Phi^{\alpha,\dagger}_{x}(y)\Phi^{\alpha,\dagger}_{x}(z)$.
 
 **Proof.** $\Phi_{\mathrm{id},x}^{\dagger}(yz) = xyzx^{\dagger}$ and $\Phi_{\mathrm{id},x}^{\dagger}(y)\Phi_{\mathrm{id},x}^{\dagger}(z) = xy(x^{\dagger}x)zx^{\dagger}$, so equality for all $y,z$ forces $x^{\dagger}x = 1$; the signed case is the sign $(-1)^{|x|}$ times the unsigned one on homogeneous slice elements by the collapse theorem.
 
@@ -129,13 +129,13 @@ With the dagger positive, the slice $U$ contains every unit vector and every biv
 
 ### The Biquaternion Algebra
 
-In $\mathbb{B} = \mathbb{C}\otimes\mathbb{H}\cong M_2(\mathbb{C})$ the slice is $\mathrm{U}(2)$ and the dagger is a positive involution, so the family collapses on $\mathrm{U}(2)$ onto the inner conjugation and splits off it into the two defect factors $xx^{\dagger}$ and $\alpha(x)x^{-1}$. The signed operators act on the two Hermitian sectors by the sign of the degree, which is the operator form of the $\mathbb{Z}/2$-grading used in *Versors, Rotors and the Sandwich Action with Signed Inner Conjugation*, and the collapse on the slice is the reason the Hermitian sandwich and the inverse sandwich describe the same unitary group there.
+In $\mathbb{B} = \mathbb{C}\otimes\mathbb{H}\cong M_2(\mathbb{C})$ the slice is $\mathrm{U}(2)$ and the dagger is a positive involution, so the family collapses on $\mathrm{U}(2)$ onto the inner conjugation and splits off it into the two defect factors $xx^{\dagger}$ and $\alpha(x)x^{-1}$. The signed operators act on the two Hermitian sectors by the sign of the degree, which is the operator form of the $\mathbb{Z}/2$-grading used in *Versors, Rotors and the Two-Sided Action with Signed Inner Conjugation*, and the collapse on the slice is the reason the Hermitian pair and the inverse two-sided operator describe the same unitary group there.
 
 ## Summary
 
-The family $\Phi^{\mathrm{J},\rho}_{x}(y) = \mathrm{J}(x)y\rho(x)$, with $\mathrm{J}\in\{\mathrm{id},\alpha\}$ and $\rho\in\{\mathrm{inv},\dagger\}$, contains the **inner conjugation**, the **signed inner conjugation**, the **Hermitian sandwich** and the **signed Hermitian sandwich**, and for each pair $(\mathrm{J},\rho)$ the assignment $x\mapsto\Phi^{\mathrm{J},\rho}_{x}$ is multiplicative on the units. The two defects are exact: the **horizontal** defect is $\Phi^{\mathrm{J},\dagger}_{x}\circ(\Phi_{\mathrm{inv},x}^{\mathrm{J}})^{-1} = R_{xx^{\dagger}}$, the right multiplication by $xx^{\dagger}$, and the **vertical** defect is $\Phi^{\alpha,\rho}_{x} = L_{\alpha(x)x^{-1}}\circ\Phi_{\mathrm{id},x}^{\rho}$, the left multiplication by $\alpha(x)x^{-1}$; for homogeneous $x$ the vertical defect is the scalar $(-1)^{|x|}$.
+The family $\Phi^{\mathrm{J},\rho}_{x}(y) = \mathrm{J}(x)y\rho(x)$, with $\mathrm{J}\in\{\mathrm{id},\alpha\}$ and $\rho\in\{\mathrm{inv},\dagger\}$, contains the **inner conjugation**, the **signed inner conjugation**, the **Hermitian pair** and the **signed Hermitian pair**, and for each pair $(\mathrm{J},\rho)$ the assignment $x\mapsto\Phi^{\mathrm{J},\rho}_{x}$ is multiplicative on the units. The two defects are exact: the **horizontal** defect is $\Phi^{\mathrm{J},\dagger}_{x}\circ(\Phi_{\mathrm{inv},x}^{\mathrm{J}})^{-1} = R_{xx^{\dagger}}$, the right multiplication by $xx^{\dagger}$, and the **vertical** defect is $\Phi^{\alpha,\rho}_{x} = L_{\alpha(x)x^{-1}}\circ\Phi_{\mathrm{id},x}^{\rho}$, the left multiplication by $\alpha(x)x^{-1}$; for homogeneous $x$ the vertical defect is the scalar $(-1)^{|x|}$.
 
-Both defects vanish exactly on the **unitary slice**: on $U$ the dagger is the inverse, the signed is the unsigned up to $(-1)^{|x|}$ for homogeneous $x$, and the whole family collapses onto the inner conjugation $\mathrm{Ad}_x$, which is the operator-level reason the involutive, the Hermitian and the signed theories agree there and only there. The bilinear sandwich has adjoint $(\Phi^{\mathrm{J},\dagger}_{x})^{*} = \Phi^{\mathrm{J},\dagger}_{x^{\dagger}}$, it is an isometry of the module form for every $x\in U$ (and an isometry at all only when $\mathrm{J}(x^{\dagger}x)\,x^{\dagger}x = 1$, which for the unsigned twist is the slice condition), and it is an algebra homomorphism exactly for $x\in U$, where it is the inner conjugation; the signed operators are multiplicative up to the degree sign, exactly multiplicative only on the even part.
+Both defects vanish exactly on the **unitary slice**: on $U$ the dagger is the inverse, the signed is the unsigned up to $(-1)^{|x|}$ for homogeneous $x$, and the whole family collapses onto the inner conjugation $\mathrm{Ad}_x$, which is the operator-level reason the involutive, the Hermitian and the signed theories agree there and only there. The bilinear two-sided operator has adjoint $(\Phi^{\mathrm{J},\dagger}_{x})^{*} = \Phi^{\mathrm{J},\dagger}_{x^{\dagger}}$, it is an isometry of the module form for every $x\in U$ (and an isometry at all only when $\mathrm{J}(x^{\dagger}x)\,x^{\dagger}x = 1$, which for the unsigned twist is the slice condition), and it is an algebra homomorphism exactly for $x\in U$, where it is the inner conjugation; the signed operators are multiplicative up to the degree sign, exactly multiplicative only on the even part.
 
 ## Summary of Notation
 
@@ -144,16 +144,16 @@ Both defects vanish exactly on the **unitary slice**: on $U$ the dagger is the i
 | $\Phi^{\mathrm{J},\rho}_{x}(y)=\mathrm{J}(x)y\rho(x)$ | Two-sided operator, $\mathrm{J}\in\{\mathrm{id},\alpha\}$, $\rho\in\{\mathrm{inv},\dagger\}$ |
 | $\Phi_{\mathrm{id},\mathrm{inv},x} = \mathrm{Ad}_x$ | Inner conjugation |
 | $\Phi_{\mathrm{inv},x}^{\alpha}$ | Signed inner conjugation |
-| $\Phi_{\mathrm{id},x}^{\dagger}$, $\Phi^{\alpha,\dagger}_{x}$ | Hermitian sandwich, signed Hermitian sandwich |
+| $\Phi_{\mathrm{id},x}^{\dagger}$, $\Phi^{\alpha,\dagger}_{x}$ | Hermitian pair, signed Hermitian pair |
 | $\Phi^{\mathrm{J},\dagger}_{x}\circ(\Phi_{\mathrm{inv},x}^{\mathrm{J}})^{-1} = R_{xx^{\dagger}}$ | Horizontal defect |
 | $\Phi^{\alpha,\rho}_{x} = L_{\alpha(x)x^{-1}}\circ\Phi_{\mathrm{id},x}^{\rho}$ | Vertical defect |
 | $\alpha(x)x^{-1} = (-1)^{|x|}$ | Vertical defect for homogeneous $x$ |
 | $x\in U$: family collapses onto $\mathrm{Ad}_x$ | Slice agreement |
-| $(\Phi^{\mathrm{J},\dagger}_{x})^{*} = \Phi^{\mathrm{J},\dagger}_{x^{\dagger}}$ | Adjoint of the bilinear sandwich |
+| $(\Phi^{\mathrm{J},\dagger}_{x})^{*} = \Phi^{\mathrm{J},\dagger}_{x^{\dagger}}$ | Adjoint of the bilinear two-sided operator |
 
 ## Further Reading
 
-- Pertti Lounesto, *Clifford Algebras and Spinors*, London Mathematical Society Lecture Note Series 286 (Cambridge University Press, 2nd ed. 2001), for the inner automorphisms of a Clifford algebra, the grading and the sandwich operators.
+- Pertti Lounesto, *Clifford Algebras and Spinors*, London Mathematical Society Lecture Note Series 286 (Cambridge University Press, 2nd ed. 2001), for the inner automorphisms of a Clifford algebra, the grading and the two-sided operators.
 - Ian R. Porteous, *Clifford Algebras and the Classical Groups*, Cambridge Studies in Advanced Mathematics 50 (Cambridge University Press, 1995), for the Pin and Spin groups, the norm condition and the twisted conjugation.
 - H. Blaine Lawson and Marie-Louise Michelsohn, *Spin Geometry* (Princeton University Press, 1989), for the grading, the Clifford group and the two-sided action on the spinor module.
 - Max-Albert Knus, Alexander Merkurjev, Markus Rost and Jean-Pierre Tignol, *The Book of Involutions*, Colloquium Publications 44 (American Mathematical Society, 1998), for the interaction of an involution with an automorphism of order two and the signed multiplicativity.

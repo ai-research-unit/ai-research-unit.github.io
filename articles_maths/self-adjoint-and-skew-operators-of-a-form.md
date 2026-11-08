@@ -72,7 +72,7 @@ With the form of signature $(n,m)$ on $\mathbb{R}^{n}$ the sign rule gives the L
 
 ### The Biquaternions
 
-On $\mathbb{B}$ with the dagger, $Q_{T}(\tilde Q) = \operatorname{Sc}(T\tilde Q\tilde Q^{\dagger})$ is the Hermitian reading of an operator and the self-adjoint operators are the Hermitian forms of the algebra; the sandwich operators $\mathrm{Sd}_x$ of *The Form-Adjoint of the Multiplications* are self-adjoint exactly when $x$ is self-adjoint, and the structure is *The Hermitian Sandwich in the Biquaternion Algebra with Hermitian Adjoint*.
+On $\mathbb{B}$ with the dagger, $Q_{T}(\tilde Q) = \operatorname{Sc}(T\tilde Q\tilde Q^{\dagger})$ is the Hermitian reading of an operator and the self-adjoint operators are the Hermitian forms of the algebra; the two-sided operators $\mathrm{Sd}_x$ of *The Form-Adjoint of the Multiplications* are self-adjoint exactly when $x$ is self-adjoint, and the structure is *The Hermitian Pair in the Biquaternion Algebra with Hermitian Adjoint*.
 
 ## Summary
 

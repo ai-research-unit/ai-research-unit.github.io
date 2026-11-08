@@ -4,7 +4,7 @@
 
 The $2\times2$ image is the one in which the algebra looks like the quantum mechanics of a two-state system. The reason is a single line: the three Hermitian units of the algebra map to the three Pauli matrices, and the three vector units map to $-i$ times them. Everything else follows from that line: the observables as Hermitian matrices, the states as positive trace-one matrices, the spin as a triple of commutators, the Bloch ball as the trace-one slice of a cone.
 
-The matrix has two uses, and the article keeps them apart. The **element image** $\mathsf M_2(\tilde Q)$ is the element acting on the spinor module; it carries the data an object acts on. The **map image** $\mathsf M_{4L}(\tilde Q)$ is the element acting on the algebra itself; it carries the objects. The sandwich is a third matrix, quadratic in the element. The three have different traces, different determinants and different spectra, and only the vanishing set is common. The doubling is the dimension of the module, not a physical factor.
+The matrix has two uses, and the article keeps them apart. The **element image** $\mathsf M_2(\tilde Q)$ is the element acting on the spinor module; it carries the data an object acts on. The **map image** $\mathsf M_{4L}(\tilde Q)$ is the element acting on the algebra itself; it carries the objects. The two-sided operator is a third matrix, quadratic in the element. The three have different traces, different determinants and different spectra, and only the vanishing set is common. The doubling is the dimension of the module, not a physical factor.
 
 The article states the correspondence and reads its invariants: the trace as the weight, the determinant as the norm and the mixedness, the eigenvalues as the doubled rapidity, the phase as the fibre of the Hopf bundle. It proves nothing: the identities are proved in the mathematics articles named in the source table. What it adds is the reading, and the separation between what the reading says and what it does not.
 
@@ -16,7 +16,7 @@ The article states the correspondence and reads its invariants: the trace as the
 | The Hermitian subspace $\mathbb{B}_{\Psi}$ as the Hermitian matrices, the anti-Hermitian $\mathbb{B}_{\Phi}$ as the anti-Hermitian matrices, and $\mathbb{B}_{\Phi}=i\mathbb{B}_{\Psi}$ | [The $M_4(\mathbb{C})$ Axis-Free Representation](../articles_maths/m4c-axis-free-representation.html) |
 | $\operatorname{Tr}\mathsf M_2(\tilde Q)=2Q_t$, $\det\mathsf M_2(\tilde Q)=N$, and the norm on each subspace | [$M_2(\mathbb{C})$ Pauli Representation](../articles_maths/m2c-pauli-representation.html) |
 | The regular image $\mathsf M_{4L}(\tilde Q)$, its trace and determinant, and the block splitting | [The $M_4(\mathbb{C})$ Axis-Free Representation](../articles_maths/m4c-axis-free-representation.html) |
-| The sandwich operator, its spectrum $\lambda_i\bar\lambda_j$, its determinant and trace | [Two-Sided Operator and the Polar Decomposition of an N-Regular, Spectrally Regular Biquaternion](../articles_maths/the-sandwich-of-an-n-regular-spectrally-regular-biquaternion.html) |
+| The two-sided operator, its spectrum $\lambda_i\bar\lambda_j$, its determinant and trace | [Two-Sided Operator and the Polar Decomposition of an N-Regular, Spectrally Regular Biquaternion](../articles_maths/hermitian-pair-of-n-regular-spectrally-regular-operators-acting-on-two-sides.html) |
 | Hermitian conjugation ${}^{*}$ as the conjugate transpose, and the four involutions as four matrix operations | [Adjoint Pair of $L$ and $R$ Operators](../articles_maths/adjoint-pair-of-l-and-r-operators.html) |
 | The rank-one matrices, the two strata of the null cone and the trace-one idempotents | [The Forms, the Norms and the Singular Set of $M_4(\mathbb{C})$](../articles_maths/the-forms-the-norms-and-the-singular-set-of-m4c.html) |
 | The unit-norm slice as $SL_2(\mathbb{C})$, the $*$-unitary slice as $SU(2)$, and the polar decomposition | [The Biquaternion Unit Group as a Topological Group](../articles_maths/the-biquaternion-unit-group-as-a-topological-group.html) |
@@ -98,13 +98,13 @@ The map-data image is the element-data image taken twice, one copy per chirality
 
 ### The Bookkeeping of the Doubling
 
-The doubling is visible in every invariant. The trace doubles, from $2Q_t$ to $4Q_t$; the determinant squares, from $N$ to $N^{2}$; and the sandwich, which is the product of the two regular images, has determinant $\lvert N\rvert^{4}$ and trace $4\lvert Q_t\rvert^{2}$. None of these factors is a physical quantity. They are the dimension of the module over which the trace is taken and the number of copies the regular module contains. The one invariant that does not move is the vanishing set: all three determinants vanish exactly on the zero-divisor cone.
+The doubling is visible in every invariant. The trace doubles, from $2Q_t$ to $4Q_t$; the determinant squares, from $N$ to $N^{2}$; and the two-sided operator, which is the product of the two regular images, has determinant $\lvert N\rvert^{4}$ and trace $4\lvert Q_t\rvert^{2}$. None of these factors is a physical quantity. They are the dimension of the module over which the trace is taken and the number of copies the regular module contains. The one invariant that does not move is the vanishing set: all three determinants vanish exactly on the zero-divisor cone.
 
 The boundary is that the two pictures are one representation taken twice, not two theories. A result proved in one picture must be translated before it is read in the other, and the determinant degree is where the translation is most often skipped.
 
-### The Sandwich
+### The Two-Sided Operator
 
-The sandwich is a third matrix,
+The two-sided operator is a third matrix,
 
 $$
 \operatorname{H}_{\tilde Q}=\mathsf M_{4L}(\tilde Q)\mathsf M_{4R}(\tilde Q^{*}),
@@ -168,7 +168,7 @@ $$
 \tilde B_\eta=\cosh\tfrac{\eta}{2}\,e_t+\sinh\tfrac{\eta}{2}\,i\vec e_z,
 $$
 
-has norm one and matrix $\operatorname{diag}(e^{\eta/2},e^{-\eta/2})$. The sandwich has eigenvalues $e^{\eta},1,1,e^{-\eta}$: the two middle eigenvalues are the transverse directions, which the boost fixes; the longitudinal pair is squared. The element stores half the rapidity, because it acts on the spinor; the congruence stores the full rapidity, because it acts on the four-vector.
+has norm one and matrix $\operatorname{diag}(e^{\eta/2},e^{-\eta/2})$. The two-sided operator has eigenvalues $e^{\eta},1,1,e^{-\eta}$: the two middle eigenvalues are the transverse directions, which the boost fixes; the longitudinal pair is squared. The element stores half the rapidity, because it acts on the spinor; the congruence stores the full rapidity, because it acts on the four-vector.
 
 The rotation rotor of angle $\theta$ about $\vec e_z$,
 
@@ -176,7 +176,7 @@ $$
 \tilde R_\theta=\cos\tfrac{\theta}{2}\,e_t+\sin\tfrac{\theta}{2}\,\vec e_z,
 $$
 
-has matrix eigenvalues $e^{\pm i\theta/2}$ and sandwich eigenvalues $e^{\pm i\theta}$ beside two ones. At $\theta=2\pi$ the element eigenvalues are $-1$ and the operator eigenvalues are $1$: the spinor returns with a sign, the vector returns unchanged. The factor two is the double cover.
+has matrix eigenvalues $e^{\pm i\theta/2}$ and two-sided operator eigenvalues $e^{\pm i\theta}$ beside two ones. At $\theta=2\pi$ the element eigenvalues are $-1$ and the operator eigenvalues are $1$: the spinor returns with a sign, the vector returns unchanged. The factor two is the double cover.
 
 The boundary is that the reading requires a diagonalisable element matrix and a pure boost or rotation. On the cone one eigenvalue vanishes; on its trace-zero part the two collide at zero and the reading stops. For a general Lorentz element no single rapidity exists; the polar decomposition separates the boost from the rotation.
 
@@ -275,7 +275,7 @@ The mixedness is the spread of the singular values. The boundary is that the sin
 
 ### The Central Phase
 
-The central element $e^{i\alpha}e_t$ maps to the scalar matrix $e^{i\alpha}\mathrm I_2$. It multiplies the element matrix by a phase, multiplies the determinant by $e^{2i\alpha}$, multiplies a state by $e^{i\alpha}$ and therefore does not preserve the trace-one slice, and acts trivially in the sandwich. A pure state is a ray, not a vector: the spinor $\zeta$ and $e^{i\alpha}\zeta$ give the same $\rho$, and the circle of phases over each pure state is the fibre of the Hopf bundle.
+The central element $e^{i\alpha}e_t$ maps to the scalar matrix $e^{i\alpha}\mathrm I_2$. It multiplies the element matrix by a phase, multiplies the determinant by $e^{2i\alpha}$, multiplies a state by $e^{i\alpha}$ and therefore does not preserve the trace-one slice, and acts trivially in the two-sided operator. A pure state is a ray, not a vector: the spinor $\zeta$ and $e^{i\alpha}\zeta$ give the same $\rho$, and the circle of phases over each pure state is the fibre of the Hopf bundle.
 
 ### The Hopf Map
 
@@ -330,7 +330,7 @@ A $2\times2$ matrix has two scalar invariants, its determinant and its trace, an
 
 The determinant is a **scale**, the eigenvalue ratio a **shape**, and the phase the one datum the map to the ray forgets. The three are independent. A state matrix has a determinant and a real eigenvalue ratio; the ratio is a population ratio and not a rapidity, because the state is Hermitian and is not a Lorentz frame element. A boost matrix has a rapidity and determinant one, because it is a unit. A unit spinor has a phase and a pure-state image of determinant zero, because the map to the ray is rank one.
 
-Read together, the three readings say what a matrix image can carry: a norm, a frame and a volume. It cannot carry the phase of the element, which the sandwich loses and the state ray forgets, and it cannot carry a dynamics.
+Read together, the three readings say what a matrix image can carry: a norm, a frame and a volume. It cannot carry the phase of the element, which the two-sided operator loses and the state ray forgets, and it cannot carry a dynamics.
 
 ## Physical Interpretations
 
@@ -340,7 +340,7 @@ Read together, the three readings say what a matrix image can carry: a norm, a f
 - **The trace is the weight.** $\operatorname{Tr}=2Q_t$; the factor two is the dimension of the spinor module.
 - **The determinant is the norm.** The same function is the interval on the material slice, the causal type and positivity on the informational slice, and the mixedness on the state slice.
 - **The eigenvalues are the spectrum.** $\lambda_\pm=Q_t\pm iB$; their product is the determinant and their sum twice the trace.
-- **The spectrum is the doubled rapidity.** The element matrix stores half the rapidity or half the angle; the sandwich stores the full one. The double cover is the factor two.
+- **The spectrum is the doubled rapidity.** The element matrix stores half the rapidity or half the angle; the two-sided operator stores the full one. The double cover is the factor two.
 - **The state is the positive trace-one matrix.** The Bloch ball is the state space; the determinant is the mixedness; purity is the zero divisor.
 - **The phase is the fibre.** The Hopf bundle $U(1)\hookrightarrow S^3\to S^2$; the central phase is the fibre, and the holonomy is minus half the solid angle.
 - **The two images are one representation taken twice.** The map-data image is the element-data image taken twice, one copy per chirality; the trace doubles and the determinant squares.
@@ -363,9 +363,9 @@ The correspondence does not say that nature is complex, and it does not derive t
 
 - The $2\times2$ image is the Pauli correspondence: $e_t\mapsto\mathrm I_2$ and $\vec e_k\mapsto-i\sigma_k$, so $i\vec e_k\mapsto\sigma_k$.
 - The factor $i$ is the complex structure that separates the generators from the observables; it is forced by the squares and the products.
-- The element matrix has trace $2Q_t$ and determinant $N$; the regular image has trace $4Q_t$ and determinant $N^{2}$; the sandwich has trace $4\lvert Q_t\rvert^{2}$ and determinant $\lvert N\rvert^{4}$. Only the vanishing set is common.
+- The element matrix has trace $2Q_t$ and determinant $N$; the regular image has trace $4Q_t$ and determinant $N^{2}$; the two-sided operator has trace $4\lvert Q_t\rvert^{2}$ and determinant $\lvert N\rvert^{4}$. Only the vanishing set is common.
 - The eigenvalues are $\lambda_\pm=Q_t\pm iB$; their product is the determinant and their sum twice the trace.
-- The element matrix stores half the rapidity or half the angle; the sandwich stores the full one. The double cover is the factor two.
+- The element matrix stores half the rapidity or half the angle; the two-sided operator stores the full one. The double cover is the factor two.
 - The Hermitian elements are the observables; the traceless ones are the spin axes; the commutator is $\mathfrak{su}(2)$.
 - The state is the positive trace-one matrix; the determinant is $\tfrac14(1-r^{2})$, the mixedness; purity is the zero divisor; the purity and the linear entropy are affine in the determinant.
 - The phase is the fibre of the Hopf bundle $U(1)\hookrightarrow S^3\to S^2$; the holonomy is minus half the solid angle.
@@ -377,7 +377,7 @@ The correspondence does not say that nature is complex, and it does not derive t
 | --- | --- |
 | $\mathsf M_2(\tilde Q)$ | the element image; $\det=N$, $\operatorname{Tr}=2Q_t$ |
 | $\mathsf M_{4L}(\tilde Q)$ | the left regular image; $\det=N^{2}$, $\operatorname{Tr}=4Q_t$ |
-| $\operatorname{H}_{\tilde Q}$ | the sandwich; $\det=\lvert N\rvert^{4}$, $\operatorname{Tr}=4\lvert Q_t\rvert^{2}$ |
+| $\operatorname{H}_{\tilde Q}$ | the two-sided operator; $\det=\lvert N\rvert^{4}$, $\operatorname{Tr}=4\lvert Q_t\rvert^{2}$ |
 | $\tilde{Ϛ}_{\Psi}=\tfrac12(e_t+i\vec r)$ | a trace-one state of the Bloch ball |
 | $\det\mathsf M_2(\tilde{Ϛ}_{\Psi})=\tfrac14(1-r^{2})$ | the mixedness |
 | $S_L=2\det\mathsf M_2(\tilde{Ϛ}_{\Psi})$ | the linear entropy |

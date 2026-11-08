@@ -23,7 +23,7 @@ $$
 
 which is the adjointness condition of *Hermitian Modules over a Hermitian Algebra with Hermitian Adjoint*. So a Hermitian Clifford module is exactly a Clifford module with a Hermitian equivariant bilinear form, and the **spinor adjoint** $J$ of *Spinor Adjoints and the Dirac Adjoint with Hermitian Adjoint* is the bilinear operator of that form.
 
-**Remark (the two-sided action on the forms).** The space $\mathrm{Bil}_A(S,S;A)$ carries the action of the operator algebra: for $T\in \mathrm{End}_A(S)$ the form $b\circ(T\times T)$ is again bilinear, and the equivariant forms are the fixed points of the subspace of operators of the form $\rho(x)\otimes\rho(x^{\dagger}) - \mathrm{id}$. This is the module-level form of the two-sided operators of *Two-Sided Operators on a Clifford Algebra*.
+**Remark (the two-sided action on the forms).** The space $\mathrm{Bil}_A(S,S;A)$ carries the action of the operator algebra: for $T\in \mathrm{End}_A(S)$ the form $b\circ(T\times T)$ is again bilinear, and the equivariant forms are the fixed points of the subspace of operators of the form $\rho(x)\otimes\rho(x^{\dagger}) - \mathrm{id}$. This is the module-level form of the two-sided operators of *The Family of Two-Sided Operators on a Clifford Algebra*.
 
 ### The Adjoint of a Bilinear Operator
 
@@ -79,7 +79,7 @@ so the slice permutes the covariants by the conjugation $\Gamma_A\mapsto u^{\dag
 
 **Proof.** $b_A(us,ut) = (us, \rho(\Gamma_A)ut) = (s, \rho(u^{\dagger}\Gamma_A u)t)$ by the adjointness of the action, $= b_{u^{\dagger}\Gamma_Au}(s,t)$, and $u^{\dagger}\Gamma_Au$ is again a blade combination of the same degree.
 
-**Corollary (invariance and its failure).** The slice acts on the space of covariants, and the invariants are the forms whose expansion is fixed by all $u$, which on the definite module is the span of the scalar covariant alone; off the slice, the conjugation is the two-sided operator of *Two-Sided Operators on a Clifford Algebra*, and the exponent reads the sign of the general operator.
+**Corollary (invariance and its failure).** The slice acts on the space of covariants, and the invariants are the forms whose expansion is fixed by all $u$, which on the definite module is the span of the scalar covariant alone; off the slice, the conjugation is the operator of *The Family of Two-Sided Operators on a Clifford Algebra*, and the exponent reads the sign of the general operator.
 
 ## Worked Cases
 

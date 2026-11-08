@@ -8,7 +8,7 @@ A recent paper by Korolkova, Sánchez-Soto, and Leuchs (arXiv:2405.15692, 2024) 
 
 This article asks a specific question: does the biquaternion framework developed in the companion articles have a natural home for the operational criterion, and if so, does it add anything to it?
 
-The answer to the first part is yes. The framework already distinguishes between two kinds of operation: $*$-unitary elements $\tilde Q$ (with $\tilde Q\tilde Q^{*} = e_t$) generate reversible evolution by rotor conjugation; idempotent elements $\tilde\Pi$ (with $\tilde\Pi^2 = \tilde\Pi$) generate irreversible projection by the sandwich operation. The operational criterion of Korolkova, Sánchez-Soto, and Leuchs — count the idempotents applied to the two partitions — is exactly the framework's reversible/irreversible dichotomy applied to the specific setting of non-separability. The framework gives the criterion an algebraic home.
+The answer to the first part is yes. The framework already distinguishes between two kinds of operation: $*$-unitary elements $\tilde Q$ (with $\tilde Q\tilde Q^{*} = e_t$) generate reversible evolution by rotor conjugation; idempotent elements $\tilde\Pi$ (with $\tilde\Pi^2 = \tilde\Pi$) generate irreversible projection by the two-sided operation. The operational criterion of Korolkova, Sánchez-Soto, and Leuchs — count the idempotents applied to the two partitions — is exactly the framework's reversible/irreversible dichotomy applied to the specific setting of non-separability. The framework gives the criterion an algebraic home.
 
 The answer to the second part is a qualified **not yet**. The framework expresses the criterion cleanly, and it suggests a structural reason for *why* the criterion works — the material/informational split $\mathbb{B} = \mathbb{B}_{\Phi} \oplus \mathbb{B}_{\Psi}$. But it does not yet predict anything the operational criterion does not already predict, and it does not yet specify the dynamics of the cross-sector coupling that would be needed to make the structural reason a dynamical reason. The framework sharpens the criterion; it does not extend it.
 
@@ -61,11 +61,11 @@ $$
 $$
 The action is reversible. The $*$-unitary element is a rotor in the sense of geometric algebra, and its conjugation action is the algebraic form of a basis change, a mode rotation, a filter, or a sorter.
 
-- **Idempotent elements** $\tilde\Pi \in \mathbb{B}_{\Psi}$ satisfy $\tilde\Pi^2 = \tilde\Pi$ and act on states by the **sandwich**:
+- **Idempotent elements** $\tilde\Pi \in \mathbb{B}_{\Psi}$ satisfy $\tilde\Pi^2 = \tilde\Pi$ and act on states by the **two-sided operator**:
 $$
 \tilde{Ϛ}_{\Psi} \;\longmapsto\; \tilde\Pi\,\tilde{Ϛ}_{\Psi}\,\tilde\Pi.
 $$
-The action is irreversible. The idempotent represents a pure state, and its sandwich action is the algebraic form of a projective measurement.
+The action is irreversible. The idempotent represents a pure state, and its two-sided action is the algebraic form of a projective measurement.
 
 In the companion articles, this dichotomy is presented as a *structural* feature of the algebra: $*$-unitary and idempotent elements are the two classes of acting elements, and the reversible/irreversible distinction is read off from the algebra rather than postulated. In the specific setting of non-separability, the dichotomy acquires a direct operational meaning.
 

@@ -261,11 +261,11 @@ The elliptic type is realised in the algebra by the exponentials of the quaterni
 
 This is the precise content of the split in the classification: the elliptic and the hyperbolic one-parameter subgroups are separated because the form is indefinite, and only these two are contributed by the coefficient algebra. The dual number construction, which realises the parabolic rotation of the plane by the exponential of a square-zero element, has no counterpart in $\mathbb{B}_{\mathrm{spl}}$, as recorded in *The Three Two-Dimensional Algebras and the Three Kinds of Rotation*.
 
-## The Bilinear Sandwich of a General Unit
+## The Bilinear Two-Sided Operator of a General Unit
 
-The $*$-unitary action $\tilde Q\mapsto\tilde S\tilde Q\tilde{S}^{*}$ of the preceding section is defined for every unit, $*$-unitary or not; taken in that generality it is the **bilinear sandwich**, a linear representation of the unit group that is an automorphism only on the $*$-unitary subgroup.
+The $*$-unitary action $\tilde Q\mapsto\tilde S\tilde Q\tilde{S}^{*}$ of the preceding section is defined for every unit, $*$-unitary or not; taken in that generality it is the **bilinear two-sided operator**, a linear representation of the unit group that is an automorphism only on the $*$-unitary subgroup.
 
-**Definition.** The **bilinear sandwich** of a unit $\tilde U$ is the real-linear map
+**Definition.** The **bilinear two-sided operator** of a unit $\tilde U$ is the real-linear map
 
 $$
 \operatorname{H}_{\tilde U} : \mathbb{B}_{\mathrm{spl}}\longrightarrow\mathbb{B}_{\mathrm{spl}}, \qquad \operatorname{H}_{\tilde U}(\tilde Q) = \tilde U\,\tilde Q\,\tilde U^{*}.
@@ -275,9 +275,9 @@ It is well defined for every unit and depends only on $\tilde U$; the two-sided 
 
 **Theorem (multiplicative exactly on the $*$-unitary subgroup).** Let $\tilde Q$ be a unit. Then $\operatorname{H}_{\tilde Q}(\tilde Q_1\tilde Q_2) = \operatorname{H}_{\tilde Q}(\tilde Q_1)\operatorname{H}_{\tilde Q}(\tilde Q_2)$ for all $\tilde Q_1,\tilde Q_2$ if and only if $\tilde Q^{*}\tilde Q = e_t$, that is, if and only if $\tilde Q$ is $*$-unitary.
 
-**Proof.** The two sides are $\tilde U\tilde Q_1\tilde Q_2\tilde U^{*}$ and $\tilde U\tilde Q_1\tilde U^{*}\tilde U\tilde Q_2\tilde U^{*}$; they agree for all $\tilde Q_1,\tilde Q_2$ exactly when the factor $\tilde U^{*}\tilde U$ inserted between $\tilde Q_1$ and $\tilde Q_2$ is $e_t$, that is when $\tilde U^{*} = \tilde U^{-1}$ and $\tilde U$ is $*$-unitary. In that case the sandwich is the inner automorphism $\tilde Q\mapsto\tilde U\tilde Q\tilde U^{-1}$.
+**Proof.** The two sides are $\tilde U\tilde Q_1\tilde Q_2\tilde U^{*}$ and $\tilde U\tilde Q_1\tilde U^{*}\tilde U\tilde Q_2\tilde U^{*}$; they agree for all $\tilde Q_1,\tilde Q_2$ exactly when the factor $\tilde U^{*}\tilde U$ inserted between $\tilde Q_1$ and $\tilde Q_2$ is $e_t$, that is when $\tilde U^{*} = \tilde U^{-1}$ and $\tilde U$ is $*$-unitary. In that case the two-sided operator is the inner automorphism $\tilde Q\mapsto\tilde U\tilde Q\tilde U^{-1}$.
 
-**Theorem.** For every unit $\tilde U$ the sandwich maps $\mathbb{B}_{\Psi}$ to $\mathbb{B}_{\Psi}$ and $\mathbb{B}_{\Phi}$ to $\mathbb{B}_{\Phi}$.
+**Theorem.** For every unit $\tilde U$ the two-sided maps $\mathbb{B}_{\Psi}$ to $\mathbb{B}_{\Psi}$ and $\mathbb{B}_{\Phi}$ to $\mathbb{B}_{\Phi}$.
 
 **Proof.** If $\tilde Q^{\dagger} = \tilde Q$ then $(\tilde U\tilde Q\tilde U^{*})^{\dagger} = \tilde U^{\dagger{}^{*}}\tilde Q^{\dagger}\tilde U^{*} = \tilde U\tilde Q\tilde U^{*}$, so the image is Hermitian; if $\tilde Q^{\dagger} = -\tilde Q$ the image is anti-Hermitian.
 
@@ -289,24 +289,24 @@ $$
 
 **Proof.** The split-biquaternion norm is multiplicative, so $\langle\operatorname{H}_{\tilde U}(\tilde Q)\rangle_{\natural} = \langle\tilde U\rangle_{\natural}\langle\tilde Q\rangle_{\natural}\langle\tilde U^{*}\rangle_{\natural}$, and the Hermitian conjugation interchanges the two idempotent components, so $\langle\tilde U^{*}\rangle_{\natural} = \lvert\tilde U_-\rvert^{2}\tilde\Pi_1 + \lvert\tilde U_+\rvert^{2}\tilde\Pi_2$ while $\langle\tilde U\rangle_{\natural} = \lvert\tilde U_+\rvert^{2}\tilde\Pi_1 + \lvert\tilde U_-\rvert^{2}\tilde\Pi_2$; their product is the central real number $\lvert\tilde U_+\rvert^{2}\lvert\tilde U_-\rvert^{2}e_t = \langle\tilde U\rangle_{\natural,+}\langle\tilde U\rangle_{\natural,-}e_t$. For the Hermitian form, a $*$-unitary $\tilde U$ satisfies $\tilde U^{*} = \tilde U^{-1}$, and $\operatorname{H}_{\tilde U}$ is then the inner automorphism; since conjugation preserves the scalar part and $\operatorname{H}_{\tilde U}(\tilde Q)^{\dagger} = \operatorname{H}_{\tilde U}(\tilde Q^{\dagger})$, one has $g(\operatorname{H}_{\tilde U}(\tilde Q)) = \mathrm{Sc}\bigl(\operatorname{H}_{\tilde U}(\tilde Q)\operatorname{H}_{\tilde U}(\tilde Q)^{\dagger}\bigr) = \mathrm{Sc}\bigl(\tilde U\,\tilde Q\tilde Q^{\dagger}\tilde U^{-1}\bigr) = \mathrm{Sc}(\tilde Q\tilde Q^{\dagger}) = g(\tilde Q)$.
 
-The factor $\langle\tilde U\rangle_{\natural,+}\langle\tilde U\rangle_{\natural,-}$ is therefore the **defect** of the sandwich under the indefinite form. It vanishes exactly when one of the two components is zero, that is exactly on the zero divisors; on the unit group it is a nonzero real number of either sign, and the Hermitian form $g$ is preserved by every $*$-unitary element. The biquaternion sandwich has the analogous factor $\lvert \langle\tilde U\rangle_{\natural}\rvert^{2}$; the difference is that there the factor is a sum of squares and here a difference.
+The factor $\langle\tilde U\rangle_{\natural,+}\langle\tilde U\rangle_{\natural,-}$ is therefore the **defect** of the two-sided operator under the indefinite form. It vanishes exactly when one of the two components is zero, that is exactly on the zero divisors; on the unit group it is a nonzero real number of either sign, and the Hermitian form $g$ is preserved by every $*$-unitary element. The biquaternion two-sided operator has the analogous factor $\lvert \langle\tilde U\rangle_{\natural}\rvert^{2}$; the difference is that there the factor is a sum of squares and here a difference.
 
 **Theorem (kernel).** $\operatorname{H}_{\tilde U} = \mathrm{id}$ if and only if $\tilde U$ is central and $*$-unitary, that is $\tilde U = Q_te_t$ with $Q_t = q_t + jq'_t$ and $q_t^{2} - q'^{2}_{0} = 1$. On the unit-norm slice $\langle\tilde U\rangle_{\natural} = e_t$ the kernel reduces to $\{\pm e_t\}$.
 
 **Proof.** If $\operatorname{H}_{\tilde U}(\tilde Q) = \tilde Q$ for all $\tilde Q$, then $\tilde Q = e_t$ gives $\tilde U\tilde U^{*} = e_t$, so $\tilde U$ is $*$-unitary, and then $\tilde U\tilde Q = \tilde Q\tilde U$ for all $\tilde Q$, so $\tilde U$ is central. A central element is $Q_te_t$ with $Q_t\in\mathbb{C}_{\mathrm{spl}}$, and it is $*$-unitary exactly when $Q_t\bar{Q_t} = q_t^{2} - q'^{2}_{0} = 1$, the two branches of a hyperbola in the centre. Restricting to $\langle\tilde U\rangle_{\natural} = Q_t^{2} = e_t$ gives $Q_t = \pm1$.
 
-The kernel of the full sandwich is thus the group of central $*$-unitary elements, the split complex units of modulus one, an $\mathbb{R}\times\mathbb{Z}/2$ inside the centre — the analogue of the circle $\mathrm{U}(1)$ of the biquaternion case. On the unit-norm slice it is the two central signs, and that kernel of order two is the double cover.
+The kernel of the full two-sided operator is thus the group of central $*$-unitary elements, the split complex units of modulus one, an $\mathbb{R}\times\mathbb{Z}/2$ inside the centre — the analogue of the circle $\mathrm{U}(1)$ of the biquaternion case. On the unit-norm slice it is the two central signs, and that kernel of order two is the double cover.
 
 ### The Comparison with Left Multiplication, and the Table of Subspaces
 
-| | left multiplication $\tilde U\tilde Q$ | the sandwich $\operatorname{H}_{\tilde U}(\tilde Q)$ |
+| | left multiplication $\tilde U\tilde Q$ | the two-sided operator $\operatorname{H}_{\tilde U}(\tilde Q)$ |
 |---|---|---|
 | type of map | algebra endomorphism | neither multiplicative nor unital; a representation of the units |
 | image of $e_t$ | $\tilde U$ | $\tilde U\tilde U^{*}$, Hermitian but not central in general |
 | kernel on the unit sphere | $\{e_t\}$ | $\{\pm e_t\}$ |
 | effect on the norm | $\langle\tilde U\tilde Q\rangle_{\natural} = \langle\tilde U\rangle_{\natural}\langle\tilde Q\rangle_{\natural}$ | $\langle\operatorname{H}_{\tilde U}\tilde Q\rangle_{\natural} = \langle\tilde U\rangle_{\natural,+}\langle\tilde U\rangle_{\natural,-}\langle\tilde Q\rangle_{\natural}$ |
 
-The sandwich acts on the four distinguished subspaces as follows.
+The two-sided operator acts on the four distinguished subspaces as follows.
 
 | subspace | preserved by $\operatorname{H}_{\tilde U}$? | image |
 |---|---|---|
@@ -315,11 +315,11 @@ The sandwich acts on the four distinguished subspaces as follows.
 | $\mathbb{B}_{\Psi}$ | yes | $\mathbb{B}_{\Psi}$ |
 | $\mathbb{B}_{\Phi}$ | yes | $\mathbb{B}_{\Phi}$ |
 
-The centre is not preserved: on $e_t$ the sandwich gives $\tilde Q\tilde Q^{*}$, which is Hermitian but not central for a general unit, although on the $*$-unitary subgroup, where the sandwich is an automorphism, it preserves the centre because an automorphism carries the centre to itself. The two sectors are the only subspaces of the four that survive, and they survive as a pair: the sandwich preserves each separately and cannot move one into the other, because Hermitian character is exactly what the map preserves. This is the operator-theoretic reason that the Hermitian decomposition $\mathbb{B}_{\mathrm{spl}} = \mathbb{B}_{\Psi}\oplus\mathbb{B}_{\Phi}$ is the natural one for the action.
+The centre is not preserved: on $e_t$ the two-sided operator gives $\tilde Q\tilde Q^{*}$, which is Hermitian but not central for a general unit, although on the $*$-unitary subgroup, where the two-sided operator is an automorphism, it preserves the centre because an automorphism carries the centre to itself. The two sectors are the only subspaces of the four that survive, and they survive as a pair: the two-sided operator preserves each separately and cannot move one into the other, because Hermitian character is exactly what the map preserves. This is the operator-theoretic reason that the Hermitian decomposition $\mathbb{B}_{\mathrm{spl}} = \mathbb{B}_{\Psi}\oplus\mathbb{B}_{\Phi}$ is the natural one for the action.
 
 ### The Polar Dictionary
 
-**Proposition.** In the idempotent description the sandwich acts componentwise,
+**Proposition.** In the idempotent description the two-sided operator acts componentwise,
 
 $$
 \operatorname{H}_{\tilde U}(\tilde Q)_+ = \tilde U_+\,\tilde Q_+\,\tilde U^{\natural}_- , \qquad \operatorname{H}_{\tilde U}(\tilde Q)_- = \tilde U_-\,\tilde Q_-\,\tilde U^{\natural}_+ ,
@@ -327,18 +327,18 @@ $$
 
 so that the polar data of the element appear as follows.
 
-| polar datum of $\tilde U$ | what the sandwich sees |
+| polar datum of $\tilde U$ | what the two-sided operator sees |
 |---|---|
 | the two components $\tilde U_+,\tilde U_-$ | the one-sided multiplications $\tilde U_+(\cdot)\tilde U^{\natural}_-$ and $\tilde U_-(\cdot)\tilde U^{\natural}_+$ on the two halves |
 | the scale $\langle\tilde U\rangle_{\natural,+}\langle\tilde U\rangle_{\natural,-}$ | the dilation $\langle\tilde U\rangle_{\natural,+}\langle\tilde U\rangle_{\natural,-}$ of the split-biquaternion norm |
-| the central $*$-unitary factor | nothing: it is the kernel, and the sandwich is blind to it |
+| the central $*$-unitary factor | nothing: it is the kernel, and the two-sided operator is blind to it |
 | the two unit-sphere parts | the rotation parts of the action |
 
 **Proof.** Multiplication is componentwise in the idempotent description, and the Hermitian conjugation interchanges the components with a quaternion conjugation, $(\tilde U^{*})_+ = \tilde U^{\natural}_-$ and $(\tilde U^{*})_- = \tilde U^{\natural}_+$; the display follows. The invisibility of the central $*$-unitary factor is the kernel theorem and the scaling is the defect theorem.
 
-### The Relation to the Biquaternion Bilinear Sandwich
+### The Relation to the Biquaternion Bilinear Two-Sided Operator
 
-In the biquaternion case the bilinear sandwich of a unit-norm element is the action of $SL(2,\mathbb{C})$ on the Hermitian matrices, with image the proper orthochronous Lorentz group $SO^{+}(1,3)$, and on the unit-norm slice its kernel is $\{\pm e_t\}$; the unit-norm slice there is $SL(2,\mathbb{C})$, three complex dimensions. Here the unit-norm slice is the six-dimensional $S^3\times S^3$ and the sandwich on it is **not** generally an automorphism, since $\tilde U^{*}\neq\tilde U^{-1}$ unless $\tilde U$ is $*$-unitary; the Lorentzian form $g$ is preserved on the $*$-unitary group $\{\tilde U : \tilde U\tilde U^{*} = e_t\}\cong Sp(1)\times\mathbb{R}$, where the sandwich is the inner automorphism and its image is the compact rotation group $SO(3)$ of the spacelike three-plane, fixing the timelike $je_t$ (*The $*$-Unitary Group and the Elliptic Rotations*). The doubling of the angle and the two-to-one cover are the same in both cases; the difference is which slice of the algebra carries the Lorentz action.
+In the biquaternion case the bilinear two-sided operator of a unit-norm element is the action of $SL(2,\mathbb{C})$ on the Hermitian matrices, with image the proper orthochronous Lorentz group $SO^{+}(1,3)$, and on the unit-norm slice its kernel is $\{\pm e_t\}$; the unit-norm slice there is $SL(2,\mathbb{C})$, three complex dimensions. Here the unit-norm slice is the six-dimensional $S^3\times S^3$ and the two-sided operator on it is **not** generally an automorphism, since $\tilde U^{*}\neq\tilde U^{-1}$ unless $\tilde U$ is $*$-unitary; the Lorentzian form $g$ is preserved on the $*$-unitary group $\{\tilde U : \tilde U\tilde U^{*} = e_t\}\cong Sp(1)\times\mathbb{R}$, where the two-sided operator is the inner automorphism and its image is the compact rotation group $SO(3)$ of the spacelike three-plane, fixing the timelike $je_t$ (*The $*$-Unitary Group and the Elliptic Rotations*). The doubling of the angle and the two-to-one cover are the same in both cases; the difference is which slice of the algebra carries the Lorentz action.
 
 ## The Hyperboloid, the Null Cone and the Rulings
 
@@ -378,7 +378,7 @@ The split biquaternion algebra $\mathbb{B}_{\mathrm{spl}}$ carries the Hermitian
 
 The unit sphere $\{\tilde S : \langle\tilde S\rangle_{\natural} = e_t\}\cong S^3\times S^3$ is compact and six-dimensional, the product of the two idempotent components. The $*$-unitary group $\{\tilde S : \tilde S\tilde{S}^{*} = e_t\}\cong Sp(1)\times\mathbb{R}$ acts on $\mathbb{B}_{\Phi}$ by isometries, fixes the timelike vector $je_t$, and realises exactly the compact group $SO(3)$ of spacelike rotations; the split complex units $\exp(\theta j)$ preserve the neutral four-planes and realise there the diagonal $SO(1,1)$ inside $SO(1,1)\times SO(1,1)$, and the two families commute. The parabolic one-parameter subgroups are not realised in the algebra, because $\mathbb{B}_{\mathrm{spl}}\cong\mathbb{H}\oplus\mathbb{H}$ is semisimple and has no non-zero nilpotent element.
 
-The bilinear sandwich $\operatorname{H}_{\tilde U}(\tilde Q) = \tilde U\tilde Q\tilde U^{*}$ of a general unit is a linear representation of the unit group, multiplicative exactly on the $*$-unitary subgroup, where it is the inner automorphism $\tilde Q\mapsto\tilde U\tilde Q\tilde U^{-1}$. It preserves the two sectors $\mathbb{B}_{\Psi}$ and $\mathbb{B}_{\Phi}$ and no other of the four distinguished subspaces, and it scales the split-biquaternion norm by the real defect factor $\langle\tilde U\rangle_{\natural,+}\langle\tilde U\rangle_{\natural,-}$, which vanishes exactly on the zero divisors and is a nonzero real number of either sign on the units; the Hermitian form $g$ is preserved by every $*$-unitary element. Its kernel is the group of central $*$-unitary elements, the split complex units of modulus one, an $\mathbb{R}\times\mathbb{Z}/2$ in the centre, which on the unit-norm slice reduces to $\{\pm e_t\}$. In the idempotent description the sandwich acts componentwise as $\tilde Q_+\mapsto\tilde U_+\tilde Q_+\tilde U^{\natural}_-$ and $\tilde Q_-\mapsto\tilde U_-\tilde Q_-\tilde U^{\natural}_+$, so it sees every polar factor of the element except the central $*$-unitary one.
+The bilinear two-sided operator $\operatorname{H}_{\tilde U}(\tilde Q) = \tilde U\tilde Q\tilde U^{*}$ of a general unit is a linear representation of the unit group, multiplicative exactly on the $*$-unitary subgroup, where it is the inner automorphism $\tilde Q\mapsto\tilde U\tilde Q\tilde U^{-1}$. It preserves the two sectors $\mathbb{B}_{\Psi}$ and $\mathbb{B}_{\Phi}$ and no other of the four distinguished subspaces, and it scales the split-biquaternion norm by the real defect factor $\langle\tilde U\rangle_{\natural,+}\langle\tilde U\rangle_{\natural,-}$, which vanishes exactly on the zero divisors and is a nonzero real number of either sign on the units; the Hermitian form $g$ is preserved by every $*$-unitary element. Its kernel is the group of central $*$-unitary elements, the split complex units of modulus one, an $\mathbb{R}\times\mathbb{Z}/2$ in the centre, which on the unit-norm slice reduces to $\{\pm e_t\}$. In the idempotent description the two-sided operator acts componentwise as $\tilde Q_+\mapsto\tilde U_+\tilde Q_+\tilde U^{\natural}_-$ and $\tilde Q_-\mapsto\tilde U_-\tilde Q_-\tilde U^{\natural}_+$, so it sees every polar factor of the element except the central $*$-unitary one.
 
 In $(\mathbb{B}_{\Phi},g)$ the level set $g = -1$ is a hyperboloid of two sheets, each an $\mathbb{R}^3$, and $g = +1$ is a hyperboloid of one sheet, an $S^2\times\mathbb{R}$; the null cone is the cone over $S^2$. Every zero divisor of the algebra is isotropic for the ambient form $g$, so the union of the two ideals lies inside the ambient null cone and meets $\mathbb{B}_{\Phi}$ only at the origin; the Lorentzian null cone is strictly larger than the zero divisor set, since $\vec e_x + je_t$ is null and not a zero divisor. The compact unit sphere and the non-compact Lorentzian hyperboloids are different objects, bridged by the idempotent decomposition.
 
@@ -399,8 +399,8 @@ In $(\mathbb{B}_{\Phi},g)$ the level set $g = -1$ is a hyperboloid of two sheets
 | $O(n,m)$, $SO(n,m)$, $SO^{+}(n,m)$ | Orthogonal group of a form, its determinant-one part, its identity component |
 | $\mathrm{SO}(n,m)$ | Lie algebra of $g$-skew endomorphisms, dimension $\tfrac{1}{2}\langle N-1\rangle_{\natural}$ |
 | $\mathrm{U}(\mathbb{B}_{\mathrm{spl}}) = \{\tilde S : \tilde S\tilde{S}^{*} = e_t\}\cong Sp(1)\times\mathbb{R}$ | $*$-Unitary group |
-| $\operatorname{H}_{\tilde U}(\tilde Q) = \tilde U\tilde Q\tilde U^{*}$ | The bilinear sandwich of a general unit; the inner automorphism on the $*$-unitary subgroup |
-| $\langle\tilde U\rangle_{\natural,+}\langle\tilde U\rangle_{\natural,-}$ | The defect of the sandwich, the real scaling of the split-biquaternion norm |
+| $\operatorname{H}_{\tilde U}(\tilde Q) = \tilde U\tilde Q\tilde U^{*}$ | The bilinear two-sided operator of a general unit; the inner automorphism on the $*$-unitary subgroup |
+| $\langle\tilde U\rangle_{\natural,+}\langle\tilde U\rangle_{\natural,-}$ | The defect of the two-sided operator, the real scaling of the split-biquaternion norm |
 | kernel of $\operatorname{H}$ | The central $*$-unitary group, the split complex units of modulus one |
 | $\exp(\theta_{\mathrm{rpd}} j) = \cosh\theta_{\mathrm{rpd}} + j\sinh\theta_{\mathrm{rpd}}$ | Split complex unit, hyperbolic one-parameter group |
 | $S(\mathbb{B}_{\mathrm{spl}})\cong S^3\times S^3$ | Norm-one unit sphere |
@@ -421,4 +421,4 @@ In $(\mathbb{B}_{\Phi},g)$ the level set $g = -1$ is a hyperboloid of two sheets
 - Walter Benz, *Classical Geometries in Modern Contexts* (Birkhäuser, 2005), for the neutral signature geometry and the Kleinian quadric.
 - I. L. Kantor and A. S. Solodovnikov, *Hypercomplex Numbers: An Elementary Introduction to Algebras* (Springer, 1989), for inner automorphisms and the $*$-unitary group of an algebra with conjugation.
 - J. P. Ward, *Quaternions and Cayley Numbers: Algebra and Applications* (Kluwer, 1997), for the two-sided action of the quaternion sphere and the double cover $Sp(1)\to SO(3)$.
-- Pertti Lounesto, *Clifford Algebras and Spinors* (Cambridge, 2001), for the sandwich action of versors on a Clifford algebra and the doubling of the angle.
+- Pertti Lounesto, *Clifford Algebras and Spinors* (Cambridge, 2001), for the two-sided action of versors on a Clifford algebra and the doubling of the angle.

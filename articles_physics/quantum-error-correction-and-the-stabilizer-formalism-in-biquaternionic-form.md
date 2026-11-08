@@ -34,7 +34,7 @@ $$
 \qquad \text{for all } a,b ,
 $$
 
-a set of algebraic conditions on the products of errors sandwiched between the code idempotent. The article states the condition, sketches why it is necessary and sufficient, and verifies it in the algebra for two standard codes: the three-qubit bit-flip code, which corrects any single bit-flip error, and the five-qubit perfect code, which corrects an arbitrary single-qubit error and is verified here for all fifteen nontrivial single-qubit error operators.
+a set of algebraic conditions on the products of errors placed between the code idempotent. The article states the condition, sketches why it is necessary and sufficient, and verifies it in the algebra for two standard codes: the three-qubit bit-flip code, which corrects any single bit-flip error, and the five-qubit perfect code, which corrects an arbitrary single-qubit error and is verified here for all fifteen nontrivial single-qubit error operators.
 
 ## The Pauli Group and Stabilizers
 
@@ -102,7 +102,7 @@ If the condition holds, diagonalize the Hermitian matrix $c = u\,d\,u^\dagger$ w
 
 ### The condition in the algebra
 
-The condition is naturally stated in the tensor-product algebra. $\tilde\Pi$ is an idempotent of $\mathbb{B}_{\Psi}^{\otimes n}$; the errors are elements of the Pauli group; the sandwich $\tilde\Pi\tilde{E}_{\Psi}_a^{*}\tilde{E}_{\Psi}_b\tilde\Pi$ is an element of the algebra, and the condition says it is scalar on the code. The numbers $c_{ab}$ form the **Gram matrix** of the error operators restricted to the code space, and correcting the errors means that this Gram matrix is all the code sees of the errors: the encoded state is not resolved.
+The condition is naturally stated in the tensor-product algebra. $\tilde\Pi$ is an idempotent of $\mathbb{B}_{\Psi}^{\otimes n}$; the errors are elements of the Pauli group; the two-sided operator $\tilde\Pi\tilde{E}_{\Psi}_a^{*}\tilde{E}_{\Psi}_b\tilde\Pi$ is an element of the algebra, and the condition says it is scalar on the code. The numbers $c_{ab}$ form the **Gram matrix** of the error operators restricted to the code space, and correcting the errors means that this Gram matrix is all the code sees of the errors: the encoded state is not resolved.
 
 ## The Three-Qubit Bit-Flip Code
 
@@ -175,7 +175,7 @@ The following were verified by explicit computation with the $32\times32$ matric
 
 - **Commutativity and independence.** All four generators commute pairwise, so $S$ is abelian; the group has order $16$ and the idempotent has trace $2$.
 - **Idempotency.** $\tilde\Pi^2 = \tilde\Pi$, with spectrum in $\{0,1\}$ and $\mathrm{Tr}(\tilde\Pi) = 2$, so the code space is two-dimensional.
-- **Knill–Laflamme for every single-qubit error.** The error set $\{e_t^{\otimes5}\}\cup\{X_i,Y_i,Z_i\}_{i=1}^{5}$ has sixteen elements. For every pair $a,b$ of these sixteen, the sandwich $\tilde\Pi\tilde{E}_{\Psi}_a^{*}\tilde{E}_{\Psi}_b\tilde\Pi$ was found to be a multiple of $\tilde\Pi$, to machine precision. The five-qubit code therefore corrects **an arbitrary single-qubit error**.
+- **Knill–Laflamme for every single-qubit error.** The error set $\{e_t^{\otimes5}\}\cup\{X_i,Y_i,Z_i\}_{i=1}^{5}$ has sixteen elements. For every pair $a,b$ of these sixteen, the two-sided operator $\tilde\Pi\tilde{E}_{\Psi}_a^{*}\tilde{E}_{\Psi}_b\tilde\Pi$ was found to be a multiple of $\tilde\Pi$, to machine precision. The five-qubit code therefore corrects **an arbitrary single-qubit error**.
 - **Perfection.** The fifteen errors $X_i,Y_i,Z_i$ ($i=1,\dots,5$) have fifteen distinct nonzero syndromes in $\{0,1\}^4\setminus\{0\}$, so the syndrome measurement identifies the error uniquely. This is the sense in which the code is **perfect**: the $32$-dimensional space decomposes exactly into the code space and the fifteen orthogonal error subspaces, with no room to spare. The counting is $1 + 15 = 16 = 2^{5-1}$, the size of the syndrome space.
 
 ### The code as an idempotent
@@ -205,7 +205,7 @@ and the other $|S|-1$ idempotents $\tilde\Pi_\xi$ have the syndrome subspaces as
 **What it does.**
 
 - It identifies the code space with the image of an idempotent $\tilde\Pi = |S|^{-1}\sum_{\tilde U\in S}\tilde U$ of the tensor-product algebra $\mathbb{B}_{\Psi}^{\otimes n}$, where $S$ is a finite commutative group of involutions; the code idempotent is a Peirce component of a commutative subalgebra.
-- It states the Knill–Laflamme condition as a condition on the sandwich $\tilde\Pi\tilde{E}_{\Psi}_a^{*}\tilde{E}_{\Psi}_b\tilde\Pi$, i.e. on the Gram matrix of the errors restricted to the code.
+- It states the Knill–Laflamme condition as a condition on the two-sided operator $\tilde\Pi\tilde{E}_{\Psi}_a^{*}\tilde{E}_{\Psi}_b\tilde\Pi$, i.e. on the Gram matrix of the errors restricted to the code.
 - It identifies the syndrome measurement with the projection onto the joint eigen-idempotents of the generators, a Peirce decomposition of the commutative subalgebra.
 - It verifies idempotency, trace, Knill–Laflamme, and syndrome distinctness for the three-qubit bit-flip code and the five-qubit perfect code by explicit computation.
 

@@ -6,7 +6,7 @@ The factors of the signed two-sided operator $a\alpha(y)b$ are one-sided, and th
 
 This article fixes the signed one-sided operators, their composition laws, their fixed elements, and the way a pairing of a signed factor with an ordinary one produces the reflections. The composition laws already show the asymmetry: two signed **left** multiplications compose to an ordinary left multiplication, the two grade involutions cancelling, while two signed **right** multiplications compose to a signed right multiplication, because there the parameter is twisted twice and the twist is an involution. The fixed elements are read off immediately: the signed left multiplication by a scalar is the identity on the even part, minus the identity on the odd part, or zero, according as the scalar is $1$, $-1$ or anything else. And the reflections arise exactly as in the ordinary theory, by pairing: the signed left multiplication by a vector with the ordinary right multiplication by the inverse of its twisted parameter is the reflection.
 
-The one-sided operators and their composition are *One-Sided Operators on a Clifford Algebra*; the operators twisted by the grading are *The Graded Multiplication Operators*; the two-sided signed family is *Two-Sided Operators with the Signed Product*; the signed sandwich and the reflections are *The Sandwich with the Signed Product*; the one-sided action on a module is *The One-Sided Action and the Spin Representation*. Those are cited. The base is a field $F$ of characteristic not $2$, $q$ is non-degenerate and $\alpha$ is the grade involution.
+The one-sided operators and their composition are *One-Sided Operators on a Clifford Algebra*; the operators twisted by the grading are *The Graded Multiplication Operators*; the two-sided signed family is *Two-Sided Operators with the Signed Product*; the signed two-sided operator and the reflections are *The Signed Inner Conjugation on a Clifford Algebra*; the one-sided action on a module is *The One-Sided Action and the Spin Representation*. Those are cited. The base is a field $F$ of characteristic not $2$, $q$ is non-degenerate and $\alpha$ is the grade involution.
 
 ## The Signed One-Sided Family
 
@@ -80,7 +80,7 @@ $$
 
 ## The Reflections
 
-**Proposition (the pairing).** For a unit $x$, the signed sandwich of *The Sandwich with the Signed Product* is the pairing of the signed left multiplication by $x$ with the ordinary right multiplication by the inverse of the twisted parameter:
+**Proposition (the pairing).** For a unit $x$, the signed two-sided operator of *The Signed Inner Conjugation on a Clifford Algebra* is the pairing of the signed left multiplication by $x$ with the ordinary right multiplication by the inverse of the twisted parameter:
 
 $$
 \Sigma_x = \mathrm{L}^{\alpha}_x \circ R_{\alpha(x)^{-1}} .
@@ -94,7 +94,7 @@ $$
 \boxed{\;\mathrm{Fix}\bigl(\Sigma_u\big|_V\bigr) = u^{\perp} = \{\, v \in V : B(u,v) = 0 \,\}\;}.
 $$
 
-**Proof.** The reflection statement is the theorem of *The Sandwich with the Signed Product*; for the fixed space, $\rho_u(v) = v$ exactly when $2B(v,u)\mathfrak{Q}(u)^{-1}u = 0$, that is $B(v,u) = 0$.
+**Proof.** The reflection statement is the theorem of *The Signed Inner Conjugation on a Clifford Algebra*; for the fixed space, $\rho_u(v) = v$ exactly when $2B(v,u)\mathfrak{Q}(u)^{-1}u = 0$, that is $B(v,u) = 0$.
 
 **Remark (why one side is not enough).** A signed left multiplication by a vector never preserves $V$, for the same reason an ordinary left multiplication does not: $L_u\alpha(\mathrm{Cl}^{1})$ contains the scalars as well as the vectors, since $\alpha$ flips the parity. Only the pairing with an ordinary right multiplication brings the parity back and produces an operator of $V$. This is the one-sided form of the statement of *One-Sided Operators on a Clifford Algebra* that the scalar is the only one-sided operator preserving the quadratic space.
 
@@ -110,7 +110,7 @@ In the same algebra let $a = e_1$. Write $y = y_0 + y_1$ with $y_0$ even and $y_
 
 ### The Reflection
 
-With $u = e_1$ one has $\alpha(e_1)^{-1} = (-e_1)^{-1} = e_1$, and the signed sandwich $\Sigma_{e_1} = \mathrm{L}^{\alpha}_{e_1}\circ R_{e_1}$ acts on the basis of $V$ by $(-e_1, e_2, e_3)$ and fixes the hyperplane $e_1^{\perp} = \mathrm{span}(e_2, e_3)$, as a reflection should. The signed left factor alone does not preserve $V$; the pairing does.
+With $u = e_1$ one has $\alpha(e_1)^{-1} = (-e_1)^{-1} = e_1$, and the signed two-sided operator $\Sigma_{e_1} = \mathrm{L}^{\alpha}_{e_1}\circ R_{e_1}$ acts on the basis of $V$ by $(-e_1, e_2, e_3)$ and fixes the hyperplane $e_1^{\perp} = \mathrm{span}(e_2, e_3)$, as a reflection should. The signed left factor alone does not preserve $V$; the pairing does.
 
 ## Summary
 
@@ -126,7 +126,7 @@ The **signed left multiplication** $\mathrm{L}^{\alpha}_a = L_a\circ\alpha$ twis
 | $\mathrm{P}^{\alpha}_a\mathrm{P}^{\alpha}_c = \mathrm{P}^{\alpha}_{ca}$ | The signed right family is a group |
 | $\mathrm{Fix}(T)$ | Fixed space of $T$ |
 | $\mathrm{Fix}(L_{\lambda}\alpha)$ | Even part, odd part or $0$ for $\lambda = 1, -1$ or else |
-| $\Sigma_x = \mathrm{L}^{\alpha}_x R_{\alpha(x)^{-1}}$ | The signed sandwich as a pairing |
+| $\Sigma_x = \mathrm{L}^{\alpha}_x R_{\alpha(x)^{-1}}$ | The signed two-sided operator as a pairing |
 | $\rho_u$, $u^{\perp}$ | Reflection and its fixed hyperplane |
 
 ## Further Reading

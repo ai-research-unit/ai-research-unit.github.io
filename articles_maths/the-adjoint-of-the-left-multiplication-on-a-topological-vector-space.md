@@ -43,7 +43,7 @@ Consequently the adjoint of a left multiplication is a right multiplication, and
 
 **Proof.** For $x, y \in E$, $\langle L_{a}x, y\rangle = \tau(axy) = \tau(xya) = \langle x, R_{a}y\rangle$, using the trace cyclicity; the uniqueness of the adjoint gives $(L_{a})^{\dagger} = R_{a}$. The second identity is the first with the multiplication reversed, or the direct computation $\langle R_{a}x, y\rangle = \tau(xay) = \tau(axy) = \langle x, L_{a}y\rangle$.
 
-**Corollary (the adjoint of a two-sided sandwich).** For the unsigned sandwich $\Phi_{a,b}(x) = axb$ the adjoint is the sandwich with the parameters exchanged,
+**Corollary (the adjoint of a two-sided operator).** For the unsigned two-sided operator $\Phi_{a,b}(x) = axb$ the adjoint is the two-sided operator with the parameters exchanged,
 
 $$
 (\Phi_{a,b})^{\dagger} = \Phi_{b,a} ,
@@ -89,7 +89,7 @@ so the conjugate of a left multiplication has adjoint the conjugate of the right
 
 ## Summary
 
-A topological algebra with a continuous trace $\tau$ carries the trace form $\langle x,y\rangle = \tau(xy)$, the form of the category: it is continuous, symmetric and associative, $\langle xy,z\rangle = \langle x,yz\rangle$, and non-degenerate by hypothesis. With respect to it the left and right multiplications are adjoint to one another, $(L_{a})^{\dagger} = R_{a}$ and $(R_{a})^{\dagger} = L_{a}$; the sandwich $\Phi_{a,b}$ has adjoint $\Phi_{b,a}$ and the inner automorphisms are adjoint in the reverse order; the adjointable operators form an involutive algebra on which ${}^{\dagger}$ reverses products. A continuous algebra involution $\mathrm{J}$ preserving the trace is self-adjoint and isometric up to the scalar involution, $\langle\mathrm{J} x,y\rangle = \varsigma(\langle x,\mathrm{J} y\rangle)$, and this gives the compatibility of the trace-adjoint with the involution: $(\mathrm{J} L_{a}\mathrm{J})^{\dagger} = \mathrm{J} R_{\mathrm{J}(a)}\mathrm{J}$ when $\mathrm{J}$ is an automorphism, the left and the right sides being exchanged when $\mathrm{J}$ is an anti-automorphism. The finite-dimensional instance is the trace pairing $\operatorname{tr}(XY)$, and the conjugation and the transposition are the standard trace-preserving involutions. The signed versions are *The Signed Adjoint Sandwich on a Topological Vector Space* and *The Signed Adjoint of the Left Multiplication on a Topological Vector Space*.
+A topological algebra with a continuous trace $\tau$ carries the trace form $\langle x,y\rangle = \tau(xy)$, the form of the category: it is continuous, symmetric and associative, $\langle xy,z\rangle = \langle x,yz\rangle$, and non-degenerate by hypothesis. With respect to it the left and right multiplications are adjoint to one another, $(L_{a})^{\dagger} = R_{a}$ and $(R_{a})^{\dagger} = L_{a}$; the two-sided operator $\Phi_{a,b}$ has adjoint $\Phi_{b,a}$ and the inner automorphisms are adjoint in the reverse order; the adjointable operators form an involutive algebra on which ${}^{\dagger}$ reverses products. A continuous algebra involution $\mathrm{J}$ preserving the trace is self-adjoint and isometric up to the scalar involution, $\langle\mathrm{J} x,y\rangle = \varsigma(\langle x,\mathrm{J} y\rangle)$, and this gives the compatibility of the trace-adjoint with the involution: $(\mathrm{J} L_{a}\mathrm{J})^{\dagger} = \mathrm{J} R_{\mathrm{J}(a)}\mathrm{J}$ when $\mathrm{J}$ is an automorphism, the left and the right sides being exchanged when $\mathrm{J}$ is an anti-automorphism. The finite-dimensional instance is the trace pairing $\operatorname{tr}(XY)$, and the conjugation and the transposition are the standard trace-preserving involutions. The signed versions are *The Signed Adjoint Two-Sided Operator on a Topological Vector Space* and *The Signed Adjoint of the Left Multiplication on a Topological Vector Space*.
 
 ## Summary of Notation
 
@@ -101,7 +101,7 @@ A topological algebra with a continuous trace $\tau$ carries the trace form $\la
 | $L_{a}(x) = ax$, $R_{a}(x) = xa$ | left and right multiplication |
 | ${}^{\dagger}$ | the trace-adjoint |
 | $(L_{a})^{\dagger} = R_{a}$, $(R_{a})^{\dagger} = L_{a}$ | the adjointness |
-| $(\Phi_{a,b})^{\dagger} = \Phi_{b,a}$ | the unsigned sandwich |
+| $(\Phi_{a,b})^{\dagger} = \Phi_{b,a}$ | the unsigned two-sided operator |
 | $\mathrm{J}$ | trace-preserving algebra involution, $\mathrm{J}^{\dagger} = \mathrm{J}$ |
 | $(\mathrm{J} L_{a}\mathrm{J})^{\dagger} = \mathrm{J} R_{\mathrm{J}(a)}\mathrm{J}$ | the compatibility with the involution |
 

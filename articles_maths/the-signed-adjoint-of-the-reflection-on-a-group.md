@@ -3,7 +3,7 @@
 
 ## Introduction
 
-A reflection of a graded group is a signed conjugation that is an involution, and its adjoint under the natural pairing is again a signed conjugation, with parameter the inverse of the twisted element. The self-adjointness is then automatic for the reflections and fails exactly for the signed conjugations that are not involutions, which is to say for the degenerate case in which the product $a\alpha(a)$ is not central. This article gives the adjoint, proves the equivalence of self-adjointness with the reflection property, and isolates the degenerate case. It is the fifth article of the `* Operator Theory` group; the reflections and the criterion $a\alpha(a)\in Z(G)$ are from *Reflections as Signed Two-Sided Operators on a Group*, the adjoint of the signed sandwich from *The Signed Adjoint Sandwich on a Group*, and the pairing from *Involutions on the Operator Layer*.
+A reflection of a graded group is a signed conjugation that is an involution, and its adjoint under the natural pairing is again a signed conjugation, with parameter the inverse of the twisted element. The self-adjointness is then automatic for the reflections and fails exactly for the signed conjugations that are not involutions, which is to say for the degenerate case in which the product $a\alpha(a)$ is not central. This article gives the adjoint, proves the equivalence of self-adjointness with the reflection property, and isolates the degenerate case. It is the fifth article of the `* Operator Theory` group; the reflections and the criterion $a\alpha(a)\in Z(G)$ are from *Reflections as Signed Two-Sided Operators on a Group*, the adjoint of the signed two-sided operator from *The Signed Adjoint Two-Sided Operator on a Group*, and the pairing from *Involutions on the Operator Layer*.
 
 Throughout, $(G,\alpha)$ is a group with an involutive automorphism $\alpha$, a **signed conjugation** is the operator $\Sigma^{\alpha}_{a,a^{-1}}$, and a **reflection** is a signed conjugation that is an involution; the criterion of *Reflections as Signed Two-Sided Operators on a Group* is that $\Sigma^{\alpha}_{a,a^{-1}}$ is an involution, equivalently a reflection, if and only if $a\,\alpha(a)\in Z(G)$.
 
@@ -17,7 +17,7 @@ $$
 
 which is the signed conjugation with parameter $\alpha(a)^{-1}$. Hence the adjoint of a reflection is a reflection, and the reflections are closed under the adjoint.
 
-**Proof.** The adjoint formula of *The Signed Adjoint Sandwich on a Group* gives $\bigl(\Sigma^{\alpha}_{a,b}\bigr)^{*}=\Sigma^{\alpha}_{\alpha(a)^{-1},\alpha(b)^{-1}}$; with $b=a^{-1}$ this is $\Sigma^{\alpha}_{\alpha(a)^{-1},\alpha(a^{-1})^{-1}}=\Sigma^{\alpha}_{\alpha(a)^{-1},\alpha(a)}$, since $\alpha(a^{-1})=\alpha(a)^{-1}$ and its inverse is $\alpha(a)$. The result is the signed conjugation with parameter $\alpha(a)^{-1}$, whose second parameter is $(\alpha(a)^{-1})^{-1}=\alpha(a)$. Every reflection has this form, because $\alpha(a)^{-1}=b$ for the parameter $b=\alpha^{-1}(a^{-1})=\alpha(a^{-1})$, so the adjoint of a reflection is a reflection.
+**Proof.** The adjoint formula of *The Signed Adjoint Two-Sided Operator on a Group* gives $\bigl(\Sigma^{\alpha}_{a,b}\bigr)^{*}=\Sigma^{\alpha}_{\alpha(a)^{-1},\alpha(b)^{-1}}$; with $b=a^{-1}$ this is $\Sigma^{\alpha}_{\alpha(a)^{-1},\alpha(a^{-1})^{-1}}=\Sigma^{\alpha}_{\alpha(a)^{-1},\alpha(a)}$, since $\alpha(a^{-1})=\alpha(a)^{-1}$ and its inverse is $\alpha(a)$. The result is the signed conjugation with parameter $\alpha(a)^{-1}$, whose second parameter is $(\alpha(a)^{-1})^{-1}=\alpha(a)$. Every reflection has this form, because $\alpha(a)^{-1}=b$ for the parameter $b=\alpha^{-1}(a^{-1})=\alpha(a^{-1})$, so the adjoint of a reflection is a reflection.
 
 **Corollary (the adjoint involution on the reflections).** The adjoint acts on the set of reflections by $\Sigma^{\alpha}_{a,a^{-1}}\mapsto\Sigma^{\alpha}_{\alpha(a)^{-1},\alpha(a)}$, an involution of that set; it fixes a reflection exactly when the reflection is self-adjoint.
 
@@ -25,7 +25,7 @@ which is the signed conjugation with parameter $\alpha(a)^{-1}$. Hence the adjoi
 
 **Proposition (the adjoint respects the coset description).** Since a signed conjugation depends only on the class of $a$ modulo the centre, $\Sigma^{\alpha}_{a,a^{-1}}=\Sigma^{\alpha}_{az^{-1},za^{-1}}$ for $z\in Z(G)$, the adjoint operation on the reflections descends to the set of cosets $aZ(G)$, where it is the assignment $aZ(G)\mapsto\alpha(a)^{-1}Z(G)$.
 
-**Proof.** The dependence on the class is the equality criterion of *The Signed Adjoint Sandwich on a Group* specialised to $b=a^{-1}$; the adjoint of a reflection has parameter $\alpha(a)^{-1}$, and the class of the parameter is determined by the class of $a$.
+**Proof.** The dependence on the class is the equality criterion of *The Signed Adjoint Two-Sided Operator on a Group* specialised to $b=a^{-1}$; the adjoint of a reflection has parameter $\alpha(a)^{-1}$, and the class of the parameter is determined by the class of $a$.
 
 ## Self-Adjointness
 
@@ -41,7 +41,7 @@ $$
 
 Hence every reflection is self-adjoint, and the signed conjugations that are not reflections are exactly the signed conjugations that are not self-adjoint.
 
-**Proof.** Self-adjointness is the equality $\Sigma^{\alpha}_{a,a^{-1}}=\Sigma^{\alpha}_{\alpha(a)^{-1},\alpha(a)}$, which by the equality criterion of *The Signed Adjoint Sandwich on a Group* is the existence of $z\in Z(G)$ with $\alpha(a)^{-1}=a z^{-1}$ and $\alpha(a)=z a^{-1}$. The first relation gives $z=\alpha(a)a$, and the second gives the same, since $\alpha(a)=za^{-1}$ is $z=\alpha(a)a$. So self-adjointness is exactly the centrality of $\alpha(a)a$, and $\alpha(a)a$ is central if and only if $a\alpha(a)$ is, because the two are conjugate: $a\,\alpha(a)=a\,(\alpha(a)a)\,a^{-1}$. The centrality of $a\alpha(a)$ is the reflection criterion of *Reflections as Signed Two-Sided Operators on a Group*, which completes the equivalence. The final sentence restates it.
+**Proof.** Self-adjointness is the equality $\Sigma^{\alpha}_{a,a^{-1}}=\Sigma^{\alpha}_{\alpha(a)^{-1},\alpha(a)}$, which by the equality criterion of *The Signed Adjoint Two-Sided Operator on a Group* is the existence of $z\in Z(G)$ with $\alpha(a)^{-1}=a z^{-1}$ and $\alpha(a)=z a^{-1}$. The first relation gives $z=\alpha(a)a$, and the second gives the same, since $\alpha(a)=za^{-1}$ is $z=\alpha(a)a$. So self-adjointness is exactly the centrality of $\alpha(a)a$, and $\alpha(a)a$ is central if and only if $a\alpha(a)$ is, because the two are conjugate: $a\,\alpha(a)=a\,(\alpha(a)a)\,a^{-1}$. The centrality of $a\alpha(a)$ is the reflection criterion of *Reflections as Signed Two-Sided Operators on a Group*, which completes the equivalence. The final sentence restates it.
 
 **Corollary (the failure in the degenerate case).** In the degenerate case $a\alpha(a)\notin Z(G)$ the signed conjugation $\Sigma^{\alpha}_{a,a^{-1}}$ is not an involution and is not self-adjoint; the two failures coincide, and there is no signed conjugation that is one and not the other.
 

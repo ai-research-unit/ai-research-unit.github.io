@@ -4,7 +4,7 @@
 
 The complex space carries two products: the field product $Q_1Q_2$ and the sesquilinear product $Q_1\bar Q_2$. The first is *Complex Algebra* and its relation to the second is *The Two Products of the Complexoid Space*; this article is the second product alone, as an algebraic structure. It is the complex instance of the general plain sesqualgebra, and on the commutative base the plain setting is the only one.
 
-The product is not associative, and the article's subject is exactly how it fails to be: the associator, the ternary product it defines, the two one-sided multiplications and the monoid they generate, the sandwich, and the commutator with its symmetrisation. It does not treat the product as a form: the Hermitian form $\langle Q_1,Q_2\rangle_{*}=Q_1\bar Q_2$ is *The Hermitian Form and the Positivity of the Complexoid Algebra*, below this article in this category, and the two algebraic norms are *The Two Forms and the Two Algebraic Norms of the Complexoid Space*. It does not treat the invertibility or the norm of the field, which are *Complex Norm and Invertibility*.
+The product is not associative, and the article's subject is exactly how it fails to be: the associator, the ternary product it defines, the two one-sided multiplications and the monoid they generate, the two-sided operator, and the commutator with its symmetrisation. It does not treat the product as a form: the Hermitian form $\langle Q_1,Q_2\rangle_{*}=Q_1\bar Q_2$ is *The Hermitian Form and the Positivity of the Complexoid Algebra*, below this article in this category, and the two algebraic norms are *The Two Forms and the Two Algebraic Norms of the Complexoid Space*. It does not treat the invertibility or the norm of the field, which are *Complex Norm and Invertibility*.
 
 **Interpretation and notation.** The element is $Q_1=q_1+iq'_1$, a second element is $Q_2=q_2+iq'_2$; the base involution is the bar $\bar Q_1=q_1-iq'_1$ and ${}^{*}=\bar{\cdot}$. The sesquilinear product is written
 
@@ -12,7 +12,7 @@ $$
 Q_1\star Q_2= Q_1\bar Q_2,
 $$
 
-the superscript star being reserved for the involution and never written as an operator symbol; the plain product is juxtaposition. The elements are written with the letter $Q$, numbered when several occur; the letters $\langle\cdot,\cdot\rangle$, $\langle\cdot,\cdot\rangle_{\natural}$, $\langle\cdot,\cdot\rangle_{*}$, $\langle\cdot,\cdot\rangle_{\natural*}$ name the four forms of the corpus, and only $\langle\cdot,\cdot\rangle_{*}$ appears in this article, in the adjoint of the sandwich. The sandwich parameters are $Q_1$ and $Q_2$.
+the superscript star being reserved for the involution and never written as an operator symbol; the plain product is juxtaposition. The elements are written with the letter $Q$, numbered when several occur; the letters $\langle\cdot,\cdot\rangle$, $\langle\cdot,\cdot\rangle_{\natural}$, $\langle\cdot,\cdot\rangle_{*}$, $\langle\cdot,\cdot\rangle_{\natural*}$ name the four forms of the corpus, and only $\langle\cdot,\cdot\rangle_{*}$ appears in this article, in the adjoint of the two-sided operator. The two-sided parameters are $Q_1$ and $Q_2$.
 
 ## The Product and Its Class
 
@@ -98,7 +98,7 @@ $$
 
 and the second and third cancel after the plain product is put in a common order, $-Q_3\bar Q_2 Q_1\bar Q_4 Q_5+Q_3\bar Q_4 Q_1\bar Q_2 Q_5=Q_3\bar Q_2\bar Q_4 Q_5(-Q_1+Q_1)=0$; what remains is the left-hand side. The identity is the defining axiom of a Jordan triple system, and its satisfaction is what makes the sesquilinear structure a $J^{*}$-algebra in the sense of *Algebraic J\*-Algebras*.
 
-**Remark.** The ternary product is the sandwich of §*The Sesquilinear Sandwich* read with two arguments fixed; the two are the same object. The plain outer symmetry fails whenever the plain product is non-commutative.
+**Remark.** The ternary product is the two-sided operator of §*The Sesquilinear Two-Sided Operator* read with two arguments fixed; the two are the same object. The plain outer symmetry fails whenever the plain product is non-commutative.
 
 ## The Left and Right Multiplications
 
@@ -126,17 +126,17 @@ $$
 
 **Remark (the opposite monoid, read here).** On $\mathbb{C}$ the plain product is commutative, so the opposite of the multiplicative monoid is the monoid itself and no left-family reversal is needed; what survives is the asymmetry of the sesquilinear product proper, namely that the closure sits on the right family and the left family does not close at all. The general operators are *The Left and Right Multiplication Operators of a Sesqualgebra*.
 
-## The Sesquilinear Sandwich
+## The Sesquilinear Two-Sided Operator
 
-**Definition.** The **sesquilinear sandwich** of parameters $Q_1$ and $Q_2$ is the operator
+**Definition.** The **sesquilinear two-sided operator** of parameters $Q_1$ and $Q_2$ is the operator
 
 $$
 \mathcal{T}_{Q_1,Q_2}(X)=Q_1\star X\star Q_2=Q_1\bar X\bar Q_2 .
 $$
 
-The general sandwich $\mathcal{T}_{a,b}(x)=a\bar x b$ of *The Sesquilinear Sandwich Operator* is recovered by $a=Q_1$ and $b=\bar Q_2$.
+The general two-sided operator $\mathcal{T}_{a,b}(x)=a\bar x b$ of *The Sesquilinear Two-Sided Operator* is recovered by $a=Q_1$ and $b=\bar Q_2$.
 
-**Proposition (two decompositions).** The sandwich decomposes into a pair of one-sided multiplications and into an ordinary two-sided multiplication followed by the involution:
+**Proposition (two decompositions).** The two-sided operator decomposes into a pair of one-sided multiplications and into an ordinary two-sided multiplication followed by the involution:
 
 $$
 \mathcal{T}_{Q_1,Q_2}=R_{Q_2}\circ L_{Q_1}=L_{Q_1}R_{\bar Q_2}\circ{}^{*}, \qquad L_{Q_1}R_{Q_2}(X)=Q_1XQ_2 .
@@ -150,9 +150,9 @@ $$
 \mathcal{T}_{Q_1,Q_2}^{\dagger}=\mathcal{T}_{\bar Q_2,\bar Q_1}, \qquad L_{Q}^{\dagger}=L_{Q}, \qquad R_{Q}^{\dagger}=L_{\mathrm{alg},Q}.
 $$
 
-**Proof.** For the sandwich, $\mathcal{T}_{\bar Q_2,\bar Q_1}(Y)=\bar Q_2\bar Y Q_1$, so $\langle X,\mathcal{T}_{\bar Q_2,\bar Q_1}Y\rangle_{*}=X\overline{\bar Q_2\bar Y Q_1}=XQ_2Y\bar Q_1$ and $\overline{\langle X,\mathcal{T}_{\bar Q_2,\bar Q_1}Y\rangle_{*}}=\bar X\bar Q_2\bar Y Q_1$, while $\langle \mathcal{T}_{Q_1,Q_2}X,Y\rangle_{*}=Q_1\bar X\bar Q_2\bar Y$; the two agree by the commutativity of the plain product. For $L_{Q}$, $\langle L_{Q}X,Y\rangle_{*}=Q\bar X\bar Y$ and $\overline{\langle X,L_{Q}Y\rangle_{*}}=\overline{X\overline{Q\bar Y}}=\bar X Q\bar Y$; the two agree. For $R_{Q}$, $\langle R_{Q}X,Y\rangle_{*}=X\bar Q\bar Y$ and $\langle X,L_{\mathrm{alg},Q}Y\rangle_{*}=X\overline{QY}=X\bar Q\bar Y$. The adjoint of the involution itself is ${}^{*}$, since $\langle \bar X,Y\rangle_{*}=\bar X\bar Y=\overline{\langle X,\bar Y\rangle_{*}}$.
+**Proof.** For the two-sided operator, $\mathcal{T}_{\bar Q_2,\bar Q_1}(Y)=\bar Q_2\bar Y Q_1$, so $\langle X,\mathcal{T}_{\bar Q_2,\bar Q_1}Y\rangle_{*}=X\overline{\bar Q_2\bar Y Q_1}=XQ_2Y\bar Q_1$ and $\overline{\langle X,\mathcal{T}_{\bar Q_2,\bar Q_1}Y\rangle_{*}}=\bar X\bar Q_2\bar Y Q_1$, while $\langle \mathcal{T}_{Q_1,Q_2}X,Y\rangle_{*}=Q_1\bar X\bar Q_2\bar Y$; the two agree by the commutativity of the plain product. For $L_{Q}$, $\langle L_{Q}X,Y\rangle_{*}=Q\bar X\bar Y$ and $\overline{\langle X,L_{Q}Y\rangle_{*}}=\overline{X\overline{Q\bar Y}}=\bar X Q\bar Y$; the two agree. For $R_{Q}$, $\langle R_{Q}X,Y\rangle_{*}=X\bar Q\bar Y$ and $\langle X,L_{\mathrm{alg},Q}Y\rangle_{*}=X\overline{QY}=X\bar Q\bar Y$. The adjoint of the involution itself is ${}^{*}$, since $\langle \bar X,Y\rangle_{*}=\bar X\bar Y=\overline{\langle X,\bar Y\rangle_{*}}$.
 
-**Remark (the operator form of the sandwich).** The sandwich is the general two-sided operator of the sesquilinear structure; it contains the two one-sided families at $Q_1=1$ and $Q_2=1$, $\mathcal{T}_{1,Q_2}=R_{Q_2}\circ{}^{*}$ and $\mathcal{T}_{Q_1,1}=L_{Q_1}$, and it contains the involution at $Q_1=Q_2=1$, $\mathcal{T}_{1,1}={}^{*}$. The general operator and the two families are *The Sesquilinear Sandwich Operator*; the complex instance is the present computation collapsed to one dimension.
+**Remark (the operator form of the two-sided operator).** The two-sided operator is the general two-sided operator of the sesquilinear structure; it contains the two one-sided families at $Q_1=1$ and $Q_2=1$, $\mathcal{T}_{1,Q_2}=R_{Q_2}\circ{}^{*}$ and $\mathcal{T}_{Q_1,1}=L_{Q_1}$, and it contains the involution at $Q_1=Q_2=1$, $\mathcal{T}_{1,1}={}^{*}$. The general operator and the two families are *The Sesquilinear Two-Sided Operator*; the complex instance is the present computation collapsed to one dimension.
 
 ## The Commutator and the Symmetrised Product
 
@@ -194,7 +194,7 @@ and the parenthesis is $q_1q'_2q_3-q'_1q_2q_3+q_2q'_3q_1-q'_2q_3q_1+q_3q'_1q_2-q
 
 ## Summary
 
-The sesquilinear product $Q_1\star Q_2=Q_1\bar Q_2$ is $\mathbb{C}$-linear in the first slot and conjugate-linear in the second; it has the right unit $1$ and no left unit; it is neither associative nor commutative, and it is conjugate-commutative, $Q_1\star Q_2=\overline{Q_2\star Q_1}$. Its associator is $[Q_1,Q_2,Q_3]=Q_1\bar Q_2(\bar Q_3-Q_3)$, nonzero but confined to the anti-self-adjoint part of the third slot; its ternary product $\{Q_1,Q_2,Q_3\}=Q_1\bar Q_2 Q_3$ is symmetric in the outer slots, Hermitian-symmetric and satisfies the Jordan triple identity, which makes the structure a $J^{*}$-algebra. The left multiplications are conjugate-linear and do not close under composition, their composite being the ordinary left multiplication $L_{\mathrm{alg},Q_1\bar Q_2}$; the right multiplications are linear and close in the forward order, so that $Q\mapsto R_{Q}$ is an isomorphism of the multiplicative monoid of the field onto the right family. The sandwich $\mathcal{T}_{Q_1,Q_2}=R_{Q_2}\circ L_{Q_1}$ has adjoint $\mathcal{T}_{Q_1,Q_2}^{\dagger}=\mathcal{T}_{\bar Q_2,\bar Q_1}$ with respect to the Hermitian form; the one-sided adjoints are $L_{Q}^{\dagger}=L_{Q}$ and $R_{Q}^{\dagger}=L_{\mathrm{alg},Q}$. The commutator $[Q_1,Q_2]=2i\operatorname{Im}(Q_1\bar Q_2)$ is purely imaginary and alternating, and the Jacobi identity holds on it; the symmetrised product $Q_1\odot Q_2=2\operatorname{Re}(Q_1\bar Q_2)$ is the real part of the form. The product read as a form is *The Hermitian Form and the Positivity of the Complexoid Algebra*, below this article in this category.
+The sesquilinear product $Q_1\star Q_2=Q_1\bar Q_2$ is $\mathbb{C}$-linear in the first slot and conjugate-linear in the second; it has the right unit $1$ and no left unit; it is neither associative nor commutative, and it is conjugate-commutative, $Q_1\star Q_2=\overline{Q_2\star Q_1}$. Its associator is $[Q_1,Q_2,Q_3]=Q_1\bar Q_2(\bar Q_3-Q_3)$, nonzero but confined to the anti-self-adjoint part of the third slot; its ternary product $\{Q_1,Q_2,Q_3\}=Q_1\bar Q_2 Q_3$ is symmetric in the outer slots, Hermitian-symmetric and satisfies the Jordan triple identity, which makes the structure a $J^{*}$-algebra. The left multiplications are conjugate-linear and do not close under composition, their composite being the ordinary left multiplication $L_{\mathrm{alg},Q_1\bar Q_2}$; the right multiplications are linear and close in the forward order, so that $Q\mapsto R_{Q}$ is an isomorphism of the multiplicative monoid of the field onto the right family. The two-sided operator $\mathcal{T}_{Q_1,Q_2}=R_{Q_2}\circ L_{Q_1}$ has adjoint $\mathcal{T}_{Q_1,Q_2}^{\dagger}=\mathcal{T}_{\bar Q_2,\bar Q_1}$ with respect to the Hermitian form; the one-sided adjoints are $L_{Q}^{\dagger}=L_{Q}$ and $R_{Q}^{\dagger}=L_{\mathrm{alg},Q}$. The commutator $[Q_1,Q_2]=2i\operatorname{Im}(Q_1\bar Q_2)$ is purely imaginary and alternating, and the Jacobi identity holds on it; the symmetrised product $Q_1\odot Q_2=2\operatorname{Re}(Q_1\bar Q_2)$ is the real part of the form. The product read as a form is *The Hermitian Form and the Positivity of the Complexoid Algebra*, below this article in this category.
 
 ## Summary of Notation
 
@@ -203,7 +203,7 @@ The sesquilinear product $Q_1\star Q_2=Q_1\bar Q_2$ is $\mathbb{C}$-linear in th
 | $Q_1\star Q_2=Q_1\bar Q_2$ | the sesquilinear product, written with the star-nothing convention $Q_1\bar Q_2$ |
 | $L_{Q}$, $R_{Q}$ | the sesquilinear left and right multiplications, $Q\bar X$ and $X\bar Q$ |
 | $L_{\mathrm{alg},Q}$ | the ordinary left multiplication of the field, $L_{\mathrm{alg},Q}(X)=QX$ |
-| $\mathcal{T}_{Q_1,Q_2}$ | the sesquilinear sandwich, $\mathcal{T}_{Q_1,Q_2}(X)=Q_1\bar X\bar Q_2$ |
+| $\mathcal{T}_{Q_1,Q_2}$ | the sesquilinear two-sided operator, $\mathcal{T}_{Q_1,Q_2}(X)=Q_1\bar X\bar Q_2$ |
 | $L_{Q_1}R_{Q_2}$ | the ordinary two-sided multiplication, $L_{Q_1}R_{Q_2}(X)=Q_1XQ_2$ |
 | $Q_1\star Q_2\star Q_3$ | the binary product iterated, $(Q_1\star Q_2)\star Q_3=Q_1\bar Q_2\bar Q_3$ |
 | $\{Q_1,Q_2,Q_3\}$ | the ternary product, $(Q_1\star Q_2)\star\bar Q_3=Q_1\bar Q_2 Q_3$ |

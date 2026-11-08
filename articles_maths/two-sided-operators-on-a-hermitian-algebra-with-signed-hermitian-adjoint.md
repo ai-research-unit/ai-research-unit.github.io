@@ -2,13 +2,13 @@
 
 ## Introduction
 
-The family of two-sided operators of *Two-Sided Operators on a Clifford Algebra* is indexed by an automorphism on the left factor and an anti-automorphism on the right, $y\mapsto\theta(x)\,y\,c(x)$. The members with the inverse to the right are the inner conjugation $x\,y\,x^{-1}$ and the signed inner conjugation $\alpha(x)\,y\,x^{-1}$; the members with an intrinsic anti-involution to the right are the reversion and conjugation sandwiches; and the last member has the **dagger** to the right,
+The family of two-sided operators of *The Family of Two-Sided Operators on a Clifford Algebra* is indexed by an automorphism on the left factor and an anti-automorphism on the right, $y\mapsto\theta(x)\,y\,c(x)$. The members with the inverse to the right are the inner conjugation $x\,y\,x^{-1}$ and the signed inner conjugation $\alpha(x)\,y\,x^{-1}$; the members with an intrinsic anti-involution to the right are the reversion and conjugation two-sided operators; and the last member has the **dagger** to the right,
 
 $$
 y\ \longmapsto\ x\,y\,x^{\dagger},\qquad x^{\dagger}=\sigma\bigl(\alpha(x^{r})\bigr),
 $$
 
-the **Hermitian sandwich** of *The Hermitian Sandwich on a Hermitian Algebra with Hermitian Adjoint*. It is the one member that needs an involution $\sigma$ of the base ring, and the one member that is defined on the whole algebra rather than on the unit group.
+the **Hermitian pair** of *The Hermitian Pair of Operators on a Hermitian Algebra with Hermitian Adjoint*. It is the one member that needs an involution $\sigma$ of the base ring, and the one member that is defined on the whole algebra rather than on the unit group.
 
 This article treats the member that combines the two inputs,
 
@@ -16,15 +16,15 @@ $$
 y\ \longmapsto\ \alpha(x)\,y\,x^{\dagger},
 $$
 
-the **signed Hermitian sandwich**, written $\mathrm{Sd}^{\alpha}_x$ below. It is the Hermitian analogue of the signed inner conjugation of *Two-Sided Operators on a Clifford Algebra with Signed Inner Conjugation*: the left factor carries the grade involution, the right factor carries the coefficient involution, and the member inherits from the first the parity sign and from the second the semilinearity and the wider domain. The name *signed* is the one the corpus uses for the twist by the grade involution; the general twist by an arbitrary automorphism $\theta$ is the graded operator, and it is not used here.
+the **signed Hermitian pair**, written $\mathrm{Sd}^{\alpha}_x$ below. It is the Hermitian analogue of the signed inner conjugation of *Two-Sided Operators on a Clifford Algebra with Signed Inner Conjugation*: the left factor carries the grade involution, the right factor carries the coefficient involution, and the member inherits from the first the parity sign and from the second the semilinearity and the wider domain. The name *signed* is the one the corpus uses for the twist by the grade involution; the general twist by an arbitrary automorphism $\theta$ is the graded operator, and it is not used here.
 
-Two facts decide the theory, and both are the Hermitian translation of facts of the inverse member. The first is that the sign is a scalar on the homogeneous part, $\mathrm{Sd}^{\alpha}_x=\varepsilon_x\mathrm{Sd}_x$ with $\varepsilon_x=(-1)^{|x|}$, so on the even part of the algebra the signed and the unsigned Hermitian sandwich agree and on the odd part they differ by the global sign. The second is that the composition of two such operators with odd parameters is an **ordinary** Hermitian sandwich, because the product of two odd elements is even; the two signs cancel, exactly as they do for the inverse member, and the composite is again a Hermitian sandwich, not a new kind of operator.
+Two facts decide the theory, and both are the Hermitian translation of facts of the inverse member. The first is that the sign is a scalar on the homogeneous part, $\mathrm{Sd}^{\alpha}_x=\varepsilon_x\mathrm{Sd}_x$ with $\varepsilon_x=(-1)^{|x|}$, so on the even part of the algebra the signed and the unsigned Hermitian pair agree and on the odd part they differ by the global sign. The second is that the composition of two such operators with odd parameters is an **ordinary** Hermitian pair, because the product of two odd elements is even; the two signs cancel, exactly as they do for the inverse member, and the composite is again a Hermitian pair, not a new kind of operator.
 
-The Clifford algebra, its parity grading and the three intrinsic involutions $\alpha$, $r$ and $x^{\natural}=\alpha(x^{r})$ are from *Clifford Algebras* and *Clifford Algebras in Finite Dimensions*. The dagger, the involution $\sigma$ of the base and the correction of the semilinearity claims are from *Hilbert Algebras*. The general two-sided family, its five members and the composition law are *Two-Sided Operators on a Clifford Algebra*; the four-operator family with its horizontal and vertical defects is *Mixed Inner Conjugation and Hermitian Adjoint*; the unsigned member is *The Hermitian Sandwich on a Hermitian Algebra with Hermitian Adjoint*; the unitary slice is *The Unitary Slice and the Compact Real Form with Hermitian Adjoint*. Nothing owned by those entries is re-derived; what is proved here is what the sign changes.
+The Clifford algebra, its parity grading and the three intrinsic involutions $\alpha$, $r$ and $x^{\natural}=\alpha(x^{r})$ are from *Clifford Algebras* and *Clifford Algebras in Finite Dimensions*. The dagger, the involution $\sigma$ of the base and the correction of the semilinearity claims are from *Hilbert Algebras*. The general two-sided family, its five members and the composition law are *The Family of Two-Sided Operators on a Clifford Algebra*; the four-operator family with its horizontal and vertical defects is *Mixed Inner Conjugation and Hermitian Adjoint*; the unsigned member is *The Hermitian Pair of Operators on a Hermitian Algebra with Hermitian Adjoint*; the unitary slice is *The Unitary Slice and the Compact Real Form with Hermitian Adjoint*. Nothing owned by those entries is re-derived; what is proved here is what the sign changes.
 
 ## The Operator and the Parity Sign
 
-**Definition.** The **signed Hermitian sandwich** of an element $x\in\mathrm{Cl}(V,\mathfrak{Q})$ is the map
+**Definition.** The **signed Hermitian pair** of an element $x\in\mathrm{Cl}(V,\mathfrak{Q})$ is the map
 
 $$
 \mathrm{Sd}^{\alpha}_x:\mathrm{Cl}(V,\mathfrak{Q})\longrightarrow\mathrm{Cl}(V,\mathfrak{Q}),\qquad
@@ -41,9 +41,9 @@ $$
 
 the two composites agreeing by associativity.
 
-**Proposition (the domain).** The operator is defined for **every** $x\in\mathrm{Cl}(V,\mathfrak{Q})$, invertible or not, because the dagger is defined on the whole algebra. It requires the base to carry the involution $\sigma$, which the reversion and conjugation sandwiches do not.
+**Proposition (the domain).** The operator is defined for **every** $x\in\mathrm{Cl}(V,\mathfrak{Q})$, invertible or not, because the dagger is defined on the whole algebra. It requires the base to carry the involution $\sigma$, which the reversion and conjugation two-sided operators do not.
 
-*Proof.* The definition uses no inverse and no division; the dagger of every element is an element of the algebra. The dependence on $\sigma$ is in the dagger itself, and with the trivial involution $\sigma=\mathrm{id}$ the signed Hermitian sandwich reduces to the conjugation sandwich.
+*Proof.* The definition uses no inverse and no division; the dagger of every element is an element of the algebra. The dependence on $\sigma$ is in the dagger itself, and with the trivial involution $\sigma=\mathrm{id}$ the signed Hermitian pair reduces to the conjugation two-sided operator.
 
 **Proposition (the parity sign).** Let $x$ be homogeneous of degree $k$ and let $\varepsilon_x=(-1)^{k}$, so that $\alpha(x)=\varepsilon_x\,x$. Then
 
@@ -51,7 +51,7 @@ $$
 \mathrm{Sd}^{\alpha}_x=\varepsilon_x\,\mathrm{Sd}_x,
 $$
 
-where $\mathrm{Sd}_x(y)=x\,y\,x^{\dagger}$ is the Hermitian sandwich. In particular $\mathrm{Sd}^{\alpha}_x=\mathrm{Sd}_x$ when $x$ is even and $\mathrm{Sd}^{\alpha}_x=-\mathrm{Sd}_x$ when $x$ is odd.
+where $\mathrm{Sd}_x(y)=x\,y\,x^{\dagger}$ is the Hermitian pair. In particular $\mathrm{Sd}^{\alpha}_x=\mathrm{Sd}_x$ when $x$ is even and $\mathrm{Sd}^{\alpha}_x=-\mathrm{Sd}_x$ when $x$ is odd.
 
 *Proof.* The grade involution is the scalar $\varepsilon_x$ on the degree-$k$ part, so $\alpha(x)=\varepsilon_x x$; substituting into the definition and using that the scalar is central gives $\mathrm{Sd}^{\alpha}_x(y)=\varepsilon_x\,x\,y\,x^{\dagger}$. The last sentence is the two cases $\varepsilon_x=\pm1$.
 
@@ -73,7 +73,7 @@ $$
 
 It is **not** $\sigma$-semilinear in the argument, and the correction of that claim for the unsigned member applies verbatim here.
 
-*Proof.* The argument is linear because $\mathrm{Sd}^{\alpha}_x$ is a composite of a left and a right multiplication. For the parameter, $(ax)^{\dagger}=\sigma(a)x^{\dagger}$ by $\sigma$-semilinearity of the dagger and centrality of $a$, and $\alpha(ax)=a\,\alpha(x)$ since a scalar is even; assembling, $\mathrm{Sd}^{\alpha}_{ax}(y)=a\,\alpha(x)\,y\,\sigma(a)\,x^{\dagger}=a\,\sigma(a)\,\mathrm{Sd}^{\alpha}_x(y)$. The non-semilinearity in $y$ is the counterexample of *The Hermitian Sandwich on a Hermitian Algebra with Hermitian Adjoint*, unchanged because the extra factor $\alpha(x)$ is independent of $y$.
+*Proof.* The argument is linear because $\mathrm{Sd}^{\alpha}_x$ is a composite of a left and a right multiplication. For the parameter, $(ax)^{\dagger}=\sigma(a)x^{\dagger}$ by $\sigma$-semilinearity of the dagger and centrality of $a$, and $\alpha(ax)=a\,\alpha(x)$ since a scalar is even; assembling, $\mathrm{Sd}^{\alpha}_{ax}(y)=a\,\alpha(x)\,y\,\sigma(a)\,x^{\dagger}=a\,\sigma(a)\,\mathrm{Sd}^{\alpha}_x(y)$. The non-semilinearity in $y$ is the counterexample of *The Hermitian Pair of Operators on a Hermitian Algebra with Hermitian Adjoint*, unchanged because the extra factor $\alpha(x)$ is independent of $y$.
 
 **Remark.** The two inputs are visible in the two rules. The dagger contributes the involution $\sigma$, hence the factor $\sigma(a)$ in the parameter; the grade involution contributes the parity sign $\varepsilon_x$, which is a scalar and therefore does not disturb the linearity. This is why the signed member is a legitimate member of a family whose general theory is linear: its extra structure is a scalar on each homogeneous component.
 
@@ -95,7 +95,7 @@ $$
 \mathrm{Sd}^{\alpha}_x\circ\mathrm{Sd}^{\alpha}_z=\varepsilon_x\varepsilon_z\;\mathrm{Sd}_{xz},
 $$
 
-so the composite is the **ordinary** Hermitian sandwich exactly when the two parameters have the **same** parity, and in particular it is ordinary whenever both are odd:
+so the composite is the **ordinary** Hermitian pair exactly when the two parameters have the **same** parity, and in particular it is ordinary whenever both are odd:
 
 $$
 x,z\ \text{odd}\ \Longrightarrow\ \mathrm{Sd}^{\alpha}_x\circ\mathrm{Sd}^{\alpha}_z=\mathrm{Sd}_{xz}.
@@ -105,10 +105,10 @@ $$
 
 | $x$ | $z$ | $xz$ | composite |
 |---|---|---|---|
-| even | even | even | ordinary Hermitian sandwich, $\mathrm{Sd}_{xz}$ |
+| even | even | even | ordinary Hermitian pair, $\mathrm{Sd}_{xz}$ |
 | even | odd | odd | signed, $-\,\mathrm{Sd}_{xz}$ |
 | odd | even | odd | signed, $-\,\mathrm{Sd}_{xz}$ |
-| odd | odd | even | ordinary Hermitian sandwich, $\mathrm{Sd}_{xz}$ |
+| odd | odd | even | ordinary Hermitian pair, $\mathrm{Sd}_{xz}$ |
 
 **Corollary (the square of an odd step is ordinary).** If $x$ is odd then $x^{2}$ is even and
 
@@ -122,15 +122,15 @@ $$
 \mathrm{Sd}^{\alpha}_x=\mathrm{Sd}^{\alpha}_u\circ\mathrm{Sd}^{\alpha}_s .
 $$
 
-So the odd part of the family is generated by the single signed Hermitian sandwich $\mathrm{Sd}^{\alpha}_u$ together with the ordinary Hermitian sandwiches: the sign is one generator, not a second family.
+So the odd part of the family is generated by the single signed Hermitian pair $\mathrm{Sd}^{\alpha}_u$ together with the ordinary Hermitian pairs: the sign is one generator, not a second family.
 
 **Proof.** The decomposition of an odd element as (odd) $\times$ (even) is the module statement $\mathrm{Cl}^1=\mathrm{Cl}^0u$ of the next article; substituting into the multiplicativity gives the identity.
 
-**Remark.** This is the Hermitian form of the statement that one graded structure suffices. The composition law is the same for both right factors, because the dagger is an anti-automorphism exactly as the inverse is; and the cancellation is the same, because it is a consequence of the parity grading and of nothing else. What is different in the Hermitian case is that the intermediate operator $\mathrm{Sd}^{\alpha}_s$ with $s$ even is the unsigned Hermitian sandwich, so the family generated is a family of Hermitian sandwiches and not of inverse sandwiches.
+**Remark.** This is the Hermitian form of the statement that one graded structure suffices. The composition law is the same for both right factors, because the dagger is an anti-automorphism exactly as the inverse is; and the cancellation is the same, because it is a consequence of the parity grading and of nothing else. What is different in the Hermitian case is that the intermediate operator $\mathrm{Sd}^{\alpha}_s$ with $s$ even is the unsigned Hermitian pair, so the family generated is a family of Hermitian pairs and not of inverse two-sided operators.
 
 ## The Kernel and the Slice
 
-**Proposition (the kernel).** The signed Hermitian sandwich is the identity exactly on
+**Proposition (the kernel).** The signed Hermitian pair is the identity exactly on
 
 $$
 \boxed{\;\ker\mathrm{Sd}^{\alpha}=\bigl\{\,x : \alpha(x)\,x^{\dagger}=1\ \text{ and }\ x^{\dagger}\in Z\bigl(\mathrm{Cl}(V,\mathfrak{Q})\bigr)\,\bigr\}\;},
@@ -148,7 +148,7 @@ $$
 
 *Proof.* On $U$ the operator is the signed inner conjugation, whose kernel is $F^{\times}$; intersected with $U$ this is $\{\lambda\in F^{\times}:\bar{\lambda}\lambda=1\}$, and for a scalar $\lambda$ one has $\bar\lambda=\lambda$, so $\lambda^{2}=1$ and, over a field of characteristic not two, $\lambda=\pm1$.
 
-**Remark (why the slice needs the signed form).** The corollary is the double cover of *The Clifford, Pin and Spin Groups with Signed Inner Conjugation* read in the Hermitian language. The unsigned Hermitian sandwich has the same kernel as the inner conjugation, which in odd dimension is larger than $\{\pm1\}$ because the volume element is central; the signed member removes that central element and leaves the two elements that the covering group requires. On the slice the Hermitian theory therefore does not merely agree with the inverse theory, it reproduces its exact sequences.
+**Remark (why the slice needs the signed form).** The corollary is the double cover of *The Clifford, Pin and Spin Groups with Signed Inner Conjugation* read in the Hermitian language. The unsigned Hermitian pair has the same kernel as the inner conjugation, which in odd dimension is larger than $\{\pm1\}$ because the volume element is central; the signed member removes that central element and leaves the two elements that the covering group requires. On the slice the Hermitian theory therefore does not merely agree with the inverse theory, it reproduces its exact sequences.
 
 **Proposition (the slice reduction).** For $x\in U$ the dagger is the inverse, so
 
@@ -166,7 +166,7 @@ which is trivial exactly on $U$.
 
 *Proof.* On $U$ one has $x^{\dagger}=x^{-1}$ by definition, giving the first identity; the second is the horizontal defect of *Mixed Inner Conjugation and Hermitian Adjoint*, $\Phi^{\theta,\bar{\cdot}}_x=R_{xx^{\dagger}}\circ\Phi_{\mathrm{inv},x}^{\theta}$, applied to $\theta=\alpha$.
 
-**Remark.** The slice is the locus where the Hermitian operator and the inverse operator coincide, and it is a slice of the *parameter* and not of the algebra: off it the operator is still defined, but it is no longer an automorphism of the algebra and no longer a function of the inverse. This is the structural difference between the two families: the signed inner conjugation is defined only where the inverse is, and is an automorphism of the algebra there; the signed Hermitian sandwich is defined everywhere, and is an automorphism only where the dagger happens to be the inverse.
+**Remark.** The slice is the locus where the Hermitian operator and the inverse operator coincide, and it is a slice of the *parameter* and not of the algebra: off it the operator is still defined, but it is no longer an automorphism of the algebra and no longer a function of the inverse. This is the structural difference between the two families: the signed inner conjugation is defined only where the inverse is, and is an automorphism of the algebra there; the signed Hermitian pair is defined everywhere, and is an automorphism only where the dagger happens to be the inverse.
 
 ## The Action on the Quadratic Space
 
@@ -180,7 +180,7 @@ $$
 
 so it maps $V$ to itself and is an isometry of $q$ exactly when $\sigma(N(x))^{2}=1$, and otherwise a similarity of ratio $\sigma(N(x))^{2}$.
 
-*Proof.* For $x\in\Gamma$ the Hermitian sandwich acts on $V$ as $\sigma(N(x))$ times a twisted conjugation $\chi(x)\in O(V,\mathfrak{Q})$, by *The Hermitian Sandwich on a Hermitian Algebra with Hermitian Adjoint*; the signed operator is $\varepsilon_x$ times it by the parity-sign proposition, and a global scalar $\lambda$ multiplies $q$ by $\lambda^{2}$.
+*Proof.* For $x\in\Gamma$ the Hermitian pair acts on $V$ as $\sigma(N(x))$ times a twisted conjugation $\chi(x)\in O(V,\mathfrak{Q})$, by *The Hermitian Pair of Operators on a Hermitian Algebra with Hermitian Adjoint*; the signed operator is $\varepsilon_x$ times it by the parity-sign proposition, and a global scalar $\lambda$ multiplies $q$ by $\lambda^{2}$.
 
 **Proposition (the vectors and the reflection).** Let $u\in V$ with $\mathfrak{Q}(u)\neq0$. Then $u$ is odd and $u^{\dagger}=-\sigma(u)$, so
 
@@ -195,11 +195,11 @@ $$
 \mathrm{Sd}_u(v)=\mathfrak{Q}(u)\,\rho_u(v)\;}.
 $$
 
-On a vector of square $-1$ the signed Hermitian sandwich **is** the reflection, $\mathrm{Sd}^{\alpha}_u=\rho_u$, while the unsigned Hermitian sandwich is $-\rho_u$.
+On a vector of square $-1$ the signed Hermitian pair **is** the reflection, $\mathrm{Sd}^{\alpha}_u=\rho_u$, while the unsigned Hermitian pair is $-\rho_u$.
 
 *Proof.* For $u\in V$ one has $u^{r}=u$ and $\alpha(u)=-u$, so $u^{\dagger}=\sigma(\alpha(u))=-\sigma(u)$; then $\mathrm{Sd}^{\alpha}_u(v)=(-u)v(-\sigma(u))=u\,v\,\sigma(u)$ and $\mathrm{Sd}_u(v)=-u\,v\,\sigma(u)$. With $\sigma=\mathrm{id}$ and the fundamental relation $uvu=2B(u,v)u-\mathfrak{Q}(u)v$ one has $u\,v\,u=\mathfrak{Q}(u)\bigl(2B(u,v)\mathfrak{Q}(u)^{-1}u-v\bigr)=-\mathfrak{Q}(u)\rho_u(v)$; for $\mathfrak{Q}(u)=-1$ this is $\rho_u(v)$.
 
-**Corollary (reflections on the slice).** A vector $u$ of square $-1$ lies in the unitary slice, and on it the signed Hermitian sandwich is the signed inner conjugation and the reflection at once,
+**Corollary (reflections on the slice).** A vector $u$ of square $-1$ lies in the unitary slice, and on it the signed Hermitian pair is the signed inner conjugation and the reflection at once,
 
 $$
 u\in U,\qquad \mathrm{Sd}^{\alpha}_u=\mathrm{Ad}^{\alpha}_u=\rho_u .
@@ -207,7 +207,7 @@ $$
 
 *Proof.* For $\sigma=\mathrm{id}$ and $u^{2}=\mathfrak{Q}(u)=-1$ one has $u^{\dagger}u=(-u)u=-u^{2}=1$, so $u\in U$; the slice reduction then gives $\mathrm{Sd}^{\alpha}_u=\mathrm{Ad}^{\alpha}_u$, and the reflection proposition gives $\rho_u$.
 
-**Remark (no new isometries).** The Hermitian family produces no isometry of $V$ beyond the orthogonal group: every isometry it yields is a twisted conjugation of a $\Gamma$-element up to a scalar, by the first proposition, and the signed form only changes the scalar by the sign $\varepsilon_x$. What the signed Hermitian sandwich adds is the wider domain, the coefficient involution, and the exact sign that turns the image of an odd element into the reflection rather than its negative.
+**Remark (no new isometries).** The Hermitian family produces no isometry of $V$ beyond the orthogonal group: every isometry it yields is a twisted conjugation of a $\Gamma$-element up to a scalar, by the first proposition, and the signed form only changes the scalar by the sign $\varepsilon_x$. What the signed Hermitian pair adds is the wider domain, the coefficient involution, and the exact sign that turns the image of an odd element into the reflection rather than its negative.
 
 ## Worked Cases
 
@@ -247,33 +247,33 @@ $$
 \mathrm{Sd}^{\alpha}_{e_1}\circ\mathrm{Sd}^{\alpha}_{e_2}=\mathrm{Sd}^{\alpha}_{e_1e_2}=\mathrm{Sd}_{e_1e_2},
 $$
 
-an ordinary Hermitian sandwich, and it sends $e_1\mapsto-e_1$, $e_2\mapsto-e_2$, $e_3\mapsto e_3$: the same half-turn read as the product of two signed Hermitian sandwiches. The two signs have cancelled, and the composite operator is an automorphism of the algebra because its parameter $e_1e_2$ is even.
+an ordinary Hermitian pair, and it sends $e_1\mapsto-e_1$, $e_2\mapsto-e_2$, $e_3\mapsto e_3$: the same half-turn read as the product of two signed Hermitian pairs. The two signs have cancelled, and the composite operator is an automorphism of the algebra because its parameter $e_1e_2$ is even.
 
-### The Biquaternion Sandwich
+### The Biquaternion Two-Sided Operator
 
-Let $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ with the Hermitian dagger of the physics corpus, $\bar{\tilde{Q}}=\sigma(\alpha(\tilde Q^{r}))$, complex conjugation composed with the Clifford conjugation. The corpus sandwich $\tilde Q\mapsto \tilde Q\,x\,\bar{\tilde{Q}}$ is the Hermitian sandwich $\mathrm{Sd}_{\tilde Q}$, and the signed member is the parity-signed version, $\mathrm{Sd}^{\alpha}_{\tilde Q}=\varepsilon_{\tilde Q}\mathrm{Sd}_{\tilde Q}$. On the unitary slice, where $\bar{\tilde{Q}}=\tilde Q^{-1}$, the signed member is the signed inner conjugation and produces the Lorentz transformations of the biquaternion algebra; off the slice it is a similarity of the biquaternion norm. The dictionary is *Biquaternion Versors and the Orthogonal Group* in the physics corpus.
+Let $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ with the Hermitian dagger of the physics corpus, $\bar{\tilde{Q}}=\sigma(\alpha(\tilde Q^{r}))$, complex conjugation composed with the Clifford conjugation. The corpus two-sided operator $\tilde Q\mapsto \tilde Q\,x\,\bar{\tilde{Q}}$ is the Hermitian pair $\mathrm{Sd}_{\tilde Q}$, and the signed member is the parity-signed version, $\mathrm{Sd}^{\alpha}_{\tilde Q}=\varepsilon_{\tilde Q}\mathrm{Sd}_{\tilde Q}$. On the unitary slice, where $\bar{\tilde{Q}}=\tilde Q^{-1}$, the signed member is the signed inner conjugation and produces the Lorentz transformations of the biquaternion algebra; off the slice it is a similarity of the biquaternion norm. The dictionary is *Biquaternion Versors and the Orthogonal Group* in the physics corpus.
 
 ## Summary
 
-The **signed Hermitian sandwich** is the two-sided operator
+The **signed Hermitian pair** is the two-sided operator
 
 $$
 \mathrm{Sd}^{\alpha}_x(y)=\alpha(x)\,y\,x^{\dagger},\qquad x^{\dagger}=\sigma\bigl(\alpha(x^{r})\bigr),
 $$
 
-the member of the family whose left factor carries the grade involution and whose right factor is the dagger. It needs an involution $\sigma$ of the base, like the Hermitian sandwich, and it is defined for **every** element of the algebra, unlike the two inverse members. By the parity sign it is the scalar multiple $\mathrm{Sd}^{\alpha}_x=\varepsilon_x\mathrm{Sd}_x$ of the Hermitian sandwich for homogeneous $x$: the two agree on the even part and differ by $-1$ on the odd part. It is $A$-linear in its argument and obeys the parameter rule $\mathrm{Sd}^{\alpha}_{ax}=a\sigma(a)\mathrm{Sd}^{\alpha}_x$; it is not $\sigma$-semilinear in the argument.
+the member of the family whose left factor carries the grade involution and whose right factor is the dagger. It needs an involution $\sigma$ of the base, like the Hermitian pair, and it is defined for **every** element of the algebra, unlike the two inverse members. By the parity sign it is the scalar multiple $\mathrm{Sd}^{\alpha}_x=\varepsilon_x\mathrm{Sd}_x$ of the Hermitian pair for homogeneous $x$: the two agree on the even part and differ by $-1$ on the odd part. It is $A$-linear in its argument and obeys the parameter rule $\mathrm{Sd}^{\alpha}_{ax}=a\sigma(a)\mathrm{Sd}^{\alpha}_x$; it is not $\sigma$-semilinear in the argument.
 
-It is multiplicative, $\mathrm{Sd}^{\alpha}_{xz}=\mathrm{Sd}^{\alpha}_x\circ\mathrm{Sd}^{\alpha}_z$, and the composite of two operators with odd parameters is the **ordinary** Hermitian sandwich, $\mathrm{Sd}^{\alpha}_x\mathrm{Sd}^{\alpha}_z=\mathrm{Sd}_{xz}$ for $x,z$ odd, because the product of two odd elements is even: the two signs cancel. The square of an odd step is ordinary, and the odd part of the family is generated by one odd operator together with the ordinary Hermitian sandwiches. The kernel consists of the invertible elements with central dagger satisfying $\alpha(x)x^{\dagger}=1$; on the unitary slice it is $F^{\times}\cap U$, which for the trivial involution is the two elements $\{\pm1\}$ — the double cover.
+It is multiplicative, $\mathrm{Sd}^{\alpha}_{xz}=\mathrm{Sd}^{\alpha}_x\circ\mathrm{Sd}^{\alpha}_z$, and the composite of two operators with odd parameters is the **ordinary** Hermitian pair, $\mathrm{Sd}^{\alpha}_x\mathrm{Sd}^{\alpha}_z=\mathrm{Sd}_{xz}$ for $x,z$ odd, because the product of two odd elements is even: the two signs cancel. The square of an odd step is ordinary, and the odd part of the family is generated by one odd operator together with the ordinary Hermitian pairs. The kernel consists of the invertible elements with central dagger satisfying $\alpha(x)x^{\dagger}=1$; on the unitary slice it is $F^{\times}\cap U$, which for the trivial involution is the two elements $\{\pm1\}$ — the double cover.
 
-On the Clifford group the operator acts on $V$ as $\varepsilon_x\sigma(N(x))$ times a twisted conjugation, hence as an isometry exactly when $\sigma(N(x))^{2}=1$ and otherwise as a similarity; on a vector $u$ it is $\mathrm{Sd}^{\alpha}_u(v)=u\,v\,\sigma(u)$, which is $-\mathfrak{Q}(u)\rho_u(v)$, so on a vector of square $-1$ the signed Hermitian sandwich **is** the reflection $\rho_u$ where the unsigned one is $-\rho_u$. On the unitary slice $U$ the dagger is the inverse, the horizontal defect trivialises, and the operator is exactly the signed inner conjugation, $\mathrm{Sd}^{\alpha}_x=\mathrm{Ad}^{\alpha}_x$; the slice is the locus on which the involutive, the Hermitian and the signed theories agree.
+On the Clifford group the operator acts on $V$ as $\varepsilon_x\sigma(N(x))$ times a twisted conjugation, hence as an isometry exactly when $\sigma(N(x))^{2}=1$ and otherwise as a similarity; on a vector $u$ it is $\mathrm{Sd}^{\alpha}_u(v)=u\,v\,\sigma(u)$, which is $-\mathfrak{Q}(u)\rho_u(v)$, so on a vector of square $-1$ the signed Hermitian pair **is** the reflection $\rho_u$ where the unsigned one is $-\rho_u$. On the unitary slice $U$ the dagger is the inverse, the horizontal defect trivialises, and the operator is exactly the signed inner conjugation, $\mathrm{Sd}^{\alpha}_x=\mathrm{Ad}^{\alpha}_x$; the slice is the locus on which the involutive, the Hermitian and the signed theories agree.
 
 ## Summary of Notation
 
 | Symbol | Meaning |
 |---|---|
 | $x^{\dagger}=\sigma(\alpha(x^{r}))$ | The dagger, needs an involution $\sigma$ of the base |
-| $\mathrm{Sd}_x(y)=x\,y\,x^{\dagger}$ | Hermitian sandwich, the unsigned member |
-| $\mathrm{Sd}^{\alpha}_x(y)=\alpha(x)\,y\,x^{\dagger}$ | Signed Hermitian sandwich, the subject |
+| $\mathrm{Sd}_x(y)=x\,y\,x^{\dagger}$ | Hermitian pair, the unsigned member |
+| $\mathrm{Sd}^{\alpha}_x(y)=\alpha(x)\,y\,x^{\dagger}$ | Signed Hermitian pair, the subject |
 | $\mathrm{Sd}^{\alpha}_x=\varepsilon_x\mathrm{Sd}_x$, $\varepsilon_x=(-1)^{|x|}$ | Parity sign, for homogeneous $x$ |
 | $\mathrm{Sd}^{\alpha}_{ax}=a\sigma(a)\mathrm{Sd}^{\alpha}_x$ | Parameter rule; the argument is $A$-linear |
 | $\mathrm{Sd}^{\alpha}_{xz}=\mathrm{Sd}^{\alpha}_x\mathrm{Sd}^{\alpha}_z$ | Multiplicativity |
@@ -288,6 +288,6 @@ On the Clifford group the operator acts on $V$ as $\varepsilon_x\sigma(N(x))$ ti
 
 - Max-Albert Knus, Alexander Merkurjev, Markus Rost and Jean-Pierre Tignol, *The Book of Involutions*, Colloquium Publications 44 (American Mathematical Society, 1998), for the involution of the base, the dagger and the twisted adjoint.
 - Ian R. Porteous, *Clifford Algebras and the Classical Groups*, Cambridge Studies in Advanced Mathematics 50 (Cambridge University Press, 1995), for the two involutions of a Clifford algebra, the grade involution and the two-sided operators.
-- Pertti Lounesto, *Clifford Algebras and Spinors* (Cambridge University Press, 2nd ed. 2001), for the parity of an odd element, the reflection and the sandwich formulas.
+- Pertti Lounesto, *Clifford Algebras and Spinors* (Cambridge University Press, 2nd ed. 2001), for the parity of an odd element, the reflection and the two-sided formulas.
 - Nathan Jacobson, *Structure of Rings*, Colloquium Publications 37 (American Mathematical Society, 1956), for involutions, Hermitian forms and the unitary group of a ring with involution.
 - H. Blaine Lawson and Marie-Louise Michelsohn, *Spin Geometry* (Princeton University Press, 1989), for the Hermitian structure on a Clifford module and the adjoint of the Clifford action.

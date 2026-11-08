@@ -109,7 +109,7 @@ $$
 
 of dimension three, acting on the pure part as the rotation group. In the split-quaternion category this group was $\mathrm{PGL}_2(\mathbb{R})\cong SO^{+}(2,1)$, of the same dimension but of a different signature: the Lorentz group of $2+1$ dimensions there, the rotation group of $3$ dimensions here. The change is exactly the change of sign of the determinant form.
 
-**The sandwich.** The case $\tilde p=\tilde q$ gives $\tilde x\mapsto\tilde q\tilde x\tilde q$, which is not a conjugation, and its determinant is $N(\tilde q)^{4}$, a fourth power. So the para-hermitian and the hermitian readings of the two-sided operator differ, and only the first is a group action.
+**The two-sided operator.** The case $\tilde p=\tilde q$ gives $\tilde x\mapsto\tilde q\tilde x\tilde q$, which is not a conjugation, and its determinant is $N(\tilde q)^{4}$, a fourth power. So the para-hermitian and the hermitian readings of the two-sided operator differ, and only the first is a group action.
 
 ## The Kronecker Display
 
@@ -183,7 +183,7 @@ $$
 
 of dimension seven.
 
-**The automorphisms.** The inner automorphisms appear as $L_{\tilde q}R_{\tilde q^{-1}}$ and form the subgroup $\mathbb{H}^{\times}/\mathbb{R}^{\times}\cong SO(3)$ of dimension three. The four dimensions between the two groups are the sandwiches with $\tilde q\tilde p\neq e_t$.
+**The automorphisms.** The inner automorphisms appear as $L_{\tilde q}R_{\tilde q^{-1}}$ and form the subgroup $\mathbb{H}^{\times}/\mathbb{R}^{\times}\cong SO(3)$ of dimension three. The four dimensions between the two groups are the two-sided operators with $\tilde q\tilde p\neq e_t$.
 
 **The absence of matrix units.** The algebra has no idempotent, so it has no system of matrix units, and the sixteen basis operators $L_{e_\mu}R_{e_\nu}$ are a basis of the ambient and not a system of units in the algebra. The Peirce frame of the split category has no counterpart, and the corner structure of that frame is replaced here by the single fact that the two copies intersect in the scalars.
 

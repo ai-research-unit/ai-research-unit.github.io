@@ -7,7 +7,7 @@ The signed left multiplication is the operator $T_a=L_a\alpha$, the composition 
 $$
 T_a^{\alpha\dagger}=T_a^*=\alpha\,\mathrm{Sd}_a=\mathrm{Sd}_{\alpha(a)}\,\alpha ,
 $$
-the composition of the transposed multiplication by $\alpha(a)$ with the grade involution. This article computes the signed adjoint, its products and its square, the self-adjointness and unitarity criteria, and the comparison with the left multiplication by $\delta(a)$, which fails exactly as in the non-graded case. The signed left multiplication itself is *The Signed Left Multiplication on the Algebra of Arithmetic Functions*; the adjoint of the plain left multiplication is *The Adjoint of the Left Multiplication on the Algebra of Arithmetic Functions*, and the two-sided version is *The Signed Adjoint Sandwich on the Algebra of Arithmetic Functions*. Nothing here reads a distance as an object.
+the composition of the transposed multiplication by $\alpha(a)$ with the grade involution. This article computes the signed adjoint, its products and its square, the self-adjointness and unitarity criteria, and the comparison with the left multiplication by $\delta(a)$, which fails exactly as in the non-graded case. The signed left multiplication itself is *The Signed Left Multiplication on the Algebra of Arithmetic Functions*; the adjoint of the plain left multiplication is *The Adjoint of the Left Multiplication on the Algebra of Arithmetic Functions*, and the two-sided version is *The Signed Adjoint Two-Sided Operator on the Algebra of Arithmetic Functions*. Nothing here reads a distance as an object.
 
 ## The Signed Adjoint
 
@@ -64,7 +64,7 @@ T_a^{\alpha\dagger}=T_{\delta(a)}\quad\text{with}\quad\delta=\sigma\alpha,
 $$
 does not hold over the algebra of arithmetic functions; the right side is $T_{\delta(a)}=L_{\delta(a)}\alpha=\alpha L_{\alpha(\delta(a))}\alpha$ and the left side is $\alpha\mathrm{Sd}_a$, and the two differ whenever $a$ is not a scalar multiple of the identity. The signed adjoint is a transposed operation on the elements, not a multiplication by a transformed element.
 
-**Proof.** The right side is $T_{\delta(a)}=L_{\delta(a)}\alpha=\alpha L_{\alpha(\delta(a))}$, a left multiplication conjugated by $\alpha$, while the left side is $\alpha\mathrm{Sd}_a$; the two coincide exactly when $\mathrm{Sd}_a=L_{\alpha(\delta(a))}$, which by the criterion of the corollary forces $a=\gamma\varepsilon$. This is the graded analogue of the obstruction of *The Sandwich on the Algebra of Arithmetic Functions*.
+**Proof.** The right side is $T_{\delta(a)}=L_{\delta(a)}\alpha=\alpha L_{\alpha(\delta(a))}$, a left multiplication conjugated by $\alpha$, while the left side is $\alpha\mathrm{Sd}_a$; the two coincide exactly when $\mathrm{Sd}_a=L_{\alpha(\delta(a))}$, which by the criterion of the corollary forces $a=\gamma\varepsilon$. This is the graded analogue of the obstruction of *The Two-Sided Operator on the Algebra of Arithmetic Functions*.
 
 ## Worked Examples
 

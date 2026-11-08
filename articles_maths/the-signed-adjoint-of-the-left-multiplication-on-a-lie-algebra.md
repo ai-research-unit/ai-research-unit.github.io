@@ -3,11 +3,11 @@
 
 ## Introduction
 
-The **signed left multiplication** on a Lie algebra is $\ell^{\alpha}_a = \operatorname{ad}_a\circ\alpha$, the operator $x\mapsto[a,\alpha(x)]$, and its adjoint with respect to the invariant Hermitian form is the signed left multiplication by the image of the parameter under the involution with a change of sign. The result separates the even and the odd parameters exactly: for an **odd** parameter the signed left multiplication is **self-adjoint**, and for an **even** parameter it is **skew-adjoint**, the sign being the parity of the parameter. The article computes the adjoint, records this parity dichotomy, relates the operator to the signed sandwich of the two-sided theory, and gives the degenerate cases.
+The **signed left multiplication** on a Lie algebra is $\ell^{\alpha}_a = \operatorname{ad}_a\circ\alpha$, the operator $x\mapsto[a,\alpha(x)]$, and its adjoint with respect to the invariant Hermitian form is the signed left multiplication by the image of the parameter under the involution with a change of sign. The result separates the even and the odd parameters exactly: for an **odd** parameter the signed left multiplication is **self-adjoint**, and for an **even** parameter it is **skew-adjoint**, the sign being the parity of the parameter. The article computes the adjoint, records this parity dichotomy, relates the operator to the signed two-sided operator of the general theory, and gives the degenerate cases.
 
-This article treats the adjoint of the signed left multiplication on a Lie algebra, its explicit expression and its relation to the signed sandwich. It is the fifth article of the `- * Operator Theory` group of the category; the signed left multiplication and its kernel are *The Signed Left Multiplication on a Lie Algebra*, the signed sandwich is *The Signed Sandwich on a Lie Algebra*, both above in the category, the adjoint of the sandwich is *The Signed Adjoint Sandwich on a Lie Algebra*, above, the invariant form is *Hermitian Forms on a Lie Algebra*, and the module case is *The Graded Adjoint Action on a Module over a Lie Algebra*, below.
+This article treats the adjoint of the signed left multiplication on a Lie algebra, its explicit expression and its relation to the signed two-sided operator. It is the fifth article of the `- * Operator Theory` group of the category; the signed left multiplication and its kernel are *The Signed Left Multiplication on a Lie Algebra*, the signed two-sided operator is *The Signed Two-Sided Operator on a Lie Algebra*, both above in the category, the adjoint of the two-sided operator is *The Signed Adjoint Two-Sided Operator on a Lie Algebra*, above, the invariant form is *Hermitian Forms on a Lie Algebra*, and the module case is *The Graded Adjoint Action on a Module over a Lie Algebra*, below.
 
-The article assumes the signed left multiplication, its factorisation and its kernel from *The Signed Left Multiplication on a Lie Algebra*, the adjoint operation, the skew-adjoint multiplications and the explicit adjoint of the sandwich from *The Signed Adjoint Sandwich on a Lie Algebra*, the invariant Hermitian form and its positive definite case from *Hermitian Forms on a Lie Algebra*, the grading and the grade involution from *Graded Lie Algebras with an Involution*, and the centraliser from *Lie Algebras*. The form is an instrument; the geometry of the form is Part IV.
+The article assumes the signed left multiplication, its factorisation and its kernel from *The Signed Left Multiplication on a Lie Algebra*, the adjoint operation, the skew-adjoint multiplications and the explicit adjoint of the two-sided operator from *The Signed Adjoint Two-Sided Operator on a Lie Algebra*, the invariant Hermitian form and its positive definite case from *Hermitian Forms on a Lie Algebra*, the grading and the grade involution from *Graded Lie Algebras with an Involution*, and the centraliser from *Lie Algebras*. The form is an instrument; the geometry of the form is Part IV.
 
 ## The Adjoint
 
@@ -21,7 +21,7 @@ $$
 \boxed{\;\bigl(\ell^{\alpha}_a\bigr)^{*} = \alpha^{*}L_a^{*} = -\alpha L_a = -L_{\alpha(a)}\alpha = \ell^{\alpha}_{-\alpha(a)} = -\ell^{\alpha}_{\alpha(a)}\;} .
 $$
 
-*Proof.* The adjoint reverses the order, so $(\ell^{\alpha}_a)^{*} = \alpha^{*}L_a^{*}$; the involution is a self-adjoint isometry, $\alpha^{*} = \alpha$, and the left multiplication is skew-adjoint, $L_a^{*} = -L_a$, as in *The Signed Adjoint Sandwich on a Lie Algebra*; hence the adjoint is $-\alpha L_a$, and the naturality $\alpha L_a = L_{\alpha(a)}\alpha$ together with the linearity in the parameter gives the forms displayed.
+*Proof.* The adjoint reverses the order, so $(\ell^{\alpha}_a)^{*} = \alpha^{*}L_a^{*}$; the involution is a self-adjoint isometry, $\alpha^{*} = \alpha$, and the left multiplication is skew-adjoint, $L_a^{*} = -L_a$, as in *The Signed Adjoint Two-Sided Operator on a Lie Algebra*; hence the adjoint is $-\alpha L_a$, and the naturality $\alpha L_a = L_{\alpha(a)}\alpha$ together with the linearity in the parameter gives the forms displayed.
 
 ### The Parity Dichotomy
 
@@ -50,23 +50,23 @@ $$
 
 and in that case the operator is a unitary complex structure on the algebra.
 
-*Proof.* Compute $(\ell^{\alpha}_a)^{*}\ell^{\alpha}_a = \ell^{\alpha}_{-\alpha(a)}\ell^{\alpha}_a = -\ell^{\alpha}_{\alpha(a)}\ell^{\alpha}_a$; using the square of *The Signed Sandwich on a Lie Algebra*, $-\ell^{\alpha}_{\alpha(a)}\ell^{\alpha}_a = -L_{\alpha(a)}L_{\alpha(a)} = -L_{\alpha(a)}^{2}$; the product is the identity exactly when $L_{\alpha(a)}^{2} = -\mathrm{id}$, and the analogous computation for the reversed product gives $L_a^{2} = -\mathrm{id}$.
+*Proof.* Compute $(\ell^{\alpha}_a)^{*}\ell^{\alpha}_a = \ell^{\alpha}_{-\alpha(a)}\ell^{\alpha}_a = -\ell^{\alpha}_{\alpha(a)}\ell^{\alpha}_a$; using the square of *The Signed Two-Sided Operator on a Lie Algebra*, $-\ell^{\alpha}_{\alpha(a)}\ell^{\alpha}_a = -L_{\alpha(a)}L_{\alpha(a)} = -L_{\alpha(a)}^{2}$; the product is the identity exactly when $L_{\alpha(a)}^{2} = -\mathrm{id}$, and the analogous computation for the reversed product gives $L_a^{2} = -\mathrm{id}$.
 
-## Relation to the Signed Sandwich
+## Relation to the Signed Two-Sided Operator
 
-**Theorem.** The signed sandwich is the signed left multiplication followed by a signed right multiplication, $\Sigma^{\alpha}_{a,b} = \ell^{\alpha}_aR_{\alpha(b)}$, and its adjoint is the product of the adjoints of the two factors in the reverse order,
+**Theorem.** The signed two-sided operator is the signed left multiplication followed by a signed right multiplication, $\Sigma^{\alpha}_{a,b} = \ell^{\alpha}_aR_{\alpha(b)}$, and its adjoint is the product of the adjoints of the two factors in the reverse order,
 
 $$
 \bigl(\Sigma^{\alpha}_{a,b}\bigr)^{*} = \bigl(R_{\alpha(b)}\bigr)^{*}\bigl(\ell^{\alpha}_a\bigr)^{*} = R_{\alpha(b)}\,\ell^{\alpha}_{\alpha(a)} ,
 $$
 
-which agrees with the explicit form $\alpha R_bL_a$ of *The Signed Adjoint Sandwich on a Lie Algebra*, since $\alpha R_bL_a = R_{\alpha(b)}\alpha L_a = R_{\alpha(b)}L_{\alpha(a)}\alpha$.
+which agrees with the explicit form $\alpha R_bL_a$ of *The Signed Adjoint Two-Sided Operator on a Lie Algebra*, since $\alpha R_bL_a = R_{\alpha(b)}\alpha L_a = R_{\alpha(b)}L_{\alpha(a)}\alpha$.
 
 *Proof.* The factorisation is that of *The Signed Left Multiplication on a Lie Algebra*; the adjoint of a product is the product of the adjoints in the reverse order; the signs of the two skew-adjoint factors cancel, and the identification with the explicit form is the naturality of the involution.
 
-**Corollary.** The adjoint of the signed sandwich is the signed left multiplication by $\alpha(a)$ followed by the ordinary right multiplication by $\alpha(b)$, and it is self-adjoint exactly when the carrying pair commutes; the one-sided adjoint is therefore the building block of the two-sided adjoint, in parallel with the Jordan case of *The Signed Adjoint of the Left Multiplication on a Jordan Algebra*.
+**Corollary.** The adjoint of the signed two-sided operator is the signed left multiplication by $\alpha(a)$ followed by the ordinary right multiplication by $\alpha(b)$, and it is self-adjoint exactly when the carrying pair commutes; the one-sided adjoint is therefore the building block of the two-sided adjoint, in parallel with the Jordan case of *The Signed Adjoint of the Left Multiplication on a Jordan Algebra*.
 
-*Proof.* Read the formula $R_{\alpha(b)}\ell^{\alpha}_{\alpha(a)}$ and apply the self-adjointness criterion of *The Signed Adjoint Sandwich on a Lie Algebra*.
+*Proof.* Read the formula $R_{\alpha(b)}\ell^{\alpha}_{\alpha(a)}$ and apply the self-adjointness criterion of *The Signed Adjoint Two-Sided Operator on a Lie Algebra*.
 
 ## The Form and the Degenerate Cases
 
@@ -122,7 +122,7 @@ $$
 \bigl(\ell^{\alpha}_a\bigr)^{*} = -\alpha L_a = \ell^{\alpha}_{-\alpha(a)} ,
 $$
 
-the signed left multiplication by the negative of the image of the parameter; it is **self-adjoint exactly for the odd parameters** and **skew-adjoint exactly for the even parameters**, so the parity dichotomy of the grading is the dichotomy of the self-adjointness. The signed left multiplication is unitary exactly when the ordinary left multiplication is a complex structure, $L_a^2 = -\mathrm{id}$, and the defect form $H(\ell^{\alpha}_ax,y) - H(x,\ell^{\alpha}_ay)$ vanishes exactly for the odd parameters. The signed sandwich is the product $\Sigma^{\alpha}_{a,b} = \ell^{\alpha}_aR_{\alpha(b)}$, and its adjoint is the product of the two adjoints in the reverse order, $R_{\alpha(b)}\ell^{\alpha}_{\alpha(a)}$, which agrees with the explicit form of *The Signed Adjoint Sandwich on a Lie Algebra*, so the one-sided adjoint is the building block of the two-sided one. The degenerate cases are the trivial grading, in which no parameter is self-adjoint, the inner involution, in which the eigenspaces of the involution replace the grading, and the degenerate or non-isometric form, in which the adjoint is not everywhere defined.
+the signed left multiplication by the negative of the image of the parameter; it is **self-adjoint exactly for the odd parameters** and **skew-adjoint exactly for the even parameters**, so the parity dichotomy of the grading is the dichotomy of the self-adjointness. The signed left multiplication is unitary exactly when the ordinary left multiplication is a complex structure, $L_a^2 = -\mathrm{id}$, and the defect form $H(\ell^{\alpha}_ax,y) - H(x,\ell^{\alpha}_ay)$ vanishes exactly for the odd parameters. The signed two-sided operator is the product $\Sigma^{\alpha}_{a,b} = \ell^{\alpha}_aR_{\alpha(b)}$, and its adjoint is the product of the two adjoints in the reverse order, $R_{\alpha(b)}\ell^{\alpha}_{\alpha(a)}$, which agrees with the explicit form of *The Signed Adjoint Two-Sided Operator on a Lie Algebra*, so the one-sided adjoint is the building block of the two-sided one. The degenerate cases are the trivial grading, in which no parameter is self-adjoint, the inner involution, in which the eigenspaces of the involution replace the grading, and the degenerate or non-isometric form, in which the adjoint is not everywhere defined.
 
 ## Summary of Notation
 
@@ -136,8 +136,8 @@ the signed left multiplication by the negative of the image of the parameter; it
 | $(\ell^{\alpha}_a)^{*} = -\ell^{\alpha}_a \iff a\in\mathrm{G}^{+}$ | skew-adjointness for the even parameters |
 | $L_a^{2} = -\mathrm{id}$ | the unitarity condition |
 | $H_{\ell}(x,y)$ | the defect of the self-adjointness |
-| $\Sigma^{\alpha}_{a,b} = \ell^{\alpha}_aR_{\alpha(b)}$ | the sandwich as a product |
-| $(\Sigma^{\alpha}_{a,b})^{*} = R_{\alpha(b)}\ell^{\alpha}_{\alpha(a)}$ | the adjoint of the sandwich |
+| $\Sigma^{\alpha}_{a,b} = \ell^{\alpha}_aR_{\alpha(b)}$ | the two-sided operator as a product |
+| $(\Sigma^{\alpha}_{a,b})^{*} = R_{\alpha(b)}\ell^{\alpha}_{\alpha(a)}$ | the adjoint of the two-sided operator |
 
 ## Further Reading
 

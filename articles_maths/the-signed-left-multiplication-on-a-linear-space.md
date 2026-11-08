@@ -2,9 +2,9 @@
 
 ## Introduction
 
-The one-sided companion of the signed sandwich is the **signed left multiplication** $\Lambda^{\alpha}_{a} = L_a\circ\alpha$, the operator $X \mapsto a\alpha(X)$ on $E = \operatorname{End}_F(V)$, obtained from the signed sandwich by taking the right factor to be the identity. It is the composite of the ordinary left multiplication with the grade involution, so its products are ordinary left multiplications, its inverse is again signed, and its fixed elements are computed from the composite; it is the case $b=1$ of the signed sandwich and the one-sided member of the signed family.
+The one-sided companion of the signed two-sided operator is the **signed left multiplication** $\Lambda^{\alpha}_{a} = L_a\circ\alpha$, the operator $X \mapsto a\alpha(X)$ on $E = \operatorname{End}_F(V)$, obtained from the signed two-sided operator by taking the right factor to be the identity. It is the composite of the ordinary left multiplication with the grade involution, so its products are ordinary left multiplications, its inverse is again signed, and its fixed elements are computed from the composite; it is the case $b=1$ of the signed two-sided operator and the one-sided member of the signed family.
 
-*The Signed Sandwich on a Linear Space* supplies the signed sandwich $\mathrm{Sd}^{\alpha}_{a,b}$ and its laws; *Left and Right Multiplication in a Group* and the one-sided operators supply the group-level analogue; *The Adjoint of the Left Multiplication on a Linear Space* supplies the unsigned case with the trace pairing, and *The Signed Adjoint of the Left Multiplication on a Linear Space* the signed adjoint. *The Graded Action on a Module over a Linear Space* treats the module-level variant. No form is used.
+*The Signed Two-Sided Operator on a Linear Space* supplies the signed two-sided operator $\mathrm{Sd}^{\alpha}_{a,b}$ and its laws; *Left and Right Multiplication in a Group* and the one-sided operators supply the group-level analogue; *The Adjoint of the Left Multiplication on a Linear Space* supplies the unsigned case with the trace pairing, and *The Signed Adjoint of the Left Multiplication on a Linear Space* the signed adjoint. *The Graded Action on a Module over a Linear Space* treats the module-level variant. No form is used.
 
 Throughout, $F$ is a field with $2 \neq 0$, $V$ is a finite-dimensional $F$-linear space, $E = \operatorname{End}_F(V)$, and $\alpha$ is the grade involution of $E$, $\alpha(X) = TXT$ for a linear involution $T$ of $V$, an algebra automorphism of order two.
 
@@ -16,7 +16,7 @@ $$
 \Lambda^{\alpha}_{a} = L_a\circ\alpha, \qquad \Lambda^{\alpha}_{a}(X) = a\,\alpha(X) .
 $$
 
-**Proposition.** $\Lambda^{\alpha}_{a}$ is the signed sandwich with the right factor equal to the identity, $\Lambda^{\alpha}_{a} = \mathrm{Sd}^{\alpha}_{a,1}$, and
+**Proposition.** $\Lambda^{\alpha}_{a}$ is the signed two-sided operator with the right factor equal to the identity, $\Lambda^{\alpha}_{a} = \mathrm{Sd}^{\alpha}_{a,1}$, and
 
 $$
 \Lambda^{\alpha}_{a} = L_a\circ\alpha = \alpha\circ L_{\alpha(a)} ,
@@ -24,7 +24,7 @@ $$
 
 so the signed left multiplication is the ordinary left multiplication by $\alpha(a)$ conjugated by $\alpha$.
 
-**Proof.** The first identity is the definition of the sandwich; for the second, $\alpha L_{\alpha(a)}(X) = \alpha(\alpha(a)X) = a\alpha(X) = \Lambda^{\alpha}_{a}(X)$.
+**Proof.** The first identity is the definition of the two-sided operator; for the second, $\alpha L_{\alpha(a)}(X) = \alpha(\alpha(a)X) = a\alpha(X) = \Lambda^{\alpha}_{a}(X)$.
 
 **Proposition (composition).** For all $a,b \in E$,
 
@@ -60,7 +60,7 @@ equivalently, when $a$ is invertible, $X$ is fixed exactly when $\alpha(X) = a^{
 
 ## Summary
 
-The signed left multiplication on $E=\operatorname{End}_F(V)$ is $\Lambda^{\alpha}_{a}=L_a\circ\alpha$, the signed sandwich with right factor one, equal to $\alpha\circ L_{\alpha(a)}$. Its product with another is the ordinary left multiplication $\Lambda^{\alpha}_{a}\Lambda^{\alpha}_{b}=L_{a\alpha(b)}$; it satisfies $L_a\Lambda^{\alpha}_{b}=\Lambda^{\alpha}_{ab}$ and $\Lambda^{\alpha}_{a}L_b=R_{\alpha(b)}\Lambda^{\alpha}_{a}$, so the signed and ordinary left multiplications together form a closed monoid; it is invertible exactly for invertible $a$, with inverse $\Lambda^{\alpha}_{\alpha(a^{-1})}$; and its fixed space is the solution set of $a\alpha(X)=X$, equal to the fixed part $E^{+}$ of $\alpha$ when $a=1$. The adjoint with respect to the trace pairing, the module-level graded variant and the group-level analogue are the companion articles.
+The signed left multiplication on $E=\operatorname{End}_F(V)$ is $\Lambda^{\alpha}_{a}=L_a\circ\alpha$, the signed two-sided operator with right factor one, equal to $\alpha\circ L_{\alpha(a)}$. Its product with another is the ordinary left multiplication $\Lambda^{\alpha}_{a}\Lambda^{\alpha}_{b}=L_{a\alpha(b)}$; it satisfies $L_a\Lambda^{\alpha}_{b}=\Lambda^{\alpha}_{ab}$ and $\Lambda^{\alpha}_{a}L_b=R_{\alpha(b)}\Lambda^{\alpha}_{a}$, so the signed and ordinary left multiplications together form a closed monoid; it is invertible exactly for invertible $a$, with inverse $\Lambda^{\alpha}_{\alpha(a^{-1})}$; and its fixed space is the solution set of $a\alpha(X)=X$, equal to the fixed part $E^{+}$ of $\alpha$ when $a=1$. The adjoint with respect to the trace pairing, the module-level graded variant and the group-level analogue are the companion articles.
 
 ## Summary of Notation
 

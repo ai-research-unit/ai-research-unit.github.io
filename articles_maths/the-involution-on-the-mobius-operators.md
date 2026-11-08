@@ -117,7 +117,7 @@ $$
 
 so the fixed subgroup of the conjugation and the projective unitary group of the Hermitian form coincide, and the adjoint realises the involution on the operators.
 
-**Proof.** The adjoint is the sandwich of the conjugate transpose by $J$ by *The Adjoint under a Hermitian Pairing*; the isomorphism $PSU(1,1) \cong PSL_2(\mathbb{R})$ is given by an explicit change of basis over $\mathbb{R}$ that carries the form of signature $(1,1)$ to the determinant form on the real matrices, and it is the standard isomorphism of the classical groups. The statement is in *Unitary Geometry over a Field with Involution*.
+**Proof.** The adjoint is the two-sided operator of the conjugate transpose by $J$ by *The Adjoint under a Hermitian Pairing*; the isomorphism $PSU(1,1) \cong PSL_2(\mathbb{R})$ is given by an explicit change of basis over $\mathbb{R}$ that carries the form of signature $(1,1)$ to the determinant form on the real matrices, and it is the standard isomorphism of the classical groups. The statement is in *Unitary Geometry over a Field with Involution*.
 
 **Remark (the agreement of the two involutions).** The involution of the article is the conjugation of the base acting on the operators, and the adjoint is the involution of the operators induced by the Hermitian form; the fixed subgroup of the first is the real Möbius group and the projective unitary group of the second is the same group, so the two structures agree on this group. The agreement is the statement that the representation is a $*$-representation in the projective sense, and it is proved by the isomorphism above and not assumed.
 

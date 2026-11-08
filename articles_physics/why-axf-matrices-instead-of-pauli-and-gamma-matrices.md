@@ -619,7 +619,7 @@ The migration has three passes — arrays to basis operators, basis operators to
 - [Conventions of the Matrix Models](matrix-representations-conventions.html), for the axis-free and Pauli arrays, the sixteen basis operators and the switch between them.
 - [Conventions of the Frames](frame-and-metric-conventions.html), for the two frames, their coordinates and the gamma basis operators.
 - [The Gamma Frame and the Complexified Dirac Algebra of $M_4(\mathbb{C})$](../articles_maths/the-gamma-frame-and-the-complexified-dirac-algebra-of-m4c.html), for the five basis operators as a generating set, the graded basis and the non-canonicity of the frame.
-- [Element and Operator Representations: The Three Actions](element-and-operator-representations-the-three-actions.html), for the left and right actions, the sandwich and the vocabulary of the representations.
+- [Element and Operator Representations: The Three Actions](element-and-operator-representations-the-three-actions.html), for the left and right actions, the two-sided operator and the vocabulary of the representations.
 - Ian R. Porteous, *Clifford Algebras and the Classical Groups*, Cambridge Studies in Advanced Mathematics 50 (Cambridge University Press, 1995), for the Clifford algebra, its even part and the degree grading.
 - Pertti Lounesto, *Clifford Algebras and Spinors* (Cambridge University Press, 2nd ed. 2001), for the Clifford algebra, the minimal left ideals and the representation of the gammas.
 - David Hestenes, *Space-Time Algebra* (Gordon and Breach, 1966), for the geometric reading of the Dirac operator and the even subalgebra as the algebra of spacetime.

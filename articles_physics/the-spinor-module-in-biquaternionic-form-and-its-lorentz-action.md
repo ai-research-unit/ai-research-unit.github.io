@@ -4,7 +4,7 @@
 
 The biquaternion algebra $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ is simple, and it has one simple module. The Lorentz group acts on that module by multiplication on one side. Those two facts are the subject of this article.
 
-Two actions are compared throughout. The article [The Material Sector: Four-Vectors, Interval and Lorentz Action](the-material-sector-four-vectors-interval-and-lorentz-action.html) reads the four-vector as an element of the anti-Hermitian sector $\mathbb{B}_{\Phi}$ and the Lorentz group as acting on it by the **Hermitian sandwich**,
+Two actions are compared throughout. The article [The Material Sector: Four-Vectors, Interval and Lorentz Action](the-material-sector-four-vectors-interval-and-lorentz-action.html) reads the four-vector as an element of the anti-Hermitian sector $\mathbb{B}_{\Phi}$ and the Lorentz group as acting on it by the **Hermitian pair**,
 
 $$
 \tilde Q\;\longmapsto\;\tilde U_{\mathrm{lor}}\,\tilde Q\,\tilde U_{\mathrm{lor}}{}^{*}.
@@ -16,7 +16,7 @@ $$
 \tilde X\;\longmapsto\;\tilde U_{\mathrm{lor}}\,\tilde X .
 $$
 
-The difference is not a matter of notation. The element $-e_t$ acts trivially by the sandwich on $\mathbb{B}_{\Phi}$ and as minus the identity by the one-sided action, so the four-vector action descends to the Lorentz group and the one-sided action does not. The one-sided action is a representation of the double cover.
+The difference is not a matter of notation. The element $-e_t$ acts trivially by the two-sided operator on $\mathbb{B}_{\Phi}$ and as minus the identity by the one-sided action, so the four-vector action descends to the Lorentz group and the one-sided action does not. The one-sided action is a representation of the double cover.
 
 **The field is an element of the algebra.** An element multiplies an element, and the module structure is the multiplication of the algebra; no array and no list of components enters the statement. The field carries four complex numbers, and they are the coefficients of one element.
 
@@ -80,7 +80,7 @@ The subgroups relevant to the series sit inside it as follows.
 
 A boost is Hermitian and satisfies $\tilde U_{\Psi,\mathrm b}^{*}=\tilde U_{\Psi,\mathrm b}$; boosts do not form a subgroup, because the product of two non-collinear boosts is a boost and a rotation. A rotation is a real quaternion, and the rotations form the subgroup $SU(2)=SL(2,\mathbb{C})\cap U(2)$.
 
-**The sandwich.** The action on the four-vector sector is
+**The two-sided operator.** The action on the four-vector sector is
 
 $$
 \pi:\;SL(2,\mathbb{C})\longrightarrow SO^{+}(1,3),\qquad
@@ -93,7 +93,7 @@ $$
 \ker\pi=\{\pm e_t\}\cong\mathbb{Z}/2\mathbb{Z},
 $$
 
-since $-e_t$ is central and the two signs cancel in the sandwich, $(-\tilde U_{\mathrm{lor}})\tilde Q(-\tilde U_{\mathrm{lor}})^{*}=\tilde U_{\mathrm{lor}}\tilde Q\tilde U_{\mathrm{lor}}{}^{*}$ for every $\tilde Q$. Hence $\pi$ is two-to-one onto the proper orthochronous Lorentz group, and $SL(2,\mathbb{C})$ is its double cover.
+since $-e_t$ is central and the two signs cancel in the two-sided operator, $(-\tilde U_{\mathrm{lor}})\tilde Q(-\tilde U_{\mathrm{lor}})^{*}=\tilde U_{\mathrm{lor}}\tilde Q\tilde U_{\mathrm{lor}}{}^{*}$ for every $\tilde Q$. Hence $\pi$ is two-to-one onto the proper orthochronous Lorentz group, and $SL(2,\mathbb{C})$ is its double cover.
 
 **The one-sided action is faithful.** On the module the same element acts by
 
@@ -101,7 +101,7 @@ $$
 (-e_t)\tilde X=-\tilde X ,
 $$
 
-so $\tilde U_{\mathrm{lor}}$ and $-\tilde U_{\mathrm{lor}}$ act differently on every field. The defining representation therefore does not descend to $SO^{+}(1,3)$: it is a genuine representation of the double cover. That is the exact sense in which the one-sided action and the sandwich differ by the double cover.
+so $\tilde U_{\mathrm{lor}}$ and $-\tilde U_{\mathrm{lor}}$ act differently on every field. The defining representation therefore does not descend to $SO^{+}(1,3)$: it is a genuine representation of the double cover. That is the exact sense in which the one-sided action and the two-sided operator differ by the double cover.
 
 ## The Lorentz Action on the Module
 
@@ -137,7 +137,7 @@ $$
 \qquad \vec u_{\mathrm r}^{\,2}=-e_t .
 $$
 
-The two displays are the two signs of the square, and neither needs an array. A rotation by $2\pi$ gives $\tilde u_{\mathrm r}=-e_t$: it is the identity by the sandwich and minus the identity on the module. A rotation by $4\pi$ is the identity on both.
+The two displays are the two signs of the square, and neither needs an array. A rotation by $2\pi$ gives $\tilde u_{\mathrm r}=-e_t$: it is the identity by the two-sided operator and minus the identity on the module. A rotation by $4\pi$ is the identity on both.
 
 ### The Generators
 
@@ -233,7 +233,7 @@ $$
 \tilde R_\Psi\longmapsto\tilde U_{\mathrm{lor}}\tilde R_\Psi\tilde U_{\mathrm{lor}}{}^{*}.
 $$
 
-The element $\tilde R_\Psi$ is Hermitian for every pair, and the sandwich carries it to the sandwich of the transformed pair, so the map is equivariant under the whole group. It is the algebraic form of the map from a pair of fields to a four-vector, and the four-vector is the element $i\tilde R_\Psi$ of $\mathbb{B}_{\Phi}$.
+The element $\tilde R_\Psi$ is Hermitian for every pair, and the two-sided operator carries it to the two-sided operator of the transformed pair, so the map is equivariant under the whole group. It is the algebraic form of the map from a pair of fields to a four-vector, and the four-vector is the element $i\tilde R_\Psi$ of $\mathbb{B}_{\Phi}$.
 
 **The single field gives a null element.** For $\tilde Y=\tilde X$ the element is $\tilde X\tilde X^{*}$, it is Hermitian, and it is null: its quaternionic norm vanishes, because a product of two zero divisors is a zero divisor. Its scalar part is half the Hermitian norm of the field,
 
@@ -251,11 +251,11 @@ which is the statement that the four-vector of one field lies on the light cone.
 
 **The three surfaces of the source.** The sphere, the two-sheeted hyperboloid and the single-sheeted one are the images of the level sets of the three forms under this map, read with the three signatures. The source models them with its own arrays, and that modelling is recorded in J. D. Simão's article cited in §*Further Reading*; the three forms above are the invariant objects behind the three models.
 
-## One-Sided Action Versus the Sandwich
+## One-Sided Action Versus the Two-Sided Operator
 
 The preceding sections separate two actions that are often conflated. The comparison is worth stating once in a table.
 
-| Question | One-sided action | Hermitian sandwich |
+| Question | One-sided action | Hermitian pair |
 |---|---|---|
 | Object acted on | $\tilde X\in\mathbb{B}$ | $\tilde Q\in\mathbb{B}_{\Phi}$ |
 | Action | $\tilde X\mapsto\tilde U_{\mathrm{lor}}\tilde X$ | $\tilde Q\mapsto\tilde U_{\mathrm{lor}}\tilde Q\tilde U_{\mathrm{lor}}{}^{*}$ |
@@ -267,7 +267,7 @@ The preceding sections separate two actions that are often conflated. The compar
 
 The entries are not a list of conventions; they are the content of the double cover. The elements $\tilde U_{\mathrm{lor}}$ and $-\tilde U_{\mathrm{lor}}$ describe the same Lorentz transformation of every four-vector, and opposite transformations of every field. A representation of $SO^{+}(1,3)$ cannot see the sign; a representation of $SL(2,\mathbb{C})$ can.
 
-A common mistake is to "fix" the one-sided action by composing it with the sandwich, in the hope of making it two-sided. That composition changes the representation: it multiplies the number of factors by two, and it carries the field into the algebra. The field transforms in $(\tfrac12,0)$; an element $\tilde U_{\mathrm{lor}}\tilde Q\tilde U_{\mathrm{lor}}{}^{*}$ transforms in $(\tfrac12,0)\otimes(0,\tfrac12)=(\tfrac12,\tfrac12)$, which is the complexified vector representation, and the four-vector is its Hermitian slice. The one-sided action is therefore not a vector action in disguise; it is the fundamental action from which the vector action is built by tensor product.
+A common mistake is to "fix" the one-sided action by composing it with the two-sided operator, in the hope of making it two-sided. That composition changes the representation: it multiplies the number of factors by two, and it carries the field into the algebra. The field transforms in $(\tfrac12,0)$; an element $\tilde U_{\mathrm{lor}}\tilde Q\tilde U_{\mathrm{lor}}{}^{*}$ transforms in $(\tfrac12,0)\otimes(0,\tfrac12)=(\tfrac12,\tfrac12)$, which is the complexified vector representation, and the four-vector is its Hermitian slice. The one-sided action is therefore not a vector action in disguise; it is the fundamental action from which the vector action is built by tensor product.
 
 The composition laws make the same point. For elements of norm one,
 
@@ -284,9 +284,9 @@ Both are group actions; they are actions on different objects, and neither reduc
 
 The one-sided action is not a device of this article. It is the multiplication of the algebra, and the algebra acts on itself on the left whatever else is written.
 
-**A sandwich has three factors and a module action has two.** A sandwich is a product of three: one factor on each side of the field. A module action is a product of two: one factor on one side. The difference is the difference between an endomorphism of a module and an endomorphism of the algebra, and the two are not the same object. That is why the sandwich acts on $\mathbb{B}_{\Phi}$ and the one-sided action acts on the module, and why neither can be read as the other.
+**A two-sided operator has three factors and a module action has two.** A two-sided operator is a product of three: one factor on each side of the field. A module action is a product of two: one factor on one side. The difference is the difference between an endomorphism of a module and an endomorphism of the algebra, and the two are not the same object. That is why the two-sided operator acts on $\mathbb{B}_{\Phi}$ and the one-sided action acts on the module, and why neither can be read as the other.
 
-**Each action has its own invariant subspace.** The sandwich carries $\mathbb{B}_{\Phi}$ into itself, because the Hermitian conjugate of an anti-Hermitian element is anti-Hermitian and the star reverses the order. The one-sided action carries each value into itself, because a left multiplication keeps the value. Each action has the invariant subspace it deserves, and the two invariant subspaces are different.
+**Each action has its own invariant subspace.** The two-sided operator carries $\mathbb{B}_{\Phi}$ into itself, because the Hermitian conjugate of an anti-Hermitian element is anti-Hermitian and the star reverses the order. The one-sided action carries each value into itself, because a left multiplication keeps the value. Each action has the invariant subspace it deserves, and the two invariant subspaces are different.
 
 **Equal real dimension, different kind.** Both actions are of four real dimensions, and they differ in kind. The vector action is a real form: it is real four-dimensional, and its complexification is $S\otimes\bar S=(\tfrac12,\tfrac12)$, of complex dimension four. The one-sided action is genuinely complex two-dimensional, and it carries no invariant real structure, because such a structure would be an isomorphism $S\cong\bar S$ and the two labels are inequivalent. Equal real dimension, different kind.
 
@@ -372,11 +372,11 @@ The module is the unique simple module of $\mathbb{B}\cong M_2(\mathbb{C})$. It 
 
 - **The algebra is simple.** It has one simple module, of complex dimension two, and the regular module is the direct sum of two copies of it. The field of the article is an element of the algebra, and the algebra acts on it by the product $\tilde a\tilde X$.
 - **The two copies are the two values.** Every element is the sum of one part of each value, each part is of complex dimension two, and only the zero element is both. A product takes the value of its right factor, and a left multiplication keeps the value.
-- **The action is one-sided.** $\tilde X\mapsto\tilde U_{\mathrm{lor}}\tilde X$; the four-vector action is the sandwich $\tilde Q\mapsto\tilde U_{\mathrm{lor}}\tilde Q\tilde U_{\mathrm{lor}}{}^{*}$.
+- **The action is one-sided.** $\tilde X\mapsto\tilde U_{\mathrm{lor}}\tilde X$; the four-vector action is the two-sided operator $\tilde Q\mapsto\tilde U_{\mathrm{lor}}\tilde Q\tilde U_{\mathrm{lor}}{}^{*}$.
 - **The double cover is the kernel.** $\ker\pi=\{\pm e_t\}$ acts trivially on $\mathbb{B}_{\Phi}$ and as $-\mathrm{id}$ on the module; the one-sided action is faithful, the vector action is not.
 - **The two halves are $S$ and $\bar S$.** They are the two labels $(\tfrac12,0)$ and $(0,\tfrac12)$, the second carrying the action of $\bar{\tilde U}_{\mathrm{lor}}$. They are not the two values of one element: the algebra is simple, both values are copies of $S$, and the conjugate module is not a module for the algebra.
 - **The module carries four invariant forms.** The quaternionic form is invariant under the whole group and pairs one value with the other; the Hermitian form $h$ is positive definite and invariant exactly on the compact $SU(2)$; the indefinite form $[\,\cdot\,|\,\cdot\,]$ is invariant exactly on the stabiliser of a direction, the group $SU(1,1)$; and $h$ with the conjugate action on the second factor pairs the two labels.
-- **The map to the Hermitian sector.** A pair of fields gives the Hermitian element $\tfrac12(\tilde X\tilde Y^{*}+\tilde Y\tilde X^{*})$, equivariant under the sandwich, and a single field gives a null Hermitian element whose scalar part is half its Hermitian norm. The vector action is the tensor square of the one-sided action.
+- **The map to the Hermitian sector.** A pair of fields gives the Hermitian element $\tfrac12(\tilde X\tilde Y^{*}+\tilde Y\tilde X^{*})$, equivariant under the two-sided operator, and a single field gives a null Hermitian element whose scalar part is half its Hermitian norm. The vector action is the tensor square of the one-sided action.
 
 What the article does **not** supply is a dynamics. It supplies the carrier, the action, the invariant forms and the map to four-vectors; the Dirac equation, the mass terms and the gauge couplings are the subjects of the companion articles.
 
@@ -394,7 +394,7 @@ What the article does **not** supply is a dynamics. It supplies the carrier, the
 | $\tilde U_{\mathrm{lor}}$ | Element of norm one, $SL(2,\mathbb{C})$ |
 | $\tilde X\mapsto\tilde U_{\mathrm{lor}}\tilde X$ | The one-sided action on the module |
 | $\tilde X\mapsto\bar{\tilde U}_{\mathrm{lor}}\tilde X$ | The conjugate action on $\bar S$ |
-| $\tilde Q\mapsto\tilde U_{\mathrm{lor}}\tilde Q\tilde U_{\mathrm{lor}}{}^{*}$ | The Hermitian sandwich on $\mathbb{B}_{\Phi}$ |
+| $\tilde Q\mapsto\tilde U_{\mathrm{lor}}\tilde Q\tilde U_{\mathrm{lor}}{}^{*}$ | The Hermitian pair on $\mathbb{B}_{\Phi}$ |
 | $\langle\tilde X,\tilde Y\rangle_{\natural}$ | The quaternionic form; the invariant bilinear form of the module |
 | $h(\tilde X,\tilde Y)=2\,\mathrm{Sc}(\tilde X^{*}\tilde Y)$ | The positive definite Hermitian form of a value; invariant on $SU(2)$ |
 | $[X\,\vert\,Y]=2\,\mathrm{Sc}(\tilde X^{*}\tilde U_{\mathrm{ax}}\tilde Y)$, $\tilde U_{\mathrm{ax}}=i\vec e_z$ | The indefinite Hermitian form of a value; invariant on the stabiliser of $\tilde U_{\mathrm{ax}}$, $SU(1,1)$ |

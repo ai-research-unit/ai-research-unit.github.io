@@ -4,9 +4,9 @@
 
 A Hermitian algebra carries an involution and a form, and the algebraic theory of that layer is in Part I. This article is its topological companion: it owns the completion-level operator theory, where the involution, the adjoint and the two-sided operators are read as operators on a Hilbert space.
 
-Three things happen at the completion that cannot happen on the algebra alone. The involution is a bounded adjoint operation on the algebra but only a closable antilinear operator on the completion, and the operator recording the difference is the modular operator. The sandwich is bounded for the form and for the completion at once, and the comparison of its two adjoints is again the modular operator. And the intertwiners of the left representation form the commutant, on which the modular conjugation turns the adjoint into the involution of the algebra.
+Three things happen at the completion that cannot happen on the algebra alone. The involution is a bounded adjoint operation on the algebra but only a closable antilinear operator on the completion, and the operator recording the difference is the modular operator. The two-sided operator is bounded for the form and for the completion at once, and the comparison of its two adjoints is again the modular operator. And the intertwiners of the left representation form the commutant, on which the modular conjugation turns the adjoint into the involution of the algebra.
 
-The material below was moved here from the Part I articles, whose algebraic statements remain there: *Hermitian Adjoints on a Hermitian Algebra*, *The Adjoint of the Left and the Right Multiplication*, *The Adjoint of the Sandwich on a Hermitian Algebra*, *The Two-Sided Operators on a Hermitian Algebra*, *The Adjoint of the Left Multiplication on a Hermitian Algebra* and *Adjoints of the Intertwiners of a Hermitian Algebra*. The adjoint of an operator under a Hermitian form is *The Adjoint under a Hermitian Form*, the polar decomposition of an operator of the form is *The Polar Decomposition of an Operator of the Form*, and the adjoint on a module is *The Hermitian Adjoint on a Hermitian Module*; none of those is re-derived here. The conventions are those of *Hermitian Algebras*: the algebra is $A$ with involution $\dagger$ and form $\langle\cdot,\cdot\rangle$, the completion is $H$ with cyclic vector $\zeta=\iota(1)$, and $\jmath$ is the modular conjugation.
+The material below was moved here from the Part I articles, whose algebraic statements remain there: *Hermitian Adjoints on a Hermitian Algebra*, *The Adjoint of the Left and the Right Multiplication*, *The Adjoint of the Two-Sided Operator on a Hermitian Algebra*, *The Two-Sided Operators on a Hermitian Algebra*, *The Adjoint of the Left Multiplication on a Hermitian Algebra* and *Adjoints of the Intertwiners of a Hermitian Algebra*. The adjoint of an operator under a Hermitian form is *The Adjoint under a Hermitian Form*, the polar decomposition of an operator of the form is *The Polar Decomposition of an Operator of the Form*, and the adjoint on a module is *The Hermitian Adjoint on a Hermitian Module*; none of those is re-derived here. The conventions are those of *Hermitian Algebras*: the algebra is $A$ with involution $\dagger$ and form $\langle\cdot,\cdot\rangle$, the completion is $H$ with cyclic vector $\zeta=\iota(1)$, and $\jmath$ is the modular conjugation.
 
 ## The Involution on the Completion
 
@@ -38,7 +38,7 @@ and consequently $\jmath\bar L_x^{*}\jmath = \bar R_x$: the modular conjugation 
 
 ## The Modular Operator
 
-**Proposition (the sandwich commutes with the modular conjugation).** For every $x$ the sandwich is invariant under the modular conjugation of the standard form,
+**Proposition (the two-sided operator commutes with the modular conjugation).** For every $x$ the two-sided operator is invariant under the modular conjugation of the standard form,
 
 $$
 \jmath\,\bar\mathrm{Sd}_x\,\jmath = \bar\mathrm{Sd}_x .
@@ -48,15 +48,15 @@ So the two-sided operator is unchanged by the modular conjugation, which exchang
 
 **Proof.** Compose the two exchange identities established above.
 
-**Corollary (the sandwich is an inner automorphism exactly for invertible parameters).** A sandwich $\mathrm{Sd}_x$ with $x$ invertible is the inner automorphism $\mathrm{Ad}_x$ of the algebra, and it preserves the form exactly when $x$ is unitary, in which case $x^{-1} = x^{\dagger}$; the correspondence $x\mapsto\mathrm{Sd}_x$ is a homomorphism of the unitary group onto the group of inner automorphisms of the form-preserving kind.
+**Corollary (the two-sided operator is an inner automorphism exactly for invertible parameters).** A two-sided operator $\mathrm{Sd}_x$ with $x$ invertible is the inner automorphism $\mathrm{Ad}_x$ of the algebra, and it preserves the form exactly when $x$ is unitary, in which case $x^{-1} = x^{\dagger}$; the correspondence $x\mapsto\mathrm{Sd}_x$ is a homomorphism of the unitary group onto the group of inner automorphisms of the form-preserving kind.
 
 **Proof.** Multiplicativity is associativity of the product; preservation of the form is the unitarity condition; the inverse of a unitary element is its involution.
 
-**Proposition (the modular flow).** The modular automorphism group $\sigma_t(a) = \Delta^{it}a\Delta^{-it}$ is implemented by the powers of the modular operator, and the modular conjugation inverts it, $\jmath\Delta^{it}\jmath = \Delta^{-it}$. The flow is generally **outer**: a sandwich realises an automorphism of the algebra only through an element of the algebra, and $\Delta^{it}$ is not such an element unless the algebra contains it.
+**Proposition (the modular flow).** The modular automorphism group $\sigma_t(a) = \Delta^{it}a\Delta^{-it}$ is implemented by the powers of the modular operator, and the modular conjugation inverts it, $\jmath\Delta^{it}\jmath = \Delta^{-it}$. The flow is generally **outer**: a two-sided operator realises an automorphism of the algebra only through an element of the algebra, and $\Delta^{it}$ is not such an element unless the algebra contains it.
 
 **Proof.** The inversion is the modular conjugation theorem of *The Modular Operator and Tomita-Takesaki Theory*; the outerness is that $\Delta^{it}$ is defined through the modular operator and not through an element of the algebra.
 
-**Remark (where the two theories of operators meet).** The sandwiches are the two-sided operators implemented by elements, that is, the inner automorphisms; the modular flow is implemented by the modular operator and is generally outer. The two theories meet at the invariance of the sandwich under the modular conjugation, which is the operator form of the exchange between the algebra and its commutant, and they separate at the outerness of the flow.
+**Remark (where the two theories of operators meet).** The two-sided operators are the two-sided operators implemented by elements, that is, the inner automorphisms; the modular flow is implemented by the modular operator and is generally outer. The two theories meet at the invariance of the two-sided operator under the modular conjugation, which is the operator form of the exchange between the algebra and its commutant, and they separate at the outerness of the flow.
 
 ## The Modular Conjugation
 
@@ -72,9 +72,9 @@ So the modular conjugation exchanges the two factors of a two-sided operator and
 
 **Corollary (the fixed algebra of the conjugation).** The operators fixed by $T\mapsto\jmath T\jmath$ form the commutant of the pair, and the two-sided operators lie in it: so $\mathrm{Sd}_x$ belongs to the commutant of the algebra generated by the modular conjugation and the conjugation-invariant elements.
 
-**Proof.** The fixed set of an involution is a subalgebra; the sandwiches lie in it by the theorem.
+**Proof.** The fixed set of an involution is a subalgebra; the two-sided operators lie in it by the theorem.
 
-**Remark (why the invariance is structural).** The invariance is the operator statement that a two-sided object depends on an element and its involution only through the pair, and it is the reason the modular conjugation is the natural symmetry of the theory of two-sided operators: the sandwiches are exactly the operators whose left and right parts are exchanged by the conjugation without changing the operator.
+**Remark (why the invariance is structural).** The invariance is the operator statement that a two-sided object depends on an element and its involution only through the pair, and it is the reason the modular conjugation is the natural symmetry of the theory of two-sided operators: the two-sided operators are exactly the operators whose left and right parts are exchanged by the conjugation without changing the operator.
 
 ## The Standard Form and the Self-Duality
 
@@ -94,11 +94,11 @@ $$
 
 the modular conjugation fixes $P$ pointwise in the sense $\jmath P = P$, and $\mathrm{Sd}_xP\subseteq P$ for every $x\in\mathcal{M}$.
 
-**Proof.** The self-duality is the cone theorem of the modular theory: $P^{\natural}\subseteq P$ because a vector in the dual cone is a limit of positive elements applied to $\zeta$, and $P\subseteq P^{\natural}$ by the positivity of the sandwiches; the invariance $\jmath P = P$ follows from the matrix-valued version of $\jmath\mathrm{Sd}_x\jmath = \mathrm{Sd}_x$, which is $\jmath x\jmath = x^{*}$ acting on the cone; and the invariance of the cone under the sandwiches is the stabilisation of the positive cone under inner conjugation.
+**Proof.** The self-duality is the cone theorem of the modular theory: $P^{\natural}\subseteq P$ because a vector in the dual cone is a limit of positive elements applied to $\zeta$, and $P\subseteq P^{\natural}$ by the positivity of the two-sided operators; the invariance $\jmath P = P$ follows from the matrix-valued version of $\jmath\mathrm{Sd}_x\jmath = \mathrm{Sd}_x$, which is $\jmath x\jmath = x^{*}$ acting on the cone; and the invariance of the cone under the two-sided operators is the stabilisation of the positive cone under inner conjugation.
 
 **Proposition (two-sided operators preserve the cone).** Every two-sided operator maps $P$ into $P$, and every operator preserving $P$ and commuting with the modular conjugation is a limit of two-sided operators.
 
-**Proof.** The first statement is the last identity of the theorem; the second is the identification of the cone-preserving operators with the positive sandwiches.
+**Proof.** The first statement is the last identity of the theorem; the second is the identification of the cone-preserving operators with the positive two-sided operators.
 
 **Remark (three equivalent structures).** In the standard form the algebra, the commutant and the self-dual cone are three aspects of one structure: the left multiplications generate the algebra, the modular conjugation exchanges it with the commutant, and the cone encodes the positivity that the modular theory needs to replace the missing Cauchy–Schwarz inequality. The two-sided operators are the maps that respect all three, which is why they are the natural morphisms of the standard form.
 
@@ -243,7 +243,7 @@ is an antilinear involution of the operator algebra that maps the commutant onto
 
 ## Summary
 
-The involution of a Hermitian algebra is a bounded adjoint operation on the algebra and a closable antilinear operator on the completion, bounded exactly when the form is tracial; its closure is the **Tomita operator** $S(x\zeta)=x^{\dagger}\zeta$, whose polar decomposition $\bar S=J\Delta^{1/2}$ produces the modular conjugation and the modular operator. The **modular conjugation** exchanges the two sides, $\jmath\bar L_x\jmath=\bar R_{x^{\dagger}}$, fixes every two-sided operator, $\jmath\bar\mathrm{Sd}_x\jmath=\bar\mathrm{Sd}_x$, and realises the standard form $(\mathcal{M},H,\jmath,P)$ with its self-dual cone $P=P^{\natural}$. The **commutant** of the left representation is the algebra of intertwiners, generated by the right multiplications, and the modular transpose $T\mapsto T^{\flat}=\jmath T^{*}\jmath$ carries it onto the algebra; the polar decomposition of a closed intertwiner stays inside the class. The algebraic counterparts of all of these — the adjoint axiom, the sandwich and its adjoint, the intertwiners and their adjoints, the self-adjoint and unitary elements — are in the Part I articles named in the introduction.
+The involution of a Hermitian algebra is a bounded adjoint operation on the algebra and a closable antilinear operator on the completion, bounded exactly when the form is tracial; its closure is the **Tomita operator** $S(x\zeta)=x^{\dagger}\zeta$, whose polar decomposition $\bar S=J\Delta^{1/2}$ produces the modular conjugation and the modular operator. The **modular conjugation** exchanges the two sides, $\jmath\bar L_x\jmath=\bar R_{x^{\dagger}}$, fixes every two-sided operator, $\jmath\bar\mathrm{Sd}_x\jmath=\bar\mathrm{Sd}_x$, and realises the standard form $(\mathcal{M},H,\jmath,P)$ with its self-dual cone $P=P^{\natural}$. The **commutant** of the left representation is the algebra of intertwiners, generated by the right multiplications, and the modular transpose $T\mapsto T^{\flat}=\jmath T^{*}\jmath$ carries it onto the algebra; the polar decomposition of a closed intertwiner stays inside the class. The algebraic counterparts of all of these — the adjoint axiom, the two-sided operator and its adjoint, the intertwiners and their adjoints, the self-adjoint and unitary elements — are in the Part I articles named in the introduction.
 
 ## Summary of Notation
 

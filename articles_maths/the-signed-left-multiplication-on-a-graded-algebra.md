@@ -9,7 +9,7 @@ $$
 \ell_a:A\longrightarrow A,\qquad \ell_a(x)=a\,\alpha(x),
 $$
 
-the left multiplication with the argument twisted by $\alpha$. It is the signed sandwich of *The Signed Sandwich on a Graded Algebra* with the right factor equal to the unit, $\ell_a=\Sigma^{\alpha}_{a,1}=L_a\circ\alpha$, and it is the one-sided operator that the reflections of *Reflections as Signed Two-Sided Operators on a Graded Algebra* use as their building block. This article treats the one-sided signed action: its definition and its relation to the unsigned left multiplication $L_a$, the composition law that makes a product of two signed left multiplications an **unsigned** left multiplication, the coset structure of the family $\{\ell_a\}$ in the algebra of operators, the parity of the operators, and the elements they fix. The graded algebra and the grade involution are *Superalgebras and Graded Structures*; the module-theoretic version of an action is *The Graded Action on a Module over a Graded Algebra*, and the adjoint of $\ell_a$ is *The Signed Adjoint of the Left Multiplication on a Graded Algebra* in the `- * Operator Theory` group, deferred here.
+the left multiplication with the argument twisted by $\alpha$. It is the signed two-sided operator of *The Signed Two-Sided Operator on a Graded Algebra* with the right factor equal to the unit, $\ell_a=\Sigma^{\alpha}_{a,1}=L_a\circ\alpha$, and it is the one-sided operator that the reflections of *Reflections as Signed Two-Sided Operators on a Graded Algebra* use as their building block. This article treats the one-sided signed action: its definition and its relation to the unsigned left multiplication $L_a$, the composition law that makes a product of two signed left multiplications an **unsigned** left multiplication, the coset structure of the family $\{\ell_a\}$ in the algebra of operators, the parity of the operators, and the elements they fix. The graded algebra and the grade involution are *Superalgebras and Graded Structures*; the module-theoretic version of an action is *The Graded Action on a Module over a Graded Algebra*, and the adjoint of $\ell_a$ is *The Signed Adjoint of the Left Multiplication on a Graded Algebra* in the `- * Operator Theory` group, deferred here.
 
 The base is a commutative ring $R$ with $1$, $A=A^0\oplus A^1$ is a $\mathbb{Z}/2$-graded associative algebra with grade involution $\alpha$, and the operators are written $L_a$ (unsigned left multiplication), $R_b$ (unsigned right multiplication) and $\ell_a$ (signed left multiplication). The article reasons with the ring structure and the grading only.
 
@@ -27,7 +27,7 @@ $$
 \boxed{\;\ell_a=L_a\circ\alpha\;},
 $$
 
-and the signed sandwich is recovered from it, $\Sigma^{\alpha}_{a,b}=\ell_a\circ R_{\alpha(b)}$.
+and the signed two-sided operator is recovered from it, $\Sigma^{\alpha}_{a,b}=\ell_a\circ R_{\alpha(b)}$.
 
 **Proof.** Both sides of the first display send $x$ to $a\alpha(x)$; for the second, $\ell_a(R_{\alpha(b)}(x))=\ell_a(x\alpha(b))=a\alpha(x)\alpha(\alpha(b))=a\alpha(x)b=\Sigma^{\alpha}_{a,b}(x)$.
 
@@ -85,7 +85,7 @@ On a $\mathbb{Z}/2$-graded algebra $A$ with grade involution $\alpha$, the **sig
 | $\alpha$ | the grade involution |
 | $L_a$, $R_b$ | unsigned left and right multiplication |
 | $\ell_a(x)=a\alpha(x)$ | the signed left multiplication |
-| $\Sigma^{\alpha}_{a,b}$ | the signed sandwich, $\ell_a R_{\alpha(b)}$ |
+| $\Sigma^{\alpha}_{a,b}$ | the signed two-sided operator, $\ell_a R_{\alpha(b)}$ |
 | $\mathrm{Fix}(\ell_a)$ | the set of $x$ with $a\alpha(x)=x$ |
 
 ## Further Reading

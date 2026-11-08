@@ -5,7 +5,7 @@
 
 A module over a group that carries a grading may be acted on in a way that respects the grading or in a way that twists it, and the sign rule that governs the passage between the two is the group form of the Koszul rule of a graded algebra. This article fixes the notion of a graded module over a group, states the compatibility of the action with the grading, derives the sign rule that the compatibility imposes, and identifies the graded action with the module-theoretic shadow of the signed operators of the category.
 
-The article assumes the elementary theory of groups from *Groups*, the group algebra, its module theory and the augmentation from *Group Algebras*, and the signed left multiplication and signed sandwich from *The Signed Left Multiplication on a Group* and *The Signed Sandwich on a Group*. It uses no distance, no norm and no form; a grading is a direct sum decomposition, not a metric.
+The article assumes the elementary theory of groups from *Groups*, the group algebra, its module theory and the augmentation from *Group Algebras*, and the signed left multiplication and signed two-sided operator from *The Signed Left Multiplication on a Group* and *The Signed Two-Sided Operator on a Group*. It uses no distance, no norm and no form; a grading is a direct sum decomposition, not a metric.
 
 ## Graded Modules
 
@@ -95,7 +95,7 @@ Hence the signed action is a **projective action** with cocycle the **Koszul sig
 
 The graded action is the module-theoretic shadow of the signed operators of this category, in the same way that the plain action of a group on a module is the shadow of the left regular representation.
 
-**Remark.** When the group carries a grade involution $\alpha$ rather than a degree homomorphism, the twisting of an action by $\alpha$, $g\cdot m\mapsto \alpha(g)\cdot m$, is the module-theoretic counterpart of the signed operators $\ell_a$ and $\Sigma^{\alpha}_{a,b}$ of *The Signed Left Multiplication on a Group* and *The Signed Sandwich on a Group*. The two structures are not the same: a degree is a homomorphism to $\{\pm1\}$, whereas a grade involution is an automorphism of order two, and a group can carry one without the other. What they share is the effect on a graded module, the insertion of a sign that distinguishes the two parts, and it is that effect that the sign rule records.
+**Remark.** When the group carries a grade involution $\alpha$ rather than a degree homomorphism, the twisting of an action by $\alpha$, $g\cdot m\mapsto \alpha(g)\cdot m$, is the module-theoretic counterpart of the signed operators $\ell_a$ and $\Sigma^{\alpha}_{a,b}$ of *The Signed Left Multiplication on a Group* and *The Signed Two-Sided Operator on a Group*. The two structures are not the same: a degree is a homomorphism to $\{\pm1\}$, whereas a grade involution is an automorphism of order two, and a group can carry one without the other. What they share is the effect on a graded module, the insertion of a sign that distinguishes the two parts, and it is that effect that the sign rule records.
 
 **Remark (the adjoint action).** The adjoint action of a graded module over a group, its compatibility with the grading and the sign rule it imposes are *The Graded Adjoint Action on a Module over a Group*, in the involutive part of the category; it is the case in which the twisted operator is the adjoint of the one considered here.
 

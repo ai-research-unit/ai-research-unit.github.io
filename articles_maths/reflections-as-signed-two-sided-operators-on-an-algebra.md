@@ -8,9 +8,9 @@ $$
 \rho_u(x) = u\,\alpha(x)\,u^{-1},
 $$
 
-one for each unit $u$ whose product $u\,\alpha(u)$ with its twist is central. Each such $\rho_u$ is a **signed two-sided operator**, the signed sandwich $\mathcal{T}_{u,u^{-1}}$ of *The Signed Sandwich on an Algebra*, and it is an automorphism of the algebra of order two. The present article studies the correspondence between these reflections and the units that produce them, computes the fixed subalgebra and the negated part, and records the cases in which the correspondence fails.
+one for each unit $u$ whose product $u\,\alpha(u)$ with its twist is central. Each such $\rho_u$ is a **signed two-sided operator**, the signed two-sided operator $\mathcal{T}_{u,u^{-1}}$ of *The Signed Two-Sided Operator on an Algebra*, and it is an automorphism of the algebra of order two. The present article studies the correspondence between these reflections and the units that produce them, computes the fixed subalgebra and the negated part, and records the cases in which the correspondence fails.
 
-Throughout, $k$ is a field and $A$ is a unital associative $k$-algebra with an involutive automorphism $\alpha$, $\alpha^2 = \mathrm{id}$; the grade involution of a $\mathbb{Z}/2$-grading is the standard instance and the grading theory belongs to *Superalgebras and Graded Structures*. The signed sandwich and the signed conjugation are those of *The Signed Sandwich on an Algebra*, the automorphisms and the inner automorphisms are those of *Automorphisms and Derivations of Algebras*, and the operator-theoretic conventions are those of the group `- Operator Theory` of this category.
+Throughout, $k$ is a field and $A$ is a unital associative $k$-algebra with an involutive automorphism $\alpha$, $\alpha^2 = \mathrm{id}$; the grade involution of a $\mathbb{Z}/2$-grading is the standard instance and the grading theory belongs to *Superalgebras and Graded Structures*. The signed two-sided operator and the signed conjugation are those of *The Signed Two-Sided Operator on an Algebra*, the automorphisms and the inner automorphisms are those of *Automorphisms and Derivations of Algebras*, and the operator-theoretic conventions are those of the group `- Operator Theory` of this category.
 
 ## The Reflector
 
@@ -42,9 +42,9 @@ $$
 
 so that $\rho_u$ is an involutive automorphism of $A$. Conversely, if a signed conjugation $\rho_u$ is an involutive automorphism, then $u$ is a reflector.
 
-*Proof.* The signed conjugation is the composite of the automorphisms $\alpha$ and $\iota_u$, hence an automorphism. Its square was computed in *The Signed Sandwich on an Algebra* as $\rho_u^2 = \iota_{u\alpha(u)}$, the inner automorphism by $u\alpha(u)$; the inner automorphism by an element is the identity exactly when the element is central, so $\rho_u^2 = \mathrm{id}$ exactly when $u\alpha(u)$ is central, which is the definition of a reflector. The converse is the same computation read backwards.
+*Proof.* The signed conjugation is the composite of the automorphisms $\alpha$ and $\iota_u$, hence an automorphism. Its square was computed in *The Signed Two-Sided Operator on an Algebra* as $\rho_u^2 = \iota_{u\alpha(u)}$, the inner automorphism by $u\alpha(u)$; the inner automorphism by an element is the identity exactly when the element is central, so $\rho_u^2 = \mathrm{id}$ exactly when $u\alpha(u)$ is central, which is the definition of a reflector. The converse is the same computation read backwards.
 
-**Corollary.** The reflections are exactly the involutive automorphisms of $A$ that are **signed inner**, that is, of the form $\alpha$ composed with an inner automorphism; the word "signed" records the insertion of $\alpha$, and a reflection is neither an inner automorphism in general nor a signed sandwich with arbitrary two factors.
+**Corollary.** The reflections are exactly the involutive automorphisms of $A$ that are **signed inner**, that is, of the form $\alpha$ composed with an inner automorphism; the word "signed" records the insertion of $\alpha$, and a reflection is neither an inner automorphism in general nor a signed two-sided operator with arbitrary two factors.
 
 **Corollary.** The unit $1$ is a reflector — its product $1\cdot\alpha(1) = 1$ with its twist is central — and the reflection it determines is $\rho_1 = \alpha$, the involutive automorphism itself; the family is therefore never empty, and the identity automorphism lies in it exactly when the twist is trivial, $\alpha = \mathrm{id}$.
 
@@ -62,7 +62,7 @@ $$
 \boxed{\;A^+_\rho A^+_\rho \subseteq A^+_\rho, \qquad A^+_\rho A^-_\rho \subseteq A^-_\rho, \qquad A^-_\rho A^+_\rho \subseteq A^-_\rho, \qquad A^-_\rho A^-_\rho \subseteq A^+_\rho\;} .
 $$
 
-*Proof.* The map $\rho$ is an involutive automorphism, so its eigenvalues are $\pm 1$ and the decomposition and the multiplication table are those of the eigenspaces of an involutive automorphism, as in *The Signed Sandwich on an Algebra*. When $2 = 0$ the negated part is zero and the decomposition collapses, since an order-two automorphism is the identity.
+*Proof.* The map $\rho$ is an involutive automorphism, so its eigenvalues are $\pm 1$ and the decomposition and the multiplication table are those of the eigenspaces of an involutive automorphism, as in *The Signed Two-Sided Operator on an Algebra*. When $2 = 0$ the negated part is zero and the decomposition collapses, since an order-two automorphism is the identity.
 
 **Corollary.** A reflection is determined by its fixed subalgebra, equivalently by its negated part: if $\rho$ and $\rho'$ are involutive automorphisms with the same fixed subalgebra, then $\rho = \rho'$.
 
@@ -124,7 +124,7 @@ sends the reflectors to the classes of the reflections. In particular, if every 
 
 **Proposition.** For a unit $u$ that is not a reflector, the signed conjugation $\rho_u$ is an automorphism and its square is the inner automorphism $\iota_{u\alpha(u)} \neq \mathrm{id}$; hence $\rho_u$ has infinite order whenever $u\alpha(u)$ has infinite order as an inner automorphism. Such an operator is a signed two-sided operator but not a reflection.
 
-*Proof.* The square is $\iota_{u\alpha(u)}$ by the computation of *The Signed Sandwich on an Algebra*. If $u\alpha(u)$ is not central, its inner automorphism is not the identity, and the powers of $\rho_u$ are governed by the powers of $u\alpha(u)$; the inner automorphism $\iota_w$ has finite order exactly when some power of $w$ is central, so $\rho_u$ has infinite order when no power of $u\alpha(u)$ is central.
+*Proof.* The square is $\iota_{u\alpha(u)}$ by the computation of *The Signed Two-Sided Operator on an Algebra*. If $u\alpha(u)$ is not central, its inner automorphism is not the identity, and the powers of $\rho_u$ are governed by the powers of $u\alpha(u)$; the inner automorphism $\iota_w$ has finite order exactly when some power of $w$ is central, so $\rho_u$ has infinite order when no power of $u\alpha(u)$ is central.
 
 **Example.** Let $A = M_n(k)$ with $\alpha = \mathrm{id}$ and let $u$ be a noncentral invertible matrix. Then $\rho_u = \iota_u$ is an inner automorphism whose order is the order of the class of $u$ in $A^\times/Z(A)^\times$; for a generic $u$ this order is infinite. The signed conjugation is thus not a reflection, and the reflector condition $u\alpha(u) = u^2 \in Z(A)$, which for $\alpha = \mathrm{id}$ reduces to $u^2$ scalar, is the obstruction.
 
@@ -156,7 +156,7 @@ Let $A = M_n(k)$ and let $D$ be an invertible diagonal matrix with $D^2 = I$; th
 
 ### A Group Algebra with a Parity
 
-Let $A = k[G]$ and let $\chi : G \to \{\pm 1\}$ be a homomorphism, extending to the involutive automorphism $\alpha$ of *The Signed Sandwich on an Algebra*, so that $\alpha(x_h) = \chi(h)x_h$ on a group element. A group element $g$ is a reflector exactly when $\chi(g)\,g^2$ is central, and the reflection acts on a group element by
+Let $A = k[G]$ and let $\chi : G \to \{\pm 1\}$ be a homomorphism, extending to the involutive automorphism $\alpha$ of *The Signed Two-Sided Operator on an Algebra*, so that $\alpha(x_h) = \chi(h)x_h$ on a group element. A group element $g$ is a reflector exactly when $\chi(g)\,g^2$ is central, and the reflection acts on a group element by
 $$
 \rho_g(x_h) = g\,\alpha(x_h)\,g^{-1} = \chi(h)\,x_{ghg^{-1}} = \alpha\bigl(x_{ghg^{-1}}\bigr),
 $$

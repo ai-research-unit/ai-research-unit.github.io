@@ -8,7 +8,7 @@ $$
 \ell^{\alpha}_a = L_a\circ\alpha , \qquad \ell^{\alpha}_a(x) = a\bullet\alpha(x) ,
 $$
 
-the Jordan form of the signed one-sided action of *The Signed Left Multiplication on a Jordan Algebra*, whose associative model is $\ell^{\alpha}_a(x) = a\,\alpha(x)$ on a special algebra $J = A^+$. The present article computes the **adjoint** of this operator with respect to the **natural pairing** of the category, the trace form $T(x,y) = \operatorname{tr}(L_{x\bullet y})$ of *The Adjoint of the Left Multiplication on a Jordan Algebra*, and relates it to the signed sandwich of *The Signed Adjoint Sandwich on a Jordan Algebra*.
+the Jordan form of the signed one-sided action of *The Signed Left Multiplication on a Jordan Algebra*, whose associative model is $\ell^{\alpha}_a(x) = a\,\alpha(x)$ on a special algebra $J = A^+$. The present article computes the **adjoint** of this operator with respect to the **natural pairing** of the category, the trace form $T(x,y) = \operatorname{tr}(L_{x\bullet y})$ of *The Adjoint of the Left Multiplication on a Jordan Algebra*, and relates it to the signed two-sided operator of *The Signed Adjoint Two-Sided Operator on a Jordan Algebra*.
 
 The trace form is associative, $T(x\bullet y,z) = T(x,y\bullet z)$, so the left multiplication is self-adjoint, $L_a^{\dagger} = L_a$, and the grade involution is an isometry, $\alpha^{\dagger} = \alpha$; the adjoint of the composite is therefore the composite of the adjoints in the reverse order, and since $\alpha$ is an automorphism with $\alpha L_a\alpha^{-1} = L_{\alpha(a)}$,
 
@@ -16,9 +16,9 @@ $$
 \bigl(\ell^{\alpha}_a\bigr)^{\dagger} = \bigl(L_a\circ\alpha\bigr)^{\dagger} = \alpha\circ L_a = L_{\alpha(a)}\circ\alpha = \ell^{\alpha}_{\alpha(a)} .
 $$
 
-The adjoint of the signed left multiplication is thus the signed left multiplication by the **image of the parameter under the grade involution**; it is **self-adjoint exactly when $\alpha(a) = a$**, and it is **unitary exactly when the unsigned left multiplication is an involution, $L_a^2 = \mathrm{id}$**, that is, when $a$ is a symmetry. The signed sandwich is the product of a signed and an unsigned one-sided action, $\mathcal{T}^{\alpha}_{a,b} = \rho_b\ell^{\alpha}_a$, and the adjoint of that product is computed from the adjoints of its factors, recovering the rule of the signed adjoint sandwich.
+The adjoint of the signed left multiplication is thus the signed left multiplication by the **image of the parameter under the grade involution**; it is **self-adjoint exactly when $\alpha(a) = a$**, and it is **unitary exactly when the unsigned left multiplication is an involution, $L_a^2 = \mathrm{id}$**, that is, when $a$ is a symmetry. The signed two-sided operator is the product of a signed and an unsigned one-sided action, $\mathcal{T}^{\alpha}_{a,b} = \rho_b\ell^{\alpha}_a$, and the adjoint of that product is computed from the adjoints of its factors, recovering the rule of the signed adjoint two-sided operator.
 
-The article assumes *The Signed Left Multiplication on a Jordan Algebra* for the signed one-sided action, its homogeneity and the fixed elements; *The Signed Adjoint Sandwich on a Jordan Algebra* for the signed sandwich and its adjoint; *The Adjoint of the Left Multiplication on a Jordan Algebra* for the trace form, its associativity and the self-adjointness of $L_a$ and $U_a$; *The Left and Right Multiplication Operators on a Jordan Algebra* for the quadratic representation and the symmetries; and *The Operators on an Algebra* for the ambient endomorphism algebra. Throughout, $J = A^+$ is a special unital Jordan algebra over a commutative ring $R$ in which $2$ is invertible, $\alpha$ is a grade involution of $A$, $L_a$ is the Jordan left multiplication, $\ell^{\alpha}_a = L_a\circ\alpha$ is the signed left multiplication, $T$ is the trace form and ${}^{\dagger}$ its adjoint; no norm, form, distance or geometric reflection occurs.
+The article assumes *The Signed Left Multiplication on a Jordan Algebra* for the signed one-sided action, its homogeneity and the fixed elements; *The Signed Adjoint Two-Sided Operator on a Jordan Algebra* for the signed two-sided operator and its adjoint; *The Adjoint of the Left Multiplication on a Jordan Algebra* for the trace form, its associativity and the self-adjointness of $L_a$ and $U_a$; *The Left and Right Multiplication Operators on a Jordan Algebra* for the quadratic representation and the symmetries; and *The Operators on an Algebra* for the ambient endomorphism algebra. Throughout, $J = A^+$ is a special unital Jordan algebra over a commutative ring $R$ in which $2$ is invertible, $\alpha$ is a grade involution of $A$, $L_a$ is the Jordan left multiplication, $\ell^{\alpha}_a = L_a\circ\alpha$ is the signed left multiplication, $T$ is the trace form and ${}^{\dagger}$ its adjoint; no norm, form, distance or geometric reflection occurs.
 
 ## The Signed Left Multiplication and Its Adjoint
 
@@ -58,19 +58,19 @@ that is, exactly when $a$ is a **symmetry**.
 
 *Proof.* $\ell^{\alpha\dagger}_a\ell^{\alpha}_a = \ell^{\alpha}_{\alpha(a)}\ell^{\alpha}_a = L_{\alpha(a)}\alpha L_a\alpha = L_{\alpha(a)}L_{\alpha(a)}\alpha^2 = L_{\alpha(a)}^2$, and similarly $\ell^{\alpha}_a\ell^{\alpha\dagger}_a = L_a^2$; the two are the identity exactly when $L_a^2 = L_{\alpha(a)}^2 = \mathrm{id}$, which is the symmetry condition.
 
-## Relation to the Signed Sandwich
+## Relation to the Signed Two-Sided Operator
 
-**Theorem.** The signed sandwich is the product of a signed and an unsigned one-sided action, $\mathcal{T}^{\alpha}_{a,b} = \rho_b\ell^{\alpha}_a = \ell_a\rho^{\alpha}_b$, and its adjoint is
+**Theorem.** The signed two-sided operator is the product of a signed and an unsigned one-sided action, $\mathcal{T}^{\alpha}_{a,b} = \rho_b\ell^{\alpha}_a = \ell_a\rho^{\alpha}_b$, and its adjoint is
 
 $$
 \boxed{\;\bigl(\mathcal{T}^{\alpha}_{a,b}\bigr)^{\dagger} = \ell^{\alpha\dagger}_a\rho_b^{\dagger} = \ell^{\alpha}_{\alpha(a)}\rho_{\alpha(b)}\;} ,
 $$
 
-which is the signed sandwich $\Sigma^{\alpha}_{\alpha(a),\alpha(b)}$ after the symmetrisation, in agreement with *The Signed Adjoint Sandwich on a Jordan Algebra*.
+which is the signed two-sided operator $\Sigma^{\alpha}_{\alpha(a),\alpha(b)}$ after the symmetrisation, in agreement with *The Signed Adjoint Two-Sided Operator on a Jordan Algebra*.
 
-*Proof.* The anti-multiplicativity of the adjoint gives $(\mathcal{T}^{\alpha}_{a,b})^{\dagger} = (\rho_b\ell^{\alpha}_a)^{\dagger} = \ell^{\alpha\dagger}_a\rho_b^{\dagger} = \ell^{\alpha}_{\alpha(a)}L_{\alpha(b)}$; the symmetrisation of $\rho_b\ell^{\alpha}_a$ over the outer parameter is the signed sandwich $U_{a,b}\circ\alpha$, and its adjoint is $U_{\alpha(a),\alpha(b)}\circ\alpha$ by *The Signed Adjoint Sandwich on a Jordan Algebra*.
+*Proof.* The anti-multiplicativity of the adjoint gives $(\mathcal{T}^{\alpha}_{a,b})^{\dagger} = (\rho_b\ell^{\alpha}_a)^{\dagger} = \ell^{\alpha\dagger}_a\rho_b^{\dagger} = \ell^{\alpha}_{\alpha(a)}L_{\alpha(b)}$; the symmetrisation of $\rho_b\ell^{\alpha}_a$ over the outer parameter is the signed two-sided operator $U_{a,b}\circ\alpha$, and its adjoint is $U_{\alpha(a),\alpha(b)}\circ\alpha$ by *The Signed Adjoint Two-Sided Operator on a Jordan Algebra*.
 
-**Corollary.** The adjoint of the one-sided layer and the adjoint of the two-sided layer are the same rule at the images of the parameters; the signed left multiplication is thus the one-sided case of the signed sandwich adjoint, exactly as in the associative case of *The Signed Adjoint of the Left Multiplication on a Ring*.
+**Corollary.** The adjoint of the one-sided layer and the adjoint of the two-sided layer are the same rule at the images of the parameters; the signed left multiplication is thus the one-sided case of the signed two-sided operator adjoint, exactly as in the associative case of *The Signed Adjoint of the Left Multiplication on a Ring*.
 
 ## Examples
 
@@ -88,7 +88,7 @@ $$
 \bigl(\ell^{\alpha}_a\bigr)^{\dagger} = \ell^{\alpha}_{\alpha(a)} ,
 $$
 
-because the left multiplication is self-adjoint, $L_a^{\dagger} = L_a$, and the grade involution is an isometry, $\alpha^{\dagger} = \alpha$. It is **self-adjoint exactly when $\alpha(a) = a$**, and **unitary exactly when $L_a^2 = \mathrm{id}$**, that is, when $a$ is a symmetry. The signed sandwich $\mathcal{T}^{\alpha}_{a,b} = \rho_b\ell^{\alpha}_a$ has the adjoint computed from the adjoints of its factors, and its symmetrisation recovers $\Sigma^{\alpha}_{\alpha(a),\alpha(b)}$ of *The Signed Adjoint Sandwich on a Jordan Algebra*; the signed left multiplication is the one-sided case of that rule. The identity involution, the transpose involution and the odd element are the worked examples. No norm, form, distance or geometric reflection occurs.
+because the left multiplication is self-adjoint, $L_a^{\dagger} = L_a$, and the grade involution is an isometry, $\alpha^{\dagger} = \alpha$. It is **self-adjoint exactly when $\alpha(a) = a$**, and **unitary exactly when $L_a^2 = \mathrm{id}$**, that is, when $a$ is a symmetry. The signed two-sided operator $\mathcal{T}^{\alpha}_{a,b} = \rho_b\ell^{\alpha}_a$ has the adjoint computed from the adjoints of its factors, and its symmetrisation recovers $\Sigma^{\alpha}_{\alpha(a),\alpha(b)}$ of *The Signed Adjoint Two-Sided Operator on a Jordan Algebra*; the signed left multiplication is the one-sided case of that rule. The identity involution, the transpose involution and the odd element are the worked examples. No norm, form, distance or geometric reflection occurs.
 
 ## Summary of Notation
 
@@ -100,8 +100,8 @@ because the left multiplication is self-adjoint, $L_a^{\dagger} = L_a$, and the 
 | $(\ell^{\alpha}_a)^{\dagger} = \ell^{\alpha}_{\alpha(a)}$ | Adjoint of the signed left multiplication |
 | $\alpha(a) = a$ | Self-adjointness condition |
 | $L_a^2 = \mathrm{id}$ | Unitarity condition (symmetry) |
-| $\mathcal{T}^{\alpha}_{a,b} = \rho_b\ell^{\alpha}_a$ | Signed sandwich as a product |
-| $(\mathcal{T}^{\alpha}_{a,b})^{\dagger} = \ell^{\alpha}_{\alpha(a)}\rho_{\alpha(b)}$ | Adjoint of the sandwich from the factors |
+| $\mathcal{T}^{\alpha}_{a,b} = \rho_b\ell^{\alpha}_a$ | Signed two-sided operator as a product |
+| $(\mathcal{T}^{\alpha}_{a,b})^{\dagger} = \ell^{\alpha}_{\alpha(a)}\rho_{\alpha(b)}$ | Adjoint of the two-sided operator from the factors |
 
 ## Further Reading
 

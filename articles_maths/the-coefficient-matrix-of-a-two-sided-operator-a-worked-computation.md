@@ -13,7 +13,7 @@ $$
 M_{11}=1,\quad M_{12}=2,\quad M_{22}=1,\quad M_{33}=1,\quad M_{34}=2,\quad M_{44}=1 .
 $$
 
-**The punchline, stated first.** The ordinary rank is $4$, the maximal value. The length is $2$: the matrix is a sum of two two-sided operators, and not of one. The two numbers measure different things, and the ordinary rank gives no information about the length. The coefficient rank does.
+**The punchline, stated first.** The ordinary rank is $4$, the maximal value. The length is $2$: the matrix is a sum of two such operators, and not of one. The two numbers measure different things, and the ordinary rank gives no information about the length. The coefficient rank does.
 
 **The method and its source.** The basis, the orthogonality theorem and the length theorem are *The Two-Sided Operators Method to Build $M_4(\mathbb{C})$*. This article is the computation that accompanies it.
 
@@ -314,6 +314,6 @@ $$
 ## Further Reading
 
 - [The Two-Sided Operators Method to Build $M_4(\mathbb{C})$](the-two-sided-operators-method-to-build-m4c.html), for the sixteen matrices, the multiplication tables, the orthogonality theorem and the length theorem.
-- [Operators Acting 2 Side](operators-acting-2-side.html), for the construction.
+- [Operators Acting on Two Sides](operators-acting-on-two-sides.html), for the construction.
 - [The Matrix Algebra $M_4(\mathbb{C})$](the-matrix-algebra-m4c.html), for the algebra and the matrix units.
 - [The Operators of the Peirce Decomposition of $M_4(\mathbb{C})$](the-operators-of-the-peirce-decomposition-of-m4c.html), for the same operators on the sixteen-dimensional algebra.

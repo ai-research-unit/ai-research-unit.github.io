@@ -2,11 +2,11 @@
 
 ## Introduction
 
-A **reflection** in the algebraic sense is an operator of order two, $r^2 = \mathrm{id}$, $r \ne \mathrm{id}$. On a graded ring the natural operators of order two are the signed two-sided operators of *The Signed Sandwich on a Ring*, the **signed conjugations** $r_u(x) = u\,\alpha(x)\,u^{-1}$; they are operators of order two exactly when the element $u\alpha(u)$ is central, and this is the criterion the present article develops for a Jordan algebra. The signed conjugation is an automorphism of a Jordan algebra, because it is built from an algebra automorphism $\alpha$ and an inner conjugation, both of which preserve the Jordan product; what has to be decided is when it is an **involution**, and the answer is the **correspondence** between the reflections and the elements $u$ whose twisted square $u\alpha(u)$ is central.
+A **reflection** in the algebraic sense is an operator of order two, $r^2 = \mathrm{id}$, $r \ne \mathrm{id}$. On a graded ring the natural operators of order two are the signed two-sided operators of *The Signed Two-Sided Operator on a Ring*, the **signed conjugations** $r_u(x) = u\,\alpha(x)\,u^{-1}$; they are operators of order two exactly when the element $u\alpha(u)$ is central, and this is the criterion the present article develops for a Jordan algebra. The signed conjugation is an automorphism of a Jordan algebra, because it is built from an algebra automorphism $\alpha$ and an inner conjugation, both of which preserve the Jordan product; what has to be decided is when it is an **involution**, and the answer is the **correspondence** between the reflections and the elements $u$ whose twisted square $u\alpha(u)$ is central.
 
-The article defines the signed conjugation on a special Jordan algebra $J = A^+$, proves that it is an automorphism of $J$ and that its square is the inner conjugation by the twisted square $u\alpha(u)$, and derives the correspondence: the signed conjugations are classified by the cosets $uZ(A)^\times$, and the reflections are exactly those with central twisted square. It shows that the reflections do **not** form a group — the composite of two of them is the inner conjugation by $u\alpha(v)$, which is generally not a signed conjugation — but that they generate the inner automorphism group, and it records the **degenerate cases**: a signed conjugation with non-central twisted square is an automorphism of infinite order, not a reflection. Two further identifications are made: the reflection by a symmetry $u = u^{-1}$ coincides with the symmetrised signed sandwich $U_u\circ\alpha$ of *The Signed Sandwich on a Jordan Algebra*, and the reflections of the special Jordan algebra are the operators the inner structure group of *The Left and Right Multiplication Operators on a Jordan Algebra* is built from.
+The article defines the signed conjugation on a special Jordan algebra $J = A^+$, proves that it is an automorphism of $J$ and that its square is the inner conjugation by the twisted square $u\alpha(u)$, and derives the correspondence: the signed conjugations are classified by the cosets $uZ(A)^\times$, and the reflections are exactly those with central twisted square. It shows that the reflections do **not** form a group — the composite of two of them is the inner conjugation by $u\alpha(v)$, which is generally not a signed conjugation — but that they generate the inner automorphism group, and it records the **degenerate cases**: a signed conjugation with non-central twisted square is an automorphism of infinite order, not a reflection. Two further identifications are made: the reflection by a symmetry $u = u^{-1}$ coincides with the symmetrised signed two-sided operator $U_u\circ\alpha$ of *The Signed Two-Sided Operator on a Jordan Algebra*, and the reflections of the special Jordan algebra are the operators the inner structure group of *The Left and Right Multiplication Operators on a Jordan Algebra* is built from.
 
-The article assumes *The Signed Sandwich on a Jordan Algebra* for the signed sandwich, its symmetrisation $\Sigma^{\alpha}_{a,b} = U_{a,b}\circ\alpha$ and the definition of the diagonal signed sandwich $r_u$; *The Signed Sandwich on a Ring* for the criterion $u\alpha(u)$ central in the ring case; *The Left and Right Multiplication Operators on a Jordan Algebra* for the quadratic representation, the symmetries and the inner structure group; and *Jordan Algebras* for the special algebra $A^+$. Throughout, $A$ is a commutative-or-not associative unital $R$-algebra, $\alpha$ is a grade involution of $A$ (an automorphism with $\alpha^2 = \mathrm{id}$), $J = A^+$ is the special Jordan algebra with the halved product, and $c_u$ denotes the signed conjugation by the unit $u$. No form, norm, distance or geometric reflection occurs: an operator of order two is all that "reflection" means here, and the symmetric-space reading is deferred to Part IV.
+The article assumes *The Signed Two-Sided Operator on a Jordan Algebra* for the signed two-sided operator, its symmetrisation $\Sigma^{\alpha}_{a,b} = U_{a,b}\circ\alpha$ and the definition of the diagonal signed two-sided operator $r_u$; *The Signed Two-Sided Operator on a Ring* for the criterion $u\alpha(u)$ central in the ring case; *The Left and Right Multiplication Operators on a Jordan Algebra* for the quadratic representation, the symmetries and the inner structure group; and *Jordan Algebras* for the special algebra $A^+$. Throughout, $A$ is a commutative-or-not associative unital $R$-algebra, $\alpha$ is a grade involution of $A$ (an automorphism with $\alpha^2 = \mathrm{id}$), $J = A^+$ is the special Jordan algebra with the halved product, and $c_u$ denotes the signed conjugation by the unit $u$. No form, norm, distance or geometric reflection occurs: an operator of order two is all that "reflection" means here, and the symmetric-space reading is deferred to Part IV.
 
 ## The Signed Conjugation
 
@@ -18,7 +18,7 @@ $$
 c_u : J \longrightarrow J, \qquad c_u(x) = u\,\alpha(x)\,u^{-1} .
 $$
 
-It is $R$-linear and bijective with inverse $c_{u^{-1}}$, and it is the diagonal signed sandwich $\mathcal{T}^{\alpha}_{u,u^{-1}}$ of *The Signed Sandwich on a Jordan Algebra*.
+It is $R$-linear and bijective with inverse $c_{u^{-1}}$, and it is the diagonal signed two-sided operator $\mathcal{T}^{\alpha}_{u,u^{-1}}$ of *The Signed Two-Sided Operator on a Jordan Algebra*.
 
 **Theorem.** For every unit $u$, the signed conjugation $c_u$ is an automorphism of the Jordan algebra $J$.
 
@@ -74,19 +74,19 @@ $$
 
 **Corollary (parity).** If $u$ is fixed by $\alpha$ then $N(u) = u^2$; if $u$ is negated by $\alpha$ then $N(u) = -u^2$; in both cases $N(u)$ is central exactly when $u^2$ is central, so a unit with $u^2$ central gives a reflection whatever its parity. In particular every symmetry of $J$, a unit $u$ with $u \bullet u = 1$ in the special product, has $N(u) = u\alpha(u)$ with $\alpha(u) = u^{-1}$ when $u$ is even, whence $N(u) = 1$; and if $u$ is odd then $N(u) = -1$; in either case the reflection condition holds.
 
-### The Relation to the Signed Sandwich
+### The Relation to the Signed Two-Sided Operator
 
-**Proposition.** If the unit $u$ satisfies $u^{-1} = u$, then the reflection $c_u$ is the symmetrised signed sandwich
+**Proposition.** If the unit $u$ satisfies $u^{-1} = u$, then the reflection $c_u$ is the symmetrised signed two-sided operator
 
 $$
 c_u = U_u\circ\alpha = \Sigma^{\alpha}_{u,u} ,
 $$
 
-where $U_u$ is the quadratic representation and $\Sigma^{\alpha}_{u,u}$ is the symmetrised signed sandwich of *The Signed Sandwich on a Jordan Algebra*.
+where $U_u$ is the quadratic representation and $\Sigma^{\alpha}_{u,u}$ is the symmetrised signed two-sided operator of *The Signed Two-Sided Operator on a Jordan Algebra*.
 
 *Proof.* $U_u(\alpha(x)) = u\alpha(x)u$ for the special quadratic representation, and $u = u^{-1}$ turns this into $u\alpha(x)u^{-1} = c_u(x)$. On the other hand $\Sigma^{\alpha}_{u,u} = U_u\circ\alpha$ by definition, so $c_u = U_u\circ\alpha$.
 
-**Corollary.** The reflections by the symmetries of $J$ are exactly the symmetrised signed sandwiches $\Sigma^{\alpha}_{u,u}$ with $u$ a unit and $u^{-1} = u$; these operators lie in the multiplication algebra and are self-adjoint for the trace form of *The Left and Right Multiplication Operators on a Jordan Algebra*, whereas the general reflection $c_u$ with $u \ne u^{-1}$ is an operator on the module $J$ and need not lie in $\operatorname{Mult}(J)$.
+**Corollary.** The reflections by the symmetries of $J$ are exactly the symmetrised signed two-sided operators $\Sigma^{\alpha}_{u,u}$ with $u$ a unit and $u^{-1} = u$; these operators lie in the multiplication algebra and are self-adjoint for the trace form of *The Left and Right Multiplication Operators on a Jordan Algebra*, whereas the general reflection $c_u$ with $u \ne u^{-1}$ is an operator on the module $J$ and need not lie in $\operatorname{Mult}(J)$.
 
 ## The Correspondence
 
@@ -135,11 +135,11 @@ because $c_u(c_v(x)) = u\alpha(v)\,x\,\alpha(v)^{-1}u^{-1}$. This inner conjugat
 
 ### The Trivial Grade Involution
 
-**Example.** If $\alpha = \mathrm{id}$, then $c_u = \operatorname{conj}_u$ is the ordinary inner conjugation and $N(u) = u^2$; the reflection criterion is $u^2$ central, and the reflection group is $\{u : u^2 \in Z(A)\}$. This is the case of *The Signed Sandwich on a Ring* with the trivial grade involution, and it shows that the correspondence between reflections and elements acting by an involution reduces there to the classical statement that an inner conjugation is an involution exactly when its conjugating element squares to a central element.
+**Example.** If $\alpha = \mathrm{id}$, then $c_u = \operatorname{conj}_u$ is the ordinary inner conjugation and $N(u) = u^2$; the reflection criterion is $u^2$ central, and the reflection group is $\{u : u^2 \in Z(A)\}$. This is the case of *The Signed Two-Sided Operator on a Ring* with the trivial grade involution, and it shows that the correspondence between reflections and elements acting by an involution reduces there to the classical statement that an inner conjugation is an involution exactly when its conjugating element squares to a central element.
 
 ## Summary
 
-For a special graded Jordan algebra $J = A^+$ with grade involution $\alpha$, the **signed conjugation** $c_u(x) = u\alpha(x)u^{-1}$ is an automorphism of $J$ for every unit $u$; its square is the inner conjugation by the **twisted square** $N(u) = u\alpha(u)$. The signed conjugation is a **reflection**, an operator of order two, exactly when $N(u)$ is central. The signed conjugations are classified by the cosets $uZ(A)^\times$, and the reflections by the cosets with $u$ in the reflection group $G = \{u : N(u) \in Z(A)\}$. The reflections do not form a group: $c_uc_v = \operatorname{conj}_{u\alpha(v)}$, and this is a signed conjugation only rarely; they generate the inner automorphism group. The degenerate case is a unit with non-central twisted square, where $c_u$ is an inner automorphism of infinite order; the unipotent unit $I+E_{12}$ of $M_2(k)$ with $\alpha = \mathrm{id}$ is the model. When $u^{-1} = u$ the reflection is the symmetrised signed sandwich $\Sigma^{\alpha}_{u,u} = U_u\circ\alpha$, and for the symmetries of $J$ this identification holds. No form, norm or geometric reading is used.
+For a special graded Jordan algebra $J = A^+$ with grade involution $\alpha$, the **signed conjugation** $c_u(x) = u\alpha(x)u^{-1}$ is an automorphism of $J$ for every unit $u$; its square is the inner conjugation by the **twisted square** $N(u) = u\alpha(u)$. The signed conjugation is a **reflection**, an operator of order two, exactly when $N(u)$ is central. The signed conjugations are classified by the cosets $uZ(A)^\times$, and the reflections by the cosets with $u$ in the reflection group $G = \{u : N(u) \in Z(A)\}$. The reflections do not form a group: $c_uc_v = \operatorname{conj}_{u\alpha(v)}$, and this is a signed conjugation only rarely; they generate the inner automorphism group. The degenerate case is a unit with non-central twisted square, where $c_u$ is an inner automorphism of infinite order; the unipotent unit $I+E_{12}$ of $M_2(k)$ with $\alpha = \mathrm{id}$ is the model. When $u^{-1} = u$ the reflection is the symmetrised signed two-sided operator $\Sigma^{\alpha}_{u,u} = U_u\circ\alpha$, and for the symmetries of $J$ this identification holds. No form, norm or geometric reading is used.
 
 ## Summary of Notation
 
@@ -155,8 +155,8 @@ For a special graded Jordan algebra $J = A^+$ with grade involution $\alpha$, th
 | $c_uc_v = \operatorname{conj}_{u\alpha(v)}$ | Composite of two reflections |
 | $G = \{u : N(u)\in Z(A)\}$ | Reflection group |
 | $c_u = c_v \iff u^{-1}v \in Z(A)^\times$ | Classification of signed conjugations |
-| $\Sigma^{\alpha}_{a,b} = U_{a,b}\circ\alpha$ | Symmetrised signed sandwich (Article 7) |
-| $c_u = U_u\circ\alpha$ when $u = u^{-1}$ | Reflection as a symmetrised sandwich |
+| $\Sigma^{\alpha}_{a,b} = U_{a,b}\circ\alpha$ | Symmetrised signed two-sided operator (Article 7) |
+| $c_u = U_u\circ\alpha$ when $u = u^{-1}$ | Reflection as a symmetrised two-sided operator |
 
 ## Further Reading
 

@@ -264,7 +264,7 @@ $$
 \gamma_0=iL_{\mathrm{axf},e_t}R_{\mathrm{axf},\vec e_x},\quad \gamma_1=iL_{\mathrm{axf},\vec e_x}R_{\mathrm{axf},\vec e_y},\quad \gamma_2=iL_{\mathrm{axf},\vec e_y}R_{\mathrm{axf},\vec e_y},\quad \gamma_3=iL_{\mathrm{axf},\vec e_z}R_{\mathrm{axf},\vec e_y},\quad \gamma_5=-iL_{\mathrm{axf},e_t}R_{\mathrm{axf},\vec e_z} .
 $$
 
-The sixteen words in the four gammas are a basis of $M_4(\mathbb{C})$, and each single one is invertible with determinant one: $L_a$ and $R_b$ with $|a|=|b|=1$ are invertible, and the scalar $i$ enters a $4\times4$ determinant as $i^4=+1$. A frame basis operator is therefore a full-rank operator, and the rank-one cone of "pure tensors" belongs to the sandwich family $M\Theta M^\dagger$, not here.
+The sixteen words in the four gammas are a basis of $M_4(\mathbb{C})$, and each single one is invertible with determinant one: $L_a$ and $R_b$ with $|a|=|b|=1$ are invertible, and the scalar $i$ enters a $4\times4$ determinant as $i^4=+1$. A frame basis operator is therefore a full-rank operator, and the rank-one cone of "pure tensors" belongs to the two-sided family $M\Theta M^\dagger$, not here.
 
 These are the frame basis operators of the earlier sections under their Clifford names, $\gamma_\mu$ for the basis operator of $x_\mu$ and $\gamma_5$ for the fifth basis operator $\mathsf{V}_{\mathrm{vol}}$. The central grading of the complexified algebra is a different object: it is the difference $e_+-e_-$ of the two central idempotents, written $i\tilde{Ζ}_{\mathrm{ad}}$ with $\tilde{Ζ}_{\mathrm{ad}}^2=-e_t$, so that its own square is $+e_t$. It is not a basis operator of the frame, and $\gamma_5$ is its representative on the Dirac module.
 

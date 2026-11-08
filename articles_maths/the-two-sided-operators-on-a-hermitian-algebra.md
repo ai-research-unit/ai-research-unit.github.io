@@ -2,21 +2,21 @@
 
 ## Introduction
 
-A **two-sided operator** of a Hermitian algebra is a sandwich $\mathrm{Sd}_x(y) = xyx^{\dagger}$, and the family of two-sided operators is closed under composition, adjunction and the passage to invertible parameters. The **modular conjugation** of the standard form, the invariance $\jmath\mathrm{Sd}_x\jmath = \mathrm{Sd}_x$, the standard form itself and its self-dual cone are operator theory on the completion and are in *The Modular Structure of a Hermitian Algebra*.
+A **two-sided operator** of a Hermitian algebra is a two-sided operator $\mathrm{Sd}_x(y) = xyx^{\dagger}$, and the family of two-sided operators is closed under composition, adjunction and the passage to invertible parameters. The **modular conjugation** of the standard form, the invariance $\jmath\mathrm{Sd}_x\jmath = \mathrm{Sd}_x$, the standard form itself and its self-dual cone are operator theory on the completion and are in *The Modular Structure of a Hermitian Algebra*.
 
-The sandwiches are the operators attached to an element and its involution: they are closed under composition, $\mathrm{Sd}_x\mathrm{Sd}_z = \mathrm{Sd}_{xz}$, and under adjunction, $\mathrm{Sd}_x^{*} = \mathrm{Sd}_{x^{\dagger}}$, and their invertible members are the inner automorphisms of the algebra. What makes them the operators of the **standard form** is their invariance under the modular conjugation, which exchanges the two factors without changing the operator; that statement, the standard form and the self-dual cone belong to the operator theory of the completion and are in *The Modular Structure of a Hermitian Algebra*.
+The two-sided operators are the operators attached to an element and its involution: they are closed under composition, $\mathrm{Sd}_x\mathrm{Sd}_z = \mathrm{Sd}_{xz}$, and under adjunction, $\mathrm{Sd}_x^{*} = \mathrm{Sd}_{x^{\dagger}}$, and their invertible members are the inner automorphisms of the algebra. What makes them the operators of the **standard form** is their invariance under the modular conjugation, which exchanges the two factors without changing the operator; that statement, the standard form and the self-dual cone belong to the operator theory of the completion and are in *The Modular Structure of a Hermitian Algebra*.
 
 This article fixes the two-sided operators, their closure under composition and adjunction, and their invertible and unitary members.
 
-The sandwich and its adjoint are *The Adjoint of the Sandwich on a Hermitian Algebra*; the left and right multiplications are *The Adjoint of the Left and the Right Multiplication*; the modular conjugation, the standard form and the self-dual cone are *The Modular Structure of a Hermitian Algebra*. Those are cited. The algebra is $A$ with form $\langle\cdot,\cdot\rangle$.
+The two-sided operator and its adjoint are *The Adjoint of the Two-Sided Operator on a Hermitian Algebra*; the left and right multiplications are *The Adjoint of the Left and the Right Multiplication*; the modular conjugation, the standard form and the self-dual cone are *The Modular Structure of a Hermitian Algebra*. Those are cited. The algebra is $A$ with form $\langle\cdot,\cdot\rangle$.
 
 ## The Two-Sided Operators
 
-**Definition.** The **two-sided operators** of $A$ are the sandwiches $\mathrm{Sd}_x(y) = xyx^{\dagger}$ for $x\in A$; they form the semigroup $\Theta = \{\mathrm{Sd}_x : x\in A\}$ closed under composition.
+**Definition.** The **two-sided operators** of $A$ are the two-sided operators $\mathrm{Sd}_x(y) = xyx^{\dagger}$ for $x\in A$; they form the semigroup $\Theta = \{\mathrm{Sd}_x : x\in A\}$ closed under composition.
 
 **Proposition (the structure of the family).** $\Theta$ is closed under composition, $\mathrm{Sd}_x\mathrm{Sd}_z = \mathrm{Sd}_{xz}$; closed under adjunction, $\mathrm{Sd}_x^{*} = \mathrm{Sd}_{x^{\dagger}}$; and the invertible two-sided operators are the inner automorphisms of the algebra implemented by invertible elements, with the unitary ones exactly the form-preserving inner automorphisms.
 
-**Proof.** The composition law is associativity; the adjoint law is *The Adjoint of the Sandwich on a Hermitian Algebra*; the automorphism statement is the defining property of an inner automorphism and the unitarity condition is the isometry theorem.
+**Proof.** The composition law is associativity; the adjoint law is *The Adjoint of the Two-Sided Operator on a Hermitian Algebra*; the automorphism statement is the defining property of an inner automorphism and the unitarity condition is the isometry theorem.
 
 The **modular conjugation**, the **standard form** $(\mathcal{M},H,\jmath,P)$ and the self-dual cone are operator theory on the completion and are in *The Modular Structure of a Hermitian Algebra* (Part II).
 
@@ -34,7 +34,7 @@ $$
 a=\begin{pmatrix}1&0\\0&2\end{pmatrix},\qquad b=\sigma_1=\begin{pmatrix}0&1\\1&0\end{pmatrix},\qquad \mathrm{Sd}_a(b)=aba^{*}=\begin{pmatrix}0&2\\2&0\end{pmatrix},\qquad \jmath\mathrm{Sd}_a\jmath=\mathrm{Sd}_a ,
 $$
 
-the last identity the invariance of the sandwich under the modular conjugation $\jmath(u)=u^{*}$.
+the last identity the invariance of the two-sided operator under the modular conjugation $\jmath(u)=u^{*}$.
 
 ### The Trivial Algebra
 
@@ -42,7 +42,7 @@ For $A = \mathbb{C}$ the only two-sided operator is the identity, the modular co
 
 ## Summary
 
-The **two-sided operators** $\mathrm{Sd}_x(y) = xyx^{\dagger}$ are closed under composition and adjunction, and their invertible members are the inner automorphisms, with the unitary members exactly the form-preserving ones. Their invariance under the **modular conjugation**, $\jmath\mathrm{Sd}_x\jmath = \mathrm{Sd}_x$, and the **standard form** $(\mathcal{M},H,\jmath,P)$ with its self-dual cone are operator theory on the completion and are in *The Modular Structure of a Hermitian Algebra*. The sandwich and its adjoint are *The Adjoint of the Sandwich on a Hermitian Algebra* and the multiplications are *The Adjoint of the Left and the Right Multiplication*.
+The **two-sided operators** $\mathrm{Sd}_x(y) = xyx^{\dagger}$ are closed under composition and adjunction, and their invertible members are the inner automorphisms, with the unitary members exactly the form-preserving ones. Their invariance under the **modular conjugation**, $\jmath\mathrm{Sd}_x\jmath = \mathrm{Sd}_x$, and the **standard form** $(\mathcal{M},H,\jmath,P)$ with its self-dual cone are operator theory on the completion and are in *The Modular Structure of a Hermitian Algebra*. The two-sided operator and its adjoint are *The Adjoint of the Two-Sided Operator on a Hermitian Algebra* and the multiplications are *The Adjoint of the Left and the Right Multiplication*.
 
 ## Summary of Notation
 

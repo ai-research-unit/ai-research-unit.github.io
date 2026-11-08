@@ -32,7 +32,7 @@ $$
 
 **Corollary (the association is immaterial).** $A$ is unchanged when the two multiplications are associated in the other order, $A(\tilde q_1,\tilde q_2,\tilde q_3)=\mathrm{Sc}((\tilde q_1\tilde q_2)\tilde q_3)=\mathrm{Sc}(\tilde q_1(\tilde q_2\tilde q_3))$, by associativity alone; cyclic invariance is the additional statement that the two arguments can be moved without changing the value.
 
-**Definition.** The association functional defines the **sandwich operators** $L_{\tilde q_4}R_{\tilde q_5}$, $\tilde q\mapsto\tilde q_4\tilde q\tilde q_5$, and $A(\tilde q_1,\tilde q_2,\tilde q_3)=\mathrm B(L_{\tilde q_1}R_{\tilde q_3}\tilde q_2,e_t)$ reads the functional through one of them.
+**Definition.** The association functional defines the **two-sided operators** $L_{\tilde q_4}R_{\tilde q_5}$, $\tilde q\mapsto\tilde q_4\tilde q\tilde q_5$, and $A(\tilde q_1,\tilde q_2,\tilde q_3)=\mathrm B(L_{\tilde q_1}R_{\tilde q_3}\tilde q_2,e_t)$ reads the functional through one of them.
 
 ## The Transposes of the One-Sided Operators
 
@@ -48,13 +48,13 @@ $$
 
 ## The Transpose of a Two-Sided Operator
 
-**Theorem.** For the sandwich $L_{\tilde q_4}R_{\tilde q_5}$, $\tilde q\mapsto\tilde q_4\tilde q\tilde q_5$,
+**Theorem.** For the two-sided operator $L_{\tilde q_4}R_{\tilde q_5}$, $\tilde q\mapsto\tilde q_4\tilde q\tilde q_5$,
 
 $$ \boxed{\; L_{\tilde q_4}R_{\tilde q_5}^{\sim}=L_{\tilde q_5}R_{\tilde q_4} \;} .$$
 
 *Proof.* The transpose is an anti-automorphism, $(\tilde q_1\tilde q_2)^{\sim}=\tilde q_2^{\sim}\tilde q_1^{\sim}$, so $L_{\tilde q_4}R_{\tilde q_5}^{\sim}=(L_{\tilde q_4}R_{\tilde q_5})^{\sim}=R_{\tilde q_5}^{\sim}L_{\tilde q_4}^{\sim}=L_{\tilde q_5}R_{\tilde q_4}$, which is $L_{\tilde q_5}R_{\tilde q_4}$.
 
-**Corollary.** The sandwich is self-transpose exactly when $\tilde q_5\in\mathbb{R}\tilde q_4$ or $\tilde q_4\in\mathbb{R}\tilde q_5$.
+**Corollary.** The two-sided operator is self-transpose exactly when $\tilde q_5\in\mathbb{R}\tilde q_4$ or $\tilde q_4\in\mathbb{R}\tilde q_5$.
 
 *Proof.* The equality $L_{\tilde q_4}R_{\tilde q_5}=L_{\tilde q_5}R_{\tilde q_4}$ says $\tilde q_4\tilde q\tilde q_5=\tilde q_5\tilde q\tilde q_4$ for every $\tilde q$. At $\tilde q=e_t$ it gives $\tilde q_4\tilde q_5=\tilde q_5\tilde q_4$, so $\tilde q_5$ commutes with $\tilde q_4$; if $\tilde q_5=\mu\tilde q_4$ for some real $\mu$ the two sides are equal, which is the sufficiency. Conversely, either $\tilde q_4$ is central, and then the identity reads $\tilde q\tilde q_4\tilde q_5=\tilde q_5\tilde q\tilde q_4$, that is $\tilde q\tilde q_4\tilde q_5=\tilde q_4\tilde q_5\tilde q$ with the product $\tilde q_4\tilde q_5$ central because $\tilde q_4$ is and $\tilde q_5$ commutes with it, so $\tilde q_5$ is central too and $\tilde q_5\in\mathbb{R}\tilde q_4$; or $\tilde q_4$ is not central, its commutant is the plane $\mathbb{R}e_t+\mathbb{R}\tilde q_4$, and $\tilde q_5=\lambda+\mu\tilde q_4$ gives $\tilde q_4\tilde q\tilde q_5-\tilde q_5\tilde q\tilde q_4=\lambda(\tilde q_4\tilde q-\tilde q\tilde q_4)$, which vanishes for all $\tilde q$ only if $\lambda=0$, that is $\tilde q_5\in\mathbb{R}\tilde q_4$. The degenerate cases $\tilde q_4=0$ or $\tilde q_5=0$ are included, both sides being $0$.
 

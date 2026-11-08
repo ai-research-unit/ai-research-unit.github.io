@@ -96,15 +96,15 @@ and every element of $SO(2)$ is the rotation $R_u$ for exactly one $u \in \mathr
 
 So $\mathrm{U}(1)$ and $SO(2)$ are two descriptions of one group: the multiplicative group of units of $\mathbb{C}$ and the group of orientation-preserving isometries of the plane fixing the origin. Multiplication by the unit $u = \exp(i\theta)$ is the rotation through the angle $\theta$.
 
-### Why the Sandwich Form Degenerates
+### Why the Two-Sided Form Degenerates
 
-In a non-commutative algebra of units, a rotation may be implemented by conjugation. For a unit $u$ and a vector $v$ one forms the **sandwich**
+In a non-commutative algebra of units, a rotation may be implemented by conjugation. For a unit $u$ and a vector $v$ one forms the **two-sided operator**
 
 $$
 v \mapsto u v u^{-1}.
 $$
 
-In $\mathbb{C}$ the sandwich is vacuous.
+In $\mathbb{C}$ the two-sided operator is vacuous.
 
 **Proposition.** Let $u \in \mathrm{U}(1)$ and $Q \in \mathbb{C}$. Then $u Q u^{-1} = Q$. Consequently the conjugation action of $\mathrm{U}(1)$ on $\mathbb{C}$ is trivial, and the algebra has no nontrivial inner automorphism.
 
@@ -319,7 +319,7 @@ Three distinct groups act on the complex plane and they should not be confused.
 
 **The similarities.** The group of $\mathbb{C}$-linear bijections of $\mathbb{C}$, that is, the maps $Q \mapsto aQ$ with $a \neq 0$, is $\mathbb{C}^\times \cong \mathbb{R}_{>0} \times \mathrm{U}(1)$. Each such map is a rotation followed by a scaling by $|a|$, and it preserves angles but not distances; the rotations are the isometric part.
 
-This is the precise sense in which multiplication is the natural action. In $\mathbb{C}$ the sandwich action is trivial, the algebra automorphism group is finite, and the isometries come from the multiplication action of the units, $u \mapsto R_u$; adding the reflections gives the full orthogonal group. The subgroups are summarised below.
+This is the precise sense in which multiplication is the natural action. In $\mathbb{C}$ the two-sided action is trivial, the algebra automorphism group is finite, and the isometries come from the multiplication action of the units, $u \mapsto R_u$; adding the reflections gives the full orthogonal group. The subgroups are summarised below.
 
 | Group | Elements | Structure | Fixes |
 |---|---|---|---|
@@ -354,7 +354,7 @@ Every orientation-preserving isometry with $u = 1$ is a translation, and with $u
 
 The unit circle $\mathrm{U}(1) = \{u : \langle u\rangle_{*} = 1\}$ is a compact connected abelian group, isomorphic to $\mathbb{R}/2\pi\mathbb{Z}$ via $\theta \mapsto \exp(i\theta)$, and $\mathbb{C}^\times \cong \mathbb{R}_{>0} \times \mathrm{U}(1)$ by the polar decomposition.
 
-Multiplication by a unit, $R_u(Q) = uQ$, is an $\mathbb{R}$-linear isometry fixing the origin, the rotation through the angle $\theta$ when $u = \exp(i\theta)$; it has determinant $1$ and trace $2\cos\theta$, and its eigenvalues are $\exp(\pm i\theta)$. The map $u \mapsto R_u$ is an isomorphism $\mathrm{U}(1) \cong SO(2)$. The sandwich $Q \mapsto uQu^{-1}$ does nothing, because $\mathbb{C}$ is commutative; conjugation by a unit is an inner automorphism acting trivially on the centre. Indeed $\operatorname{Aut}_{\mathbb{R}}(\mathbb{C}) = \{\mathrm{id}, \bar{\cdot}\}$ is finite, so the rotation group is not visible in the algebra alone: it is visible in the multiplication together with the norm $\langle Q\rangle_{*} = Q\bar Q$. Multiplication, not conjugation, is the natural action.
+Multiplication by a unit, $R_u(Q) = uQ$, is an $\mathbb{R}$-linear isometry fixing the origin, the rotation through the angle $\theta$ when $u = \exp(i\theta)$; it has determinant $1$ and trace $2\cos\theta$, and its eigenvalues are $\exp(\pm i\theta)$. The map $u \mapsto R_u$ is an isomorphism $\mathrm{U}(1) \cong SO(2)$. The two-sided operator $Q \mapsto uQu^{-1}$ does nothing, because $\mathbb{C}$ is commutative; conjugation by a unit is an inner automorphism acting trivially on the centre. Indeed $\operatorname{Aut}_{\mathbb{R}}(\mathbb{C}) = \{\mathrm{id}, \bar{\cdot}\}$ is finite, so the rotation group is not visible in the algebra alone: it is visible in the multiplication together with the norm $\langle Q\rangle_{*} = Q\bar Q$. Multiplication, not conjugation, is the natural action.
 
 The reflections are the maps $S_u(Q) = u\bar Q$; each is an orientation-reversing involution with a line of fixed points through the origin, the line at angle $\theta_{\mathrm{lna}}$ when $u = \exp(2i\theta_{\mathrm{lna}})$. They form the coset $\mathrm{U}(1)\bar{\cdot}$, they are all conjugate to complex conjugation, and the composition of two reflections is the rotation $S_u \circ S_v = R_{u\bar v}$: reflections in lines at angles $\theta_{\mathrm{lna}}$ and $\theta_{\mathrm{lnb}}$ compose to the rotation through $2(\theta_{\mathrm{lna}} - \theta_{\mathrm{lnb}})$. Cartan–Dieudonné in dimension two states that every element of $O(2)$ is a product of at most two reflections.
 

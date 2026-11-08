@@ -25,7 +25,7 @@ The article has five sections: the involution on the symmetry group; the induced
 
 **Example (the conjugation of a real structure).** For the complex general linear group with the conjugating involution $\sigma(g) = \overline{g}$ of the matrix entries, the fixed subgroup is $GL_n(\mathbb{R})$, the **real points**; the general theory of the fixed subgroup here is Part I, and the geometric reading is the real forms of *Real Forms of a Complex Lie Group and the Cartan Involution*.
 
-**Example (the grading involution).** For a graded group the grade involution $\alpha(g) = \varepsilon(g)g$ is an involutive automorphism with fixed subgroup the even part $G_0$, *The Signed Sandwich on a Symmetry Group*; it is distinct from the Cartan involution, and the two together generate the Hermitian conjugation of the Clifford algebra there.
+**Example (the grading involution).** For a graded group the grade involution $\alpha(g) = \varepsilon(g)g$ is an involutive automorphism with fixed subgroup the even part $G_0$, *The Signed Two-Sided Operator on a Symmetry Group*; it is distinct from the Cartan involution, and the two together generate the Hermitian conjugation of the Clifford algebra there.
 
 **Remark.** An involution is a property of the **elements** of $G$, not of the operators on $G$. The distinction is the whole sense of the group `- * Theory`: the same underlying group carries many involutions, and the involution chosen — the form, the real structure, the grading — is what determines the geometry.
 

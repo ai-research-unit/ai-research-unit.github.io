@@ -21,13 +21,13 @@ The article is organized as follows. The rotation algebra is constructed as the 
 
 ### Rotations and Their Generators
 
-The rotation group acts on the algebra by inner automorphisms. A rotation quaternion is $*$-unitary, $QQ^{*}=e_t$, so its inner automorphism — the adjoint action — is the Hermitian sandwich
+The rotation group acts on the algebra by inner automorphisms. A rotation quaternion is $*$-unitary, $QQ^{*}=e_t$, so its inner automorphism — the adjoint action — is the Hermitian pair
 
 $$
 R_Q:\;\tilde{Q}\longmapsto Q\tilde{Q}Q^{*}.
 $$
 
-It is an algebra automorphism that fixes the centre, hence fixes $i$, and preserves the division of $\mathbb{B}$ into $\mathbb{B}_{\Phi}$ and $\mathbb{B}_{\Psi}$: the Hermitian sandwich preserves the Hermiticity type, so the material sector is mapped to itself. Writing $Q=\exp(\theta\,\vec e_k/2)$ with $\theta$ the rotation angle about the $k$-th axis, the infinitesimal generator of the map is the inner derivation
+It is an algebra automorphism that fixes the centre, hence fixes $i$, and preserves the division of $\mathbb{B}$ into $\mathbb{B}_{\Phi}$ and $\mathbb{B}_{\Psi}$: the Hermitian pair preserves the Hermiticity type, so the material sector is mapped to itself. Writing $Q=\exp(\theta\,\vec e_k/2)$ with $\theta$ the rotation angle about the $k$-th axis, the infinitesimal generator of the map is the inner derivation
 
 $$
 \delta_k\tilde{Q} = \tfrac{\theta}{2}\,[\vec e_k,\tilde{Q}] = \tfrac{\theta}{2}\,\mathrm{ad}_{\vec e_k}\tilde{Q} .

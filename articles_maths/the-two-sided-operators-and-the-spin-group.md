@@ -2,17 +2,17 @@
 
 ## Introduction
 
-The sandwiches of *The Sandwich on a Clifford Algebra* form a monoid, and inside it the invertible sandwiches form a group: the sandwiches $L_{a}R_{b}$ with $a$ and $b$ units of the Clifford algebra. This article reads the classical groups off that group of operators. The versors generate it as a group of two-sided operators, their action on the quadratic space is the homomorphism onto the orthogonal group, and the piece of the group that acts as a rotation, with the Clifford norm fixed at one, is the **spin group**, realised as a group of invertible two-sided operators on the algebra.
+The two-sided operators of *The Two-Sided Operator on a Clifford Algebra* form a monoid, and inside it the invertible two-sided operators form a group: the two-sided operators $L_{a}R_{b}$ with $a$ and $b$ units of the Clifford algebra. This article reads the classical groups off that group of operators. The versors generate it as a group of two-sided operators, their action on the quadratic space is the homomorphism onto the orthogonal group, and the piece of the group that acts as a rotation, with the Clifford norm fixed at one, is the **spin group**, realised as a group of invertible two-sided operators on the algebra.
 
-The advantage of this reading is that it makes the double cover a statement about operators rather than a separate construction. The kernel of the sandwich action is the central unit group; intersecting it with the norm-one condition leaves $\{\pm1\}$; and the two-sided operators cannot distinguish $x$ from $-x$, because $L_{-x}R_{-x^{-1}} = L_{x}R_{x^{-1}}$. So the spin group is the quotient of the even versors of norm one by that sign, and its double cover is the same sandwich read at the level of the versors.
+The advantage of this reading is that it makes the double cover a statement about operators rather than a separate construction. The kernel of the two-sided action is the central unit group; intersecting it with the norm-one condition leaves $\{\pm1\}$; and the two-sided operators cannot distinguish $x$ from $-x$, because $L_{-x}R_{-x^{-1}} = L_{x}R_{x^{-1}}$. So the spin group is the quotient of the even versors of norm one by that sign, and its double cover is the same two-sided operator read at the level of the versors.
 
-The Clifford algebra, its grading and the intrinsic involutions are *Clifford Algebras* and *Clifford Algebras in Finite Dimensions*; the sandwich, its composition and its central indeterminacy are *The Sandwich on a Clifford Algebra*; and the Clifford, pin and spin groups, their definition by the norm, the reflection formula and the exact sequences are *The Clifford, Pin and Spin Groups with Signed Inner Conjugation*, whose results are quoted here and not re-derived. The full classification by the Clifford algebra is *The Low-Dimensional Classification*, the spin representations are *Spin Representations and Clifford Modules with Inner Conjugation*, and the low-dimensional exceptional isomorphisms are *The Low-Dimensional Spin Groups and the Exceptional Isomorphisms with Inner Conjugation*.
+The Clifford algebra, its grading and the intrinsic involutions are *Clifford Algebras* and *Clifford Algebras in Finite Dimensions*; the two-sided operator, its composition and its central indeterminacy are *The Two-Sided Operator on a Clifford Algebra*; and the Clifford, pin and spin groups, their definition by the norm, the reflection formula and the exact sequences are *The Clifford, Pin and Spin Groups with Signed Inner Conjugation*, whose results are quoted here and not re-derived. The full classification by the Clifford algebra is *The Low-Dimensional Classification*, the spin representations are *Spin Representations and Clifford Modules with Inner Conjugation*, and the low-dimensional exceptional isomorphisms are *The Low-Dimensional Spin Groups and the Exceptional Isomorphisms with Inner Conjugation*.
 
 The groups are treated here as abstract groups of operators, by their elements, their products, their kernels and their actions. The smooth structure, the manifold, the exponential and the connectedness of the spin group are analytic and belong to Part III, to *Lie Groups*; nothing here uses them, and where the connected components are mentioned it is as a set-theoretic decomposition.
 
 ## The Group of Two-Sided Operators
 
-### The Invertible Sandwiches
+### The Invertible Two-Sided Operators
 
 **Definition.** The **group of two-sided operators** of the Clifford algebra is
 
@@ -20,7 +20,7 @@ $$
 \mathcal{T} = \{\, L_{a}R_{b} : a, b \in \mathrm{Cl}(V,\mathfrak{Q})^{\times} \,\},
 $$
 
-the sandwiches whose two parameters are units.
+the two-sided operators whose two parameters are units.
 
 **Theorem.** $\mathcal{T}$ is a group under composition, and the map $(a,b) \mapsto L_{a}R_{b}$ is a surjective homomorphism
 
@@ -34,9 +34,9 @@ $$
 \ker = \{\, (c, c^{-1}) : c \in Z(\mathrm{Cl}(V,\mathfrak{Q}))^{\times} \,\}.
 $$
 
-Consequently $\mathcal{T} \cong \bigl(\mathrm{Cl}(V,\mathfrak{Q})^{\times} \times \mathrm{Cl}(V,\mathfrak{Q})^{\times}\bigr) / Z^{\times}$, with $Z^{\times}$ embedded diagonally, and the group is generated by the sandwiches $L_{x}R_{1}$ and $L_{1}R_{x}$ with $x$ a unit.
+Consequently $\mathcal{T} \cong \bigl(\mathrm{Cl}(V,\mathfrak{Q})^{\times} \times \mathrm{Cl}(V,\mathfrak{Q})^{\times}\bigr) / Z^{\times}$, with $Z^{\times}$ embedded diagonally, and the group is generated by the two-sided operators $L_{x}R_{1}$ and $L_{1}R_{x}$ with $x$ a unit.
 
-**Proof.** The composition law $L_{a}R_{b}L_{c}R_{d} = L_{ac}R_{db}$ of *The Sandwich on a Clifford Algebra* shows at once that $\mathcal{T}$ is closed, that the product is associative because composition is, that $L_{1}R_{1}$ is the identity, and that $L_{a}R_{b}^{-1} = L_{a^{-1}}R_{b^{-1}}$. The kernel is the indeterminacy computed there. The generators are obtained by taking the pairs $(x, 1)$ and $(1, x)$.
+**Proof.** The composition law $L_{a}R_{b}L_{c}R_{d} = L_{ac}R_{db}$ of *The Two-Sided Operator on a Clifford Algebra* shows at once that $\mathcal{T}$ is closed, that the product is associative because composition is, that $L_{1}R_{1}$ is the identity, and that $L_{a}R_{b}^{-1} = L_{a^{-1}}R_{b^{-1}}$. The kernel is the indeterminacy computed there. The generators are obtained by taking the pairs $(x, 1)$ and $(1, x)$.
 
 **Remark (the left and the right factors commute as families).** The subgroups $\{L_{x}R_{1}\}$ and $\{L_{1}R_{x}\}$ commute elementwise, because $L_{x}R_{1}L_{1}R_{y} = L_{x}R_{y} = L_{1}R_{y}L_{x}R_{1}$, so $\mathcal{T}$ is a direct product of the two one-sided unit groups modulo the diagonal.
 
@@ -44,19 +44,19 @@ Consequently $\mathcal{T} \cong \bigl(\mathrm{Cl}(V,\mathfrak{Q})^{\times} \time
 
 **Definition.** A **versor** is an element $x \in \mathrm{Cl}(V,\mathfrak{Q})^{\times}$ with $\chi_x(V) \subseteq V$, where $\chi_x(y) = x\,y\,\alpha(x)^{-1}$; the set of versors is the Clifford group $\Gamma(V,\mathfrak{Q})$.
 
-**Proposition.** The versors are units, and the sandwiches of the versors form a subgroup of $\mathcal{T}$,
+**Proposition.** The versors are units, and the two-sided operators of the versors form a subgroup of $\mathcal{T}$,
 
 $$
 \mathcal{T}_\Gamma = \{\, L_{x}R_{x^{-1}} : x \in \Gamma(V,\mathfrak{Q}) \,\},
 $$
 
-which contains the central sandwiches $L_{c}R_{c^{-1}}$ with $c \in F^{\times}$.
+which contains the central two-sided operators $L_{c}R_{c^{-1}}$ with $c \in F^{\times}$.
 
-**Proof.** A versor is a unit by definition of the twisted conjugation, so $L_{x}R_{x^{-1}}$ is defined and invertible. The set is a subgroup: $L_{x}R_{x^{-1}}L_{z}R_{z^{-1}} = L_{xz}R_{\,(xz)^{-1}}$ because the versors are closed under products, and $L_{x}R_{x^{-1}}^{-1} = L_{x^{-1}}R_{\,x} = L_{x^{-1}}R_{\,(x^{-1})^{-1}}$. The scalars are versors and give the central sandwiches.
+**Proof.** A versor is a unit by definition of the twisted conjugation, so $L_{x}R_{x^{-1}}$ is defined and invertible. The set is a subgroup: $L_{x}R_{x^{-1}}L_{z}R_{z^{-1}} = L_{xz}R_{\,(xz)^{-1}}$ because the versors are closed under products, and $L_{x}R_{x^{-1}}^{-1} = L_{x^{-1}}R_{\,x} = L_{x^{-1}}R_{\,(x^{-1})^{-1}}$. The scalars are versors and give the central two-sided operators.
 
 ## The Action on the Quadratic Space
 
-**Theorem (the sandwich action).** The assignment
+**Theorem (the two-sided action).** The assignment
 
 $$
 \boxed{\;\Gamma(V,\mathfrak{Q}) \longrightarrow O(V,\mathfrak{Q}), \qquad x \longmapsto \chi_x\big|_{V}\;},
@@ -68,11 +68,11 @@ $$
 \ker = \Gamma(V,\mathfrak{Q}) \cap F^{\times} = F^{\times}\! .
 $$
 
-**Proof.** The twisted conjugation of a versor is an isometry of $V$ by *The Sandwich on a Clifford Algebra*, so the map is well defined; $\chi_{xz} = \chi_x \circ \chi_z$ because $\alpha$ is an algebra automorphism; and $\chi_c = \mathrm{id}_V$ exactly when $c$ is a central scalar, which is the kernel statement. Surjectivity is the theorem of *The Clifford, Pin and Spin Groups with Signed Inner Conjugation*.
+**Proof.** The twisted conjugation of a versor is an isometry of $V$ by *The Two-Sided Operator on a Clifford Algebra*, so the map is well defined; $\chi_{xz} = \chi_x \circ \chi_z$ because $\alpha$ is an algebra automorphism; and $\chi_c = \mathrm{id}_V$ exactly when $c$ is a central scalar, which is the kernel statement. Surjectivity is the theorem of *The Clifford, Pin and Spin Groups with Signed Inner Conjugation*.
 
-**Corollary (the two-sided form of the kernel).** In the operator language the kernel of the action is the subgroup of $\mathcal{T}$ generated by the central sandwiches, and the elements of $\mathcal{T}$ that act trivially on $V$ are exactly the $L_{c}R_{c^{-1}}$ with $c$ a unit of the centre. The two-sided operators that fix $V$ pointwise are therefore the ones in the diagonal of the centre, and no versor outside it acts trivially.
+**Corollary (the two-sided form of the kernel).** In the operator language the kernel of the action is the subgroup of $\mathcal{T}$ generated by the central two-sided operators, and the elements of $\mathcal{T}$ that act trivially on $V$ are exactly the $L_{c}R_{c^{-1}}$ with $c$ a unit of the centre. The two-sided operators that fix $V$ pointwise are therefore the ones in the diagonal of the centre, and no versor outside it acts trivially.
 
-**Remark (the sandwich against the twisted conjugation).** The map $x \mapsto \chi_x$ and the map $x \mapsto L_{x}R_{x^{-1}}\big|_V$ agree on the even part of $\Gamma$ and are negatives on the odd part, by $\chi_x = \varepsilon_x L_{x}R_{x^{-1}}$. Both have the same kernel $F^{\times}$, so they define the same covering group; only the twisted form is an orthogonal map on every parity, and it is therefore the one used for $O(V,\mathfrak{Q})$.
+**Remark (the two-sided operator against the twisted conjugation).** The map $x \mapsto \chi_x$ and the map $x \mapsto L_{x}R_{x^{-1}}\big|_V$ agree on the even part of $\Gamma$ and are negatives on the odd part, by $\chi_x = \varepsilon_x L_{x}R_{x^{-1}}$. Both have the same kernel $F^{\times}$, so they define the same covering group; only the twisted form is an orthogonal map on every parity, and it is therefore the one used for $O(V,\mathfrak{Q})$.
 
 ## The Spin Group as a Group of Operators
 
@@ -109,11 +109,11 @@ $$
 
 and the two-sided operators see the quotient: $L_{x}R_{x^{-1}} = L_{-x}R_{\,-x^{-1}}$, so the operator group is exactly $\mathrm{Spin}/\{\pm1\}$ and the cover is recovered from the versor, not from the operator.
 
-**Remark (why operators and not elements).** An even versor $x$ of norm one is determined by the operator $L_{x}R_{x^{-1}}$ up to $\pm1$ and no further: the indeterminacy of the sandwich is a central unit $c$, the norm condition forces $c^{2} = 1$, and within the even part the only such central units are $\pm1$, the volume element $\omega$ being odd where it exists. So the operator group is exactly $\mathrm{Spin}(V,\mathfrak{Q})/\{\pm1\}$ and the ambiguity of sign is the double cover, recovered from the versor and not from the operator.
+**Remark (why operators and not elements).** An even versor $x$ of norm one is determined by the operator $L_{x}R_{x^{-1}}$ up to $\pm1$ and no further: the indeterminacy of the two-sided operator is a central unit $c$, the norm condition forces $c^{2} = 1$, and within the even part the only such central units are $\pm1$, the volume element $\omega$ being odd where it exists. So the operator group is exactly $\mathrm{Spin}(V,\mathfrak{Q})/\{\pm1\}$ and the ambiguity of sign is the double cover, recovered from the versor and not from the operator.
 
 ### The Even and Odd Parts
 
-**Proposition.** $\mathrm{Spin}(V,\mathfrak{Q})$ is a normal subgroup of $\mathrm{Pin}(V,\mathfrak{Q})$ of index $1$ or $2$, and of index $2$ exactly when $\mathrm{Pin}(V,\mathfrak{Q})$ contains an odd element. Under a sandwich by an odd element the odd part of the algebra is carried to the even part and the even part to the odd part.
+**Proposition.** $\mathrm{Spin}(V,\mathfrak{Q})$ is a normal subgroup of $\mathrm{Pin}(V,\mathfrak{Q})$ of index $1$ or $2$, and of index $2$ exactly when $\mathrm{Pin}(V,\mathfrak{Q})$ contains an odd element. Under a two-sided operator with an odd element the odd part of the algebra is carried to the even part and the even part to the odd part.
 
 **Proof.** The even part $\mathrm{Cl}^{0}$ is a subgroup of index $2$ of the unit group, so its intersection with $\mathrm{Pin}$ is normal in $\mathrm{Pin}$ and has index $1$ or $2$ according as $\mathrm{Pin}$ is contained in $\mathrm{Cl}^{0}$ or not. The parity statement is the rule that the parity of a product is the product of the parities, here with the two factors $x$ and $x^{-1}$ both odd.
 
@@ -123,21 +123,21 @@ and the two-sided operators see the quotient: $L_{x}R_{x^{-1}} = L_{-x}R_{\,-x^{
 
 ### One Dimension
 
-Over $\mathbb{R}$ with $\dim V = 1$ and $\mathfrak{Q}(e_1) = -1$, the algebra is $\mathbb{C}$ with $e_1 = i$, and $N(a + be_1) = a^{2} + b^{2}$. So $\mathrm{Pin}(V,\mathfrak{Q}) = \{a + be_1 : a^{2} + b^{2} = 1\}$ as a set, and its even part is $\{\pm1\}$, which is $\mathrm{Spin}(V,\mathfrak{Q})$. The map to $O(1) = \{\pm\mathrm{id}\}$ sends $1$ to the identity, the odd elements of norm one to the reflection $-\mathrm{id}$, and has kernel $\{\pm1\}$; the sandwich $L_{e_1}R_{e_1^{-1}} = L_{e_1}R_{-e_1}$ gives $-\mathrm{id}$ on $V$. So the double cover of $O(1)$ by $\mathrm{Pin}(1)$ is visible in the smallest case, and $\mathrm{Spin}(1) \to SO(1)$ is the two-element group over the trivial group.
+Over $\mathbb{R}$ with $\dim V = 1$ and $\mathfrak{Q}(e_1) = -1$, the algebra is $\mathbb{C}$ with $e_1 = i$, and $N(a + be_1) = a^{2} + b^{2}$. So $\mathrm{Pin}(V,\mathfrak{Q}) = \{a + be_1 : a^{2} + b^{2} = 1\}$ as a set, and its even part is $\{\pm1\}$, which is $\mathrm{Spin}(V,\mathfrak{Q})$. The map to $O(1) = \{\pm\mathrm{id}\}$ sends $1$ to the identity, the odd elements of norm one to the reflection $-\mathrm{id}$, and has kernel $\{\pm1\}$; the two-sided operator $L_{e_1}R_{e_1^{-1}} = L_{e_1}R_{-e_1}$ gives $-\mathrm{id}$ on $V$. So the double cover of $O(1)$ by $\mathrm{Pin}(1)$ is visible in the smallest case, and $\mathrm{Spin}(1) \to SO(1)$ is the two-element group over the trivial group.
 
 ### The Rotor of a Plane
 
-In $\mathrm{Cl}_{0,2}(\mathbb{R}) \cong \mathbb{H}$ with $e_1^{2} = e_2^{2} = -1$, let $R = e_1e_2$, an even versor with $N(R) = (e_1e_2)(e_1e_2)^{\natural} = 1$. The sandwich $L_{R}R_{R^{-1}}$ acts on $V$ by the half-turn $\chi_R(e_1) = -e_1$, $\chi_R(e_2) = -e_2$, and $L_{R}R_{R^{-1}} = L_{-R}R_{-R^{-1}}$ because $-R$ is the other versor of the same operator. So $\mathrm{Spin}(2) \to SO(2)$ is the double cover of $\operatorname{SO}(2)$ by its two opposite rotors, and the two-sided operator is the full vector action, not the half spinor action.
+In $\mathrm{Cl}_{0,2}(\mathbb{R}) \cong \mathbb{H}$ with $e_1^{2} = e_2^{2} = -1$, let $R = e_1e_2$, an even versor with $N(R) = (e_1e_2)(e_1e_2)^{\natural} = 1$. The two-sided operator $L_{R}R_{R^{-1}}$ acts on $V$ by the half-turn $\chi_R(e_1) = -e_1$, $\chi_R(e_2) = -e_2$, and $L_{R}R_{R^{-1}} = L_{-R}R_{-R^{-1}}$ because $-R$ is the other versor of the same operator. So $\mathrm{Spin}(2) \to SO(2)$ is the double cover of $\operatorname{SO}(2)$ by its two opposite rotors, and the two-sided operator is the full vector action, not the half spinor action.
 
 ### The Volume Element
 
-In $\mathrm{Cl}_{0,3}(\mathbb{R})$ the volume element $\omega = e_1e_2e_3$ is odd, central and satisfies $\omega^{2} = 1$, so $N(\omega) = \omega^{2} = 1$ and $\omega \in \mathrm{Pin}$. It is odd, hence not in $\mathrm{Spin}$, and it separates the two actions: the twisted conjugation gives $\chi_\omega = -\mathrm{id}_V$, so $\omega$ maps to the nontrivial central element of $O(V,\mathfrak{Q})$, while the sandwich gives $L_{\omega}R_{\omega^{-1}} = \mathrm{Ad}_\omega = \mathrm{id}$ because $\omega$ is central. The norm-one condition alone therefore does not put an element in the even part of the algebra, and the sandwich loses exactly the odd central elements that the twisted conjugation keeps.
+In $\mathrm{Cl}_{0,3}(\mathbb{R})$ the volume element $\omega = e_1e_2e_3$ is odd, central and satisfies $\omega^{2} = 1$, so $N(\omega) = \omega^{2} = 1$ and $\omega \in \mathrm{Pin}$. It is odd, hence not in $\mathrm{Spin}$, and it separates the two actions: the twisted conjugation gives $\chi_\omega = -\mathrm{id}_V$, so $\omega$ maps to the nontrivial central element of $O(V,\mathfrak{Q})$, while the two-sided operator gives $L_{\omega}R_{\omega^{-1}} = \mathrm{Ad}_\omega = \mathrm{id}$ because $\omega$ is central. The norm-one condition alone therefore does not put an element in the even part of the algebra, and the two-sided operator loses exactly the odd central elements that the twisted conjugation keeps.
 
 ## Summary
 
-The invertible sandwiches form the **group of two-sided operators** $\mathcal{T}$, the image of $\mathrm{Cl}(V,\mathfrak{Q})^{\times}\times\mathrm{Cl}(V,\mathfrak{Q})^{\times}$ under $(a,b)\mapsto L_{a}R_{b}$, with kernel the diagonal of the central units; it is generated by the one-sided families, which commute, and it is a direct product modulo that diagonal. The versors generate the subgroup $\{L_{x}R_{x^{-1}} : x\in\Gamma\}$ up to the central scalars, and their action on $V$ is the surjection $\Gamma(V,\mathfrak{Q}) \to O(V,\mathfrak{Q})$ with kernel $F^{\times}$, given by the twisted conjugation and, on the even part, by the sandwich itself.
+The invertible two-sided operators form the **group of two-sided operators** $\mathcal{T}$, the image of $\mathrm{Cl}(V,\mathfrak{Q})^{\times}\times\mathrm{Cl}(V,\mathfrak{Q})^{\times}$ under $(a,b)\mapsto L_{a}R_{b}$, with kernel the diagonal of the central units; it is generated by the one-sided families, which commute, and it is a direct product modulo that diagonal. The versors generate the subgroup $\{L_{x}R_{x^{-1}} : x\in\Gamma\}$ up to the central scalars, and their action on $V$ is the surjection $\Gamma(V,\mathfrak{Q}) \to O(V,\mathfrak{Q})$ with kernel $F^{\times}$, given by the twisted conjugation and, on the even part, by the two-sided operator itself.
 
-The **spin group** is the group of two-sided operators with an even versor of Clifford norm one, $L_{x}R_{x^{-1}}$ for $x \in \Gamma^{0}$ and $N(x) = 1$. As a group of operators it is $\mathrm{Spin}(V,\mathfrak{Q})/\{\pm1\}$, because the sandwich cannot distinguish $x$ from $-x$; the preimage is the double cover
+The **spin group** is the group of two-sided operators with an even versor of Clifford norm one, $L_{x}R_{x^{-1}}$ for $x \in \Gamma^{0}$ and $N(x) = 1$. As a group of operators it is $\mathrm{Spin}(V,\mathfrak{Q})/\{\pm1\}$, because the two-sided operator cannot distinguish $x$ from $-x$; the preimage is the double cover
 
 $$
 1 \to \{\pm1\} \to \mathrm{Spin}(V,\mathfrak{Q}) \to SO(V,\mathfrak{Q}) \to 1 ,
@@ -149,7 +149,7 @@ with kernel computed from $N(c) = c^{2}$ for a central scalar $c$. The reading i
 
 | Symbol | Meaning |
 |---|---|
-| $L_{a}R_{b}(y) = a\,y\,b$ | Sandwich, the two-sided operator |
+| $L_{a}R_{b}(y) = a\,y\,b$ | Two-Sided Operator, the two-sided operator |
 | $\mathcal{T} = \{L_{a}R_{b} : a,b \in \mathrm{Cl}^{\times}\}$ | Group of two-sided operators |
 | $Z(\mathrm{Cl}(V,\mathfrak{Q}))^{\times}$ | Central units, the kernel of the parametrisation |
 | $\Gamma(V,\mathfrak{Q})$ | Clifford group, the versors |

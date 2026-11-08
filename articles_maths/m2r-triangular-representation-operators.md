@@ -126,13 +126,13 @@ $$
 
 **The inner automorphisms are trivial.** Since the algebra is commutative, $L_{Q}R_{Q^{-1}}(X)=QXQ^{-1}=X$ for every unit $Q$: the inner automorphism group of the algebra is trivial, and the two-sided family with equal inverse parameters is the identity alone. The automorphisms of the algebra are nevertheless a one-parameter group, and they are reached by conjugation in the ambient and not by multiplication in the algebra; the section on the pair as a semigroup computes them.
 
-**The sandwich, and the ray.** The two-sided operator with the conjugate on the right is
+**The two-sided operator, and the ray.** The two-sided operator with the conjugate on the right is
 
 $$
 \mathrm{Sd}_Q(X)=QX\bar Q=Q\bar Q\,X=q^{2}X,
 $$
 
-a scalar multiple of the identity, with scalar $q^{2}$. So the sandwich family is
+a scalar multiple of the identity, with scalar $q^{2}$. So the two-sided family is
 
 $$
 \{\mathrm{Sd}_Q:Q\in\mathbb{C}_{\mathrm{dln},\mathbb{R}}\}=\{q^{2}\,\mathrm{id}:q\in\mathbb{R}\}=[0,\infty)\cdot\mathrm{id},
@@ -144,9 +144,9 @@ $$
 \{Q:q^{2}=1\}=\{q=1\}\cup\{q=-1\},
 $$
 
-two affine lines in the plane, of real dimension one and two components. The comparison with the two previous categories is the whole point of the display: the complex sandwich gave the ray $[0,\infty)$ with kernel the circle $|Q|=1$, the split sandwich gave the line $\mathbb{R}$ with kernel the hyperbola $\langle Q\rangle_{*}=1$ of two branches, and the dual sandwich gives the ray with kernel two *parallel* lines. The conic has degenerated. The kernel is not compact in any of the three cases, and here it is the simplest disconnected set possible: two parallel lines, each a coset of the shear group $1+\mathrm{M}$.
+two affine lines in the plane, of real dimension one and two components. The comparison with the two previous categories is the whole point of the display: the complex two-sided operator gave the ray $[0,\infty)$ with kernel the circle $|Q|=1$, the split two-sided operator gave the line $\mathbb{R}$ with kernel the hyperbola $\langle Q\rangle_{*}=1$ of two branches, and the dual two-sided operator gives the ray with kernel two *parallel* lines. The conic has degenerated. The kernel is not compact in any of the three cases, and here it is the simplest disconnected set possible: two parallel lines, each a coset of the shear group $1+\mathrm{M}$.
 
-**The vanishing of the sandwich.** The ray contains $0$, and $0$ is attained at a nonzero parameter, $\mathrm{Sd}_\varepsilon=0$. So the sandwich family is a monoid of scalings and not a group: it is closed under composition, it contains $0$, and its group of units is the half-line $(0,\infty)\cdot\mathrm{id}$. In the split category the same family was all of $\mathbb{R}$, and the difference is the sign of the norm form.
+**The vanishing of the two-sided operator.** The ray contains $0$, and $0$ is attained at a nonzero parameter, $\mathrm{Sd}_\varepsilon=0$. So the two-sided family is a monoid of scalings and not a group: it is closed under composition, it contains $0$, and its group of units is the half-line $(0,\infty)\cdot\mathrm{id}$. In the split category the same family was all of $\mathbb{R}$, and the difference is the sign of the norm form.
 
 ## The Kronecker Display
 
@@ -344,7 +344,7 @@ of dimensions two, one and one. The family is the multiplication; with the scala
 2. The rank ladder of the one-sided operator is $2,1,0$, with the rank-one stratum the single line $\mathbb{R}L_\varepsilon$ minus the origin, and there $\ker L_Q=\operatorname{im}L_Q=\mathrm{M}$, one Jordan block of size two.
 3. The plain adjoint is the operator itself, by commutativity; the Frobenius adjoint is the conjugate of the operator by the swap, and it leaves the family, so the model is a representation and not a $*$-representation.
 4. The two-sided operator is the multiplication by the product, and the zero operator is a product of nonzero parameters, $L_{\varepsilon}R_{\varepsilon}=0$: the fibre over zero has a component of nilpotent pairs.
-5. The sandwich with the conjugate is $q^{2}\operatorname{id}$, so the sandwich family is the ray $[0,\infty)$ of the identity and the parameters giving the identity are the two parallel lines $q=\pm1$: the conic of the previous categories has degenerated.
+5. The two-sided operator with the conjugate is $q^{2}\operatorname{id}$, so the two-sided family is the ray $[0,\infty)$ of the identity and the parameters giving the identity are the two parallel lines $q=\pm1$: the conic of the previous categories has degenerated.
 6. The Kronecker display is $\mathsf{M}_2(P)^{\mathsf{T}}\otimes\mathsf{M}_2(Q)$, of trace $4pq$, determinant $p^{4}q^{4}$, and rank in $\{0,1,2,4\}$: the second rank is not vacuous, and the value $2$ marks the pairs with exactly one nilpotent parameter.
 7. The monoid of two-sided operators is commutative, its group of units is the unit group of the algebra, and it fails to be a group through the zero divisors and not through a sign.
 8. The automorphisms are $\varphi_c(\varepsilon)=c\varepsilon$, realised by $\operatorname{diag}(c,1)$: inner in the ambient, outer in the algebra, the opposite of the complex case; the derivations are one-dimensional and no derivation is a multiplication.
@@ -359,7 +359,7 @@ of dimensions two, one and one. The family is the multiplication; with the scala
 | $L_\varepsilon$ | the square-zero generator $E$ of the family | this article |
 | $L_{Q}R_{P}$ | $X\mapsto QXP$, equal to $L_{QP}$ | this article |
 | $K_{Q,P}$ | the Kronecker display $\mathsf{M}_2(P)^{\mathsf{T}}\otimes\mathsf{M}_2(Q)$ | this article |
-| $\mathrm{Sd}_Q$ | the sandwich $X\mapsto QX\bar Q=q^{2}X$ | this article |
+| $\mathrm{Sd}_Q$ | the two-sided operator $X\mapsto QX\bar Q=q^{2}X$ | this article |
 | $c(T_Q)=(q,q')$ | the coefficient array of a member, a vector of length two | this article |
 | $c(Q,P)$ | the array of the pair, of rank one for a pair with both factors nonzero | this article |
 | $\ell$ | the length, in $\{0,1\}$ inside the span | this article |

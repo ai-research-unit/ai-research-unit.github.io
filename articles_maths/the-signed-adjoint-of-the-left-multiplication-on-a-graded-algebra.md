@@ -9,7 +9,7 @@ $$
 (\ell_a)^{\dagger}=\varrho_{\alpha(a)},\qquad \varrho_b(x)=\alpha(x)\,b,
 $$
 
-the **signed right multiplication** by $\alpha(a)$; the adjoint of the signed left multiplication is therefore a signed right multiplication, and the adjoint of the two-sided signed sandwich is assembled from the two. This article, the seventh of the `- * Operator Theory` group of the category, computes the adjoint of $\ell_a$, identifies it with a signed right multiplication, derives the self-adjointness and the isometry conditions for $\ell_a$, and reads the adjoint of the signed sandwich as the composite of the two one-sided adjoints. The signed left multiplication is *The Signed Left Multiplication on a Graded Algebra*; the form and the adjoint are *The Signed Adjoint Sandwich on a Graded Algebra*; the analytic theory of unitary operators belongs to a later Part and is named only.
+the **signed right multiplication** by $\alpha(a)$; the adjoint of the signed left multiplication is therefore a signed right multiplication, and the adjoint of the two-sided signed two-sided operator is assembled from the two. This article, the seventh of the `- * Operator Theory` group of the category, computes the adjoint of $\ell_a$, identifies it with a signed right multiplication, derives the self-adjointness and the isometry conditions for $\ell_a$, and reads the adjoint of the signed two-sided operator as the composite of the two one-sided adjoints. The signed left multiplication is *The Signed Left Multiplication on a Graded Algebra*; the form and the adjoint are *The Signed Adjoint Two-Sided Operator on a Graded Algebra*; the analytic theory of unitary operators belongs to a later Part and is named only.
 
 The base is a field $K$ of characteristic not two, $A$ a finite-dimensional graded algebra with grade involution $\alpha$ and a balanced α-compatible nondegenerate form $\beta$ with $\alpha^{\dagger}=\alpha$. The operators are $L_a,R_b$ (unsigned), $\ell_a=L_a\alpha$ (signed left) and $\varrho_b=R_b\alpha$ (signed right), and ${}^{\dagger}$ is the adjoint. The article uses the form algebraically and forms no length from it.
 
@@ -39,11 +39,11 @@ $$
 \boxed{\;(\ell_a)^{\dagger}=\varrho_{\alpha(a)},\qquad\text{that is}\qquad (\ell_a)^{\dagger}(x)=\alpha(x)\,\alpha(a)\;}.
 $$
 
-**Proof.** By *The Signed Adjoint Sandwich on a Graded Algebra*, $(\ell_a)^{\dagger}=\Sigma^{\alpha}_{1,\alpha(a)}$ (the case $b=1$ of the sandwich adjoint), and $\Sigma^{\alpha}_{1,\alpha(a)}(x)=1\cdot\alpha(x)\cdot\alpha(a)=\alpha(x)\alpha(a)=\varrho_{\alpha(a)}(x)$.
+**Proof.** By *The Signed Adjoint Two-Sided Operator on a Graded Algebra*, $(\ell_a)^{\dagger}=\Sigma^{\alpha}_{1,\alpha(a)}$ (the case $b=1$ of the two-sided operator adjoint), and $\Sigma^{\alpha}_{1,\alpha(a)}(x)=1\cdot\alpha(x)\cdot\alpha(a)=\alpha(x)\alpha(a)=\varrho_{\alpha(a)}(x)$.
 
 **Corollary.** The adjoint of the signed left multiplication is a signed right multiplication; the adjoint of the signed right multiplication is a signed left multiplication, $(\varrho_b)^{\dagger}=\ell_{\alpha(b)}$; and the adjoint operation exchanges the two families $L(A)\alpha$ and $R(A)\alpha$.
 
-**Proposition (the sandwich from the two adjoints).** The signed sandwich factors as $\Sigma^{\alpha}_{a,b}=\ell_a\circ R_{\alpha(b)}$, and its adjoint is the composite of the two one-sided adjoints,
+**Proposition (the two-sided operator from the two adjoints).** The signed two-sided factors as $\Sigma^{\alpha}_{a,b}=\ell_a\circ R_{\alpha(b)}$, and its adjoint is the composite of the two one-sided adjoints,
 
 $$
 \boxed{\;(\Sigma^{\alpha}_{a,b})^{\dagger}=R_{\alpha(b)}^{\,\dagger}\circ(\ell_a)^{\dagger}=L_{\alpha(b)}\circ\varrho_{\alpha(a)}=\Sigma^{\alpha}_{\alpha(b),\alpha(a)}\;},
@@ -72,7 +72,7 @@ $$
 $$
 Both are the identity exactly when the square of the element is $1$ and the element is central; the first gives $\alpha(a)$ central with $\alpha(a)^{2}=1$, the second $a$ central with $a^{2}=1$, and either central condition implies the other, since $\alpha(a)$ is central when $a$ is.
 
-**Corollary.** The isometric signed left multiplications are $\ell_a$ with $a$ central and $a^{2}=1$, of either parity; the element $a=1$ gives the grade involution $\alpha$, which is an isometry; and the isometry condition is the one-sided counterpart of the two-sided condition $b=a^{-1}$ of *The Signed Adjoint Sandwich on a Graded Algebra*.
+**Corollary.** The isometric signed left multiplications are $\ell_a$ with $a$ central and $a^{2}=1$, of either parity; the element $a=1$ gives the grade involution $\alpha$, which is an isometry; and the isometry condition is the one-sided counterpart of the two-sided condition $b=a^{-1}$ of *The Signed Adjoint Two-Sided Operator on a Graded Algebra*.
 
 ## Worked Case: Endomorphisms of a Graded Two-Dimensional Space
 
@@ -93,7 +93,7 @@ $$
 (\ell_a)^{\dagger}=\varrho_{\alpha(a)},\qquad \varrho_b(x)=\alpha(x)\,b,
 $$
 
-the **signed right multiplication** by $\alpha(a)$; the adjoint operation exchanges the two families $L(A)\alpha$ and $R(A)\alpha$. The signed sandwich factors as $\Sigma^{\alpha}_{a,b}=\ell_aR_{\alpha(b)}$, and its two-sided adjoint is assembled from the one-sided ones, $(\Sigma^{\alpha}_{a,b})^{\dagger}=L_{\alpha(b)}\varrho_{\alpha(a)}=\Sigma^{\alpha}_{\alpha(b),\alpha(a)}$, in agreement with the direct computation. The signed left multiplication is **self-adjoint** exactly when $a$ is central and even, and it is an **isometry** exactly when $a$ is central with $a^{2}=1$; the grade involution $\ell_1=\alpha$ satisfies both. The endomorphisms of a graded two-dimensional space are the worked case, where the formulas are explicit. The analytic theory of unitary operators belongs to a later Part.
+the **signed right multiplication** by $\alpha(a)$; the adjoint operation exchanges the two families $L(A)\alpha$ and $R(A)\alpha$. The signed two-sided factors as $\Sigma^{\alpha}_{a,b}=\ell_aR_{\alpha(b)}$, and its two-sided adjoint is assembled from the one-sided ones, $(\Sigma^{\alpha}_{a,b})^{\dagger}=L_{\alpha(b)}\varrho_{\alpha(a)}=\Sigma^{\alpha}_{\alpha(b),\alpha(a)}$, in agreement with the direct computation. The signed left multiplication is **self-adjoint** exactly when $a$ is central and even, and it is an **isometry** exactly when $a$ is central with $a^{2}=1$; the grade involution $\ell_1=\alpha$ satisfies both. The endomorphisms of a graded two-dimensional space are the worked case, where the formulas are explicit. The analytic theory of unitary operators belongs to a later Part.
 
 ## Summary of Notation
 
@@ -105,7 +105,7 @@ the **signed right multiplication** by $\alpha(a)$; the adjoint operation exchan
 | $L_a,R_b$ | unsigned left and right multiplication |
 | $\ell_a=L_a\alpha$ | the signed left multiplication |
 | $\varrho_b=R_b\alpha$ | the signed right multiplication |
-| $\Sigma^{\alpha}_{a,b}(x)=a\alpha(x)b$ | the signed sandwich |
+| $\Sigma^{\alpha}_{a,b}(x)=a\alpha(x)b$ | the signed two-sided operator |
 | ${}^{\dagger}$ | the adjoint with respect to $\beta$ |
 
 ## Further Reading

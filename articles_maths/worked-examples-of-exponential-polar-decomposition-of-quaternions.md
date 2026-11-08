@@ -30,7 +30,7 @@ $$
 =q_t^2+q_x^2+q_y^2+q_z^2 .
 $$
 
-The modulus is $r=\sqrt{\langle\tilde q\rangle_{\natural}}>0$, the angle is $\theta=\arccos(q_t/r)\in[0,\pi]$, and the axis $\vec n$ is a unit pure quaternion. The angle $\theta$ is the **exponent angle**, the half-angle stored in the rotor; the rotation produced by the sandwich is $2\theta$. This is the convention of *Exponential Polar Decomposition of Quaternions*. The biquaternion article writes its rotor as $\exp(\frac{\theta_{\mathrm b}}{2}\vec u_{\mathrm r})$, where $\theta_{\mathrm b}$ is its rotation angle; here $\theta_{\mathrm b}=2\theta$, so its exponent angle is $\theta$. The entries of the two case tables can be set side by side, but the biquaternion table's $\theta$ is the rotation angle, while the $\theta$ here is the exponent angle, half of it.
+The modulus is $r=\sqrt{\langle\tilde q\rangle_{\natural}}>0$, the angle is $\theta=\arccos(q_t/r)\in[0,\pi]$, and the axis $\vec n$ is a unit pure quaternion. The angle $\theta$ is the **exponent angle**, the half-angle stored in the rotor; the rotation produced by the two-sided operator is $2\theta$. This is the convention of *Exponential Polar Decomposition of Quaternions*. The biquaternion article writes its rotor as $\exp(\frac{\theta_{\mathrm b}}{2}\vec u_{\mathrm r})$, where $\theta_{\mathrm b}$ is its rotation angle; here $\theta_{\mathrm b}=2\theta$, so its exponent angle is $\theta$. The entries of the two case tables can be set side by side, but the biquaternion table's $\theta$ is the rotation angle, while the $\theta$ here is the exponent angle, half of it.
 
 The quaternion case has no phase $\alpha$, no rapidity $\theta_{\mathrm{rpd}}$ and no Hermitian factor: the modulus is a positive real and the unit factor is a single rotor. Errors are the largest modulus of a coefficient difference and are computed in double precision; a displayed zero is exact in that precision, and displayed decimals are rounded.
 
@@ -72,7 +72,7 @@ $$
 \vec n=\frac{\vec q}{\sqrt{\langle\vec q\rangle_{\natural}}}
 $$
 
-when $\vec q\neq0$. The unit factor is a rotor: it lies on $S^3$, and its sandwich rotates by $2\theta$ about $\vec n$.
+when $\vec q\neq0$. The unit factor is a rotor: it lies on $S^3$, and its two-sided operator rotates by $2\theta$ about $\vec n$.
 
 There is no Hermitian factor to split off. In the biquaternion case the unit factor factors as $\tilde U_{\mathrm b}\tilde u_{\mathrm r}$, a Hermitian positive factor and a $*$-unitary factor, with two angles and two axes. Here the Hermitian factor is the identity and the $*$-unitary factor is the whole unit factor. The two objects of the decomposition are the scale $r$ and the rotor $\tilde u_{\mathrm r}$; the axis is a coordinate of the rotor, not a third factor.
 
@@ -729,7 +729,7 @@ The quaternion case is the definite compact companion of the biquaternion case: 
 | $\theta=\arccos(q_t/r)\in[0,\pi]$ | the exponent angle, half the rotation angle |
 | $\vec n=\vec q/\sqrt{\langle\vec q\rangle_{\natural}}$ | the axis, undefined when $\vec q=0$ |
 | $\tilde u_{\mathrm r}=\cos\theta+\vec n\sin\theta$ | the rotor, the unit factor |
-| $2\theta$ | the rotation angle of the sandwich |
+| $2\theta$ | the rotation angle of the two-sided operator |
 | $\tilde q_{\log}=\ln r+\theta\vec n$ | the exponent |
 | $\log\tilde q$ | the principal logarithm on $\mathbb{H}\setminus(-\infty,0]$ |
 | $D(\tilde h)$ | the defect of a candidate exponent |

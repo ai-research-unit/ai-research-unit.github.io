@@ -60,13 +60,13 @@ is an involution of $\mathbb{H}$, and conversely the involutions of $\mathbb{H}$
 
 **Corollary.** The involutions $\operatorname{Ad}_\nu$ of the coordinate axes are the three maps $\operatorname{Ad}_k$ of *Quaternion Augmented Statistics*, and the involution about the axis $\vec e_x$ is the half-turn of the example of *Quaternion Automorphisms and Derivations*.
 
-### Not Every Self-Inverse Sandwich Is an Involution
+### Not Every Self-Inverse Two-Sided Operator Is an Involution
 
 **Proposition.** For unit vectors $\nu_1,\nu_2$ the map $g(\tilde q) = \nu_1\tilde q\nu_2$ is its own inverse, $g^2 = \mathrm{id}$. It is multiplicative, hence an involution, exactly when $\nu_2 = -\nu_1$, and then it is $\operatorname{Ad}_{\nu_1}$. In particular a map $\nu_1\tilde q\nu_2$ with $\nu_2\neq-\nu_1$ is self-inverse and is not an involution.
 
 *Proof.* The square is $g(g(\tilde q)) = \nu_1^2\tilde q\nu_2^2 = \tilde q$, since $\nu_1^2 = \nu_2^2 = -e_t$. For multiplicativity, $g(\tilde p)g(\tilde q) = \nu_1\tilde p\nu_2\nu_1\tilde q\nu_2$ and $g(\tilde p\tilde q) = \nu_1\tilde p\tilde q\nu_2$; the two agree for all $\tilde p,\tilde q$ exactly when $\nu_2\nu_1 = e_t$ — set $\tilde p = \tilde q = e_t$ and cancel — that is exactly when $\nu_2 = \nu_1^{-1} = -\nu_1$, and then $g(\tilde q) = -\nu_1\tilde q\nu_1 = \operatorname{Ad}_{\nu_1}(\tilde q)$.
 
-The proposition is the reason Axiom 3 is not redundant: the self-inverse sandwiches of that shape form a four-dimensional family, the involutions a two-dimensional one, the projective plane.
+The proposition is the reason Axiom 3 is not redundant: the self-inverse two-sided operators of that shape form a four-dimensional family, the involutions a two-dimensional one, the projective plane.
 
 ## The Geometry of an Involution
 

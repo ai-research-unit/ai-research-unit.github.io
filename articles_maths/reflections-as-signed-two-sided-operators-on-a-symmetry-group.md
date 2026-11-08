@@ -9,9 +9,9 @@ $$
 \rho_u(v) = u\,\alpha(v)\,u^{-1}, \qquad v \in V,
 $$
 
-while the unsigned inner conjugation $uvu^{-1}$ gives its negative. This article treats a single reflection as a signed two-sided operator: the involution property, the fixed hyperplane, the eigenvalues, the determinant, the generation of the rotation group by products of two reflections, and the failure of the whole correspondence for isotropic vectors and for a degenerate form. It is the single-reflection case of *The Signed Sandwich on a Symmetry Group*, the previous article of this group, and it isolates what the reflection adds to the general signed sandwich: the involution and the hyperplane.
+while the unsigned inner conjugation $uvu^{-1}$ gives its negative. This article treats a single reflection as a signed two-sided operator: the involution property, the fixed hyperplane, the eigenvalues, the determinant, the generation of the rotation group by products of two reflections, and the failure of the whole correspondence for isotropic vectors and for a degenerate form. It is the single-reflection case of *The Signed Two-Sided Operator on a Symmetry Group*, the previous article of this group, and it isolates what the reflection adds to the general signed two-sided operator: the involution and the hyperplane.
 
-Reflections, their generation theorem and the orthogonal group are *Isometries and Orthogonal Transformations*; the sign of a reflection and its place in the orientation are *The Rotation Group and Orientation*; the realisation in the Clifford algebra, the pin group and the signed inner conjugation are *The Clifford, Pin and Spin Groups with Signed Inner Conjugation* and *Two-Sided Operators on a Clifford Algebra with Signed Inner Conjugation*, and the reflection formula there is quoted, not re-derived. The signed sandwich and the grade involution are the previous article of this group. No adjoint is taken; the adjoint of the reflection is *The Signed Adjoint of the Reflection on a Symmetry Group*, in the group `- * Operator Theory` of this category.
+Reflections, their generation theorem and the orthogonal group are *Isometries and Orthogonal Transformations*; the sign of a reflection and its place in the orientation are *The Rotation Group and Orientation*; the realisation in the Clifford algebra, the pin group and the signed inner conjugation are *The Clifford, Pin and Spin Groups with Signed Inner Conjugation* and *Two-Sided Operators on a Clifford Algebra with Signed Inner Conjugation*, and the reflection formula there is quoted, not re-derived. The signed two-sided operator and the grade involution are the previous article of this group. No adjoint is taken; the adjoint of the reflection is *The Signed Adjoint of the Reflection on a Symmetry Group*, in the group `- * Operator Theory` of this category.
 
 The article has four sections: the reflections of a form; the reflection as a signed two-sided operator; its properties and the generation of the rotations; and the failure in the degenerate case. Throughout, $V$ is a finite-dimensional space over a field $F$ of characteristic not $2$ with a non-degenerate quadratic form $\mathfrak{Q}$ and polar form $B$, $u \in V$ a vector of nonzero norm, and $\rho_u$ the reflection in $u^{\perp}$.
 
@@ -45,7 +45,7 @@ $$
 \mathrm{Ad}^{\alpha}_u(x) = u\,\alpha(x)\,u^{-1}, \qquad x \in \mathrm{Cl}(V,\mathfrak{Q}),
 $$
 
-where $\alpha$ is the grade involution, *The Signed Sandwich on a Symmetry Group*.
+where $\alpha$ is the grade involution, *The Signed Two-Sided Operator on a Symmetry Group*.
 
 **Theorem.** The restriction of the signed inner conjugation to the vectors is the reflection:
 
@@ -58,9 +58,9 @@ Hence the reflection of the form is a signed two-sided operator and the unsigned
 
 **Proof.** For a vector $u$ one has $\alpha(u) = -u$, so $\mathrm{Ad}^{\alpha}_u(v) = -uvu^{-1}$; the fundamental relation $uvu = 2B(u,v)u - \mathfrak{Q}(u)v$ of the Clifford algebra gives $uvu^{-1} = 2B(u,v)\mathfrak{Q}(u)^{-1}u - v = -\rho_u(v)$, and the two displayed identities follow. This is *The Clifford, Pin and Spin Groups with Signed Inner Conjugation*, quoted.
 
-### The Sandwich with a Vector on One Side
+### The Two-Sided Operator with a Vector on One Side
 
-**Proposition (why the one-sided form is not a reflection).** The signed sandwich with one vector parameter,
+**Proposition (why the one-sided form is not a reflection).** The signed two-sided operator with one vector parameter,
 
 $$
 \mathcal{T}^{\alpha}_{u,e}(x) = u\,\alpha(x), \qquad \mathcal{T}^{\alpha}_{e,u}(x) = \alpha(x)\,u,
@@ -84,11 +84,11 @@ $$
 
 while on the whole Clifford algebra it is an involution composed with the grading: $\mathrm{Ad}^{\alpha}_u$ is an algebra automorphism on the even part and a twisted automorphism on the odd part, and its restriction to $V$ is the involution $\rho_u$ with the fixed hyperplane $u^{\perp}$ and the negated line $Fu$.
 
-**Proof.** On $V$ the composition is $\rho_u^2 = \mathrm{id}$ by the previous section; on the whole algebra the multiplicativity of $\mathrm{Ad}^{\alpha}_u$ holds up to the parity sign, which is the parity sign proposition of *The Signed Sandwich on a Symmetry Group*.
+**Proof.** On $V$ the composition is $\rho_u^2 = \mathrm{id}$ by the previous section; on the whole algebra the multiplicativity of $\mathrm{Ad}^{\alpha}_u$ holds up to the parity sign, which is the parity sign proposition of *The Signed Two-Sided Operator on a Symmetry Group*.
 
 ### Products of Two Reflections
 
-**Theorem (rotations as even signed sandwiches).** Let $u, w \in V$ have nonzero norm. The product of the two reflections is the signed sandwich by the even element $uw$,
+**Theorem (rotations as even signed two-sided operators).** Let $u, w \in V$ have nonzero norm. The product of the two reflections is the signed two-sided operator with the even element $uw$,
 
 $$
 \boxed{\;\rho_u \circ \rho_w = \mathrm{Ad}^{\alpha}_{uw} \quad \text{on } V\;},
@@ -130,7 +130,7 @@ and it is a rotation: it lies in $\operatorname{O}^+(V,\mathfrak{Q})$ and preser
 
 ## Summary
 
-A reflection of a quadratic space is the involutive isometry $\rho_u(v) = v - 2B(v,u)\mathfrak{Q}(u)^{-1}u$ fixing the hyperplane $u^{\perp}$ and negating the line $Fu$; it has determinant $-1$ and the eigenvalues $+1$ and $-1$, and by the theorem of Cartan–Dieudonné the reflections generate the orthogonal group and the even products generate the rotations. In the pin group the reflection is the signed inner conjugation by the vector $u$, $\rho_u(v) = u\alpha(v)u^{-1} = \mathrm{Ad}^{\alpha}_u(v)$, while the unsigned inner conjugation gives $-\rho_u(v)$; the correspondence is two-sided in an essential way, the one-sided signed operators not preserving $V$. The product of two reflections is the even signed sandwich $\mathrm{Ad}^{\alpha}_{uw} = \rho_u\rho_w$, a rotation, and the map $x \mapsto \mathrm{Ad}^{\alpha}_x$ is the double cover of the orthogonal group by the pin group with kernel the scalars. The correspondence holds exactly for the anisotropic vectors of a non-degenerate form: an isotropic vector is not a unit and indexes no reflection, and for a degenerate form the radical carries transvections that are isometries but not reflections, so the generation by reflections fails.
+A reflection of a quadratic space is the involutive isometry $\rho_u(v) = v - 2B(v,u)\mathfrak{Q}(u)^{-1}u$ fixing the hyperplane $u^{\perp}$ and negating the line $Fu$; it has determinant $-1$ and the eigenvalues $+1$ and $-1$, and by the theorem of Cartan–Dieudonné the reflections generate the orthogonal group and the even products generate the rotations. In the pin group the reflection is the signed inner conjugation by the vector $u$, $\rho_u(v) = u\alpha(v)u^{-1} = \mathrm{Ad}^{\alpha}_u(v)$, while the unsigned inner conjugation gives $-\rho_u(v)$; the correspondence is two-sided in an essential way, the one-sided signed operators not preserving $V$. The product of two reflections is the even signed two-sided operator $\mathrm{Ad}^{\alpha}_{uw} = \rho_u\rho_w$, a rotation, and the map $x \mapsto \mathrm{Ad}^{\alpha}_x$ is the double cover of the orthogonal group by the pin group with kernel the scalars. The correspondence holds exactly for the anisotropic vectors of a non-degenerate form: an isotropic vector is not a unit and indexes no reflection, and for a degenerate form the radical carries transvections that are isometries but not reflections, so the generation by reflections fails.
 
 No adjoint is taken here; the adjoint of the reflection as a signed operator is the article *The Signed Adjoint of the Reflection on a Symmetry Group* of the group `- * Operator Theory`.
 
@@ -143,7 +143,7 @@ No adjoint is taken here; the adjoint of the reflection as a signed operator is 
 | $u^{\perp}$ | the fixed hyperplane of $\rho_u$ |
 | $\mathrm{Ad}^{\alpha}_u$ | the signed inner conjugation by $u$; restricts to $\rho_u$ on $V$ |
 | $\mathrm{Ad}_u$ | the unsigned inner conjugation; restricts to $-\rho_u$ on $V$ |
-| $\mathcal{T}^{\alpha}_{a,b}$ | the signed sandwich; the reflection is the diagonal with a vector |
+| $\mathcal{T}^{\alpha}_{a,b}$ | the signed two-sided operator; the reflection is the diagonal with a vector |
 | $\operatorname{O}(V,\mathfrak{Q})$, $\operatorname{O}^+(V,\mathfrak{Q})$ | orthogonal and rotation groups |
 | $\operatorname{Pin}(V,\mathfrak{Q})$, $\operatorname{Spin}(V,\mathfrak{Q})$ | pin and spin groups; the double covers of the orthogonal and rotation groups |
 | $V^{\perp}$ | the radical of a degenerate form |

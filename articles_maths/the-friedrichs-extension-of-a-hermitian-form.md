@@ -104,7 +104,7 @@ $$
 
 so the Krein–von Neumann extension is the smallest and the Friedrichs extension the largest in the operator order.
 
-*Proof.* The Krein–von Neumann extension is defined by the boundary condition that the extension annihilates the kernel of the Friedrichs extension; the order statement is the translation of the form-domain inclusion, and the two extreme extensions sandwich all others because every form domain lies between the smallest and the largest, with the operator order reversed.
+*Proof.* The Krein–von Neumann extension is defined by the boundary condition that the extension annihilates the kernel of the Friedrichs extension; the order statement is the translation of the form-domain inclusion, and the two extreme extensions two-sided operator all others because every form domain lies between the smallest and the largest, with the operator order reversed.
 
 **Example (the Laplacian on a bounded domain).** For $\Omega$ a bounded smooth domain the operator $-\Delta$ on $C_c^\infty(\Omega)$ has deficiency indices $(n,n)$ with $n$ infinite; its Friedrichs extension is the Dirichlet Laplacian $-\Delta_D$ with form domain $H^1_0(\Omega)$, and its Krein–von Neumann extension is the operator whose form domain is $H^1(\Omega)$ with the boundary condition $\partial u/\partial n=0$ replaced by the vanishing of $A_N$ on the harmonic functions; the Robin problems interpolate between the two extremes, and this is the standard spectral picture of the extension theory.
 
@@ -125,7 +125,7 @@ A Hermitian form $t$ is semibounded below by $m$ if $t(u,u)\ge m\|u\|^2$, and th
 | $H_t$ | form space, the completion of $\mathcal{D}(t)$ |
 | $t(u,v)=\langle A_Fu,v\rangle$ | the Friedrichs extension |
 | $\mathcal{D}(A_F^{1/2})=H_t$ | form domain is the domain of the square root |
-| $A_N\le A\le A_F$ | Friedrichs and Krein–von Neumann extensions sandwich the rest |
+| $A_N\le A\le A_F$ | Friedrichs and Krein–von Neumann extensions two-sided operator the rest |
 | $H^1_0(\Omega)$ | form space of the Dirichlet form |
 | Dirichlet Laplacian | Friedrichs extension of $-\Delta$ on $C_c^\infty(\Omega)$ |
 

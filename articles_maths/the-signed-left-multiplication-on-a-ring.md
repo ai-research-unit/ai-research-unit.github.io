@@ -7,7 +7,7 @@ The **signed left multiplication** by an element $a$ of a graded ring is the twi
 $$T_a(x) = a\,\alpha(x).$$
 It is not an endomorphism of the ring — it is not even multiplicative in the ordinary sense — but it is a twisted homomorphism, $T_a(xy) = T_a(x)\,\alpha(y)$, and it is the one-sided operator out of which the reflection $r_u = T_u\circ R_{u^{-1}}$ is built. This article studies $T_a$ as an operator: its relation to the plain left multiplication $L_a$, its composition and twisted multiplicativity, its kernel and image, and the point at which it becomes an automorphism.
 
-The signed left multiplication is the one-sided member of the signed family of *The Signed Sandwich on a Ring*: with a right factor it gives the signed sandwich $\mathcal{T}^{\alpha}_{a,b} = T_a\circ R_b$, and with the unit as right factor it gives the reflection. The article stays inside Part I: the grade involution $\alpha$ is an automorphism of the ring, the operator $T_a$ is additive, and no distance, form or norm occurs. The comparison throughout is with the plain left multiplication $L_a(x) = ax$ of *Left and Right Multiplication in a Ring*, which is recovered as the case $\alpha = \mathrm{id}$.
+The signed left multiplication is the one-sided member of the signed family of *The Signed Two-Sided Operator on a Ring*: with a right factor it gives the signed two-sided operator $\mathcal{T}^{\alpha}_{a,b} = T_a\circ R_b$, and with the unit as right factor it gives the reflection. The article stays inside Part I: the grade involution $\alpha$ is an automorphism of the ring, the operator $T_a$ is additive, and no distance, form or norm occurs. The comparison throughout is with the plain left multiplication $L_a(x) = ax$ of *Left and Right Multiplication in a Ring*, which is recovered as the case $\alpha = \mathrm{id}$.
 
 Throughout, $A$ is a ring with $1 \neq 0$, not assumed commutative; $\alpha$ is a grade involution, $\alpha^2 = \mathrm{id}$; $L_a$, $R_a$ are the one-sided multiplications; and $T_a$ is the signed left multiplication. The notation $\alpha A$ means the image of $A$ under $\alpha$, which is $A$ itself.
 
@@ -43,7 +43,7 @@ $$
 T_a = L_a\circ\alpha, \qquad T_{\alpha(a)} = \alpha\circ L_a, \qquad L_a = T_a\circ\alpha, \qquad \alpha\,L_a\,\alpha^{-1} = L_{\alpha(a)} .
 $$
 
-**Proof.** The first is the definition. The second is $\alpha L_a(x) = \alpha(ax) = \alpha(a)\alpha(x) = T_{\alpha(a)}(x)$. The third is $T_a(\alpha(x)) = a\alpha^2(x) = ax$. The fourth follows from the first two, $\alpha L_a\alpha^{-1} = T_{\alpha(a)}\alpha = L_{\alpha(a)}$, and it is the conjugation law already recorded in *The Signed Sandwich on a Ring*.
+**Proof.** The first is the definition. The second is $\alpha L_a(x) = \alpha(ax) = \alpha(a)\alpha(x) = T_{\alpha(a)}(x)$. The third is $T_a(\alpha(x)) = a\alpha^2(x) = ax$. The fourth follows from the first two, $\alpha L_a\alpha^{-1} = T_{\alpha(a)}\alpha = L_{\alpha(a)}$, and it is the conjugation law already recorded in *The Signed Two-Sided Operator on a Ring*.
 
 **Corollary (recovering the plain case).** $T_a = L_a$ for every $a$ exactly when $\alpha = \mathrm{id}$; for a nontrivial grade involution the two families differ whenever $\alpha(a) \neq a$ somewhere, that is, whenever $A$ has a nonzero odd part.
 
@@ -85,7 +85,7 @@ $$
 
 In particular the product of two signed left multiplications is a plain left multiplication, and the product of one of each is a signed one.
 
-### Comparison with the reflection and the sandwich
+### Comparison with the reflection and the two-sided operator
 
 **Proposition.** For a unit $u$ the reflection of *Reflections as Signed Two-Sided Operators on a Ring* factors through the signed left multiplication:
 
@@ -93,9 +93,9 @@ $$
 r_u(x) = u\,\alpha(x)\,u^{-1} = T_u\bigl(R_{u^{-1}}(x)\bigr) = \bigl(T_u \circ R_{u^{-1}}\bigr)(x),
 $$
 
-and generally the signed sandwich is $\mathcal{T}^{\alpha}_{a,b} = T_a \circ R_b$ for all $a, b \in A$.
+and generally the signed two-sided operator is $\mathcal{T}^{\alpha}_{a,b} = T_a \circ R_b$ for all $a, b \in A$.
 
-**Proof.** $T_u(R_{u^{-1}}(x)) = T_u(xu^{-1}) = u\alpha(xu^{-1}) = u\alpha(x)\alpha(u)^{-1} = u\alpha(x)u^{-1}$, since $\alpha(u^{-1}) = \alpha(u)^{-1}$; the sandwich statement is the definition $\mathcal{T}^{\alpha}_{a,b}(x) = a\alpha(x)b$ together with $R_b(x) = xb$.
+**Proof.** $T_u(R_{u^{-1}}(x)) = T_u(xu^{-1}) = u\alpha(xu^{-1}) = u\alpha(x)\alpha(u)^{-1} = u\alpha(x)u^{-1}$, since $\alpha(u^{-1}) = \alpha(u)^{-1}$; the two-sided operator statement is the definition $\mathcal{T}^{\alpha}_{a,b}(x) = a\alpha(x)b$ together with $R_b(x) = xb$.
 
 ## Kernel, Image and Invertibility
 
@@ -165,7 +165,7 @@ so $T_u^2$ is the negation of the identity and $T_u$ is not an involution; the r
 
 ## Summary
 
-For a ring $A$ with a grade involution $\alpha$, the **signed left multiplication** by $a$ is $T_a(x) = a\alpha(x) = L_a\circ\alpha = \alpha\circ L_{\alpha(a)}$. It is additive in its parameter with $T_a(1) = a$ and injective in $a$, and it recovers the plain left multiplication as $L_a = T_a\circ\alpha$, so that the two families coincide exactly when $\alpha = \mathrm{id}$. It is not a ring endomorphism but a **twisted** one: $T_a(xy) = T_a(x)\alpha(y)$. Its compositions are $T_aT_b = L_{a\alpha(b)}$, $T_aL_b = T_{a\alpha(b)}$ and $L_bT_a = T_{ba}$, so the plain and signed left multiplications together form a monoid, the twisted semidirect product $A \rtimes A$, and the reflection and the signed sandwich factor through it as $\mathcal{T}^{\alpha}_{a,b} = T_aR_b$ and $r_u = T_uR_{u^{-1}}$. The kernel of $T_a$ is $\alpha^{-1}(\ell(a))$, its image is the left ideal $Aa$, and it is invertible exactly when $a$ is a unit, with inverse $T_{\alpha(a)^{-1}}$.
+For a ring $A$ with a grade involution $\alpha$, the **signed left multiplication** by $a$ is $T_a(x) = a\alpha(x) = L_a\circ\alpha = \alpha\circ L_{\alpha(a)}$. It is additive in its parameter with $T_a(1) = a$ and injective in $a$, and it recovers the plain left multiplication as $L_a = T_a\circ\alpha$, so that the two families coincide exactly when $\alpha = \mathrm{id}$. It is not a ring endomorphism but a **twisted** one: $T_a(xy) = T_a(x)\alpha(y)$. Its compositions are $T_aT_b = L_{a\alpha(b)}$, $T_aL_b = T_{a\alpha(b)}$ and $L_bT_a = T_{ba}$, so the plain and signed left multiplications together form a monoid, the twisted semidirect product $A \rtimes A$, and the reflection and the signed two-sided factor through it as $\mathcal{T}^{\alpha}_{a,b} = T_aR_b$ and $r_u = T_uR_{u^{-1}}$. The kernel of $T_a$ is $\alpha^{-1}(\ell(a))$, its image is the left ideal $Aa$, and it is invertible exactly when $a$ is a unit, with inverse $T_{\alpha(a)^{-1}}$.
 
 ## Summary of Notation
 
@@ -181,7 +181,7 @@ For a ring $A$ with a grade involution $\alpha$, the **signed left multiplicatio
 | $\ker T_a = \alpha^{-1}(\ell(a))$ | Kernel, the $\alpha$-pullback of the left annihilator |
 | $\operatorname{im} T_a = Aa$ | Image, the left ideal generated by $a$ |
 | $T_a^{-1} = T_{\alpha(a)^{-1}}$ | Inverse on the units |
-| $\mathcal{T}^{\alpha}_{a,b} = T_aR_b$, $r_u = T_uR_{u^{-1}}$ | Sandwich and reflection through $T$ |
+| $\mathcal{T}^{\alpha}_{a,b} = T_aR_b$, $r_u = T_uR_{u^{-1}}$ | Two-Sided Operator and reflection through $T$ |
 
 ## Further Reading
 

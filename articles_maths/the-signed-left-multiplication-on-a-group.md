@@ -3,9 +3,9 @@
 
 ## Introduction
 
-The one-sided signed operator on a graded group is the left multiplication with the grade involution inserted, $x\mapsto a\,\alpha(x)$. It is the one-sided member of the signed family, the value of the signed sandwich with the right factor the identity, and the operator obtained from the left translation by composing with the grade involution. This article fixes it, relates it to the unsigned left multiplication, derives the law by which two of them compose — a product of two signed left multiplications is an unsigned one — and computes the elements that it fixes.
+The one-sided signed operator on a graded group is the left multiplication with the grade involution inserted, $x\mapsto a\,\alpha(x)$. It is the one-sided member of the signed family, the value of the signed two-sided operator with the right factor the identity, and the operator obtained from the left translation by composing with the grade involution. This article fixes it, relates it to the unsigned left multiplication, derives the law by which two of them compose — a product of two signed left multiplications is an unsigned one — and computes the elements that it fixes.
 
-The article assumes the elementary theory of groups from *Groups*, the grade involution and the fixed subgroup $G^{\alpha}$ from *Involutive Groups*, the left and right translations and the left regular subgroup from *Left and Right Multiplication in a Group*, and the signed sandwich and its composition laws from *The Signed Sandwich on a Group*. The two-sided signed operators are *The Signed Sandwich on a Group*; the adjoint of this operator is *The Signed Adjoint of the Left Multiplication on a Group*; and the module-theoretic graded action is *The Graded Action on a Module over a Group*. No distance, no norm and no form is used.
+The article assumes the elementary theory of groups from *Groups*, the grade involution and the fixed subgroup $G^{\alpha}$ from *Involutive Groups*, the left and right translations and the left regular subgroup from *Left and Right Multiplication in a Group*, and the signed two-sided operator and its composition laws from *The Signed Two-Sided Operator on a Group*. The two-sided signed operators are *The Signed Two-Sided Operator on a Group*; the adjoint of this operator is *The Signed Adjoint of the Left Multiplication on a Group*; and the module-theoretic graded action is *The Graded Action on a Module over a Group*. No distance, no norm and no form is used.
 
 ## The Operator
 
@@ -15,9 +15,9 @@ $$
 \ell_a : G\longrightarrow G, \qquad \ell_a(x) = a\,\alpha(x) .
 $$
 
-**Proposition (factorisation).** $\ell_a = L_a\circ\alpha = \Sigma^{\alpha}_{a,e}$, the left translation composed with the grade involution, equivalently the signed sandwich with right factor $e$. In particular $\ell_a$ is a bijection of $G$, with inverse $\ell_a^{-1}=\alpha\circ L_{a^{-1}}=\ell_{a\alpha(a)}$ evaluated as $x\mapsto\alpha(a^{-1}x)$; and $\ell_e=\alpha$, whose fixed subgroup is $G^{\alpha}$.
+**Proposition (factorisation).** $\ell_a = L_a\circ\alpha = \Sigma^{\alpha}_{a,e}$, the left translation composed with the grade involution, equivalently the signed two-sided operator with right factor $e$. In particular $\ell_a$ is a bijection of $G$, with inverse $\ell_a^{-1}=\alpha\circ L_{a^{-1}}=\ell_{a\alpha(a)}$ evaluated as $x\mapsto\alpha(a^{-1}x)$; and $\ell_e=\alpha$, whose fixed subgroup is $G^{\alpha}$.
 
-**Proof.** $L_a(\alpha(x))=a\alpha(x)$ is the definition, and $\Sigma^{\alpha}_{a,e}(x)=a\alpha(x)$ by the signed sandwich, so the two agree. A composite of bijections is a bijection. For the inverse, $L_{a^{-1}}(\ell_a(x))=a^{-1}a\alpha(x)=\alpha(x)$, so $\alpha L_{a^{-1}}$ is a left inverse and hence the inverse. When $a=e$, $\ell_e=\alpha$, and the fixed set of $\alpha$ is the fixed subgroup $G^{\alpha}$ of *Involutive Groups*.
+**Proof.** $L_a(\alpha(x))=a\alpha(x)$ is the definition, and $\Sigma^{\alpha}_{a,e}(x)=a\alpha(x)$ by the signed two-sided operator, so the two agree. A composite of bijections is a bijection. For the inverse, $L_{a^{-1}}(\ell_a(x))=a^{-1}a\alpha(x)=\alpha(x)$, so $\alpha L_{a^{-1}}$ is a left inverse and hence the inverse. When $a=e$, $\ell_e=\alpha$, and the fixed set of $\alpha$ is the fixed subgroup $G^{\alpha}$ of *Involutive Groups*.
 
 **Proposition (the composition law).** For all $a,b\in G$,
 

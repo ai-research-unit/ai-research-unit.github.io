@@ -7,7 +7,7 @@ A projection of a projective space is the map that sends a point along the lines
 
 The article develops the linear projection operator and its decomposition, the central projection of a projective space and its domain, the **perspectivity** between two figures of the same dimension, and the one-sided algebra that the projections form: the order by the inclusion of the kernels, the action of the projective group on the set of the projections, and the matrix of an idempotent. It closes with the harmonic conjugation and the complete quadrangle, in which the projection of the projective line is the classical construction of the fourth harmonic point.
 
-The article assumes *Projective Geometry* for the projective space, its subspaces, the join and the meet, the incidence and the fundamental theorem; *Operators on a Projective Space* for the operator group $PGL(V)$, the two-sided sandwich and the action on the frames; and *Vector Spaces* for the linear projections and the decomposition of a vector space as a direct sum. The projective projection is a rational map, and the general theory of such maps is Part II algebraic geometry; the article names it and defers its treatment. No distance and no form is introduced, and no physics is invoked.
+The article assumes *Projective Geometry* for the projective space, its subspaces, the join and the meet, the incidence and the fundamental theorem; *Operators on a Projective Space* for the operator group $PGL(V)$, the two-sided operator and the action on the frames; and *Vector Spaces* for the linear projections and the decomposition of a vector space as a direct sum. The projective projection is a rational map, and the general theory of such maps is Part II algebraic geometry; the article names it and defers its treatment. No distance and no form is introduced, and no physics is invoked.
 
 ## The Linear Projection Operator
 
@@ -130,7 +130,7 @@ The **kernel** and the **image** of a projection are the two figures it determin
 
 **Proof.** The projection with a given kernel $U$ and image $W$ is unique, since it is determined on $U$ and on $W$; conversely a projection determines its kernel and its image, and the direct sum decomposition holds. The statement is the elementary decomposition theorem of a vector space, cited to *Vector Spaces*.
 
-**Proposition.** The projective group acts on the set of the projections by the sandwich
+**Proposition.** The projective group acts on the set of the projections by the two-sided operator
 
 $$
 \boxed{\;P \longmapsto [A]\,P\,[A]^{-1}\;} ,
@@ -140,7 +140,7 @@ the action preserves the rank, the orbit of a projection is the set of the proje
 
 **Proof.** Conjugation by an invertible map carries an idempotent to an idempotent, carries the kernel and the image to their images under the conjugation, and preserves the rank; two projections of the same rank are conjugate because their kernels and their images have the same dimension and may be matched by an invertible map. The action is the two-sided action of the projective group restricted to the idempotents.
 
-**Corollary (the trace and the rank).** The rank of a projection is its trace, and the trace is invariant under the sandwich action; for the projectivisation the dimension of the target figure is $\operatorname{tr} P - 1$, so the trace is the numerical invariant of a projection under the projective group.
+**Corollary (the trace and the rank).** The rank of a projection is its trace, and the trace is invariant under the two-sided action; for the projectivisation the dimension of the target figure is $\operatorname{tr} P - 1$, so the trace is the numerical invariant of a projection under the projective group.
 
 ## Projections and Harmonic Conjugation
 
@@ -160,7 +160,7 @@ and the assignment $c \mapsto d$ is the **harmonic involution** of the line with
 
 ## Summary
 
-A projection is the idempotent operator of a vector space or of a projective space determined by a centre and a complement: the linear projection onto $W$ along $U$ satisfies $P^2 = P$, has image $W$ and kernel $U$, and its matrix in an adapted basis is the block idempotent $\operatorname{diag}(0,I_r)$ with trace the rank $r$. Its projectivisation is the central projection $\pi_U([v]) = [P(v)]$, defined off the centre, surjective onto $\mathbb{P}(W)$, with the joins through the centre as fibres; it is a rational map and not a collineation. The restriction of a central projection to a pair of complementary figures is a **perspectivity**, a projectivity between them, and the perspectivities generate the projective group, with the theorem of Desargues as the incidence statement. The projections onto a fixed target form the set $\mathcal{P}(W)$ of the idempotents of $\operatorname{End}_k(V)$ with that image, in bijection with the complements of $W$, and the projective group acts on them by the sandwich $P \mapsto [A]P[A]^{-1}$ preserving the rank; the trace is the invariant of the action. On the projective line the projection of the complete quadrangle gives the harmonic conjugation, the involution with cross ratio $-1$, which is the boundary form of the reflection.
+A projection is the idempotent operator of a vector space or of a projective space determined by a centre and a complement: the linear projection onto $W$ along $U$ satisfies $P^2 = P$, has image $W$ and kernel $U$, and its matrix in an adapted basis is the block idempotent $\operatorname{diag}(0,I_r)$ with trace the rank $r$. Its projectivisation is the central projection $\pi_U([v]) = [P(v)]$, defined off the centre, surjective onto $\mathbb{P}(W)$, with the joins through the centre as fibres; it is a rational map and not a collineation. The restriction of a central projection to a pair of complementary figures is a **perspectivity**, a projectivity between them, and the perspectivities generate the projective group, with the theorem of Desargues as the incidence statement. The projections onto a fixed target form the set $\mathcal{P}(W)$ of the idempotents of $\operatorname{End}_k(V)$ with that image, in bijection with the complements of $W$, and the projective group acts on them by the two-sided operator $P \mapsto [A]P[A]^{-1}$ preserving the rank; the trace is the invariant of the action. On the projective line the projection of the complete quadrangle gives the harmonic conjugation, the involution with cross ratio $-1$, which is the boundary form of the reflection.
 
 ## Summary of Notation
 
@@ -176,7 +176,7 @@ A projection is the idempotent operator of a vector space or of a projective spa
 | perspectivity | Projectivity between two figures from a common centre |
 | $[a:b:c:d] = -1$ | Harmonic conjugation, cross ratio minus one |
 | harmonic involution | Projective involution fixing the pair and exchanging the conjugates |
-| $P \mapsto [A]P[A]^{-1}$ | Sandwich action of the projective group on the projections |
+| $P \mapsto [A]P[A]^{-1}$ | Two-Sided Operator action of the projective group on the projections |
 
 ## Further Reading
 

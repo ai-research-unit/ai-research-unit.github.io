@@ -35,7 +35,7 @@ $$
 
 **Proof.** The algebra laws are those of *The Convolution Algebra $L^1(G)$*; the two structural statements are the commutative and unital criteria there.
 
-**Remark (two involutions, not one).** The map $f^*$ is an **anti**-automorphism of order two, the structure of the `- * Theory` group. The grade involution $\alpha$ of *The Signed Sandwich on the Group Algebra*, an **auto**morphism of order two, is a different operation on the same algebra; the two coincide on a commutative group algebra and on the sign character they need not. No statement about $f^*$ is a statement about $\alpha$, and the article keeps them apart.
+**Remark (two involutions, not one).** The map $f^*$ is an **anti**-automorphism of order two, the structure of the `- * Theory` group. The grade involution $\alpha$ of *The Signed Two-Sided Operator on the Group Algebra*, an **auto**morphism of order two, is a different operation on the same algebra; the two coincide on a commutative group algebra and on the sign character they need not. No statement about $f^*$ is a statement about $\alpha$, and the article keeps them apart.
 
 ## The Classes of Elements
 

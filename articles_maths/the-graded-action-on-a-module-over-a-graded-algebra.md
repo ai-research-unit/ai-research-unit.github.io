@@ -3,7 +3,7 @@
 
 ## Introduction
 
-A module over a graded algebra is itself graded, and the action must respect the two gradings: the product of an element of degree $i$ with an element of degree $j$ has degree $i+j$. This article treats the **graded action**: the definition of a graded module over a graded algebra, the parity of the operators the action defines, the requirement that the action be a homomorphism of graded algebras, the **sign rule** that this requirement imposes through the graded commutativity of the algebra, and the form the rule takes when the algebra is a graded Lie algebra, whose bracket enters with the Koszul sign $(-1)^{|a||b|}$. The graded algebra, the parity and the Koszul sign rule are *Superalgebras and Graded Structures*; the signed one-sided and two-sided operators are *The Signed Left Multiplication on a Graded Algebra* and *The Signed Sandwich on a Graded Algebra*; the adjoint version of the action is *The Graded Adjoint Action on a Module over a Graded Algebra* in the `- * Operator Theory` group, deferred here.
+A module over a graded algebra is itself graded, and the action must respect the two gradings: the product of an element of degree $i$ with an element of degree $j$ has degree $i+j$. This article treats the **graded action**: the definition of a graded module over a graded algebra, the parity of the operators the action defines, the requirement that the action be a homomorphism of graded algebras, the **sign rule** that this requirement imposes through the graded commutativity of the algebra, and the form the rule takes when the algebra is a graded Lie algebra, whose bracket enters with the Koszul sign $(-1)^{|a||b|}$. The graded algebra, the parity and the Koszul sign rule are *Superalgebras and Graded Structures*; the signed one-sided and two-sided operators are *The Signed Left Multiplication on a Graded Algebra* and *The Signed Two-Sided Operator on a Graded Algebra*; the adjoint version of the action is *The Graded Adjoint Action on a Module over a Graded Algebra* in the `- * Operator Theory` group, deferred here.
 
 The base is a commutative ring $R$ with $1$, $A=A^0\oplus A^1$ is a $\mathbb{Z}/2$-graded associative algebra with grade involution $\alpha$, and $M=M^0\oplus M^1$ is a $\mathbb{Z}/2$-graded $R$-module. The action is written $(a,m)\mapsto a\cdot m$, the endomorphisms of the module by $\operatorname{End}_R(M)$, and the $A$-linear endomorphisms by $\operatorname{End}_A(M)$. The article reasons with the ring structure and the grading only.
 
@@ -72,7 +72,7 @@ for homogeneous $a,b,m$.
 
 ## The Graded Bimodule and the Signed Action
 
-**Proposition.** If $M$ has both a left and a right $A$-action with $(am)b=a(mb)$, then $M$ is a graded $A$-bimodule; the signed left multiplication $\ell_a$ of *The Signed Left Multiplication on a Graded Algebra* gives a right-module example, $\ell_a(m)=a\alpha(m)$, and the signed sandwich is the composite of the two actions.
+**Proposition.** If $M$ has both a left and a right $A$-action with $(am)b=a(mb)$, then $M$ is a graded $A$-bimodule; the signed left multiplication $\ell_a$ of *The Signed Left Multiplication on a Graded Algebra* gives a right-module example, $\ell_a(m)=a\alpha(m)$, and the signed two-sided operator is the composite of the two actions.
 
 **Proof.** The bimodule axiom is associativity; the identification of $\ell_a$ with $a\alpha(\cdot)$ and its composition law are the content of the companion article.
 

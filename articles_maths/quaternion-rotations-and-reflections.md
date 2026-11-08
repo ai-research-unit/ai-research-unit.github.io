@@ -3,11 +3,11 @@
 
 ## Introduction
 
-This article describes the orthogonal group of three-dimensional Euclidean space as it is realised by the units of the quaternion algebra $\mathbb{H}$. The starting point is the group $Sp(1)$ of unit quaternions and the identification of its adjoint action on the imaginary quaternions with the rotation group $SO(3)$; the endpoint is the full orthogonal group $O(3)$ and, more generally, the two-sided action of $Sp(1)\times Sp(1)$ on $\mathbb{H}$ that exhausts $SO(4)$. Along the way the article explains why the covering $Sp(1)\to SO(3)$ is two-to-one, why the quaternion parametrisation of a rotation has period $4\pi$ where the rotation itself has period $2\pi$, and how reflections sit inside the same algebra as the signed inner conjugation action of the unit vectors. The sandwich $S_{\tilde q}(\vec q) = \tilde q \vec q\tilde{q}^{\natural}$ is treated beside the adjoint action: it agrees with it on the unit sphere and carries a scale everywhere else.
+This article describes the orthogonal group of three-dimensional Euclidean space as it is realised by the units of the quaternion algebra $\mathbb{H}$. The starting point is the group $Sp(1)$ of unit quaternions and the identification of its adjoint action on the imaginary quaternions with the rotation group $SO(3)$; the endpoint is the full orthogonal group $O(3)$ and, more generally, the two-sided action of $Sp(1)\times Sp(1)$ on $\mathbb{H}$ that exhausts $SO(4)$. Along the way the article explains why the covering $Sp(1)\to SO(3)$ is two-to-one, why the quaternion parametrisation of a rotation has period $4\pi$ where the rotation itself has period $2\pi$, and how reflections sit inside the same algebra as the signed inner conjugation action of the unit vectors. The two-sided operator $S_{\tilde q}(\vec q) = \tilde q \vec q\tilde{q}^{\natural}$ is treated beside the adjoint action: it agrees with it on the unit sphere and carries a scale everywhere else.
 
 The treatment is mathematical throughout. A rotation is an element of $SO(3)$ and a reflection is an element of $O(3)$; no physical object is introduced, no state of a physical system is named, and no physical interpretation is invoked. The group $Sp(1)$ is treated as a group of quaternions, and the maps $Sp(1)\to SO(3)$ and $Sp(1)\times Sp(1)\to SO(4)$ are treated as covering homomorphisms of Lie groups.
 
-The quaternion algebra, its basis $e_t = 1, \vec e_x, \vec e_y, \vec e_z$ with $\vec e_\mu^2 = -e_t$, its conjugation, its quaternion norm $\langle\tilde q\rangle_{\natural} = \tilde q\tilde{q}^{\natural}$ and its imaginary subspace $\operatorname{Im}\mathbb{H}\cong\mathbb{R}^3$ are taken from *Quaternion Algebra*. The structure of $\mathbb{H}$ as a simple algebra is taken from *Quaternion Ideals and Simplicity*. The general construction of the Clifford, Pin and Spin groups, of which the results below are the three-dimensional instance, is the subject of *The Clifford, Pin and Spin Groups with Signed Inner Conjugation*; the parity of the Cartan–Dieudonné reflection length is taken from *The Rotation Group and Orientation* and from *Isometries and Orthogonal Transformations*. The complex plane, where the same questions have the degenerate answer that multiplication by a unit is already a rotation and the sandwich action is trivial, is treated in *Rotations and Reflections in the Complex Plane*.
+The quaternion algebra, its basis $e_t = 1, \vec e_x, \vec e_y, \vec e_z$ with $\vec e_\mu^2 = -e_t$, its conjugation, its quaternion norm $\langle\tilde q\rangle_{\natural} = \tilde q\tilde{q}^{\natural}$ and its imaginary subspace $\operatorname{Im}\mathbb{H}\cong\mathbb{R}^3$ are taken from *Quaternion Algebra*. The structure of $\mathbb{H}$ as a simple algebra is taken from *Quaternion Ideals and Simplicity*. The general construction of the Clifford, Pin and Spin groups, of which the results below are the three-dimensional instance, is the subject of *The Clifford, Pin and Spin Groups with Signed Inner Conjugation*; the parity of the Cartan–Dieudonné reflection length is taken from *The Rotation Group and Orientation* and from *Isometries and Orthogonal Transformations*. The complex plane, where the same questions have the degenerate answer that multiplication by a unit is already a rotation and the two-sided action is trivial, is treated in *Rotations and Reflections in the Complex Plane*.
 
 Throughout, a general quaternion is $\tilde q = q_t e_t + q_x \vec e_x + q_y \vec e_y + q_z \vec e_z$ with scalar part $q_t$ and vector part $\vec q = q_x\vec e_x+q_y\vec e_y+q_z\vec e_z \in \operatorname{Im}\mathbb{H}$, the conjugate is $\tilde{q}^{\natural} = q_t e_t - q_x \vec e_x - q_y \vec e_y - q_z \vec e_z$, the quaternion norm is $\langle\tilde q\rangle_{\natural} = \tilde q\tilde{q}^{\natural} = |\tilde q|^2$, and the real inner product of two vectors of $\operatorname{Im}\mathbb{H}$ is $\langle \vec q, \vec p\rangle = \mathrm{Sc}(\vec q \vec p^{\natural}) = \sum_{k=1}^{3} q_kp_k$. A point of $\operatorname{Im}\mathbb{H}$ is a **vector**, and $|\vec q|^2 = \langle \vec q,\vec q\rangle$. The transpose of a matrix $A$ is $A^{T}$ and the conjugate transpose is $A^{\dagger}$.
 
@@ -71,7 +71,7 @@ Hamilton's word for a unit quaternion is a **versor**, from the Latin *versari*,
 
 **Definition.** A **right versor** is a versor of angle $\pi/2$, that is a unit vector of $\operatorname{Im}\mathbb{H}$; the right versors are exactly the unit square roots of $-1$, and they form the sphere $S^2\subset\operatorname{Im}\mathbb{H}$ of *Quaternion Roots of Minus One*.
 
-**Remark (two senses of the word).** This is Hamilton's sense of *versor*. In the Clifford vocabulary of Part II (*Versors, Rotors and the Sandwich Action with Signed Inner Conjugation*) a versor is any product of non-isotropic vectors, of either parity; in the three-dimensional Euclidean case $\mathrm{Cl}_{3,0}$ Hamilton's versors are exactly the even versors of Clifford norm one, which that vocabulary calls rotors, while the odd versors are the unit vectors acting as reflections. The corpus keeps *versor* for the Clifford sense and *rotor* for the even norm-one one, so the word is used here in the historical sense only.
+**Remark (two senses of the word).** This is Hamilton's sense of *versor*. In the Clifford vocabulary of Part II (*Versors, Rotors and the Two-Sided Action with Signed Inner Conjugation*) a versor is any product of non-isotropic vectors, of either parity; in the three-dimensional Euclidean case $\mathrm{Cl}_{3,0}$ Hamilton's versors are exactly the even versors of Clifford norm one, which that vocabulary calls rotors, while the odd versors are the unit vectors acting as reflections. The corpus keeps *versor* for the Clifford sense and *rotor* for the even norm-one one, so the word is used here in the historical sense only.
 
 ### The Group $\mathrm{SU}(2)$
 
@@ -194,7 +194,7 @@ so $R_{q_\ast}$ is the rotation that **best fits** $Q$: among all matrices of $S
 
 **Remark (why the eigenvector, and not the four square roots).** The four quantities of the preceding remark are the diagonal entries of the eigenvector problem in disguise: $1+\operatorname{tr}R_{\tilde q} = 4q_t^2$ and the three others are $\frac{1}{3}K(Q)$'s diagonal deviations, and when $Q$ is a rotation the eigenvector for $\lambda_\ast = 3$ has components proportional to $(\sqrt{1+\operatorname{tr}Q}, \pm\sqrt{1+R_{11}-R_{22}-R_{33}}, \dots)$. The largest-eigenvalue route is the numerically stable version of the largest-square-root route: it never divides by a component that may vanish, and it extends off the rotation matrices, where the four-branch formulas have no meaning. The problem of finding the rotation that carries one set of measured vectors to another in the least-squares sense is the same computation with $Q$ the correlation matrix of the two sets, and it is posed in that form in the attitude-determination literature cited below.
 
-**Remark (the arithmetic cost, and what the four numbers buy).** Representing a rotation by a quaternion costs four real numbers subject to one constraint, against nine for the matrix; composing two rotations is one quaternion product, sixteen multiplications and twelve additions, against twenty-seven multiplications for the matrix product; and renormalising a drifting quaternion is a four-term operation against the re-orthogonalisation of a matrix. The single respect in which the matrix is cheaper is the action on a vector: nine multiplications against the two quaternion products, thirty-two multiplications, of the sandwich. The eigenvector computation above is the fourth operation for which the four numbers are used, and the double cover is its only price: the eigenvector is determined up to sign, which is exactly the two-to-one redundancy of the parametrisation.
+**Remark (the arithmetic cost, and what the four numbers buy).** Representing a rotation by a quaternion costs four real numbers subject to one constraint, against nine for the matrix; composing two rotations is one quaternion product, sixteen multiplications and twelve additions, against twenty-seven multiplications for the matrix product; and renormalising a drifting quaternion is a four-term operation against the re-orthogonalisation of a matrix. The single respect in which the matrix is cheaper is the action on a vector: nine multiplications against the two quaternion products, thirty-two multiplications, of the two-sided operator. The eigenvector computation above is the fourth operation for which the four numbers are used, and the double cover is its only price: the eigenvector is determined up to sign, which is exactly the two-to-one redundancy of the parametrisation.
 
 ### The Differential and the Lie Algebra
 
@@ -282,17 +282,17 @@ and the rotation by $\theta_1$ about $u$ followed by the rotation by $\theta_2$ 
 
 Thus composition of rotations is quaternion multiplication, and the failure of commutativity of $Sp(1)$ is exactly the failure of rotations about different axes to commute. The correspondence is a group homomorphism with kernel $\{\pm1\}$, hence two-to-one onto $SO(3)$.
 
-## The Sandwich and the Action Table
+## The Two-Sided Operator and the Action Table
 
-### The Sandwich
+### The Two-Sided Operator
 
-**Definition.** The **sandwich** of an element $\tilde q$ is the map
+**Definition.** The **two-sided operator** of an element $\tilde q$ is the map
 
 $$
 S_{\tilde q} : \mathbb{H}\longrightarrow\mathbb{H}, \qquad S_{\tilde q}(\vec q) = \tilde q \vec q\tilde{q}^{\natural}.
 $$
 
-For a unit quaternion the conjugate is the inverse, so on $Sp(1)$ the sandwich is the adjoint action of the preceding sections; off the unit sphere it differs from it by one factor.
+For a unit quaternion the conjugate is the inverse, so on $Sp(1)$ the two-sided operator is the adjoint action of the preceding sections; off the unit sphere it differs from it by one factor.
 
 **Theorem.** For every $\tilde q$,
 
@@ -300,11 +300,11 @@ $$
 S_{\tilde q} = \langle\tilde q\rangle_{\natural}\,\operatorname{Ad}_{\tilde q},
 $$
 
-so that the sandwich and the adjoint action coincide on the unit slice $\langle\tilde q\rangle_{\natural} = 1$; the sandwich scales the quaternion norm by $\langle\tilde q\rangle_{\natural}^2$, its determinant as a map of the four-dimensional space is $\det S_{\tilde q} = \langle\tilde q\rangle_{\natural}^4$, and it is invertible exactly when $\tilde q$ is a unit.
+so that the two-sided operator and the adjoint action coincide on the unit slice $\langle\tilde q\rangle_{\natural} = 1$; the two-sided operator scales the quaternion norm by $\langle\tilde q\rangle_{\natural}^2$, its determinant as a map of the four-dimensional space is $\det S_{\tilde q} = \langle\tilde q\rangle_{\natural}^4$, and it is invertible exactly when $\tilde q$ is a unit.
 
-**Proof.** For $\tilde q\neq0$ one has $\tilde{q}^{\natural} = \langle\tilde q\rangle_{\natural}\tilde q^{-1}$, so $S_{\tilde q}(\vec q) = \tilde q \vec q\tilde{q}^{\natural} = \langle\tilde q\rangle_{\natural}\,\tilde q \vec q\tilde q^{-1} = \langle\tilde q\rangle_{\natural}\operatorname{Ad}_{\tilde q}(\vec q)$, and the two agree when $\langle\tilde q\rangle_{\natural} = 1$. The adjoint action has determinant one on the four-dimensional space, being the identity on the scalar line and a rotation on the vector subspace, so the determinant of the sandwich is $\langle\tilde q\rangle_{\natural}^4$, and an operator with nonzero determinant is invertible.
+**Proof.** For $\tilde q\neq0$ one has $\tilde{q}^{\natural} = \langle\tilde q\rangle_{\natural}\tilde q^{-1}$, so $S_{\tilde q}(\vec q) = \tilde q \vec q\tilde{q}^{\natural} = \langle\tilde q\rangle_{\natural}\,\tilde q \vec q\tilde q^{-1} = \langle\tilde q\rangle_{\natural}\operatorname{Ad}_{\tilde q}(\vec q)$, and the two agree when $\langle\tilde q\rangle_{\natural} = 1$. The adjoint action has determinant one on the four-dimensional space, being the identity on the scalar line and a rotation on the vector subspace, so the determinant of the two-sided operator is $\langle\tilde q\rangle_{\natural}^4$, and an operator with nonzero determinant is invertible.
 
-**Theorem.** The sandwich preserves the quaternion norm up to the square of $\langle\tilde q\rangle_{\natural}$,
+**Theorem.** The two-sided operator preserves the quaternion norm up to the square of $\langle\tilde q\rangle_{\natural}$,
 
 $$
 \langle S_{\tilde q}(\vec q)\rangle_{\natural} = \langle\tilde q\rangle_{\natural}^2\langle \vec q\rangle_{\natural},
@@ -312,11 +312,11 @@ $$
 
 and it maps the scalar subspace to itself and the vector subspace to itself.
 
-**Proof.** By multiplicativity of the quaternion norm, $\langle\tilde q \vec q\tilde{q}^{\natural}\rangle_{\natural} = \langle\tilde q\rangle_{\natural}\langle \vec q\rangle_{\natural}\langle\tilde{q}^{\natural}\rangle_{\natural} = \langle\tilde q\rangle_{\natural}^2\langle \vec q\rangle_{\natural}$, since $\langle\tilde{q}^{\natural}\rangle_{\natural} = \langle\tilde q\rangle_{\natural}$. For a scalar $s$ one has $S_{\tilde q}(s) = \tilde q s\tilde{q}^{\natural} = s\,\tilde q\tilde{q}^{\natural} = s\langle\tilde q\rangle_{\natural}$, again a scalar, so the scalar line is preserved; for $\tilde q\neq0$ the sandwich is invertible and preserves the quaternion norm up to the scalar $\langle\tilde q\rangle_{\natural}^{2}$, hence it preserves the orthogonal complement of the scalar line, which is the vector subspace.
+**Proof.** By multiplicativity of the quaternion norm, $\langle\tilde q \vec q\tilde{q}^{\natural}\rangle_{\natural} = \langle\tilde q\rangle_{\natural}\langle \vec q\rangle_{\natural}\langle\tilde{q}^{\natural}\rangle_{\natural} = \langle\tilde q\rangle_{\natural}^2\langle \vec q\rangle_{\natural}$, since $\langle\tilde{q}^{\natural}\rangle_{\natural} = \langle\tilde q\rangle_{\natural}$. For a scalar $s$ one has $S_{\tilde q}(s) = \tilde q s\tilde{q}^{\natural} = s\,\tilde q\tilde{q}^{\natural} = s\langle\tilde q\rangle_{\natural}$, again a scalar, so the scalar line is preserved; for $\tilde q\neq0$ the two-sided operator is invertible and preserves the quaternion norm up to the scalar $\langle\tilde q\rangle_{\natural}^{2}$, hence it preserves the orthogonal complement of the scalar line, which is the vector subspace.
 
 **Proposition.** For $\tilde q\neq0$ each of the operators $L_{\tilde q}(\vec q) = \tilde q \vec q$, $\rho_{\tilde q}(\vec q) = \vec q\tilde q$, $\operatorname{Ad}_{\tilde q}$ and $S_{\tilde q}$ is invertible, with kernel $0$ and image $\mathbb{H}$; for $\tilde q = 0$ all four are the zero operator.
 
-**Proof.** The operators $L_{\tilde q}$ and $\rho_{\tilde q}$ of the regular representation are invertible exactly for a unit, as shown in *Quaternion 4x4 Matrix Element Representation $M_4(\mathbb{R})_{\mathbb{H}_L}$*; the adjoint action has inverse $\operatorname{Ad}_{\tilde q^{-1}}$, and the sandwich has inverse $\langle\tilde q\rangle_{\natural}^{-1}\operatorname{Ad}_{\tilde q^{-1}}$. At $\tilde q = 0$ every product with $\tilde q$ vanishes.
+**Proof.** The operators $L_{\tilde q}$ and $\rho_{\tilde q}$ of the regular representation are invertible exactly for a unit, as shown in *Quaternion 4x4 Matrix Element Representation $M_4(\mathbb{R})_{\mathbb{H}_L}$*; the adjoint action has inverse $\operatorname{Ad}_{\tilde q^{-1}}$, and the two-sided operator has inverse $\langle\tilde q\rangle_{\natural}^{-1}\operatorname{Ad}_{\tilde q^{-1}}$. At $\tilde q = 0$ every product with $\tilde q$ vanishes.
 
 **Proposition.** The fixed subspace of the adjoint action of a unit $\tilde q$ is its centraliser in $\mathbb{H}$: all of $\mathbb{H}$ when $\tilde q$ is real, and the two-dimensional subalgebra $F[\tilde q] = \{a+b\tilde q\}$ otherwise. On the vector subspace the fixed directions are the axis line $\mathbb{R}\vec q$.
 
@@ -324,7 +324,7 @@ and it maps the scalar subspace to itself and the vector subspace to itself.
 
 ### The Action on the Subspaces
 
-Left and right multiplication are the operators of the regular representation, treated in *Quaternion 4x4 Matrix Element Representation $M_4(\mathbb{R})_{\mathbb{H}_L}$*; the adjoint action and the sandwich are those of the preceding sections. Throughout, $L_{\tilde q}(\vec q) = \tilde q \vec q$ is the left multiplication operator and $\rho_{\tilde q}(\vec q) = \vec q\tilde q$ the right one — the operator the regular-representation article writes $R_{\tilde q}$, renamed here because that symbol is the matrix of the adjoint action on $\operatorname{Im}\mathbb{H}$.
+Left and right multiplication are the operators of the regular representation, treated in *Quaternion 4x4 Matrix Element Representation $M_4(\mathbb{R})_{\mathbb{H}_L}$*; the adjoint action and the two-sided operator are those of the preceding sections. Throughout, $L_{\tilde q}(\vec q) = \tilde q \vec q$ is the left multiplication operator and $\rho_{\tilde q}(\vec q) = \vec q\tilde q$ the right one — the operator the regular-representation article writes $R_{\tilde q}$, renamed here because that symbol is the matrix of the adjoint action on $\operatorname{Im}\mathbb{H}$.
 
 **Definition.** The **action table** of the operator representation records, for each operator, its effect on the scalar subspace $\mathbb{R}_{\mathbb{H}}$ and on the vector subspace $\operatorname{Im}\mathbb{H}$.
 
@@ -333,21 +333,21 @@ Left and right multiplication are the operators of the regular representation, t
 | $L_{\tilde q}$, left multiplication | $s\mapsto \tilde q s$, lands in the span of $1,\vec q$ | $\vec p\mapsto -\langle\vec q,\vec p\rangle+q_t\vec p+\vec q\times\vec p$ |
 | $\rho_{\tilde q}$, right multiplication | $s\mapsto s\tilde q = \tilde q s$ | $\vec p\mapsto -\langle\vec p,\vec q\rangle+q_t\vec p+\vec p\times\vec q$ |
 | $\operatorname{Ad}_{\tilde q}$, adjoint | identity | rotation by the angle and axis of $\tilde q$ |
-| $S_{\tilde q}$, sandwich | $\langle\tilde q\rangle_{\natural}\,\mathrm{id}$ | $\langle\tilde q\rangle_{\natural}$ times the rotation of $\operatorname{Ad}_{\tilde q}$ |
+| $S_{\tilde q}$, two-sided operator | $\langle\tilde q\rangle_{\natural}\,\mathrm{id}$ | $\langle\tilde q\rangle_{\natural}$ times the rotation of $\operatorname{Ad}_{\tilde q}$ |
 
-**Proposition.** Left and right multiplication do not preserve the two subspaces individually — each sends the scalar line into the plane spanned by $1$ and the acting element — while the adjoint action and the sandwich do preserve the decomposition, acting as the identity, respectively the scale $\langle\tilde q\rangle_{\natural}$, on the scalar line and as a rotation, respectively a scaled rotation, on the vector subspace.
+**Proposition.** Left and right multiplication do not preserve the two subspaces individually — each sends the scalar line into the plane spanned by $1$ and the acting element — while the adjoint action and the two-sided operator do preserve the decomposition, acting as the identity, respectively the scale $\langle\tilde q\rangle_{\natural}$, on the scalar line and as a rotation, respectively a scaled rotation, on the vector subspace.
 
-**Proof.** The element $L_{\tilde q}(s) = \tilde q s$ lies in the span of $1$ and $\tilde q$, and $L_{\tilde q}(\vec p)$ has scalar part $-\langle\vec q,\vec p\rangle$, so neither subspace is preserved in general; the same holds for $\rho_{\tilde q}$. The adjoint action fixes every scalar and carries the vector subspace to itself, and the sandwich is $\langle\tilde q\rangle_{\natural}$ times it.
+**Proof.** The element $L_{\tilde q}(s) = \tilde q s$ lies in the span of $1$ and $\tilde q$, and $L_{\tilde q}(\vec p)$ has scalar part $-\langle\vec q,\vec p\rangle$, so neither subspace is preserved in general; the same holds for $\rho_{\tilde q}$. The adjoint action fixes every scalar and carries the vector subspace to itself, and the two-sided operator is $\langle\tilde q\rangle_{\natural}$ times it.
 
 **Corollary.** The adjoint action of a unit acts on the whole algebra as the direct sum of the identity on the scalar line and a rotation on the vector subspace, the representations of dimensions one and three into which the four-dimensional operator decomposes.
 
 **Proof.** The decomposition $\mathbb{H} = \mathbb{R}_{\mathbb{H}}\oplus\operatorname{Im}\mathbb{H}$ is preserved, the first summand is fixed and the second carries the rotation.
 
-### The Sandwich and the Polar Form
+### The Two-Sided Operator and the Polar Form
 
-**Theorem.** Every non-zero quaternion has the polar form $\tilde q = |\tilde q|u$ with $u\in Sp(1)$, and the adjoint action depends only on the unit factor, $\operatorname{Ad}_{\tilde q} = \operatorname{Ad}_u$, while the sandwich carries the scale, $S_{\tilde q} = |\tilde q|^2\operatorname{Ad}_u$. The axis and angle of the rotation $\operatorname{Ad}_u$ are those of the polar form, $\mu = \vec q/|\vec q|$ and $\cos\frac{\theta}{2} = q_t/|\tilde q|$.
+**Theorem.** Every non-zero quaternion has the polar form $\tilde q = |\tilde q|u$ with $u\in Sp(1)$, and the adjoint action depends only on the unit factor, $\operatorname{Ad}_{\tilde q} = \operatorname{Ad}_u$, while the two-sided operator carries the scale, $S_{\tilde q} = |\tilde q|^2\operatorname{Ad}_u$. The axis and angle of the rotation $\operatorname{Ad}_u$ are those of the polar form, $\mu = \vec q/|\vec q|$ and $\cos\frac{\theta}{2} = q_t/|\tilde q|$.
 
-**Proof.** The scale cancels in the adjoint action because $\tilde q$ and $\tilde q^{-1}$ contribute $|\tilde q|$ and $|\tilde q|^{-1}$, while the sandwich carries $\langle\tilde q\rangle_{\natural} = |\tilde q|^2$; the axis-angle identification is the polar form of *Exponential Polar Decomposition of Quaternions*, where the half-angle is the angle of the unit factor.
+**Proof.** The scale cancels in the adjoint action because $\tilde q$ and $\tilde q^{-1}$ contribute $|\tilde q|$ and $|\tilde q|^{-1}$, while the two-sided operator carries $\langle\tilde q\rangle_{\natural} = |\tilde q|^2$; the axis-angle identification is the polar form of *Exponential Polar Decomposition of Quaternions*, where the half-angle is the angle of the unit factor.
 
 ## Reflections and the Orthogonal Group
 
@@ -485,7 +485,7 @@ The reflection in the plane $v^{\perp}$ with unit normal $v$ is $\rho_v(\vec q) 
 
 Finally, the two-sided action $\Phi_{(\tilde q_1,\tilde q_2)}(\vec q) = \tilde q_1\vec q \tilde q_2^{-1}$ is a surjective homomorphism $Sp(1)\times Sp(1)\to SO(4)$ with kernel $\{\pm(1,1)\}$, so $SO(4)\cong \mathrm{Spin}(4)\cong (Sp(1)\times Sp(1))/\{\pm1\}$; the diagonal copy of $Sp(1)$ in it is the adjoint action that gives the rotations of the three-dimensional imaginary subspace.
 
-The sandwich $S_{\tilde q}(\vec q) = \tilde q \vec q\tilde{q}^{\natural}$ is the adjoint action rescaled, $S_{\tilde q} = \langle\tilde q\rangle_{\natural}\operatorname{Ad}_{\tilde q}$, so the two coincide exactly on the unit slice and differ elsewhere by the factor $\langle\tilde q\rangle_{\natural}$; the sandwich multiplies the quaternion norm by $\langle\tilde q\rangle_{\natural}^2$ and has determinant $\langle\tilde q\rangle_{\natural}^4$. It preserves the scalar and the vector subspaces, acting by the identity, respectively by the scale $\langle\tilde q\rangle_{\natural}$, on the scalar line and by a rotation, respectively a scaled rotation, on the vector subspace; the action table records this beside the behaviour of the left and right multiplications $L_{\tilde q}$ and $\rho_{\tilde q}$ of the regular representation, which preserve neither subspace. For $\tilde q\neq0$ all four operators are invertible, and the fixed subspace of the adjoint action is the centraliser of $\tilde q$, with the axis line as the fixed direction on the imaginary subspace.
+The two-sided operator $S_{\tilde q}(\vec q) = \tilde q \vec q\tilde{q}^{\natural}$ is the adjoint action rescaled, $S_{\tilde q} = \langle\tilde q\rangle_{\natural}\operatorname{Ad}_{\tilde q}$, so the two coincide exactly on the unit slice and differ elsewhere by the factor $\langle\tilde q\rangle_{\natural}$; the two-sided operator multiplies the quaternion norm by $\langle\tilde q\rangle_{\natural}^2$ and has determinant $\langle\tilde q\rangle_{\natural}^4$. It preserves the scalar and the vector subspaces, acting by the identity, respectively by the scale $\langle\tilde q\rangle_{\natural}$, on the scalar line and by a rotation, respectively a scaled rotation, on the vector subspace; the action table records this beside the behaviour of the left and right multiplications $L_{\tilde q}$ and $\rho_{\tilde q}$ of the regular representation, which preserve neither subspace. For $\tilde q\neq0$ all four operators are invertible, and the fixed subspace of the adjoint action is the centraliser of $\tilde q$, with the axis line as the fixed direction on the imaginary subspace.
 
 ## Summary of Notation
 
@@ -504,7 +504,7 @@ The sandwich $S_{\tilde q}(\vec q) = \tilde q \vec q\tilde{q}^{\natural}$ is the
 | $\exp(u\theta) = \cos\theta + u\sin\theta$ | Exponential of a unit vector |
 | $SU(2)$ | Special $*$-unitary group, $Sp(1)\cong SU(2)$ |
 | $\operatorname{Ad}_{\tilde q}(\vec q) = \tilde q \vec q\tilde q^{-1}$ | Adjoint action |
-| $S_{\tilde q}(\vec q) = \tilde q \vec q\tilde{q}^{\natural} = \langle\tilde q\rangle_{\natural}\operatorname{Ad}_{\tilde q}$ | Sandwich; equals the adjoint action on the unit slice |
+| $S_{\tilde q}(\vec q) = \tilde q \vec q\tilde{q}^{\natural} = \langle\tilde q\rangle_{\natural}\operatorname{Ad}_{\tilde q}$ | Two-Sided Operator; equals the adjoint action on the unit slice |
 | $L_{\tilde q}(\vec q) = \tilde q \vec q$, $\rho_{\tilde q}(\vec q) = \vec q\tilde q$ | Left and right multiplication operators of the regular representation |
 | $R_{\tilde q}$ | Matrix of $\operatorname{Ad}_{\tilde q}$ on $\operatorname{Im}\mathbb{H}$ |
 | $K(Q)$ | Fitting matrix of a real $3\times3$ matrix $Q$, with $q^{T}K(Q)q = \operatorname{tr}(R_{\tilde q}^{T}Q)$; its largest eigenvector is the quaternion of the rotation closest to $Q$ |

@@ -42,7 +42,7 @@ the Gram matrix of the coordinate vector of $\tilde q$; it is positive semidefin
 
 *Proof.* $\mathsf M_4(\tilde q^{\natural}\tilde q) = \mathsf M_4(\langle\tilde q\rangle_{\natural}e_t) = \langle\tilde q\rangle_{\natural}\mathrm I_4$, and $X^{\mathsf T}X$ has the squared coordinates on the diagonal.
 
-**Corollary (the transpose-sandwich family).** The two-sided operators of the quaternionic product are the transposed sandwiches,
+**Corollary (the transpose-two-sided-operator family).** The two-sided operators of the quaternionic product are the transposed two-sided operators,
 
 $$
 \mathsf M_4\bigl(\tilde q_3^{\natural}\tilde q\tilde q_4\bigr) = \mathsf M_4(\tilde q_3)^{\mathsf T}\,\mathsf M_4(\tilde q)\,\mathsf M_4(\tilde q_4) ,

@@ -10,7 +10,7 @@ $$
 \rho^{\alpha}(x)^{*} = \rho^{\alpha}(x^{\dagger}) ,
 $$
 
-the sign passing through adjunction unchanged. The second is that the products $x^{\dagger}x$ and $xx^{\dagger}$ are even, so the operator products of the signed action are the unsigned ones, $\rho^{\alpha}(x)^{*}\rho^{\alpha}(x) = \rho(x^{\dagger}x)$; consequently **self-adjointness, normality, unitarity and the positivity of the products are governed by the same conditions as for the ordinary action**, and the sign is visible only in the value of the operator at a homogeneous element and in the parametrisation. This is the module form of the statement of *The Signed Adjoint of the Sandwich on a Hermitian Algebra* that the sign is a real scalar and adjunction does not see it.
+the sign passing through adjunction unchanged. The second is that the products $x^{\dagger}x$ and $xx^{\dagger}$ are even, so the operator products of the signed action are the unsigned ones, $\rho^{\alpha}(x)^{*}\rho^{\alpha}(x) = \rho(x^{\dagger}x)$; consequently **self-adjointness, normality, unitarity and the positivity of the products are governed by the same conditions as for the ordinary action**, and the sign is visible only in the value of the operator at a homogeneous element and in the parametrisation. This is the module form of the statement of *The Signed Adjoint of the Two-Sided Operator on a Hermitian Algebra* that the sign is a real scalar and adjunction does not see it.
 
 This article fixes the signed action and its adjoint, the self-adjointness, normality and unitarity conditions, the module involution and the sign rule, and the behaviour under the modular objects.
 
@@ -72,7 +72,7 @@ so the signed action agrees with the ordinary action on the even part of the alg
 
 **Proof.** The criteria of the theorem depend only on the involution of the parameter and on the products $x^{\dagger}x$, $xx^{\dagger}$, which are even; the formulae of the proof show that the signed and unsigned operator products coincide.
 
-**Remark (where the sign is visible on the module).** The sign is visible in the value $\rho^{\alpha}(x)s$ on an odd parameter and in the parametrisation of the family; it is invisible in the adjoint, in the modulus and in all the criteria. This is the module counterpart of the corresponding statement for the signed sandwich, and it is the reason the signed structure of the corpus can be described as the *same* operators with a graded bookkeeping.
+**Remark (where the sign is visible on the module).** The sign is visible in the value $\rho^{\alpha}(x)s$ on an odd parameter and in the parametrisation of the family; it is invisible in the adjoint, in the modulus and in all the criteria. This is the module counterpart of the corresponding statement for the signed two-sided operator, and it is the reason the signed structure of the corpus can be described as the *same* operators with a graded bookkeeping.
 
 ## The Module Involution and the Sign Rule
 

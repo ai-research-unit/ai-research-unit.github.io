@@ -5,7 +5,7 @@
 
 The **versors** of the complex numbers are the units of the definite algebraic norm, the elements of norm one, and they form the unit circle $\mathrm{U}(1)$. They are at once the group of linear maps preserving the definite form, which is the rotation group of the plane, and the spin group of the definite space, and the square of the algebra's own product is the two-to-one cover that constitutes the spin structure. This article defines the versors, reads the group they form, records the identification with the group of form-preserving maps, establishes the two-to-one cover and the halving of the parameter that goes with it, and locates the group among the pin and spin groups of the algebra and among the versor groups of the ladder.
 
-The article does not define the two forms, which are *The Two Forms and the Two Algebraic Norms of the Complexoid Space*, nor the two algebraic norms $Q_1^{2}$ and $\langle Q_1\rangle_{*}$ that are their diagonals. The norm, its multiplicativity, the invertibility criterion and the group of units are *Complex Norm and Invertibility*. The identification of $\mathrm{U}(1)$ with the rotation group, the reflections, the group $O(2)$ and the parameter of a rotation are *Rotations and Reflections in the Complex Plane*; they are cited and not restated. The general definition of a versor, the rotor, the Clifford group, the pin and spin groups and the general two-to-one cover are *Versors, Rotors and the Sandwich Action with Signed Inner Conjugation* and *The Clifford, Pin and Spin Groups with Signed Inner Conjugation*.
+The article does not define the two forms, which are *The Two Forms and the Two Algebraic Norms of the Complexoid Space*, nor the two algebraic norms $Q_1^{2}$ and $\langle Q_1\rangle_{*}$ that are their diagonals. The norm, its multiplicativity, the invertibility criterion and the group of units are *Complex Norm and Invertibility*. The identification of $\mathrm{U}(1)$ with the rotation group, the reflections, the group $O(2)$ and the parameter of a rotation are *Rotations and Reflections in the Complex Plane*; they are cited and not restated. The general definition of a versor, the rotor, the Clifford group, the pin and spin groups and the general two-to-one cover are *Versors, Rotors and the Two-Sided Action with Signed Inner Conjugation* and *The Clifford, Pin and Spin Groups with Signed Inner Conjugation*.
 
 ## The Versors and Their Group
 
@@ -49,7 +49,7 @@ $$\boxed{\;M^{\mathsf T}M=\mathrm{I}_{2}\;},$$
 
 that is the group $O(2)$. The versors give the maps of determinant $+1$ in it; the maps of determinant $-1$ are the reflections $Q_1\mapsto u\bar Q_1$ with $\lvert u\rvert=1$ (*Rotations and Reflections in the Complex Plane*). The group of the title is thus $O(2)$, and the versors are its determinant-one half.
 
-**Remark (the sandwich is vacuous).** In a non-commutative algebra a unit may act on itself by the sandwich $Q_1\mapsto uQ_1u^{-1}$; here $uQ_1u^{-1}=Q_1$ for every versor, because the algebra is commutative, so the inner action is trivial and multiplication, not conjugation, is the natural action of the versors (*Rotations and Reflections in the Complex Plane*). The double cover below is therefore read on the multiplication, and not on a sandwich.
+**Remark (the two-sided operator is vacuous).** In a non-commutative algebra a unit may act on itself by the two-sided operator $Q_1\mapsto uQ_1u^{-1}$; here $uQ_1u^{-1}=Q_1$ for every versor, because the algebra is commutative, so the inner action is trivial and multiplication, not conjugation, is the natural action of the versors (*Rotations and Reflections in the Complex Plane*). The double cover below is therefore read on the multiplication, and not on a two-sided operator.
 
 ## The Two-to-One Cover of the Circle
 
@@ -75,13 +75,13 @@ satisfies $z^{2}=Q_1$ and $H(z)=1$, as expanding the square and using $q_1^{2}+q
 
 The two versors $u$ and $-u$ therefore name the same map, and no smaller set does: $-1$ is the only nontrivial element killed by the square. This is the spin structure of the definite space in its lowest instance, and it is read entirely inside the algebra, the cover being the square of the algebra's own product.
 
-**Remark (the cover in the multiplication).** Here the algebra is commutative, the sandwich does nothing, and the same halving of the parameter is seen as the doubling of the argument under the square. The complex case is the rung on which the cover is visible in the multiplication alone.
+**Remark (the cover in the multiplication).** Here the algebra is commutative, the two-sided operator does nothing, and the same halving of the parameter is seen as the doubling of the argument under the square. The complex case is the rung on which the cover is visible in the multiplication alone.
 
 ## The Place Among the Pin and Spin Groups
 
-The general theory assigns to a quadratic space its versors, its rotors and the groups $\mathrm{Pin}$ and $\mathrm{Spin}$ (*The Clifford, Pin and Spin Groups with Signed Inner Conjugation*, *Versors, Rotors and the Sandwich Action with Signed Inner Conjugation*): a versor is a product of non-isotropic vectors, the even versors of norm one are the rotors, the rotors form the spin group and map onto the special orthogonal group with kernel $\{\pm1\}$, and the reflections are the odd versors.
+The general theory assigns to a quadratic space its versors, its rotors and the groups $\mathrm{Pin}$ and $\mathrm{Spin}$ (*The Clifford, Pin and Spin Groups with Signed Inner Conjugation*, *Versors, Rotors and the Two-Sided Action with Signed Inner Conjugation*): a versor is a product of non-isotropic vectors, the even versors of norm one are the rotors, the rotors form the spin group and map onto the special orthogonal group with kernel $\{\pm1\}$, and the reflections are the odd versors.
 
-**Proposition (the complex versors are the rotors).** Read over $\mathbb{R}$, the complex algebra is the even part of the Clifford algebra $\mathrm{Cl}_{2,0}$ of the definite plane, whose bivector $B=e_{1}e_{2}$ satisfies $B^{2}=-1$ and generates the even part, a copy of $\mathbb{C}$. The rotors of that Clifford algebra are the elements $p-Bq$ with $p,q\in\mathbb{R}$ and $p^{2}+q^{2}=1$, and they are $\mathrm{Spin}(2)\cong \mathrm{U}(1)$ (*Versors, Rotors and the Sandwich Action with Signed Inner Conjugation*). Hence the versors of the complex numbers are exactly the rotors, and their group is the spin group of the definite plane.
+**Proposition (the complex versors are the rotors).** Read over $\mathbb{R}$, the complex algebra is the even part of the Clifford algebra $\mathrm{Cl}_{2,0}$ of the definite plane, whose bivector $B=e_{1}e_{2}$ satisfies $B^{2}=-1$ and generates the even part, a copy of $\mathbb{C}$. The rotors of that Clifford algebra are the elements $p-Bq$ with $p,q\in\mathbb{R}$ and $p^{2}+q^{2}=1$, and they are $\mathrm{Spin}(2)\cong \mathrm{U}(1)$ (*Versors, Rotors and the Two-Sided Action with Signed Inner Conjugation*). Hence the versors of the complex numbers are exactly the rotors, and their group is the spin group of the definite plane.
 
 **The candidate shells of the two forms.** For the definite form the candidate pin and spin groups are its shells,
 
@@ -102,7 +102,7 @@ The versors of norm one form, on each rung of the family, the spin group of the 
 | algebra | versors of norm one | group | double cover of | kernel |
 |---|---|---|---|---|
 | $\mathbb{C}$ | the circle $\mathrm{U}(1)$ | $\mathrm{Spin}(2)\cong \mathrm{U}(1)$ | $\mathrm{SO}(2)$ | $\{\pm1\}$, by the square |
-| $\mathbb{H}$ | the unit sphere $S^{3}$ | $\mathrm{Spin}(3)\cong \mathrm{Sp}(1)\cong \mathrm{SU}(2)$ | $\mathrm{SO}(3)$ | $\{\pm1\}$, by the sandwich |
+| $\mathbb{H}$ | the unit sphere $S^{3}$ | $\mathrm{Spin}(3)\cong \mathrm{Sp}(1)\cong \mathrm{SU}(2)$ | $\mathrm{SO}(3)$ | $\{\pm1\}$, by the two-sided operator |
 
 The first row is the present article: the versors are the circle, and the cover is the square of the multiplication. 
 
@@ -112,7 +112,7 @@ The versors of norm one form a group and double-cover the rotations. The complex
 
 The versors of the complex numbers are the units of the definite algebraic norm, the set $\mathrm{U}(1)=\{u:\lvert u\rvert^{2}=1\}$; they form an abelian group, the unit circle, because the definite norm is real, multiplicative and positive definite on the field. The shell of the plain algebraic norm is the four-element cyclic group $\{1,-1,i,-i\}$, which is not the versor group; the versors are read on the definite form $\langle\cdot,\cdot\rangle_{*}$ alone.
 
-Multiplication by a versor, $R_{u}(Q_1)=uQ_1$, is a $\mathbb{C}$-linear map preserving $H$, and the versors are exactly the group of such maps, identified with the rotation group $\mathrm{SO}(2)$; the full group of $\mathbb{R}$-linear maps preserving $H$ is $O(2)$, given by $M^{\mathsf T}M=\mathrm{I}_{2}$, of which the versors form the determinant-one half and the reflections the other coset. The sandwich is trivial on the commutative algebra, so the action is by multiplication.
+Multiplication by a versor, $R_{u}(Q_1)=uQ_1$, is a $\mathbb{C}$-linear map preserving $H$, and the versors are exactly the group of such maps, identified with the rotation group $\mathrm{SO}(2)$; the full group of $\mathbb{R}$-linear maps preserving $H$ is $O(2)$, given by $M^{\mathsf T}M=\mathrm{I}_{2}$, of which the versors form the determinant-one half and the reflections the other coset. The two-sided operator is trivial on the commutative algebra, so the action is by multiplication.
 
 The square map $u\mapsto u^{2}$ is a surjective homomorphism of the circle with kernel $\{1,-1\}$, hence a two-to-one cover of the circle by itself; under the identification with $\mathrm{SO}(2)$ it is the cover $\mathrm{Spin}(2)\to \mathrm{SO}(2)$, and the versor carries half the parameter of the map it names. Read over $\mathbb{R}$, the algebra is the even part of $\mathrm{Cl}_{2,0}$, its versors are the rotors $\mathrm{Spin}(2)\cong \mathrm{U}(1)$, and the pin and spin shells of the definite form coincide with the versor group because the negative shell is empty. The odd versors carry the reflections and lie outside the algebra, so the full $\mathrm{Pin}(2)$ is not an object of the algebra. The complex rung is the base of the versor ladder.
 
@@ -140,7 +140,7 @@ The square map $u\mapsto u^{2}$ is a surjective homomorphism of the circle with 
 - [Complex Norm and Invertibility](complex-norm-and-invertibility.html), for the norm, its multiplicativity, the group of units and the polar split.
 - [Rotations and Reflections in the Complex Plane](rotations-and-reflections-in-the-complex-plane.html), for the identification $\mathrm{U}(1)\cong \mathrm{SO}(2)$, the reflections and the group $O(2)$.
 - [Complex Exponential and Lie Group Structure](complex-exponential-and-lie-group-structure.html), for the exponential, the one-parameter subgroups and the group of units.
-- [Versors, Rotors and the Sandwich Action with Signed Inner Conjugation](versors-rotors-and-the-sandwich-action-with-signed-inner-conjugation.html), for the general versor, the rotor, the plane case $\mathrm{Spin}(2)\cong \mathrm{U}(1)$ and the two-to-one cover.
+- [Versors, Rotors and the Two-Sided Action with Signed Inner Conjugation](versors-rotors-and-the-two-sided-action-with-signed-inner-conjugation.html), for the general versor, the rotor, the plane case $\mathrm{Spin}(2)\cong \mathrm{U}(1)$ and the two-to-one cover.
 - [The Clifford, Pin and Spin Groups with Signed Inner Conjugation](the-clifford-pin-and-spin-groups-with-signed-inner-conjugation.html), for the Clifford group, the pin and spin groups and Cartan–Dieudonné.
 - Pertti Lounesto, *Clifford Algebras and Spinors*, 2nd edition (Cambridge University Press, 2001), for versors, the spin group and the double cover in the low-dimensional cases.
 - Ian R. Porteous, *Clifford Algebras and the Classical Groups* (Cambridge University Press, 1995), for the classical groups and their covers.

@@ -1,0 +1,202 @@
+# __The Signed Two-Sided Operator on an Algebra__
+
+## Introduction
+
+The two-sided operator of the group `- Operator Theory` multiplies an element on the left and on the right, $x \mapsto a x b$. When the algebra carries an automorphism $\alpha$ of order two, the product can be twisted by it in the middle, and the **signed two-sided operator**
+
+$$
+\mathcal{T}_{a,b}(x) = a\,\alpha(x)\,b
+$$
+
+is the result. The twist is by the **grade involution** when the algebra is $\mathbb{Z}/2$-graded — the automorphism that is $+1$ on the even part and $-1$ on the odd part — and it is by an arbitrary involutive automorphism in general. The twisted operator is the one that realises the reflections of the algebra, and it is the reason the reflections are two-sided operators and not one-sided ones.
+
+Throughout, $k$ is a field and $A$ is a unital associative $k$-algebra, with $n = \dim_k A$ when finite-dimensional. The algebra carries an **involutive automorphism** $\alpha$, that is an algebra automorphism with $\alpha^2 = \mathrm{id}$; the canonical instance is the grade involution of a $\mathbb{Z}/2$-grading, and the general theory of gradings and of the sign rule belongs to *Superalgebras and Graded Structures*, which is named here but not used. The unsigned two-sided operator is the operator $L_{a}R_{b}$ of *The Two-Sided Operator on an Algebra*, and the involutive automorphisms are those of *Automorphisms and Derivations of Algebras* and of *Involutive Algebras*.
+
+## The Involutive Automorphism
+
+### Definition
+
+**Definition.** An **involutive automorphism** of $A$ is an algebra automorphism $\alpha : A \to A$ with $\alpha^2 = \mathrm{id}$, that is $\alpha(xy) = \alpha(x)\alpha(y)$, $\alpha(x + y) = \alpha(x) + \alpha(y)$, and $\alpha(\alpha(x)) = x$ for all $x, y \in A$. It is unital when $A$ is, since $\alpha(1) = \alpha(1)^2$ and $\alpha(1) \neq 0$.
+
+The word **grade involution** is used for the instance in which $A$ carries a $\mathbb{Z}/2$-grading $A = A^0 \oplus A^1$ and $\alpha$ is the automorphism acting by $\alpha(x) = x$ on the even part and $\alpha(x) = -x$ on the odd part. That $\alpha$ is an automorphism is associativity read on the parity of the product; the general theory of the grading itself is *Superalgebras and Graded Structures*, and everything below uses only the two properties $\alpha^2 = \mathrm{id}$ and multiplicativity.
+
+### The Decomposition
+
+**Proposition.** The involutive automorphism $\alpha$ gives a direct sum decomposition
+
+$$
+A = A^+ \oplus A^-, \qquad A^+ = \{x : \alpha(x) = x\}, \qquad A^- = \{x : \alpha(x) = -x\},
+$$
+
+and the summands multiply as
+
+$$
+A^+ A^+ \subseteq A^+, \qquad A^+ A^- \subseteq A^-, \qquad A^- A^+ \subseteq A^-, \qquad A^- A^- \subseteq A^+ ,
+$$
+
+so that the decomposition is a $\mathbb{Z}/2$-grading of $A$ whose grade involution is $\alpha$.
+
+*Proof.* The two sets are the eigenspaces of $\alpha$ for the eigenvalues $1$ and $-1$, so they are subspaces intersecting in $0$ and summing to $A$ when $2$ is invertible, by the averaging $x = \frac12(x + \alpha(x)) + \frac12(x - \alpha(x))$; when $2 = 0$ no element is negated by an order-two map and $A^- = 0$, and the second statement below is read with that collapse. If $\alpha(x) = \epsilon x$ and $\alpha(y) = \epsilon' y$ with $\epsilon, \epsilon' \in \{1,-1\}$, then $\alpha(xy) = \alpha(x)\alpha(y) = \epsilon \epsilon' xy$, which is the multiplication table of $\mathbb{Z}/2$.
+
+The identity $A = A^+ \oplus A^-$ is the reason an involutive automorphism is an operator that also *is* a structure: it produces a grading. Conversely a grading of $A$ whose odd part squares to the even part and which is compatible with the product produces the grade involution, so an involutive automorphism and a "splitting of $A$ into a plus and a minus part" are the same datum. The article *Involutive Algebras* proves the grading of an involutive automorphism from the multiplication table in the same way, and it owns the general theory of the involutions of the elements; the present article uses only the operator $\alpha$.
+
+### The Automorphism as an Operator
+
+**Proposition.** The involutive automorphism $\alpha$ is an element of $\operatorname{End}_k(A)$ with $\alpha^2 = \mathrm{id}$, and it is an operator of order two in the group $\operatorname{Aut}_k(A)$ of algebra automorphisms of *Automorphisms and Derivations of Algebras*.
+
+*Proof.* It is $k$-linear and multiplicative, hence in $\operatorname{End}_k(A)$, and it is invertible with inverse itself, hence in the unit group of the endomorphism monoid, which is the automorphism group of the algebra. The order is two by hypothesis.
+
+**Remark.** The involutive automorphisms of $A$ form the elements of order dividing two in the automorphism group, and they are the operators of the present article. A single one is fixed throughout, and it is written $\alpha$; when it is the identity the whole theory reduces to the unsigned one.
+
+## The Signed Two-Sided Operator
+
+### Definition
+
+**Definition.** Let $a, b \in A$. The **signed two-sided operator** determined by $a$ and $b$ is the operator
+
+$$
+\mathcal{T}_{a,b} : A \to A, \qquad \mathcal{T}_{a,b}(x) = a\,\alpha(x)\,b .
+$$
+
+The **signed two-sided space** is the image of the bilinear map $\mathcal{T} : A \times A \to \operatorname{End}_k(A)$, $(a,b) \mapsto \mathcal{T}_{a,b}$.
+
+The signed two-sided operator is $k$-linear in $x$, because $\alpha$ and the two multiplications are; and it is $k$-bilinear in $a$ and in $b$. The definition differs from that of $L_{a}R_{b}$ in exactly one place, the middle argument, which is now $\alpha(x)$ in place of $x$. When $\alpha = \mathrm{id}$ the signed two-sided operator is the unsigned one, $\mathcal{T}_{a,b} = L_{a}R_{b}$, and the two theories coincide.
+
+### Elementary Properties
+
+**Proposition.** For all $a, b \in A$ and $x \in A$,
+
+**(a)** $\mathcal{T}_{1,1} = \alpha$;
+
+**(b)** $\mathcal{T}_{a,b} = L_{a}R_{b} \circ \alpha = \alpha \circ L_{\alpha(a)}R_{ \alpha(b)}$;
+
+**(c)** $\mathcal{T}_{a,b}(1) = a\,b$;
+
+**(d)** $\mathcal{T}_{a,b}\bigl(\alpha(y)\,\alpha(c)\bigr) = \mathcal{T}_{a,b}\bigl(\alpha(y)\bigr)\,\alpha(c)$, so $\mathcal{T}_{a,b}$ is right $A$-linear on the image of $\alpha$.
+
+*Proof.* (a) $\mathcal{T}_{1,1}(x) = \alpha(x)$. (b) $L_{a}R_{b}(\alpha(x)) = a\alpha(x)b = \mathcal{T}_{a,b}(x)$, and $\alpha(L_{\alpha(a)}R_{\alpha(b)}(x)) = \alpha(\alpha(a)x\alpha(b)) = a\alpha(x)b$. (c) $\alpha(1) = 1$. (d) By multiplicativity of $\alpha$, $\mathcal{T}_{a,b}(\alpha(y)\alpha(c)) = a\alpha(\alpha(y)\alpha(c))b = a\,y\,\alpha(c)\,b = \mathcal{T}_{a,b}(\alpha(y))\,\alpha(c)$.
+
+The identity (b) is the precise sense in which the signed two-sided operator is the unsigned two-sided operator followed by the involution: $\mathcal{T}_{a,b} = L_{a}R_{b}\alpha$ as operators, the involution acting first. It is the reason the signed operator can be read off from the unsigned one whenever $\alpha$ is known, and the reason a statement about the signed two-sided operator is a statement about the pair $(L_{a}R_{b}, \alpha)$.
+
+### Composition
+
+**Theorem.** For all $a, b, c, d \in A$,
+
+$$
+\boxed{\;\mathcal{T}_{a,b}\,L_{c}R_{d} = \mathcal{T}_{a\alpha(c),\,\alpha(d)b}, \qquad
+L_{a}R_{b}\,\mathcal{T}_{c,d} = \mathcal{T}_{ac,\,db}, \qquad
+\mathcal{T}_{a,b}\,\mathcal{T}_{c,d} = L_{a\alpha(c)}R_{\,\alpha(d)b}\;} .
+$$
+
+In particular the product of two signed two-sided operators is an unsigned two-sided operator, and the signed two-sided operators are not closed under composition unless $\alpha = \mathrm{id}$.
+
+*Proof.* Use the two readings $\mathcal{T}_{p,q} = L_{p}R_{q}\alpha = \alpha L_{\alpha(p)}R_{\alpha(q)}$ of elementary property (b) and $\alpha^2 = \mathrm{id}$. For the first, $\mathcal{T}_{a,b}L_{c}R_{d} = L_{a}R_{b}\alpha L_{c}R_{d} = L_{a}R_{b}L_{\alpha(c)}R_{\alpha(d)}\alpha = \mathcal{T}_{a\alpha(c),\alpha(d)b}$. For the second, $L_{a}R_{b}\mathcal{T}_{c,d} = L_{a}R_{b}L_{c}R_{d}\alpha = \mathcal{T}_{ac,db}$. For the third, multiply the first two: $\mathcal{T}_{a,b}\mathcal{T}_{c,d} = L_{a}R_{b}\alpha L_{c}R_{d}\alpha = L_{a}R_{b}L_{\alpha(c)}R_{\alpha(d)}\alpha^2 = L_{a\alpha(c)}R_{\alpha(d)b}$.
+
+**Remark.** The three rules are the complete multiplication table of the two-sided operators: a signed two-sided operator followed by an unsigned one is signed, an unsigned followed by a signed is signed, and two signed two-sided operators compose to an unsigned one. The signed two-sided operators are the coset $G_0\alpha$ of the group $G_0$ of invertible unsigned two-sided operators, and the union $G_0 \cup G_0\alpha$ is a subgroup of $\operatorname{End}_k(A)$ of index two over $G_0$ generated by $\alpha$; the multiplication is the one displayed.
+
+**Corollary.** The map
+
+$$
+a \otimes b \longmapsto \mathcal{T}_{a,b}, \qquad A \otimes_k A_{\mathrm{opp}} \longrightarrow \operatorname{End}_k(A)
+$$
+
+is $k$-linear onto the signed two-sided space, and its products obey the table above; when $\alpha = \mathrm{id}$ it is the two-sided operator homomorphism of *The Two-Sided Operator on an Algebra* and the three rules collapse to $L_{a}R_{b}L_{c}R_{d} = L_{ac}R_{db}$.
+
+### Invertibility
+
+**Theorem.** Let $A$ be finite-dimensional. The signed two-sided operator $\mathcal{T}_{a,b}$ is invertible in $\operatorname{End}_k(A)$ if and only if $a$ and $b$ are units of $A$, and then
+
+$$
+\boxed{\;\mathcal{T}_{a,b}^{-1} = \mathcal{T}_{\alpha(a)^{-1},\, \alpha(b)^{-1}}\;} .
+$$
+
+*Proof.* The form $\mathcal{T}_{a,b} = L_{a}R_{b}\alpha$ is the composite of the invertible operator $\alpha$ with the two-sided operator $L_{a}R_{b}$, so it is invertible exactly when $L_{a}R_{b}$ is; by *The Two-Sided Operator on an Algebra* this is exactly when $a$ and $b$ are units. For the inverse, apply the composition rule for two signed two-sided operators: $\mathcal{T}_{a,b}\mathcal{T}_{\alpha(a)^{-1},\alpha(b)^{-1}} = L_{a\alpha(\alpha(a)^{-1})}R_{\,\alpha(\alpha(b)^{-1})b} = L_{a\alpha(a)^{-1}}R_{\,b^{-1}b} = L_{1}R_{1} = \mathrm{id}$, using $\alpha(\alpha(a)^{-1}) = a^{-1}$ and $\alpha(\alpha(b)^{-1}) = b^{-1}$; the same computation in the other order gives the two-sided inverse.
+
+**Remark.** The inverse $\mathcal{T}_{\alpha(a)^{-1},\alpha(b)^{-1}}$ is again a signed two-sided operator, so the invertible signed two-sided operators are stable under inversion; they are not stable under composition, because the product of two of them is an unsigned two-sided operator. The stable object is the union of the invertible signed and the invertible unsigned two-sided operators, which is the subgroup $G_0 \cup G_0\alpha$ of the remark above. When $\alpha = \mathrm{id}$ the signed and the unsigned two-sided operators coincide and this union is the ordinary group of invertible two-sided operators.
+
+## The Signed Two-Sided Operator and the Reflections
+
+### The Signed Conjugations
+
+**Definition.** For a unit $u \in A$ the **signed conjugation**, or **signed inner automorphism**, by $u$ is the operator
+
+$$
+\rho_u = \mathcal{T}_{u,\, u^{-1}} : A \to A, \qquad \rho_u(x) = u\,\alpha(x)\,u^{-1} .
+$$
+
+The signed conjugation is the signed two-sided operator with $b = u^{-1}$, exactly as the inner automorphism $\iota_u$ is the unsigned two-sided operator with $b = u^{-1}$. It is an automorphism of $A$ for every unit $u$, being the composite of the automorphisms $\alpha$ and $\iota_u$. The reflections are the signed conjugations of order two, and their detailed study is *Reflections as Signed Two-Sided Operators on an Algebra*; the present article fixes the operator and states the criterion for it to be a reflection.
+
+**Proposition.** For every unit $u$ the signed conjugation is an automorphism of $A$, and
+
+$$
+\rho_u^2 = \iota_{u\,\alpha(u)}, \qquad \text{that is} \qquad \rho_u^2(x) = u\,\alpha(u)\, x\, (u\,\alpha(u))^{-1} .
+$$
+
+Hence $\rho_u$ is an involution — a reflection — exactly when $u\,\alpha(u)$ is central, and then $\rho_u^2 = \mathrm{id}$.
+
+*Proof.* Compute on $x$: $\rho_u(\rho_u(x)) = u\alpha(u\alpha(x)u^{-1})u^{-1} = u\alpha(u)\,\alpha^2(x)\,\alpha(u)^{-1}u^{-1} = (u\alpha(u))x(u\alpha(u))^{-1}$, using the multiplicativity of $\alpha$ and the inversion rule $\alpha(u^{-1}) = \alpha(u)^{-1}$. The operator is the inner automorphism by $u\alpha(u)$, so it is the identity exactly when $u\alpha(u)$ is central.
+
+**Corollary.** If $u$ is an **odd** element of a $\mathbb{Z}/2$-graded algebra, $\alpha(u) = -u$, then $\rho_u^2 = \iota_{-u^2}$; in particular, if $u^2$ is central, then $\rho_u$ is a reflection. The Clifford algebras supply the standard instances, and their metric reading belongs to *Quadratic Forms and Clifford Algebras* of Part II and is not made here.
+
+*Proof.* With $\alpha(u) = -u$ one has $u\alpha(u) = -u^2$, which is central when $u^2$ is central; the criterion of the proposition then applies.
+
+### The Relation to the Unsigned Two-Sided Operator
+
+**Proposition.** The signed two-sided operator and the unsigned two-sided operator determine one another through the involution,
+
+$$
+\boxed{\;\mathcal{T}_{a,b} = L_{a}R_{b}\,\alpha = \alpha\, L_{\alpha(a)}R_{\, \alpha(b)}, \qquad L_{a}R_{b} = \mathcal{T}_{a,b}\,\alpha\;} .
+$$
+
+*Proof.* The first identity is elementary property (b). For the second, compose the first on the right with $\alpha$ and use $\alpha^2 = \mathrm{id}$.
+
+**Corollary.** The signed two-sided space is the image of the unsigned two-sided space under composition with $\alpha$, and the two spaces have the same dimension. In particular the signed two-sided space is all of $\operatorname{End}_k(A)$ exactly when the unsigned two-sided space is, which for a central simple algebra is the case by *The Two-Sided Operator on an Algebra*.
+
+The corollary is the reason the signed theory is not a second theory but the unsigned one with one operator inserted: the involution $\alpha$ acts on the operator space by composition, and the signed two-sided operator is the image of the unsigned two-sided operator under that action.
+
+## The Examples
+
+### A Trivial Grading
+
+Let $A = A^0$ be concentrated in even degree; then $\alpha = \mathrm{id}$, the signed two-sided operator is the unsigned two-sided operator, $\mathcal{T}_{a,b} = L_{a}R_{b}$, and every statement of the article reduces to the corresponding statement of *The Two-Sided Operator on an Algebra*. This is the degenerate case, and it is the reason the word "signed" is reserved for the case in which $\alpha \neq \mathrm{id}$.
+
+### A Group Algebra with a Parity
+
+Let $A = k[G]$ for a group $G$ and let $\chi : G \to \{\pm 1\}$ be a homomorphism; extending $\chi$ linearly gives an involutive automorphism $\alpha$ of $A$, the grade involution of the grading that puts each $g$ in degree $\chi(g)$. Then $\mathcal{T}_{a,b}$ is the two-sided operator twisted by the sign of the group elements, and for $a = g$, $b = g^{-1}$ the signed conjugation acts on a group element by
+$$
+\rho_g(x_h) = g\,\alpha(x_h)\,g^{-1} = \chi(h)\,x_{ghg^{-1}} = \alpha\bigl(x_{ghg^{-1}}\bigr),
+$$
+the ordinary conjugation dressed by the parity of the element acted on — not of the conjugating element, and the two agree only when the parities coincide. The reflector condition is $\chi(g)g^2 \in Z(A)$, so every central element is a reflector and so is every element of order two; the signed conjugations are the conjugations dressed by the parity, and the reflections are the classes of those elements modulo the centre.
+
+### The Exterior Algebra
+
+Let $A = \Lambda(V)$ be the exterior algebra of a $k$-module $V$, graded by the degree, with grade involution $\alpha$ negating the odd part. The signed two-sided operator is the two-sided multiplication twisted by the parity, and the signed conjugations $\rho_u(x) = u\,\alpha(x)\,u^{-1}$ for an odd element $u$ are the reflections of the algebra; for a vector $v$ with $v^2 = 0$ the element $v$ is not a unit and the operator $\rho_v$ is not defined as a conjugation, which is the degenerate case. The exterior algebra and its involution belong to *The Exterior Algebra* of the anti-symmetric category, and its relation to the metric case is Part II.
+
+## Summary
+
+Fix an involutive automorphism $\alpha$ of $A$, $k$-linear and multiplicative with $\alpha^2 = \mathrm{id}$; the grade involution of a $\mathbb{Z}/2$-grading is the standard instance, and the grading theory itself belongs to *Superalgebras and Graded Structures*. The **signed two-sided operator** is $\mathcal{T}_{a,b}(x) = a\alpha(x)b$, $k$-linear in $x$ and $k$-bilinear in $a$ and $b$, with $\mathcal{T}_{1,1} = \alpha$, $\mathcal{T}_{a,b}(1) = ab$, and the two readings $\mathcal{T}_{a,b} = L_{a}R_{b}\alpha = \alpha L_{\alpha(a)}R_{\alpha(b)}$ of the unsigned two-sided operator. The signed two-sided operators satisfy $\mathcal{T}_{a,b}L_{c}R_{d} = \mathcal{T}_{a\alpha(c),\alpha(d)b}$, $L_{a}R_{b}\mathcal{T}_{c,d} = \mathcal{T}_{ac,db}$ and $\mathcal{T}_{a,b}\mathcal{T}_{c,d} = L_{a\alpha(c)}R_{\alpha(d)b}$, so the product of two signed two-sided operators is an unsigned two-sided operator; and $\mathcal{T}_{a,b}$ is invertible exactly when $a$ and $b$ are units, with inverse $\mathcal{T}_{\alpha(a)^{-1},\alpha(b)^{-1}}$.
+
+The signed conjugation $\rho_u = \mathcal{T}_{u,u^{-1}}$, $\rho_u(x) = u\alpha(x)u^{-1}$, is an automorphism for every unit $u$ and satisfies $\rho_u^2 = \iota_{u\alpha(u)}$; hence $\rho_u$ is a reflection exactly when $u\alpha(u)$ is central, which for an odd element $u$ of a graded algebra with $u^2$ central is the case $u\alpha(u) = -u^2$. The reflections are the signed conjugations of order two and are treated in *Reflections as Signed Two-Sided Operators on an Algebra*; the one-sided signed operators are the subject of *The Signed Left Multiplication on an Algebra*, and the signed adjoints are the subject of *The Signed Adjoint Two-Sided Operator on an Algebra*.
+
+## Summary of Notation
+
+| Symbol | Meaning |
+|---|---|
+| $k$ | the field of scalars |
+| $A$ | a unital associative $k$-algebra |
+| $\alpha$ | an involutive automorphism, $\alpha^2 = \mathrm{id}$ |
+| $A = A^+ \oplus A^-$ | the $\pm1$ eigenspaces, a $\mathbb{Z}/2$-grading |
+| $L_{a}R_{b}(x) = axb$ | the unsigned two-sided operator |
+| $\mathcal{T}_{a,b}(x) = a\alpha(x)b$ | the signed two-sided operator |
+| $\mathcal{T}^{\mathrm{s}}(A)$ | the signed two-sided space |
+| $\mathcal{T}_{a,b} = L_{a}R_{b}\alpha = \alpha L_{\alpha(a)}R_{\alpha(b)}$ | the relation to the unsigned two-sided operator |
+| $\mathcal{T}_{a,b}\mathcal{T}_{c,d} = L_{a\alpha(c)}R_{\alpha(d)b}$ | the composition rule for two signed two-sided operators |
+| $\rho_u = \mathcal{T}_{u,u^{-1}}$, $\rho_u(x) = u\alpha(x)u^{-1}$ | the signed conjugation |
+| $\rho_u^2 = \iota_{u\alpha(u)}$ | the square of a signed conjugation |
+
+## Further Reading
+
+- Richard S. Pierce, *Associative Algebras* (Springer, 1982), for the graded algebras with an involutive automorphism and the regular representations.
+- Nathan Jacobson, *Structure of Rings* (American Mathematical Society, 1956), for the multiplication algebra and the two-sided operators.
+- Kevin McCrimmon, *A Taste of Jordan Algebras* (Springer, 2004), for the twisted two-sided operators and the reflections in the general algebraic setting.
+- Claude Chevalley, *The Algebraic Theory of Spinors and Clifford Algebras* (Springer, 1997), for the reflections realised by the signed conjugations of a Clifford algebra.

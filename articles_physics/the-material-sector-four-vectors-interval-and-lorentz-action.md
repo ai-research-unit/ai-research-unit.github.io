@@ -16,7 +16,7 @@ The results used are these.
 | The units of the algebra in the sector, the complement of the cone | [N-Regularity and N-Degeneracy in the Biquaternion Algebra, §The Group of Units](../articles_maths/n-regularity-and-n-degeneracy-in-the-biquaternion-algebra.html) |
 | The four forms and their restrictions | [The Four Forms and the Four Algebraic Norms over the Biquaternion Algebra](../articles_maths/the-four-forms-and-the-four-algebraic-norms-over-the-biquaternion-algebra.html), [Remarkable Subspaces and the Four General Products, Forms and Norms](../articles_maths/remarkable-subspaces-and-the-four-general-products-forms-and-norms.html) |
 | The commutator and the Lie algebra | [Lie Algebras of Sesqualgebras](../articles_maths/lie-algebras-of-sesqualgebras.html) |
-| The sandwich and the adjoint action | [Two-Sided Operators on the General Plain Sesqualgebra](../articles_maths/two-sided-operators-on-the-general-plain-sesqualgebra.html) |
+| The two-sided operator and the adjoint action | [Two-Sided Operators on the General Plain Sesqualgebra](../articles_maths/two-sided-operators-on-the-general-plain-sesqualgebra.html) |
 | The eigenvalue decomposition, the eigenprojections and the degenerate case | [The Biquaternion Eigenvalue Decomposition](../articles_maths/the-biquaternion-eigenvalue-decomposition.html), [The Spectrum](../articles_maths/the-spectrum.html) |
 
 ## The Results It Uses
@@ -241,7 +241,7 @@ This is not the statement that the sector has no antisymmetric structure. The **
 
 ### The Material Object Is Acted Upon
 
-The sector is the space of configurations, and the informational sector acts on it by the sandwich $\tilde Q_-\mapsto\tilde Q_+\tilde Q_-\tilde Q_+^{*}$. The asymmetry is the physical content of the names: the material element is what is acted upon, and the informational element is what acts. A material element is the object observed, and its observable representative is $i\tilde Q\in\mathbb{B}_{\Psi}$; the factor $i$ is the map from the object to the operator that reads it.
+The sector is the space of configurations, and the informational sector acts on it by the two-sided operator $\tilde Q_-\mapsto\tilde Q_+\tilde Q_-\tilde Q_+^{*}$. The asymmetry is the physical content of the names: the material element is what is acted upon, and the informational element is what acts. A material element is the object observed, and its observable representative is $i\tilde Q\in\mathbb{B}_{\Psi}$; the factor $i$ is the map from the object to the operator that reads it.
 
 The action preserves the norm when the acting element has unit norm, and then it is the Lorentz action, a change of frame. When the acting element is an idempotent, the action is a projection, and it is a measurement; but the idempotent lies in $\mathbb{B}_{\Psi}$, not in $\mathbb{B}_{\Phi}$. The material sector itself owns no non-trivial idempotent: if $\tilde\Pi^2=\tilde\Pi$ and $\tilde\Pi^{*}=-\tilde\Pi$, then applying the star to the first relation gives $-\tilde\Pi=\tilde\Pi^2=\tilde\Pi$, so $\tilde\Pi=0$. The measurement projection therefore runs through the informational sector, and the material sector supplies the object, not the outcome.
 

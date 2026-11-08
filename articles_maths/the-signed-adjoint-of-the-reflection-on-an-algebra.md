@@ -2,7 +2,7 @@
 
 ## Introduction
 
-A reflection of an algebra with respect to a grade involution $\alpha$ is a signed conjugation $\rho_u(x)=u\,\alpha(x)\,u^{-1}$ of order two, the signed sandwich $\mathcal{T}_{u,u^{-1}}$ of a **reflector** $u$, a unit whose product $u\alpha(u)$ is central. This article computes its adjoint: the twisted adjoint of the reflection by $u$ is the reflection by $\delta(u)=\sigma\alpha(u)$,
+A reflection of an algebra with respect to a grade involution $\alpha$ is a signed conjugation $\rho_u(x)=u\,\alpha(x)\,u^{-1}$ of order two, the signed two-sided operator $\mathcal{T}_{u,u^{-1}}$ of a **reflector** $u$, a unit whose product $u\alpha(u)$ is central. This article computes its adjoint: the twisted adjoint of the reflection by $u$ is the reflection by $\delta(u)=\sigma\alpha(u)$,
 
 $$
 \rho_u^{*_\sigma}=\rho_{\delta(u)}, \qquad \text{and for the plain pairing} \qquad \rho_u^{*}=\rho_{\alpha(u)},
@@ -10,9 +10,9 @@ $$
 
 so the adjoint operation acts on the reflections by applying an anti-automorphism to the reflector. The reflection is self-adjoint for the twisted pairing exactly when $u^{-1}\delta(u)$ is central, that is when $\delta(u)$ is a central multiple of $u$, and this condition fails in interesting cases: it is automatic in the commutative algebras and when $\delta=\mathrm{id}$, and it is a genuine restriction for a matrix algebra with a non-symmetric reflector.
 
-This article develops the adjoint of a reflection, the criterion for its self-adjointness, the cases in which the criterion is automatic, the unitary reflections beside the self-adjoint ones, and the interaction of the adjoint with the fixed subalgebra of the reflection. It assumes *Reflections as Signed Two-Sided Operators on an Algebra* for the reflectors $R^{\times}(A,\alpha)$ and the reflections $\mathrm{Ref}(A,\alpha)$, *The Signed Sandwich on an Algebra* for the signed conjugation and the relation $\rho_u^{2}=\iota_{u\alpha(u)}$, *The Signed Adjoint Sandwich on an Algebra* for the signed adjoint and the unitarity condition, *The Adjoint of the Left Multiplication on an Algebra* for the one-sided adjoints, *Involutions of the Operator Algebra* and *The Adjoint in an Involutive Algebra* for the adjoint operation and the two pairings, and *Involutive Algebras* for the involutions. The graded reading is *The Graded Adjoint Action on a Module over an Algebra*; the geometric reflection and the metric form are Part II and *Hilbert Algebras* and *Quadratic Forms and Clifford Algebras*, named as the owner and not used. This article stays inside Part I: no distance, norm, form with a norm, topology or limit.
+This article develops the adjoint of a reflection, the criterion for its self-adjointness, the cases in which the criterion is automatic, the unitary reflections beside the self-adjoint ones, and the interaction of the adjoint with the fixed subalgebra of the reflection. It assumes *Reflections as Signed Two-Sided Operators on an Algebra* for the reflectors $R^{\times}(A,\alpha)$ and the reflections $\mathrm{Ref}(A,\alpha)$, *The Signed Two-Sided Operator on an Algebra* for the signed conjugation and the relation $\rho_u^{2}=\iota_{u\alpha(u)}$, *The Signed Adjoint Two-Sided Operator on an Algebra* for the signed adjoint and the unitarity condition, *The Adjoint of the Left Multiplication on an Algebra* for the one-sided adjoints, *Involutions of the Operator Algebra* and *The Adjoint in an Involutive Algebra* for the adjoint operation and the two pairings, and *Involutive Algebras* for the involutions. The graded reading is *The Graded Adjoint Action on a Module over an Algebra*; the geometric reflection and the metric form are Part II and *Hilbert Algebras* and *Quadratic Forms and Clifford Algebras*, named as the owner and not used. This article stays inside Part I: no distance, norm, form with a norm, topology or limit.
 
-Throughout, $k$ is a field of characteristic not two, $A$ is a finite-dimensional unital associative $k$-algebra, $\tau$ is a trace whose pairing $\langle x,y\rangle=\tau(xy)$ is nondegenerate, $\sigma$ is an involution of $A$ with $\tau(\sigma(x))=\tau(x)$, and $\alpha$ is an involutive automorphism of $A$ commuting with $\sigma$ and preserving the trace. The twist is $\delta=\sigma\alpha$, the twisted pairing is $\{x,y\}=\tau(x\sigma(y))$, the unsigned sandwich is $L_{a}R_{b}(x)=axb$, the signed sandwich is $\mathcal{T}_{a,b}(x)=a\alpha(x)b$, the reflector is a unit $u$ with $u\alpha(u)\in Z(A)$, and the reflection is $\rho_u=\mathcal{T}_{u,u^{-1}}$.
+Throughout, $k$ is a field of characteristic not two, $A$ is a finite-dimensional unital associative $k$-algebra, $\tau$ is a trace whose pairing $\langle x,y\rangle=\tau(xy)$ is nondegenerate, $\sigma$ is an involution of $A$ with $\tau(\sigma(x))=\tau(x)$, and $\alpha$ is an involutive automorphism of $A$ commuting with $\sigma$ and preserving the trace. The twist is $\delta=\sigma\alpha$, the twisted pairing is $\{x,y\}=\tau(x\sigma(y))$, the unsigned two-sided operator is $L_{a}R_{b}(x)=axb$, the signed two-sided operator is $\mathcal{T}_{a,b}(x)=a\alpha(x)b$, the reflector is a unit $u$ with $u\alpha(u)\in Z(A)$, and the reflection is $\rho_u=\mathcal{T}_{u,u^{-1}}$.
 
 ## The Adjoint of a Reflection
 
@@ -24,7 +24,7 @@ $$
 
 The twisted adjoint of the reflection by $u$ is the reflection by $\delta(u)$, and the plain adjoint is the reflection by $\alpha(u)$; both are reflections, and the adjoint operation carries the reflection set into itself.
 
-*Proof.* The twisted adjoint of a signed sandwich is $\mathcal{T}_{a,b}^{*_\sigma}=\mathcal{T}_{\delta(a),\delta(b)}$ by *The Signed Adjoint Sandwich on an Algebra*; with $a=u$ and $b=u^{-1}$ this is $\mathcal{T}_{\delta(u),\delta(u^{-1})}$, and $\delta(u^{-1})=\delta(u)^{-1}$ because $\delta$ is an anti-automorphism of order two. The result is the signed conjugation by $\delta(u)$, that is $\rho_{\delta(u)}$. For the plain pairing the adjoint of a signed sandwich is $\mathcal{T}_{\alpha(b),\alpha(a)}$, which with $a=u$ and $b=u^{-1}$ is $\mathcal{T}_{\alpha(u)^{-1},\alpha(u)}=\rho_{\alpha(u)}$. That $\delta(u)$ is a reflector: $\delta(u)\alpha(\delta(u))=\sigma(\alpha(u))\alpha(\sigma(\alpha(u)))=\sigma(\alpha(u))\sigma(u)=\sigma(u\alpha(u))$, which is central exactly when $u\alpha(u)$ is central, the involution $\sigma$ preserving centrality and being onto; so $\rho_{\delta(u)}$ is an involutive automorphism. That $\alpha(u)$ is a reflector is the same computation with $\delta$ replaced by $\alpha$: $\alpha(u)\alpha(\alpha(u))=\alpha(u)u=u\alpha(u)$, central.
+*Proof.* The twisted adjoint of a signed two-sided operator is $\mathcal{T}_{a,b}^{*_\sigma}=\mathcal{T}_{\delta(a),\delta(b)}$ by *The Signed Adjoint Two-Sided Operator on an Algebra*; with $a=u$ and $b=u^{-1}$ this is $\mathcal{T}_{\delta(u),\delta(u^{-1})}$, and $\delta(u^{-1})=\delta(u)^{-1}$ because $\delta$ is an anti-automorphism of order two. The result is the signed conjugation by $\delta(u)$, that is $\rho_{\delta(u)}$. For the plain pairing the adjoint of a signed two-sided operator is $\mathcal{T}_{\alpha(b),\alpha(a)}$, which with $a=u$ and $b=u^{-1}$ is $\mathcal{T}_{\alpha(u)^{-1},\alpha(u)}=\rho_{\alpha(u)}$. That $\delta(u)$ is a reflector: $\delta(u)\alpha(\delta(u))=\sigma(\alpha(u))\alpha(\sigma(\alpha(u)))=\sigma(\alpha(u))\sigma(u)=\sigma(u\alpha(u))$, which is central exactly when $u\alpha(u)$ is central, the involution $\sigma$ preserving centrality and being onto; so $\rho_{\delta(u)}$ is an involutive automorphism. That $\alpha(u)$ is a reflector is the same computation with $\delta$ replaced by $\alpha$: $\alpha(u)\alpha(\alpha(u))=\alpha(u)u=u\alpha(u)$, central.
 
 **Corollary.** The adjoint operation acts on the set of reflections by the anti-automorphism $\delta$ for the twisted pairing and by the automorphism $\alpha$ for the plain one, and
 
@@ -34,7 +34,7 @@ $$
 
 so the action is an involution of the reflection set; the reflection by $1$ is $\alpha$, and it is fixed by both adjoints.
 
-*Proof.* Order two is the order two of the adjoint operation and of $\delta$, respectively $\alpha$; the case $u=1$ gives $\rho_1=\alpha$, and $\alpha$ is self-adjoint for both pairings by *The Signed Adjoint Sandwich on an Algebra*.
+*Proof.* Order two is the order two of the adjoint operation and of $\delta$, respectively $\alpha$; the case $u=1$ gives $\rho_1=\alpha$, and $\alpha$ is self-adjoint for both pairings by *The Signed Adjoint Two-Sided Operator on an Algebra*.
 
 ## Self-Adjointness
 
@@ -60,11 +60,11 @@ and self-adjoint for the plain pairing exactly when $u^{-1}\alpha(u) \in Z(A)$. 
 
 **Theorem (the grade involution is the identity).** If $\alpha=\mathrm{id}$ then the reflections are the inner involutions $\rho_u(x)=uxu^{-1}$ with $u^{2}$ central, $\rho_u^{*_\sigma}=\rho_{\sigma(u)}$ and $\rho_u^{*}=\rho_u$; every reflection is self-adjoint for the plain pairing, and it is self-adjoint for the twisted pairing exactly when $u^{-1}\sigma(u)$ is central.
 
-*Proof.* With $\alpha=\mathrm{id}$ the signed sandwich is the unsigned one and the signed conjugation is the inner automorphism; the reflector condition $u\alpha(u)=u^{2}\in Z(A)$ is the classical one, and the two adjoint formulas specialize to $\rho_{\sigma(u)}$ and $\rho_{\alpha(u)}=\rho_u$. The last statement is the self-adjointness criterion with $\alpha=\mathrm{id}$.
+*Proof.* With $\alpha=\mathrm{id}$ the signed two-sided operator is the unsigned one and the signed conjugation is the inner automorphism; the reflector condition $u\alpha(u)=u^{2}\in Z(A)$ is the classical one, and the two adjoint formulas specialize to $\rho_{\sigma(u)}$ and $\rho_{\alpha(u)}=\rho_u$. The last statement is the self-adjointness criterion with $\alpha=\mathrm{id}$.
 
-**Theorem (the anti-automorphism is the grade involution).** If $\delta=\mathrm{id}$, equivalently $\sigma=\alpha$, then every signed sandwich is self-adjoint for the twisted pairing, $\mathcal{T}_{a,b}^{*_\sigma}=\mathcal{T}_{a,b}$, and in particular every reflection is self-adjoint. The case occurs exactly when $\sigma=\alpha$ and the algebra is commutative.
+**Theorem (the anti-automorphism is the grade involution).** If $\delta=\mathrm{id}$, equivalently $\sigma=\alpha$, then every signed two-sided operator is self-adjoint for the twisted pairing, $\mathcal{T}_{a,b}^{*_\sigma}=\mathcal{T}_{a,b}$, and in particular every reflection is self-adjoint. The case occurs exactly when $\sigma=\alpha$ and the algebra is commutative.
 
-*Proof.* The twisted adjoint of a signed sandwich is $\mathcal{T}_{\delta(a),\delta(b)}$, which is $\mathcal{T}_{a,b}$ when $\delta=\mathrm{id}$; the equation $\sigma=\alpha$ between an anti-automorphism and an automorphism gives $\alpha(x)\alpha(y)=\alpha(y)\alpha(x)$ for all $x,y$, so the image of $\alpha$, which is $A$, is commutative, and conversely in a commutative algebra the identity is both an automorphism and an anti-automorphism.
+*Proof.* The twisted adjoint of a signed two-sided operator is $\mathcal{T}_{\delta(a),\delta(b)}$, which is $\mathcal{T}_{a,b}$ when $\delta=\mathrm{id}$; the equation $\sigma=\alpha$ between an anti-automorphism and an automorphism gives $\alpha(x)\alpha(y)=\alpha(y)\alpha(x)$ for all $x,y$, so the image of $\alpha$, which is $A$, is commutative, and conversely in a commutative algebra the identity is both an automorphism and an anti-automorphism.
 
 **Theorem (the commutative algebra).** If $A$ is commutative then every unit is a reflector, every reflection is the grade involution $\alpha$, and every reflection is self-adjoint for both pairings.
 
@@ -76,7 +76,7 @@ The two theorems describe the failure of the self-adjointness criterion as a deg
 
 **Theorem.** A reflection is unitary for the twisted pairing exactly when $\sigma(u)u$ is central and fixed by $\alpha$; a reflection that is both self-adjoint and unitary satisfies $\rho_u^{2}=\mathrm{id}$ as an operator and $\rho_u^{*_\sigma}=\rho_u=\rho_u^{-1}$.
 
-*Proof.* The unitarity criterion is the corollary of *The Signed Adjoint Sandwich on an Algebra* for $b=\alpha(a)^{-1}$, that is $\sigma(u)u\in Z(A)$ and $\alpha(\sigma(u)u)=\sigma(u)u$. A self-adjoint unitary operator has $T^{*}=T$ and $T^{*}=T^{-1}$, so $T=T^{-1}$; for the reflection, $T^{2}=\mathrm{id}$ holds by the reflector condition.
+*Proof.* The unitarity criterion is the corollary of *The Signed Adjoint Two-Sided Operator on an Algebra* for $b=\alpha(a)^{-1}$, that is $\sigma(u)u\in Z(A)$ and $\alpha(\sigma(u)u)=\sigma(u)u$. A self-adjoint unitary operator has $T^{*}=T$ and $T^{*}=T^{-1}$, so $T=T^{-1}$; for the reflection, $T^{2}=\mathrm{id}$ holds by the reflector condition.
 
 **Corollary.** For a reflection that is self-adjoint, the unitarity is the condition that $\sigma(u)u$ be a central element of the even part; the orthogonal reflections of a matrix algebra with the transpose are the case in which $\sigma(u)u$ is a scalar.
 
@@ -116,13 +116,13 @@ so a reflection is an automorphism of the algebra that is also an automorphism o
 
 ## Summary
 
-The reflection $\rho_u=\mathcal{T}_{u,u^{-1}}$ by a reflector $u$ has twisted adjoint $\rho_u^{*_\sigma}=\rho_{\delta(u)}$ and plain adjoint $\rho_u^{*}=\rho_{\alpha(u)}$, and both are again reflections, so the adjoint operation acts on the reflection set by the two order-two maps $\delta$ and $\alpha$; the reflection by $1$ is the grade involution $\alpha$, self-adjoint for both pairings. The reflection is self-adjoint for the twisted pairing exactly when $u^{-1}\delta(u)$ is central, equivalently when $\delta(u)$ is a central multiple of $u$, and for the plain pairing exactly when $u^{-1}\alpha(u)$ is central; central reflectors and reflectors fixed by the twist always give self-adjoint reflections. The criterion is automatic in the degenerate cases — $\alpha=\mathrm{id}$, where the reflections are the inner involutions; $\delta=\mathrm{id}$, where every signed sandwich is self-adjoint; and the commutative algebras, where every reflection is the grade involution — and it is a genuine condition only for a noncommutative algebra with $\delta\neq\mathrm{id}$. A reflection is unitary for the twisted pairing exactly when $\sigma(u)u$ is central and even, and a reflection that is both self-adjoint and unitary is its own inverse adjoint. The fixed set of a reflection is a unital subalgebra, it contains the central elements fixed by the grade involution, and the reflection preserves the trace and the plain pairing of the category; self-adjointness forces the fixed subalgebra of the twisted adjoint to coincide with that of the reflection. The geometric reflection and the metric form are Part II.
+The reflection $\rho_u=\mathcal{T}_{u,u^{-1}}$ by a reflector $u$ has twisted adjoint $\rho_u^{*_\sigma}=\rho_{\delta(u)}$ and plain adjoint $\rho_u^{*}=\rho_{\alpha(u)}$, and both are again reflections, so the adjoint operation acts on the reflection set by the two order-two maps $\delta$ and $\alpha$; the reflection by $1$ is the grade involution $\alpha$, self-adjoint for both pairings. The reflection is self-adjoint for the twisted pairing exactly when $u^{-1}\delta(u)$ is central, equivalently when $\delta(u)$ is a central multiple of $u$, and for the plain pairing exactly when $u^{-1}\alpha(u)$ is central; central reflectors and reflectors fixed by the twist always give self-adjoint reflections. The criterion is automatic in the degenerate cases — $\alpha=\mathrm{id}$, where the reflections are the inner involutions; $\delta=\mathrm{id}$, where every signed two-sided operator is self-adjoint; and the commutative algebras, where every reflection is the grade involution — and it is a genuine condition only for a noncommutative algebra with $\delta\neq\mathrm{id}$. A reflection is unitary for the twisted pairing exactly when $\sigma(u)u$ is central and even, and a reflection that is both self-adjoint and unitary is its own inverse adjoint. The fixed set of a reflection is a unital subalgebra, it contains the central elements fixed by the grade involution, and the reflection preserves the trace and the plain pairing of the category; self-adjointness forces the fixed subalgebra of the twisted adjoint to coincide with that of the reflection. The geometric reflection and the metric form are Part II.
 
 ## Summary of Notation
 
 | Symbol | Meaning |
 |---|---|
-| $\mathcal{T}_{a,b}(x)=a\alpha(x)b$ | the signed sandwich |
+| $\mathcal{T}_{a,b}(x)=a\alpha(x)b$ | the signed two-sided operator |
 | $\rho_u=\mathcal{T}_{u,u^{-1}}$, $\rho_u(x)=u\alpha(x)u^{-1}$ | the reflection by the reflector $u$ |
 | $R^{\times}(A,\alpha)$, $\mathrm{Ref}(A,\alpha)$ | the reflectors and the reflections |
 | $\alpha$, $\sigma$, $\delta=\sigma\alpha$ | the grade involution, the involution, and their twist |
@@ -133,7 +133,7 @@ The reflection $\rho_u=\mathcal{T}_{u,u^{-1}}$ by a reflector $u$ has twisted ad
 | $\mathrm{Fix}(\rho_u)=\{x:u\alpha(x)=xu\}$ | the fixed subalgebra of a reflection |
 | $\tau(\rho_u(x))=\tau(x)$, $\langle\rho_ux,\rho_uy\rangle=\langle x,y\rangle$ | a reflection preserves the trace and the pairing |
 | $\alpha=\mathrm{id}$ | the reflections are the inner involutions |
-| $\delta=\mathrm{id}$ | every signed sandwich is self-adjoint |
+| $\delta=\mathrm{id}$ | every signed two-sided operator is self-adjoint |
 | $\sigma(u)u\in Z(A)$, $\alpha$-fixed | the unitary reflections |
 
 ## Further Reading

@@ -14,7 +14,7 @@
 
 **The result in one line.** Every matrix is a sum of at most four two-sided products; the products themselves are the matrices of coefficient rank at most one; and the least number of products is the coefficient rank.
 
-**Boundaries.** The frame and the one-sided matrices are *$M_4(\mathbb{C})$ Pauli Representation*. The same operators in the canonical frame are *$M_4(\mathbb{C})_{\mathcal{T}}$ Representation : Operators Acting 2 Side*. The abstract family is *Operators Acting 2 Side*. The ambient endomorphisms are *The Endomorphisms of the Biquaternion Algebra*. The enveloping algebra is *The Enveloping Operator Algebra of the Biquaternion Algebra and the Bi-module Structure*. The Hermitian sandwich is Part V and is not treated here.
+**Boundaries.** The frame and the one-sided matrices are *$M_4(\mathbb{C})$ Pauli Representation*. The same operators in the canonical frame are *$M_4(\mathbb{C})_{\mathcal{T}}$ Representation : Operators Acting on Two Sides*. The abstract family is *Operators Acting on Two Sides*. The ambient endomorphisms are *The Endomorphisms of the Biquaternion Algebra*. The enveloping algebra is *The Enveloping Operator Algebra of the Biquaternion Algebra and the Bi-module Structure*. The Hermitian pair is Part V and is not treated here.
 
 **Conventions.** The basis is $e_t,\vec e_x,\vec e_y,\vec e_z$, with $\vec e_k^2=-e_t$ and $\vec e_x\vec e_y=\vec e_z$, $\vec e_y\vec e_z=\vec e_x$, $\vec e_z\vec e_x=\vec e_y$. The frame is the standard Peirce frame
 $$
@@ -129,7 +129,7 @@ The two identities are the frame form of the stitch between the left and the rig
 $$
 \mathsf P=\begin{pmatrix}1&0&0&0\\0&0&1&0\\0&1&0&0\\0&0&0&1\end{pmatrix},
 $$
-symmetric and involutive, $\mathsf P^{\mathsf T}=\mathsf P=\mathsf P^{-1}$, of trace $2$ and determinant $-1$. In the coefficient basis $(e_t,\vec e_x,\vec e_y,\vec e_z)$ the same operator is the reflection $\operatorname{diag}(1,1,-1,1)$, which fixes $e_t,\vec e_x,\vec e_z$ and negates $\vec e_y$. At the operator level the permutation conjugates the two families, $SL_{\tilde Q}S^{-1}=R_{S\tilde Q}$, and the Peirce transpose carries the parameter through the exchange, $L(\tilde X)^{\mathsf T}=L(S\tilde X)$; both are proved in *Operators Acting 1 Side*, §*The Matrix Identity*.
+symmetric and involutive, $\mathsf P^{\mathsf T}=\mathsf P=\mathsf P^{-1}$, of trace $2$ and determinant $-1$. In the coefficient basis $(e_t,\vec e_x,\vec e_y,\vec e_z)$ the same operator is the reflection $\operatorname{diag}(1,1,-1,1)$, which fixes $e_t,\vec e_x,\vec e_z$ and negates $\vec e_y$. At the operator level the permutation conjugates the two families, $SL_{\tilde Q}S^{-1}=R_{S\tilde Q}$, and the Peirce transpose carries the parameter through the exchange, $L(\tilde X)^{\mathsf T}=L(S\tilde X)$; both are proved in *Operators Acting on One Side*, §*The Matrix Identity*.
 
 **The intersection.** A matrix that is both block-diagonal with two equal blocks and block-scalar with four scalar blocks is a scalar matrix:
 $$
@@ -171,7 +171,7 @@ $$
 | $\vec e_y$ | $L_{\mathrm{pau},\vec e_y}R_{\mathrm{pau},e_t}=L_{\mathrm{pau},\vec e_y}$ | $L_{\mathrm{pau},\vec e_y}R_{\mathrm{pau},\vec e_x}$ | $L_{\mathrm{pau},\vec e_y}R_{\mathrm{pau},\vec e_y}$ | $L_{\mathrm{pau},\vec e_y}R_{\mathrm{pau},\vec e_z}$ |
 | $\vec e_z$ | $L_{\mathrm{pau},\vec e_z}R_{\mathrm{pau},e_t}=L_{\mathrm{pau},\vec e_z}$ | $L_{\mathrm{pau},\vec e_z}R_{\mathrm{pau},\vec e_x}$ | $L_{\mathrm{pau},\vec e_z}R_{\mathrm{pau},\vec e_y}$ | $L_{\mathrm{pau},\vec e_z}R_{\mathrm{pau},\vec e_z}$ |
 
-Each row is labelled by its left unit and each column by its right unit, so each entry is the product of the two labels, left factor first. The first row is the right family, the first column the left family, the diagonal entry $L_{\mathrm{pau},e_t}R_{\mathrm{pau},e_t}$ the identity, and the remaining nine the genuinely two-sided basis operators. The table is the matrix form of the four families of *Operators Acting 2 Side*, §*The Operator $L_{\tilde Q}R_{\tilde Q_2}$*.
+Each row is labelled by its left unit and each column by its right unit, so each entry is the product of the two labels, left factor first. The first row is the right family, the first column the left family, the diagonal entry $L_{\mathrm{pau},e_t}R_{\mathrm{pau},e_t}$ the identity, and the remaining nine the genuinely two-sided basis operators. The table is the matrix form of the four families of *Operators Acting on Two Sides*, §*The Operator $L_{\tilde Q}R_{\tilde Q_2}$*.
 
 ### The Sixteen, Entry by Entry
 
@@ -232,7 +232,7 @@ i&0&0&0
 $$
 whose first column is the coordinate column of $\vec e_x\tilde\Pi_+\vec e_y=i\tilde\Pi_-$. The entry is the check that the family rule and the exchange agree.
 
-**The basis.** The sixteen matrices are linearly independent and span $M_4(\mathbb{C})$, by the orthogonality theorem of §*Orthogonality* and the dimension count. The span of the products is the whole algebra: the generation theorem of *Operators Acting 2 Side*, §*The Sixteen Products as a Basis*, read in this frame. The expansion of a general matrix in this basis is unique, and the coefficient matrix is the subject of §*The Cone of Products*.
+**The basis.** The sixteen matrices are linearly independent and span $M_4(\mathbb{C})$, by the orthogonality theorem of §*Orthogonality* and the dimension count. The span of the products is the whole algebra: the generation theorem of *Operators Acting on Two Sides*, §*The Sixteen Products as a Basis*, read in this frame. The expansion of a general matrix in this basis is unique, and the coefficient matrix is the subject of §*The Cone of Products*.
 
 ### Composition, Trace, Determinant
 
@@ -466,7 +466,7 @@ For $M\neq0$ the rank is exactly one; the zero matrix has $c=0$ and rank zero.
 
 **The two intersections.** The product set meets the left family in the left family and the right family in the right family: $L_{\tilde Q}R_{\mathrm{pau},e_t}=L(\tilde Q)$ and $L_{\mathrm{pau},e_t}R_{\tilde Q_2}=R(\tilde Q_2)$. The two intersections are distinct; they meet in the scalars, by §*The Two One-Sided Boundaries*. The product set is larger than either, and the generic product lies in neither.
 
-**The parametrisation.** The map $(\tilde Q,\tilde Q_2)\mapsto L_{\tilde Q}R_{\tilde Q_2}$ is bilinear and surjective onto the cone. Its fibre over a nonzero product is the scaling orbit $(\lambda\tilde Q,\lambda^{-1}\tilde Q_2)$ of §*The Factorization Map*; the cone has complex dimension $8-1=7$. The kernel and the image of the Hermitian sandwich are a different question, treated in Part V.
+**The parametrisation.** The map $(\tilde Q,\tilde Q_2)\mapsto L_{\tilde Q}R_{\tilde Q_2}$ is bilinear and surjective onto the cone. Its fibre over a nonzero product is the scaling orbit $(\lambda\tilde Q,\lambda^{-1}\tilde Q_2)$ of §*The Factorization Map*; the cone has complex dimension $8-1=7$. The kernel and the image of the Hermitian pair are a different question, treated in Part V.
 
 ### Matrix Rank Against Length
 
@@ -514,7 +514,7 @@ Both are single products, and both are contained in the cone. Their intersection
 
 **The cone is larger.** A generic pair has neither parameter a scalar multiple of $e_t$, and its operator is neither a left nor a right multiplication. The cone is strictly larger than the union of the two copies. The two copies are four-dimensional linear subspaces inside the seven-dimensional cone, and the cone itself is not a subspace.
 
-**The Hermitian subcone.** The Hermitian sandwich is the subcone $\tilde Q_2=\tilde Q^{*}$, a real seven-dimensional cone inside the complex seven-dimensional cone. It is the subject of Part V and is not developed here.
+**The Hermitian subcone.** The Hermitian pair is the subcone $\tilde Q_2=\tilde Q^{*}$, a real seven-dimensional cone inside the complex seven-dimensional cone. It is the subject of Part V and is not developed here.
 
 ### $E_{11}$ as a Worked Case
 
@@ -889,12 +889,12 @@ In one line: every two-sided operator is a single product of one left and one ri
 - [$M_2(\mathbb{C})$ Pauli Representation](m2c-pauli-representation.html), for the compression of the two one-sided actions.
 - [$M_2(\mathbb{C})$ Pauli Representation : Operators](m2c-pauli-representation-operators.html), for the same operators compressed to one matrix per side and a pair for the product.
 - [$M_4(\mathbb{C})$ Axis-Free Representation](m4c-axis-free-representation.html), for the same operators in the axis-free basis.
-- [Operators Acting 2 Side](operators-acting-2-side.html), for the abstract family, the generation theorem, the composition, the adjoint and the type criteria.
-- [The Matrix Algebra $M_4(\mathbb{C})$](the-matrix-algebra-m4c.html), for the construction of $M_4(\mathbb{C})$ from the sandwich map and the change to the matrix-unit basis.
-- [Operators Acting 1 Side](operators-acting-1-side.html), for $L$, $R$ and the four matrices of each side.
+- [Operators Acting on Two Sides](operators-acting-on-two-sides.html), for the abstract family, the generation theorem, the composition, the adjoint and the type criteria.
+- [The Matrix Algebra $M_4(\mathbb{C})$](the-matrix-algebra-m4c.html), for the construction of $M_4(\mathbb{C})$ from the two-sided map and the change to the matrix-unit basis.
+- [Operators Acting on One Side](operators-acting-on-one-side.html), for $L$, $R$ and the four matrices of each side.
 - [The Endomorphisms of the Biquaternion Algebra](the-endomorphisms-of-the-biquaternion-algebra.html), for the ambient operator space and its coordinate column.
 - [The Enveloping Operator Algebra of the Biquaternion Algebra and the Bi-module Structure](the-enveloping-operator-algebra-of-the-biquaternion-algebra-and-the-bi-module-structure.html), for the algebra $\mathbb{B}\otimes_{\mathbb{C}}\mathbb{B}_{\mathrm{opp}}$ and the pure tensors.
 - [Adjoint Pair of $L$ and $R$ Operators](adjoint-pair-of-l-and-r-operators.html), for the plain adjoint and its comparison with the other adjoints.
-- [Hermitian pair of operators acting as 2 side](hermitian-pair-of-operators-acting-as-2-side.html), for the real subcone $\tilde Q_2=\tilde Q^{*}$.
+- [The Hermitian Pair of Operators Acting on Two Sides](the-hermitian-pair-of-operators-acting-on-two-sides.html), for the real subcone $\tilde Q_2=\tilde Q^{*}$.
 - [Matrix Representations Conventions](matrix-representations-conventions.html), for the $2\times2$ unit images, the four left and four right matrices, the exchange $\mathsf P$ and the sixteen basis operators entry by entry.
 - [Conventions of the Matrix Models](../articles_physics/matrix-representations-conventions.html), for the explicit chiral matrices of one frame, the Peirce match and the chirality.

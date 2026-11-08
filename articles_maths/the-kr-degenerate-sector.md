@@ -122,7 +122,7 @@ $$
 \{0\}=\mathcal K\cap\{0\}.
 $$
 
-**Remark (the correct refinement).** This is why the sector is refined by the algebraic norm and not by the discriminant. The algebraic norm decides invertibility, and invertibility is the property that the products, the sandwich and the polar decomposition follow; the discriminant decides only the separation of the eigenvalues and is not preserved by the isometry group. §*Why There Is No Spectral Split* of the main article gives the four reasons in full.
+**Remark (the correct refinement).** This is why the sector is refined by the algebraic norm and not by the discriminant. The algebraic norm decides invertibility, and invertibility is the property that the products, the two-sided operator and the polar decomposition follow; the discriminant decides only the separation of the eigenvalues and is not preserved by the isometry group. §*Why There Is No Spectral Split* of the main article gives the four reasons in full.
 
 ## The Doubly Null Stratum
 
@@ -249,7 +249,7 @@ The pair of witnesses is $e_t+\vec e_x$, of pair $(0,2)$, and $e_t+i\vec e_x$, o
 
 **Left multiplication.** If $\tilde Q\in\mathcal K_{\mathrm u}$ it is a unit, and $L_{\tilde Q}$ is a bijection of complex rank $4$. If $\tilde Q\in\mathcal K_{\mathrm d}$ is non-zero it is a zero divisor, and $L_{\tilde Q}$ has rank $2$; at the origin it has rank $0$. The rank follows the algebraic norm and not the Krein norm: it is constant on $\mathcal K_{\mathrm u}$ and on each point of $\mathcal K_{\mathrm d}$ it is the algebraic rank, by *The Four General Products and Their Relations over the Biquaternion Algebra*, §*The Annihilators*.
 
-**The sandwich.** The operator $\mathrm{Sd}_{\tilde Q}(X)=\tilde QX\tilde Q^{*}$ is singular exactly on the algebraic null cone, by *Relations between the N Norm and Spectral Regularity and Degeneracy*, §*The Sandwich*. On the null set it is therefore singular exactly on $\mathcal K_{\mathrm d}$, and invertible on $\mathcal K_{\mathrm u}$. This is the sharpest operator reading of the two strata: the sandwich separates them, and it does so through the algebraic norm.
+**The two-sided operator.** The operator $\mathrm{Sd}_{\tilde Q}(X)=\tilde QX\tilde Q^{*}$ is singular exactly on the algebraic null cone, by *Relations between the N Norm and Spectral Regularity and Degeneracy*, §*The Two-Sided Operator*. On the null set it is therefore singular exactly on $\mathcal K_{\mathrm d}$, and invertible on $\mathcal K_{\mathrm u}$. This is the sharpest operator reading of the two strata: the two-sided operator separates them, and it does so through the algebraic norm.
 
 **The polar decomposition.** The modulus–unit decomposition $\tilde Q=\Rho\tilde U$ requires $\Rho^2=\langle\tilde Q\rangle_{\natural}$ with $\Rho\neq0$, so it exists exactly on the unit group. On the null set it therefore exists exactly on $\mathcal K_{\mathrm u}$ and fails on $\mathcal K_{\mathrm d}$; *The Polar Decomposition of an N-Regular Biquaternion*.
 
@@ -269,7 +269,7 @@ The pair of witnesses is $e_t+\vec e_x$, of pair $(0,2)$, and $e_t+i\vec e_x$, o
 | algebraic norm | $0$ on $\mathcal K_{\mathrm d}$; onto $\mathbb{C}^{\times}$ on $\mathcal K_{\mathrm u}$ |
 | multiplication | not closed: null times null can be positive, negative or null |
 | inversion | preserves the null set, and $\mathcal K_{\mathrm u}$ is inversion-stable |
-| operators | rank of left multiplication and the sandwich follow the algebraic norm; the polar decomposition exists exactly on $\mathcal K_{\mathrm u}$ |
+| operators | rank of left multiplication and the two-sided operator follow the algebraic norm; the polar decomposition exists exactly on $\mathcal K_{\mathrm u}$ |
 
 The sector is the light cone of the Krein form. It is a single orbit of the isometry group, so the metric structure sees no further subdivision; the only subdivision it admits is algebraic, and it is the split into the Peirce lines and the isotropic units. The doubly null stratum carries the zero divisors and the origin, closed and of dimension four; the isotropic units carry the rest, open and dense and of dimension seven. The Krein norm vanishes on both, and only the algebraic norm tells them apart.
 
@@ -289,7 +289,7 @@ The sector is the light cone of the Krein form. It is a single orbit of the isom
 | $iS^2$ | the set of pure imaginary unit vectors, $B^2=-1$ |
 | $\mathbb{C}(e_t+i\vec u)$, $\vec u\in S^2$ | the doubly null Peirce lines |
 | $\tilde\Pi_{\vec u}=\tfrac12(e_t+i\vec u)$ | the Hermitian idempotent of the Peirce line |
-| $\mathrm{Sd}_{\tilde Q}(X)=\tilde QX\tilde Q^{*}$ | the sandwich |
+| $\mathrm{Sd}_{\tilde Q}(X)=\tilde QX\tilde Q^{*}$ | the two-sided operator |
 
 ## Further Reading
 
@@ -299,6 +299,6 @@ The sector is the light cone of the Krein form. It is a single orbit of the isom
 - [The Krein Isometry Group and Its Cartan Decomposition](the-krein-isometry-group-and-its-cartan-decomposition.html), for the group $\mathrm{U}(1,3)$ and its transitive action.
 - [N-Regularity and N-Degeneracy in the Biquaternion Algebra](n-regularity-and-n-degeneracy-in-the-biquaternion-algebra.html), for the algebraic norm, the unit group and the zero-divisor cone.
 - [Peirce Decompositions of the Biquaternion Algebra](the-peirce-decomposition-of-the-biquaternion-algebra.html), for the Peirce idempotents behind the doubly null lines.
-- [Relations between the N Norm and Spectral Regularity and Degeneracy](relations-between-the-n-norm-and-spectral-regularity-and-degeneracy.html), for the sandwich, the rank of left multiplication and the polar decomposition.
+- [Relations between the N Norm and Spectral Regularity and Degeneracy](relations-between-the-n-norm-and-spectral-regularity-and-degeneracy.html), for the two-sided operator, the rank of left multiplication and the polar decomposition.
 - [The Polar Decomposition of an N-Regular Biquaternion](the-polar-decomposition-of-an-n-regular-biquaternion.html), for the modulus $\Rho=\sqrt{\langle\tilde Q\rangle_{\natural}}$ and its failure at the algebraic null cone.
 - [Remarkable Subspaces under the General Quaternionic Sesqualgebra](remarkable-subspaces-under-the-general-quaternionic-sesqualgebra.html), for the restriction of the form to the six remarkable subspaces.

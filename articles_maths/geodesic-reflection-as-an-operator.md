@@ -7,7 +7,7 @@ A **geodesic reflection** is the isometry of a geometry that fixes a geodesic, o
 
 The article develops the reflection in a geodesic hyperplane of the three constant-curvature geometries, its realisation as an inversion in the Möbius and conformal models, its expression as a signed two-sided operator of the Clifford algebra, the geodesic symmetry of a symmetric space and the fixed geodesic of the reflection, and the action of the reflection on the boundary at infinity. The Cartan–Dieudonné theorem closes the article with the statement that every isometry of the geometry is a product of reflections.
 
-The article assumes *Euclidean Geometry*, *Spherical Geometry* and *Hyperbolic Geometry* for the constant-curvature spaces and their isometries; *Möbius and Lie Sphere Geometry* for the inversion and the conformal models; *Symmetric Spaces*, later in this Part, for the geodesic symmetry of a symmetric space; and *Clifford Algebras* of Part II, *The Signed Sandwich on an Ordered Algebra* of Part III, and *Reflections as Signed Two-Sided Operators on a Linear Space* and *The Signed Adjoint of the Reflection on a Linear Space* of Part I for the graded algebra, the signed sandwich and the adjoint of a reflection. The article owns the geometric instance of the signed two-sided operator. No physics is invoked.
+The article assumes *Euclidean Geometry*, *Spherical Geometry* and *Hyperbolic Geometry* for the constant-curvature spaces and their isometries; *Möbius and Lie Sphere Geometry* for the inversion and the conformal models; *Symmetric Spaces*, later in this Part, for the geodesic symmetry of a symmetric space; and *Clifford Algebras* of Part II, *The Signed Two-Sided Operator on an Ordered Algebra* of Part III, and *Reflections as Signed Two-Sided Operators on a Linear Space* and *The Signed Adjoint of the Reflection on a Linear Space* of Part I for the graded algebra, the signed two-sided operator and the adjoint of a reflection. The article owns the geometric instance of the signed two-sided operator. No physics is invoked.
 
 ## The Reflection in a Geodesic
 
@@ -105,9 +105,9 @@ $$
 \boxed{\;\rho_a(x) = x - 2\,\frac{B(x,a)}{\mathfrak{Q}(a)}\,a\;} ,
 $$
 
-so it is the reflection in the hyperplane $a^\perp$; the map $\rho_a$ is the signed two-sided operator $\mathrm{Sd}^{\alpha}_{a,a^{-1}}$ of *The Signed Sandwich on an Ordered Algebra*, and it is the operator form of the geodesic reflection in the constant-curvature geometries.
+so it is the reflection in the hyperplane $a^\perp$; the map $\rho_a$ is the signed two-sided operator $\mathrm{Sd}^{\alpha}_{a,a^{-1}}$ of *The Signed Two-Sided Operator on an Ordered Algebra*, and it is the operator form of the geodesic reflection in the constant-curvature geometries.
 
-**Proof.** In the Clifford algebra the vector identity $ax + xa = 2B(x,a)$ holds; multiplying by $a^{-1}$ on the right gives $a x a^{-1} = 2B(x,a)\,a^{-1} - x = 2B(x,a)\,a/\mathfrak{Q}(a) - x$, since $a^{-1} = a/\mathfrak{Q}(a)$; the negative of this is the reflection formula. The identification with the signed sandwich is the definition of the reflection element $a$ with $a^{-1} = a/\mathfrak{Q}(a)$, and the geometric instances are the Euclidean and hyperbolic reflections of the previous sections.
+**Proof.** In the Clifford algebra the vector identity $ax + xa = 2B(x,a)$ holds; multiplying by $a^{-1}$ on the right gives $a x a^{-1} = 2B(x,a)\,a^{-1} - x = 2B(x,a)\,a/\mathfrak{Q}(a) - x$, since $a^{-1} = a/\mathfrak{Q}(a)$; the negative of this is the reflection formula. The identification with the signed two-sided operator is the definition of the reflection element $a$ with $a^{-1} = a/\mathfrak{Q}(a)$, and the geometric instances are the Euclidean and hyperbolic reflections of the previous sections.
 
 **Corollary (the Cartan–Dieudonné theorem).** Every orthogonal transformation of a nondegenerate quadratic space is the product of at most $\dim V$ reflections,
 

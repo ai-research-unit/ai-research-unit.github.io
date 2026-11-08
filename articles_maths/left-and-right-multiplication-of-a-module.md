@@ -89,7 +89,7 @@ and this identity is exactly the bimodule axiom $a(mb)=(am)b$.
 
 *Proof.* Evaluating both sides at $m$ gives $a(mb)$ and $(am)b$, which the bimodule axiom declares equal.
 
-The proposition is the reason the two-sided operators of the following articles — the sandwich and its signed twist — are well defined as single maps.
+The proposition is the reason the two-sided operators of the following articles — the two-sided operator and its signed twist — are well defined as single maps.
 
 ## Commutation of the One-Sided Actions
 

@@ -3,11 +3,11 @@
 
 ## Introduction
 
-The **signed left multiplication** is the one-sided operator $x\mapsto a\,\alpha(x)$, read on a Lie algebra through the bracket: $\ell^{\alpha}_a = \operatorname{ad}_a\circ\alpha$, so that $\ell^{\alpha}_a(x) = [a,\alpha(x)]$. It is the infinitesimal generator of the signed conjugation — the derivative at the origin of the family $\rho_{ta} = \exp(t\operatorname{ad}_a)\alpha$ — and it is the unsigned left multiplication with the sign $-1$ imposed on the odd part. The article defines the operator, relates it to the unsigned left multiplication and to the signed sandwich, computes its kernel and its fixed set, and records the cases in which it degenerates.
+The **signed left multiplication** is the one-sided operator $x\mapsto a\,\alpha(x)$, read on a Lie algebra through the bracket: $\ell^{\alpha}_a = \operatorname{ad}_a\circ\alpha$, so that $\ell^{\alpha}_a(x) = [a,\alpha(x)]$. It is the infinitesimal generator of the signed conjugation — the derivative at the origin of the family $\rho_{ta} = \exp(t\operatorname{ad}_a)\alpha$ — and it is the unsigned left multiplication with the sign $-1$ imposed on the odd part. The article defines the operator, relates it to the unsigned left multiplication and to the signed two-sided operator, computes its kernel and its fixed set, and records the cases in which it degenerates.
 
-This article treats the signed left multiplication on a Lie algebra, its relation to the unsigned left multiplication and the elements it fixes. It is the seventh article of the `- Operator Theory` group of the category; the unsigned left and right multiplications are from *Operators on a Lie Group*, the signed sandwich is *The Signed Sandwich on a Lie Algebra* and the reflections are *Reflections as Signed Two-Sided Operators on a Lie Algebra*, both above, and the adjoint of the operator is *The Signed Adjoint of the Left Multiplication on a Lie Algebra* of the `- * Operator Theory` group, below in the category.
+This article treats the signed left multiplication on a Lie algebra, its relation to the unsigned left multiplication and the elements it fixes. It is the seventh article of the `- Operator Theory` group of the category; the unsigned left and right multiplications are from *Operators on a Lie Group*, the signed two-sided operator is *The Signed Two-Sided Operator on a Lie Algebra* and the reflections are *Reflections as Signed Two-Sided Operators on a Lie Algebra*, both above, and the adjoint of the operator is *The Signed Adjoint of the Left Multiplication on a Lie Algebra* of the `- * Operator Theory` group, below in the category.
 
-The article assumes the Lie algebra and the adjoint representation from *The Lie Correspondence and the Adjoint Representation*, the exponential and its differential from *The Lie Algebra and the Exponential Map*, the grade involution and the grading from *Graded Lie Algebras and Lie Superalgebras*, the centraliser and the centre from *Lie Algebras*, and the signed sandwich and the signed conjugation from the two preceding articles of this group. The associative one-sided operator $x\mapsto a\alpha(x)$ of *The Signed Left Multiplication on an Algebra* is cited as the model; the module case is *The Graded Action on a Module over a Lie Algebra*, below.
+The article assumes the Lie algebra and the adjoint representation from *The Lie Correspondence and the Adjoint Representation*, the exponential and its differential from *The Lie Algebra and the Exponential Map*, the grade involution and the grading from *Graded Lie Algebras and Lie Superalgebras*, the centraliser and the centre from *Lie Algebras*, and the signed two-sided operator and the signed conjugation from the two preceding articles of this group. The associative one-sided operator $x\mapsto a\alpha(x)$ of *The Signed Left Multiplication on an Algebra* is cited as the model; the module case is *The Graded Action on a Module over a Lie Algebra*, below.
 
 ## The Definition
 
@@ -91,19 +91,19 @@ and it is nonempty exactly when the operator has a fixed point; it is the soluti
 
 *Proof.* The equation $[a,x] = x$ is $\operatorname{ad}_a x = x$, whose solution space is the kernel of $\operatorname{ad}_a - \mathrm{id}$; the nilpotent case gives $\operatorname{ad}_a - \mathrm{id}$ invertible.
 
-## The Relation to the Sandwich
+## The Relation to the Two-Sided Operator
 
-**Theorem.** The signed sandwich is the signed left multiplication followed by a signed right multiplication,
+**Theorem.** The signed two-sided operator is the signed left multiplication followed by a signed right multiplication,
 
 $$
 \boxed{\;\Sigma^{\alpha}_{a,b} = \ell^{\alpha}_a\,R_{\alpha(b)} = r^{\alpha}_{b}\,L_{\alpha(a)}\;} ,
 $$
 
-and it is the composite of the signed left multiplication with a right multiplication of the $\alpha$-transformed parameter; the unsigned sandwich is the special case $\alpha = \mathrm{id}$.
+and it is the composite of the signed left multiplication with a right multiplication of the $\alpha$-transformed parameter; the unsigned two-sided operator is the special case $\alpha = \mathrm{id}$.
 
 *Proof.* From $\Sigma^{\alpha}_{a,b} = L_aR_b\alpha$ and the commutation $\alpha R_b = R_{\alpha(b)}\alpha$ one gets $L_aR_b\alpha = L_a\alpha R_{\alpha(b)} = \ell^{\alpha}_aR_{\alpha(b)}$; the second form is analogous.
 
-**Corollary.** The signed sandwich is the composite of two one-sided signed operators, and the signed conjugation is the exponential of the signed left multiplication,
+**Corollary.** The signed two-sided operator is the composite of two one-sided signed operators, and the signed conjugation is the exponential of the signed left multiplication,
 
 $$
 \rho_a = \exp(\operatorname{ad}_a)\alpha = \exp(\ell^{\alpha}_a) ,
@@ -161,7 +161,7 @@ Let $\mathrm{G}$ be the Heisenberg algebra with $[X,Y] = Z$ central and the grad
 
 ## Summary
 
-The **signed left multiplication** on a Lie algebra is $\ell^{\alpha}_a = \operatorname{ad}_a\circ\alpha$, the operator $x\mapsto[a,\alpha(x)]$; it is the derivative at the origin of the family of the signed conjugations $\exp(t\operatorname{ad}_a)\alpha$, it is a derivation, and it is the ordinary left multiplication with the sign $-1$ on the odd part and $+1$ on the even part. It factors through the grade involution as $\ell^{\alpha}_a = \alpha L_{\alpha(a)}$, so the ordinary left multiplication is $\alpha\ell^{\alpha}_a = L_{\alpha(a)}$; its kernel is the centraliser $\mathfrak{c}(\alpha(a))$ and its fixed set is the solution set of $\operatorname{ad}_a\alpha(x) = x$, a coset of the kernel. The signed sandwich is the composite of the signed left multiplication with a signed right multiplication, $\Sigma^{\alpha}_{a,b} = \ell^{\alpha}_aR_{\alpha(b)}$, and the signed conjugation is the exponential of the signed left multiplication, $\rho_a = \exp(\ell^{\alpha}_a)$ in the semidirect product of the inner automorphisms with the involution, which is the sense in which the reflections are integrated from the one-sided operator. The construction degenerates when the involution is the identity — the unsigned case — when the algebra is abelian or the parameter is central, and when the involution is inner, in which case the sign produces no new operator.
+The **signed left multiplication** on a Lie algebra is $\ell^{\alpha}_a = \operatorname{ad}_a\circ\alpha$, the operator $x\mapsto[a,\alpha(x)]$; it is the derivative at the origin of the family of the signed conjugations $\exp(t\operatorname{ad}_a)\alpha$, it is a derivation, and it is the ordinary left multiplication with the sign $-1$ on the odd part and $+1$ on the even part. It factors through the grade involution as $\ell^{\alpha}_a = \alpha L_{\alpha(a)}$, so the ordinary left multiplication is $\alpha\ell^{\alpha}_a = L_{\alpha(a)}$; its kernel is the centraliser $\mathfrak{c}(\alpha(a))$ and its fixed set is the solution set of $\operatorname{ad}_a\alpha(x) = x$, a coset of the kernel. The signed two-sided operator is the composite of the signed left multiplication with a signed right multiplication, $\Sigma^{\alpha}_{a,b} = \ell^{\alpha}_aR_{\alpha(b)}$, and the signed conjugation is the exponential of the signed left multiplication, $\rho_a = \exp(\ell^{\alpha}_a)$ in the semidirect product of the inner automorphisms with the involution, which is the sense in which the reflections are integrated from the one-sided operator. The construction degenerates when the involution is the identity — the unsigned case — when the algebra is abelian or the parameter is central, and when the involution is inner, in which case the sign produces no new operator.
 
 ## Summary of Notation
 
@@ -174,7 +174,7 @@ The **signed left multiplication** on a Lie algebra is $\ell^{\alpha}_a = \opera
 | $\ell^{\alpha}_a = \alpha L_{\alpha(a)}$ | the factorisation through the involution |
 | $\ker\ell^{\alpha}_a = \mathfrak{c}(\alpha(a))$ | the annihilated elements |
 | $\operatorname{Fix}(\ell^{\alpha}_a) = \{x : \operatorname{ad}_a\alpha(x) = x\}$ | the fixed elements |
-| $\Sigma^{\alpha}_{a,b} = \ell^{\alpha}_aR_{\alpha(b)}$ | the signed sandwich as a composite |
+| $\Sigma^{\alpha}_{a,b} = \ell^{\alpha}_aR_{\alpha(b)}$ | the signed two-sided operator as a composite |
 | $\rho_a = \exp(\ell^{\alpha}_a)$ | the signed conjugation as the exponential |
 | $L_a = \operatorname{ad}_a$ | the unsigned left multiplication |
 

@@ -778,7 +778,7 @@ $$
 
 The branch of the modulus makes $\tilde Q\mapsto(\Rho,\tilde U)$ a bijection onto $\mathbb{C}^{\times}\times SL(2,\mathbb{C})$, but not a homeomorphism: on the cut the phase jumps by $-1$ and the rotor changes sign. The fundamental group is $\mathbb{Z}$, carried by the phase.
 
-The **conformal factor** is read in the coordinates. Under the sandwich $\tilde QX\tilde Q^*$, the quaternionic norm of $X$ is multiplied by
+The **conformal factor** is read in the coordinates. Under the two-sided operator $\tilde QX\tilde Q^*$, the quaternionic norm of $X$ is multiplied by
 
 $$
 r^4=\exp(4\ln r)=\bigl\lvert\langle\tilde Q\rangle_{\natural}\bigr\rvert^2,

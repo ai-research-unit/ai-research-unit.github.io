@@ -7,7 +7,7 @@ The reflection of a unit $u$ in the algebra of arithmetic functions is the signe
 $$
 r_u^*=\alpha=r_u .
 $$
-The reflection is therefore self-adjoint and unitary, and the adjoint operation fixes the whole class of reflections, which consists of the single operator $\alpha$. This article states the computation, describes the correspondence between the reflections and the involutions, and records the degenerate collapse of both in the commutative case. The reflection itself is *Reflections as Signed Two-Sided Operators on the Algebra of Arithmetic Functions*, and the general adjoint of a signed two-sided operator is *The Signed Adjoint Sandwich on the Algebra of Arithmetic Functions*. Nothing here reads a distance as an object.
+The reflection is therefore self-adjoint and unitary, and the adjoint operation fixes the whole class of reflections, which consists of the single operator $\alpha$. This article states the computation, describes the correspondence between the reflections and the involutions, and records the degenerate collapse of both in the commutative case. The reflection itself is *Reflections as Signed Two-Sided Operators on the Algebra of Arithmetic Functions*, and the general adjoint of a signed two-sided operator is *The Signed Adjoint Two-Sided Operator on the Algebra of Arithmetic Functions*. Nothing here reads a distance as an object.
 
 ## The Adjoint of the Reflection
 
@@ -43,7 +43,7 @@ The signed adjoint of the reflection is the reflection, and the signed pairing m
 $$
 r_u=\alpha\quad (u\in\mathcal{A}^\times),\qquad r_u^*=r_u ,
 $$
-so the adjoint operation maps the class of the reflections to itself and leaves every element fixed. The involutive signed sandwiches are the operators $S^\alpha_c=L_c\alpha$ with $c*c=\varepsilon$, and they are exactly $\pm\alpha$; the reflection is the one with $c=+\varepsilon$.
+so the adjoint operation maps the class of the reflections to itself and leaves every element fixed. The involutive signed two-sided operators are the operators $S^\alpha_c=L_c\alpha$ with $c*c=\varepsilon$, and they are exactly $\pm\alpha$; the reflection is the one with $c=+\varepsilon$.
 
 **Proof.** The first statement is the theorem; the classification of the involutions is *Reflections as Signed Two-Sided Operators on the Algebra of Arithmetic Functions*, where it is shown that the only solutions of $c*c=\varepsilon$ in the unit group are $c=\pm\varepsilon$, giving $\pm\alpha$. The equality $r_u^*=r_u$ is self-adjointness.
 
@@ -65,7 +65,7 @@ The signed adjoint of the reflection fails in four degenerate configurations. Fi
 
 ## Summary
 
-The reflection $r_u(f)=u*\alpha(f)*u^{-1}$ of the algebra of arithmetic functions is the grade involution $\alpha$ for every unit $u$, and its adjoint for the coefficient form is again $\alpha$, so the reflection is self-adjoint and unitary and the adjoint operation fixes the class of the reflections. With respect to the signed pairing $\{f,g\}=\langle f,\alpha g\rangle$ the reflection is an isometry and its signed adjoint is itself. The involutive signed sandwiches are exactly $\pm\alpha$, the reflection being the positive one, and the degenerate cases are the collapse of the correspondence, the equivalence of the two forms, the single-element class of the reflections and the non-reflection involution $-\alpha$.
+The reflection $r_u(f)=u*\alpha(f)*u^{-1}$ of the algebra of arithmetic functions is the grade involution $\alpha$ for every unit $u$, and its adjoint for the coefficient form is again $\alpha$, so the reflection is self-adjoint and unitary and the adjoint operation fixes the class of the reflections. With respect to the signed pairing $\{f,g\}=\langle f,\alpha g\rangle$ the reflection is an isometry and its signed adjoint is itself. The involutive signed two-sided operators are exactly $\pm\alpha$, the reflection being the positive one, and the degenerate cases are the collapse of the correspondence, the equivalence of the two forms, the single-element class of the reflections and the non-reflection involution $-\alpha$.
 
 ## Summary of Notation
 

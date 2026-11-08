@@ -2,9 +2,9 @@
 
 ## Introduction
 
-The signed left multiplication $\Lambda^{\alpha}_{a} = L_a\circ\alpha$ is the signed sandwich with right factor one, and its adjoint with respect to the trace pairing is the signed right multiplication $R_{\alpha(a)}\circ\alpha$, the operator $Y \mapsto \alpha(Y)\alpha(a)$: the adjoint of the one-sided signed operator is again one-sided, with the parameter imaged by the grade involution and the side exchanged. The article records the computation, its relation to the adjoint of the general signed sandwich, the unsigned case, and the self-adjointness and unitarity criteria of the one-sided operators.
+The signed left multiplication $\Lambda^{\alpha}_{a} = L_a\circ\alpha$ is the signed two-sided operator with right factor one, and its adjoint with respect to the trace pairing is the signed right multiplication $R_{\alpha(a)}\circ\alpha$, the operator $Y \mapsto \alpha(Y)\alpha(a)$: the adjoint of the one-sided signed operator is again one-sided, with the parameter imaged by the grade involution and the side exchanged. The article records the computation, its relation to the adjoint of the general signed two-sided operator, the unsigned case, and the self-adjointness and unitarity criteria of the one-sided operators.
 
-*The Signed Left Multiplication on a Linear Space* supplies $\Lambda^{\alpha}_{a}$ and its laws, *The Signed Adjoint Sandwich on a Linear Space* supplies the adjoint computation of the signed family, of which this is the case $b=1$, and *The Adjoint of the Left Multiplication on a Linear Space* supplies the unsigned trace-adjoint $(L_a)^{\dagger}=R_a$ and the compatibility with an element involution. The forms are Part II.
+*The Signed Left Multiplication on a Linear Space* supplies $\Lambda^{\alpha}_{a}$ and its laws, *The Signed Adjoint Two-Sided Operator on a Linear Space* supplies the adjoint computation of the signed family, of which this is the case $b=1$, and *The Adjoint of the Left Multiplication on a Linear Space* supplies the unsigned trace-adjoint $(L_a)^{\dagger}=R_a$ and the compatibility with an element involution. The forms are Part II.
 
 Throughout, $F$ is a field with $2 \neq 0$, $V$ is a finite-dimensional $F$-linear space, $E = \operatorname{End}_F(V)$, $\alpha$ is the grade involution of $E$, an algebra automorphism of order two with $\alpha(X)=TXT$, and $\Lambda^{\alpha}_{a}(X)=a\alpha(X)$. The trace pairing is $\langle X,Y\rangle=\operatorname{tr}(XY)$ and ${}^{\dagger}$ is its adjoint.
 
@@ -19,7 +19,7 @@ $$
 
 **Proof.** $\langle\Lambda^{\alpha}_{a}X,Y\rangle = \operatorname{tr}(a\alpha(X)Y) = \operatorname{tr}(\alpha(X)Ya) = \langle\alpha(X),Ya\rangle = \langle X,\alpha(Ya)\rangle = \langle X,\alpha(Y)\alpha(a)\rangle$, using the $\alpha$-invariance of the trace pairing and the multiplicativity $\alpha(Ya)=\alpha(Y)\alpha(a)$; the adjoint is unique because the trace pairing is non-degenerate. This is the case $b=1$ of the adjoint formula $(\mathrm{Sd}^{\alpha}_{a,b})^{\dagger}=\mathrm{Sd}^{\alpha}_{\alpha(b),\alpha(a)}$.
 
-**Corollary (relation to the signed sandwich).** Since $\Lambda^{\alpha}_{a}=\mathrm{Sd}^{\alpha}_{a,1}$, its adjoint is $\mathrm{Sd}^{\alpha}_{\alpha(1),\alpha(a)}=\mathrm{Sd}^{\alpha}_{1,\alpha(a)}$; taking adjoints twice returns $\Lambda^{\alpha}_{a}$ because $\mathrm{Sd}^{\alpha}_{\alpha(a),\alpha(1)}=\mathrm{Sd}^{\alpha}_{\alpha(a),1}$ and $\alpha^2=\mathrm{id}$, in agreement with the order-two property.
+**Corollary (relation to the signed two-sided operator).** Since $\Lambda^{\alpha}_{a}=\mathrm{Sd}^{\alpha}_{a,1}$, its adjoint is $\mathrm{Sd}^{\alpha}_{\alpha(1),\alpha(a)}=\mathrm{Sd}^{\alpha}_{1,\alpha(a)}$; taking adjoints twice returns $\Lambda^{\alpha}_{a}$ because $\mathrm{Sd}^{\alpha}_{\alpha(a),\alpha(1)}=\mathrm{Sd}^{\alpha}_{\alpha(a),1}$ and $\alpha^2=\mathrm{id}$, in agreement with the order-two property.
 
 **Corollary (the unsigned case).** For $\alpha=\mathrm{id}$ the signed left multiplication is the left multiplication and the statement reads $(L_a)^{\dagger}=R_a$, the trace-adjointness of *The Adjoint of the Left Multiplication on a Linear Space*; the signed statement is the image of the unsigned one under the grade involution.
 
@@ -33,13 +33,13 @@ $$
 
 **Corollary (unitarity).** $\Lambda^{\alpha}_{a}$ is unitary for the trace pairing if and only if $\alpha(a)$ is a central involution of $E$; the condition is $u^{*}u=uu^{*}=1$ with $u=\alpha(a)$ in the self-adjoint case, when $a$ is even.
 
-**Proof.** This is the unitarity criterion of *The Signed Adjoint Sandwich on a Linear Space* with $b=1$: the parameter of the criterion is $\alpha(1)\alpha(a)=\alpha(a)$.
+**Proof.** This is the unitarity criterion of *The Signed Adjoint Two-Sided Operator on a Linear Space* with $b=1$: the parameter of the criterion is $\alpha(1)\alpha(a)=\alpha(a)$.
 
 **Remark (the compatibility with an element involution).** If $E$ carries a pairing-based involution ${}^{*}$ and the induced operator involution $S^{*}(X)=S(X^{*})^{*}$ of *The Adjoint of the Left Multiplication on a Linear Space*, the unsigned left multiplications satisfy $L_a^{*}=R_{a^{*}}$; the signed ones satisfy $\bigl(\Lambda^{\alpha}_{a}\bigr)^{*}(X)=\alpha(X^{*})\,a^{*}$, which is the signed counterpart, and the two computations differ by the grade involution. When the element involution is the identity the signed statement reduces to the unsigned one.
 
 ## Summary
 
-The adjoint of the signed left multiplication $\Lambda^{\alpha}_{a}$ with respect to the trace pairing is $\mathrm{Sd}^{\alpha}_{1,\alpha(a)}=R_{\alpha(a)}\alpha$, the signed right multiplication by $\alpha(a)$; this is the case $b=1$ of the adjoint of the signed sandwich, $(\mathrm{Sd}^{\alpha}_{a,b})^{\dagger}=\mathrm{Sd}^{\alpha}_{\alpha(b),\alpha(a)}$, and taking adjoints twice returns the operator because $\alpha$ has order two. For $\alpha=\mathrm{id}$ the statement reduces to the trace-adjointness $(L_a)^{\dagger}=R_a$ of the unsigned theory. The one-sided operator is self-adjoint exactly for central even $a$, and unitary exactly when $\alpha(a)$ is a central involution, the self-adjoint case being the element condition $u^{*}u=uu^{*}=1$ with $u=\alpha(a)$.
+The adjoint of the signed left multiplication $\Lambda^{\alpha}_{a}$ with respect to the trace pairing is $\mathrm{Sd}^{\alpha}_{1,\alpha(a)}=R_{\alpha(a)}\alpha$, the signed right multiplication by $\alpha(a)$; this is the case $b=1$ of the adjoint of the signed two-sided operator, $(\mathrm{Sd}^{\alpha}_{a,b})^{\dagger}=\mathrm{Sd}^{\alpha}_{\alpha(b),\alpha(a)}$, and taking adjoints twice returns the operator because $\alpha$ has order two. For $\alpha=\mathrm{id}$ the statement reduces to the trace-adjointness $(L_a)^{\dagger}=R_a$ of the unsigned theory. The one-sided operator is self-adjoint exactly for central even $a$, and unitary exactly when $\alpha(a)$ is a central involution, the self-adjoint case being the element condition $u^{*}u=uu^{*}=1$ with $u=\alpha(a)$.
 
 ## Summary of Notation
 
@@ -51,7 +51,7 @@ The adjoint of the signed left multiplication $\Lambda^{\alpha}_{a}$ with respec
 | $\langle X,Y\rangle=\operatorname{tr}(XY)$ | the trace pairing |
 | ${}^{\dagger}$ | the trace-adjoint |
 | $(\Lambda^{\alpha}_{a})^{\dagger}=\mathrm{Sd}^{\alpha}_{1,\alpha(a)}=R_{\alpha(a)}\alpha$ | the adjoint computation |
-| $(\mathrm{Sd}^{\alpha}_{a,b})^{\dagger}=\mathrm{Sd}^{\alpha}_{\alpha(b),\alpha(a)}$ | the signed sandwich case |
+| $(\mathrm{Sd}^{\alpha}_{a,b})^{\dagger}=\mathrm{Sd}^{\alpha}_{\alpha(b),\alpha(a)}$ | the signed two-sided operator case |
 | $Z(E)$ | the centre of $E$ |
 
 ## Further Reading

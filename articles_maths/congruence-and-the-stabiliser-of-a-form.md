@@ -98,7 +98,7 @@ On $\mathbb{R}^{4}$ with the form of signature $(1,3)$ the congruence class is t
 
 ### The Biquaternion Algebra
 
-On $\mathbb{B}$ the congruence of the plain and the quaternionic forms, their signatures and their stabilisers are the biquaternion computations of *The Form on the Biquaternion Algebra as a General Plain Sesquilinear Form* and *The Hermitian Sandwich in the Biquaternion Algebra with Hermitian Adjoint*.
+On $\mathbb{B}$ the congruence of the plain and the quaternionic forms, their signatures and their stabilisers are the biquaternion computations of *The Form on the Biquaternion Algebra as a General Plain Sesquilinear Form* and *The Hermitian Pair in the Biquaternion Algebra with Hermitian Adjoint*.
 
 ## Summary
 

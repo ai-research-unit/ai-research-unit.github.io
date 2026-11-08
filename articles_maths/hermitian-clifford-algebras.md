@@ -57,7 +57,7 @@ $$
 \mathrm{Spin}(g) = \mathrm{Pin}(g)\cap \mathrm{Cl}(V,g)^{0}\;} .
 $$
 
-**Proof.** For a vector $v$ with $g(v,v) = 1$ one has $v^{\dagger} = v$ and $v^{2} = -1$, so $v^{\dagger}v = v^{2} = -1$; the products of such vectors generate the Pin group and satisfy the slice condition up to sign. The even elements are the products of an even number of vectors, and the sandwich $xvx^{-1}$ preserves $V$ by the defining property. The construction is that of *The Clifford, Pin and Spin Groups with Signed Inner Conjugation* and *Versors, Rotors and the Sandwich Action with Signed Inner Conjugation*, read with the Hermitian dagger.
+**Proof.** For a vector $v$ with $g(v,v) = 1$ one has $v^{\dagger} = v$ and $v^{2} = -1$, so $v^{\dagger}v = v^{2} = -1$; the products of such vectors generate the Pin group and satisfy the slice condition up to sign. The even elements are the products of an even number of vectors, and the two-sided operator $xvx^{-1}$ preserves $V$ by the defining property. The construction is that of *The Clifford, Pin and Spin Groups with Signed Inner Conjugation* and *Versors, Rotors and the Two-Sided Action with Signed Inner Conjugation*, read with the Hermitian dagger.
 
 **Corollary.** The norm of a Clifford algebra element is multiplicative on the Pin group and on the Spin group, and it fails on the general element from dimension three on, as *Hermitian Forms over Algebras and Norms* records; the two groups are the locus of multiplicativity that the algebra structure provides, and the quadratic space $V$ with the action of the spin group is the spin representation of the layer, whose one-sided reading is *Left Multiplication and the Clifford Module Structure*.
 
@@ -73,7 +73,7 @@ For $V = \mathbb{C}^{n}$ with the standard positive definite Hermitian form, $g$
 
 ### The Biquaternions
 
-For $V = \mathbb{C}^{1}$ with the standard form, the real part $g$ is the positive definite form of $\mathbb{R}^{2}$ and $\mathrm{Cl}_{2}(\mathbb{R}) \cong \mathbb{H}$; with the complex scalars the algebra is $\mathbb{B} = M_{2}(\mathbb{C})$, the biquaternion algebra, and the dagger, the blade form, the unitary slice and the Lorentzian companion form are the biquaternion articles *Hermitian Algebras*, *The Form on the Biquaternion Algebra as a General Plain Sesquilinear Form* and *The Hermitian Sandwich in the Biquaternion Algebra with Hermitian Adjoint*.
+For $V = \mathbb{C}^{1}$ with the standard form, the real part $g$ is the positive definite form of $\mathbb{R}^{2}$ and $\mathrm{Cl}_{2}(\mathbb{R}) \cong \mathbb{H}$; with the complex scalars the algebra is $\mathbb{B} = M_{2}(\mathbb{C})$, the biquaternion algebra, and the dagger, the blade form, the unitary slice and the Lorentzian companion form are the biquaternion articles *Hermitian Algebras*, *The Form on the Biquaternion Algebra as a General Plain Sesquilinear Form* and *The Hermitian Pair in the Biquaternion Algebra with Hermitian Adjoint*.
 
 ## Summary
 

@@ -6,7 +6,7 @@ The product of an algebra is a bilinear map of two arguments, and fixing one arg
 
 The two families are not symmetric. The left multiplications compose in the order of the product, $L(a)L(b) = L(ab)$, so $L$ is a homomorphism; the right multiplications compose against it, $R(a)R(b) = R(ba)$, so $R$ is an anti-homomorphism, and its image is a copy of the opposite algebra. The two images therefore commute exactly when the product is associative, and their failure to do so is the associator. These three statements are the skeleton of the article.
 
-Throughout, $k$ is a field and $A$ is a unital associative $k$-algebra, with $n = \dim_k A$ when $A$ is finite-dimensional. The operators live in $\operatorname{End}_k(A)$; the definitions and the first properties of $L$ and $R$ are in *The Operators on an Algebra*, the ambient theory of the operator space is that article and *Operator Algebras*, and the two-sided product of an $L$ with an $R$ is the sandwich of *The Sandwich Operator on an Algebra*.
+Throughout, $k$ is a field and $A$ is a unital associative $k$-algebra, with $n = \dim_k A$ when $A$ is finite-dimensional. The operators live in $\operatorname{End}_k(A)$; the definitions and the first properties of $L$ and $R$ are in *The Operators on an Algebra*, the ambient theory of the operator space is that article and *Operator Algebras*, and the two-sided product of an $L$ with an $R$ is the operator of *The Two-Sided Operator on an Algebra*.
 
 ## The One-Sided Multiplications
 
@@ -48,7 +48,7 @@ The two spaces are the first two rungs of the operator ladder of *The Operators 
 
 ### The Two-Sided Product
 
-The product of a left and a right multiplication is the sandwich, and its two bracketings agree exactly when the product is associative.
+The product of a left and a right multiplication is the two-sided operator, and its two bracketings agree exactly when the product is associative.
 
 **Proposition.** For all $a, b \in A$ the composites $L(a)R(b)$ and $R(b)L(a)$ are the operators
 
@@ -56,7 +56,7 @@ $$
 L(a)R(b)(x) = a x b, \qquad R(b)L(a)(x) = a x b
 $$
 
-with the same value on $x$, so that $L(a)R(b) = R(b)L(a) = L_{a}R_{b}$, the sandwich of *The Sandwich Operator on an Algebra*.
+with the same value on $x$, so that $L(a)R(b) = R(b)L(a) = L_{a}R_{b}$, the two-sided operator of *The Two-Sided Operator on an Algebra*.
 
 *Proof.* $R(b)L(a)(x) = R(b)(ax) = (ax)b$ and $L(a)R(b)(x) = L(a)(xb) = a(xb)$; associativity makes the two equal.
 
@@ -122,7 +122,7 @@ $$
 A \otimes_k A_{\mathrm{opp}} \longrightarrow \operatorname{End}_k(A), \qquad a \otimes b \longmapsto L(a)R(b) = L_{a}R_{b},
 $$
 
-whose image is the sandwich space $\mathcal{S}(A)$ of *The Sandwich Operator on an Algebra*; equivalently, the regular bimodule ${}_A A_A$ carries a left action of $A$ and a commuting right action of $A$, and the pair of these actions is a left action of the enveloping algebra $A^{\mathrm{e}} = A \otimes_k A_{\mathrm{opp}}$.
+whose image is the two-sided space $\mathcal{S}(A)$ of *The Two-Sided Operator on an Algebra*; equivalently, the regular bimodule ${}_A A_A$ carries a left action of $A$ and a commuting right action of $A$, and the pair of these actions is a left action of the enveloping algebra $A^{\mathrm{e}} = A \otimes_k A_{\mathrm{opp}}$.
 
 *Proof.* The left multiplications and the right multiplications commute by the two-sided product proposition, so the assignments $a \mapsto L(a)$ and $b \mapsto R(b)$ combine into a homomorphism on the tensor product, with the second factor read in the opposite order; the image is spanned by the products $L(a)R(b) = L_{a}R_{b}$. The bimodule statement is the definition of a bimodule over $A$, and a left $A$-action commuting with a right $A$-action is a left $A^{\mathrm{e}}$-action by $(a \otimes b) \cdot x = a x b$.
 
@@ -150,7 +150,7 @@ $$
 
 *Proof.* Both $L(A)$ and $R(A)$ are subalgebras, and they commute by the two-sided product proposition, so their sum is closed under composition; the dimension formula is the standard one for the sum of two subspaces, $\dim(L+R) = \dim L + \dim R - \dim(L \cap R)$, with the intersection computed above.
 
-**Remark.** The sum $L(A) + R(A)$ is a proper subspace of the sandwich space $\mathcal{S}(A) = L(A)R(A)$ in general, and of the whole operator space $\operatorname{End}_k(A)$ except in the smallest cases. For the complex numbers read as a real algebra, $\dim_k A = 2$ and $Z(A) = A$ is two-dimensional, so $L(A) = R(A)$ is two-dimensional and the sum is that space, of dimension $2 = 2\cdot 2 - 2$. For $M_n(k)$ over a field the algebra has dimension $N = n^2$ and a one-dimensional centre, so the sum has dimension $2N - 1 = 2n^2 - 1$ inside the space of dimension $N^2 = n^4$, and it is far from the whole.
+**Remark.** The sum $L(A) + R(A)$ is a proper subspace of the two-sided space $\mathcal{S}(A) = L(A)R(A)$ in general, and of the whole operator space $\operatorname{End}_k(A)$ except in the smallest cases. For the complex numbers read as a real algebra, $\dim_k A = 2$ and $Z(A) = A$ is two-dimensional, so $L(A) = R(A)$ is two-dimensional and the sum is that space, of dimension $2 = 2\cdot 2 - 2$. For $M_n(k)$ over a field the algebra has dimension $N = n^2$ and a one-dimensional centre, so the sum has dimension $2N - 1 = 2n^2 - 1$ inside the space of dimension $N^2 = n^4$, and it is far from the whole.
 
 ## The Associator as the Obstruction
 
@@ -174,7 +174,7 @@ The identity has three consequences, and they are the reason the associator is s
 
 **Corollary.** The associators span the commutator space $[L(A), R(A)]$, which is the image of the operator $A_{(\cdot,\cdot)}$ and is a subspace of $\operatorname{End}_k(A)$ vanishing exactly when $A$ is associative; hence the deviation of $A$ from associativity is measured by the failure of the two one-sided multiplication algebras to commute.
 
-**Corollary.** The map $A \otimes_k A_{\mathrm{opp}} \to \operatorname{End}_k(A)$ of the two regular representations is an isomorphism onto the sandwich space exactly when that space is the whole of $\operatorname{End}_k(A)$, that is when $\dim_k \mathcal{S}(A) = n^2$; this holds for a central simple algebra, by *Central Simple Algebras and the Brauer Group*.
+**Corollary.** The map $A \otimes_k A_{\mathrm{opp}} \to \operatorname{End}_k(A)$ of the two regular representations is an isomorphism onto the two-sided space exactly when that space is the whole of $\operatorname{End}_k(A)$, that is when $\dim_k \mathcal{S}(A) = n^2$; this holds for a central simple algebra, by *Central Simple Algebras and the Brauer Group*.
 
 The three corollaries are the operator form of the statement that associativity is not a property of the product alone but of the way the two sides of the product commute. The left and the right multiplications each know only one side; the associator is what happens when the two sides are brought together.
 
@@ -182,7 +182,7 @@ The three corollaries are the operator form of the statement that associativity 
 
 ### The Matrix Algebra
 
-Let $A = M_n(k)$, of dimension $n^2$; the operators form $M_{n^2}(k)$, of dimension $n^4$. The left and the right multiplications are the operators $X \mapsto AX$ and $X \mapsto XB$ on the space of matrices, of dimension $n^2$ each; the centre is $k \cdot I$ of dimension one, so the intersection $L(A) \cap R(A)$ is one-dimensional, spanned by the identity operator, and the sum $L(A) + R(A)$ has dimension $2n^2 - 1$. For $n = 2$ this is $7$ inside a space of dimension $16$; the left multiplications and the right multiplications overlap exactly in the scalars, and together they generate a seven-dimensional subalgebra of the operator algebra. The sandwich space is larger, and it is the whole of $\operatorname{End}_k(M_n(k))$ by *The Sandwich Operator on an Algebra*, so the operator algebra is generated by the two one-sided families and their products.
+Let $A = M_n(k)$, of dimension $n^2$; the operators form $M_{n^2}(k)$, of dimension $n^4$. The left and the right multiplications are the operators $X \mapsto AX$ and $X \mapsto XB$ on the space of matrices, of dimension $n^2$ each; the centre is $k \cdot I$ of dimension one, so the intersection $L(A) \cap R(A)$ is one-dimensional, spanned by the identity operator, and the sum $L(A) + R(A)$ has dimension $2n^2 - 1$. For $n = 2$ this is $7$ inside a space of dimension $16$; the left multiplications and the right multiplications overlap exactly in the scalars, and together they generate a seven-dimensional subalgebra of the operator algebra. The two-sided space is larger, and it is the whole of $\operatorname{End}_k(M_n(k))$ by *The Two-Sided Operator on an Algebra*, so the operator algebra is generated by the two one-sided families and their products.
 
 ### The Commutative Case
 
@@ -190,7 +190,7 @@ Let $A$ be commutative. Then $L(a) = R(a)$ for every $a$, the two spaces coincid
 
 ### The Quaternions
 
-Let $A = \mathbb{H}$ over $\mathbb{R}$, of dimension $4$; the centre is $\mathbb{R}$, so the intersection $L(A) \cap R(A)$ is one-dimensional and the sum has dimension $7$ inside the space of dimension $16$. The four left multiplications and the four right multiplications are the two copies of the algebra and its opposite inside the operator space, and their products give the sandwich space, which is all of $\operatorname{End}_{\mathbb{R}}(\mathbb{H})$ because $\mathbb{H}$ is central simple over $\mathbb{R}$. The two three-dimensional pieces of the operator ladder of *The Operators on an Algebra* — the pure left multiplications and the derivations — are the further refinement of this picture.
+Let $A = \mathbb{H}$ over $\mathbb{R}$, of dimension $4$; the centre is $\mathbb{R}$, so the intersection $L(A) \cap R(A)$ is one-dimensional and the sum has dimension $7$ inside the space of dimension $16$. The four left multiplications and the four right multiplications are the two copies of the algebra and its opposite inside the operator space, and their products give the two-sided space, which is all of $\operatorname{End}_{\mathbb{R}}(\mathbb{H})$ because $\mathbb{H}$ is central simple over $\mathbb{R}$. The two three-dimensional pieces of the operator ladder of *The Operators on an Algebra* — the pure left multiplications and the derivations — are the further refinement of this picture.
 
 ## Summary
 
@@ -200,7 +200,7 @@ $$
 L(a)R(b) - R(b)L(a) = -A_{a,b}, \qquad A_{a,b}(x) = (ax)b - a(xb);
 $$
 
-equivalently $A$ is associative exactly when every left multiplication commutes with every right multiplication. The pair $(L,R)$ is a homomorphism $A \otimes_k A_{\mathrm{opp}} \to \operatorname{End}_k(A)$ with image the sandwich space, and the regular module is the bimodule it makes of $A$. The two spaces meet in the multiplications by the centre, $L(A) \cap R(A) = L(Z(A))$, so their sum has dimension $2n - \dim_k Z(A)$; and the centraliser of $L(A)$ in $\operatorname{End}_k(A)$ is exactly $R(A)$. For $M_n(k)$ the left and the right multiplications meet in the scalars and their sum has dimension $2n^2 - 1$; for a commutative algebra the two sides coincide; and the two-sided product with the associator is the subject of *The Sandwich Operator on an Algebra*.
+equivalently $A$ is associative exactly when every left multiplication commutes with every right multiplication. The pair $(L,R)$ is a homomorphism $A \otimes_k A_{\mathrm{opp}} \to \operatorname{End}_k(A)$ with image the two-sided space, and the regular module is the bimodule it makes of $A$. The two spaces meet in the multiplications by the centre, $L(A) \cap R(A) = L(Z(A))$, so their sum has dimension $2n - \dim_k Z(A)$; and the centraliser of $L(A)$ in $\operatorname{End}_k(A)$ is exactly $R(A)$. For $M_n(k)$ the left and the right multiplications meet in the scalars and their sum has dimension $2n^2 - 1$; for a commutative algebra the two sides coincide; and the two-sided product with the associator is the subject of *The Two-Sided Operator on an Algebra*.
 
 ## Summary of Notation
 
@@ -214,7 +214,7 @@ equivalently $A$ is associative exactly when every left multiplication commutes 
 | $L(A)$, $R(A)$ | the spaces of left and right multiplications |
 | $A_{\mathrm{opp}}$ | the opposite algebra, isomorphic to $R(A)$ |
 | $A^{\mathrm{e}} = A \otimes_k A_{\mathrm{opp}}$ | the enveloping algebra |
-| $L_{a}R_{b} = L(a)R(b) = R(b)L(a)$ | the sandwich, the product of the two sides |
+| $L_{a}R_{b} = L(a)R(b) = R(b)L(a)$ | the two-sided operator, the product of the two sides |
 | $(a,x,b) = (ax)b - a(xb)$ | the associator |
 | $Z(A)$ | the centre, with $L(A) \cap R(A) = L(Z(A))$ |
 

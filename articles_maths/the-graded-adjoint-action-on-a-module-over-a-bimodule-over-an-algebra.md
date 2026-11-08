@@ -5,7 +5,7 @@
 
 The graded action of a graded algebra on a graded module is even, and the Koszul sign rule governs every exchange of two homogeneous things. This article is about the **adjoint action**, the transpose of the graded action with respect to an $\alpha$-invariant pairing: the operator $L_a$ has adjoint $L_{\sigma(a)}$, so the algebra acts on the module a second time by $a\triangleright x=\sigma(a)x$; the article computes this action, shows that it is compatible with the grading, and derives the sign rule for the adjoint of a graded commutator.
 
-The article is the seventh and last of the `* Operator Theory` group of this category. It assumes the graded action and the Koszul sign rule of *The Graded Action on a Module over a Bimodule over an Algebra*, the one-sided adjoints of *The Signed Adjoint of the Left Multiplication on a Module over an Algebra* and *The Signed Adjoint of the Sandwich on a Bimodule over an Algebra*, and the involution and unitarity of *Module Operators with an Involution*. The grading itself, superalgebras and their morphisms belong to *Superalgebras and Graded Structures*. The article stays inside Part I: no distance, norm, form with a norm, positivity, topology or limit. Throughout, $R$ is a commutative ring with $1 \neq 0$ in which $2$ is invertible, $(A,\sigma)$ is a graded involutive $R$-algebra with graded involution ($\sigma(A_i)\subseteq A_i$) and grade involution $\alpha$ commuting with $\sigma$, $\beta=\alpha\sigma$, ${}_A M_A$ is a graded bimodule with the Koszul right action and an $\alpha$-invariant balanced $\sigma$-sesquilinear pairing, and $L_a$, $L^{\alpha}_a$ are the one-sided operators.
+The article is the seventh and last of the `* Operator Theory` group of this category. It assumes the graded action and the Koszul sign rule of *The Graded Action on a Module over a Bimodule over an Algebra*, the one-sided adjoints of *The Signed Adjoint of the Left Multiplication on a Module over an Algebra* and *The Signed Adjoint of the Two-Sided Operator on a Bimodule over an Algebra*, and the involution and unitarity of *Module Operators with an Involution*. The grading itself, superalgebras and their morphisms belong to *Superalgebras and Graded Structures*. The article stays inside Part I: no distance, norm, form with a norm, positivity, topology or limit. Throughout, $R$ is a commutative ring with $1 \neq 0$ in which $2$ is invertible, $(A,\sigma)$ is a graded involutive $R$-algebra with graded involution ($\sigma(A_i)\subseteq A_i$) and grade involution $\alpha$ commuting with $\sigma$, $\beta=\alpha\sigma$, ${}_A M_A$ is a graded bimodule with the Koszul right action and an $\alpha$-invariant balanced $\sigma$-sesquilinear pairing, and $L_a$, $L^{\alpha}_a$ are the one-sided operators.
 
 ## The Adjoint Action
 
@@ -123,9 +123,9 @@ $$
 
 The theorem is the sign rule the grading imposes on the adjoint action: for two odd operators the anticommutator has a self-adjoint bracket, $[L_a,T]_{-1}^{*}=[L_{\sigma(a)},T^{*}]_{-1}$, while for the ordinary commutator a sign is required. It is the graded refinement of the elementary fact that the adjoint of a composite reverses the order.
 
-### The sign rule for the sandwich
+### The sign rule for the two-sided operator
 
-**Proposition.** The adjoint action on the signed sandwiches is compatible with the grading:
+**Proposition.** The adjoint action on the signed two-sided operators is compatible with the grading:
 
 $$
 \boxed{\;\bigl(\mathcal{T}^{\alpha}_{a,b}\bigr)^{*}=\mathcal{T}^{\alpha}_{\beta(a),\beta(b)}, \qquad \bigl(\mathcal{T}_{a,b}\bigr)^{*}=\mathcal{T}_{\sigma(a),\sigma(b)}\;},
@@ -133,7 +133,7 @@ $$
 
 and it sends operators of parity $i$ to operators of parity $i$: the adjoint action preserves the degree and the sign rule of the graded operators.
 
-*Proof.* This is *The Signed Adjoint of the Sandwich on a Bimodule over an Algebra*; the parity statement follows because $\sigma$ and $\alpha$ are graded and their composite $\beta$ is graded, so both parameters keep their degrees.
+*Proof.* This is *The Signed Adjoint of the Two-Sided Operator on a Bimodule over an Algebra*; the parity statement follows because $\sigma$ and $\alpha$ are graded and their composite $\beta$ is graded, so both parameters keep their degrees.
 
 ## The Adjoint Action on the Operators
 
@@ -183,7 +183,7 @@ and conversely $T^{*}=T$ follows when this holds for a separating family of such
 
 ## Summary
 
-For a graded module over a graded involutive algebra with an $\alpha$-invariant balanced pairing, the transpose of the left action $L_a$ is the left multiplication by $\sigma(a)$, so the algebra acts on the module a second time by the adjoint action $a\triangleright x=\sigma(a)x$, which is a right action and is even when the involution is graded. The adjoint operation preserves the parity of every homogeneous operator, and it is compatible with the Koszul sign rule: both the grade involution and the adjoint multiply a homogeneous operator by $(-1)^{\deg T}$. The graded commutator $[S,T]_\epsilon=ST-\epsilon TS$ has adjoint $[L_a,T]_\epsilon^{*}=-\epsilon[L_{\sigma(a)},T^*]_\epsilon$, so the adjoint of the ordinary commutator is minus the commutator of the adjoints and the adjoint of the anticommutator is the anticommutator of the adjoints; for two left multiplications the bracket is again a left multiplication and the formula reads $[L_a,L_b]_\epsilon^{*}=L_{\sigma(ab-\epsilon ba)}$. The adjoint action on the signed sandwiches is $(\mathcal{T}^{\alpha}_{a,b})^{*}=\mathcal{T}^{\alpha}_{\beta(a),\beta(b)}$ with $\beta=\alpha\sigma$, and it preserves the degree and the sign rule. Nothing in the article uses a norm or a topology; the sign rule is the Koszul sign of the grading, and the adjoint action is the transpose of the graded action with respect to the pairing.
+For a graded module over a graded involutive algebra with an $\alpha$-invariant balanced pairing, the transpose of the left action $L_a$ is the left multiplication by $\sigma(a)$, so the algebra acts on the module a second time by the adjoint action $a\triangleright x=\sigma(a)x$, which is a right action and is even when the involution is graded. The adjoint operation preserves the parity of every homogeneous operator, and it is compatible with the Koszul sign rule: both the grade involution and the adjoint multiply a homogeneous operator by $(-1)^{\deg T}$. The graded commutator $[S,T]_\epsilon=ST-\epsilon TS$ has adjoint $[L_a,T]_\epsilon^{*}=-\epsilon[L_{\sigma(a)},T^*]_\epsilon$, so the adjoint of the ordinary commutator is minus the commutator of the adjoints and the adjoint of the anticommutator is the anticommutator of the adjoints; for two left multiplications the bracket is again a left multiplication and the formula reads $[L_a,L_b]_\epsilon^{*}=L_{\sigma(ab-\epsilon ba)}$. The adjoint action on the signed two-sided operators is $(\mathcal{T}^{\alpha}_{a,b})^{*}=\mathcal{T}^{\alpha}_{\beta(a),\beta(b)}$ with $\beta=\alpha\sigma$, and it preserves the degree and the sign rule. Nothing in the article uses a norm or a topology; the sign rule is the Koszul sign of the grading, and the adjoint action is the transpose of the graded action with respect to the pairing.
 
 ## Summary of Notation
 
@@ -198,7 +198,7 @@ For a graded module over a graded involutive algebra with an $\alpha$-invariant 
 | $\alpha T\alpha^{-1}=(-1)^{\deg T}T$ | the sign rule |
 | $[S,T]_\epsilon=ST-\epsilon TS$ | the graded commutator, $\epsilon=(-1)^{\deg S\deg T}$ |
 | $[L_a,T]_\epsilon^{*}=-\epsilon[L_{\sigma(a)},T^{*}]_\epsilon$ | the sign rule for the adjoint of the bracket |
-| $(\mathcal{T}^{\alpha}_{a,b})^{*}=\mathcal{T}^{\alpha}_{\beta(a),\beta(b)}$ | the adjoint action on the signed sandwich |
+| $(\mathcal{T}^{\alpha}_{a,b})^{*}=\mathcal{T}^{\alpha}_{\beta(a),\beta(b)}$ | the adjoint action on the signed two-sided operator |
 
 ## Further Reading
 

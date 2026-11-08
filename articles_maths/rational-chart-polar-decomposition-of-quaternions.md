@@ -26,7 +26,7 @@ Nothing in the decomposition changes. The number $r$ is still the modulus, the e
 
 The chart is rational: $u(\vec v)$ and its inverse are ratios of polynomials, and no transcendental function occurs. The price is locality. As $\sqrt{\langle \vec v\rangle_{\natural}}$ grows the unit $u(\vec v)$ approaches $-1$ without attaining it, so the one unit factor that is missed is $-1$, the unit factor of every negative real quaternion. The decomposition therefore holds on $\mathbb{H}$ cut along the negative real axis, and it fails on the cut.
 
-Noncommutativity enters the coordinate calculus. The inverse is a rational expression in $u$, and in $\mathbb{H}$ its two orderings coincide; the product is not a bare fraction. The coordinate of a product is the bare fraction conjugated by $1+\vec v_1$, a sandwich that is the exact noncommutative correction. The complex formula is the commutative shadow of this law.
+Noncommutativity enters the coordinate calculus. The inverse is a rational expression in $u$, and in $\mathbb{H}$ its two orderings coincide; the product is not a bare fraction. The coordinate of a product is the bare fraction conjugated by $1+\vec v_1$, a two-sided operator that is the exact noncommutative correction. The complex formula is the commutative shadow of this law.
 
 The plan is as follows. The modulus–unit form is recalled (§*The Modulus–Unit Form Recalled*), the chart and its inverse are defined (§*The Chart*, §*The Inverse*), and the chart is proved a bijection (§*The Bijection*). The decomposition is then stated and proved (§*The Rational-Chart Decomposition*), the group law in the coordinate is computed (§*The Group Law*), the covering of the sphere by two charts and the cost of rationality are described (§*Covering the Sphere and the Price of Locality*), and the matrix picture (§*The Matrix Picture*) and worked examples (§*Worked Examples*) close the mathematical part. The comparison with the two other forms is in §*Covering the Sphere and the Price of Locality* and in *Exponential Polar Decomposition of Quaternions*, §*The Three Polar Decompositions*.
 
@@ -54,7 +54,7 @@ The unit factor lies on the unit sphere $\mathrm{Sp}(1)=\{\tilde u:\langle\tilde
 
 This is where the modulus–unit article stops. The present article adds one object, the pure quaternion $\vec v$, and changes nothing else.
 
-The unit sphere is a compact, connected, simply connected group of dimension three. Its inverse is the quaternion conjugate, $\tilde u^{-1}=\tilde u^{\natural}$, and it is non-abelian. The chart below is a chart of this three-dimensional group, not of a circle; the extra two dimensions are the reason the chart's parameter is a pure quaternion and the reason the group law is a noncommutative sandwich rather than a scalar fraction.
+The unit sphere is a compact, connected, simply connected group of dimension three. Its inverse is the quaternion conjugate, $\tilde u^{-1}=\tilde u^{\natural}$, and it is non-abelian. The chart below is a chart of this three-dimensional group, not of a circle; the extra two dimensions are the reason the chart's parameter is a pure quaternion and the reason the group law is a noncommutative two-sided operator rather than a scalar fraction.
 
 ### The Chart
 
@@ -262,7 +262,7 @@ B_{\mathrm{bare}} = (\vec e_x+\vec e_y)(1+\vec e_z)^{-1}
 = \frac{(\vec e_x+\vec e_y)(1-\vec e_z)}{2} = \vec e_y,
 $$
 
-which is a different pure quaternion; the error is $\sqrt{\langle\vec e_y+\vec e_z\rangle_{\natural}}=\sqrt{2}=1.414213562$. The sandwich conjugates $\vec e_y$ by $1-\vec e_x$ and returns $-\vec e_z$.
+which is a different pure quaternion; the error is $\sqrt{\langle\vec e_y+\vec e_z\rangle_{\natural}}=\sqrt{2}=1.414213562$. The two-sided operator conjugates $\vec e_y$ by $1-\vec e_x$ and returns $-\vec e_z$.
 
 ### Identity, Inverse and the Pole
 
@@ -322,14 +322,14 @@ The chart has three properties, and they are the terms of an exchange.
 - **It is local.** It misses one point of the sphere, and therefore one ray of the quaternion space. A second chart, or the point at infinity, is needed to recover the sphere.
 - **It is unbounded.** Near the missing point the coordinate escapes to infinity, and the approach to the cut from different directions gives coordinates escaping in those directions.
 
-The modulus–unit form is global and uses a square root. The exponential form, treated in *Exponential Polar Decomposition of Quaternions*, is global and uses a transcendental function. The present form is the one that stays rational, and locality is its price. In the quaternion case there is a second price: the group law is not the commutative fraction, and the chart is a group chunk only through a sandwich. The three forms are compared in *Exponential Polar Decomposition of Quaternions*, §*The Three Polar Decompositions*; the rational chart is the only one that stays rational.
+The modulus–unit form is global and uses a square root. The exponential form, treated in *Exponential Polar Decomposition of Quaternions*, is global and uses a transcendental function. The present form is the one that stays rational, and locality is its price. In the quaternion case there is a second price: the group law is not the commutative fraction, and the chart is a group chunk only through a two-sided operator. The three forms are compared in *Exponential Polar Decomposition of Quaternions*, §*The Three Polar Decompositions*; the rational chart is the only one that stays rational.
 
 ### The Departures from the Complex Template
 
 The complex rational chart is $u(s)=(1-is)/(1+is)$ with $s\in\mathbb{R}$ and group law $s_3=(s_1+s_2)/(1-s_1s_2)$. The quaternion chart keeps the shape $(1-\vec v)(1+\vec v)^{-1}$ but changes four things.
 
 - **The parameter is a pure quaternion, not a scalar.** The chart is a chart of a three-dimensional sphere, so the coordinate has three real components.
-- **The group law is a sandwich.** The complex fraction is replaced by $(1+\vec v_1)^{-1}B_{\mathrm{bare}}(1+\vec v_1)$, the conjugation by $1+\vec v_1$. The bare fraction is correct only when $1+\vec v_1$ commutes with $B_{\mathrm{bare}}$, which is automatic in the commutative case and fails here.
+- **The group law is a two-sided operator.** The complex fraction is replaced by $(1+\vec v_1)^{-1}B_{\mathrm{bare}}(1+\vec v_1)$, the conjugation by $1+\vec v_1$. The bare fraction is correct only when $1+\vec v_1$ commutes with $B_{\mathrm{bare}}$, which is automatic in the commutative case and fails here.
 - **The inverse is unambiguous in both orderings.** The complex formula $s=i(u-1)/(u+1)$ has no order to specify. In $\mathbb{H}$ the formula $\vec v=(1-u)(1+u)^{-1}$ also has no order to specify, because $1+u$ and $1-u$ commute; the noncommutativity appears in the product, not in the inverse.
 - **The chart is minus the stereographic coordinate.** The line through $-1$ and $u(\vec v)$ meets the pure subspace at $-\vec v$, not at $\vec v$; the sign is a convention of the chart and does not affect the decomposition.
 
@@ -375,7 +375,7 @@ M(\vec v)=\frac{1}{1+\langle \vec v\rangle_{\natural}}
 \end{pmatrix}.
 $$
 
-The Cayley transform is the matrix analogue of the chart: it maps the skew-Hermitian space onto $SU(2)$ minus the matrix $-I$, and its inverse is $V=(I-M)(I+M)^{-1}$. The sandwich of §*The Product Formula* is the coordinate expression of the noncommutativity of $SU(2)$, not an artefact of the chart.
+The Cayley transform is the matrix analogue of the chart: it maps the skew-Hermitian space onto $SU(2)$ minus the matrix $-I$, and its inverse is $V=(I-M)(I+M)^{-1}$. The two-sided operator of §*The Product Formula* is the coordinate expression of the noncommutativity of $SU(2)$, not an artefact of the chart.
 
 ## Worked Examples
 
@@ -447,7 +447,7 @@ with $\sqrt{\langle \vec v\rangle_{\natural}}=2000.000500$. The reconstruction r
 
 Every quaternion outside the closed negative real axis has exactly one rational-chart polar decomposition $\tilde q=r\,u(\vec v)$, with $r=\sqrt{\langle\tilde q\rangle_{\natural}}>0$, $u(\vec v)=(1-\vec v)(1+\vec v)^{-1}$ and $\vec v$ a pure quaternion. The coordinate is $\vec v=(1-u)(1+u)^{-1}=(r-\tilde q)(r+\tilde q)^{-1}$, and the chart is a bijection from the pure subspace onto the unit sphere minus $-1$.
 
-The chart is rational in both directions and misses the unit factor $-1$, so the decomposition is defined on $\mathbb{H}\setminus(-\infty,0]$. A second chart, $-u(\vec v)=u(\vec v^{-1})$, supplies $-1$ and misses $+1$; the two charts cover the sphere. The group law is the sandwich $\vec v_3=(1+\vec v_1)^{-1}(\vec v_1+\vec v_2)(1+\vec v_1\vec v_2)^{-1}(1+\vec v_1)$, which is the bare fraction conjugated by $1+\vec v_1$; the pole is $\vec v_1\vec v_2=-1$, where the product is the missing point and the coordinate escapes. In the matrix picture the chart is the Cayley transform $M(\vec v)=(I-V)(I+V)^{-1}$ into $SU(2)$.
+The chart is rational in both directions and misses the unit factor $-1$, so the decomposition is defined on $\mathbb{H}\setminus(-\infty,0]$. A second chart, $-u(\vec v)=u(\vec v^{-1})$, supplies $-1$ and misses $+1$; the two charts cover the sphere. The group law is the two-sided operator $\vec v_3=(1+\vec v_1)^{-1}(\vec v_1+\vec v_2)(1+\vec v_1\vec v_2)^{-1}(1+\vec v_1)$, which is the bare fraction conjugated by $1+\vec v_1$; the pole is $\vec v_1\vec v_2=-1$, where the product is the missing point and the coordinate escapes. In the matrix picture the chart is the Cayley transform $M(\vec v)=(I-V)(I+V)^{-1}$ into $SU(2)$.
 
 ## Summary of Notation
 
