@@ -25,7 +25,7 @@ $$
 \tilde Q\star\tilde Q=\tilde Q\tilde Q^{*} ,
 $$
 
-and it is written once and for all $\tilde Q\star\tilde Q$; the other square of the corpus, $\tilde Q\tilde Q^{\natural}=\bigl(\sum_\mu Q_\mu^{2}\bigr)e_t$, is called the **natural square** and is not the square of the multiplication.
+and it is written once and for all $\tilde Q\star\tilde Q$; the other square of the corpus, $\tilde Q\tilde Q^{\natural}=\bigl(\sum_\mu Q_\mu^{2}\bigr)e_t$, is called the **quaternionic square** and is not the square of the multiplication.
 
 **Remark.** The two squares are the two central readings of the product with one factor conjugated, and *Introduction to the General Plain Sesqualgebra* keeps them apart by the caution that both are called the square in different places of the corpus. The present article uses only the first, and the second appears once, in §*The Two Squares*, where the contrast is computed.
 
@@ -91,17 +91,17 @@ and likewise $i\vec e_\mu\star i\vec e_\mu=e_t$ for the three vector directions.
 
 ### The Two Squares
 
-**Proposition.** The square of the multiplication and the natural square agree exactly on the elements whose four coordinates are real,
+**Proposition.** The square of the multiplication and the quaternionic square agree exactly on the elements whose four coordinates are real,
 
 $$
 \tilde Q\star\tilde Q=\tilde Q\tilde Q^{\natural} \quad\Longleftrightarrow\quad Q_\mu\in\mathbb{R}\ \text{ for }\ \mu\in\{t,x,y,z\} ,
 $$
 
-so they agree on the real subspace $\mathbb{R}^{4}$ and differ off it. The simplest witness is $\tilde Q=ie_t$, where the square of the multiplication is $e_t$ and the natural square is $-e_t$, a difference of $2e_t$.
+so they agree on the real subspace $\mathbb{R}^{4}$ and differ off it. The simplest witness is $\tilde Q=ie_t$, where the square of the multiplication is $e_t$ and the quaternionic square is $-e_t$, a difference of $2e_t$.
 
 **Proof.** Write the coordinates in the real form $\tilde Q=\tilde Q_1+i\tilde Q_2$ with $\tilde Q_1,\tilde Q_2\in\mathbb{B}_{H}$ real quaternions. The star and the quaternion conjugation act on that form by $\tilde Q^{*}=\tilde Q_1^{\natural}-i\tilde Q_2^{\natural}$ and $\tilde Q^{\natural}=\tilde Q_1^{\natural}+i\tilde Q_2^{\natural}$, because both maps are $\mathbb{R}$-linear and the star conjugates the coefficient $i$; hence the difference of the two squares is $\tilde Q\tilde Q^{*}-\tilde Q\tilde Q^{\natural}=-2i\,\tilde Q\tilde Q_2^{\natural}$. If the two squares are equal then $\tilde Q\tilde Q_2^{\natural}=0$, that is $\tilde Q_1\tilde Q_2^{\natural}+i\tilde Q_2\tilde Q_2^{\natural}=0$; the first term is real and the second is the purely imaginary scalar $i\bigl(Q_{2t}^{2}+\lVert\vec Q_2\rVert^{2}\bigr)$, so the equation forces $\tilde Q_2\tilde Q_2^{\natural}=0$, whence $\tilde Q_2=0$ and the four coordinates of $\tilde Q$ are real. Conversely, for real coordinates one has $\tilde Q^{*}=\tilde Q^{\natural}$ and the two squares coincide. At $\tilde Q=ie_t$ one has $\tilde Q_1=0$ and $\tilde Q_2=e_t$, so the difference is $-2i\,(ie_t)e_t=2e_t$, while $\tilde Q\star\tilde Q=i\bar i\,e_t=e_t$ and $\tilde Q\tilde Q^{\natural}=i^{2}e_t=-e_t$.
 
-**Remark.** The distinction matters for the vanishing of the square. The natural square $\bigl(\sum_\mu Q_\mu^{2}\bigr)e_t$ vanishes exactly on the zero divisors of the algebra, a six-real-dimensional set, by *N-Regularity and N-Degeneracy in the Biquaternion Algebra*, §*The Zero Divisors*; the square of the multiplication vanishes exactly at $\tilde Q=0$. The two statements are the two halves of the corpus's treatment of squares, and the cone of the multiplication is built from the first and not the second.
+**Remark.** The distinction matters for the vanishing of the square. The quaternionic square $\bigl(\sum_\mu Q_\mu^{2}\bigr)e_t$ vanishes exactly on the zero divisors of the algebra, a six-real-dimensional set, by *N-Regularity and N-Degeneracy in the Biquaternion Algebra*, §*The Zero Divisors*; the square of the multiplication vanishes exactly at $\tilde Q=0$. The two statements are the two halves of the corpus's treatment of squares, and the cone of the multiplication is built from the first and not the second.
 
 ## The Cone of Squares
 
@@ -228,7 +228,7 @@ $$
 \boxed{\;\tilde Q\star\tilde Q=0 \quad\Longleftrightarrow\quad \tilde Q=0\;},
 $$
 
-whereas the natural square vanishes exactly on the zero divisors of the algebra,
+whereas the quaternionic square vanishes exactly on the zero divisors of the algebra,
 
 $$
 \tilde Q\tilde Q^{\natural}=0 \quad\Longleftrightarrow\quad \sum_{\mu\in\{t,x,y,z\}}Q_\mu^{2}=0 ,
@@ -236,9 +236,9 @@ $$
 
 a six-real-dimensional set.
 
-**Proof.** The first is the theorem on the scalar part: $\lvert\mathrm{Sc}(\tilde Q\star\tilde Q)\rvert=\sum_\mu\lvert Q_\mu\rvert^{2}$ vanishes only at $\tilde Q=0$. The second is $\tilde Q\tilde Q^{\natural}=\bigl(\sum_\mu Q_\mu^{2}\bigr)e_t$ by the definition of the natural square, and the classification of the zero divisors of $\mathbb{B}$ is *N-Regularity and N-Degeneracy in the Biquaternion Algebra*, §*The Zero Divisors*.
+**Proof.** The first is the theorem on the scalar part: $\lvert\mathrm{Sc}(\tilde Q\star\tilde Q)\rvert=\sum_\mu\lvert Q_\mu\rvert^{2}$ vanishes only at $\tilde Q=0$. The second is $\tilde Q\tilde Q^{\natural}=\bigl(\sum_\mu Q_\mu^{2}\bigr)e_t$ by the definition of the quaternionic square, and the classification of the zero divisors of $\mathbb{B}$ is *N-Regularity and N-Degeneracy in the Biquaternion Algebra*, §*The Zero Divisors*.
 
-**Remark.** The two vanishing sets are the two faces of the square: the square of the multiplication has the smallest possible vanishing set, the origin, and the natural square has the largest possible nontrivial one, the zero divisor set. The idempotents of the multiplication are the nonzero Hermitian elements with $\tilde Q\star\tilde Q=\tilde Q$, and they are the projections of *Square Roots of One and the Idempotents of the General Plain Sesqualgebra*, not the zero divisors.
+**Remark.** The two vanishing sets are the two faces of the square: the square of the multiplication has the smallest possible vanishing set, the origin, and the quaternionic square has the largest possible nontrivial one, the zero divisor set. The idempotents of the multiplication are the nonzero Hermitian elements with $\tilde Q\star\tilde Q=\tilde Q$, and they are the projections of *Square Roots of One and the Idempotents of the General Plain Sesqualgebra*, not the zero divisors.
 
 ## The Matrix Model
 
@@ -260,7 +260,7 @@ $$
 
 ## Summary
 
-The square of the sesquilinear multiplication is $\tilde Q\star\tilde Q=\tilde Q\tilde Q^{*}$; it is Hermitian, its scalar part is the sum of the modulus squares of the four coordinates, and it vanishes only at the origin. The sums of the squares form the cone $C(\mathbb{B})$, which contains $0$, is closed under addition, is contained in the Hermitian subspace $\mathbb{B}_{\Psi}$ whose additive hull it generates, is preserved by the nonnegative real scalars, is invariant under the congruence $\tilde Q_1\mapsto\tilde Q_2^{*}\tilde Q_1\tilde Q_2$, and is proper, so the preorder it defines is a partial order. The cone is the algebraic positive cone of the algebra with the involution ${}^{*}$, the biquaternion instance of *Hermitian Squares and the Algebraic Positive Cone*, and it is proper where the cones of the two bilinear products are not. The natural square $\tilde Q\tilde Q^{\natural}=\bigl(\sum_\mu Q_\mu^{2}\bigr)e_t$ vanishes on the zero divisors, and the square of the multiplication vanishes at the origin alone; the cone is built from the first of the two squares and not the second.
+The square of the sesquilinear multiplication is $\tilde Q\star\tilde Q=\tilde Q\tilde Q^{*}$; it is Hermitian, its scalar part is the sum of the modulus squares of the four coordinates, and it vanishes only at the origin. The sums of the squares form the cone $C(\mathbb{B})$, which contains $0$, is closed under addition, is contained in the Hermitian subspace $\mathbb{B}_{\Psi}$ whose additive hull it generates, is preserved by the nonnegative real scalars, is invariant under the congruence $\tilde Q_1\mapsto\tilde Q_2^{*}\tilde Q_1\tilde Q_2$, and is proper, so the preorder it defines is a partial order. The cone is the algebraic positive cone of the algebra with the involution ${}^{*}$, the biquaternion instance of *Hermitian Squares and the Algebraic Positive Cone*, and it is proper where the cones of the two bilinear products are not. The quaternionic square $\tilde Q\tilde Q^{\natural}=\bigl(\sum_\mu Q_\mu^{2}\bigr)e_t$ vanishes on the zero divisors, and the square of the multiplication vanishes at the origin alone; the cone is built from the first of the two squares and not the second.
 
 ## Summary of Notation
 
@@ -268,7 +268,7 @@ The square of the sesquilinear multiplication is $\tilde Q\star\tilde Q=\tilde Q
 |---|---|
 | $\tilde Q_1\star\tilde Q_2=\tilde Q_1\tilde Q_2^{*}$ | the sesquilinear multiplication |
 | $\tilde Q\star\tilde Q=\tilde Q\tilde Q^{*}$ | the square of the multiplication |
-| $\tilde Q\tilde Q^{\natural}=\bigl(\sum_\mu Q_\mu^{2}\bigr)e_t$ | the natural square |
+| $\tilde Q\tilde Q^{\natural}=\bigl(\sum_\mu Q_\mu^{2}\bigr)e_t$ | the quaternionic square |
 | $\mathrm{Sc}(\tilde Q_1\star\tilde Q_2)=\sum_\mu Q_{1,\mu}\overline{Q_{2,\mu}}$ | the scalar part of the product |
 | $\mathrm{Sc}(\tilde Q\star\tilde Q)=\sum_\mu\lvert Q_\mu\rvert^{2}$ | the scalar part of the square, nonnegative real |
 | $C(\mathbb{B})=\{\sum_i\tilde Q_i\star\tilde Q_i\}$ | the cone of squares |

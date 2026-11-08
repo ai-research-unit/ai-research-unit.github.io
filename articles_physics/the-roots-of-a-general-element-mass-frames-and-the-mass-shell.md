@@ -10,7 +10,7 @@ $$
 
 **Notation, once.** The imaginary unit is the central $i$ of $\mathbb{B}$, with $i^2=-1$; every double $i$ is reduced before a formula is read. The star and the quaternion sign are the two conjugations of *Algebra and Element Conventions*, and the derivative is the gradient $\tilde\nabla$ of *Operator and Calculus Conventions*, with quaternion conjugate $\tilde\nabla^{\natural}$ and d'Alembertian $\Box$; on the material sector $\Box$ reads $\Delta-\partial^2/\partial {r'_{t}}^2$, a derived form. The side is position: $a\tilde{Ξ}_{\mathrm{sp}}$ multiplies on the left and $\tilde{Ξ}_{\mathrm{sp}} b$ on the right. The chirality is the operator $\Gamma$ of the corpus, a right action; the Dirac bilinear is $\tilde{Ξ}_{\mathrm{sp}}^*i\tilde{Ξ}_{\mathrm{sp}}\vec e_x$. For a radicand with vector part $\vec Q$, $B$ is the modulus of the vector part, $B^2=(\vec Q,\vec Q)$.
 
-The answer depends on the product, and the first job of the article is to keep the products apart. The **plain square** $\tilde{Ζ}^2$ has a finite root set for a non-scalar radicand, generically four elements, falling to two or to none. The **natural square** $\tilde{Ζ}\tilde{Ζ}^{\natural}=\langle\tilde{Ζ}\rangle_{\natural}e_t$ has the level set of the interval as its root set, and on the material sector that level set is the mass shell. The **Hermitian square** $\tilde{Ζ}\tilde{Ζ}^{*}$ produces a positive semidefinite value; the eigenvalues of the mass operator are the mass-squareds of a doublet. The three squares are three root problems, not one.
+The answer depends on the product, and the first job of the article is to keep the products apart. The **plain square** $\tilde{Ζ}^2$ has a finite root set for a non-scalar radicand, generically four elements, falling to two or to none. The **quaternionic square** $\tilde{Ζ}\tilde{Ζ}^{\natural}=\langle\tilde{Ζ}\rangle_{\natural}e_t$ has the level set of the interval as its root set, and on the material sector that level set is the mass shell. The **Hermitian square** $\tilde{Ζ}\tilde{Ζ}^{*}$ produces a positive semidefinite value; the eigenvalues of the mass operator are the mass-squareds of a doublet. The three squares are three root problems, not one.
 
 Two first-order writings are kept apart throughout. The **gradient equation** is one-sided: every derivative acts by left multiplication, and it carries the mass shell. The **pair equation** is that equation written once on the pair of fields. The chirality is a right multiplication of the field, and the condensate is a bilinear; neither is a term of the gradient.
 
@@ -55,15 +55,15 @@ $$
 4x^2-4Q_tx-(\vec Q,\vec Q)=0 ,
 $$
 
-whose discriminant is $16n$, with $n=\langle\tilde Q\rangle_{\natural}$ the natural norm of the radicand. The roots come in opposite pairs $\pm\tilde{Ζ}$. There are **four roots** when $(\vec Q,\vec Q)\neq0$ and $n\neq0$. There are **two** when the discriminant vanishes, $n=0$ with $Q_t\neq0$, and **two** in the null-vector row, $(\vec Q,\vec Q)=0$ with $Q_t\neq0$. There are **none** for a nonzero nilpotent, $(\vec Q,\vec Q)=0$ and $Q_t=0$. A complex scalar radicand $\tilde Q=Q_te_t$ has the two scalar roots $\pm\sqrt{Q_t}e_t$, joined by a **four-real-parameter family** of pure roots with $(\vec{Ζ},\vec{Ζ})=-Q_t$.
+whose discriminant is $16n$, with $n=\langle\tilde Q\rangle_{\natural}$ the biquaternion norm of the radicand. The roots come in opposite pairs $\pm\tilde{Ζ}$. There are **four roots** when $(\vec Q,\vec Q)\neq0$ and $n\neq0$. There are **two** when the discriminant vanishes, $n=0$ with $Q_t\neq0$, and **two** in the null-vector row, $(\vec Q,\vec Q)=0$ with $Q_t\neq0$. There are **none** for a nonzero nilpotent, $(\vec Q,\vec Q)=0$ and $Q_t=0$. A complex scalar radicand $\tilde Q=Q_te_t$ has the two scalar roots $\pm\sqrt{Q_t}e_t$, joined by a **four-real-parameter family** of pure roots with $(\vec{Ζ},\vec{Ζ})=-Q_t$.
 
 That count is the one given in *Biquaternion Elementary Functions*, §*The Roots*. The four plain roots are the four independent sign choices of the two eigenvalue square roots: the root carries one sign of $\sqrt{\lambda_+}$ where the radicand carries $\lambda_+$, and one sign of $\sqrt{\lambda_-}$ where it carries $\lambda_-$, the two chosen independently. Shifting the two logarithms by $2\pi i$ reproduces the same finite set.
 
 The root set of $0$ is the origin and the nilpotent cone. In the natural band the root set of a nonzero value is a level set, not a cone; in the plain band it is the classified set — finite for a non-scalar radicand, and a finite set together with a four-parameter family for a central scalar. For a **central** nonzero value, every root is a unit: the scalar roots are units, and a pure root has $(\vec{Ζ},\vec{Ζ})\neq0$, so its norm does not vanish. A nonzero element equal to its own square is its own root and is therefore a zero divisor; the unit statement is a statement about central values.
 
-### The Natural Square and the Shell
+### The Quaternionic Square and the Shell
 
-The natural square of an element is its interval,
+The quaternionic square of an element is its interval,
 
 $$
 \tilde{Ζ}\tilde{Ζ}^{\natural}=\langle\tilde{Ζ}\rangle_{\natural}e_t,
@@ -103,7 +103,7 @@ $$
 \tilde{Ζ}\tilde{Ζ}^{*},
 $$
 
-a positive semidefinite element of $\mathbb{B}_{\Psi}$, with non-negative eigenvalues. For a positive semidefinite value $\tilde Q$ the roots are $\tilde Q^{1/2}$ times a $*$-unitary element, one root for each such element: a family of amplitudes that share the value and differ by a $*$-unitary right factor, the analogue of the sign of a scalar root. This is the band in which the mass-squared operator of a doublet lives. The three squares are three root problems: the plain square for the algebraic multiplicity, the natural square for the interval, the Hermitian square for the mass operator.
+a positive semidefinite element of $\mathbb{B}_{\Psi}$, with non-negative eigenvalues. For a positive semidefinite value $\tilde Q$ the roots are $\tilde Q^{1/2}$ times a $*$-unitary element, one root for each such element: a family of amplitudes that share the value and differ by a $*$-unitary right factor, the analogue of the sign of a scalar root. This is the band in which the mass-squared operator of a doublet lives. The three squares are three root problems: the plain square for the algebraic multiplicity, the quaternionic square for the interval, the Hermitian square for the mass operator.
 
 ## The Sign and the Causal Class
 
@@ -190,7 +190,7 @@ $$
 
 The two mass-squareds of the doublet are the eigenvalues of $\tilde E_{\Psi}\tilde E_{\Psi}^{*}$, equivalently of $\tilde E_{\Psi}^{*}\tilde E_{\Psi}$ for the nonzero spectrum. The mass is no longer a number multiplying the field; it is the element $\tilde E_{\Psi}\tilde E_{\Psi}^{*}$ multiplying the field from the right.
 
-Three cases show the range the corpus uses. A real scalar $\tilde E_{\Psi}=s e_t$ gives $\tilde E_{\Psi}\tilde E_{\Psi}^{*}=s^2e_t$, a degenerate doublet of mass $|s|$. A Hermitian mass field of unit square, $\tilde E_{\Psi}=\tfrac12(e_t+i\vec u_n)$ with $\vec u_n$ a real vector of unit square, gives $\tilde E_{\Psi}\tilde E_{\Psi}^{*}=\tilde E_{\Psi}$, with eigenvalues $1$ and $0$: one massive mode and one massless mode. A singular mass field leaves a massless mode whatever else it does: the two mass-squareds multiply to $\bigl|\langle\tilde E_{\Psi}\rangle_{\natural}\bigr|^2$, because the natural norm is multiplicative and $\langle\tilde E_{\Psi}^{*}\rangle_{\natural}=\overline{\langle\tilde E_{\Psi}\rangle_{\natural}}$, and for the Hermitian element $\tilde E_{\Psi}\tilde E_{\Psi}^{*}$ that product is the product of its two eigenvalues; a vanishing norm therefore forces a zero eigenvalue. The example $\tilde E_{\Psi}=\vec e_x+i\vec e_y$ is singular, with mass-squareds $4$ and $0$. A general mass field gives two distinct nonzero mass-squareds; the three cases above do not.
+Three cases show the range the corpus uses. A real scalar $\tilde E_{\Psi}=s e_t$ gives $\tilde E_{\Psi}\tilde E_{\Psi}^{*}=s^2e_t$, a degenerate doublet of mass $|s|$. A Hermitian mass field of unit square, $\tilde E_{\Psi}=\tfrac12(e_t+i\vec u_n)$ with $\vec u_n$ a real vector of unit square, gives $\tilde E_{\Psi}\tilde E_{\Psi}^{*}=\tilde E_{\Psi}$, with eigenvalues $1$ and $0$: one massive mode and one massless mode. A singular mass field leaves a massless mode whatever else it does: the two mass-squareds multiply to $\bigl|\langle\tilde E_{\Psi}\rangle_{\natural}\bigr|^2$, because the biquaternion norm is multiplicative and $\langle\tilde E_{\Psi}^{*}\rangle_{\natural}=\overline{\langle\tilde E_{\Psi}\rangle_{\natural}}$, and for the Hermitian element $\tilde E_{\Psi}\tilde E_{\Psi}^{*}$ that product is the product of its two eigenvalues; a vanishing norm therefore forces a zero eigenvalue. The example $\tilde E_{\Psi}=\vec e_x+i\vec e_y$ is singular, with mass-squareds $4$ and $0$. A general mass field gives two distinct nonzero mass-squareds; the three cases above do not.
 
 **The boundary.** The framework derives no numerical mass. The algebra is scale-free, and the mass field is put in by hand in the Einstein–Mayer system; the Petiau system closes it by giving the mass field its own equation, at the cost of nonlinearity. The construction shows that the algebra can carry a mass that is a field with its own equation, and that the mass-squareds of a doublet are the eigenvalues of the element $\tilde E_{\Psi}\tilde E_{\Psi}^{*}$. It does not produce the electron mass or any other.
 
@@ -254,7 +254,7 @@ x_2=2(\varsigma_1\varsigma_0+\varsigma_2\varsigma_3),\qquad
 x_3=\varsigma_1^2+\varsigma_2^2-\varsigma_3^2-\varsigma_0^2 .
 $$
 
-The radius is the natural norm of the quaternion $\varsigma=\varsigma_1\vec e_x+\varsigma_2\vec e_y+\varsigma_3\vec e_z+\varsigma_0e_t$,
+The radius is the biquaternion norm of the quaternion $\varsigma=\varsigma_1\vec e_x+\varsigma_2\vec e_y+\varsigma_3\vec e_z+\varsigma_0e_t$,
 
 $$
 \boxed{\;r=\sqrt{x_1^2+x_2^2+x_3^2}=\varsigma_1^2+\varsigma_2^2+\varsigma_3^2+\varsigma_0^2=\langle\varsigma\rangle_{\natural}\;},
@@ -312,7 +312,7 @@ The mass shell is a statement of the gradient equation; the chirality, the axial
 | $\tilde Q$ | a radicand |
 | $B$ | the square root of the vector-part square, $B^2=(\vec Q,\vec Q)$ |
 | $*,\natural$ | the Hermitian and quaternion conjugations of *Algebra and Element Conventions* |
-| $\langle\tilde Q\rangle_{\natural}$ | the natural norm of *Norm and Pairing Conventions* |
+| $\langle\tilde Q\rangle_{\natural}$ | the biquaternion norm of *Norm and Pairing Conventions* |
 | $\tilde P_{\Phi}$ | a material four-momentum |
 | $(\vec v,\vec v)$ | the vector-part square $v_x^2+v_y^2+v_z^2$; the element $\vec v$ squares to $-(\vec v,\vec v)e_t$ |
 | $\vec u_p$ | the direction of $\vec p$, $\vec u_p=\vec p/\lvert\vec p\rvert$ |

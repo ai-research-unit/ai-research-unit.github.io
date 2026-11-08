@@ -357,13 +357,13 @@ $$
 \boxed{\;\langle \alpha\rangle_{\natural} = \alpha_x^{2}+\alpha_y^{2} = (-i\omega)^2+(-m)^2 = -\omega^2+m^2 = m^2 - \omega^2\;},
 $$
 
-where $(-i\omega)^2=i^2\omega^2=-\omega^2$ uses $i^2=-1$. For an element with no scalar part the algebra square is minus the natural norm, $Q^2=-\langle Q\rangle_{\natural}e_t$, as *Product and Form Conventions* records; hence
+where $(-i\omega)^2=i^2\omega^2=-\omega^2$ uses $i^2=-1$. For an element with no scalar part the algebra square is minus the biquaternion norm, $Q^2=-\langle Q\rangle_{\natural}e_t$, as *Product and Form Conventions* records; hence
 
 $$
 \alpha^{2}=(\omega^2-m^2)e_t .
 $$
 
-The element $\alpha$ is therefore a **nilpotent**, $\alpha^2=0$, exactly where its natural norm vanishes, and the boxed relation above and this one are the same condition read twice: the mass shell is where the parameter of the shifted equation loses its inverse. The zero-divisor set of the algebra is
+The element $\alpha$ is therefore a **nilpotent**, $\alpha^2=0$, exactly where its biquaternion norm vanishes, and the boxed relation above and this one are the same condition read twice: the mass shell is where the parameter of the shifted equation loses its inverse. The zero-divisor set of the algebra is
 
 $$
 \mathcal Z=\{\tilde Q\neq0:\langle\tilde Q\rangle_{\natural}=0\},

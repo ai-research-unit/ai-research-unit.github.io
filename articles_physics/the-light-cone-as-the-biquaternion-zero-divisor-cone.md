@@ -28,7 +28,7 @@ $$
 \tilde{Q} = Q_te_t + Q_x\vec e_x + Q_y\vec e_y + Q_z\vec e_z ,
 $$
 
-a nondegenerate complex quadratic form on $\mathbb{C}^4$. It is the determinant of the matrix realization of $\tilde{Q}$ and the natural quadratic invariant of the algebra. Its **zero set** is the quadric cone
+a nondegenerate complex quadratic form on $\mathbb{C}^4$. It is the determinant of the matrix realization of $\tilde{Q}$ and the quadratic invariant of the algebra. Its **zero set** is the quadric cone
 
 $$
 \mathcal{Z} = \{\, \tilde{Q}\in\mathbb{B} : \tilde{Q}\neq 0,\ \langle\tilde{Q}\rangle_{\natural} = 0 \,\},

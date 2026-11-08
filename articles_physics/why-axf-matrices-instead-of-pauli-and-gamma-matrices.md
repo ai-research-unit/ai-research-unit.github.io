@@ -356,7 +356,7 @@ $$
 \det L_{\mathrm{axf}}(\tilde Q)=\bigl\langle\tilde Q\bigr\rangle_{\natural}^{2},
 $$
 
-where $\langle\tilde Q\rangle_\natural=Q_t^2+Q_x^2+Q_y^2+Q_z^2$. Both were verified on random elements. The trace is four times the scalar coefficient and the determinant is the square of the natural norm, so the two invariants a physicist needs come out of the display's own structure.
+where $\langle\tilde Q\rangle_\natural=Q_t^2+Q_x^2+Q_y^2+Q_z^2$. Both were verified on random elements. The trace is four times the scalar coefficient and the determinant is the square of the quaternion norm, so the two invariants a physicist needs come out of the display's own structure.
 
 The transpose is the quaternion conjugation:
 
@@ -577,7 +577,7 @@ No gamma display can avoid the choice. The two gammas $\gamma_0[\mathbb{B}_{\Phi
 
 The defect is a formal defect, and its source is physical. Physical space has no preferred spatial direction, and a fundamental equation therefore contains none. A display that singles one out adds a datum the equation does not have, and the addition is unmarked, so the reader cannot subtract it. It also hides what depends on that direction: the orbit of the three spatial basis operators, the basis-free form of the adjoint, and the correspondence between two frames become invisible on the page, which is worse than a stray datum. A frame is legitimate when a measurement, an apparatus or a background supplies the direction, and then it is named; the defect is the default frame no problem asked for.
 
-The $\mathrm{axf}$ display writes no direction. Its diagonal basis operators are the four squares, one per unit, and the set is unchanged by any permutation of the three spatial units. Every basis operator is a real signed permutation of determinant one, the trace is $4Q_t$, the determinant is the square of the natural norm, and the transpose is the quaternion conjugation.
+The $\mathrm{axf}$ display writes no direction. Its diagonal basis operators are the four squares, one per unit, and the set is unchanged by any permutation of the three spatial units. Every basis operator is a real signed permutation of determinant one, the trace is $4Q_t$, the determinant is the square of the quaternion norm, and the transpose is the quaternion conjugation.
 
 The preferred form of a physical equation is not a matrix at all. The operator is a pair of multipliers acting on an element, $\tilde{Ξ}_{\mathrm{sp}}\mapsto a\tilde{Ξ}_{\mathrm{sp}} b$, with no basis in the definition.
 
@@ -611,7 +611,7 @@ The migration has three passes — arrays to basis operators, basis operators to
 | $\gamma_\mu[\mathbb{B}_{\Phi}]$ | the five frame basis operators, $iR_{\vec e_x}$, $iL_{\vec e_k}R_{\vec e_y}$ and $-iR_{\vec e_z}$; the frame is $\mathbb{B}_{\Phi}$ and the index is low |
 | $\mathrm{axf}$ | the label of the coefficient basis $(e_t,\vec e_x,\vec e_y,\vec e_z)$ |
 | $\mathrm{pau}$ | the label of the Pauli display, the Peirce frame of the root $i\vec e_z$ |
-| $\langle\tilde Q\rangle_\natural$ | the natural norm, $Q_t^2+Q_x^2+Q_y^2+Q_z^2$; its square is the determinant of the left array |
+| $\langle\tilde Q\rangle_\natural$ | the quaternion norm, $Q_t^2+Q_x^2+Q_y^2+Q_z^2$; its square is the determinant of the left array |
 | the chain | the constructions from the Pauli triplet to the two blocks, each used only where it is the subject |
 
 ## Further Reading

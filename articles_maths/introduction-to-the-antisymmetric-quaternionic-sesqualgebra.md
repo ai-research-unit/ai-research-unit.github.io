@@ -84,7 +84,7 @@ The symmetry is the antisymmetry of the block read through the conjugate of the 
 
 *Proof.* A value of the block is pure vector, while a general $\tilde Q$ has a scalar part; for $\tilde Q=e_t$ every left value $\tilde E\diamond e_t$ is zero, so no $\tilde E$ can reproduce $e_t$. The same argument on the right.
 
-The absence of a unit is shared with the other seven parts of the twelve: of the twelve operations, only the plain product and the symmetric plain product carry a two-sided unit, and only the natural product and the plain sesquilinear product carry a one-sided one.
+The absence of a unit is shared with the other seven parts of the twelve: of the twelve operations, only the plain product and the symmetric plain product carry a two-sided unit, and only the quaternionic product and the plain sesquilinear product carry a one-sided one.
 
 ### The Sixteen Products of the Basis
 

@@ -721,7 +721,7 @@ The classification is a map, not a derivation. It adds no physics, and it leaves
 | $\mathbb{B}_{\Psi}$ and $\mathbb{B}_{\Phi}$ | Hermitian (informational) and anti-Hermitian (material) sectors |
 | $X$ | a nilpotent, $X^2=0$, $X\neq0$; pure when it has no scalar part |
 | $\tilde\Pi$ | a state, $\tilde\Pi^2=\tilde\Pi$ |
-| $\langle\tilde Q\rangle_{\natural}$ | the natural norm $\sum_\mu Q_\mu^2$; the element spelling is $\tilde Q\tilde Q^{\natural}=\langle\tilde Q\rangle_{\natural}e_t$ |
+| $\langle\tilde Q\rangle_{\natural}$ | the biquaternion norm $\sum_\mu Q_\mu^2$; the element spelling is $\tilde Q\tilde Q^{\natural}=\langle\tilde Q\rangle_{\natural}e_t$ |
 | $a,a^\dagger$ | the abstract one-mode annihilation and creation operators; $a=X$, $a^\dagger=X^*$ |
 | $X,X^*$ | the canonical pair, $\tfrac12(i\vec e_x-\vec e_y)$ and $\tfrac12(i\vec e_x+\vec e_y)$ |
 | $\tilde\Pi_\pm$ | the two rungs, $\tfrac12(e_t\pm i\vec e_z)$ |

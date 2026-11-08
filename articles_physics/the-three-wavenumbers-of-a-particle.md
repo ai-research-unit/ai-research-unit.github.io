@@ -35,7 +35,7 @@ k_{t}^{\prime}=\frac{p_{t}^{\prime}}{\hbar}=\frac{E}{\hbar\,c},
 \vec k_{\Phi}=\frac{\vec p_{\Phi}}{\hbar}=\frac{\gamma m}{\hbar}\,\vec v .
 $$
 
-That matching is the whole deduction: the coordinates of the quotient are the coordinates of the momentum, divided by $\hbar$, in the same slot. The vector part has a modulus, $k_{\Phi}:=\lvert\vec k_{\Phi}\rvert$, and the element has a natural norm, $-\langle\tilde K_{\Phi}\rangle_{\natural}=k_m^{2}$ with $k_m=m\,c/\hbar$ — so the third number is read off the quotient too, as the value its two coordinates must satisfy.
+That matching is the whole deduction: the coordinates of the quotient are the coordinates of the momentum, divided by $\hbar$, in the same slot. The vector part has a modulus, $k_{\Phi}:=\lvert\vec k_{\Phi}\rvert$, and the element has a biquaternion norm, $-\langle\tilde K_{\Phi}\rangle_{\natural}=k_m^{2}$ with $k_m=m\,c/\hbar$ — so the third number is read off the quotient too, as the value its two coordinates must satisfy.
 
 **The division changes the unit and nothing else.** $\hbar$ commutes with every coefficient, is fixed by all four involutions, and moves no element from one sector into another. The momentum is anti-Hermitian, so the quotient is anti-Hermitian, and $\tilde K_{\Phi}$ stays in $\mathbb{B}_{\Phi}$ where $\tilde P_{\Phi}$ was. What changes is the dimension, from $\mathsf{M}\,\mathsf{L}\,\mathsf{T}^{-1}$ to $\mathsf{L}^{-1}$.
 

@@ -110,7 +110,7 @@ The proposition is the exact biquaternion form of the classical unitarity of the
 
 ### The Quaternion Conjugation Is a Different Statement
 
-The biquaternion norm of the kernel is the natural square, $\langle \chi_\omega\rangle_{\natural}=\chi_\omega\chi_\omega^{\natural}=(\cos^{2}\theta+\sin^{2}\theta)e_t=e_t$ for every pure root — the real and the genuinely complex — and it is not the identity only for the scalar imaginary. The two unitarity statements must therefore be kept apart:
+The biquaternion norm of the kernel is the quaternionic square, $\langle \chi_\omega\rangle_{\natural}=\chi_\omega\chi_\omega^{\natural}=(\cos^{2}\theta+\sin^{2}\theta)e_t=e_t$ for every pure root — the real and the genuinely complex — and it is not the identity only for the scalar imaginary. The two unitarity statements must therefore be kept apart:
 
 | Reading | Condition | Holds for |
 |---|---|---|

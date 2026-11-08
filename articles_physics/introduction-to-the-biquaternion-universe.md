@@ -88,7 +88,7 @@ In vacuum the local speed of light is the constant $c_0$; in a material medium i
 
 ## The Metric
 
-The natural quadratic form on the biquaternion algebra is the **biquaternion norm**
+The quadratic form on the biquaternion algebra is the **biquaternion norm**
 
 $$
 \langle d\tilde{R}\rangle_{\natural} = d\tilde{R}\, d\tilde{R}^{\natural} = \sum_{\mu\in\{t,x,y,z\}} (dR_\mu)^2,

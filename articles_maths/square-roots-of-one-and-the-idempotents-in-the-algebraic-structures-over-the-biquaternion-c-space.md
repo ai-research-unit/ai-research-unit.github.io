@@ -214,7 +214,7 @@ Zero for the two families of zero divisors, $e_t$ for the unit and the displaced
 
 *Proof.* The values of the central square are the previous theorem, and the criterion of invertibility is that the central square not vanish (*N-Regularity and N-Degeneracy in the Biquaternion Algebra*).
 
-The theorem is the sharpest separation of the sets. The trivial pair carries the unit $e_t$, so the smallest set, that of the natural product, has no zero divisor at all. The plain product and the general plain sesquilinear product have nontrivial idempotents, and every one of them is a zero divisor; the non-trivial plain family is a part of the zero-divisor cone that no other structure's idempotents reach. The displaced family is the only family of idempotents whose members are units, and it is a family of the general quaternionic sesquilinear product alone.
+The theorem is the sharpest separation of the sets. The trivial pair carries the unit $e_t$, so the smallest set, that of the quaternionic product, has no zero divisor at all. The plain product and the general plain sesquilinear product have nontrivial idempotents, and every one of them is a zero divisor; the non-trivial plain family is a part of the zero-divisor cone that no other structure's idempotents reach. The displaced family is the only family of idempotents whose members are units, and it is a family of the general quaternionic sesquilinear product alone.
 
 ### The Antipodal Idempotent
 
@@ -238,7 +238,7 @@ The four sets therefore occupy four different regions: the centre for the trivia
 
 *Proof.* The decomposition and the ideal structure are *Peirce Decompositions of the Biquaternion Algebra*; the display $\tilde\Pi(e_t-\tilde\Pi)=0$ of §*The Antipodal Idempotent* is the orthogonality the decomposition needs, and the associativity of the plain product is what makes the summands $\mathbb{B}\tilde\Pi$ and $\mathbb{B}(e_t-\tilde\Pi)$ left ideals, which the other three products fail.
 
-The comparison ends with the two readings of the idempotent. The Hermitian idempotents of the general plain sesquilinear product act as projections on the positive cone and on the Hermitian module (*Square Roots of One and the Idempotents of the General Plain Sesqualgebra*), and the displaced family is the family of idempotents of the fourth product whose central square is $e_t$; the natural product has the trivial pair alone.
+The comparison ends with the two readings of the idempotent. The Hermitian idempotents of the general plain sesquilinear product act as projections on the positive cone and on the Hermitian module (*Square Roots of One and the Idempotents of the General Plain Sesqualgebra*), and the displaced family is the family of idempotents of the fourth product whose central square is $e_t$; the quaternionic product has the trivial pair alone.
 
 ## Results
 
@@ -294,7 +294,7 @@ The table is the whole content of the halving map: the three parts of the roots 
 
 ## Summary
 
-The root of the central value $\lambda e_t$ in a structure is the solution of the equation $\tilde{Ζ}\star\tilde{Ζ}=\lambda e_t$, and this article reads the value $+1$. For the four general products the root sets are four different sets: the central pair $\pm e_t$ and the pure quadric $(\vec{Ζ},\vec{Ζ})=-1$ of the plain product, of real dimension four; the family $\tilde{Ζ}\tilde{Ζ}^{*}=e_t$, the group of the linear maps preserving the Hermitian form, of real dimension four; the quadric $C=+1$ of the natural product, of real dimension six; and the slope family at $\lvert t\rvert>1$ together with the central circle for the fourth product. A root of $+1$ is a unit of the algebra for the four general products, and the two symmetric sesquilinear structures lie outside that reading, the witness $\tfrac{1}{\sqrt2}(\vec e_x+i\vec e_y)$ being a root of $+1$ in $\tilde Q_1\bullet_{*}\tilde Q_2$ with $C=0$.
+The root of the central value $\lambda e_t$ in a structure is the solution of the equation $\tilde{Ζ}\star\tilde{Ζ}=\lambda e_t$, and this article reads the value $+1$. For the four general products the root sets are four different sets: the central pair $\pm e_t$ and the pure quadric $(\vec{Ζ},\vec{Ζ})=-1$ of the plain product, of real dimension four; the family $\tilde{Ζ}\tilde{Ζ}^{*}=e_t$, the group of the linear maps preserving the Hermitian form, of real dimension four; the quadric $C=+1$ of the quaternionic product, of real dimension six; and the slope family at $\lvert t\rvert>1$ together with the central circle for the fourth product. A root of $+1$ is a unit of the algebra for the four general products, and the two symmetric sesquilinear structures lie outside that reading, the witness $\tfrac{1}{\sqrt2}(\vec e_x+i\vec e_y)$ being a root of $+1$ in $\tilde Q_1\bullet_{*}\tilde Q_2$ with $C=0$.
 
 Among the twelve structures a root of $+1$ exists for the four bilateral structures, the two indefinite sesquilinear ones and the two definite sesquilinear ones; and the four antisymmetric structures read the value $0$ alone, their square vanishing or being pure. The root sets of the signed values are not a subject here beyond the remark that ends §*The Roots of One*, since in the six bilinear structures the multiplication by $i$ carries the root set of $+1$ onto that of $-1$, and the mechanism is not universal.
 

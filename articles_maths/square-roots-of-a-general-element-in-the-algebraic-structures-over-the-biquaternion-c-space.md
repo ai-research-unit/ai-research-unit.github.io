@@ -46,9 +46,9 @@ The square of the general plain sesquilinear product is Hermitian, and its scala
 
 The theorem is the sharpest existence statement of the four. The general plain sesquilinear product is the only one of the four with central values that have **no** root, and the only one whose root of $0$ is the element $0$ alone. The two facts have one source, the definiteness of $H$, which is also the source of the smallest square-zero set of the four.
 
-### The Natural Product: One Complex Equation
+### The Quaternionic Product: One Complex Equation
 
-The square of the natural product is already central,
+The square of the quaternionic product is already central,
 
 $$
 \tilde{Ζ}^{\natural}\tilde{Ζ}=C(\tilde{Ζ})e_t ,
@@ -56,11 +56,11 @@ $$
 
 so the equation $\tilde{Ζ}^{\natural}\tilde{Ζ}=\lambda e_t$ is the single complex equation $C(\tilde{Ζ})=\lambda$.
 
-**Theorem (the roots of the natural product).** The roots of the central value $\lambda$ in the general quaternionic bilinear product are exactly the solutions of $C(\tilde{Ζ})=\lambda$: the cone $C=0$ when $\lambda=0$, and the nondegenerate complex quadric $C=\lambda$ when $\lambda\neq0$. Each set is of real dimension six in $\mathbb{B}\cong\mathbb{R}^{8}$, and the set is non-empty for every $\lambda$, the element $\sqrt\lambda\,e_t$ being one of its members.
+**Theorem (the roots of the quaternionic product).** The roots of the central value $\lambda$ in the general quaternionic bilinear product are exactly the solutions of $C(\tilde{Ζ})=\lambda$: the cone $C=0$ when $\lambda=0$, and the nondegenerate complex quadric $C=\lambda$ when $\lambda\neq0$. Each set is of real dimension six in $\mathbb{B}\cong\mathbb{R}^{8}$, and the set is non-empty for every $\lambda$, the element $\sqrt\lambda\,e_t$ being one of its members.
 
 **Proof.** The square is central by *Introduction to the General Quaternionic Algebra* §*The Square Lies in the Scalar Line*, and the vanishing of the central square is the zero-divisor criterion (*Zero Divisors of the General Quaternionic Algebra*). The set $\{C=\lambda\}$ is a nondegenerate quadric in the four complex coordinates, of complex dimension three when $\lambda\neq0$ and a cone of the same dimension when $\lambda=0$, hence of real dimension six in both cases; and $C(\sqrt\lambda\,e_t)=\lambda$ by the definition of $C$.
 
-The natural product is the only one of the four whose root set is the solution of a single scalar equation, and the reason is the comparison table: the square of the natural product is the central square itself. Its roots of $0$ are the whole zero-divisor cone, the largest square-zero set of the four, and its roots of a non-zero value are quadrics, so that this product has a root of every central value without exception.
+The quaternionic product is the only one of the four whose root set is the solution of a single scalar equation, and the reason is the comparison table: the square of the quaternionic product is the central square itself. Its roots of $0$ are the whole zero-divisor cone, the largest square-zero set of the four, and its roots of a non-zero value are quadrics, so that this product has a root of every central value without exception.
 
 ### The General Quaternionic Sesquilinear Product: Every Real Value
 
@@ -189,7 +189,7 @@ The twelve root sets of the central value $\lambda e_t$ are collected below. The
 
 ### The Four Products Read at the Same Value
 
-**Theorem (the four root sets at a general value).** For every central value $\lambda e_t$ the four general products have four pairwise different root sets. The plain product answers with the two central roots $\pm\sqrt\lambda\,e_t$ together with the pure quadric $(\vec{Ζ},\vec{Ζ})=-\lambda$; the general plain sesquilinear product with the empty set, the origin, or the family of real dimension four; the natural product with the single level set $C=\lambda$; and the general quaternionic sesquilinear product with the family $\varrho(\vec u+it)$ at the slope of $\lambda$, together with the central circle when $\lambda$ is positive.
+**Theorem (the four root sets at a general value).** For every central value $\lambda e_t$ the four general products have four pairwise different root sets. The plain product answers with the two central roots $\pm\sqrt\lambda\,e_t$ together with the pure quadric $(\vec{Ζ},\vec{Ζ})=-\lambda$; the general plain sesquilinear product with the empty set, the origin, or the family of real dimension four; the quaternionic product with the single level set $C=\lambda$; and the general quaternionic sesquilinear product with the family $\varrho(\vec u+it)$ at the slope of $\lambda$, together with the central circle when $\lambda$ is positive.
 
 *Proof.* The four root sets are the four reductions of §*The Four General Products at a General Value*. They are non-empty on different sets of values and carry different dimensions, and the four descriptions are pairwise different at every value: at $\lambda=0$ they are the nilpotent cone of real dimension four, the origin alone, the cone $C=0$ of real dimension six, and the family of real dimension four. **The word is *differ*, not *coincide*.** The zero-divisor sets of the four general products are one set read four times, because the four products read the same norm (*Zero Divisors in the Algebraic Structures over the Biquaternion $\mathbb{C}$ Space* §*The Four General Products Coincide*); the root sets are not, because the square of a product is not the norm of a product.
 
@@ -265,9 +265,9 @@ The scaling is the reason the root sets of the bilateral structures at different
 
 ## Summary
 
-The root of the central value $\lambda e_t$ in a structure is the element whose square in that structure is the value, and the value is general. The four general products give four reductions: the plain product reduces to the pair $Ζ_t^{2}-(\vec{Ζ},\vec{Ζ})=\lambda$, $2Ζ_t\vec{Ζ}=0$; the general plain sesquilinear product to the equation whose scalar part is the non-negative $H$; the natural product to the single complex equation $C(\tilde{Ζ})=\lambda$; and the general quaternionic sesquilinear product to the equation whose scalar part is the indefinite Krein value $\Delta$.
+The root of the central value $\lambda e_t$ in a structure is the element whose square in that structure is the value, and the value is general. The four general products give four reductions: the plain product reduces to the pair $Ζ_t^{2}-(\vec{Ζ},\vec{Ζ})=\lambda$, $2Ζ_t\vec{Ζ}=0$; the general plain sesquilinear product to the equation whose scalar part is the non-negative $H$; the quaternionic product to the single complex equation $C(\tilde{Ζ})=\lambda$; and the general quaternionic sesquilinear product to the equation whose scalar part is the indefinite Krein value $\Delta$.
 
-The plain product has a root of every central value, its root set being the two central roots $\pm\sqrt\lambda\,e_t$ together with the pure quadric $(\vec{Ζ},\vec{Ζ})=-\lambda$, of real dimension four, which at $\lambda=0$ is the nilpotent cone and the origin. The general plain sesquilinear product refuses the non-real values and the negative reals, has the origin alone as its root of $0$ and the group $\mathrm{U}(2)$ as its root of $1$. The natural product has a root of every central value, the roots being the quadric $C=\lambda$ of real dimension six when $\lambda\neq0$ and the cone $C=0$ of the same dimension at $\lambda=0$; and the general quaternionic sesquilinear product refuses exactly the non-real values, with the family $\varrho(\vec u+it)$ of real dimension four as the root of a real value and the central circle added at a positive one.
+The plain product has a root of every central value, its root set being the two central roots $\pm\sqrt\lambda\,e_t$ together with the pure quadric $(\vec{Ζ},\vec{Ζ})=-\lambda$, of real dimension four, which at $\lambda=0$ is the nilpotent cone and the origin. The general plain sesquilinear product refuses the non-real values and the negative reals, has the origin alone as its root of $0$ and the group $\mathrm{U}(2)$ as its root of $1$. The quaternionic product has a root of every central value, the roots being the quadric $C=\lambda$ of real dimension six when $\lambda\neq0$ and the cone $C=0$ of the same dimension at $\lambda=0$; and the general quaternionic sesquilinear product refuses exactly the non-real values, with the family $\varrho(\vec u+it)$ of real dimension four as the root of a real value and the central circle added at a positive one.
 
 For all four general products the central square of a square is $C(\tilde{Ζ})^{2}$ or $\lvert C(\tilde{Ζ})\rvert^{2}$, so a root of a non-zero central value is a unit and a non-zero root of $0$ is a zero divisor; the two symmetric sesquilinear structures are the exception, and the witness $\tfrac{1}{\sqrt2}(\vec e_x+i\vec e_y)$ is a root of a non-zero value with $C=0$ there.
 

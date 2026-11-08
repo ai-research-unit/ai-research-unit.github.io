@@ -147,7 +147,7 @@ The characteristic polynomial $X^2-2tX+M$ separates the three sectors; the minim
 | $\mathbb{C}=\mathbb{R}[i]/(i^2+1)$ | the complex algebra |
 | $z=t+bi$ | a complex number |
 | $\bar z=t-bi$ | complex conjugation |
-| $M(z)=\lvert z\rvert^2=z\bar z=t^2+b^2$ | the modulus squared, the natural norm |
+| $M(z)=\lvert z\rvert^2=z\bar z=t^2+b^2$ | the modulus squared |
 | $B(z)=b^2$ | the square of the imaginary part |
 | modulus-regular / degenerate | $M\neq0$ / $M=0$ |
 | spectrally regular / degenerate | $B\neq0$ / $B=0$ |

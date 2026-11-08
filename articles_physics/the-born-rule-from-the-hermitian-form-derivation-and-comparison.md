@@ -104,7 +104,7 @@ Three properties single it out. **Invariance:** under $*$-unitary conjugation $\
 
 ### It Is Not the Biquaternion Norm
 
-The other natural quadratic form on $\mathbb{B}_{\Psi}$ is the **biquaternion norm**
+The other quadratic form on $\mathbb{B}_{\Psi}$ is the **biquaternion norm**
 
 $$
 \langle\tilde R_\Psi\rangle_{\natural} = \langle\tilde R_\Psi,\tilde R_\Psi\rangle_{\natural}=\tilde R_\Psi\tilde R_\Psi^{\natural}=(r_t^2-|\vec r_\Psi|^2)e_t,

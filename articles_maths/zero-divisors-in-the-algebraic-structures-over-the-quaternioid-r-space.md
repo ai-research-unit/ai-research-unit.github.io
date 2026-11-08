@@ -60,7 +60,7 @@ $$
 
 the quaternion form of *The 2 Forms over the Quaternioid $\mathbb{R}$ Space*. The norm is the form at the two equal arguments, $\langle\tilde q\rangle_{\natural}=q_t^{2}+q_x^{2}+q_y^{2}+q_z^{2}$; the quaternion conjugation sends $\vec q$ to $-\vec q$, so $\langle\tilde q^{\natural}\rangle_{\natural}=\langle\tilde q\rangle_{\natural}$.
 
-**The zero-divisor set is empty.** The natural product is the algebra product with the quaternion conjugation in the first slot, so its left multiplication by $\tilde q$ is the left multiplication of the algebra by $\tilde q^{\natural}$; the kernel is $\{0\}$ for $\tilde q\neq0$ (*Zero Divisors of the Quaternion Algebra*). The element is invertible, with the two-sided solution $(\tilde q^{-1})^{\natural}$ of the inverse equations.
+**The zero-divisor set is empty.** The quaternionic product is the algebra product with the quaternion conjugation in the first slot, so its left multiplication by $\tilde q$ is the left multiplication of the algebra by $\tilde q^{\natural}$; the kernel is $\{0\}$ for $\tilde q\neq0$ (*Zero Divisors of the Quaternion Algebra*). The element is invertible, with the two-sided solution $(\tilde q^{-1})^{\natural}$ of the inverse equations.
 
 The element $e_t$ is a left unit alone, and every nonzero element has the two-sided solution $(\tilde q^{-1})^{\natural}$ of the inverse equations; the invertible elements are $\mathbb{H}\setminus\{0\}$, and the complement of the empty zero-divisor set is that set together with the origin, the whole space.
 
@@ -88,7 +88,7 @@ $$
 \boxed{\;\{\tilde q_1\neq0:\tilde q_1\text{ admits an annihilating factor in }\star\}=\varnothing \qquad\text{for }\star=\tilde q_1^{\natural}\tilde q_2\text{ and }\star=\tilde q_1\tilde q_2\;}.
 $$
 
-*Proof.* The natural product is the algebra product with the quaternion conjugation in the first slot, so its left multiplication by $\tilde q_1$ is the left multiplication of the algebra by $\tilde q_1^{\natural}$, and the conjugation is a bijection that leaves the norm unchanged. The kernel of the algebra left multiplication by $\tilde q_1^{\natural}$ is $\{0\}$, the element $\tilde q_1^{\natural}$ being nonzero; hence a nonzero element admits no annihilating factor in the general quaternionic product. For the algebra product this is the division property itself: from $\tilde q_1\tilde q_2=0$ with $\tilde q_1\neq0$ one multiplies by $\tilde q_1^{-1}$ and gets $\tilde q_2=0$.
+*Proof.* The quaternionic product is the algebra product with the quaternion conjugation in the first slot, so its left multiplication by $\tilde q_1$ is the left multiplication of the algebra by $\tilde q_1^{\natural}$, and the conjugation is a bijection that leaves the norm unchanged. The kernel of the algebra left multiplication by $\tilde q_1^{\natural}$ is $\{0\}$, the element $\tilde q_1^{\natural}$ being nonzero; hence a nonzero element admits no annihilating factor in the general quaternionic product. For the algebra product this is the division property itself: from $\tilde q_1\tilde q_2=0$ with $\tilde q_1\neq0$ one multiplies by $\tilde q_1^{-1}$ and gets $\tilde q_2=0$.
 
 | product | left condition | right condition | the set |
 |---|---|---|---|
@@ -150,15 +150,15 @@ The square of a pure element is a nonzero real multiple of $e_t$ and does not va
 
 The sets of this article are read over $\mathbb{R}$, where the norm is definite and the cone is the apex alone. The comparisons with the complex case isolate what the change of scalars supplies, and they are stated here because the real space is the base case on which the complex cone table rests.
 
-**Proposition (over $\mathbb{R}$ the two squares vanish together).** The square of the algebra product and the natural square have the same vanishing set, the origin:
+**Proposition (over $\mathbb{R}$ the two squares vanish together).** The square of the algebra product and the quaternionic square have the same vanishing set, the origin:
 
 $$
 \boxed{\;\tilde q^{2}=0\iff\tilde q=0,\qquad \tilde q\tilde q^{\natural}=\langle\tilde q\rangle_{\natural}e_t=0\iff\tilde q=0\;}.
 $$
 
-Over $\mathbb{C}$ the two separate: the sesquilinear square $\tilde Q\star\tilde Q=\tilde Q\tilde Q^{*}$ still vanishes only at the origin, but the natural square $\tilde Q\tilde Q^{\natural}$ vanishes exactly on the zero-divisor cone (*The Squares and the Positive Cone of the Biquaternion Sesqualgebra*).
+Over $\mathbb{C}$ the two separate: the sesquilinear square $\tilde Q\star\tilde Q=\tilde Q\tilde Q^{*}$ still vanishes only at the origin, but the quaternionic square $\tilde Q\tilde Q^{\natural}$ vanishes exactly on the zero-divisor cone (*The Squares and the Positive Cone of the Biquaternion Sesqualgebra*).
 
-*Proof.* The norm is multiplicative, $\langle\tilde q_1\tilde q_2\rangle_{\natural}=\langle\tilde q_1\rangle_{\natural}\langle\tilde q_2\rangle_{\natural}$ (*The 2 Algebraic Norms over the Quaternioid $\mathbb{R}$ Space*), so $\langle\tilde q^{2}\rangle_{\natural}=\langle\tilde q\rangle_{\natural}^{2}$, and $\tilde q^{2}=0$ forces $\langle\tilde q\rangle_{\natural}=0$; the norm is a sum of four squares of real numbers, so $\tilde q=0$. The natural square is $\tilde q\tilde q^{\natural}=\langle\tilde q\rangle_{\natural}e_t$ and vanishes under the same condition. **The one equation that does not vanish off the origin is the pair**, which is the criterion of $\tilde Q_1\bullet\tilde Q_2$.
+*Proof.* The norm is multiplicative, $\langle\tilde q_1\tilde q_2\rangle_{\natural}=\langle\tilde q_1\rangle_{\natural}\langle\tilde q_2\rangle_{\natural}$ (*The 2 Algebraic Norms over the Quaternioid $\mathbb{R}$ Space*), so $\langle\tilde q^{2}\rangle_{\natural}=\langle\tilde q\rangle_{\natural}^{2}$, and $\tilde q^{2}=0$ forces $\langle\tilde q\rangle_{\natural}=0$; the norm is a sum of four squares of real numbers, so $\tilde q=0$. The quaternionic square is $\tilde q\tilde q^{\natural}=\langle\tilde q\rangle_{\natural}e_t$ and vanishes under the same condition. **The one equation that does not vanish off the origin is the pair**, which is the criterion of $\tilde Q_1\bullet\tilde Q_2$.
 
 **The cone over $\mathbb{R}$ belongs to the plain form, not to the norm.** The plain bilinear form
 
@@ -194,7 +194,7 @@ The one-sided criterion is the substitute for the classical equivalence in the g
 
 A zero divisor is defined by an equation that names a product, so the three companion products of the quaternion space define three zero-divisor sets. The set of the general quaternionic product is empty: the norm $\langle\tilde q\rangle_{\natural}=q_t^{2}+q_x^{2}+q_y^{2}+q_z^{2}$ is positive definite, it vanishes at the origin alone, and every nonzero element has the two-sided solution $(\tilde q^{-1})^{\natural}$ of the inverse equations. The symmetric plain structure has the punctured vector subspace, the plane of the pure elements, of real dimension three, and the antisymmetric plain structure has the whole punctured space. The empty set is the zero-divisor set of the general quaternionic product alone among the three, and it is contained in all three, so that it is their common core; the same empty set is the zero-divisor set of the algebra product of the space, owned by *Zero Divisors of the Quaternion Algebra*.
 
-Read against the complex case, the emptiness has one cause. The norm is positive definite over $\mathbb{R}$, so both the square of the algebra product and the natural square vanish at the origin alone, whereas over $\mathbb{C}$ the natural square vanishes on the whole zero-divisor cone. The cone over $\mathbb{R}$ belongs to the plain bilinear form $\langle\cdot,\cdot\rangle$ of signature $(1,3)$, a real double cone of real dimension three with link $S^{2}\sqcup S^{2}$, and not to the norm; the units are every nonzero element, a group homeomorphic to $S^{3}$ with $\pi_x=0$, against the complex units $S^{1}\times S^{3}$ with $\pi_x\cong\mathbb{Z}$; and the split siblings, whose norm is indefinite, have a punctured cone for a zero-divisor set. The cone is therefore a property of a non-definite signature rather than of the multiplication, and the quaternion space is the definite base case of the table.
+Read against the complex case, the emptiness has one cause. The norm is positive definite over $\mathbb{R}$, so both the square of the algebra product and the quaternionic square vanish at the origin alone, whereas over $\mathbb{C}$ the quaternionic square vanishes on the whole zero-divisor cone. The cone over $\mathbb{R}$ belongs to the plain bilinear form $\langle\cdot,\cdot\rangle$ of signature $(1,3)$, a real double cone of real dimension three with link $S^{2}\sqcup S^{2}$, and not to the norm; the units are every nonzero element, a group homeomorphic to $S^{3}$ with $\pi_x=0$, against the complex units $S^{1}\times S^{3}$ with $\pi_x\cong\mathbb{Z}$; and the split siblings, whose norm is indefinite, have a punctured cone for a zero-divisor set. The cone is therefore a property of a non-definite signature rather than of the multiplication, and the quaternion space is the definite base case of the table.
 
 ## Summary of Notation
 

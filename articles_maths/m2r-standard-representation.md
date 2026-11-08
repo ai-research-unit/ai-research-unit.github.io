@@ -17,7 +17,7 @@ $$
 \vec e_x\vec e_y=\vec e_z,\qquad \vec e_y\vec e_z=-\vec e_x,\qquad \vec e_z\vec e_x=\vec e_y,
 $$
 
-and the reversed products opposite, so $\vec e_y\vec e_x=-\vec e_z$, $\vec e_z\vec e_y=\vec e_x$, $\vec e_x\vec e_z=-\vec e_y$. An element is $\tilde q=q_te_t+q_x\vec e_x+q_y\vec e_y+q_z\vec e_z$, its scalar part is $q_t$, its pure part is $\vec v=q_x\vec e_x+q_y\vec e_y+q_z\vec e_z$, and its natural norm is
+and the reversed products opposite, so $\vec e_y\vec e_x=-\vec e_z$, $\vec e_z\vec e_y=\vec e_x$, $\vec e_x\vec e_z=-\vec e_y$. An element is $\tilde q=q_te_t+q_x\vec e_x+q_y\vec e_y+q_z\vec e_z$, its scalar part is $q_t$, its pure part is $\vec v=q_x\vec e_x+q_y\vec e_y+q_z\vec e_z$, and its split-quaternion norm is
 
 $$
 \langle\tilde q\rangle_{\natural}=q_t^2+q_x^2-q_y^2-q_z^2 .
@@ -364,7 +364,7 @@ the Möbius transformation of the projective line, and the point $t=-d/c$ is sen
 |---|---|---|
 | $\mathsf{M}_2$ | the defining isomorphism $\mathbb{H}_{\mathrm{spl}}\to M_2(\mathbb{R})$ | this article |
 | $J,K,D$ | the images of $\vec e_x,\vec e_y,\vec e_z$ | this article |
-| $\langle\tilde q\rangle_{\natural}$ | the natural norm $q_t^2+q_x^2-q_y^2-q_z^2$ | *Split-Quaternion Norm and Invertibility* |
+| $\langle\tilde q\rangle_{\natural}$ | the split-quaternion norm $q_t^2+q_x^2-q_y^2-q_z^2$ | *Split-Quaternion Norm and Invertibility* |
 | $\tilde q^{\natural}$ | the conjugation $q_t-q_x\vec e_x-q_y\vec e_y-q_z\vec e_z$ | *Split-Quaternion Subspaces and the Involutions* |
 | $L_{\tilde q},R_{\tilde q}$ | left and right multiplication, $4\times4$ matrices | this article |
 | $\tilde\pi_\pm$ | the idempotents $\tfrac12(e_t\pm\vec e_y)$ | this article |

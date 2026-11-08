@@ -217,7 +217,7 @@ $$
 \qquad
 (-i\tilde K_{\Phi})^{\natural}(-i\tilde K_{\Phi})=k_{t}^{\prime\,2}-\lvert\vec k_\Phi\rvert^2 .
 $$
-The identity is the natural norm of the symbol, and it is the symbol of the d'Alembertian: recomputed, the product is $3$ at $k=(2,1,0,0)$ and $0$ at $k=(1,1,0,0)$, matching $k_{t}^{\prime\,2}-\lvert\vec k_\Phi\rvert^2$ in both cases.
+The identity is the biquaternion norm of the symbol, and it is the symbol of the d'Alembertian: recomputed, the product is $3$ at $k=(2,1,0,0)$ and $0$ at $k=(1,1,0,0)$, matching $k_{t}^{\prime\,2}-\lvert\vec k_\Phi\rvert^2$ in both cases.
 
 **The determinant of the gradient.** Left multiplication by $-i\tilde K_{\Phi}$ is a complex-linear operator on the four coefficients, and its determinant is the square of the scalar symbol,
 $$
@@ -358,7 +358,7 @@ The Fujikawa method derives the axial anomaly as the Jacobian of the fermion mea
 
 **The one thing the algebra does not give.** The regulated trace that produces the four-index symbol in the standard computation vanishes here identically: $\mathrm{tr}(\ell_h\rho_\omega)=0$ for every element, so all $24$ orders of four distinct units contribute exactly zero. The coefficient is therefore transcribed, $a=-(ϙ^2/32\pi^2)\epsilon_{\mu\nu\rho\sigma}F_{\mu\nu}F_{\rho\sigma}$, and the article states it as transcribed.
 
-**What the algebra gives in its place.** The symbol $-i\tilde K_{\Phi}=k_{t}^{\prime}-i\vec k_\Phi$, whose natural norm is $k_{t}^{\prime\,2}-\lvert\vec k_\Phi\rvert^2$ and whose left action on the six bivector components has rank four and a two-dimensional kernel on the null cone, with $f^2=0$ on the whole kernel — five null wave vectors, residual below $2\times10^{-14}$; and the contraction $\epsilon_{\mu\nu\rho\sigma}F_{\mu\nu}F_{\rho\sigma}=+8\vec E\cdot\vec B$, so that
+**What the algebra gives in its place.** The symbol $-i\tilde K_{\Phi}=k_{t}^{\prime}-i\vec k_\Phi$, whose biquaternion norm is $k_{t}^{\prime\,2}-\lvert\vec k_\Phi\rvert^2$ and whose left action on the six bivector components has rank four and a two-dimensional kernel on the null cone, with $f^2=0$ on the whole kernel — five null wave vectors, residual below $2\times10^{-14}$; and the contraction $\epsilon_{\mu\nu\rho\sigma}F_{\mu\nu}F_{\rho\sigma}=+8\vec E\cdot\vec B$, so that
 $$
 \boxed{\;A(x)=-\frac{ϙ^2}{16\pi^2}\,\epsilon_{\mu\nu\rho\sigma}F_{\mu\nu}F_{\rho\sigma}
 = -\frac{ϙ^2}{2\pi^2}\,\vec E\cdot\vec B=-\frac{ϙ^2}{2\pi^2}\,I_2\;},

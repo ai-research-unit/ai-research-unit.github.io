@@ -174,7 +174,7 @@ Two companion structures have a root of $+1$, the pair $\pm e_t$ for the symmetr
 
 ### The Contrast with the Biquaternion Case
 
-Over $\mathbb{C}$ the same questions have larger answers, and the difference is the field. The biquaternion plain product carries a two-parameter family and a four-parameter family of nontrivial idempotents, and its natural square vanishes on the whole zero-divisor cone; over $\mathbb{R}$ there is no scalar imaginary, so the plain form is negative definite on the vector subspace and the equation $\tilde\pi^{2}=\tilde\pi$ has only its central solutions, $0$ and $e_t$. The collapse is the same one the chapter records for the roots of a central value, in *Square Roots of a General Element in the Algebraic Structures over the Quaternioid $\mathbb{R}$ Space*, where the four-parameter root sets of the biquaternion sesqualgebras fall to the origin alone over $\mathbb{R}$.
+Over $\mathbb{C}$ the same questions have larger answers, and the difference is the field. The biquaternion plain product carries a two-parameter family and a four-parameter family of nontrivial idempotents, and its quaternionic square vanishes on the whole zero-divisor cone; over $\mathbb{R}$ there is no scalar imaginary, so the plain form is negative definite on the vector subspace and the equation $\tilde\pi^{2}=\tilde\pi$ has only its central solutions, $0$ and $e_t$. The collapse is the same one the chapter records for the roots of a central value, in *Square Roots of a General Element in the Algebraic Structures over the Quaternioid $\mathbb{R}$ Space*, where the four-parameter root sets of the biquaternion sesqualgebras fall to the origin alone over $\mathbb{R}$.
 
 ## Summary
 

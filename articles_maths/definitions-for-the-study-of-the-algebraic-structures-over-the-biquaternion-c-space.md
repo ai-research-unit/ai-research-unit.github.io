@@ -114,7 +114,7 @@ The origin and, when the product is unital, the unit are idempotents of every pr
 
 **Definition (Peirce decomposition).** Let the product be associative with unit, and let $\tilde\Pi$ be an idempotent. The **Peirce decomposition** of the algebra relative to $\tilde\Pi$ is the splitting of the regular module into the four pieces indexed by the pair $(\tilde\Pi,1-\tilde\Pi)$; its two algebraic norm pieces are the **corner algebras** $\tilde\Pi\star\mathbb{B}\star\tilde\Pi$ and $(1-\tilde\Pi)\star\mathbb{B}\star(1-\tilde\Pi)$.
 
-The idempotent is the root of $+1$ in the scaled sense of §6, and the idempotent sets of the four general products differ: the plain product has the family $\tfrac12(e_t+\tilde{Ζ} i)$ over the roots $\tilde{Ζ}$ of $-1$, the plain sesquilinear product has the Hermitian idempotents, the natural product has the trivial idempotents alone, and the quaternionic sesquilinear product has the family $-\tfrac12e_t+\tfrac{\sqrt3}{2}\vec u$. The table is in *Idempotents in the Algebraic Structures over the Biquaternion $\mathbb{C}$ Space*, §*The Four Sets*; the classification for the plain product is *Idempotents of the General Plain Algebra*, the general theory is *Unital Algebras*, and the Peirce decomposition of the biquaternion algebra is *Peirce Decompositions of the Biquaternion Algebra*.
+The idempotent is the root of $+1$ in the scaled sense of §6, and the idempotent sets of the four general products differ: the plain product has the family $\tfrac12(e_t+\tilde{Ζ} i)$ over the roots $\tilde{Ζ}$ of $-1$, the plain sesquilinear product has the Hermitian idempotents, the quaternionic product has the trivial idempotents alone, and the quaternionic sesquilinear product has the family $-\tfrac12e_t+\tfrac{\sqrt3}{2}\vec u$. The table is in *Idempotents in the Algebraic Structures over the Biquaternion $\mathbb{C}$ Space*, §*The Four Sets*; the classification for the plain product is *Idempotents of the General Plain Algebra*, the general theory is *Unital Algebras*, and the Peirce decomposition of the biquaternion algebra is *Peirce Decompositions of the Biquaternion Algebra*.
 
 ---
 
@@ -137,7 +137,7 @@ The square-zero sets of the four general products differ, and the difference is 
 | $\tilde Q^{\natural}\tilde Q_2$ | the whole zero-divisor cone $\mathcal{N}$ |
 | $\tilde Q^{\natural}\tilde Q_2^{*}$ | the solutions of $\overline{\tilde Q}\tilde Q=0$ |
 
-The table is verified on the squares and is the table of *Zero Divisors in the Algebraic Structures over the Biquaternion $\mathbb{C}$ Space*, where the four sets, their chain $Z_1\subseteq Z_2$, $Z_4\subseteq Z_2$, $Z_3=\{0\}$ and their incomparable pair are proved. **The implication "nilpotent implies zero divisor" is not uniform**: it holds for the plain product and the natural product, and it fails for the plain sesquilinear product, whose only square-zero element is the origin. It is a statement of a product and not of the twelve.
+The table is verified on the squares and is the table of *Zero Divisors in the Algebraic Structures over the Biquaternion $\mathbb{C}$ Space*, where the four sets, their chain $Z_1\subseteq Z_2$, $Z_4\subseteq Z_2$, $Z_3=\{0\}$ and their incomparable pair are proved. **The implication "nilpotent implies zero divisor" is not uniform**: it holds for the plain product and the quaternionic product, and it fails for the plain sesquilinear product, whose only square-zero element is the origin. It is a statement of a product and not of the twelve.
 
 ---
 

@@ -8,7 +8,7 @@ $$
 |z|^2=z\bar z=t^2+b^2,\qquad z=t+bi,
 $$
 
-it is the natural norm, it is multiplicative, and it vanishes only at the origin. The **square of the imaginary part** is $b^2$; it carries no real term, it is not multiplicative, and it vanishes exactly on the real axis. The first decides invertibility, the second the separation of eigenvalues. This article studies the second condition and the eigenvalue problem that produces it.
+it is the norm of the layer, it is multiplicative, and it vanishes only at the origin. The **square of the imaginary part** is $b^2$; it carries no real term, it is not multiplicative, and it vanishes exactly on the real axis. The first decides invertibility, the second the separation of eigenvalues. This article studies the second condition and the eigenvalue problem that produces it.
 
 The eigenvalue problem is posed on the regular representation: $L_z$ is multiplication by $z$ on $\mathbb{C}\cong\mathbb{R}^2$, extended complex-linearly to $V_{\mathbb{C}}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{C}$. In the real basis $1,i$ its matrix is the Cayley matrix
 
@@ -172,7 +172,7 @@ Every element of $\mathbb{C}$ is semisimple. The minimal polynomial is $X-t$ on 
 | $\mathbb{C}=\mathbb{R}[i]/(i^2+1)$ | the complex algebra, basis $1,i$ |
 | $z=t+bi$ | a complex number, $t=\operatorname{Re}z$, $b=\operatorname{Im}z$ |
 | $\bar z=t-bi$ | complex conjugation |
-| $\lvert z\rvert^2=z\bar z=t^2+b^2$ | the modulus squared, the natural norm |
+| $\lvert z\rvert^2=z\bar z=t^2+b^2$ | the modulus squared |
 | $\lvert z\rvert=\sqrt{t^2+b^2}$ | the modulus |
 | $L_z(v)=zv$ | the left regular representation |
 | $V_{\mathbb{C}}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{C}$ | the complexified regular representation |

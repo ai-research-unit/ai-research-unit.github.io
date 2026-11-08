@@ -113,7 +113,7 @@ The reading is the instrument pair: the interval tells which events can be causa
 
 ### The Causality Band Splits the Interval
 
-The neighbour that carries the interval makes the split the probability band cannot make. In the general quaternionic algebra the product is $\tilde Q_1\star\tilde Q_2=\tilde Q_1^{\natural}\tilde Q_2$, and the natural form is $\langle\tilde Q_1,\tilde Q_2\rangle_{\natural}=\mathrm{Sc}(\tilde Q_1\tilde Q_2^{\natural})$. The adjoint of the plain left multiplication $L_{\tilde Q}(X)=\tilde Q X$ is $L_{\tilde Q^{\natural}}$.
+The neighbour that carries the interval makes the split the probability band cannot make. In the general quaternionic algebra the product is $\tilde Q_1\star\tilde Q_2=\tilde Q_1^{\natural}\tilde Q_2$, and the quaternion form is $\langle\tilde Q_1,\tilde Q_2\rangle_{\natural}=\mathrm{Sc}(\tilde Q_1\tilde Q_2^{\natural})$. The adjoint of the plain left multiplication $L_{\tilde Q}(X)=\tilde Q X$ is $L_{\tilde Q^{\natural}}$.
 
 **Proposition (the type criterion).** The left multiplication $L_{\tilde Q}$ is self-adjoint exactly when $\tilde Q$ is central, and skew-adjoint exactly when $\tilde Q$ is pure.
 
