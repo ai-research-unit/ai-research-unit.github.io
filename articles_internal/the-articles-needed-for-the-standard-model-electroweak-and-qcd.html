@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Articles Needed for the Standard Model, Electroweak Theory and QCD — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-articles-needed-for-the-standard-model-electroweak-theory-and-qcd"><strong>The Articles Needed for the Standard Model, Electroweak Theory and QCD</strong></h1>
+<h2 id="scope">Scope</h2>
+<p>This file is an <strong>internal working list</strong>, not a published article and not an entry of a menu. It names the articles that must be written for the corpus to hold the Standard Model — its electroweak sector and its strong sector — <strong>in detail</strong>, in the corpus's own language and notation.</p>
+<p>The subject is set by three existing articles, which are boundary maps and not expositions: <em>The Standard Model under the Biquaternion Framework — A Research Agenda</em>, <em>Electroweak Theory under the Biquaternion Framework — A Research Agenda</em>, and <em>Quantum Chromodynamics under the Biquaternion Framework — A Research Agenda</em>. Each states what the framework reaches and what it does not. None of the three carries the material at working length: the gauge group written out, the fermion table with its hypercharge column, the four pieces of the Lagrangian, the scalar doublet, the Yukawa matrices, the QCD vertices, the parton model. This list is the plan for that missing material.</p>
+<p>The reference used to build the checklist is the extracted text of a twenty-page capture of the Wikipedia article "Standard Model", added to the project as <code>Standard_Model.pdf</code>: its particle table, its group, its four Lagrangians, its table of nineteen parameters, and its list of open problems. The page is a working checklist and not a citation; a stable review replaces it in any <code>Further Reading</code>.</p>
+<p>Nineteen articles are proposed. They are staged, because the later stages quote the earlier ones.</p>
+<h2 id="the-standing-rule">The Standing Rule</h2>
+<p>Every article on this list transcribes standard theory. None derives it. Each therefore opens with a sentence that fixes its standing, in the manner already used by <em>SU(3) Representations and the Gell-Mann–Okubo Mass Formula in Biquaternionic Form</em>, which states at the head that its $\mathrm{SU}(3)$ "is <strong>not an algebra of $\mathbb{B}$</strong>" but external machinery.</p>
+<p>The model sentence, adapted per article:</p>
+<blockquote>
+<p>The material below is standard theory, recorded in the corpus's language and notation. It is <strong>standard input</strong>, not a framework result: no object in this section is derived from the biquaternion algebra, and the article says so wherever an object could be mistaken for a derivation.</p>
+</blockquote>
+<p>Three consequences follow, and they are the only editorial constraints.</p>
+<ul>
+<li>The three agendas forbid one thing only: presenting imported structure as a derivation. An exposition is not that, so nothing in the corpus opposes the work.</li>
+<li>Each article closes with a section of the corpus's usual form — <em>What the Algebra Supplies and What It Imports</em> — so the boundary is stated inside the article and not only in the agenda.</li>
+<li>A number is never presented as an output. Measured values are labelled with their scheme: $\overline{\mathrm{MS}}$ at $\mu=m_Z$, on-shell, or the pion-decay constant, as the case requires.</li>
+</ul>
+<h2 id="what-the-corpus-already-holds">What the Corpus Already Holds</h2>
+<p>The corpus is not empty on these subjects. It holds the machinery and a large part of the single-particle content. The list below is therefore a list of <strong>gaps</strong>, and it was built by putting the reference's content beside the 420 physics articles.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Block</th>
+<th>Articles that already carry it</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Gauge machinery</td>
+<td><em>The Gauge Principle</em>, <em>The Covariant Derivative and Gauge Connection</em>, <em>Gauge Curvature and the Bianchi Identity</em>, <em>Gauge Transformations of the First and Second Kind</em>, <em>Non-Abelian Gauge Fields</em>, <em>The Yang–Mills Equation</em>, <em>The Yang–Mills Path Integral and the Faddeev–Popov Procedure</em>, <em>BRST Symmetry</em>, <em>Lattice Gauge Theory</em>, <em>Wilson Loops</em>, <em>Gauge Redundancy and the Information in the Gauge Orbit</em>, <em>The Hopf Fibration and the Biquaternion Gauge Bundle</em></td>
+</tr>
+<tr>
+<td>The ceiling</td>
+<td><em>The Gauge Group Ceiling</em>, <em>The Gauge Extension of the Central Phase</em>, <em>The Gluon: An Octet Outside the Biquaternion Algebra</em>, <em>Grand Unification and the Biquaternion Algebra Ceiling</em>, <em>What the Biquaternion Algebra Cannot Do</em></td>
+</tr>
+<tr>
+<td>Scalar sector</td>
+<td><em>The Higgs Mechanism</em>, <em>The Higgs Mechanism as an Erasure of Information</em>, <em>The Effective Potential and the Coleman–Weinberg Mechanism</em>, <em>Goldstone's Theorem</em>, <em>The Stueckelberg Mechanism</em>, <em>The Nonlinear Sigma Model</em>, <em>The Pion and the Chiral Lagrangian</em>, <em>The Chiral Condensate and Dynamical Symmetry Breaking</em></td>
+</tr>
+<tr>
+<td>Matter and its quantum numbers</td>
+<td><em>Chiral Fermions</em>, <em>The Electron</em>, <em>The Proton</em>, <em>The Neutron</em>, <em>The Neutrino and Majorana Fermions</em>, <em>The Majorana Equation</em>, <em>The Majorana Representation</em>, <em>The Seesaw Mechanism</em>, <em>Left-Right Symmetric Fermions</em>, <em>The Number of Generations</em>, <em>The Particle Roster</em>, <em>The Spin–Charge Hilbert Space and the $SU(3)$ Supermultiplets</em>, <em>SU(3) Representations and the Gell-Mann–Okubo Mass Formula</em>, <em>The Spin–Mass Formula</em></td>
+</tr>
+<tr>
+<td>Flavour, CP and anomalies</td>
+<td><em>The CKM Matrix and CP Violation</em>, <em>The Theta Parameter and Strong CP</em>, <em>The Theta Vacuum</em>, <em>The Axion and the Peccei–Quinn Mechanism</em>, <em>The Electric Dipole Moment</em>, <em>Anomalies and Anomaly Cancellation</em>, <em>The Fujikawa Method</em></td>
+</tr>
+<tr>
+<td>Bosons and confinement</td>
+<td><em>The Photon</em>, <em>The $W$ and $Z$ Bosons</em>, <em>The Weak Interaction</em>, <em>Confinement and the Loss of Partonic Information</em>, <em>The Skyrme Model</em>, <em>Custodial Symmetry and the $\rho$ Parameter</em></td>
+</tr>
+<tr>
+<td>Running</td>
+<td><em>The Renormalization Group</em></td>
+</tr>
+<tr>
+<td>Boundary and status</td>
+<td>The three agendas, <em>The Empirical Status</em>, <em>AI Physics Review</em></td>
+</tr>
+</tbody>
+</table></div>
+<p>Two consequences of that table shape the list below. First, the single-particle articles exist and are not to be rewritten; the new articles are <strong>sector-level</strong>, holding the group, the content, the Lagrangian and the computation that no single-particle article owns. Second, the ceiling results are settled and are quoted, never re-argued: colour is outside the algebra, and every QCD article says so once.</p>
+<h2 id="the-gap">The Gap</h2>
+<p>The reference lists four objects the corpus holds nowhere. Each is a table or a formula rather than an idea.</p>
+<ul>
+<li><strong>The content table.</strong> No article prints the fifteen Weyl fields of one generation with their $SU(3)\times SU(2)\times \mathrm{U}(1)$ representations and their hypercharge. Hypercharge is named in eighteen articles and tabulated in none.</li>
+<li><strong>The assembled Lagrangian.</strong> The four pieces are quoted separately, in four articles with four sets of conventions. No article prints $\mathcal{L}_{\mathrm{QCD}}+\mathcal{L}_{\mathrm{EW}}+\mathcal{L}_{H}+\mathcal{L}_{\mathrm{Yukawa}}$ in one notation.</li>
+<li><strong>The nineteen parameters.</strong> The count occurs in the corpus only as the word <em>nineteen</em> in unrelated contexts. The framework's answer to the count — that it fixes none of them — is stated in prose in the agenda and quantified nowhere.</li>
+<li><strong>The symmetric-breaking computation at $SU(2)_L$ length.</strong> <em>The Higgs Mechanism</em> works the abelian complex central scalar and then states in a section that the non-abelian case is not built. The doublet, its four real components, the three eaten Goldstones and the two mass formulas are not printed anywhere.</li>
+</ul>
+<p>Beside them stand six subjects the corpus touches in a sentence and develops nowhere: the mixing angle as an angle, the Yukawa matrices, the lepton mixing matrix, the oblique parameters, deep inelastic scattering, and the reasons the model is believed incomplete.</p>
+<h2 id="the-articles-by-stage">The Articles, by Stage</h2>
+<h3 id="stage-1-the-frame">Stage 1 — The Frame</h3>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>#</th>
+<th>Article</th>
+<th>File</th>
+<th>Subject</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>The Standard Model: Content, Quantum Numbers and the Nineteen Parameters</td>
+<td><code>the-standard-model-content-quantum-numbers-and-the-nineteen-parameters.md</code></td>
+<td>The group; the fifteen Weyl fields per generation with their representations and hypercharge; the four gauge bosons; the scalar; $Q=T_3+Y$; the table of nineteen parameters with values and schemes</td>
+</tr>
+<tr>
+<td>2</td>
+<td>The Standard Model Lagrangian Assembled: Four Sectors in One Expression</td>
+<td><code>the-standard-model-lagrangian-assembled-four-sectors-in-one-expression.md</code></td>
+<td>$\mathcal{L}_{\mathrm{QCD}}$, $\mathcal{L}_{\mathrm{EW}}$, $\mathcal{L}_{H}$, $\mathcal{L}_{\mathrm{Yukawa}}$, the total, and the gauge invariance of each piece checked term by term</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>1.</strong> Sections: the three factors and what each one does; the fermion table, one row per field, with $SU(3)$, $SU(2)$, $Y$, $Q$; the gauge table; the scalar; the two relations $Q=T_3+Y$ and $Y=2(Q-T_3)$; the nineteen-parameter table with the scheme of each entry; the counting, term by term, of why the number is nineteen and not some other; and a closing section that counts what the algebra fixes — nothing.</p>
+<p><strong>2.</strong> Sections: the four pieces and their division; the QCD piece; the electroweak piece with the covariant derivative written out; the Higgs piece; the Yukawa piece; the sum; a term-by-term gauge-invariance audit; the redundancy between $v$, $m_W$, $m_Z$, $g$, $g'$ and $\theta_W$; and the placing of the corpus's own action form $A_{\Phi}\tilde Q A_{\Phi}^{*}$ beside the standard one.</p>
+<h3 id="stage-2-the-electroweak-sector">Stage 2 — The Electroweak Sector</h3>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>#</th>
+<th>Article</th>
+<th>File</th>
+<th>Subject</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>3</td>
+<td>The Electroweak Gauge Group and the Hypercharge Assignment</td>
+<td><code>the-electroweak-gauge-group-and-the-hypercharge-assignment.md</code></td>
+<td>$SU(2)_L\times\mathrm{U}(1)_Y$; the representations; the hypercharge table; the anomaly conditions as a linear system and its standard solution; why $Y$ is not derivable from $\mathbb{B}$</td>
+</tr>
+<tr>
+<td>4</td>
+<td>Electroweak Symmetry Breaking: the Doublet, the Potential and the Gauge-Boson Masses</td>
+<td><code>electroweak-symmetry-breaking-the-doublet-the-potential-and-the-gauge-boson-masses.md</code></td>
+<td>The complex doublet with four real components; $V(\varphi)$; the VEV $v=246\ \mathrm{GeV}$; three Goldstones eaten; $m_W=\tfrac12 gv$, $m_Z=\tfrac12\sqrt{g^2+g'^2}\,v$; the massless photon; $m_H=\sqrt{2\lambda}\,v$; the count $4=3+1$</td>
+</tr>
+<tr>
+<td>5</td>
+<td>The Weinberg Angle, the Neutral Current and the $Z$ Coupling</td>
+<td><code>the-weinberg-angle-the-neutral-current-and-the-z-coupling.md</code></td>
+<td>$e=g\sin\theta_W=g'\cos\theta_W$; the $Z$ coupling to $T_3$ and $Q$; the on-shell and $\overline{\mathrm{MS}}$ definitions; the measured value; the link to $\rho$</td>
+</tr>
+<tr>
+<td>6</td>
+<td>The Yukawa Sector: Fermion Mass Matrices and Their Diagonalisation</td>
+<td><code>the-yukawa-sector-fermion-mass-matrices-and-their-diagonalisation.md</code></td>
+<td>$Y_u$, $Y_d$, $Y_e$ as $3\times3$; $M_f=Y_f v/\sqrt2$; bi-unitary diagonalisation; the two unitary factors that become CKM and PMNS; why the nine masses are free</td>
+</tr>
+<tr>
+<td>7</td>
+<td>Gauge Fixing in the Electroweak Theory: $R_\xi$ Gauges, Ghosts and the Goldstone Equivalence Theorem</td>
+<td><code>gauge-fixing-in-the-electroweak-theory-r-xi-gauges-ghosts-and-the-goldstone-equivalence-theorem.md</code></td>
+<td>The gauge-fixing functional; the ghost sector; $\xi\to0$ and $\xi\to\infty$; the equivalence theorem; the propagator</td>
+</tr>
+<tr>
+<td>8</td>
+<td>Electroweak Precision Observables: the Oblique Parameters $S$, $T$, $U$</td>
+<td><code>electroweak-precision-observables-the-oblique-parameters-s-t-u.md</code></td>
+<td>The vacuum polarisation functions; $S$, $T$, $U$; their values; what a heavy sector would shift; the place of the $\rho$ parameter in the same language</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>3</strong> is the article the corpus most needs, because hypercharge is the item the electroweak agenda classifies <em>no route yet</em> and because the anomaly article already uses $\mathrm{U}(1)_Y$ without ever printing its table. <strong>4</strong> fills the section that <em>The Higgs Mechanism</em> explicitly leaves open. <strong>7</strong> discharges a row the agenda classifies <em>known route</em>: gauge fixing. <strong>8</strong> is the one place where the framework's empirical equivalence can be measured against a number rather than asserted.</p>
+<h3 id="stage-3-the-strong-sector">Stage 3 — The Strong Sector</h3>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>#</th>
+<th>Article</th>
+<th>File</th>
+<th>Subject</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>9</td>
+<td>The QCD Lagrangian: Colour, the Triplet, the Octet and the Feynman Rules</td>
+<td><code>the-qcd-lagrangian-colour-the-triplet-the-octet-and-the-feynman-rules.md</code></td>
+<td>$\psi$ as a colour triplet; $G^a_\mu$ as an octet; $\lambda^a/2$; the Lagrangian; the three vertices; the colour factors $C_F$, $C_A$, $T_R$; the trace normalisation</td>
+</tr>
+<tr>
+<td>10</td>
+<td>Asymptotic Freedom and the Running of the Strong Coupling</td>
+<td><code>asymptotic-freedom-and-the-running-of-the-strong-coupling.md</code></td>
+<td>$b_0=11-\tfrac23 N_f$; the sign and its meaning; $\Lambda_{\mathrm{QCD}}$; dimensional transmutation; the comparison with the corpus's own renormalization-group article</td>
+</tr>
+<tr>
+<td>11</td>
+<td>The Parton Model and Deep Inelastic Scattering</td>
+<td><code>the-parton-model-and-deep-inelastic-scattering.md</code></td>
+<td>$F_1$, $F_2$; Bjorken scaling; the parton densities and their sum rules; scaling violations read as the running of the coupling</td>
+</tr>
+<tr>
+<td>12</td>
+<td>Jets, the QCD Cross Section and the Infrared Structure</td>
+<td><code>jets-the-qcd-cross-section-and-the-infrared-structure.md</code></td>
+<td>$e^+e^-\to$ hadrons; the ratio $R$; the three-jet rate; soft and collinear divergences; the KLN theorem; the parton shower</td>
+</tr>
+<tr>
+<td>13</td>
+<td>Hadron Structure from QCD: the Bound-State Problem</td>
+<td><code>hadron-structure-from-qcd-the-bound-state-problem.md</code></td>
+<td>Why the proton mass is not the sum of the quark masses; the chiral limit; $m_p\sim\Lambda_{\mathrm{QCD}}$; the lattice computation; the proton spin decomposition; the link to <em>The Proton</em>, <em>The Neutron</em> and <em>The Skyrme Model</em></td>
+</tr>
+</tbody>
+</table></div>
+<p>Every article in this stage opens with the same sentence of standing, because colour is the sharpest boundary in the corpus: by <em>The Gauge Group Ceiling</em>, any compact gauge algebra inside $\mathbb{B}$ has real dimension at most four, and every $\mathbb{B}$-module has even complex dimension, so neither $SU(3)$ nor a triplet is available. The strong sector is therefore transcribed, and the article says so before it prints the Lagrangian.</p>
+<h3 id="stage-4-flavour">Stage 4 — Flavour</h3>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>#</th>
+<th>Article</th>
+<th>File</th>
+<th>Subject</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>14</td>
+<td>The PMNS Matrix and Lepton Mixing</td>
+<td><code>the-pmns-matrix-and-lepton-mixing.md</code></td>
+<td>Three angles and one Dirac phase, two Majorana phases if the neutrinos are Majorana; the parametrisation; the measured values; the complement to the CKM article's lepton section</td>
+</tr>
+<tr>
+<td>15</td>
+<td>Meson Mixing, Rare Decays and the Unitarity Triangle as a Closure Test</td>
+<td><code>meson-mixing-rare-decays-and-the-unitarity-triangle-as-a-closure-test.md</code></td>
+<td>$K^0$–$\bar K^0$ and $B^0$–$\bar B^0$ mixing; the box diagrams; the GIM mechanism and the charm prediction; $b\to s\gamma$; the triangle closed by three independent measurements</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>14</strong> is short and is the lepton counterpart of an article that already exists; the CKM article gives it a section but not a table. <strong>15</strong> is the one place in the corpus where the <em>consistency</em> of the model is exhibited rather than its content: three sides measured, one area, and the CP phase that must match.</p>
+<h3 id="stage-5-status-and-limits">Stage 5 — Status and Limits</h3>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>#</th>
+<th>Article</th>
+<th>File</th>
+<th>Subject</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>16</td>
+<td>The Parameter Count as the Measure of the Framework's Boundary</td>
+<td><code>the-parameter-count-as-the-measure-of-the-frameworks-boundary.md</code></td>
+<td>Nineteen, itemised; how many the framework fixes (none); how many a neutrino mass adds (seven or eight); the comparison with the corpus's own free parameters</td>
+</tr>
+<tr>
+<td>17</td>
+<td>The Hierarchy Problem and Naturalness</td>
+<td><code>the-hierarchy-problem-and-naturalness.md</code></td>
+<td>The quadratic sensitivity of the scalar mass; the fine tuning; the three standard responses; what the framework's algebra says, if anything</td>
+</tr>
+<tr>
+<td>18</td>
+<td>The Landau Pole, Triviality and Vacuum Stability</td>
+<td><code>the-landau-pole-triviality-and-vacuum-stability.md</code></td>
+<td>The $\mathrm{U}(1)_Y$ Landau pole; the triviality bound on the Higgs quartic; the stability condition on $\lambda$ and the top mass; the metastability window</td>
+</tr>
+<tr>
+<td>19</td>
+<td>What the Standard Model Does Not Explain: Dark Matter, Baryogenesis and the Sphaleron</td>
+<td><code>what-the-standard-model-does-not-explain-dark-matter-baryogenesis-and-the-sphaleron.md</code></td>
+<td>The missing mass; the matter excess and the three Sakharov conditions; the sphaleron and the $B+L$ violation; what the corpus's $\theta$ vacuum and instanton articles already supply</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>16</strong> is short and is the article that makes the boundary quantitative. Its table is the number the three agendas cannot print today. <strong>17</strong> to <strong>19</strong> are the reference's "Challenges" section, which the corpus holds in one sentence each or not at all.</p>
+<h2 id="the-proposals-counted">The Proposals Counted</h2>
+<p>Nineteen articles, in five stages: two of frame, six of electroweak, five of strong, two of flavour, four of status. Two are tables with little argument (1, 16); four are full computations (4, 6, 9, 8); the rest are expositions with a closing boundary section. None of the nineteen is a framework result, and none is presented as one.</p>
+<h2 id="order-of-work">Order of Work</h2>
+<p>The dependencies are short and they run one way.</p>
+<ol>
+<li><strong>1</strong>, the content and parameters. Every other article quotes its table and its scheme labels.</li>
+<li><strong>3</strong>, the group and hypercharge, and <strong>9</strong>, the QCD Lagrangian. These two fix the notation the rest of the two sectors use.</li>
+<li><strong>2</strong>, the assembled Lagrangian, which can be written only once 3 and 9 exist.</li>
+<li><strong>4</strong>, <strong>5</strong>, <strong>6</strong>, <strong>7</strong>, <strong>8</strong> in any order among themselves, each quoting 3.</li>
+<li><strong>10</strong> to <strong>15</strong>.</li>
+<li><strong>16</strong> to <strong>19</strong> last, because 16 quotes the count from 1 and 17 to 19 quote the masses and couplings from 4 to 6.</li>
+</ol>
+<p>After the articles exist, the three agendas change in one way only: each gains a link, in the place where it says the object is not built, to the new article that prints the object and labels it standard input. The agenda's verdicts are unchanged. The word "not built" becomes "not derived", which is the true statement.</p>
+<h2 id="what-not-to-do">What Not to Do</h2>
+<ul>
+<li><strong>Do not claim a derivation.</strong> The agenda's three refusals stand: no $\mathrm{SU}(2)_L$ from $\mathbb{B}\cong M_2(\mathbb{C})$, no product group assembled and named, no parameter count used as a framework result.</li>
+<li><strong>Do not rewrite the single-particle articles.</strong> The electron, proton, neutron, photon, gluon, $W$ and $Z$, neutrino, CKM, $\theta$, axion, Higgs, Skyrme and anomaly articles stay as they are. The new articles quote them.</li>
+<li><strong>Do not re-argue the ceiling.</strong> It is proved in two articles and quoted everywhere else.</li>
+<li><strong>Do not import the gamma display.</strong> <em>Why AXF Matrices instead of Pauli and Gamma Matrices</em> fixes the display; a legacy section is the only place the gamma form may appear.</li>
+<li><strong>Do not print a measured number without its scheme.</strong> $\overline{\mathrm{MS}}$ at $m_Z$, on-shell, or stated at the point of use.</li>
+<li><strong>Do not add the articles to a menu before they are written.</strong> Placement is under <em>Biquaternion Particle Physics and Gauge Fields</em> in <code>physics.md</code>, in the order given by the stages.</li>
+</ul>
+<h2 id="summary">Summary</h2>
+<p>The corpus holds the machinery, the ceiling and most of the single-particle content of the Standard Model, and it holds no sector-level exposition of it. Nineteen articles close that gap, in five stages, over the three agendas' own subjects. Each states at the head that it transcribes standard theory, and each closes by stating what the algebra supplies and what it imports. The reference page supplies the checklist and the parameter table; it is a working document, and a stable review replaces it in any <code>Further Reading</code>.</p>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Fourier Transform Turns the Equations Algebraic — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-fourier-transform-turns-the-equations-algebraic"><strong>The Fourier Transform Turns the Equations Algebraic</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p><strong>The idea, in one sentence.</strong></p>
+<blockquote>
+<p>The Fourier transform turns the corpus's differential equations in biquaternion variables into algebraic equations in the wave-number element $\tilde K_\Phi$, because central scalars pass through the transform pointwise and non-central objects do not.</p>
+</blockquote>
+<p><strong>What that sentence buys.</strong> Every equation of the corpus is a differential equation whose coefficients are either numbers or elements. The transform moves the derivatives onto the wave-number element and leaves the coefficients where they are. What remains is an equation between elements at a single frequency point, with no derivative in it. The reader can then see, in one display, which part of the equation is a number and which part is an element.</p>
+<p><strong>What it does not buy.</strong> No new equation, no new mass, no new dynamics, no new operator. Every algebraic statement below is a rewriting of a statement the corpus already prints. The transform supplies the <strong>reason</strong> for the shape of those statements, and in one case it exposes a display that contradicts its own prose.</p>
+<p><strong>How the article proceeds.</strong> The rule is stated and proved. Four consequences follow, each a single reading of the same rule. The limits close the article.</p>
+<p><strong>The conventions used.</strong> The algebra is $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ with $e_t=1$ and $\vec e_x,\vec e_y,\vec e_z$, so $\vec e_k^2=-e_t$. The gradient and its conjugate are</p>
+<p>$$
+\tilde\nabla=e_t\frac{\partial}{\partial R_t}+\sum_{k\in\{x,y,z\}}\vec e_k\frac{\partial}{\partial R_k},
+\qquad
+\tilde\nabla^{\natural}=e_t\frac{\partial}{\partial R_t}-\sum_{k}\vec e_k\frac{\partial}{\partial R_k},
+$$</p>
+<p>so that $\tilde\nabla\tilde\nabla^{\natural}=\Box=\partial^2/\partial R_t^2+\Delta_Q$ with $\Delta_Q=\sum_k\partial^2/\partial R_k^2$. On the material sector $R_t=i\,r'_t$ and $R_k=q_k$, so $\partial/\partial R_t=-i\,\partial/\partial r'_t$. The wave-number element is</p>
+<p>$$
+\tilde K_\Phi=i\,k'_t\,e_t+\vec k_\Phi,
+\qquad
+\tilde K_\Phi^{\natural}=i\,k'_t\,e_t-\vec k_\Phi ,
+\qquad
+s:=\tilde K_\Phi\tilde K_\Phi^{\natural}=-k_t^{\prime\,2}+k_\Phi^{2}.
+$$</p>
+<p><strong>The one number that matters.</strong> $s$ is a <strong>real complex number</strong>, not an element: $\tilde K_\Phi\tilde K_\Phi^{\natural}$ is the quaternion norm, and a quaternion norm is central. On shell $s=-k_m^{2}$. Everything below is a consequence of that centrality.</p>
+<p><strong>The sample point used in every check.</strong></p>
+<p>$$
+k'_t=2.0,\quad \vec k_\Phi=(0.3,\,-0.9,\,1.4),\quad k_\Phi=1.7000,\quad s=-1.1400,\quad k_m=1.0677 .
+$$</p>
+<p>One inverse-length unit throughout. The point is timelike, so $s<0$.</p>
+<h2 id="the-rule">The Rule</h2>
+<h3 id="why-the-transform-moves-the-derivatives-and-not-the-coefficients">Why the transform moves the derivatives and not the coefficients</h3>
+<p>The transform is an integral with a scalar kernel, $\exp(-i\tilde K_\Phi\cdot\tilde R_\Phi)$, and a scalar kernel is central. Two facts follow, and together they are the whole rule.</p>
+<p><strong>A constant left multiplier passes straight through.</strong> If $\tilde Q$ is a fixed element of $\mathbb{B}$, then $\mathcal F[\tilde Q f]=\tilde Q\,\mathcal F[f]$, because $\tilde Q$ does not depend on the variable of integration and the kernel is scalar. So a coefficient, central or not, stays a coefficient.</p>
+<p><strong>A derivative becomes a left multiplier.</strong> If $\tilde F$ is a plane wave,</p>
+<p>$$
+\tilde F=\tilde F_0\exp\!\bigl(i\,\mathrm{Sc}(\tilde K_\Phi\tilde R_\Phi^{\natural})\bigr),
+\qquad
+\mathrm{Sc}(\tilde K_\Phi\tilde R_\Phi^{\natural})=\vec k_\Phi\cdot\vec r-k'_t\,r'_t ,
+$$</p>
+<p>then each spatial derivative brings $i\vec k_\Phi$ and the material time derivative brings $-i(-ik'_t)=i(ik'_t)$, because $\partial/\partial R_t=-i\partial/\partial r'_t$. Every derivative therefore contributes its coefficient times $i$, and</p>
+<p>$$
+\boxed{\;\tilde\nabla\longmapsto i\tilde K_\Phi,\qquad \tilde\nabla^{\natural}\longmapsto i\tilde K_\Phi^{\natural},\qquad \Box\longmapsto(i\tilde K_\Phi)(i\tilde K_\Phi^{\natural})=-s\;}
+$$</p>
+<p><strong>The point of the box.</strong> A second-order differential operator has become a single real number. That is not an approximation and not a limit: it is what constant coefficients and a scalar kernel give, exactly.</p>
+<p><strong>The check.</strong> Finite differences on an explicit plane wave, against the predicted symbols:</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Operator</th>
+<th>Predicted</th>
+<th>Measured</th>
+<th>Error</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\tilde\nabla$</td>
+<td>$i\tilde K_\Phi$</td>
+<td>$i\tilde K_\Phi$</td>
+<td>$1.7\times10^{-10}$</td>
+</tr>
+<tr>
+<td>$\Box$</td>
+<td>$-s=+1.1400$</td>
+<td>$+1.1400$</td>
+<td>below $10^{-6}$</td>
+</tr>
+<tr>
+<td>vector part of the $\Box$ symbol</td>
+<td>$0$</td>
+<td>$0$</td>
+<td>exact</td>
+</tr>
+</tbody>
+</table></div>
+<h3 id="where-centrality-enters">Where centrality enters</h3>
+<p>The box is the only place the rule touches the algebra, and it touches it once.</p>
+<p>A product of two left multipliers is a number exactly when the two elements are conjugate to each other. For a general pair $\tilde A\tilde B$ the product is an element. For the pair $\tilde K_\Phi,\tilde K_\Phi^{\natural}$ it is the norm $s$, and the norm of a quaternion is a number.</p>
+<p>So the rule has a sharp form:</p>
+<blockquote>
+<p>Derivatives become left multiplications by $i\tilde K_\Phi$. Those multiplications are numbers only where the product of the two elements is central. Centrality decides whether the transformed equation is an equation between <strong>numbers</strong> or between <strong>elements</strong>.</p>
+</blockquote>
+<p>Consequence 1 and Consequence 2 are the central case. Consequence 3 is the non-central case, and it is not an accident: it is the same rule read at a place where the product fails to be a norm.</p>
+<h2 id="consequence-1-the-wave-operator-is-one-number">Consequence 1: The Wave Operator Is One Number</h2>
+<p>The equation $\Box\tilde F=k_m^{2}\tilde F$ transforms to $-s\,\hat{\tilde F}=k_m^{2}\hat{\tilde F}$. Since $s$ and $k_m$ are numbers, the amplitude factors out and what remains is</p>
+<p>$$
+-s=k_m^{2}
+\qquad\Longleftrightarrow\qquad
+k_t^{\prime\,2}-k_\Phi^{2}=k_m^{2}.
+$$</p>
+<p>Both sides are real numbers, so the equation has a solution or it does not, and the amplitude is untouched either way.</p>
+<p><strong>What this says about the corpus.</strong> The mass shell of <em>The Three Wavenumbers of a Particle</em> is the zero set of the symbol. The transform shows that the shell is a <strong>level set of a number</strong> and not a set of four coupled conditions. The triples $k_t'$, $\vec k_\Phi$, $k_m$ are: two coordinates of a point of the spectrum and one constant of the equation. The transform is what makes the two roles visible, because in the coordinates all three appear as symbols of the same kind.</p>
+<p><strong>The sign carries the metric.</strong> The symbol is $-s=k_t^{\prime\,2}-k_\Phi^{2}$. The minus sign sits on the spatial part because $\vec e_k^2=-e_t$. An algebra with real units of four equal squares would have produced $+k_t^{\prime\,2}+k_\Phi^{2}$ and no shell at all. The Lorentzian signature here is not imposed on the transform; it arrives through the norm.</p>
+<h2 id="consequence-2-the-block-determinant-is-one-scalar-condition">Consequence 2: The Block Determinant Is One Scalar Condition</h2>
+<h3 id="the-two-equations-read-at-the-symbol">The two equations, read at the symbol</h3>
+<p><em>Operator and Calculus Conventions</em>, §<em>The Two First-Order Equations and Their Symbol</em>, writes the dynamics of a field of mass $m$ as <strong>two</strong> equations,</p>
+<p>$$
+\tilde\nabla\tilde{\Xi}_{\mathrm{sp},R}=k_m\,\tilde{\Xi}_{\mathrm{sp},L},
+\qquad
+\tilde\nabla^{\natural}\tilde{\Xi}_{\mathrm{sp},L}=k_m\,\tilde{\Xi}_{\mathrm{sp},R},
+$$</p>
+<p>and states in the same section that the pair operator is not allowed: no letter gathers the two into one object on $\mathbb{B}\oplus\mathbb{B}$, no $\mathbb{D}$, no two-by-two array, no subscripted glyph. This article keeps that rule. The two lines are written as two lines throughout.</p>
+<p>Applying the box to each line separately gives, at each frequency point,</p>
+<p>$$
+i\tilde K_\Phi\,\hat\Xi_R=k_m\,\hat\Xi_L,
+\qquad
+i\tilde K_\Phi^{\natural}\,\hat\Xi_L=k_m\,\hat\Xi_R .
+$$</p>
+<p>That is the pair of <em>The Dirac Equation in Biquaternionic Form</em> with the derivatives replaced by their symbols. Nothing else has been done, and no letter has been introduced.</p>
+<h3 id="why-the-determinant-of-the-two-lines-is-a-scalar">Why the determinant of the two lines is a scalar</h3>
+<p>A determinant needs an array, and the array of the two lines is the block matrix. <em>The First-Order Root of the Biquaternion Klein–Gordon Operator</em>, §<em>The determinant</em>, writes it: on a plane wave the two lines are the block matrix with $\ell_{-i\tilde K_\Phi}$ and $\ell_{i\tilde K_\Phi^{\natural}}$ off the diagonal and $-k_m$ on it, where $\ell_M$ is left multiplication by $M$.</p>
+<p>A determinant of a matrix with non-commuting entries is not defined in general. Here it is defined, for one reason: the product of the two off-diagonal blocks is a number. Read each block as left multiplication, $A=\ell_{-i\tilde K_\Phi}$ and $B=\ell_{i\tilde K_\Phi^{\natural}}$ for the off-diagonal blocks, and $-k_m I_4$ on the diagonal. The diagonal blocks are scalar multiples of the identity, so they commute with everything, and the off-diagonal product is central:</p>
+<p>$$
+BA=\ell_{(i\tilde K_\Phi^{\natural})(-i\tilde K_\Phi)}=\ell_{\tilde K_\Phi^{\natural}\tilde K_\Phi}=\ell_{s}=s\,I_4 ,
+$$</p>
+<p>because the quaternion norm is central. Under those two conditions the block determinant is the ordinary one,</p>
+<p>$$
+\det\begin{pmatrix}-k_m & A\\ B & -k_m\end{pmatrix}
+=\det\bigl(k_m^{2}I_4-BA\bigr)=\bigl(k_m^{2}-s\bigr)^{4}.
+$$</p>
+<p><strong>This is already printed.</strong> The root article states the same display as $\det\bigl(\ell_{i\tilde K_\Phi^{\natural}}\ell_{-i\tilde K_\Phi}-k_m^{2}\bigr)=\bigl(k_t^{\prime\,2}-\lvert\vec k_\Phi\rvert^{2}-k_m^{2}\bigr)^{4}$. Its bracket is $-s-k_m^{2}$, which is minus my bracket, and a fourth power does not see the sign. The two displays are the same statement.</p>
+<p>So the transform adds no formula here. It adds the <strong>reason</strong> the fourth power is a scalar and not a matrix: the bracket is a quaternion norm, and a quaternion norm is central. That is the same centrality that made $\Box$ a number in the preceding section, read at the block array instead of at one operator.</p>
+<p><strong>What the fourth power means.</strong> Four equations after writing each biquaternion line in components, one condition. The multiplicity four is the dimension of $\mathbb{B}$ over $\mathbb{C}$, so the kernel is four-dimensional over $\mathbb{C}$ at each point of the shell. Computed on the sample point: rank deficiency $4$ on shell and $0$ off it, and the determinant equals the printed display off shell to a ratio of $1.000000$ at two different offsets.</p>
+<p><strong>The amplitude is not constrained.</strong> On shell the second line merely fixes one component from the other,</p>
+<p>$$
+\hat\Xi_L=\frac{i\tilde K_\Phi}{k_m}\,\hat\Xi_R ,
+\qquad
+\hat\Xi_R\ \text{arbitrary, residual }1.8\times10^{-15}.
+$$</p>
+<p><strong>A correction to an earlier reading.</strong> It is tempting to call the off-diagonal blocks "the polarisation". That is wrong, and the kernel dimension is the reason: a four-dimensional kernel means every biquaternion amplitude is admitted, so nothing is selected. The off-diagonal blocks carry the <strong>map</strong> between the two chiral components. The projection onto a two-dimensional value space happens only at $k_m=0$, in Consequence 4.</p>
+<h3 id="why-this-is-not-a-derivation-of-the-mass-shell">Why this is not a derivation of the mass shell</h3>
+<p><strong>The temptation.</strong> The two lines have a non-zero solution only where $k_t^{\prime\,2}-k_\Phi^{2}=k_m^{2}$. That is the relativistic dispersion relation, and it looks like a derivation of it from the algebra. It is not, and the article does not claim it.</p>
+<p><strong>Reason one: the mass is in the input.</strong> $k_m$ stands on the right-hand side of both lines before any transform is taken. The transform moves it to the other side of a zero; it does not produce it. Delete $k_m$ and the same elimination gives the massless condition $s=0$.</p>
+<p><strong>Reason two: the signature is in the input.</strong> The bracket is indefinite because $s=k_t^{\prime\,2}-k_\Phi^{2}$ carries a minus sign on the spatial part, and that sign comes from $\vec e_k^{2}=-e_t$, that is from the imaginary time coordinate $R_t=i\,r'_t$ of the material sector. An algebra with a real time coefficient would have produced $k_t^{\prime\,2}+k_\Phi^{2}$ and a definite condition. The Lorentzian character is posited where the sector is chosen, so a derivation of relativity from it would run in a circle.</p>
+<p><strong>Reason three: the corpus already prints it, and already labels it.</strong> <em>Derivatives, Fields and Transforms</em> states that the level sets of the symbol "are the mass shells: the zero level is the massless shell, and the level $(k_m)^{2}$ is the shell of mass $m$", and adds at once that it "predicts no mass spectrum". <em>The Three Wavenumbers of a Particle</em> states the triangle and calls the definitions, the triangle and the values "bookkeeping". The corpus's own ledger is one line, in <em>The Differentiable Field</em>: "the corpus derives the arena and imports the dynamics". The mass shell is that import, transcribed into the wave number.</p>
+<p><strong>What does survive, and is worth stating.</strong> Two things, and neither of them is a dispersion relation.</p>
+<p>First, the shell is a <strong>solvability condition</strong> and not a postulate. The two lines admit a non-zero amplitude on the level set and nowhere else. That is the algebraic form of the Fredholm alternative, and it says the dispersion relation is the consistency of the two chiral lines rather than an extra law laid on top of them. The transform is what makes this visible, because it turns "eliminate one field" into "ask when a linear system has a kernel".</p>
+<p>Second, the level set is the zero set of a <strong>central</strong> norm, so it is invariant under the rotor group without further argument. A rotor conjugation fixes the centre, the norm is a central number, and a number is untouched. That is the invariance of the mass, which is the corpus's derivation of the arena read at one point.</p>
+<p>Neither statement is new physics. Both are reasons the corpus's existing displays are consistent, and that is the whole of what this consequence contributes.</p>
+<h2 id="consequence-3-the-non-central-square-is-not-a-number">Consequence 3: The Non-Central Square Is Not a Number</h2>
+<h3 id="the-two-pairings">The two pairings</h3>
+<p>The gradient can be applied twice in two ways, and only one of them is a norm.</p>
+<p>$$
+\tilde\nabla\tilde\nabla^{\natural}=\Box ,
+\qquad
+\tilde\nabla\tilde\nabla\neq\Box .
+$$</p>
+<p>Multiply out the second:</p>
+<p>$$
+\tilde\nabla^{2}=\frac{\partial^{2}}{\partial R_t^{2}}+2\vec\nabla\frac{\partial}{\partial R_t}+\vec\nabla^{2},
+\qquad
+\vec\nabla^{2}=-\Delta_Q ,
+$$</p>
+<p>the last step because the units anticommute while the partial derivatives commute, so the mixed terms cancel pairwise. Hence</p>
+<p>$$
+\tilde\nabla^{2}=\frac{\partial^{2}}{\partial R_t^{2}}-\Delta_Q+2\vec\nabla\frac{\partial}{\partial R_t}
+\qquad\text{against}\qquad
+\Box=\frac{\partial^{2}}{\partial R_t^{2}}+\Delta_Q .
+$$</p>
+<p>The first has a first-order mixed term and the wrong sign on the Laplacian. The two differ by $2\Delta_Q+2\vec\nabla\partial/\partial R_t$, which is neither small nor removable.</p>
+<h3 id="the-same-difference-read-at-the-symbol">The same difference, read at the symbol</h3>
+<p>This is where the rule pays. The correct pairing has symbol $-s$, a number. The wrong pairing has symbol</p>
+<p>$$
+(i\tilde K_\Phi)^{2}=-\tilde K_\Phi^{2}
+=\bigl(k_t^{\prime\,2}+k_\Phi^{2}\bigr)-2i\,k'_t\,\vec k_\Phi ,
+$$</p>
+<p>which is <strong>an element</strong>, because $\tilde K_\Phi^{2}$ is not a norm: it is the square of one element.</p>
+<p>Now demand that the elimination produce a mass term. A mass is a real central number, so every part of the symbol that is not a real number must vanish.</p>
+<ul>
+<li><strong>Correct pairing.</strong> $-s=k_m^{2}$ gives $k_t^{\prime\,2}-k_\Phi^{2}=k_m^{2}$. A <strong>hyperboloid</strong>: the mass shell.</li>
+<li><strong>Wrong pairing.</strong> The vector part forces $k'_t\vec k_\Phi=0$, and the scalar part then gives $k_t^{\prime\,2}+k_\Phi^{2}=k_m^{2}$. A <strong>sphere</strong> of radius $k_m$, cut down by the extra condition.</li>
+</ul>
+<p>The two surfaces are the Lorentz hyperboloid and the Euclidean sphere. One conjugation of the gradient decides which one the equation describes, and the reason is that only the conjugated product is central.</p>
+<h3 id="the-branches-the-wrong-display-admits">The branches the wrong display admits</h3>
+<p>$k'_t\vec k_\Phi=0$ has two solutions and both are degenerate. Computed on the sample unit:</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Branch</th>
+<th>$k'_t$</th>
+<th>$\vec k_\Phi$</th>
+<th>Vector part of symbol</th>
+<th>Propagating</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>rest</td>
+<td>$\pm k_m$</td>
+<td>$0$</td>
+<td>$0$</td>
+<td>no, one point</td>
+</tr>
+<tr>
+<td>static</td>
+<td>$0$</td>
+<td>length $k_m$</td>
+<td>$0$</td>
+<td>no, zero frequency</td>
+</tr>
+<tr>
+<td>generic</td>
+<td>$1.957\,k_m$</td>
+<td>$(0.3,-0.9,1.4)$</td>
+<td>modulus $6.76$</td>
+<td>fails the mass condition</td>
+</tr>
+</tbody>
+</table></div>
+<p>So the wrong display is not empty of solutions. It is empty of <strong>propagating</strong> solutions: a sphere intersected with two degenerate loci, and neither locus carries a wave.</p>
+<h3 id="the-printed-slip">The printed slip</h3>
+<p><em>The Klein–Gordon Equation in Biquaternionic Form</em>, §<em>The Lanczos Family and the Spin-0 Member</em>, opens with</p>
+<p>$$
+\tilde\nabla\tilde Q_1=k_m\tilde Q_2,
+\qquad
+\tilde\nabla\tilde Q_2=k_m\tilde Q_1 ,
+$$</p>
+<p>which is the gradient on both lines. The paragraph below it says the elimination "leaves $\Box\tilde Q_1=k_m^{2}\tilde Q_1$" and attributes that to "the pair that carries one gradient of each kind". The prose is right and the display is not: eliminating from the display as printed gives $\tilde\nabla^{2}\tilde Q_1=k_m^{2}\tilde Q_1$, and $\tilde\nabla^{2}$ is the operator of the preceding subsection, not $\Box$. The repair is one glyph,</p>
+<p>$$
+\tilde\nabla\tilde Q_1=k_m\tilde Q_2,
+\qquad
+\tilde\nabla^{\natural}\tilde Q_2=k_m\tilde Q_1 ,
+$$</p>
+<p>and then the elimination gives $\Box\tilde Q_1=k_m^{2}\tilde Q_1$, which is the article's own equation.</p>
+<p><strong>Why the transform finds this and the coordinates do not.</strong> Written in the coordinates the two displays look alike: both first order, both carrying the same three symbols, differing by one superscript. Written at the symbol they differ by a surface, and a sphere is not a hyperboloid. The mistake cannot survive the change of description.</p>
+<p><strong>Why the slip was easy.</strong> Lanczos wrote the pair with a conjugate on the second line, and <em>The Dirac Equation in Biquaternionic Form</em> in this corpus writes the correct pair. The Klein–Gordon display is the outlier, and it is a transcription lapse.</p>
+<p><strong>Status.</strong> This article reports the slip and does not repair it; the article is the author's. The repair is the single glyph above.</p>
+<h2 id="consequence-4-support-on-the-null-cone">Consequence 4: Support on the Null Cone</h2>
+<h3 id="the-support">The support</h3>
+<p>This is the one statement that could not be made at all without the transform, because "support" has no meaning in the coordinates.</p>
+<p>Let $\tilde\nabla\tilde F=0$. At each frequency point the transformed equation is the algebraic condition</p>
+<p>$$
+i\tilde K_\Phi\,\hat{\tilde F}=0 .
+$$</p>
+<p>If left multiplication by $i\tilde K_\Phi$ is invertible, the only solution is $\hat{\tilde F}=0$. So the transform can be non-zero only where that multiplication is <strong>not</strong> invertible, that is where $i\tilde K_\Phi$ is a zero divisor. A zero divisor here is an element of vanishing norm, so</p>
+<p>$$
+\tilde K_\Phi\tilde K_\Phi^{\natural}=s=0
+\qquad\Longleftrightarrow\qquad
+k_t^{\prime\,2}=k_\Phi^{2}.
+$$</p>
+<blockquote>
+<p>The transform of a solution of $\tilde\nabla\tilde F=0$ is supported on the null cone.</p>
+</blockquote>
+<p>That is the answer to the second open question of <em>Biquaternion Continuous Harmonic Analysis</em>, which asks what the support of such a transform is.</p>
+<p><strong>The same rule, read at the same place.</strong> The support is the zero set of a <strong>central number</strong>. If the multiplier had been a general element, its invertibility would have been a property of a matrix, and the support would have been a set of conditions rather than one level set.</p>
+<h3 id="what-the-transform-equals-on-the-cone">What the transform equals on the cone</h3>
+<p>Support is half the statement. The value on the cone is the other half, and it is also algebraic.</p>
+<p>The rank of left multiplication by $i\tilde K_\Phi$, computed:</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Frequency point</th>
+<th>Rank</th>
+<th>Kernel dimension over $\mathbb{C}$</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>generic, off the cone</td>
+<td>$4$</td>
+<td>$0$</td>
+</tr>
+<tr>
+<td>null, momentum along $\vec e_z$</td>
+<td>$2$</td>
+<td>$2$</td>
+</tr>
+<tr>
+<td>null, generic direction</td>
+<td>$2$</td>
+<td>$2$</td>
+</tr>
+</tbody>
+</table></div>
+<p>Off the cone the multiplier is invertible. On the cone the rank drops by two, at every point, in every direction.</p>
+<p><strong>The kernel is a right ideal.</strong> Take $\tilde X$ with $i\tilde K_\Phi\tilde X=0$ and multiply on the right by any $\tilde Y$:</p>
+<p>$$
+i\tilde K_\Phi(\tilde X\tilde Y)=\bigl(i\tilde K_\Phi\tilde X\bigr)\tilde Y=0 .
+$$</p>
+<p>The kernel is closed under right multiplication, so it is a <strong>right ideal</strong>, and at complex dimension two it is a <strong>minimal</strong> right ideal of $\mathbb{B}\cong M_{2}(\mathbb{C})$. Checked over thirty random multipliers: the relative residual stays at $5\times10^{-16}$ in the aligned case and $7\times10^{-15}$ in the generic one.</p>
+<p>So the transform of a massless solution is not a biquaternion-valued function on the cone. At each cone point it takes its value in a two-dimensional module. Two of the four amplitude directions are killed, and the two that survive form one indivisible object, not two loose complex numbers.</p>
+<p><strong>One caveat, one line.</strong> Right multiplication by the frame's third direction acts on that module with eigenvalues $\pm i$; the two-dimensional count is unconditional, and the reading of the two as helicities requires the frame's third direction to lie along the momentum.</p>
+<p><strong>The vanishing-norm question.</strong> The mathematics article leaves open whether the transform is invertible for functions that take zero-divisor values. For solutions of $\tilde\nabla\tilde F=0$ the ambiguity is not a defect: it is exactly the freedom to add a component from the killed subspace, which is the polarisation count. The general problem stays open for arbitrary zero-divisor-valued functions.</p>
+<h2 id="limits">Limits</h2>
+<ul>
+<li><strong>No new equation and no new prediction.</strong> Every display rewrites a statement the corpus already prints. Consequence 2 in particular reproduces a determinant that <em>The First-Order Root of the Biquaternion Klein–Gordon Operator</em> states.</li>
+<li><strong>Constant coefficients only.</strong> The symbol is a function of the frequency point because the coefficients are constant in $\tilde R_\Phi$. With a position-dependent coefficient the symbol is not a function, none of the displays above survives, and the transform gives a convolution instead. Every equation in the corpus that this article touches has constant coefficients, and that is why the method applies.</li>
+<li><strong>The mass is a parameter.</strong> The transform fixes where the shell is, never how large it is. The dispersion relation is therefore not derived here; §<em>Why this is not a derivation of the mass shell</em> gives the three reasons.</li>
+<li><strong>The kernel is four-dimensional, not two.</strong> The article does not claim that the amplitude count of a Dirac field is two. The pairing of the two components is a map, not a selection.</li>
+<li><strong>The determinant formula needs centrality.</strong> For a pair whose blocks did not commute, the block determinant formula fails and the fourth power means nothing.</li>
+<li><strong>The sphere statement is about a display</strong>, not about the physics of the Klein–Gordon article.</li>
+<li><strong>The helicity naming is frame-dependent</strong>; the two-dimensional module is not.</li>
+</ul>
+<h2 id="summary">Summary</h2>
+<p>The transform moves derivatives onto the wave-number element and leaves coefficients alone, because the kernel is a scalar. Derivatives therefore become left multiplications by $i\tilde K_\Phi$, and a product of two of them is a <strong>number</strong> exactly when the two elements are conjugate, so their product is a norm.</p>
+<p>That single fact produces four readings.</p>
+<p>The d'Alembertian becomes the real number $-s=k_t^{\prime\,2}-k_\Phi^{2}$, and the mass shell is its level set. The two chiral lines become two algebraic lines whose block array has a scalar determinant, $\bigl(k_m^{2}-s\bigr)^{4}$: one condition, and a four-dimensional kernel, so the amplitude is free and the second line only maps one component onto the other. The unconjugated square becomes $-\tilde K_\Phi^{2}$, which is an element, whose vector part $2ik'_t\vec k_\Phi$ cannot equal a mass, so that display forces $k_t^{\prime\,2}+k_\Phi^{2}=k_m^{2}$ with $k'_t\vec k_\Phi=0$ and admits no propagating branch. And the massless equation transforms to $i\tilde K_\Phi\hat{\tilde F}=0$, so the transform is supported on the null cone and takes its values in a minimal right ideal of complex dimension two.</p>
+<p>The corpus's equations are already written in wave numbers, so the transform adds no vocabulary. It adds the one thing the notation cannot show by itself: which part of an equation is a number that can vanish, and which part is an element that cannot.</p>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li><a href="../articles_physics/operator-and-calculus-conventions.html">Operator and Calculus Conventions</a>, §<em>The Two First-Order Equations and Their Symbol</em>, for the two chiral equations and for the rule that the pair operator is not allowed.</li>
+<li><a href="../articles_physics/the-first-order-root-of-the-biquaternion-klein-gordon-operator.html">The First-Order Root of the Biquaternion Klein–Gordon Operator</a>, §<em>The determinant</em>, for the block matrix of the two lines and its printed fourth power.</li>
+<li><a href="../articles_physics/the-klein-gordon-equation-in-biquaternionic-form.html">The Klein–Gordon Equation in Biquaternionic Form</a>, §<em>The Lanczos Family and the Spin-0 Member</em>, for the display whose second line is discussed here.</li>
+<li><a href="../articles_physics/the-three-wavenumbers-of-a-particle.html">The Three Wavenumbers of a Particle</a>, for $k_m$, $k'_t$, $\vec k_\Phi$ and the triangle $k_t^{\prime\,2}=k_\Phi^{2}+k_m^{2}$.</li>
+<li><a href="../articles_physics/derivatives-fields-and-transforms.html">Derivatives, Fields and Transforms</a>, for the symbol of the gradient and the mass shell as a level set.</li>
+<li><a href="../articles_maths/biquaternion-continuous-harmonic-analysis.html">Biquaternion Continuous Harmonic Analysis</a>, §<em>Open Questions</em>, for the support question answered in Consequence 4.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

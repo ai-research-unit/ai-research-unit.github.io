@@ -199,6 +199,11 @@ $$</p>
 $$</p>
 <p>$$\frac{m\,c\,i}{k_m}\frac{\partial\tilde{Ξ}_{\mathrm{sp},\mathrm{odd}}}{\partial  r'_t}=O\tilde{Ξ}_{\mathrm{sp},\mathrm{evn}}-2mc^2\tilde{Ξ}_{\mathrm{sp},\mathrm{odd}}+qΞ\tilde{Ξ}_{\mathrm{sp},\mathrm{odd}} .
 $$</p>
+<p><strong>Why the rest energy comes out first.</strong> The $-2mc^2$ in the small-part equation is the rest energy already added in, and its presence is what makes the elimination converge. Solving that equation exactly,</p>
+<p>$$
+\tilde{Ξ}_{\mathrm{sp},\mathrm{odd}}=\frac{1}{\frac{m\,c\,i}{k_m}\partial_{r'_t}+2mc^2-qΞ}\,O\tilde{Ξ}_{\mathrm{sp},\mathrm{evn}} ,
+$$</p>
+<p>the denominator is $2mc^2+\varepsilon-qΞ$ on a field whose temporal eigenvalue is the kinetic energy $\varepsilon=E-mc^2$, so the expansion parameter is $(\varepsilon-qΞ)/(2mc^2)$; it vanishes at rest and is small exactly in the non-relativistic regime. Remove the phase after the elimination instead of before, and the same computation divides by $\frac{m\,c\,i}{k_m}\partial_{r'_t}+mc^2$, whose eigenvalue is $E\approx mc^2$ and not $\varepsilon$; the parameter is then of order one, the series does not converge, and its first term overshoots by a factor of two. The symptom is unambiguous. The small part comes out as $\sigma\cdot\vec\pi\,\tilde{Ξ}_{\mathrm{sp},\mathrm{evn}}/(mc)$ instead of $/(2mc)$, which turns the leading term into $\vec p^{\,2}/m$ rather than $\vec p^{\,2}/(2m)$. Removing the phase after the expansion instead of before does not repair it either: that order lands on $+\vec p^{\,2}/(4m)$, half the correct kinetic term, an effective mass of $2m$. Neither endpoint is repaired by a local redefinition. A scalar factor, phase or amplitude, multiplies both terms of a differential operator by the same function and leaves the coefficient of $\vec p^{\,2}$ alone, and a momentum-dependent redefinition $1+\alpha\vec p^{\,2}/(m^{2}c^{2})$ changes the kinetic term only at relative order $c^{-2}$, so it cannot undo a factor of two at order $c^{0}$. The order of the two operations is therefore not a matter of taste: the phase first, the elimination second, and the coefficient $1/2m$, with the $g=2$ that it carries, is a consequence of that order.</p>
 <p><em>Step 3: the leading elimination.</em> The term $2mc^2\tilde{Ξ}_{\mathrm{sp},\mathrm{odd}}$ dominates the second equation whenever the fields, the kinetic energy and $\partial\tilde{Ξ}_{\mathrm{sp},\mathrm{odd}}/\partial r'_t$ are small compared with $mc^2$. Neglecting the other terms there,</p>
 <p>$$
 \tilde{Ξ}_{\mathrm{sp},\mathrm{odd}}=\frac{O}{2mc^2}\,\tilde{Ξ}_{\mathrm{sp},\mathrm{evn}}+O(c^{-3}),
@@ -258,7 +263,7 @@ $$</p>
 \boxed{\;\frac{m\,c\,i}{k_m}\frac{\partial\tilde{Ξ}_{\mathrm{sp},\mathrm{evn}}}{\partial  r'_t}=\left[\frac{(p-q\vec A)^{2}}{2\,m}+qΞ-\frac{q c}{2\,k_m}\,\boldsymbol\sigma\cdot\vec B\right]\tilde{Ξ}_{\mathrm{sp},\mathrm{evn}}\;}
 $$</p>
 <p>which is the Pauli equation exactly as the parent reports it. The coefficient $1/2m$ is the whole content of the $g=2$ result of Problem 2: it is produced by the $2mc^2$ in the denominator of the small-component elimination, not put in by hand.</p>
-<h2 id="problem-2-minimal-substitution-the-electromagnetic-terms-and-math179">Problem 2: Minimal substitution, the electromagnetic terms, and $g=2$</h2>
+<h2 id="problem-2-minimal-substitution-the-electromagnetic-terms-and-math199">Problem 2: Minimal substitution, the electromagnetic terms, and $g=2$</h2>
 <p><strong>Statement.</strong> Carry out the minimal substitution, evaluate the electromagnetic terms it generates, and verify the gyromagnetic factor $g=2$ together with the biquaternion form of the spin term.</p>
 <p><strong>Solution.</strong></p>
 <p><em>Step 1: the substitution.</em> The minimal coupling of this exercise is a shift of every derivative, $\partial/\partial R_\mu\to\partial/\partial R_\mu-\frac{k_m\,iqA_{\mu}}{m\,c}$; on the gradient it is $\tilde\nabla\to\tilde\nabla-\frac{k_m\,i\,q\,\tilde{A}_{\Phi}}{m\,c}$, with $A_\mu=(Ξ,-\vec A)$ in this mostly-minus metric, so that $\tilde A_{\Phi}=Ξ e_t-\vec A$. The time component gives</p>
@@ -383,7 +388,7 @@ $$</p>
 \Delta E_{\rm D}=0\quad(\ell\neq0),
 $$</p>
 <p>with the exact Dirac shift $\Delta E_{\rm exact}=-\dfrac{m(\mathfrak{Z}\alpha)^4}{2n^3}\Bigl[\dfrac{1}{j+\tfrac12}-\dfrac{3}{4n}\Bigr]$. Evaluating all of these with exact rational arithmetic for every level with $n\le6$ (36 levels, with $j$ the total angular momentum, $j=\ell\pm\tfrac12$ and one value at $\ell=0$), the sum $\Delta E_{\rm kin}+\Delta E_{\rm SO}+\Delta E_{\rm D}$ equals $\Delta E_{\rm exact}$ in every case, with difference exactly $0$. The coefficients are also those of the two sources named at the head of this problem: the binomial coefficients $1,\tfrac12,-\tfrac18$ of $\sqrt{m^2c^4+O^2}$ and the Darwin coefficient $+\tfrac18$ of the second-order term.</p>
-<h2 id="problem-4-hermiticity-and-the-math311-decomposition">Problem 4: Hermiticity and the $\mathbb{B}_{\Psi}/\mathbb{B}_{\Phi}$ decomposition</h2>
+<h2 id="problem-4-hermiticity-and-the-math331-decomposition">Problem 4: Hermiticity and the $\mathbb{B}_{\Psi}/\mathbb{B}_{\Phi}$ decomposition</h2>
 <p><strong>Statement.</strong> Check the Hermiticity of every term and determine which terms lie in $\mathbb{B}_{\Psi}$.</p>
 <p><strong>Solution.</strong></p>
 <p><em>Step 1: Hermiticity.</em> Each term of the Hamiltonian of Problem 3 is Hermitian:</p>
