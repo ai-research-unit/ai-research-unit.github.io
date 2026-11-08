@@ -76,7 +76,7 @@
 L_{\mathrm{axf}}(\tilde Q)^{\mathsf T}=L_{\mathrm{axf}}(\tilde Q^{\natural}),
 $$</p>
 <p>with $\mathsf D=\operatorname{diag}(1,-1,-1,-1)$ the switch of the frame, the real sign matrix that also carries the left family onto the right one. The second identity says what a transpose does in this frame: it turns a left matrix into another left matrix, the one of the quaternion conjugate. The first says what must be added to reach the other side, namely one conjugation by the switch.</p>
-<p><strong>Why the second identity is the interesting half.</strong> Transposition alone never leaves the left. It gives another left multiplication, so an equation written $R_{\tilde Q}=L_{\tilde Q}^{\mathsf T}$ is false for every noncentral parameter, and it is false by a large margin, not by a sign. The right side is reached only when the transposed array is read through the sign matrix of the frame, and that sign matrix is the object the corpus calls the switch. The transposition of the two sides is a transpose together with a change of reading, and neither half can be dropped.</p>
+<p><strong>Why the second identity is the interesting half.</strong> Transposition alone never leaves the left. It gives another left multiplication, so $R_{\mathrm{axf}}(\tilde Q)=L_{\mathrm{axf}}(\tilde Q)^{\mathsf T}$ holds only for central $\tilde Q$: the two arrays differ by a sign on the six entries with one vector index, and equality forces the three vector coefficients to vanish. The right side is reached only when the transposed array is read through the sign matrix of the frame, and that sign matrix is the object the corpus calls the switch. The transposition of the two sides is a transpose together with a change of reading, and neither half can be dropped.</p>
 <p><strong>What the article proves.</strong> The identity is not an accident of one basis. At the level of operators it reads</p>
 <p>$$
 R_{\tilde Q}=\natural\,L_{\tilde Q^{\natural}}\,\natural,
@@ -119,10 +119,10 @@ R=
 \end{pmatrix}.
 $$</p>
 <p>They agree on the diagonal and in the first row and the first column, and they disagree on the six entries whose two indices are both vector: the pairs $(x,y)$, $(x,z)$ and $(y,z)$, each in its two orders.</p>
-<p><strong>The rule, and its reason.</strong> Two entries $(\mu,\nu)$ and $(\nu,\mu)$ of the two displays are equal when one of the two indices is $t$, and opposite when both are vector. The reason is the multiplication. The unit $e_t$ is the identity, so the $\nu$-th columns of the two displays differ by the exchange of the two factors with $e_\nu$, which is no exchange at all when $\nu=t$; while distinct vector units anticommute, $\vec e_k\vec e_l=-\vec e_l\vec e_k$, so a product of two of them changes sign when the order of the factors is exchanged. The six signs by which the displays differ are the non-commutativity of the algebra and nothing else. In a commutative algebra the two displays would coincide.</p>
+<p><strong>The rule, and its reason.</strong> The entry $(\mu,\nu)$ of the left display is the $\mu$-th coordinate of $\tilde Qe_\nu$, and the entry $(\mu,\nu)$ of the right display is the $\mu$-th coordinate of $e_\nu\tilde Q$. The two agree when $\mu=\nu$, when $\nu=t$ and when $\mu=t$, and they are opposite in the remaining six places. The reason is the multiplication table. The row $t$ of the table is the identity, so the coordinate $t$ of a product is read without any reordering of the factors; the row $k$ carries the two remaining vector coordinates with opposite signs, so a coordinate $k$ changes sign exactly when the second factor is a vector unit other than $\vec e_k$. The six signs by which the displays differ are therefore the non-commutativity of the algebra and nothing else, and in a commutative algebra the two displays would coincide.</p>
 <p><strong>What the six signs are not.</strong> They are not a defect of the frame. A change of basis conjugates both arrays at once, so it preserves the fact that they differ, and it moves the difference around. The six entries that carry it are named by the multiplication table and not by the basis.</p>
 <h2 id="the-transpose-of-a-left-matrix">The Transpose of a Left Matrix</h2>
-<p><strong>The observation.</strong> The left display is diagonal, and off the diagonal it is skew: $L_{\mu\nu}=-L_{\nu\mu}$ whenever $\mu\ne\nu$. The transpose therefore has the diagonal of the display and the negative of the display everywhere else, which is one line:</p>
+<p><strong>The observation.</strong> The left display carries $Q_t$ on the diagonal and is skew off it: $L_{\mu\nu}=-L_{\nu\mu}$ whenever $\mu\ne\nu$. The transpose therefore has the diagonal of the display and the negative of the display everywhere else, which is one line:</p>
 <p>$$
 L_{\mathrm{axf}}(\tilde Q)^{\mathsf T}=2Q_t\,\mathrm I_4-L_{\mathrm{axf}}(\tilde Q).
 $$</p>
@@ -130,7 +130,7 @@ $$</p>
 <p>$$
 L_{\mathrm{axf}}(\tilde Q)^{\mathsf T}=L_{\mathrm{axf}}(\tilde Q^{\natural}).
 $$</p>
-<p>The transpose of a left matrix is a left matrix. It is the left matrix of the quaternion conjugate, and it is not the right matrix: the right display is not of the form $2Q_t\mathrm I_4-M$ for any array $M$ agreeing with $L$ on the diagonal, since it agrees with $L$ on six off-diagonal entries and not on the other six.</p>
+<p>The transpose of a left matrix is a left matrix. It is the left matrix of the quaternion conjugate, and it is not the right matrix: the right display agrees with the transpose on the diagonal and on the six entries with two vector indices, and differs from it by a sign on the six with one vector index.</p>
 <p><strong>The reading.</strong> Transposition exchanges the two indices of every entry. In this frame the two indices play symmetric roles in the scalar part and antisymmetric roles in the vector part, and the transpose reads exactly that antisymmetry. It is not a change of side but a change of element, and the element it produces is the quaternion conjugate.</p>
 <p><strong>The same shape in the Peirce frame.</strong> There the left matrix is the tensor product $\mathrm I_2\otimes\mathsf M_2(\tilde Q)$, so its transpose is $\mathrm I_2\otimes\mathsf M_2(\tilde Q)^{\mathsf T}$, a left matrix again. It is the left matrix of the element whose $2\times2$ image is $\mathsf M_2(\tilde Q)^{\mathsf T}$, and that element is the exchange $S\tilde Q$ of <em>Operators Acting on One Side</em>, §<em>The Flip of the Two Mixed Units</em>. In both frames the transpose of a left matrix is a left matrix; what differs from frame to frame is the element the transpose implements, $\natural$ in the axis-free frame and $S$ in the Peirce frame.</p>
 <h2 id="the-switch-restores-the-six-entries">The Switch Restores the Six Entries</h2>
@@ -149,7 +149,7 @@ R_{\mathrm{axf}}(\tilde Q)=\mathsf D\,L_{\mathrm{axf}}(\tilde Q)^{\mathsf T}\mat
 \qquad
 L_{\mathrm{axf}}(\tilde Q)=\mathsf D\,R_{\mathrm{axf}}(\tilde Q)^{\mathsf T}\mathsf D .
 $$</p>
-<p>Each family is the transposed image of the other. Both forms are checked on the four units and extended by linearity, and both hold at residual $0$ on $100$ random elements.</p>
+<p>Each family is the transposed image of the other. Both forms hold at residual $0$ on $100$ random elements.</p>
 <h2 id="the-anti-automorphism-behind-the-transpose">The Anti-Automorphism Behind the Transpose</h2>
 <p><strong>Definition.</strong> An <strong>anti-automorphism</strong> of $\mathbb{B}$ is an additive bijection $\tau$ with</p>
 <p>$$
@@ -193,10 +193,10 @@ $$</p>
 </tr>
 </tbody>
 </table></div>
-<p><strong>The trap.</strong> The coefficient conjugation is the standing error of the subject. It looks like a change of side, because it changes every coefficient, and it exchanges nothing: an identity built on it is false for every noncentral parameter. The failure is not a sign. It is the whole difference between an automorphism and an anti-automorphism, which on this algebra is the whole of the vector part.</p>
+<p><strong>The trap.</strong> The coefficient conjugation is the standing error of the subject. It looks like a change of side, because it changes every coefficient, and it exchanges nothing: an identity built on it fails for every noncentral parameter. The mistake is structural and not numerical. The transport of a parameter needs an anti-automorphism, the coefficient conjugation is an automorphism, and the sign it does not supply is the sign of the three vector units, which is the sign that reverses the products.</p>
 <h3 id="all-the-complex-linear-ones">All the Complex-Linear Ones</h3>
 <p><strong>Proposition.</strong> For every invertible $\tilde U$ the map $\tau_{\tilde U}(\tilde X)=\tilde U\natural(\tilde X)\tilde U^{-1}$ is a complex-linear anti-automorphism, and every complex-linear anti-automorphism arises this way.</p>
-<p><em>Proof.</em> The composite of the anti-automorphism $\natural$ with two inner automorphisms is an anti-automorphism, and it is complex-linear. Conversely, the composite of two anti-automorphisms is an automorphism, every $\mathbb{C}$-linear automorphism of a central simple algebra is inner (<em>Biquaternion Automorphisms and Derivations</em>, §<em>Skolem–Noether</em>), and $\natural$ is one anti-automorphism.</p>
+<p><em>Proof.</em> The composite of the anti-automorphism $\natural$ with two inner automorphisms is an anti-automorphism, and it is complex-linear. Conversely, the composite of two anti-automorphisms is an automorphism, every $\mathbb{C}$-linear automorphism of a central simple algebra is inner (<em>Biquaternion Automorphisms and Derivations</em>, §<em>Standing Facts: Simplicity and the Centre</em>), and $\natural$ is one anti-automorphism.</p>
 <p><strong>The order is not order two.</strong> For a general $\tilde U$ the map $\tau_{\tilde U}$ is not an involution: $\tau_{\tilde U}^2$ is the inner automorphism by $\tilde U\natural(\tilde U)$, which is the identity only when that product is central. The identity of the next section needs no more than an anti-automorphism, and it is written with $\tau^{-1}$ for that reason.</p>
 <h2 id="conjugation-by-an-anti-automorphism">Conjugation by an Anti-Automorphism</h2>
 <p><strong>Theorem (the two families are conjugate).</strong> For an anti-automorphism $\tau$ and every $\tilde Q$,</p>
@@ -205,17 +205,16 @@ $$</p>
 \tau R_{\tilde Q}\tau^{-1}=L_{\tau(\tilde Q)} .
 $$</p>
 <p><em>Proof.</em> $\tau\bigl(L_{\tilde Q}\tau^{-1}\tilde Y\bigr)=\tau\bigl(\tilde Q\,\tau^{-1}\tilde Y\bigr)=\tau(\tau^{-1}\tilde Y)\,\tau(\tilde Q)=\tilde Y\,\tau(\tilde Q)=R_{\tau(\tilde Q)}\tilde Y$ for every $\tilde Y$, and $\tau$ is a bijection. The second identity is the same computation with the two factors exchanged, and $\tau^{-1}$ is an anti-automorphism of the same grade.</p>
-<p><strong>Corollary (one family in two frames).</strong> The map $T\mapsto\tau T\tau^{-1}$ on $\operatorname{End}_{\mathbb{C}}(\mathbb{B})$ is multiplicative and exchanges the two images, $\tau L(\mathbb{B})\tau^{-1}=R(\mathbb{B})$ and $\tau R(\mathbb{B})\tau^{-1}=L(\mathbb{B})$. It is $\mathbb{C}$-linear in $T$ when $\tau$ is, and conjugate-linear when $\tau$ is antilinear.</p>
+<p><strong>Corollary (the two images are exchanged).</strong> The map $T\mapsto\tau T\tau^{-1}$ on $\operatorname{End}_{\mathbb{C}}(\mathbb{B})$ is multiplicative and exchanges the two images, $\tau L(\mathbb{B})\tau^{-1}=R(\mathbb{B})$ and $\tau R(\mathbb{B})\tau^{-1}=L(\mathbb{B})$. It is $\mathbb{C}$-linear in $T$ when $\tau$ is, and conjugate-linear when $\tau$ is antilinear.</p>
 <p><strong>Corollary (a two-sided operator stays two-sided).</strong> $\tau\bigl(L_{\tilde Q_1}R_{\tilde Q_2}\bigr)\tau^{-1}=L_{\tau(\tilde Q_2)}R_{\tau(\tilde Q_1)}$. The sides exchange and the parameters are carried. The corpus records the case $\tau=\natural$ in one line, $\natural L_{\tilde Q}\natural=R_{\tilde Q^{\natural}}$ (<em>Operator Chirality on the Biquaternion Algebra</em>, §<em>Conjugation Exchanges the Sides</em>).</p>
 <h3 id="three-maps-that-are-not-this-one">Three Maps That Are Not This One</h3>
-<p><strong>The array, the adjoint and the swap.</strong> The word transposition names one of four maps that are easy to confuse.</p>
+<p><strong>The three.</strong> Three maps are easy to confuse with this one, and each answers a different question.</p>
 <ul>
 <li>The <strong>matrix transpose</strong> acts on arrays and not on operators. It depends on the frame, and the entry $M^{\mathsf T}$ has the two indices of $M$ exchanged.</li>
 <li>The <strong>associate</strong> $F^{\approx}$ of <em>Adjoint Pair of $L$ and $R$ Operators</em> is an adjoint, defined by the plain bilinear form, and it exchanges the families while keeping the parameter: $(L_{\tilde Q})^{\approx}=R_{\tilde Q}$.</li>
 <li>The <strong>swap</strong> $\sigma$ of <em>Operator Chirality on the Biquaternion Algebra</em> exchanges the two slots and keeps the parameter, $\sigma(L_aR_b)=L_bR_a$, and it is not inner.</li>
-<li>Conjugation by an <strong>anti-automorphism</strong> reverses the order of the products and carries the parameter through $\tau$, $\tau L_{\tilde Q}\tau^{-1}=R_{\tau(\tilde Q)}$.</li>
 </ul>
-<p>The four answer four different questions. The associate and the swap describe where an operator sits, and they leave the parameter alone. The conjugation moves the parameter, and it is the one the display realises, because a transpose moves the entries of an array and not the operator they display.</p>
+<p><strong>The fourth, which is this one.</strong> Conjugation by an anti-automorphism reverses the order of the products and carries the parameter, $\tau L_{\tilde Q}\tau^{-1}=R_{\tau(\tilde Q)}$. The associate and the swap describe where an operator sits, and they leave the parameter alone; the conjugation moves the parameter. It is the one the display realises, because a transpose moves the entries of an array and not the operator they display.</p>
 <p><strong>The transposition, with no matrix.</strong> Take $\tau=\natural$. The matrix of $\natural$ in the axis-free frame is $\mathsf D$, so the matrix of $\natural L_{\tilde Q}\natural$ is $\mathsf D\,L_{\mathrm{axf}}(\tilde Q)\,\mathsf D$. The theorem therefore reads</p>
 <p>$$
 \natural\,L_{\tilde Q}\,\natural=R_{\tilde Q^{\natural}},
@@ -273,7 +272,7 @@ $$</p>
 <h2 id="the-parameter">The Parameter</h2>
 <p><strong>Proposition.</strong> $R_{\tilde Q}=L_{\tilde Q}$ exactly when $\tilde Q$ is central.</p>
 <p><em>Proof.</em> The identity $\tilde X\tilde Q=\tilde Q\tilde X$ for every $\tilde X$ is the definition of the centre, which is $\mathbb{C}e_t$.</p>
-<p><strong>Proposition (the shortcut on a fixed space).</strong> If $\tau(\tilde Q)=\tilde Q$, then $\tau(\tilde X\tilde Q)=\tilde Q\,\tau(\tilde X)$ for every $\tilde X$: on the fixed space of an anti-automorphism, the right multiplication by $\tilde Q$ is the left multiplication by $\tilde Q$ read on the reversed element.</p>
+<p><strong>Proposition (the shortcut on a fixed space).</strong> If $\tau(\tilde Q)=\tilde Q$, then $\tau R_{\tilde Q}=L_{\tilde Q}\tau$: on the fixed space of an anti-automorphism, a right multiplication by $\tilde Q$ is a left multiplication by $\tilde Q$ once $\tau$ is carried through.</p>
 <p><em>Proof.</em> $\tau(\tilde X\tilde Q)=\tau(\tilde Q)\tau(\tilde X)=\tilde Q\tau(\tilde X)$.</p>
 <p>The fixed spaces are the last column of the table of §<em>The Three Maps of the Coefficient Frame</em>: the centre for $\natural$, where the shortcut is the triviality $R=L$, and the sector $\mathbb{B}_{\Psi}$ for $\ast$, where it is a genuine transfer, since $R_{\tilde Q}\ne L_{\tilde Q}$ off the centre.</p>
 <p><strong>The two errors, which are distinct.</strong> The first is to take the coefficient conjugation for an anti-automorphism: it preserves the product, so the family it is expected to exchange is not exchanged, and the identity it is expected to give fails for every noncentral parameter. The second is to drop the transport of the parameter: the identity $\tau(\tilde X\tilde Q)=\tilde Q\tau(\tilde X)$ holds on the fixed space and nowhere else, so an equation written with the same parameter on both sides is a statement about a fixed point of $\tau$ and not a general one.</p>
