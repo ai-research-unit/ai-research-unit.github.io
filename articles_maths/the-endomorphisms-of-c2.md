@@ -141,7 +141,7 @@ $$
 
 *Proof.* A submodule is a complex subspace stable under every operator; the only such subspaces are $0$ and the whole space, since the operators $E_{jk}$ move any nonzero vector to any other. Faithfulness is the definition of the endomorphism algebra as a subalgebra of the maps. Uniqueness is the classification of the simple modules over a matrix algebra (*The Regular Module in the Biquaternion Algebra* and *Modules over an Algebra*).
 
-**Remark (the choices behind the identification).** The isomorphism $\mathbb{B}\cong M_2(\mathbb{C})$ is not canonical: it depends on the choice of the complex basis of $\mathbb{C}^2$ and on the identification of the quaternion units with the three matrices above. **What is canonical is the algebra of operators and its action on the space**; the matrix model is a coordinate reading, and the conjugations of the biquaternion algebra are read on the matrices by the corresponding conjugations (*The Element, the Coordinates and the Conjugations* and *The Four Adjoints of the Biquaternion Algebra in Examples*).
+**Remark (the choices behind the identification).** The isomorphism $\mathbb{B}\cong M_2(\mathbb{C})$ is not canonical: it depends on the choice of the complex basis of $\mathbb{C}^2$ and on the identification of the quaternion units with the three matrices above. **What is canonical is the algebra of operators and its action on the space**; the matrix model is a coordinate reading, and the conjugations of the biquaternion algebra are read on the matrices by the corresponding conjugations (*The Element, the Coordinates and the Conjugations* and *Adjoint Pair of $L$ and $R$ Operators*).
 
 ## Summary
 

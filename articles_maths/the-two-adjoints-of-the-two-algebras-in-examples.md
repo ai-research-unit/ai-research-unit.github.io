@@ -60,4 +60,4 @@ The plain product has the adjoint rule $L_{\tilde q_3}^{\dagger}=R_{\tilde q_3}$
 - [Association and the Transpose on the Quaternion Algebra](association-and-the-transpose-on-the-quaternion-algebra.html), above this article in this category.
 - [Two-Sided Operators on the General Quaternionic Algebra of the Quaternions](two-sided-operators-on-the-general-quaternionic-algebra-of-the-quaternions.html), above this article in this category.
 - [The 2 Forms over the Quaternioid $\mathbb{R}$ Space](the-2-forms-over-the-quaternioid-r-space.html), above this article in this category.
-- [The Four Adjoints of the Biquaternion Algebra in Examples](the-four-adjoints-of-the-biquaternion-algebra-in-examples.html), for the complex rung.
+- [Adjoint Pair of $L$ and $R$ Operators](adjoint-pair-of-l-and-r-operators.html), for the complex rung.

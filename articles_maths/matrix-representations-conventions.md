@@ -32,7 +32,7 @@ The article assumes the base of *Algebra and Element Conventions* and the Peirce
 
 **Two kinds of matrix model read the algebra.** The **isomorphism** $\mathsf{M}_2:\mathbb{B}\to M_2(\mathbb{C})$ reads the element itself as a $2\times2$ complex matrix, of the algebra's own size. The **regular representation** reads multiplication as a linear map on the algebra taken as a complex vector space, and its target is $\mathrm{End}_{\mathbb{C}}(\mathbb{B})=M_4(\mathbb{C})$; its image is a four-dimensional subspace of that ambient algebra, not the ambient algebra. The two are different representations, not two sizes of one.
 
-**The matrices are the matrices of operators.** Every array of this chapter is the matrix of a complex-linear operator of $\mathbb{B}$ read in a basis; the operator is the object and the array is one display of it. The two elementary operators are the multiplications $L_{\tilde Q}$ and $R_{\tilde Q_2}$, and their product is the **two-sided operator** of *Two-Sided Operators on the Biquaternion Algebra*,
+**The matrices are the matrices of operators.** Every array of this chapter is the matrix of a complex-linear operator of $\mathbb{B}$ read in a basis; the operator is the object and the array is one display of it. The two elementary operators are the multiplications $L_{\tilde Q}$ and $R_{\tilde Q_2}$, and their product is the **two-sided operator** of *Operators Acting 2 Side*,
 $$
 L_{\tilde Q}R_{\tilde Q_2}:\mathbb{B}\longrightarrow\mathbb{B},
 \qquad
@@ -733,7 +733,7 @@ with $\varepsilon=(1,-1,-1,-1)$ the plain weight. No index is raised or lowered:
 | $3$ | $L_{\mathrm{pau},e_t}R_{\mathrm{pau},\vec e_y}$, $L_{\mathrm{pau},\vec e_x}R_{\mathrm{pau},\vec e_x}$, $L_{\mathrm{pau},\vec e_y}R_{\mathrm{pau},\vec e_x}$, $L_{\mathrm{pau},\vec e_z}R_{\mathrm{pau},\vec e_x}$ |
 | $4$ | $L_{\mathrm{pau},e_t}R_{\mathrm{pau},\vec e_z}$ |
 
-Each row lists the basis operators of one grade, and the counts are $1+4+6+4+1=16$. The frame is one frame among many: another orthogonal pair $(\beta,\delta)$ gives another five basis operators, the relations survive, and the basis operator labels do not. The proof, and the freedom in the choice of frame, are in *Two-Sided Operators on the Biquaternion Algebra*, §*Composition and the Two Closures*.
+Each row lists the basis operators of one grade, and the counts are $1+4+6+4+1=16$. The frame is one frame among many: another orthogonal pair $(\beta,\delta)$ gives another five basis operators, the relations survive, and the basis operator labels do not. The proof, and the freedom in the choice of frame, are in *Operators Acting 2 Side*, §*Composition and the Two Closures*.
 
 **The opposite algebra is written with three letters.** The opposite of an algebra, with the product reversed, carries the superscript $\mathrm{opp}$: the reversed product is $a\cdot_{\mathrm{opp}}b=ba$, and the opposite of $\mathbb{B}$ is $\mathbb{B}_{\mathrm{opp}}$. The two-letter form $\mathrm{op}$ is not used at all, neither for the opposite algebra nor for the operator norm, which is written $\lVert A\rVert$ (*Index and Notation Conventions*, §*The Labels*). The competing norms keep their own labels, $\lVert A\rVert_{\mathrm{HS}}$, $\lVert A\rVert_{\mathrm{nuc}}$, $\lVert A\rVert_F$, $\lVert A\rVert_*$.
 
@@ -959,5 +959,5 @@ Its eight unit matrices are real signed permutations, its stitch is $R_{\mathrm{
 - [$M_4(\mathbb{C})$ Axis-Free Representation](m4c-axis-free-representation.html) and [$M_4(\mathbb{C})$ Axis-Free Representation : Operators](m4c-axis-free-representation-operators.html), for the matrices, the product, the trace, the determinant and the sixteen basis operators in the coefficient basis.
 - [$M_4(\mathbb{C})$ Pauli Representation](m4c-pauli-representation.html) and [$M_4(\mathbb{C})$ Pauli Representation : Operators](m4c-pauli-representation-operators.html), for the Peirce frame, the switch and the same objects in it.
 - [$M_2(\mathbb{C})$ Pauli Representation](m2c-pauli-representation.html), for the $2\times2$ isomorphism read in full.
-- [Two-Sided Operators on the Biquaternion Algebra](two-sided-operators-on-the-biquaternion-algebra.html), for the sixteen basis operators, the frame and the proof of the basis operator table.
+- [Operators Acting 2 Side](operators-acting-2-side.html), for the sixteen basis operators, the frame and the proof of the basis operator table.
 - [Index and Notation Conventions](index-and-notation-conventions.html), for the superscripts, the labels and the retired names.

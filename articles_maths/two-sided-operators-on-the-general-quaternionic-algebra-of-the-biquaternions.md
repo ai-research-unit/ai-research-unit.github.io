@@ -185,7 +185,7 @@ The **twisted two-sided operator** of the biquaternion algebra is $\mathrm{Sd}_{
 
 ## Further Reading
 
-- [The Four Adjoints of the Biquaternion Algebra in Examples](the-four-adjoints-of-the-biquaternion-algebra-in-examples.html), for the signed inner conjugation $\tilde Q_6^{\natural}\tilde Q_4\tilde Q_6^{-1}$ against the unsigned $\tilde Q_6\tilde Q_4\tilde Q_6^{-1}$, their difference $-2\vec Q_6\tilde Q_4\tilde Q_6^{-1}$ and the two matrices of the sign
+- [Adjoint Pair of $L$ and $R$ Operators](adjoint-pair-of-l-and-r-operators.html), for the signed inner conjugation $\tilde Q_6^{\natural}\tilde Q_4\tilde Q_6^{-1}$ against the unsigned $\tilde Q_6\tilde Q_4\tilde Q_6^{-1}$, their difference $-2\vec Q_6\tilde Q_4\tilde Q_6^{-1}$ and the two matrices of the sign
 - [One-Sided Operators on the General Quaternionic Algebra of the Biquaternions](one-sided-operators-on-the-general-quaternionic-algebra-of-the-biquaternions.html), for the factors
 - [The Pin and Spin Groups of the General Quaternionic Algebra of the Biquaternions](the-pin-and-spin-groups-of-the-general-quaternionic-algebra-of-the-biquaternions.html), for the groups cut out by the norm
 - [The Four Forms and the Four Algebraic Norms over the Biquaternion Algebra](the-four-forms-and-the-four-algebraic-norms-over-the-biquaternion-algebra.html), for the general quaternionic bilinear form and its Gram matrix

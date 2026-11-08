@@ -8,7 +8,7 @@
 
 **The three numbers.** The parametrisation has $2n^{2}$ complex parameters, its generic fibre is a single scaling orbit of dimension one, and the image has dimension $2n^{2}-1$. At $n=2$ this is $8-1=7$, the dimension of the cone of the biquaternion algebra; at $n=3$ it is $17$; at $n=4$ it is $31$.
 
-**Boundaries.** The one-sided families are *The One-Sided Operators of $M_n(\mathbb{C})$*; the general construction is *The Regular Representation in Dimension $n$*; the coefficient array and the length are *The Length and the Two Ranks on $M_n(\mathbb{C})$*; the sandwich, the adjoints and the difference family are *The Sandwich, the Difference Family and the Adjoints of $M_n(\mathbb{C})$*. At $n=2$ the abstract family is *Two-Sided Operators on the Biquaternion Algebra*, the frame and the sixteen basis operators are *$M_4(\mathbb{C})$ Pauli Representation : Operators*, and the entry-by-entry array is *The Coefficient Matrix of a Two-Sided Operator: A Worked Computation*. The Hermitian sandwich is Part V.
+**Boundaries.** The one-sided families are *The One-Sided Operators of $M_n(\mathbb{C})$*; the general construction is *The Regular Representation in Dimension $n$*; the coefficient array and the length are *The Length and the Two Ranks on $M_n(\mathbb{C})$*; the sandwich, the adjoints and the difference family are *The Sandwich, the Difference Family and the Adjoints of $M_n(\mathbb{C})$*. At $n=2$ the abstract family is *Operators Acting 2 Side*, the frame and the sixteen basis operators are *$M_4(\mathbb{C})$ Pauli Representation : Operators*, and the entry-by-entry array is *The Coefficient Matrix of a Two-Sided Operator: A Worked Computation*. The Hermitian sandwich is Part V.
 
 **Conventions.** The algebra is $A=M_{n}(\mathbb{C})$ of complex dimension $N=n^{2}$; the operator space is $\operatorname{End}(A)$, of dimension $N^{2}=n^{4}$. The operator is $L_{A}R_{B}$, acting by $L_{A}R_{B}(X)=AXB$. In the column-stacking basis $L_{A}=\mathrm I_{n}\otimes A$, $R_{B}=B^{\mathsf T}\otimes\mathrm I_{n}$ and therefore
 $$
@@ -242,5 +242,5 @@ The two one-sided copies are the two rulings of the cone and meet in the scalars
 - [The One-Sided Operators of $M_n(\mathbb{C})$](the-one-sided-operators-of-mnc.html), for the two rulings of the cone.
 - [The Regular Representation in Dimension $n$](the-regular-representation-in-dimension-n.html), for the tensor form and the ladder.
 - [The Length and the Two Ranks on $M_n(\mathbb{C})$](the-length-and-the-two-ranks-on-mnc.html), for the coefficient array which cuts the cone out by minors.
-- [Two-Sided Operators on the Biquaternion Algebra](two-sided-operators-on-the-biquaternion-algebra.html), for the abstract family at $n=2$.
+- [Operators Acting 2 Side](operators-acting-2-side.html), for the abstract family at $n=2$.
 - [$M_4(\mathbb{C})$ Pauli Representation : Operators](m4c-pauli-representation-operators.html), for the sixteen basis operators and the Peirce gauge.

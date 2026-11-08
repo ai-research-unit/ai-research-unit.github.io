@@ -45,18 +45,18 @@ These numbers are worth reading twice. The second says that the two sides overla
 The two families are not two constructions of one object. They are the two factors of a tensor square. The multiplication defines
 
 $$
-\Phi\colon\mathbb{B}\otimes_{\mathbb{C}}\mathbb{B}\to\operatorname{End}_{\mathbb{C}}(\mathbb{B}),\qquad \Phi(a\otimes b)=L_aR_b ,
+\Xi\colon\mathbb{B}\otimes_{\mathbb{C}}\mathbb{B}\to\operatorname{End}_{\mathbb{C}}(\mathbb{B}),\qquad \Xi(a\otimes b)=L_aR_b ,
 $$
 
-and $\Phi$ is an isomorphism, because for any basis $e_1,\dots,e_4$ the sixteen basis operators $L_{e_\mu}R_{e_\nu}$ are independent: an operator on a four-dimensional space is an arbitrary array of sixteen numbers, and the basis operators supply the sixteen coordinate directions. Under $\Phi$ the two sides become the two factors, and their overlap becomes the tensor of the two units:
+and $\Xi$ is an isomorphism, because for any basis $e_1,\dots,e_4$ the sixteen basis operators $L_{e_\mu}R_{e_\nu}$ are independent: an operator on a four-dimensional space is an arbitrary array of sixteen numbers, and the basis operators supply the sixteen coordinate directions. Under $\Xi$ the two sides become the two factors, and their overlap becomes the tensor of the two units:
 
 $$
-L(\mathbb{B})=\Phi(\mathbb{B}\otimes e_t),\qquad
-R(\mathbb{B})=\Phi(e_t\otimes\mathbb{B}),\qquad
-L(\mathbb{B})\cap R(\mathbb{B})=\Phi(e_t\otimes e_t).
+L(\mathbb{B})=\Xi(\mathbb{B}\otimes e_t),\qquad
+R(\mathbb{B})=\Xi(e_t\otimes\mathbb{B}),\qquad
+L(\mathbb{B})\cap R(\mathbb{B})=\Xi(e_t\otimes e_t).
 $$
 
-This is the technical core of the article. A basis operator $L_aR_b$ is a coordinate of $\Phi$ and not a primitive object, and a statement written in basis operators is a statement about $\Phi$ which becomes intrinsic once it is written in the two images.
+This is the technical core of the article. A basis operator $L_aR_b$ is a coordinate of $\Xi$ and not a primitive object, and a statement written in basis operators is a statement about $\Xi$ which becomes intrinsic once it is written in the two images.
 
 **Definition.** An operator has the **left slot** when it lies in $L(\mathbb{B})$, the **right slot** when it lies in $R(\mathbb{B})$, **both slots** when it lies in the intersection, and **no single side** otherwise:
 
@@ -74,10 +74,10 @@ The label is also a name and not a quantity. It is not additive: $L_a+L_c$ has t
 
 ## The Swap
 
-The two sides are exchanged by one canonical involution, and that involution does the work the older reading asked of a single multiplier built from a chosen element. It is defined on the tensor square and transported by $\Phi$. Let $\tau$ be the flip of the two factors, $\tau(a\otimes b)=b\otimes a$, and put
+The two sides are exchanged by one canonical involution, and that involution does the work the older reading asked of a single multiplier built from a chosen element. It is defined on the tensor square and transported by $\Xi$. Let $\tau$ be the flip of the two factors, $\tau(a\otimes b)=b\otimes a$, and put
 
 $$
-\sigma=\Phi\circ\tau\circ\Phi^{-1},\qquad\text{so that}\qquad \sigma(L_aR_b)=L_bR_a .
+\sigma=\Xi\circ\tau\circ\Xi^{-1},\qquad\text{so that}\qquad \sigma(L_aR_b)=L_bR_a .
 $$
 
 The rule exchanges the two entries of an elementary tensor; it refers to no basis. It is well defined because the basis operators are a basis of the endomorphism algebra, so every operator has one coefficient array and the rule permutes its two indices.
@@ -150,16 +150,16 @@ On the sixteen coefficients of the basis operators the statement is shorter stil
 
 An involution splits the algebra it acts on, and this one splits it into a fixed part and a negated part. The two parts have dimensions ten and six, and each is closed under an operation of its own.
 
-The fixed operators are the self-adjoint ones, $\sigma(X)=X$, and they are the image under $\Phi$ of the symmetric square:
+The fixed operators are the self-adjoint ones, $\sigma(X)=X$, and they are the image under $\Xi$ of the symmetric square:
 
 $$
-\operatorname{Fix}(\sigma)=\Phi\bigl(\operatorname{Sym}^2\mathbb{B}\bigr),\qquad \dim=10 .
+\operatorname{Fix}(\sigma)=\Xi\bigl(\operatorname{Sym}^2\mathbb{B}\bigr),\qquad \dim=10 .
 $$
 
 The negated operators are the skew-adjoint ones, $\sigma(X)=-X$, and they are the image of the exterior square:
 
 $$
-\operatorname{Neg}(\sigma)=\Phi\bigl(\Lambda^2\mathbb{B}\bigr),\qquad \dim=6 .
+\operatorname{Neg}(\sigma)=\Xi\bigl(\Lambda^2\mathbb{B}\bigr),\qquad \dim=6 .
 $$
 
 The second space is spanned by the six differences $L_aR_b-L_bR_a$, which are the commutators $[L_a,R_b]$ because the two regular maps commute. With $10+6=16$ the two spaces account for the algebra.
@@ -266,26 +266,30 @@ The one genuine contact between the two theories is an identity, and it should b
 
 ## Why the Slot Label Is Not a Grading
 
-A $\mathbb{Z}/2$ grading is a decomposition into two subspaces with a multiplicative sign, equivalently a homomorphism to $\{\pm1\}$. The label is not one, and the obstruction is a single operator.
+A $\mathbb{Z}/2$ grading of an algebra is a decomposition $E_0\oplus E_1$ with $E_iE_j\subseteq E_{i+j}$, and a grading by a larger group is a decomposition into more subspaces. The label is not one, and three facts settle it.
 
-Suppose such a sign existed, taking $+1$ on a left multiplier and $-1$ on a right multiplier of a noncentral element. The scalar $\lambda\mathrm I$ is the left multiplier of $\lambda e_t$ and the right multiplier of $\lambda e_t$ at the same time, so it would have to carry both values. The label has four cases and a sign has two, and it is the third case that collapses the map from one to the other. There is nothing to repair: the endomorphism algebra is simple and has no nontrivial central idempotent, so no nontrivial grading exists in the first place.
+**A grading is a decomposition into subspaces, and the label is not.** Its fourth case, *no single side*, is the complement of a union and not a subspace, so no grading returns it, whatever the rank of the group. The count says the same thing in one line: two parts against four cases.
+
+**The algebra does carry a grading, and it is not the label.** In one display, chosen for this example and used for nothing else, split $\operatorname{End}_{\mathbb{C}}(\mathbb{B})$ into $2+2$ blocks and let $E_0$ be the block-diagonal arrays and $E_1$ the block-off-diagonal ones. Then $E_iE_j\subseteq E_{i+j}$, so the split is a grading, and each part is eight-dimensional. It is not the label, for two reasons. A part of a grading is a subspace, and the case *no single side* is not one. And the scalar line $\mathbb{C}\mathrm I$ lies in $E_0$ and carries the label *both slots*, so one part holds two different labels, and the grading is not a relabelling of the four cases.
+
+**A sign is stronger than a grading, and there is none.** A sign would be a multiplicative map $\chi$ to $\{0,+1,-1\}$, with $\chi(XY)=\chi(X)\chi(Y)$, taking $+1$ on a left multiplier and $-1$ on a right multiplier of a noncentral element. The scalar $\lambda\mathrm I$ is the left multiplier of $\lambda e_t$ and the right multiplier of the same element, so it would carry both values at once. No $\chi$ separates the two sides, and the count of four cases against two values says the same thing without a computation.
 
 What the swap gives instead is an exchange, and an exchange is not a sign. It carries one side to the other, answers the question "which side" by moving the operator rather than by labelling it, and splits the algebra into a self-adjoint and a skew-adjoint part of dimensions ten and six, with two different closing operations.
 
-A sign, when the physics wants one, has to be chosen as an operator. Any $R_u$ with $u$ traceless and $u^2=-e_t$ supplies it, and its two projectors are the two halves. The sign is therefore an object of the algebra and not a functional on it, which is why no grading is ever exhibited: there is none, and the sign is a choice of $u$. The contrast is the moral of the article. The label is fixed before anything is chosen, and the sign moves when $u$ moves; confusing the two is what produces the impression that chirality is a matrix.
+A sign, when the physics wants one, has to be chosen as an operator. Any $R_u$ with $u$ traceless and $u^2=-e_t$ supplies it, and its two projectors are the two halves. The sign is therefore an object of the algebra and not a functional on it, which is why no sign is ever exhibited as a functional: there is none, and the sign is a choice of $u$. The contrast is the moral of the article. The label is fixed before anything is chosen, and the sign moves when $u$ moves; confusing the two is what produces the impression that chirality is a matrix.
 
 ## Summary
 
 Operator chirality is the side on which an operator multiplies. The left multipliers form a four-dimensional image, the right multipliers another, the two meet in the scalars and span seven of the sixteen dimensions, and the remaining nine directions multiply on neither side alone. An operator is labelled left, right, both, or neither; the scalar line is the third case, and a two-sided basis operator is the fourth.
 
-Under the structure isomorphism $\Phi(a\otimes b)=L_aR_b$ the two sides are the two tensor factors and their overlap is the tensor of the two units. The exchange of the sides is the flip transported to the endomorphism algebra, $\sigma=\Phi\tau\Phi^{-1}$. It is intrinsic. It squares to the identity, reverses products, exchanges the two images and fixes the scalars. It carries every $L_a$ to $R_a$, preserves rank and length, and is not inner. It is the adjoint of the trace form, and in a basis where that form is diagonal it is the transpose through a sign matrix. Its fixed part is a ten-dimensional Jordan algebra and its negated part a six-dimensional Lie algebra, and the two are the symmetric and the exterior square.
+Under the structure isomorphism $\Xi(a\otimes b)=L_aR_b$ the two sides are the two tensor factors and their overlap is the tensor of the two units. The exchange of the sides is the flip transported to the endomorphism algebra, $\sigma=\Xi\tau\Xi^{-1}$. It is intrinsic. It squares to the identity, reverses products, exchanges the two images and fixes the scalars. It carries every $L_a$ to $R_a$, preserves rank and length, and is not inner. It is the adjoint of the trace form, and in a basis where that form is diagonal it is the transpose through a sign matrix. Its fixed part is a ten-dimensional Jordan algebra and its negated part a six-dimensional Lie algebra, and the two are the symmetric and the exterior square.
 
 The quaternion conjugate is the second side-exchanger, $\natural L(a)\natural=R(a^{\natural})$. It differs from the swap in that it conjugates the parameters and reverses their order, and the sign in which the two differ is the origin of every phase the corpus obtains from a change of side.
 
 None of this needs a root, an idempotent, a Peirce decomposition, a Peirce basis, a spectrum, a spinor, the module $S$, an ideal, a Clifford algebra, a matrix unit of a display, or the basis operator the older reading used. That basis operator is the instructive case: a pure right multiplier with square one, trace zero and a balanced spectrum, hence an example of the right side and not the definition of chirality, and built from a chosen element besides. The one contact with the Peirce theory is an identity forced by a shared element, and it is an identity of two constructions and not of two notions.
 
 $$
-\boxed{\ \text{chirality}=\text{the side};\qquad X\in L(\mathbb{B}),\ \ X\in R(\mathbb{B}),\ \ X\in L(\mathbb{B})\cap R(\mathbb{B}),\ \ \text{or neither};\qquad \sigma=\Phi\tau\Phi^{-1},\quad \sigma(L_a)=R_a .\ }
+\boxed{\ \text{chirality}=\text{the side};\qquad X\in L(\mathbb{B}),\ \ X\in R(\mathbb{B}),\ \ X\in L(\mathbb{B})\cap R(\mathbb{B}),\ \ \text{or neither};\qquad \sigma=\Xi\tau\Xi^{-1},\quad \sigma(L_a)=R_a .\ }
 $$
 
 ## Summary of Notation
@@ -297,13 +301,13 @@ $$
 | $L_aR_b$ | the basis operator, with a left and a right slot |
 | $L(\mathbb{B})$, $R(\mathbb{B})$ | the two images, four-dimensional, meeting in the centre |
 | left slot, right slot, both slots, no single side | operator chirality, a membership in the two images |
-| $\Phi(a\otimes b)=L_aR_b$ | the structure isomorphism $\mathbb{B}\otimes_{\mathbb{C}}\mathbb{B}\to\operatorname{End}_{\mathbb{C}}(\mathbb{B})$ |
+| $\Xi(a\otimes b)=L_aR_b$ | the structure isomorphism $\mathbb{B}\otimes_{\mathbb{C}}\mathbb{B}\to\operatorname{End}_{\mathbb{C}}(\mathbb{B})$ |
 | $\tau(a\otimes b)=b\otimes a$ | the flip of the two tensor factors |
-| $\sigma=\Phi\tau\Phi^{-1}$ | the swap, $\sigma(L_aR_b)=L_bR_a$ |
+| $\sigma=\Xi\tau\Xi^{-1}$ | the swap, $\sigma(L_aR_b)=L_bR_a$ |
 | $\beta(\tilde X,\tilde Y)=\operatorname{Sc}(\tilde X\tilde Y)$ | the trace form, symmetric and nondegenerate |
 | $\mathsf W$, $\mathsf D$ | the Gram matrix of $\beta$ in a carrier basis, called the switch; it equals $\operatorname{diag}(1,-1,-1,-1)$ in the reference frame |
-| $\operatorname{Fix}(\sigma)=\Phi(\operatorname{Sym}^2\mathbb{B})$ | dimension $10$, a Jordan algebra under the anti-commutator |
-| $\operatorname{Neg}(\sigma)=\Phi(\Lambda^2\mathbb{B})$ | dimension $6$, a Lie algebra under the commutator |
+| $\operatorname{Fix}(\sigma)=\Xi(\operatorname{Sym}^2\mathbb{B})$ | dimension $10$, a Jordan algebra under the anti-commutator |
+| $\operatorname{Neg}(\sigma)=\Xi(\Lambda^2\mathbb{B})$ | dimension $6$, a Lie algebra under the commutator |
 | $\natural$ | the quaternion conjugate, $\natural L(a)\natural=R(a^{\natural})$ |
 | $\ell(M)$, $\operatorname{rank}M$ | the length and the rank, preserved by $\sigma$ |
 | $\tfrac12(\mathrm I+iR_u)$, with $u$ traceless and $u^2=-e_t$ | the rank-two projector of a right multiplier, Peirce and spectral at once |

@@ -5,11 +5,11 @@
 
 The four general products of $\mathbb{B}$ are four rules that pair two elements, and the corpus gives each of them an operator family: the plain bilinear product the *Association* family, the general quaternionic bilinear product the *Signed Inner Conjugation* family, the general plain sesquilinear product the *Hermitian Adjoint* family, and the general quaternionic sesquilinear product the Krein form, with the indefinite Hermitian sandwich and the Krein adjoint. A reader may conclude from that list that the product *decides* the operator, and may then ask whether the product decides whether an element acts as a rotation or as a reflection. **It does not.** The four general products have the same multiplication table of the units; they differ only in which conjugation is inserted into which slot of the pair. What they decide is the *pairing*, hence the adjoint, hence the name of the family. The action — a rotation, a reflection, an inner automorphism — is decided by the element and by the inserted sign, and the inserted sign is a choice among the involutions that the algebra already carries.
 
-**Scope.** This article states that division of labour precisely, with the matrices of one element read through all four insertions. It does not introduce the operator space: the complex-linear maps of $\mathbb{B}$ into itself, their matrices and the regular families are *The Endomorphisms of the Biquaternion Algebra*, which opens the group. This article is the narrower question that follows. Given that an operator is an element acting with an insertion, what do the four products decide about it?
+**Scope.** This article states that division of labour precisely, with the matrices of one element read through all four insertions. It does not introduce the operator space: the complex-linear maps of $\mathbb{B}$ into itself and their matrix form are *The Endomorphisms of the Biquaternion Algebra*, which opens the group. The two multipliers $L$ and $R$ are introduced in *Operator Chirality on the Biquaternion Algebra*, which follows it, and the letters carry that meaning throughout this article. This article is the narrower question that follows. Given that an operator is an element acting with an insertion, what do the four products decide about it?
 
 The answer to that question is therefore a negative one, and it agrees with the intuition that the algebra and its product come first and the operator is obtained from them by choosing the element and the insertion. The qualification is that the choice is not arbitrary: on the vector subspace the plain product cannot produce a reflection, only its negative, so that one insertion is *forced* by the algebra and not merely preferred.
 
-The four general products, their relations and their comparison are *The Four General Products and Their Relations over the Biquaternion Algebra*; the four pairings and their Gram matrices are *The Four Forms and the Four Algebraic Norms over the Biquaternion Algebra*; the four adjoints and the reading of the family names are *The Four Adjoints of the Biquaternion Algebra in Examples*; the conjugations and their group are *The Group of Involutions*; the signed sandwich and its reflection formula are *The Signed Sandwich on a Clifford Algebra* and *Two-Sided Operators with the Signed Product*. The article is pure algebra. The two insertions are also the subject of a group: each is an involution, they commute, and the four readings of a rule form the group $\mathbb{Z}_2\times\mathbb{Z}_2$. Read on a general algebra with two commuting anti-involutions, the same construction gives the slot family, whose second slot governs the composition and whose first slot governs the form, and the table of the slots records the four settings. That is §*The Four Readings and Their Group*.
+The four general products, their relations and their comparison are *The Four General Products and Their Relations over the Biquaternion Algebra*; the four pairings and their Gram matrices are *The Four Forms and the Four Algebraic Norms over the Biquaternion Algebra*; the four adjoints and the reading of the family names are *Adjoint Pair of $L$ and $R$ Operators*; the conjugations and their group are *The Group of Involutions*; the signed sandwich and its reflection formula are *The Signed Sandwich on a Clifford Algebra* and *Two-Sided Operators with the Signed Product*. The article is pure algebra. The two insertions are also the subject of a group: each is an involution, they commute, and the four readings of a rule form the group $\mathbb{Z}_2\times\mathbb{Z}_2$. Read on a general algebra with two commuting anti-involutions, the same construction gives the slot family, whose second slot governs the composition and whose first slot governs the form, and the table of the slots records the four settings. That is §*The Four Readings and Their Group*.
 
 ## The Four General Products Are One Multiplication with Two Insertions
 
@@ -205,7 +205,7 @@ The four readings of §*The Readings and Their Group* are also read on a single 
 $$
 c_{\sigma,\alpha}(\tilde Q_4)=\sigma\bigl(\alpha(\tilde Q_4)\bigr),
 \qquad
-\Phi^{\sigma,\alpha}_{\tilde Q_4}(\tilde Q)=\tilde Q_4\,\tilde Q\,c_{\sigma,\alpha}(\tilde Q_4).
+L_{\tilde Q_4}R_{c_{\sigma,\alpha}(\tilde Q_4)}(\tilde Q)=\tilde Q_4\,\tilde Q\,c_{\sigma,\alpha}(\tilde Q_4).
 $$
 
 **The four settings.** Each switch is either the identity or its involution, so there are four right factors:
@@ -230,7 +230,7 @@ whose scalar parts $-1+2i$, $1+2i$, $1$, $3$ are the plain, the quaternionic, th
 
 The fifth conjugation of the algebra, the reversal $\flat=-\ast$ of *The Group of Involutions*, is the last row with the extra central sign: $\tilde Q_4^{\flat}=-\tilde Q_4^{\ast}$, so the reversal sandwich is minus the Hermitian sandwich.
 
-**Proposition (which right factors close the family).** The composite of two such operators is $\Phi^{\sigma,\alpha}_{\tilde Q_4}\circ\Phi^{\sigma,\alpha}_{\tilde Q_1}=\Phi^{\sigma,\alpha}_{\tilde Q_4\tilde Q_1}$ exactly when $c$ is an anti-automorphism, which holds for the two rows with $\alpha$ and fails for the other two. The four scalar parts of the value at $e_t$ are the four forms, and the adjoint-side reading of the same two switches is *The Four Adjoints of the Biquaternion Algebra in Examples*, §*Which Switch Does What*.
+**Proposition (which right factors close the family).** Two such operators compose as $L_{\tilde Q_4}R_{c(\tilde Q_4)}\circ L_{\tilde Q_1}R_{c(\tilde Q_1)}=L_{\tilde Q_4\tilde Q_1}R_{c(\tilde Q_1)c(\tilde Q_4)}$, which is $L_{\tilde Q_4\tilde Q_1}R_{c(\tilde Q_4\tilde Q_1)}$ exactly when $c$ is an anti-automorphism, and that holds for the two rows with $\alpha$ and fails for the other two. The four scalar parts of the value at $e_t$ are the four forms, and the adjoint-side reading of the same two switches is *Adjoint Pair of $L$ and $R$ Operators*, §*Which Switch Does What*.
 
 **Remark (the same two switches on the left factor).** The left slot may also carry a twist, and there it must be an automorphism, so the two possibilities are the identity and $\sigma$. With the right factor $c$ the inverse, $\natural$ or $\ast$, and the left slot either the identity or $\sigma$, the six members are the ones the corpus uses: the inner conjugation $\mathrm{Ad}_{\tilde Q_4}$, the conjugation sandwich $\tilde Q_4\,\tilde Q\,\tilde Q_4^{\natural}$ and the Hermitian sandwich $\tilde Q_4\,\tilde Q\,\tilde Q_4^{\ast}$ are the three with the identity on the left, while $\bar{\tilde Q_4}\,\tilde Q\,\tilde Q_4^{-1}$ is the $\sigma$-twisted one, the operator of the general theory of *The Clifford, Pin and Spin Groups with Signed Inner Conjugation*, and $(\sigma,\natural)$, $(\sigma,\ast)$ are the two remaining. Every one of the remarkable subspaces is multiplicative in the parameter, by the proposition above.
 
@@ -251,7 +251,7 @@ $$
 
 and for the two-sided operator $(L_{\tilde Q_4}R_{\tilde Q_1})^{\approx}=L_{\tilde Q_1}R_{\tilde Q_4}$, $(L_{\tilde Q_4}R_{\tilde Q_1})^{\ast}=L_{\tilde Q_4^{\ast}}R_{\tilde Q_1^{\ast}}$, $(L_{\tilde Q_4}R_{\tilde Q_1})^{N}=L_{\tilde Q_4^{\natural}}R_{\tilde Q_1^{\natural}}$, $(L_{\tilde Q_4}R_{\tilde Q_1})^{\natural\ast}=L_{\bar{\tilde Q_1}}R_{\bar{\tilde Q_4}}$.
 
-*Proof.* *The Four Adjoints of the Biquaternion Algebra in Examples*, where all sixteen cases are verified on the pairs of basis elements.
+*Proof.* *Adjoint Pair of $L$ and $R$ Operators*, where all sixteen cases are verified on the pairs of basis elements.
 
 So the product *does* decide something of the first importance: which adjoint exists, and therefore which of the four operator families has a coherent adjoint theory. That is the whole content of the naming rule of the corpus, and it is a statement about *forms*.
 
@@ -373,7 +373,7 @@ The four general products of the biquaternion algebra are one multiplication wit
 
 The four insertions are the four elements of a group. One reads the first argument through the natural conjugation, one reads the second through the Hermitian conjugation; each is its own inverse, the two commute, and the four are the two, their composite and the identity. Read on a general algebra with two commuting anti-involutions, the group gives the slot family: the second slot carries the $\mathbb{C}$-bilinearity in the second argument, the left unit and the monoid of left multiplications, the first slot carries the right unit, and associativity and the scalar square are not decided by the slots alone. The table of the slots records the four settings, their units, their squares and the one setting whose square is central.
 
-The same two switches are read on one operator, with the conjugation in the right factor: $\Phi^{\sigma,\alpha}_{\tilde Q_4}(\tilde Q)=\tilde Q_4\tilde Qc_{\sigma,\alpha}(\tilde Q_4)$, where $c$ is the identity, the natural conjugation, the coefficient conjugation or the Hermitian conjugation. The family closes under composition exactly when $c$ is an anti-automorphism, that is for the two right factors that carry the sign; the four scalar parts of one element are the four forms.
+The same two switches are read on one operator, with the conjugation in the right factor: $L_{\tilde Q_4}R_{c_{\sigma,\alpha}(\tilde Q_4)}(\tilde Q)=\tilde Q_4\tilde Qc_{\sigma,\alpha}(\tilde Q_4)$, where $c$ is the identity, the natural conjugation, the coefficient conjugation or the Hermitian conjugation. The family closes under composition exactly when $c$ is an anti-automorphism, that is for the two right factors that carry the sign; the four scalar parts of one element are the four forms.
 
 ## Summary of Notation
 
@@ -389,7 +389,7 @@ The same two switches are read on one operator, with the conjugation in the righ
 | $\natural$, $\bar{\cdot}$, ${}^{*}$ | the sign, the coefficient conjugation, the Hermitian conjugation; $\natural$ has sign vector $(1,-1,-1,-1)$ |
 | $\sigma$, $\alpha$ | the coefficient involution and the sign character, the two switches |
 | $c_{\sigma,\alpha}(\tilde Q_4)=\sigma(\alpha(\tilde Q_4))$ | the twisted right factor: $\tilde Q_4$, $\tilde Q_4^{\natural}$, $\bar{\tilde Q_4}$ or $\tilde Q_4^{\ast}$ |
-| $\Phi^{\sigma,\alpha}_{\tilde Q_4}(\tilde Q)=\tilde Q_4\tilde Qc_{\sigma,\alpha}(\tilde Q_4)$ | the two-sided operator of the switches |
+| $L_{\tilde Q_4}R_{c_{\sigma,\alpha}(\tilde Q_4)}(\tilde Q)=\tilde Q_4\tilde Qc_{\sigma,\alpha}(\tilde Q_4)$ | the two-sided operator of the switches |
 | $L_{\tilde Q_4}R_{\tilde Q_1}$ | a two-sided operator; $L_{\tilde Q_4}R_{\tilde Q_4^{-1}}$ the inner automorphism of the plain product |
 | $L_{\tilde Q_4^{\natural}}R_{\tilde Q_4^{-1}}$, $\tilde Q_2\mapsto\tilde Q_4\tilde Q_2^{\natural}\tilde Q_4^{-1}$ | the sign inserted in the parameter, and in the argument |
 | $\rho_{\tilde Q_4}$ | the reflection of $V$ in $\tilde Q_4^{\perp}$; the plain product gives $-\rho_{\tilde Q_4}$, the sign gives $\rho_{\tilde Q_4}$ |
@@ -397,15 +397,16 @@ The same two switches are read on one operator, with the conjugation in the righ
 
 ## Further Reading
 
-- [The Endomorphisms of the Biquaternion Algebra](the-endomorphisms-of-the-biquaternion-algebra.html), for the operator space $\operatorname{End}_{\mathbb{C}}(\mathbb{B})$, its matrix form, the regular families and the double centraliser that this article presupposes
+- [The Endomorphisms of the Biquaternion Algebra](the-endomorphisms-of-the-biquaternion-algebra.html), for the operator space $\operatorname{End}_{\mathbb{C}}(\mathbb{B})$ and its matrix form, which this article presupposes
+- [Operator Chirality on the Biquaternion Algebra](operator-chirality-on-the-biquaternion-algebra.html), for the two multipliers $L$ and $R$, the two images and their intersection
 - [The Four General Products and Their Relations over the Biquaternion Algebra](the-four-general-products-and-their-relations-over-the-biquaternion-algebra.html), for the four rules, the statement that they differ in one insertion alone, and the table of the four side by side
 - [The Four Forms and the Four Algebraic Norms over the Biquaternion Algebra](the-four-forms-and-the-four-algebraic-norms-over-the-biquaternion-algebra.html), for the four forms, their Gram matrices, their signatures and their isometry groups
-- [The Four Adjoints of the Biquaternion Algebra in Examples](the-four-adjoints-of-the-biquaternion-algebra-in-examples.html), for the four adjoints on explicit operators and the naming rule of the operator families
+- [Adjoint Pair of $L$ and $R$ Operators](adjoint-pair-of-l-and-r-operators.html), for the four adjoints on explicit operators and the naming rule of the operator families
 - [The Group of Involutions](the-group-of-involutions.html), for the four conjugations and their group
 - [The Signed Sandwich on a Clifford Algebra](the-signed-sandwich-on-a-clifford-algebra.html), for the ordinary sandwich, its minus sign and the repair by the grade involution
 - [Two-Sided Operators with the Signed Product](two-sided-operators-with-the-signed-product.html), for the signed family, its twisted composition law and its coset structure
 - [Two-Sided Operators on the General Quaternionic Algebra of the Biquaternions](two-sided-operators-on-the-general-quaternionic-algebra-of-the-biquaternions.html), for the parameter insertion in the biquaternion model
-- [The One-Sided Operators on the Biquaternion Algebra](the-one-sided-operators-on-the-biquaternion-algebra.html), for the two families read frame-free, with the two laws, the rank and the commutation.
-- [Two-Sided Operators on the Biquaternion Algebra](two-sided-operators-on-the-biquaternion-algebra.html), for the plain family that the right factors twist, and its criteria
+- [Operators Acting 1 Side](operators-acting-1-side.html), for the two families read frame-free, with the two laws, the rank and the commutation.
+- [Operators Acting 2 Side](operators-acting-2-side.html), for the plain family that the right factors twist, and its criteria
 - [Remarkable Subspaces and the Four General Products, Forms and Norms](remarkable-subspaces-and-the-four-general-products-forms-and-norms.html), for the four general products read on the remarkable real subspaces
 - [Biquaternion Versors and the Orthogonal Group](biquaternion-versors-and-the-orthogonal-group.html), for the parity, the determinant and the Lorentz group

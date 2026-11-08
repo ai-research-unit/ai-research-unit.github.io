@@ -138,7 +138,7 @@ The category reads a second corpus as well. The *Biquaternion Algebraic Structur
 #### The Four Forms and Their Algebraic Norms
 
 - [The Four Forms and the Four Algebraic Norms over the Biquaternion Algebra](../articles_maths/the-four-forms-and-the-four-algebraic-norms-over-the-biquaternion-algebra.html)
-- [The Four Adjoints of the Biquaternion Algebra in Examples](../articles_maths/the-four-adjoints-of-the-biquaternion-algebra-in-examples.html)
+- [Adjoint Pair of $L$ and $R$ Operators](../articles_maths/adjoint-pair-of-l-and-r-operators.html)
 
 - [The $M_4(\mathbb{C})$ Axis-Free Representation](../articles_maths/m4c-axis-free-representation.html)
 
@@ -173,7 +173,7 @@ The category reads a second corpus as well. The *Biquaternion Algebraic Structur
 
 #### Remarkable Subspaces and the Forms
 
-- [The Four Adjoints of the Biquaternion Algebra in Examples](../articles_maths/the-four-adjoints-of-the-biquaternion-algebra-in-examples.html)
+- [Adjoint Pair of $L$ and $R$ Operators](../articles_maths/adjoint-pair-of-l-and-r-operators.html)
 - [Remarkable Subspaces and the Four General Products, Forms and Norms](../articles_maths/remarkable-subspaces-and-the-four-general-products-forms-and-norms.html)
 - [The Polar Decomposition and Remarkable Subspaces](../articles_maths/the-polar-decomposition-and-remarkable-subspaces.html)
 
@@ -181,9 +181,9 @@ The category reads a second corpus as well. The *Biquaternion Algebraic Structur
 
 - [The Endomorphisms of the Biquaternion Algebra](../articles_maths/the-endomorphisms-of-the-biquaternion-algebra.html)
 - [The Enveloping Operator Algebra of the Biquaternion Algebra and the Bi-module Structure](../articles_maths/the-enveloping-operator-algebra-of-the-biquaternion-algebra-and-the-bi-module-structure.html)
-- [The Four Adjoints of the Biquaternion Algebra in Examples](../articles_maths/the-four-adjoints-of-the-biquaternion-algebra-in-examples.html)
-- [Two-Sided Operators on the Biquaternion Algebra](../articles_maths/two-sided-operators-on-the-biquaternion-algebra.html)
-- [The One-Sided Operators on the Biquaternion Algebra](../articles_maths/the-one-sided-operators-on-the-biquaternion-algebra.html)
+- [Adjoint Pair of $L$ and $R$ Operators](../articles_maths/adjoint-pair-of-l-and-r-operators.html)
+- [Operators Acting 2 Side](../articles_maths/operators-acting-2-side.html)
+- [Operators Acting 1 Side](../articles_maths/operators-acting-1-side.html)
 - [Introduction to the Operators under N and Spectral Regularity and Degeneracy](../articles_maths/introduction-to-the-operators-under-n-and-spectral-regularity-and-degeneracy.html)
 - [The One-Sided Operators of an N-Regular, Spectrally Regular Biquaternion](../articles_maths/the-one-sided-operators-of-an-n-regular-spectrally-regular-biquaternion.html)
 - [The Sandwich of an N-Regular, Spectrally Regular Biquaternion](../articles_maths/the-sandwich-of-an-n-regular-spectrally-regular-biquaternion.html)
@@ -193,10 +193,10 @@ The category reads a second corpus as well. The *Biquaternion Algebraic Structur
 - [The Sandwich of an N-Degenerate, Spectrally Regular Biquaternion](../articles_maths/the-sandwich-of-an-n-degenerate-spectrally-regular-biquaternion.html)
 - [The One-Sided Operators of an N-Degenerate, Spectrally Degenerate Biquaternion](../articles_maths/the-one-sided-operators-of-an-n-degenerate-spectrally-degenerate-biquaternion.html)
 - [The Sandwich of an N-Degenerate, Spectrally Degenerate Biquaternion](../articles_maths/the-sandwich-of-an-n-degenerate-spectrally-degenerate-biquaternion.html)
-- [The Hermitian Sandwich: Definition and Multiplicativity](../articles_maths/the-hermitian-sandwich-definition-and-multiplicativity.html)
-- [The One-Sided Operators on the Biquaternion Algebra](../articles_maths/the-one-sided-operators-on-the-biquaternion-algebra.html)
-- [Two-Sided Operators on the Biquaternion Algebra](../articles_maths/two-sided-operators-on-the-biquaternion-algebra.html)
-- [The Hermitian Sandwich: Definition and Multiplicativity](../articles_maths/the-hermitian-sandwich-definition-and-multiplicativity.html)
+- [Hermitian pair of operators acting as 2 side](../articles_maths/hermitian-pair-of-operators-acting-as-2-side.html)
+- [Operators Acting 1 Side](../articles_maths/operators-acting-1-side.html)
+- [Operators Acting 2 Side](../articles_maths/operators-acting-2-side.html)
+- [Hermitian pair of operators acting as 2 side](../articles_maths/hermitian-pair-of-operators-acting-as-2-side.html)
 
 ### Topology
 

@@ -14,7 +14,7 @@
 
 **The result in one line.** Every matrix is a sum of at most four two-sided products; the products themselves are the matrices of coefficient rank at most one; and the least number of products is the coefficient rank.
 
-**Boundaries.** The frame and the one-sided matrices are *$M_4(\mathbb{C})$ Axis-Free Representation*. The same operators in another frame are *$M_4(\mathbb{C})$ Pauli Representation : Operators*. The abstract family is *Two-Sided Operators on the Biquaternion Algebra*. The ambient endomorphisms are *The Endomorphisms of the Biquaternion Algebra*. The enveloping algebra is *The Enveloping Operator Algebra of the Biquaternion Algebra and the Bi-module Structure*. The Hermitian sandwich is Part V and is not treated here.
+**Boundaries.** The frame and the one-sided matrices are *$M_4(\mathbb{C})$ Axis-Free Representation*. The same operators in another frame are *$M_4(\mathbb{C})$ Pauli Representation : Operators*. The abstract family is *Operators Acting 2 Side*. The ambient endomorphisms are *The Endomorphisms of the Biquaternion Algebra*. The enveloping algebra is *The Enveloping Operator Algebra of the Biquaternion Algebra and the Bi-module Structure*. The Hermitian sandwich is Part V and is not treated here.
 
 **Conventions.** The basis is
 $$
@@ -216,7 +216,7 @@ The Hermitian adjoint is
 $$
 L_{\mathrm{axf}}(\tilde X)^{\dagger}=L_{\mathrm{axf}}(\tilde X^{*}),
 $$
-and the same identities hold for $R_{\mathrm{axf}}$. The first is the transpose dictionary of the axis-free basis: natural conjugation is transposition. The second is the conjugate transpose: the dagger is the Hermitian conjugation. Both are checked on the four units and extended by linearity. At the operator level the same transposition carries the parameter through the natural conjugation, and the flip of the two mixed units conjugates the two families, $SL_{\tilde Q}S^{-1}=R_{S\tilde Q}$; both statements are proved in *The One-Sided Operators on the Biquaternion Algebra*, §*The Matrix Identity*, where the two frames are set side by side.
+and the same identities hold for $R_{\mathrm{axf}}$. The first is the transpose dictionary of the axis-free basis: natural conjugation is transposition. The second is the conjugate transpose: the dagger is the Hermitian conjugation. Both are checked on the four units and extended by linearity. At the operator level the same transposition carries the parameter through the natural conjugation, and the flip of the two mixed units conjugates the two families, $SL_{\tilde Q}S^{-1}=R_{S\tilde Q}$; both statements are proved in *Operators Acting 1 Side*, §*The Matrix Identity*, where the two frames are set side by side.
 
 ### The Intersection of the Two Copies
 
@@ -252,7 +252,7 @@ $$
 | $\vec e_y$ | $L_{\mathrm{axf},\vec e_y}R_{\mathrm{axf},e_t}=L_{\mathrm{axf},\vec e_y}$ | $L_{\mathrm{axf},\vec e_y}R_{\mathrm{axf},\vec e_x}$ | $L_{\mathrm{axf},\vec e_y}R_{\mathrm{axf},\vec e_y}$ | $L_{\mathrm{axf},\vec e_y}R_{\mathrm{axf},\vec e_z}$ |
 | $\vec e_z$ | $L_{\mathrm{axf},\vec e_z}R_{\mathrm{axf},e_t}=L_{\mathrm{axf},\vec e_z}$ | $L_{\mathrm{axf},\vec e_z}R_{\mathrm{axf},\vec e_x}$ | $L_{\mathrm{axf},\vec e_z}R_{\mathrm{axf},\vec e_y}$ | $L_{\mathrm{axf},\vec e_z}R_{\mathrm{axf},\vec e_z}$ |
 
-Each row is labelled by its left unit and each column by its right unit, so each entry is the product of the two labels, left factor first. The first row is the right family, the first column the left family, the diagonal entry $L_{\mathrm{axf},e_t}R_{\mathrm{axf},e_t}$ the identity, and the remaining nine the genuinely two-sided basis operators. The table is the matrix form of the four families of *Two-Sided Operators on the Biquaternion Algebra*, §*The Operator $L_{\tilde Q}R_{\tilde Q_2}$*.
+Each row is labelled by its left unit and each column by its right unit, so each entry is the product of the two labels, left factor first. The first row is the right family, the first column the left family, the diagonal entry $L_{\mathrm{axf},e_t}R_{\mathrm{axf},e_t}$ the identity, and the remaining nine the genuinely two-sided basis operators. The table is the matrix form of the four families of *Operators Acting 2 Side*, §*The Operator $L_{\tilde Q}R_{\tilde Q_2}$*.
 
 ### The Sixteen, Entry by Entry
 
@@ -304,7 +304,7 @@ L_{\mathrm{axf},\vec e_x}R_{\mathrm{axf},\vec e_y}=
 $$
 The first column is the coordinate column of $\vec e_x\vec e_y=\vec e_z$, and the entry is the check that the family rule and the multiplication table agree.
 
-**The basis.** The sixteen matrices are linearly independent and span $M_4(\mathbb{C})$, by the orthogonality theorem of §*Orthogonality* and the dimension count. The span of the products is the whole algebra: the generation theorem of *Two-Sided Operators on the Biquaternion Algebra*, §*The Sixteen Products as a Basis*, read in the axis-free basis. The expansion of a general matrix in this basis is unique, and the coefficient matrix is the subject of §*The Cone of Products*.
+**The basis.** The sixteen matrices are linearly independent and span $M_4(\mathbb{C})$, by the orthogonality theorem of §*Orthogonality* and the dimension count. The span of the products is the whole algebra: the generation theorem of *Operators Acting 2 Side*, §*The Sixteen Products as a Basis*, read in the axis-free basis. The expansion of a general matrix in this basis is unique, and the coefficient matrix is the subject of §*The Cone of Products*.
 
 **The real basis.** All sixteen matrices are real. They are linearly independent over $\mathbb{C}$, hence over $\mathbb{R}$, and their real span is a sixteen-real-dimensional subspace of $M_4(\mathbb{C})$ consisting of real matrices. That subspace is $M_4(\mathbb{R})$. The axis-free basis is therefore the frame in which the real form of the operator algebra is the real span of the products.
 
@@ -862,11 +862,11 @@ In one line: every two-sided operator is a single product of one left and one ri
 - [$M_4(\mathbb{C})$ Pauli Representation : Operators](m4c-pauli-representation-operators.html), for the same operators in the standard Peirce frame.
 - [$M_2(\mathbb{C})$ Pauli Representation : Operators](m2c-pauli-representation-operators.html), for the Peirce frame where a two-sided operator is a pair of $2\times2$ matrices and the display is $B^{\mathsf T}\otimes A$.
 - [$M_4(\mathbb{C})$ Pauli Representation](m4c-pauli-representation.html), for the frame, the pure swap stitch and the tensor displays.
-- [Two-Sided Operators on the Biquaternion Algebra](two-sided-operators-on-the-biquaternion-algebra.html), for the abstract family, the generation theorem, the composition, the adjoint and the type criteria.
+- [Operators Acting 2 Side](operators-acting-2-side.html), for the abstract family, the generation theorem, the composition, the adjoint and the type criteria.
 - [The Matrix Algebra $M_4(\mathbb{C})$](the-matrix-algebra-m4c.html), for the construction of $M_4(\mathbb{C})$ from the sandwich map and the change to the matrix-unit basis.
-- [The One-Sided Operators on the Biquaternion Algebra](the-one-sided-operators-on-the-biquaternion-algebra.html), for $L_{\mathrm{axf}}$, $R_{\mathrm{axf}}$ and the four matrices of each side.
+- [Operators Acting 1 Side](operators-acting-1-side.html), for $L_{\mathrm{axf}}$, $R_{\mathrm{axf}}$ and the four matrices of each side.
 - [The Endomorphisms of the Biquaternion Algebra](the-endomorphisms-of-the-biquaternion-algebra.html), for the ambient operator space and its coordinate column.
 - [The Enveloping Operator Algebra of the Biquaternion Algebra and the Bi-module Structure](the-enveloping-operator-algebra-of-the-biquaternion-algebra-and-the-bi-module-structure.html), for the algebra $\mathbb{B}\otimes_{\mathbb{C}}\mathbb{B}_{\mathrm{opp}}$ and the pure tensors.
-- [The Four Adjoints of the Biquaternion Algebra in Examples](the-four-adjoints-of-the-biquaternion-algebra-in-examples.html), for the plain adjoint and its comparison with the other adjoints.
-- [The Hermitian Sandwich: Definition and Multiplicativity](the-hermitian-sandwich-definition-and-multiplicativity.html), for the real subcone $\tilde Q_2=\tilde Q^{*}$.
+- [Adjoint Pair of $L$ and $R$ Operators](adjoint-pair-of-l-and-r-operators.html), for the plain adjoint and its comparison with the other adjoints.
+- [Hermitian pair of operators acting as 2 side](hermitian-pair-of-operators-acting-as-2-side.html), for the real subcone $\tilde Q_2=\tilde Q^{*}$.
 - [Matrix Representations Conventions](matrix-representations-conventions.html), for the four left and four right matrices and the sixteen basis operators entry by entry.

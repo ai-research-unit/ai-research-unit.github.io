@@ -177,7 +177,7 @@ is the **associator**, and the **ternary product** is the trilinear operation $x
 $$
 L_a^{\star}(x)=a\star x , \qquad R_a^{\star}(x)=x\star a .
 $$
-They are the two one-sided multiplications of §3, their kernels are the two annihilators, and their composition measures the failure of associativity and of multiplicativity. **Definition (sandwich).** For a product with a two-sided unit and an involution, the **sandwich** of $a$ is the two-sided operator $x\mapsto a\star x\star a^{*}$. The operators of the biquaternion algebra are *Two-Sided Operators on the Biquaternion Algebra*, *One-Sided Operators on the General Plain Algebra of Biquaternions* and *The Left and Right Multiplications of the General Quaternionic Sesquilinear Product*.
+They are the two one-sided multiplications of §3, their kernels are the two annihilators, and their composition measures the failure of associativity and of multiplicativity. **Definition (sandwich).** For a product with a two-sided unit and an involution, the **sandwich** of $a$ is the two-sided operator $x\mapsto a\star x\star a^{*}$. The operators of the biquaternion algebra are *Operators Acting 2 Side*, *One-Sided Operators on the General Plain Algebra of Biquaternions* and *The Left and Right Multiplications of the General Quaternionic Sesquilinear Product*.
 
 **Definition (derivation).** An operator $D$ on $\mathbb{B}$ is a **derivation of $\star$** when $D(x\star y)=Dx\star y+x\star Dy$ for all $x,y$.
 
@@ -191,7 +191,7 @@ The classes so far are those of the multiplication alone. The structures also ca
 
 **Definition (isotropic element, radical).** Let $\langle\cdot,\cdot\rangle$ be a form on $\mathbb{B}$. An element is **isotropic** for the form when $\langle x,x\rangle=0$, and the **radical** is the set of elements orthogonal to the whole space. The isotropic elements of the four forms are *The Four Forms and the Four Algebraic Norms over the Biquaternion Algebra*, and the isotropic cone of the quaternionic product is *The Isotropic Structure of the General Quaternionic Algebra*.
 
-**Definition (adjoint, Hermitian, normal).** Let $\langle\cdot,\cdot\rangle$ be a form with an involution ${}^{*}$. The **adjoint of $a$** is the element $a^{\dagger}$ with $\langle a\star x,y\rangle=\langle x,a^{\dagger}\star y\rangle$; an element is **Hermitian** when $a^{\dagger}=a$, **anti-Hermitian** when $a^{\dagger}=-a$, and **normal** when $a\star a^{\dagger}=a^{\dagger}\star a$. The four adjoints of the two algebras and the two sesqualgebras are worked in *The Four Adjoints of the Biquaternion Algebra in Examples*; the trace form is *The Trace Form and the Invariance of the Symmetric Plain Algebra*, and the invariant form of the antisymmetric product is *The Killing Form of the Antisymmetric Plain Algebra*.
+**Definition (adjoint, Hermitian, normal).** Let $\langle\cdot,\cdot\rangle$ be a form with an involution ${}^{*}$. The **adjoint of $a$** is the element $a^{\dagger}$ with $\langle a\star x,y\rangle=\langle x,a^{\dagger}\star y\rangle$; an element is **Hermitian** when $a^{\dagger}=a$, **anti-Hermitian** when $a^{\dagger}=-a$, and **normal** when $a\star a^{\dagger}=a^{\dagger}\star a$. The four adjoints of the two algebras and the two sesqualgebras are worked in *Adjoint Pair of $L$ and $R$ Operators*; the trace form is *The Trace Form and the Invariance of the Symmetric Plain Algebra*, and the invariant form of the antisymmetric product is *The Killing Form of the Antisymmetric Plain Algebra*.
 
 ---
 

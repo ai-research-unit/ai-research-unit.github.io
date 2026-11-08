@@ -1,4 +1,4 @@
-# __The One-Sided Operators on the Biquaternion Algebra__
+# __Operators Acting 1 Side__
 
 ## Introduction
 
@@ -16,7 +16,7 @@ are complex-linear, so they are operators of the ambient space of *The Endomorph
 
 **What the article proves.** Five things, in this order. The two maps are injective and complex-linear. The left one is multiplicative, $L_{\tilde Q}L_{\tilde Q_2}=L_{\tilde Q\tilde Q_2}$, and the right one is anti-multiplicative, $R_{\tilde Q}R_{\tilde Q_2}=R_{\tilde Q_2\tilde Q}$; the two images are copies of $\mathbb{B}$ and of $\mathbb{B}_{\mathrm{opp}}$, each of complex dimension four. The kernel and the image of a single operator are the annihilator and the ideal of the element, on the opposite side of the multiplication, and the rank takes the three values $4,2,0$. The operator is invertible exactly when $\langle\tilde Q\rangle_{\natural}\neq0$, and the inverse is the operator of the inverse element. Finally, the two families commute element by element, each is the exact commutant of the other, and they meet in the scalars.
 
-**What the article does not do.** The matrices of the two families are the subject of the three matrix articles of the group, where the exchange of §*The Exchange $S$* is verified entry by entry. The products $L_{\tilde Q}R_{\tilde Q_2}$ are *Two-Sided Operators on the Biquaternion Algebra*; the sandwiches $\mathrm{Sd}_{\tilde Q}$ are Part V; the association of the two families with the four forms is *The Four Adjoints of the Biquaternion Algebra in Examples*; the enveloping algebra in which the pair of actions lives is *The Enveloping Operator Algebra of the Biquaternion Algebra and the Bi-module Structure*. This article states no adjoint identity, no product of the two families and no form.
+**What the article does not do.** The matrices of the two families are the subject of the three matrix articles of the group, where the exchange of §*The Exchange $S$* is verified entry by entry. The products $L_{\tilde Q}R_{\tilde Q_2}$ are *Operators Acting 2 Side*; the sandwiches $\mathrm{Sd}_{\tilde Q}$ are Part V; the association of the two families with the four forms is *Adjoint Pair of $L$ and $R$ Operators*; the enveloping algebra in which the pair of actions lives is *The Enveloping Operator Algebra of the Biquaternion Algebra and the Bi-module Structure*. This article states no adjoint identity, no product of the two families and no form.
 
 **The letters.** The left operator is $L_{\tilde Q}$, the right operator is $R_{\tilde Q_2}$, and the argument is $X$. The letter names the action and not a slot, and the subscript is the element with its own mark. The sets are written $\operatorname{End}_L(\mathbb{B})$ and $\operatorname{End}_R(\mathbb{B})$, abbreviated $L(\mathbb{B})$ and $R(\mathbb{B})$ where a set is used in an identity, and the prime is the commutant: for a set $\mathcal{S}$ of operators, $\mathcal{S}'=\{T:TS=ST\ \text{for every}\ S\in\mathcal{S}\}$. The letter $R$ names the right family and nothing else in this group; the closed ray of the Hermitian sandwich is written as a set and never with that letter. The conventions of the letters, the slots and the set names are *Operator Family Conventions*; this article uses them and defines none of them. **Two words for one object.** The family is **one-sided**, because each member multiplies on one side only, and the member is **regular**, because it is a multiplication of the regular module; the article is named for the family and calls its members the left and the right regular operators.
 
@@ -366,7 +366,7 @@ $$
 
 **Neither copy contains the other.** For a noncentral $\tilde Q$, the left multiplication $L_{\tilde Q}$ is not a right multiplication and conversely, by §*The Intersection*. The two copies are therefore incomparable, and the distinction between them is the noncommutativity of the algebra.
 
-**The sum.** The two copies are each of complex dimension four and meet in a line, so their linear sum has complex dimension seven. The sum is a subspace and is not a subalgebra: the product $L_{\vec e_x}R_{\vec e_x}$ is not of the form $L_{\tilde A}+R_{\tilde B}$, as *Two-Sided Operators on the Biquaternion Algebra*, §*The Sum Is Not a Subalgebra* proves. The two families generate, under addition, a seven-dimensional subspace, and under composition they generate the whole sixteen-dimensional operator space.
+**The sum.** The two copies are each of complex dimension four and meet in a line, so their linear sum has complex dimension seven. The sum is a subspace and is not a subalgebra: the product $L_{\vec e_x}R_{\vec e_x}$ is not of the form $L_{\tilde A}+R_{\tilde B}$, as *Operators Acting 2 Side*, §*The Sum Is Not a Subalgebra* proves. The two families generate, under addition, a seven-dimensional subspace, and under composition they generate the whole sixteen-dimensional operator space.
 
 **The lattice of the family.** The scalars, the two one-sided families, the seven-dimensional sum and the ambient space form the chain
 
@@ -430,10 +430,11 @@ The two families commute element by element, $L_{\tilde Q}R_{\tilde Q_2}=R_{\til
 
 - [The Endomorphisms of the Biquaternion Algebra](the-endomorphisms-of-the-biquaternion-algebra.html), for the ambient space, the inner derivations and the natural conjugation.
 - [The SVD Decomposition of Endomorphisms of the Biquaternion Algebra](the-svd-decomposition-of-endomorphisms-of-the-biquaternion-algebra.html), for the weights of a one-sided operator and the decomposition of a general endomorphism.
-- [The Four Adjoints of the Biquaternion Algebra in Examples](the-four-adjoints-of-the-biquaternion-algebra-in-examples.html), for the association of the two families with the four forms.
-- [Two-Sided Operators on the Biquaternion Algebra](two-sided-operators-on-the-biquaternion-algebra.html), for the products of the two families, the cone, the generation theorem and the ladder $1,4,7,16$.
+- [Adjoint Pair of $L$ and $R$ Operators](adjoint-pair-of-l-and-r-operators.html), for the association of the two families with the four forms.
+- [Operators Acting 2 Side](operators-acting-2-side.html), for the products of the two families, the cone, the generation theorem and the ladder $1,4,7,16$.
 - [The Enveloping Operator Algebra of the Biquaternion Algebra and the Bi-module Structure](the-enveloping-operator-algebra-of-the-biquaternion-algebra-and-the-bi-module-structure.html), for the enveloping algebra in which the two copies sit and for the bi-module structure.
-- [The Hermitian Sandwich: Definition and Multiplicativity](the-hermitian-sandwich-definition-and-multiplicativity.html), for the sandwich family and its intersections with the two one-sided families.
+- [Hermitian pair of operators acting as 1 side](hermitian-pair-of-operators-acting-as-1-side.html), for the pair $(L_{\tilde Q},L_{\tilde Q^{\natural}})$, its two equations and its closure to a scalar.
+- [Hermitian pair of operators acting as 2 side](hermitian-pair-of-operators-acting-as-2-side.html), for the sandwich family and its intersections with the two one-sided families.
 - [The Four Forms and the Four Algebraic Norms over the Biquaternion Algebra](the-four-forms-and-the-four-algebraic-norms-over-the-biquaternion-algebra.html), for the plain form and the invertibility criterion.
 - [Matrix Representations Conventions](matrix-representations-conventions.html), for the $4\times4$ regular matrices, the canonical Peirce frame and the change between the frames.
 - [Operator Family Conventions](operator-family-conventions.html), for the letters, the slots and the set names.

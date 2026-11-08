@@ -1,4 +1,4 @@
-# __Two-Sided Operators on the Biquaternion Algebra__
+# __Operators Acting 2 Side__
 
 ## Introduction: The Cone
 
@@ -22,11 +22,11 @@ with $\mu,\nu\in\{t,x,y,z\}$. They are named here, at the start, because the gen
 
 **What the article proves.** The composition law $L_{\tilde Q}R_{\tilde Q_2}L_{\tilde Q_3}R_{\tilde Q_4}=L_{\tilde Q\tilde Q_3}R_{\tilde Q_4\tilde Q_2}$, with the second slot reversed. The two closures: the family is closed under composition and not under addition. The generation theorem: the sixteen basis operators are a basis of the ambient space, so the span of the family is the whole $\operatorname{End}_{\mathbb{C}}(\mathbb{B})$, of complex dimension sixteen. The ladder $1,4,7,16$: the scalars, the one-sided families, the cone and the ambient space. The plain adjoint: $(L_{\tilde Q}R_{\tilde Q_2})^{\approx}=L_{\tilde Q_2}R_{\tilde Q}$, the self-adjoint pairs and the empty skew sector. The isometries and the multiplicative members: the criteria $\tilde Q_2\tilde Q=\pm e_t$ and $\tilde Q\tilde Q_2=e_t$, the isometry group, and the absence of a pin group in the family.
 
-**What the article does not do.** The matrix of $L_{\tilde Q}R_{\tilde Q_2}$ is *Two-Sided Operators on the Biquaternion Algebra*, where the sixteen matrices, the coefficient matrix and the length are computed. The Hermitian sandwich $\mathrm{Sd}_{\tilde Q}=L_{\tilde Q}R_{\tilde Q^{*}}$ is Part V: this article states no sandwich theorem. The enveloping algebra and the bi-module structure are *The Enveloping Operator Algebra of the Biquaternion Algebra and the Bi-module Structure*; this article proves the generation statement on which that article's isomorphism rests. The association of the two one-sided families with the plain form is *The Four Adjoints of the Biquaternion Algebra in Examples*.
+**What the article does not do.** The matrix of $L_{\tilde Q}R_{\tilde Q_2}$ is *Operators Acting 2 Side*, where the sixteen matrices, the coefficient matrix and the length are computed. The Hermitian sandwich $\mathrm{Sd}_{\tilde Q}=L_{\tilde Q}R_{\tilde Q^{*}}$ is Part V: this article states no sandwich theorem. The enveloping algebra and the bi-module structure are *The Enveloping Operator Algebra of the Biquaternion Algebra and the Bi-module Structure*; this article proves the generation statement on which that article's isomorphism rests. The association of the two one-sided families with the plain form is *Adjoint Pair of $L$ and $R$ Operators*.
 
 **The letters.** The parameters are $\tilde Q,\tilde Q_2,\tilde Q_3,\tilde Q_4$, the argument is $X$, and the operator is $L_{\tilde Q}R_{\tilde Q_2}$. The two letters $L$ and $R$, written together, name the two-sided family; the sandwich $\mathrm{Sd}$ is a different letter and a different object, and it is not used here. The conventions of the four letters, the slots and the set names are *Operator Family Conventions*.
 
-**Boundaries.** The algebra is *The Biquaternion Algebra*; the ambient operator space is *The Endomorphisms of the Biquaternion Algebra*; the two regular families and their commutant are *The One-Sided Operators on the Biquaternion Algebra*; the matrix units are *Special Element and Peirce Conventions*; the form is *The Four Forms and the Four Algebraic Norms over the Biquaternion Algebra*.
+**Boundaries.** The algebra is *The Biquaternion Algebra*; the ambient operator space is *The Endomorphisms of the Biquaternion Algebra*; the two regular families and their commutant are *Operators Acting 1 Side*; the matrix units are *Special Element and Peirce Conventions*; the form is *The Four Forms and the Four Algebraic Norms over the Biquaternion Algebra*.
 
 ## The Operator $L_{\tilde Q}R_{\tilde Q_2}$
 
@@ -81,7 +81,7 @@ $$
 
 **The two slices.** The boundary cases are the two slices $\tilde Q_2=e_t$ and $\tilde Q=e_t$. The first is the left family, of complex dimension four; the second is the right family, also of complex dimension four. Both are contained in the cone.
 
-**The intersection of the slices.** The two slices meet in the scalars: $L_{\tilde Q}=R_{\tilde Q_2}$ exactly when $\tilde Q=\tilde Q_2$ is central, by *The One-Sided Operators on the Biquaternion Algebra*, §*The Intersection $L(\mathbb{B})\cap R(\mathbb{B})=\mathbb{C}\cdot\mathrm I_4$*. The intersection is the line $\mathbb{C}\cdot\mathrm I_4$, of complex dimension one.
+**The intersection of the slices.** The two slices meet in the scalars: $L_{\tilde Q}=R_{\tilde Q_2}$ exactly when $\tilde Q=\tilde Q_2$ is central, by *Operators Acting 1 Side*, §*The Intersection $L(\mathbb{B})\cap R(\mathbb{B})=\mathbb{C}\cdot\mathrm I_4$*. The intersection is the line $\mathbb{C}\cdot\mathrm I_4$, of complex dimension one.
 
 **The boundary is not the whole cone.** A generic pair has neither parameter equal to the unit, and its operator is neither a left nor a right multiplication. The cone is complex seven-dimensional, the two boundary slices are complex four-dimensional each, and the difference is the two-parameter body.
 
@@ -127,7 +127,7 @@ which is not of the form $L_{\tilde Q}R_{\tilde Q_2}$.
 
 **The two closures.** The family is a multiplicative monoid and not an additive one. Its linear span is a subspace, and the span is the subject of §*The Generation Theorem*; the family itself is the cone inside that span, not the whole span.
 
-**The sum of two products.** A sum $L_{\tilde Q}R_{\tilde Q_2}+L_{\tilde Q_3}R_{\tilde Q_4}$ is a two-sided operator in special cases, for instance when the two pairs are proportional, but not in general. The criterion for a sum of two products to be one product is the rank condition of *Two-Sided Operators on the Biquaternion Algebra*, §*The Criterion for a Single Product*.
+**The sum of two products.** A sum $L_{\tilde Q}R_{\tilde Q_2}+L_{\tilde Q_3}R_{\tilde Q_4}$ is a two-sided operator in special cases, for instance when the two pairs are proportional, but not in general. The criterion for a sum of two products to be one product is the rank condition of *Operators Acting 2 Side*, §*The Criterion for a Single Product*.
 
 ## The Generation Theorem
 
@@ -217,7 +217,7 @@ $$
 1\ <\ 4\ <\ 7\ <\ 16 .
 $$
 
-The first inclusion is $L_{\lambda e_t}=\lambda\mathrm I_4$; the second is $L_{\tilde Q}R_{e_t}=L_{\tilde Q}$; the third is the definition of the two-sided operator as a product. Each inclusion is proper, because the complex dimensions are strictly increasing. The right family is a second copy of complex dimension four, incomparable with the left one, and the two meet in the scalars by *The One-Sided Operators on the Biquaternion Algebra*.
+The first inclusion is $L_{\lambda e_t}=\lambda\mathrm I_4$; the second is $L_{\tilde Q}R_{e_t}=L_{\tilde Q}$; the third is the definition of the two-sided operator as a product. Each inclusion is proper, because the complex dimensions are strictly increasing. The right family is a second copy of complex dimension four, incomparable with the left one, and the two meet in the scalars by *Operators Acting 1 Side*.
 
 **The middle dimension.** The complex dimension seven is the complex dimension of the cone: eight complex parameters minus the one-dimensional complex scaling orbit. The chain is a chain of sets, not of subspaces. The cone is not a subspace, and its linear span is the whole complex sixteen-dimensional space by §*The Generation Theorem*. The complex dimension seven is the dimension of the cone as an algebraic variety, not the dimension of a subspace containing it.
 
@@ -227,7 +227,7 @@ The first inclusion is $L_{\lambda e_t}=\lambda\mathrm I_4$; the second is $L_{\
 
 **Theorem (the sum).** The subspace $\operatorname{End}_L(\mathbb{B})+\operatorname{End}_R(\mathbb{B})$ has complex dimension seven and is not a subalgebra of $\operatorname{End}_{\mathbb{C}}(\mathbb{B})$.
 
-*Proof.* The complex dimension is $4+4-1=7$ by the intersection theorem of *The One-Sided Operators on the Biquaternion Algebra*. For the failure of closure, take $L_{\vec e_x}$ and $R_{\vec e_x}$, both in the sum. Their product is $L_{\vec e_x}R_{\vec e_x}$. If the sum were a subalgebra, this product would be $L_{\tilde A}+R_{\tilde B}$ for some $\tilde A,\tilde B$; the next paragraph shows that it is not.
+*Proof.* The complex dimension is $4+4-1=7$ by the intersection theorem of *Operators Acting 1 Side*. For the failure of closure, take $L_{\vec e_x}$ and $R_{\vec e_x}$, both in the sum. Their product is $L_{\vec e_x}R_{\vec e_x}$. If the sum were a subalgebra, this product would be $L_{\tilde A}+R_{\tilde B}$ for some $\tilde A,\tilde B$; the next paragraph shows that it is not.
 
 Suppose $\vec e_xX\vec e_x=\tilde AX+X\tilde B$ for all $X$. At $X=e_t$, $-\!e_t=\tilde A+\tilde B$. At $X=\vec e_x$,
 
@@ -269,7 +269,7 @@ $$
 
 by the cyclicity of the scalar part. The adjoint is unique by the non-degeneracy of the form.
 
-**The swap.** The adjoint exchanges the two parameters. It does not conjugate either of them, and it does not keep the side: the left multiplier of the adjoint is the right multiplier of the operator. The swap is the two-sided form of the one-sided identities $(L_{\tilde Q})^{\approx}=R_{\tilde Q}$ and $(R_{\tilde Q_2})^{\approx}=L_{\tilde Q_2}$ of *The Four Adjoints of the Biquaternion Algebra in Examples*, §*Association as a Transpose*.
+**The swap.** The adjoint exchanges the two parameters. It does not conjugate either of them, and it does not keep the side: the left multiplier of the adjoint is the right multiplier of the operator. The swap is the two-sided form of the one-sided identities $(L_{\tilde Q})^{\approx}=R_{\tilde Q}$ and $(R_{\tilde Q_2})^{\approx}=L_{\tilde Q_2}$ of *Adjoint Pair of $L$ and $R$ Operators*, §*Association as a Transpose*.
 
 **The involution.** $(L_{\tilde Q}R_{\tilde Q_2})^{\approx\approx}=L_{\tilde Q}R_{\tilde Q_2}$, and $(L_{\tilde Q}R_{\tilde Q_2}L_{\tilde Q_3}R_{\tilde Q_4})^{\approx}=L_{\tilde Q_4}R_{\tilde Q_3}L_{\tilde Q_2}R_{\tilde Q}$, the reversal of the composition.
 
@@ -444,10 +444,11 @@ The plain adjoint exchanges the parameters, $(L_{\tilde Q}R_{\tilde Q_2})^{\appr
 
 ## Further Reading
 
-- [Two-Sided Operators on the Biquaternion Algebra](two-sided-operators-on-the-biquaternion-algebra.html), for the sixteen matrices, the coefficient matrix and the length.
+- [The Coefficient Matrix of a Two-Sided Operator: A Worked Computation](the-coefficient-matrix-of-a-two-sided-operator-a-worked-computation.html), for the coefficient matrix and the sixteen matrices.
+- [The Length and the Two Ranks on $M_n(\mathbb{C})$](the-length-and-the-two-ranks-on-mnc.html), for the length and the two ranks.
 - [The Enveloping Operator Algebra of the Biquaternion Algebra and the Bi-module Structure](the-enveloping-operator-algebra-of-the-biquaternion-algebra-and-the-bi-module-structure.html), for the isomorphism that the generation theorem supports.
-- [The One-Sided Operators on the Biquaternion Algebra](the-one-sided-operators-on-the-biquaternion-algebra.html), for the two boundary families, their commutation and the intersection used in the ladder.
-- [The Four Adjoints of the Biquaternion Algebra in Examples](the-four-adjoints-of-the-biquaternion-algebra-in-examples.html), for the association of the one-sided families and the four adjoints.
+- [Operators Acting 1 Side](operators-acting-1-side.html), for the two boundary families, their commutation and the intersection used in the ladder.
+- [Adjoint Pair of $L$ and $R$ Operators](adjoint-pair-of-l-and-r-operators.html), for the association of the one-sided families and the four adjoints.
 - [The Four Forms and the Four Algebraic Norms over the Biquaternion Algebra](the-four-forms-and-the-four-algebraic-norms-over-the-biquaternion-algebra.html), for the plain form and its quadratic form.
 - [The Polarized Module of the Biquaternion Algebra](the-polarized-module-of-the-biquaternion-algebra.html), for the algebra's matrix units used in the generation theorem.
 - [Matrix Representations Conventions](matrix-representations-conventions.html), for the operator-space matrix units and the Peirce change.

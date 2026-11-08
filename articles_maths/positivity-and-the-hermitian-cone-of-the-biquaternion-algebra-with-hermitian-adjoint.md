@@ -236,7 +236,7 @@ Every element has a **polar decomposition** $\tilde{Q}_1=\tilde Q_0\lvert\tilde{
 
 - [The Biquaternion Algebra](the-biquaternion-algebra.html), for the algebra and the four conjugations
 - [The Four Forms and the Four Algebraic Norms over the Biquaternion Algebra](the-four-forms-and-the-four-algebraic-norms-over-the-biquaternion-algebra.html), for the general quaternionic bilinear form
-- [The Four Adjoints of the Biquaternion Algebra in Examples](the-four-adjoints-of-the-biquaternion-algebra-in-examples.html), for the scalar form
+- [Adjoint Pair of $L$ and $R$ Operators](adjoint-pair-of-l-and-r-operators.html), for the scalar form
 - [The Group of Involutions](the-group-of-involutions.html), for the four involutions, and [Subspaces and Decompositions](subspaces-and-decompositions-of-the-biquaternion-algebra.html) for their fixed spaces.
 - [Subspaces and Decompositions](subspaces-and-decompositions-of-the-biquaternion-algebra.html), for $\mathbb{B}_{\Psi}$, its norm and its isotropic cone, and [Remarkable Subspaces and the Four General Products, Forms and Norms](remarkable-subspaces-and-the-four-general-products-forms-and-norms.html), for its Jordan structure.
 - [The $M_4(\mathbb{C})$ Axis-Free Representation](m4c-axis-free-representation.html), for $\mathsf{M}_2(\vec e_\mu)=-i\sigma_\mu$, the Hermitian matrices, the determinant and the absolute determinant.

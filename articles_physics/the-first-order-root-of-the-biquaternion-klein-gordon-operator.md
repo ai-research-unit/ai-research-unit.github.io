@@ -307,5 +307,5 @@ A field whose value is one complex number has no first-order equation: the four 
 - I. R. Porteous, *Clifford Algebras and the Classical Groups* (Cambridge University Press, 1995), for the periodicity and the module dimensions.
 - V. V. Kravchenko, *Quaternionic Analysis and Its Applications* (Birkhäuser, 2003), for the quaternionic Dirac operator and its relation to the Euclidean Clifford algebra.
 - The corpus articles *The Klein–Gordon Equation in Biquaternionic Form*, *Klein–Gordon from the Dirac Square in Biquaternionic Form*, *The Dirac Equation in Biquaternionic Form*, *The Biquaternion D'Alembertian and Its Green's Functions*, and *Algebra and Element Conventions* for the conventions and the results this article builds on.
-- The corpus articles *Two-Sided Operators on the Biquaternion Algebra*, *Element and Operator Representations: The Three Actions*, and *The Polarized Module of the Biquaternion Algebra* for the two-sided algebra and the nilpotent that exchanges the two parts of an element.
+- The corpus articles *Operators Acting 2 Side*, *Element and Operator Representations: The Three Actions*, and *The Polarized Module of the Biquaternion Algebra* for the two-sided algebra and the nilpotent that exchanges the two parts of an element.
 

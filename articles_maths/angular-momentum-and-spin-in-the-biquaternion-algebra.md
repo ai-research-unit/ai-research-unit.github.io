@@ -223,7 +223,7 @@ The idempotent $\tilde\Pi_+(\vec u)$ is the weight $+\tfrac12$ vector of $S_+(\v
 
 ## The Adjoint Module: Spins Zero and One
 
-Conjugation, $X\mapsto uXu^{-1}$, makes $\mathbb{B}$ a module over $G$ and, differentiating, over $\mathfrak{g}$. The action of $a\in\mathfrak{g}_{\mathbb{C}}$ is $\operatorname{ad}_a$. The centre $Z=\mathbb{C}e_t$ is fixed, and the trace-zero part
+Conjugation, $X\mapsto uXu^{-1}$, makes $\mathbb{B}$ a module over $G$, and on the Lie algebra a module over $\mathfrak{g}$. The action of $a\in\mathfrak{g}_{\mathbb{C}}$ is $\operatorname{ad}_a$. The centre $Z=\mathbb{C}e_t$ is fixed, and the trace-zero part
 
 $$
 V=\ker\operatorname{tr}=\operatorname{span}_{\mathbb{C}}\{\vec e_x,\vec e_y,\vec e_z\}
@@ -290,68 +290,44 @@ This is impossible. The three spins are the union of the constituents of two str
 
 ## The Orbital Realisation
 
-Let $\mathbb{C}[x,y,z]$ be the polynomial algebra, with $x,y,z$ the coordinates of $\mathbb{R}^3$. The orbital generators are
+A third realisation of the rotation algebra exists, and no subspace of $\mathbb{B}$ carries it. Let $A$ be a commutative $\mathbb{C}$-algebra carrying an action of $\mathfrak{so}(3)$ by derivations: linear maps $D_k$ with the Leibniz rule $D_k(ab)=D_k(a)b+aD_k(b)$ and with the angular-momentum brackets among themselves. The classical example is the algebra of polynomials in three commuting letters, where the action is faithful and every spin occurs, in the summands $\mathcal{V}_0,\mathcal{V}_2,\mathcal{V}_4,\dots$ of the homogeneous parts.
 
-$$
-L_{\mathrm{orb},k}=-i\sum_{l,m}\epsilon_{klm}x_l\,\partial/\partial x_m,
-$$
+**Proposition.** No derivation of a commutative algebra is inner.
 
-that is,
+*Proof.* An inner derivation is $\operatorname{ad}_a(b)=ab-ba$, which vanishes identically as soon as $ab=ba$ for all $a,b$.
 
-$$
-L_1=-i(y\,\partial/\partial z-z\,\partial/\partial y),\quad L_2=-i(z\,\partial/\partial x-x\,\partial/\partial z),\quad L_3=-i(x\,\partial/\partial y-y\,\partial/\partial x).
-$$
+**Theorem (the algebra carries no outer derivation).** Every $\mathbb{C}$-linear derivation of $\mathbb{B}$ is inner.
 
-**Proposition.** The $L_{\mathrm{orb},k}$ are derivations of $\mathbb{C}[x,y,z]$ and satisfy $[L_{\mathrm{orb},i},L_{\mathrm{orb},j}]=i\epsilon_{ijk}L_{\mathrm{orb},k}$.
+*Proof.* The algebra is central simple over $\mathbb{C}$, and for a central simple algebra every derivation is inner (*Biquaternion Automorphisms and Derivations*, §*Derivations over $\mathbb{C}$*).
 
-*Proof.* Each is a first-order derivation. The bracket is the commutator of the corresponding vector fields; the vector fields $D_k=\sum_{l,m}\epsilon_{klm}x_l\,\partial/\partial x_m$ satisfy $[D_i,D_j]=-\epsilon_{ijk}D_k$, and the factor $(-i)^2=-1$ changes the sign.
-
-The Casimir is
-
-$$
-L^2=L_1^2+L_2^2+L_3^2
-=-\left[\frac{1}{\sin\theta}\,\partial/\partial\theta\bigl(\sin\theta\,\partial/\partial\theta\bigr)
-+\frac{1}{\sin^2\theta}\,\partial^2/\partial\phi^2\right],
-$$
-
-whose eigenfunctions are the spherical harmonics, with $L^2Y_l^m=l(l+1)Y_l^m$ and $L_3Y_l^m=mY_l^m$.
-
-**Theorem (the harmonic decomposition).** Let $\mathcal{H}_l$ be the space of harmonic polynomials of degree $l$, that is, the kernel of $\Delta=\partial^2/\partial x^2+\partial^2/\partial y^2+\partial^2/\partial z^2$ on the degree-$l$ part. Then $\mathcal{H}_l\cong\mathcal{V}_{2l}$, of dimension $2l+1$, and
-
-$$
-\mathbb{C}[x,y,z]=\bigoplus_{l\ge0}\mathcal{H}_l
-$$
-
-as $G$-modules.
-
-*Proof.* The Laplacian maps the degree-$l$ part onto the degree-$(l-2)$ part, so $\dim\mathcal{H}_l=\binom{l+2}{2}-\binom{l}{2}=2l+1$. The polynomial $(x+iy)^l$ is harmonic, has weight $l$, and is killed by $L_+$; it is therefore a highest-weight vector of spin $l$, and the module it generates is all of $\mathcal{H}_l$.
-
-**Remark (the orbital part is outer).** The $L_{\mathrm{orb},k}$ are derivations of the polynomial algebra and are not inner: the algebra is commutative, so $\operatorname{ad}=0$ and no element of $\mathbb{C}[x,y,z]$ acts as $L_{\mathrm{orb},k}$. The orbital angular momentum is an outer derivation; the spin angular momentum is the inner derivation $\operatorname{ad}_{\tilde S_k}$ of $\mathbb{B}$. The biquaternion algebra supplies the second and only the second.
+**Corollary (what belongs to the algebra and what does not).** The spin part of an angular momentum is the inner derivation $\operatorname{ad}_{\tilde S_k}$ of $\mathbb{B}$. The orbital part is outer. It therefore cannot be an operator of $\mathbb{B}$ at all, and the question of which subspace carries it does not arise: it belongs to a commutative algebra of functions of position, which is a module for the orbital action and not a module of $\mathbb{B}$. The biquaternion algebra supplies the second and only the second.
 
 ## The Total Angular Momentum
 
-On the tensor product $\mathcal{H}_l\otimes S$ of an orbital module and the spin-half module, the total generator is
+For a carrier $U$ of spin $l$ and the spin-half module $S$, the tensor product $U\otimes S$ carries the total generator
 
 $$
-\tilde S_{\mathrm{tot},k}=L_{\mathrm{orb},k}\otimes1+1\otimes \tilde S_k.
+\tilde S_{\mathrm{tot},k}=L_k\otimes1+1\otimes \tilde S_k,
 $$
+
+where $L_k$ denotes the three generators of the action on $U$.
 
 Since the two summands commute and each satisfies the angular-momentum brackets, so does the sum. The Casimir expands as
 
 $$
-C_{\mathrm{tot}}=C_L\otimes1+1\otimes C_S+2\sum_k L_{\mathrm{orb},k}\otimes \tilde S_k.
+C_{\mathrm{tot}}=C_L\otimes1+1\otimes C_S+2\sum_k L_k\otimes \tilde S_k.
 $$
 
 The last term is the spin–orbit operator,
 
 $$
-\vec L\cdot\vec S=\sum_k L_{\mathrm{orb},k}\otimes \tilde S_k=\tfrac12\bigl(C_{\mathrm{tot}}-C_L\otimes1-1\otimes C_S\bigr).
+\vec L\cdot\vec S=\sum_k L_k\otimes \tilde S_k=\tfrac12\bigl(C_{\mathrm{tot}}-C_L\otimes1-1\otimes C_S\bigr).
 $$
 
 **Theorem (the addition of angular momenta).** For $l\ge1$,
 
 $$
-\mathcal{H}_l\otimes S\cong\mathcal{V}_{2l-1}\oplus\mathcal{V}_{2l+1},
+\mathcal{V}_{2l}\otimes\mathcal{V}_1\cong\mathcal{V}_{2l-1}\oplus\mathcal{V}_{2l+1},
 $$
 
 and for $l=0$ it is $\mathcal{V}_1$. The total spin is $s_{\mathrm{tot}}=l\pm\tfrac12$.
@@ -368,7 +344,7 @@ that is, $+\tfrac{l}{2}$ for $s_{\mathrm{tot}}=l+\tfrac12$ and $-\tfrac{l+1}{2}$
 
 *Proof.* Evaluate the Casimir expansion on the summand.
 
-**Remark.** The total Casimir is central in $U(\mathfrak{g})$ acting on the tensor product, but it is not a central element of $\mathbb{B}$: it contains the cross term $\sum L_{\mathrm{orb},k}\otimes \tilde S_k$. The pure-spin Casimir $\tfrac34e_t$ is a central element of the algebra itself. The two senses of *central* are different, and only the second is a statement about $\mathbb{B}$.
+**Remark.** The total Casimir is central in $U(\mathfrak{g})$ acting on the tensor product, but it is not a central element of $\mathbb{B}$: it contains the cross term $\sum L_k\otimes \tilde S_k$. The pure-spin Casimir $\tfrac34e_t$ is a central element of the algebra itself. The two senses of *central* are different, and only the second is a statement about $\mathbb{B}$.
 
 ## Tensor Products and the Absence of Spin Two
 
@@ -506,7 +482,7 @@ The rotation algebra inside $\mathbb{B}$ has two normalisations: the anti-Hermit
 | Conjugation | $Z\cong\mathcal{V}_0$ | $0$ | $1$ | $0$ |
 | Conjugation | $V\cong\mathcal{V}_2$ | $1$ | $3$ | $2$ |
 
-The subcarriers of the regular module are exactly these three, and $1+2+3=6>4$ shows that no single structure contains all three. The minimal left ideals are parametrised by the sphere, and each is a copy of the spin-half module. The orbital part is an outer derivation of the polynomial algebra; the spin part is the inner derivation $\operatorname{ad}_{\tilde S_k}$.
+The subcarriers of the regular module are exactly these three, and $1+2+3=6>4$ shows that no single structure contains all three. The minimal left ideals are parametrised by the sphere, and each is a copy of the spin-half module. The orbital part is an outer derivation, and the algebra cannot carry it, since every derivation of $\mathbb{B}$ is inner; the spin part is the inner derivation $\operatorname{ad}_{\tilde S_k}$.
 
 The tensor square of the adjoint module contains a spin-two summand, and the multiplication map kills it: the product of two biquaternions carries no spin two. That vanishing is why the tensor-square route yields no fourth type; the dimension count is why no other route can.
 
@@ -534,8 +510,7 @@ The word spin has four uses in this corpus, and only the first two record a valu
 | $\vec\Upsilon_{+-}=\tfrac12(i\vec e_x-\vec e_y)$ | The nilpotent weight $+\tfrac12$ vector of $S_-$ |
 | $\vec\Upsilon_{-+}=\tfrac12(i\vec e_x+\vec e_y)$ | The nilpotent weight $-\tfrac12$ vector of $S_+$ |
 | $v_+=\vec e_x+i\vec e_y$ | The highest-weight vector of $V$ |
-| $L_{\mathrm{orb},k}=-i\sum_{l,m}\epsilon_{klm}x_l\,\partial/\partial x_m$ | The orbital generators |
-| $\mathcal{H}_l$ | The harmonic polynomials of degree $l$ |
+| $L_k$ | The three generators of the orbital action; outer, hence not an operator of $\mathbb{B}$ |
 
 ## Further Reading
 
@@ -548,4 +523,4 @@ The word spin has four uses in this corpus, and only the first two record a valu
 - [Biquaternion Rotations and Lorentz Transformations](biquaternion-rotations-and-lorentz-transformations.html), for the Lorentz action and its labels.
 - [Angular Momentum and Spin in Biquaternionic Form](../articles_physics/angular-momentum-and-spin-in-biquaternionic-form.html), for the physics counterpart and the units.
 - James E. Humphreys, *Introduction to Lie Algebras and Representation Theory* (Springer, 1972), for the highest-weight theorem and the Casimir.
-- William Fulton and Joe Harris, *Representation Theory: A First Course* (Springer, 1991), for $\mathfrak{sl}_2$, the Clebsch–Gordan rule and the harmonic decomposition.
+- William Fulton and Joe Harris, *Representation Theory: A First Course* (Springer, 1991), for $\mathfrak{sl}_2$ and the Clebsch–Gordan rule.

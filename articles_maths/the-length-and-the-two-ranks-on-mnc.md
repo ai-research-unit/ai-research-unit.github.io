@@ -233,4 +233,4 @@ The length and the ordinary rank are independent: a product of full rank has len
 - [The Regular Representation in Dimension $n$](the-regular-representation-in-dimension-n.html), for the tensor form and the central simple criterion.
 - [The One-Sided Operators of $M_n(\mathbb{C})$](the-one-sided-operators-of-mnc.html), for the one-sided operators of length one.
 - [$M_4(\mathbb{C})$ Pauli Representation : Operators](m4c-pauli-representation-operators.html), for the same theorem with the sixteen Peirce-frame operators.
-- [Two-Sided Operators on the Biquaternion Algebra](two-sided-operators-on-the-biquaternion-algebra.html), for the abstract family at $n=2$.
+- [Operators Acting 2 Side](operators-acting-2-side.html), for the abstract family at $n=2$.
