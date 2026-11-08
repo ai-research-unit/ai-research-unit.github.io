@@ -334,7 +334,7 @@ The six operations of the two bilinear families are $\mathbb{C}$-bilinear and th
 |---|---|
 | $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ | the biquaternion algebra, basis $e_t,\vec e_x,\vec e_y,\vec e_z$, central imaginary $i$ |
 | $\tilde Q_1=Q_{1t}e_t+\vec Q_1$, $\tilde Q_2=Q_{2t}e_t+\vec Q_2$ | the two biquaternions, their scalar and vector parts |
-| ${}^{\natural}$, $\bar{\cdot}$, ${}^{*}$ | the natural, the coefficientwise and the Hermitian conjugation |
+| ${}^{\natural}$, $\bar{\cdot}$, ${}^{*}$ | the quaternion, the coefficientwise and the Hermitian conjugation |
 | $\tilde Q_1\tilde Q_2$, $\tilde Q_1^{\natural}\tilde Q_2$, $\tilde Q_1\tilde Q_2^{*}$, $\tilde Q_1^{\natural}\tilde Q_2^{*}$ | the four general products: general plain bilinear, general quaternionic bilinear, general plain sesquilinear, general quaternionic sesquilinear |
 | $f(\tilde Q_2,\tilde Q_1)$ | the interchange of the two arguments, the exchange of a $\mathbb{C}$-bilinear product |
 | $\overline{f(\tilde Q_2,\tilde Q_1)}$ | the conjugate transpose, the exchange of a sesquilinear product |

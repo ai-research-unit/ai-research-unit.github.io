@@ -142,7 +142,7 @@ complex-valued, indefinite, the coefficient of the block-square and the multipli
 | $\langle\tilde Q_1\star\tilde Q_2\rangle_{\natural}=\langle\tilde Q_1,\tilde Q_2\rangle_{\natural}^2$ | the failure of multiplicativity for the block |
 | $N\neq0$, $\langle\cdot,\cdot\rangle_{\natural}=0$ | the non-isotropic class, the isotropic cone |
 | $\tilde Q^{-1}=\tilde Q^{\natural}/\langle\tilde Q\rangle_{\natural}$ | the inverse in the plain product, read on the algebraic norm of the block |
-| ${}^{\natural}$, ${}^{*}$, $\overline{\cdot}$ | the three conjugations; the natural one is an automorphism of the block, the other two are conjugate-linear |
+| ${}^{\natural}$, ${}^{*}$, $\overline{\cdot}$ | the three conjugations; the quaternion one is an automorphism of the block, the other two are conjugate-linear |
 
 ## Further Reading
 

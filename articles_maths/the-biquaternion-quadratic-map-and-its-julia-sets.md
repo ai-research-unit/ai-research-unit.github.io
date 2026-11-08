@@ -35,7 +35,7 @@ are affine: for $\tilde Q_3$ a unit they are conjugate to a linear map, their or
 | reading of the square | the map | kind | the theory |
 |---|---|---|---|
 | general plain bilinear $\tilde Q\tilde Q$ | $\tilde Q\mapsto\tilde Q^2+\tilde Q_5$ | holomorphic, quadratic | this article |
-| natural $\tilde Q\tilde Q^{\natural}$ | $\tilde Q\mapsto \langle\tilde Q\rangle_{\natural}e_t+\tilde Q_5$ | scalar-valued, uses the bar | *Square Roots of an Element* |
+| quaternion $\tilde Q\tilde Q^{\natural}$ | $\tilde Q\mapsto \langle\tilde Q\rangle_{\natural}e_t+\tilde Q_5$ | scalar-valued, uses the bar | *Square Roots of an Element* |
 | Hermitian $\tilde Q\tilde Q^{*}$ | $\tilde Q\mapsto\tilde Q\tilde Q^{*}+\tilde Q_5$ | real-analytic, not holomorphic | *N-Regularity and N-Degeneracy in the Biquaternion Algebra* |
 | left or right $\tilde Q_3\tilde Q_1$, $\tilde Q_1\tilde Q_3$ | affine in $\tilde Q_1$ | no fractal | — |
 | matrix $\mathsf{M}_2^{-1}\bigl(\mathsf{M}_2(\tilde Q)^2\bigr)$ | $\tilde Q\mapsto\tilde Q^2+\tilde Q_5$ | the same map | *The Matrix Element Representation and the Biquaternion Dynamics* |

@@ -64,7 +64,7 @@ The first is the complex bilinear **dot product**, a scalar; the second is the c
 
 ## The Conjugations and the Classification
 
-**Definition.** The **natural**, the **coefficient** and the **Hermitian** conjugations of $\tilde Q=Q_te_t+\vec Q$ are
+**Definition.** The **quaternion**, the **coefficient** and the **Hermitian** conjugations of $\tilde Q=Q_te_t+\vec Q$ are
 
 $$
 \tilde Q^{\natural}=Q_te_t-\vec Q , \qquad
@@ -160,7 +160,7 @@ The real reading sees more subspaces than the complex one, since every complex s
 | $\tilde Q=Q_te_t+\vec Q$ | the general biquaternion |
 | $Q_\mu=q_\mu+iq'_\mu$ | the complex coefficients |
 | $J(\tilde Q)=i\tilde Q$ | the complex structure |
-| $\natural,\ \bar{\cdot},\ {}^{*},\ \flat$ | natural, coefficient, Hermitian and anti-Hermitian conjugations |
+| $\natural,\ \bar{\cdot},\ {}^{*},\ \flat$ | quaternion, coefficient, Hermitian and anti-Hermitian conjugations |
 
 The marks and their case rules are those of *Algebra and Element Conventions*.
 

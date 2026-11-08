@@ -72,9 +72,9 @@ Let $\alpha$ be the sign of the vector part of the second factor and $\beta$ the
 | product | first slot | second slot | $\varepsilon$ | $\alpha$ | $\beta$ | $\alpha\beta$ |
 |---|---|---|---|---|---|---|
 | $\tilde Q_1\tilde Q_2$ | plain | plain | $0$ | $+$ | $+$ | $+$ |
-| $\tilde Q_1^{\natural}\tilde Q_2$ | natural | plain | $0$ | $+$ | $-$ | $-$ |
+| $\tilde Q_1^{\natural}\tilde Q_2$ | quaternion | plain | $0$ | $+$ | $-$ | $-$ |
 | $\tilde Q_1\tilde Q_2^{*}$ | plain | star | $1$ | $-$ | $+$ | $-$ |
-| $\tilde Q_1^{\natural}\tilde Q_2^{*}$ | natural | star | $1$ | $-$ | $-$ | $+$ |
+| $\tilde Q_1^{\natural}\tilde Q_2^{*}$ | quaternion | star | $1$ | $-$ | $-$ | $+$ |
 
 **Theorem (the vector part of a general product).** For the four general products,
 

@@ -28,7 +28,7 @@ and every table of the article follows the new order: the four general structure
 
 The value $0$ is reached by the square of a structure exactly when the square of the element vanishes, so the root set of $0$ of a structure is the set of the elements whose square in it vanishes. On the four general products the four sets are four different pieces of the space, and no one of them is empty.
 
-**Theorem (the four square-zero sets).** Write $Z_1$, $Z_2$, $Z_3$, $Z_4$ for the root sets of $0$ of the plain, the natural, the general plain sesquilinear and the general quaternionic sesquilinear product. Then
+**Theorem (the four square-zero sets).** Write $Z_1$, $Z_2$, $Z_3$, $Z_4$ for the root sets of $0$ of the plain bilinear, the quaternionic bilinear, the general plain sesquilinear and the general quaternionic sesquilinear product. Then
 
 $$
 \boxed{\;
@@ -229,7 +229,7 @@ The nilpotents are the non-zero square-zero elements, that is the nilpotents of 
 |---|---|
 | $\lambda e_t$ | a central value, $\lambda\in\mathbb{C}$ |
 | $\mathcal R_0$ | the root set of the value $0$, the solutions of $\tilde{Ζ}\star\tilde{Ζ}=0$ |
-| $Z_1$, $Z_2$, $Z_3$, $Z_4$ | the root sets of $0$ of the plain, the natural, the general plain sesquilinear and the general quaternionic sesquilinear product |
+| $Z_1$, $Z_2$, $Z_3$, $Z_4$ | the root sets of $0$ of the plain bilinear, the quaternionic bilinear, the general plain sesquilinear and the general quaternionic sesquilinear product |
 | $\mathcal{N}=\{C(\tilde{Ζ})=0\}$ | the cone, the vanishing set of the central square |
 | $C(\tilde{Ζ})e_t=\tilde{Ζ}^{\natural}\tilde{Ζ}$ | the central square, with $C(\tilde{Ζ})=\sum_\muΖ_\mu^{2}$ |
 | $\langle\tilde{Ζ}\rangle_{*}=\sum_\mu\lvertΖ_\mu\rvert^{2}$ | the Hermitian square, the scalar part of the second product's square |

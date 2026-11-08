@@ -427,7 +427,7 @@ is a subalgebra as well, of real dimension three: on the vector subspace the ope
 $$
 \overline{\tilde Q_1\diamond\tilde Q_2}=\bar{\tilde Q_1}\diamond\bar{\tilde Q_2} .
 $$
-It is conjugate-linear, so it is not an automorphism over $\mathbb{C}$, and composing it with the $\mathbb{C}$-linear automorphism group (*The Adjoint Operators of the Antisymmetric Quaternionic Algebra*, §*The Automorphism Group and the Structure Group*) gives the conjugate-linear coset $\bar{\cdot}\,\mathrm{Aut}_{\mathbb{C}}$ of the real automorphism group, which the complex reading does not see. The quaternion conjugation is not an automorphism of the block: at $(\vec e_x,\vec e_y)$ it gives ${}^{\natural}(\vec e_x\diamond \vec e_y)=\vec e_z$ while ${}^{\natural}\vec e_x\diamond{}^{\natural}\vec e_y=-\vec e_z$; the block reads its real automorphisms through the coefficientwise conjugation and not through the natural one.
+It is conjugate-linear, so it is not an automorphism over $\mathbb{C}$, and composing it with the $\mathbb{C}$-linear automorphism group (*The Adjoint Operators of the Antisymmetric Quaternionic Algebra*, §*The Automorphism Group and the Structure Group*) gives the conjugate-linear coset $\bar{\cdot}\,\mathrm{Aut}_{\mathbb{C}}$ of the real automorphism group, which the complex reading does not see. The quaternion conjugation is not an automorphism of the block: at $(\vec e_x,\vec e_y)$ it gives ${}^{\natural}(\vec e_x\diamond \vec e_y)=\vec e_z$ while ${}^{\natural}\vec e_x\diamond{}^{\natural}\vec e_y=-\vec e_z$; the block reads its real automorphisms through the coefficientwise conjugation and not through the quaternion one.
 
 ## The Antisymmetric Quaternionic Sesqualgebra (aqs)
 

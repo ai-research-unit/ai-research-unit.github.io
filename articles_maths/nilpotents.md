@@ -256,13 +256,13 @@ The nilpotents are one of the two families of the zero-divisor set, and the fami
 
 ### The Conjugations
 
-**The conjugations act on the nilpotent cone as real-linear bijections of the cone onto itself: the natural, the star and the Hermitian conjugation each send a nilpotent to a nilpotent, and the star fixes no nonzero nilpotent, so it pairs the nilpotents two by two.**
+**The conjugations act on the nilpotent cone as real-linear bijections of the cone onto itself: the quaternion, the star and the Hermitian conjugation each send a nilpotent to a nilpotent, and the star fixes no nonzero nilpotent, so it pairs the nilpotents two by two.**
 
 The conjugations act on the nilpotent cone in a simple way, and the action is worth recording because the two families of the zero divisors are separated by it.
 
 | conjugation | effect on a nilpotent $\tilde\Upsilon=r(\vec u_p+i\vec u_{p'})$ |
 |---|---|
-| natural, ${}^{\natural}$ | $-\tilde\Upsilon=-r(\vec u_p+i\vec u_{p'})$, a nilpotent |
+| quaternion, ${}^{\natural}$ | $-\tilde\Upsilon=-r(\vec u_p+i\vec u_{p'})$, a nilpotent |
 | star, ${}^{*}$ | $\overline{\tilde\Upsilon}=r(\vec u_p-i\vec u_{p'})$, a nilpotent |
 | Hermitian, ${}^{\natural}\circ{}^{*}={}^{*}\circ{}^{\natural}$ | $-\overline{\tilde\Upsilon}=-r(\vec u_p-i\vec u_{p'})$, a nilpotent |
 | reversal | the reversed element and the three above according to the layer |

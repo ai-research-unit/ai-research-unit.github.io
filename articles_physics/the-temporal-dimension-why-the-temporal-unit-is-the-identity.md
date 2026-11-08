@@ -30,13 +30,13 @@ $$
 
 Multiplication by $e_t$ is the operation that does nothing. The temporal unit is the unit of the algebra in the strict sense: it is the neutral element of the product, and every other unit is a departure from it.
 
-**It is fixed by the natural, complex and Hermitian conjugations.** The natural, complex and Hermitian conjugations all leave $e_t$ alone,
+**It is fixed by the quaternion, complex and Hermitian conjugations.** The quaternion, complex and Hermitian conjugations all leave $e_t$ alone,
 
 $$
 e_t^{\natural} = \bar{e_t} = e_t^{*} = e_t ,
 $$
 
-while each of the three vector units changes sign under the quaternion conjugation, $\vec e_k^{\natural} = -\vec e_k$. The temporal direction is the direction fixed by the natural, complex and Hermitian conjugations. Only the anti-Hermitian conjugation $\flat = -{}^{*}$ negates $e_t$, $e_t^{\flat} = -e_t$, while fixing the three vector units.
+while each of the three vector units changes sign under the quaternion conjugation, $\vec e_k^{\natural} = -\vec e_k$. The temporal direction is the direction fixed by the quaternion, complex and Hermitian conjugations. Only the anti-Hermitian conjugation $\flat = -{}^{*}$ negates $e_t$, $e_t^{\flat} = -e_t$, while fixing the three vector units.
 
 **It is the direction the rotations fix and the boosts move.** The Lorentz action is rotor conjugation, $\tilde Q \mapsto \tilde U\tilde Q\tilde U^{*}$ for $\tilde U$ in the norm-one group $\mathbb{B}^\times_1 = \{\tilde U : \langle\tilde U\rangle_{\natural} = e_t\}$. A **rotation** is a unit real quaternion, an element of $Sp(1) \subset \mathbb{B}^\times_1$, and it fixes the temporal unit,
 
@@ -196,7 +196,7 @@ The three readings are independent of one another and rest on one algebraic fact
 
 ## Summary
 
-The base of the biquaternion algebra carries one unit unlike the others. The temporal unit is the identity, $e_t = 1$; it commutes with the whole algebra, it is fixed by the natural, complex and Hermitian conjugations, and it is fixed by every rotation, while the boosts carry it into the informational sector and the three vector units anticommute among themselves and each square to $-e_t$. The temporal direction is therefore the **scalar** direction — the centre of the algebra's action on itself, the direction along which an element is a number rather than a vector, the axis of the framework's rotations. This is the algebraic content of the writing $e_t = 1$, and the article's first claim is that it is a statement about the temporal dimension and not a bookkeeping choice.
+The base of the biquaternion algebra carries one unit unlike the others. The temporal unit is the identity, $e_t = 1$; it commutes with the whole algebra, it is fixed by the quaternion, complex and Hermitian conjugations, and it is fixed by every rotation, while the boosts carry it into the informational sector and the three vector units anticommute among themselves and each square to $-e_t$. The temporal direction is therefore the **scalar** direction — the centre of the algebra's action on itself, the direction along which an element is a number rather than a vector, the axis of the framework's rotations. This is the algebraic content of the writing $e_t = 1$, and the article's first claim is that it is a statement about the temporal dimension and not a bookkeeping choice.
 
 On the material sector the temporal coefficient is imaginary. The four-position is $i r'_t\,e_t + r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z$, the signature of the interval is the square of the imaginary coefficient, and the reading already recorded in *The Material Sector: Four-Vectors, Interval and Lorentz Action* is that the imaginary coefficient is the mark of a coordinate that is measured but not touched: the three real coefficients are the directions a material body extends along, and the one imaginary coefficient is the direction it is merely at.
 

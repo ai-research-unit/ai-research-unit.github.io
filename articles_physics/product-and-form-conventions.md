@@ -324,7 +324,7 @@ The Hermitian form is the one that carries probability: $\langle e_t,e_t\rangle_
 | $\tilde Q_1\wedge\tilde Q_2$ | The antisymmetric product, the half-difference; on differential forms the same glyph is the exterior product |
 | $B$, $N$, $H$, $\mathrm{Kr}$ | The four forms: plain, quaternionic, Hermitian, Krein |
 | $\langle\tilde Q_1,\tilde Q_2\rangle_{*}$ | The Hermitian form, $\mathrm{Sc}(\tilde Q_1\tilde Q_2^{*})$ |
-| $\natural$, ${}^{*}$, $\flat=-{}^{*}$ | The natural, star and flat conjugations |
+| $\natural$, ${}^{*}$, $\flat=-{}^{*}$ | The quaternion, star and flat conjugations |
 | $\mathrm{Form}$, $\mathrm{Norm}$ | The generic form of the statement and the form at its two equal arguments |
 
 ## Further Reading

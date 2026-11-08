@@ -149,13 +149,13 @@ The plain idempotents are thus nilpotents of the quaternionic product; the proof
 
 ## The Conjugations
 
-**All four conjugations preserve the nilpotent cone $C$: the natural, the coefficientwise and the Hermitian conjugation preserve the algebraic norm up to complex conjugation, and the complex structure sends $\langle\cdot\rangle_{\natural}$ to $-N$.**
+**All four conjugations preserve the nilpotent cone $C$: the quaternion, the coefficientwise and the Hermitian conjugation preserve the algebraic norm up to complex conjugation, and the complex structure sends $\langle\cdot\rangle_{\natural}$ to $-N$.**
 
 The four conjugations of the algebra act on the nilpotent cone, and their action is read from the algebraic norm.
 
 | conjugation | effect on the algebraic norm | effect on the cone |
 |---|---|---|
-| natural, ${}^{\natural}$ | $\langle\tilde Q^{\natural}\rangle_{\natural}=\langle\tilde Q\rangle_{\natural}$ | preserves $C$ |
+| quaternion, ${}^{\natural}$ | $\langle\tilde Q^{\natural}\rangle_{\natural}=\langle\tilde Q\rangle_{\natural}$ | preserves $C$ |
 | coefficientwise, $\bar{\cdot}$ | $\langle\overline{\tilde Q}\rangle_{\natural}=\overline{\langle\tilde Q\rangle_{\natural}}$ | preserves $C$ |
 | Hermitian, the composite of the two | $\langle\cdot\rangle_{\natural}$ is sent to its complex conjugate | preserves $C$ |
 | complex structure, $\tilde Q\mapsto i\tilde Q$ | $\langle i\tilde Q\rangle_{\natural}=-\langle\tilde Q\rangle_{\natural}$ | preserves $C$ |

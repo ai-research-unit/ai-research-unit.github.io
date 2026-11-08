@@ -255,7 +255,7 @@ $$
 \bigl(e^{\theta\tilde Q}\bigr)^\natural\bigl(e^{\theta\tilde Q}\bigr)=e^{2\theta Q_t}e_t,
 $$
 
-so the quaternionic norm of the flow is $N(e^{\theta\tilde Q})=e^{2\theta Q_t}$, in agreement with *Biquaternion Elementary Functions*, §*The Exponential*. The flow is natural-unitary for all $\theta$ exactly when $Q_t=0$.
+so the quaternionic norm of the flow is $N(e^{\theta\tilde Q})=e^{2\theta Q_t}$, in agreement with *Biquaternion Elementary Functions*, §*The Exponential*. The flow is quaternion-unitary for all $\theta$ exactly when $Q_t=0$.
 
 ### Hermitian Conjugation
 
@@ -433,7 +433,7 @@ $$
 
 The eigenvalues $\lambda_\pm=Q_t\pm iB$ are the character exponents, the idempotents $\tilde\Pi_\pm=\tfrac12(e_t\mp i\rho)$ are the algebraic projections onto the two frequency components, and the eigenbasis is the root-adapted Fourier basis diagonalized block by block. The Fourier factorization keeps the two invariant planes; the spectral decomposition regroups their four lines by eigenvalue; the two cuts are transverse.
 
-The kernel is natural-unitary for every pure root, and Hermitian-$*$-unitary exactly when the root is real. The flow is Hermitian-$*$-unitary exactly in the material sector, and Hermitian-self-adjoint exactly in the Hermitian sector. Normality is the orthogonality of the eigenbasis: it is a condition on $\vec Q$ alone, it is weaker than unitarity, and it does not make the norm constant.
+The kernel is quaternion-unitary for every pure root, and Hermitian-$*$-unitary exactly when the root is real. The flow is Hermitian-$*$-unitary exactly in the material sector, and Hermitian-self-adjoint exactly in the Hermitian sector. Normality is the orthogonality of the eigenbasis: it is a condition on $\vec Q$ alone, it is weaker than unitarity, and it does not make the norm constant.
 
 The Hermitian norm of the flow is
 
@@ -461,7 +461,7 @@ On the cone there is no root and no frequency. The exponential is the truncated 
 | Spectral form | $e^{\theta\tilde Q}=e^{\theta Q_t}(e^{iB\theta}\tilde\Pi_++e^{-iB\theta}\tilde\Pi_-)$ |
 | Eigenspaces | $E_\pm=\tilde\Pi_\pm\mathbb{B}$ |
 | Fourier eigenbasis | $(\tilde\Pi_+,u_-,u_+,\tilde\Pi_-)$, $u_\mp=\tfrac12(\nu\mp i\zeta)$ |
-| Natural unitarity of the kernel | $W^\natural=W^{-1}$ for every pure root |
+| Quaternion unitarity of the kernel | $W^\natural=W^{-1}$ for every pure root |
 | Hermitian unitarity of the kernel | $W^*=W^{-1}$ iff $\rho$ real |
 | $*$-Unitary flow | $\tilde Q^*=-\tilde Q$ iff $Q_t\in i\mathbb{R}$, $\vec Q\in\mathbb{R}^3$ |
 | Self-adjoint flow | $\tilde Q^*=\tilde Q$ iff $Q_t\in\mathbb{R}$, $\vec Q\in i\mathbb{R}^3$ |

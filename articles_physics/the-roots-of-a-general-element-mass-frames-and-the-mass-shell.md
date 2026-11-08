@@ -59,7 +59,7 @@ whose discriminant is $16n$, with $n=\langle\tilde Q\rangle_{\natural}$ the biqu
 
 That count is the one given in *Biquaternion Elementary Functions*, §*The Roots*. The four plain roots are the four independent sign choices of the two eigenvalue square roots: the root carries one sign of $\sqrt{\lambda_+}$ where the radicand carries $\lambda_+$, and one sign of $\sqrt{\lambda_-}$ where it carries $\lambda_-$, the two chosen independently. Shifting the two logarithms by $2\pi i$ reproduces the same finite set.
 
-The root set of $0$ is the origin and the nilpotent cone. In the natural band the root set of a nonzero value is a level set, not a cone; in the plain band it is the classified set — finite for a non-scalar radicand, and a finite set together with a four-parameter family for a central scalar. For a **central** nonzero value, every root is a unit: the scalar roots are units, and a pure root has $(\vec{Ζ},\vec{Ζ})\neq0$, so its norm does not vanish. A nonzero element equal to its own square is its own root and is therefore a zero divisor; the unit statement is a statement about central values.
+The root set of $0$ is the origin and the nilpotent cone. In the quaternionic band the root set of a nonzero value is a level set, not a cone; in the plain band it is the classified set — finite for a non-scalar radicand, and a finite set together with a four-parameter family for a central scalar. For a **central** nonzero value, every root is a unit: the scalar roots are units, and a pure root has $(\vec{Ζ},\vec{Ζ})\neq0$, so its norm does not vanish. A nonzero element equal to its own square is its own root and is therefore a zero divisor; the unit statement is a statement about central values.
 
 ### The Quaternionic Square and the Shell
 
@@ -91,7 +91,7 @@ $$
 E^2=(\vec p,\vec p)c^2+m^2c^4 .
 $$
 
-The root set of the value $-m^2c^2$ in the natural band is the whole shell, a three-dimensional two-sheeted hyperboloid, not a finite set. Every point of the shell is a four-momentum; the root is the four-momentum itself. This is the precise sense in which the root problem is the mass-shell problem: it is the natural root problem, not the plain one.
+The root set of the value $-m^2c^2$ in the quaternionic band is the whole shell, a three-dimensional two-sheeted hyperboloid, not a finite set. Every point of the shell is a four-momentum; the root is the four-momentum itself. This is the precise sense in which the root problem is the mass-shell problem: it is the quaternionic root problem, not the plain one.
 
 The mass shell is not the plain root set of a central value. The plain roots of $-m^2c^2$ include the scalar elements $\pm imc\,e_t$, which are the two rest points of the shell, and a four-parameter family of pure roots with $(\vec{Ζ},\vec{Ζ})=m^2c^2$, which are not four-momenta of the shell. The two statements are different and both are correct in their own band.
 
@@ -107,7 +107,7 @@ a positive semidefinite element of $\mathbb{B}_{\Psi}$, with non-negative eigenv
 
 ## The Sign and the Causal Class
 
-On the material slice the sign of a real central value is the causal class of its natural level set. The value $-m^2c^2$ is negative and its level set is the timelike region; the value $0$ is null and its level set is the cone; the value $+m^2c^2$ is positive and its level set is the spacelike region. The magnitude sets the size of the shell: if the reference shell is $\langle\tilde P_{\Phi}\rangle_{\natural}=-1$, the shell of mass $m$ is its image under multiplication by $mc$, because the norm is quadratic in the scale.
+On the material slice the sign of a real central value is the causal class of its quaternionic level set. The value $-m^2c^2$ is negative and its level set is the timelike region; the value $0$ is null and its level set is the cone; the value $+m^2c^2$ is positive and its level set is the spacelike region. The magnitude sets the size of the shell: if the reference shell is $\langle\tilde P_{\Phi}\rangle_{\natural}=-1$, the shell of mass $m$ is its image under multiplication by $mc$, because the norm is quadratic in the scale.
 
 Invertibility divides the same way. A root of a nonzero central value is a unit, so a tachyon is invertible; among the central values, only $0$ has non-invertible roots. The cone is the wall of the units, and the mass shell never touches it for $m\neq0$.
 
@@ -115,7 +115,7 @@ The sign is not decoration. A mass term built with the wrong conjugation uses th
 
 ## The Mass Is the Modulus
 
-The natural root set is the level set of the norm; the Hamilton pairing names the invariant that the level set carries. For a four-momentum,
+The quaternionic root set is the level set of the norm; the Hamilton pairing names the invariant that the level set carries. For a four-momentum,
 
 $$
 \boxed{\;\tilde P_{\Phi}=\Rho e^{\vec U\Theta}\;},
@@ -166,7 +166,7 @@ $$
 \langle\tilde P_{\Phi}\rangle_{\natural}+m^2c^2 ,
 $$
 
-up to a sign and a normalisation. The propagator is singular where the denominator vanishes, and that locus is the mass shell. The root set of the natural band and the pole set of the propagator are the same set, seen once as an algebraic level set and once as an analytic singularity.
+up to a sign and a normalisation. The propagator is singular where the denominator vanishes, and that locus is the mass shell. The root set of the quaternionic band and the pole set of the propagator are the same set, seen once as an algebraic level set and once as an analytic singularity.
 
 The Feynman prescription deforms the shell,
 
@@ -274,7 +274,7 @@ The map is a circle bundle away from the origin: the fiber over a nonzero $x$ is
 
 The plain root set of a generic element has four elements, two opposite pairs. A nonzero central scalar has a continuum: two scalar roots and a four-parameter family of pure roots. The algebra does not select one element of the set. A calculation chooses a root, and the choice fixes the sign and the branch of the square. That choice is what the article calls a **frame**.
 
-The word is not a Lorentz frame and not a gauge orbit. It names the fact that the root is a representative: the value $\tilde Q$ is fixed, the root is one of its square roots, and the passage from one root to another is a discrete sign or a continuous family, not a symmetry of the value. In the natural band the interpretation is sharper. The root set of $-m^2c^2$ is the mass shell, and every point of the shell is a frame in this sense: a representative four-momentum, a choice of energy and momentum that realizes the same invariant mass. The word names the representative, not an observer's basis. The shell is the set of representatives, not a set of particles; a particle is a state, and the shell is its kinematical arena.
+The word is not a Lorentz frame and not a gauge orbit. It names the fact that the root is a representative: the value $\tilde Q$ is fixed, the root is one of its square roots, and the passage from one root to another is a discrete sign or a continuous family, not a symmetry of the value. In the quaternionic band the interpretation is sharper. The root set of $-m^2c^2$ is the mass shell, and every point of the shell is a frame in this sense: a representative four-momentum, a choice of energy and momentum that realizes the same invariant mass. The word names the representative, not an observer's basis. The shell is the set of representatives, not a set of particles; a particle is a state, and the shell is its kinematical arena.
 
 **The boundary.** The roots are not all related by a physical transformation. The four plain roots are two opposite pairs, not one orbit; the central family is a continuum, not a gauge orbit. The frame interpretation is an interpretation of the multiplicity, not a derivation of a gauge symmetry. The algebra gives the multiplicity; it does not give a principle for choosing one root over another.
 
@@ -285,18 +285,18 @@ The three bands answer three different root questions. The table states the diff
 | band | root equation | root set of a value | physical interpretation |
 | --- | --- | --- | --- |
 | plain | $\tilde{Ζ}^2=\tilde Q$ | four, two or none for a non-scalar radicand; two scalars and a four-parameter family for a nonzero central scalar | the algebraic multiplicity; roots as frames |
-| natural | $\tilde{Ζ}\tilde{Ζ}^{\natural}=\lambda e_t$ | the level set $\langle\tilde{Ζ}\rangle_{\natural}=\lambda$ | the mass shell; the causal class |
+| quaternionic | $\tilde{Ζ}\tilde{Ζ}^{\natural}=\lambda e_t$ | the level set $\langle\tilde{Ζ}\rangle_{\natural}=\lambda$ | the mass shell; the causal class |
 | Hermitian | $\tilde{Ζ}\tilde{Ζ}^{*}=\tilde Q$ | the amplitudes $\tilde Q^{1/2}$ times a $*$-unitary element, for a positive semidefinite value only | the mass-squared operator; the Born weight |
 
 ## Limits
 
 The article derives no mass, no coupling and no dynamics. The mass field is an input; the condensate needs a dynamics the algebra does not contain; the propagator contour is a boundary condition; the Kustaanheimo–Stiefel transformation is imported. The root set is not a particle spectrum: the mass shell is a set of four-momenta, and the mass-squareds of a doublet are eigenvalues of an operator, not roots. The frame interpretation is not a gauge symmetry.
 
-The bands must be kept apart. The plain root set of a nonzero central value is a finite set together with a four-parameter family; the natural root set is the shell; the Hermitian root set is the mass operator's family. A reader who applies the plain classification to the mass shell will look for a finite root set where there is a hyperboloid, and a reader who applies the natural level set to the plain problem will lose the multiplicity. The distinction is the first result of the article and the boundary of the other four.
+The bands must be kept apart. The plain root set of a nonzero central value is a finite set together with a four-parameter family; the quaternionic root set is the shell; the Hermitian root set is the mass operator's family. A reader who applies the plain classification to the mass shell will look for a finite root set where there is a hyperboloid, and a reader who applies the quaternionic level set to the plain problem will lose the multiplicity. The distinction is the first result of the article and the boundary of the other four.
 
 ## Summary
 
-The root problem $\tilde{Ζ}^2=\tilde Q$ is band-dependent. In the plain band the roots are generically four, falling to two or to none, with a four-parameter family for a central scalar; the root of $0$ is the nilpotent cone. In the natural band the root set of a central value is the level set of the interval, and on the material sector the level set $-m^2c^2$ is the mass shell. In the Hermitian band the root set is the family $\tilde Q^{1/2}$ times a $*$-unitary element, and the mass-squared operator of a doublet lives in that band.
+The root problem $\tilde{Ζ}^2=\tilde Q$ is band-dependent. In the plain band the roots are generically four, falling to two or to none, with a four-parameter family for a central scalar; the root of $0$ is the nilpotent cone. In the quaternionic band the root set of a central value is the level set of the interval, and on the material sector the level set $-m^2c^2$ is the mass shell. In the Hermitian band the root set is the family $\tilde Q^{1/2}$ times a $*$-unitary element, and the mass-squared operator of a doublet lives in that band.
 
 The five interpretations use these sets: the mass shell is a propagator pole; the mass can be a field, with a mass-squared operator whose eigenvalues split a doublet; the mass can be generated by a chiral condensate; the root can be the Kustaanheimo–Stiefel square root of the position; and the roots are frames, the representatives the algebra does not choose among. The mass itself is the Hamilton modulus, $m=\lvert\Rho\rvert/c$, and the shell is its level set. The isospectral family of a generic element is the complex quadric of fixed trace and fixed vector square; on the material slice it is the sphere of directions, and at a repeated eigenvalue it splits into a scalar class and a class with nilpotent vector part.
 

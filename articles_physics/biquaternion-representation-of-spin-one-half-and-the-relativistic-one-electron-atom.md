@@ -393,7 +393,7 @@ The dictionary is complex-linear; over $\mathbb{R}$ the products span $\mathrm{C
 |---|---|
 | $\mathbb{B}$ | The biquaternion algebra of the corpus, the algebra of every element of this article |
 | $e_t, \vec e_x, \vec e_y, \vec e_z$ | The units, in the naming of *Algebra and Element Conventions* |
-| ${}^{*}$, ${}^{\natural}$, $\bar{\ }$ | The Hermitian, natural and coefficient conjugations, as those conventions fix them |
+| ${}^{*}$, ${}^{\natural}$, $\bar{\ }$ | The Hermitian, quaternion and coefficient conjugations, as those conventions fix them |
 | $\mathrm{Sc}$, $H$, $\langle\cdot\rangle_{\natural}$ | The scalar part, the Hermitian norm and the algebra norm of *Norm and Pairing Conventions* |
 | $\langle\cdot,\cdot\rangle_{*}$ | The Hermitian form of *Norm and Pairing Conventions* |
 | $\mathsf{M}_2$ | The corpus's complex-linear map to the two-by-two arrays; named here, restated nowhere |

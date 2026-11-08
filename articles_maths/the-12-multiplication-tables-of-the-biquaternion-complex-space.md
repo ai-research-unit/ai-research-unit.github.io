@@ -320,7 +320,7 @@ On the four-element basis $e_t,\vec e_x,\vec e_y,\vec e_z$ the twelve tables tak
 |---|---|
 | $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ | the biquaternion algebra, basis $e_t,\vec e_x,\vec e_y,\vec e_z$, central imaginary $i$ |
 | $\tilde Q=Q_te_t+\vec Q$ | a biquaternion, its scalar and vector parts |
-| ${}^{\natural}$, $\bar{\cdot}$, ${}^{*}$ | the natural, the coefficientwise and the Hermitian conjugation |
+| ${}^{\natural}$, $\bar{\cdot}$, ${}^{*}$ | the quaternion, the coefficientwise and the Hermitian conjugation |
 | $\varepsilon=(1,-1,-1,-1)$ | the sign vector, $e_\mu^{\natural}=e_\mu^{*}=\varepsilon_\mu e_\mu$ |
 | $T(\star)$ | the multiplication table of $\star$, $T(\star)_{\mu\nu}=e_\mu\star e_\nu$ |
 | $\star_T$, the bilinear reading | $\tilde Q_1\star_T\tilde Q_2=\sum_{\mu,\nu}Q_{1,\mu} Q_{2,\nu} T_{\mu\nu}$ |

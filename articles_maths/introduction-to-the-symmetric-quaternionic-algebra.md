@@ -210,7 +210,7 @@ The symmetric part of the general quaternionic product $\tilde Q_1^{\natural}\ti
 |---|---|
 | $\mathbb{B}$ | the biquaternion algebra $\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ |
 | $e_t,\vec e_x,\vec e_y,\vec e_z$ | the basis, $e_t$ the identity, $\vec e_k^2=-e_t$, $\vec e_x \vec e_y=\vec e_z$, $\vec e_y \vec e_z=\vec e_x$, $\vec e_z \vec e_x=\vec e_y$ |
-| ${}^{\natural}$, ${}^{*}$, $\overline{\cdot}$ | the natural, the star and the Hermitian conjugations, all fixing $e_t$ |
+| ${}^{\natural}$, ${}^{*}$, $\overline{\cdot}$ | the quaternion, the star and the Hermitian conjugations, all fixing $e_t$ |
 | $i$ | the central scalar imaginary, $i^2=-1$ |
 | $\tilde Q_1^{\natural}\tilde Q_2$ | the general quaternionic bilinear product, the parent product |
 | $\tilde Q_1\star\tilde Q_2=\tfrac12(\tilde Q_1^{\natural}\tilde Q_2+\tilde Q_2^{\natural}\tilde Q_1)$ | the symmetric quaternionic multiplication, the operation $\tilde Q_1\bullet_{\natural}\tilde Q_2$ |

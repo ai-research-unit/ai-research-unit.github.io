@@ -247,7 +247,7 @@ and the element $e_t + i\vec e_x$ is a non-pure zero divisor whose square vanish
 | symbol | meaning |
 |---|---|
 | $\tilde Q_1\star\tilde Q_2 = \tilde Q_1^{\natural}\tilde Q_2^{*}$ | the general quaternionic sesquilinear product |
-| $\tilde Q^{\natural}$, $\tilde Q^{*}$, $\overline{\tilde Q}$ | the natural, the star and the Hermitian conjugations |
+| $\tilde Q^{\natural}$, $\tilde Q^{*}$, $\overline{\tilde Q}$ | the quaternion, the star and the Hermitian conjugations |
 | zero divisor of $\star$ | a nonzero $\tilde Q$ with a nonzero right or left partner of vanishing product |
 | $C(\tilde Q) = \sum_\mu Q_\mu^2$ | the central square, $C(\tilde Q)e_t = \tilde Q\tilde Q^{\natural}$ |
 | $C(\tilde Q) = 0$ | the zero-divisor criterion |

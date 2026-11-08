@@ -61,7 +61,7 @@ $$
 $$
 in which each rung is a real vector space of dimension $1,2,4$ and the last is the division algebra $\mathbb{H}$.
 
-**Warning (the bar on an element).** On an element of $\mathbb{H}$ the complex conjugation $\bar{\cdot}$ of the coefficients acts as the identity, because the coefficients are real. The conjugation that acts on $\mathbb{H}$ is the natural one ${}^{\natural}$, and it is ${}^{\natural}$ and never a bar that is written on an element here. The reading of the two conjugations is the one of *The Quaternioid as a Vector Space over $\mathbb{C}$*, below this article in this category, and the involutions they obey are *The Group of Involutions of the Quaternioid*, below this article in this category.
+**Warning (the bar on an element).** On an element of $\mathbb{H}$ the complex conjugation $\bar{\cdot}$ of the coefficients acts as the identity, because the coefficients are real. The conjugation that acts on $\mathbb{H}$ is the quaternion conjugation ${}^{\natural}$, and it is ${}^{\natural}$ and never a bar that is written on an element here. The reading of the two conjugations is the one of *The Quaternioid as a Vector Space over $\mathbb{C}$*, below this article in this category, and the involutions they obey are *The Group of Involutions of the Quaternioid*, below this article in this category.
 
 ## Summary
 

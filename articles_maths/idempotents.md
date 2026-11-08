@@ -584,7 +584,7 @@ The action of the involutions on the idempotents is collected in the table.
 
 | Involution | $0$ | $e_t$ | $\tilde\Pi_{+}$ | $\tilde\Pi_{-}$ |
 |---|---|---|---|---|
-| natural $\tilde Q^{\natural}=Q_t-\vec Q$ | $0$ | $e_t$ | $\tilde\Pi_{-}$ | $\tilde\Pi_{+}$ |
+| quaternion $\tilde Q^{\natural}=Q_t-\vec Q$ | $0$ | $e_t$ | $\tilde\Pi_{-}$ | $\tilde\Pi_{+}$ |
 | bar $\bar{\cdot}$ | $0$ | $e_t$ | $\tilde\Pi_{-}$ | $\tilde\Pi_{+}$ |
 | star $\tilde Q^{*}=\overline{Q_t}-\overline{\vec Q}$ | $0$ | $e_t$ | $\tilde\Pi_{+}$ | $\tilde\Pi_{-}$ |
 

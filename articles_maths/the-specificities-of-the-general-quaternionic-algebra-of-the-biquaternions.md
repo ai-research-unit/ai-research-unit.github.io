@@ -130,7 +130,7 @@ The general quaternionic bilinear product $\tilde Q_1\star\tilde Q_2=\tilde Q_1^
 | $\star$ | the general quaternionic product $\tilde Q_1\star\tilde Q_2=\tilde Q_1^{\natural}\tilde Q_2$ |
 | juxtaposition | the plain associative product $\tilde Q_1\tilde Q_2$ |
 | $L_{\tilde Q_1}$ | the left multiplication $\tilde Q_2\mapsto\tilde Q_1\star\tilde Q_2$, equal to the plain left multiplication by $\tilde Q_1^{\natural}$ |
-| $\natural$, $*$, $\overline{\cdot}$ | the natural, the star and the coefficientwise conjugations, all fixing $e_t$ |
+| $\natural$, $*$, $\overline{\cdot}$ | the quaternion, the star and the coefficientwise conjugations, all fixing $e_t$ |
 | $\langle\tilde Q\rangle_{\natural}$ | the norm, $\langle\tilde Q\rangle_{\natural}e_t=\tilde Q\tilde Q^{\natural}$, vanishing on the zero-divisor cone |
 | pure, isotropic | vanishing scalar part; vanishing complex bilinear form on the vector part |
 | $\tilde\Pi$ | a plain idempotent; its left multiplication is a projector |

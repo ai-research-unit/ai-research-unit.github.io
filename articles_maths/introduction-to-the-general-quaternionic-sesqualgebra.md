@@ -502,7 +502,7 @@ Its two one-sided actions of $e_t$ are the two conjugations, $\tilde Q^{*}$ on t
 | $i$ | scalar imaginary, $i^2=-1$; central for the plain product, not for the multiplication of this article |
 | $\tilde Q=Q_te_t+\vec Q$ | a biquaternion and its scalar–vector split, $\vec Q=\sum_kQ_k\vec e_k$ |
 | $\mathbb{B}_{H}=\mathbb{R}e_t+\mathbb{R}\vec e_x+\mathbb{R}\vec e_y+\mathbb{R}\vec e_z$ | the real quaternion subspace, on which $p\star q=\overline{qp}$ |
-| ${}^{\natural}$, $\bar{\cdot}$, ${}^{*}=\bar{\cdot}\circ{}^{\natural}$ | the natural, the coefficientwise and the star conjugation |
+| ${}^{\natural}$, $\bar{\cdot}$, ${}^{*}=\bar{\cdot}\circ{}^{\natural}$ | the quaternion, the coefficientwise and the star conjugation |
 | $\varsigma(z)=\bar z$ | the base involution of the sesqualgebra |
 | $\tilde Q_1\star\tilde Q_2=\tilde Q_1^{\natural}\tilde Q_2^{*}$ | the general quaternionic sesquilinear product, the multiplication of the article |
 | $\varepsilon=(1,-1,-1,-1)$ | the signs of the conjugations on the basis, $Q^{\natural}_\nu=\varepsilon_\nu Q_\nu$ and $Q^{*}_\nu=\varepsilon_\nu\overline{Q_\nu}$ |

@@ -55,7 +55,7 @@ the ordinary matrix product with the adjugate in the first slot and the conjugat
 | product | rule on $\mathbb{B}$ | matrix form |
 |---|---|---|
 | plain | $\tilde{Q}_4\tilde{Q}$ | $M(\tilde Q_4)M(\tilde Q)$ |
-| natural-bilinear | $\tilde{Q}_4^{\natural}\tilde{Q}$ | $\operatorname{adj}M(\tilde Q_4)\,M(\tilde Q)$ |
+| quaternionic bilinear | $\tilde{Q}_4^{\natural}\tilde{Q}$ | $\operatorname{adj}M(\tilde Q_4)\,M(\tilde Q)$ |
 | general plain sesquilinear (sibling) | $\tilde{Q}_4\tilde{Q}^{*}$ | $M(\tilde Q_4)M(\tilde Q)^{\dagger}$ |
 | general quaternionic sesquilinear | $\tilde{Q}_4^{\natural}\tilde{Q}^{*}$ | $\operatorname{adj}M(\tilde Q_4)\,M(\tilde Q)^{\dagger}$ |
 

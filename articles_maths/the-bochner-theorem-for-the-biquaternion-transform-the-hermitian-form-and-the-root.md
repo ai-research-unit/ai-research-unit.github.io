@@ -106,7 +106,7 @@ $$
 
 *Proof.* From $\chi_\omega=\cos\theta\,e_t-\sin\theta\,\tilde{Ζ}$ and $\chi_\omega^{-1}=\cos\theta\,e_t+\sin\theta\,\tilde{Ζ}$, with $\theta=2\pi\langle\omega,x\rangle$, one reads $\chi_\omega^{*}=\cos\theta\,e_t-\sin\theta\,\tilde{Ζ}^{*}$, so the two agree for all $\omega$ and $x$ exactly when $\tilde{Ζ}^{*}=-\tilde{Ζ}$. Write $\tilde{Ζ}=a_0e_t+v$ with $a_0\in\mathbb{C}$ and $v=\sum_{\mu\geq1}a_\mu\vec e_\mu$; the condition $\tilde{Ζ}^{*}=-\tilde{Ζ}$ is $\overline{a_0}=-a_0$ and $\overline{a_\mu}=a_\mu$, that is $a_0=i\theta$ with $\theta$ real and $v$ a real quaternion. Imposing $\tilde{Ζ}^{2}=-e_t$ on $\tilde{Ζ}=i\theta e_t+v$ gives $-\theta^{2}+\lvert v\rvert^{2}=-1$ and $2i\theta v=0$, hence either $\theta=0$, which is the real roots $v$ of unit length, or $v=0$, which is the scalar imaginary $\theta=\pm1$. These are the degenerate roots and no others.
 
-The proposition is the exact biquaternion form of the classical unitarity of the character, and it is **root-dependent**, which the corpus's own statement of unitarity is not: *Biquaternion Continuous Harmonic Analysis*, §*The Fourier Kernel*, records $\chi_\omega^{\natural}=\chi_\omega^{-1}$ for a pure root, which uses the **natural** conjugation, and this holds for the pure roots — the real and the genuinely complex — while the scalar imaginary is read there as the exception. **The corpus is not wrong.** $\chi_\omega^{\natural}=\chi_\omega^{-1}$ is the correct statement about the norm's conjugation, and it answers a different question from the one asked here: whether the *norm* of the character is the identity, rather than whether the character is $*$-unitary for the conjugation a positive-definite function uses. Read with the Hermitian conjugation, which is that conjugation, the scalar imaginary is not an exception at all — it is one of the two degenerate families for which the character is $*$-unitary.
+The proposition is the exact biquaternion form of the classical unitarity of the character, and it is **root-dependent**, which the corpus's own statement of unitarity is not: *Biquaternion Continuous Harmonic Analysis*, §*The Fourier Kernel*, records $\chi_\omega^{\natural}=\chi_\omega^{-1}$ for a pure root, which uses the **quaternion** conjugation, and this holds for the pure roots — the real and the genuinely complex — while the scalar imaginary is read there as the exception. **The corpus is not wrong.** $\chi_\omega^{\natural}=\chi_\omega^{-1}$ is the correct statement about the norm's conjugation, and it answers a different question from the one asked here: whether the *norm* of the character is the identity, rather than whether the character is $*$-unitary for the conjugation a positive-definite function uses. Read with the Hermitian conjugation, which is that conjugation, the scalar imaginary is not an exception at all — it is one of the two degenerate families for which the character is $*$-unitary.
 
 ### The Quaternion Conjugation Is a Different Statement
 
@@ -115,7 +115,7 @@ The biquaternion norm of the kernel is the quaternionic square, $\langle \chi_\o
 | Reading | Condition | Holds for |
 |---|---|---|
 | Hermitian, $\chi_\omega^{*}=\chi_\omega^{-1}$ | $\tilde{Ζ}^{*}=-\tilde{Ζ}$ | scalar imaginary and real (the degenerate roots) |
-| natural, $\chi_\omega^{\natural}=\chi_\omega^{-1}$ | $\tilde{Ζ}^{\natural}=-\tilde{Ζ}$ | pure roots: real and genuinely complex (the scalar imaginary excluded) |
+| quaternion, $\chi_\omega^{\natural}=\chi_\omega^{-1}$ | $\tilde{Ζ}^{\natural}=-\tilde{Ζ}$ | pure roots: real and genuinely complex (the scalar imaginary excluded) |
 
 The Hermitian row is the one a positive-definite function uses, because a positive-definite function is sesquilinear; the natural row is the one the norm identity of the continuous article uses, and it belongs to the metric.
 
@@ -159,7 +159,7 @@ For $\tilde{Ζ}=\mu$ a unit real root the kernel is a rotor, and $\chi_\omega^{*
 
 ### The Norm Failure Is Independent of the Root
 
-*Biquaternion Continuous Harmonic Analysis* computes the quadratic form of the transform with the **natural** conjugation between the coefficients and obtains the integral of the norm,
+*Biquaternion Continuous Harmonic Analysis* computes the quadratic form of the transform with the **quaternion** conjugation between the coefficients and obtains the integral of the norm,
 
 $$
 \sum_{k,l}\overline{A_k}A_l\,G(\omega_k-\omega_l)=\int \langle Z\rangle_{\natural}\,d\mu .

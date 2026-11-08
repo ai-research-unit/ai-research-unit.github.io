@@ -26,7 +26,7 @@ $$
 $$
 It fixes the real quaternion subspace $\mathbb{B}_{H}$ and anti-fixes its imaginary multiple $\mathbb{B}_{iH}$.
 
-**The quaternion conjugation.** The **natural** conjugation is
+**The quaternion conjugation.** The map is
 $$
 b^{\natural}=b_0\,e_t-b_1\,\vec e_x-b_2\,\vec e_y-b_3\,\vec e_z .
 $$
@@ -51,7 +51,7 @@ It fixes the Hermitian subspace $\mathbb{B}_{\Psi}$ and anti-fixes the anti-Herm
 | map | linearity | multiplicativity | fixed | anti-fixed |
 |---|---|---|---|---|
 | bar $\bar{\cdot}$ | antilinear | automorphism | $\mathbb{B}_{H}$ | $\mathbb{B}_{iH}$ |
-| natural ${}^{\natural}$ | linear | antiautomorphism | $\mathbb{B}_{C}$ | $\mathbb{B}_{V}$ |
+| quaternion ${}^{\natural}$ | linear | antiautomorphism | $\mathbb{B}_{C}$ | $\mathbb{B}_{V}$ |
 | star $*$ | antilinear | antiautomorphism | $\mathbb{B}_{\Psi}$ | $\mathbb{B}_{\Phi}$ |
 
 **The central imaginary.** The three maps act on $i$ as
@@ -394,12 +394,12 @@ with $G_5=iG_0G_1G_2G_3$, and the complexified even algebra $M_2\oplus M_2$. The
 | object | value |
 |---|---|
 | bar | $\bar b=\sum\bar b_\mu e_\mu$, antilinear automorphism |
-| natural | $b^{\natural}=b_0e_t-\sum_{k}b_k\vec e_k$, linear antiautomorphism |
+| quaternion | $b^{\natural}=b_0e_t-\sum_{k}b_k\vec e_k$, linear antiautomorphism |
 | star | $b^{*}=\bar b_0e_t-\sum_k\bar b_k\vec e_k$, antilinear antiautomorphism |
 | bar matrix | $J=\operatorname{diag}(J_2,J_2,J_2,J_2)$, $\operatorname{tr}J=0$, $\det J=1$ |
-| natural matrix | $D=\operatorname{diag}(1,-1,-1,-1)$, $\operatorname{tr}D=-2$, $\det D=1$ |
+| quaternion matrix | $D=\operatorname{diag}(1,-1,-1,-1)$, $\operatorname{tr}D=-2$, $\det D=1$ |
 | star matrix | $S=D_8J$, $\operatorname{tr}S=0$, $\det S=1$ |
-| natural in the operator basis | $-\tfrac12(L_{\mathrm{axf},e_t}R_{\mathrm{axf},e_t}+L_{\mathrm{axf},\vec e_x}R_{\mathrm{axf},\vec e_x}+L_{\mathrm{axf},\vec e_y}R_{\mathrm{axf},\vec e_y}+L_{\mathrm{axf},\vec e_z}R_{\mathrm{axf},\vec e_z})$ |
+| quaternion in the operator basis | $-\tfrac12(L_{\mathrm{axf},e_t}R_{\mathrm{axf},e_t}+L_{\mathrm{axf},\vec e_x}R_{\mathrm{axf},\vec e_x}+L_{\mathrm{axf},\vec e_y}R_{\mathrm{axf},\vec e_y}+L_{\mathrm{axf},\vec e_z}R_{\mathrm{axf},\vec e_z})$ |
 | $C_b$ | $L_{\bar b}\bar{\cdot}$ |
 | $C_aC_b$ | $L_{\bar a b}$ |
 | $C'_aC'_b$ | $L_{a\bar b}$ |
