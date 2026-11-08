@@ -441,7 +441,7 @@ $$
 
 an anticommutator. The phase direction $ie_t$ gives zero. The commutator and the anticommutator are the two summands of the Cartan decomposition $\mathfrak{sl}(2,\mathbb{C})=\mathfrak{su}(2)\oplus\mathfrak{p}$, which the Cartan pairing records at the level of the element. The action therefore reproduces, infinitesimally, the same split the word exhibits algebraically.
 
-## Which Subspaces the Sandwich Preserves
+## Which Subspaces the Hermitian Pair Preserves
 
 Every sandwich preserves the two halves. A general sandwich does not preserve the other four remarkable subspaces; it does exactly when the element is a central multiple of a real unit quaternion. The table records, for a general unit and for a real unit quaternion, whether the image of a general element of the subspace lies in the same subspace.
 
