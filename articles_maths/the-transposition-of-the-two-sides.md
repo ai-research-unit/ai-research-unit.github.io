@@ -390,19 +390,19 @@ The article calls the pair a transposition of the two sides, and the name should
 
 **The plain form.** Put $\langle X,Y\rangle=\mathrm{Sc}(XY)$, the scalar part of the product. It is symmetric, because the scalar part is invariant under the exchange of its two factors, and it is non-degenerate, because the units read the coefficients: $\langle X,e_t\rangle=x_t$ and $\langle X,\vec e_k\rangle=-x_k$ for the three vector units.
 
-**The transpose.** For a $\mathbb{C}$-linear operator $F$, the **transpose** for the plain form is the operator $F^{\approx}$ with $\langle F(X),Y\rangle=\langle X,F^{\approx}(Y)\rangle$ for all $X,Y$. It exists and is unique, because the relation determines $F^{\approx}(Y)$ by its pairings with all elements and the form is non-degenerate. The corpus names this operator the **associate**.
+**The transpose.** For a $\mathbb{C}$-linear operator $F$, the **transpose** for the plain form is the operator $F^{\approx}$ with $\langle F(X),Y\rangle=\langle X,F^{\approx}(Y)\rangle$ for all $X,Y$. It exists and is unique, because the relation determines $F^{\approx}(Y)$ by its pairings with all elements and the form is non-degenerate. The corpus names this operator the **plain bilinear adjoint**.
 
-**Proposition (the associate exchanges the sides and keeps the parameter).** $L_{\tilde Q}^{\approx}=R_{\tilde Q}$ and $R_{\tilde Q}^{\approx}=L_{\tilde Q}$.
+**Proposition (the plain bilinear adjoint exchanges the sides and keeps the parameter).** $L_{\tilde Q}^{\approx}=R_{\tilde Q}$ and $R_{\tilde Q}^{\approx}=L_{\tilde Q}$.
 
 *Proof.* The left side of the defining relation for $F=L_{\tilde Q}$ is $\langle\tilde QX,Y\rangle=\mathrm{Sc}(\tilde QXY)$. The scalar part is invariant under the cyclic permutation of the three factors, so $\mathrm{Sc}(\tilde QXY)=\mathrm{Sc}(XY\tilde Q)=\langle X,R_{\tilde Q}(Y)\rangle$, which is the defining relation of $R_{\tilde Q}$; the transpose is unique. The second identity is the same computation run the other way.
 
-The comparison is now immediate. Both the associate and the conjugation turn $L_{\tilde Q}$ into a right multiplication by $\tilde Q$, and the pair reconciles them:
+The comparison is now immediate. Both the plain bilinear adjoint and the conjugation turn $L_{\tilde Q}$ into a right multiplication by $\tilde Q$, and the pair reconciles them:
 
 $$
 L_{\tilde Q}^{\approx}=R_{\tilde Q}=\natural\,L_{\natural(\tilde Q)}\,\natural .
 $$
 
-They reach the same operator and they differ in what they do to the parameter. The associate keeps it and needs no conjugation; the conjugation carries it and needs two. The pair is therefore the statement that the two prices buy the same operator, and the article's title is the record of the second price.
+They reach the same operator and they differ in what they do to the parameter. The plain bilinear adjoint keeps it and needs no conjugation; the conjugation carries it and needs two. The pair is therefore the statement that the two prices buy the same operator, and the article's title is the record of the second price.
 
 ## Summary
 
@@ -414,7 +414,7 @@ The consequences are the working tool. Any right multiplication is a conjugated 
 
 The displays that omit the carried parameter are false, and the failure is measured: $R_{\tilde Q}-\natural L_{\tilde Q}\natural=R_{2\vec Q}$, so the error vanishes exactly at the centre and is a right multiplication by twice the vector part everywhere else. The parameter of the conversion is moreover unique, the element under the left multiplication being forced to be the image of the element under the right one.
 
-Finally the mechanism and the name. The exchange of the sides is exactly the reversal of the two factors of the product inside the conjugation, which is why only antimultiplicative maps transpose the families, and why no such map can keep the parameter. The genuine transpose of the plain form, the associate, exchanges the sides as well and keeps the parameter; the conjugation exchanges them and carries it. The two agree on the operator they produce and differ on the price, and the pair is the statement of that agreement.
+Finally the mechanism and the name. The exchange of the sides is exactly the reversal of the two factors of the product inside the conjugation, which is why only antimultiplicative maps transpose the families, and why no such map can keep the parameter. The genuine transpose of the plain form, the plain bilinear adjoint, exchanges the sides as well and keeps the parameter; the conjugation exchanges them and carries it. The two agree on the operator they produce and differ on the price, and the pair is the statement of that agreement.
 
 ## Summary of Notation
 
@@ -431,15 +431,15 @@ Finally the mechanism and the name. The exchange of the sides is exactly the rev
 | $\mathsf K(F)=\natural F\natural$ | the involution: linear, involutive, product-preserving, exchanging the families |
 | $\{L_{\tilde Q},R_{\natural(\tilde Q)}\}$ | the orbit of $\mathsf K$, a pair off the centre and a point on it |
 | $R_{\tilde Q}-\natural L_{\tilde Q}\natural=R_{2\vec Q}$ | the measured failure of the pairing without the carried parameter |
-| $\langle X,Y\rangle=\mathrm{Sc}(XY)$, $L_{\tilde Q}^{\approx}=R_{\tilde Q}$ | the plain form and the associate, which transposes and keeps the parameter |
+| $\langle X,Y\rangle=\mathrm{Sc}(XY)$, $L_{\tilde Q}^{\approx}=R_{\tilde Q}$ | the plain form and the plain bilinear adjoint, which transposes and keeps the parameter |
 
 ## Further Reading
 
 - [Operators Acting on One Side](operators-acting-on-one-side.html), for the two families, their images, their commutants and the laws used here
 - [Operators Acting on Two Sides](operators-acting-on-two-sides.html), for the products $L_{\tilde Q}R_{\tilde P}$, their adjoints and their isometries
-- [Adjoint Pair of $L$ and $R$ Operators](adjoint-pair-of-l-and-r-operators.html), for the associate $L_{\tilde Q}^{\approx}=R_{\tilde Q}$ as the first of the four adjoints, and for the other three
+- [Adjoint Pair of $L$ and $R$ Operators](adjoint-pair-of-l-and-r-operators.html), for the plain bilinear adjoint $L_{\tilde Q}^{\approx}=R_{\tilde Q}$ as the first of the four adjoints, and for the other three
 - [The Hermitian Pair of Operators Acting on One Side](the-hermitian-pair-of-operators-acting-on-one-side.html), for the two-sided operators whose parameters are related by the conjugation, which are the operators fixed by the involution of this article
 - [Operator Chirality on the Biquaternion Algebra](operator-chirality-on-the-biquaternion-algebra.html), for the exchange of the sides as the corpus records it, and for its difference from the swap of the two slots
 - [The Enveloping Operator Algebra of the Biquaternion Algebra and the Bi-module Structure](the-enveloping-operator-algebra-of-the-biquaternion-algebra-and-the-bi-module-structure.html), for the generation of the endomorphism algebra by two families, one of which this article derives from the other
 - [The Group of Involutions](the-group-of-involutions.html), for $\natural$, $\ast$ and the coefficient conjugation, their linearity and their grades
-- [Bilinear Forms](bilinear-forms.html), §*Isometries*, for the transpose of a bilinear form, of which the associate is the biquaternion case
+- [Bilinear Forms](bilinear-forms.html), §*Isometries*, for the transpose of a bilinear form, of which the plain bilinear adjoint is the biquaternion case

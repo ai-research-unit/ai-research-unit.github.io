@@ -4,8 +4,8 @@
 
 The biquaternion algebra $\mathbb{B}$ carries four forms, and each form carries an adjoint of every linear map. The four adjoints have four names, and the names are used throughout this article:
 
-1. the **associate** $F^{\approx}$, the adjoint of the plain bilinear form;
-2. the **signed adjoint** $F^{\natural}$, the adjoint of the quaternionic bilinear form;
+1. the **plain bilinear adjoint** $F^{\approx}$, the adjoint of the plain bilinear form;
+2. the **quaternionic adjoint** $F^{\natural}$, the adjoint of the quaternionic bilinear form;
 3. the **Hermitian adjoint** $F^{\ast}$, the adjoint of the plain sesquilinear form;
 4. the **Krein adjoint** $F^{\natural\ast}$, the adjoint of the quaternionic sesquilinear form.
 
@@ -15,24 +15,24 @@ The four forms differ only in which sign is inserted into which slot, and the fo
 
 | name of the adjoint | mark | form | Gram matrix | adjoint of $L_{\tilde Q}$ | adjoint of $R_{\tilde Q}$ |
 |---|---|---|---|---|---|
-| the **associate** | $\approx$ | plain bilinear $\mathrm{Sc}(\tilde Q_1\tilde Q_2)$ | $\mathrm{E}$ | $R_{\tilde Q}$ | $L_{\tilde Q}$ |
-| the **signed adjoint** | $\natural$ | quaternionic bilinear $\mathrm{Sc}(\tilde Q_1^{\natural}\tilde Q_2)$ | $\mathrm{I}_4$ | $L_{\tilde Q^{\natural}}$ | $R_{\tilde Q^{\natural}}$ |
+| the **plain bilinear adjoint** | $\approx$ | plain bilinear $\mathrm{Sc}(\tilde Q_1\tilde Q_2)$ | $\mathrm{E}$ | $R_{\tilde Q}$ | $L_{\tilde Q}$ |
+| the **quaternionic adjoint** | $\natural$ | quaternionic bilinear $\mathrm{Sc}(\tilde Q_1^{\natural}\tilde Q_2)$ | $\mathrm{I}_4$ | $L_{\tilde Q^{\natural}}$ | $R_{\tilde Q^{\natural}}$ |
 | the **Hermitian adjoint** | $\ast$ | plain sesquilinear $\mathrm{Sc}(\tilde Q_1\tilde Q_2^{\ast})$ | $\mathrm{I}_4$ | $L_{\tilde Q^{\ast}}$ | $R_{\tilde Q^{\ast}}$ |
 | the **Krein adjoint** | $\natural\ast$ | quaternionic sesquilinear $\mathrm{Sc}(\tilde Q_1^{\natural}\tilde Q_2^{\ast})$ | $\mathrm{E}$ | $R_{\bar{\tilde Q}}$ | $L_{\bar{\tilde Q}}$ |
 
-Two columns of that table decide the shape of the whole subject. The associate and the Krein adjoint **exchange the side**; the signed adjoint and the Hermitian adjoint **keep it**. The associate and the signed adjoint carry **no bar**; the Hermitian and the Krein adjoints carry one.
+Two columns of that table decide the shape of the whole subject. The plain bilinear adjoint and the Krein adjoint **exchange the side**; the quaternionic adjoint and the Hermitian adjoint **keep it**. The plain bilinear adjoint and the quaternionic adjoint carry **no bar**; the Hermitian and the Krein adjoints carry one.
 
 **The four families, and which adjoint each one records.** The operator families of the corpus are named after these adjoints, and the correspondence is one row per family:
 
 | operator family | its operator | the adjoint it is named after |
 |---|---|---|
-| **Association** | $L_{\tilde Q_1}R_{\tilde Q_2}$, two parameters free | the **associate** |
-| **Signed Inner Conjugation** | $L_{\tilde Q}R_{\tilde Q^{\natural}}$ | the **signed adjoint** |
+| **Association** | $L_{\tilde Q_1}R_{\tilde Q_2}$, two parameters free | the **plain bilinear adjoint** |
+| **Signed Inner Conjugation** | $L_{\tilde Q}R_{\tilde Q^{\natural}}$ | the **quaternionic adjoint** |
 | **Hermitian Adjoint** | $L_{\tilde Q}R_{\tilde Q^{\ast}}$, the Hermitian pair | the **Hermitian adjoint** |
 | **Signed Hermitian Adjoint** | $L_{\tilde Q^{\natural}}R_{\tilde Q^{\ast}}$, the signed Hermitian pair | the **Hermitian adjoint**, with the sign put into the operator |
 | the **indefinite Hermitian pair** | $L_{\tilde Q}R_{\bar{\tilde Q}}$ | the **Krein adjoint** |
 
-The fourth row is not a fifth adjoint, and the distinction matters. The form is the plain sesquilinear form, the same one as the row above it; only the operator carries the grade involution on its left factor. So there are **four adjoints and five families**, and the word *signed* names the same operation in every row where it appears: the insertion of $\natural$.
+The family names are older than the adjoint names and are kept as they stand; the third column says which adjoint each family records. The fourth row is not a fifth adjoint, and the distinction matters. The form is the plain sesquilinear form, the same one as the row above it; only the operator carries the grade involution on its left factor. So there are **four adjoints and five families**, and the word *signed* names the same operation in every row where it appears: the insertion of $\natural$.
 
 The article proves the theorem of §*The Four Adjoints*, works one operator through all four adjoints, gives the self-adjointness criteria of the four, and shows that only the Hermitian family preserves the two sectors $\mathbb{B}_{\Psi}$ and $\mathbb{B}_{\Phi}$ of the algebra. The forms are *The Four Forms and the Four Algebraic Norms over the Biquaternion Algebra*; the four involutions are *The Group of Involutions*; the general transpose of a bilinear form is *Bilinear Forms*, §*Isometries*. No step uses a topology, a distance or a limit.
 
@@ -77,24 +77,24 @@ The form is non-degenerate, so the adjoint exists and is unique. It is $\mathbb{
 
 | name of the adjoint | mark | on $L_{\tilde Q_6}$ | on $R_{\tilde Q_3}$ | on $L_{\tilde Q_6}R_{\tilde Q_3}$ |
 |---|---|---|---|---|
-| the **associate** | $\approx$ | $R_{\tilde Q_6}$ | $L_{\tilde Q_3}$ | $L_{\tilde Q_3}R_{\tilde Q_6}$ |
-| the **signed adjoint** | $\natural$ | $L_{\tilde Q_6^{\natural}}$ | $R_{\tilde Q_3^{\natural}}$ | $L_{\tilde Q_6^{\natural}}R_{\tilde Q_3^{\natural}}$ |
+| the **plain bilinear adjoint** | $\approx$ | $R_{\tilde Q_6}$ | $L_{\tilde Q_3}$ | $L_{\tilde Q_3}R_{\tilde Q_6}$ |
+| the **quaternionic adjoint** | $\natural$ | $L_{\tilde Q_6^{\natural}}$ | $R_{\tilde Q_3^{\natural}}$ | $L_{\tilde Q_6^{\natural}}R_{\tilde Q_3^{\natural}}$ |
 | the **Hermitian adjoint** | $\ast$ | $L_{\tilde Q_6^{\ast}}$ | $R_{\tilde Q_3^{\ast}}$ | $L_{\tilde Q_6^{\ast}}R_{\tilde Q_3^{\ast}}$ |
 | the **Krein adjoint** | $\natural\ast$ | $R_{\bar{\tilde Q_6}}$ | $L_{\bar{\tilde Q_3}}$ | $L_{\bar{\tilde Q_3}}R_{\bar{\tilde Q_6}}$ |
 
-*Proof.* Write $\mathrm{Sc}$ for the scalar part. **The associate.** $\mathrm{Sc}(\tilde Q_6\tilde Q_1\tilde Q_2)=\mathrm{Sc}(\tilde Q_1\tilde Q_2\tilde Q_6)$ by the cyclicity of $\mathrm{Sc}$, which is $\langle L_{\tilde Q_6}\tilde Q_1,\tilde Q_2\rangle=\langle\tilde Q_1,R_{\tilde Q_6}\tilde Q_2\rangle$; the two-sided row follows from $(FG)^{\approx}=G^{\approx}F^{\approx}$. **The signed adjoint.** $\mathrm{Sc}((\tilde Q_6\tilde Q_1)^{\natural}\tilde Q_2)=\mathrm{Sc}(\tilde Q_1^{\natural}\tilde Q_6^{\natural}\tilde Q_2)$, so the adjoint is $L_{\tilde Q_6^{\natural}}$ and no factor is exchanged; on the product the two factors are again *not* exchanged, because $L$ and $R$ commute. **The Hermitian adjoint.** The same computation with the conjugate linear $\ast$ in place of $\natural$. **The Krein adjoint.** $\mathrm{Sc}((\tilde Q_6\tilde Q_1)^{\natural}\tilde Q_2^{\ast})=\mathrm{Sc}(\tilde Q_1^{\natural}\tilde Q_6^{\natural}\tilde Q_2^{\ast})$ and $\tilde Q_6^{\natural}\tilde Q_2^{\ast}=(\tilde Q_2\bar{\tilde Q_6})^{\ast}$, so the adjoint is $R_{\bar{\tilde Q_6}}$; on the product the factors are exchanged. All sixteen cases on the pairs of basis elements were checked one by one.
+*Proof.* Write $\mathrm{Sc}$ for the scalar part. **The plain bilinear adjoint.** $\mathrm{Sc}(\tilde Q_6\tilde Q_1\tilde Q_2)=\mathrm{Sc}(\tilde Q_1\tilde Q_2\tilde Q_6)$ by the cyclicity of $\mathrm{Sc}$, which is $\langle L_{\tilde Q_6}\tilde Q_1,\tilde Q_2\rangle=\langle\tilde Q_1,R_{\tilde Q_6}\tilde Q_2\rangle$; the two-sided row follows from $(FG)^{\approx}=G^{\approx}F^{\approx}$. **The quaternionic adjoint.** $\mathrm{Sc}((\tilde Q_6\tilde Q_1)^{\natural}\tilde Q_2)=\mathrm{Sc}(\tilde Q_1^{\natural}\tilde Q_6^{\natural}\tilde Q_2)$, so the adjoint is $L_{\tilde Q_6^{\natural}}$ and no factor is exchanged; on the product the two factors are again *not* exchanged, because $L$ and $R$ commute. **The Hermitian adjoint.** The same computation with the conjugate linear $\ast$ in place of $\natural$. **The Krein adjoint.** $\mathrm{Sc}((\tilde Q_6\tilde Q_1)^{\natural}\tilde Q_2^{\ast})=\mathrm{Sc}(\tilde Q_1^{\natural}\tilde Q_6^{\natural}\tilde Q_2^{\ast})$ and $\tilde Q_6^{\natural}\tilde Q_2^{\ast}=(\tilde Q_2\bar{\tilde Q_6})^{\ast}$, so the adjoint is $R_{\bar{\tilde Q_6}}$; on the product the factors are exchanged. All sixteen cases on the pairs of basis elements were checked one by one.
 
-**Corollary (what each adjoint does to the two parameters).** The associate **exchanges the parameters and conjugates nothing**. The signed adjoint **keeps the parameters in place** and replaces each by its image under $\natural$. The Hermitian adjoint **keeps the parameters in place** and conjugates each. The Krein adjoint **exchanges the parameters and conjugates each**.
+**Corollary (what each adjoint does to the two parameters).** The plain bilinear adjoint **exchanges the parameters and conjugates nothing**. The quaternionic adjoint **keeps the parameters in place** and replaces each by its image under $\natural$. The Hermitian adjoint **keeps the parameters in place** and conjugates each. The Krein adjoint **exchanges the parameters and conjugates each**.
 
 So two rules decide the shape of the table, and both are read off the first two columns. The adjoint **exchanges the side exactly for the two forms of Gram matrix $\mathrm{E}$**, and it **conjugates the parameter exactly for the two sesquilinear forms**.
 
-**Remark (why the mark $\natural$ appears on two different kinds of object).** The mark $\natural$ on an element is the quaternion conjugation, $\tilde Q\mapsto\tilde Q^{\natural}$, which negates the vector part. The mark $\natural$ on a map is the signed adjoint, $F\mapsto F^{\natural}$. They are the same mark because they are the same operation seen once on elements and once on operators: the signed adjoint of $L_{\tilde Q}$ is $L_{\tilde Q^{\natural}}$. No other reading of the mark is used in this article.
+**Remark (why the mark $\natural$ appears on two different kinds of object).** The mark $\natural$ on an element is the quaternion conjugation, $\tilde Q\mapsto\tilde Q^{\natural}$, which negates the vector part. The mark $\natural$ on a map is the quaternionic adjoint, $F\mapsto F^{\natural}$. They are the same mark because they are the same operation seen once on elements and once on operators: the quaternionic adjoint of $L_{\tilde Q}$ is $L_{\tilde Q^{\natural}}$. No other reading of the mark is used in this article.
 
 ## The Associate
 
-The associate is the one adjoint the corpus has studied on its own, and it carries a calculus. Write it $\approx$ for a general $\mathbb{C}$-linear map $F$, not only for a one-sided or a two-sided operator.
+The plain bilinear adjoint is the one adjoint the corpus has studied on its own, and it carries a calculus. Write it $\approx$ for a general $\mathbb{C}$-linear map $F$, not only for a one-sided or a two-sided operator.
 
-**Proposition (the associate is an involution that reverses composition).** For $\mathbb{C}$-linear maps $F,G$ of $\mathbb{B}$,
+**Proposition (the plain bilinear adjoint is an involution that reverses composition).** For $\mathbb{C}$-linear maps $F,G$ of $\mathbb{B}$,
 
 $$
 (F^{\approx})^{\approx}=F,\qquad (F\circ G)^{\approx}=G^{\approx}\circ F^{\approx},
@@ -104,7 +104,7 @@ and the defining property reads $\mathrm{Sc}(F(\tilde Q_1)\tilde Q_2)=\mathrm{Sc
 
 *Proof.* The involution and the exchange of the factors in a composite are the uniqueness of the adjoint applied twice; the display is the definition with $\langle\tilde Q_1,\tilde Q_2\rangle=\mathrm{Sc}(\tilde Q_1\tilde Q_2)$ substituted.
 
-**Proposition (the associate on the Conway basis).** On the Conway operator basis $e_n[\,]e_m$, the elementary operator being $(e_n[\,]e_m)(\tilde Q)=e_n\tilde Q e_m$,
+**Proposition (the plain bilinear adjoint on the Conway basis).** On the Conway operator basis $e_n[\,]e_m$, the elementary operator being $(e_n[\,]e_m)(\tilde Q)=e_n\tilde Q e_m$,
 
 $$
 \bigl(e_n[\,]e_m\bigr)^{\approx}=e_m[\,]e_n,
@@ -116,7 +116,7 @@ The edge rows $L_a=\sum_n a_n\,e_n[\,]e_t$ and $R_b=\sum_m b_m\,e_t[\,]e_m$ give
 
 *Proof.* $\langle(a[\,]b)\tilde Q_1,\tilde Q_2\rangle=\mathrm{Sc}(a\tilde Q_1b\tilde Q_2)=\mathrm{Sc}(\tilde Q_1b\tilde Q_2a)=\langle\tilde Q_1,(b[\,]a)\tilde Q_2\rangle$, and the adjoint is unique. The Conway basis is *The Enveloping Operator Algebra of the Biquaternion Algebra and the Bi-module Structure*, §*The Conway Operator Basis*.
 
-**Proposition (the matrix of the associate).** Let $F$ have matrix $M$ in the coefficient basis $e_t,\vec e_x,\vec e_y,\vec e_z$. Then the associate has matrix
+**Proposition (the matrix of the plain bilinear adjoint).** Let $F$ have matrix $M$ in the coefficient basis $e_t,\vec e_x,\vec e_y,\vec e_z$. Then the plain bilinear adjoint has matrix
 
 $$
 M^{\approx}=\mathrm{E}\,M^{\mathsf T}\mathrm{E},
@@ -126,9 +126,9 @@ the sign matrix $\mathrm{E}$ conjugating the plain transpose.
 
 *Proof.* On coordinate columns the form is $\langle\tilde Q_1,\tilde Q_2\rangle=Q_1^{\mathsf T}\mathrm{E}Q_2$, so $(MQ_1)^{\mathsf T}\mathrm{E}Q_2=Q_1^{\mathsf T}M^{\mathsf T}\mathrm{E}Q_2$ and $Q_1^{\mathsf T}\mathrm{E}M^{\approx}Q_2$ are equal for all $Q_1,Q_2$; hence $M^{\mathsf T}\mathrm{E}=\mathrm{E}M^{\approx}$ and $\mathrm{E}^{-1}=\mathrm{E}$.
 
-**Remark (when the associate is the plain transpose).** The two agree exactly when $M^{\mathsf T}$ commutes with $\mathrm{E}$. An operator that fixes $e_t$ and preserves the vector subspace has a block form $\operatorname{diag}(1,M)$ with $M$ of size $3$, and the conjugation by $\mathrm{E}$ acts as $-1$ on the two off-diagonal blocks and as the identity on the two diagonal ones, so it is invisible there and $M^{\approx}=M^{\mathsf T}$. For a general map the two differ. The general statement is the transpose of a bilinear form, $M\mapsto G^{-1}M^{\mathsf T}G$ (*Bilinear Forms*, §*Isometries*; *Quadratic Forms and Polarisation*, §*Isometry of Forms*).
+**Remark (when the plain bilinear adjoint is the plain transpose).** The two agree exactly when $M^{\mathsf T}$ commutes with $\mathrm{E}$. An operator that fixes $e_t$ and preserves the vector subspace has a block form $\operatorname{diag}(1,M)$ with $M$ of size $3$, and the conjugation by $\mathrm{E}$ acts as $-1$ on the two off-diagonal blocks and as the identity on the two diagonal ones, so it is invisible there and $M^{\approx}=M^{\mathsf T}$. For a general map the two differ. The general statement is the transpose of a bilinear form, $M\mapsto G^{-1}M^{\mathsf T}G$ (*Bilinear Forms*, §*Isometries*; *Quadratic Forms and Polarisation*, §*Isometry of Forms*).
 
-**Proposition (the associate against the Hermitian adjoint).** Let $\bar F$ be the map obtained from $F$ by conjugating every coefficient. Then
+**Proposition (the plain bilinear adjoint against the Hermitian adjoint).** Let $\bar F$ be the map obtained from $F$ by conjugating every coefficient. Then
 
 $$
 \overline{F}^{\approx}=\mathrm{E}\,F^{\ast}\,\mathrm{E}.
@@ -136,7 +136,7 @@ $$
 
 *Proof.* Conjugating the coefficients conjugates the entries, so $\overline{F}^{\approx}$ has matrix $\mathrm{E}\bar M^{\mathsf T}\mathrm{E}$; the Hermitian adjoint has matrix $M^{\dagger}=\overline{M^{\mathsf T}}$, and $\mathrm{E}F^{\ast}\mathrm{E}=\mathrm{E}\overline{M^{\mathsf T}}\mathrm{E}$ is the same matrix.
 
-**Corollary (the collapse on the vector-preserving unitaries).** On the operators of block form $\operatorname{diag}(1,N)$ the conjugation by $\mathrm{E}$ is invisible, so the proposition reads $\overline{F}^{\approx}=F^{\ast}$, and for a $\ast$-unitary $F$ it reads $F^{\ast}=F^{-1}$. On those operators the plain transpose, the associate and the Hermitian adjoint are one involution, which is why the source literature writes the three interchangeably. For a general linear map they are three, and the corpus keeps them apart: the associate is the adjoint of the form of Gram matrix $\mathrm{E}$, the dagger the adjoint of the form of Gram matrix $\mathrm{I}_4$.
+**Corollary (the collapse on the vector-preserving unitaries).** On the operators of block form $\operatorname{diag}(1,N)$ the conjugation by $\mathrm{E}$ is invisible, so the proposition reads $\overline{F}^{\approx}=F^{\ast}$, and for a $\ast$-unitary $F$ it reads $F^{\ast}=F^{-1}$. On those operators the plain transpose, the plain bilinear adjoint and the Hermitian adjoint are one involution, which is why the source literature writes the three interchangeably. For a general linear map they are three, and the corpus keeps them apart: the plain bilinear adjoint is the adjoint of the form of Gram matrix $\mathrm{E}$, the dagger the adjoint of the form of Gram matrix $\mathrm{I}_4$.
 
 ## The Four Pairs
 
@@ -144,15 +144,15 @@ Read as an operator, each adjoint pairs the parameter with a second element. The
 
 | name of the pair | operator | second factor | the adjoint behind it |
 |---|---|---|---|
-| **Association** | $L_{\tilde Q_6}R_{\tilde Q_3}$, both parameters free | $\tilde Q_3$, independent | the associate |
-| **Signed Inner Conjugation** | $L_{\tilde Q_6}R_{\tilde Q_6^{\natural}}$ | $\tilde Q_6^{\natural}$ | the signed adjoint |
+| **Association** | $L_{\tilde Q_6}R_{\tilde Q_3}$, both parameters free | $\tilde Q_3$, independent | the plain bilinear adjoint |
+| **Signed Inner Conjugation** | $L_{\tilde Q_6}R_{\tilde Q_6^{\natural}}$ | $\tilde Q_6^{\natural}$ | the quaternionic adjoint |
 | **Hermitian Adjoint** | $L_{\tilde Q_6}R_{\tilde Q_6^{\ast}}$, the Hermitian pair | $\tilde Q_6^{\ast}$ | the Hermitian adjoint |
 | **Signed Hermitian Adjoint** | $L_{\tilde Q_6^{\natural}}R_{\tilde Q_6^{\ast}}$ | $\tilde Q_6^{\ast}$, with the sign on the left factor | the Hermitian adjoint |
 | **the indefinite Hermitian pair** | $L_{\tilde Q_6}R_{\bar{\tilde Q_6}}$ | $\bar{\tilde Q_6}$ | the Krein adjoint |
 
 The first row is the only one with two free parameters; the other four are graphs of a conjugation inside the two-sided family. That is the reason the first row is named after the adjoint that exchanges the parameters and the other four after adjoints that tie them.
 
-**The signed left multiplication.** The signed adjoint of $L_{\tilde Q_6}$ is not merely a left multiplication; it is the left multiplication by the image of the parameter under the sign. On an element it reads
+**The signed left multiplication.** The quaternionic adjoint of $L_{\tilde Q_6}$ is not merely a left multiplication; it is the left multiplication by the image of the parameter under the sign. On an element it reads
 
 $$
 L_{\tilde Q_6^{\natural}}(\tilde Q)=\tilde Q_6^{\natural}\tilde Q,
@@ -210,8 +210,8 @@ $$
 
 The five matrices are distinct, and each of the four adjoints moves the matrix in its own way.
 
-- **The associate** exchanges the two parameters: $2\vec e_x$ and $i\vec e_z$ change places.
-- **The signed adjoint** keeps them in place and replaces each by $\tilde Q_6^{\natural}=e_t-2\vec e_x$ and $\tilde Q_3^{\natural}=e_t-i\vec e_z$.
+- **The plain bilinear adjoint** exchanges the two parameters: $2\vec e_x$ and $i\vec e_z$ change places.
+- **The quaternionic adjoint** keeps them in place and replaces each by $\tilde Q_6^{\natural}=e_t-2\vec e_x$ and $\tilde Q_3^{\natural}=e_t-i\vec e_z$.
 - **The Hermitian adjoint** keeps them in place and replaces each by $\tilde Q_6^{\ast}=e_t-2\vec e_x$ and $\tilde Q_3^{\ast}=\tilde Q_3=e_t+i\vec e_z$.
 - **The Krein adjoint** exchanges them and conjugates: $L_{\bar{\tilde Q_3}}R_{\bar{\tilde Q_6}}$.
 
@@ -221,7 +221,7 @@ The signed and the Hermitian adjoints agree on the first parameter, which has re
 
 The four adjoints separate the parameters. The table gives, for the graded two-sided operator $L_{\tilde Q}R_{\tilde Q^{\natural}}$ of the second row of §*The Four Pairs*, whether the operator equals its own adjoint; the columns are the four names.
 
-| parameter | **associate** | **signed adjoint** | **Hermitian adjoint** | **Krein adjoint** |
+| parameter | **plain bilinear adjoint** | **quaternionic adjoint** | **Hermitian adjoint** | **Krein adjoint** |
 |---|---|---|---|---|
 | $2+i$, central | yes | yes | no | no |
 | $\vec e_x$, real vector | yes | yes | yes | yes |
@@ -229,7 +229,7 @@ The four adjoints separate the parameters. The table gives, for the graded two-s
 | $e_t+2i\vec e_x$, Hermitian | no | no | yes | yes |
 | $1+2\vec e_x$, real, mixed | no | no | no | no |
 
-**Corollary (the two criteria).** The operator $L_{\tilde Q}R_{\tilde Q^{\natural}}$ is self-adjoint for the **associate** and for the **signed adjoint** exactly when $\tilde Q^{\natural}$ is parallel to $\tilde Q$, that is exactly when $\tilde Q$ is central or lies in the vector subspace $V$. It is self-adjoint for the **Hermitian adjoint** and for the **Krein adjoint** exactly when the two equations
+**Corollary (the two criteria).** The operator $L_{\tilde Q}R_{\tilde Q^{\natural}}$ is self-adjoint for the **plain bilinear adjoint** and for the **quaternionic adjoint** exactly when $\tilde Q^{\natural}$ is parallel to $\tilde Q$, that is exactly when $\tilde Q$ is central or lies in the vector subspace $V$. It is self-adjoint for the **Hermitian adjoint** and for the **Krein adjoint** exactly when the two equations
 
 $$
 \tilde Q^{\ast}=\lambda\tilde Q,\qquad \bar{\tilde Q}=\lambda^{-1}\tilde Q^{\natural}
@@ -239,7 +239,7 @@ hold for one scalar $\lambda\in\mathbb{C}^{\times}$.
 
 *Proof.* Self-adjointness is an equality of two decomposable tensors, and $L_{\tilde Q_4}R_{\tilde Q_5}=L_{\tilde Q_4'}R_{\tilde Q_5'}$ if and only if $\tilde Q_4'=\lambda\tilde Q_4$ and $\tilde Q_5'=\lambda^{-1}\tilde Q_5$ for one $\lambda$, the map $\mathbb{B}\otimes_{\mathbb{C}}\mathbb{B}_{\mathrm{opp}}\to\operatorname{End}_{\mathbb{C}}(\mathbb{B})$ being faithful because $\mathbb{B}$ is central simple. Substituting the four rows of the theorem of §*The Four Adjoints* gives one equation for the two bilinear adjoints, because there the two adjoints of the graded operator are the same operator, and two equations for the two sesquilinear ones, because there they differ. The table is the evaluation on the five parameters.
 
-**Remark (why the fourth row of the table fails).** The parameter $1+2\vec e_x$ is real, and a real parameter is one's first guess for a self-adjoint operator. It fails. The associate sends $L_{\tilde Q}R_{\tilde Q^{\natural}}$ to $L_{\tilde Q^{\natural}}R_{\tilde Q}$, and the fibre theorem then asks for $\tilde Q^{\natural}\parallel\tilde Q$, which holds for a real *scalar* and for a real *vector* but not for a real mixture: $1-2\vec e_x$ is not a multiple of $1+2\vec e_x$. The two columns of the table that fail together are the two bilinear adjoints, and they fail on the same parameters.
+**Remark (why the fourth row of the table fails).** The parameter $1+2\vec e_x$ is real, and a real parameter is one's first guess for a self-adjoint operator. It fails. The plain bilinear adjoint sends $L_{\tilde Q}R_{\tilde Q^{\natural}}$ to $L_{\tilde Q^{\natural}}R_{\tilde Q}$, and the fibre theorem then asks for $\tilde Q^{\natural}\parallel\tilde Q$, which holds for a real *scalar* and for a real *vector* but not for a real mixture: $1-2\vec e_x$ is not a multiple of $1+2\vec e_x$. The two columns of the table that fail together are the two bilinear adjoints, and they fail on the same parameters.
 
 ## The Two Sectors
 
@@ -367,11 +367,11 @@ verified on one hundred invertible elements. On the shell $\langle\tilde Q_6\ran
 
 ## Summary
 
-The biquaternion algebra has four forms and four adjoints, and the four adjoints have four names: the **associate** $\approx$, the **signed adjoint** $\natural$, the **Hermitian adjoint** $\ast$ and the **Krein adjoint** $\natural\ast$, in the order of the plain bilinear, the quaternionic bilinear, the plain sesquilinear and the quaternionic sesquilinear form. The associate and the Krein adjoint exchange the two sides; the signed and the Hermitian adjoints keep them. The associate and the signed adjoint carry no bar; the Hermitian and the Krein adjoints carry one.
+The biquaternion algebra has four forms and four adjoints, and the four adjoints have four names: the **plain bilinear adjoint** $\approx$, the **quaternionic adjoint** $\natural$, the **Hermitian adjoint** $\ast$ and the **Krein adjoint** $\natural\ast$, in the order of the plain bilinear, the quaternionic bilinear, the plain sesquilinear and the quaternionic sesquilinear form. The plain bilinear adjoint and the Krein adjoint exchange the two sides; the signed and the Hermitian adjoints keep them. The plain bilinear adjoint and the quaternionic adjoint carry no bar; the Hermitian and the Krein adjoints carry one.
 
-Five operator families are named after these four adjoints: **Association** after the associate, **Signed Inner Conjugation** after the signed adjoint, **Hermitian Adjoint** and **Signed Hermitian Adjoint** after the Hermitian adjoint, the second with the sign inserted into the operator, and the **indefinite Hermitian pair** after the Krein adjoint. The word *signed* names one operation in all of them, the insertion of $\natural$.
+Five operator families are named after these four adjoints: **Association** after the plain bilinear adjoint, **Signed Inner Conjugation** after the quaternionic adjoint, **Hermitian Adjoint** and **Signed Hermitian Adjoint** after the Hermitian adjoint, the second with the sign inserted into the operator, and the **indefinite Hermitian pair** after the Krein adjoint. The word *signed* names one operation in all of them, the insertion of $\natural$.
 
-The associate has a calculus of its own: it is an involution, it reverses composition, it reverses the factors of the Conway basis, its matrix is $\mathrm{E}M^{\mathsf T}\mathrm{E}$, and combined with the coefficient conjugation it relates to the Hermitian adjoint by $\overline{F}^{\approx}=\mathrm{E}F^{\ast}\mathrm{E}$, which collapses to $F^{\ast}=F^{-1}$ on the vector-preserving unitaries.
+The plain bilinear adjoint has a calculus of its own: it is an involution, it reverses composition, it reverses the factors of the Conway basis, its matrix is $\mathrm{E}M^{\mathsf T}\mathrm{E}$, and combined with the coefficient conjugation it relates to the Hermitian adjoint by $\overline{F}^{\approx}=\mathrm{E}F^{\ast}\mathrm{E}$, which collapses to $F^{\ast}=F^{-1}$ on the vector-preserving unitaries.
 
 One operator $L_{\tilde Q_6}R_{\tilde Q_3}$ has four distinct adjoint matrices, and the four self-adjointness criteria separate the parameters: the two bilinear adjoints hold exactly when $\tilde Q^{\natural}\parallel\tilde Q$, the two sesquilinear ones exactly when one scalar $\lambda$ solves $\tilde Q^{\ast}=\lambda\tilde Q$ and $\bar{\tilde Q}=\lambda^{-1}\tilde Q^{\natural}$.
 
@@ -381,12 +381,12 @@ Of the five families only the **Hermitian pair** preserves the sectors $\mathbb{
 
 | Symbol | Name | Meaning |
 |---|---|---|
-| $\langle\tilde Q_1,\tilde Q_2\rangle=\mathrm{Sc}(\tilde Q_1\tilde Q_2)$, Gram $\mathrm{E}$ | plain bilinear form | the form of the **associate** |
-| $\langle\tilde Q_1,\tilde Q_2\rangle_{\natural}=\mathrm{Sc}(\tilde Q_1^{\natural}\tilde Q_2)$, Gram $\mathrm{I}_4$ | quaternionic bilinear form | the form of the **signed adjoint** |
+| $\langle\tilde Q_1,\tilde Q_2\rangle=\mathrm{Sc}(\tilde Q_1\tilde Q_2)$, Gram $\mathrm{E}$ | plain bilinear form | the form of the **plain bilinear adjoint** |
+| $\langle\tilde Q_1,\tilde Q_2\rangle_{\natural}=\mathrm{Sc}(\tilde Q_1^{\natural}\tilde Q_2)$, Gram $\mathrm{I}_4$ | quaternionic bilinear form | the form of the **quaternionic adjoint** |
 | $\langle\tilde Q_1,\tilde Q_2\rangle_{\ast}=\mathrm{Sc}(\tilde Q_1\tilde Q_2^{\ast})$, Gram $\mathrm{I}_4$ | plain sesquilinear form | the form of the **Hermitian adjoint** |
 | $\langle\tilde Q_1,\tilde Q_2\rangle_{\natural\ast}=\mathrm{Sc}(\tilde Q_1^{\natural}\tilde Q_2^{\ast})$, Gram $\mathrm{E}$ | quaternionic sesquilinear form | the form of the **Krein adjoint** |
-| $F^{\approx}$ | the **associate** | $(L_{\tilde Q_6}R_{\tilde Q_3})^{\approx}=L_{\tilde Q_3}R_{\tilde Q_6}$; $(FG)^{\approx}=G^{\approx}F^{\approx}$, $(e_n[\,]e_m)^{\approx}=e_m[\,]e_n$, $M^{\approx}=\mathrm{E}M^{\mathsf T}\mathrm{E}$ |
-| $F^{\natural}$ | the **signed adjoint** | $(L_{\tilde Q_6}R_{\tilde Q_3})^{\natural}=L_{\tilde Q_6^{\natural}}R_{\tilde Q_3^{\natural}}$; the adjoint of $L_{\tilde Q}$ is the signed left multiplication $L_{\tilde Q^{\natural}}$ |
+| $F^{\approx}$ | the **plain bilinear adjoint** | $(L_{\tilde Q_6}R_{\tilde Q_3})^{\approx}=L_{\tilde Q_3}R_{\tilde Q_6}$; $(FG)^{\approx}=G^{\approx}F^{\approx}$, $(e_n[\,]e_m)^{\approx}=e_m[\,]e_n$, $M^{\approx}=\mathrm{E}M^{\mathsf T}\mathrm{E}$ |
+| $F^{\natural}$ | the **quaternionic adjoint** | $(L_{\tilde Q_6}R_{\tilde Q_3})^{\natural}=L_{\tilde Q_6^{\natural}}R_{\tilde Q_3^{\natural}}$; the adjoint of $L_{\tilde Q}$ is the signed left multiplication $L_{\tilde Q^{\natural}}$ |
 | $F^{\ast}$ | the **Hermitian adjoint** | $(L_{\tilde Q_6}R_{\tilde Q_3})^{\ast}=L_{\tilde Q_6^{\ast}}R_{\tilde Q_3^{\ast}}$ |
 | $F^{\natural\ast}$ | the **Krein adjoint** | $(L_{\tilde Q_6}R_{\tilde Q_3})^{\natural\ast}=L_{\bar{\tilde Q_3}}R_{\bar{\tilde Q_6}}$ |
 | $\natural$, $\bar{\cdot}$, $\ast=\natural\bar{\cdot}$ | the three conjugations | quaternion conjugation (the grade involution), coefficient conjugation, Hermitian conjugation |
@@ -399,11 +399,11 @@ Of the five families only the **Hermitian pair** preserves the sectors $\mathbb{
 - [Introduction to the Operators of the Biquaternion Algebra](introduction-to-the-operators-of-the-biquaternion-algebra.html), for the products-to-operators bridge that the four adjoints serve, and for the two switches $\sigma$ and $\alpha$ read in the parameters
 - [The Four Forms and the Four Algebraic Norms over the Biquaternion Algebra](the-four-forms-and-the-four-algebraic-norms-over-the-biquaternion-algebra.html), for the four forms, their Gram matrices and their signatures
 - [The Group of Involutions](the-group-of-involutions.html), for the four conjugations, their group and their linearity
-- [The Transposition of the Two Sides](the-transposition-of-the-two-sides.html), for the associate read as the transpose of the plain form, $L_{\tilde Q}^{\mathsf T}=R_{\tilde Q}$, for the conjugation $\natural L_{\tilde Q}\natural=R_{\tilde Q^{\natural}}$, and for the three maps that surround them
-- [The Enveloping Operator Algebra of the Biquaternion Algebra and the Bi-module Structure](the-enveloping-operator-algebra-of-the-biquaternion-algebra-and-the-bi-module-structure.html), for the Conway operator basis on which the associate reverses the factors
+- [The Transposition of the Two Sides](the-transposition-of-the-two-sides.html), for the plain bilinear adjoint read as the transpose of the plain form, $L_{\tilde Q}^{\mathsf T}=R_{\tilde Q}$, for the conjugation $\natural L_{\tilde Q}\natural=R_{\tilde Q^{\natural}}$, and for the three maps that surround them
+- [The Enveloping Operator Algebra of the Biquaternion Algebra and the Bi-module Structure](the-enveloping-operator-algebra-of-the-biquaternion-algebra-and-the-bi-module-structure.html), for the Conway operator basis on which the plain bilinear adjoint reverses the factors
 - [Bilinear Forms](bilinear-forms.html), §*Isometries*, and [Quadratic Forms and Polarisation](quadratic-forms-and-polarisation.html), §*Isometry of Forms*, for the general transpose $M\mapsto G^{-1}M^{\mathsf T}G$
-- [Operators Acting on Two Sides](operators-acting-on-two-sides.html), for the family of the associate, its swap law and its self-adjoint pairs
-- [Two-Sided Operators on the General Quaternionic Algebra of the Biquaternions](two-sided-operators-on-the-general-quaternionic-algebra-of-the-biquaternions.html), for the graded two-sided operator, its signed adjoint and its self-adjointness criterion
+- [Operators Acting on Two Sides](operators-acting-on-two-sides.html), for the family of the plain bilinear adjoint, its swap law and its self-adjoint pairs
+- [Two-Sided Operators on the General Quaternionic Algebra of the Biquaternions](two-sided-operators-on-the-general-quaternionic-algebra-of-the-biquaternions.html), for the graded two-sided operator, its quaternionic adjoint and its self-adjointness criterion
 - [The Hermitian Pair of Operators Acting on Two Sides](the-hermitian-pair-of-operators-acting-on-two-sides.html), for the Hermitian pair, its multiplicativity defect and the sector argument proved on the pair itself
 - [The Indefinite Hermitian Pair of Operators on the General Quaternionic Sesqualgebra](the-indefinite-hermitian-pair-of-operators-on-the-general-quaternionic-sesqualgebra.html), for the family of the Krein adjoint
 - [The Clifford, Pin and Spin Groups with Signed Inner Conjugation](the-clifford-pin-and-spin-groups-with-signed-inner-conjugation.html), for $\mathrm{Ad}^{\alpha}_{U}(v)=\alpha(U)vU^{-1}$ and the general meaning of the sign
