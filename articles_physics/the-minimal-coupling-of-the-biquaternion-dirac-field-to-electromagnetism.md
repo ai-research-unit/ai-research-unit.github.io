@@ -123,6 +123,16 @@ $$
 
 The term $\frac{k_m\,i\,ϙ}{m\,c}\tilde{A}_{\Phi}\tilde{Ξ}_{\mathrm{sp}}$ is the **interaction term**. It is exactly the term that the localization of the phase forces, and the connection it forces is the potential biquaternion of the Maxwell article.
 
+**The conjugate entry is not the negative of the entry.** On the units $\natural$ fixes $e_t$ and negates $\vec e_k$, so with real coefficients
+
+$$
+\tilde{A}_{\Phi}^{\natural}=A_t e_t-\sum_k A_k\vec e_k ,
+$$
+
+and three cases follow that are easily read as one. For a **purely electric** potential, $\tilde{A}_{\Phi}^{\natural}=+\tilde{A}_{\Phi}$, and the two members of the pair carry opposite entries. For a **purely magnetic** one, $\tilde{A}_{\Phi}^{\natural}=-\tilde{A}_{\Phi}$, and they carry the same entry. For a general potential it is neither, and the second member is the conjugate of the first, not its negative.
+
+**Why that asymmetry is not a decomposition.** It is tempting to read the electric part and the magnetic part as two couplings that happen to share the coefficient, since each is self-conjugate up to a sign. The gauge transformation rules this out: the entry absorbs $-\tilde{\nabla}\Gamma$, and $\tilde{\nabla}\Gamma$ has a time part and a space part, so **a purely electric potential does not stay purely electric under a general gauge function**. Purity is a property of a gauge and not of the entry, and the equal-or-opposite alternative above is correspondingly gauge-dependent. Only the whole covector is covariant, which is why the second member of the pair is not the first with $ϙ\to-ϙ$.
+
 **Component form.** Write the potential as $\tilde{A}_{\Phi} = \sum_\mu A_\mu e_\mu$ with complex scalar coefficients $A_\mu$ — the abelian case, in which the connection coefficients are central scalars and commute with one another and with the units. Since each $A_\mu$ is central, the covariant derivative separates into components:
 
 $$
@@ -257,6 +267,14 @@ $$
 
 a covariant wave equation with a curvature term. The corresponding statement for $\tilde{Ξ}_{\mathrm{sp},L}$ carries $\tilde\nabla_{\mathrm{gco}}\tilde\nabla_{\mathrm{gco}}^{\natural}$ in place of $\tilde\nabla_{\mathrm{gco}}^{\natural}\tilde\nabla_{\mathrm{gco}}$. The curvature term is the algebra element $\frac{k_m\,i\,ϙ}{m\,c}\tilde{F}$ multiplying the field; no further object is introduced, and the comparison of this second-order operator with the one of the older literature is a matter of display and is not made in this article.
 
+**The constant-potential case, evaluated.** For constant $\tilde{A}_{\Phi}$ the curvature term vanishes, $\tilde{F}=0$, and the second-order operator is the free one with every component shifted at once,
+
+$$
+k_\mu\ \longmapsto\ k_\mu+\frac{k_m\,ϙ}{m\,c}A_\mu ,
+$$
+
+so the mass shell is **translated and not resized**. A uniform $A_t$ moves every level by $qA_t$ and leaves every spacing unchanged, and no constant $\tilde{A}_{\Phi}$ opens a gap: **the translation is the potential's, the gap is $k_m$'s**, and this is the shortest place to see that the two numbers in the equation do different jobs. Checked on a plane wave with $k=(1.3,\,0.9,\,-0.6,\,0.5)$ and $\frac{k_m\,ϙ}{m\,c}A=(0.35,\,0.14,\,-0.21,\,0.28)$: free part $3.11$, cross term $1.694$, quadratic part $0.2646$, total $5.0686$, equal to $\sum_\mu\left(k_\mu+\frac{k_m\,ϙ}{m\,c}A_\mu\right)^2$ to machine precision, and the vector part of $\tilde\nabla_{\mathrm{gco}}^{\natural}\tilde\nabla_{\mathrm{gco}}$ vanishes below $10^{-16}$. A gap needs the off-diagonal $k_m$, which is why the mass is not an addition to the gradient at all.
+
 ## The Massive Case: Gauge Covariance and the Broken Relative Phase
 
 The massive equation is where the mass term's role is decided, and with the linear pair it is benign. Suppose the minimally coupled massive equation holds in one gauge:
@@ -383,6 +401,7 @@ What the algebra forces and what it merely rewrites in its own notation are easi
 - *Exact covariance of the coupled equation*, in the massive case as well as the massless one, with the component operators $\tilde\nabla_{\mathrm{gco},\mu}$ and the phase law $\tilde{A}_{\Phi,2} = \tilde{A}_{\Phi} - \tilde{\nabla}\Gamma$ inherited unchanged.
 - *The second-order equation with its curvature term.* The operator identity $\tilde\nabla_{\mathrm{gco}}^{\natural}\tilde\nabla_{\mathrm{gco}} = \sum_\mu  \tilde\nabla_{\mathrm{gco},\mu}^2 +\frac{k_m\,i\,ϙ}{m\,c}\tilde{F}$ turns the coupled pair into a covariant wave equation carrying $\frac{k_m\,i\,ϙ}{m\,c}\tilde{F}$ as a term, the curvature entering as an element and not as an extra structure.
 - *A material-sector connection.* For a real gauge function the connection stays in $\mathbb{B}_{\Phi}$, so the coupling respects the sector decomposition the framework is built on.
+- *One addition, and it is this one.* Read as an entry of the array rather than as a term in an equation, the coupling is a single element in the diagonal slot, $B_{RR}=\frac{k_m\,i\,ϙ}{m\,c}\tilde{A}_{\Phi}$ and $B_{LL}=\frac{k_m\,i\,ϙ}{m\,c}\tilde{A}_{\Phi}^{\natural}$, with the mass in the off-diagonal pair. Of all the elements that can be placed in those slots, this is the only one a measurement requires: the potential is tested by the two Aharonov–Bohm phases, by the Josephson frequency, by the Landau degeneracy and by the Coulomb spectrum, while every other candidate shape is algebra without a measurement. The count is made here rather than cited: the shapes that fail the test — a real scalar in the diagonal slot, an imaginary spatial bivector, an imaginary pseudoscalar and an axial vector — are exact algebra and unmeasured physics, and they are not additions to the gradient in the sense of this article.
 
 **What it only transcribes.**
 

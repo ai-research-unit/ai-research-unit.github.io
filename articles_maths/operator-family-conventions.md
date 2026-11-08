@@ -21,7 +21,7 @@ The order follows the dependence. The family letters come first, because the nam
 | left | $L$ | $L_{\tilde Q}$ | one |
 | right | $R$ | $R_{\tilde Q}$ | one |
 | two-sided | $LR$ | $L_{\tilde Q}R_{\tilde Q_2}$ | two |
-| sandwich | $\Theta$ | $\mathrm{Sd}_{\tilde Q}$ | one |
+| Hermitian pair, two sides | $\Theta$ | $\mathrm{Hp}_{\tilde Q}$ | one |
 
 **The letter is upright, the parameter is in the subscript.** The letter names the family and is a capital roman; the subscript names the element and keeps that element's own mark, the tilde included. $L_{\tilde Q}$ is read as one glyph: the operator of the left family whose parameter is $\tilde Q$. The tilde is never moved to the letter, and the letter never takes a tilde of its own.
 
@@ -31,6 +31,30 @@ The order follows the dependence. The family letters come first, because the nam
 
 **No fifth letter is implied.** An involution, a change of frame and a derivation also occur in the operator articles, and each carries the letter that its own article gives it. The four marks are the vocabulary of the four families assembled from the multiplication; they do not assert that every operator belongs to one of the four.
 
+### The Word That Is Retired
+
+**One object, and it already has a name.** The operator $\mathrm{Hp}_{\tilde Q}$ was called *the sandwich of $\tilde Q$* in the earlier articles, and that word is retired. It names the shape of the product, $\tilde Q\,\tilde X\,\tilde Q^{\ast}$, and the shape is already written by the letters. What the shape does not say is which pair and which tie, and the name does: the two parameters are $\tilde Q$ and its dagger, and the dagger is the adjoint of the plain sesquilinear form. The star is the tie of the fourth family and of nothing else in the four.
+
+**The word is replaced, not deleted.** A sentence carrying it is rewritten in its own grammar and keeps its meaning. The qualifiers in front of it were doing separate work, and each becomes a word that says what that work was:
+
+| retired | written instead |
+|---|---|
+| the sandwich, no qualifier | the Hermitian pair acting on two sides, $\mathrm{Hp}_{\tilde Q}$ |
+| the Hermitian sandwich | the Hermitian pair acting on two sides |
+| the signed sandwich | the graded two-sided operator, $L_{\tilde Q}R_{\tilde Q^{\natural}}$ |
+| the unsigned sandwich | the plain two-sided operator, $L_{\tilde Q}R_{\tilde Q_2}$ |
+| the sesquilinear sandwich | the sesquilinear-tied two-sided operator |
+| the adjoint sandwich | the adjoint of the two-sided operator |
+| the inner sandwich | the inner conjugation |
+| the two-sided sandwich | the two-sided operator |
+| sandwich action, sandwich map | the two-sided action |
+| sandwich monoid, space, family, exponential | the monoid, space, family, exponential of the two-sided operators |
+| sandwiched between $\tilde Q$ and $\tilde P$ | bracketed by $\tilde Q$ and $\tilde P$ |
+
+**The word Hermitian names the tie, not self-adjointness.** The pair of parameters is $\left(\tilde Q,\tilde Q^{\ast}\right)$, and *Hermitian* records that the second is the dagger of the first. The operator $\mathrm{Hp}_{\tilde Q}$ is self-adjoint for the dagger exactly when $\tilde Q$ is Hermitian, so a sentence that needs the operator to be self-adjoint says so separately and does not infer it from the name.
+
+**Two placements, and both are Hermitian pairs.** The pair may stand one member on each side, $\left(L_{\tilde Q},R_{\tilde Q^{\ast}}\right)$, and then it acts on two sides; or both members may multiply on the left, $\left(L_{\tilde Q},L_{\tilde Q^{\natural}}\right)$, and then it acts on one side. The placement is read from the letters, so no word of the family needs to carry it.
+
 ## The Slots
 
 ### The Left Multiplier, the Right Multiplier, the Argument
@@ -39,11 +63,11 @@ In $L_{\tilde Q}R_{\tilde Q_2}$ the first subscript is the left multiplier and t
 
 **The argument is never a subscript.** The argument of an operator occupies a third slot that is written in parentheses when it is named, as in $L_{\tilde Q}R_{\tilde Q_2}(\tilde X)$. A glyph with three subscripts is not written, and the two subscripts of $L$ and $R$ are always the two multipliers.
 
-**The sandwich has one free slot.** The sandwich is $\mathrm{Sd}_{\tilde Q}=L_{\tilde Q}R_{\tilde Q^{\ast}}$. Its second subscript is the star of the first and is not chosen, so the family has one parameter and the letter $\Theta$ is reserved for the member whose second slot is the star of the first. A two-sided operator with two free parameters is written $L_{\tilde Q}R_{\tilde Q_2}$, never $\Theta$.
+**The Hermitian pair has one free slot.** The pair is $\mathrm{Hp}_{\tilde Q}=L_{\tilde Q}R_{\tilde Q^{\ast}}$. Its second subscript is the star of the first and is not chosen, so the family has one parameter and the letter $\Theta$ is reserved for the member whose second slot is the star of the first. A two-sided operator with two free parameters is written $L_{\tilde Q}R_{\tilde Q_2}$, never $\Theta$.
 
 ### The Index of a Basis Operator
 
-A Greek index inside the subscript names a basis element: $L_{e_\mu}$ and $R_{e_\nu}$. A Greek pair on $L$ and $R$ is the pair of the slots, $L_{e_\mu}R_{e_\nu}$, read in that order, the first index belonging to the left slot. The sandwich carries the index of its one free slot, $\mathrm{Sd}_{e_\mu}$. A roman letter stands for a general element and a Greek letter for a basis element; the subscript names the element and never a matrix entry, so $L_{e_\mu}$ is the left multiplication by $e_\mu$ and its matrix is written $\mathsf M_{4L}(e_\mu)$.
+A Greek index inside the subscript names a basis element: $L_{e_\mu}$ and $R_{e_\nu}$. A Greek pair on $L$ and $R$ is the pair of the slots, $L_{e_\mu}R_{e_\nu}$, read in that order, the first index belonging to the left slot. The Hermitian pair carries the index of its one free slot, $\mathrm{Hp}_{e_\mu}$. A roman letter stands for a general element and a Greek letter for a basis element; the subscript names the element and never a matrix entry, so $L_{e_\mu}$ is the left multiplication by $e_\mu$ and its matrix is written $\mathsf M_{4L}(e_\mu)$.
 
 ### The Slot Label, Which Is the Chirality
 
@@ -75,9 +99,9 @@ A Greek index inside the subscript names a basis element: $L_{e_\mu}$ and $R_{e_
 | $\operatorname{End}_L(\mathbb{B})$ | $L_{\tilde Q}$ | the left multipliers |
 | $\operatorname{End}_R(\mathbb{B})$ | $R_{\tilde Q}$ | the right multipliers |
 | $\operatorname{End}_{LR}(\mathbb{B})$ | $L_{\tilde Q}R_{\tilde Q_2}$ | the two-sided operators |
-| $\operatorname{End}_{LR\ast}(\mathbb{B})$ | $\mathrm{Sd}_{\tilde Q}$ | the sandwiches |
+| $\operatorname{End}_{LR\ast}(\mathbb{B})$ | $\mathrm{Hp}_{\tilde Q}$ | the Hermitian pairs |
 
-**The subscript is the family's.** The subscript of a set repeats the letters of the family that populates it and is not a tensor slot. The star in $\operatorname{End}_{LR\ast}$ repeats the star of the sandwich's second slot; it is part of the name.
+**The subscript is the family's.** The subscript of a set repeats the letters of the family that populates it and is not a tensor slot. The star in $\operatorname{End}_{LR\ast}$ repeats the star of the pair's second slot; it is part of the name.
 
 ### The Four Matrix Letters
 
@@ -88,7 +112,7 @@ A matrix of a named family carries its size and the family's letters in one subs
 | $\mathsf M_{4L}$ | left | the element |
 | $\mathsf M_{4R}$ | right | the element |
 | $\mathsf M_{4LR}$ | two-sided | the left and the right multiplier |
-| $\mathsf M_{4LR\ast}$ | sandwich | the parameter |
+| $\mathsf M_{4LR\ast}$ | Hermitian pair | the parameter |
 
 The subscript holds the size and the family as one field, with no separator: $\mathsf M_{4L}$ and $\mathsf M_{4R}$, and a family of two letters is written as one word, $\mathsf M_{4LR}$ and $\mathsf M_{4LR\ast}$. The caret is kept for the frame label, $\mathsf M_{4L,\mathrm{pau}}$ and $\mathsf M_{4R,\mathrm{axf}}$, and it carries no family letter. A matrix of a general operator carries no family letter either and is written with the bracket of §*The Matrix and Its Frame*. A matrix of the $2\times2$ model is written $\mathsf M_2(\tilde Q)$ and belongs to no family of this article.
 
@@ -190,7 +214,7 @@ The four adjoints of the four pairings of *Product and Form Conventions* are wri
 
 ## Summary
 
-The four families are written $L$, $R$, $LR$ and $\Theta$: left multiplication, right multiplication, the two-sided operator and the sandwich. The letter is an upright capital and names the family; the parameter is in the subscript and keeps its own mark. The two subscripts of $L$ and $R$ are positional, the left multiplier first and the right multiplier second, and the argument is never a subscript. The sandwich has one free slot, because its second subscript is the star of the first. A Greek index inside the subscript names a basis element, $L_{e_\mu}$ and $R_{e_\nu}$, and $L_{e_\mu}R_{e_\nu}$ is read in that order, the first index belonging to the left slot, and it never names a matrix entry. The two slots carry one label: an operator has the left slot when it is a pure left multiplier, the right slot when it is a pure right multiplier, both slots when it is a scalar, and no single side otherwise, and that label is the operator chirality. The chirality operator of a frame is its fifth frame operator, $\mathsf{V}_{\mathrm{vol}}$, which in the axis-free frame is the pure right multiplier $-iR_{\vec e_z}$; it is an example of the right slot, not the definition of the label, and the properties of the two families and of the label are *Operator Chirality on the Biquaternion Algebra*.
+The four families are written $L$, $R$, $LR$ and $\Theta$: left multiplication, right multiplication, the two-sided operator and the Hermitian pair. The letter is an upright capital and names the family; the parameter is in the subscript and keeps its own mark. The two subscripts of $L$ and $R$ are positional, the left multiplier first and the right multiplier second, and the argument is never a subscript. The Hermitian pair has one free slot, because its second subscript is the star of the first. A Greek index inside the subscript names a basis element, $L_{e_\mu}$ and $R_{e_\nu}$, and $L_{e_\mu}R_{e_\nu}$ is read in that order, the first index belonging to the left slot, and it never names a matrix entry. The two slots carry one label: an operator has the left slot when it is a pure left multiplier, the right slot when it is a pure right multiplier, both slots when it is a scalar, and no single side otherwise, and that label is the operator chirality. The chirality operator of a frame is its fifth frame operator, $\mathsf{V}_{\mathrm{vol}}$, which in the axis-free frame is the pure right multiplier $-iR_{\vec e_z}$; it is an example of the right slot, not the definition of the label, and the properties of the two families and of the label are *Operator Chirality on the Biquaternion Algebra*.
 
 The four sets are $\operatorname{End}_L(\mathbb{B})$, $\operatorname{End}_R(\mathbb{B})$, $\operatorname{End}_{LR}(\mathbb{B})$ and $\operatorname{End}_{LR\ast}(\mathbb{B})$, named from the four families, with the ambient written $\operatorname{End}(\mathbb{B})=\operatorname{End}_{\mathbb{C}}(\mathbb{B})$. A named family's matrix carries its size and the family's letters in one subscript, $\mathsf M_{4L}$, $\mathsf M_{4R}$, $\mathsf M_{4LR}$ and $\mathsf M_{4LR\ast}$; a general operator's matrix is written with the bracket $[F]_{\mathcal{B}}$. The names assert no dimension, no closure, no inclusion and no properness, and a name of two letters is one name, not a sum of sets.
 
@@ -204,13 +228,13 @@ The strata are labelled by two bits, the norm first and the square of the vector
 |---|---|
 | $L_{\tilde Q}$, $R_{\tilde Q_2}$ | The left and the right multiplier |
 | $L_{\tilde Q}R_{\tilde Q_2}$ | The two-sided operator, left multiplier first |
-| $\mathrm{Sd}_{\tilde Q}=L_{\tilde Q}R_{\tilde Q^{\ast}}$ | The sandwich, with one free slot |
-| $L_{e_\mu}$, $R_{e_\nu}$, $L_{e_\mu}R_{e_\nu}$, $\mathrm{Sd}_{e_\mu}$ | The basis operators, read in that order, the first index belonging to the left slot |
+| $\mathrm{Hp}_{\tilde Q}=L_{\tilde Q}R_{\tilde Q^{\ast}}$ | The Hermitian pair acting on two sides, with one free slot |
+| $L_{e_\mu}$, $R_{e_\nu}$, $L_{e_\mu}R_{e_\nu}$, $\mathrm{Hp}_{e_\mu}$ | The basis operators, read in that order, the first index belonging to the left slot |
 | left slot, right slot, both slots, no single side | The operator chirality: the side on which an operator multiplies. *Both slots* is the scalar line; a two-sided basis operator has *no single side* |
 | $\mathsf{V}_{\mathrm{vol}}$ | The fifth frame operator of a frame, the chirality operator; $-iR_{\vec e_z}$ in the axis-free frame. It is an example of the right slot, not the definition of chirality. The gamma display writes the same basis operator $\gamma_5$ |
 | $\operatorname{End}(\mathbb{B})=\operatorname{End}_{\mathbb{C}}(\mathbb{B})$ | The ambient operator space |
 | $\operatorname{End}_L(\mathbb{B})$, $\operatorname{End}_R(\mathbb{B})$ | The sets of the left and the right multipliers |
-| $\operatorname{End}_{LR}(\mathbb{B})$, $\operatorname{End}_{LR\ast}(\mathbb{B})$ | The sets of the two-sided operators and of the sandwiches |
+| $\operatorname{End}_{LR}(\mathbb{B})$, $\operatorname{End}_{LR\ast}(\mathbb{B})$ | The sets of the two-sided operators and of the Hermitian pairs |
 | $\mathsf M_{4L}$, $\mathsf M_{4R}$, $\mathsf M_{4LR}$, $\mathsf M_{4LR\ast}$ | The matrices of the four families |
 | $[F]_{\mathcal{B}}$ | The matrix of a general operator in the frame $\mathcal{B}$ |
 | $C_{\Pi}$ | The change from the Peirce frame to the coefficient frame |

@@ -506,7 +506,7 @@ The programme of Rodrigues and Vaz works in a bundle of differential forms and p
 
 ## Further Reading
 
-- [The Gradient, the D'Alembertian and the Basis operator Operator](the-gradient-the-dalembertian-and-the-basis operator-operator.html), for the gradient, its conjugate and the d'Alembertian, and for the names of the other operators.
+- [Operator and Calculus Conventions](operator-and-calculus-conventions.html), for the gradient, its conjugate and the d'Alembertian, and for the names of the other operators.
 - Waldyr Alves Rodrigues Jr. and Jayme Vaz Jr., "Subluminal and Superluminal Electromagnetic Waves and the Lepton Mass Spectrum", arXiv:hep-th/9607231 (1996), the source of this article.
 - J. Vaz Jr. and W. A. Rodrigues Jr., "Maxwell and Dirac Theories as an Already Unified Theory", *Advances in Applied Clifford Algebras* (1995), for the equivalence of the Maxwell and massless Dirac equations underlying the spinor representation.
 - W. A. Rodrigues Jr. and J.-Y. Lu, "On the Existence of Undistorted Progressive Waves (UPWs) of Arbitrary Speeds $0\le|v|\le\infty$ in Nature", RP 12/96, IMECC-UNICAMP (1996), for the UPW and X-wave family and their generation.
