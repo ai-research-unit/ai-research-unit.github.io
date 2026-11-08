@@ -448,6 +448,504 @@ $$</p>
 =\vec k_{\Phi}\cdot\vec r-k_{m}r'_{t}-\Omega r'_{t}.
 $$</p>
 <p>The three forms are the same number: the first is the rung's coefficients, the second names the excess, and the third separates the rest clock from the motion.</p>
+<h2 id="8-step-8-the-rest-clock-divides-out-exactly">8. Step 8 — The Rest Clock Divides Out, Exactly</h2>
+<p><strong>The exponent of the rung.</strong> Substituting the third form of $\phi_{1}$ in the exponential and splitting the sum of the two exponents,</p>
+<p>$$
+e^{i\phi_{1}}
+=\exp\left(i\vec k_{\Phi}\cdot\vec r-i\left(k_{m}+\Omega\right)r'_{t}\right)
+=\underbrace{\exp\left(-ik_{m}r'_{t}\right)}_{f}\;
+\underbrace{\exp\left(i\vec k_{\Phi}\cdot\vec r-i\Omega r'_{t}\right)}_{\chi}.
+$$</p>
+<p><strong>The factor $f$.</strong> It carries no momentum, no direction and no speed: it is the $\vec k_{\Phi}=0$ member of the family, the solution of the rest frame. Its modulus is one,</p>
+<p>$$
+\lvert f\rvert^{2}=\exp\left(-ik_{m}r'_{t}\right)\exp\left(+ik_{m}r'_{t}\right)=1 ,
+$$</p>
+<p>its period is $2\pi/k_{m}$, and by $k_{m}=mc/\hbar$ that period is $2\pi\hbar/(mc^{2})=h/(mc^{2})$, the Compton period of the particle divided by the rest energy. It is the rest clock.</p>
+<p><strong>Why the split is exact.</strong> $\Omega$ was <em>defined</em> in step 3 as $k'_{t,1}-k_{m}$, so $k_{m}+\Omega=k'_{t,1}$ holds by construction and not by approximation. The exponent splits into two factors with no remainder. <strong>This is the second place in the argument where a step costs nothing</strong>, and it is worth noticing that it is the rest phase that makes it free: had the exponent been written in any other way, the split would have needed an expansion.</p>
+<p><strong>Why the factor must be removed before the next step.</strong> A derivative in $r'_{t}$ acting on the full wave brings down $k'_{t}=k_{m}+\Omega$, and the term $k_{m}$ in it is not small compared with anything. On the split form the two factors separate and the fast one becomes a constant factor of the whole equation:</p>
+<p>$$
+\partial_{r'_{t}}e^{i\phi_{1}}=\left(-ik_{m}f\right)\chi+f\left(\partial_{r'_{t}}\chi\right).
+$$</p>
+<p>The first term is the rest clock differentiating itself; it is not part of the envelope's dynamics. Dividing by $f\neq0$ removes it, and what survives is the envelope's own derivative. <strong>The rest phase is not an approximation that is being dropped; it is a factor that is being factored out.</strong></p>
+<h2 id="9-step-9-the-exponential-gives-a-first-order-relation">9. Step 9 — The Exponential Gives a First-Order Relation</h2>
+<p><strong>The relation, which is now a definition.</strong> On the envelope of step 8,</p>
+<p>$$
+\partial_{r'_{t}}\chi
+=\partial_{r'_{t}}\exp\left(i\vec k_{\Phi}\cdot\vec r-i\Omega r'_{t}\right)
+=-i\Omega\,\chi .
+$$</p>
+<p>Nothing has been approximated: this is the derivative of the function that was written down. Written as an operator statement, $\left(\partial_{r'_{t}}+i\Omega\right)\chi=0$, and the expression in parentheses is the <strong>generator</strong> of the envelope's evolution.</p>
+<p><strong>What "cut after two terms" does and does not mean.</strong> The corpus says that a field carrying the excess phase satisfies a first-order relation <em>because the exponential was cut after two terms</em>. The statement is correct, and it is about the infinitesimal step, not about the finite one:</p>
+<p>$$
+e^{-i\Omega\,\delta r'_{t}}=1-i\Omega\,\delta r'_{t}+O\left(\delta r'_{t}\right)^{2}
+\qquad\Longrightarrow\qquad
+\frac{\chi\left(r'_{t}+\delta r'_{t}\right)-\chi\left(r'_{t}\right)}{\delta r'_{t}}=-i\Omega\,\chi+O\left(\delta r'_{t}\right)
+\qquad\Longrightarrow\qquad
+\partial_{r'_{t}}\chi=-i\Omega\,\chi .
+$$</p>
+<p>Cutting the series after three terms instead leaves a second derivative,</p>
+<p>$$
+e^{-i\Omega\,\delta r'_{t}}=1-i\Omega\,\delta r'_{t}-\frac{\Omega^{2}}{2}\left(\delta r'_{t}\right)^{2}+\cdots
+\qquad\Longrightarrow\qquad
+\partial^{2}_{r'_{t}}\chi=-\Omega^{2}\chi ,
+$$</p>
+<p>which is the second-order relation. <strong>The order in time is the degree of the generator, and the degree of the generator is the number of terms kept in the infinitesimal step.</strong> That is the correct statement, and it says nothing about the finite exponential.</p>
+<p><strong>The trap the phrasing invites, and the way out.</strong> Truncating the Taylor series of the exponential at a <em>finite</em> step destroys unitarity:</p>
+<p>$$
+\left\lvert 1-i\Omega\,\delta r'_{t}\right\rvert^{2}
+=1+\Omega^{2}\left(\delta r'_{t}\right)^{2}\neq1 ,
+$$</p>
+<p>here $1+10^{-4}$ for $\Omega\,\delta r'_{t}=10^{-2}$. Truncating the <em>phase</em> instead, $\Omega\to k_{\Phi}^{2}/2k_{m}$, leaves the exponential untouched and therefore leaves the modulus at one exactly:</p>
+<p>$$
+\left\lvert\exp\left(-i\frac{k_{\Phi}^{2}}{2k_{m}}r'_{t}\right)\right\rvert^{2}=1 .
+$$</p>
+<p><strong>The rule is: truncate the generator, never the group.</strong> The ladder of step 3 truncates the generator, so everything that follows is a unitary evolution with the wrong frequency. That is the right kind of error, and §<em>The Phase Error</em> prices it.</p>
+<h2 id="10-step-10-a-number-becomes-an-operator">10. Step 10 — A Number Becomes an Operator</h2>
+<p><strong>One mode is not a field.</strong> The relation $\partial_{r'_{t}}\chi=-i\Omega\chi$ is a statement about a single plane wave: $\Omega$ is a number attached to one $\vec k_{\Phi}$. A field is a superposition, and the step from one to the other is the only place where anything could be lost.</p>
+<p><strong>The superposition.</strong> Write the general envelope as a Fourier integral over the momentum wave number,</p>
+<p>$$
+\chi\left(\vec r,r'_{t}\right)=\int\frac{d^{3}k_{\Phi}}{\left(2\pi\right)^{3}}\,
+\tilde\chi\left(\vec k_{\Phi}\right)\,
+\exp\left(i\vec k_{\Phi}\cdot\vec r-i\,\Omega\left(\vec k_{\Phi}\right)r'_{t}\right),
+\qquad
+\Omega\left(\vec k_{\Phi}\right)=\frac{k_{\Phi}^{2}}{2k_{m}} .
+$$</p>
+<p><strong>The symbol matches, term by term.</strong> The Laplacian acts on one mode as</p>
+<p>$$
+-\Delta\,e^{i\vec k_{\Phi}\cdot\vec r}=k_{\Phi}^{2}\,e^{i\vec k_{\Phi}\cdot\vec r},
+$$</p>
+<p>so the operator $-\frac{1}{2k_{m}}\Delta$ has, on that mode, the eigenvalue $\frac{k_{\Phi}^{2}}{2k_{m}}$, which is exactly $\Omega\left(\vec k_{\Phi}\right)$. Hence, mode by mode,</p>
+<p>$$
+-\frac{1}{2k_{m}}\Delta\,\chi
+=\int\frac{d^{3}k_{\Phi}}{\left(2\pi\right)^{3}}\,\tilde\chi\,\frac{k_{\Phi}^{2}}{2k_{m}}\,e^{i\vec k_{\Phi}\cdot\vec r-i\Omega r'_{t}}
+=\int\frac{d^{3}k_{\Phi}}{\left(2\pi\right)^{3}}\,\tilde\chi\,\Omega\,e^{i\vec k_{\Phi}\cdot\vec r-i\Omega r'_{t}}
+=i\,\partial_{r'_{t}}\chi .
+$$</p>
+<p><strong>Why nothing is lost.</strong> The two operators commute with the mode decomposition and agree on every mode, and the plane waves are complete, so they agree on every envelope in the domain. The step from a number to an operator is exact <strong>precisely because $\Omega$ is a polynomial in $\vec k_{\Phi}$</strong>: a non-polynomial dispersion relation would have no finite-order differential operator with that symbol, and the step would then be an approximation of its own. This is a second reason for the truncation of step 6 that is not usually noticed — it is what makes the limit expressible as a differential equation at all.</p>
+<p><strong>The equation in the material time.</strong></p>
+<p>$$
+\boxed{\;i\,\frac{\partial\chi}{\partial r'_{t}}=-\frac{1}{2k_{m}}\,\Delta\,\chi\;}
+$$</p>
+<h2 id="11-step-11-the-units-are-restored">11. Step 11 — The Units Are Restored</h2>
+<p><strong>The chain of constants.</strong> With $r'_{t}=c\,t'$,</p>
+<p>$$
+\partial_{r'_{t}}=\frac{1}{c}\,\partial_{t'},
+\qquad
+\frac{1}{2k_{m}}=\frac{\hbar}{2mc},
+\qquad
+\hbar c\cdot\frac{1}{2k_{m}}=\frac{\hbar c\,\hbar}{2mc}=\frac{\hbar^{2}}{2m}.
+$$</p>
+<p>Multiplying the equation of step 10 by $\hbar c$,</p>
+<p>$$
+i\hbar c\,\frac{\partial\chi}{\partial r'_{t}}=-\frac{\hbar c}{2k_{m}}\,\Delta\chi
+\qquad\Longrightarrow\qquad
+i\hbar c\cdot\frac{1}{c}\,\frac{\partial\chi}{\partial t'}=-\frac{\hbar^{2}}{2m}\,\Delta\chi ,
+$$</p>
+<p>which is</p>
+<p>$$
+\boxed{\;i\hbar\,\frac{\partial\chi}{\partial t'}=-\frac{\hbar^{2}}{2m}\,\Delta\,\chi\;}
+$$</p>
+<p><strong>The free Schrödinger equation, with the mass that entered the four-velocity.</strong> The two constants are the ones the framework already fixed: $\hbar$ nowhere entered until the scale $k_{m}/c$ of step 2, and $m$ is the same mass that made $k_{m}$.</p>
+<p><strong>The dimensional check.</strong> $\hbar\,\partial_{t'}$ has the dimensions of an energy, joule; $\frac{\hbar^{2}}{2m}\Delta$ has $\frac{\left(\mathrm{J}\cdot\mathrm{s}\right)^{2}}{\mathrm{kg}}\cdot\mathrm{m}^{-2}=\frac{\mathrm{kg}^{2}\mathrm{m}^{4}\mathrm{s}^{-2}}{\mathrm{kg}\,\mathrm{m}^{2}}=\mathrm{kg}\,\mathrm{m}^{2}\mathrm{s}^{-2}=\mathrm{J}$. The two sides agree, and they agree because $\hbar c/2k_{m}=\hbar^{2}/2m$ is a length times a wave number, hence dimensionless, times an energy.</p>
+<p><strong>The eleven steps, closed.</strong> One truncation was made, in step 3, re-read in step 6. Every other step is algebra, a definition or a linearity. That is the complete route from the rung $ik_{m}\left(1+\frac{\beta^{2}}{2}\right)e_{t}+k_{m}\vec\beta$ to the equation above.</p>
+<h2 id="the-discarded-term">The Discarded Term</h2>
+<p><strong>What was dropped, in the operator language.</strong> The quadratic of step 5, divided by $2k_{m}$, is</p>
+<p>$$
+\Omega=\frac{k_{\Phi}^{2}}{2k_{m}}-\frac{\Omega^{2}}{2k_{m}} .
+$$</p>
+<p>On the envelope, $\Omega\chi=i\,\partial_{r'_{t}}\chi$ and $\Omega^{2}\chi=-\partial^{2}_{r'_{t}}\chi$, so the same identity becomes</p>
+<p>$$
+i\,\partial_{r'_{t}}\chi=-\frac{1}{2k_{m}}\Delta\chi+\frac{1}{2k_{m}}\partial^{2}_{r'_{t}}\chi
+\qquad\Longleftrightarrow\qquad
+\partial^{2}_{r'_{t}}\chi-2ik_{m}\,\partial_{r'_{t}}\chi-\Delta\chi=0 .
+$$</p>
+<p><strong>That second equation is the Klein–Gordon equation, exactly.</strong> It is the box of step 2 rewritten for the envelope with the rest phase divided out, it holds at every speed, and it contains no truncated quantity: its two roots are $\Omega_{\pm}$ of step 5. Verified numerically, the residual of a plane wave in it is $2\times10^{-18}$.</p>
+<p><strong>Therefore, stated without ambiguity:</strong></p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>equation</th>
+<th>truncation</th>
+<th>roots</th>
+<th>order in $r'_{t}$</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\partial^{2}\chi-2ik_{m}\partial\chi-\Delta\chi=0$ (Klein–Gordon)</td>
+<td>none</td>
+<td>$\Omega_{\pm}=-k_{m}\pm\sqrt{k_{\Phi}^{2}+k_{m}^{2}}$</td>
+<td>second</td>
+</tr>
+<tr>
+<td>$2ik_{m}\partial\chi+\Delta\chi=0$ (Schrödinger)</td>
+<td>$\partial^{2}\chi$ dropped</td>
+<td>$\Omega=k_{\Phi}^{2}/2k_{m}$</td>
+<td>first</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>The two are one truncation apart, and the truncation is not a small term uniformly.</strong> The dropped term is $\partial^{2}_{r'_{t}}\chi=-\Omega^{2}\chi$. Its size relative to the retained term $2ik_{m}\partial_{r'_{t}}\chi=-2k_{m}\Omega\chi$ is</p>
+<p>$$
+\frac{\Omega^{2}}{2k_{m}\Omega}=\frac{\Omega}{2k_{m}}=\frac{k_{\Phi}^{2}}{4k_{m}^{2}}=\frac{v^{2}}{4c^{2}} ,
+$$</p>
+<p>which is small <strong>on the slow branch</strong>, where $\Omega\approx k_{\Phi}^{2}/2k_{m}\ll k_{m}$. On the fast branch, $\Omega\approx-2k_{m}$, the same ratio is</p>
+<p>$$
+\frac{\Omega}{2k_{m}}\approx-1 ,
+$$</p>
+<p>and the two terms cancel to leading order instead of one dominating: measured on the fast branch at $k_{\Phi}/k_{m}=0.31$, the ratio of the dropped to the retained term is $1.024$. Dropping one of two terms that cancel is not an approximation; it is the removal of the branch.</p>
+<p><strong>The truncated symbol has no image of the fast branch at all.</strong> $\Omega=k_{\Phi}^{2}/2k_{m}$ is non-negative for every real $\vec k_{\Phi}$, while the fast branch sits at $-2k_{m}$ and below. There is no wave number at which the truncated relation reproduces it, so the truncation is a <strong>projection onto the slow branch</strong>, not a distortion of both.</p>
+<p><strong>The domain of validity, in one sentence.</strong> The equation of step 11 applies to states in which the fast branch is not populated, that is to one-particle states, and its error inside that domain is $v^{2}/4c^{2}$ in the generator.</p>
+<h2 id="the-error-budget">The Error Budget</h2>
+<p><strong>Three different errors, and they are not interchangeable.</strong> The derivation makes one truncation, but that truncation lands on three separate quantities, and a statement about "the error of the approximation" is meaningless unless it names which. The three are measured against different references.</p>
+<p><strong>Error one, the temporal slot.</strong> Measured against the exact excess,</p>
+<p>$$
+1-\frac{k'_{t,1}-k_{m}}{k'_{t}-k_{m}}
+=1-\frac{\gamma+1}{2\gamma^{2}}
+=\frac{3}{4}\beta^{2}+O\left(\beta^{4}\right).
+$$</p>
+<p>This is the error in the energy, and it is the one that accumulates as a phase.</p>
+<p><strong>Error two, the vector slot.</strong> Measured against the exact momentum wave number,</p>
+<p>$$
+1-\frac{\lvert\vec k_{\Phi,1}\rvert}{\lvert\vec k_{\Phi}\rvert}
+=1-\frac{1}{\gamma}
+=\frac{1}{2}\beta^{2}+O\left(\beta^{4}\right).
+$$</p>
+<p>This is the error in the momentum of a given state: the exact momentum of a particle of speed $\lvert\vec v\rvert$ is $\gamma m\lvert\vec v\rvert$, and the rung assigns it $m\lvert\vec v\rvert$. It is not a phase error, and it is not the packet-velocity error either: that one is $\gamma-1$ and comes from the <strong>shape</strong> of the truncated dispersion, not from the value of the momentum. Three quantities, three different comparisons of the same rung.</p>
+<p><strong>Error three, the dropped term.</strong> Measured against the retained term of the differential equation,</p>
+<p>$$
+\frac{\Omega^{2}}{2k_{m}\Omega}=\frac{\Omega}{2k_{m}}
+=\frac{\gamma-1}{2}
+=\frac{1}{4}\beta^{2}+O\left(\beta^{4}\right).
+$$</p>
+<p>This is the error of the equation itself, on the slow branch.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>$\beta$</th>
+<th>temporal slot: $1-\frac{\gamma+1}{2\gamma^{2}}$</th>
+<th>vector slot: $1-\frac{1}{\gamma}$</th>
+<th>dropped term: $\frac{\gamma-1}{2}$</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$0.01$</td>
+<td>$7.500\times10^{-5}$</td>
+<td>$5.000\times10^{-5}$</td>
+<td>$2.500\times10^{-5}$</td>
+</tr>
+<tr>
+<td>$0.10$</td>
+<td>$7.506\times10^{-3}$</td>
+<td>$5.013\times10^{-3}$</td>
+<td>$2.500\times10^{-3}$</td>
+</tr>
+<tr>
+<td>$0.50$</td>
+<td>$1.920\times10^{-1}$</td>
+<td>$1.340\times10^{-1}$</td>
+<td>$6.250\times10^{-2}$</td>
+</tr>
+<tr>
+<td>$0.90$</td>
+<td>$6.871\times10^{-1}$</td>
+<td>$5.641\times10^{-1}$</td>
+<td>$2.025\times10^{-1}$</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Why the temporal error is the largest.</strong> It is measured against a quantity that itself vanishes as $\beta^{2}$: the excess $k'_{t}-k_{m}$ is of order $\beta^{2}$, so an absolute error of order $\beta^{4}$ in it is a relative error of order $\beta^{2}$. The three coefficients, $\frac{3}{4}$, $\frac{1}{2}$ and $\frac{1}{4}$, measure three different things — the two slots and the equation — and only the third belongs to the Schrödinger equation as such.</p>
+<h2 id="the-phase-error">The Phase Error</h2>
+<p><strong>The phase error is the first error, integrated.</strong> Since the envelope is a unitary evolution with a slightly wrong frequency, the error in the state is not an error of amplitude but an error of phase, and it grows linearly with the elapsed material time:</p>
+<p>$$
+\chi_{1}\left(r'_{t}\right)=\exp\left(-i\Omega_{1}r'_{t}\right)
+=\exp\left(-i\Omega r'_{t}\right)\exp\left(-i\left(\Omega_{1}-\Omega\right)r'_{t}\right),
+\qquad
+\Delta\phi\left(r'_{t}\right)=\left(\Omega_{1}-\Omega\right)r'_{t} .
+$$</p>
+<p>The rate follows from the rationalised form of the exact root, $\Omega=k_{\Phi}^{2}/\left(\sqrt{k_{\Phi}^{2}+k_{m}^{2}}+k_{m}\right)$, which is the quadratic of step 5 with the surd moved to the denominator:</p>
+<p>$$
+\Omega_{1}-\Omega
+=k_{\Phi}^{2}\left(\frac{1}{2k_{m}}-\frac{1}{\sqrt{k_{\Phi}^{2}+k_{m}^{2}}+k_{m}}\right)
+=-\frac{3}{8}k_{m}\beta^{4}+O\left(\beta^{6}\right).
+$$</p>
+<p>The sign is negative: the truncated frequency is the <strong>lower</strong> of the two, so the truncated wave runs ahead of the exact one in phase.</p>
+<p><strong>For the electron</strong>, $k_{m_e}=2.5896\times10^{12}\ \mathrm{m^{-1}}$:</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>$\beta$</th>
+<th>relative error of $\Omega$</th>
+<th>phase rate per metre</th>
+<th>path for one radian</th>
+<th>phase error over $a_{0}=5.29\times10^{-11}\ \mathrm{m}$</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$1/137.036$</td>
+<td>$1.33\times10^{-5}$</td>
+<td>$9.18\times10^{2}\ \mathrm{m^{-1}}$</td>
+<td>$1.09\ \mathrm{mm}$</td>
+<td>$4.9\times10^{-8}\ \mathrm{rad}$</td>
+</tr>
+<tr>
+<td>$0.01$</td>
+<td>$2.50\times10^{-5}$</td>
+<td>$3.24\times10^{3}\ \mathrm{m^{-1}}$</td>
+<td>$0.309\ \mathrm{mm}$</td>
+<td>$1.7\times10^{-7}\ \mathrm{rad}$</td>
+</tr>
+<tr>
+<td>$0.10$</td>
+<td>$2.49\times10^{-3}$</td>
+<td>$3.22\times10^{7}\ \mathrm{m^{-1}}$</td>
+<td>$31.1\ \mathrm{nm}$</td>
+<td>$1.7\times10^{-3}\ \mathrm{rad}$</td>
+</tr>
+<tr>
+<td>$0.50$</td>
+<td>$5.90\times10^{-2}$</td>
+<td>$1.80\times10^{10}\ \mathrm{m^{-1}}$</td>
+<td>$55.4\ \mathrm{pm}$</td>
+<td>$0.96\ \mathrm{rad}$</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>How to read the table.</strong> The fourth column is the distance over which the approximation's phase drifts by one radian at fixed speed; it is the coherence length of the approximation, and it shrinks as the speed grows. The fifth column applies the same rate to a Bohr radius. At the ground-state speed of hydrogen the drift is $5\times10^{-8}$ rad, and at a tenth of the speed of light it is already $2\times10^{-3}$ rad — the quantitative statement that the non-relativistic description of an atom is good because the electron is slow, not because the equation is accurate.</p>
+<p><strong>The velocity error is the same truncation read differently.</strong> The group velocity is $c\,\partial\Omega/\partial k_{\Phi}$. A state of speed $\beta$ carries the exact wave number $k_{\Phi}=\gamma k_{m}\beta$, and on the exact dispersion</p>
+<p>$$
+v_{g}=c\,\frac{\partial\Omega}{\partial k_{\Phi}}=\frac{ck_{\Phi}}{\sqrt{k_{\Phi}^{2}+k_{m}^{2}}}=\frac{c\,\gamma k_{m}\beta}{\gamma k_{m}}=c\beta ,
+$$</p>
+<p>while the truncated dispersion, read at the same $k_{\Phi}$, gives</p>
+<p>$$
+v_{g,1}=c\,\frac{\partial}{\partial k_{\Phi}}\frac{k_{\Phi}^{2}}{2k_{m}}=\frac{ck_{\Phi}}{k_{m}}=\frac{c\,\gamma k_{m}\beta}{k_{m}}=c\gamma\beta .
+$$</p>
+<p>The ratio is therefore $\gamma$ exactly, not $\frac{1}{\gamma}$:</p>
+<p>$$
+\frac{v_{g,1}}{v_{g}}=\frac{\sqrt{k_{\Phi}^{2}+k_{m}^{2}}}{k_{m}}=\gamma=1+\frac{1}{2}\beta^{2}+\cdots .
+$$</p>
+<p>So the truncated packet moves too fast by the factor $\gamma$, an excess of $\gamma-1$, while its phase drifts by the temporal-slot error $\frac{3}{4}\beta^{2}$. <strong>One truncation, two observable errors, in the ratio $3:2$ at leading order.</strong> The two are not the same number, and neither is the vector-slot error $1-\frac{1}{\gamma}$: that last one is the error in the wave number of an element, and the group velocity is the derivative of the dispersion, which is a different reading of the same truncation.</p>
+<p><strong>The spreading error.</strong> The second derivative of the exact dispersion is $k_{m}^{2}/\left(k_{\Phi}^{2}+k_{m}^{2}\right)^{3/2}$, a length that falls with momentum, while the truncated dispersion has the constant second derivative $1/k_{m}$. Their ratio is $\gamma^{3}$: $1.015$ at $k_{\Phi}/k_{m}=0.1$, $1.40$ at $0.5$, $2.83$ at $1$. A packet described by the truncated equation therefore spreads at the non-relativistic rate exactly, and the discrepancy grows as the cube of the Lorentz factor. This is also why the corpus's wave-packet article can solve the truncated equation in closed form: the truncated dispersion is a parabola, and a parabola gives a Gaussian.</p>
+<h2 id="numerical-verification">Numerical Verification</h2>
+<p><strong>Every identity in the derivation was checked.</strong> The checks and their outcomes:</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Check</th>
+<th>Quantity verified</th>
+<th>Outcome</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>step 1</td>
+<td>$\langle\tilde V_{\Phi}\rangle_{\natural}=-c^{2}$</td>
+<td>residual $2.2\times10^{-16}$</td>
+</tr>
+<tr>
+<td>step 2</td>
+<td>$k_{t}^{\prime\,2}-k_{\Phi}^{2}=k_{m}^{2}$</td>
+<td>max deviation $1.8\times10^{-15}$ over 100 speeds</td>
+</tr>
+<tr>
+<td>step 3</td>
+<td>$\langle\tilde K_{\Phi,1}\rangle_{\natural}=-k_{m}^{2}\left(1+\frac{\beta^{4}}{4}\right)$</td>
+<td>max deviation $3.8\times10^{-16}$</td>
+</tr>
+<tr>
+<td>step 3</td>
+<td>$\frac{k'_{t,1}-k_{m}}{k'_{t}-k_{m}}=\frac{\gamma+1}{2\gamma^{2}}$</td>
+<td>max deviation $9.9\times10^{-13}$</td>
+</tr>
+<tr>
+<td>step 4</td>
+<td>$2k_{m}\Omega=k_{\Phi}^{2}$ on the rung</td>
+<td>max deviation $1.8\times10^{-15}$</td>
+</tr>
+<tr>
+<td>step 5</td>
+<td>$\Omega_{\pm}$ satisfies $\Omega^{2}+2k_{m}\Omega=k_{\Phi}^{2}$</td>
+<td>residual below $10^{-15}$</td>
+</tr>
+<tr>
+<td>step 8</td>
+<td>$k_{m}+\Omega=k'_{t,1}$ identically</td>
+<td>exact by construction</td>
+</tr>
+<tr>
+<td>step 9</td>
+<td>$\lvert 1-i\Omega\delta\rvert^{2}-1=\Omega^{2}\delta^{2}$</td>
+<td>agreement to $10^{-13}$ relative</td>
+</tr>
+<tr>
+<td>step 9</td>
+<td>step-error scaling, two terms against three</td>
+<td>$2.61\times10^{-14}$ against $O\left(\delta^{2}\right)=2.61\times10^{-14}$; $1.99\times10^{-21}$ against $O\left(\delta^{3}\right)=1.99\times10^{-21}$</td>
+</tr>
+<tr>
+<td>discarded term</td>
+<td>$\partial^{2}\chi-2ik_{m}\partial\chi-\Delta\chi=0$</td>
+<td>residual $2\times10^{-18}$</td>
+</tr>
+<tr>
+<td>discarded term</td>
+<td>truncated residual equals $-\Omega^{2}\chi$</td>
+<td>agreement to the last digit</td>
+</tr>
+<tr>
+<td>discarded term</td>
+<td>ratio $\lvert\partial^{2}\chi\rvert/\lvert 2k_{m}\partial\chi\rvert$ on the fast branch</td>
+<td>$1.024$ at $k_{\Phi}/k_{m}=0.31$</td>
+</tr>
+<tr>
+<td>step 10</td>
+<td>symbol of $-\Delta/\left(2k_{m}\right)$ equals $\Omega\left(\vec k_{\Phi}\right)$</td>
+<td>exact algebra</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>The speeds used.</strong> The dimensionless checks ran over one hundred speeds from $\beta=10^{-2}$ to $0.99$. The deviations listed are of the order of the arithmetic, not of the truncation: they test whether the closed forms were transcribed correctly, and they say nothing about the accuracy of the ladder, which is measured in §<em>The Error Budget</em>.</p>
+<h2 id="where-the-derivation-can-go-wrong">Where the Derivation Can Go Wrong</h2>
+<p><strong>1. Treating Klein–Gordon as one more term.</strong> Klein–Gordon is the exact equation of the envelope, with zero truncation and both roots. Writing it as "three terms of the exponential" or "the next rung" makes it look like an approximation of something, and it is not. §<em>The Discarded Term</em> gives the count.</p>
+<p><strong>2. Reading "cut after two terms" as a cut at a finite step.</strong> The corpus's phrase is about the infinitesimal step. Applied at a finite step it produces a non-unitary map, and the resulting equation is not Schrödinger's but a diffusion with an imaginary coefficient. The rule is: truncate the generator.</p>
+<p><strong>3. Truncating the exponential instead of its phase.</strong> Closely related, same cure. The modulus must stay at one.</p>
+<p><strong>4. Keeping $\gamma$ in the vector slot while truncating the temporal slot.</strong> This gives the closer energy $E=mc^{2}+p^{2}/2m$, and it breaks the parabola of step 4: the truncated element then satisfies no relation of finite degree, the operator step of step 10 fails because the symbol is not a polynomial, and the identity $\mathcal{E}=p^{2}/2m$ is lost. It is a legitimate approximation of the energy and not a legitimate route to the equation.</p>
+<p><strong>5. Expanding $\Omega$ in the wrong variable.</strong> The exact excess is one function with two expansions,
+$$
+\Omega=k_{m}\left(\frac{\beta^{2}}{2}+\frac{3\beta^{4}}{8}+\cdots\right)
+\qquad\text{and}\qquad
+\Omega=k_{m}\left(\frac{r^{2}}{2}-\frac{r^{4}}{8}+\cdots\right),
+\quad r:=\frac{k_{\Phi}}{k_{m}},
+$$
+and the coefficient of the fourth-order term has <strong>opposite signs</strong> in the two, because $\beta$ and $r$ differ by the factor $\gamma$. Both expansions are correct; expanding in $\beta$ and quoting the coefficient of the $r$-series, or the reverse, is not. The first term, $\frac{1}{2}$, is the same in both, which is why the mistake survives a check at leading order.</p>
+<p><strong>6. Believing the truncated equation approximates the relativistic one uniformly.</strong> It does not: it deletes the fast branch. Every statement of accuracy in this article is a statement about the slow branch, and the equation must not be applied to a state with an antiparticle component.</p>
+<p><strong>7. Forgetting that the operator step needs a polynomial symbol.</strong> $k_{\Phi}^{2}\to-\Delta$ is exact because $\Omega\propto k_{\Phi}^{2}$. A dispersion relation with a non-polynomial $\Omega\left(\vec k_{\Phi}\right)$ has no finite-order differential equation, and the limit would then have to be written as an integral operator. That is an unnoticed service performed by the truncation.</p>
+<h2 id="what-is-not-done">What Is Not Done</h2>
+<p><strong>Spin.</strong> Nothing here produces it. The element is a four-vector of $\mathbb{B}_{\Phi}$ with four real coefficients, the equation is scalar, and the two-component structure needs the spinor square root of the wave operator, which is a separate construction. The corpus's Dirac route reaches the Pauli equation by eliminating the small component, and the Foldy–Wouthuysen transformation shows that the spin terms come from the odd part of the Hamiltonian, which a scalar dispersion relation does not have.</p>
+<p><strong>The potential.</strong> A gauge field would enter through the minimal substitution in the gradient, and the symbol is then not a polynomial because of the position dependence. The corpus's gauge articles do this; it is not done here.</p>
+<p><strong>Second quantisation.</strong> The truncation removes a branch, and second quantisation is what gives the removed branch its own particle. The two operations are related and neither implies the other.</p>
+<p><strong>The second-order form in the material time.</strong> The envelope equation $\partial^{2}\chi-2ik_{m}\partial\chi-\Delta\chi=0$ is Klein–Gordon rewritten, and the corpus reaches it from the field. This article reaches it from the element, and the two routes agree term by term.</p>
+<h2 id="summary">Summary</h2>
+<p><strong>The ladder is one act.</strong> Step 3 truncates the element's two coefficients: keep the temporal excess to order $\beta^{2}$, drop the vector excess. Step 6 performs the same act on the dispersion relation: remove $\Omega^{2}$ from $\Omega^{2}+2k_{m}\Omega=k_{\Phi}^{2}$. They are the same truncation, and no other approximation is made anywhere in the derivation.</p>
+<p><strong>The rung is closed.</strong> The truncated element $\tilde K_{\Phi,1}=ik_{m}\left(1+\frac{\beta^{2}}{2}\right)e_{t}+k_{m}\vec\beta$ satisfies $2k_{m}\Omega=k_{\Phi}^{2}$ with $\Omega=k_{m}\beta^{2}/2$, exactly and with no remainder. That is why the two slots had to be truncated differently, and it is the identity that makes the kinetic energy and the momentum one statement, $\mathcal{E}=p^{2}/2m=\frac{1}{2}m\lvert\vec v\rvert^{2}$.</p>
+<p><strong>The rest of the route is free.</strong> The phase is the scalar part of one product and is linear in the element, so the ladder reaches the exponent by one scalar product. The rest clock $f=\exp\left(-ik_{m}r'_{t}\right)$ is the zero-momentum solution, so it divides out exactly. The envelope's derivative is $-i\Omega\chi$ by construction. The symbol of $-\frac{1}{2k_{m}}\Delta$ is $\Omega$, so the number becomes an operator exactly. The units give $\hbar c/2k_{m}=\hbar^{2}/2m$.</p>
+<p><strong>The result.</strong></p>
+<p>$$
+i\hbar\,\frac{\partial\chi}{\partial t'}=-\frac{\hbar^{2}}{2m}\Delta\chi ,
+\qquad
+\chi=\exp\left(i\vec k_{\Phi}\cdot\vec r-i\Omega r'_{t}\right),
+\qquad
+\Omega=\frac{k_{\Phi}^{2}}{2k_{m}} .
+$$</p>
+<p><strong>The price.</strong> The dropped term is $\Omega^{2}$, which on the envelope is $\partial^{2}_{r'_{t}}\chi$: it is the whole second branch, sitting $2k_{m}$ away, not a small correction. The equation is a projection onto the slow branch, with error $\frac{1}{4}\beta^{2}$ in the generator, $\frac{3}{4}\beta^{2}$ in the phase rate and $\frac{1}{2}\beta^{2}$ in the packet velocity.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\tilde V_{\Phi}=\gamma\left(ic\,e_{t}+\vec v\right)$</td>
+<td>Four-velocity, the base element, in $\mathbb{B}_{\Phi}$</td>
+</tr>
+<tr>
+<td>$\tilde V_{\Phi,1}$</td>
+<td>Its rung: temporal slot to order $\beta^{2}$, vector slot to first order</td>
+</tr>
+<tr>
+<td>$\langle\tilde Q\rangle_{\natural}=\tilde Q\tilde Q^{\natural}$</td>
+<td>The biquaternion norm; $-c^{2}$ on $\tilde V_{\Phi}$</td>
+</tr>
+<tr>
+<td>$\mathrm{Sc}\,\tilde Q$</td>
+<td>The coefficient of $e_{t}$; linear, hence the phase</td>
+</tr>
+<tr>
+<td>$\tilde R_{\Phi}=ir'_{t}e_{t}+\vec r$</td>
+<td>Four-position; $r'_{t}=ct$ the material time, written $s$ in displays</td>
+</tr>
+<tr>
+<td>$\phi=\vec k_{\Phi}\cdot\vec r-k'_{t}r'_{t}$</td>
+<td>The phase, the scalar part of $\tilde K_{\Phi}\tilde R_{\Phi}^{\natural}$</td>
+</tr>
+<tr>
+<td>$\tilde K_{\Phi}=\frac{k_{m}}{c}\tilde V_{\Phi}$</td>
+<td>Four-wavenumber; one multiplication from the four-velocity</td>
+</tr>
+<tr>
+<td>$k_{m}=mc/\hbar$</td>
+<td>Mass wave number, the scale that carries the mass and $\hbar$</td>
+</tr>
+<tr>
+<td>$k'_{t}=\gamma k_{m}$</td>
+<td>Energy wave number, temporal slot</td>
+</tr>
+<tr>
+<td>$\vec k_{\Phi}=\gamma k_{m}\vec\beta$</td>
+<td>Momentum wave number, vector slot</td>
+</tr>
+<tr>
+<td>$k_{\Phi}^{2}=\vec k_{\Phi}\cdot\vec k_{\Phi}$</td>
+<td>Its square, a positive number</td>
+</tr>
+<tr>
+<td>$k_{t}^{\prime\,2}=k_{\Phi}^{2}+k_{m}^{2}$</td>
+<td>The box: the mass shell on the wave numbers, exact</td>
+</tr>
+<tr>
+<td>$\Omega:=k'_{t}-k_{m}$</td>
+<td>Excess of the energy wave number over its rest value</td>
+</tr>
+<tr>
+<td>$\Omega^{2}+2k_{m}\Omega=k_{\Phi}^{2}$</td>
+<td>The exact quadratic; two roots, hence second order</td>
+</tr>
+<tr>
+<td>$\Omega_{\pm}=-k_{m}\pm\sqrt{k_{\Phi}^{2}+k_{m}^{2}}$</td>
+<td>Its two roots: the slow branch and the branch at $-2k_{m}$</td>
+</tr>
+<tr>
+<td>$\Omega=k_{\Phi}^{2}/2k_{m}=k_{m}\beta^{2}/2$</td>
+<td>The truncated root: one branch, first order</td>
+</tr>
+<tr>
+<td>$\frac{\gamma+1}{2\gamma^{2}}=1-\frac{3}{4}\beta^{2}+\cdots$</td>
+<td>Error of the temporal slot, exact ratio</td>
+</tr>
+<tr>
+<td>$\frac{1}{\gamma}=1-\frac{1}{2}\beta^{2}+\cdots$</td>
+<td>Error of the vector slot, exact ratio</td>
+</tr>
+<tr>
+<td>$\frac{\Omega}{2k_{m}}=\frac{1}{4}\beta^{2}+\cdots$</td>
+<td>Size of the dropped term against the retained one</td>
+</tr>
+<tr>
+<td>$f=\exp\left(-ik_{m}r'_{t}\right)$</td>
+<td>Rest clock; the $\vec k_{\Phi}=0$ solution; unit modulus</td>
+</tr>
+<tr>
+<td>$\chi=\exp\left(i\vec k_{\Phi}\cdot\vec r-i\Omega r'_{t}\right)$</td>
+<td>Envelope, with the rest clock divided out</td>
+</tr>
+<tr>
+<td>$\theta_{\mathrm{rpd}}=\operatorname{artanh}\beta$</td>
+<td>Rapidity; the additive parameter of the boost</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li><em>The Three Wavenumbers of a Particle</em>, §<em>The Non-Relativistic Limit</em>, for the same four moves stated on the dispersion relation rather than on the element.</li>
+<li><em>The Klein–Gordon Equation in Biquaternionic Form</em>, §<em>The Non-Relativistic Limit</em>, for the field version, including the exact dividing out of the rest-mass phase and the reason the order falls from two to one.</li>
+<li><em>The Free Particle and Wave Packets in Biquaternionic Form</em>, for the closed-form envelope of the truncated equation and its numerical check against quadrature.</li>
+<li><em>The Foldy–Wouthuysen Transformation in Biquaternionic Form</em>, for the spinor case, where the rest-energy phase must be removed before a two-component description is reached.</li>
+</ul>
       </div>
     </main>
   </div>
