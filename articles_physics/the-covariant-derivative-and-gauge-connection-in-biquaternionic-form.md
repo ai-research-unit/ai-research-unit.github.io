@@ -226,6 +226,8 @@ with $e_t^{\natural} = e_t$ and $e_\mu^{\natural} = -\vec e_\mu$. The first iden
 
 Because $\tilde{F}$ is built from $\tilde{A}_{\Phi}$ by differentiation, the homogeneous Maxwell equations are identities rather than equations of motion — the Bianchi identity of the connection. The biquaternion form of that identity and the non-abelian completion of the curvature are the subjects of separate planned companions and are not claimed here. (In particular, the one-line equation $\tilde{\nabla}\tilde{F} = 0$ is *not* the Bianchi identity; it is the full source-free Maxwell system. This was checked and recorded in the gauge principle companion so that it is not written by mistake.)
 
+The shape recurs one rank up. The commutator of two kinetic angular momenta is a third one plus a multiplication operator quadratic in position, so it too leaves the span of the operators it starts from and lands on multiplication. The companion article *The Kinetic Momentum and the Algebra That Does Not Close* records that bracket and reads it against the curvature: the mechanical momentum is the spatial part of the connection, the field strength is its curvature, and the kinetic angular momentum is the cross product of position with the connection.
+
 ## The Covariant Square and the Curvature Term
 
 The commutator of two covariant derivatives is first order. The *square* of the covariant derivative is second order, and in the biquaternion algebra its scalar and vector parts separate cleanly.
