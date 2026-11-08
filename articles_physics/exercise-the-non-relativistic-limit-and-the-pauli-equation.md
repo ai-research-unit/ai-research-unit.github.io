@@ -180,6 +180,14 @@ $$
 $$\frac{m\,c\,i}{k_m}\frac{\partial\tilde{Ξ}_{\mathrm{sp},\mathrm{odd}}}{\partial  r'_t}=O\tilde{Ξ}_{\mathrm{sp},\mathrm{evn}}-2mc^2\tilde{Ξ}_{\mathrm{sp},\mathrm{odd}}+qΞ\tilde{Ξ}_{\mathrm{sp},\mathrm{odd}} .
 $$
 
+**Why the rest energy comes out first.** The $-2mc^2$ in the small-part equation is the rest energy already added in, and its presence is what makes the elimination converge. Solving that equation exactly,
+
+$$
+\tilde{Ξ}_{\mathrm{sp},\mathrm{odd}}=\frac{1}{\frac{m\,c\,i}{k_m}\partial_{r'_t}+2mc^2-qΞ}\,O\tilde{Ξ}_{\mathrm{sp},\mathrm{evn}} ,
+$$
+
+the denominator is $2mc^2+\varepsilon-qΞ$ on a field whose temporal eigenvalue is the kinetic energy $\varepsilon=E-mc^2$, so the expansion parameter is $(\varepsilon-qΞ)/(2mc^2)$; it vanishes at rest and is small exactly in the non-relativistic regime. Remove the phase after the elimination instead of before, and the same computation divides by $\frac{m\,c\,i}{k_m}\partial_{r'_t}+mc^2$, whose eigenvalue is $E\approx mc^2$ and not $\varepsilon$; the parameter is then of order one, the series does not converge, and its first term overshoots by a factor of two. The symptom is unambiguous. The small part comes out as $\sigma\cdot\vec\pi\,\tilde{Ξ}_{\mathrm{sp},\mathrm{evn}}/(mc)$ instead of $/(2mc)$, which turns the leading term into $\vec p^{\,2}/m$ rather than $\vec p^{\,2}/(2m)$. Removing the phase after the expansion instead of before does not repair it either: that order lands on $+\vec p^{\,2}/(4m)$, half the correct kinetic term, an effective mass of $2m$. Neither endpoint is repaired by a local redefinition. A scalar factor, phase or amplitude, multiplies both terms of a differential operator by the same function and leaves the coefficient of $\vec p^{\,2}$ alone, and a momentum-dependent redefinition $1+\alpha\vec p^{\,2}/(m^{2}c^{2})$ changes the kinetic term only at relative order $c^{-2}$, so it cannot undo a factor of two at order $c^{0}$. The order of the two operations is therefore not a matter of taste: the phase first, the elimination second, and the coefficient $1/2m$, with the $g=2$ that it carries, is a consequence of that order.
+
 *Step 3: the leading elimination.* The term $2mc^2\tilde{Ξ}_{\mathrm{sp},\mathrm{odd}}$ dominates the second equation whenever the fields, the kinetic energy and $\partial\tilde{Ξ}_{\mathrm{sp},\mathrm{odd}}/\partial r'_t$ are small compared with $mc^2$. Neglecting the other terms there,
 
 $$

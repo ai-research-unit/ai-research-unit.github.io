@@ -34,7 +34,10 @@ constant on each half-line and discontinuous at $x = 0$, with $V_0 > 0$ for a ba
 
 Take the particle to move along $x$ and to be in a spin state along the direction of motion. The spinor-module transcription of the biquaternion equation then reduces, as in the standard treatment of the step, to the two-component system
 
-$$\frac{m\,c^{2}\,i\,\tilde{Ξ}_{\mathrm{sp},2}}{k_m\,x} = \left[E - mc^2 - V(x)\right]\tilde{Ξ}_{\mathrm{sp},1},\frac{m\,c^{2}\,i\,\tilde{Ξ}_{\mathrm{sp},1}}{k_m\,x} = \left[E + mc^2 - V(x)\right]\tilde{Ξ}_{\mathrm{sp},2} ,
+$$
+\frac{m\,c^{2}\,i}{k_m}\,\frac{\partial\tilde{Ξ}_{\mathrm{sp},2}}{\partial x}=\left[E - mc^2 - V(x)\right]\tilde{Ξ}_{\mathrm{sp},1},
+\qquad
+\frac{m\,c^{2}\,i}{k_m}\,\frac{\partial\tilde{Ξ}_{\mathrm{sp},1}}{\partial x}=\left[E + mc^2 - V(x)\right]\tilde{Ξ}_{\mathrm{sp},2},
 $$
 
 in which $E$ is the total energy, $V(x) = V_0\mathrm{H}_{\mathrm{hvs}}(x)$ the potential energy, and the pair $(\tilde{Ξ}_{\mathrm{sp},1}, \tilde{Ξ}_{\mathrm{sp},2})$ is the two-component spinor of the reduced equation. This is the same two-component form the Klein paradox is usually solved in; the reduction is the one-dimensional instance of the parent's spinor-module picture, and the biquaternion field is recovered from the pair by the standing dictionary. The essential feature is already visible: the potential appears as the combination $E - V(x)$ multiplying the mass term, so a large $V$ drives that combination through zero and past $-m$.
@@ -114,7 +117,7 @@ The resolution of the apparent paradox is a matter of particle number, not of th
 
 Two algebraic facts organise the problem, and they were established in the companion articles. The potential term is central — a scalar multiple of $e_t$ — so it acts trivially on the state module and only shifts the mass shell. The mass term is the linear, chirality-off-diagonal pair $\tilde\nabla\tilde{Ξ}_{\mathrm{sp},R} = k_m\tilde{Ξ}_{\mathrm{sp},L}$, $\tilde\nabla^{\natural}\tilde{Ξ}_{\mathrm{sp},L} = k_m\tilde{Ξ}_{\mathrm{sp},R}$, the one term of the equation that relates its two components. The two ingredients of the Klein problem therefore act in orthogonal places: the potential is a central shift, the mass is a chirality mixing. The paradox is not caused by either alone but by the fact that the central shift can move the frequency past the mass gap, into the region where the two mass-shell roots exchange their roles.
 
-**The converse step.** A step in the mass is the other case: the mass is the chirality-mixing term of the pair, so a position-dependent mass shifts no frequency and cannot exchange the two mass-shell roots. When the local mass exceeds the energy the transmitted wave is evanescent rather than negative-frequency, the reflection is total, and the field penetrates the region of large mass only to a depth $1/\sqrt{M^2c^4-E^2}$, an inverse length. That is the confinement mechanism of the bag models of Bardeen, Chanowitz, Drell, Weinstein and Yang (1974), which use a scalar mass step rather than an electrostatic one for exactly this reason: a scalar step has no Klein threshold.
+**The converse step.** A step in the mass is the other case: the mass is the chirality-mixing term of the pair, so a position-dependent mass shifts no frequency and cannot exchange the two mass-shell roots. When the local mass exceeds the energy the transmitted wave is evanescent rather than negative-frequency, the reflection is total, and the field penetrates the region of large mass only to a depth $1/\sqrt{M^2c^4-E^2}$, an inverse length. That is the confinement mechanism of the bag models of Bardeen, Chanowitz, Drell, Weinstein and Yan (1975), which use a scalar mass step rather than an electrostatic one for exactly this reason: a scalar step has no Klein threshold.
 
 ### The mass shell and the exchange of branches
 
@@ -133,6 +136,40 @@ $$
 $$
 
 This is the algebraic content of the phrase "the far side is reached by an antiparticle". The exchange of the two roots is the same operation that the corpus's conjugation articles study as charge conjugation and the real structure $\flat$; here it is produced not by conjugation of the field but by a central shift of the momentum, which is why the framework can describe it without leaving the algebra. What the framework cannot do is change the particle number; that is the second-quantized statement, and it belongs to the companion articles on the Dirac sea and on pair creation. Here $k_{\Phi}=\frac{k_m\,p}{m\,c}$ is the momentum wave number.
+
+### The same exchange for a bound level
+
+**The step and the well are one mechanism.** In the step the exchanged branch belongs to a scattering state, and the pair it signals leaves the step for infinity. Confine the strong-potential region instead, and the exchange becomes a statement about a **bound level**: the level descends as the well deepens, and at a definite depth it reaches the lower edge of the gap, $E=-mc^{2}$. That depth is exact and elementary, and it is the one-particle face of the threshold computed here. The second-quantized reading, including the charged vacuum that the emission leaves behind, is that of *Pair Creation in a Bounded Region in Biquaternionic Form*; here only the level is computed.
+
+**The well and its two conditions.** Take $ϙ\xi(r_x)=-V_0$ for $\lvert r_x\rvert<L/2$ and zero outside, and write $a=L/2$. On each region the reduced pair of §*Reduction along one axis* holds with $E\to E+V_0$ inside the well, so the solution is oscillatory there with the wave number $k_{\Phi,\mathrm{w}}=\frac{\sqrt{(E+V_0)^{2}-m^{2}c^{4}}}{\hbar c}$ and evanescent outside with the decay constant $\kappa=\frac{\sqrt{m^{2}c^{4}-E^{2}}}{\hbar c}$. Continuity of the ratio of the two components at the wall gives, for the even and the odd solution,
+
+$$
+\frac{\kappa}{E+mc^{2}}=\frac{k_{\Phi,\mathrm{w}}\tan(k_{\Phi,\mathrm{w}}a)}{E+V_0+mc^{2}},
+\qquad
+\frac{\kappa}{E+mc^{2}}=-\frac{k_{\Phi,\mathrm{w}}\cot(k_{\Phi,\mathrm{w}}a)}{E+V_0+mc^{2}},
+$$
+
+which is the continuity statement that this article writes for the transmitted amplitude, read at a wall instead of at a discontinuity, with the exponential tail kept. No approximation enters.
+
+**The threshold.** At the lower edge the decay constant vanishes while the factor $E+mc^{2}$ vanishes faster, so the left side diverges and the two conditions reduce to $\cos(k_{\Phi,\mathrm{w}}a)=0$ and $\sin(k_{\Phi,\mathrm{w}}a)=0$. Both give $k_{\Phi,\mathrm{w}}a=n_{\mathrm{w}}\pi/2$, with $n_{\mathrm{w}}=1,2,3,\dots$ counting half-wavelengths across the well; odd $n_{\mathrm{w}}$ is the even solution, and the nodeless state is $n_{\mathrm{w}}=1$. At that energy $k_{\Phi,\mathrm{w}}^{2}=((V_0-mc^{2})^{2}-m^{2}c^{4})/(\hbar c)^{2}$, so the depth follows:
+
+$$
+\boxed{\;V_0^{\mathrm{cr}}=mc^{2}\left[1+\sqrt{1+\left(\frac{n_{\mathrm{w}}\pi}{k_mL}\right)^{2}}\;\right]\;}
+$$
+
+**What the formula says.** The threshold depends on $n_{\mathrm{w}}$ and $L$ only through the ratio $n_{\mathrm{w}}/(k_mL)$, so the $n_{\mathrm{w}}$-th level of a well of width $L$ dives at the depth of the first level of a well of width $L/n_{\mathrm{w}}$. It lies above $2mc^{2}$ for every finite width, and the excess is the confinement energy of the standing wave, $\frac{n_{\mathrm{w}}^{2}\pi^{2}\hbar^{2}}{2mL^{2}}$ at leading order, so a bounded region needs a deeper potential than a step by the price of confining the charge to it. And as $L\to\infty$ the threshold tends to $2mc^{2}$. That floor is the same number as this article's critical height, $V_0>E+mc^{2}$ with $E\to mc^{2}$, and the agreement is in the number only: $2mc^{2}$ is the least potential that brings an edge of one branch onto an edge of the other, and the well reaches it with a bound level at the lower edge of the gap while the step reaches it with a scattering state at the upper edge. The threshold of a finite well is that floor plus the confinement energy of the standing wave.
+
+**The numbers.** The matching conditions were solved numerically and the closed form confirmed. For $k_mL=10$ the formula gives $V_0^{\mathrm{cr}}=2.048187\,mc^{2}$; the lowest even level sits at $E=-0.990625\,mc^{2}$ at $V_0=2.038187\,mc^{2}$ and at $E=-0.999185\,mc^{2}$ at $V_0=2.047187\,mc^{2}$, approaching the edge without a jump; at $V_0^{\mathrm{cr}}$ the even condition vanishes at $E=-mc^{2}$ to $3\times10^{-10}$; and above it no even level remains in the gap, the lowest one there being the next state up, at $E=-0.697067\,mc^{2}$ for $V_0=V_0^{\mathrm{cr}}+10^{-3}mc^{2}$. The odd level crosses at $n_{\mathrm{w}}=2$, $V_0^{\mathrm{cr}}=2.181010\,mc^{2}$ for $k_mL=10$, which is the $n_{\mathrm{w}}=1$ depth of $k_mL=5$; the scaling is exact to the printed digits. The table gives the depths.
+
+| $k_mL$ | $n_{\mathrm{w}}=1$ | $n_{\mathrm{w}}=2$ | $n_{\mathrm{w}}=3$ | excess at $n_{\mathrm{w}}=1$ |
+|---|---|---|---|---|
+| $5$ | $2.181010$ | $2.605969$ | $3.133789$ | $0.181010$ |
+| $10$ | $2.048187$ | $2.181010$ | $2.374141$ | $0.048187$ |
+| $20$ | $2.012262$ | $2.048187$ | $2.105471$ | $0.012262$ |
+| $40$ | $2.003080$ | $2.012262$ | $2.027383$ | $0.003080$ |
+| $\infty$ | $2$ | $2$ | $2$ | $0$ |
+
+**What the crossing means.** Below the threshold the level is a normalizable state of the well. At the threshold it is degenerate with the lower continuum, and above it there is no normalizable state of that parity in the gap at all: the level has dived. The one-particle equation has not failed, since it still has solutions; what has failed is that any of them is normalisable, and with it the identification of a solution with the ground state of one electron. That is the same failure this article finds at the step. The difference is the bookkeeping. At the step the pair is emitted as a current and the account is closed at infinity; in a bounded region the same emission leaves a charge behind, held by one level, and it stays there for as long as the depth is maintained. That is why the bounded case, and not the step, is where the phrase *charged vacuum* becomes exact.
 
 ### The current lives in the material sector
 
@@ -157,7 +194,7 @@ The reflection **decreases** as the step rises, from $0.177$ at $V_0 = 5m$ to $0
 
 ## Open Questions
 
-1. **The biquaternion form of the pair-creation source.** The resolution of the paradox is that the step creates pairs. The scalar analogue is treated in the companion article on scalar pair creation; the fermionic biquaternion treatment of a step as a pair source, with the anomalous occupation of the two mass-shell roots, is not yet written.
+1. **The biquaternion form of the pair-creation source.** The resolution of the paradox is that the step creates pairs. The scalar analogue is treated in the companion article on scalar pair creation; the fermionic biquaternion treatment of a step as a pair source, with the anomalous occupation of the two mass-shell roots, is not yet written. The bounded case is the one place where the question is reduced to a single number rather than to a flux: *Pair Creation in a Bounded Region in Biquaternionic Form* computes the depth at which the level crosses into the lower continuum, and what remains is the occupation of that level, which is still a second-quantized datum.
 
 2. **The steepness.** Sauter showed that a step smoothed over a Compton wavelength removes the paradox. How does the smoothing enter the biquaternion equation — as a position-dependent central shift of the mass shell, or as a modification of the gradient itself?
 
@@ -171,7 +208,7 @@ The reflection **decreases** as the step rises, from $0.177$ at $V_0 = 5m$ to $0
 
 The Klein step is the Dirac equation with a central potential $ϙ\xi(x) = V_0\mathrm{H}_{\mathrm{hvs}}(x)$, solved by matching two-component plane waves. The reflection coefficient is $R = ((\alpha\beta - 1)/(\alpha\beta + 1))^2$ and the transmission $T = 4\alpha\beta/(\alpha\beta + 1)^2$, with $\alpha = \sqrt{(E - mc^2)/(E + mc^2)}$ and $\beta = \sqrt{(V_0 - E - mc^2)/(V_0 - E + mc^2)}$; current conservation is an identity, checked on the cases tabulated. In the Klein region $V_0 - E > mc^2$ the transmitted wave is a negative-frequency state, and $R$ tends to the finite value $((\alpha - 1)/(\alpha + 1))^2$ as $V_0\to\infty$ rather than to one; in the massless limit $\alpha = \beta = 1$ and $T = 1$ for every step height.
 
-The biquaternion framework locates the three ingredients: the potential is central and shifts the mass shell without acting on the module; the mass is the linear chirality-off-diagonal term; and the mass shell $\tilde P_{\Phi}\tilde P_{\Phi}^{\natural} = -m^{2}\,c^{2}$ has two roots, which the step exchanges. The exchange of roots is the algebraic face of the passage to the antiparticle branch, and it is produced by a central shift rather than by a conjugation of the field. The framework does not resolve the paradox, because the resolution is pair creation, a second-quantized statement; the one-particle coefficients are the standard ones. What the framework supplies is the clean separation of a central potential, a chiral mass and a two-rooted mass shell, which is exactly the structure the paradox tests.
+The biquaternion framework locates the three ingredients: the potential is central and shifts the mass shell without acting on the module; the mass is the linear chirality-off-diagonal term; and the mass shell $\tilde P_{\Phi}\tilde P_{\Phi}^{\natural} = -m^{2}\,c^{2}$ has two roots, which the step exchanges. In a bounded region the same shift is read on a bound level, and the level reaches the lower edge of the gap at $V_0^{\mathrm{cr}}=mc^{2}[1+\sqrt{1+(n_{\mathrm{w}}\pi/(k_mL))^{2}}\,]$, which exceeds $2mc^{2}$ by the confinement energy and tends to the common floor $2mc^{2}$ as the width grows; the details are in *Pair Creation in a Bounded Region in Biquaternionic Form*. The exchange of roots is the algebraic face of the passage to the antiparticle branch, and it is produced by a central shift rather than by a conjugation of the field. The framework does not resolve the paradox, because the resolution is pair creation, a second-quantized statement; the one-particle coefficients are the standard ones. What the framework supplies is the clean separation of a central potential, a chiral mass and a two-rooted mass shell, which is exactly the structure the paradox tests.
 
 ## Summary of Notation
 
@@ -188,6 +225,8 @@ The biquaternion framework locates the three ingredients: the potential is centr
 | $\beta = \sqrt{(V_0 - E - mc^2)/(V_0 - E + mc^2)}$ | Far-side spinor parameter |
 | $r$, $t$, $R$, $T$ | Reflection and transmission amplitudes and probabilities |
 | $\tilde K_{\Phi}$, $\tilde P_{\Phi}\tilde P_{\Phi}^{\natural} = -m^{2}\,c^{2}$ | Wave biquaternion and mass shell |
+| $V_0^{\mathrm{cr}}=mc^{2}[1+\sqrt{1+(n_{\mathrm{w}}\pi/(k_mL))^{2}}\,]$ | Depth at which a bound level of a well of width $L$ reaches $E=-mc^{2}$ |
+| $n_{\mathrm{w}}$, $k_{\Phi,\mathrm{w}}$, $\kappa$ | Half-wavelengths across the well; wave number in the well; decay constant outside it |
 | $\mathbb{B}_{\Phi}$ | Anti-Hermitian (material) sector; home of the current |
 
 ## Further Reading

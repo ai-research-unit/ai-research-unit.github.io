@@ -209,7 +209,9 @@ $$
 \mathfrak{Z}\alpha < s_{\mathrm{tot}} + \tfrac12 ,
 $$
 
-since otherwise the square root is imaginary. At the endpoint the root vanishes, and for the lowest state of that $s_{\mathrm{tot}}$, $n = s_{\mathrm{tot}}+\tfrac12$, the formula returns $E=0$; beyond it there is no normalizable bound state, the level having dived into the negative continuum. For $s_{\mathrm{tot}}=\tfrac12$ the bound is $\mathfrak{Z} < \alpha^{-1} \approx 137$, and the supercritical regime beyond it is outside the article.
+since otherwise the square root is imaginary. At the endpoint the root vanishes, and for the lowest state of that $s_{\mathrm{tot}}$, $n = s_{\mathrm{tot}}+\tfrac12$, the formula returns $E=0$; beyond it the formula has no real branch. For $s_{\mathrm{tot}}=\tfrac12$ the endpoint is $\mathfrak{Z}\alpha=1$, that is $\mathfrak{Z}=\alpha^{-1}\approx 137$, and the supercritical regime beyond it is outside the article.
+
+**The endpoint at $E=0$ is not the lower continuum.** The gap of the free theory is $(-mc^{2},mc^{2})$, so its lower edge is $-mc^{2}$ and $E=0$ lies halfway across it: the formula terminates in the middle of the gap and not in the negative continuum. The termination is an artefact of the point nucleus. The $1/r$ potential is singular at the origin, and once $\mathfrak{Z}\alpha$ passes $1$ the radial spinor oscillates without limit there: it belongs to no square-integrable domain, and the equation stops at $E=0$ before any level can dive. A nucleus of finite radius removes the singularity, and then the level continues to descend: it reaches $E=-mc^{2}$ at $\mathfrak{Z}\approx173$ for a realistic nuclear radius, and that crossing is the **dive**. The value depends on the radius, because the spinor samples the interior and a larger nucleus pushes the level less. Beyond the crossing the level is degenerate with the lower continuum, the vacuum of the atom carries a net charge, and the one-particle formula has nothing further to say; the mechanism, and its exact one-dimensional analogue, are those of *Pair Creation in a Bounded Region in Biquaternionic Form*.
 
 ### The non-relativistic limit and the fine structure
 

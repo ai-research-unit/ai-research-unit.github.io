@@ -217,7 +217,7 @@ $$
 \frac{|\vec\pi|}{mc}\ll1 ,
 $$
 
-i.e. particle momenta small compared with $mc$. When the criterion fails the iteration still exists term by term but no longer converges to a useful separation: the notion of a particle part is momentum-dependent and becomes meaningless in the ultra-relativistic regime.
+i.e. particle momenta small compared with $mc$. The criterion is usually quoted as $v\ll c$, and that is right as a limit and wrong as an equality: the two quantities are not proportional, and $\lvert\vec\pi\rvert=mc$ is $v=c/\sqrt{2}$, not $v\to c$, since $v/c=\lvert\vec\pi\rvert/\sqrt{\vec\pi^{2}+m^{2}c^{2}}$. The radius of the free binomial series is that point and not the whole of $v<c$. When the criterion fails the iteration still exists term by term but no longer converges to a useful separation: the notion of a particle part is momentum-dependent and becomes meaningless in the ultra-relativistic regime.
 
 Two features of the iteration are worth keeping in view. First, the transformation is **asymptotic, not exact**, unless the theory is free, or the background has a special symmetry: the series is what the non-relativistic limit means. Second, the even terms are not unique as operators until the ordering of the non-commuting factors is fixed — $\vec E$ and $\vec\pi$ do not commute, so the spin term and the kinetic term do not either, and only the Hermitian, symmetrised combination is physical. The biquaternion framework reads the first feature as the statement that the frame grading is only approximately aligned with the dynamics, and the second as the statement that the kinetic operator multiplies the field on both sides, so it is the field's own non-commutativity that the ordering ambiguity expresses.
 
@@ -287,6 +287,14 @@ $$
 $$
 
 the $\vec p^4$ term being the first relativistic correction to the kinetic energy. The closed form was checked numerically: with $\tan\theta=|\vec p|/(mc)$ and $U=\cos(\theta/2)+A\sin(\theta/2)$, the identity $UHU^\dagger=\beta E$ holds to machine precision, at the $10^{-15}$ level for a generic three-momentum and every value of $|\vec p|/(mc)$ tested.
+
+**The exact form is not a differential operator.** That the identity holds exactly is a statement about the algebra, not about locality. The symbol of $\beta\sqrt{\vec p^{2}c^{2}+m^{2}c^{4}}$ is $\sqrt{k^{2}c^{2}+m^{2}c^{4}}$, which is not a polynomial in $k$ at any order, so the operator is of infinite order: written in position space it has a kernel that does not vanish off the diagonal. In one dimension the kernel is elementary,
+
+$$
+\mathcal{K}(x)=\int\!\frac{dp}{2\pi\hbar}\;\sqrt{p^{2}c^{2}+m^{2}c^{4}}\;e^{ipx/\hbar}=-\dfrac{m\,c^{2}K_{1}(k_m\lvert x\rvert)}{\pi\lvert x\rvert},
+$$
+
+non-zero at every $x\neq0$ and decaying only over the reduced Compton wavelength $\dfrac{1}{k_m}$. The closed form separates the distributional part with $\frac{1}{\pi}\int_0^{\infty}k\cos(kx)\,dk=-\frac{1}{\pi x^{2}}$, what remains being conditionally convergent, and the integral was checked against it to twenty-five digits at $k_m\lvert x\rvert=0.5,1,2,3$. In three dimensions the kernel is more singular at coincidence rather than less, the difference $\sqrt{p^{2}c^{2}+m^{2}c^{4}}-pc$ falling off only as $\dfrac{m^{2}c^{3}}{2\,p}$, whose angular integral diverges. The transformation therefore trades one property for another: the Dirac Hamiltonian is local and not block-diagonal, its exact Foldy–Wouthuysen image is block-diagonal and not local, and only the truncated polynomial $\beta mc^{2}+\beta\vec p^{2}/(2m)$ is both. Locality belongs to the two ends of the chain, not to the middle. Nothing here contradicts the closed form above; it says what the closed form costs. The mean position operator below is the same non-locality read on the coordinate instead of on the Hamiltonian, since the operator that is blind to the trembling cannot itself be a multiplication by $\vec x$.
 
 ## The Mean Position Operator
 

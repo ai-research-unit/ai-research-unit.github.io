@@ -336,6 +336,32 @@ a Hermitian element of $\mathbb{B}_{\Psi}$: $i\vec e_k$ is Hermitian, $L_{\mathr
 
 **The zero modes are supersymmetric.** The operator identity has the form of a factorisation, $\mathcal{Q}_+\mathcal{Q}_-$ with the conjugate pair of *The Square of the Coupled Operator*. The aligned states with $n_r=0$ are exactly the **zero modes** $\mathcal{Q}_-\tilde{Ξ}_{\mathrm{sp},+}=0$, and their infinite degeneracy is the zero-mode degeneracy of the factorised operator. The pair $(\mathcal{Q}_-,\mathcal{Q}_+)$ is the standard supersymmetric pair of quantum physics: $\mathcal{Q}_+\mathcal{Q}_-$ and $\mathcal{Q}_-\mathcal{Q}_+$ are partner Hamiltonians, and the zero modes of one are the states the supersymmetry relates. That this supersymmetry is present, and hidden in the Dirac equation rather than imposed, is the content of the Benítez–Salas-Brito solution listed in the Further Reading. The companion article *Supersymmetric Quantum Physics in the Biquaternion Framework* develops this correspondence; the Dirac oscillator is its exactly solvable relativistic realisation. The two operators here are not the two gradients $\tilde{\nabla},\tilde{\nabla}^{\natural}$ of the free mass pair but their shifted, frame-projected forms; what is common to both is that the product of a first-order operator with its conjugate partner is a second-order operator whose zero modes carry the structure.
 
+### The gap is not closed
+
+**The identity says the spectrum is gapped, and it says it for every frequency.** The right-hand side of the boxed identity is $\vec p^{\,2}+m^{2}\omega^{2}\vec r^{\,2}-\frac{3m^{2}c\,\omega}{k_m}-2m\omega S$, and its lowest eigenvalue is zero, attained on the aligned states with $n_r=0$; that is the zero-point cancellation of the previous paragraph, read as a statement about the operator rather than about a level. Hence $\mathcal{Q}_+\mathcal{Q}_-\ge0$, and since $E^{2}-m^{2}c^{4}=c^{2}\mathcal{Q}_+\mathcal{Q}_-$,
+
+$$
+E^{2}\ge m^{2}c^{4}\quad\text{for every level, at every oscillator frequency} ,
+$$
+
+so the positive branch begins at $mc^{2}$, the negative branch ends at $-mc^{2}$, and no level ever lies strictly inside the gap. The spectrum written above, $E^{2}=m^{2}c^{4}+\frac{4m^{2}c^{3}\omega\,n_r}{k_m}$ on the aligned branch, is the same statement term by term. The oscillator is therefore **Klein-stable**: no strength of confinement, at any frequency, produces a pair, because no level can reach $E=0$ and none can reach the lower edge of the gap from inside.
+
+**Why the stability is a property of the side and not of the strength.** The mass shell of the free pair is one equation, written with its two sides apart,
+
+$$
+\tilde K_{\Phi}\tilde K_{\Phi}^{\natural}=-k_m^{2}
+\qquad\Longleftrightarrow\qquad
+k_{t}^{\prime\,2}=k_{\Phi}^{2}+k_m^{2},
+\qquad
+k_{t}^{\prime}=\frac{k_m\,E}{m\,c^{2}},
+\qquad
+k_{\Phi}=\frac{k_m\,p}{m\,c},
+$$
+
+the temporal coefficient on the left and the spatial part on the right. The oscillator's substitution acts on the spatial part and on nothing else, as the paragraph *The shift of the gradient* states: $\vec p\mapsto\vec p-im\omega\beta\vec r$ is a shift of $\vec\nabla$, and the two opposite shifts $\vec\nabla_{\pm}$ supply the diagonal term $+m^{2}\omega^{2}\vec r^{\,2}$ of the boxed identity, since the raw product of the shifts, $-\omega^{2}m^{2}\vec r^{\,2}$, is flipped by the overall sign. The confining term is therefore an addition to the right-hand side, positive when the oscillator frequency is positive, and it pushes every level away from the gap. An electrostatic potential does the opposite thing in the opposite place: it is the central shift $D=\tilde\nabla-\frac{k_m\,ϙ\,a'_{t}}{m\,c}e_t$, so it moves $k_{t}^{\prime}$ by a real amount and drags the level down until it reaches $-mc^{2}$. That is the Klein step of the companion article, and its bounded form is the well whose lowest level dives at $V_0^{\mathrm{cr}}=mc^{2}[1+\sqrt{1+(n_{\mathrm{w}}\pi/(k_mL))^{2}}\,]$, as computed in *Pair Creation in a Bounded Region in Biquaternionic Form*.
+
+**The three confinements.** A step in the mass is the third case, and it is stable for the oscillator's reason: the mass is the chirality-mixing term, a change of it shifts no frequency, so the transmitted wave is evanescent and there is no threshold; that is the bag-model mechanism of Bardeen, Chanowitz, Drell, Weinstein and Yan, used precisely because it has no Klein threshold. Two of the three confinements are stable and one is not, and the reading is uniform: the confining term that acts off the temporal coefficient cannot create pairs, and the one that acts on it can. The oscillator has been the corpus's model of relativistic confinement, and this reading adds what the model's spectrum already implies: its confinement is of the stable kind, and the exact solvability and the pair stability are two faces of the same substitution.
+
 ## Summary
 
 The Dirac oscillator is the system obtained by the non-minimal substitution $\vec p \to \vec p - im\omega\beta\vec r$ in the Dirac Hamiltonian. The substitution is frame-odd, imaginary and linear in the position; it shifts the odd part of the first-order operator without touching the even (mass) part. A state is an element $\tilde{Ξ}_{\mathrm{sp}}$ of $\mathbb{B}$, the frame action $\beta$ splits it uniquely into $\tilde{Ξ}_{\mathrm{sp},+}$ and $\tilde{Ξ}_{\mathrm{sp},-}$, and the equation is the pair
@@ -368,7 +394,7 @@ $$
 
 with the aligned branch independent of $l$ and hence an infinitely degenerate level at $E = \pm mc^2$. In one dimension the spin–orbit term is absent and the spectrum is $E^2 = m^2c^4 +\frac{2\,m^{2}\,c\,\omega}{k_m} c^2 n$, $n = 0,1,2,\dots$.
 
-In the biquaternion framework the substitution shifts the frame-odd part of the gradient, and in the actions its imaginary coefficient is spent on the action: the added term is $\tilde{Ξ}_{\mathrm{sp}}\mapsto-cm\omega\sum_k\vec e_k\,(Q_k\tilde{Ξ}_{\mathrm{sp}})\,\vec e_y$, a real coefficient times a Hermitian, frame-odd action. The product is central except for the Hermitian remainder $-2m\omega\sum_kL_{\mathrm{orb},k}i\vec e_k$, which in the elements is $-\dfrac{4\omega\,k_m}{c}\sum_k(L_{\mathrm{orb},k}e_t)\tilde S_{\Psi,k}$. The zero-point cancellation is the sum of the commutator $[Q_k,p_k]=\frac{m\,c\,i}{k_m}$ over the three spatial directions, converted to $-\frac{3\,m^{2}\,c\,\omega}{k_m}$ by one factor $i^2=-1$. The zero modes of the shifted operator are the supersymmetric partner structure that the companion article develops. One field never carries the mass: the mass needs the pair, because $\tilde\nabla^2$ is not scalar, and the whole derivation uses the one gradient and its two shifts, with no matrix, no array and no Clifford generator.
+In the biquaternion framework the substitution shifts the frame-odd part of the gradient, and in the actions its imaginary coefficient is spent on the action: the added term is $\tilde{Ξ}_{\mathrm{sp}}\mapsto-cm\omega\sum_k\vec e_k\,(Q_k\tilde{Ξ}_{\mathrm{sp}})\,\vec e_y$, a real coefficient times a Hermitian, frame-odd action. The product is central except for the Hermitian remainder $-2m\omega\sum_kL_{\mathrm{orb},k}i\vec e_k$, which in the elements is $-\dfrac{4\omega\,k_m}{c}\sum_k(L_{\mathrm{orb},k}e_t)\tilde S_{\Psi,k}$. The zero-point cancellation is the sum of the commutator $[Q_k,p_k]=\frac{m\,c\,i}{k_m}$ over the three spatial directions, converted to $-\frac{3\,m^{2}\,c\,\omega}{k_m}$ by one factor $i^2=-1$. The zero modes of the shifted operator are the supersymmetric partner structure that the companion article develops. One field never carries the mass: the mass needs the pair, because $\tilde\nabla^2$ is not scalar, and the whole derivation uses the one gradient and its two shifts, with no matrix, no array and no Clifford generator. The spectrum also settles the question of what this confinement can do to the vacuum: since $\mathcal{Q}_+\mathcal{Q}_-\ge0$, the gap is empty at every frequency and the model cannot create pairs, whereas an electrostatic well can, once its depth passes the threshold of *Pair Creation in a Bounded Region in Biquaternionic Form*. The stability and the exact solvability are two consequences of the one substitution.
 
 ## Summary of Notation
 
