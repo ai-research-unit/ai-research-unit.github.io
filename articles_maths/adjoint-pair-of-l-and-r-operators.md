@@ -26,13 +26,13 @@ Two columns of that table decide the shape of the whole subject. The plain bilin
 
 | operator family | its operator | the adjoint it is named after |
 |---|---|---|
-| **Association** | $L_{\tilde Q_1}R_{\tilde Q_2}$, two parameters free | the **plain bilinear adjoint** |
-| **Signed Inner Conjugation** | $L_{\tilde Q}R_{\tilde Q^{\natural}}$ | the **quaternionic adjoint** |
-| **Hermitian Adjoint** | $L_{\tilde Q}R_{\tilde Q^{\ast}}$, the Hermitian pair | the **Hermitian adjoint** |
-| **Signed Hermitian Adjoint** | $L_{\tilde Q^{\natural}}R_{\tilde Q^{\ast}}$, the signed Hermitian pair | the **Hermitian adjoint**, with the sign put into the operator |
-| the **indefinite Hermitian pair** | $L_{\tilde Q}R_{\bar{\tilde Q}}$ | the **Krein adjoint** |
+| **Plain Bilinear Pair** | $L_{\tilde Q_1}R_{\tilde Q_2}$, two parameters free | the **plain bilinear adjoint** |
+| **Quaternionic Pair** | $L_{\tilde Q}R_{\tilde Q^{\natural}}$ | the **quaternionic adjoint** |
+| **Hermitian Pair** | $L_{\tilde Q}R_{\tilde Q^{\ast}}$ | the **Hermitian adjoint** |
+| **Signed Hermitian Pair** | $L_{\tilde Q^{\natural}}R_{\tilde Q^{\ast}}$ | the **Hermitian adjoint**, with the sign put into the operator |
+| **Krein Pair** | $L_{\tilde Q}R_{\bar{\tilde Q}}$ | the **Krein adjoint** |
 
-The family names are older than the adjoint names and are kept as they stand; the third column says which adjoint each family records. The fourth row is not a fifth adjoint, and the distinction matters. The form is the plain sesquilinear form, the same one as the row above it; only the operator carries the grade involution on its left factor. So there are **four adjoints and five families**, and the word *signed* names the same operation in every row where it appears: the insertion of $\natural$.
+Each family is named after the adjoint whose form it records, so a row here and a row of the table above carry the same word: plain bilinear, quaternionic, Hermitian, Krein. The fourth row is not a fifth adjoint, and the distinction matters. The form is the plain sesquilinear form, the same one as the row above it; only the operator carries the grade involution on its left factor. So there are **four adjoints and five families**, and the word *signed* names the same operation in every row where it appears: the insertion of $\natural$.
 
 The article proves the theorem of §*The Four Adjoints*, works one operator through all four adjoints, gives the self-adjointness criteria of the four, and shows that only the Hermitian family preserves the two sectors $\mathbb{B}_{\Psi}$ and $\mathbb{B}_{\Phi}$ of the algebra. The forms are *The Four Forms and the Four Algebraic Norms over the Biquaternion Algebra*; the four involutions are *The Group of Involutions*; the general transpose of a bilinear form is *Bilinear Forms*, §*Isometries*. No step uses a topology, a distance or a limit.
 
@@ -144,11 +144,11 @@ Read as an operator, each adjoint pairs the parameter with a second element. The
 
 | name of the pair | operator | second factor | the adjoint behind it |
 |---|---|---|---|
-| **Association** | $L_{\tilde Q_6}R_{\tilde Q_3}$, both parameters free | $\tilde Q_3$, independent | the plain bilinear adjoint |
-| **Signed Inner Conjugation** | $L_{\tilde Q_6}R_{\tilde Q_6^{\natural}}$ | $\tilde Q_6^{\natural}$ | the quaternionic adjoint |
-| **Hermitian Adjoint** | $L_{\tilde Q_6}R_{\tilde Q_6^{\ast}}$, the Hermitian pair | $\tilde Q_6^{\ast}$ | the Hermitian adjoint |
-| **Signed Hermitian Adjoint** | $L_{\tilde Q_6^{\natural}}R_{\tilde Q_6^{\ast}}$ | $\tilde Q_6^{\ast}$, with the sign on the left factor | the Hermitian adjoint |
-| **the indefinite Hermitian pair** | $L_{\tilde Q_6}R_{\bar{\tilde Q_6}}$ | $\bar{\tilde Q_6}$ | the Krein adjoint |
+| **Plain Bilinear Pair** | $L_{\tilde Q_6}R_{\tilde Q_3}$, both parameters free | $\tilde Q_3$, independent | the plain bilinear adjoint |
+| **Quaternionic Pair** | $L_{\tilde Q_6}R_{\tilde Q_6^{\natural}}$ | $\tilde Q_6^{\natural}$ | the quaternionic adjoint |
+| **Hermitian Pair** | $L_{\tilde Q_6}R_{\tilde Q_6^{\ast}}$ | $\tilde Q_6^{\ast}$ | the Hermitian adjoint |
+| **Signed Hermitian Pair** | $L_{\tilde Q_6^{\natural}}R_{\tilde Q_6^{\ast}}$ | $\tilde Q_6^{\ast}$, with the sign on the left factor | the Hermitian adjoint |
+| **Krein Pair** | $L_{\tilde Q_6}R_{\bar{\tilde Q_6}}$ | $\bar{\tilde Q_6}$ | the Krein adjoint |
 
 The first row is the only one with two free parameters; the other four are graphs of a conjugation inside the two-sided family. That is the reason the first row is named after the adjoint that exchanges the parameters and the other four after adjoints that tie them.
 
@@ -266,19 +266,19 @@ $$
 
 so for $\tilde X^{\ast}=\pm\tilde X$ the image satisfies the same equation with the same sign. Conversely, suppose the operator maps $\mathbb{B}_{\Psi}$ into itself. For $\tilde X^{\ast}=\tilde X$ the antimultiplicativity gives $(\tilde Q_6\tilde X\tilde Q_3)^{\ast}=\tilde Q_3^{\ast}\tilde X\tilde Q_6^{\ast}$, so the preservation reads $L_{\tilde Q_3^{\ast}}R_{\tilde Q_6^{\ast}}\tilde X=L_{\tilde Q_6}R_{\tilde Q_3}\tilde X$ for every $\tilde X\in\mathbb{B}_{\Psi}$. Those four basis elements are a complex basis and both operators are $\mathbb{C}$-linear, so the two operators are equal. The fibre theorem then gives $\tilde Q_6=\mu\tilde Q_3^{\ast}$ and $\tilde Q_3=\mu^{-1}\tilde Q_6^{\ast}$ for one $\mu\in\mathbb{C}^{\times}$. Applying $\ast$ to the first gives $\tilde Q_6^{\ast}=\bar\mu\tilde Q_3$, and substituting into the second gives $\tilde Q_3=\mu^{-1}\bar\mu\tilde Q_3$, hence $\mu=\bar\mu$; so $\mu$ is real and so is $\lambda=\mu^{-1}$. The preservation of $\mathbb{B}_{\Phi}$ follows from the centrality of $i$: a $\mathbb{C}$-linear map sends $i\tilde X$ to $i$ times the image of $\tilde X$, so $i\,\mathbb{B}_{\Psi}=\mathbb{B}_{\Phi}$ goes into itself.
 
-**Corollary (only the Hermitian pair, of the five).** The second factors of the five pairs are $\tilde Q_3$ free for Association, $\tilde Q_6^{\natural}$ for Signed Inner Conjugation, $\tilde Q_6^{\ast}$ for Hermitian Adjoint, $\tilde Q_6^{\ast}$ again for Signed Hermitian Adjoint, and $\bar{\tilde Q_6}$ for the indefinite Hermitian pair. The criterion of the theorem is met by the **Hermitian pair** with $\lambda=1$, for every parameter. It is met by the other four only where the second factor is parallel to the star of the first: by Signed Inner Conjugation where $\tilde Q_6^{\natural}\parallel\tilde Q_6^{\ast}$, by Signed Hermitian Adjoint where $\tilde Q_6^{\ast}\parallel(\tilde Q_6^{\natural})^{\ast}$, by the indefinite pair where $\bar{\tilde Q_6}\parallel\tilde Q_6^{\ast}$, and by Association only where $\tilde Q_3$ is a real multiple of $\tilde Q_1^{\ast}$, a proper subvariety of the pair. Each of these conditions is proper, so only the Hermitian pair keeps the sectors for every parameter.
+**Corollary (only the Hermitian pair, of the five).** The second factors of the five pairs are $\tilde Q_3$ free for the Plain Bilinear Pair, $\tilde Q_6^{\natural}$ for the Quaternionic Pair, $\tilde Q_6^{\ast}$ for the Hermitian Pair, $\tilde Q_6^{\ast}$ again for the Signed Hermitian Pair, and $\bar{\tilde Q_6}$ for the Krein Pair. The criterion of the theorem is met by the **Hermitian pair** with $\lambda=1$, for every parameter. It is met by the other four only where the second factor is parallel to the star of the first: by the Quaternionic Pair where $\tilde Q_6^{\natural}\parallel\tilde Q_6^{\ast}$, by the Signed Hermitian Pair where $\tilde Q_6^{\ast}\parallel(\tilde Q_6^{\natural})^{\ast}$, by the Krein Pair where $\bar{\tilde Q_6}\parallel\tilde Q_6^{\ast}$, and by the Plain Bilinear Pair only where $\tilde Q_3$ is a real multiple of $\tilde Q_1^{\ast}$, a proper subvariety of the pair. Each of these conditions is proper, so only the Hermitian pair keeps the sectors for every parameter.
 
 **Example (one parameter, three failures, one success).** Take $\tilde Q_6=e_t+2i\vec e_x$, of norm $\langle\tilde Q_6\rangle_{\natural}=-3$, and $\tilde X=i\vec e_y\in\mathbb{B}_{\Psi}$. The four pairs send it to
 
 $$
-\text{Association: }-\tfrac13\bigl(5i\vec e_y-4\vec e_z\bigr),
+\text{Plain Bilinear Pair: }-\tfrac13\bigl(5i\vec e_y-4\vec e_z\bigr),
 \qquad
-\text{Signed Inner Conjugation: }5i\vec e_y-4\vec e_z,
+\text{Quaternionic Pair: }5i\vec e_y-4\vec e_z,
 $$
 $$
-\text{Hermitian Adjoint: }-3i\vec e_y,
+\text{Hermitian Pair: }-3i\vec e_y,
 \qquad
-\text{indefinite Hermitian pair: }5i\vec e_y-4\vec e_z .
+\text{Krein Pair: }5i\vec e_y-4\vec e_z .
 $$
 
 The second and the fourth agree here because for this parameter $\tilde Q_6^{\natural}=e_t-2i\vec e_x=\bar{\tilde Q_6}$. The first, the second and the fourth images carry a real coefficient on $\vec e_z$ and lie in neither sector, since $Y^{\ast}\ne\pm Y$ for them. The third is a multiple of $i\vec e_y$ and is Hermitian, as the theorem says.
@@ -297,7 +297,7 @@ $$
 \mathrm{Ad}^{\alpha}_{\tilde Q_6}(\tilde Q)=\tilde Q_6^{\natural}\tilde Q\tilde Q_6^{-1},
 $$
 
-the **unsigned inner conjugation** and the **signed inner conjugation**. The second is the first with $\alpha=\natural$ inserted on the left factor, and it is the operator of *The Clifford, Pin and Spin Groups with Signed Inner Conjugation*, where $\mathrm{Ad}^{\alpha}_{U}(v)=\alpha(U)vU^{-1}$.
+the **unsigned inner conjugation** and the **signed inner conjugation**. The second is the first with $\alpha=\natural$ inserted on the left factor, and it is the operator of *The Clifford, Pin and Spin Groups with Signed Inner Conjugation*, where $\mathrm{Ad}^{\alpha}_{U}(v)=\alpha(U)vU^{-1}$. The family it generates is the Quaternionic Pair of the table above, and the earlier name of that family, Signed Inner Conjugation, is the one used in the Clifford articles.
 
 **Proposition (the difference is twice the vector part).** For an invertible $\tilde Q_6$,
 
@@ -369,7 +369,7 @@ verified on one hundred invertible elements. On the shell $\langle\tilde Q_6\ran
 
 The biquaternion algebra has four forms and four adjoints, and the four adjoints have four names: the **plain bilinear adjoint** $\approx$, the **quaternionic adjoint** $\natural$, the **Hermitian adjoint** $\ast$ and the **Krein adjoint** $\natural\ast$, in the order of the plain bilinear, the quaternionic bilinear, the plain sesquilinear and the quaternionic sesquilinear form. The plain bilinear adjoint and the Krein adjoint exchange the two sides; the signed and the Hermitian adjoints keep them. The plain bilinear adjoint and the quaternionic adjoint carry no bar; the Hermitian and the Krein adjoints carry one.
 
-Five operator families are named after these four adjoints: **Association** after the plain bilinear adjoint, **Signed Inner Conjugation** after the quaternionic adjoint, **Hermitian Adjoint** and **Signed Hermitian Adjoint** after the Hermitian adjoint, the second with the sign inserted into the operator, and the **indefinite Hermitian pair** after the Krein adjoint. The word *signed* names one operation in all of them, the insertion of $\natural$.
+Five operator families are named after these four adjoints and carry their names: the **Plain Bilinear Pair** after the plain bilinear adjoint, the **Quaternionic Pair** after the quaternionic adjoint, the **Hermitian Pair** and the **Signed Hermitian Pair** after the Hermitian adjoint, the second with the sign inserted into the operator, and the **Krein Pair** after the Krein adjoint. The word *signed* names one operation in all of them, the insertion of $\natural$.
 
 The plain bilinear adjoint has a calculus of its own: it is an involution, it reverses composition, it reverses the factors of the Conway basis, its matrix is $\mathrm{E}M^{\mathsf T}\mathrm{E}$, and combined with the coefficient conjugation it relates to the Hermitian adjoint by $\overline{F}^{\approx}=\mathrm{E}F^{\ast}\mathrm{E}$, which collapses to $F^{\ast}=F^{-1}$ on the vector-preserving unitaries.
 
