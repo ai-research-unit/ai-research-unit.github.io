@@ -39,7 +39,7 @@ $$
 \qquad \lambda=m^2 .
 $$
 
-On the doubled carrier $\mathbb{B}\oplus\mathbb{B}$ the pair operator $\mathbb{D}$ satisfies $\mathbb{D}^2=\Box I$, and the mass is its shift, $(\mathbb{D}-m)(\mathbb{D}+m)=(\Box-m^2)I$.
+On the doubled carrier $\mathbb{B}\oplus\mathbb{B}$ each line of the pair, composed with its partner, is $\Box I$, and the mass is the coupling of the two lines, so that eliminating one part returns $(\Box-m^2)$ on the other.
 
 **The two matrix sizes.** The biquaternion algebra is $\mathbb{B}\cong M_2(\mathbb{C})$ (*The Polarized Module of the Biquaternion Algebra*). A field of this article is an element of that algebra, four complex dimensions. The gradient takes values in the algebra, and the d'Alembertian is its scalar norm. The operator algebra $\mathrm{End}_{\mathbb{C}}(\mathbb{B})\cong M_4(\mathbb{C})$ is the algebra of maps of that field; it is not a second representation of $\mathbb{B}$, and this article uses no matrix carrier. A first-order root with matrix coefficients would be a map outside the algebra and outside the one-sided calculus.
 
@@ -181,21 +181,15 @@ The identity is exact, and it is the whole factorisation of $\Box$ that the alge
 
 ### The Pair Operator
 
-The two equations of the massive case are one operator on $\mathbb{B}\oplus\mathbb{B}$. Write $\tilde{Ξ}_{\mathrm{sp}}=(\tilde{Ξ}_{\mathrm{sp},L},\tilde{Ξ}_{\mathrm{sp},R})$ and
+The two equations of the massive case are two lines on $\mathbb{B}\oplus\mathbb{B}$, and they are never gathered into one letter. Write $\tilde{Ξ}_{\mathrm{sp}}=(\tilde{Ξ}_{\mathrm{sp},L},\tilde{Ξ}_{\mathrm{sp},R})$; then
 
 $$
-\mathbb{D}\tilde{Ξ}_{\mathrm{sp}}=\bigl(\tilde\nabla\tilde{Ξ}_{\mathrm{sp},R},\ \tilde\nabla^{\natural}\tilde{Ξ}_{\mathrm{sp},L}\bigr).
-$$
-
-Then
-
-$$
-\mathbb{D}^2=\Box I,
+\tilde\nabla\tilde{Ξ}_{\mathrm{sp},R}=m\tilde{Ξ}_{\mathrm{sp},L},
 \qquad
-(\mathbb{D}-m)(\mathbb{D}+m)=\bigl(\Box-m^2\bigr)I .
+\tilde\nabla^{\natural}\tilde{Ξ}_{\mathrm{sp},L}=m\tilde{Ξ}_{\mathrm{sp},R},
 $$
 
-The pair is $(\mathbb{D}-m)\tilde{Ξ}_{\mathrm{sp}}=0$. The operator $\mathbb{D}$ is the pair operator on $\mathbb{B}\oplus\mathbb{B}$ of the conventions; it is a map of the doubled carrier and not an element of $\mathbb{B}$.
+and each line composed with the conjugate of the other is $\Box I$, so eliminating one part returns $\Box\tilde{Ξ}_{\mathrm{sp},R}=m^2\tilde{Ξ}_{\mathrm{sp},R}$ on the other. Each line is a map of the doubled carrier and not an element of $\mathbb{B}$.
 
 ### The Chiral Pair
 
@@ -225,19 +219,22 @@ where $\omega=-\vec e_z$ is the pseudoscalar, $\omega^2=-e_t$. The right action 
 
 ### The Determinant
 
-On a plane wave each derivative is replaced by its symbol, and $\mathbb{D}$ becomes the block matrix
+On a plane wave each derivative is replaced by its symbol, and the two lines read on the pair
 
 $$
-\mathbb{D}(\tilde K)=
-\begin{pmatrix}0&\tilde K\\ \tilde K^{\natural}&0\end{pmatrix},
-\qquad
-\mathbb{D}(\tilde K)(\tilde{Ξ}_{\mathrm{sp},L},\tilde{Ξ}_{\mathrm{sp},R})=\bigl(\tilde K\tilde{Ξ}_{\mathrm{sp},R},\ \tilde K^{\natural}\tilde{Ξ}_{\mathrm{sp},L}\bigr),
+(\tilde{Ξ}_{\mathrm{sp},L},\tilde{Ξ}_{\mathrm{sp},R})\longmapsto\bigl(\tilde K\tilde{Ξ}_{\mathrm{sp},R},\ \tilde K^{\natural}\tilde{Ξ}_{\mathrm{sp},L}\bigr),
 $$
 
-whose off-diagonal entries are the left multiplications $\tilde{Ξ}\mapsto\tilde K\tilde{Ξ}$ and $\tilde{Ξ}\mapsto\tilde K^{\natural}\tilde{Ξ}$. Every entry is a left multiplication by an element, and the matrix is a map of $\mathbb{B}\oplus\mathbb{B}$. Its determinant is
+with the two left multiplications $\tilde{Ξ}\mapsto\tilde K\tilde{Ξ}$ and $\tilde{Ξ}\mapsto\tilde K^{\natural}\tilde{Ξ}$. Written as an array on $\mathbb{B}\oplus\mathbb{B}$, the pair with the mass subtracted is
 
 $$
-\det\bigl(\mathbb{D}(\tilde K)-m\bigr)
+\begin{pmatrix}-m&\tilde K\\ \tilde K^{\natural}&-m\end{pmatrix},
+$$
+
+whose off-diagonal entries are those two left multiplications. Its determinant is
+
+$$
+\det\begin{pmatrix}-m&\tilde K\\ \tilde K^{\natural}&-m\end{pmatrix}
 =\bigl(q_0^2-\lvert\vec q\rvert^2-m^2\bigr)^4 ,
 $$
 
@@ -302,8 +299,8 @@ The identities were recomputed before they were written. The algebra multiplicat
 | $\det(\tilde{Ξ}\mapsto\tilde K\tilde{Ξ})-(q_0^2-\lvert\vec q\rvert^2)^2$ on $100$ random covectors | $1.2\times10^{-13}$ |
 | no element anticommutes with the three spatial units | kernel dimension $0$ |
 | the same for $100$ generic quaternionic triples | kernel dimension $0$ |
-| $\mathbb{D}(\tilde K)^2-\Box I$ on $100$ random covectors | $3.6\times10^{-15}$ |
-| $\det(\mathbb{D}(\tilde K)-m)-(q_0^2-\lvert\vec q\rvert^2-m^2)^4$ on $100$ random covectors | $1.8\times10^{-10}$ |
+| the square of the array $\begin{pmatrix}0&\tilde K\\ \tilde K^{\natural}&0\end{pmatrix}$ minus $\Box I$, on $100$ random covectors | $3.6\times10^{-15}$ |
+| $\det\begin{pmatrix}-m&\tilde K\\ \tilde K^{\natural}&-m\end{pmatrix}-(q_0^2-\lvert\vec q\rvert^2-m^2)^4$ on $100$ random covectors | $1.8\times10^{-10}$ |
 | the chirality $\tilde{Ξ}\mapsto-i\tilde{Ξ}\vec e_z$ on the null kernel | eigenvalues $+1$ and $-1$, one each |
 
 The numerical checks are checks of polynomial identities at random points. The proof is the algebra of the preceding sections; the numbers guard against a sign or factor error in the transcription.
@@ -314,9 +311,9 @@ The d'Alembertian $\Box=\partial^2/\partial Q_t^2+\Delta_Q=-\partial^2/\partial(
 
 The first-order operator of the algebra is the gradient. Its square is not scalar, because $e_t$ is the identity and commutes with the three spatial units, so the mixed derivatives add. Its product with the conjugate is $\Box$, and that product is the factorisation of the d'Alembertian that the algebra supplies. The free equation is first order in one field, $\tilde\nabla\tilde{Ξ}_{\mathrm{sp}}=0$; at a nonzero null covector it selects two of the four complex dimensions of the second-order solution space, one state of each chirality.
 
-The mass is a central scalar, and a central scalar commutes with every derivative. A scalar zero-order term therefore changes only the constant term of a square; it cannot remove the vector remainder of $\tilde\nabla^2$, so no scalar shift makes the gradient square to $\Box$. The mass acts instead as the coupling of the two parts, and the pair operator $\mathbb{D}$ carries it, with $(\mathbb{D}-m)(\mathbb{D}+m)=(\Box-m^2)I$. Eliminating one member returns $\Box\tilde{Ξ}_{\mathrm{sp},R}=m^2\tilde{Ξ}_{\mathrm{sp},R}$, so the pair and the second-order equation on one part are equivalent.
+The mass is a central scalar, and a central scalar commutes with every derivative. A scalar zero-order term therefore changes only the constant term of a square; it cannot remove the vector remainder of $\tilde\nabla^2$, so no scalar shift makes the gradient square to $\Box$. The mass acts instead as the coupling of the two parts, and the pair carries it: each line composed with its partner is $\Box I$, so eliminating one member returns $\Box\tilde{Ξ}_{\mathrm{sp},R}=m^2\tilde{Ξ}_{\mathrm{sp},R}$, and the pair and the second-order equation on one part are equivalent.
 
-The determinant of the left action of the symbol is the square of the quaternionic norm, and the determinant of the pair operator is the fourth power of the symbol of $\Box-m^2$. A determinant identity is not a square root. The results are a classification of form, and no mass, coupling or dynamics is predicted.
+The determinant of the left action of the symbol is the square of the quaternionic norm, and the determinant of the pair written as an array is the fourth power of the symbol of $\Box-m^2$. A determinant identity is not a square root. The results are a classification of form, and no mass, coupling or dynamics is predicted.
 
 ## Summary of Notation
 
@@ -336,7 +333,7 @@ The determinant of the left action of the symbol is the square of the quaternion
 | $\lambda$, $m$ | the shift and the mass, $\lambda=m^2$ |
 | $\tilde{Ξ}_{\mathrm{sp},L},\tilde{Ξ}_{\mathrm{sp},R}$ | the two slots of the pair, each an element of $\mathbb{B}$ |
 | $I$ | the identity map of the carrier, an operator and not an element |
-| $\mathbb{D}$ | the pair operator on $\mathbb{B}\oplus\mathbb{B}$, $\mathbb{D}(\tilde{Ξ}_{\mathrm{sp},L},\tilde{Ξ}_{\mathrm{sp},R})=(\tilde\nabla\tilde{Ξ}_{\mathrm{sp},R},\tilde\nabla^{\natural}\tilde{Ξ}_{\mathrm{sp},L})$, with $\mathbb{D}^2=\Box I$ |
+| $\tilde\nabla\tilde{Ξ}_{\mathrm{sp},R}=m\tilde{Ξ}_{\mathrm{sp},L}$, $\tilde\nabla^{\natural}\tilde{Ξ}_{\mathrm{sp},L}=m\tilde{Ξ}_{\mathrm{sp},R}$ | the pair, as two lines on $\mathbb{B}\oplus\mathbb{B}$; each line composed with its partner is $\Box I$ |
 | $\tilde{Ξ}\mapsto-i\tilde{Ξ}\vec e_z$ | the chirality, a single right multiplication; its eigenspaces are $\tilde{Ξ}\vec e_z=\pm i\tilde{Ξ}$ |
 
 ## Further Reading

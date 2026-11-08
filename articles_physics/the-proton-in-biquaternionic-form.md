@@ -38,35 +38,29 @@ In this section we record what is structural about placing it there and what is 
 
 ### The One-Sided and the Two-Sided Equation
 
-The article carries two Dirac equations, and they must not be read as one. They share the operator and the mass coefficient; they differ in how many times the operator is written.
+The article writes the Dirac equation once, as the pair of two first-order equations, and reads it in two ways: on a pair of elements and on one element. The gradients and the mass coefficient are the same in the two readings; they differ in where the two values are carried.
 
 **The one-sided equation** is the pair displayed above, and it is the corpus's definition. Every derivative acts by left multiplication, and the mass is the off-diagonal pairing of the two values rather than a term inside either. The two values are read from the chirality basis operator and from nothing else; the label is not an element of the algebra, because the element that suggests itself, $i\vec e_z$, has square $+e_t$ and the split it gives is the index of the decomposition and not the chirality (*Special Element Conventions*, §*The Chirality Convention*, the paragraph *What the word does not name*).
 
-**The two-sided equation** writes the same pair once, on the same element. The pair operator of *Operator and Calculus Conventions*, §*The Pair Operator and Its Symbol*, carries the L value by $\tilde{\nabla}^{\natural}$ and the R value by $\tilde{\nabla}$,
+**The reading on one element** writes the same pair on the same element. The gradient $\tilde{\nabla}^{\natural}$ carries the L value to the R value and $\tilde{\nabla}$ carries the R value to the L value,
 
 $$
-\mathbb{D}\tilde{Ξ}_{\mathrm{sp}}=k_{m_p}\,\tilde{Ξ}_{\mathrm{sp}},
+\tilde{\nabla}\tilde{Ξ}_{\mathrm{sp},R}=k_{m_p}\,\tilde{Ξ}_{\mathrm{sp},L},
 \qquad
-\mathbb{D}^2=\Box
+\tilde{\nabla}^{\natural}\tilde{Ξ}_{\mathrm{sp},L}=k_{m_p}\,\tilde{Ξ}_{\mathrm{sp},R},
 $$
 
-on each value, so the pair reads
+and composing the two lines gives $(\Box-k_{m_p}^{2})\tilde{Ξ}_{\mathrm{sp},L}=0$ and $(\Box-k_{m_p}^{2})\tilde{Ξ}_{\mathrm{sp},R}=0$. Here $1/k_{m_p}=\hbar/(m_pc)$ is the mass length.
 
-$$
-\left(\mathbb{D}-k_{m_p}\right)\tilde{Ξ}_{\mathrm{sp}}=0 .
-$$
+The two lines act on the element and contain no matrix generator. What the reading on one element adds is the charge and the bilinears, which are read on the element. The algebra carries the mass term and the mass shell, and the two readings are related by a change of carrier, not by a change of physics.
 
-Here $1/k_{m_p}=\hbar/(m_pc)$ is the mass length.
-
-The operator is a single object acting on the element: it is the pair written once, and it contains no matrix generator. What the one-operator reading adds is the charge and the bilinears, which are read on the element. The algebra carries the mass term and the mass shell, and the two readings are related by a change of the operator, not by a change of physics.
-
-| | One-sided equation | Two-sided equation |
+| | On a pair of elements | On one element |
 |---|---|---|
-| Equation | $\tilde{\nabla}\tilde{Ξ}_{\mathrm{sp},R}=k_{m_p}\tilde{Ξ}_{\mathrm{sp},L}$, $\tilde{\nabla}^{\natural}\tilde{Ξ}_{\mathrm{sp},L}=k_{m_p}\tilde{Ξ}_{\mathrm{sp},R}$ | $(\mathbb{D}-k_{m_p})\tilde{Ξ}_{\mathrm{sp}}=0$ |
-| Field | $\tilde{Ξ}_{\mathrm{sp}}=\tilde{Ξ}_{\mathrm{sp},L}+\tilde{Ξ}_{\mathrm{sp},R}\in\mathbb{B}$, two values | the same element, the same two values |
-| Mass | the off-diagonal pairing of the two values | the same coefficient, off-diagonal in the two values |
-| Operator | left multiplication by $\tilde{\nabla}$ and $\tilde{\nabla}^{\natural}$ | one operator, $\mathbb{D}^2=\Box$ on each value |
-| Chirality | the value carried by each part | the same values |
+| Equation | $\tilde{\nabla}\tilde{Ξ}_{\mathrm{sp},R}=k_{m_p}\tilde{Ξ}_{\mathrm{sp},L}$, $\tilde{\nabla}^{\natural}\tilde{Ξ}_{\mathrm{sp},L}=k_{m_p}\tilde{Ξ}_{\mathrm{sp},R}$ | the same two lines |
+| Field | $(\tilde{Ξ}_{\mathrm{sp},L},\tilde{Ξ}_{\mathrm{sp},R})\in\mathbb{B}\oplus\mathbb{B}$, two elements | $\tilde{Ξ}_{\mathrm{sp}}=\tilde{Ξ}_{\mathrm{sp},L}+\tilde{Ξ}_{\mathrm{sp},R}\in\mathbb{B}$, two values |
+| Mass | the off-diagonal coupling of the two entries | the same coefficient, off-diagonal in the two values |
+| Operator | left multiplication by $\tilde{\nabla}$ and $\tilde{\nabla}^{\natural}$, one on each entry | the same two, $\Box$ on each value after the two lines are composed |
+| Chirality | the entry | the value carried by each part |
 | Use | the definition, the mass term, the mass shell | the charge, the charge value, the bilinears |
 
 **The spin-$\tfrac12$ content follows from the algebra and not from the proton.** The elements of norm one, $\tilde U\tilde U^{\natural}=e_t$, form $\mathrm{SL}(2,\mathbb{C})$, the double cover of the proper orthochronous Lorentz group; the left multiplications act on each value with weights $\pm\tfrac12$, and a rotation by $2\pi$ is the element $-e_t$. Left multiplication by $-e_t$ carries the field to $-\tilde{Ξ}_{\mathrm{sp}}$, while the conjugation action of the same element on the four-vectors of $\mathbb{B}_{\Phi}$, $\tilde V_{\Phi}\mapsto\tilde U\tilde V_{\Phi}\tilde U^{-1}$, returns $+\tilde V_{\Phi}$. The half-integral, double-valued character of the proton's spin is therefore a consequence of where the field lives, and *not* of anything proton-specific. What the framework does **not** derive is why this composite object has spin $\tfrac12$: that is angular-momentum addition among constituents in standard physics, and the framework has no constituent structure to add. The correct statement is the conditional one — *if* the proton is modelled as an element of $\mathbb{B}$, its spin is $\tfrac12$.
@@ -81,7 +75,7 @@ $$
 
 in the corpus's four-momentum convention $\tilde{P}_{\Phi}=iE/c\,e_t+\vec p$, where the product is $-E^2/c^2+|\vec p|^2$ and the relation is $E^2=|\vec p|^2c^2+m_p^2c^4$: the *form* of the mass shell is structural, the number in it is an import.
 
-**The free equation contains no charge.** Neither the one-sided pair nor the two-sided equation $(\mathbb{D}-k_{m_p})\tilde{Ξ}_{\mathrm{sp}}=0$ contains a coupling. The mass length $1/k_{m_p}$ is the only parameter, and it is central.
+**The free equation contains no charge.** Neither the one-sided pair nor its reading on one element contains a coupling. The mass length $1/k_{m_p}$ is the only parameter, and it is central.
 
 Charge enters only when the field is coupled to a four-potential, through minimal substitution. Two immediate consequences follow and they are the theme of the next section. First, the proton and the neutron satisfy the same free equation with the same operator; whatever distinguishes them is an inserted coupling and not a structure of the equation. Second, the framework's ability to state the proton's charge is the ability of its charge element to *carry* the value $+1$, not an ability to produce it.
 
@@ -327,7 +321,7 @@ With the summed index raised the weights become signs, $\gamma^\mu=-\varepsilon_
 
 ## Summary
 
-The proton can be placed in the biquaternion framework as a massive spin-$\tfrac12$ Dirac field, written in the algebra as the one-sided pair $\tilde{\nabla}\tilde{Ξ}_{\mathrm{sp},R}=k_{m_p}\tilde{Ξ}_{\mathrm{sp},L}$, $\tilde{\nabla}^{\natural}\tilde{Ξ}_{\mathrm{sp},L}=k_{m_p}\tilde{Ξ}_{\mathrm{sp},R}$ and as the single equation $(\mathbb{D}-k_{m_p})\tilde{Ξ}_{\mathrm{sp}}=0$ with $\mathbb{D}^2=\Box$. The framework makes three structural statements about it. The spin-$\tfrac12$ content follows from the algebra's single class of simple carrier, on which the left multiplications act with weights $\pm\tfrac12$; the mass term is the linear pair of the two values of the field; and, being massive, the proton is forced by the mass selection rule $ϙ_L=ϙ_R$ to be vector-like, so the general charge element, which multiplies the L value by $ϙ_L$ and the R value by $ϙ_R$, collapses to the central element,
+The proton can be placed in the biquaternion framework as a massive spin-$\tfrac12$ Dirac field, written in the algebra as the one-sided pair $\tilde{\nabla}\tilde{Ξ}_{\mathrm{sp},R}=k_{m_p}\tilde{Ξ}_{\mathrm{sp},L}$, $\tilde{\nabla}^{\natural}\tilde{Ξ}_{\mathrm{sp},L}=k_{m_p}\tilde{Ξ}_{\mathrm{sp},R}$ and as the same pair on one element, where composing the two lines returns $\Box$ on each value. The framework makes three structural statements about it. The spin-$\tfrac12$ content follows from the algebra's single class of simple carrier, on which the left multiplications act with weights $\pm\tfrac12$; the mass term is the linear pair of the two values of the field; and, being massive, the proton is forced by the mass selection rule $ϙ_L=ϙ_R$ to be vector-like, so the general charge element, which multiplies the L value by $ϙ_L$ and the R value by $ϙ_R$, collapses to the central element,
 
 $$
 \boxed{\;Ϙ=ϙ_p\,e_t\;},
@@ -361,7 +355,7 @@ What the framework does not supply is everything that makes the proton a proton.
 | $Ϙ=ϙ\,e_t$, $ϙ_p=+1$ | Vector-like charge element; the proton's value (inserted, not derived) |
 | $m_p$ | Proton mass (a parameter) |
 | $\tilde{P}_{\Phi}=iE/c\,e_t+\vec p$ | Four-momentum; the mass shell is $\tilde{P}_{\Phi}\tilde{P}_{\Phi}^{\natural}=-m_p^2c^2$, that is $E^2=\lvert\vec p\rvert^2c^2+m_p^2c^4$ |
-| $\mathbb{D}$, $\mathbb{D}^2=\Box$ | The pair operator of the two-sided equation $(\mathbb{D}-k_{m_p})\tilde{Ξ}_{\mathrm{sp}}=0$; it carries the L value by $\tilde\nabla^{\natural}$ and the R value by $\tilde\nabla$ |
+| $\tilde\nabla$, $\tilde\nabla^{\natural}$ | The two gradients of the pair; $\tilde\nabla^{\natural}$ carries the L value to the R and $\tilde\nabla$ the R to the L, and each line composed with the other returns $\Box$ |
 | $\Gamma=-iR_{\vec e_z}$ | The chirality basis operator, the basis operator that reads the two values; the legacy section writes it $\gamma_5$ |
 | $\tilde J_{\Phi}=i[\tilde{Ξ}_{\mathrm{sp}}^*(\tilde\nabla\tilde{Ξ}_{\mathrm{sp}})-(\tilde\nabla\tilde{Ξ}_{\mathrm{sp}}^*)\tilde{Ξ}_{\mathrm{sp}}]$ | The sesquilinear current of the field, an element of $\mathbb{B}_{\Phi}$ (*Product and Form Conventions*) |
 | $T_a=\tfrac12 e_a$ | Generators of $\mathfrak{su}(2)=\mathrm{span}_\mathbb{R}\{\vec e_x,\vec e_y,\vec e_z\}\subset\mathbb{B}_{\Phi}$; $T_a^2=-\tfrac14e_t$, values $\pm\tfrac i2$ |
@@ -384,7 +378,7 @@ What the framework does not supply is everything that makes the proton a proton.
 - [Angular Momentum and Spin in Biquaternionic Form](angular-momentum-and-spin-in-biquaternionic-form.html) — the spin operators $\tilde{S}_{\Psi,\mu}=\frac{m\,c}{2\,k_m} i\vec e_\mu$ and the state structure used implicitly here.
 - [The Neutrino and Majorana Fermions in Biquaternionic Form](the-neutrino-and-majorana-fermions-in-biquaternionic-form.html) — the real structure and the Majorana-versus-Dirac interpretation that bears on charge conservation.
 - [The Material Sector: Four-Vectors, Interval and Lorentz Action](the-material-sector-four-vectors-interval-and-lorentz-action.html) and [The Informational Sector: States, Observables and Probability](the-informational-sector-states-observables-and-probability.html) — the two sectors, their bases and the normalised Hermitian form, with its trace reading, inherited unchanged.
-- [Operator and Calculus Conventions](operator-and-calculus-conventions.html) — the pair operator $\mathbb{D}$, the square $\mathbb{D}^2=\Box$, and the one-operator reading of the massive equation, taken over unchanged.
+- [Operator and Calculus Conventions](operator-and-calculus-conventions.html) — the two first-order equations, the square on each line, and the reading of the massive equation on one element, taken over unchanged.
 - [Introduction to the Biquaternion Universe](introduction-to-the-biquaternion-universe.html) — the algebra, the conjugations and the sector split in which the whole construction is set.
 - C. Lanczos, "Die tensoranalytischen Beziehungen der Diracschen Gleichung," *Zeitschrift für Physik* **57** (1929) 447–473, 474–483, 484–493 (arXiv:physics/0508002, physics/0508012, physics/0508013), for the coupled biquaternion system whose doubling is the isospin of the section *The Isospin Partner, and Why It Is Not in This Equation*.
 - F. Gürsey, "Applications of Quaternions to Field Equations," PhD thesis, University of London, 1950, and "Relation of charge independence and baryon conservation to Pauli's transformation," *Nuovo Cimento* **7** (1958) 411–415, for the proton and neutron as the two superpositions of Lanczos's doubled system.

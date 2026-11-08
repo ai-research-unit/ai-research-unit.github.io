@@ -92,17 +92,11 @@ $$
 \qquad
 \tilde\nabla^{\natural}\tilde{Ξ}_{\mathrm{sp},L}=k_m\tilde{Ξ}_{\mathrm{sp},R},
 $$
-with the gradient acting on the right-chirality part and its conjugate on the left-chirality part, and the mass coupling the two. The pair is one operator, the pair operator of *Operator and Calculus Conventions*,
-$$
-\mathbb{D}(\tilde{Ξ}_{\mathrm{sp},L},\tilde{Ξ}_{\mathrm{sp},R})=\bigl(\tilde\nabla\tilde{Ξ}_{\mathrm{sp},R},\ \tilde\nabla^{\natural}\tilde{Ξ}_{\mathrm{sp},L}\bigr),
-\qquad
-\mathbb{D}^2=\Box e_t,
-$$
-and the massive equation is $(\mathbb{D}-k_m)\tilde{Ξ}_{\mathrm{sp}}=0$, whose two components are the pair. The two-sided form, from the two-sided operator theory of *The Feynman Propagator in Biquaternionic Form*, is
+with the gradient acting on the right-chirality part and its conjugate on the left-chirality part, and the mass coupling the two. The pair is two lines and no third object, and each line composed with the conjugate of the other is $\Box e_t$; the massive equation is the pair itself, one line per part. The two-sided form, from the two-sided operator theory of *The Feynman Propagator in Biquaternionic Form*, is
 $$
 \mathcal{N}\tilde{Ξ}_{\mathrm{sp}}=\Bigl(-\tilde\nabla^{\natural}-k_mi\,\overline{\,\cdot}\,\vec e_z\Bigr)\tilde{Ξ}_{\mathrm{sp}}=0,
 $$
-with the mass acting on the right through conjugation. The three displays describe one physics: the first is the chirality form, the second the pair operator written once, and the third the two-sided form. The spectral triple's candidate operator is $\mathcal{D}=i\tilde\nabla+D_F$: the gradient in the same chirality basis, with the chirality-odd mass added. Here $k_m=mc/\hbar$ is the mass wave number, the inverse of the mass length.
+with the mass acting on the right through conjugation. The three displays describe one physics: the first is the chirality form, the second the two lines written once each, and the third the two-sided form. The spectral triple's candidate operator is $\mathcal{D}=i\tilde\nabla+D_F$: the gradient in the same chirality basis, with the chirality-odd mass added. Here $k_m=mc/\hbar$ is the mass wave number, the inverse of the mass length.
 
 **The chirality.** The chirality is the right action by the element $-i\vec e_z$,
 $$

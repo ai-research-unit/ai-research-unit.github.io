@@ -741,7 +741,7 @@ The classification is a map, not a derivation. It adds no physics, and it leaves
 | $\Lambda$ | the Grassmann algebra of odd labels |
 | $\varkappa_i$ | a Grassmann label, $\varkappa_i^2=0$ |
 | $Q$, $Q^\dagger$ | the supersymmetric supercharge pair |
-| $\mathcal{D}=Q+Q^\dagger$ | the Dirac operator, the Hermitian sum of the supercharge and its adjoint; written $\mathbb{D}$ in the companion articles |
+| $\mathcal{D}=Q+Q^\dagger$ | the Dirac operator, the Hermitian sum of the supercharge and its adjoint |
 | $H=\{Q,Q^\dagger\}$ | the supersymmetric Hamiltonian |
 | $\mathrm{Ind}=\mathrm{Tr}(-1)^F$ | the Witten index |
 | $\Gamma=-iR_{\vec e_z}$ | the chirality basis operator of the reference frame |

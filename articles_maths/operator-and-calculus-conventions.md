@@ -459,43 +459,57 @@ so the Krein norm of the gradient **coincides with the plain bilinear norm**. It
 
 **The rule is one rule on both slices.** A contraction never raises an index and never lowers one, on $\mathbb{B}_{\Phi}$ or on $\mathbb{B}_{\Psi}$, because the metric is the identity on both. What changes between the slices is only the coefficient the contraction carries: on $\mathbb{B}_{\Phi}$ the fourth-coordinate component is multiplied by $-i$ and the three space components by $1$, while on $\mathbb{B}_{\Psi}$ the fourth-coordinate component is multiplied by $1$ and the three space components by $-i$. A reader who checks a component formula on either slice checks those four numbers and nothing else, and the check is complete.
 
-## The Pair Operator and Its Symbol
+## The Two First-Order Equations and Their Symbol
 
-**The pair.** The two first-order equations of the chiral pair, $\tilde\nabla\Psi_R=m\,\Psi_L$ and $\tilde\nabla^{\natural}\Psi_L=m\,\Psi_R$, are one operator on $\mathbb{B}\oplus\mathbb{B}$. Write $\Psi=(\Psi_L,\Psi_R)$; the pair operator is
+**The pair operator is not allowed.** The two chiral equations are two equations, and the series writes two equations. No letter gathers them into one object on $\mathbb{B}\oplus\mathbb{B}$: no $\mathbb{D}$, no two-by-two array and no subscripted glyph. The gathered letter hides the four statements that carry the algebra. Its adjoint is a single sign, so it cannot hold a derivative term that is anti-Hermitian and a mass term that is Hermitian, and $\mathbb{D}^{\dagger}=-\mathbb{D}$ covers the massless operator only. Its metric is chosen silently, diagonal on the two slots and never written. Its signature is invisible, because the square reports one scalar for the two members. And its carrier is ambiguous, eight complex dimensions or four, with no mark to say which. The two equations state all four, one after the other.
+
+**The two equations.** The dynamics of a field of mass $m$ is
 
 $$
-\mathbb{D}\Psi=\bigl(\tilde\nabla\Psi_R,\ \tilde\nabla^{\natural}\Psi_L\bigr),
+\tilde\nabla\Psi_R=m\,\Psi_L,
 \qquad
-\mathbb{D}^2=\Box I ,
+\tilde\nabla^{\natural}\Psi_L=m\,\Psi_R,
 $$
 
-and the massive equation is $(\mathbb{D}-m)\Psi=0$, with massless limit $\mathbb{D}\Psi=0$. The operator is the pair written once: it carries no matrix generator, no Clifford index and no chart, and its only content is which gradient acts on which part. The mass is the off-diagonal coupling of the two parts and is the identity on $\mathbb{B}$ in each place it acts.
+and the massless limit is the same two lines at $m=0$. Every coordinate form of a field equation in the corpus is a **coordinate form** of these two and not a second dynamics.
 
-**Neither gradient squares to the d'Alembertian, and their composition does.** Written as a product of elements, $\tilde\nabla^2$ is not $\Box$: $e_t$ commutes with the three spatial units, so the mixed derivatives survive and the square is not scalar. Only the composition with the conjugate is scalar, $\tilde\nabla^{\natural}\tilde\nabla=\tilde\nabla\tilde\nabla^{\natural}=\Box$, and this is why the pair is the least object that carries a first-order massive equation: one gradient on one field is first order and cannot equal a second-order operator, so no one-field first-order massive equation exists in this algebra. The free equation stays first order on one field, and the mass is what needs the pair.
+**The mass is the coupling.** Each line multiplies one chiral part and returns a multiple of the other. $m$ is real and central, it commutes with both gradients, and it is the only term of either line that names the other part.
 
-**Written on one element.** Where the field is carried on one element, the same operator is written with its two sides in position,
+**Neither gradient squares to the d'Alembertian, and their composition does.** Written as a product of elements, $\tilde\nabla^{2}$ is not $\Box$: $e_t$ commutes with the three spatial units, so the mixed derivatives survive and the square is not scalar. Only the composition with the conjugate is scalar, $\tilde\nabla^{\natural}\tilde\nabla=\tilde\nabla\tilde\nabla^{\natural}=\Box$, and this is why the massive dynamics needs two lines and not one: one gradient on one field is first order and cannot equal a second-order operator, so no one-field first-order massive equation exists in this algebra. The free equation stays first order on one field, and the mass is what needs the second field.
 
-$$
-\mathbb{D}:\ \tilde X\longmapsto-\frac{\partial\tilde X}{\partial r'_t}\,\vec e_x-\sum_k\vec e_k\frac{\partial\tilde X}{\partial R_k}\,\vec e_y ,
-$$
-
-and the sides are the whole of the content. The time term is a right multiplication by $\vec e_x$ alone; each space term carries $\vec e_k$ on the left and $\vec e_y$ on the right, and the two multipliers are fixed basis elements that select the chiral slots and do not depend on the field. Left and right multiplications commute and the pure units anticommute, $\vec e_x\vec e_y=-\vec e_y\vec e_x$, with $\vec e_x^2=\vec e_y^2=-e_t$, so the cross terms cancel and the square is the d'Alembertian of the material sector, $\Delta-\partial^2/\partial {r'_{t}}^2$. The $i$ of the coordinate derivative is absorbed in the multiplier, $\partial/\partial R_t=-i\,\partial/\partial r'_t$, and no factor is left in front of the derivative; this is the pair read on one element and not a second definition.
-
-**The symbol.** On a plane wave the two gradients act as left multiplication by the momentum element and its conjugate, $\tilde K=i\tilde Q_2=-p_t\,e_t+i\vec p$ with $\tilde K\tilde K^{\natural}=p_t^2-\lvert\vec p\rvert^2=p^2$, so the symbol of the pair is
+**The square, line by line.** Composing each line with the conjugate of the other gives
 
 $$
-\mathbb{D}_p:\ (w_L,w_R)\longmapsto\bigl(\tilde K\,w_R,\ \tilde K^{\natural}w_L\bigr),
+\tilde\nabla^{\natural}\tilde\nabla\Psi_R=m^{2}\Psi_R,
 \qquad
-\mathbb{D}_p^2=p^2 I ,
+\tilde\nabla\tilde\nabla^{\natural}\Psi_L=m^{2}\Psi_L,
 $$
 
-and on one element it reads $\mathbb{D}_p:\tilde X\mapsto ip_t\,\tilde X\vec e_x-i\sum_kp_k\,\vec e_k\tilde X\vec e_y$. The square of the element is not the scalar: $\tilde K^2$ has scalar part $p_t^2+\lvert\vec p\rvert^2$ and a vector part that does not cancel, and only the composition with the conjugate returns $p^2$. The symbol of $\mathbb{D}-m$ is therefore singular exactly where $p^2=m^2$ and nowhere else, and the two chiral slots share the one condition.
+that is $(\Box-m^{2})\Psi_R=0$ and $(\Box-m^{2})\Psi_L=0$. Each part obeys the Klein–Gordon equation on its own, with the same second-order operator.
 
-**The inverse is a Green matrix.** With $G$ the Green's function of the d'Alembertian, $(\Box-m^2)G=\delta$, the Green matrix of the pair is $\mathcal{S}=(\mathbb{D}+m)G$, and $(\mathbb{D}-m)\mathcal{S}=(\mathbb{D}^2-m^2)G=\delta I$. The inverse introduces no new object: the scalar mass commutes with $\mathbb{D}$, and the factorization is the algebraic identity $(\mathbb{D}-m)(\mathbb{D}+m)=\mathbb{D}^2-m^2$.
+**The symbol.** On a plane wave the gradient acts as left multiplication by the momentum element, $\tilde K=i\tilde Q_2=-p_t\,e_t+i\vec p$ with $\tilde K\tilde K^{\natural}=p_t^{2}-\lvert\vec p\rvert^{2}=p^{2}$. The symbol of the two equations is the two lines with each gradient read at its plane-wave value,
 
-**The glyph and its marks.** The glyph is $\mathbb{D}$, and it takes a mark for the factor and never for the chart. A subscript names the factor when that factor is not the material gradient — $\mathbb{D}_p$ for the constant momentum covector, which is the symbol — and an element in parentheses is an argument, $\mathbb{D}(\tilde K)$, because a letter on the right without parentheses, $\mathbb{D}\Psi$, is the field acted on. The gradient follows the same rule: $\tilde\nabla$ bare, $\natural$ or a sector label only where a second gradient is in play. The pair is never written $\mathbb{D}_{\mathbb{B}_{\Phi}}$ or $\mathbb{D}^{\natural}$; the sector enters through the coordinate, and the conjugate of the pair is the pair with its two gradients exchanged.
+$$
+\tilde K\,w_R=m\,w_L,
+\qquad
+\tilde K^{\natural}\,w_L=m\,w_R,
+$$
 
-**The pair is sector-free.** On $\mathbb{B}_{\Phi}$ and on $\mathbb{B}_{\Psi}$ the operator is the same and only the four derivatives change, $\partial/\partial R_t=-i\,\partial/\partial r'_t$ against $\partial/\partial R_t=\partial/\partial r_t$. Its square follows the d'Alembertian of §*The Quaternionic Bilinear Product, Its Form and Its Norm*: $\Delta-\partial^2/\partial {r'_{t}}^2$ on the material sector and $\partial^2/\partial r_t^2-\Delta|_{\mathbb{B}_{\Psi}}$ on the informational one, and a reader who moves the pair from one sector to the other moves one overall sign and no operator.
+and the two lines share one condition. Composing them returns $\tilde K^{\natural}\tilde K\,w=p^{2}w$, so the symbol is singular exactly on $p^{2}=m^{2}$ and nowhere else.
+
+**The inverse is one scalar and two kernels.** With $G$ the Green's function of the d'Alembertian, $(\Box-m^{2})G=\delta$, the solution of the two lines with a source is the pair of kernels
+
+$$
+S_L=i\bigl(\tilde\nabla+m\bigr)G,
+\qquad
+S_R=i\bigl(\tilde\nabla^{\natural}+m\bigr)G,
+$$
+
+and substitution returns $i\delta$ in each line, because the cross terms cancel and $\tilde\nabla\tilde\nabla^{\natural}=\tilde\nabla^{\natural}\tilde\nabla=\Box$ with $m$ central. The inverse introduces no new object.
+
+**Marks.** There is no glyph for the two equations and no subscript for a sector or a chart. A subscript on a kernel names the part it carries, $S_L$ and $S_R$. The gradient keeps its own rule: $\tilde\nabla$ bare, $\natural$ or a sector label only where a second gradient is in play.
+
+**The two equations are sector-free.** On $\mathbb{B}_{\Phi}$ and on $\mathbb{B}_{\Psi}$ the equations are the same and only the four derivatives change, $\partial/\partial R_t=-i\,\partial/\partial r'_t$ against $\partial/\partial R_t=\partial/\partial r_t$. The second-order operator follows the d'Alembertian of §*The Quaternionic Bilinear Product, Its Form and Its Norm*: $\Delta-\partial^2/\partial {r'_{t}}^2$ on the material sector and $\partial^2/\partial r_t^2-\Delta|_{\mathbb{B}_{\Psi}}$ on the informational one, and a reader who moves the two equations from one sector to the other changes one overall sign and no equation.
 
 ## The Transposition of the Gradient
 
@@ -551,7 +565,7 @@ The **dagger** is the general adjoint of an operator, never of an element, and i
 
 No derivative is written with a dot, and a prime marks the imaginary coordinate and nothing else. Every partial derivative is written with $\partial$ and its variable, the subscript is a component index and never a derivative, and the coordinate derivative is unhalved, $\partial/\partial R_\mu=\bigl(\partial/\partial r_\mu-i\,\partial/\partial r'_\mu\bigr)$, and a sector keeps one of its two halves.
 
-The two derivative operators of the corpus are the **biquaternionic gradient** $\tilde\nabla=\sum_\mu e_\mu\partial/\partial R_\mu$ and the **d'Alembertian** $\Box=\langle\tilde\nabla\rangle_{\natural}=\mathrm{Sc}(\tilde\nabla^{\natural}\tilde\nabla)$, the quaternionic norm of the gradient; the operator is scalar and acts coefficient by coefficient. The two derivatives are read once as one operator on a pair of elements, the **pair operator** $\mathbb{D}$ of §*The Pair Operator and Its Symbol*, whose square is $\Box I$ and whose symbol is left multiplication by the momentum element. On $\mathbb{B}_{\Phi}$ the substitution $R_t=i r'_t$ flips the sign of the time second derivative, $\partial^2/\partial R_t^2=-\partial^2/\partial {r'_t}^2$, so the operator reads $\Delta-\partial^2/\partial {r'_t}^2$ there, which is the series' d'Alembertian on that sector and not the wave operator of the opposite overall sign.
+The two derivative operators of the corpus are the **biquaternionic gradient** $\tilde\nabla=\sum_\mu e_\mu\partial/\partial R_\mu$ and the **d'Alembertian** $\Box=\langle\tilde\nabla\rangle_{\natural}=\mathrm{Sc}(\tilde\nabla^{\natural}\tilde\nabla)$, the quaternionic norm of the gradient; the operator is scalar and acts coefficient by coefficient. The two derivatives act on two chiral parts, and the series writes the dynamics as two equations, $\tilde\nabla\Psi_R=m\Psi_L$ and $\tilde\nabla^{\natural}\Psi_L=m\Psi_R$, of §*The Two First-Order Equations and Their Symbol*. The pair operator $\mathbb{D}$ is not allowed: it hides the adjoint, the metric and the signature, and its square is $\Box$ on each part only after composing the two lines. On $\mathbb{B}_{\Phi}$ the substitution $R_t=i r'_t$ flips the sign of the time second derivative, $\partial^2/\partial R_t^2=-\partial^2/\partial {r'_t}^2$, so the operator reads $\Delta-\partial^2/\partial {r'_t}^2$ there, which is the series' d'Alembertian on that sector and not the wave operator of the opposite overall sign.
 
 The four products are read on the gradient: the plain bilinear product holds the divergence, the gradient and the curl of a field in one object; the quaternionic bilinear product reads the conjugate derivative; the Hermitian product gives the definite form; and the Krein product gives the indefinite one, whose norm coincides with the plain bilinear norm. **A contraction is a form, never an index**: the metric is the sign vector inside the product, and no index is raised or lowered.
 
@@ -568,7 +582,6 @@ The four products are read on the gradient: the plain bilinear product holds the
 | $\tilde\nabla=\sum_\mu e_\mu\,\partial/\partial R_\mu$ | The biquaternionic gradient |
 | $\nabla=\sum_k\,\vec e_k\,\partial/\partial R_k$ | The pure spatial gradient |
 | $\Box=\langle\tilde\nabla\rangle_{\natural}$ | The d'Alembertian, the quaternionic norm of the gradient |
-| $\mathbb{D}$ | The pair operator on $\mathbb{B}\oplus\mathbb{B}$, $\mathbb{D}(\Psi_L,\Psi_R)=(\tilde\nabla\Psi_R,\tilde\nabla^{\natural}\Psi_L)$, with $\mathbb{D}^2=\Box I$; $\mathbb{D}_p$ is its symbol |
 | $\mathrm{fop}$ | The Fock-operator mark, the one exception to the element rule |
 | $^{\natural}$ | The natural conjugation, $a^{\natural}=(a_0,-a_1,-a_2,-a_3)$; an anti-automorphism, $(ab)^{\natural}=b^{\natural}a^{\natural}$ |
 | $(\psi D)^{\natural}=D^{\natural}\psi^{\natural}$ | The exchange of the two sides: a right action on $\psi$ is a left action on $\psi^{\natural}$ |

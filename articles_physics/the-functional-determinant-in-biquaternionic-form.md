@@ -171,19 +171,15 @@ and the small-$r'_t$ expansion $G_{\mathrm{prop}}(r'_t)\sim(4\pi r'_t)^{-d/2}\su
 
 The determinant of a fermionic fluctuation operator is the place where the framework's non-central mass term has its clearest consequence.
 
-**The Grassmann integral.** Integrating out a fermion gives a determinant rather than an inverse square root. The operator below is the module representative of the chiral pair $\tilde{\nabla}\tilde{Ξ}_{\mathrm{sp},R}=k_m\tilde{Ξ}_{\mathrm{sp},L}$, $\tilde{\nabla}^{\natural}\tilde{Ξ}_{\mathrm{sp},L}=k_m\tilde{Ξ}_{\mathrm{sp},R}$, with $\mathbb{D}$ the pair operator; the algebra-level determinant is an open point.
+**The Grassmann integral.** Integrating out a fermion gives a determinant rather than an inverse square root. The operator below is the module representative of the chiral pair $\tilde{\nabla}\tilde{Ξ}_{\mathrm{sp},R}=k_m\tilde{Ξ}_{\mathrm{sp},L}$, $\tilde{\nabla}^{\natural}\tilde{Ξ}_{\mathrm{sp},L}=k_m\tilde{Ξ}_{\mathrm{sp},R}$, written as the two-by-two array of its two lines; the algebra-level determinant is an open point.
 $$
 \int\mathcal{D}\tilde{Ξ}_{\mathrm{sp}}^{\natural}\,\mathcal{D}\tilde{Ξ}_{\mathrm{sp}}\;\exp\big(\,\tilde{Ξ}_{\mathrm{sp}}^{\natural}\mathcal{F}\tilde{Ξ}_{\mathrm{sp}}\big) = \det\mathcal{F},
 \qquad
-\mathcal{F} = \mathbb{D} - k_m ,
+\mathcal{F} = \begin{pmatrix} -k_m & \mathcal{F}_R \\ \mathcal{F}_L & -k_m \end{pmatrix},
 $$
 which is standard. In the framework the spinor field is carried by the spinor module and the mass term is the chirality-off-diagonal, right-multiplication operator of the conventions article; the determinant is therefore that of a module operator whose chiral structure is nontrivial. Here $k_m=mc/\hbar$ is the mass wave number, the inverse of the mass length.
 
-**The chiral block structure.** In a chirality basis the fermionic operator has the block form
-$$
-\mathcal{F} = \begin{pmatrix} -k_m & \mathcal{F}_R \\ \mathcal{F}_L & -k_m \end{pmatrix},
-$$
-whose blocks act between the two minimal left ideals. The mass occupies the diagonal blocks and the derivative terms the off-diagonal ones, so the two chiralities are coupled. In the simplified case where the blocks are scalars the determinant is the elementary $k_m^{2}-\mathcal{F}_R\mathcal{F}_L$, checked numerically: for $k_m=1.3$, $\mathbb{D}_R=0.7+0.4i$, $\mathbb{D}_L=0.9-0.2i$, $\det\mathbb{D}=0.980000-0.220000i=k_m^{2}-\mathbb{D}_R\mathbb{D}_L$. In general the mass couples the two chiralities and the determinant is a **product over the chiralities** modified by the mass: $\det\mathbb{D}=\det(\mathbb{D}_L\mathbb{D}_R-k_m^{2})$ up to a sign fixed by the dimension. For the pure off-diagonal (massless) case the block determinant formula gives $\det\begin{pmatrix}0&A\\B&0\end{pmatrix}=(-1)^n\det A\det B$, checked at $n=2$ with $A=\begin{pmatrix}1&2i\\0.5&3\end{pmatrix}$, $B=\begin{pmatrix}2&0.1\\0.3&i\end{pmatrix}$, giving $1.91000+6.03000i=\det A\det B$. The determinant therefore factorizes over the chiralities only in the massless case; the mass term, being the right-multiplication operator that relates the ideals, is exactly what spoils the factorization. This is the same non-centrality that broke the sector factorization of the effective action.
+**The chiral block structure.** In the chirality basis of that array the blocks act between the two minimal left ideals. The mass occupies the diagonal blocks and the derivative terms the off-diagonal ones, so the two chiralities are coupled. In the simplified case where the blocks are scalars the determinant is the elementary $k_m^{2}-\mathcal{F}_R\mathcal{F}_L$, checked numerically: for $k_m=1.3$, $\mathcal{F}_R=0.7+0.4i$, $\mathcal{F}_L=0.9-0.2i$, $\det\mathcal{F}=0.980000-0.220000i=k_m^{2}-\mathcal{F}_R\mathcal{F}_L$. In general the mass couples the two chiralities and the determinant is a **product over the chiralities** modified by the mass: $\det\mathcal{F}=\det(\mathcal{F}_L\mathcal{F}_R-k_m^{2})$ up to a sign fixed by the dimension. For the pure off-diagonal (massless) case the block determinant formula gives $\det\begin{pmatrix}0&A\\B&0\end{pmatrix}=(-1)^n\det A\det B$, checked at $n=2$ with $A=\begin{pmatrix}1&2i\\0.5&3\end{pmatrix}$, $B=\begin{pmatrix}2&0.1\\0.3&i\end{pmatrix}$, giving $1.91000+6.03000i=\det A\det B$. The determinant therefore factorizes over the chiralities only in the massless case; the mass term, being the right-multiplication operator that relates the ideals, is exactly what spoils the factorization. This is the same non-centrality that broke the sector factorization of the effective action.
 
 **Hermiticity and phase.** If $\mathcal{F}$ is Hermitian its determinant is real and its sign is physical (the fermion sign problem). If $\mathcal{F}$ is not Hermitian — which is generic for a chiral or a $\theta$-dependent operator — its determinant is complex, and
 $$
@@ -258,7 +254,7 @@ For a central fluctuation operator the module determinant is the square of the s
 | $\zeta_{S^{(2)}}(s)=\mathrm{Tr}(S^{(2)})^{-s}$, $\log\det S^{(2)}=-\left.\frac{d\zeta}{ds}\right|_{s=0}$ | Zeta-function regularization |
 | $G_{\mathrm{prop}}(r'_t)=\mathrm{Tr}\,\exp(-r'_t S^{(2)})$, $K\sim(4\pi r'_t)^{-d/2}\sum a_n {r'_{t}}^n$ | Heat kernel; Seeley–DeWitt coefficients |
 | $a_{d/2}$ | Coefficient controlling the divergence / trace anomaly |
-| $\mathcal{F}=\mathbb{D}-k_m$ | Fermionic fluctuation operator; $\mathbb{D}$ is the pair operator |
+| $\mathcal{F}=\begin{pmatrix}-k_m&\mathcal{F}_R\\ \mathcal{F}_L&-k_m\end{pmatrix}$ | Fermionic fluctuation operator: the mass-shifted pair in the chirality basis, with the two lines' derivative parts off the diagonal |
 | $\det\mathcal{F}=|\det\mathcal{F}|\exp(i\theta_{\mathrm{pha},\mathcal{F}})$ | Complex (chiral) fermion determinant |
 | $\eta(\mathcal{F})$ | Eta invariant; spectral asymmetry of the phase |
 

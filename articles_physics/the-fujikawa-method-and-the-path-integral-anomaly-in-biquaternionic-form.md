@@ -26,13 +26,13 @@ $$
 \qquad
 \tilde\nabla^{\natural}=e_t\frac{\partial}{\partial R_t}-\vec e_x\frac{\partial}{\partial R_x}-\vec e_y\frac{\partial}{\partial R_y}-\vec e_z\frac{\partial}{\partial R_z},
 $$
-and on $\mathbb{B}_{\Phi}$ the time derivative reads $\partial/\partial R_t=-i\partial/\partial r'_t$ (*Operator and Calculus Conventions*, §*The Gradient*). The d'Alembertian is the quaternionic norm of the gradient, $\Box=\tilde\nabla\tilde\nabla^{\natural}=\tilde\nabla^{\natural}\tilde\nabla=\partial^2/\partial R_t^2+\Delta_Q$, which on $\mathbb{B}_{\Phi}$ is $\Delta-\partial^2/\partial {r'_{t}}^2$. The pseudoscalar is $\omega=-\vec e_z$, with $\omega^2=-e_t$; it anticommutes with $\vec e_x$ and $\vec e_y$ and commutes with $\vec e_z$ (*Special Element Conventions*, §*The Chirality Convention*). A contraction of the derivative with a field is the quaternionic form $\langle\tilde\nabla,\tilde J_{\Phi}\rangle_{\natural}=\mathrm{Sc}(\tilde\nabla^{\natural}\tilde J_{\Phi})$, an explicit sum over the four coordinates. The pair operator is the corpus's own,
+and on $\mathbb{B}_{\Phi}$ the time derivative reads $\partial/\partial R_t=-i\partial/\partial r'_t$ (*Operator and Calculus Conventions*, §*The Gradient*). The d'Alembertian is the quaternionic norm of the gradient, $\Box=\tilde\nabla\tilde\nabla^{\natural}=\tilde\nabla^{\natural}\tilde\nabla=\partial^2/\partial R_t^2+\Delta_Q$, which on $\mathbb{B}_{\Phi}$ is $\Delta-\partial^2/\partial {r'_{t}}^2$. The pseudoscalar is $\omega=-\vec e_z$, with $\omega^2=-e_t$; it anticommutes with $\vec e_x$ and $\vec e_y$ and commutes with $\vec e_z$ (*Special Element Conventions*, §*The Chirality Convention*). A contraction of the derivative with a field is the quaternionic form $\langle\tilde\nabla,\tilde J_{\Phi}\rangle_{\natural}=\mathrm{Sc}(\tilde\nabla^{\natural}\tilde J_{\Phi})$, an explicit sum over the four coordinates. The chiral pair is written as two first-order equations,
 $$
-\mathbb{D}(\tilde{Ξ}_{\mathrm{sp},L},\tilde{Ξ}_{\mathrm{sp},R})=\bigl(\tilde\nabla\tilde{Ξ}_{\mathrm{sp},R},\ \tilde\nabla^{\natural}\tilde{Ξ}_{\mathrm{sp},L}\bigr),
+\tilde\nabla\tilde{Ξ}_{\mathrm{sp},R}=k_m\tilde{Ξ}_{\mathrm{sp},L},
 \qquad
-\mathbb{D}^2=\Box\,I ,
+\tilde\nabla^{\natural}\tilde{Ξ}_{\mathrm{sp},L}=k_m\tilde{Ξ}_{\mathrm{sp},R},
 $$
-on $\mathbb{B}\oplus\mathbb{B}$ (*Operator and Calculus Conventions*, §*The Pair Operator and Its Symbol*); it is the chiral pair written once, and it is not a frame object. The Dirac bilinear of two fields is written $\tilde{Ξ}_{\mathrm{sp}}^{\dagger}\xi=\mathrm{Sc}(\tilde{Ξ}_{\mathrm{sp}}^*\xi\,i\vec e_x)$, with the fixed right multiplier $i\vec e_x$ standing after the product; it is not a derivative, and the multiplier is the same in every term below. The gauge covariant derivative is $D_\mu=\partial/\partial R_\mu+\frac{k_m\,iϙA_{\mu}}{m\,c}$ with $[D_\mu,D_\nu]=\frac{k_m\,iϙF_{\mu\nu}}{m\,c}$ for the abelian factor, and the gradient form is $\tilde D=\tilde\nabla+iϙ\tilde A_{\Phi}$. The fermion measure is written $\mathcal{D}\tilde{Ξ}_{\mathrm{sp}}\,\mathcal{D}\tilde{Ξ}_{\mathrm{sp}}^{\dagger}$. The four-index symbol is the orientation density of the series, taken positive on the identity order, and the field-strength components are $F_{ti}=E_i$ and $F_{ij}=+\epsilon_{ijk}B_k$, every index written low as the companion article writes it. The field invariants $I_1$ and $I_2$ are the instanton article's. Two traces appear below and are kept apart: $\mathrm{tr}$ is the trace of a complex-linear operator on the four coefficients of the field, and $\mathrm{Tr}$ is the functional trace over modes, which is what a determinant produces. Throughout, the constants are carried, with $c=1/\sqrt{\epsilon\mu}$ the speed of light in the medium and $c_0$ the vacuum value.
+on two elements of $\mathbb{B}$ (*Operator and Calculus Conventions*, §*The Two First-Order Equations and Their Symbol*); each line carries one gradient, the mass is the coupling of the two, and no letter is written for the two together. The pair operator that the corpus once wrote here is retired. The Dirac bilinear of two fields is written $\tilde{Ξ}_{\mathrm{sp}}^{\dagger}\xi=\mathrm{Sc}(\tilde{Ξ}_{\mathrm{sp}}^*\xi\,i\vec e_x)$, with the fixed right multiplier $i\vec e_x$ standing after the product; it is not a derivative, and the multiplier is the same in every term below. The gauge covariant derivative is $D_\mu=\partial/\partial R_\mu+\frac{k_m\,iϙA_{\mu}}{m\,c}$ with $[D_\mu,D_\nu]=\frac{k_m\,iϙF_{\mu\nu}}{m\,c}$ for the abelian factor, and the gradient form is $\tilde D=\tilde\nabla+iϙ\tilde A_{\Phi}$. The fermion measure is written $\mathcal{D}\tilde{Ξ}_{\mathrm{sp}}\,\mathcal{D}\tilde{Ξ}_{\mathrm{sp}}^{\dagger}$. The four-index symbol is the orientation density of the series, taken positive on the identity order, and the field-strength components are $F_{ti}=E_i$ and $F_{ij}=+\epsilon_{ijk}B_k$, every index written low as the companion article writes it. The field invariants $I_1$ and $I_2$ are the instanton article's. Two traces appear below and are kept apart: $\mathrm{tr}$ is the trace of a complex-linear operator on the four coefficients of the field, and $\mathrm{Tr}$ is the functional trace over modes, which is what a determinant produces. Throughout, the constants are carried, with $c=1/\sqrt{\epsilon\mu}$ the speed of light in the medium and $c_0$ the vacuum value.
 
 The framework results used here are those of the companion articles:
 
@@ -110,9 +110,9 @@ Z[A] = \int \mathcal{D}\tilde{Ξ}_{\mathrm{sp}}\,\mathcal{D}\tilde{Ξ}_{\mathrm{
 $$
 and the integral is Gaussian: it evaluates to the determinant of the operator,
 $$
-Z[A] = \det\bigl(\mathbb{D}-k_m\bigr) .
+Z[A] = \det\begin{pmatrix}-k_m&\tilde D\\ \tilde D^{\natural}&-k_m\end{pmatrix} .
 $$
-The bosonic and fermionic measures, the Gaussian integration and the determinant are the subject of the corpus's fermionic path-integral article; that article constructs them and this one takes them as given. What the algebra supplies here is the operator whose determinant is taken: the pair operator with its derivative made covariant, whose square is $\Box$, and whose determinant is the product over modes of $\det\ell_{-i\tilde K_{\Phi}}=(k_{t}^{\prime\,2}-\lvert\vec k_\Phi\rvert^2)^2$ for one chiral value — the square of the symbol of the d'Alembertian, which is the Dirac determinant — and the square of that for the pair, one factor for each value. The mass is the coefficient that the condensate of the companion article fixes.
+The bosonic and fermionic measures, the Gaussian integration and the determinant are the subject of the corpus's fermionic path-integral article; that article constructs them and this one takes them as given. What the algebra supplies here is the operator whose determinant is taken: the two covariant gradients in one block array, whose determinant reduces to $\Box-k_m^{2}$ on one value and whose value is the product over modes of $\det\ell_{-i\tilde K_{\Phi}}=(k_{t}^{\prime\,2}-\lvert\vec k_\Phi\rvert^2)^2$ for one chiral value — the square of the symbol of the d'Alembertian, which is the Dirac determinant — and the square of that for the pair, one factor for each value. The mass is the coefficient that the condensate of the companion article fixes.
 
 **The chiral rotation.** Rotate the integration variables by an axial phase that is local,
 $$
@@ -179,7 +179,7 @@ a(x)=\lim_{M\to\infty}\mathrm{tr}\bigl[\rho_\omega\,e^{-\mathcal{H}/M^2}\bigr]_x
 $$
 The factor $2$ in the exponent is the two determinants, one for $\tilde{Ξ}_{\mathrm{sp}}$ and one for $\tilde{Ξ}_{\mathrm{sp}}^{\dagger}$, and $a$ is the regulated trace at coincidence. Matching the measure factor against the change of the action, $\delta S=-\int d^4r\,(\partial\alpha/\partial R_\mu)\,j_{5\mu}=\int d^4r\,\alpha\,\sum_\mu\partial j_{5\mu}/\partial R_\mu$, gives $\langle\tilde\nabla,\tilde J_{\Phi,5}\rangle_{\natural}=\sum_\mu\partial j_{5\mu}/\partial R_\mu=2a$. The anomaly density is therefore $A=2a$. The trace $a$ is the index density of the standard module, since $\int a=-(ϙ^2/32\pi^2)\int d^4r\,\epsilon_{\mu\nu\rho\sigma}F_{\mu\nu}F_{\rho\sigma}$ in the normalization of the index section; that is why $\int A=2\int a$ is twice the index up to the sign that the all-low-index symbol carries, the factor two coming from the two determinants and not from the trace. The determinant is formal and divergent: it is the product of the eigenvalues of $U$ over a complete set of modes, one per spacetime point.
 
-**The regulator.** To make the determinant finite and preserve gauge invariance, one regulates it with the square of the operator. The square of the pair operator is scalar, $\mathbb{D}^2=\Box I$, so the regulator is the d'Alembertian itself with the connection included,
+**The regulator.** To make the determinant finite and preserve gauge invariance, one regulates it with the square of the operator. Each line composed with the conjugate of the other is $\Box$, so the regulator is the d'Alembertian itself with the connection included,
 $$
 \mathcal{H}=-(\tilde D\tilde D^{\natural})_E ,
 $$
@@ -299,11 +299,11 @@ $$
 \int d^4r\,\langle\tilde\nabla,\tilde J_{\Phi,5}\rangle_{\natural}
 = \int d^4r\,A(r_x)
 = -\frac{ϙ^2}{16\pi^2}\int d^4r\,\epsilon_{\mu\nu\rho\sigma}F_{\mu\nu}F_{\rho\sigma}
-= -2\,\mathrm{ind}(\mathbb{D}),
+= -2\,(n_L-n_R),
 $$
 so the axial charge transported in a background is twice the index, the minus being the orientation bookkeeping of the all-low-index symbol that the density carries throughout the article. The index is the excess of the number of zero modes of value $L$ over the number of value $R$; the general theorem identifying it with the integral is Atiyah–Singer. The zero-mode count and the index theorem belong to the corpus's general gauge apparatus and are not developed here; the fermion-sector facts are that the integral is an integer, that the coefficient is therefore protected against renormalisation, and that a background of unit topological charge produces a net axial-charge violation.
 
-**The zero modes and the measure.** The index interpretation makes the Fujikawa computation transparent. The rotation acts on each mode by a phase; modes of the two values are rotated with opposite phases; the regulator counts them with the heat-kernel weight; and a mismatch between the numbers of zero modes of the two values is a non-zero difference that no regulator can remove. The anomaly is that mismatch seen through the measure. In the framework's terms the mismatch is a property of the pair operator in a background with non-zero topological charge, and the topological charge is the winding of the material-sector connection.
+**The zero modes and the measure.** The index interpretation makes the Fujikawa computation transparent. The rotation acts on each mode by a phase; modes of the two values are rotated with opposite phases; the regulator counts them with the heat-kernel weight; and a mismatch between the numbers of zero modes of the two values is a non-zero difference that no regulator can remove. The anomaly is that mismatch seen through the measure. In the framework's terms the mismatch is a property of the two-line operator in a background with non-zero topological charge, and the topological charge is the winding of the material-sector connection.
 
 **One instanton.** For a unit instanton the index is one per flavour and the axial charge changes accordingly. The factor of two in front of the index is the one already identified at the measure: two determinants, one for $\tilde{Ξ}_{\mathrm{sp}}$ and one for $\tilde{Ξ}_{\mathrm{sp}}^{\dagger}$. Equivalently, the bilinear that soaks up a zero mode is $\tilde{Ξ}_{\mathrm{sp}}^{\dagger}\tilde{Ξ}_{\mathrm{sp}}$, whose axial charge is two, so a single zero mode of one value shifts the axial charge by two units. A mode and its partner of the other value enter the trace with opposite signs, so their contributions annihilate when the index vanishes, and the integral turns on the difference. Nothing here is particular to the biquaternion algebra except the identification of the winding with the material sector and of the density with $I_2$.
 
@@ -319,7 +319,7 @@ so the axial charge transported in a background is twice the index, the minus be
 
 **The frame position of the insertion.** The pseudoscalar is a single right factor, so the insertion carries a direction of the frame and no left action; the product $\vec e_\mu\vec e_\nu$ of two distinct units is what a magnetic or electric insertion uses, and the companion article on the electric dipole moment develops that case. The anomaly insertion is the pseudoscalar itself rather than its product with such a pair. The two insertions are different objects, and the article states the anomaly's and does not conflate it with the dipole's.
 
-**The operator whose determinant is taken.** The pair operator is the corpus's chiral pair with its derivative made covariant, and its square is the d'Alembertian. Its determinant is the object the measure produces, and its zero modes carry the index; the four-index symbol that its trace cannot supply is the one object of the standard computation that the algebra does not carry. What the framework does not supply is the measure itself — the space of fields, the Grassmann integration, and the determinant's definition. Those are the functional-integral apparatus, constructed in the companion articles on the fermionic path integral, and imported here.
+**The operator whose determinant is taken.** The pair is the corpus's chiral pair with its derivative made covariant, written as the two-by-two array of its two lines, and each line composed with its partner is the d'Alembertian. Its determinant is the object the measure produces, and its zero modes carry the index; the four-index symbol that its trace cannot supply is the one object of the standard computation that the algebra does not carry. What the framework does not supply is the measure itself — the space of fields, the Grassmann integration, and the determinant's definition. Those are the functional-integral apparatus, constructed in the companion articles on the fermionic path integral, and imported here.
 
 ## What the Framework Supplies, Transcribes, and Does Not Supply
 
@@ -363,7 +363,7 @@ $$
 \boxed{\;A(x)=-\frac{ϙ^2}{16\pi^2}\,\epsilon_{\mu\nu\rho\sigma}F_{\mu\nu}F_{\rho\sigma}
 = -\frac{ϙ^2}{2\pi^2}\,\vec E\cdot\vec B=-\frac{ϙ^2}{2\pi^2}\,I_2\;},
 $$
-the framework's own second invariant. The axial divergence is the ABJ form, with the mass term the classical breaking and the Jacobian term the quantum one. The integrated anomaly is twice the index of the pair operator; that integer is what makes the coefficient exact, while the index theorem and the zero-mode count belong to the general gauge apparatus and were cited, not rebuilt. The functional measure itself is not supplied by the algebra: the framework carries the operator and the rotation, and the measure is imported from the path-integral apparatus of the companion articles.
+the framework's own second invariant. The axial divergence is the ABJ form, with the mass term the classical breaking and the Jacobian term the quantum one. The integrated anomaly is twice the index of the pair; that integer is what makes the coefficient exact, while the index theorem and the zero-mode count belong to the general gauge apparatus and were cited, not rebuilt. The functional measure itself is not supplied by the algebra: the framework carries the operator and the rotation, and the measure is imported from the path-integral apparatus of the companion articles.
 
 ## Summary of Notation
 
@@ -379,7 +379,7 @@ the framework's own second invariant. The axial divergence is the ABJ form, with
 | $\tilde{Ξ}_{\mathrm{sp},L},\tilde{Ξ}_{\mathrm{sp},R}$ | The two values: the eigenspaces of right multiplication by $\vec e_z$ with eigenvalues $-i$ and $+i$, each of complex dimension two |
 | $\mathrm{tr}$ | The trace of a complex-linear operator on the four coefficients of the field |
 | $\ell_h,\ \rho_\omega$ | Left multiplication by $h$, right multiplication by the pseudoscalar; $\rho_\omega$ is the measure's insertion, and $\ell_h\rho_\omega$ is the one two-sided shape the article uses |
-| $\mathbb{D}$ | The pair operator, a block matrix on $\mathbb{B}\oplus\mathbb{B}$ with $\mathbb{D}(\tilde{Ξ}_{\mathrm{sp},L},\tilde{Ξ}_{\mathrm{sp},R})=(\tilde\nabla\tilde{Ξ}_{\mathrm{sp},R},\tilde\nabla^{\natural}\tilde{Ξ}_{\mathrm{sp},L})$ and $\mathbb{D}^2=\Box I$; a matrix, not an element |
+| $\begin{pmatrix}-k_m&\tilde D\\ \tilde D^{\natural}&-k_m\end{pmatrix}$ | The two covariant lines of the pair in one block array; a matrix, not an element |
 | $\mathcal{H}=-(\tilde D\tilde D^{\natural})_E$ | The continued regulator operator, whose scalar part is $-\Box_E$ |
 | $a(x)=-\dfrac{ϙ^2}{32\pi^2}\epsilon_{\mu\nu\rho\sigma}F_{\mu\nu}F_{\rho\sigma}$ | Regulated trace density, the index density |
 | $A(x)=2a(x)=-\dfrac{ϙ^2}{16\pi^2}\epsilon_{\mu\nu\rho\sigma}F_{\mu\nu}F_{\rho\sigma}$ | Anomaly density (Fujikawa and Adler–Bell–Jackiw) |
@@ -387,11 +387,11 @@ the framework's own second invariant. The axial divergence is the ABJ form, with
 | $\mathcal{D}\tilde{Ξ}_{\mathrm{sp}}\,\mathcal{D}\tilde{Ξ}_{\mathrm{sp}}^{\dagger}$ | Fermion measure of the functional integral |
 | $U=e^{\alpha\omega}=\cos\alpha\,\mathbb 1+\sin\alpha\,\omega$ | Chiral rotation; $\alpha$ a central scalar function |
 | $J=(\det U)^{-2}=\exp(-2i\int d^4r\,\alpha a)$ | Jacobian of the measure under the rotation |
-| $Z[A]=\det(\mathbb{D}-k_m)$ | Fermion determinant |
+| $Z[A]=\det\begin{pmatrix}-k_m&\tilde D\\ \tilde D^{\natural}&-k_m\end{pmatrix}$ | Fermion determinant |
 | $\tilde{Ξ}_{\mathrm{sp}}^{\dagger}\xi=\mathrm{Sc}(\tilde{Ξ}_{\mathrm{sp}}^*\xi\,i\vec e_x)$ | The Dirac bilinear, with its fixed right multiplier |
 | $j_{\mu}=\tilde{Ξ}_{\mathrm{sp}}^{\dagger}\vec e_\mu\tilde{Ξ}_{\mathrm{sp}}$ | Vector current |
 | $j_{5\mu}=\tilde{Ξ}_{\mathrm{sp}}^{\dagger}\omega\vec e_\mu\tilde{Ξ}_{\mathrm{sp}}$ | Axial current |
-| $\int d^4r\,\langle\tilde\nabla,\tilde J_{\Phi,5}\rangle_{\natural}=-2\,\mathrm{ind}(\mathbb{D})$ | Integrated anomaly and index, in the all-low-index orientation |
+| $\int d^4r\,\langle\tilde\nabla,\tilde J_{\Phi,5}\rangle_{\natural}=-2\,(n_L-n_R)$ | Integrated anomaly and index, in the all-low-index orientation |
 | $I_1$, $I_2$ | Biquaternion field invariants, in the instanton article's normalization |
 | $\tilde{F}=i\sqrt{\epsilon}\vec E-\sqrt{\mu}\vec H$ | Biquaternion field strength |
 | $2m\,\tilde{Ξ}_{\mathrm{sp}}^{\dagger}\omega\tilde{Ξ}_{\mathrm{sp}}$ | Mass contribution to the axial divergence |

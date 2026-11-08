@@ -136,25 +136,24 @@ and the scalar is central.
 
 ## The Two-Component Reading
 
-**A second reading of the same pair.** The pair of the preceding section was imposed on one unknown. It is imposed just as naturally on two, and the second reading is the one the physics corpus takes. On the sum $\mathbb{B}\oplus\mathbb{B}$ define
+**A second reading of the same pair.** The pair of the preceding section was imposed on one unknown. It is imposed just as naturally on two, and the second reading is the one the physics corpus once took and now writes as two lines. On the sum $\mathbb{B}\oplus\mathbb{B}$ the pair acts as
 
 $$
-\mathbb{D}_{\tilde Q}(\tilde X_1,\tilde X_2)=\bigl(L_{\tilde Q}\tilde X_2,\;L_{\tilde Q^{\natural}}\tilde X_1\bigr),
+(\tilde X_1,\tilde X_2)\longmapsto\bigl(L_{\tilde Q}\tilde X_2,\;L_{\tilde Q^{\natural}}\tilde X_1\bigr),
 $$
 
-so that the first component of the output is the first member of the pair applied to the second component of the input, and the second component of the output is the second member applied to the first. In blocks, with respect to the two summands,
+so that the first component of the output is the first member of the pair applied to the second component of the input, and the second component of the output is the second member applied to the first. In blocks, with respect to the two summands, the array is
 
 $$
-\mathbb{D}_{\tilde Q}=
 \begin{pmatrix}0 & L_{\tilde Q}\\[2pt] L_{\tilde Q^{\natural}}&0\end{pmatrix}.
 $$
 
-The operator is $\mathbb{C}$-linear, it exchanges the two summands, and it is symmetric as a two-component operator: its two off-diagonal blocks are the adjoints of one another in the quaternionic form, so the matrix is its own transpose under the pairing that couples the components.
+The map is $\mathbb{C}$-linear, it exchanges the two summands, and it is symmetric as a two-component operator: its two off-diagonal blocks are the adjoints of one another in the quaternionic form, so the matrix is its own transpose under the pairing that couples the components.
 
 **Theorem (the pair squares to the norm).** For every $\tilde Q$,
 
 $$
-\mathbb{D}_{\tilde Q}^{2}
+\begin{pmatrix}0 & L_{\tilde Q}\\[2pt] L_{\tilde Q^{\natural}}&0\end{pmatrix}^{2}
 =\begin{pmatrix}L_{\tilde Q}L_{\tilde Q^{\natural}}&0\\[2pt]0&L_{\tilde Q^{\natural}}L_{\tilde Q}\end{pmatrix}
 =\langle\tilde Q\rangle_{\natural}\,\mathrm{id}_{\mathbb{B}\oplus\mathbb{B}} .
 $$
@@ -164,7 +163,7 @@ $$
 **The pair of equations, as an eigenvalue problem.** With a scalar $\lambda$ the pair becomes
 
 $$
-\mathbb{D}_{\tilde Q}\Xi=\lambda\,\Xi,\qquad \Xi=(\tilde X_1,\tilde X_2),
+\begin{pmatrix}0 & L_{\tilde Q}\\[2pt] L_{\tilde Q^{\natural}}&0\end{pmatrix}\Xi=\lambda\,\Xi,\qquad \Xi=(\tilde X_1,\tilde X_2),
 $$
 
 which entrywise is $L_{\tilde Q}\tilde X_2=\lambda\tilde X_1$ and $L_{\tilde Q^{\natural}}\tilde X_1=\lambda\tilde X_2$: each member of the pair acts on one component and returns a multiple of the other. The tie is the same in both readings; what changes is that the unknown is now a pair of elements and the two equations are no longer imposed on one of them.
@@ -205,7 +204,7 @@ $$
 
 two left multiplications by the same element, at the price of one anti-automorphism on the unknown and one on the data. The product of the rewritten pair is the two-side operator again, $L_{\tilde Q}\ast^{-1}L_{\tilde Q}\ast=\mathrm{Sd}_{\tilde Q}$, so the two placements differ in the reading and not in the composite.
 
-The one-side pair proper composes to a scalar, $L_{\tilde Q}L_{\tilde Q^{\natural}}=\langle\tilde Q\rangle_{\natural}\mathrm{id}$, and that scalar is the passage from two first-order conditions to one second-order operator: the mass. Read on two components rather than on one unknown, the pair is the off-diagonal operator $\mathbb{D}_{\tilde Q}$ with blocks $L_{\tilde Q}$ and $L_{\tilde Q^{\natural}}$, and $\mathbb{D}_{\tilde Q}^{2}=\langle\tilde Q\rangle_{\natural}\mathrm{id}$: the first-order pair squares to a central scalar, the second-order equation for each component follows, and with the gradient as the parameter the display is the chiral pair of the physics corpus and the squared display is the Klein–Gordon equation. The same construction with $\ast$ instead of $\natural$ composes to the Hermitian element $\tilde Q\tilde Q^{\ast}$ and not to a scalar, which is why the corpus keeps the two pairs apart. And neither member of the one-side pair preserves the two halves beyond a real scalar parameter, so sector stability belongs to the two-side placement alone.
+The one-side pair proper composes to a scalar, $L_{\tilde Q}L_{\tilde Q^{\natural}}=\langle\tilde Q\rangle_{\natural}\mathrm{id}$, and that scalar is the passage from two first-order conditions to one second-order operator: the mass. Read on two components rather than on one unknown, the pair is the off-diagonal array with blocks $L_{\tilde Q}$ and $L_{\tilde Q^{\natural}}$, and its square is $\langle\tilde Q\rangle_{\natural}\mathrm{id}$: the first-order pair squares to a central scalar, the second-order equation for each component follows, and with the gradient as the parameter the display is the chiral pair of the physics corpus and the squared display is the Klein–Gordon equation. The same construction with $\ast$ instead of $\natural$ composes to the Hermitian element $\tilde Q\tilde Q^{\ast}$ and not to a scalar, which is why the corpus keeps the two pairs apart. And neither member of the one-side pair preserves the two halves beyond a real scalar parameter, so sector stability belongs to the two-side placement alone.
 
 ## Summary of Notation
 
@@ -220,7 +219,7 @@ The one-side pair proper composes to a scalar, $L_{\tilde Q}L_{\tilde Q^{\natura
 | $\langle\tilde Q\rangle_{\natural}$ | the quaternionic norm, $\sum_\mu Q_\mu^{2}$, central |
 | $\mathbb{B}_{\Psi}$, $\mathbb{B}_{\Phi}$ | the Hermitian and anti-Hermitian halves |
 | $\mathrm{Sd}_{\tilde Q}=L_{\tilde Q}R_{\tilde Q^{\ast}}$ | the two-side member, the subject of the companion article |
-| $\mathbb{D}_{\tilde Q}$ | the off-diagonal two-component operator with blocks $L_{\tilde Q}$ and $L_{\tilde Q^{\natural}}$, of square $\langle\tilde Q\rangle_{\natural}\mathrm{id}$ |
+| $\begin{pmatrix}0&L_{\tilde Q}\\ L_{\tilde Q^{\natural}}&0\end{pmatrix}$ | the off-diagonal two-component array with blocks $L_{\tilde Q}$ and $L_{\tilde Q^{\natural}}$, of square $\langle\tilde Q\rangle_{\natural}\mathrm{id}$ |
 
 ## Further Reading
 

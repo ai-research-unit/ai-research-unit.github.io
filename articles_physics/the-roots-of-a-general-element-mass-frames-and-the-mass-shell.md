@@ -205,14 +205,15 @@ $$
 
 with $\tilde\nabla$ the biquaternionic gradient. Every derivative acts by left multiplication, so no right multiplication is among its terms and no chirality operator can appear. On a plane wave $\tilde\nabla$ acts as left multiplication by $\frac{k_m\,i\,\tilde{P}_{\Phi}\,p}{m\,c}$, so the mass shell above is the level set of $\langle\tilde P_{\Phi}\rangle_{\natural}$. Here $\frac{m\,c}{k_m\,p}$ is the momentum length. Here $\hbar/(mc)$ is the mass length.
 
-The **pair equation** is the same dynamics written once on the pair of fields,
+The **pair equation** is the same dynamics written as two first-order lines on the pair of fields,
 
 $$
-(\mathbb D-m)\tilde{Ξ}_{\mathrm{sp}}=0,\qquad
-\mathbb D\tilde{Ξ}_{\mathrm{sp}}=\bigl(\tilde\nabla\tilde{Ξ}_{\mathrm{sp},R},\ \tilde\nabla^{\natural}\tilde{Ξ}_{\mathrm{sp},L}\bigr),
+\tilde\nabla\tilde{Ξ}_{\mathrm{sp},R}=k_m\tilde{Ξ}_{\mathrm{sp},L},
+\qquad
+\tilde\nabla^{\natural}\tilde{Ξ}_{\mathrm{sp},L}=k_m\tilde{Ξ}_{\mathrm{sp},R},
 $$
 
-with $\tilde{Ξ}_{\mathrm{sp}}=(\tilde{Ξ}_{\mathrm{sp},L},\tilde{Ξ}_{\mathrm{sp},R})$ and $\mathbb D^2=\Box I$. Both members are left actions, and the operator adds no second side. The pair is not a rewording: $\tilde\nabla^2$ is not scalar, because the mixed spatial derivatives survive as units, while $\tilde\nabla\tilde\nabla^{\natural}=\Box$ is; no one-field first-order equation carries a mass.
+with $\tilde{Ξ}_{\mathrm{sp}}=(\tilde{Ξ}_{\mathrm{sp},L},\tilde{Ξ}_{\mathrm{sp},R})$ and each line composed with its partner equal to $\Box I$. Both members are left actions, and no third object stands between them. The pair is not a rewording: $\tilde\nabla^2$ is not scalar, because the mixed spatial derivatives survive as units, while $\tilde\nabla\tilde\nabla^{\natural}=\Box$ is; no one-field first-order equation carries a mass.
 
 The chirality is not a term of either member. It is a right multiplication of the field, and a right multiplication of $\tilde{Ξ}_{\mathrm{sp}}$ is a left multiplication of the natural conjugate, by the exchange of *Operator and Calculus Conventions*: the same operator is the left multiplication of $\tilde{Ξ}_{\mathrm{sp}}^{\natural}$ by $i\vec e_z$. A chirality needs a right multiplication, and the one-sided gradient has none.
 
@@ -321,7 +322,7 @@ The mass shell is a statement of the gradient equation; the chirality, the axial
 | $\tilde\nabla$ | the biquaternionic gradient, with d'Alembertian $\Box$, of *Operator and Calculus Conventions* |
 | $\tilde{Ξ}_{\mathrm{sp},L,R}$ | the two chiral components of the gradient equation |
 | $\tilde{Ξ}_{\mathrm{sp}}$ | the Dirac field; its bilinear is $\tilde{Ξ}_{\mathrm{sp}}^*i\tilde{Ξ}_{\mathrm{sp}}\vec e_x$ |
-| $\mathbb D$ | the pair operator, $\mathbb D\tilde{Ξ}_{\mathrm{sp}}=(\tilde\nabla\tilde{Ξ}_{\mathrm{sp},R},\tilde\nabla^{\natural}\tilde{Ξ}_{\mathrm{sp},L})$, $\mathbb D^2=\Box I$ |
+| $\tilde\nabla\tilde{Ξ}_{\mathrm{sp},R}=k_m\tilde{Ξ}_{\mathrm{sp},L}$, $\tilde\nabla^{\natural}\tilde{Ξ}_{\mathrm{sp},L}=k_m\tilde{Ξ}_{\mathrm{sp},R}$ | the pair, as two first-order lines; each line composed with its partner is $\Box I$ |
 | $\langle\tilde{Ξ}_{\mathrm{sp}}^*i\tilde{Ξ}_{\mathrm{sp}}\vec e_x\rangle$ | the chiral condensate |
 | $\flat$ | the algebra's real structure, an antilinear conjugation |
 | $\Gamma$ | the chirality, a right action of the algebra |
@@ -331,7 +332,7 @@ The mass shell is a statement of the gradient equation; the chirality, the axial
 
 ## Further Reading
 
-- [Operator and Calculus Conventions](operator-and-calculus-conventions.html), for the gradient, the d'Alembertian and the pair operator.
+- [Operator and Calculus Conventions](operator-and-calculus-conventions.html), for the gradient, the d'Alembertian and the two first-order equations.
 - [The Physical Interpretation of the 12 Products](the-physical-interpretation-of-the-12-products.html), for the root sets of the twelve products and the existence classes.
 - [Biquaternion Elementary Functions](../articles_maths/biquaternion-elementary-functions.html), for the root table by regime and the logarithm the roots come from.
 - [Roots, Idempotents and Observables](roots-idempotents-and-observables.html), for the roots of $+1$ and the pure states.

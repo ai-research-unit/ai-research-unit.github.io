@@ -10,17 +10,17 @@ $$
 
 in which each member sets the gradient of one chiral half equal to $m$ times the other. The companion article *The Dirac Equation in Biquaternionic Form* records, in a single paragraph, that applying $\tilde{\nabla}^{\natural}$ to the first member and substituting the second gives $\Box\tilde{Ξ}_{\mathrm{sp},R} = k_m^{2}\tilde{Ξ}_{\mathrm{sp},R}$, so that each chiral component satisfies the Klein–Gordon equation. That paragraph is the hinge between the two halves of this category: it is where the relativistic quantum theory of spin $0$ and the relativistic quantum theory of spin $\tfrac12$ meet. This article reconstructs the passage in full, once in the algebra and once on the chiral pair, settles what the passage carries and what it drops, and then runs the passage the other way, where the second chiral half turns out to be the gradient of the first.
 
-Two operators carry the name *Dirac operator* in this corpus, and they are the two faces of one square. The **one-sided** operator is the gradient $\tilde\nabla$, which acts by multiplication on the algebra, and the equations it obeys are the chiral pair above. The second operator is the **pair** operator, the same two gradients acting on an ordered pair of elements,
+Two operators carry the name *Dirac operator* in this corpus, and they are the two faces of one square. The **one-sided** operator is the gradient $\tilde\nabla$, which acts by multiplication on the algebra, and the equations it obeys are the chiral pair above. The second object is the same two gradients acting on an ordered pair of elements, and it is **two equations and not one operator**:
 
 $$
-\mathbb{D}(\tilde{Ξ}_{\mathrm{sp},L},\tilde{Ξ}_{\mathrm{sp},R})=\left(\tilde\nabla\tilde{Ξ}_{\mathrm{sp},R},\ \tilde\nabla^{\natural}\tilde{Ξ}_{\mathrm{sp},L}\right),
+\tilde\nabla\tilde{Ξ}_{\mathrm{sp},R}=k_m\tilde{Ξ}_{\mathrm{sp},L},
 \qquad
-(\mathbb{D} - k_m)\tilde{Ξ}_{\mathrm{sp}} = 0,
+\tilde\nabla^{\natural}\tilde{Ξ}_{\mathrm{sp},L}=k_m\tilde{Ξ}_{\mathrm{sp},R},
 \qquad
 \tilde{Ξ}_{\mathrm{sp}} = (\tilde{Ξ}_{\mathrm{sp},L},\tilde{Ξ}_{\mathrm{sp},R}),
 $$
 
-one member per chiral half, the first acted on by $\tilde\nabla$ and the second by $\tilde\nabla^{\natural}$, and the chiral pair is that single equation written out. The pair operator holds no element beyond the two gradients, and nothing in it multiplies on the right: the corpus's *two-sided* operator, the one that multiplies on the left and on the right at once, is a different object on a different carrier. Both readings reach the same central $\Box$ from the same product. In the algebra the square is the **product** $\tilde\nabla\tilde\nabla^\natural$, not $\tilde\nabla$ alone, and the **conjugate** cancels the cross terms; on the pair each half is acted on by one such product, so the square is $\Box$ on both halves at once. Neither reading makes the plain square $\tilde\nabla^2$ scalar: the conjugate is what does the work, and it has to be written in one form or the other. The section *The Square on the Chiral Pair* carries the second reading.
+one member per chiral half, the first acted on by $\tilde\nabla$ and the second by $\tilde\nabla^{\natural}$. The corpus once gathered the two into a single letter and called it the **pair operator**; that letter is retired, because it hides the adjoint, the metric and the signature that the two lines show, and nothing below needs it. The pair holds no element beyond the two gradients, and nothing in it multiplies on the right: the corpus's *two-sided* operator, the one that multiplies on the left and on the right at once, is a different object on a different carrier. Both readings reach the same central $\Box$ from the same product. In the algebra the square is the **product** $\tilde\nabla\tilde\nabla^\natural$, not $\tilde\nabla$ alone, and the **conjugate** cancels the cross terms; on the pair each half is acted on by one such product, so the composition is $\Box$ on both halves at once. Neither reading makes the plain square $\tilde\nabla^2$ scalar: the conjugate is what does the work, and it has to be written in one form or the other. The section *The Square on the Chiral Pair* carries the second reading.
 
 The question is sharp because the companion article on the Klein–Gordon equation asked the mirror-image question and returned a negative result. *The Klein–Gordon Equation in Biquaternionic Form* shows that $\Box - k_m^{2}$ has **no first-order scalar square root inside the algebra** $\mathbb{B}$: the first-order terms of a product $(\tilde\nabla^{\natural} + A)(\tilde\nabla + B)$ can be cancelled only with $B = -A$ and $A$ anticommuting with all three units $\vec e_x,\vec e_y,\vec e_z$, and no such element exists. If the Klein–Gordon operator has no scalar square root, how does a first-order equation — the Dirac pair — imply it? The answer, worked out below, is that the square root is **not scalar**: it is the gradient acting on the two chiral halves, with the mass the same scalar in each and the gradients exchanging them. The scalar obstruction of the spin-$0$ article is exactly the evidence that the square root must be operator-valued. Here $k_m=mc/\hbar$ is the mass wave number, the inverse of the mass length.
 
@@ -165,42 +165,45 @@ $$
 
 so cancelling the first-order terms requires $B = -A$ together with $A\vec e_k + \vec e_k A = 0$ for $k = x,y,z$. An element that anticommutes with all three quaternion units must vanish, and the reason is visible one unit at a time: the condition for $\vec e_k$ removes the scalar coefficient together with the coefficient of $\vec e_k$, so the three conditions hold together only on the zero element. With $A = 0$ the constant term is $AB = -A^2 = 0$, which cannot equal $-k_m^{2}$ for a finite mass, $k_m\neq0$, and no scalar factorisation exists.
 
-The two results are consistent, and their consistency is the whole point. The Dirac square root is **not** a scalar factor of the form $\tilde{\nabla} + A$ multiplying another scalar factor. It is an operator on the pair of chiral halves. On the pair the equation is one equation for two halves,
+The two results are consistent, and their consistency is the whole point. The Dirac square root is **not** a scalar factor of the form $\tilde{\nabla} + A$ multiplying another scalar factor. It is an operator on the pair of chiral halves. On the pair the equation is two equations for two halves,
 
 $$
-(\mathbb{D} - k_m)(\tilde{Ξ}_{\mathrm{sp},L},\tilde{Ξ}_{\mathrm{sp},R}) = (0,0),
+\tilde\nabla\tilde{Ξ}_{\mathrm{sp},R}=k_m\tilde{Ξ}_{\mathrm{sp},L},
+\qquad
+\tilde\nabla^{\natural}\tilde{Ξ}_{\mathrm{sp},L}=k_m\tilde{Ξ}_{\mathrm{sp},R},
 $$
 
-and its opposite-mass partner is the map $\mathbb{D} + k_m$. *Operator and Calculus Conventions* writes the same pair as one operator on $\mathbb{B}\oplus\mathbb{B}$, $\mathbb{D}\tilde{Ξ}_{\mathrm{sp}} = (\tilde\nabla\tilde{Ξ}_{\mathrm{sp},R},\tilde\nabla^{\natural}\tilde{Ξ}_{\mathrm{sp},L})$, with $\mathbb{D}^2$ equal to $\Box$ on each half and the massive equation $(\mathbb{D} - k_m)\tilde{Ξ}_{\mathrm{sp}} = 0$; the letter names one object in the two articles. Because $m$ is central, the two mass-shifted maps compose cleanly, and applying $\mathbb{D} + k_m$ and then $\mathbb{D} - k_m$ gives
+and its opposite-mass partner is the same two lines with $k_m$ written $-k_m$. *Operator and Calculus Conventions*, §*The Two First-Order Equations and Their Symbol*, writes the same pair and no letter for the two together. Because $m$ is central, the two lines compose cleanly, and composing each with the conjugate of the other gives
 
 $$
-\boxed{\;(\mathbb{D} - k_m)(\mathbb{D} + k_m)(\tilde{Ξ}_{\mathrm{sp},L},\tilde{Ξ}_{\mathrm{sp},R})
-= \left((\Box-k_m^{2})\tilde{Ξ}_{\mathrm{sp},L},\ (\Box-k_m^{2})\tilde{Ξ}_{\mathrm{sp},R}\right)\;},
+\boxed{\;(\Box-k_m^{2})\tilde{Ξ}_{\mathrm{sp},L}=0,\qquad(\Box-k_m^{2})\tilde{Ξ}_{\mathrm{sp},R}=0\;},
 $$
 
-the two mass-gradient terms cancelling because the mass passes through the gradients.
+one equation per half, the two mass-gradient terms cancelling because the mass passes through the gradients.
 
-Equivalently, the pair is the statement that the pair operator takes $\tilde{Ξ}_{\mathrm{sp}}$ to $k_m\tilde{Ξ}_{\mathrm{sp}}$,
-
-$$
-\mathbb{D}\tilde{Ξ}_{\mathrm{sp}} = k_m\tilde{Ξ}_{\mathrm{sp}} ,
-$$
-
-so that $\mathbb{D}^2\tilde{Ξ}_{\mathrm{sp}} = k_m^{2}\tilde{Ξ}_{\mathrm{sp}}$ is $(\Box-k_m^{2})\tilde{Ξ}_{\mathrm{sp}} = 0$ read on each half. This is the operator-valued square root: no scalar $\tilde\nabla + A$ works, as the obstruction showed, but the pair operator built from the conjugate pair does, because its square is the central $\Box$ on each half; the composition of the two mass-shifted maps is the central $\Box-k_m^{2}$ on each half. The obstruction identifies precisely the missing ingredient: a scalar square root would need an element anticommuting with all three vector units $\vec e_k$, $k=x,y,z$, and no biquaternion does; an operator-valued square root needs only that the **two different gradients cancel each other's vector parts**, which the conjugate pair does. The spin-$0$ no-go and the operator-valued square root are therefore one obstruction read two ways. This is what it means, in this framework, that the square root lives in the pair and not in the centre: the scalar field lives in $\mathbb{B}_{C}$, and the square root requires the exchange of two halves that only the pair carries.
+Equivalently, the pair is the statement that each gradient carries one half into $k_m$ times the other, and composing a line with the conjugate of the other returns $k_m^{2}$ times that half, which is $(\Box-k_m^{2})\tilde{Ξ}_{\mathrm{sp}} = 0$ read on each half. This is the operator-valued square root: no scalar $\tilde\nabla + A$ works, as the obstruction showed, but the pair of lines built from the conjugate pair does, because each line composed with its partner is the central $\Box$ on its half; the composition of the two mass-shifted maps is the central $\Box-k_m^{2}$ on each half. The obstruction identifies precisely the missing ingredient: a scalar square root would need an element anticommuting with all three vector units $\vec e_k$, $k=x,y,z$, and no biquaternion does; an operator-valued square root needs only that the **two different gradients cancel each other's vector parts**, which the conjugate pair does. The spin-$0$ no-go and the operator-valued square root are therefore one obstruction read two ways. This is what it means, in this framework, that the square root lives in the pair and not in the centre: the scalar field lives in $\mathbb{B}_{C}$, and the square root requires the exchange of two halves that only the pair carries.
 
 ## The Square on the Chiral Pair
 
-The pair reading is written on the ordered pair of elements. Write $\tilde{Ξ}_{\mathrm{sp}} = (\tilde{Ξ}_{\mathrm{sp},L},\tilde{Ξ}_{\mathrm{sp},R})$ and let the pair operator of *Operator and Calculus Conventions* act,
+The pair reading is written on the ordered pair of elements. Write $\tilde{Ξ}_{\mathrm{sp}} = (\tilde{Ξ}_{\mathrm{sp},L},\tilde{Ξ}_{\mathrm{sp},R})$ and write the two lines,
 
 $$
-\mathbb{D}(\tilde{Ξ}_{\mathrm{sp},L},\tilde{Ξ}_{\mathrm{sp},R}) = \left(\tilde\nabla\tilde{Ξ}_{\mathrm{sp},R},\ \tilde\nabla^{\natural}\tilde{Ξ}_{\mathrm{sp},L}\right),
+\tilde\nabla\tilde{Ξ}_{\mathrm{sp},R}=k_m\tilde{Ξ}_{\mathrm{sp},L},
 \qquad
-\mathbb{D}^2(\tilde{Ξ}_{\mathrm{sp},L},\tilde{Ξ}_{\mathrm{sp},R}) = \left(\Box\tilde{Ξ}_{\mathrm{sp},L},\ \Box\tilde{Ξ}_{\mathrm{sp},R}\right),
+\tilde\nabla^{\natural}\tilde{Ξ}_{\mathrm{sp},L}=k_m\tilde{Ξ}_{\mathrm{sp},R},
 $$
 
-the second equality because each half is acted on by one product of the gradient with its conjugate, $\tilde\nabla\tilde\nabla^{\natural} = \tilde\nabla^{\natural}\tilde\nabla = \Box$ being central. The operator is the pair written once and not a new object: it holds no element beyond the two gradients, and the mass acts on each half as the same scalar.
+and compose each with the conjugate of the other,
 
-The single equation $(\mathbb{D} - k_m)\tilde{Ξ}_{\mathrm{sp}} = 0$ is the pair, one member per chiral half:
+$$
+\tilde\nabla^{\natural}\tilde\nabla\tilde{Ξ}_{\mathrm{sp},R}=\Box\tilde{Ξ}_{\mathrm{sp},R},
+\qquad
+\tilde\nabla\tilde\nabla^{\natural}\tilde{Ξ}_{\mathrm{sp},L}=\Box\tilde{Ξ}_{\mathrm{sp},L},
+$$
+
+because each half is acted on by one product of the gradient with its conjugate, $\tilde\nabla\tilde\nabla^{\natural} = \tilde\nabla^{\natural}\tilde\nabla = \Box$ being central. The pair is two lines and not a new object: it holds no element beyond the two gradients, and the mass acts on each half as the same scalar.
+
+The pair is one member per chiral half:
 
 $$
 \tilde\nabla\tilde{Ξ}_{\mathrm{sp},R} = k_m\tilde{Ξ}_{\mathrm{sp},L},
@@ -208,28 +211,21 @@ $$
 \tilde\nabla^{\natural}\tilde{Ξ}_{\mathrm{sp},L} = k_m\tilde{Ξ}_{\mathrm{sp},R} .
 $$
 
-**The chirality.** The two halves carry the signs $-1$ and $+1$, one sign per half; only the difference of the two signs carries content. The pair operator **exchanges** the halves, because each of its two members carries one half into the other, and the mass **keeps** them, because it multiplies each half by the same scalar. That is the precise content of the phrase *a coupling between the halves*: no term carries $m$ from one half to the other; the gradient does the carrying, and the mass, the same in both halves, is what the carried field is set equal to. The two signs are the image on the pair of the central grading $i\tilde{Ζ}_{\mathrm{ad}}$ of the complexified algebra, outside $\mathbb{B}$ itself, which squares to the unit $e_t$; no element of $\mathbb{B}$ supplies it. The subscripts $L$ and $R$ are the letters the Dirac article gives the two chiral halves; here they label the two members of the pair, and nothing in this section computes them. Squaring is what removes the exchange: $\mathbb{D}^2$ gives $\Box\tilde{Ξ}_{\mathrm{sp},L}$ in the first member and $\Box\tilde{Ξ}_{\mathrm{sp},R}$ in the second, and no half is carried into the other.
+**The chirality.** The two halves carry the signs $-1$ and $+1$, one sign per half; only the difference of the two signs carries content. The pair **exchanges** the halves, because each of its two lines carries one half into the other, and the mass **keeps** them, because it multiplies each half by the same scalar. That is the precise content of the phrase *a coupling between the halves*: no term carries $m$ from one half to the other; the gradient does the carrying, and the mass, the same in both halves, is what the carried field is set equal to. The two signs are the image on the pair of the central grading $i\tilde{Ζ}_{\mathrm{ad}}$ of the complexified algebra, outside $\mathbb{B}$ itself, which squares to the unit $e_t$; no element of $\mathbb{B}$ supplies it. The subscripts $L$ and $R$ are the letters the Dirac article gives the two chiral halves; here they label the two members of the pair, and nothing in this section computes them. Composing is what removes the exchange: the composition gives $\Box\tilde{Ξ}_{\mathrm{sp},L}$ from the first line and $\Box\tilde{Ξ}_{\mathrm{sp},R}$ from the second, and no half is carried into the other.
 
-**The two equations, side by side.** The name now covers two statements, and they must not be read as one. The **element** equation is the pair
+**The two statements, side by side.** The name now covers two statements, and they must not be read as one. The **first-order** statement is the pair
 
 $$
 \tilde{\nabla}\tilde{Ξ}_{\mathrm{sp},R} = k_m\tilde{Ξ}_{\mathrm{sp},L}, \qquad \tilde{\nabla}^{\natural}\tilde{Ξ}_{\mathrm{sp},L} = k_m\tilde{Ξ}_{\mathrm{sp},R},
 $$
 
-with two gradients, one for each chiral half. The **pair** equation is the single equation
+with two gradients, one for each chiral half. The **second-order** statement is the composition
 
 $$
-\left(\mathbb{D} - k_m\right)\tilde{Ξ}_{\mathrm{sp}} = 0,
+(\Box-k_m^{2})\tilde{Ξ}_{\mathrm{sp},L} = 0, \qquad (\Box-k_m^{2})\tilde{Ξ}_{\mathrm{sp},R} = 0,
 $$
 
-with one operator on the two halves, the signs naming them. The second is the compact form of the first: the two members are the same two gradients, the exchange of halves is what turns one equation into two, and the mass, the same in both, is what couples them. The identity
-
-$$
-\left(\mathbb{D} - k_m\right)\left(\mathbb{D} + k_m\right) = \mathbb{D}^2 - m^2 ,
-\qquad\text{which is}\qquad \Box-k_m^{2} \ \text{on each half},
-$$
-
-is the operator identity of the previous section, and both are the statement that the mass enters the square squared.
+one scalar operator on each half. The second is the square of the first: the two lines are the same two gradients, the exchange of halves is what turns one line into the other, and the mass, the same in both, is what the carried half is set equal to. The identity behind it is the one of the previous section, the composition of the two lines giving $\Box-k_m^{2}$ on each half, and both statements say that the mass enters the square squared.
 
 ## The Kernel and the Solution Space
 
@@ -293,15 +289,15 @@ The mass is therefore what makes the square **imply** the first-order equation r
 
 The transfer from the first-order pair to the second-order equation can now be accounted for.
 
-**Carried.** The mass shell, with the relativistic dispersion $E^2 = \vec p^2c^2 + m^2c^4$; the mass-squared coefficient of the second-order operator, produced by the coupling rather than inserted; the decoupling of the four coefficient fields, a consequence of the centrality of $\Box$; the exchange of the two halves by the pair operator, which is what makes it carry one chiral half into the other in the first-order equation; and the statement that both chiral halves obey the same second-order equation, which is the pair identity $(\mathbb{D} - k_m)(\mathbb{D} + k_m) = \Box-k_m^{2}$ read on each half.
+**Carried.** The mass shell, with the relativistic dispersion $E^2 = \vec p^2c^2 + m^2c^4$; the mass-squared coefficient of the second-order operator, produced by the coupling rather than inserted; the decoupling of the four coefficient fields, a consequence of the centrality of $\Box$; the exchange of the two halves by the two lines, which is what makes each line carry one chiral half into the other in the first-order equation; and the statement that both chiral halves obey the same second-order equation, which is the pair identity, the composition of the two lines giving $\Box-k_m^{2}$ read on each half.
 
 **Not carried.** The sign of the mass, the chirality of each half, the amplitude carried by each half, and the relation between the halves at each frequency branch. The square is even in $m$ and chirality-blind; it cannot distinguish a solution of the pair from a second-order solution that violates the pair. The passage is therefore one-way: every solution of the first-order pair is a solution of the second-order equation, and not conversely.
 
 **Not claimed.** The square does not turn the spin-$\tfrac12$ field into a spin-$0$ field. The Klein–Gordon equation is obeyed by each **component**, but the object that obeys it is a pair of biquaternion fields: the reduction is a statement about the operator, not about what the field is. The genuine spin-$0$ field of the companion article lives in the centre $\mathbb{B}_{C}$, where the Klein–Gordon equation is the whole of the dynamics; the spin-$\tfrac12$ field lives in the pair, where the Klein–Gordon equation is the square's shadow and the first-order pair is the dynamics. The two share the operator and the mass shell, and nothing else. That is the precise sense in which this subcategory closes the loop to the spin-$0$ subcategory without absorbing it: the second-order equation is recovered, and what is recovered is exactly the part of the spin-$\tfrac12$ theory that the spin-$0$ theory already contained.
 
-There is a final structural remark. The passage from the pair to the square is the passage from an operator that exchanges the halves to one that acts in each. In the pair operator the gradient exchanges the halves and the mass acts in each; composing the two mass-shifted maps cancels the exchange and leaves $\Box-k_m^{2}$ in each half, so what has been traced out is exactly the exchange. The sign attached to each half is the one the supersymmetric structure of the first-order operator exploits, and *Supersymmetric Quantum Physics in the Biquaternion Framework* develops it. The Klein–Gordon equation is the bosonic shadow of the fermionic square root: it is what remains of a first-order operator once the exchange of the two halves is cancelled.
+There is a final structural remark. The passage from the pair to the square is the passage from an operator that exchanges the halves to one that acts in each. In the two lines the gradient exchanges the halves and the mass acts in each; composing the two mass-shifted maps cancels the exchange and leaves $\Box-k_m^{2}$ in each half, so what has been traced out is exactly the exchange. The sign attached to each half is the one the supersymmetric structure of the first-order operator exploits, and *Supersymmetric Quantum Physics in the Biquaternion Framework* develops it. The Klein–Gordon equation is the bosonic shadow of the fermionic square root: it is what remains of a first-order operator once the exchange of the two halves is cancelled.
 
-In the algebra the only identities used are $\tilde\nabla\tilde\nabla^\natural = \tilde\nabla^\natural\tilde\nabla = \Box$, which is exact, and the mass-shell condition $\tilde P_{\Phi}\tilde P_{\Phi}^{\natural} = -m^{2}\,c^{2}$, which is the definition of the on-shell four-momentum; no array enters. The pair reading uses the same identity twice, once for each half: $\mathbb{D}^2$ is $\tilde\nabla\tilde\nabla^{\natural}$ on one half and $\tilde\nabla^{\natural}\tilde\nabla$ on the other. No array enters that reading either.
+In the algebra the only identities used are $\tilde\nabla\tilde\nabla^\natural = \tilde\nabla^\natural\tilde\nabla = \Box$, which is exact, and the mass-shell condition $\tilde P_{\Phi}\tilde P_{\Phi}^{\natural} = -m^{2}\,c^{2}$, which is the definition of the on-shell four-momentum; no array enters. The pair reading uses the same identity twice, once for each half: the composition is $\tilde\nabla\tilde\nabla^{\natural}$ on one half and $\tilde\nabla^{\natural}\tilde\nabla$ on the other. No array enters that reading either.
 
 ## The Converse Direction
 
@@ -351,7 +347,7 @@ This does not contradict the one-way statement of *What the Square Carries and W
 
 If the first half is called a potential and the second a field strength, the pair says that the field is the derivative of the potential. The gradient alone suggests the redundancy such a description usually carries: if $\tilde\nabla\kappa = 0$, the potentials $\tilde{Ξ}_{\mathrm{sp},R}$ and $\tilde{Ξ}_{\mathrm{sp},R} + \kappa$ generate the same second half. The freedom does not survive the pair, and it is the mass shell that removes it. The condition $\tilde\nabla\kappa = 0$ is the massless chiral equation, so $\kappa$ obeys $\Box\kappa = 0$ while the potential obeys $\Box\tilde{Ξ}_{\mathrm{sp},R} = k_m^{2}\tilde{Ξ}_{\mathrm{sp},R}$; the sum obeys neither, and the second member fails by exactly $m\kappa$. A potential off the mass shell generates no solution of the pair. In the two-term form there is therefore no redundancy to quotient out: the first half is physical data, and the pair fixes the whole field from it.
 
-The four-scalar form of the same construction, in Kassandrov's treatment, does carry a genuine redundancy, and the difference is worth recording because it is where the phrase *the Dirac field is a gauge field* comes from. There the potential is a set of four Klein–Gordon scalars $\xi_{\mathrm{scl}}$ and the field is $\xi = D^*\xi_{\mathrm{scl}}$, for the source's first-order operator $D^*$, whose source identity is the source's own equation $DD^* = \Box-k_m^{2}$. The corpus's form of that operator is the map $\mathbb{D} + k_m$ on the pair, whose partner $\mathbb{D} - k_m$ composes with it to $\Box-k_m^{2}$ in each half, as *The Square on the Chiral Pair* shows; the two differ in the carrier, four scalars there and two biquaternion halves here. Two potentials differing by $\kappa$ with $D^*\kappa = 0$ give the same field, and such a $\kappa$ is itself a Klein–Gordon solution, since $DD^*\kappa = 0$. The kernel of $D^*$ is the conjugate Dirac equation, which is the shape the electromagnetic case takes: there the potentials are defined up to the gradient $\tilde\nabla\alpha$, the field is blind to it, and the gauge functions that survive the Lorenz condition are the ones with $\Box\alpha = 0$ — the same two-step structure, with the constraint on the gauge function carried by the field equation instead of by a subsidiary condition. The corpus keeps the two-term form, which is sharper, a doublet rather than a quadruple, and which has nothing to quotient out.
+The four-scalar form of the same construction, in Kassandrov's treatment, does carry a genuine redundancy, and the difference is worth recording because it is where the phrase *the Dirac field is a gauge field* comes from. There the potential is a set of four Klein–Gordon scalars $\xi_{\mathrm{scl}}$ and the field is $\xi = D^*\xi_{\mathrm{scl}}$, for the source's first-order operator $D^*$, whose source identity is the source's own equation $DD^* = \Box-k_m^{2}$. The corpus's form of that operator is the pair of lines, which compose to $\Box-k_m^{2}$ in each half, as *The Square on the Chiral Pair* shows; the two differ in the carrier, four scalars there and two biquaternion halves here. Two potentials differing by $\kappa$ with $D^*\kappa = 0$ give the same field, and such a $\kappa$ is itself a Klein–Gordon solution, since $DD^*\kappa = 0$. The kernel of $D^*$ is the conjugate Dirac equation, which is the shape the electromagnetic case takes: there the potentials are defined up to the gradient $\tilde\nabla\alpha$, the field is blind to it, and the gauge functions that survive the Lorenz condition are the ones with $\Box\alpha = 0$ — the same two-step structure, with the constraint on the gauge function carried by the field equation instead of by a subsidiary condition. The corpus keeps the two-term form, which is sharper, a doublet rather than a quadruple, and which has nothing to quotient out.
 
 One step of the source's argument is not adopted. Kassandrov reads the construction as evidence that the transformation law of the field is not forced, taking the generating half to transform as a pair of scalars and the generated half then transforming nonlinearly. The corpus does not need that step and does not take it: the Lorentz action used here is the left action of the unit-norm biquaternions on the algebra, one action for every field, and a second realization on the coefficients is a different theory of the transformation law rather than a consequence of the pair.
 
@@ -401,9 +397,9 @@ The source builds infinite chains of solutions by feeding the generated half bac
 
 The biquaternionic Dirac equation is the first-order pair $\tilde{\nabla}\tilde{Ξ}_{\mathrm{sp},R} = k_m\tilde{Ξ}_{\mathrm{sp},L}$, $\tilde{\nabla}^{\natural}\tilde{Ξ}_{\mathrm{sp},L} = k_m\tilde{Ξ}_{\mathrm{sp},R}$. Applying $\tilde{\nabla}^{\natural}$ to the first member and substituting the second gives $\Box\tilde{Ξ}_{\mathrm{sp},R} = k_m^{2}\tilde{Ξ}_{\mathrm{sp},R}$, and symmetrically for $\tilde{Ξ}_{\mathrm{sp},L}$; both chiral halves obey the Klein–Gordon equation $(\Box-k_m^{2})\tilde{Ξ}_{\mathrm{sp}} = 0$ with the series d'Alembertian $\Box = \partial^2/\partial R_t^2 + \Delta$, which in physical units is $(\Box - k_m^{2})\tilde{Ξ}_{\mathrm{sp}} = 0$. The square is not the plain square: $\tilde\nabla^2 \neq \Box$, because the timelike unit $e_t$ commutes with the vector units and leaves the mixed term $2\,\partial/\partial R_t\,\vec\nabla$, and it is the conjugate product $\tilde\nabla\tilde\nabla^\natural$ that cancels it. The conjugate is what completes the square, and the two facts it uses — the pairwise anticommutation of the three vector units and the commuting of $e_t$ — are read from the multiplication table.
 
-On the pair the same square is written as one operator. The pair operator $\mathbb{D}$, which exchanges the two chiral halves, gives $\Box$ in each half, because each half is acted on by one product of the gradient with its conjugate; the mass is the same scalar in both halves, so the single equation $(\mathbb{D} - k_m)\tilde{Ξ}_{\mathrm{sp}} = 0$ splits by chirality into the pair, and $(\mathbb{D} - k_m)(\mathbb{D} + k_m)$ is $\Box-k_m^{2}$ on each half. The two products are formed at once here, one per half, and the cancellation is the conjugate cancellation of the algebra; what the pair adds is the chirality that the square then loses.
+On the pair the same square is written as two lines. The two lines exchange the two chiral halves and each composition gives $\Box$ in one half, because each half is acted on by one product of the gradient with its conjugate; the mass is the same scalar in both halves, so each line composed with the conjugate of the other is $\Box-k_m^{2}$ on its half. The two products are formed at once here, one per half, and the cancellation is the conjugate cancellation of the algebra; what the pair adds is the chirality that the square then loses.
 
-The square root is not scalar. The companion article on the Klein–Gordon equation proves that $\Box - k_m^{2}$ has no first-order scalar factorisation in $\mathbb{B}$, because a scalar coefficient would have to anticommute with all three quaternion units and none does. The Dirac square root escapes the obstruction by being operator-valued and by exchanging the halves: it is the conjugate pair $(\tilde{\nabla},\tilde{\nabla}^{\natural})$ acting on the two chiral halves, with the mass the same scalar in each. Written on the pair, the operator identity is $(\mathbb{D} - k_m)(\mathbb{D} + k_m) = \Box-k_m^{2}$ in each half; written as $\mathbb{D}\tilde{Ξ}_{\mathrm{sp}} = k_m\tilde{Ξ}_{\mathrm{sp}}$, it is $\mathbb{D}^2 = \Box$ in each half. The scalar no-go and the operator-valued square root are the same multiplication table seen from two sides.
+The square root is not scalar. The companion article on the Klein–Gordon equation proves that $\Box - k_m^{2}$ has no first-order scalar factorisation in $\mathbb{B}$, because a scalar coefficient would have to anticommute with all three quaternion units and none does. The Dirac square root escapes the obstruction by being operator-valued and by exchanging the halves: it is the conjugate pair $(\tilde{\nabla},\tilde{\nabla}^{\natural})$ acting on the two chiral halves, with the mass the same scalar in each. Written as the pair, the identity is that composing the two lines gives $\Box-k_m^{2}$ in each half; written as the two lines with the mass moved to the other side, it is that each line composed with its partner is $\Box$ in each half. The scalar no-go and the operator-valued square root are the same multiplication table seen from two sides.
 
 The square carries the mass shell $\tilde P_{\Phi}\tilde P_{\Phi}^{\natural} = -m^{2}\,c^{2}$, hence $E^2 = \vec p^2c^2 + m^2c^4$, and the mass-squared coefficient of the second-order operator; it does not carry the sign of the mass, the chirality of each half, or the relation between the halves that selects the first-order solution space from the larger second-order one. At fixed three-momentum the pair's second-order space has complex dimension sixteen and the first-order equation selects eight of them, so the square is a necessary and not a sufficient condition. The Klein–Gordon operator is the bosonic shadow of a first-order object that exchanges the two halves.
 
@@ -417,7 +413,7 @@ The converse holds exactly for the free pair. Read the first member as a definit
 | $e_t = 1, \vec e_x, \vec e_y, \vec e_z$ | Quaternion basis, $\vec e_k^2 = -e_t$ |
 | $i$ | Central scalar imaginary, $i^2 = -1$ |
 | $\mathbb{B}_{\Phi}$, $\mathbb{B}_{\Psi}$ | Anti-Hermitian (material) and Hermitian (informational) sectors |
-| $\mathbb{D}$ | Pair operator on $\mathbb{B}\oplus\mathbb{B}$, $\mathbb{D}(\tilde{Ξ}_{\mathrm{sp},L},\tilde{Ξ}_{\mathrm{sp},R}) = (\tilde\nabla\tilde{Ξ}_{\mathrm{sp},R},\tilde\nabla^{\natural}\tilde{Ξ}_{\mathrm{sp},L})$; it exchanges the chiral halves, $\mathbb{D}^2$ is $\Box$ in each half, and $(\mathbb{D} - k_m)\tilde{Ξ}_{\mathrm{sp}} = 0$ is the pair |
+| $\tilde\nabla\tilde{Ξ}_{\mathrm{sp},R}=k_m\tilde{Ξ}_{\mathrm{sp},L}$, $\tilde\nabla^{\natural}\tilde{Ξ}_{\mathrm{sp},L}=k_m\tilde{Ξ}_{\mathrm{sp},R}$ | The pair, as two first-order equations; the two lines exchange the chiral halves, and each composed with its partner is $\Box$ in one half |
 | $i\tilde{Ζ}_{\mathrm{ad}}$ | Central grading of the complexified algebra, outside $\mathbb{B}$; the signs $-1$ and $+1$ of the pair are its image |
 | $\tilde{\nabla} = e_t\partial/\partial R_t + \sum_{k=x,y,z}\vec e_k\,\partial/\partial R_k$ | Biquaternionic gradient, the one-sided Dirac operator, acting by multiplication on the left |
 | $\tilde{\nabla}^{\natural}$ | Quaternion conjugate gradient |

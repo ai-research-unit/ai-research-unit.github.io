@@ -12,7 +12,7 @@ This article is a first attempt at that extension. Its subject is the canonical 
 
 The article has to be read with a clear division in mind, and we state it at the outset because it governs everything that follows.
 
-- **The standard part.** The biquaternion Dirac equation is the one-sided chiral pair, and it is the single equation $(\mathbb{D}-k_m)\tilde{Ξ}_{\mathrm{sp}}=0$ on the element, where $\mathbb{D}$ is the pair operator of *Operator and Calculus Conventions*, defined on $\mathbb{B}\oplus\mathbb{B}$ by the gradient and its conjugate. The two-sided equation of Kravchenko — the spatial gradient acting from the left and the mass from the right through $\vec e_z$ — is a different operator and is not quantized here. The canonical quantization of the one-sided equation — the Lagrangian, the conjugate momentum, the equal-time anticommutators, the mode expansion, the mode algebra, the Hamiltonian, and the normal-ordering constant — is textbook quantum field theory, transcribed into the notation of this series. None of it is new, and none of it depends on the biquaternion structure beyond the kinematical conventions already fixed by the companion articles.
+- **The standard part.** The biquaternion Dirac equation is the one-sided chiral pair, and it is the two first-order equations $\tilde\nabla\tilde{Ξ}_{\mathrm{sp},R}=k_m\tilde{Ξ}_{\mathrm{sp},L}$ and $\tilde\nabla^{\natural}\tilde{Ξ}_{\mathrm{sp},L}=k_m\tilde{Ξ}_{\mathrm{sp},R}$ on the element, the pair of *Operator and Calculus Conventions*, §*The Two First-Order Equations and Their Symbol*. The pair operator that the corpus once wrote for the two together is retired, and it is not used here. The two-sided equation of Kravchenko — the spatial gradient acting from the left and the mass from the right through $\vec e_z$ — is a different operator and is not quantized here. The canonical quantization of the one-sided equation — the Lagrangian, the conjugate momentum, the equal-time anticommutators, the mode expansion, the mode algebra, the Hamiltonian, and the normal-ordering constant — is textbook quantum field theory, transcribed into the notation of this series. None of it is new, and none of it depends on the biquaternion structure beyond the kinematical conventions already fixed by the companion articles.
 - **The open part.** What is *not* standard, and what this article cannot settle, is the intrinsic formulation of the quantization in the algebra $\mathbb{B}$ itself: which pairing of the algebra the $\mathbb{B}$-intrinsic Lagrangian and conjugate momentum are built from, since the algebra alone does not single one out; what the biquaternion Fock space is; and how the $\mathbb{Z}/2$ grading required by fermionic statistics is to be embedded in $\mathbb{B}$.
 
 We therefore make no claim that the extension is canonical in the biquaternion framework. The claim is narrower: the extension can be carried out on the elements of $\mathbb{B}$ with the parent article's solutions, and it supplies exactly the operator structure — anticommuting modes and a fermion-parity grading — that the KMS article identifies as missing. Whether that structure lifts to a genuinely biquaternionic one is the open question this article is meant to expose.
@@ -21,7 +21,7 @@ The article is organized as follows. The next section fixes the classical field 
 
 The next section gives the Hamiltonian, the normal-ordering constant, and the four-momentum and charge. A section on spin and statistics records why anticommutation is forced here, without developing the full spin–statistics theorem, which the companion article *The Spin–Statistics Theorem in Biquaternionic Form* treats on its own. A section relates the result to the KMS thermal-state framework. The article then gives an explicit accounting of what is standard and what is open. It closes with the summary, the notation table, and further reading.
 
-Every derivative of the field in this article is the corpus gradient $\tilde\nabla$ or its conjugate $\tilde\nabla^{\natural}$, defined once in §*The Pair Operator and Its Symbol*: $\tilde\nabla=\sum_\mu e_\mu\,\partial/\partial R_\mu$ and $\tilde\nabla^{\natural}=\sum_\mu\varepsilon_\mu e_\mu\,\partial/\partial R_\mu$ with $\varepsilon=(1,-1,-1,-1)$. No other derivative operator is written. No operator below is a basis operator named by an abstract glyph: each is an element of $\mathbb{B}$, an action written out with its sides in position — the element multiplied on the left and the element multiplied on the right, both visible — or a number. Where an operator is two-sided, the two elements are named in the sentence that introduces it.
+Every derivative of the field in this article is the corpus gradient $\tilde\nabla$ or its conjugate $\tilde\nabla^{\natural}$, defined once in §*The Two First-Order Equations and Their Symbol*: $\tilde\nabla=\sum_\mu e_\mu\,\partial/\partial R_\mu$ and $\tilde\nabla^{\natural}=\sum_\mu\varepsilon_\mu e_\mu\,\partial/\partial R_\mu$ with $\varepsilon=(1,-1,-1,-1)$. No other derivative operator is written. No operator below is a basis operator named by an abstract glyph: each is an element of $\mathbb{B}$, an action written out with its sides in position — the element multiplied on the left and the element multiplied on the right, both visible — or a number. Where an operator is two-sided, the two elements are named in the sentence that introduces it.
 
 ## The Classical Field and Its Conjugate Momentum
 
@@ -49,15 +49,17 @@ $$
 
 with $\nabla=\sum_k\vec e_k\,\partial/\partial R_k$ the spatial gradient, is a different operator: the spatial gradient acts from the left, the mass from the right through $\vec e_z$, and the mass term carries the algebra's complex conjugation $\overline{\cdot}$ — a bar over the field, the coefficient conjugation, and it is not the Dirac adjoint $\bar{\tilde{Ξ}}_{\mathrm{sp}}$ of the sections below. The two are related by the explicit dictionary with conjugation in the mass term, in the parent article's section of that name, but they are not the same equation, and their mass terms are of different kinds. This article quantizes the one-sided pair; the two-sided equation is recorded only to keep the two apart.
 
-The solutions article works on the elements themselves. An element of $\mathbb{B}$ has four complex coefficients, exactly the four components of the Dirac spinor, so the element is the carrier of the field and no separate module is introduced; the two chiral halves of the pair are the two parts $\tilde{Ξ}_{\mathrm{sp},L}$ and $\tilde{Ξ}_{\mathrm{sp},R}$ of that one element. There the pair is the single equation
+The solutions article works on the elements themselves. An element of $\mathbb{B}$ has four complex coefficients, exactly the four components of the Dirac spinor, so the element is the carrier of the field and no separate module is introduced; the two chiral halves of the pair are the two parts $\tilde{Ξ}_{\mathrm{sp},L}$ and $\tilde{Ξ}_{\mathrm{sp},R}$ of that one element. There the pair is the two equations
 
 $$
-\Big(\mathbb{D}-k_m\Big)\tilde{Ξ}_{\mathrm{sp}}=0,
+\tilde\nabla\tilde{Ξ}_{\mathrm{sp},R}=k_m\tilde{Ξ}_{\mathrm{sp},L},
+\qquad
+\tilde\nabla^{\natural}\tilde{Ξ}_{\mathrm{sp},L}=k_m\tilde{Ξ}_{\mathrm{sp},R},
 $$
 
 whose solutions, normalizations, and spin sums are established in the parent article and are used below without rederivation. Throughout, a mass enters only through the mass wave number $k_m=mc/\hbar$, so every $m$ below stands for $k_m$; the dimensionful constants are written out where a dimensional statement is at issue, in the inverse temperature $\beta=\frac{m\,c}{k_m\,k_{B}\,T}$, in the plane-wave phase $\mathrm{Sc}\frac{k_m\,\tilde{P}_{\Phi}\,\tilde{R}_{\Phi}^{\natural}}{m\,c}$, and in the mass-shell condition $\tilde P_{\Phi}\tilde P_{\Phi}^{\natural}=-m^{2}\,c^{2}$.
 
-### The Pair Operator and Its Symbol
+### The Two First-Order Equations and the Map They Define
 
 The gradient and its conjugate are the two derivative operators of the article, and they are fixed here once:
 
@@ -70,37 +72,39 @@ $$
 
 with $\Delta_Q:=\sum_k\partial^2/\partial R_k^2$ the spatial Laplacian. On the material sector $\partial/\partial R_t=-i\,\partial/\partial r'_t$, so $\Box=\Delta_Q-\partial^2/\partial {r'_t}^2$.
 
-The chiral pair is one operator on the pair of elements,
+The chiral pair is two first-order equations on two elements,
 
 $$
-\mathbb{D}\tilde{Ξ}_{\mathrm{sp}}=\bigl(\tilde\nabla\tilde{Ξ}_{\mathrm{sp},R},\ \tilde\nabla^{\natural}\tilde{Ξ}_{\mathrm{sp},L}\bigr),\qquad \mathbb{D}^2=\Box ,
+\tilde\nabla\tilde{Ξ}_{\mathrm{sp},R}=k_m\tilde{Ξ}_{\mathrm{sp},L},
+\qquad
+\tilde\nabla^{\natural}\tilde{Ξ}_{\mathrm{sp},L}=k_m\tilde{Ξ}_{\mathrm{sp},R},
 $$
 
-the pair operator of *Operator and Calculus Conventions*. It carries no matrix generator and is not a new object: on the pair, the mass is the off-diagonal coupling and $\mathbb{D}^2=\Box$ is the composition of the two gradients.
+and composing each line with the conjugate of the other gives $\Box$ on its half. The mass is the off-diagonal coupling of the two lines, and no letter is written for the two together (*Operator and Calculus Conventions*, §*The Two First-Order Equations and Their Symbol*).
 
-Read on one element — the carrier of the field, as the preceding paragraph fixes — its action is written out with the side in position:
+Read on one element — the carrier of the field, as the preceding paragraph fixes — the massless action is written out with the side in position:
 
 $$
-\mathbb{D}:\ \tilde X\longmapsto-\frac{\partial\tilde X}{\partial r'_t}\vec e_x-\sum_k\vec e_k\frac{\partial\tilde X}{\partial R_k}\vec e_y ,
+\tilde X\longmapsto-\frac{\partial\tilde X}{\partial r'_t}\vec e_x-\sum_k\vec e_k\frac{\partial\tilde X}{\partial R_k}\vec e_y ,
 $$
 
 with $Q_k$ running over the three spatial coordinates. The sides are the whole of the content. The time term carries $e_t$ on the left, and $e_t$ is the unit of the algebra, so that term is a single right multiplication by $\vec e_x$; each spatial term carries $\vec e_k$ on the left and $\vec e_y$ on the right. The operator is therefore **two-sided**, and the two elements are the ones just named. Its square is the d'Alembertian: the cross terms cancel because left and right multiplications commute and $\vec e_x\vec e_y=-\vec e_y\vec e_x$, the time term contributes $-\partial^2/\partial {r'_t}^2$ because $\vec e_x^2=-e_t$, and the spatial terms contribute $+\Delta_Q$ because $\vec e_y^2=-e_t$ and $\vec e_k\vec e_l+\vec e_l\vec e_k=-2\delta_{kl}e_t$. Verified on plane-wave symbols at $4\times10^{-15}$.
 
-Its symbol on a plane wave is the momentum form
+On a plane wave the same action is the momentum form
 
 $$
-\mathbb{D}_p:\ \tilde X\longmapsto i\frac{E_{\vec p}}{c}\,\tilde X\vec e_x-i\sum_k  p_k\,\vec e_k\tilde X\vec e_y,
-\qquad \mathbb{D}_p^2=p^{2} ,
+\tilde X\longmapsto i\frac{E_{\vec p}}{c}\,\tilde X\vec e_x-i\sum_k  p_k\,\vec e_k\tilde X\vec e_y,
+\qquad\text{whose square is } p^{2} ,
 $$
 
-with $p_0=E_{\vec p}/c$ and $p_k$ the physical momentum components, so that $p^2=p_0^2-\vec p^2=m^{2}\,c^{2}$. The lower index of $p_\mu$ is a label and not a metric contraction: the signs are carried by $\varepsilon$. That sign vector is what the plane wave produces. On $e^{-i(p\cdot x)/\hbar}$ the time derivative gives $-iE_{\vec p}/(\hbar c)$ and the spatial derivatives $+ip_k/\hbar$, so the time term contributes $i\frac{E_{\vec p}}{c}\tilde X\vec e_x$ and the spatial terms $-ip_k\vec e_k\tilde X\vec e_y$. On the material sector both objects satisfy $\mathbb{D}^2=\Box$ and $\mathbb{D}_p^2=p^2$, the second equal to $m^{2}c^{2}$ on the mass shell.
+with $p_0=E_{\vec p}/c$ and $p_k$ the physical momentum components, so that $p^2=p_0^2-\vec p^2=m^{2}\,c^{2}$. The lower index of $p_\mu$ is a label and not a metric contraction: the signs are carried by $\varepsilon$. That sign vector is what the plane wave produces. On $e^{-i(p\cdot x)/\hbar}$ the time derivative gives $-iE_{\vec p}/(\hbar c)$ and the spatial derivatives $+ip_k/\hbar$, so the time term contributes $i\frac{E_{\vec p}}{c}\tilde X\vec e_x$ and the spatial terms $-ip_k\vec e_k\tilde X\vec e_y$. On the material sector the derivative action and the momentum action square to $\Box$ and to $p^2$ respectively, the second equal to $m^{2}c^{2}$ on the mass shell.
 
 ### The Lagrangian
 
 The classical field theory is defined by the Lagrangian density
 
 $$
-\mathcal{L}=\bar{\tilde{Ξ}}_{\mathrm{sp}}\,(\mathbb{D}-k_m)\,\tilde{Ξ}_{\mathrm{sp}}
+\mathcal{L}
 =i\,\mathrm{Sc}\Big(\tilde{Ξ}_{\mathrm{sp}}^*\frac{\partial\tilde{Ξ}_{\mathrm{sp}}}{\partial r'_t}\Big)
 +i\sum_k\mathrm{Sc}\Big(\tilde{Ξ}_{\mathrm{sp}}^*\vec e_k\frac{\partial\tilde{Ξ}_{\mathrm{sp}}}{\partial R_k}\vec e_z\Big)
 -m\,\mathrm{Sc}\big(\tilde{Ξ}_{\mathrm{sp}}^*i\tilde{Ξ}_{\mathrm{sp}}\vec e_x\big),
@@ -112,7 +116,7 @@ $$
 \bar{\tilde{Ξ}}_{\mathrm{sp}}X:=\mathrm{Sc}\big(\tilde{Ξ}_{\mathrm{sp}}^*iX\vec e_x\big),
 $$
 
-the Hermitian conjugate followed by right multiplication by the timelike element $i\vec e_x$, the element that the time term of $\mathbb{D}$ carries. The scalar part is taken of the product, because a bilinear of an element-valued field is a number only through its scalar part. The three pieces are visible: no unit at all on the time derivative, the pair $\vec e_k$ on the left and $\vec e_z$ on the right on each spatial derivative, and the right multiplication by $i\vec e_x$ on the field itself. The $\vec e_z$ is $-\vec e_y\vec e_x$, the operator's right element times the adjoint's right factor; that minus sign turns the operator's $-i$ into the $+i$ displayed. Variation with respect to the adjoint $\bar{\tilde{Ξ}}_{\mathrm{sp}}$ returns the Dirac equation $(\mathbb{D}-k_m)\tilde{Ξ}_{\mathrm{sp}}=0$; variation with respect to $\tilde{Ξ}_{\mathrm{sp}}$ returns the conjugate equation, in which the operator acts on the adjoint, and it is the conjugate of the first.
+the Hermitian conjugate followed by right multiplication by the timelike element $i\vec e_x$, the element that the time term of the action carries. The scalar part is taken of the product, because a bilinear of an element-valued field is a number only through its scalar part. The three pieces are visible: no unit at all on the time derivative, the pair $\vec e_k$ on the left and $\vec e_z$ on the right on each spatial derivative, and the right multiplication by $i\vec e_x$ on the field itself. The $\vec e_z$ is $-\vec e_y\vec e_x$, the operator's right element times the adjoint's right factor; that minus sign turns the operator's $-i$ into the $+i$ displayed. Variation with respect to the adjoint $\bar{\tilde{Ξ}}_{\mathrm{sp}}$ returns the two lines, $\tilde\nabla\tilde{Ξ}_{\mathrm{sp},R}=k_m\tilde{Ξ}_{\mathrm{sp},L}$ and $\tilde\nabla^{\natural}\tilde{Ξ}_{\mathrm{sp},L}=k_m\tilde{Ξ}_{\mathrm{sp},R}$; variation with respect to $\tilde{Ξ}_{\mathrm{sp}}$ returns the conjugate equation, in which the operator acts on the adjoint, and it is the conjugate of the first.
 
 The Lagrangian is **real up to a four-divergence**. The mass term is real outright, because $\mathrm{Sc}(\tilde{Ξ}_{\mathrm{sp}}^*i\tilde{Ξ}_{\mathrm{sp}}\vec e_x)$ is real for every element — verified at $4.4\times10^{-16}$ over fifty random elements — and $m$ is real. Each derivative term differs from its conjugate by a total derivative, both identities holding exactly, and the sum of the two differences is
 
@@ -122,7 +126,7 @@ $$
 +i\sum_k\frac{\partial}{\partial R_k}\mathrm{Sc}\big(\tilde{Ξ}_{\mathrm{sp}}^*\vec e_k\tilde{Ξ}_{\mathrm{sp}}\vec e_z\big),
 $$
 
-verified at $3.6\times10^{-15}$ over thirty random fields with independent derivative values. This is the Lagrangian of a free Dirac field, with the pair operator in place of the matrix contraction.
+verified at $3.6\times10^{-15}$ over thirty random fields with independent derivative values. This is the Lagrangian of a free Dirac field, with the two lines in place of the matrix contraction.
 
 ### The Conjugate Momentum and Its Constraint
 
@@ -231,8 +235,10 @@ $$
 $$
 
 $$
-\sum_{r=1}^{2}\tilde{Ξ}_{\mathrm{sp},+}^{(r)}\big\langle\tilde{Ξ}_{\mathrm{sp},+}^{(r)},\tilde{Ξ}\big\rangle_{\mathrm D}=(\mathbb{D}_p+mc)\tilde{Ξ},\qquad
-\sum_{r=1}^{2}\tilde{Ξ}_{\mathrm{sp},-}^{(r)}\big\langle\tilde{Ξ}_{\mathrm{sp},-}^{(r)},\tilde{Ξ}\big\rangle_{\mathrm D}=(\mathbb{D}_p-mc)\tilde{Ξ}
+\sum_{r=1}^{2}\tilde{Ξ}_{\mathrm{sp},+}^{(r)}\big\langle\tilde{Ξ}_{\mathrm{sp},+}^{(r)},\tilde{Ξ}\big\rangle_{\mathrm D}
+=i\frac{E_{\vec p}}{c}\tilde{Ξ}\vec e_x-i\sum_kp_k\vec e_k\tilde{Ξ}\vec e_y+mc\,\tilde{Ξ},\qquad
+\sum_{r=1}^{2}\tilde{Ξ}_{\mathrm{sp},-}^{(r)}\big\langle\tilde{Ξ}_{\mathrm{sp},-}^{(r)},\tilde{Ξ}\big\rangle_{\mathrm D}
+=i\frac{E_{\vec p}}{c}\tilde{Ξ}\vec e_x-i\sum_kp_k\vec e_k\tilde{Ξ}\vec e_y-mc\,\tilde{Ξ}
 \qquad\text{for every }\tilde{Ξ}\in\mathbb{B}.
 $$
 
@@ -262,7 +268,7 @@ $$
 \tilde P_{\Phi}\tilde P_{\Phi}^{\natural}= -m^{2}\,c^{2},
 $$
 
-and the polarization equation $(\mathbb{D}_p-mc)\tilde{Ξ}_{\mathrm{sp},0}=0$ is the algebraic form of the momentum-space equation. Promoting the coefficients to operators is thus a transcription of the standard mode expansion onto the parent article's biquaternion plane waves; it is not, by itself, a derivation of the expansion from the algebra.
+and the polarization equation, $i\frac{E_{\vec p}}{c}\tilde{Ξ}_{\mathrm{sp},0}\vec e_x-i\sum_kp_k\vec e_k\tilde{Ξ}_{\mathrm{sp},0}\vec e_y-mc\,\tilde{Ξ}_{\mathrm{sp},0}=0$, is the algebraic form of the momentum-space equation. Promoting the coefficients to operators is thus a transcription of the standard mode expansion onto the parent article's biquaternion plane waves; it is not, by itself, a derivation of the expansion from the algebra.
 
 ## Anticommutators of the Mode Operators
 
@@ -301,8 +307,10 @@ $$
 The two phases are **opposite**: the positive-frequency term carries $e^{+i\vec p\cdot\vec\Delta}$ and the negative-frequency term $e^{-i\vec p\cdot\vec\Delta}$. The bracket carries untwisted outer products, while the spin sums of the preceding section are statements about the pairing; moving the right multiplication by $i\vec e_x$ that the pairing carries onto the argument, the same operator identities read
 
 $$
-\sum_r\tilde{Ξ}_{\mathrm{sp},+}^{(r)}\,\mathrm{Sc}\big(\tilde{Ξ}_{\mathrm{sp},+}^{(r)*}\tilde{Ξ}\big)=(\mathbb{D}_p+mc)\big(\tilde{Ξ}\,i\vec e_x\big),\qquad
-\sum_r\tilde{Ξ}_{\mathrm{sp},-}^{(r)}\,\mathrm{Sc}\big(\tilde{Ξ}_{\mathrm{sp},-}^{(r)*}\tilde{Ξ}\big)=(\mathbb{D}_p-mc)\big(\tilde{Ξ}\,i\vec e_x\big).
+\sum_r\tilde{Ξ}_{\mathrm{sp},+}^{(r)}\,\mathrm{Sc}\big(\tilde{Ξ}_{\mathrm{sp},+}^{(r)*}\tilde{Ξ}\big)
+=i\frac{E_{\vec p}}{c}\big(\tilde{Ξ}i\vec e_x\big)\vec e_x-i\sum_kp_k\vec e_k\big(\tilde{Ξ}i\vec e_x\big)\vec e_y+mc\,\big(\tilde{Ξ}i\vec e_x\big),\qquad
+\sum_r\tilde{Ξ}_{\mathrm{sp},-}^{(r)}\,\mathrm{Sc}\big(\tilde{Ξ}_{\mathrm{sp},-}^{(r)*}\tilde{Ξ}\big)
+=i\frac{E_{\vec p}}{c}\big(\tilde{Ξ}i\vec e_x\big)\vec e_x-i\sum_kp_k\vec e_k\big(\tilde{Ξ}i\vec e_x\big)\vec e_y-mc\,\big(\tilde{Ξ}i\vec e_x\big).
 $$
 
 Multiplying by the two phases and adding, with $\theta=\vec p\cdot\vec\Delta$,
@@ -310,10 +318,10 @@ Multiplying by the two phases and adding, with $\theta=\vec p\cdot\vec\Delta$,
 $$
 \sum_r\Big[\tilde{Ξ}_{\mathrm{sp},+}^{(r)}\mathrm{Sc}\big(\tilde{Ξ}_{\mathrm{sp},+}^{(r)*}\tilde{Ξ}\big)e^{+i\theta}
 +\tilde{Ξ}_{\mathrm{sp},-}^{(r)}\mathrm{Sc}\big(\tilde{Ξ}_{\mathrm{sp},-}^{(r)*}\tilde{Ξ}\big)e^{-i\theta}\Big]
-=2\cos\theta\,\mathbb{D}_p\big(\tilde{Ξ}\,i\vec e_x\big)+2im\sin\theta\,\big(\tilde{Ξ}\,i\vec e_x\big),
+=2\cos\theta\,\Big[i\frac{E_{\vec p}}{c}\big(\tilde{Ξ}i\vec e_x\big)\vec e_x-i\sum_kp_k\vec e_k\big(\tilde{Ξ}i\vec e_x\big)\vec e_y\Big]+2im\sin\theta\,\big(\tilde{Ξ}\,i\vec e_x\big),
 $$
 
-the four terms grouping as $e^{+i\theta}(\mathbb{D}_p+mc)+e^{-i\theta}(\mathbb{D}_p-mc)$. Each piece now has a definite parity in $\vec p$: the time part of $\mathbb{D}_p$ contributes $i\frac{E_{\vec p}}{c}(\tilde{Ξ} i\vec e_x)\vec e_x=\frac{E_{\vec p}}{c}\tilde{Ξ}$, because $i\vec e_x\cdot i\vec e_x=i^2\vec e_x^2=e_t$, and it is even, since $E_{\vec p}$ and the units are; the spatial part $-i\sum_kp_k\vec e_k(\tilde{Ξ} i\vec e_x)\vec e_y$ and the mass term $2im\sin\theta(\tilde{Ξ} i\vec e_x)$ are odd. The even part is $2E_{\vec p}\cos\theta$ times the identity and, after division by $2E_{\vec p}$, integrates to $\delta^{(3)}(\vec\Delta)$; the odd parts vanish under symmetric integration. Hence the equal-time relation holds. The cancellation of the odd terms is exactly what the opposite phases of the two branches accomplish; had both phases been equal, the cross terms would have survived and the canonical relation would have failed.
+the four terms grouping as $e^{+i\theta}$ times the action with $+mc$ and $e^{-i\theta}$ times the action with $-mc$. Each piece now has a definite parity in $\vec p$: the time part of the action contributes $i\frac{E_{\vec p}}{c}(\tilde{Ξ} i\vec e_x)\vec e_x=\frac{E_{\vec p}}{c}\tilde{Ξ}$, because $i\vec e_x\cdot i\vec e_x=i^2\vec e_x^2=e_t$, and it is even, since $E_{\vec p}$ and the units are; the spatial part $-i\sum_kp_k\vec e_k(\tilde{Ξ} i\vec e_x)\vec e_y$ and the mass term $2im\sin\theta(\tilde{Ξ} i\vec e_x)$ are odd. The even part is $2E_{\vec p}\cos\theta$ times the identity and, after division by $2E_{\vec p}$, integrates to $\delta^{(3)}(\vec\Delta)$; the odd parts vanish under symmetric integration. Hence the equal-time relation holds. The cancellation of the odd terms is exactly what the opposite phases of the two branches accomplish; had both phases been equal, the cross terms would have survived and the canonical relation would have failed.
 
 ### The Fock Space and Pauli Exclusion
 
@@ -481,7 +489,7 @@ Because the question addressed here is itself an open question of the framework,
 
 **Standard quantum field theory, transcribed.**
 
-- The Lagrangian $\mathcal{L}=\bar{\tilde{Ξ}}_{\mathrm{sp}}(\mathbb{D}-k_m)\tilde{Ξ}_{\mathrm{sp}}$ and the conjugate momentum $\pi=i\tilde{Ξ}_{\mathrm{sp}}^*$, together with the second-class constraint $\pi-i\tilde{Ξ}_{\mathrm{sp}}^*\approx0$.
+- The Lagrangian $\mathcal{L}$ of the two lines, displayed in §*The Lagrangian*, and the conjugate momentum $\pi=i\tilde{Ξ}_{\mathrm{sp}}^*$, together with the second-class constraint $\pi-i\tilde{Ξ}_{\mathrm{sp}}^*\approx0$.
 - The equal-time anticommutation relations, imposed and verified, and the three reasons anticommutation rather than commutation is forced.
 - The mode expansion in the parent article's plane-wave solutions, with the covariant normalization $\langle\tilde{Ξ}_{\mathrm{sp}},\tilde{Ξ}_{\mathrm{sp}}\rangle_{\mathrm D}=2m$, $\mathrm{Sc}(\tilde{Ξ}_{\mathrm{sp}}^*\tilde{Ξ}_{\mathrm{sp}})=2E$, and the parent's spin sums.
 - The mode-operator anticommutators, the Fock space, and Pauli exclusion as the algebraic identity $(a_{\mathrm{fop}}^{\dagger})^2=0$.
@@ -502,7 +510,7 @@ The extension attempted here is therefore **not canonical** in the framework: th
 
 ## Summary
 
-The biquaternion Dirac field is quantized by promoting its element-valued classical field to an operator-valued field. The equation quantized is the one-sided chiral pair, which on the element is the single equation $(\mathbb{D}-k_m)\tilde{Ξ}_{\mathrm{sp}}=0$ with $\mathbb{D}$ built from the corpus gradient and its conjugate; Kravchenko's two-sided equation is a different operator and is not quantized here. The classical theory has Lagrangian $\mathcal{L}=\bar{\tilde{Ξ}}_{\mathrm{sp}}(\mathbb{D}-k_m)\tilde{Ξ}_{\mathrm{sp}}$ and conjugate momentum $\pi=i\tilde{Ξ}_{\mathrm{sp}}^*$; the momentum is algebraically tied to the field by a second-class constraint, so the canonical structure is imposed rather than assumed. The equal-time relations are anticommutators on the four coefficients of the element,
+The biquaternion Dirac field is quantized by promoting its element-valued classical field to an operator-valued field. The equation quantized is the one-sided chiral pair, which on the element is the two first-order equations of §*The Two First-Order Equations and the Map They Define*, built from the corpus gradient and its conjugate; Kravchenko's two-sided equation is a different operator and is not quantized here. The classical theory has the Lagrangian of those two lines and conjugate momentum $\pi=i\tilde{Ξ}_{\mathrm{sp}}^*$; the momentum is algebraically tied to the field by a second-class constraint, so the canonical structure is imposed rather than assumed. The equal-time relations are anticommutators on the four coefficients of the element,
 
 $$
 \{\tilde{Ξ}_{\mathrm{fop},\mu}(X,r'_t),\tilde{Ξ}_{\mathrm{fop},\nu}^{\dagger}(Y,r'_t)\}=\delta_{\mu\nu}\delta^{(3)}(X-Y)
@@ -539,14 +547,14 @@ The extension is a transcription of standard canonical quantization onto the par
 | $\bar{\tilde{Ξ}}_{\mathrm{sp}}X=\mathrm{Sc}(\tilde{Ξ}_{\mathrm{sp}}^*iX\vec e_x)$ | Dirac adjoint: Hermitian conjugate, then right multiplication by $i\vec e_x$ |
 | $\langle\tilde{Ξ}_{\mathrm{sp}},\tilde{Ξ}\rangle_{\mathrm D}=\mathrm{Sc}(\tilde{Ξ}_{\mathrm{sp}}^*i\tilde{Ξ}\vec e_x)$ | Dirac pairing; equals $\bar{\tilde{Ξ}}_{\mathrm{sp}}\tilde{Ξ}$ |
 | $e_\mu$ | Basis unit: $e_t$ for $\mu=t$, $\vec e_k$ for $\mu=k$ |
-| $\mathbb{D}:\tilde X\mapsto-\frac{\partial\tilde X}{\partial r'_t}\vec e_x-\sum_k\vec e_k\frac{\partial\tilde X}{\partial R_k}\vec e_y$ | Pair operator on one element; $\mathbb{D}^2=\Box$ |
-| $\mathbb{D}_p:\tilde X\mapsto i\frac{E_{\vec p}}{c}\tilde X\vec e_x-i\sum_kp_k\vec e_k\tilde X\vec e_y$ | Momentum symbol on a plane wave; $\mathbb{D}_p^2=p^2$ |
-| $\mathcal{L}=\bar{\tilde{Ξ}}_{\mathrm{sp}}(\mathbb{D}-k_m)\tilde{Ξ}_{\mathrm{sp}}$ | Dirac Lagrangian density |
+| $\tilde X\mapsto-\frac{\partial\tilde X}{\partial r'_t}\vec e_x-\sum_k\vec e_k\frac{\partial\tilde X}{\partial R_k}\vec e_y$ | Massless action of the pair read on one element; its square is $\Box$ |
+| $\tilde X\mapsto i\frac{E_{\vec p}}{c}\tilde X\vec e_x-i\sum_kp_k\vec e_k\tilde X\vec e_y$ | The same action on a plane wave; its square is $p^2$ |
+| $\mathcal{L}$ | Dirac Lagrangian density of the two lines |
 | $\pi=\partial\mathcal{L}/\partial(\partial\tilde{Ξ}_{\mathrm{sp}}/\partial r'_t)=i\tilde{Ξ}_{\mathrm{sp}}^*$ | Conjugate momentum; $\pi-i\tilde{Ξ}_{\mathrm{sp}}^*\approx0$ is second class |
 | $\tilde{Ξ}_{\mathrm{sp},\pm}^{(r)}(\vec p)$ | Parent article's positive- and negative-frequency element amplitudes |
 | $X,Y,\vec\Delta=X-Y$ | Spatial points and their separation |
 | $p_\mu=(E_{\vec p},\vec p)$, $p^2=p_0^2-\vec p^2=m^{2}\,c^{2}$ | Four-momentum, mass shell; the index labels, $\varepsilon$ carries the signs |
-| $\varepsilon=(+1,-1,-1,-1)$ | Sign vector of the momentum label in $\mathbb{D}_p$ |
+| $\varepsilon=(+1,-1,-1,-1)$ | Sign vector of the momentum label in the plane-wave action |
 | $\tilde P_{\Phi}$, $\tilde R_\Phi$ | Wave biquaternion and four-position biquaternion of the parent article |
 | $\tilde P_{\Phi}\tilde P_{\Phi}^{\natural}= -m^{2}\,c^{2}$ | Biquaternionic mass-shell condition |
 | $\tilde{Ξ}_{\mathrm{fop}}$, $a_{\mathrm{fop},r}(\vec p)$, $b_{\mathrm{fop},r}(\vec p)$ | Quantized field; particle and antiparticle annihilation operators |
@@ -564,7 +572,7 @@ The extension is a transcription of standard canonical quantization onto the par
 
 ## Further Reading
 
-- [Operator and Calculus Conventions](operator-and-calculus-conventions.html), for the gradient, its conjugate, the d'Alembertian and the pair operator used throughout.
+- [Operator and Calculus Conventions](operator-and-calculus-conventions.html), for the gradient, its conjugate, the d'Alembertian and the two first-order equations used throughout.
 - P. A. M. Dirac, "The quantum theory of the electron," *Proceedings of the Royal Society A* **117** (1928) 610–624, for the original Dirac equation and the prediction of the antiparticle.
 - W. Pauli, "The connection between spin and statistics," *Physical Review* **58** (1940) 716–722, for the theorem that forces anticommutation for half-integer spin.
 - J. D. Bjorken and S. D. Drell, *Relativistic Quantum Fields* (McGraw-Hill, 1965), for the canonical quantization of the Dirac field.

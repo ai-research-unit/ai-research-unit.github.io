@@ -13,7 +13,7 @@ $$
 $$
 The two subscripts take the two values $L$ and $R$ of *Special Element Conventions*, §*The Chirality Convention*, and the derivative is the gradient of *Operator and Calculus Conventions*, §*The Gradient*. Neither value closes on its own: each equation carries one value into the other, so the mass is the pairing of the two. Read from either side, every component of the field is a Dirac field.
 
-**The calculus is the corpus's and is cited, not restated.** The first-order operator is the biquaternionic gradient $\tilde\nabla$, its quaternion conjugate is $\tilde\nabla^{\natural}$, and the d'Alembertian $\Box$ is the quaternionic norm of the gradient, all three as fixed in *Operator and Calculus Conventions*, §*The Gradient* and §*The Quaternionic Bilinear Product, Its Form and Its Norm*. The pair operator $\mathbb{D}$ and its square are those of §*The Gradient* of the same article, under **The pair operator**. No other letter names a derivative below.
+**The calculus is the corpus's and is cited, not restated.** The first-order operator is the biquaternionic gradient $\tilde\nabla$, its quaternion conjugate is $\tilde\nabla^{\natural}$, and the d'Alembertian $\Box$ is the quaternionic norm of the gradient, all three as fixed in *Operator and Calculus Conventions*, §*The Gradient* and §*The Quaternionic Bilinear Product, Its Form and Its Norm*. The pair of first-order equations, and the square of each line, are those of §*The Two First-Order Equations and Their Symbol* of the same article. No other letter names a derivative below.
 
 **The gradient does not square to a scalar, and that is why the massive equation is a pair.** With $i\hbar\tilde K_{\Phi}=-\hbar k_{t}^{\prime}\,e_t+i\hbar\vec k_\Phi$ the symbol of the gradient, the time unit commutes with the three spatial units and the mixed derivatives are symmetric, so the square keeps a vector part,
 $$
@@ -64,7 +64,7 @@ $$
 $$
 the second following from the divergence of the equation once the first holds. The trace is therefore a consequence of the massive equation, and so is the divergence. Both were checked at generic on-shell momenta: the solution space of the equation is four-dimensional, the trace element and the divergence vanish on it to machine precision, and adjoining either condition does not lower the dimension.
 
-**The trace in turn linearises the equation.** With the trace in force, the mass structure reduces to left multiplication by $\Gamma_{\mu\nu}$ on the component, contracted with the corresponding component of the field, and the kinetic structure reduces to the gradient pair, so the equation of the $\mu$-th component is the pair on that component alone. That pair is the pair operator of *Operator and Calculus Conventions*, §*The Pair Operator and Its Symbol*, applied to one component, so the massive component equation is the massive equation of that section, and no object of a display enters it.
+**The trace in turn linearises the equation.** With the trace in force, the mass structure reduces to left multiplication by $\Gamma_{\mu\nu}$ on the component, contracted with the corresponding component of the field, and the kinetic structure reduces to the gradient pair, so the equation of the $\mu$-th component is the pair on that component alone. That pair is the two first-order equations of *Operator and Calculus Conventions*, §*The Two First-Order Equations and Their Symbol*, applied to one component, so the massive component equation is the two lines of that section, and no object of a display enters it.
 
 **The antisymmetrized equation is thus equivalent to the pair on each component together with the trace**, and, through them, the covariant divergence. The mass term regenerates the pair on each component, so that the reduced dynamics is the one the companion Dirac article supplies. The trace constraint removes one Dirac field's worth of components from the sixteen, and it is the part of the reduction that the algebra can state as a single element.
 
@@ -320,7 +320,7 @@ The field is a tensor product of the algebra's four-vector structure and its Dir
 | $\mathbb{B}_{\Phi}$, $\mathbb{B}_{\Psi}$ | Material (anti-Hermitian) and informational (Hermitian) sectors |
 | $\tilde\nabla$, $\tilde\nabla^{\natural}$ | The gradient and its quaternion conjugate; the only first-order operators of the article |
 | $\Box$ | The d'Alembertian, the quaternionic norm of the gradient |
-| $\mathbb{D}$ | The pair operator of *Operator and Calculus Conventions*, §*The Pair Operator and Its Symbol* |
+| $\tilde\nabla\tilde{Ξ}_{\mathrm{sp},R}=k_m\tilde{Ξ}_{\mathrm{sp},L}$, $\tilde\nabla^{\natural}\tilde{Ξ}_{\mathrm{sp},L}=k_m\tilde{Ξ}_{\mathrm{sp},R}$ | The pair of *Operator and Calculus Conventions*, §*The Two First-Order Equations and Their Symbol* |
 | $i\hbar\tilde K_{\Phi}$ | Symbol of the gradient, $-\hbar k_{t}^{\prime}\,e_t+i\hbar\vec k_\Phi$ |
 | $\omega=-\vec e_z$, $\omega^2=-e_t$ | The right multiplier that carries the source's $i$; eigenvalue $+i$ on the $L$ value and $-i$ on the $R$ value |
 | $e_t$, $i\vec e_k$ | The four units that square to $+e_t$; the images of the source's four generators |

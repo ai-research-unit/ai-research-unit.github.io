@@ -26,7 +26,7 @@ $$
 
 The companion *The Klein–Gordon Equation in Biquaternionic Form* records that the operator is central and scalar, that the equation decouples into four scalar equations, and that no scalar first-order operator in $\mathbb{B}$ has it as its square. The companion *Klein–Gordon from the Dirac Square in Biquaternionic Form* records the other side: the first-order equation that exists is the chiral pair, its two members act on the two parts of one element, and its mass couples the two. Together they leave Open Question 3 of the Klein–Gordon article: is the pair the only first-orderisation, and why four components?
 
-There are two senses of "first-order root", and the article separates them. A **single square** is one first-order operator whose square is $\Box-k_m^{2}$. A **factorisation** is a product of two first-order factors whose product is $\Box-k_m^{2}$, with the physical equation one factor. The single square is the stronger notion, and the algebra does not admit it: the square of the gradient carries a vector remainder, and no constant zero-order term removes a term that the derivative part supplies. The factorisation is the weaker notion, and the algebra supplies it exactly, as $\Box=\tilde\nabla\tilde\nabla^{\natural}$ and, on the two parts of the field, as $(\mathbb{D}-k_m)(\mathbb{D}+k_m)=(\Box-k_m^{2})I$ with $\mathbb{D}$ the pair operator of §*The Gradient*.
+There are two senses of "first-order root", and the article separates them. A **single square** is one first-order operator whose square is $\Box-k_m^{2}$. A **factorisation** is a product of two first-order factors whose product is $\Box-k_m^{2}$, with the physical equation one factor. The single square is the stronger notion, and the algebra does not admit it: the square of the gradient carries a vector remainder, and no constant zero-order term removes a term that the derivative part supplies. The factorisation is the weaker notion, and the algebra supplies it exactly, as $\Box=\tilde\nabla\tilde\nabla^{\natural}$ and, on the two parts of the field, as the two lines composed, $\Box-k_m^{2}$ on each part, the pair of §*The Gradient*.
 
 Three results:
 
@@ -200,24 +200,26 @@ $$
 
 which is not scalar. The two cross terms do not cancel, because they are different operators. Only the pair removes them, by substituting one member into the other.
 
-### The pair operator
+### The two lines
 
-The two equations are one operator on $\mathbb{B}\oplus\mathbb{B}$ (*Operator and Calculus Conventions*, §*The Pair Operator and Its Symbol*). Write $\tilde{Ξ}_{\mathrm{sp}}=(\tilde{Ξ}_{\mathrm{sp},L},\tilde{Ξ}_{\mathrm{sp},R})$ and
+The two equations are two lines on two elements, and no single letter is written for them (*Operator and Calculus Conventions*, §*The Two First-Order Equations and Their Symbol*). Write $\tilde{Ξ}_{\mathrm{sp}}=(\tilde{Ξ}_{\mathrm{sp},L},\tilde{Ξ}_{\mathrm{sp},R})$ and
 
 $$
-\mathbb{D}\tilde{Ξ}_{\mathrm{sp}}=\left(\tilde\nabla\tilde{Ξ}_{\mathrm{sp},R},\ \tilde\nabla^{\natural}\tilde{Ξ}_{\mathrm{sp},L}\right).
+\tilde\nabla\tilde{Ξ}_{\mathrm{sp},R}=k_m\tilde{Ξ}_{\mathrm{sp},L},
+\qquad
+\tilde\nabla^{\natural}\tilde{Ξ}_{\mathrm{sp},L}=k_m\tilde{Ξ}_{\mathrm{sp},R}.
 $$
 
-Then $\mathbb{D}^2=\Box I$, so that $(\mathbb{D}-k_m)(\mathbb{D}+k_m)=\left(\Box-k_m^{2}\right)I$, and the pair is $(\mathbb{D}-k_m)\tilde{Ξ}_{\mathrm{sp}}=0$. This is the precise sense in which a mass needs a pair: the doubling is the carrier of the factorisation, not a doubling of particles, and the two parts are the two labelled halves of one field.
+Composing each line with the conjugate of the other gives $\left(\Box-k_m^{2}\right)\tilde{Ξ}_{\mathrm{sp},L}=0$ and $\left(\Box-k_m^{2}\right)\tilde{Ξ}_{\mathrm{sp},R}=0$. This is the precise sense in which a mass needs a pair: the doubling is the carrier of the factorisation, not a doubling of particles, and the two parts are the two labelled halves of one field.
 
 The mass term is a multiple of the identity on the two slots and cannot move between them; the gradient is the off-diagonal block, and it is the gradient that carries the mass across. A scalar mass cannot sit in a single factor, for the reason of §*No single square*; the pair supplies the second slot that the mass needs in order to appear as an equality.
 
 ### The determinant
 
-On a plane wave the symbol of $\mathbb{D}$, written $\mathbb{D}(-i\tilde K_{\Phi})$, is the block matrix with $\ell_{-i\tilde K_{\Phi}}$ and $\ell_{i\tilde K_{\Phi}^{\natural}}$ off the diagonal, where $\ell_M$ is left multiplication by $M$, and its determinant is
+On a plane wave the two lines are the block matrix with $\ell_{-i\tilde K_{\Phi}}$ and $\ell_{i\tilde K_{\Phi}^{\natural}}$ off the diagonal, where $\ell_M$ is left multiplication by $M$, and the determinant of that matrix with $-k_m$ on the diagonal is
 
 $$
-\det\left(\mathbb{D}(-i\tilde K_{\Phi})-k_m\right)
+\det\left(\ell_{i\tilde K_{\Phi}^{\natural}}\ell_{-i\tilde K_{\Phi}}-k_m^{2}\right)
 =\left(k_{t}^{\prime\,2}-\lvert\vec k_\Phi\rvert^2-k_m^{2}\right)^4 ,
 $$
 
@@ -258,11 +260,11 @@ The identities were recomputed before they were written. The algebra multiplicat
 | rank and kernel of $\ell_{-i\tilde K_{\Phi}}$ at five null wave covectors | rank $2$, kernel $2$ (exact) |
 | the same off the cone, at $k=(2,1,0,0)$ | rank $4$ |
 | the chirality on the null kernel, the eigenvalues of the right action by $\vec e_z$ | $\pm i$, one of each |
-| $\mathbb{D}(-i\tilde K_{\Phi})^2-\Box I_8$ | $1.8\times10^{-15}$ |
-| $\det(\mathbb{D}(-i\tilde K_{\Phi})-k_m)-(\Box-k_m^{2})^4$ on $100$ random wave covectors | $2.5\times10^{-11}$ |
+| $\ell_{i\tilde K_{\Phi}^{\natural}}\ell_{-i\tilde K_{\Phi}}-\Box$ on the eight slots | $1.8\times10^{-15}$ |
+| $\det\left(\ell_{i\tilde K_{\Phi}^{\natural}}\ell_{-i\tilde K_{\Phi}}-k_m^{2}\right)-(\Box-k_m^{2})^4$ on $100$ random wave covectors | $2.5\times10^{-11}$ |
 | the elimination, $\tilde\nabla^{\natural}\tilde\nabla\tilde{Ξ}_{\mathrm{sp},R}/k_m^{2}-\tilde{Ξ}_{\mathrm{sp},R}$ on shell | $3.6\times10^{-15}$ |
 
-The numerical checks are checks of polynomial identities at random points. The proof is the algebra of the preceding sections; the numbers guard against a sign or factor error in the transcription. Two exact values are quoted in the text: at $k=(2,1,0,0)$ the norm $(-i\tilde K_{\Phi})^{\natural}(-i\tilde K_{\Phi})$ is $3$, the determinant $\det\ell_{-i\tilde K_{\Phi}}$ is $9$, and at $k_m=1$ the determinant of $\mathbb{D}(-i\tilde K_{\Phi})-k_m$ is $16$.
+The numerical checks are checks of polynomial identities at random points. The proof is the algebra of the preceding sections; the numbers guard against a sign or factor error in the transcription. Two exact values are quoted in the text: at $k=(2,1,0,0)$ the norm $(-i\tilde K_{\Phi})^{\natural}(-i\tilde K_{\Phi})$ is $3$, the determinant $\det\ell_{-i\tilde K_{\Phi}}$ is $9$, and at $k_m=1$ the determinant of the two lines, $\det(\ell_{i\tilde K_{\Phi}^{\natural}}\ell_{-i\tilde K_{\Phi}}-k_m^{2})$, is $16$.
 
 ## Summary
 
@@ -270,7 +272,7 @@ The first-order root of the biquaternion Klein–Gordon operator exists, and it 
 
 The free equation is first order in one field, $\tilde\nabla\tilde{Ξ}=0$, and it implies the massless Klein–Gordon equation. At a null momentum it selects two of the four complex dimensions of the second-order solution space, one state of each value of the chirality.
 
-The mass is scalar and central. It commutes with the gradient, so it cannot be the zero-order term of a first-order factor; it is the coupling of the two parts of one element, and the pair operator $\mathbb{D}$ carries it, with $(\mathbb{D}-k_m)(\mathbb{D}+k_m)=(\Box-k_m^{2})I$. Eliminating one member returns $\Box\tilde{Ξ}_{\mathrm{sp},R}=k_m^{2}\tilde{Ξ}_{\mathrm{sp},R}$, so the pair and the second-order equation on one part are equivalent.
+The mass is scalar and central. It commutes with the gradient, so it cannot be the zero-order term of a first-order factor; it is the coupling of the two parts of one element, and the two lines carry it, composing to $\Box-k_m^{2}$ on each part. Eliminating one member returns $\Box\tilde{Ξ}_{\mathrm{sp},R}=k_m^{2}\tilde{Ξ}_{\mathrm{sp},R}$, so the pair and the second-order equation on one part are equivalent.
 
 A field whose value is one complex number has no first-order equation: the four terms of the gradient impose four independent conditions on one function. The results are a classification of form. No mass, no coupling and no dynamics are predicted. The open questions are the gauged, curved, position-dependent and real-structure extensions.
 
@@ -294,7 +296,7 @@ A field whose value is one complex number has no first-order equation: the four 
 | $\ell_M$ | Left multiplication by $M$ |
 | $\tilde{Ξ}$ | The field of the Klein–Gordon equation, an element of $\mathbb{B}$ |
 | $\tilde{Ξ}_{\mathrm{sp},L},\tilde{Ξ}_{\mathrm{sp},R}$ | The two parts of an element, the two values of the label |
-| $\mathbb{D}$ | The pair operator on $\mathbb{B}\oplus\mathbb{B}$, $\mathbb{D}(\tilde{Ξ}_{\mathrm{sp},L},\tilde{Ξ}_{\mathrm{sp},R})=(\tilde\nabla\tilde{Ξ}_{\mathrm{sp},R},\tilde\nabla^{\natural}\tilde{Ξ}_{\mathrm{sp},L})$, with $\mathbb{D}^2=\Box I$ |
+| $\tilde\nabla\tilde{Ξ}_{\mathrm{sp},R}=k_m\tilde{Ξ}_{\mathrm{sp},L}$, $\tilde\nabla^{\natural}\tilde{Ξ}_{\mathrm{sp},L}=k_m\tilde{Ξ}_{\mathrm{sp},R}$ | The pair as two first-order lines; each composed with the conjugate of the other is $\Box$ per part |
 | the label | $L$ or $R$, two values, carried by the parts of an element |
 
 ## Further Reading

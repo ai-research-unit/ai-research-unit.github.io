@@ -53,17 +53,17 @@ $$
 
 in which each member sets the gradient of one chiral half equal to $k_m$ times the other. No single field carries a mass in this algebra, and no display below writes one.
 
-**The pair operator.** The two lines are one operator on $\mathbb{B}\oplus\mathbb{B}$. With $\tilde{Ξ}_{\mathrm{sp}}=(\tilde{Ξ}_{\mathrm{sp},L},\tilde{Ξ}_{\mathrm{sp},R})$ and
+**The pair stays two lines.** The two lines are printed once each and never compressed into one operator on $\mathbb{B}\oplus\mathbb{B}$,
 
 $$
-\mathbb{D}\tilde{Ξ}_{\mathrm{sp}}=\bigl(\tilde\nabla\tilde{Ξ}_{\mathrm{sp},R},\ \tilde\nabla^{\natural}\tilde{Ξ}_{\mathrm{sp},L}\bigr),
+\tilde\nabla\tilde{Ξ}_{\mathrm{sp},R}=k_m\tilde{Ξ}_{\mathrm{sp},L},
 \qquad
-\mathbb{D}^2=\Box\,I,
+\tilde\nabla^{\natural}\tilde{Ξ}_{\mathrm{sp},L}=k_m\tilde{Ξ}_{\mathrm{sp},R},
 \qquad
-(\mathbb{D}-k_m)\tilde{Ξ}_{\mathrm{sp}}=0,
+\tilde\nabla\tilde\nabla^{\natural}=\tilde\nabla^{\natural}\tilde\nabla=\Box,
 $$
 
-the operator $\mathbb{D}$ is the pair written once. Nothing in it acts on the right: it is built from the two gradients, one in each slot, and nothing else enters.
+one gradient per line and one slot per line. Nothing acts on the right: each line is built from one gradient and nothing else enters.
 
 **The subscript.** The chirality is a value of the element: the test returns $L$ or $R$, and those are the two values. The letters are the Dirac ones, $L$ and $R$, the names of the two components, in the sense the corpus already uses for $\tilde{Ξ}_{\mathrm{sp},L}$ and $\tilde{Ξ}_{\mathrm{sp},R}$. Every element is a sum of one of each, only the zero element is both, a product takes the letter of its right factor, and left multiplication keeps the letter. The subscript belongs to the element, not to a column: a unit, a product and a general element carry it, and a state carries it because a state is an element.
 
@@ -392,7 +392,7 @@ In the biquaternion framework the substitution shifts the frame-odd part of the 
 | $H = c\sum_k\alpha_k(p_k-im\omega\beta Q_k) + \beta mc^2$ | Dirac-oscillator Hamiltonian, the source's equation |
 | $p_k=-\frac{m\,c\,i}{k_m}\partial/\partial R_k$, $\vec p=\sum_k\vec e_kp_k$ | Corpus momentum operator, the spatial gradient in disguise |
 | $\vec p - im\omega\beta\vec r$ | Non-minimal substitution, the frame-odd shift |
-| $\mathbb{D}$ | The pair operator on $\mathbb{B}\oplus\mathbb{B}$, $\mathbb{D}\tilde{Ξ}_{\mathrm{sp}}=(\tilde\nabla\tilde{Ξ}_{\mathrm{sp},R},\tilde\nabla^{\natural}\tilde{Ξ}_{\mathrm{sp},L})$; $\mathbb{D}^2=\Box I$ |
+| $\tilde\nabla\tilde{Ξ}_{\mathrm{sp},R}=k_m\tilde{Ξ}_{\mathrm{sp},L}$, $\tilde\nabla^{\natural}\tilde{Ξ}_{\mathrm{sp},L}=k_m\tilde{Ξ}_{\mathrm{sp},R}$ | The pair, as two first-order lines on a pair of elements of $\mathbb{B}$; each line composed with its partner is $\Box$ |
 | $\tilde\nabla\tilde{Ξ}_{\mathrm{sp},R}=k_m\tilde{Ξ}_{\mathrm{sp},L}$, $\tilde\nabla^{\natural}\tilde{Ξ}_{\mathrm{sp},L}=k_m\tilde{Ξ}_{\mathrm{sp},R}$ | The chiral pair, $k_m=mc/\hbar$ |
 | $\tilde{Ξ}_{\mathrm{sp},+}$, $\tilde{Ξ}_{\mathrm{sp},-}$ | The two frame parts, $\beta\tilde{Ξ}_{\mathrm{sp},\pm}=\pm\tilde{Ξ}_{\mathrm{sp},\pm}$; large and small |
 | $\mathcal{Q}_\pm:\ \tilde{Ξ}_{\mathrm{sp}}\mapsto \frac{m\,c\,i\,\vec \nabla_{\mp}\,\tilde{Ξ}_{\mathrm{sp}}\,\omega}{k_m}$ | Factorised conjugate actions; $\mathcal{Q}_+\mathcal{Q}_-=\frac{m^{2}\,c^{2}\,\vec \nabla_{-}\,\vec \nabla_{+}}{k_m^{2}}$ |
