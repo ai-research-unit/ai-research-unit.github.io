@@ -6,7 +6,7 @@
 
 **The two actors.** The whole subject is built from two maps of $\mathbb{B}$ into itself, the left multiplication $L_{\tilde Q}(\tilde X)=\tilde Q\tilde X$ and the right multiplication $R_{\tilde Q}(\tilde X)=\tilde X\tilde Q$. They are the two regular families of *Operators Acting on One Side*. Both are $\mathbb{C}$-linear and injective, both are units when $\tilde Q$ is a unit, and they commute with each other, $L_{\tilde Q}R_{\tilde P}=R_{\tilde P}L_{\tilde Q}$. In a pair the two actors play the two roles: one acts on the argument, the other on the other side of it, and the tie between their parameters is what makes the pair Hermitian.
 
-**What the article does.** Five steps. First the two actors and their laws, because every later display is a word in them. Second the pair of equations that a Hermitian pair writes: one equation with the factor on the left, one with the factor on the right, both on the same unknown. Third the transposition, which replaces the right member by a left one and turns that pair of equations into a pair of equations whose two members both multiply on the left; the price is one reversal, applied to the unknown and to the data together. Fourth the one-side pair proper, $(L_{\tilde Q},L_{\tilde Q^{\natural}})$, whose product is a scalar; that product is the passage from two first-order conditions to one second-order operator, and the scalar is the mass. Fifth what the placement does not give: the one-side pair does not preserve the two Hermitian halves, so the stability of the halves is the warrant of the two-side placement and of no other.
+**What the article does.** Five steps. First the two actors and their laws, because every later display is a word in them. Second the pair of equations that a Hermitian pair writes: one equation with the factor on the left, one with the factor on the right, both on the same unknown. Third the transposition, which replaces the right member by a left one and turns that pair of equations into a pair of equations whose two members both multiply on the left; the price is one anti-automorphism, applied to the unknown and to the data together. Fourth the one-side pair proper, $(L_{\tilde Q},L_{\tilde Q^{\natural}})$, whose product is a scalar; that product is the passage from two first-order conditions to one second-order operator, and the scalar is the mass. Fifth what the placement does not give: the one-side pair does not preserve the two Hermitian halves, so the stability of the halves is the warrant of the two-side placement and of no other.
 
 The notation is that of *Operator Family Conventions*: $L_{\tilde Q}$ and $R_{\tilde Q}$ the two regular actors, $L_{\tilde Q}R_{\tilde Q_2}$ the two-sided operator, $\mathrm{Sd}_{\tilde Q}=L_{\tilde Q}R_{\tilde Q^{\ast}}$ the member of *The Hermitian Pair of Operators Acting on Two Sides*, $\mathbb{B}_{\Psi}$ and $\mathbb{B}_{\Phi}$ the Hermitian and anti-Hermitian halves, and $\langle\tilde Q\rangle_{\natural}$ the quaternionic norm. The frame is $e_t,\vec e_x,\vec e_y,\vec e_z$, with the products $\vec e_x\vec e_y=\vec e_z$, $\vec e_y\vec e_z=\vec e_x$, $\vec e_z\vec e_x=\vec e_y$ and $\vec e_x^2=\vec e_y^2=\vec e_z^2=-e_t$. The article is pure algebra. No step uses a topology, a distance or a limit.
 
@@ -75,7 +75,7 @@ R_{\tilde Q^{\ast}}=\ast^{-1}L_{\tilde Q}\,\ast
 R_{\tilde Q^{\ast}}=\natural^{-1}L_{\bar{\tilde Q}}\,\natural .
 $$
 
-*Proof.* A reversal satisfies $\tau(xy)=\tau(y)\tau(x)$ and $\tau L_{\tilde P}\tau^{-1}=R_{\tau(\tilde P)}$ (*The Transposition of the Two Sides*). Take $\tau=\ast$. The map $\ast$ is an involution and $\ast(\tilde Q^{\ast})=\tilde Q$, so the theorem gives $R_{\tilde Q^{\ast}}=\ast L_{\tilde Q}\ast^{-1}=\ast^{-1}L_{\tilde Q}\ast$. Take $\tau=\natural$. Then $\natural^{-1}=\natural$ and $\natural(\bar{\tilde Q})=\natural(\natural(\tilde Q^{\ast}))=\tilde Q^{\ast}$, so $R_{\tilde Q^{\ast}}=\natural L_{\bar{\tilde Q}}\natural^{-1}$.
+*Proof.* An anti-automorphism satisfies $\tau(xy)=\tau(y)\tau(x)$ and $\tau L_{\tilde P}\tau^{-1}=R_{\tau(\tilde P)}$ (*The Transposition of the Two Sides*). Take $\tau=\ast$. The map $\ast$ is an involution and $\ast(\tilde Q^{\ast})=\tilde Q$, so the theorem gives $R_{\tilde Q^{\ast}}=\ast L_{\tilde Q}\ast^{-1}=\ast^{-1}L_{\tilde Q}\ast$. Take $\tau=\natural$. Then $\natural^{-1}=\natural$ and $\natural(\bar{\tilde Q})=\natural(\natural(\tilde Q^{\ast}))=\tilde Q^{\ast}$, so $R_{\tilde Q^{\ast}}=\natural L_{\bar{\tilde Q}}\natural^{-1}$.
 
 **The pair of equations, rewritten.** Substituting the first identity in the second equation of the system gives
 
@@ -84,9 +84,9 @@ $$
 \tilde Q\,\tilde X^{\ast}=\tilde Z^{\ast}.
 $$
 
-Both members now multiply on the left, by the **same** element $\tilde Q$. That is the rewriting: the right actor is gone, its parameter has been absorbed by the reversal, and what remains is two left multiplications separated by one application of $\ast$. In the other frame, with $\natural$, the second equation reads $\bar{\tilde Q}\,\natural(\tilde X)=\natural(\tilde Z)$.
+Both members now multiply on the left, by the **same** element $\tilde Q$. That is the rewriting: the right actor is gone, its parameter has been absorbed by the anti-automorphism, and what remains is two left multiplications separated by one application of $\ast$. In the other frame, with $\natural$, the second equation reads $\bar{\tilde Q}\,\natural(\tilde X)=\natural(\tilde Z)$.
 
-**What the rewriting costs.** Two things, and both are visible in the display. The reversal falls on the unknown as well as on the data: the second equation constrains $\tilde X^{\ast}$ and not $\tilde X$, so it is **antilinear** in the unknown, while the first is linear. A pair of equations that was complex-linear in $\tilde X$ as a two-side pair has become one linear equation and one antilinear equation as a one-side pair. And the reversal falls on the data too: $\tilde Z$ is replaced by $\tilde Z^{\ast}$, so a solution of the rewritten pair is a solution of the original only when the data are carried along. Dropping either reversal gives an equation that is false for every noncentral parameter, which is the standing trap of *The Transposition of the Two Sides*, §*The Parameter*.
+**What the rewriting costs.** Two things, and both are visible in the display. The anti-automorphism falls on the unknown as well as on the data: the second equation constrains $\tilde X^{\ast}$ and not $\tilde X$, so it is **antilinear** in the unknown, while the first is linear. A pair of equations that was complex-linear in $\tilde X$ as a two-side pair has become one linear equation and one antilinear equation as a one-side pair. And the anti-automorphism falls on the data too: $\tilde Z$ is replaced by $\tilde Z^{\ast}$, so a solution of the rewritten pair is a solution of the original only when the data are carried along. Dropping either anti-automorphism gives an equation that is false for every noncentral parameter, which is the standing trap of *The Transposition of the Two Sides*, §*The Parameter*.
 
 **The product of the rewritten pair.** Composing the two members in the order of the display returns the two-side operator,
 
@@ -94,7 +94,7 @@ $$
 L_{\tilde Q}\bigl(\ast^{-1}L_{\tilde Q}\ast\bigr)=L_{\tilde Q}R_{\tilde Q^{\ast}}=\mathrm{Sd}_{\tilde Q},
 $$
 
-so the rewriting changes the reading and not the operator. This is the exact sense in which the two placements are one pair: the same composite, written once with one actor of each family and once with two actors of the left family and one reversal between them.
+so the rewriting changes the reading and not the operator. This is the exact sense in which the two placements are one pair: the same composite, written once with one actor of each family and once with two actors of the left family and one anti-automorphism between them.
 
 ## The One-Side Pair
 
@@ -114,7 +114,7 @@ L_{\tilde Q}\tilde X=\tilde Y,\qquad L_{\tilde Q^{\natural}}\tilde X=\tilde Z,
 \tilde Q\,\tilde X=\tilde Y,\quad \tilde Q^{\natural}\tilde X=\tilde Z .
 $$
 
-Both equations are linear in $\tilde X$ and both multiply on the left. This is the placement in which the pair is a pair of first-order conditions of the same kind: no reversal, no conjugate-linear member, no data carried.
+Both equations are linear in $\tilde X$ and both multiply on the left. This is the placement in which the pair is a pair of first-order conditions of the same kind: no anti-automorphism, no conjugate-linear member, no data carried.
 
 **Theorem (the pair composes to a scalar).** For every $\tilde Q$,
 
@@ -191,7 +191,7 @@ The second-order equation for each component is therefore a **consequence** of t
 
 **The reading.** Neither member of the one-side pair preserves the halves except at a real scalar parameter, so the pair as a whole does not preserve them either. Sector stability is a property of the two-side placement: there the conjugate-linearity occurs once in each slot and cancels, and by the rigidity theorem of the companion article the operator that preserves both halves is exactly a real multiple of $\mathrm{Sd}_{\tilde Q}$. A reader who carries the word *stable* from one placement to the other asserts something false, and this section exists to prevent it.
 
-**What the placement does give.** Three things, and they are the reason the placement is written at all. The pair is complex-linear in its parameter, so it lives in a complex four-dimensional family and its parameters can be superposed. Its composite is central, so the pair of two conditions is a scalar operator, and the scalar is the quaternionic norm. And both members act on the left, so a computation in the one-side placement uses one reversal at most, where the two-side placement uses the reversal in the parameter and the exchange of the sides.
+**What the placement does give.** Three things, and they are the reason the placement is written at all. The pair is complex-linear in its parameter, so it lives in a complex four-dimensional family and its parameters can be superposed. Its composite is central, so the pair of two conditions is a scalar operator, and the scalar is the quaternionic norm. And both members act on the left, so a computation in the one-side placement uses one anti-automorphism at most, where the two-side placement uses the anti-automorphism in the parameter and the exchange of the sides.
 
 ## Summary
 
@@ -203,7 +203,7 @@ $$
 \tilde Q\,\tilde X=\tilde Y,\qquad \tilde Q\,\tilde X^{\ast}=\tilde Z^{\ast},
 $$
 
-two left multiplications by the same element, at the price of one reversal on the unknown and one on the data. The product of the rewritten pair is the two-side operator again, $L_{\tilde Q}\ast^{-1}L_{\tilde Q}\ast=\mathrm{Sd}_{\tilde Q}$, so the two placements differ in the reading and not in the composite.
+two left multiplications by the same element, at the price of one anti-automorphism on the unknown and one on the data. The product of the rewritten pair is the two-side operator again, $L_{\tilde Q}\ast^{-1}L_{\tilde Q}\ast=\mathrm{Sd}_{\tilde Q}$, so the two placements differ in the reading and not in the composite.
 
 The one-side pair proper composes to a scalar, $L_{\tilde Q}L_{\tilde Q^{\natural}}=\langle\tilde Q\rangle_{\natural}\mathrm{id}$, and that scalar is the passage from two first-order conditions to one second-order operator: the mass. Read on two components rather than on one unknown, the pair is the off-diagonal operator $\mathbb{D}_{\tilde Q}$ with blocks $L_{\tilde Q}$ and $L_{\tilde Q^{\natural}}$, and $\mathbb{D}_{\tilde Q}^{2}=\langle\tilde Q\rangle_{\natural}\mathrm{id}$: the first-order pair squares to a central scalar, the second-order equation for each component follows, and with the gradient as the parameter the display is the chiral pair of the physics corpus and the squared display is the Klein–Gordon equation. The same construction with $\ast$ instead of $\natural$ composes to the Hermitian element $\tilde Q\tilde Q^{\ast}$ and not to a scalar, which is why the corpus keeps the two pairs apart. And neither member of the one-side pair preserves the two halves beyond a real scalar parameter, so sector stability belongs to the two-side placement alone.
 
@@ -226,10 +226,10 @@ The one-side pair proper composes to a scalar, $L_{\tilde Q}L_{\tilde Q^{\natura
 
 - [Operators Acting on One Side](operators-acting-on-one-side.html), for the two regular families, their laws, their injectivity, their commutants and the line on which they meet.
 - [The Hermitian Pair of Operators Acting on Two Sides](the-hermitian-pair-of-operators-acting-on-two-sides.html), for the other placement: the operator $L_{\tilde Q}R_{\tilde Q^{\ast}}$, its multiplicativity, its real cone, the rigidity theorem and the one-sided contrast quoted above.
-- [The Transposition of the Two Sides](the-transposition-of-the-two-sides.html), for $R_{\tilde Q}=\tau^{-1}L_{\tau(\tilde Q)}\tau$, for the reversals and their two linearity grades, and for the two errors that the transport of the parameter prevents.
+- [The Transposition of the Two Sides](the-transposition-of-the-two-sides.html), for $R_{\tilde Q}=\tau^{-1}L_{\tau(\tilde Q)}\tau$, for the anti-automorphisms and their two linearity grades, and for the two errors that the transport of the parameter prevents.
 - [Adjoint Pair of $L$ and $R$ Operators](adjoint-pair-of-l-and-r-operators.html), for the four adjoints, their association with the four forms, and the table from which the three adjoint identities above are read.
 - [The Four Forms and the Four Algebraic Norms over the Biquaternion Algebra](the-four-forms-and-the-four-algebraic-norms-over-the-biquaternion-algebra.html), for the forms, their Gram matrices and their signatures.
-- [Operator Chirality on the Biquaternion Algebra](operator-chirality-on-the-biquaternion-algebra.html), for the exchange of the two sides by a reversal, $\natural L_{\tilde Q}\natural=R_{\tilde Q^{\natural}}$, and for the labels the two actors carry.
-- [The Enveloping Operator Algebra of the Biquaternion Algebra and the Bi-module Structure](the-enveloping-operator-algebra-of-the-biquaternion-algebra-and-the-bi-module-structure.html), for the generation of every operator by the left family together with one reversal.
+- [Operator Chirality on the Biquaternion Algebra](operator-chirality-on-the-biquaternion-algebra.html), for the exchange of the two sides by an anti-automorphism, $\natural L_{\tilde Q}\natural=R_{\tilde Q^{\natural}}$, and for the labels the two actors carry.
+- [The Enveloping Operator Algebra of the Biquaternion Algebra and the Bi-module Structure](the-enveloping-operator-algebra-of-the-biquaternion-algebra-and-the-bi-module-structure.html), for the generation of every operator by the left family together with one anti-automorphism.
 - [The Dirac Equation in Biquaternionic Form](../articles_physics/the-dirac-equation-in-biquaternionic-form.html), for the instance of the two-component reading in which the parameter is the gradient, the scalar is the d'Alembertian, and the squared display is the Klein–Gordon equation.
 - [Operator Family Conventions](operator-family-conventions.html), for the letters, the slots and the names of the sets.
