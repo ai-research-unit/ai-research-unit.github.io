@@ -373,12 +373,12 @@ $$</p>
 <h2 id="the-two-operator-loci">The Two Operator Loci</h2>
 <p><strong>Theorem (the rank of left multiplication).</strong> The left multiplication $L_{\tilde Q}(\tilde X)=\tilde Q\tilde X$ has complex rank $4$ on $\Sigma_{11}\cup\Sigma_{10}$, rank $2$ on $\Sigma_{01}$ and on $\Sigma_{00}\setminus\{0\}$, and rank $0$ at the origin.</p>
 <p><em>Proof.</em> If $N\neq0$ then $\tilde Q$ is a unit and $L_{\tilde Q}$ is invertible. If $N=0$ and $\tilde Q\neq0$, the rank is $2$ by <em>The Four General Products and Their Relations over the Biquaternion Algebra</em>, §<em>The Annihilators</em>. At the origin the map is zero.</p>
-<p><strong>Definition (the sandwich).</strong> The <strong>sandwich</strong> of $\tilde Q$ is the $\mathbb{C}$-linear operator</p>
+<p><strong>Definition (the two-sided operator).</strong> The <strong>two-sided operator</strong> of $\tilde Q$ is the $\mathbb{C}$-linear operator</p>
 <p>$$
 \mathrm{Sd}_{\tilde Q}(\tilde X)=\tilde Q\tilde X\tilde Q^{*},
 $$</p>
 <p>where ${}^{*}$ is the Hermitian conjugate of the matrix model.</p>
-<p><strong>Theorem (the sandwich is singular on the null cone).</strong> $\mathrm{Sd}_{\tilde Q}$ is singular exactly on $\mathcal N$.</p>
+<p><strong>Theorem (the two-sided operator is singular on the null cone).</strong> $\mathrm{Sd}_{\tilde Q}$ is singular exactly on $\mathcal N$.</p>
 <p><em>Proof.</em> If $N=0$ and $\tilde Q\neq0$, then $\tilde Q^{\natural}\neq0$ and</p>
 <p>$$
 \mathrm{Sd}_{\tilde Q}(\tilde Q^{\natural})=\tilde Q\tilde Q^{\natural}\tilde Q^{*}=N\tilde Q^{*}=0.
@@ -435,13 +435,13 @@ $$</p>
 </tr>
 </tbody>
 </table></div>
-<p><strong>Corollary (the two operator loci).</strong> The sandwich is singular exactly on the null cone and the inner derivation is nilpotent exactly on the spectral-degenerate cone. The sandwich and the rank follow the norm and separate the origin from the non-zero nilpotents, but not the scalar line from the Jordan part. The derivation follows the discriminant and separates both pairs of strata: it is zero on the scalar line and at the origin, and of index three on the Jordan part and on the non-zero nilpotents.</p>
+<p><strong>Corollary (the two operator loci).</strong> The two-sided operator is singular exactly on the null cone and the inner derivation is nilpotent exactly on the spectral-degenerate cone. The two-sided operator and the rank follow the norm and separate the origin from the non-zero nilpotents, but not the scalar line from the Jordan part. The derivation follows the discriminant and separates both pairs of strata: it is zero on the scalar line and at the origin, and of index three on the Jordan part and on the non-zero nilpotents.</p>
 <h2 id="summary">Summary</h2>
 <p>The biquaternion algebra carries many quadratic conditions; this article compares two of them. The quaternionic norm $N=Q_t^2+B^2$ is the constant term of the characteristic polynomial and the product of the eigenvalues; it is multiplicative, and it decides invertibility. The square of the vector part $B^2$ is the discriminant up to $-4$ and vanishes exactly when the two eigenvalues coincide; it is not multiplicative, and it decides whether the spectrum is separated. The null cone is the locus of an eigenvalue at zero, the spectral-degenerate cone the locus of a double eigenvalue.</p>
 <p>The pair of predicates $(N\neq0,\ B^2\neq0)$ cuts the algebra into four sectors, and the four sectors are the four degeneration patterns of a quadratic: two distinct non-zero roots, a double non-zero root, two distinct roots with one zero, a double root at zero. The origin is doubly degenerate and belongs to $\Sigma_{00}$; it is not a fifth case. The finer reading separates the punctured scalar line from the Jordan part and the origin from the non-zero nilpotents, but that split is by the minimal polynomial, not by the two conditions.</p>
 <p>The two cones are independent: neither contains the other, and they meet exactly on the nilpotent cone, along which they are tangent away from the origin. The null cone is a semigroup, the spectral cone is neither multiplicative nor additive.</p>
 <p>The four sectors are compared by their spectrum, normal form, norm and minimal polynomial. The norm separates two types, the characteristic polynomial exactly the four sectors, and the minimal polynomial the six strata. The norm is therefore the coarsest invariant: it cannot separate the scalar line from the Jordan part, nor the origin from the non-zero nilpotents. The characteristic polynomial is complete off the spectral cone and exactly two-to-one on it.</p>
-<p>The two decompositions follow the two conditions. The eigenbasis follows the discriminant: it exists on $\Sigma_{11}\cup\Sigma_{01}$, has one term on the punctured scalar line, and fails on the Jordan part and on the non-zero nilpotents. The polar decomposition follows the norm: it exists on $\Sigma_{11}\cup\Sigma_{10}$ and fails on the null cone. The operator readings are the same pair of loci: the sandwich is singular exactly on the null cone, and the inner derivation is nilpotent exactly on the spectral-degenerate cone.</p>
+<p>The two decompositions follow the two conditions. The eigenbasis follows the discriminant: it exists on $\Sigma_{11}\cup\Sigma_{01}$, has one term on the punctured scalar line, and fails on the Jordan part and on the non-zero nilpotents. The polar decomposition follows the norm: it exists on $\Sigma_{11}\cup\Sigma_{10}$ and fails on the null cone. The operator readings are the same pair of loci: the two-sided operator is singular exactly on the null cone, and the inner derivation is nilpotent exactly on the spectral-degenerate cone.</p>
 <h2 id="summary-of-notation">Summary of Notation</h2>
 <div class="table-scroll"><table>
 <thead>
@@ -513,7 +513,7 @@ $$</p>
 </tr>
 <tr>
 <td>$\mathrm{Sd}_{\tilde Q}(\tilde X)=\tilde Q\tilde X\tilde Q^{*}$</td>
-<td>the sandwich, singular exactly on $\mathcal N$</td>
+<td>the two-sided operator, singular exactly on $\mathcal N$</td>
 </tr>
 <tr>
 <td>$\mathrm{ad}_{\tilde Q}(\tilde X)=\tilde Q\tilde X-\tilde X\tilde Q$</td>
@@ -530,7 +530,7 @@ $$</p>
 <li><a href="the-n-degenerate-spectrally-regular-sector.html">The N-Degenerate, Spectrally Regular Sector</a>, for $\Sigma_{01}$, the scaled idempotents and the spectrum $\{c,0\}$.</li>
 <li><a href="the-n-degenerate-spectrally-degenerate-sector.html">The N-Degenerate, Spectrally Degenerate Sector</a>, for $\Sigma_{00}$, the nilpotent cone and the origin.</li>
 <li><em>Relations between Exponential Polar Decomposition and Eigenbasis of a Biquaternion</em>, for the comparison of the two decompositions factor by factor.</li>
-<li><a href="the-sandwich-of-an-n-regular-spectrally-regular-biquaternion.html">The Sandwich of an N-Regular, Spectrally Regular Biquaternion</a>, for the sandwich, its spectrum and its rank on the null cone.</li>
+<li><a href="hermitian-pair-of-n-regular-spectrally-regular-operators-acting-on-two-sides.html">Hermitian Pair of N-Regular, Spectrally Regular Operators Acting on Two Sides</a>, for the two-sided operator, its spectrum and its rank on the null cone.</li>
 <li><a href="the-biquaternion-eigenvalue-decomposition.html">The Biquaternion Eigenvalue Decomposition</a>, for the eigenvalue decomposition, the eigenprojections and the degenerate regimes.</li>
 <li>
 <p><a href="relations-between-the-biquaternion-exponential-and-the-fourier-kernel.html">Relations between the Biquaternion Exponential and the Fourier Kernel</a>, for the same four sectors read through the flow: the eigenbasis, the root and the Hermitian norm.</p>

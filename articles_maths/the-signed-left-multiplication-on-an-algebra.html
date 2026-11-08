@@ -74,8 +74,8 @@
 <p>$$
 \Lambda(a)(x) = a\,\alpha(x).
 $$</p>
-<p>The twist converts the operator into the one-sided half of the signed sandwich: every signed sandwich is a signed left multiplication followed by a right multiplication, exactly as every unsigned sandwich is a left followed by a right. The signed left multiplication is therefore the one-sided atom of the signed operator theory, the way the left multiplication is the atom of the unsigned one.</p>
-<p>Throughout, $k$ is a field and $A$ is a unital associative $k$-algebra with an involutive automorphism $\alpha$, $\alpha^2 = \mathrm{id}$; the grade involution of a $\mathbb{Z}/2$-grading is the standard instance and the grading theory is <em>Superalgebras and Graded Structures</em>. The unsigned left multiplication $L(a)$, the unsigned right multiplication $R(a)$ and the sandwich $L_{a}R_{b}$ are those of <em>Left and Right Multiplication</em> and <em>The Sandwich Operator on an Algebra</em>, and the signed sandwich $\mathcal{T}_{a,b}$ is that of <em>The Signed Sandwich on an Algebra</em>.</p>
+<p>The twist converts the operator into the one-sided half of the signed two-sided operator: every signed two-sided operator is a signed left multiplication followed by a right multiplication, exactly as every unsigned two-sided operator is a left followed by a right. The signed left multiplication is therefore the one-sided atom of the signed operator theory, the way the left multiplication is the atom of the unsigned one.</p>
+<p>Throughout, $k$ is a field and $A$ is a unital associative $k$-algebra with an involutive automorphism $\alpha$, $\alpha^2 = \mathrm{id}$; the grade involution of a $\mathbb{Z}/2$-grading is the standard instance and the grading theory is <em>Superalgebras and Graded Structures</em>. The unsigned left multiplication $L(a)$, the unsigned right multiplication $R(a)$ and the two-sided operator $L_{a}R_{b}$ are those of <em>Left and Right Multiplication</em> and <em>The Two-Sided Operator on an Algebra</em>, and the signed two-sided operator $\mathcal{T}_{a,b}$ is that of <em>The Signed Two-Sided Operator on an Algebra</em>.</p>
 <h2 id="the-signed-left-multiplication">The Signed Left Multiplication</h2>
 <h3 id="definition">Definition</h3>
 <p><strong>Definition.</strong> For $a \in A$ the <strong>signed left multiplication</strong> by $a$ is the operator</p>
@@ -103,7 +103,7 @@ $$</p>
 <p>$$
 \Lambda(a) = L(a) \qquad \Longleftrightarrow \qquad a\,\alpha(x) = a\,x \ \text{ for all } x \qquad \Longleftrightarrow \qquad a\,A^- = 0,
 $$</p>
-<p>where $A^- = \{x : \alpha(x) = -x\}$ is the negated part of the decomposition $A = A^+ \oplus A^-$ of <em>The Signed Sandwich on an Algebra</em>. In particular, if $\alpha = \mathrm{id}$, or if $A^- = 0$, then $\Lambda(a) = L(a)$ for every $a$; and if $a$ is a unit and $A^- \neq 0$, then $\Lambda(a) \neq L(a)$.</p>
+<p>where $A^- = \{x : \alpha(x) = -x\}$ is the negated part of the decomposition $A = A^+ \oplus A^-$ of <em>The Signed Two-Sided Operator on an Algebra</em>. In particular, if $\alpha = \mathrm{id}$, or if $A^- = 0$, then $\Lambda(a) = L(a)$ for every $a$; and if $a$ is a unit and $A^- \neq 0$, then $\Lambda(a) \neq L(a)$.</p>
 <p><em>Proof.</em> Subtract the two operators: $\Lambda(a) - L(a)$ sends $x$ to $a(\alpha(x) - x)$, and $\alpha(x) - x$ lies in $A^-$ and runs over $A^-$ as $x$ does, so the operator vanishes exactly when $a$ annihilates $A^-$. If $\alpha = \mathrm{id}$ then $A^- = 0$ and the condition is vacuous. If $a$ is a unit and $aA^- = 0$, then $A^- = a^{-1}aA^- = 0$, so a unit satisfies the condition only in the degenerate case.</p>
 <p>The proposition is the precise sense in which the signed left multiplication is a new operator: it differs from the unsigned one exactly on the odd part of the algebra, and it differs at all only when there is an odd part and the element is a zero divisor along it. For the elements that annihilate $A^-$ — in particular for the elements of $A^-$ themselves when $A^-$ squares to zero — the signed and the unsigned operators coincide.</p>
 <h3 id="the-commutators-with-the-left-multiplications">The Commutators with the Left Multiplications</h3>
@@ -159,32 +159,32 @@ $$</p>
 <p>the annihilator of the negated part; this set always contains $0$, it is a subspace of $A$, and it is all of $A$ exactly when $\alpha = \mathrm{id}$.</p>
 <p><em>Proof.</em> This is the comparison proposition: $\Lambda(a) = L(a)$ exactly when $a$ annihilates the negated part. The annihilator of a subspace contains $0$ and is a subspace, and it is all of $A$ exactly when $A^- = 0$, which is to say that no element is negated by $\alpha$ and hence $\alpha = \mathrm{id}$.</p>
 <p>The two readings of "the elements it fixes" — the fixed points of the operator and the elements for which the operator is the unsigned one — are the two sides of the same twist, and the annihilator reading is the second of them.</p>
-<h2 id="the-signed-sandwich-as-a-signed-left-followed-by-a-right">The Signed Sandwich as a Signed Left Followed by a Right</h2>
+<h2 id="the-signed-two-sided-operator-as-a-signed-left-followed-by-a-right">The Signed Two-Sided Operator as a Signed Left Followed by a Right</h2>
 <h3 id="the-factorisation">The Factorisation</h3>
 <p><strong>Theorem.</strong> For all $a, b \in A$,</p>
 <p>$$
 \boxed{\;\mathcal{T}_{a,b} = \Lambda(a)\,R\bigl(\alpha(b)\bigr) = L(a)\,\alpha\,R\bigl(\alpha(b)\bigr)\;},
 $$</p>
-<p>so the signed sandwich is the signed left multiplication followed by a right multiplication.</p>
+<p>so the signed two-sided operator is the signed left multiplication followed by a right multiplication.</p>
 <p><em>Proof.</em> On the one hand $\Lambda(a)R(\alpha(b))(x) = \Lambda(a)(x\alpha(b)) = a\alpha(x\alpha(b)) = a\alpha(x)\alpha^2(b) = a\alpha(x)b = \mathcal{T}_{a,b}(x)$. On the other hand $L(a)\alpha R(\alpha(b))(x) = a\alpha(x\alpha(b)) = a\alpha(x)b = \mathcal{T}_{a,b}(x)$, the same value, since $\Lambda(a) = L(a)\alpha$; so the three operators agree. Note the second index of the right multiplication in the last form is $\alpha(b)$, not $b$: the twist moves to the right factor.</p>
-<p><strong>Corollary.</strong> Every signed sandwich is a product of a signed left multiplication and a right multiplication, and the signed sandwich space is the product $\Lambda(A)\,R(A)$ of the two spaces. In particular the signed sandwich space is the image of the unsigned sandwich space under composition with $\alpha$, and the two share their dimension, as stated in <em>The Signed Sandwich on an Algebra</em>.</p>
+<p><strong>Corollary.</strong> Every signed two-sided operator is a product of a signed left multiplication and a right multiplication, and the signed two-sided space is the product $\Lambda(A)\,R(A)$ of the two spaces. In particular the signed two-sided space is the image of the unsigned two-sided space under composition with $\alpha$, and the two share their dimension, as stated in <em>The Signed Two-Sided Operator on an Algebra</em>.</p>
 <h3 id="the-commutation-with-the-right-multiplications">The Commutation with the Right Multiplications</h3>
 <p><strong>Proposition.</strong> For all $a, b \in A$,</p>
 <p>$$
 \Lambda(a)\,R(b) - R(b)\,\Lambda(a) = \mathcal{T}_{a,\,\alpha(b)} - \mathcal{T}_{a,\,b} .
 $$</p>
 <p><em>Proof.</em> Evaluate the two products on $x$: $\Lambda(a)R(b)(x) = a\alpha(xb) = a\alpha(x)\alpha(b) = \mathcal{T}_{a,\alpha(b)}(x)$, while $R(b)\Lambda(a)(x) = \Lambda(a)(x)\,b = a\alpha(x)b = \mathcal{T}_{a,b}(x)$.</p>
-<p>The right multiplications and the signed left multiplications fail to commute by the difference of two signed sandwiches, and the difference is measured by $\alpha(b) - b$: it vanishes for all $a$ exactly when $\alpha(b) = b$, that is on the plus part, and on the negated part it is $\mathcal{T}_{a,-b} - \mathcal{T}_{a,b} = -2\mathcal{T}_{a,b}$. This is the operator form of the sign rule that distinguishes the graded theory from the ungraded one, and in characteristic two the difference vanishes identically because $-2 = 0$.</p>
+<p>The right multiplications and the signed left multiplications fail to commute by the difference of two signed two-sided operators, and the difference is measured by $\alpha(b) - b$: it vanishes for all $a$ exactly when $\alpha(b) = b$, that is on the plus part, and on the negated part it is $\mathcal{T}_{a,-b} - \mathcal{T}_{a,b} = -2\mathcal{T}_{a,b}$. This is the operator form of the sign rule that distinguishes the graded theory from the ungraded one, and in characteristic two the difference vanishes identically because $-2 = 0$.</p>
 <h2 id="the-examples">The Examples</h2>
 <h3 id="a-trivial-twist">A Trivial Twist</h3>
 <p>If $\alpha = \mathrm{id}$, then $\Lambda(a) = L(a)$ for every $a$, the signed left multiplication is the left multiplication, the composition rules reduce to $L(a)L(b) = L(ab)$, and the whole of the article collapses to the left half of <em>Left and Right Multiplication</em>. The signed left multiplication is a new operator only when the twist is nontrivial.</p>
 <h3 id="a-group-algebra-with-a-parity">A Group Algebra with a Parity</h3>
-<p>Let $A = k[G]$ with the parity $\chi$ of <em>The Signed Sandwich on an Algebra</em>. Then $\Lambda(g)$ sends the group element $x_h$ to $\chi(h)\,x_{gh}$, the left translation dressed by the parity of the element acted on and not of the acting one: $\Lambda(g)(x) = g\,\alpha(x)$, so the sign is $\chi$ of the argument. Since $g$ is a unit, the comparison $\Lambda(g) = L(g)$ forces the odd part to vanish, so for a nontrivial parity no group element has the signed left multiplication equal to the unsigned one, and the two coincide for every $g$ exactly when $\chi$ is trivial.</p>
+<p>Let $A = k[G]$ with the parity $\chi$ of <em>The Signed Two-Sided Operator on an Algebra</em>. Then $\Lambda(g)$ sends the group element $x_h$ to $\chi(h)\,x_{gh}$, the left translation dressed by the parity of the element acted on and not of the acting one: $\Lambda(g)(x) = g\,\alpha(x)$, so the sign is $\chi$ of the argument. Since $g$ is a unit, the comparison $\Lambda(g) = L(g)$ forces the odd part to vanish, so for a nontrivial parity no group element has the signed left multiplication equal to the unsigned one, and the two coincide for every $g$ exactly when $\chi$ is trivial.</p>
 <h3 id="the-exterior-algebra">The Exterior Algebra</h3>
 <p>Let $A = \Lambda(V)$ with the degree grading. For an odd element $a$, the operator $\Lambda(a)$ sends an even element to an odd one with a sign, and an odd element to an even one; it is the left multiplication graded by the parity, and the sign rules of the exterior algebra are those of the corollary. For a vector $v$ the operator $\Lambda(v)$ has $\Lambda(v)^2 = 0$, since $\Lambda(v)^2 = L(v\alpha(v)) = L(-v^2) = 0$, which is the exterior relation $v^2 = 0$ read on the operator; the signed left multiplication by a vector is thus a square-zero operator on the exterior algebra.</p>
 <h2 id="summary">Summary</h2>
 <p>The signed left multiplication is the operator $\Lambda(a)(x) = a\alpha(x)$ on $A$, $k$-linear in $x$ and in $a$, with $\Lambda(1) = \alpha$, $\Lambda(a)(1) = a$, and the two readings $\Lambda(a) = L(a)\alpha = \alpha L(\alpha(a))$ of the unsigned left multiplication; the map $a \mapsto \Lambda(a)$ is injective and its image has dimension $n$, and $\Lambda(a)$ is invertible exactly when $a$ is a unit, with inverse $\Lambda(\alpha(a^{-1}))$. Its product with the left multiplications is $\Lambda(a)L(b) = \Lambda(a\alpha(b))$ and $L(a)\Lambda(b) = \Lambda(ab)$, whence $[L(b),\Lambda(a)] = \Lambda(ba - a\alpha(b))$, which is $\Lambda([b,a])$ for even $b$ and $\Lambda(ba + ab)$ for odd $b$.</p>
-<p>The signed left multiplication differs from the unsigned one exactly by the operator $x \mapsto a(\alpha(x) - x)$, so $\Lambda(a) = L(a)$ exactly when $a$ annihilates the negated part $A^-$; its fixed points are the solutions of $a\alpha(x) = x$, which the involution $\alpha$ carries onto the fixed points of the signed left multiplication $\Lambda(\alpha(a))$; the operator $\Lambda(1)$ is $\alpha$, so its fixed set is the plus part $A^+$, while the elements fixed by the whole family are only $0$. Every signed sandwich is a signed left multiplication followed by a right multiplication, $\mathcal{T}_{a,b} = \Lambda(a)R(\alpha(b))$, and the failure of the right multiplications to commute with the signed left ones is the difference of two signed sandwiches, which is the sign rule of the grading in operator form. The corresponding adjoint operations are the subject of <em>The Signed Adjoint of the Left Multiplication on an Algebra</em> of the group <code>- * Operator Theory</code>; the unsigned left and right multiplications are <em>Left and Right Multiplication</em>, and the twist is that of <em>The Signed Sandwich on an Algebra</em>.</p>
+<p>The signed left multiplication differs from the unsigned one exactly by the operator $x \mapsto a(\alpha(x) - x)$, so $\Lambda(a) = L(a)$ exactly when $a$ annihilates the negated part $A^-$; its fixed points are the solutions of $a\alpha(x) = x$, which the involution $\alpha$ carries onto the fixed points of the signed left multiplication $\Lambda(\alpha(a))$; the operator $\Lambda(1)$ is $\alpha$, so its fixed set is the plus part $A^+$, while the elements fixed by the whole family are only $0$. Every signed two-sided operator is a signed left multiplication followed by a right multiplication, $\mathcal{T}_{a,b} = \Lambda(a)R(\alpha(b))$, and the failure of the right multiplications to commute with the signed left ones is the difference of two signed two-sided operators, which is the sign rule of the grading in operator form. The corresponding adjoint operations are the subject of <em>The Signed Adjoint of the Left Multiplication on an Algebra</em> of the group <code>- * Operator Theory</code>; the unsigned left and right multiplications are <em>Left and Right Multiplication</em>, and the twist is that of <em>The Signed Two-Sided Operator on an Algebra</em>.</p>
 <h2 id="summary-of-notation">Summary of Notation</h2>
 <div class="table-scroll"><table>
 <thead>
@@ -228,11 +228,11 @@ $$</p>
 </tr>
 <tr>
 <td>$\mathcal{T}_{a,b}(x) = a\alpha(x)b$</td>
-<td>the signed sandwich</td>
+<td>the signed two-sided operator</td>
 </tr>
 <tr>
 <td>$\mathcal{T}_{a,b} = \Lambda(a)R(\alpha(b)) = L(a)\alpha R(\alpha(b)) = R(b)\Lambda(a)$</td>
-<td>the factorisation of the signed sandwich</td>
+<td>the factorisation of the signed two-sided operator</td>
 </tr>
 <tr>
 <td>$\operatorname{Fix}\Lambda(a)$</td>

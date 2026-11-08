@@ -132,7 +132,7 @@ $$</p>
 \langle\tilde q\rangle_{\natural}=\tilde q\tilde q^{\natural}
 =q_t^2+q_x^2+q_y^2+q_z^2 .
 $$</p>
-<p>The modulus is $r=\sqrt{\langle\tilde q\rangle_{\natural}}>0$, the angle is $\theta=\arccos(q_t/r)\in[0,\pi]$, and the axis $\vec n$ is a unit pure quaternion. The angle $\theta$ is the <strong>exponent angle</strong>, the half-angle stored in the rotor; the rotation produced by the sandwich is $2\theta$. This is the convention of <em>Exponential Polar Decomposition of Quaternions</em>. The biquaternion article writes its rotor as $\exp(\frac{\theta_{\mathrm b}}{2}\vec u_{\mathrm r})$, where $\theta_{\mathrm b}$ is its rotation angle; here $\theta_{\mathrm b}=2\theta$, so its exponent angle is $\theta$. The entries of the two case tables can be set side by side, but the biquaternion table's $\theta$ is the rotation angle, while the $\theta$ here is the exponent angle, half of it.</p>
+<p>The modulus is $r=\sqrt{\langle\tilde q\rangle_{\natural}}>0$, the angle is $\theta=\arccos(q_t/r)\in[0,\pi]$, and the axis $\vec n$ is a unit pure quaternion. The angle $\theta$ is the <strong>exponent angle</strong>, the half-angle stored in the rotor; the rotation produced by the two-sided operator is $2\theta$. This is the convention of <em>Exponential Polar Decomposition of Quaternions</em>. The biquaternion article writes its rotor as $\exp(\frac{\theta_{\mathrm b}}{2}\vec u_{\mathrm r})$, where $\theta_{\mathrm b}$ is its rotation angle; here $\theta_{\mathrm b}=2\theta$, so its exponent angle is $\theta$. The entries of the two case tables can be set side by side, but the biquaternion table's $\theta$ is the rotation angle, while the $\theta$ here is the exponent angle, half of it.</p>
 <p>The quaternion case has no phase $\alpha$, no rapidity $\theta_{\mathrm{rpd}}$ and no Hermitian factor: the modulus is a positive real and the unit factor is a single rotor. Errors are the largest modulus of a coefficient difference and are computed in double precision; a displayed zero is exact in that precision, and displayed decimals are rounded.</p>
 <p><strong>The plan.</strong> The method is stated once (§<em>The Method</em>). The eight cases follow (§<em>The Eight Cases</em>), each with its coordinates, its polar data and its check. The boundary is treated separately (§<em>The Real Axis Family</em>). The summary collects the results in four tables, reads the patterns across the cases, and compares the quaternion and biquaternion architectures (§<em>Summary</em>).</p>
 <h2 id="the-method">The Method</h2>
@@ -158,7 +158,7 @@ $$</p>
 <p>$$
 \vec n=\frac{\vec q}{\sqrt{\langle\vec q\rangle_{\natural}}}
 $$</p>
-<p>when $\vec q\neq0$. The unit factor is a rotor: it lies on $S^3$, and its sandwich rotates by $2\theta$ about $\vec n$.</p>
+<p>when $\vec q\neq0$. The unit factor is a rotor: it lies on $S^3$, and its two-sided operator rotates by $2\theta$ about $\vec n$.</p>
 <p>There is no Hermitian factor to split off. In the biquaternion case the unit factor factors as $\tilde U_{\mathrm b}\tilde u_{\mathrm r}$, a Hermitian positive factor and a $*$-unitary factor, with two angles and two axes. Here the Hermitian factor is the identity and the $*$-unitary factor is the whole unit factor. The two objects of the decomposition are the scale $r$ and the rotor $\tilde u_{\mathrm r}$; the axis is a coordinate of the rotor, not a third factor.</p>
 <div class="table-scroll"><table>
 <thead>
@@ -1076,7 +1076,7 @@ $$</p>
 </tr>
 <tr>
 <td>$2\theta$</td>
-<td>the rotation angle of the sandwich</td>
+<td>the rotation angle of the two-sided operator</td>
 </tr>
 <tr>
 <td>$\tilde q_{\log}=\ln r+\theta\vec n$</td>

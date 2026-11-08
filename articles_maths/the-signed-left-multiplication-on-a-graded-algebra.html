@@ -74,7 +74,7 @@
 <p>$$
 \ell_a:A\longrightarrow A,\qquad \ell_a(x)=a\,\alpha(x),
 $$</p>
-<p>the left multiplication with the argument twisted by $\alpha$. It is the signed sandwich of <em>The Signed Sandwich on a Graded Algebra</em> with the right factor equal to the unit, $\ell_a=\Sigma^{\alpha}_{a,1}=L_a\circ\alpha$, and it is the one-sided operator that the reflections of <em>Reflections as Signed Two-Sided Operators on a Graded Algebra</em> use as their building block. This article treats the one-sided signed action: its definition and its relation to the unsigned left multiplication $L_a$, the composition law that makes a product of two signed left multiplications an <strong>unsigned</strong> left multiplication, the coset structure of the family $\{\ell_a\}$ in the algebra of operators, the parity of the operators, and the elements they fix. The graded algebra and the grade involution are <em>Superalgebras and Graded Structures</em>; the module-theoretic version of an action is <em>The Graded Action on a Module over a Graded Algebra</em>, and the adjoint of $\ell_a$ is <em>The Signed Adjoint of the Left Multiplication on a Graded Algebra</em> in the <code>- * Operator Theory</code> group, deferred here.</p>
+<p>the left multiplication with the argument twisted by $\alpha$. It is the signed two-sided operator of <em>The Signed Two-Sided Operator on a Graded Algebra</em> with the right factor equal to the unit, $\ell_a=\Sigma^{\alpha}_{a,1}=L_a\circ\alpha$, and it is the one-sided operator that the reflections of <em>Reflections as Signed Two-Sided Operators on a Graded Algebra</em> use as their building block. This article treats the one-sided signed action: its definition and its relation to the unsigned left multiplication $L_a$, the composition law that makes a product of two signed left multiplications an <strong>unsigned</strong> left multiplication, the coset structure of the family $\{\ell_a\}$ in the algebra of operators, the parity of the operators, and the elements they fix. The graded algebra and the grade involution are <em>Superalgebras and Graded Structures</em>; the module-theoretic version of an action is <em>The Graded Action on a Module over a Graded Algebra</em>, and the adjoint of $\ell_a$ is <em>The Signed Adjoint of the Left Multiplication on a Graded Algebra</em> in the <code>- * Operator Theory</code> group, deferred here.</p>
 <p>The base is a commutative ring $R$ with $1$, $A=A^0\oplus A^1$ is a $\mathbb{Z}/2$-graded associative algebra with grade involution $\alpha$, and the operators are written $L_a$ (unsigned left multiplication), $R_b$ (unsigned right multiplication) and $\ell_a$ (signed left multiplication). The article reasons with the ring structure and the grading only.</p>
 <h2 id="definition-and-relation-to-the-unsigned-action">Definition and Relation to the Unsigned Action</h2>
 <p><strong>Definition.</strong> The <strong>signed left multiplication</strong> by $a\in A$ is</p>
@@ -85,7 +85,7 @@ $$</p>
 <p>$$
 \boxed{\;\ell_a=L_a\circ\alpha\;},
 $$</p>
-<p>and the signed sandwich is recovered from it, $\Sigma^{\alpha}_{a,b}=\ell_a\circ R_{\alpha(b)}$.</p>
+<p>and the signed two-sided operator is recovered from it, $\Sigma^{\alpha}_{a,b}=\ell_a\circ R_{\alpha(b)}$.</p>
 <p><strong>Proof.</strong> Both sides of the first display send $x$ to $a\alpha(x)$; for the second, $\ell_a(R_{\alpha(b)}(x))=\ell_a(x\alpha(b))=a\alpha(x)\alpha(\alpha(b))=a\alpha(x)b=\Sigma^{\alpha}_{a,b}(x)$.</p>
 <p><strong>Proposition.</strong> The assignment $a\mapsto\ell_a$ is $R$-linear and injective; the signed left multiplication is the unsigned left multiplication exactly when $\alpha$ fixes the elements in question, in particular $\ell_a=L_a$ for every $a$ if and only if $\alpha=\mathrm{id}$, that is if and only if $A^1=0$.</p>
 <p><strong>Proof.</strong> Linearity is immediate from the definition, and if $\ell_a=0$ then $a\alpha(x)=0$ for every $x$, hence $a=0$ because $\alpha$ is onto; the comparison $\ell_a=L_a$ means $a\alpha(x)=ax$ for all $x$, which forces $\alpha(x)=x$ on the range of a nonzero $a$, and taking $a=1$ gives $\alpha=\mathrm{id}$.</p>
@@ -141,7 +141,7 @@ $$</p>
 </tr>
 <tr>
 <td>$\Sigma^{\alpha}_{a,b}$</td>
-<td>the signed sandwich, $\ell_a R_{\alpha(b)}$</td>
+<td>the signed two-sided operator, $\ell_a R_{\alpha(b)}$</td>
 </tr>
 <tr>
 <td>$\mathrm{Fix}(\ell_a)$</td>

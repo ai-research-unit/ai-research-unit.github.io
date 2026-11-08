@@ -115,7 +115,7 @@ k_{t}^{\prime}=\sum_i k_{t,i}^{\prime},
 $$</p>
 <p>for the parts of a state and for the products of a collision. One sum replaces three, because the three coefficients travel in one element. Wavelengths do not add: the wavelength of a sum is the reciprocal of a sum of reciprocals. A conservation law written in wavelengths is a statement about harmonics, and a conservation law written in wave numbers is a statement about addition. That is the whole reason a quantum field is discussed in wave numbers.</p>
 <p><strong>The three questions.</strong> The mass wave number answers <em>how close can the particle be brought to a point</em>. It is the wave number at which the rest energy is the energy of the probe, so it is where a one-particle description stops being possible and where the force the particle carries runs out. The momentum wave number answers <em>how fast does the state wind</em>. It is the modulus of the vector part of $\tilde K_{\Phi}$, the angle of phase turned per unit distance, so it fixes the spacing of interference fringes, the width of the narrowest state of that momentum, and the circumference of a bound orbit in radians. The energy wave number answers <em>how fast does the clock run</em>. It is the temporal coefficient of the same element, so it fixes the rate of every phase and the reach of any process that borrows a given energy.</p>
-<p><strong>What is new here and what is not.</strong> The definitions, the triangle and the values are bookkeeping. The physical readings are the subject: the rest of the article takes each of the three in turn, and states what it measures, where it enters as a threshold, and which equation of the series carries it.</p>
+<p><strong>What is new here and what is not.</strong> The definitions, the triangle and the values are bookkeeping. The physical readings are the subject: the rest of the article takes each of the three in turn, and states what it measures, where it enters as a threshold, and which equation of the series carries it. The article closes with the non-relativistic limit, which is not a fourth reading but the one operation the triangle admits: split off the mass side exactly, expand in the ratio of the other two, and keep the leading term.</p>
 <p>The article is named for the three wave numbers together because no one of them is enough. The mass wave number alone is the only one the particle carries at rest; the Dirac article of the series writes the coefficient of a mass term and the temporal entry of a parameter as two wave numbers side by side, and a reader who has one of the three without the others cannot tell which of the two is which.</p>
 <h2 id="naming-the-coordinates">Naming the Coordinates</h2>
 <p><strong>Nothing is defined twice.</strong> The deduction gave each number one source and no other. The temporal coefficient of $\tilde K_{\Phi}$ is the temporal coefficient of $\tilde P_{\Phi}$ divided by $\hbar$; the vector part of $\tilde K_{\Phi}$ is the vector part of $\tilde P_{\Phi}$ divided by $\hbar$; the mass wave number is the norm of $\tilde K_{\Phi}$. There is no second rule for the energy, and none is needed: $E/c$ is already a coordinate of the momentum, so $E/(\hbar\,c)$ is the corresponding coordinate of the quotient, obtained by the same division. An energy over $c$ is a momentum, and that is the whole of the step that is easy to miss.</p>
@@ -478,7 +478,8 @@ $$</p>
 <p><strong>The two are measured by different means.</strong> The mass wave number is measured by scattering, in the Compton shift and in the falling cross-section; the rest-frame frequency is measured by interference between a particle and its antiparticle, in the oscillation of a neutral meson. Both return $mc^2$, and neither needs a particle at rest in the laboratory: the frequency is read as an energy difference and the wave number as a momentum transfer.</p>
 <h3 id="the-zitterbewegung-amplitude">The Zitterbewegung Amplitude</h3>
 <p><strong>The Dirac position trembles.</strong> In the Dirac theory the velocity operator has eigenvalues $\pm c$, and the position has, besides a mean motion, an oscillating part. Its amplitude is of order</p>
-<p>$$\frac{1}{2\,k_m} = \frac{1}{2k_m} ,
+<p>$$
+\frac{1}{2\,k_m} = \frac{1}{2k_m} ,
 $$</p>
 <p>which is $193.080\ \mathrm{fm}$ for the electron. The oscillating part is the interference between the positive- and negative-frequency pieces of the state, which is why it exists in the Dirac theory and not in a one-component theory.</p>
 <p><strong>The product of amplitude and frequency is $c$.</strong> The angular frequency of the trembling is $2\omega_C=2c\,k_m$, twice the rest-frame rate, and the amplitude times that frequency is</p>
@@ -783,6 +784,109 @@ $$</p>
 <p>The three ways of writing the same condition are $p\ll mc$, $k_{\Phi}\gg k_m$ and $k_{t}^{\prime}\simeq k_m$. The last is the easiest to apply, since $k_{t}^{\prime}=\gamma k_m$ and the criterion is $\gamma\simeq1$.</p>
 <p><strong>The hydrogen atom is the case in point.</strong> The ratio $a_0k_{m_e}=1/\alpha=137.036$ derived in §<em>The Atomic Comparison</em> is the criterion satisfied with room to spare, and the room is exactly the inverse fine-structure constant.</p>
 <p><strong>Light and heavy.</strong> At fixed $L$, a light particle has the smaller $k_m$ and reaches the relativistic regime first; a heavy particle stays non-relativistic in a smaller box. That is why the electron in a light atom is relativistic to a few parts in $10^{5}$ and the nucleons in the same atom are not.</p>
+<h2 id="the-non-relativistic-limit">The Non-Relativistic Limit</h2>
+<p><strong>A criterion is not a limit.</strong> The preceding section states when the limit applies. This section states what the limit is, in the three wave numbers. It is one operation on the box $k_{t}^{\prime\,2}=k_{\Phi}^{2}+k_m^{2}$, and the operation has four moves: split exactly, solve exactly, expand once, keep the leading term. The same four moves on the same equation in momentum are the subject of <em>The Non-Relativistic Limit of Relativistic Mechanics in Biquaternionic Form</em>.</p>
+<h3 id="the-exact-split">The Exact Split</h3>
+<p>Write the energy wave number as the mass wave number plus an excess,</p>
+<p>$$
+k_{t}^{\prime} = k_m+\Omega ,
+\qquad
+\Omega := k_{t}^{\prime}-k_m .
+$$</p>
+<p>Nothing is approximated in that line, because the second equality defines $\Omega$. The first term is the wave number of the rest frame, the second is the wave number the motion adds, and the exponent splits with them:</p>
+<p>$$
+e^{-i\,k_{t}^{\prime}r'_{t}} = \underbrace{e^{-i\,k_m r'_{t}}}_{f}\,
+\underbrace{e^{-i\,\Omega r'_{t}}}_{\text{excess}} .
+$$</p>
+<p>The factor $f$ is the rest-frame clock of §<em>The Rest-Frame Clock</em>: unit modulus, period equal to the Compton period, and present in every state of the particle regardless of its speed.</p>
+<p><strong>Frequencies split the same way.</strong> With $\omega_{m}=c\,k_m$ and $\omega=c\,\Omega$, the frequency of the state is $\omega_m+\omega$. The rest-frame clock is the $\Omega=0$ member of the family, and the excess frequency is the part the kinetic energy pays for.</p>
+<h3 id="the-exact-relation">The Exact Relation</h3>
+<p>Substitute the split in the box and cancel the $k_m^{2}$ that appears on both sides:</p>
+<p>$$
+k_{\Phi}^{2} = 2k_m\,\Omega+\Omega^{2} .
+$$</p>
+<p>This is exact, and it is the box with the origin of the energy axis moved to the mass side. It has one term linear in the excess and one term quadratic. Solved as a quadratic in $\Omega$, it gives the two branches:</p>
+<p>$$
+\Omega_{\pm} = -k_m \pm \sqrt{k_{\Phi}^{2}+k_m^{2}} .
+$$</p>
+<h3 id="the-parameter">The Parameter</h3>
+<p>The quotient of the quadratic term by the linear one is $\Omega/(2k_m)$, and that quotient is the parameter:</p>
+<p>$$
+\eta := \frac{\Omega}{2k_m}
+= \frac{\gamma-1}{2}
+= \frac{1}{4}\frac{k_{\Phi}^{2}}{k_m^{2}}+O\left(\frac{k_{\Phi}^{4}}{k_m^{4}}\right).
+$$</p>
+<p>It is not inserted: the exact relation has two terms, and $\eta$ is what their ratio is. The criterion $k_{\Phi}\ll k_m$ of the preceding section is the statement $\eta\ll1$, which is why a criterion about sizes and a limit about terms say the same thing here.</p>
+<p><strong>The error, in closed form.</strong> Because $\Omega=\frac{k_{\Phi}^{2}}{2k_m}\cdot\frac{1}{1+\eta}$, the truncated excess $\Omega_{\mathrm{trunc}}:=k_{\Phi}^{2}/(2k_m)$ relates to the exact one by</p>
+<p>$$
+\frac{\Omega-\Omega_{\mathrm{trunc}}}{\Omega_{\mathrm{trunc}}} = -\frac{\eta}{1+\eta} .
+$$</p>
+<p>The error is known at every wave number and needs no estimate.</p>
+<h3 id="the-expansion">The Expansion</h3>
+<p>Set $r:=k_{\Phi}/k_m$, so that $\Omega=k_m\left(\sqrt{1+r^{2}}-1\right)$ by the exact solution. Then</p>
+<p>$$
+\Omega = k_m\left(\frac{r^{2}}{2}-\frac{r^{4}}{8}+\frac{r^{6}}{16}-\cdots\right)
+= \frac{k_{\Phi}^{2}}{2k_m}-\frac{k_{\Phi}^{4}}{8k_m^{3}}+\frac{k_{\Phi}^{6}}{16k_m^{5}}-\cdots .
+$$</p>
+<p>Keeping the first term, and converting with $k_m=mc/\hbar$,</p>
+<p>$$
+\Omega = \frac{k_{\Phi}^{2}}{2k_m},
+\qquad
+\hbar c\,\Omega = \frac{\hbar^{2}k_{\Phi}^{2}}{2m} = \frac{p^{2}}{2m},
+$$</p>
+<p>which is the non-relativistic kinetic energy. The dropped term is $-p^{4}/(8m^{3}c^{2})$, the familiar correction to the kinetic energy, and the ratio of dropped to kept is $-\eta$ to leading order.</p>
+<p><strong>The table of the error.</strong> The exact $\eta$ and the leading form $\frac14 r^{2}$ agree at small $r$ and part company at large $r$, which is the boundary of the limit.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>$k_{\Phi}/k_m$</th>
+<th>exact $\eta$</th>
+<th>$\frac{1}{4}r^{2}$</th>
+<th>error $-\eta/(1+\eta)$</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$0.1$</td>
+<td>$0.00249$</td>
+<td>$0.00250$</td>
+<td>$-0.00249$</td>
+</tr>
+<tr>
+<td>$0.5$</td>
+<td>$0.0590$</td>
+<td>$0.0625$</td>
+<td>$-0.0557$</td>
+</tr>
+<tr>
+<td>$1$</td>
+<td>$0.2071$</td>
+<td>$0.2500$</td>
+<td>$-0.1716$</td>
+</tr>
+<tr>
+<td>$2$</td>
+<td>$0.6180$</td>
+<td>$1.0000$</td>
+<td>$-0.3820$</td>
+</tr>
+</tbody>
+</table></div>
+<h3 id="the-order-in-time">The Order in Time</h3>
+<p><strong>Two terms of the exponential give a first-order relation.</strong> The excess factor advances over a step $\delta r'_{t}$ as</p>
+<p>$$
+e^{-i\,\Omega\,\delta r'_{t}} = 1-i\,\Omega\,\delta r'_{t}+O\left(\left(\delta r'_{t}\right)^{2}\right),
+$$</p>
+<p>so a field that carries the excess phase satisfies $\partial_{r'_{t}}\chi=-i\Omega\,\chi$. It is first order in $r'_{t}$ because the exponential was cut after two terms. A third term leaves $\chi''$ in the relation and rebuilds a second-order equation, which is the form the field articles start from. <strong>The order in time is the number of terms kept</strong>, and keeping two terms is the same decision as keeping the leading term of the ladder.</p>
+<p><strong>The equation of the limit.</strong> With $\Omega$ truncated to $k_{\Phi}^{2}/2k_m$ and $k_{\Phi}^{2}\to-\Delta$, the relation becomes</p>
+<p>$$
+i\,\frac{\partial\chi}{\partial r'_{t}} = -\frac{1}{2k_m}\,\Delta\,\chi.
+$$</p>
+<p>Multiplying by $\hbar c$ and using $\hbar c/2k_m=\hbar^{2}/2m$, the free Schrödinger equation follows in either variable:</p>
+<p>$$
+\boxed{\;i\hbar\,\frac{\partial\chi}{\partial t'} = -\frac{\hbar^{2}}{2m}\,\Delta\,\chi\;}
+$$</p>
+<p>That box is what the three wave numbers leave when the only small term of their triangle is dropped. <em>The Klein–Gordon Equation in Biquaternionic Form</em> applies the same box to the field, and there the same four moves are the whole derivation.</p>
 <h2 id="the-massless-case">The Massless Case</h2>
 <p><strong>The degenerate triangle.</strong> As $m\to0$ the mass side vanishes and the box loses that term:</p>
 <p>$$
@@ -825,6 +929,7 @@ $$</p>
 <p>The energy wave number is the temporal coefficient of $\tilde K_{\Phi}$, and it is the wave number the particle would have if it were massless, with $k_{\Phi}/k_{t}^{\prime}=\beta$ the measure of how far it is from that. It is one radian per $1/(c\,k_{t}^{\prime})$ of light travel. It is the inverse reach of a virtual deficit of energy, and the Yukawa range is the case of a deficit $mc^{2}$. It is the inverse decay length, $\Gamma/(\frac{m\,c^{2}}{k_m})=1/(c\tau)$: $0.128\ \mathrm{m^{-1}}$ for the pion and $1.265\times10^{16}\ \mathrm{m^{-1}}$ for the $Z$. It is the largest of the three, and at the Planck energy it is the inverse Planck length.</p>
 <p>For the electron $k_m=2.5896\times10^{12}\ \mathrm{m^{-1}}$, and it is the same at every energy; at $1\ \mathrm{MeV}$ the other two are $k_{t}^{\prime}=5.0677\times10^{12}\ \mathrm{m^{-1}}$ and $k_{\Phi}=4.3561\times10^{12}\ \mathrm{m^{-1}}$, at $100\ \mathrm{MeV}$ both are $5.0677\times10^{14}\ \mathrm{m^{-1}}$, and at rest the energy wave number equals the mass wave number while the momentum wave number vanishes.</p>
 <p>None of the three is the size of the particle: the proton's charge radius times its mass wave number is four, and the electron is pointlike far below its own inverse. At $m=0$ the triangle degenerates, $k_{t}^{\prime}=k_{\Phi}$ and the mass wave number is no longer a wave number of the problem. The massless equations of the series are exact for that reason, not approximate.</p>
+<p>The non-relativistic limit is one operation on the triangle. Split off the mass side exactly, $k_{t}^{\prime}=k_m+\Omega$, note that the triangle then reads $k_{\Phi}^{2}=2k_m\Omega+\Omega^{2}$, expand once, and keep the term linear in the excess. The quotient of the two terms, $\eta=\Omega/(2k_m)$, is the small parameter, and the error of the truncation is $-\eta/(1+\eta)$ in closed form. The leading term is $\hbar c\,\Omega=p^{2}/2m$, and the first-order relation it carries, with $k_{\Phi}^{2}\to-\Delta$, is the free Schrödinger equation.</p>
 <h2 id="summary-of-notation">Summary of Notation</h2>
 <div class="table-scroll"><table>
 <thead>
@@ -889,6 +994,18 @@ $$</p>
 <tr>
 <td>$\frac{m\,c^{2}}{k_m}= 197.32698\ \mathrm{MeV}\cdot\mathrm{fm}$</td>
 <td>The conversion between an energy and a wave number</td>
+</tr>
+<tr>
+<td>$\Omega = k_{t}^{\prime}-k_m$</td>
+<td>The excess wave number; the part of the energy wave number above the mass side, $\Omega=\sqrt{k_{\Phi}^{2}+k_m^{2}}-k_m=k_{\Phi}^{2}/2k_m-\cdots$</td>
+</tr>
+<tr>
+<td>$k_{\Phi}^{2}=2k_m\Omega+\Omega^{2}$</td>
+<td>The triangle with its origin moved to the mass side; exact, one term linear in the excess and one quadratic</td>
+</tr>
+<tr>
+<td>$\eta = \frac{\Omega}{2k_m}=\frac{\gamma-1}{2}$</td>
+<td>The ratio of the quadratic term to the linear one; the small parameter of the limit, with $-\eta/(1+\eta)$ the error of the truncation</td>
 </tr>
 <tr>
 <td>$\gamma = \frac{E}{mc^{2}}$, $\beta = \frac{pc}{E}$</td>
