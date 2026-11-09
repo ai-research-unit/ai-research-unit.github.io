@@ -109,26 +109,26 @@ because the star reverses the order of the three factors, $(aQb)^{*}=b^{*}Q^{*}a
 **The bivectors.** The six bivectors are indexed by the six pairs of the basis, and each is an action of the same shape:
 
 $$
-\mathcal{G}_{0k}:\ Q\longmapsto i\,\vec e_\eta\,Q\,\vec e_z ,
+\mathcal{G}_{0\eta}:\ Q\longmapsto i\,\vec e_\eta\,Q\,\vec e_z ,
 \qquad
 \mathcal{G}_{ij}:\ Q\longmapsto i\,\vec e_\eta\,Q ,
 $$
 
-with $k$ the third spatial unit, complementary to the pair $(i,j)$. Each is $i$ times a left multiplication by a spatial unit, with the chirality factor present for the timelike pair and absent for the spatial pair. The glyph $\mathcal{G}_{\mu\nu}$ names the bivector of the pair and nothing else, and the two lines above are its definition.
+with $\eta$ the third spatial unit, complementary to the pair $(i,j)$. Each is $i$ times a left multiplication by a spatial unit, with the chirality factor present for the timelike pair and absent for the spatial pair. The glyph $\mathcal{G}_{\mu\nu}$ names the bivector of the pair and nothing else, and the two lines above are its definition.
 
 **The Hodge duality.** The dual is this article's map on the insertions, and it is one line on each family: it exchanges the two members of a pair and it carries the sign of the central $-i$,
 
 $$
-\mathcal{D}\bigl(\mathcal{G}_{0k}\bigr)=+\,\mathcal{G}_{\lambda\mu},
+\mathcal{D}\bigl(\mathcal{G}_{0\eta}\bigr)=+\,\mathcal{G}_{\lambda\mu},
 \qquad
-\mathcal{D}\bigl(\mathcal{G}_{\lambda\mu}\bigr)=-\,\mathcal{G}_{0k},
+\mathcal{D}\bigl(\mathcal{G}_{\lambda\mu}\bigr)=-\,\mathcal{G}_{0\eta},
 \qquad
-\mathcal{D}\bigl(\mathcal{O}_{0k}\bigr)=+\,\mathcal{O}_{\lambda\mu},
+\mathcal{D}\bigl(\mathcal{O}_{0\eta}\bigr)=+\,\mathcal{O}_{\lambda\mu},
 \qquad
-\mathcal{D}\bigl(\mathcal{O}_{\lambda\mu}\bigr)=-\,\mathcal{O}_{0k},
+\mathcal{D}\bigl(\mathcal{O}_{\lambda\mu}\bigr)=-\,\mathcal{O}_{0\eta},
 $$
 
-where $(\lambda,\mu)$ is the spatial pair complementary to $k$, so that $(0,k,\lambda,\mu)$ is an even permutation of the frame. Each line is the chirality basis operator followed by the central $-i$, evaluated on the insertion, and the four together are the derived form of the Hodge dual on the bivectors and on the insertions. One evaluation, for the record: $\mathcal{D}(\mathcal{G}_{0k})(Q)=-i\,\mathcal{G}_{0k}(-iQ\vec e_z)=i\vec e_\eta Q=\mathcal{G}_{\lambda\mu}(Q)$; the second line is the same with one less factor, $\mathcal{D}(\mathcal{G}_{\lambda\mu})(Q)=-i\cdot i\vec e_\eta\,(-iQ\vec e_z)=-i\,\vec e_\eta Q\vec e_z=-\mathcal{G}_{0k}(Q)$. The dual therefore exchanges the two families and changes the sign of one of them, and two passages return minus the insertion,
+where $(\lambda,\mu)$ is the spatial pair complementary to $\eta$, so that $(0,\eta,\lambda,\mu)$ is an even permutation of the frame. Each line is the chirality basis operator followed by the central $-i$, evaluated on the insertion, and the four together are the derived form of the Hodge dual on the bivectors and on the insertions. One evaluation, for the record: $\mathcal{D}(\mathcal{G}_{0\eta})(Q)=-i\,\mathcal{G}_{0\eta}(-iQ\vec e_z)=i\vec e_\eta Q=\mathcal{G}_{\lambda\mu}(Q)$; the second line is the same with one less factor, $\mathcal{D}(\mathcal{G}_{\lambda\mu})(Q)=-i\cdot i\vec e_\eta\,(-iQ\vec e_z)=-i\,\vec e_\eta Q\vec e_z=-\mathcal{G}_{0\eta}(Q)$. The dual therefore exchanges the two families and changes the sign of one of them, and two passages return minus the insertion,
 
 $$
 \mathcal{D}^{2}=-\,1 ,
@@ -139,18 +139,18 @@ because the chirality basis operator is an involution and $(-i)(-i)=-1$: the fam
 **The insertion is minus a spatial unit.** The composition of a bivector with the chirality basis operator is what the article means by the EDM insertion, and on the timelike pair it collapses to an element:
 
 $$
-\mathcal{O}_{0k}(Q)=i\,\vec e_\eta\,\bigl(-i\,Q\,\vec e_z\bigr)\vec e_z=i\,(-i)\,\vec e_\eta\,Q\,(\vec e_z\vec e_z)=-\,\vec e_\eta\,Q .
+\mathcal{O}_{0\eta}(Q)=i\,\vec e_\eta\,\bigl(-i\,Q\,\vec e_z\bigr)\vec e_z=i\,(-i)\,\vec e_\eta\,Q\,(\vec e_z\vec e_z)=-\,\vec e_\eta\,Q .
 $$
 
 The collapse spends the two factors of $\vec e_z$ and the two factors of $i$, and what survives is one spatial unit on the left. The EDM insertion is therefore the left multiplication by $-\vec e_\eta$, and the same composition on the spatial pair leaves the right factor standing,
 
 $$
-\mathcal{O}_{0k}:\ Q\longmapsto -\,\vec e_\eta\,Q ,
+\mathcal{O}_{0\eta}:\ Q\longmapsto -\,\vec e_\eta\,Q ,
 \qquad
 \mathcal{O}_{ij}:\ Q\longmapsto \vec e_\eta\,Q\,\vec e_z .
 $$
 
-**The duality and the Hermiticity.** The dual alone does not preserve the class, and the factor $i$ is what restores it. The bare electric bivectors $\mathcal{G}_{0k}$ are anti-Hermitian and the rotations $\mathcal{G}_{ij}$ Hermitian, and the dual of a bare electric bivector is a rotation, $\mathcal{D}\bigl(\mathcal{G}_{0k}\bigr)=\mathcal{G}_{\lambda\mu}$, which is Hermitian: the bare dual has crossed to the other class. Composing with the chirality basis operator once more, which is what the EDM insertion is, gives $-\vec e_\eta$, anti-Hermitian again. In the magnetic family the same two steps run the other way, $\mathcal{D}\bigl(\mathcal{G}_{ij}\bigr)$ anti-Hermitian and $\mathcal{G}_{ij}$ after the chirality basis operator Hermitian, the pseudotensor of that family. The duality exchanges the families and flips the class; the $i$ flips it back, and it is the origin of the $i$ in the EDM Lagrangian.
+**The duality and the Hermiticity.** The dual alone does not preserve the class, and the factor $i$ is what restores it. The bare electric bivectors $\mathcal{G}_{0\eta}$ are anti-Hermitian and the rotations $\mathcal{G}_{ij}$ Hermitian, and the dual of a bare electric bivector is a rotation, $\mathcal{D}\bigl(\mathcal{G}_{0\eta}\bigr)=\mathcal{G}_{\lambda\mu}$, which is Hermitian: the bare dual has crossed to the other class. Composing with the chirality basis operator once more, which is what the EDM insertion is, gives $-\vec e_\eta$, anti-Hermitian again. In the magnetic family the same two steps run the other way, $\mathcal{D}\bigl(\mathcal{G}_{ij}\bigr)$ anti-Hermitian and $\mathcal{G}_{ij}$ after the chirality basis operator Hermitian, the pseudotensor of that family. The duality exchanges the families and flips the class; the $i$ flips it back, and it is the origin of the $i$ in the EDM Lagrangian.
 
 **The weight and the contraction form.** The dual has a second writing, as a sum over the pair with the weight of *Frame and Metric Conventions*,
 
@@ -161,8 +161,8 @@ $$
 and the two weights are what make the two writings agree; the sum was checked against the composition on all twelve ordered pairs. Dropping them gives the plain contraction, which is a different map: it takes the bare electric bivector to plus the rotation and the rotation to plus the bare electric bivector,
 
 $$
-\mathcal{G}_{0k}\longmapsto+\,\mathcal{G}_{\lambda\mu},\qquad
-\mathcal{G}_{\lambda\mu}\longmapsto+\,\mathcal{G}_{0k},
+\mathcal{G}_{0\eta}\longmapsto+\,\mathcal{G}_{\lambda\mu},\qquad
+\mathcal{G}_{\lambda\mu}\longmapsto+\,\mathcal{G}_{0\eta},
 $$
 
 so it agrees with the dual on the bare electric family and differs by a sign on the rotations, and it squares to $+1$ where the dual squares to $-1$. The plain contraction is therefore not the duality; the weights are what turn it into one.
@@ -173,15 +173,15 @@ so it agrees with the dual on the bare electric family and differs by a sign on 
 |---|---|---|---|
 | $\mathcal{G}_{ij}$ | the magnetic moment, $\vec B$ | Hermitian | $\mathbb{B}_{\Psi}$ |
 | $\mathcal{O}_{ij}$, the bivector composed with the chirality basis operator | the pseudotensor, $i$ times the dual of the rotation | Hermitian | $\mathbb{B}_{\Psi}$ |
-| $\mathcal{O}_{0k}$, the bivector composed with the chirality basis operator | the EDM, $\vec E$ | anti-Hermitian | $\mathbb{B}_{\Phi}$ |
-| $\mathcal{G}_{0k}$ | the bare electric component | anti-Hermitian | $\mathbb{B}_{\Phi}$ |
+| $\mathcal{O}_{0\eta}$, the bivector composed with the chirality basis operator | the EDM, $\vec E$ | anti-Hermitian | $\mathbb{B}_{\Phi}$ |
+| $\mathcal{G}_{0\eta}$ | the bare electric component | anti-Hermitian | $\mathbb{B}_{\Phi}$ |
 
 The EDM insertion is therefore the anti-Hermitian, material-sector insertion, and its Hermitian partner in the informational sector is the magnetic-moment insertion, one duality passage and one factor of $i$ away. This is the article's central structural statement. The bare electric bivector is anti-Hermitian as well, and it is listed only for completeness: it is not gauge invariant by itself, and only its contraction with $F$ is an operator.
 
 **No dictionary is needed.** On the timelike pair the EDM insertion is not merely an operator that happens to be anti-Hermitian: it is the left multiplication by the element $-\vec e_\eta$, and $-\vec e_\eta$ is itself an element of the material sector. The placement is an identity, not a match. The rotation insertion is the left multiplication by $i\vec e_\eta$, an element of the informational sector; and since multiplication by the central $i$ exchanges the sectors, $i\mathbb{B}_{\Phi}=\mathbb{B}_{\Psi}$, the EDM insertion is the central imaginary times the rotation insertion about the same axis,
 
 $$
-\mathcal{O}_{0k}=i\,\mathcal{D}\bigl(\mathcal{G}_{0k}\bigr)=i\,\mathcal{G}_{\lambda\mu},
+\mathcal{O}_{0\eta}=i\,\mathcal{D}\bigl(\mathcal{G}_{0\eta}\bigr)=i\,\mathcal{G}_{\lambda\mu},
 \qquad
 -\,\vec e_\eta=i\,\bigl(i\vec e_\eta\bigr).
 $$
@@ -195,7 +195,7 @@ The scalar $i$ and the element $i\vec e_\eta$ are different objects: $i$ is cent
 **From the insertion to the spin.** The EDM insertion reduces to the nonrelativistic Hamiltonian through one identity,
 
 $$
-\mathcal{O}_{0k}=i\,\bigl(Q\mapsto i\vec e_\eta Q\bigr),
+\mathcal{O}_{0\eta}=i\,\bigl(Q\mapsto i\vec e_\eta Q\bigr),
 \qquad
 (i\vec e_\eta)^{*}=i\vec e_\eta,
 \qquad
@@ -212,10 +212,10 @@ $$
 
 The element $i\vec e_\eta$ is twice the spin of *Special Element Conventions*, $\tilde S_{\Psi,\eta}=\frac{m\,c}{2\,k_m}i\vec e_\eta$: Hermitian, of square one, traceless, and the three close on the commutator. The identity shows both facts at once — that the EDM insertion is $i$ times a Hermitian multiplication, hence anti-Hermitian, and that the multiplication it is $i$ times is the spin. The square $(i\vec e_\eta)^2=e_t$ is what gives $i\vec e_\eta$ the two eigenvalues $\pm1$; scaled by $\frac{m\,c}{2\,k_m}$, they are the two values $\pm\frac{m\,c}{2\,k_m}$ of a spin-$\tfrac12$ component.
 
-**The factor of two and the sign.** The contraction of the insertion family with $F$ counts the electric pair twice, as $(0,k)$ and as $(k,0)$, and the two contributions are equal, because the bivector changes sign and $F$ changes sign together. With $F_{0k}=E_\eta$ the Lagrangian therefore contains
+**The factor of two and the sign.** The contraction of the insertion family with $F$ counts the electric pair twice, as $(0,\eta)$ and as $(\eta,0)$, and the two contributions are equal, because the bivector changes sign and $F$ changes sign together. With $F_{0\eta}=E_\eta$ the Lagrangian therefore contains
 
 $$
-\mathcal{L}_{\mathrm{EDM}} \supset -\,i\,d\,E_\eta\,\tilde{Ξ}_{\mathrm{sp}}^*i\,\bigl(\mathcal{O}_{0k}\tilde{Ξ}_{\mathrm{sp}}\bigr)\vec e_x
+\mathcal{L}_{\mathrm{EDM}} \supset -\,i\,d\,E_\eta\,\tilde{Ξ}_{\mathrm{sp}}^*i\,\bigl(\mathcal{O}_{0\eta}\tilde{Ξ}_{\mathrm{sp}}\bigr)\vec e_x
 = -\,i\,d\,E_\eta\,\tilde{Ξ}_{\mathrm{sp}}^*i\,\bigl(-\,\vec e_\eta\,\tilde{Ξ}_{\mathrm{sp}}\bigr)\vec e_x .
 $$
 
@@ -258,9 +258,9 @@ Each is the field, the element the insertion multiplies it by, the unit $\vec e_
 
 | Operator | Bilinear | $\mathbf{P}$ | $\mathbf{T}$ | $\mathbf{C}$ | $\mathbf{CP}$ | Insertion |
 |---|---|---|---|---|---|---|
-| $\tilde{Ξ}_{\mathrm{sp}}^*i(i e_\mu\tilde{Ξ}_{\mathrm{sp}}\vec e_{\nu(\mu)})\vec e_x\,A_\mu$ (charge) | vector | even | even | even | even | $i\,e_\mu$ on the left, $i\vec e_{\nu(\mu)}$ on the right: Hermitian for $\mu=0$, anti-Hermitian for $\mu=k$ |
+| $\tilde{Ξ}_{\mathrm{sp}}^*i(i e_\mu\tilde{Ξ}_{\mathrm{sp}}\vec e_{\nu(\mu)})\vec e_x\,A_\mu$ (charge) | vector | even | even | even | even | $i\,e_\mu$ on the left, $i\vec e_{\nu(\mu)}$ on the right: Hermitian for $\mu=0$, anti-Hermitian for $\mu=\eta$ |
 | $\tilde{Ξ}_{\mathrm{sp}}^*i(\mathcal{G}_{\mu\nu}\tilde{Ξ}_{\mathrm{sp}})\vec e_x\,F_{\mu\nu}$ (magnetic) | tensor | even | even | even | even | $\mathcal{G}_{ij}$, Hermitian |
-| $i\,\tilde{Ξ}_{\mathrm{sp}}^*i(\mathcal{O}_{\mu\nu}\tilde{Ξ}_{\mathrm{sp}})\vec e_x\,F_{\mu\nu}$ (EDM) | pseudotensor | odd | odd | even | odd | $\mathcal{O}_{0k}$, anti-Hermitian |
+| $i\,\tilde{Ξ}_{\mathrm{sp}}^*i(\mathcal{O}_{\mu\nu}\tilde{Ξ}_{\mathrm{sp}})\vec e_x\,F_{\mu\nu}$ (EDM) | pseudotensor | odd | odd | even | odd | $\mathcal{O}_{0\eta}$, anti-Hermitian |
 
 The EDM is the pseudotensor bilinear, the tensor times the chirality basis operator, and the table is the parity bookkeeping of the Hodge duality: the chirality basis operator is what flips the parity and the CP character, and the factor $i$ that accompanies it is what keeps the Hermiticity class.
 
@@ -270,13 +270,13 @@ The EDM is the pseudotensor bilinear, the tensor times the chirality basis opera
 
 ## The Form Factors and the Two Coefficients
 
-**The electromagnetic vertex.** The most general gauge-invariant vertex of an on-shell spin-$\tfrac12$ particle with the electromagnetic field, at momentum transfer $k=p_2-p_1$, is
+**The electromagnetic vertex.** The most general gauge-invariant vertex of an on-shell spin-$\tfrac12$ particle with the electromagnetic field, at momentum transfer $k_\Phi=p_2-p_1$, is
 
 $$
 \Gamma_\mu(p_2,p_1)\,\tilde{Ξ}_{\mathrm{sp}}
-= i\,e_\mu\,\tilde{Ξ}_{\mathrm{sp}}\,\vec e_{\nu(\mu)}\,F_1(k^2)
-+\frac{i}{2\,m\,c}\,k_\nu\,\mathcal{G}_{\mu\nu}\tilde{Ξ}_{\mathrm{sp}}\,F_2(k^2)
-+\frac{i}{2\,m\,c}\,k_\nu\,\mathcal{O}_{\mu\nu}\tilde{Ξ}_{\mathrm{sp}}\,F_3(k^2) + \cdots ,
+= i\,e_\mu\,\tilde{Ξ}_{\mathrm{sp}}\,\vec e_{\nu(\mu)}\,F_1(k_\Phi^2)
++\frac{i}{2\,m\,c}\,k_{\Phi\nu}\,\mathcal{G}_{\mu\nu}\tilde{Ξ}_{\mathrm{sp}}\,F_2(k_\Phi^2)
++\frac{i}{2\,m\,c}\,k_{\Phi\nu}\,\mathcal{O}_{\mu\nu}\tilde{Ξ}_{\mathrm{sp}}\,F_3(k_\Phi^2) + \cdots ,
 $$
 
 with $F_1$ the charge, $F_2$ the anomalous magnetic moment, and $F_3$ the EDM form factor; the ellipsis denotes the anapole and higher terms. In the nonrelativistic limit, $F_2$ and $F_3$ reduce to the magnetic and electric dipole couplings,
@@ -357,7 +357,7 @@ for an order-one phase and no loop suppression. This is the standard statement t
 | The biquaternion algebra as the algebra of the insertions, and the Hermiticity sector split | **Supplied**; Hermitian is $\mathbb{B}_{\Psi}$, anti-Hermitian is $\mathbb{B}_{\Phi}$ |
 | The EDM insertion $Q\mapsto-\vec e_\eta Q$ as anti-Hermitian, material-sector | **Supplied**, recomputed from the classes of the two factors under the star |
 | The magnetic-moment insertion $Q\mapsto i\vec e_\eta Q$ as Hermitian, informational-sector | **Supplied**, recomputed |
-| The Hodge duality of the insertions, $\mathcal{D}(\mathcal{G}_{0k})=+\mathcal{G}_{\lambda\mu}$ and $\mathcal{D}(\mathcal{G}_{\lambda\mu})=-\mathcal{G}_{0k}$, with $\mathcal{D}^{2}=-1$ on the six bivectors | **Supplied**, recomputed for all six |
+| The Hodge duality of the insertions, $\mathcal{D}(\mathcal{G}_{0\eta})=+\mathcal{G}_{\lambda\mu}$ and $\mathcal{D}(\mathcal{G}_{\lambda\mu})=-\mathcal{G}_{0\eta}$, with $\mathcal{D}^{2}=-1$ on the six bivectors | **Supplied**, recomputed for all six |
 | The EDM insertion $Q\mapsto-\vec e_\eta Q$ as the left multiplication by the element $-\vec e_\eta\in\mathbb{B}_{\Phi}$ | **Supplied**, recomputed for the three spatial directions |
 | The explicit $i$ in the EDM Lagrangian as the marker of the anti-Hermitian insertion | **Supplied** by the algebra |
 | The definition of the EDM and its $\mathbf{P}$-, $\mathbf{T}$-, $\mathbf{CP}$-odd character | **Transcribed**; standard |
@@ -468,23 +468,23 @@ $$
 In the biquaternion framework its insertion has a definite algebraic character: the $\vec E$-coupling insertion multiplies by $-\vec e_\eta$, an **anti-Hermitian** element, and it therefore lies in the material sector $\mathbb{B}_{\Phi}$; the $\vec B$-coupling magnetic-moment insertion multiplies by $i\vec e_\eta$, a **Hermitian** element, and it lies in the informational sector $\mathbb{B}_{\Psi}$. Both statements follow from the star-signs of the two factors of the insertion, and both were recomputed. The two are Hodge duals, the dual exchanging the two members of a pair with the sign of the central $-i$,
 
 $$
-\boxed{\;\mathcal{D}\bigl(\mathcal{G}_{0k}\bigr)=+\,\mathcal{G}_{\lambda\mu},\quad
-\mathcal{D}\bigl(\mathcal{G}_{\lambda\mu}\bigr)=-\,\mathcal{G}_{0k},
+\boxed{\;\mathcal{D}\bigl(\mathcal{G}_{0\eta}\bigr)=+\,\mathcal{G}_{\lambda\mu},\quad
+\mathcal{D}\bigl(\mathcal{G}_{\lambda\mu}\bigr)=-\,\mathcal{G}_{0\eta},
 \qquad
 \mathcal{O}_{\mu\nu}=i\,\mathcal{D}\bigl(\mathcal{G}_{\mu\nu}\bigr),
 \qquad
 \mathcal{D}^{2}=-\,1\;}
 $$
 
-and the sign is the product of the basis operator's involution with $(-i)^2=-1$, verified for all six bivectors. The dual exchanges the two families with a sign, so two passages return minus the bivector; the EDM insertion is $i$ times the dual of the rotation, and that $i$ is what keeps the Hermiticity class while making the coefficient real. The explicit $i$ in the EDM Lagrangian is what makes $i\times(\text{anti-Hermitian})$ Hermitian, and it is the algebra's marker of the CP-odd coefficient; the collapse of the composition, $\mathcal{O}_{0k}(Q)=i\vec e_\eta(-iQ\vec e_z)\vec e_z=-\vec e_\eta Q$, makes the placement exact, the insertion being the left multiplication by the element $-\vec e_\eta$ of $\mathbb{B}_{\Phi}$.
+and the sign is the product of the basis operator's involution with $(-i)^2=-1$, verified for all six bivectors. The dual exchanges the two families with a sign, so two passages return minus the bivector; the EDM insertion is $i$ times the dual of the rotation, and that $i$ is what keeps the Hermiticity class while making the coefficient real. The explicit $i$ in the EDM Lagrangian is what makes $i\times(\text{anti-Hermitian})$ Hermitian, and it is the algebra's marker of the CP-odd coefficient; the collapse of the composition, $\mathcal{O}_{0\eta}(Q)=i\vec e_\eta(-iQ\vec e_z)\vec e_z=-\vec e_\eta Q$, makes the placement exact, the insertion being the left multiplication by the element $-\vec e_\eta$ of $\mathbb{B}_{\Phi}$.
 
 The form-factor decomposition
 
 $$
 \Gamma_\mu(p_2,p_1)\,\tilde{Ξ}_{\mathrm{sp}}
 = i\,e_\mu\,\tilde{Ξ}_{\mathrm{sp}}\,\vec e_{\nu(\mu)}\,F_1
-+\frac{i}{2\,m\,c}\,k_\nu\,\mathcal{G}_{\mu\nu}\tilde{Ξ}_{\mathrm{sp}}\,F_2
-+\frac{i}{2\,m\,c}\,k_\nu\,\mathcal{O}_{\mu\nu}\tilde{Ξ}_{\mathrm{sp}}\,F_3 + \cdots
++\frac{i}{2\,m\,c}\,k_{\Phi\nu}\,\mathcal{G}_{\mu\nu}\tilde{Ξ}_{\mathrm{sp}}\,F_2
++\frac{i}{2\,m\,c}\,k_{\Phi\nu}\,\mathcal{O}_{\mu\nu}\tilde{Ξ}_{\mathrm{sp}}\,F_3 + \cdots
 $$
 
 exhibits the magnetic moment $F_2$ and the EDM $F_3$ as the Hermitian and anti-Hermitian members of one dimension-five pair, which the framework places in the informational and material sectors; they are the whole list, the pseudotensor being $i$ times the dual of the tensor. The framework does not supply the coefficient: it has no CP-violating phase, predicts no measurable EDM, and inherits the Standard Model's tiny CKM contribution and the $\theta$-term constraint, $|\theta|\lesssim10^{-10}$ from $|d_n|\lesssim1.8\times10^{-26}\ e\cdot\mathrm{cm}$. The present electron bound $|d_e|\lesssim1.1\times10^{-29}\ e\cdot\mathrm{cm}$, combined with the dimensional estimate $d/e\sim m_e\sin\theta_{\mathrm{pha}}/\Lambda^2$, probes new-physics scales $\Lambda\gtrsim10^{3}$ TeV, and the framework's contribution is to state exactly where in the algebra such a coefficient would sit.
@@ -501,9 +501,9 @@ exhibits the magnetic moment $F_2$ and the EDM $F_3$ as the Hermitian and anti-H
 | $Q\mapsto i\vec e_\eta Q$ | The magnetic-moment insertion, Hermitian, $\mathbb{B}_{\Psi}$ |
 | $Q\mapsto-\vec e_\eta Q$ | The EDM insertion, anti-Hermitian, $\mathbb{B}_{\Phi}$ |
 | the chirality basis operator | The corpus's right multiplication by $-i\vec e_z$ (*Special Element Conventions*); an involution, Hermitian |
-| $\mathcal{G}_{0k}:\ Q\mapsto i\vec e_\eta Q\vec e_z$; $\mathcal{G}_{ij}:\ Q\mapsto i\vec e_\eta Q$ | The six bivectors; $k$ is the index complementary to the spatial pair $(i,j)$ |
-| $\mathcal{O}_{0k}:\ Q\mapsto-\vec e_\eta Q$; $\mathcal{O}_{ij}:\ Q\mapsto\vec e_\eta Q\vec e_z$ | The six EDM insertions; each is the bivector of its pair composed with the chirality basis operator |
-| $\mathcal{D}$ | The Hodge dual on the insertions; $\mathcal{D}(\mathcal{G}_{0k})=+\mathcal{G}_{\lambda\mu}$, $\mathcal{D}(\mathcal{G}_{\lambda\mu})=-\mathcal{G}_{0k}$, $\mathcal{D}^{2}=-1$, and $\mathcal{D}(\mathcal{G}_{\mu\nu})=\tfrac12\sum_{\rho,\sigma}\epsilon_{\mu\nu\rho\sigma}\varepsilon_\rho\varepsilon_\sigma\mathcal{G}_{\rho\sigma}$ |
+| $\mathcal{G}_{0\eta}:\ Q\mapsto i\vec e_\eta Q\vec e_z$; $\mathcal{G}_{ij}:\ Q\mapsto i\vec e_\eta Q$ | The six bivectors; $\eta$ is the index complementary to the spatial pair $(i,j)$ |
+| $\mathcal{O}_{0\eta}:\ Q\mapsto-\vec e_\eta Q$; $\mathcal{O}_{ij}:\ Q\mapsto\vec e_\eta Q\vec e_z$ | The six EDM insertions; each is the bivector of its pair composed with the chirality basis operator |
+| $\mathcal{D}$ | The Hodge dual on the insertions; $\mathcal{D}(\mathcal{G}_{0\eta})=+\mathcal{G}_{\lambda\mu}$, $\mathcal{D}(\mathcal{G}_{\lambda\mu})=-\mathcal{G}_{0\eta}$, $\mathcal{D}^{2}=-1$, and $\mathcal{D}(\mathcal{G}_{\mu\nu})=\tfrac12\sum_{\rho,\sigma}\epsilon_{\mu\nu\rho\sigma}\varepsilon_\rho\varepsilon_\sigma\mathcal{G}_{\rho\sigma}$ |
 | $\mathcal{O}_{\mu\nu}=i\,\mathcal{D}(\mathcal{G}_{\mu\nu})$ | The EDM insertion as $i$ times the dual of the bivector; on the timelike pair, $i\,(i\vec e_\eta)=-\vec e_\eta$ |
 | $\varepsilon_\rho$ | The plain weight of *Frame and Metric Conventions*; with $\varepsilon=(1,-1,-1,-1)$, $\varepsilon_0=+1$ and $\varepsilon_k=-1$ |
 | $F_{0i}=E_i$, $F_{ij}=-\epsilon_{ij\eta}B_\eta$ | The field strength components |

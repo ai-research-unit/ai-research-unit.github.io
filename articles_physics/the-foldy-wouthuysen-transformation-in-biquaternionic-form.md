@@ -253,7 +253,7 @@ $$
 H=\beta mc^2+c|\vec p|\,\beta A=\beta\,(mc^2+c|\vec p|A),
 $$
 
-where $c|\vec p|\,\beta A=c\sum_\eta\vec e_\eta p_\eta(\cdot)\vec e_z=O$ follows from $p_\eta=|\vec p|u_k$ and $\beta A=\sum_\eta\vec e_\eta u_k(\cdot)\vec e_z$, one has
+where $c|\vec p|\,\beta A=c\sum_\eta\vec e_\eta p_\eta(\cdot)\vec e_z=O$ follows from $p_\eta=|\vec p|u_\eta$ and $\beta A=\sum_\eta\vec e_\eta u_\eta(\cdot)\vec e_z$, one has
 
 $$
 H=\beta E(\cos\theta+A\sin\theta)=\beta E\exp(A\theta),
@@ -354,10 +354,10 @@ The transformation can now be located in the two splits of the algebra, and the 
 $$
 \Gamma^{\mathrm{FW}}=U\Gamma U^\dagger=\Gamma\cos\theta-C\sin\theta,
 \qquad
-C=\Gamma A=\sum_\eta\vec e_\eta u_k(\cdot)\vec e_x .
+C=\Gamma A=\sum_\eta\vec e_\eta u_\eta(\cdot)\vec e_x .
 $$
 
-$C$ is even, and on the $+1$ part of $\beta$ it is $-i\sum_\eta\vec e_\eta u_k$, so the even part of the chirality reads $i\sin\theta\sum_\eta\vec e_\eta u_k$ — the helicity, with $\sin\theta=|\vec p|c/E$: the value for a massless field, reduced by that factor for a massive one. The part that anticommutes with $\beta$ is $\Gamma\cos\theta=(mc^2/E)\Gamma$, and that is the term that exchanges the two values, of relative order $m/|\vec p|$ in the ultra-relativistic regime. The FW transformation therefore separates **positive from negative frequency**, the two values of the mass grading, and not $L$ from $R$. In the algebra, the split it diagonalises is the split by $\beta$, the reflection of *The Reflection and the Rotation in Biquaternionic Form*; the subscript is read by $\Gamma$, a different reflection, and no $*$-unitary rotation of the field can diagonalise both at once because $\beta\Gamma=-\Gamma\beta$. The two splits are complementary, and the mass is the object that measures their incompatibility.
+$C$ is even, and on the $+1$ part of $\beta$ it is $-i\sum_\eta\vec e_\eta u_\eta$, so the even part of the chirality reads $i\sin\theta\sum_\eta\vec e_\eta u_\eta$ — the helicity, with $\sin\theta=|\vec p|c/E$: the value for a massless field, reduced by that factor for a massive one. The part that anticommutes with $\beta$ is $\Gamma\cos\theta=(mc^2/E)\Gamma$, and that is the term that exchanges the two values, of relative order $m/|\vec p|$ in the ultra-relativistic regime. The FW transformation therefore separates **positive from negative frequency**, the two values of the mass grading, and not $L$ from $R$. In the algebra, the split it diagonalises is the split by $\beta$, the reflection of *The Reflection and the Rotation in Biquaternionic Form*; the subscript is read by $\Gamma$, a different reflection, and no $*$-unitary rotation of the field can diagonalise both at once because $\beta\Gamma=-\Gamma\beta$. The two splits are complementary, and the mass is the object that measures their incompatibility.
 
 **The generator is frame-odd.** The FW generator $S_1=-\frac{i}{2\,m\,c^{2}}\beta O$ is the kinetic operator preceded by the grading, and it anticommutes with $\beta$. Conjugation by $\beta$ therefore reverses the sign of $S_1$, and the generator does not leave the grading fixed: since $U=\exp(iS_1)$,
 

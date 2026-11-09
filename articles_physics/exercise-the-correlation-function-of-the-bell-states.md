@@ -71,7 +71,7 @@ $$
 The correlation function is the expectation of the tensor-product observable $\vec u_x\cdot\boldsymbol{\sigma}_1\otimes\vec u_y\cdot\boldsymbol{\sigma}_2$:
 
 $$
-E(\vec u_x, \vec u_y) = \langle\tilde{Ξ}_{\mathrm{sp}}|\left(\sum_j a_j\sigma_j\otimes I\right)\left(\sum_\eta b_k I\otimes\sigma_\eta\right)|\tilde{Ξ}_{\mathrm{sp}}\rangle = \sum_{j,k} a_j b_k\,\langle\tilde{Ξ}_{\mathrm{sp}}|\sigma_j\otimes\sigma_\eta|\tilde{Ξ}_{\mathrm{sp}}\rangle.
+E(\vec u_x, \vec u_y) = \langle\tilde{Ξ}_{\mathrm{sp}}|\left(\sum_j a_j\sigma_j\otimes I\right)\left(\sum_\eta b_\eta I\otimes\sigma_\eta\right)|\tilde{Ξ}_{\mathrm{sp}}\rangle = \sum_{j,k} a_j b_\eta\,\langle\tilde{Ξ}_{\mathrm{sp}}|\sigma_j\otimes\sigma_\eta|\tilde{Ξ}_{\mathrm{sp}}\rangle.
 $$
 
 So the correlation function is determined by the $3\times 3$ matrix
@@ -224,7 +224,7 @@ $$
 \tilde{R}_{\Psi,ab} = (i\vec u_x)\otimes(i\vec u_y),
 $$
 
-where $\vec u_x = \sum_j a_j \vec e_j$ and $\vec u_y = \sum_\eta b_k \vec e_\eta$ are pure real quaternions. The expectation is given by the tensor-product trace formula:
+where $\vec u_x = \sum_j a_j \vec e_j$ and $\vec u_y = \sum_\eta b_\eta \vec e_\eta$ are pure real quaternions. The expectation is given by the tensor-product trace formula:
 
 $$
 E(\vec u_x, \vec u_y) = \mathrm{Tr}\!\left(\tilde\Pi_\epsilon\tilde{R}_{\Psi,ab}\right).

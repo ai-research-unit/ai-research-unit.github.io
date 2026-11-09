@@ -6,7 +6,7 @@ The graviton is the quantum of the metric's deviation from flatness: the massles
 
 The framework's account of the graviton is the cleanest illustration of how it builds a higher-spin field. The graviton's carrier is the **symmetric trace-free square of the material vector**, and its decomposition is the framework's own:
 
-**Frame.** Displays are read in the $\mathbb{B}$ frame, with the derivative $\partial/\partial R_\mu$ and the coefficients $Q_\mu=q_\mu+iq'_\mu$, written out in full as $Q_t=r_t+i r'_t$ and $Q_\eta=x_k+i r'_{x_k}$. The reading used below is the material one, $Q_t=i r'_t$ and $Q_\eta=x_k$: the labels are summed directly with the unit metric $\delta_{\mu\nu}=(1,1,1,1)$, and the d'Alembertian is $\Box=\sum_\mu\partial^2/\partial R_\mu^2$, whose one minus on the time term is the square of the $i$ in $Q_t$, not a signature.
+**Frame.** Displays are read in the $\mathbb{B}$ frame, with the derivative $\partial/\partial R_\mu$ and the coefficients $Q_\mu=q_\mu+iq'_\mu$, written out in full as $Q_t=r_t+i r'_t$ and $Q_\eta=x_\eta+i r'_{x_\eta}$. The reading used below is the material one, $Q_t=i r'_t$ and $Q_\eta=x_\eta$: the labels are summed directly with the unit metric $\delta_{\mu\nu}=(1,1,1,1)$, and the d'Alembertian is $\Box=\sum_\mu\partial^2/\partial R_\mu^2$, whose one minus on the time term is the square of the $i$ in $Q_t$, not a signature.
 
 $$
 \boxed{\;\left(V\odot V\right)_{\text{sym}} = 0\oplus 2 ,
@@ -221,7 +221,7 @@ What is genuinely algebraic in this account is the trace removal. The bilinear f
 
 ### The Trace-Free Square in Components
 
-The split is explicit in components. Write a material vector as $u=\sum_\eta u_k\vec e_\eta$ with real coefficients $u_k$, and take the symmetric square with components $T_{jk}=u_ju_k$, or $T_{jk}=u_jv_k+u_kv_j$ for a pair of vectors. The bilinear form gives the trace
+The split is explicit in components. Write a material vector as $u=\sum_\eta u_\eta\vec e_\eta$ with real coefficients $u_\eta$, and take the symmetric square with components $T_{jk}=u_ju_k$, or $T_{jk}=u_jv_k+u_kv_j$ for a pair of vectors. The bilinear form gives the trace
 
 $$
 \langle u,v\rangle = \mathrm{Sc}\left(u\bar{v}\right) = \vec u\cdot\vec v ,

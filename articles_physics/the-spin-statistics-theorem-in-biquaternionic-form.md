@@ -35,7 +35,7 @@ $$
 It is the exponential of the spin angular momentum along $\vec u$. With the spin operators $\tilde S_{\Psi,\eta}$ of *Special Element Conventions*,
 
 $$
-\tilde u(\theta,\vec u)=\exp\Big(-i\theta\sum_\eta\frac{k_m\,\vec u_{k}\,\tilde{S}_{\Psi,\eta}}{m\,c}\Big)=\exp\Big(\tfrac{\theta}{2}\sum_\eta\vec u_\eta\vec e_\eta\Big),
+\tilde u(\theta,\vec u)=\exp\Big(-i\theta\sum_\eta\frac{k_m\,\vec u_\eta\,\tilde{S}_{\Psi,\eta}}{m\,c}\Big)=\exp\Big(\tfrac{\theta}{2}\sum_\eta\vec u_\eta\vec e_\eta\Big),
 $$
 
 the second form following from the first because $\tilde S_{\Psi,\eta}$ is $\frac{m\,c}{2\,k_m}i\vec e_\eta$ there, so $-i\tilde S_{\Psi,\eta}/\hbar=\tfrac12\vec e_\eta$: the two imaginary units cancel, one from the exponent and one from $\tilde S_{\Psi,\eta}$, by $i^2=-1$. Conjugation by $\tilde u$ rotates the vectors of the material sector $\mathbb{B}_{\Phi}$, while left multiplication by $\tilde u$ acts on the algebra read as a left module, and hence on states; the map $\tilde{Q}\mapsto\tilde u\tilde{Q}\tilde u^{*}$ on $\mathbb{B}_{\Phi}$ has kernel $\{\pm e_t\}$ and is the covering homomorphism onto the rotation group. The rotation group is the quotient of the rotor group, which is $SU(2)$, by $\{\pm e_t\}$. These facts are established in the companion articles on angular momentum and on the Lorentz group, and are recalled here because the spin–statistics dichotomy is a statement about which side of the cover a representation lives on.

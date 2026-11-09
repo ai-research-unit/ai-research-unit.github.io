@@ -223,7 +223,7 @@ Transversely the dilation is $\gamma$ — the transverse Doppler factor — and 
 | $\mathbb{B}$, $e_t = 1, \vec e_\eta$ | Biquaternion algebra, quaternion basis with $\vec e_\eta^2 = -e_t$ |
 | $i$ | Scalar imaginary, $i^2 = -1$, central |
 | $\mathbb{B}_{H}$, $\mathbb{B}_{\Psi}$ and $\mathbb{B}_{\Phi}$ | Real-quaternion, Hermitian and anti-Hermitian subspaces |
-| $\vec k_\Phi = k\vec u_k = \frac{\omega}{c}\vec u_k$ | Wavevector, $k = \omega/c$, $\vec u_k$ its unit direction |
+| $\vec k_\Phi = k_\Phi\vec u_k = \frac{\omega}{c}\vec u_k$ | Wavevector, $k_\Phi = \omega/c$, $\vec u_k$ its unit direction |
 | $\tilde P_{\Phi} = \frac{\omega}{c}(i+\vec u_k)$ | Wave biquaternion (four-wavevector), null, $\langle\tilde P_{\Phi}\rangle_{\natural} = 0$ |
 | $\tilde{F}$ | Field-strength biquaternion, pure vector, null for a plane wave, $\tilde P_{\Phi}\tilde{F}=0$ |
 | $\tilde U_{\Psi,\mathrm b} = \cosh\frac{w}{2} + i\sinh\frac{w}{2}\vec u$ | Boost rotor, Hermitian, unit norm; $w$ rapidity, $\vec u$ boost direction |

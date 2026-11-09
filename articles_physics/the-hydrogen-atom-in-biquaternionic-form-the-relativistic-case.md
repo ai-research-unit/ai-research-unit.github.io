@@ -40,7 +40,7 @@ which enters the spectrum as a parameter.
 ### The algebra equation and its operator-frame reading
 The framework's field is an element $\tilde{Ξ}_{\mathrm{sp}}$ of $\mathbb{B}$, and the position dependence is carried by its argument rather than by the finite-dimensional algebra. The internal two-valued index of the older literature is that element read in a frame fixed by a declared unit vector; it is a reading of the field and not the field. The standard equation carries four entries because the element carries four coefficients, and the two halves of that four are the chirality labels $L$ and $R$.
 
-The coordinates are the corpus's, $Q_t = i r'_t$ and $Q_\eta = x_k$, with $r'_t$ the material temporal coordinate, a length. With that choice $\partial/\partial R_t = -i\partial/\partial r'_t$, so $\tilde\nabla\tilde\nabla^{\natural} = \partial^2/\partial R_t^2 + \nabla^2 = -\partial^2/\partial {r'_t}^2 + \nabla^2$ is the d'Alembertian with no metric factor to put in by hand.
+The coordinates are the corpus's, $Q_t = i r'_t$ and $Q_\eta = x_\eta$, with $r'_t$ the material temporal coordinate, a length. With that choice $\partial/\partial R_t = -i\partial/\partial r'_t$, so $\tilde\nabla\tilde\nabla^{\natural} = \partial^2/\partial R_t^2 + \nabla^2 = -\partial^2/\partial {r'_t}^2 + \nabla^2$ is the d'Alembertian with no metric factor to put in by hand.
 
 The free biquaternion Dirac equation is the one-sided chiral pair
 
@@ -57,7 +57,7 @@ A second form, Kravchenko's two-sided equation, is a change of representation ra
 Read in the basis operator frame, where a basis operator acts on the element as $\tilde Q\mapsto a\tilde Qb$, the pair becomes the standard Dirac–Coulomb equation. Write $\beta$ for the basis operator $\tilde Q\mapsto i\tilde Q\vec e_x$ and $\alpha_k$ for the basis operator $\tilde Q\mapsto\vec e_\eta\tilde Q\vec e_z$. Then
 
 $$\frac{m\,c^{2}\,i}{k_m}\frac{\partial\tilde{Ξ}_{\mathrm{sp}}}{\partial  r'_t}
-= -\frac{m\,c^{2}\,i}{k_m}\sum_\eta  \vec e_\eta\,\frac{\partial\tilde{Ξ}_{\mathrm{sp}}}{\partial x_k}\,\vec e_z
+= -\frac{m\,c^{2}\,i}{k_m}\sum_\eta  \vec e_\eta\,\frac{\partial\tilde{Ξ}_{\mathrm{sp}}}{\partial x_\eta}\,\vec e_z
 + i mc^2\,\tilde{Ξ}_{\mathrm{sp}}\,\vec e_x + V(r)\,\tilde{Ξ}_{\mathrm{sp}} ,
 $$
 
@@ -334,11 +334,11 @@ in which the small part carries the momentum of the large one. **The small part 
 Generate the small functions from the large ones by the action that stands in that relation. In the framework's terms the gradient's vector part, scaled by $c/k_m/2c$, is
 
 $$
-\dfrac{1}{2\,k_m}\sum_\eta \vec e_\eta\,\frac{\partial}{\partial x_k}
+\dfrac{1}{2\,k_m}\sum_\eta \vec e_\eta\,\frac{\partial}{\partial x_\eta}
 = \frac{i}{2mc}\sum_\eta p_\eta\vec e_\eta ,
 $$
 
-the second form because $\frac{m\,c}{k_m}\partial/\partial x_k = ip_\eta$. The relation carries $\vec p$ itself, so the action is that object with the factor $i$ removed: left multiplication by $\vec p/(2mc)$, followed by the right multiplier $\vec e_z$, which is what carries the large part into the small one, since $R_{\vec e_z}$ anticommutes with $\beta$ while $L_{\vec p}$ commutes with it. The constant $i$ is the one that carries $\partial_k$ to $\frac{k_m\,p_{\eta}}{m\,c}$; it multiplies every image alike and changes neither the span of the small space nor the condition, so the relation is what fixes the action and the other form differs from it by that convention alone. Applied to the large functions, the action produces the small ones: the condition is that the small expansion be the image of the large one under it, every large function $f_\mu$ contributing the two entries of
+the second form because $\frac{m\,c}{k_m}\partial/\partial x_\eta = ip_\eta$. The relation carries $\vec p$ itself, so the action is that object with the factor $i$ removed: left multiplication by $\vec p/(2mc)$, followed by the right multiplier $\vec e_z$, which is what carries the large part into the small one, since $R_{\vec e_z}$ anticommutes with $\beta$ while $L_{\vec p}$ commutes with it. The constant $i$ is the one that carries $\partial_k$ to $\frac{k_m\,p_{\eta}}{m\,c}$; it multiplies every image alike and changes neither the span of the small space nor the condition, so the relation is what fixes the action and the other form differs from it by that convention alone. Applied to the large functions, the action produces the small ones: the condition is that the small expansion be the image of the large one under it, every large function $f_\mu$ contributing the two entries of
 
 $$\frac{1}{2\,m\,c}\,\vec p\,f_\mu\,\vec e_z .
 $$
@@ -551,7 +551,7 @@ One gap is load-bearing and is left visible. The corpus's biquaternion Dirac equ
 | $L_{a}R_{b}$ | Two-sided multiplication by the pair $(a,b)$, written in the body as the action $\tilde Q\mapsto a\tilde Qb$; $L_{a}R_{b}L_{c}R_{d} = L_{ac}R_{db}$ |
 | $\beta$, $\alpha_k$ | Basis operators of the frame: $\beta$ acts as $\tilde Q\mapsto i\tilde Q\vec e_x$, $\alpha_k$ as $\tilde Q\mapsto\vec e_\eta\tilde Q\vec e_z$; $\alpha$ without a subscript is the fine-structure constant |
 | $\chi=i\tilde{Ζ}_{\mathrm{ad}}$, $\chi^2=e_t$ | The central grading (the axial generator); not an element of $\mathbb{B}$, represented on the field by the chirality basis operator $-iR_{\mathrm{axf},\vec e_z}$ |
-| $Q_t = i r'_t$, $Q_\eta = x_k$ | Coordinates; $r'_t$ the material temporal coordinate, a length |
+| $Q_t = i r'_t$, $Q_\eta = x_\eta$ | Coordinates; $r'_t$ the material temporal coordinate, a length |
 | $\tilde\nabla = e_t\partial/\partial R_t + \sum_{\eta=x,y,z}\vec e_\eta\partial/\partial R_\eta$ | Biquaternionic gradient (Dirac operator) |
 | $\Box = \tilde\nabla\tilde\nabla^{\natural} = \tilde\nabla^{\natural}\tilde\nabla$ | d'Alembertian |
 | $\tilde{Ξ}_{\mathrm{sp}}$, $\tilde{Ξ}_{\mathrm{sp}}^{\flat} = -\tilde{Ξ}_{\mathrm{sp}}^*$ | Biquaternion Dirac field and anti-Hermitian conjugate (the algebra's real structure; not the mass term) |

@@ -902,7 +902,7 @@ For the electron $k_m=2.5896\times10^{12}\ \mathrm{m^{-1}}$, and it is the same 
 
 None of the three is the size of the particle: the proton's charge radius times its mass wave number is four, and the electron is pointlike far below its own inverse. At $m=0$ the triangle degenerates, $k_{t}^{\prime}=k_{\Phi}$ and the mass wave number is no longer a wave number of the problem. The massless equations of the series are exact for that reason, not approximate.
 
-The non-relativistic limit is one operation on the triangle. Split off the mass side exactly, $k_{t}^{\prime}=k_m+\Omega$, note that the triangle then reads $k_{\Phi}^{2}=2k_m\Omega+\Omega^{2}$, expand once, and keep the term linear in the excess. The quotient of the two terms, $\eta=\Omega/(2k_m)$, is the small parameter, and the error of the truncation is $-\eta/(1+\eta)$ in closed form. The leading term is $\hbar c\,\Omega=p^{2}/2m$, and the first-order relation it carries, with $k_{\Phi}^{2}\to-\Delta$, is the free Schrödinger equation.
+The non-relativistic limit is one operation on the triangle. Split off the mass side exactly, $k_{t}^{\prime}=k_m+\Omega$, note that the triangle then reads $k_{\Phi}^{2}=2k_m\Omega+\Omega^{2}$, expand once, and keep the term linear in the excess. The quotient of the two terms, $\eta_{\mathrm{nr}}=\Omega/(2k_m)$, is the small parameter, and the error of the truncation is $-\eta_{\mathrm{nr}}/(1+\eta_{\mathrm{nr}})$ in closed form. The leading term is $\hbar c\,\Omega=p^{2}/2m$, and the first-order relation it carries, with $k_{\Phi}^{2}\to-\Delta$, is the free Schrödinger equation.
 
 ## Summary of Notation
 
@@ -924,7 +924,7 @@ The non-relativistic limit is one operation on the triangle. Split off the mass 
 | $\frac{m\,c^{2}}{k_m}= 197.32698\ \mathrm{MeV}\cdot\mathrm{fm}$ | The conversion between an energy and a wave number |
 | $\Omega = k_{t}^{\prime}-k_m$ | The excess wave number; the part of the energy wave number above the mass side, $\Omega=\sqrt{k_{\Phi}^{2}+k_m^{2}}-k_m=k_{\Phi}^{2}/2k_m-\cdots$ |
 | $k_{\Phi}^{2}=2k_m\Omega+\Omega^{2}$ | The triangle with its origin moved to the mass side; exact, one term linear in the excess and one quadratic |
-| $\eta = \frac{\Omega}{2k_m}=\frac{\gamma-1}{2}$ | The ratio of the quadratic term to the linear one; the small parameter of the limit, with $-\eta/(1+\eta)$ the error of the truncation |
+| $\eta_{\mathrm{nr}} = \frac{\Omega}{2k_m}=\frac{\gamma-1}{2}$ | The ratio of the quadratic term to the linear one; the small parameter of the limit, with $-\eta_{\mathrm{nr}}/(1+\eta_{\mathrm{nr}})$ the error of the truncation |
 | $\gamma = \frac{E}{mc^{2}}$, $\beta = \frac{pc}{E}$ | The Lorentz factor and the speed, the two parameters the ratios give |
 | $\mathsf{L}$, $\mathsf{M}$, $\mathsf{T}$ | The dimensions of length, mass and time of the notation conventions |
 

@@ -222,7 +222,7 @@ $$
 \{L_{\mathrm{orb},i}, L_{\mathrm{orb},j}\} = \epsilon_{ij\eta}L_{\mathrm{orb},k} ,
 $$
 
-which is the classical form of the commutation relations of the quantum angular momentum. The bracket is a bracket on functions of the phase-space variables $(x_k, p_\eta)$, with $\{x_i, p_j\} = \delta_{ij}$ and $\{x_i, x_j\} = \{p_i, p_j\} = 0$; its conventions are those of the companion article *Similitudes Between the Poisson Bracket and the Quantum Commutator*.
+which is the classical form of the commutation relations of the quantum angular momentum. The bracket is a bracket on functions of the phase-space variables $(x_\eta, p_\eta)$, with $\{x_i, p_j\} = \delta_{ij}$ and $\{x_i, x_j\} = \{p_i, p_j\} = 0$; its conventions are those of the companion article *Similitudes Between the Poisson Bracket and the Quantum Commutator*.
 
 It is important not to conflate two algebras that the notation makes look alike. The commutator $[\vec a,\vec b]$ of the quaternion algebra is a product in a three-dimensional subspace and equals twice the cross product; the Poisson bracket $\{L_{\mathrm{orb},i}, L_{\mathrm{orb},j}\}$ is a derivative operation on the six-dimensional phase space. They produce the same three-dimensional algebra because the angular momentum is built from the cross product of the position and momentum, but they are different operations on different spaces. The algebra's commutator can be evaluated at a single instant and involves only the current vectors; the Poisson bracket relates the angular momentum to the Hamiltonian flow and requires the phase-space structure. The central-scalar limit uses both, and the companion article on the bracket treats their relation in detail.
 

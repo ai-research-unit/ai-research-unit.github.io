@@ -305,7 +305,7 @@ Equivalently, $p\times\vec A+\vec A\times p=-\frac{m\,c\,i\,\vec B}{k_m}$; the t
 *Step 3: the square of the gradient's pure part.* The product identity of the algebra is the product of two pure elements,
 
 $$
-\Bigl(\sum_\eta\vec e_\eta a_k\Bigr)\Bigl(\sum_\eta\vec e_\eta b_k\Bigr)
+\Bigl(\sum_\eta\vec e_\eta a_\eta\Bigr)\Bigl(\sum_\eta\vec e_\eta b_\eta\Bigr)
 =-\vec a\cdot\vec b\,e_t+\sum_l\epsilon_{lj\eta}a_jb_k\,\vec e_l ,
 $$
 

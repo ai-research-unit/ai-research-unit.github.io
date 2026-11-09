@@ -137,14 +137,14 @@ and $g_0 \pm \mathcal{V}[g_0]$ lies in the kernel of $D \pm i\partial/\partial r
 The source's Fourier transform is taken in the space variables only, at fixed time,
 
 $$
-\mathcal{F}(w)(k,r'_t) = \int_{\mathbb{R}^3} \exp\bigl(-2\pi i\langle k,r_x\rangle\bigr) w(r_x,r'_t)\,dx,
+\mathcal{F}(w)(\vec k_\Phi,r'_t) = \int_{\mathbb{R}^3} \exp\bigl(-2\pi i\langle \vec k_\Phi,r_x\rangle\bigr) w(r_x,r'_t)\,dx,
 \tag{8}
 $$
 
-with inversion by $\mathcal{F}(w)(-x)$ and the differentiation rule $\mathcal{F}(\nabla w)(k) = 2\pi i k\,\mathcal{F}(w)(k)$ (*Biquaternion Continuous Harmonic Analysis*, *The Gradient*). Applying (8) to the equation $DΞ = \mp i\partial/\partial r'_tΞ$ of the kernel, using $\vec e_x k_1 + \vec e_y k_2 + \vec e_z k_3 = k$ for the frequency vector, gives the linear equation
+with inversion by $\mathcal{F}(w)(-x)$ and the differentiation rule $\mathcal{F}(\nabla w)(\vec k_\Phi) = 2\pi i \vec k_\Phi\,\mathcal{F}(w)(\vec k_\Phi)$ (*Biquaternion Continuous Harmonic Analysis*, *The Gradient*). Applying (8) to the equation $DΞ = \mp i\partial/\partial r'_tΞ$ of the kernel, using $k_{\Phi x}\vec e_x + k_{\Phi y}\vec e_y + k_{\Phi z}\vec e_z = \vec k_\Phi$ for the frequency vector, gives the linear equation
 
 $$
-2\pi i k\,\mathcal{F}(Ξ_\pm)(k,r'_t) \pm i\partial/\partial r'_t \mathcal{F}(Ξ_\pm)(k,r'_t) = 0.
+2\pi i \vec k_\Phi\,\mathcal{F}(Ξ_\pm)(\vec k_\Phi,r'_t) \pm i\partial/\partial r'_t \mathcal{F}(Ξ_\pm)(\vec k_\Phi,r'_t) = 0.
 $$
 
 ### The Unit-Modulus Kernel
@@ -152,17 +152,17 @@ $$
 The solution is the **quaternionic exponential function**
 
 $$
-\boxed{\;\mathcal{F}(Ξ_\pm)(k,r'_t) = \exp(\mp 2\pi k r'_t) = \cos\bigl(2\pi|k|r'_t\bigr) \mp \frac{k}{|k|}\sin\bigl(2\pi|k|r'_t\bigr)\;},
+\boxed{\;\mathcal{F}(Ξ_\pm)(\vec k_\Phi,r'_t) = \exp(\mp 2\pi \vec k_\Phi r'_t) = \cos\bigl(2\pi|\vec k_\Phi|r'_t\bigr) \mp \frac{\vec k_\Phi}{|\vec k_\Phi|}\sin\bigl(2\pi|\vec k_\Phi|r'_t\bigr)\;},
 \tag{9}
 $$
 
-for $(k,r'_t) \in \mathbb{R}^3 \times \mathbb{R}$, with the convention $\mathcal{F}(Ξ_\pm) = 0$ for $r'_t < 0$. The closed form is the quaternion interpretation of an exponential of a **pure vector**: since $k$ is a pure imaginary quaternion with $k^2 = -|k|^2$, the series splits into an even and an odd part and gives $\exp(b) = \cos|b| + (b/|b|)\sin|b|$ for any pure vector $b$. The decisive property for everything that follows is that this exponential has **unit quaternion modulus**,
+for $(\vec k_\Phi,r'_t) \in \mathbb{R}^3 \times \mathbb{R}$, with the convention $\mathcal{F}(Ξ_\pm) = 0$ for $r'_t < 0$. The closed form is the quaternion interpretation of an exponential of a **pure vector**: since $\vec k_\Phi$ is a pure imaginary quaternion with $\vec k_\Phi^2 = -|\vec k_\Phi|^2$, the series splits into an even and an odd part and gives $\exp(b) = \cos|b| + (b/|b|)\sin|b|$ for any pure vector $b$. The decisive property for everything that follows is that this exponential has **unit quaternion modulus**,
 
 $$
-\bigl|\exp(\mp 2\pi k r'_t)\bigr| = 1 \qquad \text{for every } (k,r'_t),
+\bigl|\exp(\mp 2\pi \vec k_\Phi r'_t)\bigr| = 1 \qquad \text{for every } (\vec k_\Phi,r'_t),
 $$
 
-with reason $\exp(\mp 2\pi k r'_t) = \exp\bigl(\mp 2\pi|k|r'_t\,\vec u_k\bigr)$ for the unit vector $\vec u_k = k/|k|$. It is a **phase**, a rotation in the plane spanned by $e_t$ and $k$, not a growing or decaying factor. This is what makes the whole scheme work: the multiplier is bounded and unimodular, so multiplication by it is an isometry of $L^2$ in the space variables. Formula (9) was recomputed both as a closed form and as the solution of its differential equation; the closed form satisfies $\partial/\partial r'_t G = \mp 2\pi k G$ to $4\times10^{-15}$ over the sample, and its modulus is exactly $1$.
+with reason $\exp(\mp 2\pi \vec k_\Phi r'_t) = \exp\bigl(\mp 2\pi|\vec k_\Phi|r'_t\,\vec u_k\bigr)$ for the unit vector $\vec u_k = \vec k_\Phi/|\vec k_\Phi|$. It is a **phase**, a rotation in the plane spanned by $e_t$ and $\vec k_\Phi$, not a growing or decaying factor. This is what makes the whole scheme work: the multiplier is bounded and unimodular, so multiplication by it is an isometry of $L^2$ in the space variables. Formula (9) was recomputed both as a closed form and as the solution of its differential equation; the closed form satisfies $\partial/\partial r'_t G = \mp 2\pi \vec k_\Phi G$ to $4\times10^{-15}$ over the sample, and its modulus is exactly $1$.
 
 ## The Parabolic Teodorescu Transform and the Right Inverse
 
@@ -171,17 +171,17 @@ with reason $\exp(\mp 2\pi k r'_t) = \exp\bigl(\mp 2\pi|k|r'_t\,\vec u_k\bigr)$ 
 Because $Ξ$ is not an $L^1$ object — the point taken up in *What Is Verified and What Is Not* — the source defines the **parabolic Teodorescu transform** directly from the multiplier:
 
 $$
-L_{\mathcal{C}}R_{\pm}[w](r_x,r'_t) := \int_0^{r'_{t}}\int_{\mathbb{R}^3} \exp\bigl(2\pi i\langle r_x,k\rangle\bigr) \exp\bigl(\mp 2\pi (r'_t-s) k\bigr) \mathcal{F}(w)(k,s)\,dk\,ds,
+L_{\mathcal{C}}R_{\pm}[w](r_x,r'_t) := \int_0^{r'_{t}}\int_{\mathbb{R}^3} \exp\bigl(2\pi i\langle r_x,\vec k_\Phi\rangle\bigr) \exp\bigl(\mp 2\pi (r'_t-s) \vec k_\Phi\bigr) \mathcal{F}(w)(\vec k_\Phi,s)\,d\vec k_\Phi\,ds,
 \tag{10}
 $$
 
 for $(r_x,r'_t) \in \mathbb{R}^3 \times (0,\infty)$, with $\mathcal{C} = \Omega \times (0,\infty)$ and $w$ extended by zero outside $\Omega$. The well-definedness argument (the source's Proposition 9) is the unimodularity of (9): for $0 < s < r'_t$, the modulus of the kernel is $1$, so
 
 $$
-\bigl|\exp(\mp 2\pi(r'_t-s)k)\bigr|^2 \bigl|\mathcal{F}(w)(k,s)\bigr|^2 = \bigl|\mathcal{F}(w)(k,s)\bigr|^2,
+\bigl|\exp(\mp 2\pi(r'_t-s)\vec k_\Phi)\bigr|^2 \bigl|\mathcal{F}(w)(\vec k_\Phi,s)\bigr|^2 = \bigl|\mathcal{F}(w)(\vec k_\Phi,s)\bigr|^2,
 $$
 
-and Plancherel's theorem turns the $k$-integral at each $s$ into $\|w(\cdot,s)\|_{L^2(\Omega)}$, whose integral over $s \in [0,r'_t]$ is finite because the norm is continuous. This holds for **both** signs, because the kernel has modulus $1$ for both; there is no branch whose transform fails to converge.
+and Plancherel's theorem turns the $\vec k_\Phi$-integral at each $s$ into $\|w(\cdot,s)\|_{L^2(\Omega)}$, whose integral over $s \in [0,r'_t]$ is finite because the norm is continuous. This holds for **both** signs, because the kernel has modulus $1$ for both; there is no branch whose transform fails to converge.
 
 ### The Right-Inverse Theorem
 
@@ -192,7 +192,7 @@ $$
 \tag{11}
 $$
 
-The proof is the symbol computation. Acting on the multiplier, the space derivative brings down $2\pi i k$ and the time derivative brings down $\mp 2\pi k$, while the Leibniz rule in $r'_t$ contributes the boundary term $\exp(2\pi i\langle r_x,k\rangle)\mathcal{F}(w)(k,r'_t)$ whose $k$-integral is $w(r_x,r'_t)$ by inversion. The result is the operator identity
+The proof is the symbol computation. Acting on the multiplier, the space derivative brings down $2\pi i \vec k_\Phi$ and the time derivative brings down $\mp 2\pi \vec k_\Phi$, while the Leibniz rule in $r'_t$ contributes the boundary term $\exp(2\pi i\langle r_x,\vec k_\Phi\rangle)\mathcal{F}(w)(\vec k_\Phi,r'_t)$ whose $\vec k_\Phi$-integral is $w(r_x,r'_t)$ by inversion. The result is the operator identity
 
 $$
 \partial/\partial r'_t L_{\mathcal{C}}R_{\pm}[w] = w \pm i D L_{\mathcal{C}}R_{\pm}[w],
@@ -262,7 +262,7 @@ a **purely vectorial** solution of (13), whose real part is the electric field $
 The source repeats the analysis for the slightly perturbed operator $D \pm i\lambda\partial/\partial r'_t$ with $\lambda \in \mathbb{R}$, whose kernel is characterised by (4) with $\partial/\partial r'_t$ replaced by $\lambda\partial/\partial r'_t$ (its Corollary 14) and whose right inverse is the $\lambda$-scaled transform
 
 $$
-L_{\mathcal{C}}R_{\pm,\lambda}[w](r_x,r'_t) := \int_0^{r'_{t}}\int_{\mathbb{R}^3} \exp\bigl(2\pi i\langle r_x,k\rangle\bigr) \exp\bigl(\mp 2\pi\lambda^{-1}(r'_t-s)k\bigr) \mathcal{F}(w)(k,s)\,dk\,ds,
+L_{\mathcal{C}}R_{\pm,\lambda}[w](r_x,r'_t) := \int_0^{r'_{t}}\int_{\mathbb{R}^3} \exp\bigl(2\pi i\langle r_x,\vec k_\Phi\rangle\bigr) \exp\bigl(\mp 2\pi\lambda^{-1}(r'_t-s)\vec k_\Phi\bigr) \mathcal{F}(w)(\vec k_\Phi,s)\,d\vec k_\Phi\,ds,
 \tag{16}
 $$
 
@@ -280,7 +280,7 @@ reduced to a single equation of the form $(D - i\partial/\partial r'_t)Ξ = -\ti
 
 ## What Is Verified and What Is Not
 
-**Not verified, and flagged.** (i) The object called a **fundamental solution**. Its defining equation in the source, $(D \pm i\partial/\partial r'_t)Ξ_\pm = 0$ for $x \neq 0$, $r'_t \neq 0$, is the **homogeneous** equation in the punctured domain; a fundamental solution in the classical sense carries $\delta$ on the right. The object whose Fourier transform is (9) is the **kernel of the right inverse**, and the inverse is correctly defined directly by (10) and proved in (11); a fundamental solution with a $\delta$ on the right is not exhibited. (ii) The declaration $Ξ_\pm \in L^1(\mathbb{R}^3 \times (0,\infty))$ **cannot** be reconciled with (9): by the Riemann–Lebesgue lemma the space Fourier transform of an $L^1$ function tends to $0$ at infinity, whereas (9) has modulus $1$ for every $k$. The two statements are inconsistent, and it is (9), not the $L^1$ claim, that the proof of the right inverse uses. (iii) The exact hypotheses and normalisations of **Theorems 13 and 16** were read only through the extracted running text, whose display is garbled; the *structure* recorded in (15) — right inverse, then completion by $g_0 - \mathcal{V}[g_0]$ — is verified, but the printed leading factors, the pairing of $\mathrm{Re}$ and $\mathrm{Im}$ with $\mathrm{Vec}$, and the definition of $g_0$ should be checked against the published version before they are quoted. (iv) The constants of the SI homogeneous-medium section: as extracted, the system (17) and the condition the source prints with it are not mutually consistent — the ampèrian equation lacks the factor $\mu$ of the standard B-form, and the printed compatibility condition does not reduce to $\mathrm{div}\,\vec{\jmath} + \partial/\partial r'_t\rho = 0$ under either interpretation — so the exact field combination and the normalisation of that section were left unverified. Only its structure (a single equation with $\lambda = \sqrt{\epsilon\mu}$) is recorded.
+**Not verified, and flagged.** (i) The object called a **fundamental solution**. Its defining equation in the source, $(D \pm i\partial/\partial r'_t)Ξ_\pm = 0$ for $x \neq 0$, $r'_t \neq 0$, is the **homogeneous** equation in the punctured domain; a fundamental solution in the classical sense carries $\delta$ on the right. The object whose Fourier transform is (9) is the **kernel of the right inverse**, and the inverse is correctly defined directly by (10) and proved in (11); a fundamental solution with a $\delta$ on the right is not exhibited. (ii) The declaration $Ξ_\pm \in L^1(\mathbb{R}^3 \times (0,\infty))$ **cannot** be reconciled with (9): by the Riemann–Lebesgue lemma the space Fourier transform of an $L^1$ function tends to $0$ at infinity, whereas (9) has modulus $1$ for every $\vec k_\Phi$. The two statements are inconsistent, and it is (9), not the $L^1$ claim, that the proof of the right inverse uses. (iii) The exact hypotheses and normalisations of **Theorems 13 and 16** were read only through the extracted running text, whose display is garbled; the *structure* recorded in (15) — right inverse, then completion by $g_0 - \mathcal{V}[g_0]$ — is verified, but the printed leading factors, the pairing of $\mathrm{Re}$ and $\mathrm{Im}$ with $\mathrm{Vec}$, and the definition of $g_0$ should be checked against the published version before they are quoted. (iv) The constants of the SI homogeneous-medium section: as extracted, the system (17) and the condition the source prints with it are not mutually consistent — the ampèrian equation lacks the factor $\mu$ of the standard B-form, and the printed compatibility condition does not reduce to $\mathrm{div}\,\vec{\jmath} + \partial/\partial r'_t\rho = 0$ under either interpretation — so the exact field combination and the normalisation of that section were left unverified. Only its structure (a single equation with $\lambda = \sqrt{\epsilon\mu}$) is recorded.
 
 **What the source does not do.** It does not solve a boundary-value problem: the domain is fixed, the transform is taken by zero extension, and the right inverse is global. It does not treat an inhomogeneous or chiral medium: the homogeneous medium enters only through the single constant $\lambda = \sqrt{\epsilon\mu}$, so the dispersive and magnetoelectric content of *Electromagnetism in Media — The Local Complex Structure at Work* is untouched. It does not quantise, and it makes no claim about the **physical interpretation** of the parabolic operators beyond their use as a computational route. Its stated aim is analytical efficiency, and its result should be read as a method, not as a physical model.
 
@@ -304,8 +304,8 @@ The source's wave-operator factorisation $-\Delta + \partial^2/\partial {r'_{t}}
 | $T_\Omega$ | Teodorescu transform, the right inverse of $D$ on $\Omega$ |
 | $\mathcal{V}[g_0]$ | Purely vectorial complement (7) of a scalar wave solution |
 | $\mathcal{F}$ | Fourier transform in the space variables at fixed $r'_t$ |
-| $k$ | Frequency three-vector, read as the pure quaternion $\vec e_xk_1 + \vec e_yk_2 + \vec e_zk_3$ |
-| $Ξ_\pm$ | The source's kernel, $\mathcal{F}(Ξ_\pm)(k,r'_t) = \exp(\mp 2\pi kr'_t)$ |
+| $\vec k_\Phi$ | Frequency three-vector, read as the pure quaternion $k_{\Phi x}\vec e_x + k_{\Phi y}\vec e_y + k_{\Phi z}\vec e_z$ |
+| $Ξ_\pm$ | The source's kernel, $\mathcal{F}(Ξ_\pm)(\vec k_\Phi,r'_t) = \exp(\mp 2\pi \vec k_\Phi r'_t)$ |
 | $L_{\mathcal{C}}R_{\pm}$, $L_{\mathcal{C}}R_{\pm,\lambda}$ | Parabolic Teodorescu transform (10) and its $\lambda$-scaled form (16) |
 | $\vec{E}, \vec{B}, \rho, \vec{\jmath}$ | Electric field, magnetic field, charge density, current density |
 | $\vec{\xi} = \vec{E} + i\vec{B}$ | Biquaternionic field of the source; the corpus's dual field strength $-i\tilde F$ |

@@ -297,7 +297,7 @@ $$
 \tilde R_\Phi = i r'_t\,e_t + r_x\vec e_x + r_y\vec e_y + r_z\vec e_z.
 $$
 
-$\tilde R_\Psi$ is the **informational part**: it takes the real scalar slot with the imaginary vector slots. $\tilde R_\Phi$ is the **material part**: the imaginary scalar slot with the real vector slots. The primed set therefore holds the material time $r'_t$ and the three informational spaces $r'_k$; the unprimed set holds the informational time $r_t$ and the three material spaces $r_\eta$.
+$\tilde R_\Psi$ is the **informational part**: it takes the real scalar slot with the imaginary vector slots. $\tilde R_\Phi$ is the **material part**: the imaginary scalar slot with the real vector slots. The primed set therefore holds the material time $r'_t$ and the three informational spaces $r'_\eta$; the unprimed set holds the informational time $r_t$ and the three material spaces $r_\eta$.
 
 **The two letters are reserved for the two sectors.** $\Phi$ marks the material sector and $\Psi$ the informational one, and each letter serves twice: as the subscript of the sector itself, $\mathbb{B}_{\Phi}$ and $\mathbb{B}_{\Psi}$, and as the sector label of every glyph whose sector is fixed. No other object in the series may take either letter for any other purpose. Each subscript is the label of the sector its element lives in, since $\tilde R_\Phi\in\mathbb{B}_{\Phi}$ and $\tilde R_\Psi\in\mathbb{B}_{\Psi}$, so the subscript and the sector cannot drift apart. The capitals are held free for exactly this use, and the rest of the Greek set is in service, so a half named with any other letter would collide with a symbol already in use.
 

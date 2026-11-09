@@ -56,7 +56,7 @@ $$
 \partial\alpha\cdot\partial\alpha=0,\qquad \partial\beta\cdot\partial\beta=0,\qquad \partial\alpha\cdot\partial\beta=0,
 $$
 
-where the product is $\partial\alpha\cdot\partial\beta=\sum_\mu\partial/\partial R_\mu\alpha\,\partial/\partial R_\mu\beta$, that is $-\partial\alpha/\partial r'_t\,\partial\beta/\partial r'_t+\sum_\eta\partial\alpha/\partial x_k\,\partial\beta/\partial x_k$, the minus being the square of the $i$ in $Q_t=ir'_t$. The **Bateman field** is the exterior product of the two gradients,
+where the product is $\partial\alpha\cdot\partial\beta=\sum_\mu\partial/\partial R_\mu\alpha\,\partial/\partial R_\mu\beta$, that is $-\partial\alpha/\partial r'_t\,\partial\beta/\partial r'_t+\sum_\eta\partial\alpha/\partial x_\eta\,\partial\beta/\partial x_\eta$, the minus being the square of the $i$ in $Q_t=ir'_t$. The **Bateman field** is the exterior product of the two gradients,
 
 $$
 C=d\alpha\wedge d\beta,\qquad C_{\mu\nu}=\frac{\partial\alpha}{\partial x_\mu}\frac{\partial\beta}{\partial x_\nu}-\frac{\partial\alpha}{\partial x_\nu}\frac{\partial\beta}{\partial x_\mu}.

@@ -70,7 +70,7 @@ $$
 
 and they are read at once: $c_0^{2}$ is $\vec e_x^{2}=-1$, $c_k^{2}$ is $\vec e_\eta^{2}\vec e_y^{2}=(-1)(-1)=+1$, and a pair anticommutes because one quaternion unit passes the other and $\vec e_y$ passes $\vec e_y$.
 
-**The operator.** With $x_0=r'_t$ and $x_k$ the three spatial coordinates, and with $Q_t=ix_0$, $Q_\eta=x_k$ the material reading of the four coordinates,
+**The operator.** With $x_0=r'_t$ and $x_\eta$ the three spatial coordinates, and with $Q_t=ix_0$, $Q_\eta=x_\eta$ the material reading of the four coordinates,
 
 $$
 D=\sum_\mu \varepsilon_\mu\, c_\mu\,\frac{\partial}{\partial x_\mu},\qquad

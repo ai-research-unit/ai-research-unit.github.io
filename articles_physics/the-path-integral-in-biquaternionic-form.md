@@ -276,7 +276,7 @@ The sum over paths integrates over trajectories $r_x(r'_t)$ that are ordinary co
 $$
 r_x\,dr_x/dr'_t=\lim_{\varepsilon\to0}r_x(r'_t)\frac{r_x(r'_t)-r_x(r'_t-\varepsilon)}{\varepsilon}
 $$
-is therefore ambiguous: the two orderings of the numerator differ by a term that does not vanish as $\varepsilon\to0$. Writing the discrete two-point function of the free Euclidean particle as $\langle  x_jx_k\rangle=(\frac{1}{k_m})\min(r'_{t,j},r'_{t,k})$ — the diffusion coefficient of the coordinate $r'_t$, the duration coefficient $\hbar/m$ read in the other variable — the two orderings are
+is therefore ambiguous: the two orderings of the numerator differ by a term that does not vanish as $\varepsilon\to0$. Writing the discrete two-point function of the free Euclidean particle as $\langle  x_jx_\eta\rangle=(\frac{1}{k_m})\min(r'_{t,j},r'_{t,k})$ — the diffusion coefficient of the coordinate $r'_t$, the duration coefficient $\hbar/m$ read in the other variable — the two orderings are
 $$
 \frac{1}{\varepsilon}\big\langle x_j(x_{j+1}-x_j)\big\rangle=0,
 \qquad
@@ -378,7 +378,7 @@ The canonical commutator is not visible in the commuting sum over paths, but its
 | $\delta^2S$ | Second variation (Hessian) of the action about $x_{\mathrm{cl}}$ |
 | $\sqrt{\lvert\det\partial^2S_{\mathrm{cl}}/\partial x_i\partial x_f\rvert}$ | Van Vleck determinant; equals the WKB amplitude $A_{\mathrm{wkb}}$ |
 | $\exp(-i\pi\nu/2)$ | Maslov phase; $\nu$ the number of conjugate points (caustics) |
-| $\langle  x_jx_k\rangle=(\frac{1}{k_m})\min(r'_{t,j},r'_{t,k})$ | Free Euclidean two-point function; contact term $\frac{1}{k_m}$ |
+| $\langle  x_jx_\eta\rangle=(\frac{1}{k_m})\min(r'_{t,j},r'_{t,k})$ | Free Euclidean two-point function; contact term $\frac{1}{k_m}$ |
 | $[x,p]=\frac{m\,c\,i}{k_m}$ | Canonical commutator; the value $\frac{m\,c\,i}{k_m}$ is central and in $\mathbb{B}_{\Phi}$ |
 | $[p,[p,g]]=-\frac{m^{2}\,c^{2}\,d\,g}{k_m^{2}\,x^{2}}$ | Operator-ordering ambiguity; proportional to the curvature |
 | $\prod_x\sqrt{g(x)}$ | Curved-space measure factor; one volume element per slice |

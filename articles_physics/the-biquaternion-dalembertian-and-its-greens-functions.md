@@ -164,7 +164,7 @@ With $\tilde R_\Phi = i r'_t\,e_t + r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z$, 
 $$
 \rho^2 := \langle\tilde R_\Phi\rangle_{\natural} = (i r'_t)^2 +r_x^2+r_y^2+r_z^2 = -{r'_{t}}^2 +r_x^2+r_y^2+r_z^2 ,
 $$
-the Minkowski interval continued to imaginary time. Read as a quadratic form in the four coordinates $(x_0, x_1, x_2, x_3)$ with $x_0 = i r'_t$ and $x_k = r_\eta$, the operator $\Box = \partial^2/\partial R_t^2 + \Delta$ is *exactly* the four-dimensional Laplacian,
+the Minkowski interval continued to imaginary time. Read as a quadratic form in the four coordinates $(x_0, x_1, x_2, x_3)$ with $x_0 = i r'_t$ and $x_\eta = r_\eta$, the operator $\Box = \partial^2/\partial R_t^2 + \Delta$ is *exactly* the four-dimensional Laplacian,
 $$
 \Box = \sum_{\mu\in\{t,x,y,z\}} \partial^2/\partial R_\mu^2 = \Delta_4 ,
 $$

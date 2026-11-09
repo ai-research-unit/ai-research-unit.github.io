@@ -132,7 +132,7 @@ $$
 \qquad\text{for all } \tilde{Ξ}_\pm\in\mathbb{B}_{\Psi}\cup\mathbb{B}_{\Phi} .
 $$
 
-**Proof.** It suffices to check the statement on the four units, since the real form is bilinear. In the material sector the coordinates are $Q_t=i r'_t$ and $Q_\eta=x_k$, in the informational sector $Q_t=r_t$ and $Q_\eta=i r'_{x_k}$, and each elementary term is $\mathrm{Re}\,\mathrm{Tr}(e_\mu^{*}W_{\mathrm{kinetic}}e_\nu)$ times the product of one material coordinate and one informational one. The trace factor vanishes off the diagonal, and on it the coordinate product is purely imaginary, $i r'_t\cdot r_t$ on the time slot and $x_k\cdot i r'_{x_k}$ on each space slot. A direct evaluation over the $4\times4=16$ elementary products gives zero in every case. The cross terms of the real form therefore vanish, and the quadratic form is block diagonal.
+**Proof.** It suffices to check the statement on the four units, since the real form is bilinear. In the material sector the coordinates are $Q_t=i r'_t$ and $Q_\eta=x_\eta$, in the informational sector $Q_t=r_t$ and $Q_\eta=i r'_{x_\eta}$, and each elementary term is $\mathrm{Re}\,\mathrm{Tr}(e_\mu^{*}W_{\mathrm{kinetic}}e_\nu)$ times the product of one material coordinate and one informational one. The trace factor vanishes off the diagonal, and on it the coordinate product is purely imaginary, $i r'_t\cdot r_t$ on the time slot and $x_\eta\cdot i r'_{x_\eta}$ on each space slot. A direct evaluation over the $4\times4=16$ elementary products gives zero in every case. The cross terms of the real form therefore vanish, and the quadratic form is block diagonal.
 
 **Consequence: factorisation.** With the source split as $\tilde J_{\Phi}=\tilde J_{\Phi,-}+\tilde J_{\Phi,+}$, the free functional integral is
 $$

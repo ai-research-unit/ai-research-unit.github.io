@@ -50,26 +50,26 @@ where $\vec u_{x,2}$ is the unit vector from the origin to the source point; the
 For radiation the cleanest bookkeeping is through the **radiation vector** of the electromagnetic series,
 
 $$
-\vec F(\vec u) = \int \vec J(r_{2x}\,\vec e_x+r_{2y}\,\vec e_y+r_{2z}\,\vec e_z)\,\exp(-ik\vec u\cdot(r_{2x}\,\vec e_x+r_{2y}\,\vec e_y+r_{2z}\,\vec e_z))\,d^3r_2 ,
+\vec F(\vec u) = \int \vec J(r_{2x}\,\vec e_x+r_{2y}\,\vec e_y+r_{2z}\,\vec e_z)\,\exp(-ik_{t}^{\prime}\vec u\cdot(r_{2x}\,\vec e_x+r_{2y}\,\vec e_y+r_{2z}\,\vec e_z))\,d^3r_2 ,
 \qquad
-k = \frac{\omega}{c} ,
+k_{t}^{\prime} = \frac{\omega}{c} ,
 $$
 
-whose expansion in powers of $k\vec u\cdot(r_{2x}\,\vec e_x+r_{2y}\,\vec e_y+r_{2z}\,\vec e_z)$ is the multipole series in the long-wavelength limit. The term of order $k^n$ contributes the two types of multipole of neighbouring orders,
+whose expansion in powers of $k_{t}^{\prime}\vec u\cdot(r_{2x}\,\vec e_x+r_{2y}\,\vec e_y+r_{2z}\,\vec e_z)$ is the multipole series in the long-wavelength limit. The term of order $k_{t}^{\prime\,n}$ contributes the two types of multipole of neighbouring orders,
 
 $$
-k_{t}^{\prime}:\ E_1 ,
+k_{t}^{\prime\,0}:\ E_1 ,
 \qquad
-k^1:\ M_1,\ E_2 ,
+k_{t}^{\prime\,1}:\ M_1,\ E_2 ,
 \qquad
-k^2:\ \mathsf{M}_2,\ E_3 ,
+k_{t}^{\prime\,2}:\ \mathsf{M}_2,\ E_3 ,
 \qquad
 \ldots
 \qquad
-k^n:\ M_n,\ E_{n+1} .
+k_{t}^{\prime\,n}:\ M_n,\ E_{n+1} .
 $$
 
-The pairing is worth holding on to: at each order in $k$ the field carries an electric multipole of order $l$ and a magnetic multipole of order $l-1$. The electric quadrupole and the magnetic dipole are partners at order $k$, the electric octupole and the magnetic quadrupole at order $k^2$, and so on. The electric dipole stands alone at order $k_{t}^{\prime}$: there is no magnetic term at that order.
+The pairing is worth holding on to: at each order in $k_{t}^{\prime}$ the field carries an electric multipole of order $l$ and a magnetic multipole of order $l-1$. The electric quadrupole and the magnetic dipole are partners at order $k_{t}^{\prime}$, the electric octupole and the magnetic quadrupole at order $k_{t}^{\prime\,2}$, and so on. The electric dipole stands alone at order $k_{t}^{\prime\,0}$: there is no magnetic term at that order.
 
 ### The Vector Spherical Harmonics
 
@@ -93,7 +93,7 @@ $$
 P_{E_l},\ P_{M_l} \ \propto\ \omega^{2l+2} ,
 $$
 
-so that each successive order is suppressed by two further powers of $\omega$ relative to the electric dipole. Together with the pairing $E_{l+1}\leftrightarrow M_l$ at order $k^l$, this is the standard long-wavelength taxonomy of multipole radiation.
+so that each successive order is suppressed by two further powers of $\omega$ relative to the electric dipole. Together with the pairing $E_{l+1}\leftrightarrow M_l$ at order $k_{t}^{\prime\,l}$, this is the standard long-wavelength taxonomy of multipole radiation.
 
 ## The Field-Strength Biquaternion and Its Two Decompositions
 
@@ -317,7 +317,7 @@ What survives is the algebra of the value. The field-strength biquaternion, its 
 Two different pairings of electric and magnetic multiplets appear in the subject, and it is important not to conflate them.
 
 - The **covariant pairing** combines the electric and magnetic moments of a given rank into the covariant multipole tensor of that rank, so that neither is separately Lorentz-covariant; a boost rotates the two types into one another. This pairing is a statement about the **source moments**, which are frame-dependent.
-- The **long-wavelength pairing** pairs $E_{l+1}$ with $M_l$ at the same order in $k$ in the radiation vector, because the expansion of the phase $\exp(-ik\vec u\cdot(r_{2x}\,\vec e_x+r_{2y}\,\vec e_y+r_{2z}\,\vec e_z))$ couples the rank-$(n+1)$ symmetric moment to the rank-$n$ antisymmetric moment. This pairing is a statement about the **field** in a fixed frame.
+- The **long-wavelength pairing** pairs $E_{l+1}$ with $M_l$ at the same order in $k_{t}^{\prime}$ in the radiation vector, because the expansion of the phase $\exp(-ik_{t}^{\prime}\vec u\cdot(r_{2x}\,\vec e_x+r_{2y}\,\vec e_y+r_{2z}\,\vec e_z))$ couples the rank-$(n+1)$ symmetric moment to the rank-$n$ antisymmetric moment. This pairing is a statement about the **field** in a fixed frame.
 
 Both are standard, and they answer different questions. The first says that the electric and magnetic moments of an order are not separately covariant; the second says which multipoles dominate at a given order in the long-wavelength expansion. The quadrupole illustrates both: it is paired with the magnetic quadrupole by covariance, and with the magnetic dipole by the order counting.
 
@@ -334,17 +334,17 @@ The dipole is the first order with two multiplet types. In a static or stationar
 $$
 \vec F_{E1} = -i\omega\,\vec p ,
 \qquad
-\vec F_{M1} = ik\,\vec u\times\vec m ,
+\vec F_{M1} = ik_{t}^{\prime}\,\vec u\times\vec m ,
 $$
 
 and the far fields are the transverse dipole patterns. The two moments combine into the antisymmetric rank-two tensor whose time–space entries are the electric dipole components and whose space–space entries are the magnetic ones; it is this six-component object, not the electric or the magnetic dipole separately, that transforms in a representation of the Lorentz group. A boost rotates $\vec p$ into $\vec m$ within this block, and the electric and magnetic dipole labels are frame-dependent.
 
 ### $l = 2$: The Electric and Magnetic Quadrupoles
 
-The quadrupole is the first order whose moment is not an algebra element. Its electric part is the symmetric traceless tensor $\mathcal{Q}_{ij}$, five components, and its magnetic part a rank-two structure built from the current, the magnetic quadrupole moment $M_{ij}$, also five components; they are the two $D^{(2)}$ multiplets of the order, of opposite parity. In the radiation vector the electric quadrupole appears at order $k$ with the magnetic dipole,
+The quadrupole is the first order whose moment is not an algebra element. Its electric part is the symmetric traceless tensor $\mathcal{Q}_{ij}$, five components, and its magnetic part a rank-two structure built from the current, the magnetic quadrupole moment $M_{ij}$, also five components; they are the two $D^{(2)}$ multiplets of the order, of opposite parity. In the radiation vector the electric quadrupole appears at order $k_{t}^{\prime}$ with the magnetic dipole,
 
 $$
-\vec F_{E2} = -\frac{k\omega}{6}\,\vec{\mathcal{Q}}(\vec u) ,
+\vec F_{E2} = -\frac{k_{t}^{\prime}\omega}{6}\,\vec{\mathcal{Q}}(\vec u) ,
 \qquad
 [\vec{\mathcal{Q}}(\vec u)]_i = \mathcal{Q}_{ij}n_j ,
 $$
@@ -360,7 +360,7 @@ The pattern of the lowest orders is the pattern for all of them.
 - At each order $l\ge1$ there is an electric multiplet $E_l$ and a magnetic multiplet $M_l$, each of complex dimension $2l+1$, of opposite parity.
 - The electric and magnetic multipole types are the parity-even and parity-odd combinations of the two helicity amplitudes; a boost rotates the two types into one another and preserves the helicities. Their covariant packaging is the covariant multipole tensor, and the self-dual field strength is the corresponding covariant object on the field side. The order $l$ itself is a rest-frame label, not a Lorentz invariant.
 - In a static or stationary setting the electric multipole field is purely Hermitian and the magnetic multipole field purely anti-Hermitian, so the two types are the two sectors $\mathbb{B}_{\Psi}$ and $\mathbb{B}_{\Phi}$; in radiation each type has both parts.
-- In the long-wavelength expansion the electric multiplet $E_{l+1}$ is paired with the magnetic multiplet $M_l$ at order $k^l$; a multiplet of order $l$ radiates with power $\propto\omega^{2l+2}$.
+- In the long-wavelength expansion the electric multiplet $E_{l+1}$ is paired with the magnetic multiplet $M_l$ at order $k_{t}^{\prime\,l}$; a multiplet of order $l$ radiates with power $\propto\omega^{2l+2}$.
 - For radiation the field is null, $\langle\tilde{F}\rangle_{\natural} = 0$, and a definite-helicity multipole lies entirely in one chiral half; the helicity is the eigenvalue of $\star$.
 
 The tower grows without bound in the function space, while the value algebra stays four-dimensional, and the two decompositions of the value — Hermitian and self-dual — act on each order of the tower in the way described: the first separates the two fields, the second separates the two helicities.
@@ -379,7 +379,7 @@ $$
 
 and is rotation-covariant but not boost-covariant. It coincides with the electric/magnetic multipole distinction only in the static limit: a static charge distribution gives a purely Hermitian field strength and a stationary current a purely anti-Hermitian one, while a radiating multipole of either type has both parts. The **self-dual decomposition** uses the Hodge dual $\star:(\vec E,\vec B)\mapsto(c\vec B,-\vec E/c)$, $\star^2 = -1$, and the Riemann–Silberstein vector $\vec N = \vec E+ic\vec B$ with $\star\vec N = -i\vec N$; its two halves are $\tilde{F} = i\sqrt{\epsilon}\,\vec N$ and $\tilde{F}^{*} = i\sqrt{\epsilon}\,\vec N^*$ with $\vec N^* = \vec E-ic\vec B$. It is Lorentz-covariant, and for radiation its two halves are the two helicities, so that a circularly polarised multipole of definite helicity lies entirely in one half.
 
-Under a boost, $\tilde{F}_2 = \tilde{U}^{\natural}\tilde{F}\tilde{U}$, the two chiralities transform independently, $\vec N_2 = \Lambda\vec N$ with $\Lambda\in SO(3,\mathbb{C})$, $\Lambda^{\mathsf{T}}\Lambda = I_3$, $\det\Lambda = 1$, and $\vec N_2^{*} = \Lambda^{*}\vec N^*$, while the Hermitian halves mix: the electric and magnetic multipole types rotate into one another, with the dipole illustration $\vec m = \tfrac{1}{2}\vec p\times\vec v$ and the quadrupole analogue, because a boost does not preserve parity. The covariant pairing combines $E_l$ and $M_l$ into the covariant multipole tensor of rank $l$; the long-wavelength pairing in the radiation vector is $E_{l+1}\leftrightarrow M_l$ at order $k^l$. The order $l$ is not a Lorentz invariant: it is a rest-frame label, since a boost transforms the argument of the field as well as its value. A radiation field is null, $\langle\tilde{F}\rangle_{\natural} = 0$.
+Under a boost, $\tilde{F}_2 = \tilde{U}^{\natural}\tilde{F}\tilde{U}$, the two chiralities transform independently, $\vec N_2 = \Lambda\vec N$ with $\Lambda\in SO(3,\mathbb{C})$, $\Lambda^{\mathsf{T}}\Lambda = I_3$, $\det\Lambda = 1$, and $\vec N_2^{*} = \Lambda^{*}\vec N^*$, while the Hermitian halves mix: the electric and magnetic multipole types rotate into one another, with the dipole illustration $\vec m = \tfrac{1}{2}\vec p\times\vec v$ and the quadrupole analogue, because a boost does not preserve parity. The covariant pairing combines $E_l$ and $M_l$ into the covariant multipole tensor of rank $l$; the long-wavelength pairing in the radiation vector is $E_{l+1}\leftrightarrow M_l$ at order $k_{t}^{\prime\,l}$. The order $l$ is not a Lorentz invariant: it is a rest-frame label, since a boost transforms the argument of the field as well as its value. A radiation field is null, $\langle\tilde{F}\rangle_{\natural} = 0$.
 
 The multipole series and the two decompositions act on different spaces. The decompositions split the value algebra — into its two real sectors and its two chiral halves — and they are covariant in their own categories; the order $l$ labels the angular decomposition in a fixed frame, and only the rotation subgroup preserves it. A boost mixes the electric and magnetic types, because it mixes the fields and does not preserve parity, and it also changes the angular decomposition, because it transforms the argument of the field. The multipole order is a rest-frame label, and the covariant packaging of the moments is the covariant multipole tensor.
 
@@ -407,8 +407,8 @@ The multipole series and the two decompositions act on different spaces. The dec
 | $\mathcal{Q}_{lm}$ | Electric multipole moment of the source |
 | $\vec Y_{lm} = \vec LY_{lm}/\sqrt{l(l+1)}$ | Vector spherical harmonic (magnetic family) |
 | $\vec u_r\times\vec Y_{lm}$ | Electric family of vector spherical harmonics |
-| $\vec F(\vec u) = \int\vec J\,\exp(-ik\vec u\cdot(r_{2x}\,\vec e_x+r_{2y}\,\vec e_y+r_{2z}\,\vec e_z))d^3r_2$ | Radiation vector |
-| $k = \omega/c$ | Wavenumber |
+| $\vec F(\vec u) = \int\vec J\,\exp(-ik_{t}^{\prime}\vec u\cdot(r_{2x}\,\vec e_x+r_{2y}\,\vec e_y+r_{2z}\,\vec e_z))d^3r_2$ | Radiation vector |
+| $k_{t}^{\prime} = \omega/c$ | Wavenumber of the radiated wave |
 | $\vec p$, $\vec m$ | Electric and magnetic dipole moments |
 | $\mathcal{Q}_{ij}$, $M_{ij}$ | Electric and magnetic quadrupole moments |
 | $\tilde{U}\in\mathbb{B}_{\Psi}$ | Boost biquaternion, $\tilde{F}_2 = \tilde{U}^{\natural}\tilde{F}\tilde{U}$ |

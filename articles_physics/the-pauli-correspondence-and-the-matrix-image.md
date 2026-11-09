@@ -46,7 +46,7 @@ $$
 \begin{pmatrix}Q_t-iQ_z&-iQ_x-Q_y\\-iQ_x+Q_y&Q_t+iQ_z\end{pmatrix}\;}.
 $$
 
-The scalar part multiplies the identity and the vector part multiplies the three Pauli matrices with the factor $-i$. In the Hermitian sector, where $Q_t=r_t$ is real and $Q_\eta=i r'_k$ with $r'_k$ real, the same formula reads
+The scalar part multiplies the identity and the vector part multiplies the three Pauli matrices with the factor $-i$. In the Hermitian sector, where $Q_t=r_t$ is real and $Q_\eta=i r'_\eta$ with $r'_\eta$ real, the same formula reads
 
 $$
 \mathsf M_2(\tilde R_\Psi)=r_t\,\mathrm I_2+r'_x\sigma_1+r'_y\sigma_2+r'_z\sigma_3 ,
@@ -133,7 +133,7 @@ The determinant of the matrix is the quaternionic norm, $\det\mathsf M_2(\tilde 
 | sector | element | determinant | signature |
 | --- | --- | --- | --- |
 | material | $i r'_t e_t+\sum_\eta r_\eta\vec e_\eta$ | $-c^2(r'_t)^2+r_x^2+r_y^2+r_z^2$ | $(3,1)$ |
-| informational | $r_t e_t+i r'_k\vec e_\eta$ | $r_t^2-(r'_x)^2-(r'_y)^2-(r'_z)^2$ | $(1,3)$ |
+| informational | $r_t e_t+i r'_\eta\vec e_\eta$ | $r_t^2-(r'_x)^2-(r'_y)^2-(r'_z)^2$ | $(1,3)$ |
 | state slice | $\tfrac12(e_t+i\vec r)$ | $\tfrac14(1-\lvert\vec r\rvert^2)$ | positivity |
 
 The same algebraic function is the interval on the material sector, the causal type and the positivity test on the informational sector, and the mixedness on the trace-one slice. The zero set is one object in the three readings: the light cone, the boundary of the state space, and the set of pure states.

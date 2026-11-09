@@ -368,7 +368,7 @@ The corpus's relation to this part of the programme is therefore the same as to 
 | $\tilde J_{\Phi,\mathrm{eg},nm}^{\,0} = (\omega-\nabla)\circ\,\tilde{Ξ}_{\mathrm{sp},nm}$ | Pulsar (scalar potential) |
 | $\tilde J_{\Phi,\mathrm{eg},nm}^{\,j} = (\omega-\nabla)\circ(\tilde{Ξ}_{\mathrm{sp},nm}\vec e_\mu)$ | Spinor (vector potential) |
 | $\vec u_x = (r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)/r$ | Radial unit vector |
-| $r_{,k} = r_\eta/r$ | Direction cosines; $\sum_\eta r_{,k}^2 = 1$ |
+| $r_{,\eta} = r_\eta/r$ | Direction cosines; $\sum_\eta r_{,\eta}^2 = 1$ |
 | $\tilde{\Sigma}_{\Psi} = \tfrac12\tilde J_{\Phi,\mathrm{eg}}\circ\tilde J_{\Phi,\mathrm{eg}}^{*}$ | Energy–momentum biquaternion |
 | $\tilde J_{\Phi,\mathrm{eg}}^{*} = \bar s - \bar{\vec V}$ | Vector-negating, coefficient-conjugating conjugation |
 | $W = \tfrac12(|s|^2 + \|\vec V\|^2)$ | Energy density (scalar part of $\tilde{\Sigma}_{\Psi}$) |

@@ -22,7 +22,7 @@ The article is read after *Algebra and Element Conventions* and before *Matrix R
 
 **The frame and the invariant are read together.** The plain weight is an invariant: $\mathrm{Sc}(e_t^2)=+1$ and $\mathrm{Sc}(\vec e_\eta^2)=-1$ hold in both frames, so $\varepsilon=(1,-1,-1,-1)$ belongs to the product and not to a frame. What a frame supplies is the coordinate, and the coordinate alone fixes the interval. There is one metric, $\delta_{\mu\nu}$, and it is the same in both frames. The weight and the metric are two objects, and no sentence needs both to be read.
 
-**A change of frame is a substitution with a law.** On the material sector it is $Q_t=ix_0$ and $Q_\eta=x_k$ for $\eta=1,2,3$, with the inverse $x_0=-iQ_t$ and $x_k=Q_\eta$. A display is read only in the frame that produced it, and the substitution is written wherever a display passes from one frame to the other.
+**A change of frame is a substitution with a law.** On the material sector it is $Q_t=ix_0$ and $Q_\eta=x_\eta$ for $\eta=1,2,3$, with the inverse $x_0=-iQ_t$ and $x_\eta=Q_\eta$. A display is read only in the frame that produced it, and the substitution is written wherever a display passes from one frame to the other.
 
 ## The $\mathbb{B}$ Frame
 
@@ -36,7 +36,7 @@ This is the general case. The two real sectors are conditions on these four coef
 $$
 \langle\tilde Q\rangle_\natural=\tilde Q\tilde Q^\natural=Q_t^2+Q_x^2+Q_y^2+Q_z^2 .
 $$
-Every coefficient is $+1$, and the value is complex in general. The tuple is a coefficient tuple, not a real signature; a signature appears only when a sector is imposed. On $\mathbb{B}_{\Phi}$, with $Q_t=i r'_t$, the value is $-{r'_{t}}^2+r_x^2+r_y^2+r_z^2$; on $\mathbb{B}_{\Psi}$, with $Q_t=r_t$ and $Q_\eta=i r'_{x_k}$, it is $r_t^2-r'_{x}^2-r'_{y}^2-r'_{z}^2$. The metric is $\delta_{\mu\nu}=(1,1,1,1)$, and on $\mathbb{B}_{\Phi}$ the interval is still the plain sum $\sum_\mu Q_\mu^2$, read on the complex coefficient $Q_t=i r'_t$.
+Every coefficient is $+1$, and the value is complex in general. The tuple is a coefficient tuple, not a real signature; a signature appears only when a sector is imposed. On $\mathbb{B}_{\Phi}$, with $Q_t=i r'_t$, the value is $-{r'_{t}}^2+r_x^2+r_y^2+r_z^2$; on $\mathbb{B}_{\Psi}$, with $Q_t=r_t$ and $Q_\eta=i r'_{x_\eta}$, it is $r_t^2-r'_{x}^2-r'_{y}^2-r'_{z}^2$. The metric is $\delta_{\mu\nu}=(1,1,1,1)$, and on $\mathbb{B}_{\Phi}$ the interval is still the plain sum $\sum_\mu Q_\mu^2$, read on the complex coefficient $Q_t=i r'_t$.
 
 **The general frame, and its form is Euclidean.** The $\mathbb{B}$ frame is the frame of the biquaternion universe itself, not of one sector of it; the $\mathbb{B}_{\Phi}$ frame is this one read on a sector. Its form is $\sum_\mu Q_\mu^2$, with all four coefficients $+1$. On real coefficients that is the ordinary Euclidean metric: positive definite, with no direction singled out by a sign. The coefficients are complex in general, so the form is the complexified Euclidean form; a real signature appears only when a sector is imposed. A Lorentzian signature is not a property of this frame.
 
@@ -54,7 +54,7 @@ with $r'_t,r_x,r_y,r_z$ real and all four in metres. This is the coordinate the 
 $$
 x_0=r'_{t},\qquad x_1=r_x,\qquad x_2=r_y,\qquad x_3=r_z ,
 $$
-with $r'_t,r_\eta$ real. On the material case $Q_t=ix_0$ and $Q_\eta=x_k$ for $\eta=1,2,3$: one substitution, a rotation of the time axis by $i$.
+with $r'_t,r_\eta$ real. On the material case $Q_t=ix_0$ and $Q_\eta=x_\eta$ for $\eta=1,2,3$: one substitution, a rotation of the time axis by $i$.
 
 **A particular case, kept for convenience.** The $\mathbb{B}_{\Phi}$ frame is the $\mathbb{B}$ frame restricted to $\mathbb{B}_{\Phi}$, not a second universe and not a second algebra. It is defined only after the coefficients have been put on that sector, and its one change is the time coordinate: $Q_t=i r'_t$ becomes the real $x_0=r'_{t}$, so a display writes $r'_t$ with no $i$ attached. The $i$ does not disappear; its square becomes the sign of the time term, $i^2=-1$, so the interval reads $-{r'_{t}}^2+r_x^2+r_y^2+r_z^2$ with real coefficients, and the metric is still $\delta_{\mu\nu}$. Nothing is chosen a second time, and no matrix is needed: $Q_t=i r'_t$ is the change of frame. The purpose of the frame is display: to write familiar equations in their familiar shape, with a real time and one minus on the time term. Nothing is added to the content, and the same equation is read in the notation of the textbooks.
 
@@ -110,7 +110,7 @@ and it is linear over the complex field in either frame. The two squares are $\g
 
 **The weight is read from the map, and the metric is not.** The map carries one weight, $4\varepsilon_\mu\delta_{\mu\nu}=\operatorname{tr}\bigl(\mathsf{K}(e_\mu)\mathsf{K}(e_\nu)\bigr)$ in the defining representation, and that weight is the same in both frames. The metric is not a second object of the frame: there is one, $\delta_{\mu\nu}=(1,1,1,1)$, it is the coefficient tuple of the interval $\sum_\mu Q_\mu^2$, and it is the same in both frames. The two are written with two symbols because they are two objects; an article that used one for the other would be wrong in sign and would look right.
 
-**The change of frame is the substitution, and it is written once.** On the material sector it is $Q_t=ix_0$ and $Q_\eta=x_k$. No matrix is written for it: a matrix here would be a second object carrying a diagonal, and the diagonal was never the content. The metric does not follow from a matrix and does not need to: it is $\delta_{\mu\nu}$ before the substitution and $\delta_{\mu\nu}$ after it. The matrices do not follow either: $\gamma_\mu$ is one array, not one array per coordinate, and the substitution leaves it alone. A display that changes frame writes $Q_t=ix_0$ once; it does not restate the matrices.
+**The change of frame is the substitution, and it is written once.** On the material sector it is $Q_t=ix_0$ and $Q_\eta=x_\eta$. No matrix is written for it: a matrix here would be a second object carrying a diagonal, and the diagonal was never the content. The metric does not follow from a matrix and does not need to: it is $\delta_{\mu\nu}$ before the substitution and $\delta_{\mu\nu}$ after it. The matrices do not follow either: $\gamma_\mu$ is one array, not one array per coordinate, and the substitution leaves it alone. A display that changes frame writes $Q_t=ix_0$ once; it does not restate the matrices.
 
 **The fifth is a product, not a direction.** The fifth is the product $i\gamma_0\gamma_1\gamma_2\gamma_3$ of the frame's four images, so it is fixed by them and is not a fifth image of the map. Being a product and not a direction, it carries no frame label: a label there would read as an argument. The glyph is $\gamma_5=i\gamma_0\gamma_1\gamma_2\gamma_3$ with $\gamma_5^2=I_4$, and it names one operator. It differs from the volume element of the frame, which is the same product without the phase $i$, and the two are written as two glyphs and not one.
 
@@ -148,7 +148,7 @@ The metric is one, and it is the tuple of the interval in the $Q$'s: $\delta_{\m
 | Symbol | Meaning |
 |---|---|
 | $Q_\mu$ | The $\mathbb{B}$-frame coordinate, $Q_\mu\in\mathbb{C}$; material case $Q_t=i r'_t$, $Q_\eta=r_\eta$; interval coefficients $(1,1,1,1)$ |
-| $x_\mu$ | The coordinate of the $\mathbb{B}_{\Phi}$ frame, on $\mathbb{B}_{\Phi}$, $x_0=r'_{t}$, $x_k=r_\eta$; $Q_t=ix_0$, so the interval reads $-{r'_{t}}^2+r_x^2+r_y^2+r_z^2$ |
+| $x_\mu$ | The coordinate of the $\mathbb{B}_{\Phi}$ frame, on $\mathbb{B}_{\Phi}$, $x_0=r'_{t}$, $x_\eta=r_\eta$; $Q_t=ix_0$, so the interval reads $-{r'_{t}}^2+r_x^2+r_y^2+r_z^2$ |
 | $\varepsilon=(1,-1,-1,-1)$ | The plain weight, $\mathrm{Sc}(e_\mu e_\nu)=\varepsilon_\mu\delta_{\mu\nu}$; the same in both frames |
 | $\langle\tilde Q\rangle_\natural=\sum_\mu Q_\mu^2$ | The quaternionic interval; coefficients $\delta_{\mu\nu}=(1,1,1,1)$ in the $Q$ coordinate (complex in general), and $-{r'_{t}}^2+r_x^2+r_y^2+r_z^2$ read on $\mathbb{B}_{\Phi}$ |
 | $\delta_{\mu\nu}$ | The unit metric, the one metric of the series: diagonal, $(1,1,1,1)$ on the four $Q_\mu$, the same on the general frame and on the two real sectors |

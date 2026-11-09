@@ -64,12 +64,12 @@ $$
 and it is this $\alpha$ — not $\omega\sqrt{\epsilon\mu}$ — that the function theory of the article runs on when conduction is present. In the lossless case $\sigma_*=0$ the two agree, $\lambda=\omega^2\mu\epsilon$,
 
 $$
-k=\omega\sqrt{\epsilon\mu}=\frac{\omega}{c},
+k_\Phi=\omega\sqrt{\epsilon\mu}=\frac{\omega}{c},
 \qquad
 c=\frac{1}{\sqrt{\epsilon\mu}} ,
 $$
 
-and $\alpha=k$ is the ordinary medium wavenumber of *Electromagnetism in Media — The Local Complex Structure at Work*. The lossy case is therefore not a new theory but the same theory with a complex wavenumber, and every statement below is written for the complex $\alpha$ with the lossless case recovered by $\alpha\to k$.
+and $\alpha=k_\Phi$ is the ordinary medium wavenumber of *Electromagnetism in Media — The Local Complex Structure at Work*. The lossy case is therefore not a new theory but the same theory with a complex wavenumber, and every statement below is written for the complex $\alpha$ with the lossless case recovered by $\alpha\to k_\Phi$.
 
 One property of the sourceless system is worth recording because it is what makes the transcription into the function theory possible at all: the fields of a solution with $\vec j=0$ and $\rho=0$ are transverse,
 
@@ -204,7 +204,7 @@ $$
 
 The correspondence is **one-to-one**, and it is this, not the mere rewriting of the curl equations, that the article records: a time-harmonic electromagnetic field in a homogeneous medium is the same object as a pair of mutually conjugate hyperholomorphic functions, and the map between the two descriptions is the explicit matrix $C$ of $(11)$. Every property of the pair — the Cauchy integral formula, the mean value property, the removable singularities — is then a property of the field, and every operation on the field has an interpretation in the function theory. The value of the quaternionic formulation is exactly this transfer, and it is why the source insists that the general operator is worth more than the physical one.
 
-The lossless normalised variables of the chiral article are the special case $\sigma_*=0$, and they are worth spelling out because they connect the present article to the rest of the series. With $\tilde E_{\Psi}=\vec E/\sqrt{\mu}$ and $\tilde H=\vec H/\sqrt{\epsilon}$ and $\sigma_*=0$ one has $\alpha=k$, the coherence factor $(9)$ is $b=i\sqrt{\mu/\epsilon}=iZ$, the impedance, and $(10)$ becomes, up to the common factor $\sqrt{\mu}$,
+The lossless normalised variables of the chiral article are the special case $\sigma_*=0$, and they are worth spelling out because they connect the present article to the rest of the series. With $\tilde E_{\Psi}=\vec E/\sqrt{\mu}$ and $\tilde H=\vec H/\sqrt{\epsilon}$ and $\sigma_*=0$ one has $\alpha=k_\Phi$, the coherence factor $(9)$ is $b=i\sqrt{\mu/\epsilon}=iZ$, the impedance, and $(10)$ becomes, up to the common factor $\sqrt{\mu}$,
 
 $$
 Ξ\propto\tilde E_{\Psi}+i\tilde H,
@@ -392,8 +392,8 @@ The kernel of the theory is the outgoing Helmholtz kernel $\mathrm{Sd}_\alpha$ o
 | $\sigma_*$ | Real ohmic conductivity of the medium |
 | $\sigma=\sigma_*-i\omega\epsilon$ | Complex conductivity carried by the first Maxwell equation |
 | $\lambda=i\omega\mu\sigma_*+\omega^2\mu\epsilon$ | Helmholtz parameter of the reduction |
-| $\alpha^2=\lambda$, $\operatorname{Im}\alpha\ge0$ | Medium wavenumber; $\alpha=k=\omega\sqrt{\epsilon\mu}$ when $\sigma_*=0$ |
-| $k=\omega\sqrt{\epsilon\mu}=\omega/c$ | Lossless medium wavenumber |
+| $\alpha^2=\lambda$, $\operatorname{Im}\alpha\ge0$ | Medium wavenumber; $\alpha=k_\Phi=\omega\sqrt{\epsilon\mu}$ when $\sigma_*=0$ |
+| $k_\Phi=\omega\sqrt{\epsilon\mu}=\omega/c$ | Lossless medium wavenumber |
 | $N$ | Quaternionic Maxwell operator $(6)$; $NN^{\dagger}=-(\Delta+\lambda)I_2$ |
 | $M$ | Physical time-harmonic Maxwell operator, defined on solenoidal pairs |
 | $b=i\omega\mu/\alpha$ | Coherence factor of the diagonalisation; $b=iZ$ when $\sigma_*=0$ |

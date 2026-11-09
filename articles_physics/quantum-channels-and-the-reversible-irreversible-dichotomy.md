@@ -181,7 +181,7 @@ The infinitesimal version of the dichotomy is the **Lindblad equation** (the Gor
 $$
 \boxed{\;\frac{d\tilde{Ϛ}_{\Psi}}{dr'_t}
 = -\frac{k_m\,i}{m\,c^{2}}\,[H, \tilde{Ϛ}_{\Psi}]
-+ \sum_\eta  \left(\tilde M_{\mathrm{kraus},k}\,\tilde{Ϛ}_{\Psi}\,\tilde M_{\mathrm{kraus},k}^{*}
++ \sum_k  \left(\tilde M_{\mathrm{kraus},k}\,\tilde{Ϛ}_{\Psi}\,\tilde M_{\mathrm{kraus},k}^{*}
 - \tfrac{1}{2}\left\{\tilde M_{\mathrm{kraus},k}^{*}\tilde M_{\mathrm{kraus},k}, \tilde{Ϛ}_{\Psi}\right\}\right)\;},
 $$
 

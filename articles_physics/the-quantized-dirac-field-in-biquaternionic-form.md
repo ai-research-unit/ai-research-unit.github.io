@@ -213,7 +213,7 @@ $$
 whose square is the operator mass shell
 
 $$
-\tilde P_{\Phi,\mathrm{fop}}\tilde P_{\Phi,\mathrm{fop}}^{\natural}=-\Big(H^2-\sum_\eta P_{\mathrm{fop},k}P_{\mathrm{fop},k}\Big)e_t,
+\tilde P_{\Phi,\mathrm{fop}}\tilde P_{\Phi,\mathrm{fop}}^{\natural}=-\Big(H^2-\sum_\eta P_{\mathrm{fop},\eta}P_{\mathrm{fop},\eta}\Big)e_t,
 $$
 
 the operator counterpart of the classical condition $\tilde P_{\Phi}\tilde P_{\Phi}^{\natural}= -m^{2}\,c^{2}$, where $\tilde P_{\Phi}$ is the $c$-number wave biquaternion of the two-point function below. The charge is different in kind: $Ϙ_{\mathrm{fop}}$ is Hermitian and scalar in the algebra factor, hence central there,

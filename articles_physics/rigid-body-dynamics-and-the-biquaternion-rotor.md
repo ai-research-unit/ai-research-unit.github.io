@@ -151,7 +151,7 @@ For a given angular-velocity history this is a linear equation for $\tilde u$, a
 The inertia tensor is a symmetric positive-definite operator on the real vector part. In the principal body frame it acts as
 
 $$
-I(\vec\omega_b)=\sum_{\eta=1}^{3}I_\eta\,\omega_k\,\vec e_\eta ,
+I(\vec\omega_b)=\sum_{\eta=1}^{3}I_\eta\,\omega_\eta\,\vec e_\eta ,
 $$
 
 and the kinetic energy and angular momentum are
@@ -270,7 +270,7 @@ $$
 \omega_3=c\,d\theta_{\mathrm{prc}}/dr'_t\cos\theta+c\,d\theta_{\mathrm{eul}}/dr'_t ,
 $$
 
-where the labels $(1,2,3)$ refer to the body axes and the assignment of the angles $(\theta_{\mathrm{prc}},\theta,\theta_{\mathrm{eul}})$ to precession, nutation, and spin is the stated convention. The verification is a direct differentiation of the rotor; the components above are what it yields. The kinetic energy in terms of the Euler angles is then $T=\frac12\sum_\eta I_\eta\omega_k^2$ with these $\omega_k$, which is the standard Euler-angle Lagrangian of the rigid body.
+where the labels $(1,2,3)$ refer to the body axes and the assignment of the angles $(\theta_{\mathrm{prc}},\theta,\theta_{\mathrm{eul}})$ to precession, nutation, and spin is the stated convention. The verification is a direct differentiation of the rotor; the components above are what it yields. The kinetic energy in terms of the Euler angles is then $T=\frac12\sum_\eta I_\eta\omega_\eta^2$ with these $\omega_\eta$, which is the standard Euler-angle Lagrangian of the rigid body.
 
 ## The Heavy Symmetric Top
 

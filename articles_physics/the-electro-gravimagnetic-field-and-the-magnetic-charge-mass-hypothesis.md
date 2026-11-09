@@ -365,7 +365,7 @@ For a Gaussian mass density of unit total mass, the Newtonian potential $\xi_{\m
 Summing the second-law equations over $M$ interacting fields cancels the force terms pairwise, because each pair contributes a force and its reaction. The total charge–current therefore satisfies
 
 $$
-D^-\Big(\sum_{k=1}^{M}\tilde J_{\Phi,\mathrm{eg},\eta}\Big) \equiv 0,
+D^-\Big(\sum_{k=1}^{M}\tilde J_{\Phi,\mathrm{eg},k}\Big) \equiv 0,
 $$
 
 so the **combined field is free**: all forces are internal, exactly as in the mechanics of interacting bodies. The author calls this the law of the single field.
@@ -453,9 +453,9 @@ $$
 and writes the second law in the shape the momentum equation of a continuous medium has,
 
 $$
-\frac{\partial \sigma^{H}_{ik}}{\partial x_k} + F^{H}_i = \partial/\partial \tau \Pi^{H}_i,
+\frac{\partial \sigma^{H}_{ik}}{\partial x_\eta} + F^{H}_i = \partial/\partial \tau \Pi^{H}_i,
 \qquad
-\frac{\partial \sigma^{E}_{ik}}{\partial x_k} + F^{E}_i = \partial/\partial \tau \Pi^{E}_i,
+\frac{\partial \sigma^{E}_{ik}}{\partial x_\eta} + F^{E}_i = \partial/\partial \tau \Pi^{E}_i,
 $$
 
 with the density of mass forces $F^H$ the four-term half of the power–force biquaternion, a further resistance term when the scalar $a$ is present, and the momentum densities $\Pi^H = \kappa\sqrt{\epsilon}\,\vec j_H$, $\Pi^E = \kappa\sqrt{\mu}\,\vec j_E$ as the second-law component form normalises them. The 2009 display prints a different coefficient on the right side, one of the discrepancies recorded in this article, and the corpus carries the second law's own normalization. Two structural features are worth recording, and they are the reason the object is called a *pseudotensor*.

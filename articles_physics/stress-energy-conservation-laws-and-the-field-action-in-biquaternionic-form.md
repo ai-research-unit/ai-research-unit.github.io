@@ -73,7 +73,7 @@ $$
 \left(\Box-(k_m)^{2}\right)\tilde{Ξ} = 0 ,
 $$
 
-the biquaternionic Klein–Gordon equation of the companion article. The overall sign of $\mathcal{L}_\xi$ is fixed by the requirement that the energy be positive, as the stress–energy section shows; in the coordinates $Q_t=i r'_t$ and $Q_\eta=x_k$, the kinetic term of $\mathcal{L}_\xi$ written out is
+the biquaternionic Klein–Gordon equation of the companion article. The overall sign of $\mathcal{L}_\xi$ is fixed by the requirement that the energy be positive, as the stress–energy section shows; in the coordinates $Q_t=i r'_t$ and $Q_\eta=x_\eta$, the kinetic term of $\mathcal{L}_\xi$ written out is
 
 $$
 \mathcal{L}_\xi = -\tfrac12\left(-\left(\partial\xi/\partial r'_t\right)^{2}+(\nabla\xi)^2\right)-\tfrac12(k_m)^{2}\xi^2
@@ -143,7 +143,7 @@ $$
 \boxed{\ T_{\mu\nu} = \partial/\partial R_\mu\,\xi\,\partial/\partial R_\nu\,\xi + \delta_{\mu\nu}\mathcal{L}_\xi\ } ,
 $$
 
-the sign being the one that makes $T_{tt}>0$; the canonical Noether tensor is the negative of this expression, and the two differ only by the overall sign just discussed. Its components are, with $Q_t=i r'_t$ and $Q_\eta=x_k$, the time row carrying the minus of $i^2$,
+the sign being the one that makes $T_{tt}>0$; the canonical Noether tensor is the negative of this expression, and the two differ only by the overall sign just discussed. Its components are, with $Q_t=i r'_t$ and $Q_\eta=x_\eta$, the time row carrying the minus of $i^2$,
 
 $$
 \boxed{\ T_{tt} = \frac{1}{2c^2}\left(\partial\xi/\partial r'_t\right)^{2} + \frac12(\nabla\xi)^2 + \frac12(k_m)^{2}\xi^2 > 0\ } ,

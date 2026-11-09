@@ -57,7 +57,7 @@ $$
 \delta(x) = k\,(L_1 - L_2) \approx \frac{2\pi d}{\lambda D}\, x,
 $$
 
-with $k = 2\pi/\lambda$ the wavenumber. With equal amplitudes $a_1 = a_2 = a$, the intensity is
+with $k_\Phi = 2\pi/\lambda$ the wavenumber. With equal amplitudes $a_1 = a_2 = a$, the intensity is
 
 $$
 I(x) = 4a^2\cos^2\!\Big(\frac{\delta(x)}{2}\Big) = 2a^2\bigl(1 + \cos\delta(x)\bigr).
@@ -316,7 +316,7 @@ The algebra supplies the phase's imaginary unit, the sector of its exponent, a s
 | $K_j = a_j \exp(i\theta_{\mathrm{pha},j}) e_t$ | Route amplitude through slit $j$; central |
 | $\theta_{\mathrm{pha},j} =\frac{k_m\,S_{j}}{m\,c}$, $\delta = \theta_{\mathrm{pha},1} - \theta_{\mathrm{pha},2}$ | Route phase; relative phase |
 | $I = a_1^2 + a_2^2 + 2a_1a_2\cos\delta$ | Two-path intensity |
-| $d, D, \lambda, k = 2\pi/\lambda$ | Slit separation, screen distance, wavelength, wavenumber |
+| $d, D, \lambda, k_\Phi = 2\pi/\lambda$ | Slit separation, screen distance, wavelength, wavenumber |
 | $\vec{u}$ | Unit pure real quaternion; path (pointer) axis |
 | $\tilde\Pi_{1,2}(\vec{u}) = \tfrac12(e_t \pm i\vec{u})$ | Which-path idempotents |
 | $\tilde{Ϛ}_{\Psi} = \tfrac12(e_t + i\vec r)$ | Which-path state |

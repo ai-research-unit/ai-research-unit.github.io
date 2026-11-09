@@ -34,17 +34,17 @@ $$
 \qquad
 \vec k_\Phi = k_1\vec e_x + k_2\vec e_y + k_3\vec e_z,
 \qquad
-k = |\vec k_\Phi| .
+k_\Phi = |\vec k_\Phi| .
 $$
 Its biquaternion norm is
 $$
-\langle\tilde P_{\Phi}\rangle_{\natural} = \tilde P_{\Phi}\tilde P_{\Phi}^{\natural} = \left(\frac{i\omega}{c}\right)^2 + \vec k_\Phi^2 = -\frac{\omega^2}{c^2} + k^2 .
+\langle\tilde P_{\Phi}\rangle_{\natural} = \tilde P_{\Phi}\tilde P_{\Phi}^{\natural} = \left(\frac{i\omega}{c}\right)^2 + \vec k_\Phi^2 = -\frac{\omega^2}{c^2} + k_\Phi^2 .
 $$
-For light in a medium of local speed $c = 1/\sqrt{\epsilon\mu}$ the dispersion relation is $k = \omega/c$, so
+For light in a medium of local speed $c = 1/\sqrt{\epsilon\mu}$ the dispersion relation is $k_\Phi = \omega/c$, so
 $$
 \langle\tilde P_{\Phi}\rangle_{\natural} = 0 :
 $$
-the four-wavevector of light is a **null** element of $\mathbb{B}_{\Phi}$, i.e. a zero divisor of the algebra, exactly as the light cone of Minkowski space is the zero-divisor cone (see *The Material Sector: Four-Vectors, Interval and Lorentz Action* and the mass-shell relation of *Relativistic Mechanics in Biquaternionic Form*). The contrast with matter is instructive: a massive de Broglie wave has $\langle\tilde P_{\Phi}\rangle_{\natural}  = -(k_m)^{2}$, a fixed negative biquaternion norm, whereas for light the biquaternion norm vanishes. The null condition is what makes the Doppler problem a one-parameter problem in each direction: the shift depends only on the direction of $\vec k_\Phi$, through the angle $\theta$, and on $\beta$ — not on the magnitude $k$. Here $\hbar/(mc)$ is the mass length.
+the four-wavevector of light is a **null** element of $\mathbb{B}_{\Phi}$, i.e. a zero divisor of the algebra, exactly as the light cone of Minkowski space is the zero-divisor cone (see *The Material Sector: Four-Vectors, Interval and Lorentz Action* and the mass-shell relation of *Relativistic Mechanics in Biquaternionic Form*). The contrast with matter is instructive: a massive de Broglie wave has $\langle\tilde P_{\Phi}\rangle_{\natural}  = -(k_m)^{2}$, a fixed negative biquaternion norm, whereas for light the biquaternion norm vanishes. The null condition is what makes the Doppler problem a one-parameter problem in each direction: the shift depends only on the direction of $\vec k_\Phi$, through the angle $\theta$, and on $\beta$ — not on the magnitude $k_\Phi$. Here $\hbar/(mc)$ is the mass length.
 
 **Solution (b).** Fix the plane-wave convention $\propto \exp(iΞ)$ with
 $$
@@ -314,7 +314,7 @@ and find the angle that maximises it. (For $\beta = 0.99$ and $\Theta = 0.1$ rad
 
 ## Summary
 
-1. **Four-wavevector.** $\tilde P_{\Phi} =\frac{m\,c\,(i\omega/c\,e_t + \vec k_\Phi)}{k_m}$ is an element of $\mathbb{B}_{\Phi}$ with $\langle\tilde P_{\Phi}\rangle_{\natural} = -\omega^2/c^2 + k^2$; for light $k = \omega/c$ and $\langle\tilde P_{\Phi}\rangle_{\natural} = 0$, so light is a null element (zero divisor) of the algebra. The phase $Ξ = \mathrm{Sc}(\tilde P_{\Phi}\tilde{R}_\Phi^{\natural}) = \vec k_\Phi\cdot(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)-\omega r'_t/c$ is invariant under rotor conjugation.
+1. **Four-wavevector.** $\tilde P_{\Phi} =\frac{m\,c\,(i\omega/c\,e_t + \vec k_\Phi)}{k_m}$ is an element of $\mathbb{B}_{\Phi}$ with $\langle\tilde P_{\Phi}\rangle_{\natural} = -\omega^2/c^2 + k_\Phi^2$; for light $k_\Phi = \omega/c$ and $\langle\tilde P_{\Phi}\rangle_{\natural} = 0$, so light is a null element (zero divisor) of the algebra. The phase $Ξ = \mathrm{Sc}(\tilde P_{\Phi}\tilde{R}_\Phi^{\natural}) = \vec k_\Phi\cdot(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)-\omega r'_t/c$ is invariant under rotor conjugation.
 
 2. **Frequency invariant.** An observer of four-velocity $\tilde{V}_{\Phi}$ measures $\omega_{\mathrm{obs}} = -\mathrm{Sc}(\tilde P_{\Phi}\tilde{V}_{\Phi}^{\natural})$; in the source frame this is $\gamma\omega_0(1-\beta\cos\theta)$.
 

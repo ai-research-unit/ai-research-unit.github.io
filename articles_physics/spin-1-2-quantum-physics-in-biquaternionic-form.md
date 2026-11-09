@@ -120,7 +120,7 @@ $$
 
 This is a **Hermitian $2 \times 2$ matrix**. So $\mathbb{B}_{\Psi}$ is isomorphic to the space of Hermitian operators on $\mathbb{C}^2$.
 
-**Anti-Hermitian subspace $\mathbb{B}_{\Phi}$.** A general element is $\tilde{Q} = i x_0 e_t + x_1 \vec e_x + x_2 \vec e_y + x_3 \vec e_z$ with $x_k \in \mathbb{R}$. Under the isomorphism:
+**Anti-Hermitian subspace $\mathbb{B}_{\Phi}$.** A general element is $\tilde{Q} = i x_0 e_t + x_1 \vec e_x + x_2 \vec e_y + x_3 \vec e_z$ with $x_\eta \in \mathbb{R}$. Under the isomorphism:
 
 $$
 \tilde{Q} \mapsto i x_0 I_2 - i x_1 \sigma_1 - i x_2 \sigma_2 - i x_3 \sigma_3 = i\left(x_0 I_2 - x_1\sigma_1 - x_2\sigma_2 - x_3\sigma_3\right).

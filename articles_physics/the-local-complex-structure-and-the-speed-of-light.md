@@ -149,7 +149,7 @@ $$
 \qquad
 c_{em}=\frac{1}{\sqrt{\epsilon\mu}},
 $$
-and plane waves read in seconds satisfy $k^2=\omega^2\epsilon\mu$, so the characteristic speed of the medium's operator, read in seconds, is $c_{em}$. The structure's operator and the medium's are one operator in the length coordinate; the single conversion that makes the second read as $c_{em}$ in seconds is $dr'_t=c_{em}\,dt'$, that is
+and plane waves read in seconds satisfy $k_\Phi^2=\omega^2\epsilon\mu$, with $k_\Phi$ the momentum wave number of the medium, so the characteristic speed of the medium's operator, read in seconds, is $c_{em}$. The structure's operator and the medium's are one operator in the length coordinate; the single conversion that makes the second read as $c_{em}$ in seconds is $dr'_t=c_{em}\,dt'$, that is
 $$
 \boxed{\;c=c_{em}=\frac{1}{\sqrt{\epsilon\mu}}\;}
 $$

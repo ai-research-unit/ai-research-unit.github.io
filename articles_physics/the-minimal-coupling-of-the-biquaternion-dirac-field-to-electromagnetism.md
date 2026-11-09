@@ -141,7 +141,7 @@ $$
 \tilde\nabla_{\mathrm{gco},\mu} = \partial/\partial R_\mu +\frac{k_m\,i\,ϙ}{m\,c}A_\mu,
 $$
 
-with $\partial/\partial R_t = -i\,\partial/\partial r'_t$ and $\partial/\partial R_\eta = \partial/\partial x_k$. This is the identical component form derived in the gauge principle article, now read as an operator on the Dirac field. With the action in units of $\hbar$ this gives $\tilde\nabla_{\mathrm{gco},\mu} = \partial/\partial R_\mu + iϙA_\mu$, the convention used for the minimal substitution in the companion article on the solutions and the non-relativistic limit.
+with $\partial/\partial R_t = -i\,\partial/\partial r'_t$ and $\partial/\partial R_\eta = \partial/\partial x_\eta$. This is the identical component form derived in the gauge principle article, now read as an operator on the Dirac field. With the action in units of $\hbar$ this gives $\tilde\nabla_{\mathrm{gco},\mu} = \partial/\partial R_\mu + iϙA_\mu$, the convention used for the minimal substitution in the companion article on the solutions and the non-relativistic limit.
 
 **The connection is a material-sector object.** The gauge principle article shows that a **real** gauge function $\Gamma$ keeps $\tilde{A}_{\Phi,2} = \tilde{A}_{\Phi} - \tilde{\nabla}\Gamma$ in $\mathbb{B}_{\Phi}$. The coupling is therefore the coupling of the Dirac field to a material-sector connection, and the ingredient $\frac{k_m\,i\,ϙ}{m\,c}\tilde{A}_{\Phi}$ in $\tilde\nabla_{\mathrm{gco}}$ is Hermitian:
 

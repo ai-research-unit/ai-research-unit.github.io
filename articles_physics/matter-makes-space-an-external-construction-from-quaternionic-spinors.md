@@ -185,8 +185,8 @@ and declares it zero "by orthogonality". Orthogonality does not deliver that: a 
 
 The kinetic term of that action is one Dirac operator, the corpus's Dirac equation is another, and the two are not the same operator written twice, so they are displayed separately. The source's operator, written as the action it is, is
 $$
-\tilde{Ξ}_{\mathrm{sp}}\longmapsto iC^0\frac{\partial\tilde{Ξ}_{\mathrm{sp}}}{\partial r_t}-i\sum_\eta C_\eta\frac{\partial\tilde{Ξ}_{\mathrm{sp}}}{\partial x_k}
-=-\frac{\partial\tilde{Ξ}_{\mathrm{sp}}}{\partial r_t}\vec e_x+\sum_\eta\vec e_\eta\frac{\partial\tilde{Ξ}_{\mathrm{sp}}}{\partial x_k}\vec e_y ,
+\tilde{Ξ}_{\mathrm{sp}}\longmapsto iC^0\frac{\partial\tilde{Ξ}_{\mathrm{sp}}}{\partial r_t}-i\sum_\eta C_\eta\frac{\partial\tilde{Ξ}_{\mathrm{sp}}}{\partial x_\eta}
+=-\frac{\partial\tilde{Ξ}_{\mathrm{sp}}}{\partial r_t}\vec e_x+\sum_\eta\vec e_\eta\frac{\partial\tilde{Ξ}_{\mathrm{sp}}}{\partial x_\eta}\vec e_y ,
 $$
 where $C^a=g^{ab}C_b$, so that $C^k=-C_\eta$, and the unit $i$ of the operator cancels the unit of the action once in each term. It is **two-sided**: the time derivative acts by right multiplication alone, because the left multiplier of $C_t$ is the identity of the algebra, the three spatial derivatives act by a left and a right multiplication, and the mass acts by left multiplication. Its square is minus the flat d'Alembertian of $g$, because the four actions anticommute on distinct indices and square to $\pm1$,
 $$
@@ -194,7 +194,7 @@ $$
 =-\varepsilon_\mu\frac{\partial^2}{\partial x_\mu^2}
 =-\partial^2/\partial r_t^2+\Delta ,
 \qquad
-\Delta=\sum_\eta\partial^2/\partial x_k^2 ,
+\Delta=\sum_\eta\partial^2/\partial x_\eta^2 ,
 $$
 and on the solutions of the equation it is $m^2$, which is the Klein–Gordon shell the signature of $g$ requires. The square is scalar, and it is scalar for the source's operator and not for the gradient: on a generic wavevector the source's square departs from a multiple of the identity by $9\times10^{-16}$, while $\tilde\nabla^2$ departs from one by $0.9$. That $\tilde\nabla^2$ is not $\Box$ is why the corpus carries no one-field first-order massive equation and why its mass sits in the off-diagonal pair of the next display. The source's equation is
 $$

@@ -27,12 +27,12 @@ with $h = -h_{00}+h_{11}+h_{22}+h_{33}$, so that the operation is an involution 
 $$
 \begin{aligned}
 G_{00} = \tfrac{1}{2}\Bigl(&\partial/\partial x_0\,\bar{D}_0+\partial/\partial x_0\,\bar{D}_0-\Box\bar{h}_{00}+\bar{S}\Bigr),\\[2pt]
-G_{0k} = \tfrac{1}{2}\Bigl(&\partial/\partial x_0\,\bar{D}_k+\partial/\partial x_k\,\bar{D}_0-\Box\bar{h}_{0k}\Bigr),\\[2pt]
+G_{0k} = \tfrac{1}{2}\Bigl(&\partial/\partial x_0\,\bar{D}_k+\partial/\partial x_\eta\,\bar{D}_0-\Box\bar{h}_{0k}\Bigr),\\[2pt]
 G_{kl} = \tfrac{1}{2}\Bigl(&\partial/\partial x_\eta\,\bar{D}_l+\partial/\partial x_l\,\bar{D}_k-\Box\bar{h}_{kl}-\delta_{\eta l}\bar{S}\Bigr),
 \end{aligned}
 $$
 
-with $\bar{D}_\nu = -\partial/\partial x_0\bar{h}_{0\nu}+\sum_{\eta=1}^{3}\partial/\partial x_k\bar{h}_{k\nu}$ and $\bar{S} = \partial^2/\partial x_0^2\bar{h}_{00}-\sum_{\eta=1}^{3}(\partial^2/\partial x_0\partial x_k\bar{h}_{k0}+\partial^2/\partial x_k\partial x_0\bar{h}_{0k})+\sum_{k,l=1}^{3}\partial^2/\partial x_k\partial x_l\bar{h}_{lk}$; the minus on the time row of each contraction is the one minus of the interval.
+with $\bar{D}_\nu = -\partial/\partial x_0\bar{h}_{0\nu}+\sum_{\eta=1}^{3}\partial/\partial x_\eta\bar{h}_{k\nu}$ and $\bar{S} = \partial^2/\partial x_0^2\bar{h}_{00}-\sum_{\eta=1}^{3}(\partial^2/\partial x_0\partial x_\eta\bar{h}_{k0}+\partial^2/\partial x_\eta\partial x_0\bar{h}_{0k})+\sum_{k,l=1}^{3}\partial^2/\partial x_\eta\partial x_l\bar{h}_{lk}$; the minus on the time row of each contraction is the one minus of the interval.
 
 The **harmonic gauge** condition is
 
@@ -79,7 +79,7 @@ and the trace-reversed perturbation changes by
 $$
 \begin{aligned}
 \bar{h}_{00} &\;\longmapsto\; \bar{h}_{00} - 2\partial/\partial x_0\zeta_0 - D,\\[2pt]
-\bar{h}_{0k} &\;\longmapsto\; \bar{h}_{0k} - \partial/\partial x_0\zeta_k - \partial/\partial x_k\zeta_0,\\[2pt]
+\bar{h}_{0k} &\;\longmapsto\; \bar{h}_{0k} - \partial/\partial x_0\zeta_k - \partial/\partial x_\eta\zeta_0,\\[2pt]
 \bar{h}_{kl} &\;\longmapsto\; \bar{h}_{kl} - \partial/\partial x_\eta\zeta_l - \partial/\partial x_l\zeta_k + \delta_{\eta l}D,
 \end{aligned}
 $$
@@ -321,7 +321,7 @@ The framework's reach was drawn. It supplies the wave operator and its null cone
 | $\varepsilon_\mu$ | Material basis of $\mathbb{B}_{\Phi}$: $\varepsilon_0=ie_t$ and $\varepsilon_k=\vec e_\eta$; the natural form on it is $+1$ on the three space rows and $-1$ on the time row, the minus being the square of the $i$ |
 | $\delta_{\mu\nu}=(1,1,1,1)$ | The unit metric, the coefficient tuple of $\sum_\mu Q_\mu^2$; the material interval is that form read on $Q_t=i r'_t$, and its one minus is the square of the $i$ |
 | $\langle\tilde{Q}_1,\tilde{Q}_2\rangle_{\natural} = \mathrm{Sc}(\tilde{Q}_1^{\natural}\tilde{Q}_2)$ | General quaternionic bilinear form on $\mathbb{B}_{\Phi}$, the interval |
-| $Q_\mu=q_\mu+iq'_\mu$; on $\mathbb{B}_{\Phi}$, $Q_t=i r'_t$ and $Q_\eta=x_k$; $x_\mu=(r'_{t}, r_x, r_y, r_z)$ | The coordinate, its material reading, and the real coordinates in which the contractions are written out |
+| $Q_\mu=q_\mu+iq'_\mu$; on $\mathbb{B}_{\Phi}$, $Q_t=i r'_t$ and $Q_\eta=x_\eta$; $x_\mu=(r'_{t}, r_x, r_y, r_z)$ | The coordinate, its material reading, and the real coordinates in which the contractions are written out |
 | $\tilde{\nabla}, \tilde{\nabla}^{\natural}, \Box = \tilde{\nabla}\tilde{\nabla}^{\natural} = \sum_\mu\partial^2/\partial R_\mu^2$ | Biquaternionic gradient, conjugate, d'Alembertian |
 | $h_{\mu\nu}$, $h = -h_{00}+h_{11}+h_{22}+h_{33}$ | Metric perturbation and its trace |
 | $\bar{h}_{00}=h_{00}+\tfrac12h$, $\bar{h}_{0k}=h_{0k}$, $\bar{h}_{kl}=h_{kl}-\tfrac12h\,\delta_{\eta l}$, $\bar{h} = -h$ | Trace-reversed perturbation |

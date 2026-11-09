@@ -136,7 +136,7 @@ $$
 D\tilde{Ξ}_{\mathrm{sp}} = \sum_{\mu\in\{t,x,y,z\}}  e_\mu\,D_\mu\tilde{Ξ}_{\mathrm{sp}}, \qquad D_\mu = \partial/\partial R_\mu +\frac{k_m\,i\,ϙ}{m\,c}A_\mu,
 $$
 
-where $\partial/\partial R_t = \partial/\partial(i r'_t)$ and $\partial/\partial R_\eta = \partial/\partial x_k$, and where $A_0:=A_t$ in the component displays below.
+where $\partial/\partial R_t = \partial/\partial(i r'_t)$ and $\partial/\partial R_\eta = \partial/\partial x_\eta$, and where $A_0:=A_t$ in the component displays below.
 
 The following properties are immediate from the definitions and are worth recording, because they are the properties that make $D$ a covariant derivative rather than an arbitrary operator.
 

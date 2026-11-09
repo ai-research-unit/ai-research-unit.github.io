@@ -90,7 +90,7 @@ so that $\vec\nabla_-\vec\nabla_+$ and $\vec\nabla_+\vec\nabla_-$ are the two or
 
 Minimal coupling replaces $\vec p$ by $\vec p - q\vec A$; the added term is a vector potential and enters the Hamiltonian through $\sum_\eta\alpha_kA_\eta$. The oscillator substitution is different in three ways, and each matters.
 
-**It multiplies the position by $\beta$.** The added term is $-im\omega\beta\vec r$, not $-im\omega\vec r$. Because $\beta$ anticommutes with every $\alpha_k$, the product $\beta\alpha_k$, which is the two-sided action $Q\mapsto i\vec e_\eta Q\vec e_y$ contracted with the position, is frame-**odd**: it lies in the same grading class as the kinetic term built on $\vec p$, and in the opposite class from the mass $\beta mc^2$. In the algebra this is the statement that the substitution shifts the odd part of the operator while leaving the even part alone, which is why the product of the two first-order operators is again second order and central except for the spin–orbit term.
+**It multiplies the position by $\beta$.** The added term is $-im\omega\beta\vec r$, not $-im\omega\vec r$. Because $\beta$ anticommutes with every $\alpha_\eta$, the product $\beta\alpha_k$, which is the two-sided action $Q\mapsto i\vec e_\eta Q\vec e_y$ contracted with the position, is frame-**odd**: it lies in the same grading class as the kinetic term built on $\vec p$, and in the opposite class from the mass $\beta mc^2$. In the algebra this is the statement that the substitution shifts the odd part of the operator while leaving the even part alone, which is why the product of the two first-order operators is again second order and central except for the spin–orbit term.
 
 **The coefficient is imaginary, and the term is Hermitian.** A gauge interaction adds the real, Hermitian $q\vec A$ to $\vec p$; here the coefficient is $i$. In the actions the imaginary coefficient is spent on the action at once, because $\alpha_k\beta$ is the two-sided action $Q\mapsto-i\vec e_\eta Q\vec e_y$ and the two factors of $i$ multiply to $-1$:
 
@@ -112,7 +112,7 @@ $$
 
 The shift carries $\beta$, and $\beta$ is a right action, so the multiplied position acts first and the element $i\vec e_x$ acts last: the shift is $\dfrac{\omega\,k_m}{c}$ times the action $\tilde{Ξ}_{\mathrm{sp}}\mapsto(\vec r\tilde{Ξ}_{\mathrm{sp}})\,i\vec e_x$. On a state that $\beta$ fixes, that is the shift $\vec\nabla\to\vec\nabla_+$; on a state that $\beta$ negates, it is the shift $\vec\nabla\to\vec\nabla_-$. The two signs of one shift are the whole content of the substitution, and they are why the pair below has two lines.
 
-**The pair.** The source's equation acts on one field and carries the mass in the diagonal slot. In the algebra that equation is not one equation but two, because the operator that multiplies the mass, $\beta$, is diagonal in the frame grading while every $\alpha_k$ is off-diagonal in it. Projecting the source's equation on the two frame parts, and using that $\alpha_k$ carries each part into the other, gives the coupled pair
+**The pair.** The source's equation acts on one field and carries the mass in the diagonal slot. In the algebra that equation is not one equation but two, because the operator that multiplies the mass, $\beta$, is diagonal in the frame grading while every $\alpha_\eta$ is off-diagonal in it. Projecting the source's equation on the two frame parts, and using that $\alpha_\eta$ carries each part into the other, gives the coupled pair
 
 $$
 (E-mc^2)\tilde{Ξ}_{\mathrm{sp},+} =\frac{m\,c^{2}\,i}{k_m}\bigl(\vec\nabla_+\tilde{Ξ}_{\mathrm{sp},-}\bigr)\omega ,
@@ -122,7 +122,7 @@ $$
 \omega=-\vec e_z ,
 $$
 
-where $\omega$ is the pseudoscalar of the algebra, $\omega^2=-e_t$, an element and not the central unit $i$; the oscillator frequency that multiplies $m$ is a real scalar and shares the letter, and it stands only where $m$ or $\frac{m\,c}{k_m}$ stands beside it. The right factor is the one the source's velocity action carries: the two-sided action $\alpha_k$ is the gradient's $k$-th term with $\vec e_z$ on the right, and $\vec e_z=-\omega$. The sign of the shift is the sign of $-\beta$ on the state the line acts on: the line for $\tilde{Ξ}_{\mathrm{sp},+}$ acts on $\tilde{Ξ}_{\mathrm{sp},-}$, where $\beta=-1$, so it carries $\vec\nabla_+$, and the line for $\tilde{Ξ}_{\mathrm{sp},-}$ acts on $\tilde{Ξ}_{\mathrm{sp},+}$, where $\beta=+1$, so it carries $\vec\nabla_-$.
+where $\omega$ is the pseudoscalar of the algebra, $\omega^2=-e_t$, an element and not the central unit $i$; the oscillator frequency that multiplies $m$ is a real scalar and shares the letter, and it stands only where $m$ or $\frac{m\,c}{k_m}$ stands beside it. The right factor is the one the source's velocity action carries: the two-sided action $\alpha_\eta$ is the gradient's $\eta$-th term with $\vec e_z$ on the right, and $\vec e_z=-\omega$. The sign of the shift is the sign of $-\beta$ on the state the line acts on: the line for $\tilde{Ξ}_{\mathrm{sp},+}$ acts on $\tilde{Ξ}_{\mathrm{sp},-}$, where $\beta=-1$, so it carries $\vec\nabla_+$, and the line for $\tilde{Ξ}_{\mathrm{sp},-}$ acts on $\tilde{Ξ}_{\mathrm{sp},+}$, where $\beta=+1$, so it carries $\vec\nabla_-$.
 
 Each right-hand side is the shifted gradient followed by one fixed right factor, the element $\omega$; the position enters the shift, and nothing else in it depends on the position. That is the shape the biquaternion reading below uses.
 
@@ -140,7 +140,7 @@ $$
 \beta\tilde{Ξ}_{\mathrm{sp},+}=\tilde{Ξ}_{\mathrm{sp},+},\quad \beta\tilde{Ξ}_{\mathrm{sp},-}=-\tilde{Ξ}_{\mathrm{sp},-} .
 $$
 
-The split is read on the element and not chosen in a basis: $\tilde{Ξ}_{\mathrm{sp},+}$ is the part with $\beta=+1$ and $\tilde{Ξ}_{\mathrm{sp},-}$ the part with $\beta=-1$. Since $\beta$ anticommutes with every $\alpha_k$, each velocity action carries $\tilde{Ξ}_{\mathrm{sp},+}$ into the part with $\beta=-1$ and $\tilde{Ξ}_{\mathrm{sp},-}$ into the part with $\beta=+1$; that is why the pair is coupled, and why no first-order equation survives for one part alone when $m\ne0$. The mass is diagonal in the same split, with the value $+mc^2$ on $\tilde{Ξ}_{\mathrm{sp},+}$ and $-mc^2$ on $\tilde{Ξ}_{\mathrm{sp},-}$.
+The split is read on the element and not chosen in a basis: $\tilde{Ξ}_{\mathrm{sp},+}$ is the part with $\beta=+1$ and $\tilde{Ξ}_{\mathrm{sp},-}$ the part with $\beta=-1$. Since $\beta$ anticommutes with every $\alpha_\eta$, each velocity action carries $\tilde{Ξ}_{\mathrm{sp},+}$ into the part with $\beta=-1$ and $\tilde{Ξ}_{\mathrm{sp},-}$ into the part with $\beta=+1$; that is why the pair is coupled, and why no first-order equation survives for one part alone when $m\ne0$. The mass is diagonal in the same split, with the value $+mc^2$ on $\tilde{Ξ}_{\mathrm{sp},+}$ and $-mc^2$ on $\tilde{Ξ}_{\mathrm{sp},-}$.
 
 The pair written above is the shape in which the oscillator is normally solved: the two frame parts are coupled by the two shifted gradients and the two conjugate signs of the substitution, and the coupling has the shape of a minimal coupling, with $\pm im\omega\vec r$ standing where the vector potential stands. Eliminating $\tilde{Ξ}_{\mathrm{sp},-}$,
 
@@ -181,7 +181,7 @@ $$
 
 because $[Q_\eta,p_\eta]=\frac{m\,c\,i}{k_m}$ in each of the three spatial directions, the sum of the three gives $\frac{3\,m\,c\,i}{k_m}$, and $im\omega\,(\frac{3\,m\,c\,i}{k_m})=-\frac{3\,m^{2}\,c\,\omega}{k_m}$ through one more use of $i^2=-1$. In the algebra the same three terms are the diagonal of $\vec\nabla_-\vec\nabla_+$: the two shifts multiply to $-\frac{\omega^2\,k_m^{2}}{c^2}\vec r^{\,2}$, the two derivatives to $-\Delta_Q=\frac{k_m^{2}\,\vec p^{2}}{m^{2}\,c^{2}}$, and the cross term of $\partial/\partial R_\eta$ with $Q_\eta$ in each direction gives the commutator, which is where the zero point comes from.
 
-**The cross part.** A term with $j\ne k$ carries the product of two different spatial units, and that product is a unit again, $\vec e_j\vec e_\eta=\epsilon_{j\eta l}\vec e_l$ with $\epsilon_{xyz}=+1$. The pair of ordered terms with the indices exchanged carries the same unit with the opposite sign, so only the antisymmetric part of the coefficient survives, and it is
+**The cross part.** A term with $j\ne\eta$ carries the product of two different spatial units, and that product is a unit again, $\vec e_j\vec e_\eta=\epsilon_{j\eta l}\vec e_l$ with $\epsilon_{xyz}=+1$. The pair of ordered terms with the indices exchanged carries the same unit with the opposite sign, so only the antisymmetric part of the coefficient survives, and it is
 
 $$
 \bigl(p_j+im\omega Q_j\bigr)\bigl(p_\eta-im\omega Q_\eta\bigr)-\bigl(p_\eta+im\omega Q_\eta\bigr)\bigl(p_j-im\omega Q_j\bigr)
@@ -191,17 +191,17 @@ $$
 with $L_{\mathrm{orb},l}=\sum_{a,b}\epsilon_{lab}Q_ap_b$ the orbital angular momentum. Summing over the ordered pairs, the unit $\vec e_l$ and the cyclic factor give
 
 $$
-Q\longmapsto -2m\omega\sum_\eta L_{\mathrm{orb},k}\,i\vec e_\eta Q .
+Q\longmapsto -2m\omega\sum_\eta L_{\mathrm{orb},\eta}\,i\vec e_\eta Q .
 $$
 
 Adding the two parts, the operator identity is
 
 $$
 \boxed{\;\mathcal{Q}_+\mathcal{Q}_-
-= \vec p^{\,2} + m^2\omega^2\vec r^{\,2} -\frac{3\,m^{2}\,c\,\omega}{k_m} - 2m\omega\sum_\eta  L_{\mathrm{orb},k}\,i\vec e_\eta\;}
+= \vec p^{\,2} + m^2\omega^2\vec r^{\,2} -\frac{3\,m^{2}\,c\,\omega}{k_m} - 2m\omega\sum_\eta  L_{\mathrm{orb},\eta}\,i\vec e_\eta\;}
 $$
 
-where the last term is the left multiplication by $i\vec e_\eta$ with the scalar $L_{\mathrm{orb},k}$ in front of it, and the second-order equation of the last section reads $(E^2-m^2c^4)\tilde{Ξ}_{\mathrm{sp},+}=c^2\mathcal{Q}_+\mathcal{Q}_-\tilde{Ξ}_{\mathrm{sp},+}$.
+where the last term is the left multiplication by $i\vec e_\eta$ with the scalar $L_{\mathrm{orb},\eta}$ in front of it, and the second-order equation of the last section reads $(E^2-m^2c^4)\tilde{Ξ}_{\mathrm{sp},+}=c^2\mathcal{Q}_+\mathcal{Q}_-\tilde{Ξ}_{\mathrm{sp},+}$.
 
 **Why the product is not the d'Alembertian.** The two factors are both pure vectors, so each is its own negative under the quaternion conjugate, and neither is the conjugate of the other. The product $\vec\nabla_-\vec\nabla_+$ is therefore not the norm of a single element, and its cross terms do not cancel as they do in $\tilde\nabla\tilde\nabla^{\natural}=\Box$. They reduce instead to two remainders: the commutator $[Q_\eta,p_\eta]$, which is central and produces $-\frac{3\,m^{2}\,c\,\omega}{k_m}$, and the antisymmetric part of the units' product, which produces $-2m\omega S$. That is the algebraic statement of the section's title: the product of the two first-order operators is central up to one vector term, and the vector term is the spin–orbit coupling. Nothing here rests on an anticommutation of actions; the anticommutation that matters is that of the three spatial units, which is part of the multiplication table.
 
@@ -217,14 +217,14 @@ $$
 
 with the standard spectrum $\frac{m\,c\,\omega\,(N+\tfrac32)}{k_m}$ in terms of the total oscillator number $N = 2n_r + l$. The constant $-\frac{3\,m^{2}\,c\,\omega}{k_m}$ then removes exactly the zero-point energy of the oscillator, leaving $\frac{2\,m^{2}\,c\,\omega}{k_m} N$. The last term is a **spin–orbit coupling** whose strength is tied to the oscillator frequency; it is not a small correction but a term of the same order as the level spacing, and it governs the whole spectral structure.
 
-**Two values, and two only.** Write $S=\sum_\eta L_{\mathrm{orb},k}\,i\vec e_\eta$ for the last term without its coefficient. Since $(i\vec e_\eta)^2=e_t$ and $i\vec e_j$ anticommutes with $i\vec e_\eta$ for $j\ne k$, and since $(i\vec e_j)(i\vec e_\eta)=i\epsilon_{j\eta l}\,i\vec e_l$, the square of $S$ is
+**Two values, and two only.** Write $S=\sum_\eta L_{\mathrm{orb},\eta}\,i\vec e_\eta$ for the last term without its coefficient. Since $(i\vec e_\eta)^2=e_t$ and $i\vec e_j$ anticommutes with $i\vec e_\eta$ for $j\ne\eta$, and since $(i\vec e_j)(i\vec e_\eta)=i\epsilon_{j\eta l}\,i\vec e_l$, the square of $S$ is
 
 $$
-S^2=\sum_\eta\bigl(L_{\mathrm{orb},k}\bigr)^2+\sum_{j<k}\bigl[L_{\mathrm{orb},j},L_{\mathrm{orb},k}\bigr]\,(i\vec e_j)(i\vec e_\eta)
+S^2=\sum_\eta\bigl(L_{\mathrm{orb},\eta}\bigr)^2+\sum_{j<\eta}\bigl[L_{\mathrm{orb},j},L_{\mathrm{orb},\eta}\bigr]\,(i\vec e_j)(i\vec e_\eta)
 = \vec L^{\,2}-\frac{m\,c\,S}{k_m},
 $$
 
-where $[L_{\mathrm{orb},j},L_{\mathrm{orb},k}]=\frac{m\,c\,i\,\epsilon_{j\eta l}\,L_{\mathrm{orb},l}}{k_m}$. On a state of orbital number $l$ the operator $S$ therefore takes the two values $\frac{m\,c\,l}{k_m}$ and $-\frac{m\,c\,(l+1)}{k_m}$, the two roots of $\lambda^2=\frac{m^{2}\,c^{2}\,l\,(l+1)}{k_m^{2}}-\frac{m\,c\,\lambda}{k_m}$, and nothing else. The spin–orbit coupling is a two-valued operator, and that is the whole of its spectrum. The identity $S^2=\vec L^{\,2}-\frac{m\,c\,S}{k_m}$ was checked on generic polynomial states at residual zero.
+where $[L_{\mathrm{orb},j},L_{\mathrm{orb},\eta}]=\frac{m\,c\,i\,\epsilon_{j\eta l}\,L_{\mathrm{orb},l}}{k_m}$. On a state of orbital number $l$ the operator $S$ therefore takes the two values $\frac{m\,c\,l}{k_m}$ and $-\frac{m\,c\,(l+1)}{k_m}$, the two roots of $\lambda^2=\frac{m^{2}\,c^{2}\,l\,(l+1)}{k_m^{2}}-\frac{m\,c\,\lambda}{k_m}$, and nothing else. The spin–orbit coupling is a two-valued operator, and that is the whole of its spectrum. The identity $S^2=\vec L^{\,2}-\frac{m\,c\,S}{k_m}$ was checked on generic polynomial states at residual zero.
 
 ## The Spectrum
 
@@ -238,12 +238,12 @@ $$
 The first three terms are scalars in the position and in the orbital variables, while $S$ is diagonal in the basis of states of definite oscillator number $N$, definite $l$ and definite total angular momentum, and takes the two values above. The total angular momentum is the Hermitian element
 
 $$
-\tilde S_{\Psi,\mathrm{tot},\eta}=L_{\mathrm{orb},k}e_t+\tilde S_{\Psi,\eta},
+\tilde S_{\Psi,\mathrm{tot},\eta}=L_{\mathrm{orb},\eta}e_t+\tilde S_{\Psi,\eta},
 \qquad
 \tilde S_{\Psi,\eta}=\frac{m\,c}{2\,k_m}i\vec e_\eta ,
 $$
 
-acting by left multiplication, and the contraction obeys $\sum_\eta(L_{\mathrm{orb},k}e_t)\tilde S_{\Psi,\eta}=\tfrac12(\tilde S_{\Psi,\mathrm{tot}}^2-\vec L^{\,2}-\tfrac34\frac{m^{2}\,c^{2}\,e_{t}}{k_m^{2}})$, so the two values of $S$ are read from the Casimir alone: $+\frac{m\,c\,l}{k_m}$ for $s_{\mathrm{tot}}=l+\tfrac12$ and $-\frac{m\,c\,(l+1)}{k_m}$ for $s_{\mathrm{tot}}=l-\tfrac12$. With $\vec p^{\,2} + m^2\omega^2\vec r^{\,2} -\frac{3\,m^{2}\,c\,\omega}{k_m} =\frac{2\,m^{2}\,c\,\omega}{k_m} N$ and $N = 2n_r + l$, and writing $\mathcal{S}=\frac{k_m\,S}{m\,c}$ for the dimensionless value,
+acting by left multiplication, and the contraction obeys $\sum_\eta(L_{\mathrm{orb},\eta}e_t)\tilde S_{\Psi,\eta}=\tfrac12(\tilde S_{\Psi,\mathrm{tot}}^2-\vec L^{\,2}-\tfrac34\frac{m^{2}\,c^{2}\,e_{t}}{k_m^{2}})$, so the two values of $S$ are read from the Casimir alone: $+\frac{m\,c\,l}{k_m}$ for $s_{\mathrm{tot}}=l+\tfrac12$ and $-\frac{m\,c\,(l+1)}{k_m}$ for $s_{\mathrm{tot}}=l-\tfrac12$. With $\vec p^{\,2} + m^2\omega^2\vec r^{\,2} -\frac{3\,m^{2}\,c\,\omega}{k_m} =\frac{2\,m^{2}\,c\,\omega}{k_m} N$ and $N = 2n_r + l$, and writing $\mathcal{S}=\frac{k_m\,S}{m\,c}$ for the dimensionless value,
 
 $$
 \boxed{\;E^2 = m^2c^4 +\frac{2\,m^{2}\,c\,\omega}{k_m} c^2\left(N - \mathcal{S}\right)
@@ -323,14 +323,14 @@ Three structural statements can now be made in the algebra.
 **The substitution is a shift of the odd part.** The gradient $\tilde\nabla=e_t\,\partial/\partial R_t+\sum_\eta\vec e_\eta\,\partial/\partial R_\eta$ has a frame-even part ($e_t\,\partial/\partial R_t$, the timelike direction) and a frame-odd part ($\sum_\eta\vec e_\eta\,\partial/\partial R_\eta$, the spacelike directions). What the substitution adds to the operator is the action $\tilde{Ξ}_{\mathrm{sp}}\mapsto-cm\omega\sum_\eta\vec e_\eta\,(Q_\eta\tilde{Ξ}_{\mathrm{sp}})\,\vec e_y$, and that action is frame-odd, since it anticommutes with $\beta$; it is also linear in the position. Multiplying the two first-order operators of the pair returns a second-order operator that is central except for one remainder: the pieces built from the two shifted gradients combine as in the free case, and what survives beside the centre is the spin–orbit part. In the elements it is
 
 $$
--2m\omega\,S=-2m\omega\sum_\eta  L_{\mathrm{orb},k}\,i\vec e_\eta
+-2m\omega\,S=-2m\omega\sum_\eta  L_{\mathrm{orb},\eta}\,i\vec e_\eta
 \;\longleftrightarrow\;
--\dfrac{4\omega\,k_m}{c}\sum_\eta\bigl(L_{\mathrm{orb},k}e_t\bigr)\tilde S_{\Psi,\eta} ,
+-\dfrac{4\omega\,k_m}{c}\sum_\eta\bigl(L_{\mathrm{orb},\eta}e_t\bigr)\tilde S_{\Psi,\eta} ,
 \qquad
 \tilde S_{\Psi,\eta}=\frac{m\,c}{2\,k_m}i\vec e_\eta ,
 $$
 
-a Hermitian element of $\mathbb{B}_{\Psi}$: $i\vec e_\eta$ is Hermitian, $L_{\mathrm{orb},k}$ is Hermitian, and the two commute. The spin is the Hermitian element $i\vec e_\eta$, the orbital angular momentum is the scalar operator $L_{\mathrm{orb},k}$, and the coupling is their contraction, which is the operator $\sum_kL_{\mathrm{orb},k}\tilde S_{\Psi,\eta}$ of the hydrogen article up to the factor $-\frac{4\,k_m\,\omega}{c}$. That the remainder is Hermitian and not central is the algebraic statement that the oscillator's product is not the Klein–Gordon operator: the non-minimal term, unlike the mass, does not merely shift the eigenvalue, it adds a Hermitian element to the product.
+a Hermitian element of $\mathbb{B}_{\Psi}$: $i\vec e_\eta$ is Hermitian, $L_{\mathrm{orb},\eta}$ is Hermitian, and the two commute. The spin is the Hermitian element $i\vec e_\eta$, the orbital angular momentum is the scalar operator $L_{\mathrm{orb},\eta}$, and the coupling is their contraction, which is the operator $\sum_\eta L_{\mathrm{orb},\eta}\tilde S_{\Psi,\eta}$ of the hydrogen article up to the factor $-\frac{4\,k_m\,\omega}{c}$. That the remainder is Hermitian and not central is the algebraic statement that the oscillator's product is not the Klein–Gordon operator: the non-minimal term, unlike the mass, does not merely shift the eigenvalue, it adds a Hermitian element to the product.
 
 **The zero point is a commutator.** The constant $-\frac{3\,m^{2}\,c\,\omega}{k_m}$ comes from the commutator of position and momentum. The shift carries $\vec e_\eta\,(Q_\eta\tilde{Ξ}_{\mathrm{sp}})\,\vec e_y$ against the momentum $p_\eta$, and the two do not commute: their commutator is the central scalar $[Q_\eta,p_\eta]=\frac{m\,c\,i}{k_m}$, and the sum over the three directions is $\frac{3\,m\,c\,i}{k_m}$. The factor $im\omega$ of the substitution turns it into $-\frac{3\,m^{2}\,c\,\omega}{k_m}$ through one use of $i^2=-1$. This is why the aligned ground state sits at the mass gap: the commutator has removed the zero-point energy exactly, and the cancellation counts the number of spatial directions rather than any particular representation.
 
@@ -378,10 +378,10 @@ Eliminating $\tilde{Ξ}_{\mathrm{sp},-}$ and multiplying the two shifted gradien
 
 $$
 \boxed{\;\mathcal{Q}_+\mathcal{Q}_-
-= \vec p^{\,2} + m^2\omega^2\vec r^{\,2} -\frac{3\,m^{2}\,c\,\omega}{k_m} - 2m\omega\sum_\eta  L_{\mathrm{orb},k}\,i\vec e_\eta\;}
+= \vec p^{\,2} + m^2\omega^2\vec r^{\,2} -\frac{3\,m^{2}\,c\,\omega}{k_m} - 2m\omega\sum_\eta  L_{\mathrm{orb},\eta}\,i\vec e_\eta\;}
 $$
 
-checked by exact differentiation on generic polynomial states, with residual zero. The right-hand side is the three-dimensional oscillator with its zero point removed, plus a spin–orbit coupling of order $\omega$; the coupling is the element $S=\sum_\eta L_{\mathrm{orb},k}i\vec e_\eta$, which takes the two values $\frac{m\,c\,l}{k_m}$ and $-\frac{m\,c\,(l+1)}{k_m}$ because $S^2=\vec L^{\,2}-\frac{m\,c\,S}{k_m}$. The spectrum is
+checked by exact differentiation on generic polynomial states, with residual zero. The right-hand side is the three-dimensional oscillator with its zero point removed, plus a spin–orbit coupling of order $\omega$; the coupling is the element $S=\sum_\eta L_{\mathrm{orb},\eta}i\vec e_\eta$, which takes the two values $\frac{m\,c\,l}{k_m}$ and $-\frac{m\,c\,(l+1)}{k_m}$ because $S^2=\vec L^{\,2}-\frac{m\,c\,S}{k_m}$. The spectrum is
 
 $$
 E^2 = m^2c^4 +\frac{2\,m^{2}\,c\,\omega}{k_m} c^2\left(N - \mathcal  S\right)
@@ -394,7 +394,7 @@ $$
 
 with the aligned branch independent of $l$ and hence an infinitely degenerate level at $E = \pm mc^2$. In one dimension the spin–orbit term is absent and the spectrum is $E^2 = m^2c^4 +\frac{2\,m^{2}\,c\,\omega}{k_m} c^2 n$, $n = 0,1,2,\dots$.
 
-In the biquaternion framework the substitution shifts the frame-odd part of the gradient, and in the actions its imaginary coefficient is spent on the action: the added term is $\tilde{Ξ}_{\mathrm{sp}}\mapsto-cm\omega\sum_\eta\vec e_\eta\,(Q_\eta\tilde{Ξ}_{\mathrm{sp}})\,\vec e_y$, a real coefficient times a Hermitian, frame-odd action. The product is central except for the Hermitian remainder $-2m\omega\sum_\eta L_{\mathrm{orb},k}i\vec e_\eta$, which in the elements is $-\dfrac{4\omega\,k_m}{c}\sum_\eta(L_{\mathrm{orb},k}e_t)\tilde S_{\Psi,\eta}$. The zero-point cancellation is the sum of the commutator $[Q_\eta,p_\eta]=\frac{m\,c\,i}{k_m}$ over the three spatial directions, converted to $-\frac{3\,m^{2}\,c\,\omega}{k_m}$ by one factor $i^2=-1$. The zero modes of the shifted operator are the supersymmetric partner structure that the companion article develops. One field never carries the mass: the mass needs the pair, because $\tilde\nabla^2$ is not scalar, and the whole derivation uses the one gradient and its two shifts, with no matrix, no array and no Clifford generator. The spectrum also settles the question of what this confinement can do to the vacuum: since $\mathcal{Q}_+\mathcal{Q}_-\ge0$, the gap is empty at every frequency and the model cannot create pairs, whereas an electrostatic well can, once its depth passes the threshold of *Pair Creation in a Bounded Region in Biquaternionic Form*. The stability and the exact solvability are two consequences of the one substitution.
+In the biquaternion framework the substitution shifts the frame-odd part of the gradient, and in the actions its imaginary coefficient is spent on the action: the added term is $\tilde{Ξ}_{\mathrm{sp}}\mapsto-cm\omega\sum_\eta\vec e_\eta\,(Q_\eta\tilde{Ξ}_{\mathrm{sp}})\,\vec e_y$, a real coefficient times a Hermitian, frame-odd action. The product is central except for the Hermitian remainder $-2m\omega\sum_\eta L_{\mathrm{orb},\eta}i\vec e_\eta$, which in the elements is $-\dfrac{4\omega\,k_m}{c}\sum_\eta(L_{\mathrm{orb},\eta}e_t)\tilde S_{\Psi,\eta}$. The zero-point cancellation is the sum of the commutator $[Q_\eta,p_\eta]=\frac{m\,c\,i}{k_m}$ over the three spatial directions, converted to $-\frac{3\,m^{2}\,c\,\omega}{k_m}$ by one factor $i^2=-1$. The zero modes of the shifted operator are the supersymmetric partner structure that the companion article develops. One field never carries the mass: the mass needs the pair, because $\tilde\nabla^2$ is not scalar, and the whole derivation uses the one gradient and its two shifts, with no matrix, no array and no Clifford generator. The spectrum also settles the question of what this confinement can do to the vacuum: since $\mathcal{Q}_+\mathcal{Q}_-\ge0$, the gap is empty at every frequency and the model cannot create pairs, whereas an electrostatic well can, once its depth passes the threshold of *Pair Creation in a Bounded Region in Biquaternionic Form*. The stability and the exact solvability are two consequences of the one substitution.
 
 ## Summary of Notation
 
@@ -423,10 +423,10 @@ In the biquaternion framework the substitution shifts the frame-odd part of the 
 | $\tilde{Ξ}_{\mathrm{sp},+}$, $\tilde{Ξ}_{\mathrm{sp},-}$ | The two frame parts, $\beta\tilde{Ξ}_{\mathrm{sp},\pm}=\pm\tilde{Ξ}_{\mathrm{sp},\pm}$; large and small |
 | $\mathcal{Q}_\pm:\ \tilde{Ξ}_{\mathrm{sp}}\mapsto \frac{m\,c\,i\,\vec \nabla_{\mp}\,\tilde{Ξ}_{\mathrm{sp}}\,\omega}{k_m}$ | Factorised conjugate actions; $\mathcal{Q}_+\mathcal{Q}_-=\frac{m^{2}\,c^{2}\,\vec \nabla_{-}\,\vec \nabla_{+}}{k_m^{2}}$ |
 | $\mathcal{Q}_+\mathcal{Q}_- = \vec p^{\,2}+m^2\omega^2\vec r^{\,2}-\frac{3\,m^{2}\,c\,\omega}{k_m}-2m\omega S$ | Operator identity |
-| $S = \sum_\eta L_{\mathrm{orb},k}\,i\vec e_\eta$ | Spin–orbit element, Hermitian; $S^2=\vec L^{\,2}-\frac{m\,c\,S}{k_m}$ |
-| $\tilde S_{\Psi,\eta} =\frac{m\,c}{2\,k_m}i\vec e_\eta$, $\tilde S_{\Psi,\mathrm{tot},\eta}=L_{\mathrm{orb},k}e_t+\tilde S_{\Psi,\eta}$ | Spin and total angular momentum elements |
+| $S = \sum_\eta L_{\mathrm{orb},\eta}\,i\vec e_\eta$ | Spin–orbit element, Hermitian; $S^2=\vec L^{\,2}-\frac{m\,c\,S}{k_m}$ |
+| $\tilde S_{\Psi,\eta} =\frac{m\,c}{2\,k_m}i\vec e_\eta$, $\tilde S_{\Psi,\mathrm{tot},\eta}=L_{\mathrm{orb},\eta}e_t+\tilde S_{\Psi,\eta}$ | Spin and total angular momentum elements |
 | $\mathcal  S =\frac{k_m\,S}{m\,c}$ | Dimensionless value of the spin–orbit element |
-| $\vec L = \vec r\times\vec p$, $L_{\mathrm{orb},k}=\sum_{a,b}\epsilon_{\eta ab}Q_ap_b$ | Orbital angular momentum |
+| $\vec L = \vec r\times\vec p$, $L_{\mathrm{orb},\eta}=\sum_{a,b}\epsilon_{\eta ab}Q_ap_b$ | Orbital angular momentum |
 | $N = 2n_r + l$ | Total oscillator quantum number |
 | $n_r$ | Radial quantum number |
 | $E^2 = m^2c^4+\frac{4\,m^{2}\,c^{3}\,\omega\,n_{r}}{k_m}$ ($s_{\mathrm{tot}}=l+\tfrac12$) | Aligned branch |

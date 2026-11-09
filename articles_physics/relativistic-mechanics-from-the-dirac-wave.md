@@ -151,7 +151,7 @@ The first row is exact at every $\beta$, since $\vec p\,c^{2}/E=\gamma m\vec v\,
 
 **The checks.** The identity of §*Order Zero* was tested at five hundred values of $(x,t)$: its real line to $4.3\times10^{-14}$, its imaginary line to $3.6\times10^{-15}$, the latter equal to the continuity equation to $2.7\times10^{-15}$. The Lorentz force was derived symbolically for arbitrary $S$, $\phi$, $\vec A$, with zero residual.
 
-**A plane wave is already there.** For $\tilde\Xi_{\mathrm{sp}}=\xi e^{i(\vec k\cdot\vec r-\omega t)}$ the amplitude is constant and $\epsilon=0$, so the eikonal is the dispersion relation $\frac{\omega^{2}}{c^{2}}-\lvert\vec k\rvert^{2}=k_{m}^{2}$ exactly. At the other end a caustic makes $A$ diverge, $\epsilon$ large, the expansion void.
+**A plane wave is already there.** For $\tilde\Xi_{\mathrm{sp}}=\xi e^{i(\vec k_\Phi\cdot\vec r-\omega t)}$ the amplitude is constant and $\epsilon=0$, so the eikonal is the dispersion relation $\frac{\omega^{2}}{c^{2}}-\lvert\vec k_\Phi\rvert^{2}=k_{m}^{2}$ exactly. At the other end a caustic makes $A$ diverge, $\epsilon$ large, the expansion void.
 
 ## Summary
 

@@ -255,7 +255,7 @@ left multiplication by the element of $\mathbb{B}$ tabulated in §*The Field in 
 $$
 \tilde{Ξ}_{\mathrm{sp},\mu} = \tilde{Ξ}_{\mathrm{sp},\mu,0}\,\exp(\,i\,\mathrm{Sc}\frac{k_m\,\tilde{P}_{\Phi}\,\tilde{Q}^{\natural}}{m\,c}),
 $$
-with $\tilde Q=x_0e_t+\sum_\eta x_k\vec e_\eta$ the coordinate element and $\tilde P_{\Phi}=p_0e_t+\sum_\eta p_\eta\vec e_\eta$ its conjugate momentum, the Dirac equation on the component requires $\tilde P_{\Phi}\tilde P_{\Phi}^{\natural}= -m^{2}\,c^{2}$ in the normalization of the companion Dirac article, that is,
+with $\tilde Q=x_0e_t+\sum_\eta x_\eta\vec e_\eta$ the coordinate element and $\tilde P_{\Phi}=p_0e_t+\sum_\eta p_\eta\vec e_\eta$ its conjugate momentum, the Dirac equation on the component requires $\tilde P_{\Phi}\tilde P_{\Phi}^{\natural}= -m^{2}\,c^{2}$ in the normalization of the companion Dirac article, that is,
 $$
 \frac{\varpi^2}{c^2} - \vec k_\Phi^2 = k_m^{2},
 \qquad\text{i.e.}\qquad
@@ -337,7 +337,7 @@ The field is a tensor product of the algebra's four-vector structure and its Dir
 | $T_{\mu\nu\rho}$, $h_{\mu\nu}$ | The source's antisymmetrized triple and pair, objects of one display; kinetic and mass structures |
 | $E_\mu$ | The source's generator with index $\mu$, an object of the display and not an element of $\mathbb{B}$ |
 | $\varpi$ | Angular frequency of a plane wave; not $\omega$ |
-| $\tilde Q$, $\tilde P_{\Phi}$ | Coordinate and momentum elements of a plane wave, $\tilde Q=x_0e_t+\sum_\eta x_k\vec e_\eta$ |
+| $\tilde Q$, $\tilde P_{\Phi}$ | Coordinate and momentum elements of a plane wave, $\tilde Q=x_0e_t+\sum_\eta x_\eta\vec e_\eta$ |
 | $2\times\tfrac32\oplus4\times\tfrac12$ | $SU(2)$ content of the field |
 
 ## Further Reading
