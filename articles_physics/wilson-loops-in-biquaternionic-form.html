@@ -80,7 +80,7 @@
 <li>Companion article <em>The Photon in Biquaternionic Form</em>, for the massless one-particle state.</li>
 </ul>
 <h2 id="the-holonomy-of-the-connection">The Holonomy of the Connection</h2>
-<p>Throughout, $\varepsilon=(1,-1,-1,-1)$ is the plain weight of the algebra, $\mathrm{Sc}(e_\mu e_\nu)=\varepsilon_\mu\delta_{\mu\nu}$, and a paired index is written low with its weight: $\sum_\mu\varepsilon_\mu A_\mu dx_\mu$ is the one-form $A_0\,dx_0-\sum_k A_k\,dx_k$. Every exponent below carries the factor $\frac{k_m\,ϙ}{m\,c}$, the product of the charge $ϙ$ and the inverse action $1/\hbar=k_m/(m\,c)$, so that the exponential of a loop integral is a phase and each exponent is a pure number on its own; no unit and no charge is set to one.</p>
+<p>Throughout, $\varepsilon=(1,-1,-1,-1)$ is the plain weight of the algebra, $\mathrm{Sc}(e_\mu e_\nu)=\varepsilon_\mu\delta_{\mu\nu}$, and a paired index is written low with its weight: $\sum_\mu\varepsilon_\mu A_\mu dx_\mu$ is the one-form $A_0\,dx_0-\sum_\eta A_\eta\,dx_k$. Every exponent below carries the factor $\frac{k_m\,ϙ}{m\,c}$, the product of the charge $ϙ$ and the inverse action $1/\hbar=k_m/(m\,c)$, so that the exponential of a loop integral is a phase and each exponent is a pure number on its own; no unit and no charge is set to one.</p>
 <h3 id="the-abelian-wilson-loop">The Abelian Wilson Loop</h3>
 <p>For an abelian connection the holonomy around a closed curve $C$ is the exponential of the line integral of the potential,</p>
 <p>$$
@@ -127,11 +127,11 @@ $$</p>
 \boxed{\;W(C) = 1 + i\,\ell^2 F_{\mu\nu} + O(\ell^4)\;}
 $$</p>
 <p>in the abelian case, and in the non-abelian case as $W=1+i\ell^2\sum_a F_{\mu\nu a}T_a+O(\ell^4)$, so the loop exponentiates the field strength. This was verified for a small abelian plaquette of side $\ell=10^{-3}$: the ratio of the deviation of the plaquette from unity to $\ell^2F$ was unity to six significant figures. The small loop is therefore an algebraic probe of $\tilde{F}$, and the two gauge-invariant scalars that can be built from $\tilde{F}$ in the framework are visible in the loop at second order.</p>
-<p>Those scalars are the biquaternion content of the Maxwell field. Writing the field strength as $\tilde{F}=\sum_k(iE_k-H_k)\vec e_k$, its square is a central element,</p>
+<p>Those scalars are the biquaternion content of the Maxwell field. Writing the field strength as $\tilde{F}=\sum_\eta(iE_\eta-H_\eta)\vec e_\eta$, its square is a central element,</p>
 <p>$$
 \boxed{\;\tilde{F}^2 = \left(|\vec E|^2-|\vec H|^2\right)e_t + 2i\,\vec E\cdot\vec H\,e_t\;},
 $$</p>
-<p>so that the two Lorentz invariants of the Maxwell field — the difference of the squared field magnitudes and the pseudoscalar $\vec E\cdot\vec H$ — are the real and imaginary scalar parts of $\tilde{F}^2$. This was verified with the $2\times2$ representation $\vec e_k=-i\sigma_k$: for random fields the matrix square of $\tilde{F}$ equaled $ (|\vec E|^2-|\vec H|^2+2i\vec E\cdot\vec H)I_2$ to machine precision. The statement is the framework's: in a biquaternion algebra the square of the field strength is automatically central, and both invariants are read from the single element $\tilde{F}^2$ as its two scalar parts. The Wilson loop of a small loop is the exponentiation of the field strength that this element describes, and the two invariants are its second-order content.</p>
+<p>so that the two Lorentz invariants of the Maxwell field — the difference of the squared field magnitudes and the pseudoscalar $\vec E\cdot\vec H$ — are the real and imaginary scalar parts of $\tilde{F}^2$. This was verified with the $2\times2$ representation $\vec e_\eta=-i\sigma_\eta$: for random fields the matrix square of $\tilde{F}$ equaled $ (|\vec E|^2-|\vec H|^2+2i\vec E\cdot\vec H)I_2$ to machine precision. The statement is the framework's: in a biquaternion algebra the square of the field strength is automatically central, and both invariants are read from the single element $\tilde{F}^2$ as its two scalar parts. The Wilson loop of a small loop is the exponentiation of the field strength that this element describes, and the two invariants are its second-order content.</p>
 <h3 id="the-constant-field">The Constant Field</h3>
 <p>The small-loop expansion becomes exact for a constant field strength, and the exact loop shows which components of $\tilde{F}$ a given loop measures. For constant $F_{\mu\nu}$ the loop integral is the flux through the enclosed surface,</p>
 <p>$$
@@ -240,7 +240,7 @@ $$</p>
 <h2 id="summary">Summary</h2>
 <p>The Wilson loop is the trace of the holonomy of the gauge connection around a closed curve. In the biquaternion framework the connection is a material-sector one-form, $\tilde{A}_{\Phi}\in\mathbb{B}_{\Phi}$, and the holonomy is an element of the gauge group realized in the informational sector $\mathbb{B}_{\Psi}$ — for $\mathrm{SU}(2)$ a unit quaternion — so that the loop is the scalar part of that element and couples the two fixed-point sectors.</p>
 <p>For the abelian theory the loop is $\exp(\frac{k_m\,ϙ}{m\,c}\oint \sum_\mu\varepsilon_\mu A_\mu dx_\mu)$; it is invariant under the gradient shift because the integral of a total derivative around a closed curve vanishes, and Stokes' theorem makes it the exponential of the enclosed flux. For the non-abelian theory the holonomy is a path-ordered exponential transforming by conjugation at the base point, and the trace is invariant; this was verified for the quaternion realization, where the real part of the trace was unchanged under random site gauge transformations while the untraced holonomy changed by conjugation.</p>
-<p>For a small loop the holonomy expands as $W=1+i\ell^2F_{\mu\nu}+O(\ell^4)$, verified to six significant figures on a plaquette, so that the loop exponentiates the field strength. Writing $\tilde{F}=\sum_k(iE_k-H_k)\vec e_k$, the square of the field strength is central,</p>
+<p>For a small loop the holonomy expands as $W=1+i\ell^2F_{\mu\nu}+O(\ell^4)$, verified to six significant figures on a plaquette, so that the loop exponentiates the field strength. Writing $\tilde{F}=\sum_\eta(iE_\eta-H_\eta)\vec e_\eta$, the square of the field strength is central,</p>
 <p>$$
 \tilde{F}^2=\left(|\vec E|^2-|\vec H|^2\right)e_t+2i\,\vec E\cdot\vec H\,e_t ,
 $$</p>
@@ -295,7 +295,7 @@ $$</p>
 <td>Small-loop expansion; exponentiated field strength</td>
 </tr>
 <tr>
-<td>$\tilde{F}=\sum_k(iE_k-H_k)\vec e_k$</td>
+<td>$\tilde{F}=\sum_\eta(iE_\eta-H_\eta)\vec e_\eta$</td>
 <td>Field strength biquaternion</td>
 </tr>
 <tr>

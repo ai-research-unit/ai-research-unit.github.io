@@ -150,7 +150,7 @@ $$</p>
 </tr>
 </tbody>
 </table></div>
-<p><strong>Why the gluon is in the adjoint and not in the $\mathbf{3}\otimes\bar{\mathbf{3}}$.</strong> A gluon must carry a colour and an anticolour, so it lives in $\mathbf{3}\otimes\bar{\mathbf{3}}$, and</p>
+<p><strong>Why the gluon is the octet and not the singlet inside $\mathbf{3}\otimes\bar{\mathbf{3}}$.</strong> A gluon must carry a colour and an anticolour, so it lives in $\mathbf{3}\otimes\bar{\mathbf{3}}$, and</p>
 <p>$$
 \mathbf{3}\otimes\bar{\mathbf{3}}=\mathbf{1}\oplus\mathbf{8} ,
 \qquad 3\times3=1+8 .
@@ -183,7 +183,7 @@ $$</p>
 \qquad
 T_R=\frac12 ,
 $$</p>
-<p>the value that follows from $\mathrm{Tr}\left(\lambda^a\lambda^b\right)=2\delta^{ab}$. This is a convention and not a fact: a rescaling $T^a\to\kappa T^a$ changes $T_R\to\kappa^2T_R$ and can be compensated by $g_s\to g_s/\kappa$, leaving every product $g_sT^a$ unchanged. What is convention-independent is the combination that appears in observables, and the invariant way to say it is that the three numbers below are tied together:</p>
+<p>the value that follows from $\mathrm{Tr}\left(\lambda^a\lambda^b\right)=2\delta^{ab}$. This is a convention and not a fact: a rescaling $T^a\to\kappa T^a$ changes $T_R\to\kappa^2T_R$ and can be compensated by $g_s\to g_s/\kappa$, leaving every product $g_sT^a$ unchanged. What is convention-independent is the combination that appears in observables, and the invariant way to say it is that the three numbers below are tied together by $C_F=T_R(N^2-1)/N$, which a rescaling of $T^a$ leaves unchanged because $\kappa^2$ cancels between $C_F$ and $T_R$:</p>
 <p>$$
 C_F=\frac{N^2-1}{2N}=\frac43 ,
 \qquad
@@ -217,13 +217,18 @@ $$</p>
 <td>$1/2$</td>
 </tr>
 <tr>
+<td>$\dfrac{11C_A/3}{4T_R/3}$</td>
+<td>The margin per flavour in $b_0$</td>
+<td>$16.5$</td>
+</tr>
+<tr>
 <td>$C_A/C_F$</td>
-<td>The ratio that makes the gluon dominate</td>
+<td>Two Casimirs divided; <strong>not</strong> in $b_0$</td>
 <td>$9/4=2.25$</td>
 </tr>
 </tbody>
 </table></div>
-<p><strong>The ratio is why the theory is asymptotically free.</strong> The gluon loop contributes with $C_A$ and the quark loop with $T_R N_f$, and $C_A/C_F=9/4$ is large enough that the gluon's antiscreening wins for every $N_f\le16$. The full arithmetic is the running article's; what belongs here is that the two numbers $3$ and $4/3$ are the whole of the input.</p>
+<p><strong>The ratio that sets asymptotic freedom.</strong> The gluon and ghost loops contribute $11C_A/3$ and the quark loop $4T_RN_f/3$, so per flavour the gluon outweighs the quark by $\frac{11C_A/3}{4T_R/3}=16.5$, and the gluon's antiscreening wins for every $N_f\le16$. The ratio $C_A/C_F=9/4$ is a different number — two Casimirs divided — and it does not enter the beta function, because $C_F$ appears in the quark self-energy and nowhere in the $N_f$ bookkeeping. The full arithmetic is <a href="asymptotic-freedom-and-the-running-of-the-strong-coupling.html">the running article's</a>; what belongs here is that $N=3$, $T_R=\frac12$ and the two loop integrals are the whole of the input.</p>
 <p><strong>The trace identity that is used most often.</strong> For three generators,</p>
 <p>$$
 \mathrm{Tr}\left(T^aT^bT^c\right)=\frac14\left(d^{abc}+if^{abc}\right) ,
@@ -238,7 +243,7 @@ $$</p>
 <p>$$
 \mathcal{L}_\theta=\theta_{\mathrm{QCD}}\frac{g_s^2}{32\pi^2}\sum_{a,\mu,\nu}G^a_{\mu\nu}\widetilde G^a_{\mu\nu} ,
 $$</p>
-<p>is a total derivative and contributes nothing to any perturbative amplitude; it is a parameter of the theory and it belongs to the article on the vacuum angle.</p>
+<p>is a total derivative and contributes nothing to any perturbative amplitude; it is a parameter of the theory and it belongs to <a href="the-theta-vacuum-in-biquaternionic-form.html">The Theta Vacuum in Biquaternionic Form</a>.</p>
 <p><strong>Why the gauge-fixing and ghost terms are not optional.</strong> The quadratic kernel of the gauge field alone is not invertible, because the gauge orbit is a flat direction of $-\frac14\sum GG$; the gauge-fixing term lifts it, and the ghost term restores the gauge invariance that the fixing broke. That mechanism is the subject of <a href="gauge-fixing-in-the-electroweak-theory-r-xi-gauges-ghosts-and-the-goldstone-equivalence-theorem.html">Gauge Fixing in the Electroweak Theory</a>, and its structure in QCD is identical with one difference that matters: the ghost of QCD is in the adjoint, so it carries a colour index and couples through $f^{abc}$ rather than through a generator matrix.</p>
 <p><strong>The mass term is allowed here and forbidden there.</strong> A term $m\bar\psi\psi$ is invariant under $SU(3)$, so QCD admits quark masses; the same term is forbidden in the electroweak theory because the two chiralities carry different $SU(2)$ representations. The quark mass in the display above is therefore a genuine parameter of the strong sector, generated elsewhere — by the Yukawa sector — and carried here as an input.</p>
 <h2 id="the-covariant-derivative-and-the-field-strength">The Covariant Derivative and the Field Strength</h2>
@@ -322,7 +327,7 @@ $$</p>
 </tr>
 <tr>
 <td>Ghost–gluon</td>
-<td>$g_sf^{abc}$</td>
+<td>$-g_sf^{abc}$</td>
 <td>$p^\mu$, with $p$ the momentum of the incoming antighost</td>
 </tr>
 </tbody>
@@ -361,9 +366,9 @@ $$</p>
 <p>The rule in the table was checked against this expression directly, by extracting the coefficient of four independent polarisations from the Lagrangian rather than by quoting it: the extracted coefficient agreed with $-g_s^2$ times the bracket above to $1.1\times10^{-15}$, with the $g_s$ dependence confirmed separately by the ratio $1.21=g_s^2$ at $g_s=1.1$.</p>
 <p><strong>The ghost–gluon vertex.</strong> From $\mathcal{L}_{cG}$, again with one derivative,</p>
 <p>$$
-\Gamma^{abc}_\mu(p)=g_sf^{abc}p_\mu ,
+\Gamma^{abc}_\mu(p)=-g_sf^{abc}p_\mu ,
 $$</p>
-<p>with $p$ the momentum of the incoming antighost and the indices ordered (antighost, ghost, gluon). The sign is the sign of the three-gluon vertex, for the same reason: both come from one derivative acting on a field, and both flip with $g_s$.</p>
+<p>with $p$ the momentum of the incoming antighost and the indices ordered (antighost, ghost, gluon). The sign is the <strong>opposite</strong> of the three-gluon vertex, and the reason is visible in the two Lagrangians rather than in a rule of thumb. In $\mathcal{L}_3$ the derivative may sit on any of three identical fields, and the antisymmetrised sum over the six placements contributes a net $+1$; in $\mathcal{L}_{cG}$ the derivative sits on the antighost, there is one placement and no sum, so the factor is the bare $-g_sf$ times $-ip_\mu$ times the $i$ of the vertex, which is $-g_sfp_\mu$. Both vertices flip with $g_s\to-g_s$, which is the part the earlier sentence had right.</p>
 <h2 id="the-colour-factors">The Colour Factors</h2>
 <p><strong>Where each number is used.</strong> The three colour factors are not decoration; each one is the group-theory factor of a definite diagram class.</p>
 <div class="table-scroll"><table>
@@ -397,7 +402,7 @@ $$</p>
 b_0=\frac{11}{3}C_A-\frac{4}{3}T_RN_f=11-\frac{2}{3}N_f ,
 $$</p>
 <p>with the first term from the gluon and ghost loops, the second from the quark loop, and the sign of the ghost already included. The $11$ is $11/3$ times $C_A=3$; the $2/3$ is $4/3$ times $T_R=1/2$. The running article computes the coefficient; this article supplies only the numbers that go into it.</p>
-<p><strong>The margin, in one ratio.</strong> The number $C_A/C_F=9/4$ is the whole of the reason the sign comes out negative. A gluon loop carries $C_A$ and antiscreens; a quark loop carries $T_R$ and screens. With $N_f$ flavours the bookkeeping is $11C_A/3$ against $4T_RN_f/3$, and the first wins for every $N_f\le16$. At $N_c=3$ the margin is comfortable, which is why QCD is asymptotically free for the six flavours that exist and would cease to be at seventeen.</p>
+<p><strong>The margin, in one ratio.</strong> The number that decides the sign is $\frac{11C_A/3}{4T_R/3}=16.5$ per flavour, and $C_A/C_F=9/4$ is not it: $C_F$ does not appear in $b_0$, so a ratio built from $C_F$ cannot be the reason the sign comes out negative. Taken at face value, a per-flavour margin of $2.25$ would forbid asymptotic freedom beyond $N_f=1$, which the same paragraph contradicts. A gluon loop carries $C_A$ and antiscreens; a quark loop carries $T_R$ and screens. With $N_f$ flavours the bookkeeping is $11C_A/3$ against $4T_RN_f/3$, and the first wins for every $N_f\le16$. At $N_c=3$ the margin is comfortable, which is why QCD is asymptotically free for the six flavours that exist and would cease to be at seventeen.</p>
 <h2 id="the-algebra-verified">The Algebra Verified</h2>
 <p><strong>Everything in this section was computed, not quoted.</strong> The Gell-Mann matrices were built explicitly, the structure constants extracted from their commutators, and the identities below checked as matrix equalities.</p>
 <div class="table-scroll"><table>
@@ -437,7 +442,7 @@ $$</p>
 <td>$0$</td>
 </tr>
 <tr>
-<td>$T^a_{ij}T^a_{kl}=\frac12\left(\delta_{il}\delta_{jk}-\frac13\delta_{ij}\delta_{kl}\right)$</td>
+<td>$T^a_{ij}T^a_{kl}=\frac12\left(\delta_{il}\delta_{j\eta}-\frac13\delta_{ij}\delta_{\eta l}\right)$</td>
 <td>$5.6\times10^{-17}$</td>
 </tr>
 <tr>
@@ -472,10 +477,10 @@ $$</p>
 </table></div>
 <p><strong>The Fierz identity is the one worth singling out.</strong> The row for the product of two generators,</p>
 <p>$$
-\sum_aT^a_{ij}T^a_{kl}=\frac12\left(\delta_{il}\delta_{jk}-\frac13\delta_{ij}\delta_{kl}\right) ,
+\sum_aT^a_{ij}T^a_{kl}=\frac12\left(\delta_{il}\delta_{j\eta}-\frac13\delta_{ij}\delta_{\eta l}\right) ,
 $$</p>
-<p>is what makes colour summing mechanical: a gluon exchanged between two quark lines contracts two generator matrices into a Kronecker delta minus a trace. It is the $SU(3)$ analogue of the $SU(2)$ identity $\sum_a\sigma^a_{ij}\sigma^a_{kl}=2\delta_{il}\delta_{jk}-\delta_{ij}\delta_{kl}$ for the Pauli matrices, generalised to $-\delta_{ij}\delta_{kl}/N$ in place of the second term; the coefficient $1/N$ of that term is why the $1/N$ expansion of the strong interaction exists at all.</p>
-<p><strong>The two quadratic Casimir invariants.</strong> From the explicit matrices, $\sum_aT^aT^a=\frac43I$ and $\sum_{c,e}f^{ace}f^{bce}=3\delta^{ab}$; both are properties of $SU(3)$ and both were reproduced from the matrices rather than assumed. The three numbers of the colour-factor table are therefore not three independent inputs: $T_R$ is a normalisation, and $C_F$ and $C_A$ follow from $N=3$ and $T_R$.</p>
+<p>is what makes colour summing mechanical: a gluon exchanged between two quark lines contracts two generator matrices into a Kronecker delta minus a trace. It is the $SU(3)$ analogue of the $SU(2)$ identity $\sum_a\sigma^a_{ij}\sigma^a_{kl}=2\delta_{il}\delta_{j\eta}-\delta_{ij}\delta_{\eta l}$ for the Pauli matrices, generalised to $-\delta_{ij}\delta_{\eta l}/N$ in place of the second term; the coefficient $1/N$ of that term is why the $1/N$ expansion of the strong interaction exists at all.</p>
+<p><strong>The two quadratic Casimir invariants.</strong> From the explicit matrices, $\sum_aT^aT^a=\frac43I$ and $\sum_{c,e}f^{ace}f^{bce}=3\delta^{ab}$; both are properties of $SU(3)$ and both were reproduced from the matrices rather than assumed. The three numbers of the colour-factor table are therefore not three independent inputs: $T_R$ is a normalisation, $C_A=N$ follows from $N=3$ alone and is untouched by the rescaling, and $C_F=T_R(N^2-1)/N$ is the one combination that carries $T_R$.</p>
 <h2 id="what-the-corpus-adds-and-what-it-imports">What the Corpus Adds and What It Imports</h2>
 <p><strong>The ledger.</strong></p>
 <div class="table-scroll"><table>
@@ -529,12 +534,12 @@ $$</p>
 </tbody>
 </table></div>
 <p><strong>What the algebra can host, stated precisely.</strong> The projector structure of the propagator, the sign rule and the reality conditions are biquaternionic objects; the octet is not. The route the corpus takes is the one <a href="the-gluon-an-octet-outside-the-biquaternion-algebra.html">the gluon article</a> sets out: the octet is not in $\mathbb{B}$, but it is in $M_2(\mathbb{B})\cong M_4(\mathbb{C})$, where a $3\times3$ traceless block can be written and the $\mathrm{SU}(3)$ elements have explicit biquaternion closed forms. That enlargement is a carrier, not a derivation: it hosts the octet at the price of a larger module, and it does not produce the triplet or the number three.</p>
-<p><strong>What this article does not do.</strong> It does not derive $N_c$, does not confine, does not compute a cross section, and does not run the coupling. Each of those is a separate article, and the running is the next one.</p>
+<p><strong>What this article does not do.</strong> It does not derive $N_c$, does not confine, does not compute a cross section, and does not run the coupling. Three of the four are elsewhere in the corpus: <a href="asymptotic-freedom-and-the-running-of-the-strong-coupling.html">Asymptotic Freedom and the Running of the Strong Coupling</a> runs the coupling from the $b_0$ given here, <a href="confinement-and-the-loss-of-partonic-information-in-biquaternionic-form.html">Confinement and the Loss of Partonic Information in Biquaternionic Form</a> takes up why the octet is never seen, and the derivation of $N_c$ is the <em>no route yet</em> item this article and the QCD agenda both record. Cross sections are not yet written.</p>
 <h2 id="summary">Summary</h2>
 <p>The QCD Lagrangian is $-\frac14\sum GG$ plus a quark term plus gauge fixing plus ghosts, and the gluon's self-couplings follow from the commutator in $G^a_{\mu\nu}$. The four pieces and the four vertices are standard theory, transcribed here in the corpus's coordinates, and every number in the Feynman rules was derived from that Lagrangian rather than quoted: the three-gluon rule has no explicit $i$ because its term carries one derivative, the four-gluon rule has one, and the two signs are tied to the same $g_s$.</p>
 <p>Three colours is a measured fact, established four independent ways — the $R$ ratio, the $\pi^0$ width, the $Z$ hadronic width, and the existence of a three-quark baryon with a symmetric spin–flavour wavefunction. The last of these fixes the number exactly, because the only invariant that can make a baryon is the antisymmetric $\epsilon$ of rank $N_c$.</p>
-<p>The representations are the triplet, the antitriplet and the octet. The octet is forced twice over: a gluon carries colour and anticolour without a trace, and its field is real. The decompositions $\mathbf{3}\otimes\bar{\mathbf{3}}=\mathbf{1}\oplus\mathbf{8}$ and $\mathbf{3}\otimes\mathbf{3}\otimes\mathbf{3}=\mathbf{1}\oplus\mathbf{8}\oplus\mathbf{8}\oplus\mathbf{10}$ are why the spectrum is mesons, baryons and glueballs, and why a diquark is not an asymptotic state.</p>
-<p>The colour factors are $C_F=4/3$, $C_A=3$ and $T_R=1/2$, they were computed from the explicit Gell-Mann matrices, and every identity in the table of checks closed at machine precision. Their ratio $9/4$ is the margin by which the gluon's antiscreening beats the quark's screening, which is why the coupling falls.</p>
+<p>The representations are the triplet, the antitriplet and the octet. The octet is forced twice over: a gluon carries colour and anticolour without a trace, and its field is real. Three decompositions carry the spectrum: $\mathbf{3}\otimes\bar{\mathbf{3}}=\mathbf{1}\oplus\mathbf{8}$ for mesons, $\mathbf{3}\otimes\mathbf{3}\otimes\mathbf{3}=\mathbf{1}\oplus\mathbf{8}\oplus\mathbf{8}\oplus\mathbf{10}$ for baryons, and $\mathbf{8}\otimes\mathbf{8}$, whose singlet is the glueball. The absence of a singlet in $\mathbf{3}\otimes\mathbf{3}=\bar{\mathbf{3}}\oplus\mathbf{6}$ is why a diquark is not an asymptotic state.</p>
+<p>The colour factors are $C_F=4/3$, $C_A=3$ and $T_R=1/2$, they were computed from the explicit Gell-Mann matrices, and every identity in the table of checks closed at machine precision. Per flavour the gluon's $11C_A/3$ outweighs the quark's $4T_R/3$ by $16.5$, and that is the margin by which antiscreening beats screening and the reason the coupling falls.</p>
 <p>The framework supplies the sign rule and the projectors and nothing else. The group, the number three, the matrices and the Lagrangian are imported, and the ledger says so line by line.</p>
 <h2 id="summary-of-notation">Summary of Notation</h2>
 <div class="table-scroll"><table>
@@ -613,6 +618,38 @@ $$</p>
 <td>$p_1,p_2,p_3$</td>
 <td>Incoming momenta of the three gluon legs, $p_1+p_2+p_3=0$</td>
 </tr>
+<tr>
+<td>$\gamma^\mu$</td>
+<td>Dirac matrices; the quark propagator is $i(\gamma^\mu k_\mu+m_f)/(k^2-m_f^2+i\epsilon)$</td>
+</tr>
+<tr>
+<td>$m_f$</td>
+<td>Mass of quark flavour $f$, a parameter imported from the Yukawa sector</td>
+</tr>
+<tr>
+<td>$Q_f$</td>
+<td>Electric charge of flavour $f$, in units of $e$</td>
+</tr>
+<tr>
+<td>$b_0$</td>
+<td>One-loop coefficient of the beta function, $b_0=\frac{11}{3}C_A-\frac43T_RN_f$</td>
+</tr>
+<tr>
+<td>$\epsilon_{abc}$</td>
+<td>The totally antisymmetric rank-$N_c$ invariant; the only colour singlet in $\mathbf{3}^{\otimes N_c}$</td>
+</tr>
+<tr>
+<td>$J$</td>
+<td>Spin of a hadron, $J=3/2$ for the $\Delta^{++}$ and the $\Omega^-$</td>
+</tr>
+<tr>
+<td>$\kappa$</td>
+<td>Generator rescaling $T^a\to\kappa T^a$, under which $T_R\to\kappa^2T_R$</td>
+</tr>
+<tr>
+<td>$\mathcal{L}_{\mathrm{gf}}$, $\mathcal{L}_{cG}$</td>
+<td>Gauge-fixing term and ghost–gluon interaction of the Lagrangian display</td>
+</tr>
 </tbody>
 </table></div>
 <h2 id="further-reading">Further Reading</h2>
@@ -625,6 +662,8 @@ $$</p>
 <li><a href="quantum-chromodynamics-under-the-biquaternion-framework-a-research-agenda.html">Quantum Chromodynamics under the Biquaternion Framework: A Research Agenda</a>. The classification that the ledger follows.</li>
 <li><a href="the-standard-model-content-quantum-numbers-and-the-nineteen-parameters.html">The Standard Model: Content, Quantum Numbers and the Nineteen Parameters</a>. The colour quantum numbers of the fifteen fields, and $\alpha_s$ among the parameters.</li>
 <li><a href="the-photon-in-biquaternionic-form.html">The Photon in Biquaternionic Form</a>. The abelian case, where the structure constants vanish and both self-couplings are absent.</li>
+<li><a href="asymptotic-freedom-and-the-running-of-the-strong-coupling.html">Asymptotic Freedom and the Running of the Strong Coupling</a>. The full one-loop arithmetic behind $b_0$, which this article hands on as $11C_A/3-4T_RN_f/3$.</li>
+<li><a href="confinement-and-the-loss-of-partonic-information-in-biquaternionic-form.html">Confinement and the Loss of Partonic Information in Biquaternionic Form</a>. Why the octet is never an asymptotic state, which is the question the Feynman rules of this article cannot answer.</li>
 </ul>
       </div>
     </main>

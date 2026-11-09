@@ -153,7 +153,7 @@ $$</p>
 S_x =\frac{m\,c}{2\,k_m}(-i\vec e_z), \qquad S_y =\frac{m\,c}{2\,k_m}(-i\vec e_y), \qquad S_z =\frac{m\,c}{2\,k_m}(-i\vec e_x).
 $$</p>
 <p><strong>Their commutation relations were recomputed and hold exactly.</strong> $[S_x,S_y] =\frac{m\,c\,i\,S_{z}}{k_m}$, $[S_y,S_z] =\frac{m\,c\,i\,S_{x}}{k_m}$ and $[S_z,S_x] =\frac{m\,c\,i\,S_{y}}{k_m}$, with no residual term. So the three elements satisfy the angular-momentum algebra of spin $\tfrac12$ in the algebra's own product, and that part of the source needs no correction.</p>
-<p><strong>The corpus's operators are $\tilde S_{\Psi,k} =\frac{m\,c}{2\,k_m}i\vec e_k$, and the source's are the corpus's in another labelling</strong>: $S_x = -\tilde S_{\Psi,3}$, $S_y = -\tilde S_{\Psi,2}$ and $S_z = -\tilde S_{\Psi,1}$. The two triples are equal as algebras and different as identifications of the three directions, and the exchange is the one the table of the four values shows. Neither is wrong; what the page does not say is which of the two it uses.</p>
+<p><strong>The corpus's operators are $\tilde S_{\Psi,\eta} =\frac{m\,c}{2\,k_m}i\vec e_\eta$, and the source's are the corpus's in another labelling</strong>: $S_x = -\tilde S_{\Psi,3}$, $S_y = -\tilde S_{\Psi,2}$ and $S_z = -\tilde S_{\Psi,1}$. The two triples are equal as algebras and different as identifications of the three directions, and the exchange is the one the table of the four values shows. Neither is wrong; what the page does not say is which of the two it uses.</p>
 <h3 id="the-states">The States</h3>
 <p><strong>The source's states are its equations (12) and (13)</strong>,</p>
 <p>$$
@@ -255,7 +255,7 @@ D^{*} S_zD &= \cos\theta\,S_z+\sin\theta\,S_y.
 $$</p>
 <p><strong>The component along the axis is invariant and the two transverse components rotate into one another</strong> in the standard sense; the two remaining axes give the two remaining rotations of the same pattern. The source collects all three into the single formula (17),</p>
 <p>$$
-D^{*}(n_a,\theta)S_jD(n_a,\theta)=\frac{m\,c}{2\,k_m}\left(q_j\cos\theta+q_k\sin\theta\right),
+D^{*}(n_a,\theta)S_jD(n_a,\theta)=\frac{m\,c}{2\,k_m}\left(q_j\cos\theta+q_\eta\sin\theta\right),
 $$</p>
 <p>where $q_j=-i\vec e_j$. The source does not state which pair belongs to which axis, so as printed the formula is under-determined: the plus sign belongs to $(j,k)=(z,y)$ about $x$, $(x,z)$ about $y$ and $(y,x)$ about $z$, the reverse pairing carries the opposite sign, and the component along the axis is not covered by the pattern at all.</p>
 <h2 id="the-raising-and-lowering-operators">The Raising and Lowering Operators</h2>
@@ -362,7 +362,7 @@ q = \left(q_t - iq_7\right)e_t - \left(iq_1 + q_4\right)\vec e_x - \left(iq_2 + 
 $$</p>
 <p>its equation (30). <strong>As printed, the parameter $q_7$ appears in two coefficients and the parameter $q_6$ in none</strong>, so the displayed correspondence cannot be a bijection between the eight parameters and the four complex coefficients. Recorded as printed and not repaired here. The same section represents "the Hodge operator" by the element $-ie_t$, its equation (31), a statement whose symbol $\varepsilon$ is not defined anywhere in the source and whose content cannot be recovered from the page; it is recorded as printed and nothing is built on it.</p>
 <p><strong>The second short section writes four $4\times4$ arrays in element form and attributes the representation to Silvis (2010)</strong>; that attribution is the only place in this corpus where Silvis is named. Two things are visible on the page without any reconstruction. The first array, with $1,1,-1,-1$ on its diagonal, is sent to the two diagonal places both carrying $e_t$, which is the identity: the second of the two is printed with $e_t$ where the minus of the $4\times4$ array should stand, so that as printed the image of that array is the identity and not the pair $(e_t,-e_t)$. The three places off the diagonal are printed with $-i\vec e_x$ above and $i\vec e_x$ below, and the same with $\vec e_z$ and with $\vec e_y$.</p>
-<p><strong>The corpus's side of the same correspondence is in <em>Matrix Representations Conventions<em>, §</em>The Legacy Pauli Gamma Formulation</em></strong>, in the mostly-minus convention: a timelike generator off the diagonal with $e_t$ in both places, and three spacelike generators off the diagonal with $i\vec e_k$ above and $-i\vec e_k$ below. The two sets differ in two ways and agree in the algebra: the source's first array is diagonal where the corpus's timelike generator is off-diagonal, and the source's three spacelike places are the negatives of the corpus's, a sign that flips all three odd elements at once and therefore leaves every product unchanged. Which elements carry which axes is again the source's own table.</p>
+<p><strong>The corpus's side of the same correspondence is in <em>Matrix Representations Conventions<em>, §</em>The Legacy Pauli Gamma Formulation</em></strong>, in the mostly-minus convention: a timelike generator off the diagonal with $e_t$ in both places, and three spacelike generators off the diagonal with $i\vec e_\eta$ above and $-i\vec e_\eta$ below. The two sets differ in two ways and agree in the algebra: the source's first array is diagonal where the corpus's timelike generator is off-diagonal, and the source's three spacelike places are the negatives of the corpus's, a sign that flips all three odd elements at once and therefore leaves every product unchanged. Which elements carry which axes is again the source's own table.</p>
 <h2 id="what-is-verified-and-what-is-not">What Is Verified and What Is Not</h2>
 <ul>
 <li>The four values of the source's table, exactly.</li>
@@ -392,7 +392,7 @@ $$</p>
 \gamma_0=iL_{\mathrm{axf},e_t}R_{\mathrm{axf},\vec e_x},\quad \gamma_1=iL_{\mathrm{axf},\vec e_x}R_{\mathrm{axf},\vec e_y},\quad \gamma_2=iL_{\mathrm{axf},\vec e_y}R_{\mathrm{axf},\vec e_y},\quad \gamma_3=iL_{\mathrm{axf},\vec e_z}R_{\mathrm{axf},\vec e_y},\quad \gamma_5=-iL_{\mathrm{axf},e_t}R_{\mathrm{axf},\vec e_z} .
 $$</p>
 <p>A single product is a pure tensor; the products form the seven-dimensional cone $\operatorname{rank}c(M)\le1$, and a general element is a sum of at most four, with $\ell(M)=\operatorname{rank}c(M)$.</p>
-<p><strong>The two Dirac equations.</strong> The corpus carries two forms of one dynamics, and the difference between them is where the second chirality slot sits. With the biquaternionic gradient $\tilde\nabla=e_t\partial/\partial R_t+\sum_k\vec e_k\partial/\partial R_k$ and its conjugate $\tilde\nabla^{\natural}$, the <strong>one-sided</strong> form is the chiral pair</p>
+<p><strong>The two Dirac equations.</strong> The corpus carries two forms of one dynamics, and the difference between them is where the second chirality slot sits. With the biquaternionic gradient $\tilde\nabla=e_t\partial/\partial R_t+\sum_\eta\vec e_\eta\partial/\partial R_\eta$ and its conjugate $\tilde\nabla^{\natural}$, the <strong>one-sided</strong> form is the chiral pair</p>
 <p>$$
 \tilde\nabla\tilde{Ξ}_{\mathrm{sp},R}=k_m\tilde{Ξ}_{\mathrm{sp},L},\qquad
 \tilde\nabla^{\natural}\tilde{Ξ}_{\mathrm{sp},L}=k_m\tilde{Ξ}_{\mathrm{sp},R},
@@ -401,7 +401,7 @@ $$</p>
 <p>$$
 \left(i\frac{\partial}{\partial r'_t}+D_3\right)F-k_mi\,\overline{F}\,\vec e_z=0,
 \qquad
-D_3=\sum_k\vec e_k\frac{\partial}{\partial R_k},
+D_3=\sum_\eta\vec e_\eta\frac{\partial}{\partial R_\eta},
 $$</p>
 <p>with the derivative acting from the left, the bar the antilinear entry, and $\vec e_z$ multiplying from the right after the conjugation. The two are one operator read from two sides: since $i\partial/\partial r'_t=-\partial/\partial R_t$ in these units, the free part is $-\tilde\nabla^{\natural}$, and the equation reads</p>
 <p>$$
@@ -475,7 +475,7 @@ $$</p>
 <td>The source's spin operators; equal to $-\tilde S_{\Psi,3}, -\tilde S_{\Psi,2}, -\tilde S_{\Psi,1}$</td>
 </tr>
 <tr>
-<td>$\tilde S_{\Psi,k} =\frac{m\,c}{2\,k_m}i\vec e_k$</td>
+<td>$\tilde S_{\Psi,\eta} =\frac{m\,c}{2\,k_m}i\vec e_\eta$</td>
 <td>The corpus's spin operators</td>
 </tr>
 <tr>

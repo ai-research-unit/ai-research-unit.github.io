@@ -71,7 +71,7 @@
         <h1 id="landau-levels-in-biquaternionic-form"><strong>Landau Levels in Biquaternionic Form</strong></h1>
 <h2 id="introduction">Introduction</h2>
 <p>A charged particle in a uniform magnetic field has a discrete energy spectrum — the Landau levels — even though it is free in the field direction. The problem is the simplest exactly solvable system in which the Hamiltonian depends on a gauge potential, and it is the non-relativistic cornerstone of the quantum Hall effect. This article solves it in the biquaternion framework and reads the result algebraically.</p>
-<p>The biquaternion content is a single, decisive fact: the <strong>magnetic field enters the Hamiltonian as a central commutator</strong>. The mechanical momentum $\tilde\pi_k=(p_k-ϙA_k)e_t$ is Hermitian in $\mathbb{B}_{\Psi}$ and central, and its two transverse components do not commute. Their commutator is a pure imaginary multiple of $e_t$,</p>
+<p>The biquaternion content is a single, decisive fact: the <strong>magnetic field enters the Hamiltonian as a central commutator</strong>. The mechanical momentum $\tilde\pi_\eta=(p_\eta-ϙA_\eta)e_t$ is Hermitian in $\mathbb{B}_{\Psi}$ and central, and its two transverse components do not commute. Their commutator is a pure imaginary multiple of $e_t$,</p>
 <p>$$
 [\tilde\pi_x,\tilde\pi_y]=\frac{m\,c\,i\,ϙ}{k_m}B_z\,e_t ,
 $$</p>
@@ -83,16 +83,16 @@ $$</p>
 <p>The non-relativistic Hamiltonian of a charge $ϙ$ in a vector potential $\vec A(\vec r)$ and a scalar potential $\xi_{\mathrm{scp}}(\vec r)$ is</p>
 <p>$$
 H=\left[\frac{1}{2\,m}\left(\vec p-ϙ\vec A\right)^2+ϙ\xi_{\mathrm{scp}}\right]e_t
-=\frac{1}{2\,m}\sum_k\tilde\pi_k^2 ,
+=\frac{1}{2\,m}\sum_\eta\tilde\pi_\eta^2 ,
 \qquad
-\tilde\pi_k=\left(p_k-ϙA_k\right)e_t ,
+\tilde\pi_\eta=\left(p_\eta-ϙA_\eta\right)e_t ,
 $$</p>
-<p>where each $\tilde\pi_k$ is a central Hermitian operator (a multiple of $e_t$) and the sum is over the three spatial directions. Because $A_k$ and $\xi_{\mathrm{scp}}$ are ordinary real functions of position, they multiply the central element $e_t$, and the Hamiltonian is central. The mechanical momentum components act on the envelope and multiply by $e_t$, so they commute with the module. The magnetic field changes the Hamiltonian's spectrum by changing the operator algebra of the envelope; it does not touch the module.</p>
+<p>where each $\tilde\pi_\eta$ is a central Hermitian operator (a multiple of $e_t$) and the sum is over the three spatial directions. Because $A_\eta$ and $\xi_{\mathrm{scp}}$ are ordinary real functions of position, they multiply the central element $e_t$, and the Hamiltonian is central. The mechanical momentum components act on the envelope and multiply by $e_t$, so they commute with the module. The magnetic field changes the Hamiltonian's spectrum by changing the operator algebra of the envelope; it does not touch the module.</p>
 <p>For a uniform field $\vec B=B\vec u_z$ the vector potential can be chosen in many gauges, all related by $\vec A\to\vec A+\nabla\lambda$, and the spectrum is gauge invariant. In the biquaternion interpretation the gauge freedom is a freedom in the central part of the operator algebra: $\lambda$ is a real scalar and $\nabla\lambda$ is a real quaternion, so the gauge transformation shifts $\tilde\pi$ by a real-vector multiple of $e_t$ and leaves the central structure untouched. The field strength, which is gauge invariant, is the object with algebraic meaning.</p>
 <h3 id="the-field-strength-as-a-central-commutator">The field strength as a central commutator</h3>
 <p>The components of the mechanical momentum do not commute. With the convention $\vec B=\nabla\times\vec A$, a direct computation gives</p>
 <p>$$
-\boxed{\;[\tilde\pi_k,\tilde\pi_l]=\frac{m\,c\,i\,ϙ}{k_m}\,\varepsilon_{klm}B_m\,e_t\;},
+\boxed{\;[\tilde\pi_\eta,\tilde\pi_l]=\frac{m\,c\,i\,ϙ}{k_m}\,\varepsilon_{\eta lm}B_m\,e_t\;},
 $$</p>
 <p>so that, for $\vec B=B\vec u_z$,</p>
 <p>$$
@@ -173,7 +173,7 @@ L_{\mathrm{orb},z}=(\vec r\times p)_z
 $$</p>
 <p>is conserved, and it is central. The transverse problem has two independent oscillator structures: the <strong>cyclotron</strong> ladder, built from $\tilde\pi_x$ and $\tilde\pi_y$, which raises the energy by $\frac{m\,c\,\omega_{c}}{k_m}$, and the <strong>guiding-centre</strong> ladder, built from the centre-of-orbit coordinates</p>
 <p>$$
-R_k=x_k+\frac{1}{m\omega_c^{\mathrm{s}}}\,\varepsilon_{klm}\,\tilde\pi_l\,\vec u_{B,m} ,
+R_\eta=x_\eta+\frac{1}{m\omega_c^{\mathrm{s}}}\,\varepsilon_{\eta lm}\,\tilde\pi_l\,\vec u_{B,m} ,
 \qquad
 \omega_c^{\mathrm{s}}=\frac{ϙB}{m} ,
 $$</p>
@@ -238,9 +238,9 @@ $$</p>
 <p><strong>3. What happens at the zero divisor cone?</strong> The mechanical momenta are central Hermitian operators, and their eigenvalues are real; the null cone of $\mathbb{B}_{\Phi}$ is not reached. Whether a limiting field or a critical point brings the algebra closer to the cone is open.</p>
 <p><strong>4. Empirical content.</strong> Nothing in the Landau-level reformulation distinguishes it from scalar Landau-level quantum physics.</p>
 <h2 id="summary">Summary</h2>
-<p>The biquaternion Hamiltonian of a spin-0 charge in a uniform magnetic field is central, $H=\frac{1}{2\,m}\sum_k\tilde\pi_k^2$ with $\tilde\pi_k=(p_k-ϙA_k)e_t$, and the field strength is the central commutator</p>
+<p>The biquaternion Hamiltonian of a spin-0 charge in a uniform magnetic field is central, $H=\frac{1}{2\,m}\sum_\eta\tilde\pi_\eta^2$ with $\tilde\pi_\eta=(p_\eta-ϙA_\eta)e_t$, and the field strength is the central commutator</p>
 <p>$$
-[\tilde\pi_k,\tilde\pi_l]=\frac{m\,c\,i\,ϙ}{k_m}\varepsilon_{klm}B_m\,e_t ,
+[\tilde\pi_\eta,\tilde\pi_l]=\frac{m\,c\,i\,ϙ}{k_m}\varepsilon_{\eta lm}B_m\,e_t ,
 \qquad
 [\tilde\pi_x,\tilde\pi_y]=\frac{m\,c\,i\,ϙ\,B}{k_m}\,e_t ,
 $$</p>
@@ -288,11 +288,11 @@ $$</p>
 <td>State module</td>
 </tr>
 <tr>
-<td>$\tilde\pi_k=(p_k-ϙA_k)e_t$</td>
+<td>$\tilde\pi_\eta=(p_\eta-ϙA_\eta)e_t$</td>
 <td>Mechanical momentum; central Hermitian</td>
 </tr>
 <tr>
-<td>$[\tilde\pi_k,\tilde\pi_l]=\frac{m\,c\,i\,ϙ}{k_m}\varepsilon_{klm}B_me_t$</td>
+<td>$[\tilde\pi_\eta,\tilde\pi_l]=\frac{m\,c\,i\,ϙ}{k_m}\varepsilon_{\eta lm}B_me_t$</td>
 <td>Central field-strength commutator</td>
 </tr>
 <tr>
@@ -324,7 +324,7 @@ $$</p>
 <td>Conserved central angular momentum (symmetric gauge)</td>
 </tr>
 <tr>
-<td>$R_k$</td>
+<td>$R_\eta$</td>
 <td>Guiding-centre operators; commute with $H$</td>
 </tr>
 <tr>

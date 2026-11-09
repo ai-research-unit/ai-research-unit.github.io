@@ -1,0 +1,915 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Wavenumber Migration: One Letter, Four Wave Numbers — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="wavenumber-migration-one-letter-four-wave-numbers"><strong>Wavenumber Migration: One Letter, Four Wave Numbers</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p><strong>What this article is.</strong> It is an internal article. It fixes no mathematics and it edits no article. It measures the physics corpus against one decision, lists the articles that contradict it with a link to each, and proposes a migration in phases.</p>
+<p><strong>The decision recorded here.</strong> The letter $k$ is the wave-number letter. It is not the spatial index. A wave number written with another letter, or with a bare $k$ that does not say which of the four it is, is a deviation.</p>
+<p><strong>The finding, in one sentence.</strong> Fifty-one of the 440 physics articles write a wave number with a letter that is not $k$, or with a bare $k$ that leaves the reader to guess which wave number is meant.</p>
+<p><strong>Why the letter needs its subscripts.</strong> The corpus has four wave numbers, and one letter names all four. $k_m$ is the mass wave number, $k_\Phi$ the momentum one, $k_{t}^{\prime}$ the temporal one, and $k_{\mathrm{eu}}$ the Euclidean one. A bare $k$ therefore says <em>wave number</em> and nothing more. The sector and the role say which.</p>
+<p><strong>A warning about the size of the job.</strong> The corpus carries $\vec e_k^2=-e_t$ on 293 lines, in 294 occurrences. A textual substitution on $k$ rewrites the basis in its first minute. Every pass below is a reading pass on one article, and no pass is a <code>sed</code>.</p>
+<h2 id="what-the-conventions-already-fix">What the Conventions Already Fix</h2>
+<p><strong>The four wave numbers, from one element.</strong> <em>Physics Units and Common Elements Conventions</em>, §<em>Physical Units</em>, defines the wave number by one division: $\tilde K_{\Phi}=\tilde P_\Phi/\hbar=i k_{t}^{\prime}e_t+\vec k_\Phi$, with $k_{t}^{\prime}=E/(\hbar c)$, $\vec k_\Phi=\vec p_\Phi/\hbar$, $k_\Phi=\lvert\vec k_\Phi\rvert$ and $\tilde K_{\Phi}\tilde K_{\Phi}^{\natural}=-k_m^{2}$. The scalar coefficient, the modulus of the vector part and the norm are the three wave numbers of a particle. The fourth, $k_{\mathrm{eu}}$, is the Euclidean momentum after a Wick rotation.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Glyph</th>
+<th>What it is</th>
+<th>Where it is fixed</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$k_m$</td>
+<td>the mass wave number, $mc/\hbar$</td>
+<td>§<em>Physical Units</em>, row <em>Wave number, mass</em></td>
+</tr>
+<tr>
+<td>$\vec k_\Phi$, $k_\Phi$</td>
+<td>the momentum wave number, $\vec p_\Phi/\hbar$ and its modulus</td>
+<td>row <em>Wave number, momentum</em></td>
+</tr>
+<tr>
+<td>$k_{\Phi x},k_{\Phi y},k_{\Phi z}$</td>
+<td>the components of $\vec k_\Phi$</td>
+<td>§<em>The Four-Vectors and the Currents</em>, row $\tilde K_{\Phi}$</td>
+</tr>
+<tr>
+<td>$k_{t}^{\prime}$</td>
+<td>the temporal wave number, $E/(\hbar c)$</td>
+<td>row <em>Wave number, energy</em></td>
+</tr>
+<tr>
+<td>$k_{\mathrm{eu}}$</td>
+<td>the Euclidean wave number</td>
+<td>§<em>A caution on $k$</em></td>
+</tr>
+<tr>
+<td>$\lambda_m,\lambda_\Phi,\lambda_t$</td>
+<td>the three lengths, always inversions</td>
+<td>§<em>A caution on $\lambda$</em></td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>The paragraph that said the opposite has been corrected.</strong> <em>A caution on $k$</em> used to open with one erroneous sentence: "The letter $k$ is the spatial index of this corpus: $\vec e_k$, $p_k$, $\sum_k$. A wave number therefore never takes a bare $k$." It is now deleted from the article, and three other statements were corrected with it: the paragraph <em>Why a subscript at all</em> of <em>The Three Wavenumbers of a Particle</em>, and the clause <em>the spatial index</em> in <em>The Electric Dipole Moment and the Biquaternion Anti-Hermitian Structure</em>, where $k$ is the third quaternion unit and not an index at all.</p>
+<p>That sentence was erroneous for three reasons. It contradicted the table printed above it, which writes the corpus's three wave numbers as $k_m$, $k_\Phi$ and $k_{t}^{\prime}$. It contradicted the corpus, which writes those three glyphs in 127 articles. And it contradicted the rest of its own paragraph, which defines $k_{t}^{\prime}$, $k_\Phi$ and $k_m$ in the sentences that follow.</p>
+<p><strong>What replaces it.</strong> One sentence, and it is the whole of the rule the migration needs: the letter $k$ is the wave-number letter, four wave numbers share it, and a bare $k$ names none of them. The migration below rests on the subscripts, not on the letter being taken.</p>
+<p><strong>The consequence for the index, which is now the open question.</strong> $k$ is not the index letter, and the corpus writes it as one on 2650 lines in 338 files: $\vec e_k$, $\sum_k$, $p_k$, $\vec u_k$, $\tilde S_{\Psi,k}$, $\varepsilon_{ijk}$. Those lines have no licensed reading under the corrected rule. Six options are costed in §<em>The Index Letter</em>, and none is applied here.</p>
+<p><strong>What is licensed and must not be touched.</strong></p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Spelling</th>
+<th>What it is</th>
+<th>Licensed by</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\omega_k$</td>
+<td>an angular frequency whose mode is labelled</td>
+<td>§<em>A frequency is a rate; a mode energy is $\hbar$ times it</em></td>
+</tr>
+<tr>
+<td>$k_B$</td>
+<td>the Boltzmann constant</td>
+<td>the units table, row <em>Temperature</em></td>
+</tr>
+<tr>
+<td>$k_{\mathrm{eu}}$</td>
+<td>the Euclidean wave number</td>
+<td>§<em>A caution on $k$</em></td>
+</tr>
+<tr>
+<td>$k=\eta+t\zeta$</td>
+<td>the quaternionic variable of the mathematical corpus</td>
+<td>the mathematical <em>Algebra and Element Conventions</em></td>
+</tr>
+<tr>
+<td>$\kappa(A)$</td>
+<td>a condition number</td>
+<td>the mathematical <em>Matrix Representations Conventions</em></td>
+</tr>
+<tr>
+<td>Bondi's Doppler factor, the null paravector</td>
+<td>two letters of single articles</td>
+<td>the articles that use them</td>
+</tr>
+<tr>
+<td>$q$, $\tilde q$</td>
+<td>the canonical coordinate and the quaternion element</td>
+<td>§<em>The Layer Glyphs</em>, row $\tilde q$</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>The ordinary and the reduced wave number.</strong> The corpus works in the reduced wave number, radians per metre. A spectrometer's $\mathrm{cm^{-1}}$ is the ordinary one, $1/\lambda=k_\Phi/(2\pi)$. So $k=2\pi/\lambda$ is a deviation in letter only, and a pass that "corrects" it by a factor $2\pi$ introduces the error it means to remove.</p>
+<h2 id="the-measurement">The Measurement</h2>
+<p><strong>The measure.</strong> A line deviates when it carries one of these spellings in a wave-number sense:</p>
+<ul>
+<li>$k=\omega/c$, $k=\omega\sqrt{\epsilon\mu}$ or $k^2=\omega^2/c^2$, a wave number under the bare letter;</li>
+<li>$k\,\vec u_k$ or $\vec k_\Phi=k\vec u_k$, a modulus under the bare letter;</li>
+<li>an order statement, <em>order in $k$</em> or <em>order of $k$</em>;</li>
+<li>$D_3-k$ and its relatives, a shift of the spatial operator under the bare letter;</li>
+<li>$k=2\pi/\lambda$;</li>
+<li>$q$ or $\varpi$ for an axial wave number;</li>
+<li>$k_\mu$ for a wave covector, a null congruence or a neutral timelike direction;</li>
+<li>$d^3k$, $d^4k$, $\delta^{(3)}(\vec k-\vec k^{\prime})$, $k^2-m^2$ in natural units, a loop momentum;</li>
+<li>$\kappa$ for a decay constant, and $\kappa$ for a gauge coupling;</li>
+<li>$\vec k_\perp$ or $\vec k_t$, a subscript that is not one of the six allowed forms.</li>
+</ul>
+<p>The count is of lines, not of occurrences, because one display is repaired once.</p>
+<p><strong>The corpus, measured.</strong> 440 articles. 127 mention a wave number. 122 of those carry $k_m$, $k_\Phi$ or $\tilde K_\Phi$ and are compliant.</p>
+<p><strong>The five families, with their weight.</strong></p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Family</th>
+<th>What the article writes</th>
+<th>Articles</th>
+<th>Lines</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>one</td>
+<td>the medium wave number as a bare $k$</td>
+<td>12</td>
+<td>34</td>
+</tr>
+<tr>
+<td>two</td>
+<td>the axial wave number as $q$ or $\varpi$</td>
+<td>1</td>
+<td>4</td>
+</tr>
+<tr>
+<td>three</td>
+<td>a covariant $k_\mu$</td>
+<td>19</td>
+<td>85</td>
+</tr>
+<tr>
+<td>four</td>
+<td>the loop momentum as a bare $k$</td>
+<td>14</td>
+<td>32</td>
+</tr>
+<tr>
+<td>five</td>
+<td>the decay constant and the gauge coupling as $\kappa$</td>
+<td>3</td>
+<td>30</td>
+</tr>
+<tr>
+<td>the subscript set</td>
+<td>$\vec k_\perp$, $\vec k_t$, $\vec k_n$, $\vec k_i$</td>
+<td>4</td>
+<td>20</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>The union.</strong> 51 articles. The sum of the rows is 53 because two articles belong to two families. The sum of the rows is 205 lines, and it counts the two shared articles twice.</p>
+<h2 id="family-one-the-medium-wave-number-under-a-bare-math100">Family One: The Medium Wave Number Under a Bare $k$</h2>
+<p>The twelve articles write $k$ for $k_\Phi$ in a medium or in vacuum, and often write the modulus and the vector in one line, $\vec k_\Phi=k\vec u_k$. The rename is exact, because the corpus supplies the identity.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Article</th>
+<th>Menu section</th>
+<th>Lines</th>
+<th>What it writes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="../articles_physics/exercise-plane-wave-propagation-in-a-medium.html">Exercise: Plane-Wave Propagation in a Medium</a></td>
+<td>Exercises</td>
+<td>9</td>
+<td>$k^2=\omega^2/c^2$, $kz$ in the field display</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-relativistic-quadrupole-in-biquaternionic-form.html">The Relativistic Quadrupole</a></td>
+<td>Biquaternion Electromagnetism</td>
+<td>4</td>
+<td><em>order in $k$</em>, $k\vec u\cdot\vec r$ in the phase</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/maxwells-equations-in-chiral-media-the-quaternionic-reformulation.html">Maxwell's Equations in Chiral Media</a></td>
+<td>Biquaternion Electromagnetism</td>
+<td>3</td>
+<td>$k$, $k/(1\pm k\beta)$, $\alpha_1,\alpha_2$ for the two chiral numbers</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-time-harmonic-maxwell-operator-and-the-quaternionic-cauchy-integral.html">The Time-Harmonic Maxwell Operator</a></td>
+<td>Biquaternion Electromagnetism</td>
+<td>3</td>
+<td>$D_3-k$, $k=\omega\sqrt{\epsilon\mu}$</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/higher-multipoles-and-the-field-strength-decomposition-in-biquaternionic-form.html">Higher Multipoles and the Field-Strength Decomposition</a></td>
+<td>Biquaternion Electromagnetism</td>
+<td>3</td>
+<td><em>order in $k$</em>, beside $k_{t}^{\prime}$ at the dipole</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/maxwells-equations-in-the-biquaternionic-formulation.html">Maxwell's Equations in the Biquaternionic Formulation</a></td>
+<td>Biquaternion Electromagnetism</td>
+<td>2</td>
+<td>$\partial/\partial R_t=-k$ with $k=\omega/c$; $D_3-k$</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/exercise-the-relativistic-doppler-effect.html">Exercise: The Relativistic Doppler Effect</a></td>
+<td>Exercises</td>
+<td>2</td>
+<td>$k$, $k^{\prime}$ for the two wave numbers</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-double-slit-experiment-in-biquaternionic-form.html">The Double-Slit Experiment</a></td>
+<td>Biquaternion Optics</td>
+<td>2</td>
+<td>$k=2\pi/\lambda$</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/electromagnetism-in-media-the-local-complex-structure-at-work.html">Electromagnetism in Media</a></td>
+<td>Biquaternion Electromagnetism</td>
+<td>2</td>
+<td>$\alpha(\omega)$, the chiral parameter</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-dirac-equation-in-biquaternionic-form.html">The Dirac Equation</a></td>
+<td>Particles of spin $1/2$</td>
+<td>2</td>
+<td>$k$ in the plane-wave ansatz</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-boost-of-an-electromagnetic-plane-wave-as-a-rotation-and-a-dilation.html">The Boost of an Electromagnetic Plane Wave</a></td>
+<td>Biquaternion Electromagnetism</td>
+<td>1</td>
+<td>$k$ under the boost</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/scattering-for-the-quaternionic-dirac-operator-the-lippmann-schwinger-equation-the-radiation-condition-and-faddeevs-greens-function.html">Scattering for the Quaternionic Dirac Operator</a></td>
+<td>Scattering</td>
+<td>1</td>
+<td>$k$ in the Lippmann–Schwinger kernel</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Why the rename is exact.</strong> The medium articles supply the identity themselves, $\vec k_\Phi=k\vec u_k$ with $k=\omega/c$. The bare $k$ is the modulus, so $k_\Phi$ replaces it and no quantity moves.</p>
+<p><strong>The article that needs more than a rename.</strong> <em>Maxwell's Equations in Chiral Media</em> writes $\alpha_1$ and $\alpha_2$ for the two circular wave numbers. They are $k_{\Phi+}$ and $k_{\Phi-}$, with $k_{\Phi\pm}=k_\Phi/(1\pm k_\Phi\beta)$. The sign carries the polarisation and the sector precedes it, as $\tilde\Lambda_{\Phi,\mathrm{ret}}$ precedes its role.</p>
+<p><strong>Which wave number the Helmholtz shift takes.</strong> In <em>Maxwell's Equations in the Biquaternionic Formulation</em> the shift is $\partial/\partial R_t=-k$, so the number is the temporal one and the shift becomes $D_3-k_{t}^{\prime}$. A rename to $k_\Phi$ there would be right in value and wrong in origin, because the derivative is temporal.</p>
+<h2 id="family-two-the-axial-wave-number">Family Two: The Axial Wave Number</h2>
+<p>One article writes the axial slot as $q$ and the axial frequency as $\varpi$, and clamps them to a norm. The corpus has no axial letter, and $q$ is the canonical coordinate.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Article</th>
+<th>Menu section</th>
+<th>Lines</th>
+<th>What it writes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="../articles_physics/subluminal-and-superluminal-electromagnetic-waves-in-biquaternionic-form.html">Subluminal and Superluminal Electromagnetic Waves</a></td>
+<td>Biquaternion Electromagnetism</td>
+<td>4</td>
+<td>$\varpi^2-q^2=\Omega^2$; $\varpi$ and $q$ as the axial pair</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>The rename.</strong> $\varpi\to k_{t}^{\prime}$ and $q\to k_{\Phi,z}$, so the clamp reads $k_{t}^{\prime\,2}-k_{\Phi,z}^{2}=\Omega^{2}$, which is the corpus's own norm with the transverse part dropped.</p>
+<p><strong>Why $q$ is not free.</strong> $q$ is the canonical coordinate and $\tilde q$ the quaternion element of <em>The Layer Glyphs</em>. A pass that renames $q$ by text rewrites the mechanics articles. This family is one article and it is read, not swept.</p>
+<h2 id="family-three-the-covariant-math152">Family Three: The Covariant $k_\mu$</h2>
+<p>Nineteen articles write $k_\mu$ with a Greek index. The corpus has no covariant index: <em>Index and Notation Conventions</em>, §<em>The Upper and Low Marks</em>, says "No index is raised, because the one metric is the identity". The Greek index imports a metric the series does not have, and it borrows the wave-number letter for three objects, of which one is a wave number.</p>
+<p><strong>Object one, the wave covector. Fourteen articles, 38 lines.</strong> These are wave numbers and become $k_{t}^{\prime}$ and $\vec k_\Phi$ with its components.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Article</th>
+<th>Menu section</th>
+<th>Lines</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="../articles_physics/the-s-vector-representation-of-the-dirac-spinor-in-biquaternionic-form.html">The S-Vector Representation of the Dirac Spinor</a></td>
+<td>Particles of spin $1/2$</td>
+<td>13</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/exercise-the-electromagnetic-energy-momentum-tensor.html">Exercise: The Electromagnetic Energy–Momentum Tensor</a></td>
+<td>Exercises</td>
+<td>6</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-qcd-lagrangian-colour-the-triplet-the-octet-and-the-feynman-rules.html">The QCD Lagrangian</a></td>
+<td>The Strong Interaction</td>
+<td>6</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-lorentz-force-in-biquaternion-form.html">The Lorentz Force</a></td>
+<td>Biquaternion Electromagnetism</td>
+<td>3</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/maxwells-theory-on-non-commutative-spaces-and-quaternions.html">Maxwell's Theory on Non-Commutative Spaces</a></td>
+<td>Biquaternion Electromagnetism</td>
+<td>3</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-einstein-field-equations-under-the-biquaternion-framework-a-research-agenda.html">The Einstein Field Equations</a></td>
+<td>Gravitation</td>
+<td>3</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/matter-makes-space-an-external-construction-from-quaternionic-spinors.html">Matter Makes Space</a></td>
+<td>Gravitation</td>
+<td>3</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-parton-model-and-deep-inelastic-scattering.html">The Parton Model and Deep Inelastic Scattering</a></td>
+<td>The Strong Interaction</td>
+<td>3</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-anomalous-magnetic-moment-in-biquaternionic-form.html">The Anomalous Magnetic Moment</a></td>
+<td>Quantum Electrodynamics</td>
+<td>2</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-minimal-coupling-of-the-biquaternion-dirac-field-to-electromagnetism.html">The Minimal Coupling</a></td>
+<td>Biquaternion Electromagnetism</td>
+<td>2</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/gravitational-waves-in-biquaternionic-form.html">Gravitational Waves</a></td>
+<td>Gravitation</td>
+<td>2</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/gauge-redundancy-and-the-information-in-the-gauge-orbit-in-biquaternionic-form.html">Gauge Redundancy</a></td>
+<td>Biquaternion Electromagnetism</td>
+<td>2</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/linearized-gravity-in-biquaternionic-form.html">Linearized Gravity</a></td>
+<td>Gravitation</td>
+<td>1</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-fujikawa-method-and-the-path-integral-anomaly-in-biquaternionic-form.html">The Fujikawa Method</a></td>
+<td>Quantum Field Theory</td>
+<td>1</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Object two, the Kerr–Schild congruence. Two articles, 26 lines.</strong> Here $k_\mu$ is a null direction and not a wave number. It becomes $\tilde{\mathcal L}_{\Phi,\mathrm{null}}$, the glyph the conventions already assign to it.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Article</th>
+<th>Menu section</th>
+<th>Lines</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="../articles_physics/curved-spacetime-and-the-biquaternion-framework.html">Curved Spacetime and the Biquaternion Framework</a></td>
+<td>Gravitation</td>
+<td>23</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-algebrodynamical-programme-nonlinear-cauchy-riemann-conditions-self-quantized-charge-and-induced-causal-geometry.html">The Algebrodynamical Programme</a></td>
+<td>Gravitation</td>
+<td>3</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Object three, a neutral timelike direction. Three articles, 21 lines.</strong> Here $k_\mu$ carries $k_\mu g_{\mu\nu}k_\nu=1$ and names a preferred direction. It is neither a wave number nor a momentum, and the wave-number letter is the wrong letter for it.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Article</th>
+<th>Menu section</th>
+<th>Lines</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="../articles_physics/triality-and-the-ding-construction-for-the-dirac-spinor-in-biquaternionic-form.html">Triality and the Ding Construction</a></td>
+<td>Particles of spin $1/2$</td>
+<td>6</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/dual-equivalence-of-the-dirac-and-topologically-massive-gauge-fields.html">Dual Equivalence</a></td>
+<td>Biquaternion Electromagnetism</td>
+<td>2</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-first-order-root-of-the-biquaternion-klein-gordon-operator.html">The First-Order Root of the Klein–Gordon Operator</a></td>
+<td>Particles of spin $0$</td>
+<td>1</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Nothing is renamed in Family Three until object three has a letter.</strong> Two objects are not wave numbers, and one spelling covers all three. A pass that renames the nineteen to $k_\Phi$ mislabels 47 lines.</p>
+<h2 id="family-four-the-loop-momentum">Family Four: The Loop Momentum</h2>
+<p>Fourteen articles write the loop momentum as $k$ and drop $\hbar$. The letter is not the only fault: with $k$ in natural units a momentum becomes a reciprocal length, which <em>Physics Units and Common Elements Conventions</em>, §<em>The shortcut $\hbar=c=1$ is not allowed</em>, forbids.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Article</th>
+<th>Menu section</th>
+<th>Lines</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="../articles_physics/scalar-pair-creation-in-biquaternionic-form.html">Scalar Pair Creation</a></td>
+<td>Particles of spin $0$</td>
+<td>5</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-vacuum-state-and-the-casimir-effect-in-biquaternionic-form.html">The Vacuum State and the Casimir Effect</a></td>
+<td>Quantum Field Theory</td>
+<td>4</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-free-particle-and-wave-packets-in-biquaternionic-form.html">The Free Particle and Wave Packets</a></td>
+<td>Particles of spin $0$</td>
+<td>3</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/canonical-quantization-of-the-biquaternion-maxwell-field.html">Canonical Quantization of the Biquaternion Maxwell Field</a></td>
+<td>Quantum Field Theory</td>
+<td>3</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-renormalization-group-in-biquaternionic-form.html">The Renormalization Group</a></td>
+<td>Quantum Field Theory</td>
+<td>2</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-generating-functional-and-the-effective-action-in-biquaternionic-form.html">The Generating Functional and the Effective Action</a></td>
+<td>Quantum Field Theory</td>
+<td>2</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/exercise-the-retarded-potentials-and-the-greens-function.html">Exercise: The Retarded Potentials and the Green's Function</a></td>
+<td>Exercises</td>
+<td>2</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/physics-units-and-common-elements-conventions.html">Physics Units and Common Elements Conventions</a></td>
+<td>Conventions</td>
+<td>2</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/fock-space-and-creation-annihilation-operators-in-biquaternionic-form.html">Fock Space and Creation–Annihilation Operators</a></td>
+<td>Quantum Field Theory</td>
+<td>2</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/jets-the-qcd-cross-section-and-the-infrared-structure.html">Jets and the QCD Cross Section</a></td>
+<td>The Strong Interaction</td>
+<td>2</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-photon-in-biquaternionic-form.html">The Photon</a></td>
+<td>Particles of spin $1$ and above</td>
+<td>2</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/canonical-quantization-of-the-biquaternion-dirac-field.html">Canonical Quantization of the Biquaternion Dirac Field</a></td>
+<td>Quantum Field Theory</td>
+<td>1</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-functional-integral-in-biquaternionic-form.html">The Functional Integral</a></td>
+<td>Quantum Field Theory</td>
+<td>1</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-qcd-lagrangian-colour-the-triplet-the-octet-and-the-feynman-rules.html">The QCD Lagrangian</a></td>
+<td>The Strong Interaction</td>
+<td>1</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Two readings are available.</strong> Either the loop momentum is $p$, with the measure $\frac{d^3p}{(2\pi\hbar)^3}$ and the commutator $(2\pi\hbar)^3\delta^{(3)}$ the corpus already writes, or it is $k_\Phi$, with $\frac{d^3k_\Phi}{(2\pi)^3}$ and the measure converted. The paragraph <em>One label per commutator</em> writes both and forbids mixing them inside one display.</p>
+<p><strong>This family is deferred.</strong> It is the only one whose repair changes what a display means, and it needs a choice of the author. Until then the fourteen articles stand unchanged.</p>
+<h2 id="family-five-the-letter-math176">Family Five: The Letter $\kappa$</h2>
+<p>Three articles write the evanescent decay constant as a bare $\kappa$, and ten write the gauge coupling as $\kappa\mathcal A$. The conventions reserve $\kappa$ for the retarded denominator $\kappa=1-\vec u_R\cdot\vec\beta$ of $\tilde\Lambda_{\Phi,\mathrm{ret}}$. The coupling is the defect; the denominator is the licensed use.</p>
+<p><strong>The decay constant. Three articles, 30 lines.</strong></p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Article</th>
+<th>Menu section</th>
+<th>Lines</th>
+<th>What it writes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="../articles_physics/one-dimensional-scattering-in-biquaternionic-form.html">One-Dimensional Scattering</a></td>
+<td>Scattering</td>
+<td>17</td>
+<td>$k_j$ imaginary with $\kappa_j=\sqrt{2m(V_j-E)}\,k_m/(mc)$, and $\kappa$ in the transmission coefficient</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/pair-creation-in-a-bounded-region-in-biquaternionic-form.html">Pair Creation in a Bounded Region</a></td>
+<td>Particles of spin $0$</td>
+<td>9</td>
+<td>$\kappa$ in the evanescent solution</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-klein-paradox-in-biquaternionic-form.html">The Klein Paradox</a></td>
+<td>Particles of spin $0$</td>
+<td>4</td>
+<td>$\kappa$ in the step potential</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>The repair is one sentence, not a rename.</strong> The wave number is already $k_{\Phi,j}$ and it is imaginary below the barrier. Write $\kappa_j=\lvert k_{\Phi,j}\rvert$ once, where the display is made, and keep $\kappa_j$ thereafter. No symbol moves.</p>
+<p><strong>The gauge coupling. Ten articles, one line each.</strong> The spelling $\tilde\nabla+i\kappa\mathcal A$ is one object under two spellings, with $\kappa=k_mϙ/(mc)$ and $\mathcal A=\tilde A_\Phi$. <em>Operator and Calculus Conventions</em>, §<em>The coupling, and the letter $\kappa$</em>, states that the series writes $\frac{k_m\,i\,ϙ}{m\,c}\tilde A_\Phi$ and that $\kappa$ stays free for the retarded denominator. The ten lines are on the wrong side of that paragraph.</p>
+<h2 id="the-subscript-set">The Subscript Set</h2>
+<p>Four articles write a wave vector with a subscript that is not one of the six allowed forms of <em>Index and Notation Conventions</em>, §<em>The Subscripts</em>: a digit, a letter, two indices, a sign, an upright word, a grouped expression. None is a numeral defect, because a numeral counts an element and that article licenses it.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Article</th>
+<th>Menu section</th>
+<th>Lines</th>
+<th>What it writes</th>
+<th>Why it fails</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="../articles_physics/the-vacuum-state-and-the-casimir-effect-in-biquaternionic-form.html">The Vacuum State and the Casimir Effect</a></td>
+<td>Quantum Field Theory</td>
+<td>14</td>
+<td>$\vec k_\perp$</td>
+<td>$\perp$ is not one of the six forms; the transverse part is $\vec k_{\Phi,\mathrm{tr}}$</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-klein-gordon-path-integral-in-biquaternionic-form.html">The Klein–Gordon Path Integral</a></td>
+<td>Particles of spin $0$</td>
+<td>3</td>
+<td>$\vec k_n$</td>
+<td>the letter $n$ reads as a slot, not as a mode; the second mode is $\vec k_\Phi^{\prime}$</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/stress-energy-conservation-laws-and-the-field-action-in-biquaternionic-form.html">Stress-Energy Conservation and the Field Action</a></td>
+<td>Generalities</td>
+<td>2</td>
+<td>$\vec k_i$</td>
+<td>$i$ reads as the component slot</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-light-cone-as-the-biquaternion-zero-divisor-cone.html">The Light Cone as the Zero-Divisor Cone</a></td>
+<td>Generalities</td>
+<td>1</td>
+<td>$\vec k_i$</td>
+<td>the same</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>What is not a deviation.</strong> $\vec k_1,\vec k_2,\vec k_3$ and $\vec k_{\Phi,i}$ are compliant. A numeral counts elements and a letter names a component, and the corpus writes both. The paragraph <em>A letter that names two objects is renamed, not relabelled</em> does not reach them.</p>
+<h2 id="the-index-letter">The Index Letter</h2>
+<p><strong>What the index is.</strong> It is not a glyph. It is the subscript position, and the corpus puts $k$ in it under ten different base glyphs: $\vec e_k$ on 1410 lines, $\vec u_k$ on 255, $r_k$ and $R_k$ on 250, $\tilde S_{\Psi,k}$ on 170, $\varepsilon_{ijk}$ on 145, $p_k$ on 127, $\gamma_k$ on 107, $A_k$ on 45, $v_k$ on 16, $\sum_k$ on 12. The union is 2650 lines in 338 files. Any option is costed on that union and not on $\vec e_k$ alone.</p>
+<p><strong>The one hard constraint.</strong> $\varepsilon_{ijk}$ and the commutators $[\tilde S_{\Psi,i},\tilde S_{\Psi,j}]=\frac{m\,c\,i\,\epsilon_{ijk}\tilde S_{\Psi,k}}{k_m}$ need three <em>distinct dummy</em> slots in one expression. An option that replaces the slot by a named axis destroys them. This eliminates four of the six options for those 157 lines and leaves the rest of the surface free.</p>
+<p><strong>Option D. The upright label.</strong> $\vec e_{\mathrm{k}}$, $p_{\mathrm{k}}$, $\sum_{\mathrm{k}}$. Zero occurrences today. An upright word is one of the six legal subscript forms, and the corpus already writes $\mathrm{ret}$, $\mathrm{fop}$, $\mathrm{scp}$, $k_{\mathrm{eu}}$.</p>
+<p>Cost: 2650 lines, 338 files, and the edit is a case change inside the subscript. Failure: the corpus's upright labels are words of two or more letters; a single upright letter is new. The distinction is also invisible in handwriting and fragile in a diff that ignores case.</p>
+<p><strong>Option E. The explicit axes.</strong> $\vec e_x$, $p_x$, $\sum_{j=x,y,z}$. $\vec e_x$ already appears 14723 times. Cost: 2650 lines, and each sum expands to three terms. Failure: the dummy slots of $\varepsilon_{ijk}$ cannot be axes, so 157 lines keep a letter anyway; and the operator conventions forbid expanding a sum that stands inside a display.</p>
+<p><strong>Option F. A Greek dummy.</strong> $\vec e_\varsigma$, $\varepsilon_{\varsigma\eta\zeta}$. The letters $\varsigma$, $\chi$, $\upsilon$ and $\phi$ are unused in subscript position. Cost: 2650 lines. Failure: Greek is the four-slot layer, $\mu$ and $\nu$, so a Greek spatial slot contradicts §<em>The Layer Glyphs</em>; and three Greek letters inside one $\varepsilon$ are unreadable.</p>
+<p><strong>Option G. The split by role.</strong> The letter stays where the subscript names a <em>unit</em>, $\vec e_k$ and $\sum_k\vec e_k$, 1410 lines; the component coefficients take the axes the corpus already writes, $p_x$, $u_x$, $r_x$, $\gamma_x$, about 970 lines. Cost: 970 lines. Failure: the same letter then means an index in one display and a wave number in the next, which is the defect the migration removes.</p>
+<p><strong>Option H. The numeral basis.</strong> $\vec e_1,\vec e_2,\vec e_3$ for the units, the axes for the components, and three spare letters only inside $\varepsilon$ and the commutators. Cost: 1410 lines of basis plus 970 of components, but the letter surface falls from 2650 lines to about 157. A numeral counts an element, which §<em>The Index and the Slots</em> licenses, and $\vec e_1$ is an element and not a coefficient.</p>
+<p>Failure: the numerals $1,2,3$ already label the modes $\vec k_1,\vec k_2$ on 101 lines, so the same numeral would count an element in one article and a mode in the next; and it gives the three units a number where every other unit of the algebra, $e_t$ and $\vec e_x$, has a letter.</p>
+<p><strong>Option I. The position rule.</strong> A bare $k$ is the index; $k$ with a subscript is a wave number. Cost: 105 lines, the twelve articles of Family One, which gain a subscript. Failure: it gives the letter a second meaning, which is what the correction forbids, and it is the deleted sentence restored with a caveat. It is listed because it is the cheapest and because the corpus already reads it that way in $\frac{m\,c}{2k_m}i\vec e_k$.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Option</th>
+<th>Spelling</th>
+<th>Lines touched</th>
+<th>Keeps $\varepsilon_{ijk}$</th>
+<th>Verdict</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>D</td>
+<td>$\vec e_{\mathrm{k}}$</td>
+<td>2650</td>
+<td>yes</td>
+<td>legal, fragile</td>
+</tr>
+<tr>
+<td>E</td>
+<td>$\vec e_x$</td>
+<td>2650</td>
+<td>no</td>
+<td>blocked on 157 lines</td>
+</tr>
+<tr>
+<td>F</td>
+<td>$\vec e_\varsigma$</td>
+<td>2650</td>
+<td>yes</td>
+<td>contradicts the layer rule</td>
+</tr>
+<tr>
+<td>G</td>
+<td>$k$ for units only</td>
+<td>970</td>
+<td>yes</td>
+<td>leaves the ambiguity</td>
+</tr>
+<tr>
+<td>H</td>
+<td>$\vec e_1$</td>
+<td>2380</td>
+<td>yes</td>
+<td>collides with mode numerals</td>
+</tr>
+<tr>
+<td>I</td>
+<td>bare $k$ is the index</td>
+<td>105</td>
+<td>yes</td>
+<td>restores the error</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>The recommendation.</strong> None of the six is comfortable, and that is the finding. D is the only option that gives the letter no second meaning, keeps $\varepsilon_{ijk}$, and costs nothing but a case change; it should be tried on one article and read on paper before it is adopted. E and H are the same idea, the explicit axis, and they fail on the same 157 lines. I is excluded by the decision, not by its cost.</p>
+<p><strong>What this section does not do.</strong> It does not choose. Phase Two stays open, and no pass of the migration depends on it.</p>
+<h2 id="phase-two-executed-the-index-letter-is-math270">Phase Two, Executed: The Index Letter Is $\eta$</h2>
+<p><strong>The decision.</strong> The space index is $\eta$. The letter $k$ carries wave numbers only. This closes the question the sections above leave open, and it is the decision the corpus now follows.</p>
+<p><strong>What was written into the corpus.</strong></p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Pattern</th>
+<th>Before</th>
+<th>After</th>
+<th>Occurrences</th>
+<th>Lines</th>
+<th>Files</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>basis vector</td>
+<td>$\vec e_k$, $\vec e_{k}$</td>
+<td>$\vec e_\eta$, $\vec e_{\eta}$</td>
+<td>1915</td>
+<td>1443</td>
+<td>285</td>
+</tr>
+<tr>
+<td>summation</td>
+<td>$\sum_k$, $\sum_{k}$</td>
+<td>$\sum_\eta$, $\sum_{\eta}$</td>
+<td>710</td>
+<td>648</td>
+<td>151</td>
+</tr>
+<tr>
+<td>summed range</td>
+<td>$\sum_{k=1}^{3}$</td>
+<td>$\sum_{\eta=1}^{3}$</td>
+<td>66</td>
+<td>62</td>
+<td>27</td>
+</tr>
+<tr>
+<td>sector subscript</td>
+<td>$\tilde S_{\Psi,k}$, $\tilde S_{\Psi,\mathrm{tot},k}$</td>
+<td>$\tilde S_{\Psi,\eta}$, $\tilde S_{\Psi,\mathrm{tot},\eta}$</td>
+<td>426</td>
+<td>—</td>
+<td>61</td>
+</tr>
+<tr>
+<td>component glyphs</td>
+<td>$p_k$, $R_k$, $r_k$, $Q_k$, $E_k$, $F_k$, $A_k$, $B_k$, $H_k$, $J_k$, $S_k$, $L_k$, $D_k$, $G_k$, $V_k$, $X_k$, $P_k$, $C_k$, $T_k$, $I_k$, $\sigma_k$, $\gamma_k$, $\pi_k$, $g_k$, $h_k$, $q_k$, $\mu_k$, $\kappa_k$, $\rho_k$, $\Gamma_k$</td>
+<td>the same with $\eta$</td>
+<td>1632</td>
+<td>—</td>
+<td>—</td>
+</tr>
+<tr>
+<td>direction label</td>
+<td>$\vec u_k$ where $k=1,2,3$ names an axis</td>
+<td>$\vec u_\eta$</td>
+<td>86</td>
+<td>68</td>
+<td>17</td>
+</tr>
+<tr>
+<td>alternating symbols</td>
+<td>$\varepsilon_{ijk}$, $\delta_{jk}$, $\epsilon_{jkl}$</td>
+<td>$\varepsilon_{ij\eta}$, $\delta_{j\eta}$, $\epsilon_{j\eta l}$</td>
+<td>422</td>
+<td>—</td>
+<td>96</td>
+</tr>
+<tr>
+<td>range declaration</td>
+<td>$k=1,2,3$</td>
+<td>$\eta=1,2,3$</td>
+<td>49</td>
+<td>—</td>
+<td>24</td>
+</tr>
+</tbody>
+</table></div>
+<p>Roughly 5,300 occurrences across 352 files were rewritten by one pass. No occurrence of $\vec e_k$ remains, and no line was left with an unbalanced brace or an odd number of dollar signs.</p>
+<p><strong>What was deliberately kept.</strong> Two families keep $k$, because there $k$ is not a space index:</p>
+<ul>
+<li><strong>The unit wavevector.</strong> $\vec u_k=\vec k_\Phi/\lvert\vec k_\Phi\rvert$ stands on 340 lines in 22 articles of the wave and photon group. There $k$ is the wave number, and the subscript names the wave — the same convention as $\vec u_p$ for the unit along the momentum. It is the one place where a subscripted $k$ is a wave number by design, and it is now the clearest illustration that the letter belongs to waves.</li>
+<li><strong>Mode, step and path sums.</strong> Thirty-one summations remain: $\sum_{k,l}$ over two modes, $\sum_{k\in\{t,x,y,z\}}$ over four components, $\sum_{k=0}^{N-1}$ over a path, $\sum_k s_k^2$ over Schmidt weights, $\sum_k\lambda_k$ over Lyapunov exponents, $\sum_k(N_k^\pm)^2$ over Casimir weights.</li>
+</ul>
+<p>A residue of 1018 subscripted-$k$ glyphs is left for a semantic pass, because the letter there names a mode, a step, a tensor slot or a matrix ring rather than a space axis: $x_k$ 95 (path step), $\alpha_k$ 43 (spintensor slots), $\omega_k$ 35 (mode), $a_k$ 33, $b_k$ 25, $M_k$ 23 (the ring $M_k(\mathbb{C})$), $N_k$ 18, $e_k$ 18 (elementary symmetric function), $v_k$ 18, $Z_k$ 16 (Jordan–Wigner chain), $\lambda_k$ 16 (Lyapunov spectrum), $\xi_k$, $\zeta_k$, $f_k$, $n_k$, $s_k$.</p>
+<p><strong>The cost, stated plainly.</strong> $\eta$ was not free. It already carried twelve meanings on 376 lines, and four of them now collide with the index:</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Collision</th>
+<th>Occurrences</th>
+<th>Article</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Rindler time $x=\rho\cosh\eta$, $r'_t=\rho\sinh\eta$</td>
+<td>48</td>
+<td><em>The Unruh Effect in Biquaternionic Form</em></td>
+</tr>
+<tr>
+<td>Coulomb parameter $\eta=k_m^2\alpha/(mc^2k)$</td>
+<td>39</td>
+<td><em>Coulomb Scattering and Rutherford's Formula</em></td>
+</tr>
+<tr>
+<td>gauge-fixing four-vector $\eta^0,\eta^3$</td>
+<td>37</td>
+<td><em>Gauge Fixing in the Electroweak Theory</em></td>
+</tr>
+<tr>
+<td>small parameter $\eta=\Omega/(2k_m)$</td>
+<td>1</td>
+<td><em>The Three Wavenumbers of a Particle</em></td>
+</tr>
+</tbody>
+</table></div>
+<p>The last is the sharpest: it sits two lines from $k_{t}^{\prime}=k_m+\Omega$, in the article the wave-number convention is built on. Three further uses are qualified by a word subscript and do not collide: $\eta_P$, $\eta_C$, $\eta_{\mu\nu a}$.</p>
+<p><strong>The repair that follows.</strong> A qualified index is distinguishable from an unqualified parameter, so the four collisions close by qualifying the parameter, not by moving the index again. The candidate is $\eta_{\mathrm{Rin}}$ for the Rindler time, $\eta_{\mathrm{Cou}}$ for the Coulomb parameter, $\eta_{\mu}$ and $\eta_{3}$ staying as components, and $\eta_{\mathrm{nr}}$ for the expansion parameter of <em>The Three Wavenumbers</em>. The index stays bare.</p>
+<h2 id="the-migration-strategy">The Migration Strategy</h2>
+<p><strong>Phase One. The conventions, before any article.</strong> Delete the erroneous sentence of <em>A caution on $k$</em>. Replace it with the narrower rule: a bare $k$ names no wave number, because four share the letter. Repair the article's own two defects, the bare $k$ in $\frac{k}{2m\,c/\hbar}$ and the commutator example that pairs $\vec k_\Phi$ with $\vec k_2$, which the paragraph it illustrates forbids. Add one row to §<em>Summary of Notation</em> for the four wave numbers. This is the only pass that changes what a reader is told the letter means.</p>
+<p><strong>Phase Two. The index decision.</strong> Closed: the index is $\eta$, recorded above. The option table of §<em>The Index Letter</em> is kept as the record of why the obvious letters were rejected.</p>
+<p><strong>Phase Three. Family Two, alone.</strong> One article, four lines. It opens the axial reading the gravity articles reuse, and it tests the rename.</p>
+<p><strong>Phase Four. Family One, parents first.</strong> <em>Maxwell's Equations in the Biquaternionic Formulation</em> and <em>Electromagnetism in Media</em> first, because the other ten cite them for the operator, the constitutive relations and the identity $\vec k_\Phi=k\vec u_k$. Then the eight that apply them, then the two exercises.</p>
+<p><strong>Phase Five. Family Three, in three blocks.</strong> The wave covector block first, fourteen articles, the gravity pair before its dependants. Then the two Kerr–Schild articles, which need $\tilde{\mathcal L}_{\Phi,\mathrm{null}}$ and a decision on the display. Then the three neutral-direction articles, which wait for Phase Two.</p>
+<p><strong>Phase Six. Family Five.</strong> The ten coupling lines first, one line each, with the replacement fixed by the conventions. Then the three decay articles, one sentence each.</p>
+<p><strong>Phase Seven. The subscript set.</strong> Four articles, mechanical once $\vec k_{\Phi,\mathrm{tr}}$ and the prime are chosen. <em>The Vacuum State and the Casimir Effect</em> carries fourteen lines and is the largest single display repair in the migration.</p>
+<p><strong>Phase Eight. Family Four, last.</strong> The only pass that changes the meaning of a display. Every number in the fourteen articles is re-derived, or the article declares its units in $mc$ and $mc^2$.</p>
+<p><strong>Phase Nine. The sweep.</strong> Count the 293 lines of $\vec e_k^2$ before and after. Count the bare $k$ in a wave-number sense and require zero. Require zero proof-end marks in the migrated articles. No <code>sed</code> at any point.</p>
+<p><strong>The cost.</strong> 51 reading passes, about four lines each. Two are expensive: <em>Curved Spacetime</em> at 23 lines, and <em>The Vacuum State and the Casimir Effect</em> at 18 across two families. Each article gains one <em>Summary of Notation</em> row and one first-use sentence.</p>
+<h2 id="summary">Summary</h2>
+<p>The letter $k$ is the wave-number letter, and the corpus has four wave numbers under it. The paragraph that calls $k$ the spatial index is erroneous and is deleted, not reworded: it is contradicted by the table above it, by the corpus, and by its own following sentences. What the corpus needs is narrower and is kept: a bare $k$ names no wave number.</p>
+<p>Fifty-one articles write a wave number another way. Twelve write the medium number as a bare $k$. One writes the axial pair as $\varpi$ and $q$. Nineteen write a covariant $k_\mu$, of which fourteen are a wave number, two a null congruence and three a neutral direction. Fourteen write the loop momentum under the bare letter and drop $\hbar$. Three write a decay constant as $\kappa$, and ten write the gauge coupling as $\kappa\mathcal A$. Four write a subscript that is not one of the six forms.</p>
+<p>The order is the dependency order. The conventions first, then the index decision, then one article that tests the rename, then the medium set parents-first, then the covariant set in three blocks, then the coupling lines, then the subscripts, then the loop momentum with its recomputation.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning in this article</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$k$</td>
+<td>the wave-number letter; a bare $k$ names no wave number, because four share the letter</td>
+</tr>
+<tr>
+<td>$k_m$, $k_\Phi$, $k_{t}^{\prime}$, $k_{\mathrm{eu}}$</td>
+<td>the four wave numbers: mass, momentum, energy, Euclidean</td>
+</tr>
+<tr>
+<td>$\vec k_\Phi$, $k_{\Phi x},k_{\Phi y},k_{\Phi z}$</td>
+<td>the momentum wave vector and its components</td>
+</tr>
+<tr>
+<td>$k_{\Phi+}$, $k_{\Phi-}$</td>
+<td>the two chiral wave numbers, $k_\Phi/(1\pm k_\Phi\beta)$</td>
+</tr>
+<tr>
+<td>$k_{\Phi,\mathrm{tr}}$</td>
+<td>the transverse part, replacing $\vec k_\perp$</td>
+</tr>
+<tr>
+<td>$\vec k_\Phi^{\prime}$</td>
+<td>the second mode, replacing $\vec k_n$ and $\vec k_2$ in a mixed commutator</td>
+</tr>
+<tr>
+<td>$\kappa_j$</td>
+<td>the decay constant, defined once as $\lvert k_{\Phi,j}\rvert$</td>
+</tr>
+<tr>
+<td>$\kappa=1-\vec u_R\cdot\vec\beta$</td>
+<td>the retarded denominator, the licensed use of the letter</td>
+</tr>
+<tr>
+<td>$\vec e_\eta$, $\sum_\eta$</td>
+<td>the index usage, now migrated; $p_k$ and the other component letters await the same pass</td>
+</tr>
+<tr>
+<td><em>deviating line</em></td>
+<td>a line that carries one of the spellings listed in §<em>The Measurement</em></td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li><a href="../articles_physics/physics-units-and-common-elements-conventions.html">Physics Units and Common Elements Conventions</a>, for §<em>A caution on $k$</em> and its erroneous sentence, the units table, and the four wave numbers.</li>
+<li><a href="../articles_physics/index-and-notation-conventions.html">Index and Notation Conventions</a>, for the six subscript forms and the ban on a raised index.</li>
+<li><a href="../articles_physics/operator-and-calculus-conventions.html">Operator and Calculus Conventions</a>, for §<em>The coupling, and the letter $\kappa$</em>.</li>
+<li><a href="../articles_physics/the-three-wavenumbers-of-a-particle.html">The Three Wavenumbers of a Particle</a>, for the three wave numbers and the three lengths.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

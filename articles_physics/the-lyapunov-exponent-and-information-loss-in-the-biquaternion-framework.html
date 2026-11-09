@@ -151,7 +151,7 @@ $$</p>
 $$</p>
 <p>so the Lyapunov exponents of the tangent dynamics are read from $L(r'_t)$. Writing $\sigma_1\ge\sigma_2\ge\sigma_3$ for the singular values of $L(r'_t)$, the exponents are</p>
 <p>$$
-\lambda_k = \lim_{r'_t\to\infty}\frac{1}{r'_{t}}\log\sigma_k\!\left(L(r'_t)\right),
+\lambda_k = \lim_{r'_t\to\infty}\frac{1}{r'_{t}}\log\sigma_\eta\!\left(L(r'_t)\right),
 $$</p>
 <p>and for a semigroup $L(r'_t) = \exp(r'_t A)$, $\lambda_k$ are the real parts of the eigenvalues of the generator $A$.</p>
 <p>The physical constraint now does the work. Every completely positive trace-preserving map is a <strong>contraction in the trace distance</strong>, $\|Ξ(\rho)-Ξ(\sigma)\|_1 \le \|\rho-\sigma\|_1$, and for a qubit the trace distance is half the Euclidean distance between Bloch vectors, $\tfrac{1}{2}\|\rho-\sigma\|_1 = \tfrac{1}{2}|\vec r-\vec s|$. Hence</p>
@@ -301,8 +301,8 @@ $$</p>
 <td>Affine Bloch action of a channel</td>
 </tr>
 <tr>
-<td>$\sigma_k(L(r'_t))$</td>
-<td>Singular values; $\lambda_k = \lim_t\tfrac{1}{r'_{t}}\log\sigma_k$</td>
+<td>$\sigma_\eta(L(r'_t))$</td>
+<td>Singular values; $\lambda_k = \lim_t\tfrac{1}{r'_{t}}\log\sigma_\eta$</td>
 </tr>
 <tr>
 <td>$\sigma_1(L(r'_t))\le1$</td>

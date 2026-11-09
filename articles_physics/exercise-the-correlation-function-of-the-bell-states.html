@@ -74,7 +74,7 @@
 <p>Each exercise in the series is solved twice: first in the standard way, then in the biquaternion way. The results agree, as they must: the two formulations are the same mathematics in different notation. To keep the two solutions strictly parallel, each is presented in the same steps, and the final result is stated in the same form.</p>
 <p>The earlier exercises treated a single qubit (Exercises: Measuring Spin Along an Arbitrary Direction, Spin Precession in a Magnetic Field and Successive Measurements of Spin), an entangled pair of qubits in the singlet state (Exercise: Two Spins in the Singlet State), and the reduced state of one subsystem (Exercise: The Reduced State of an Entangled Subsystem). This exercise treats <strong>all four Bell states</strong> — the four maximally entangled two-qubit states — and the <strong>spin correlation function</strong>, the quantity that encodes the full dependence of joint measurement outcomes on the two measurement directions.</p>
 <p>The correlation function is the object measured in Bell-inequality experiments. It is also the natural bilinear pairing on the tensor-product algebra, and it reveals a clean structural fact: the four Bell states correspond to the four sign patterns $\epsilon_j = \pm 1$ with $\epsilon_1\epsilon_2\epsilon_3 = +1$, and their correlation functions are $E(\vec u_x, \vec u_y) = -\sum_j \epsilon_j\,a_j b_j$.</p>
-<p>The conventions are those of the companion articles. The biquaternion algebra is $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, with the Hermitian subspace $\mathbb{B}_{\Psi}$ and the anti-Hermitian subspace $\mathbb{B}_{\Phi}$. The quaternion units are $e_t = 1, \vec e_x, \vec e_y, \vec e_z$ with $\vec e_k^2 = -e_t$, and $i$ is the scalar imaginary. The trace of an element of $\mathbb{B}_{\Psi}$ is twice its scalar part: $\mathrm{Tr}(\tilde Q)=2\,\mathrm{Sc}(\tilde Q)$. The two-qubit state space is the tensor product $\mathbb{B}\otimes\mathbb{B}$, isomorphic to $M_4(\mathbb{C})$, with the trace $\mathrm{Tr}(x\otimes y) = \mathrm{Tr}_\mathbb{B}(x)\cdot\mathrm{Tr}_\mathbb{B}(y)$.</p>
+<p>The conventions are those of the companion articles. The biquaternion algebra is $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, with the Hermitian subspace $\mathbb{B}_{\Psi}$ and the anti-Hermitian subspace $\mathbb{B}_{\Phi}$. The quaternion units are $e_t = 1, \vec e_x, \vec e_y, \vec e_z$ with $\vec e_\eta^2 = -e_t$, and $i$ is the scalar imaginary. The trace of an element of $\mathbb{B}_{\Psi}$ is twice its scalar part: $\mathrm{Tr}(\tilde Q)=2\,\mathrm{Sc}(\tilde Q)$. The two-qubit state space is the tensor product $\mathbb{B}\otimes\mathbb{B}$, isomorphic to $M_4(\mathbb{C})$, with the trace $\mathrm{Tr}(x\otimes y) = \mathrm{Tr}_\mathbb{B}(x)\cdot\mathrm{Tr}_\mathbb{B}(y)$.</p>
 <h2 id="the-exercise">The Exercise</h2>
 <p>Consider the four <strong>Bell states</strong> of two spin-$\tfrac{1}{2}$ particles:</p>
 <p>$$
@@ -106,24 +106,24 @@ $$</p>
 <p>$$
 |\tilde{Ξ}_{\mathrm{sp}}^{\pm}\rangle\langle\tilde{Ξ}_{\mathrm{sp}}^{\pm}| = \tfrac{1}{4}\left(I\otimes I \pm \sigma_x\otimes\sigma_x \pm \sigma_y\otimes\sigma_y - \sigma_z\otimes\sigma_z\right),
 $$</p>
-<p>we may expand each Bell projector in the <strong>Pauli-string basis</strong> $\{I\otimes I, \sigma_j\otimes\sigma_k\}$. The Pauli strings are trace-orthogonal:</p>
+<p>we may expand each Bell projector in the <strong>Pauli-string basis</strong> $\{I\otimes I, \sigma_j\otimes\sigma_\eta\}$. The Pauli strings are trace-orthogonal:</p>
 <p>$$
-\mathrm{Tr}\!\left[(\sigma_j\otimes\sigma_k)(\sigma_l\otimes\sigma_m)\right] = 4\,\delta_{jl}\,\delta_{km}.
+\mathrm{Tr}\!\left[(\sigma_j\otimes\sigma_\eta)(\sigma_l\otimes\sigma_m)\right] = 4\,\delta_{jl}\,\delta_{\eta m}.
 $$</p>
 <h3 id="step-2-the-correlation-matrix">Step 2: The correlation matrix</h3>
 <p>The correlation function is the expectation of the tensor-product observable $\vec u_x\cdot\boldsymbol{\sigma}_1\otimes\vec u_y\cdot\boldsymbol{\sigma}_2$:</p>
 <p>$$
-E(\vec u_x, \vec u_y) = \langle\tilde{Ξ}_{\mathrm{sp}}|\left(\sum_j a_j\sigma_j\otimes I\right)\left(\sum_k b_k I\otimes\sigma_k\right)|\tilde{Ξ}_{\mathrm{sp}}\rangle = \sum_{j,k} a_j b_k\,\langle\tilde{Ξ}_{\mathrm{sp}}|\sigma_j\otimes\sigma_k|\tilde{Ξ}_{\mathrm{sp}}\rangle.
+E(\vec u_x, \vec u_y) = \langle\tilde{Ξ}_{\mathrm{sp}}|\left(\sum_j a_j\sigma_j\otimes I\right)\left(\sum_\eta b_k I\otimes\sigma_\eta\right)|\tilde{Ξ}_{\mathrm{sp}}\rangle = \sum_{j,k} a_j b_k\,\langle\tilde{Ξ}_{\mathrm{sp}}|\sigma_j\otimes\sigma_\eta|\tilde{Ξ}_{\mathrm{sp}}\rangle.
 $$</p>
 <p>So the correlation function is determined by the $3\times 3$ matrix</p>
 <p>$$
-T_{jk} = \langle\tilde{Ξ}_{\mathrm{sp}}|\sigma_j\otimes\sigma_k|\tilde{Ξ}_{\mathrm{sp}}\rangle = \mathrm{Tr}\!\left(|\tilde{Ξ}_{\mathrm{sp}}\rangle\langle\tilde{Ξ}_{\mathrm{sp}}|\cdot\sigma_j\otimes\sigma_k\right).
+T_{jk} = \langle\tilde{Ξ}_{\mathrm{sp}}|\sigma_j\otimes\sigma_\eta|\tilde{Ξ}_{\mathrm{sp}}\rangle = \mathrm{Tr}\!\left(|\tilde{Ξ}_{\mathrm{sp}}\rangle\langle\tilde{Ξ}_{\mathrm{sp}}|\cdot\sigma_j\otimes\sigma_\eta\right).
 $$</p>
 <p>Because the Pauli strings are trace-orthogonal, the projector admits the expansion</p>
 <p>$$
-|\tilde{Ξ}_{\mathrm{sp}}\rangle\langle\tilde{Ξ}_{\mathrm{sp}}| = \tfrac{1}{4}\sum_{j,k} T_{jk}\,\sigma_j\otimes\sigma_k,
+|\tilde{Ξ}_{\mathrm{sp}}\rangle\langle\tilde{Ξ}_{\mathrm{sp}}| = \tfrac{1}{4}\sum_{j,k} T_{jk}\,\sigma_j\otimes\sigma_\eta,
 $$</p>
-<p>and $T_{jk}$ can be read off directly as the coefficient of $\sigma_j\otimes\sigma_k$ inside the bracket. The off-diagonal entries vanish because the Bell projectors contain only the diagonal Pauli strings $\sigma_x\otimes\sigma_x$, $\sigma_y\otimes\sigma_y$, $\sigma_z\otimes\sigma_z$.</p>
+<p>and $T_{jk}$ can be read off directly as the coefficient of $\sigma_j\otimes\sigma_\eta$ inside the bracket. The off-diagonal entries vanish because the Bell projectors contain only the diagonal Pauli strings $\sigma_x\otimes\sigma_x$, $\sigma_y\otimes\sigma_y$, $\sigma_z\otimes\sigma_z$.</p>
 <h3 id="step-3-computing-math42-for-each-bell-state">Step 3: Computing $T$ for each Bell state</h3>
 <p><strong>Singlet $|\tilde{Ξ}_{\mathrm{sp}}^-\rangle$.</strong> The projector is</p>
 <p>$$
@@ -241,7 +241,7 @@ $$</p>
 <p>with $\epsilon_t \equiv 1$. We group the sixteen pairs $(m,m_2)$ into three classes.</p>
 <p><strong>Diagonal pairs $m = m_2$.</strong> For $m = 0$, $e_t e_t = e_t$; for $m = 1, 2, 3$, $e_m e_m = -e_t$. In all four cases the tensor product $(e_m e_m)\otimes(e_m e_m)$ equals $e_t\otimes e_t$, with coefficient $\epsilon_m^2 = 1$. Contribution: $4\,e_t\otimes e_t$.</p>
 <p><strong>Off-diagonal pairs involving $e_t$.</strong> The pairs $(t,j)$ and $(j,t)$ with $j \in \{x,y,z\}$ both give $\vec e_j\otimes \vec e_j$, with coefficient $\epsilon_j$. Contribution: $2\epsilon_j\,\vec e_j\otimes \vec e_j$ for each $j$.</p>
-<p><strong>Off-diagonal pairs among $\{x,y,z\}$.</strong> For $j \neq k$ in $\{x,y,z\}$, let $l$ be the remaining index. Then $\vec e_j \vec e_k = \epsilon_{jkl}\vec e_l$ and $\vec e_k \vec e_j = -\epsilon_{jkl}\vec e_l$, and the two tensor products are both $\vec e_l\otimes \vec e_l$. The coefficients $\epsilon_j\epsilon_k$ and $\epsilon_k\epsilon_j$ are equal. Contribution: $2\epsilon_j\epsilon_k\,\vec e_l\otimes \vec e_l$.</p>
+<p><strong>Off-diagonal pairs among $\{x,y,z\}$.</strong> For $j \neq k$ in $\{x,y,z\}$, let $l$ be the remaining index. Then $\vec e_j \vec e_\eta = \epsilon_{j\eta l}\vec e_l$ and $\vec e_\eta \vec e_j = -\epsilon_{j\eta l}\vec e_l$, and the two tensor products are both $\vec e_l\otimes \vec e_l$. The coefficients $\epsilon_j\epsilon_k$ and $\epsilon_k\epsilon_j$ are equal. Contribution: $2\epsilon_j\epsilon_k\,\vec e_l\otimes \vec e_l$.</p>
 <p>Collecting, the coefficient of $\vec e_l\otimes \vec e_l$ in $16\,\tilde\Pi_\epsilon^2$ is $2\epsilon_l + 2\epsilon_j\epsilon_k$, where $\{j,k,l\} = \{x,y,z\}$. Since</p>
 <p>$$
 16\,\tilde\Pi_\epsilon = 4\,e_t\otimes e_t + 4\sum_{l\in\{x,r_y,r_z\}}\epsilon_l\,\vec e_l\otimes \vec e_l,
@@ -261,7 +261,7 @@ $$</p>
 <p>$$
 \tilde{R}_{\Psi,ab} = (i\vec u_x)\otimes(i\vec u_y),
 $$</p>
-<p>where $\vec u_x = \sum_j a_j \vec e_j$ and $\vec u_y = \sum_k b_k \vec e_k$ are pure real quaternions. The expectation is given by the tensor-product trace formula:</p>
+<p>where $\vec u_x = \sum_j a_j \vec e_j$ and $\vec u_y = \sum_\eta b_k \vec e_\eta$ are pure real quaternions. The expectation is given by the tensor-product trace formula:</p>
 <p>$$
 E(\vec u_x, \vec u_y) = \mathrm{Tr}\!\left(\tilde\Pi_\epsilon\tilde{R}_{\Psi,ab}\right).
 $$</p>
@@ -276,7 +276,7 @@ $$</p>
 <p>$$
 e_m\cdot i\vec u_x = i\,e_m \vec u_x = i\left(-a_m e_t + \text{vector}\right),
 $$</p>
-<p>using $e_m \vec u_x = -a_m e_t + \sum_{k \neq m} a_k e_m \vec e_k$. The scalar part is $-i a_m$, so</p>
+<p>using $e_m \vec u_x = -a_m e_t + \sum_{k \neq m} a_k e_m \vec e_\eta$. The scalar part is $-i a_m$, so</p>
 <p>$$
 \mathrm{Tr}_\mathbb{B}(e_m \cdot i\vec u_x) = -2 i a_m,
 $$</p>
@@ -328,7 +328,7 @@ $$</p>
 <p>These match the standard results exactly.</p>
 <h2 id="limiting-cases">Limiting Cases</h2>
 <p>Both formulations give the same results, and both give the same limits. The cleanest way to read the table is by the direction of the measurements.</p>
-<p><strong>Parallel measurements along a coordinate axis.</strong> Set $\vec u_x = \vec u_y = \vec u_k$; the correlation is the diagonal entry $T_{kk}$:</p>
+<p><strong>Parallel measurements along a coordinate axis.</strong> Set $\vec u_x = \vec u_y = \vec u_\eta$; the correlation is the diagonal entry $T_{kk}$:</p>
 <div class="table-scroll"><table>
 <thead>
 <tr>
@@ -368,7 +368,7 @@ $$</p>
 <p>$$
 p(+,+) = p(-,-) = \tfrac{1}{4}\left(1 + E\right), \qquad p(+,-) = p(-,+) = \tfrac{1}{4}\left(1 - E\right).
 $$</p>
-<p>This follows from $\langle \sigma_j \otimes I\rangle = \langle I \otimes \sigma_k\rangle = 0$ in every Bell state: the single-particle expectations vanish, and the Born probabilities reduce to $\tfrac{1}{4}(1 \pm E)$. Exercise: Two Spins in the Singlet State's probability $p(+,+) = \tfrac{1}{4}(1 - \vec u_x\cdot\vec u_y)$ is the special case $E = -\vec u_x\cdot\vec u_y$ for the singlet.</p>
+<p>This follows from $\langle \sigma_j \otimes I\rangle = \langle I \otimes \sigma_\eta\rangle = 0$ in every Bell state: the single-particle expectations vanish, and the Born probabilities reduce to $\tfrac{1}{4}(1 \pm E)$. Exercise: Two Spins in the Singlet State's probability $p(+,+) = \tfrac{1}{4}(1 - \vec u_x\cdot\vec u_y)$ is the special case $E = -\vec u_x\cdot\vec u_y$ for the singlet.</p>
 <p><strong>Consistency with Exercise: Two Spins in the Singlet State.</strong> For the singlet, $E(\vec u_x, \vec u_y) = -\vec u_x\cdot\vec u_y$, so $p(+,+) = \tfrac{1}{4}(1 - \vec u_x\cdot\vec u_y)$, recovering Exercise: Two Spins in the Singlet State.</p>
 <h2 id="what-the-biquaternion-solution-illustrates">What the Biquaternion Solution Illustrates</h2>
 <p><strong>1. The four Bell states have a uniform algebraic form.</strong> Each is an idempotent</p>
@@ -470,7 +470,7 @@ $$</p>
 </tr>
 <tr>
 <td>$e_t = 1, \vec e_x, \vec e_y, \vec e_z$</td>
-<td>Quaternion basis, $\vec e_k^2 = -e_t$</td>
+<td>Quaternion basis, $\vec e_\eta^2 = -e_t$</td>
 </tr>
 <tr>
 <td>$i$</td>
@@ -505,7 +505,7 @@ $$</p>
 <td>Correlation function</td>
 </tr>
 <tr>
-<td>$T_{jk} = \langle\tilde{Ξ}_{\mathrm{sp}}|\sigma_j\otimes\sigma_k|\tilde{Ξ}_{\mathrm{sp}}\rangle$</td>
+<td>$T_{jk} = \langle\tilde{Ξ}_{\mathrm{sp}}|\sigma_j\otimes\sigma_\eta|\tilde{Ξ}_{\mathrm{sp}}\rangle$</td>
 <td>Correlation matrix</td>
 </tr>
 <tr>

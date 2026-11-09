@@ -80,20 +80,20 @@
 </ul>
 <p>The article is organized as follows. The next section fixes what the RG is and states the exact flow equation, taking care to distinguish the <em>functional</em> trace from the biquaternion trace. The following section describes the regulator and the shell, and what each costs. Two sections then perform the shell integration explicitly — the scalar quartic coupling, and the non-abelian gauge coupling — and fix the <strong>sign</strong> of each beta function. A section checks the fixed points against the flow equation on independent cases. A section addresses the two-sector question directly. A section separates what the algebra supplies from what it only transcribes. The article closes with open questions.</p>
 <h2 id="the-scale-dependence-of-the-effective-action">The Scale Dependence of the Effective Action</h2>
-<p>The <strong>effective action</strong> $\Gamma[\xi]$ is the generating functional of one-particle-irreducible correlation functions: with $Z[J] = \int\mathcal{D}\xi\, \exp(-S[\xi] + \int J\xi)$ and $W[J] = \log Z[J]$ (Euclidean signature throughout this article), $\Gamma$ is the Legendre transform of $W$. Its expansion in powers of the field and of derivatives defines the couplings of the theory. In this article we work with the <strong>Wilsonian</strong> effective action $\Gamma_k$, defined at a sliding scale $k$: $\Gamma_k$ is obtained from the microscopic action by integrating out all modes with Euclidean momenta larger than $k$. The dependence of $\Gamma_k$ on $k$ is what the RG computes.</p>
+<p>The <strong>effective action</strong> $\Gamma[\xi]$ is the generating functional of one-particle-irreducible correlation functions: with $Z[J] = \int\mathcal{D}\xi\, \exp(-S[\xi] + \int J\xi)$ and $W[J] = \log Z[J]$ (Euclidean signature throughout this article), $\Gamma$ is the Legendre transform of $W$. Its expansion in powers of the field and of derivatives defines the couplings of the theory. In this article we work with the <strong>Wilsonian</strong> effective action $\Gamma_\eta$, defined at a sliding scale $k$: $\Gamma_\eta$ is obtained from the microscopic action by integrating out all modes with Euclidean momenta larger than $k$. The dependence of $\Gamma_\eta$ on $k$ is what the RG computes.</p>
 <p>The exact statement of that dependence is the <strong>Wetterich equation</strong>,</p>
 <p>$$
-\boxed{\;\partial/\partial r'_t \Gamma_k[\xi] = \frac{1}{2}\,\mathrm{Tr}\!\left[\Big(\Gamma_k^{(2)}[\xi] + R_k\Big)^{-1}\,\partial/\partial r'_t R_k\right],
+\boxed{\;\partial/\partial r'_t \Gamma_\eta[\xi] = \frac{1}{2}\,\mathrm{Tr}\!\left[\Big(\Gamma_\eta^{(2)}[\xi] + R_\eta\Big)^{-1}\,\partial/\partial r'_t R_\eta\right],
 \qquad r'_t = \log\frac{k}{\Lambda}\;},
 $$</p>
-<p>where $\Gamma_k^{(2)}$ is the second functional derivative of $\Gamma_k$ with respect to $\xi$, $R_k$ is a <strong>regulator</strong> that suppresses modes with $|p| < k$, and $\Lambda$ is the microscopic scale at which the flow is initialized. Two features of this equation are the whole subject of the article.</p>
+<p>where $\Gamma_\eta^{(2)}$ is the second functional derivative of $\Gamma_\eta$ with respect to $\xi$, $R_\eta$ is a <strong>regulator</strong> that suppresses modes with $|p| < k$, and $\Lambda$ is the microscopic scale at which the flow is initialized. Two features of this equation are the whole subject of the article.</p>
 <ol>
 <li><strong>The trace is a functional trace.</strong> The symbol $\mathrm{Tr}$ here is the trace over the infinite-dimensional field space: it stands for $\int \frac{d^4p}{(2\pi\hbar)^4}\sum_{\text{internal indices}}$ with the argument evaluated on the field configuration. It is <strong>not</strong> the biquaternion trace $\mathrm{Tr}(\tilde Q_1\tilde Q_2)=2\,\mathrm{Sc}(\tilde Q_1\tilde Q_2)$ of the read list. The biquaternion trace is taken over the two-dimensional fiber of $\mathbb{B}$; the functional trace is taken over the space of modes. They must not be conflated, and when the flow equation is read in the biquaternion framework the two appear side by side: the <em>fiber</em> trace is the algebra's, and the <em>mode</em> trace is analytic.</li>
-<li><strong>The regulator is an input.</strong> The equation is exact for any admissible $R_k$, but $R_k$ is not determined by the theory. Different choices give different <em>trajectories</em> $\Gamma_k$ and the same <em>physics</em> at the fixed point, up to scheme-dependent redefinitions of the couplings. The regulator is the analytic datum the algebra does not supply.</li>
+<li><strong>The regulator is an input.</strong> The equation is exact for any admissible $R_\eta$, but $R_\eta$ is not determined by the theory. Different choices give different <em>trajectories</em> $\Gamma_\eta$ and the same <em>physics</em> at the fixed point, up to scheme-dependent redefinitions of the couplings. The regulator is the analytic datum the algebra does not supply.</li>
 </ol>
-<p>If $\Gamma_k$ is expanded in a basis of local operators with couplings $g_i(k)$,</p>
+<p>If $\Gamma_\eta$ is expanded in a basis of local operators with couplings $g_i(k)$,</p>
 <p>$$
-\Gamma_k[\xi] = \int d^4r \sum_i g_i(k)\, \mathcal{O}_i[\xi],
+\Gamma_\eta[\xi] = \int d^4r \sum_i g_i(k)\, \mathcal{O}_i[\xi],
 $$</p>
 <p>then the flow equation is equivalent to a set of ordinary differential equations,</p>
 <p>$$
@@ -364,7 +364,7 @@ $$</p>
 </tr>
 <tr>
 <td>$e_t = 1, \vec e_x, \vec e_y, \vec e_z$</td>
-<td>Quaternion basis, $\vec e_k^2 = -e_t$</td>
+<td>Quaternion basis, $\vec e_\eta^2 = -e_t$</td>
 </tr>
 <tr>
 <td>$i$</td>
@@ -411,15 +411,15 @@ $$</p>
 <td>Renormalization scale</td>
 </tr>
 <tr>
-<td>$\Gamma_k[\xi]$, $\Gamma_k^{(2)}$</td>
+<td>$\Gamma_\eta[\xi]$, $\Gamma_\eta^{(2)}$</td>
 <td>Wilsonian effective action and its second functional derivative</td>
 </tr>
 <tr>
-<td>$R_k$</td>
+<td>$R_\eta$</td>
 <td>Regulator function</td>
 </tr>
 <tr>
-<td>$\partial/\partial r'_t\,\Gamma_k = \tfrac12\mathrm{Tr}[(\Gamma_k^{(2)}+R_k)^{-1}\partial/\partial r'_t R_k]$</td>
+<td>$\partial/\partial r'_t\,\Gamma_\eta = \tfrac12\mathrm{Tr}[(\Gamma_\eta^{(2)}+R_\eta)^{-1}\partial/\partial r'_t R_\eta]$</td>
 <td>Wetterich exact flow equation; $\mathrm{Tr}$ is the functional trace</td>
 </tr>
 <tr>

@@ -76,7 +76,7 @@
 <p>The article owns the <strong>cost accounting</strong>: the count of real multiplications for a product, the same count for matrix-valued biquaternions, the block structure of the complex image that a machine consumes, and the reduction of a biquaternion Hermitian eigenvalue problem to smaller complex ones. The algebra itself, its representations and its spectral theory are owned by the mathematical corpus and are cited rather than repeated. The framework claims of the physics corpus are neither used nor tested here: a cheap product is a fact about arithmetic, not about the world.</p>
 <p>The article is organised as follows. The next section fixes what is being counted. The two sections after it give the naive count and the bilinear reduction. The following three treat matrix-valued biquaternions, the complex image with its blocks, and the eigenvalue problem. Then come the framework interpretation, the source's benchmarks, the negative claims, and the summary.</p>
 <h2 id="what-is-being-counted">What Is Being Counted</h2>
-<p>The biquaternion algebra is $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, with basis $e_t = 1, \vec e_x, \vec e_y, \vec e_z$, $\vec e_k^2 = -e_t$, $\vec e_x\vec e_y = -\vec e_y\vec e_x = \vec e_z$, and central scalar imaginary $i$. A general element is</p>
+<p>The biquaternion algebra is $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, with basis $e_t = 1, \vec e_x, \vec e_y, \vec e_z$, $\vec e_\eta^2 = -e_t$, $\vec e_x\vec e_y = -\vec e_y\vec e_x = \vec e_z$, and central scalar imaginary $i$. A general element is</p>
 <p>$$
 \tilde{Q} = Q_te_t + Q_x\vec e_x + Q_y\vec e_y + Q_z\vec e_z, \qquad Q_\mu = q_\mu + iq'_\mu \in \mathbb{C},
 $$</p>
@@ -210,7 +210,7 @@ $$</p>
 <p>$$
 M = \sum_{\mu\in\{t,x,y,z\}} \mathsf{M}_2(e_\mu)\otimes Q_\mu, \qquad \mathsf{M}_2(e_t) = I_2,
 $$</p>
-<p>where $\mathsf{M}_2$ is the isomorphism of <em>The Element and Operator Representations</em> and $\otimes$ is the Kronecker product, taken with $\mathsf{M}_2$ first: the indices of $\mathsf{M}_2$ are the block indices of the image and the array indices run inside the blocks. With $\mathsf{M}_2(\vec e_k) = -i\sigma_k$ in the corpus convention the image is $I_2\otimes Q_t$ plus the three Pauli–Kronecker terms multiplied by $-i$, and the four quadrants of a square image, of size $n\times n$, are the blocks $A$ and $B$ below. The order of the two factors is a convention, the two orders being exchanged by a permutation of indices; the source assembles it in the same order, and the corpus's array-level statement of the correspondence is in <em>The Realification and the Effect of the Change of Scalars</em>.</p>
+<p>where $\mathsf{M}_2$ is the isomorphism of <em>The Element and Operator Representations</em> and $\otimes$ is the Kronecker product, taken with $\mathsf{M}_2$ first: the indices of $\mathsf{M}_2$ are the block indices of the image and the array indices run inside the blocks. With $\mathsf{M}_2(\vec e_\eta) = -i\sigma_\eta$ in the corpus convention the image is $I_2\otimes Q_t$ plus the three Pauli–Kronecker terms multiplied by $-i$, and the four quadrants of a square image, of size $n\times n$, are the blocks $A$ and $B$ below. The order of the two factors is a convention, the two orders being exchanged by a permutation of indices; the source assembles it in the same order, and the corpus's array-level statement of the correspondence is in <em>The Realification and the Effect of the Change of Scalars</em>.</p>
 <p>Three properties of this image are used constantly, and each is exact:</p>
 <ol>
 <li><strong>It is a homomorphism for the entrywise product.</strong> If the array product is taken entrywise, with each entry multiplied in $\mathbb{B}$, then the image of the product is the product of the images.</li>
@@ -353,7 +353,7 @@ $$</p>
 </tr>
 <tr>
 <td>$e_t=1,\vec e_x,\vec e_y,\vec e_z$</td>
-<td>Quaternion basis, $\vec e_k^2=-e_t$, $\vec e_x\vec e_y=\vec e_z$</td>
+<td>Quaternion basis, $\vec e_\eta^2=-e_t$, $\vec e_x\vec e_y=\vec e_z$</td>
 </tr>
 <tr>
 <td>$i$</td>
@@ -404,7 +404,7 @@ $$</p>
 <td>A matrix-valued biquaternion; four coefficient matrices of size $n\times m$</td>
 </tr>
 <tr>
-<td>$M=I_n\otimes\mathsf{M}_2(Q_t)+\sum_k\mathsf{M}_2(\vec e_k)\otimes Q_k$</td>
+<td>$M=I_n\otimes\mathsf{M}_2(Q_t)+\sum_\eta\mathsf{M}_2(\vec e_\eta)\otimes Q_\eta$</td>
 <td>The complex image, size $2n\times2m$</td>
 </tr>
 <tr>

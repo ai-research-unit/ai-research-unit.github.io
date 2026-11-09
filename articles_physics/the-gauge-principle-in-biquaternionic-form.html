@@ -152,16 +152,16 @@ $$</p>
 <p><strong>The transformation law is the one already in the corpus.</strong> The law $\tilde{A}_{\Phi,2} = \tilde{A}_{\Phi} - \tilde{\nabla}\Gamma$ is exactly the gauge transformation of <em>Maxwell's Equations in the Biquaternionic Formulation</em>. The Maxwell gauge freedom is thus not an extra assumption laid on the theory: it is the local form of the global central phase symmetry, and the potential biquaternion is the connection that the localization forces.</p>
 <p><strong>The gauge function must have constant imaginary part to preserve $\mathbb{B}_{\Phi}$.</strong> If $\tilde{A}_{\Phi} \in \mathbb{B}_{\Phi}$ — the parent's assignment, with $A_0 = i\,a'_t$ purely imaginary and $\vec A$ real — then $\tilde{A}_{\Phi,2}$ is again in $\mathbb{B}_{\Phi}$ precisely when $\mathrm{Im}\,\Gamma$ is constant. Indeed</p>
 <p>$$
-\tilde{\nabla}\Gamma = e_t\,\partial/\partial R_t\,\Gamma + \sum_{k=1}^{3}\,\vec e_k\,\partial/\partial R_k\,\Gamma,
+\tilde{\nabla}\Gamma = e_t\,\partial/\partial R_t\,\Gamma + \sum_{\eta=1}^{3}\,\vec e_\eta\,\partial/\partial R_\eta\,\Gamma,
 $$</p>
-<p>and for real $\Gamma$ the scalar coefficient $\partial/\partial R_t\,\Gamma = -i\partial/\partial r'_t\Gamma$ is purely imaginary while the vector coefficients $\partial/\partial R_k\,\Gamma$ are real, which is exactly the membership condition of $\mathbb{B}_{\Phi}$. A $\Gamma$ whose imaginary part is not constant would move the potential out of the material sector. The gauge function of a real connection is real.</p>
+<p>and for real $\Gamma$ the scalar coefficient $\partial/\partial R_t\,\Gamma = -i\partial/\partial r'_t\Gamma$ is purely imaginary while the vector coefficients $\partial/\partial R_\eta\,\Gamma$ are real, which is exactly the membership condition of $\mathbb{B}_{\Phi}$. A $\Gamma$ whose imaginary part is not constant would move the potential out of the material sector. The gauge function of a real connection is real.</p>
 <p><strong>The coupling constant.</strong> The number $ϙ$ is the charge of the field. It is introduced by the principle as a parameter; the algebra does not supply its value. Setting $ϙ = 0$ restores the global theory. The minimal-coupling form of the standard Dirac equation is recovered in this sense, as a biquaternionic statement whose representation conventions the Dirac article left open.</p>
 <h2 id="the-connection-and-the-covariant-derivative">The Connection and the Covariant Derivative</h2>
 <p>The field $\tilde{A}_{\Phi}$ is the <strong>connection</strong>, and $D$ is the <strong>covariant derivative</strong>. Writing $\tilde{A}_{\Phi} = \sum_\mu A_\mu e_\mu$ with complex scalar coefficients $A_\mu$, the action of $D$ on a field separates into components,</p>
 <p>$$
 D\tilde{Ξ}_{\mathrm{sp}} = \sum_{\mu\in\{t,x,y,z\}}  e_\mu\,D_\mu\tilde{Ξ}_{\mathrm{sp}}, \qquad D_\mu = \partial/\partial R_\mu +\frac{k_m\,i\,ϙ}{m\,c}A_\mu,
 $$</p>
-<p>where $\partial/\partial R_t = \partial/\partial(i r'_t)$ and $\partial/\partial R_k = \partial/\partial x_k$, and where $A_0:=A_t$ in the component displays below.</p>
+<p>where $\partial/\partial R_t = \partial/\partial(i r'_t)$ and $\partial/\partial R_\eta = \partial/\partial x_k$, and where $A_0:=A_t$ in the component displays below.</p>
 <p>The following properties are immediate from the definitions and are worth recording, because they are the properties that make $D$ a covariant derivative rather than an arbitrary operator.</p>
 <p><strong>1. It is a derivation on central scalars.</strong> For a central scalar function $f$,</p>
 <p>$$
@@ -175,7 +175,7 @@ $$</p>
 <h2 id="the-field-strength-as-the-curvature">The Field Strength as the Curvature</h2>
 <p>The covariant derivative packages the connection. The curvature is built from the connection by differentiation. In the biquaternion algebra the natural first derivative of the connection is the product $\tilde{\nabla}^{\natural}\tilde{A}_{\Phi}$, and its scalar and vector parts separate cleanly. A direct computation gives</p>
 <p>$$
-\tilde{\nabla}^{\natural}\tilde{A}_{\Phi} = \underbrace{\left(\partial/\partial R_t\,A_0 + \mathrm{div}\,\vec A\right)}_{=\,S}e_t + \sum_{k=1}^{3}\left(\partial/\partial R_t\,A_k - \partial/\partial R_k A_0\right)\vec e_k - \mathrm{rot}\,\vec A.
+\tilde{\nabla}^{\natural}\tilde{A}_{\Phi} = \underbrace{\left(\partial/\partial R_t\,A_0 + \mathrm{div}\,\vec A\right)}_{=\,S}e_t + \sum_{\eta=1}^{3}\left(\partial/\partial R_t\,A_\eta - \partial/\partial R_\eta A_0\right)\vec e_\eta - \mathrm{rot}\,\vec A.
 $$</p>
 <p>The scalar part is the <strong>gauge scalar</strong> $S = \mathrm{Sc}(\tilde{\nabla}^{\natural}\tilde{A}_{\Phi})$ of the Maxwell article, which transforms as $S_2 = S - \Box\Gamma$ and is therefore pure gauge. The vector part is gauge invariant. Define the <strong>field-strength biquaternion</strong> as the vector part,</p>
 <p>$$
@@ -183,7 +183,7 @@ $$</p>
 $$</p>
 <p>With the parent's conventions this is the field strength $\tilde{F} = i\sqrt{\epsilon}\,\vec E - \sqrt{\mu}\,\vec H$ up to the overall normalization that the parent's construction also carries; the parent flags exactly this normalization freedom, and it does not affect anything below.</p>
 <h3 id="the-curvature-identity">The curvature identity</h3>
-<p>Write $F_{\mu\nu} = \partial/\partial R_\mu A_\nu - \partial/\partial R_\nu A_\mu$ for the components of the field strength, and let $\bar{e}_t = e_t$, $\bar{e}_k = -\vec e_k$ be the conjugate basis of <em>Algebra and Element Conventions</em>. Then</p>
+<p>Write $F_{\mu\nu} = \partial/\partial R_\mu A_\nu - \partial/\partial R_\nu A_\mu$ for the components of the field strength, and let $\bar{e}_t = e_t$, $\bar{e}_k = -\vec e_\eta$ be the conjugate basis of <em>Algebra and Element Conventions</em>. Then</p>
 <p>$$
 \boxed{\ \tilde{F} = \mathrm{Vect}\!\left(\tilde{\nabla}^{\natural}\tilde{A}_{\Phi}\right) = \frac{1}{2}\sum_{\mu,\nu\in\{t,x,y,z\}} F_{\mu\nu}\,\bar{e}_\mu e_\nu\ }
 $$</p>
@@ -204,7 +204,7 @@ $$</p>
 $$</p>
 <p>The field strength is the <strong>commutator of two covariant derivatives</strong>, contracted with the biquaternion basis. This is the precise sense in which "the field strength is the curvature": the curvature measures the failure of covariant derivatives to commute, and in the algebra that failure is packaged into the vector part of $\tilde{\nabla}^{\natural}\tilde{A}_{\Phi}$. The overall constant in the two boxed formulas depends on the convention for $ϙ$ and on the normalization of $\tilde{A}_{\Phi}$; the structural content is the identity of the objects, not the numerical factor.</p>
 <h3 id="the-homogeneous-equations-are-an-identity-not-an-equation-of-motion">The homogeneous equations are an identity, not an equation of motion</h3>
-<p>Because $\tilde{F}$ is <em>constructed</em> from $\tilde{A}_{\Phi}$ — its electric components are $F_{0k} = \partial/\partial R_t\,A_k - \partial/\partial R_k A_0$ and its magnetic components are $-(\mathrm{rot}\,\vec A)_k$ — the two homogeneous Maxwell equations hold identically. The magnetic field is $\vec B = \mathrm{rot}\,\vec A$, so $\mathrm{div}\,\vec B = 0$; and $\vec E = -\partial/\partial r'_t\vec A - \nabla\xi_{\mathrm{scp}}$, so Faraday's law holds. In the language of forms this is $dF = d^2A = 0$: the homogeneous pair is the <strong>Bianchi identity</strong> of the connection, and it is automatic. The detailed biquaternionic form of the Bianchi identity, and the sense in which a single biquaternion equation carries it, are the subject of the planned companion <em>Gauge Curvature and the Bianchi Identity</em>; this article does not claim a one-line form for it. What is established here is the weaker and safer statement: given the potential representation $\tilde{F} = \mathrm{Vect}(\tilde{\nabla}^{\natural}\tilde{A}_{\Phi})$, the homogeneous equations are not independent.</p>
+<p>Because $\tilde{F}$ is <em>constructed</em> from $\tilde{A}_{\Phi}$ — its electric components are $F_{0k} = \partial/\partial R_t\,A_\eta - \partial/\partial R_\eta A_0$ and its magnetic components are $-(\mathrm{rot}\,\vec A)_k$ — the two homogeneous Maxwell equations hold identically. The magnetic field is $\vec B = \mathrm{rot}\,\vec A$, so $\mathrm{div}\,\vec B = 0$; and $\vec E = -\partial/\partial r'_t\vec A - \nabla\xi_{\mathrm{scp}}$, so Faraday's law holds. In the language of forms this is $dF = d^2A = 0$: the homogeneous pair is the <strong>Bianchi identity</strong> of the connection, and it is automatic. The detailed biquaternionic form of the Bianchi identity, and the sense in which a single biquaternion equation carries it, are the subject of the planned companion <em>Gauge Curvature and the Bianchi Identity</em>; this article does not claim a one-line form for it. What is established here is the weaker and safer statement: given the potential representation $\tilde{F} = \mathrm{Vect}(\tilde{\nabla}^{\natural}\tilde{A}_{\Phi})$, the homogeneous equations are not independent.</p>
 <h2 id="the-gauge-principle-and-the-maxwell-field">The Gauge Principle and the Maxwell Field</h2>
 <p>The construction now meets the two parent articles.</p>
 <p><strong>The Maxwell field is the gauge field of the central phase.</strong> The connection $\tilde{A}_{\Phi}$, its transformation law $\tilde{A}_{\Phi,2}=\tilde{A}_{\Phi}-\tilde{\nabla}\Gamma$, the gauge scalar $S$, and the field strength $\tilde{F}$ are exactly the objects of <em>Maxwell's Equations in the Biquaternionic Formulation</em>. The single Maxwell equation $\tilde{\nabla}\tilde{F} = -\sqrt{\mu}\,\tilde{J}_{\Phi}$ is then the <strong>sourced curvature equation</strong> of the abelian connection. The source is expressed in terms of the potential, and the integrability condition $\mathrm{Sc}\!\left(\tilde{\nabla}^{\natural}(\sqrt{\mu}\,\tilde{J}_{\Phi})\right) = 0$ — the biquaternionic form of charge conservation — is the consistency condition of the sourced equation. With the obstruction of the dynamical question removed by deriving the gauge freedom from a symmetry, the Maxwell structure is seen to be one instantiation of the gauge principle rather than a separate fact about electromagnetism.</p>
@@ -314,12 +314,12 @@ $$</p>
 <p>The factors of $i$ are reduced before the squares are read, $i^2=-1$:</p>
 <p>$$
 \gamma_0^2=i^2L_{\mathrm{pau},e_t}R_{\mathrm{pau},\vec e_x^2}=(-1)(+1)(-1)I_4=I_4,\qquad
-\gamma_k^2=i^2L_{\mathrm{pau},\vec e_k^2}R_{\mathrm{pau},\vec e_y^2}=(-1)(-1)(-1)I_4=-I_4,
+\gamma_\eta^2=i^2L_{\mathrm{pau},\vec e_\eta^2}R_{\mathrm{pau},\vec e_y^2}=(-1)(-1)(-1)I_4=-I_4,
 $$</p>
 <p>In the axis-free display:</p>
 <p>$$
 \gamma_0^2=i^2L_{\mathrm{axf},e_t}R_{\mathrm{axf},\vec e_x^2}=(-1)(+1)(-1)I_4=I_4,\qquad
-\gamma_k^2=i^2L_{\mathrm{axf},\vec e_k^2}R_{\mathrm{axf},\vec e_y^2}=(-1)(-1)(-1)I_4=-I_4,
+\gamma_\eta^2=i^2L_{\mathrm{axf},\vec e_\eta^2}R_{\mathrm{axf},\vec e_y^2}=(-1)(-1)(-1)I_4=-I_4,
 $$</p>
 <p>so the frame carries the Lorentzian signature. With $\mu,\nu\in\{0,1,2,3\}$ in this section only, the five basis operators satisfy</p>
 <p>$$
@@ -369,7 +369,7 @@ $$</p>
 </tr>
 <tr>
 <td>$e_t, \vec e_x, \vec e_y, \vec e_z$</td>
-<td>the units of the algebra; $e_t$ is the unit, $\vec e_k^2 = -\vec e_t$</td>
+<td>the units of the algebra; $e_t$ is the unit, $\vec e_\eta^2 = -\vec e_t$</td>
 </tr>
 <tr>
 <td>$i$</td>
@@ -409,7 +409,7 @@ $$</p>
 </tr>
 <tr>
 <td>$\bar e_\mu$</td>
-<td>the conjugate basis, $\bar e_t = e_t$ and $\bar e_k = -\vec e_k$</td>
+<td>the conjugate basis, $\bar e_t = e_t$ and $\bar e_k = -\vec e_\eta$</td>
 </tr>
 <tr>
 <td>$\lambda = \exp(\frac{k_m\,i\,ϙ\,\Gamma}{m\,c})$</td>

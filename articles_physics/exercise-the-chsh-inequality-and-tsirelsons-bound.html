@@ -85,7 +85,7 @@ $$</p>
 <p>Two honest statements belong in the introduction, and they are revisited at the end.</p>
 <p>First, <strong>the framework reproduces both bounds; it does not explain why nature stops at $2\sqrt{2}$.</strong> The derivation below is the standard operator-norm argument, translated into the algebra. It shows that the quantum bound follows from the tensor-product structure and the $\pm1$ spectrum of the observables. It does not supply a principle, beyond that algebra, from which the value $2\sqrt{2}$ could be anticipated. The no-signaling maximum is $4$, and the framework — like ordinary quantum physics — offers no reason why the physical world realizes $2\sqrt{2}$ rather than $4$ other than the fact that it is quantum-mechanical.</p>
 <p>Second, the sharp bound is obtained <strong>after</strong> the identification $\mathbb{B}\otimes\mathbb{B}\cong M_4(\mathbb{C})$, by the spectral norm of that matrix algebra. The framework's own positive-definite quadratic form, the Euclidean form $\mathrm{Sc}(x x^{*})$ of the companion articles, is (up to the trace normalisation) the Frobenius norm of the matrix image, and it yields only the trivial bound $4$. This is a genuine gap in the framework's internal resources, and it is labelled as such in the biquaternion solution: the framework does not contain, by itself, the norm that gives Tsirelson's bound. What it contains is the algebra whose matrix representation carries that norm.</p>
-<p>The conventions are those of the companion articles: the algebra, the units, the sectors and the trace are those of <em>Algebra and Element Conventions</em> and <em>Norm and Pairing Conventions</em>, and none is restated here. On the tensor product the trace factorises, $\mathrm{Tr}(x\otimes y)=\mathrm{Tr}_\mathbb{B}(x)\cdot\mathrm{Tr}_\mathbb{B}(y)$ with $\mathrm{Tr}_\mathbb{B}(e_t)=2$ and $\mathrm{Tr}_\mathbb{B}(\vec e_k)=0$. The isomorphism $\mathsf{M}_2$ is the one fixed by <em>Quantum Physics in Biquaternionic Form</em> (<em>Matrix Representations Conventions</em>, §<em>The $2\times2$ Pauli Representation</em>), whose image of $i\vec e_k$ is $\sigma_k$; the three Pauli matrices are written $\boldsymbol{\sigma}=(\sigma_1,\sigma_2,\sigma_3)$.</p>
+<p>The conventions are those of the companion articles: the algebra, the units, the sectors and the trace are those of <em>Algebra and Element Conventions</em> and <em>Norm and Pairing Conventions</em>, and none is restated here. On the tensor product the trace factorises, $\mathrm{Tr}(x\otimes y)=\mathrm{Tr}_\mathbb{B}(x)\cdot\mathrm{Tr}_\mathbb{B}(y)$ with $\mathrm{Tr}_\mathbb{B}(e_t)=2$ and $\mathrm{Tr}_\mathbb{B}(\vec e_\eta)=0$. The isomorphism $\mathsf{M}_2$ is the one fixed by <em>Quantum Physics in Biquaternionic Form</em> (<em>Matrix Representations Conventions</em>, §<em>The $2\times2$ Pauli Representation</em>), whose image of $i\vec e_\eta$ is $\sigma_\eta$; the three Pauli matrices are written $\boldsymbol{\sigma}=(\sigma_1,\sigma_2,\sigma_3)$.</p>
 <h2 id="the-exercise">The Exercise</h2>
 <p>Two spin-$\tfrac{1}{2}$ particles are prepared in one of the four <strong>Bell states</strong>, and the two particles are measured by two separated parties, Alice and Bob.</p>
 <p>Alice chooses one of two unit directions $\vec a_1$ or $\vec a_2$; Bob chooses one of two unit directions $\vec b_1$ or $\vec b_2$. Each measurement has two outcomes, labelled $\pm1$. Write</p>
@@ -121,7 +121,7 @@ $$</p>
 <p>so that $S=\langle S\rangle$. Every property of $S$ below is a property of the single Hermitian operator $S$.</p>
 <p>Equivalently, one may expand in the Pauli-string basis. With the correlation matrix</p>
 <p>$$
-T_{jk} = \langle \sigma_j\otimes\sigma_k\rangle = \mathrm{Tr}\!\left(\rho\,\sigma_j\otimes\sigma_k\right),
+T_{jk} = \langle \sigma_j\otimes\sigma_\eta\rangle = \mathrm{Tr}\!\left(\rho\,\sigma_j\otimes\sigma_\eta\right),
 $$</p>
 <p>the correlation function is the bilinear form $E(\vec a_1,\vec b_1)=\vec a_1^T T\,\vec b_1$, and the CHSH combination is a quadratic expression in the four directions.</p>
 <h3 id="step-2-the-classical-bound">Step 2: The classical bound</h3>
@@ -216,8 +216,8 @@ $$</p>
 <p>Now consider the other three Bell states. They are related to the singlet by <strong>local $*$-unitary operations</strong>: the parent article <em>The Bell Basis as the Idempotent Basis of $\mathbb{B}\otimes\mathbb{B}$</em> shows that conjugating $\tilde\Pi_{Ξ^+}$ by the unit real quaternions $e_t,\vec e_x,\vec e_y,\vec e_z$ on the first factor permutes the four Bell idempotents. In Hilbert-space terms the four Bell states lie in a single local-$*$-unitary orbit. The CHSH maximum is invariant under local unitaries, because a local $*$-unitary simply maps the set of measurement directions onto itself; the maximum for each Bell state is therefore also $2\sqrt{2}$.</p>
 <p>The explicit optimal configuration for a non-singlet Bell state is worth recording. Its correlation matrix $T=-\mathrm{diag}(\epsilon)$ has diagonal entries $T_{jj}=-\epsilon_j$, two of which are equal because $\epsilon_1\epsilon_2\epsilon_3=+1$ guarantees at least two equal signs. Choose the plane spanned by the two axes $j,k$ with $\epsilon_j=\epsilon_k$, put $\vec a_1,\vec a_2$ along those two axes, and put $\vec b_1,\vec b_2$ at $\pm45^\circ$ within that plane,</p>
 <p>$$
-\vec a_1=\vec u_j,\quad \vec a_2=\vec u_k,\quad
-\vec b_1=\frac{\vec u_j+\vec u_k}{\sqrt{2}},\quad \vec b_2=\frac{-\vec u_j+\vec u_k}{\sqrt{2}} .
+\vec a_1=\vec u_j,\quad \vec a_2=\vec u_\eta,\quad
+\vec b_1=\frac{\vec u_j+\vec u_\eta}{\sqrt{2}},\quad \vec b_2=\frac{-\vec u_j+\vec u_\eta}{\sqrt{2}} .
 $$</p>
 <p>Then $S_\epsilon = \sqrt{2}\,(T_{jj}+T_{kk}) = -\sqrt{2}\,(\epsilon_j+\epsilon_k) = \mp 2\sqrt{2}$, so $|S_\epsilon|=2\sqrt{2}$. For example, $\lvertΞ^{+}\rangle$ with $\epsilon=(-1,+1,-1)$ uses the plane of $\vec u_x$ and $\vec u_z$ and gives $S=+2\sqrt{2}$; $\lvertΞ^{-}\rangle$ with $\epsilon=(+1,-1,-1)$ uses $\vec u_y,\vec u_z$; $\lvert\tilde{Ξ}_{\mathrm{sp}}^+\rangle$ with $\epsilon=(-1,-1,+1)$ uses $\vec u_x,\vec u_y$. Thus <strong>all four Bell states attain Tsirelson's bound</strong>.</p>
 <h3 id="step-5-tsirelsons-bound">Step 5: Tsirelson's bound</h3>
@@ -270,7 +270,7 @@ $$</p>
 = (i\vec a_1)\otimes(i\vec b_1) - (i\vec a_1)\otimes(i\vec b_2)
 + (i\vec a_2)\otimes(i\vec b_1) + (i\vec a_2)\otimes(i\vec b_2),
 $$</p>
-<p>a single Hermitian element of $\mathbb{B}_{\Psi}\otimes\mathbb{B}_{\Psi}$. The glyph carries no tilde: the tilde marks an element of $\mathbb{B}$ read as a four-vector, with its scalar part beside its vector part, and $\mathcal{S}$ is an element of the tensor square, with no $e_t\otimes e_t$ term. Because the isomorphism $\vec e_k\mapsto-i\sigma_k$ carries $i\vec a_1$ to $\vec a_1\cdot\boldsymbol{\sigma}$ and respects the tensor product, it carries $\mathcal{S}$ to the Bell operator $S$ of the standard formulation. The CHSH combination is therefore the Born pairing of the state with one element of the algebra,</p>
+<p>a single Hermitian element of $\mathbb{B}_{\Psi}\otimes\mathbb{B}_{\Psi}$. The glyph carries no tilde: the tilde marks an element of $\mathbb{B}$ read as a four-vector, with its scalar part beside its vector part, and $\mathcal{S}$ is an element of the tensor square, with no $e_t\otimes e_t$ term. Because the isomorphism $\vec e_\eta\mapsto-i\sigma_\eta$ carries $i\vec a_1$ to $\vec a_1\cdot\boldsymbol{\sigma}$ and respects the tensor product, it carries $\mathcal{S}$ to the Bell operator $S$ of the standard formulation. The CHSH combination is therefore the Born pairing of the state with one element of the algebra,</p>
 <p>$$
 S = \mathrm{Tr}\bigl(\tilde\Pi_\epsilon\,\mathcal{S}\bigr),
 $$</p>
@@ -291,7 +291,7 @@ $$</p>
 p_\epsilon(\pm,\pm\mid\vec a_1,\vec b_1)
 = \mathrm{Tr}\Bigl(\tilde\Pi_\epsilon\,\bigl(\tilde\Pi(\pm\vec a_1)\otimes \tilde\Pi(\pm\vec b_1)\bigr)\Bigr).
 $$</p>
-<p>Expanding the product of idempotents gives $p(+,+)=p(-,-)=\tfrac14\bigl(1+E(\vec a_1,\vec b_1)\bigr)$ and $p(+,-)=p(-,+)=\tfrac14\bigl(1-E(\vec a_1,\vec b_1)\bigr)$ — the cross terms vanish because the single-particle expectations $\langle\sigma_j\otimes I\rangle$ and $\langle I\otimes\sigma_k\rangle$ are zero in every Bell state — and the CHSH combination is the corresponding combination of joint probabilities,</p>
+<p>Expanding the product of idempotents gives $p(+,+)=p(-,-)=\tfrac14\bigl(1+E(\vec a_1,\vec b_1)\bigr)$ and $p(+,-)=p(-,+)=\tfrac14\bigl(1-E(\vec a_1,\vec b_1)\bigr)$ — the cross terms vanish because the single-particle expectations $\langle\sigma_j\otimes I\rangle$ and $\langle I\otimes\sigma_\eta\rangle$ are zero in every Bell state — and the CHSH combination is the corresponding combination of joint probabilities,</p>
 <p>$$
 S = \bigl[p(++)+p(--)-p(+-)-p(-+)\bigr]_{\vec a_1,\vec b_1}
 -\bigl[p(++)+p(--)-p(+-)-p(-+)\bigr]_{\vec a_1,\vec b_2}
@@ -437,7 +437,7 @@ $$</p>
 </tr>
 <tr>
 <td>$e_t=1,\vec e_x,\vec e_y,\vec e_z$</td>
-<td>Quaternion basis, $\vec e_k^2=-e_t$, cyclic products</td>
+<td>Quaternion basis, $\vec e_\eta^2=-e_t$, cyclic products</td>
 </tr>
 <tr>
 <td>$i$</td>
@@ -452,8 +452,8 @@ $$</p>
 <td>Trace on the tensor product</td>
 </tr>
 <tr>
-<td>$e_t\mapsto I_2,\ \vec e_k\mapsto-i\sigma_k$</td>
-<td>Isomorphism $\mathbb{B}\cong M_2(\mathbb{C})$; image of $i\vec e_k$ is $\sigma_k$</td>
+<td>$e_t\mapsto I_2,\ \vec e_\eta\mapsto-i\sigma_\eta$</td>
+<td>Isomorphism $\mathbb{B}\cong M_2(\mathbb{C})$; image of $i\vec e_\eta$ is $\sigma_\eta$</td>
 </tr>
 <tr>
 <td>$\vec a_1,\vec a_2,\vec b_1,\vec b_2$</td>
@@ -472,7 +472,7 @@ $$</p>
 <td>Correlation function</td>
 </tr>
 <tr>
-<td>$T_{jk}=\langle\sigma_j\otimes\sigma_k\rangle=-\epsilon_j\delta_{jk}$</td>
+<td>$T_{jk}=\langle\sigma_j\otimes\sigma_\eta\rangle=-\epsilon_j\delta_{j\eta}$</td>
 <td>Correlation matrix of a Bell state</td>
 </tr>
 <tr>

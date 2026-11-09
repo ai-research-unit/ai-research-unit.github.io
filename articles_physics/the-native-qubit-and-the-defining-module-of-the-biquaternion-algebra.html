@@ -82,7 +82,7 @@
 $$</p>
 <p>the complexification of the real quaternion algebra $\mathbb{H}$. Its quaternion units are $e_t = 1, \vec e_x, \vec e_y, \vec e_z$ with</p>
 <p>$$
-e_t^2 = e_t, \qquad \vec e_k^2 = -e_t \quad (k=1,2,3), \qquad \vec e_x\vec e_y = \vec e_z, \quad \vec e_y\vec e_z = \vec e_x, \quad \vec e_z\vec e_x = \vec e_y,
+e_t^2 = e_t, \qquad \vec e_\eta^2 = -e_t \quad (\eta=1,2,3), \qquad \vec e_x\vec e_y = \vec e_z, \quad \vec e_y\vec e_z = \vec e_x, \quad \vec e_z\vec e_x = \vec e_y,
 $$</p>
 <p>and the scalar imaginary is central and is written $i$, with $i^2 = -1$. A general element is</p>
 <p>$$
@@ -199,15 +199,15 @@ $$</p>
 $$</p>
 <p>The biquaternion norm therefore measures the departure of a state from the boundary of the Bloch ball, and it vanishes precisely on the rank-one idempotents — the rays of the module. On the pure states the algebra's biquaternion norm has a nonzero kernel; that degenerate cone is the module's set of rays, and it is the geometric reason the rank-one idempotents are the zero divisors of $\mathbb{B}_{\Psi}$.</p>
 <h3 id="tomography-on-the-module">Tomography on the module</h3>
-<p>The module's state is fixed by the three expectations of the coordinate observables $i\vec e_k$, $k=1,2,3$:</p>
+<p>The module's state is fixed by the three expectations of the coordinate observables $i\vec e_\eta$, $\eta=1,2,3$:</p>
 <p>$$
-r_k = \frac{\langle\tilde{Ϛ}_{\Psi},i\vec e_k\rangle_{*}}{\langle\tilde{Ϛ}_{\Psi},e_t\rangle_{*}} = \langle \sigma_k\rangle_{*} ,
+r_\eta = \frac{\langle\tilde{Ϛ}_{\Psi},i\vec e_\eta\rangle_{*}}{\langle\tilde{Ϛ}_{\Psi},e_t\rangle_{*}} = \langle \sigma_\eta\rangle_{*} ,
 $$</p>
 <p>so the state is reconstructed from three real numbers obtained by measuring the three Pauli observables. Equivalently, since</p>
 <p>$$
-p_k^{\pm} = \frac{\langle\tilde{Ϛ}_{\Psi},\tilde\Pi_{1,2}(\vec u_k)\rangle_{*}}{\langle\tilde{Ϛ}_{\Psi},e_t\rangle_{*}} = 2\,\mathrm{Sc}\bigl(\tilde{Ϛ}_{\Psi}\,\tilde\Pi_{1,2}(\vec u_k)^{*}\bigr) = \tfrac12\bigl(1 \pm r_k\bigr),
+p_\eta^{\pm} = \frac{\langle\tilde{Ϛ}_{\Psi},\tilde\Pi_{1,2}(\vec u_\eta)\rangle_{*}}{\langle\tilde{Ϛ}_{\Psi},e_t\rangle_{*}} = 2\,\mathrm{Sc}\bigl(\tilde{Ϛ}_{\Psi}\,\tilde\Pi_{1,2}(\vec u_\eta)^{*}\bigr) = \tfrac12\bigl(1 \pm r_\eta\bigr),
 $$</p>
-<p>the three pairs of outcome probabilities determine $\vec r$ and hence the state; the trace form $\mathrm{Tr}(\tilde{Ϛ}_{\Psi}\,\tilde\Pi_{1,2}(\vec u_k)^{*})=\mathrm{Tr}(\tilde{Ϛ}_{\Psi}\,\tilde\Pi_{1,2}(\vec u_k))$ is the $2\times2$ reading, with $\operatorname{Tr}(\tilde{Ϛ}_{\Psi})=1$; the star is inert and the unstarred trace is real and non-negative. This is the elementary tomographic completeness of the three coordinate measurements, and it is the module-level content of the mutually unbiased bases of a qubit. The module carries no further state parameters: it has complex dimension two, its rays are parametrized by two real angles, and its states by three real numbers.</p>
+<p>the three pairs of outcome probabilities determine $\vec r$ and hence the state; the trace form $\mathrm{Tr}(\tilde{Ϛ}_{\Psi}\,\tilde\Pi_{1,2}(\vec u_\eta)^{*})=\mathrm{Tr}(\tilde{Ϛ}_{\Psi}\,\tilde\Pi_{1,2}(\vec u_\eta))$ is the $2\times2$ reading, with $\operatorname{Tr}(\tilde{Ϛ}_{\Psi})=1$; the star is inert and the unstarred trace is real and non-negative. This is the elementary tomographic completeness of the three coordinate measurements, and it is the module-level content of the mutually unbiased bases of a qubit. The module carries no further state parameters: it has complex dimension two, its rays are parametrized by two real angles, and its states by three real numbers.</p>
 <h2 id="what-the-module-supplies-and-what-it-does-not">What the Module Supplies and What It Does Not</h2>
 <p><strong>What it supplies.</strong></p>
 <ul>
@@ -286,7 +286,7 @@ $$</p>
 </tr>
 <tr>
 <td>$e_t = 1, \vec e_x, \vec e_y, \vec e_z$</td>
-<td>Quaternion units, $\vec e_k^2 = -e_t$</td>
+<td>Quaternion units, $\vec e_\eta^2 = -e_t$</td>
 </tr>
 <tr>
 <td>$i$</td>
@@ -333,7 +333,7 @@ $$</p>
 <td>Trace reading of the Hermitian form; the $2\times2$ reading of the Born rule</td>
 </tr>
 <tr>
-<td>$r_k = 2\langle\tilde{Ϛ}_{\Psi},i\vec e_k\rangle_{*} = \mathrm{Tr}(\tilde{Ϛ}_{\Psi}\,(i\vec e_k)^{*})$</td>
+<td>$r_\eta = 2\langle\tilde{Ϛ}_{\Psi},i\vec e_\eta\rangle_{*} = \mathrm{Tr}(\tilde{Ϛ}_{\Psi}\,(i\vec e_\eta)^{*})$</td>
 <td>Bloch components (tomography)</td>
 </tr>
 <tr>

@@ -159,7 +159,7 @@ $$</p>
 <p>Since $h$ is strictly concave on $[0,1]$, its maximum over the admissible range $s_1^2\in[\tfrac12,1]$ is at $s_1^2=\tfrac12$, with value $\log2$; its minimum is $0$ at $s_1^2=1$. There is no other case for two qubits: the entropy is either $0$, $\log2$, or a value of $h(p)$ strictly between them.</p>
 <h2 id="solution-ii-the-biquaternion-route">Solution II: The Biquaternion Route</h2>
 <h3 id="the-biquaternion-form-of-the-worked-family">The biquaternion form of the worked family</h3>
-<p>The two-qubit state space is $\mathbb{B}\otimes\mathbb{B}\cong M_4(\mathbb{C})$, and the pure state $|\tilde{Ξ}_{\mathrm{sp},\theta}\rangle$ corresponds to a Hermitian idempotent $\tilde\Pi_\theta$ of trace one. To write it in the tensor basis, expand the joint density in Pauli strings and translate with the isomorphism of the companion articles, $e_t\mapsto I_2$ and $\vec e_k\mapsto -i\sigma_k$. Equivalently, $\sigma_k\mapsto i \vec e_k$.</p>
+<p>The two-qubit state space is $\mathbb{B}\otimes\mathbb{B}\cong M_4(\mathbb{C})$, and the pure state $|\tilde{Ξ}_{\mathrm{sp},\theta}\rangle$ corresponds to a Hermitian idempotent $\tilde\Pi_\theta$ of trace one. To write it in the tensor basis, expand the joint density in Pauli strings and translate with the isomorphism of the companion articles, $e_t\mapsto I_2$ and $\vec e_\eta\mapsto -i\sigma_\eta$. Equivalently, $\sigma_\eta\mapsto i \vec e_\eta$.</p>
 <p>For the state $|\tilde{Ξ}_{\mathrm{sp},\theta}\rangle=\cos\theta\,|\uparrow\uparrow\rangle+\sin\theta\,|\downarrow\downarrow\rangle$, the Pauli-string coefficients $\mathrm{Ric}_{\mu\nu}=\langle\sigma_\mu\otimes\sigma_\nu\rangle$, with $\sigma_t=I_2$ and $\mu,\nu\in\{t,x,y,z\}$, are</p>
 <p>$$
 R_{tt}=1,\qquad R_{tz}=R_{zt}=\cos 2\theta,\qquad R_{zz}=1,
@@ -180,7 +180,7 @@ $$</p>
 \mathrm{Tr}_2(e_\mu\otimes e_\nu)=e_\mu\,\mathrm{Tr}_\mathbb{B}(e_\nu)
 =2\,\delta_{\nu t}\,e_\mu,
 $$</p>
-<p>because $\mathrm{Tr}_\mathbb{B}(e_t)=2$ and $\mathrm{Tr}_\mathbb{B}(\vec e_k)=0$ for $k\in\{x,y,z\}$. Term by term:</p>
+<p>because $\mathrm{Tr}_\mathbb{B}(e_t)=2$ and $\mathrm{Tr}_\mathbb{B}(\vec e_\eta)=0$ for $k\in\{x,y,z\}$. Term by term:</p>
 <ul>
 <li>$\tfrac14 e_t\otimes e_t\mapsto\tfrac14\cdot 2\,e_t=\tfrac12 e_t$;</li>
 <li>$-\tfrac14 \vec e_z\otimes \vec e_z\mapsto 0$;</li>
@@ -387,7 +387,7 @@ $$</p>
 </tr>
 <tr>
 <td>$e_t=1,\vec e_x,\vec e_y,\vec e_z$</td>
-<td>Quaternion basis, $\vec e_k^2=-e_t$</td>
+<td>Quaternion basis, $\vec e_\eta^2=-e_t$</td>
 </tr>
 <tr>
 <td>$i$</td>
@@ -403,7 +403,7 @@ $$</p>
 </tr>
 <tr>
 <td>$\mathrm{Tr}_\mathbb{B}$</td>
-<td>Trace on one factor: $\mathrm{Tr}_\mathbb{B}(e_t)=2$, $\mathrm{Tr}_\mathbb{B}(\vec e_k)=0$</td>
+<td>Trace on one factor: $\mathrm{Tr}_\mathbb{B}(e_t)=2$, $\mathrm{Tr}_\mathbb{B}(\vec e_\eta)=0$</td>
 </tr>
 <tr>
 <td>$\mathrm{Tr}(x\otimes y)=\mathrm{Tr}_\mathbb{B}(x)\mathrm{Tr}_\mathbb{B}(y)$</td>
@@ -422,7 +422,7 @@ $$</p>
 <td>Single-qubit idempotents</td>
 </tr>
 <tr>
-<td>$\tilde\Pi_\epsilon=\tfrac14(e_t\otimes e_t+\sum_k\epsilon_k \vec e_k\otimes \vec e_k)$</td>
+<td>$\tilde\Pi_\epsilon=\tfrac14(e_t\otimes e_t+\sum_\eta\epsilon_k \vec e_\eta\otimes \vec e_\eta)$</td>
 <td>Bell idempotent, $\epsilon_1\epsilon_2\epsilon_3=+1$</td>
 </tr>
 <tr>

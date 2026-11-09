@@ -82,7 +82,7 @@ k_m=\dfrac{mc}{\hbar},
 $$</p>
 <p>with massless limit $\tilde{\nabla}\tilde{Ξ}_{\mathrm{sp}} = 0$. Both lines act from the left, the conjugation $\natural$ separates them, and no glyph names a side (<em>Operator and Calculus Conventions</em>, §<em>The Two Sides and the Renaming Theorem</em>). Every coordinate form of the pair is the standard Dirac equation and is not a second dynamics. The field is one element of $\mathbb{B}$ with two parts, one for each letter of the pair, and the mass is the central coefficient that relates them; it takes no part into the other, since a coefficient multiplying on the left keeps the value.</p>
 <p><strong>Two different equations carry the name of Dirac, and this article uses one of them.</strong> The first is the one-sided pair displayed above: both gradients act by left multiplication and keep the value, and the mass is the central coefficient $k_m$ that relates the two components; it is off-diagonal in the pair, since each line joins a component of one letter to a component of the other, and it moves no value across, since a central coefficient multiplying on the left keeps it. The second is the <strong>two-sided</strong> form of <em>The Dirac Equation in Biquaternionic Form</em>, a single equation on $\mathbb{B}$ in which the derivative acts from the left and the mass by right multiplication through the fixed direction $\vec e_z$. The two are the same field read through the dictionary of that article, and they are not the same operator; the difference is exactly the difference between a one-sided and a two-sided action. Every statement below is about the one-sided pair, and the path integral is built for it.</p>
-<p>The worldline parameter is $\tau$ and the proper time $T$. The material position is $\tilde R_\Phi = i r'_t\,e_t + r_x\,\vec e_x + r_y\,\vec e_y + r_z\,\vec e_z \in \mathbb{B}_{\Phi}$, with real coordinates $x_0 = r'_{t}$ and $r_k$ on the three spatial directions (<em>Frame and Metric Conventions</em>, §<em>The $\mathbb{B}_{\Phi}$ Frame</em>), so that $Q_t = ix_0$.</p>
+<p>The worldline parameter is $\tau$ and the proper time $T$. The material position is $\tilde R_\Phi = i r'_t\,e_t + r_x\,\vec e_x + r_y\,\vec e_y + r_z\,\vec e_z \in \mathbb{B}_{\Phi}$, with real coordinates $x_0 = r'_{t}$ and $r_\eta$ on the three spatial directions (<em>Frame and Metric Conventions</em>, §<em>The $\mathbb{B}_{\Phi}$ Frame</em>), so that $Q_t = ix_0$.</p>
 <h2 id="the-dirac-propagator-and-the-square">The Dirac Propagator and the Square</h2>
 <p>The object the path integral must compute is the Feynman propagator of the pair. Its two components are the amplitudes for the two letters of the pair, and each component is an element of the algebra: no array enters, and the pair is what the algebra's own product acts on.</p>
 <p><strong>The two symbols.</strong> A plane wave of the pair is $\tilde{Ξ}_{\mathrm{sp}}(x) = \tilde{Ξ}_{\mathrm{sp},\mathrm{amp}}\exp(-ip\cdot x/\hbar)=\tilde{Ξ}_{\mathrm{sp},\mathrm{amp}}\exp\!\big(i\,\mathrm{Sc}(\tilde K_{\Phi}\tilde R_{\Phi}^{\natural})\big)$, with $p\cdot x = p_0x_0 - \vec p\cdot\vec r$, $p_0 = E/c$ and $\tilde K_{\Phi}=\tilde P_{\Phi}/\hbar$; the two exponents are one number, since $p\cdot x/\hbar=-\mathrm{Sc}(\tilde K_{\Phi}\tilde R_{\Phi}^{\natural})$. The momentum element is $\tilde{P}_{\Phi}$, and its norm is the mass-shell scalar,</p>
@@ -97,7 +97,7 @@ $$</p>
 \qquad
 \tilde{\nabla}^{\natural}\,e^{\,i\mathrm{Sc}(\tilde K_{\Phi}\tilde R_{\Phi}^{\natural})} = i\tilde K_{\Phi}^{\natural}\,e^{\,i\mathrm{Sc}(\tilde K_{\Phi}\tilde R_{\Phi}^{\natural})},
 $$</p>
-<p>a derived form: the time derivative of the phase is $-ik_{t}^{\prime}$ and the spatial derivative $+ik_k$, the two coordinates of $\tilde K_{\Phi}$ and nothing else, with $k_{t}^{\prime}=p_0/\hbar=E/(\hbar c)$ and $k_k=p_k/\hbar$; on the material sector the time derivative of the gradient is read with $\partial/\partial R_t = -i\,\partial/\partial x_0$ (<em>Operator and Calculus Conventions</em>, §<em>The Gradient</em>). The product of the two symbols is the symbol of the d'Alembertian,</p>
+<p>a derived form: the time derivative of the phase is $-ik_{t}^{\prime}$ and the spatial derivative $+ik_k$, the two coordinates of $\tilde K_{\Phi}$ and nothing else, with $k_{t}^{\prime}=p_0/\hbar=E/(\hbar c)$ and $k_k=p_\eta/\hbar$; on the material sector the time derivative of the gradient is read with $\partial/\partial R_t = -i\,\partial/\partial x_0$ (<em>Operator and Calculus Conventions</em>, §<em>The Gradient</em>). The product of the two symbols is the symbol of the d'Alembertian,</p>
 <p>$$
 i\tilde K_{\Phi}\,i\tilde K_{\Phi}^{\natural} = -\langle\tilde K_{\Phi}\rangle_{\natural} = \frac{p^2}{\hbar^{2}} .
 $$</p>
@@ -135,7 +135,7 @@ $$</p>
 \qquad
 \tilde\nabla\tilde\nabla^{\natural}\mathcal S_L = \Box\,\mathcal S_L,
 $$</p>
-<p>the composition of two left multiplications by the two gradients, whose product is central (<em>Operator and Calculus Conventions</em>, §<em>The Gradient</em>). In symbols that is the identity $i\tilde K_{\Phi}\,i\tilde K_{\Phi}^{\natural} = p^{2}/\hbar^{2}$; the operator is $\Box=\sum_\mu\partial^2/\partial R_\mu^2$, and on the material reading, $Q_t=i r'_t$ and $Q_k=r_k$, it is $\Delta - \partial^2/\partial x_0^2$, with $\Delta$ the Laplacian in the three real spatial coordinates. The square is therefore the series' own scalar operator and not a second one, and that is what makes the first-order operator a square root.</p>
+<p>the composition of two left multiplications by the two gradients, whose product is central (<em>Operator and Calculus Conventions</em>, §<em>The Gradient</em>). In symbols that is the identity $i\tilde K_{\Phi}\,i\tilde K_{\Phi}^{\natural} = p^{2}/\hbar^{2}$; the operator is $\Box=\sum_\mu\partial^2/\partial R_\mu^2$, and on the material reading, $Q_t=i r'_t$ and $Q_\eta=r_\eta$, it is $\Delta - \partial^2/\partial x_0^2$, with $\Delta$ the Laplacian in the three real spatial coordinates. The square is therefore the series' own scalar operator and not a second one, and that is what makes the first-order operator a square root.</p>
 <p>This is standard relativistic quantum physics (see the Further Reading); the companion article <em>The Feynman Propagator in Biquaternionic Form</em> treats the same object in the biquaternion framework. Two structural facts are needed here.</p>
 <p><strong>The propagator is the scalar kernel acted on by the first-order operator.</strong> Write</p>
 <p>$$
@@ -171,7 +171,7 @@ $$</p>
 S_0[x] = \int_0^T d\tau\left(\frac{1}{4}\sum_\mu\frac{dR_\mu}{d\tau}\frac{dR_\mu}{d\tau} - \hbar^{2}k_m^{2}\right),
 \qquad \hbar^{2}k_m^{2}=m^{2}c^{2},
 $$</p>
-<p>up to the standard normalisation of the measure and the einbein gauge choice. The tangent is read in the complex coordinate, $Q_t=i r'_t$ and $Q_k=r_k$, so that for a straight worldline</p>
+<p>up to the standard normalisation of the measure and the einbein gauge choice. The tangent is read in the complex coordinate, $Q_t=i r'_t$ and $Q_\eta=r_\eta$, so that for a straight worldline</p>
 <p>$$
 \sum_\mu\frac{dR_\mu}{d\tau}\frac{dR_\mu}{d\tau} = -\frac{(x-x_2)^2}{T^2},
 \qquad
@@ -212,7 +212,7 @@ $$</p>
 \tilde{Ξ}_{\mathrm{sp},\mu}\tilde{Ξ}_{\mathrm{sp},\nu} + \tilde{Ξ}_{\mathrm{sp},\nu}\tilde{Ξ}_{\mathrm{sp},\mu} = -\tfrac12 \varepsilon_\mu\delta_{\mu\nu}\,e_t ,
 $$</p>
 <p>with the unit $e_t$ of the algebra in place of the identity of the older display, and this is the whole of their definition: the right-hand side carries the weight and the unit and nothing else. The central $i$ sits in the kinetic term of the worldline action and not in this relation, so the odd sector carries the signs of the bosonic sector, the time slot negative and the three spatial slots positive, written as the negative of the plain weight.</p>
-<p><strong>The odd pair closes on the algebra.</strong> A single odd variable is not an element of $\mathbb{B}$: the algebra has no odd part, and every element of it commutes with the central coefficients. The products of an even number of odd variables are even, and they close under multiplication; they span an algebra of real dimension eight, and that algebra is $\mathbb{B}$ — the even part of the envelope is the algebra, and the odd part is a second copy of it that the algebra does not contain (<em>Biquaternion Versors and the Orthogonal Group</em>, §<em>The Two Slots of the Envelope</em>). In the algebra itself the closure is visible on the units: a product of two units is a unit up to sign, since $e_te_t$ and $\vec e_k\vec e_k$ are $\pm e_t$, $e_t\vec e_k$ and $\vec e_k e_t$ are $\pm\vec e_k$, and $\vec e_j\vec e_k$ with distinct spatial indices is the third unit. The four units span the algebra, of complex dimension four, and that dimension is the one the older counting reports.</p>
+<p><strong>The odd pair closes on the algebra.</strong> A single odd variable is not an element of $\mathbb{B}$: the algebra has no odd part, and every element of it commutes with the central coefficients. The products of an even number of odd variables are even, and they close under multiplication; they span an algebra of real dimension eight, and that algebra is $\mathbb{B}$ — the even part of the envelope is the algebra, and the odd part is a second copy of it that the algebra does not contain (<em>Biquaternion Versors and the Orthogonal Group</em>, §<em>The Two Slots of the Envelope</em>). In the algebra itself the closure is visible on the units: a product of two units is a unit up to sign, since $e_te_t$ and $\vec e_\eta\vec e_\eta$ are $\pm e_t$, $e_t\vec e_\eta$ and $\vec e_\eta e_t$ are $\pm\vec e_\eta$, and $\vec e_j\vec e_\eta$ with distinct spatial indices is the third unit. The four units span the algebra, of complex dimension four, and that dimension is the one the older counting reports.</p>
 <p>The path integral over the odd variables, with the boundary condition appropriate to the object computed, is a <strong>spin factor</strong> $Ξ[x]$ multiplying the scalar measure:</p>
 <p>$$
 \boxed{\;\mathcal S(x,x_2) = \int_0^\infty dT\int\mathcal{D}x\;Ξ[x]\,\exp(\frac{k_m\,i}{m\,c}S_0[x])\;}
@@ -236,13 +236,13 @@ S[x] = \int_0^T d\tau\left[\frac{1}{4}\sum_\mu\frac{dR_\mu}{d\tau}\frac{dR_\mu}{
 $$</p>
 <p>and the odd kinetic term is unchanged. The coupling is through the pair of two units, contracted with the field strength. The six generators are written once, the three of a time index and a spatial one and the three of two spatial indices:</p>
 <p>$$
-\tilde\Sigma_{\Psi,0k} = i\vec e_k,
+\tilde\Sigma_{\Psi,0k} = i\vec e_\eta,
 \qquad
-\tilde\Sigma_{\Psi,jk} = \vec e_j\vec e_k,
+\tilde\Sigma_{\Psi,jk} = \vec e_j\vec e_\eta,
 \qquad
 \tilde\Sigma_{\Psi,\nu\mu} = -\tilde\Sigma_{\Psi,\mu\nu} .
 $$</p>
-<p><strong>The six generators are the two labels of the Lorentz action.</strong> On the field they act by left multiplication, and the six split by the index: with $\mu=t$ the element $i\vec e_k$ is a boost generator and lies in $\mathbb{B}_{\Psi}$, and with both indices spatial the element $\vec e_j\vec e_k$ is a rotation generator and lies in the real quaternion sector. The two families are the two labels of <em>Algebra and Element Conventions</em>, §<em>The Remarkable Subspaces of Biquaternions</em>, so a boost and a rotation are read on the same line with no second structure.</p>
+<p><strong>The six generators are the two labels of the Lorentz action.</strong> On the field they act by left multiplication, and the six split by the index: with $\mu=t$ the element $i\vec e_\eta$ is a boost generator and lies in $\mathbb{B}_{\Psi}$, and with both indices spatial the element $\vec e_j\vec e_\eta$ is a rotation generator and lies in the real quaternion sector. The two families are the two labels of <em>Algebra and Element Conventions</em>, §<em>The Remarkable Subspaces of Biquaternions</em>, so a boost and a rotation are read on the same line with no second structure.</p>
 <p><strong>The six elements are two triples and not six directions.</strong> A boost and a rotation sharing the same direction differ by one factor of $i$: $\vec e_x\vec e_y$ and $i\vec e_z$ are the same direction, and the six elements therefore occupy the three directions twice. This is the coarsest reading of the six, and it is enough for the exponent below, which is linear in the generators. An identity that separates $\vec e_x\vec e_y$ from $i\vec e_z$ — the vanishing of the traced weight at a given order, for instance — is an identity of the two-sided generators and is read where those are written out.</p>
 <p><strong>The weight is the path-ordered exponential of an element.</strong> The path integral over the odd variables produces the path-ordered exponential of the contraction:</p>
 <p>$$
@@ -369,7 +369,7 @@ $$</p>
 <p><strong>The identities the bodies cite.</strong> In the $\gamma$ reading, with $\varepsilon=(1,-1,-1,-1)$ the sign vector of the basis operators,
 $$
 \{\gamma_\mu,\gamma_\nu\}=2\varepsilon_\mu\delta_{\mu\nu}I_4,\qquad
-(\gamma_k)^2=-I_4,\qquad
+(\gamma_\eta)^2=-I_4,\qquad
 \gamma_5^2=I_4,\qquad
 \{\gamma_\mu,\gamma_5\}=0,
 $$
@@ -508,7 +508,7 @@ $$</p>
 <td>Spin factor, the algebra-valued path-ordered weight</td>
 </tr>
 <tr>
-<td>$\tilde\Sigma_{\Psi,0k}=i\vec e_k$, $\tilde\Sigma_{\Psi,jk}=\vec e_j\vec e_k$</td>
+<td>$\tilde\Sigma_{\Psi,0k}=i\vec e_\eta$, $\tilde\Sigma_{\Psi,jk}=\vec e_j\vec e_\eta$</td>
 <td>The six Lorentz generators, boosts in $\mathbb{B}_{\Psi}$ and rotations in the real quaternion sector</td>
 </tr>
 <tr>

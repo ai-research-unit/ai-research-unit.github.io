@@ -97,9 +97,9 @@ $$</p>
 <p>On the material sector $Q_t=i r'_t$ the time derivative is $\partial/\partial R_t=-i\,\partial/\partial r'_t$ and the d'Alembertian is $\Delta-\partial^2/\partial{r'_{t}}^2$. These lines are the whole operator content of the exercise, and no letter other than $\tilde\nabla$ names the gradient.</p>
 <p><strong>The square of the gradient is not scalar.</strong> The product $\tilde\nabla\tilde\nabla$ is</p>
 <p>$$
-\tilde\nabla^2=\frac{\partial^2}{\partial R_t^2}-\Delta_Q+2\sum_k\vec e_k\frac{\partial^2}{\partial R_t\partial R_k},
+\tilde\nabla^2=\frac{\partial^2}{\partial R_t^2}-\Delta_Q+2\sum_\eta\vec e_\eta\frac{\partial^2}{\partial R_t\partial R_\eta},
 $$</p>
-<p>because $e_t$ commutes with the three spatial units while the spatial units anticommute among themselves. The mixed terms are the ones the conjugate removes: in $\tilde\nabla\tilde\nabla^{\natural}$ the coefficient of $\partial^2/\partial R_t\partial R_k$ is $e_te_k-\vec e_ke_t=0$, and the coefficient of $\partial^2/\partial R_\mu^2$ is $\varepsilon_\mu e_\mu^2=1$. So the equation is the pair: the square with the conjugate is the scalar $\Box$ and the square with itself is not a scalar, so no single first-order equation on one field can carry a mass term.</p>
+<p>because $e_t$ commutes with the three spatial units while the spatial units anticommute among themselves. The mixed terms are the ones the conjugate removes: in $\tilde\nabla\tilde\nabla^{\natural}$ the coefficient of $\partial^2/\partial R_t\partial R_\eta$ is $e_te_k-\vec e_\eta e_t=0$, and the coefficient of $\partial^2/\partial R_\mu^2$ is $\varepsilon_\mu e_\mu^2=1$. So the equation is the pair: the square with the conjugate is the scalar $\Box$ and the square with itself is not a scalar, so no single first-order equation on one field can carry a mass term.</p>
 <p><strong>The wave element.</strong> A plane wave is $\tilde{Ξ}_{\mathrm{sp}}=\tilde{Ξ}_{\mathrm{sp},0}\exp(i\theta)$ with $\theta=\vec k_\Phi\cdot(r_x\vec e_x+r_y\vec e_y+r_z\vec e_z)-\omega r'_t/c$, its polarisation $\tilde{Ξ}_{\mathrm{sp},0}$ an element that does not depend on the coordinates. The phase is central, so it commutes with the polarisation, and the gradient differentiates it to left multiplication by</p>
 <p>$$
 \tilde P_{\Phi}=\hbar\tilde K_{\Phi},\qquad
@@ -236,11 +236,11 @@ $$</p>
 <p>So the labels are locked to the members: <strong>the field annihilated by $\tilde\nabla$ carries positive helicity and the field annihilated by $\tilde\nabla^{\natural}$ negative helicity.</strong> The mass is the only term that couples the two members, and setting it to zero decouples them; the two kernels are of two complex dimensions each and meet only at zero, so together they account for the four complex dimensions of the carrier.</p>
 <p><strong>The position-space reading.</strong> On the material sector the free member reads</p>
 <p>$$
--i\,e_t\frac{\partial\tilde{Ξ}_{\mathrm{sp}}}{\partial r'_t}+\sum_k\vec e_k\frac{\partial\tilde{Ξ}_{\mathrm{sp}}}{\partial R_k}=0 .
+-i\,e_t\frac{\partial\tilde{Ξ}_{\mathrm{sp}}}{\partial r'_t}+\sum_\eta\vec e_\eta\frac{\partial\tilde{Ξ}_{\mathrm{sp}}}{\partial R_\eta}=0 .
 $$</p>
 <p>The same line is read for $\partial\tilde{Ξ}_{\mathrm{sp}}/\partial r'_t$:</p>
 <p>$$
-\frac{\partial\tilde{Ξ}_{\mathrm{sp}}}{\partial r'_t}=-i\sum_k\vec e_k\frac{\partial\tilde{Ξ}_{\mathrm{sp}}}{\partial R_k},
+\frac{\partial\tilde{Ξ}_{\mathrm{sp}}}{\partial r'_t}=-i\sum_\eta\vec e_\eta\frac{\partial\tilde{Ξ}_{\mathrm{sp}}}{\partial R_\eta},
 $$</p>
 <p>one equation on the element, whose two solutions are the two locked states above. The magnitude $\lvert\vec p\rvert$, which the energy carries at $m=0$, is part of the right-hand side and cannot be dropped.</p>
 <h2 id="problem-5-the-two-parts-and-the-change-of-the-reading">Problem 5: The two parts and the change of the reading</h2>
@@ -326,7 +326,7 @@ $$</p>
 <p>| Symbol | Meaning |
 |+-|+-|
 | $\mathbb B=\mathbb C\otimes_\mathbb R\mathbb H$ | Biquaternion algebra |
-| $e_t=1,\vec e_x,\vec e_y,\vec e_z$ | Quaternion basis, $\vec e_k^2=-e_t$ |
+| $e_t=1,\vec e_x,\vec e_y,\vec e_z$ | Quaternion basis, $\vec e_\eta^2=-e_t$ |
 | $i$ | Scalar imaginary, $i^2=-1$ |
 | $\tilde\nabla$ | The biquaternionic gradient, $\sum_\mu e_\mu\,\partial/\partial R_\mu$, four components |
 | $\tilde\nabla^{\natural}$ | Its quaternion conjugate, $\sum_\mu\varepsilon_\mu e_\mu\,\partial/\partial R_\mu$ |

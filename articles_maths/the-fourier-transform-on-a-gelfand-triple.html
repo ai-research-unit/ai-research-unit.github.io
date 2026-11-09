@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Fourier Transform on a Gelfand Triple — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-fourier-transform-on-a-gelfand-triple"><strong>The Fourier Transform on a Gelfand Triple</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>A frequency is not an eigenvalue. On the line the functions that diagonalise the derivative are the exponentials $e^{i\zeta x}$, and not one of them lies in $L^2(\mathbb{R})$; the operator $i\partial$ has spectrum $\mathbb{R}$ and no eigenvector at all. The theory of this article supplies the objects that are missing. A test space $\Phi$ is chosen small enough that the exponentials act on it continuously, and its dual $\Phi'$ is large enough to contain them, and the two are tied to the Hilbert space by a chain</p>
+<p>$$
+\Phi\subset H\subset\Phi'
+$$</p>
+<p>of continuous injections with dense images. Such a chain is a <strong>Gelfand triple</strong>, and the article proves the three theorems that make it work for the transform of a constant-coefficient operator with values in a finite-dimensional real algebra: the transform is a topological isomorphism of the test space onto itself, its transpose is a topological isomorphism of the dual onto itself, and at every zero of the symbol the generalized eigenvectors form an explicit family in the dual, of dimension $d-r(\zeta)$.</p>
+<p><strong>What is proved here.</strong> That the transform is a homeomorphism of $\mathcal{S}(\mathbb{R}^n;A_{\mathbb{C}})$ onto itself and, by transposition, of $\mathcal{S}'$ (§<em>The Schwartz Triple</em>). That at a frequency the distributions $e^{i\zeta\cdot x}a$ are exactly the generalized eigenvectors of the translation group, annihilated by $P(D)$ exactly when $a$ is annihilated by $\sigma_P(\zeta)$, of dimension $d-r(\zeta)$ on the zero set (§<em>Generalized Eigenvectors at a Frequency</em>). That no nonzero element of $L^2$ is one of them, which is why the third space is needed (§<em>Why None of Them Lies in the Hilbert Space</em>). And that the Paley–Wiener triple fails the density axiom although its dual contains the eigenvectors (§<em>The Banach Triple and Its Defect</em>).</p>
+<p><strong>What is quoted.</strong> The nuclearity of $\mathcal{S}$ is <em>Nuclear Spaces</em>, and the reflexivity and the Montel property are <em>Locally Convex Spaces</em>; the inversion formula and the reflection identity, in the normalisation used here, are <em>Fourier Analysis on Euclidean Spaces</em> after the substitution described in §<em>The Transform Is an Isomorphism of the Test Space</em>. Three statements are quoted with their hypotheses and not proved: the Minlos theorem, which turns a continuous positive-definite function on a nuclear space into a measure on the dual; the nuclear spectral theorem of Gelfand and Maurin, which turns a self-adjoint operator acting on a nuclear triple into a family of generalized eigenvectors; and the Paley–Wiener characterisation of $PW_K$ by entire functions of exponential type. The last two are stated only to explain what is missing, and neither is used in a proof.</p>
+<p><strong>The trap, and it has one word.</strong> The word is <em>eigenvector</em>. In a Hilbert space an eigenvector is a vector, and the equation $Tu=\lambda u$ is an equation in $H$. Here the object that satisfies $P(D)u=\sigma_P(\zeta)u$ is an element of $\Phi'$ and not of $H$, and the equation holds in $\Phi'$, read through the transpose $P^{t}(D)$ acting on the test space. A sentence that says "$u\in L^2$ is an eigenvector at the frequency $\zeta$" is false for every nonzero $u$ (§<em>Why None of Them Lies in the Hilbert Space</em>), and a sentence that says "$u\in\Phi'$ is an eigenvector at the frequency $\zeta$" is a definition and not a theorem. <strong>Every statement below names the space in which its equation holds.</strong></p>
+<p><strong>Boundaries.</strong> The symbol, its zero set $Z(P)$, and the dimensions of the kernel and the cokernel of $L_{\sigma_P(\zeta)}$ are <em>The Fourier Transform and the Symbol of a Differential Operator</em>; only its theorem on the three dimensions is used here. The growth of the inverse transform and its poles are <em>The Inverse Fourier Transform of a Symbol</em>, and the vector- and operator-valued Hilbert spaces, with the Plancherel theorem on a group, are <em>The Fourier Transform on Vector-Valued and Operator-Valued Function Spaces</em>. The distributions and their calculus are <em>Distributions and Fundamental Solutions</em>, the topology of the Schwartz space is <em>Nuclear Spaces</em>, and the duality is <em>Duality Theory</em>. The biquaternion case is where the multiplicities become concrete, and the numbers are quoted from <em>Biquaternion Fourier Transform: Symbol, Block Determinant and Zero Set</em>. <strong>No spectral theorem for the general algebra is proved or assumed</strong>, and §<em>What the Triple Does Not Give</em> says why the one that exists does not apply.</p>
+<p><strong>What the word Gelfand adds.</strong> The construction was made for the eigenfunction expansion of a self-adjoint operator, and this article does not prove that expansion. It proves the part that survives without self-adjointness: the test space, the dual, the isomorphism of the transform, and the identification of the generalized eigenvectors. <strong>The expansion is a separate theorem with separate hypotheses, and it is not available for a symbol with values in an algebra.</strong></p>
+<h2 id="the-rigged-triple">The Rigged Triple</h2>
+<h3 id="the-three-spaces-and-the-pairing">The Three Spaces and the Pairing</h3>
+<p><strong>Definition (Gelfand triple).</strong> Let $H$ be a separable complex Hilbert space, identified with its dual by the Riesz map, and let $\Phi$ be a locally convex space with a continuous linear injection $\Phi\to H$ whose image is dense. Write $\Phi'$ for the strong dual of $\Phi$, and let $H\to\Phi'$ be the transpose of the injection. The chain $\Phi\subset H\subset\Phi'$ is a <strong>Gelfand triple</strong>, or <strong>rigged Hilbert space</strong>, when both injections are continuous with dense image. The pairing of $\Phi'$ with $\Phi$ is written $\langle u,\varphi\rangle$; it is $A_{\mathbb{C}}$-valued, and when $A=\mathbb{C}$ it extends the inner product of $H$, in the sense that $\langle f,\varphi\rangle=(f,\varphi)_H$ for $f\in H$ and $\varphi\in\Phi$.</p>
+<p><strong>Remark (the pairing against the inner product).</strong> For $A=\mathbb{C}$ the pairing of $H$ with $\Phi$ is the inner product, since $H\to\Phi'$ is the transpose of $\iota:\Phi\to H$ and $\langle\iota^{*}f,\varphi\rangle=(f,\iota\varphi)_H$; for a general $A$ the pairing is $A_{\mathbb{C}}$-valued and a scalar inner product is recovered from it by applying a state, the trace of the regular representation being the natural one. <strong>The algebra-valuedness of the pairing is the one place where the general case is not the scalar case with a vector attached.</strong></p>
+<p><strong>Remark (the three inclusions, and which one is a theorem).</strong> The inclusion $\Phi\subset H$ is a hypothesis, checked once for each example; $H\subset\Phi'$ is the transpose of it and is therefore automatic, as is its continuity. <strong>What is not automatic is that the second inclusion is dense</strong>, and that is the single hypothesis this theory has to verify; §<em>Density as Injectivity</em> turns it into a statement about injectivity, and §<em>The Banach Triple and Its Defect</em> exhibits a triple where it fails.</p>
+<h3 id="density-as-injectivity">Density as Injectivity</h3>
+<p><strong>Proposition (density of $\Phi$ is injectivity of the transpose).</strong> The image of $\Phi$ in $H$ is dense if and only if the map $H\to\Phi'$ is injective.</p>
+<p><em>Proof.</em> Suppose first that $\Phi$ is dense and that $f\in H$ maps to zero. Then $(f,\varphi)_H=0$ for every $\varphi\in\Phi$, and density extends the identity to every element of $H$, so $f=0$. Suppose next that $\Phi$ is not dense. Its closure is then a proper closed subspace of $H$, its orthogonal complement contains a nonzero $f$, and that $f$ is orthogonal to every $\varphi\in\Phi$, hence maps to zero.</p>
+<p><strong>Remark (why this proposition is the hinge).</strong> It converts a topological statement into an algebraic one, and the algebraic one is easier to disprove: one nonzero element of $H$ orthogonal to the whole of $\Phi$ destroys the triple. <strong>The Banach triple of §<em>The Banach Triple and Its Defect</em> is destroyed in exactly this way</strong>, visibly, by an explicit function.</p>
+<p><strong>Proposition (the scale is strict, in general).</strong> The three spaces are distinct in the examples of this article: $\Phi'$ contains elements outside $H$, and $H$ contains elements outside $\Phi$.</p>
+<p><em>Proof.</em> The first is a generalized eigenvector in $\Phi'\setminus H$, exhibited in §<em>Why None of Them Lies in the Hilbert Space</em>. The second holds because $\mathcal{S}\subset L^\infty$ and $L^2\not\subset L^\infty$.</p>
+<h3 id="why-the-hilbert-space-alone-is-not-enough">Why the Hilbert Space Alone Is Not Enough</h3>
+<p><strong>Proposition (the derivative has no eigenvalue in $L^2$).</strong> Let $\mathcal{F}$ be the transform $\mathcal{F}f(\zeta)=\int e^{-i\zeta\cdot x}f(x)\,dx$, extended to $L^2(\mathbb{R}^n;\mathbb{C})$ by continuity. Then $\mathcal{F}(i\partial_j f)(\zeta)=-\zeta_j\mathcal{F}f(\zeta)$ for $f$ in the Schwartz space, the operator $i\partial_j$ is unitarily equivalent to multiplication by $-\zeta_j$, and it has no eigenvalues; its spectrum is the whole real line, every point of which belongs to the continuous spectrum.</p>
+<p><em>Proof.</em> The identity is the differentiation rule $\mathcal{F}(\partial_jf)(\zeta)=i\zeta_j\mathcal{F}f(\zeta)$ multiplied by $i$. The normalised transform $\mathcal{U}=(2\pi)^{-n/2}\mathcal{F}$ is unitary, so $\mathcal{U}i\partial_j\mathcal{U}^{*}$ is multiplication by $-\zeta_j$. If $g\in L^2$ satisfied $\zeta_jg=\lambda g$ then $(\zeta_j-\lambda)g=0$ almost everywhere, and since $\zeta_j-\lambda$ vanishes on a set of measure zero the function $g$ is zero almost everywhere. The spectrum of multiplication by $\zeta_j$ is the essential range of $\zeta_j$, which is $\mathbb{R}$, and the absence of eigenvalues makes the spectrum purely continuous.</p>
+<p><strong>Corollary (the missing objects).</strong> The exponentials $e^{i\zeta\cdot x}$ satisfy $i\partial_je^{i\zeta\cdot x}=-\zeta_je^{i\zeta\cdot x}$ in the sense of distributions and are not in $L^2$; and every eigenvector of $i\partial_j$ in $L^2$ is zero.</p>
+<p><em>Proof.</em> The first statement is a computation of derivatives of a smooth function. The second is the proposition, and the assertion $e^{i\zeta\cdot x}\notin L^2$ is the statement that a function of constant modulus one does not lie in $L^2(\mathbb{R}^n)$.</p>
+<p><strong>Remark (what the third space is for).</strong> The corollary says that the diagonalisation of $i\partial$ exists but that its eigenvectors lie outside the Hilbert space. <strong>The third space is where they lie</strong>, and §<em>Generalized Eigenvectors at a Frequency</em> identifies them there. The identification is not a formality: it produces, for each frequency, a concrete family of distributions whose dimension is computed from the symbol.</p>
+<h2 id="the-schwartz-triple">The Schwartz Triple</h2>
+<h3 id="the-test-space-and-its-topology">The Test Space and Its Topology</h3>
+<p><strong>Definition (the algebra-valued Schwartz space).</strong> Let $\mathcal{S}=\mathcal{S}(\mathbb{R}^n;A_{\mathbb{C}})$ be the space of smooth functions $f:\mathbb{R}^n\to A_{\mathbb{C}}$ such that $\sup_x\lVert x^\beta\partial^\alpha f(x)\rVert$ is finite for every pair of multi-indices, with the seminorms</p>
+<p>$$
+\lVert f\rVert_{\alpha,\beta}=\sup_{x\in\mathbb{R}^n}\ \lVert x^\beta\partial^\alpha f(x)\rVert ,
+$$</p>
+<p>where $\lVert\cdot\rVert$ is any norm on the finite-dimensional complex vector space $A_{\mathbb{C}}$. The space is a Fréchet space, nuclear, reflexive and Montel; the first two properties are <em>Nuclear Spaces</em> and the second two are <em>Locally Convex Spaces</em>. The functions are $A_{\mathbb{C}}$-valued, which is to say $d$ complex-valued functions in a chosen basis, and every identity below is proved componentwise and reassembled.</p>
+<p><strong>Remark (the topology uses the vector space only).</strong> The topology of $\mathcal{S}$ uses only the vector space $A_{\mathbb{C}}$, since all norms on a finite-dimensional space are equivalent; the algebra structure enters through $P(D)$, whose coefficients multiply on the left, and through nothing else. <strong>One triple therefore serves every algebra of the family</strong>, with a different operator and a different zero set but the same test space and the same transform.</p>
+<h3 id="the-transform-is-an-isomorphism-of-the-test-space">The Transform Is an Isomorphism of the Test Space</h3>
+<p><strong>Proposition (the two exchange identities).</strong> For $f\in\mathcal{S}$ and multi-indices $\alpha,\beta$,</p>
+<p>$$
+\mathcal{F}(\partial^\alpha f)(\zeta)=(i\zeta)^\alpha\,\mathcal{F}f(\zeta),\qquad \partial_\zeta^\alpha\mathcal{F}f(\zeta)=\mathcal{F}\big((-ix)^\alpha f\big)(\zeta).
+$$</p>
+<p><em>Proof.</em> The first is differentiation under the integral sign, justified by the decay of $f$ and of its derivatives; the second is the same computation with the derivative taken in the frequency variable, where the factor $-ix$ appears because the exponent is $-i\zeta\cdot x$. Both are identities of $A_{\mathbb{C}}$-valued functions, the factors being scalar.</p>
+<p><strong>Theorem (the transform is a homeomorphism of the test space).</strong> The transform $\mathcal{F}$ maps $\mathcal{S}$ continuously into itself, and it is a topological isomorphism onto $\mathcal{S}$, with inverse $g\mapsto(2\pi)^{-n}\int e^{i\zeta\cdot x}g(\zeta)\,d\zeta$.</p>
+<p><em>Proof.</em> Let $\alpha$ be a multi-index in the frequency and $\beta$ one in the position variable. By the two identities, $\zeta^\beta\partial^\alpha_\zeta\mathcal{F}f$ is a constant of modulus one times $\mathcal{F}\big(\partial^\beta(x^\alpha f)\big)$, and $\lVert\mathcal{F}g\rVert_\infty\le\lVert g\rVert_1$. The $L^1$ norm is bounded by a finite sum of the seminorms $\lVert g\rVert_{0,\gamma}$ with $\lvert\gamma\rvert\le n+1$, by the elementary estimate that $(1+\lvert x\rvert^2)^{-(n+1)/2}$ is integrable. Leibniz expands $\partial^\beta(x^\alpha f)$ as a finite sum of terms $x^{\alpha'}\partial^{\beta'}f$ with $\alpha'\le\alpha$ and $\beta'\le\beta$, so that</p>
+<p>$$
+\lVert\mathcal{F}f\rVert_{\alpha,\beta}\ \le\ C_{\alpha,\beta}\sum_{\alpha'\le\alpha}\ \sum_{\lvert\gamma\rvert\le n+1}\ \lVert f\rVert_{\alpha'+\gamma,\beta},
+$$</p>
+<p>which is a finite sum of seminorms of $f$; the transform is therefore continuous. The inverse has the same form with $+i$ in the exponent and the factor $(2\pi)^{-n}$, hence is continuous as well; and it is a genuine inverse because the inversion formula on $\mathcal{S}$ holds, quoted from <em>Fourier Analysis on Euclidean Spaces</em> after the substitution of the next remark.</p>
+<p><strong>Remark (the two normalisations, and how the constant moves).</strong> <em>Fourier Analysis on Euclidean Spaces</em> writes the transform with the exponent $-2\pi i\zeta\cdot x$ and has no constant in the inversion. The substitution $\zeta\mapsto2\pi\zeta$ converts its statements into the ones used here, and the factor $(2\pi)^n$ is exactly the Jacobian of that substitution. <strong>The constant is not a convention of the theory but the price of counting the frequency in radians</strong>, which is the counting forced by the symbol $\sigma_P(\zeta)=\sum a_\alpha(i\zeta)^\alpha$ of <em>The Fourier Transform and the Symbol of a Differential Operator</em>.</p>
+<h3 id="the-transpose-on-the-tempered-distributions">The Transpose on the Tempered Distributions</h3>
+<p><strong>Definition (the pairing and the dual).</strong> For $T\in L^1_{\mathrm{loc}}(\mathbb{R}^n;A_{\mathbb{C}})$ and $\varphi\in\mathcal{S}$ put $\langle T,\varphi\rangle=\int\varphi(x)T(x)\,dx$, an element of $A_{\mathbb{C}}$; the integral is bilinear over $\mathbb{C}$ in each slot and the values multiply in the algebra, <strong>the test function standing on the left inside the integral</strong>. The space $\mathcal{S}'$ of continuous functionals for this pairing, with the strong topology, is the space of <strong>tempered distributions</strong>, and the pairing extends to $\mathcal{S}'\times\mathcal{S}$ by continuity.</p>
+<p><strong>Remark (why the test function stands on the left).</strong> The order is forced by the algebra. With this pairing $\langle au,\varphi\rangle=\int\varphi au=\langle u,\varphi a\rangle$, so the transpose of left multiplication by $a$ is right multiplication by $a$. <strong>The non-commutativity of $A$ appears in the definition of the transpose, and nowhere else in this article.</strong></p>
+<p><strong>Theorem (the transform is self-transpose).</strong> For $T\in\mathcal{S}'$ and $\varphi\in\mathcal{S}$,</p>
+<p>$$
+\langle\mathcal{F}T,\varphi\rangle=\langle T,\mathcal{F}\varphi\rangle ,
+$$</p>
+<p>so that $\mathcal{F}$ extends to a topological isomorphism of $\mathcal{S}'$ onto itself, whose inverse is $(2\pi)^{-n}\mathcal{F}$ followed by the reflection $x\mapsto-x$; in particular $\mathcal{F}^{2}T=(2\pi)^nT(-\cdot)$ in $\mathcal{S}'$.</p>
+<p><em>Proof.</em> For $T\in\mathcal{S}$ the identity is Fubini's theorem applied to the double integral of $e^{-i\zeta\cdot x}T(x)\varphi(\zeta)$, which is absolutely convergent by the decay of both factors. For general $T$ both sides are continuous in the strong topology of $\mathcal{S}'$, and $\mathcal{S}$ is dense in $\mathcal{S}'$, so the identity extends. The transpose of a topological isomorphism between reflexive spaces is a topological isomorphism of the strong duals, and $\mathcal{S}$ is reflexive and Montel, so $\mathcal{F}$ is one; the inverse formula is the transpose of the inversion formula of §<em>The Transform Is an Isomorphism of the Test Space</em>.</p>
+<p><strong>Remark (what self-transposition buys).</strong> The identity $\langle\mathcal{F}T,\varphi\rangle=\langle T,\mathcal{F}\varphi\rangle$ lets the same letter serve for the transform on functions and on distributions, and it lets a generalized eigenvector be written down without a theory of eigenfunction expansions: <strong>the equation in $\mathcal{S}'$ is verified against test functions, and the verification uses only the identity on $\mathcal{S}$.</strong></p>
+<h2 id="generalized-eigenvectors-at-a-frequency">Generalized Eigenvectors at a Frequency</h2>
+<h3 id="the-eigenvalue-equation-in-the-dual">The Eigenvalue Equation in the Dual</h3>
+<p><strong>Definition (generalized eigenvector of the operator).</strong> Let $\zeta\in\mathbb{R}^n$ and $u\in\mathcal{S}'$. Then $u$ is a <strong>generalized eigenvector of $P(D)$ with eigenvalue $\sigma_P(\zeta)$</strong> when $P(D)u=\sigma_P(\zeta)u$ in $\mathcal{S}'$, that is, when</p>
+<p>$$
+\langle u,P^{t}(D)\varphi\rangle=\sigma_P(\zeta)\,\langle u,\varphi\rangle\qquad\text{for every }\varphi\in\mathcal{S},
+$$</p>
+<p>where $P^{t}(D)\varphi=\sum_{\lvert\alpha\rvert\le m}(-1)^{\lvert\alpha\rvert}(\partial^\alpha\varphi)a_\alpha$ is the transpose of $P(D)$, <strong>with the coefficients on the right</strong>, and the right side is the left multiplication of $\langle u,\varphi\rangle$ by the constant $\sigma_P(\zeta)$. The transpose is computed once: $\langle P(D)u,\varphi\rangle=\sum_\alpha\int\varphi a_\alpha\partial^\alpha u=\sum_\alpha(-1)^{\lvert\alpha\rvert}\int(\partial^\alpha\varphi)a_\alpha u=\langle u,P^{t}(D)\varphi\rangle$, the middle step being integration by parts and the constant $a_\alpha$ passing through the derivative.</p>
+<p><strong>Definition (generalized eigenvector at a frequency).</strong> With the same notation, $u$ is a <strong>generalized eigenvector at the frequency $\zeta$</strong> when $(\partial_j-i\zeta_j)u=0$ in $\mathcal{S}'$ for $j=1,\dots,n$. The second notion is stronger, and the next proposition says how much.</p>
+<p><strong>Proposition (the frequency implies the eigenvalue).</strong> If $u$ is a generalized eigenvector at the frequency $\zeta$ then it is a generalized eigenvector of $P(D)$ with eigenvalue $\sigma_P(\zeta)$.</p>
+<p><em>Proof.</em> From $(\partial_j-i\zeta_j)u=0$ and the linearity of the derivative on $\mathcal{S}'$ one gets $\partial^\alpha u=(i\zeta)^\alpha u$ by induction on $\lvert\alpha\rvert$. Multiplying by $a_\alpha$ on the left and summing, $P(D)u=\sum a_\alpha(i\zeta)^\alpha u=\sigma_P(\zeta)u$, the coefficients being constants and therefore passing through the differentiation.</p>
+<p><strong>Remark (the converse fails, and the failure is not a technicality).</strong> Take $P=\partial_1\partial_2$ on $\mathbb{R}^2$ and $\zeta=0$, where $\sigma_P(0)=0$. Every distribution of the form $f(x_1)$, with $f\in\mathcal{S}'(\mathbb{R})$, is annihilated by $P$ and is therefore an eigenvector with eigenvalue $0$, while only the constant $f$ is a generalized eigenvector at the frequency $0$. <strong>The frequency notion is the one the transform diagonalises</strong>, and it is the only one for which the frequency is a well-defined object.</p>
+<h3 id="three-equivalent-descriptions">Three Equivalent Descriptions</h3>
+<p><strong>Theorem (the family at a frequency).</strong> Let $\zeta\in\mathbb{R}^n$ and $u\in\mathcal{S}'$. The following three conditions are equivalent: (i) $(\partial_j-i\zeta_j)u=0$ for every $j$; (ii) $\tau_yu=e^{i\zeta\cdot y}u$ for every $y\in\mathbb{R}^n$, where $(\tau_yu)(x)=u(x+y)$; (iii) $u=u_{\zeta,a}$ for some $a\in A_{\mathbb{C}}$, where</p>
+<p>$$
+u_{\zeta,a}(x)=e^{i\zeta\cdot x}a .
+$$</p>
+<p><em>Proof.</em> From (i) to (iii): put $v=e^{-i\zeta\cdot x}u$, a distribution because multiplication by the smooth function $e^{-i\zeta\cdot x}$ preserves $\mathcal{S}'$; then $\partial_jv=0$ for every $j$, since $\partial_j(e^{-i\zeta\cdot x}u)=e^{-i\zeta\cdot x}(\partial_j-i\zeta_j)u$. A distribution annihilated by every $\partial_j$ is a constant: for $\rho\in C_c^\infty(\mathbb{R}^n)$ with $\int\rho=1$, the convolution $v*\rho$ is constant because $\partial_j(v*\rho)=(\partial_jv)*\rho=0$, and $v*\rho\to v$ as $\rho$ shrinks to a delta. From (iii) to (ii): $u_{\zeta,a}(x+y)=e^{i\zeta\cdot y}u_{\zeta,a}(x)$. From (ii) to (iii): the same function $v$ is invariant under every translation, hence constant by the same mollifier argument, so $u=e^{i\zeta\cdot x}a$ with $a=v$.</p>
+<p><strong>Remark (what the three descriptions say).</strong> Condition (ii) says that $u$ is a generalized eigenvector of the whole translation group with the character $\gamma_\zeta(y)=e^{i\zeta\cdot y}$, the same object as the multiplier $\mu_y$ of <em>The Fourier Transform on Vector-Valued and Operator-Valued Function Spaces</em>. <strong>The family is the trace of that character inside $\mathcal{S}'$.</strong></p>
+<h3 id="the-family-at-a-zero-of-the-symbol">The Family at a Zero of the Symbol</h3>
+<p><strong>Theorem (the eigenvectors annihilated by the operator).</strong> Let $\zeta\in\mathbb{R}^n$ and $a\in A_{\mathbb{C}}$. Then $u_{\zeta,a}\in\mathcal{S}'$, and $P(D)u_{\zeta,a}=e^{i\zeta\cdot x}\sigma_P(\zeta)a$; consequently $P(D)u_{\zeta,a}=0$ if and only if $a\in\operatorname{Ann}_L(\sigma_P(\zeta))=\ker L_{\sigma_P(\zeta)}$. The map $a\mapsto u_{\zeta,a}$ is injective, so at a frequency $\zeta\in Z(P)$ the generalized eigenvectors at $\zeta$ that are annihilated by $P(D)$ form a family of dimension $d-r(\zeta)$, and at a frequency outside $Z(P)$ the only such element is zero.</p>
+<p><em>Proof.</em> Multiplication by $e^{i\zeta\cdot x}$ is a continuous endomorphism of $\mathcal{S}$, because every derivative of the exponential has polynomial growth and the seminorms of $\mathcal{S}$ absorb a polynomial factor; hence $\varphi\mapsto\int e^{i\zeta\cdot x}a\,\varphi(x)\,dx$ is a continuous functional, that is, an element of $\mathcal{S}'$. The computation $\partial_ju_{\zeta,a}=i\zeta_ju_{\zeta,a}$ is integration by parts against test functions, $\int(\partial_j\varphi+i\zeta_j\varphi)e^{i\zeta\cdot x}a\,dx=0$ for $\varphi$ of compact support, and it gives $P(D)u_{\zeta,a}=e^{i\zeta\cdot x}\sum_\alpha a_\alpha(i\zeta)^\alpha a=e^{i\zeta\cdot x}\sigma_P(\zeta)a$. Injectivity: if $u_{\zeta,a}=0$ then $(\int e^{i\zeta\cdot x}\varphi(x)\,dx)a=0$ for every $\varphi$, the integral is a nonzero complex number for a suitable $\varphi$, and $a=0$. The dimension is the theorem on the three dimensions of <em>The Fourier Transform and the Symbol of a Differential Operator</em>.</p>
+<p><strong>Remark (the transform of the eigenvector is a delta).</strong> Applying the self-transposition to $\psi\in\mathcal{S}$,</p>
+<p>$$
+\langle\mathcal{F}u_{\zeta,a},\psi\rangle=\langle u_{\zeta,a},\mathcal{F}\psi\rangle=\mathcal{F}(\mathcal{F}\psi)(-\zeta)\,a=(2\pi)^n\psi(\zeta)\,a,
+$$</p>
+<p>so that $\mathcal{F}u_{\zeta,a}=(2\pi)^n\delta_\zeta\,a$: <strong>the generalized eigenvector at the frequency $\zeta$ is the object whose transform is the delta at $\zeta$</strong>, multiplied on the right by $a$. Equivalently, $\langle u_{\zeta,a},\varphi\rangle=\mathcal{F}\varphi(-\zeta)\,a$, so the eigenvector acts on a test function by evaluating the transform at $-\zeta$. Either way, the eigenvector is concentrated at one frequency and is not localised at all in position.</p>
+<p><strong>Remark (the numbers in the biquaternion case).</strong> At a null element of the biquaternion algebra away from the origin the rank of left multiplication is $4$ of $8$, so the family has dimension $4$; at the origin the symbol vanishes and the family has dimension $8$, which is the whole algebra. Both numbers are proved in <em>Biquaternion Fourier Transform: Symbol, Block Determinant and Zero Set</em>, and they are quoted here as the concrete instance of the formula $d-r(\zeta)$.</p>
+<h3 id="why-none-of-them-lies-in-the-hilbert-space">Why None of Them Lies in the Hilbert Space</h3>
+<p><strong>Lemma (a distribution annihilated by one derivative is independent of that variable).</strong> Let $v\in\mathcal{S}'(\mathbb{R}^n)$ and suppose $\partial_jv=0$. Then $v(\varphi)$ depends only on $\int\varphi(x)\,dx_j$: for every $\varphi$ one has $v(\varphi)=v(\varphi_0)$, where $\varphi_0(x)=\rho(x_j)\int\varphi(x',t)\,dt$ for a fixed $\rho\in C_c^\infty(\mathbb{R})$ with $\int\rho=1$.</p>
+<p><em>Proof.</em> For fixed $x'$ the function $t\mapsto\varphi(x',t)-\int\varphi(x',s)\,ds\,\rho(t)$ has integral zero, so it is the derivative of a compactly supported smooth function $\chi(\cdot,x')$; then $\varphi-\varphi_0=\partial_j\chi$, and $v(\varphi-\varphi_0)=-v(\partial_j\chi)=(\partial_jv)(\chi)=0$.</p>
+<p><strong>Lemma (no nonzero element of $L^2$ is an eigenvector at a frequency).</strong> Let $\zeta\in\mathbb{R}^n$ and let $u\in L^2(\mathbb{R}^n;A_{\mathbb{C}})$ satisfy $(\partial_j-i\zeta_j)u=0$ in $\mathcal{S}'$ for every $j$. Then $u=0$.</p>
+<p><em>Proof.</em> Put $v=e^{-i\zeta\cdot x}u$, which lies in $L^2$ and satisfies $\partial_jv=0$ for every $j$. By the lemma, iterated over the $n$ variables, $v$ is a constant $c\in A_{\mathbb{C}}$; then $\lVert u\rVert_2^2=\lVert c\rVert^2\int_{\mathbb{R}^n}1$, which is infinite unless $c=0$.</p>
+<p><strong>Corollary (the third space is not optional).</strong> For $a\neq0$ and every $\zeta$, the distribution $u_{\zeta,a}$ lies in $\mathcal{S}'\setminus L^2$. Hence the generalized eigenvectors of §<em>The Family at a Zero of the Symbol</em> are available in the triple and in no smaller space of the chain.</p>
+<p><em>Proof.</em> The distribution is an eigenvector at $\zeta$ by the theorem, and no nonzero element of $L^2$ is one by the lemma.</p>
+<p><strong>Remark (what the lemma does not say).</strong> It says nothing about the weaker equation $P(D)u=\sigma_P(\zeta)u$, whose solutions can be far more numerous, as the example $P=\partial_1\partial_2$ shows. <strong>The lemma is a statement about the frequency, and the frequency is the notion that carries the transform.</strong></p>
+<h2 id="the-banach-triple-and-its-defect">The Banach Triple and Its Defect</h2>
+<h3 id="the-paleywiener-space">The Paley–Wiener Space</h3>
+<p><strong>Definition (the space of a compact frequency set).</strong> Let $K\subset\mathbb{R}^n$ be compact and let $\lvert K\rvert$ be its Lebesgue measure. Put</p>
+<p>$$
+PW_K=\{f\in L^2(\mathbb{R}^n;A_{\mathbb{C}}):\operatorname{supp}\mathcal{F}f\subset K\},
+$$</p>
+<p>the <strong>Paley–Wiener space</strong> of $K$: the functions of $L^2$ whose transform vanishes outside $K$.</p>
+<p><strong>Proposition ($PW_K$ is a Banach space, and point evaluation is continuous).</strong> $PW_K$ is a closed subspace of $L^2$, hence a Banach space for the $L^2$ norm, and for every $f\in PW_K$ and every $x$,</p>
+<p>$$
+\lvert f(x)\rvert\le(2\pi)^{-n/2}\lvert K\rvert^{1/2}\lVert f\rVert_2 .
+$$</p>
+<p><em>Proof.</em> The set of $g\in L^2$ with $\operatorname{supp}g\subset K$ is closed, because a limit in $L^2$ of such functions has a subsequence converging almost everywhere; and $\mathcal{F}$ is a homeomorphism of $L^2$ onto itself by Plancherel, so the preimage of a closed set is closed. For the bound, $\mathcal{F}f$ lies in $L^1$ because it lies in $L^2$ and is supported in a set of finite measure, so the inversion formula gives $f(x)=(2\pi)^{-n}\int_K\mathcal{F}f(\zeta)e^{ix\cdot\zeta}\,d\zeta$, and Cauchy–Schwarz in $L^2(K)$ gives $\lvert f(x)\rvert\le(2\pi)^{-n}\lvert K\rvert^{1/2}\lVert\mathcal{F}f\rVert_2=(2\pi)^{-n/2}\lvert K\rvert^{1/2}\lVert f\rVert_2$ by Plancherel.</p>
+<p><strong>Remark (Paley–Wiener, quoted).</strong> $PW_K$ is exactly the space of entire $A_{\mathbb{C}}$-valued functions of exponential type whose type is bounded by $K$ and whose restriction to $\mathbb{R}^n$ lies in $L^2$, and the correspondence is an isomorphism of Banach spaces. This is quoted from the classical theorem of Paley and Wiener and is used only to say what the objects are: <strong>the members of $PW_K$ are analytic, and the triple is a triple of analytic objects.</strong></p>
+<h3 id="the-injection-is-not-dense">The Injection Is Not Dense</h3>
+<p><strong>Proposition ($PW_K$ is not dense in $L^2$).</strong> $PW_K$ is a proper closed subspace of $L^2$, so its injection into $L^2$ is not dense, and the chain $PW_K\subset L^2\subset PW_K'$ fails the density axiom of a Gelfand triple.</p>
+<p><em>Proof.</em> Choose $g\in L^2$ with $g\neq0$ and $\operatorname{supp}g$ disjoint from $K$, and put $f=\mathcal{F}^{-1}g$, which is nonzero. For $h\in PW_K$, Plancherel gives $(f,h)_2=(2\pi)^{-n}(\mathcal{F}f,\mathcal{F}h)_2=(2\pi)^{-n}(g,\mathcal{F}h)_2=0$, because the two transforms have disjoint supports. Hence $f$ is a nonzero element of the orthogonal complement, and $PW_K$ is not dense.</p>
+<p><strong>Corollary (the failure, in the form of §<em>Density as Injectivity</em>).</strong> The map $L^2\to PW_K'$ is not injective. Two elements of $H$ that differ by an element of $PW_K^{\perp}$ define the same functional on $PW_K$, and the annihilator $PW_K^{\perp}$ is the nonzero closed subspace of functions whose transforms vanish almost everywhere on $K$.</p>
+<p><em>Proof.</em> The corollary is the proposition combined with §<em>Density as Injectivity</em>, and the description of the annihilator is the computation in the proof of the proposition read backwards.</p>
+<p><strong>Remark (the failure is not repairable inside the Banach category).</strong> Enlarging $PW_K$ leaves the category, as the union over $K$ shows; replacing $PW_K$ by a dense subspace produces a space that is not complete, and a triple needs completeness for its dual to be a space of distributions. <strong>The Banach triple is a triple with a proved defect, and the defect is exactly the failure of the axiom that a rigged triple needs.</strong></p>
+<h3 id="what-the-banach-dual-still-contains">What the Banach Dual Still Contains</h3>
+<p><strong>Proposition (the generalized eigenvectors lie in $PW_K'$).</strong> Let $\zeta\in\mathbb{R}^n$, $a\in A_{\mathbb{C}}$, and $\psi\in PW_K$, and put $\varphi=\mathcal{F}^{-1}\psi$. Then</p>
+<p>$$
+\langle u_{\zeta,a},\psi\rangle=(2\pi)^n\varphi(\zeta)\,a,\qquad\lvert\langle u_{\zeta,a},\psi\rangle\rvert\le\lvert K\rvert^{1/2}\lVert a\rVert\,\lVert\psi\rVert_2 ,
+$$</p>
+<p>so the restriction of $u_{\zeta,a}$ to $PW_K$ is continuous, with norm at most $\lvert K\rvert^{1/2}\lVert a\rVert$.</p>
+<p><em>Proof.</em> For $\psi\in PW_K\cap\mathcal{S}$ the first identity is the computation $\langle u,\psi\rangle=\mathcal{F}\psi(-\zeta)a$ combined with $\mathcal{F}\psi=\mathcal{F}^2\varphi=(2\pi)^n\varphi(-\cdot)$, which gives $\mathcal{F}\psi(-\zeta)a=(2\pi)^n\varphi(\zeta)a$; the general case follows because $PW_K\cap\mathcal{S}$ is dense in $PW_K$, the inverse transforms of the smooth functions of compact support being dense in $PW_K$. The function $\varphi$ lies in $PW_K$ as well, since $\mathcal{F}\varphi=\psi$ is supported in $K$; the point-evaluation bound of §<em>The Paley–Wiener Space</em> applied to $\varphi$ gives $\lvert\varphi(\zeta)\rvert\le(2\pi)^{-n}\lvert K\rvert^{1/2}\lVert\psi\rVert_2$, and the estimate follows.</p>
+<p><strong>Remark (what the Banach triple does and does not do).</strong> It contains the generalized eigenvectors, and it computes their action. What it does not do is separate the elements of the Hilbert space, and that failure is the density axiom. <strong>A triple can be good for the eigenvectors and bad for the space they act on, and the Paley–Wiener triple is the example.</strong></p>
+<h3 id="the-union-over-compact-sets">The Union over Compact Sets</h3>
+<p><strong>Definition (the space of compactly supported transform).</strong> Put $S_0=\bigcup_KPW_K$, the union over the compact subsets of $\mathbb{R}^n$, with the strict inductive limit topology of the increasing family $K_m=\{\lvert x\rvert\le m\}$.</p>
+<p><strong>Proposition ($S_0$ is dense in $L^2$ and is not a Banach space).</strong> $S_0$ is dense in $L^2$, so $L^2\to S_0'$ is injective and $(S_0,L^2,S_0')$ is a Gelfand triple; $S_0$ is a strict inductive limit of the Banach spaces $PW_{K_m}$ and is neither normable nor metrisable.</p>
+<p><em>Proof.</em> Density: $S_0$ contains the inverse transforms of the smooth functions of compact support, because such a transform lies in $L^2$ and is supported in the support of the function; those inverse transforms are dense in $L^2$ because the smooth functions of compact support are dense and $\mathcal{F}^{-1}$ is a surjective isometry. The strictness: $PW_{K_m}$ is a proper closed subspace of $PW_{K_{m+1}}$, and a strict inductive limit of such a sequence is not normable, by <em>Topological Vector Spaces, Distributions and Kernels</em>.</p>
+<h3 id="no-infinite-dimensional-banach-space-is-nuclear">No Infinite-Dimensional Banach Space Is Nuclear</h3>
+<p><strong>Theorem (the Banach category is closed to nuclearity).</strong> An infinite-dimensional Banach space is not nuclear; hence every nuclear Gelfand triple has a test space that is not a Banach space, and the triple $PW_K\subset L^2\subset PW_K'$ is not nuclear.</p>
+<p><em>Proof.</em> In a nuclear space every bounded set is precompact, so the unit ball of a nuclear normed space is precompact, and a normed space with a precompact unit ball is finite-dimensional by Riesz's lemma; this is the argument of <em>Nuclear Spaces</em>. The space $PW_K$ is an infinite-dimensional Hilbert space, hence not nuclear, and it is the test space of its own triple. A subspace of a nuclear space is nuclear, so $S_0$ is not nuclear either: if it were, each $PW_{K_m}$ would be, and none is.</p>
+<p><strong>Remark (the two axioms pull in opposite directions).</strong> The density axiom wants a small test space, and the smaller it is the more elements the dual acquires. Nuclearity wants a space with summable approximation numbers, and no infinite-dimensional Banach space has them. <strong>The Schwartz space satisfies both axioms, and it is the only space of this article that does</strong>; that is the reason the theory of rigged triples is a theory of nuclear Fréchet spaces and not a theory of Banach spaces.</p>
+<h2 id="the-general-nuclear-case-stated">The General Nuclear Case, Stated</h2>
+<p><strong>The Minlos theorem, quoted.</strong> Let $\Phi$ be a nuclear Fréchet space and let $\Phi\to H$ be a continuous injection with dense image. Let $\chi:\Phi\to\mathbb{C}$ be continuous, positive definite, and normalised by $\chi(0)=1$. Then there is a Radon probability measure $\mu$ on the dual $\Phi'$, for the cylinder $\sigma$-algebra, such that</p>
+<p>$$
+\chi(\xi)=\int_{\Phi'}e^{i\langle x,\xi\rangle}\,d\mu(x)\qquad\text{for every }\xi\in\Phi ,
+$$</p>
+<p>where the pairing is that of $\Phi'$ with $\Phi$. This is Minlos's theorem, quoted from <em>Generalized Functions IV</em> of Gelfand and Vilenkin; nuclearity supplies the Hilbert–Schmidt condition that the proof requires, and the statement is not proved here.</p>
+<p><strong>Proposition (why nuclearity and not merely completeness).</strong> On an infinite-dimensional Hilbert space $H$ the function $\chi(\xi)=e^{-\lVert\xi\rVert^2/2}$ is continuous and positive definite, and it is not the transform of a Radon probability measure; the cylinder measure that would correspond to it is only finitely additive.</p>
+<p><em>Proof.</em> A Radon probability measure with that transform would be a Gaussian measure whose covariance operator is the identity, and the covariance operator of a Gaussian measure on $H$ is trace class; the identity of an infinite-dimensional Hilbert space is not trace class, since its trace is the dimension. The measure therefore does not exist, and the cylinder measure is not countably additive.</p>
+<p><strong>Remark (the exact sense of the failure).</strong> The proposition is not a defect of $\chi$, which is as regular as a function can be, but of the space. <strong>Nuclearity replaces finite dimension in Bochner's theorem, and the triple records where the measure lives.</strong></p>
+<p><strong>Remark (what the theorem is used for, and what it is not).</strong> It produces a measure on the dual from a positive-definite function on the test space, which is the inverse problem of the transform; it produces no expansion of an arbitrary element of $H$ and no eigenvectors. <strong>The two theorems are separate, and only the first is available for a general nuclear triple.</strong></p>
+<h2 id="what-the-triple-does-not-give">What the Triple Does Not Give</h2>
+<p><strong>The nuclear spectral theorem, quoted and not applicable.</strong> Let $T$ be a self-adjoint operator on $H$ with $\Phi\subset D(T)$, $T\Phi\subset\Phi$, and $T$ continuous on $\Phi$, and let $\Phi$ be nuclear. Then for the spectral measure $E$ of $T$ there is, for $E$-almost every $\lambda$, a generalized eigenvector $\xi_\lambda\in\Phi'$ with $T\xi_\lambda=\lambda\xi_\lambda$, the family is complete in the sense that $\langle\xi_\lambda,\varphi\rangle=0$ for $E$-almost every $\lambda$ forces $\varphi=0$, and the spectral measure is recovered from the family. This is the theorem of Gelfand and Maurin, quoted from <em>Generalized Eigenfunction Expansions</em> of Maurin, with the hypotheses as stated.</p>
+<p><strong>Remark (the hypotheses fail here, and each fails for a reason).</strong> Two of them fail for the operator of this article. The operator $P(D)$ is not self-adjoint on $L^2(\mathbb{R}^n;A_{\mathbb{C}})$: self-adjointness needs an involution of $A$ and a Hilbert structure for which every left multiplication $L_a$ is self-adjoint, and no such structure is assumed; for $A=\mathbb{C}$ and real coefficients an odd-order $P$ is only skew-symmetric, the self-adjoint operator being $iP$, and for a general $A$ there is no involution under which that passage can be made. And the conclusion is an expansion, a statement about a measure on the spectrum; for an algebra-valued symbol the spectrum lies in $A_{\mathbb{C}}$, and no measure on it is constructed here. <strong>The theorem is quoted to name what is missing, and it is not used.</strong></p>
+<p><strong>What the triple does give.</strong> The generalized eigenvectors at every frequency, an explicit formula for them, the dimension $d-r(\zeta)$ of the family at each zero of the symbol, and the emptiness of the family off the zero set. The transform as an isomorphism of the test space and of its dual, so that the eigenvector is the inverse transform of a delta. And the pairing that replaces the inner product, $\langle u_{\zeta,a},\varphi\rangle=\mathcal{F}\varphi(-\zeta)a$, which is the only sense in which a generalized eigenvector is tested.</p>
+<p><strong>What it does not give.</strong> It gives no orthogonality among the generalized eigenvectors. Two elements of $\Phi'$ cannot be paired, since the pairing is between $\Phi'$ and $\Phi$; the statement that two eigenvectors at distinct frequencies are orthogonal is not a statement of this theory, and the substitute, the identity $\langle u_{\zeta,a},\varphi\rangle=\mathcal{F}\varphi(-\zeta)a$, is a statement about one eigenvector at a time. It gives no multiplicity function beyond the pointwise dimension $d-r(\zeta)$, and no measure on the frequency set; a Plancherel formula for the algebra-valued transform needs a density on that set, and for the biquaternion algebra the natural candidate is a measure on the null cone, which is the programme of <em>The Inverse Biquaternion Fourier Transform: Poles, Types and Tails</em>. It gives no expansion, as §<em>The General Nuclear Case, Stated</em> says. <strong>The triple is a vocabulary for eigenvectors, not a spectral theorem, and the distinction is the whole of §<em>Generalized Eigenvectors at a Frequency</em> read backwards.</strong></p>
+<p><strong>The one exception, and its exact size.</strong> For $A=\mathbb{C}$ and $P=i\partial_j$ the expansion does exist: it is Fourier inversion, an integral over the real line, and it is the theorem of <em>Fourier Analysis on Euclidean Spaces</em>. The expansion is an integral and not a sum, its index set is a continuum, and the coefficient of each generalized eigenvector is a transform. <strong>The exceptional case is therefore not a counterexample to the warnings above but their model</strong>: the triple is what makes the integral a statement about eigenvectors, and the integral itself is a separate theorem, proved once in the scalar case and not available in general.</p>
+<h2 id="summary">Summary</h2>
+<p>The triple is a chain of three spaces built so that a frequency can be an eigenvalue. The test space is small enough for the exponentials to act on it continuously, the dual is large enough to contain them, and the Hilbert space sits between the two with a pairing that agrees with its inner product. For the transform of a constant-coefficient operator over a finite-dimensional real algebra the chain works: the transform is a homeomorphism of the Schwartz space and of the tempered distributions; the generalized eigenvectors at a frequency are the distributions $e^{i\zeta\cdot x}a$, annihilated by $P(D)$ exactly when $a$ is annihilated by $\sigma_P(\zeta)$, of dimension $d-r(\zeta)$ on the zero set; and the transform of each is a delta at the frequency.</p>
+<p>The Banach triple is the instructive failure. The Paley–Wiener space $PW_K$ is a closed subspace of $L^2$ and a genuine Banach space, it contains the generalized eigenvectors and computes their action, and it is not dense; the map from the Hilbert space to its dual is therefore not injective, and an annihilator appears. The union $S_0$ restores density and loses the Banach property, and no infinite-dimensional Banach space is nuclear, so no Banach triple satisfies both axioms. <strong>The two axioms are independent, the Schwartz triple satisfies both, and that is why the general theory is stated for nuclear Fréchet spaces.</strong> Minlos's theorem is quoted as the theorem that uses nuclearity, and Gelfand–Maurin as the one that is not available, with the hypotheses that fail here named.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$A$</td>
+<td>A finite-dimensional real associative algebra with unit</td>
+</tr>
+<tr>
+<td>$A_{\mathbb{C}}$</td>
+<td>The complexification, where the symbol and the values live</td>
+</tr>
+<tr>
+<td>$d$</td>
+<td>The dimension of $A$ over $\mathbb{R}$</td>
+</tr>
+<tr>
+<td>$P(D)$</td>
+<td>A constant-coefficient operator $\sum_{\lvert\alpha\rvert\le m}a_\alpha\partial^\alpha$ with $a_\alpha\in A$</td>
+</tr>
+<tr>
+<td>$P^{t}(D)$</td>
+<td>The transpose $\varphi\mapsto\sum(-1)^{\lvert\alpha\rvert}(\partial^\alpha\varphi)a_\alpha$, coefficients on the right</td>
+</tr>
+<tr>
+<td>$\sigma_P(\zeta)$</td>
+<td>The symbol $\sum a_\alpha(i\zeta)^\alpha$, an element of $A_{\mathbb{C}}$</td>
+</tr>
+<tr>
+<td>$Z(P)$</td>
+<td>The zero set $\{\zeta:\sigma_P(\zeta)$ is not a unit$\}$</td>
+</tr>
+<tr>
+<td>$r(\zeta)$</td>
+<td>The rank of $L_{\sigma_P(\zeta)}$ at the frequency $\zeta$</td>
+</tr>
+<tr>
+<td>$L_a$</td>
+<td>Left multiplication by $a$</td>
+</tr>
+<tr>
+<td>$\operatorname{Ann}_L(a)$</td>
+<td>The left annihilator $\{x:ax=0\}$, the kernel of $L_a$</td>
+</tr>
+<tr>
+<td>$H$</td>
+<td>A separable complex Hilbert space</td>
+</tr>
+<tr>
+<td>$\Phi$, $\Phi'$</td>
+<td>The test space and its strong dual</td>
+</tr>
+<tr>
+<td>$\mathcal{S}$</td>
+<td>The Schwartz space of $A_{\mathbb{C}}$-valued functions</td>
+</tr>
+<tr>
+<td>$\mathcal{S}'$</td>
+<td>The tempered distributions, the dual of $\mathcal{S}$</td>
+</tr>
+<tr>
+<td>$\lVert\cdot\rVert_{\alpha,\beta}$</td>
+<td>The seminorm $\sup_x\lVert x^\beta\partial^\alpha f(x)\rVert$ on $\mathcal{S}$</td>
+</tr>
+<tr>
+<td>$\mathcal{F}$</td>
+<td>The transform $\int e^{-i\zeta\cdot x}f(x)\,dx$, and its transpose on $\mathcal{S}'$</td>
+</tr>
+<tr>
+<td>$\langle u,\varphi\rangle$</td>
+<td>The pairing of $\Phi'$ with $\Phi$, $A_{\mathbb{C}}$-valued</td>
+</tr>
+<tr>
+<td>$\tau_y$</td>
+<td>The translation $(\tau_yu)(x)=u(x+y)$</td>
+</tr>
+<tr>
+<td>$\gamma_\zeta$</td>
+<td>The character $\gamma_\zeta(y)=e^{i\zeta\cdot y}$</td>
+</tr>
+<tr>
+<td>$u_{\zeta,a}$</td>
+<td>The generalized eigenvector $e^{i\zeta\cdot x}a$ at the frequency $\zeta$</td>
+</tr>
+<tr>
+<td>$\delta_\zeta$</td>
+<td>The delta distribution at the frequency $\zeta$</td>
+</tr>
+<tr>
+<td>$PW_K$</td>
+<td>The Paley–Wiener space of a compact $K$, $\{f:\operatorname{supp}\mathcal{F}f\subset K\}$</td>
+</tr>
+<tr>
+<td>$S_0$</td>
+<td>The union of the $PW_K$ over compact $K$, the space of compactly supported transform</td>
+</tr>
+<tr>
+<td>$\lvert K\rvert$</td>
+<td>The Lebesgue measure of $K$</td>
+</tr>
+<tr>
+<td>$\chi$</td>
+<td>A continuous positive-definite function on $\Phi$, in the Minlos theorem</td>
+</tr>
+<tr>
+<td>$\mu$</td>
+<td>A Radon probability measure on $\Phi'$</td>
+</tr>
+<tr>
+<td>$E$</td>
+<td>The spectral measure of a self-adjoint operator</td>
+</tr>
+<tr>
+<td>$\xi_\lambda$</td>
+<td>A generalized eigenvector of a self-adjoint operator, eigenvalue $\lambda$</td>
+</tr>
+<tr>
+<td>$\zeta$, $n$</td>
+<td>The frequency in $\mathbb{R}^n$, and the number of variables</td>
+</tr>
+<tr>
+<td>$\alpha$, $\beta$</td>
+<td>Multi-indices, in the derivative and in the position variable</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li><em>The Fourier Transform and the Symbol of a Differential Operator</em>, for the symbol, the zero set, and the theorem that the kernel and the cokernel of $L_{\sigma_P(\zeta)}$ have dimension $d-r(\zeta)$; the second half of this article is that theorem read in the dual.</li>
+<li><em>The Inverse Fourier Transform of a Symbol</em>, for the Plancherel identity with the constant $(2\pi)^n$ and for the growth of the inverse transform, which is the scalar form of the pole questions.</li>
+<li><em>The Fourier Transform on Vector-Valued and Operator-Valued Function Spaces</em>, for the transform on a Hilbert space of values, the unitary it defines, and the character that appears here as $\gamma_\zeta$.</li>
+<li><em>Fourier Analysis on Euclidean Spaces</em>, for the inversion formula, the reflection identity $\mathcal{F}^2f=(2\pi)^nf(-\cdot)$, and the inversion theorem in the normalisation with $2\pi$ in the exponent, from which the constant here is obtained by substitution.</li>
+<li><em>Distributions and Fundamental Solutions</em>, for the calculus of tempered distributions, the transpose of a differential operator, and the pairing used in every computation of §<em>Generalized Eigenvectors at a Frequency</em>.</li>
+<li><em>Nuclear Spaces</em>, for nuclearity, the theorem that an infinite-dimensional Banach space is not nuclear, and the approximation numbers that make Minlos's hypothesis available.</li>
+<li><em>Locally Convex Spaces</em>, for the topology of $\mathcal{S}$, its reflexivity and its Montel property, and for the strong dual.</li>
+<li><em>Duality Theory</em>, for the transpose of a continuous linear map and for the duality between a space and its strong dual.</li>
+<li><em>The Schwartz Kernel Theorem</em>, for the kernel theorem on a nuclear space, which is the other use of the same nuclearity.</li>
+<li><em>Biquaternion Fourier Transform: Symbol, Block Determinant and Zero Set</em>, for the rank $4$ of $8$ on the null cone and the rank $0$ at the origin, which are the numbers $r(\zeta)$ in the case of the biquaternion algebra.</li>
+<li><em>The Inverse Biquaternion Fourier Transform: Poles, Types and Tails</em>, for the programme of a measure and a residue calculus on the null cone, which is what a Plancherel formula for the algebra-valued transform would need.</li>
+<li>I. M. Gelfand and N. Ya. Vilenkin, <em>Generalized Functions, Volume IV: Applications of Harmonic Analysis</em> (Academic Press, 1964), for rigged Hilbert spaces, the Minlos theorem, and the nuclear spectral theorem.</li>
+<li>K. Maurin, <em>Generalized Eigenfunction Expansions and Unitary Representations of Topological Groups</em> (Polish Scientific Publishers, 1968), for the spectral theorem on a nuclear triple and for the completeness of the generalized eigenvectors.</li>
+<li>Laurent Schwartz, <em>Théorie des distributions</em> (Hermann, 1966), for the topology of $\mathcal{S}$ and $\mathcal{S}'$ and for the transpose of a differential operator.</li>
+<li>François Trèves, <em>Topological Vector Spaces, Distributions and Kernels</em> (Academic Press, 1967), for the inductive limits, the strictness, and the duality of the spaces $PW_K$.</li>
+<li>Raymond E. A. C. Paley and Norbert Wiener, <em>Fourier Transforms in the Complex Domain</em> (American Mathematical Society, 1934), for the characterisation of $PW_K$ by entire functions of exponential type.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

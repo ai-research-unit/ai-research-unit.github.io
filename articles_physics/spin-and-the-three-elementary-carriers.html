@@ -135,7 +135,7 @@ $$</p>
 </tr>
 </tbody>
 </table></div>
-<p>Spin is the intrinsic angular momentum of a particle; in the rest frame it is the little-group label, and the labels $0,\tfrac12,1$ of the three carriers are the physical labels. The frame supplies the pair $(\vec\Upsilon_-,\vec\Upsilon_+)$, with spin element the contraction $\vec u\cdot\vec S=u_k\tilde S_{\Psi,k}=\tfrac12[\vec\Upsilon_-,\vec\Upsilon_+]=\tfrac12\vec{Ζ}$ and triple $(\vec u\cdot\vec S,\vec\Upsilon_-,\vec\Upsilon_+)$ satisfying $[\vec u\cdot\vec S,\vec\Upsilon_-]=\vec\Upsilon_-$, $[\vec u\cdot\vec S,\vec\Upsilon_+]=-\vec\Upsilon_+$ and $[\vec\Upsilon_-,\vec\Upsilon_+]=2\,\vec u\cdot\vec S$. The frame root is $\vec{Ζ}=2\,\vec u\cdot\vec S$, pure and therefore arrowed without a tilde. The two planes are two copies of one carrier type; the table lists them separately because the article uses both. The three types are the centre, the plane and the traceless part. The right action repeats the plane and adds no type. The dimensions are complex: one, two and three. Over the reals they are two, four and six, and the physical scalar and vector are real forms of the centre and of the traceless part.</p>
+<p>Spin is the intrinsic angular momentum of a particle; in the rest frame it is the little-group label, and the labels $0,\tfrac12,1$ of the three carriers are the physical labels. The frame supplies the pair $(\vec\Upsilon_-,\vec\Upsilon_+)$, with spin element the contraction $\vec u\cdot\vec S=u_k\tilde S_{\Psi,\eta}=\tfrac12[\vec\Upsilon_-,\vec\Upsilon_+]=\tfrac12\vec{Ζ}$ and triple $(\vec u\cdot\vec S,\vec\Upsilon_-,\vec\Upsilon_+)$ satisfying $[\vec u\cdot\vec S,\vec\Upsilon_-]=\vec\Upsilon_-$, $[\vec u\cdot\vec S,\vec\Upsilon_+]=-\vec\Upsilon_+$ and $[\vec\Upsilon_-,\vec\Upsilon_+]=2\,\vec u\cdot\vec S$. The frame root is $\vec{Ζ}=2\,\vec u\cdot\vec S$, pure and therefore arrowed without a tilde. The two planes are two copies of one carrier type; the table lists them separately because the article uses both. The three types are the centre, the plane and the traceless part. The right action repeats the plane and adds no type. The dimensions are complex: one, two and three. Over the reals they are two, four and six, and the physical scalar and vector are real forms of the centre and of the traceless part.</p>
 <h2 id="why-there-is-no-fourth">Why There Is No Fourth</h2>
 <p>Here <em>elementary</em> means an isomorphism class of nonzero irreducible invariant subspaces of $\mathbb{B}$ under one of the two actions, left multiplication or the commutator. Two subspaces define the same carrier when the actions are isomorphic. A general Lie-algebra module is not of this form. The left action has one irreducible type: every minimal left ideal is isomorphic to $S$, and $S_+$ and $S_-$ are two representatives. The adjoint action has two: the centre $\mathbb{B}_{C}$ and the traceless part $V$. The algebra itself is reducible under both.</p>
 <p>The algebra is $\mathbb{B}\cong M_2(\mathbb{C})$, and $M_2(\mathbb{C})$ is simple. It has one isomorphism class of simple modules, of complex dimension two, and every finite-dimensional left module is a direct sum of copies of it. On that module the spin element $\vec u\cdot\vec S=\vec{Ζ}/2$ is a traceless $2\times2$ matrix with $(2\,\vec u\cdot\vec S)^2=1$; its weights are $\pm\tfrac12$ and $s=\tfrac12$. The associative left action therefore sees only $s=\tfrac12$. A unital one-dimensional module would be a unital algebra map $M_2(\mathbb{C})\to\mathbb{C}$; its kernel is a two-sided ideal, so by simplicity it is $0$ or the whole algebra, and neither is possible. Hence no one-dimensional module exists, and the left action has no $s=0$.</p>
@@ -259,7 +259,7 @@ L_{\tilde\Pi_-}=\begin{pmatrix}0&0\\0&1\end{pmatrix},\qquad
 L_{\vec\Upsilon_x}=\begin{pmatrix}0&1\\0&0\end{pmatrix},\qquad
 L_{\vec\Upsilon_y}=\begin{pmatrix}0&0\\1&0\end{pmatrix},
 $$</p>
-<p>the matrices of $\mathsf M_2(\mathbb{C})$ in the model $\mathsf M_2(\vec e_k)=-i\sigma_k$. The module is literally the column space $\mathbb{C}^2$ on which the algebra acts by matrix multiplication.</p>
+<p>the matrices of $\mathsf M_2(\mathbb{C})$ in the model $\mathsf M_2(\vec e_\eta)=-i\sigma_\eta$. The module is literally the column space $\mathbb{C}^2$ on which the algebra acts by matrix multiplication.</p>
 <p>Three module-theoretic facts carry the reading.</p>
 <ul>
 <li><strong>The module is simple and unique.</strong> $\mathbb{B}\cong M_2(\mathbb{C})$ is simple and finite-dimensional, so its modules are completely reducible and there is, up to isomorphism, exactly one simple module. By Schur's lemma $\operatorname{End}_{\mathbb{B}}(S)=\mathbb{C}$.</li>
@@ -300,7 +300,7 @@ $$</p>
 \tilde\Pi_-\mathbb{B}\tilde\Pi_-\oplus\tilde\Pi_+\mathbb{B}\tilde\Pi_-
 =\mathbb{C}\tilde\Pi_-\oplus\mathbb{C}\vec\Upsilon_x\;}.
 $$</p>
-<p>In the matrix model $\mathsf M_2(\vec e_k)=-i\sigma_k$ the four elements are the matrix units</p>
+<p>In the matrix model $\mathsf M_2(\vec e_\eta)=-i\sigma_\eta$ the four elements are the matrix units</p>
 <p>$$
 \tilde\Pi_+\leftrightarrow E_{11},\quad
 \vec\Upsilon_y\leftrightarrow E_{21},\quad
@@ -498,7 +498,7 @@ $$</p>
 </tr>
 <tr>
 <td>the adjoint integer</td>
-<td>the halved inner derivations $\tilde S_{\Psi,\mathrm{adj},k}=\tfrac12\mathrm{ad}_{i\vec e_k}$ act on the vector part of the material sector; the scalar direction $ie_t$ is annihilated</td>
+<td>the halved inner derivations $\tilde S_{\Psi,\mathrm{adj},\eta}=\tfrac12\mathrm{ad}_{i\vec e_\et}a$ act on the vector part of the material sector; the scalar direction $ie_t$ is annihilated</td>
 <td>$V$ under $\operatorname{ad}$; $\mathbb{C} ie_t$</td>
 <td>$1$; $0$</td>
 </tr>

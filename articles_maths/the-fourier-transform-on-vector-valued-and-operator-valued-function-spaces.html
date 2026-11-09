@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Fourier Transform on Vector-Valued and Operator-Valued Function Spaces — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-fourier-transform-on-vector-valued-and-operator-valued-function-spaces"><strong>The Fourier Transform on Vector-Valued and Operator-Valued Function Spaces</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>The transform of a function with values in a Hilbert space is the transform of each of its coordinates, and no new integral appears. This article proves that sentence and then works out what it costs: nothing in the formula, and something in every statement about convergence, in what counts as a product, and in what normalises the measure on the dual group.</p>
+<p><strong>The three settings.</strong> Throughout, $H$ is a separable complex Hilbert space with inner product $\langle\cdot,\cdot\rangle$ linear in the second variable, and $\mathcal{L}(H)$ is the algebra of bounded operators on it. The first setting is $L^2(\mathbb{R}^n;H)$, the Bochner square-integrable functions, normed by $\lVert f\rVert_2^2=\int\lVert f(x)\rVert^2dx$. The second replaces $H$ by the Hilbert–Schmidt class inside $\mathcal{L}(H)$, so that the functions are operator-valued; here the value space carries a product and a trace, and both are used. The third replaces $\mathbb{R}^n$ by a locally compact abelian group $G$: characters replace exponentials, Haar measure replaces Lebesgue measure, and the constant $(2\pi)^n$ becomes a density on the dual group.</p>
+<p><strong>What is proved here.</strong> Four theorems. The coordinate formula, and the fact that the transform commutes with every bounded operator on $H$, in §<em>The Transform of a Vector-Valued Function</em>. The isometry with the constant $(2\pi)^n$, for every $H$, and the unitary it defines, in §<em>The Isometry and the Unitary</em>. The Hilbert–Schmidt isometry and the convolution theorem for operator-valued functions, in §<em>Operator-Valued Functions</em>. The transfer of positivity from a kernel to its transform, with the diagonal in integrated form, in §<em>Kernels and Their Transforms</em>. A fifth result, the Plancherel measure on the dual of a locally compact abelian group and the inversion that goes with it, occupies §<em>Inversion on a Locally Compact Abelian Group</em>; its scalar case is quoted and the passage to $H$-valued functions is proved.</p>
+<p><strong>What is quoted, and with which hypotheses.</strong> The scalar Plancherel identity on $\mathbb{R}^n$, with its constant, is the one of <em>The Inverse Fourier Transform of a Symbol</em>. The scalar Plancherel theorem for a locally compact abelian group is quoted from <em>A Course in Abstract Harmonic Analysis</em> of Folland, with its hypotheses: the group is locally compact, abelian, and carries a Haar measure, which in the abelian case is automatically two-sided invariant. The fact that $L^\infty$ acts on $L^2$ as a maximal abelian subalgebra is quoted from the same source and is used once, in §<em>The Uniqueness Claim</em>. The Kolmogorov decomposition of a positive-definite kernel is quoted from <em>Reproducing Kernel Hilbert Spaces</em>, and the trace formula for a trace-class operator with continuous kernel is quoted from <em>Trace Ideals and Their Applications</em> of Simon. Both are used only to say what the objects are.</p>
+<p><strong>The one unverified claim.</strong> The article needs one statement that it does not prove, and it is this: <strong>the transform is unique up to a unitary identification of the target and a choice of normalisation.</strong> That is the form in which the claim is stated here, and it is quoted from Folland, not proved here in the generality stated. §<em>The Uniqueness Claim</em> proves the corresponding statement for $G=\mathbb{R}^n$, where it is a computation with the commutant of the multiplication algebra, and it records why the form "unique up to a scalar" is false: the scalar may be replaced by any unimodular function, and that is a unitary of the target and not a constant.</p>
+<p><strong>Boundaries.</strong> The symbol of a differential operator, its zero set and the kernel of its reciprocal belong to <em>The Fourier Transform and the Symbol of a Differential Operator</em> and to <em>The Inverse Fourier Transform of a Symbol</em>; this article uses neither. The placement of the transform in a triple of test spaces is <em>The Fourier Transform on a Gelfand Triple</em>. The transform of a distribution, and the sense in which an operator-valued function defines one, is <em>Distributions and Fundamental Solutions</em>. The non-abelian Plancherel theorem, where the dual is not a group and the inversion is an integral over a space of representations, is <em>Unitary Representations and the Plancherel Theorem</em>, and nothing here extends to it. The convolution of functions on a group is <em>Convolution on a Group</em>, and the Haar measure is <em>Locally Compact Groups and Haar Measure</em>; both are taken as given.</p>
+<p><strong>The trap, and it has one word.</strong> That word is convergence. In the scalar theory a transform is an integral of a function, and the only question is whether the integral exists. Here the integral is a Bochner integral, so it exists when the norm is integrable and $H$ is separable; but the limit of a sequence of such integrals may be taken in the norm of $H$, in the weak topology of $H$, in the Hilbert–Schmidt norm of $\mathcal{L}(H)$, or weakly as an operator, and these four are different statements. <strong>Every theorem below names its mode of convergence</strong>, and a theorem that names none is a defect rather than a shorthand.</p>
+<p><strong>The phrase "the transform does not see $H$".</strong> It has a precise meaning, given in §<em>The Transform of a Vector-Valued Function</em>: the transform commutes with every bounded operator on $H$, so it acts as the identity on the $H$ factor and as the scalar transform on the other. It does not mean that $H$ is irrelevant. The theorem of §<em>Kernels and Their Transforms</em> is a statement about positivity, and positivity is a property of the inner product of $H$; the theorem of §<em>Operator-Valued Functions</em> is a statement about a product, and the product is a property of $\mathcal{L}(H)$.</p>
+<h2 id="the-transform-of-a-vector-valued-function">The Transform of a Vector-Valued Function</h2>
+<p><strong>Definition (the space).</strong> A function $f:\mathbb{R}^n\to H$ is <strong>strongly measurable</strong> when it is a pointwise limit almost everywhere of a sequence of countably valued functions; for separable $H$ this is the same as the measurability of every coordinate $\langle f,u\rangle$. It is in $L^2(\mathbb{R}^n;H)$ when it is strongly measurable and $\int\lVert f(x)\rVert^2dx<\infty$, and that space is complete for the norm $\lVert f\rVert_2$, with inner product $\langle f,g\rangle=\int\langle f(x),g(x)\rangle dx$. It is in $L^1(\mathbb{R}^n;H)$ when $\int\lVert f(x)\rVert dx<\infty$.</p>
+<p><strong>Definition (the transform).</strong> For $f\in L^1(\mathbb{R}^n;H)$ and $\zeta\in\mathbb{R}^n$, the <strong>transform</strong> is the Bochner integral</p>
+<p>$$
+\mathcal{F}[f](\zeta)=\int_{\mathbb{R}^n}e^{-i\zeta\cdot x}f(x)\,dx \in H .
+$$</p>
+<p>The integrand is strongly measurable and its norm is $\lVert f(x)\rVert$, which is integrable; the Bochner integral therefore exists, and $\lVert\mathcal{F}[f](\zeta)\rVert\le\lVert f\rVert_1$ for every $\zeta$. The scalar exponential is outside and the vector value is inside, so no question of non-commutativity arises at this stage.</p>
+<p><strong>Proposition (the coordinate formula).</strong> For $f\in L^1(\mathbb{R}^n;H)$, every $u\in H$, and every $\zeta$,</p>
+<p>$$
+\big\langle \mathcal{F}[f](\zeta),u\big\rangle=\mathcal{F}\big[\langle f(\cdot),u\rangle\big](\zeta).
+$$</p>
+<p><em>Proof.</em> The map $v\mapsto\langle v,u\rangle$ is continuous and linear on $H$, and a continuous linear map carries a Bochner integral to the integral of the images. The scalar function $x\mapsto\langle f(x),u\rangle$ is integrable because $\lvert\langle f(x),u\rangle\rvert\le\lVert f(x)\rVert\lVert u\rVert$. The right side is by definition the scalar transform of that function.</p>
+<p><strong>Proposition (bounded operators pass through).</strong> Let $T\in\mathcal{L}(H)$ and $f\in L^1(\mathbb{R}^n;H)$. Then $Tf\in L^1(\mathbb{R}^n;H)$ and $\mathcal{F}[Tf](\zeta)=T\mathcal{F}[f](\zeta)$ for every $\zeta$.</p>
+<p><em>Proof.</em> Continuity of $T$ gives $\lVert Tf\rVert\le\lVert T\rVert\lVert f\rVert$, so $Tf$ is integrable, and the same continuity carries the Bochner integral through, since $T$ applied to a limit of simple functions is the limit of their images.</p>
+<p><strong>Corollary (the transform is the identity on the value space).</strong> Let $(\varphi_j)$ be an orthonormal basis of $H$ and write $f_j=\langle f,\varphi_j\rangle$. Then, for each $\zeta$, the series</p>
+<p>$$
+\mathcal{F}[f](\zeta)=\sum_{j}\mathcal{F}[f_j](\zeta)\,\varphi_j
+$$</p>
+<p>converges in the norm of $H$, and $\lVert\mathcal{F}[f](\zeta)\rVert^2=\sum_j\lvert\mathcal{F}[f_j](\zeta)\rvert^2$.</p>
+<p><em>Proof.</em> By the coordinate formula, $\langle\mathcal{F}[f](\zeta),\varphi_j\rangle=\mathcal{F}[f_j](\zeta)$, so the coefficients of $\mathcal{F}[f](\zeta)$ in the basis are the scalar transforms, and the norm identity is Parseval's. The finite partial sums form a Cauchy sequence, because the squared norm of the tail of the series is the sum of the tail of the non-negative series on the right, which converges; and the limit has the stated norm.</p>
+<p><strong>Remark (what has and has not been proved).</strong> The corollary is the whole reason the theory has no new formula: the transform of $f$ is assembled from the scalar transforms of the coordinates, and the assembly is the identity map of $H$. Equivalently, $\mathcal{F}$ acting on $L^2(\mathbb{R}^n;H)$ is the tensor product of the scalar transform with the identity of $H$, in the sense that it agrees on the algebraic tensor product $L^2(\mathbb{R}^n)\odot H$ with $\mathcal{F}\otimes 1_H$ and is continuous there. <strong>A change of orthonormal basis of $H$ does not change the transform of any function</strong>, which is the first hint of the uniqueness statement of §<em>The Uniqueness Claim</em>.</p>
+<p><strong>Remark (what the four convergences are).</strong> The series above converges in the norm of $H$. A statement about $Tf$ may instead be read as a weak operator statement, that $\langle T\mathcal{F}[f],u\rangle$ is the integral of $\langle Tf,u\rangle$ for each $u$. A statement about an operator-valued transform may be read in the Hilbert–Schmidt norm, which is the norm of the space $\mathcal{L}_2(H)$ in which the values lie. And a statement about inversion may be read as convergence of the inverse integrals in the norm of $L^2$, which is a statement about a sequence of functions and not about a sequence of vectors. The four are separate, and the theorems below say which they use.</p>
+<h2 id="the-isometry-and-the-unitary">The Isometry and the Unitary</h2>
+<p><strong>Theorem (Plancherel for $H$-valued functions).</strong> Let $f\in L^1\cap L^2(\mathbb{R}^n;H)$. Then $\mathcal{F}[f]\in L^2(\mathbb{R}^n;H)$ and</p>
+<p>$$
+\int_{\mathbb{R}^n}\lVert\mathcal{F}[f](\zeta)\rVert^2\,d\zeta=(2\pi)^n\int_{\mathbb{R}^n}\lVert f(x)\rVert^2\,dx .
+$$</p>
+<p><em>Proof.</em> Choose an orthonormal basis $(\varphi_j)$ of $H$ and write $f_j=\langle f,\varphi_j\rangle$. Each $f_j$ lies in $L^1\cap L^2(\mathbb{R}^n;\mathbb{C})$, because $\lvert f_j\rvert\le\lVert f\rVert$. By the corollary of §<em>The Transform of a Vector-Valued Function</em>, $\lVert\mathcal{F}[f](\zeta)\rVert^2=\sum_j\lvert\mathcal{F}[f_j](\zeta)\rvert^2$ for every $\zeta$, a series of non-negative terms; integrating it and interchanging sum and integral by monotone convergence gives $\sum_j\lVert\mathcal{F}[f_j]\rVert_2^2$ on the left. The scalar identity of <em>The Inverse Fourier Transform of a Symbol</em> gives $\lVert\mathcal{F}[f_j]\rVert_2^2=(2\pi)^n\lVert f_j\rVert_2^2$ for each $j$, and Parseval gives $\sum_j\lVert f_j\rVert_2^2=\lVert f\rVert_2^2$. Assembling the three equalities gives the statement, and the value $(2\pi)^n\lVert f\rVert_2^2$ is finite, so the series converges and $\mathcal{F}[f]$ lies in $L^2$.</p>
+<p><strong>Corollary (the unitary).</strong> The operator $\mathcal{U}=(2\pi)^{-n/2}\mathcal{F}$, defined first on $L^1\cap L^2(\mathbb{R}^n;H)$, extends by continuity to an isometry of $L^2(\mathbb{R}^n;H)$ onto itself, and it is surjective, hence unitary.</p>
+<p><em>Proof.</em> The isometry is the theorem; $L^1\cap L^2$ is dense in $L^2$ because the compactly supported continuous $H$-valued functions lie in it and are dense; and an isometry with dense range is surjective onto a closed subspace, so it remains to see that the range is dense. The inverse operator $(2\pi)^{-n/2}\mathcal{F}$ acting on $L^1\cap L^2$ is an isometry with the same constant, read with the opposite sign in the exponent, and it is a left inverse on that dense set; hence the range of $\mathcal{U}$ contains the range of the inverse operator, which is dense.</p>
+<p><strong>Corollary (the fourth power).</strong> On $L^2(\mathbb{R}^n;H)$ one has $\mathcal{U}^2f(x)=f(-x)$ and $\mathcal{U}^4=1$.</p>
+<p><em>Proof.</em> Both statements are read in coordinates: the scalar identity $\mathcal{F}^2g(x)=(2\pi)^ng(-x)$ holds for $g\in L^1\cap L^2$, and by the corollary of §<em>The Transform of a Vector-Valued Function</em> the transform of $f$ is assembled from the transforms of its coordinates, so applying it twice multiplies each coordinate by $(2\pi)^n$ and reflects it. Hence $\mathcal{U}^2$ is the reflection $f\mapsto f(-\cdot)$, whose square is the identity.</p>
+<p><strong>Remark (the constant does not depend on the dimension of $H$).</strong> The formula carries $(2\pi)^n$ and not $(2\pi)^n\dim H$ or an analogous power, because the identity is applied once to $f$ as a whole and not once per coordinate. When $H$ is finite dimensional, the theorem of <em>The Inverse Fourier Transform of a Symbol</em> applied in a complex basis of $H$ gives one scalar identity per basis vector, with weights from the Gram matrix, and the weights cancel between the two sides; the present proof replaces that computation by a sum over an orthonormal basis, which is the same computation with the Gram matrix taken to be the identity. <strong>Neither route produces a factor depending on the dimension of $H$, and this is the honest content of the phrase "the constant is the same".</strong></p>
+<p><strong>Remark (a second reading, by duality).</strong> Since $\mathcal{U}$ is unitary, its adjoint is its inverse, and the inversion formula on $L^2(\mathbb{R}^n;H)$ is the statement $\mathcal{U}^{*}=\mathcal{U}^{-1}$. Written with integrals and read weakly, it says that $\langle f,g\rangle=(2\pi)^{-n}\int\langle\mathcal{F}[f](\zeta),\mathcal{F}[g](\zeta)\rangle\,d\zeta$ for $g\in L^2(\mathbb{R}^n;H)$, which is the polarization of the theorem. The right side is a scalar integral of a scalar function, so the statement is again a scalar identity, and this is why the vector case needs no new apparatus.</p>
+<h2 id="operator-valued-functions">Operator-Valued Functions</h2>
+<p><strong>Definition (the Hilbert–Schmidt class).</strong> An operator $T\in\mathcal{L}(H)$ is <strong>Hilbert–Schmidt</strong> when $\sum_j\lVert T\varphi_j\rVert^2<\infty$ for one, and then for every, orthonormal basis $(\varphi_j)$; the sum is the square of the <strong>Hilbert–Schmidt norm</strong> $\lVert T\rVert_2$, and the class $\mathcal{L}_2(H)$ is a Hilbert space for the inner product $\langle S,T\rangle_2=\sum_j\langle S\varphi_j,T\varphi_j\rangle=\operatorname{tr}(S^{*}T)$.</p>
+<p><strong>Lemma (independence of the basis).</strong> The number $\sum_{j,k}\lvert\langle T\varphi_j,\varphi_k\rangle\rvert^2$ does not depend on the orthonormal basis, and it equals $\operatorname{tr}(T^{*}T)$.</p>
+<p><em>Proof.</em> For fixed $j$ the sum over $k$ is $\lVert T\varphi_j\rVert^2$ by Parseval. The sum over $j$ of these is the trace of $T^{*}T$, which is a positive trace-class operator, and the trace of such an operator is the sum of its diagonal entries in any orthonormal basis, by monotone convergence applied to the definition of the trace.</p>
+<p><strong>Definition (the weak transform).</strong> For $T:\mathbb{R}^n\to\mathcal{L}(H)$ and $\zeta\in\mathbb{R}^n$, the <strong>transform</strong> is the operator $\mathcal{F}[T](\zeta)$ determined by</p>
+<p>$$
+\big\langle \mathcal{F}[T](\zeta)u,v\big\rangle=\mathcal{F}\big[\langle T(\cdot)u,v\rangle\big](\zeta)
+$$</p>
+<p>for all $u,v\in H$.</p>
+<p><strong>Proposition (the weak transform agrees with the strong one).</strong> If $T\in L^1(\mathbb{R}^n;\mathcal{L}_2(H))$, then the Bochner integral $\int e^{-i\zeta\cdot x}T(x)\,dx$ converges in $\mathcal{L}_2(H)$ and defines the same operator as the weak definition; moreover $\lVert\mathcal{F}[T](\zeta)\rVert_2\le\int\lVert T(x)\rVert_2dx$.</p>
+<p><em>Proof.</em> The class $\mathcal{L}_2(H)$ is a Hilbert space, so the integrand is an $\mathcal{L}_2(H)$-valued function with integrable norm, and §<em>The Transform of a Vector-Valued Function</em> applies with $H$ replaced by $\mathcal{L}_2(H)$. The two definitions agree because $S\mapsto\langle Su,v\rangle$ is a continuous linear functional on $\mathcal{L}_2(H)$ for fixed $u,v$ in $H$, and by the coordinate formula applied in that Hilbert space. The bound is the bound on a Bochner integral.</p>
+<p><strong>Theorem (the Hilbert–Schmidt isometry).</strong> Let $T\in L^1\cap L^2(\mathbb{R}^n;\mathcal{L}_2(H))$. Then</p>
+<p>$$
+\int_{\mathbb{R}^n}\lVert\mathcal{F}[T](\zeta)\rVert_2^2\,d\zeta=(2\pi)^n\int_{\mathbb{R}^n}\lVert T(x)\rVert_2^2\,dx .
+$$</p>
+<p><em>Proof.</em> Apply the theorem of §<em>The Isometry and the Unitary</em> in the Hilbert space $\mathcal{L}_2(H)$, whose inner product is $\langle S,T\rangle_2$. The norm there is $\lVert\cdot\rVert_2$ and the transform is the one just defined. No structure of $H$ beyond separability is used.</p>
+<p><strong>Proposition (the convolution theorem).</strong> Let $T\in L^1(\mathbb{R}^n;\mathcal{L}(H))$ and $f\in L^1(\mathbb{R}^n;H)$, and define $(T*f)(x)=\int_{\mathbb{R}^n}T(x-y)f(y)\,dy$. Then $T*f\in L^1(\mathbb{R}^n;H)$ and $\mathcal{F}[T*f](\zeta)=\mathcal{F}[T](\zeta)\,\mathcal{F}[f](\zeta)$ for every $\zeta$.</p>
+<p><em>Proof.</em> The integrand is bounded by $\lVert T(x-y)\rVert\lVert f(y)\rVert$, whose double integral is $\lVert T\rVert_1\lVert f\rVert_1$; Fubini applies. Substituting $z=x-y$ in the transform,</p>
+<p>$$
+\mathcal{F}[T*f](\zeta)=\int_{\mathbb{R}^n}\int_{\mathbb{R}^n}e^{-i\zeta\cdot(z+y)}T(z)f(y)\,dy\,dz ,
+$$</p>
+<p>and the double integral factorises because the exponential does and because $T(z)f(y)$ is the product of an operator and a vector. The first factor is $\mathcal{F}[T](\zeta)$ and the second is $\mathcal{F}[f](\zeta)$.</p>
+<p><strong>Remark (this is the content the operator values add).</strong> For $H$-valued functions alone the transform is the scalar transform in each coordinate, and no theorem above uses more than that. The operator-valued case adds two structures: the <strong>product</strong>, used in the proposition just proved, and the <strong>trace</strong>, used in the isometry. The product turns convolution into operator multiplication, and the placement matters: $T$ acts on the left of $f$, and $\mathcal{F}[T](\zeta)\mathcal{F}[f](\zeta)$ is the product of an operator and a vector. Had the kernel been placed on the right, with $(f*T)(x)=\int f(x-y)T(y)\,dy$, the conclusion would be $\mathcal{F}[f*T](\zeta)=\mathcal{F}[f](\zeta)\,\mathcal{F}[T](\zeta)$ with the vector multiplying the operator, which is a different object and is defined only when $H$ is finite dimensional. <strong>The order of kernel and function is part of the theorem</strong>, and it is fixed at the start of every statement that uses it.</p>
+<h2 id="kernels-and-their-transforms">Kernels and Their Transforms</h2>
+<h3 id="the-scalar-kernel">The scalar kernel</h3>
+<p><strong>Definition (positive-definite kernel).</strong> Let $X$ be a set. A function $K:X\times X\to\mathbb{C}$ is a <strong>positive-definite kernel</strong> when, for every finite family $x_1,\dots,x_N$ in $X$ and every $w_1,\dots,w_N$ in $\mathbb{C}$,</p>
+<p>$$
+\sum_{p,q=1}^{N}\overline{w_p}\,w_q\,K(x_p,x_q)\ \ge\ 0 .
+$$</p>
+<p>Such a $K$ is automatically sesquiholomorphic, $K(y,x)=\overline{K(x,y)}$, and the completion of the span of the functions $K_x=K(\cdot,x)$ for the inner product $\langle K_x,K_y\rangle=K(y,x)$ is a Hilbert space of functions on $X$ on which $K$ reproduces: $f(x)=\langle f,K_x\rangle$. This is the construction of <em>Reproducing Kernel Hilbert Spaces</em>, quoted here and not repeated.</p>
+<p><strong>Lemma (a kernel tested against a bounded integrable function).</strong> Let $K$ be positive definite and integrable on $\mathbb{R}^n\times\mathbb{R}^n$, and let $\Lambda\in L^1\cap L^\infty(\mathbb{R}^n)$. Then $\int\int K(x,y)\Lambda(x)\overline{\Lambda(y)}\,dx\,dy\ge0$, the double integral being taken over $\mathbb{R}^n\times\mathbb{R}^n$.</p>
+<p><em>Proof.</em> Choose step functions $\Lambda_m$, bounded by $\lVert\Lambda\rVert_\infty$ and converging to $\Lambda$ in $L^1$. For a step function the double integral is the finite sum $\sum_{i,j}c_i\overline{c_j}K(x_i,x_j)\lvert E_i\rvert\lvert E_j\rvert$, with $E_i$ the pieces on which $\Lambda_m$ is constant, which is non-negative by positive definiteness. The double integral is continuous in $\Lambda$ in the $L^1$ norm, because $\lvert K\rvert$ is integrable and both $\Lambda$ and $\Lambda_m$ are bounded by $\lVert\Lambda\rVert_\infty$. Hence the limit of the non-negative numbers is non-negative.</p>
+<p><strong>Theorem (the transform of a kernel is a kernel).</strong> Let $K$ be a positive-definite kernel on $\mathbb{R}^n\times\mathbb{R}^n$ that is integrable. Then the function</p>
+<p>$$
+\widehat K(\zeta,\eta)=\int_{\mathbb{R}^n}\int_{\mathbb{R}^n}e^{-i(\zeta\cdot x-\eta\cdot y)}\,K(x,y)\,dx\,dy
+$$</p>
+<p>is a positive-definite kernel on $\mathbb{R}^n\times\mathbb{R}^n$.</p>
+<p><em>Proof.</em> Let $\zeta_1,\dots,\zeta_N$ and $w_1,\dots,w_N$ be given, and put $\Lambda(x)=\sum_p\overline{w_p}e^{-i\zeta_p\cdot x}$, which is bounded and integrable. Exchanging the finite sum with the double integral, which is legitimate because the sum is finite,</p>
+<p>$$
+\sum_{p,q}\overline{w_p}w_q\widehat K(\zeta_p,\zeta_q)=\int\int K(x,y)\,\Lambda(x)\,\overline{\Lambda(y)}\,dx\,dy ,
+$$</p>
+<p>and the right side is non-negative by the lemma. Since the families were arbitrary, $\widehat K$ is positive definite.</p>
+<p><strong>Definition and proposition (the diagonal).</strong> The <strong>diagonal</strong> of a kernel $K$ is the function $x\mapsto K(x,x)$, and the diagonal of the transformed kernel is $\zeta\mapsto\widehat K(\zeta,\zeta)$. The second is the <strong>symbol of the kernel</strong>, the function $\widehat K(\zeta,\zeta)=\int\int e^{-i\zeta\cdot(x-y)}K(x,y)\,dx\,dy$, which is the quadratic form of the kernel at the frequency $\zeta$ and is non-negative by the theorem with $\eta=\zeta$.</p>
+<p><strong>Proposition (the two diagonals agree in integral).</strong> Let $K$ be continuous on $\mathbb{R}^n\times\mathbb{R}^n$ and suppose the operator $T_K$ with kernel $K$ is of trace class. Then</p>
+<p>$$
+\int_{\mathbb{R}^n}\widehat K(\zeta,\zeta)\,d\zeta=(2\pi)^n\int_{\mathbb{R}^n}K(x,x)\,dx .
+$$</p>
+<p><em>Proof.</em> For $g\in C_c^\infty(\mathbb{R}^n)$ one computes $(\mathcal{F}T_K\mathcal{F}^{-1}g)(\zeta)=\int e^{-i\zeta\cdot x}(T_K\mathcal{F}^{-1}g)(x)\,dx$ and $\mathcal{F}^{-1}g(x)=(2\pi)^{-n}\int e^{ix\cdot\eta}g(\eta)\,d\eta$; substituting and exchanging the integrals shows that $(2\pi)^{-n}\widehat K$ is the kernel of $\mathcal{F}T_K\mathcal{F}^{-1}$. The trace of an operator with a continuous kernel is the integral of its diagonal, quoted from <em>Trace Ideals and Their Applications</em> of Simon, and the trace is invariant under conjugation by an invertible operator. Applying both to $\mathcal{F}T_K\mathcal{F}^{-1}$ gives $\int(2\pi)^{-n}\widehat K(\zeta,\zeta)\,d\zeta=\int K(x,x)\,dx$.</p>
+<p><strong>Remark (pointwise the two diagonals differ, and the Gaussian is where they nearly agree).</strong> Take the rank-one kernel $K(x,y)=\psi(x)\overline{\psi(y)}$ with $\psi$ integrable. Its transform is the rank-one kernel $\widehat K(\zeta,\eta)=\hat\psi(\zeta)\overline{\hat\psi(\eta)}$, so the diagonal of the transformed kernel is $\lvert\hat\psi(\zeta)\rvert^2$ while the diagonal of the original is $\lvert\psi(x)\rvert^2$. The two agree pointwise only when $\psi$ is an eigenfunction of the transform. For $\psi(x)=e^{-\lvert x\rvert^2/2}$ one has $\hat\psi=(2\pi)^{n/2}\psi$, so that $\lvert\hat\psi\rvert^2=(2\pi)^n\lvert\psi\rvert^2$: the Gaussian diagonal is reproduced up to the constant, and the constant is exactly the factor by which the diagonal of a self-dual kernel rescales. <strong>The proposition above is the only sense in which the two diagonals agree for a general kernel: the agreement is an identity of integrals, and it is a coincidence of pointwise values only for the self-dual kernels.</strong></p>
+<h3 id="the-operator-valued-kernel">The operator-valued kernel</h3>
+<p><strong>Definition (the operator-valued kernel).</strong> A function $K:X\times X\to\mathcal{L}(H)$ is a positive-definite kernel when $\sum_{p,q}\langle K(x_p,x_q)u_q,u_p\rangle\ge0$ for every finite family of points and every finite family of vectors in $H$. The Kolmogorov decomposition, quoted from <em>Reproducing Kernel Hilbert Spaces</em>, provides an $H$-valued Hilbert space on which $K$ reproduces in the sense $f(x)=\langle f,K_x\rangle$ with $K_x$ taking values in the operators of $H$; nothing below uses the decomposition, only the inequality.</p>
+<p><strong>Theorem (the transform of an operator-valued kernel is a kernel).</strong> Let $K:\mathbb{R}^n\times\mathbb{R}^n\to\mathcal{L}(H)$ be positive definite in the sense above and integrable in the Bochner sense. Then the function</p>
+<p>$$
+\widehat K(\zeta,\eta)=\int_{\mathbb{R}^n}\int_{\mathbb{R}^n}e^{-i(\zeta\cdot x-\eta\cdot y)}\,K(x,y)\,dx\,dy
+$$</p>
+<p>is a positive-definite operator-valued kernel.</p>
+<p><em>Proof.</em> Let $\zeta_1,\dots,\zeta_N$, $w_1,\dots,w_N\in H$, and put $\Lambda(x)=\sum_p w_p\,e^{-i\zeta_p\cdot x}$, an $H$-valued bounded integrable function. Then $\sum_{p,q}\langle\widehat K(\zeta_p,\zeta_q)w_q,w_p\rangle=\int\int\langle K(x,y)\Lambda(y),\Lambda(x)\rangle\,dx\,dy$, and the right side is non-negative by the definition, applied to step-function approximations of $\Lambda$ exactly as in the scalar lemma. The families being arbitrary, $\widehat K$ is positive definite.</p>
+<p><strong>Corollary (the diagonal is a positive operator).</strong> For every $\zeta$, the operator $\widehat K(\zeta,\zeta)$ is positive, and its trace, when finite, is $\sum_j\widehat K(\zeta,\zeta)$ evaluated on an orthonormal basis, which is the sum of scalar symbols of the kernels $\langle K(\cdot,\cdot)\varphi_j,\varphi_j\rangle$.</p>
+<p><em>Proof.</em> Positivity is the theorem with $\eta=\zeta$ and $N=1$. The trace statement is the definition of the diagonal entries in a basis and the scalar case applied to each of them.</p>
+<p><strong>Remark (positivity is the reason the value space matters).</strong> The transform commutes with bounded operators, so it cannot create or destroy operator structure; but it can create or destroy positivity of a kernel, and the theorem says that it does not destroy it. That statement is not a formal consequence of the commutation, because the transform is not positive on operators in general: an operator-valued function may be positive at every point of $\mathbb{R}^n$ while its transform is not, since the transform of a non-negative scalar function is not non-negative unless the function is a positive-definite kernel. <strong>What is preserved is the double positivity of a kernel, and the hypothesis of the theorem is exactly that.</strong></p>
+<h2 id="inversion-on-a-locally-compact-abelian-group">Inversion on a Locally Compact Abelian Group</h2>
+<h3 id="haar-measure-and-the-dual-group">Haar measure and the dual group</h3>
+<p><strong>The setting, and what is quoted.</strong> Let $G$ be a locally compact abelian group, written additively, with Haar measure $dx$; the abelian hypothesis makes the measure two-sided invariant, so the modular function is identically one. A <strong>character</strong> is a continuous homomorphism $\gamma:G\to\mathbb{T}$, and the set $\widehat G$ of characters, with the compact-open topology, is a locally compact abelian group, the <strong>dual group</strong>. These are <em>Locally Compact Groups and Haar Measure</em> and <em>Pontryagin Duality</em>; the transform on $G$ is</p>
+<p>$$
+\hat f(\gamma)=\int_G f(x)\,\overline{\gamma(x)}\,dx ,
+$$</p>
+<p>for $f\in L^1(G;H)$, the integral a Bochner integral and the convergence in the norm of $H$. The character is scalar-valued, so it sits outside the vector, exactly as the exponential did on $\mathbb{R}^n$.</p>
+<p><strong>Proposition (the coordinate formula on a group).</strong> For $f\in L^1(G;H)$ and $u\in H$, $\langle\hat f(\gamma),u\rangle=\widehat{\langle f,u\rangle}(\gamma)$, and for $T\in\mathcal{L}(H)$, $\widehat{Tf}=T\hat f$.</p>
+<p><em>Proof.</em> The two maps $v\mapsto\langle v,u\rangle$ and $v\mapsto Tv$ are continuous and linear, so both carry the Bochner integral to the integral of the images, as in §<em>The Transform of a Vector-Valued Function</em>.</p>
+<h3 id="the-plancherel-measure-and-its-density">The Plancherel measure and its density</h3>
+<p><strong>Theorem (Plancherel, scalar case quoted and vector case proved).</strong> There is a Haar measure $d\gamma$ on $\widehat G$, unique, such that for every $f\in L^1\cap L^2(G;\mathbb{C})$ the transform lies in $L^2(\widehat G;\mathbb{C})$ and</p>
+<p>$$
+\int_{\widehat G}\lvert\hat f(\gamma)\rvert^2\,d\gamma=\int_G\lvert f(x)\rvert^2\,dx .
+$$</p>
+<p>With that measure, and for $f\in L^1\cap L^2(G;H)$,</p>
+<p>$$
+\int_{\widehat G}\lVert\hat f(\gamma)\rVert_H^2\,d\gamma=\int_G\lVert f(x)\rVert_H^2\,dx ,
+$$</p>
+<p>and $\mathcal{U}f=\hat f$ extends to a unitary of $L^2(G;H)$ onto $L^2(\widehat G;H)$.</p>
+<p><em>Proof.</em> The scalar statement is the Plancherel theorem for a locally compact abelian group, quoted from <em>A Course in Abstract Harmonic Analysis</em> of Folland, together with the existence and uniqueness of the measure. The vector statement follows by choosing an orthonormal basis $(\varphi_j)$ of $H$, writing $f_j=\langle f,\varphi_j\rangle$, and repeating the argument of §<em>The Isometry and the Unitary</em>: the norm identity becomes a sum of scalar identities, and monotone convergence justifies the exchange. The unitary is then obtained by continuity on the dense set $L^1\cap L^2$.</p>
+<p><strong>Definition (the Plancherel density).</strong> The measure $d\gamma$ is the <strong>Plancherel measure</strong>. When $\widehat G$ is identified with a space carrying another measure $d\lambda$, say by a homeomorphism, the <strong>density</strong> is the function $\varpi$ with $d\gamma=\varpi\,d\lambda$, that is, the Radon–Nikodym derivative of the Plancherel measure against $d\lambda$. The density is not intrinsic; the pair of an identification and a density is.</p>
+<p><strong>Remark (the constant of the classical formula is a density).</strong> Take $G=\mathbb{R}^n$ and identify $\widehat G$ with $\mathbb{R}^n$ by $\gamma_\zeta(x)=e^{i\zeta\cdot x}$. Then $d\gamma=(2\pi)^{-n}d\zeta$, so the density is $\varpi(\zeta)=(2\pi)^{-n}$, and this is the whole origin of the constant in the inversion formula. Take instead the identification $\zeta\mapsto e^{2\pi i\zeta\cdot x}$, used when the frequency is counted in periods rather than in radians; then $d\gamma=d\zeta$ and the density is one. <strong>The constant is not a property of the group; it is the Jacobian of the identification.</strong> Under a linear change of the frequency variable by $L\in GL(n,\mathbb{R})$ the density changes by $\lvert\det L\rvert$, and the identity survives because the same factor appears in the measure on $\widehat G$.</p>
+<p><strong>Remark (the compact case, for contrast).</strong> For $G=\mathbb{T}^n$ with Haar measure of total one, the dual is $\mathbb{Z}^n$ with counting measure and the density is one; the transform is the sequence of Fourier coefficients, and the identity reads $\sum_{k\in\mathbb{Z}^n}\lvert\hat f(k)\rvert^2=\int_{\mathbb{T}^n}\lvert f\rvert^2$. For $G=\mathbb{Z}^n$ with counting measure the dual is $\mathbb{T}^n$ and the density is again one, with the roles exchanged. In both cases the inversion is a series or an integral over a compact group, and in neither case does a constant appear. <strong>The $(2\pi)^n$ is the price of the additive line, and of nothing else.</strong></p>
+<h3 id="operator-valued-inversion">Operator-valued inversion</h3>
+<p><strong>Theorem (inversion, operator-valued).</strong> Let $F\in L^2(G;\mathcal{L}_2(H))$. Then $\hat F\in L^2(\widehat G;\mathcal{L}_2(H))$, the Hilbert–Schmidt identity</p>
+<p>$$
+\int_{\widehat G}\lVert\hat F(\gamma)\rVert_2^2\,d\gamma=\int_G\lVert F(x)\rVert_2^2\,dx
+$$</p>
+<p>holds, and the inversion formula</p>
+<p>$$
+F(x)=\int_{\widehat G}\hat F(\gamma)\,\gamma(x)\,d\gamma
+$$</p>
+<p>holds in the norm of $L^2(G;\mathcal{L}_2(H))$, that is, the integrals over an increasing family of compact subsets of $\widehat G$ converge to $F$ in that norm. If in addition $F$ is continuous, $F\in L^1$, and $\hat F\in L^1(\widehat G;\mathcal{L}_2(H))$, the formula holds pointwise in the Hilbert–Schmidt norm.</p>
+<p><em>Proof.</em> Apply the theorem of §<em>The Isometry and the Unitary</em> with $H$ replaced by the Hilbert space $\mathcal{L}_2(H)$: the Hilbert–Schmidt identity is that theorem, and the transform there is the weak transform of §<em>Operator-Valued Functions</em>, which agrees with the strong one by the proposition of that section. The pointwise statement is the scalar inversion theorem applied to each matrix entry $\langle F\varphi_j,\varphi_k\rangle$, followed by summation in the Hilbert–Schmidt norm, which is legitimate because $\hat F$ is integrable in that norm and the partial sums converge.</p>
+<p><strong>Remark (what replaces the pointwise product).</strong> In the scalar inversion the integrand is a number times a character. Here it is an operator times a character, and the order is fixed: the operator is on the left, which is the order in which the transform was defined. The two-sided version, with a character on each side of the operator, belongs to the biquaternion articles of the corpus, where the value algebra is not commutative and the placement carries information; on an abelian group with operator values the right placement is a different transform, not a variant of this one.</p>
+<h2 id="the-uniqueness-claim">The Uniqueness Claim</h2>
+<h3 id="the-computation-in-euclidean-space">The computation in Euclidean space</h3>
+<p><strong>The question.</strong> The transform is defined by an integral, and an integral depends on a choice of measure and of a sign in the exponent. The question of this section is how much of the transform is forced by the requirement that it turn translations into multiplications. The answer, on $\mathbb{R}^n$, is: all of it except a unimodular factor and a constant.</p>
+<p><strong>Notation.</strong> Let $\tau_y$ be the translation $(\tau_yf)(x)=f(x+y)$ and let $\mu_y$ be the multiplication $(\mu_yg)(\zeta)=\gamma_y(\zeta)g(\zeta)$ with $\gamma_y(\zeta)=e^{i\zeta\cdot y}$. With this convention $\mathcal{F}[\tau_yf](\zeta)=e^{i\zeta\cdot y}\mathcal{F}[f](\zeta)$, so the transform intertwines $\tau_y$ with $\mu_y$ and not with $\mu_{-y}$.</p>
+<p><strong>Proposition (the multiplication algebra is maximal abelian), quoted.</strong> For a $\sigma$-finite measure space, the algebra $L^\infty$ acting by multiplication on $L^2$ is a maximal abelian subalgebra of $\mathcal{L}(L^2)$: every bounded operator commuting with all multiplications is itself a multiplication. This is quoted from <em>A Course in Abstract Harmonic Analysis</em> of Folland.</p>
+<p><strong>Corollary (two transforms differ by a gauge).</strong> Let $G=\mathbb{R}^n$ and let $\mathcal{U}_1,\mathcal{U}_2:L^2(G)\to L^2(\widehat G)$ be unitaries with $\mathcal{U}_i\tau_y=\mu_y\mathcal{U}_i$ for every $y\in G$. Then $\mathcal{U}_2\mathcal{U}_1^{-1}$ is the multiplication by a unimodular function $m$ on $\widehat G$, and</p>
+<p>$$
+\mathcal{U}_2=M_m\,\mathcal{U}_1,\qquad \lvert m(\zeta)\rvert=1\ \text{for almost every}\ \zeta .
+$$</p>
+<p><em>Proof.</em> Put $V=\mathcal{U}_2\mathcal{U}_1^{-1}$, a unitary of $L^2(\widehat G)$. From the two intertwining relations, $V\mu_y=\mu_yV$ for every $y$. The $\mu_y$ generate the multiplication algebra of $L^\infty$ as a von Neumann algebra, by the spectral theorem applied to the commuting generators of the group; so $V$ commutes with that algebra, and by maximal abelian-ness $V=M_m$ for some $m\in L^\infty$. Unitarity of $V$ gives $\lvert m\rvert=1$ almost everywhere.</p>
+<p><strong>Remark (this is the claim, for $\mathbb{R}^n$).</strong> The corollary says that the transform is determined, among all unitaries intertwining translations with multiplications, by a unimodular function and a constant. The unimodular function is a unitary of the target space, in the precise sense that $g\mapsto mg$ is a unitary of $L^2(\widehat G)$; the constant is the normalisation. That is the content of the claim in the form stated in the Introduction, and on $\mathbb{R}^n$ it is proved.</p>
+<p><strong>Remark (why "up to a scalar" is false).</strong> Take $m(\zeta)=e^{i\lvert\zeta\rvert^2}$. Multiplication by $m$ is unitary, it commutes with every $\mu_y$, and it is not a constant. Hence there are unitaries intertwining translations with multiplications that differ from the standard transform by more than a scalar, and the statement "unique up to a scalar" is false as it stands. <strong>The freedom is a unimodular function, not a number</strong>, and a statement that omits the function omits the whole of the freedom.</p>
+<h3 id="the-quoted-statement">The quoted statement</h3>
+<p><strong>The claim, in the form used in this article, quoted and not proved.</strong> For a locally compact abelian group $G$, the transform is unique up to a unitary identification of the target and a choice of normalisation. This is quoted from <em>A Course in Abstract Harmonic Analysis</em> of Folland, and it is the one statement of the article that is not proved here. The proof on $\mathbb{R}^n$ uses the maximal abelian property of the multiplication algebra, which is available for every $\sigma$-finite measure space; what is not done here is the corresponding argument on a general $\widehat G$, where the algebra generated by the characters must be identified before the commutant can be computed. The gap is real and it is named rather than papered over.</p>
+<p><strong>Remark (what the claim does not say).</strong> It does not say that the Plancherel measure is unique up to a scaling by a function. The measure is unique up to a positive constant, by the uniqueness of Haar measure on $\widehat G$, and the constant is fixed by the Plancherel identity. It does not say that the transform is unique up to a change of the identification of $\widehat G$ with a model space; such a change alters the density by the Jacobian and is absorbed with it, but it is a change of coordinates and not a change of the transform. <strong>The only freedom is the unimodular factor and the normalisation, and neither of them is a change of measure or a map of the dual group:</strong> a unimodular factor is a pointwise phase, and a phase moves no point.</p>
+<p><strong>Remark (why the operator-valued case needs the scalar statement).</strong> The transform on $L^2(G;\mathcal{L}_2(H))$ is the scalar transform applied entrywise in a basis of $H$, and it therefore inherits whatever uniqueness the scalar transform has. What it does not inherit is a separate uniqueness statement about the placement of the operator; that question is settled by the definition and not by a theorem, and it is the subject of the biquaternion article <em>Three Kernel Placements of the Biquaternion Fourier Transform</em>.</p>
+<h2 id="summary">Summary</h2>
+<p>The value space of a function does not change the Fourier transform: the transform acts on the scalar coordinate and as the identity on the values, and therefore carries over from the scalar theory with the same formula, the same constant, and the same inversion. What it changes is the meaning of the limit and the availability of extra structure. The isometry holds in the norm of $H$ with the constant $(2\pi)^n$, for every $H$, and defines a unitary whose square is the reflection. For operator-valued functions the Hilbert–Schmidt norm gives the same identity with the same constant, and the product of $\mathcal{L}(H)$ turns convolution into operator multiplication, with the operator on the left. A positive-definite kernel stays a positive-definite kernel under the transform in both variables, its diagonal maps to the symbol of the kernel, and the two diagonals agree in integral with the factor $(2\pi)^n$ and in pointwise value only for the self-dual kernels. On a locally compact abelian group the same theorems hold with characters in place of exponentials and Haar measure in place of Lebesgue measure; the constant of the classical formula is the density of the Plancherel measure against the chosen identification of the dual, and it disappears under the identification that counts frequencies in periods.</p>
+<p>Three sentences carry the article. <strong>The transform is the identity on the values and the scalar transform on the coordinates.</strong> <strong>The constant is a density, and a density is a choice of coordinates on the dual group.</strong> <strong>The freedom in the transform is a unimodular function, which is a unitary of the target, together with a normalisation.</strong></p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$H$</td>
+<td>A separable complex Hilbert space, the space of values</td>
+</tr>
+<tr>
+<td>$\langle\cdot,\cdot\rangle$</td>
+<td>The inner product of $H$, linear in the second variable</td>
+</tr>
+<tr>
+<td>$\mathcal{L}(H)$</td>
+<td>The bounded operators on $H$</td>
+</tr>
+<tr>
+<td>$\mathcal{L}_2(H)$</td>
+<td>The Hilbert–Schmidt operators, with norm $\lVert\cdot\rVert_2$</td>
+</tr>
+<tr>
+<td>$T$</td>
+<td>A bounded operator on $H$, and the value of an operator-valued function</td>
+</tr>
+<tr>
+<td>$f,g$</td>
+<td>Functions with values in $H$</td>
+</tr>
+<tr>
+<td>$u,v,w_p$</td>
+<td>Vectors of $H$</td>
+</tr>
+<tr>
+<td>$\varphi_j$</td>
+<td>An orthonormal basis of $H$, indexed by $j$ and $k$</td>
+</tr>
+<tr>
+<td>$\mathcal{F}$</td>
+<td>The transform $\int e^{-i\zeta\cdot x}f(x)\,dx$ and its group analogue $\int f(x)\overline{\gamma(x)}\,dx$</td>
+</tr>
+<tr>
+<td>$\mathcal{U}$</td>
+<td>The unitary $(2\pi)^{-n/2}\mathcal{F}$, and its group analogue</td>
+</tr>
+<tr>
+<td>$\tau_y$</td>
+<td>The translation $(\tau_yf)(x)=f(x+y)$, chosen so that the transform intertwines it with $\mu_y$</td>
+</tr>
+<tr>
+<td>$\mu_y$</td>
+<td>Multiplication by the character $\gamma_y$</td>
+</tr>
+<tr>
+<td>$m$</td>
+<td>A unimodular function on the dual, the gauge between two transforms</td>
+</tr>
+<tr>
+<td>$K$</td>
+<td>A kernel on $X\times X$, and $K_x=K(\cdot,x)$</td>
+</tr>
+<tr>
+<td>$\widehat K$</td>
+<td>The transform of a kernel in both variables</td>
+</tr>
+<tr>
+<td>$\psi$</td>
+<td>A function whose rank-one kernel is used as an example</td>
+</tr>
+<tr>
+<td>$\Lambda$</td>
+<td>A bounded integrable test function used to prove positivity of $\widehat K$</td>
+</tr>
+<tr>
+<td>$X$</td>
+<td>The set on which a kernel is defined</td>
+</tr>
+<tr>
+<td>$G$</td>
+<td>A locally compact abelian group, written additively</td>
+</tr>
+<tr>
+<td>$\widehat G$</td>
+<td>The dual group of characters</td>
+</tr>
+<tr>
+<td>$L^\infty$</td>
+<td>The bounded measurable functions, acting on $L^2$ by multiplication</td>
+</tr>
+<tr>
+<td>$C_c^\infty$</td>
+<td>The smooth functions of compact support</td>
+</tr>
+<tr>
+<td>$GL(n,\mathbb{R})$</td>
+<td>The invertible real $n\times n$ matrices, used for a change of frequency coordinates</td>
+</tr>
+<tr>
+<td>$N$</td>
+<td>The number of points in a finite family, in the definition of a positive-definite kernel</td>
+</tr>
+<tr>
+<td>$\mathbb{Z}$</td>
+<td>The integers, the dual of the circle group</td>
+</tr>
+<tr>
+<td>$\gamma$</td>
+<td>A character, an element of $\widehat G$; $\gamma_\zeta(x)=e^{i\zeta\cdot x}$ for $G=\mathbb{R}^n$</td>
+</tr>
+<tr>
+<td>$dx$</td>
+<td>Haar measure on $G$</td>
+</tr>
+<tr>
+<td>$d\gamma$</td>
+<td>The Plancherel measure on $\widehat G$</td>
+</tr>
+<tr>
+<td>$\varpi$</td>
+<td>The Plancherel density, $d\gamma=\varpi\,d\lambda$, where $d\lambda$ is the measure of a chosen identification of $\widehat G$</td>
+</tr>
+<tr>
+<td>$T_K$</td>
+<td>The operator with kernel $K$</td>
+</tr>
+<tr>
+<td>$\mathbb{T}$</td>
+<td>The circle group, the values of a character</td>
+</tr>
+<tr>
+<td>$\mathcal{F}^{-1}$</td>
+<td>The inverse transform $(2\pi)^{-n}\int e^{i\zeta\cdot x}g(\zeta)\,d\zeta$</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li><em>The Inverse Fourier Transform of a Symbol</em>, for the scalar Plancherel identity with its constant, which is the engine of every proof in §<em>The Isometry and the Unitary</em> and in §<em>Operator-Valued Functions</em>.</li>
+<li><em>The Fourier Transform and the Symbol of a Differential Operator</em>, for the transform of a constant-coefficient operator, which is the case in which the value space is a finite-dimensional algebra rather than a Hilbert space.</li>
+<li><em>The Fourier Transform on a Gelfand Triple</em>, for the placement of the transform in a triple of test spaces, which this article does not attempt.</li>
+<li><em>The Fourier Operator</em>, for the general inversion formula and the two-sided reading of the transform, which is the scalar ancestor of §<em>Inversion on a Locally Compact Abelian Group</em>.</li>
+<li><em>Convolution on a Group</em>, for the convolution of functions on a group, used once here in the operator-valued convolution theorem.</li>
+<li><em>Locally Compact Groups and Haar Measure</em>, for the existence and uniqueness of Haar measure, which the Plancherel measure presupposes.</li>
+<li><em>Pontryagin Duality</em>, for the dual group and the identification of $\widehat G$ with a model space, which is what supplies the density.</li>
+<li><em>Reproducing Kernel Hilbert Spaces</em>, for positive-definite kernels, the Kolmogorov decomposition, and the reproducing property used in §<em>Kernels and Their Transforms</em>.</li>
+<li><em>Unitary Representations and the Plancherel Theorem</em>, for the non-abelian case, where the dual is not a group and nothing here extends without new hypotheses.</li>
+<li>Walter Rudin, <em>Real and Complex Analysis</em> (3rd ed., McGraw-Hill, 1987), for the Plancherel theorem on $\mathbb{R}^n$ in the normalisation used throughout the corpus.</li>
+<li>Gerald B. Folland, <em>A Course in Abstract Harmonic Analysis</em> (2nd ed., CRC Press, 2015), for the Plancherel theorem on a locally compact abelian group, for the maximal abelian property of $L^\infty$, and for the uniqueness statement quoted in §<em>The Uniqueness Claim</em>.</li>
+<li>Barry Simon, <em>Trace Ideals and Their Applications</em> (2nd ed., American Mathematical Society, 2005), for the Hilbert–Schmidt class, for the trace of a positive operator computed in an orthonormal basis, and for the trace of an operator with continuous kernel.</li>
+<li>Masamichi Takesaki, <em>Theory of Operator Algebras I</em> (Springer, 1979), for the commutant of a multiplication algebra and the von Neumann algebra generated by a group of multiplications.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

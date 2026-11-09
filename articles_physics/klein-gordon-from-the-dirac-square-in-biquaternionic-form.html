@@ -105,7 +105,7 @@ $$</p>
 \tilde\nabla^2 = \left(\partial^2/\partial R_t^2 - \lvert\vec\nabla\rvert^2\right)e_t + 2\,\partial/\partial R_t\,\vec\nabla ,
 \qquad \lvert\vec\nabla\rvert^2 = \Delta ,
 $$</p>
-<p>so $\tilde\nabla^2 \neq \Box$. The spacelike cross terms do cancel, because the three vector units anticommute pairwise and $\vec\nabla\vec\nabla = -\lvert\vec\nabla\rvert^2e_t$ has no vector remainder; the cross term between the timelike direction and the vector part does not, because the timelike direction is carried by the unit $e_t$, which commutes with every $\vec e_k$ instead of anticommuting with it. The conjugate removes that remainder: $\tilde\nabla^\natural$ enters with $-\vec\nabla$, the two mixed terms $-\partial/\partial R_t\,\vec\nabla$ and $+\vec\nabla\,\partial/\partial R_t$ cancel, and $\tilde\nabla\tilde\nabla^\natural$ reduces to $(\partial^2/\partial R_t^2 + \lvert\vec\nabla\rvert^2)e_t$.</p>
+<p>so $\tilde\nabla^2 \neq \Box$. The spacelike cross terms do cancel, because the three vector units anticommute pairwise and $\vec\nabla\vec\nabla = -\lvert\vec\nabla\rvert^2e_t$ has no vector remainder; the cross term between the timelike direction and the vector part does not, because the timelike direction is carried by the unit $e_t$, which commutes with every $\vec e_\eta$ instead of anticommuting with it. The conjugate removes that remainder: $\tilde\nabla^\natural$ enters with $-\vec\nabla$, the two mixed terms $-\partial/\partial R_t\,\vec\nabla$ and $+\vec\nabla\,\partial/\partial R_t$ cancel, and $\tilde\nabla\tilde\nabla^\natural$ reduces to $(\partial^2/\partial R_t^2 + \lvert\vec\nabla\rvert^2)e_t$.</p>
 <p>The conjugate is therefore what completes the square, and the two facts it uses are properties of the basis: $\vec e_x,\vec e_y,\vec e_z$ anticommute pairwise, and $e_t$ commutes with all three. Both are read from the multiplication table, and no second structure is needed. The root of $\Box$ inside the algebra is therefore the pair $(\tilde\nabla,\tilde\nabla^\natural)$, never one gradient alone. No array and no frame enters the computation: a component check in a chosen basis must return the same element, because the basis is not part of the operator, and the reduction below stays with the operator.</p>
 <h2 id="the-chiral-pair-and-the-two-reductions">The Chiral Pair and the Two Reductions</h2>
 <p>The biquaternionic equation is not a single first-order equation in the algebra but the pair</p>
@@ -141,7 +141,7 @@ $$</p>
 <p>$$
 \tilde{\nabla}\tilde{\nabla}^{\natural} = \partial^2/\partial R_t^2 + \partial^2/\partial R_x^2 + \partial^2/\partial R_y^2 + \partial^2/\partial R_z^2 = \Box .
 $$</p>
-<p>The cancellation of the mixed terms uses the quaternion multiplication table twice: the spacelike ones cancel because $\{\vec e_j,\vec e_k\} = 0$ for $j\neq k$, the timelike ones because the scalar part commutes with the vector part. This is why $\Box$ is scalar and central, and why it acts on a biquaternion field coefficient by coefficient,</p>
+<p>The cancellation of the mixed terms uses the quaternion multiplication table twice: the spacelike ones cancel because $\{\vec e_j,\vec e_\eta\} = 0$ for $j\neq k$, the timelike ones because the scalar part commutes with the vector part. This is why $\Box$ is scalar and central, and why it acts on a biquaternion field coefficient by coefficient,</p>
 <p>$$
 \Box\tilde{Ξ} = \sum_{\nu\in\{t,x,y,z\}}(\BoxΞ_\nu)\,e_\nu ,
 $$</p>
@@ -173,9 +173,9 @@ $$</p>
 <p>The companion article on the Klein–Gordon equation proves an obstruction that appears, at first sight, to contradict the reduction just performed. Its theorem is that the scalar operator $\Box - k_m^{2}$ does not factor into first-order <strong>scalar</strong> operators inside $\mathbb{B}$. For constant biquaternion coefficients,</p>
 <p>$$
 (\tilde{\nabla}^{\natural} + A)(\tilde{\nabla} + B)
-= \Box + (A + B)\,\partial/\partial R_t + \sum_{k=x,y,z}\left(A\vec e_k - \vec e_k B\right)\partial/\partial R_k + AB,
+= \Box + (A + B)\,\partial/\partial R_t + \sum_{\eta=x,y,z}\left(A\vec e_\eta - \vec e_\eta B\right)\partial/\partial R_\eta + AB,
 $$</p>
-<p>so cancelling the first-order terms requires $B = -A$ together with $A\vec e_k + \vec e_k A = 0$ for $k = x,y,z$. An element that anticommutes with all three quaternion units must vanish, and the reason is visible one unit at a time: the condition for $\vec e_k$ removes the scalar coefficient together with the coefficient of $\vec e_k$, so the three conditions hold together only on the zero element. With $A = 0$ the constant term is $AB = -A^2 = 0$, which cannot equal $-k_m^{2}$ for a finite mass, $k_m\neq0$, and no scalar factorisation exists.</p>
+<p>so cancelling the first-order terms requires $B = -A$ together with $A\vec e_\eta + \vec e_\eta A = 0$ for $\eta = x,y,z$. An element that anticommutes with all three quaternion units must vanish, and the reason is visible one unit at a time: the condition for $\vec e_\eta$ removes the scalar coefficient together with the coefficient of $\vec e_\eta$, so the three conditions hold together only on the zero element. With $A = 0$ the constant term is $AB = -A^2 = 0$, which cannot equal $-k_m^{2}$ for a finite mass, $k_m\neq0$, and no scalar factorisation exists.</p>
 <p>The two results are consistent, and their consistency is the whole point. The Dirac square root is <strong>not</strong> a scalar factor of the form $\tilde{\nabla} + A$ multiplying another scalar factor. It is an operator on the pair of chiral halves. On the pair the equation is two equations for two halves,</p>
 <p>$$
 \tilde\nabla\tilde{Ξ}_{\mathrm{sp},R}=k_m\tilde{Ξ}_{\mathrm{sp},L},
@@ -187,7 +187,7 @@ $$</p>
 \boxed{\;(\Box-k_m^{2})\tilde{Ξ}_{\mathrm{sp},L}=0,\qquad(\Box-k_m^{2})\tilde{Ξ}_{\mathrm{sp},R}=0\;},
 $$</p>
 <p>one equation per half, the two mass-gradient terms cancelling because the mass passes through the gradients.</p>
-<p>Equivalently, the pair is the statement that each gradient carries one half into $k_m$ times the other, and composing a line with the conjugate of the other returns $k_m^{2}$ times that half, which is $(\Box-k_m^{2})\tilde{Ξ}_{\mathrm{sp}} = 0$ read on each half. This is the operator-valued square root: no scalar $\tilde\nabla + A$ works, as the obstruction showed, but the pair of lines built from the conjugate pair does, because each line composed with its partner is the central $\Box$ on its half; the composition of the two mass-shifted maps is the central $\Box-k_m^{2}$ on each half. The obstruction identifies precisely the missing ingredient: a scalar square root would need an element anticommuting with all three vector units $\vec e_k$, $k=x,y,z$, and no biquaternion does; an operator-valued square root needs only that the <strong>two different gradients cancel each other's vector parts</strong>, which the conjugate pair does. The spin-$0$ no-go and the operator-valued square root are therefore one obstruction read two ways. This is what it means, in this framework, that the square root lives in the pair and not in the centre: the scalar field lives in $\mathbb{B}_{C}$, and the square root requires the exchange of two halves that only the pair carries.</p>
+<p>Equivalently, the pair is the statement that each gradient carries one half into $k_m$ times the other, and composing a line with the conjugate of the other returns $k_m^{2}$ times that half, which is $(\Box-k_m^{2})\tilde{Ξ}_{\mathrm{sp}} = 0$ read on each half. This is the operator-valued square root: no scalar $\tilde\nabla + A$ works, as the obstruction showed, but the pair of lines built from the conjugate pair does, because each line composed with its partner is the central $\Box$ on its half; the composition of the two mass-shifted maps is the central $\Box-k_m^{2}$ on each half. The obstruction identifies precisely the missing ingredient: a scalar square root would need an element anticommuting with all three vector units $\vec e_\eta$, $\eta=x,y,z$, and no biquaternion does; an operator-valued square root needs only that the <strong>two different gradients cancel each other's vector parts</strong>, which the conjugate pair does. The spin-$0$ no-go and the operator-valued square root are therefore one obstruction read two ways. This is what it means, in this framework, that the square root lives in the pair and not in the centre: the scalar field lives in $\mathbb{B}_{C}$, and the square root requires the exchange of two halves that only the pair carries.</p>
 <h2 id="the-square-on-the-chiral-pair">The Square on the Chiral Pair</h2>
 <p>The pair reading is written on the ordered pair of elements. Write $\tilde{Ξ}_{\mathrm{sp}} = (\tilde{Ξ}_{\mathrm{sp},L},\tilde{Ξ}_{\mathrm{sp},R})$ and write the two lines,</p>
 <p>$$
@@ -227,7 +227,7 @@ $$</p>
 $$</p>
 <p>with $\vec k_\Phi = k_1\vec e_x + k_2\vec e_y + k_3\vec e_z$ and $\vec r = r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z$. Here $\vec k_\Phi^2$ abbreviates the sum $k_1^2+k_2^2+k_3^2$ of the squares of the components, not the quaternion product, which is its negative, $\vec k_\Phi\,\vec k_\Phi = -\vec k_\Phi^2e_t$. The phase is $\mathrm{Sc}(\tilde P_{\Phi}\tilde{R}_\Phi^{\natural}) = \vec k_\Phi\cdot\vec r - \omega r'_t/c$, the scalar part of the product with the conjugate four-position. The exponent $i\,\mathrm{Sc}(\tilde P_{\Phi}\tilde{R}_\Phi^{\natural})$ is a purely imaginary central element, so the exponential is central and differentiates as an ordinary exponential. On a plane wave,</p>
 <p>$$
-\partial/\partial r'_t \longmapsto -i\omega/c, \qquad \partial/\partial r_k\longmapsto ik_k, \qquad \partial/\partial R_t \longmapsto -\frac{\omega}{c},
+\partial/\partial r'_t \longmapsto -i\omega/c, \qquad \partial/\partial r_\eta\longmapsto ik_k, \qquad \partial/\partial R_t \longmapsto -\frac{\omega}{c},
 $$</p>
 <p>and therefore</p>
 <p>$$
@@ -350,7 +350,7 @@ $$</p>
 </tr>
 <tr>
 <td>$e_t = 1, \vec e_x, \vec e_y, \vec e_z$</td>
-<td>Quaternion basis, $\vec e_k^2 = -e_t$</td>
+<td>Quaternion basis, $\vec e_\eta^2 = -e_t$</td>
 </tr>
 <tr>
 <td>$i$</td>
@@ -369,7 +369,7 @@ $$</p>
 <td>Central grading of the complexified algebra, outside $\mathbb{B}$; the signs $-1$ and $+1$ of the pair are its image</td>
 </tr>
 <tr>
-<td>$\tilde{\nabla} = e_t\partial/\partial R_t + \sum_{k=x,y,z}\vec e_k\,\partial/\partial R_k$</td>
+<td>$\tilde{\nabla} = e_t\partial/\partial R_t + \sum_{\eta=x,y,z}\vec e_\eta\,\partial/\partial R_\eta$</td>
 <td>Biquaternionic gradient, the one-sided Dirac operator, acting by multiplication on the left</td>
 </tr>
 <tr>
@@ -377,7 +377,7 @@ $$</p>
 <td>Quaternion conjugate gradient</td>
 </tr>
 <tr>
-<td>$\vec\nabla = \sum_{k=x,y,z}\vec e_k\,\partial/\partial R_k$</td>
+<td>$\vec\nabla = \sum_{\eta=x,y,z}\vec e_\eta\,\partial/\partial R_\eta$</td>
 <td>Vector part of the gradient, $\lvert\vec\nabla\rvert^2 = \Delta$</td>
 </tr>
 <tr>

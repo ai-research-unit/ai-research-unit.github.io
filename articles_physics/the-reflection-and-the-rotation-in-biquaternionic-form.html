@@ -138,13 +138,13 @@ A unit vector is its own inverse up to sign: $u^2=\epsilon(u)I_4$ makes the inve
 $$
 w = q_t e_t + i q_x\vec e_x + i q_y\vec e_y + i q_z\vec e_z ,
 \qquad
-iR_{\mathrm{axf},\vec e_x}\times(\text{image of } w) = q_t\, iR_{\mathrm{axf},\vec e_x} + \sum_k q_k\, iL_{\mathrm{axf},\vec e_k}R_{\mathrm{axf},\vec e_y} ,
+iR_{\mathrm{axf},\vec e_x}\times(\text{image of } w) = q_t\, iR_{\mathrm{axf},\vec e_x} + \sum_\eta q_\eta\, iL_{\mathrm{axf},\vec e_\eta}R_{\mathrm{axf},\vec e_y} ,
 $$
 and a trivector is the frame basis operator applied after the image of an element of $\mathbb{B}_{\Phi}$, up to a sign that depends on the orientation chosen for each trivector.</p>
 <p>The decisive consequence concerns the <strong>metric</strong>. The biquaternion norm is the sum of the four squared coefficients, and a coefficient $i$ contributes $i^2=-1$. On the Hermitian basis $(e_t,i\vec e_x,i\vec e_y,i\vec e_z)$ it therefore takes the four values $(+1,-1,-1,-1)$, which is the plain weight $\varepsilon$; on the material basis $(ie_t,\vec e_x,\vec e_y,\vec e_z)$ it takes $(-1,+1,+1,+1)$, which is the interval of the material sector. The minus signs of the first list are those of $i^2$ on the three spatial directions, and nothing else. The sign vector of the generators is therefore not an independent convention laid on top of the algebra: <strong>it is the biquaternion norm of the Hermitian sector</strong>, and the interval of the material sector is its negative. The material basis carries $(-1,+1,+1,+1)$ and the generators, which are Hermitian objects, carry the weight $\varepsilon$, which is its negative; the two differ by the sign that distinguishes the two sectors, and neither could consistently be anything else.</p>
 <p>The same fact appears in the square of a vector. For $w$ as above,
 $$
-\Bigl(q_t\, iR_{\mathrm{axf},\vec e_x} + \sum_k q_k\, iL_{\mathrm{axf},\vec e_k}R_{\mathrm{axf},\vec e_y}\Bigr)^2
+\Bigl(q_t\, iR_{\mathrm{axf},\vec e_x} + \sum_\eta q_\eta\, iL_{\mathrm{axf},\vec e_\eta}R_{\mathrm{axf},\vec e_y}\Bigr)^2
 = \bigl(q_t^2 - q_x^2 - q_y^2 - q_z^2\bigr)\,I_4 ,
 $$
 with no relative sign between the square of the basis operator and the biquaternion norm. The absence of that sign is the signature showing through.</p>
@@ -155,7 +155,7 @@ $$
 \boxed{\;iR_{\mathrm{axf},\vec e_x}\times\bigl(\text{image of }\tilde{Q}\bigr)\times iR_{\mathrm{axf},\vec e_x} = \text{image of }\bar{\tilde{Q}}\;}
 $$
 where $\bar{\tilde Q}$ is the conjugation of the coefficients, $i\mapsto -i$, with the units $e_t,\vec e_x,\vec e_y,\vec e_z$ fixed. That map fixes $\mathbb{B}_{H}$ and negates $\mathbb{B}_{iH}$, so the identity says that <strong>conjugation by the frame basis operator is the bar</strong>: it is the spacetime-side avatar of the split into the quaternion sector and its imaginary multiple. It preserves each of the two sectors, because it commutes with the Hermitian conjugation whose fixed spaces they are; the sector exchange is multiplication by $i$, not a conjugation.</p>
-<p>Among the four generators, the frame basis operator is unique in being the bar itself. Conjugation by any of the four reverses the imaginary basis operator, since the image of $i$ is $L_{\mathrm{axf},e_t}R_{\mathrm{axf},\vec e_z}$ and every generator anticommutes with it, so all four carry the scalar imaginary $i$ to $-i$ and act on the biquaternions as conjugate-linear maps rather than $\mathbb{C}$-linear ones. Only the time one leaves the quaternion units alone. Conjugation by a spatial generator is the bar composed with a sign change of two units: it fixes $\vec e_k$ and negates the two units $\vec e_j$ with $j\neq k$, and the bar then flips the imaginary multiples the other way round. The spatial generators reflect the quaternion units; the time one conjugates them without a reflection.</p>
+<p>Among the four generators, the frame basis operator is unique in being the bar itself. Conjugation by any of the four reverses the imaginary basis operator, since the image of $i$ is $L_{\mathrm{axf},e_t}R_{\mathrm{axf},\vec e_z}$ and every generator anticommutes with it, so all four carry the scalar imaginary $i$ to $-i$ and act on the biquaternions as conjugate-linear maps rather than $\mathbb{C}$-linear ones. Only the time one leaves the quaternion units alone. Conjugation by a spatial generator is the bar composed with a sign change of two units: it fixes $\vec e_\eta$ and negates the two units $\vec e_j$ with $j\neq k$, and the bar then flips the imaginary multiples the other way round. The spatial generators reflect the quaternion units; the time one conjugates them without a reflection.</p>
 <p>The frame basis operator completes the reading of the three conjugations of $\mathbb{B}$, and the three can be written together. Reversal, $\mathrm{rev}$, is the anti-automorphism that reverses the order of the factors in a product: on an array it is the transpose, and on the biquaternions it is quaternion conjugation. The image does not carry one of the two into the other, because it sends the scalar $i$ to a right multiplication rather than to a scalar, and the frame basis operator is exactly the difference. Of the three conjugations, the bar and the quaternion conjugation each carry one factor of the frame, and the composite carries none:
 $$
 \text{image of }\bar{\tilde Q}=iR_{\mathrm{axf},\vec e_x}\times\bigl(\text{image of }\tilde{Q}\bigr)\times iR_{\mathrm{axf},\vec e_x},
@@ -173,7 +173,7 @@ The Hermitian conjugation is therefore the bar composed with the quaternion conj
 $$
 SL(2,\mathbb{C}) = \{\tilde U_{\mathrm{lor}}\in\mathbb{B} : \langle\tilde U_{\mathrm{lor}}\rangle_{\natural} = 1\},
 $$
-a group of real dimension six, the double cover of the restricted Lorentz group. The sign of the norm is the time orientation: an even unit element with $\langle\tilde U\rangle_{\natural}=+1$ is orthochronous, and one with $\langle\tilde U\rangle_{\natural}=-1$ reverses time, which is why the group defined here is the restricted one. Its Lie algebra is spanned by the six bivectors, the images of the six directions $\vec e_k$ and $i\vec e_k$, $k=1,2,3$. This is the space in which the rotors of the relativity articles live and act: on four-vectors in <em>Relativistic Mechanics in Biquaternionic Form</em> and <em>Exercise: Boosting a Four-Velocity and Rapidity Composition</em>, on the elements in <em>The Spinor Module in Biquaternionic Form and Its Lorentz Action</em>, on states in <em>Quantum Physics in Biquaternionic Form</em>, and in the composition of rotations of <em>Exercise: The Thomas Precession</em>.</p>
+a group of real dimension six, the double cover of the restricted Lorentz group. The sign of the norm is the time orientation: an even unit element with $\langle\tilde U\rangle_{\natural}=+1$ is orthochronous, and one with $\langle\tilde U\rangle_{\natural}=-1$ reverses time, which is why the group defined here is the restricted one. Its Lie algebra is spanned by the six bivectors, the images of the six directions $\vec e_\eta$ and $i\vec e_\eta$, $\eta = 1, 2, 3$. This is the space in which the rotors of the relativity articles live and act: on four-vectors in <em>Relativistic Mechanics in Biquaternionic Form</em> and <em>Exercise: Boosting a Four-Velocity and Rapidity Composition</em>, on the elements in <em>The Spinor Module in Biquaternionic Form and Its Lorentz Action</em>, on states in <em>Quantum Physics in Biquaternionic Form</em>, and in the composition of rotations of <em>Exercise: The Thomas Precession</em>.</p>
 <p>Two subfamilies are worth separating, because the series uses them differently:</p>
 <div class="table-scroll"><table>
 <thead>
@@ -319,11 +319,11 @@ $$
 the time axis boosted by <strong>half</strong> the rapidity. The boost is therefore the reflection in the resting time axis composed with the reflection in the moving one, and the half is what makes the two rapidities add to $\theta_{\mathrm{rpd}}$.</p>
 <p>A spatial rotation in the plane spanned by two spatial generators is $iL_{\mathrm{axf},\vec e_j}R_{\mathrm{axf},\vec e_y}\,v$ with the vector basis operator
 $$
-v = -\cos\frac{\theta}{2}\,iL_{\mathrm{axf},\vec e_j}R_{\mathrm{axf},\vec e_y} + \sin\frac{\theta}{2}\,iL_{\mathrm{axf},\vec e_k}R_{\mathrm{axf},\vec e_y} , \qquad v^2 = -I_4 ,
+v = -\cos\frac{\theta}{2}\,iL_{\mathrm{axf},\vec e_j}R_{\mathrm{axf},\vec e_y} + \sin\frac{\theta}{2}\,iL_{\mathrm{axf},\vec e_\eta}R_{\mathrm{axf},\vec e_y} , \qquad v^2 = -I_4 ,
 $$
 so that
 $$
-iL_{\mathrm{axf},\vec e_j}R_{\mathrm{axf},\vec e_y}\,v = \cos\frac{\theta}{2}\,I_4 + \sin\frac{\theta}{2}\,iL_{\mathrm{axf},\vec e_j}R_{\mathrm{axf},\vec e_y}\,iL_{\mathrm{axf},\vec e_k}R_{\mathrm{axf},\vec e_y} .
+iL_{\mathrm{axf},\vec e_j}R_{\mathrm{axf},\vec e_y}\,v = \cos\frac{\theta}{2}\,I_4 + \sin\frac{\theta}{2}\,iL_{\mathrm{axf},\vec e_j}R_{\mathrm{axf},\vec e_y}\,iL_{\mathrm{axf},\vec e_\eta}R_{\mathrm{axf},\vec e_y} .
 $$
 For the plane $(x,y)$ the right-hand side is the image of $\cos\frac{\theta}{2}e_t+\sin\frac{\theta}{2}\vec e_z$, the rotation about $\vec e_z$, and the other coordinate planes follow by relabelling. A generic Lorentz transformation fixes no plane at all, so it needs four reflections, the maximum.</p>
 <p>The answer to the question is therefore: <strong>pure boosts and pure spatial rotations are products of two reflections, and so is a boost with a rotation in the plane of the boost; a generic Lorentz transformation is not, and needs four.</strong> The two-reflection class is a proper submanifold of $SL(2,\mathbb{C})$, cut out by the vanishing of that determinant. The product of two non-collinear boosts stays inside it — the Thomas–Wigner rotation of a composed boost lies in the plane of the two boosts — so what leaves the class is a boost combined with a rotation about the boost axis, that is, a boost and a rotation in orthogonal planes.</p>
@@ -464,7 +464,7 @@ A basis operator that commutes with the three generators multiplies each of the 
 </tr>
 <tr>
 <td>the four frame basis operators</td>
-<td>The generator basis operators: $iR_{\mathrm{axf},\vec e_x}$, and $iL_{\mathrm{axf},\vec e_k}R_{\mathrm{axf},\vec e_y}$ for $k=1,2,3$</td>
+<td>The generator basis operators: $iR_{\mathrm{axf},\vec e_x}$, and $iL_{\mathrm{axf},\vec e_\eta}R_{\mathrm{axf},\vec e_y}$ for $\eta = 1, 2, 3$</td>
 </tr>
 <tr>
 <td>$\omega = iR_{\mathrm{axf},\vec e_x}\,iL_{\mathrm{axf},\vec e_x}R_{\mathrm{axf},\vec e_y}\,iL_{\mathrm{axf},\vec e_y}R_{\mathrm{axf},\vec e_y}\,iL_{\mathrm{axf},\vec e_z}R_{\mathrm{axf},\vec e_y} = -L_{\mathrm{axf},e_t}R_{\mathrm{axf},\vec e_z}$</td>

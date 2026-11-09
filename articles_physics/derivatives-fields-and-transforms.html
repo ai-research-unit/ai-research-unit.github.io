@@ -134,7 +134,7 @@
 </table></div>
 <h2 id="the-gradient-and-the-four-products">The Gradient and the Four Products</h2>
 <h3 id="the-derivative-conventions">The Derivative Conventions</h3>
-<p>The corpus writes a subscript as a component or a label, never as a derivative; every partial derivative is written with $\partial$ and its variable named in full; and the prime is reserved for the imaginary coordinate of a complex coefficient. The coordinate derivative is $\partial/\partial R_\mu$. On the material sector, where $Q_t=i r'_t$ and $Q_k=q_k$, the time derivative is the <strong>imaginary-time derivative</strong>,</p>
+<p>The corpus writes a subscript as a component or a label, never as a derivative; every partial derivative is written with $\partial$ and its variable named in full; and the prime is reserved for the imaginary coordinate of a complex coefficient. The coordinate derivative is $\partial/\partial R_\mu$. On the material sector, where $Q_t=i r'_t$ and $Q_\eta=q_\eta$, the time derivative is the <strong>imaginary-time derivative</strong>,</p>
 <p>$$
 \frac{\partial}{\partial R_t}=-i\frac{\partial}{\partial r'_t},
 $$</p>
@@ -144,7 +144,7 @@ $$</p>
 \tilde\nabla=\sum_{\mu\in\{t,x,y,z\}}e_\mu\frac{\partial}{\partial R_\mu},\qquad
 \tilde\nabla^{\natural}=\sum_{\mu\in\{t,x,y,z\}}\varepsilon_\mu e_\mu\frac{\partial}{\partial R_\mu},
 $$</p>
-<p>with $\varepsilon=(1,-1,-1,-1)$. The coefficients are invariant under the conjugations — the marks act on the units at fixed coordinate, not on the derivative symbol — so the coefficientwise conjugation leaves the gradient unchanged, and the Hermitian conjugation acts as the quaternion conjugation: $\tilde\nabla^{*}=\tilde\nabla^{\natural}$. The spatial part is written $\nabla=\sum_k\vec e_k\,\partial/\partial R_k$, with divergence, gradient and curl.</p>
+<p>with $\varepsilon=(1,-1,-1,-1)$. The coefficients are invariant under the conjugations — the marks act on the units at fixed coordinate, not on the derivative symbol — so the coefficientwise conjugation leaves the gradient unchanged, and the Hermitian conjugation acts as the quaternion conjugation: $\tilde\nabla^{*}=\tilde\nabla^{\natural}$. The spatial part is written $\nabla=\sum_\eta\vec e_\eta\,\partial/\partial R_\eta$, with divergence, gradient and curl.</p>
 <h3 id="the-four-products">The Four Products</h3>
 <p>The four general products are the four settings of one rule: the plain product, the quaternionic bilinear product, the plain sesquilinear product and the quaternionic sesquilinear product. In the category they carry the names composition, causality, probability and gauge; on the gradient they are four ways of differentiating the element-valued field $\tilde Q_{\mathrm f}=Q_{\mathrm{f}r_t}e_t+\vec Q_{\mathrm f}$.</p>
 <p>$$
@@ -264,14 +264,14 @@ $$</p>
 <p>The discrete transform replaces the integral by a sum over $N$ samples, with kernel $W_N(n,\ell)=\exp(-2\pi\rho n\ell/N)$, and the inverse carries the factor $1/N$. The inversion, the factorization and the convolution theorem have the same shape. The sampling theorem and the periodization formula relate the discrete and continuous transforms; both are componentwise, because the kernel is the ordinary complex kernel in the direction $\rho$. The discrete article adds the $\mathrm Z$ transform, whose region of convergence is read coefficientwise.</p>
 <h3 id="the-vanishing-norm-and-the-measure">The Vanishing Norm and the Measure</h3>
 <p>Two features of the transform are genuinely biquaternionic. The first is the <strong>vanishing norm</strong>: a function may take zero-divisor values on a set of positive measure, and the transform is then not guaranteed to be invertible. The transform is invertible on functions whose values have non-vanishing norm; restricting to $\mathbb{B}_{H}$ is sufficient, and on $\mathbb{B}_{\Phi}$ the transform is invertible exactly for values off the cone, but the precise condition for a general function that takes zero-divisor values on a set of positive measure is open.</p>
-<p>The second is the <strong>positivity of the transform of a measure</strong>. For a finite positive measure $\mu$, a pure root $\rho$ and central coefficients $A_k$, the transform $G(\omega)=\int\xi_\omega\,d\mu$, with $\xi_\omega$ the kernel at frequency $\omega$, satisfies the quadratic identity</p>
+<p>The second is the <strong>positivity of the transform of a measure</strong>. For a finite positive measure $\mu$, a pure root $\rho$ and central coefficients $A_\eta$, the transform $G(\omega)=\int\xi_\omega\,d\mu$, with $\xi_\omega$ the kernel at frequency $\omega$, satisfies the quadratic identity</p>
 <p>$$
 \sum_{k,l}A_kA_l\,G(\omega_k-\omega_l)=\int\langle Z\rangle_{\natural}\,d\mu,\qquad
 Z=\sum_kA_k\xi_{\omega_k},
 $$</p>
 <p>with the biquaternion norm on the right. At $A_1=i$ the left-hand side is $i^2\mu(\mathbb{R}^n)e_t=-\mu(\mathbb{R}^n)e_t$, negative for every non-zero measure, because $\langle i\rangle_{\natural}=-1$: the norm pairing is not positive. With the Hermitian form $\langle\tilde Q_1,\tilde Q_2\rangle_{*}=\mathrm{Sc}(\tilde Q_1\tilde Q_2^{*})$ and a root with $\rho^{*}=-\rho$, the quadratic form satisfies</p>
 <p>$$
-\sum_{k,l}A_k\,G(\omega_k-\omega_l)\,A_l^{*}=\int ZZ^{*}d\mu
+\sum_{k,l}A_\eta\,G(\omega_k-\omega_l)\,A_l^{*}=\int ZZ^{*}d\mu
 $$</p>
 <p>and is positive definite exactly for the <strong>degenerate</strong> roots $\pm i$ and $\pm\vec u_\mu$. For a genuinely complex root the identity fails, because $\xi_\omega^{*}\neq\xi_{-\omega}$, and the positivity fails with it. The two failures are different: the norm failure is root-independent and belongs to the indefinite interval; the positivity failure is root-dependent and belongs to the character.</p>
 <h2 id="physical-interpretations">Physical Interpretations</h2>
@@ -364,7 +364,7 @@ $$</p>
 <td>Spatial gradient, divergence and curl</td>
 </tr>
 <tr>
-<td>$\Delta_Q=\sum_k\partial^2/\partial R_k^2$</td>
+<td>$\Delta_Q=\sum_\eta\partial^2/\partial R_\eta^2$</td>
 <td>Laplacian in the three vector coordinates</td>
 </tr>
 <tr>

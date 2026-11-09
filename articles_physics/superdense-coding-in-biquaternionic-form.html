@@ -71,7 +71,7 @@
         <h1 id="superdense-coding-in-biquaternionic-form"><strong>Superdense Coding in Biquaternionic Form</strong></h1>
 <h2 id="introduction">Introduction</h2>
 <p>Superdense coding is the protocol by which one qubit, sent from Alice to Bob, carries two classical bits, provided the two parties share a maximally entangled pair beforehand. It is the operational proof that entanglement is a resource for classical communication: a single qubit can transmit at most one bit on its own, and the shared entanglement doubles that. The protocol is the dual of quantum teleportation, which uses two classical bits and a shared entangled pair to transmit one qubit.</p>
-<p>In the biquaternion framework the protocol has an exceptionally clean form. The shared resource is a Bell state, i.e. one of the four Bell idempotents $\tilde\Pi_\epsilon$ that form an idempotent basis of the two-qubit algebra $\mathbb{B}\otimes\mathbb{B}$, as fixed by the companion article <em>The Bell Basis as the Idempotent Basis of $\mathbb{B}\otimes\mathbb{B}$</em>. Alice's encoding is a <strong>local operation on one factor</strong>, and the four available operations are conjugation by the four unit quaternions $e_t,\vec e_x,\vec e_y,\vec e_z$ — the Pauli operations $I,\sigma_1,\sigma_2,\sigma_3$ under the series identification $i\vec e_k\leftrightarrow\sigma_k$, the central phase in which the two differ cancelling in conjugation — acting on her half of the pair. These four operations permute the four Bell idempotents, so the encoded state is again one of the four Bell states, and the codewords are <strong>orthogonal</strong>. Bob's decoding is the Bell measurement, i.e. the joint measurement of the commuting stabilizers $S_1 = -\vec e_x\otimes \vec e_x$ and $S_3 = -\vec e_z\otimes \vec e_z$, which distinguishes the four orthogonal codewords perfectly. The two classical bits are thus the four elements of the encoding group, and the algebra's Bell idempotent basis is both the message alphabet and the decoding basis.</p>
+<p>In the biquaternion framework the protocol has an exceptionally clean form. The shared resource is a Bell state, i.e. one of the four Bell idempotents $\tilde\Pi_\epsilon$ that form an idempotent basis of the two-qubit algebra $\mathbb{B}\otimes\mathbb{B}$, as fixed by the companion article <em>The Bell Basis as the Idempotent Basis of $\mathbb{B}\otimes\mathbb{B}$</em>. Alice's encoding is a <strong>local operation on one factor</strong>, and the four available operations are conjugation by the four unit quaternions $e_t,\vec e_x,\vec e_y,\vec e_z$ — the Pauli operations $I,\sigma_1,\sigma_2,\sigma_3$ under the series identification $i\vec e_\eta\leftrightarrow\sigma_\eta$, the central phase in which the two differ cancelling in conjugation — acting on her half of the pair. These four operations permute the four Bell idempotents, so the encoded state is again one of the four Bell states, and the codewords are <strong>orthogonal</strong>. Bob's decoding is the Bell measurement, i.e. the joint measurement of the commuting stabilizers $S_1 = -\vec e_x\otimes \vec e_x$ and $S_3 = -\vec e_z\otimes \vec e_z$, which distinguishes the four orthogonal codewords perfectly. The two classical bits are thus the four elements of the encoding group, and the algebra's Bell idempotent basis is both the message alphabet and the decoding basis.</p>
 <p>This article develops the protocol in that language: the resource, the encoding as conjugation by the unit quaternions, the decoding as the joint stabilizer measurement, and the explicit permutation of the Bell states produced by each operation. The channel-capacity statement — that without entanglement the qubit carries at most $\log 2 = 1$ bit, while with the shared pair it carries $2$ bits — is recalled as the Holevo bound and its entanglement-assisted generalization. Every algebraic step is verified by recomputation: the four encoded states are computed explicitly and found to be orthogonal, and the permutation is tabulated.</p>
 <h2 id="the-resource">The Resource</h2>
 <h3 id="the-bell-idempotent-basis">The Bell idempotent basis</h3>
@@ -107,13 +107,13 @@ e_t,\ \vec e_x,\ \vec e_y,\ \vec e_z \in Q_8/\{\pm e_t\} \cong \mathbb{Z}_2\time
 \qquad
 \text{mapping to } I,\ -i\sigma_1,\ -i\sigma_2,\ -i\sigma_3 .
 $$</p>
-<p>Each is $*$-unitary, $\vec e_k\,\vec e_k^{*} = \vec e_k(-\vec e_k) = e_t$, and Hermitian up to the central $i$; each acts on the state by</p>
+<p>Each is $*$-unitary, $\vec e_\eta\,\vec e_\eta^{*} = \vec e_\eta(-\vec e_\eta) = e_t$, and Hermitian up to the central $i$; each acts on the state by</p>
 <p>$$
-\boxed{\;\tilde{Ϛ}_{\Psi} = \tilde\Pi_{Ξ^+} \ \longmapsto\ (\vec e_k\otimes e_t)\,\tilde{Ϛ}_{\Psi}\,(\vec e_k\otimes e_t)^{*}\;}.
+\boxed{\;\tilde{Ϛ}_{\Psi} = \tilde\Pi_{Ξ^+} \ \longmapsto\ (\vec e_\eta\otimes e_t)\,\tilde{Ϛ}_{\Psi}\,(\vec e_\eta\otimes e_t)^{*}\;}.
 $$</p>
-<p>Because $\vec e_k$ is a unit quaternion, the map is an inner automorphism of the first factor tensored with the identity on the second: it is a <strong>local $*$-unitary of the algebra</strong>, and it preserves the spectrum, the trace, and the idempotency of the state.</p>
+<p>Because $\vec e_\eta$ is a unit quaternion, the map is an inner automorphism of the first factor tensored with the identity on the second: it is a <strong>local $*$-unitary of the algebra</strong>, and it preserves the spectrum, the trace, and the idempotency of the state.</p>
 <h3 id="the-permutation-of-the-bell-basis">The permutation of the Bell basis</h3>
-<p>Conjugation by $\vec e_k\otimes e_t$ permutes the four Bell idempotents. Explicit computation gives</p>
+<p>Conjugation by $\vec e_\eta\otimes e_t$ permutes the four Bell idempotents. Explicit computation gives</p>
 <div class="table-scroll"><table>
 <thead>
 <tr>
@@ -140,27 +140,27 @@ $$</p>
 </tr>
 </tbody>
 </table></div>
-<p>so that the four operations produce the four distinct Bell states, one for each. The map $k\mapsto$ (Bell state) is a bijection of the four-element encoding set onto the four-element Bell basis: the encoding is the <strong>regular action</strong> of the Klein four-group on its own elements, a sharply transitive abelian group of permutations. Each operation acts as an involution, since conjugation by $\vec e_k$ twice is conjugation by the central element $\vec e_k^2 = -e_t$, which is trivial; the codeword is the group element Alice applied.</p>
+<p>so that the four operations produce the four distinct Bell states, one for each. The map $k\mapsto$ (Bell state) is a bijection of the four-element encoding set onto the four-element Bell basis: the encoding is the <strong>regular action</strong> of the Klein four-group on its own elements, a sharply transitive abelian group of permutations. Each operation acts as an involution, since conjugation by $\vec e_\eta$ twice is conjugation by the central element $\vec e_\eta^2 = -e_t$, which is trivial; the codeword is the group element Alice applied.</p>
 <h3 id="orthogonality-of-the-codewords">Orthogonality of the codewords</h3>
 <p>The crucial property for decoding is that the four codewords are mutually orthogonal:</p>
 <p>$$
 \boxed{\;\mathrm{Tr}\bigl(\tilde\Pi_{Ξ^+}\tilde\Pi_{\mathrm{sp}^+}\bigr) = \mathrm{Tr}\bigl(\tilde\Pi_{Ξ^+}\tilde\Pi_{\mathrm{sp}^-}\bigr) = \mathrm{Tr}\bigl(\tilde\Pi_{Ξ^+}\tilde\Pi_{Ξ^-}\bigr) = 0\;},
 $$</p>
 <p>and likewise among all pairs, with the diagonal equal to one. Orthogonal states are perfectly distinguishable, so a single measurement on Bob's two qubits can identify the codeword with certainty. This is why the protocol transmits two bits and not merely one: the four codewords live in a four-dimensional space and are orthogonal there, while any four states confined to a single qubit could not be.</p>
-<p><strong>Why conjugation preserves the idempotent structure.</strong> The operation $\vec e_k\otimes e_t$ is $*$-unitary and, on each factor, multiplicative; conjugating an idempotent by a $*$-unitary returns an idempotent of the same rank, because</p>
+<p><strong>Why conjugation preserves the idempotent structure.</strong> The operation $\vec e_\eta\otimes e_t$ is $*$-unitary and, on each factor, multiplicative; conjugating an idempotent by a $*$-unitary returns an idempotent of the same rank, because</p>
 <p>$$
 \bigl(U\tilde\Pi U^{*}\bigr)^2 = U\tilde\Pi U^{*} U\tilde\Pi U^{*} = U\tilde\Pi^2U^\dagger = U\tilde\Pi U^{*},
 \qquad
 \mathrm{Tr}\bigl(U\tilde\Pi U^{*}\bigr) = \mathrm{Tr}(\tilde\Pi) = 1 .
 $$</p>
-<p>Hence the image of $\tilde\Pi_{Ξ^+}$ is again a rank-one idempotent, i.e. again a pure state, and since the local $*$-unitary preserves the algebra it maps the Bell basis into itself. The four images $\vec e_k\otimes e_t$ acting on the resource exhaust the Bell idempotents because the conjugation action of the group $Q_8/\{\pm e_t\}\cong\mathbb{Z}_2\times\mathbb{Z}_2$ on the four-element Bell basis is transitive: the stabilizer of any Bell idempotent in this action is trivial, so the orbit has four elements, one for each coset. This is the algebraic reason no fifth codeword is available and no third bit can be sent: the orbit of the resource under the local group has exactly four elements.</p>
+<p>Hence the image of $\tilde\Pi_{Ξ^+}$ is again a rank-one idempotent, i.e. again a pure state, and since the local $*$-unitary preserves the algebra it maps the Bell basis into itself. The four images $\vec e_\eta\otimes e_t$ acting on the resource exhaust the Bell idempotents because the conjugation action of the group $Q_8/\{\pm e_t\}\cong\mathbb{Z}_2\times\mathbb{Z}_2$ on the four-element Bell basis is transitive: the stabilizer of any Bell idempotent in this action is trivial, so the orbit has four elements, one for each coset. This is the algebraic reason no fifth codeword is available and no third bit can be sent: the orbit of the resource under the local group has exactly four elements.</p>
 <h2 id="decoding">Decoding</h2>
 <h3 id="the-bell-measurement">The Bell measurement</h3>
 <p>Bob, holding both qubits, measures the commuting stabilizers $S_1$ and $S_3$. Since $\{S_1,S_3\}$ is a complete set of commuting observables with the four Bell idempotents as its joint eigenbasis, the measurement has four outcomes $\epsilon$ with probabilities</p>
 <p>$$
 p_\epsilon = \frac{\langle\tilde{Ϛ}_{\Psi},\tilde\Pi_\epsilon\rangle_{*}}{\langle\tilde{Ϛ}_{\Psi},e_t\rangle_{*}} = \frac{\mathrm{Sc}(\tilde{Ϛ}_{\Psi}\tilde\Pi_\epsilon^{*})}{\mathrm{Sc}(\tilde{Ϛ}_{\Psi})} = \frac{\mathrm{Sc}(\tilde{Ϛ}_{\Psi}\tilde\Pi_\epsilon)}{\mathrm{Sc}(\tilde{Ϛ}_{\Psi})} = \frac{\operatorname{Tr}(\tilde{Ϛ}_{\Psi}\tilde\Pi_\epsilon)}{\operatorname{Tr}(\tilde{Ϛ}_{\Psi})},
 $$</p>
-<p>where $\tilde{Ϛ}_{\Psi}$ is the received state. If Alice applied $\vec e_k$, then $\tilde{Ϛ}_{\Psi} = \tilde\Pi_{\epsilon(k)}$ for the corresponding sign pattern $\epsilon(k)$, and</p>
+<p>where $\tilde{Ϛ}_{\Psi}$ is the received state. If Alice applied $\vec e_\eta$, then $\tilde{Ϛ}_{\Psi} = \tilde\Pi_{\epsilon(k)}$ for the corresponding sign pattern $\epsilon(k)$, and</p>
 <p>$$
 \boxed{\;p_\epsilon = \delta_{\epsilon,\epsilon(k)}\;},
 $$</p>
@@ -280,7 +280,7 @@ $$</p>
 <td>Joint eigenvalues</td>
 </tr>
 <tr>
-<td>$(\vec e_k\otimes e_t)\tilde{Ϛ}_{\Psi}(\vec e_k\otimes e_t)^{*}$</td>
+<td>$(\vec e_\eta\otimes e_t)\tilde{Ϛ}_{\Psi}(\vec e_\eta\otimes e_t)^{*}$</td>
 <td>Local encoding operation</td>
 </tr>
 <tr>

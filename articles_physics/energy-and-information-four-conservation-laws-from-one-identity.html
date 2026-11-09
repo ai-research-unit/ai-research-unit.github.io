@@ -81,12 +81,12 @@
 <p>$$
 \tilde Q=Q_t\,e_t+Q_x\,\vec e_x+Q_y\,\vec e_y+Q_z\,\vec e_z,\qquad Q_\mu\in\mathbb{C},
 $$</p>
-<p>with $e_t=1$ and $\vec e_k^2=-e_t$. The algebra attaches two numbers to it. The <strong>trace</strong> is twice the scalar part, and the <strong>quaternionic norm</strong> is the product with the quaternion conjugate $\tilde Q^\natural=Q_t e_t-\vec Q$:</p>
+<p>with $e_t=1$ and $\vec e_\eta^2=-e_t$. The algebra attaches two numbers to it. The <strong>trace</strong> is twice the scalar part, and the <strong>quaternionic norm</strong> is the product with the quaternion conjugate $\tilde Q^\natural=Q_t e_t-\vec Q$:</p>
 <p>$$
 \operatorname{Tr}\tilde Q=2\,\mathrm{Sc}\,\tilde Q=2Q_t,\qquad
 \langle\tilde Q\rangle_\natural=\tilde Q\tilde Q^\natural=Q_t^2+Q_x^2+Q_y^2+Q_z^2 .
 $$</p>
-<p>In the $2\times2$ image, under $e_t\mapsto I_2$ and $\vec e_k\mapsto -i\sigma_k$, the trace is the matrix trace and the quaternionic norm is the determinant:</p>
+<p>In the $2\times2$ image, under $e_t\mapsto I_2$ and $\vec e_\eta\mapsto -i\sigma_\eta$, the trace is the matrix trace and the quaternionic norm is the determinant:</p>
 <p>$$
 \operatorname{Tr}\mathsf M_2(\tilde Q)=2Q_t,\qquad \det\mathsf M_2(\tilde Q)=\langle\tilde Q\rangle_\natural .
 $$</p>
@@ -393,7 +393,7 @@ $$</p>
 $$</p>
 <p>checked to $8.7\times10^{-16}$. The forward branch grows or decays at rate $2(R_t+\lvert\vec r\rvert)$, and it decays when $R_t<-\lvert\vec r\rvert$; the backward branch grows at rate $2(\lvert\vec r\rvert-R_t)$, which is positive for every Hermitian element. So such a flow falls in one direction of $\theta$ and diverges in the other: it has an arrow of time built into a single element, which is precisely why it cannot serve as a reversible law. No dynamics in the corpus uses it — the state-vector equation always carries the $-i$. A shrinking element and a falling probability are different events.</p>
 <p>One level up, the question is about maps rather than elements. <em>The Exponential, the Logarithm and the Generator</em> records that an irreversible completely positive trace-preserving map is a sum of at least two conjugations, so it is not a single element and has no algebraic generator. When such a map has a generator, the generator is a superoperator on states, not an element of $\mathbb{B}$. A falling probability has no address in the algebra at all. The question "is $\mathbb{B}_{\Phi}$ lossy?" accordingly has no yes-or-no answer, because the predicate does not apply to elements.</p>
-<p>The spectral vocabulary has a boundary of its own, drawn the same way: by asking what a statement is about. <em>Biorthogonal Quantum Mechanics and the Biquaternion Spectrum</em> treats a non-normal element by changing the pairing: left and right eigenvectors, and the Petermann factor $\kappa=\frac12(1+\lVert\rho\rVert^{2})$, which is the norm deficit again, $\kappa-1=\frac12(\lVert\rho\rVert^{2}-1)$, checked spectrally to $3.6\times10^{-15}$. <em>Exceptional Points and the Nilpotent Regime</em> treats the degeneracy on the isotropic cone. Both are statements about the spectrum of one element, and neither says that a probability falls. The cone itself is out of reach of both sectors. A real vector part gives $B^2=\sum_kQ_k^2\ge0$, vanishing only at $\vec Q=0$, and a Hermitian element gives $B^2=-\sum_kq_k^2\le0$, vanishing only at $\vec q=0$. The degeneracy available to either sector is therefore diabolic, and an exceptional point needs a vector part that is neither real nor purely imaginary. That is a third kind of element, and the corpus keeps it where it belongs, in the spectral articles.</p>
+<p>The spectral vocabulary has a boundary of its own, drawn the same way: by asking what a statement is about. <em>Biorthogonal Quantum Mechanics and the Biquaternion Spectrum</em> treats a non-normal element by changing the pairing: left and right eigenvectors, and the Petermann factor $\kappa=\frac12(1+\lVert\rho\rVert^{2})$, which is the norm deficit again, $\kappa-1=\frac12(\lVert\rho\rVert^{2}-1)$, checked spectrally to $3.6\times10^{-15}$. <em>Exceptional Points and the Nilpotent Regime</em> treats the degeneracy on the isotropic cone. Both are statements about the spectrum of one element, and neither says that a probability falls. The cone itself is out of reach of both sectors. A real vector part gives $B^2=\sum_\eta Q_\eta^2\ge0$, vanishing only at $\vec Q=0$, and a Hermitian element gives $B^2=-\sum_kq_\eta^2\le0$, vanishing only at $\vec q=0$. The degeneracy available to either sector is therefore diabolic, and an exceptional point needs a vector part that is neither real nor purely imaginary. That is a third kind of element, and the corpus keeps it where it belongs, in the spectral articles.</p>
 <p><strong>Where a falling $P$ comes from: a channel that was eliminated.</strong> The mechanism is in <em>The Unstable State and the Complex Energy Pole</em>. Split the module into the slot under study and the rest, and integrate the rest out. The Green's function of the watched slot becomes</p>
 <p>$$
 G_{\mathrm{c}}(z)=\bigl(z-H_{\mathrm{c}}-\Sigma_{\mathrm{nc}}(z)\bigr)^{-1},
@@ -426,16 +426,16 @@ $$</p>
 <p>$$
 \frac{d\tilde{Ϛ}_{\Psi}}{dr'_t}
 =-\frac{k_m\,i}{m\,c}\,[\tilde R_\Psi,\tilde{Ϛ}_{\Psi}]
-+\sum_k\left(\tilde M_{\mathrm{kraus},k}\,\tilde{Ϛ}_{\Psi}\,\tilde M_{\mathrm{kraus},k}^{*}
++\sum_\eta\left(\tilde M_{\mathrm{kraus},k}\,\tilde{Ϛ}_{\Psi}\,\tilde M_{\mathrm{kraus},k}^{*}
 -\tfrac12\{\tilde M_{\mathrm{kraus},k}^{*}\tilde M_{\mathrm{kraus},k},\tilde{Ϛ}_{\Psi}\}\right).
 $$</p>
 <p>The trace is preserved, $\frac{d}{dr'_t}\operatorname{Tr}\tilde{Ϛ}_{\Psi}=0$ by cyclicity, checked to $1.8\times10^{-15}$; the purity is not, and that fall is the whole effect. Nothing leaves the ensemble. The effective Hamiltonian with the anti-Hermitian part describes the branch on which no jump has occurred, whose unnormalised state obeys</p>
 <p>$$
 i\,\partial_{r'_t}\tilde{Ξ}_{\mathrm{nj}}
-=\Bigl(\tilde R_\Psi-\frac{i}{2}\sum_k\tilde M_{\mathrm{kraus},k}^{*}\tilde M_{\mathrm{kraus},k}\Bigr)\tilde{Ξ}_{\mathrm{nj}},
+=\Bigl(\tilde R_\Psi-\frac{i}{2}\sum_\eta\tilde M_{\mathrm{kraus},k}^{*}\tilde M_{\mathrm{kraus},k}\Bigr)\tilde{Ξ}_{\mathrm{nj}},
 \qquad
 \frac{d}{dr'_t}\langle\tilde{Ξ}_{\mathrm{nj}}\rangle_*
-=-\sum_k\langle\tilde{Ξ}_{\mathrm{nj}},\tilde M_{\mathrm{kraus},k}^{*}\tilde M_{\mathrm{kraus},k}\tilde{Ξ}_{\mathrm{nj}}\rangle_*\le0 .
+=-\sum_\eta\langle\tilde{Ξ}_{\mathrm{nj}},\tilde M_{\mathrm{kraus},k}^{*}\tilde M_{\mathrm{kraus},k}\tilde{Ξ}_{\mathrm{nj}}\rangle_*\le0 .
 $$</p>
 <p>The lost norm is exactly the probability that a jump has occurred, checked to $1.0\times10^{-11}$ on a hundred random triples of jump operators. That is the precise content of the anti-Hermitian part of an effective Hamiltonian: it describes the branch where nothing has happened yet, and the rate it carries is the jump rate.</p>
 <p><strong>The same warning on the state space.</strong> With the Hilbert–Schmidt form $\langle\tilde Q_1,\tilde Q_2\rangle_{\mathrm{HS}}=\operatorname{Tr}(\tilde Q_1^{*}\tilde Q_2)$, the commutator $-i[\tilde R_\Psi,\cdot]$ is anti-Hermitian and preserves the Hilbert–Schmidt norm: it rotates the state and shrinks nothing, the adjoint being its negative with residual $0$. The jump part is generally neither Hermitian nor anti-Hermitian; over a hundred random single-jump terms the smallest distance to either form was $1.24$. So anti-Hermiticity marks the reversible generator here as elsewhere, and the fall of $P$ sits outside the Hermitian/anti-Hermitian alternative altogether.</p>
@@ -1076,7 +1076,7 @@ $$</p>
 <tr>
 <td>the two sectors meet the discriminant locus only diabolically</td>
 <td>corpus result</td>
-<td>$B^2=\sum_kQ_k^2\ge0$ for a real vector part, $-\sum_kq_k^2\le0$ for a Hermitian element; 100 draws, $\operatorname{Im}B^2=0$</td>
+<td>$B^2=\sum_\eta Q_\eta^2\ge0$ for a real vector part, $-\sum_kq_\eta^2\le0$ for a Hermitian element; 100 draws, $\operatorname{Im}B^2=0$</td>
 </tr>
 <tr>
 <td>a survival probability can fall while the total is conserved</td>
@@ -1121,7 +1121,7 @@ $$</p>
 <tr>
 <td>the norm lost on the no-jump branch is the total jump probability</td>
 <td>established</td>
-<td>$\frac{d}{dr'_t}\langle\tilde{Ξ}_{\mathrm{nj}}\rangle_*=-\sum_k\langle\tilde{Ξ}_{\mathrm{nj}},\tilde M_{\mathrm{kraus},k}^{*}\tilde M_{\mathrm{kraus},k}\tilde{Ξ}_{\mathrm{nj}}\rangle_*$; checked</td>
+<td>$\frac{d}{dr'_t}\langle\tilde{Ξ}_{\mathrm{nj}}\rangle_*=-\sum_\eta\langle\tilde{Ξ}_{\mathrm{nj}},\tilde M_{\mathrm{kraus},k}^{*}\tilde M_{\mathrm{kraus},k}\tilde{Ξ}_{\mathrm{nj}}\rangle_*$; checked</td>
 </tr>
 <tr>
 <td>the commutator $-i[\tilde R_\Psi,\cdot]$ is anti-Hermitian in the Hilbert–Schmidt form</td>

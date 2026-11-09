@@ -78,7 +78,7 @@
 <li>the <strong>Bell measurement</strong> is the four-outcome projective measurement whose projectors correspond to those same idempotents on the pair;</li>
 <li>the <strong>corrections</strong> are $*$-unitary elements of $\mathbb{B}$ — gates, in the sense of the companion article on gates and circuits — and they are <em>not</em> idempotents.</li>
 </ul>
-<p>The protocol is therefore a controlled collision between two kinds of object that the framework elsewhere keeps apart: the idempotents that resolve a measurement, and the unitaries that generate reversible motion. The distinction does real work in the correction table, where the same elements $\vec e_x,\vec e_y,\vec e_z$ enter the resource idempotent as $\vec e_k\otimes \vec e_k$ and the correction gates as $i\vec e_k$, and the two kinds of object behave quite differently.</p>
+<p>The protocol is therefore a controlled collision between two kinds of object that the framework elsewhere keeps apart: the idempotents that resolve a measurement, and the unitaries that generate reversible motion. The distinction does real work in the correction table, where the same elements $\vec e_x,\vec e_y,\vec e_z$ enter the resource idempotent as $\vec e_\eta\otimes \vec e_\eta$ and the correction gates as $i\vec e_\eta$, and the two kinds of object behave quite differently.</p>
 <p><strong>Established, and recomputed below.</strong> The shared Bell idempotent $\tilde\Pi_{Ξ^+}$ resolves the initial three-qubit state into four orthogonal branches, one per Bell outcome; each branch is the product of the outcome idempotent with a single conjugation of the unknown state; each outcome occurs with probability $\tfrac14$; and the correction equal to the (Hermitian, involutive) Pauli gate $\{e_t,i\vec e_x,i\vec e_y,i\vec e_z\}$ restores the state exactly. Averaged over the outcomes without the classical record, Bob's qubit is the maximally mixed state $\tfrac12 e_t$ — the protocol transfers nothing on its own — and with the record and the correction the net state map on the teleported qubit is the identity channel, a gate of Kraus rank one, realised through a measurement of Kraus rank four. Alice's qubit is left maximally mixed, so no copy survives. Each of the four identities was recomputed separately, on input states other than the $Ξ^{+}$ case that fixes the labelling.</p>
 <p><strong>Gap, left visible.</strong> The two classical bits are <em>not</em> an element of the algebra. The algebra represents the outcome label — the joint eigenvalue of the stabiliser observables — and it represents the conditional correction; it does not contain the arithmetic by which the label reaches Bob. The protocol is a statement about the algebra <em>plus</em> a classical channel, and the classical channel is where the non-algebraic step sits. The status of the tensor-product arena $\mathbb{B}\otimes\mathbb{B}$ is the open question inherited from the companion articles and is not resolved here.</p>
 <p>The article is organised as follows. The next section fixes the three-qubit arena and says which algebra each object of the protocol lives in. The section after that fixes the resource and the measurement. The following section proves the teleportation identity, first as a vector identity and then as the projected operator identity that gives the probabilities and Bob's state. The next section reads off the four corrections and records them in terms of the stabiliser observables. Two shorter sections treat no-signalling and the channel-theoretic interpretation of the protocol. The article closes with what the reformulation does and does not claim, and with open questions.</p>
@@ -94,7 +94,7 @@
 <p>$$
 \tilde{Ϛ}_{\Psi,\mathrm{sp}}=\tfrac12\left(e_t+i\vec r\right),
 \qquad
-\vec r=\sum_{k=1}^{3}r_k\,\vec e_k,\qquad |\vec r|\leq 1 ,
+\vec r=\sum_{\eta=1}^{3}r_\eta\,\vec e_\eta,\qquad |\vec r|\leq 1 ,
 $$</p>
 <p>with $|\vec r|=1$ exactly when the state is pure and $\vec r=0$ when it is maximally mixed. The initial three-qubit state is the single element</p>
 <p>$$
@@ -394,7 +394,7 @@ $$</p>
 </tr>
 <tr>
 <td>$e_t=1,\vec e_x,\vec e_y,\vec e_z$</td>
-<td>Quaternion basis, $\vec e_k^2=-e_t$</td>
+<td>Quaternion basis, $\vec e_\eta^2=-e_t$</td>
 </tr>
 <tr>
 <td>$i$</td>
@@ -405,7 +405,7 @@ $$</p>
 <td>Unknown single-qubit state</td>
 </tr>
 <tr>
-<td>$\tilde\Pi_\epsilon=\tfrac14(e_t\otimes e_t+\sum_k\epsilon_k \vec e_k\otimes \vec e_k)$</td>
+<td>$\tilde\Pi_\epsilon=\tfrac14(e_t\otimes e_t+\sum_\eta\epsilon_k \vec e_\eta\otimes \vec e_\eta)$</td>
 <td>Bell idempotent, $\epsilon_1\epsilon_2\epsilon_3=+1$</td>
 </tr>
 <tr>
