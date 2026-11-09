@@ -589,6 +589,6 @@ The vanishing norm does not obstruct inversion; it obstructs division, and the s
 - [Special Element and Peirce Conventions](special-element-and-peirce-conventions.html), for the root glyph, the idempotent family and the Peirce table.
 - [Reduced Biquaternion Discrete Harmonic Analysis](reduced-biquaternion-discrete-harmonic-analysis.html), for the commutative case and its four-dimensional discrete transform.
 - [Harmonic Analysis over Hypercomplex Systems](harmonic-analysis-over-hypercomplex-systems.html), for the place of the transform among the eight systems.
-- [Quaternion Fourier Transform: Properties and Convolution Theorems](quaternion-fourier-transform-properties-and-convolution-theorems.html), for the quaternion case and the one-sided form of its convolution theorem.
+- [Quaternion Harmonic Analysis](quaternion-harmonic-analysis.html), for the quaternion case and the one-sided form of its convolution theorem.
 - *Commutative Reduced Biquaternions and Their Fourier Transform*, for the reduced biquaternion transform and the two kernel conventions of the commutative case.
 - [Conventions in Mathematics](algebra-and-element-conventions.html), for the units, the conjugations and the norms.
